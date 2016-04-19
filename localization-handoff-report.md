@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4f43ce4e7d2576780b1ca5467e5d628bc47c66ac/InTuneDocs/index.md) | HandedOffSuccess | [Details](#2be027071ad4fbe6a799ca490f5cda8ac45d4951686)
+ [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/20cfc3fec2e4554ca83250b6446b94facbbf97e3/InTuneDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#943c28c1b4ceeb1344198d6db812dc16df5658f3291)
 
 ## Item Details
-##### <a name='2be027071ad4fbe6a799ca490f5cda8ac45d4951686'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4f43ce4e7d2576780b1ca5467e5d628bc47c66ac/InTuneDocs/index.md)
+##### <a name='943c28c1b4ceeb1344198d6db812dc16df5658f3291'></a> Source: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/20cfc3fec2e4554ca83250b6446b94facbbf97e3/InTuneDocs/DeployUse/TOC.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/c68c8f48c248a27be3f65c0984589bea940a7e81/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf)
-* Handoff Datetime: 2016-04-19 21:51:03
+* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/fbc12e8275bda5899e629fb9e8bc6e20b6f64ebe/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.zh-tw.xlf)
+* Handoff Datetime: 2016-04-19 22:22:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
