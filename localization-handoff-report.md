@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\develop\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0898c4fe5d851d3eded8fcd0ab8838ff205296f6/InTuneDocs/develop/TOC.md) | HandedOffSuccess | [Details](#84f0773339472e9367b3cfb9a47af0aebaaee0db262)
 
 ## Item Details
+##### <a name='84f0773339472e9367b3cfb9a47af0aebaaee0db262'></a> Source: [InTuneDocs\develop\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0898c4fe5d851d3eded8fcd0ab8838ff205296f6/InTuneDocs/develop/TOC.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [TOC.6b2e72c4df186b0120eebccd705ddba68dec867d.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/e5f8a4262acf35b81230d63ebc5bc9b02db16125/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/TOC.6b2e72c4df186b0120eebccd705ddba68dec867d.zh-tw.xlf)
+* Handoff Datetime: 2016-05-11 03:40:45
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
