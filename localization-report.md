@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 1229
 [ Handoff Failed Files ](#handoff-failed-list)| 2
-[ Handoff Success Files ](#handoff-success-list)| 906
+[ Handoff Success Files ](#handoff-success-list)| 905
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 6
-[ In Sync Handback Files ](#insync-handback-success-list)| 89
+[ In Sync Handback Files ](#insync-handback-success-list)| 90
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -445,7 +445,6 @@
  [InTuneDocs\GetStarted\media\wit_walk_cert2.gif](https://github.com/Microsoft/IntuneDocs-pr/blob/7ff917fd31cda26bb929f002562acd5ec72250b4/InTuneDocs/GetStarted/media/wit_walk_cert2.gif) | HandedOffSuccess | [Details](#b86daa607f8bdfca2b36b2e9c956dc9872a80e4d500)
  [InTuneDocs\GetStarted\media\WPCertReqs.png](https://github.com/Microsoft/IntuneDocs-pr/blob/7ff917fd31cda26bb929f002562acd5ec72250b4/InTuneDocs/GetStarted/media/WPCertReqs.png) | HandedOffSuccess | [Details](#357558a36a885fc6c50279d11801440587fe3676501)
  [InTuneDocs\GetStarted\microsoft-intune-company-portal.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b3b0e4e10b93537b9a2a9a3efa9d21e21acf2c57/InTuneDocs/GetStarted/microsoft-intune-company-portal.md) | HandedOffSuccess | [Details](#f3583c87c1d0f5eba666a74ce6511079b43364b1502)
- [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md) | HandedOffSuccess | [Details](#e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12504)
  [InTuneDocs\GetStarted\network-infrastructure-requirements-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c5d1b53f09ce2f475cd934e36ddb19d019737431/InTuneDocs/GetStarted/network-infrastructure-requirements-for-microsoft-intune.md) | HandedOffSuccess | [Details](#b551aca6994780591dabe042420d5f23d98b218b505)
  [InTuneDocs\GetStarted\operations-and-maintenance.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/operations-and-maintenance.md) | HandedOffSuccess | [Details](#69dd5bc7dba04ba5d58f64ceec6ff4ea075d8fdf506)
  [InTuneDocs\GetStarted\post-configuration-tasks.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/post-configuration-tasks.md) | HandedOffSuccess | [Details](#2ea7f48c8d34da920c7cb3a70309d34c3f768fed509)
@@ -954,6 +953,7 @@
  [InTuneDocs\DeployUse\microsoft-intune-policy-reference.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/microsoft-intune-policy-reference.md) | InSyncHandedBackSuccess | [Details](#3d9e03a3c89af72caeaa9c9c47426f331adb0fca199)
  [InTuneDocs\DeployUse\mobile-device-management-with-exchange-activesync-and-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#d24395786daa7aec103ec754895868a75983e099201)
  [InTuneDocs\EndUser\device-doesnt-have-secure-boot-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-secure-boot-enabled-windows.md) | InSyncHandedBackSuccess | [Details](#a3c7e0807207972311d717efe77569aef0260141280)
+ [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md) | InSyncHandedBackSuccess | [Details](#e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12504)
  [InTuneDocs\GetStarted\pilot.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/pilot.md) | InSyncHandedBackSuccess | [Details](#c9734858c4837822e25ec0565e0d9f81e029182a507)
  [InTuneDocs\GetStarted\policy-rollout.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e42318b83b51dcab329a951a53a022f9c8833c40/InTuneDocs/GetStarted/policy-rollout.md) | InSyncHandedBackSuccess | [Details](#c879564ada8ad8c82a90c9b0ab4230cf03c9ef0a508)
  [InTuneDocs\includes\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility1.md) | InSyncHandedBackSuccess | [Details](#1f04ca268c5fc8669102a61ce243d107f7f2cce5526)
@@ -7522,15 +7522,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12504'></a> Source: [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/ba1e7d615bad05bd784660d6cbafda682d0bd4ef/InTuneDocs/GetStarted/network-bandwidth-use.md)
 * Handoff File: [network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf)
 * Handoff Datetime: 2016-05-13 17:05:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/b14eee2981b1b2606cebea03581b4255b9d4d046/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 06:48:15
 * [Back to Top](#report-top)
 
 ##### <a name='b551aca6994780591dabe042420d5f23d98b218b505'></a> Source: [InTuneDocs\GetStarted\network-infrastructure-requirements-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c5d1b53f09ce2f475cd934e36ddb19d019737431/InTuneDocs/GetStarted/network-infrastructure-requirements-for-microsoft-intune.md)
@@ -8483,14 +8483,14 @@
 
 ##### <a name='13ff460ac519f9cd49ce1cf25a819cea78e2772f584'></a> Source: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/3c4781df0ec2074162e86692b867b51ab3852510/InTuneDocs/includes/firstref_vista.md)
+* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/ba1e7d615bad05bd784660d6cbafda682d0bd4ef/InTuneDocs/includes/firstref_vista.md)
 * Handoff File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf)
 * Handoff Datetime: 2016-05-13 17:05:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/7ad04e06a34abd18b153bbe1f98a1fec9d2e3e18/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf)
-* Handback Datetime: 2016-05-13 20:11:55
+* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/b14eee2981b1b2606cebea03581b4255b9d4d046/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 06:48:15
 * [Back to Top](#report-top)
 
 ##### <a name='da178e2adfef6403babbf2628c7511519b7833d6585'></a> Source: [InTuneDocs\includes\firstref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista_md.md)

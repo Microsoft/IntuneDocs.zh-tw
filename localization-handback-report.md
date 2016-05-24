@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md) | InSyncHandedBackSuccess | [Details](#e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12504)
+ [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md) | InSyncHandedBackSuccess | [Details](#13ff460ac519f9cd49ce1cf25a819cea78e2772f584)
 
 ## Item Details
+##### <a name='e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12504'></a> Source: [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/ba1e7d615bad05bd784660d6cbafda682d0bd4ef/InTuneDocs/GetStarted/network-bandwidth-use.md)
+* Handoff File: [network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf)
+* Handoff Datetime: 2016-05-13 17:05:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/b14eee2981b1b2606cebea03581b4255b9d4d046/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/network-bandwidth-use.0ecf0a406020a731d4736dac6ca2aa0d776914ea.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 06:48:15
+* [Back to Top](#report-top)
+
+##### <a name='13ff460ac519f9cd49ce1cf25a819cea78e2772f584'></a> Source: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/ba1e7d615bad05bd784660d6cbafda682d0bd4ef/InTuneDocs/includes/firstref_vista.md)
+* Handoff File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf)
+* Handoff Datetime: 2016-05-13 17:05:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/b14eee2981b1b2606cebea03581b4255b9d4d046/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 06:48:15
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
