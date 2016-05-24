@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\microsoft-intune-policy-reference.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/microsoft-intune-policy-reference.md) | InSyncHandedBackSuccess | [Details](#3d9e03a3c89af72caeaa9c9c47426f331adb0fca199)
+ [InTuneDocs\includes\firstref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista_md.md) | InSyncHandedBackSuccess | [Details](#da178e2adfef6403babbf2628c7511519b7833d6585)
 
 ## Item Details
+##### <a name='3d9e03a3c89af72caeaa9c9c47426f331adb0fca199'></a> Source: [InTuneDocs\DeployUse\microsoft-intune-policy-reference.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/microsoft-intune-policy-reference.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\microsoft-intune-policy-reference.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/1c5c46b6548752d1c9aff9a8634ce4b22bbbcf13/InTuneDocs/DeployUse/microsoft-intune-policy-reference.md)
+* Handoff File: [microsoft-intune-policy-reference.8cbb5642f6b280564360427d0a9f54bba0c5e18c.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/microsoft-intune-policy-reference.8cbb5642f6b280564360427d0a9f54bba0c5e18c.zh-tw.xlf)
+* Handoff Datetime: 2016-05-13 17:05:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [microsoft-intune-policy-reference.8cbb5642f6b280564360427d0a9f54bba0c5e18c.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/7028fd6ee6efd890efbbda745cc84f02eb159129/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/microsoft-intune-policy-reference.8cbb5642f6b280564360427d0a9f54bba0c5e18c.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 02:52:44
+* [Back to Top](#report-top)
+
+##### <a name='da178e2adfef6403babbf2628c7511519b7833d6585'></a> Source: [InTuneDocs\includes\firstref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista_md.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\firstref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/1c5c46b6548752d1c9aff9a8634ce4b22bbbcf13/InTuneDocs/includes/firstref_vista_md.md)
+* Handoff File: [firstref_vista_md.f348a490233cba683925200bb4235aee1d30137c.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista_md.f348a490233cba683925200bb4235aee1d30137c.zh-tw.xlf)
+* Handoff Datetime: 2016-05-13 17:05:39
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [firstref_vista_md.f348a490233cba683925200bb4235aee1d30137c.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/7028fd6ee6efd890efbbda745cc84f02eb159129/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/firstref_vista_md.f348a490233cba683925200bb4235aee1d30137c.zh-tw.xlf)
+* Handback Datetime: 2016-05-24 02:52:44
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
