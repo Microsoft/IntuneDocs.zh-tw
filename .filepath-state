@@ -611,55 +611,7 @@
   "04b275f158079a658a7d3569e62d02e88dce1f7c": [
     "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
   ],
-  "b065e57dab02eefcb9f609c31bc70654a1c6bf35": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "1c0c286b5632e05e794ba5c671cf40a5913a1990": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "940584f71d627f263960e4b1b7563489484dfd56": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "f03ec254b07f8a1dbfe3f29003a2748d44e8da62": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "77e613d2b0584bdd308a9b1f4ec2fd5db4c2e234": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "706de67fd74125f30da469adcbd2acf2c243d6bc": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "3da02ac5c38f835d8a98b1a476ada4895a617d7f": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "afe4767b7ee504bd10b72fc4fd673905302f3099": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "34c606e5f73d8c4534fd67decb3ab3239e6ece6e": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "ddca9b2edd6ae3a55e6088c5ffdf2e248913c5ff": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
-  "56a3c689d7bdc21d3520356d19c6a49a77f1d855": [
-    "InTuneDocs\\DeployUse\\monitor-mobile-app-management-policies-with-microsoft-intune.md"
-  ],
   "c8273a85399a64d5174fe82cf779be949387ad46": [
-    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
-  ],
-  "380d9567890d7f037885aaedf6037e969da1775f": [
-    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
-  ],
-  "32b7e4b9cf781013ca99f106c607d65498aeeab4": [
-    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
-  ],
-  "c32e8b8eb51facca121ee238984cbf9e0c189f3f": [
-    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
-  ],
-  "0166a6ffcd5f842db1731fc0ec8a2fede9f34b4e": [
-    "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
-  ],
-  "0f7d3f9227ef8b34a3c1d22a820f968de81a4002": [
     "InTuneDocs\\DeployUse\\monitoring-and-reports-with-microsoft-intune.md"
   ],
   "c793cc34b10c336a95b40c31befa6c6ff87b4ba6": [
@@ -1850,24 +1802,6 @@
     "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
   ],
   "3622e81aad871022b4c86eedd6acb8819067140e": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "d95272c08ca21cbbbb5606fb63fa63522f87cecc": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "ead823733374462609c0b2ed3e5d10fe4e9c8a0d": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "95e14bb40a7dc1232a24b74895c000757ed22d04": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "516fd41636a32c597549000ccc4d02c819c17ed3": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "499beeb9eb5bef1001d564fe4685b5d3e369a97d": [
-    "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
-  ],
-  "9b04a6bb400020af5fb91856913b4f40e2e5a68c": [
     "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
   ],
   "8a9dfe8224b4e0e441691043eaffea73c456b3ec": [
@@ -3751,15 +3685,6 @@
   "95adc931dacebdc2c2f6281ac6e467998f0be0b0": [
     "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
   ],
-  "1e0285cd6c1c6ceabf0908c0c27cada140b42cde": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
-  "9506b5a7ab087d69824e7efc27dfdfa9d08b1f7c": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
-  "18fb73323365c851d890de0ac15a20bec336340d": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
   "573aa214f375959bb669faa56763741c4df664d2": [
     "InTuneDocs\\EndUser\\device-doesnt-have-bitlocker-enabled-windows.md"
   ],
@@ -3788,21 +3713,6 @@
     "InTuneDocs\\EndUser\\device-doesnt-have-secure-boot-enabled-windows.md"
   ],
   "71bf4196f60c5259e0c03834824d4e7f5689b2bd": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
-  ],
-  "8e7cac3c519aae0dc94e3e613d32ef8465f9f9e2": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
-  ],
-  "0085778a8dd73a9f076a0e01c60dcb85f3c89f35": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
-  ],
-  "8fa9ccb603c7db6c445f8110c727cc9a57151c08": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
-  ],
-  "29bacf4659f079085a85e4b561192054ddc81e8e": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
-  ],
-  "e044a6f0e3827b01cbee2a20def0e8649aac9f4f": [
     "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-android.md"
   ],
   "0a7fafc645d926aeb09ecce52f261f2ccdfa413d": [
@@ -7415,9 +7325,6 @@
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
   "53a8bbb5b257fc5488c99a318cd4fb757f76bf15": [
-    "InTuneDocs\\DeployUse\\migrate-to-intune.md"
-  ],
-  "8c3d0e5492078f6d4fdf6b10614b5be81e21b68d": [
     "InTuneDocs\\DeployUse\\migrate-to-intune.md"
   ],
   "ca0ca74357b59d9cc6fbf4ec7eb237dff972c411": [
