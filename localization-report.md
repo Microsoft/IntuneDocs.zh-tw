@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 1229
 [ Handoff Failed Files ](#handoff-failed-list)| 2
-[ Handoff Success Files ](#handoff-success-list)| 895
+[ Handoff Success Files ](#handoff-success-list)| 894
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 2
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 10
-[ In Sync Handback Files ](#insync-handback-success-list)| 95
+[ In Sync Handback Files ](#insync-handback-success-list)| 96
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -180,7 +180,6 @@
  [InTuneDocs\DeployUse\media\publisher-for-pc.png](https://github.com/Microsoft/IntuneDocs-pr/blob/75ab39f59afa27190ac87e792b143df237eef6c4/InTuneDocs/DeployUse/media/publisher-for-pc.png) | HandedOffSuccess | [Details](#b91de3ef520b2cc704eadf508732f4383853480b196)
  [InTuneDocs\DeployUse\media\team-viewer.png](https://github.com/Microsoft/IntuneDocs-pr/blob/b9c8e67e70be825368e016749164b19386082c5e/InTuneDocs/DeployUse/media/team-viewer.png) | HandedOffSuccess | [Details](#c49da9a0a811d8c1bfb2f20b64a694558d09313b197)
  [InTuneDocs\DeployUse\media\Warning-Alert.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/a4add1a09871cd407f5e65285c8b701c8e40aadf/InTuneDocs/DeployUse/media/Warning-Alert.jpg) | HandedOffSuccess | [Details](#88df2d3a28019c345a87a0c74162b2e3f6faae54198)
- [InTuneDocs\DeployUse\monitor-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/monitor-apps-in-microsoft-intune.md) | HandedOffSuccess | [Details](#c92b7de51de0ac0115dd53e421d4852bed8d729a203)
  [InTuneDocs\DeployUse\overview-of-device-and-app-lifecycles-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b/InTuneDocs/DeployUse/overview-of-device-and-app-lifecycles-in-microsoft-intune.md) | HandedOffSuccess | [Details](#d1912736361a9fa74a8827be367227336ee800eb207)
  [InTuneDocs\DeployUse\overview-of-device-lifecycle-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b/InTuneDocs/DeployUse/overview-of-device-lifecycle-in-microsoft-intune.md) | HandedOffSuccess | [Details](#908c052484dc1532ade9576ab09070b18a85d71e208)
  [InTuneDocs\DeployUse\per-app-vpn-for-android-pulse-secure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8cb6562030c0df1366fb0469db2b2c18e9dbc8d4/InTuneDocs/DeployUse/per-app-vpn-for-android-pulse-secure.md) | HandedOffSuccess | [Details](#250bf0cf078aaeb7d740826a236bcd5b4544ed91210)
@@ -949,6 +948,7 @@
  [InTuneDocs\DeployUse\microsoft-intune-policy-reference.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/microsoft-intune-policy-reference.md) | InSyncHandedBackSuccess | [Details](#3d9e03a3c89af72caeaa9c9c47426f331adb0fca199)
  [InTuneDocs\DeployUse\migrate-to-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/07078b37fa99ebaa1aef283cb9642e8686bbd346/InTuneDocs/DeployUse/migrate-to-intune.md) | InSyncHandedBackSuccess | [Details](#53a8bbb5b257fc5488c99a318cd4fb757f76bf15200)
  [InTuneDocs\DeployUse\mobile-device-management-with-exchange-activesync-and-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#d24395786daa7aec103ec754895868a75983e099201)
+ [InTuneDocs\DeployUse\monitor-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/monitor-apps-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c92b7de51de0ac0115dd53e421d4852bed8d729a203)
  [InTuneDocs\DeployUse\monitoring-and-reports-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/DeployUse/monitoring-and-reports-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c8273a85399a64d5174fe82cf779be949387ad46205)
  [InTuneDocs\EndUser\device-doesnt-have-antimalware-software-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-antimalware-software-enabled-windows.md) | InSyncHandedBackSuccess | [Details](#95adc931dacebdc2c2f6281ac6e467998f0be0b0277)
  [InTuneDocs\EndUser\device-doesnt-have-secure-boot-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-secure-boot-enabled-windows.md) | InSyncHandedBackSuccess | [Details](#a3c7e0807207972311d717efe77569aef0260141280)
@@ -3810,15 +3810,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='c92b7de51de0ac0115dd53e421d4852bed8d729a203'></a> Source: [InTuneDocs\DeployUse\monitor-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/monitor-apps-in-microsoft-intune.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\monitor-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/a12bc04031e74ed3f350c83bc0c2555dab76bd12/InTuneDocs/DeployUse/monitor-apps-in-microsoft-intune.md)
 * Handoff File: [monitor-apps-in-microsoft-intune.79b58bbbaa034a0061e2930e174c00533ebed8ad.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/monitor-apps-in-microsoft-intune.79b58bbbaa034a0061e2930e174c00533ebed8ad.zh-tw.xlf)
 * Handoff Datetime: 2016-05-13 17:05:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [monitor-apps-in-microsoft-intune.79b58bbbaa034a0061e2930e174c00533ebed8ad.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/67847e897439ae4950b429cc27f4b2cf0dcaa2d4/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/monitor-apps-in-microsoft-intune.79b58bbbaa034a0061e2930e174c00533ebed8ad.zh-tw.xlf)
+* Handback Datetime: 2016-05-25 04:01:28
 * [Back to Top](#report-top)
 
 ##### <a name='c8273a85399a64d5174fe82cf779be949387ad46205'></a> Source: [InTuneDocs\DeployUse\monitoring-and-reports-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/DeployUse/monitoring-and-reports-with-microsoft-intune.md)
