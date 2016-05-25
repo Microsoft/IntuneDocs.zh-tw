@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0cbffc260fae5c78dd33ebec3b5afc86017ac33b/InTuneDocs/DeployUse/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) | InSyncHandedBackSuccess | [Details](#c793cc34b10c336a95b40c31befa6c6ff87b4ba6215)
- [InTuneDocs\EndUser\device-doesnt-have-code-integrity-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-code-integrity-enabled-windows.md) | InSyncHandedBackSuccess | [Details](#1681d2a9a5cdcad958bcdb827f565f7c044c220f279)
 
 ## Item Details
-##### <a name='c793cc34b10c336a95b40c31befa6c6ff87b4ba6215'></a> Source: [InTuneDocs\DeployUse\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0cbffc260fae5c78dd33ebec3b5afc86017ac33b/InTuneDocs/DeployUse/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/67ec497a7a907353cd0b90b742adfd746f2b13e7/InTuneDocs/DeployUse/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-* Handoff File: [prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.616f51519eb2c73576b2d965d4745db81c21828d.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.616f51519eb2c73576b2d965d4745db81c21828d.zh-tw.xlf)
-* Handoff Datetime: 2016-05-13 17:05:39
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.616f51519eb2c73576b2d965d4745db81c21828d.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/fe4ce05e1ea1d7f9fd3f9b2ed3b8044bf3d27122/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.616f51519eb2c73576b2d965d4745db81c21828d.zh-tw.xlf)
-* Handback Datetime: 2016-05-25 13:31:00
-* [Back to Top](#report-top)
-
-##### <a name='1681d2a9a5cdcad958bcdb827f565f7c044c220f279'></a> Source: [InTuneDocs\EndUser\device-doesnt-have-code-integrity-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/device-doesnt-have-code-integrity-enabled-windows.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\device-doesnt-have-code-integrity-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/67ec497a7a907353cd0b90b742adfd746f2b13e7/InTuneDocs/EndUser/device-doesnt-have-code-integrity-enabled-windows.md)
-* Handoff File: [device-doesnt-have-code-integrity-enabled-windows.135526035d32f7ca4dcbe11f194f55041dacaed7.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a00150dfb1d07832e2735db8ddd38adced356086/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/device-doesnt-have-code-integrity-enabled-windows.135526035d32f7ca4dcbe11f194f55041dacaed7.zh-tw.xlf)
-* Handoff Datetime: 2016-05-13 17:05:39
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [device-doesnt-have-code-integrity-enabled-windows.135526035d32f7ca4dcbe11f194f55041dacaed7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/fe4ce05e1ea1d7f9fd3f9b2ed3b8044bf3d27122/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/device-doesnt-have-code-integrity-enabled-windows.135526035d32f7ca4dcbe11f194f55041dacaed7.zh-tw.xlf)
-* Handback Datetime: 2016-05-25 13:31:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
