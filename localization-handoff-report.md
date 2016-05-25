@@ -1,35 +1,45 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/DeployUse/manage-corporate-owned-devices.md) | OutofSyncHandedBackSuccess | [Details](#0ce1bf409ced1fa46ba13ab8ea294d00df7f476667)
- [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md) | HandedOffSuccess | [Details](#fb8b5453664b3b60d801ddb372114eb2d0d67704589)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure.md) | HandedOffSuccess | [Details](#a949eb8f212746cace9ad69855780feb7bab0bee22)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-pfx.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-pfx.md) | HandedOffSuccess | [Details](#0f282784c3d2ea87b5ea065cb042d135a4ce160920)
+ [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-scep.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-scep.md) | HandedOffSuccess | [Details](#23094d0ae88b2ade100dbec55eb147a647e6c56721)
 
 ## Item Details
-##### <a name='0ce1bf409ced1fa46ba13ab8ea294d00df7f476667'></a> Source: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='a949eb8f212746cace9ad69855780feb7bab0bee22'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/ef66b45c311565ad4dcbd9e0d26eb86263bc3989/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.zh-tw.xlf)
-* Handoff Datetime: 2016-05-25 00:05:18
+* Handoff File: [Configure-certificate-infrastructure.11aa141bf0218e2b062073a62a6f700c787600de.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a344f48027578f86674174c90369caea634cb86f/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/Configure-certificate-infrastructure.11aa141bf0218e2b062073a62a6f700c787600de.zh-tw.xlf)
+* Handoff Datetime: 2016-05-25 16:12:22
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/5f8a920bb49e5d8995221d65f4b038d73c90ef56/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
-* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/37d221236c74ab56e17afe2ca2a0c404e3900311/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-24 08:50:09
 * [Back to Top](#report-top)
 
-##### <a name='fb8b5453664b3b60d801ddb372114eb2d0d67704589'></a> Source: [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md)
+##### <a name='0f282784c3d2ea87b5ea065cb042d135a4ce160920'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-pfx.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-pfx.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/ef66b45c311565ad4dcbd9e0d26eb86263bc3989/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.zh-tw.xlf)
-* Handoff Datetime: 2016-05-25 00:05:18
+* Handoff File: [Configure-certificate-infrastructure-for-pfx.cfce8751275f4501921f73503ac749350c9d9ea8.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a344f48027578f86674174c90369caea634cb86f/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/Configure-certificate-infrastructure-for-pfx.cfce8751275f4501921f73503ac749350c9d9ea8.zh-tw.xlf)
+* Handoff Datetime: 2016-05-25 16:12:22
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='23094d0ae88b2ade100dbec55eb147a647e6c56721'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure-for-scep.md](https://github.com/Microsoft/IntuneDocs-pr/blob/216796f39c9d2711376c0226a0f57baddeba43ed/InTuneDocs/DeployUse/Configure-certificate-infrastructure-for-scep.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [Configure-certificate-infrastructure-for-scep.fc0c1e54cbbd8768ac8185f7fcac6d5e86e891c1.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a344f48027578f86674174c90369caea634cb86f/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/Configure-certificate-infrastructure-for-scep.fc0c1e54cbbd8768ac8185f7fcac6d5e86e891c1.zh-tw.xlf)
+* Handoff Datetime: 2016-05-25 16:12:22
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
