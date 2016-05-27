@@ -6,19 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bd52b0e5a9e3be1b8549687e70c86b6e86301c19/InTuneDocs/DeployUse/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) | HandedOffSuccess | [Details](#bd36ee9c1c6080abda869a525335b272d193299418)
+ [InTuneDocs\DeployUse\how-your-windows-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9d867202b8b3cc5e6ed77d97bcfddce2beabdd40/InTuneDocs/DeployUse/how-your-windows-users-get-their-apps.md) | OutofSyncHandedBackSuccess | [Details](#f226ea2a7be64ef759f61c61903bb0dc964c141053)
 
 ## Item Details
-##### <a name='bd36ee9c1c6080abda869a525335b272d193299418'></a> Source: [InTuneDocs\DeployUse\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bd52b0e5a9e3be1b8549687e70c86b6e86301c19/InTuneDocs/DeployUse/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-* Status: HandedOffSuccess
+##### <a name='f226ea2a7be64ef759f61c61903bb0dc964c141053'></a> Source: [InTuneDocs\DeployUse\how-your-windows-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9d867202b8b3cc5e6ed77d97bcfddce2beabdd40/InTuneDocs/DeployUse/how-your-windows-users-get-their-apps.md)
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.ad43704da208117abad53962a42b9b87a4150126.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/e04972b455e6790bb25a61afe997bf896f3861e7/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.ad43704da208117abad53962a42b9b87a4150126.zh-tw.xlf)
-* Handoff Datetime: 2016-05-27 00:07:00
+* Handoff File: [how-your-windows-users-get-their-apps.4960b99a5369d8ee5635610763c13935b3eae406.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a7cf1c024b694453e2d06872d16e49e07cc9b427/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/how-your-windows-users-get-their-apps.4960b99a5369d8ee5635610763c13935b3eae406.zh-tw.xlf)
+* Handoff Datetime: 2016-05-27 16:17:50
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\how-your-windows-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/888b2cf9711d4993ea2dae667a6b4ab2e494cbf7/InTuneDocs/DeployUse/how-your-windows-users-get-their-apps.md)
+* Current Handback File: [how-your-windows-users-get-their-apps.4960b99a5369d8ee5635610763c13935b3eae406.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/eba56c3beb054d947d9743c83b6a1f701959b4bc/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/how-your-windows-users-get-their-apps.4960b99a5369d8ee5635610763c13935b3eae406.zh-tw.xlf)
+* Current Handback Datetime: 2016-05-27 00:43:48
 * [Back to Top](#report-top)
 
 
