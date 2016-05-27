@@ -100,7 +100,7 @@ ms.suite: ems
 |原則名稱|當您想要執行此作業時使用|
 |---------------|------------------------|
 |**Exchange ActiveSync 原則**|為 Exchange ActiveSync 所管理的裝置，設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Exchange ActiveSync 原則設定](exchange-activesync-policy-settings-in-microsoft-intune.md)|
-|**行動裝置安全性原則**|<ul><li>設定行動裝置 (所有平台) 的設定，包括：<br /><br /><ul><li>安全性</li><li>加密</li><li>系統</li><li>電子郵件</li><li>應用程式</li></ul></li></ul> **重要事項：**Microsoft Intune 現已針對不同的裝置平台，設置個別的**組態原則**，而這些原則全都包含最新的設定可供您使用。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作，但您應及早規劃改用新的設定原則。<br />如需詳細資訊，請參閱 [Microsoft Intune 的行動裝置安全性原則設定](mobile-device-security-policy-settings-in-microsoft-intune.md)|
+|**行動裝置安全性原則**|<ul><li>設定行動裝置 (所有平台) 的設定，包括：<br /><br /><ul><li>安全性</li><li>加密</li><li>系統</li><li>電子郵件</li><li>應用程式</li></ul></li></ul> 重要事項：Microsoft Intune 現已針對不同的裝置平台，設置個別的組態原則，而這些原則全都包含最新的設定可供您使用。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作，但您應及早規劃改用新的設定原則。<br />如需詳細資訊，請參閱 [Microsoft Intune 的行動裝置安全性原則設定](mobile-device-security-policy-settings-in-microsoft-intune.md)|
 
 ## 條件式存取與相容性原則
 

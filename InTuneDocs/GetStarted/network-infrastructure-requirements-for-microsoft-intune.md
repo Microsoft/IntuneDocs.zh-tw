@@ -160,7 +160,7 @@ ms.suite: ems
 ## Proxy 伺服器的需求
 若要管理位於 Proxy 伺服器後方的電腦，請注意︰
 
--   Proxy 伺服器必須同時支援 **HTTP** 和 **HTTPS**，因為 Intune 用戶端會使用這兩種通訊協定。
+-   Proxy 伺服器必須同時支援 HTTP 和 HTTPS，因為 Intune 用戶端會使用這兩種通訊協定。
 
 -   Intune 支援未經驗證的 Proxy 伺服器。
 

@@ -83,7 +83,7 @@ ms.suite: ems
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-若要使用 BranchCache，用戶端電腦必須已啟用 BranchCache，接著再完成**分散式快取模式**的設定
+若要使用 BranchCache，用戶端電腦必須已啟用 BranchCache，接著再完成分散式快取模式的設定
 
 根據預設，已安裝 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 用戶端時電腦會啟用 BranchCache 和分散式快取模式。 不過，如果用戶端已有停用 BranchCache 的群組原則，[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 不會覆寫該原則，因此 BranchCache 將在該部電腦上維持停用狀態。
 

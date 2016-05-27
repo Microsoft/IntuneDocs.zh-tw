@@ -1,20 +1,26 @@
-# [Understand and Explore](introduction-to-microsoft-intune.md)
-## [Introduction to Intune](introduction-to-microsoft-intune.md)
-## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
-### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
-### [Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
-### [Create groups to organize users & devices](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Create policies and publish an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Enroll mobile devices & install an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
-### [Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Next steps](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-<!--- ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
-### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)--->
-## [Common scenarios](common-ways-to-use-intune.md)
+# [了解和探索](introduction-to-microsoft-intune.md)
+## [Intune 簡介](introduction-to-microsoft-intune.md)
+## [Intune 評估指南](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+### [登入或註冊 30 天評估](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
+### [加入使用者](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
+### [建立群組來組織使用者和裝置](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
+### [建立原則及發行 App](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
+### [註冊行動裝置並安裝應用程式](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
+### [其他選項和額外項目](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
+### [後續步驟](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [一般的 Intune 評估工作](common-microsoft-intune-evaluation-tasks.md)
+### [開始使用試用版與部署 iOS PIN 原則](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
+### [設定 iOS 裝置的電子郵件存取](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
+## [常見案例](common-ways-to-use-intune.md)
+
 <!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
 
-# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [疑難排解](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+
+
+<!--HONumber=May16_HO1-->
+
+

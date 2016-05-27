@@ -38,7 +38,7 @@ ms.suite: ems
 
 -   您必須在執行 Windows 7 或更新版本的 Windows 電腦上執行應用程式包裝工具。
 
--   您的輸入應用程式必須是副檔名為 **.apk** 檔案的有效 Android 應用程式套件，而且：
+-   您的輸入應用程式必須是副檔名為 .apk 檔案的有效 Android 應用程式套件，而且：
 
     -   無法加密
 
@@ -48,7 +48,7 @@ ms.suite: ems
 
 -   該應用程式必須是由貴公司所開發，或針對貴公司所開發。 您無法使用此工具，來處理從 Google Play 商店下載的應用程式。
 
--   若要執行應用程式包裝工具，您必須安裝最新版的 [Java Runtime Environment](http://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 **C:\ProgramData\Oracle\Java\javapath**。 如需詳細說明，請參閱您的 [Java 文件](http://java.com/download/help/)
+-   若要執行應用程式包裝工具，您必須安裝最新版的 [Java Runtime Environment](http://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 C:\ProgramData\Oracle\Java\javapath。 如需詳細說明，請參閱您的 [Java 文件](http://java.com/download/help/)
 
     > [!NOTE]
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 我們建議您改為安裝 64 位元版本。
@@ -59,7 +59,7 @@ ms.suite: ems
 
 2.  接受授權合約，然後完成安裝。
 
-記下您安裝此工具的資料夾。 預設位置為：**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**
+記下您安裝此工具的資料夾。 預設位置為：C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool
 
 ## 步驟 3：執行 App Wrapping Tool
 
@@ -71,21 +71,21 @@ ms.suite: ems
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  使用 **invoke-AppWrappingTool** 命令搭配下列參數來執行工具。 標示為「選用」的參數適用於使用 Azure Active Directory Library (ADAL) 的應用程式。 如需詳細資訊，請參閱[使用 Azure Active Directory Library 包裝應用程式](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
+3.  使用 invoke-AppWrappingTool 命令搭配下列參數來執行工具。 標示為「選用」的參數適用於使用 Azure Active Directory Library (ADAL) 的應用程式。 如需詳細資訊，請參閱[使用 Azure Active Directory Library 包裝應用程式](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
 
 |參數|詳細資訊|範例|
 |-------------|--------------------|---------|
-|**-InputPath**&lt;String&gt;|來源 Android 應用程式 (.apk) 的路徑。| |
-|**-OutputPath**&lt;String&gt;|輸出的 Android 應用程式路徑。 如果此路徑與 InputPath 的目錄路徑相同，封裝會失敗。| |
-|**-KeyStorePath**&lt;String&gt;|包含要簽署之公開/私密金鑰組的 keystore 檔案路徑。| |
-|**-KeyStorePassword**&lt;SecureString&gt;|用來解密 keystore 的密碼。| |
-|**-KeyAlias**&lt;String&gt;|要用於簽署的金鑰名稱。| |
-|**-KeyPassword**&lt;SecureString&gt;|用來解密簽署用途之私密金鑰的密碼。| |
-|**-SigAlg**&lt;SecureString&gt;|要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA、MD5withRSA|
-|**-ClientID**&lt;GUID&gt;|輸入應用程式的 Azure Active Directory 用戶端識別碼 (選用)。| |
-|**-AuthorityURI**&lt;Uri&gt;|輸入應用程式的 Azure Active 授權 URI (選用)。| |
-|**-SkipBroker**&lt;Boolean&gt;|指出輸入應用程式是否支援全裝置代理單一登入 (選用)。 |**True** - 輸入應用程式不支援全裝置代理單一登入。 使用 NonBrokerRedirectURI 參數。 **False** - 輸入應用程式支援全裝置代理單一登入。|
-|**-NonBrokerRedirectURI**&lt;URI&gt;|如果 SkipBroker 為 true，則使用 Azure Active Directory 重新導向 URI (選用)。|  |
+|-InputPath&lt;String&gt;|來源 Android 應用程式 (.apk) 的路徑。| |
+|-OutputPath&lt;String&gt;|輸出的 Android 應用程式路徑。 如果此路徑與 InputPath 的目錄路徑相同，封裝會失敗。| |
+|-KeyStorePath&lt;String&gt;|包含要簽署之公開/私密金鑰組的 keystore 檔案路徑。| |
+|-KeyStorePassword&lt;SecureString&gt;|用來解密 keystore 的密碼。| |
+|-KeyAlias&lt;String&gt;|要用於簽署的金鑰名稱。| |
+|-KeyPassword&lt;SecureString&gt;|用來解密簽署用途之私密金鑰的密碼。| |
+|-SigAlg&lt;SecureString&gt;|要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA、MD5withRSA|
+|-ClientID&lt;GUID&gt;|輸入應用程式的 Azure Active Directory 用戶端識別碼 (選用)。| |
+|-AuthorityURI&lt;Uri&gt;|輸入應用程式的 Azure Active 授權 URI (選用)。| |
+|-SkipBroker&lt;Boolean&gt;|指出輸入應用程式是否支援全裝置代理單一登入 (選用)。 |True - 輸入應用程式不支援全裝置代理單一登入。 使用 NonBrokerRedirectURI 參數。 False - 輸入應用程式支援全裝置代理單一登入。|
+|-NonBrokerRedirectURI&lt;URI&gt;|如果 SkipBroker 為 true，則使用 Azure Active Directory 重新導向 URI (選用)。|  |
 
 
 CommonParameters
@@ -107,7 +107,7 @@ CommonParameters
 
 範例：
 
-系統接著會提示您提供 **KeyStorePassword** 和 **KeyPassword**
+系統接著會提示您提供 KeyStorePassword 和 KeyPassword
 
 ## 隨即會產生已包裝的應用程式，並和記錄檔案一起儲存於您指定的輸出路徑中。
 執行應用程式包裝工具的安全性考量
@@ -139,7 +139,7 @@ CommonParameters
 |--------------|--------------------|-----------------|
 |**預設值**|用戶端識別碼<br /><br />使用 AAD 註冊應用程式之後，針對該應用程式所產生的唯一 GUID 識別碼。 如果您知道應用程式的用戶端識別碼，請指定該值。|否則，請使用預設值。|
 |**6c7e8096-f593-4d72-807f-a5f86dcc9c77**|授權 URI<br /><br />AAD 物件的授權統一資源識別元 (URI) 值 (例如使用者和群組)。 AuthorityURI 參數是選用的應用程式包裝工具。||
-|**如果您不使用此參數，則會使用預設 URI。**|SkipBroker<br /><br />指出公司入口網站是否將用來做為 Broker 的值。<br /><br />**True** - 公司入口網站不會用於 ADAL 驗證。 **False** - 公司入口網站將用於 ADAL 驗證。||
+|**如果您不使用此參數，則會使用預設 URI。**|SkipBroker<br /><br />指出公司入口網站是否將用來做為 Broker 的值。<br /><br />True - 公司入口網站不會用於 ADAL 驗證。 False - 公司入口網站將用於 ADAL 驗證。||
 |**公司入口網站正因「單一登入」的緣故而使用已註冊的使用者。**|非 Broker 重新導向 URI|ADAL 不使用 Broker 應用程式 (Intune 公司入口網站) 時，則使用登入 URI。|
 |**urn:ietf:wg:oauth:2.0:oob**|資源識別碼||
 
