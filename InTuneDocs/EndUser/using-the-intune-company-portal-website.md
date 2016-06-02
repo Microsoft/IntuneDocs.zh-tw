@@ -48,13 +48,13 @@ ms.suite: ems
 
 -   從遠端管理您的電腦 (僅適用於 PC)
 
-您在 公司入口網站 上所能執行的大部分工作，都能使用您安裝在裝置上的 公司入口網站應用程式 來執行。 若要深入了解公司入口網站應用程式、如何在 Intune 中註冊裝置等，請點選您擁有之裝置類型的連結：
+您在 **公司入口網站** 上所能執行的大部分工作，都能使用您安裝在裝置上的 **公司入口網站應用程式** 來執行。 若要深入了解公司入口網站應用程式、如何在 Intune 中註冊裝置等，請點選您擁有之裝置類型的連結：
 
 - [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [透過 Intune 使用 Android 裝置](using-your-windows-device-with-intune.md)
+- [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -21,11 +21,9 @@
 ### [註冊行動裝置並安裝應用程式](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](post-configuration-tasks.md)
 
-<!--
-## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
--->
+## [選擇如何管理裝置](choose-how-to-manage-devices.md)
+### [行動裝置管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows 電腦管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [專案範圍](project-scope.md)
@@ -34,12 +32,12 @@
 ### [企業首度發行](enterprise-rollout.md)
 ### [操作和維護](operations-and-maintenance.md)
 
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [開發和自訂應用程式](/intune/develop/intune-app-sdk)
 # [疑難排解](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

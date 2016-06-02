@@ -15,7 +15,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -32,6 +32,6 @@ IT 管理員偵測到您正在使用根裝置。 這項設定可能危及安全�
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

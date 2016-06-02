@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
+ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
 
 # optional metadata
 
-ROBOTS:
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,12 +28,11 @@ ms.suite: ems
 
 # 裝置不符合最大的作業系統版本
 
-您的 iOS 裝置不符合最大作業系統版本的 IT 系統管理員原則。 請連絡 IT 系統管理員，取得協助。
+IT 系統管理員已設定您的 Windows 裝置可具有的最高作業系統版本，但您的裝置不符合該設定。 若要瞭解裝置允許的最高作業系統，您需要連絡 IT 系統管理員。
 
 ### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -63,11 +63,12 @@ ms.suite: ems
 - [將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [裝置沒有最基本必備的作業系統版本](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [裝置不符合最大的作業系統版本](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [您的裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)
-- [您的裝置遺漏必要的憑證](your-device-is-missing-a-required-certificate-android.md)
+- [您的裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [您的裝置遺漏必要的憑證](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 
