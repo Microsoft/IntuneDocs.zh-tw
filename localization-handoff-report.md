@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/95abe7b12e68755f3c95f91888efd3e85c057119/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#b55cf263611d6e90805cad9985eb8a5e7ebeb4a0253)
 
 ## Item Details
-##### <a name='b55cf263611d6e90805cad9985eb8a5e7ebeb4a0253'></a> Source: [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/95abe7b12e68755f3c95f91888efd3e85c057119/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/447d8751f80d391c2ac60cb9563120fe8081d986/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-tw.xlf)
-* Handoff Datetime: 2016-06-08 16:52:17
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/888b2cf9711d4993ea2dae667a6b4ab2e494cbf7/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md)
-* Current Handback File: [vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/eba56c3beb054d947d9743c83b6a1f701959b4bc/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-27 00:43:48
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
