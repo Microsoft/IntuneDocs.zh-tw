@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ ms.suite: ems
 您在 Intune 中註冊您的 iOS 裝置之後，本節中的資訊將協助您採取動作。
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)</br>
+- [設定或變更密碼](set-or-change-your-passcode-ios.md)</br>
 - [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 
