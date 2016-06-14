@@ -47,7 +47,7 @@ ms.suite: ems
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
-4.  當上傳完成時，請移除 Intune 管理主控台之 [軟體] 工作區中舊的公司入口網站版本。
+4.  當上傳完成時，請移除 Intune 管理主控台之 **[軟體]** 工作區中舊的公司入口網站版本。
 
 5.  再次簽署所有的企業營運系統應用程式，使用相同的憑證上傳並取代現有的應用程式。
 
@@ -59,9 +59,9 @@ ms.suite: ems
 
 2.  開啟 [Intune 管理主控台](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com)，移至 [系統管理] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]
 
-3.  上傳新簽署的公司入口網站。 You’ll need the newly signed SSP。xap and the new 。PFX file you received from Symantec or the Application enrollment token that w設定為 created with this new 。PFX file。
+3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
-4.  上傳完成時，移除舊的公司入口網站版本，在 軟體  工作區。
+4.  上傳完成時，移除舊的公司入口網站版本，在 **軟體**  工作區。
 
 5.  使用新的憑證簽署所有新增及更新的企業營運應用程式。 現有的應用程式無須重新簽署，也無須重新部署。
 
