@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 的 Windows Phone 8.1 原則設定 | Microsoft Intune
+title: Windows Phone 8.1 原則設定 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## 一般組態設定
 
-使用 Microsoft Intune **Windows Phone 一般設定原則**，來設定適用於 Windows Phone 8.1 裝置的下列設定：
+使用 Microsoft Intune **Windows Phone 一般設定原則 (Windows Phone 8.1 和更新版本)**，來設定適用於 Windows Phone 8.1 裝置的下列設定：
 
 -   **行動裝置安全性設定** – 可從預先定義的設定清單中選擇，讓您可以控制裝置上某個功能範圍。
 
 -   **相容與不相容的應用程式** - 指定公司中相容與不相容之應用程式的清單。 Windows Phone 裝置可以封鎖或允許這些應用程式的安裝。
+
+### 適用性設定
+
+|設定名稱|詳細資料|
+|----------------|----------------------------------|
+|**套用所有設定至 Windows 10**|允許此原則中的設定套用至 Windows 10 行動裝置以及 Windows Phone 8.1 裝置。|
 
 ### 密碼設定
 
@@ -54,7 +60,7 @@ ms.suite: ems
 
 |設定名稱|詳細資料|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**在行動裝置上要求加密**|需要加密受支援行動裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是]****.|是|是|
+|**在行動裝置上要求加密**|需要加密受支援行動裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] ****。|是|是|
 
 ### 系統設定
 
@@ -121,8 +127,7 @@ ms.suite: ems
 |**匯入應用程式**|匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 應用程式 URL」格式。|
 |**編輯**|讓我們編輯所選取應用程式的名稱、發行者和 URL。|
 |**刪除**|從清單中刪除選取的應用程式。|
-> [!IMPORTANT]
-> 如果您針對 Windows Phone 8.1 裝置指定允許的應用程式清單，則必須將公司入口網站應用程式新增至此清單，否則將會遭到封鎖。
+> [!IMPORTANT]如果您針對 Windows Phone 8.1 裝置指定允許的應用程式清單，則必須將公司入口網站應用程式新增至此清單，否則將會遭到封鎖。
 
 
 ### 相容與不相容之應用程式的參考資訊
@@ -134,14 +139,14 @@ ms.suite: ems
 
 開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以使用在相容或不相容的應用程式清單中使用此 URL。
 
-**範例：** 在市集中搜尋 Skype 應用程式。 您要使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**範例：** 在市集中搜尋 Skype 應用程式。 您要使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
 
 ## 自訂原則設定 
 使用 Microsoft Intune **Windows Phone 自訂組態原則**來部署 OMA-URI (開放行動聯盟的統一資源識別項) 設定，此設定可用來控制 **Windows Phone 8.1 裝置**上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
-這項功能的目的是讓您部署無法使用 Intune 一般設定原則設定的 Windows Phone 設定。 如需可使用這些原則進行設定之設定的資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+這項功能的目的是讓您部署無法使用 Intune 一般設定原則設定的 Windows Phone 設定。 如需可使用這些原則進行設定之設定的資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-如需建立適用於 Windows Phone 裝置的 OMA-URI 設定的說明，請參閱 [Windows Phone 8.1 MDM 通訊協定文件](http://technet.microsoft.com/library/dn499787.aspx).
+如需建立適用於 Windows Phone 裝置的 OMA-URI 設定的說明，請參閱 [Windows Phone 8.1 MDM 通訊協定文件](http://technet.microsoft.com/library/dn499787.aspx)。
 
 ### 一般設定
 
@@ -169,6 +174,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

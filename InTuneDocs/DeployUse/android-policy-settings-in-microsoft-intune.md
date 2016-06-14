@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 的 Android 組態原則設定 | Microsoft Intune
+title: Android 和 Samsung KNOX 設定原則設定 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Microsoft Intune 的 Android 原則設定
+# Microsoft Intune 中的 Android 和 Samsung KNOX 設定原則設定
 
 ## 一般組態原則
 
@@ -38,7 +38,7 @@ ms.suite: ems
 -   **相容與不相容的應用程式** - 指定公司中相容與不相容之應用程式的清單。 在 Android 和 iOS 裝置上，「不相容應用程式報表」 **** 可用來針對使用者已安裝 (但無法實際封鎖應用程式安裝) 的應用程式，檢視您在清單中所指定應用程式的相容性。
 
 > [!TIP]
-> 您可以設定使用者的條款及條件，確定他們知道將會評估其裝置上的應用程式 (包括個人應用程式)，並會封鎖不相容應用程式，或將它報告為不相容。 使用者必須先接受這些條款及條件，才能註冊他們的裝置，並使用公司入口網站來取得應用程式。 如需使用條款與條件的詳細資訊，請參閱 [Microsoft Intune 的條款和條件原則設定](terms-and-condition-policy-settings-in-microsoft-intune.md)。.
+> 您可以設定使用者的條款及條件，確定他們知道將會評估其裝置上的應用程式 (包括個人應用程式)，並會封鎖不相容應用程式，或將它報告為不相容。 使用者必須先接受這些條款及條件，才能註冊他們的裝置，並使用公司入口網站來取得應用程式。 如需使用條款與條件的詳細資訊，請參閱 [Microsoft Intune 的條款和條件原則設定](terms-and-condition-policy-settings-in-microsoft-intune.md)。
 
 若此主題未包含您所需的設定，您可以使用 Android 自訂原則加以建立，讓您能夠使用 OMA-URI 設定來控制裝置。 如需詳細資訊，請參閱本主題稍後的**自訂原則設定**。
 
@@ -150,7 +150,7 @@ ms.suite: ems
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
-|**選取裝置處於資訊站模式時允許執行的受管理應用程式**|按一下 [瀏覽]****，然後選取裝置處於 kiosk 模式時允許執行的受管理應用程式或市集中的應用程式。 不允許在裝置上執行其他應用程式。<br /><br />如需協助，請參閱本主題稍後的＜如何指定 URL 給應用程式市集＞。|
+|**選取裝置處於資訊站模式時允許執行的受管理應用程式**|按一下 **[瀏覽]**，然後選取在裝置處於 Kiosk 模式時允許執行的受管理應用程式 (目前不支援指定為市集連結的應用程式)。 不允許在裝置上執行其他應用程式。|
 |**允許音量按鈕**|啟用或停用裝置上的音量按鈕。|
 |**允許喚醒螢幕睡眠按鈕**|啟用或停用裝置上的喚醒螢幕睡眠按鈕。|
 
@@ -161,23 +161,23 @@ ms.suite: ems
 
 ###### 執行不相容應用程式報表
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [報表]**** &gt; [不相容應用程式報表]****.
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 **[報告]** &gt; **[不符合規定的應用程式報告]**。
 
-2.  選取您想要檢查的裝置群組、是否要檢查相容應用程式和 (或) 不相容應用程式，然後按一下 [檢視報表]****.
+2.  選取您想要檢查的裝置群組、是否要檢查相容應用程式和 (或) 不相容應用程式，然後按一下 [檢視報表] ****。
 
 #### 如何指定 URL 給應用程式市集
-若要在符合規定及不符合規定的應用程式清單中或在 [選取當裝置為 Kiosk 模式時，允許執行的受管理應用程式] **** 選項 (僅限 iOS) 中，指定應用程式 URL，請使用下列其中一種格式：
+若要在相容與不相容的應用程式清單中指定應用程式 URL，請使用下列格式：
 
 在 [Google Play 商店的 [應用程式] 區段](https://play.google.com/store/apps)中，搜尋您要使用的應用程式。
 
 開啟應用程式的安裝頁面，然後將 URL 複製到剪貼簿。 您現在可以使用在相容或不相容的應用程式清單中使用此 URL。
 
-**範例：**在 Google Play 中搜尋 Microsoft Office Mobile。 您要使用的 URL 是 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+**範例：**在 Google Play 中搜尋 Microsoft Office Mobile。 您要使用的 URL 是 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
 
 ## 自訂原則設定
 使用 Microsoft Intune **Android 自訂組態原則**來部署 OMA-URI (開放行動聯盟的統一資源識別項) 設定，此設定可用來控制 Android 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
-此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。 如需可使用這些原則進行設定之設定的資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。 如需可使用這些原則進行設定之設定的資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 > [!NOTE]
 > Android 自訂原則目前只支援針對包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。 如需詳細資訊，請參閱本主題稍後的「使用預先共用金鑰設定自訂的 Wi-Fi 設定檔」。
@@ -195,7 +195,7 @@ ms.suite: ems
     |--------|--------------------|
     |**設定名稱**|輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。|
     |**設定說明**|提供可給予設定概觀的說明，以及可協助您找到該說明的其他相關資訊。|
-    |**資料類型**|選取您要在其中指定這個 OMA-URI 設定的日期類型。 選擇 [字串]、[字串 (XML)]、[日期和時間]、[整數]、[浮點數]**** 或 [布林值]****.|
+    |**資料類型**|選取您要在其中指定這個 OMA-URI 設定的日期類型。 選擇 [字串]、[字串 (XML)]、[日期和時間]、[整數]、[浮點數]**** 或 [布林值]****。|
     |**OMA-URI (區分大小寫)**|指定您想要提供設定的 OMA-URI。|
     |**值**|指定要與您先前指定之 OMA-URI 產生關聯的值。|
 
@@ -212,7 +212,7 @@ ms.suite: ems
 |----------------|--------------------|
 |**設定名稱**|針對設定指定您選擇的名稱。|
 |**設定說明**|指定設定的說明。|
-|**資料類型**|選取 [字串 (XML)]****.|
+|**資料類型**|選取 [字串 (XML)]****。|
 |**OMA-URI**|輸入下列字串︰./Vendor/MSFT/WiFi/Profile/*&lt;您的 Wi-Fi 設定檔&gt;*/Settings|
 
 3.  針對 [值]****，複製並貼上下列 XML 程式碼：
@@ -258,6 +258,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 
