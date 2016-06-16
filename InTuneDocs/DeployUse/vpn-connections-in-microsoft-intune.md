@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,19 +48,20 @@ Intune 支援使用下列連線類型建立 VPN 設定檔：
 
 
 
-連線類型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop 和行動裝置版 |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+連線類型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是，(OMA-URI，僅限行動裝置)|     
 Pulse Secure|是  |是 |是   |否  |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
 CheckPoint Mobile VPN|是 |是 |是 |是 |是|是|是|
-Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|否|
-Microsoft Automatic|否 |否 |否 |否 |否|否|是|
-IKEv2|否 |否 |否 |否 |否|否|是|
-PPTP|否 |否 |否 |否 |否|否|是|
-L2TP|否 |否 |否 |否 |否|否|是|
+Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|VPNv1 OMA-URI*|
+Microsoft Automatic|否 |否 |否 |否 |否|是 (OMA-URI)|是|
+IKEv2|iOS 自訂設定檔|否 |否 |否 |否|是 (OMA-URI)|是|
+PPTP|iOS 自訂設定檔|否 |否 |否 |否|否|是|
+L2TP|iOS 自訂設定檔|否 |否 |否 |否|是 (OMA-URI)|是|
 
+\* 無可供 Windows 10 使用的其他設定。
 
 > [!IMPORTANT] 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用部署至裝置的 VPN 設定檔。 您可以使用[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)主題中的資訊，以協助您使用 Intune 部署適用的應用程式。  
 
@@ -84,7 +85,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 ## 建立 VPN 設定檔
 
-1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則] > [新增原則]**。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com) 中，選擇 [原則] > [新增原則]。
 2. 展開相關的裝置類型，然後選擇該裝置的 VPN 設定檔，以選取新原則的範本：
     * **VPN 設定檔 (Android 4 和更新版本)**
     * **VPN 設定檔 (iOS 7.1 和更新版本)**
@@ -105,7 +106,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **連線類型**     |  請在下列項目中選取 VPN 設定檔要使用的連線類型：**Cisco AnyConnect** (Windows 8.1 或 Windows Phone 8.1 不提供)、**Pulse Secure**、**F5 Edge Client**、**Dell SonicWALL Mobile Connect**、**CheckPoint Mobile VPN**
 **VPN 伺服器描述**     | 指定裝置將連線之 VPN 伺服器的描述。 範例：Contoso VPN 伺服器。 當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。
 **伺服器 IP 位址或 FQDN**    |提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例： 192.168.1.1、vpn.contoso.com。  當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。         |         
-**伺服器清單**     |選擇 **[新增]** 新增要用於 VPN 連線的新 VPN 伺服器。 您也可以指定哪部伺服器是連線的預設伺服器。 只有在連線類型為 [F5 Edge Client] 時，才會顯示此選項。         
+**伺服器清單**     |選擇 [新增] 來新增要用於 VPN 連線的新 VPN 伺服器。 您也可以指定哪部伺服器是連線的預設伺服器。 只有在連線類型為 [F5 Edge Client] 時，才會顯示此選項。         
 **透過 VPN 連線傳送所有網路流量**     |如果您選取此選項，則會透過 VPN 連線傳送所有網路流量。 若未選取此選項，用戶端將會在連線到協力廠商 VPN 伺服器時，動態交涉分割通道時的路由。 只有公司網路的連線會透過 VPN 通道傳送。 當您連線至網際網路上的資源時不會使用 VPN 通道。
 **驗證方法**| 選取 VPN 連線用過的驗證方法：[憑證] 或 [使用者名稱及密碼]。 (當連線類型為 Cisco AnyConnect 時，無法使用使用者名稱及密碼。)Windows 8.1 沒有 [驗證方法] 選項。
 **每次登入時記住使用者認證**|選取此選項，確保記住使用者認證，讓使用者不必每次建立連線時都輸入認證。
@@ -113,7 +114,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **角色**| 指定有權存取此連線之使用者角色的名稱。 使用者角色定義個人設定和選項，以及啟用或停用某些存取功能。 只有在連線類型為 [Pulse Secure] 時，才會顯示這個選項。
 **領域**|指定您想要使用之驗證領域的名稱。 驗證領域就是 Pulse Secure 連線類型所使用的驗證資源群組。 只有在連線類型為 [Pulse Secure] 時，才會顯示這個選項。
 **登入群組或網域**|指定您想要連線之登入群組或網域的名稱。 只有在連線類型為 [Dell SonicWALL Mobile Connect] 時，才會顯示此選項。
-**指紋**|指定將用來確認是否信任 VPN 伺服器的字串 (例如 "Contoso Fingerprint Code")。 指紋可以：傳送至用戶端，讓它知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還沒有指紋，則會提示使用者信任所連線的 VPN 伺服器，同時顯示指紋 (使用者手動驗證指紋，並選擇 **[信任]** 進行連線)。 只有在連線類型為 [CheckPoint Mobile VPN] 時，才會顯示此選項。
+**指紋**|指定將用來確認是否信任 VPN 伺服器的字串 (例如 "Contoso Fingerprint Code")。 指紋可以：傳送至用戶端，讓它知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還沒有指紋，則會提示使用者信任所連線的 VPN 伺服器，同時顯示指紋 (使用者手動驗證指紋，並選擇 [信任] 來進行連線)。 只有在連線類型為 [CheckPoint Mobile VPN] 時，才會顯示此選項。
 **每個應用程式 VPN**|如果您想要這個 VPN 連線與 Mac OS X 應用程式的 iOS 產生關聯，以在執行應用程式時開啟連線，請選取這個選項。 部署軟體時，您可以將 VPN 設定檔與應用程式產生關聯。 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
 **自動偵測 Proxy 設定** (僅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1)|如果您的 VPN 伺服器進行連線時需要 Proxy 伺服器，請指定是否要裝置自動偵測連線設定。 如需詳細資訊，請參閱 Windows Server 文件。
 **使用自動設定指令碼** (僅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1)|如果您的 VPN 伺服器進行連線時需要 Proxy 伺服器，請指定是否要使用自動設定指令碼來定義設定，然後指定含有設定之檔案的 URL。 如需詳細資訊，請參閱 Windows Server 文件。
@@ -134,7 +135,7 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 **相關聯的應用程式**     | 您可以提供會自動使用 VPN 連線的應用程式清單。 應用程式類型會決定應用程式識別碼。 若為通用應用程式請提供套件系列名稱，桌面應用程式請提供應用程式的檔案路徑。          
 
 
-> [!IMPORTANT] 我們建議您保護所有您為了用於個別應用程式 VPN 組態而編譯的應用程式清單。 如果未經授權的使用者修改您的清單，而您將它匯入到每個應用程式的 VPN 應用程式清單中，則您可能會授權 VPN 存取給不應該存取的應用程式。 保護應用程式清單的一種方法是使用存取控制清單 (ACL)。
+> [!IMPORTANT] 我們建議您保護所有您為了用於個別應用程式 VPN 設定而編譯的應用程式清單。 如果未經授權的使用者修改您的清單，而您將它匯入到個別應用程式的 VPN 應用程式清單中，則您可能會將 VPN 存取權授權給不應該存取的應用程式。 保護應用程式清單的一種方法是使用存取控制清單 (ACL)。
 
 以下舉例說明何時可能會使用公司界限設定。 如果您只想針對遠端桌面啟用 VPN，您會建立網路流量規則，允許外部連接埠 3996 上之通訊協定號碼 27 的流量。 其他任何流量都不會使用 VPN。
 
@@ -150,9 +151,9 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 
 2.  在 [管理部署]  對話方塊中：
 
-    -   **若要部署原則**：選取您要部署原則的一或多個群組，然後選擇 **[新增]** &gt; **[確定]**。
+    -   **若要部署原則**：選取您要部署原則的一或多個群組，然後選擇 [新增] &gt; [確定]。
 
-    -   **若要關閉對話方塊但不加以部署** - 選擇 **[取消]**。
+    -   **若要關閉對話方塊但不加以部署** - 選擇 [取消]。
 
 
 成功部署之後，使用者會看到您在裝置的 VPN 連線清單中指定的 VPN 連線名稱。
@@ -160,10 +161,10 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板] 工作區中。
 
 ### 請參閱
-[VPN 設定檔的自訂組態](Custom-configurations-for-VPN-profiles.md)
+[VPN 設定檔的自訂設定](Custom-configurations-for-VPN-profiles.md)
 [Android Pulse Secure 的個別應用程式 VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

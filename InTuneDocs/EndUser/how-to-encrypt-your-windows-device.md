@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # 如何加密您的 Windows 裝置
-若要重新連線到您的工作，您必須遵循下列指示來加密裝置：
 
-## 選項 1 - 新增 Microsoft 帳戶
+為保護您公司或學校的資料，IT 系統管理員可能會要求您加密 Windows 裝置。 如果有已註冊的 Windows Phone，您的裝置就會在需要加密時自動加密。
 
-1.  搜尋後啟動 [電腦設定]  應用程式。
+如果有桌面裝置，請遵循下列指示進行加密。 
 
-2.  依序按一下 [帳戶] &gt; [您的帳戶] 和 [連結到 Microsoft 帳戶]
+1.  搜尋後啟動 [管理 BitLocker] 應用程式。
 
-3.  依照顯示的指示執行。
+2.  按一下 [開啟 BitLocker]，然後依照顯示的指示來加密每個磁碟機。
 
-4.  請務必遵循[註冊裝置以於工作時使用](http://go.microsoft.com/fwlink/?LinkId=519071)中的指示，以向 Intune 註冊裝置
-
-## 選項 2 - 啟用 BitLocker：
-
-1.  搜尋後啟動 [管理 BitLocker]  應用程式。
-
-2.  按一下 [開啟 BitLocker] ，然後依照顯示的指示來加密每個磁碟機。
-
-3.  請務必遵循[註冊裝置以於工作時使用](http://go.microsoft.com/fwlink/?LinkId=519071)中的指示，以向 Intune 註冊裝置
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

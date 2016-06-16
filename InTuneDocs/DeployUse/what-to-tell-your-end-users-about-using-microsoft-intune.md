@@ -34,6 +34,8 @@ ms.suite: ems
 - 了解您的使用者在 Intune 中遵循以執行不同工作的步驟。
 - 提供使用者以協助他們完成工作，並解決它們在使用 Intune 時遇到的問題。
 
+[自訂公司入口網站](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7)時，請確定您包含 IT 系統管理員的連絡資訊，讓您的使用者可以在需要時取得協助。
+
 
 ## 您的使用者可以找到常見工作的相關資訊之處
 
@@ -61,9 +63,9 @@ ms.suite: ems
 
 ## 幫助使用者了解公司入口網站應用程式訊息
 
-若要協助使用者解決它們可能會在使用公司入口網站時遇到的問題，您可以檢閱[使用者可能會在公司入口網站中看到的訊息清單](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)
+若要協助使用者解決它們可能會在使用公司入口網站時遇到的問題，您可以檢閱[使用者可能會在公司入口網站中看到的訊息清單](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
