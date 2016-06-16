@@ -18,7 +18,7 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,14 +28,14 @@ ms.suite: ems
 # 使用 Microsoft Intune 建立及部署行動應用程式管理原則
 不論裝置是否由 Intune 管理，行動應用程式管理 (MAM) 原則都可以套用至這些裝置上執行的應用程式。 如需 MAM 原則的運作方式詳細資訊，以及 Intune MAM 原則支援的案例，請閱讀[使用行動應用程式管理原則來保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)主題。
 
-本主題描述在 Azure 入口網站中建立 MAM 原則的程序 。 您在 Azure 入口網站中建立的 MAM 原則支援所有 MAM 案例︰
+本主題描述在 **Azure 入口網站**中建立 MAM 原則的程序 。 Azure 入口網站是用於建立 MAM 原則的新管理主控台，並建議您使用這個入口網站建立 MAM 原則。 Azure 入口網站支援下列 MAM 案例：
 - Intune 中註冊的裝置
 - 協力廠商 MDM 解決方案管理的裝置
 - 未受任何 MDM 解決方案 (BYOD) 管理的裝置。
 
-如果您目前使用 Intune 管理主控台來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則
+如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則。
 >[!IMPORTANT]
-> 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。
+> 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
 
 若要查看為 Android 和 iOS 平台支援的原則設定清單，請選取下列其中一項︰
 
@@ -45,17 +45,17 @@ ms.suite: ems
 
 ##  建立 MAM 原則
 建立 MAM 原則之前，請檢閱[必要條件和支援](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)資訊。
-1.  選擇 [Intune 行動應用程式管理]&gt;[設定]開啟 [設定] 刀鋒視窗。
+1.  選擇 [Intune 行動應用程式管理]**&gt;[設定]**開啟 [設定] 刀鋒視窗。
 
     ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
+    > [!TIP] 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
 
 2.  在 [設定] 刀鋒視窗中，選擇 [應用程式原則]。  這會開啟 [應用程式原則]  刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。
 
     ![顯示現有原則清單的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  選擇 [新增原則] 
+3.  選擇 **[新增原則]**。
 
     ![反白顯示 [新增原則] 功能表選項的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -65,7 +65,7 @@ ms.suite: ems
 
 5.  選擇 [應用程式] 開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 您可以從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 選取應用程式之後，選擇 [應用程式] 刀鋒視窗底部的 [選取] 按鈕儲存您的選擇。
 
-    > 您至少必須選取一個應用程式，才能建立原則。
+    > [!IMPORTANT] 您至少必須選取一個應用程式，才能建立原則。
 
 6.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 開啟 [原則設定] 刀鋒視窗。
 
@@ -100,7 +100,7 @@ ms.suite: ems
 
     ![反白顯示 [新增使用者群組] 功能表選項的 [使用者群組] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
 
-2.  [新增使用者群組]  刀鋒視窗中會顯示使用者群組清單。 這是 Azure Active Directory中的所有安全性群組清單。  您可以選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
+2.  [新增使用者群組]  刀鋒視窗中會顯示使用者群組清單。 這是 **Azure Active Directory**中的所有安全性群組清單。  您可以選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
 
     ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
 
@@ -133,11 +133,11 @@ ms.suite: ems
 
 2.  在 [原則] 刀鋒視窗中，選擇 [使用者群組] 開啟 [使用者群組] 刀鋒視窗，其中會顯示具有這項原則的目前使用者群組清單。
 
-3.  若要將新的使用者群組加入原則中，請選擇 [新增使用者群組]，然後選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
+3.  若要**將新的使用者群組加入原則中**，請選擇 [新增使用者群組]，然後選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
 
     ![選取兩個使用者的 [新增使用者群組] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_ChangePolicy_SelectUser.png)
 
-4.  若要刪除使用者群組，請反白顯示您要移除的使用者群組，選擇省略符號 (...)，然後選擇 [刪除] 以移除使用者群組。
+4.  若要**刪除使用者群組**，請反白顯示您要移除的使用者群組，選擇省略符號 (...)，然後選擇 [刪除] 以移除使用者群組。
 
     ![顯示 [刪除] 選項的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_ChangePolicy_DeleteUser.png)
 
@@ -149,7 +149,7 @@ ms.suite: ems
 
 2.  選擇 [原則設定] 開啟 [原則設定] 刀鋒視窗。
 
-3.  變更設定，然後選擇儲存圖示儲存您的變更。
+3.  變更設定，然後選擇**儲存圖示**儲存您的變更。
 
     ![在頂端顯示儲存功能表選項的 [原則設定] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
 
@@ -167,6 +167,6 @@ ms.suite: ems
 [MAM 啟用應用程式的使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

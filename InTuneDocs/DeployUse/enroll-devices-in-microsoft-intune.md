@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 裝置註冊到 Microsoft Intune | Microsoft Intune
+title: 註冊裝置 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -18,7 +18,7 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # 註冊裝置以在 Intune 中管理
 Microsoft Intune 行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。 註冊裝置的方式取決於裝置類型、擁有權和需要的管理層級。 「攜帶您自己的裝置」(BYOD) 和公司擁有的裝置 (CYOD) 案例都需要註冊程序。 不論使用 Exchange ActiveSync 的組織是在內部部署或雲端中託管，都可以進行較少的管理而不需要註冊。 也可以使用 Intune 用戶端軟體來管理 Windows 電腦。
+
+###  支援的裝置平台
+
+Intune 可以管理下列裝置平台︰
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## 啟用裝置註冊  
  註冊可讓使用者在其個人裝置上存取公司資源，並讓系統管理員確保這些裝置遵守保護公司資源的原則。 這是使用 Intune 啟用「攜帶您自己的裝置」案例的最佳方式。 系統管理員必須在 Intune 主控台中啟用註冊，可能需要與裝置建立信任關係，並將授權指派給使用者。 接著會註冊裝置，通常由使用者輸入其公司或學校認證完成。 裝置隨後會從 Intune 接收原則，並取得資源的存取權。
@@ -58,6 +64,6 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 [使用 Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
