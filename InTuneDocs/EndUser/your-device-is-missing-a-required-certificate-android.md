@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ ms.suite: ems
 
 解決此問題並取得所需的憑證︰
 
-1.  在瀏覽器中，瀏覽至這個 [Digicert 憑證頁面](https://www.digicert.com/digicert-root-certificates.htm)
+1.  在瀏覽器中，瀏覽至這個 [Digicert 憑證頁面](https://www.digicert.com/digicert-root-certificates.htm)。
 
 2.  尋找並下載 Baltimore CyberTrust 根憑證 (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt)。
 
@@ -41,7 +41,7 @@ ms.suite: ems
 
 4.  在 [命名憑證] 對話方塊中，接受預設憑證名稱。
 
-5. 請確認認證使用設為用於 VPN 和應用程式，然後點選 [確定]
+5. 請確認 [認證使用] 設為 [用於 VPN 和應用程式]，然後點選 [確定]。
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ ms.suite: ems
 
 7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您的 IT 系統管理員。
 
-<!--HONumber=May16_HO2-->
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+
+<!--HONumber=Jun16_HO1-->
 
 

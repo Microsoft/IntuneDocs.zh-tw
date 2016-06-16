@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 如果從 Intune 取消註冊裝置，會發生什麼情況？
 
-當您從裝置解除安裝公司入口網站應用程式時，它也會從 Intune 取消註冊您的裝置。 如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結。
+當您從裝置解除安裝公司入口網站應用程式時，它也會從 Intune 取消註冊您的裝置。 如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結，如上述＜在本文中＞一節所示。
 
 - [Windows 10 mobile、8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10、Windows 8.1 或 Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,7 +43,7 @@ ms.suite: ems
 
 -   從電腦移除 Intune Endpoint Protection 軟體。 如果電腦已安裝其他病毒防護軟體且已將它停用，則在移除 Intune Endpoint Protection 之後，可能會重新啟用該軟體。 在您將電腦從公司入口網站移除之後，應該檢查電腦。
 
-    > 如果其他防毒軟體未重新啟用，或是沒有安裝其他病毒防護軟體，您的電腦可能容易遭受病毒和惡意程式碼威脅。
+    > [!IMPORTANT] 如果其他防毒軟體未重新啟用，或是沒有安裝其他病毒防護軟體，您的電腦可能容易遭受病毒和惡意程式碼威脅。
 
 -   您在新增裝置時變更的任何裝置設定 (例如，停用相機) 都將失效。
 
@@ -92,10 +92,11 @@ ms.suite: ems
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
 
+如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,13 +30,13 @@ ms.suite: ems
 
 如果您在 Intune 中註冊的裝置遺失裝置 PIN 或密碼，您可以使用[公司入口網站](http://portal.manage.microsoft.com)重設密碼。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
 
-> [!NOTE] 公司入口網站上可能不顯示 [重設密碼] 按鈕，這是由 IT 管理員設定 Intune 的方式決定。 Windows 8.1 和 Windows RT 裝置不支援重設密碼。
+> [!NOTE] 公司入口網站上可能不會顯示 [重設密碼] 按鈕，這是由 IT 系統管理員設定 Intune 的方式決定。 Windows 8.1 和 Windows RT 裝置不支援重設密碼。
 
 若要重設密碼：
 
 1.  開啟 [公司入口網站](http://portal.manage.microsoft.com)，然後點選您想要重設密碼的裝置。
 
-2.  點選 [重設密碼]
+2.  點選 [重設密碼]。
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -44,7 +44,7 @@ ms.suite: ems
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  點選 [重設密碼]
+4.  點選 [重設密碼]。
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -58,13 +58,15 @@ ms.suite: ems
     |Windows Phone 8.1|建立新的、暫時的、數值密碼。|
     解除鎖定裝置後，您可以移至裝置的 [設定] 設定新密碼。
 
-5.  解除鎖定裝置，然後移至裝置的 [設定] 設定新密碼或變更暫時密碼。
+5.  解除鎖定裝置，然後移至裝置的 **[設定]** 設定新密碼或變更暫時密碼。
 
     若要查看密碼重設成功的確認通知，請按一下公司入口網站右上方的的通知旗標。
+
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

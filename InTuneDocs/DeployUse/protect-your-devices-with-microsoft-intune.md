@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 使用 Microsoft Intune 保護裝置 | Microsoft Intune
+title: 保護裝置 | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,10 +40,13 @@ ms.suite: ems
 ## 控制 Windows 裝置上的 Microsoft Passport 設定
 Intune 可讓您與 [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) 整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 和更新版本的替代方法。
 
+## 在 iOS 裝置上略過啟用鎖定
+[啟用鎖定] 是一項協助保護使用者裝置的功能，其方法是在任何人清除或重新啟用裝置之前，要求其先輸入 Apple ID 及密碼。 不過，這可能會導致問題，例如，如果使用者離職卻未移除鎖定。 [iOS 啟用鎖定略過](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)可以移除受監督的 iOS 裝置鎖定，幫助您重新配置或將它們清除。
+
 ## 保護使用 Intune 用戶端管理的 Windows 電腦
-對於您未註冊但以 Intune 電腦用戶端軟體管理的 Windows 電腦，Intune 持續支援安全性原則。 若要了解這些原則如何協助保護 Windows 電腦，請參閱[使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦](policies-to-protect-windows-pcs-in-microsoft-intune.md).
+對於您未註冊但以 Intune 電腦用戶端軟體管理的 Windows 電腦，Intune 持續支援安全性原則。 若要了解這些原則如何協助保護 Windows 電腦，請參閱[使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦](policies-to-protect-windows-pcs-in-microsoft-intune.md)。
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

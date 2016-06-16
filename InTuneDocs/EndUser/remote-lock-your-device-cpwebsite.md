@@ -18,7 +18,7 @@ ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,11 +46,11 @@ Windows Phone 8。0 | 不支援
 
 1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要鎖定的裝置名稱。
 
-2.  點選 [遠端鎖定]
+2.  點選 [遠端鎖定]。
 
     點選 [遠端鎖定] 後會出現「遠端鎖定暫止」狀態。  遠端鎖定成功時，狀態會變更為「遠端鎖定成功」。
 
-    狀態會顯示在三個位置︰
+    [遠端鎖定] 狀態會顯示在三個位置︰
 
     * 網站的通知區域。 
     * 裝置 [詳細資料] 頁面。
@@ -60,10 +60,11 @@ Windows Phone 8。0 | 不支援
 
     如果重試仍然失敗，請連絡 IT 管理員以取得協助。 在使用遠端鎖定之後，如果找回裝置且想要解除鎖定，只要輸入密碼即可。
 
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

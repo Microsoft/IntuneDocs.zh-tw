@@ -18,7 +18,7 @@ ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre 
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,10 @@ ms.suite: ems
 # 正在評估裝置，請稍候
 仍然會評估裝置的相容性。 正在完成相容性檢查，請稍候數分鐘。
 
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO1-->
 
 

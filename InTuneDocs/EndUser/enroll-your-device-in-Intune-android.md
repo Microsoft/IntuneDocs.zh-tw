@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,11 +34,11 @@ ms.suite: ems
 
 註冊之前或之後，系統可能會要求您選擇最能描述您裝置使用方式的類別。 IT 系統管理員會使用此類別來協助您判斷可存取的應用程式。
 
-如果在 Intune 嘗試註冊裝置時出現錯誤，您可以[將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)
+如果在 Intune 嘗試註冊裝置時出現錯誤，您可以[將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)。
 
 **註冊 Android 裝置：**
 
-1.  從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式
+1.  從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式。
 
 2.  開啟 Microsoft Intune 公司入口網站應用程式。
 
@@ -57,7 +57,7 @@ ms.suite: ems
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 Microsoft 絕不會撥打或管理您的電話！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，接著您可以使用 USB 纜線移動這些記錄檔。 如果您在使用公司入口網站應用程式時發生問題，則可能需要使用這個功能，才能將記錄檔傳送給您的 IT 系統管理員。 了解如何[將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)。
+    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，接著您可以使用 USB 纜線移動這些記錄檔。 如果您在使用公司入口網站應用程式時發生問題，則可能需要使用這個功能，才能將記錄檔傳送給您的 IT 系統管理員。 了解如何[將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)。
 
     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。  如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
@@ -65,7 +65,7 @@ ms.suite: ems
 
     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 Microsoft 絕不會存取您的連絡人！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只會允許公司入口網站應用程式存取資料記錄檔，協助對您的裝置問題進行疑難排解。
+    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只會允許公司入口網站應用程式存取資料記錄檔，協助對您的裝置問題進行疑難排解。
 
     如果您拒絕存取，則下次點選 [傳送資料] 時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [儲存體]，然後開啟權限。
 
@@ -85,7 +85,7 @@ ms.suite: ems
 
     ![隱私權設定](./media/and-enroll-4c-we-care-privacy.png)
 
-10.  在 [接下來要做什麼] 畫面上，閱讀有關註冊期間所發生的事，然後點選 [註冊]
+10.  在 [接下來要做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
 
     ![接下來要做什麼畫面](./media/and-enroll-4d-what-comes-next.png)
 
@@ -119,13 +119,14 @@ ms.suite: ems
 
     ![公司存取設定完成畫面](./media/and-enroll-10-comp-access-setup-complete.png)
 
-嘗試安裝公司應用程式之前，請移至 [設定] &gt; [安全性]，然後開啟 [未知來源]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到 [已封鎖安裝] 訊息。 基於安全性理由，您的電話設定成封鎖安裝從未知來源取得的應用程式。] 您可以點選錯誤對話方塊上的 [設定]，移至 [未知來源] 選項。
+在您嘗試安裝公司應用程式前，請移至 [設定] &gt; [安全性]，然後開啟 [未知來源]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到 [已封鎖安裝] 訊息。 基於安全性理由，您的電話設定成封鎖安裝從未知來源取得的應用程式。] 您可以點選錯誤對話方塊上的 [設定]，移至 [未知來源] 選項。
 
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

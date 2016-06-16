@@ -18,7 +18,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,15 +34,17 @@ ms.suite: ems
 
 1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要變更名稱的裝置。
 
-2.  點選 [重新命名]
+2.  點選 **[重新命名]**。
 
     ![rename-device](./media/iwp-1-tap-reset-passcode.png)
 
 3.  在目前裝置名稱出現的方塊中，輸入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
 
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

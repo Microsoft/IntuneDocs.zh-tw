@@ -18,7 +18,7 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,6 +42,7 @@ ms.suite: ems
 您在 Intune 中註冊您的 Windows 裝置之後，本節中的資訊將協助您採取動作。
 
 - [加密您的裝置](encrypt-your-device-windows.md)</br>
+- [設定或變更密碼](set-or-change-your-password-windows.md)</br>
 - [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-windows.md)</br>
 - [如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ ms.suite: ems
 您在 Intune 中註冊您的 Windows 裝置時，本節中的資訊將協助您修正您可能遇到的問題。
 
 - [裝置沒有最基本必備的作業系統版本](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [裝置不符合最大的作業系統版本](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [裝置不符合最大的作業系統版本](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [裝置未啟用 BitLocker](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [裝置未啟用反惡意程式碼軟體](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [裝置未啟用安全開機](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

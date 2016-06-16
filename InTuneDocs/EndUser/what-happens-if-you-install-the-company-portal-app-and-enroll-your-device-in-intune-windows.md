@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ ms.suite: ems
 
 -   如果電話遺失或遭竊即重設為原廠設定
 
-如需註冊的步驟，請參閱[在 Intune 中註冊您的 Windows 裝置](enroll-your-device-in-intune-windows.md)。 若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如需註冊的步驟，請參閱[在 Intune 中註冊您的 Windows 裝置](enroll-your-device-in-intune-windows.md)。 若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 新增電腦時：
 
@@ -70,7 +70,7 @@ ms.suite: ems
 
 -   如果電話遺失或遭竊即重設為原廠設定
 
-如需註冊的步驟，請參閱[在 Intune 中註冊您的 Windows 裝置](enroll-your-device-in-intune-windows.md)。 若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如需註冊的步驟，請參閱[在 Intune 中註冊您的 Windows 裝置](enroll-your-device-in-intune-windows.md)。 若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 當您新增 Windows Phone 裝置時，您會賦予 IT 系統管理員存取裝置的權限。 IT 系統管理員可以執行下列作業：
 
@@ -107,7 +107,7 @@ ms.suite: ems
 
 -   如果電話遺失或遭竊即重設為原廠設定
 
-若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 新增電腦時：
 
@@ -124,6 +124,8 @@ ms.suite: ems
 -   IT 系統管理員可以在電腦上安裝應用程式和更新。
 
 -   IT 系統管理員可以在電腦上強制執行原則。 例如，您可能必須在電腦上設定密碼或 PIN；如果不正確的密碼嘗試次數過多，系統可能會鎖定您的電腦存取權，或是刪除電腦硬碟上的所有資料。
+
+如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)

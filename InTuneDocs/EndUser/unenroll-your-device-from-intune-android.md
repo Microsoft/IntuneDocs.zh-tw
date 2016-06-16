@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 從 Intune 取消註冊您的裝置
 
-當您從 Intune 取消註冊 Android 裝置時，您的裝置將無法再存取公司資源。  如需取消註冊時所發生之情況的詳細資訊，請參閱[如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+當您從 Intune 取消註冊 Android 裝置時，您的裝置將無法再存取公司資源。  如需取消註冊時所發生之情況的詳細資訊，請參閱[如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
 
 若要從 Intune 取消註冊您的裝置並解除安裝公司入口網站應用程式，請遵循下列步驟，或觀看此[影片](http://aka.ms/gyq2du)：
 
@@ -46,10 +46,11 @@ ms.suite: ems
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

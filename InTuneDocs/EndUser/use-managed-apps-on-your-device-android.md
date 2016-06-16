@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,9 +39,9 @@ ms.suite: ems
 ## 如何取得受管理的應用程式？
 您可利用數個不同方是取得受管理的應用程式︰
 
--   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要深入了解註冊，請參閱[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)
+-   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要深入了解註冊，請參閱[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)。
 
--   您從 Play 商店安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
+-   您從 Play Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
 
 ## 我的 IT 系統管理員可以在應用程式中管理什麼內容？
 以下是您的 IT 系統管理員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
@@ -76,12 +76,12 @@ ms.suite: ems
 
 -   Microsoft Word、Excel、PowerPoint
 
-針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。
+針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

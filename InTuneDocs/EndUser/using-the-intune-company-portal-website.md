@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ ms.suite: ems
 
 -   [手動同步處理您的裝置，以加速緩慢的應用程式安裝](sync-your-device-manually-cpwebsite.md)
 
--   尋找 IT 系統管理員的連絡資訊 (如果 IT 系統管理員已設定)
+-   尋找 IT 系統管理員的連絡資訊 (如果 IT 系統管理員已設定)。 如果找不到，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 -   查看裝置的詳細資料，包括其是否符合貴公司或學校的原則
 
@@ -55,6 +55,6 @@ ms.suite: ems
 - [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

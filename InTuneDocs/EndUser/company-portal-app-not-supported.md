@@ -18,7 +18,7 @@ ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,10 +26,12 @@ ms.suite: ems
 ---
 
 # 不支援公司入口網站應用程式
-無法再使用這個版本的公司入口網站。 安裝 Windows 市集中的 [公司入口網站] 應用程式，以繼續進行。
+無法再使用這個版本的公司入口網站。 安裝 Windows 市集中的最新 [公司入口網站] 應用程式，以繼續進行。
 
 
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO2-->
 
 

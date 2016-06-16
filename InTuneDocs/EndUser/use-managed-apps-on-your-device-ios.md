@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ ms.suite: ems
 ### 如何取得受管理的應用程式？
 您可利用數個不同方是取得受管理的應用程式︰
 
--   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md).
+-   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
 
 -   您從 App Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
 
@@ -76,11 +76,11 @@ ms.suite: ems
 
 -   Microsoft Word、Excel、PowerPoint
 
-針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。
+針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

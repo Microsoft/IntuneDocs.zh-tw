@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # 如何重新連接遭盜用的 Android 裝置
-IT 管理員偵測到您正在使用根裝置。 這項設定可能危及安全性，而且可能會對公司資源造成威脅。
+IT 管理員偵測到您正在使用根裝置。 「Root 破解」表示裝置已變更成啟用作業系統存取，這可能危及安全性並對公司資源造成威脅。 發生這種情況時，您的裝置就無法繼續存取公司資源。
 
-請連絡 IT 管理員，協助您重新連線裝置。
+請連絡 IT 系統管理員，協助您重新連線裝置。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

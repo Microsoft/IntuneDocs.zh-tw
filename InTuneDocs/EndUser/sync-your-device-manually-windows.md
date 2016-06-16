@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # 手動同步處理您的裝置
-如果您的應用程式安裝花費太長的時間，請使用下列指示手動同步處理您的 Windows 裝置，這樣可能有助於加速安裝。 請使用適合您擁有之裝置類型的步驟：
+如果您的應用程式安裝花費太長的時間，請使用下列指示手動同步處理您的 Windows 裝置，這樣可能有助於加速安裝。 唯一支援的版本如下所列。 請使用符合您所擁有之裝置類型的連結 (如上述＜在本文中＞一節所示)：
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -37,11 +37,11 @@ ms.suite: ems
 ## Windows 10 Mobile
 手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
 
-1. 移至 [所有應用程式]  >  [設定]  >  [帳戶].
+1. 移至 [所有應用程式] > [設定] > [帳戶]。
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. 點選 [工作存取].
+2. 點選 [工作存取]。
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ ms.suite: ems
 ## Windows 10 Desktop
 手動同步處理您的 Windows 10 Desktop裝置，以加速緩慢的應用程式安裝︰
 
-1. 選取 [啟動] 按鈕，如下所示，然後選取 [設定].
+1. 選取 [啟動] 按鈕，如下所示，然後選取 [設定]。
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. 在 [設定] 頁面上，選取 [帳戶].
+2. 在 [設定] 頁面上，選取 [帳戶]。
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. 在 [帳戶] 頁面上，選取 [工作存取].
+3. 在 [帳戶] 頁面上，選取 [工作存取]。
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ ms.suite: ems
 ## Windows Phone 8.1
 手動同步處理您的 Windows Phone 8.1 裝置來加速緩慢的應用程式安裝：
 
-1. 移至 [所有應用程式]  >  [設定]  >  [工作區].
+1. 移至 [所有應用程式] > [設定] > [工作場所]。
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ ms.suite: ems
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

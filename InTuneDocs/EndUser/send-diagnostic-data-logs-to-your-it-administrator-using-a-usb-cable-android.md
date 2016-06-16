@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ ms.suite: ems
 
 2.  使用 USB 纜線將 Android 裝置連接到電腦。
 
-3.  在電腦上尋找有電話名稱的目錄。 在該目錄中，尋找 &lt;Android 裝置&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\。\.
+3.  在電腦上尋找有電話名稱的目錄。 在該目錄中，尋找 &lt;Android 裝置&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files。\.
 
 4.  將所有檔案附加到電子郵件，並傳送給您的 IT 系統管理員。
+
+如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

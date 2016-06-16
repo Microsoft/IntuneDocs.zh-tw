@@ -18,7 +18,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,17 +30,19 @@ ms.suite: ems
 
 當您使用 Intune 存取公司或學校的資料時，IT 系統管理員可能會要求您在 Android 裝置上設定 PIN 或密碼。 如果看到訊息提示您設定 PIN 或密碼，請使用下列步驟。
 
-1.  點選 [設定] &gt; [安全性] &gt; [螢幕鎖定] &gt; [密碼]
+1.  點選 [設定] &gt; **[安全性]** &gt; [螢幕鎖定] [密碼]&gt; 。
 
 2.  選擇並確認新密碼。
 
-3.  遵循[在 Microsoft Intune 註冊裝置](enroll-your-device-in-Intune-android.md)中的指示，確定已向 Microsoft Intune 註冊您的裝置
+3.  請確定您遵循[在 Microsoft Intune 註冊裝置](enroll-your-device-in-Intune-android.md)中的指示，向 Microsoft Intune 註冊您的裝置。
 
-4.  點選 [取得] &gt; [安裝]
+4.  點選 [取得] &gt; [安裝]。
+
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -15,10 +15,10 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,11 +44,13 @@ ms.suite: ems
 
 -   移除裝置中的公司電子郵件設定檔。
 
-如需如何取消註冊的指示，請參閱[從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md).
+如需如何取消註冊的指示，請參閱[從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)。
+
+如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

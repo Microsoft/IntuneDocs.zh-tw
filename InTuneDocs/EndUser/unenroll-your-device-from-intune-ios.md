@@ -15,10 +15,10 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ ms.suite: ems
 
 1.  在公司入口網站應用程式的 [我的裝置] 下，選取要取消註冊的裝置。
 
-2.  點選 [移除]  &gt;  [移除].
+2.  點選 [移除] &gt; [移除]。
 
 當您從 Intune 取消註冊裝置時，會發生下列情況：
 
@@ -54,9 +54,11 @@ ms.suite: ems
 
 -   只有公司入口網站應用程式或網站上不會再顯示為電子郵件設定的裝置。
 
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

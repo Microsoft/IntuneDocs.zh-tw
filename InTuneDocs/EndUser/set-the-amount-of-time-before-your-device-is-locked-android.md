@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,18 @@ ms.suite: ems
 
 為了讓 Android 裝置上的資料更加安全，IT 系統管理員可以設定原則，要求您設定裝置在自動鎖定之前可以維持閒置的時間量。 請遵循下列步驟來設定裝置在鎖定前的時間量。
  
-1.  在裝置的 [設定] 中，按一下 [安全性] &gt; [自動鎖定] (在某些裝置上，這會顯示為 [在下列時間後鎖定電話])。
+1.  在裝置的 [設定] 中，按一下 [安全性] &gt; [Automatically Lock] (自動鎖定) (在某些裝置上，這會顯示為 [Lock phone after] (在下列時間後鎖定電話))。
 
 2.  指定密碼逾時值。
 
-3.  遵循[在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)中的指示，確保向 Intune 註冊您的裝置
+3.  遵循[在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)中的指示，確保向 Intune 註冊您的裝置。
+
+如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

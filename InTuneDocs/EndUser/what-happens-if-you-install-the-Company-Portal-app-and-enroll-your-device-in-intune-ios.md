@@ -15,10 +15,10 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -98,11 +98,13 @@ ms.suite: ems
 
 -   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 如果允許自動檔案同步處理，可能會產生漫遊費用。
 
-如需如何註冊裝置的步驟，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md).
+如需如何註冊裝置的步驟，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md) 或[在 Intune 中註冊您的 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
+
+如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
