@@ -18,7 +18,7 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,16 +27,16 @@ ms.suite: ems
 
 # Microsoft Intune MAM 原則的 Azure 入口網站
 ## 存取 Azure 入口網站
-Azure 入口網站可讓您建立和管理行動應用程式管理原則。
+**Azure 入口網站**可讓您建立和管理行動應用程式管理原則。
 
 建立 MAM 原則的 Azure 入口網站支援︰
-- 由 Intune 註冊和管理之裝置上執行的應用程式
-- 非由任何 MDM 解決方案註冊之裝置上執行的應用程式。
-- 在協力廠商 MDM 解決方案中註冊之裝置上執行的應用程式
+- **由 Intune 註冊和管理**之裝置上執行的應用程式。
+- **非**由任何 MDM 解決方案註冊之裝置上執行的應用程式。
+- **在協力廠商 MDM 解決方案中註冊**之裝置上執行的應用程式。
 
-如果您目前使用 Intune 管理主控台來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則
+如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則。
 >[!IMPORTANT]
-> 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。
+> 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
 
 ## 登入 Azure 入口網站和自訂起始頁
 
@@ -48,9 +48,9 @@ Azure 入口網站可讓您建立和管理行動應用程式管理原則。
 
     ![Azure 入口網站儀表板的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  從 [瀏覽] 功能表，尋找反白顯示 intune 之 [瀏覽] 功能表的 Intune.![螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  從 **[瀏覽]** 功能表中，尋找 **Intune**。![反白顯示 Intune [瀏覽] 功能表的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  按一下 [Intune] > [Intune 行動應用程式管理] > [設定]
+4.  按一下 **[Intune] > [Intune 行動應用程式管理] > [設定]**。
 
     ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -64,6 +64,6 @@ Azure 入口網站可讓您建立和管理行動應用程式管理原則。
 [準備設定行動應用程式管理原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

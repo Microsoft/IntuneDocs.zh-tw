@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ Microsoft Office 之類的應用程式已內建應用程式 SDK。 在 Microsoft
 如果裝置遺失或遭竊，或使用者已不再與您的公司合作，則除了限制資料移動，您還可以[選擇性地清除公司資料](wipe-managed-company-app-data-with-microsoft-intune.md)，只留下個人資料。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
