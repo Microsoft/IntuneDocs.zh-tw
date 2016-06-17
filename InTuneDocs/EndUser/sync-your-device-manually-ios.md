@@ -42,11 +42,11 @@ ms.suite: ems
 
 螢幕上會顯示旋轉圓形，直到同步處理完成。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

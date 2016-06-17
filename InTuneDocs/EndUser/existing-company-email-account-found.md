@@ -36,10 +36,10 @@ ms.suite: ems
 
 3.  等候一段時間讓新的電子郵件設定，會自動套用到您的裝置。
 
-如果新的電子郵件設定不會在一段時間之後出現，請連絡 IT 系統管理員。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+如果新的電子郵件設定不會在一段時間之後出現，請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

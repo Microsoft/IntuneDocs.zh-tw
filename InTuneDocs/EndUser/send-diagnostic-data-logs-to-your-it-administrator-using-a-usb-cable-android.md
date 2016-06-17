@@ -38,11 +38,11 @@ ms.suite: ems
 
 4.  將所有檔案附加到電子郵件，並傳送給您的 IT 系統管理員。
 
-如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -62,11 +62,11 @@ ms.suite: ems
 
     若要查看密碼重設成功的確認通知，請按一下公司入口網站右上方的的通知旗標。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

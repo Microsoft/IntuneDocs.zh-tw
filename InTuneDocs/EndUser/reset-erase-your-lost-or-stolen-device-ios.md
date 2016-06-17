@@ -45,11 +45,11 @@ ms.suite: ems
 
 2.  點選 [重設] &gt; [重設]。
 > [!NOTE]
-> 如果您無法重設遺失或遭竊的裝置，請要求您的 IT 系統管理員為您重設。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+> 如果您無法重設遺失或遭竊的裝置，請要求您的 IT 系統管理員為您重設。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

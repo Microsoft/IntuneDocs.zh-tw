@@ -47,7 +47,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
     > [!NOTE] 如果您無法存取 Windows 市集，請連絡 IT 系統管理員。
 
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 如需您可使用裝置執行之其他工作的資訊，請使用符合您所擁有之裝置類型的連結：
 
@@ -57,6 +57,6 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

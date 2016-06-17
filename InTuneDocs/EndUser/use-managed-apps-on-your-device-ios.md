@@ -64,23 +64,12 @@ ms.suite: ems
 
 -   資料加密需求
 
-可能用來管理您的 IT 部門的一些常見應用程式如下：
 
--   受管理的 web 瀏覽器
-
--   受管理的映像檢視器
-
--   受管理的 PDF 檢視器
-
--   受管理的 AV 播放程式
-
--   Microsoft Word、Excel、PowerPoint
-
-針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

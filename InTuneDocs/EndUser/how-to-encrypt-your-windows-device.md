@@ -35,10 +35,10 @@ ms.suite: ems
 
 2.  按一下 [開啟 BitLocker]，然後依照顯示的指示來加密每個磁碟機。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

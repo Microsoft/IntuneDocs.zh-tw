@@ -60,11 +60,11 @@ Windows Phone 8。0 | 不支援
 
     如果重試仍然失敗，請連絡 IT 管理員以取得協助。 在使用遠端鎖定之後，如果找回裝置且想要解除鎖定，只要輸入密碼即可。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

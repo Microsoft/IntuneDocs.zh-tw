@@ -42,7 +42,7 @@ ms.suite: ems
 
 -   [手動同步處理您的裝置，以加速緩慢的應用程式安裝](sync-your-device-manually-cpwebsite.md)
 
--   尋找 IT 系統管理員的連絡資訊 (如果 IT 系統管理員已設定)。 如果找不到，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+-   尋找 IT 系統管理員的連絡資訊 (如果 IT 系統管理員已設定)。 
 
 -   查看裝置的詳細資料，包括其是否符合貴公司或學校的原則
 
@@ -55,6 +55,6 @@ ms.suite: ems
 - [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

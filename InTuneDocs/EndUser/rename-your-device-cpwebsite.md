@@ -40,11 +40,11 @@ ms.suite: ems
 
 3.  在目前裝置名稱出現的方塊中，輸入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

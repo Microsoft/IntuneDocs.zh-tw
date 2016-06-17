@@ -48,9 +48,11 @@ ms.suite: ems
 
 若要在 Intune 註冊您的裝置來存取公司或學校資料和資源，請參閱[在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)。
 
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -83,7 +83,6 @@ Apple 裝置註冊方案。 系統管理員會建立原則，並將原則透過�
 
 ### USB-SA
 USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 USB 連接的裝置是使用 Intune 原則所準備。 系統管理員必須手動註冊每個裝置。 使用者會接收其裝置，並且執行 Setup Assistant 以註冊其裝置。 這種方法支援 [iOS 受監督] (iOS Supervised) 模式，其接著會啟用：
-  - 已鎖定註冊
   - 條件式存取
   - 破解偵測
   - 行動應用程式管理
@@ -112,6 +111,6 @@ USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則�
 ([回到表格](#overview-of corporate-owned-device-enrollment-methods)) ([回到表格](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

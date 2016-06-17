@@ -97,11 +97,12 @@ ms.suite: ems
     
    「我們正在同步處理您的帳戶」訊息會顯示在畫面頂端，直到您的裝置完成同步處理。
 
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

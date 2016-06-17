@@ -36,8 +36,8 @@ ms.suite: ems
 
 3.  請務必遵循[註冊裝置以於工作時使用](http://go.microsoft.com/fwlink/?LinkId=519071)中的指示，以向 Intune 註冊裝置。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

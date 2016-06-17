@@ -40,11 +40,11 @@ ms.suite: ems
 
     如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 註冊 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

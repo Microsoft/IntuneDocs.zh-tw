@@ -48,11 +48,11 @@ IT 系統管理員可以設定多個密碼需求。 例如，密碼可能必須�
 4. 在 [新密碼] 欄位中輸入新密碼，然後在 [確認密碼] 欄位中重新輸入新密碼。
 4. 點選 [完成]。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
