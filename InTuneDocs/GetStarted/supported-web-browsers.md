@@ -31,8 +31,8 @@ ms.suite: ems
 
 |Intune 功能 |支援的瀏覽器|
 |---------|---------|
-|Intune 管理主控台     |  Internet Explorer 10 或更新版本<br /><br />Google Chrome (42 版之前的版本)<br /><br />Mozilla Firefox <br /><br />**注意：**管理主控台目前不支援 Edge。                      
-|Office 365 管理入口網站     |所有瀏覽器  |
+|Intune 管理主控台     |  Internet Explorer 10 或更新版本<br /><br />Google Chrome (42 版之前的版本)<br /><br />Mozilla Firefox <br /><br />**注意：**系統管理員主控台不支援 Microsoft Edge 及行動瀏覽器。                      
+|Office 365 管理入口網站     |所有瀏覽器，包括行動瀏覽器及受管理的瀏覽器  |
 |公司入口網站     |**在行動裝置上︰**使用每個受支援平台的預設網頁瀏覽器   <br /><br />**在 Windows 電腦上：**Internet Explorer 10 或更新版本，或者 Microsoft Edge<br /><br />**在 Mac OS X 10.9 或更新版本上︰**Apple Safari    |
 
 
@@ -42,6 +42,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
