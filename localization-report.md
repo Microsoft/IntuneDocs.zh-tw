@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 2
 [ Handoff Success Files ](#handoff-success-list)| 607
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 18
+[ Archive Success Files ](#archive-success-list)| 17
 [ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 104
-[ In Sync Handback Files ](#insync-handback-success-list)| 289
+[ In Sync Handback Files ](#insync-handback-success-list)| 290
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -651,7 +651,6 @@
  [InTuneDocs\EndUser\you-are-prompted-to-install-lookout-for-work-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/you-are-prompted-to-install-lookout-for-work-android.md) | ArchivedSuccess | [Details](#1d47c043092eef7fcad56926bfdd44e259460053466)
  [InTuneDocs\includes\group-deprecation.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4b4371fd7c505db75e18505160de88456fceece2/InTuneDocs/includes/group-deprecation.md) | ArchivedSuccess | [Details](#ded69399e398e759be574e067d2c62b143ecb405597)
  [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md) | ArchivedSuccess | [Details](#fb8b5453664b3b60d801ddb372114eb2d0d67704601)
- [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md) | ArchivedSuccess | [Details](#8aa2bcd921254083fc05ad2768c0a69f9d96ba4f649)
  [InTuneDocs\Troubleshoot\collect-device-logs.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ac5c66f57194a84580aa495a58e5281683aa1cca/InTuneDocs/Troubleshoot/collect-device-logs.md) | ArchivedSuccess | [Details](#4fc08fcea6cea897b9ddc3d0c00f2d83069f639d1133)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
@@ -1043,6 +1042,7 @@
  [InTuneDocs\includes\wit_tools_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools_md.md) | InSyncHandedBackSuccess | [Details](#58643537b9c0a34ac93bf6af99240b6e3469ab2a646)
  [InTuneDocs\includes\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2.md) | InSyncHandedBackSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e8647)
  [InTuneDocs\includes\wps_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2_md.md) | InSyncHandedBackSuccess | [Details](#7aec405442c5cb6c886214b18022f4f9d2af5cbf648)
+ [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md) | InSyncHandedBackSuccess | [Details](#8aa2bcd921254083fc05ad2768c0a69f9d96ba4f649)
  [InTuneDocs\PlanDesign\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/27c739c9d1b8db0518f25d906587e2f32b24068e/InTuneDocs/PlanDesign/TOC.md) | InSyncHandedBackSuccess | [Details](#1f12e5b9d36dc3b71a77f0f99c243e93451098291131)
  [InTuneDocs\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1e4ec1ef7012e0f37a89fe88e717a4dc969a5ce4/InTuneDocs/TOC.md) | InSyncHandedBackSuccess | [Details](#54c8223332895749f8c846fe57d0fec1e69c969d1132)
  [InTuneDocs\Troubleshoot\contact-assisted-phone-support-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#de00d31ab32916f29a111c93b39a578f82524f801134)
@@ -9533,15 +9533,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='8aa2bcd921254083fc05ad2768c0a69f9d96ba4f649'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/c64736f7863be10df22c562398f644e85eef4c7a/InTuneDocs/index.md)
 * Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/777a3256dda3222f1948bbc12d49a4f8070038e1/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf)
 * Handoff Datetime: 2016-06-14 17:11:38
 * Handoff Reason: Include
 * Archive File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a8ccc1bf0b6ed866e32580a285e1e499fb8d4e75/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/archive/index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf)
 * Archive Datetime: 2016-06-16 01:53:25
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/903ca0080a6c929ad034a124740abecd35b5d7ea/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-tw.xlf)
+* Handback Datetime: 2016-06-20 12:48:01
 * [Back to Top](#report-top)
 
 ##### <a name='11fd1aed877c922967ea3e4f2cc115d4b8cc596a650'></a> Source: [InTuneDocs\intunefiles.txt](https://github.com/Microsoft/IntuneDocs-pr/blob/a67632e47dd26fc974ccf1d6961ed668e1488ca6/InTuneDocs/intunefiles.txt)
