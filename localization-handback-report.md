@@ -1,11 +1,42 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/50e7431add65fec28c4aeac64e43324e1c9ff2a7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#6857ff52d29fcc12b54e2a7b11a747c1102acdcc15)
+ [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#b105eca7a93b8648e832e422239709b284b5f0ef62)
 
 ## Item Details
+##### <a name='6857ff52d29fcc12b54e2a7b11a747c1102acdcc15'></a> Source: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/50e7431add65fec28c4aeac64e43324e1c9ff2a7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/8de65a537a89cbe16d9a5185ad2fee6c25b2c0bf/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-tw.xlf)
+* Handoff Datetime: 2016-06-21 21:08:57
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/568ae3e5d969c2c5446c6ed52afa80bf88c5ec14/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/601cc2de66d3cf737938638b015ab24f98b39231/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-tw.xlf)
+* Current Handback Datetime: 2016-06-22 16:07:51
+* [Back to Top](#report-top)
+
+##### <a name='b105eca7a93b8648e832e422239709b284b5f0ef62'></a> Source: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/568ae3e5d969c2c5446c6ed52afa80bf88c5ec14/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
+* Handoff File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/27b93f9b612d4cbfa05230e955c6914010bae49b/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf)
+* Handoff Datetime: 2016-06-13 18:44:08
+* Handoff Reason: Include
+* Archive File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a8ccc1bf0b6ed866e32580a285e1e499fb8d4e75/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/archive/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf)
+* Archive Datetime: 2016-06-16 01:53:25
+* Handback File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/601cc2de66d3cf737938638b015ab24f98b39231/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-tw.xlf)
+* Handback Datetime: 2016-06-22 16:07:51
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
