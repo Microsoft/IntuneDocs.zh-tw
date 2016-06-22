@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,13 +29,13 @@ ms.suite: ems
 
 ## 禁止使用者使用不相容的裝置存取 Exchange Online。
 ### 案例需求
-- 對於 Accounting Active Directory 安全性群組中的所有使用者，若其裝置與您部署的相容性原則不相容，則必須禁止存取 Exchange Online。
+- 對於 **Accounting** Active Directory 安全性群組中的所有使用者，若其裝置與您部署的相容性原則不相容，則必須禁止存取 Exchange Online。
 - 如果此群組中有任何使用者的裝置不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支援，則必須禁止他們在該裝置上存取 Exchange Online。
-- 對於 Finance Active Directory 安全性群組中的使用者，即使同樣隸屬於 Accounting 安全性群組，也必須豁免於此原則。
+- 對於 **Finance** Active Directory 安全性群組中的使用者，即使同樣隸屬於 **Accounting** 安全性群組，也必須豁免於此原則。
 
 若要達到此目的，請使用下列設定來設定 Exchange Online 的條件式存取原則：
 
--   選取 [啟用條件式存取原則]
+-   選取 [啟用條件式存取原則]。
 
 - 選取您想要允許從應用程式使用新式驗證來存取的平台。
 - 對於 Exchange ActiveSync 應用程式，選取 [在 Microsoft Intune 支援的平台上封鎖不相容的裝置] 和 [在 Microsoft Intune 不支援的平台上封鎖其他所有裝置]。
@@ -70,7 +70,7 @@ ms.suite: ems
 ## 沒有任何 Android 裝置能夠存取 Exchange 內部部署。
 ### 案例需求
 - 應該禁止所有 Android 裝置存取 Exchange。
-- 其他所有支援的裝置都可以存取 Exchange，前提是必須受管理：
+- 只要其他支援的裝置由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理，就可存取 Exchange 。
 
 若要達到此目的，請使用下列設定來設定 Exchange 內部部署的條件式存取原則：
 
@@ -86,6 +86,6 @@ ms.suite: ems
 ![裝置存取流程](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

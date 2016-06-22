@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ ms.suite: ems
 
 若要開啟或關閉 [詳細資訊記錄]，請使用公司或學校認證登入公司入口網站應用程式，點選 [設定]，然後點選 [詳細資訊記錄] 設定旁的開啟/關閉按鈕。
 
+仍需要協助嗎？ 請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

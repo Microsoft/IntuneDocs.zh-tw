@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,19 +34,23 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 -   執行 iOS 7 和更新版本的裝置。
 
-> 行動應用程式管理原則支援向 Intune 註冊的裝置。
-> 
+> [!TIP] 行動應用程式管理原則支援向 Intune 註冊的裝置。
+>
 > 如需如何為不受 Intune 管理的裝置建立應用程式管理原則的資訊，請參閱[使用行動應用程式管理原則搭配 Microsoft Intune 保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
 不同於其他 Intune 原則，您不會直接部署行動應用程式管理原則。 相反地，您會將原則與您想要限制的應用程式相關聯。 當應用程式部署並安裝在裝置上時，您指定的設定將會生效。
 
-若要將限制套用至應用程式，應用程式必須加入 Microsoft 應用程式軟體開發套件 (SDK)。 有兩種方法可以取得這種類型的應用程式：
+應用程式必須加入 Microsoft Intune 應用程式 SDK，才能將限制套用至該應用程式。 有三種方法可以取得這種類型的應用程式：
 
--   使用受原則管理的應用程式 - 請內建應用程式 SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 請參閱[可與 Microsoft Intune 行動應用程式管理原則搭配使用的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)的清單
+-   使用受原則管理的應用程式 - 請內建應用程式 SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 請參閱[可與 Microsoft Intune 行動應用程式管理原則搭配使用的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)的清單。
 
--   使用包裝的應用程式 - 經過 Microsoft Intune App Wrapping Tool 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 它不能用來處理從應用程式市集下載的應用程式。 請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune 應用程式包裝工具進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+-   使用包裝的應用程式 - 經過 **Microsoft Intune App Wrapping Tool** 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 它不能用來處理從應用程式市集下載的應用程式。 請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune 應用程式包裝工具進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
-某些受管理的應用程式 (例如適用於 iOS 和 Android 的應用程式) 支援 多重身分識別。 這表示 Intune 只會將管理設定套用到公司帳戶或應用程式中的資料。
+- **自己撰寫納入 Intune App SDK 的應用程式**Intune App SDK 讓您可在撰寫應用程式時，將應用程式管理功納入該應用程式中。 如需詳細資訊，請參閱 [Intune App SDK 概觀](/develop/intune-app-sdk)
+
+如需協助在應用程式包裝工具與 Intune App SDK 之間做出選擇，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+
+某些受管理的應用程式 (例如適用於 iOS 和 Android 的應用程式) 支援 **多重身分識別**。 這表示 Intune 只會將管理設定套用到公司帳戶或應用程式中的資料。
 
 例如，使用 Outlook 應用程式：
 
@@ -56,40 +60,37 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 -   使用的公司帳戶必須與用來向 Intune 註冊裝置的帳戶相同。
 
-> 如果您搭配使用 Intune 與 Configuration Manager，請參閱[如何使用 Configuration Manager 中的行動應用程式管理原則來控制應用程式](https://technet.microsoft.com/library/mt131414.aspx)
+> [!TIP] 如果您搭配使用 Intune 與 Configuration Manager，請參閱[如何使用 Configuration Manager 中的行動應用程式管理原則來控制應用程式](https://technet.microsoft.com/library/mt131414.aspx)。
 
 ## 以行動應用程式管理原則建立及部署應用程式
 
--   步驟 1： 取得受原則管理的應用程式連結，或者建立包裝的應用程式。
+-   **步驟 1：**取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式。
 
--   步驟 2： 將應用程式發佈到您的雲端儲存空間。
+-   **步驟 2：** 將應用程式發佈到您的雲端儲存空間。
 
--   步驟 3： 建立行動應用程式管理原則。
+-   **步驟 3：** 建立行動應用程式管理原則。
 
--   步驟 4： 部署應用程式，並選取要將應用程式與行動應用程式管理原則產生關聯的選項。
+-   **步驟 4：** 部署應用程式，並選取要將應用程式與行動應用程式管理原則產生關聯的選項。
 
--   步驟 5： 監視應用程式部署。
+-   **步驟 5：** 監視應用程式部署。
 
-## 步驟 1：取得受原則管理的應用程式連結，或者建立包裝的應用程式。
+## **步驟 1：**取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式。
 
--   取得受原則管理之應用程式的連結 - 從應用程式市集尋找並記下您要部署之受原則管理的應用程式的 URL。
+-   **從應用程式市集取得受原則管理的應用程式的連結** - 在應用程式市集中，尋找並記錄您想要部署的受原則管理應用程式的 URL。
 
-    例如，Microsoft Word for iPad 應用程式的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8
+    例如，Microsoft Word for iPad 應用程式的 URL 是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   若要建立包裝的應用程式 - 請使用[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune 應用程式包裝工具進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)這兩個主題中的資訊，來建立包裝的應用程式。
 
-    此工具可建立經過處理的應用程式，讓您在將應用程式發行到雲端儲存空間時使用。
-
-## 步驟 2： 將應用程式發佈到您的雲端儲存空間
+## **步驟 2：** 將應用程式發佈到您的雲端儲存空間
 當您發行受管理的應用程式時，其程序會隨您要發行受原則管理的應用程式，或發行經由 Microsoft Intune App Wrapping Tool for iOS 處理的應用程式而有不同。
 
 #### 發行原則管理應用程式
 
-1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示
+1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示。
 
-2.  針對 iOS 應用程式中，在 [選取此軟體如何供裝置使用] 下選取 [來自應用程式市集的受管理 iOS 應用程式]
+2.  針對 iOS 應用程式中，在 [選取此軟體如何供裝置使用] 下選取 [來自應用程式市集的受管理 iOS 應用程式] 。
 
-    若為 Android 應用程式，請選取 [外部連結]
+    若為 Android 應用程式，請選取 [外部連結] 。
 
 3.  在 [指定 URL] 下，輸入您先前記下的原則管理應用程式 URL。
 
@@ -99,19 +100,19 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 #### 發行經過 Microsoft Intune App Wrapping Tool 處理的應用程式
 
-1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示
+1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示。
 
-2.  在 [選取此軟體如何供裝置使用] 下選取 [軟體安裝程式]
+2.  在 [選取此軟體如何供裝置使用] 下選取 [軟體安裝程式] 。
 
-3.  選取 [軟體安裝程式檔案類型] 下的 [iOS 的應用程式套件 (&#42;.ipa 檔案)]
+3.  選取 [軟體安裝程式檔案類型] 下的 [iOS 的應用程式套件 (&#42;.ipa 檔案)]。
 
 上傳完成之後，您會看到在已上傳應用程式的 [軟體屬性]  頁面上，看到 [應用程式管理原則]  為 [是]  。
 
 確認應用程式上傳成功之後，繼續進行步驟 3。
 
-## 步驟 3：建立行動應用程式管理原則
+## **步驟 3：**建立行動應用程式管理原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [概觀] &gt; [新增原則]
+1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
 
 2.  設定和部署下列其中一種 [軟體]  原則，視您想要設定應用程式的裝置類型而定：
 
@@ -119,7 +120,7 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
     -   **行動應用程式管理原則 (iOS 7 及更新版本)**
 
-    您可以使用建議的設定或自訂設定。 如需詳細資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+    您可以使用建議的設定或自訂設定。 如需詳細資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  視需要進行以下設定。 選項可能會視您設定原則的裝置類型而不同。
 
@@ -128,7 +129,7 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
     |**Name**|指定這個原則的名稱。|
     |**說明**|(選用) 指定這個原則的描述。|
     |**限制要在公司管理的瀏覽器中顯示網頁內容**|啟用這項設定時，會在受管理的瀏覽器中開啟應用程式中的任何連結。 您必須將此應用程式部署到裝置，此選項才會運作。|
-    |防止 Android 備份 或 防止 iTunes 和 iCloud 備份|停用從應用程式備份任何資訊。|
+    |**防止 Android 備份** 或 **防止 iTunes 和 iCloud 備份**|停用從應用程式備份任何資訊。|
     |**允許應用程式將資料傳送到其他應用程式**|指定此應用程式可以將資料傳送過去的應用程式。 您可以選擇不允許資料傳送到任何應用程式、只允許傳送至其他受管理的應用程式，或允許傳送到任何應用程式。 此設定對於在行動裝置上使用 [開啟於] 功能沒有影響。<br /><br />例如，若不允許資料傳輸，可以限制資料只可傳輸給像是 SMS 訊息等服務、限制不得將影像指派給連絡人，以及不得張貼到 Facebook 或 Twitter。<br /><br />在 iOS 裝置中，為防止文件在受管理和未受管理的應用程式之間傳送，您也必須設定和部署行動裝置安全性原則，停用 [允許在其他未受管理的應用程式中使用受管理的文件] 設定；如果您選取只允許傳送到其他受管理的應用程式，就會使用 Intune PDF 及影像檢視器 (如有部署) 分別開啟相應類型的內容。<br /><br />此外，如果這個選項設定為 [受原則管理的應用程式] 或 [無]，則會封鎖允許焦點搜尋在應用程式中搜尋資料的 iOS 9 功能。|
     |**允許應用程式接收來自其他應用程式的資料**|指定此應用程式可以接收其資料的應用程式。 您可以選擇不允許任何應用程式傳送資料，只允許從其他受管理的應用程式傳送，或允許從任何應用程式傳送<br /><br />在支援多重身分識別的 iOS 應用裝置上 (Intune 只會將管理設定套用到公司帳戶或應用程式的資料)，若為已套用行動應用程式管理原則的註冊裝置，當使用者從不受行動應用程式管理原則管理的應用程式存取資料時，資料會視為公司資料並受原則保護。|
     |**避免「另存新檔」**|停用 [另存新檔]  選項，可將資料儲存到套用此原則之任何應用程式中的個人雲端儲存體位置 (例如 OneDrive - 個人或 Dropbox)。|
@@ -139,20 +140,20 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
     |**需要裝置符合公司原則才能存取**|只允許在裝置未越獄或 root 時使用應用程式。|
     |**重新檢查存取需求前等候時間 (分鐘)**|在 [逾時]  欄位中，指定啟動應用程式之後，重新檢查應用程式存取需求之前的時間間隔。|
     |**離線寬限期**|如果裝置已離線，指定重新檢查應用程式存取需求之前的時間間隔。|
-    |**加密應用程式資料**|指定此應用程式相關聯的所有資料都將加密，包括儲存在外部的資料，例如 SD 卡。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會使用作業系統所提供的裝置層級加密在靜止時加密。 您可以透過裝置 PIN 碼原則 (必須由 IT 管理員設定) 來啟用。 需要 PIN 碼時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件 [iOS 7 所使用的模組經 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)中所述<br /><br />**Android 的加密**<br /><br />如果是與 Intune 行動應用程式管理原則相關聯的應用程式，加密是由 Microsoft 所提供。 資料會在檔案 I/O 作業期間，根據行動應用程式管理原則中的設定，以同步方式加密。 Android 上的受管理應用程式使用 CBC 模式的 AES-128 加密，並利用平台的密碼編譯程式庫。 加密方法未經 FIPS 140-2 認證。 裝置儲存空間上的內容將一律加密。|
-    |封鎖螢幕擷取 (僅限 Android 裝置)|指定在使用此應用程式時，裝置的螢幕擷取功能會遭到封鎖。|
+    |**加密應用程式資料**|指定此應用程式相關聯的所有資料都將加密，包括儲存在外部的資料，例如 SD 卡。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會使用作業系統所提供的裝置層級加密在靜止時加密。 您可以透過裝置 PIN 碼原則 (必須由 IT 管理員設定) 來啟用。 需要 PIN 碼時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件 [iOS 7 所使用的模組經 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)中所述。<br /><br />**Android 的加密**<br /><br />如果是與 Intune 行動應用程式管理原則相關聯的應用程式，加密是由 Microsoft 所提供。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法未經 FIPS 140-2 認證。|
+    |**封鎖螢幕擷取** (僅限 Android 裝置)|指定在使用此應用程式時，裝置的螢幕擷取功能會遭到封鎖。|
 
-4.  完成之後，請按一下 [儲存原則]
+4.  完成之後，請選擇 [儲存原則]。
 
 新的原則會顯示在 [原則]  工作區的 [設定原則]  節點中。
 
-## 步驟 4： 將應用程式與行動應用程式管理原則產生關聯，然後部署應用程式。
+## **步驟 4：** 將應用程式與行動應用程式管理原則產生關聯，然後部署應用程式。
 部署應用程式，確定您在 [行動應用程式管理]  頁面選取行動應用程式管理原則，將原則與應用程式產生關聯。
 
-如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)
+如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
 
-> 針對執行早於 iOS 7.1 之作業系統的裝置，應用程式解除安裝時不會移除相關聯的原則。
-> 
+> [!IMPORTANT] 針對執行早於 iOS 7.1 之作業系統的裝置，應用程式解除安裝時不會移除相關聯的原則。
+>
 > 如果裝置從 Intune 取消註冊，不會從應用程式移除原則。任何已套用原則的應用程式會保留原則設定，即使是在解除安裝並重新安裝應用程式之後也一樣。
 
 ### 如果裝置上已部署應用程式，該怎麼辦
@@ -162,22 +163,22 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 不過，如果使用執行 iOS 9 和更新版本的裝置，Intune 會自動要求使用者授權，以便接管現有應用程式的管理工作。 如果使用者同意，則應用程式會變成由 Intune 管理，而且也會套用與應用程式相關聯的所有行動應用程式管理原則。
 
-> 如果裝置處於受監督的模式，Intune 不會要求使用者授權，便直接接管現有應用程式的管理工作。
+> [!TIP] 如果裝置處於受監督的模式，Intune 不會要求使用者授權，便直接接管現有應用程式的管理工作。
 
-## 步驟 5： 監視應用程式部署。
+## **步驟 5：** 監視應用程式部署。
 建立並部署與行動應用程式管理原則相關聯的應用程式之後，請使用下列程序來監視應用程式並解決任何原則衝突。
 
 #### 檢視部署的狀態
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [群組] &gt; [概觀]
+1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [群組] &gt; [概觀]。
 
 2.  執行下列步驟：
 
-    -   按一下 [所有使用者]，然後按兩下您想要檢查其裝置的使用者。 在 [使用者屬性] 頁面上，按一下 [裝置]，然後按兩下您想要檢查的裝置。
+    -   選擇 [所有使用者]，然後按兩下您想要檢查其裝置的使用者。 在 [使用者內容] 頁面上，選擇 [裝置]，然後按兩下您想要檢查的裝置。
 
-    -   按一下 [所有裝置] &gt; [所有行動裝置]。 在 [裝置群組屬性] 頁面上，按一下 [裝置]，然後按兩下您想要檢查的裝置。
+    -   選擇 [所有裝置] &gt; [所有行動裝置]。 在 [裝置群組內容] 頁面上，選擇 [裝置]，然後按兩下您想要檢查的裝置。
 
-3.  從 [行動裝置屬性]  頁面上，按一下 [原則]  查看已部署至裝置的行動應用程式管理原則的清單。
+3.  從 [行動裝置內容] 頁面上，選擇 [原則] 來查看已部署至裝置的行動應用程式管理原則清單。
 
 4.  選取您想要檢視其狀態的行動應用程式管理原則。 您可以在下方窗格中檢視原則的詳細資料，並展開其節點以顯示其設定。
 
@@ -197,9 +198,6 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 -   如果原則尚未部署到裝置，而已部署兩個衝突的設定，則會使用裝置內建的預設設定。
 
 
-
-
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

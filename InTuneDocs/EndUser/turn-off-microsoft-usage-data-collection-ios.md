@@ -32,9 +32,11 @@ ms.suite: ems
 
 您可以使用公司入口網站應用程式中的 [使用方式資料] 設定，來關閉 iOS 裝置上該資料的收集。 IT 系統管理員無權控制該資料的收集，且無法變更您對該設定的選項。
 
+仍需要協助嗎？ 請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

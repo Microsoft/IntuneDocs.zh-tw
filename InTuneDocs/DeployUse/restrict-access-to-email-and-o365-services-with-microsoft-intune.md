@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ ms.suite: ems
 ![此圖顯示用來決定允許或禁止裝置存取服務的決策點](./media/ConditionalAccess4.png)
 
 ## 如何設定條件式存取？
-使用條件式存取來管理 Microsoft Exchange 內部部署、Exchange Online、Exchange Online Dedicated、SharePoint Online 和 Skype for Business Online 的存取
+使用條件式存取來管理 Microsoft **Exchange 內部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online** 和**商務用 Skype Online** 的存取。
 
 若要設定條件式存取，請設定裝置相容性原則和條件式存取原則。
 
@@ -69,6 +69,6 @@ ms.suite: ems
   - [建立商務用 Skype Online 的條件式存取原則](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

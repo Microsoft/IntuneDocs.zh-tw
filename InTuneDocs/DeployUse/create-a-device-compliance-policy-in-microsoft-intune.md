@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 本主題概述您可用來建立裝置必須遵循的相容性原則步驟，以便視為相容。
 
 ##  步驟 1︰加入新原則
-  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [相容性原則] &gt; [新增]
+  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則] &gt; [相容性原則] &gt; [新增]。
 
   ![Intune 管理主控台中相容性原則頁面的螢幕擷取畫面，顯示頁面頂端功能表中的新增選項](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -41,7 +41,7 @@ ms.suite: ems
 ![[建立原則] 頁面的 [一般] 索引標籤的螢幕擷取畫面 ](./media/intune-sa-3b-create-policy.png)
 
 ##  步驟 3：儲存原則
-完成之後，請選擇 [儲存原則]
+完成之後，請選擇 [儲存原則]。
 
 您可以選擇在儲存原則後立即部署原則，也可以選擇稍後再進行部署。 新的原則會顯示在 [原則] 工作區的 [相容性原則] 節點中。
 
@@ -84,6 +84,6 @@ ms.suite: ems
 [裝置相容性原則簡介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
