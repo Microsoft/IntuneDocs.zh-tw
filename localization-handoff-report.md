@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bddb2a583ea1c46953016995f0baedc0426fe3de/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) | OutofSyncHandedBackSuccess | [Details](#ae075e5343d251519918da2b74a28ccb57221f8620)
 
 ## Item Details
-##### <a name='ae075e5343d251519918da2b74a28ccb57221f8620'></a> Source: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bddb2a583ea1c46953016995f0baedc0426fe3de/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/ca4b30e74d94ddf3bec3e9b1981dc4616dd43264/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-tw.xlf)
-* Handoff Datetime: 2016-06-22 23:05:43
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/2f7c70ecb538b98830000d47500e3c4c9f640d4a/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
-* Current Handback File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/1f0f70272965e325221eca0aeba3cc445a6b221e/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-tw.xlf)
-* Current Handback Datetime: 2016-06-22 10:27:33
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
