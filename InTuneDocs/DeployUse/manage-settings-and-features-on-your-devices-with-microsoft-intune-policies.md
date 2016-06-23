@@ -200,9 +200,9 @@ Intune 只會做為傳遞機制，而不會評估承載的 Apple 組態檔或自
 
 ### 哪裡可以找到疑難排解原則的說明？
 
-請參閱 [Microsoft Intune 的原則疑難排解](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md)。
+請參閱[疑難排解 Microsoft Intune 原則的問題](../Troubleshoot/troubleshoot-policies-in-microsoft-intune)。
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

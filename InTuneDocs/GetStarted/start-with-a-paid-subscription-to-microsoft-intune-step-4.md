@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # 管理 Intune 授權
-使用者必須先從 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中獲得 Intune 訂閱的授權指派，才可以登入使用 Intune 服務或將其裝置註冊接受管理。 一旦指派授權給使用者，使用者的名稱會出現在 Intune 管理主控台中。 然後，使用者可以註冊最多五個裝置。
+您必須先使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，為每位使用者指派您 Intune 訂閱的授權，使用者才能登入使用 Intune 服務，或是註冊其裝置接受管理。 一旦指派授權給使用者，使用者的名稱會出現在 Intune 管理主控台中。 然後，使用者可以註冊最多五個裝置。
+
+在使用 Microsoft Enterprise Mobility Suite (EMS) 的組織中，使用者在 EMS 封裝中可能只需要 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一個服務或一個服務子集。 如需詳細資訊，請參閱[使用 PowerShell 管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)。
 
 ## 如何指派 Intune 授權
 當使用者帳戶從您的內部部署 Active Directory 同步處理或透過 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增至您的雲端服務訂用帳戶時，不會自動將 Intune 授權指派給他們。 而是在稍後，Intune 租用戶系統管理員必須編輯使用者帳戶，以從 Office 365 入口網站將授權指派給使用者。
@@ -42,7 +44,7 @@ ms.suite: ems
 
 1.  登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)使用租用戶系統管理員認證，再選取 [人員]  >  [所有使用者]。
 
-2.  選取您想要指派 Intune 使用者授權的使用者帳戶，並選取使用者帳戶內容上的 [Microsoft Intune]。
+2.  選取您要指派以 Intune 使用者授權的使用者帳戶，然後選取 [Microsoft Intune] (獨立) 或 [Enterprise Mobility Suite]。
 
 3.  使用者帳戶現在具有必要權限，可使用服務並將裝置註冊接受管理。
 
@@ -71,7 +73,7 @@ ms.suite: ems
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**範例 2** 針對已獲指派授權的使用者，停用 EMS 授權的 Intune 部分：
+**範例 2**：為已獲指派授權的使用者，停用 EMS 授權中的 Intune 部分：
 
     Connect-MsolService 
     
@@ -90,9 +92,9 @@ ms.suite: ems
 恭喜！ 您剛完成 *Intune 快速入門指南*的步驟 4。
 >[!div class="step-by-step"]
 
->[&larr;**將使用者同步處理至 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)[**組織使用者和裝置**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr;**將使用者同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**組織使用者與裝置**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
