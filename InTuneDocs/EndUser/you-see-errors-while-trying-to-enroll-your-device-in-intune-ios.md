@@ -28,11 +28,11 @@ ms.suite: ems
 
 # 您在 Intune 嘗試註冊 iOS 裝置時看到錯誤
 
-下表列出您在 Intune 中註冊 iOS 裝置時可能發現的錯誤。 與您的 IT 系統管理員分享此連結。 如果找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+下表列出您在 Intune 中註冊 iOS 裝置時可能發現的錯誤。 與您的 IT 系統管理員分享此連結。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 |錯誤訊息|問題|要告訴 IT 系統管理員的內容|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|DeviceCapReached|您已經註冊過多行動裝置。|註冊其他行動裝置之前，使用者必須先從公司入口網站移除目前已註冊的其中一部行動裝置。|
+|DeviceCapReached|您已經註冊過多行動裝置。|註冊其他行動裝置之前，使用者必須先從公司入口網站移除目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示︰[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios)、[Windows](unenroll-your-device-from-intune-windows)。|
 |APNSCertificateNotValid|可讓行動裝置與公司網路通訊的憑證發生問題。<br /><br />請連絡您的 IT 系統管理員，告知您在嘗試註冊行動裝置時收到的訊息 **APNSCertificateNotValid**，並告訴他們參閱本表中的解析。|Apple Push Notification Service (APNS) 提供一個連接已註冊 iOS 裝置的管道。 若未執行取得 APNS 憑證的步驟，或 APNS 憑證已過期，則註冊嘗試將會失敗，且會出現此訊息。<br /><br />檢閱[同步處理 Active Directory 並將使用者新增至 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[組織使用者和裝置](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中設定使用者的資訊。|
 |AccountNotOnboarded|可讓行動裝置與公司網路通訊的憑證發生問題。<br /><br />請連絡您的 IT 系統管理員，告知您在嘗試註冊行動裝置時收到的訊息 **APNSNotOnboarded**，並告訴他們參閱本表中的解析。|Apple Push Notification Service (APNS) 提供一個連接已註冊 iOS 裝置的管道。 若未執行取得 APNS 憑證的步驟，或 APNS 憑證已過期，則註冊嘗試將會失敗，且會出現此訊息。<br /><br />如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deployuse/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceTypeNotSupported|您可能會嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確定您的裝置正在執行 iOS 7.1 版或更新版本。<br /><br />請連絡您的 IT 系統管理員，告知其您收到訊息 **DeviceTypeNotSupported** 時嘗試註冊行動裝置，並請參閱本表中的解析的指示。|確定您的使用者裝置正在執行 iOS 7.1 版或更新版本。|
@@ -42,6 +42,6 @@ ms.suite: ems
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

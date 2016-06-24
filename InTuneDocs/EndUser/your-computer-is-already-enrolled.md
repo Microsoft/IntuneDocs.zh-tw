@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 您的電腦已註冊
 
-如果您收到電腦已經註冊的錯誤，這表示您的電腦已經加入公司入口網站中，但尚未連結到您的使用者帳戶。 請依照此程序將您的電腦連結到使用者帳戶並完成程序。
+如果您收到電腦已經註冊的錯誤，這表示您的電腦已經加入公司入口網站中，但尚未連結到您的使用者帳戶。 請依照此程序將您的電腦連結到使用者帳戶並完成程序。  
 
 連結電腦：
 
@@ -38,8 +38,10 @@ ms.suite: ems
 
 3.  按照提示將電腦連結到您的使用者帳戶。
 
-如需協助且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+若您想要取消註冊裝置，請使用您擁有的裝置類型的指示︰[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md)。
 
-<!--HONumber=Jun16_HO1-->
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+
+<!--HONumber=Jun16_HO2-->
 
 

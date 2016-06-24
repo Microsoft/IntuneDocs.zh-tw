@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ ms.suite: ems
 
 -   如果電話遺失或遭竊即重設為原廠設定
 
-當您新增 Android 裝置時，您會賦予 IT 系統管理員存取裝置的權限。 IT 系統管理員可以執行下列作業：
+當您註冊 Android 裝置時，您會賦予 IT 系統管理員存取裝置的權限。 IT 系統管理員可以執行下列作業：
 
 -   將裝置重設為製造商的預設值。 這項功能對裝置遺失或失竊的情況很有幫助。
 
@@ -60,11 +60,11 @@ ms.suite: ems
 
     -   傳送任何公司應用程式清查更新 (這些更新不含個人資訊)。
 
-如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

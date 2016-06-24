@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 使用電子郵件將診斷資料記錄檔傳送給 IT 系統管理員
 
-當您使用學校或公司應用程式時，或在公司入口網站應用程式中，如果 Android 裝置上出現錯誤，您可以傳送診斷資料記錄檔，以協助您的 IT 系統管理員了解並修正錯誤。 若要在記錄檔中包含所有詳細資料，讓您的 IT 系統管理員更容易找出問題，請開啟 [詳細資訊記錄]。
+當您使用學校或公司應用程式時，或在公司入口網站應用程式中，如果 Android 裝置上出現錯誤，您可以傳送診斷資料記錄檔，以協助您的 IT 系統管理員了解並修正錯誤。 若要在記錄檔中包含所有詳細資料，讓您的 IT 系統管理員更容易找出問題，請開啟 [詳細資訊記錄]。 您可以深入了解[詳細資訊記錄](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
 
 若要啟用詳細資訊記錄：
 
@@ -54,6 +54,6 @@ ms.suite: ems
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

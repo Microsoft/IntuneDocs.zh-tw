@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/24/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊 Android 裝置來存取公司電子郵件、檔案和其他資源。 註冊您的裝置，可讓您的 IT 部門管理這些公司或學校資源，並保護它們的安全，同時讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)。
 
-這些註冊指示適用於 Samsung Knox Android 裝置和「原生」(非 Samsung Knox) Android 裝置。 若要判斷是否有 Samsung Knox 裝置，請移至 [設定] &gt; [關於電話]。 如果您在該處看不到列出 "Knox" 這個字，則會有原生 Android 裝置。
+這些註冊指示適用於 Samsung Knox Android 裝置和「原生」(非 Samsung Knox) Android 裝置。 若要判斷您是否擁有 Samsung Knox 裝置，請移至 **[設定]**&gt;**[關於裝置]**。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
 
 註冊之前或之後，系統可能會要求您選擇最能描述您裝置使用方式的類別。 IT 系統管理員會使用此類別來協助您判斷可存取的應用程式。
 
@@ -57,7 +57,7 @@ ms.suite: ems
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，接著您可以使用 USB 纜線移動這些記錄檔。 如果您在使用公司入口網站應用程式時發生問題，則可能需要使用這個功能，才能將記錄檔傳送給您的 IT 系統管理員。 了解如何[將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)。
+    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，接著您可以使用 USB 纜線移動這些記錄檔。
 
     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。  如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
@@ -65,7 +65,7 @@ ms.suite: ems
 
     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只會允許公司入口網站應用程式存取資料記錄檔，協助對您的裝置問題進行疑難排解。
+    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只允許公司入口網站應用程式建立、使用和管理您的工作帳戶。
 
     如果您拒絕存取，則下次點選 [傳送資料] 時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [儲存體]，然後開啟權限。
 
@@ -97,7 +97,7 @@ ms.suite: ems
 
     ![輸入 PIN 或密碼](./media/and-enroll-6-PIN-native.png)
 
-13.  遵循符合所使用裝置類型的下列指示 (原生 Android 或 Samsung Knox)。 若要判斷是否有 Samsung Knox 裝置，請移至 [設定] &gt; [關於電話]。 如果您在該處看不到列出 "Knox" 這個字，則會有原生 Android 裝置。
+13.  遵循符合所使用裝置類型的下列指示 (原生 Android 或 Samsung Knox)。 若要判斷您是否擁有 Samsung Knox 裝置，請移至 **[設定]**&gt;**[關於裝置]**。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
 
     -   原生 (非 Samsung Knox) 裝置︰在 [命名憑證] 畫面上，點選 [確定] 接受預設憑證。
 
@@ -119,7 +119,7 @@ ms.suite: ems
 
     ![公司存取設定完成畫面](./media/and-enroll-10-comp-access-setup-complete.png)
 
-在您嘗試安裝公司應用程式前，請移至 [設定] &gt; [安全性]，然後開啟 [未知來源]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到 [已封鎖安裝] 訊息。 基於安全性理由，您的電話設定成封鎖安裝從未知來源取得的應用程式。] 您可以點選錯誤對話方塊上的 [設定]，移至 [未知來源] 選項。
+在您嘗試安裝公司應用程式前，請移至 [設定] &gt; [安全性]，然後開啟 [未知來源]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到 [已封鎖安裝] 訊息。 基於安全性理由，您的裝置設定成封鎖安裝從未知來源取得的應用程式。」 您可以點選錯誤對話方塊上的 [設定]，移至 [未知來源] 選項。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

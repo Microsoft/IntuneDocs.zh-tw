@@ -31,7 +31,7 @@ ms.suite: ems
 
 ## 一般設定原則設定
 
-使用 Windows 10 的 Microsoft Intune **一般設定原則**來設定已註冊之 Windows 10 Desktop 和 Windows 10 行動裝置的一般設定：
+使用 Windows 10 的 Microsoft Intune **一般設定原則**，為已註冊的 Windows 10 桌面版和 Windows 10 行動裝置版裝置設定一般設定。 當您使用 Intune 用戶端軟體管理 Windows 10 電腦時，無法使用此原則。
 
 
 ### 密碼
@@ -332,6 +332,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

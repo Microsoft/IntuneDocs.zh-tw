@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 如果從 Intune 取消註冊裝置，會發生什麼情況？
 
-當您從裝置解除安裝公司入口網站應用程式時，它也會從 Intune 取消註冊您的裝置。 如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結，如上述＜在本文中＞一節所示。
+如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結，如上述＜在本文中＞一節所示。
 
 - [Windows 10 mobile、8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10、Windows 8.1 或 Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ ms.suite: ems
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
 
-如有問題且找不到 IT 系統管理員的連絡資訊，請試試[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

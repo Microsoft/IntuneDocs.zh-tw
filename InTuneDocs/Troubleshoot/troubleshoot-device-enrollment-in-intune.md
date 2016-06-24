@@ -144,29 +144,6 @@ ms.suite: ems
 
 **解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個使用者 UPN 尾碼 (例如，@contoso.com 或 @fabrikam.com) 的最上層網域的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務。  現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
-### 電腦已註冊 - 錯誤 hr 0x8007064c
-**問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
-  
-這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
-
-
-
-**解決方案：** 
-
-1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。 
-1. [檔案] -> [Add/ Remove Snap-ins] (新增/移除嵌入式管理單元)。
-1. 按兩下 [憑證]，並依序選擇 [電腦帳戶] 和 [下一步]，然後選取 [本機電腦]。
-1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。 
-1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時將其刪除
-1. 如果此登錄機碼存在，請將其刪除︰** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
-1. 嘗試重新註冊。 
-1. 如果電腦仍然無法註冊，請尋找並刪除此機碼 (如果它存在)︰**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
-1. 嘗試重新註冊。 
-
-    > [!IMPORTANT]
-    > 此節、方法或工作包含告訴您如何修改登錄的步驟。 然而，如果您不當修改登錄，可能會發生嚴重的問題。 因此，請務必小心遵循下列步驟。 為加強保護，請在修改登錄之前先加以備份。 之後如果發生問題，您還可以還原登錄。
-    > 如需如何備份和還原登錄的詳細資訊，請參閱[如何備份和還原 Windows 中的登錄](https://support.microsoft.com/en-us/kb/322756)
-
 
 ## Android 的問題
 ### 設定檔安裝失敗
@@ -248,6 +225,31 @@ ms.suite: ems
 
 ### 其他 iOS 註冊錯誤
 在[您在 Intune 嘗試註冊裝置時看到錯誤](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)的裝置使用者文件中提供 iOS 註冊錯誤清單。
+
+## 電腦問題
+
+### 電腦已註冊 - 錯誤 hr 0x8007064c
+**問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
+  
+這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
+
+
+
+**解決方案：** 
+
+1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。 
+1. [檔案] -> [Add/ Remove Snap-ins] (新增/移除嵌入式管理單元)。
+1. 按兩下 [憑證]，並依序選擇 [電腦帳戶] 和 [下一步]，然後選取 [本機電腦]。
+1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。 
+1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時將其刪除
+1. 如果此登錄機碼存在，請將其刪除︰** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
+1. 嘗試重新註冊。 
+1. 如果電腦仍然無法註冊，請尋找並刪除此機碼 (如果它存在)︰**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
+1. 嘗試重新註冊。 
+
+    > [!IMPORTANT]
+    > 此節、方法或工作包含告訴您如何修改登錄的步驟。 然而，如果您不當修改登錄，可能會發生嚴重的問題。 因此，請務必小心遵循下列步驟。 為加強保護，請在修改登錄之前先加以備份。 之後如果發生問題，您還可以還原登錄。
+    > 如需如何備份和還原登錄的詳細資訊，請參閱[如何備份和還原 Windows 中的登錄](https://support.microsoft.com/en-us/kb/322756)
 
 ## 一般註冊錯誤代碼
 
