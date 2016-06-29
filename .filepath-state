@@ -1889,6 +1889,9 @@
   "893e896fc52e6e883fcd151db2c47030113502a2": [
     "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
   ],
+  "288560dc07d7ae93fa017917b45c71a88d089d31": [
+    "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
+  ],
   "21c9c3a647f9aa3d86177762442527dfb4aeb5b4": [
     "InTuneDocs\\DeployUse\\whats-new-in-microsoft-intune.md"
   ],
@@ -2504,22 +2507,13 @@
   "3abf566831348de11f718370d6267e3ff4355bfb": [
     "InTuneDocs\\develop\\intune-app-sdk.md"
   ],
-  "fec3bab3651d5356a5e833e663a5a4d0ad67270d": [
-    "InTuneDocs\\develop\\intune-app-sdk.md"
-  ],
   "d2e4b6903d86b79edd9c758b2ce51733831e785a": [
     "InTuneDocs\\develop\\intune-app-sdk-android.md"
   ],
   "a042f0c6206e9aaf4ec0eb012a70930aa95ecc47": [
     "InTuneDocs\\develop\\intune-app-sdk-get-started.md"
   ],
-  "dcb4f921ddebc503736ed85ae1affdc4f85d89ee": [
-    "InTuneDocs\\develop\\intune-app-sdk-get-started.md"
-  ],
   "820ec2da0554f0af383895482241be7d1c0cf305": [
-    "InTuneDocs\\develop\\intune-app-sdk-ios.md"
-  ],
-  "ad06a713fc8bd2e221f648dc2833d10108cc42db": [
     "InTuneDocs\\develop\\intune-app-sdk-ios.md"
   ],
   "84f0773339472e9367b3cfb9a47af0aebaaee0db": [
