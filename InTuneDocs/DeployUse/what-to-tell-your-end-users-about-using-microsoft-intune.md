@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 要告訴使用者之關於使用 Microsoft Intune 的事項 | Microsoft Intune
-description:
-keywords:
+title: "要告訴使用者之關於使用 Microsoft Intune 的事項 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -66,6 +60,7 @@ ms.suite: ems
 若要協助使用者解決它們可能會在使用公司入口網站時遇到的問題，您可以檢閱[使用者可能會在公司入口網站中看到的訊息清單](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
