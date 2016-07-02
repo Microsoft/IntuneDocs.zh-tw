@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 新增 Windows 電腦的應用程式 | Microsoft Intune
-description:
-keywords:
+title: "新增 Windows 電腦的應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ ms.suite: ems
 
 1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [應用程式] &gt; [新增應用程式]，以啟動 Intune 軟體發佈者。
 
-    > [!TIP] 您可能需要輸入 Intune 使用者名稱和密碼，才能啟動發佈者。
+    > [!TIP]
+    > 您可能需要輸入 Intune 使用者名稱和密碼，才能啟動發佈者。
 
 
 
@@ -94,6 +89,7 @@ ms.suite: ems
 
 建立應用程式後，下一個步驟是將它部署。 若要深入了解，請參閱 [在 Microsoft Intune 中部署應用程式](deploy-apps.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
