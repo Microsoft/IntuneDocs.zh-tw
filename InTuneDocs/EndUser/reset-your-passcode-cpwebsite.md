@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 從公司入口網站重設裝置密碼 | Microsoft Intune
-description:
-keywords:
+title: "從公司入口網站重設裝置密碼 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+
 
 ---
 
@@ -30,7 +24,8 @@ ms.suite: ems
 
 如果您在 Intune 中註冊的裝置遺失裝置 PIN 或密碼，您可以使用[公司入口網站](http://portal.manage.microsoft.com)重設密碼。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
 
-> [!NOTE] 公司入口網站上可能不會顯示 [重設密碼] 按鈕，這是由 IT 系統管理員設定 Intune 的方式決定。 Windows 8.1 和 Windows RT 裝置不支援重設密碼。
+> [!NOTE] 
+> 公司入口網站上可能不會顯示 [重設密碼] 按鈕，這是由 IT 系統管理員設定 Intune 的方式決定。 Windows 8.1 和 Windows RT 裝置不支援重設密碼。
 
 若要重設密碼：
 
@@ -67,6 +62,7 @@ ms.suite: ems
 ### 請參閱
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
