@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 裝置不符合最大的作業系統版本 | Microsoft Intune
-description:
-keywords:
+title: "裝置不符合最大的作業系統版本 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 524501f8680eab35f7d773d47c9c2396ece30509
+
 
 ---
 
@@ -33,6 +27,7 @@ IT 系統管理員已設定您的 Windows 裝置可具有的最高作業系統�
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
