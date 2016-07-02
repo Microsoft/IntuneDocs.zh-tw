@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 PowerShell 管理 Intune 授權 |Microsoft Intune
-description:
-keywords:
+title: "使用 PowerShell 管理 Intune 授權 |Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: e0eca2ecc9948c7caf15d5df5e6e106428b8b964
+
 
 ---
 
@@ -36,7 +30,7 @@ ms.suite: ems
 
 您可以執行下列命令，以排除 Intune 服務方案。 您可以使用相同的方法以擴充到整個安全性群組，也可以使用更細微的篩選器。 
 
-**範例 1**：在命令列上建立新的使用者並指派 EMS 授權，但不啟用授權中的 Intune 部分：
+**範例 1** 在命令列上建立新使用者並在不啟用授權中 Intune 部分的情形下指派 EMS 授權：
 
     Connect-MsolService 
         
@@ -72,6 +66,7 @@ ms.suite: ems
 >[&larr;**將使用者同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**組織使用者與裝置**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
