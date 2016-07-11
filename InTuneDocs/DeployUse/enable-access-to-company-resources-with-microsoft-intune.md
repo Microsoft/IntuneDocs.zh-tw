@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 啟用公司資源存取 | Microsoft Intune
-description:
-keywords:
+title: "啟用公司資源存取 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56
+
 
 ---
 
@@ -50,7 +43,8 @@ Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您
 |Windows 8.1 及更新版本|Windows Phone 8.1 和更新版本|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
 |否|是|是|否|是|
-> [此 Intune 團隊部落格文章](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx)提供如何使用 OMA-URI 設定 Windows Phone 8.1 Wi-Fi 設定檔的相關資訊。
+> [!NOTE]
+> [此 Intune 小組部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/)提供如何使用 OMA-URI 設定 Windows Phone 8.1 Wi-Fi 設定檔的相關資訊。
 
 ## [憑證設定檔](secure-resource-access-with-certificate-profiles.md)和支援的平台
 協助保護公司資源 (包括無線網路和 VPN 連線) 的存取。
@@ -60,6 +54,7 @@ Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您
 |是|是|是|是|是|
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

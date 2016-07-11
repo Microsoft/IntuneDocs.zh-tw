@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 限制存取商務用 Skype Online | Microsoft Intune
-description:
-keywords:
+title: "限制存取商務用 Skype Online | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -39,7 +32,7 @@ ms.suite: ems
 設定商務用 Skype Online 的條件式存取原則**之前**，您必須：
 - 具有**商務用 Skype Online 訂用帳戶**，並將商務用 Skype Online 授權指派給使用者。
 - 成為 **Enterprise Mobility Suite** 或 **Azure Active Directory Premium** 的訂用帳戶。
--   對商務用 Skype Online **啟用新式驗證**。 登入 Microsoft Connect，填寫[此表單](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)，以註冊在新式驗證程式中。
+-   對商務用 Skype Online [啟用新式驗證](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。 
 -  所有使用者都必須使用**商務用 Skype Online**。 如果您的部署同時有商務用 Skype Online 和商務用 Skype 內部部署，則條件式存取原則不會套用至使用者。
 
     需要存取商務用 Skype Online 的裝置必須：
@@ -119,6 +112,7 @@ ms.suite: ems
 * **已向 AAD 註冊且相容的裝置** - 這些裝置可以存取商務用 Skype Online。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

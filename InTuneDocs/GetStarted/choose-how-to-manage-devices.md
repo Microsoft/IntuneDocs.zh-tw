@@ -1,42 +1,31 @@
 ---
-# required metadata
-
-title: 選擇如何使用 Microsoft Intune 管理裝置 | Microsoft Intune
-description:
-keywords:
+title: "選擇如何管理裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+
 
 ---
 
 # 選擇如何管理裝置
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 可讓您向服務註冊某個範圍的裝置來管理這些裝置。 使用者接著可以使用公司入口網站來執行各種作業，例如註冊其裝置、瀏覽及安裝應用程式、確定他們的裝置與公司原則相容，及連絡其 IT 支援。
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 可讓您向服務*註冊*某個範圍的裝置來管理這些裝置。 使用者接著可以使用*公司入口網站*來執行各種作業，例如註冊其裝置、瀏覽及安裝應用程式、確定他們的裝置與公司原則相容，及連絡其 IT 支援。
 
 ## 管理行動裝置的方式
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 可管理下列裝置平台︰
 
-- Apple iOS 7.1 及更新版本
-- Google Android 4.0 及更新版本 (包括 Samsung KNOX)
-- Windows Phone 8.0 和更新版本
-- Windows RT 和 Windows 8.1 RT
-- 執行 Windows 8.1 和更新版本的電腦
-- Mac OS X 10.9 及更新版本
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> 提示</h5>
@@ -80,16 +69,17 @@ ms.suite: ems
 ## Exchange ActiveSync 管理
 您也可以使用 Exchange ActiveSync 來管理裝置。 這需要您安裝 On-Premises Connector 或使用內建的 Service to Service Connector 連線到您的 Exchange Server。
 
-若要了解安裝 On-Premises Connector 的軟硬體需求，請參閱[適用於 On-Premises Connector 的需求](/Intune/network-infrastructure-requirements-for-microsoft-intune.md).
+若要了解安裝 On-Premises Connector 的軟硬體需求，請參閱[適用於 On-Premises Connector 的需求](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect)。
 
-若要了解如何使用 On-premises Connector 或 Service to Service Connector 與 Exchange，請參閱 [使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
+若要了解如何使用 On-premises Connector 或 Service to Service Connector 與 Exchange，請參閱[使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
 
 
 
 ## 後續步驟
-現在您已經發現使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置時可使用的一些功能，您將需要[準備註冊您的裝置](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md)。 註冊裝置之後，您可以利用您已在本主題中閱讀的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+現在您已經發現使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置時可使用的一些功能。 接下來，您需要[註冊您的裝置](/intune/deploy-use/enroll-devices-in-microsoft-intune)。 註冊裝置之後，您可以利用您已在本主題中閱讀的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

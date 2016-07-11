@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 新增應用程式 | Microsoft Intune
-description:
-keywords:
+title: "新增應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ ms.suite: ems
 可讓您管理和部署 App Store 的免費 iOS 應用程式。 也能讓您關聯[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)與[相容的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)，並在管理主控台中檢閱其狀態。<br /><br />受管理 iOS 應用程式不會儲存在您的 Intune 雲端儲存空間中。
 > [!TIP] 在您[設定行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md)為 Intune 前，無法使用行動裝置的選項。
 
+## Intune 軟體發行者
+當您從 Microsoft Intune 管理主控台新增或修改應用程式時，**Microsoft Intune 軟體發佈者**便會啟動。 請從發佈者選取和設定軟體安裝程式類型，以便上傳要儲存在 Intune 雲端存放裝置的應用程式 (電腦的程式或行動裝置的應用程式)，或是連結到線上商店或 Web 應用程式。
+
+### 需求
+開始使用 Microsoft Intune 軟體發佈者之前，您必須先安裝 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安裝之後，您可能必須重新啟動電腦，才能正確開啟軟體發行者。
+
+## 雲端儲存空間
+使用軟體安裝程式安裝類型所建立的所有應用程式 (例如企業營運應用程式)，都必須封裝並上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 付費型訂閱則包含 20 GB 的空間，另外還可選擇購買額外的儲存空間。
+
+您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量並購買更多的儲存空間：
+
+針對 Intune 購買額外的雲端式儲存空間時應遵循這些規則：
+
+-   您必須擁有有效的付費型訂閱，才能購買額外的存放裝置。
+
+-   只有您的 Microsoft Online Service 的帳務管理員或全域管理員才能透過 Office 365 管理入口網站購買額外的儲存空間。 您必須是全域管理員，而且必須登入 Office 365 管理入口網站，才能新增、刪除或管理這些系統管理員。
+
+-   如果您是大量授權客戶，且已透過 Enterprise 合約購買 Intune 或 Microsoft Intune 附加元件，請連絡您的 Microsoft 客戶經理或 Microsoft 合作夥伴，以取得價格資訊並購買額外的儲存空間。
+
+#### 雲端儲存空間需求
+
+-   確定所有應用程式安裝檔案位於相同的資料夾。
+
+-   您上傳的任何檔案的檔案大小上限是 2 GB。
+
+
 ## 支援通用 Windows 平台 (UWP) 應用程式
 Windows 10 電腦不需要側載金鑰即可安裝企業營運應用程式。 不過，登錄機碼 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 的值必須為 **1** 才能啟用側載。
 
@@ -96,6 +115,8 @@ Windows 10 電腦不需要側載金鑰即可安裝企業營運應用程式。 �
 
 接下來，您必須先在 Intune 主控台中新增應用程式，才可以部署它們。 您可以加入適用於[註冊裝置](add-apps-for-mobile-devices-in-microsoft-intune.md)，或[使用 Intune 用戶端軟體所管理的 Windows 電腦](add-apps-for-windows-pcs-in-microsoft-intune.md)的應用程式。
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 限制存取 SharePoint Online | Microsoft Intune
-description:
-keywords:
+title: "限制存取 SharePoint Online | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 條件式存取有兩個元件：
 - 裝置相容性原則，裝置必須符合此原則才算相容。
 - 條件式存取原則，其中指定裝置必須符合才能存取服務的條件。
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件和 O365 服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
+若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
 
 當使用者嘗試在其裝置 (例如 OneDrive) 上使用支援的應用程式連接到檔案時，將會進行下列評估：
 
@@ -66,6 +60,13 @@ ms.suite: ems
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
 - Windows Phone 8.1 和更新版本
 
+您可以在從 **iOS** 和 **Android** 裝置上的瀏覽器進行存取時，限制存取 SharePoint Online。  將只允許從相容裝置上支援的瀏覽器進行存取︰
+* Safari (iOS)
+* Chrome (Android)
+* 受管理的瀏覽器 (iOS 和 Android)
+
+**不支援的瀏覽器將會被封鎖**。
+
 ## 對電腦的支援
 - Windows 8.1 及更新版本 (已向 Intune 註冊)
 - Windows 7.0 或 Windows 8.1 (已加入網域時)
@@ -97,11 +98,13 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 ### 步驟 2：設定及部署相容性原則
 如果您尚未這麼做，請建立相容性原則，並部署到 SharePoint Online 原則的目標使用者。
 
-> [!NOTE]相容性原則會部署至[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]群組，而條件式存取原則會以 Azure Active Directory 安全性群組為目標。
+> [!NOTE]
+> 雖然相容性原則會部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 群組，但條件式存取原則以 Azure Active Directory 安全性群組為目標。
 
 如需如何設定相容性原則的詳細資料，請參閱[建立相容性原則](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
-> [!IMPORTANT]如果您尚未部署相容性原則，則會將裝置視為相容。
+> [!IMPORTANT]
+> 如果您尚未部署相容性原則，則會將裝置視為相容。
 
 當您準備好時，請繼續執行 **步驟 3**。
 
@@ -110,8 +113,8 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，按一下 [原則]  >  [條件式存取]  >  [SharePoint Online 原則]。
-![[SharePoint Online 原則] 頁面的螢幕擷取畫面](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com) 中，選擇 [原則]  >  [條件式存取]  >  [SharePoint Online 原則]。
+![[SharePoint Online 原則] 頁面的螢幕擷取畫面](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  選取 [啟用 SharePoint Online 的條件式存取原則]。
 
@@ -120,6 +123,10 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
     -   **所有平台**
 
         任何用來存取 **SharePoint Online** 的裝置都必須在 Intune 中註冊並符合原則。  任何使用**新式驗證**的用戶端應用程式都必須遵守條件式存取原則。 如果 Intune 目前不支援此平台，則會禁止存取 **SharePoint Online**
+
+        選取 [所有平台] 選項表示 Azure Active Directory 會將此原則套用至所有驗證要求，而不論用戶端應用程式所回報的平台為何。  所有平台都需要註冊並變成相容，除了︰
+        *   Windows 裝置必須註冊並相容，使用內部部署 Active Directory 加入網域，或兩者兼具
+        * 不支援例如 Mac 的平台。  不過，使用來自這些平台之新式驗證的應用程式，仍然會被封鎖。
         >[!TIP]
         >如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在 [Microsoft Connect 網站](http://go.microsoft.com/fwlink/?LinkId=761472)了解已知問題及如何存取這項功能的詳細資訊。
 
@@ -135,11 +142,28 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
      -   **裝置必須相容。** 選擇此選項會要求電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且相容。 如果電腦未註冊，則會顯示註冊指示訊息。
 
-4.  按一下 [目標群組] 下方的 [修改]  ，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇針對所有使用者，或僅針對選取的使用者群組。
+4.   在 SharePoint Online 和商務用 OnDrive 的 [瀏覽器存取] 下，您可以選擇允許只能透過支援的瀏覽器存取 Exchange Online︰Safari (iOS)，以及 Chrome (Android)。 將會封鎖從其他瀏覽器的存取。  您為 OneDrive 應用程式存取所選取的相同平台限制也適用於此處。
 
-5.  按一下 [豁免群組] 下方的 [修改]  ，選取豁免此原則的 Azure Active Directory 安全性群組。
+  在 **Android** 裝置，使用者必須啟用瀏覽器存取。  若要這樣做，使用者必須啟用已註冊裝置上的 [允許瀏覽器存取] 選項，如下所示︰
+  1.    啟動公司入口網站應用程式。
+  2.    從三個點 (...) 或硬體功能表按鈕移至 [設定] 頁面。
+  3.    按下 [允許瀏覽器存取] 按鈕。
+  4.  在 Chrome 瀏覽器中，登出 Office 365 並重新啟動 Chrome。
 
-6.  完成之後，請按一下 [儲存] 。
+  在 **iOS 和 Android** 平台上，為了識別用來存取服務的裝置，Azure Active Directory 會發行傳輸層安全性 (TLS) 憑證給裝置。  裝置會顯示憑證，並提示使用者選取憑證，如以下螢幕擷取畫面所示。 使用者必須選取此憑證，才能繼續使用瀏覽器。
+
+  **iOS**
+
+  ![iPad 上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Android 裝置上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇針對所有使用者，或僅針對選取的使用者群組。
+
+6.  選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+
+6.  完成之後，請選擇 [儲存]。
 
 您不需部署條件式存取原則，它會立即生效。
 
@@ -158,6 +182,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 [使用 Microsoft Intune 限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用行動應用程式管理原則保護應用程式資料 | Microsoft Intune
-description:
-keywords:
+title: "使用行動應用程式管理原則保護應用程式資料 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ ms.suite: ems
 您可以使用行動裝置應用程式管理 (MAM) 原則來協助保護公司的資料。 因為 Intune MAM 原則可獨立於任何行動裝置管理 (MDM) 解決方案之外使用，不論是否在裝置管理解決方案中註冊裝置，都可以用它來保護公司的資料。 您可以實作**應用程式層級原則**，以限制存取公司資源，並將資料保留在 IT 部門範疇內。
 
 MAM 原則支援下列裝置上執行的應用程式︰
+> [!IMPORTANT]
+> 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援 MAM 原則。
 
--   在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中**管理和註冊的裝置**。 此類別中的裝置通常是公司管理的裝置。
 
-  > [!IMPORTANT]
-  > 如果您使用 Intune 管理 iOS 和 Android 裝置，您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援 MAM 原則。
+- **在 Microsoft Intune 中管理和註冊的裝置**。 此類別中的裝置通常是公司管理的裝置。
 
 -   **在協力廠商行動裝置管理解決方案中管理和註冊的裝置**。   此類別中的裝置通常是公司管理的裝置。
 
-  > [!NOTE]行動裝置應用程式管理原則不應與協力廠商行動裝置應用程式管理或安全容器解決方案一起使用。
+  > [!NOTE]
+  > 行動裝置應用程式管理原則不應搭配使用協力廠商的行動裝置應用程式管理或安全容器解決方案。
 
 -   **未受管理的裝置**。  此類別中的裝置通常是不在 Intune 或其他 MDM 解決方案中管理或註冊的員工個人裝置。
 
@@ -137,6 +132,7 @@ MDM 解決方案：
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

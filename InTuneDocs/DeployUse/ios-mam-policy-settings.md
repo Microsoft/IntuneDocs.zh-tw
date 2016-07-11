@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS MAM 原則設定 | Microsoft Intune
-description:
-keywords:
+title: "iOS MAM 原則設定 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ ms.suite: ems
   當您啟用這項設定時，使用者必須設定並使用 PIN 才能存取其裝置。  如果沒有 PIN，應用程式將不會啟動，而且會出現下列訊息提示使用者設定 PIN：「您的公司要求您必須先啟用裝置 PIN 才能存取這個應用程式」。
 
   **預設值 - 未選取加密選項。**
-- **ContactSyncDisabled：**選擇 [是] 以避免在裝置上的原生通訊錄應用程式中同步處理連絡人資訊。 如果選擇 [否]，應用程式會將連絡人資訊儲存至裝置上的原生通訊錄應用程式。
+- **停用連絡人同步：**選擇 [是] 以避免在裝置上的原生通訊錄應用程式中同步處理連絡人資訊。 如果選擇 [否]，應用程式會將連絡人資訊儲存至裝置上的原生通訊錄應用程式。
 
   當您執行選擇性抹除以移除公司資料時，會移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 **Microsoft Outlook** 應用程式。
 
@@ -117,6 +111,7 @@ ms.suite: ems
   **預設值 = 90 天**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 應用程式部署問題疑難排解 | Microsoft Intune
-description:
-keywords:
+title: "應用程式部署問題疑難排解 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
+ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+
 
 ---
 
@@ -39,11 +32,11 @@ ms.suite: ems
 
 2.  確定您已在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，完成此帳戶的佈建。
 
-3.  在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，確定您已使用正確的使用者名稱和密碼登入 Intune，且使用者名稱格式如下：joe@domain.com。
+3.  在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，確定您已使用正確的使用者名稱和密碼登入 Intune，且使用者名稱格式如下：**joe@domain.com**。
 
 ### 如果公司入口網站中沒有連絡 IT 的資訊
 
-1.  在 Intune 管理主控台中，按一下 [管理員]  &gt;  [公司入口網站]
+1.  在 Intune 管理主控台中，選擇 **[管理員]** &gt; **[公司入口網站]**。
 
 2.  設定 [連絡 IT]  詳細資料。
 
@@ -63,7 +56,7 @@ ms.suite: ems
 
 4.  若 iOS 應用程式下載進度列顯示下載已完成，但應用程式安裝失敗，表示您提供的應用程式檔案可能有問題。
 
-### 若按下 iOS 應用程式的連結會將您連入 iTunes App Store 中的舊有位置
+### 若 iOS 應用程式連結將您連入 iTunes App Store 中的舊有位置
 
 1.  目前開啟的 iTunes App Store 工作階段連入了舊版應用程式頁面。
 
@@ -86,14 +79,14 @@ ms.suite: ems
 2.  如需詳細資訊，請檢視 Apple 開發人員文件。
 
 ### 錯誤︰發行者不存在
-您使用新增其他軟體合約來新增協力廠商授權合約。 您嘗試從 [其他軟體授權合約] 頁面新增發行者。 頁面會依字母順序提供現有發行者的清單。
-您輸入遺漏的發行者，但是收到錯誤發行者不存在 
+您使用**新增其他軟體合約**來新增協力廠商授權合約。 您嘗試從 [其他軟體授權合約] 頁面新增發行者。 頁面會依字母順序提供現有發行者的清單。
+您輸入遺漏的發行者，但是收到錯誤**發行者不存在**。 
 
 這是預設設計。 Intune 只提供授權追蹤給受歡迎的軟體項目。 在 Intune 可做為授權工作負載中的選項之前，它需要至少 4 個不同的帳戶回報軟體。
 
 ### 如果受管理的應用程式不報告安裝狀態
 
-在 2014 年 11 月 Microsoft Intune 服務更新之前安裝的受管理應用程式，其安裝狀態尚未收集。 對於在這項服務更新之前安裝受管理應用程式的裝置，請用適當的部署動作 (例如 [可用安裝] )，更新每個相關聯的應用程式部署。 每部裝置都會在自動檢查有無可用的應用程式時更新應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 更新應用程式](/intune/deploy-use/update-apps-using-microsoft-intune)
+在 2014 年 11 月 Microsoft Intune 服務更新之前安裝的受管理應用程式，其安裝狀態尚未收集。 對於在這項服務更新之前安裝受管理應用程式的裝置，請用適當的部署動作 (例如 [可用安裝] )，更新每個相關聯的應用程式部署。 每部裝置都會在自動檢查有無可用的應用程式時更新應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 更新應用程式](/intune/deploy-use/update-apps-using-microsoft-intune)。
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>應用程式部署錯誤碼
 下表列出部署 Intune 應用程式時可能發生的常見錯誤、其可能的原因及可行的解決方案，協助您疑難排解問題。
@@ -104,11 +97,13 @@ ms.suite: ems
 |0x80073CF0|無法開啟套件。|可能的原因：<br /><br />-   套件未經簽署。<br />-   發行者名稱與簽署憑證主體不符。<br /><br />查看 AppxPackagingOM 事件記錄檔以取得詳細資訊。|
 |0x80073CF3|套件更新失敗、具相依項目或發生驗證衝突|可能的原因：<br /><br />-   傳入的套件與安裝的套件衝突。<br />-   找不到指定的套件相依項目。<br />-   套件不支援正確的處理器架構。<br /><br />查看 AppXDeployment-Server 事件記錄檔以取得詳細資訊。|
 |0x80073CFB|提供的套件已經安裝，不允許重新安裝套件|如果您要安裝的套件與已經安裝的套件不同，可能就會收到這項錯誤。 請確認數位簽章也包含在套件中。 重建或重新簽署套件後，該套件之位元就不再與先前安裝的套件相同。 此錯誤有下列兩種可能的修正選項：<br /><br />-   遞增應用程式的版本號碼，然後再重建及重新簽署應用程式。<br />-   在安裝新套件之前，針對系統上的每個使用者移除舊套件。|
+|0x87D1041C|應用程式安裝成功，但未偵測到應用程式。|- 使用者從公司入口網站安裝應用程式，然後直接從裝置解除安裝。 請從公司入口網站重新安裝應用程式。<br /><br />- Intune 所辨識的企業營運應用程式的版本號碼，和在裝置上安裝的版本之間可能不相符。 請確定 Intune 具有正確的版本，並重新安裝應用程式。|
 
 ### 後續步驟
-如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務，如[如何取得 Microsoft Intune 的支援](how-to-get-support-for-microsoft-intune.md)中所述
+如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

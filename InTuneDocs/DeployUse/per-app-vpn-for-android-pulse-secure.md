@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: 使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Intune
-description:
-keywords:
+title: "使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: chrisbal
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 2. 展開 [Android]，然後選擇 [VPN 設定檔 (Android 4 及更新版本)])，以選取新原則的範本。
 
 3. 在範本中，針對 [連線類型]，選擇 [Pulse Secure]。
-4. 完成並儲存 VPN 設定檔。 如需 VPN 設定檔的詳細資訊，請參閱 [VPN 設定檔](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md)。
+4. 完成並儲存 VPN 設定檔。 如需 VPN 設定檔的詳細資訊，請參閱 [VPN 連線](vpn-connections-in-microsoft-intune.md)。
 
 > [!NOTE]
 記下下一步中所使用的 VPN 設定檔名稱。 例如，**MyAppVpnProfile**。
@@ -82,6 +73,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Windows 電腦的防火牆原則 | Microsoft Intune
-description:
-keywords:
+title: "Windows 電腦的防火牆原則 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # 在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 Microsoft Intune 使用一些方法來協助您保護使用 Intune 用戶端所管理的 Windows 電腦安全，其中包括使用可讓您在電腦上進行 Windows 防火牆設定的原則。
 
-如果您尚未在電腦上安裝 Intune Windows 電腦用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)
+如果您尚未在電腦上安裝 Intune Windows 電腦用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 使用以下各節中的資訊可協助您設定、部署及監視 Windows 電腦上的 Windows 防火牆原則。
 
@@ -36,10 +30,11 @@ Microsoft Intune 使用一些方法來協助您保護使用 Intune 用戶端所�
 Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windows 防火牆的設定。 您不能管理 Windows 防火牆的自訂例外，且這些設定不會影響協力廠商防火牆。
 
 > [!NOTE]
-> 如果設定以 Microsoft Intune 原則及群組原則管理同一台電腦的相同設定，群組原則設定會覆寫 Microsoft Intune 原則設定。 如需如何避免 Intune 原則與群組原則產生衝突的詳細資訊，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+> 如果設定以 Microsoft Intune 原則及群組原則管理同一台電腦的相同設定，群組原則設定會覆寫 Microsoft Intune 原則設定。 如需如何避免 Intune 原則與群組原則產生衝突的詳細資訊，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
 > 如果您想要將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800) 。
 
+> [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火牆，您要管理的電腦上必須啟用下列兩項服務：
 >
 > -   Windows 防火牆
@@ -47,9 +42,9 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 
 ## 設定 Windows 防火牆原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [原則] &gt; [新增原則]
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [原則] &gt; [新增原則]。
 
-2.  設定並部署 **Windows 防火牆設定** 原則。 您可以使用建議的設定或自訂設定。 如需如何建立和部署原則的詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+2.  設定並部署 **Windows 防火牆設定** 原則。 您可以使用建議的設定或自訂設定。 如需如何建立和部署原則的詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     下節列出您可以在原則中設定的值，以及在不自訂原則的情況下將使用的預設值。
 
@@ -67,6 +62,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 
 這些原則設定會設定在受管理電腦連線到網域 (例如，在工作場所中)、私人 (信任) 網路 (例如家用網路) 或不受信任的公用網路 (例如咖啡廳) 時，Windows 防火牆會封鎖連入網路流量。 所有這些設定的預設值都是 [是]，亦即最安全的值。 
 
+> [!IMPORTANT]
 > 如果您環境中所包含的受管理電腦，執行未安裝 Service Pack 的 Windows Vista ，則您必須安裝與 Microsoft 知識庫 [文章編號 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相關聯的更新，或者停用部署至那些電腦之原則中的 [阻擋所有連入連線]  原則設定。
 
 ### 當 Windows 防火牆阻擋新程式時通知使用者
@@ -122,6 +118,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

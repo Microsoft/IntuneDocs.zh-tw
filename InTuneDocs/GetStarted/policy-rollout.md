@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: 原則首度發行 | Microsoft Intune
-description:
-keywords:
+title: "原則首度發行 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # 原則首度發行
 本主題提供 Microsoft Intune 中原則階段式首度發行的特定建議事項。 這種方法適用於您在新的 Intune 部署中，將套用的第一個原則，或您加入至現有部署的原則。
 
-如需首度發行階段的一般資訊，請參閱 [Microsoft Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)
+如需首度發行階段的一般資訊，請參閱 [Microsoft Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)。
 
 ### 原則首度發行的階段
 原則首度發行的階段為︰
@@ -61,7 +55,7 @@ ms.suite: ems
 ## 概念證明
 在概念證明階段中，在您針對測試用途嚴格設定的裝置和使用者上，於實驗室環境中測試原則部署。
 
--   讓技術支援人員參與此階段，了解在試驗和生產部署中可能發生的問題。 [Microsoft Intune 的原則疑難排解](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)中有提供疑難排解資訊
+-   讓技術支援人員參與此階段，了解在試驗和生產部署中可能發生的問題。 [Microsoft Intune 的原則疑難排解](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)中有提供疑難排解資訊。
 
 -   在此程序時點中，您應該開發試驗和生產使用者的通訊計劃。 計劃應至少包含哪些裝置行為會變更以及何時、變更的商務用途，以及如果使用者或 IT 人員遇到問題時該怎麼辦，提供自助資訊和如何連絡技術支援人員。
 
@@ -91,9 +85,9 @@ ms.suite: ems
 -   以遞增方式將原則套用至其他群組，監視受影響裝置的原則狀態，以及追蹤可能與新原則相關的技術支援人員要求。
 
 ## 操作和維護
-作業︰監視 Intune 主控台，以取得警示和使用者或裝置問題，並檢查原則正根據您的設計執行。
+**作業︰**監視 Intune 主控台，以取得警示和使用者或裝置問題，並檢查原則正根據您的設計執行。
 
-技術支援人員︰確保技術服務人員知道會影響使用者經驗之原則的任何變更，因為這些可能會導致支援要求。
+**技術支援人員︰**確保技術服務人員知道會影響使用者經驗之原則的任何變更，因為這些可能會導致支援要求。
 
 
 ### 請參閱
@@ -102,6 +96,7 @@ ms.suite: ems
 [Microsoft Intune 的原則疑難排解](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

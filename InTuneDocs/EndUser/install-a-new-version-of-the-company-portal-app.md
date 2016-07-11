@@ -10,6 +10,7 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 2.  依照安裝指示操作。
 
     > [!NOTE]
-    > [!NOTE] 如果您無法存取 Windows 市集，請連絡 IT 系統管理員。
+    > 如果您無法存取 Windows 市集，請連絡 IT 系統管理員。
 
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。

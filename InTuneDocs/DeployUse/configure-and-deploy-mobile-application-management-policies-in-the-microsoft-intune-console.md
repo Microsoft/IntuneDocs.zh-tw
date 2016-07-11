@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則 | Microsoft Intune
-description:
-keywords:
+title: "在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 -   執行 iOS 7 和更新版本的裝置。
 
-> [!TIP] 行動應用程式管理原則支援向 Intune 註冊的裝置。
+> [!TIP]
+> 行動應用程式管理原則支援向 Intune 註冊的裝置。
 >
 > 如需如何為不受 Intune 管理的裝置建立應用程式管理原則的資訊，請參閱[使用行動應用程式管理原則搭配 Microsoft Intune 保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
@@ -46,9 +41,9 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 -   使用包裝的應用程式 - 經過 **Microsoft Intune App Wrapping Tool** 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 它不能用來處理從應用程式市集下載的應用程式。 請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune 應用程式包裝工具進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
-- **自己撰寫納入 Intune App SDK 的應用程式**Intune App SDK 讓您可在撰寫應用程式時，將應用程式管理功納入該應用程式中。 如需詳細資訊，請參閱 [Intune App SDK 概觀](/develop/intune-app-sdk)
+- **自己撰寫納入 Intune App SDK 的應用程式**Intune App SDK 讓您可在撰寫應用程式時，將應用程式管理功納入該應用程式中。 如需詳細資訊，請參閱 [Intune App SDK 概觀](/intune/develop/intune-app-sdk)
 
-如需協助在應用程式包裝工具與 Intune App SDK 之間做出選擇，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+如需協助在應用程式包裝工具與 Intune App SDK 之間做出選擇，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 某些受管理的應用程式 (例如適用於 iOS 和 Android 的應用程式) 支援 **多重身分識別**。 這表示 Intune 只會將管理設定套用到公司帳戶或應用程式中的資料。
 
@@ -60,7 +55,8 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 -   使用的公司帳戶必須與用來向 Intune 註冊裝置的帳戶相同。
 
-> [!TIP] 如果您搭配使用 Intune 與 Configuration Manager，請參閱[如何使用 Configuration Manager 中的行動應用程式管理原則來控制應用程式](https://technet.microsoft.com/library/mt131414.aspx)。
+> [!TIP]
+> 如果您搭配使用 Intune 與 Configuration Manager，請參閱[如何使用 Configuration Manager 中的行動應用程式管理原則來控制應用程式](https://technet.microsoft.com/library/mt131414.aspx)。
 
 ## 以行動應用程式管理原則建立及部署應用程式
 
@@ -152,7 +148,8 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
 
-> [!IMPORTANT] 針對執行早於 iOS 7.1 之作業系統的裝置，應用程式解除安裝時不會移除相關聯的原則。
+> [!IMPORTANT]
+> 針對執行早於 iOS 7.1 之作業系統的裝置，應用程式解除安裝時不會移除相關聯的原則。
 >
 > 如果裝置從 Intune 取消註冊，不會從應用程式移除原則。任何已套用原則的應用程式會保留原則設定，即使是在解除安裝並重新安裝應用程式之後也一樣。
 
@@ -163,7 +160,8 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 
 不過，如果使用執行 iOS 9 和更新版本的裝置，Intune 會自動要求使用者授權，以便接管現有應用程式的管理工作。 如果使用者同意，則應用程式會變成由 Intune 管理，而且也會套用與應用程式相關聯的所有行動應用程式管理原則。
 
-> [!TIP] 如果裝置處於受監督的模式，Intune 不會要求使用者授權，便直接接管現有應用程式的管理工作。
+> [!TIP]
+> 如果裝置處於受監督的模式，Intune 不會要求使用者授權，便直接接管現有應用程式的管理工作。
 
 ## **步驟 5：** 監視應用程式部署。
 建立並部署與行動應用程式管理原則相關聯的應用程式之後，請使用下列程序來監視應用程式並解決任何原則衝突。
@@ -198,6 +196,7 @@ Microsoft Intune 中的行動應用程式管理原則可讓您修改您部署的
 -   如果原則尚未部署到裝置，而已部署兩個衝突的設定，則會使用裝置內建的預設設定。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 移轉至 Intune | Microsoft Intune
-description:
-keywords:
+title: "移轉至 Intune | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ ms.suite: ems
 
 ## 通知使用者
 
-一旦您認為 Intune 試驗部署已符合您的需求，請通知使用者即將將其裝置移轉至 Intune。 電子郵件訊息、[指示](http://www.microsoft.com/en-us/download/details.aspx?id=46398)和[海報](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)有助於設定預期，並提供使用者需要採取之步驟的註冊詳細資料，以保有公司資源與應用程式不中斷連線。 請確定您的支援團隊已準備好在移轉程序中協助使用者。
+一旦您認為 Intune 試驗部署已符合您的需求，請通知使用者即將將其裝置移轉至 Intune。 電子郵件訊息、指示和[海報](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)有助於設定預期，並提供使用者需要採取之步驟的註冊詳細資料，以保有公司資源與應用程式不中斷連線。 請確定您的支援團隊已準備好在移轉程序中協助使用者。
 
 ## 修改現有的企業行動管理解決方案
 
@@ -75,9 +68,10 @@ ms.suite: ems
 
 ## 取得此指南的可下載副本
 
-若要取得這整份指南的可下載版本，請瀏覽 [TechNet 資源庫](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387)
+若要取得這整份指南的可下載版本，請瀏覽 [TechNet 資源庫](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

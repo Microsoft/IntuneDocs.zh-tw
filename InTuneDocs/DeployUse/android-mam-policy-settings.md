@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android MAM 原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Android MAM 原則設定 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ ms.suite: ems
 
     **預設值 = 是**
 - **加密應用程式資料︰** 選擇 [是] 啟用加密。 啟用這項設定時，與行動應用程式管理原則相關聯之應用程式的加密是由 Microsoft 所提供。 資料會在檔案 I/O 作業期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。
-  >[!NOTE] 加密方法未經 FIPS 140-2 認證
+  >[!NOTE]
+  >加密方法未經 FIPS 140-2 認證
 
   **預設值 = 是**
 
-- **ContactSyncDisabled：**選擇 [是] 以避免在裝置上的原生通訊錄應用程式中同步處理連絡人資訊。 如果選擇 [否]，應用程式會將連絡人資訊儲存至裝置上的原生通訊錄應用程式。<br/>當您執行選擇性抹除以移除公司資料時，會移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 **Microsoft Outlook** 應用程式。
+- **停用連絡人同步：**選擇 [是] 以避免在裝置上的原生通訊錄應用程式中同步處理連絡人資訊。 如果選擇 [否]，應用程式會將連絡人資訊儲存至裝置上的原生通訊錄應用程式。<br/>當您執行選擇性抹除以移除公司資料時，會移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 **Microsoft Outlook** 應用程式。
 
   **預設值 = 是**
 
@@ -100,6 +95,7 @@ ms.suite: ems
 - **封鎖螢幕擷取和 Android Assistant (Android 6 Marshmallow 或更新版本)：**選擇 [是] 可在使用此應用程式的功能時，封鎖螢幕擷取畫面和 **Android Assistant** 功能。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

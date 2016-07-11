@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
 ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
 
@@ -20,12 +21,12 @@ ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
 
 # Android 的 Microsoft Intune App SDK 開發人員指南
 
-> [!NOTE] 您可能想要先閱讀 [Intune App SDK 概觀](intune-app-sdk.md)，其中涵蓋 SDK 目前的功能，並說明如何在每個支援的平台上進行整合準備。 
+> [!NOTE]
+> 您可能想要先閱讀 [Intune App SDK 概觀](intune-app-sdk.md)，其中涵蓋 SDK 目前的功能，並說明如何在每個支援的平台上進行整合準備。 
 
 # SDK 的功能 
 
-Android 的 Microsoft Intune App SDK 是不含外部相依性的標準  Android 程式庫。 
-SDK 的組成項目包括：  
+Android 的 Microsoft Intune App SDK 是不含外部相依性的標準  Android 程式庫。 SDK 的組成項目包括：  
 
 * **`Microsoft.Intune MAM.SDK.jar`**：在應用程式中啟用 MAM 所需的介面；除了啟用與 Microsoft Intune 公司入口網站應用程式的互通性外，還需具備此項目。 應用程式必須將其指定為 Android 程式庫參考。
 
@@ -364,6 +365,6 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO5-->
 
 

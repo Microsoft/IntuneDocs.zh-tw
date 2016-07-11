@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 建立和部署 MAM 原則 | Microsoft Intune
-description:
-keywords:
+title: "建立和部署 MAM 原則 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ ms.suite: ems
 - 未受任何 MDM 解決方案 (BYOD) 管理的裝置。
 
 如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則。
+在 Intune 管理主控台中建立的 MAM 原則無法匯入到 Azure 入口網站中。  MAM 原則必須在 Azure 入口網站中重新建立。
+
 >[!IMPORTANT]
 > 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
 
@@ -49,7 +44,8 @@ ms.suite: ems
 
     ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
+    > [!TIP]
+    > 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
 
 2.  在 [設定] 刀鋒視窗中，選擇 [應用程式原則]。  這會開啟 [應用程式原則]  刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。
 
@@ -65,7 +61,8 @@ ms.suite: ems
 
 5.  選擇 [應用程式] 開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 您可以從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 選取應用程式之後，選擇 [應用程式] 刀鋒視窗底部的 [選取] 按鈕儲存您的選擇。
 
-    > [!IMPORTANT] 您至少必須選取一個應用程式，才能建立原則。
+    > [!IMPORTANT]
+    > 您至少必須選取一個應用程式，才能建立原則。
 
 6.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 開啟 [原則設定] 刀鋒視窗。
 
@@ -108,7 +105,8 @@ ms.suite: ems
 
 只有指派 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權的使用者會受到此原則的影響。  您選取之安全性群組中的使用者若未指派 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權，則不會受到影響。
 
-如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者，  而不會影響巢狀於您選取之群組中的子群組成員。
+>[!IMPORTANT]
+> 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者，  而不會影響巢狀於您選取之群組中的子群組成員。
 
 使用者可以從應用程式市集或 Google Play 下載應用程式。 如需 MAM 如何保護裝置上公司資料的詳細逐步解說 ，請參閱[具備 MAM 功能之應用程式使用者體驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)主題。
 
@@ -167,6 +165,7 @@ ms.suite: ems
 [MAM 啟用應用程式的使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

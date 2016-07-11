@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 專案範圍 | Microsoft Intune
-description:
-keywords:
+title: "專案範圍 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -64,6 +58,14 @@ ms.suite: ems
 
 「範圍」階段的大部分心力都圍繞在規劃和準備工作上。 設定專案的範圍時，請考慮技術和組織的問題，以及使用者當前的工作方式及所需的行為變更。 首先在內心勾勒出「全局」最終目標，繼而在後續階段建立較小的目標，不偏離正軌。
 
+
+ > [!NOTE]
+ > 
+ > 在專案範圍上工作時，這些範本可能會很有幫助︰
+ > > - [Intune 或 Intune 搭配 Configuration Manager 決策範本](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [行動應用程式規劃範本](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [一般裝置管理規劃範本](https://gallery.technet.microsoft.com/General-device-management-334c3792)
+
 ### 技術支援人員
 為了讓知識工作者受益於富有生產力的 Intune 體驗，應該妥善設置技術支援人員。 設定專案的範圍時，請考慮技術支援人員在每個階段所扮演的角色，以及需要哪些資源以運用和確保技術支援人員可隨時支援使用者。
 
@@ -77,7 +79,7 @@ ms.suite: ems
 現在可開始描述長期計劃。 設定作業計劃的範圍包括了解如何管理、支援和確保技術層面和使用者整備層面保持最新狀態，而且持續達成各項目標。
 
 ## 開始執行檢查清單
-以下是開始執行專案範圍階段的步驟清單。
+以下是開始執行**專案範圍**階段的步驟清單。
 
 -   開發清楚表達的目標、成功準則和時間表，並釐清潛在的風險或障礙。
 
@@ -92,24 +94,25 @@ ms.suite: ems
 -   設法讓重要關係人核准計劃。
 
 ## 常見的挑戰
-以下是您在專案範圍階段可能遇到的一些挑戰。
+以下是您在**專案範圍**階段可能遇到的一些挑戰。
 
--   挑戰︰事後才注意到組織完備性和使用者體驗，或在初始專案範圍中未納入考量。 組織抱持「先部署再說」的觀念，導致使用和採用效果不佳。
+-   **挑戰︰**事後才注意到組織完備性和使用者體驗，或在初始專案範圍中未納入考量。 組織抱持「先部署再說」的觀念，導致使用和採用效果不佳。
 
-    緩和︰從第一天開始就配合技術部署工作來制訂首度發行和採用計劃。
+    **緩和︰**從第一天開始就配合技術部署工作來制訂首度發行和採用計劃。
 
--   挑戰︰缺乏明確定義的目標和成功度量導致模糊的結果，在問題發生時造成反作用模式。
+-   **挑戰︰**缺乏明確定義的目標和成功度量導致模糊的結果，在問題發生時造成反作用模式。
 
-    緩和︰在專案範圍的早期定義目標和度量，使用這些資料點來充實其他首度發行階段。 確定目標符合 SMART (具體、可測量、可實現、實際可行、及時的)，規劃在每個階段測量目標，確保首度發行專案未偏離正軌。
+    **緩和︰**在專案範圍的早期定義目標和度量，使用這些資料點來充實其他首度發行階段。 確定目標符合 SMART (具體、可測量、可實現、實際可行、及時的)，規劃在每個階段測量目標，確保首度發行專案未偏離正軌。
 
--   挑戰︰疏於建立、驗證及積極分享可引起組織共鳴的明確價值主張，通常會導致採用率不佳和 ROI 不足。
+-   **挑戰︰**疏於建立、驗證及積極分享可引起組織共鳴的明確價值主張，通常會導致採用率不佳和 ROI 不足。
 
-    緩和︰您可能興奮地一頭栽進專案中，請確定您有明確定義的價值溝通。 在所有認知和訓練活動中，此價值溝通有助於確保使用者了解組織為什麼選擇 Intune。
+    **緩和︰**您可能興奮地一頭栽進專案中，請確定您有明確定義的價值溝通。 在所有認知和訓練活動中，此價值溝通有助於確保使用者了解組織為什麼選擇 Intune。
 
 ### 後續步驟
 [概念證明](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

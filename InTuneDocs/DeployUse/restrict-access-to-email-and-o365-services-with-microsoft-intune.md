@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: 限制電子郵件和 O365 服務的存取 | Microsoft Intune
-description:
-keywords:
+title: "限制電子郵件和 O365 服務的存取 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# 使用 Microsoft Intune 限制電子郵件和 O365 服務的存取
+# 使用 Microsoft Intune 限制電子郵件、O365 和其他服務的存取
 您可以使用 Intune 的條件式存取來限制公司電子郵件和 O365 服務的存取。 Intune 的條件式存取功能可讓您確保只有與您所設定的規則相容的裝置，才能存取公司電子郵件和 O365 服務。
 ## 條件式存取的運作方式
 相容性原則設定用來評估裝置的相容性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 條件式存取原則與相容性原則搭配使用時，只有相容的裝置才能存取服務。
@@ -37,7 +30,7 @@ ms.suite: ems
 
 條件式存取的一般流程︰
 
-![此圖顯示用來決定允許或禁止裝置存取服務的決策點](./media/ConditionalAccess4.png)
+![此圖顯示用來決定允許或禁止裝置存取服務的決策點](../media/ConditionalAccess4.png)
 
 ## 如何設定條件式存取？
 使用條件式存取來管理 Microsoft **Exchange 內部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online** 和**商務用 Skype Online** 的存取。
@@ -67,8 +60,10 @@ ms.suite: ems
   - [建立舊版 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [建立 SharePoint Online 的條件式存取原則](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [建立商務用 Skype Online 的條件式存取原則](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [建立 Dynamics CRM Online 的條件式存取原則](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 
