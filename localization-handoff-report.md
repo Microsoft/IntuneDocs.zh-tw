@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bffeb7ae0f846e4f84d13fa7f6492ac68ea94b7b/InTuneDocs/DeployUse/add-apps.md) | OutofSyncHandedBackSuccess | [Details](#bf9066e317c0bf99d140cc703e0f308fcfd7ee3a11)
+ [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9f3bdda0f545650feab1b6a8d91b5b323415091f/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#5b32b90775670df902f4286b85f5af653029adb645)
 
 ## Item Details
-##### <a name='bf9066e317c0bf99d140cc703e0f308fcfd7ee3a11'></a> Source: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bffeb7ae0f846e4f84d13fa7f6492ac68ea94b7b/InTuneDocs/DeployUse/add-apps.md)
+##### <a name='5b32b90775670df902f4286b85f5af653029adb645'></a> Source: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9f3bdda0f545650feab1b6a8d91b5b323415091f/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/8c5c2916f09937a0b26347e180568f7946c96ec2/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.zh-tw.xlf)
-* Handoff Datetime: 2016-07-11 21:42:21
+* Handoff File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/20ffe29bd1f97b2db9c2a459cb5d5cdff7edc3a9/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.zh-tw.xlf)
+* Handoff Datetime: 2016-07-11 23:37:09
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/90ada72a154a9cb4224ba4e005c172aa3cd5d77d/InTuneDocs/DeployUse/add-apps.md)
-* Current Handback File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8b21e9e925843340102a0abbbfe3c5c7086f3b29/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.zh-tw.xlf)
-* Current Handback Datetime: 2016-07-11 12:15:42
+* Current Target File: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/0d3f3d8634d6fab0395d5e1c3c0b02db96ee54e2/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Current Handback File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/500a97fbd657823c3bddb5c24f87749dc3bc2355/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.zh-tw.xlf)
+* Current Handback Datetime: 2016-07-02 12:52:51
 * [Back to Top](#report-top)
 
 
