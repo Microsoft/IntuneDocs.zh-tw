@@ -74,6 +74,7 @@ ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
 根據外部連結的應用程式不會儲存在您的 Intune 雲端儲存空間。
 ### **應用程式商店中的受管理 iOS 應用程式**
 可讓您管理和部署 App Store 的免費 iOS 應用程式。 也能讓您關聯[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)與[相容的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)，並在管理主控台中檢閱其狀態。<br /><br />受管理 iOS 應用程式不會儲存在您的 Intune 雲端儲存空間中。
+> [!TIP]
 > [!TIP] 在您[設定行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md)為 Intune 前，無法使用行動裝置的選項。
 
 ## Intune 軟體發行者
@@ -117,6 +118,6 @@ Windows 10 電腦不需要側載金鑰即可安裝企業營運應用程式。 �
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

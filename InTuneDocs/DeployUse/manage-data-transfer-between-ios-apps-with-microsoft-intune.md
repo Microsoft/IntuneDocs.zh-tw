@@ -74,6 +74,6 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

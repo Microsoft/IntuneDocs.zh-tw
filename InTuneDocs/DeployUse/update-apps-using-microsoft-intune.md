@@ -49,6 +49,6 @@ Microsoft Intune 可協助您管理應用程式更新。 使用本主題中的�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

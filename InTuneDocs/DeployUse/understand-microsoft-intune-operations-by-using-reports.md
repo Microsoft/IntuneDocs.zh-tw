@@ -69,6 +69,6 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

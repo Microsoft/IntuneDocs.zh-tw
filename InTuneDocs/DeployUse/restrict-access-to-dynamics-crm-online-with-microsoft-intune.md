@@ -54,8 +54,10 @@ ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
 ### 步驟 2：設定及部署相容性原則
 [建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到將受此原則影響的所有裝置。 這些是目標群組中的使用者所使用的所有裝置。
 
+> [!NOTE]
 > [!NOTE]相容性原則會部署至 Microsoft Intune 群組，而條件式存取原則會以 Azure Active Directory 安全性群組為目標。
 
+> [!IMPORTANT]
 > [!IMPORTANT]如果您尚未部署相容性原則，則會將裝置視為相容。
 
 當您就緒時，請繼續執行步驟 3。
@@ -94,6 +96,6 @@ ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
