@@ -33,6 +33,6 @@ ms.openlocfilehash: d908654b30a29e3b1e3a52096767d42019af772f
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
