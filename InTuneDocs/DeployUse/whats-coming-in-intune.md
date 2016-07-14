@@ -94,6 +94,6 @@ Intune 通知規則會定義要從 Intune 傳送電子郵件警示給誰。 目�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
