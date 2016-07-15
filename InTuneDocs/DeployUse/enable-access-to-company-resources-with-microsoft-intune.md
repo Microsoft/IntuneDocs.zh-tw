@@ -55,6 +55,6 @@ Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
