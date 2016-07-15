@@ -7089,9 +7089,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\set-or-change-your-password-windows.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/8f6f597a298c2a3a90bbd7833c0e65b74d27e252/InTuneDocs/EndUser/set-or-change-your-password-windows.md)
-* Current Handback File: [set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6e29dede68809408d1bd6d656520cfb2f442b45c/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf)
-* Current Handback Datetime: 2016-07-02 19:41:57
+* Current Target File: [InTuneDocs\EndUser\set-or-change-your-password-windows.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/b2c936f71be4a3550a95b5115640876b0f002fff/InTuneDocs/EndUser/set-or-change-your-password-windows.md)
+* Current Handback File: [set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/cf1fede947b983891541b91a294a3e37c4b97082/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf)
+* Current Handback Datetime: 2016-07-15 02:40:08
 * [Back to Top](#report-top)
 
 ##### <a name='5ff8fef1340522444896c1913adb53fc60fdb88f432'></a> Source: [InTuneDocs\EndUser\set-the-amount-of-time-before-your-device-is-locked-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/set-the-amount-of-time-before-your-device-is-locked-android.md)
