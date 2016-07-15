@@ -420,10 +420,10 @@ Intune 支援行動應用程式管理 (MAM) 原則，可防止公司資料外洩
 
 >[!div class="step-by-step"]
 
->[&larr; **Intune 的新功能**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
