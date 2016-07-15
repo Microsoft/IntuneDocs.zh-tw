@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\set-or-change-your-password-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/set-or-change-your-password-windows.md) | OutofSyncHandedBackSuccess | [Details](#4c31c1300416e12cdbe1f66e74b4815f60e883d9431)
 
 ## Item Details
-##### <a name='4c31c1300416e12cdbe1f66e74b4815f60e883d9431'></a> Source: [InTuneDocs\EndUser\set-or-change-your-password-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/set-or-change-your-password-windows.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/ec1703e41a600dd58efd8c8a2875059c9ba75826/ol-handoff/Microsoft/IntuneDocs-pr.zh-tw/master/set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf)
-* Handoff Datetime: 2016-07-13 22:16:00
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\set-or-change-your-password-windows.md](https://github.com/Microsoft/IntuneDocs-pr.zh-tw/blob/b2c936f71be4a3550a95b5115640876b0f002fff/InTuneDocs/EndUser/set-or-change-your-password-windows.md)
-* Current Handback File: [set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/cf1fede947b983891541b91a294a3e37c4b97082/ol-handback/Microsoft/IntuneDocs-pr.zh-tw/master/set-or-change-your-password-windows.54fd3d03cae1c76e5e61805c86ea0241b26a26b7.zh-tw.xlf)
-* Current Handback Datetime: 2016-07-15 02:40:08
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
