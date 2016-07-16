@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 設定 Windows Phone 8.0 管理 |Microsoft Intune
-description:
-keywords:
+title: "設定 Windows Phone 8.0 管理 |Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 需要 Symantec 憑證，才能安裝 Intune 公司入口網站應用程式，並允許裝置管理。 簽署企業營運系統應用程式時也需要憑證。 下列主題僅適用於 Windows Phone 8.0。 若要管理 Windows Phone 8.1 或更新版本 (包括 Windows 10 行動裝置版)，請參閱[設定 Windows Phone 註冊](set-up-windows-phone-management-with-microsoft-intune.md)。
 
-> [!IMPORTANT]從 2016 年 9 月開始，Windows 8.0 和 Windows Phone 8.0 的公司入口網站應用程式將不再提供下載。
+> [!IMPORTANT]
+> 從 2016 年 9 月開始，Windows 8.0 和 Windows Phone 8.0 的公司入口網站應用程式將不再提供下載。
 
 -   **Windows Phone 8** - 需要憑證
 -   **Windows Phone 8.1 和 Windows 10 行動裝置版**只有在下列情況才需要憑證：
@@ -41,7 +36,8 @@ Windows Phone 8.0 需要 Symantec 憑證，才能安裝 Intune 公司入口網�
 
 ![憑證需求圖表](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] 用來管理特定 Windows 和 Windows Phone 行動裝置的 Symantec 憑證[必須定期更新](renew-a-symantec-code-signing-certificate.md)。
+  > [!IMPORTANT]
+  > 用來管理特定 Windows 和 Windows Phone 行動裝置的 Symantec 憑證[必須定期更新](renew-a-symantec-code-signing-certificate.md)。
 
 Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置。  在公司的 DNS 登錄中設定兩個 CNAME 可更容易使用註冊。 如果您的使用者將從市集下載公司入口網站應用程式，則當您設定 DNS 設定之後，您只需要設定公司入口網站並通知使用者如何註冊。  針對您要在其中部署公司入口網站的 Windows Phone 8.0 或 Windows Phone 8.1，您需要有 Symantec 憑證，才能進行應用程式的程式碼簽署。
 
@@ -186,6 +182,7 @@ Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置�
     > -   若必須側載應用程式，而且 Windows Phone 8.0 裝置必須註冊才能接收 ssp.xap，可為 ssp.xap 建立新的軟體部署，然後再使用 **解除安裝** 動作加以部署。 Windows Phone 8.0 裝置不支援強制安裝或解除安裝應用程式，因此會略過部署。 Windows Phone 8.1 裝置支援解除安裝動作，所以會移除 ssp.xap。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

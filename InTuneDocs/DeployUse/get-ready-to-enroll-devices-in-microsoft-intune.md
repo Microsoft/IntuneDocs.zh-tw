@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 準備註冊裝置 | Microsoft Intune
-description:
-keywords:
+title: "準備註冊裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
@@ -48,7 +42,8 @@ MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權�
 
 Intune 公司入口網站是使用者存取公司資料並可以執行一般工作的位置，如註冊裝置、安裝應用程式，以及找到向 IT 尋求協助的資訊。
 
-> [!TIP] 當您自訂公司入口網站時，這些設定會同時套用到公司入口網站和公司入口網站應用程式。
+> [!TIP]
+> 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
 
 自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)，並選擇 [管理員] &gt; [公司入口網站]，然後進行公司入口網站設定。
 
@@ -113,6 +108,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
  - [使用 IMEI 數字指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)協助註冊裝置和目標原則
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android 和 Samsung KNOX 設定原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Android 和 Samsung KNOX 設定原則設定 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ ms.suite: ems
 |**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|防止重複使用先前用過的密碼。|是|是|
 |**密碼品質**|選取所需的密碼複雜性等級以及是否可以使用生物識別裝置。|是|是|
 |**允許指紋解除鎖定**|允許使用指紋以解除鎖定裝置。|否|是|
+|**允許 Smart Lock 和其他信任代理程式**<br>(Android 5 及更新版本)|讓您在相容的 Android 裝置上控制 Smart Lock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。 您可以使用此設定來防止使用者設定 Smart Lock。|是|否|
 
 ### 加密設定
 
@@ -73,7 +68,7 @@ ms.suite: ems
 
 ### 雲端設定 – 文件和資料
 
-|設定名稱|詳細資料|Android 和 Samsung KNOX|Android 4.0+|
+|設定名稱|詳細資料|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**允許 Google 備份**|允許使用 Google 備份。|否|是|
 
@@ -95,7 +90,7 @@ ms.suite: ems
 
 ### 應用程式設定 - 應用程式
 
-|設定名稱|Android 4.0+|Samsung KNOX|
+|設定名稱|詳細資料|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**允許 Google Play 商店**|允許使用者存取裝置上的 Google Play 市集。|否|是|
 
@@ -179,7 +174,8 @@ ms.suite: ems
 
 此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。
 
-> [!NOTE]目前，Android 自訂原則只支援包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。
+> [!NOTE]
+> Android 自訂原則目前只支援針對包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。
 
 ### 一般設定
 
@@ -257,6 +253,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

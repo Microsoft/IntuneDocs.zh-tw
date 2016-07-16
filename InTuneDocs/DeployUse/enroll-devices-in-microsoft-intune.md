@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 註冊裝置 | Microsoft Intune
-description:
-keywords:
+title: "註冊裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
+ms.openlocfilehash: 930cbc806d8fd1185cf33fd64d866b88ec9a6a04
+
 
 ---
 
@@ -33,6 +27,73 @@ Microsoft Intune 行動裝置管理 (MDM) 會使用註冊來管理裝置，並�
 Intune 可以管理下列裝置平台︰
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## 裝置註冊方法概觀
+
+下表顯示公司裝置的註冊方法與其優點。
+
+**iOS 註冊方法**
+
+| **方法** |  **[抹除](#Wipe)** | **[親和性](#Affinity)**   |   **[Locked](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | 否|    是 |   否 |
+|**[DEM](#DEM)**|   否 |否 |否  |
+|**[DEP](#DEP)**|   是 |   Opt |   Opt|
+|**[USB-SA](#USB-SA)**| 是 |   Opt |   否|
+|**[USB-Direct](#USB-Direct)**| 否 |    否  | 否|
+
+**Windows 和 Android 註冊方法**
+
+| **方法** |  **[抹除](#Wipe)** | **[親和性](#Affinity)**   |   **[Locked](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | 否|    是 |   否 |
+|**[DEM](#DEM)**|   否 |否 |否  |
+
+**公司裝置的註冊方法**
+
+### BYOD
+「攜帶您自己的裝置。」 使用者安裝公司入口網站應用程式，並註冊其裝置。 使用公司入口網站註冊裝置，將工作場所加入裝置。 需要有 Apple ID，才能使用公司入口網站註冊 iOS 裝置。 BYOD 不需要額外設定公司裝置。 請參閱[設定裝置管理](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)的步驟。 ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEM
+裝置註冊管理員。 系統管理員會建立 DEM 帳戶來管理公司擁有的裝置。 管理員接著可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)。 ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEP
+Apple 裝置註冊方案。 系統管理員會建立原則，並將原則透過網路部署到使用 DEP 所購買和管理之屬公司擁有的 iOS 裝置。 使用者執行 iOS Setup Assistant 時，會註冊裝置。 這種方法支援 [iOS 受監督] (iOS Supervised) 模式，其接著會啟用：
+  - 已鎖定註冊
+  - 條件式存取
+  - 破解偵測
+  - 行動應用程式管理
+
+深入了解 [DEP](ios-device-enrollment-program-in-microsoft-intune.md)。 ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-SA
+USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 屬公司擁有的 USB 連接裝置是使用 Intune 原則所準備。 系統管理員必須手動註冊每個裝置。 使用者會接收其裝置，並且執行 Setup Assistant 以註冊其裝置。 這種方法支援 [iOS 受監督] (iOS Supervised) 模式，其接著會啟用：
+  - 條件式存取
+  - 破解偵測
+  - 行動應用程式管理
+
+深入了解 [使用 Apple Configurator 進行 Setup Assistant 註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)。 ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-Direct
+直接註冊。 系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 屬公司擁有的 USB 連接裝置可直接註冊，不需要重設成出廠預設值。 系統管理員必須手動註冊每個裝置。 裝置會以無使用者裝置形式進行管理。 它們未鎖定或未受監督，並且不支援條件式存取、破解偵測和行動應用程式管理。 深入了解[使用 Apple Configurator 直接註冊](ios-direct-enrollment-in-microsoft-intune.md)。 ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+**公司行動裝置的行為**
+
+### 抹除
+指定註冊裝置是否需要將裝置重設成出廠預設值、移除裝置中的所有資料，並將它回復為原始狀態。
+([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### 親和性
+指定註冊方法是否支援將裝置與特定使用者連接的「使用者親和性」。 不論是否有使用者親和性，都可以註冊 “Opt” 裝置。 需要有使用者親和性，才能支援下項項目︰
+  - 行動應用程式管理 (MAM) 應用程式
+  - 對電子郵件和公司資料進行條件式存取
+  - 公司入口網站應用程式
+
+([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
+
+### 鎖定
+指定是否可以鎖定裝置以防止使用者移除 Intune 原則，以有效地移除裝置不進行管理。 針對 iOS 裝置，鎖定裝置時需要裝置處於受監督模式。
+([回到表格](#overview-of-corporate-owned-device-enrollment-methods)) ([回到表格](#overview-of-corporate-owned-device-enrollment-methods))
 
 ## 啟用裝置註冊  
  註冊可讓使用者在其個人裝置上存取公司資源，並讓系統管理員確保這些裝置遵守保護公司資源的原則。 這是使用 Intune 啟用「攜帶您自己的裝置」案例的最佳方式。 系統管理員必須在 Intune 主控台中啟用註冊，可能需要與裝置建立信任關係，並將授權指派給使用者。 接著會註冊裝置，通常由使用者輸入其公司或學校認證完成。 裝置隨後會從 Intune 接收原則，並取得資源的存取權。
@@ -64,6 +125,7 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 [使用 Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

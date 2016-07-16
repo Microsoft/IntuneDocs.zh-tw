@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的行動裝置管理功能 | Microsoft Intune
-description:
-keywords:
+title: "行動裝置管理功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # Microsoft Intune 的行動裝置管理功能
 
-Microsoft Intune 可讓您向服務註冊某個範圍的裝置來管理這些裝置。 使用者接著可以使用公司入口網站來執行各種作業，例如註冊其裝置、瀏覽及安裝應用程式、確定他們的裝置與公司原則相容，及連絡其 IT 支援。
+Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些裝置。 使用者接著可以使用*公司入口網站*來執行各種作業，例如註冊其裝置、瀏覽及安裝應用程式、確定他們的裝置與公司原則相容，及連絡其 IT 支援。
 本主題提供註冊裝置提供之功能的完整清單。
 
 管理、清查、應用程式部署、佈建，以及停用皆透過 Intune 管理主控台來處理。 使用者存取公司入口網站來安裝應用程式、註冊及移除裝置，以及協助連絡其 IT 部門或技術服務人員。
@@ -66,12 +60,14 @@ Microsoft Intune 可讓您向服務註冊某個範圍的裝置來管理這些裝
 
 |功能|詳細資料|詳細資訊|
 |--------------|-----------|--------------------|
-|清查和報告|尋找您管理的裝置及裝置所用軟體的相關資訊。<br /><br />您可以透過數種方式篩選這些報表 (例如裝置平台)，以及裝置是否與公司標準相容。|[透過報表來了解 Microsoft Intune 作業](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|清查和報告|尋找您管理的裝置及裝置所用軟體的相關資訊。|[在 Microsoft Intune 透過清查了解您的裝置](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### 請參閱
-[Microsoft Intune 的 Windows 電腦管理功能](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Microsoft Intune 的 Windows 電腦管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

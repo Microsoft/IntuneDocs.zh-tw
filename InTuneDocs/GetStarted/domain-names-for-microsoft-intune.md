@@ -1,48 +1,69 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的網域名稱 | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+title: "Microsoft Intune 的網域名稱 | Microsoft Intune"
+description: 
+keywords: 
+author: andredm7
+manager: swadhwa
+ms.date: 06/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3d99669f90fe7ebec7854b7a800b09b0685c314e
+ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
+
 
 ---
 
 
 
-# Microsoft Intune 的網域名稱
+# 使用 Microsoft Intune 管理自訂網域
 
-設定 Microsoft Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)列示的其他需求
+新增並驗證自訂網域的步驟也可以[在 Azure Active Directory 中執行](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/)。
 
-當貴組織註冊 Intune 等的 Microsoft 雲端式服務時，您會取得如下所示的初始網域名稱：contoso.onmicrosoft.com。 在這個範例中，contoso 是您註冊時選擇的名稱，而 onmicrosoft.com 則是指派給新增至訂閱之帳戶的尾碼。 完成註冊程序之後，您便無法變更該網域名稱。 不過，身為全域管理員，您可以新增自己的自訂網域名稱供貴組織用於服務，或者您可以移除先前新增的網域。
+當貴組織註冊 Intune 等的 Microsoft 雲端式服務時，您會取得如下所示的初始網域名稱，且它會裝載在 Azure Active Directory 中：**contoso.onmicrosoft.com**。 在這個範例中，**yourdomain** 是您註冊時選擇的網域名稱，而 **onmicrosoft.com** 則是指派給新增至您訂閱中的帳戶尾碼。
 
-根據預設，當您使用 onmicrosoft 網域時，您匯入的每個使用者的使用者主要名稱 (UPN) 都會收到 onmicrosoft.com 尾碼。
+您無法重新命名或移除該初始網域名稱。 不過，您可以新增、驗證或移除自己的自訂網域名稱，以搭配 Intune 使用，這對於您想要保留企業識別很有幫助。
 
-若要使用個人擁有的網域名稱，而非註冊時提供的名稱，可以將該個人網域名稱新增至 Azure Active Directory。 在您新增網域且系統已驗證您擁有該網域之後，您可以透過在 DNS 託管服務提供者變更 DNS 　資源記錄，以建立包含該網域名稱的帳戶和群組。 當您計劃使用自訂網域時，為了簡化使用者帳戶的管理，在開始從本機 Active Directory 同步處理使用者之前，請先設定自訂網域名稱到您的訂閱。
+## 新增並驗證您的自訂網域 
 
-設定 Intune 的網域名稱和 DNS 資源記錄會與其他 Azure Active Directory 租用戶相同。 如需相關指示，請參閱[使用 Azure Active Directory 新增自訂網域名稱來簡化登入](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)。
+1. 移至 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx) 並登入您的系統管理員帳戶。
+    > [!IMPORTANT]
+    > 請參閱     [Intune 帳戶入口網站已與 Office 365 管理入口網站合併](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365)公告，以取得管理 Microsoft Intune 使用者、群組和網域的位置的詳細資訊。
+2. 在瀏覽窗格中，選擇 [設定] &gt; [網域]。
+3. 選擇 [新增網域]，然後輸入您的自訂網域名稱。
+4. [驗證網域] 對話方塊隨即開啟，提供您在 DNS 主機服務提供者中建立 TXT 記錄用的值。
+    > [!TIP]
+    > 在使用 GoDaddy 網域時，Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 您輸入認證，並接受網域變更權限合約之後，會自動建立 TXT 記錄。
+    > 
+    > 或者，您可以根據在這個步驟中所提供的值，[在使用 GoDaddy 網域時手動建立 TXT 記錄](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US)。
+
+    > [!NOTE]
+    > 請遵循[逐步指示](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify)以根據在這個步驟中所提供的值，在使用 Register.com 網域時建立 TXT 記錄。
+
+5. 請務必建立 DNS 別名 (CNAME) 以進行 [Windows 裝置註冊](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)，同時在 DNS 主機服務提供者中進行變更。
+
+在混合式雲端案例中，新增自訂網域名稱，並且已驗證您的組織擁有它之後，您可以維持在內部部署 Active Directory 中管理使用者帳戶，然後與 Azure AD 同步。
+
+## 同步處理內部部署使用者與 Azure AD##
+
+1. 在內部部署 Active Directory 中，為自訂網域[新增 UPN 尾碼](https://technet.microsoft.com/en-us/library/cc772007.aspx)。
+2. 為您打算匯入的內部部署使用者設定新的 UPN 尾碼。
+3. 執行 [Azure AD Connect 同步處理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)，以便與 Azure AD 整合您的內部部署使用者。
+4. 順利同步處理使用者帳戶資訊之後，您便可以使用 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)來指派 Microsoft Intune 授權。
 
 ### 請參閱
-[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
+
+[關於 Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+
+[開始使用 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

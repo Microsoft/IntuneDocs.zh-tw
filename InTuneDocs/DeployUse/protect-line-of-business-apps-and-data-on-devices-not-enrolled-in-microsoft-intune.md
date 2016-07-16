@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 保護未註冊裝置上的企業營運應用程式和資料 | Microsoft Intune
-description:
-keywords:
+title: "保護未註冊裝置上的企業營運應用程式和資料 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ ms.suite: ems
 * 對於未受到任何 MDM 解決方案管理的裝置，您需要自訂解決方案。 使用者必須在其裝置上下載並安裝應用程式。
 
 ## 變更中繼資料
-如果您需要變更應用程式詳細資料 (如應用程式名稱或配套識別碼)，您必須[移除應用程式](#remove-apps)，並使用新的中繼資料來[新增應用程式](#add-the-app)。
+如果您需要變更應用程式詳細資料 (如應用程式名稱或配套識別碼)，您必須[移除應用程式](#remove-apps)，並使用新的中繼資料來[新增應用程式](#step-2-add-the-app)。
 
 ##  移除應用程式
 您可以從應用程式清單中移除企業營運應用程式。  這會從清單中移除應用程式，並移除與 MAM 原則的關聯，但不會從使用者裝置中移除或解除安裝應用程式。  
@@ -80,6 +73,7 @@ ms.suite: ems
   這會從企業營運應用程式清單以及 MAM 原則的目標應用程式清單中移除應用程式。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 自訂公司入口網站 | Microsoft Intune
-description:
-keywords:
+title: "自訂公司入口網站 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -29,9 +23,10 @@ ms.suite: ems
 # 自訂公司入口網站
 [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] 是使用者存取公司資料並可以執行一般工作的位置，如註冊裝置、安裝應用程式，以及找到向 IT 尋求協助的資訊。
 
+> [!TIP]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，選擇 [管理員]  &gt;  [公司入口網站]，並進行公司入口網站設定。
+自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)，並選擇 [管理員] &gt; [公司入口網站]，然後進行公司入口網站設定。
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -43,7 +38,7 @@ ms.suite: ems
     |公司名稱|40|這是顯示為公司入口網站標題的名稱。|
     |IT 部門連絡人姓名|40|此姓名會顯示在 [連絡 IT] 頁面中。|
     |IT 部門電話號碼|20|此連絡電話號碼會顯示在 [連絡 IT] 頁面中。|
-    |IT 部門電子郵件地址|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 alias@domainname.com|
+    |IT 部門電子郵件地址|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|
     |其他資訊|120|顯示在 [連絡 IT] 頁面中。|
     |公司隱私權聲明 URL|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須使用 https://www.contoso.com 格式輸入有效的 URL。|
 
@@ -68,12 +63,13 @@ ms.suite: ems
 儲存變更之後，您可以使用管理主控台之 [公司入口網站] 頁面下方提供的連結，檢視公司入口網站。 這些連結無法變更。 當使用者登入時，這些連結會顯示您在公司入口網站的訂閱。
 
 ### 後續步驟
-恭喜！ 您剛完成 Intune 快速入門指南的步驟 7
+恭喜！ 您剛完成 *Intune 快速入門指南*的步驟 7。
 >[!div class="step-by-step"]
 
->[&larr; 建立原則和應用程式](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [註冊裝置 &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **建立原則和應用程式**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**註冊裝置** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

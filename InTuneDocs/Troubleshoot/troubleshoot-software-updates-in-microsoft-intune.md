@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 軟體更新疑難排解 | Microsoft Intune
-description:
-keywords:
+title: "軟體更新疑難排解 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
+ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+
 
 ---
 
@@ -30,7 +24,9 @@ ms.suite: ems
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
-下表列出 intune 更新代理程式錯誤碼。 如果您在這份表格中找不到特定錯誤碼，請參閱 [Windows Update Agent Result Codes (Windows Update 代理程式結果代碼)](http://go.microsoft.com/fwlink/?LinkID=221542)
+## 更新代理程式錯誤碼
+
+下表列出 intune **更新代理程式**錯誤碼。 如果您在這份表格中找不到特定錯誤碼，請參閱 [Windows Update Agent Result Codes (Windows Update 代理程式結果代碼)](http://go.microsoft.com/fwlink/?LinkID=221542)。
 
 |錯誤碼|符號名稱|詳細資訊|
 |--------------|-----------------|--------------------|
@@ -77,7 +73,7 @@ ms.suite: ems
 |**0x80cf002C**|OM_E_BIN_SOURCE_ABSENT|無法安裝 Delta 壓縮格式的更新，因為這種更新需要來源。|
 |**0x80cf002D**|OM_E_SOURCE_ABSENT|無法安裝完整檔案更新，因為這種更新需要來源。|
 |**0x80cf002E**|OM_E_WU_DISABLED|不允許存取未受管理的伺服器。|
-|**0x80cf002F**|OM_E_CALL_CANCELLED_BY_POLICY|已設定 DisableWindowsUpdateAccess 原則，因此無法完成操作。|
+|**0x80cf002F**|OM_E_CALL_CANCELLED_BY_POLICY|已設定 **DisableWindowsUpdateAccess** 原則，因此無法完成操作。|
 |**0x80cf0030**|OM_E_INVALID_PROXY_SERVER|Proxy 清單格式無效。|
 |**0x80cf0031**|OM_E_INVALID_FILE|檔案的格式錯誤。|
 |**0x80cf0032**|OM_E_INVALID_CRITERIA|搜尋條件字串無效。|
@@ -139,39 +135,39 @@ ms.suite: ems
 |**0x80cf3FFD**|OM_E_NON_UI_MODE|在非 UI 模式下無法顯示 UI。 可能未安裝 Windows Update 用戶端 UI 模組。|
 |**0x80cf3FFE**|OM_E_WUCLTUI_UNSUPPORTED_VERSION|不支援 WU 用戶端 UI 已匯出的函數版本。|
 |**0x80cf3FFF**|OM_E_AUCLIENT_UNEXPECTED|發生另一個 OM_E_AUCLIENT_&#42; 錯誤碼未涵蓋的使用者介面錯誤。|
-|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|與 SOAPCLIENT_SOAPFAULT 相同。 SOAP 用戶端失敗，因為發生 OM_E_PT_SOAP_&#42; 錯誤碼類型的 SOAP 錯誤。|
-|**0x80cf4008**|OM_E_PT_SOAPCLIENT_PARSEFAULT|與 SOAPCLIENT_PARSEFAULT_ERROR 相同。  SOAP 用戶端無法剖析 SOAP 錯誤。|
-|**0x80cf400A**|OM_E_PT_SOAPCLIENT_PARSE|與 SOAPCLIENT_PARSE_ERROR 相同。  SOAP 用戶端無法剖析伺服器傳來的回應。|
-|**0x80cf400B**|OM_E_PT_SOAP_VERSION|與 SOAP_E_VERSION_MISMATCH 相同。 SOAP 用戶端找到 SOAP 封套無法辨識的命名空間。|
-|**0x80cf400C**|OM_E_PT_SOAP_MUST_UNDERSTAND|與 SOAP_E_MUST_UNDERSTAND 相同。 SOAP 用戶端無法解譯標頭。|
-|**0x80cf400D**|OM_E_PT_SOAP_CLIENT|與 SOAP_E_CLIENT 相同。 SOAP 用戶端發現訊息格式錯誤。 請更正後再重新傳送。|
-|**0x80cf400E**|OM_E_PT_SOAP_SERVER|與 SOAP_E_SERVER 相同。 因為發生伺服器錯誤，所以無法處理 SOAP 訊息。 請稍後再重新傳送。|
+|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|與 **SOAPCLIENT_SOAPFAULT** 相同。 SOAP 用戶端失敗，因為發生 **OM_E_PT_SOAP_&#42;** 錯誤碼類型的 SOAP 錯誤。|
+|**0x80cf4008**|OM_E_PT_SOAPCLIENT_PARSEFAULT|與 **SOAPCLIENT_PARSEFAULT_ERROR** 相同。  SOAP 用戶端無法剖析 SOAP 錯誤。|
+|**0x80cf400A**|OM_E_PT_SOAPCLIENT_PARSE|與 **SOAPCLIENT_PARSE_ERROR** 相同。  SOAP 用戶端無法剖析伺服器傳來的回應。|
+|**0x80cf400B**|OM_E_PT_SOAP_VERSION|與 **SOAP_E_VERSION_MISMATCH** 相同。 SOAP 用戶端找到 SOAP 封套無法辨識的命名空間。|
+|**0x80cf400C**|OM_E_PT_SOAP_MUST_UNDERSTAND|與 **SOAP_E_MUST_UNDERSTAND** 相同。 SOAP 用戶端無法解譯標頭。|
+|**0x80cf400D**|OM_E_PT_SOAP_CLIENT|與 **SOAP_E_CLIENT** 相同。 SOAP 用戶端發現訊息格式錯誤。 請更正後再重新傳送。|
+|**0x80cf400E**|OM_E_PT_SOAP_SERVER|與 **SOAP_E_SERVER** 相同。 因為發生伺服器錯誤，所以無法處理 SOAP 訊息。 請稍後再重新傳送。|
 |**0x80cf4010**|OM_E_PT_EXCEEDED_MAX_SERVER_TRIPS|來回往返伺服器的次數已超過上限。|
 |**0x80cf4012**|OM_E_PT_DOUBLE_INITIALIZATION|初始化作業失敗，因為物件已完成初始化。|
 |**0x80cf4013**|OM_E_PT_INVALID_COMPUTER_NAME|無法判斷電腦名稱。|
 |**0x80cf4015**|OM_E_PT_REFRESH_CACHE_REQUIRED|伺服器的回覆指出伺服器已變更或 Cookie 無效。 請重新整理內部快取後再重試。|
-|**0x80cf4016**|OM_E_PT_HTTP_STATUS_BAD_REQUEST|與 HTTP 狀態 400 相同。 伺服器無法處理要求，因為語法無效。|
-|**0x80cf4017**|OM_E_PT_HTTP_STATUS_DENIED|與 HTTP 狀態 401 相同。 要求的資源需要進行使用者驗證。|
-|**0x80cf4018**|OM_E_PT_HTTP_STATUS_FORBIDDEN|與 HTTP 狀態 403 相同。 伺服器瞭解要求，但拒絕執行要求。|
-|**0x80cf4019**|OM_E_PT_HTTP_STATUS_NOT_FOUND|與 HTTP 狀態 404 相同。 伺服器找不到要求的 URI (統一資源識別項)。|
-|**0x80cf401A**|OM_E_PT_HTTP_STATUS_BAD_METHOD|與 HTTP 狀態 405 相同。 不允許 HTTP 方法。|
-|**0x80cf401B**|OM_E_PT_HTTP_STATUS_PROXY_AUTH_REQ|與 HTTP 狀態 407 相同。 需要 Proxy 驗證。|
-|**0x80cf401C**|OM_E_PT_HTTP_STATUS_REQUEST_TIMEOUT|與 HTTP 狀態 408 相同。 伺服器要求等待逾時。|
-|**0x80cf401D**|OM_E_PT_HTTP_STATUS_CONFLICT|與 HTTP 狀態 409 相同。 無法完成要求，因為與資源目前的狀態衝突。|
-|**0x80cf401E**|OM_E_PT_HTTP_STATUS_GONE|與 HTTP 狀態 410 相同。 伺服器不再提供要求的資源。|
-|**0x80cf401F**|OM_E_PT_HTTP_STATUS_SERVER_ERROR|與 HTTP 狀態 500 相同。 伺服器內部錯誤導致要求無法執行。|
-|**0x80cf4020**|OM_E_PT_HTTP_STATUS_NOT_SUPPORTED|與 HTTP 狀態 500 相同。 伺服器不支援執行要求所需的功能。|
-|**0x80cf4021**|OM_E_PT_HTTP_STATUS_BAD_GATEWAY|與 HTTP 狀態 502 相同。 作為閘道或 Proxy 的伺服器從它在嘗試執行要求時所存取的上游伺服器收到無效的回應。|
-|**0x80cf4022**|OM_E_PT_HTTP_STATUS_SERVICE_UNAVAIL|與 HTTP 狀態 503 相同。 服務暫時超載。|
-|**0x80cf4023**|OM_E_PT_HTTP_STATUS_GATEWAY_TIMEOUT|與 HTTP 狀態 503 相同。 等待閘道時，要求逾時。|
-|**0x80cf4024**|OM_E_PT_HTTP_STATUS_VERSION_NOT_SUP|與 HTTP 狀態 505 相同。 伺服器不支援用於要求的 HTTP 通訊協定版本。|
+|**0x80cf4016**|OM_E_PT_HTTP_STATUS_BAD_REQUEST|與 **HTTP 狀態 400** 相同。 伺服器無法處理要求，因為語法無效。|
+|**0x80cf4017**|OM_E_PT_HTTP_STATUS_DENIED|與 **HTTP 狀態 401** 相同。 要求的資源需要進行使用者驗證。|
+|**0x80cf4018**|OM_E_PT_HTTP_STATUS_FORBIDDEN|與 **HTTP 狀態 403** 相同。 伺服器瞭解要求，但拒絕執行要求。|
+|**0x80cf4019**|OM_E_PT_HTTP_STATUS_NOT_FOUND|與 **HTTP 狀態 404** 相同。 伺服器找不到要求的 URI (統一資源識別項)。|
+|**0x80cf401A**|OM_E_PT_HTTP_STATUS_BAD_METHOD|與 **HTTP 狀態 405** 相同。 不允許 HTTP 方法。|
+|**0x80cf401B**|OM_E_PT_HTTP_STATUS_PROXY_AUTH_REQ|與 **HTTP 狀態 407** 相同。 需要 Proxy 驗證。|
+|**0x80cf401C**|OM_E_PT_HTTP_STATUS_REQUEST_TIMEOUT|與 **HTTP 狀態 408** 相同。 伺服器要求等待逾時。|
+|**0x80cf401D**|OM_E_PT_HTTP_STATUS_CONFLICT|與 **HTTP 狀態 409** 相同。 無法完成要求，因為與資源目前的狀態衝突。|
+|**0x80cf401E**|OM_E_PT_HTTP_STATUS_GONE|與 **HTTP 狀態 410** 相同。 伺服器不再提供要求的資源。|
+|**0x80cf401F**|OM_E_PT_HTTP_STATUS_SERVER_ERROR|與 **HTTP 狀態 500** 相同。 伺服器內部錯誤導致要求無法執行。|
+|**0x80cf4020**|OM_E_PT_HTTP_STATUS_NOT_SUPPORTED|與 **HTTP 狀態 500** 相同。 伺服器不支援執行要求所需的功能。|
+|**0x80cf4021**|OM_E_PT_HTTP_STATUS_BAD_GATEWAY|與 **HTTP 狀態 502** 相同。 作為閘道或 Proxy 的伺服器從它在嘗試執行要求時所存取的上游伺服器收到無效的回應。|
+|**0x80cf4022**|OM_E_PT_HTTP_STATUS_SERVICE_UNAVAIL|與 **HTTP 狀態 503** 相同。 服務暫時超載。|
+|**0x80cf4023**|OM_E_PT_HTTP_STATUS_GATEWAY_TIMEOUT|與 **HTTP 狀態 503** 相同。 等待閘道時，要求逾時。|
+|**0x80cf4024**|OM_E_PT_HTTP_STATUS_VERSION_NOT_SUP|與 **HTTP 狀態 505** 相同。 伺服器不支援用於要求的 HTTP 通訊協定版本。|
 |**0x80cf4025**|OM_E_PT_FILE_LOCATIONS_CHANGED|由於檔案位置變更導致作業失敗。 請重新整理內部狀態後再重新傳送。|
 |**0x80cf4027**|OM_E_PT_NO_AUTH_PLUGINS_REQUESTED|伺服器傳回空白的驗證資訊清單。|
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|代理程式無法建立任何有效的驗證 Cookie。|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|設定內容值不正確。|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|遺漏設定內容值。|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|無法完成 HTTP 要求，且原因沒有對應到任何 OM_E_PT_HTTP_&#42; 錯誤碼。|
-|**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|與 ERROR_WINHTTP_NAME_NOT_RESOLVED 相同。 無法解析 Proxy 伺服器或目的地伺服器名稱。|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|無法完成 HTTP 要求，且原因沒有對應到任何 **OM_E_PT_HTTP_&#42;** 錯誤碼。|
+|**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|與 **ERROR_WINHTTP_NAME_NOT_RESOLVED** 相同。 無法解析 Proxy 伺服器或目的地伺服器名稱。|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|外部 .cab 檔處理完成，但發生一些錯誤。|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|外部 .cab 處理器初始化尚未完成。|
 |**0x80cf4031**|OM_E_PT_ECP_INVALID_FILE_FORMAT|中繼資料檔案的格式無效。|
@@ -179,7 +175,7 @@ ms.suite: ems
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|無法從外部 .cab 檔擷取檔案摘要。|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|無法解壓縮外部 .cab 檔。|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|外部 .cab 處理器無法取得檔案位置。|
-|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|發生另一個 OM_E_PT_&#42; 錯誤碼未涵蓋的通訊錯誤。|
+|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|發生另一個 **OM_E_PT_&#42;** 錯誤碼未涵蓋的通訊錯誤。|
 |**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|無法完成下載管理員作業，因為要求的檔案沒有 URL。|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|無法完成下載管理員作業，因為無法辨識檔案摘要。|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|無法完成下載管理員作業，因為檔案中繼資料要求的雜湊演算法無法辨識。|
@@ -189,7 +185,7 @@ ms.suite: ems
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|下載管理員作業失敗，因為發生未指定的背景智慧型傳送服務 (BITS) 傳輸錯誤。|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|必須重新啟動下載，因為下載來源位置已經變更。|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|必須重新啟動下載，因為新修訂中的更新內容已經變更。|
-|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|發生另一個 OM_E_DM_&#42; 錯誤碼未涵蓋的下載管理員錯誤。|
+|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|發生另一個 **OM_E_DM_&#42;** 錯誤碼未涵蓋的下載管理員錯誤。|
 |**0x80cf7003**|OM_E_INVALID_EVENT_PAYLOAD|指定的事件承載量無效。|
 |**0x80cf7004**|OM_E_INVALID_EVENT_PAYLOADSIZE|提交的事件承載量大小無效。|
 |**0x80cf7005**|OM_E_SERVICE_NOT_REGISTERED|尚未登錄此服務。|
@@ -221,13 +217,13 @@ ms.suite: ems
 |**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|目前資料存放區的架構與備份 XML 文件中表格的架構不相符。|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|資料存放區需要重設工作階段。 請釋放工作階段，並使用新的工作階段再試一次。|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|無法完成資料存放區作業，因為要求作業時使用的是模擬身分識別。|
-|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|發生另一個 OM_E_DS_&#42; 代碼未涵蓋的資料存放區錯誤。|
+|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|發生另一個 **OM_E_DS_&#42;** 代碼未涵蓋的資料存放區錯誤。|
 |**0x80cfA000**|OM_E_AU_NOSERVICE|自動更新無法處理傳入的要求。|
 |**0x80cfA004**|OM_E_AU_PAUSED|自動更新已暫停，因此無法處理傳入的要求。|
 |**0x80cfA005**|OM_E_AU_NO_REGISTERED_SERVICE|尚未向自動服務登錄任何未受管理的服務。|
 |**0x80cfA006**|OM_E_AU_DETECT_SVCID_MISMATCH|在搜尋過程中，向自動服務登錄的預設服務發生變更。|
 |**0x80cfA007**|OM_E_AU_ALREADY_PROMPTING_FOR_REBOOT|自動更新已提示使用者重新啟動。|
-|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|發生另一個 OM_E_AU &#42; 代碼未涵蓋的自動更新錯誤。|
+|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|發生另一個 **OM_E_AU &#42;** 代碼未涵蓋的自動更新錯誤。|
 |**0x80cfE001**|OM_E_EE_UNKNOWN_EXPRESSION|無法完成運算式評估工具作業，因為無法辨識運算式。|
 |**0x80cfE002**|OM_E_EE_INVALID_EXPRESSION|無法完成運算式評估工具作業，因為運算式無效。|
 |**0x80cfE003**|OM_E_EE_MISSING_METADATA|無法完成運算式評估工具作業，因為運算式包含不正確的中繼資料節點數目。|
@@ -235,7 +231,7 @@ ms.suite: ems
 |**0x80cfE005**|OM_E_EE_NOT_INITIALIZED|無法初始化運算式評估工具。|
 |**0x80cfE006**|OM_E_EE_INVALID_ATTRIBUTEDATA|無法完成運算式評估工具作業，因為屬性無效。|
 |**0x80cfE007**|OM_E_EE_CLUSTER_ERROR|無法完成運算式評估工具作業，因為無法判斷電腦的叢集狀態。|
-|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|發生另一個 OM_E_EE_&#42; 錯誤碼未涵蓋的運算式評估工具錯誤。|
+|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|發生另一個 **OM_E_EE_&#42;** 錯誤碼未涵蓋的運算式評估工具錯誤。|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|事件快取檔案已損壞。|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|無法剖析事件命名空間描述元中的 XML。|
 |**0x80cfF003**|OM_E_INVALID_EVENT|事件命名空間描述元中的 XML 無效。|
@@ -245,29 +241,30 @@ ms.suite: ems
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|已取消下載。|
 
 ## 包含大量被取代更新的 Windows 7 電腦會停止回報到 Microsoft Intune 主控台
-問題︰您可能會遇到下列情況，Microsoft Intune 用戶端遇到一或多個下列症狀︰
+**問題**︰您可能會遇到下列情況，Microsoft Intune 用戶端遇到一或多個下列症狀︰
 - 它們突然停止回報到 Microsoft 管理主控台。  
 - 它們經歷高 CPU 使用率。
 - 透過 Intune 入口網站安裝應用程式時，它們會緩慢安裝。 
-- Microsoft Intune Center 會觸發下列錯誤︰更新您的電腦時發生錯誤。找到錯誤︰錯誤碼 0x800705b4
-- 在 [Intune 管理主控台] > [群組] > [所有裝置] 下的 [狀態] 欄位會顯示︰安裝至這台電腦的一或多個代理程式發生錯誤。此電腦的資訊可能不精確或者不是最新狀態
+- Microsoft Intune Center 會觸發下列錯誤︰*更新您的電腦時發生錯誤。找到錯誤︰錯誤碼 0x800705b4*。
+- 在 [Intune 管理主控台] > [群組] > [所有裝置] 下的 [狀態] 欄位會顯示︰*安裝至這台電腦的一或多個代理程式發生錯誤。此電腦的資訊可能不精確或者不是最新狀態*。
 
 如果被取代的更新 (已被其他更新取代的更新) 未長時間拒絕，就可能會發生此問題。 在某些處理程序期間，例如安裝應用程式時，Windows 會依照順序檢查所有被取代的更新，以便更新和其後續更新可以正確對應。 如果被取代的更新清單成長至過大，這項檢查工作可能會因為處理負載和所需時間而導致高 CPU 使用率。 這由於可供 Windows 7 使用的大量被取代更新，個問題主要會影響正在執行 Windows 7 的用戶端。 Windows 8 和更新版的作業系統沒有這麼多可用的被取代更新，因此不容易發生此問題。
 
-解決方式：若要解決此問題，請遵循下列步驟：
-1. 登入 [Intune 管理主控台](https://manage.microsoft.com)
-2. 選取 [更新]  >  [所有更新]
+**解決方式**：若要解決此問題，請遵循下列步驟：
+1. 登入 [Intune 管理主控台](https://manage.microsoft.com)。
+2. 選取 **[更新]** > **[所有更新]**。
 3. 使用上方工具列上的篩選選項，以篩選出被取代的更新。
 4. 拒絕所有可能套用至 Windows 7 或套用至安裝於受影響用戶端上的應用程式 (例如，Microsoft Office) 的被取代更新。 
 5. 重新啟動受影響的用戶端。
 
-此外，如果您執行 Windows 7，請確定您已安裝下列更新︰[3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月](https://support.microsoft.com/kb/3050265)
+此外，如果您執行 Windows 7，請確定您已安裝下列更新︰[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月)。
 
 ### 後續步驟
-如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務，如[如何取得 Microsoft Intune 的支援](how-to-get-support-for-microsoft-intune.md)中所述
+如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

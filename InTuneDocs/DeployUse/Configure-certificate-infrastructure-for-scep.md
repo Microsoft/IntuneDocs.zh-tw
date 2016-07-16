@@ -1,26 +1,21 @@
 ---
-title: 設定 SCEP 的憑證基礎結構 |Microsoft Intune
-description:
-keywords:
+title: "設定 SCEP 的憑證基礎結構 |Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
+ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+
 ---
 # 設定 SCEP 的憑證基礎結構
 本主題說明建立及部署憑證設定檔所需的基礎結構。
@@ -42,7 +37,7 @@ I
  > [!NOTE]           
 > -    裝載 WAP 伺服器 [必須安裝更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](http://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](http://support.microsoft.com/kb/3011135)。
 >-  此外，主控 WAP 的伺服器必須有 SSL 憑證，該憑證必須符合發佈給外部用戶端，以及信任 NDES 伺服器上使用的 SSL 憑證的名稱。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 伺服器的新 SSL 連線。
-如需 WAP 憑證的相關資訊，請參閱[計劃使用 Web 應用程式 Proxy 發行應用程式](https://technet.microsoft.com/library/dn383650.aspx)的**規劃憑證**小節。 如需 WAP 伺服器的一般資訊，請參閱[使用 Web 應用程式 Proxy](http://technet.microsoft.com/library/dn584113.aspx)。|
+    如需 WAP 憑證的相關資訊，請參閱[計劃使用 Web 應用程式 Proxy 發行應用程式](https://technet.microsoft.com/library/dn383650.aspx)的**規劃憑證**小節。 如需 WAP 伺服器的一般資訊，請參閱[使用 Web 應用程式 Proxy](http://technet.microsoft.com/library/dn584113.aspx)。|
 
 ### 網路需求
 
@@ -107,15 +102,18 @@ I
 
     -   在 [延伸]  索引標籤上，確定 [應用程式原則描述]  包含 [用戶端驗證] 。
 
-        > [!IMPORTANT] 若為 iOS 和 Mac OS X 憑證範本，請在 [延伸] 索引標籤上，編輯 [金鑰使用方法]，並確保未選取 [簽章是原件證明]。
+        > [!IMPORTANT]
+        > 若為 iOS 和 Mac OS X 憑證範本，請在 [延伸] 索引標籤上，編輯 [金鑰使用方法] ，並確保未選取 [簽章是原件證明]。
 
     -   在 [安全性] 索引標籤上，新增 NDES 服務帳戶，並提供其 [註冊] 範本的權限。 將建立 SCEP 設定檔的 Intune 系統管理員需要 [讀取] 權限，讓他們可以在建立 SCEP 設定檔時瀏覽至範本。
     
-    > [!NOTE] 若要撤銷憑證，NDES 服務帳戶需要憑證設定檔所使用之每個憑證範本的 [發行及管理憑證] 權限。
+    > [!NOTE]
+    > 若要撤銷憑證，NDES 服務帳戶需要憑證設定檔所使用之每個憑證範本的*發行及管理憑證*權限。
 
 3.  檢閱範本 [一般]  索引標籤上的 [有效期間]  。 根據預設，Intune 使用範本中所設定的值。 不過，您可以選擇設定 CA 以允許要求者指定不同的值，然後您可以從 Intune 管理主控台內設定該值。 如果您想要一律使用範本中的值，請略過此步驟中的其餘部分。
 
-    > [!IMPORTANT] iOS 和 Mac OS X 平台一律會使用範本中的設定值，而不論您所做的其他設定。
+    > [!IMPORTANT]
+    > iOS 和 Mac OS X 平台一律會使用範本中的設定值，而不論您所做的其他組態設定。
 
 以下是範例範本設定的螢幕擷取畫面。
 
@@ -260,7 +258,8 @@ I
 
     3.  針對 [SSL 憑證] ，指定伺服器驗證憑證。
 
-        > [!NOTE] 如果 NDES 伺服器針對單一網路位址同時使用外部和內部名稱，則伺服器驗證憑證必須具有外部公用伺服器名稱的 [主體名稱]，以及包括內部伺服器名稱的 [主體替代名稱]。
+        > [!NOTE]
+        > 如果 NDES 伺服器針對單一網路位址同時使用外部和內部名稱，則伺服器驗證憑證必須具有外部公用伺服器名稱的 [主體名稱]  ，以及包括內部伺服器名稱的 [主體替代名稱]  。
 
 2.  在 NDES 伺服器上，從內部 CA 或公開憑證授權單位，要求並安裝 **用戶端驗證** 憑證。 這可以是與伺服器驗證憑證相同的憑證，如果該憑證具備兩種功能。
 
@@ -322,7 +321,8 @@ I
 
 4.  在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI] 。
 
-    > [!TIP] 如果您在啟動憑證連接器 UI 之前關閉精靈，您可以藉由執行下列命令重新加以開啟：
+    > [!TIP]
+    > 如果您在啟動 Certificate Connector UI 之前關閉精靈，您可以藉由執行下列命令重新加以開啟：
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -346,6 +346,7 @@ I
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

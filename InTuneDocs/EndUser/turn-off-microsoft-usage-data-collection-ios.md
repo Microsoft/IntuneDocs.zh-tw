@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 關閉 Microsoft 使用狀況資料收集 | Microsoft Intune
-description:
-keywords:
+title: "關閉 Microsoft 使用狀況資料收集 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 99e60934ecd280b5dd38ebe65f5a60fee576f77f
+
 
 ---
 
@@ -32,11 +27,12 @@ ms.suite: ems
 
 您可以使用公司入口網站應用程式中的 [使用方式資料] 設定，來關閉 iOS 裝置上該資料的收集。 IT 系統管理員無權控制該資料的收集，且無法變更您對該設定的選項。
 
-仍需要協助嗎？ 請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+仍需要協助嗎？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

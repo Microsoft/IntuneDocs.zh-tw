@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 如果從 Intune 取消註冊裝置，會發生什麼情況？ | Microsoft Intune
-description:
-keywords:
+title: "如果從 Intune 取消註冊裝置，會發生什麼情況？ | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: f0465d4302bda3df82c994043df52c27761a8345
+
 
 ---
 
@@ -49,6 +43,7 @@ ms.suite: ems
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

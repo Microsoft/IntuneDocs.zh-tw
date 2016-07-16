@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Multi-Factor Authentication 保護 Windows 裝置 | Microsoft Intune
-description:
-keywords:
+title: "使用 Multi-Factor Authentication 保護 Windows 裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護企�
 #### MFA 搭配 Intune
 如果您的組織有內部部署 IT 基礎結構 (含有 Active Directory 網域和 Active Directory Federation Services (ADFS))，您可以在同盟伺服器上設定 MFA，然後針對 Intune 註冊啟用 MFA。 在 Intune 上設定 MFA 可讓使用者在註冊期間驗證一次，之後就能夠存取公司資源，而不需要每次重複 MFA 程序。
 
->[!NOTE] ADFS 伺服器上可針對每個使用者或每個群組來要求 MFA。  
+>[!NOTE]
+>ADFS 伺服器上可針對每個使用者或每個群組來要求 MFA。  
 
 #### MFA 未搭配 Intune
 如果您在同盟伺服器上設定 MFA，但未針對在 Intune 中註冊而啟用 MFA，則使用者每次存取公司資源時 (不只是註冊裝置) 都需要使用 MFA。
@@ -60,6 +55,7 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護企�
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

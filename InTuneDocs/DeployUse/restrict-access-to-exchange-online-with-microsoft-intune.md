@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 限制 Exchange Online 和新版 Exchange Online Dedicated 的電子郵件存取 | Microsoft Intune
-description:
-keywords:
+title: "限制 Exchange Online 和新版 Exchange Online Dedicated 的電子郵件存取 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 87663f2677a006e5db525f8897fea4bf05cb5912
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 如果您有 Exchange Online Dedicated 環境，而且需要了解它是使用新版或舊版的設定，請連絡您的帳戶管理員。
 
 若要控制 Exchange Online 或新的 Exchange Online Dedicated 環境的電子郵件存取，請在 Intune 中設定 Exchange Online 的條件式存取。
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件和 O365 服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)文件。
+若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 >[!IMPORTANT]
 >透過使用新式驗證的應用程式來設定電腦和 Windows 10 行動裝置版的條件式存取，目前未提供給所有 Intune 客戶使用。 如果您已經在使用這些功能，您不需要採取任何動作。 您可以繼續使用它們。
@@ -43,7 +37,8 @@ ms.suite: ems
 
 -  考慮設定選擇性 **Microsoft Intune 服務對服務連接器**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Microsoft Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用相容性原則或條件存取原則並不需要使用連接器，但必須執行報告，以協助評估條件存取的影響。
 
-   > [!NOTE]如果您想要對 Exchange Online 和 Exchange 內部部署都使用條件式存取，請勿設定 Service-To-Service Connector
+   > [!NOTE]
+   > 如果您想要對 Exchange Online 和 Exchange 內部部署都使用條件式存取，請勿設定服務對服務連接器
 
    如需連接器的設定指示，請參閱 [Intune 服務對服務連接器](intune-service-to-service-exchange-connector.md)
 
@@ -75,9 +70,23 @@ ms.suite: ems
 - iOS 7.1 和更新版本
 - Windows Phone 8.1 和更新版本
 
- **新式驗證**將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 用戶端中。
+**新式驗證**將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 用戶端中。
 
-> -   ADAL 型驗證可讓 Office 用戶端進行以瀏覽器為基礎的驗證 (又稱為被動驗證)。  系統會將使用者導向登入網頁，以便進行驗證。 這個新的登入方法提供更高的安全性，例如**多重要素驗證**以及**憑證式驗證**此[文章](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)有更多新式驗證運作方式的詳細資訊。
+-   ADAL 型驗證可讓 Office 用戶端進行以瀏覽器為基礎的驗證 (又稱為被動驗證)。  系統會將使用者導向登入網頁，以便進行驗證。 這個新的登入方法提供更高的安全性，例如**多因素驗證**和**憑證式驗證**。
+這篇[文章](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)包含新式驗證運作方式的詳細資訊。
+設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 案例 3 提供詳細指示 ─ [除使用瀏覽器架構的應用程式外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)。
+
+您可以在從 **iOS** 和 **Android** 裝置上的瀏覽器進行存取時，限制存取 Exchange Online 上的 **Outlook Web Access (OWA)**。  將只允許從相容裝置上的支援瀏覽器進行存取︰
+
+* Safari (iOS)
+* Chrome (Android)
+* 受管理的瀏覽器 (iOS 和 Android)
+
+**不支援的瀏覽器將會被封鎖**。
+
+不支援適用於 iOS 和 Android 的 OWA 應用程式。  它們應該透過 ADFS 宣告規則封鎖。
+
+
 
 
 您可以限制從下列平台內建的 **Exchange ActiveSync 電子郵件用戶端**存取 Exchange 電子郵件：
@@ -111,7 +120,8 @@ ms.suite: ems
 確定您[建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則，並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到也將取得條件式存取原則的使用者群組。
 
 
-> [!IMPORTANT]如果您尚未部署相容性原則，則會將裝置視為相容，並允許存取 Exchange。
+> [!IMPORTANT]
+> 如果您尚未部署相容性原則，則會將裝置視為相容，並允許存取 Exchange。
 
 ### 步驟 2：評估條件式存取原則的效果
 您可以使用**行動裝置清查報表**，識別在您設定條件式存取原則之後可能不允許存取 Exchange 的裝置。
@@ -135,7 +145,8 @@ ms.suite: ems
 
 -   **Exchange ActiveSync 識別碼** - iOS 和 Android 裝置必須將其 Exchange ActiveSync 識別碼關聯至 Azure Active Directory 中的裝置登錄記錄。 這會在使用者選擇隔離電子郵件中的 [啟用電子郵件] 連結時發生。
 
-    > [!NOTE]Windows Phone 裝置永遠都會在此欄中顯示值。
+    > [!NOTE]
+    > Windows Phone 裝置永遠都會在此欄中顯示值。
 
 除非欄值符合下表所列的值，否則隸屬於目標群組一部分的裝置將遭到封鎖而無法存取 Exchange：
 
@@ -165,11 +176,12 @@ ms.suite: ems
 ### 步驟 4：設定條件式存取原則
 
 1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [Exchange Online 原則]。
-![Exchange Online 條件式存取原則頁面的螢幕擷取畫面](../media/IntuneSA5dExchangeOnlinePolicy.png)
+![Exchange Online 條件式存取原則頁面的螢幕擷取畫面](../media/mdm-ca-exo-policy-configuration.png)
 
 2.  在 **Exchange Online 原則** 頁面上，選取 **啟用 Exchange Online 的條件式存取原則**。
 
-    > [!NOTE]如果您尚未部署相容性原則，則會將裝置視為相容。
+    > [!NOTE]
+    > 如果您尚未部署相容性原則，則會將裝置視為相容。
     >
     > 所有使用者無論其相容性狀態如何，此原則皆會要求他們向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊其裝置。
 
@@ -178,6 +190,11 @@ ms.suite: ems
     -   **所有平台**
 
         任何用來存取 **Exchange  Online** 的裝置都必須在 Intune 中註冊並符合原則。  任何使用**新式驗證**的用戶端應用程式都必須遵守條件式存取原則；如果該平台目前不受 Intune 支援，則會封鎖對 **Exchange Online** 的存取。
+
+        選取 [所有平台] 選項表示 Azure Active Directory 會將此原則套用至所有驗證要求，而不論用戶端應用程式所回報的平台為何。  所有平台都需要註冊並變成相容，除了︰
+        *   Windows 裝置必須註冊並相容，使用內部部署 Active Directory 加入網域，或兩者兼具
+        * 不支援例如 Mac OS 的平台。  不過，使用來自這些平台之新式驗證的應用程式，仍然會被封鎖。
+
         >[!TIP]
            如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在 [Microsoft Connect 網站](http://go.microsoft.com/fwlink/?LinkId=761472)了解已知問題及如何存取這項功能的詳細資訊。
 
@@ -185,12 +202,30 @@ ms.suite: ems
 
          條件式存取原則會套用至在您指定的裝置平台上使用**新式驗證**的任何用戶端應用程式。
 
-4.  在 [Exchange ActiveSync 應用程式] 下，您可以選擇禁止不相容的裝置存取 Exchange Online。 您也可以選擇當裝置不是執行支援的平台時允許或封鎖存取電子郵件。 支援的平台包括 Android、iOS、Windows 和 Windows Phone。
+4. 在 [Outlook Web Access (OWA)] 下，您可以選擇允許只能透過支援的瀏覽器來存取 Exchange Online︰Safari (iOS)，以及 Chrome (Android)。 將會封鎖從其他瀏覽器的存取。 您為 Outlook 應用程式存取所選取的相同平台限制也適用於此處。
 
+  在 **Android** 裝置，使用者必須啟用瀏覽器存取。  若要這樣做，使用者必須啟用已註冊裝置上的 [允許瀏覽器存取] 選項，如下所示︰
+  1.    啟動公司入口網站應用程式。
+  2.    從三個點 (...) 或硬體功能表按鈕移至 [設定] 頁面。
+  3.    按下 [允許瀏覽器存取] 按鈕。
+  4.    在 Chrome 瀏覽器中，登出 Office 365 並重新啟動 Chrome。
 
-5.  在 [目標群組] 下方，選取要套用原則之使用者的 Active Directory 安全性群組。 您可以選擇針對所有使用者或選取的使用者群組清單。
+  在 **iOS 和 Android** 平台上，為了識別用來存取服務的裝置，Azure Active Directory 會發行傳輸層安全性 (TLS) 憑證給裝置。  裝置會顯示憑證，並提示使用者選取憑證，如以下螢幕擷取畫面所示。 使用者必須選取此憑證，才能繼續使用瀏覽器。
+
+  **iOS**
+
+  ![iPad 上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Android 裝置上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-android-cert-prompt.png)
+
+5.  在 [Exchange ActiveSync 應用程式] 下，您可以選擇禁止不相容的裝置存取 Exchange Online。 您也可以選擇當裝置不是執行支援的平台時允許或封鎖存取電子郵件。 支援的平台包括 Android、iOS、Windows 和 Windows Phone。
+
+6.  在 [目標群組] 下方，選取要套用原則之使用者的 Active Directory 安全性群組。 您可以選擇針對所有使用者或選取的使用者群組清單。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面，其中顯示 [目標] 和 [豁免] 群組選項](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE]針對**目標群組**中的使用者，Intune 原則會取代 Exchange 規則和原則。
+    > [!NOTE]
+    > 針對 [目標群組] 中的使用者，Intune 原則會取代 Exchange 規則和原則。
     >
     > 只有在下列情況中，Exchange 才會強制 Exchange 允許、封鎖和隔離規則及 Exchange 原則：
     >
@@ -224,6 +259,7 @@ ms.suite: ems
 [限制存取商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

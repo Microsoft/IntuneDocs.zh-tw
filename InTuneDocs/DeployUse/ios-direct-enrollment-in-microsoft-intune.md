@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 直接註冊 iOS 裝置 | Microsoft Intune
-description:
-keywords:
+title: "直接註冊 iOS 裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
         -   **裝置群組預先指派** - 所有部署此設定檔的裝置，一開始均屬於此群組。 您可以在註冊之後重新指派裝置。
 
+        >[!Important]
+        >群組指派將從 Intune 移至 Azure Active Directory。 [深入了解](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  選擇 [儲存設定檔] 以新增設定檔。
 
 5.  **以 .mobileconfig 的格式匯出設定檔，以部署至 iOS 裝置**選取您所建立的裝置設定檔。 選擇 [匯出...] 。 選擇 [下載設定檔] 並儲存下載的 .mobileconfig 檔案。
@@ -89,6 +85,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

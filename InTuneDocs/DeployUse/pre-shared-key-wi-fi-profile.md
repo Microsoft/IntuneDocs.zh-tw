@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: 使用 PSK 的 Wi-Fi | Microsoft Intune
+title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
 # 使用預先共用金鑰建立 Wi-Fi 設定檔
-以下是如何使用 Intune 的自訂組態來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
+以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 注意：
 -   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
@@ -44,9 +38,9 @@ ms.suite: ems
 
    b。   輸入 OMA-URI 設定的描述，或者保留空白。
 
-   c.   資料類型︰設為「字串(XML)」
+   c.   **資料類型**︰設為「字串(XML)」
 
-   d.   OMA-URI: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**：./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
 
 注意︰開頭務必包含句點字元。
 
@@ -188,13 +182,13 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 ## 部署原則
 
-1.  在 [原則] 工作區中，選取您要部署的原則，然後按一下 [管理部署]
+1.  在 [原則]  工作區中，選取您要部署的原則，然後按一下 [管理部署] 。
 
 2.  在 [管理部署]  對話方塊中：
 
-    -   若要部署原則 - 選取您要部署原則的一或多個群組，然後按一下 [新增] &gt; [確定]
+    -   **部署原則** - 選取您要部署原則的一或多個群組，然後按一下 [新增] &gt; [確定]。
 
-    -   若要關閉對話方塊但不加以部署 - 按一下 [取消]
+    -   **關閉對話方塊但不加以部署** - 按一下 [取消]。
 
 當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
@@ -202,6 +196,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

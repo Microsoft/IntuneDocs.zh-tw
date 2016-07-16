@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 試驗 | Microsoft Intune
-description:
-keywords:
+title: "試驗 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: af0c3e623167ae7df0177ddcd8e541482512e6b3
+
 
 ---
 
@@ -72,7 +66,7 @@ ms.suite: ems
 試驗階段經常忽略作業。 試驗是系統管理員調整其程序的第一個機會，其中包括︰調整警示、驗證作業程序、驗證監視、使用者和裝置的日常管理工作，以及驗證技術支援中心的呈報程序。
 
 ## 開始執行檢查清單
-以下是開始執行試驗階段的步驟清單。
+以下是開始執行**試驗**階段的步驟清單。
 
 -   清楚地載明關聯的目標和成功度量，並在專案團隊進行溝通。
 
@@ -99,20 +93,21 @@ ms.suite: ems
 -   舉行試驗開始活動和其他認知活動。
 
 ## 常見的挑戰
-以下是您在試驗階段可能遇到的一些挑戰。
+以下是您在**試驗**階段可能遇到的一些挑戰。
 
--   挑戰︰執行試驗的對象是 IT 使用者和一般商務使用者，並非整個組織的真實代表。 無法進行真實驗證、程序和資源。
+-   **挑戰︰**執行試驗的對象是 IT 使用者和一般商務使用者，並非整個組織的真實代表。 無法進行真實驗證、程序和資源。
 
-    緩和措施︰包含整個組織在不同群組具有不同層級技術知識的各種角色，以了解可對廣泛首度發行預期的內容。
+    **緩和措施︰**包含整個組織在不同群組具有不同層級技術知識的各種角色，以了解可對廣泛首度發行預期的內容。
 
--   挑戰︰尚未專為試驗階段建立成功準則，並且無法根據執行/不執行決策來繼續進行廣泛啟動。
+-   **挑戰︰**尚未專為試驗階段建立成功準則，並且無法根據執行/不執行決策來繼續進行廣泛啟動。
 
-    緩和措施︰專為組織定義品質和數量的成功準則，以便可以依據事實進行清楚的決策，以繼續進行下一個階段的部署。
+    **緩和措施︰**專為組織定義品質和數量的成功準則，以便可以依據事實進行清楚的決策，以繼續進行下一個階段的部署。
 
 ### 後續步驟
 [企業首度發行](enterprise-rollout.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

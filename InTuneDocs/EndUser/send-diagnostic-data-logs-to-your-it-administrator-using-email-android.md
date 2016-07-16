@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用電子郵件將診斷資料記錄檔傳送給 IT 系統管理員 | Microsoft Intune
-description:
-keywords:
+title: "使用電子郵件將診斷資料記錄檔傳送給 IT 系統管理員 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -36,13 +30,13 @@ ms.suite: ems
 
 2.  點選 [功能表] &gt; [設定]。
 
-    > [功能表][!NOTE] 
-    > **** 可能是軟體按鈕或硬體按鈕，視您擁有的 Android 裝置類型而定。
+    > [!NOTE] 
+    > [功能表] 可能是軟體按鈕或硬體按鈕，視您擁有的 Android 裝置類型而定。
 
 3.  在 [診斷資料] 下，點選 [傳送資料]。
 
     > [!NOTE]
-    > **如果您只使用 Android 6.0 或更新版本的裝置**︰當您點選 **[傳送資料]** 時，您會看到此訊息：**是否允許公司入口網站存取裝置上的相片、媒體和檔案？** 
+    > **如果您只使用 Android 6.0 或更新版本的裝置**︰當您點選 [傳送資料] 時，您會看到此訊息：**是否允許公司入口網站存取裝置上的相片、媒體和檔案？**。 
 
     此訊息會讓人誤解，因為 **Microsoft 永遠不會存取您裝置上的相片、媒體或檔案！** Google 控制訊息文字，Microsoft 無法變更它。  當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，這樣可讓您使用 USB 纜線移動這些記錄檔。
 
@@ -54,6 +48,7 @@ ms.suite: ems
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

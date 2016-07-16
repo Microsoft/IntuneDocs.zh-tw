@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
 ms.openlocfilehash: a042f0c6206e9aaf4ec0eb012a70930aa95ecc47
 
@@ -78,6 +79,6 @@ Intune App SDK 目前可透過 Microsoft Connect 存取，並需要註冊。 若
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,28 +1,19 @@
 ---
-# required metadata
-
-title: 安裝新版的公司入口網站應用程式 | Microsoft Intune
-description:
-keywords:
+title: "安裝新版的公司入口網站應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,7 +35,8 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 2.  依照安裝指示操作。
 
-    > [!NOTE] 如果您無法存取 Windows 市集，請連絡 IT 系統管理員。
+    > [!NOTE]
+    > 如果您無法存取 Windows 市集，請連絡 IT 系統管理員。
 
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
@@ -57,6 +49,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: MAM 啟用應用程式的使用者經驗 | Microsoft Intune
-description:
-keywords:
+title: "MAM 啟用應用程式的使用者經驗 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ ms.suite: ems
     ![O365 登入頁面的螢幕擷取畫面](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Azure AD 成功驗證您的認證之後，會套用 MAM 原則，並要求您重新啟動 **OneDrive** 應用程式。
+  >[NOTE!] [需要重新啟動] 對話方塊只會在未於 Intune 註冊的裝置上顯示。
 
     ![[需要重新啟動] 對話方塊的螢幕擷取畫面](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ ms.suite: ems
 
     ![公司入口網站應用程式的螢幕擷取畫面](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  完成安裝之後，請按一下 [接受]  以接受條款。
+5.  完成安裝之後，選擇 [接受] 以接受條款。
 
 6.  **OneDrive** 應用程式會自動啟動。
 
@@ -136,7 +130,7 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在每個公司有一個工作帳戶，且兩者都使用 Intune 來部署 MAM 原則。 **X 公司**在 **Y 公司****之前**部署 MAM 原則。**X 公司**相關聯的帳戶將得到 MAM 原則，Y 公司的相關聯帳戶則否。如果您希望 Y 公司相關聯的使用者帳戶受 MAM 原則管理，您必須移除與 X 公司相關聯的使用者帳戶。
 ### 新增第二個帳戶
 #### IOS
-如果您使用 iOS 裝置，當您嘗試在同一部裝置上新增第二個工作帳戶時，您會看到封鎖訊息。  您也會看到可移除現有帳戶並新增帳戶的選項。 按一下 [是] 即可執行這項動作。
+如果您使用 iOS 裝置，當您嘗試在同一部裝置上新增第二個工作帳戶時，您會看到封鎖訊息。  您也會看到可移除現有帳戶並新增帳戶的選項。 選擇 [是] 即可執行這項動作。
 
 ![包含封鎖訊息和 [是] 與 [否] 選項之對話方塊的螢幕擷取畫面](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 
 從 Google Play 商店下載這個應用程式。  在裝置上安裝應用程式後，請啟動應用程式，並使用公司認證進行驗證。 您現在應該能夠檢視來自其他原則管理應用程式的未受保護和受保護檔案。
 
+以下是支援的檔案類型：
+
+* **音訊︰**AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
+* **視訊︰**H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **影像︰**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
+* PDF、PPDF
+
+------------
+|**pfile**|**文字**|
+|----|----|
+|Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 RMS 授權，而且可以用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等可以在應用程式中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+---------------
 **未在 Intune 註冊的 Android 裝置**
 
 您必須先啟動 RMS 應用程式，並驗證您的工作帳戶，才能使用 RMS 共用應用程式來檢視 Intune 所管理之其他應用程式的檔案。  在您登入時，**只有在沒有 RMS 授權時**才會看到下列訊息：
@@ -162,6 +168,7 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

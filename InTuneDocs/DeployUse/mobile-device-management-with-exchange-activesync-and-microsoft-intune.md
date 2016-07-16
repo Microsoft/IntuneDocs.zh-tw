@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理 | Microsoft Intune
-description:
-keywords:
+title: "使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理 | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,14 +35,16 @@ Exchange Connector可讓您在 Intune 主控台中管理您的 Exchange 部署�
 -   [為託管之 Exchange Connector 設定適用的 Intune 服務](intune-service-to-service-exchange-connector.md)
 
 ## 套用 Exchange 管理之行動裝置的原則
-原則設定可以透過 Intune 主控台來套用，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。 如需特定行動服務支援之 Exchange ActiveSync 原則設定和功能的清單，請參閱 [Exchange ActiveSync 用戶端比較表](http://go.microsoft.com/fwlink/?LinkId=247270)
+原則設定可以透過 Intune 主控台來套用，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。 如需特定行動服務支援之 Exchange ActiveSync 原則設定和功能的清單，請參閱 [Exchange ActiveSync 用戶端比較表](http://go.microsoft.com/fwlink/?LinkId=247270)。
 
+> [!NOTE]
 > 將 Intune 連線到 Microsoft Exchange 環境之後，除非 Intune 內已定義更具體的原則，否則透過 Intune 管理的所有使用者的 EAS 原則都會重設為 Microsoft Exchange Server 上目前的預設原則。
 
 ## 從行動裝置抹除公司資料
 最後，如果資料不再使用中，或如果裝置遺失或失竊，您可以[抹除來自 EAS 管理的行動裝置的公司資料](wipe-for-exchange-managed-mobile-devices.md)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

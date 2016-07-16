@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune App SDK 概觀 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune App SDK 概觀 | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ IT 系統管理員可以在開啟受 Intune 管理之應用程式中的連結時
 IT 系統管理員可以在受 Intune 管理的應用程式啟動時，強制執行 PIN 原則。 這項原則有助於確保向 Microsoft Intune 註冊其裝置的使用者是啟動應用程式的相同人員。 當使用者設定其 PIN 時，Intune App SDK 會使用 Azure Active Directory 依據裝置註冊認證，來驗證使用者的認證。 
 
 ## 要求使用者在啟動應用程式之前先輸入認證
-IT 系統管理員可以要求使用者在啟動受 Intune 管理的應用程式之前先輸入其認證。 Intune App SDK 使用 Azure Active Directory 來提供單一登入體驗，其中認證一旦輸入，便可供後續登入重複使用。 我們也支援驗證[與 Azure Active Directory 建立同盟](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx)的身分識別管理解決方案。 
+IT 系統管理員可以要求使用者在啟動受 Intune 管理的應用程式之前先輸入其認證。 Intune App SDK 使用 Azure Active Directory 來提供單一登入體驗，其中認證一旦輸入，便可供後續登入重複使用。 我們也支援驗證 [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on (Azure Active Directory 同盟相容性清單：可用來實作單一登入的協力廠商身分識別供者)](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) 的身分識別管理解決方案。 
 
 ## 檢查裝置健全狀況和相容性
 IT 系統管理員可以在使用者存取受 Intune 管理的應用程式之前，檢查裝置的健全狀況及其是否符合公司原則。 在 iOS 平台上，這項原則會檢查裝置是否已進行 JB 破解。 在 Android 平台上，這項原則會檢查裝置是否已進行 Root 破解。  
@@ -61,6 +55,7 @@ IT 系統管理員可以在使用者存取受 Intune 管理的應用程式之前
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

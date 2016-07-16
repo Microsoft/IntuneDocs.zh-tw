@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 重設 (清除) 您遺失或遭竊的裝置 | Microsoft Intune
-description:
-keywords:
+title: "重設 (清除) 您遺失或遭竊的裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -32,7 +26,8 @@ ms.suite: ems
 
 若要了解重設裝置時會發生的情況，請參閱[使用公司入口網站重設裝置時會發生的情況](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)。
 
-> [!WARNING] 若將裝置重設為原廠預設值，將會從中移除您的個人和工作或學校資訊。
+> [!WARNING] 
+> 若將裝置重設為原廠預設值，將會從中移除您的個人和工作或學校資訊。
 
 1.  在您的瀏覽器中，開啟[公司入口網站](http://portal.manage.microsoft.com)，然後登入您的工作或學校帳戶。
 
@@ -47,6 +42,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

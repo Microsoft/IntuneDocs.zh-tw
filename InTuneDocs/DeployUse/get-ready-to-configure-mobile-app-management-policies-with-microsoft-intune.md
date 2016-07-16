@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 準備設定行動應用程式管理原則 | Microsoft Intune
-description:
-keywords:
+title: "準備設定行動應用程式管理原則 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Azure 入口網站是用於建立 MAM 原則的新管理主控台，並建議您
 如果您是使用 Azure 入口網站的新手，請閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)主題，以取得快速概觀。
 
 如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 **Intune 管理主控台**，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則，但建議使用 Azure 入口網站，即使是在 Intune 中註冊的裝置也是一樣。 如需如何使用 Intune 管理主控台建立 MAM 原則的指示，請參閱[這裡](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。
+
+在 Intune 管理主控台中建立的 MAM 原則無法匯入到 Azure 入口網站中。  MAM 原則必須在 Azure 入口網站中重新建立。
 
 >[!IMPORTANT]
 > 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
@@ -62,7 +57,7 @@ Azure 入口網站是用於建立 MAM 原則的新管理主控台，並建議您
 -   下列作業需要的 **Office 365 (O365)** 訂閱：
   - 將 MAM 原則套用至具有多重身分識別支援的應用程式。
   - 建立 SharePoint Online 和 Exchange Online 公司帳戶。 不支援 Exchange 內部部署和 SharePoint 內部部署。
--    對**商務用 Skype Online** **啟用新式驗證**。 登入 Microsoft Connect，填寫[此表單](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)，以註冊在新式驗證程式中。
+-    對**商務用 Skype Online** [啟用新式驗證](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md)。
 
 
 - **Azure Active Directory (Azure AD)** 來建立使用者。 當使用者啟動應用程式並輸入其工作認證時，Azure AD 會驗證使用者。
@@ -124,6 +119,7 @@ Azure 入口網站是用於建立 MAM 原則的新管理主控台，並建議您
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

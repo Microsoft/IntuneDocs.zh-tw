@@ -1,25 +1,19 @@
 ---
-title: 使用遠端鎖定和密碼重設 | Microsoft Intune
-description:
-keywords:
+title: "使用遠端鎖定和密碼重設 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # 透過遠端鎖定或密碼重設來協助保護您的裝置
 Microsoft Intune 提供遠端鎖定和密碼重設功能。
@@ -39,14 +33,14 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 ### 若要透過 Intune 主控台從遠端鎖定行動裝置
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組]  &gt;  [所有行動裝置]  &gt;  [所有行動裝置]
+1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] &gt; [所有行動裝置]。
 
-2.  對已在 Intune 註冊的裝置選擇 [所有受直接管理的裝置] 或按一下 [所有受 Exchange ActiveSync 管理的裝置]
+2.  對已在 Intune 註冊的裝置選擇 [所有受直接管理的裝置] 或按一下 [所有受 Exchange ActiveSync 管理的裝置]。
 
     > [!TIP]
     > 您也可以導覽到各使用者的裝置。 選擇 [所有使用者]。 在使用者的內容頁面上，選擇 [裝置]，然後選擇您要抹除之行動裝置的名稱。
 
-3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [遠端鎖定]
+3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [遠端鎖定]。
 
 ## 重設裝置上的密碼
 如果使用者忘記密碼，您可以藉由從裝置移除密碼或是在裝置上強制套用新暫時密碼的方式來幫助使用者。 下表列出密碼重設在不同行動平台上的運作方式。
@@ -62,20 +56,22 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 ### 重設密碼
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組]  &gt;  [所有行動裝置]  &gt;  [所有行動裝置]
+1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] &gt; [所有行動裝置]。
 
-2.  對已在 Intune 註冊的裝置選擇 [所有受直接管理的裝置] 或按一下 [所有受 Exchange ActiveSync 管理的裝置]
+2.  對已在 Intune 註冊的裝置選擇 [所有受直接管理的裝置] 或按一下 [所有受 Exchange ActiveSync 管理的裝置]。
 
     > [!TIP]
     > 您也可以導覽到各使用者的裝置。 按一下 [所有使用者]。 在使用者的 [內容] 頁面上，按一下 [裝置]，然後按一下您要抹除之行動裝置的名稱。
 
-3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [密碼重設]
+3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [密碼重設]。
 
 
 ### 請參閱
-淘汰裝置
+[淘汰裝置](retire-devices-from-microsoft-intune-management.md)
+[Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (裝置資料管理的 Windows 選擇性抹除)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

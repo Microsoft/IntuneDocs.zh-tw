@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 簡介 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune 簡介 | Microsoft Intune"
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: da9db0b3961cbbd53fc2b7aa7704fa31c8c78718
+
 
 ---
 
@@ -44,9 +38,9 @@ Intune 可協助解決一些常見商務問題包括︰
 * 讓您的組織支援員工從您未控制的裝置和應用程式存取 Office 365 (例如商展大廳的資訊站)
 
 Intune 提供的一些主要工具包括︰
-* 行動裝置管理 (MDM)：可以將裝置註冊到 Intune，以在這些裝置上佈建、設定、監視和採取動作 (例如，抹除它們)。
-* 行動應用程式管理 (MAM)：發行、推送、設定、保護、監視和更新您使用者之行動應用程式的能力。
-* 行動應用程式安全性︰管理行動應用程式時，Intune 透過隔離個人資料與公司資料，並允許選擇性抹除公司資料，可以協助保護行動資料的安全。
+* **行動裝置管理 (MDM)**：可以將裝置註冊到 Intune，以在這些裝置上佈建、設定、監視和採取動作 (例如，抹除它們)。
+* **行動應用程式管理 (MAM)**：發行、推送、設定、保護、監視和更新您使用者之行動應用程式的能力。
+* **行動應用程式安全性**︰管理行動應用程式時，Intune 透過隔離個人資料與公司資料，並允許選擇性抹除公司資料，可以協助保護行動資料的安全。
 
 這些工具是以不同的組合使用，以啟用上述的常見案例。 例如，共用裝置案例會大量使用 MDM。 BYOD 案例通常依賴 MAM。 而公司電話案例是根據這兩者。 幾乎所有案例都會利用行動應用程式安全性。
 
@@ -58,6 +52,7 @@ Intune 提供的一些主要工具包括︰
 * 深入了解 Intune 的[技術需求和功能](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

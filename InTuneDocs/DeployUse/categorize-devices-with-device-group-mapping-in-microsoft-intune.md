@@ -1,32 +1,25 @@
 ---
-# required metadata
-
-title: 在 Microsoft Intune 使用裝置群組對應分類裝置 | Microsoft Intune
-description:
-keywords:
+title: "使用裝置群組對應分類裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a
+ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
+
 
 ---
 
 # 在 Microsoft Intune 使用裝置群組對應分類裝置
-使用 Microsoft Intune 裝置群組對應將裝置分組成定義的類別，以便讓您更輕鬆地管理這些裝置。 
+使用 Microsoft Intune **裝置群組對應**將裝置分組成定義的類別，以便讓您更輕鬆地管理這些裝置。 
 
 裝置群組對應會使用下列工作流程︰
 1. 為想要使用的每個類別建立 Intune 裝置群組。
@@ -45,19 +38,20 @@ ms.suite: ems
 不過，您可以設定任何想要的類別。
 
 ## 如何設定裝置群組對應
-1. 對於想要使用的每個裝置類別，建立一個 Intune 裝置群組。 如需有關如何建立群組的資訊，請參閱[利用 Microsoft Intune，使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
-2. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [管理].
-3. 在 [系統管理] 工作區中，展開 [行動裝置管理]，然後按一下 [裝置群組對應].
+1. 對於想要使用的每個裝置類別，建立一個 Intune 裝置群組。 如需如何建立群組的資訊，請參閱[在 Microsoft Intune 中使用群組來管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
+2. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
+3. 在 [系統管理] 工作區中，展開 [行動裝置管理]，然後選擇 [裝置群組對應]。
 4. 在 [裝置群組對應] 頁面上，啟用裝置群組對應。
-5. 按一下 [新增] 建立新的對應規則。
-6. 在 [新增裝置群組對應規則] 對話方塊中，輸入您想要建立的類別名稱，然後從下拉式清單中，選擇要將此類別對應到的裝置集合。 完成時，請按一下 [新增]。
-7. 完成新增類別和群組時，按一下 [儲存].
+5. 選擇 [新增] 建立新的對應規則。
+6. 在 [新增裝置群組對應規則] 對話方塊中，輸入您想要建立的類別名稱，然後從下拉式清單中，選擇要將此類別對應到的裝置集合。 完成時，選擇 [新增]。
+7. 完成新增類別和群組時，選擇 [儲存]。
 
 現在當使用者註冊其裝置時，他們會看到您設定的類別清單。 選擇類別並完成註冊後，他們的裝置會加入到與其所選類別相對應的裝置群組。
 
 ### 請參閱
 [利用 Microsoft Intune，使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

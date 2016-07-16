@@ -1,43 +1,47 @@
 ---
-# required metadata
-
-title: 裝置註冊疑難排解| Microsoft Intune
-description:
-keywords:
+title: "裝置註冊疑難排解| Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
+ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+
 
 ---
 
 # Intune 的裝置註冊疑難排解
 
-以下為一些裝置註冊問題，並說明如何進行疑難排解及解決問題。
-
-> [!NOTE]
-> 您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
->- [使用 USB 纜線將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [使用電子郵件將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-errors-to-your-it-admin-ios)
+本主題提供裝置註冊問題的疑難排解建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
 
-如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
+## 初始疑難排解步驟
+
+在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
+
+-   [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [設定 iOS 和 Mac 裝置管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-   [設定 Windows 裝置管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
+
+- [使用 USB 纜線將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [使用電子郵件將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## 一般註冊問題
 所有的裝置平台都可能發生這些問題。
@@ -103,7 +107,8 @@ ms.suite: ems
 
 1.  確認所設定的 MDM 授權單位適用於您使用的 Intune 服務版本，這些服務包括 Intune、O365 MDM 或 System Center Configuration Manager (含 Intune)。 若是 Intune，MDM 授權單位會在 [系統管理] &gt; [行動裝置管理] 中設定。 若是具備 Intune 的 Configuration Manager，您會在設定 Intune 連接器時進行設定；至於 O365，則為 行動裝置]**[** 設定。
 
-    > [!NOTE] 設定 MDM 授權單位之後，您只能依照[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡支援人員以進行變更。
+    > [!NOTE]
+    > 設定 MDM 授權單位之後，您只能依照[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡支援人員以進行變更。
 
 2.  確認使用者的認證已正確地與 Azure Active Directory 同步處理，方式是檢查其 UPN 是否符合帳戶入口網站中的 Active Directory 資訊。
     如果 UPN 與 Active Directory 資訊不符：
@@ -255,8 +260,7 @@ ms.suite: ems
 
 |錯誤碼|可能的問題|建議的解決方式|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |用戶端電腦上的時鐘未設定成正確的時間。|確定用戶端電腦上的時鐘和時區已設成正確的時間和時區。
-|
+|0x80CF0437 |用戶端電腦上的時鐘未設定成正確的時間。|確定用戶端電腦上的時鐘和時區已設成正確的時間和時區。|
 |0x80240438、0x80CF0438、0x80CF402C|無法連線至 Intune 服務。 請檢查用戶端 Proxy 設定。|確認 Intune 支援用戶端電腦上的 Proxy 設定，而且用戶端電腦可以存取網際網路。|
 |0x80240438、0x80CF0438|未設定 Internet Explorer 和本機系統中的 Proxy 設定。|無法連線至 Intune 服務。 請檢查用戶端 Proxy 設定，並確認 Intune 所支援的用戶端電腦上的 Proxy 組態，且用戶端電腦可以存取網際網路。|
 |0x80043001、0x80CF3001、0x80043004、0x80CF3004|註冊套件已過期。|從 [系統管理] 工作區下載並安裝最新的用戶端軟體套件。|
@@ -280,6 +284,7 @@ ms.suite: ems
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
