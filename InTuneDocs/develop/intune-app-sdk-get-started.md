@@ -79,6 +79,6 @@ Intune App SDK 目前可透過 Microsoft Connect 存取，並需要註冊。 若
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

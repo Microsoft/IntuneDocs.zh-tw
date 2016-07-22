@@ -1,5 +1,5 @@
 如需電腦輔助技術如何協助改善殘障人士生活的詳細資訊，請參閱 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

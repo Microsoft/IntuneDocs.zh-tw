@@ -71,6 +71,6 @@ Microsoft Intune App SDK 包含數項處於「預覽」狀態的功能。 您可
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -45,6 +45,6 @@ Exchange Connector可讓您在 Intune 主控台中管理您的 Exchange 部署�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
