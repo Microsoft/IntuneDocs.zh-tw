@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
             -   **無使用者親和性** - 裝置沒有使用者。 針對執行工作而不需存取本機使用者資料的裝置，請使用此關係。 需要使用者關係的應用程式會予以停用，或無法運作。
 
         -   **裝置群組預先指派** - 所有部署此設定檔的裝置，一開始均屬於此群組。 您可以在註冊之後重新指派裝置。
+
+        >[!Important]
+        >群組指派將從 Intune 移至 Azure Active Directory。 [進一步了解](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **裝置註冊方案** - Apple 裝置註冊方案 (DEP) 不能與設定助理註冊搭配使用。 請確定切換設定為 [關閉]。
 
@@ -143,9 +140,9 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
     9. 在 [建立組織] 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
 
-    10.在 [設定 iOS 設定助理] 窗格中，選擇呈現給使用者的步驟，然後選擇 [準備]。 若出現提示，請驗證以更新信任設定。  
+    10. 在 [設定 iOS 設定助理] 窗格中，選擇呈現給使用者的步驟，然後選擇 [準備]。 若出現提示，請驗證以更新信任設定。  
 
-    11.當 iOS 裝置完成準備時，可以拔除 USB 纜線。  
+    11. 當 iOS 裝置完成準備時，可以拔除 USB 纜線。  
 
 8.  **發佈裝置**裝置現在已準備好進行公司註冊。 關閉裝置電源，並將它們散發給使用者。 裝置開啟時，會啟動 [設定助理]。
 
@@ -155,6 +152,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 透過報表來了解作業 | Microsoft Intune
-description:
-keywords:
+title: "透過報表來了解作業 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -45,6 +38,7 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 |**不相容的應用程式報告**|顯示安裝有您所列之相容及不相容應用程式之使用者的相關資訊。 您可以利用此報告尋找不符合您公司之應用程式原則的使用者與裝置。|
 |**憑證相容性報表**|顯示已透過 SCEP 或 PKCS #12 (.PFX) 發行給使用者和裝置的憑證。 您可以利用此報告尋找已經發出、到期及撤銷的憑證。|
 |**裝置歷程記錄報表**|顯示淘汰、抹除及刪除動作的歷程記錄。 使用此報表可以查看過去誰曾經在裝置上起始動作。|
+|**健康情況證明報告**|顯示行動裝置的健康情況。|
 |**Mac OS X 硬體報告**|顯示所選群組中所有已註冊的 Mac OS X 裝置的硬體詳細資料。 如需從這些裝置收集硬體清查的資訊，請參閱[在 Microsoft Intune 透過清查了解您的裝置](understand-your-devices-with-inventory-in-microsoft-intune.md)。|
 |**Mac OS X 軟體報告**|顯示所選群組中所有 Mac OS X 裝置上安裝的軟體。 報表會列出軟體名稱 (當做套件組合識別碼)、簡短版本 (或易記的) 名稱、版本和已安裝軟體的裝置數目。|
 
@@ -74,6 +68,7 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

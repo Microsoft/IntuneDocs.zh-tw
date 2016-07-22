@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
 ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
 
@@ -19,8 +20,7 @@ ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
 ---
 
 # Intune App SDK 概觀
-Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。 此外，我們盡力減少開發人員所需的程式碼變更數量。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了改進使用者和 IT 系統管理員體驗，您可以利用我們的 API，針對需要應用程式參與的功能，自訂您的應用程式行為。 
-一旦您啟用應用程式，IT 系統管理員便可將原則部署至受 Intune 管理的應用程式，並利用這些功能來保護其公司資料。
+Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。 此外，我們盡力減少開發人員所需的程式碼變更數量。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了改進使用者和 IT 系統管理員體驗，您可以利用我們的 API，針對需要應用程式參與的功能，自訂您的應用程式行為。 一旦您啟用應用程式，IT 系統管理員便可將原則部署至受 Intune 管理的應用程式，並利用這些功能來保護其公司資料。
 
 ## 一般功能
 
@@ -71,6 +71,6 @@ Microsoft Intune App SDK 包含數項處於「預覽」狀態的功能。 您可
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 建立原則及發行應用程式 | Microsoft Intune
-description:
-keywords:
+title: "建立原則及發行應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] 當您第一次啟動 **Intune 軟體發佈者**時，安裝應用程式時會出現短暫延遲的現象。
+    > [!NOTE]
+    > 當您第一次啟動 **Intune 軟體發行者** 時，安裝應用程式時會出現短暫延遲的現象。
 
 2.  檢閱安全性警告，然後選擇 **[執行]**。
 
@@ -114,6 +109,7 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 >[&larr; **組織使用者和裝置**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自訂公司入口網站** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

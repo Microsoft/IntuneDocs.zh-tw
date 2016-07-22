@@ -18,9 +18,9 @@
 
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [開發和自訂應用程式](/intune/develop/intune-app-sdk)
-# [疑難排解](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

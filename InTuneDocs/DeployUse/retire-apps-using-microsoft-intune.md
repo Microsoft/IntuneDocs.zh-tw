@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 淘汰應用程式 | Microsoft Intune
-description:
-keywords:
+title: "淘汰應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+
 
 ---
 
@@ -31,9 +25,9 @@ ms.suite: ems
 
 ## 解除安裝應用程式
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [應用程式] &gt; [應用程式]
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [應用程式] &gt; [應用程式]。
 
-2.  選取您要解除安裝的應用程式 (先前已部署)，然後選擇 [管理部署]
+2.  選取您要解除安裝的應用程式 (先前已部署)，然後選擇 [管理部署]。
 
 3.  在 [部署動作]  頁面上，從 [核准]  欄中選取 [解除安裝]  。
 
@@ -43,6 +37,7 @@ ms.suite: ems
 [在 Microsoft Intune 中新增應用程式](add-apps.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

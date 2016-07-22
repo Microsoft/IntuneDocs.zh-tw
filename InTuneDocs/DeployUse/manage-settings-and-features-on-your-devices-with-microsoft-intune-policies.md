@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 透過原則管理裝置上的設定和功能 | Microsoft Intune
-description:
-keywords:
+title: "透過原則管理裝置上的設定和功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 2.  選擇您想要的原則，然後選擇使用原則的建議設定 (如果有；稍後可變更這些設定)，或者使用您自己的設定來建立自訂原則。
 
-    > [!TIP] 如需協助選擇正確的原則，請參閱 [Microsoft Intune 原則參考](microsoft-intune-policy-reference.md)。
+    > [!TIP]
+    > 如需協助選擇正確的原則，請參閱 [Microsoft Intune 原則參考](microsoft-intune-policy-reference.md)。
 
 3.  當您準備好時，選擇 [建立原則]。
 
@@ -72,9 +67,9 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
     - [Windows Team 裝置的設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows 版本升級的設定](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Mac OS X 裝置的設定](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [設定 Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [條款及條件原則設定](terms-and-condition-policy-settings-in-microsoft-intune.md)
-    - [適用於行動裝置的一般設定 (舊版)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+    - [Exchange ActiveSync 的設定](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [條款和條件原則的設定](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [行動裝置的一般設定 (舊版)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  在確認對話方塊中，選擇 [是] 立即部署原則，或選擇 [否] 建立原則但不加以部署。
 
@@ -119,7 +114,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 在這種情況下，裝置會在其下次排定簽入 Intune 服務的時間取得原則，如下所示：
 
-- iOS - 每 6 小時
+- iOS 和 Mac OS X - 每 6 小時
 - Android - 每 8 小時
 - Windows Phone - 每 8 小時
 - 註冊的 Windows RT 裝置 - 每 24 小時
@@ -127,10 +122,10 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 如果裝置剛註冊，簽入頻率會更頻繁，如下所示：
 
-- iOS - 前 6 小時每 15 分鐘，之後每 6 小時
+- iOS 和 Mac OS X - 前 6 小時每 15 分鐘，之後每 6 小時
 - Android - 前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來每 8 小時
 - Windows Phone - 前 15 分鐘每 5 分鐘，之後 2 小時每 15 分鐘，再來每 8 小時
-- Windows 電腦註冊為裝置 - 前 30 分鐘每 3 分鐘，之後每 24 小時
+- Windows 電腦註冊為裝置 - 前 30 分鐘每 3 分鐘，之後每 8 小時
 
 使用者也可以啟動公司入口網站應用程式並同步處理裝置，以隨時立即檢查是否有原則。
 
@@ -149,7 +144,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 -   如果與不同相容性原則中的相同設定一起評估，則會套用限制最嚴格的相容性原則設定
 
--   如果與不同組態原則中的相同設定一起評估，則會套用限制最嚴格的組態原則設定
+-   如果設定原則的設定與不同設定原則中的設定衝突，這項衝突會顯示在 Intune 主控台中。 您必須以手動方式解決此類衝突。
 
 ### 當行動應用程式管理 (MAM) 原則彼此衝突時，會發生什麼情況？ 哪一項原則會套用至應用程式？
 除了數字輸入欄位 (例如重設前的 PIN 嘗試次數) 之外，衝突值是行動應用程式管理原則中限制最嚴格的設定。  數字輸入欄位會設定為相同的值，如同您在主控台中使用建議的設定選項建立 MAM 原則。
@@ -178,7 +173,25 @@ Intune 只會做為傳遞機制，而不會評估承載的 Apple 組態檔或自
         - 所需的密碼類型
         - 密碼到期 (天數)
         - 記住密碼歷程記錄
-        - 抹除裝置前允許的重複登入失敗次數 - 非使用狀態多少分鐘後需要密碼 - 必要的密碼類型 - 最小字元集數 - 允許相機 - 行動裝置需要加密 - 允許卸除式存放裝置 - 允許網頁瀏覽器 - 允許應用程式市集 - 允許螢幕擷取 - 允許地理位置 - 允許 Microsoft 帳戶 - 允許複製及貼上 - 允許 Wi-Fi 網際網路共用功能 - 允許自動連線至免費的 Wi-Fi 熱點 - 允許 Wi-Fi 熱點報表 - 允許重設成出廠預設值 - 允許 Bluetooth - 允許 NFC - 允許 Wi-fi
+        - 抹除裝置前允許的重複登入失敗次數
+        - 要求密碼前的閒置分鐘數
+        - 需要的密碼類型 – 最小字元集數
+        - 允許相機
+        - 在行動裝置上要求加密
+        - 允許卸除式存放裝置
+        - 允許網頁瀏覽器
+        - 允許應用程式市集
+        - 允許螢幕擷取
+        - 允許地理位置
+        - 允許 Microsoft 帳戶
+        - 允許複製並貼上
+        - 允許 Wi-Fi 網際網路共用功能
+        - 允許自動連線到免費的 Wi-Fi 熱點
+        - 允許 Wi-Fi 熱點回報
+        - 允許原廠重設
+        - 允許藍芽
+        - 允許 NFC
+        - 允許 Wi-Fi
     
     - **iOS** - 移除所有設定，除了︰
         - 允許語音漫遊
@@ -200,9 +213,10 @@ Intune 只會做為傳遞機制，而不會評估承載的 Apple 組態檔或自
 
 ### 哪裡可以找到疑難排解原則的說明？
 
-請參閱[疑難排解 Microsoft Intune 原則的問題](../Troubleshoot/troubleshoot-policies-in-microsoft-intune)。
+請參閱[Microsoft Intune 的原則疑難排解](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

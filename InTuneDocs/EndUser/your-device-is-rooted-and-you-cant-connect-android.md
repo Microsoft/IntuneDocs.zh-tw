@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 您的 Android 裝置已進行 Root 破解，因此無法連線 | Microsoft Intune
-description:
-keywords:
+title: "您的 Android 裝置已進行 Root 破解，因此無法連線 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
+
 
 ---
 
@@ -35,6 +28,7 @@ ms.suite: ems
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

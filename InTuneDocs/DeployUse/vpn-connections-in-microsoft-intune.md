@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: VPN 連線 | Microsoft Intune
-description:
-keywords:
+title: "VPN 連線 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -151,7 +145,7 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 
 2.  在 [管理部署]  對話方塊中：
 
-    -   **若要部署原則**：選取您要部署原則的一或多個群組，然後選擇 [新增] &gt; [確定]。
+    -   **若要部署原則**：選取您要部署原則的一或多個群組，然後選擇 **[新增]** &gt; **[確定]**。
 
     -   **若要關閉對話方塊但不加以部署** - 選擇 [取消]。
 
@@ -165,6 +159,7 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 [Android Pulse Secure 的個別應用程式 VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

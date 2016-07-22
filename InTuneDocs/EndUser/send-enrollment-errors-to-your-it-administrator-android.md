@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 將註冊錯誤傳送給 IT 系統管理員 | Microsoft Intune
-description:
-keywords:
+title: "將註冊錯誤傳送給 IT 系統管理員 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: e336289290cd79a2599ccfb7eccbc5df4230555b
+
 
 ---
 
@@ -40,6 +33,7 @@ ms.suite: ems
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

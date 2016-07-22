@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 概念證明 | Microsoft Intune
-description:
-keywords:
+title: "概念證明 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4c01b7cec6474153fcea465fc050ac419ca2eec5
+
 
 ---
 
@@ -60,7 +54,7 @@ ms.suite: ems
 概念證明不需要持續的作業。 但是，在特定的情況下，操作人員會想要在 PoC 中了解或驗證。
 
 ## 開始執行檢查清單
-以下是開始執行概念證明階段的步驟清單。
+以下是開始執行**概念證明**階段的步驟清單。
 
 -   定義 PoC 成功準則。 這些應該以驗證商務和技術需求為基礎。
 
@@ -69,20 +63,21 @@ ms.suite: ems
 -   識別適當的測試環境來模擬生產環境，例如，各種作業系統所需的裝置數目。
 
 ## 常見的挑戰
-以下是您在概念證明階段可能遇到的一些挑戰。
+以下是您在**概念證明**階段可能遇到的一些挑戰。
 
--   挑戰︰取得技術和人力資源來驗證類似實際執行的案例。
+-   **挑戰︰**取得技術和人力資源來驗證類似實際執行的案例。
 
-    緩和︰清楚表達從 PoC 環境汲取的心得有助於技術設計並改善後續階段的品質。 如果缺乏 PoC 的資源，則技術設計完成後仍需要汲取這些心得 -- 可能需要重新設計一些項目。
+    **緩和︰**清楚表達從 PoC 環境汲取的心得有助於技術設計並改善後續階段的品質。 如果缺乏 PoC 的資源，則技術設計完成後仍需要汲取這些心得 -- 可能需要重新設計一些項目。
 
--   挑戰︰定義生產環境中所需的測試案例。
+-   **挑戰︰**定義生產環境中所需的測試案例。
 
-    緩和︰與執行發起人、網路和使用者等團隊一起了解用戶端管理解決方案的需求。
+    **緩和︰**與執行發起人、網路和使用者等團隊一起了解用戶端管理解決方案的需求。
 
 ### 後續步驟
 [試驗](pilot.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

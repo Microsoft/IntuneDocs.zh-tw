@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows 電腦管理功能 | Microsoft Intune
-description:
-keywords:
+title: "Windows 電腦管理功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ ms.suite: ems
 -   **軟體授權管理** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
 -   **應用程式部署** - 將軟體部署到您所管理的電腦。 當您使用用戶端軟體管理電腦時，某些應用程式管理功能無法使用。
 
+
+Intune 支援在最多 7000 部 Windows 裝置上安裝電腦用戶端軟體。
 
 ## 作業系統需求
 Intune 可管理執行下列 Windows 版本 (x86 和 x64) 的電腦︰
@@ -77,6 +73,7 @@ Intune 可管理執行下列 Windows 版本 (x86 和 x64) 的電腦︰
 [Microsoft Intune 的行動裝置管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

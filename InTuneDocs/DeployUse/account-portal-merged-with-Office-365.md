@@ -1,27 +1,19 @@
 ---
-# required metadata
-
-title: 與 Office 365 管理入口網站合併的帳戶入口網站 | Microsoft Intune
-description:
-keywords:
+title: "與 Office 365 管理入口網站合併的帳戶入口網站 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
+translationtype: Human Translation
+ms.sourcegitcommit: 928b79530ac278f78356f8d1ef9f267077634b5b
+ms.openlocfilehash: 505e446125c938a9a978eb2908cfa0873ed66fcc
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -38,6 +30,7 @@ ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
 在 [Microsoft Intune 部落格](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/)中深入閱讀這項移動，或使用現有的認證直接前往新的 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx) (網址為 https://portal.office.com/Admin/Default.aspx)。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

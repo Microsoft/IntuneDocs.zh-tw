@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8.1 原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.1 原則設定 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,7 +121,8 @@ ms.suite: ems
 |**匯入應用程式**|匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 應用程式 URL」格式。|
 |**編輯**|讓我們編輯所選取應用程式的名稱、發行者和 URL。|
 |**刪除**|從清單中刪除選取的應用程式。|
-> [!IMPORTANT]如果您針對 Windows Phone 8.1 裝置指定允許的應用程式清單，則必須將公司入口網站應用程式新增至此清單，否則將會遭到封鎖。
+> [!IMPORTANT]
+> 如果您針對 Windows Phone 8.1 裝置指定允許的應用程式清單，則必須將公司入口網站應用程式新增至此清單，否則將會遭到封鎖。
 
 
 ### 相容與不相容之應用程式的參考資訊
@@ -174,6 +169,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

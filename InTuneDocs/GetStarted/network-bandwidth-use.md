@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Intune 網路頻寬用量 | Microsoft Intune
-description:
-keywords:
+title: "Intune 網路頻寬用量 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
 # Intune 網路頻寬用量
 
-設定 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列出的其他需求
+設定 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列出的其他需求。
 
 請使用下列各節中的資訊，規劃 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 用戶端的網路流量。
 
@@ -83,15 +77,16 @@ ms.suite: ems
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-若要使用 BranchCache，用戶端電腦必須已啟用 BranchCache，接著再完成分散式快取模式的設定
+若要使用 BranchCache，用戶端電腦必須已啟用 BranchCache，接著再完成**分散式快取模式**的設定。
 
 根據預設，已安裝 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 用戶端時電腦會啟用 BranchCache 和分散式快取模式。 不過，如果用戶端已有停用 BranchCache 的群組原則，[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 不會覆寫該原則，因此 BranchCache 將在該部電腦上維持停用狀態。
 
-如果使用 BranchCache，您應該與組織中負責管理群組原則和 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 防火牆原則的其他系統管理員溝通，確認他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](http://technet.microsoft.com/library/hh831696.aspx)
+如果使用 BranchCache，您應該與組織中負責管理群組原則和 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 防火牆原則的其他系統管理員溝通，確認他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](http://technet.microsoft.com/library/hh831696.aspx)。
 
 ### 請參閱
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

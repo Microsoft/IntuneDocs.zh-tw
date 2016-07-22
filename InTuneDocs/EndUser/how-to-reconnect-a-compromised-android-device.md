@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 如何重新連接遭盜用的 Android 裝置 | Microsoft Intune
-description:
-keywords:
+title: "如何重新連接遭盜用的 Android 裝置 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: c089b36676feb4caa7064738d6ef4b709139ab49
+
 
 ---
 
@@ -32,6 +26,7 @@ IT 管理員偵測到您正在使用根裝置。 「Root 破解」表示裝置�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

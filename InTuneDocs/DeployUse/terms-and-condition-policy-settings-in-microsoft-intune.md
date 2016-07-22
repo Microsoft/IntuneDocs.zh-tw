@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的條款和條件原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune 的條款和條件原則設定 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 ## 建立條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則]  &gt;  [條款和條件]
+1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
     ![條款和條件原則螢幕擷取畫面](./media/pol-sa-terms-conditions.png)
 
@@ -42,29 +36,29 @@ ms.suite: ems
 
 3.  在 [建立條款和條件] 頁面上，指定下列資訊：
 
-    -   名稱 - Intune 主控台中顯示的唯一原則名稱
+    -   **名稱** - Intune 主控台中顯示的唯一原則名稱
 
-    -   描述 - 協助您在 Intune 主控台中識別原則的詳細資料
+    -   **描述** - 協助您在 Intune 主控台中識別原則的詳細資料
 
-    -   標題 - 使用者在公司入口網站中看到的標題
+    -   **標題** - 使用者在公司入口網站中看到的標題
 
-    -   說明使用者接受之涵義的文字 - 使用者所看到有關接受的標籤。 範例：「我同意這些條款和條件。」
+    -   **說明使用者接受之涵義的文字** - 使用者所看到有關接受的標籤。 **範例**：「我同意這些條款和條件。」
 
 4.  完成後，請按一下 [儲存]。 新原則會隨即顯示在 [原則] 工作區的 [條款和條件] 節點中。
 
 ## 部署條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則]  &gt;  [條款和條件]
+1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
-2.  在 [條款和條件原則] 清單中，選取您要部署的原則，然後按一下 [管理部署]
+2.  在 [條款和條件原則] 清單中，選取您要部署的原則，然後按一下 [管理部署]。
 
-3.  在 [管理部署] 對話方塊中，選取您要部署原則的使用者群組，然後按一下 [確定]
+3.  在 [管理部署] 對話方塊中，選取您要部署原則的使用者群組，然後按一下 [確定]。
 
     當目標使用者存取公司入口網站時，Intune 會顯示您所部署的條款和條件。 使用者必須接受這些條款，才能存取公司資源。
 
 ## 監視條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則]  &gt;  [條款和條件]
+1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
 2.  在 [建立新報表] 視窗中，按一下 [檢視報表]。 報表會隨即開啟，並詳細列出哪些使用者已接受您所部署的條款和條件。
 
@@ -73,9 +67,9 @@ ms.suite: ems
 
 ## 如何使用多種版本的條款和條件
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則]  &gt;  [條款和條件]
+1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
-2.  選取您要編輯的條款和條件原則，然後按一下 [編輯]
+2.  選取您要編輯的條款和條件原則，然後按一下 [編輯]。
 
 3.  在 [編輯條款和條件] 頁面上，進行任何必要的編輯，然後指定這個新版本是否要求所有使用者都接受條款和條件，還是只有新使用者會看到新版本。
 
@@ -85,6 +79,7 @@ ms.suite: ems
 [透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

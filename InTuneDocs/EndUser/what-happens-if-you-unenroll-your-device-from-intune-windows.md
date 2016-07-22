@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 如果從 Intune 取消註冊裝置，會發生什麼情況？ | Microsoft Intune
-description:
-keywords:
+title: "如果從 Intune 取消註冊裝置，會發生什麼情況？ | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ ms.suite: ems
 
 -   從電腦移除 Intune Endpoint Protection 軟體。 如果電腦已安裝其他病毒防護軟體且已將它停用，則在移除 Intune Endpoint Protection 之後，可能會重新啟用該軟體。 在您將電腦從公司入口網站移除之後，應該檢查電腦。
 
-    > [!IMPORTANT] 如果其他防毒軟體未重新啟用，或是沒有安裝其他病毒防護軟體，您的電腦可能容易遭受病毒和惡意程式碼威脅。
+    > [!IMPORTANT]
+    > 如果其他防毒軟體未重新啟用，或是沒有安裝其他病毒防護軟體，您的電腦可能容易遭受病毒和惡意程式碼威脅。
 
 -   您在新增裝置時變更的任何裝置設定 (例如，停用相機) 都將失效。
 
@@ -97,6 +92,7 @@ ms.suite: ems
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

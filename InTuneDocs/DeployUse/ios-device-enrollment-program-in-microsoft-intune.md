@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 管理 iOS 裝置的 Apple DEP | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 管理 iOS 裝置的 Apple DEP | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+
 
 ---
 
@@ -59,6 +53,12 @@ Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置
       - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後便可以該使用者身分存取公司資料與電子郵件。  應針對使用者所擁有且需要使用公司入口網站 (如安裝 App) 之受 DEP 管理的裝置設定**使用者親和性**。
       - **無使用者親和性**：該裝置不會與使用者建立關聯。 針對執行工作而不需存取本機使用者資料的裝置，請使用此關係。 需要使用者關聯的應用程式 (包含用於安裝企業營運應用程式的公司入口網站應用程式) 將無法運作。
 
+    您也可以**將裝置指派給以下群組**。 按一下 [Select...] (選取…) 選擇群組。
+
+    >[!Important]
+    >群組指派將從 Intune 移至 Azure Active Directory。 [進一步了解](#changes-to-intune-group-assignments)
+
+
     接著，啟用 **[設定此設定檔的裝置註冊方案設定]** 來支援 DEP。
 
       ![設定助理窗格](../media/pol-sa-corp-enroll.png)
@@ -78,8 +78,16 @@ Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置
         - **定位服務** - 啟用時，設定助理會在啟用期間提示服務
         - **還原** - 啟用時，設定助理會在啟用期間提示 iCloud 備份
         - **Apple ID** - 需要有 Apple ID，才能下載 iOS App Store 應用程式 (包含 Intune 所安裝的應用程式)。 啟用時，如果 Intune 嘗試不使用 Apple ID 來安裝應用程式，則 iOS 將提示使用者輸入 ID。
-        - **條款及條件** - 如果啟用，設定助理會在啟用期間提示使用者接受 Apple 的條款與條件 - **Touch ID** - 如果啟用，設定助理會在啟用期間提示此服務 - **Apple Pay** - 如果啟用，設定助理會在啟用期間提示此服務- **縮放** - 如果啟用，設定助理會在啟用期間提示此服務 - **Siri** - 如果啟用，設定助理會在啟用期間提示此服務- **將診斷資料傳送給 Apple** - 如果啟用，設定助理會在啟用期間提示此服務-  **啟用其他 Apple Configurator 管理** - 設為 [不允許]，以禁止透過 Apple Configurator 與 iTunes 或管理同步處理檔案。 Microsoft 建議您設為 **[不允許]**，並從 Apple Configurator 匯出任何進一步設定，然後透過 Intune 部署為自訂 iOS 組態設定檔，而不是使用此設定來允許使用或不使用憑證進行手動部署。
-        - **不允許** - 禁止裝置透過 USB 進行通訊 (停用配對) - **允許** - 允許裝置透過來自任何電腦或 Mac 的 USB 連線進行通訊- **需要憑證** - 允許與憑證匯入至註冊設定檔的 Mac 配對
+        - **條款及條件** - 啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件
+        - **Touch ID** - 啟用時，設定助理會在啟用期間提示此服務
+        - **Apple Pay** - 啟用時，設定助理會在啟用期間提示此服務
+        - **縮放** - 啟用時，設定助理會在啟用期間提示此服務
+        - **Siri** - 啟用時，設定助理會在啟用期間提示此服務
+        - **傳送診斷資料給 Apple** - 啟用時，設定助理會在啟用期間提示此服務
+     -  **啟用其他 Apple Configurator 管理功能** - 設為 **[不允許]** 防止使用 iTunes 同步處理檔案或透過 Apple Configurator 進行管理。 Microsoft 建議您設為 **[不允許]**，並從 Apple Configurator 匯出任何進一步設定，然後透過 Intune 部署為自訂 iOS 組態設定檔，而不是使用此設定來允許使用或不使用憑證進行手動部署。
+        - **不允許** - 防止裝置透過 USB 進行通訊 (停用配對)
+        - **允許** - 允許裝置透過任何電腦或 Mac 的 USB 連線進行通訊
+        - **需要憑證** - 允許使用匯入至註冊設定檔的憑證與 Mac 配對
 
 6.  **指派要管理的 DEP 裝置**：前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司 Apple ID 登入。 移至 **[部署方案]** &gt; **[裝置註冊方案]** &gt; **[管理裝置]**。 指定您 **選擇裝置**的方式、提供裝置資訊，並利用裝置的 [序號] 、[訂單號碼] 或 [上傳 CSV 檔案] 指定詳細資料。 接著，選取 **[Assign to Server]** (指派給伺服器)，然後選取針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt;，然後按一下 **[確定]**。
 
@@ -91,12 +99,15 @@ Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置
 
 8.  **將裝置散發給使用者**：現在您可以將屬公司擁有的裝置散發給使用者。 當 iOS 裝置開機時，就會加以註冊交由 Intune 管理。
 
+## Intune 群組指派的變更
 
+從九月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 即將發行進一步的詳細資料。
 
 ### 請參閱
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 操作和維護 | Microsoft Intune
-description:
-keywords:
+title: "操作和維護 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: a26de5f97800d8cac0c52c87014c75402460fee4
+
 
 ---
 
@@ -63,7 +57,7 @@ Intune 會經常以新特性和功能加以更新。 請務必密切注意關於
 監視 Intune 主控台以取得警示和使用者或裝置的問題，並確保原則和應用程式發佈正根據您的組織計劃執行。
 
 ## 開始執行檢查清單
-以下是開始執行 O&M 階段的步驟清單。
+以下是開始執行 **O&M** 階段的步驟清單。
 
 -   確保您的監視的程序已就緒。
 
@@ -74,17 +68,18 @@ Intune 會經常以新特性和功能加以更新。 請務必密切注意關於
 -   技術支援人員清楚 Intune 的變更，包括各種不同作業系統裝置的相關功能變更。
 
 ## 常見的挑戰
-以下是您在 O&M 階段可能遇到的一些挑戰。
+以下是您在 **O&M** 階段可能遇到的一些挑戰。
 
--   挑戰︰系統管理員知道其環境需要定期監視。 不過，他們不熟悉 Intune 主控台。
+-   **挑戰︰**系統管理員知道其環境需要定期監視。 不過，他們不熟悉 Intune 主控台。
 
-    緩和措施︰投資於高品質的訓練。 系統管理員應該熟悉 Intune 主控台，以便他們可以更新原則、發佈軟體，以及更具信心地診斷和疑難排解問題。
+    **緩和措施︰**投資於高品質的訓練。 系統管理員應該熟悉 Intune 主控台，以便他們可以更新原則、發佈軟體，以及更具信心地診斷和疑難排解問題。
 
--   挑戰︰使用者遇到註冊和應用程式安裝的問題。
+-   **挑戰︰**使用者遇到註冊和應用程式安裝的問題。
 
-    緩和措施︰讓服務台備妥可以快速解決常見問題的疑難排解內容。
+    **緩和措施︰**讓服務台備妥可以快速解決常見問題的疑難排解內容。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

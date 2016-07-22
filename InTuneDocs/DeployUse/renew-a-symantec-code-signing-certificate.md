@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 更新 Symantec 企業程式碼簽署憑證以搭配 Microsoft Intune 一起使用 | Microsoft Intune
-description:
-keywords:
+title: "更新 Symantec 企業程式碼簽署憑證以搭配 Microsoft Intune 一起使用 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ ms.suite: ems
 
 ## 如何安裝 Windows Phone 8.0 的更新憑證
 
-1.  下載並簽署此處最新的 Windows Phone 公司入口網站：[http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  在此處下載並登入最新的 Windows Phone 公司入口網站： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
-2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，移至 [系統管理]、[行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]
+2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員]、[行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
@@ -55,9 +49,9 @@ ms.suite: ems
 
 ## 如何安裝適用於 Windows Phone 8.1 及更新版裝置的更新的證
 
-1.  從此處的下載中心下載並簽署最新的 Windows Phone 公司入口網站：[http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  從此處的下載中心下載並簽署最新的 Windows Phone 公司入口網站： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
-2.  開啟 [Intune 管理主控台](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com)，移至 [系統管理] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]
+2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
@@ -67,9 +61,11 @@ ms.suite: ems
 
 
 ### 請參閱
-設定 Windows Phone 8.0 管理
+[設定 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[設定 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

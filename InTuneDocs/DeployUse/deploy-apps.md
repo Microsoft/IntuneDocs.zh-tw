@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 部署應用程式 | Microsoft Intune
-description:
-keywords:
+title: "部署應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
+ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+
 
 ---
 
@@ -29,41 +22,14 @@ ms.suite: ems
 
 本主題說明在開始使用 Microsoft Intune 部署應用程式之前，您必須了解的一些概念。
 
-## Intune 軟體發行者
-當您從 Microsoft Intune 管理主控台新增或修改應用程式時，**Microsoft Intune 軟體發佈者**便會啟動。 請從發佈者選取和設定軟體安裝程式類型，以便上傳要儲存在 Intune 雲端存放裝置的應用程式 (電腦的程式或行動裝置的應用程式)，或是連結到線上商店或 Web 應用程式。
-
-### 需求
-開始使用 Microsoft Intune 軟體發佈者之前，您必須先安裝 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安裝之後，您可能必須重新啟動電腦，才能正確開啟軟體發行者。
-
-## 雲端儲存空間
-使用軟體安裝程式安裝類型所部署的所有應用程式都必須套件並上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 付費型訂閱則包含 20 GB 的空間，另外還可選擇購買額外的儲存空間。
-
-您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量並購買更多的儲存空間：
-
-針對 Intune 購買額外的雲端式儲存空間時應遵循這些規則：
-
--   您必須擁有有效的付費型訂閱，才能購買額外的存放裝置。
-
--   只有您的 Microsoft Online Service 的帳務管理員或全域管理員才能透過 Office 365 管理入口網站購買額外的儲存空間。 您必須是全域管理員，而且必須登入 Office 365 管理入口網站，才能新增、刪除或管理這些系統管理員。
-
--   如果您是大量授權客戶，且已透過 Enterprise 合約購買 Intune 或 Microsoft Intune 附加元件，請連絡您的 Microsoft 客戶經理或 Microsoft 合作夥伴，以取得價格資訊並購買額外的儲存空間。
-
-#### 雲端儲存空間需求
-
--   所有與應用程式相關聯的檔案都必須位在相同的位置，而且可供 Intune 存取。
-
--   您上傳的任何檔案的最大檔案大小是 2 GB。
-
--   若要上傳檔案，您必須有最低 768 Kbps 的網際網路速度。
 
 ## 應用程式部署動作
 當您部署應用程式時，可以選擇下列其中一個部署動作：
 
 -   **必要安裝** - 應用程式會安裝到裝置，而且無須使用者介入。
 
+    > [!TIP]
     > [!TIP] 針對未處於受監督模式的 iOS 裝置，以及針對所有 Android 裝置，使用者必須在安裝之前接受應用程式提供。
-    >
-    > 您無法再對執行 iOS 7.1 之前作業系統的 iOS 裝置，建立新的應用程式部署。 執行 iOS 7.1 之前作業系統的裝置上任何現有應用程式部署都將會繼續運作，並由 Intune 所管理。
     > 
     >  如果使用者解除安裝您部署為必要安裝的應用程式，Intune 會在下一個清查週期 (通常是每 7 天發生) 之後自動重新安裝應用程式。
 
@@ -87,6 +53,7 @@ ms.suite: ems
 |外部連結 (部署到裝置群組)|否|否|否|否|
 |應用程式商店的受管理 iOS 應用程式 (部署到使用者群組)|是|是|是|是|
 |應用程式商店的受管理 iOS 應用程式 (部署到裝置群組)|是|否|是|是|
+> [!TIP]
 > [!TIP] 當您部署應用程式時，如果選取使用者和裝置群組，則可以只將應用程式部署為 **[可用安裝[**。
 
 ## 部署衝突
@@ -94,17 +61,17 @@ ms.suite: ems
 
 -   部署到裝置群組的優先順序高於部署到使用者群組。 不過，如果應用程式部署到具有部署動作 [可用]  的使用者群組，而且相同的應用程式也部署到具有部署動作 [不適用] 的裝置群組，則在公司入口網站中會將應用程式設為可供使用者安裝。
 
--   IT 系統管理員的意圖優先於使用者。
-
 -   安裝動作的優先順序高於解除安裝動作。
 
--   若裝置同時收到必要及可用安裝，表示兩個動作皆須執行 (應用程式為必要也可供使用)。
+-   如果裝置收到必要和可用的安裝，會合併動作 (應用程式同時為必要和可用；亦即，使用者可以從公司入口網站安裝它，然後才開始進行必要的安裝)。
 
 
 ## 後續步驟
 
 深入了解如何[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)。
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jul16_HO2-->
 
 

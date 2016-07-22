@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: iOS 裝置的相容性原則設定| Microsoft Intune
-description:
-keywords:
+title: "iOS 裝置的相容性原則設定| Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+
 
 ---
 
@@ -72,7 +65,7 @@ ms.suite: ems
 - **選取必須由 Intune 管理的電子郵件設定檔︰**
   如果已選取 [必須由 Intune 管理電子郵件帳戶]**** 設定，請選擇 [選取]**** 以指定 Intune 電子郵件設定檔。 電子郵件設定檔必須在裝置上。
 
-     如需電子郵件設定檔的詳細資料，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。
+     如需電子郵件設定檔的詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。
 
 ## 裝置健全狀況設定
 
@@ -85,6 +78,7 @@ ms.suite: ems
 - **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

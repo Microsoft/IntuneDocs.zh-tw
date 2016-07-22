@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 管理透過大量採購方案購買的 iOS 應用程式 | Microsoft Intune
-description:
-keywords:
+title: "管理透過大量採購方案購買的 iOS 應用程式 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Microsoft Intune 透過此種程式從應用程式市集匯入授權資訊、追
 
 當具有合格裝置的使用者第一次嘗試安裝 VPP 應用程式時，系統會要求他們加入 Apple 大量採購方案。 他們必須這麼做，應用程式安裝才會繼續執行。
 
-> [!TIP] 查看 **[VPP Terms Status]** (VPP 條款狀態) 欄，以了解已部署應用程式之每位使用者的接受狀態。
+> [!TIP]
+> 查看 [VPP 條款狀態] 欄，以了解已部署應用程式之每位使用者的接受狀態。
 
 如果沒有更多的可用授權，部署將會失敗。
 
 ## 監視 Apple VPP 應用程式
 您可以監視已部署了哪些 VPP 應用程式，以及從 **[應用程式]** 工作區了解使用了多少授權，其位於：**[受管理的軟體]** &gt; **[大量購買應用程式]** 節點。
 
-> [!TIP] 您也可以使用應用程式的 **[篩選]** 來檢查每個應用程式的安裝狀態。
+> [!TIP]
+> 您也可以使用應用程式的 [篩選器] 來檢查每個應用程式的安裝狀態。
 
 ### 請參閱
 [在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

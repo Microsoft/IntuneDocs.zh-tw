@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 啟動您的產品金鑰 |Microsoft Intune
-description:
-keywords:
+title: "啟動您的產品金鑰 |Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
 -   若要啟用 Enterprise Mobility Suite 產品金鑰，請前往[這裡](http://www.microsoft.com/ems/open)。
 
-> [!NOTE]如果您遺失您的產品金鑰，請連絡合作夥伴或您購買此金鑰的經銷商。
+> [!NOTE]
+> 若遺失您的產品金鑰，請連絡合作夥伴或您購買此金鑰的轉銷商。
 
 ## 下載您的 System Center Configuration Manager 軟體
 若要下載 System Center Configuration Manager 軟體，請前往[大量授權服務中心](http://go.microsoft.com/fwlink/?LinkID=232300)。
@@ -56,6 +51,7 @@ ms.suite: ems
 |**很抱歉，我們無法處理您的訂單**。|租用戶已經建立，但尚未取回產品金鑰。 請使用上列連結，再次嘗試取回您的產品金鑰。 如果此問題持續發生，請連絡[支援](http://go.microsoft.com/fwlink/?LinkID=394189)。|
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

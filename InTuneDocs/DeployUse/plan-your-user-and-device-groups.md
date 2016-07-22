@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 規劃您的使用者和裝置群組 | Microsoft Intune
-description:
-keywords:
+title: "規劃您的使用者和裝置群組 | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Intune 提供九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 
 在範例中，我們也建立了中東和亞洲群組 MEA。
 
-> [!NOTE]若非依據安全性群組成員資格填入群組成員資格，請確認您已為這些成員指派 Intune 授權。
+> [!NOTE]
+> 如果未以安全群組成員資格來填入群組成員資格，請檢查您是否已指派 Intune 授權給這些成員。
 
 ### 特定硬體的群組
 如果您的組織需要適用於特定硬體類型的原則，您可以根據這項需求建立群組。 您可以根據已經在內部部署 AD 中建立的特定群組，並予以同步處理至 Azure AD。 您也可以直接在 Azure AD 中建立它們。 在此範例中，我們使用 [美國使用者群組] 作為 [膝上型電腦使用者] 群組的父群組。
@@ -174,7 +169,8 @@ Intune 提供九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 
 依照前列範例的方法，我們可以使用特定作業系統平台的使用者 <!--devices?--> 為依據來建立群組。
 
-> [!NOTE]您的使用者若是使用多種行動平台/作業系統，而且沒有自動化的方法可將使用者分類為 Android 使用者、iOS 使用者或 Windows 使用者，請考慮在裝置層級套用原則，讓您在套用 OS 相關原則時更具彈性。
+> [!NOTE]
+> 如果您的使用者會使用多種行動平台/作業系統，且沒有自動化的方式來將使用者分類為 Android 使用者、iOS 使用者或 Windows 使用者，請考慮在裝置層級套用原則，這樣會提供您較大的彈性來套用 OS 特定原則。
 >
 > 您無法根據裝置的作業系統動態佈建群組。 請使用 AD 或 AAD 安全性群組執行這項操作。
 
@@ -218,6 +214,7 @@ Intune 提供九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 [建立群組](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

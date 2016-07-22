@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
 ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
@@ -20,7 +21,8 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 # Microsoft Intune App SDK for iOS 開發人員指南
 
-> [!NOTE] 您可能想要先閱讀 [Intune App SDK 快速入門指南](intune-app-sdk-get-started.md)，其中說明如何在每個支援的平台上進行整合準備。* 
+> [!NOTE]
+> 您可能想要先閱讀 [Intune App SDK 快速入門指南](intune-app-sdk-get-started.md)，其中說明如何在每個支援的平台上進行整合準備。* 
 
 Microsoft Intune App SDK for iOS 可讓您將 Intune 行動應用程式管理 (MAM) 併入 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式，可讓 IT 系統管理員將原則部署至主動管理的行動應用程式。
 
@@ -225,7 +227,8 @@ ADALLogOverrideDisabled | 布林值  | 指定 SDK 是否會將所有 ADAL 記錄
 
 * 在 Xcode 內部或外部啟動應用程式。 確認 PIN 如預期般運作。
 
-> [!NOTE] 您現在可以使用 [設定] > [您的應用程式名稱] > [啟用測試原則]，來啟用並切換設定。
+> [!NOTE]
+> 您現在可以使用 [設定] > [您的應用程式名稱] > [Enable Test Policies] (啟用測試原則)，來啟用並切換設定。
 
 # 建議的 iOS 最佳作法
 
@@ -238,6 +241,6 @@ IOS 檔案系統區分大小寫。 請確定檔案名稱的大小寫正確，例
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO5-->
 
 

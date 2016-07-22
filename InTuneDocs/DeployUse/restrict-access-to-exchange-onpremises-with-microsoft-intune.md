@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取 | Microsoft Intune
-description:
-keywords:
+title: "限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ ms.suite: ems
 -   iOS 上的原生電子郵件應用程式。
 
 -   Android 4 或更新版本上的原生電子郵件應用程式
-> [!NOTE] 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
+> [!NOTE]
+> 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
 
 ## 對電腦的支援
 
@@ -104,7 +99,8 @@ Windows 8 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wi
 >如果您在授與電子郵件存取之前打算先封鎖所有裝置，請選擇 [封鎖存取] 或 [隔離] 規則。 預設規則將套用到所有裝置類型，因此您設定為平台例外和 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 不支援的裝置類型也會受到影響。
 
   - **使用者通知：**除了從 Exchange 傳送的通知電子郵件，Intune 也會傳送包含裝置解除封鎖步驟的電子郵件。 您可以編輯預設訊息，依照您的需求來自訂。 由於包含修復指示的 Intune 通知電子郵件會傳遞到使用者的 Exchange 信箱，萬一使用者在收到此電子郵件訊息之前，裝置就遭到封鎖，他們可以使用未封鎖的裝置或其他方法來存取 Exchange 並檢視該訊息。 這在 [預設規則] 已設為封鎖或隔離時特別有用。  在此情況下，使用者必須前往應用程式市集，下載 [Microsoft 公司入口網站] 應用程式並註冊其裝置。 這適用於 iOS、Windows 和 Samsung KNOX 裝置。  對於不是執行 Samsung KNOX 的裝置，您必須將隔離電子郵件傳送到備用電子郵件帳戶，接著，使用者必須將郵件複製到遭封鎖的裝置，以完成註冊和相容性程序。
-  > [!NOTE] 為了讓 Exchange 能夠傳送通知電子郵件，您必須指定應該用來傳送通知電子郵件的帳戶。
+  > [!NOTE]
+  > 為了讓 Exchange 能夠傳送通知電子郵件，您必須指定應該用來傳送通知電子郵件的帳戶。
   >
   > 如需詳細資料，請參閱[設定適用於內部部署或託管 Exchange 的 Exchange 內部部署連接器](intune-on-premises-exchange-connector.md)。
 
@@ -126,6 +122,7 @@ Windows 8 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wi
 [限制存取商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
