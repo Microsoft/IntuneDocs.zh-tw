@@ -1,25 +1,27 @@
 ---
 title: "Windows Phone 8.1 原則設定 | Microsoft Intune"
-description: 
+description: "Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一般設定。 此外，您可以指定 OMA-URI 值，來建立 Intune 未提供使用的自訂設定。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
 
 
 ---
 
 # Microsoft Intune 的 Windows Phone 8.1 原則設定
+
+Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一般設定。 此外，您可以指定 OMA-URI 值，來建立 Intune 未提供使用的自訂設定。
 
 ## 一般組態設定
 
@@ -54,7 +56,7 @@ ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
 
 |設定名稱|詳細資料|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**在行動裝置上要求加密**|需要加密受支援行動裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] ****。|是|是|
+|**在行動裝置上要求加密**|需要加密受支援行動裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。|是|是|
 
 ### 系統設定
 
@@ -108,7 +110,7 @@ ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
 |**允許複製並貼上**|允許在裝置上使用複製及貼上功能。|否|是|
 
 ### 相容與不相容之應用程式的設定
-在 [相容與不相容應用程式]**** 清單中，使用下列資訊，以指定相容或不相容應用程式清單：
+在 [相容與不相容應用程式] 清單中，使用下列資訊，以指定相容或不相容應用程式清單：
 
 > [!NOTE]
 > 單一原則只能包含相容應用程式清單或不符合規定的應用程式清單。 您不能在相同的原則中同時指定兩者。
@@ -152,9 +154,9 @@ ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
 
 ### OMA-URI 設定
 
-在 [OMA-URI 設定]**** 區段中，按一下 [新增]**** 以新增設定。 您也可以編輯或刪除現有的設定。
+在 [OMA-URI 設定] 區段中，按一下 [新增] 以新增設定。 您也可以編輯或刪除現有的設定。
 
-在 [新增或編輯 OMA-URI 設定]**** 對話方塊中，指定下列資訊：
+在 [新增或編輯 OMA-URI 設定] 對話方塊中，指定下列資訊：
 
 |設定名稱|詳細資料|
     |--------|--------------------|
@@ -170,6 +172,6 @@ ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

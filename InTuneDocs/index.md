@@ -1,28 +1,26 @@
 ---
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Microsoft Intune 文件"
+title: "Intune 文件 - MDM 文件 | Microsoft 文件"
 description: "Microsoft Intune 技術文件 - 行動裝置與應用程式管理"
-keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
+keywords: "intune 文件, MDM 文件, 行動裝置管理文件, 行動裝置與應用程式管理文件"
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod: 
 ms.service: microsoft-intune
-ms.technology: 
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: e8f9d974947835d5ec5a356bea6b4261960277ef
-ms.openlocfilehash: b6e3e5189a1567dd5b13017d275ff4bd548e5fa1
+ms.sourcegitcommit: c200c191168a8c5ae9382d62b3a25e9cfd1db3ac
+ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
 
 
 ---
-# Microsoft Intune 文件
+# Intune 文件
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Intune 文件</h1>
+      <h1>Intune 文件</h1>
       <h2>了解如何部署和管理 Microsoft Intune，這是一項行動裝置和應用程式的管理服務。</h2>
       <h3>使用 Configuration Manager 管理 Intune 嗎？ <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">檢視 Configuration Manager 文件 &rarr;</a></h3>
     </section>
@@ -284,6 +282,6 @@ ms.openlocfilehash: b6e3e5189a1567dd5b13017d275ff4bd548e5fa1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
