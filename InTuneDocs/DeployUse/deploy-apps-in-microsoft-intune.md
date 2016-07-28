@@ -1,10 +1,10 @@
 ---
-title: "部署應用程式 | Microsoft Intune"
-description: 
+title: "如何部署應用程式 | Microsoft Intune"
+description: "使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # 在 Microsoft Intune 中部署應用程式
 
-使用本主題中的資訊，幫助您部署 Microsoft Intune 應用程式。
+使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。
 
 
 ## 部署應用程式
-在這個程序中，您會將應用程式部署到選取的裝置或使用者。
+在這個程序中，您會將應用程式部署到選取的裝置或使用者群組。
 
 ### 部署應用程式
 
@@ -52,11 +52,11 @@ ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
 ## 範例
 
 在此範例中，會將應用程式當作**可用**部署至 iOS 裝置。
-應用程式會顯示在使用者裝置上的公司入口網站，讓使用者可以從中安裝應用程式。 例如，在這個螢幕擷取畫面中，適用於 iOS 的 Bing 應用程式是透過 [外部連結] 安裝類型進行部署並具有自訂圖示，而且已選取 [在公司入口網站中將此項目顯示為熱門應用程式並將它反白] 選項。
-    ![iOS 可用應用程式](./media/available-install-on-iOS.png)
+應用程式會顯示在使用者裝置上的公司入口網站，讓使用者可以從中安裝應用程式。 例如，在這個螢幕擷取畫面中，適用於 iOS 的 Bing 應用程式是透過 [外部連結] 安裝類型進行部署並具有自訂圖示，而且已選取 [在公司入口網站中將此項目顯示為熱門應用程式並將它反白] 選項。  
+![iOS 可用應用程式](./media/available-install-on-iOS.png)
 
-如果您將**必要**應用程式部署至 iOS 裝置，使用者會收到應用程式準備安裝的通知。 例如，在這個螢幕擷取畫面中，適用於 iOS 的工作資料夾應用程式是透過 [App Store 中所管理的 iOS 應用程式] 安裝類型進行部署。
-    ![iOS 必要應用程式](./media/iOS-Required-install.PNG)
+如果您將**必要**應用程式部署至 iOS 裝置，使用者會收到應用程式準備安裝的通知。 例如，在這個螢幕擷取畫面中，適用於 iOS 的工作資料夾應用程式是透過 [App Store 中所管理的 iOS 應用程式] 安裝類型進行部署。  
+![iOS 必要應用程式](./media/iOS-Required-install.PNG)
 
 ## 後續步驟
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

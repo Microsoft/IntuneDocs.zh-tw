@@ -3,18 +3,19 @@ title: "使用 USB 纜線將診斷資料記錄檔傳送給 IT 系統管理員 | 
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
 
 # 使用 USB 纜線將診斷資料記錄檔傳送給 IT 系統管理員
 
-如果您使用電腦而不是行動裝置，而且想要從行動裝置傳送資料記錄檔，讓 IT 系統管理員了解並修正問題，請使用下列步驟：
+如果您想要傳送資料記錄給 IT 系統管理員以取得相關協助來解決問題，您可以使用電腦和 USB 纜線來傳送記錄，而不是從您的行動裝置傳送記錄。 以下說明做法：
 
 1.  開始之前，請確定您有 IT 系統管理員的電子郵件地址。 該地址通常會列在公司入口網站或公司入口網站應用程式中。
 
@@ -38,6 +39,6 @@ ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

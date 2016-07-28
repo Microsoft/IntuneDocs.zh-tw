@@ -1,10 +1,10 @@
 ---
-title: "使用電子郵件設定檔來設定公司電子郵件存取權 | Microsoft Intune"
-description: 
+title: "使用電子郵件設定檔存取公司電子郵件 | Microsoft Intune"
+description: "電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
 
 如果您需要其他資料外洩防護 (DLP)，請選擇 [條件式存取][](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，這會控制任何電子郵件用戶端 (包括原生電子郵件用戶端) 的使用者信箱存取。
 
-電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。   大部分行動平台包括隨附於作業系統的*原生*電子郵件用戶端。  在 Microsoft Intune 可在原生電子郵件用戶端設定的支援的平台上，能讓使用者存取個人裝置上的公司電子郵件，而不需任何設定。  
+電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。 大部分行動平台包括隨附於作業系統的*原生*電子郵件用戶端。  在 Microsoft Intune 可在原生電子郵件用戶端設定的支援的平台上，能讓使用者存取個人裝置上的公司電子郵件，而不需任何設定。  
 
 IT 系統管理員或使用者也可以選擇安裝替代電子郵件用戶端，例如 Microsoft Outlook for Android 或 iOS。  這些電子郵件用戶端可能不支援電子郵件設定檔，並且不是使用 Microsoft Intune 電子郵件設定檔進行設定。  
 
@@ -111,6 +111,6 @@ IT 系統管理員或使用者也可以選擇安裝替代電子郵件用戶端�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

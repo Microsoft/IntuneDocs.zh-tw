@@ -1,27 +1,27 @@
 ---
-title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？ | Microsoft Intune"
+title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 Mac OS X 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f07eaf82a3bd8fc7fb47032642b30850fcbbb30d
 
 
 ---
 
 
-# 如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？
+# 如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 Mac OS X 裝置，會發生什麼情況？
 
 當您安裝公司入口網站應用程式，並且在 Intune 中註冊您的 iOS 或 Mac OS X 裝置時，您可以使用公司入口網站應用程式執行下列動作：
 
@@ -29,9 +29,9 @@ ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
 
 -   從公司入口網站取得公司應用程式
 
--   自動設定公司電子郵件帳戶
+-   在電話遺失或遭竊時從遠端將它重設為原廠設定
 
--   如果電話遺失或遭竊即重設為原廠設定
+-   自動設定公司電子郵件帳戶
 
 當您在 Intune 註冊裝置時，您將授與 IT 系統管理員管理您裝置的權限，以協助保護裝置上的公司資訊。
 
@@ -64,8 +64,6 @@ ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
 -   Owner
 
 -   裝置名稱
-
--   製造商
 
 註冊裝置之後，您的 IT 系統管理員可以：
 
@@ -101,6 +99,6 @@ ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

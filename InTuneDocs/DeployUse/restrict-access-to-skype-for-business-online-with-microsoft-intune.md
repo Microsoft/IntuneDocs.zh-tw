@@ -1,10 +1,10 @@
 ---
 title: "限制存取商務用 Skype Online | Microsoft Intune"
-description: 
+description: "使用條件式存取保護與控制商務用 Skype Online 的存取。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 693feee133a594032c0edc69f03f65681bacfb81
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 設定商務用 Skype Online 的條件式存取原則**之前**，您必須：
 - 具有**商務用 Skype Online 訂用帳戶**，並將商務用 Skype Online 授權指派給使用者。
 - 成為 **Enterprise Mobility Suite** 或 **Azure Active Directory Premium** 的訂用帳戶。
--   對商務用 Skype Online [啟用新式驗證](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。 
+-   對商務用 Skype Online [啟用新式驗證](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
 -  所有使用者都必須使用**商務用 Skype Online**。 如果您的部署同時有商務用 Skype Online 和商務用 Skype 內部部署，則條件式存取原則不會套用至使用者。
 
     需要存取商務用 Skype Online 的裝置必須：
@@ -69,11 +70,11 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 [建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到將受此原則影響的所有裝置。 這些是**目標群組**中的使用者所使用的所有裝置。
 
 > [!NOTE]
-> [!NOTE]相容性原則會部署至[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]群組，而條件式存取原則會以 Azure Active Directory 安全性群組為目標。
+> 雖然相容性原則會部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 群組，但條件式存取原則以 Azure Active Directory 安全性群組為目標。
 
 
 > [!IMPORTANT]
-> [!IMPORTANT]如果您尚未部署相容性原則，則會將裝置視為相容。
+> 如果您尚未部署相容性原則，則會將裝置視為相容。
 
 當您準備好時，請繼續執行 **步驟 3**。
 
@@ -115,6 +116,6 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "原則疑難排解 | Microsoft Intune"
-description: 
+description: "針對原則設定問題進行疑難排解。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -46,7 +47,8 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 
 ![Intune 裝置原則](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] 請記住，當有兩項不同限制等級的原則套用至同一部裝置或使用者時，實際上會套用限制更嚴格的原則。
+> [!NOTE]
+> 請記住，當有兩項不同限制等級的原則套用至同一部裝置或使用者時，實際上會套用限制更嚴格的原則。
 
 ## 原則的重新整理和更新間隔
 請注意，原則會定期重新整理和更新。 一般而言，原則應該在變更後的 15 分鐘內在裝置上註冊。 以下是定期重新整理原則的詳細資訊︰
@@ -68,7 +70,8 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 
 2.  等候 20 分鐘讓用戶端軟體被移除。
 
-    > [!NOTE] 請勿嘗試從 [程式和功能] 移除用戶端。
+    > [!NOTE]
+    > 請勿嘗試從 [程式和功能] 移除用戶端。
 
 3.  在 [開始] 功能表中輸入 **UAC**，開啟 [使用者帳戶控制] 設定。
 
@@ -110,6 +113,6 @@ Android MDM 不允許服務在裝置上強制執行其他平台所允許的初�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

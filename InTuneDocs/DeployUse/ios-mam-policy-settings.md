@@ -1,10 +1,10 @@
 ---
 title: "iOS MAM 原則設定 | Microsoft Intune"
-description: 
+description: "本主題說明適用於 iOS 裝置的行動裝置應用程式管理原則設定。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -37,6 +37,8 @@ ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
   - **無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。
 
   此外，如果這個選項設定為 [受原則管理的應用程式] 或 [無]，則會封鎖允許焦點搜尋在應用程式中搜尋資料的 iOS 9 功能。
+
+  **此設定對於在行動裝置上使用「開啟於」功能沒有影響。若要管理「開啟於」功能，請參閱[這裡](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**。
 
   **預設值 = 受原則管理的應用程式**
 
@@ -112,6 +114,6 @@ ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

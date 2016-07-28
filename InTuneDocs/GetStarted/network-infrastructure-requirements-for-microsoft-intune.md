@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: 網路基礎結構需求 | Microsoft Intune
-description:
-keywords:
+title: "網路基礎結構需求 | Microsoft Intune"
+description: "Intune 防火牆、連接埠、網域和 Proxy 伺服器需求"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8088765d726a9042b69fb12235994320e732459b
+
 
 ---
 
 # 適用於 Microsoft Intune 的網路基礎結構需求
-設定 Microsoft Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)列示的其他需求.
+設定 Microsoft Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列示的其他需求。
 
 本主題列出可讓您的網路基礎結構在您所管理並用來管理 Intune 訂用帳戶的裝置，以及網際網路上雲端式服務使用的網站之間傳遞通訊的需求。
 
@@ -160,7 +154,7 @@ ms.suite: ems
 ## Proxy 伺服器的需求
 若要管理位於 Proxy 伺服器後方的電腦，請注意︰
 
--   Proxy 伺服器必須同時支援 HTTP 和 HTTPS，因為 Intune 用戶端會使用這兩種通訊協定。
+-   Proxy 伺服器必須同時支援 **HTTP** 和 **HTTPS**，因為 Intune 用戶端會使用這兩種通訊協定。
 
 -   Intune 支援未經驗證的 Proxy 伺服器。
 
@@ -169,20 +163,11 @@ ms.suite: ems
 您還可以使用 Proxy 伺服器來快取內容，以減少 Intune 用戶端的[網路頻寬用量](network-bandwidth-use.md)。
 
 
-
-## Service to Service Connector 的需求
-Service to Service Connector 僅支援雲端式 Exchange，且對內部部署基礎結構沒有任何需求。
-
-若要使用此連接器，必須符合以下條件：
-
--   您有一項 Office 365 訂用帳戶擁有 Exchange Server 2013 租用戶。 只要租用戶是 Exchange Server 2013，連接器便可在同一個環境中支援 Exchange Server 2010。
-
--   您用來安裝 On-Premises Connector 的使用者帳戶必須是 Intune 的租用戶系統管理員，而且是 Exchange 租用戶中具有 Exchange Server 2013 使用授權的系統管理員。
-
 ### 請參閱
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

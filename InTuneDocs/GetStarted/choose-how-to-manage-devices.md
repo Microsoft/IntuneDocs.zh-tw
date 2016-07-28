@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
+ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
 
 
 ---
@@ -69,7 +69,7 @@ ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
 ## Exchange ActiveSync 管理
 您也可以使用 Exchange ActiveSync 來管理裝置。 這需要您安裝 On-Premises Connector 或使用內建的 Service to Service Connector 連線到您的 Exchange Server。
 
-若要了解安裝 On-Premises Connector 的軟硬體需求，請參閱[適用於 On-Premises Connector 的需求](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect)。
+若要了解安裝 On-Premises Connector 的軟硬體需求，請參閱[適用於 On-Premises Connector 的需求](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector)。
 
 若要了解如何使用 On-premises Connector 或 Service to Service Connector 與 Exchange，請參閱[使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
 
@@ -80,6 +80,6 @@ ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "服務描述 | Microsoft Intune"
-description: 
+description: "Intune 是雲端式服務，可協助您管理 Windows 電腦及 iOS、Mac OS X、Android 及 Windows 行動裝置。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
 
 
 ---
@@ -34,7 +34,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 -   [Microsoft Intune 的行動裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Configuration Manager 中行動裝置的一般設定](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Configuration Manager 中行動裝置的一般設定](https://technet.microsoft.com/library/dn376523.aspx)
 
 如需 System Center 2012 R2 Configuration Manager 的資訊，請參閱 [System Center 2012 Configuration Manager 文件庫](https://technet.microsoft.com/library/gg682041.aspx)。
 
@@ -45,9 +45,10 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 若要了解 Intune 服務變更，請參閱 [Microsoft Intune 的新功能](/intune/deploy-use/Whats-new-in-microsoft-intune.md)。 [Microsoft Intune 部落格](http://blogs.technet.com/b/microsoftintune/)也會討論服務的變更，並提供實用秘訣，讓您充分利用 Intune。
 
-我們也將會透過 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)訊息中心，通知您重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。
+我們也將會透過 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)訊息中心，通知您重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。
 
-> [!NOTE] 您可以在 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)中監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]**。  
+> [!NOTE]
+> 您可以在 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)中監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]**。  
 
 以下是 Microsoft 提供與 Intune 服務有關的通知類型︰
 -   為了協助您規劃服務變更，我們會在服務升級前至少 30-90 天通知您，視變更的影響而定。 使用類似佈告欄警示的產品內通訊通道時，就會發生這項變更。 這些變更可能包括︰
@@ -82,6 +83,6 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

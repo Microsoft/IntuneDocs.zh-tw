@@ -1,10 +1,10 @@
 ---
 title: "新增 Windows 電腦的應用程式 | Microsoft Intune"
-description: 
+description: "使用本主題的資訊，了解如何在部署之前，將適用於 Windows 電腦的應用程式新增至 Intune。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
-ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 0c70a40b9ec1ba53a6a3d6a1c3f197bf0252b8a3
 
 
 ---
@@ -90,6 +90,6 @@ ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
 建立應用程式後，下一個步驟是將它部署。 若要深入了解，請參閱 [在 Microsoft Intune 中部署應用程式](deploy-apps.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

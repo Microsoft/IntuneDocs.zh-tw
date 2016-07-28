@@ -1,6 +1,6 @@
 ---
 title: "裝置註冊疑難排解| Microsoft Intune"
-description: 
+description: "裝置註冊問題的疑難排解建議。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
@@ -160,8 +160,29 @@ ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
 
 2.  確認未向其他 MDM 提供者註冊裝置，而且裝置尚未安裝管理設定檔。
 
-
 4.  確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
+
+### Android 憑證問題
+
+**問題**：使用者在裝置上收到下列訊息：「您無法登入，因為您的裝置缺少必要的憑證」。
+
+**解決方案**： 
+
+- 使用者透過遵循[這些指示](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)，可能可以擷取遺失的憑證。
+- 若使用者無法擷取憑證，您的 ADFS 伺服器上可能遺失中繼憑證。 Android 需要中繼憑證以信任伺服器。 
+
+您可以將憑證匯入 ADFS 伺服器或 Proxy 上的中繼存放區，如下所示：
+
+1.  在 ADFS 伺服器上，啟動 **Microsoft Management Console**，並新增「電腦帳戶」的憑證嵌入式管理單元。 
+5.  尋找您的 ADFS 服務所使用的憑證，並檢視它的父憑證。
+6.  複製父憑證，並將它貼在 **Computer\Intermediate Certification Authorities\Certificates** 之下。
+7.  複製您的 ADFS、ADFS 解密及 ADFS 簽署憑證，並將它們貼在 ADFS 服務的個人存放區中。
+8.  重新啟動 ADFS 伺服器。
+
+使用者現在應該能夠在 Android 裝置上登入公司入口網站。
+
+
+
 ## iOS 問題
 ### 設定檔安裝失敗
 **問題**：使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。
@@ -285,6 +306,6 @@ ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

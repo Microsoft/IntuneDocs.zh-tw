@@ -1,6 +1,6 @@
 ---
 title: "MAM 原則的 Azure 入口網站 | Microsoft Intune"
-description: 
+description: "使用 Azure 入口網站建立行動裝置應用程式管理原則。 無論裝置是否有在 Intune 中註冊，您都可以套用在這裡建立的原則。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
 - **非**由任何 MDM 解決方案註冊之裝置上執行的應用程式。
 - **在協力廠商 MDM 解決方案中註冊**之裝置上執行的應用程式。
 
-如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則。
 >[!IMPORTANT]
+
+> 如果您目前使用 Intune 管理主控台來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)為在 Intune 中註冊的裝置建立支援應用程式的 MAM 原則。
+
 > 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
 
 ## 登入 Azure 入口網站和自訂起始頁
@@ -59,6 +61,6 @@ ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

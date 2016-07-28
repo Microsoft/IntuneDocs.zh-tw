@@ -1,6 +1,6 @@
 ---
 title: "限制電子郵件和 O365 服務的存取 | Microsoft Intune"
-description: 
+description: "本主題說明如何使用條件來僅允許相容裝置存取 SharePoint Online 與其他服務上的公司電子郵件和公司資料。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # 使用 Microsoft Intune 限制電子郵件、O365 和其他服務的存取
 您可以使用 Intune 的條件式存取來限制公司電子郵件和 O365 服務的存取。 Intune 的條件式存取功能可讓您確保只有與您所設定的規則相容的裝置，才能存取公司電子郵件和 O365 服務。
 ## 條件式存取的運作方式
-相容性原則設定用來評估裝置的相容性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 條件式存取原則與相容性原則搭配使用時，只有相容的裝置才能存取服務。
+相容性原則設定用來評估裝置的相容性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 條件式存取原則與相容性原則搭配使用時，只有相容的裝置才能存取服務。 相容性原則和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
 
-請記住，還必須將相容性原則部署至使用裝置的使用者，才能評估裝置的相容性。
+請記住，必須將相容性原則部署至使用裝置的使用者，才能評估裝置的相容性。
 如果沒有將相容性原則部署至使用者，裝置就視為相容，將不會套用存取限制。
 
 當裝置不符合原則中設定的條件時，將會引導使用者註冊並修正造成裝置不相容的問題。
@@ -64,6 +65,6 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

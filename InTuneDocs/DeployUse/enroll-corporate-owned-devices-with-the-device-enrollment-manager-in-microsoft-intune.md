@@ -1,10 +1,10 @@
 ---
-title: "使用裝置註冊管理員註冊公司所擁有的裝置 | Microsoft Intune"
-description: 
+title: "使用裝置註冊管理員進行註冊 | Microsoft Intune"
+description: "Microsoft Intune 的裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
-ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
 
 
 ---
@@ -91,6 +92,7 @@ ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
 -   刪除之裝置註冊管理員帳戶與註冊裝置之間的關聯性仍然存在，但不能再註冊其他裝置
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

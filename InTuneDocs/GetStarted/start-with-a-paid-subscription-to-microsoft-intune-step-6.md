@@ -1,9 +1,9 @@
 ---
 title: "建立原則及發行應用程式 | Microsoft Intune"
-description: 
+description: "說明如何為您的 Intune 訂閱建立原則及發佈範例應用程式"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 若要深入了解，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。
 
 您可以使用 Intune 執行兩種類型的 App 安裝。 第一個是 **必要的安裝**，會自動將 App 部署到受管理的電腦。 另一個則是**可用的安裝**，會部署應用程式或應用程式的連結到 Intune 公司入口網站，讓使用者可以選擇是否要將其安裝在電腦上，或安裝在行動裝置上。
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 下列步驟協助您設定行動裝置組態原則、Windows 電腦防火牆原則，並將 Skype 設定為可供行動裝置在註冊後安裝。
 
@@ -46,6 +41,10 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 3.  在 **[原則概觀]** 頁面的 **[工作]** 清單中，選擇 **[新增原則]**。
 
 4.  在原則清單中，展開您想要建立原則的平台，然後選擇 **[一般設定]** > **[使用建議的設定建立及部署原則]** > **[建立原則]**。
+
+> [!NOTE]
+> 裝置組態原則並沒有建議的設定，因為您有很多選項可以選擇。 您需要建立自訂裝置組態原則。
+
 
 5.  當提示 **[選取您要部署此原則的群組]** 時，請從可用群組的清單中選擇群組，再依序選擇 **[新增]**  >  **[確定]**。
 
@@ -110,6 +109,6 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,26 +1,27 @@
 ---
-title: "裝置沒有最基本必備的作業系統版本 | Microsoft Intune"
+title: "Android 裝置沒有最基本必備的作業系統版本 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 620078cdd6a6d918153ab5a9813a14406c11acb4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: bb629c3349ae201d5420249a62c5315ec11fc7dd
 
 
 ---
 
 
-# 裝置沒有最基本必備的作業系統版本
+# Android 裝置沒有最基本必備的作業系統版本
 
 您的 Android 裝置不符合 IT 部門所要求的最基本作業系統版本。 更新裝置之前，請點選 [設定] &gt; [關於電話] 來檢查目前的作業系統版本，然後點選 [設定]，再尋找更新選項以檢查是否有可用的裝置更新。
 
@@ -30,6 +31,6 @@ ms.openlocfilehash: 620078cdd6a6d918153ab5a9813a14406c11acb4
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

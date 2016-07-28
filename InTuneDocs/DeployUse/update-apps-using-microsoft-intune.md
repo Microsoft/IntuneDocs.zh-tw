@@ -1,10 +1,10 @@
 ---
 title: "更新應用程式 | Microsoft Intune"
-description: 
+description: "使用本主題中的資訊可了解如何更新需要新版本的應用程式。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune 可協助您管理應用程式更新。 使用本主題中的�
 
 ## 如何更新應用程式
 發行您所部署之應用程式的新版本時，Intune 可讓您更新和部署應用程式的較新版本。 您只能將部署取代為相同應用程式的較新版本 (使用相同的識別項)。 您無法使用應用程式更新來更新不同的應用程式套件的部署。
+
+### 應用程式識別碼
+應用程式識別碼是一個能唯一識別應用程式的屬性。 您無法安裝多個擁有相同識別碼的應用程式。 例如：
+
+- **iOS** - 組合識別碼 (例如：com.microsoft.excel)
+- **Android** - 套件識別碼 (例如：com.microsoft.excel)
+- **Windows Phone** - (XAP 安裝程式) 使用產品識別碼 (GUID)
+- **Windows** - (appx/appxbundle)，使用套件完整名稱
+
+
 
 > [!IMPORTANT]
 > 當您使用 [需要的安裝]  部署動作來部署應用程式，但稍後又將部署動作變更為 [可用安裝] ，則應用程式的更新不會自動安裝在變更部署前安裝應用程式的裝置上。 若要修正此問題，您可以執行下列作業：
@@ -49,6 +60,6 @@ Microsoft Intune 可協助您管理應用程式更新。 使用本主題中的�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

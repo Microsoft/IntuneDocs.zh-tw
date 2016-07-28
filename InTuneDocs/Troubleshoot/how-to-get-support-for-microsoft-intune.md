@@ -1,10 +1,10 @@
 ---
 title: "如何取得支援 | Microsoft Intune"
-description: 
+description: "付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 ---
@@ -26,32 +27,33 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 如需使用 Intune 的自我協助，請參閱 [Microsoft Intune 的一般疑難排解提示](general-troubleshooting-tips-for-microsoft-intune.md) 或列在本主題之**請參閱**小節中特定問題的任何疑難排解主題。
 ## 建立線上服務要求
 
-1.  登入 Intune，然後瀏覽 [Office 365 系統管理中心](https://portal.office.com/Support/SupportEntry.aspx)。
+1.  使用 Intune 認證登入 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)。
 
-2.  在 [建立服務要求] 標題下，選取您要開啟票證的問題類別：
+2.  在 [建立服務要求] 下，選取您要開啟票證的問題類別：
 
-    -   如需計費和授權問題，請選取 [計費和產品資訊]。
+    -   針對計費、授權以及帳戶問題，請選取 [計費和產品資訊]。
 
-    -   如需所有其他 Intune 問題，請選取 [行動裝置管理]。 這個選項也涵蓋 Office 365 MDM 以及具備 Intune 的 System Center Configuration Manager。
+    -   如需所有其他 Intune 問題，請選取 [行動裝置管理]。
 
-    > [!NOTE] 您可能必須按一下清單底部的 **[更多資訊]**，以查看所有類別。
+    > [!NOTE]
+    > 您可能必須選擇清單底部的 [更多資訊]，以查看所有類別。
 
 3.  在 [找出問題]  頁面上，選取您需要協助的 [功能] 和 [徵兆]。 系統會要求您提供 [問題摘要] 和 [問題詳細資料]。
 
-4.  在 [檢閱建議]  頁面上，您會發現可協助您自行解決問題的內容連結。  如果您不能解決此問題，您可以按一下頁面底部的 [是，繼續] 提交服務要求。
+4.  在 [檢閱建議]  頁面上，您會發現可協助您自行解決問題的內容連結。  如果您不能解決此問題，您可以選擇頁面底部的 [是，繼續] 提交服務要求。
 
-5.  在 [新增詳細資料] 頁面上，提供要求的資訊。 您可以按一下 [附加檔案]，附加螢幕擷取畫面或其他文件。
+5.  在 [新增詳細資料] 頁面上，提供要求的資訊。 您可以選擇 [附加檔案]，附加螢幕擷取畫面或其他文件。
 
-6.  在 [確認並提交] 頁面上提供連絡資訊、檢閱您的要求，然後按一下 [提交要求]。 提交要求之後，會將您帶往服務要求清單。
+6.  在 [確認並提交] 頁面上提供連絡資訊、檢閱您的要求，然後選擇 [提交要求]。 提交要求之後，會將您帶往服務要求清單。
 
 ## 電話支援
 若需依國家和地區的支援電話號碼清單，或是需要知道支援時數和各地區支援的語言清單，請參閱 [Microsoft Intune 的連絡電話協助支援](contact-assisted-phone-support-for-microsoft-intune.md)。
 
 ## 追蹤服務要求
-若要追蹤您的要求，請移至 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx)。 在 [建立服務要求] 清單底部，按一下 [查看所有支援票證]。 根據預設，您會看到所有服務要求處於開啟狀態。 若要變更所要查看的服務要求 (例如若要查看已關閉的要求)，請按一下頂端導覽列的篩選圖示，並選取您慣用的檢視。
+若要追蹤您的要求，請移至 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx)。 在 [建立服務要求] 清單底部，選擇 [查看所有支援票證]。 根據預設，您會看到所有服務要求處於開啟狀態。 若要變更所要查看的服務要求 (例如若要查看已關閉的要求)，請選擇頂端導覽列的篩選圖示，並選取您慣用的檢視。
 
 > [!NOTE]
-> **如果您使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**如需 Configuration Manager 或 Endpoint Protection 的技術支援，請連絡您的合作夥伴，或瀏覽 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解決方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)，以尋找豐富的自助資料，並可在線上或透過電話來開啟支援要求。
+> **如果您使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection**：如需 Configuration Manager 或 Endpoint Protection 的技術支援，請連絡您的合作夥伴，或瀏覽 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解決方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)，以尋找豐富的自助資料，並可在線上或電話開啟支援要求。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技術支援需要付費，或從您現有的授權或頂級支援協議中扣減。
 
@@ -138,6 +140,6 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

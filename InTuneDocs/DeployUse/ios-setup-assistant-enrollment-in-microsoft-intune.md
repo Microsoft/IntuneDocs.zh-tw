@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊 | Microsoft Intune"
-description: 
+title: "使用設定助理註冊 iOS 裝置 | Microsoft Intune"
+description: "透過 Apple Configurator 工具將裝置恢復出廠預設值，並使裝置準備好執行設定助理，來註冊公司擁有的 iOS 裝置。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -26,7 +26,8 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 ## 使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊
 透過 Apple Configurator，您可以將 iOS 裝置重設成出廠預設值，以準備讓裝置的新使用者進行設定。  這個方法需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊，且該方法之前提為假設您使用 Apple Configurator 2.0。 大部分案例需要套用至 iOS 裝置的原則包括*使用者親和性*來啟用 Intune 公司入口網站應用程式。
 
-**必要條件**
+**先決條件**
+* 透過安裝 APN 憑證以[啟用 iOS 註冊](set-up-ios-and-mac-management-with-microsoft-intune.md)
 * IOS 裝置的實體存取 - 裝置必須是未經設定 (恢復出廠預設值)，無密碼保護
 * 裝置序號 - [如何取得 iOS 序號](https://support.apple.com/en-us/HT204308)
 * USB 連接線
@@ -36,8 +37,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 1.  **建立行動裝置群組** (選用) 如果您的業務需要行動裝置群組來協助管理裝置，請建立這些群組。 [利用 Microsoft Intune 使用群組來管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
 
 2.  **建立裝置的設定檔**裝置註冊設定檔會定義套用到裝置群組的設定。 如果您尚未這麼做，請建立使用 Apple Configurator 所註冊之 iOS 裝置的裝置註冊設定檔。
-
-    ###### 建立設定檔
 
     1.  在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com)中，移至 [原則] &gt; [公司擁有的裝置]，然後選擇 [新增...]。
 
@@ -62,8 +61,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
         -   **裝置群組預先指派** - 所有部署此設定檔的裝置，一開始均屬於此群組。 您可以在註冊之後重新指派裝置。
 
-        >[!Important]
-        >群組指派將從 Intune 移至 Azure Active Directory。 [進一步了解](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **裝置註冊方案** - Apple 裝置註冊方案 (DEP) 不能與設定助理註冊搭配使用。 請確定切換設定為 [關閉]。
 
@@ -153,6 +151,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

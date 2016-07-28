@@ -1,9 +1,9 @@
 ---
-title: "使用 Microsoft Intune 設定 iOS 裝置的電子郵件存取 | Microsoft Intune"
-description: 
+title: "設定 iOS 裝置的電子郵件存取 | Microsoft Intune"
+description: "使用 Intune 設定 iOS 裝置的電子郵件存取"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 此逐步解說中，我們將使用試用版訂用帳戶隨附的託管 Exchange 伺服器。
 1. 在 Intune 主控台中，按一下 [原則]，然後按一下 [新增原則]。
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. 在 [建立新的原則] 對話方塊中，展開 [iOS]，選取 [電子郵件設定檔]，然後按一下 [建立原則]。
+2. 在 [建立新的原則] 對話方塊中，展開 [iOS]，選取 [電子郵件設定檔]，然後按一下 [建立原則]。  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. 在 [建立原則] 頁面中，輸入原則名稱 (例如 **iOS 電子郵件設定檔 - 使用者密碼**) 和描述。 針對不同的裝置類型和不同的驗證方法，您可能有多個電子郵件設定檔，您可以使用名稱來顯示設定檔的用途。
 4. 輸入 Exchange 主機名稱。 因為我們使用 Azure 託管的 Exchange 伺服器，所以直接輸入主機名稱︰**outlook.office365.com**
@@ -51,21 +51,23 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 8. 按一下 [儲存原則]。
 9. 此時會出現對話方塊，詢問您現在是否要部署原則。 按一下 [是]。
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. 在接著出現的視窗中，選取電子郵件設定檔部署的目標使用者群組，按一下 [新增]**新增**，然後按一下 [確定]。
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)按一下 [確定] 之後，原則在一兩分鐘內會開始流向已註冊的裝置。
+10. 在接著出現的視窗中，選取電子郵件設定檔部署的目標使用者群組，按一下 [新增]**新增**，然後按一下 [確定]。  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+按一下 [確定] 之後，原則在一兩分鐘內會開始流向已註冊的裝置。
 
 ## 確認已成功套用設定檔的步驟
 
 若要確認已套用設定檔，您必須存取其中一個已部署電子郵件設定檔的裝置。
 1. 在 iOS 裝置上，開啟 [郵件] 應用程式。
-應用程式會提示您輸入使用者的電子郵件使用者名稱和密碼。
+應用程式會提示您輸入使用者的電子郵件使用者名稱和密碼。  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. 輸入使用者 Exchange 電子郵件帳戶的使用者名稱和密碼，然後點選 [確定]。
  將以 Exchange 帳戶開啟 [郵件] 應用程式，而郵件會開始同步到裝置。
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. 簽入 [郵件] 應用程式的帳戶設定，以確定帳戶名稱與您在電子郵件設定檔中輸入的帳戶名稱相同 (例如，**Contoso Mail**)，而且同步處理設定正確。
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) 如果發現電子郵件設定檔尚未自動套用至裝置，您可以在裝置上使用公司入口網站應用程式，手動套用原則。
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  如果發現電子郵件設定檔尚未自動套用至裝置，您可以在裝置上使用公司入口網站應用程式，手動套用原則。
 1. 開啟公司入口網站應用程式。
 2. 點選 [我的裝置]。
 3. 點選您的裝置名稱。
@@ -78,6 +80,6 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

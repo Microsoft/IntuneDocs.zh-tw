@@ -1,10 +1,10 @@
 ---
-title: "使用行動應用程式管理原則保護應用程式資料 | Microsoft Intune"
-description: 
+title: "使用 MAM 原則保護應用程式資料 | Microsoft Intune"
+description: "本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
 ## 如何保護應用程式資料
 您的員工使用行動裝置處理公私事務。  確保員工生產力的同時，也要防止故意和不小心的資料外洩。  此外，即使您並不管理裝置，您也想要保護使用裝置所存取的公司資料。
 
-您可以使用行動裝置應用程式管理 (MAM) 原則來協助保護公司的資料。 因為 Intune MAM 原則可獨立於任何行動裝置管理 (MDM) 解決方案之外使用，不論是否在裝置管理解決方案中註冊裝置，都可以用它來保護公司的資料。 您可以實作**應用程式層級原則**，以限制存取公司資源，並將資料保留在 IT 部門範疇內。
+您可以使用行動裝置應用程式管理 (MAM) 原則來協助保護公司的資料。 因為 Intune MAM 原則可**獨立於任何行動裝置管理 (MDM) 解決方案之外**使用，不論是否在裝置管理解決方案中註冊裝置，都可以用它來保護公司的資料。 您可以實作**應用程式層級原則**，以限制存取公司資源，並將資料保留在 IT 部門範疇內。
 
-MAM 原則支援下列裝置上執行的應用程式︰
-> [!IMPORTANT]
-> 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援 MAM 原則。
+MAM 原則可針對執行於下列裝置上的應用程式設定：
 
+- **在 Microsoft Intune 中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
 
-- **在 Microsoft Intune 中管理和註冊的裝置**。 此類別中的裝置通常是公司管理的裝置。
-
--   **在協力廠商行動裝置管理解決方案中管理和註冊的裝置**。   此類別中的裝置通常是公司管理的裝置。
+-   **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
 
   > [!NOTE]
   > 行動裝置應用程式管理原則不應搭配使用協力廠商的行動裝置應用程式管理或安全容器解決方案。
 
--   **未受管理的裝置**。  此類別中的裝置通常是不在 Intune 或其他 MDM 解決方案中管理或註冊的員工個人裝置。
+-   **未註冊任何行動裝置管理解決方案︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
+
+> [!IMPORTANT]
+> 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange、商務用 Skype 或 SharePoint 服務的應用程式不支援 MAM 原則。
 
 **使用 MAM 原則的重要優點為：**
 
@@ -133,6 +133,6 @@ MDM 解決方案：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,26 +1,26 @@
 ---
-title: "Microsoft Intune 受管理行動裝置的 Exchange 存取規則 | Microsoft Intune"
-description: 
+title: "行動裝置的 Exchange 存取規則 | Microsoft Intune"
+description: "行動裝置管理 (MDM) 的 Exchange ActiveSync 存取規則決定那些裝置對 Exchange 的存取層級。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # 行動裝置的 Exchange 存取規則
-行動裝置的 Exchange 存取規則決定那些裝置對 Exchange 的存取層級。 這些設定會影響所有行動裝置 (包含 Microsoft Intune 中未註冊的裝置)。 您可以先定義 [預設規則]  ，這個預設規則將套用到沒有套用自訂規則的任何行動裝置。 下表包含 Exchange ActiveSync 管理的存取層級：
+行動裝置的 Exchange 存取規則決定那些裝置對 Exchange ActiveSync 的存取層級。 這些設定會影響所有行動裝置 (包含 Microsoft Intune 中未註冊的裝置)。 您可以先定義 [預設規則]  ，這個預設規則將套用到沒有套用自訂規則的任何行動裝置。 下表包含 Exchange ActiveSync 管理的存取層級：
 
 |存取層級|說明|
 |----------------|---------------|
@@ -53,6 +53,6 @@ ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

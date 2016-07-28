@@ -1,26 +1,27 @@
 ---
-title: "手動同步處理您的裝置 | Microsoft Intune"
+title: "手動同步處理您的 Windows 裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 
 
 ---
 
 
-# 手動同步處理您的裝置
+# 手動同步處理您的 Windows 裝置
 如果您的應用程式安裝花費太長的時間，請使用下列指示手動同步處理您的 Windows 裝置，這樣可能有助於加速安裝。 唯一支援的版本如下所列。 請使用符合您所擁有之裝置類型的連結 (如上述＜在本文中＞一節所示)：
 
 * [Windows 10 Mobile](#windows-10-mobile)
@@ -98,6 +99,6 @@ ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

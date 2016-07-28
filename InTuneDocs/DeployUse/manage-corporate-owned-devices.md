@@ -1,10 +1,10 @@
 ---
 title: "管理公司裝置 | Microsoft Intune"
-description: 
+description: "根據裝置、裝置的購買方式以及組織需求，以各種方式管理公司所擁有的裝置 (COD)。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
 
 [使用裝置註冊管理員註冊公司所擁有的裝置](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## 國際行動設備識別 (IMEI)
-唯一的國際行動設備識別碼 (IMEI) 號碼是許多行動裝置製造商的通用裝置屬性。 Intune 系統管理員可以匯入公司擁有之裝置的 IMEI 號碼。 當裝置變成由 Intune 管理時，可以將它標記為公司擁有的裝置，並使用適當的原則為目標。
+## 註冊公司所擁有的 Windows 10 桌上型電腦
 
-[使用國際行動設備識別碼 (IMEI) 號碼來指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+如果貴組織擁有 Azure Active Directory Premium (AADP) 或企業管理套件 (EMS)，您可以[註冊 Windows 10 企業版](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)，而它們將會在使用者新增他們的工作或學校帳戶時，自動標記為「公司擁有」。
+
+## 識別公司所擁有的裝置
+
+在裝置清單中的 [擁有權] 底下，公司所擁有的裝置會列出為 [公司]。 可透過下列方式將裝置識別為公司所擁有的裝置：
+
+ - [使用裝置註冊管理員註冊 (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - 使用 Apple 的[裝置註冊方案 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 或 [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) 註冊
+ - [使用 IMEI 編號預先宣告裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Windows 10 裝置的 Azure Active Directory/企業管理套件註冊](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### 國際行動設備識別 (IMEI)
+
+唯一的國際行動設備識別碼 (IMEI) 號碼是許多行動裝置製造商的通用裝置屬性。 Intune 系統管理員可以匯入公司擁有之裝置的 IMEI 號碼。 當裝置變成由 Intune 管理時，會將它標記為公司所擁有的裝置。
+
+[使用國際行動設備識別碼 (IMEI) 編碼來指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

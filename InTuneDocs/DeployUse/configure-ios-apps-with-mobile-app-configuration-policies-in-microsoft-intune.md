@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式 | Microsoft Intune
-description:
-keywords:
+title: "使用 iOS 行動裝置應用程式組態原則 | Microsoft Intune"
+description: "您可以在 Intune 中使用行動裝置應用程式組態原則，來提供使用者執行 iOS App 時可能需要的設定。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: faf65ddbb4772f8c0ce0a4125bb108b3b1bcfb5c
+
 
 ---
 
@@ -48,13 +42,13 @@ ms.suite: ems
 > -   **應用程式商店中的受管理 iOS 應用程式**
 > -   **iOS 應用程式套件**
 > 
-> 如需應用程式安裝類型的詳細資訊，請參閱[使用 Microsoft Intune 部署應用程式](deploy-apps.md).
+> 如需應用程式安裝類型的詳細資訊，請參閱[使用 Microsoft Intune 部署應用程式](deploy-apps.md)。
 
 ## 設定行動裝置應用程式組態原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [概觀] &gt; [新增原則].
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 **[原則]** &gt; **[概觀]** &gt; **[新增原則]**。
 
-2.  在原則清單中，展開 [iOS]，按一下 [行動裝置應用程式組態]，然後按一下 [建立原則].
+2.  在原則清單中，展開 [iOS] ，按一下 [行動裝置應用程式組態] ，然後按一下 [建立原則] 。
 
     > [!TIP]
     > 您只能針對這種原則類型進行自訂設定。 沒有建議的設定。
@@ -70,9 +64,9 @@ ms.suite: ems
     > 
     > Intune 支援屬性清單中的下列資料類型：
     > 
-    > &lt;整數&gt;
+    > &lt;integer&gt;
     > &lt;real&gt;
-    > &lt;字串&gt;
+    > &lt;string&gt;
     > &lt;array&gt;
     > &lt;dict&gt;
     > &lt;true /&gt; 或 &lt;false /&gt;
@@ -81,15 +75,7 @@ ms.suite: ems
     >
         > 此外，Intune 支援屬性清單中的下列權杖類型︰
     >    
-    > \{\{使用者主體名稱\}\} - (範例：John@contoso.com)
-    > \{\{郵件\}\} - (範例：John@contoso.com)
-    > \{\{部分 UPN\}\} - (範例：John)
-    > \{\{帳戶識別碼\}\} - (範例：fc0dc142-71d8-4b12-bbea-bae2a8514c81)
-    > \{\{裝置識別碼\}\} - (範例：b9841cd9-9843-405f-be28-b2265c59ef97)
-    > \{\{使用者識別碼\}\} - (範例：3ec2c00f-b125-4519-acf0-302ac3761822)
-    > \{\{使用者名稱\}\} - (範例：John Doe)
-    > \{\{序號\}\} - 適用於 iOS 裝置 (範例：F4KN99ZUG5V2)
-    > \{\{序號後 4 個數字\}\} - 適用於 iOS 裝置 (範例：G5V2)
+    > \{\{userprincipalname\}\} - (範例︰**John@contoso.com**) \{\{mail\}\} - (範例︰**John@contoso.com**) \{\{partialupn\}\} - (範例︰**John**) \{\{accountid\}\} - (範例︰**fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (範例︰**b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (範例︰**3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (範例︰**John Doe**) \{\{serialnumber\}\} - (範例︰**F4KN99ZUG5V2**) 適用於 iOS 裝置 \{\{serialnumberlast4digits\}\} - (範例︰**G5V2**) 適用於 iOS 裝置
 >
 > \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。
 
@@ -101,21 +87,21 @@ ms.suite: ems
     > [!IMPORTANT]
     > 當您按一下 [驗證] 時，Intune 會檢查您輸入的 XML 格式是否有效。 但不會檢查 XML 屬性清單是否適用於相關聯的應用程式。
 
-6.  完成之後，按一下 [儲存原則].
+6.  完成之後，按一下 [儲存原則] 。
 
 新的原則會顯示在 [組態原則]  節點中。
 
 ## 建立行動裝置應用程式組態原則與應用程式的關聯
 建立行動裝置應用程式組態原則之後，您必須將其與要套用組態原則之設定的 iOS 應用程式建立關聯。
 
-若要這樣做，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Microsoft Intune 部署應用程式](deploy-apps-in-microsoft-intune.md)中建立應用程式部署的步驟。 在精靈的 行動應用程式組態 頁面中，從 應用程式組態原則 下拉式清單選取您要與應用程式建立關聯的原則。
+若要這樣做，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Microsoft Intune 部署應用程式](deploy-apps-in-microsoft-intune.md)中建立應用程式部署的步驟。 在精靈的 **行動應用程式組態** 頁面中，從 **應用程式組態原則** 下拉式清單選取您要與應用程式建立關聯的原則。
 
 然後，如往常般繼續部署和監視應用程式部署。
 
 當已部署的應用程式在裝置上執行時，它會使用您在行動裝置應用程式組態原則中所做的設定來執行。
 
 > [!TIP]
-> 如果有一或多項行動裝置應用程式組態原則衝突，則不會強制執行任何一項原則，而且會在 Intune 管理主控台的 [儀表板] 中報告這項衝突.
+> 如果有一或多項行動裝置應用程式組態原則衝突，則不會強制執行任何一項原則，而且會在 Intune 管理主控台的 [儀表板] 中報告這項衝突。
 
 ## 行動應用程式設定 XML 檔案的範例格式
 
@@ -150,6 +136,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

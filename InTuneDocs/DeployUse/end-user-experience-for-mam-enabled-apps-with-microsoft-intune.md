@@ -1,6 +1,6 @@
 ---
 title: "MAM 啟用應用程式的使用者經驗 | Microsoft Intune"
-description: 
+description: "本主題描述當您的應用程式受到行動應用程式管理原則所管理時需預期的情況。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
 
 
 ---
@@ -46,7 +47,8 @@ ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
 
     ![顯示開啟現有檔案清單的檔案位置的螢幕擷取畫面](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE] 當您變更已部署的原則時，會在下次開啟應用程式時套用這些變更。
+    > [!NOTE]
+    > 當您變更已部署的原則時，會在下次開啟應用程式時套用這些變更。
 
 ##  在 Android 裝置上存取 OneDrive
 
@@ -169,6 +171,6 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

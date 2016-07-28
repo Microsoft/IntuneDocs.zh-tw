@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 應用程式生命週期概觀 | Microsoft Intune
-description:
-keywords:
+title: "應用程式生命週期概觀 | Microsoft Intune"
+description: "深入了解從新增 Intune 管理的應用程式，到它們最終淘汰的生命週期。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 86d9de9992003ffd163291035174c8d1e822929a
+
 
 ---
 
@@ -29,11 +23,11 @@ ms.suite: ems
 
 加入應用程式並進行其他階段時即開始 Intune 應用程式生命週期，直到您將它們移除。
 
-![應用程式生命週期](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![應用程式生命週期](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## 新增
 
-應用程式部署的第一個步驟是加入您想要管理和部署到 Intune 的應用程式。 雖然您可以使用許多不同的應用程式類型，基本程序都相同。 Intune 可讓您同時為[註冊的裝置](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Intune 用戶端軟體管理的 Windows 電腦](add-apps-for-windows-pcs-in-microsoft-intune.md)加入應用程式.
+應用程式部署的第一個步驟是加入您想要管理和部署到 Intune 的應用程式。 雖然您可以使用許多不同的應用程式類型，基本程序都相同。 Intune 可讓您同時為[註冊的裝置](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Intune 用戶端軟體管理的 Windows 電腦](add-apps-for-windows-pcs-in-microsoft-intune.md)新增應用程式。
 
 ## 部署
 
@@ -53,9 +47,10 @@ Intune 提供您許多方法來協助保護您的應用程式中的資料。 主
 
 ## 淘汰
 
-最後，您部署的應用程式很可能會過時，因此必須移除。 Intune 可讓您輕鬆地[從服務淘汰應用程式](retire-apps-using-microsoft-intune.md).
+最後，您部署的應用程式很可能會過時，因此必須移除。 Intune 可讓您輕鬆地[從服務淘汰應用程式](retire-apps-using-microsoft-intune.md)。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

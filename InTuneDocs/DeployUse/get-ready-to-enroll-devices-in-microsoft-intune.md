@@ -1,32 +1,32 @@
 ---
 title: "準備註冊裝置 | Microsoft Intune"
-description: 
+description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
-ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
 
 
 ---
 
 # 準備在 Microsoft Intune 中註冊裝置
-若要讓員工向 Intune 註冊行動裝置 (包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)，以及 [Windows 電腦](set-up-windows-device-management-with-microsoft-intune.md))，您必須啟用裝置註冊。 若要允許註冊，您必須設定行動裝置管理授權單位、設定 Intune 公司入口網站、指派授權，以及啟用裝置平台的註冊。
+若要讓員工向 Intune 註冊行動裝置 (包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)，以及 [Windows 電腦](set-up-windows-device-management-with-microsoft-intune.md))，您必須啟用裝置註冊。 若要允許註冊，您必須設定行動裝置管理 (MDM) 授權單位、設定 Intune 公司入口網站、指派授權，以及啟用裝置平台的註冊。
 
 ## 設定行動裝置管理授權單位
-MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括 Intune 自身己以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
+MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
 
 >[!IMPORTANT]
-> 請仔細考慮只要使用 Intune (線上服務) 還是具備 Intune 的 System Center Configuration Manager (內部部署軟體解決方案與線上服務搭配使用) 來管理行動裝置。 行動裝置管理授權單位在設定之後便無法再做變更。
+> 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後便無法再做變更。
 
 
 
@@ -36,7 +36,7 @@ MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權�
 
     ![[設定 MDM 授權單位] 對話方塊](../media/intune-mdm-authority.png)
 
-3.  Intune 要求您確認是否要以 Intune 做為 MDM 授權單位。 核取該方塊，然後選擇 [是]，以使用 Microsoft Intune 管理行動裝置。
+3.  Intune 要求您確認是否要以 Intune 做為 MDM 授權單位。 選取核取方塊，然後選擇 [是] 以使用 Microsoft Intune 管理行動裝置。
 
 ## 設定 Intune 公司入口網站
 
@@ -45,11 +45,11 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 > [!TIP]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)，並選擇 [管理員] &gt; [公司入口網站]，然後進行公司入口網站設定。
+自訂公司入口網站可協助為終端使用者提供熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，並選擇 [系統管理] &gt; [公司入口網站]，然後進行公司入口網站設定。
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
-#### 公司連絡人資訊和隱私權聲明
+### 公司連絡人資訊和隱私權聲明
 
 公司名稱顯示為公司入口網站標題。 連絡資訊和詳細資料會在公司入口網站的 [連絡 IT] 畫面中向使用者顯示。 當使用者按一下隱私權連結時，會顯示隱私權聲明。
 
@@ -59,10 +59,10 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
     |IT 部門連絡人姓名|40|此姓名會顯示在 [連絡 IT] 頁面中。|
     |IT 部門電話號碼|20|此連絡電話號碼會顯示在 [連絡 IT] 頁面中。|
     |IT 部門電子郵件地址|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|
-    |其他資訊|120|顯示在 [連絡 IT] 頁面中。|
+    |其他資訊|120|此資訊會顯示在 [連絡 IT] 頁面上。|
     |公司隱私權聲明 URL|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須使用 https://www.contoso.com 格式輸入有效的 URL。|
 
-#### 支援連絡人
+### 支援連絡人
 支援網站將會顯示在公司入口網站中，讓使用者能夠存取線上支援。
 
 |欄位名稱|長度上限|詳細資訊|
@@ -71,26 +71,26 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
     |網站名稱|40|這是支援網站的 URL 所顯示的易記名稱。 如果您指定支援網站 URL，但沒有指定易記名稱，則公司入口網站的 [連絡 IT] 頁面上將會顯示 [移到 IT 網站]。|
 
 
-#### 公司商標自訂
+### 公司商標自訂
 
 您可以使用公司標誌、公司名稱、佈景主題色彩和背景自訂您的公司入口網站。
 
 |欄位名稱|詳細資訊|
     |----------|----------------|
     |佈景主題色彩|選取要套用到公司入口網站的佈景主題色彩。|
-    |包含公司標誌|啟用此選項時，您可以上傳公司標誌以顯示在公司入口網站中。 您可以上傳兩個標誌：一個會在公司入口網站背景是白色時顯示，另一個則會在公司入口網站背景使用您選取的佈景主題色彩時顯示。 每個標誌必須是 .png 或 .jpg 檔案類型，且最大解析度為 400 x 100 像素，大小則是 750 KB 以下。|
+    |包含公司標誌|啟用此選項時，您可以上傳公司標誌以顯示在公司入口網站中。 您可以上傳兩個標誌：一個會在公司入口網站背景是白色時顯示，另一個則會在公司入口網站背景使用您選取的佈景主題色彩時顯示。 每個標誌必須是 .png 或 .jpg 檔案，且最大解析度為 400 x 100 像素，大小則是 750 KB 以下。|
     |選擇 [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] 公司入口網站應用程式的背景|這項設定只會影響 [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] 公司入口網站應用程式的背景。|
 
 
-儲存變更之後，您可以使用管理主控台之 [公司入口網站] 頁面下方提供的連結，檢視公司入口網站。 這些連結無法變更。 當使用者登入時，這些連結會顯示您在公司入口網站的訂閱。
+儲存變更之後，您可以使用管理主控台之 [公司入口網站] 頁面下方所提供的連結，檢視公司入口網站。 這些連結無法變更。 當使用者登入時，這些連結會顯示您在公司入口網站的訂閱。
 
 ## 指派 Intune 使用者授權
 
-您可以使用 **Office 365 管理入口網站**手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure AD 的帳戶。
+您可以使用「Office 365 管理入口網站」手動新增雲端式使用者，並將授權同時指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure Active Directory (Azure AD) 的帳戶。
 
 1.  使用您的租用戶系統管理員認證登入 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)。
 
-2.  選取您想要指派 Intune 使用者授權的使用者帳戶，並啟用使用者帳戶屬性上的 [Microsoft Intune] 核取方塊。
+2.  選取您想要指派 Intune 使用者授權的使用者帳戶，然後選取使用者帳戶屬性上的 [Microsoft Intune] 核取方塊。
 
 3.  使用者帳戶現在會加入至 Microsoft Intune 使用者群組，以授權使用者使用此服務並註冊裝置以納入管理。
 
@@ -104,11 +104,11 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 - [使用 Microsoft Intune 設定 Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)
 
 您也可以：
- - 使用[裝置註冊管理員帳戶](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)註冊多部裝置
- - [使用 IMEI 數字指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)協助註冊裝置和目標原則
+ - 使用[裝置註冊管理員帳戶](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)註冊多部裝置。
+ - [使用 IMEI 數字指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)以協助註冊裝置和目標原則。
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

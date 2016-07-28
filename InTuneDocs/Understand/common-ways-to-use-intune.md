@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Intune 的常見方式 | Microsoft Intune
-description:
-keywords:
+title: "使用 Intune 的常見方式 | Microsoft Intune"
+description: "列出使用者要 Intune 為其執行的六項最常見工作"
+keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 深入實作工作時，契合貴公司的企業行動力專案關係人與業務目標很重要。  不論您是企業行動力新手，還是從另一個產品移轉而來，這一點都很要。  企業行動力需求已大幅創新，Microsoft 用來解決這些需求的方法有時可能與市場的其他解決方案不同。  契合業務目標的最佳方式是針對您想要為員工、協力廠商和 IT 塑造的環境，以表達您要完成的工作。  以下簡介 6 個依賴 Intune 的常見案例，以及如何規劃及部署每個案例的詳細資訊連結。
 
->[!NOTE] 您是否想要了解 Microsoft IT 如何使用 Intune，讓 Microsoft 員工在其行動裝置上存取公司資源，同時保護公司資料？ [閱讀此技術性案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)，詳細查看 Microsoft IT 如何使用 Intune 與其他服務來管理身分識別、裝置、應用程式和資料。  
+>[!NOTE]
+>您是否想要了解 Microsoft IT 如何使用 Intune，讓 Microsoft 員工在其行動裝置上存取公司資源，同時保護公司資料？ [閱讀此技術性案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)，詳細查看 Microsoft IT 如何使用 Intune 與其他服務來管理身分識別、裝置、應用程式和資料。  
 
 ## 保護內部部署電子郵件和資料，以透過行動裝置安全存取
 大部分企業行動力策略計劃一開始都是讓員工，在行動裝置上使用網際網路安全地存取電子郵件。 許多組織仍然有內部部署資料和應用程式伺服器，例如裝載在其公司網路上的 Microsoft Exchange。 Intune 和 Enterprise Mobility Suite (EMS) 為 Exchange Server 提供唯一的整合式條件存取解決方案，確保在使用 Intune 註冊裝置前沒有行動應用程式能夠存取電子郵件，且不需要將其他閘道電腦部署到公司網路的邊緣即可執行所有工作！
@@ -67,11 +62,12 @@ Intune 提供了大量的佈建和管理解決方案，其整合目前市場上�
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 讓您的員工從未受管理的公用 kiosk 中安全存取 Office 365
-有時候您的員工需要使用您無法管理的裝置、應用程式或瀏覽器，例如商展和旅館的公用電腦。  您應該允許員工從中存取公司電子郵件？  利用 Intune 和企業行動套件，您就可以選擇。  答案可以是「不行」，方法是限制您的組織所管理的裝置存取電子郵件。  或者，您可以選擇允許有限存取這些未受信任電腦，方法是要求多因素驗證，並只允許瀏覽器在無法下載檔案的模式下 (例如電子郵件附件) 存取 (Outlook Web Access)。  這可確保經過嚴格驗證的員工不會不小心將公司資料放在不受信任的電腦上。
+有時候您的員工需要使用您無法管理的裝置、應用程式或瀏覽器，例如商展和旅館的公用電腦。 您應該允許員工從中存取公司電子郵件？ 利用 Intune 和企業行動套件，<!--you have choices. The-->答案可以是「不行」，方法是限制您的組織所管理的裝置存取電子郵件。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  這可確保經過嚴格驗證的員工不會不小心將公司資料放在不受信任的電腦上。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

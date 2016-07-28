@@ -1,26 +1,27 @@
 ---
-title: "使用公司入口網站重設您的裝置會發生什麼情況？ | Microsoft Intune"
+title: "使用公司入口網站重設 Android 裝置會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: ccadd02107f96c680cadd4e3b7a337292c530bae
 
 
 ---
 
 
-# 使用公司入口網站重設您的裝置會發生什麼情況？
+# 使用公司入口網站重設 Android 裝置會發生什麼情況？
 
 當您使用公司入口網站來重設您的 Android 裝置時，裝置上的所有應用程式、設定和個人資料都將會刪除，讓裝置回到其原廠預設設定。
 
@@ -36,6 +37,6 @@ ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

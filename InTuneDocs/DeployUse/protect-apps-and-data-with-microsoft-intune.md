@@ -1,10 +1,10 @@
 ---
 title: "保護應用程式和資料 | Microsoft Intune"
 description: 
-keywords: 
+keywords: "本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。"
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ Intune 透過多重技術層級保護公司資料。  在身分識別層，條�
 - 要求 PIN/密碼或公司認證，以保護應用程式存取。
 - 在 Intune 受管理瀏覽器中開啟所有網頁連結。
 
-這幾組規則稱為[行動應用程式管理 (MAM) 原則](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。  不論您是否管理裝置，MAM 原則可以套用至這些裝置上執行的應用程式。  在 Intune 中註冊的裝置上、由其他協力廠商 MDM 註冊和管理的裝置上，或您未管理的裝置上 (例如員工個人裝置)，您可以使用 MAM 原則來保護公司資料。
+這幾組規則稱為[行動應用程式管理 (MAM) 原則](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。  不論您是否管理裝置，MAM 原則可以套用至這些裝置上執行的應用程式。  
+
+**在 Intune 中註冊**的裝置上、**由其他協力廠商 MDM 註冊和管理**的裝置上，或**未在任何 MDM 方案中註冊**的裝置上 (例如員工個人裝置)，您可以使用 MAM 原則來保護公司資料。
 
 若要讓應用程式與 MAM 原則產生關聯，應用程式必須納入 Microsoft Intune 應用程式軟體開發套件 (SDK)，或使用應用程式包裝工具。
 
@@ -51,6 +53,6 @@ Microsoft Office 之類的應用程式已內建應用程式 SDK。 在 Microsoft
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

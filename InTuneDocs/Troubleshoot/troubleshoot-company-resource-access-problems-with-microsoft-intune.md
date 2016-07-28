@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 公司資源存取問題疑難排解 | Microsoft Intune
-description:
-keywords:
+title: "公司資源存取問題疑難排解 | Microsoft Intune"
+description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 9a4dce9d7b963e03ceeeba35ba1e529384f42d06
+
 
 ---
 
@@ -374,9 +368,10 @@ ms.suite: ems
 |-2016346011|0x87D10065|正在執行指定的 SyncML 命令，但是尚未完成。|
 
 ### 後續步驟
-如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務，如[如何取得 Microsoft Intune 的支援](how-to-get-support-for-microsoft-intune.md)中所述
+如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

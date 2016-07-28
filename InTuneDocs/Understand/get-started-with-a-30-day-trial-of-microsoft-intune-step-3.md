@@ -1,9 +1,9 @@
 ---
-title: "建立群組來組織評估訂閱使用者和裝置 | Microsoft Intune"
-description: 
+title: "建立群組來組織使用者和裝置 | Microsoft Intune"
+description: "當您註冊免費 30 天的 Intune 評估時，如何建立裝置群組和使用者群組"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8045703bf7eb0f03906f44303509a4b81ae62270
 
 
 ---
@@ -65,6 +65,6 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "設定 Windows Phone 8.0 管理 |Microsoft Intune"
-description: 
+description: "啟用適用於使用 Microsoft Intune 之 Windows Phone 8.0 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
-ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
 
 
 ---
@@ -183,6 +183,6 @@ Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 SDK 讓應用程式進行行動應用程式管理 | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "使用 SDK 讓應用程式進行 MAM | Microsoft Intune"
+description: 
+keywords: 
+author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: addf6791cbd72f9fe9806fd799d36ac198f6df74
+
 
 ---
 
@@ -38,13 +32,13 @@ ms.suite: ems
 
 您需要存取應用程式的原始程式碼才能使用 SDK，但可以啟用大部分的 SDK 功能，而不需要變更應用程式的行為。
 
-如需 SDK 的概觀，請參閱 [概觀][](https://msdn.microsoft.com/en-us/library/mt627767.aspx) 頁面。 若要開始使用 Intune App SDK，請參閱[開始使用 Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627766.aspx).
+如需 SDK 的概觀，請參閱[概觀](/intune/develop/intune-app-sdk)頁面。 若要開始使用 Intune App SDK，請參閱[開始使用 Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)。
 
 ### 請參閱
 [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

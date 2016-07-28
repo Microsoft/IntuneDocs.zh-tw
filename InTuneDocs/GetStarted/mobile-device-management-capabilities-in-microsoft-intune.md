@@ -1,10 +1,10 @@
 ---
 title: "行動裝置管理功能 | Microsoft Intune"
-description: 
+description: "閱讀本主題以了解 Intune 可以協助您管理您向服務註冊之行動裝置的方式。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 23054b2f02d11ca19cd0902ebc1e6fdcf499d1f1
+ms.openlocfilehash: 8f44256fe249c60df8e910858516a25463c8e875
 
 
 ---
@@ -42,7 +42,8 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |應用程式部署及管理|提供多種工具協助您管理行動應用程式的生命週期，包括安裝檔案及應用程式存放區、密切監視應用程式狀態及移除應用程式等應用程式部署工作。|[在 Microsoft Intune 中部署應用程式](/intune/deploy-use/deploy-apps)|
 |符合規定及不符合規定的應用程式|可讓您指定相容應用程式 (使用者可以安裝的應用程式) 及不相容應用程式 (使用者不得安裝) 的清單。|[Microsoft Intune 的 iOS 原則設定](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |行動應用程式管理|對您使用 Intune 管理的裝置和未由 Intune 管理的裝置，使用行動應用程式管理來設定應用程式的限制。 這可讓您藉由限制某些作業來提升公司資料的安全性，例如複製及貼上、從外部備份資料，以及在應用程式之間傳送資料。|[在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[使用 Microsoft Intune 建立及部署行動應用程式管理原則](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[準備 Android 應用程式以使用 Microsoft Intune 應用程式包裝工具進行行動應用程式管理](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|行動裝置應用程式組態|使用行動裝置應用程式組態原則來為 iOS 應用程式提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定登入資訊的連接埠號碼。 這有助於簡化組態，並減少服務台電話數量。|[在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS 行動裝置應用程式組態|使用行動裝置應用程式組態原則來為 iOS 應用程式提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定登入資訊的連接埠號碼。 這有助於簡化組態，並減少服務台電話數量。|[在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS 行動裝置應用程式佈建設定檔|Intune 提供您主動將佈建設定檔部署至即將到期之 iOS 應用程式的工具。|[使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |受管理的瀏覽器|為使用者部署受管理的瀏覽器之後，可以設定受管理的瀏覽器原則來控制他們所能造訪的網站。 此外也可將行動應用程式管理原則，套用到受管理的瀏覽器。|[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Intune 可讓您與 Microsoft Passport for Work 整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 的替代方法。|[使用 Microsoft Intune 控制裝置上的 Microsoft Passport 設定](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

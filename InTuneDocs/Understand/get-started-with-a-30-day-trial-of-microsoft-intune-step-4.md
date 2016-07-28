@@ -1,9 +1,9 @@
 ---
-title: "建立原則以及將應用程式發行給評估使用者 | Microsoft Intune"
-description: 
+title: "建立原則以及將應用程式發行給使用者 | Microsoft Intune"
+description: "當您註冊免費 30 天的 Intune 評估版時，如何建立原則並發行應用程式"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 1cc190aa4103bbaa2b2273f08319c3fba9f5507e
 
 
 ---
@@ -99,6 +99,6 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

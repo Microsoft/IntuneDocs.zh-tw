@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的行動裝置安全性原則設定 | Microsoft Intune
-description:
-keywords:
+title: "行動裝置安全性原則設定 | Microsoft Intune"
+description: "使用 Intune 來設定各種不同的設定，您可以部署到組織中受管理的裝置。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 41813b383003311e68f2a7fb50d42638434649f7
+
 
 ---
 
@@ -56,15 +50,15 @@ ms.suite: ems
 |**最小密碼長度**|是|是|是|是|是|
 |**允許簡單密碼**<br /><br />簡單密碼包括 '0000' 與 '1234'|否|否|是|是|否|
 |**抹除裝置前允許的重複登入失敗次數**|是|是|是|是|是|
-|在停止活動幾分鐘後關閉螢幕<sup>1</sup>|是|是|是|是|是|
+|**在停止活動幾分鐘後關閉螢幕**<sup>1</sup>|是|是|是|是|是|
 |**密碼到期 (天數)**|是|是|是|是|是|
 |**記住密碼歷程記錄**|是|是|是|是|是|
-|記住密碼歷程記錄 - 不得重複使用以前用過的密碼|是|是|是|是|是|
+|**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|是|是|是|是|是|
 |**密碼品質**|否|否|否|否|是|
 |**允許圖片密碼和 PIN**|是|是|否|否|否|
 |**要求密碼前的閒置分鐘數**|否|否|否|是|否|
 |**允許指紋解除鎖定**|否|否|否|iOS 7 及更新版本|否|
-對於 iOS 裝置，您如有設定 [螢幕關閉前的閒置分鐘] 和 [需要密碼之前的閒置分鐘]，這兩項設定將會依序套用。 例如，若您設定將兩項全都設定為 5 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
+對於 iOS 裝置，您如有設定 [螢幕關閉前的閒置分鐘] 和 [需要密碼之前的閒置分鐘]，這兩項設定將會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
 
 當您將密碼長度原則部署到執行 Windows RT 的裝置時，將會強制使用者重設其密碼，即使其目前的密碼符合原則需求也是一樣。
 
@@ -72,7 +66,7 @@ ms.suite: ems
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|在行動裝置上要求加密<sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是].<br /><br />若要在 iOS 裝置上啟用加密，請啟用 [需要密碼來解除鎖定行動裝置] 設定.|是|否|是|否|是|
+|**在行動裝置上要求加密**<sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。|是|否|是|否|是|
 |**儲存卡需要加密**<br /><br />同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a (應用程式及相關聯的資料會自動加密)|n/a|是|
 執行 Windows 8.1 之裝置的其他資訊
 
@@ -96,7 +90,7 @@ ms.suite: ems
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**需要自動更新**|是|否|否|否|否|
-|**需要自動更新 - 自動安裝之更新的最小分類**<br /><br />選擇將自動安裝的更新分類：<br /><br />重要 - 安裝所有分類為重要的更新。<br /><br />建議 - 安裝所有分類為重要或建議的更新。|是|否|否|否|否|
+|**需要自動更新 - 自動安裝之更新的最小分類**<br /><br />選擇將自動安裝的更新分類：<br /><br />**重要** - 安裝所有分類為重要的更新。<br /><br />**建議** - 安裝所有分類為重要或建議的更新。|是|否|否|否|否|
 |**允許螢幕擷取**|否|否|僅限 Windows Phone 8.1|是|是 (僅限 Samsung KNOX)|
 |**允許在鎖定畫面時使用控制中心**|否|否|否|iOS 7 及更新版本|否|
 |**允許在鎖定畫面時使用通知檢視**|否|否|否|iOS 7 及更新版本|否|
@@ -130,9 +124,9 @@ ms.suite: ems
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|允許使用者下載電子郵件附件<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
-|電子郵件同步處理期間同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a|n/a|n/a|
-|允許不完全支援這些設定的行動裝置與 Exchange 進行同步處理 (Exchange ActiveSync)同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a|n/a|n/a|
+|**允許使用者下載電子郵件附件**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
+|**電子郵件同步處理期間**同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a|n/a|n/a|
+|**允許不完全支援這些設定的行動裝置與 Exchange 進行同步處理 (Exchange ActiveSync)**同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a|n/a|n/a|
 |**讓 Microsoft 帳戶變成 Windows Mail 應用程式的選用帳戶**|是|否|否|否|否|
 |**允許自訂電子郵件帳戶**|否|否|僅限 Windows Phone 8.1|否|否|
 
@@ -217,6 +211,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "VPN 連線 | Microsoft Intune"
-description: 
+description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者和裝置。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
-ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 8d83e576c0c3e85c435e6738e3236f6cd4c43ccd
 
 
 ---
 
 # Microsoft Intune 中的 VPN 連線
- 虛擬私人網路 (VPN) 可讓您提供使用者安全的公司網路遠端存取。 遠端使用者工作的方式就像他們的裝置實際連線到網路一樣。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用 **VPN 設定檔**，以將 VPN 設定部署給組織中的使用者和裝置。 透過部署這些設定，即可最小化連線到公司網路上資源所需的使用者工作。
+ 虛擬私人網路 (VPN) 可讓您提供使用者安全的公司網路遠端存取。 遠端使用者工作的方式就像他們的裝置實際連線到網路一樣。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用 **VPN 設定檔**，將 VPN 設定部署給組織中的使用者和裝置。 透過部署這些設定，即可最小化連線到公司網路上資源所需的使用者工作。
 
 例如，您想要使用連線到公司網路上檔案共用所需的設定來佈建所有 iOS 裝置。 您建立包含連線到公司網路所需設定的 VPN 設定檔，然後將此設定檔部署給所有 iOS 裝置的使用者。 使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能完成連線。
 
@@ -160,6 +160,6 @@ Windows 10 Desktop 和行動裝置也提供下列設定
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

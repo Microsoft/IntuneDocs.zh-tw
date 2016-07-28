@@ -1,10 +1,10 @@
 ---
 title: "限制存取 SharePoint Online | Microsoft Intune"
-description: 
+description: "使用條件式存取保護與控制 SharePoint Online 上的公司資料存取。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 06/16/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
 
 
 ---
@@ -25,6 +25,8 @@ ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
 - 裝置相容性原則，裝置必須符合此原則才算相容。
 - 條件式存取原則，其中指定裝置必須符合才能存取服務的條件。
 若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
+
+相容性和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
 
 當使用者嘗試在其裝置 (例如 OneDrive) 上使用支援的應用程式連接到檔案時，將會進行下列評估：
 
@@ -55,6 +57,10 @@ ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
 
 -   如果裝置不相容，就會顯示訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站，讓他們找到問題的相關資訊，以及如何修復問題的方法。
 
+**條件式存取會在所有 SharePoint 網站上強制執行，並封鎖外部共用**
+
+>[!NOTE]
+>如果您啟用 SharePoint Online 的條件式存取，建議您停用 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主題中所述之清單上的網域。  
 ## 支援行動裝置
 - iOS 7.1 和更新版本
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
@@ -183,6 +189,6 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "透過 Intune 使用 Windows 裝置 | Microsoft Intune"
-description: 
+description: "可以在已註冊至 Intune 的 Windows 裝置上執行之工作的連結清單"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: f5170f9230812e4c4606dac5258cde1da6b99089
+ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
+ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
 
 
 ---
@@ -59,6 +59,6 @@ ms.openlocfilehash: f5170f9230812e4c4606dac5258cde1da6b99089
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

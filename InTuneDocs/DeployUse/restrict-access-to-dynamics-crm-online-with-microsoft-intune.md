@@ -1,6 +1,6 @@
 ---
 title: "限制對 Dynamics CRM Online 的電子郵件存取 |Microsoft Intune"
-description: 
+description: "使用條件式存取保護與控制對 Dynamics CRM Online 的存取。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: cbcf2c8d923524b8a1993140fbec0234740075ae
 
 
 ---
@@ -55,10 +56,10 @@ ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
 [建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到將受此原則影響的所有裝置。 這些是目標群組中的使用者所使用的所有裝置。
 
 > [!NOTE]
-> [!NOTE]相容性原則會部署至 Microsoft Intune 群組，而條件式存取原則會以 Azure Active Directory 安全性群組為目標。
+> 相容性原則會部署至 Microsoft Intune 群組，而條件式存取原則會以 Azure Active Directory 安全性群組為目標。
 
 > [!IMPORTANT]
-> [!IMPORTANT]如果您尚未部署相容性原則，則會將裝置視為相容。
+> 如果您尚未部署相容性原則，則會將裝置視為相容。
 
 當您就緒時，請繼續執行步驟 3。
 ### 步驟 3︰設定 Dynamics CRM 原則
@@ -96,6 +97,6 @@ ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

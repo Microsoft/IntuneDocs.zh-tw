@@ -1,10 +1,10 @@
 ---
 title: "Windows 10 原則設定 | Microsoft Intune"
-description: 
+description: "使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Microsoft Intune 的 Windows 10 原則設定
 
-使用本主題中所列的原則設定，以協助您進行已註冊之 Windows 10 Desktop 和 Windows 10 行動裝置的設定。
+使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。
+
+> [!IMPORTANT]
+> 您有兩種可以管理 Windows 10 電腦的方式：透過註冊它們，或透過安裝 Intune 電腦用戶端軟體。 這兩個方法個別提供不同的功能 (如需詳細資訊，請參閱[選擇管理裝置的方式](/intune/get-started/choose-how-to-manage-devices))。
+> 當您使用 Intune 電腦用戶端軟體管理您的 Windows 10 電腦時，您不能使用本主題中詳述的原則與設定。 若要套用這些設定，您的 Windows 10 裝置必須向 Intune 註冊。
 
 ## 一般設定原則設定
 
-使用 Windows 10 的 Microsoft Intune **一般設定原則**，為已註冊的 Windows 10 桌面版和 Windows 10 行動裝置版裝置設定一般設定。 當您使用 Intune 用戶端軟體管理 Windows 10 電腦時，無法使用此原則。
+使用 Windows 10 的 Microsoft Intune **一般設定原則**，為已註冊的 Windows 10 桌面版和 Windows 10 行動裝置版裝置設定一般設定。 
 
 
 ### 密碼
@@ -161,7 +166,7 @@ ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
 |**簽章更新間隔**|指定 Defender 檢查新簽章檔案的間隔。|
 |**允許雲端保護**|允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 此資訊未來可用於改善本服務。|
 |**提示使用者提交範例**|控制可能需要由 Microsoft 進一步分析以判斷其是否為惡意的檔案，是否自動傳送給 Microsoft。|
-|**偵測潛在垃圾應用程式**|您可以使用此設定來保護已經註冊的 Windows 桌上型電腦，避免執行被 Windows Defender 歸類為潛在垃圾應用程式的軟體。 您可以不執行這些應用程式，也可以使用稽核模式，在安裝潛在垃圾應用程式時回報。|
+|**偵測潛在垃圾應用程式**|您可以使用此設定來保護已註冊的 Windows 桌上型裝置，以避免執行被 Windows Defender 歸類為潛在垃圾應用程式的軟體。 您可以不執行這些應用程式，也可以使用稽核模式，在安裝潛在垃圾應用程式時回報。|
 |**執行掃描或使用即時保護時所要排除的檔案和資料夾**|將一或多個 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe** 等檔案和資料夾新增至排除清單。 這些檔案和資料夾將不會包含在任何即時或已排程的掃描。|
 |**執行掃描或使用即時保護時所要排除的副檔名**|將一個或多個 **jpg** 或 **txt** 等副檔名新增至排除清單。 任何包含這些副檔名的檔案將不會包含在任何即時或已排程的掃描。|
 |**執行掃描或使用即時保護時所要排除的處理程序**|將一或多個 **.exe**、**.com** 或 **.scr** 等類型的處理程序新增至排除清單。 這些處理程序將不會包含在任何即時或已排程的掃描。| 
@@ -327,6 +332,6 @@ ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

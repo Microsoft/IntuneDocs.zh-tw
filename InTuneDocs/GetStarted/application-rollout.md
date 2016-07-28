@@ -1,6 +1,6 @@
 ---
 title: "應用程式首展 |Microsoft Intune"
-description: 
+description: "針對 Microsoft Intune 中應用程式階段式首展的建議。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
 
 -   請檢查您選擇的應用程式的安裝程式受 Intune 應用程式散發支援，如[使用 Microsoft Intune 新增應用程式](/intune/deploy-use/add-apps)所述。
 
--   確定已安裝應用程式散發必要條件。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->)。
+-   確定已安裝應用程式散發必要條件。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   判斷應用程式類型受 Intune 支援。
 
@@ -95,6 +95,6 @@ ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

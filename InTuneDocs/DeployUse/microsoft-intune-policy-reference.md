@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune 原則參考 | Microsoft Intune"
-description: 
+title: "設定原則參考 | Microsoft Intune"
+description: "您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # Microsoft Intune 原則參考
 
-您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。
+您可以使用本主題中的資訊，協助您決定用來管理裝置時所需的 Microsoft Intune 設定原則。
 
 > [!TIP]
 > 如需如何使用原則的詳細資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
@@ -47,11 +47,14 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 |**自訂組態 (iOS 7.1 和更新版本)**|將您使用 Apple Configuration 工具建立的組態設定檔，部署到 iOS 裝置。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 iOS 原則設定](ios-policy-settings-in-microsoft-intune.md)。|
 |**電子郵件設定檔 (iOS 7.1 和更新版本)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
 |**一般組態 (iOS 7.1 和更新版本)**|設定行動裝置的安全性及功能設定。<br />-   指定應用程式是否相容，並報告應用程式的使用時間。<br />設定 Kiosk 模式鎖定裝置，只讓某些特定功能運作。例如，允許裝置只執行一個應用程式或停用音量按鈕。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 iOS 原則設定](ios-policy-settings-in-microsoft-intune.md)。|
+|**行動應用程式組態原則 (iOS 7.1 及更新版本)**|使用行動裝置應用程式組態原則來自動提供使用者執行 iOS 應用程式時可能需要的設定。<br /><br />如需詳細資訊，請參閱[在 Microsoft Intune 中使用行動應用程式設定原則設定 iOS 應用程式](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
+|**行動佈建設定檔原則 (iOS 7.1 和更新版本)**|Apple iOS 企業營運行動應用程式已內建佈建設定檔，以及透過憑證簽署的程式碼。 當該應用程式於 iOS 裝置上執行時，iOS 會確認該 iOS 應用程式的完整性，並強制執行由佈建設定檔定義的原則。<br><br>您用來簽署應用程式的企業簽署憑證通常會持續 3 年。 不過佈建設定檔將會在 1 年後到期。 當憑證仍然有效時，使用此原則可主動將新的佈建設定檔原則部署至有應用程式即將到期的裝置。<br><br>如需詳細資訊，請參閱[使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期](ios-mobile-app-provisioning-profiles.md)。|
+|**PKCS #12 (.PFX) 憑證設定檔 (iOS 7.1 和更新版本)**|使用這個設定檔來為裝置憑證要求建立及部署 PFX 設定。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
 |**SCEP 憑證設定檔 (iOS 7.1 和更新版本)**|設定可與受信任行動裝置憑證一起使用的簡單憑證註冊通訊協定憑證來驗證行動裝置，以便這些裝置能夠存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
 |**受信任憑證設定檔 (iOS 7.1 和更新版本)**|設定可用於驗證行動裝置的受信任行動裝置憑證，以允許這些裝置存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
 |**VPN 設定檔 (iOS 7.1 和更新版本)**|設定及部署設定，讓使用者可以從他們的行動裝置安全地存取公司網路。 透過部署這些設定，即可最小化連線到其工作所需的使用者工作。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune.md 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。|
 |**Wi-Fi 設定檔 (iOS 7.1 和更新版本)**|為組織中的使用者設定及部署無線網路設定。 透過部署這些設定，即可最小化連線到無線網路所需的使用者工作。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)。|
-|**行動應用程式組態原則 (iOS 7.1 及更新版本)**|使用行動裝置應用程式組態原則來自動提供使用者執行 iOS 應用程式時可能需要的設定。<br /><br />如需詳細資訊，請參閱[在 Microsoft Intune 中使用行動應用程式設定原則設定 iOS 應用程式](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
+
 
 ## Mac OS X 設定原則
 
@@ -80,8 +83,10 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 |**PKCS #12 (.PFX) 憑證設定檔 (Windows 10 Desktop/行動裝置版和更新版本)**|使用這個設定檔來為裝置憑證要求建立及部署 PFX 設定。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
 |**SCEP 憑證設定檔 (Windows 8.1 和更新版本)**<br /><br />**SCEP 憑證設定檔 (Windows Phone 8.1 和更新版本)**|設定可與受信任行動裝置憑證一起使用的簡單憑證註冊通訊協定憑證來驗證行動裝置，以便這些裝置能夠存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
 |**受信任憑證設定檔 (Windows 8.1 和更新版本)**<br /><br />**受信任憑證設定檔 (Windows Phone 8.1 和更新版本)**|設定可用於驗證行動裝置的受信任行動裝置憑證，以允許這些裝置存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
-|**VPN 設定檔 (Windows 10 Desktop/行動裝置版和更新版本)**<br /><br />**VPN 設定檔 (Windows 8.1 和更新版本)**<br /><br />**VPN 設定檔 (Windows Phone 8.1 和更新版本)**|設定及部署設定，讓使用者可以從他們的行動裝置安全地存取公司網路。 透過部署這些設定，即可最小化連線到其工作所需的使用者工作。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune.md 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。|
+|**VPN 設定檔 (Windows 10 Desktop/行動裝置版和更新版本)**<br /><br />**VPN 設定檔 (Windows 8.1 和更新版本)**<br /><br />**VPN 設定檔 (Windows Phone 8.1 和更新版本)**|設定及部署設定，讓使用者可以從他們的行動裝置安全地存取公司網路。 透過部署這些設定，即可最小化連線到其工作所需的使用者工作。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。|
 |**Wi-Fi 匯入**|匯入和部署您之前匯出至檔案的 Windows Wi-Fi 組態。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)。|
+|**Windows 資訊保護**<br>(之前稱為企業資料保護)|隨著企業中員工擁有的裝置增加，透過不受企業控制的應用程式與服務 (像是電子郵件、社交媒體和公用雲端) 意外外洩資料的風險也隨之提高。 例如，員工從他們個人的電子郵件帳戶傳送最新的工程圖片、將產品資訊複製並貼到推文中，或將進行中的銷售報表儲存到他們的公用雲端儲存體。<br><br>「Windows 資訊保護」有助於防範這類可能的資料外洩，而不會干擾員工的體驗。 它也能協助保護企業應用程式與資料，防止企業擁有的裝置和員工帶到公司的個人裝置意外外洩資料，而且不需要對您的環境或其他應用程式進行任何變更。<br><br>Intune 原則會管理受「Windows 資訊保護」保護的應用程式清單、企業網路位置、保護等級和加密設定。<br><br>如需詳細資訊，請參閱[使用「Windows 資訊保護」保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp)。|
+
 
 ## 軟體原則
 
@@ -129,7 +134,6 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

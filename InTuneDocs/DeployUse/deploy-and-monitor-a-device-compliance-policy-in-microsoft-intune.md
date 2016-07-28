@@ -1,10 +1,10 @@
 ---
-title: "在 Microsoft Intune 中部署和監視相容性原則 | Microsoft Intune"
-description: 
+title: "部署及監視相容性原則 | Microsoft Intune"
+description: "使用本主題中的逐步指示以部署及監視裝置相容性原則。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
@@ -31,7 +31,8 @@ ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
 
 使用 [原則] 工作區的 [概觀] 頁面上的狀態摘要和警示，來識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板]  工作區中。
 
-> [!IMPORTANT]若未部署相容性原則，但卻啟用了 Exchange 條件式存取原則，則將允許所有目標裝置進行存取。
+> [!IMPORTANT]
+> 若未部署相容性原則，但卻啟用了 Exchange 條件式存取原則，則將允許所有目標裝置進行存取。
 
 ## 如何解決 Intune 原則衝突
 將多個 Intune 原則套用至一個裝置時，可能會發生原則衝突。 如果原則設定重疊，Intune 會使用下列規則解決任何衝突︰
@@ -71,6 +72,6 @@ ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

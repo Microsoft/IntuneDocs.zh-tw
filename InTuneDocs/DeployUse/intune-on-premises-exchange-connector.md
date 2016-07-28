@@ -1,19 +1,20 @@
 ---
-title: "安裝 On-Premises Exchange 的 Microsoft Intune Exchange Connector | Microsoft Intune"
-description: 
+title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Intune"
+description: "使用 Connector 工具啟用 Intune 管理主控台和內部部署 Exchange Server 之間的通訊，以進行 Exchange ActiveSync MDM。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 |其他軟體|託管連接器的電腦必須安裝 Microsoft .NET Framework 4 和 Windows PowerShell 2.0 的完整安裝。|
 |Network (網路)|安裝連接器的電腦所在的網域，必須與託管 Exchange Server 的網域有信任關係。<br /><br />電腦需要設定，使其能夠在連接埠 80 和 443 上，透過防火牆和 Proxy 伺服器來存取 Intune 服務。 Intune 使用的網域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 |已設定並執行託管 Exchange|如需詳細資訊，請參閱 [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx)。 |
-|將行動裝置管理授權單位設定為 Intune|[將行動裝置授權單位設定為 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange Cmdlet 需求
 
@@ -58,16 +58,14 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 
 ## 下載 On-Premises Exchange Connector 軟體安裝套件
 
-1. 在 On-Premises Exchange Connector 的已支援作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com) (http://manage.microsoft.com)，這個使用者帳戶是 Exchange 租用戶中具有 Exchange Server 使用權限的系統管理員。
+1. 在內部部署 Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com) (http://manage.microsoft.com)，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
 ![開啟設定 Exchange 連線](../media/ExchangeConnector.gif)
 
-2.  在工作區捷徑窗格中，按一下 [系統管理]。
+2.  在工作區捷徑窗格中，選擇 [系統管理]，選擇 [行動裝置管理]  >  [Microsoft Exchange]，然後選擇 [設定 Exchange 連線]。
 
-3.  在瀏覽窗格的 [行動裝置管理] 底下，展開 [Microsoft Exchange]，然後選擇 [設定 Exchange 連線]。
+3.  在 [設定 Exchange 連線] 頁面上，選擇 [下載 On-Premises Connector]。
 
-4.  在 [設定 Exchange 連線] 頁面上，選擇 [下載 On-Premises Connector]。
-
-5.  On-Premises Exchange Connector 包含在可以開啟或儲存的壓縮 (.zip) 資料夾中。 在 [檔案下載] 對話方塊中，選擇 [儲存]，將壓縮資料夾儲存到安全的位置。
+4.  On-Premises Exchange Connector 包含在可以開啟或儲存的壓縮 (.zip) 資料夾中。 在 [檔案下載] 對話方塊中，選擇 [儲存]，將壓縮資料夾儲存到安全的位置。
 
 > [!IMPORTANT]
 > 請不要重新命名或移動 On-Premises Exchange Connector 資料夾內的檔案。 移動或重新命名資料夾的內容將會中斷安裝。
@@ -133,6 +131,6 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "直接註冊 iOS 裝置 | Microsoft Intune"
-description: 
+description: "透過將公司擁有的 iOS 裝置利用 USB 連線到 Mac 電腦，來使用 Apple Configurator 工具以預先定義的原則直接註冊那些裝置。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
 
 
 ---
 
 # 使用 Apple Configurator 直接註冊 iOS 裝置
-Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。 此處理程序並不會將裝置重設成出廠預設值，並使用預先定義的原則來註冊裝置。 這個方法針對具有**無使用者親和性**的裝置，且需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊。 直接註冊的裝置不支援公司入口網站應用程式。 本指南假設您在 Mac 電腦上使用 Apple Configurator 2.0。
+Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。 此處理程序並不會將裝置重設成出廠預設值，並使用預先定義的原則來註冊裝置。 這個方法針對具有**無使用者親和性**的裝置，且需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊。 當直接註冊 iOS 裝置時，您不需要該裝置的序號即可註冊裝置。 您也可以在 Intune 於註冊階段擷取裝置名稱之前，先命名該裝置以供識別。 直接註冊的裝置不支援公司入口網站應用程式。 本指南假設您在 Mac 電腦上使用 Apple Configurator 2.0。
 
 1.  **建立裝置的設定檔**裝置註冊設定檔會定義套用至裝置的設定。 如果您尚未這麼做，請建立使用 Apple Configurator 所註冊之 iOS 裝置的裝置註冊設定檔。
-
-    #### 建立設定檔
 
     1.  在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增...]。
 
@@ -40,8 +38,8 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
         -   **裝置群組預先指派** - 所有部署此設定檔的裝置，一開始均屬於此群組。 您可以在註冊之後重新指派裝置。
 
-        >[!Important]
-        >群組指派將從 Intune 移至 Azure Active Directory。 [深入了解](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  選擇 [儲存設定檔] 以新增設定檔。
 
 5.  **以 .mobileconfig 的格式匯出設定檔，以部署至 iOS 裝置**選取您所建立的裝置設定檔。 選擇 [匯出...] 。 選擇 [下載設定檔] 並儲存下載的 .mobileconfig 檔案。
@@ -61,8 +59,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 8.  **安裝設定檔** 您已準備好在 iOS 裝置上安裝設定檔。 裝置必須已完成 [設定助理]，而且可供使用。  如果註冊需要應用程式部署，裝置應該要設定 Apple ID，因為應用程式部署將需要您具備登入 App Store 的 Apple ID。
 
-    ###### 完成不受監督之 iOS 裝置的設定檔接受
-
     1.  解除鎖定 iOS 裝置。
 
     2.  在 [管理設定檔] 的 [安裝設定檔] 對話方塊上，點選 [安裝]。
@@ -81,11 +77,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 10. **發佈裝置** iOS 裝置現在已向 Intune 註冊並受其管理。
 
 
-### 請參閱
-[準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

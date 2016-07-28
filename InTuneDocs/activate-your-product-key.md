@@ -1,9 +1,9 @@
 ---
 title: "啟動您的產品金鑰 |Microsoft Intune"
-description: 
+description: "您可以使用產品金鑰兌換 Intune 訂閱，或將使用者加入現有的訂閱。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 839550751563b5507becb0d8d019fd163af718f5
 
 
 ---
 
 # 啟用您的產品金鑰
-您可以使用產品金鑰恢復訂閱，或將使用者加入現有的訂閱。 產品金鑰是一組 25 個字元長的英數字元專用代碼，無論是恢復訂閱、存取線上服務或下載軟體，皆需要這組代碼。 您可以向 Microsoft 合作夥伴或轉銷商購買產品金鑰。
+您可以使用產品金鑰兌換訂閱，或將使用者加入現有的訂閱。 產品金鑰是一組 25 個字元長的英數字元專用代碼，無論是兌換訂閱、存取線上服務或下載軟體，皆需要這組代碼。 您可以向 Microsoft 合作夥伴或轉銷商購買產品金鑰。
 
 ## 取回您的產品金鑰
 若要取回您的產品金鑰，請輸入 25 個字元的代碼。
@@ -52,6 +52,6 @@ ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

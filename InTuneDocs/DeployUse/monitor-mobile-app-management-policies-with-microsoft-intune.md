@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 監視行動應用程式管理原則 | Microsoft Intune"
-description: 
+title: "使用 Microsoft Intune 監視 MAM 原則 | Microsoft Intune"
+description: "查看有多少使用者擁有原則，向下鑽研以了解更多詳細資料。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
 
   **未簽入：**這表示原則已部署至使用者，但是從那時起並未在工作環境中使用應用程式。
 
+>[!NOTE]
+> 如果您搜尋的使用者沒有部署 MAM 原則，您會看見一則訊息，通知您該使用者不針對任何應用程式原則。
+
 若要查看使用者的報告，請遵循下列步驟︰
 
 **步驟 1：**若要選取使用者，請按一下 [摘要] 磚，或在 [設定] 刀鋒視窗中選擇 [使用者應用程式報告] 選項，如下所示︰
@@ -72,6 +75,6 @@ ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,26 +1,27 @@
 ---
-title: "使用公司入口網站重設您的裝置會發生什麼情況？ | Microsoft Intune"
+title: "使用公司入口網站重設您的 Windows 裝置會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 29fab114e2b5b9b3a7c8e050af6f37287a715026
 
 
 ---
 
 
-# 使用公司入口網站重設您的裝置會發生什麼情況？
+# 使用公司入口網站重設您的 Windows 裝置會發生什麼情況？
 
 當您使用公司入口網站應用程式或[公司入口網站](reset-your-device-cpwebsite.md)重設您的 Windows 裝置時，它會將裝置重設為其原廠設定，並刪除所有的應用程式、設定和資料，包括您的個人資料。 每個裝置上發生的狀況，則取決於您擁有之裝置的類型以及您使用該裝置的方式，如下表所述。 如需如何重設遺失或遭竊裝置的指示，請參閱[重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-lost-or-stolen-device-windows.md)。
 
@@ -36,6 +37,6 @@ ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

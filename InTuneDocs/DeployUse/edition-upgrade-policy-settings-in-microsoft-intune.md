@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Microsoft Intune 中的 Windows 版本升級原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Windows 版本升級原則設定 | Microsoft Intune"
+description: "了解如何透過 Intune 自動將 Windows 10 裝置升級到最新版本。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 94ce40589180ebafcacfb497bc4de9f3458f4ca3
+
 
 ---
 
 # Microsoft Intune 中的 Windows 版本升級原則設定
-Microsoft Intune 版本升級原則可讓您自動將執行下列 Windows 10 版本之一的裝置升級至較新版本：
+Microsoft Intune **版本升級原則**可讓您自動將執行下列 Windows 10 版本之一的裝置升級至較新版本：
 * Windows 10 Desktop
 * Windows 10 Holographic
 
@@ -44,11 +38,12 @@ Microsoft Intune 版本升級原則可讓您自動將執行下列 Windows 10 版
 |**說明**|選擇性地輸入可協助您在 Intune 主控台中識別該原則的描述。
 |**要升級到的版本**|從下拉式清單選取您想將目標裝置升級到的 Windows 10 Desktop、Windows 10 Holographic 或 Windows 10 Mobile 版本。
 |**產品金鑰**|指定您從 Microsoft 取得的產品金鑰，可用來升級所有 Windows 10 Desktop 目標裝置。<br>建立包含產品金鑰的原則之後，您便無法在稍後編輯產品金鑰。 這是因為金鑰基於安全性考量而隱藏。 若要變更產品金鑰，您必須重新輸入完整金鑰。
-|**授權檔**|按一下 [瀏覽] 以選取您從 Microsoft 取得的授權檔，包含要將目標裝置升級到的 Windows Holographic 版本的授權資訊。
+|**授權檔**|按一下 **[瀏覽]** 以選取您從 Microsoft 取得的授權檔，包含要將目標裝置升級到的 Windows Holographic 或 Windows 10 行動裝置版的授權資訊。
 
 ### 請參閱
 [透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

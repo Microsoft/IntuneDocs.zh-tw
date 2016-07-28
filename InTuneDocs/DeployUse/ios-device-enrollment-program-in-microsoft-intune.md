@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 管理 iOS 裝置的 Apple DEP | Microsoft Intune"
-description: 
+title: "iOS 裝置的 Apple DEP 管理 | Microsoft Intune"
+description: "部署註冊設定檔 (會以「無線」方式註冊透過 iOS 裝置註冊方案 (DEP) 購買的 iOS 裝置)，來管理 Apple 裝置。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
 
 # 註冊屬公司擁有的裝置註冊方案 iOS 裝置
-Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置註冊方案 (DEP) 所購買的 iOS 裝置。 註冊套件可以包括裝置的設定助理選項。 透過 DEP 註冊的裝置不能由使用者取消註冊。
+Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方式註冊透過裝置註冊方案 (DEP) 購買的 iOS 裝置。 註冊套件可以包括裝置的設定助理選項。 透過 DEP 註冊的裝置不能由使用者取消註冊。
 
 ## 使用 Microsoft Intune 管理 iOS 裝置的 Apple DEP
 若要使用 Apple 的裝置註冊方案 (DEP) 來管理屬公司擁有的 iOS 裝置，您的組織必須加入 Apple DEP，並透過該方案取得裝置。 下列網址提供該程序的詳細資料：  [https://deploy.apple.com](https://deploy.apple.com)。 這個方案的優點包括無操作安裝裝置，而不需要透過 USB 將每部裝置連線到電腦。
@@ -55,9 +55,7 @@ Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置
 
     您也可以**將裝置指派給以下群組**。 按一下 [Select...] (選取…) 選擇群組。
 
-    >[!Important]
-    >群組指派將從 Intune 移至 Azure Active Directory。 [進一步了解](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     接著，啟用 **[設定此設定檔的裝置註冊方案設定]** 來支援 DEP。
 
@@ -101,13 +99,13 @@ Microsoft Intune 可以部署註冊設定檔，以「無線」註冊透過裝置
 
 ## Intune 群組指派的變更
 
-從九月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 即將發行進一步的詳細資料。
+從九月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 新的動態裝置群組指派可以根據公司的註冊設定檔名稱於 Azure Active Directory 中定義。 此程序可確保預先指派裝置群組的裝置會自動註冊到群組中並部署原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 請參閱
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

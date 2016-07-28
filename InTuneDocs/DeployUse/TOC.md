@@ -24,6 +24,7 @@
 #### [Exchange 存取規則](exchange-access-rules-for-mobile-devices.md)
 ### [管理電腦](manage-windows-pcs-with-microsoft-intune.md)
 #### [安裝電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [一般電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [解決電腦原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [設定裝置](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +50,7 @@
 ### [使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [將裝置對應到群組](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [透過清查了解您的裝置](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [一般電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [保護裝置](protect-your-devices-with-microsoft-intune.md)
 ### [遠端鎖定和密碼重設](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -76,6 +77,7 @@
 ## [設定應用程式](update-apps-using-microsoft-intune.md)
 ### [更新應用程式 ](update-apps-using-microsoft-intune.md)
 ### [iOS 應用程式設定原則](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [iOS 行動裝置應用程式佈建設定檔](ios-mobile-app-provisioning-profiles.md)
 ### [管理網際網路存取](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -133,6 +135,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

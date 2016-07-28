@@ -1,9 +1,9 @@
 ---
 title: "啟動 Microsoft Intune 前的須知事項 | Microsoft Intune"
-description: 
+description: "具有 Intune 先決條件和需求之連結的頁面"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09caaa76d08f99b0d455d291fbd4002289f2f11c
-ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 77de74a7847557893c5489492ef049b324b2f137
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
 - [Microsoft Intune 公司入口網站](microsoft-intune-company-portal.md)
 - [Intune 與 Microsoft 雲端服務和產品的整合](integration-with-cloud-services.md)
 - [Intune 網路頻寬用量](network-bandwidth-use.md)
-- [使用 Microsoft Intune 管理自訂網域](domain-names-for-microsoft-intune.md)
+- [透過 Microsoft Intune 設定自訂網域名稱](domain-names-for-microsoft-intune.md)
 
 
 使用 Intune 之前，您也可能想先檢閱 [Intune 行動裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)。 如果您開始使用試用訂閱，則可稍後將它轉換成完整訂閱。 請參閱 [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx) (如何購買 Microsoft Intune)。
@@ -42,6 +42,6 @@ ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

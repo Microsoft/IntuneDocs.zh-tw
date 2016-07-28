@@ -1,20 +1,20 @@
 ---
-title: "使用 Microsoft Intune 安裝 Windows 電腦用戶端 | Microsoft Intune"
-description: 
+title: "安裝 Windows 電腦用戶端 | Microsoft Intune"
+description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 -   [手動部署用戶端軟體](#to-manually-deploy-the-client-software)
 
 -   [使用群組原則自動部署用戶端軟體](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [使用者如何自行註冊電腦](#how-users-can-self-enroll-their-computers)
 
 -   [將 Microsoft Intune 用戶端軟體隨著映像一起安裝](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 3.  使用群組原則將軟體部署到您網路上的電腦。
 
     如需有關如何使用群組原則自動部署軟體的詳細資訊，請參閱您的 Windows Server 文件。
-
-### 使用者如何自行註冊電腦
-使用者可以透過 Intune 公司入口網站自行註冊每一部電腦。 註冊過的每一部電腦都會連結到用來安裝用戶端軟體的使用者帳戶。
-
-> [!NOTE]
-> -   使用者必須是電腦的系統管理員，才能安裝用戶端軟體。
-> -   用戶端電腦必須安裝 Internet Explorer，才能進行自行註冊。
-> -   每次使用者自行註冊電腦時，都會使用 Intune 授權。
-> -   您必須使用公司或學校帳戶來自行註冊電腦。 您不能使用 Microsoft 帳戶來自行註冊電腦。
-> -   如果用戶端軟體已經安裝在電腦上，使用者將會收到錯誤。
-
-### 若要自行註冊電腦 (適用於使用者的資訊)
-
-1.  從您要註冊的電腦登入公司入口網站。
-
-2.  按一下 [新增裝置] 。
-
-3.  按一下 [下載軟體]  ，然後按一下 [執行] 。
-
-4.  按 [下一步]，以啟動 Microsoft Intune 安裝精靈。
-
-5.  安裝精靈完成後，按一下 [完成] 。
 
 ### 將 Microsoft Intune 用戶端軟體隨著映像一起安裝
 您可以使用下列範例程序作為基礎，將 Intune 用戶端軟體隨著作業系統映像一起部署到電腦。
@@ -159,9 +135,10 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 
 ### 另請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
+[為用戶端安裝進行疑難排解](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "管理 iOS 應用程式之間的資料傳輸 | Microsoft Intune"
-description: 
+description: "使用本主題來了解如何使用 iOS「開啟位置」功能和行動應用程式管理原則來管理應用程式之間的資料傳輸。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
-ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
 
 
 ---
@@ -74,6 +75,6 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

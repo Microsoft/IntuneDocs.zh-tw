@@ -1,10 +1,10 @@
 ---
 title: "部署應用程式 | Microsoft Intune"
-description: 
+description: "本主題說明您在開始使用 Intune 部署應用程式之前必須了解的概念。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 -   **必要安裝** - 應用程式會安裝到裝置，而且無須使用者介入。
 
     > [!TIP]
-    > [!TIP] 針對未處於受監督模式的 iOS 裝置，以及針對所有 Android 裝置，使用者必須在安裝之前接受應用程式提供。
+    > 針對未處於受監督模式的 iOS 裝置，以及針對所有 Android 裝置，使用者必須在安裝之前接受應用程式提供。
     > 
     >  如果使用者解除安裝您部署為必要安裝的應用程式，Intune 會在下一個清查週期 (通常是每 7 天發生) 之後自動重新安裝應用程式。
 
@@ -54,7 +55,7 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 |應用程式商店的受管理 iOS 應用程式 (部署到使用者群組)|是|是|是|是|
 |應用程式商店的受管理 iOS 應用程式 (部署到裝置群組)|是|否|是|是|
 > [!TIP]
-> [!TIP] 當您部署應用程式時，如果選取使用者和裝置群組，則可以只將應用程式部署為 **[可用安裝[**。
+> 當您部署應用程式時，如果選取使用者和裝置群組，則可以只將應用程式部署為 [可用安裝]。
 
 ## 部署衝突
 當裝置收到兩個具有相同部署動作的部署時，適用下列規則：
@@ -72,6 +73,6 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

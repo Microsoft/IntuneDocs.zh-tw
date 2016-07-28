@@ -1,9 +1,9 @@
 ---
-title: "Intune 評估訂閱的其他選項和額外項目 | Microsoft Intune"
-description: 
+title: "Intune 評估版的其他選項和額外項目 | Microsoft Intune"
+description: "說明當您註冊免費 30 天的 Intune 評估版時，所需要了解的警示、通知和報表，以及一般的 Intune 功能"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
 
 
 ---
@@ -58,6 +58,6 @@ Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

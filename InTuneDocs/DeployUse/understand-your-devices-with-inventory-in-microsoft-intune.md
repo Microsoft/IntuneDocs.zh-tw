@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 透過 Microsoft Intune 的清查了解您的裝置 | Microsoft Intune
-description:
-keywords:
+title: "透過清查了解您的裝置 | Microsoft Intune"
+description: "使用 Intune 以檢視有關您所管理之裝置的硬體資訊。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 669e096735ae7123123873dad8982abf2c4c38d6
+
 
 ---
 
@@ -113,11 +107,13 @@ Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟�
 
 -   **上次更新**
 
-### 另請參閱
-[Microsoft Intune 的監視與報表](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

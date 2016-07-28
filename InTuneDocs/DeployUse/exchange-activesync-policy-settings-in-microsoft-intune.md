@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的 Exchange ActiveSync 原則設定 | Microsoft Intune
-description:
-keywords:
+title: "Exchange ActiveSync 原則設定 | Microsoft Intune"
+description: "使用 Intune Exchange ActiveSync 原則進行設定，讓您能夠控制由 Exchange ActiveSync 所管理之裝置上的特性與功能。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 7cdb34c469d2932deb10deec592a899b9848226a
+
 
 ---
 
 # Microsoft Intune 的 Exchange ActiveSync 原則設定
-使用 Microsoft Intune Exchange ActiveSync 原則進行設定，讓您能夠控制 Exchange ActiveSync 所管理之裝置上的各種特性與功能。
+使用 Microsoft Intune **Exchange ActiveSync** 原則進行設定，讓您能夠控制 Exchange ActiveSync 所管理之裝置上的各種特性與功能。
 
 
 ## 密碼設定
@@ -40,14 +34,14 @@ ms.suite: ems
 |**抹除裝置前允許的重複登入失敗次數**|抹除裝置前，允許這麼多次嘗試輸入正確的密碼。|
 |**密碼到期 (天數)**|指定在幾天之後必須變更該裝置的密碼。
 |**記住密碼歷程記錄**|指定是否不允許使用先前使用過的密碼。|
-|記住密碼歷程記錄 - 不得重複使用以前用過的密碼|指定不得重複使用先前使用過的密碼數目。|
+|**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|指定不得重複使用先前使用過的密碼數目。|
 |**要求密碼前的閒置分鐘數**|指定裝置必須閒置多少時間，才會鎖定螢幕。
 
 ## 加密設定
 
 |設定名稱|詳細資料|
 |----------------|
-|在行動裝置上要求加密<sup>1</sup>|需要加密受支援裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是].<br /><br />若要在 iOS 裝置上啟用加密，請啟用 [需要密碼來解除鎖定行動裝置] 設定.|
+|**在行動裝置上要求加密**<sup>1</sup>|需要加密受支援裝置上的資料。<br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。|
 |**儲存卡需要加密**|需要加密外部儲存體 (例如 SD 記憶卡) 上所儲存的資料 (在支援的裝置上)。
 <sup>1</sup> 執行 Windows 8.1 之裝置的其他資訊
 
@@ -86,6 +80,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

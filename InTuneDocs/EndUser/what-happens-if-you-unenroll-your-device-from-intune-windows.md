@@ -1,26 +1,27 @@
 ---
-title: "如果從 Intune 取消註冊裝置，會發生什麼情況？ | Microsoft Intune"
+title: "如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# 如果從 Intune 取消註冊裝置，會發生什麼情況？
+# 如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
 如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結，如上述＜在本文中＞一節所示。
 
@@ -93,6 +94,6 @@ ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

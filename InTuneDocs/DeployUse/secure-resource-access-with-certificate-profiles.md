@@ -1,10 +1,10 @@
 ---
-title: "使用憑證設定檔存取公司資源 | Microsoft Intune"
-description: 
+title: "用於資源存取的憑證設定檔 |Microsoft Intune"
+description: "使用每部使用者裝置上安裝的憑證來保護 VPN、Wi-Fi 及電子郵件存取。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
 > -    如果沒有企業憑證授權單位，就必須建立一個。
 >- 如果您決定 (根據裝置平台) 使用簡單憑證註冊通訊協定 (SCEP) 設定檔，您也需要設定網路裝置註冊服務 (NDES) 伺服器。
 >-  無論計劃使用 SCEP 或 .PFX 設定檔，您都必須下載及設定 Microsoft Intune Certificate Connector。
-> [設定憑證基礎結構](configure-certificate-infrastructure.md)主題會說明所有這些項目的設定。
+> 這些項目的組態全部都會在[設定 SCEP 的憑證基礎結構](configure-certificate-infrastructure-for-scep.md)和[設定 PFX 的憑證基礎結構](configure-certificate-infrastructure-for-pfx.md)中說明。
 
 ### 後續步驟
 - [設定 SCEP 的憑證基礎結構](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

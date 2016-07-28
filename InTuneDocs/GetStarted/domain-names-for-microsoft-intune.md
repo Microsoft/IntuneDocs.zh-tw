@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 的網域名稱 | Microsoft Intune"
-description: 
+description: "為 Intune 新增網域名稱"
 keywords: 
 author: andredm7
 manager: swadhwa
@@ -13,15 +13,15 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d99669f90fe7ebec7854b7a800b09b0685c314e
-ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
+ms.sourcegitcommit: 32723f5b2c92073dda43a0b1f36a48ded0e13ba3
+ms.openlocfilehash: 2adbe1e4a92af5302550a8b78069bc49d725dbc3
 
 
 ---
 
 
 
-# 使用 Microsoft Intune 管理自訂網域
+# 透過 Microsoft Intune 設定自訂網域名稱
 
 新增並驗證自訂網域的步驟也可以[在 Azure Active Directory 中執行](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/)。
 
@@ -37,15 +37,11 @@ ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
 2. 在瀏覽窗格中，選擇 [設定] &gt; [網域]。
 3. 選擇 [新增網域]，然後輸入您的自訂網域名稱。
 4. [驗證網域] 對話方塊隨即開啟，提供您在 DNS 主機服務提供者中建立 TXT 記錄用的值。
-    > [!TIP]
-    > 在使用 GoDaddy 網域時，Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 您輸入認證，並接受網域變更權限合約之後，會自動建立 TXT 記錄。
-    > 
-    > 或者，您可以根據在這個步驟中所提供的值，[在使用 GoDaddy 網域時手動建立 TXT 記錄](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US)。
+    - **GoDaddy 使用者**：Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 在您輸入認證，並接受網域變更權限合約之後，便會自動建立 TXT 記錄。 您也可以[建立 TXT 記錄](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US)。
+    - **Register.com 使用者**：遵循[逐步指示](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify)以建立 TXT 記錄。
 
-    > [!NOTE]
-    > 請遵循[逐步指示](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify)以根據在這個步驟中所提供的值，在使用 Register.com 網域時建立 TXT 記錄。
-
-5. 請務必建立 DNS 別名 (CNAME) 以進行 [Windows 裝置註冊](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)，同時在 DNS 主機服務提供者中進行變更。
+    > [!TIP] 
+    > 請務必建立 DNS 別名 (CNAME) 以進行 [Windows 裝置註冊](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)，同時在 DNS 主機服務提供者中進行變更。
 
 在混合式雲端案例中，新增自訂網域名稱，並且已驗證您的組織擁有它之後，您可以維持在內部部署 Active Directory 中管理使用者帳戶，然後與 Azure AD 同步。
 
@@ -60,10 +56,10 @@ ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
 
 [關於 Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
-[開始使用 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
+[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

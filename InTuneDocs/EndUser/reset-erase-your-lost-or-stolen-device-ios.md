@@ -1,51 +1,57 @@
 ---
-title: "重設 (清除) 您遺失或遭竊的裝置 | Microsoft Intune"
+title: "重設 (清除) 您遺失或遭竊的 iOS 裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7c6e3e0f008f084a63288eec66f7161a1edb9ffe
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
 
 
 ---
 
 
-# 重設 (清除) 您遺失或遭竊的裝置
+# 重設 (清除) 您遺失或遭竊的 iOS 裝置
 
 如果在 Intune 註冊的手機遺失或遭竊，您可以從其他裝置使用公司入口網站應用程式，或使用[公司入口網站](http://portal.manage.microsoft.com)，將它重設為原廠預設值。
 
 > [!WARNING]
 > 將裝置重設為原廠預設值會從裝置中移除您的個人與工作資訊。 如需重設裝置時會發生什麼情況的詳細資訊，請參閱[使用公司入口網站重設裝置時會發生的情況](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)。
 
-若要使用公司入口網站應用程式重設您的裝置：
+## 使用公司入口網站應用程式重設您的裝置
 
-1.  在公司入口網站應用程式的 [我的裝置] 下，選取要清除的裝置。
+1.  在瀏覽器中，開啟您的公司入口網站，然後登入公司帳戶。
 
-2.  點選 [重設] &gt; [重設]。
+2.  在 [我的裝置] 下，選取遺失或遭竊的裝置。
 
-若要使用公司入口網站重設您的裝置，請使用下列步驟，或觀賞這段[視訊](http://aka.ms/jhdjak)：
+3.  點選 [重設] &gt; [重設]。
+
+## 使用公司入口網站重設您的裝置
+
+您可以使用下列步驟，或觀賞這段影片：
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 
 1.  在公司入口網站[](http://portal.manage.microsoft.com)中，選取您要清除的裝置。
 
 2.  點選 [重設] &gt; [重設]。
-> [!NOTE]
-> 如果您無法重設遺失或遭竊的裝置，請要求您的 IT 系統管理員為您重設。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+
+如果您無法重設遺失或遭竊的裝置，請要求您的 IT 系統管理員為您重設。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

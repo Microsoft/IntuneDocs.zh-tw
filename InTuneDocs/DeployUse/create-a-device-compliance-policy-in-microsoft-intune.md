@@ -1,10 +1,10 @@
 ---
-title: "在 Microsoft Intune 中建立裝置相容性原則 | Microsoft Intune"
-description: 
+title: "建立裝置相容性原則 | Microsoft Intune"
+description: "建立相容性原則以協助保護用來存取公司資料的行動裝置和電腦。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 ---
@@ -32,12 +32,20 @@ ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
   -   系統安全性設定 (例如密碼) 和加密
   -   裝置健全狀況設定，如裝置是否為 JB 破解，或者 Windows 裝置健全情況證明服務是否將裝置回報為狀況良好。
   -   裝置屬性設定，例如需要最低 OS 版本或允許最高 OS 版本。
-![[建立原則] 頁面的 [一般] 索引標籤的螢幕擷取畫面 ](./media/intune-sa-3b-create-policy.png)
+![[建立原則] 頁面的 [一般] 索引標籤 ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  步驟 3：儲存原則
 完成之後，請選擇 [儲存原則]。
 
 您可以選擇在儲存原則後立即部署原則，也可以選擇稍後再進行部署。 新的原則會顯示在 [原則] 工作區的 [相容性原則] 節點中。
+
+##  步驟 4：設定相容性狀態有效期間
+若要指定裝置在被視為不相容之前必須進行簽入的時限，請移至 [相容性原則設定] 並更新時間。  預設值設定為 30 天。
+
+![[原則] 功能表列中的 [相容性原則設定] 選項](../media/mdm-compliance-policy-settings.png)
+
+![相容性原則對話方塊](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## 支援的原則設定
 下表列出相容性原則設定及其支援的平台。
@@ -79,6 +87,6 @@ ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

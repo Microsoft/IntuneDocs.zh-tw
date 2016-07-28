@@ -1,9 +1,9 @@
 ---
-title: "從 Intune 取消註冊您的裝置 | Microsoft Intune"
-description: 
+title: "從 Intune 取消註冊 Windows 裝置 | Microsoft Intune"
+description: "描述從 Intune 取消註冊 Windows 裝置的方式"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 
 ---
 
 
-# 從 Intune 取消註冊您的裝置
+# 從 Intune 取消註冊 Windows 裝置
 
 如果您已註冊 Intune，但不想再為工作或學校使用您的 Windows 裝置，而且也不需要存取工作或學校電子郵件、App 或其他資源，就需要取消註冊該裝置。 從 Intune 取消註冊您的裝置後，將再也無法存取這些資源。 如需取消註冊裝置時所發生情況的詳細資訊，請參閱[如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
