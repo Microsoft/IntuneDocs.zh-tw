@@ -3,7 +3,7 @@ title: "系統要求您關閉 USB 偵錯 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,17 +12,17 @@ ms.technology:
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: eb3c46be463a355c920b4a5b5960464d2ab11f91
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfbeed3c09bdc93dfd3a8151d8107bdc6636e981
 
 
 ---
 
 # 系統提示您關閉 USB 偵錯
 
-如果您看到訊息：「必須停用 USB 偵錯」，您必須移至 [設定]  >  [開發人員選項]，並關閉 [USB 偵錯]。 
+如果您看到訊息：「必須停用 USB 偵錯」，您必須移至 [設定]  >  [開發人員選項]，並關閉 [USB 偵錯]。
 
-IT 系統管理員要求關閉此設定，以保護您 Android 裝置上的公司資料。 
+IT 系統管理員要求關閉此設定，以保護您 Android 裝置上的公司資料。
 
 如果開啟 [USB 偵錯]，當您連接 USB 裝置時，裝置資料較不安全。
 
@@ -35,6 +35,6 @@ IT 系統管理員要求關閉此設定，以保護您 Android 裝置上的公�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

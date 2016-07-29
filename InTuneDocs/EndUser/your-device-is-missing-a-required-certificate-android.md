@@ -3,7 +3,7 @@ title: "您的裝置遺漏必要的憑證 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
 
 
 ---
@@ -74,7 +74,7 @@ ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. 在 [憑證] 對話方塊中，按一下 [憑證路徑] 索引標籤，然後識別您需要從網際網路取得的憑證。 您所需憑證之名稱的所在位置，將會與上述範例螢幕擷取畫面中反白顯示的憑證相同。 
+5. 在 [憑證] 對話方塊中，按一下 [憑證路徑] 索引標籤，然後識別您需要從網際網路取得的憑證。 您所需憑證之名稱的所在位置，將會與上述範例螢幕擷取畫面中反白顯示的憑證相同。
 
 ### 在您的 Android 行動裝置上下載並安裝遺失的憑證
 
@@ -94,12 +94,13 @@ ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
 
 7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您的 IT 系統管理員。
 
-如果您看見如上所述的相同「遺失憑證」訊息，且您已經遵循上述步驟，這可能表示還有另一個您的 IT 系統管理員需協助您安裝的憑證。 請連絡 IT 系統管理員，並提供該人員此[連結](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含協助您解決問題的步驟。 
+如果您看見如上所述的相同「遺失憑證」訊息，且您已經遵循上述步驟，這可能表示還有另一個您的 IT 系統管理員需協助您安裝的憑證。 請連絡 IT 系統管理員，並提供該人員此[連結](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含協助您解決問題的步驟。
 
 ### 請參閱
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

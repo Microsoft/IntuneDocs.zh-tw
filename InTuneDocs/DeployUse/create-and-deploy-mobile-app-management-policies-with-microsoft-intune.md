@@ -3,8 +3,8 @@ title: "建立和部署 MAM 原則 | Microsoft Intune"
 description: "使用本主題中的逐步指示來建立及部署行動應用程式管理原則。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9e1c8f3c125633f1224005b7f80d3578fd4b729d
 
 
 ---
@@ -50,24 +50,20 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
     > [!TIP]
     > 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
 
-2.  在 [設定] 刀鋒視窗中，選擇 [應用程式原則]。  這會開啟 [應用程式原則] 刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。
-
-    ![顯示現有原則清單的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  選擇 **[新增原則]**。
+2.  在 [設定] 刀鋒視窗中，選擇 [應用程式原則]。  這會開啟 [應用程式原則] 刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。 選擇 **[新增原則]**。
 
     ![反白顯示 [新增原則] 功能表選項的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  輸入原則的名稱、新增簡短描述並選取平台類型，以建立適用於 iOS 或 Android 的原則。  您可以針對每部平台建立多項原則。
+3.  輸入原則的名稱、新增簡短描述並選取平台類型，以建立適用於 iOS 或 Android 的原則。  您可以針對每部平台建立多項原則。
 
     ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  選擇 [應用程式] 開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 您可以從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 選取應用程式之後，選擇 [應用程式] 刀鋒視窗底部的 [選取] 按鈕儲存您的選擇。
+4.  選擇 [應用程式] 開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 您可以從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 選取應用程式之後，選擇 [應用程式] 刀鋒視窗底部的 [選取] 按鈕儲存您的選擇。
 
     > [!IMPORTANT]
     > 您至少必須選取一個應用程式，才能建立原則。
 
-6.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 開啟 [原則設定] 刀鋒視窗。
+5.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 開啟 [原則設定] 刀鋒視窗。
 
     原則設定分為兩類：[資料重新配置] 和 [存取]。  資料重新配置原則適用於在應用程式中移入及移出資料，而存取原則決定使用者如何存取工作內容中的應用程式。
     原則設定中的預設值可協助您開始使用。  如果預設值符合您的需求，則不需要進行任何變更。
@@ -77,11 +73,11 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
     ![設定刀鋒視窗與 [新增原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  選擇 [確定] 儲存這項設定。  現在您已回到 [新增原則]  刀鋒視窗。 選擇 [建立] 建立原則並儲存您的設定。
+6.  選擇 [確定] 儲存這項設定。  現在您已回到 [新增原則]  刀鋒視窗。 選擇 [建立] 建立原則並儲存您的設定。
 
     ![顯示已設定的應用程式和設定的 [新增原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![包含 [新增原則] 通知的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。  請遵循以下所述的步驟來部署原則。
 
@@ -169,6 +165,6 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

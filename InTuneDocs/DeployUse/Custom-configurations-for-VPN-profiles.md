@@ -3,18 +3,18 @@ title: "VPN 設定檔的自訂組態 | Microsoft Intune"
 description: "在 Intune 中使用自訂組態來建立 VPN 設定檔。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 
 
 ---
@@ -86,19 +86,19 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考 CSP 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## 適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
-### 封裝清單的自訂 URI 
+### 封裝清單的自訂 URI
 -  資料類型 = 字串
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  值 = 分隔符號分隔的封裝清單。
    - 分隔符號︰分號 (;)、冒號 (:)、逗號 (,)、直立線符號 (|)
 
-範例： 
+範例：
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### 模式自訂 URI (選用)
 - 資料類型 = 字串
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > 附註
 > - 使用指派給自訂設定檔的相同*名稱*
@@ -112,6 +112,6 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

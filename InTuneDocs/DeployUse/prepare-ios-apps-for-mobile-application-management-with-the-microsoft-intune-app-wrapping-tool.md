@@ -3,8 +3,8 @@ title: "使用 App Wrapping Tool 包裝 iOS 應用程式 | Microsoft Intune"
 description: "使用本主題中的資訊，深入了解如何在不需修改應用程式本身程式碼的情況下，包裝您的 iOS 應用程式。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 05/11/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
+ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
 
 
 ---
@@ -292,6 +292,6 @@ ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

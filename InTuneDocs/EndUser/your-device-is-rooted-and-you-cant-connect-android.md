@@ -3,7 +3,7 @@ title: "您的 Android 裝置已進行 Root 破解，因此無法連線 | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 2f59f8675cc80e1f455347dc877b6678f1f9e470
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 # 您的 Android 裝置已進行 Root 破解，因此無法連線
 
-當您的 Android 裝置已進行 Root 破解，表示您的裝置已變更為啟用特定功能，這些功能可能會危害公司資源與安全性。 如果您看見此訊息，直到問題解決為止，您將無法存取公司資源。 
+當您的 Android 裝置已進行 Root 破解，表示您的裝置已變更為啟用特定功能，這些功能可能會危害公司資源與安全性。 如果您看見此訊息，直到問題解決為止，您將無法存取公司資源。
 
 如果您認為自己沒有做出任何刻意對裝置進行 Root 破解的行為，請查看會對您的裝置進行 Root 破解的其他可能原因：
 
@@ -36,6 +36,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

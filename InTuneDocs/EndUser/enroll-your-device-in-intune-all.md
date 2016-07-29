@@ -3,7 +3,7 @@ title: "在 Intune 註冊您的裝置 | Microsoft Intune"
 description: "提供在 Intune 註冊不同裝置之步驟的連結"
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
@@ -11,8 +11,8 @@ ms.service:
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 4b4ba4c57b8675ad1fde256ce07904af93fd8cd7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: ded795ec0547e80398b6f01dee612c3eb157d155
 
 
 ---
@@ -34,6 +34,7 @@ ms.openlocfilehash: 4b4ba4c57b8675ad1fde256ce07904af93fd8cd7
 - [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

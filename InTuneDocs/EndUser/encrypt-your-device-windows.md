@@ -3,7 +3,7 @@ title: "加密您的 Windows 裝置 | Microsoft Intune"
 description: "描述加密 Windows 裝置的方式"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 19772cc52501ad00420b341e694557a01cf88b90
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6f7da9c3df479e8664b4425c1fec1c655fd103b4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 19772cc52501ad00420b341e694557a01cf88b90
 
 為保護您公司或學校的資料，IT 系統管理員可能會要求您加密 Windows 裝置。 如果有已註冊的 Windows Phone，您的裝置就會在需要加密時自動加密。
 
-如果有桌面裝置，請遵循下列指示進行加密。 
+如果有桌面裝置，請遵循下列指示進行加密。
 
 1.  搜尋後啟動 [管理 BitLocker] 應用程式。
 
@@ -37,6 +37,7 @@ ms.openlocfilehash: 19772cc52501ad00420b341e694557a01cf88b90
 [使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

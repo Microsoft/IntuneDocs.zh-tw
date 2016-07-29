@@ -3,7 +3,7 @@ title: "管理大量購買的應用程式 | Microsoft Intune"
 description: "了解如何使用 Intune 管理您從應用程式市集大量購買的應用程式。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 1a4cd495ab9636dcd4bc030db663df320209e0f1
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
 
 
 ---
@@ -38,6 +38,6 @@ Intune 目前可讓您管理您從 iOS 應用程式商店和商務用 Windows �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

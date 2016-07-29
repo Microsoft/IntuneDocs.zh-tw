@@ -3,8 +3,8 @@ title: "在 Intune 註冊 Android 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Android 裝置的方式"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  如果您是使用 Android 6.0 或更新版本，請執行此步驟。 否則請移到下一個步驟。 
+5.  使用您的公司或學校帳戶和密碼登入公司入口網站應用程式，然後點選 [登入]。
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  在 [公司存取設定] 畫面上，點選 [開始]。
+
+    ![公司存取設定畫面](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
+
+    ![為什麼要註冊您的裝置畫面](./media/and-enroll-4b-why-enroll.png)
+
+8.  檢閱 IT 系統管理員在您的裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
+
+    ![隱私權設定](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  在 [接下來要做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
+
+    ![接下來要做什麼畫面](./media/and-enroll-4d-what-comes-next.png)
+
+10.  如果您是使用 Android 6.0 或更新版本，請執行此步驟。 否則請移到下一個步驟。
 
     如果您的 IT 系統管理員已設定特定原則，您可能會看到下列訊息︰
     -   **是否允許公司入口網站進行和管理通話？**
@@ -62,26 +82,6 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
     如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只允許公司入口網站應用程式建立、使用和管理您的工作帳戶。
 
     如果您拒絕存取，則下次點選 [傳送資料] 時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [儲存體]，然後開啟權限。
-
-6.  使用您的公司或學校帳戶和密碼登入公司入口網站應用程式，然後點選 [登入]。
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  在 [公司存取設定] 畫面上，點選 [開始]。
-
-    ![公司存取設定畫面](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
-
-    ![為什麼要註冊您的裝置畫面](./media/and-enroll-4b-why-enroll.png)
-
-9.  檢閱 IT 系統管理員在您的裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
-
-    ![隱私權設定](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  在 [接下來要做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
-
-    ![接下來要做什麼畫面](./media/and-enroll-4d-what-comes-next.png)
 
 11.  在 [啟用裝置管理員] 畫面上，點選 [啟用]。
 
@@ -123,6 +123,6 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

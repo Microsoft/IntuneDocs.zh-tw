@@ -1,10 +1,10 @@
 ---
 title: "Wi-Fi 連線 | Microsoft Intune"
-description: 
+description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者和裝置。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
-ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
 
 2.  設定類型的原則：[Windows] &gt; [Wi-Fi 匯入 (Windows 8.1 及更新版本)]。
 
-    這個原則可以套用至 Windows 8.1 和 Windows 10 Desktop 和行動裝置版。 
-    
+    這個原則可以套用至 Windows 8.1 和 Windows 10 Desktop 和行動裝置版。
+
     您只能建立和部署自訂的 Windows Wi-Fi 匯入原則。 沒有建議的設定。
 
 3.  指定下列的 Windows Wi-Fi 匯入原則一般值：
@@ -166,6 +166,6 @@ ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

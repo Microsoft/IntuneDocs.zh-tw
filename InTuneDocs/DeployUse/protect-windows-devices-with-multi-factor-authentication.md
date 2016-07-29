@@ -3,7 +3,7 @@ title: "適用於 Windows 的 Multi-Factor Authentication | Microsoft Intune"
 description: "Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公司資源。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c2c1a35152dc0f9ec9464c056fed3300540bf33c
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c1f9c60a1c79d23bab62617ed237ad982e82c39d
 
 
 ---
 
 # Protect Windows devices with multi-factor authentication
-Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公司資源。 除了使用者名稱和密碼，MFA 還需要其他驗證因素，例如文字驗證。 在註冊 Windows 8.1 或更新版本、Windows Phone 8.1 或 Windows 10 桌面版和行動裝置版的裝置期間，Intune 支援使用 MFA。 
+Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公司資源。 除了使用者名稱和密碼，MFA 還需要其他驗證因素，例如文字驗證。 在註冊 Windows 8.1 或更新版本、Windows Phone 8.1 或 Windows 10 桌面版和行動裝置版的裝置期間，Intune 支援使用 MFA。
 
 ## 適用於 ADFS MFA 的內部部署基礎結構需求
 若要設定 Multi-factor Authentication，需要下列項目：
@@ -55,7 +55,6 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公�
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

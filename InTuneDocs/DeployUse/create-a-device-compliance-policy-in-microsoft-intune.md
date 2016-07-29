@@ -3,7 +3,7 @@ title: "建立裝置相容性原則 | Microsoft Intune"
 description: "建立相容性原則以協助保護用來存取公司資料的行動裝置和電腦。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: da2059c476d91ac6729543f67fa11db85502f60d
 
 
 ---
@@ -87,6 +87,6 @@ ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

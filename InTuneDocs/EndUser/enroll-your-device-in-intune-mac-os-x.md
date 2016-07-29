@@ -3,7 +3,7 @@ title: "在 Intune 註冊 Mac OS X 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Mac OS X 裝置的方式"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
 
 2.  點選 [This device is either not enrolled or the Company Portal can't identify it] (未註冊此裝置，或公司入口網站無法識別此裝置)。
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  點選 [安裝] 開始註冊您的裝置。
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  在 [安裝管理設定檔] 對話方塊上，點選 [安裝]。 如果出現對話方塊要求您輸入認證，請輸入您的使用者名稱和密碼，然後點選 [繼續] &gt; [安裝]。
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     當您完成註冊時，會看到顯示已驗證您的設定檔的 [管理設定檔] 頁面。
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
@@ -54,6 +54,7 @@ ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

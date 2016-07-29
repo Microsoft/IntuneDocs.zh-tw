@@ -3,19 +3,19 @@ title: "管理警示 | Microsoft Intune"
 description: "使用 [警示] 工作區，評估組織中裝置的整體健全狀況。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
 
         > [!NOTE]
         > 在某些情況下，警示類型可能會在 [警示類型摘要] 清單中出現一次以上。
-        > 
+        >
         > 例如，清單中可能會出現下列「邏輯可用磁碟空間」警示類型執行個體：
-        > 
+        >
         > -   3 邏輯可用磁碟空間
         > -   2 邏輯可用磁碟空間
-        > 
+        >
         > 當執行不同作業系統的裝置產生相同的警示類型時，就會發生這種情況。 在此範例中，執行 Windows® 7 的電腦可能會產生第一個「邏輯可用磁碟空間」警示類型執行個體，即 3 邏輯可用磁碟空間。 執行 Windows Vista® 的電腦則會產生第二個「邏輯可用磁碟空間」警示類型執行個體。
 
     -   **若要顯示所有作用中警示**，請按一下 [警示] &gt; [所有警示]。 [警示] 頁面會顯示具有下列各欄的所有作用中警示清單：
@@ -107,7 +107,6 @@ Intune 警示會持續作用到發生以下事件之一為止：
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

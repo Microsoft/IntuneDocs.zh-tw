@@ -3,7 +3,7 @@ title: "如何設定鎖定 Android 裝置之前的期間 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 6ffad8fd23afb4d47dc8ead1ba4a7a930a30ea73
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 990ab5f8f8bf2747506abab47569d592f7ca56fd
 
 
 ---
@@ -42,6 +42,7 @@ ms.openlocfilehash: 6ffad8fd23afb4d47dc8ead1ba4a7a930a30ea73
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

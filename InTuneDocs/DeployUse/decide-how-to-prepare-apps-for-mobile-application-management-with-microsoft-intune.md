@@ -3,7 +3,7 @@ title: "針對行動應用程式管理準備應用程式 | Microsoft Intune"
 description: "本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理員則。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: a7aa32704a8eb33d20a3149941b3e6f2a91478a0
 
 
 ---
@@ -69,6 +69,6 @@ App SDK 的設計主要是針對 App 或 Play Store 中具有應用程式並想�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

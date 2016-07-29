@@ -3,7 +3,7 @@ title: "保護應用程式和資料 | Microsoft Intune"
 description: 
 keywords: "本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。"
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: f60541c2e9284ea795c5e9811ef2663113af57cb
 
 
 ---
@@ -53,6 +53,6 @@ Microsoft Office 之類的應用程式已內建應用程式 SDK。 在 Microsoft
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

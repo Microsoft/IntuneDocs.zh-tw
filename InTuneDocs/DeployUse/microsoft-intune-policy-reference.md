@@ -3,7 +3,7 @@ title: "設定原則參考 | Microsoft Intune"
 description: "您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 50bfa96a334f2253550e1344179dc99b8ac68817
 
 
 ---
@@ -134,6 +134,6 @@ ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

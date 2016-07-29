@@ -3,7 +3,7 @@ title: "加密您的裝置 | Microsoft Intune"
 description: "描述加密 Android 裝置的方式"
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 ---
@@ -24,9 +24,9 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 如果貴公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員需要 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
-如果您曾經取消註冊您的電話，則它會維持加密狀態。 
+如果您曾經取消註冊您的電話，則它會維持加密狀態。
 
-1.  確定已設定裝置的螢幕鎖定 PIN 或密碼。 
+1.  確定已設定裝置的螢幕鎖定 PIN 或密碼。
 
 2.  在 [設定] 中，按一下 [安全性] &gt; [加密電話]。
     (在某些電話上，您需要按一下 [儲存體] &gt; [Storage encryption] (儲存體加密) 或 [儲存體] &gt; [Lock screen and security] (鎖定螢幕和安全性) &gt; [Other security settings] (其他安全性設定) 來尋找 [加密] 選項)。
@@ -47,7 +47,6 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
