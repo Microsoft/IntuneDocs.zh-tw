@@ -3,8 +3,8 @@ title: "透過 Intune 使用 Windows 裝置 | Microsoft Intune"
 description: "可以在已註冊至 Intune 的 Windows 裝置上執行之工作的連結清單"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
 
 
 ---
 
 # 使用具有 Intune 的 Windows 裝置
 
-當貴公司使用 Microsoft Intune 時，請使用下列步驟來完成需要在 Windows 裝置或電腦上執行的工作。
+針對使用者可在其受 Intune 管理裝置上執行的工作，此頁面包含所有這些工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰註冊相關資訊、管理工作，以及相容性問題。
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
@@ -57,8 +57,6 @@ ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "使用 USB 纜線將診斷資料記錄檔傳送給 IT 系統管理員 | 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 如果您想要傳送資料記錄給 IT 系統管理員以取得相關協助來解決問題，您可以使用電腦和 USB 纜線來傳送記錄，而不是從您的行動裝置傳送記錄。 以下說明做法：
 
-1.  開始之前，請確定您有 IT 系統管理員的電子郵件地址。 該地址通常會列在公司入口網站或公司入口網站應用程式中。
+1.  在錯誤畫面上，點選 [傳送資訊]。 當您看到訊息詢問要用哪一種方法傳送記錄檔時，請選擇會將檔案儲存至裝置的選項。
+
+2.  開始之前，請確定您已有 IT 系統管理員的電子郵件地址，通常會列在[公司入口網站](http://portal.manage.microsoft.com)或公司入口網站應用程式中。
 
 2.  使用 USB 纜線將 Android 裝置連接到電腦。
 
@@ -33,12 +35,13 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 4.  將所有檔案附加到電子郵件，並傳送給您的 IT 系統管理員。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 ### 請參閱
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -12,8 +12,11 @@
 ### [開始使用試用版與部署 iOS PIN 原則](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [設定 iOS 裝置的電子郵件存取](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [常見案例](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [快速入門指南](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [防止公司資料從 Office 365 行動應用程式外洩](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [將行動應用程式發佈給您的使用者](publish-mobile-apps-to-users.md)
+### [防禦惡意程式碼威脅，保護 Windows 電腦](protect-pcs-against-malware-threats.md)
+### [簡化行動裝置上的電子郵件設定](simplify-email-configuration-on-mobile-devices.md)
 
 # [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -22,6 +25,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

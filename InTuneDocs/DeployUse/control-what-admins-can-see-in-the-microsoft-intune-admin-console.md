@@ -3,7 +3,7 @@ title: "自訂系統管理員角色的主控台檢視 | Microsoft Intune"
 description: "使用本主題來協助您篩選 Intune 管理主控台檢視，以讓您的管理員僅查看其角色所需的項目。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # 根據系統管理員角色自訂 Intune 主控台檢視
-您可以篩選 Microsoft Intune 管理主控台檢視，讓您的管理員僅查看其角色需要看到的項目。 例如，您可以允許只有管理主控台操作員能夠更新惡意程式碼定義，或重設裝置上的密碼。 這可以藉由使用您指派給特定使用者的預設**指定**來完成。 當這些使用者存取管理主控台時，他們只會看見其指定特定的項目。
+您可以篩選 Microsoft Intune 管理主控台檢視，讓您的系統管理員僅能查看其角色需要看到的項目。 例如，您可以允許只有管理主控台操作員能夠更新惡意程式碼定義，或重設裝置上的密碼。 這可以藉由使用您指派給特定使用者的預設**指定**來完成。 當這些使用者存取管理主控台時，他們只會看見符合其指定的特定項目。
 
-## 如何建立自訂檢視
+## 建立自訂檢視
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [管理] &gt; [服務系統管理員]。
 
@@ -60,14 +60,14 @@ ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
 
         -   重新整理清查
 
-        -   遠端鎖定裝置
+        -   從遠端鎖定裝置
 
-        -   密碼重設
+        -   重設密碼
 
-當您設定的系統管理員隨後開啟 Intune 管理主控台時，即會授與您指定的存取層級。
+當您設定的系統管理員隨後開啟 Intune 管理主控台時，即會獲得您指定的存取層級。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

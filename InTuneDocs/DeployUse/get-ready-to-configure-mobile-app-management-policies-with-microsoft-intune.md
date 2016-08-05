@@ -3,8 +3,8 @@ title: "準備設定 MAM 原則 | Microsoft Intune"
 description: "本主題說明您在建立行動應用程式管理原則之前的先決條件和使用者設定。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ Azure 入口網站是建立 MAM 原則的新管理主控台。 建議您使用�
 
     ![Office 入口網站中的 [作用中使用者] 頁面](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Office 入口網站中的 [編輯使用者] 頁面](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  若要讓使用者能夠存取 Office 入口網站、Azure AD 入口網站和 Azure 入口網站，請將 [全域管理員角色] 指派給使用者。
 
     ![Office 入口網站中編輯使用者角色的頁面](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM 原則會部署到 Azure Active Directory 的使用者群組。 若要為 MAM 原則建立使用者群組，請移至至 Office 入口網站的 [群組] 頁面，然後按一下 **+** 圖示以建立新的安全性群組。  輸入名稱和描述，然後按一下 [建立]。 當群組建立後，您可以按一下 [編輯成員] 將使用者新增到群組。 安全性群組建立在 Azure Active Directory 中。
+5.  MAM 原則會部署到 Azure Active Directory 的使用者群組。 若要為 MAM 原則建立使用者群組，請移至 Office 入口網站的 [群組] 頁面，然後在頂端功能表中，選擇 [新增群組選項] 以建立新的安全性群組。  輸入名稱和描述，然後按一下 [建立]。 當群組建立後，您可以按一下 [編輯成員] 將使用者新增到群組。 安全性群組建立在 Azure Active Directory 中。
 
     ![Office 入口網站中的安全性群組頁面](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Azure 入口網站是建立 MAM 原則的新管理主控台。 建議您使用�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

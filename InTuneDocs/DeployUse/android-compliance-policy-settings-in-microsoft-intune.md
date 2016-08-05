@@ -3,7 +3,7 @@ title: "Android 裝置的相容性原則設定 | Microsoft Intune"
 description: "本主題說明適用於 Android 裝置的裝置相容性原則設定。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -56,9 +56,17 @@ ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
 ### 加密
 - **行動裝置需要加密︰將此**設為 [是]，以要求裝置加密才能連線到資源。 當您設定 [需要密碼來將行動裝置解除鎖定] 的設定時，裝置會加密。
 
-## 裝置健全狀況設定
+## 裝置健全狀況和安全性設定
 
 - **不得破解裝置或刷機：**如果您啟用這個設定，破解的裝置會評估為不相容。
+- **裝置必須防止從不明來源安裝應用程式 (Android 4.0 或更新版本)**：若要封鎖已將 [安全性] > [不明來源] 啟用的裝置，請啟用此設定，並設定為 [是]。  
+>[!IMPORTANT]
+>側載應用程式要求將 [不明來源] 設定啟用。  只有當您不會在裝置上側載 Android 應用程式時，才應該強制執行此相容性原則。
+
+- **USB 偵錯需為停用 (Android 4.2 或更新版本)**︰此設定指定是否要偵測裝置上已啟用 USB 偵錯選項。
+- **裝置必須已啟用 [掃描裝置的安全性威脅] (Android 4.2-4.4)**︰此設定指定要在裝置上啟用 [驗證應用程式] 功能。
+- **Android 安全性修補程式等級下限 (Android 6.0 或更新版本)**︰使用此設定可指定 Android 的最低修補程式等級。  未至少達此修補程式等級的裝置將視為不相容。 日期的格式必須指定為︰ YYYY-MM-DD。
+
 
 ## 裝置屬性設定
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
@@ -68,6 +76,6 @@ ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

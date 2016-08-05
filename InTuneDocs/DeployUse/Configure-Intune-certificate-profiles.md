@@ -3,8 +3,8 @@ title: "設定憑證設定檔 | Microsoft Intune"
 description: "了解如何建立 Intune 憑證設定檔。"
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
 
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  提供必要的資訊，為 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 設定信任的憑證設定檔設定。 在 [憑證檔案] 設定中，匯入從您的發行 CA 匯出的信任的根 CA 憑證 (**.cer**)。 [目的地存放區] 設定僅適用於執行 Windows 8.1 和更新版本的裝置，且僅當裝置有一個以上的憑證存放區時才適用。
+3.  提供必要的資訊，為 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 設定信任的憑證設定檔設定。 
+
+    - 在 [憑證檔案] 設定中，匯入從您的發行 CA 匯出的信任的根 CA 憑證 (**.cer**)。 [目的地存放區] 設定僅適用於執行 Windows 8.1 和更新版本的裝置，且僅當裝置有一個以上的憑證存放區時才適用。
+
+    
+    - 在 [主體名稱格式] 下，選取 [自訂] 以提供自訂的主體名稱格式。  
+
+        自訂格式目前支援的兩個變數為「一般名稱 (CN)」和「電子郵件 (E)」。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式，如本範例中所示︰  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        在本範例中，系統管理員建立的主體名稱格式除了有 CN 與 E 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區的字串。 支援字串的清單會在 [CertStrToName 函式](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)主題中提供。  
 
 
 4.  完成之後，請按一下 [儲存原則] 。
@@ -83,6 +94,15 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  遵循設定檔設定頁面的指示來設定 SCEP 憑證設定檔設定。
+    > [!NOTE]
+    > 
+    > 在 [主體名稱格式] 下，選取 [自訂] 以提供自訂的主體名稱格式。
+    > 
+    >  自訂格式目前支援的兩個變數為「一般名稱 (CN)」和「電子郵件 (E)」。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式，如本範例中所示︰
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    在本範例中，系統管理員建立的主體名稱格式除了有 *CN* 與 *E* 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區的字串。 支援字串的清單會在 [CertStrToName 函式](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)主題中提供。
 
 4.  完成之後，請按一下 [儲存原則] 。
 
@@ -145,6 +165,6 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

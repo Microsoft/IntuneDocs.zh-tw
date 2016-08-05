@@ -3,17 +3,19 @@ title: "從公司入口網站移除裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 43ed6e3dc88ddf0668dafe1f728b6e7c5225ca2c
 
 
 ---
@@ -23,7 +25,7 @@ ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
 
 如果決定不想再由 Intune 和 IT 系統管理員來管理您的裝置，您可以使用[公司入口網站](http://portal.manage.microsoft.com)從公司入口網站移除它。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
 
-如果移除裝置，公司入口網站將不再列出此裝置，而且您還可能無法再存取公司或學校的資料、應用程式和電子郵件。 
+如果移除裝置，公司入口網站將不再列出此裝置，而且您還可能無法再存取公司或學校的資料、應用程式和電子郵件。
 
 若要移除裝置︰
 
@@ -31,7 +33,9 @@ ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
 
 2.  點選 [移除]。
 
-    ![remove-device](./media/iwp-1-tap-reset-passcode.png)
+    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3. 閱讀其中指出若將您的裝置移除會發生什麼情況的警告訊息，然後點選 [移除] 以從公司入口網站移除您的裝置。
 
 現在已移除您的裝置。
 
@@ -41,6 +45,7 @@ ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Microsoft Intune 公司入口網站 | Microsoft Intune"
 description: "設定 Intune 公司入口網站"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
 
 
 ---
@@ -28,7 +28,7 @@ Intune 公司入口網站是一項工具，可供使用者存取公司資料和�
 -   **公司入口網站應用程式**：可在您使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理的裝置上使用的應用程式。 深入了解 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 適用的公司入口網站應用程式。
 
 
-- **公司入口網站**：可從[支援的瀏覽器](supported-web-browsers.md)存取的網站。 URL 是 [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx)。 在[使用 Intune 公司入口網站](/Intune/EndUser/using-the-intune-company-portal-website)深入了解此網站。
+- **公司入口網站**︰可從[支援的瀏覽器](supported-web-browsers.md)存取的網站，使用者能在此執行的工作和從其平台專屬的公司入口網站應用程式執行的工作大致相同。 URL 為 [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com)。 在[使用 Intune 公司入口網站](/Intune/EndUser/using-the-intune-company-portal-website)深入了解此網站。
 
 使用者可以在公司入口網站中執行的部分工作包括︰
 
@@ -53,6 +53,6 @@ Intune 公司入口網站是一項工具，可供使用者存取公司資料和�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

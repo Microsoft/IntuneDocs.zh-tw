@@ -3,8 +3,8 @@ title: "從公司入口網站重設裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f65861373339a50cfc7dd6756baf3e091409044
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
 
 如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](http://portal.manage.microsoft.com)遠端重設裝置。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
 
-如果重設裝置，公司入口網站將不再列出此裝置，裝置將重設為出廠預設值。 
+如果重設裝置，公司入口網站將不再列出此裝置，裝置將重設為出廠預設值。
 
 若要重設裝置：
 
@@ -33,7 +33,9 @@ ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
 
 2.  點選 [重設]。
 
-    ![reset-device](./media//iwp-1-tap-reset-passcode.png)
+    ![reset-device-option-on-company-portal-website](./media//iwp-screen-with-all-options.png)
+
+3. 閱讀其中指出要將裝置重設為原廠預設設定的警告訊息，然後點選 [重設] 以重設您的裝置。
 
 現在已重設您的裝置。
 
@@ -44,6 +46,6 @@ ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

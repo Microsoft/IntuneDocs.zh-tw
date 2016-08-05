@@ -1,20 +1,20 @@
 ---
-title: "使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理 | Microsoft Intune"
-description: 
+title: "Exchange ActiveSync 裝置管理 |Microsoft Intune"
+description: "使用 Exchange Connector 透過 Exchange ActiveSync (EAS) 管理，直接管理其使用者尚未註冊的已註冊行動裝置"
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: f545c7db4c29690a72c5a84dfcab6f179cbe72a2
 
 
 ---
@@ -45,6 +45,6 @@ Exchange Connector可讓您在 Intune 主控台中管理您的 Exchange 部署�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
