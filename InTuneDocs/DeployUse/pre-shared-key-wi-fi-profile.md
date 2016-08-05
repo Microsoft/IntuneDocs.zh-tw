@@ -3,7 +3,7 @@ title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: "使用自訂組態建立包含預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
 
    c.   **資料類型**︰設為「字串(XML)」
 
-   d.   **OMA-URI**：./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**： 
+        
+- **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 注意︰開頭務必包含句點字元。
 
 SSID 是您要建立原則的 SSID。 例如，
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    值欄位︰在這裡貼上 XML 程式碼。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
 
@@ -197,6 +200,6 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

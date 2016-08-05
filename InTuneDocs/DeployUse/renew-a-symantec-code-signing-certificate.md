@@ -1,20 +1,20 @@
 ---
-title: "更新 Symantec 企業程式碼簽署憑證以搭配 Microsoft Intune 一起使用 | Microsoft Intune"
-description: 
+title: "更新 Symantec 企業程式碼簽署憑證以搭配 Intune 一起使用 | Microsoft Intune"
+description: "用來管理特定 Windows 和 Windows Phone 行動裝置的 Symantec 憑證更新指引"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
 
 
 ---
@@ -29,13 +29,13 @@ ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
 
     如需 Symantec 憑證的詳細資訊，請瀏覽 [www.symantec.com](http://www.symantec.com)，或致電 1-877-438-8776 或 1-650-426-3400。
 
-2.  移至網站 (例如， [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do))，並使用 Symantec 發行者識別碼和與憑證相關的電子郵件位址登入。 請務必使用您用以下載憑證的電腦來啟動更新。
+2.  移至網站 (例如，[https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do))，並使用 Symantec 發行者識別碼和與憑證相關的電子郵件位址登入。 請務必使用您用以下載憑證的電腦來啟動更新。
 
 3.  一旦更新核准，且已支付，即可下載憑證。
 
 ## 如何安裝 Windows Phone 8.0 的更新憑證
 
-1.  在此處下載並登入最新的 Windows Phone 公司入口網站： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
+1.  在此處下載並登入最新的 Windows Phone 公司入口網站：[http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
 2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員]、[行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
@@ -47,9 +47,9 @@ ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
 
 提供經過簽署的 SSP.xap 檔案，是目前唯一能夠更新之程式碼簽署憑證的方法。 若要支援已簽署的企業營運系統應用程式，您必須簽署並上傳公司入口網站應用程式，即使您的使用者將從市集安裝公司入口網站應用程式也一樣。
 
-## 如何安裝適用於 Windows Phone 8.1 及更新版裝置的更新的證
+## 如何安裝適用於 Windows Phone 8.1 及更新版裝置的更新的憑證
 
-1.  從此處的下載中心下載並簽署最新的 Windows Phone 公司入口網站： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
+1.  從此處的下載中心下載並簽署最新的 Windows Phone 公司入口網站：[http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
 2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

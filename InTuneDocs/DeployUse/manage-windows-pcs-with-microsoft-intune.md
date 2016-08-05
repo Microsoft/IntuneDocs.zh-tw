@@ -1,26 +1,26 @@
 ---
-title: "使用 Intune 電腦用戶端管理 Windows 電腦 | Microsoft Intune"
-description: 
+title: "使用 Intune 用戶端管理 Windows 電腦 | Microsoft Intune"
+description: "安裝 Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
-ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
 
 
 ---
 
 # 使用 Intune 電腦用戶端軟體管理 Windows 電腦
-不同於[將 Windows 電腦註冊為行動裝置](set-up-windows-device-management-with-microsoft-intune.md)，您可以透過安裝 Intune 用戶端軟體來管理 Windows 電腦。 
+不同於[將 Windows 電腦註冊為行動裝置](set-up-windows-device-management-with-microsoft-intune.md)，您可以透過安裝 Intune 用戶端軟體來管理 Windows 電腦。
 
 Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Server Active Directory 網域服務 (AD DS) 群組原則物件 (GPO)。 如果您想要使用 Intune 來管理已加入 Active Directory 網域的電腦，您應該[確定 Intune 原則不會與組織中任何現有的 GPO 衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 
@@ -86,6 +86,6 @@ Intune 用戶端代理程式通常是在背景中以無訊息模式執行，不�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

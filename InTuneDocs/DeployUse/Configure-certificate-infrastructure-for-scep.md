@@ -3,8 +3,8 @@ title: "設定 SCEP 的憑證基礎結構 |Microsoft Intune"
 description: "建立及部署 SCEP 憑證設定檔的基礎結構。"
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: e7d6bc1e06217237a79c547c9b449c1fc16aeed4
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # 設定 SCEP 的憑證基礎結構
@@ -44,6 +44,8 @@ I
 從網際網路到周邊網路，允許經由連接埠 443 從網際網路上所有主機/IP 位址連接到 NDES 伺服器。
 
 從周邊網路到受信任網路，允許在加入網域的 NDES 伺服器上進行網域存取所需的所有連接埠和通訊協定。 NDES 伺服器需要存取憑證伺服器、DNS 伺服器、Configuration Manager 伺服器和網域控制站。
+
+建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)，或是協力廠商 Proxy。
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>憑證和範本
@@ -347,6 +349,6 @@ I
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

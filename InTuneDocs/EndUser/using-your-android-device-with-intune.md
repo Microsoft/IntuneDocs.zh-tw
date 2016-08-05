@@ -3,8 +3,8 @@ title: "透過 Intune 使用 Android 裝置 | Microsoft Intune"
 description: "可以在已註冊至 Intune 的 Android 行動裝置上執行之工作的連結清單"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 # 透過 Intune 使用 Android 裝置
 
-當貴公司使用 Microsoft Intune 時，請使用下列步驟來完成需要在 Android 裝置上執行的工作。
+針對使用者可在其受 Intune 管理裝置上執行的工作，此頁面包含所有這些工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰註冊相關資訊、管理工作，以及相容性問題。
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
@@ -67,9 +67,6 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

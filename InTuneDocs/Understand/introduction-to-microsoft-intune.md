@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Intune 簡介 | Microsoft Intune"
-description: 
+description: "了解 Intune 為何是 Enterprise Mobility + Security 解決方案的行動裝置管理元件。"
 keywords: 
 author: Lindavr
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4dc67dd71aa49b4227c30f094a2596ea3ab35492
-ms.openlocfilehash: a9ae645034acbc4cf9d43c852fa0554e150f6bf0
+ms.sourcegitcommit: 775293074158dd6cd12a70b3afcb8424ea37c5b2
+ms.openlocfilehash: dee7cc762d6301c87736a34675e5f9e46a8634fa
 
 
 ---
@@ -53,6 +53,6 @@ Intune 提供的主要工具包括︰
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

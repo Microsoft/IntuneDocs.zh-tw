@@ -1,6 +1,6 @@
 ---
 title: "使用裝置註冊管理員進行註冊 | Microsoft Intune"
-description: "Microsoft Intune 的裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
+description: "裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
 keywords: 
 author: NathBarn
 manager: arob98
@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
+ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
+ms.openlocfilehash: d126bbfc40cada71458b03c23e571490b4af4d44
 
 
 ---
@@ -59,7 +59,7 @@ ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
 
 3.  確認已列出將會是裝置註冊管理員的使用者帳戶。 如果未列出，請選擇 [新增] 並完成「新增使用者」程序，來新增使用者。 每位存取該服務的使用者，都需要訂閱授權，而 *「裝置註冊管理員」* (device enrollment manager) 不得為 Intune 系統管理員。 決定是否需要新增更多授權，然後再使用這項功能。
 
-4.  使用您系統管理員的帳戶登入 [Microsoft Intune 管理主控台](http://manage.microsoft.com) 。
+4.  使用您系統管理員的帳戶登入 [Microsoft Intune 管理主控台](http://manage.microsoft.com)
 
 5.  在導覽窗格中選擇 [系統管理]，並移至 [系統管理員管理]，然後選取 [裝置註冊管理員]。 [裝置註冊管理員] 頁面隨即開啟。
 
@@ -93,6 +93,6 @@ ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

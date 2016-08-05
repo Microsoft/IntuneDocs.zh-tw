@@ -3,8 +3,8 @@ title: "從公司入口網站重新命名裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 76c1e1be72fe14e293dbb6783814df79128b54f2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: dc9d01cb24fbdd594c7f84b72d244d81a08d4384
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 76c1e1be72fe14e293dbb6783814df79128b54f2
 
 2.  點選 **[重新命名]**。
 
-    ![rename-device](./media/iwp-1-tap-reset-passcode.png)
+    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  在目前裝置名稱出現的方塊中，輸入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
 
@@ -41,6 +41,7 @@ ms.openlocfilehash: 76c1e1be72fe14e293dbb6783814df79128b54f2
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

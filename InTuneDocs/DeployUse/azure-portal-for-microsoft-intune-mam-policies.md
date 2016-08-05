@@ -3,8 +3,8 @@ title: "MAM 原則的 Azure 入口網站 | Microsoft Intune"
 description: "使用 Azure 入口網站建立行動裝置應用程式管理原則。 無論裝置是否有在 Intune 中註冊，您都可以套用在這裡建立的原則。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
     ![Azure 入口網站登入頁面的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  一旦成功登入，您會看到 [儀表板]。 [儀表板] 頁面都附有一組可以移除及新增的預設磚，讓您自訂頁面。
+2.  一旦成功登入，您會看到 [儀表板]。 您可以自訂 [儀表板] 頁面。
 
     ![Azure 入口網站儀表板的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  從 **[瀏覽]** 功能表中，尋找 **Intune**。![反白顯示 Intune [瀏覽] 功能表的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  按一下 **[Intune] > [Intune 行動應用程式管理] > [設定]**。
+4.  選擇 [Intune] > [Intune 行動應用程式管理] > [設定]。
 
     ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

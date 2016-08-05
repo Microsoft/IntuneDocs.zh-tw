@@ -3,7 +3,7 @@ title: "管理公司裝置 | Microsoft Intune"
 description: "根據裝置、裝置的購買方式以及組織需求，以各種方式管理公司所擁有的裝置 (COD)。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 
 ---
 
 # 使用 Microsoft Intune 註冊公司擁有的裝置
-根據裝置、購買方式和組織需求，Intune 可以透過各種不同的方式管理組織或公司所擁有的裝置 (COD)。
+根據裝置、購買方式和組織需求，Intune 可以透過各種不同的方式管理組織或公司所擁有的裝置 (COD)。 如同「攜帶您自己的裝置」(BYOD) 案例來安裝公司入口網站應用程式，也可以註冊和管理公司擁有的裝置。
 
 ## 公司擁有的 iOS 裝置
 這些註冊方法適合「選擇您自己的裝置」(CYOD) 案例，其中組織會為使用者購買裝置，但想要保有對裝置的管理。 如果您的組織有購買的 iOS 裝置，您可以預先設定註冊，使得裝置在使用者第一次開啟裝置時即受到管理。 Intune 支援透過 [Apple 的裝置註冊程式 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 註冊或使用 Mac 電腦上執行的 Apple Configurator 進行[直接](ios-direct-enrollment-in-microsoft-intune.md)或[設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)註冊。
@@ -53,6 +53,6 @@ ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

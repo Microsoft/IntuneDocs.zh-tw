@@ -3,8 +3,8 @@ title: "透過 Intune 使用 iOS 或 Mac OS X 裝置 | Microsoft Intune"
 description: "可以在已註冊至 Intune 的 iOS 或 Mac OS X 行動裝置上執行之工作的連結清單"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-當貴公司使用 Microsoft Intune 時，請使用下列步驟來完成需要在 iOS 或 Mac OS X 裝置上執行的工作。
+針對使用者可在其受 Intune 管理裝置上執行的工作，此頁面包含所有這些工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰註冊相關資訊、管理工作，以及相容性問題。
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
@@ -61,8 +61,6 @@ ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

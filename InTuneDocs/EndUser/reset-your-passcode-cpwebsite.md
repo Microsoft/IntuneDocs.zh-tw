@@ -3,8 +3,8 @@ title: "從公司入口網站重設裝置密碼 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 如果您在 Intune 中註冊的裝置遺失裝置 PIN 或密碼，您可以使用[公司入口網站](http://portal.manage.microsoft.com)重設密碼。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
 
-> [!NOTE] 
+> [!NOTE]
 > 公司入口網站上可能不會顯示 [重設密碼] 按鈕，這是由 IT 系統管理員設定 Intune 的方式決定。 Windows 8.1 和 Windows RT 裝置不支援重設密碼。
 
 若要重設密碼：
@@ -34,7 +34,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 2.  點選 [重設密碼]。
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  點選 [登出]，然後以公司或學校認證登入。 您必須在五分鐘內登入。
 
@@ -64,6 +64,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "註冊裝置 | Microsoft Intune"
-description: "Microsoft Intune 行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。"
+description: "行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。"
 keywords: 
 author: NathBarn
 manager: arob98
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: d128b9c9f0c9eda70abed058afeb665377047f66
+ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
+ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
 
 
 ---
@@ -89,7 +89,7 @@ USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則�
   - 對電子郵件和公司資料進行條件式存取
   - 公司入口網站應用程式
 
-[使用者親和性](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#enrollment-of-company-owned-ios-devices-with-user-affinity) ([返回表格](#overview-of-device-enrollment-methods))
+[使用者親和性](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([返回表格](#overview-of-device-enrollment-methods))
 
 ### 鎖定
 指定是否可以鎖定裝置以防止使用者移除 Intune 原則，以有效地移除裝置不進行管理。 針對 iOS 裝置，鎖定裝置時需要裝置處於受監督模式。
@@ -124,6 +124,6 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
