@@ -2,9 +2,9 @@
 title: "裝置註冊疑難排解| Microsoft Intune"
 description: "裝置註冊問題的疑難排解建議。"
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: nathbarn
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 
 ---
@@ -144,7 +144,7 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 **解決方式︰**在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
 
 ### 如果您有多個以驗證的網域，您無法登入或註冊裝置
-**問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。 
+**問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
 **解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個使用者 UPN 尾碼 (例如，@contoso.com 或 @fabrikam.com) 的最上層網域的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務。  現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
@@ -166,14 +166,14 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 **問題**：使用者在裝置上收到下列訊息：「您無法登入，因為您的裝置缺少必要的憑證」。
 
-**解決方案**： 
+**解決方案**：
 
 - 使用者透過遵循[這些指示](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)，可能可以擷取遺失的憑證。
-- 若使用者無法擷取憑證，您的 ADFS 伺服器上可能遺失中繼憑證。 Android 需要中繼憑證以信任伺服器。 
+- 若使用者無法擷取憑證，您的 ADFS 伺服器上可能遺失中繼憑證。 Android 需要中繼憑證以信任伺服器。
 
 您可以將憑證匯入 ADFS 伺服器或 Proxy 上的中繼存放區，如下所示：
 
-1.  在 ADFS 伺服器上，啟動 **Microsoft Management Console**，並新增「電腦帳戶」的憑證嵌入式管理單元。 
+1.  在 ADFS 伺服器上，啟動 **Microsoft Management Console**，並新增「電腦帳戶」的憑證嵌入式管理單元。
 5.  尋找您的 ADFS 服務所使用的憑證，並檢視它的父憑證。
 6.  複製父憑證，並將它貼在 **Computer\Intermediate Certification Authorities\Certificates** 之下。
 7.  複製您的 ADFS、ADFS 解密及 ADFS 簽署憑證，並將它們貼在 ADFS 服務的個人存放區中。
@@ -200,34 +200,34 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 ### 使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
 **問題︰**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理員主控台。 裝置並未指出它已註冊。 可能的原因：
 
-- 您可能已將 Intune 連接器註冊到一個帳戶，然後將它註冊到另一個帳戶。 
+- 您可能已將 Intune 連接器註冊到一個帳戶，然後將它註冊到另一個帳戶。
 - 您可能已從一個帳戶下載 MDM 憑證，然後將其用於另一個帳戶。
 
 
 **解決方式：**執行下列步驟：
 
-1. 在 Windows Intune 連接器內部停用 iOS。 
+1. 在 Windows Intune 連接器內部停用 iOS。
     1. 以滑鼠右鍵按一下 Intune 訂閱，然後選取 [內容]。
     1. 在 [iOS] 索引標籤，取消核取 [啟用 iOS 註冊]。
 
 
 
 1. 在 SQL 中，在 CAS DB 上執行下列步驟
-  
-    1. 更新 SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. 從 MDMPolicy where PolicyType = 7 刪除 
+
+    1. 更新 SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. 從 MDMPolicy where PolicyType = 7 刪除
     1. 從 MDMPolicyAssignment where PolicyType = 7 刪除
-    1. 更新 SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. 從 MDMPolicy where PolicyType = 11 刪除 
-    1. 從 MDMPolicyAssignment where PolicyType = 11 刪除 
+    1. 更新 SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. 從 MDMPolicy where PolicyType = 11 刪除
+    1. 從 MDMPolicyAssignment where PolicyType = 11 刪除
     1. 刪除 Drs_Signals
-1. 重新啟動 SMS Executive 服務或重新啟動 CM 伺服器 
+1. 重新啟動 SMS Executive 服務或重新啟動 CM 伺服器
 
 
 
 1. 取得新的 APN 憑證並將它上傳︰以滑鼠右鍵按一下 Configuration Manager 左側窗格中的 Intune 訂閱。 選取 [建立 APN 憑證要求] 並遵循指示。
 ## 使用具有 Intune 的 System Center Configuration Manager 時發生問題
-### 行動裝置消失 
+### 行動裝置消失
 **問題：** 成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失，但仍有管理設定檔並列於 CSS 閘道中。
 
 **解決方式**：發生這個問題的原因可能是您具有移除非加入網域裝置的自訂處理序，或使用者嘗試從訂用帳戶移除裝置。 若要驗證及查看哪個處理序或使用者帳戶從 Configuration Manager 主控台移除裝置，請執行下列步驟。
@@ -256,22 +256,22 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 ### 電腦已註冊 - 錯誤 hr 0x8007064c
 **問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
-  
+
 這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
 
 
 
-**解決方案：** 
+**解決方案：**
 
-1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。 
+1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。
 1. [檔案] -> [Add/ Remove Snap-ins] (新增/移除嵌入式管理單元)。
 1. 按兩下 [憑證]，並依序選擇 [電腦帳戶] 和 [下一步]，然後選取 [本機電腦]。
-1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。 
+1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。
 1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時將其刪除
 1. 如果此登錄機碼存在，請將其刪除︰** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
-1. 嘗試重新註冊。 
-1. 如果電腦仍然無法註冊，請尋找並刪除此機碼 (如果它存在)︰**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
-1. 嘗試重新註冊。 
+1. 嘗試重新註冊。
+1. 如果電腦仍然無法註冊，請尋找並刪除此機碼 (如果它存在)︰**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
+1. 嘗試重新註冊。
 
     > [!IMPORTANT]
     > 此節、方法或工作包含告訴您如何修改登錄的步驟。 然而，如果您不當修改登錄，可能會發生嚴重的問題。 因此，請務必小心遵循下列步驟。 為加強保護，請在修改登錄之前先加以備份。 之後如果發生問題，您還可以還原登錄。
@@ -306,6 +306,6 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

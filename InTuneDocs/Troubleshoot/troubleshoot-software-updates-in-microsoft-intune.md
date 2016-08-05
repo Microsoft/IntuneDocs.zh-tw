@@ -2,9 +2,9 @@
 title: "軟體更新疑難排解 | Microsoft Intune"
 description: "解決 Microsoft Intune 的軟體更新問題。"
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: fd490bf3e745e8d0020299dc9be78bb7288edb0d
 
 
 ---
@@ -244,7 +244,7 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 **問題**︰您可能會遇到下列情況，Microsoft Intune 用戶端遇到一或多個下列症狀︰
 - 它們突然停止回報到 Microsoft 管理主控台。  
 - 它們經歷高 CPU 使用率。
-- 透過 Intune 入口網站安裝應用程式時，它們會緩慢安裝。 
+- 透過 Intune 入口網站安裝應用程式時，它們會緩慢安裝。
 - Microsoft Intune Center 會觸發下列錯誤︰*更新您的電腦時發生錯誤。找到錯誤︰錯誤碼 0x800705b4*。
 - 在 [Intune 管理主控台] > [群組] > [所有裝置] 下的 [狀態] 欄位會顯示︰*安裝至這台電腦的一或多個代理程式發生錯誤。此電腦的資訊可能不精確或者不是最新狀態*。
 
@@ -254,7 +254,7 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 1. 登入 [Intune 管理主控台](https://manage.microsoft.com)。
 2. 選取 **[更新]** > **[所有更新]**。
 3. 使用上方工具列上的篩選選項，以篩選出被取代的更新。
-4. 拒絕所有可能套用至 Windows 7 或套用至安裝於受影響用戶端上的應用程式 (例如，Microsoft Office) 的被取代更新。 
+4. 拒絕所有可能套用至 Windows 7 或套用至安裝於受影響用戶端上的應用程式 (例如，Microsoft Office) 的被取代更新。
 5. 重新啟動受影響的用戶端。
 
 此外，如果您執行 Windows 7，請確定您已安裝下列更新︰[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月)。
@@ -264,7 +264,6 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

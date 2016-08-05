@@ -1,10 +1,10 @@
 ---
 title: "應用程式部署問題疑難排解 | Microsoft Intune"
-description: 
+description: "本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題"
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 ---
@@ -80,7 +81,7 @@ ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
 
 ### 錯誤︰發行者不存在
 您使用**新增其他軟體合約**來新增協力廠商授權合約。 您嘗試從 [其他軟體授權合約] 頁面新增發行者。 頁面會依字母順序提供現有發行者的清單。
-您輸入遺漏的發行者，但是收到錯誤**發行者不存在**。 
+您輸入遺漏的發行者，但是收到錯誤**發行者不存在**。
 
 這是預設設計。 Intune 只提供授權追蹤給受歡迎的軟體項目。 在 Intune 可做為授權工作負載中的選項之前，它需要至少 4 個不同的帳戶回報軟體。
 
@@ -104,6 +105,6 @@ ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 

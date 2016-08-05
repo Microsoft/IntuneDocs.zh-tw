@@ -3,7 +3,7 @@ title: "使用裝置註冊管理員進行註冊 | Microsoft Intune"
 description: "裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
-ms.openlocfilehash: d126bbfc40cada71458b03c23e571490b4af4d44
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 450a5764005643a2f890780530d1f2880a4e517b
 
 
 ---
@@ -93,6 +93,6 @@ ms.openlocfilehash: d126bbfc40cada71458b03c23e571490b4af4d44
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

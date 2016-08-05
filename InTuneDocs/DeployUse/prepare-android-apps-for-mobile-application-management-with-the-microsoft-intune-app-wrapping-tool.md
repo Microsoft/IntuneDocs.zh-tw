@@ -3,7 +3,7 @@ title: "使用 App Wrapping Tool 包裝 Android 應用程式 | Microsoft Intune"
 description: "使用本主題中的資訊，深入了解如何在不需修改應用程式本身程式碼的情況下，包裝您的 Android 應用程式。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 15d0877f799c89e2a8af65c416c0e914f898641f
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 
 
 ---
@@ -175,6 +175,6 @@ ms.openlocfilehash: 15d0877f799c89e2a8af65c416c0e914f898641f
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -2,19 +2,19 @@
 title: "原則疑難排解 | Microsoft Intune"
 description: "針對原則設定問題進行疑難排解。"
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstack
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 4.  將通知滑桿移至預設設定。
 
-## KNOX 裝置的錯誤 0x87D1FDE8
-**問題**：針對各種 Android 裝置建立及部署 Samsung KNOX 的 Exchange Active Sync 電子郵件設定檔之後，在 [裝置內容] &gt; [原則] 索引標籤中，回報錯誤 **0x87D1FDE8** 或 [補救失敗]。
-
-檢閱 Samsung KNOX 的 EAS 設定檔和來源原則的組態。 不再支援 Samsung Note 同步處理選項，因此不應該在您的設定檔中選取該選項。 請確定裝置有足夠的時間來處理原則，最多 24 小時。
 
 ## 警示：將存取規則儲存到 Exchange 失敗
 **問題：**您在管理主控台中收到警示「將存取規則儲存到 Exchange 失敗」   。
@@ -113,6 +109,6 @@ Android MDM 不允許服務在裝置上強制執行其他平台所允許的初�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

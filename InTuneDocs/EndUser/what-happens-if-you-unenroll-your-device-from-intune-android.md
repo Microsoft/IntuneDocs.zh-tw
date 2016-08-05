@@ -3,8 +3,8 @@ title: "如果從 Intune 取消註冊 Android 裝置，會發生什麼情況？ 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 140ccb4626f04b2397c63186a38310e74720f1b2
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 當您從 Intune 取消註冊 Android 裝置時：
 
--   您會從 Intune 取消註冊裝置，這表示您的 IT 系統管理員無法再管理該裝置。 
+-   您會從 Intune 取消註冊裝置，這表示您的 IT 系統管理員無法再管理該裝置。
 
 -   您將無法存取公司資料和資源。
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
 
-如果您的裝置設定為只取得公司電子郵件，而且您取消註冊您的裝置，您的裝置將不會再出現在公司入口網站。 
+如果您的裝置設定為只取得公司電子郵件，而且您取消註冊您的裝置，您的裝置將不會再出現在公司入口網站。
 
 如需如何取消註冊的指示，請參閱[使用公司入口網站應用程式從 Intune 取消註冊裝置](unenroll-your-device-from-intune-android.md)。
 
@@ -46,6 +46,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 
