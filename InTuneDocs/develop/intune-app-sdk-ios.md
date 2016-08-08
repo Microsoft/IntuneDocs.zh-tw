@@ -228,7 +228,7 @@ ADALLogOverrideDisabled | 布林值  | 指定 SDK 是否會將所有 ADAL 記錄
 * 在 Xcode 內部或外部啟動應用程式。 確認 PIN 如預期般運作。
 
 > [!NOTE]
-> 您現在可以使用 [設定] > [您的應用程式名稱] > [Enable Test Policies] (啟用測試原則)，來啟用並切換設定。
+> 您現在可以使用 [設定] > [您的應用程式名稱] > [Enable Test Policies (啟用測試原則)]，來啟用並切換設定。
 
 # 建議的 iOS 最佳作法
 
