@@ -49,7 +49,7 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公�
 >[!Important]  
 >您必須先啟用 Azure AD 租用戶或內部部署環境中的 MFA，才能要求使用 MFA 進行 Windows 裝置的 Intune 註冊。 如果不這麼做，當使用者嘗試註冊 Windows 裝置，或當他們嘗試將裝置加入 Azure AD 時 (如果未設定在加入 Azure AD 期間自動註冊)，使用者會收到錯誤訊息。
 
-1.  在 Intune 管理主控台中，按一下 [系統管理] &gt; [行動裝置管理] &gt; [Multi-factor authentication] (多重要素驗證 )。
+1.  在 Intune 管理主控台中，按一下 [系統管理] &gt; [行動裝置管理] &gt; [Multi-factor authentication (多重要素驗證 )]。
 
 2.  按一下 [設定 Multi-Factor Authentication]，然後按一下 [啟用 Multi-Factor Authentication]。
 
