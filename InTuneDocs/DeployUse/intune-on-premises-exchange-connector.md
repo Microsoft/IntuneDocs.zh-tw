@@ -3,8 +3,8 @@ title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Intune"
 description: "使用 Connector 工具啟用 Intune 管理主控台和內部部署 Exchange Server 之間的通訊，以進行 Exchange ActiveSync MDM。"
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 # 安裝 Intune On-Premises Exchange Connector
 
 
-若要設定連線，讓 Microsoft Intune 能夠與主控行動裝置信箱的 Exchange Server 通訊，您必須從 Intune 管理主控台下載並設定 On-Premises Connector 工具。
+若要設定連線，讓 Microsoft Intune 能夠與主控行動裝置信箱的 Exchange Server 通訊，您必須從 Intune 管理主控台下載並設定 On-Premises Connector 工具。 Intune 僅支援每個訂用帳戶一個任一種類的 Exchange Connector 連線。
 
 ## 適用於 On-Premises Connector 的需求
 下表列出安裝 On-Premises Exchange Connector 之電腦的需求。
@@ -30,7 +30,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 |需求|詳細資訊|
 |---------------|--------------------|
 |作業系統|在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此連接器。|
-|Microsoft Exchange 版本|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本。|
+|Microsoft Exchange 版本|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為**新**或**舊版**設定，請連絡您的帳戶管理員。|
 |行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)。|
 |硬體|安裝連接器的電腦至少需配備 1.6 GHz CPU、2 GB RAM 和 10 GB 可用硬碟空間的硬體。|
 |設定 Active Directory 同步處理。|使用其中任一 Connector 將 Intune 連線到您的 Exchange Server 之前，您必須先[設定 Active Directory 同步處理](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理。|
@@ -131,6 +131,6 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

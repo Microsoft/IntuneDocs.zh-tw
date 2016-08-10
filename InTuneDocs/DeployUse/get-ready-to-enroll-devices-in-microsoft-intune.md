@@ -3,8 +3,8 @@ title: "準備註冊裝置 | Microsoft Intune"
 description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # 準備在 Microsoft Intune 中註冊裝置
-若要讓員工向 Intune 註冊行動裝置 (包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)，以及 [Windows 電腦](set-up-windows-device-management-with-microsoft-intune.md))，您必須啟用裝置註冊。 若要允許註冊，您必須設定行動裝置管理 (MDM) 授權單位、設定 Intune 公司入口網站、指派授權，以及啟用裝置平台的註冊。
+若要讓員工向 Intune 註冊行動裝置 (包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)，以及 [Windows 電腦](set-up-windows-device-management-with-microsoft-intune.md))，或是管理公司所擁有的裝置，您必須啟用裝置註冊。 若要允許註冊，您必須設定行動裝置管理 (MDM) 授權單位、設定 Intune 公司入口網站、指派授權，以及啟用裝置平台的註冊。
 
 ## 設定行動裝置管理授權單位
 MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
@@ -109,6 +109,6 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

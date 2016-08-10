@@ -3,8 +3,8 @@ title: "使用 Microsoft Intune 設定 Windows 裝置管理 | Microsoft Intune"
 description: "啟用適用於 Windows 電腦的行動裝置管理 (MDM)，包含使用 Microsoft Intune 的 Windows 10 裝置。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # 設定 Windows 裝置管理
+若要設定您的 Windows 裝置，您可以在[這裡](../enduser/using-your-windows-device-with-intune.md)找到說明。
+
 Intune 可讓您為 Windows 電腦裝置註冊啟用 BYOD (「攜帶您自己的裝置」)，以授權存取公司電子郵件和應用程式。 搭配 Azure Active Directory 一起使用時，還能快速、自動地將新的 Windows 10 裝置納入管理，不必重新安裝電腦的映像即可存取公司資源。 註冊之後，使用者即可登入，並使用 Intune 管理主控台，透過原則、應用程式和設定將他們的裝置設為目標。 您也可以[使用 Microsoft Intune 設定 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)，或[使用 Intune 用戶端軟體管理電腦](manage-windows-pcs-with-microsoft-intune.md)。
 
 建立 DNS CNAME 可以協助使用者連線到 Intune 註冊，而無須輸入伺服器名稱。
@@ -41,15 +43,20 @@ Intune 可讓您為 Windows 電腦裝置註冊啟用 BYOD (「攜帶您自己的
 
   **EnterpriseRegistration.windows.net** - 支援將使用工作或學校帳戶向 Azure Active Directory 註冊的 Windows 8.1 和 Windows 10 行動裝置版裝置
 
-  2.  在 [Intune 管理主控台](http://manage.microsoft.com)中，按一下 [系統管理] &gt; [行動裝置管理] &gt; [Windows]。
+  2.  在 [Intune 管理主控台](http://manage.microsoft.com)中，按一下 **[管理]** &gt; **[行動裝置管理]** &gt; **[Windows]**。
   ![Windows 裝置管理對話方塊](../media/enroll-intune-winenr.png)
+
   3.  在 [指定驗證的網域名稱] 方塊中輸入公司網站中已驗證網域的 URL，然後按一下 [測試自動偵測]。
+
+  4.  您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
+      - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [適用於 Windows 裝置的使用者指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### 請參閱
 [準備在 Microsoft Intune 中註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

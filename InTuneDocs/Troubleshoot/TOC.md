@@ -15,7 +15,8 @@
 ## [軟體更新疑難排解](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [電子郵件設定檔疑難排解](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [條件式存取的疑難排解](troubleshoot-conditional-access.md)
+## [為 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

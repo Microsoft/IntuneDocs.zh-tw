@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
 
 ### 發生問題時的解決方式
-**問題**：您已加密您的裝置，並會看到下列其中一項：- 已停用 [加密] 按鈕。
--  您會看到仍需加密的訊息。
--  您在嘗試使用公司入口網站應用程式時發生錯誤。
+**問題**：您已加密您的裝置，而看到下列其中一項：
+
+- 已停用 [加密] 按鈕。
+- 您會看到仍需加密的訊息。
+- 您在嘗試使用公司入口網站應用程式時發生錯誤。
 
 **解決方式**：請確定您已在裝置上設定 PIN 或密碼。
 
@@ -47,6 +49,6 @@ ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

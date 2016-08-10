@@ -3,7 +3,7 @@ title: "新功能 | Microsoft Intune"
 description: "了解本月 Microsoft Intune 版本的新功能，以及過去的版本"
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8bff8951c8ced7656f007787d614fd277401fd0
-ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -22,8 +22,17 @@ ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
 # Microsoft Intune 的新功能
 了解此 Microsoft Intune 版本中的新功能。 您也可以了解即將推出且您應該加以規劃的變更，以及過去版本的相關資訊。
 
-下列變更正在 Intune 的開發過程中。 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) (混合式新功能) 頁面。
+混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) (混合式新功能) 頁面。
 
+## 2016 年 8 月
+## 公司入口網站更新
+
+### Android
+- **Android 公司入口網站應用程式**<br/>
+適用於 Android 的 Intune 公司入口網站應用程式為即將推出的行動裝置適用 Android 7.0 作業系統提供「第 0 天」支援。  
+
+- **Google 移除 Android 7.0 裝置上的遠端密碼重設功能**<br/>
+在 Android 7.0 裝置上，Intune IT 管理員與終端使用者將無法再從遠端重設裝置密碼，原因是 Google 已在 Android 7.0 裝置移除該功能。 若是早於 Android 7.0 的版本，IT 管理員仍能在遠端重設使用者的密碼，而使用者仍能從公司入口網站重設其密碼。
 
 ## 2016 年 7 月
 ## 應用程式管理
@@ -41,7 +50,9 @@ Intune 應用程式 SDK Xamarin 元件可允許您在使用 Xamarin 建置的行
 Intune 已將每位使用者可設定裝置註冊最大值的限制，從 5 部裝置提升到 15 部裝置。
 <!---TFS 1289896 --->
 
-
+### 在執行 Intune 用戶端軟體之 Windows 電腦的 TeamViewer 整合
+對於執行 Intune 用戶端的 Windows 電腦，[TeamViewer](https://www.teamviewer.com) 整合可讓您建立與 Windows 電腦的遠端協助工作階段，以協助支援終端使用者支援人員部門。 這包括 Windows 7、8、8.1 和 Windows 10。 如需詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。
+<!---TFS 1284856--->
 
 ## 公司入口網站更新
 ### 公司入口網站
@@ -93,7 +104,7 @@ Intune 的新客戶將會比目前的租用戶更快看見某些安全性群組�
 如何減輕取代造成之影響的詳細資訊，將會於 8 月發行。
 
 ### 針對 Android 公司入口網站在新增「通知」
-我們將在 8 月針對 Android 推出公司入口網站的更新，該更新將會在首頁上推出新的「通知」圖示。 點選此圖示將會存取「通知」頁面，並為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 如果您也使用 iOS 公司入口網站應用程式，您應該已能見到該通知體驗。 透過推出「通知」頁面，只要該裝置已經註冊，您便不會在每次啟動或繼續 Android 版的公司入口網站時看見「公司存取設定」頁面。 我們了解有許多使用者已建立終端使用者指南，並樂於在該指南/螢幕擷取畫面可能需要更新時提前收到通知。 請更新您的文件以反映即將推出的體驗變更。 尋找更新的螢幕擷取畫面，請移至：https://aka.ms/androidcpupdate。  
+我們將在 9 月針對 Android 推出公司入口網站的更新，該更新將會在首頁上推出新的**通知**圖示。 點選此圖示將會存取「通知」頁面，並為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 如果您也使用 iOS 公司入口網站應用程式，您應該已能見到該通知體驗。 透過推出「通知」頁面，只要該裝置已經註冊，您便不會在每次啟動或繼續 Android 版的公司入口網站時看見「公司存取設定」頁面。 我們了解有許多使用者已建立終端使用者指南，並樂於在該指南/螢幕擷取畫面可能需要更新時提前收到通知。 請更新您的文件以反映即將推出的體驗變更。 尋找更新的螢幕擷取畫面，請移至：https://aka.ms/androidcpupdate。  
 
 
 
@@ -147,6 +158,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

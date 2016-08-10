@@ -3,8 +3,8 @@ title: "Windows 電腦管理功能 | Microsoft Intune"
 description: "深入了解當您使用 Intune 用戶端軟體管理 Windows 電腦時，有關 Intune 的功能。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
 
 -   **反惡意程式碼防護** - Intune 包含 Endpoint Protection，可協助您的電腦防範惡意程式碼。
 
--   **遠端協助** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以使用 Intune <!--- (requires TeamViewer software)---> 隨附的遠端桌面功能提供協助。
+-   **遠端協助** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以使用 Intune 隨附的遠端桌面功能提供協助 (需要 TeamViewer 軟體)。
 
 -   **軟體授權管理** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
 -   **應用程式部署** - 將軟體部署到您所管理的電腦。 當您使用用戶端軟體管理電腦時，某些應用程式管理功能無法使用。
@@ -48,7 +48,7 @@ Intune 可管理執行下列 Windows 版本 (x86 和 x64) 的電腦︰
 
 -   **Windows 8.1** - 專業版和企業版。
 
-- **Windows 10** - 家用版、專業版、教育版和企業版。
+- **Windows 10** - 專業版、教育版和企業版。
 
 
 ## 最小硬體需求
@@ -74,6 +74,6 @@ Intune 可管理執行下列 Windows 版本 (x86 和 x64) 的電腦︰
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
+ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
+ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 
 ---
@@ -22,6 +22,11 @@ ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 # 使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
 
 您可以為 Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。 首先，您將建立使用 Pulse Secure 連線類型的 VPN 設定檔，然後建立該設定檔與特定應用程式之關聯的自訂設定原則。 將這些原則部署至 Android 裝置或使用者群組之後，在這些裝置上開啟其中一個指定的應用程式，即會開啟該應用程式的 VPN 連線。
+
+> [注意]
+> 
+> 此設定檔僅支援 Pulse Secure 連線類型。
+
 
 ### 步驟 1︰建立 VPN 設定檔
 
@@ -76,6 +81,6 @@ ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

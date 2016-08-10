@@ -3,7 +3,7 @@ title: "設定 iOS 和 Mac 管理 | Microsoft Intune"
 description: "使用 Microsoft Intune 來支援 iOS 裝置 (包括 iPad、iPhone 及 Mac OS X 裝置) 的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # 設定 iOS 和 Mac 裝置管理
+若要設定您的 iOS 或 Mac 裝置，您可以在[這裡](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)找到說明。
+
 Intune 支援 iPad、iPhone 及 Mac OS X 的行動裝置管理，且可提供對公司電子郵件和應用程式的存取功能。 Intune 需要 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 和 Mac 裝置。 將憑證新增到 Intune 之後，使用者就可以安裝公司入口網站應用程式來註冊他們的裝置，或者系統管理員可以設定[公司擁有的 iOS 裝置管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **設定 Intune**<br>
@@ -39,7 +41,9 @@ Intune 支援 iPad、iPhone 及 Mac OS X 的行動裝置管理，且可提供對
     在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 **[系統管理]** &gt; **[行動裝置管理]** &gt; **[iOS 和 Mac OS X]** &gt; **[上傳 APNs 憑證]**，然後按一下 **[上傳 APNs 憑證]**。 **瀏覽** 至憑證 (.pem) 檔案並按一下 [開啟]  ，然後輸入您的 [Apple ID] 。 使用 APNs 憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
 
 5.  **告訴使用者如何使用公司入口網站存取公司資源**<br>
-    您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。 [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
+    - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [iOS 與 Mac 裝置的終端使用者指南](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 如果您的公司或組織為使用者購買 iOS 裝置，這些裝置也可以註冊為[屬公司擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)以納入管理。
 
@@ -48,6 +52,6 @@ Intune 支援 iPad、iPhone 及 Mac OS X 的行動裝置管理，且可提供對
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

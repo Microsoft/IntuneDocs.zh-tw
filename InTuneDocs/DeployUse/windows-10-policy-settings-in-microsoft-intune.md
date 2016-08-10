@@ -4,7 +4,7 @@ description: "使用本主題中所列的原則設定，以協助您設定已註
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 |**密碼到期 (天數)**|指定在多久之後必須變更該裝置的密碼。|
 |**記住密碼歷程記錄**|指定是否要限制使用者建立先前使用過的密碼。|
 |**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|指定裝置記憶的先前已使用密碼數目。|
-|**允許圖片密碼和 PIN**|可讓您在圖片上使用簡單的手勢，或使用簡單 PIN 碼進行登入。<br>(僅限 Windows 10 Desktop)|
 |**當裝置從閒置狀態返回時，需要密碼。**|如果已啟用，使用者必須輸入密碼將裝置從閒置狀態解除鎖定。<br>(僅限 Windows 10 行動裝置版)|
 
 ### 加密
@@ -71,14 +70,6 @@ ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 |**允許 Microsoft 帳戶**|讓使用者建立 Microsoft 帳戶與裝置之間的關聯。|
 |**允許手動新增非 Microsoft 帳戶**|讓使用者將電子郵件帳戶新增至未與 Microsoft 帳戶相關聯的裝置。|
 |**允許同步處理 Microsoft 帳戶的設定**|允許裝置和應用程式設定與 Microsoft 帳戶相關聯，以在裝置之間進行同步處理。|
-
-### 電子郵件設定
-
-|設定名稱|詳細資料|
-|----------------|----------------------|---------------------|
-|**讓 Microsoft 帳戶變成 Windows Mail 應用程式的選用帳戶**|進行此設定以在 Windows Mail 中移除 Microsoft 帳戶的需求。<br>僅限 Windows 10 Desktop|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 |**允許藍芽**|啟用裝置上的藍芽功能。|
 |**允許可透過藍牙搜尋的模式**|讓其他藍芽啟用的裝置探索此裝置。|
 |**允許藍牙通知**|允許裝置透過藍牙接收廣告。|
-|**允許可透過藍牙連線的模式**|**重要：**Windows 10 已不再支援此設定，未來將會移除。|
 |**允許重設手機**|控制使用者是否可以將其裝置重設為原廠值。|
 |**允許 USB 連線**|控制裝置是否可以透過 USB 連接來存取外接式存放裝置。|
 |**允許防竊模式**|設定是否啟用 Windows 防竊模式。|
@@ -177,6 +167,7 @@ ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 |設定名稱|詳細資料|
 |----------------|---------------|
 |**允許自動更新**|啟用這項設定以允許自動更新。 然後，設定下列其中一項設定來控制更新行為：<br /><br />**通知下載**<br /><br />**在維護時間自動安裝**<br /><br />**在維護時間自動安裝並重新開機**<br /><br />**在排程時間自動安裝並重新開機****注意︰**選取這個選項時，您也可以進行下列設定：**隱藏使用者通知**和**定義排程更新的安裝日期**。<br>(僅限 Windows 10 Desktop)|
+|**允許發行前版本功能**|可讓 Microsoft 將發行前版本設定和功能部署至 Windows 10 裝置。 您可以選取只允許設定，或安裝所有預先發行的設定與功能。|
 
 ## 自訂原則設定
 使用適用於 Windows 10 和 Windows 10 Mobile 的 Microsoft Intune **自訂設定原則**來部署 OMA-URI (開放行動聯盟的統一資源識別項) 設定，此設定可用來控制 Windows 10 和 Windows 10 Mobile 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
@@ -332,6 +323,6 @@ ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

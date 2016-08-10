@@ -13,14 +13,14 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # 使用 Apple Configurator 直接註冊 iOS 裝置
-Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。 此處理程序並不會將裝置重設成出廠預設值，並使用預先定義的原則來註冊裝置。 這個方法針對具有**無使用者親和性**的裝置，且需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊。 當直接註冊 iOS 裝置時，您不需要該裝置的序號即可註冊裝置。 您也可以在 Intune 於註冊階段擷取裝置名稱之前，先命名該裝置以供識別。 直接註冊的裝置不支援公司入口網站應用程式。 本指南假設您在 Mac 電腦上使用 Apple Configurator 2.0。
+Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。 此程序並不會將裝置重設成出廠預設值，並使用預先定義的原則來註冊裝置。 這個方法針對具有**無使用者親和性**的裝置，且需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊。 當直接註冊 iOS 裝置時，您不需要該裝置的序號即可註冊裝置。 您也可以在 Intune 於註冊階段擷取裝置名稱之前，先命名該裝置以供識別。 直接註冊的裝置不支援公司入口網站應用程式。 本指南假設您在 Mac 電腦上使用 Apple Configurator 2.0。
 
 1.  **建立裝置的設定檔**裝置註冊設定檔會定義套用至裝置的設定。 如果您尚未這麼做，請建立使用 Apple Configurator 所註冊之 iOS 裝置的裝置註冊設定檔。
 
@@ -78,6 +78,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

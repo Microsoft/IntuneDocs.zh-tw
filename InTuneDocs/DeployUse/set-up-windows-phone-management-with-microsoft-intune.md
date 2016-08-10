@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # 使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理
+若要設定您的 Windows 裝置，您可以在[這裡](../enduser/using-your-windows-device-with-intune.md)找到說明。
+
 Windows 10 行動裝置版或 Windows Phone 裝置必須能夠與 Intune 通訊，您才能使用 Microsoft Intune 管理裝置。 為了簡化工作，您可以建立 DNS 記錄，使用者就不需要輸入伺服器位址。 下列步驟說明如何簡化使用者的註冊。  
 
 在大部分情況下，使用者可以從 Windows 市集安裝公司入口網站應用程式。 如果您管理 Windows Phone 8.0 裝置，或需要將公司入口網站部署至 Windows Phone 裝置，您也必須下載並簽署公司入口網站應用程式。 請參閱[設定 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
@@ -50,12 +52,16 @@ Windows 10 行動裝置版或 Windows Phone 裝置必須能夠與 Intune 通訊�
 
     3.  在 [指定驗證的網域名稱] 方塊中輸入公司網站中已驗證網域的 URL，然後按一下 [測試自動偵測]。
 
+    4.  您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
+        - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [適用於 Windows 裝置的使用者指南](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 除非您要將公司入口網站部署至裝置，否則不需要進行任何額外的工作。  在管理主控台中可以放心略過步驟 2 和 3。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

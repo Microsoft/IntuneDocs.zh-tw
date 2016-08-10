@@ -3,8 +3,8 @@ title: "Windows Phone 8.1 原則設定 | Microsoft Intune"
 description: "Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一般設定。 此外，您可以指定 OMA-URI 值，來建立 Intune 未提供使用的自訂設定。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一
 |----------------|-----------------------------------------|
 |**允許複製並貼上**|允許在裝置上使用複製及貼上功能。|否|是|
 
-### 相容與不相容之應用程式的設定
-在 [相容與不相容應用程式] 清單中，使用下列資訊，以指定相容或不相容應用程式清單：
+### 用於允許和封鎖應用程式的設定
+在 **[允許和封鎖的應用程式]** 清單中，使用下列資訊指定您要允許或封鎖的應用程式清單：
 
 > [!NOTE]
-> 單一原則只能包含相容應用程式清單或不符合規定的應用程式清單。 您不能在相同的原則中同時指定兩者。
+> 單一原則只能包含允許的應用程式清單或封鎖的應用程式清單。 您不能在相同的原則中同時指定兩者。
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一
 > 如果您針對 Windows Phone 8.1 裝置指定允許的應用程式清單，則必須將公司入口網站應用程式新增至此清單，否則將會遭到封鎖。
 
 
-### 相容與不相容之應用程式的參考資訊
+### 用於允許或封鎖應用程式的參考資訊
 
 #### 如何指定 URL 給應用程式市集
-若要在相容與不相容的應用程式清單中指定應用程式 URL，請使用下列格式：
+若要在允許和封鎖的應用程式清單中指定應用程式 URL，請使用下列格式：
 
 從 [Windows Phone 的 [應用程式+遊戲]](http://www.windowsphone.com/en-us/store/overview) 頁面中，搜尋要使用的應用程式。
 
-開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以使用在相容或不相容的應用程式清單中使用此 URL。
+開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
 
 **範例：** 在市集中搜尋 Skype 應用程式。 您要使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
 
@@ -172,6 +172,6 @@ Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

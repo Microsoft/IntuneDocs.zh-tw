@@ -3,8 +3,8 @@ title: "管理大量購買的 iOS 應用程式 | Microsoft Intune"
 description: "藉由匯入應用程式市集的授權資訊、追蹤已使用的授權數量，並避免您安裝超過所擁有數目的應用程式複本，來使用 Intune 管理您從 Apple 大量購買的應用程式。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 2.  選擇您想要部署的應用程式，選擇 [管理部署]，然後使用[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)主題中的指示，完成上傳、建立和部署應用程式。
 
+> [!TIP]
+> 您必須選擇**必要**部署動作。 目前不支援可用的安裝。
+
 當您將應用程式部署為 **必要** 安裝時，安裝應用程式的每位使用者都會使用授權。
 
 若要回收授權，您必須變更部署動作為 [解除安裝]。 一旦應用程式解除安裝，將會回收授權。
@@ -87,6 +90,6 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

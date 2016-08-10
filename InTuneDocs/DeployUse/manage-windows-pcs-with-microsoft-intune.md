@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 雖然 Intune 用戶端透過管理軟體更新、Windows 防火牆以及 Endpoint Protection 支援[協助保護電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但使用 Intune 用戶端管理的電腦無法做為其他 Intune 原則的目標。
 
 > [!NOTE]
-> 執行 Windows 8.1 的裝置可以使用 Intune 用戶端來管理，或是註冊成行動裝置。 以下資訊適用於執行 Intune 用戶端的電腦。 不支援安裝 Intune 電腦用戶端與註冊 Windows 裝置進行行動裝置管理。
+> 執行 Windows 8.1 或更新版本的裝置可以使用 Intune 用戶端來管理，或是註冊成行動裝置。 以下資訊適用於執行 Intune 用戶端的電腦。 不支援安裝 Intune 電腦用戶端與註冊 Windows 裝置進行行動裝置管理。
 
 ## Intune 電腦用戶端管理的需求
 
@@ -86,6 +86,6 @@ Intune 用戶端代理程式通常是在背景中以無訊息模式執行，不�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

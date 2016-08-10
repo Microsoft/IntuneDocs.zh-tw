@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
 若要下載此工具，請參閱 [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)。
 
 ## 步驟 1：滿足使用 App Wrapping Tool 的必要條件
+請參閱[這篇部落格文章](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)以深入了解必要條件及其設定方法。
 
 |需求|詳細資訊|
 |---------------|--------------------------------|
 |支援的作業系統和工具組|您必須在執行 OS X 10.8.5 或更新版本的 Mac 電腦上執行應用程式包裝工具，此電腦已安裝 XCode 工具組第 5 版或更新版本。|
 |簽署憑證和佈建設定檔|您必須擁有 Apple 簽署憑證和佈建設定檔。 請參閱 [Apple 開發人員文件](https://developer.apple.com/)。|
-|使用 App Wrapping Tool 處理應用程式|應用程式必須由您的公司或獨立軟體廠商 (ISV) 所開發並簽署。 您無法使用此工具來處理來自 Apple Store 的應用程式。 應用程式必須是針對 iOS 7.0 或更新版本所撰寫。 應用程式必須也採用位置獨立可執行檔 (PIE) 格式。 如需有關 PIE 格式的詳細資訊，請參閱您的 Apple 開發人員文件。 最後，應用程式必須有副檔名 **.app**，或 **.ipa** 格式。|
+|使用 App Wrapping Tool 處理應用程式|應用程式必須由您的公司或獨立軟體廠商 (ISV) 所開發並簽署。 您無法使用此工具來處理來自 Apple Store 的應用程式。 應用程式必須是針對 iOS 7.1 或更新版本所撰寫。 應用程式必須也採用位置獨立可執行檔 (PIE) 格式。 如需有關 PIE 格式的詳細資訊，請參閱您的 Apple 開發人員文件。 最後，應用程式必須有副檔名 **.app**，或 **.ipa** 格式。|
 |包裝工具無法處理的應用程式|加密的應用程式、未簽署的應用程式和具有擴充檔案屬性的應用程式。|
 |使用 Azure Active Directory Library (ADAL) 的應用程式|如果您的應用程式使用 ADAL，應用程式必須納入大於或等於 1.0.2 的 ADAL 版本，並且開發人員必須授與其應用程式存取 Intune 行動應用程式管理資源。<br /><br />如需有關如何使用 ADAL 的詳細資訊，請參閱本文中的[使用 Azure Active Directory 程式庫的應用程式資訊](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library)。|
 |設定您的應用程式權利|您必須設定權利，將非一般授與的其他權限和功能提供給應用程式，再包裝應用程式。 如需指示，請參閱[設定應用程式權利](#setting-app-entitlements)。|
@@ -292,6 +293,6 @@ ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

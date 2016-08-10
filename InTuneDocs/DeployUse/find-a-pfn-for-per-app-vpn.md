@@ -3,7 +3,7 @@ title: "尋找每個應用程式 VPN 的套件系列名稱 (PFN) | Microsoft Int
 description: "找到 PFN，以讓您設定每個應用程式 VPN。"
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
-ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
 
 
 ---
 
-# 尋找每個應用程式 VPN 設定的產品系列名稱 (PFN)
+# 尋找每個應用程式 VPN 設定的套件系列名稱 (PFN)
 
 有兩種方式可找到 PFN，以讓您設定每個應用程式 VPN。
 
-## 找到 Windows 10 電腦上已安裝應用程式的 PFN 
+## 找到 Windows 10 電腦上已安裝應用程式的 PFN
 
 如果您正在使用的應用程式已經安裝在 Windows 10 電腦上，則可以使用 [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell Cmdlet 來取得 PFN。
 
@@ -74,7 +74,7 @@ Get-AppxPackage 的語法如下︰
 4.  在不同的索引標籤中，貼上下列 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`，並將 `<app id>` 取代為您從 https://www.microsoft.com/en-us/store/apps 取得的應用程式識別碼 - 步驟 3 中 URL 結尾的那一系列字母。 在 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
 在 Edge 中，會顯示您想要的資訊；在 Internet Explorer 中，按一下 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是這個範例的結果︰
- 
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -85,7 +85,6 @@ Get-AppxPackage 的語法如下︰
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
