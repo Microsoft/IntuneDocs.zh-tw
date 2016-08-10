@@ -38,7 +38,7 @@ ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
 
 1.  登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)使用租用戶系統管理員認證，再選取 [人員]  >  [所有使用者]。
 
-2.  選取您要指派以 Intune 使用者授權的使用者帳戶，然後選取 [Microsoft Intune] (獨立) 或 [Enterprise Mobility Suite]。
+2.  選取您要指派以 Intune 使用者授權的使用者帳戶，然後選取 [Microsoft Intune (獨立)] 或 [Enterprise Mobility Suite]。
 
 3.  使用者帳戶現在具有必要權限，可使用服務並將裝置註冊接受管理。
 
