@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
 
 **必要的應用程式** - 依據不同的平台，系統管理員所需且安裝在最少使用者介入之裝置上的應用程式。
 
-**必要的應用程式** - 公司入口網站應用程式清單中所提供且使用者可選擇性決定是否要安裝的應用程式。
+**可用的應用程式** - 公司入口網站應用程式清單中所提供且使用者可選擇性決定是否要安裝的應用程式。
 
 **受管理的應用程式** - 可透過原則進行管理的應用程式，以及已由 Intune「包裝 (wrapped)」或已透過 Intune 行動應用程式管理 (MAM) 軟體開發套件 (SDK) 建置的應用程式。 這些應用程式可由 Intune 管理，並套用應用程式原則。
 
@@ -38,6 +38,6 @@ ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

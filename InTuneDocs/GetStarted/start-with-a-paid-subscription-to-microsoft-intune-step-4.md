@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
-ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
+ms.sourcegitcommit: ed64b7cb3b0658846bce1ec8a5aefe7bdc715508
+ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
 
 
 ---
 
 # 管理 Intune 授權
-您必須先使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，為每位使用者指派您 Intune 訂閱的授權，使用者才能登入使用 Intune 服務，或是註冊其裝置接受管理。 一旦指派授權給使用者，使用者的名稱會出現在 Intune 管理主控台中。 然後，使用者可以註冊最多十五個裝置。
+您必須先使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，為每位使用者指派您 Intune 訂閱的授權，使用者才能登入使用 Intune 服務，或是註冊其裝置接受管理。 一旦指派授權給使用者，使用者的名稱會出現在 Intune 管理主控台中。 然後，使用者可以註冊最多五個裝置。
 
 在使用 Microsoft Enterprise Mobility Suite (EMS) 的組織中，使用者在 EMS 封裝中可能只需要 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一個服務或一個服務子集。 如需詳細資訊，請參閱[使用 PowerShell 管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)。
 
@@ -90,6 +90,6 @@ ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 

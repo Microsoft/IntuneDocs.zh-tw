@@ -2,9 +2,9 @@
 title: "註冊評估行動裝置 | Microsoft Intune"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何註冊行動裝置並安裝應用程式"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: d441bb68a28a18cf45c616271cb33556df9f67f3
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 
 
 ---
@@ -49,7 +49,7 @@ ms.openlocfilehash: d441bb68a28a18cf45c616271cb33556df9f67f3
 ### Windows Phone 8.1
 使用者會安裝 Windows Phone 市集上 Microsoft Corporation 所提供的**公司入口網站**應用程式，然後使用上述新增的 Intune 使用者認證登入。  檢視 [註冊的裝置]  以新增您的裝置。
 
- ### Windows Phone 8。0
+ ### Windows Phone 8.0
  使用者可以按一下 [系統設定] &gt;[公司應用程式]，然後使用上述新增的 Intune 使用者認證登入。 公司入口網站應用程式會部署到您的手機上。
 
 如果系統提示您提供 **伺服器位址**，請輸入 "manage.microsoft.com"。
@@ -69,6 +69,6 @@ ms.openlocfilehash: d441bb68a28a18cf45c616271cb33556df9f67f3
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
-ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
+ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: 9f1612ffd9ab85e38058edb09870297a44b37c16
+ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
+ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 
 ---
@@ -76,13 +76,13 @@ ms.openlocfilehash: 9f1612ffd9ab85e38058edb09870297a44b37c16
 
 - **Mac 上的 Apple Configurator** - Apple Configurator 是在 Mac 電腦上執行的 Apple 應用程式。 您可以使用 USB 纜線將 iOS 裝置連接至 Mac，以在裝置上安裝註冊設定檔。 如果您可以將裝置重設為原廠預設值來進行註冊，請使用 [設定助理] 註冊。
 
-- **以 IMEI 編號標記** - 匯入公司擁有之裝置的國際行動設備識別 (IMEI) 編號，以在 Intune 中將它們標記為公司擁有的裝置。 使用者接著可以安裝公司入口網站，以將他們的裝置註冊為個人裝置來存取公司資源 (例如電子郵件、應用程式和資料)。
+- **以 IMEI 編號標記** - 匯入公司擁有之裝置的國際行動設備識別 (IMEI) 編號，以在 Intune 中將其標記為公司擁有的裝置。 使用者接著可以安裝公司入口網站，以將他們的裝置註冊為個人裝置來存取公司資源 (例如電子郵件、應用程式和資料)。
 
   > [!div class="button"]
   [使用 IMEI 標記 >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 設定助理](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [使用 IMEI 標記](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

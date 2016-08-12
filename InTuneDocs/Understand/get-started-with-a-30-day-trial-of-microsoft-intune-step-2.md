@@ -2,9 +2,9 @@
 title: "將使用者新增至 Intune 30 天評估版 | Microsoft Intune"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何個別或大量新增使用者"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: fb9c1cde3288b090961b46f0b47b32bfb67b6828
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 4276d0fed0fc30490a640a067d78096ff0cf78ae
 
 
 ---
@@ -79,6 +79,6 @@ Intune 的系統管理員帳戶與一般使用者帳戶不同，不會在 Office
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
