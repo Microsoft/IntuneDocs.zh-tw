@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
-ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
 
 
 ---
@@ -27,6 +27,31 @@ Microsoft Intune 行動裝置管理 (MDM) 會使用註冊來管理裝置，並�
 Intune 可以管理下列裝置平台︰
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## 設定行動裝置管理授權單位
+MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
+
+>[!IMPORTANT]
+> 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後便無法再做變更。
+
+1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [系統管理] &gt; [行動裝置管理]。
+
+2.  在 [工作]  清單中，按一下 [設定行動裝置管理授權單位] 。 [設定 MDM 授權單位]  對話方塊隨即開啟。
+
+    ![[設定 MDM 授權單位] 對話方塊](../media/intune-mdm-authority.png)
+
+3.  Intune 要求您確認是否要以 Intune 做為 MDM 授權單位。 選取核取方塊，然後選擇 [是] 以使用 Microsoft Intune 管理行動裝置。
+
+## 設定 Intune 公司入口網站
+
+Intune 公司入口網站是使用者存取公司資料並可以執行一般工作的位置，如註冊裝置、安裝應用程式，以及找到向 IT 尋求協助的資訊。
+
+> [!TIP]
+> 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
+
+自訂公司入口網站可協助為終端使用者提供熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，並選擇 [系統管理] &gt; [公司入口網站]，然後進行公司入口網站設定。
+
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 ## 裝置註冊方法概觀
 
@@ -124,6 +149,6 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
