@@ -73,7 +73,7 @@ Get-AppxPackage 的語法如下︰
 `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  在不同的索引標籤中，貼上下列 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`，並將 `<app id>` 取代為您從 https://www.microsoft.com/en-us/store/apps 取得的應用程式識別碼 - 步驟 3 中 URL 結尾的那一系列字母。 在 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
-在 Edge 中，會顯示您想要的資訊；在 Internet Explorer 中，按一下 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是這個範例的結果︰
+在 Microsoft Edge 中，會顯示您想要的資訊；在 Internet Explorer 中，按一下 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是這個範例的結果︰
 
 
 `{`
