@@ -4,7 +4,7 @@ description: "可以在已註冊至 Intune 的 iOS 或 Mac OS X 行動裝置上�
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-針對使用者可在其受 Intune 管理裝置上執行的工作，此頁面包含所有這些工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰註冊相關資訊、管理工作，以及相容性問題。
+針對使用者可在其受 Intune 管理裝置上執行的工作，此文章包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰ 
+- 公司入口網站應用程式安裝和 Intune 註冊 
+- 註冊後的管理工作
+- 相容性問題
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
-本節中的資訊將有助於 Intune 公司入口網站安裝以及適用於 iOS 裝置的裝置註冊。
+本節中的資訊有助於 Intune 公司入口網站安裝以及適用於 iOS 裝置的裝置註冊。
 
 - [安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
@@ -35,7 +38,7 @@ ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 ## 在 Intune 註冊您的裝置時可執行的工作
 
-您在 Intune 中註冊您的 iOS 裝置之後，本節中的資訊將協助您採取動作。
+在 Intune 中註冊您的 iOS 裝置之後，本節中的資訊可協助您採取相關動作。
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 - [設定或變更密碼](set-or-change-your-passcode-ios.md)
@@ -48,7 +51,7 @@ ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 ## 修正裝置的問題
 
-您在 Intune 中註冊您的 iOS 裝置時，本節中的資訊將協助您修正您可能遇到的問題。
+在 Intune 中註冊您的 iOS 裝置時，本節中的資訊可協助您修正可能遇到的問題。
 
 - [如何重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
 - [將錯誤傳送給 IT 系統管理員](send-errors-to-your-it-admin-ios.md)
@@ -61,6 +64,6 @@ ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

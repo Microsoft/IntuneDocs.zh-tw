@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f941fad998c6c0e07437c8f476df55325a4741b
-ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
+ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
+ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
 
 ## 應用程式管理
 ### iOS 9.3 隱藏與顯示的應用程式
-若是執行 iOS 9.3 或更新版本的裝置，您將能夠在 iOS 一般組態原則中使用隱藏與顯示的應用程式清單，以執行下列動作：
+若是執行 iOS 9.3 或更新版本的受監督裝置，您將能夠在 iOS 一般設定原則中使用隱藏與顯示的應用程式清單，以執行下列動作：
 - 指定對使用者隱藏的應用程式清單。 使用者無法檢視或啟動這些應用程式。
 - 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
 
@@ -50,7 +50,7 @@ ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
 ### 與行動應用程式管理原則 (MAM) 相容的新應用程式
 無論裝置是否已註冊，適用於 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) 與 [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) 的 Yammer 應用程式都會與 [Intune 行動應用程式管理 (MAM) 原則](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)相容。
 
-如需與 MAM 相容的應用程式完整清單，請參閱 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)頁面。
+如需與 MAM 相容的應用程式完整清單，請參閱 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)網站。
 <!--- TFS 1252335 & 1252336--->
 
 ## 裝置管理
@@ -114,7 +114,7 @@ Intune 通知規則會定義要從 Intune 傳送電子郵件警示給誰。 目�
 - Intune PDF Viewer
 - 來自 Google Play 的 Intune Image Viewer for Android
 
-我們建議使用 Android 的新授權管理應用程式 (RMS 共用)，而不是使用 Intune Viewer 應用程式，它可讓您部署一個應用程式，而不必部署三個不同的應用程式，即可安全地在 Android 裝置上檢視公司檔案。 進一步了解 RMS 共用應用程式 (使用文件連結)。
+我們建議使用 Android 的新授權管理應用程式 (RMS 共用)，而不是使用 Intune Viewer 應用程式，它可讓您部署一個應用程式，而不必部署三個不同的應用程式，即可安全地在 Android 裝置上檢視公司檔案。 深入了解 [RMS 共用應用程式](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)。
 <!--- goes in 1608 What's New--->
 
 
@@ -123,6 +123,6 @@ Intune 通知規則會定義要從 Intune 傳送電子郵件警示給誰。 目�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

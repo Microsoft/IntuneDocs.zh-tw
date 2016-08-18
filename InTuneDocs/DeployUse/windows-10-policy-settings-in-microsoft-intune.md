@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 使用 Windows 10 的 Microsoft Intune **一般設定原則**，為已註冊的 Windows 10 桌面版和 Windows 10 行動裝置版裝置設定一般設定。 
 
 
-### 密碼
+## - 密碼
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|指定裝置記憶的先前已使用密碼數目。|
 |**當裝置從閒置狀態返回時，需要密碼。**|如果已啟用，使用者必須輸入密碼將裝置從閒置狀態解除鎖定。<br>(僅限 Windows 10 行動裝置版)|
 
-### 加密
+## - 加密
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
 |**在行動裝置上要求加密**|在目標裝置上啟用加密。<br>(僅限 Windows 10 行動裝置版)|
 
-### System (系統)
+## - 系統
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許將診斷與使用狀況資料傳送給 Microsoft**|決定從裝置傳送到 Microsoft 的診斷和使用資料量。<br><br>**否** - 沒有資料會傳送到 Microsoft<br>**基本** - 裝置只會傳送有限的資訊給 Microsoft<br>**增強** - 將增強的診斷資料傳送給 Microsoft<br>**完整 (建議)** - 傳送和**增強**相同的資料，再加上裝置狀態的相關額外資料|
 
 
-### 帳戶和同步處理
+## - 帳戶和同步處理
 
 |設定名稱|詳細資料|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許手動新增非 Microsoft 帳戶**|讓使用者將電子郵件帳戶新增至未與 Microsoft 帳戶相關聯的裝置。|
 |**允許同步處理 Microsoft 帳戶的設定**|允許裝置和應用程式設定與 Microsoft 帳戶相關聯，以在裝置之間進行同步處理。|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許密碼管理員**|啟用或停用 Edge 密碼管理員功能。|
 |**企業模式網站清單位置**|指定要尋找將在企業模式下開啟之網站清單的位置。 使用者無法編輯這份清單。<br>(僅限 Windows 10 Desktop)|
 
-### 應用程式
+## - 應用程式
 
 |設定名稱|詳細資料|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 
-### 行動電話通訊
+## - 行動數據
 
 |設定名稱|詳細資料|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許透過行動電話通訊使用 VPN**|控制裝置是否可以在連線到行動電話通訊網路時存取 VPN 連線。|
 |**允許透過行動電話通訊進行 VPN 漫遊**|控制裝置是否可以在漫遊到行動電話通訊網路時存取 VPN 連線。|
 
-### 硬體
+## - 硬體
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許 USB 連線**|控制裝置是否可以透過 USB 連接來存取外接式存放裝置。|
 |**允許防竊模式**|設定是否啟用 Windows 防竊模式。|
 
-### 功能
+## - 功能
 
 |設定名稱|詳細資料|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**允許 Cortana**|啟用或停用 Cortana 語音助理。|
 |**允許重要訊息中心通知**|在裝置鎖定畫面上啟用或停用重要訊息中心通知。<br>(僅限 Windows 10 行動裝置版)|
 
-### Defender
+## - Windows Defender
 
 所有設定都僅限 Windows 10 Desktop。
 
@@ -162,7 +162,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**執行掃描或使用即時保護時所要排除的處理程序**|將一或多個 **.exe**、**.com** 或 **.scr** 等類型的處理程序新增至排除清單。 這些處理程序將不會包含在任何即時或已排程的掃描。| 
 
 
-### 更新設定
+## - 更新
 
 |設定名稱|詳細資料|
 |----------------|---------------|
@@ -176,14 +176,14 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 
-### 自訂原則一般設定
+## - 一般
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
     |**Name**|輸入原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
     |**說明**|提供可給予原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
-### 自訂原則 OMA-URI 設定
+## - OMA-URI 設定
 
 |設定名稱|詳細資料|
     |--------|--------------------|
@@ -194,12 +194,12 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
     |**值**|指定要與您先前指定之 OMA-URI 產生關聯的值。|
 
 
-## 適用於 Windows 10 裝置的自訂 URI 設定
+## - Windows 10 URI 設定
 本主題列出您可以在 Microsoft Intune **Windows 10 自訂原則**中，針對 Windows 10 與 Windows 10 行動裝置設定的設定。
 
 如果您想要使用 Windows 自訂 URI 原則，所有裝置都必須向 Intune 註冊。
 
-### 原則 URI 設定
+## - 原則
 
 |原則名稱|詳細資料|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**Update/DeferUpgradePeriod**<br>(Desktop 和行動裝置版)|**描述：**延遲最多 8 個月進行功能升級的原則<br /><br />**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0**：立即套用更新 (預設值)<br>**1**-**8**：延遲功能升級的月數。<br /><br />如需詳細資訊，請參閱：<br>[Windows 10 服務簡介](https://technet.microsoft.com/library/mt598226.aspx)<br>[規劃 Windows 10 部署](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(Desktop 和行動裝置版)|**描述：**允許 CBB 機器停止接收更新及升級 5 週。 在更新發生問題的情況下應使用此。<br /><br />**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0**：立即套用更新 (預設值)<br>**1**︰暫停更新及升級 (5 週後過期)|
 
-### Windows Defender URI 設定
+## - Windows Defender
 
 |原則名稱|詳細資料|
 |---------------|-----------|
@@ -302,7 +302,7 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 |**ExcludedPaths**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**資料類型：**字串<br /><br />**允許的值：**<br /><br />*&lt;以分號分隔的路徑清單&gt;*<br /><br />範例：**c:\test;c:\test1.exe**<br /><br />**預設值：** 不排除任何路徑|
 |**ExcludedProcesses**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**資料類型：**字串<br /><br />**允許的值：**<br>*&lt;以分號分隔的路徑清單&gt;*<br>範例：**c:\test.exe;c:\test1.exe**<br>**預設值：** 不排除任何程序|
 
-### Edge 瀏覽器 URI 設定
+## - Edge 瀏覽器
 
 |原則名稱|詳細資料|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

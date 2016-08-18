@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 淘汰電腦時：
 
--   它會從 Intune 清查移除，而與該電腦相關聯的授權將可重複使用。
+-   它會從 Intune 管理及清查移除，而與該電腦相關聯的授權將可重複使用。 [淘汰/抹除] 會移除 Intune 軟體用戶端，但不會從電腦移除應用程式或資料。
 
 -   其狀態不再顯示在 Intune 主控台中。
 

@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 75e1c1bfbdbb14f50e7908b405619f777a674ac0
 
 
 ---
@@ -148,6 +148,7 @@ ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
 |Microsoft Update 服務|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 和 443|
 |DNS 查閱要求|manage.microsoft.com.nsatc.net|80|
 |透過防火牆的 Samsung KNOX 裝置通訊|若要啟用 Samsung KNOX 裝置以透過防火牆來連接 KNOX 伺服器，請依照＜Samsung KNOX 常見問題集＞中的指示執行。||
+|條件式存取的通訊|443|204.79.197.200|
 |文件、說明及支援：</br></br>* livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
 
@@ -169,6 +170,6 @@ ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

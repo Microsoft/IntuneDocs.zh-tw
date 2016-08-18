@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -100,7 +100,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 2.  選取下列其中一個動作：
 
-- [編輯]：開啟所選原則的內容讓您進行變更。
+- **[編輯]**：開啟所選原則的內容讓您進行變更。
 - [刪除]：刪除選取的原則。<br>當您刪除原則時，會從部署該原則的所有群組移除它。
 - [管理部署]：選取您要部署原則的群組，然後選擇 [新增]。
 
@@ -152,7 +152,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 如果其中一項原則部署到應用程式並生效，然後再部署第二項原則，則會優先使用並持續套用第一項原則，而第二項原則會顯示為衝突的原則。 如果同時套用這兩項原則，代表沒有優先的原則，則兩者皆處於衝突狀態。 任何衝突的設定將設為限制最嚴格的值。
 
 ### iOS 自訂原則衝突時，會發生什麼情況？
-Intune 不會評估 Apple 組態檔或自訂 OMA-URI 原則的承載。 它只做為傳遞機制。
+Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識別項 (OMA-URI) 原則的承載。 它只做為傳遞機制。
 
 當您部署自訂原則時，請確定所進行的設定未與相容性、組態或其他自訂原則衝突。 如果自訂原則與設定衝突，則會依隨機順序來套用設定。
 
@@ -198,7 +198,7 @@ Intune 不會評估 Apple 組態檔或自訂 OMA-URI 原則的承載。 它只�
 
 #### 執行 Intune 用戶端軟體的 Windows 電腦
 
-- [Endpoint Protection 設定]：設定會還原回其建議值。 唯一例外是 [加入 Microsoft Active Protection Service] 設定，其預設值為 [否]。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+- [Endpoint Protection 設定]：設定會還原回其建議值。 唯一例外是 **[加入 Microsoft Active Protection Service]** 設定，其預設值為 **[否]**。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 - [軟體更新設定]：設定會重設為作業系統的預設狀態。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 - [Microsoft Intune Center 設定]：由原則設定的任何支援連絡資訊都會從電腦刪除。
 - [Windows 防火牆設定]：設定會重設為電腦作業系統的預設值。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
@@ -215,6 +215,6 @@ Intune 不會評估 Apple 組態檔或自訂 OMA-URI 原則的承載。 它只�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
     ![輸入 PIN 或密碼](./media/and-enroll-6-PIN-native.png)
 
-13.  遵循符合所使用裝置類型的下列指示 (原生 Android 或 Samsung Knox)。 若要判斷您是否擁有 Samsung Knox 裝置，請移至 **[設定]**&gt;**[關於裝置]**。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
-
-    -   原生 (非 Samsung Knox) 裝置︰在 [命名憑證] 畫面上，點選 [確定] 接受預設憑證。
-
-    ![命名憑證畫面](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox 裝置︰接受隱私權原則，然後點選 [確認]。
+13.  如果您使用 Samsung Knox 裝置，請點選 **[確認]**，然後您會看到一個訊息，指出您的裝置已註冊。 如果您使用原生 Android 裝置，則請注意下方畫面，該畫面顯示您的裝置已註冊。
 
     ![Samsung KNOX 隱私權原則](./media/and-enroll-7-knox-privacy-policy.png)
 
-    您會在 Intune 註冊您的裝置時看到下列訊息顯示在畫面上。
+    此畫面會顯示您的裝置已註冊。
 
     ![註冊裝置畫面](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

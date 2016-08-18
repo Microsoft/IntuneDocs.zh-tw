@@ -2,7 +2,7 @@
 title: "原則疑難排解 | Microsoft Intune"
 description: "針對原則設定問題進行疑難排解。"
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Microsoft Intune 的原則疑難排解
 
-本文列出您的 Microsoft Intune 原則設定中可能會發生的一些問題，以及這些問題的疑難排解建議。
-
-如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
-
+如果您有使用 Intune 部署和管理原則的問題，請從這裡開始。 本主題包含一些您在使用解決方案上可能會遇到的常見問題。
 
 ## 裝置是否已套用原則？
 **問題：** 不確定是否要將特定原則套用至裝置，或者裝置的行為是否違反原則。
@@ -109,6 +106,6 @@ Android MDM 不允許服務在裝置上強制執行其他平台所允許的初�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

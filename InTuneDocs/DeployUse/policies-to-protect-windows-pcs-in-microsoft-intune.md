@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # 使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦
 
-Microsoft Intune 提供三個原則供您使用，以在電腦由 [Intune 用戶端軟體](manage-windows-pcs-with-microsoft-intune.md)管理時協助確保 Windows 電腦的安全性。 
+Microsoft Intune 提供三個原則供您使用，以協助確保 [Intune 用戶端軟體](manage-windows-pcs-with-microsoft-intune.md)管理之 Windows 電腦的安全性。
 
 
 ## 軟體更新
@@ -30,7 +30,7 @@ Microsoft Intune 提供三個原則供您使用，以在電腦由 [Intune 用戶
 
 ## Windows 防火牆
 
-Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windows 電腦。 Intune 可讓您在您管理的所有電腦上[管理 Windows 防火牆的設定和功能](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windows 電腦。 使用 Intune，您可以在您管理之所有電腦上[管理 Windows 防火牆的設定和功能](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
 ## Endpoint Protection
 
@@ -38,12 +38,11 @@ Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windo
 
 
 
-### 另請參閱
+### 請參閱
 [透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

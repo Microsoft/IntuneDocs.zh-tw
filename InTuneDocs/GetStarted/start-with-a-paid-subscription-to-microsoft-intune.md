@@ -3,7 +3,7 @@ title: "Intune 快速入門指南 | Microsoft Intune"
 description: "開始使用 Intune 訂用帳戶的需求和必要條件"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e7ecf24c3fa678e68603f0e3523f2694a73e145c
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: e7ecf24c3fa678e68603f0e3523f2694a73e145c
 >[!NOTE]
 >本文著重在將 Intune 設定為獨立服務。 或者，如果您目前正在使用 Microsoft System Center Configuration Manager 來管理電腦和伺服器，您可以[延伸 Configuration Manager 來管理行動裝置](https://technet.microsoft.com/library/jj884158.aspx)。 您可以透過在混合式行動裝置管理 (MDM) 部署中連接 Intune 和 Configuration Manager 來達成。
 
-本快速入門指南中的步驟共用 [Intune 評估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中許多相同的步驟。 不過，當您完成評估並準備好開始管理行動裝置時，您必須先解決幾個額外的需求：
+本快速入門指南與 [Intune 評估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)共用許多相同的步驟。 不過，當您完成評估並準備好開始管理行動裝置時，您必須先解決幾個額外的需求：
 
 -   使用 Intune 與 Azure Active Directory 同步處理內部部署的 Active Directory 帳戶。
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: e7ecf24c3fa678e68603f0e3523f2694a73e145c
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

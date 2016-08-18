@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 |**說明**|使用 Microsoft Intune 註冊的個人裝置|單一使用者的公司所擁有的裝置|使用許多使用者共用之管理員帳戶所管理的公司所擁有的裝置|許多使用者所使用的公司所擁有的無使用者裝置。|
 |**裝置的使用者**|Owner|指派的使用者|沒有使用者特定的帳戶|沒有特定的使用者|
 |**註冊者？**|Owner|系統管理員|裝置管理員|任何人|
-|**取消註冊者？**|擁有者或系統管理員|系統管理員|系統管理員|系統管理員|
+|**取消註冊者？**|擁有者或系統管理員|平台 |系統管理員或使用者|系統管理員或使用者|
 |**可重設者？**|擁有者或系統管理員|系統管理員|系統管理員|系統管理員|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

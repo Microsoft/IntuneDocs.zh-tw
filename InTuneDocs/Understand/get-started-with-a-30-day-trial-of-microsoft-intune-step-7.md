@@ -2,9 +2,9 @@
 title: "完成 Intune 評估後的後續步驟 | Microsoft Intune"
 description: "在您設定免費 30 天的 Intune 評估版後，所需知道的訂閱與授權事項"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 882ea746690197c98a8f686bd9a0adca591bb988
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -34,6 +34,6 @@ ms.openlocfilehash: 882ea746690197c98a8f686bd9a0adca591bb988
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

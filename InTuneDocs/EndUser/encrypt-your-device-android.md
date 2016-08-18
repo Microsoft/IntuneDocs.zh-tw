@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -40,7 +40,23 @@ ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 - 您會看到仍需加密的訊息。
 - 您在嘗試使用公司入口網站應用程式時發生錯誤。
 
-**解決方式**：請確定您已在裝置上設定 PIN 或密碼。
+**可以嘗試的方法**： 
+
+1. 請確定您的裝置已連接電源線且正在充電。
+
+2. 請確定您已在裝置上設定 PIN 或密碼。
+
+3. 如果您已在裝置上設定 PIN 或密碼，請嘗試下列的步驟，在該步驟中 IT 系統管理員可能還需要為您的裝置進行更安全的防護。 您所看到的功能表名稱可能和步驟中的名稱稍有不同，視您擁有的 Android 裝置類型而定。
+
+    a. 移至 **[設定]** > **[安全性]** > **[螢幕鎖定]**。 確認目前的 PIN 或密碼。
+
+    b。 在 **[Choose screen lock] (選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。
+
+    c. 在 **[Secure start-up] (安全啟動)** 畫面上，依序點選 **[Require PIN to start device] (需要 PIN 以啟動裝置)** **[繼續]**。
+
+    d. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**[Confirm your PIN] (確認您的 PIN)**。
+
+    e. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
@@ -49,6 +65,6 @@ ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -3,7 +3,7 @@ title: "解決 GPO 和 Intune 原則衝突 | Microsoft Intune"
 description: "了解如何解決群組原則和 Intune 設定原則之間的衝突。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,30 +13,30 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 77f7bc40471437cf69fe5553d4d82dc71a6ba405
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # 解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
-Intune 使用原則協助您在自己管理的 Windows 電腦上管理設定。 例如，您可以使用原則來控制電腦上的 Windows 防火牆設定。 許多 Intune 設定與您透過 Windows 群組原則所做的設定很類似。 不過，有時候這兩種方法可能彼此衝突。
+Intune 使用原則協助您在的 Windows 電腦上管理設定。 例如，您可以使用原則來控制電腦上的 Windows 防火牆設定。 許多 Intune 設定與您透過 Windows 群組原則所做的設定很類似。 不過，有時候這兩種方法可能彼此衝突。
 
 發生衝突時，除非電腦無法登入網域，否則網域層級的群組原則將優先於 Intune 原則。 在這種情況下，Intune 原則會套用到用戶端電腦。
 
 ## 使用群組原則時的後續動作
-請檢查您套用的任何原則，確定所有原則目前均未受群組原則管理。 您可以採用下列一種或多種方法，以協助防止衝突：
+請確定您套用的原則均未受群組原則管理。 您可以使用下列一或多種方法，以協助防止衝突：
 
 -   在安裝 Intune 用戶端之前，將您的電腦移到未套用群組原則設定的 Active Directory 組織單位 (OU)。 若 OU 包含已經在 Intune 中註冊但您不想對其套用群組原則設定的電腦，您也可以在這些 OU 上封鎖群組原則繼承。
 
--   使用安全性群組篩選將 GPO 限制在不由 Intune 管理的電腦上。 
+-   使用安全性群組篩選將 GPO 限制在不由 Intune 管理的電腦上。
 
 -   停用或移除與 Intune 原則衝突的群組原則物件。
 
 如需 Active Directory 和 Windows 群組原則的詳細資訊，請參閱您的 Windows Server 文件。
 
 ## 如何篩選現有 GPO 以避免與 Intune 原則發生衝突
-如果您已識別與 Intune 原則發生衝突的 GPO 設定，您可以使用安全性群組篩選，將這些 Gpo 限制在不由 Intune 管理的電腦上。
+如果您已識別與 Intune 原則衝突的 GPO 設定，您可以使用安全性群組篩選，將這些 GPO 限制在不受 Intune 管理的電腦上。
 
 <!--- ### Use WMI filters
 WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
@@ -102,13 +102,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-群組原則可讓您將 GPO 僅套用至所選 GPO 之群組原則管理主控台的 [安全性篩選]  區域中指定的安全性群組。 根據預設，GPO 會套用至 [已驗證的使用者] 。
+您可以僅將 GPO 套用至所選 GPO 之群組原則管理主控台內 **[安全性篩選]** 區域中指定的安全性群組。 依預設，GPO 會套用至 *[已驗證的使用者]*。
 
--   在 [Active Directory 使用者和電腦] 嵌入式管理單元中，建立新的安全性群組，其中包含您不想使用 Intune 管理的電腦和使用者帳戶。 例如，您可以將群組命名為 **Not In Microsoft Intune**。
+-   在 **[Active Directory 使用者和電腦]** 嵌入式管理單元中，建立包含您不想讓 Intune 管理之電腦和使用者帳戶的新安全性群組。 例如，您可能將群組命名為 *Not In Microsoft Intune*。
 
 -   在群組原則管理主控台中，在選取之 GPO 的 [委派] 索引標籤處，以滑鼠右鍵按一下新的安全性群組，委派適當的 [讀取] 和 [套用群組原則] 權限至安全性群組中的使用者和電腦。 ([進階] 對話方塊提供 [套用群組原則]  權限。)
 
--   然後，將新的安全性群組篩選器套用至選取的 GPO，並移除 [已驗證的使用者]  預設篩選器。
+-   然後，將新的安全性群組篩選器套用至選取的 GPO，並移除 **[已驗證的使用者]** 預設篩選器。
 
 必須隨著 Intune 服務中的註冊情形變化來維護新的安全性群組。
 
@@ -117,6 +117,6 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

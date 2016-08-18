@@ -2,7 +2,7 @@
 title: "應用程式部署問題疑難排解 | Microsoft Intune"
 description: "本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題"
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Microsoft Intune 的應用程式部署問題疑難排解
-本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題
+如果您有使用 Intune 部署和管理應用程式的問題，請從這裡開始。 本主題包含一些您在使用解決方案上可能會遇到的常見問題。
 
-如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
+## 常見的應用程式部署問題
 
+### 使用者無法登入 Intune 公司入口網站
 
-## 一般應用程式部署問題
+1.  確定使用者帳戶存在，且已在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)啟用。
 
-### 如果您無法登入 Intune 公司入口網站
+3.  在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，確定使用者輸入正確的使用者名稱來登入 Intune，且使用者名稱格式如下：**joe@domain.com**。 如果使用者輸入的密碼錯誤，要求他們將其重設。
 
-1.  請查看您的帳戶是否存在於 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，或帳戶是否已停用。
-
-2.  確定您已在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，完成此帳戶的佈建。
-
-3.  在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，確定您已使用正確的使用者名稱和密碼登入 Intune，且使用者名稱格式如下：**joe@domain.com**。
-
-### 如果公司入口網站中沒有連絡 IT 的資訊
+### 公司入口網站中沒有連絡 IT 的資訊
 
 1.  在 Intune 管理主控台中，選擇 **[管理員]** &gt; **[公司入口網站]**。
 
@@ -105,6 +100,6 @@ ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
