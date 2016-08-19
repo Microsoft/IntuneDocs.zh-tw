@@ -75,16 +75,16 @@ ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 |設定名稱|詳細資料|
 |----------------|----------------------|
-|**允許網頁瀏覽器**|允許在裝置上使用 Edge 網頁瀏覽器。<br>(僅限 Windows 10 行動裝置版)|
+|**允許網頁瀏覽器**|允許在裝置上使用 Microsoft Edge 網頁瀏覽器。<br>(僅限 Windows 10 行動裝置版)|
 |**允許網址列中的搜尋建議**|在您輸入搜尋片語時導入您的搜尋引擎建議的網站。|
 |**允許將內部網路流量傳送到 Internet Explorer**|讓使用者在 Internet Explorer 中開啟內部網路網站。<br>(僅限 Windows 10 Desktop)|
-|**允許不要追蹤**|設定 Edge 瀏覽器以傳送「不要追蹤」標頭給使用者造訪的網站。|
+|**允許不要追蹤**|設定 Microsoft Edge 瀏覽器以傳送「不要追蹤」標頭給使用者造訪的網站。|
 |**啟用 SmartScreen**|在裝置上啟用 SmartScreen 瀏覽器設定。|
-|**允許動態指令碼處理**|允許在 Edge 瀏覽器中執行 Javascript 等指令碼。|
+|**允許動態指令碼處理**|允許在 Microsoft Edge 瀏覽器中執行 Javascript 等指令碼。|
 |**允許快顯視窗**|啟用或停用瀏覽器的快顯封鎖程式。<br>(僅限 Windows 10 Desktop)|
 |**允許 Cookie**|允許或停用 cookie。|
 |**允許自動填入**|允許使用者變更瀏覽器中的自動完成設定。<br>(僅限 Windows 10 Desktop)|
-|**允許密碼管理員**|啟用或停用 Edge 密碼管理員功能。|
+|**允許密碼管理員**|啟用或停用 Microsoft Edge 密碼管理員功能。|
 |**企業模式網站清單位置**|指定要尋找將在企業模式下開啟之網站清單的位置。 使用者無法編輯這份清單。<br>(僅限 Windows 10 Desktop)|
 
 ## - 應用程式
@@ -308,7 +308,7 @@ ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 |---------------|------------|-----------|
 |**允許瀏覽器**<br>(僅限行動裝置版)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0**：瀏覽已關閉<br>**1**：瀏覽已開啟 (預設值)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Desktop 和行動裝置版)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0**：不顯示搜尋建議<br>**1**：顯示搜尋建議 (預設值)|
-|**SendIntranetTraffictoInternetExplorer**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0** - 已停用 (在 Edge 瀏覽器中開啟內部網路網站 - 預設值)<br>**1** - 已啟用 (在 Internet Explorer 中開啟內部網路網站)。|
+|**SendIntranetTraffictoInternetExplorer**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0** - 已停用 (在 Microsoft Edge 瀏覽器中開啟內部網路網站 - 預設值)<br>**1** - 已啟用 (在 Internet Explorer 中開啟內部網路網站)。|
 |**允許不追蹤**<br>(Desktop 和行動裝置版)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0** - 已停用 (未傳送 DNT - 預設值)<br>**1** - 已啟用 (傳送 DNT)|
 |**設定 SmartScreen**<br>(Desktop 和行動裝置版)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0** - 不允許<br>**1** - 允許 (預設值)|
 |**允許快顯視窗**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**資料類型：** 整數<br /><br />**允許的值：**<br>**0** - 封鎖快顯視窗 (預設值)<br>**1** - 允許快顯視窗|
