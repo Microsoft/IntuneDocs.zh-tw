@@ -3,7 +3,7 @@ title: "設定 PFX 的憑證基礎結構 | Microsoft Intune"
 description: "建立及部署 .PFX 憑證設定檔。"
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 05/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,13 +13,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: f654dba31198115851feeeec90f04b8ad767e549
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 7376713410e802ffbee6238e7242e6d8ecc204df
 
 
 
 ---
-# 設定憑證基礎結構
+# 設定 PFX 的憑證基礎結構
 本主題說明建立及部署 .PFX 憑證設定檔需要什麼。
 
 若要在組織中執行任何以憑證為基礎的驗證，您需要企業憑證授權單位。
@@ -158,6 +158,6 @@ ms.openlocfilehash: f654dba31198115851feeeec90f04b8ad767e549
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

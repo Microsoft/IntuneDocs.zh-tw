@@ -13,8 +13,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
-ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
 
 
 ---
@@ -44,14 +44,14 @@ Android 行動裝置可讓使用者使用 Google Play 提供的公司入口網�
     您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。 [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 4.  您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
-        - [要告訴終端使用者的 Microsoft Intune 使用相關事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-        - [Windows 裝置的終端使用者指南](../enduser/using-your-android-device-with-intune.md)
+  - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [適用於 Windows 裝置的使用者指南](../enduser/using-your-android-device-with-intune.md)
 
 ### 請參閱
 [準備在 Microsoft Intune 中註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
