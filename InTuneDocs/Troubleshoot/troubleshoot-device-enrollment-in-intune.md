@@ -67,7 +67,7 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 2.  利用頁面左側連結，以您的組織識別碼登入。
 
-3.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory] (註冊免費的 Azure Active Directory) 訂閱連結)。
+3.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。
 
 4.  選取 [Active Directory]  ，然後選取您的組織。
 
@@ -264,7 +264,7 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 **解決方案：**
 
 1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。
-1. [檔案] -> [Add/ Remove Snap-ins] (新增/移除嵌入式管理單元)。
+1. [檔案] -> [Add/ Remove Snap-ins (新增/移除嵌入式管理單元)]。
 1. 按兩下 [憑證]，並依序選擇 [電腦帳戶] 和 [下一步]，然後選取 [本機電腦]。
 1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。
 1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時將其刪除
