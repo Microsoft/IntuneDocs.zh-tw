@@ -1,0 +1,58 @@
+---
+title: "管理公司裝置 | Microsoft Intune"
+description: "根據裝置、裝置的購買方式以及組織需求，以各種方式管理公司所擁有的裝置 (COD)。"
+keywords: 
+author: NathBarn
+manager: angrobe
+ms.date: 07/20/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
+ms.reviewer: dagerrit
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
+
+
+---
+
+# 使用 Microsoft Intune 註冊公司擁有的裝置
+根據裝置、購買方式和組織需求，Intune 可以透過各種不同的方式管理組織或公司所擁有的裝置 (COD)。 如同「攜帶您自己的裝置」(BYOD) 案例來安裝公司入口網站應用程式，也可以註冊和管理公司擁有的裝置。
+
+## 公司擁有的 iOS 裝置
+這些註冊方法適合「選擇您自己的裝置」(CYOD) 案例，其中組織會為使用者購買裝置，但想要保有對裝置的管理。 如果您的組織有購買的 iOS 裝置，您可以預先設定註冊，使得裝置在使用者第一次開啟裝置時即受到管理。 Intune 支援透過 [Apple 的裝置註冊程式 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 註冊或使用 Mac 電腦上執行的 Apple Configurator 進行[直接](ios-direct-enrollment-in-microsoft-intune.md)或[設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)註冊。
+
+[註冊公司擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+
+## 裝置註冊管理員
+組織可以使用 Intune，透過稱為裝置註冊管理員帳戶的單一使用者帳戶來管理大量的行動裝置。 建立裝置註冊管理員帳戶後，管理員可以使用該帳戶來註冊多於對一般使用者預設允許的標準五個裝置。 使用裝置註冊管理員來註冊裝置僅適用於特定使用者未使用的裝置。 比方說，這些裝置都適合銷售點或公用程式應用程式，但對於需要電子郵件或公司資源的存取權的使用者而言則不適合。
+
+[使用裝置註冊管理員註冊公司所擁有的裝置](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+
+## 註冊公司所擁有的 Windows 10 桌上型電腦
+
+如果貴組織擁有 Azure Active Directory Premium (AADP) 或企業管理套件 (EMS)，您可以[註冊 Windows 10 企業版](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)，而它們將會在使用者新增他們的工作或學校帳戶時，自動標記為「公司擁有」。
+
+## 識別公司所擁有的裝置
+
+在裝置清單中的 [擁有權] 底下，公司所擁有的裝置會列出為 [公司]。 可透過下列方式將裝置識別為公司所擁有的裝置：
+
+ - [使用裝置註冊管理員註冊 (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - 使用 Apple 的[裝置註冊方案 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 或 [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) 註冊
+ - [使用 IMEI 編號預先宣告裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Windows 10 裝置的 Azure Active Directory/企業管理套件註冊](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### 國際行動設備識別 (IMEI)
+
+唯一的國際行動設備識別碼 (IMEI) 號碼是許多行動裝置製造商的通用裝置屬性。 Intune 系統管理員可以匯入公司擁有之裝置的 IMEI 號碼。 當裝置變成由 Intune 管理時，會將它標記為公司所擁有的裝置。
+
+[使用國際行動設備識別碼 (IMEI) 編碼來指定公司擁有的裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+
+
+
+<!--HONumber=Jul16_HO4-->
+
+
