@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
@@ -32,11 +32,12 @@ Get-AppxPackage 的語法如下︰
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> 注意︰您可能必須以系統管理員身分執行 PowerShell，才能擷取 PFN。
+> [!NOTE]
+您可能必須以系統管理員身分執行 PowerShell，才能擷取 PFN。
 
 例如，若要取得電腦上安裝之所有通用應用程式的資訊，請使用 `Get-AppxPackage`。
 
-若要取得您知道名稱或局部名稱之應用程式的資訊，請使用 `Get-AppxPackage *<app_name>`。 請注意萬用字元的使用，如果您不確定應用程式的完整名稱，則這特別有用。 例如，若要取得 OneNote 的資訊，請使用 `Get-AppxPackage *OneNote`。
+若要在您知道應用程式的名稱或局部名稱時，取得應用程式的資訊，請使用 `Get-AppxPackage *<app_name>`。 請注意萬用字元的使用，如果您不確定應用程式的完整名稱，這將特別有用。 例如，若要取得 OneNote 的資訊，請使用 `Get-AppxPackage *OneNote`。
 
 
 以下是針對 OneNote 所擷取的資訊︰
@@ -67,13 +68,12 @@ Get-AppxPackage 的語法如下︰
 
 ## 如果電腦上未安裝應用程式，請尋找 PFN。
 
-1.  移至 https://www.microsoft.com/en-us/store/apps
+1.  請移至 https://www.microsoft.com/en-us/store/apps。
 2.  在搜尋列中輸入應用程式的名稱。 在這個範例中，搜尋 OneNote。
-3.  按一下應用程式的連結。 請注意，您所存取之 URL 的結尾會有一系列的字母。 在這個範例中，URL 看起來如下︰
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  在不同的索引標籤中，貼上下列 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`，並將 `<app id>` 取代為您從 https://www.microsoft.com/en-us/store/apps 取得的應用程式識別碼 - 步驟 3 中 URL 結尾的那一系列字母。 在 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
+3.  選擇應用程式的連結。 請注意，URL 的結尾會有一系列的字母。 在這個範例中，URL 看起來如下︰`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`。
+4.  在不同的索引標籤中貼上下列 URL，`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 將 `<app id>` 取代為您從 https://www.microsoft.com/en-us/store/apps 取得的應用程式識別碼 - 步驟 3 中 URL 結尾的那一系列字母。 在這個 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
-在 Microsoft Edge 中，會顯示您想要的資訊；在 Internet Explorer 中，按一下 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是這個範例的結果︰
+Microsoft Edge 會顯示您想要的資訊；在 Internet Explorer 中，選擇 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是此範例的結果︰
 
 
 `{`
@@ -85,6 +85,6 @@ Get-AppxPackage 的語法如下︰
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

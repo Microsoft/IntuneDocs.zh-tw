@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 - 未受任何 MDM 解決方案 (BYOD) 管理的裝置。
 
 >[!IMPORTANT]
+如果您目前正在使用 **Intune 管理主控台**來管理您的裝置，請考慮下列項目︰
 
-> 如果您目前使用 **Intune 管理主控台**來管理裝置，則可以使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，為 Intune 註冊的裝置建立支援應用程式的 MAM 原則。
-在 Intune 管理主控台中建立的 MAM 原則無法匯入到 Azure 入口網站中。  MAM 原則必須在 Azure 入口網站中重新建立。
+> * 您可以建立 MAM 原則，該原則使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)支援 Intune 中註冊之裝置的應用程式。
+> * 在 Intune 管理主控台中建立的 MAM 原則無法匯入到 Azure 入口網站中。  MAM 原則必須在 Azure 入口網站中重新建立。
 
+> * 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。
 
-> 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將 Azure 入口網站中的原則套用至應用程式並部署至使用者。
+> * 若要部署管理應用程式，您必須在 Intune 管理主控台中建立 MAM 原則。 在此情況下，您可能想要在 Intune 管理主控台和 Azure 入口網站中建立 MAM 原則︰在 Intune 管理主控台中建立 MAM 原則，可確定您能夠部署受管理的應用程式，而在 Azure 入口網站中建立 MAM 原則，則是由於它是具有所有 MAM 原則設定的新管理主控台。
+
+> * 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將在 Azure 入口網站中建立的原則套用至應用程式。
 
 若要查看為 Android 和 iOS 平台支援的原則設定清單，請選取下列其中一項︰
 
@@ -165,6 +169,6 @@ ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -3,8 +3,8 @@ title: "透過清查了解您的裝置 | Microsoft Intune"
 description: "使用 Intune 以檢視有關您所管理之裝置的硬體資訊。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 669e096735ae7123123873dad8982abf2c4c38d6
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -27,7 +27,7 @@ Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟�
 
 |屬性|收集依據|
 |------------|-----------------------|
-|**Name**|All 裝置|
+|**名稱**|All 裝置|
 |**作業系統**|All 裝置|
 |**製造商**|All 裝置|
 |**型號**|All 裝置|
@@ -42,10 +42,10 @@ Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟�
 |**Exchange ActiveSync 識別碼**|All 裝置|
 |**Jailbroken 或 Root 破解**|僅限 iOS 和 Android 裝置|
 |**唯一的裝置識別碼**|Exchange ActiveSync 以外的所有裝置|
-|**序號**|iOS、Mac OS X、Android、Windows 8.1、Windows 10 裝置|
-|**總儲存空間**|iOS、Mac OS X、Windows 8.1、Windows 10 裝置|
-|**可用儲存空間**|iOS、Mac OS X、Windows 8.1、Windows 10 裝置|
-|**電話號碼**<br>分類為公司的電話現在會在 (舉例而言) 您執行行動裝置清查報表時利用其完整電話號碼加以識別。 BYOD 電話號碼會以 &#42; 遮罩，僅顯示最後 4 位數。|iOS、Android 和 Windows Phone 裝置|
+|**序號**|iOS、Mac OS X、Android、Windows 8.1，以及 Windows 10 裝置|
+|**總儲存空間**|iOS、Mac OS X、Windows 8.1，以及 Windows 10 裝置|
+|**可用儲存空間**|iOS、Mac OS X、Windows 8.1，以及 Windows 10 裝置|
+|**電話號碼**<br>分類為公司的電話現在會利用其完整電話號碼加以識別 (例如，當您執行行動裝置清查報表時)。 BYOD 電話號碼會以 &#42; 遮罩，且僅顯示最後 4 位數。|iOS、Android 和 Windows Phone 裝置|
 |**IMEI**|Exchange ActiveSync、iOS、Android 和 Windows Phone 裝置|
 |**MEID**<br>行動設備識別碼|僅限 iOS 裝置|
 |**Wi-Fi MAC**|Exchange ActiveSync 以外的所有裝置|
@@ -59,13 +59,13 @@ Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟�
 |**啟用鎖定已啟用**|僅限 iOS 裝置|
 |**加密已啟用**|All 裝置|
 
-## 從 Windows 電腦收集的內容
+## 從 Windows 電腦收集了什麼？
 > [!IMPORTANT]
 > 本節僅適用於執行 Intune Windows 電腦用戶端軟體。
 
 若要檢視 Windows 電腦所收集的清查，請執行[電腦清查報表](understand-microsoft-intune-operations-by-using-reports.md)。 Intune 會從 Windows 電腦收集下列清查：
 
--   **Name**
+-   **名稱**
 
 -   **底座類型**
 
@@ -114,6 +114,6 @@ Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 本主題說明如何開啟許多語言的服務要求或電話支援。
 
 如需使用 Intune 的自我協助，請參閱 [Microsoft Intune 的一般疑難排解提示](general-troubleshooting-tips-for-microsoft-intune.md) 或列在本主題之**請參閱**小節中特定問題的任何疑難排解主題。
+
+>[!NOTE]
+>
+>主要客戶可以在[頂級支援頁面](https://support.microsoft.com/en-us/premier/contacts)開啟 Intune 支援票證。
+
 ## 建立線上服務要求
 
 1.  使用 Intune 認證登入 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)。
@@ -140,6 +145,6 @@ ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

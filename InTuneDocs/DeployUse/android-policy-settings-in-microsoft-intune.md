@@ -5,7 +5,7 @@ description: "建立可以在您使用 Intune 管理的 Android 裝置上控制�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
 
 
 ---
@@ -197,65 +197,17 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
     |**OMA-URI (區分大小寫)**|指定您想要提供設定的 OMA-URI。|
     |**值**|指定要與您先前指定的 OMA-URI 產生關聯的值。|
 
-### 範例：使用預先共用金鑰設定自訂的 Wi-Fi 設定檔
-雖然 Intune 針對 Android 裝置支援 Wi-Fi 設定檔，但是此功能目前不支援在設定中包含預先共用金鑰。 在此範例中，您將了解如何建立 Android 自訂原則，在 Android 裝置上使用預先共用金鑰來建立 Wi-Fi 設定檔。
+### 範例
 
-#### 使用預先共用金鑰建立 Wi-Fi 設定檔
-
-1.  確保您的使用者都會使用適用於 Android 的最新版 [Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)應用程式。
-
-2.  建立 Android 自訂原則，並新增下列設定：
-
-|設定名稱|詳細資料|
-|----------------|--------------------|
-|**設定名稱**|針對設定指定您選擇的名稱。|
-|**設定說明**|指定設定的說明。|
-|**資料類型**|選取 [字串 (XML)]。|
-|**OMA-URI**|輸入下列字串︰./Vendor/MSFT/WiFi/Profile/*&lt;您的 Wi-Fi 設定檔&gt;*/Settings|
-
-3.  針對 [值]，複製並貼上下列 XML 程式碼：
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  完成時，請儲存原則，並將它部署到所需的 Android 裝置。 新的 Wi-Fi 設定檔將會出現在裝置的連線清單中。
+- [使用預先共用金鑰建立 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
+- [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](per-app-vpn-for-android-pulse-secure.md)
+- [使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### 請參閱
 [透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

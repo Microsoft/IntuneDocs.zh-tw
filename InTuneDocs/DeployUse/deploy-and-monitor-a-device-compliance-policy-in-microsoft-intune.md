@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # 在 Microsoft Intune 中部署和監視裝置相容性原則
 ## 部署相容性原則
-將您[建立的](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則部署到組織中的一或多個使用者或裝置群組。
+將您[建立的](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則部署到組織中的一或多個使用者群組。 將相容性原則部署到使用者時，即會檢查使用者裝置的相容性。
 
 1.  在 [原則] 工作區中，選取您要部署的原則，然後選擇 [管理部署]。
 ![在頂端顯示 [管理部署] 功能表選項的相容性原則頁面的螢幕擷取畫面](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  在 [管理部署] 對話方塊中，選擇您要部署原則的一或多個群組，然後選擇 [新增] > [確定]。
-![管理部署對話方塊的螢幕擷取](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)您可以將相容性原則部署到使用者和 (或) 裝置。 使用已建立並同步處理至 Intune 的 Active Directory 群組，或在 Intune 主控台中手動建立這些群組。 如需深入了解如何部署原則，請參閱[部署設定原則](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+![管理部署對話方塊的螢幕擷取畫面](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)您可以將相容性原則部署到使用者。 使用已建立並同步處理至 Intune 的 Active Directory 群組，或在 Intune 主控台中手動建立這些群組。 如需深入了解如何部署原則，請參閱[部署設定原則](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 使用 [原則] 工作區的 [概觀] 頁面上的狀態摘要和警示，來識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板]  工作區中。
 
@@ -72,6 +72,6 @@ ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 
