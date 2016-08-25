@@ -191,7 +191,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 ##### 執行不相容應用程式報表
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
 
 2.  選取您想要檢查的裝置群組、選取是否要檢查相容應用程式和 (或) 不相容應用程式，然後選擇 **[檢視報告]**。
 
