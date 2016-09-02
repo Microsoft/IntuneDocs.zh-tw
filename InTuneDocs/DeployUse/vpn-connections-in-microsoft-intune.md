@@ -98,7 +98,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **Name**     |輸入 VPN 設定檔的唯一名稱，協助您在 Intune 主控台中識別該 VPN 設定檔。         
 **說明**     |提供概述 VPN 設定檔的描述以及協助您找到它的其他相關資訊。         
 **VPN 連線名稱 (向使用者顯示)**     |指定 VPN 設定檔的名稱。 這是使用者在其裝置的可用 VPN 連線清單中看到的名稱。         
-**連線類型**     |  請在下列項目中選取 VPN 設定檔要使用的連線類型：[Cisco AnyConnect] (Windows 8.1 或 Windows Phone 8.1 不提供)、[Pulse Secure]、[F5 Edge Client]、[Dell SonicWALL Mobile Connect]、[CheckPoint Mobile VPN]。
+**連線類型**     |  請在下列項目中選取 VPN 設定檔要使用的連線類型：[Cisco AnyConnect (Windows 8.1 或 Windows Phone 8.1 不提供)]、[Pulse Secure]、[F5 Edge Client]、[Dell SonicWALL Mobile Connect]、[CheckPoint Mobile VPN]。
 **VPN 伺服器描述**     | 指定裝置將連線之 VPN 伺服器的描述。 範例：**Contoso VPN 伺服器**。 當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。
 **伺服器 IP 位址或 FQDN**    |提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。  當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。         |         
 **伺服器清單**     |選擇 [新增] 來新增要用於 VPN 連線的新 VPN 伺服器。 您也可以指定哪部伺服器是連線時的預設伺服器。 只有在連線類型為 [F5 Edge Client] 時，才會顯示此選項。         
