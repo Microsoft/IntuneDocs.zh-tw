@@ -40,7 +40,7 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
 1. 請確定使用您用來登入 Intune 的相同租用戶帳戶來登入商務用市集。
 2. 在商務用市集中，選擇 **[設定]** > **[管理工具]**。
-3. 在 [管理工具] 頁面上，選擇 **[Add a management tool] (新增管理工具)**，然後選擇 **[Microsoft Intune]**。
+3. 在 [管理工具] 頁面上，選擇 **[Add a management tool (新增管理工具)]**，然後選擇 **[Microsoft Intune]**。
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
