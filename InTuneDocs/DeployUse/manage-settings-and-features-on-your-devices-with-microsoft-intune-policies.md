@@ -4,7 +4,7 @@ description: "使用 Intune 建立和部署原則，控制您所管理之已註�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 修訂公司入口網站中的連絡資訊等其他變更，則不會對裝置傳送立即通知。
 
-> [!TIP]
-> 包含設定的原則部署到 Android 裝置時，系統會提示使用者，採取動作以符合此原則。 在使用者採取此動作，或重新啟動裝置之前，新的原則設定不會生效。
-
 ### 如果有多項原則部署到同一位使用者或同一部裝置，如何得知將套用哪些設定？
 請注意，當有兩項或多項原則部署到同一位使用者或同一部裝置時，會在個別的設定層級評估要套用哪項設定：
 
@@ -215,6 +212,6 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

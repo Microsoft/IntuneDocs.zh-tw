@@ -4,7 +4,7 @@ description: "針對原則設定問題進行疑難排解。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 > [!NOTE]
 > 請記住，當有兩項不同限制等級的原則套用至同一部裝置或使用者時，實際上會套用限制更嚴格的原則。
-
-## 原則的重新整理和更新間隔
-請注意，原則會定期重新整理和更新。 一般而言，原則應該在變更後的 15 分鐘內在裝置上註冊。 以下是定期重新整理原則的詳細資訊︰
-
--   **註冊 MDM 的 Windows 裝置**︰Windows 8.1 和 Windows 10 裝置的原則會每隔 8 小時更新，Windows RT 裝置則每隔 24 小時更新。
-
--   **Windows Phone**：每隔 8 小時更新原則。 可以透過公司入口網站 **[設定]** 下的重新整理強制執行。
-
--   **iOS**︰每天一次不定時更新原則。 開啟公司入口網站、選取該裝置並按一下 **[同步處理]** 也可以強制執行。
-
--   **Android**：每天一次不定時更新原則。 開啟公司入口網站，並選取該裝置，然後選擇 **[同步處理]** 也可以強制執行。
 
 ## Microsoft Intune policyplatform.log 中的原則相關錯誤
 至於非 MDM Windows 裝置，policyplatform.log 檔案中的原則錯誤可能是因為裝置上 Windows 使用者帳戶控制 (UAC) 的非預設設定所造成。 某些非預設的 UAC 設定可能會影響 Microsoft Intune 用戶端安裝和原則執行。
@@ -93,9 +82,6 @@ ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 左導覽功能表底部有一個 [重設安全性原則]  連結。 選擇該連結，然後選擇 **[重設原則]** 按鈕。
 您可能需要停用 Android、Windows Phone 8.1 (含) 以後版本和 iOS 等其他 MDM 裝置，再重新註冊到服務中，才能套用較不嚴格的原則。
 
-## Android 裝置不會在使用者未接受的情況下，強制執行安全性原則變更。
-Android MDM 不允許服務在裝置上強制執行其他平台所允許的初始原則變更。 這是 Android 本身功能所致，與 Intune 服務無關。 Android 裝置會透過相關原則變更 (例如密碼、加密等) 的通知視窗來提示使用者。  使用者必須回應提示，而且一旦接受，就應該套用原則。
-
 ## 如果公司名稱包含特殊字元，就無法建立原則或註冊用戶端
 **問題︰**您無法建立原則或註冊用戶端。
 
@@ -106,6 +92,6 @@ Android MDM 不允許服務在裝置上強制執行其他平台所允許的初�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
