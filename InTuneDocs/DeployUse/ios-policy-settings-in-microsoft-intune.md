@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -191,7 +191,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 ##### 執行不相容應用程式報表
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
 
 2.  選取您想要檢查的裝置群組、選取是否要檢查相容應用程式和 (或) 不相容應用程式，然後選擇 **[檢視報告]**。
 
@@ -233,6 +233,77 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許使用者安裝組態設定檔與憑證**|允許使用者安裝組態設定檔和憑證。|
 |**允許在裝置上使用「訊息」應用程式**|允許使用「訊息」應用程式傳送簡訊。|
 
+### 顯示或隱藏應用程式
+
+使用 [Hidden and shown apps list] (隱藏與顯示的應用程式清單) 來在受監督的裝置 (執行 iOS 9.3 或更新版本) 上控制下列項目︰
+
+- 指定對使用者隱藏的應用程式清單。 使用者無法檢視或啟動這些應用程式。
+- 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
+
+
+#### 如何建立隱藏或顯示的應用程式清單
+
+指定下列設定：
+
+|設定名稱|詳細資料|
+|-|-|
+|**隱藏與顯示的應用程式清單**|如果您想要建立隱藏或顯示的應用程式清單，請啟用此設定。|
+|**對使用者隱藏的應用程式清單**|如果您想要建立會對使用者隱藏的應用程式清單，請選取此選項。|
+|**只向使用者顯示列出的應用程式**|如果您想要建立會對使用者顯示的應用程式清單，請選取此選項。<br>當您建立此清單類型時，除了 iOS **設定**和**電話** (適用於 Iphone) 應用程式以外的所有應用程式都會隱藏 。<br>此外，您必須將公司入口網站和任何您已部署，並使用 Intune 管理的應用程式加入清單中。|
+|**新增**|將應用程式新增至選取的清單。<br>針對隱藏清單中，您必須指定每個想要隱藏之應用程式的 [名稱][發行者]，和 [App URL or Bundle ID] (應用程式 URL 或組合識別碼) 。<br>針對所示清單，您可以 [選取受管理的應用程式]，這會提供您使用 Intune 所管理的應用程式清單以供您選取，或 [選取市集應用程式]，之後您必須指定每個您想要顯示之應用程式的 [名稱][發行者]，和 [App URL or Bundle ID] (應用程式 URL 或組合識別碼)。|
+|**匯入應用程式**|匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 應用程式 URL」格式。|
+|**編輯**|讓我們編輯所選取應用程式的名稱、發行者和 URL。|
+|**刪除**|從清單中刪除選取的應用程式。|
+
+#### 內建 iOS 應用程式的應用程式資訊
+
+使用此清單中的資訊來識別您可能想要顯示或隱藏之內建 iOS 應用程式的名稱、發行者及組合識別碼。 如果您想要顯示或隱藏清單中的所有應用程式，您可以將下列資料複製到文字檔，並使用副檔名 **.csv**，然後使用 [匯入應用程式] 選項來同時匯入所有的應用程式。
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## 自訂原則設定
 
@@ -266,6 +337,6 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

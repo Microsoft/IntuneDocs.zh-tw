@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 990ab5f8f8bf2747506abab47569d592f7ca56fd
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: ab972d83754a14be395783132ba0a8c09d442763
 
 
 ---
@@ -25,17 +25,17 @@ ms.openlocfilehash: 990ab5f8f8bf2747506abab47569d592f7ca56fd
 
 ## 原生 (非 Samsung KNOX) 裝置
 
-1.  在裝置的 [設定] 中，點選 [安全性] &gt; [Automatically Lock] (自動鎖定) (在某些裝置上，這會顯示為 [Lock phone after] (在下列時間後鎖定電話))。
+1.  在裝置的 [設定] 中，點選 [安全性] &gt; [Automatically Lock (自動鎖定)] (在某些裝置上，這會顯示為 [Lock phone after (在下列時間後鎖定電話)])。
 
-    如果未顯示 [Automatically Lock] (自動鎖定) (在某些裝置上，是 [Lock phone after] (在下列時間後鎖定電話))，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
+    如果未顯示 [Automatically Lock (自動鎖定)] (在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
 
 2.  選取密碼逾時值。
 
 ## Samsung KNOX 裝置
 
-1.  在裝置上的 [設定]，點選 [Lock screen and security ] (鎖定畫面及安全性) &gt; [Lock automatically] (自動鎖定)。
+1.  在裝置上的 [設定]，點選 [Lock screen and security (鎖定畫面及安全性) ] &gt; [Lock automatically (自動鎖定)]。
 
-    如果未顯示 [Lock automatically] (自動鎖定) (在某些裝置上，是 [Lock phone after] (在下列時間後鎖定電話))，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
+    如果未顯示 [Lock automatically (自動鎖定)] (在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
 
 2.  選取密碼逾時值。
 
@@ -43,6 +43,6 @@ ms.openlocfilehash: 990ab5f8f8bf2747506abab47569d592f7ca56fd
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

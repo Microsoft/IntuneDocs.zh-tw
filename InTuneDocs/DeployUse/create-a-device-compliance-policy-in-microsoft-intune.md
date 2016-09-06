@@ -23,7 +23,7 @@ ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
 本主題概述您可用來建立裝置必須遵循的相容性原則步驟，以便視為相容。
 
 ##  步驟 1︰加入新原則
-  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則] &gt; [相容性原則] &gt; [新增]。
+  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [相容性原則] &gt; [新增]。
 
   ![Intune 管理主控台中相容性原則頁面的螢幕擷取畫面，顯示頁面頂端功能表中的新增選項](./media/intune-sa-3a-add-compliance-policy.png)
 

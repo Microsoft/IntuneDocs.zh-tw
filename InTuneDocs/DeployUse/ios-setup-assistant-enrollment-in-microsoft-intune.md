@@ -38,7 +38,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 2.  **建立裝置的設定檔**裝置註冊設定檔會定義套用到裝置群組的設定。 如果您尚未這麼做，請建立使用 Apple Configurator 所註冊之 iOS 裝置的裝置註冊設定檔。
 
-    1.  在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增...]。
+    1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增...]。
     ![建立裝置註冊設定檔](../media/pol-sa-corp-enroll.png)
 
     2.  輸入裝置設定檔的詳細資料：
@@ -61,7 +61,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
     3.  選擇 [儲存設定檔] 以新增設定檔。
 
-3.  **新增要使用設定助理註冊的 iOS 裝置**在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com) 中，前往 [群組] &gt; [所有裝置] &gt; [所有公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置...]。 您可以使用下列兩種方式新增裝置：
+3.  **新增要使用設定助理註冊的 iOS 裝置**在 [Microsoft Intune 管理主控台](http://manage.microsoft.com) 中，前往 [群組] &gt; [所有裝置] &gt; [所有公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置...]。 您可以使用下列兩種方式新增裝置：
 
     ![新增裝置對話方塊](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
@@ -89,7 +89,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 5.  **指派設定檔**從可用的設定檔清單中指定指派給新增裝置的設定檔，檢閱**註冊設定檔詳細資料**，然後選擇 [完成]。 手動新增的裝置可以指派給任何註冊設定檔。
 
-6.  **匯出要部署到 iOS 裝置的設定檔**在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com) 中，移至 [原則] &gt; [註冊公司的裝置]，然後選擇要部署到行動裝置的裝置設定檔。 選擇 [匯出...] 。 複製並儲存 [設定檔 URL] 。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
+6.  **匯出要部署到 iOS 裝置的設定檔**在 [Microsoft Intune 管理主控台](http://manage.microsoft.com) 中，移至 [原則] &gt; [註冊公司的裝置]，然後選擇要部署到行動裝置的裝置設定檔。 選擇 [匯出...] 。 複製並儲存 [設定檔 URL] 。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
     若要支援 Apple Configurator 2，則必須編輯 2.0 設定檔 URL。 取代
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=

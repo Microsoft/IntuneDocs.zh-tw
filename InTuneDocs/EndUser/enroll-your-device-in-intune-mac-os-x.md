@@ -32,7 +32,7 @@ ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 1.  使用 Safari 瀏覽器，開啟 [公司入口網站](https://portal.manage.microsoft.com)，然後點選通知列。
 
-2.  點選 [This device is either not enrolled or the Company Portal can't identify it] (未註冊此裝置，或公司入口網站無法識別此裝置)。
+2.  點選 [This device is either not enrolled or the Company Portal can't identify it (未註冊此裝置，或公司入口網站無法識別此裝置)]。
 
     ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 

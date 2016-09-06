@@ -302,7 +302,7 @@ ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 |**ExcludedPaths**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**資料類型：**字串<br /><br />**允許的值：**<br /><br />*&lt;以分號分隔的路徑清單&gt;*<br /><br />範例：**c:\test;c:\test1.exe**<br /><br />**預設值：** 不排除任何路徑|
 |**ExcludedProcesses**<br>(僅限 Desktop)|**URI 完整路徑：** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**資料類型：**字串<br /><br />**允許的值：**<br>*&lt;以分號分隔的路徑清單&gt;*<br>範例：**c:\test.exe;c:\test1.exe**<br>**預設值：** 不排除任何程序|
 
-## - Edge 瀏覽器
+## - Microsoft Edge 瀏覽器
 
 |原則名稱|詳細資料|
 |---------------|------------|-----------|

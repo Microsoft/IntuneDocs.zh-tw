@@ -46,7 +46,7 @@ ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
 
 ## 設定行動裝置應用程式組態原則
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
 
 2.  在原則清單中，展開 [iOS]，選擇 [行動裝置應用程式組態]，然後選擇 [建立原則]。
 
