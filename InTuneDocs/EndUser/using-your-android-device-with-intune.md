@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 # 透過 Intune 使用 Android 裝置
 
-針對使用者可在其受 Intune 管理裝置上執行的工作，此頁面包含所有這些工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰註冊相關資訊、管理工作，以及相容性問題。
+針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰ 
+
+- 公司入口網站應用程式安裝和 Intune 註冊 
+- 註冊後的管理工作
+- 相容性問題
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
@@ -67,6 +71,6 @@ ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

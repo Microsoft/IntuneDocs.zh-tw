@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## 建立自訂組態
 您可以在 Intune 中使用自訂組態來建立 VPN 設定檔。 若要建立自訂組態：
 
-   1. 在 Intune 管理主控台中，**[原則]** -> **[新增原則]** -> *<Expand platform>* -> **[自訂設定]** -> **[建立原則]**。
+   1. 在 Intune 管理主控台中，[原則] > [新增原則] > *<Expand platform>* > [自訂設定] > [建立原則]。
    2. 提供原則的名稱。
-   3. 針對每個 URI 設定，按一下 [新增] 並提供必要資訊。 範例如下：
+   3. 針對每個 URI 設定，選擇 [新增] 並提供要求的資訊。 範例如下：
 
    ![VPN 設定檔自訂組態對話方塊](./media/Intune_Add_VPN_URI.png)
 
-   4.  輸入所有 URI 設定後，請按一下 [儲存原則] 再部署原則。
+   4.  輸入所有 URI 設定後，請選擇 [儲存原則]，然後部署原則。
 
 ## 部署組態原則
 
-1.  在 [原則]  工作區中，選取您要部署的原則，然後按一下 [管理部署] 。
+1.  在 [原則] 工作區中，選擇您要部署的原則，然後按一下 [管理部署]。
 
 2.  在 [管理部署]  對話方塊中：
 
-    -   **部署原則** - 選取您要部署原則的一或多個群組，然後按一下 [新增] &gt; [確定]。
+    -   **若要部署原則** - 選取您要部署原則的一或多個群組，然後按一下 [新增] &gt;[確定]。
 
-    -   **關閉對話方塊但不加以部署** - 按一下 [取消]。
+    -   **若要關閉對話方塊但不加以部署** - 選擇 [取消]。
 
-當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
+當您選擇某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
 ##自訂的 VPN 設定檔組態的 URI 設定範例
-以下是 URI 值項目範例，可為稱為 Contoso 的虛構公司中的 VPN 建立自訂組態。 如需詳細資訊，例如每個項目的資料類型，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+以下是 URI 值項目範例，可為稱為 Contoso 的虛構公司中的 VPN 建立自訂組態。 如需詳細資訊，如每個項目的資料類型，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)。
 
 原生 Contoso VPN (IKEv2)：./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,13 +83,13 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考 CSP 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx。
 
 ## 適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
-### 封裝清單的自訂 URI
+### 套件清單的自訂 URI
 -  資料類型 = 字串
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
--  值 = 分隔符號分隔的封裝清單。
+-  值 = 分隔符號分隔的套件清單。
    - 分隔符號︰分號 (;)、冒號 (:)、逗號 (,)、直立線符號 (|)
 
 範例：
@@ -112,6 +112,6 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -82,7 +82,7 @@ ms.openlocfilehash: 27d993974d71b34b36cbd3216b83a1303689bf15
 接著，設定原則來要求只有受管理和相容的裝置才可以存取商務用 Skype Online。 這項原則會儲存在 Azure Active Directory。
 
 ####
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，按一下 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
 
 ![商務用 Skype Online 條件式存取原則頁面的螢幕擷取畫面](./media/conditional_access_SFBPolicy.png)
 

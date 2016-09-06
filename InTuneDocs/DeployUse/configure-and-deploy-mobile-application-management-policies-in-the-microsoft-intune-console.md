@@ -106,7 +106,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 ## 步驟 3：建立行動應用程式管理原則
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
 
 2.  根據您想要設定應用程式的裝置類型而定，設定和部署下列其中一種「軟體」原則：
 
@@ -166,7 +166,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 #### 檢視部署的狀態
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [群組] &gt; [概觀]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [群組] &gt; [概觀]。
 
 2.  執行下列步驟：
 

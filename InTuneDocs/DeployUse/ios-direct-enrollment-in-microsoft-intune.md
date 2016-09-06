@@ -24,7 +24,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 1.  **建立裝置的設定檔**裝置註冊設定檔會定義套用至裝置的設定。 如果您尚未這麼做，請建立使用 Apple Configurator 所註冊之 iOS 裝置的裝置註冊設定檔。
 
-    1.  在 [Microsoft Intune 管理主控台][](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增...]。
+    1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增...]。
 
         ![建立裝置註冊設定檔頁面](../media/pol-sa-corp-enroll.png)
 

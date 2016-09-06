@@ -43,7 +43,7 @@ Passport 可讓您以「使用者筆勢」登入，而不使用密碼登入。 �
     - **在已註冊的裝置上停用 Passport for Work**。 如果不想在 Windows 10 裝置上使用 Passport for Work，請選取此設定。 螢幕上的所有其他設定也都無法停用。
     - **在已註冊的裝置上啟用 Passport for Work**。 若要在所有 Windows 10 裝置上進行 Passport for Work 設定，請選取此設定。
     - **未設定**。 如果不想使用 Intune 來控制 Passport for Work 設定，請選取此設定。 將不會變更 Windows 10 裝置上任何現有的 Passport for Work 設定。 螢幕上的所有其他設定都無法停用。
-3.  如果您選取 **[Enable Passport for Work on enrolled devices] (在已註冊的裝置上啟用 Passport for Work)**，請進行必要設定以套用至所有已註冊的 Windows 10 和 Windows 10 行動裝置版裝置。
+3.  如果您選取 **[Enable Passport for Work on enrolled devices (在已註冊的裝置上啟用 Passport for Work)]**，請進行必要設定以套用至所有已註冊的 Windows 10 和 Windows 10 行動裝置版裝置。
 4.  完成之後，請選擇 **[儲存]**。
 
 ## Passport for Work：PIN 設定

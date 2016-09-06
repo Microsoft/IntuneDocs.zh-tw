@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
 
 
 ---
@@ -63,7 +63,7 @@ Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方
 
      以下是可用於 DEP 管理之裝置的設定：
 
-     - **部門** - 使用者在啟用期間點選 [About Configuration] (關於設定) 時出現
+     - **部門** - 使用者在啟用期間點選 [About Configuration (關於設定)] 時出現
      - **支援電話號碼** - 使用者在啟用期間按一下 **[需要協助]** 按鈕時顯示
      - **準備模式** - 這個狀態是在啟用期間設定，而且需要將裝置重設為出廠預設值才能進行變更︰
         - **不受監督** - 有限的管理功能
@@ -99,13 +99,13 @@ Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方
 
 ## Intune 群組指派的變更
 
-從九月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 新的動態裝置群組指派可以根據公司的註冊設定檔名稱於 Azure Active Directory 中定義。 此程序可確保預先指派裝置群組的裝置會自動註冊到群組中並部署原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+從十月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 此程序可確保預先指派裝置群組的裝置會自動註冊到群組中並部署原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 請參閱
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

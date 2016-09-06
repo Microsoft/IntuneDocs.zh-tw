@@ -3,23 +3,115 @@ title: "舊版 | Microsoft Intune"
 description: 
 keywords: 
 author: Lindavr
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
-ms.reviewer: mamoriss
 ms.suite: ems
-ms.sourcegitcommit: 3080d23f464e96315ed9e5fd59774ba9f1b2dd86
-ms.openlocfilehash: 65d582958d77150091880cce72e079b87308209f
+translationtype: Human Translation
+ms.sourcegitcommit: 57570fcf2f738b68a01bb1c5fc8962c7ef117920
+ms.openlocfilehash: 43546721245f92309d86c496dbcde7900a598ed0
 
 
 ---
 
 # 舊版 Intune
+## 2016 年 7 月
+### 應用程式管理
+#### 改善應用程式佈建設定檔更新體驗
+Apple iOS 企業營運行動應用程式已內建佈建設定檔，以及透過憑證簽署的程式碼。 當該應用程式於 iOS 裝置上執行時，iOS 會確認該 iOS 應用程式的完整性，並強制執行由佈建設定檔定義的原則。
+
+您用來簽署應用程式的企業簽署憑證通常會持續 3 年。 不過佈建設定檔將會在 1 年後到期。 透過此更新，Intune 會提的工具，可讓您在裝置上有即將到期的應用程式，但憑證仍然有效的情況下，主動將新的佈建設定檔原則部署到裝置。 如需詳細資訊，請參閱[使用 iOS 行動佈建設定檔原則來保持最新的企業營運應用程式](/intune/deploy-use/ios-mobile-app-provisioning-profiles)。
+<!--- TFS 1280247--->
+#### Intune 應用程式的 Xamarin SDK 可供使用
+Intune 應用程式 SDK Xamarin 元件可允許您在使用 Xamarin 建置的行動裝置 iOS 和 Android 應用程式中啟用 Intune 行動裝置應用程式管理功能。 您可以在 [Xamarin 市集](https://components.xamarin.com/view/Microsoft.Intune.MAM)中或 [Microsoft Intune Github 頁面](https://github.com/msintuneappsdk)上找到元件。
+<!--- TFS 1061478 --->
+
+### 裝置管理
+#### 提升裝置註冊限制
+Intune 已將每位使用者可設定裝置註冊最大值的限制，從 5 部裝置提升到 15 部裝置。
+<!---TFS 1289896 --->
+
+#### 在執行 Intune 用戶端軟體之 Windows 電腦的 TeamViewer 整合
+對於執行 Intune 用戶端的 Windows 電腦，[TeamViewer](https://www.teamviewer.com) 整合可讓您建立與 Windows 電腦的遠端協助工作階段，以協助支援終端使用者支援人員部門。 這包括 Windows 7、8、8.1 和 Windows 10。 如需詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
+<!---TFS 1284856--->
+
+### 公司入口網站更新
+#### 公司入口網站
+- **改善註冊 Windows 裝置時的使用者經驗**<br/>
+當您使用條件式存取時，在公司入口網站中已釐清 Windows 8.1、Windows 10 Desktop 和 Windows 10 行動裝置版的註冊步驟。 使用者現在會看到個別的「裝置註冊」和「工作場所聯結」步驟，讓使用者能夠更容易看到他們的裝置狀態，並在遇到工作場所聯結 (WPJ) 失敗時完成程序。 個別的步驟應該也能為 IT 系統管理員簡化疑難排解程序。 以前，當終端使用者嘗試註冊且除了 WPJ 以外的註冊步驟都成功時，已註冊的裝置不會顯示在可讓使用者識別的裝置清單中，而造成使用者混淆。
+
+#### Android
+- **Android 公司入口網站應用程式**<br/>
+如果 Android 終端使用者看到錯誤訊息，指出他們的裝置遺漏必要的憑證，他們可以點選 [如何解決此問題] 按鈕，以取得安裝遺失憑證的[步驟](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)。 如果使用者完成這些步驟，但看見其他其他「遺漏憑證」錯誤訊息，則會要求他們連絡其 IT 系統管理員並提供此[連結](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含 IT 系統管理員可用來解決憑證問題的步驟。
+
+- **將側載應用程式安裝限制於已註冊的裝置**<br/>
+Android 裝置已無法透過公司入口網站安裝應用程式，除非該裝置已使用 Android 版 Intune 公司入口網站應用程式在 Intune 註冊。
+<!---TFS 1299082--->
+
+#### iOS
+- **iOS 公司入口網站應用程式中的裝置註冊管理員帳戶變更**<br/>
+為了提升效能及規模，Intune 已不再於 iOS 公司入口網站應用程式的 [我的裝置] 窗格中，顯示所有的裝置註冊管理員 (DEM) 裝置。 只有執行應用程式的本機裝置會顯示，只有在透過公司入口網站應用程式註冊時才會顯示。
+
+DEM 使用者可在本機裝置上執行動作，但是其他已註冊裝置的遠端管理只能從 Intune 管理主控台執行。 此外，Intune 將會使用 DEM 帳戶取代 Apple 裝置註冊方案或 Apple Configurator 工具。 這兩種註冊方法已經支援共用之 iOS 裝置的較少使用者註冊。
+
+只有在共用裝置的較少使用者註冊無法使用時，才能使用 DEM 帳戶。 如需詳細資訊，請參閱[使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
+<!---TFS 1233681--->
+
+### Windows 功能名稱的變更
+- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) 現在稱為 **Windows Hello 企業版**。
+- [企業資料保護](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)現在稱為 **Windows 資訊保護**。
+
+## 2016 年 6 月
+### Intune 服務健全狀況
+Intune 的服務健全狀況資訊已與其他 Microsoft 服務一起移至中央位置。 現在，您會在 Office 365 管理入口網站的 [服務健全狀況] 下發現這項資訊。 如需詳細資訊，請參閱[這篇部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/)。
+
+### 應用程式管理
+- **改善 Windows 10 企業資料的原則設定經驗。** 我們強化了建立應用程式規則、指定網路邊界定義及其他企業資料保護設定等功能，從而提升 Windows 10 企業資料保護原則設定經驗。 若要深入了解，請參閱 [Create an enterprise data protection (EDP) policy using Microsoft Intune](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) (使用 Microsoft Intune 建立企業資料保護 (EDP) 原則)。
+
+
+### 裝置管理
+- **Windows Defender 原則設定可防止潛在的垃圾應用程式。** Windows 10 Desktop 與行動裝置版的一般設定原則中，加入了一項新的 Windows Defender 設定，稱為**偵測潛在的垃圾應用程式**。 您可以使用此設定保護已經註冊的 Windows 桌上型電腦，避免執行被 Windows defender 歸類為潛在垃圾應用程式的軟體。 您可以不執行這些應用程式，也可以使用稽核模式，在安裝潛在垃圾應用程式時回報。 如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 10 原則設定](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+<!---TFS 1244478--->
+
+### 條件式存取
+- **Intune 的 Cisco ISE 網路存取控制原則。**  同時使用 Cisco Identity Service Engine (ISE) 2.1 與 Microsoft Intune 的客戶，可以在 ISE 中設定網路存取控制原則。
+
+    若要使用此原則，裝置必須透過 WiFi 或 VPN 連線到網路，而且必須符合下列條件，才具備存取資格︰
+
+    * 必須是 Intune 管理的裝置。
+    * 必須符合所部署的任何 Intune 相容性原則。
+
+ 不相容裝置的使用者會收到提示，要求其註冊及修復任何相容性問題，才能獲得存取權。
+- **瀏覽器的條件存取** 您可以設定 [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) 和 [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md) 的條件式存取原則，以便只能從受管理和相容的 iOS 和 Android 裝置上的支援瀏覽器存取它們。 嘗試使用 iOS 和 Android 裝置登入 Outlook Web Access (OWA) 和 SharePoint 網站的使用者將會收到提示，以其裝置向 Intune 註冊，以及在完成登入之前修正任何不相容問題。
+<!---TFS 1175844--->
+
+- **Dynamics CRM Online 支援條件式存取。** 您可以設定 [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md) 的條件式存取原則，以便只有受管理和相容的 iOS 和 Android 裝置可以存取它。 嘗試在 iOS 和 Android 上登入 Dynamics CRM 行動應用程式的使用者將會收到提示，在登入完成之前向 Intune 註冊並補救任何不相容問題。
+<!---TFS1295358--->
+
+##E 公司入口網站更新
+
+#### Android 公司入口網站應用程式
+
+- 當 IT 系統管理員套用新的「裝置必須防止從不明來源安裝應用程式 (Android 4.0+)」原則時，使用 Android 4.0 或更新版本之裝置的使用者會看到訊息：「必須停用來自未知來源的安裝」。 使用者必須移至 [設定]  >  [安全性]，並關閉 [未知來源]。 相容性訊息中的連結可讓使用者取得訊息的[相關資訊](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android)，以及為什麼他們需要關閉設定。
+
+- 當 IT 系統管理員套用新的「裝置必須已啟用掃描應用程式的安全性威脅 (Android 4.0+)」原則時，使用 Android 4.0 或更新版本之裝置的使用者將會看到訊息：「掃描裝置中的安全性威脅」。 使用者必須移至 [設定]  >  [Google]  >  [安全性]，然後開啟 [掃描裝置中的安全性威脅]。 相容性訊息中的連結可讓使用者取得訊息的[相關資訊](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android)，以及為什麼他們需要開啟設定。
+
+- 當 IT 系統管理員套用新的「USB 偵錯需為停用 (Android 4.2+)」原則時，使用 Android 4.2 或更新版本之裝置的使用者將會看到訊息：「必須停用 USB 偵錯」。 使用者必須移至 [設定]  >  [開發人員選項]，並關閉 [USB 偵錯]。 相容性訊息中的連結可讓使用者取得訊息的[相關資訊](/Intune/EndUser/you-are-asked-to-turn-off-usb-debugging-android)，以及為什麼他們需要關閉設定。
+
+- 當 IT 系統管理員套用新的「Android 安全性修補程式等級下限 (Android 6.0+)」原則時，使用 Android 6.0 或更新版本之裝置的使用者將會看到訊息：「此裝置不符合最低的 Android 安全性修補程式等級」。 使用者必須安裝所需的安全性修補程式。 相容性訊息中的連結可讓使用者取得如何安裝必要安全性修補程式以及查看目前已安裝之安全性修補程式的[相關資訊](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android)。
+
+#### iOS 公司入口網站應用程式
+
+- 當使用者安裝企業營運應用程式時，就會看到改善的應用程式安裝體驗。 如果應用程式安裝花很長的時間，使用者可以手動同步處理他們的裝置，以強制同步處理程序繼續執行。 若要檢閱使用者指示，請參閱[手動同步處理您的 iOS 裝置](/Intune/EndUser/sync-your-device-manually-ios)。
+
+- 適用於 iOS 的 Microsoft Intune 公司入口網站應用程式已更新為支援 iOS 8.0 和更新版本。 此更新表示唯有裝置執行的是 iOS 8.0 版或更新版本時，使用者才能安裝公司入口網站應用程式以及在 Intune 中註冊新的裝置。 若使用者已經註冊在不支援的 iOS 版本中執行的裝置，則可繼續使用其裝置上的公司入口網站應用程式。
+
+
 ## 2016 年 5 月
 
 混合式部署也支援所有這些功能 (Configuration Manager 與 Intune)。 如需新混合式功能的詳細資訊，請查看 [Hybrid What’s New](https://technet.microsoft.com/en-us/library/mt718155.aspx) (混合式新功能) 頁面。
@@ -35,9 +127,9 @@ Intune 的服務健全狀況資訊已與其他 Microsoft 服務一起移至中�
 
 
 ### 應用程式管理
-- **MAM SDK︰支援 PIN 長度組態。** 您可以將 MAM 應用程式的 PIN 長度指定為類似裝置 PIN 的長度。 這將需要使用者符合您設定的新限制。 他們會看到稍微修改的 PIN 畫面以說明較長的輸入。 如需詳細資訊，請參閱 [Android 的 MAM 原則設定](/intune/deploy-use/android-mam-policy-settings)和 [iOS 的 MAM 原則設定](/intune/deploy-use/ios-mam-policy-settings)。
+- **MAM SDK︰支援 PIN 長度組態。** 您可以將 MAM 應用程式的 PIN 長度指定為類似裝置 PIN 的長度。 這將需要使用者符合您設定的新限制。 他們會看到稍微修改的 PIN 畫面以說明較長的輸入。 如需詳細資訊，請參閱 [MAM policy settings for Android](android-mam-policy-settings.md) (適用於 Android 的 MAM 原則設定) 和 [MAM policy settings for iOS](ios-mam-policy-settings.md) (適用於 iOS 的 MAM 原則設定)。
 
-- **iOS 和 Android 的商務用 Skype。** 您現在可以將目標放在具備[無註冊原則之 MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) 的商務用 Skype。 一旦使用者登入，將會套用 MAM 原則。
+- **iOS 和 Android 的商務用 Skype。** 您現在可以將目標放在具備[無註冊原則之 MAM](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) 的商務用 Skype。 一旦使用者登入，將會套用 MAM 原則。
 
 - **新的應用程式可用來使用 MAM 原則進行管理。** 適用於 Android 的 Microsoft Word、Excel 和 PowerPoint 應用程式現在可以在未向 Intune 註冊的裝置上與 MAM 原則相關聯。 如需受支援應用程式的完整清單，請移至 Microsoft Intune 應用程式夥伴頁面上的 [Microsoft Intune 行動應用程式庫](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)。
 
@@ -155,7 +247,7 @@ Windows 10 一般組態原則的更新除外，所有在 2016 年 3 月 29 日�
 |Windows 10 Mobile |只有在電話已設定密碼時才支援|
 |Windows 10 Desktop |不支援|
 |Windows Phone 8.1 |只有在電話已設定密碼時才支援|
-|Windows Phone 8。0 |不支援|
+|Windows Phone 8.0 |不支援|
 |電腦 (Windows 8.0 及更早版本) |不支援|
 |電腦 (Windows 8.1) |不支援|
 
@@ -258,172 +350,13 @@ Intune 現在可以幫助您[管理透過 Apple 商務大量採購方案 (VPP) �
 ### 一月終止 IE9 支援
 從 2016 年 2 月開始，Internet Explorer 9 不再是用於存取 Microsoft Intune 公司入口網站、Intune 帳戶入口網站和 Intune 管理主控台的官方瀏覽器。 您必須移轉至 Internet Explorer 10 或更新版本。
 
-## 2015 年 12 月
-### Microsoft 公司入口網站的變更及更新
-本版本中公司入口網站的變更如下：
-
-**Android 公司入口網站應用程式**
-
-已進行下列變更以符合 Gooogle 的新需求。 Android 6.0 和更新版本的裝置會向使用者顯示兩則新訊息︰
-* 是否允許公司入口網站進行和管理通話？
-* 是否允許公司入口網站存取相片、媒體和裝置上的檔案？
-
-請參閱下表以取得這兩則訊息的詳細資料。
-
-
-
-訊息文字  |是否允許公司入口網站進行和管理通話？  
----------|---------
-訊息意義     |  讓使用者的裝置電話號碼和 IMEI 傳送到 Intune 服務中，並在 [硬體] 頁面上的系統管理主控台中顯示。   </br></br>**注意：一律不要讓公司入口網站應用程式進行或管理通話！** 由 Google 控制此訊息文字，且無法變更。 </br></br>若要查看 [硬體] 頁面，請移至 [群組] > [所有行動裝置] > [裝置]。 選取使用者的裝置，然後移至 **[檢視內容]** > **[硬體]**。    
-訊息出現的位置和時機  | 當使用者第一次登入公司入口網站應用程式並開始註冊其裝置時，會出現此訊息。|         
-如果使用者允許存取會怎樣  |  裝置的電話號碼和 IMEI 會出現在系統管理員主控台的硬體上。 |         
-如果使用者拒絕存取會怎樣     | 他們可以繼續使用公司入口網站應用程式並註冊其裝置，但在系統管理主控台中的 [硬體] 頁面上，使用者的裝置電話號碼和 IMEI為空白。       </br></br> 使用者拒絕存取後並再次登入公司入口網站應用程式時，訊息會顯示 **不要再詢問** 核取方塊，使用者可選取該核取方塊讓訊息不再顯示。</br></br>若使用者在允許之後又拒絕存取，則訊息會在使用者註冊後下一次登入公司入口網站應用程式時出現。</br></br>如果使用者稍後決定允許存取，他們可以移至 [設定] > [應用程式] > [公司入口網站] > [權限] > [電話]，然後開啟權限。
-詳細資訊     |  針對您的使用者：[登入公司入口網站](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_signin_cp)  </br></br>針對 IT 專業人員：本表中的資訊亦見於[幫助使用者了解公司入口網站應用程式的訊息](https://technet.microsoft.com/library/dn948527.aspx#BKMK_help_users_understd_msgs)   
-
-訊息文字  |是否允許公司入口網站存取相片、媒體和裝置上的檔案？  
----------|---------
-訊息意義     |  讓裝置將資料記錄檔寫入裝置的 SD 記憶卡中，以使用 USB 纜線來移動資料的記錄檔。   </br></br>**注意：一律不要讓公司入口網站應用程式存取使用者的相片、媒體和檔案！** 由 Google 控制此訊息文字，且無法變更。     
-訊息出現的位置和時機  | 當使用者點選 **傳送資料** 將資料記錄檔傳送至其 IT 系統管理員時，會出現此訊息。|         
-如果使用者允許存取會怎樣  |  記錄檔會複製到 SD 卡中。 |         
-如果使用者拒絕存取會怎樣     | 他們仍然可以傳送資料記錄檔，但記錄檔將不會複製到裝置的 SD 記憶卡中。       </br></br> 使用者拒絕存取後並再次登入公司入口網站應用程式時，訊息會顯示 **不要再詢問** 核取方塊，使用者可選取該核取方塊讓訊息不再顯示。</br></br>若使用者在允許之後又拒絕存取，則訊息會在使用者下一次嘗試傳送記錄檔時出現。</br></br>如果使用者稍後決定允許存取，他們可以移至 [設定] > [應用程式] > [公司入口網站] > [權限] > [儲存體]，然後開啟權限。
-詳細資訊     |  針對您的使用者：[使用電子郵件將診斷資料記錄傳送給 IT 管理員](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_send_diag_logs)  </br></br>針對 IT 專業人員：本表中的資訊亦見於[幫助使用者了解公司入口網站應用程式的訊息](https://technet.microsoft.com/library/dn948527.aspx#BKMK_help_users_understd_msgs)   
-
-
-**iOS 公司入口網站應用程式**
-* 使用者現在可以使用 Microsoft Outlook 或其他電子郵件應用程式，將診斷記錄檔傳送給 IT 系統管理員。 先前只能使用原生應用程式。
-* 已針對 Apple 的裝置註冊方案 (DEP) 和公司註冊的裝置進行支援改善。 如需詳細資訊，請參閱[系統在您嘗試註冊時，要求您識別您的裝置](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_id_your_device)。
-* 在使用者的已註冊裝置清單中，使用者目前正在使用的裝置旁現在會顯示綠色的核取符號。 在加入此核取符號之前，使用者無法得知正在使用哪一個已註冊的裝置。
-
-**Windows 公司入口網站應用程式**
-
-Microsoft 會自動收集有關公司入口網站效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以使用裝置上的使用量資料設定來關閉資料收集，但系統管理員無法控制資料收集，也無法變更此設定中使用者的選取項目。
-
-
-
-## 2015 年 11 月
-### 應用程式管理
-Intune 支援行動應用程式管理 (MAM) 原則，可防止公司資料外洩予消費者應用程式或服務。 在過去，這些原則只會在也註冊了 Intune 行動裝置管理 (MDM) 之裝置上執行的行動應用程式上強制執行。
-
-在本月的更新中，Intune 的 MAM 功能擴及新類別的裝置。 除了向 Intune 註冊的裝置，MAM 原則現在也可以強制施行於︰
-* 受任何其他裝置管理 (MDM) 解決方案管理的裝置
-* 未向任何裝置管理系統註冊的裝置，通常是自備 (BYO) 裝置
-
-如需這些新 MAM 功能的詳細資訊，請參閱以下的部落格文章︰
-* [增強受管理的行動產能](http://blogs.technet.com/b/microsoftintune/archive/2015/11/17/enhancing-managed-mobile-productivity.aspx)
-* [宣告新的 Microsoft Enterprise Mobility 功能](http://blogs.technet.com/b/microsoftintune/archive/2015/11/17/enhancing-managed-mobile-productivity.aspx)
-
-此外，以下是 Intune MAM 功能的一些重點和其他資訊︰
-* 在啟用 Intune 的應用程式中，公司資料和消費者資料是分開的，它們包括 Office 行動應用程式、採用 Intune SDK 的協力廠商應用程式，或 Intune 包裝的企業營運應用程式。
-* 公司資料可以跨公司應用程式共用 (**剪下/複製/貼上**)，同時防止個人應用程式共用公司資料。 如需詳細資訊，請參閱 [MAM 原則如何保護應用程式資料](https://technet.microsoft.com/library/mt627825.aspx)。 [使用 Microsoft Word 應用程式執行公司和個人工作](https://technet.microsoft.com/library/mt627827.aspx)這個範例案例，會示範如何防止個人應用程式共用公司資料。
-* 關鍵資料外洩防護原則如同每個應用程式的 PIN、另存新檔控制項，以及應用程式之間共用的受管理資料。 如需所有原則的清單，請參閱[使用 Microsoft Intune 建立及部署行動應用程式管理原則](https://technet.microsoft.com/library/mt627829.aspx)。
-* Word、Excel、PowerPoint、Outlook、OneNote 和商務用 OneDrive 都擁有這些新功能，可使用/不使用裝置註冊管理。 Apple 市集或 Google Play 商店的標準 Office 應用程式原就內建有資料外洩防護功能，不需要應用程式包裝或側載。
-* 若想要開始使用，請參閱[在 Azure 入口網站中開始使用行動裝置應用程式管理原則](https://technet.microsoft.com/library/mt627830.aspx)。 若要了解如何設定及部署行動應用程式管理原則，請參閱[使用 Microsoft Intune 建立及部署行動應用程式管理原則](https://technet.microsoft.com/library/mt627829.aspx)。
-* 當使用者使用公司認證來驗證應用程式時，就會自動設定資料外洩防護功能。 [與 Microsoft Intune 行動應用程式管理原則相關聯之應用程式的使用者體驗](https://technet.microsoft.com/library/mt627827.aspx)主題提供在 iOS 和 Android 裝置上存取 OneDrive 的範例案例。
-* 適用於 iOS 和 Android 裝置。
-
-[可與 Microsoft Intune 行動應用程式管理原則搭配使用的 Microsoft 應用程式](https://technet.microsoft.com/library/dn708489.aspx)的清單已更新，會顯示最新的應用程式。
-
-### 裝置管理
- **Mac OS X 裝置管理**：您現在可以使用 Intune 註冊及管理 Mac OS X 裝置。 您可以使用 Mac OS X 裝置執行下列作業︰
-* 註冊由 Intune 管理的裝置。 請參閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](https://technet.microsoft.com/library/dn408185.aspx)。
-* 具有一般組態原則的控制裝置設定。 請參閱[Microsoft Intune 的 Mac OS X 設定原則設定](https://technet.microsoft.com/library/mt627823.aspx)。
-* 部署使用 Apple Configurator 建立的 Mac OS X 設定。 請參閱[Microsoft Intune 的 Mac OS X 自訂原則設定](https://technet.microsoft.com/library/mt627820.aspx)。
-* 收集 Mac OS X 裝置的硬體和軟體清查。 請參閱[透過 Microsoft Intune 的清查了解您的裝置](https://technet.microsoft.com/library/jj733634.aspx)。
-* 執行顯示您管理之 Mac OS X 裝置詳細資料的新報表。 請參閱[透過報表來了解 Microsoft Intune 作業](https://technet.microsoft.com/library/dn646977.aspx)。
-
-**適用於 Windows 10 裝置的新 Edge 瀏覽器設定**：新設定已加入 Windows 10 一般設定原則中，可讓您管理 Microsoft Edge 瀏覽器的設定和功能。 請參閱 [Microsoft Intune 的 Windows 10 組態原則設定](https://technet.microsoft.com/library/mt404697.aspx)。
-
-**電子郵件設定檔**：Windows 10 Desktop 和 Windows 10 行動裝置中已加入新的電子郵件設定檔原則。 請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](https://technet.microsoft.com/library/dn646984.aspx)。
-
-**新的相容性原則設定**：相容性原則清單中已加入下列的新安全性和系統原則設定︰
-* 若要確定存取公司資源的 Windows 8.1 或更新裝置已安裝最新的更新，請使用 **需要自動更新** 設定。 您也可以指定要自動安裝的更新類型：安裝標示為重要的所有更新，或是安裝標示為重要或建議的所有更新。 如需相容性原則設定的完整清單，請參閱[管理 Microsoft Intune 的裝置相容性原則](https://technet.microsoft.com/library/dn705843.aspx)。
-* 新的 **裝置從閒置狀態恢復時必須輸入密碼** 設定結合現有的 **在非使用狀態幾分鐘後需要輸入密碼** 設定，可讓您建立需要使用者輸入密碼才能使用閒置一段時間之裝置的相容性設定。
-
-**新的條件式存取原則選項**：您可以將條件式存取原則套用到新的或現有的條件式存取原則的**所有使用者**。 有 Intune 和 Office 365 授權的所有使用者都需要註冊其裝置，如果 Intune 不支援裝置平台，就會封鎖使用 [Active Directory 驗證型登入 (新式驗證)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) 之用戶端應用程式的存取。
-
-您也可以指定將條件式存取原則套用至 **所有平台**。  任何使用 [Active Directory 驗證型登入 (新式驗證)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) 的用戶端應用程式都必須遵守條件式存取原則，如果 Intune 不支援該平台，應用程式就會被封鎖。
-
-### Microsoft 公司入口網站的變更及更新
-本版公司入口網站應用程式的變更如下：
-
-* **Android**：Android 公司入口網站應用程式中加入了歡迎畫面，幫助使用者了解公司入口網站應用程式的用途。 這個畫面是為了減少公司不是 Intune 訂閱者的使用者下載應用程式的次數。
-
-* **iOS**：Intune 現在支援使用[公司入口網站](https://portal.manage.microsoft.com)來註冊 Mac OS X 裝置。 如需指示，請參閱[在 Intune 中註冊您的 Mac OS X 裝置](https://technet.microsoft.com/library/mt598622.aspx)。
-
-* **公司入口網站**：若使用者已在 Intune 中註冊裝置，則可立即使用公司入口網站上的 **重設密碼** 選項來重設密碼。 先前只有 IT 系統管理員可以重設使用者的密碼。 [重設密碼] 選項不受 Windows 8.1 和 Windows RT 裝置支援，且此選項僅會在裝置註冊於行動裝置管理 (MDM) 中或使用 Exchange ActiveSync 的 MDM 中時出現。 如需使用者指示，請參閱[重設密碼](https://technet.microsoft.com/library/mt590895.aspx)。
-
-### 變更為全域管理員授權
-10 月的時候，我們告訴大家，全域系統管理員 (也稱為租用戶系統管理員) 不需要分別擁有 Intune 或 Enterprise Mobility Suite (EMS) 授權，也可以繼續執行日常的管理工作。 但是，如果全域系統管理員想要使用服務，例如註冊自己的裝置、公司裝置或使用 Intune 公司入口網站，他們就需要有 Intune 或 EMS 授權，像任何其他使用者一樣。 以下為其他詳細資料。
-* Intune 公司入口網站是使用者執行下列作業的地方：
-    * 註冊裝置
-    * 檢視裝置的狀態
-    * 下載全域管理員部署到組織的軟體
-    * 尋找全域系統管理員發佈的連結，供其連絡 IT 部門
-
-    [深入了解公司入口網站](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal)和[自訂公司入口網站的方法](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal)。
-* 代表組織註冊購買 Intune 或 EMS 的人員會自動成為其租用戶中第一位全域系統管理員。 自今年秋天開始，Intune 自動指派 Intune 或 EMS 授權給這名第一位全域系統管理員，當成移至 [Office 365 入口網站](http://portal.office.com/)和淘汰 [Intune 帳戶入口網站](http://account.manage.microsoft.com/)的一部分。 任何後來加入的全域管理員不需要分別擁有 Intune 或 EMS 授權，也可以繼續執行日常管理工作。 當他們以一般使用者身分，註冊自己 (或公司) 的裝置或從公司入口網站下載軟體時，就會需要授權，和任何其他使用者一樣。
-* 變更從 2016 年 1 月開始。
-* 對 Microsoft 的合作夥伴而言，這項變更應該不會影響您代表客戶管理服務的能力。 至於使用者工作，使用者必須要有 Intune 或 EMS 授權才能註冊裝置，以及從公司入口網站存取或下載軟體。
-
-如需有關於這項變更的任何問題，歡迎連絡您的 Intune 支援小組︰
-* [Microsoft Intune 支援通道](https://technet.microsoft.com/library/jj839713.aspx)
-* [社群支援](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)
-
-如需一般 Microsoft Intune 的意見反應，包括提出設計變更要求 (DCR) 或 Bug，請造訪 [Intune 使用者意見](https://microsoftintune.uservoice.com/)。
-
-
-### Intune 文件的新內容 -- 2015 年 11 月
-**新內容**
-* [Microsoft Intune 的 Mac OS X 設定原則設定](https://technet.microsoft.com/library/mt627823.aspx)︰如何控制 Mac OS X 裝置的裝置設定和功能。
-* [Microsoft Intune 的 Mac OS X 自訂原則設定](https://technet.microsoft.com/library/mt627820.aspx)︰如何部署使用 Apple Configurator 工具建立的 Mac OS X 裝置設定。
-* [使用 Microsoft Intune 設定資料外洩防護應用程式原則](https://technet.microsoft.com/library/mt627825.aspx)︰包含行動應用程式管理原則支援案例和資料保護原則運作方式的資訊。
-* [在 Azure 入口網站中開始使用行動應用程式管理原則](https://technet.microsoft.com/library/mt627830.aspx)︰開始使用 Azure Preview 入口網站執行行動應用程式管理原則所需要的內容。
-* [使用 Microsoft Intune 建立及部署行動應用程式管理原則](https://technet.microsoft.com/library/mt627829.aspx)︰包含如何在 Azure Preview 入口網站中建立行動應用程式管理原則的逐步解說。
-* [使用 Microsoft Intune 監視行動應用程式管理原則](https://technet.microsoft.com/library/mt627824.aspx)︰如何使用 Azure Preview 入口網站監視行動應用程式管理原則的資訊。
-* [Microsoft Intune 行動應用程式管理原則和 iOS 的開啟位置](https://technet.microsoft.com/library/mt627821.aspx)︰行動應用程式管理原則如何搭配 iOS 開啟位置功能的資訊。
-* [與 Microsoft Intune 行動應用程式管理原則相關聯之應用程式的使用者體驗](https://technet.microsoft.com/library/mt627827.aspx)：使用與行動應用程式管理原則相關聯之應用程式時的使用者體驗。
-* [使用 Microsoft Intune 抹除受管理的公司應用程式資料](https://technet.microsoft.com/library/mt627826.aspx)：如何移除公司應用程式資料。
-
-**更新的內容**
-* [Microsoft Intune 的 Windows 10 組態原則設定](https://technet.microsoft.com/library/mt404697.aspx)：加入了新的 Edge 瀏覽器設定。
-* [使用 Microsoft Intune 設定 iOS 和 Mac 管理](http://technet.microsoft.com/library/dn408185.aspx)︰加入了如何註冊 Mac OS X 裝置的資訊。
-* [透過 Microsoft Intune 的清查了解您的裝置](https://technet.microsoft.com/library/jj733634.aspx)：加入了收集自 Mac OS X 裝置的清查資訊。 此外，也使用所有裝置平台的最新資訊更新了本主題。
-* [透過報表來了解 Microsoft Intune 作業](https://technet.microsoft.com/library/dn646977.aspx)︰加入了兩份新報表的資訊，用以顯示受管理的 Mac OS X 裝置的資訊。
-* [管理 Microsoft Intune 的裝置相容性原則](https://technet.microsoft.com/library/dn705843.aspx)：加入了新相容性原則的資訊，這些原則可在裝置從閒置狀態恢復時，要求自動更新和密碼需求。
-* [使用 Microsoft Intune 管理電子郵件存取](https://technet.microsoft.com/library/dn705841.aspx)：加入了將條件式存取原則套用至所有平台和所有使用者的資訊。
-* [以 Microsoft Intune 管理 SharePoint Online 存取](https://technet.microsoft.com/library/dn705844.aspx)：加入了將條件式存取原則套用至所有平台和所有使用者的資訊。
-
-## 2015 年 10 月
-
-### Exchange 內部部署的條件式存取更新
-**您現在可以在通用 Exchange 規則設定為封鎖或隔離時，允許在 Intune 中註冊的相容裝置存取 Exchange Active Sync 電子郵件。** 到目前為止，若要允許在已註冊及相容的裝置存取電子郵件，預設的通用 Exchange 規則必須設定為 **允許**。
-
-有了這項服務更新，您不再需要這項設定來進行條件式存取。 如果您的 Exchange 環境要求您將預設通用規則設定為 **封鎖/隔離**，請直接核取 Exchange 內部部署條件式存取原則頁面中的 **預設規則覆寫** 核取方塊。 [使用 Microsoft Intune 管理電子郵件存取](https://technet.microsoft.com/library/dn705841.aspx)主題包含規則及所產生之使用者通知的詳細資訊。
-
-**全新的單鍵隔離體驗**：我們已簡化隔離電子郵件體驗，只要按一下就能註冊。 有了這項服務更新，終端使用者只要按一下隔離電子郵件中的單一連結，就可在公司入口網站應用程式內完成註冊程序。
-### 行動裝置與應用程式管理更新
-**Android** 所有 Intune 管理功能現在都支援 Android 6.0 (Marshmallow)，如這篇部落格文章所述：[Microsoft Intune Provides Day 0 Support for Android Marshmallow (Microsoft Intune 提供 Android Marshmallow 的 0 天支援)](http://blogs.technet.com/b/microsoftintune/archive/2015/10/09/microsoft-intune-to-provide-day-0-support-for-android-marshmallow.aspx)。
-
-**iOS** 您無法再對執行 iOS 7.1 之前版本的 iOS 裝置，建立新的應用程式部署。 執行 iOS 7.1 之前版本之裝置上的任何現有應用程式部署將會繼續運作，並由 Intune 管理。
-
-**Windows 10** Intune 現在可部署使用 **Windows 應用程式封裝** 軟體安裝程式類型的 Windows 10 通用應用程式。 如需詳細資訊和需求，請參閱[開始使用 Microsoft Intune 部署應用程式](http://technet.microsoft.com/en-US/library/dn646955.aspx)。
-
-
-### 變更並新新 Microsoft 公司入口網站應用程式
-本版之公司入口網站應用程式的變更如下：公司入口網站應用程式已加入 **iOS** 新增按鈕，讓使用者能夠更輕鬆地將診斷記錄檔傳送給 IT 系統管理員：
-
-|按鈕名稱|出現的位置|
-|------------|---------------|
-|報表|錯誤警示訊息|
-|傳送診斷報表|關於公司入口網站應用程式的畫面|
-
 
 >[!div class="step-by-step"]
 
->[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
+>[&larr; **Intune 的新功能**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

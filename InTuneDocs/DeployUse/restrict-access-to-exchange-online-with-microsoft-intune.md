@@ -175,7 +175,7 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 
 ### 步驟 4：設定條件式存取原則
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [Exchange Online 原則]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [Exchange Online 原則]。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面](../media/mdm-ca-exo-policy-configuration.png)
 
 2.  在 **Exchange Online 原則** 頁面上，選取 **啟用 Exchange Online 的條件式存取原則**。

@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
 
 下列一系列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
-## **員工攜帶自己的裝置，還是由您的組織提供裝置？**
+## **員工攜帶自己的裝置 (BYOD)，還是由您的組織提供裝置 (COD)？**
 
 > [!div class="button"]
-[BYOD 註冊 >](choose-how-to-enroll-devices2.md)   [COD 註冊 >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)   [ >](choose-how-to-enroll-devices3.md)
 
 - **使用者擁有的裝置** - "BYOD” (攜帶您自己的裝置) 註冊 - 使用者可以在裝置上安裝 Intune 公司入口網站應用程式然後進行註冊，以存取公司資源 (例如電子郵件、公司入口網站、公司資料和支援)。  
 
