@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 |**[BYOD](#BYOD)** | 否|    是 |   否 |
 |**[DEM](#DEM)**|   否 |否 |否  |
 
-**公司裝置的註冊方法**
+**裝置的註冊方法**
 
 ### BYOD
 「攜帶您自己的裝置。」 使用者安裝公司入口網站應用程式，並註冊其裝置。 使用公司入口網站註冊裝置，將工作場所加入裝置。 需要有 Apple ID，才能使用公司入口網站註冊 iOS 裝置。 BYOD 不需要額外設定公司裝置。 請參閱[設定裝置管理](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)的步驟。 ([返回表格](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

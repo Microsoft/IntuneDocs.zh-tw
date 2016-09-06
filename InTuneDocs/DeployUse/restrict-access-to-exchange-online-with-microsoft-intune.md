@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 >[!IMPORTANT]
 >透過使用新式驗證的應用程式來設定電腦和 Windows 10 行動裝置版的條件式存取，目前未提供給所有 Intune 客戶使用。 如果您已經在使用這些功能，您不需要採取任何動作。 您可以繼續使用它們。
 
->如果您尚未針對使用新式驗證的應用程式建立電腦或 Windows 10 行動裝置版的條件式存取原則，但想要這樣做，您必須提交要求。  您可以在 [Microsoft Connect 網站](http://go.microsoft.com/fwlink/?LinkId=761472)了解已知問題及如何存取這項功能的詳細資訊。
+>如果您尚未使用新式驗證針對應用程式建立電腦或 Windows 10 行動裝置版的條件式存取原則，而您想要這麼做，請註冊 Azure Active Directory 公開預覽，其中包括裝置型條件式存取，以存取使用 Intune 管理的裝置或已加入網域的 Windows 電腦。 若要深入了解，請閱讀[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)。  
 
 在設定條件式存取**之前**，您必須：
 
@@ -196,7 +196,7 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
         * 不支援例如 Mac OS 的平台。  不過，使用來自這些平台之新式驗證的應用程式，仍然會被封鎖。
 
         >[!TIP]
-           如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在 [Microsoft Connect 網站](http://go.microsoft.com/fwlink/?LinkId=761472)了解已知問題及如何存取這項功能的詳細資訊。
+           如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中找到關於如何存取此功能的詳細資訊。
 
     -   **特定平台**
 
@@ -260,6 +260,6 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

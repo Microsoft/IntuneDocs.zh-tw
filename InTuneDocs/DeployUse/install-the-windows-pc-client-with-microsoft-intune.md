@@ -1,5 +1,5 @@
 ---
-title: "安裝 Windows 電腦用戶端 | Microsoft Intune"
+title: "安裝電腦用戶端軟體 | Microsoft Intune"
 description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: NathBarn
@@ -13,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
+ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
+ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
 
 ---
@@ -139,6 +139,6 @@ ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

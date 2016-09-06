@@ -9,7 +9,7 @@
 ### [公司入口網站](microsoft-intune-company-portal.md)
 ### [與 Microsoft 雲端服務和產品的整合](integration-with-cloud-services.md)
 ### [網路頻寬使用量](network-bandwidth-use.md)
-### [網域名稱](domain-names-for-microsoft-intune.md)
+### [自訂網域名稱](domain-names-for-microsoft-intune.md)
 
 ## [Intune 快速入門指南](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [登入 Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -23,8 +23,8 @@
 ### [設定後工作](post-configuration-tasks.md)
 
 ## [選擇如何管理裝置](choose-how-to-manage-devices.md)
-### [行動裝置管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows 電腦管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [已註冊的裝置管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune 電腦軟體用戶端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [專案範圍](project-scope.md)
@@ -39,6 +39,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

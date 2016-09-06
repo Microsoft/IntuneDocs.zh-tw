@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51ab5d486e7e23d2527f9cb95f105e7916cdb27
-ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
+ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
+ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 ### iOS 9.3 隱藏與顯示的應用程式
-針對執行 iOS 9.3 或更新版本的裝置，您可以在 iOS 一般設定原則中使用隱藏與顯示的應用程式清單，以執行下列動作：
+針對執行 iOS 9.3 或更新版本的受監督裝置，您可以在 iOS 一般設定原則中使用隱藏與顯示的應用程式清單，以執行下列動作：
 - 指定對使用者隱藏的應用程式清單。 使用者無法檢視或啟動這些應用程式。
 - 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
 
@@ -102,6 +102,13 @@ Intune 的新客戶將會**比目前的租用戶更快看見某些安全性群�
 ### 針對 Android 公司入口網站在新增「通知」
 我們將在 9 月針對 Android 推出公司入口網站的更新，該更新將會在首頁上推出新的**通知**圖示。 點選此圖示將會存取「通知」頁面，並為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 如果您也使用 iOS 公司入口網站應用程式，您應該已能見到該通知體驗。 透過推出「通知」頁面，只要該裝置已經註冊，您便不會在每次啟動或繼續 Android 版的公司入口網站時看見「公司存取設定」頁面。 我們了解有許多使用者已建立終端使用者指南，並樂於在該指南/螢幕擷取畫面可能需要更新時提前收到通知。 請更新您的文件以反映即將推出的體驗變更。 尋找更新的螢幕擷取畫面，請移至：https://aka.ms/androidcpupdate。  
 
+### iOS 使用者取得應用程式方式的改進
+下列對於 iOS 版「公司入口網站」應用程式中應用程式磚的變更將於 9 月進行，這會將使用者指向單一位置 (公司入口網站) 中的不同檢視，以取得他們所有的應用程式。 目前，Apple 限制禁止「公司入口網站」應用程式中列出企業營運應用程式及受管理的應用程式市集應用程式，並且要求使用者瀏覽不同的檢視才能找到所有的應用程式。
+
+- [公司應用程式] 磚目前會指向公司入口網站 [所有] 索引標籤中所有應用程式的清單，而它會繼續以相同方式運作。 磚的名稱將會變更為 [所有應用程式]。
+- [其他應用程式] 磚目前會指向「公司入口網站」應用程式中的檢視，其中會列出 Apple 允許在公司入口網站應用程式中顯示的所有應用程式。 磚的名稱將會變更為 [精選應用程式]，點選磚會將使用者移至公司入口網站的 [精選] 索引標籤。
+-  [類別] 磚目前會指向公司入口網站應用程式中列出應用程式類別的檢視。 磚的名稱不會變更，但它現在會指向公司入口網站的 [類別] 索引標籤。 您可以在[這裡](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)找到更新的螢幕擷取畫面。
+<!---TFS 1317133--->
 
 ### 雲端藍圖
 請參閱 [Cloud Platform roadmap (雲端平台藍圖)](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)，隨時關注 Intune 的最新發展。
@@ -146,6 +153,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
