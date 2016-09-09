@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -29,37 +29,41 @@ Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中
 ### 步驟 1︰管理憑證
 1. 在 Azure Active Directory (Azure AD) 主控台中，匯出憑證。
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. 以系統管理員身分執行 Internet Explorer，並登入 Azure AD 主控台。
+   a. 以系統管理員身分執行 Internet Explorer，並登入 Azure AD 主控台。
 
-    b。 在網址列中選擇鎖定圖示，然後選擇 [檢視憑證]。
+   b。 在網址列中選擇鎖定圖示，然後選擇 [檢視憑證]。
 
-    c. 在憑證內容的 [詳細資料] 索引標籤，選擇 [複製到檔案]。
+   c. 在憑證內容的 [詳細資料] 索引標籤，選擇 [複製到檔案]。
 
-    d. 在 [憑證匯出精靈] 的 [歡迎使用] 頁面上，選擇 [下一步]。
+   d. 在 [憑證匯出精靈] 的 [歡迎使用] 頁面上，選擇 [下一步]。
 
-    e. 在 [匯出檔案格式] 頁面上，保留預設值 [DER 編碼二進位 x.509 (.CER)]，然後選擇 [下一步]。  
+   e. 在 [匯出檔案格式] 頁面上，保留預設值 [DER 編碼二進位 x.509 (.CER)]，然後選擇 [下一步]。  
 
-    f. 在 [要匯出的檔案] 頁面上，選擇 [瀏覽] 選取儲存檔案的位置，並提供檔案名稱。 雖然看似您選取要匯出的檔案，但您實際上是為要儲存匯出憑證的檔案命名。 選擇 [下一步] &gt; [完成]。
+   f. 在 [要匯出的檔案] 頁面上，選擇 [瀏覽] 選取儲存檔案的位置，並提供檔案名稱。 雖然看似您選取要匯出的檔案，但您實際上是為要儲存匯出憑證的檔案命名。 選擇 [下一步] &gt; [完成]。
 
-    #### Safari
+#### Safari
 
-    a. 登入 Azure AD 主控台。
+ a. 登入 Azure AD 主控台。
 
-    b。 選擇鎖定圖示 &gt; [更多資訊]。
+b。 選擇鎖定圖示 &gt; [更多資訊]。
 
-    c. 選擇 [檢視憑證] &gt; [詳細資料]。
+   c. 選擇 [檢視憑證] &gt; [詳細資料]。
 
-    d. 選擇憑證，然後選擇 [匯出]。  
+   d. 選擇憑證，然後選擇 [匯出]。  
 
-    > [!IMPORTANT]
-    > 檢查憑證的到期日，因為您必須在此憑證到期時匯出並匯入新的憑證。
+> [!IMPORTANT]
+>
+> 檢查憑證的到期日，因為您必須在此憑證到期時匯出並匯入新的憑證。
 
 
 2. 從 ISE 主控台內，將 Intune 憑證 (您已匯出的檔案) 匯入到 [受信任的憑證] 存放區。
+
+
 ### 從 ISE 取得自我簽署憑證 
+
 1.  在 ISE 主控台中，請移至 [管理] > [憑證] > [系統憑證] > [產生自我簽署憑證]。  
 2.       匯出自我簽署憑證。
 3. 在文字編輯器中，編輯匯出的憑證：[註解]：<> 我不會在這兩個陳述式結尾處放句點，我認為可能會造成混淆。
@@ -146,6 +150,6 @@ Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 
