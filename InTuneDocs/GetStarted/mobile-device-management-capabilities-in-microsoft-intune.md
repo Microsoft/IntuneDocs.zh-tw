@@ -1,10 +1,10 @@
 ---
-title: "行動裝置管理功能 | Microsoft Intune"
-description: "閱讀本主題以了解 Intune 可以協助您管理您向服務註冊之行動裝置的方式。"
+title: "已註冊的裝置管理功能 | Microsoft Intune"
+description: "閱讀本主題以了解 Intune 如何協助您管理您註冊的裝置。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Microsoft Intune 的行動裝置管理功能
+# Microsoft Intune 的已註冊裝置管理功能
 
 Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些裝置。 您可以自行註冊某些裝置類型，或者使用者可以使用「公司入口網站」應用程式進行註冊。 這也可讓它們執行例如瀏覽及安裝應用程式等作業，確保他們的裝置與公司原則相容，並連絡其 IT 支援人員。
 
@@ -70,6 +70,6 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

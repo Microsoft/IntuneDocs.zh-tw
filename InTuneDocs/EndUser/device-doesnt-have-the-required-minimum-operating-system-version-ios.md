@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/30/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e0c0955c58ef8d19c5f710b7c788d7db677043df
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
 
 
 ---
@@ -27,11 +27,10 @@ ms.openlocfilehash: e0c0955c58ef8d19c5f710b7c788d7db677043df
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO2-->
 
 

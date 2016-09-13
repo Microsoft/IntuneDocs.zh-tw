@@ -10,17 +10,17 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
+ms.sourcegitcommit: 96e8db7415e48a77f3e789aecddebe407e9a4b00
+ms.openlocfilehash: 37c5809e86d466717268f6fdec0c22f6bad2ac61
 
 
 ---
 
 # 密碼不符合 IT 系統管理員需求
 
-您用來存取公司或學校資源的密碼，不符合一或多項 IT 系統管理員為裝置設定的需求。 根據 IT 系統管理員所建立的原則，您可能會有下列一或多種問題︰
+您用來存取公司或學校資源的密碼，不符合一或多項 IT 系統管理員為裝置設定的需求。 根據 IT 系統管理員建立的原則，您可能會發生下列一或多種問題：
 
 - 密碼未包含複雜字元
 - 密碼太過簡單，不夠安全
@@ -30,7 +30,7 @@ ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
 - 最近使用過的密碼
 - 密碼不夠複雜，無法符合需求
 
-如需設定 PIN 或密碼或者您可使用裝置執行之其他工作的資訊，請使用符合您所擁有之裝置類型的連結：
+如需設定 PIN 或密碼的資訊，或您可使用裝置執行哪些其他工作的資訊，請使用和您擁有的裝置類型相符的連結：
 
 - [設定 Android 裝置 PIN 或密碼](set-your-pin-or-password-android.md)
 - [設定或變更 iOS 裝置密碼](set-or-change-your-passcode-ios.md)
@@ -40,6 +40,6 @@ ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
