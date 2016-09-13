@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # 從 Intune 管理中淘汰裝置
 
-無論是公司所擁有或個人的裝置，總有需要從 Intune 管理中移除受管理裝置的一刻。 裝置的淘汰相當簡單。 您可以替作為行動裝置而管理的裝置上執行選擇性抹除或完整抹除。 您也可以淘汰使用 Intune 用戶端軟體管理的電腦。
+無論是公司所擁有或個人的裝置，總有需要從 Intune 管理中移除受管理裝置的一刻。 裝置可能需要淘汰有許多原因：
+
+-   使用者有計畫地離開公司 (在「受管理」狀況下離開)
+-   使用者突然離開 (遭到解雇、離職等等)。
+-   裝置遺失
+-   裝置再利用 (移至另一位使用者，重複使用於不同用途等等)
+
+您可以在作為行動裝置管理的裝置上執行選擇性抹除或完整抹除，或鎖定裝置並重設其密碼。 藉由抹除裝置，您可以釋出使用者的訂閱以新增其他裝置。 您也可以淘汰使用 Intune 用戶端軟體管理的電腦。
 
 ## 從裝置抹除資料和應用程式
 選擇性抹除和完整抹除都是經由移除其原則和公司入口網站，而從 Intune 管理中移除裝置，這表示裝置不再有登入公司資源所需的認證，例如 Microsoft SharePoint、電子郵件或 Office 365。
@@ -34,7 +41,7 @@ ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
 
 1.  使用您組織的認證登入 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或 [https://portal.office.com](https://portal.office.com)，然後選擇 **[Admin centers] (系統管理員中心)** &gt; **[Azure AD]**。
 
-2.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory] (註冊免費的 Azure Active Directory) 訂閱連結)。
+2.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。
 
 4.  選取 [Active Directory]  ，然後選取您的組織。
 
@@ -62,6 +69,6 @@ ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
