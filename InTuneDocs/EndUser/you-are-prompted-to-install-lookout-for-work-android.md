@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/27/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,14 +12,14 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7be786dafa5b4707688bacd1f2b4790db91bad6c
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3ac185bae98948ab756abdc2a2bb22672b362f90
 
 
 ---
 
 # 系統提示您安裝 Lookout for Work
-注意︰這項功能已加入 Android 公司入口網站應用程式中，不過它在 2016 年 8 月前無法運作。
+注意︰這項功能已新增至 Android 公司入口網站應用程式中，不過它在 2016 年 9 月前無法運作。
 
 Lookout for Work 應用程式會檢查風險和安全性威脅，以協助確保您的裝置安全。 當您看到通知，指出您必須安裝 Lookout for Work 時，這表示您的 IT 系統管理員已設定原則，要求您從 Play 商店下載並安裝應用程式。
 
@@ -30,11 +30,10 @@ Lookout for Work 應用程式會檢查風險和安全性威脅，以協助確保
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

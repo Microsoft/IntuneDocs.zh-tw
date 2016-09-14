@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # 使用公司入口網站手動同步您的裝置
 
-如果您的應用程式安裝所花的時間太長，您可以嘗試手動同步處理您的裝置，這樣可協助加速安裝。 請使用以下符合您所用裝置類型或 Windows 版本的指示。 同步處理裝置以加速應用程式安裝只適用於下列版本。
+如果您的應用程式安裝或其他某項工作所花費的時間太長，您可以嘗試手動同步處理您的裝置，這樣可協助加速安裝或工作。 請使用以下符合您所用裝置的指示。 
+
+同步處理功能僅適用於下列版本。
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "一般 Windows 電腦管理工作 | Microsoft Intune"
-description: "請檢閱本主題中的工作，以了解如何管理執行 Intune 電腦用戶端軟體的電腦。"
+description: "請檢閱本主題中的工作，以瞭解如何管理執行 Intune 軟體用戶端的 Windows 電腦。"
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# 使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作
-請檢閱本主題中的工作，以了解如何管理執行 Intune 電腦用戶端軟體的電腦。 如果您尚未在電腦上安裝用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
+# 使用 Intune 軟體用戶端的一般 Windows 電腦管理工作
+請檢閱本主題中的工作，以了解如何管理執行 Intune 軟體用戶端的電腦。 如果您尚未在電腦上安裝用戶端，請參閱 [Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 
 ## 使用原則來簡化電腦管理
-### 管理 Windows 防火牆
-原則可簡化受管理電腦上的 Windows 防火牆設定管理。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+
+您可以使用 Intune 的**電腦管理**原則來管理執行 Intune 軟體用戶端的 Windoes 電腦。
+
+![Windows 電腦的原則範本](../media/pc_policy_template.png)
 
 ### 管理 Microsoft Intune Center
-Microsoft Intune Center 可讓使用者︰
+使用者會將 Intune 軟體用戶端視為 **Microsoft Intune Center**。 Microsoft Intune Center 可讓使用者︰
 
 -   從公司入口網站取得應用程式。
 
@@ -49,11 +51,14 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 |**網站 URL**|您的支援網站的 URL。<br /><br />最大長度：150 個字元|
 |**附註**|使用者看到的附註。<br /><br />最大長度：120 個字元|
 
-### 管理軟體更新設定
-請使用原則來設定受管理電腦用來檢查和下載 Microsoft 和協力廠商提供之軟體更新的設定。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
+## 軟體更新設定
+請使用原則來設定受管理電腦用來檢查和下載 Microsoft 和協力廠商提供之軟體更新的設定。 這些更新不包括作業系統升級 (亦即 從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 
-### 管理 Endpoint Protection 設定
+### Endpoint Protection 設定
 請使用原則來設定您隨後部署到受管理電腦的 Endpoint Protection 設定。 這包括掃描排程、偵測到惡意程式碼時採取的動作以及更多設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+
+## Windows 防火牆設定
+原則可簡化受管理電腦上的 Windows 防火牆設定管理。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
 ## 檢視硬體與軟體清查
 Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列程序中的資訊，瞭解如何建立：
@@ -113,17 +118,17 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 2.  選取您要淘汰的裝置，然後選擇 [淘汰/抹除]。
 
-若要將電腦重新註冊到 Intune 中，請遵循[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)主題中的資訊，在電腦上重新安裝用戶端軟體。
+若要將電腦重新註冊到 Intune 中，請使用[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)，在電腦上重新安裝軟體用戶端。
 
 如果電腦無法連線到 Intune，[儀表板] 工作區中會顯示訊息。
 
 淘汰電腦時：
 
--   它會從 Intune 管理及清查移除，而與該電腦相關聯的授權將可重複使用。 [淘汰/抹除] 會移除 Intune 軟體用戶端，但不會從電腦移除應用程式或資料。
+-   它會從 Intune 管理及清查移除，而與該電腦相關聯的授權將可重複使用。 [淘汰/抹除] 會移除 Intune 軟體用戶端，但不會從電腦移除應用程式或資料。 這項淘汰作業不會在電腦上執行完整抹除。
 
 -   其狀態不再顯示在 Intune 主控台中。
 
--   Intune 會從電腦移除用戶端軟體。 如果電腦未連線到 Intune 服務，則會在下次連線時移除用戶端軟體。
+-   Intune 會從電腦移除軟體用戶端。 如果電腦未連線到 Intune 服務，則會在下次連線時移除軟體用戶端。
 
 -   Microsoft Intune Endpoint Protection 會從電腦移除。 如果電腦已安裝其他 Endpoint Protection 應用程式且已將它停用，則在移除 Microsoft Intune Endpoint Protection 之後，該應用程式可以重新啟用，以確保您的電腦受到保護。
 
@@ -160,9 +165,9 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 > [!TIP]
 > 如果您想要限制使用者將自己連結到電腦的能力，請啟用 **Microsoft Intune 代理程式設定** 原則中的選項 [限制使用者將自己連結到電腦的能力]。
 
-## 要求並提供使用 Intune 用戶端軟體之 Windows 電腦的遠端協助
+## 對 Windows 電腦要求及提供遠端協助
 
-Microsoft Intune 可以使用 [TeamViewer](https://www.teamviewer.com) 軟體，讓執行 Intune 用戶端軟體之電腦的使用者向您取得遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。
+Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓執行 Intune 軟體用戶端的電腦使用者向您取得遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。
 這項功能會取代 Intune 中的現有 Windows 遠端協助功能。
 
 
@@ -211,6 +216,6 @@ Microsoft Intune 可以使用 [TeamViewer](https://www.teamviewer.com) 軟體，
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

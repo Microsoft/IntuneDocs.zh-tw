@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰ 
-- 公司入口網站應用程式安裝和 Intune 註冊 
+針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作必需遵循的步驟，這些工作會按照下列類別分組︰
+- 公司入口網站應用程式安裝和 Intune 註冊
 - 註冊後的管理工作
 - 相容性問題
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

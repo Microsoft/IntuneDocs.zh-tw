@@ -4,7 +4,7 @@ description: "您可以使用本主題中的資訊，協助您決定您要用來
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Microsoft Intune 原則參考
+# Microsoft Intune 設定原則參考
 
 您可以使用本主題中的資訊，協助您決定用來管理裝置時所需的 Microsoft Intune 設定原則。
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
 |---------------|------------------------|
 |**自訂組態 (Windows 10 Desktop/行動裝置版和更新版本)**|部署可以用來控制裝置功能的 OMA URI 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br />    如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 10 原則設定](windows-10-policy-settings-in-microsoft-intune.md)。|
 |**自訂組態 (Windows Phone 8.1 和更新版本)**|部署可以用來控制裝置功能的 OMA URI 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows Phone 8.1 原則設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)。|
-|**版本升級原則 (Windows 10 Desktop 和更新版本)**<br><br>**版本升級原則 (Windows 10 Holographic 和更新版本)**|設定及部署內含可用來將 Windows 10 裝置更新為較新版本之授權或產品金鑰資訊的原則。<br><br>如需詳細資訊，請參閱 [Microsoft Intune 的版本升級原則設定](edition-upgrade-policy-settings-in-microsoft-intune.md)。|  
+|**版本升級原則 (Windows 10 Desktop 和更新版本)**<br><br>**版本升級原則 (Windows 10 Holographic 和更新版本)**<br><br>**版本升級原則 (Windows 10 行動裝置版及更新版本)**|設定及部署內含可用來將 Windows 10 裝置更新為較新版本之授權或產品金鑰資訊的原則。<br><br>如需詳細資訊，請參閱 [Microsoft Intune 的版本升級原則設定](edition-upgrade-policy-settings-in-microsoft-intune.md)。|  
 |**電子郵件設定檔 (Windows Phone 8 和更新版本)**<br /><br />**電子郵件設定檔 (Windows 10 Desktop/行動裝置版及更新版本)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
 |**一般組態 (Windows 10 Desktop/行動裝置版和更新版本)**|為已經註冊的 Windows 10 Desktop 和行動裝置版裝置設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 10 原則設定](windows-10-policy-settings-in-microsoft-intune.md)。|
 |**一般設定 (Windows 10 團隊版及更新版本)**|為已註冊的 Windows 10 團隊版裝置 (例如 Surface Hub 裝置) 設定裝置安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 團隊版設定原則設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)。|
@@ -104,25 +104,7 @@ ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
 > [!IMPORTANT]
 Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**，而這些原則全都包含可供您使用的最新設定。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作，但您應及早規劃改用新的設定原則。<br />如需詳細資訊，請參閱 [Microsoft Intune 的行動裝置安全性原則設定](mobile-device-security-policy-settings-in-microsoft-intune.md)。
 
-## 條件存取與相容性原則
-
-### 條件式存取
-
-|原則名稱|當您想要執行此作業時使用|
-|---------------|------------------------|
-|**Exchange Online 原則**<br /><br />**Exchange 內部部署原則**|管理從裝置對 Microsoft Exchange 電子郵件的存取，該裝置未由 Intune 管理或與您建立的相容性原則不相容。<br /><br />如需詳細資訊，請參閱[使用 Intune 限制 Exchange Online 和新版 Exchange Online Dedicated 環境的電子郵件存取](restrict-access-to-exchange-online-with-microsoft-intune.md)。|
-|**SharePoint Online 原則**|管理從裝置對 SharePoint Online 的存取，該裝置未由 Intune 管理或與您建立的相容性原則不相容。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 限制存取 SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)。|
-|**商務用 Skype**|管理從裝置對商務用 Skype 的存取，該裝置未由 Intune 管理或與您建立的相容性原則不相容。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 限制存取商務用 Skype](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)。|
-> [!NOTE]
-> 您不應部署條件式存取原則給使用者與裝置， 而應設定必要的原則，並將其套用到原則內鎖定的所有群組。
-
-### 相容性原則
-
-|原則名稱|當您想要執行此作業時使用|
-|---------------|------------------------|
-|**相容性原則**|定義裝置的相容性層級，然後報告不相容的裝置。 這些原則會與條件式存取搭配使用，以協助您評估應封鎖哪些裝置存取服務。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的裝置相容性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)。|
-
-## Windows 電腦管理
+## 受 Intune 軟體用戶端管理的 Windows 電腦適用原則
 
 |原則名稱|當您想要執行此作業時使用|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

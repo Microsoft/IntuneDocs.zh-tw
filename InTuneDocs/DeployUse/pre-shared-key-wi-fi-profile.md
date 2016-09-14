@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,14 +22,14 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # 使用預先共用金鑰建立 Wi-Fi 設定檔
 以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
-注意：
+> [!NOTE]
 -   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
 - 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
 -   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
 -  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.  若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂組態]，而不是 Wi-Fi 設定檔。
+1.  若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂設定]，而不是 Wi-Fi 設定檔。
 
 2.  提供名稱和描述。
 3.  加入新的 OMA-URI 設定︰
@@ -40,18 +40,27 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
    c.   **資料類型**︰設為「字串(XML)」
 
-   d.   **OMA-URI**： 
-        
-- **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI**：
 
-注意︰開頭務必包含句點字元。
+    - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID 是您要建立原則的 SSID。 例如，
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+開頭務必包含點號字元。
 
-  e.    值欄位︰在這裡貼上 XML 程式碼。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
+    SSID 是您要建立原則的 SSID。 例如，
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **值欄位**是貼上 XML 程式碼的位置。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
+4. 選擇 [確定]，然後儲存並部署原則。
+
+    > [!NOTE]
+此原則只能部署到使用者群組。
+
+每個裝置下一次簽入時，將套用此原則，並將裝置上建立 Wi-Fi 設定檔。 裝置可以自動連線到網路。
+## Android 或 Windows Wi-Fi 設定檔
+
+Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,25 +182,23 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
       </MSM>
     </WLANProfile>
 
-4.  按一下 [確定]，然後儲存並部署原則。
-附註。 此原則只能部署到使用者群組
-
-每個裝置下一次簽入時，將套用此原則，並將裝置上建立 Wi-Fi 設定檔。 裝置可以自動連線到網路。
 ## 從現有的 Wi-Fi 連線建立 XML 檔案
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案：
-1.     在連線到或最近已連線到無線網路的電腦上，開啟下列資料夾 ︰C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。 最好使用未連線至許多無線網路的電腦，因為您必須搜尋每個設定檔才能找到正確檔案。
+1. 在連線到或最近已連線到無線網路的電腦上，開啟下列資料夾 ︰C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。
+
+    最好使用未連線至許多無線網路的電腦，因為您必須搜尋每個設定檔才能找到正確檔案。
 3.     搜尋 XML 檔案，找出名稱正確的檔案。
 4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
 
 ## 部署原則
 
-1.  在 [原則]  工作區中，選取您要部署的原則，然後按一下 [管理部署] 。
+1.  在 [原則] 工作區中，選取您要部署的原則，然後選擇 [管理部署]。
 
 2.  在 [管理部署]  對話方塊中：
 
-    -   **部署原則** - 選取您要部署原則的一或多個群組，然後按一下 [新增] &gt; [確定]。
+    -   **部署原則** - 選取您要部署原則的一或多個群組，然後選擇 [新增] &gt; [確定]。
 
-    -   **關閉對話方塊但不加以部署** - 按一下 [取消]。
+    -   **若要關閉對話方塊但不加以部署** - 選擇 [取消]。
 
 當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
@@ -200,6 +207,6 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
