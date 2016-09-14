@@ -4,7 +4,7 @@ description: "列出 Intune 可協助的六項最常見工作"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 9cb6a1e28e36a972a14cb39c12c3a539f4425c71
 
 
 ---
@@ -26,15 +26,19 @@ ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
 >[!NOTE]
 >您是否想要了解 Microsoft IT 如何使用 Intune，讓 Microsoft 員工在其行動裝置上存取公司資源，同時保護公司資料？ [閱讀此技術性案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)，詳細查看 Microsoft IT 如何使用 Intune 與其他服務來管理身分識別、裝置、應用程式和資料。  
 
-## 保護內部部署電子郵件和資料，以透過行動裝置安全存取
-大部分企業行動力策略計劃一開始都是讓員工，在行動裝置上使用網際網路安全地存取電子郵件。 許多組織仍然有內部部署資料和應用程式伺服器，例如裝載在其公司網路上的 Microsoft Exchange。 Intune 和 Enterprise Mobility Suite (EMS) 為 Exchange Server 提供唯一的整合[條件式存取解決方案](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)，確保在使用 Intune 註冊裝置前沒有行動應用程式能夠存取電子郵件，且不需要將其他閘道電腦部署到公司網路的邊緣即可執行所有工作！
+>[!IMPORTANT]
+>確定行動裝置為最新狀態<br>
+>我們針對 iOS 裝置上最近的 "Trident" 惡意程式碼攻擊，新發行了一篇部落格文章：[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (確定使用 Microsoft Intune 的行動裝置為最新狀態)，說明 Intune 所提供的各種方法，如何協助您保護裝置安全及保持裝置為最新狀態。
 
-除了電子郵件，Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。  這通常是使用 [Intune 管理的憑證](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles)完成，適用於在周邊網路結合標準 VPN 閘道或 Proxy 的存取控制，例如 Microsoft Azure AD 應用程式 Proxy。  在這些情況下，存取公司資料的唯一方法就是註冊裝置進行管理。  註冊後，管理系統可確保存取公司資料的裝置符合您的政策。  此外，Intune 的 [App Wrapping Tool 與 App SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) 可用來包含企業營運應用程式中的存取資料，讓它無法將公司資料傳遞至取用者應用程式或服務。
+## 保護內部部署電子郵件和資料，以透過行動裝置安全存取
+大部分企業行動力策略計劃一開始都是讓員工，在行動裝置上使用網際網路安全地存取電子郵件。 許多組織仍然有內部部署資料和應用程式伺服器，例如裝載在其公司網路上的 Microsoft Exchange。 Intune 與 Enterprise Mobility Suite + Security (EMS) 解決方案專為 Exchange Server 加入了[條件式存取](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)，確保只有已在 Intune 註冊的裝置，其行動裝置 App 才能存取電子郵件。您完全無須另外在您的公司網路邊界部署其他閘道！
+
+除了電子郵件，Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。  為達成此目的，通常會並用 [Intune 管理的憑證](/intune/deploy-use/secure-resource-access-with-certificate-profiles) (存取控制) 與周邊網路的標準 VPN 閘道或 Proxy (例如 Microsoft Azure AD 應用程式 Proxy)。  在這些情況下，存取公司資料的唯一方法就是註冊裝置進行管理。  註冊後，管理系統可確保存取公司資料的裝置符合您的政策。  此外，Intune 的 [App Wrapping Tool 與 App SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) 可用來包含企業營運應用程式中的存取資料，讓它無法將公司資料傳遞至取用者應用程式或服務。
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
 ## 保護 Office 365 電子郵件和資料，以透過行動裝置安全存取
-您可以更容易，您的使用者也以更順暢地在 Office 365 中保護公司資料 (電子郵件、文件、立即訊息、連絡人)。 Intune 和 Enterprise Mobility Suite 提供唯一的整合條件式存取解決方案，以確保沒有任何使用者、應用程式或裝置可以存取 Office 365 資料，除非它們符合您公司的相容性需求 (執行[多重要素驗證](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)、註冊至 Intune、使用受管理應用程式、支援的 OS 版本、裝置 PIN、低使用者風險設定檔等)。 在其各自的應用程式存放區中的 Office 行動應用程式會準備好開始使用資料內含項目原則 (可透過 Intune 設定)，可讓您避免與未受 IT 管理的應用程式 (例如原生電子郵件應用程式) 和儲存位置 (例如 Dropbox) 共用資料。  這項功能內建於 Office 365 和 EMS。  您不需要部署額外的基礎結構即可取得此值。
+您可以更容易，您的使用者也以更順暢地在 Office 365 中保護公司資料 (電子郵件、文件、立即訊息、連絡人)。 Intune 與 Enterprise Mobility Suite + Security 解決方案特別加入了條件式存取功能，確保只有符合您公司之相容性需求 (已執行[多重要素驗證](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)、已在 Intune 註冊，並使用受管理的 App、受支援的 OS 版本、裝置 PIN 碼、低使用者風險設定檔等等) 的使用者、應用程式或裝置，才能存取 Office 365 資料。 在其各自的應用程式存放區中的 Office 行動應用程式會準備好開始使用資料內含項目原則 (可透過 Intune 設定)，可讓您避免與未受 IT 管理的應用程式 (例如原生電子郵件應用程式) 和儲存位置 (例如 Dropbox) 共用資料。  這項功能內建於 Office 365 和 EMS。  您不需要部署額外的基礎結構即可取得此值。
 
 常見的 Office 365 部署作法是要求註冊裝置加以管理，但前題是它們需要使用公司應用程式/憑證/Wi-Fi/VPN 組態以完整佈建，這通常是公司擁有的裝置情況。  不過，如果使用者只需要存取公司電子郵件與文件 (通常是個人擁有的裝置情況)，則使用者也需要使用 Office 行動應用程式 ([已套用資料內含項目原則](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune))，並完全略過註冊裝置！  無論如何，將由已定義的原則保護 Office 365 資料。
 
@@ -62,12 +66,12 @@ Intune 提供了[大量佈建和管理解決方案](/intune/deploy-use/manage-co
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 讓您的員工從未受管理的公用 kiosk 中安全存取 Office 365
-有時候您的員工需要使用您無法管理的裝置、應用程式或瀏覽器，例如商展和旅館的公用電腦。 您應該允許員工從中存取公司電子郵件？ 利用 Intune 和企業行動套件，<!--you have choices. The-->答案可以是「不行」，[方法是限制您的組織所管理的裝置存取電子郵件](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  這可確保經過嚴格驗證的員工不會不小心將公司資料放在不受信任的電腦上。
+有時候您的員工需要使用您無法管理的裝置、應用程式或瀏覽器，例如商展和旅館的公用電腦。 您應該允許員工從中存取公司電子郵件？ 您可以利用 Intune 與 Microsoft Enterprise Mobility + Security，<!--you have choices. The-->[限制您組織所管理之裝置的電子郵件存取權](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)，告訴大家「不行」。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  這可確保經過嚴格驗證的員工不會不小心將公司資料放在不受信任的電腦上。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
