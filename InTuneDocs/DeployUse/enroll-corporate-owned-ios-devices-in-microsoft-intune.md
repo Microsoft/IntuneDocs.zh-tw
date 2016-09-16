@@ -4,7 +4,7 @@ description: "使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來�
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d81ef697518745b258598124d6e73899bdd76a0f
-ms.openlocfilehash: 00d7e73154bb293fec48b74b6f6454d67e5ef378
+ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
+ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
 
 
 ---
@@ -40,6 +40,11 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 ## 在已註冊 DEP 或 Apple Configurator 的裝置上使用公司入口網站
 
 已設定使用者親和性的裝置可以安裝並執行公司入口網站 App，以下載 App 及管理裝置。 使用者收到裝置之後，他們必須完成一些額外步驟，以完成設定助理並安裝公司入口網站 App。
+
+需要有使用者親和性，才能支援下項項目︰
+  - 行動應用程式管理 (MAM) 應用程式
+  - 對電子郵件和公司資料進行條件式存取
+  - 公司入口網站應用程式
 
 **使用者如何註冊具有使用者親和性之公司擁有的 iOS 裝置**
 1. 當使用者將其裝置開啟時，系統會提示他們完成設定助理。 設定期間，系統會提示使用者輸入其認證。 他們必須輸入與其 Intune 中訂閱相關聯的認證 (也就是唯一的個人識別碼或 UPN)。
@@ -75,6 +80,6 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
