@@ -13,8 +13,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
+ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
+ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
 當您的訂用帳戶與相關聯的其他雲端服務共用 Azure AD 時，您也可以存取已新增至這些服務的使用者。 在您將授權指派給這些使用者前，他們沒有使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 的授權。
 
 > [!TIP]
-> 若指派或撤銷 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權的選項已停用，表示您的訂用帳戶可能包含大量授權選項，例如在使用 [Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) 時可用的選項。 如需如何指派或撤銷授權的詳細資訊，請參閱授權選項的文件。
+> 若指派或撤銷 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權的選項已停用，表示您的訂用帳戶可能包含大量授權選項，例如在使用 [Enterprise Mobility Suite + 安全性](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx)時可用的選項。 如需如何指派或撤銷授權的詳細資訊，請參閱授權選項的文件。
 
 ## 指派 Intune 使用者授權
 
@@ -92,6 +92,6 @@ ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

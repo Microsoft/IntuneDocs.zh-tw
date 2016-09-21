@@ -4,7 +4,7 @@ description: "本主題會協助您解決 Microsoft Intune 的相關應用程式
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Microsoft Intune 的應用程式部署問題疑難排解
 如果您有使用 Intune 部署和管理應用程式的問題，請從這裡開始。 本主題包含一些您在使用解決方案上可能會遇到的常見問題。
 
-## 常見的應用程式部署問題
-
-### 公司入口網站中沒有連絡 IT 的資訊
-
-1.  在 Intune 管理主控台中，選擇 **[管理員]** &gt; **[公司入口網站]**。
-
-2.  設定 [連絡 IT]  詳細資料。
-
-### 若您在清單中找不到特定的應用程式
-
-1.  請確定您查看的應用程式清單，屬於應用程式部署所屬的使用者或裝置。
-
-2.  確定裝置符合應用程式的需求。
-
-### 下載應用程式時若收到錯誤
-
-1.  確定每個使用者都沒有多個並行的下載。 每位使用者一次只能下載一個應用程式。
-
-2.  確定每個帳戶的同時下載數目並未過多。 請稍候數分鐘，然後再試一次。
-
-3.  如果您收到無法安裝、安裝取消或需要重試的 iOS 原生訊息，可能是因為流量過大。 請稍候數分鐘，然後再試一次。
-
-4.  若 iOS 應用程式下載進度列顯示下載已完成，但應用程式安裝失敗，表示您提供的應用程式檔案可能有問題。
-
-
-### 若應用程式在上傳時一直卡在「進行中」
-
-1.  上傳應用程式時，會先新增中繼資料，然後再新增應用程式套件。 上傳中繼資料後，應用程式會呈現進行中狀態。 若您應用程式處於進行中狀態的時間超乎尋常，請刪除應用程式，然後再重新上傳一次。
-
-2.  請勿在應用程式處於「進行中」狀態下管理應用程式的部署。
-
-### 若在安裝 iOS 應用程式時發生失敗
-
-1.  請確定您的組織防火牆可讓您存取 Apple 佈建與憑證網站。
-
-2.  如需詳細資訊，請檢視 Apple 開發人員文件。
-
-### 如果受管理的應用程式不報告安裝狀態
-
-在 2014 年 11 月 Microsoft Intune 服務更新之前安裝的受管理應用程式，其安裝狀態尚未收集。 對於在這項服務更新之前安裝受管理應用程式的裝置，請用適當的部署動作 (例如 [可用安裝] )，更新每個相關聯的應用程式部署。 每部裝置都會在自動檢查有無可用的應用程式時更新應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 更新應用程式](/intune/deploy-use/update-apps-using-microsoft-intune)。
-
-## <a name="BKMK_SoftDistErrorCodes"></a>應用程式部署錯誤碼
-下表列出部署 Intune 應用程式時可能發生的常見錯誤、其可能的原因及可行的解決方案，協助您疑難排解問題。
+## 常見應用程式部署錯誤碼
 
 |錯誤碼|可能的問題|建議的解決方式|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

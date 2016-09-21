@@ -4,7 +4,7 @@ description: "了解如何建立 Intune 憑證設定檔。"
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  輸入必要的資訊，為 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 進行信任的憑證設定檔設定。
-
-    - 在 [憑證檔案] 設定中，匯入從您的發行 CA 匯出的可信任的根 CA 憑證 (.cer 檔案)。 [目的地存放區] 設定僅適用於執行 Windows 8.1 和更新版本的裝置，且僅當裝置有一個以上的憑證存放區時才適用。
-    -  在 [主體名稱格式] 下，選取 [自訂] 以輸入自訂的主體名稱格式。  
-        自訂格式目前支援的兩個變數為 `Common Name (CN)` 和 `Email (E)`。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式如下︰  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        在本範例中，管理員建立的主體名稱格式除了有 `CN` 與 `E` 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)列出了支援的字串。  
+3.  輸入必要的資訊，為 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 進行信任的憑證設定檔設定。 
+4.  在 [憑證檔案] 設定中，匯入從您的發行 CA 匯出的可信任的根 CA 憑證 (.cer 檔案)。 [目的地存放區] 設定僅適用於執行 Windows 8.1 和更新版本的裝置，且僅當裝置有一個以上的憑證存放區時才適用。
+    
 4.  選擇 [儲存原則]。
 
 新的原則即會顯示在 [原則] 工作區中。 您現在可加以部署。
@@ -79,7 +73,7 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 3.  遵循設定檔設定頁面的指示來設定 SCEP 憑證設定檔設定。
     > [!NOTE]
     >
-    > 在 [主體名稱格式] 下，選取 [自訂] 以輸入自訂的主體名稱格式。
+    > 在 **[主體名稱格式]** 下，選取 **[自訂]** 以輸入自訂主體名稱格式 (僅在 iOS 設定檔中)。
     >
     > 自訂格式目前支援的兩個變數為 `Common Name (CN)` 和 `Email (E)`。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式如下︰
 
@@ -136,6 +130,6 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

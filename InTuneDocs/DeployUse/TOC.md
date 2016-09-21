@@ -56,7 +56,7 @@
 ## [保護裝置](protect-your-devices-with-microsoft-intune.md)
 ### [遠端鎖定和密碼重設](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [利用 MFA 保護 Windows 裝置](protect-windows-devices-with-multi-factor-authentication.md)
-### [控制裝置上的 Microsoft Passport 設定](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [控制 Windows Hello 企業版設定](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上略過啟用鎖定](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [軟體更新](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
