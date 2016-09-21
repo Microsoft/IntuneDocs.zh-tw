@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # 透過遠端鎖定或密碼重設來協助保護您的裝置
 Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 ## 從遠端鎖定裝置
-如果使用者遺失裝置，您可以從遠端鎖定裝置。 下表列出遠端鎖定在不同行動平台上的運作方式。
+如果使用者遺失裝置，您可以從遠端鎖定裝置。 下表列出遠端鎖定在不同行動平台上的運作方式。 不支援遠端鎖定
 
 |平台|遠端鎖定|
 |------------|---------------|
@@ -31,6 +31,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 |Windows RT 8.1 和 Windows RT|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|
 |Windows 8.1|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|
 
+註冊了 Intune 軟體用戶端的 Windows 電腦不支援遠端鎖定。
 
 ### 若要透過 Intune 主控台從遠端鎖定行動裝置
 
@@ -55,6 +56,8 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 |Windows RT 8.1 和 Windows RT|不支援|
 |Windows 8.1|不支援|
 
+註冊了 Intune 軟體用戶端的 Windows 電腦不支援密碼重設。
+
 ### 重設密碼
 
 1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] &gt; [所有行動裝置]。
@@ -73,6 +76,6 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

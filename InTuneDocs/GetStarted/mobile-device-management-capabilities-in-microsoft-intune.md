@@ -4,17 +4,17 @@ description: "閱讀本主題以了解 Intune 如何協助您管理您註冊的�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |iOS 行動裝置應用程式組態|使用行動裝置應用程式設定原則來為 iOS 應用程式提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定連接埠號碼或登入資訊。 這有助於簡化設定，並減少支援呼叫的數量。|[在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS 行動裝置應用程式佈建設定檔|協助您將佈建設定檔部署至即將到期的 iOS 應用程式。 |[使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |受管理的瀏覽器|設定受管理的瀏覽器原則來控制裝置使用者可以瀏覽的網站。 此外也可將行動應用程式管理原則，套用到受管理的瀏覽器。|[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|可讓您與 Microsoft Passport for Work 整合，這是使用內部部署 Active Directory 或 Azure Active Directory 取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 的替代方法。|[使用 Microsoft Intune 控制裝置上的 Microsoft Passport 設定](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello 企業版|讓您與 Windows Hello 企業版整合，這是使用內部部署 Active Directory 或 Azure Active Directory 取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 的替代方法。|[使用 Microsoft Intune 控制裝置上的 Windows Hello 企業版設定](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|大量採購的應用程式|藉由從應用程式市集匯入授權資訊、追蹤您已經使用了多少個授權，並避免您安裝超過擁有數目的應用程式複本，來協助您管理透過大量採購方案購買的應用程式。|[使用 Microsoft Intune 管理大量購買的應用程式](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## 公司資源存取
 
@@ -70,6 +71,6 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

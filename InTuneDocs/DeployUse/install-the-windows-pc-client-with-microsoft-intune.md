@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# 使用 Microsoft Intune 安裝 Windows 電腦用戶端
-使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。
+# 在 Windows 電腦上安裝 Intune 軟體用戶端
+Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用戶端軟體可以下列方式安裝：
 
-## 開始之前
-在您開始安裝 Intune 用戶端軟體之前，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)主題，以了解哪些項目必須先準備就緒才能正確安裝用戶端，然後再回頭執行這些指示。
+- 手動安裝
+- 使用群組原則安裝
+- 隨附於磁碟映像
+- 由使用者安裝
 
-## 安裝用戶端
-請使用下列步驟安裝用戶端：
+## 下載 Intune 用戶端軟體
 
--   [下載用戶端軟體](#to-download-the-client-software)
-
-接著使用下列一種或多種方法來安裝用戶端：
-
--   [手動部署用戶端軟體](#to-manually-deploy-the-client-software)
-
--   [使用群組原則自動部署用戶端軟體](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [將 Microsoft Intune 用戶端軟體隨著映像一起安裝](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-如果您已經不需要使用 Intune 管理電腦，您可以淘汰電腦，淘汰電腦的動作也會將用戶端軟體從電腦移除。 如需詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
-
-### 下載用戶端軟體
+除了使用者自行安裝 Intune 用戶端軟體以外，所有方法都需要您下載軟體，以便部署。
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [系統管理] &gt; [用戶端軟體下載]。
 
-  ![下載 Intune 電腦用戶端](./media/pc-SA-client-download.png)
+  ![下載 Intune 電腦用戶端](../media/pc-sa-client-download.png)
 
 2.  在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]，並將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到您網路上的安全位置。
 
@@ -56,14 +45,14 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
     > [!IMPORTANT]
     > 請勿重新命名或移除已解壓縮的 **ACCOUNTCERT** 檔案，否則用戶端軟體安裝將會失敗。
 
-### 手動部署用戶端軟體
+## 手動部署
 
 1.  在電腦上，瀏覽到放置用戶端軟體安裝檔案的資料夾，然後執行 **Microsoft_Intune_Setup.exe** 以安裝用戶端軟體。
 
     > [!NOTE]
     > 當您將游標停留在用戶端電腦上工作列中的圖示上時，即可顯示安裝的狀態。
 
-### 使用群組原則自動部署用戶端軟體
+## 使用群組原則部署
 
 1.  在包含 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 檔案的資料夾中，執行下列命令以解壓縮適用於 32 位元和 64 位元電腦的 Windows Installer 安裝程式：
 
@@ -80,7 +69,7 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
     如需有關如何使用群組原則自動部署軟體的詳細資訊，請參閱您的 Windows Server 文件。
 
-### 將 Microsoft Intune 用戶端軟體隨著映像一起安裝
+## 隨映像安裝
 您可以使用下列範例程序作為基礎，將 Intune 用戶端軟體隨著作業系統映像一起部署到電腦。
 
 1.  將用戶端安裝檔案 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 複製到參照電腦上的 **%系統磁碟機%\Temp\Microsoft_Intune_Setup** 資料夾。
@@ -109,6 +98,12 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 當自動註冊工作在下次排程時間執行時，會檢查 **WindowsIntuneEnrollPending** 登錄值是否存在，並會嘗試在 Intune 中註冊目標電腦。 如果註冊因為任何原因失敗，工作下次執行時會重新嘗試註冊。 重新嘗試將會持續一個月的時間。
 
 當註冊順利完成，或是過一個月之後，會從目標電腦刪除 Intune 自動註冊工作、**WindowsIntuneEnrollPending** 登錄值與帳戶憑證。
+
+## 指示使用者自行註冊
+
+使用者可瀏覽至 [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) 以安裝 Intune 用戶端軟體。 如果入口網站可以偵測裝置為 Windows 電腦，就會提示您下載 Intune 軟體用戶端以註冊電腦。 下載後，使用者即可安裝軟體，進而開始管理其電腦。
+
+![Intune 入口網站提示下載 Intune 軟體用戶端](../media/software-client-download.png)
 
 ## 監視並驗證成功的用戶端部署
 請使用下列其中一個程序協助您監視及驗證成功的用戶端部署。
@@ -139,6 +134,6 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

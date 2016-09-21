@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # 透過 Intune 使用 Android 裝置
 
-針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作所需遵循的步驟，這些工作會按照類別分組︰ 
+針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作必需採取的步驟，這些工作會按照下列類別分組︰
 
-- 公司入口網站應用程式安裝和 Intune 註冊 
+- 公司入口網站應用程式安裝和 Intune 註冊
 - 註冊後的管理工作
 - 相容性問題
 
 ## 公司入口網站應用程式安裝和 Intune 註冊
 
-本節中的資訊將協助您安裝 Intune 公司入口網站以及註冊 Android 裝置。
+本節中的資訊有助於 Intune 公司入口網站安裝以及適用於 Android 裝置的裝置註冊。
 
 - [在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)
 - [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## 在 Intune 註冊您的裝置時可執行的工作
 
-本節中的資訊將協助您瞭解於 Intune 註冊 Android 裝置後可執行的動作。
+在 Intune 中註冊您的 Android 裝置之後，本節中的資訊可協助您採取相關動作。
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-android.md)
 - [加密您的裝置](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 ## 修正裝置的問題
 
-本節中的資訊將協助您修正於 Intune 註冊 Android 裝置後可能遇到的問題。
+在 Intune 中註冊您的 Android 裝置時，本節中的資訊可協助您修正可能遇到的問題。
 
 - [使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [使用電子郵件將診斷資料記錄檔傳送給 IT 系統管理員](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -9,8 +9,9 @@
 ## [註冊裝置](enroll-devices-in-microsoft-intune.md)
 ### [準備好在 Intune 中註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile 和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android 管理](set-up-android-management-with-microsoft-intune.md)
 #### [Windows 裝置管理 ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile 和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [管理公司擁有的裝置](manage-corporate-owned-devices.md)
 #### [註冊公司所擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [iOS 設定助理註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -55,7 +56,7 @@
 ## [保護裝置](protect-your-devices-with-microsoft-intune.md)
 ### [遠端鎖定和密碼重設](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [利用 MFA 保護 Windows 裝置](protect-windows-devices-with-multi-factor-authentication.md)
-### [控制裝置上的 Microsoft Passport 設定](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [控制 Windows Hello 企業版設定](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上略過啟用鎖定](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [軟體更新](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [建立及部署 MAM 原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [適用於 Android 的 MAM 原則](android-mam-policy-settings.md)
 #### [適用於 iOS 的 MAM 原則](ios-mam-policy-settings.md)
+#### [驗證 MAM 原則](validate-mobile-application-management.md)
 #### [監視原則相容性](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

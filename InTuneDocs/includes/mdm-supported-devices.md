@@ -7,9 +7,9 @@
   - 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦
   - Mac OS X 10.9 及更新版本
 
-[Intune 軟體用戶端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)可以管理執行 Windows 7 作業系統及更新版本的 Windows PC。 使用企業管理套件 (EMS) 的客戶也可以[使用 Azure Active Directory (AAD) 來註冊 Windows 10 裝置](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)。
+[Intune 軟體用戶端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)可以管理執行 Windows Vista 作業系統與更新版本的電腦，但不包括各版 Windows 的家用版。  使用 Enterprise Management + Security (EMS) 的客戶也可[使用 Azure Active Directory (AAD) 註冊 Windows 10 裝置](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment)。
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

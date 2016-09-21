@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: aac4eee56ec7326b2ce466d19b580aa5f1388aea
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0e516e3762dc5712a1b2d0f83016b51b15b7070f
 
 
 ---
@@ -28,7 +28,9 @@ ms.openlocfilehash: aac4eee56ec7326b2ce466d19b580aa5f1388aea
   - **公司所擁有的裝置** - COD 註冊
 
 > [!div class="button"]
-[BYOD 註冊 >](#what-byod-devices-can-your-users-enroll)   [COD 註冊 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
+[BYOD 註冊 >](#what-byod-devices-can-your-users-enroll)   
+> [!div class="button"]
+[COD 註冊 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
 ## **您的使用者可以註冊哪些 BYOD 裝置？**
 
@@ -72,6 +74,6 @@ ms.openlocfilehash: aac4eee56ec7326b2ce466d19b580aa5f1388aea
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
