@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
 
 
 ---
@@ -24,7 +24,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 
 ## 使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊
-透過 Apple Configurator，您可以將 iOS 裝置重設成出廠預設值，以準備讓裝置的新使用者進行設定。  這個方法需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊，且該方法之前提為假設您使用 Apple Configurator 2.0。 大部分案例需要套用至 iOS 裝置的原則包括*使用者親和性*來啟用 Intune 公司入口網站應用程式。
+透過 Apple Configurator，您可以將 iOS 裝置重設成出廠預設值，以準備讓裝置的新使用者進行設定。  這個方法需要您透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊，且該方法之前提為假設您使用 Apple Configurator 2.0。 大部分案例需要套用至 iOS 裝置的原則包括**使用者親和性**來啟用 Intune 公司入口網站應用程式。
 
 **必要條件**
 * 透過安裝 APN 憑證以[啟用 iOS 註冊](set-up-ios-and-mac-management-with-microsoft-intune.md)
@@ -143,6 +143,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

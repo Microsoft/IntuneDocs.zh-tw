@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
 ## **您的公司所擁有的裝置是共用裝置，或是否有專用使用者？**
 
 > [!div class="button"]
-[共用 >](choose-how-to-enroll-devices4.md)   [專用 >](choose-how-to-enroll-devices6.md)
+[共用 >](choose-how-to-enroll-devices4.md)<br>[專用 >](choose-how-to-enroll-devices6.md)
 
 - **共用公司擁有的裝置** - 這些裝置沒有單一使用者，而且通常不會設定成存取電子郵件。 範例包括使用者視需要從集區取出然後傳回的 Kiosk 裝置或工作導向裝置。 建議的註冊方法取決於裝置平台。
 
@@ -36,6 +36,6 @@ ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

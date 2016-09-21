@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # 設定 Android 裝置管理
-若要設定您的 Android 裝置，您可以在[這裡](../enduser/using-your-android-device-with-intune.md)找到說明。
-
-Microsoft Intune 可讓您啟用 Android 裝置的 BYOD (「攜帶您自己的裝置」)，而不需對平台進行任何額外的工作。
-
-選取下列裝置平台選項以深入了解︰
-
-> [!div class="op_single_selector"]
-- [在 Microsoft Intune 上設定 Android 管理](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [使用 Microsoft Intune 設定 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)
-- [使用 Microsoft Intune 設定 Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)
-
-Android 行動裝置可讓使用者使用 Google Play 提供的公司入口網站應用程式來註冊。 若要讓使用者在 Intune 中註冊裝置，請完成下列步驟。
+Intune 管理員可從公司入口網站啟用管理 Android 裝置。 使用者可以使用 Google Play 提供的公司入口網站應用程式來註冊其裝置。
 
 1.  **設定 Intune**<br>
     如果尚未這麼做，請將[行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
@@ -52,6 +40,6 @@ Android 行動裝置可讓使用者使用 Google Play 提供的公司入口網�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

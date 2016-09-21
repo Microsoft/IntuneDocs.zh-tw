@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -24,6 +24,26 @@ ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
 
 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) (混合式新功能) 頁面。
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
+
+>[!IMPORTANT] 
+>部落格文章 - 使用 Microsoft Intune 確保行動裝置維持最新狀態<br>
+>我們針對 iOS 裝置上最近的 "Trident" 惡意程式碼攻擊，新發行了一篇部落格文章：[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (確定使用 Microsoft Intune 的行動裝置為最新狀態)，說明 Intune 所提供的各種方法，如何協助您保護裝置安全及保持裝置為最新狀態。
+
+## 2016 年 9 月
+
+## 公司入口網站更新
+### Android
+
+**在 Android 的公司入口網站新增「通知」**
+
+Azure 公司入口網站的首頁新增了通知圖示。 點選此圖示可存取 [通知] 頁面，為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 iOS 公司入口網站應用程式已經有這項通知體驗。 有了新的 [通知] 頁面，只要該裝置已經註冊，使用者便不會在每次啟動或繼續使用公司入口網站時看見 [公司存取設定] 頁面。 如果您建立自己的終端使用者指南，建議您更新文件以反映這項變更。 [這裡](https://aka.ms/androidcpupdate)提供更新的螢幕擷取畫面。  
+<!---TFS 1095560--->
+
+### Windows
+**Windows Phone 8.1 的公司入口網站應用程式新增了 [意見反應] 按鈕**
+
+Windows Phone 8.1 公司入口網站應用程式讓終端使用者能夠使用新的 [傳送意見反應] 按鈕，傳送對應用程式的意見反應。 若要尋找按鈕，使用者要點選公司入口網站應用程式畫面右下角的「三個點」功能表，然後點選 **[傳送意見反應]**。 收集到的匿名意見反應可協助 Microsoft 改進使用者的公司入口網站應用程式體驗。
+<!---TFS 1317806--->
 
 ## 2016 年 8 月
 ## 應用程式管理
@@ -82,6 +102,10 @@ Google 將會移除 Android 7.0 裝置讓 IT 管理員與終端使用者在遠�
 <!---TFS 1313253 checked--->
 
 ## 未來動態
+
+### iOS 10 支援
+Intune 將完整支援 iOS 10。 詳細資訊將隨 iOS 10 公開發行而釋出。
+
 ### 從 2016 年 9 月開始，Intune 群組將開始轉換到 Azure Active Directory 群組
 Intune 正在建立新的群組管理體驗，將在 Intune 中使用 Azure Active Directory (AAD) 安全性群組做為使用者和裝置群組。 這些群組將會**在我們推出以 Azure 為基礎的新 Intune 管理入口網站時**，用於所有群組管理、原則部署及設定檔部署上。
 
@@ -122,8 +146,8 @@ Intune 的新客戶將會**比目前的租用戶更快看見某些安全性群�
 Intune 將於八月發行的 iOS 版 Microsoft Intune Managed Browser 應用程式更新，將僅支援執行 iOS 8.0 或更新版本的裝置。 雖然 iOS 7.1 裝置仍然可以使用現有的 Managed Browser 應用程式，請建議您的使用者更新至 iOS 8.0 或更新版本，以存取並且充分利用新的 Managed Browser 功能。  
 <!---TFS 1313253--->
 
-- **2016 年 9 月起，將取代 Windows 8 和 Windows Phone 8 的公司入口網站應用程式** <br/>
-從 2016 年 9 月開始，Microsoft Intune 將結束 Windows Phone 8 和 Windows 8 平台的 Microsoft Intune 公司入口網站應用程式支援。 將裝置更新為 Windows 8.1 和 Windows Phone 8.1，並使用對應的 Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式繼續將應用程式發佈至這些裝置。
+- **將取代 Windows 8 版和 Windows Phone 8 版公司入口網站應用程式** <br/>
+自 2016 年 10 月起，Microsoft Intune 將會取代 Windows 8 和 Windows Phone 8 公司入口網站應用程式的支援。 Microsoft Intune 也會取代 Windows Phone 8 平台的支援。 因此，您將無法註冊或更新任何 Windows Phone 8 裝置。 您可以繼續管理已註冊的 Windows Phone 8 和 Windows 8 裝置。 將 Windows Phone 8 和 Windows 8 裝置更新為 Windows 8.1 和 Windows Phone 8.1，並使用對應的 Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式繼續將應用程式發佈至這些裝置，而不受中斷。
 <!---TFS 1255391--->
 
 <!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
@@ -153,6 +177,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

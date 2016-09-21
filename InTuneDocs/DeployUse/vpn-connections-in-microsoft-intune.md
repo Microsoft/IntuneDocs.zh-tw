@@ -4,7 +4,7 @@ description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
 您可以使用 VPN 設定檔設定下列裝置類型：
 
 * 執行 Android 4 和更新版本的裝置
-* 執行 iOS 7.1 及更新版本的裝置
+* 執行 iOS 8.0 和更新版本的裝置
 * 執行 Mac OS X 10.9 及更新版本的裝置
 * 執行 Windows 8.1 和更新版本的已註冊裝置
 * 執行 Windows Phone 8.1 和更新版本的裝置
@@ -45,6 +45,8 @@ Intune 支援使用下列連線類型建立 VPN 設定檔：
 連線類型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是 (OMA-URI，僅限行動裝置)|     
+Cisco (IPsec)|是 |否   |否  |  否|否  |否 | 否|
+Citrix|是 |否   |否  |  否|否  |否 | 否|
 Pulse Secure|是  |是 |是   |否  |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
@@ -83,7 +85,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則]。
 2. 展開相關的裝置類型，然後選擇該裝置的 VPN 設定檔，以選取新原則的範本：
     * **VPN 設定檔 (Android 4 和更新版本)**
-    * **VPN 設定檔 (iOS 7.1 和更新版本)**
+    * **VPN 設定檔 (iOS 8.0 和更新版本)**
     * **VPN 設定檔 (Mac OS X 10.9 及更新版本)**
     * **VPN 設定檔 (Windows 8.1 和更新版本)**
     * **VPN 設定檔 (Windows Phone 8.1 和更新版本)**
@@ -111,6 +113,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **登入群組或網域**|指定您想要連線之登入群組或網域的名稱。 只有在連線類型為 [Dell SonicWALL Mobile Connect] 時，才會顯示此選項。
 **指紋**|指定將用來確認是否可信任 VPN 伺服器的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還沒有指紋，則會提示使用者信任所連線的 VPN 伺服器，同時顯示指紋。 (使用者可手動驗證指紋，然後選擇 [信任] 即可連線)。只有在連線類型為 [CheckPoint Mobile VPN] 時，才會顯示此選項。
 **每個應用程式 VPN**|如果您想要這個 VPN 連線與 iOS 或 Mac OS X 應用程式產生關聯，以在執行應用程式時開啟連線，請選取這個選項。 部署軟體時，您可以將 VPN 設定檔與應用程式產生關聯。 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
+**隨選 VPN**|您可以針對 iOS 8.0 和更新裝置設定隨選 VPN。 設定這項功能的指示已在[適用於 iOS 裝置的隨選 VPN](#on-demand-vpn-for-ios-devices) 中提供。
 **自動偵測 Proxy 設定** (僅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1)|如果您的 VPN 伺服器進行連線時需要 Proxy 伺服器，請指定是否要裝置自動偵測連線設定。 如需詳細資訊，請參閱 Windows Server 文件。
 **使用自動設定指令碼** (僅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1)|如果您的 VPN 伺服器進行連線時需要 Proxy 伺服器，請指定是否要使用自動設定指令碼來定義設定，然後指定含有設定的檔案 URL。 如需詳細資訊，請參閱 Windows Server 文件。
 **使用 Proxy 伺服器** (僅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1)|如果您的 VPN 伺服器進行連線時需要 Proxy 伺服器，請選取此選項，然後指定 Proxy 伺服器的位址和連接埠號碼。 如需詳細資訊，請參閱 Windows Server 文件。
@@ -141,6 +144,32 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 新的原則會顯示在 [原則] 工作區的 [設定原則] 節點中。
 
+### 適用於 iOS 裝置的隨選 VPN
+您可以針對 iOS 8.0 和更新裝置設定隨選 VPN。
+
+> [!NOTE]
+>  
+> 您無法在相同原則中使用個別應用程式 VPN 和隨選 VPN。
+ 
+1. 在原則設定頁面上，尋找 [此 VPN 連線之依需求指定的規則]。 標示為 [符合] 的欄位為規則所要檢查的條件，[動作] 的欄位則為條件符合時原則所要觸發的動作。 
+2. 選擇 [新增] 來建立規則。 您可以在規則中設定的符合類型有兩種。 您在每個規則中只能設定其中一種類型。
+  - **SSID**：該類型會參照到無線網路。 
+  - **DNS 搜尋網域**：該類型為...  您可以使用如 *team. corp.contoso.com* 的完整網域名稱，或使用如 *contoso.com* 的網域名稱，這相當於使用  .contoso.com*。
+3. 選擇性：提供 URL 字串探查，這是規則會用來做為測試的 URL。 如果安裝此設定檔的裝置可以在不需重新導向之下存取這個 URL，VPN 便會建立，且裝置將會連線到目標 URL。 使用者將不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，然後再將裝置透過 VPN 連線到目標 URL。
+4. 選擇下列其中一項動作：
+  - **連線**
+  - **評估連線**：它有三個設定 a. **網域動作** - 選擇 [連線 (若需要)]**** 或 [一律不連線]****
+     b. **以逗號分隔的網域清單** - 只有在您選擇 [網域動作]**** 的 [連線 (若需要)]**** 時才可以設定 
+     c. **必要的 URL 字串探查** - HTTP 或 HTTPS (建議選項) URL，例如 *https://vpntestprobe.contoso.com*。 規則會檢查是否有來自此地址的回應。 如果沒有，且 [網域動作] 為 [連線 (若需要)]，便會觸發 VPN。
+     > [!TIP]
+     >
+     >您可能使用此動作的範例，是您公司網路上的某些網站需要直接或是 VPN 公司網路連線，但其他網站則不用。 如果您將 *corp.contoso.com* 列入 [以逗號分隔的 DNS 搜尋網域清單]，您可以選擇 [連線 (若需要)]，然後在可能需要 VPN 的網路中列出特定網站，例如 *sharepoint.corp.contoso.com*。 此規則接著會檢查是否可連線到 *vpntestprobe.contoso.com*。 如果不行，則會針對 sharepoint 網站觸發 VPN。
+  - **忽略**：此設定會使 VPN 連線能力不受變更。 如果已連線 VPN，則會維持連線，如果未連線 VPN，則不會連線。 例如，您可能會有針對所有內部公司網站連線 VPN 的規則，但想要讓其中一個內部網站僅在裝置實際連線到公司網路時才能存取。 在此情況下，您要針對該網站建立忽略規則。
+  - **中斷連線**：當符合條件時，將裝置從 VPN 中斷連線。 例如，您可以將您的公司無線網路列入 [SSID] 欄位並建立規則，使裝置連線到那些網路時，將它們從 VPN 中斷連線。
+
+會先評估網域特定規則，然後才評估所有網域規則。 
+
+
 ## 部署原則
 
 1.  在 [原則] 工作區中，選取您要部署的原則，然後選擇 [管理部署]。
@@ -163,6 +192,6 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

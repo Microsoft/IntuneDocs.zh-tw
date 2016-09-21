@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 02287eb01598c28906045fd8def9e8b4660e3da5
-ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
+ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
+ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
 
 
 ---
@@ -27,72 +27,74 @@ ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
 
 註冊 Windows 10 Mobile 或 Windows 10 Desktop 裝置：
 
-1.  移至 Windows [設定] 並點選 [帳戶]。
+1.  前往 Windows [設定]，然後點選 [帳戶]。
 
-    ![settings-accounts](./media/w10-enroll-rs1-settings-accounts.png)
+    ![Windows 設定](./media/w10-enroll-rs1-settings-accounts.png)
 
 2.  查看接下來的兩個畫面，並找出其中看起來像在您裝置上所看到的畫面。 遵循您在裝置上看見的畫面中所顯示的步驟。
 
-    如果您看到這個畫面，請遵循[如果看見 [存取公司或學校資源] 時需遵循的步驟](#steps-to-follow-if-you-see-access-work-or-school)中的步驟。
+    如果您看到這個畫面，請遵循[如果看見 [存取公司或學校資源] 時需遵循的步驟](#steps-to-follow-if-you-see-access-work-or-school)中的指示。
 
-    ![connect-to-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![連線到公司或學校](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
     如果您看到這個畫面，請遵循[如果看見 [您的帳戶] 時需遵循的步驟](#steps-to-follow-if-you-see-your-account)中的步驟。
 
-    ![your-account](./media/w10-enroll-2-accounts-your-account.png)
+    ![您的帳戶](./media/w10-enroll-2-accounts-your-account.png)
 
 ## 如果看見 [存取公司或學校資源] 時需遵循的步驟
 
 1.  點選 [存取公司或學校資源]。
 
-    ![tap-access-work-school-account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![點選 [存取工作學校帳戶]](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2.  輸入您的工作或學校電子郵件，並點選 [下一步]。
+2.  輸入您的工作或學校電子郵件地址，然後點選 [下一步]。
 
-    ![enter-your-work-or-school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+    ![輸入您的工作或學校帳戶](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
 3. 使用您的工作或學校帳戶登入 Intune。
 
-    ![add-work-school-account](./media/w10-enroll-rs1-enter-your-credentials.png)
+    ![新增工作或學校帳戶](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     您會看到一則訊息，指出您的公司或學校正在註冊您的裝置。
 
-4. 當您看到 [已全部完成] 時 頁面，點選 [關閉]。 大功告成。
+4. 當您看到 [已全部完成] 時 畫面，點選 [關閉]。 大功告成。
 
-  ![tap-close-on-you-are-all-set-screen](./media/w10-enroll-rs1-youre-all-set.png)
+  ![在「已全部完成!」畫面上 點選 [關閉]](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. 如果您想要再次檢查您的連線，請回到 [設定]，您現在可以看到已列出您的工作或學校帳戶。
+5. 如果想要再次檢查您的連線是否正確，請回到 [設定]，現在您應該會看到這裡已列出您的工作或學校帳戶。
 
-    ![validate-that-connection-was-set-up-correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+    ![驗證連線已正確設定](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-如果您已遵循上述步驟，但仍無法存取自己的工作或學校電子郵件和檔案，請遵循[針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步驟。
+如果您已遵循前述步驟，但仍無法存取自己的工作或學校電子郵件帳戶和檔案，請遵循[針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步驟。
 
 
 ## 如果看見 [您的帳戶] 時需遵循的步驟
 
-1.  移至 Windows [設定] 並點選 [帳戶]。
+1.  前往 Windows [設定]，然後點選 [帳戶]。
 
-    ![go-to-settings-accounts](./media/W10-enroll-1-settings-accounts.png)
+    ![前往 [設定] 與 [帳戶]](./media/W10-enroll-1-settings-accounts.png)
 
 2.  點選 [您的帳戶]。
 
-    ![tap-your-account](./media/W10-enroll-2-accounts-your-account.png)
+    ![點選您的帳戶](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  點選 [新增公司或學校帳戶]。
 
-    ![add-work-or-school-account](./media/w10-enroll-3-add-work-school-acct.png)
+    ![點選 [新增工作或學校帳戶]](./media/w10-enroll-3-add-work-school-acct.png)
 
 4.  使用工作或學校認證登入。
 
     ![sign-in](./media/W10-enroll-4-sign-in.png)
 
-如果您已遵循上述的步驟，但仍無法存取自己的工作或學校電子郵件、檔案和其他資料，請嘗試[針對如果看見 [您的帳戶] 時需遵循的步驟進行疑難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)中的疑難排解步驟。
+如果您已遵循前述步驟，但仍無法存取自己的工作或學校電子郵件地址、檔案或其他資料，請嘗試[針對如果看見 [您的帳戶] 時需遵循的步驟進行疑難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)中的指示。
 
-我們也建議您安裝公司入口網站應用程式，它可讓您輕鬆識別並取得與您本身及角色有關的公司應用程式。 公司入口網站應用程式可能已當做註冊程序的一部分加以安裝，這取決於公司設定 Intune 的方式。 如要確認是否有該應用程式，請在應用程式清單中尋找 [公司入口網站]。 如果應用程式清單中找不到 [公司入口網站]，請遵循下列步驟安裝它。
+我們也建議您安裝公司入口網站應用程式，它可讓您輕鬆識別並取得與您本身及角色有關的公司應用程式。 公司入口網站應用程式可能已當作註冊程序的一部分加以安裝，這取決於公司設定 Intune 的方式。
+
+若要驗證是否有該應用程式，請在應用程式清單中尋找**公司入口網站**。 如果應用程式清單中找不到 [公司入口網站]，請遵循下列步驟安裝它。
 
 1.  點選 [開始] &gt; [存放區]。
 
-2.  點選 [搜尋]，然後輸入 [公司入口網站]。
+2.  點選 [搜尋]，然後鍵入**公司入口網站**。
 
 3.  在結果清單中，點選 [公司入口網站] &gt; [安裝]。
 
@@ -100,11 +102,10 @@ ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 

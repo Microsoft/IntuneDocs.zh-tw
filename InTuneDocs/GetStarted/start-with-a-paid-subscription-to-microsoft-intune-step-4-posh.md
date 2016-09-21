@@ -4,7 +4,7 @@ description: "使用 PowerShell 管理 Intune 授權"
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 9108a81d1ec4213bf8fe70408fd7f8eef9691edb
+ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
+ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
 
 
 ---
 
 # 使用 PowerShell 管理 Intune 授權
-如[管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)所述，您必須先指派一份 Intune 訂閱授權給每位使用者，使用者才能登入使用 Intune 服務或註冊其裝置進行管理。 但使用 Microsoft Enterprise Mobility Suite (EMS) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。
+如[管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)所述，您必須先指派一份 Intune 訂閱授權給每位使用者，使用者才能登入使用 Intune 服務或註冊其裝置進行管理。 但使用 Microsoft Enterprise Mobility + Security 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。
 
 若要選擇性地指派 EMS 服務的使用者授權，請在已安裝[適用於 Windows PowerShell 的 Windows Azure Active Directory 模組](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)的電腦上，以系統管理員身分開啟 PowerShell。 您可以在本機電腦或 ADFS 伺服器上安裝 PowerShell。
 
@@ -67,6 +67,6 @@ ms.openlocfilehash: 9108a81d1ec4213bf8fe70408fd7f8eef9691edb
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: 4386e9c545c3427060478e0fb3482074a8c1d5a0
+ms.openlocfilehash: ba1869e63d9c9e83199ecfde312129c548dd5f07
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
 
 若要重設裝置：
 
-1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要變更名稱的裝置。
+1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，然後點選您想要重設的裝置。
 
 2.  點選 [重設]。
 
@@ -41,11 +41,10 @@ ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 
