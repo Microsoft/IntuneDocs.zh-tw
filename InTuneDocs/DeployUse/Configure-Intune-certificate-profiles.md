@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]。
 2.  新增下列其中一種原則類型：
     - **Android &gt; 信任的憑證設定檔 (Android 4 和更新版本)**
-    - **iOS &gt; 信任的憑證設定檔 (iOS 7.1 和更新版本)**
+    - **iOS &gt; 信任的憑證設定檔 (iOS 8.0 和更新版本)**
     - **Mac OS X &gt; 信任的憑證設定檔 (Mac OS X 10.9 及更新版本)**
     - **Windows &gt; 信任的憑證設定檔 (Windows 8.1 和更新版本)**
     - **Windows &gt; 信任的憑證設定檔 (Windows Phone 8.1 和更新版本)**
@@ -63,7 +63,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]。
 2.  新增下列其中一種原則類型：
     - **Android &gt; SCEP 憑證設定檔 (Android 4 和更新版本)**
-    - **iOS &gt; SCEP 憑證設定檔 (iOS 7.1 和更新版本)**
+    - **iOS &gt; SCEP 憑證設定檔 (iOS 8.0 和更新版本)**
     - **Mac OS X &gt; SCEP 憑證設定檔 (Mac OS X 10.9 及更新版本)**
     - **Windows &gt; SCEP 憑證設定檔 (Windows 8.1 和更新版本)**
     - **Windows &gt; SCEP 憑證設定檔 (Windows Phone 8.1 和更新版本)**
@@ -92,7 +92,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
   - **Android &gt; .PFX 憑證設定檔 (Android 4 和更新版本)**
   - **Windows &gt; PKCS #12 (.PFX) 憑證設定檔 (Windows 10 和更新版本)**
   - **Windows &gt; PKCS #12 (.PFX) 憑證設定檔 (Windows Phone 10 和更新版本)**
-  - **iOS > PKCS #12 (.PFX) 憑證設定檔 (iOS 7.1 和更新版本)**    
+  - **iOS > PKCS #12 (.PFX) 憑證設定檔 (iOS 8.0 和更新版本)**    
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 3.  輸入原則表單上所要求的資訊。
 4.  選擇 [儲存原則]。
@@ -130,6 +130,6 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
