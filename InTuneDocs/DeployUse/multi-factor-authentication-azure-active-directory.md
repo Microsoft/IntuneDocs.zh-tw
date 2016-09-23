@@ -4,7 +4,7 @@ description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證�
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: d65846b09ac33fa18db037a6a2c05963607ef53f
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 
 ---
@@ -41,12 +41,13 @@ Intune 針對裝置註冊整合 Azure AD 多重要素驗證 (MFA) 來協助您�
     -  當裝置為非工作中時，針對註冊要求多重要素驗證。
     -  選擇 [封鎖存取公司資源] 以防止裝置在未連接到公司網路時註冊。 
 4. 您也可以按一下 [定義/編輯您的工作網路位置] 連結，來設定裝置註冊的網路連線需求。
+
 > [!IMPORTANT]
 > 
 > 請勿針對 Microsoft Intune 註冊設定 [以裝置為準的存取規則]。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

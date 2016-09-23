@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 1f66119b582a3c050be6088263d907db216114cc
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 
 ---
@@ -38,11 +38,10 @@ ms.openlocfilehash: 1f66119b582a3c050be6088263d907db216114cc
 
 如果無法重設遺失或遭竊的裝置，請要求 IT 系統管理員為您重設。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 
