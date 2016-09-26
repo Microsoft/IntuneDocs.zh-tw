@@ -30,7 +30,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 ## 建立允許或封鎖的應用程式清單
 
-1. 在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
 2. 在 [建立新原則] 對話方塊中，展開 **Android**，選擇 [自訂設定]，然後選擇 [建立原則]。
 3. 提供原則的名稱和選擇性描述，然後在 [OMA-URI 設定] 區段中，選擇 [新增]。
 4. 在 [新增或編輯 OMA-URI 設定] 對話方塊中，指定下列各項︰在裝置上遭封鎖而無法執行的應用程式清單︰
