@@ -3,25 +3,25 @@ title: "服務描述 | Microsoft Intune"
 description: "Intune 是雲端式服務，可協助您管理 Windows 電腦及 iOS、Mac OS X、Android 及 Windows 行動裝置。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Microsoft Intune 服務描述
 
-Microsoft Intune 是雲端式服務，可協助您管理 Windows 電腦以及 iOS、Mac OS X、Android 和 Windows 行動裝置。 Intune 也可協助保護公司應用程式和資料。 您可以單獨使用 Intune，或與 System Center 2012 R2 Configuration Manager 整合以擴充管理功能。
+Microsoft Intune 是雲端式服務，可協助您管理 Windows 電腦以及 iOS、Mac OS X、Android 和 Windows 行動裝置。 Intune 也可協助保護公司應用程式和資料。 您可以單獨使用 Intune，或與 System Center Configuration Manager 整合以擴充管理功能。 
 
 Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務。 登入權益讓您能夠從遠端與 Microsoft 專家合作，來準備您的 Intune 環境以供使用。 如需詳細資訊，請參閱 [Microsoft Intune 登入權益說明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
@@ -32,18 +32,18 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 如需可在行動裝置上指定之設定值的清單，請參閱：
 
--   [Microsoft Intune 的行動裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune 的已註冊裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Configuration Manager 中行動裝置的一般設定](https://technet.microsoft.com/library/dn376523.aspx)
+-   [搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx) 
 
-如需 System Center 2012 R2 Configuration Manager 的資訊，請參閱 [System Center 2012 Configuration Manager 文件庫](https://technet.microsoft.com/library/gg682041.aspx)。
+如需 System Center Configuration Manager 的資訊，請參閱 [System Center Configuration Manager 文件](https://technet.microsoft.com/library/mt346023.aspx)。
 
 ## 了解 Intune 服務更新對您的影響
 由於 Intune 是線上服務，因此 Microsoft 會定期更新。
 
 使用本主題中的資訊，可協助您了解這些服務更新的頻率，以及我們在更新可能影響您使用服務時提供給您的進階通知。
 
-若要了解 Intune 服務變更，請參閱 [Microsoft Intune 的新功能](/intune/deploy-use/Whats-new-in-microsoft-intune.md)。 [Microsoft Intune 部落格](http://blogs.technet.com/b/microsoftintune/)也會討論服務的變更，並提供實用秘訣，讓您充分利用 Intune。
+若要了解 Intune 服務的變更，請參閱 [Microsoft Intune 的新功能](/intune/deploy-use/whats-new-in-microsoft-intune)。 [Microsoft Intune 部落格](http://blogs.technet.com/b/microsoftintune/)也會討論服務的變更，並提供實用秘訣，讓您充分利用 Intune。 
 
 我們也將會透過 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)訊息中心，通知您重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。
 
@@ -65,7 +65,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 -   **Intune 獨立設定。** 使用 Intune 中的 Web 式管理主控台來管理您組織中的裝置。 您可以在不含任何內部部署 IT 基礎結構的情況下使用 Intune，但是如果您使用 Intune 搭配 Active Directory 網域服務，就可以將透過網域服務來管理的網域使用者帳戶與 Intune 搭配使用。
 
--   **Intune 搭配 System Center Configuration Manager。** 使用 Configuration Manager 管理主控台來管理您企業中的電腦和行動裝置。 此設定可協助您透過單一主控台 (Configuration Manager 管理主控台) 來管理貴組織的所有裝置。 Configuration Manager 可支援非常大量的行動裝置、伺服器及電腦。 如需詳細資訊，請參閱 [System Center 2012 Configuration Manager 文件庫](https://technet.microsoft.com/library/gg682041.aspx)中的[如何使用 Configuration Manager 和 Microsoft Intune 管理行動裝置](http://go.microsoft.com/fwlink/?LinkID=271118)。  若要更多協助以決定哪種方法最適合您，請參閱 [選擇 Microsoft Intune 獨立和混合式行動裝置管理與 Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)。
+-   **Intune 搭配 System Center Configuration Manager。** 使用 Configuration Manager 管理主控台來管理您企業中的電腦和行動裝置。 此設定可協助您透過單一主控台 (Configuration Manager 管理主控台) 來管理貴組織的所有裝置。 Configuration Manager 可支援非常大量的行動裝置、伺服器及電腦。 如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。  若要更多協助以決定哪種方法最適合您，請參閱 [選擇 Microsoft Intune 獨立和混合式行動裝置管理與 Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)。 
 
 
 ## 深入了解 Intune
@@ -73,7 +73,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 -   [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供 Intune 的安全性、隱私權和相容性做法的相關資訊，並說明其中一些 Intune 憑證。
 
--   [Microsoft Intune 的行動裝置管理功能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune 的已註冊裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### 請參閱
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
