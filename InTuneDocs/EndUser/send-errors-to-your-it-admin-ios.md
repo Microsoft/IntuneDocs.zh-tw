@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 35cb5187260eb7b96e09ee7feb24bad90cbb0cb3
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
 
 
 ---
@@ -31,11 +31,10 @@ ms.openlocfilehash: 35cb5187260eb7b96e09ee7feb24bad90cbb0cb3
 
 -   當您在公司入口網站應用程式中時：搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] &gt; [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
 
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

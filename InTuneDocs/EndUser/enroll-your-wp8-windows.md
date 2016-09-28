@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ac887f3-52e1-41f0-97fe-21985e0573ab
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 2cf58c3e1e70febe8709f3ce6c81d72d9cdda985
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 7c2d82d867f2e82ebe49eee760def22219fd89e1
 
 
 ---
@@ -37,12 +37,10 @@ ms.openlocfilehash: 2cf58c3e1e70febe8709f3ce6c81d72d9cdda985
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[在 Intune 註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)</br>
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "深入了解 Intune 如何與 Windows Hello 企業版整合，這�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Intune 以兩種方式與 Hello 企業版整合：
 -   您可以使用 Intune 原則，控制使用者可以和無法用以登入的筆勢。
 
 -   您可以將驗證憑證儲存在 Windows Hello 企業版金鑰儲存提供者 (KSP) 中。 如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。
+
+> [!IMPORTANT]
+> 在年度更新版之前的 Windows 10 電腦和行動裝置版本中，您可以設定兩個不同的 PIN 碼，以用來驗證資源：
+- 「裝置 PIN」可以用來解除鎖定裝置及連線到雲端資源。
+- 「公司 PIN」是用來在使用者的個人裝置 (BYOD) 上存取 Azure AD 資源。
+
+>在年度更新版中，這兩個 PIN 已經合併成一個單一的裝置 PIN 。
+任何您設定來控制裝置 PIN 的 Intune 設定原則，以及您所設定的 Windows Hello 企業版原則，現在都會設定此一新 PIN 值。
+如果您將這兩種原則都設定成可以控制該 PIN，則 Windows Hello 企業版原則將會套用到 Windows 10 電腦和行動裝置。
+若要確保解決原則衝突，且正確套用 PIN 原則，請更新您的 Windows Hello 企業版原則，以符合您設定原則中的設定，並要求使用者在「公司入口網站」App 中同步他們的裝置。
+
+
 
 ## 建立 Windows Hello 企業版原則
 
@@ -67,6 +79,6 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

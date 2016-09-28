@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/28/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 1260ef2cf63563e492831709656eea8ec45eef22
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 
 ---
@@ -42,11 +42,8 @@ ms.openlocfilehash: 1260ef2cf63563e492831709656eea8ec45eef22
 需要協助嗎？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
