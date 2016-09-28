@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 9a763e13818ec5c1708d121125cadd37e25e3193
 
 
 ---
@@ -96,11 +96,10 @@ ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
 
 如果您看見如上所述的相同「遺失憑證」訊息，且您已經遵循上述步驟，這可能表示還有另一個您的 IT 系統管理員需協助您安裝的憑證。 請連絡 IT 系統管理員，並提供該人員此[連結](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含協助您解決問題的步驟。
 
-### 請參閱
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

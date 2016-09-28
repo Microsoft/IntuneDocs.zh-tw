@@ -4,7 +4,7 @@ description: "可與您的終端使用者分享的資訊連結"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
+ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
+ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 ---
@@ -57,14 +57,12 @@ ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 - [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
 - [Windows 使用者如何取得其應用程式](how-your-windows-users-get-their-apps.md)
 
-## 幫助使用者了解公司入口網站應用程式訊息
 
-若要協助使用者解決它們可能會在使用公司入口網站時遇到的問題，您可以檢閱[使用者可能會在公司入口網站中看到的訊息清單](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
 如果您有其他想要本文內容涵蓋的其他資訊，請將您的建議新增到本主題底部的 [留言] 方塊。 感謝您！
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

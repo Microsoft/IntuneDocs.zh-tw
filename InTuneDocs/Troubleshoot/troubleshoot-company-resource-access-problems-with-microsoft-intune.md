@@ -4,7 +4,7 @@ description: "本主題中的錯誤和狀態碼可協助您針對資源存取問
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|正在擷取內容|可能的原因：工作狀態 30 表示使用者下載應用程式失敗。<br /><br />發生此錯誤的可能原因如下：<br /><br />裝置於下載期間失去網際網路連線。<br /><br />註冊期間發給裝置的憑證可能已過期。<br /><br />避免方法：<br /><br />從裝置的控制台啟動公司應用程式，以確認裝置憑證並未過期；如果過期，則您必須重新註冊該裝置。<br /><br />確認裝置已連線到網際網路，然後再次嘗試要求應用程式。|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|內容下載完成||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|安裝進行中||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|安裝發生錯誤|應用程式安裝在下載之後失敗。<br /><br />用來簽署應用程式的程式碼簽署憑證不存在裝置上。<br /><br />在裝置上未發現已安裝應用程式依存的架構相依性。<br /><br />確保用來簽署應用程式的程式碼簽署憑證存在於裝置上，並向管理員確認已為企業註冊的所有 Windows RT 裝置指定這類憑證作為目標。<br /><br />如果安裝失敗是因為遺失架構相依性所導致，管理員就必須再次封裝架構以及應用程式套件，重新發行應用程式。<br /><br />下載的應用程式套件不是有效的套件、可能已損毀，或者可能無法與裝置上的作業系統版本相容。|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|發生安裝錯誤|應用程式安裝在下載之後失敗。<br /><br />用來簽署應用程式的程式碼簽署憑證不存在裝置上。<br /><br />在裝置上未發現已安裝應用程式依存的架構相依性。<br /><br />確保用來簽署應用程式的程式碼簽署憑證存在於裝置上，並向管理員確認已為企業註冊的所有 Windows RT 裝置指定這類憑證作為目標。<br /><br />如果安裝失敗是因為遺失架構相依性所導致，管理員就必須再次封裝架構以及應用程式套件，重新發行應用程式。<br /><br />下載的應用程式套件不是有效的套件、可能已損毀，或者可能無法與裝置上的作業系統版本相容。|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|安裝成功||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|正在解除安裝||
 |90 (APP_CI_ENFORCEMENT_ERROR)|發生解除安裝錯誤||
@@ -127,7 +127,7 @@ ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 |-2016314112|0x87D17D00|22000：無效的金鑰使用方式|
 |-2016315105|0x87D1791F|21007：無法驗證帳戶|
 |-2016315106|0x87D1791E|21006：無法解密憑證|
-|-2016315107|0x87D1791D|21005：有重複的帳戶|
+|-2016315107|0x87D1791D|21005：有重複的帳戶 (電子郵件設定檔已存在於裝置上)|
 |-2016315108|0x87D1791C|21004：無法建立帳戶|
 |-2016315109|0x87D1791B|21003：沒有主機名稱|
 |-2016315110|0x87D1791A|21002：無法符合伺服器的加密原則|
@@ -205,7 +205,7 @@ ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 |-2016324111|0x87D155F1|12001：多個 MDM 執行個體|
 |-2016324112|0x87D155F0|12000：無效的存取權限|
 |-2016325111|0x87D15209|11001：自訂 APN 已安裝|
-|-2016325112|0x87D15208|11000：無法安裝 VPN|
+|-2016325112|0x87D15208|11000：無法安裝 APN|
 |-2016326111|0x87D14E21|10001：無效的簽署者|
 |-2016326112|0x87D14E20|10000：無法安裝預設值|
 |-2016327106|0x87D14A3E|9006：憑證不是身分識別|
@@ -372,6 +372,6 @@ ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

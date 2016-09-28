@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
+ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
+ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 
 ---
@@ -66,7 +66,14 @@ ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 - **USB 偵錯需為停用 (Android 4.2 或更新版本)**︰此設定指定是否要偵測裝置上已啟用 USB 偵錯選項。
 - **裝置必須已啟用 [掃描裝置的安全性威脅 (Android 4.2-4.4)]**︰此設定指定要在裝置上啟用 [驗證應用程式] 功能。
 - **Android 安全性修補程式等級下限 (Android 6.0 或更新版本)**︰使用此設定可指定 Android 的最低修補程式等級。  未至少達此修補程式等級的裝置將視為不相容。 日期的格式必須指定為︰ YYYY-MM-DD。
+- **必須啟用裝置威脅防護**：使用此設定進行來自 Lookout MTP 解決方案的風險評估，以做為相容的條件。 選取允許的最高威脅等級，這會是下列其中一項：
 
+  - **無 (受保護)**：這是最安全的選項。 這表示裝置不能受到任何威脅。 如果在裝置上偵測到任何等級的威脅，則會評估為不相容。
+  - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中**︰如果裝置有低等級或中等級的威脅，則會將裝置評估為相容。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
+  - **高**：這是最不安全的選項。 基本上，這會允許所有威脅等級，或許僅在此解決方案的用途只有報告時才適用。
+
+  如需詳細資訊，請參閱[啟用相容性原則中的裝置威脅保護規則](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
 ## 裝置屬性設定
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
@@ -76,6 +83,6 @@ ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

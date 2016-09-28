@@ -4,7 +4,7 @@ description: "描述在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置的�
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 48520979cfd0ae9a4e5df331f8660333780a783b
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
 
 ---
@@ -63,12 +63,9 @@ ms.openlocfilehash: 48520979cfd0ae9a4e5df331f8660333780a783b
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[在 Intune 註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)</br>
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
