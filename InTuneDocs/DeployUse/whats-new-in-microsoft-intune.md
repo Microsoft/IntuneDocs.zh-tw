@@ -2,9 +2,9 @@
 title: "新功能 | Microsoft Intune"
 description: "了解本月 Microsoft Intune 版本的新功能，以及過去的版本"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -68,10 +68,15 @@ Microsoft 正在整合 Lookout 的行動威脅保護解決方案，藉由偵測�
 
 ### Android
 
-**在 Android 的公司入口網站新增「通知」**<br/>
-Azure 公司入口網站的首頁新增了通知圖示。 點選此圖示可存取 [通知] 頁面，為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 iOS 公司入口網站應用程式已經有這項通知體驗。 有了新的 [通知] 頁面，只要該裝置已經註冊，使用者便不會在每次啟動或繼續使用公司入口網站時看見 [公司存取設定] 頁面。 如果您建立自己的終端使用者指南，建議您更新文件以反映這項變更。 [這裡](https://aka.ms/androidcpupdate)提供更新的螢幕擷取畫面。  
+**在適用於 Android 的公司入口網站新增「通知」**<br/>
+適用於 Android 的公司入口網站的首頁新增了通知圖示。 點選此圖示可存取 [通知] 頁面，為您的終端使用者顯示公司入口網站應用程式中所有需要注意的項目，例如裝置不相容、註冊更新，以及註冊啟用。 iOS 公司入口網站應用程式已經有這項通知體驗。 有了新的 [通知] 頁面，只要該裝置已經註冊，使用者便不會在每次啟動或繼續使用公司入口網站時看見 [公司存取設定] 頁面。 如果您建立自己的終端使用者指南，建議您更新文件以反映這項變更。 [這裡](https://aka.ms/androidcpupdate)提供更新的螢幕擷取畫面。  
 <!---TFS 1095560--->
 
+**在適用於 Android 的公司入口網站提供意見反應**</br>
+適用於 Android 的公司入口網站的功能表新增了新項目。 點選 [說明與意見反應] 會顯示三個動作︰
+* 使用 [取得說明] 回報公司入口網站的問題給您的 IT 部門。 IT 會使用您的電子郵件用戶端建立電子郵件，並附加公司入口網站記錄。 [取得說明] 會取代 [設定] 頁面上的 [傳送資料] 功能。
+* 使用 [提供意見反應] 來提供意見反應給公司入口網站小組。
+* 使用 [為我們的應用程式評分]，在 Google Play 上為公司入口網站應用程式評分或評論。
 
 ### iOS
 **變更 iOS 公司入口網站應用程式的支援**<br/>
@@ -88,7 +93,7 @@ iOS 版公司入口網站 App 已經對應用程式磚進行下列變更，將�
 <!---TFS 1317133--->
 
 **提示安裝 iOS Managed Browser 應用程式 (若 IT 專業人員針對應用程式設定該需求)**<br/>
-如果您已經設定僅能在受管理的瀏覽器中開啟 Web Clip，而裝置上並未安裝受管理的瀏覽器，裝置上的公司入口網站 App 將會提示使用者安裝受管理的瀏覽器，然後才能安裝網 Web Clip。 
+如果您已經設定僅能在受管理的瀏覽器中開啟 Web Clip，而裝置上並未安裝受管理的瀏覽器，裝置上的公司入口網站 App 將會提示使用者安裝受管理的瀏覽器，然後才能安裝網 Web Clip。
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Intune 的新客戶將會**比目前的租用戶更快看見某些安全性群�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
