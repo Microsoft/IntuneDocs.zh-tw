@@ -91,7 +91,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 ### 若要重新整理電腦清查以確保它是最新的
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要重新整理清查之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要重新整理清查之電腦的其他群組)]。
 
 2.  選取電腦，或按住 **Ctrl** 鍵選取多部電腦。
 
@@ -104,7 +104,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 ## 從遠端重新啟動 Windows 電腦
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要重新啟動之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要重新啟動之電腦的其他群組)]。
 
 2.  選取一或多部電腦，然後選擇 [遠端工作] &gt; [重新啟動電腦]。
 
@@ -114,7 +114,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 ## 淘汰電腦
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要淘汰之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要淘汰之電腦的其他群組)]。
 
 2.  選取您要淘汰的裝置，然後選擇 [淘汰/抹除]。
 
@@ -148,7 +148,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 ### 若要將使用者連結到電腦
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要連結至使用者之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要連結至使用者之電腦的其他群組)]。
 
 2.  選取您想要連結使用者的電腦，然後選擇 [連結使用者]。
 
