@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
 
 
 ---
@@ -50,7 +50,7 @@ Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方
 5.  **新增公司裝置註冊原則**：在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 **[原則]** &gt; **[公司裝置註冊]**，然後按一下 **[新增]**。
 
     提供 **[一般]** 詳細資料 (包括 **[名稱]** 和 **[描述]**)，並指定指派給設定檔的裝置是否具有使用者親和性，或隸屬於某個群組。
-      - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後便可以該使用者身分存取公司資料與電子郵件。  應針對使用者所擁有且需要使用公司入口網站 (如安裝 App) 之受 DEP 管理的裝置設定**使用者親和性**。
+      - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後便可以該使用者身分存取公司資料與電子郵件。  應針對使用者所擁有且需要使用公司入口網站 (如安裝 App) 之受 DEP 管理的裝置設定**使用者親和性**。 **注意**︰具有使用者親和性的 DEP 裝置不支援多重要素驗證。
       - **無使用者親和性**：該裝置不會與使用者建立關聯。 針對執行工作而不需存取本機使用者資料的裝置，請使用此關係。 需要使用者關聯的應用程式 (包含用於安裝企業營運應用程式的公司入口網站應用程式) 將無法運作。
 
     您也可以**將裝置指派給以下群組**。 按一下 [Select...] (選取…) 選擇群組。
@@ -89,7 +89,7 @@ Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方
 
 6.  **指派要管理的 DEP 裝置**：前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司 Apple ID 登入。 移至 **[部署方案]** &gt; **[裝置註冊方案]** &gt; **[管理裝置]**。 指定您 **選擇裝置**的方式、提供裝置資訊，並利用裝置的 [序號] 、[訂單號碼] 或 [上傳 CSV 檔案] 指定詳細資料。 接著，選取 **[Assign to Server]** (指派給伺服器)，然後選取針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt;，然後按一下 **[確定]**。
 
-7.  **同步處理 DEP 管理的裝置**：以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 **[系統管理]** &gt; **[行動裝置管理]** &gt; **[iOS]** &gt; **[裝置註冊方案]**，然後按一下 **[Sync now]** (立即同步處理)。 同步處理要求會傳送至 Apple。 若要在同步處理之後查看 DPE 管理的裝置，請在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 **[群組]** &gt; **[所有屬公司擁有的裝置]**。 在 [屬公司擁有的裝置] 工作區中，受管理裝置的 [狀態] 會顯示為 [未連線]，直到裝置開機並執行 [設定助理] 來註冊裝置為止。
+7.  **同步處理 DEP 管理的裝置**：以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 **[系統管理]** &gt; **[行動裝置管理]** &gt; **[iOS]** &gt; **[裝置註冊方案]**，然後按一下 **[Sync now]** (立即同步處理)。 同步處理要求會傳送至 Apple。 若要在同步處理之後查看 DPE 管理的裝置，請在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [公司預先註冊的裝置] &gt;[依 iOS 序號]。 在 [依 iOS 序號] 工作區中，受管理裝置的 [狀態] 會顯示為 [未連線]，直到裝置開機並執行 [設定助理] 來註冊裝置為止。
 
     若要符合可接受 DEP 流量的 Apple 詞彙，Intune 具有下列限制︰
      -  完整 DEP 同步處理每 7 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在前一個完整同步處理的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
@@ -99,13 +99,13 @@ Microsoft Intune 可以部署註冊設定檔，該設定檔會以「無線」方
 
 ## Intune 群組指派的變更
 
-從十月開始，裝置群組管理會移動到 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 此程序可確保預先指派裝置群組的裝置會自動註冊到群組中並部署原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+從 11 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 此程序可確保預先指派裝置群組的裝置會自動註冊到群組中並部署原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 請參閱
 [準備註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

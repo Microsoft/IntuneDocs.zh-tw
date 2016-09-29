@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
 1. 確定您已備妥正確的憑證基礎結構，如[設定 SCEP 的憑證基礎結構](configure-certificate-infrastructure-for-scep.md)及[設定 PFX 的憑證基礎結構](configure-certificate-infrastructure-for-pfx.md)中所述。
 
 2. 在每部裝置上安裝根憑證或中繼憑證授權單位 (CA) 憑證，讓裝置可以辨識 CA 的合法性。 若要這樣做，請建立並部署**信任的憑證設定檔**。 當您部署這個設定檔時，您使用 Intune 管理的裝置就會要求並接收根憑證。 每個平台必須分別建立各自的設定檔。 **信任的憑證設定檔**適用於這些平台 ︰
- -  iOS 7.1 和更新版本
+ -  iOS 8.0 和更新版本
  -  Mac OS X 10.9 及更新版本
  -  Android 4.0 及更新版本
  -  Windows 8.1 及更新版本
@@ -33,7 +33,7 @@ ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
 
 3. 建立憑證設定檔，讓每個裝置要求一個用於驗證 VPN、Wi-Fi 和電子郵件存取的憑證，如[設定 Intune 憑證設定檔](configure-intune-certificate-profiles.md)中所述。 您可以針對執行這些平台的裝置，建立並部署 **PKCS #12 (.PFX) 憑證設定檔**或 **SCEP 憑證設定檔**︰
 
-  -  iOS 7.1 和更新版本
+  -  iOS 8.0 和更新版本
   -  Android 4.0 及更新版本
   -  Windows 10 (桌面版和行動裝置版) 和更新版本
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

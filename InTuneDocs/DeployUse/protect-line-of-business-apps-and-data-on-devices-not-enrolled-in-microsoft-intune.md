@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 ##  步驟 1：準備應用程式
 您必須先使用 Microsoft Intune App Wrapping Tool 來包裝應用程式，才能將 MAM 原則套用至應用程式。  下載中包含應用程式包裝工具的安裝和使用指示。  
 >[!IMPORTANT]  
->這版的應用程式包裝函式工具支援未在 Intune 中註冊的裝置，可在未來幾週的私人預覽中提供。 如果您想要參與，請將郵件傳送至 msintuneappsdk@microsoft.com 以取得詳細資訊。
+>這版的 App Wrapping Tool 提供公開預覽版本，其支援未在 Intune 中註冊的裝置。 如果您想要參與公開預覽版本，您可以從[此 GitHub 頁面](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) (適用於 iOS) 和[此 GitHub 網站](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) (適用於 Android) 下載該工具。
 
 ## 步驟 2：新增應用程式
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

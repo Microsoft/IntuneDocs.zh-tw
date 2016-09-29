@@ -4,7 +4,7 @@ description: "Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4993982adcfbc960ad71022268cc44d216d1c585
-ms.openlocfilehash: fb4ae43ffcbec24147e2e3ce3c96ec795289c925
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: 00d63fa55cd29c938dd082e2eff240f08319e01a
 
 
 ---
@@ -25,11 +25,15 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公�
 ## 適用於 ADFS MFA 的內部部署基礎結構需求
 若要設定 Multi-factor Authentication，需要下列項目：
 
+-   自動註冊，如[設定 Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)中所述。
 -   **已加入 ADFS 伺服器的 Active Directory 網域。**
 
 -   **為 MFA 設定的 Active Directory Federation Services (ADFS) 伺服器。** 執行 Windows Server 2012 R2 且設定為 ADFS 伺服器的伺服器。 如需詳細資訊，請參閱[搭配 Windows Server 2012 R2 AD FS 使用 Azure Multi-Factor Authentication Server 保護雲端和內部部署資源](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)
 
-所有上述伺服器都必須符合 [Windows Server 2012 R2 的系統需求和安裝資訊](http://technet.microsoft.com/library/dn303418.aspx)中的系統需求。
+這些伺服器必須符合 [Windows Server 2012 R2 的系統需求和安裝資訊](http://technet.microsoft.com/library/dn303418.aspx)中的系統需求。
+
+ 
+
 
 #### MFA 搭配 Intune
 如果您的組織有內部部署 IT 基礎結構 (含有 Active Directory 網域和 Active Directory Federation Services (ADFS))，您可以在同盟伺服器上設定 MFA，然後針對 Intune 註冊啟用 MFA。 藉由在 Intune 上設定 MFA，使用者在註冊期間驗證一次，之後就能使用公司資源，而不需要每次重複 MFA 程序。
@@ -55,6 +59,6 @@ Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

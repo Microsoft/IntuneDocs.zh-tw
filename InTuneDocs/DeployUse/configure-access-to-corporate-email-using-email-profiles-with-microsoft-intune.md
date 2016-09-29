@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 您可以使用電子郵件設定檔，在下列裝置類型上設定原生電子郵件用戶端：
 -   Windows Phone 8 和更新版本
 -   Windows 10 (適用於桌上型電腦)、Windows 10 Mobile 和更新版本
--   iOS 7.1 和更新版本
+-   iOS 8.0 和更新版本
 -   Samsung KNOX 標準 4.0 及更新版本
 
 除了在裝置上設定電子郵件帳戶，您可以設定要同步處理的電子郵件數量，以及每種裝置類型所要同步處理的內容類型。
@@ -71,7 +71,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 
     -   **Samsung KNOX Standard (4.0 和更新版本) 的電子郵件設定檔**
 
-    -   **電子郵件設定檔 (iOS 7.1 和更新版本)**
+    -   **電子郵件設定檔 (iOS 8.0 和更新版本)**
 
     -   **電子郵件設定檔 (Windows Phone 8 和更新版本)**
 
@@ -122,6 +122,6 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

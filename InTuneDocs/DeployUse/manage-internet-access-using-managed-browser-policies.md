@@ -4,7 +4,7 @@ description: "部署受管理的瀏覽器應用程式，以限制網頁瀏覽和
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Android - 無法使用受管理瀏覽器應用程式。<br /><br />
 
 -   執行 Android 4 和更新版本的裝置
 
--   執行 iOS 7.1 及更新版本的裝置
+-   執行 iOS 8.0 和更新版本的裝置
 
 Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)開啟網路內容。
 
@@ -44,9 +44,9 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 
 2.  設定下列其中一種 [軟體]  原則類型：
 
-    -   **受管理瀏覽器原則 (Android 4 及更新版本)**
+    -   **Managed Browser (Android 4 及更新版本)**
 
-    -   **受管理的瀏覽器原則 (iOS 7.1 及更新版本)**
+    -   **Managed Browser (iOS 8.0 及更新版本)**
 
     如需如何建立和部署原則的詳細資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)主題。
 
@@ -154,6 +154,6 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

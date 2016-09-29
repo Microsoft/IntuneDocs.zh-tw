@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # 使用 Microsoft Intune 的啟用鎖定略過協助保護 iOS 裝置
-Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。 當使用者在裝置上開啟「尋找我的 iPhone」應用程式時，啟用鎖定會自動啟用。 啟用之後，就必須輸入使用者的 Apple ID 和密碼，才能夠讓所有人： 
+Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 8.0 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。 當使用者在裝置上開啟「尋找我的 iPhone」應用程式時，啟用鎖定會自動啟用。 啟用之後，就必須輸入使用者的 Apple ID 和密碼，才能夠讓所有人： 
 
 -   關閉「尋找我的 iPhone」
 
@@ -43,7 +43,7 @@ Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更�
 > iOS 裝置的受監督模式可讓您使用 Apple Configurator 鎖定裝置，並將功能限制在特定商務用途。 受監督的模式通常僅適用於屬公司擁有的裝置。
 
 ## Intune 如何協助您管理啟用鎖定
-Intune 可以要求執行 iOS 7.1 和更新版本之受監督和不受監督裝置的啟用鎖定狀態。 僅針對受監督的裝置，Intune 可以擷取啟用鎖定略過碼並直接發給裝置。 如果已抹除裝置，您可以使用代碼作為使用者名稱，並使用空白密碼，進而直接存取裝置。
+Intune 可以要求執行 iOS 8.0 和更新版本之受監督和不受監督裝置的啟用鎖定狀態。 僅針對受監督的裝置，Intune 可以擷取啟用鎖定略過碼並直接發給裝置。 如果已抹除裝置，您可以使用代碼作為使用者名稱，並使用空白密碼，進而直接存取裝置。
 
 **這對公司的好處包括**：
 
@@ -76,7 +76,7 @@ Intune 可以要求執行 iOS 7.1 和更新版本之受監督和不受監督裝�
 
     -   未啟用
 
-    未執行 iOS 7.1 或更新版本之裝置的 **[啟用鎖定狀態]** 方塊為空白。
+    未執行 iOS 8.0 或更新版本之裝置的 [啟用鎖定狀態] 方塊為空白。
 
 -   在群組檢視中選取一部裝置，以便在裝置詳細資料窗格中顯示啟用鎖定狀態。
 
@@ -92,6 +92,6 @@ Intune 可以要求執行 iOS 7.1 和更新版本之受監督和不受監督裝�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
