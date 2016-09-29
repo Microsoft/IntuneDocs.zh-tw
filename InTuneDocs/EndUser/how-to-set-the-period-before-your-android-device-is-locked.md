@@ -25,9 +25,9 @@ ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
 
 ## 原生 (非 Samsung KNOX) 裝置
 
-1.  在裝置的 [設定] 中，點選 [安全性] &gt; [Automatically Lock (自動鎖定)] &#41在某些裝置上，這會顯示為 [Lock phone after (在下列時間後鎖定電話)])。
+1.  在裝置的 [設定] 中，點選 [安全性] &gt; [Automatically Lock (自動鎖定) (在某些裝置上，這會顯示為 [Lock phone after (在下列時間後鎖定電話)])。
 
-    如果未顯示 [Automatically Lock (自動鎖定)] &#41 在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
+    如果未顯示 [Automatically Lock (自動鎖定) (在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
 
 2.  選取密碼逾時值。
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
 
 1.  在裝置上的 [設定]，點選 [Lock screen and security (鎖定畫面及安全性) ] &gt; [Lock automatically (自動鎖定)]。
 
-    如果未顯示 [Lock automatically (自動鎖定)] &#41 在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
+    如果未顯示 [Lock automatically (自動鎖定) (在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])，請確定您已在 [設定] &gt; [螢幕鎖定] &gt; [密碼] 下設定有效的密碼。
 
 2.  選取密碼逾時值。
 
