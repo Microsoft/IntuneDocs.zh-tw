@@ -4,7 +4,7 @@ description: "使用 Intune 開始部署應用程式之前，請花點時間熟�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8bc18a2f77a2ebcc4a3a2fc4d0902e745991dfae
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: 8bc18a2f77a2ebcc4a3a2fc4d0902e745991dfae
 您可以使用受管理 iOS 應用程式，管理和部署 App Store 的免費 iOS 應用程式。 您也可以使用受管理 iOS 應用程式，將[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)與[相容的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)產生關聯，並在系統管理員主控台中檢閱其狀態。<br /><br />受管理 iOS 應用程式不會儲存在您的 Intune 雲端儲存空間中。
 
 > [!TIP]
-> 在您[設定 MDM 授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md)為 Intune 前，無法使用行動裝置的選項。
+> 在您[設定 MDM 授權單位](prerequisites-for-enrollment.md)為 Intune 前，無法使用行動裝置的選項。
 
 ## Intune 軟體發行者
 當您從 Intune 管理主控台新增或修改應用程式時，Microsoft Intune 軟體發行者便會啟動。 您可以從發行者選取和設定軟體安裝程式類型，以便：
@@ -82,6 +82,6 @@ Windows 10 電腦不需要側載金鑰，即可安裝商務營運應用程式。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

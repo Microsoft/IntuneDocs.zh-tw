@@ -1,5 +1,4 @@
 ---
-experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
@@ -13,9 +12,10 @@ ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">裝置和應用程式生命週期的概觀</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保護應用程式資料</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">要告訴使用者的 Intune 相關事項</a></li>
+          <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune 文件下載</a></li>
         </ul>
       </div>
     </section>
@@ -263,7 +263,7 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
           <ul class="column-half">
           <li><a href="https://microsoftintune.uservoice.com/" target="_blank">針對 Intune 功能提供意見反應</a></li>
           <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">針對 Intune 文件提供意見反應</a></li>
-          <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune 文件下載</a></li>
+
           </ul>
           <ul class="column-half">
           <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Enterprise Mobility Suite 的快速追蹤中心</a></li>
