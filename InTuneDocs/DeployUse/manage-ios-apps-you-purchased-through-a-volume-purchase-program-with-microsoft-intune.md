@@ -44,7 +44,7 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 ## 取得並上傳 Apple VPP 權杖
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [管理員] &gt; [iOS 和 Mac OS X] &gt; [大量採購方案]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [管理員] &gt; [iOS 和 Mac OS X] &gt; [大量採購方案]。
 
 2.  選擇 **Apple VPP 帳戶**連結。 如果還沒有這麼做，請註冊企業大量採購方案。 在註冊之後，請下載您帳戶的 Apple VPP Token。
 
