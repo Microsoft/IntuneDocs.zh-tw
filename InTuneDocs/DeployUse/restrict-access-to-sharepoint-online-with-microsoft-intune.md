@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
-ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
 
 
 ---
@@ -32,14 +32,10 @@ ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 ![此圖顯示決定允許或禁止裝置存取 SharePoint 的決策點 ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->透過使用新式驗證的應用程式來設定電腦和 Windows 10 行動裝置版的條件式存取，目前未提供給所有 Intune 客戶使用。 如果您已經在使用這些功能，您不需要採取任何動作。 您可以繼續使用它們。
-
->如果您尚未使用新式驗證針對應用程式建立電腦或 Windows 10 行動裝置版的條件式存取原則，而您想要這麼做，請註冊 Azure Active Directory 公開預覽，其中包括裝置型條件式存取，以存取使用 Intune 管理的裝置或已加入網域的 Windows 電腦。 若要深入了解，請閱讀[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)。
 
 設定 SharePoint Online 的條件式存取原則**之前**，您必須：
 - 具有 **SharePoint Online 訂用帳戶**，且使用者必須獲得 SharePoint Online 的授權。
-- 成為 **Enterprise Mobility Suite** 或 **Azure Active Directory Premium** 的訂用帳戶。
+- 擁有 **Azure Active Directory Premium 訂用帳戶**。 如需詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。**Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
 
   若要連接到所需的檔案，裝置必須：
 -   已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **註冊**或是已加入網域的電腦。
@@ -61,6 +57,7 @@ ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 >[!NOTE]
 >如果您啟用 SharePoint Online 的條件式存取，建議您停用 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主題中所述之清單上的網域。  
+
 ## 支援行動裝置
 - iOS 8.0 和更新版本
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
@@ -75,7 +72,9 @@ ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 ## 對電腦的支援
 - Windows 8.1 及更新版本 (已向 Intune 註冊)
-- Windows 7.0 或 Windows 8.1 (已加入網域時)
+- Windows 7.0、Windows 8.1 或 Windows 10 (已加入網域時)
+> [!NOTE]
+>若要搭配使用條件式存取與 Windows 10 電腦，您必須使用 Windows 10 年度更新版來更新這些電腦。
 
   - 已加入網域的電腦必須設定為向 Azure Active Directory [自動登錄](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
 Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置註冊服務的客戶不會在其內部部署 Active Directory 中看到已註冊的裝置。
@@ -122,6 +121,10 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> 您也可以在 Azure AD 管理主控台中建立條件式存取原則。 除了其他條件式存取原則 (例如 Multi-Factor Authentication) 之外，Azure AD 管理主控台還可讓您建立 Intune 裝置條件式存取原則 (在 Azure AD 中稱為「裝置型條件式存取原則」)。  您也可以設定協力廠商企業應用程式 (例如，Azure AD 所支援的 Salesforce 和 Box) 的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+
+
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com) 中，選擇 [原則]  >  [條件式存取]  >  [SharePoint Online 原則]。
 ![[SharePoint Online 原則] 頁面的螢幕擷取畫面](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +139,6 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
         選取 [所有平台] 選項表示 Azure Active Directory 會將此原則套用至所有驗證要求，而不論用戶端應用程式所回報的平台為何。  所有平台都需要註冊並變成相容，除了︰
         *   Windows 裝置必須註冊並相容，使用內部部署 Active Directory 加入網域，或兩者兼具
         * 不支援例如 Mac 的平台。  不過，使用來自這些平台之新式驗證的應用程式，仍然會被封鎖。
-        >[!TIP]
-        >如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中找到關於如何存取此功能的詳細資訊。
 
     -   **特定平台**
 
@@ -192,6 +193,6 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

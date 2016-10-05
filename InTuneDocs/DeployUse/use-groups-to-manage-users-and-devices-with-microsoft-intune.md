@@ -4,7 +4,7 @@ description: "使用 [群組] 工作區建立及管理群組。"
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
+ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 >[!IMPORTANT]
 >
->如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 Azure Active Directory (Azure AD) 入口網站的連結，則表示您已經在 Intune 中使用「新的」Azure AD 安全性群組方法進行群組管理，如[請注意即將進行改進的群組系統管理員體驗](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 按一下 Azure AD 入口網站的連結，即可建立及管理您的群組。 若要了解如何使用 Azure AD 安全性群組，請參閱[使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
+>如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 Azure Active Directory (Azure AD) 入口網站的連結，則表示您已經在 Intune 中使用「新的」Azure AD 安全性群組方法進行群組管理，如[請注意即將進行改進的群組系統管理員體驗](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 按一下 Azure AD 入口網站的連結，即可建立及管理您的群組。 
 >
 >如果您看不到 Azure AD 入口網站的連結，則表示您仍使用「目前的」方法進行群組管理，如本主題的[使用 Microsoft Intune 建立群組以管理使用者和裝置](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 
 ### 移轉至新群組體驗的的方式和時間點為何？
-我們將會花一段時間遷移目前的 Intune 客戶。 我們正在訂定移轉的排程，並將在幾週內更新本主題以提供更多詳細資訊。 我們將在遷移之前通知您。 如果您有任何移轉上的問題，請在 <intunegrps@microsoft.com> 連絡我們的移轉小組。
+我們將會花一段時間遷移目前的 Intune 客戶。 我們正在訂定移轉的排程，並將在幾週內更新本主題以提供更多詳細資訊。 我們將在遷移之前通知您。 如果您有任何移轉上的問題，請在 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 連絡我們的移轉小組。 如需如何移轉群組的詳細資訊，請參閱[將群組移轉至 Azure Active Directory](migrating-groups-to-azure-active-directory.md)。
 
 ### 現有的使用者和裝置群組會發生什麼事？
  您在 Intune 中建立的使用者群組和裝置群組將會遷移至 Azure AD 安全性群組。 預設的 Intune 群組，例如 [所有使用者] 群組等，只有在移轉期間於部署中使用它們時，其才會被遷移。 某些群組的移轉可能更複雜。 如果組織中的移轉需要額外的步驟，我們會通知您。
@@ -202,6 +202,6 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

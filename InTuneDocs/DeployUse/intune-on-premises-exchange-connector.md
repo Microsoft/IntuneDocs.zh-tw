@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 |---------------|--------------------|
 |作業系統|在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此連接器。|
 |Microsoft Exchange 版本|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為**新**或**舊版**設定，請連絡您的帳戶管理員。|
-|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)。|
+|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)。|
 |硬體|安裝連接器的電腦至少需配備 1.6 GHz CPU、2 GB RAM 和 10 GB 可用硬碟空間的硬體。|
 |設定 Active Directory 同步處理。|使用其中任一 Connector 將 Intune 連線到您的 Exchange Server 之前，您必須先[設定 Active Directory 同步處理](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理。|
 |其他軟體|託管連接器的電腦必須安裝 Microsoft .NET Framework 4 和 Windows PowerShell 2.0 的完整安裝。|
@@ -131,6 +131,6 @@ ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

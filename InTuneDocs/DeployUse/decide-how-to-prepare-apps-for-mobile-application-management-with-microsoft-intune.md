@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: df1b58d5ce94c985e71f3afbe228dba9438040dc
+ms.openlocfilehash: d79c498fd775ee9b3d59761fec2fe6ebba116d6d
 
 
 ---
@@ -23,26 +23,30 @@ ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用行動應用程式管理 (MAM) 原則。 使用這項資訊可了解這兩種方法和其使用時機。
 
 ## Intune App Wrapping Tool
-App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具是可建立應用程式包裝函式的命令列應用程式，因而可讓 Intune 行動應用程式管理原則管理應用程式。 您不需要原始程式碼即可使用工具，但需要簽署認證。  如需簽署認證的詳細資訊，請參閱 [Intune 部落格](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 如需 App Wrapping Tool 文件，請參閱 [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
+App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具是可建立應用程式包裝函式的命令列應用程式，因而可讓 Intune 行動應用程式管理原則管理應用程式。 
 
-App Wrapping Tool 不支援 App 或 Play Store 中的應用程式或需要開發時間整合的功能 (請參閱下列功能比較表)。
+您不需要原始程式碼即可使用工具，但需要簽署認證。  如需簽署認證的詳細資訊，請參閱 [Intune 部落格](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 如需 App Wrapping Tool 文件，請參閱 [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
+
+App Wrapping Tool **不**支援 Apple App Store 或 Google Play Store 中的應用程式或需要開發人員整合的特定功能 (請參閱下列功能比較表)。
 
 如果已撰寫應用程式，或原始程式碼無法使用，則您應該使用 App Wrapping Tool，而不是 SDK。
 
-**Intune 中未註冊裝置上的 App Wrapping Tool for MAM 目前受公開預覽版本的支援。如需詳細資訊，請參閱[保護 Intune 中未註冊裝置上的 LOB 應用程式](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主題**。
+**如需 Intune 中未註冊裝置上之 App Wrapping Tool for MAM 的詳細資訊，請參閱[保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**。
 
-### 支援的平台
+### 支援的應用程式開發平台
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |是|是|
 |**Android**| 否 |是|
+
 ## Intune App SDK
-App SDK 的設計主要是針對 App 或 Play Store 中具有應用程式並想要可以使用 Intune 管理應用程式的客戶。 不過，任何應用程式都可以利用 SDK 的整合，即使它是 LOB 應用程式也是一樣。
+App SDK 的設計主要是針對 Apple App Store 和 (或) Google Play Store 中具有應用程式並想要可以使用 Intune 管理應用程式的客戶。 不過，任何應用程式都可以利用 SDK 的整合，即使它是企業營運應用程式也是一樣。
 
 若要深入了解 SDK，請參閱[概觀](/intune/develop/intune-app-sdk)。 若要開始使用 SDK，請參閱[開始使用 Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)。
 
-### 支援的平台
+### 支援的應用程式開發平台
+
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|是 - 使用 Intune App SDK Xamarin 元件|是 - 使用 Intune App SDK Cordova 外掛程式|
@@ -75,6 +79,7 @@ App SDK 的設計主要是針對 App 或 Play Store 中具有應用程式並想�
 |選擇性抹除 <br></br>**注意：**對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」 |X||
 |支援多重身分識別|X||
+|不註冊裝置的 MAM 支援|X|X|
 ### 請參閱
 
 [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
@@ -83,6 +88,6 @@ App SDK 的設計主要是針對 App 或 Play Store 中具有應用程式並想�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

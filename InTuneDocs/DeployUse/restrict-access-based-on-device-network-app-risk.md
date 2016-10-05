@@ -1,5 +1,5 @@
 ---
-title: "透過行動威脅保護限制存取 |Microsoft Intune"
+title: "使用裝置威脅保護限制存取 | Microsoft Intune"
 description: "根據裝置、網路和應用程式風險，限制對公司資源的存取。"
 keywords: 
 author: karthikaraman
@@ -13,24 +13,24 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
 
 
 ---
 
 # 根據裝置、網路和應用程式風險，限制對公司資源的存取
-您可以根據與 Microsoft Intune 整合的行動威脅保護 (MTP) 解決方案 Lookout 所進行的風險評估，來控制從行動裝置對公司資源的存取。 此風險的評估依據是 Lookout MTP 服務從裝置收集到有關作業系統 (OS) 漏洞、已安裝的惡意應用程式和網路設定檔的遙測資料。 根據風險評估，您可以接著在 Intune 中設定條件式存取原則，並允許或封鎖因這些裝置上偵測到的威脅而判斷為不相容的裝置。  目前只有執行 **4.1 和更新版本**並在 Microsoft Intune 中註冊的 **Android** 裝置才提供支援。  
+您可以根據與 Microsoft Intune 整合的裝置威脅保護解決方案 Lookout 所進行的風險評估，來控制從行動裝置對公司資源的存取。 此風險的評估依據是 Lookout 服務從裝置收集到有關作業系統 (OS) 漏洞、已安裝的惡意應用程式和網路設定檔的遙測資料。 根據風險評估，您可以接著在 Intune 中設定條件式存取原則，並允許或封鎖因這些裝置上偵測到的威脅而判斷為不相容的裝置。  目前只有執行 **4.1 和更新版本**並在 Microsoft Intune 中註冊的 **Android** 裝置才提供支援。  如需 Lookout 所支援平台和語言的相關資訊，請參閱本[文章](https://personal.support.lookout.com/hc/en-us/articles/114094140253)。
 ## 這會解決哪個問題？
 公司和組織必須保護機密資料免於遭受新興威脅 (包括實體、應用程式型和網路型威脅) 及 OS 漏洞的攻擊。
 
 在過去，公司和組織向來會主動保護電腦免於遭受惡意攻擊。 但行動裝置是經常未受保護的新興領域。 雖然行動平台內建有使用應用程式隔離和經審核之消費者 App Store 等技術的 OS 保護，但這些平台持續容易受到複雜的攻擊。 隨著員工愈來愈頻繁地使用行動裝置來執行工作，而且需要存取可能機密且重要的資訊，這些裝置必須受到保護，以防範各種複雜的攻擊。
 
-Intune 可讓您根據 Lookout 等 MTP 解決方案所提供的風險評估，來控制對公司資源和資料的存取。
+Intune 可讓您根據 Lookout 等裝置威脅保護解決方案所提供的風險評估，來控制對公司資源和資料的存取。
 
-## Intune 和 Lookout 行動裝置威脅保護如何協助保護公司資源？
-在行動裝置上執行的 Lookout 行動裝置應用程式 (Lookout for Work) 可擷取檔案系統、網路堆疊，以及裝置和應用程式遙測 (如果可用)，並將其傳送至 Lookout 行動裝置威脅保護 (MTP) 雲端服務，以計算行動裝置威脅的彙總裝置風險。 您也可以在 MTP 主控台中變更威脅的風險等級分類，以符合您的需求。  
-Intune 中的相容性原則現在包含新的 Lookout 行動裝置威脅保護規則，該規則是以 Lookout MTP 風險評估為依據。 啟用此規則時，Microsoft Intune 會接著評估裝置是否符合您啟用的原則。
+## Intune 和 Lookout 裝置威脅保護如何協助保護公司資源？
+在行動裝置上執行的 Lookout 行動裝置應用程式 (Lookout for Work) 可擷取檔案系統、網路堆疊，以及裝置和應用程式遙測 (如果可用)，並將其傳送至 Lookout 裝置威脅保護雲端服務，以計算行動裝置威脅的彙總裝置風險。 您也可以在 Lookout 主控台中變更威脅的風險等級分類，以符合您的需求。  
+Intune 中的相容性原則現在包含新的 Lookout 行動裝置威脅保護規則，該規則是以 Lookout 裝置威脅風險評估為依據。 啟用此規則時，Microsoft Intune 會接著評估裝置是否符合您啟用的原則。
 
 如果裝置經判斷與相容性原則不相容，則可以使用條件式存取原則封鎖對 Exchange Online 和 SharePoint Online 等資源的存取。 當存取遭到封鎖時，會提供使用者逐步解說，以協助解決問題並取得公司資源的存取權。 此逐步解說是透過 Lookout for Work 應用程式來啟動。
 
@@ -80,6 +80,6 @@ Intune 中的相容性原則現在包含新的 Lookout 行動裝置威脅保護�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

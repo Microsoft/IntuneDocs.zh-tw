@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
 
 
 ---
@@ -25,6 +25,8 @@ ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
 * [條件式存取原則](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，其中指定裝置必須符合才能存取服務的條件。
 
 若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
+
+[!IMPORTANT] 若要部署條件式存取，您必須訂閱 Intune 和 Azure Active Directory Premium。  若要深入了解 Azure Active Directory Premium，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。 **Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
 
 當目標使用者嘗試在其裝置上使用 Dynamics CRM 應用程式時，就會進行下列評估：
 
@@ -97,6 +99,6 @@ ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

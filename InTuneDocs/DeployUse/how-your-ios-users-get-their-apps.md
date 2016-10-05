@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -34,21 +34,22 @@ ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 Apple 限制禁止公司入口網站應用程式中列出企業營運應用程式及受管理的應用程式市集應用程式。 為了解決此問題，iOS 版公司入口網站應用程式中的應用程式磚會將使用者指向單一位置 (公司入口網站) 中的不同檢視，以取得他們所有的應用程式，如下所示：
 
-- [公司應用程式] 磚先前會指向[公司入口網站](http://portal.manage.microsoft.com) [所有] 索引標籤中所有應用程式的清單，而它會繼續以相同方式運作。 磚的名稱已變更為 [所有應用程式]。
+- [公司應用程式] 磚先前指向[公司入口網站](http://portal.manage.microsoft.com)之 [所有] 索引標籤中的所有應用程式清單，而它會繼續以相同方式運作。 磚的名稱已變更為 [所有應用程式]。
 
-- [其他應用程式] 磚先前會指向公司入口網站應用程式中的檢視，其中會列出 Apple 允許在公司入口網站應用程式中顯示的所有應用程式。 磚的名稱已變更為 [精選應用程式]，點選磚會將使用者移至公司入口網站的 [精選] 索引標籤。
+- [其他應用程式] 磚先前會指向公司入口網站 App 中的檢視，其中會列出 Apple 允許在公司入口網站 App 中顯示的所有 App。 磚的名稱已變更為 [精選應用程式]，點選磚會將使用者移至公司入口網站的 [精選] 索引標籤。
 
--  [類別] 磚先前會指向公司入口網站應用程式中列出應用程式類別的檢視。 磚的名稱並未變更，但它現在指向公司入口網站的 [類別] 索引標籤。
+-  [類別] 磚先前會指向公司入口網站 App 中列出 App 類別的檢視。 磚的名稱並未變更，但它現在指向公司入口網站的 [類別] 索引標籤。
 您可以在[這裡](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)找到更新的螢幕擷取畫面。
 
 
 
 ###請參閱
-[Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)</br>
+[Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)
+
 [Windows 使用者如何取得其應用程式](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

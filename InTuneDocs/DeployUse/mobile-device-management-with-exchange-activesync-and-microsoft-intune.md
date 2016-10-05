@@ -13,14 +13,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
 
 
 ---
 
 # 搭配 Microsoft Intune 的 Exchange ActiveSync 行動裝置管理
-若要讓 Microsoft Intune 直接管理行動裝置，裝置必須[在 Intune 中註冊](get-ready-to-enroll-devices-in-microsoft-intune.md)。 或者，系統管理員可以啟用受限程度更高的管理解決方案，其透過 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理。 裝置可以透過內部部署 Exchange 伺服器或使用 Office 365 的 Exchange Online 管理。 Intune 僅支援每個訂用帳戶一個任一種類的 Exchange Connector 連線。
+若要讓 Microsoft Intune 直接管理行動裝置，裝置必須[在 Intune 中註冊](prerequisites-for-enrollment.md)。 或者，系統管理員可以啟用受限程度更高的管理解決方案，其透過 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理。 裝置可以透過內部部署 Exchange 伺服器或使用 Office 365 的 Exchange Online 管理。 Intune 僅支援每個訂用帳戶一個任一種類的 Exchange Connector 連線。
 
 ## 行動裝置的 Exchange 存取規則 ##
 
@@ -46,6 +46,6 @@ Intune 主控台可用以管理 [EAS 原則設定](exchange-activesync-policy-se
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

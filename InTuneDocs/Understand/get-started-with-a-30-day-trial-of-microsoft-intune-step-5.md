@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: dc767abc733457d975b61b96e21781952f79c6f9
+ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
 
 
 ---
@@ -58,7 +58,7 @@ ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 ## 安裝先前部署的應用程式
 在行動裝置上開啟公司入口網站，並選擇 [應用程式]，然後安裝 **Microsoft Skype**。
 
-若要深入了解如何使用 Intune 管理行動裝置，請參閱[準備在 Microsoft Intune 中註冊裝置](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)。
+若要深入了解如何使用 Intune 管理行動裝置，請參閱[準備在 Microsoft Intune 中註冊裝置](/Intune/deploy-use/prerequisites-for-enrollment)。
 
 ### 後續步驟
 恭喜！ 您剛剛已完成 *Microsoft Intune 評估*逐步解說的步驟 5。
@@ -69,6 +69,6 @@ ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

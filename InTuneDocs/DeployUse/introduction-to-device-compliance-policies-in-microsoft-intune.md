@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 您也可以使用與條件式存取無關的相容性原則。 單獨使用時，會評估目標裝置，並回報其相容性狀態。 例如，您可能想要報告有關未加密的裝置數目，或哪些裝置已進行破解或刷機。 不過，單獨使用時，對公司資源沒有存取限制。
 
 您可以將相容性原則部署到使用者。 將相容性原則部署到使用者時，即會檢查使用者裝置的相容性。
+若要深入了解行動裝置在部署之後需要多長的時間才能取得原則，請參閱[管理裝置上的設定和功能](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 下表列出相容性原則支援的裝置類型，以及在將該原則與條件式存取原則搭配使用時如何管理不相容的設定。
 
@@ -64,6 +65,6 @@ ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

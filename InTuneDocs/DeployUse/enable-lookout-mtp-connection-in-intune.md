@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # 在 Intune 管理主控台中啟用 Lookout MTP 連線
-本主題說明如何在 Intune 中啟用 Lookout MTP 連線。 執行此步驟之前，您應該已在 Lookout MTP 主控台中設定 Intune 連接器。  如果您尚未這麼做，請執行[設定訂用帳戶使用 Lookout 行動裝置威脅保護](set-up-your-subscription-with-lookout-mtp.md)中所述的步驟。
+本主題說明如何在 Intune 中啟用 Lookout MTP 連線。 執行此步驟之前，您應該已在 Lookout 主控台中設定 Intune 連接器。  如果您尚未這麼做，請執行[設定訂用帳戶使用 Lookout 行動裝置威脅保護](set-up-your-subscription-with-lookout-mtp.md)中所述的步驟。
 
 若要在 Intune 中啟用 Lookout MTP 連線，請在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)的 [系統管理] 頁面上，選擇 [協力廠商服務整合]。 選擇 [Lookout 狀態] 並使用切換按鈕啟用 [與 MTP 同步處理]。
 
@@ -35,6 +35,6 @@ ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
