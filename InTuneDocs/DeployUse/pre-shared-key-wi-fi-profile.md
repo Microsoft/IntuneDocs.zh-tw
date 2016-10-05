@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`：設定為 **false**，因為 **true** 可能會使裝置預期有加密的密碼，然後嘗試將它解密，而導致連線失敗。
+> `<protected>false</protected>`必須設定為 **false**，因為 **true** 可能會使裝置預期收到加密的密碼，而嘗試將它解密；這會導致連線失敗。
 > 
 >  `<hex>53534944</hex>` 應設定為 `<name><SSID of wifi profile></name>` 的十六進位值。
+>  Windows 10 裝置可能會傳回誤報的 *0x87D1FDE8 補救失敗*錯誤，但仍會使用設定檔進行佈建。
 
     <!--
     <Name of wifi profile> = Name of profile
