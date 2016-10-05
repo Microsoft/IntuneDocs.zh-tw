@@ -2,7 +2,7 @@
 title: "規劃您的使用者和裝置群組 | Microsoft Intune"
 description: "規劃群組以符合組織的需求。"
 keywords: 
-author: nbigman
+author: sanchusa
 manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55e21f56c3d1b73427e4019054a0f9fab862f26d
-ms.openlocfilehash: 70949301499efedd99eeddb60dd2fa0efc6d2309
+ms.sourcegitcommit: 0ea1aeee65381420af8662e7c0e16741879948e2
+ms.openlocfilehash: 9fc92c7724a9e1f256faa8b028bcf93e354e7997
 
 
 ---
@@ -36,7 +36,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 ![Intune 主控台中群組節點的螢幕擷取畫面](../media/Intune_Planning_Groups_Default_small.png)
 
-原則會部署到群組，因此群組階層是您的重要設計考量之一。 請務必了解，在建立群組之後，您將無法變更該群組的父群組。 從您開始使用 Intune 服務，設計您群組的方式至關重要。 一些根據組織需求之設計群組階層的建議做法如下所示。
+原則會部署到群組，因此群組階層是您的重要設計考量之一。 請務必了解，在建立群組之後，您將無法變更該群組的父群組。 從您開始使用 Intune 服務，設計您群組的方式至關重要。 以下為一些建議做法，說明如何根據組織的需求設計群組階層。
 
 ## 群組成員資格規則
 
@@ -76,7 +76,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 - 您可以將內容和原則部署到父群組，但排除子群組的部署。
 
-- 如果使用者或裝置不是父群組的成員，則您可將特定使用者或裝置加入子群組中。 如果您這麼做，子群組的新成員會加入父群組中。
+- 若特定的使用者或裝置還不是父群組的成員，可將其新增至子群組。 如果您這麼做，子群組的新成員會加入父群組中。
 
     不過，您不能將從父群組排除的成員加入子群組中。
 
@@ -89,7 +89,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
     * 您在 Intune 中建立一個群組，而這個群組使用包含 [已核准的成員] 群組成員的動態成員資格查詢。 結果是您的 Intune 使用者群組包含 **Pat**。
 
 > [!TIP]
-> 當您建立群組時，請考慮將如何套用原則。 例如，您可能會有裝置作業系統特定的原則，以及您已於 Active Directory 服務中定義之不同角色或組織單位的特定原則。 有些系統管理員覺得建立專用於 iOS、Android 和 Windows 的裝置群組很有幫助。 這是除了建立每個組織角色使用者群組以外的事項。
+> 當您建立群組時，請考慮將如何套用原則。 例如，您可能有一些原則只要套用到某些裝置系統，或有一些原則只要套用到您在 Active Directory 服務中定義的不同角色或組織單位。 有些系統管理員覺得建立專用於 iOS、Android 和 Windows 的裝置群組很有幫助。 這是除了建立每個組織角色使用者群組以外的事項。
 
 <!--- should we just link to a policies topic at this point and remove this? Ask Rob
  You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
@@ -116,7 +116,7 @@ Intune 具有九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 
 
 ### 組織中的所有使用者及裝置
-定義組織中所有使用者和裝置的父群組。 您很有可能會有套用到所有項目的原則。 針對此目的，您可以使用 Intune 預設的 [所有使用者] 和 [所有裝置]群 組。 依詳情來組織裝置的子群組，例如一個群組給攜帶您自己的裝置 (BYOD)，而另一個群組用於公司擁有 (CO) 的裝置，可以是 [所有使用者] 和 [所有裝置] 父群組的子系。
+定義組織中所有使用者和裝置的父群組。 您很有可能會有套用到所有項目的原則。 針對此目的，您可以使用 Intune 預設的 [所有使用者] 和 [所有裝置]群組。 依詳情來組織裝置的子群組，例如一個群組給自攜裝置 (BYOD)，而另一個群組用於公司擁有 (CO) 的裝置，可以是 [所有使用者] 和 [所有裝置] 父群組的子系。
 
 ## 自訂您組織的群組
 
@@ -165,12 +165,12 @@ Intune 具有九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 ![膝上型電腦使用者群組的顯示](../media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### 特定作業系統的群組
-如果您的組織要求適用於特定作業系統 (例如 Android、iOS 或 Windows 等) 的原則，則您可以根據此需求建立群組。 如先前的範例所示，您可以根據已在 Active Directory 內部部署執行個體中建立之特定作業系統群組的原則，然後將它們與 Azure Active Directory 進行同步處理。 您也可以直接在您的 Azure Active Directory 執行個體中建立它們。
+如果您的組織要求適用於特定作業系統 (例如 Android、iOS 或 Windows 等) 的原則，則您可以根據此需求建立群組。 如先前的範例所示，您可以根據已在 Active Directory 內部部署執行個體中建立之特定作業系統群組的原則，然後將它們與 Azure Active Directory 進行同步處理。 您也可以直接在您的 Azure Active Directory 執行個體中加以建立。
 
 藉由使用和先前範例相同的方法，您可以根據使用特定作業系統平台的使用者 <!--devices?--> 來建立群組。
 
 > [!NOTE]
-> 如果有會使用多種行動平台或作業系統的使用者，且您沒有自動化的方式來將使用者分類為 Android 使用者、iOS 使用者或 Windows 使用者，請考慮在裝置層級套用原則。 這樣可以獲得更大的彈性來套用指定至一個作業系統的原則。
+> 如果有會使用多種行動平台或作業系統的使用者，且您沒有自動化的方式來將使用者分類為 Android 使用者、iOS 使用者或 Windows 使用者，請考慮在裝置層級套用原則。 這讓您有更多彈性，可以只將原則套用到特定的作業系統。
 >
 > 您無法根據裝置的作業系統動態佈建群組。 相反地，必須使用 Active Directory 或 Azure Active Directory 安全性群組完成這項動作。
 
@@ -215,6 +215,6 @@ Intune 具有九個內建群組，您無法加以編輯或刪除： <!--maybe a 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

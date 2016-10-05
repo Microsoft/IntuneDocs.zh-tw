@@ -4,7 +4,7 @@ description: "本主題會協助您解決 Microsoft Intune 的相關應用程式
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
+ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
+ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
 
 
 ---
@@ -32,11 +32,23 @@ ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 |0x80073CFB|提供的套件已經安裝，不允許重新安裝套件|如果您要安裝的套件與已經安裝的套件不同，可能就會收到這項錯誤。 請確認數位簽章也包含在套件中。 重建或重新簽署套件後，該套件之位元就不再與先前安裝的套件相同。 此錯誤有下列兩種可能的修正選項：<br /><br />-   遞增應用程式的版本號碼，然後再重建及重新簽署應用程式。<br />-   在安裝新套件之前，針對系統上的每個使用者移除舊套件。|
 |0x87D1041C|應用程式安裝成功，但未偵測到應用程式。|- Intune 已成功部署應用程式，接著便解除安裝 (可能為終端使用者所執行)。 指示使用者從公司入口網站重新安裝應用程式。 需要的應用程式會在裝置下次簽入時自動重新安裝。|
 
+## 針對來自 Windows 市集的應用程式進行疑難排解
+
+[Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (針對封裝、部署及查詢 Windows 市集應用程式進行疑難排解) 主題中的資訊可協助您使用 Intune 或任何其他方法疑難排解從 Windows 市集安裝應用程式時可能發生的常見問題。
+
+## 針對將應用程式部署至受 Intune 軟體用戶端管理的電腦進行疑難排解
+為了協助您針對將應用程式部署至受 Intune 軟體用戶端管理之電腦的問題進行疑難排解，您可以查看下列兩個記錄檔︰
+- %ProgramFiles%\Microsoft\OnlineManagement\Logs 資料夾
+- %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
+
+此外，如果您需要開啟 Intune 的支援案例，則這也適用於將這些記錄檔傳送給 Microsoft。
+
+
 ### 後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

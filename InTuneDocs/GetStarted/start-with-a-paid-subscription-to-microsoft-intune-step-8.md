@@ -4,7 +4,7 @@ description: "說明如何註冊行動裝置並在已於 Intune 註冊的裝置�
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 0da8725262ba08b9345d3b7195a64faae13eaece
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 4c72b39296c9c2f0fe435d57f1e829ba3114fc61
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: 0da8725262ba08b9345d3b7195a64faae13eaece
 
 在已註冊的行動裝置上開啟公司入口網站，選擇 **[應用程式]**，然後安裝 **Microsoft Skype**。
 
-若要深入了解如何使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理行動裝置，請參閱[準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)。
+若要深入了解如何使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理行動裝置，請參閱 [Microsoft Intune 中註冊裝置的必要條件](/intune/deploy-use/prerequisites-for-enrollment.md)。
 
 
 ### 後續步驟
@@ -64,6 +64,6 @@ ms.openlocfilehash: 0da8725262ba08b9345d3b7195a64faae13eaece
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

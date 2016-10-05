@@ -4,7 +4,7 @@ description: "描述在 Intune 註冊 Android 裝置的方式"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
-ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，只需要允許您的裝置將資料記錄檔寫入裝置的 SD 記憶卡，接著您可以使用 USB 纜線移動這些記錄檔。
+    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其實是允許您的裝置將裝置的 IMEI 編號傳送至 Intune。 IMEI 是一種類似於序號的編號，可唯一識別行動裝置。
 
     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。  如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
@@ -81,7 +81,7 @@ ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
     如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只允許公司入口網站應用程式建立、使用和管理您的工作帳戶。
 
-    如果您拒絕存取，則下次點選 [傳送資料] 時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [儲存體]，然後開啟權限。
+    如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 核取方塊，即可關閉未來訊息。  如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
 11.  在 [啟用裝置管理員] 畫面上，點選 [啟用]。
 
@@ -112,11 +112,10 @@ ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Sep16_HO2-->
 
 

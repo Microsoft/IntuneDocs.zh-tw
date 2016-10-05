@@ -1,5 +1,6 @@
 # [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
 # [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [開發和自訂應用程式](intune-app-sdk.md)
 ## [Microsoft Intune App SDK 概觀](intune-app-sdk.md)
@@ -9,6 +10,6 @@
 # [疑難排解](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

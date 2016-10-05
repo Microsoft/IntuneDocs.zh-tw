@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
 
 
 ---
@@ -32,7 +32,7 @@ Intune 管理員有兩種方式可為 Windows 電腦啟用註冊與管理：
 您可以讓使用者透過 Intune 公司入口網站應用程式安裝並註冊其裝置，來完成註冊作業。 建立 DNS CNAME 可以協助使用者連線到 Intune 註冊，而無須輸入伺服器名稱。
 
 1. **設定 Intune**<br>
-如果尚未這麼做，請將[行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
+如果尚未這麼做，請將[行動裝置管理授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
 
 2. **建立 CNAME** (選用)<br>為公司網域建立 **CNAME** DNS 資源記錄以簡化註冊程序。 雖然建立 CNAME DNS 項目為選擇性作業，但建立 CNAME 記錄可讓使用者更輕鬆地註冊。 如果找不到任何註冊 CNAME 記錄，系統會提示使用者手動輸入 MDM 伺服器名稱 `https://manage.microsoft.com`。  CNAME 資源記錄必須包含下列資訊：
 
@@ -60,10 +60,10 @@ Intune 管理員有兩種方式可為 Windows 電腦啟用註冊與管理：
       - [適用於 Windows 裝置的使用者指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### 請參閱
-[準備在 Microsoft Intune 中註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

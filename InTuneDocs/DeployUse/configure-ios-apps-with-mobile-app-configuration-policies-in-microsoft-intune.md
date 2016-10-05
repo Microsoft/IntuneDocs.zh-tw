@@ -4,7 +4,7 @@ description: "您可以在 Intune 中使用行動裝置應用程式組態原則�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8808c064589128f7daae810ffbcb3595270685d
-ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
 您不會直接將這些原則部署給使用者和裝置。 您將會將原則與應用程式關聯，然後才部署應用程式。 每當應用程式檢查是否有原則時 (通常是第一次執行時)，便會使用這些原則設定。
 
 > [!TIP]
-> 此原則類型目前僅針對執行 iOS 7.1 和更新版本的裝置提供。 它支援下列應用程式安裝類型︰
+> 此原則類型目前僅針對執行 iOS 8.0 和更新版本的裝置提供。 它支援下列應用程式安裝類型︰
 >
 > -   **App Store 中的受管理 iOS 應用程式**
 > -   **iOS 應用程式套件**
@@ -139,6 +139,6 @@ Intune 支援屬性清單中的下列資料類型：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

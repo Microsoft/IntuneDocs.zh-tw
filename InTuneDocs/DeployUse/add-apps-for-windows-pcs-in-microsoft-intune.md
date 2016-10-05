@@ -1,10 +1,10 @@
 ---
-title: "新增 Windows 電腦的應用程式 | Microsoft Intune"
+title: "為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式 | Microsoft Intune"
 description: "使用本主題的資訊，了解如何在部署之前，將適用於 Windows 電腦的應用程式新增至 Intune。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: f7f43d3225d8fafc54cbc9043a2b67aca9e30c95
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# 在 Microsoft Intune 中新增 Windows 電腦的應用程式
+# 為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
 
 使用本主題的資訊，了解如何在部署之前，將應用程式新增至 Intune。
 
 > [!IMPORTANT]
-> 本主題的資訊可協助您使用 Intune 電腦用戶端軟體將應用程式新增到您管理的 Windows 電腦。 如果您想要為已註冊的 Windows 電腦及其他行動裝置新增應用程式，請參閱[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)。
+> 本主題中的資訊可協助您為使用 Intune 軟體用戶端管理的 Windows 電腦新增應用程式。 如果您想要為已註冊的 Windows 電腦及其他行動裝置新增應用程式，請參閱[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)。
 
 
 ## 新增應用程式
@@ -90,6 +90,6 @@ ms.openlocfilehash: f7f43d3225d8fafc54cbc9043a2b67aca9e30c95
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
