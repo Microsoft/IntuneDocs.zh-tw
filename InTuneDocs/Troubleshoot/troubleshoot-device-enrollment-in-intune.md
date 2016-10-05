@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
 
--   [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [設定 iOS 和 Mac 裝置管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [設定 Windows 裝置管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

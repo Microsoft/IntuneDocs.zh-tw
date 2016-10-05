@@ -4,7 +4,7 @@ description: "深入了解當您使用 Intune 軟體用戶端管理 Windows 電�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# 當您使用 Intune 軟體用戶端時的 Windows 電腦管理功能)
+# 當您使用 Intune 軟體用戶端時的 Windows 電腦管理功能
 在大部分情況下，您將使用 Microsoft Intune 註冊您的裝置，這可以提供更多的功能。 不過，您也可以使用提供下列功能的 Intune 軟體用戶端來管理電腦︰
 
--   **軟體更新管理** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
+-   **[軟體更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
 
--   **Windows 防火牆原則** - 這有助於確保在公司中使用的電腦沒有處於非作用中狀態或設定不當的 Windows 防火牆。
+-   **[Windows 防火牆原則](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - 這有助於確保在公司中使用的電腦沒有處於非作用中狀態或設定不當的 Windows 防火牆。
 
--   **反惡意程式碼防護** - Intune 包含 Endpoint Protection，可協助您的電腦防範惡意程式碼。
+-   **[反惡意程式碼防護](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Intune 包含 Endpoint Protection，可協助您的電腦防範惡意程式碼。
 
--   **遠端協助** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以藉由使用 Intune 隨附的遠端桌面功能提供協助 (需要 TeamViewer 軟體)。
+-   **[遠端協助](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以藉由使用 Intune 隨附的遠端桌面功能提供協助 (需要 TeamViewer 軟體)。
 
--   **軟體授權管理** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
--   **應用程式部署** - 將軟體部署到您所管理的電腦。 當您使用軟體用戶端管理電腦時，某些應用程式管理功能會無法使用。
+-   **[軟體授權管理](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
+-   **[應用程式部署](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - 將軟體部署到您所管理的電腦。 當您使用軟體用戶端管理電腦時，某些應用程式管理功能會無法使用。
 
 
 Intune 支援在最多 7000 部 Windows 裝置上安裝軟體用戶端。
@@ -74,6 +74,6 @@ Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

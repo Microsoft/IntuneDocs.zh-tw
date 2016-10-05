@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 ## 開始之前
 從商務用 Windows 市集開始同步處理及部署應用程式之前，請檢閱下列資訊︰
-* 您必須將 Intune 設定為組織的行動裝置管理授權單位。 如需詳細資訊，請參閱[準備在 Microsoft Intune 中註冊裝置](get-ready-to-enroll-devices-in-microsoft-intune.md)。
+* 您必須將 Intune 設定為組織的行動裝置管理授權單位。 如需詳細資訊，請參閱 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)。
 * 您必須已在商務用 Windows 市集註冊帳戶。
 * 一旦您將 Intune 與企業用 Windows 市集帳戶建立關聯，未來將無法變更為不同帳戶。
 * 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Windows 市集同步。
@@ -77,6 +77,6 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

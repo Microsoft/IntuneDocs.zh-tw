@@ -31,7 +31,7 @@ ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
 
 2.  使用 USB 纜線將 Android 裝置連接到電腦。
 
-3.  在電腦上尋找有電話名稱的目錄。 在該目錄中，尋找 &lt;Android 裝置&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files。\.
+3.  在電腦上尋找有電話名稱的目錄。 在該目錄中，尋找 &lt;Android 裝置&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
 4.  將所有檔案附加到電子郵件，並傳送給您的 IT 系統管理員。
 

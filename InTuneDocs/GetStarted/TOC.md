@@ -11,6 +11,12 @@
 ### [網路頻寬使用量](network-bandwidth-use.md)
 ### [自訂網域名稱](domain-names-for-microsoft-intune.md)
 
+## [選擇如何管理裝置](choose-how-to-manage-devices.md)
+### [已註冊的裝置管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune 電腦軟體用戶端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [移轉至 Intune](migrate-to-intune.md)
+
 ## [Intune 快速入門指南](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [登入 Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [設定自訂網域名稱](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [註冊行動裝置並安裝應用程式](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](post-configuration-tasks.md)
 
-## [選擇如何管理裝置](choose-how-to-manage-devices.md)
-### [已註冊的裝置管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Intune 電腦軟體用戶端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [專案範圍](project-scope.md)
 ### [概念證明](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [操作和維護](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [開發和自訂應用程式](/intune/develop/intune-app-sdk)
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

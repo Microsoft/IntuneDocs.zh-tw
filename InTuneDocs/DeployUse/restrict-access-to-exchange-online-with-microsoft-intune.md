@@ -4,7 +4,7 @@ description: "使用條件式存取保護與控制 Exchange Online 上的公司�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 
 ---
@@ -26,14 +26,12 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 若要控制 Exchange Online 或新的 Exchange Online Dedicated 環境的電子郵件存取，請在 Intune 中設定 Exchange Online 的條件式存取。
 若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
->[!IMPORTANT]
->透過使用新式驗證的應用程式來設定電腦和 Windows 10 行動裝置版的條件式存取，目前未提供給所有 Intune 客戶使用。 如果您已經在使用這些功能，您不需要採取任何動作。 您可以繼續使用它們。
-
->如果您尚未使用新式驗證針對應用程式建立電腦或 Windows 10 行動裝置版的條件式存取原則，而您想要這麼做，請註冊 Azure Active Directory 公開預覽，其中包括裝置型條件式存取，以存取使用 Intune 管理的裝置或已加入網域的 Windows 電腦。 若要深入了解，請閱讀[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)。  
 
 在設定條件式存取**之前**，您必須：
 
 -   具有**包含 Exchange Online (例如 E3) 的 Office 365 訂用帳戶**，而且使用者必須獲得 Exchange Online 的授權。
+
+- 擁有 **Azure Active Directory Premium 訂用帳戶**。 如需詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。 **Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
 
 -  考慮設定選擇性 **Microsoft Intune 服務對服務連接器**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Microsoft Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用相容性原則或條件存取原則並不需要使用連接器，但必須執行報告，以協助評估條件存取的影響。
 
@@ -67,7 +65,7 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 您可以限制從 **Outlook** 和其他 **使用新式驗證的應用程式**存取 Exchange Online 電子郵件：-
 
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
-- iOS 7.1 和更新版本
+- iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
 
 **新式驗證**將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 用戶端中。
@@ -84,16 +82,14 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 **不支援的瀏覽器將會被封鎖**。
 
-不支援適用於 iOS 和 Android 的 OWA 應用程式。  它們應該透過 ADFS 宣告規則封鎖。
-
-
+**適用於 iOS 和 Android 的 OWA 應用程式可以修改成不使用新式驗證，並且不予支援。  必須透過 ADFS 宣告規則封鎖從 OWA 應用程式進行存取。**
 
 
 您可以限制從下列平台內建的 **Exchange ActiveSync 電子郵件用戶端**存取 Exchange 電子郵件：
 
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
 
-- iOS 7.1 和更新版本
+- iOS 8.0 和更新版本
 
 - Windows Phone 8.1 和更新版本
 
@@ -101,14 +97,18 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 您可以針對執行 Office 桌面應用程式的電腦安裝條件存取，以便針對符合下列需求的電腦存取 **Exchange Online** 和 **SharePoint Online** ：
 
--   電腦必須執行 Windows 7.0 或 Windows 8.1。
+-   電腦必須執行 Windows 7.0、Windows 8.1 或 Windows 10。
 
--   電腦必須已加入網域或符合相容性規則。
+  >[!NOTE]
+  > 若要搭配使用條件式存取與 Windows 10 電腦，您必須使用 Windows 10 年度更新版來更新這些電腦。
 
-    電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且符合原則才算相容。
+  電腦必須已加入網域或符合相容性規則。
 
-    已加入網域的電腦必須設為向 Azure Active Directory [自動註冊裝置](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
-    >[!NOTE]
+  電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且符合原則才算相容。
+
+  已加入網域的電腦必須設為向 Azure Active Directory [自動註冊裝置](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
+
+  >[!NOTE]
     >執行 Intune 電腦用戶端的電腦不支援條件式存取。
 
 -   [必須啟用 Office 365 新式驗證](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，並安裝所有最新的 Office 更新。
@@ -177,6 +177,10 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 ### 步驟 4：設定條件式存取原則
 
+>[!NOTE]
+> 您也可以在 Azure AD 管理主控台中建立條件式存取原則。 除了其他條件式存取原則 (例如 Multi-Factor Authentication) 之外，Azure AD 管理主控台還可讓您建立 Intune 裝置條件式存取原則 (在 Azure AD 中稱為「裝置型條件式存取原則」)。  您也可以設定協力廠商企業應用程式 (例如，Azure AD 所支援的 Salesforce 和 Box) 的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+
+
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [Exchange Online 原則]。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
         選取 [所有平台] 選項表示 Azure Active Directory 會將此原則套用至所有驗證要求，而不論用戶端應用程式所回報的平台為何。  所有平台都需要註冊並變成相容，除了︰
         *   Windows 裝置必須註冊並相容，使用內部部署 Active Directory 加入網域，或兩者兼具
         * 不支援例如 Mac OS 的平台。  不過，使用來自這些平台之新式驗證的應用程式，仍然會被封鎖。
-
-        >[!TIP]
-           如果您尚未對電腦使用條件式存取，可能看不到此選項。  請改用 [特定平台]。 電腦的條件式存取目前未提供給所有 Intune 客戶使用。   您可以在[此部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中找到關於如何存取此功能的詳細資訊。
 
     -   **特定平台**
 
@@ -262,6 +263,6 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

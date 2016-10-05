@@ -159,7 +159,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 
 ###### 執行不相容應用程式報表
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
 
 2.  選取要檢查的裝置群組。 然後選擇您是否要檢查相容應用程式、不相容應用程式，或同時檢查兩者。 最後，選擇 [檢視報表]。
 

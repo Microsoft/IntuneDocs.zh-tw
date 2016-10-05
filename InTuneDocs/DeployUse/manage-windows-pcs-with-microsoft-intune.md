@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
+ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
+ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
 
 
 ---
@@ -43,7 +43,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 
 |需求|詳細資訊|
 |---------------|--------------------|
-|作業系統 | 執行 Windows 7 或更新版本的 Windows 裝置。 |
+|作業系統 | 執行 Windows Vista 或更新版本的 Windows 裝置。 不支援 Home Edition 版本。|
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|
 |Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />-   在電腦上，在 **%windir%\System32\msiexec.exe** 上按一下滑鼠右鍵，然後按一下 [內容]。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
 |移除不相容的用戶端軟體|安裝 Intune 用戶端軟體之前，您必須從該電腦解除安裝任何 Configuration Manager 或 System Management Server 用戶端軟體。|
@@ -75,6 +75,6 @@ Intune 用戶端代理程式通常是在背景中以無訊息模式執行，不�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

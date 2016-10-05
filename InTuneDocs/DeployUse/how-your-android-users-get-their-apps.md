@@ -3,7 +3,7 @@ title: "Android 使用者如何取得其應用程式 | Microsoft Intune"
 description: "讓終端使用者可以使用 Android 應用程式的方法"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 43b7eb3378d9977b9d19196c91a812d9411752b9
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 
 ---
@@ -45,11 +45,13 @@ ms.openlocfilehash: 43b7eb3378d9977b9d19196c91a812d9411752b9
 
 ### 請參閱
 [使用 Microsoft Intune 新增應用程式](/intune/deploy-use/add-apps)
+
 [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
+
 [Windows 使用者如何取得其應用程式](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

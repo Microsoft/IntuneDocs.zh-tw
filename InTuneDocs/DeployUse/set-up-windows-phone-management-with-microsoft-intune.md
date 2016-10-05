@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d88405e913fe61cef2c297f9d50408e10674cf3f
 
 
 ---
@@ -33,7 +33,7 @@ Intune 管理員有兩種方式可為 Windows 10 行動裝置版與 Windows Phon
 ## 公司入口網站應用程式註冊
 您可以讓使用者透過 Intune 公司入口網站應用程式安裝並註冊其裝置，來完成註冊作業。 建立 DNS CNAME 可以協助使用者連線到 Intune 註冊，而無須輸入伺服器名稱。 如果您管理 Windows Phone 8.0 裝置，或需要將公司入口網站部署至 Windows Phone 裝置，您也必須下載並簽署公司入口網站應用程式。 請參閱[設定 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
 
-1.  **設定 Intune**<br>如果尚未這麼做，請將[行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
+1.  **設定 Intune**<br>如果尚未這麼做，請將[行動裝置管理授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
 
 2.  **建立 CNAME** (選用)<br>建立公司網域的 **CNAME** DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，其會將 EnterpriseEnrollment.contoso.com 重新導向到 manage.microsoft.com。 如果已驗證的網域不止一個，請為每個網域建立一筆 CNAME 記錄。 CNAME 資源記錄必須包含下列資訊：
 
@@ -65,6 +65,6 @@ Intune 管理員有兩種方式可為 Windows 10 行動裝置版與 Windows Phon
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

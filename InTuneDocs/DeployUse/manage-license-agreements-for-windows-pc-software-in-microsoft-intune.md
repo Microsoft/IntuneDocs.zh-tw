@@ -1,10 +1,10 @@
 ---
-title: "管理電腦軟體的授權合約 | Microsoft Intune"
+title: "管理執行 Intune 軟體用戶端之電腦的軟體授權合約 | Microsoft Intune"
 description: "Intune 可讓您管理透過 Microsoft 大量授權合約購買之軟體，與透過其他方式購買之軟體的授權合約。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf7e9b9638c82cba7640c2be54166ef5df581673
-ms.openlocfilehash: ae4ae586c020322f792817b25f8b1b6e2ee02cfd
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: e4febff0ede35f40fd2b0f96fab401a58fb5cb13
 
 
 ---
@@ -180,6 +180,6 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

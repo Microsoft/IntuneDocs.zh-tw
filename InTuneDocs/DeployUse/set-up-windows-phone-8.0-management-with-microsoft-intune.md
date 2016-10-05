@@ -3,8 +3,8 @@ title: "設定 Windows Phone 8.0 管理 |Microsoft Intune"
 description: "啟用適用於使用 Microsoft Intune 之 Windows Phone 8.0 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/09/2016
+manager: angrobe
+ms.date: 07/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ Windows Phone 8.0 需要 Symantec 憑證，才能安裝 Intune 公司入口網�
 Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置。  在公司的 DNS 登錄中設定兩個 CNAME 可更容易使用註冊。 如果您的使用者將從市集下載公司入口網站應用程式，則當您設定 DNS 設定之後，您只需要設定公司入口網站並通知使用者如何註冊。  針對您要在其中部署公司入口網站的 Windows Phone 8.0 或 Windows Phone 8.1，您需要有 Symantec 憑證，才能進行應用程式的程式碼簽署。
 
 ## 完成設定需求以啟用 Windows Phone 管理
-1.  **設定 Intune**：如果尚未這麼做，請將[行動裝置管理授權單位](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
+1.  **設定 Intune**：如果尚未這麼做，請[設定行動裝置管理授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
 
 2.  **設定註冊伺服器位址的 DNS 別名** (選用)
 
@@ -183,6 +183,6 @@ Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

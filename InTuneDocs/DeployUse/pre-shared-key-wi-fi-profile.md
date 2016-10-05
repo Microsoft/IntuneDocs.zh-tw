@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -55,12 +55,19 @@ ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 4. 選擇 [確定]，然後儲存並部署原則。
 
     > [!NOTE]
-此原則只能部署到使用者群組。
+    > 此原則只能部署到使用者群組。
 
 每個裝置下一次簽入時，將套用此原則，並將裝置上建立 Wi-Fi 設定檔。 裝置可以自動連線到網路。
 ## Android 或 Windows Wi-Fi 設定檔
 
 Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`必須設定為 **false**，因為 **true** 可能會使裝置預期收到加密的密碼，而嘗試將它解密；這會導致連線失敗。
+> 
+>  `<hex>53534944</hex>` 應設定為 `<name><SSID of wifi profile></name>` 的十六進位值。
+>  Windows 10 裝置可能會傳回誤報的 *0x87D1FDE8 補救失敗*錯誤，但仍會使用設定檔進行佈建。
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +77,7 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +215,6 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
