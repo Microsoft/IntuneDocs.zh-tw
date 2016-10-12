@@ -24,7 +24,7 @@ ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。 在支援的平台上，Microsoft Intune 可設定原生電子郵件用戶端，以讓使用者存取其個人裝置上的公司電子郵件，而不需任何額外設定。
 
-如果您需要採取其他資料外洩防護的措施，請使用 [條件式存取][](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，這會控制任何電子郵件用戶端 (包括原生電子郵件用戶端) 的使用者信箱存取。
+如果您需要採取其他資料外洩防護的措施，請使用 [條件式存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，這會控制任何電子郵件用戶端 (包括原生電子郵件用戶端) 的使用者信箱存取。
 
 IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶端 (例如 Microsoft Outlook for Android 或 iOS)。 這些電子郵件用戶端可能不支援電子郵件設定檔，並且不能使用 Intune 電子郵件設定檔進行設定。  
 
