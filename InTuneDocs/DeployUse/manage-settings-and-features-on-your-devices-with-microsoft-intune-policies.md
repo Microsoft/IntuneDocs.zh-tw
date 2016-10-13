@@ -44,7 +44,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 ## 建立設定原則
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
 
 2.  選擇您想要的原則，然後選擇使用原則的建議設定 (如果有；稍後可變更這些設定)，或者選擇使用您自己的設定來建立自訂原則。
 
