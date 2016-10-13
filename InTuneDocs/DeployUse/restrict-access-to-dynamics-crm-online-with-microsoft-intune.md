@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
 
 若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
-[!IMPORTANT] 若要部署條件式存取，您必須訂閱 Intune 和 Azure Active Directory Premium。  若要深入了解 Azure Active Directory Premium，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。 **Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
+[!IMPORTANT] 若要部署條件式存取，您必須訂閱 Intune 和 Azure Active Directory Premium，且使用者必須獲這兩項產品授權。 **Enterprise Mobility + Security (EMS) 訂閱**包括 Intune 和 Azure Active Directory Premium 訂閱。 如需詳細資訊，請瀏覽 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 若無 EMS 訂閱，您可以取得 Azure Active Directory Premium 訂閱。 請參閱 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。 
 
 當目標使用者嘗試在其裝置上使用 Dynamics CRM 應用程式時，就會進行下列評估：
 
@@ -99,6 +99,6 @@ ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 
 ![移除該帳戶的錯誤訊息和指示的螢幕擷取畫面](../media/AppManagement/Android_SwitchUser.png)
 
-##  使用 Rights Management 共用應用程式檢視媒體檔案
-若要在 Android 裝置上檢視公司 AV、PDF 和影像檔，請使用 [Microsoft Rights Management (RMS) 共用應用程式](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)。
+##  使用 Azure Information Protection 應用程式 (前稱為 Rights Management 共用應用程式) 檢視媒體檔案
+若要在 Android 裝置上檢視公司 AV、PDF 和影像檔，請使用 [Azure Information Protection 應用程式](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)。
 
-從 Google Play 商店下載這個應用程式。  在裝置上安裝應用程式後，請啟動應用程式，並使用公司認證進行驗證。 您現在應該能夠檢視來自其他原則管理應用程式的未受保護和受保護檔案。
+從 Google Play 商店下載這個應用程式。  
 
 以下是支援的檔案類型：
 
 * **音訊︰**AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
 * **視訊︰**H.263、H.264 AVC、MPEG-4 SP、VP8。
 * **影像︰**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
-* PDF、PPDF
+* **PDF、PPDF**
 
 ------------
 |**pfile**|**文字**|
 |----|----|
-|Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 RMS 授權，而且可以用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等可以在應用程式中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+|Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 Azure Information Protection 授權，而且可以用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等可以在應用程式中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
 ---------------
-**未在 Intune 註冊的 Android 裝置**
 
-您必須先啟動 RMS 應用程式，並驗證您的工作帳戶，才能使用 RMS 共用應用程式來檢視 Intune 所管理之其他應用程式的檔案。  在您登入時，**只有在沒有 RMS 授權時**才會看到下列訊息：
-
-**驗證成功 - 您現在可以檢視企業檔案，但您的組織未設定成讓您保護檔案。 如需詳細資訊，請連絡 IT 系統管理員。**
-
-這不會禁止您使用 RMS 共用應用程式來檢視公司檔案。 您仍然可以開啟和檢視 Intune 所管理之其他應用程式的公司檔案，也仍然會套用 MAM 原則。  這則訊息指出您將無法新增 RMS 共用應用程式所提供的額外保護功能。  您必須具有 RMS 授權才能新增您檔案的保護。 若要深入了解 RMS 檔案保護功能，請參閱 [Protect a file on a device](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) (保護裝置上的檔案) 和 [Protect a file that you share by email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) (保護您透過電子郵件共用的檔案)。
 
 
 ### 請參閱
@@ -171,6 +165,6 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。 �
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

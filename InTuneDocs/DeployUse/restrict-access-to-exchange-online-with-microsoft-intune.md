@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 -   具有**包含 Exchange Online (例如 E3) 的 Office 365 訂用帳戶**，而且使用者必須獲得 Exchange Online 的授權。
 
-- 擁有 **Azure Active Directory Premium 訂用帳戶**。 如需詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。 **Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
+- 擁有 **Enterprise Mobility + Security 或 Azure Active Directory Premium 訂閱**，且使用者必須獲 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 -  考慮設定選擇性 **Microsoft Intune 服務對服務連接器**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Microsoft Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用相容性原則或條件存取原則並不需要使用連接器，但必須執行報告，以協助評估條件存取的影響。
 
@@ -263,6 +263,6 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

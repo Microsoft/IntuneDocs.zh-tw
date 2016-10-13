@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
-ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 >[!IMPORTANT]
 >
->如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 Azure Active Directory (Azure AD) 入口網站的連結，則表示您已經在 Intune 中使用「新的」Azure AD 安全性群組方法進行群組管理，如[請注意即將進行改進的群組系統管理員體驗](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 按一下 Azure AD 入口網站的連結，即可建立及管理您的群組。 
+>如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 Azure Active Directory (Azure AD) 入口網站的連結，則表示您已經在 Intune 中使用「新的」Azure AD 安全性群組方法進行群組管理，如[請注意即將進行改進的群組系統管理員體驗](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 按一下 Azure AD 入口網站的連結，即可建立及管理您的群組。
+>
+>![Azure 群組管理連結螢幕擷取畫面](../media/groups-link-azure.png) 
 >
 >如果您看不到 Azure AD 入口網站的連結，則表示您仍使用「目前的」方法進行群組管理，如本主題的[使用 Microsoft Intune 建立群組以管理使用者和裝置](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
@@ -202,6 +204,6 @@ ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
