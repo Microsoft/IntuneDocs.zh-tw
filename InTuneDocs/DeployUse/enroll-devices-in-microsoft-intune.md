@@ -69,7 +69,7 @@ ms.openlocfilehash: 145d373edd65d7ba01c696c3b851692a13831dad
 裝置註冊管理員是特殊的 Intune 帳戶，可用來註冊及管理多部屬公司擁有的裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### DEP
-Apple 裝置註冊方案 (DEP) 管理可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS Setup Assistant 時，會註冊裝置。 這種方法支援 [iOS 受監督] (iOS Supervised) 模式，其接著會啟用：
+Apple 裝置註冊方案 (DEP) 管理可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS Setup Assistant 時，會註冊裝置。 這種方法支援 **[iOS 受監督]** (iOS Supervised) 模式，其接著會啟用：
   - 已鎖定註冊
   - 條件式存取
   - 破解偵測
@@ -78,7 +78,7 @@ Apple 裝置註冊方案 (DEP) 管理可讓您「以無線方式」建立原則�
 深入了解 [DEP](ios-device-enrollment-program-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### USB-SA
-USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 屬公司擁有的 USB 連接裝置是使用 Intune 原則所準備。 系統管理員必須手動註冊每個裝置。 使用者會接收其裝置，並且執行 Setup Assistant 以註冊其裝置。 這種方法支援 [iOS 受監督] (iOS Supervised) 模式，其接著會啟用：
+USB 連接的 Setup Assistant 註冊。 系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 屬公司擁有的 USB 連接裝置是使用 Intune 原則所準備。 系統管理員必須手動註冊每個裝置。 使用者會接收其裝置，並且執行 Setup Assistant 以註冊其裝置。 這種方法支援 **[iOS 受監督]** (iOS Supervised) 模式，其接著會啟用：
   - 條件式存取
   - 破解偵測
   - 行動應用程式管理
