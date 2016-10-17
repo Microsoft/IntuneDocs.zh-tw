@@ -15,14 +15,14 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Intune 簡介
-Microsoft Intune 是 Microsoft Enterprise Mobility + Security (EMS，前身為 Enterprise Mobility Suite) 的「管理部門」。 企業行動就是讓員工的所有裝置更具生產力，同時持續保護您的組織資訊。  
+Microsoft Intune 是 Microsoft Enterprise Mobility + Security (EMS，前身為 Enterprise Mobility Suite) 的管理部門。 企業行動就是讓員工的所有裝置更具生產力，同時持續保護您的組織資訊。  
 
 EMS 是企業行動 (包括生產力、身分識別、存取控制、管理和資料保護) 的完整整合式套件。 它可提供您在組織中部署和操作行動解決方案的有效方式。  
 
@@ -46,7 +46,7 @@ Intune 提供的主要工具包括︰
 
 這些工具是以不同的組合使用，以啟用上述的常見商務案例。 例如，共用裝置案例會大量使用 MDM。 BYOD 案例通常依賴 MAM。 而公司電話案例是根據這兩者。 幾乎所有案例都會利用行動應用程式安全性。
 
-在這份文件中，我們將說明如何使用 Intune 所提供的工具來支援您的商務案例。  我們也將說明如何搭配使用這些工具與 Office 365、Azure AD、Azure RMS 以及Microsoft 行動套件的其他部分。 我們會給您該技術之常見用途、它在您環境中的使用方式，以及其實作程序的概略了解。 這項技術本身具有彈性，並能夠適用我們尚未在此說明的各種其他案例。
+在這份文件中，我們將說明如何使用 Intune 所提供的工具來支援您的商務案例。  我們也將說明如何搭配使用這些工具與 Office 365、Azure AD、Azure RMS 以及Microsoft 行動套件的其他部分。 我們提供您該技術的常見用途、它在您環境中的使用方式，以及其實作程序的概觀。 這項技術本身具有彈性，並能夠適用我們尚未在此說明的各種其他案例。
 
 ### 後續步驟
 * 請閱讀一些[常見的 Intune 使用方式](common-ways-to-use-intune.md)。
@@ -55,6 +55,6 @@ Intune 提供的主要工具包括︰
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

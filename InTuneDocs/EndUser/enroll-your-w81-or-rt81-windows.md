@@ -13,8 +13,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
 # 在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置
 
-如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 註冊您的裝置，可讓您的組織保護公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
 
 
 註冊 Windows 8.1 或 Windows RT 8.1 裝置：
@@ -43,7 +43,7 @@ ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  在 [允許 IT 系統管理員提供應用程式和服務] 對話方塊中，選取 [我同意] 核取方塊，然後點選 [開啟]。
+5.  在 [允許 IT 系統管理員提供應用程式和服務] 對話方塊中，核取 [我同意] 方塊，然後點選 [開啟]。
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -51,21 +51,20 @@ ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
-我們也建議您安裝公司入口網站應用程式，它可讓您輕鬆識別並取得與您本身及角色有關的公司應用程式。 公司入口網站應用程式可能已當做註冊程序的一部分加以安裝，這取決於公司設定 Intune 的方式。 如要確認是否有該應用程式，請在應用程式清單中尋找 [公司入口網站]。 如果應用程式清單中找不到 [公司入口網站]，請遵循下列步驟安裝它。
+我們也建議您安裝公司入口網站應用程式，它可讓您輕鬆識別並取得與您本身及角色有關的公司應用程式。 公司入口網站應用程式可能已當作註冊程序的一部分加以安裝，這取決於公司設定 Intune 的方式。 如要確認是否有該應用程式，請在應用程式清單中尋找 [公司入口網站]。 如果應用程式清單中找不到 [公司入口網站]，請遵循下列步驟安裝它。
 
 1.  點選 [開始] &gt; [存放區]。
 
-2.  點選 [搜尋]，然後輸入 [公司入口網站]。
+2.  點選 [搜尋]，然後鍵入**公司入口網站**。
 
 3.  在結果清單中，點選 [公司入口網站]。
 
-4.  點選 [安裝] 或 [免費]。 顯示的選項取決於貴公司設定應用程式的方式。
+4.  點選 [安裝] 或 [免費]。 顯示的選項取決於您的公司設定應用程式的方式。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

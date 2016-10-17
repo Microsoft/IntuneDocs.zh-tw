@@ -4,7 +4,7 @@ description: "描述加密 Android 裝置的方式"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/07/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
-ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 # 加密您的裝置
 
-如果貴公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員需要 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
+如果您的公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員需要 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
 如果您曾經取消註冊您的電話，則它會維持加密狀態。
 
@@ -60,11 +60,10 @@ ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
 
 2.  下載 [Microsoft Intune 公司入口網站] 應用程式。
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![下載 Intune 公司入口網站應用程式](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  開啟公司入口網站應用程式，並輸入您的公司或學校電子郵件和密碼，然後點選 [登入]。
+3.  開啟公司入口網站應用程式，輸入您的公司或學校電子郵件地址和密碼，然後點選 [登入]。
 
     如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 註冊 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
 
@@ -39,7 +39,6 @@ ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

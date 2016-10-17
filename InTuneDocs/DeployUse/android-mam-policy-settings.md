@@ -4,7 +4,7 @@ description: "本主題說明適用於 Android 裝置的行動裝置應用程式
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
 - **停用連絡人同步：**選擇 [是] 以避免在裝置上的原生通訊錄應用程式中同步處理連絡人資訊。 如果選擇 [否]，應用程式會將連絡人資訊儲存至裝置上的原生通訊錄應用程式。<br/>當您執行選擇性抹除以移除公司資料時，會移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 **Microsoft Outlook** 應用程式。
 
   **預設值 = 是**
+- **停用列印**︰選擇 [是] 可防止從與 MAM 原則相關聯的應用程式列印公司資料。
+
+  **預設值 = 是**
 
 ##  Android 存取原則設定
 **「受原則管理的應用程式」**詞彙是用來參考 MAM 原則所設定的應用程式
@@ -96,6 +99,6 @@ ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

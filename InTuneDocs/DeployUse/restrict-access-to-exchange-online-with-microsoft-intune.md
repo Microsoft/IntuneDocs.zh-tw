@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +64,7 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 ## 支援行動裝置
 您可以限制從 **Outlook** 和其他 **使用新式驗證的應用程式**存取 Exchange Online 電子郵件：-
 
-- Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
+- Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本，以及 Android for Work
 - iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
 
@@ -225,6 +225,9 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 5.  在 [Exchange ActiveSync 應用程式] 下，您可以選擇禁止不相容的裝置存取 Exchange Online。 您也可以選擇當裝置不是執行支援的平台時允許或封鎖存取電子郵件。 支援的平台包括 Android、iOS、Windows 和 Windows Phone。
 
+ Exchange Active Sync 應用程式 **Android for Work** 裝置：
+ -  Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取在 Android for Work 裝置上正常運作，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將它部署為**必要**安裝。 
+
 6.  在 [目標群組] 下方，選取要套用原則之使用者的 Active Directory 安全性群組。 您可以選擇針對所有使用者或選取的使用者群組清單。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面，其中顯示 [目標] 和 [豁免] 群組選項](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +266,6 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

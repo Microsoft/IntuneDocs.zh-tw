@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 8b2f725dd71a9d5da5387c543261df8607be6d6f
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
 
 
 ---
@@ -56,10 +56,10 @@ ms.openlocfilehash: 8b2f725dd71a9d5da5387c543261df8607be6d6f
 如果您在管理主控台下的 [Exchange 內部部署原則] 工作區中建立原則，但使用 O365，Intune 將不會強制執行已設定的原則設定。 記下警示中的原則來源。  刪除 [Exchange 內部部署原則] 工作區下的舊版規則，因為這些規則是適用於內部部署 Exchange 的 Intune 中的通用 Exchange 規則，與 O365 無關。 接著，建立適用於 O365 的新原則。
 
 ### 無法變更各種已註冊裝置的安全性原則
-當您透過 MDM 或 EAS 設定安全性原則之後，Windows Phone 和 Windows RT 裝置不允許降低這些原則的安全性。 例如，您將 [字元密碼數目下限]  設定為 8，然後嘗試減少為 4。 此裝置已套用較嚴格的原則。
+當您透過 MDM 或 EAS 設定安全性原則之後，Windows Phone 裝置不允許降低這些原則的安全性。 例如，您將 [字元密碼數目下限]  設定為 8，然後嘗試減少為 4。 此裝置已套用較嚴格的原則。
 
 根據裝置平台，如果您想要將原則變更為較不安全的值，您可能需要重設安全性原則。
-例如，在 Windows RT 的桌面上，從右向內撥動以開啟 **[快速鍵]** 列，然後選擇 **[設定]** &gt; **[控制台]**。  選取 [使用者帳戶]  小程式。
+例如，在 Windows 的桌面上，從右向內撥動以開啟 [快速鍵] 列，然後選擇 [設定] &gt; [控制台]。  選取 [使用者帳戶]  小程式。
 左導覽功能表底部有一個 [重設安全性原則]  連結。 選擇該連結，然後選擇 **[重設原則]** 按鈕。
 您可能需要停用 Android、Windows Phone 8.1 (含) 以後版本及 iOS 等其他 MDM 裝置，再重新註冊到服務中，才能套用較不嚴格的原則。
 
@@ -98,6 +98,6 @@ ms.openlocfilehash: 8b2f725dd71a9d5da5387c543261df8607be6d6f
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

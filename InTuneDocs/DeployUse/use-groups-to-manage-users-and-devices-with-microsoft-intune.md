@@ -4,7 +4,7 @@ description: "使用 [群組] 工作區建立及管理群組。"
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +36,11 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 您之前提到，想要有一個跨 Enterprise Mobility + Security 的群組和目標鎖定體驗。 我們聽到了。 根據您的意見反應，我們很快就會將 Intune 群組轉換成以 Azure Active Directory 為基礎的安全性群組。 這項變更會整合 Intune 和 Azure Active Directory (Azure AD) 之間的群組管理。 此全新的體驗表示您不必在服務之間複製群組。 它也會透過使用 Windows PowerShell 和 Microsoft Graph 的選項來提供擴充性。
 
 ### 現在這項變更對我造成什麼影響？
-這項變更目前不會對您造成影響。 但以下是新內容：
+如果您已經是 Intune 客戶，這項變更目前不會對您造成影響。 但以下是新內容：
 
--   從 2016 年 9 月開始，在每月服務版本之後佈建的新帳戶，將使用 Azure AD 安全性群組，而不是 Intune 使用者群組。   
--   從 2016 年 10 月開始，在每月服務版本之後佈建的新帳戶，將會在 Azure AD 入口網站中管理以使用者為基礎的群組和以裝置為基礎的群組。 這對現有的客戶不會造成影響。
--   從 2016 年 11 月開始，Intune 產品小組會將現有客戶遷移至以新 Azure AD 為基礎的群組管理體驗。 現在位於 Intune 中的所有使用者和裝置群組都將遷移至 Azure AD 安全性群組。 從 2016 年 11 月開始，我們將分批進行移轉。 我們會等到對您的日常工作所造成的任何影響降到最低，並且預期對您的使用者不會造成任何影響，再開始進行移轉。 我們也將在遷移您的帳戶之前通知您。
+-   新的帳戶將會使用 Azure AD 安全性群組，而不是 Intune「使用者」群組。   
+-   從 2016 年 11 月開始，在每月服務版本之後佈建的新帳戶，將會在 Azure AD 入口網站中管理以使用者為基礎的群組和以裝置為基礎的群組。 這對現有的客戶不會造成影響。
+-   從 2016 年 12 月開始，Intune 產品小組會將現有客戶遷移至以新 Azure AD 為基礎的群組管理體驗。 現在位於 Intune 中的所有使用者和裝置群組都將遷移至 Azure AD 安全性群組。 我們會等到對您的日常工作所造成的任何影響降到最低，並且預期對您的使用者不會造成任何影響，再開始進行移轉。 我們也將在遷移您的帳戶之前通知您。
 
 
 ### 移轉至新群組體驗的的方式和時間點為何？
@@ -204,6 +204,6 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

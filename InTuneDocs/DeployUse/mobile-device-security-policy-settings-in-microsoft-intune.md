@@ -4,7 +4,7 @@ description: "使用 Intune 來設定各種不同的設定，您可以部署到�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +40,7 @@ ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
 
 > [!NOTE]
 > 某些設定不適用於某些裝置。 請參閱下表，以取得您可設定的完整設定清單。
+> Microsoft Intune 自 2016 年 10 月起會取代 Windows 8 公司入口網站應用程式的支援。 Microsoft Intune 也會取代 Windows Phone 8 和 WinRT 平台的支援。 因此，您將無法註冊或更新任何 Windows Phone 8 或 WinRT 裝置。 您可以繼續管理已註冊的 Windows Phone 8、WinRT 和 Windows 8 裝置。 將 Windows Phone 8 和 Windows 8 裝置更新為 Windows 8.1 和 Windows Phone 8.1，並使用對應的 Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式繼續將應用程式發佈至這些裝置，而不受中斷。
 
 ## 安全性設定
 
@@ -212,6 +213,6 @@ ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
