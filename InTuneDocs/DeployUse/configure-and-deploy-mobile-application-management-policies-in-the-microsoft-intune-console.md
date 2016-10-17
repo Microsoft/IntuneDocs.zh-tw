@@ -4,7 +4,7 @@ description: "Microsoft Intune 中的行動應用程式管理原則可讓您修�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 -   執行 Android 4 和更新版本的裝置。
 
--   執行 iOS 7 和更新版本的裝置。
+-   執行 iOS 8.0 及更新版本的裝置。
 
 > [!TIP]
 > 行動應用程式管理原則支援向 Intune 註冊的裝置。
@@ -112,7 +112,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
     -   **行動應用程式管理原則 (Android 4 及更新版本)**
 
-    -   **行動應用程式管理原則 (iOS 7 及更新版本)**
+    -   **行動應用程式管理原則 (iOS 8.0 及更新版本)**
 
     您可以使用建議的設定或自訂設定。 如需詳細資訊，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
@@ -134,7 +134,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
     |**需要裝置符合公司原則才能存取**|此設定只允許在裝置未越獄或 Root 時，才能使用應用程式。|
     |**重新檢查存取需求前等候時間 (分鐘)**|在 [逾時] 欄位中，指定在開啟應用程式之後，重新檢查應用程式存取需求之前的時間間隔。|
     |**離線寬限期**|如果裝置已離線，指定重新檢查應用程式存取需求之前的時間間隔。|
-    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 7 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法未經 FIPS 140-2 認證。|
+    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法未經 FIPS 140-2 認證。|
     |**封鎖螢幕擷取** (僅限 Android 裝置)|此設定指定有人使用此應用程式時，將封鎖裝置的螢幕擷取功能。|
     
 4. 完成之後，請選擇 [儲存原則]。
@@ -147,8 +147,6 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
 
 > [!IMPORTANT]
-> 針對執行早於 iOS 7.1 之作業系統的裝置，應用程式解除安裝時不會移除相關聯的原則。
->
 > 如果裝置從 Intune 取消註冊，原則將不會從應用程式中移除。 即使之後解除安裝並重新安裝應用程式，已套用原則的任何應用程式將會保留原則設定。
 
 ### 如果裝置上已部署應用程式，該怎麼辦
@@ -195,6 +193,6 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

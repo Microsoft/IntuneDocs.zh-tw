@@ -4,7 +4,7 @@ description: "藉由匯入應用程式市集的授權資訊、追蹤已使用的
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 > [!Important]
 > 目前，Intune 會指派 iOS 企業大量採購方案 (VPP) 應用程式授權給使用者，而不是裝置。 因此，使用者必須輸入其 Apple ID 密碼，才能安裝應用程式。
+> 這個版本不支援教育用 Apple 大量採購方案。
 
 ## 管理大量採購的 iOS 裝置應用程式
 您可以透過 [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) 購買多個 iOS 應用程式的授權。 這項作業包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
@@ -89,6 +90,6 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

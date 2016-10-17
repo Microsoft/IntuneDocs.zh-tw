@@ -4,48 +4,63 @@ description: "使用本主題中的資訊，深入了解如何在不需修改應
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/06/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
+ms.sourcegitcommit: 69d8ff8eecd238cfbbf0b01671b80e6ee77ae357
+ms.openlocfilehash: c041fbbbec9e1812427d9810489d35480ae8c09b
 
 
 ---
 
 # 準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理
-使用 [適用於 Android 的 Microsoft Intune 應用程式包裝工具] 來修改內部 Android 應用程式的行為，讓您能夠設定應用程式的功能，而不需修改應用程式本身的程式碼。
+使用 **Microsoft Intune App Wrapping Tool for Android** 修改內部 Android 應用程式的行為，讓您限制應用程式的功能，而不需變更應用程式本身的程式碼。
 
-此工具是一個 Windows 命令列應用程式，可在 PowerShell 中執行並在您的應用程式周圍建立「包裝程式」。 一旦處理應用程式之後，您便可以使用您設定的[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)來變更應用程式功能。
+此工具是一個 Windows 命令列應用程式，可在 PowerShell 中執行並在您的 Android 應用程式周圍建立「包裝函式」。 一旦處理應用程式之後，您便可以使用您設定的[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)來變更應用程式功能。
 
-如果您的應用程式正在使用 Azure Active Directory Authentication Library，您必須在包裝應用程式之前，先完成[使用 Azure Active Directory Library (ADAL) 包裝應用程式](#how-to-wrap-apps-that-use-the-azure-active-directory-library) 中的步驟。 如果您不確定您的應用程式是否使用此程式庫，請連絡應用程式的開發人員。
 
 執行此工具之前，請檢閱[執行應用程式包裝工具的安全性考量](#security-considerations-for-running-the-app-wrapping-tool)。 若要下載此工具，請參閱 [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267)。
+
+>[!IMPORTANT]
+>這版的 App Wrapping Tool for Android 提供公開預覽版本，其支援未在 Intune 行動裝置管理 (MDM) 中註冊的裝置。 如果您想要參與公開預覽版本，可以從[這個 GitHub 存放庫](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)下載該工具。
+
+>[保護 Intune 中未註冊裝置上的 LOB 應用程式](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主題中描述了此案例。
+
 
 ## 步驟 1：滿足使用 App Wrapping Tool 的必要條件
 
 -   您必須在執行 Windows 7 或更新版本的 Windows 電腦上執行應用程式包裝工具。
 
--   您的輸入應用程式必須是副檔名為 **.apk** 檔案的有效 Android 應用程式套件，而且：
+-   您的輸入應用程式必須是副檔名為 **.apk** 的有效 Android 應用程式套件，而且：
 
     -   無法加密
 
-    -   必須尚未使用應用程式包裝工具進行包裝
-
+    -   必須尚未使用 Intune App Wrapping Tool 進行包裝
     -   必須是針對 Android 4.0 或更新版本編寫的
 
--   該應用程式必須是由貴公司所開發，或針對貴公司所開發。 您無法使用此工具，來處理從 Google Play 商店下載的應用程式。
+-   該應用程式必須是由貴公司所開發，或針對貴公司所開發。 您無法在下載自 Google Play 商店的應用程式使用這個工具。
 
--   若要執行應用程式包裝工具，您必須安裝最新版的 [Java Runtime Environment](http://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 **C:\ProgramData\Oracle\Java\javapath**。 如需詳細說明，請參閱您的 [Java 文件](http://java.com/download/help/)。
+-   若要執行應用程式包裝工具，您必須安裝最新版的 [Java Runtime Environment](http://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 **C:\ProgramData\Oracle\Java\javapath**。 如需詳細說明，請參閱 [Java 文件](http://java.com/download/help/)。
 
     > [!NOTE]
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 我們建議您改為安裝 64 位元版本。
+
+- Android 要求所有應用程式套件 (.apk) 均已簽署。 使用 Java Key Tool 產生簽署包裝輸出應用程式所需的認證。 例如，下方命令使用 Java 可執行檔 **keytool.exe** 產生應用程式包裝工具可用以簽署的金鑰，以簽署包裝的輸出應用程式。
+
+    ```
+    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
+    ```
+    這個範例會使用 RSA 演算法產生金鑰組 (大小為 2048 位元的公開金鑰及相關私密金鑰)，然後將公開金鑰包裝成 X.509 v3 自我簽署憑證，以單一項目憑證鏈結的形式儲存。 此憑證鏈結與私密金鑰會儲存在名為 "mykeystorefile" 的新金鑰儲存區中，並依別名 "mykeyalias" 識別。 金鑰儲存區項目有效期限為 50,000 天。
+
+    命令會提示您提供金鑰儲存區與金鑰的密碼。 請使用安全且不容易猜到的密碼並記住，因為稍後執行應用程式包裝工具時會需要這些密碼。
+
+    如需詳細文件，請在 Oracle 文件網站上閱讀更多 Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) 及 Java [金鑰儲存區](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)資訊。
 
 ## 步驟 2：安裝 App Wrapping Tool
 
@@ -65,107 +80,62 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  使用 **invoke-AppWrappingTool** 命令搭配下列參數來執行工具。 標示為「選用」的參數適用於使用 Azure Active Directory Library (ADAL) 的應用程式。 如需詳細資訊，請參閱[如何包裝使用 Azure Active Directory 程式庫的應用程式](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
+3.  使用 **invoke-AppWrappingTool** 命令執行工具，其使用語法如下：
+    ```
+    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
+    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
+    ```
 
-|參數|詳細資訊|範例|
+ 下表詳列 **invoke-AppWrappingTool** 命令的屬性：
+
+|屬性|資訊|範例|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|來源 Android 應用程式 (.apk) 的路徑。| |
 |**-OutputPath**&lt;String&gt;|輸出的 Android 應用程式路徑。 如果此路徑與 InputPath 的目錄路徑相同，封裝會失敗。| |
-|**-KeyStorePath**&lt;String&gt;|包含要簽署之公開/私密金鑰組的 keystore 檔案路徑。| |
-|**-KeyStorePassword**&lt;SecureString&gt;|用來解密 keystore 的密碼。 Android 要求所有的應用程式套件都需要進行簽署。 使用 Java Key Tool 來產生 KeyStorePassword，如範例所示。 深入了解[金鑰存放區](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)。|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
+|**-KeyStorePath**&lt;String&gt;|包含要簽署之公開/私密金鑰組的 keystore 檔案路徑。|根據預設，金鑰儲存區檔案會儲存在 "C:\Program Files (x86)\Java\jreX.X.X_XX\bin"。 |
+|**-KeyStorePassword**&lt;SecureString&gt;|用來解密 keystore 的密碼。 Android 要求所有的應用程式套件都需要進行簽署。 使用 Java Key Tool 來產生 KeyStorePassword。 在這裡深入了解 Java [金鑰儲存區](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)。| |
 |**-KeyAlias**&lt;String&gt;|要用於簽署的金鑰名稱。| |
 |**-KeyPassword**&lt;SecureString&gt;|用來解密簽署用途之私密金鑰的密碼。| |
-|**-SigAlg**&lt;SecureString&gt;|要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA、MD5withRSA|
-|**-ClientID**&lt;GUID&gt;|輸入應用程式的 Azure Active Directory 用戶端識別碼 (選用)。| |
-|**-AuthorityURI**&lt;Uri&gt;|輸入應用程式的 Azure Active 授權 URI (選用)。| |
-|**-SkipBroker**&lt;Boolean&gt;|指出輸入應用程式是否支援全裝置代理單一登入 (選用)。 |**True** - 輸入應用程式不支援全裝置代理單一登入。 使用 NonBrokerRedirectURI 參數。 **False** - 輸入應用程式支援全裝置代理單一登入。|
-|**-NonBrokerRedirectURI**&lt;URI&gt;|如果 SkipBroker 為 true，則使用 Azure Active Directory 重新導向 URI (選用)。|  |
+|**-SigAlg**&lt;SecureString&gt;| (選擇性) 要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA、MD5withRSA|
+| **&lt;CommonParameters&gt;** | (選擇性) 支援 verbose、debug 等常用 PowerShell 參數的命令。 |
 
-
-**&lt;CommonParameters&gt;**
-    (選擇性 - 支援常用的 PowerShell 參數，例如 verbose、debug 等參數。)
 
 - 如需常用參數清單，請參閱 [Microsoft 指令碼中心](https://technet.microsoft.com/library/hh847884.aspx)。
 
-- 若要查看工具的說明，請輸入下列命令：
+- 若要查看工具的詳細使用方式資訊，請輸入命令：
 
     ```
     Help Invoke-AppWrappingTool
     ```
-- 若要了解 Azure Active Directory (AAD) 整合的詳細資訊，請參閱[如何包裝使用 Azure Active Directory 程式庫的應用程式](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
 
 **範例：**
 
+匯入 PowerShell 模組。
+```
+Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1" 
+```
+在原生應用程式 **HelloWorld.apk** 執行應用程式包裝工具。 
+```
+invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
+```
 
-    Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
-
-系統接著會提示您提供 **KeyStorePassword** 和 **KeyPassword**。
+系統接著會提示您提供 **KeyStorePassword** 和 **KeyPassword**。 輸入您用以建立金鑰儲存區檔案的認證。
 
 隨即會產生已包裝的應用程式，並和記錄檔案一起儲存於您指定的輸出路徑中。
 
 ## 執行應用程式包裝工具的安全性考量
 若要防止潛在的詐騙、資訊洩漏和權限提升攻擊：
 
--   請確定輸入的商務營運應用程式、輸出應用程式及 Java KeyStore 都位於執行應用程式包裝工具的同一部電腦上。
+-   請確定輸入的商務營運 (LOB) 應用程式、輸出應用程式及 Java KeyStore 都位於執行應用程式包裝工具的同一部 Windows 電腦上。
 
--   在匯入執行工具的同一部電腦上，將輸出應用程式匯入 Intune 主控台。 如需 Java keytool 的詳細資訊，請參閱 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
+-   在匯入執行工具的同一部機器上，將輸出應用程式匯入 Intune 主控台。 如需 Java keytool 的詳細資訊，請參閱 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
 
 -   如果輸出應用程式和工具位於通用命名慣例 (UNC) 路徑上，而您未在同一部電腦上執行工具和輸入檔案，請使用 [網際網路通訊協定安全性 (IPsec)](http://en.wikipedia.org/wiki/IPsec) 或 [伺服器訊息區塊 (SMB) 簽署](https://support.microsoft.com/en-us/kb/887429)，將環境設定為安全的。
 
--   確保應用程式來自受信任的來源，特別是當您使用 Azure Active Directory (AAD) 時，這可能會讓應用程式在執行階段存取 AAD Token。
+-   確認應用程式來自信任的來源。
 
 -   保護包含已包裝應用程式的輸出目錄。 考慮針對輸出使用使用者層級目錄。
 
-## 使用 Azure Active Directory Library 包裝應用程式
-如果您的應用程式正在使用 Azure Active Directory Authentication Library (ADAL)，您必須在包裝應用程式之前，先完成這些步驟。
-
-### 步驟 1：確定您符合 ADAL 的需求
-針對使用 ADAL 的應用程式，下列條件必須為真：
-
--   應用程式必須納入大於或等於 1.0.2 的 ADAL 版本。
-
--   開發人員必須將 Intune 行動應用程式管理資源的存取權授與其應用程式，如[步驟 3：設定 AAD 中的行動應用程式管理存取權](#step-3-configure-access-to-mobile-app-management-in-aad)中所述。
-
-### 步驟 2：檢閱您在註冊應用程式時必須取得的識別碼
-在下一個步驟中，您將使用 Azure 管理入口網站來註冊您的應用程式 (搭配使用 ADAL 與 Azure Active Directory (AAD))，以取得下表中所列的唯一識別碼。 當您將 ADAL 與應用程式整合時，再將識別碼提供給開發人員。
-
-|識別碼|詳細資訊|預設值|
-|--------------|--------------------|-----------------|
-|**用戶端識別碼**|使用 AAD 註冊應用程式之後，針對該應用程式所產生的唯一 GUID 識別碼。<br /><br />如果您知道應用程式的用戶端識別碼，請指定該值。 否則，請使用預設值。|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**授權 URI**|AAD 物件的授權統一資源識別元 (URI) 值 (例如使用者和群組)。<br /><br />AuthorityURI 參數是選用的應用程式包裝工具。 如果您不使用此參數，則會使用預設 URI。||
-|**SkipBroker**|指出公司入口網站是否將用來做為 Broker 的值。<br /><br />**True** - 公司入口網站不會用於 ADAL 驗證。<br /><br />**False** - 公司入口網站將用於 ADAL 驗證。 公司入口網站正因「單一登入」的緣故而使用已註冊的使用者。||
-|**非 Broker 重新導向 URI**|ADAL 不使用 Broker 應用程式 (Intune 公司入口網站) 時，則使用登入 URI。|urn:ietf:wg:oauth:2.0:oob|
-|**資源識別碼**|應用程式 AAD 資源的指標。||
-
-### 步驟 3：設定 AAD 中的行動應用程式管理存取權
-在您可以於應用程式包裝工具中使用應用程式的 AAD 註冊值之前，應用程式開發人員必須先遵循以下步驟，授與該應用程式對於 Intune 行動應用程式管理資源的存取權：
-
-1.  在 Azure 管理入口網站中登入現有的 AAD 帳戶。
-
-2.  選擇 [現有的 LOB 應用程式註冊]。
-
-3.  在 [設定]  區段中，選擇 [設定其他應用程式中的 Web API 存取] 。
-
-4.  從 [其他應用程式的權限] 區段的第一個下拉式清單中，選擇 [Intune 行動應用程式管理]。
-
-您現在可以使用應用程式包裝工具中的應用程式用戶端識別碼。 您可以在 Azure Active Directory 管理入口網站中找到用戶端識別碼，如[步驟 2：檢閱您在註冊應用程式時必須取得的識別碼](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app)中的表格內容所述。
-
-### 步驟 4：使用 App Wrapping Tool 中的 AAD 識別碼值
-使用您在註冊程序中取得的識別碼值，在應用程式包裝工具中輸入該值做為命令列的內容。 您必須指定表格中所有的值，使用者才能成功驗證應用程式。 如果不指定值，則會使用預設值。
-
-|識別碼|參數|
-|--------------|-------------|
-|用戶端識別碼|ClientID|
-|授權 URI|授權-URI|
-|SkipBroker|SkipBroker|
-|非 Broker 重新導向 URI|NonBrokerRedirectURI|
-|資源識別碼|ResourceID|
-包裝應用程式時請謹記下列重點：
-
--   為了確認驗證已成功，[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 會擷取與 MAM 資源識別碼相關聯的 AAD 權杖。 然而，該權杖並非用於任何會依次確認權杖有效性的呼叫中。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 只能讀取已登入使用者的使用者主體名稱 (UPN)，來決定應用程式存取權限。 AAD 權杖不用於任何進一步的服務呼叫。
-
--   如果您提供用戶端應用程式的用戶端識別碼和授權 URI，將會避免雙重的登入提示。 您必須註冊此用戶端識別碼才能存取 AAD 儀表板中已發佈的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM 資源識別碼。 如果您沒有註冊用戶端識別碼，使用者會在應用程式執行時發生登入失敗的狀況。
 
 
 ### 請參閱
@@ -175,6 +145,6 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

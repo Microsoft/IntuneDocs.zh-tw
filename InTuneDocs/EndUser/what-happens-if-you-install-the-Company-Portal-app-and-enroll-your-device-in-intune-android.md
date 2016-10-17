@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
 
 -   移除所有公司相關資料。 不會移除您的個人資料和設定。
 
--   強制要求您在裝置上設定密碼或 PIN；如果不正確的密碼嘗試次數過多，系統可能會鎖定您的裝置存取權，或是將裝置重設為製造商的預設設定 (可能包括刪除資料)。
+-   對裝置設定需求，例如要求您擁有裝置密碼或 PIN 以保護公司資料。 IT 系統管理員可能會限制您輸入不正確密碼的次數，並在嘗試次數過多時鎖定裝置，使您無法使用。
 
 -   要求您接受條款和條件。
 
--   啟用或停用裝置上的相機。
+-   停用相機 (僅限 Samsung Knox 裝置，而非 Nexus 裝置) 以防止您對不應分享的敏感性工作資料拍攝相片。
 
--   強制加密裝置上的所有資料，包括公司和個人資料。 如果裝置遺失或失竊，這將可幫助您保護資料。
+-   要求為裝置上的所有資料加密，這將能在裝置遺失或遭竊的情況下協助保護資料。
 
 -   在裝置新增到公司入口網站之後，大約每隔 8 個小時裝置會：
 
@@ -58,11 +58,8 @@ ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
 需要協助嗎？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
