@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7bfb853d86ebb8c66fd7932a9a0f1d1f0ff951ac
+ms.sourcegitcommit: e050c7b4947f0a3aae87c545ec8cca282c22fe55
+ms.openlocfilehash: 2c9fd5714f64477e7e07d66429ae68e17e2e1bb7
 
 
 ---
-
 
 # 設定您的 PIN 或密碼
 
@@ -32,11 +31,8 @@ ms.openlocfilehash: 7bfb853d86ebb8c66fd7932a9a0f1d1f0ff951ac
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

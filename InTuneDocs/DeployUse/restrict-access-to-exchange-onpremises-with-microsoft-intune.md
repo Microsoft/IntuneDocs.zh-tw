@@ -4,7 +4,7 @@ description: "使用條件式存取保護與控制 Exchange 內部部署上的�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 -   如果裝置不相容，就會顯示訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站或公司入口網站應用程式，讓他們找到問題的相關資訊，以及如何修復問題的方法。
 
 ## 支援行動裝置
--   Windows Phone 8 和更新版本
+-   Windows Phone 8.1 和更新版本
 
 -   iOS 上的原生電子郵件應用程式。
 
--   EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)
+-   EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
+- EAS 郵件用戶端 **Android for Work 裝置**：Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取搭配 Android for Work 使用，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將這些應用程式部署為必要安裝。 
+
 > [!NOTE]
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
 
 ## 對電腦的支援
 
-Windows 8 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+Windows 8.1 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  設定條件式存取原則
 
@@ -123,6 +125,6 @@ Windows 8 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wi
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

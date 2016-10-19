@@ -1,10 +1,10 @@
 ---
 title: "設定或變更密碼 | Microsoft Intune"
-description: 
+description: "設定或變更密碼"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: dca7579ff5cd2ae45616797314195f83ae6571bd
+ms.sourcegitcommit: 596534a5ca50d274472451014db4404b4a5bf2d5
+ms.openlocfilehash: 7273fb674123647e977a25bf9745aa05de7286e7
 
 
 ---
@@ -22,17 +22,17 @@ ms.openlocfilehash: dca7579ff5cd2ae45616797314195f83ae6571bd
 
 如果您的 iOS 裝置不符合您的 IT 系統管理員密碼原則，則會出現訊息，簡要說明問題，並說明您需要如何讓您的密碼符合需求。
 
-IT 系統管理員可以設定多個密碼需求。 例如，密碼可能必須是特定數目的字元，也可能必須混合使用數字和字母等。因為可能設定多個需求，所以這些指示可以僅解釋如何設定或變更密碼。 它們不會解釋每一種可能的需求組合。
+IT 系統管理員可以設定多個密碼需求。 例如，密碼可能必須包含特定數目的字元，也可能必須混合使用數字、字母和字元。 因為可能設定多個需求，所以這些指示可以僅解釋如何設定或變更密碼。 它們不會解釋每一種可能的需求組合。
 
-如果您無法設定符合所有密碼需求的密碼，請連絡您的 IT 系統管理員，以取得協助。
+如果您無法設定符合密碼需求的密碼，請連絡您的 IT 系統管理員，以取得協助。
 
-## 設定密碼：
+## 設定密碼##
 
 1. 點選 [設定][Touch ID & Passcode] (Touch ID 和密碼) > 。
 2. 在 [Touch ID & Passcode] (Touch ID 和密碼) 功能表上，點選 [Turn Passcode On] (開啟密碼)。
 3. 輸入符合 IT 系統管理員需求的新密碼，然後再輸入一次予以確認。
 
-## 變更密碼：
+## 變更密碼##
 
 1. 點選 [設定][Touch ID & Passcode] (Touch ID 和密碼) > 。
 2. 輸入密碼。 [Touch ID & Passcode] (Touch ID 和密碼) 功能表隨即開啟。
@@ -41,11 +41,8 @@ IT 系統管理員可以設定多個密碼需求。 例如，密碼可能必須�
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

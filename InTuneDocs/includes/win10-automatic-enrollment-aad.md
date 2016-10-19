@@ -21,7 +21,7 @@
 
 5. 指定 Intune 的 URL：
 
-  - **MDM 註冊 URL** – 使用 `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` 作為 MDM 註冊 URL。
+  - **MDM 註冊 URL** - 使用預設值。
   - **MDM 使用條款 URL** – 使用預設值。 使用者註冊裝置時，此 URL 會顯示使用條款。
   - **MDM 相容性 URL** – 使用預設值。 如果發現裝置與相容性不符，即會顯示 [拒絕存取] 與此 URL。 URL 指向的頁面可協助使用者了解為何他們的裝置不符合原則，以及使其重新相容的方式。
 
@@ -34,6 +34,6 @@
 7. 選擇 [儲存]。
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

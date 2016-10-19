@@ -4,7 +4,7 @@ description: "描述在 Intune 註冊 iOS 裝置的方式"
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/18/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
 
 
 ---
@@ -23,10 +23,15 @@ ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
 # 在 Intune 註冊 iOS 裝置
 
-如果您的公司或學校使用 Microsoft Intune，您可以註冊 iOS 裝置來存取公司電子郵件、檔案和其他資源。 註冊您的裝置，可讓您的 IT 部門管理這些公司或學校資源，並保護它們的安全，同時讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
+如果您的公司或學校使用 Microsoft Intune，您可以註冊 iOS 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
 
 如果您嘗試註冊 Mac OS X 裝置，請參閱[在 Intune 註冊 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
 
+**開始之前：**
+
+- 開始步驟之後，請務必完成註冊。 如果開始但未完成，稍後回頭再試一次時，註冊可能無法運作。
+- 確定您的 Wi-Fi 運作正常。 否則，註冊將會失敗。
+- 如果您在裝置上封鎖 Safari，請將它解除封鎖。 您必須使用 Safari 才能註冊。
 
 
 **註冊 iOS 裝置：**
@@ -71,7 +76,7 @@ ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
     畫面上會顯示 [正在註冊裝置] 訊息。
 
-11.  顯示訊息詢問您是否要在公司入口網站中開啟頁面時，請點選 [開啟]。
+11.  當訊息詢問您是否要在公司入口網站中開啟頁面時，請點選 [開啟]。
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
@@ -85,13 +90,11 @@ ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
 您的裝置現在已註冊在 Intune 中，而且會將您帶回公司入口網站應用程式。
 
+
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

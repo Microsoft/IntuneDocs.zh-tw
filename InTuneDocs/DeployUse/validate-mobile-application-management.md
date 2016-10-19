@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 本主題提供設定行動應用程式管理 (MAM) 後，檢查是否有問題的相關資訊。 本指南適用於 Azure 入口網站中的 MAM 原則。
 
 ### 檢查是否有徵兆
-因為 MAM 是一種資料保護工具，所以使用者不太可能回報問題。 如果 MAM 設定有問題，使用者將可如同沒有 MAM 一般不受限制地進行存取，且不會察覺發生問題。 基於這個理由，建議您對可刻意測試 MAM 限制的一小群使用者試驗 MAM 原則，以驗證 MAM 設定。 
+因為 MAM 是一種資料保護工具，所以使用者不太可能回報問題。 如果 MAM 設定有問題，使用者將可如同沒有 MAM 一般不受限制地進行存取，且不會察覺發生問題。 基於這個理由，建議您對可刻意測試 MAM 限制的一小群使用者試驗 MAM 原則，以驗證 MAM 設定。
 
 
-### 要檢查的項目 
+### 要檢查的項目
 
 如果測試顯示您的 MAM 原則行為不如預期，建議您檢查下列項目︰
 
@@ -40,7 +40,7 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 
 2. 從清單中選擇使用者，或是搜尋並選擇使用者，然後選擇 [選取使用者]。 在 [應用程式報告] 資料行頂端，您會看到使用者是否具有 MAM 授權。 您會在下方看到使用者是否具有 O365 授權，以及使用者所有裝置的應用程式狀態。
 
-![MAM 的應用程式狀態](..\media\ts-mam-use-apps.png) 
+![MAM 的應用程式狀態](..\media\ts-mam-user-apps.png) 
 
 ### 解決方式
 以下是要根據使用者狀態所採取的動作︰
@@ -57,6 +57,6 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

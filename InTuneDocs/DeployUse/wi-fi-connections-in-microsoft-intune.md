@@ -4,7 +4,7 @@ description: "使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 1.   建立 Wi-Fi 設定檔，內含連線到 **Contoso Wi-Fi** 無線網路所需的設定。
 
-2. 將設定檔部署至具備 iOS 裝置的使用者群組。
+2.   將設定檔部署至具備 iOS 裝置的使用者群組。
 
 3.   使用者在無線網路清單中發現新的 **Contoso Wi-Fi** 網路，而且可以輕鬆地連線到這個網路。
 
@@ -39,6 +39,8 @@ ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 您可以將 Wi-Fi 設定檔部署到下列平台：
 
 -   Android 4.0 及更新版本
+
+-   Android for Work   
 
 -   iOS 8.0 和更新版本
 
@@ -52,10 +54,13 @@ ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
     -   Wi-Fi 設定檔 (Android 4 和更新版本)
 
+    -   Wi-Fi 設定檔 (Android for Work)
+
     -   Wi-Fi 設定檔 (iOS 8.0 和更新版本)
 
     -   Wi-Fi 設定檔 (Mac OS X 10.9 及更新版本)
-
+    
+    
     沒有針對此原則類型的建議設定。 您必須建立自訂原則。
 
 3.  提供設定檔的名稱和說明。
@@ -173,6 +178,6 @@ ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

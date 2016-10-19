@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 -   具有**包含 Exchange Online (例如 E3) 的 Office 365 訂用帳戶**，而且使用者必須獲得 Exchange Online 的授權。
 
-- 擁有 **Azure Active Directory Premium 訂用帳戶**。 如需詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)頁面。 **Enterprise Mobility Suite + Security 訂用帳戶**包括 Intune 和 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請瀏覽 [Enterprise Mobility Suite pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) (Enterprise Mobility Suite 定價) 頁面。
+- 擁有 **Enterprise Mobility + Security 或 Azure Active Directory Premium 訂閱**，且使用者必須獲 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 -  考慮設定選擇性 **Microsoft Intune 服務對服務連接器**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Microsoft Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用相容性原則或條件存取原則並不需要使用連接器，但必須執行報告，以協助評估條件存取的影響。
 
@@ -64,7 +64,7 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 ## 支援行動裝置
 您可以限制從 **Outlook** 和其他 **使用新式驗證的應用程式**存取 Exchange Online 電子郵件：-
 
-- Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
+- Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本，以及 Android for Work
 - iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
 
@@ -225,6 +225,9 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 5.  在 [Exchange ActiveSync 應用程式] 下，您可以選擇禁止不相容的裝置存取 Exchange Online。 您也可以選擇當裝置不是執行支援的平台時允許或封鎖存取電子郵件。 支援的平台包括 Android、iOS、Windows 和 Windows Phone。
 
+ Exchange Active Sync 應用程式 **Android for Work** 裝置：
+ -  Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取在 Android for Work 裝置上正常運作，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將它部署為**必要**安裝。 
+
 6.  在 [目標群組] 下方，選取要套用原則之使用者的 Active Directory 安全性群組。 您可以選擇針對所有使用者或選取的使用者群組清單。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面，其中顯示 [目標] 和 [豁免] 群組選項](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +266,6 @@ ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

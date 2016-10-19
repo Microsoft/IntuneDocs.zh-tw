@@ -4,7 +4,7 @@ description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # Microsoft Intune 中的 VPN 連線
- 您可以使用虛擬私人網路 (VPN) 提供使用者安全的公司網路遠端存取。 遠端使用者工作的方式就像他們的裝置實際連線到網路一樣。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定部署給組織中的使用者和裝置。 透過部署這些設定，即可最小化連線到公司網路上資源所需的使用者工作。
+
+虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用「VPN 連線設定檔」來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定部署給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到網路。 
 
 例如，假設您想要使用連線到公司網路上檔案共用所需的設定來佈建所有 iOS 裝置。 您在建立的 VPN 設定檔中包含連線到公司網路所需的設定，然後將此設定檔部署給所有 iOS 裝置的使用者。 使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能完成連線。
 
 您可以使用 VPN 設定檔設定下列裝置類型：
 
 * 執行 Android 4 和更新版本的裝置
+* Android for Work 裝置
 * 執行 iOS 8.0 和更新版本的裝置
 * 執行 Mac OS X 10.9 及更新版本的裝置
 * 執行 Windows 8.1 和更新版本的已註冊裝置
@@ -70,9 +72,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 ### 憑證
 
-當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PFX 憑證設定檔。
-
-這稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或根憑證) 進行驗證。 受信任的憑證會部署到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
+當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PFX 憑證設定檔。 這稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或「根憑證」) 進行驗證。 受信任的憑證會部署到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
 
 如需如何建立和使用 Intune 中憑證設定檔的詳細資訊，請參閱[使用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)。
 
@@ -85,6 +85,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則]。
 2. 展開相關的裝置類型，然後選擇該裝置的 VPN 設定檔，以選取新原則的範本：
     * **VPN 設定檔 (Android 4 和更新版本)**
+    * **VPN 設定檔 (Android for Work)**
     * **VPN 設定檔 (iOS 8.0 和更新版本)**
     * **VPN 設定檔 (Mac OS X 10.9 及更新版本)**
     * **VPN 設定檔 (Windows 8.1 和更新版本)**
@@ -92,6 +93,9 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
     * **VPN 設定檔 (Windows 10 Desktop/行動裝置版和更新版本)**
 
  您只能建立和部署自訂 VPN 設定檔原則。 沒有建議的設定。
+
+> [!Note]
+> 適用於 Android for Work 裝置的 VPN 設定檔只會針對安裝在該裝置之工作設定檔的應用程式，啟用 VPN 連線。
 
 3. 使用下表協助您設定 VPN 設定檔設定：
 
@@ -192,6 +196,6 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

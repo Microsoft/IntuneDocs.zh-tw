@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
-ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
+ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
+ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 
 ---
@@ -29,6 +29,10 @@ ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 |**步驟 3：**[設定 Intune 公司入口網站](#step-3-configure-the-intune-company-portal)|設定公司入口網站應用程式的與使用者互動設定|  
 |**步驟 4：**[指派 Intune 使用者授權](#step-4-assign-intune-user-licenses)|將 Intune 授權指派給使用者，讓使用者可以註冊裝置|
 |**步驟 5：**[設定裝置管理](#step-5-set-up-device-management)|啟用適用於 iOS 和 Windows 管理的平台特定設定。 Android 裝置不需要進行其他設定。|
+
+要搭配使用 Intune 和 Configuration Manager 嗎？
+> [!div class="button"]
+[檢視 SCCM 文件 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## 步驟 1：裝置註冊相依性
 
@@ -130,6 +134,6 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

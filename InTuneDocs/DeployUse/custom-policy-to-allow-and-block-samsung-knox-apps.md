@@ -4,7 +4,7 @@ description: "自訂設定檔來建立一份允許和封鎖 KNOX 的應用程式
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 
 
@@ -23,7 +23,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 使用本主題中的程序，建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一項項目︰
 
-- 無法在裝置上執行的應用程式清單。 不允許執行其他應用程式。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
+- 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
 - 裝置使用者可從 Google Play 市集安裝的應用程式清單。 只可以安裝您列出的應用程式。 無法從市集安裝其他應用程式。
 
 只有執行 Samsung KNOX 的裝置可使用這些設定。
@@ -51,7 +51,8 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 4. 按一下 [確定]，然後按一下 [儲存原則]。 
 
->[提示] 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。
+>[!TIP]
+> 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。
 
 下一次，登入每個目標裝置後，就會套用應用程式設定。
 
@@ -70,6 +71,6 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "使用 Intune 建立和部署原則，控制您所管理之已註�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -44,7 +44,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 ## 建立設定原則
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
 
 2.  選擇您想要的原則，然後選擇使用原則的建議設定 (如果有；稍後可變更這些設定)，或者選擇使用您自己的設定來建立自訂原則。
 
@@ -61,6 +61,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
     - [iOS 裝置的設定](ios-policy-settings-in-microsoft-intune.md)
     - [Android 裝置的設定](android-policy-settings-in-microsoft-intune.md)
+    - [Android for Work 裝置的設定](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Windows 8 和 Windows 8.1 裝置的設定](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows Phone 8.1 裝置的設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Windows 10 桌上型電腦和行動裝置的設定](windows-10-policy-settings-in-microsoft-intune.md)
@@ -96,7 +97,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 ## 管理原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [原則]，然後瀏覽至您要管理的原則並加以選取。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 **[原則]**，然後瀏覽至您要管理的原則並加以選取。
 
 2.  選取下列其中一個動作：
 
@@ -115,7 +116,6 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 - iOS 和 Mac OS X：每 6 小時。
 - Android：每 8 小時。
 - Windows Phone：每 8 小時。
-- 註冊的 Windows RT 裝置：每 24 小時。
 - 註冊為裝置的 Windows 8.1 和 Windows 10 電腦：每 8 小時。
 
 如果裝置剛註冊，簽入頻率會更頻繁，如下所示：
@@ -212,6 +212,6 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

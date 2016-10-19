@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +37,12 @@ ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
 
 -   如果您已經具有 Microsoft Online Services 帳戶，則需要該帳戶的系統管理員認證。 如果您沒有這類帳戶，或者使用這個 Intune 租用戶的目的為僅供評估，則不需要這些系統管理員認證。
 
--   如果您要以 Intune 評估版管理 iOS 或 Windows Phone 裝置，將需要憑證 (或金鑰) 和帳戶，以擷取這些憑證 (請參閱下表)。 Android 裝置不需要任何額外的憑證。
+-   如果您要以 Intune 評估版管理 iOS 或 Windows Phone 8.1 裝置，將需要憑證 (或金鑰) 和帳戶，以擷取這些憑證 (請參閱下表)。 Android 裝置不需要任何額外的憑證。
 
     |平台|憑證需求|詳細資訊|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 和 Windows Phone 8 |從市集安裝公司入口網站應用程式的 Windows Phone 8.1 使用者不需要憑證。 對於 Windows Phone 8.0，或使用 Intune 將公司入口網站應用程式部署至 Windows Phone 8.1 裝置，會需要 Symantec 憑證。|本指南假設您的使用者可從 Windows Phone 8.1 或更新版本裝置的市集，取得公司入口網站應用程式。 如需 Windows Phone 8.0 支援資訊，請參閱[使用 Microsoft Intune 設定 Windows Phone 管理](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)。|
-    |Windows 10、Windows RT 8.1、Windows RT 或 Windows 8.1 裝置|註冊 Windows RT 和 Windows 裝置不需要憑證。|[使用 Microsoft Intune 安裝 Windows 電腦用戶端](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
+    |Windows Phone 8.1 |從市集安裝公司入口網站應用程式的 Windows Phone 8.1 使用者不需要憑證。 |本指南假設您的使用者可從 Windows Phone 8.1 或更新版本裝置的市集，取得公司入口網站應用程式。 |
+    |Windows 10、Windows RT 8.1 或 Windows 8.1 裝置|註冊 Windows RT 和 Windows 裝置不需要憑證。|[使用 Microsoft Intune 安裝 Windows 電腦用戶端](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
     |iOS 7.1 或更新版本|取得 Apple Push Notification service 憑證。|如[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)中所述，向 Apple 要求 Apple Push Notification 服務憑證。|
 
 ## 完成 Intune 30 天評估步驟
@@ -66,6 +66,6 @@ ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

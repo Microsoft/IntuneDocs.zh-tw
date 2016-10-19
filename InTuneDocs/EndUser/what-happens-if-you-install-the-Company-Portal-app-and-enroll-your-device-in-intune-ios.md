@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 3f9f985e2e40d67bedf8eb37125274ea029e602a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ ms.openlocfilehash: 3f9f985e2e40d67bedf8eb37125274ea029e602a
 
 -   要求您接受條款和條件。
 
--   啟用或停用裝置上的相機。
+-   啟用或停用裝置的相機，以防止您拍攝敏感性公司資料的相片。
 
 -   啟用或停用裝置上的網頁瀏覽功能。
 
@@ -91,15 +91,10 @@ ms.openlocfilehash: 3f9f985e2e40d67bedf8eb37125274ea029e602a
 
 -   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 如果允許自動檔案同步處理，可能會產生漫遊費用。
 
-如需如何註冊裝置的步驟，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md) 或[在 Intune 中註冊您的 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)。
-
-如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

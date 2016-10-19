@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
-ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 -  **密碼長度下限：**指定使用者密碼中至少必須包含的數字位數或字元數。
 
-- **密碼品質：**啟用此設定以設定 Android 裝置的密碼需求。 從下列選項進行選擇：
+- **密碼品質**︰此設定會偵測是否已在裝置上設定您指定的密碼需求。 啟用此設定可要求使用者設定 Android 裝置的特定密碼需求。 從下列選項進行選擇：
   -   **低安全性生物識別**
   - **必要**
   -   **至少包含數字**
@@ -83,6 +83,6 @@ ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
 
 # 如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
-如需會發生什麼情況的其他資訊，請使用符合您所使用之裝置類型的連結，如上述＜在本文中＞一節所示。
-
-- [Windows 10 mobile、8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10、Windows 8.1 或 Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [執行 Windows 8.1 或 Windows RT 的 Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+使用此頁面右側之＜本文內容＞下方的連結，來尋找您所使用之裝置類型的相關資訊。
 
 
 ## Windows 10、Windows 8.1、Windows 8、Windows 7、Vista
@@ -55,7 +51,7 @@ ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
 
 -   您可能無法再存取裝置上的某些公司資源，例如檔案共用或內部網站。
 
-## Windows 10 mobile、Windows Phone 8.1 或 Windows Phone 8
+## Windows 10 Mobile 和 Windows Phone 8.1
 
 -   已從您的裝置解除安裝公司入口網站應用程式，這表示您的裝置將不再顯示於公司入口網站中，而且您無法從公司入口網站應用程式或公司入口網站安裝應用程式。
 
@@ -66,7 +62,7 @@ ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
     > [!IMPORTANT]
     > 唯一例外仍然有效的設定是加密原則。 如果您的公司原則要求必須加密 Windows Phone，將手機解密的唯一方式是使用 Windows Phone 上的 [設定] 功能表來重設手機。
 
-## 執行 Windows 8.1 或 Windows RT 的 Windows RT
+## 執行 Windows 8.1 的 Windows RT
 
 -   已從您的裝置解除安裝公司入口網站應用程式，這表示您的裝置將不再顯示於公司入口網站中，而且您無法從公司入口網站安裝應用程式。
 
@@ -90,11 +86,9 @@ ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

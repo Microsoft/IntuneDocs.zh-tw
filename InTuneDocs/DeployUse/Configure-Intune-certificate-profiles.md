@@ -4,7 +4,7 @@ description: "了解如何建立 Intune 憑證設定檔。"
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 ### 建立信任的憑證設定檔
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]。
-2.  新增下列其中一種原則類型：
-    - **Android &gt; 信任的憑證設定檔 (Android 4 和更新版本)**
-    - **iOS &gt; 信任的憑證設定檔 (iOS 8.0 和更新版本)**
-    - **Mac OS X &gt; 信任的憑證設定檔 (Mac OS X 10.9 及更新版本)**
-    - **Windows &gt; 信任的憑證設定檔 (Windows 8.1 和更新版本)**
-    - **Windows &gt; 信任的憑證設定檔 (Windows Phone 8.1 和更新版本)**
+1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]，然後選擇裝置平台。 您可以為這些裝置建立信任的憑證設定檔：
+
+-  Android 4 及更新版本
+
+-  Android for Work
+
+-  iOS 7.1 和更新版本
+
+-  Mac OS X 10.9 及更新版本
+
+-  Windows 8.1 及更新版本
+
+-  Windows Phone 8.1 和更新版本
+
+
+2.  新增 [信任的憑證設定檔] 原則。
 
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
@@ -60,14 +69,22 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 ### 建立 SCEP 憑證設定檔
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]。
-2.  新增下列其中一種原則類型：
-    - **Android &gt; SCEP 憑證設定檔 (Android 4 和更新版本)**
-    - **iOS &gt; SCEP 憑證設定檔 (iOS 8.0 和更新版本)**
-    - **Mac OS X &gt; SCEP 憑證設定檔 (Mac OS X 10.9 及更新版本)**
-    - **Windows &gt; SCEP 憑證設定檔 (Windows 8.1 和更新版本)**
-    - **Windows &gt; SCEP 憑證設定檔 (Windows Phone 8.1 和更新版本)**
+1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]，然後選擇裝置平台。  您可以為這些裝置建立 SCEP 憑證設定檔：
 
+-  Android 4 及更新版本
+
+-  Android for Work
+
+-  iOS 7.1 和更新版本
+
+-  Mac OS X 10.9 及更新版本
+
+-  Windows 8.1 及更新版本
+
+-  Windows Phone 8.1 和更新版本
+
+2.  新增 [SCEP 憑證設定檔] 原則
+    
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  遵循設定檔設定頁面的指示來設定 SCEP 憑證設定檔設定。
@@ -87,13 +104,16 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 ### 建立 .PFX 憑證設定檔
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]。
-2.  新增下列其中一種原則類型：
-  - **Android &gt; .PFX 憑證設定檔 (Android 4 和更新版本)**
-  - **Windows &gt; PKCS #12 (.PFX) 憑證設定檔 (Windows 10 和更新版本)**
-  - **Windows &gt; PKCS #12 (.PFX) 憑證設定檔 (Windows Phone 10 和更新版本)**
-  - **iOS > PKCS #12 (.PFX) 憑證設定檔 (iOS 8.0 和更新版本)**    
-    深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]，然後選擇裝置平台。 下列平台支援 .PFX 憑證：
+  - Android 4 及更新版本
+  - Android for Work
+  - Windows 10 及更新版本
+  - Windows Phone 10 及更新版本
+  - iOS 8.0 及更新版本)    
+
+    
+2.  新增 [PFX 憑證設定檔] 原則。 
+      深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 3.  輸入原則表單上所要求的資訊。
 4.  選擇 [儲存原則]。
 
@@ -130,6 +150,6 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

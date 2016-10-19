@@ -3,19 +3,19 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Intune 文件 - MDM 文件 | Microsoft 文件"
+title: "Intune 文件 | Microsoft 文件"
 description: "Microsoft Intune 技術文件 - 行動裝置與應用程式管理"
-keywords: "intune 文件, MDM 文件, 行動裝置管理文件, 行動裝置與應用程式管理文件"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "Intune 文件, 應用程式管理, 裝置管理, MDM 文件, MAM 文件"
+author: arob98
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -24,20 +24,20 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
     <section id="hero-content">
       <h1>Intune 文件</h1>
       <h2>了解如何部署和管理 Microsoft Intune，這是一項行動裝置和應用程式的管理服務。</h2>
-      <h3>使用 Configuration Manager 管理 Intune 嗎？ <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">檢視 Configuration Manager 文件 &rarr;</a></h3>
+      <h3>要使用 Configuration Manager 管理 Intune 嗎？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">了解混合式行動裝置管理 &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Microsoft Intune 簡介</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">依賴 Intune 的常見案例</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune 快速入門指南</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">新功能</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">使用 Intune 的常見方式</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保護應用程式資料</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">裝置和應用程式生命週期的概觀</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保護應用程式資料</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">要告訴使用者的 Intune 相關事項</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">保護公司資源的存取權</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">Microsoft Intune App SDK for iOS 開發人員指南</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Android 的 Microsoft Intune App SDK 開發人員指南</a></li>
         </ul>
       </div>
     </section>
@@ -284,6 +284,6 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
