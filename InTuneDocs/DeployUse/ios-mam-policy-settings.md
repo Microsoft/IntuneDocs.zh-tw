@@ -4,7 +4,7 @@ description: "本主題說明適用於 iOS 裝置的行動裝置應用程式管�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
   當您執行選擇性抹除以移除公司資料時，會移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 **Microsoft Outlook** 應用程式。
 
   **預設值 = 是**
+  
+- **停用列印**︰選擇 [是] 可防止從與 MAM 原則相關聯的應用程式列印公司資料。
+
+    **預設值 - 是**
+
 ##  iOS 存取原則設定
 **「受原則管理的應用程式」**詞彙是用來參考 MAM 原則所設定的應用程式。
 - **需要 PIN 才能存取：**選擇 **[是]** 可要求 PIN 使用受原則管理的應用程式。 當使用者第一次在工作內容中執行應用程式時，系統會提示他們進行這項設定。
@@ -114,6 +119,6 @@ ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

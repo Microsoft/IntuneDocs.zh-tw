@@ -4,7 +4,7 @@ description: "您可以使用本主題中的資訊，協助您決定您要用來
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
+ms.sourcegitcommit: 3ea160fc82cc821740efeeabb0642e1dd323d43b
+ms.openlocfilehash: a36aa92de62cfa3abb7f8c26b2fa4f9c781c1dcd
 
 
 ---
@@ -31,14 +31,15 @@ ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
 
 |原則名稱|當您想要執行此作業時使用|
 |---------------|------------------------|
-|**自訂組態 (Android 4 和更新版本、Samsung KNOX Standard 4.0 和更新版本)**|部署開放行動聯盟的統一資源識別項 (OMA-URI) 設定，例如可用來控制裝置功能的 Wi-Fi 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Android 原則設定](android-policy-settings-in-microsoft-intune.md)。|
-|**電子郵件設定檔 (Samsung KNOX Standard 4.0 和更新版本)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
-|**一般組態 (Android 4 和更新版本、Samsung KNOX Standard 4.0 和更新版本)**|設定行動裝置的安全性及功能設定。<br />指定應用程式是否相容，並報告應用程式的使用時間。<br />設定 Kiosk 模式鎖定裝置，只讓某些特定功能運作。例如，允許裝置只執行一個應用程式或停用音量按鈕。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Android 原則設定](android-policy-settings-in-microsoft-intune.md)。|
-|**PKCS #12 (.PFX) 憑證設定檔 (Android 4 和更新版本)**|使用這個設定檔來為裝置憑證要求建立及部署 PFX 設定。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
-|**SCEP 憑證設定檔 (Android 4 和更新版本)**|設定可與受信任行動裝置憑證一起使用的簡單憑證註冊通訊協定憑證來驗證行動裝置，以便這些裝置能夠存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
-|**受信任憑證設定檔 (Android 4 和更新版本)**|設定可用於驗證行動裝置的受信任行動裝置憑證，以允許這些裝置存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
-|**VPN 設定檔 (Android 4 和更新版本)**|設定及部署設定，讓使用者可以從他們的行動裝置安全地存取公司網路。 藉由部署這些設定，您可以簡化使用者和其公司的連線。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune.md 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。|
-|**Wi-Fi 設定檔 (Android 4 和更新版本)**|為組織中的使用者設定及部署無線網路設定。 藉由部署這些設定，您可以簡化使用者和無線網路的連線。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)。|
+|**自訂組態 (Android 4 和更新版本、Samsung KNOX Standard 4.0 和更新版本)**<br><br>**自訂設定 (Android for Work)**|部署開放行動聯盟的統一資源識別項 (OMA-URI) 設定，例如可用來控制裝置功能的 Wi-Fi 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Android 原則設定](android-policy-settings-in-microsoft-intune.md)。|
+|**電子郵件設定檔 (Samsung KNOX Standard 4.0 和更新版本)**<br><br>**電子郵件設定檔 (Android for Work - Gmail)**<br><br>**電子郵件設定檔 (Android for Work - Nine Work)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
+|**一般組態 (Android 4 和更新版本、Samsung KNOX Standard 4.0 和更新版本)**<br><br>**一般設定 (Android for Work)**|設定行動裝置的安全性及功能設定。<br />指定應用程式是否相容，並報告應用程式的使用時間。<br />設定 Kiosk 模式鎖定裝置，只讓某些特定功能運作。例如，允許裝置只執行一個應用程式或停用音量按鈕。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Android 原則設定](android-policy-settings-in-microsoft-intune.md)。|
+|**PKCS #12 (.PFX) 憑證設定檔 (Android 4 和更新版本)**<br><br>**PKCS #12 (.PFX) 憑證設定檔 (Android for Work)**|使用這個設定檔來為裝置憑證要求建立及部署 PFX 設定。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
+|**SCEP 憑證設定檔 (Android 4 和更新版本)**<br><br>**SCEP 憑證設定檔 (Android for Work)**|設定可與受信任行動裝置憑證一起使用的簡單憑證註冊通訊協定憑證來驗證行動裝置，以便這些裝置能夠存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
+|**受信任憑證設定檔 (Android 4 和更新版本)**<br><br>**信任的憑證設定檔 (Android for Work)**|設定可用於驗證行動裝置的受信任行動裝置憑證，以允許這些裝置存取 Wi-Fi 及 VPN 設定檔所設定的網路資源。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](secure-resource-access-with-certificate-profiles.md)。|
+|**VPN 設定檔 (Android 4 和更新版本)**<br><br>**VPN 設定檔 (Android for Work)**|設定及部署設定，讓使用者可以從他們的行動裝置安全地存取公司網路。 藉由部署這些設定，您可以簡化使用者和其公司的連線。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune.md 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。|
+|**Wi-Fi 設定檔 (Android 4 和更新版本)**<br><br>**Wi-Fi 設定檔 (Android for Work)**|為組織中的使用者設定及部署無線網路設定。 藉由部署這些設定，您可以簡化使用者和無線網路的連線。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)。|
+|**行動應用程式設定原則 (Android for Work)**|使用行動應用程式設定原則來自動提供使用者執行 Android for Work 應用程式時可能需要的設定。<br /><br />如需詳細資訊，請參閱[在 Microsoft Intune 中使用行動應用程式設定原則設定 Android for Work 應用程式](afw-app-configuration-policy.md)。
 
 ## iOS 設定原則
 
@@ -75,7 +76,7 @@ ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
 |**自訂組態 (Windows 10 Desktop/行動裝置版和更新版本)**|部署可以用來控制裝置功能的 OMA URI 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br />    如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 10 原則設定](windows-10-policy-settings-in-microsoft-intune.md)。|
 |**自訂組態 (Windows Phone 8.1 和更新版本)**|部署可以用來控制裝置功能的 OMA URI 設定。 當設定原則中您所需要的設定無法使用時，即可使用此方法。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows Phone 8.1 原則設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)。|
 |**版本升級原則 (Windows 10 Desktop 和更新版本)**<br><br>**版本升級原則 (Windows 10 Holographic 和更新版本)**<br><br>**版本升級原則 (Windows 10 行動裝置版及更新版本)**|設定及部署內含可用來將 Windows 10 裝置更新為較新版本之授權或產品金鑰資訊的原則。<br><br>如需詳細資訊，請參閱 [Microsoft Intune 的版本升級原則設定](edition-upgrade-policy-settings-in-microsoft-intune.md)。|  
-|**電子郵件設定檔 (Windows Phone 8 和更新版本)**<br /><br />**電子郵件設定檔 (Windows 10 Desktop/行動裝置版及更新版本)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
+|**電子郵件設定檔 (Windows Phone 8.1 和更新版本)**<br /><br />**電子郵件設定檔 (Windows 10 Desktop/行動裝置版及更新版本)**|建立、部署及監視受管理裝置上的 Exchange ActiveSync 電子郵件設定。 如此一來，使用者無須進行任何設定，就能從其個人裝置上存取公司的電子郵件。<br /><br />如需詳細資訊，請參閱[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
 |**一般組態 (Windows 10 Desktop/行動裝置版和更新版本)**|為已經註冊的 Windows 10 Desktop 和行動裝置版裝置設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 10 原則設定](windows-10-policy-settings-in-microsoft-intune.md)。|
 |**一般設定 (Windows 10 團隊版及更新版本)**|為已註冊的 Windows 10 團隊版裝置 (例如 Surface Hub 裝置) 設定裝置安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 團隊版設定原則設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)。|
 |**一般組態 (Windows 8.1 和更新版本)**|為已經註冊的 Windows 裝置設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Windows 原則設定](windows-configuration-policy-settings-in-microsoft-intune.md)。|
@@ -118,6 +119,6 @@ Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

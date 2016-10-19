@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 # 使用公司入口網站手動同步您的裝置
 
-如果您的應用程式安裝或其他某項工作所花費的時間太長，您可以嘗試手動同步處理您的裝置，這樣可協助加速安裝或工作。 請使用以下符合您所用裝置的指示。 
+如果您的應用程式安裝或其他某項工作所花費的時間太長，您可以嘗試手動同步您的裝置。 手動同步可能有助於加速安裝或工作。
 
-同步處理功能僅適用於下列版本。
+同步功能僅適用於下列版本。 請使用適合您所用裝置的指示。
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +34,6 @@ ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

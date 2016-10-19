@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dc767abc733457d975b61b96e21781952f79c6f9
-ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,12 +49,6 @@ ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
 ### Windows Phone 8.1
 使用者會安裝 Windows Phone 市集上 Microsoft Corporation 所提供的**公司入口網站**應用程式，然後使用上述新增的 Intune 使用者認證登入。  檢視 [註冊的裝置]  以新增您的裝置。
 
- ### Windows Phone 8.0
- 使用者可以按一下 [系統設定] &gt;[公司應用程式]，然後使用上述新增的 Intune 使用者認證登入。 公司入口網站應用程式會部署到您的手機上。
-
-如果系統提示您提供 **伺服器位址**，請輸入 "manage.microsoft.com"。
-
-
 ## 安裝先前部署的應用程式
 在行動裝置上開啟公司入口網站，並選擇 [應用程式]，然後安裝 **Microsoft Skype**。
 
@@ -69,6 +63,6 @@ ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

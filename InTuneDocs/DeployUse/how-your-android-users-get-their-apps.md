@@ -13,15 +13,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Android 使用者如何取得其應用程式
-使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 這項資訊針對原生 Android 裝置與 Samsung Knox 裝置而可能有所不同。
+使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 該資訊可能會因裝置類型 (原生 Android 裝置或 Samsung Knox 裝置) 而有所不同。
 
 ## 原生 (非 Samsung Knox) Android 裝置
 
@@ -39,9 +39,9 @@ ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 應用程式可為受管理或不受管理，如下所述。 讓應用程式受管理的程序，針對所有類型的 Android 裝置都是相同的。
 
-**受管理的應用程式** - 可透過原則進行管理的應用程式，以及已由 Intune「包裝 (wrapped)」或已透過 Intune 行動應用程式管理 (MAM) 軟體開發套件 (SDK) 建置的應用程式。 這些應用程式可由 Intune 管理，並套用應用程式原則。
+**受管理的應用程式** - 可透過原則進行管理的應用程式。 這些應用程式已由 Intune「包裝」或已透過 Intune 行動應用程式管理 (MAM) 軟體開發套件 (SDK) 建置。 這些應用程式可由 Intune 管理，並套用應用程式原則。
 
-**不受管理的應用程式** - 可透過原則進行管理的應用程式，以及未受 Intune 包裝或不包含 Intune MAM SDK 的應用程式。 應用程式原則不適用於這些應用程式。
+**未受管理的應用程式** - 無法透過原則進行管理的應用程式。 這些應用程式未受 Intune 包裝或不包含 Intune MAM SDK。 應用程式原則不適用於這些應用程式。
 
 ### 請參閱
 [使用 Microsoft Intune 新增應用程式](/intune/deploy-use/add-apps)
@@ -52,6 +52,6 @@ ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

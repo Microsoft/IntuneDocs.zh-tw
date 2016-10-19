@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
   - 您無法從公司入口網站重設這些裝置。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
   - 因為進行應用程式管理需要每位使用者的 Apple ID，因此它們無法使用 Apple 大量採購計劃 (VPP) 應用程式。
-  - 它們也無法使用 Apple Configurator 或 Apple 裝置註冊方案 (iOS 裝置) 進行註冊。
+  - (iOS) 裝置也無法向 Apple Configurator 或 Apple 裝置註冊計劃 (DEP) 註冊，但註冊 DEP 或 Apple Configurator 管理的裝置不需要使用者親和性。
 
 > [!NOTE]
 > 若要將公司應用程式部署到受裝置註冊管理員管理的裝置，請以 [必要安裝] 將公司入口網站應用程式部署到裝置註冊管理員的使用者帳戶。
@@ -95,6 +95,6 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

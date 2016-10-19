@@ -13,8 +13,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9c2ffb5fe497d56d8250fe3dec7db606c2067a1c
-ms.openlocfilehash: 66242455279c20bac2aa2e17dda6c2739e9204c7
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5acf5c707a93aa0b5e7cefdcb0b160af09b9cf70
 
 
 ---
@@ -45,7 +45,7 @@ Lookout MTP 已設定為只允許所設定之 Azure AD 群組中的使用者進�
 ### 裝置未顯示在 Lookout MTP 主控台裝置清單中
 
 在下列任一情況下可能會發生此問題：
-* 當擁有此裝置的使用者不在 **Lookout MTP 主控台**中指定的**註冊群組**時。  從 [系統] 模組，移至 [Intune 連接器] 索引標籤，然後檢視 [Enrollment Management] (註冊管理) 設定。  您應該會看到設定要註冊的一或多個 Azure AD 群組。  確認擁有遺失裝置的使用者是否屬於其中一個指定的 Azure AD 群組。  新增使用者至註冊群組之後，最多需要經過設定的輪詢間隔 (預設為 5 分鐘)，才會看到裝置顯示在 Lookout MTP 主控台的 [裝置] 模組中。
+* 當擁有此裝置的使用者不在 **Lookout MTP 主控台**中指定的**註冊群組**時。  從 [系統] 模組，移至 [Intune 連接器] 索引標籤，然後檢視 **[Enrollment Management]** (註冊管理) 設定。  您應該會看到設定要註冊的一或多個 Azure AD 群組。  確認擁有遺失裝置的使用者是否屬於其中一個指定的 Azure AD 群組。  新增使用者至註冊群組之後，最多需要經過設定的輪詢間隔 (預設為 5 分鐘)，才會看到裝置顯示在 Lookout MTP 主控台的 [裝置] 模組中。
 
 * 如果裝置不受 Lookout MTP 支援。  不支援的裝置將會出現在 MTP Lookout MTP 主控台之連接器設定的 [受管理的裝置] 區段中。
 
@@ -85,10 +85,10 @@ Lookout MTP 已設定為只允許所設定之 Azure AD 群組中的使用者進�
 
 
 ### 請參閱
-[設定訂用帳戶使用 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+[設定訂用帳戶使用 Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

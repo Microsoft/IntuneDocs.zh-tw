@@ -11,6 +11,7 @@
 ### [MDM 的必要條件](prerequisites-for-enrollment.md)
 #### [iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android 管理](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work 管理](set-up-android-for-work.md)
 #### [Windows 裝置管理 ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile 和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [管理公司擁有的裝置](manage-corporate-owned-devices.md)
@@ -34,6 +35,7 @@
 ### [透過原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 設定](ios-policy-settings-in-microsoft-intune.md)
 #### [Android 和 Samsung KNOX 設定](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work 設定](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1 設定](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 Desktop 和行動設定](windows-10-policy-settings-in-microsoft-intune.md)
@@ -72,6 +74,7 @@
 #### [管理 Intune 用戶端電腦的授權合約](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [部署 App](deploy-apps.md)
 ### [將應用程式部署到裝置和電腦](deploy-apps-in-microsoft-intune.md)
+### [將應用程式部署至 Android for Work 裝置](android-for-work-apps.md)
 ### [監視 App](monitor-apps-in-microsoft-intune.md)
 ### [管理大量購買的應用程式](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [管理大量購買的 iOS 應用程式](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -80,6 +83,7 @@
 ## [設定應用程式](update-apps-using-microsoft-intune.md)
 ### [更新應用程式 ](update-apps-using-microsoft-intune.md)
 ### [iOS 應用程式設定原則](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Android for Work 應用程式設定原則](afw-app-configuration-policy.md)
 ### [iOS 行動裝置應用程式佈建設定檔](ios-mobile-app-provisioning-profiles.md)
 ### [管理網際網路存取](manage-internet-access-using-managed-browser-policies.md)
 
@@ -87,12 +91,13 @@
 ## [保護應用程式和資料](protect-apps-and-data-with-microsoft-intune.md)
 ### [裝置相容性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [建立裝置相容性原則](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [適用於 Android](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [適用於 iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [適用於 Windows 和 Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows 和 Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [部署裝置相容性原則](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [根據裝置相容性限制存取權](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online 和新 Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -101,7 +106,9 @@
 #### [商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [限制電子郵件存取︰範例](restrict-email-access-example-scenarios.md)
-
+### [僅允許受原則管理的應用程式存取 O365 服務](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [封鎖沒有 ADAL 的應用程式](block-apps-with-no-modern-authentication.md)
 ### [限制存取網路 (Cisco ISE)](restrict-access-to-networks.md)
 ### [根據裝置、網路和應用程式風險限制存取](restrict-access-based-on-device-network-app-risk.md)
 #### [設定 Lookout 裝置威脅保護](set-up-your-subscription-with-lookout-mtp.md)
@@ -133,13 +140,13 @@
 ### [淘汰應用程式 ](retire-apps-using-microsoft-intune.md)
 ### [抹除受管理的公司應用程式資料](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [要告訴使用者的內容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [開發和自訂應用程式](/intune/develop/intune-app-sdk)
 
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

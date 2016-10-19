@@ -39,7 +39,7 @@ ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 ## 若要在 Azure Active Directory 入口網站中刪除裝置：
 
-1.  使用您組織的認證登入 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或 [https://portal.office.com](https://portal.office.com)，然後選擇 **[Admin centers] (系統管理員中心)** &gt; **[Azure AD]**。
+1.  使用您組織的認證登入 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或 [https://portal.office.com](https://portal.office.com)，然後選擇 **[Admin centers]** (系統管理員中心) &gt; **[Azure AD]**。
 
 2.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。
 

@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
+ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
+ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
 
 ## 如果看見 [存取公司或學校資源] 時需遵循的步驟
 
-1.  點選 [存取公司或學校資源]。
+1.  點選 [存取公司或學校資源]，然後點選 [連接]。
 
     ![點選 [存取工作學校帳戶]](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
@@ -106,6 +106,6 @@ ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

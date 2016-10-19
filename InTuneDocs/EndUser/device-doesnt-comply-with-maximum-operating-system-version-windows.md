@@ -1,5 +1,5 @@
 ---
-title: "Windows 裝置不符合最大的作業系統版本 | Microsoft Intune"
+title: "Windows 裝置不符合最高的作業系統版本設定 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,20 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# Windows 裝置不符合最大的作業系統版本
+# Windows 裝置不符合最新的作業系統版本設定
 
-IT 系統管理員已設定您的 Windows 裝置可具有的最高作業系統版本，但您的裝置不符合該設定。 若要瞭解裝置允許的最高作業系統，您需要連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
+IT 系統管理員已設定您的 Windows 裝置可具有的最新作業系統版本，但您的裝置不符合該設定。 若要了解裝置允許的最新作業系統，請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

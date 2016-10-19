@@ -4,7 +4,7 @@ description: "了解如何透過 Intune 自動將 Windows 10 裝置升級到最�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4bed62ebe07d5470414183626b34e68dd91f2d01
-ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
+ms.sourcegitcommit: f2aa531744dbd0774958e0450819e45e60a91086
+ms.openlocfilehash: 93a632f0f0b8d31149fa1d5fbe15b31d715d20a8
 
 
 ---
@@ -23,6 +23,13 @@ ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
 Microsoft Intune **版本升級原則**可讓您自動將執行下列 Windows 10 版本之一的裝置升級至較新版本：
 * Windows 10 Desktop
 * Windows 10 Holographic
+* Windows 10 Mobile
+
+支援下列升級路徑：
+- 從 Windows 10 Pro 到 Windows 10 Enterprise
+- 從 Windows 10 Home 到 Windows 10 Education
+- 從 Windows 10 Mobile 到 Windows 10 Mobile Enterprise
+- 從 Windows 10 Holographic Pro 到 Windows 10 Holographic Enterprise
 
 ## 開始之前
 在開始將裝置升級至最新版本之前，您需要下列其中一項：
@@ -45,6 +52,6 @@ Microsoft Intune **版本升級原則**可讓您自動將執行下列 Windows 10
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
