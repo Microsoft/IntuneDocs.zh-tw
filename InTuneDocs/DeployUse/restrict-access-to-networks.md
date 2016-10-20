@@ -88,7 +88,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
         - 隨時存取使用者的資料
         - 登入使用者
 
- b。 針對 Microsoft Intune API，在 [應用程式權限] 中選擇 [Get device state and compliance from Intune] (從 Intune 取得裝置狀態和相容性)。
+ b。 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
 
 7. 選擇 [檢視端點]，並複製下列值以便用於進行 ISE 設定︰
 
