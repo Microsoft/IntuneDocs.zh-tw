@@ -13,8 +13,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69d8ff8eecd238cfbbf0b01671b80e6ee77ae357
-ms.openlocfilehash: c041fbbbec9e1812427d9810489d35480ae8c09b
+ms.sourcegitcommit: fe3a9f2fd9ce9a3c3f776dcfd9ad3347a63d0fc1
+ms.openlocfilehash: e623755cf926020bcb66d8a6d40e5cce9b46b0ae
 
 
 ---
@@ -22,15 +22,11 @@ ms.openlocfilehash: c041fbbbec9e1812427d9810489d35480ae8c09b
 # 準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理
 使用 **Microsoft Intune App Wrapping Tool for Android** 修改內部 Android 應用程式的行為，讓您限制應用程式的功能，而不需變更應用程式本身的程式碼。
 
-此工具是一個 Windows 命令列應用程式，可在 PowerShell 中執行並在您的 Android 應用程式周圍建立「包裝函式」。 一旦處理應用程式之後，您便可以使用您設定的[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)來變更應用程式功能。
+此工具是一個 Windows 命令列應用程式，可在 PowerShell 中執行並在您的 Android 應用程式周圍建立「包裝函式」。 包裝好應用程式後，您便可以在 Intune 中設定[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，變更應用程式功能。
 
 
-執行此工具之前，請檢閱[執行應用程式包裝工具的安全性考量](#security-considerations-for-running-the-app-wrapping-tool)。 若要下載此工具，請參閱 [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267)。
+執行此工具之前，請檢閱[執行應用程式包裝工具的安全性考量](#security-considerations-for-running-the-app-wrapping-tool)。 若要下載此工具，請瀏覽 GitHub 的 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)。
 
->[!IMPORTANT]
->這版的 App Wrapping Tool for Android 提供公開預覽版本，其支援未在 Intune 行動裝置管理 (MDM) 中註冊的裝置。 如果您想要參與公開預覽版本，可以從[這個 GitHub 存放庫](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)下載該工具。
-
->[保護 Intune 中未註冊裝置上的 LOB 應用程式](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主題中描述了此案例。
 
 
 ## 步驟 1：滿足使用 App Wrapping Tool 的必要條件
@@ -64,7 +60,7 @@ ms.openlocfilehash: c041fbbbec9e1812427d9810489d35480ae8c09b
 
 ## 步驟 2：安裝 App Wrapping Tool
 
-1.  從 Microsoft 下載中心，將應用程式包裝工具下載到 Windows 電腦，並開啟其安裝檔案。
+1.  從 [GitHub 存放庫](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)將 Intune App Wrapping Tool for Android 的 **InstallAWT.exe** 安裝檔案下載至 Windows 電腦並開啟。
 
 2.  接受授權合約，然後完成安裝。
 
@@ -145,6 +141,6 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
