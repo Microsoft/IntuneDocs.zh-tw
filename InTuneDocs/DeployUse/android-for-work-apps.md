@@ -3,6 +3,7 @@ title: "將應用程式部署至 Android for Work 裝置 | Microsoft Intune"
 description: "您可以使用本主題進行同步處理，再將應用程式從 Google Play for Work 商店部署至Android for Work 裝置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

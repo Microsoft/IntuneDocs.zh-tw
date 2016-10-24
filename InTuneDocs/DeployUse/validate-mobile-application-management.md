@@ -4,6 +4,7 @@ title:
 description: "本主題說明如何測試並驗證 MAM 原則是否已正確設定且正常運作。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

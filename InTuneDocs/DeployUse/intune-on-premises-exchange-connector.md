@@ -3,6 +3,7 @@ title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Intune"
 description: "使用 Connector 工具啟用 Intune 管理主控台和內部部署 Exchange Server 之間的通訊，以進行 Exchange ActiveSync MDM。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "簡化行動裝置上的電子郵件設定 | Microsoft Intune"
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

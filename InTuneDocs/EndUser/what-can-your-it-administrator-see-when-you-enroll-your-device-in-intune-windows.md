@@ -3,6 +3,7 @@ title: "當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

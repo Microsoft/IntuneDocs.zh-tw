@@ -3,6 +3,7 @@ title: "原則疑難排解 | Microsoft Intune"
 description: "針對原則設定問題進行疑難排解。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

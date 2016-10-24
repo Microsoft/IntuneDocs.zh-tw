@@ -3,6 +3,7 @@ title: "重設 (清除) 您遺失或遭竊的 Windows 裝置 | Microsoft Intune"
 description: "重設遺失或遭竊的 Windows 裝置"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

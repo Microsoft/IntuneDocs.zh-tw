@@ -3,6 +3,7 @@ title: "Microsoft Intune 的網域名稱 | Microsoft Intune"
 description: "為 Intune 新增網域名稱"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

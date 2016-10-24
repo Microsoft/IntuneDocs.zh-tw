@@ -3,6 +3,7 @@ title: "限制對 Dynamics CRM Online 的電子郵件存取 |Microsoft Intune"
 description: "使用條件式存取保護與控制對 Dynamics CRM Online 的存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

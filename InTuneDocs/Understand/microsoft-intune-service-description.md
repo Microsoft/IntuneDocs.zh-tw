@@ -3,6 +3,7 @@ title: "服務描述 | Microsoft Intune"
 description: "Intune 是雲端式服務，可協助您管理 Windows 電腦及 iOS、Mac OS X、Android 及 Windows 行動裝置。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

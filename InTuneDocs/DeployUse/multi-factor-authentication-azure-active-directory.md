@@ -3,6 +3,7 @@ title: "使用 Azure AD 進行多重要素驗證| Microsoft Intune"
 description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

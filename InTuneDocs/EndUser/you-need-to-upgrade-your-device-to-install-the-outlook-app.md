@@ -3,6 +3,7 @@ title: "您需要升級裝置以安裝 Outlook 應用程式 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

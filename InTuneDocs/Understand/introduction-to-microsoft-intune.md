@@ -5,6 +5,7 @@ title: "Microsoft Intune 簡介 | Microsoft Intune"
 description: "了解 Intune 為何是 Enterprise Mobility + Security 解決方案的行動裝置管理元件。"
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article

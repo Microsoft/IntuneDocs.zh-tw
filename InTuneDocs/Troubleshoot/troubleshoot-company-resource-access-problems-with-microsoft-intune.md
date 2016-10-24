@@ -3,6 +3,7 @@ title: "公司資源存取問題疑難排解 | Microsoft Intune"
 description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "iOS 原則設定 | Microsoft Intune"
 description: "建立原則，以在您使用 Intune 管理的 iOS 裝置上控制設定及功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

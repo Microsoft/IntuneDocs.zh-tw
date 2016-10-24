@@ -3,6 +3,7 @@ title: "設定原則參考 | Microsoft Intune"
 description: "您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

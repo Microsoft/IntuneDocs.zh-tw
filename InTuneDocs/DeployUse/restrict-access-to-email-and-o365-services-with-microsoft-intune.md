@@ -3,6 +3,7 @@ title: "限制電子郵件和 O365 服務的存取 | Microsoft Intune"
 description: "本主題說明如何使用條件來僅允許相容裝置存取 SharePoint Online 與其他服務上的公司電子郵件和公司資料。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

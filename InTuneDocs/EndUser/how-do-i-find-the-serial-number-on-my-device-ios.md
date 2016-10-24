@@ -3,6 +3,7 @@ title: "如何在我的裝置上尋找序號？ | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

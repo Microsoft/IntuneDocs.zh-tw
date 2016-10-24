@@ -7,6 +7,7 @@ title: "Intune 文件 | Microsoft 文件"
 description: "Microsoft Intune 技術文件 - 行動裝置與應用程式管理"
 keywords: "Intune 文件, 應用程式管理, 裝置管理, MDM 文件, MAM 文件"
 author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 10/07/2016
 ms.topic: hubpage

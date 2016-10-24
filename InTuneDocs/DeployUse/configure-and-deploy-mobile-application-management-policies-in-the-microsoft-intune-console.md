@@ -3,6 +3,7 @@ title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Intune"
 description: "Microsoft Intune 中的行動應用程式管理原則可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

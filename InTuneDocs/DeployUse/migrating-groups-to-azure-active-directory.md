@@ -3,6 +3,7 @@ title: "移轉至 Azure Active Directory 群組| Microsoft Intune"
 description: "如何將群組從 Intune 移轉至 Azure AD"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 10/10/2016
 ms.topic: article

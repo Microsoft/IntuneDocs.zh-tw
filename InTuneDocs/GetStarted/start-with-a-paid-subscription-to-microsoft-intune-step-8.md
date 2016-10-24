@@ -3,6 +3,7 @@ title: "註冊行動裝置並安裝 App | Microsoft Intune"
 description: "說明如何註冊行動裝置並在已於 Intune 註冊的裝置上安裝 App"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

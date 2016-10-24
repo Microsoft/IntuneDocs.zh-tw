@@ -3,6 +3,7 @@ title: "註冊 Windows 8.1 或 Windows RT 8.1 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置的方法"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Lookout 整合疑難排解 | Microsoft Intune"
 description: "本主題描述如何針對 Lookout 整合的常見問題進行疑難排解"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

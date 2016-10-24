@@ -3,6 +3,7 @@ title: "iOS MAM 原則設定 | Microsoft Intune"
 description: "本主題說明適用於 iOS 裝置的行動裝置應用程式管理原則設定。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

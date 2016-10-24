@@ -3,6 +3,7 @@ title: "新功能 | Microsoft Intune"
 description: "了解本月 Microsoft Intune 版本的新功能，以及過去的版本"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/13/2016
 ms.topic: article

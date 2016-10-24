@@ -3,6 +3,7 @@ title: "使用 USB 纜線將診斷資料記錄傳送給 IT 系統管理員 | Mic
 description: "使用 USB 纜線傳送資料記錄"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

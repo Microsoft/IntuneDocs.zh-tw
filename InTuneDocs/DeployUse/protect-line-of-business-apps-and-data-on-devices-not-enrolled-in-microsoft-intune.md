@@ -3,6 +3,7 @@ title: "保護未註冊裝置上的 LOB 應用程式 | Microsoft Intune"
 description: "本主題說明如何準備您自訂的企業營運應用程式，以便您可以套用有助於防止資料遺失的行動裝置應用程式管理原則。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

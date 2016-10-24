@@ -3,6 +3,7 @@ title: "限制存取商務用 Skype Online | Microsoft Intune"
 description: "使用條件式存取保護與控制商務用 Skype Online 的存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

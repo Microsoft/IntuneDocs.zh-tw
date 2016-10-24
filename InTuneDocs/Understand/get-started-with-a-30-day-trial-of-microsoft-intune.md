@@ -3,6 +3,7 @@ title: "Intune 評估指南 | Microsoft Intune"
 description: "如何設定免費 30 天 Intune 評估版的簡介和先決條件"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

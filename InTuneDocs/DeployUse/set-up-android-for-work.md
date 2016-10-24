@@ -3,6 +3,7 @@ title: "設定 Android for Work 管理 | Microsoft Intune"
 description: "使用 Microsoft Intune 來啟用 Android for Work 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

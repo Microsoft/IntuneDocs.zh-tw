@@ -3,6 +3,7 @@ title: "使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題 |
 description: "使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

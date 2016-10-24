@@ -3,6 +3,7 @@ title: "註冊評估行動裝置 | Microsoft Intune"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何註冊行動裝置並安裝應用程式"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

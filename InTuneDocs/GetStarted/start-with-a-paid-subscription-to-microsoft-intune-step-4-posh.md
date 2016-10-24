@@ -3,6 +3,7 @@ title: "使用 PowerShell 管理 Intune 授權 |Microsoft Intune"
 description: "使用 PowerShell 管理 Intune 授權"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

@@ -3,6 +3,7 @@ title: "建立裝置相容性原則 | Microsoft Intune"
 description: "建立相容性原則以協助保護用來存取公司資料的行動裝置和電腦。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

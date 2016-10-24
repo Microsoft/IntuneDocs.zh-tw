@@ -3,6 +3,7 @@ title: "使用 MAM 原則保護應用程式資料 | Microsoft Intune"
 description: "本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

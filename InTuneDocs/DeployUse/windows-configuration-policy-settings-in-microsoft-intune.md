@@ -3,6 +3,7 @@ title: "Windows 原則設定 | Microsoft Intune"
 description: "使用 Intune Windows 一般設定原則 (Windows 8.1 和更新版本) 來設定已註冊之 Windows 8 和 Windows 8.1 裝置的設定。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

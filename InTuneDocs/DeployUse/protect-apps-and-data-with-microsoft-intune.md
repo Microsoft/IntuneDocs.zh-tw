@@ -3,6 +3,7 @@ title: "保護應用程式和資料 | Microsoft Intune"
 description: "本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
