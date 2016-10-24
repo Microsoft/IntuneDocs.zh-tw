@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +33,7 @@ ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 本節中的資訊有助於 Intune 公司入口網站安裝以及適用於 Android 裝置的裝置註冊。
 
 - [在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)
+- [建立工作設定檔並在 Intune 註冊您的裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## 在 Intune 註冊您的裝置時可執行的工作
@@ -73,6 +74,6 @@ ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

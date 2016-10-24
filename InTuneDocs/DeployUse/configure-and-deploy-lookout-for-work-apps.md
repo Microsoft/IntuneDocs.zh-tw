@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
 
 ## iOS (Lookout 應用程式的企業簽章版本)
 
-* **步驟 1**：確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置之 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](Set up iOS and Mac device management.md)。
+* **步驟 1**：確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置之 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
 * **步驟 2**：**重新簽署** Lookout for Work iOS 應用程式。 Lookout 會將其 Lookout for Work iOS 應用程式散發到 iOS App Store 之外。 **散發應用程式之前**，您必須使用 iOS 企業開發人員憑證重新簽署應用程式。 如需重新簽署 Lookout for Work iOS 應用程式的詳細指示，請參閱 Lookout 網站上的 [Lookout for Work iOS App Re-Signing Process](https://personal.support.lookout.com/hc/en-us/articles/114094038714)。
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
   1.  登入 [Azure Active Directory 管理入口網站](https://manage.windowsazure.com)，然後巡覽至應用程式頁面。
   2.  將 **Lookout for Work iOS 應用程式**新增為**原生用戶端應用程式**。
   ![顯示 [原生用戶端應用程式] 選項之 [新增應用程式] 對話方塊的螢幕擷取畫面](../media/mtp/aad-add-app.png)
-  
+
   3. 將 **com.lookout.enterprise.yourcompanyname** 取代成您簽署 IPA 時所選取的客戶組合識別碼。
   4.  新增額外的重新導向 URI：**&lt;companyportal://code/>**，後面接著原始重新導向 URI 的 URL 編碼版本。
   5.  將**委派的權限**新增至您的應用程式。
