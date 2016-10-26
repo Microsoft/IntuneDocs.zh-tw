@@ -2,8 +2,8 @@
 title: "使用電子郵件將診斷資料記錄傳送給 IT 系統管理員 | Microsoft Intune"
 description: "在 Android 裝置上使用電子郵件傳送資料記錄"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

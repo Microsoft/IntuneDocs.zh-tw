@@ -2,8 +2,8 @@
 title: "在 Intune 註冊 Windows 10 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Windows 10 行動裝置版或桌面版裝置的方法"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
