@@ -3,6 +3,7 @@ title: "管理商務用 Windows 市集應用程式 | Microsoft Intune"
 description: "如果您想要從 Intune 主控台管理和部署大量購買的應用程式，請將 Microsoft Intune 連線至商務用 Windows 市集"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "使用裝置威脅保護限制存取 | Microsoft Intune"
 description: "根據裝置、網路和應用程式風險，限制對公司資源的存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

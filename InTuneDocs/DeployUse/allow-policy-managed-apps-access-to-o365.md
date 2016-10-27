@@ -3,6 +3,7 @@ title: "對 O365 進行之以應用程式為基礎的條件式存取 | Microsoft
 description: "了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

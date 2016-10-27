@@ -3,6 +3,7 @@ title: "針對 Windows 關閉 Microsoft 使用狀況資料收集 | Microsoft Int
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

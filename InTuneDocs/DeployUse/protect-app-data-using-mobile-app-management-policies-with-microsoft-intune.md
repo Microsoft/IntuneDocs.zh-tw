@@ -3,6 +3,7 @@ title: "使用 MAM 原則保護應用程式資料 | Microsoft Intune"
 description: "本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +123,6 @@ MDM 解決方案：
 
 例如，當使用者使用工作帳戶啟動 OneDrive 應用程式時，無法將檔案移至個人儲存體位置。 不過，當使用者以個人帳戶使用 OneDrive 時，他們可以從個人 OneDrive 複製並移動資料，而沒有任何限制。  
 
-如需使用與 MAM 原則相關聯的應用程式時有何體驗，以及支援多重身分識別的應用程式如何只能在工作環境中套用 MAM 原則的詳細說明，請參閱[搭配多重身分識別支援使用應用程式](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
-
 所有的 Office 行動裝置應用程式都支援多重身分識別。
 
 ##  後續步驟
@@ -133,6 +132,6 @@ MDM 解決方案：
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "註冊屬公司擁有的 iOS 裝置 | Microsoft Intune"
 description: "使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article

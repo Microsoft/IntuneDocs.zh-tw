@@ -3,6 +3,7 @@ title: "如何重新連接遭盜用的 iOS 裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "使用 Microsoft Intune 之使用者體驗的相關資源 | Microsoft In
 description: "可與您的終端使用者分享的資訊連結"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

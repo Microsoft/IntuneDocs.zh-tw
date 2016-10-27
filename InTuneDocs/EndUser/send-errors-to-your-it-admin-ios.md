@@ -2,9 +2,10 @@
 title: "將錯誤傳送給 IT 系統管理員 | Microsoft Intune"
 description: "將錯誤傳送給系統管理員"
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune

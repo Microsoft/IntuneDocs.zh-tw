@@ -3,6 +3,7 @@ title: "Windows 版本升級原則設定 | Microsoft Intune"
 description: "了解如何透過 Intune 自動將 Windows 10 裝置升級到最新版本。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "設定或變更密碼 | Microsoft Intune"
 description: "設定或變更密碼"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

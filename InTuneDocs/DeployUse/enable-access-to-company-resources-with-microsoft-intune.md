@@ -3,8 +3,9 @@ title: "啟用公司資源存取 | Microsoft Intune"
 description: "Wi-Fi、VPN 及電子郵件設定檔會一起運作，以協助您的使用者存取所需的檔案及資源。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
-ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 2959ad5f09be686e4dae9b751e8ede5e6b60bd89
 
 
 ---
@@ -56,6 +57,6 @@ Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "從公司入口網站遠端鎖定裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

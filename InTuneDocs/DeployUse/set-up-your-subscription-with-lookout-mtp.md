@@ -3,6 +3,7 @@ title: "設定訂用帳戶使用 Lookout | Microsoft Intune"
 description: "本主題提供有關如何設定 Lookout 裝置威脅防護的詳細資訊。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "使用 iOS 行動裝置應用程式組態原則 | Microsoft Intune"
 description: "您可以在 Intune 中使用行動裝置應用程式組態原則，來提供使用者執行 iOS 應用程式時可能需要的設定。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

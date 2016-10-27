@@ -3,6 +3,7 @@ title: "透過原則管理裝置設定 | Microsoft Intune"
 description: "使用 Intune 建立和部署原則，控制您所管理之已註冊裝置上的設定和功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "限制存取 SharePoint Online | Microsoft Intune"
 description: "使用條件式存取保護與控制 SharePoint Online 上的公司資料存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

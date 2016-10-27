@@ -3,6 +3,7 @@ title: "Android for Work 的相容性原則設定 | Microsoft Intune"
 description: "本主題說明適用於 Android 裝置並與 Android for Work 相容的裝置相容性原則設定。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

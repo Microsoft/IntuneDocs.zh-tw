@@ -3,6 +3,7 @@ title: "Windows Phone 8.1 原則設定 | Microsoft Intune"
 description: "Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一般設定。 此外，您可以指定 OMA-URI 值，來建立 Intune 未提供使用的自訂設定。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

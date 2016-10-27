@@ -3,6 +3,7 @@ title: "行動裝置安全性原則設定 | Microsoft Intune"
 description: "使用 Intune 來設定各種不同的設定，您可以部署到組織中受管理的裝置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

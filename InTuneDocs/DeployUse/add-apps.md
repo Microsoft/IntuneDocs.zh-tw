@@ -3,6 +3,7 @@ title: "新增應用程式 | Microsoft Intune"
 description: "使用 Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

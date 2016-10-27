@@ -3,6 +3,7 @@ title: "允許和封鎖 KNOX 的應用程式 | Microsoft Intune"
 description: "自訂設定檔來建立一份允許和封鎖 KNOX 的應用程式清單。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

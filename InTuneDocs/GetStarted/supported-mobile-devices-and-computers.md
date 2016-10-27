@@ -3,6 +3,7 @@ title: "支援的行動裝置和電腦 | Microsoft Intune"
 description: "Intune 支援的行動裝置和電腦"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

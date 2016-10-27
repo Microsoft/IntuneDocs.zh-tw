@@ -3,6 +3,7 @@ title: "透過 Intune 使用 Windows 裝置 | Microsoft Intune"
 description: "可以在已註冊至 Intune 的 Windows 裝置上執行之工作的連結清單"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

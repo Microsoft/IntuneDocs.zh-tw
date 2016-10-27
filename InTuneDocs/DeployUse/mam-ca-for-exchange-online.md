@@ -3,6 +3,7 @@ title: "設定 Exchange Online 的應用程式存取 | Microsoft Intune"
 description: "本主題說明如何設定 MAM 應用程式的條件式存取原則。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "安裝您公司的虛擬私人網路 (VPN) | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

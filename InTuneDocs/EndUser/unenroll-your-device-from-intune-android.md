@@ -3,6 +3,7 @@ title: "從 Intune 取消註冊 Android 裝置 | Microsoft Intune"
 description: "描述從 Intune 取消註冊 Android 裝置的方式"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
