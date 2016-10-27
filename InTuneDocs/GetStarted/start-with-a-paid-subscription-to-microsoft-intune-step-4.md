@@ -3,6 +3,7 @@ title: "管理 Intune 授權 | Microsoft Intune"
 description: "說明如何為您的 Intune 訂閱指派授權給使用者"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

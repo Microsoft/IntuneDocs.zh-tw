@@ -3,6 +3,7 @@ title: "限制 Exchange 內部部署的電子郵件存取 | Microsoft Intune"
 description: "使用條件式存取保護與控制 Exchange 內部部署上的公司電子郵件存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

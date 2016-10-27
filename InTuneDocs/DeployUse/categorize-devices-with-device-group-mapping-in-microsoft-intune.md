@@ -3,6 +3,7 @@ title: "使用裝置群組對應分類裝置 | Microsoft Intune"
 description: "使用 Microsoft Intune 裝置群組對應來將裝置分組成定義的類別，以便讓您更輕鬆地管理那些裝置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

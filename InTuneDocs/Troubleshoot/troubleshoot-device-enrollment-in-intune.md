@@ -3,6 +3,7 @@ title: "裝置註冊疑難排解| Microsoft Intune"
 description: "裝置註冊問題的疑難排解建議。"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

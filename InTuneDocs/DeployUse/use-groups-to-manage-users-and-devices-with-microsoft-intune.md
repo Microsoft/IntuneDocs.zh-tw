@@ -3,6 +3,7 @@ title: "使用群組管理使用者和裝置 | Microsoft Intune"
 description: "使用 [群組] 工作區建立及管理群組。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

@@ -5,7 +5,7 @@ keywords:
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 10/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|正在擷取內容|可能的原因：工作狀態 30 表示使用者下載應用程式失敗。<br /><br />發生此錯誤的可能原因如下：<br /><br />裝置於下載期間失去網際網路連線。<br /><br />註冊期間發給裝置的憑證可能已過期。<br /><br />避免方法：<br /><br />從裝置的控制台啟動公司應用程式，以確認裝置憑證並未過期；如果過期，則您必須重新註冊該裝置。<br /><br />確認裝置已連線到網際網路，然後再次嘗試要求應用程式。|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|內容下載完成||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|安裝進行中||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|發生安裝錯誤|應用程式安裝在下載之後失敗。<br /><br />用來簽署應用程式的程式碼簽署憑證不存在裝置上。<br /><br />在裝置上未發現已安裝應用程式依存的架構相依性。<br /><br />確保用來簽署應用程式的程式碼簽署憑證存在於裝置上，並向管理員確認已為企業註冊的所有 Windows RT 裝置指定這類憑證作為目標。<br /><br />如果安裝失敗是因為遺失架構相依性所導致，管理員就必須再次封裝架構以及應用程式套件，重新發行應用程式。<br /><br />下載的應用程式套件不是有效的套件、可能已損毀，或者可能無法與裝置上的作業系統版本相容。|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|發生安裝錯誤|應用程式安裝在下載之後失敗。<br /><br />用來簽署應用程式的程式碼簽署憑證不存在裝置上。<br /><br />在裝置上未發現已安裝應用程式依存的架構相依性。<br /><br /><br />如果安裝失敗是因為遺失架構相依性所導致，管理員就必須再次封裝架構以及應用程式套件，重新發行應用程式。<br /><br />下載的應用程式套件不是有效的套件、可能已損毀，或者可能無法與裝置上的作業系統版本相容。|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|安裝成功||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|正在解除安裝||
 |90 (APP_CI_ENFORCEMENT_ERROR)|發生解除安裝錯誤||
@@ -373,6 +373,6 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

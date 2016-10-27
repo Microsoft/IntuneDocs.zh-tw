@@ -3,6 +3,7 @@ title: "Windows 10 原則設定 | Microsoft Intune"
 description: "使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

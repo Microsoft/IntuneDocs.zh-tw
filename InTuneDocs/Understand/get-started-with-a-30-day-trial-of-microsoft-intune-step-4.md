@@ -3,6 +3,7 @@ title: "建立原則以及將應用程式發行給使用者 | Microsoft Intune"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何建立原則並發行應用程式"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

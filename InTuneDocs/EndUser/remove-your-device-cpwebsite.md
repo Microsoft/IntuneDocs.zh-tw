@@ -3,6 +3,7 @@ title: "從公司入口網站移除裝置 | Microsoft Intune"
 description: "從公司入口網站移除裝置"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

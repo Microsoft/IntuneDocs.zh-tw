@@ -3,6 +3,7 @@ title: "如何設定鎖定 Android 裝置之前的期間 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

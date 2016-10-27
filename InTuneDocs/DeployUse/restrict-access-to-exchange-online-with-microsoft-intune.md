@@ -3,6 +3,7 @@ title: "限制 Exchange Online 的電子郵件存取 |Microsoft Intune"
 description: "使用條件式存取保護與控制 Exchange Online 上的公司電子郵件存取。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -266,6 +267,6 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

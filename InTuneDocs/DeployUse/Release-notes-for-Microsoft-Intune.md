@@ -3,6 +3,7 @@ title: "Microsoft Intune 的版本資訊 | Microsoft Intune"
 description: "Intune 版本資訊"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

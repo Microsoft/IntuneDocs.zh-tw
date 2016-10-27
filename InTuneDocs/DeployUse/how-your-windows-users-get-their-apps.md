@@ -3,6 +3,7 @@ title: "Windows 使用者如何取得其應用程式 | Microsoft Intune"
 description: "讓使用者可以使用 Windows 應用程式的方法"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

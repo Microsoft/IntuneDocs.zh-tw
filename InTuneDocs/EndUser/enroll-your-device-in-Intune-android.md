@@ -2,7 +2,8 @@
 title: "在 Intune 註冊 Android 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Android 裝置的方式"
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

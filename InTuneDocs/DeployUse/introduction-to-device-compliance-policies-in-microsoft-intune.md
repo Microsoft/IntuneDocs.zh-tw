@@ -3,6 +3,7 @@ title: "裝置相容性原則 | Microsoft Intune"
 description: "本主題說明您必須了解的概念，包括什麼是裝置相容性原則，以及它們的運作方式。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

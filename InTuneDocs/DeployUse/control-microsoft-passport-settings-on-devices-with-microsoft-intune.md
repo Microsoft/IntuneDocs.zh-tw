@@ -3,6 +3,7 @@ title: "控制裝置上的 Windows Hello 企業版設定 | Microsoft Intune"
 description: "深入了解 Intune 如何與 Windows Hello 企業版整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡的替代登入方法。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

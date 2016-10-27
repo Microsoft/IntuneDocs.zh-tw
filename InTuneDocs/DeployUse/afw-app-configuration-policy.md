@@ -3,6 +3,7 @@ title: "使用 Android for Work 行動應用程式設定原則 | Microsoft Intun
 description: "您可以在 Intune 中使用行動應用程式設定原則，來提供使用者執行 Android for Work 應用程式時可能需要的設定。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

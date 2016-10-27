@@ -3,6 +3,7 @@ title: "使用公司入口網站重設您的 iOS 裝置會發生什麼情況？ 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

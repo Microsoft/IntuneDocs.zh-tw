@@ -2,7 +2,8 @@
 title: "針對 iOS 關閉 Microsoft 使用狀況資料收集 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

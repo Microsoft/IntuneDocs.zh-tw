@@ -3,6 +3,7 @@ title: "使用 Cisco ISE 限制存取網路 | Microsoft Intune"
 description: "使用 Cisco ISE 與 Intune，讓裝置向 Intune 註冊並符合原則，然後才存取 Cisco ISE 控制的 Wi-Fi 和 VPN。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article
@@ -88,7 +89,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
         - 隨時存取使用者的資料
         - 登入使用者
 
- b。 針對 Microsoft Intune API，在 [應用程式權限] 中選擇 [Get device state and compliance from Intune] (從 Intune 取得裝置狀態和相容性)。
+ b。 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
 
 7. 選擇 [檢視端點]，並複製下列值以便用於進行 ISE 設定︰
 

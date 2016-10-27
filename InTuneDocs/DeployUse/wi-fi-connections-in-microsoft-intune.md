@@ -3,6 +3,7 @@ title: "Wi-Fi 連線 | Microsoft Intune"
 description: "使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

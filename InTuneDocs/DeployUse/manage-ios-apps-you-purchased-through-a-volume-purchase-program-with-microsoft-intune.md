@@ -3,6 +3,7 @@ title: "管理大量購買的 iOS 應用程式 | Microsoft Intune"
 description: "藉由匯入應用程式市集的授權資訊、追蹤已使用的授權數量，並避免您安裝超過所擁有數目的應用程式複本，來使用 Intune 管理您從 Apple 大量購買的應用程式。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article

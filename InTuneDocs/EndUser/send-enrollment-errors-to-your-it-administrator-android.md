@@ -3,6 +3,7 @@ title: "將註冊錯誤傳送給 IT 系統管理員 | Microsoft Intune"
 description: "將註冊錯誤傳送給系統管理員"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

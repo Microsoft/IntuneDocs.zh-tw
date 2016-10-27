@@ -2,9 +2,10 @@
 title: "當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune

@@ -3,6 +3,7 @@ title: "應用程式部署問題疑難排解 | Microsoft Intune"
 description: "本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

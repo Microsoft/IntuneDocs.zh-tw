@@ -4,6 +4,7 @@ title: "Android for Work 原則設定 | Microsoft Intune"
 description: "建立可以在您使用 Intune 管理的 Android for Work 裝置上控制設定及功能的原則。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

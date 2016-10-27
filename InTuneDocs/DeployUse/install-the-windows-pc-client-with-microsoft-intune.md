@@ -3,6 +3,7 @@ title: "安裝電腦用戶端軟體 | Microsoft Intune"
 description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

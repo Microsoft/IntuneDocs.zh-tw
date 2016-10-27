@@ -6,6 +6,7 @@ title: "Intune 文件 - MDM 文件 | Microsoft 文件"
 description: "Microsoft Intune 技術文件 - 行動裝置與應用程式管理"
 keywords: "intune 文件, MDM 文件, 行動裝置管理文件, 行動裝置與應用程式管理文件"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
