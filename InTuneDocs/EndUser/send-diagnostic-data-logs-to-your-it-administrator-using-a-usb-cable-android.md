@@ -2,8 +2,8 @@
 title: "使用 USB 纜線將診斷資料記錄傳送給 IT 系統管理員 | Microsoft Intune"
 description: "使用 USB 纜線傳送資料記錄"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# 使用 USB 纜線將診斷資料記錄傳送給 IT 系統管理員
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>使用 USB 纜線將診斷資料記錄傳送給 IT 系統管理員
 
 如果您想要傳送資料記錄給 IT 系統管理員，您可以使用電腦和 USB 纜線來傳送記錄，而不是從您的行動裝置傳送記錄。
 

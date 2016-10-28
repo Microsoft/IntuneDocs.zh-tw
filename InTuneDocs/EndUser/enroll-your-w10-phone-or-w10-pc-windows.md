@@ -2,8 +2,8 @@
 title: "在 Intune 註冊 Windows 10 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Windows 10 行動裝置版或桌面版裝置的方法"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# 在 Intune 註冊 Windows 10 Mobile 或 Windows 10 Desktop 裝置
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>在 Intune 註冊 Windows 10 Mobile 或 Windows 10 Desktop 裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 註冊您的裝置，可讓您的組織保護公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
     ![您的帳戶](./media/w10-enroll-2-accounts-your-account.png)
 
-## 如果看見 [存取公司或學校資源] 時需遵循的步驟
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>如果看見 [存取公司或學校資源] 時需遵循的步驟
 
 1.  點選 [存取公司或學校資源]，然後點選 [連接]。
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 如果您已遵循前述步驟，但仍無法存取自己的工作或學校電子郵件帳戶和檔案，請遵循[針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步驟。
 
 
-## 如果看見 [您的帳戶] 時需遵循的步驟
+## <a name="steps-to-follow-if-you-see-your-account"></a>如果看見 [您的帳戶] 時需遵循的步驟
 
 1.  前往 Windows [設定]，然後點選 [帳戶]。
 
