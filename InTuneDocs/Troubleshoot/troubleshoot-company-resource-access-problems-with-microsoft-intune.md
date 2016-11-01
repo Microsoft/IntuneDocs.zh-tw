@@ -2,8 +2,8 @@
 title: "公司資源存取問題疑難排解 | Microsoft Intune"
 description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP 授權安裝失敗||
 |沒有狀態 (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|狀態目前是未知的。|
 
-## <a name="company-resource-access-(common-errors)"></a>公司資源存取 (常見錯誤)
+## <a name="company-resource-access-common-errors"></a>公司資源存取 (常見錯誤)
 
 |狀態碼|十六進位錯誤碼|錯誤訊息|
 |---------------|--------------------------|-----------------|

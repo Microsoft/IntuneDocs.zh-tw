@@ -3,7 +3,7 @@ title: "建立工作設定檔並在 Intune 註冊您的裝置 | Microsoft Intune
 description: "描述加密 Android 裝置的方式"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

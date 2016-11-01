@@ -3,7 +3,7 @@ title: "您的 Android 裝置已進行 Root 破解，因此無法連線 | Micros
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
 ---
 
 
-# <a name="your-android-device-is-rooted-and-you-can't-connect"></a>您的 Android 裝置已進行 Root 破解，因此無法連線
+# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>您的 Android 裝置已進行 Root 破解，因此無法連線
 
 當您的 Android 裝置受到 Root 破解時，會將裝置變更為啟用可能危害公司資源與安全性的特定功能。 如果您看到此訊息，則在解決問題之前，您都無法存取公司資源。
 

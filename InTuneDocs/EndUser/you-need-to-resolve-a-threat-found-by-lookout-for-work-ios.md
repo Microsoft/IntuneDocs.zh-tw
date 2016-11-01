@@ -3,7 +3,7 @@ title: "您必須解決 Lookout for Work 在 iOS 裝置上找到的威脅 | Micr
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article

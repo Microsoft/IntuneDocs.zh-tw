@@ -3,7 +3,7 @@ title: "找到現有的公司電子郵件帳戶 | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

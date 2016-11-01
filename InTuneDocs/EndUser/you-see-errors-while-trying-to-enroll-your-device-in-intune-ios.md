@@ -3,7 +3,7 @@ title: "您在 Intune 嘗試註冊 iOS 裝置時看到錯誤 | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article

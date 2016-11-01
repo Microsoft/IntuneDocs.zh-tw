@@ -3,7 +3,7 @@ title: "系統要求您關閉 USB 偵錯 | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
