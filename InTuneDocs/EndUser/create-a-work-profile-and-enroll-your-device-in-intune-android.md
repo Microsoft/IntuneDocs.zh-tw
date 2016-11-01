@@ -2,7 +2,8 @@
 title: "建立工作設定檔並在 Intune 註冊您的裝置 | Microsoft Intune"
 description: "描述加密 Android 裝置的方式"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# 建立工作設定檔並在 Intune 註冊您的裝置
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
-工作設定檔是您在裝置上的設定內容，允許您存取工作或學校電子郵件、應用程式和檔案。 您可以深入了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
+您必須先註冊 Android 裝置，才能用其存取公司電子郵件、應用程式和其他工作資料。 在註冊程序期間，您會設定工作設定檔，以將裝置上的個人資料與工作資料區隔開來。 IT 系統管理員只能管理含有您的工作資料的工作設定檔。 IT 系統管理員無法管理您的裝置上的個人資料。 進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
 
 若要建立工作設定檔：
 
@@ -56,11 +57,11 @@ ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
 
     您會看到兩則訊息，指出「設定您的工作設定檔」和「註冊您的裝置」。
 
-8. 在 [就快完成了!] 畫面上，點選上面有徽章的公司入口網站應用程式圖示。
+8. 在 [就快完成了!] 畫面中，等候幾秒，直到公司入口網站應用程式開啟。
 
     ![點選具有徽章的公司入口網站應用程式](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. 在 Android 公司入口網站的**歡迎**畫面上，點選 [登入]，然後使用您的工作或學校帳戶進行登入。
+9. 在 Android 公司入口網站的 [歡迎使用] 畫面上，點選 [登入]，然後使用此程序稍早時用來登入的相同工作或學校帳戶進行登入。
 
 10. 在 [公司存取設定] 畫面上，注意您的工作設定檔設定現已完成，然後點選 [繼續]。
 
@@ -72,11 +73,11 @@ ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
 
     ![公司存取設定顯示工作設定檔和註冊已完成](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. 在 [公司存取設定完成] 畫面上，點選 [完成]。
+12. 在 [公司存取設定完成] 畫面上，點選 [完成]。 如果您的 IT 系統管理員有新增其他需求，您可能還要完成額外步驟。
 
     ![公司存取設定已完成](./media/andr-afw-company-access-setup-complete.png)
 
-    您將會前往 Play Store for Work，現在可在此取得公司應用程式。
+    現在，您即可從 Play Store for Work 取得公司應用程式。
 
     ![Play Store for Work 應用程式頁面](./media/andr-afw-tap-work-play-store-icon.png)
 

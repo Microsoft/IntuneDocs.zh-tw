@@ -3,6 +3,7 @@ title: "建立和部署 MAM 原則 | Microsoft Intune"
 description: "使用本主題中的逐步指示來建立及部署行動應用程式管理原則。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 >[!IMPORTANT]
 > 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者，  而不會影響巢狀於您選取之群組中的子群組成員。
 
-使用者可以從應用程式市集或 Google Play 下載應用程式。 如需 MAM 如何保護裝置上公司資料的詳細逐步解說 ，請參閱[具備 MAM 功能之應用程式使用者體驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)主題。
-
+使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
+* [當 Android 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  變更現有的原則
 您可以編輯現有的原則，並將它套用到目標使用者。 不過，當您變更現有的原則時，已登入應用程式的使用者將有 8 小時看不到變更。
 
@@ -165,10 +167,11 @@ ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 [監視相容性和使用者狀態](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### 請參閱
-[MAM 啟用應用程式的使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [當 Android 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

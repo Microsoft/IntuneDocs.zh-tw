@@ -3,8 +3,9 @@ title: "手動同步處理您的 Windows 裝置 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
     「我們正在同步您的帳戶」訊息會顯示在畫面頂端。 [同步] 按鈕會呈現灰色，直到您的裝置完成同步為止。
 
 ## Windows 10 Desktop
-手動同步處理您的 Windows 10 Desktop裝置，以加速緩慢的應用程式安裝︰
+有多個版本的 Windows 10，因此有兩組步驟。 若要找出要使用的步驟，請查看螢幕擷取畫面，然後依照您在裝置上看到的步驟。 
 
 1. 選擇 [啟動] 按鈕，然後選擇 [設定]。
 
@@ -63,15 +64,46 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
     ![選擇 [設定] 頁面上的帳戶](./media/win10pc-sync-2-settings-accounts.png)
 
-3. 在 [帳戶] 頁面上，選擇 [公司存取]。
+3. 查看接下來的兩個畫面，並找出其中看起來像在您裝置上所看到的畫面。 遵循您在裝置上看見的畫面中所顯示的步驟。
+
+    如果您看到這個顯示 [存取公司或學校資源] 的畫面，請遵循[如果看見 [存取公司或學校資源] 時需遵循的步驟](#steps-to-follow-if-you-see-access-work-or-school)中的指示。
+
+    ![如果看見 [存取公司或學校資源] 時需遵循的同步步驟](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    如果您看到這個顯示 [公司存取] 的畫面，請遵循[如果看見 [公司存取] 時需遵循的步驟](#steps-to-follow-if-you-see-your-account)中的步驟。
+
+    ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png) 
+
+### 如果看見 [存取公司或學校資源] 時需遵循的步驟
+
+1. 在 [帳戶] 頁面上，選擇 [存取公司或學校資源]。
+
+    ![選擇 [存取公司或學校資源]](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. 選擇工作或學校帳戶。 根據 IT 系統管理員設定項目的方式，您可能會看到兩個帳戶，其與下列所示的範例類似。 其中一個帳戶旁邊會有公事包，另一個帳戶旁邊則會有 Microsoft 標誌。 
+
+    - 如果您看到具有公事包的帳戶，請選取它，並尋找其下的 [資訊] 按鈕。 
+    - 如果您看到具有 Microsoft 標誌的帳戶，請選取該帳戶，並尋找其下的 [資訊] 按鈕。
+
+    ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-info-button.png)
+
+3. 選擇 [資訊] 按鈕。 隨即開啟與下面範例類似的對話方塊。
+
+    ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-button.png)
+
+4. 選擇 [同步] 按鈕。 您的裝置將會使用 Intune 進行同步處理。
+
+### 如果看見 [公司存取] 時需遵循的步驟
+    
+1. 在 [帳戶] 頁面上，選擇 [公司存取]。
 
     ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png)
 
-4. 在 [註冊裝置管理] 區段下方，選擇您的公司名稱。
+2. 在 [註冊裝置管理] 區段下方，選擇您的公司名稱。
 
     ![選擇用於裝置管理的公司名稱](./media/win10pc-sync-4-tap-com-name.png)
 
-5. 選擇 [同步] 按鈕。
+3. 選擇 [同步] 按鈕。
 
     ![選擇 [同步] 按鈕](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

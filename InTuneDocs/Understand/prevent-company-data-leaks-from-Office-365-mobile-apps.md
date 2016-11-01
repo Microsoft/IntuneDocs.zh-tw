@@ -3,6 +3,7 @@ title: "防止公司資料從 Office 365 行動應用程式外洩 | Microsoft In
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eccef06d8ac2ac8b27b8695b9a0263794b615df
-ms.openlocfilehash: 0e72db79ca305f4d20fe3fd2f5c9954a04b0482d
+ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
+ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
 
 
 ---
@@ -30,7 +31,7 @@ Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資�
 ## 我該怎麼做？
 1.  初步了解 [Intune 行動應用程式管理 (MAM) 如何](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)運作。
 2.  了解您在 Azure 入口網站中[建立 MAM 原則之前所需執行的作業](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
-3.  使用 Intune [建立和部署 MAM 原則](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
+3.  使用 Intune [建立和部署 MAM 原則](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 ### 其他資訊：
 - 使用 MAM 啟用應用程式的[終端使用者體驗](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
@@ -44,6 +45,6 @@ Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

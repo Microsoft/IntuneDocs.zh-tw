@@ -3,8 +3,9 @@ title: "系統在您嘗試註冊時，要求您識別您的裝置 | Microsoft In
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
 
 # 系統在您嘗試註冊時，要求您識別您的裝置
 
-如果您嘗試在 Intune 中註冊您的 iOS 或 Mac OS X 裝置，您會看到一個畫面，要求您識別您的裝置，這表示您至少有一個裝置已使用公司入口網站應用程式以外的方法註冊並指派給您的帳戶。 為了讓公司入口網站應用程式正確運作，您必須識別您正在使用的裝置是否已在 Intune 中註冊。
+如果您嘗試在 Intune 中註冊您的 iOS 或 Mac OS X 裝置，您會看到要求您識別裝置的畫面，這表示至少有一項裝置已使用公司入口網站應用程式以外的方法註冊並指派給您的帳戶。 為了讓公司入口網站應用程式正確運作，您必須識別您正在使用的裝置是否已在 Intune 中註冊。
 
 1. 如果您在清單中看到您的裝置，請點選它。 如果您沒有看到它，請點選 [新增裝置]。
 2. 點選 [繼續]。
@@ -31,11 +32,8 @@ ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

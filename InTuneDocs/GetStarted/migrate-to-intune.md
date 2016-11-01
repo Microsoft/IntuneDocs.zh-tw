@@ -3,6 +3,7 @@ title: "移轉至 Intune | Microsoft Intune"
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
-ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
+ms.sourcegitcommit: 59041e1c35d2f4b5c4d9b663494f3f02504c12f6
+ms.openlocfilehash: b115912357e298016dee4e0fa87f2ed87f5f2f60
 
 
 ---
@@ -44,7 +45,7 @@ ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 ## 讓裝置註冊使用 Intune
 
-排程進行移轉的使用者應該立即註冊使用 Intune，以重新取得或防止失去對公司資源、電子郵件和應用程式的存取。 如果您已設定條件式存取，而使用者嘗試在註冊使用 Intune 之前連線至電子郵件，其存取將遭封鎖，並向他們提供註冊電子郵件。 這封電子郵件將引導他們在 Intune 中註冊裝置。  或者，使用者可以透過 Intune 公司入口網站應用程式，或透過 Windows 8.1 和 Windows 10 行動裝置上的作業系統原生註冊使用 Intune。 請參閱[要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)，以取得有關每個平台註冊步驟的進一步指引。
+排程進行移轉的使用者應該立即註冊使用 Intune，以重新取得或防止失去對公司資源、電子郵件和應用程式的存取。 如果您已設定條件式存取，而使用者嘗試在註冊使用 Intune 之前連線至電子郵件，其存取將遭封鎖，並向他們提供註冊電子郵件。 這封電子郵件將引導他們在 Intune 中註冊裝置。  或者，使用者可以透過 Intune 公司入口網站應用程式，或透過 Windows 8.1 和 Windows 10 行動裝置上的作業系統原生註冊使用 Intune。 請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)，以取得每個平台註冊步驟的進一步指引。
 
 ## 設定 Intune 條件式存取 (選擇性)
 
@@ -73,6 +74,6 @@ ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -17,7 +17,7 @@
 
 ## [移轉至 Intune](migrate-to-intune.md)
 
-## [Intune 快速入門指南](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [快速入門指南](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [登入 Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [設定自訂網域名稱](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [同步處理 AD 並新增使用者](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [自訂公司入口網站](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [註冊行動裝置並安裝應用程式](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](post-configuration-tasks.md)
+
+## [快速指南](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [快速指南︰防止公司資料從 Office 365 行動應用程式外洩](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [快速指南：使用資料加密保護公司資料](protect-data-encryption.md)
+### [快速指南︰將行動應用程式發佈給您的使用者](publish-mobile-apps-to-users.md)
+### [快速指南：簡化行動裝置上的電子郵件設定](simplify-email-configuration-on-mobile-devices.md)
+### [快速指南︰防禦惡意程式碼威脅，保護 Windows 電腦](protect-pcs-against-malware-threats.md)
 
 ## [Intune 部署的首度發行階段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [專案範圍](project-scope.md)
@@ -42,6 +49,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
