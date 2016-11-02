@@ -3,8 +3,9 @@ title: "在 Android 裝置上使用受管理的應用程式 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 4e4b2f6e94819320072b045fa2265018a89ff88a
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 4e4b2f6e94819320072b045fa2265018a89ff88a
 
 # 在 Android 裝置上使用受管理的應用程式
 
-受管理應用程式是 IT 系統管理員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 Android 裝置上存取受管理應用程式中的公司資料時，您可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
+受管理應用程式是 IT 系統管理員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 Android 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
 
 不同的受管理應用程式也可能在您的裝置上一同運作，讓您可以執行日常工作，同時持續保護公司資料。 例如，如果您在一個受管理的應用程式中開啟公司檔案，而另一個受管理的應用程式被要求檢視該檔案，可讓您檢視檔案的受管理應用程式會自動開啟。 如果可用的特定動作的不必要的應用程式，像是開啟文件或存取網頁連結從受管理的文件，可能無法使用。
 
@@ -69,16 +70,12 @@ ms.openlocfilehash: 4e4b2f6e94819320072b045fa2265018a89ff88a
 
 -   Intune AV Player
 
--   Microsoft Word、Excel、PowerPoint
+-   Microsoft Word、Excel 和 PowerPoint
 
 針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
 
-
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

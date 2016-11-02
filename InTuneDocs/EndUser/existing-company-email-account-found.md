@@ -2,7 +2,8 @@
 title: "找到現有的公司電子郵件帳戶 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
-ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
+ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
+ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
 
 
 ---
 
-# 找到現有的公司電子郵件帳戶
-您已經有公司電子郵件帳戶。 若要繼續連線到您的公司電子郵件，請執行下列步驟讓您的 IT 系統管理員能夠正確地設定和管理您的帳戶：
+# <a name="existing-company-email-account-found"></a>找到現有的公司電子郵件帳戶
+
+您已經有公司電子郵件帳戶。 若要繼續連線到您的公司電子郵件帳戶，請執行下列步驟以讓 IT 系統管理員能夠正確地設定和管理該帳戶：
 
 1.  在 **設定** 上您的裝置，移除您先前設定的連線至您的公司電子郵件。
 
@@ -35,6 +37,6 @@ ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,8 +2,8 @@
 title: "公司資源存取問題疑難排解 | Microsoft Intune"
 description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# 使用 Microsoft Intune 的公司資源存取問題疑難排解
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
 當 Microsoft Intune 動作傳回錯誤碼時，請使用本主題中的錯誤碼和狀態碼來協助您為問題進行疑難排解。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
-## 受到 MDM 管理的 Windows 裝置的狀態碼
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>受到 MDM 管理的 Windows 裝置的狀態碼
 
 |狀態碼|錯誤訊息|解決方式|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP 授權安裝失敗||
 |沒有狀態 (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|狀態目前是未知的。|
 
-## 公司資源存取 (常見錯誤)
+## <a name="company-resource-access-common-errors"></a>公司資源存取 (常見錯誤)
 
 |狀態碼|十六進位錯誤碼|錯誤訊息|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 |-2016341111|0x87D11389|iOS 裝置傳回非預期的閒置狀態 |
 |-2016341112|0x87D11388|iOS 裝置目前忙碌中 |
 
-## 由 iOS 裝置傳回的錯誤
+## <a name="errors-returned-by-ios-devices"></a>由 iOS 裝置傳回的錯誤
 
 |狀態碼|十六進位錯誤碼|錯誤訊息|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 |-2016335111|0x87D12AF9|1001：不支援的設定檔版本|
 |-2016335112|0x87D12AF8|1000：設定檔的格式不正確|
 
-## OMA 回應碼
+## <a name="oma-response-codes"></a>OMA 回應碼
 
 |狀態碼|十六進位錯誤碼|錯誤訊息|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 |-2016345912|0x87D100C8|成功完成 SyncML 命令。|
 |-2016346011|0x87D10065|正在執行指定的 SyncML 命令，但是尚未完成。|
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
