@@ -2,7 +2,7 @@
 title: "將錯誤傳送給 IT 系統管理員 | Microsoft Intune"
 description: "將錯誤傳送給系統管理員"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# 將錯誤傳送給 IT 系統管理員
+# <a name="send-errors-to-your-it-admin"></a>將錯誤傳送給 IT 系統管理員
 
 當您使用公司入口網站應用程式時，如果 iOS 裝置上出現錯誤，您可以傳送資訊，以協助 IT 系統管理員對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
 

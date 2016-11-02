@@ -2,7 +2,7 @@
 title: "使用電子郵件將診斷資料記錄傳送給 IT 系統管理員 | Microsoft Intune"
 description: "在 Android 裝置上使用電子郵件傳送資料記錄"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# 使用電子郵件將診斷資料記錄傳送給 IT 系統管理員
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>使用電子郵件將診斷資料記錄傳送給 IT 系統管理員
 
 當您使用學校或公司應用程式時，或在公司入口網站應用程式中，如果 Android 裝置上出現錯誤，您可以傳送診斷資料記錄，以協助您的 IT 系統管理員診斷並修正錯誤。 若要在記錄檔中包含所有詳細資料，讓您的 IT 系統管理員更容易找出問題，請開啟 [詳細資訊記錄]。 如需 [詳細資訊記錄] 的詳細資訊，請參閱[使用詳細資訊記錄來協助 IT 系統管理員修正 Android 裝置問題](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
 

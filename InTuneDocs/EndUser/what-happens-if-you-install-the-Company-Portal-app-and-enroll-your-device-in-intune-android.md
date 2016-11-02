@@ -3,6 +3,7 @@ title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 
 ---
@@ -25,21 +26,21 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 當您安裝公司入口網站應用程式，並在 Intune 中註冊您的 Android 裝置時，您可以使用公司入口網站應用程式執行下列動作：
 
--   存取公司網路、電子郵件和工作檔案
+-   存取公司的網路、電子郵件與工作檔案。
 
--   從公司入口網站取得公司應用程式
+-   從公司入口網站取得公司應用程式。
 
--   自動設定公司電子郵件帳戶
+-   自動設定您的公司電子郵件帳戶。
 
--   如果電話遺失或遭竊即重設為原廠設定
+-   當手機遺失或遭竊時，將其重設為原廠設定。
 
-當您註冊 Android 裝置時，您會賦予 IT 系統管理員存取裝置的權限。 IT 系統管理員可以執行下列作業：
+當您註冊您的 Android 裝置時，即授權您的 IT 系統管理員可以存取您的裝置。 IT 系統管理員可以執行下列作業：
 
 -   將裝置重設為製造商的預設值。 這項功能對裝置遺失或失竊的情況很有幫助。
 
 -   移除所有公司相關資料。 不會移除您的個人資料和設定。
 
--   對裝置設定需求，例如要求您擁有裝置密碼或 PIN 以保護公司資料。 IT 系統管理員可能會限制您輸入不正確密碼的次數，並在嘗試次數過多時鎖定裝置，使您無法使用。
+-   設定裝置的需求，例如要求您為裝置設定密碼或 PIN 碼，以保護公司的資料。 您的 IT 系統管理員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置，禁止您繼續使用。
 
 -   要求您接受條款和條件。
 
@@ -47,19 +48,18 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 -   要求為裝置上的所有資料加密，這將能在裝置遺失或遭竊的情況下協助保護資料。
 
--   在裝置新增到公司入口網站之後，大約每隔 8 個小時裝置會：
+將裝置新增到公司入口網站之後，大約每隔 8 個小時，裝置會：
 
-    -   下載 IT 系統管理員提供的任何原則或應用程式更新。
+-   下載您 IT 系統管理員提供的原則或應用程式更新。
 
-    -   傳送任何硬體清查更新 (這些更新不含個人資訊)。
+-   傳送任何硬體清查更新。 (這些更新不含任何個人資訊。)
 
-    -   傳送任何公司應用程式清查更新 (這些更新不含個人資訊)。
+-   傳送任何公司應用程式清查更新。 (這些更新不含任何個人資訊。)
 
 需要協助嗎？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

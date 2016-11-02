@@ -13,8 +13,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba9ba203c9ec173dafd1d6f9e4828d4a8a51e1ef
-ms.openlocfilehash: 136dd127c5e0f1784746b973ebc5594573f07925
+ms.sourcegitcommit: ed1008c786285821c608a8404805c6615c60507f
+ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 
 ---
@@ -31,44 +31,60 @@ ms.openlocfilehash: 136dd127c5e0f1784746b973ebc5594573f07925
 
 **如果應用程式是不會在公開應用程式商店中提供的公司內部應用程式**：
 
-您就**不需要** 註冊應用程式。 針對內部企業營運應用程式，IT 系統管理員將會使用 Microsoft Intune 在內部部署應用程式。 Intune 將偵測到已使用 SDK 建置應用程式，並且允許 IT 系統管理員對其套用 MAM 原則設定。 您可以跳到[使用 SDK 啟用 iOS 或 Android 行動應用程式的 MAM](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk) 這一節。
+您就**不需要** 註冊應用程式。 若是內部企業營運應用程式，IT 系統管理員將會在內部部署這類應用程式。 Intune 可偵測是否已使用 SDK 建置應用程式，並允許 IT 系統管理員對其套用 MAM 原則設定。 您可以跳到[使用 SDK 啟用 iOS 或 Android 行動應用程式的 MAM](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk) 這一節。
 
 **如果您的應用程式將會發行到公開應用程式商店 (例如 Apple App Store 或 Google Play)**： 
 
-您**必須**先向 Microsoft Intune 註冊應用程式，並同意註冊條款。 註冊之後，IT 系統管理員可以將 Intune MAM 原則設定套用至已啟用的應用程式，這將會列為 Intune 應用程式合作夥伴。 等到註冊已完成且 Microsoft Intune 小組確認之後，Intune 系統管理員就不會有將 MAM 原則套用至應用程式深層連結的選項。 Microsoft 也會將應用程式新增至其 [Microsoft Intune 合作夥伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)頁面，其中將會顯示應用程式圖示，以顯示此頁面支援 Microsoft Intune MAM 原則。
+您**必須**先向 Microsoft Intune 註冊應用程式，並同意註冊條款。 註冊之後，IT 系統管理員可以將 Intune MAM 原則設定套用至已啟用的應用程式，這將會列為 Intune 應用程式合作夥伴。 等到註冊已完成且 Microsoft Intune 小組確認之後，Intune 系統管理員就不會有將 MAM 原則套用至應用程式深層連結的選項。 Microsoft 也會將應用程式新增至其 [Microsoft Intune 合作夥伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)頁面，其中將會顯示應用程式圖示，以顯示此頁面支援 Microsoft Intune MAM 原則。
 
-若要開始註冊程序，請**檢閱並簽署** [Microsoft Intune 合作夥伴協議](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806)。 本協議說明相關條款，您的公司必須先接受這些條款，才能成為 Microsoft Intune 應用程式合作夥伴。 您必須登入才能檢視這份文件。 您可以在 [問卷] 索引標籤下或此處的 Intune App SDK Microsoft Connect 網站中找到協議。 您必須提供應用程式名稱、公司名稱以及應用程式的 Google 或 iTunes 商店深層連結。
+若要開始註冊程序，請填寫 **[Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**(Microsoft Intune 應用程式合作夥伴問卷)。 
 
-![Microsoft Connect](../media/microsoft-connect.png)
+Microsoft 會使用問卷回應中列出的電子郵件地址進行連絡，並繼續註冊程序。 此外，如果有任何疑慮，我們也會使用您註冊的電子郵件地址與您連絡。
 
-我們將使用您註冊的電子郵件地址，以確認並完成註冊程序回條。 此外，如果有任何疑慮，我們也會使用您註冊的電子郵件地址與您連絡。
+> [!NOTE]
+> 上述表單中收集的所有資訊，以及與 Microsoft Intune 小組的電子郵件通訊，皆會遵循 [Microsoft 隱私權聲明](https://www.microsoft.com/en-us/privacystatement/default.aspx)中的規定來處理。
 
 **註冊程序的相關作業**： 
 
-提交表單之後，Microsoft 會透過您註冊的電子郵件地址連絡您，以確認成功回條或要求其他資訊以完成註冊。 此外，當您的應用程式成功向 Microsoft Intune 註冊，以及當 Microsoft Intune 合作夥伴的網站上將您的應用程式顯示為精選應用程式時也會連絡您。 確認資訊回條之後，下一次的每月 Intune 服務更新中就會包含您的應用程式深層連結。 例如，如果在 7 月完成註冊資訊，將於 8 月中支援應用程式深層連結。 如果未來您的市集應用程式深層連結有所變更，則必須重新註冊應用程式。 此外，如果您使用新版 Intune App SDK 更新您的應用程式，也務必通知我們。
+1. 提交問卷之後，Microsoft 會透過您註冊的電子郵件地址連絡您，以確認成功回條或要求其他資訊以完成註冊。 
+2. 在收齊您的所有必要資訊之後，我們即會傳送 Microsoft Intune 應用程式夥伴協議給您簽署。 本協議說明相關條款，您的公司必須先接受這些條款，才能成為 Microsoft Intune 應用程式合作夥伴。 
+3. 當您的應用程式成功註冊 Microsoft Intune 服務，以及當 [Microsoft Intune 合作夥伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)網站上將您的應用程式顯示為精選應用程式時，皆可獲得通知。 
+4. 最後，您的應用程式深層連結就會包含在下一次的每月 Intune 服務更新中。 例如，如果在 7 月完成註冊資訊，將於 8 月中支援應用程式深層連結。 
 
-**注意**：上述表單中收集的所有資訊，以及與 Intune 小組的電子郵件通訊都會遵循 [Microsoft 隱私權聲明](https://www.microsoft.com/en-us/privacystatement/default.aspx)的原則。
+如果未來您的市集應用程式深層連結有所變更，則必須重新註冊應用程式。 此外，如果您使用新版 Intune App SDK 更新您的應用程式，也務必通知我們。
+
+
 
 ## 下載 SDK 檔案
 
-適用於 iOS 和 Android 的 Intune App SDK 會裝載在 Microsoft GitHub 帳戶上。 下面的公用存放庫分別包含適用於 iOS 和 Android 的 SDK 檔案︰
+適用於原生 iOS 和 Android 的 Intune App SDK 會裝載在 Microsoft GitHub 帳戶上。 下面的公用存放庫分別包含適用於 iOS 和 Android 的 SDK 檔案︰
 
 * [適用於 iOS 的 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [適用於 Android 的 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
+**如果您的應用程式是 Xamarin 或 Cordova 應用程式，請使用下列開發人員工具**：
+
+* [Intune App SDK Xamarin 元件](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune App SDK Cordova 外掛程式](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+
 建議註冊您可以用來從存放庫分叉和提取的 GitHub 帳戶。 GitHub 可讓開發人員與我們的產品小組進行溝通、開啟問題並接收快速回應、檢視版本資訊，以及將意見提供給 Microsoft。 如需 GitHub 帳戶和存放庫的問題，請連絡 msintuneappsdk@microsoft.com。
+
+
+
+
 
 ## 使用 SDK 啟用 iOS 或 Android 行動應用程式的 MAM
 
-若要將 Intune App SDK 整合到 iOS 應用程式，您需要下列項目︰ 
+若要將 Intune App SDK 整合到原生 iOS 應用程式，您需要下列項目︰ 
 
 * **[Intune App SDK for iOS 開發人員指南](intune-app-sdk-ios.md)**：本文件將逐步引導您使用 Intune App SDK 來啟用 iOS 行動應用程式。 
 
 
-若要將 Intune App SDK 整合到 Android 應用程式，您需要下列項目︰
+若要將 Intune App SDK 整合到原生 Android 應用程式，您需要下列項目︰
 
 * **[Intune App SDK for Android 開發人員指南](intune-app-sdk-android.md)**：本文件將逐步引導您使用 Intune App SDK 啟用 Android 行動應用程式。 
 
+Intune App SDK Xamarin 元件和 Intune App SDK Cordova 外掛程式的相關文件，位於其各自的 GitHub 存放庫中。 
 
 
 ## 設定應用程式的遙測
@@ -96,6 +112,6 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

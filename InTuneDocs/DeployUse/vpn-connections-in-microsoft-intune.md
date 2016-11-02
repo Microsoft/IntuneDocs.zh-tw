@@ -3,8 +3,9 @@ title: "VPN 連線 | Microsoft Intune"
 description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者和裝置。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune 支援使用下列連線類型建立 VPN 設定檔：
 
 
 
-連線類型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
+連線類型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是 (OMA-URI，僅限行動裝置)|     
-Cisco (IPsec)|是 |否   |否  |  否|否  |否 | 否|
-Citrix|是 |否   |否  |  否|否  |否 | 否|
-Pulse Secure|是  |是 |是   |否  |是  |是| 是|        
-F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
-Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
-CheckPoint Mobile VPN|是 |是 |是 |是 |是|是|是|
-Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|VPNv1 OMA-URI*|
-Microsoft Automatic|否 |否 |否 |否 |否|是 (OMA-URI)|是|
-IKEv2|iOS 自訂設定檔|否 |否 |否 |否|是 (OMA-URI)|是|
-PPTP|iOS 自訂設定檔|否 |否 |否 |否|否|是|
-L2TP|iOS 自訂設定檔|否 |否 |否 |否|是 (OMA-URI)|是|
+Cisco AnyConnect|是 |是   |否    |否  |否    | 是 (OMA-URI，僅限行動裝置)|     
+Cisco (IPsec)|是 |否   |否  |否  |否 | 否|
+Citrix|是 |否   |否  |否  |否 | 否|
+Pulse Secure|是  |是 |是   |是  |是| 是|        
+F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
+Dell SonicWALL Mobile Connect|是 |是 |是 |是 |是 |是|         
+CheckPoint Mobile VPN|是 |是 |是 |是|是|是|
+Microsoft SSL (SSTP)|否 |否 |否 |否|否|VPNv1 OMA-URI*|
+Microsoft Automatic|否 |否 |否 |否|是 (OMA-URI)|是|
+IKEv2|iOS 自訂設定檔|否 |否 |否|是 (OMA-URI)|是|
+PPTP|iOS 自訂設定檔|否 |否 |否|否|是|
+L2TP|iOS 自訂設定檔|否 |否 |否|是 (OMA-URI)|是|
 
 \* 無可供 Windows 10 使用的其他設定。
 
@@ -96,6 +97,8 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 > [!Note]
 > 適用於 Android for Work 裝置的 VPN 設定檔只會針對安裝在該裝置之工作設定檔的應用程式，啟用 VPN 連線。
+>
+> 部分 VPN 連線類型支援 Android for Work 裝置的個別應用程式 VPN，以及在透過 Intune 散發的應用程式上啟用個別應用程式 VPN。  
 
 3. 使用下表協助您設定 VPN 設定檔設定：
 

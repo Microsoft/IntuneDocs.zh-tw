@@ -3,8 +3,9 @@ title: "系統提示在您的 Android 裝置上安裝 Lookout for Work |Microsof
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
@@ -21,6 +22,8 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 # 系統提示您安裝 Lookout for Work
 
 在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。
+
+如果安裝發生問題，請嘗試本主題結尾的疑難排解步驟。
 
 
 **您必須執行的作業：**
@@ -35,11 +38,11 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![點選 [接受] 以便 Lookout for Work 存取裝置](./media/lookout-accept-store-permissions-android.png)
 
-3. 開啟 Lookout for Work 並點選 **[啟用]**。
+3. 開啟 Lookout for Work，然後點選 [啟動]。
 
     ![開啟 Lookout for Work 並點選 [啟用]](./media/lookout-activate-button-android.png)
 
-4. 點選 [使用 Azure Active Directory 登入]，並輸入您用以存取工作或學校電子郵件和檔案的帳戶。
+4. 點選 [使用 Azure Active Directory 登入]，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
 
     ![請使用您的公司或學校帳戶登入：](./media/lookout-sign-in-azure-android.png)
 
@@ -51,13 +54,13 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![點選 [接受] 以授與 Lookout for Work 讀取設定檔的權限](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    畫面隨即出現，顯示 Lookout for Work 正在連線至 Lookout Security Cloud。
+    畫面會顯示 Lookout for Work 正在連線至 Lookout Security Cloud。
 
 7. 請檢閱項目以了解 Lockout 如何保護裝置，然後點選 **[確定]**。
 
     ![檢閱 Lookout for Work 如何保護裝置](./media/lookout-how-it-protects-your-device-android.png)
 
-    當您查看以下畫面時，表示已設定並連線至 Lookout。
+    當您看到以下畫面時，表示已設定並連線至 Lookout。
 
     ![您現已連線至 Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -71,13 +74,14 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     如果 Lookout for Work 在裝置上找到安全性威脅，您會看到如何修正問題的指示。
 
+**如果安裝不作用**
+
+有時安裝會因為您無法控制的技術問題而失敗。 如果發生這種情況，請嘗試從 Play Store 手動安裝 Lookout for Work：[https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

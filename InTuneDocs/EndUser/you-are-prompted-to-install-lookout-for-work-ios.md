@@ -2,9 +2,10 @@
 title: "系統提示在您的 iOS 裝置上安裝 Lookout for Work | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,66 +13,48 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: a8f198633bcaf460f2a94257a052284003230d58
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
 
 
 ---
 
 # 系統提示在您的 iOS 裝置上安裝 Lookout for Work
 
-在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。
-
+在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。 裝置上可能會看到不同的提示，視 IT 管理員設定 Lookout for Work 的方式而定。
 
 **您必須執行的作業：**
 
-1.  當您收到通知：**必要應用程式 - 從 App Store 安裝 Lookout for Work**，請加以點選。 系統會帶您前往 App Store 中的 Lookout for Work 安裝頁面。
+1.  如果看到以下提示，請點選 [安裝] 允許 Lookout for Work 安裝在您的裝置上。
 
-2.  安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
+    ![點選 [安裝] 以安裝 Lookout for Work](./media/ios-lfw-install-app-request.png)
 
-    ![點選 [接受] 以便 Lookout for Work 存取裝置](./media/lookout-accept-store-permissions-android.png)
+2. 當您看到下列訊息時，請點選 [設定]、開啟 [定位服務]，然後點選 [繼續]。
 
-3. 開啟 Lookout for Work 並點選 **[啟用]**。
+    ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-location-services.png)
 
-    ![開啟 Lookout for Work 並點選 [啟用]](./media/lookout-activate-button-android.png)
+3. 檢閱 Lookout for Work 需要的權限，然後點選 [繼續]。
 
-4. 點選 [使用 Azure Active Directory 登入]，並輸入您用以存取工作或學校電子郵件和檔案的帳戶。
+    ![您現已連線至 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
-    ![請使用您的公司或學校帳戶登入：](./media/lookout-sign-in-azure-android.png)
+4. 在詢問是否允許 Lookout for Work 傳送通知給您的提示中，點選 [允許]。
 
-5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]**。 您會看到類似下列畫面。
+    ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-notifications.png)
 
-    ![選取您的工作或學校帳戶並點選 [新增帳戶]](./media/lookout-pick-account-android.png)
+    
+Lookout for Work 完成安裝後，如果裝置上找不到任何安全性威脅，您會看到下列畫面。
 
-6. 點選 **[接受]**，授與 Lookout for Work 將您登入及讀取設定檔的權限。
+![Lookout for Work 沒有找到任何安全性威脅](./media/ios-lfw-no-threats-found.png)
 
-    ![點選 [接受] 以授與 Lookout for Work 讀取設定檔的權限](./media/lookout-needs-permission-to-view-profile-android.png)
+如果 Lookout for Work 在裝置上找到安全性威脅，您會看到如何修正問題的指示。
 
-    畫面隨即出現，顯示 Lookout for Work 正在連線至 Lookout Security Cloud。
+**如果安裝不作用**
 
-7. 請檢閱項目以了解 Lockout 如何保護裝置，然後點選 **[確定]**。
-
-    ![檢閱 Lookout for Work 如何保護裝置](./media/lookout-how-it-protects-your-device-android.png)
-
-    當您查看以下畫面時，表示已設定並連線至 Lookout。
-
-    ![您現已連線至 Lookout for Work](./media/lookout-you-are-now-connected-android.png)
-
-    Lookout for Work 會立即開始檢查裝置上是否有安全性威脅。 如果沒有找到任何威脅，您會看到以下畫面。
-
-    ![Lookout for Work 沒有找到任何安全性威脅](./media/lookout-scan-no-threats-found-android.png)
-
-    公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司的安全性需求。
-
-    如果 Lookout for Work 在裝置上找到安全性威脅，您會看到如何修正問題的指示。
-
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+有時安裝會因為您無法控制的技術問題而失敗。 此種情況請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
