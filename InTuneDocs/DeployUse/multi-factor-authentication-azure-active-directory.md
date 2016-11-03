@@ -2,8 +2,8 @@
 title: "使用 Azure AD 進行多重要素驗證| Microsoft Intune"
 description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Microsoft Intune 的多重要素驗證
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Microsoft Intune 的多重要素驗證
 
 Intune 針對裝置註冊整合 Azure AD 多重要素驗證 (MFA) 來協助您保護公司資源的安全。 除了使用者名稱和密碼，MFA 還需要其他驗證因素，如文字驗證。 iOS、Android、Windows 8.1 或更新版本，或 Windows Phone 8.1 或更新的裝置支援此功能。
 
@@ -27,7 +27,7 @@ Intune 針對裝置註冊整合 Azure AD 多重要素驗證 (MFA) 來協助您�
 >
 > 在較舊版本的 Configuration Manager (1610 之前的版本)，您仍然會在 Configuration Manager 系統管理主控台中看到 MFA 設定。 請勿嘗試在 Configuration Manager 系統管理主控台中設定 MFA，因為它將會無法運作。 請依照本主題中所述方式設定 MFA。
 
-### 設定 Intune 以在裝置註冊時要求多重要素驗證
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>設定 Intune 以在裝置註冊時要求多重要素驗證
 若要在裝置註冊時要求 MFA，請遵循下列步驟：
 
 1. 使用您的系統管理員認證登入您的 [Microsoft Azure 入口網站](https://manage.windowsazure.com)。
