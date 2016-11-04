@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 975708b5204ab83108a9174083bb87dfeb04a063
-ms.openlocfilehash: 52ad28686fa279a7ec251d073283c3554d1c81fc
+ms.sourcegitcommit: 6b998728b3db60d10cadbcd34b5412fa76cb586f
+ms.openlocfilehash: ddc47ef5846bf448cf0de1e57b527e8ec4c562cc
 
 
 ---
@@ -136,7 +136,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 10. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentitifiers` 索引鍵下。
 
-11. 將行動應用程式連結至 Azure Directory Authentication Library (ADAL)。 您可以在 [Github](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 上取得 Objective C 的 ADAL 程式庫。
+11. 將行動應用程式連結至 Azure Directory Authentication Library (ADAL)。 您可以 [在 Github 上取得](https://github.com/AzureAD/azure-activedirectory-library-for-objc) Objective C 的 ADAL 程式庫。
 
     **注意**：Intune App SDK 自 2015 年 6 月 19 日起，已經過 ADAL Broker 分支程式碼的測試。 請確定您要連結的版本是最新/有效的 ADAL 程式庫版本。
 
@@ -415,6 +415,32 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收 MAM 原則，而�
  - 如果傳回 true，應用程式將負責處理重新啟動。   
  - 如果傳回 false，則 SDK 將在傳回這個方法之後重新啟動應用程式。  SDK 會立即顯示一個對話方塊，告訴使用者必須重新啟動應用程式。 
 
+#實作另存新檔控制項
+
+Intune 允許 IT 系統管理員為受管理的應用程式選取其儲存位置。 應用程式可以使用 **isSaveToAllowedForLocation** API 向 Intune App SDK 查詢所能使用的儲存位置。
+
+將受管理的資料儲存到雲端儲存體或本機位置之前，應用程式必須先向 **isSaveToAllowedForLocation** API 查詢，確認 IT 系統管理員是否允許將資料另存於其他位置。
+
+使用 **isSaveToAllowedForLocation** API 時，應用程式必須通過儲存所使用的 UPN (如有使用)。
+
+##支援的位置
+
+**IsSaveToAllowedForLocation** API 提供常數讓您查看下列位置︰
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+應用程式應使用 **isSaveToAllowedForLocation** API 的常數確認是否可以將資料另存於其他被視為「受管理」(例如商務用 OneDrive) 或「個人」的位置。 此外，當應用程式無法判斷位置為「受管理」或「個人」的位置時，也應使用 API。 
+
+若已知是「個人」的位置，則應使用 **IntuneMAMSaveLocationOther** 值。 
+
+若應用程式會將資料儲存到本機裝置上的任何位置，應使用 **IntuneMAMSaveLocationLocalDrive** 常數。
+
 
 
 # 進行 Intune App SDK 設定
@@ -497,7 +523,7 @@ SDK 預設會將原則套用至應用程式整體。 多重身分識別是一個
 身分識別就是帳戶的使用者名稱 (例如 user@contoso.com)。 開發人員可以設定應用程式在下列不同層級的身分識別︰ 
 
 * **處理序身分識別**：處理序身分識別會設定整個處理序的身分識別，並且主要用於單一身分識別應用程式。 這個身分識別會影響所有作業、檔案和 UI。
-* **UI 身分識別**：判斷在主要執行緒上將哪些原則套用至 UI 作業 (例如剪下/複製/貼上、PIN、驗證、資料共用等)。UI 身分識別不會影響檔案作業 (加密、備份等)。 
+* **UI 身分識別**：判斷在主要執行緒上將哪些原則套用至 UI 作業 (例如剪下/複製/貼上、PIN、驗證、資料共用等)。UI 身分識別不會影響檔案作業 (加密、備份等)。
 * **執行緒身分識別**：執行緒身分識別會影響在目前執行緒上套用哪些原則。 這會影響所有作業、檔案和 UI。
 
 不論使用者是否受管理，應用程式都必須負責適當地設定身分識別。
@@ -523,9 +549,12 @@ SDK 會記錄本機檔案擁有者身分識別，並據以套用原則。 建立
  
 如果應用程式包含共用擴充功能，則可以在 `IntuneMAMDataProtectionManager` 中使用 `protectionInfoForItemProvider` 方法來擷取正在共用之項目的擁有者。 如果共用的項目是檔案，則 SDK 會處理檔案擁有者的設定。 如果共用的項目是資料，則在這項資料保存至檔案時，應用程式必須負責設定檔案擁有者，以及呼叫 `setUIPolicyIdentity` API (如下所述)，再於 UI 中顯示這項資料。
  
-#啟用多重身分識別
+##開啟多重身分識別
  
-預設會將應用程式視為單一身分識別，而且 SDK 會將處理序身分識別設定為已註冊使用者。 若要啟用多重身分識別支援，名稱 'MultiIdentity' 為值 'YES' 的布林設定應該新增至應用程式之 Info.plist 檔案內的 IntuneMAMSettings 字典。 啟用多重身分識別時，處理序身分識別、UI 身分識別和執行緒身分識別都會設定為 nil，而且應用程式必須負責適當地設定它們。
+預設會將應用程式視為單一身分識別，而且 SDK 會將處理序身分識別設定為已註冊的使用者。 若要啟用多重身分識別支援，名為 `MultiIdentity`值為 'YES' 的布林設定必須新增至應用程式 Info.plist 內的 **IntuneMAMSettings** 字典。 
+
+> [!NOTE]
+> 啟用多重身分識別時，處理序身分識別、UI 身分識別和執行緒身分識別都會設定為 nil。 應用程式必須負責正確設定它們。
 
  
 ##切換身分識別
@@ -628,6 +657,6 @@ Intune App SDK 的靜態程式庫和架構組建是通用二進位檔，表示�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
