@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# 在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
 Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。 例如，您可以限制受管理應用程式中的剪下、複製及貼上作業，或將應用程式設定成只能在受管理瀏覽器中開啟所有的網頁連結。
 
 行動應用程式管理原則支援：
@@ -59,7 +59,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 > [!TIP]
 > 如果您搭配使用 Intune 與 Configuration Manager，請參閱[如何使用 Configuration Manager 中的行動應用程式管理原則來控制應用程式](https://technet.microsoft.com/library/mt131414.aspx)。
 
-## 以行動應用程式管理原則建立及部署應用程式
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>以行動應用程式管理原則建立及部署應用程式
 
 -   **步驟 1：**取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式。
 
@@ -71,15 +71,15 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 -   **步驟 5：** 監視應用程式部署。
 
-## 步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
 
 從應用程式市集尋找並記下您所要部署之受原則管理的應用程式的 URL。 例如 iPad 版 Microsoft Word 應用程式的 URL 為 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
 
 
-## 步驟 2：將應用程式發佈到您的雲端儲存空間
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>步驟 2：將應用程式發佈到您的雲端儲存空間
 當您發行受管理的應用程式時，其程序將根據您是發行受原則管理的應用程式，還是使用 iOS 的 Microsoft Intune App Wrapping Tool 處理的應用程式而有不同。
 
-#### 發行原則管理應用程式
+#### <a name="to-publish-a-policy-managed-app"></a>發行原則管理應用程式
 
 1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示。
 
@@ -93,7 +93,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 確認應用程式上傳成功之後，請繼續進行步驟 3。
 
-#### 發行經過 Microsoft Intune App Wrapping Tool 處理的應用程式
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>發行經過 Microsoft Intune App Wrapping Tool 處理的應用程式
 
 1.  當您準備好要將應用程式上傳至雲端儲存空間時，請遵循[在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)中的指示。
 
@@ -105,7 +105,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 確認應用程式上傳成功之後，請繼續進行步驟 3。
 
-## 步驟 3：建立行動應用程式管理原則
+## <a name="step-3-create-a-mobile-application-management-policy"></a>步驟 3：建立行動應用程式管理原則
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
 
@@ -142,7 +142,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 新的原則會顯示在 [原則] 工作區的 [設定原則] 節點中。
 
-## 步驟 4：將應用程式與行動應用程式管理原則產生關聯，然後部署應用程式
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>步驟 4：將應用程式與行動應用程式管理原則產生關聯，然後部署應用程式
 確定您在 [管理部署] 對話方塊的 [行動應用程式管理] 頁面選取行動應用程式管理原則，將原則與應用程式產生關聯。
 
 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
@@ -150,7 +150,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 > [!IMPORTANT]
 > 如果裝置從 Intune 取消註冊，原則將不會從應用程式中移除。 即使之後解除安裝並重新安裝應用程式，已套用原則的任何應用程式將會保留原則設定。
 
-### 如果裝置上已部署應用程式，該怎麼辦
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>如果裝置上已部署應用程式，該怎麼辦
 當您部署應用程式時，有時候目標使用者或裝置之一可能已經安裝未受管理的應用程式版本。 例如，使用者可能已從應用程式市集安裝 Microsoft Word。
 
 在這種情況下，您必須要求使用者手動解除安裝未受管理的版本，以便安裝您設定的受管理版本。
@@ -160,10 +160,10 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 > [!TIP]
 > 如果裝置處於受監督的模式，Intune 會在不要求使用者授權的情況下，直接接管現有應用程式的管理工作。
 
-## 步驟 5：監視應用程式部署
+## <a name="step-5-monitor-the-app-deployment"></a>步驟 5：監視應用程式部署
 建立並部署與行動應用程式管理原則相關聯的應用程式之後，請使用下列程序來監視應用程式並解決任何原則衝突。
 
-#### 檢視部署的狀態
+#### <a name="to-view-the-status-of-the-deployment"></a>檢視部署的狀態
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [群組] &gt; [概觀]。
 
@@ -181,7 +181,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 6.  識別衝突之後，您可以修改衝突的原則設定以使用相同的設定，或您也可以只將其中一個原則部署到應用程式和使用者。
 
-### 如何解決原則衝突
+### <a name="how-policy-conflicts-are-resolved"></a>如何解決原則衝突
 第一次部署到使用者或裝置時，如果行動應用程式管理原則有衝突，衝突的特定設定值會從部署到應用程式的原則中移除。 應用程式會使用內建的衝突值。
 
 後續部署到應用程式或使用者時，如果行動應用程式管理原則有衝突，衝突的特定設定值將不會在部署到應用程式的行動應用程式管理原則上更新。 應用程式會使用該設定現有的值。
@@ -194,6 +194,6 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

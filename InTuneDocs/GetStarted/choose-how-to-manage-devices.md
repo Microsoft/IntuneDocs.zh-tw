@@ -3,6 +3,7 @@ title: "選擇如何管理裝置 | Microsoft Intune"
 description: "了解您可以註冊和管理裝置的各種方式。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/31/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
-ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 ---
 
-# 選擇如何管理裝置
+# <a name="choose-how-to-manage-devices"></a>選擇如何管理裝置
 
 若要利用 Intune 提供的眾多功能 (例如應用程式部署) 以及控制裝置設定，您的裝置必須「受管理」。 您管理裝置的方式取決於要使用的 Intune 功能。
 本主題將協助您選擇哪種方法符合您的需求。
@@ -31,7 +32,7 @@ ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 1. 註冊裝置**或**
 2. 安裝「Intune 軟體用戶端」。
 
-## 決定要使用的方法
+## <a name="decide-which-method-to-use"></a>決定要使用的方法
 使用此決策流程來決定如何讓您的裝置受管理。
 
 ![用於決定如何讓裝置受管理的決策流程。](./media/choose-manage-method.png)
@@ -48,12 +49,12 @@ ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 如需 Intune 支援的裝置與電腦相關資訊，請參閱[支援的行動裝置與電腦](/intune/get-started/supported-mobile-devices-and-computers)
 
 
-## Exchange ActiveSync 管理
+## <a name="exchange-activesync-management"></a>Exchange ActiveSync 管理
 除了註冊裝置或安裝 Intune 軟體用戶端以外，您還可以[使用 Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) 來管理裝置。 這個方法需要您安裝 On-Premises Connector 或使用內建的 Service to Service Connector 連線到您的 Exchange Server。
 雖然這是管理裝置的第三個選項，但其提供的管理功能與其他方法相對有限。
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
 - [選擇如何註冊行動裝置](/intune/get-started/choose-how-to-enroll-devices1)
 - [使用 Intune 電腦用戶端軟體管理 Windows 電腦](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
@@ -65,6 +66,6 @@ ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
