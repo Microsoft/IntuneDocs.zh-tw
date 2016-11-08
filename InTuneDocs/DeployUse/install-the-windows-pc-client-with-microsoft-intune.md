@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用�
 
 ## <a name="instruct-users-to-selfenroll"></a>指示使用者自行註冊
 
-使用者可以前往[公司入口網站](http://portal..manage.microsoft.com)安裝 Intune 用戶端軟體。 若入口網站能偵測出裝置為 Windows 電腦，就會提示使用者下載 Intune 軟體用戶端來註冊電腦。 下載軟體之後，使用者可以加以安裝來管理其電腦。
+使用者可以前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 若入口網站能偵測出裝置為 Windows 電腦，就會提示使用者下載 Intune 軟體用戶端來註冊電腦。 下載軟體之後，使用者可以加以安裝來管理其電腦。
 
 ![Intune 入口網站將會提示您下載 Intune 軟體用戶端](../media/software-client-download.png)
 
