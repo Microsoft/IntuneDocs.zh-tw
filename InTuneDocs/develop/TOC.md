@@ -10,6 +10,6 @@
 # [疑難排解](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
