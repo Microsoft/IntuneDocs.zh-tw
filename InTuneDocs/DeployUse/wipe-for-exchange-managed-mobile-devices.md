@@ -2,8 +2,8 @@
 title: "抹除 Exchange 管理的行動裝置 | Microsoft Intune"
 description: "Microsoft Intune 可讓您抹除或重設行動裝置，這些裝置搭配使用 Exchange ActiveSync (EAS) 和 Intune Exchange Connector 管理"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 94d304a872f5890f2cf83a06aa222353cd7f61f6
 ---
 
 
-# 抹除 Exchange 管理的行動裝置
+# <a name="wipe-for-exchangemanaged-mobile-devices"></a>抹除 Exchange 管理的行動裝置
 Microsoft Intune 可讓您抹除或重設行動裝置，這些裝置搭配使用 Exchange ActiveSync (EAS) 和 Intune Exchange 連接器管理。 下表說明透過 Exchange ActiveSync 可用的抹除功能：
 
 |抹除類型|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8|iOS|Android|
