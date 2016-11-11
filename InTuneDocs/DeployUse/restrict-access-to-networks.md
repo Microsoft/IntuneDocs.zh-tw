@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
@@ -68,7 +68,8 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 
 1.  在 ISE 主控台中，請移至 [管理] > [憑證] > [系統憑證] > [產生自我簽署憑證]。  
 2.       匯出自我簽署憑證。
-3. 在文字編輯器中，編輯匯出的憑證：[註解]：<> 我不會在這兩個陳述式結尾處放句點，我認為可能會造成混淆。
+3. 在文字編輯器中，編輯匯出的憑證︰
+
  - 刪除 ** -----BEGIN CERTIFICATE-----**
  - 刪除 ** -----END CERTIFICATE-----**
  
