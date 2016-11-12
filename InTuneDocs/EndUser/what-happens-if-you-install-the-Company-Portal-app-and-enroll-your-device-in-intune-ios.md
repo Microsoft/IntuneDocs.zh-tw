@@ -2,9 +2,10 @@
 title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 Mac OS X 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,19 +26,19 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 當您安裝公司入口網站應用程式，並且在 Intune 中註冊您的 iOS 或 Mac OS X 裝置時，您可以使用公司入口網站應用程式執行下列動作：
 
--   存取公司網路、電子郵件和工作檔案
+-   存取公司的網路、電子郵件與工作檔案。
 
--   從公司入口網站取得公司應用程式
+-   從公司入口網站取得公司應用程式。
 
--   在電話遺失或遭竊時從遠端將它重設為原廠設定
+-   當手機遺失或遭竊時，從遠端將其重設為原廠設定。
 
--   自動設定公司電子郵件帳戶
+-   自動設定您的公司電子郵件帳戶。
 
-當您在 Intune 註冊裝置時，您將授與 IT 系統管理員管理您裝置的權限，以協助保護裝置上的公司資訊。
+當您在 Intune 註冊裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護裝置上的公司資訊。
 
 **IT 看不到的內容**
 
--   呼叫和網頁歷程記錄
+-   通話與網頁歷程記錄
 
 -   位置
 
@@ -85,16 +86,16 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 -   啟用或停用將相片串流到 iCloud 的功能。
 
--   啟用或停用裝置上的數據漫遊功能。 如果允許數據漫遊，可能會產生漫遊費用。
+-   啟用或停用裝置上的數據漫遊功能。 若允許數據漫遊，可能會產生漫遊費用。
 
--   啟用或停用裝置上的語音漫遊功能。 如果允許語音漫遊，可能會產生漫遊費用。
+-   啟用或停用裝置上的語音漫遊功能。 若允許語音漫遊，可能會產生漫遊費用。
 
--   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 如果允許自動檔案同步處理，可能會產生漫遊費用。
+-   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 若允許自動同步檔案，可能會產生漫遊費用。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

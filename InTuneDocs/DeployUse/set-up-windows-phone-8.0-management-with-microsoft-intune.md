@@ -3,6 +3,7 @@ title: "設定 Windows Phone 8.0 管理 |Microsoft Intune"
 description: "啟用適用於使用 Microsoft Intune 之 Windows Phone 8.0 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 Windows Phone 8.0 需要 Symantec 憑證，才能安裝 Intune 公司入口網站應用程式，並允許裝置管理。 簽署企業營運系統應用程式時也需要憑證。 下列主題僅適用於 Windows Phone 8.0。 若要管理 Windows Phone 8.1 或更新版本 (包括 Windows 10 行動裝置版)，請參閱[設定 Windows Phone 註冊](set-up-windows-phone-management-with-microsoft-intune.md)。
 
 > [!IMPORTANT]
-> 從 2016 年 9 月開始，Windows 8.0 和 Windows Phone 8.0 的公司入口網站應用程式將不再提供下載。
+> 從 2016 年 9 月以來，Windows Phone 8 和 Windows 8 的公司入口網站應用程式將不再提供下載。
 
 -   **Windows Phone 8** - 需要憑證
 -   **Windows Phone 8.1 和 Windows 10 行動裝置版**只有在下列情況才需要憑證：
@@ -183,6 +184,6 @@ Window Phone 行動裝置管理的設定需求取決於您要如何管理裝置�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 
 ---
@@ -23,30 +24,30 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 # 如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？
 
-當您安裝公司入口網站應用程式，並使用其註冊 Windows 或 Windows Phone 裝置時，您的 IT 系統管理員即可管理您的裝置以保護公司或學校資料的安全性，如下方針對舊於 Windows 10 之裝置的描述。 請查看[本頁](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)了解 Windows 10 裝置。
+當您安裝公司入口網站應用程式，然後使用其註冊 Windows 或 Windows Phone 裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護公司或學校資料的安全。 本主題說明 Windows 10 之前的裝置行為。 若為 Windows 10 裝置，請參閱[相關主題](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
 
 ## 所有 Windows 裝置在註冊後會發生的事
 在 Intune 註冊 Windows 或 Windows Phone 裝置可讓您：
 
--   存取公司網路、電子郵件和工作檔案
+-   存取公司的網路、電子郵件與工作檔案。
 
--   從公司入口網站取得公司應用程式 (針對 Windows 7 和 Vista，您只能從公司入口網站取得公司應用程式)
+-   從公司入口網站取得公司應用程式。 (若為 Windows 7 及 Windows Vista，可以從公司入口網站取得公司應用程式)。
 
--   自動設定公司或學校電子郵件帳戶
+-   自動設定公司或學校的電子郵件帳戶。
 
--   如果電話遺失或遭竊即重設為原廠設定
+-   當手機遺失或遭竊時，將其重設為原廠設定。
 
-當您註冊裝置時，您會賦予 IT 系統管理員執行下列動作的權限：
+當您註冊裝置時，即授權您的 IT 系統管理員可以執行下列動作：
 
--   將裝置重設為製造商的預設設定。 這項功能對裝置遺失或失竊的情況很有幫助。
+-   將您的裝置重設為製造商的預設設定。 這項功能對裝置遺失或失竊的情況很有幫助。
 
--   只移除公司相關的檔案及商務應用程式。 **不會移除您的個人資料和設定。**
+-   只移除公司相關的檔案及商務應用程式。 *不會移除您的個人資料和設定。*
 
--   IT 系統管理員可以查看安裝在裝置上的軟體，包括您個人安裝的軟體。
+-   您的 IT 系統管理員可以查看裝置上所安裝的軟體，包括您個人安裝的軟體。
 
--   對裝置設定需求，例如要求您擁有裝置密碼或 PIN 以保護公司資料。 IT 系統管理員可能會限制您輸入不正確密碼的次數，並在嘗試次數過多時鎖定裝置，使您無法使用。
+-   設定裝置的需求，例如要求您為裝置設定密碼或 PIN 碼，以保護公司的資料。 您的 IT 系統管理員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置，禁止您繼續使用。
 
--   要求您將裝置上的資料加密以協助在您的裝置遺失或遭竊時保護公司資料。 
+-   要求您將裝置上的資料加密以協助在您的裝置遺失或遭竊時保護公司資料。
 
 -   要求您接受條款和條件。
 
@@ -54,18 +55,18 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 ## 所有 Windows 電腦在註冊後會發生的事
 
--  軟體會安裝在您的電腦上，讓 IT 系統管理員可以管理電腦，同時讓您可以取得公司資源，例如應用程式和支援資訊。 您的 IT 系統管理員可能會自動更新此軟體。
+-  軟體會安裝在您的電腦上，以便於您的 IT 系統管理員管理電腦，並讓您能夠存取公司資源 (例如應用程式及支援資訊)。 您的 IT 系統管理員可能會自動更新此軟體。
 
--  Intune Endpoint Protection 可能會安裝在您的電腦上。 這是用來檢查病毒和惡意程式碼的軟體。
+-  Intune Endpoint Protection 可能會安裝在您的電腦上。 此軟體會檢查病毒及惡意程式碼。
 
--  IT 系統管理員可以收集或刪除電腦硬碟上的資料。
+-  您的 IT 系統管理員可能會從您的電腦硬碟收集或刪除資料。
 
--  IT 系統管理員可以在電腦上安裝應用程式和更新。
+-  您的 IT 系統管理員可以在您的電腦上安裝應用程式並加以更新。
 
 ## 在註冊裝置後每隔八小時會發生的事
 已註冊的裝置每隔大約八小時將會：
 
--   下載 IT 系統管理員提供的任何原則或應用程式更新。
+-   下載您 IT 系統管理員提供的原則或應用程式更新。
 
 -   傳送任何硬體清查更新。
 
@@ -75,7 +76,6 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

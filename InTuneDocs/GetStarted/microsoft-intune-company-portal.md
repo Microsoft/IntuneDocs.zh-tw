@@ -3,18 +3,19 @@ title: "Microsoft Intune 公司入口網站 | Microsoft Intune"
 description: "設定 Intune 公司入口網站"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: b6dc2a6b9f8464bb6accbbc5163700a6d7da1fdb
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Intune 公司入口網站是一項工具，可供使用者存取公司資料和�
 
 在使用者存取公司入口網站之前，其帳戶必須先獲得使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 的授權，並且登入狀態為 [已允許]。 深入了解[新增使用者](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)及[指派您訂用帳戶的授權](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)。 您也可以以公司的標誌、使用規定等等來[自訂公司入口網站](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)。 使用者透過前往公司入口網站，然後使用工作或學校帳戶登入來存取網站。
 
+> [!NOTE]
+> 某些國家/地區尚無法使用公司入口網站應用程式。
+
+> __iOS__：適用於 iOS 的公司入口網站應用程式已發佈至 Apple iOS App Store 的[所有適用區域](https://go.microsoft.com/fwlink/?linkid=831284)。
+
+> __Android__：適用於 Android 的公司入口網站應用程式尚無法用於安地卡及巴布達、阿路巴、貝南、布吉納法索、柬埔寨、中國、古巴、衣索比亞、捷克共和國、海地、伊朗、寮國、馬利、以色列、緬甸、荷屬安地列斯、尼日、巴布亞紐幾內亞、蘇丹、多哥。 針對上述這些國家/地區，替代方案是[側載公司入口網站應用程式的 Android 版本](https://www.microsoft.com/en-us/download/details.aspx?id=49140)。  
+
 ### 請參閱
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

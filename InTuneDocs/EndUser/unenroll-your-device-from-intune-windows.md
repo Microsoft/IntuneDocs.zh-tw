@@ -3,8 +3,9 @@ title: "從 Intune 取消註冊 Windows 裝置 | Microsoft Intune"
 description: "描述從 Intune 取消註冊 Windows 裝置的方式"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+ms.author: stabar
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 1.  移至 [電腦設定] &gt; [網路] &gt; [工作場所]。
 
-2.  點選 [加入工作場所] 下的 [離開]。
+2.  選取 [工作場所聯結] 下的 [離開]。
 
-3.  點選 [開啟裝置管理] 下的 [關閉]。
+3.  選取 [Turn on device management] (開啟裝置管理) 下的 [關閉]。
 
-4.  在開啟的快顯視窗上，點選 [關閉]。
+4.  在開啟的快顯視窗上，選取 [關閉]。
 
 ## 取消註冊您的 Windows Phone 8.1 裝置
 
@@ -62,10 +63,8 @@ ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
-### 請參閱
-[使用具有 Intune 的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
