@@ -194,6 +194,6 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

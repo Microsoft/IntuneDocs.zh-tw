@@ -116,6 +116,6 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
