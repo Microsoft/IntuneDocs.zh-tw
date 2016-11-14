@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 
  - 報告軟體和硬體清查
  - 安裝桌面應用程式 (例如 .exe 和 .msi 檔案)
- - 防火牆設定
+ - 管理防火牆設定
 
 如果電腦是搭配 Intune 用戶端軟體來進行管理，則無法完全將其抹除 (即使可以進行選擇性抹除亦同)。 如果電腦是搭配 Intune 軟體用戶端來進行管理，就無法利用許多 Intune 管理功能，例如條件式存取、VPN 和 Wi-Fi 設定，或憑證和電子郵件組態部署。
 
@@ -119,6 +119,6 @@ Intune 可以管理下列裝置平台︰
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
