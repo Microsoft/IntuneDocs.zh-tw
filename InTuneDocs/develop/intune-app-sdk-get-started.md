@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# 開始使用 Microsoft Intune App SDK
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
 本入門指南可協助您使用 Microsoft Intune 快速啟用行動應用程式的行動應用程式管理功能。 若能先了解 [Intune App SDK 概觀](intune-app-sdk.md)中所列舉的 Intune App SDK 優點，可能會對您很有幫助。
 
 本指南的主要步驟，可逐步引導您使用 Microsoft Intune 啟用應用程式的行動應用程式管理功能。 Intune App SDK 支援跨平台的類似案例，而且能為 IT 系統管理員建立跨平台的一致體驗。 不過，由於平台限制，因此針對特定功能的支援有些微差異。
 
-# 快速入門
+# <a name="getting-started"></a>快速入門
 
-## 向 Microsoft 註冊您的市集應用程式
+## <a name="register-your-store-app-with-microsoft"></a>向 Microsoft 註冊您的市集應用程式
 
 **如果應用程式是不會在公開應用程式商店中提供的公司內部應用程式**：
 
@@ -55,12 +55,12 @@ Microsoft 會使用問卷回應中列出的電子郵件地址進行連絡，並�
 
 
 
-## 下載 SDK 檔案
+## <a name="download-the-sdk-files"></a>下載 SDK 檔案
 
 適用於原生 iOS 和 Android 的 Intune App SDK 會裝載在 Microsoft GitHub 帳戶上。 下面的公用存放庫分別包含適用於 iOS 和 Android 的 SDK 檔案︰
 
-* [適用於 iOS 的 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
-* [適用於 Android 的 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+* [iOS 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [Android 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 **如果您的應用程式是 Xamarin 或 Cordova 應用程式，請使用下列開發人員工具**：
 
@@ -73,7 +73,7 @@ Microsoft 會使用問卷回應中列出的電子郵件地址進行連絡，並�
 
 
 
-## 使用 SDK 啟用 iOS 或 Android 行動應用程式的 MAM
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>使用 SDK 啟用 iOS 或 Android 行動應用程式的 MAM
 
 若要將 Intune App SDK 整合到原生 iOS 應用程式，您需要下列項目︰ 
 
@@ -87,7 +87,7 @@ Microsoft 會使用問卷回應中列出的電子郵件地址進行連絡，並�
 Intune App SDK Xamarin 元件和 Intune App SDK Cordova 外掛程式的相關文件，位於其各自的 GitHub 存放庫中。 
 
 
-## 設定應用程式的遙測
+## <a name="configuring-telemetry-for-your-app"></a>設定應用程式的遙測
 
 Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
@@ -97,7 +97,7 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 * **適用於 Android 的 Intune App SDK**：不會透過 SDK 記錄遙測資料。
 
-## 使用 Microsoft Intune 測試啟用 MAM 的應用程式
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>使用 Microsoft Intune 測試啟用 MAM 的應用程式
 
 當您完成整合 iOS 或 Android 應用程式與 Intune App SDK 的必要步驟之後，需要確定使用者和 IT 系統管理員的所有應用程式管理原則皆已啟用且正常運作。 若要測試整合式應用程式，您需要下列項目：
 
