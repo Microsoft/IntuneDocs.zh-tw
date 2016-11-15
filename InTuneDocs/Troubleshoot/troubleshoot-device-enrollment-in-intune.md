@@ -2,8 +2,8 @@
 title: "裝置註冊疑難排解| Microsoft Intune"
 description: "裝置註冊問題的疑難排解建議。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ---
 
-# Intune 的裝置註冊疑難排解
+# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
 本主題提供裝置註冊問題的疑難排解建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
 
-## 初始疑難排解步驟
+## <a name="initial-troubleshooting-steps"></a>初始疑難排解步驟
 
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
 
@@ -37,22 +37,22 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
 
-- [使用 USB 纜線將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [使用電子郵件將 Android 診斷資料記錄檔傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [使用 USB 纜線將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
 - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
 - [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 
-## 一般註冊問題
+## <a name="general-enrollment-issues"></a>一般註冊問題
 所有的裝置平台都可能發生這些問題。
 
-### 已到達裝置上限
+### <a name="device-cap-reached"></a>已到達裝置上限
 **問題**：使用者於註冊期間在其裝置上收到錯誤 (例如 iOS 裝置上的 [公司入口網站暫時無法使用] 錯誤)，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
 
 **解決方式：** 根據設計，使用者只能註冊 5 個 (含) 以下的裝置。
 
-#### 檢查已註冊及允許的裝置數目
+#### <a name="check-number-of-devices-enrolled-and-allowed"></a>檢查已註冊及允許的裝置數目
 
 1.  在 Intune 管理入口網站中，驗證指派給使用者的裝置未超過 5 部
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 系統管理員可以在 Azure Active Directory 入口網站中刪除裝置。
 
-#### 若要在 Azure Active Directory 入口網站中刪除裝置：
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
 
 1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [系統管理] &gt; [Azure AD]。
 
@@ -86,10 +86,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 >
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至「裝置註冊管理員」群組的使用者帳戶將無法完成註冊。
 
-### 公司入口網站暫時無法使用
+### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
 **問題**：使用者在裝置上收到 [公司入口網站暫時無法使用] 錯誤。
 
-#### 公司入口網站暫時無法使用錯誤疑難排解
+#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>公司入口網站暫時無法使用錯誤疑難排解
 
 1.  從裝置移除 Intune 公司入口網站應用程式。
 
@@ -101,10 +101,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 5.  如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
-### MDM 授權單位未定義
+### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
 **問題**：使用者收到 [MDM 授權單位未定義] 錯誤。
 
-#### MDM 授權單位未定義錯誤疑難排解
+#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>MDM 授權單位未定義錯誤疑難排解
 
 1.  確認所設定的 MDM 授權單位適用於您使用的 Intune 服務版本，這些服務包括 Intune、O365 MDM 或 System Center Configuration Manager (含 Intune)。 若是 Intune，MDM 授權單位會在 [系統管理] &gt; [行動裝置管理] 中設定。 若是具備 Intune 的 Configuration Manager，您會在設定 Intune 連接器時進行設定；至於 O365，則為 行動裝置]**[** 設定。
 
@@ -139,23 +139,23 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
         撰寫查詢之後，請選擇 [!Execute]。
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
 
-### 如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
+### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
 **問題︰**您無法建立原則或註冊裝置。
 
 **解決方式︰**在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
 
-### 如果您有多個以驗證的網域，您無法登入或註冊裝置
+### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果您有多個以驗證的網域，您無法登入或註冊裝置
 **問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
-**解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個使用者 UPN 尾碼 (例如，@contoso.com 或 @fabrikam.com) 的最上層網域的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務。  現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+**解決方式**︰透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個頂層網域以提供使用者 UPN 尾碼 (例如 @contoso.com 或 @fabrikam.com)) 的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體。  現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
-## Android 的問題
-### 設定檔安裝失敗
+## <a name="android-issues"></a>Android 的問題
+### <a name="profile-installation-failed"></a>設定檔安裝失敗
 **問題**：使用者的 Android 裝置收到「設定檔安裝失敗」錯誤。
 
-### 設定檔安裝失敗的疑難排解步驟
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
 1.  確認已將您使用之 Intune 服務版本的適當授權指派給使用者。
 
@@ -163,7 +163,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
 
-### Android 憑證問題
+### <a name="android-certificate-issues"></a>Android 憑證問題
 
 **問題**：使用者在裝置上收到下列訊息：「您無法登入，因為您的裝置缺少必要的憑證」。
 
@@ -184,11 +184,11 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-## iOS 問題
-### 設定檔安裝失敗
+## <a name="ios-issues"></a>iOS 問題
+### <a name="profile-installation-failed"></a>設定檔安裝失敗
 **問題**：使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。
 
-### 設定檔安裝失敗的疑難排解步驟
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
 1.  確認已將您使用之 Intune 服務版本的適當授權指派給使用者。
 
@@ -198,7 +198,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
-### 使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
 **問題︰**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理員主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您可能已將 Intune 連接器註冊到一個帳戶，然後將它註冊到另一個帳戶。
@@ -227,13 +227,13 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 1. 取得新的 APN 憑證並將它上傳︰以滑鼠右鍵按一下 Configuration Manager 左側窗格中的 Intune 訂閱。 選取 [建立 APN 憑證要求] 並遵循指示。
-## 使用具有 Intune 的 System Center Configuration Manager 時發生問題
-### 行動裝置消失
+## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
+### <a name="mobile-devices-disappear"></a>行動裝置消失
 **問題：** 成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失，但仍有管理設定檔並列於 CSS 閘道中。
 
 **解決方式**：發生這個問題的原因可能是您具有移除非加入網域裝置的自訂處理序，或使用者嘗試從訂用帳戶移除裝置。 若要驗證及查看哪個處理序或使用者帳戶從 Configuration Manager 主控台移除裝置，請執行下列步驟。
 
-#### 檢查裝置的移除方式
+#### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
 
 1.  在 Configuration Manager 管理主控台中，選取 [監視] &gt; [系統狀態] &gt; [狀態訊息查詢]。
 
@@ -250,19 +250,19 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-### 其他 iOS 註冊錯誤
+### <a name="other-ios-enrollment-errors"></a>其他 iOS 註冊錯誤
 在[您在 Intune 嘗試註冊裝置時看到錯誤](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)的裝置使用者文件中提供 iOS 註冊錯誤清單。
 
-## 電腦問題
+## <a name="pc-issues"></a>電腦問題
 
-### 電腦已註冊 - 錯誤 hr 0x8007064c
+### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
 **問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
 
 
 
-**解決方案：**
+**解決方法：**
 
 1. 從 [開始] 功能表中，選擇 [執行] -> [MMC]。
 1. [檔案] -> [Add/ Remove Snap-ins (新增/移除嵌入式管理單元)]。
@@ -278,7 +278,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
     > 此節、方法或工作包含告訴您如何修改登錄的步驟。 然而，如果您不當修改登錄，可能會發生嚴重的問題。 因此，請務必小心遵循下列步驟。 為加強保護，請在修改登錄之前先加以備份。 之後如果發生問題，您還可以還原登錄。
     > 如需如何備份和還原登錄的詳細資訊，請參閱[如何備份和還原 Windows 中的登錄](https://support.microsoft.com/en-us/kb/322756)
 
-## 一般註冊錯誤代碼
+## <a name="general-enrollment-error-codes"></a>一般註冊錯誤代碼
 
 |錯誤碼|可能的問題|建議的解決方式|
 |--------------|--------------------|----------------------------------------|
@@ -302,11 +302,11 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

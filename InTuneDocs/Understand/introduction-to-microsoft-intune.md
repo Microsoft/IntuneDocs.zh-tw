@@ -16,13 +16,13 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Intune 簡介
+# <a name="introduction-to-intune"></a>Intune 簡介
 Microsoft Intune 是 Microsoft Enterprise Mobility + Security (EMS，前身為 Enterprise Mobility Suite) 的管理部門。 企業行動就是讓員工的所有裝置更具生產力，同時持續保護您的組織資訊。  
 
 EMS 是企業行動 (包括生產力、身分識別、存取控制、管理和資料保護) 的完整整合式套件。 它可提供您在組織中部署和操作行動解決方案的有效方式。  
@@ -49,13 +49,13 @@ Intune 提供的主要工具包括︰
 
 在這份文件中，我們將說明如何使用 Intune 所提供的工具來支援您的商務案例。  我們也將說明如何搭配使用這些工具與 Office 365、Azure AD、Azure RMS 以及Microsoft 行動套件的其他部分。 我們提供您該技術的常見用途、它在您環境中的使用方式，以及其實作程序的概觀。 這項技術本身具有彈性，並能夠適用我們尚未在此說明的各種其他案例。
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 * 請閱讀一些[常見的 Intune 使用方式](common-ways-to-use-intune.md)。
 * [使用 Intune 的 30 天試用](get-started-with-a-30-day-trial-of-microsoft-intune.md)來熟悉產品。
 * 深入了解 Intune 的[技術需求和功能](/intune/get-started/what-to-know-before-you-start-microsoft-intune)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
