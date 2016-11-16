@@ -3,6 +3,7 @@ title: "使用 Microsoft Intune 監視 MAM 原則 | Microsoft Intune"
 description: "查看有多少使用者擁有原則，向下鑽研以了解更多詳細資料。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 644860abcd351d24f08d7a517a3a4b5f44824689
-ms.openlocfilehash: 1d22d26c1a1c52dda4f9b01658d22f8de8187f0f
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: bc68a13b8d5694908cd00e5e615f81f6e15cfe22
 
 
 ---
@@ -71,10 +72,11 @@ ms.openlocfilehash: 1d22d26c1a1c52dda4f9b01658d22f8de8187f0f
 ### 請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[啟用 MAM 應用程式的使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [當 Android 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式由 MAM 原則管理時會有何情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

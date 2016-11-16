@@ -14,13 +14,13 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 559917b5b3c12534a5aa5d5eb5247d36e4ac1728
 
 
 ---
 
-# Intune 評估指南
+# <a name="intune-evaluation-guide"></a>Intune 評估指南
 您可以輕鬆快速地設定 Intune 30 天免費評估，來管理您的行動裝置與電腦。 只要在評估版中執行幾個簡單的步驟，就能新增多達 100 個使用者與裝置、設定群組、設定相容性原則，以及註冊與管理行動裝置與電腦。
 
 在本主題中，您將了解啟動及執行 Intune 評估版的基本作業，並概略了解這項服務，以便您可以評估 Intune 的特色與功能。
@@ -29,7 +29,7 @@ ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
-## 開始之前
+## <a name="before-you-begin"></a>開始之前
 開始使用 Intune 之前，您需要下列項目：
 
 -   具備已啟用 Silverlight 之網頁瀏覽器的裝置，您可以使用這部裝置來存取建立 Intune 使用者帳戶的網站 (**Office 365 系統管理中心**)，以及管理裝置、群組與原則的網站 (**Intune 管理主控台**)。
@@ -46,7 +46,7 @@ ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
     |Windows 10、Windows RT 8.1 或 Windows 8.1 裝置|註冊 Windows RT 和 Windows 裝置不需要憑證。|[使用 Microsoft Intune 安裝 Windows 電腦用戶端](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
     |iOS 7.1 或更新版本|取得 Apple Push Notification service 憑證。|如[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)中所述，向 Apple 要求 Apple Push Notification 服務憑證。|
 
-## 完成 Intune 30 天評估步驟
+## <a name="steps-to-complete-a-30day-evaluation-of-intune"></a>完成 Intune 30 天評估步驟
 - [步驟 1︰登入或註冊 30 天評估](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)。 註冊或登入 Intune 之前，您應該考慮是否要使用現有帳戶進行登入，還是建立僅用於 Microsoft Intune 30 天評估的暫時帳戶。
 - [步驟 2：新增使用者](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)。 完成設定您的帳戶之後，您會將個別使用者帳戶新增至 Intune，或大量新增使用者 (請參閱本節中的指示)。 開始之前，請務必了解 Intune 如何處理系統管理員帳戶。
 - [步驟 3：建立群組來組織使用者和裝置](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)。 Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您可以設定群組，使其符合組織的需求 (例如依據地理位置、部門或硬體特性)，並且使用它們來大規模地執行各種系統管理工作，從設定一組使用者的原則，到部署應用程式至一組裝置。
@@ -56,17 +56,17 @@ ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 - [步驟 7：後續步驟](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)。 準備移至 Intune 付費訂閱，並利用 Intune「FastTrack Center 權益」。
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 已經可以開始使用 30 天試用訂閱！
 
 >[!div class="step-by-step"]
-[**註冊 Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
+[**註冊 Intune**&rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Intune 快速入門指南](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

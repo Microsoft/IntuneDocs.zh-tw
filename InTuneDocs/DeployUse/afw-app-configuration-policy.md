@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# 在 Microsoft Intune 中使用行動應用程式設定原則設定 Android for Work 應用程式
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用行動應用程式設定原則設定 Android for Work 應用程式
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 您可以在 Microsoft Intune 中使用行動裝置應用程式組態原則，來提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定：
 
 -   自訂連接埠號碼。
@@ -37,7 +40,7 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 您會將應用程式設定原則，部署給您部署應用程式以進行設定的相同使用者。 每次執行應用程式時，都會使用這些原則設定。
 
-## 設定行動裝置應用程式組態原則
+## <a name="configure-a-mobile-app-configuration-policy"></a>設定行動裝置應用程式組態原則
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [概觀] &gt; [新增原則]。
 
@@ -61,7 +64,7 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 新的原則會顯示在 [組態原則]  節點中。
 
 
-## 部署應用程式設定原則
+## <a name="deploy-the-app-configuration-policy"></a>部署應用程式設定原則
 建立行動應用程式設定原則之後，您必須將其部署給您部署應用程式以套用設定的相同使用者。
 
 如需如何部署原則的資訊，請參閱[部署設定原則](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
@@ -72,10 +75,6 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 > [!TIP]
 > 針對每個應用程式，只部署一個應用程式設定原則給使用者。
-
-
-
-
 
 
 

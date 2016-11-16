@@ -3,8 +3,9 @@ title: "抹除受管理的公司應用程式資料 | Microsoft Intune"
 description: "深入了解如何以遠端方式，選擇性地從裝置移除公司資料。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
 
 
 ---
 
-# 使用 Microsoft Intune 抹除受管理的公司應用程式資料
+# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>使用 Microsoft Intune 抹除受管理的公司應用程式資料
 當裝置遺失或遭竊，或者如果員工離職，您會想要確定公司應用程式資料已從裝置移除。 不過，您可能不想要移除裝置上的個人資料，特別是當該裝置為員工擁有的裝置時。
 
 若要選擇性地移除公司應用程式資料，請使用本主題中**建立抹除要求**一節所述的步驟來建立抹除要求。  完成抹除要求之後，當裝置下一次執行應用程式時，即會從應用程式中移除公司資料。
@@ -28,7 +29,7 @@ ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 
 
-## 建立抹除要求
+## <a name="create-a-wipe-request"></a>建立抹除要求
 
 1.  在 [Intune 行動應用程式管理] 刀鋒視窗中，選擇 [抹除要求] 磚。
 
@@ -47,20 +48,24 @@ ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 ![[抹除要求] 磚的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## 監視抹除要求
+## <a name="monitor-your-wipe-requests"></a>監視抹除要求
 在 [Intune 行動應用程式管理]  刀鋒視窗中的 [抹除要求]  磚上有提供摘要報告。  它會顯示整體狀態，並包括擱置的要求以及失敗的數目。 您可以藉由遵循下方所述步驟來取得更多詳細資料︰
 
 1.  在 [Intune 行動應用程式管理] 刀鋒視窗中，選擇 [抹除要求] 磚，以開啟 [抹除要求] 刀鋒視窗。
 
 2.  在 [抹除要求]  刀鋒視窗中，您可以看到您的要求清單 (依據使用者群組)。  由於系統會針對裝置上執行的每個受保護應用程式建立抹除要求，因此您可能會看到一名使用者具有多個要求的情況。  狀態指出抹除要求是否仍然 **擱置**、 **失敗**或 **成功**。
 
-### 請參閱
-[使用行動應用程式管理原則保護應用程式資料 ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+使用者必須開啟應用程式，抹除才會發生，並可能在發出要求後花費 30 分鐘的時間。 
+
+處於擱置狀態的抹除將會顯示，直到您手動將其刪除為止。  若要手動刪除抹除要求，請以滑鼠右鍵按一下並選擇 [刪除]。
+
+### <a name="see-also"></a>請參閱
+[使用行動應用程式管理原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

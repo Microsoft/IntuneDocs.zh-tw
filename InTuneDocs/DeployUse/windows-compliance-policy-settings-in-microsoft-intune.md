@@ -14,26 +14,27 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Microsoft Intune 中 Windows 裝置的相容性原則設定
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 裝置的相容性原則設定
 
 本主題中所述的原則設定適用於執行 Windows 作業系統的裝置。 受支援的特定 Windows 版本會在下列各節中介紹。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [IOS 裝置的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android 裝置的相容性原則設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Android for Work 的法務遵循政策設定](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Windows Phone 裝置的相容性原則設定
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone 裝置的相容性原則設定
 Windows Phone 8.1 及更新版本支援這一節所列的設定。
 
-## 系統安全性設定
-### 密碼
+## <a name="system-security-settings"></a>系統安全性設定
+### <a name="password"></a>密碼
 - **需要密碼來解除鎖定行動裝置︰**將此設為 [是]以要求使用者在存取他們的裝置前輸入密碼。
 
 - **允許簡單密碼︰**將此設為 [是]，讓使用者建立簡單密碼，例如「**1234**」或「**1111**」。
@@ -59,28 +60,28 @@ Windows Phone 8.1 及更新版本支援這一節所列的設定。
 - **不得重複使用以前用過的密碼：**如果已選取 [記住密碼歷程記錄]，請指定不得重複使用的舊密碼數目。
 - **當裝置從閒置狀態返回時，需要密碼：**這項設定應該與 [在非使用狀態幾分鐘後需要輸入密碼] 設定一起使用。 系統會提示使用者輸入密碼，來存取 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定時間未作用的裝置。
 
-  **這項設定只適用於 Windows 10 Mobile 裝置。**
-### 加密
+  **這項設定只適用於 Windows 10 行動裝置版裝置。**
+### <a name="encryption"></a>加密
 - **行動裝置需要加密︰將此**設為 [是]，以要求裝置加密才能連線到資源。
 
-## 裝置健全狀況設定
+## <a name="device-health-settings"></a>裝置健全狀況設定
 - **需要裝置回報為狀況良好：**您可以設定規則，要求在新的或現有的相容性原則中，**Windows 10 Mobile** 裝置必須回報為狀況良好。  如果啟用這項設定，則會針對下列資料點，透過健全情況證明服務 (HAS) 評估 Windows 10 裝置︰
   -  **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，以及協助確保電腦未遭到竄改，即使電腦無人看管、遺失或遭竊也是一樣。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
   -  **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測是否將未簽署的驅動程式或系統檔案載入到核心；或者，以具有系統管理員權限的使用者帳戶所執行的惡意軟體是否已修改系統檔案。
   - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會先驗證這項作業，再啟動電腦。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
 
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
-##  裝置屬性設定
+##  <a name="device-property-settings"></a>裝置屬性設定
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
     會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
 - **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 
-## Windows 電腦的相容性原則設定
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows 電腦的相容性原則設定
 Windows 電腦支援這一節所列的設定。
-## 系統安全性設定
-### 密碼
+## <a name="system-security-settings"></a>系統安全性設定
+### <a name="password"></a>密碼
 - **密碼長度下限︰** - Windows 8.1 上支援。
 
   指定使用者密碼中至少必須包含的數字位數或字元數。
@@ -113,7 +114,7 @@ Windows 電腦支援這一節所列的設定。
 
   若選取 [記住密碼歷程記錄]，必須指定不得重複使用的舊密碼數。
 
-## 裝置健全狀況設定
+## <a name="device-health-settings"></a>裝置健全狀況設定
 - **需要裝置回報為狀況良好︰** - Windows 10 裝置上支援。
 您可以設定規則，要求在新的或現有的相容性原則中，Windows 10 裝置必須回報為狀況良好。  如果啟用這項設定，則會針對下列資料點，透過健全情況證明服務 (HAS) 評估 Windows 10 裝置︰
   -  **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，以及協助確保電腦未遭到竄改，即使電腦無人看管、遺失或遭竊也是一樣。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
@@ -123,7 +124,7 @@ Windows 電腦支援這一節所列的設定。
 
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
 
-## 裝置屬性設定
+## <a name="device-property-settings"></a>裝置屬性設定
 - **所需的 OS 下限︰** - Windows 8.1 和 Windows 10 上支援。
 
   在此指定 major.minor.build 數目。 版本號碼必須對應至 winver 命令所傳回的版本。
@@ -141,6 +142,6 @@ Windows 電腦支援這一節所列的設定。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
