@@ -3,8 +3,9 @@ title: "管理 iOS 應用程式之間的資料傳輸 | Microsoft Intune"
 description: "使用本主題來了解如何使用 iOS「開啟位置」功能和行動應用程式管理原則來管理應用程式之間的資料傳輸。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# 使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
-## 管理 iOS 應用程式
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
+## <a name="manage-ios-apps"></a>管理 iOS 應用程式
 保護公司資料包括確定檔案傳輸僅限於您所管理的應用程式。  您可以使用下列方式管理 iOS 應用程式：
 
 -   藉由為應用程式設定 MAM 原則 (我們稱為**原則管理**的應用程式)，防止公司資料遺失。
@@ -28,7 +29,7 @@ ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 -   您也可以透過 **MDM 通道**來部署和管理應用程式。  這需要在 MDM 方案中註冊裝置。 這些可以是 **受原則管理的** 應用程式或其他受管理的應用程式。
 
 iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**部署的應用程式之間的檔案傳輸。 「開啟位置管理」限制是在組態設定中設定，並使用 MDM 軟體部署。  當使用者安裝部署的應用程式時，就會套用您設定的限制。
-##  使用 MAM 搭配 iOS 應用程式
+##  <a name="using-mam-with-ios-apps"></a>使用 MAM 搭配 iOS 應用程式
 行動應用程式管理 (MAM) 原則可搭配 iOS **開啟位置管理**功能使用，以下列方式保護公司資料︰
 
 -   **未受任何 MDM 解決方案管理的員工自有裝置：**您可以將 MAM 原則設定設定為 [只允許應用程式將資料傳送到受管理的應用程式]。 使用者在不受原則管理的應用程式中開啟受保護的檔案時，會無法讀取檔案。
@@ -41,7 +42,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 > [!IMPORTANT]
 > 只有部署到協力廠商 MDM 所管理裝置的應用程式，才需要使用者 UPN 設定。  Intune 受管理裝置則不需要此設定。
 
-## 設定使用者 UPN 設定
+## <a name="configure-user-upn-setting"></a>設定使用者 UPN 設定
 協力廠商 MDM 解決方案所管理的裝置需要有此組態。 下面程序說明實作 UPN 設定之方式和所產生使用者體驗的一般流程︰
 
 
@@ -49,11 +50,11 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 2.  使用步驟 3 和 4 中所述的設定，**透過協力廠商 MDM 解決方案**來部署應用程式和您要受管理的電子郵件設定檔。
 
-3.  使用下列應用程式組態設定來部署這些應用程式︰索引鍵=IntuneMAMUPN、值=<username@company.com> [範例：‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+3.  部署應用程式組態設定如下的應用程式︰key=IntuneMAMUPN, Value=<username@company.com> [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  將「開啟位置管理」原則部署到已註冊的裝置。
 
-### 使用者經驗範例
+### <a name="example-end-user-experience"></a>使用者經驗範例
 
 1.  使用者會在裝置上安裝 Microsoft Word 應用程式。
 
@@ -70,11 +71,11 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 6.  現在，資料傳輸成功，而且文件標記為應用程式中的公司身分識別。 此外，還會將資料視為在工作環境中，並據以套用原則設定。
 
-### 請參閱
-[使用行動應用程式管理原則搭配 Microsoft Intune 保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### <a name="see-also"></a>請參閱
+[使用 Microsoft Intune 的行動應用程式管理原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

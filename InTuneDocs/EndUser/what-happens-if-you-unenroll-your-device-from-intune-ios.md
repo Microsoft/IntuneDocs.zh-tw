@@ -3,6 +3,7 @@ title: "如果從 Intune 取消註冊 iOS 裝置，會發生什麼情況？ | Mi
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 
 ---
@@ -25,17 +26,17 @@ ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
 
 當您從 Intune 取消註冊 iOS 裝置時：
 
--   您的裝置將不再顯示於公司入口網站中。
+-   您的裝置將不再顯示於公司入口網站。
 
 -   您無法再從公司入口網站安裝應用程式。
 
--   您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
+-   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
 -   您可能無法再存取裝置上的某些公司資源，例如檔案共用或內部網站。
 
 -   您無法再使用裝置上的公司應用程式和公司資料。
 
--   您可能無法再使用 Wi-Fi 或虛擬私人網路 (VPN) 連線到公司網路。
+-   您可能無法再使用 Wi-Fi 或虛擬私人網路 (VPN) 連線到您的公司網路。
 
 -   移除裝置中的公司電子郵件設定檔。
 
@@ -45,8 +46,6 @@ ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

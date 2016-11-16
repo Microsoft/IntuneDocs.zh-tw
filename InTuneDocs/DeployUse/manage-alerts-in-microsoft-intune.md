@@ -2,9 +2,10 @@
 title: "管理警示 | Microsoft Intune"
 description: "使用 Intune 中的 [警示] 工作區，評估組織中裝置的整體健全狀況。"
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# 在 Microsoft Intune 中管理警示
+# <a name="manage-alerts-in-microsoft-intune"></a>在 Microsoft Intune 中管理警示
 使用 Intune 管理主控台中的 [警示] 工作區評估貴組織中裝置的整體健全狀況，並且識別出問題。
 
-## 檢視作用中警示
+## <a name="view-active-alerts"></a>檢視作用中警示
 
 請參閱關於作用中警示的一般資訊和摘要資料。
 
-#### 若要檢視作用中警示
+#### <a name="to-view-active-alerts"></a>若要檢視作用中警示
 
 在 Intune 管理主控台中，請遵循這些系列步驟中的其中之一︰
 
@@ -55,10 +56,10 @@ ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
 
     -   **嚴重性**。 此資料行代表警示的嚴重性。
 
-## 檢視佈告欄警示
+## <a name="view-notice-board-alerts"></a>檢視佈告欄警示
 佈告欄警示提供重要服務公告。 它們可能會提供即將推出之服務升級、維護排程或中斷狀態的相關資訊。
 
-#### 檢視及管理佈告欄警示
+#### <a name="to-view-and-manage-notice-board-alerts"></a>檢視及管理佈告欄警示
 
 1.  在 Intune 管理主控台中，選擇 [系統概觀]。
 
@@ -66,10 +67,10 @@ ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
 
 3.  如果您想要將佈告欄警示匯出為逗號分隔值 (CSV) 或 HTML 檔案，請在 Intune 管理主控台中選擇 [警示] > [所有警示] >    [通知]。 選取通知，選擇**匯出清單**圖示，然後遵循所顯示的指示。
 
-## 檢閱 Intune 系統狀態
+## <a name="review-intune-system-status"></a>檢閱 Intune 系統狀態
 在 [系統概觀] 工作區中，您可以檢視 Endpoint Protection、更新、代理程式健全狀況、原則和軟體類別的 [系統狀態] 摘要，可幫助您識別及排定需要立刻處理的問題優先順序。 當系統中斷和 [服務狀態] 摘要的連結時，就會產生錯誤訊息。 [服務狀態] 摘要會顯示每個位置發生之問題的詳細資訊，以及上次更新狀態摘要的時間。
 
-#### 檢視您的訂閱狀態
+#### <a name="to-view-the-status-of-your-subscription"></a>檢視您的訂閱狀態
 
 1.  在 Intune 管理主控台中，選擇 [系統概觀]。
 
@@ -77,7 +78,7 @@ ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
 
   許多項目相互連結，以讓您可以看到更詳細的資訊。 例如，在 [Endpoint Protection] 下，如果您選擇執行個體數目，就可以看到 [Endpoint Protection] 工作區，並會列出偵測到的惡意程式碼。 如果您選擇裝置的數目，您可以看到 [群組] 工作區，並會列出偵測到惡意程式碼的裝置清單。
 
-## 關閉並重新啟用警示
+## <a name="close-and-reactivate-alerts"></a>關閉並重新啟用警示
 Intune 警示會持續作用到發生這些事件之一為止：
 
 -   已修正導致警示產生的問題。
@@ -88,7 +89,7 @@ Intune 警示會持續作用到發生這些事件之一為止：
 
 標記為關閉的警示在 90 天後永久刪除。
 
-#### 手動關閉警示
+#### <a name="to-manually-close-an-alert"></a>手動關閉警示
 
 在 Intune 管理主控台中，請遵循這些系列步驟中的其中之一︰
 
@@ -98,7 +99,7 @@ Intune 警示會持續作用到發生這些事件之一為止：
 
 - **關閉佈告欄警示** – 選擇 [系統概觀]。 選擇佈告欄警示旁邊的 **X**。
 
-#### 檢視及重新啟動關閉的警示
+#### <a name="to-view-and-reactivate-closed-alerts"></a>檢視及重新啟動關閉的警示
 
 1.  在 Intune 管理主控台中，選擇 [警示] > [所有警示]。
 
@@ -108,11 +109,11 @@ Intune 警示會持續作用到發生這些事件之一為止：
 
 3.  若要重新啟用選取的警示，請選擇 [重新啟用警示]。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [取得 Microsoft Intune 警示通知](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

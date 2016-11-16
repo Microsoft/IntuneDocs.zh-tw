@@ -4,7 +4,7 @@ description: "您的使用者無法透過 Intune 條件式存取取得資源的�
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# 條件式存取的疑難排解
+# <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
 一般而言，使用者嘗試存取電子郵件或 SharePoint，並收到註冊的提示。 該提示會將使用者引導至公司入口網站。
 
 本主題說明您的使用者無法透過 Intune 條件式存取取得資源的存取權時該怎麼辦。
 
 
-## 成功進行條件式存取的基本概念
+## <a name="the-basics-for-success-in-conditional-access"></a>成功進行條件式存取的基本概念
 
 為了讓條件式存取能運作，您需要下列條件︰
 
 -   裝置必須由 Intune 管理
 -   裝置必須向 Azure Active Directory (AAD) 註冊。 在正常情況下，此註冊會在 Intune 註冊期間自動進行
 -   裝置必須符合裝置和裝置使用者的 Intune 相容性原則規定。  如果沒有相容性原則，進行 Intune 註冊即可。
--   如果使用者透過裝置的原生郵件用戶端而不是透過 Outlook 來擷取郵件的話，則必須在裝置上啟用 Exchange ActiveSync。     這在 iOS、Windows Phone 及 Android/KNOX 裝置都會自動進行。
+-   如果使用者透過裝置的原生郵件用戶端而不是透過 Outlook 來擷取郵件的話，則必須在裝置上啟用 Exchange ActiveSync。     這在 iOS、Windows Phone 及 Android/KNOX 裝置上會自動執行。
 -   您的 Intune Exchange Connector 應該會正確設定。 如需詳細資訊，請參閱[為 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
 
 在 Azure 管理入口網站和裝置清查報表中，可以檢視每個裝置的這些狀況。
 
-## 註冊問題
+## <a name="enrollment-issues"></a>註冊問題
 
  -  裝置未註冊，因此註冊可以解決此問題。
  -  使用者已註冊裝置，但無法加入工作地點。 使用者應該從公司入口網站更新註冊。
 
-## 相容性問題
+## <a name="compliance-issues"></a>相容性問題
 
  -  裝置不符合 Intune 原則。 常見的問題是加密與密碼的需求。 使用者會被重新導向到公司入口網站，在這裡他們可以設定其裝置，讓它相容。
  -  可能需要一些時間，來註冊裝置的相容性資訊。 請稍候幾分鐘，然後再試一次。
@@ -53,23 +53,23 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
         一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路組態 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，依照[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)所述來連絡 Microsoft 支援服務。
 
-## 原則問題
+## <a name="policy-issues"></a>原則問題
 
 當您建立相容性原則，並將它連結至電子郵件原則時，這兩個原則都必須部署給相同的使用者，因此請小心規劃哪些原則部署給哪些群組。 只有套用一個原則的使用者可能會發現他們的裝置不相容。
 
 
-## Exchange ActiveSync 問題
+## <a name="exchange-activesync-issues"></a>Exchange ActiveSync 問題
 
-### 相容的 Android 裝置收到隔離通知
+### <a name="compliant-android-device-gets-quarantine-notice"></a>相容的 Android 裝置收到隔離通知
 - 已註冊且相容的 Android 裝置在嘗試存取公司資源時，可能仍然會出現隔離通知。 選擇 [開始] 連結之前，使用者應該確定當他們嘗試存取資源時未開啟公司入口網站。 使用者應該關閉公司入口網站，請重試存取資源，然後選擇 [開始] 連結。
 
-### 已淘汰的裝置可以繼續存取。
+### <a name="retired-device-continues-to-have-access"></a>已淘汰的裝置可以繼續存取。
 - 使用 Exchange Online 時，已淘汰的裝置可能在淘汰之後數小時內仍可繼續存取。 這是因為 Exchange 會快取存取權限長達 6 小時。 在此案例中，請考慮其他方法來保護已淘汰裝置上的資料。
 
-### 裝置相容並已向 AAD 註冊，但仍遭到封鎖
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>裝置相容並已向 AAD 註冊，但仍遭到封鎖
 - 有時候，將 Exchange ActiveSync 識別碼 (EASID) 佈建至 AAD 會有所延遲。 此問題的常見原因是節流處理，因此請稍候幾分鐘，然後再試一次。
 
-### 裝置遭到封鎖
+### <a name="device-blocked"></a>裝置遭到封鎖
 
 裝置可能是遭到條件式存取封鎖，而沒有收到啟用電子郵件。
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 - 檢查 Exchange Connector 記錄檔中的 sendemail 活動，並檢查是否有錯誤。 所要搜尋命令的範例是從通知帳戶至 useremail 的 SendEmail。
 - Exchange Connector 封鎖裝置之前，它會傳送啟用電子郵件。 如果裝置已離線，它可能不會收到啟用電子郵件。 檢查裝置的電子郵件用戶端是否使用推送來擷取電子郵件，而不是輪詢，因為這也會造成使用者遺漏電子郵件。 切換到輪詢後，再查看裝置是否收到電子郵件。
 
-## 未封鎖不相容的裝置
+## <a name="noncompliant-device-not-blocked"></a>未封鎖不相容的裝置
 
 如果您遇到不相容但可以繼續存取的裝置，請採取下列步驟。
 
@@ -89,10 +89,10 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
     - 使用這個 PowerShell Cmdlet，取得信箱的所有行動裝置清單："Get-ActiveSyncDeviceStatistics -mailbox mbx'。 如果裝置未列在其中，表示它並未存取 Exchange。
     - 如果列出該裝置，請使用 Get-CASmailbox -identity:’upn’ | fl Cmdlet，取得其存取狀態的詳細資訊，並將該資訊提供給 Microsoft 支援服務。
 
-## 提出支援票證之前
+## <a name="before-you-open-a-support-ticket"></a>提出支援票證之前
 如果這些疑難排解程序都不能解決問題，可能會要求您將像是 OWA 信箱記錄檔或 Exchange Connector 記錄檔的資訊，提供給 Microsoft 支援服務。
 
-### 收集 OWA 信箱記錄
+### <a name="collecting-owa-mailbox-logs"></a>收集 OWA 信箱記錄
 
 1. 透過 OWA 登入，並在右上角中選擇您的名稱旁邊的設定 (齒輪) 符號。
 2. 選擇 [選項]。
@@ -104,15 +104,15 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 8. 等候 1-2 分鐘，然後返回 OWA 中的電話清單。 請確定已在清單中選取您的電話，然後從頂端功能表中選擇 [擷取記錄]。
 9. 您應會收到您自己所寄的電子郵件與附件。 當您提出支援票證時，請向 Microsoft 支援提供電子郵件的內容。
 
-### Exchange Connector 記錄檔
+### <a name="exchange-connector-logs"></a>Exchange Connector 記錄檔
 
-#### 一般記錄檔資訊
+#### <a name="general-log-information"></a>一般記錄檔資訊
 若要檢視 Exchange Connector 記錄檔，使用 [伺服器追蹤檢視器工具](https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
 
 >[!NOTE]
 >記錄檔位於 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 一系列共包含 30 個檔案的記錄檔是以 *Connector0.log* 開始並在 *Connector29.log* 停止。 記錄檔會在累積 10MB 的資料後，換用另一個檔案。 一旦記錄檔達到 Connector29，將會覆寫先前的記錄檔，再次從 Connector0 開始。
 
-#### 尋找同步記錄檔
+#### <a name="locating-sync-logs"></a>尋找同步記錄檔
 
 -    搜尋「完整同步處理」，在記錄檔中尋找完整同步處理。 完整同步處理的開頭會標有此段文字︰
 
@@ -124,10 +124,10 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
 -   搜尋「快速同步處理」，在記錄檔中尋找快速 (差異) 同步處理。
 
-##### Get next 命令中的例外狀況
+##### <a name="exceptions-in-get-next-command"></a>Get next 命令中的例外狀況
 檢查 Exchange Connector 記錄檔中 **Get next 命令**的例外狀況，並將這些資訊提供給 Microsoft 支援服務。
 
-#### 詳細資訊記錄
+#### <a name="verbose-logging"></a>詳細資訊記錄
 
 若要啟用詳細資訊記錄：
 
@@ -153,11 +153,11 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

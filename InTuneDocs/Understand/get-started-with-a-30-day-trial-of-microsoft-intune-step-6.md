@@ -3,6 +3,7 @@ title: "Intune 評估版的其他選項和額外項目 | Microsoft Intune"
 description: "說明當您註冊免費 30 天的 Intune 評估版時，所需要了解的警示、通知和報表，以及一般的 Intune 功能"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
 
 
 ---
 
-# Intune 評估訂閱的其他選項和額外項目
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 評估訂閱的其他選項和額外項目
 
-## 警示、通知和報表
+## <a name="alerts-notifications-and-reports"></a>警示、通知和報表
 在 Intune 管理主控台中，**警示**可用來迅速評定組織中受管理裝置的整體健康情況。 您可以設定及自訂警示，讓它們只回報並顯示您所需要的組織相關資訊。 您可以設定啟用或停用警示、設定嚴重性、使用顯示閾值來決定顯示警示之前必須觸發警示事件的頻率，以及設定特定警示類型專屬的設定。
 
 **通知** 是在觸發特定類型的警示時，用來通知系統管理員 (及其他使用者) 的電子郵件。
@@ -30,7 +31,7 @@ ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
 
 若要深入了解警示、通知和報表，請參閱 [Microsoft Intune 的監視和報表](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune)。
 
-## Intune 功能
+## <a name="intune-capabilities"></a>Intune 功能
 Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的功能外)。 例如：
 
 -   **控制對 Exchange 及 Office 365 的存取。** 如需詳細資訊，請參閱[管理 Exchange Online 的應用程式存取](https://technet.microsoft.com/library/dn705841.aspx)和[管理 Office 365 服務的應用程式存取](https://technet.microsoft.com/library/dn818907.aspx)。
@@ -49,7 +50,7 @@ Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的�
 
 支援選項在[如何取得 Microsoft Intune 支援](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune)中有所說明，而且您可以加入 [Microsoft Intune 論壇](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)一起討論 Intune。
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛剛已完成 *Microsoft Intune 評估*逐步解說。
 
 >[!div class="step-by-step"]
@@ -58,6 +59,6 @@ Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

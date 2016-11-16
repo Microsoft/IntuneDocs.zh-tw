@@ -125,7 +125,7 @@
 #### [驗證 MAM 原則](validate-mobile-application-management.md)
 #### [監視原則相容性](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [使用者經驗](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [MAM 原則的 Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [準備 MAM 的商務營運應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [抹除受管理的公司應用程式資料](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [還原受管理 iOS 裝置](restore-managed-ios-devices-from-backup.md)
+### [使用 MAM 原則的 Android 應用程式](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [使用 MAM 原則的 iOS 應用程式](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [開發和自訂應用程式](/intune/develop/intune-app-sdk)
 
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

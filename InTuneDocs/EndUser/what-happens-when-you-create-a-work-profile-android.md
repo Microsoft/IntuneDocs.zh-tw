@@ -2,7 +2,8 @@
 title: "當您建立工作設定檔時，會發生什麼事 | Microsoft Intune"
 description: "描述加密 Android 裝置的方式"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# 當您建立工作設定檔時，會發生什麼事
+# <a name="what-happens-when-you-create-a-work-profile"></a>當您建立工作設定檔時，會發生什麼事
 
-工作設定檔是您在裝置上的設定內容，允許您存取工作或學校電子郵件、應用程式和檔案。
+工作設定檔是您在裝置上設定用以保存您工作或學校電子郵件、應用程式及資料，以與您的個人資料相互區隔的檔案。
 
 當您建立工作設定檔時：
 
-- 您的 IT 系統管理員只能管理您裝置上與工作相關的應用程式、設定和組態，而不是您個人的應用程式或資料。
+- 您的 IT 系統管理員只能管理您裝置上與工作相關的應用程式、設定與資料，而不能管理您個人的應用程式或資料。
 
 - 您可以從 Play Store for Work 取得工作應用程式。 若要取得個人應用程式，請繼續前往 Google Play Store，由此一律可取得您個人的應用程式。 IT 系統管理員無法查看或管理您個人的應用程式。
 
