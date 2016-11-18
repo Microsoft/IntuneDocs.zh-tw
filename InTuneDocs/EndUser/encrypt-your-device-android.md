@@ -2,10 +2,10 @@
 title: "加密您的裝置 | Microsoft Intune"
 description: "描述加密 Android 裝置的方式"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# 加密您的裝置
+# <a name="encrypt-your-device"></a>加密您的裝置
 
 如果您的公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
@@ -34,14 +34,14 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
 
-### 發生問題時的解決方式
+### <a name="what-to-do-if-you-have-issues"></a>發生問題時的解決方式
 **問題**：您已加密您的裝置，而看到下列其中一項：
 
 - 已停用 [加密] 按鈕。
 - 您會看到仍需加密的訊息。
 - 您在嘗試使用公司入口網站應用程式時發生錯誤。
 
-**可以嘗試的方法**
+**可以嘗試的動作**
 
 - 請確定您的裝置已連接電源線且正在充電。
 - 請確定您已在裝置上設定 PIN 或密碼。
@@ -57,10 +57,10 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
     5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
-是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
+是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 [Microsoft Android 小組](mailto:wintunedroidfbk@microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
