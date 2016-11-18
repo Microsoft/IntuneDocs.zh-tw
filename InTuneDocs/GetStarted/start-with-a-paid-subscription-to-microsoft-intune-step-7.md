@@ -1,10 +1,11 @@
 ---
 title: "自訂公司入口網站 | Microsoft Intune"
-description: "說明如何為您的 Intune 訂閱自訂公司入口網站"
+description: "為您的 Intune 訂閱自訂公司入口網站"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: f43888e2ae923afec6c4ffbd4472fd8f36968472
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
 
 
 ---
@@ -70,6 +71,6 @@ ms.openlocfilehash: f43888e2ae923afec6c4ffbd4472fd8f36968472
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
