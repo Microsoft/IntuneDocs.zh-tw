@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
-ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
 
 
 ---
@@ -36,11 +36,12 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 2.  選擇 [管理] 磚。
 3.  在左側的 [支援] 下方，選擇 [支援]，以開立票證。 您可能會看到︰
 
-    ![開啟新的 Intune 支援票證](../media/suport-open-ticket.png)
+    ![開啟新的 Intune 支援票證](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  客戶若具有或曾經具有授權數少於 100 (含) 份的 O365 客戶，就會看到這則息。此時請參閱[開立支援票證的替代方法](#alternate-method-to-open-a-support-ticket)。
+    >  
     > ![替代的 Intune 支援](../media/alternate-support-ui.png)
 
     -   針對計費、授權以及帳戶問題，請選取 [計費和產品資訊]。
@@ -114,6 +115,6 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
