@@ -1,10 +1,11 @@
 ---
 title: "設定自訂網域名稱 | Microsoft Intune"
-description: "說明針對您的 Intune 訂閱新增自訂網域名稱的程序"
+description: "針對您的 Intune 訂閱新增自訂網域名稱"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 60f96b21f9e8f6ce610c24c6078906f51e327cb7
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 0251e339ddc227735bc09efb31e8440543e6033f
 
 
 ---
@@ -40,6 +41,6 @@ ms.openlocfilehash: 60f96b21f9e8f6ce610c24c6078906f51e327cb7
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

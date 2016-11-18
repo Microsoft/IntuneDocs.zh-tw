@@ -12,15 +12,15 @@
 #### [iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android 管理](set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work 管理](set-up-android-for-work.md)
-#### [Windows 裝置管理 ](set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile 和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
-### [管理公司擁有的裝置](manage-corporate-owned-devices.md)
-#### [註冊公司所擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
-##### [iOS 設定助理註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)
-##### [iOS 直接註冊](ios-direct-enrollment-in-microsoft-intune.md)
-##### [iOS DEP 註冊](ios-device-enrollment-program-in-microsoft-intune.md)
+#### [Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 行動裝置版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+### [管理屬公司擁有的裝置](manage-corporate-owned-devices.md)
+#### [註冊屬公司擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+##### [設定助理註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+##### [直接註冊](ios-direct-enrollment-in-microsoft-intune.md)
+##### [DEP 註冊](ios-device-enrollment-program-in-microsoft-intune.md)
 #### [使用裝置註冊管理員進行註冊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
-#### [利用 IMEI 數字標記裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+#### [利用 IMEI 編號標記裝置](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM 與 Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange ActiveSync 內部部署](intune-on-premises-exchange-connector.md)
 #### [Exchange ActiveSync 線上](intune-service-to-service-exchange-connector.md)
@@ -35,10 +35,13 @@
 ### [透過原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 設定](ios-policy-settings-in-microsoft-intune.md)
 #### [Android 和 Samsung KNOX 設定](android-policy-settings-in-microsoft-intune.md)
+##### [使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
+##### [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](per-app-vpn-for-android-pulse-secure.md)
+##### [使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work 設定](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1 設定](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-#### [Windows 10 Desktop 和行動設定](windows-10-policy-settings-in-microsoft-intune.md)
+#### [Windows 10 Desktop 和行動裝置版設定](windows-10-policy-settings-in-microsoft-intune.md)
 #### [Windows 小組設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows 版本升級設定](edition-upgrade-policy-settings-in-microsoft-intune.md)
 #### [Mac OS X 設定](mac-os-x-policy-settings-in-microsoft-intune.md)
@@ -46,7 +49,7 @@
 #### [條款和條件設定](terms-and-condition-policy-settings-in-microsoft-intune.md)
 #### [一般設定 (舊版)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-### [存取公司資源](enable-access-to-company-resources-with-microsoft-intune.md)
+### [允許存取公司資源](enable-access-to-company-resources-with-microsoft-intune.md)
 #### [利用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)
 #### [Intune 的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)
 #### [Intune 的 VPN 連線](vpn-connections-in-microsoft-intune.md)
@@ -69,22 +72,22 @@
 ## [淘汰裝置](retire-devices-from-microsoft-intune-management.md)
 
 ## [新增應用程式](add-apps.md)
-### [為已註冊的裝置新增 App](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [為 Intune 用戶端電腦新增 App](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [為已註冊的裝置新增應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [為 Intune 用戶端電腦新增應用程式](add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [管理 Intune 用戶端電腦的授權合約](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
-## [部署 App](deploy-apps.md)
+## [部署應用程式](deploy-apps.md)
 ### [將應用程式部署到裝置和電腦](deploy-apps-in-microsoft-intune.md)
 ### [將應用程式部署至 Android for Work 裝置](android-for-work-apps.md)
-### [監視 App](monitor-apps-in-microsoft-intune.md)
-### [管理大量購買的應用程式](manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [管理大量購買的 iOS 應用程式](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [管理大量購買的 Windows 應用程式](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+### [監視應用程式](monitor-apps-in-microsoft-intune.md)
+### [管理大量採購應用程式](manage-volume-purchased-apps-in-microsoft-intune.md)
+#### [管理大量採購的 iOS 應用程式](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+#### [管理大量採購的 Windows 應用程式](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## [設定應用程式](update-apps-using-microsoft-intune.md)
-### [更新應用程式 ](update-apps-using-microsoft-intune.md)
+### [更新應用程式](update-apps-using-microsoft-intune.md)
 ### [iOS 應用程式設定原則](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Android for Work 應用程式設定原則](afw-app-configuration-policy.md)
-### [iOS 行動裝置應用程式佈建設定檔](ios-mobile-app-provisioning-profiles.md)
+### [iOS 行動應用程式佈建設定檔](ios-mobile-app-provisioning-profiles.md)
 ### [管理網際網路存取](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -107,13 +110,14 @@
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [限制電子郵件存取︰範例](restrict-email-access-example-scenarios.md)
 ### [僅允許受原則管理的應用程式存取 O365 服務](allow-policy-managed-apps-access-to-o365.md)
+#### [使用 MAM CA 的應用程式](use-apps-with-mam-ca.md)
 #### [Exchange Online](mam-ca-for-exchange-online.md)
 #### [封鎖沒有 ADAL 的應用程式](block-apps-with-no-modern-authentication.md)
 ### [限制存取網路 (Cisco ISE)](restrict-access-to-networks.md)
 ### [根據裝置、網路和應用程式風險限制存取](restrict-access-based-on-device-network-app-risk.md)
 #### [設定 Lookout 裝置威脅保護](set-up-your-subscription-with-lookout-mtp.md)
 #### [在 Intune 中啟用 Lookout](enable-lookout-mtp-connection-in-intune.md)
-#### [部署 Lookout for work App](configure-and-deploy-lookout-for-work-apps.md)
+#### [部署 Lookout for work 應用程式](configure-and-deploy-lookout-for-work-apps.md)
 #### [啟用裝置威脅保護相容性原則](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [使用 MAM 保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -128,7 +132,7 @@
 
 #### [MAM 原則的 Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
-### [準備 MAM 的商務營運應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+### [準備 MAM 的企業營運應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [包裝 iOS 應用程式](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [包裝 Android 應用程式](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Intune 未管理之裝置上的 LOB 應用程式](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
@@ -137,7 +141,7 @@
 
 ## [淘汰應用程式與資料](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [使用完整或選擇性抹除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [淘汰應用程式 ](retire-apps-using-microsoft-intune.md)
+### [淘汰應用程式](retire-apps-using-microsoft-intune.md)
 ### [抹除受管理的公司應用程式資料](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -150,6 +154,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

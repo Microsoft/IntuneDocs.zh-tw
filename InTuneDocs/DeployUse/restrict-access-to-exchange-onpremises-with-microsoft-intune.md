@@ -14,13 +14,13 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
-ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
 
 
 ---
 
-# 使用 Intune 限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取
+# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取
 
 
 如果您有 Exchange Online Dedicated 環境，而且需要了解它是使用新版或舊版的設定，請連絡您的帳戶管理員。
@@ -64,7 +64,7 @@ ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 -   如果裝置不相容，就會顯示訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站或公司入口網站應用程式，讓他們找到問題的相關資訊，以及如何修復問題的方法。
 
-## 支援行動裝置
+## <a name="support-for-mobile-devices"></a>支援行動裝置
 -   Windows Phone 8.1 和更新版本
 
 -   iOS 上的原生電子郵件應用程式。
@@ -72,14 +72,16 @@ ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 -   EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
 - EAS 郵件用戶端 **Android for Work 裝置**：Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取搭配 Android for Work 使用，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將這些應用程式部署為必要安裝。 
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 > [!NOTE]
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
 
-## 對電腦的支援
+## <a name="support-for-pcs"></a>對電腦的支援
 
 Windows 8.1 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
-##  設定條件式存取原則
+##  <a name="configure-a-conditional-access-policy"></a>設定條件式存取原則
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則]** > **[條件式存取]** > **[Exchange 內部部署原則]**。
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
@@ -119,13 +121,13 @@ Windows 8.1 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[
 
 **若要查看一些如何設定條件式存取原則以限制裝置存取的範例案例，請參閱[限制電子郵件存取範例案例](restrict-email-access-example-scenarios.md)。**
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 [限制存取 SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [限制存取商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

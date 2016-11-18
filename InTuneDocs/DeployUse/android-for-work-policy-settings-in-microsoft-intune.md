@@ -15,17 +15,19 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
-ms.openlocfilehash: f7c676b25f5dd5b7ee1d1d7c1b51b75a41b5c102
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
 ---
 
-# Microsoft Intune 的 Android for Work 原則設定
+# <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android for Work 原則設定
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一般設定。
 
-## 一般組態原則
+## <a name="general-configuration-policy"></a>一般組態原則
 
 您可以使用 Intune **Android for Work 一般設定原則**，為您的 Android for Work 裝置設定安全性和工作設定檔設定。
 
@@ -34,22 +36,22 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
 > [!TIP]
 > 當您佈建工作設定檔時，裝置會自動加密。 您無法變更此設定。
 
-### 密碼設定
+### <a name="password-settings"></a>密碼設定
 
 |設定名稱|詳細資料|
 |----------------|-|
-|**需要密碼來解除鎖定行動裝置**|指定受管理的裝置是否需要密碼。 從下列選項進行選擇：<br><br>- **複雜字集** - 至少需要一個字母、數字和符號<br>- **英數** - 至少需要一個數字和一個字母字元<br>- **字母** - 至少需要字母或符號<br>- **數字複雜字集** - 需要不重複或連續的數字字元<br>- **數字**<br><br>如果未啟用此設定，則沒有複雜性需求。|
-|**密碼長度下限**|指定密碼中字元或數字的數目下限。|
-|**在停止活動幾分鐘後鎖定裝置**|指定裝置自動鎖定之前，需停止使用者活動達幾分鐘。|
+|**需要密碼才可解除鎖定行動裝置**|指定受管理的裝置是否需要密碼。 從下列選項進行選擇：<br><br>- **複雜** - 至少須有一個字母、一個數字及一個符號<br>- **英數字元** - 至少須有一個數字及一個字母字元<br>- **字母** - 至少須有字母及符號<br>- **複雜數字** - 必須是不重複或不連續的數字字元<br>- **數字**<br><br>如果未啟用此設定，則沒有複雜性需求。|
+|**密碼最小長度**|指定密碼中字元或數字的數目下限。|
+|**停止活動幾分鐘後鎖定裝置**|指定裝置自動鎖定之前，需停止使用者活動達幾分鐘。|
 |**允許 Smart Lock 和其他信任代理程式**<br>(Android 6 及更新版本)|讓您在相容的 Android 裝置上控制 Smart Lock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。您可以使用此設定來防止使用者設定 Smart Lock。|
-|**移除工作設定檔前的重複登入失敗次數**|指定移除裝置上的工作設定檔前允許的登入失敗次數。 這不會執行完整裝置抹除。|
+|**移除工作設定檔之前，允許重複登入失敗的次數**|指定移除裝置上的工作設定檔前允許的登入失敗次數。 這不會執行完整裝置抹除。|
 |**記住密碼歷程記錄**|防止重複使用先前用過的密碼。|
 |**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|指定要記憶先前使用過的密碼數目。|
 |**密碼到期 (天數)**|指定必須變更裝置密碼的天數。|
 |**允許指紋解除鎖定**<br>(Android 6 及更新版本)|可讓您使用指紋解除鎖定具有此功能的裝置。|
 
 
-### 工作設定檔設定
+### <a name="work-profile-settings"></a>工作設定檔設定
 
 |設定名稱|詳細資料|
 |----------------|-|
@@ -60,7 +62,7 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
 
 
 
-## 自訂原則設定
+## <a name="custom-policy-settings"></a>自訂原則設定
 使用 Microsoft Intune **Android for Work 自訂設定原則**來部署 OMA-URI 設定，此設定可用來控制 Android for Work 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
 此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。
@@ -68,32 +70,33 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
 > [!NOTE]
 > Android 自訂原則目前只支援針對包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。
 
-### 一般設定
+### <a name="general-settings"></a>一般設定
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
     |**Name**|輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
     |**說明**|提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
-### OMA-URI 設定
+### <a name="omauri-settings"></a>OMA-URI 設定
 
    |設定名稱|詳細資料|
     |--------|--------------------|
     |**設定名稱**|輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。|
-    |**設定說明**|提供可給予設定概觀的說明，以及可協助您找到該說明的其他相關資訊。|
+    |**設定描述**|提供可給予設定概觀的說明，以及可協助您找到該說明的其他相關資訊。|
     |**資料類型**|選取您要在其中指定這個 OMA-URI 設定的日期類型。 選擇 [字串]、[字串 (XML)]、[日期和時間]、[整數]、[浮點數] 或 [布林值]。|
     |**OMA-URI (區分大小寫)**|指定您想要提供設定的 OMA-URI。|
     |**值**|指定要與您先前指定的 OMA-URI 產生關聯的值。|
 
-### 範例
+### <a name="examples"></a>範例
 
-- [使用預先共用金鑰建立 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
-- [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](per-app-vpn-for-android-pulse-secure.md)
+- [使用預先共用的金鑰建立 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
+- [使用自訂原則為 Android 裝置建立個別應用程式的 VPN 設定擋](per-app-vpn-for-android-pulse-secure.md)
 
-### 請參閱
-[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>請參閱
+[使用 Microsoft Intune 原則管理您裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "管理 Intune 授權 | Microsoft Intune"
-description: "說明如何為您的 Intune 訂閱指派授權給使用者"
+description: "為您的 Intune 訂閱指派授權給使用者"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
-ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: df2a8c526f3c569a491d999ee4c80a36a30b77e3
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 3.  使用者帳戶現在具有必要權限，可使用服務並將裝置註冊接受管理。
 
-> [!NOTE] 使用者註冊裝置之後，即顯示在主控台中。 
+> [!NOTE] 使用者註冊裝置之後，即顯示在主控台中。
 
 ### 使用 PowerShell 來選擇性地管理 EMS 使用者授權
 使用 Microsoft Enterprise Mobility + Security (原稱為 Enterprise Mobility Suite) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。
@@ -93,6 +93,6 @@ ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

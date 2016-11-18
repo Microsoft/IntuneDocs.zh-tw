@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
 
 
 ---
 
-# 使用 Intune 限制 Exchange Online 和新版 Exchange Online Dedicated 的電子郵件存取
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 限制 Exchange Online 和新版 Exchange Online Dedicated 的電子郵件存取
 
 如果您有 Exchange Online Dedicated 環境，而且需要了解它是使用新版或舊版的設定，請連絡您的帳戶管理員。
 
@@ -62,12 +62,14 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 ![此圖說明決定允許或禁止裝置存取的決策點](../media/ConditionalAccess8-1.png)
 
-## 支援行動裝置
+## <a name="support-for-mobile-devices"></a>支援行動裝置
 您可以限制從 **Outlook** 和其他 **使用新式驗證的應用程式**存取 Exchange Online 電子郵件：-
 
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本，以及 Android for Work
 - iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 **新式驗證**將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 用戶端中。
 
@@ -79,11 +81,11 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 * Safari (iOS)
 * Chrome (Android)
-* 受管理的瀏覽器 (iOS 和 Android)
+* 受管理的瀏覽器 (iOS 以及 Android 5.0 和更新版本)
 
 **不支援的瀏覽器將會被封鎖**。
 
-**適用於 iOS 和 Android 的 OWA 應用程式可以修改成不使用新式驗證，並且不予支援。  必須透過 ADFS 宣告規則封鎖從 OWA 應用程式進行存取。**
+**適用於 iOS 和 Android 的 OWA 應用程式可以修改成不使用新式驗證，並且不予支援。必須透過 ADFS 宣告規則封鎖從 OWA 應用程式進行存取。**
 
 
 您可以限制從下列平台內建的 **Exchange ActiveSync 電子郵件用戶端**存取 Exchange 電子郵件：
@@ -94,7 +96,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 - Windows Phone 8.1 和更新版本
 
-## 對電腦的支援
+## <a name="support-for-pcs"></a>對電腦的支援
 
 您可以針對執行 Office 桌面應用程式的電腦安裝條件存取，以便針對符合下列需求的電腦存取 **Exchange Online** 和 **SharePoint Online** ：
 
@@ -118,15 +120,15 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 -   設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 案例 3 提供詳細指示 ─ [除使用瀏覽器架構的應用程式外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)。
 
-## 設定條件式存取
-### 步驟 1：設定及部署相容性原則
+## <a name="configure-conditional-access"></a>設定條件式存取
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>步驟 1：設定及部署相容性原則
 確定您[建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則，並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到也將取得條件式存取原則的使用者群組。
 
 
 > [!IMPORTANT]
 > 如果您尚未部署相容性原則，則會將裝置視為相容，並允許存取 Exchange。
 
-### 步驟 2：評估條件式存取原則的效果
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>步驟 2：評估條件式存取原則的效果
 您可以使用**行動裝置清查報表**，識別在您設定條件式存取原則之後可能不允許存取 Exchange 的裝置。
 
 若要這麼做，請使用 [Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) 來設定 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 和 Exchange 之間的連線。
@@ -161,7 +163,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 ----------------------
 您可以匯出報表的內容，並使用 [電子郵件地址]  欄，通知使用者他們即將遭到封鎖。
 
-### 步驟 3：針對條件式存取原則設定使用者群組
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>步驟 3：針對條件式存取原則設定使用者群組
 條件式存取原則以不同的 Azure Active Directory 使用者安全性群組為目標。 您也可以將特定使用者群組豁免於此原則。  當使用者成為原則的目標時，他們使用的每個裝置都必須相容，才能存取電子郵件。
 
 您可以在 **Office 365 系統管理中心**或 **Intune 帳戶入口網站**中設定這些群組。
@@ -176,7 +178,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 只會評估條件式存取原則的目標群組。
 
-### 步驟 4：設定條件式存取原則
+### <a name="step-4-configure-the-conditional-access-policy"></a>步驟 4：設定條件式存取原則
 
 >[!NOTE]
 > 您也可以在 Azure AD 管理主控台中建立條件式存取原則。 除了其他條件式存取原則 (例如 Multi-Factor Authentication) 之外，Azure AD 管理主控台還可讓您建立 Intune 裝置條件式存取原則 (在 Azure AD 中稱為「裝置型條件式存取原則」)。  您也可以設定協力廠商企業應用程式 (例如，Azure AD 所支援的 Salesforce 和 Box) 的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
@@ -218,7 +220,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
   **iOS**
 
-  ![iPad 上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![iPad 上憑證提示的螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -227,7 +229,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 5.  在 [Exchange ActiveSync 應用程式] 下，您可以選擇禁止不相容的裝置存取 Exchange Online。 您也可以選擇當裝置不是執行支援的平台時允許或封鎖存取電子郵件。 支援的平台包括 Android、iOS、Windows 和 Windows Phone。
 
  Exchange Active Sync 應用程式 **Android for Work** 裝置：
- -  Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取在 Android for Work 裝置上正常運作，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將它部署為**必要**安裝。 
+ -  Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 為了讓條件式存取在 Android for Work 裝置上正常運作，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，也必須將它部署為**必要**安裝。
 
 6.  在 [目標群組] 下方，選取要套用原則之使用者的 Active Directory 安全性群組。 您可以選擇針對所有使用者或選取的使用者群組清單。
 ![Exchange Online 條件式存取原則頁面的螢幕擷取畫面，其中顯示 [目標] 和 [豁免] 群組選項](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -253,20 +255,20 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 **若要查看一些如何設定條件式存取原則以限制裝置存取的範例案例，請參閱[限制電子郵件存取範例案例](restrict-email-access-example-scenarios.md)。**
 
-## 監視相容性及條件式存取原則
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>監視相容性及條件式存取原則
 
-#### 檢視遭 Exchange 封鎖的裝置
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>檢視遭 Exchange 封鎖的裝置
 
 在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 儀表板上，選擇 [遭 Exchange 封鎖的裝置] 磚，以顯示已封鎖的裝置數目以及其他更多資訊的連結。
-![Intune 儀表板的螢幕擷取畫面，其中禁止存取 Exchange 的裝置數目](../media/IntuneSA6BlockedDevices.PNG)
+![Intune 儀表板的螢幕擷取畫面，其中顯示禁止存取 Exchange 的裝置數目](../media/IntuneSA6BlockedDevices.PNG)
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 [限制存取 SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [限制存取商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

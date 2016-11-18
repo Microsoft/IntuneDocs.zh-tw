@@ -2,8 +2,8 @@
 title: "服務描述 | Microsoft Intune"
 description: "Intune 是雲端式服務，可協助您管理 Windows 電腦及 iOS、Mac OS X、Android 及 Windows 行動裝置。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
-ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 423282fd8dd80358311373862f808cdaa58212bd
 
 
 ---
 
-# Microsoft Intune 服務描述
+# <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
 
 Microsoft Intune 是雲端式服務，可協助您管理 Windows 電腦以及 iOS、Mac OS X、Android 和 Windows 行動裝置。 Intune 也可協助保護公司應用程式和資料。 您可以單獨使用 Intune，或與 System Center Configuration Manager 整合以擴充管理功能。 
 
@@ -39,7 +39,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 如需 System Center Configuration Manager 的資訊，請參閱 [System Center Configuration Manager 文件](https://technet.microsoft.com/library/mt346023.aspx)。
 
-## 了解 Intune 服務更新對您的影響
+## <a name="understand-how-intune-service-updates-affect-you"></a>了解 Intune 服務更新對您的影響
 由於 Intune 是線上服務，因此 Microsoft 會定期更新。
 
 使用本主題中的資訊，可協助您了解這些服務更新的頻率，以及我們在更新可能影響您使用服務時提供給您的進階通知。
@@ -61,7 +61,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 -   Microsoft 在我們每月的服務更新中提供新特性、新功能，以及現有功能之增強功能的相關資訊。 Microsoft 一般會在每月的月中推出服務更新。 [Microsoft Intune 的新功能](/intune/deploy-use/whats-new-in-microsoft-intune)中會描述更新。
 -   萬一 Intune 服務停用，將提前在 12 個月之前通知您。
 
-## 選擇適合您的管理方案
+## <a name="choose-the-management-solution-thats-right-for-you"></a>選擇適合您的管理方案
 您可以透過幾種方式設定 Intune 來管理和協助保護公司的行動裝置和電腦 (在本文件中稱之為**裝置**)。
 
 -   **Intune 獨立設定。** 使用 Intune 中的 Web 式管理主控台來管理您組織中的裝置。 您可以在不含任何內部部署 IT 基礎結構的情況下使用 Intune，但是如果您使用 Intune 搭配 Active Directory 網域服務，就可以將透過網域服務來管理的網域使用者帳戶與 Intune 搭配使用。
@@ -69,14 +69,14 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 -   **Intune 搭配 System Center Configuration Manager。** 使用 Configuration Manager 管理主控台來管理您企業中的電腦和行動裝置。 此設定可協助您透過單一主控台 (Configuration Manager 管理主控台) 來管理貴組織的所有裝置。 Configuration Manager 可支援非常大量的行動裝置、伺服器及電腦。 如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。  若要更多協助以決定哪種方法最適合您，請參閱 [選擇 Microsoft Intune 獨立和混合式行動裝置管理與 Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)。 
 
 
-## 深入了解 Intune
+## <a name="learn-more-about-intune"></a>深入了解 Intune
 您可以使用這些資源來深入了解 Intune：
 
 -   [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供 Intune 的安全性、隱私權和相容性做法的相關資訊，並說明其中一些 Intune 憑證。
 
 -   [Microsoft Intune 的已註冊裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [System Center 2012 Configuration Manager 文件庫](https://technet.microsoft.com/library/gg682041.aspx)
 
@@ -84,6 +84,6 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

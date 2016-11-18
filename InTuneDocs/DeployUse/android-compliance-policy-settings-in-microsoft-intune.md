@@ -14,36 +14,36 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
 
 
 ---
 
 
-# Microsoft Intune 中的 Android 裝置的相容性原則設定
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android 裝置的相容性原則設定
 
-本主題所述的原則設定適用於執行 Android 4.0 及更新版本，或 Samsung KNOX 4.0 及更新版本的裝置。
+本主題所述的原則設定適用於執行 Android 4.0 及更新版本或 Samsung KNOX Standard 4.0 及更新版本的裝置。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [IOS 裝置的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS 裝置的的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## 系統安全性設定
-### 密碼
+## <a name="system-security-settings"></a>系統安全性設定
+### <a name="password"></a>密碼
 - **需要密碼來解除鎖定行動裝置**︰將此項目設為 [是] 時，可要求使用者必須輸入密碼才能存取其裝置。
 
 -  **密碼長度下限**：指定使用者密碼中至少必須含有的數字位數或字元數。
 
 - **密碼品質**︰此設定會偵測裝置是否已設定您所指定的密碼需求。 啟用此設定可要求使用者符合 Android 裝置的特定密碼需求。 從下列選項進行選擇：
 
-  -   **低安全性生物識別**
+  -   **低安全性摸生物特徵辨識**
   -   **必要**
   -   **至少包含數字**
+  -   **至少包含字母**
   -   **至少包含英數字元**
-  -   **[至少包含英數字元]**
-  -   **英數字元與符號**
+  -   **英數字元 (含符號)**
 
 - **在非使用狀態幾分鐘後需要輸入密碼**：指定使用者在經過多久閒置時間之後必須重新輸入密碼。
 
@@ -55,10 +55,10 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
 - **當裝置從閒置狀態返回時，需要密碼**：請搭配使用這項設定與 [在非使用狀態幾分鐘後需要輸入密碼] 設定。 如果裝置達到 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定的閒置時間，系統會提示使用者輸入密碼，才能存取該裝置。
 
-### 加密
+### <a name="encryption"></a>加密
 - **行動裝置需要加密**︰將此項目設為 [是] 時，可要求裝置必須加密才能連線到資源。 當您選擇 [需要密碼來將行動裝置解除鎖定] 的設定時，裝置會加密。
 
-## 裝置健全狀況和安全性設定
+## <a name="device-health-and-security-settings"></a>裝置健全狀況和安全性設定
 
 - **不得破解裝置或刷機**：如果您啟用這個設定，會將遭破解的裝置評估為不相容。
 - **裝置必須防止從不明來源安裝應用程式 (Android 4.0 或更新版本)**：若要封鎖已啟用 [安全性] > [不明來源] 的裝置，請啟用此設定，並將其設為 [是]。  
@@ -77,7 +77,7 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
   如需詳細資訊，請參閱[啟用相容性原則中的裝置威脅保護規則](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
-## 裝置屬性設定
+## <a name="device-property-settings"></a>裝置屬性設定
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
   您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
@@ -85,6 +85,6 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,10 +1,11 @@
 ---
 title: "建立群組來組織使用者和裝置 | Microsoft Intune"
-description: "說明如何為您的 Intune 訂閱建立使用者和群組"
+description: "為您的 Intune 訂閱建立使用者和群組"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 07a2de6922f6b3f3a2b56dfc6bbe4e5f09c7d976
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 5972910bf64274685298877da9bf4a0a6c5fd626
 
 
 ---
@@ -75,6 +76,6 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

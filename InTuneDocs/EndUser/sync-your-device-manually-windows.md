@@ -2,8 +2,8 @@
 title: "手動同步處理您的 Windows 裝置 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# 手動同步處理您的 Windows 裝置
+# <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
 如果您的應用程式安裝所花費的時間太長，您可以嘗試手動同步您的 Windows 裝置。 手動同步可能有助於加速安裝。
 
-只支援下列版本。 請使用適合您擁有之裝置類型的指示。
+只支援下列版本。 如果沒有列出您的裝置，不支援同步。 請使用適合您擁有之裝置類型的指示。
 
-* [Windows 10 Mobile](#windows-10-mobile)
+* [Windows 10 行動裝置版](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 Mobile
+## <a name="windows-10-mobile"></a>Windows 10 Mobile
 手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
 
 1. 移至 [所有應用程式] > [設定] > [帳戶]。
@@ -53,7 +53,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
     「我們正在同步您的帳戶」訊息會顯示在畫面頂端。 [同步] 按鈕會呈現灰色，直到您的裝置完成同步為止。
 
-## Windows 10 Desktop
+## <a name="windows-10-desktop"></a>Windows 10 Desktop
 有多個版本的 Windows 10，因此有兩組步驟。 若要找出要使用的步驟，請查看螢幕擷取畫面，然後依照您在裝置上看到的步驟。 
 
 1. 選擇 [啟動] 按鈕，然後選擇 [設定]。
@@ -74,7 +74,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
     ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png) 
 
-### 如果看見 [存取公司或學校資源] 時需遵循的步驟
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>如果看見 [存取公司或學校資源] 時需遵循的步驟
 
 1. 在 [帳戶] 頁面上，選擇 [存取公司或學校資源]。
 
@@ -93,7 +93,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 4. 選擇 [同步] 按鈕。 您的裝置將會使用 Intune 進行同步處理。
 
-### 如果看見 [公司存取] 時需遵循的步驟
+### <a name="steps-to-follow-if-you-see-work-access"></a>如果看見 [公司存取] 時需遵循的步驟
     
 1. 在 [帳戶] 頁面上，選擇 [公司存取]。
 
@@ -109,7 +109,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
    按鈕會變成灰色，直到同步完成為止。
 
-## Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 手動同步處理您的 Windows Phone 8.1 裝置來加速緩慢的應用程式安裝：
 
 1. 移至 [所有應用程式] > [設定] > [工作場所]。
@@ -126,10 +126,10 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
    「我們正在同步您的帳戶」訊息會顯示在畫面頂端，直到您的裝置完成同步為止。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
