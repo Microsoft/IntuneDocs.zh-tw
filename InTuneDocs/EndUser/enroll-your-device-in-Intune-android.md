@@ -2,7 +2,7 @@
 title: "在 Intune 註冊 Android 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Android 裝置的方式"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,18 +14,18 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# 在 Intune 註冊 Android 裝置
+# <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊 Android 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)。
 
-這些註冊指示適用於 Samsung Knox Android 裝置和「原生」(非 Samsung Knox) Android 裝置。 若要確認您是否擁有 Samsung Knox 裝置，請移至 [設定] &gt; [關於裝置]。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
+這些註冊指示適用於 Samsung KNOX Android 裝置和「原生」(非 Samsung Knox) Android 裝置。 若要確認您是否擁有 Samsung KNOX 裝置，請移至 [設定] &gt; [關於裝置]。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
 
 註冊之前或之後，系統可能會要求您選擇最能描述您裝置使用方式的類別。 IT 系統管理員會使用此類別來協助您查看可存取的應用程式。
 
@@ -76,7 +76,7 @@ ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
-    -   **允許公司入口網站存取您的連絡人？**
+    -   **是否允許公司入口網站存取您的連絡人？**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -110,10 +110,10 @@ ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
 嘗試安裝公司應用程式之前，請移至 [設定] &gt; [安全性]，然後開啟 [未知來源]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到下列訊息：「已封鎖安裝。 基於安全性理由，您的裝置設定成封鎖安裝從未知來源取得的應用程式。」 您可以點選錯誤對話方塊上的 [設定]，移至 [未知來源] 選項。
 
-是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
+是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

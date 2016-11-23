@@ -2,8 +2,8 @@
 title: "系統提示在您的 Android 裝置上安裝 Lookout for Work |Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# 系統提示您安裝 Lookout for Work
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>系統提示您安裝 Lookout for Work
 
 在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。
 
@@ -74,14 +74,14 @@ ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
     如果 Lookout for Work 在裝置上找到安全性威脅，您會看到如何修正問題的指示。
 
-**如果安裝不作用**
+**若安裝無法運作**
 
 有時安裝會因為您無法控制的技術問題而失敗。 如果發生這種情況，請嘗試從 Play Store 手動安裝 Lookout for Work：[https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

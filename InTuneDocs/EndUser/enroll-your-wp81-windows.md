@@ -2,7 +2,7 @@
 title: "在 Intune 註冊 Windows Phone 8.1 裝置 | Microsoft Intune"
 description: "描述在 Intune 註冊 Windows Phone 8.1 裝置的方法"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,14 +14,14 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# 在 Intune 註冊 Windows Phone 8.1 裝置
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 註冊 Windows Phone 8.1 裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
 
@@ -32,7 +32,7 @@ ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 -   [如果不允許您從 Windows Phone 存取 Windows 市集，或者如果您沒有 Microsoft 帳戶](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## 如果貴公司讓您從 Windows 市集使用公司入口網站
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>如果貴公司讓您從 Windows 市集使用公司入口網站
 在您的裝置上安裝公司入口網站應用程式：
 
 1.  點選 [開始] &gt; [存放區]。
@@ -71,7 +71,7 @@ ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
     ![已新增帳戶畫面](./media/WP81-enroll-4-account-added.png)
 
-## 如果不允許您從 Windows Phone 存取 Windows 市集，或者如果您沒有 Microsoft 帳戶
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允許您從 Windows Phone 存取 Windows 市集，或者如果您沒有 Microsoft 帳戶
 
 1.  點選 [設定] &gt; [工作場所]。
 
@@ -87,6 +87,6 @@ ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

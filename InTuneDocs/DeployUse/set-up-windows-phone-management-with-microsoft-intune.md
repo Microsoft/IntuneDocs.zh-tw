@@ -2,8 +2,7 @@
 title: "設定 Windows 10 行動裝置版和 Windows Phone 管理 | Microsoft Intune"
 description: "啟用適用於使用 Microsoft Itune 之 Windows 10 行動裝置版或 Windows Phone 裝置的行動裝置管理 (MDM)。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,14 +13,14 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0b4bf6aa6fa9d693c0458562e7fcb71fc8000bb4
-ms.openlocfilehash: 46bd457af51d3fac513cfc36af1766e1e37222cd
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: a077d5a6cd111d84cb98bfcb5e05cab0c0c4d49c
 
 
 ---
 
 
-# 使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理
+# <a name="set-up-windows-phone-and-windows-10-mobile-management-with-microsoft-intune"></a>使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理
 
 Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Windows Phone 裝置啟用註冊與管理：
 
@@ -31,8 +30,8 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## 公司入口網站應用程式註冊
-您可以讓使用者使用 Intune 公司入口網站應用程式安裝並註冊其裝置。 如果您建立 DNS CNAME 資源記錄，使用者會連線並註冊 Intune，而不需要輸入伺服器名稱。 如果您管理 Windows Phone 8.0 裝置，或需要將公司入口網站部署至 Windows Phone 裝置，您也必須下載並簽署公司入口網站應用程式。 請參閱[設定 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
+## <a name="company-portal-app-enrollment"></a>公司入口網站應用程式註冊
+您可以讓使用者使用 Intune 公司入口網站應用程式安裝並註冊其裝置。 如果您建立 DNS CNAME 資源記錄，使用者會連線並註冊 Intune，而不需要輸入伺服器名稱。
 
 1.  **設定 Intune**<br>如果尚未這麼做，請將[行動裝置管理 (MDM) 授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)設定為 **Microsoft Intune**，然後設定 MDM，為行動裝置管理做好準備。
 
@@ -45,7 +44,7 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
   `EnterpriseEnrollment-s.manage.microsoft.com` – 支援從電子郵件的網域名稱辨識網域，重新導向至 Intune 服務
 
-  `EnterpriseRegistration.windows.net` – 支援將使用工作或學校帳戶向 Azure Active Directory 註冊的 Windows 8.1 和 Windows 10 行動裝置版裝置
+  `EnterpriseRegistration.windows.net` - 支援將使用工作或學校帳戶向 Azure Active Directory 註冊的 Windows 8.1 和 Windows 10 行動裝置版裝置
 
   如果您的公司對使用者認證使用多個網域，請為每個網域建立 CNAME 記錄。
 
@@ -55,7 +54,7 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
     ![設定 Windows 的行動裝置管理對話方塊](../media/windows-phone-enrollment.png)
 
-4.  **選擇性步驟**<br>Windows 10 不需要**新增側載金鑰**步驟。 只有在您將無法在 Windows 市集使用的企業營運 (LOB) 應用程式散發到裝置時，才需要**上傳程式碼簽署憑證**步驟。 [深入了解](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
+4.  **選擇性步驟**<br>Windows 10 不需要**新增側載金鑰**步驟。 只有在您將無法在 Windows 市集使用的企業營運 (LOB) 應用程式散發到裝置時，才需要**上傳程式碼簽署憑證**步驟。
 
 5.  **通知使用者**<br>您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
     - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -65,6 +64,6 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,8 +2,8 @@
 title: "Windows 使用者如何取得其應用程式 | Microsoft Intune"
 description: "讓使用者可以使用 Windows 應用程式的方法"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -14,14 +14,14 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2cb9258ea84c50c04670e51172020ed27a5eaf
-ms.openlocfilehash: 67b0b8ef58f184329a54c8e9ca96107911d0e37a
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: ba4b0ca8a986f98b0699872b70e5f07aa074a65c
 
 
 ---
 
 
-# Windows 使用者如何取得其應用程式
+# <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -33,12 +33,12 @@ ms.openlocfilehash: 67b0b8ef58f184329a54c8e9ca96107911d0e37a
 
 **未受管理的應用程式** - 可透過原則進行管理的應用程式，以及未受 Intune 包裝或不包含 Intune MAM SDK 的應用程式。 應用程式原則不適用於這些應用程式。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)</br>
 [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

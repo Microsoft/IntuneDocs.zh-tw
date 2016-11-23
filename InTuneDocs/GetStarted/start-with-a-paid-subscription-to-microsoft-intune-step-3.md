@@ -1,10 +1,11 @@
 ---
 title: "同步處理 Active Directory 並將使用者新增至 Intune | Microsoft Intune"
-description: "說明同步內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員"
+description: "同步處理內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: fb38e2ba5ffcff202504ee1ebb934000c1f074f1
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 786aa2a665a881d13412ecc2d247a8b79a6d09f8
 
 
 ---
@@ -48,6 +49,6 @@ ms.openlocfilehash: fb38e2ba5ffcff202504ee1ebb934000c1f074f1
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

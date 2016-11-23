@@ -2,7 +2,8 @@
 title: "一般 Windows 電腦管理工作 | Microsoft Intune"
 description: "請檢閱本主題中的工作，以瞭解如何管理執行 Intune 軟體用戶端的 Windows 電腦。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 
 ---
 
-# 使用 Intune 軟體用戶端的一般 Windows 電腦管理工作
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端的一般 Windows 電腦管理工作
 請檢閱本主題中的工作，以了解如何管理執行 Intune 軟體用戶端的電腦。 如果您尚未在電腦上安裝用戶端，請參閱 [Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 
-## 使用原則來簡化電腦管理
+## <a name="use-policies-to-simplify-pc-management"></a>使用原則來簡化電腦管理
 
 您可以使用 Intune 的**電腦管理**原則來管理執行 Intune 軟體用戶端的 Windoes 電腦。
 
 ![Windows 電腦的原則範本](../media/pc_policy_template.png)
 
-### 管理 Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>管理 Microsoft Intune Center
 使用者會將 Intune 軟體用戶端視為 **Microsoft Intune Center**。 Microsoft Intune Center 可讓使用者︰
 
 -   從公司入口網站取得應用程式。
@@ -51,16 +52,16 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 |**網站 URL**|您的支援網站的 URL。<br /><br />最大長度：150 個字元|
 |**附註**|使用者看到的附註。<br /><br />最大長度：120 個字元|
 
-## 軟體更新設定
+## <a name="software-updates-settings"></a>軟體更新設定
 請使用原則來設定受管理電腦用來檢查和下載 Microsoft 和協力廠商提供之軟體更新的設定。 這些更新不包括作業系統升級 (亦即 從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 
-### Endpoint Protection 設定
+### <a name="endpoint-protection-settings"></a>Endpoint Protection 設定
 請使用原則來設定您隨後部署到受管理電腦的 Endpoint Protection 設定。 這包括掃描排程、偵測到惡意程式碼時採取的動作以及更多設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 
-## Windows 防火牆設定
+## <a name="windows-firewall-settings"></a>Windows 防火牆設定
 原則可簡化受管理電腦上的 Windows 防火牆設定管理。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
-## 檢視硬體與軟體清查
+## <a name="view-hardware-and-software-inventory"></a>檢視硬體與軟體清查
 Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列程序中的資訊，瞭解如何建立：
 
 -   列出電腦硬體功能相關資訊的報表。
@@ -69,7 +70,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 -   如何重新整理電腦清查以確保報表中的資料是最新的。
 
-### 若要顯示電腦的相關資訊
+### <a name="to-display-information-about-your-computers"></a>若要顯示電腦的相關資訊
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [報表] &gt; [電腦清查報表]。
 
@@ -79,7 +80,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
     您可以選取每個欄標題，依任何一欄排序報表，例如 [名稱]、[底座類型] 或 [製造商]。
 
-### 若要顯示電腦上安裝的軟體
+### <a name="to-display-software-installed-on-your-computers"></a>若要顯示電腦上安裝的軟體
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [報表] &gt; [軟體清查報表]。
 
@@ -89,7 +90,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
     您可以選擇每個欄標題，依任何一欄排序報表，例如 [名稱]、[發行者] 或 [類別]。 您可以選擇清單項目旁的方向箭頭，展開清單中的更新來顯示更多詳細資訊 (例如安裝軟體的電腦)。
 
-### 若要重新整理電腦清查以確保它是最新的
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>若要重新整理電腦清查以確保它是最新的
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要重新整理清查之電腦的其他群組)]。
 
@@ -102,7 +103,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
     [工作狀態]  對話方塊會顯示目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤，並提供疑難排解資訊的連結。
 
 
-## 從遠端重新啟動 Windows 電腦
+## <a name="remotely-restart-a-windows-pc"></a>從遠端重新啟動 Windows 電腦
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要重新啟動之電腦的其他群組)]。
 
@@ -112,7 +113,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
 4.  在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
 
-## 淘汰電腦
+## <a name="retire-a-computer"></a>淘汰電腦
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要淘汰之電腦的其他群組)]。
 
@@ -143,10 +144,10 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
     如果用戶端無法解除安裝，請參閱[疑難排解 Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) 以取得更多協助。
 
-## 管理使用者裝置連結
+## <a name="manage-userdevice-linking"></a>管理使用者裝置連結
 將軟體部署給使用者之前，您必須先將使用者連結到電腦。 您可以將單一使用者連結到多部電腦，但是每一部電腦只能連結到一個使用者。 使用者會自動連結到他們在 Intune 中使用公司入口網站註冊的任何電腦。
 
-### 若要將使用者連結到電腦
+### <a name="to-link-a-user-to-a-computer"></a>若要將使用者連結到電腦
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要連結至使用者之電腦的其他群組)]。
 
@@ -165,13 +166,13 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 > [!TIP]
 > 如果您想要限制使用者將自己連結到電腦的能力，請啟用 **Microsoft Intune 代理程式設定** 原則中的選項 [限制使用者將自己連結到電腦的能力]。
 
-## 對 Windows 電腦要求及提供遠端協助
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
 Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓執行 Intune 軟體用戶端的電腦使用者向您取得遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。
 這項功能會取代 Intune 中的現有 Windows 遠端協助功能。
 
 
-### 開始之前
+### <a name="before-you-start"></a>開始之前
 
 您必須先確認具有下列必要條件，再開始建立並回應遠端協助要求︰
 
@@ -179,7 +180,7 @@ Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer
 - 您想要管理的 Windows 電腦必須[由 Windows 電腦用戶端所管理](manage-windows-pcs-with-microsoft-intune.md)。
 - 可以管理 Intune 所支援的所有 Windows 電腦作業系統。
 
-### 設定 TeamViewer 連接器
+### <a name="configure-the-teamviewer-connector"></a>設定 TeamViewer 連接器
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
 2. 在 **[系統管理]** 工作區中，選擇 **[TeamViewer]**。
@@ -190,7 +191,7 @@ Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer
 7. 在 Intune 主控台中，確認 **[TeamViewer 連接器]** 項目顯示為 **[啟用]**。
 
 
-### 開啟遠端協助要求 (使用者)
+### <a name="open-a-remote-assistance-request-end-user"></a>開啟遠端協助要求 (使用者)
 
 1. 在用戶端 Windows 電腦上，開啟 **[Microsoft Intune 中心]**。
 2. 在 **[遠端協助]** 下，選擇 **[要求遠端協助]**。
@@ -198,7 +199,7 @@ Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer
 4. 使用者會看到訊息，詢問您是否可以控制他們的電腦。 他們必須接受此訊息才能繼續。
 5. 在遠端協助工作階段期間，使用者會看到顯示您已連接的視窗。 如果他們關閉這個視窗，遠端工作階段就會結束。
 
-### 回應遠端協助要求
+### <a name="respond-to-a-remote-assistance-request"></a>回應遠端協助要求
 
 1. 使用者提交遠端協助要求時，您可以在 **[警示]** 工作區的 **[監視]** > **[遠端協助]** 下進行檢視。 例如：
 > ![遠端協助要求的螢幕擷取畫面](./media/team-viewer.png)
@@ -210,12 +211,12 @@ Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer
 
 處於遠端協助工作階段時，您可以使用所有可用的 TeamViewer 命令來控制遠端電腦。 如需這些命令的說明，請從 TeamViewer 網站下載[遠端控制手冊](http://www.teamviewer.com/en/support/documents/)。
 
-### 關閉遠端協助工作階段
+### <a name="close-the-remote-assistance-session"></a>關閉遠端協助工作階段
 
 從 **[TeamViewer]** 視窗的 **[動作]** 功能表中，選擇 **[結束工作階段]**。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

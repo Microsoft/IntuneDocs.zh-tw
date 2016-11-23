@@ -1,10 +1,11 @@
 ---
 title: "註冊或登入 Intune | Microsoft Intune"
-description: "如何註冊 Intune 訂閱或如何登入 (如果您已經訂閱)"
+description: "如何註冊 Intune 訂閱或如何登入 (如果您有訂閱)"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: d3f261c7d721301084ffbaf17b1f9173940ac506
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 22eb74f040d94b7120a826b5ae80b4658c73ba3a
 
 
 ---
@@ -51,6 +52,6 @@ ms.openlocfilehash: d3f261c7d721301084ffbaf17b1f9173940ac506
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

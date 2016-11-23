@@ -2,8 +2,8 @@
 title: "從公司入口網站重設裝置 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# 從公司入口網站重設裝置
+# <a name="reset-your-device-from-the-company-portal-website"></a>從公司入口網站重設裝置
 
-如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](http://portal.manage.microsoft.com)遠端重設裝置。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
+如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](http://portal.manage.microsoft.com)遠端重設裝置。 公司入口網站是您可用來管理已在 Intune 註冊之電腦和裝置的網頁。 您可以使用此網站，來執行使用公司入口網站應用程式時可執行的大部分相同工作。
 
 如果重設裝置，公司入口網站將不再列出此裝置，裝置將重設為出廠預設值。
 
@@ -40,12 +40,12 @@ ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
 
 現在已重設您的裝置。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

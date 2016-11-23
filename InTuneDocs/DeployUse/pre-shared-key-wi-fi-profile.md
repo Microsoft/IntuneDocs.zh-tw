@@ -2,9 +2,10 @@
 title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: "使用自訂組態建立包含預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
-ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
+ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# 使用預先共用金鑰建立 Wi-Fi 設定檔
+# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔
 以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 > [!NOTE]
@@ -48,8 +49,7 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
     > [!NOTE]
 開頭務必包含點號字元。
 
-    SSID 是您要建立原則的 SSID。 例如，
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID 是您要建立原則的 SSID。 例如，`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e. **值欄位**是貼上 XML 程式碼的位置。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
 4. 選擇 [確定]，然後儲存並部署原則。
@@ -58,13 +58,13 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
     > 此原則只能部署到使用者群組。
 
 每個裝置下一次簽入時，將套用此原則，並將裝置上建立 Wi-Fi 設定檔。 裝置可以自動連線到網路。
-## Android 或 Windows Wi-Fi 設定檔
+## <a name="android-or-windows-wifi-profile"></a>Android 或 Windows Wi-Fi 設定檔
 
 Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`必須設定為 **false**，因為 **true** 可能會使裝置預期收到加密的密碼，而嘗試將它解密；這會導致連線失敗。
+> `<protected>false</protected>` 必須設定為 **false**，因為 **true** 可能會使裝置預期收到加密的密碼，而嘗試將它解密；這會導致連線失敗。
 > 
 >  `<hex>53534944</hex>` 應設定為 `<name><SSID of wifi profile></name>` 的十六進位值。
 >  Windows 10 裝置可能會傳回誤報的 *0x87D1FDE8 補救失敗*錯誤，但仍會使用設定檔進行佈建。
@@ -109,7 +109,7 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
       </MSM>
     </WLANProfile>
 
-## EAP 型 Wi-Fi 設定檔
+## <a name="eapbased-wifi-profile"></a>EAP 型 Wi-Fi 設定檔
 EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
       </MSM>
     </WLANProfile>
 
-## 從現有的 Wi-Fi 連線建立 XML 檔案
+## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>從現有的 Wi-Fi 連線建立 XML 檔案
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案：
 1. 在連線到或最近已連線到無線網路的電腦上，開啟下列資料夾 ︰C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。
 
@@ -198,7 +198,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 3.     搜尋 XML 檔案，找出名稱正確的檔案。
 4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
 
-## 部署原則
+## <a name="deploy-the-policy"></a>部署原則
 
 1.  在 [原則] 工作區中，選取您要部署的原則，然後選擇 [管理部署]。
 
@@ -210,11 +210,11 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,38 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 609d3ab2c96d9a3dff7a6bb6aa085f9cda83ba38
-ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: f1176c923e059ad085855423e95522d2e4fec76e
 
 
 ---
 
 
-# Microsoft Intune 中的 Android for Work 裝置的相容性原則設定
+# <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置的相容性原則設定
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 本主題所述的原則設定適用於 Android for Work 裝置。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
 - [Android 的相容性原則設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [IOS 裝置的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS 裝置的的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## 系統安全性設定
-### 密碼
+## <a name="system-security-settings"></a>系統安全性設定
+### <a name="password"></a>密碼
 - **需要密碼來解除鎖定行動裝置︰**將此設定為 [是]，以要求使用者在存取他們的裝置前輸入密碼。
 
 -  **密碼長度下限：**指定使用者密碼中至少必須包含的數字位數或字元數。
 
 - **密碼品質**︰此設定會偵測是否已在裝置上設定您指定的密碼需求。 啟用此設定可要求使用者設定 Android 裝置的特定密碼需求。 從下列選項進行選擇：
-  -   **低安全性生物識別**
+  -   **低安全性摸生物特徵辨識**
   - **必要**
   -   **至少包含數字**
+  -   **至少包含字母**
   -   **至少包含英數字元**
-  -   **[至少包含英數字元]**
-  -   **英數字元與符號**
+  -   **英數字元 (含符號)**
 
 - **要求密碼前的閒置分鐘數：**指定使用者必須重新輸入密碼之前的閒置時間。
 
@@ -55,10 +57,10 @@ ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
 
 - **裝置從閒置狀態恢復時必須輸入密碼：**這項設定應該與 [在非使用狀態多少分鐘後需要輸入密碼] 設定一起使用。 系統會提示終端使用者輸入密碼，以存取達到 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定的非使用中時間的裝置。
 
-### 加密
+### <a name="encryption"></a>加密
 - **行動裝置需要加密**︰您不需要進行此設定，因為 Android for Work 裝置會強制執行加密。
 
-## 裝置健全狀況和安全性設定
+## <a name="device-health-and-security-settings"></a>裝置健全狀況和安全性設定
 
 - **不得破解裝置或刷機：**如果您啟用這個設定，破解的裝置會評估為不相容。
 - **裝置必須防止從不明來源安裝應用程式**︰您不需要進行此設定，因為 Android for Work 裝置一律會限制來自不明來源的安裝。 。  
@@ -75,7 +77,7 @@ ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
 
   如需詳細資訊，請參閱[啟用相容性原則中的裝置威脅保護規則](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
-## 裝置屬性設定
+## <a name="device-property-settings"></a>裝置屬性設定
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
   會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
@@ -83,6 +85,6 @@ ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

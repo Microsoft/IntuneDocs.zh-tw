@@ -1,10 +1,11 @@
 ---
 title: "建立原則及發行應用程式 | Microsoft Intune"
-description: "說明如何為您的 Intune 訂閱建立原則及發佈範例應用程式"
+description: "為您的 Intune 訂閱建立原則及發行範例應用程式"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: da46c83d43f4ce4c5ae22b87638ad747a57b9e3f
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
 
 
 ---
@@ -109,6 +110,6 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

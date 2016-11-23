@@ -2,9 +2,10 @@
 title: "Intune 網路頻寬用量 | Microsoft Intune"
 description: "Intune 網路頻寬用量"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 6534eb7bbff2fba39e1dfa9be4ad01196156cc15
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 18007f598f4182fd90592d4aeb365b834a73fc72
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 6534eb7bbff2fba39e1dfa9be4ad01196156cc15
 請使用下列各節中的資訊，規劃 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 用戶端的網路流量。
 
 ## 平均網路流量
-下表列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。
+此表格列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。
 
 > [!NOTE]
 > 若要確保電腦和行動裝置從 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 服務接收必要的更新和內容，它們必須定期連線到網際網路。 接收更新或內容所花費的時間並不固定，但如同指導方針，應保持每天至少 1 小時持續連線到網際網路。
@@ -88,6 +89,6 @@ ms.openlocfilehash: 6534eb7bbff2fba39e1dfa9be4ad01196156cc15
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 
