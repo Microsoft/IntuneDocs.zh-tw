@@ -5,18 +5,17 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-ms.reviewer: sumitp
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 32bded5047b1a08738418e3e36382eeae1a5f3b4
-ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
-
+ms.sourcegitcommit: 07389265e2a88d45e18735bf55fbcde5260ebc54
+ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 
 ---
 
@@ -45,8 +44,8 @@ ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
 
 由於會分階段實作以 Azure Active Directory 為基礎的安全性群組，因此您必須開啟 [Intune 管理主控台](https://manage.microsoft.com)中的 [群組] 工作區來識別要使用的程序：
 
--  如果您看到 Azure 入口網站連結，則無法再使用 Intune 群組。 請遵循下列 [如何設定裝置群組對應 (Azure Active Directory 群組)](##How-to-configure-device-group-mapping-(for-Azure-Active-Directory-groups) 程序。
--  如果您看不到 Azure 入口網站連結，則仍在使用 Intune 群組。 請遵循下列 [如何設定裝置群組對應 (Intune 群組)](##How-to-configure-device-group-mapping-(for-Intune-groups) 程序。
+-  如果您看到 Azure 入口網站連結，則無法再使用 Intune 群組。 請遵循下方[如何設定 Azure Active Directory 群組的裝置群組對應](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups)程序。
+-  如果您看不到 Azure 入口網站連結，則仍在使用 Intune 群組。 請遵循下方[如何設定 Intune 群組的裝置群組對應](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups)程序。
 
 ## 如何設定 Intune 群組的裝置群組對應
 1. 對於想要使用的每個裝置類別，建立一個 Intune 裝置群組，或識別現有的群組。 如需如何建立群組的資訊，請參閱[在 Microsoft Intune 中使用群組來管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
@@ -87,6 +86,7 @@ ms.openlocfilehash: 84850f4e9136e6304e51991d6ab0a0ae2a37e7a7
 [利用 Microsoft Intune，使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO4-->
 
 

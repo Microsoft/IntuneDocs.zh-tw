@@ -1,10 +1,11 @@
 ---
 title: "啟動 Microsoft Intune 前的須知事項 | Microsoft Intune"
-description: "具有 Intune 先決條件和需求之連結的頁面"
+description: "Intune 必要條件及需求的連結"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 06/08/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: cd9c0a27a9cded6049b472a0327349a9c847ea35
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2b781bc77dc32aff726683f33bdd9d29650661ea
 
 
 ---
@@ -37,6 +38,6 @@ ms.openlocfilehash: cd9c0a27a9cded6049b472a0327349a9c847ea35
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

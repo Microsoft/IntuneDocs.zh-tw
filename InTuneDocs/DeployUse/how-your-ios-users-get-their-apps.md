@@ -2,10 +2,10 @@
 title: "iOS 使用者如何取得其應用程式 | Microsoft Intune"
 description: "讓終端使用者可以使用 iOS 應用程式的方法"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37841027c7ae040163440a19f9e163fb4eb87233
-ms.openlocfilehash: ad780fb3403f6caaee1218d785a5cad326c18df5
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
 
 
 ---
 
 
-# iOS 使用者如何取得其應用程式
+# <a name="how-your-ios-users-get-their-apps"></a>iOS 使用者如何取得其應用程式
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -35,22 +35,26 @@ ms.openlocfilehash: ad780fb3403f6caaee1218d785a5cad326c18df5
 
 Apple 限制禁止公司入口網站應用程式中列出企業營運應用程式及受管理的 App Store 應用程式。 為了解決此問題，iOS 版公司入口網站應用程式中的磚會將使用者指向單一位置 (公司入口網站) 中的不同檢視，以取得他們所有的應用程式。
 
-- [公司應用程式] 先前會指向[公司入口網站](http://portal.manage.microsoft.com) [所有] 索引標籤中所有應用程式的清單，而它會繼續以相同方式運作。 磚的名稱已變更為 [所有應用程式]。
+已註冊的使用者可在公司入口網站應用程式的 [應用程式] 畫面上點選下列磚，以取得他們的應用程式：
 
-- [其他應用程式] 先前會指向公司入口網站應用程式中的檢視，其中會列出 Apple 允許在公司入口網站應用程式中顯示的所有應用程式。 磚的名稱已變更為 [精選應用程式]，點選磚會將使用者移至公司入口網站的 [精選] 索引標籤。
+- [所有應用程式] 會指向[公司入口網站](http://portal.manage.microsoft.com) [所有] 索引標籤中所有應用程式的清單。
 
--  [類別] 先前會指向公司入口網站應用程式中列出應用程式類別的檢視。 磚的名稱並未變更，但它現在指向公司入口網站的 [類別] 索引標籤。
-您可以在 [Improvements in how iOS end users get their apps](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) (iOS 使用者取得應用程式方式的改進) 中找到更新的螢幕擷取畫面。
+- [精選應用程式] 則將使用者帶往公司入口網站的 [精選] 索引標籤。
 
+- [類別] 會指向公司入口網站的 [類別] 索引標籤。
 
+ 
+![iOS 公司入口網站應用程式畫面](./media/ios-cp-app-main-apps-screen.png)
 
-### 請參閱
+如需如何新增應用程式及將其放入這些磚的詳細資訊，請參閱[將已註冊裝置的應用程式新增至 Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)。
+
+### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)
 
 [Windows 使用者如何取得其應用程式](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

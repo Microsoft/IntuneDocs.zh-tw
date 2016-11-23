@@ -2,10 +2,10 @@
 title: "手動同步處理您的 iOS 裝置 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
-ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 ---
 
 
-# 手動同步處理您的 iOS 裝置
+# <a name="sync-your-ios-device-manually"></a>手動同步處理您的 iOS 裝置
 
-如果您的應用程式安裝花費太長的時間，請使用下列指示手動同步您的 iOS 裝置。 手動同步可能有助於加速安裝。 同步功能只適用於 iOS，不適用 Mac OS X。
+如果您的應用程式安裝所花費的時間太長，您可以嘗試手動同步您的裝置。 手動同步可能有助於加速安裝。 同步功能只適用於 iOS，不適用 Mac OS X。
 
 1. 開啟 iOS 公司入口網站應用程式。
 
@@ -38,10 +38,10 @@ ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 螢幕上會顯示旋轉圓形，直到同步處理完成。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

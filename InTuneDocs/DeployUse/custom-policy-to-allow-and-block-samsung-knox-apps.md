@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,22 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
-ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 
 
 ---
-# 使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式。
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式
 
 使用本主題中的程序，建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一項項目︰
 
 - 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
 - 裝置使用者可從 Google Play 市集安裝的應用程式清單。 只可以安裝您列出的應用程式。 無法從市集安裝其他應用程式。
 
-只有執行 Samsung KNOX 的裝置可使用這些設定。
+只有執行 Samsung KNOX Standard 的裝置可使用這些設定。
 
-## 建立允許或封鎖的應用程式清單
+## <a name="to-create-an-allowed-or-blocked-app-list"></a>建立允許或封鎖的應用程式清單
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇**原則**&gt;**設定原則**&gt;**新增**。
 2. 在 [建立新原則] 對話方塊中，展開 **Android**，選擇 [自訂設定]，然後選擇 [建立原則]。
@@ -58,7 +58,7 @@ ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 下一次，登入每個目標裝置後，就會套用應用程式設定。
 
 
-## 部署原則
+## <a name="deploy-the-policy"></a>部署原則
 
 1.  在 [原則]  工作區中，選取您要部署的原則，然後按一下 [管理部署] 。
 
@@ -67,11 +67,11 @@ ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
  
 當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
-### 請參閱
-[Microsoft Intune 中的 Android 和 Samsung KNOX 設定原則設定](android-policy-settings-in-microsoft-intune.md)
+### <a name="see-also"></a>請參閱
+[Microsoft Intune 中的 Android 和 Samsung KNOX 原則設定](android-policy-settings-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

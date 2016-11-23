@@ -2,9 +2,10 @@
 title: "Intune 快速入門指南 | Microsoft Intune"
 description: "開始使用 Intune 訂用帳戶的需求和必要條件"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 735889feb1c3234c0c063048601715a3f8aa4719
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2e385a6f1721c7b8acbc1e280b8d8c3277fa00f8
 
 
 ---
 
 
 # Intune 快速入門指南
-本快速入門指南逐步引導您設定 Microsoft Intune 的付費訂用帳戶，以快速又輕鬆地管理組織使用的行動裝置和 Windows 電腦。 您可以依序執行每個步驟。當某個步驟不適用於您的特定環境或商務需求時，您可以直接跳過該步驟。
+本快速入門指南逐步引導您設定 Microsoft Intune 的付費訂閱，以快速又輕鬆地管理組織使用的行動裝置和 Windows 電腦。 您可以依序執行每個步驟。當某個步驟不適用於您的特定環境或商務需求時，您可以直接跳過該步驟。
 
 >[!NOTE]
 >本文著重在將 Intune 設定為獨立服務。 或者，如果您目前正在使用 Microsoft System Center Configuration Manager 來管理電腦和伺服器，您可以[延伸 Configuration Manager 來管理行動裝置](https://technet.microsoft.com/library/jj884158.aspx)。 您可以透過在混合式行動裝置管理 (MDM) 部署中連接 Intune 和 Configuration Manager 來達成。
@@ -75,6 +76,6 @@ ms.openlocfilehash: 735889feb1c3234c0c063048601715a3f8aa4719
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

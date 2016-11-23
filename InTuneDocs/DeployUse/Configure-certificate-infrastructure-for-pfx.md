@@ -2,9 +2,10 @@
 title: "設定 PFX 的憑證基礎結構 | Microsoft Intune"
 description: "建立及部署 .PFX 憑證設定檔。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
 ---
-# 設定憑證基礎結構
+# <a name="configure-certificate-infrastructure"></a>設定憑證基礎結構
 本主題說明建立及部署 .PFX 憑證設定檔需要什麼。
 
 若要在組織中執行任何以憑證為基礎的驗證，您需要企業憑證授權單位。
@@ -30,7 +31,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 -  Intune Certificate Connector，其在可與憑證授權單位通訊的電腦上執行。
 
-## 內部部署基礎結構描述
+## <a name="onpremises-infrastructure-description"></a>內部部署基礎結構描述
 
 
 -    **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
@@ -50,24 +51,24 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
     如需 WAP 憑證的相關資訊，請參閱[計劃使用 Web 應用程式 Proxy 發行應用程式](https://technet.microsoft.com/library/dn383650.aspx)的**規劃憑證**小節。 如需 WAP 伺服器的一般資訊，請參閱[使用 Web 應用程式 Proxy](http://technet.microsoft.com/library/dn584113.aspx)。|
 
 
-### 憑證和範本
+### <a name="certificates-and-templates"></a>憑證和範本
 
 |物件|詳細資料|
 |----------|-----------|
 |**憑證範本**|在發行的 CA 上所設定的範本。|
-|**受信任的根 CA 憑證**|從發行 CA (或任何信任發行 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**可信任的根 CA 憑證**|從發行 CA (或任何信任發行 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 
-## 設定基礎結構
+## <a name="configure-your-infrastructure"></a>設定基礎結構
 在您設定憑證設定檔前，必須先完成下列工作。 執行這些工作需要對 Windows Server 2012 R2 及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
 
 - **工作 1** - 設定憑證授權單位上的憑證範本。
 - **工作 2** - 啟用、安裝及設定 Intune 憑證連接器。
 
-### 工作 1 - 設定憑證授權單位上的憑證範本
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>工作 1 - 設定憑證授權單位上的憑證範本
 在此工作中，您將發行憑證範本。
 
-##### 設定憑證授權單位
+##### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
 
 1.  在發行 CA 上，使用 [憑證範本] 嵌入式管理單元來建立新的自訂範本或複製並編輯現有的範本 (例如使用者範本) 以搭配 .PFX 使用。
 
@@ -75,7 +76,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
     -   指定範本的易記「範本顯示名稱」  。
 
-    -   在 [主體名稱]  索引標籤上，選取 [在要求中提供] 。 (安全性由 NDES 的 Intune 原則模組加強)。
+    -   在 [主體名稱]  索引標籤上，選取 [在要求中提供] 。 
 
     -   在 [延伸]  索引標籤上，確定 [應用程式原則描述]  包含 [用戶端驗證] 。
 
@@ -89,7 +90,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
     若要設定 CA 以允許要求者指定有效期間，請在 CA 上執行下列命令：
 
-    a.  **certutil-setreg Policy\EditFlags + EDITF_ATTRIBUTEENDDATE**
+    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
     b。  **net stop certsvc**
 
@@ -97,18 +98,18 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 3.  在發行的 CA 上使用 [憑證授權單位] 嵌入式管理單元來發行憑證範本。
 
-    a.  選取 [憑證範本] 節點，並按一下 [動作] -&gt; [新增] &gt; [要發出的憑證範本]，然後選取您在步驟 2 中建立的範本。
+    a.  選取 [憑證範本] 節點，並按一下 [動作]-&gt; [新增]&gt; [要發出的憑證範本]，然後選取您在步驟 2 中建立的範本。
 
     b。  檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
 4.  在 CA 電腦上，確認裝載 Intune 憑證連接器的電腦有註冊權限，使其能夠存取用來建立 .PFX 設定檔的範本。 在 CA 電腦內容的 [安全性]  索引標籤上設定該權限。
 
-### 工作 2 - 啟用、安裝及設定 Intune Certificate Connector
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>工作 2 - 啟用、安裝及設定 Intune Certificate Connector
 在這項工作中，您將會：
 
 下載、安裝及設定憑證連接器。
 
-##### 啟用 Certificate Connector 的支援
+##### <a name="to-enable-support-for-the-certificate-connector"></a>啟用 Certificate Connector 的支援
 
 1.  開啟 [Intune 管理主控台](https://manage.microsoft.com)，然後選擇 [管理] &gt; [憑證連接器]。
 
@@ -116,7 +117,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 3.  選取 [啟用憑證連接器]，然後選擇 [確定]。
 
-##### 下載、安裝及設定憑證連接器
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 
 1.  開啟 [Intune 管理主控台](https://manage.microsoft.com)，然後選擇 [管理] &gt; [行動裝置管理] &gt; [憑證連接器] &gt; [下載憑證連接器]。
 
@@ -135,13 +136,11 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
     > [!TIP]
     > 如果您在啟動 Certificate Connector UI 之前關閉精靈，您可以藉由執行下列命令重新加以開啟：
     >
-    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+    > **&lt;安裝路徑&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
 5.  在 **Certificate Connector** UI 中：
 
     a. 選擇 [登入] 並輸入您的 Intune 服務管理員認證，或擁有全域管理權限的租用戶管理員認證。
-
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
 
     b。 選取 [進階] 索引標籤，然後提供對您的發行憑證授權單位具有 [發行及管理憑證] 權限的帳戶認證。
 
@@ -151,15 +150,12 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 6.  開啟命令提示字元，然後鍵入 **services.msc**。 然後按 **Enter**，以滑鼠右鍵按一下 [Intune 連接器服務]，再選擇 [重新啟動]。
 
-若要驗證服務正在執行，請開啟瀏覽器並輸入下列 URL，這應傳回 **403** 錯誤：
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
-
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

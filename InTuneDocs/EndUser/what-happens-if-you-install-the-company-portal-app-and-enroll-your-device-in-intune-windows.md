@@ -2,10 +2,10 @@
 title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# 如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？
 
 當您安裝公司入口網站應用程式，然後使用其註冊 Windows 或 Windows Phone 裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護公司或學校資料的安全。 本主題說明 Windows 10 之前的裝置行為。 若為 Windows 10 裝置，請參閱[相關主題](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
 
-## 所有 Windows 裝置在註冊後會發生的事
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>所有 Windows 裝置在註冊後會發生的事
 在 Intune 註冊 Windows 或 Windows Phone 裝置可讓您：
 
 -   存取公司的網路、電子郵件與工作檔案。
@@ -41,7 +41,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   將您的裝置重設為製造商的預設設定。 這項功能對裝置遺失或失竊的情況很有幫助。
 
--   只移除公司相關的檔案及商務應用程式。 *不會移除您的個人資料和設定。*
+-   只移除公司相關的檔案及商務應用程式。 *您的個人資料及設定不會移除。*
 
 -   您的 IT 系統管理員可以查看裝置上所安裝的軟體，包括您個人安裝的軟體。
 
@@ -53,7 +53,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   防止您拍攝公司相關資料的相片。
 
-## 所有 Windows 電腦在註冊後會發生的事
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>所有 Windows 電腦在註冊後會發生的事
 
 -  軟體會安裝在您的電腦上，以便於您的 IT 系統管理員管理電腦，並讓您能夠存取公司資源 (例如應用程式及支援資訊)。 您的 IT 系統管理員可能會自動更新此軟體。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -  您的 IT 系統管理員可以在您的電腦上安裝應用程式並加以更新。
 
-## 在註冊裝置後每隔八小時會發生的事
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>在註冊裝置後每隔八小時會發生的事
 已註冊的裝置每隔大約八小時將會：
 
 -   下載您 IT 系統管理員提供的原則或應用程式更新。
@@ -72,10 +72,10 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   傳送任何公司應用程式清查更新。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

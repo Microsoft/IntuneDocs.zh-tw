@@ -14,17 +14,17 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5e41cbbf3bac3ed78ee3a6929e364f829fa1d4b
-ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
+ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
+ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
 
 
 ---
 
-# Microsoft Intune 中的 Android 行動應用程式管理原則設定
+# <a name="android-mobile-app-management-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 行動應用程式管理原則設定
 您可在 Azure 入口網站的 [設定] 刀鋒視窗上，為行動裝置應用程式管理 (MAM) 原則[設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)本主題所述的原則設定。
 原則設定分為「資料重新配置」和「存取」設定兩類。 在本主題中，「受原則管理的應用程式」一詞是指設定了 MAM 原則的應用程式。
 
-##  資料重新配置設定
+##  <a name="data-relocation-settings"></a>資料重新配置設定
 
 - **防止 Android 備份**︰選擇 [是] 即可停用，或選擇 [否] 以允許從受原則管理的應用程式備份公司資料。
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
 
   預設值 = [是]。
 
-##  存取設定
+##  <a name="access-settings"></a>存取設定
 
 - **需要 PIN 才可存取**：選擇 [是] 時，可要求必須提供 PIN 才能使用受原則管理的應用程式。 當使用者第一次在工作內容中執行應用程式時，系統會提示他們進行這項設定。
 
@@ -83,7 +83,9 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
  -  **允許簡單的 PIN**：指定是否可讓使用者使用簡單的 PIN 序號 (例如 1234 或 1111)。 預設值 = [是]。
  - **PIN 長度**：指定 PIN 的最小位數。 預設值 = **4**。
  - **重設 PIN 前的嘗試次數**：指定使用者在嘗試輸入幾次 PIN 之後就必須重設 PIN。 這項設定沒有預設值。
-- **需要公司認證以進行存取**：選擇 [是] 時，可要求必須提供公司認證 (而不是 PIN)，才能存取應用程式。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。 系統將提示使用者提供其公司認證。
+ - **需要指紋而不是 PIN (Android 6.0+)：**選擇 [是] 可對應用程式存取要求指紋識別，而不是已編號的 PIN。
+ 在 Android 裝置上，您可以允許使用者透過指紋來識別自身，而不是使用已編號的 PIN。 當使用者嘗試使用自己的工作帳戶存取這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN 碼。
+ - **需要公司認證以進行存取**：選擇 [是] 時，可對應用程式存取要求提供公司認證，而不是 PIN 或指紋。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。 系統將提示使用者提供其公司認證。
 
   預設值 = [否]。
 - **禁止受管理的應用程式在經過破解或刷機的裝置上執行**：選擇 [是] 可封鎖應用程式在經過破解或刷機的裝置上執行 。 使用者仍可繼續使用應用程式來執行個人工作，但必須針對該工作使用不同的裝置。
@@ -105,6 +107,6 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

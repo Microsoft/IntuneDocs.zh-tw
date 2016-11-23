@@ -14,23 +14,23 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 0fbc8fc23ce65987e4694bce0748362d8ce10153
+ms.sourcegitcommit: ec004a75ed45d27934cc908674a709cf5c024c8e
+ms.openlocfilehash: 9cae8dbf9d5b9cd993bd29e4eabb8bc04663bc25
 
 
 ---
 
 
-# 建立原則以及將應用程式發行給評估使用者
+# <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>建立原則以及將應用程式發行給評估使用者
 Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 如果您打算在評估期過後，將 Intune 用於實際執行所設定的裝置，請務必遵循[透過 Microsoft Intune 原則管理裝置上的設定和功能](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)中的指示。
 
-您可以使用 Intune 執行兩種類型的 App 安裝。 第一個是 **必要的安裝**，會自動將 App 部署到受管理的電腦。 另一個則是**可用的安裝**，會部署應用程式或應用程式的連結到 Intune 公司入口網站，讓使用者可以選擇是否要將其安裝在電腦上，或安裝在行動裝置上。
+您可以使用 Intune 執行兩種類型的 App 安裝。 第一種是**必要安裝**，會自動將應用程式部署到受管理的裝置。 另一個則是**可用的安裝**，會部署應用程式或應用程式的連結到 Intune 公司入口網站，讓使用者可以選擇是否要將其安裝在電腦上，或安裝在行動裝置上。
 
 使用 Intune 來部署 App 之前，請確定您有適當的授權，以發佈、散佈及使用該 App。 [授權] 工作區可讓您新增及管理透過 Microsoft 大量授權合約購買之應用程式或軟體的授權合約資訊，以及透過其他方式購買的 Microsoft 或非 Microsoft 應用程式或軟體的授權合約資訊。 然後您可以建立授權報表，顯示公司內受管理的授權使用量資訊，以便掌握授權使用活動。
 
 在這些步驟中，當註冊這些裝置之後，您將設定行動裝置組態原則和 Windows 電腦防火牆原則，以及設定 Skype 為行動裝置的可用安裝。 加入並部署新的原則之後，您部署此原則的群組之所有使用者或裝置，都會繼承此設定，當做其基準原則。 稍後從系統管理主控台中的 [原則]  工作區，您隨時可以檢閱和編輯這些原則的詳細資料。
 
-## 建立並部署行動裝置組態原則
+## <a name="create-and-deploy-a-mobile-device-configuration-policy"></a>建立並部署行動裝置組態原則
 
 1.  開啟 [Intune 管理主控台](https://manage.microsoft.com/)。
 
@@ -38,13 +38,13 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 3.  在 **[原則概觀]** 頁面的 **[工作]** 清單中，選擇 **[新增原則]**。
 
-4.  在這個原則清單中，展開您想要建立原則的平台，選取 [一般設定]，並選擇 [使用建議的設定建立及部署原則]，然後選擇 [建立原則]。
+4.  在原則清單中，展開您想要為其建立原則的平台，選取 [一般設定]，並選擇 [建立及部署自訂原則]，然後選擇 [建立原則]。
 
 5.  當提示您 [選取您要部署此原則的群組] 時，請從清單中選取 [My Trial Users] ，然後選擇 [新增] &gt; [確定]。
 
 當您的原則會出現在設定原則的清單中時，表示已經部署到 **[我的試用使用者]** 群組。 按兩下原則以檢視其設定。
 
-## 發佈適用於行動裝置的 Skype App
+## <a name="publish-the-skype-app-for-mobile-devices"></a>發佈適用於行動裝置的 Skype App
 
 1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇**應用程式**圖示，然後選擇 [應用程式] &gt; [新增應用程式]。 如果出現提示，請輸入您的 Intune 認證。
 
@@ -91,7 +91,7 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 如此就可將公司入口網站上的 Skype 應用程式安裝到行動裝置上，但首先您必須在電腦和行動裝置上安裝 Intune 軟體。
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛剛已完成 *Microsoft Intune 評估*逐步解說的步驟 4。
 
 >[!div class="step-by-step"]
@@ -100,6 +100,6 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

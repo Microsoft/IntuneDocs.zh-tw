@@ -2,29 +2,29 @@
 title: "Microsoft Intune 公司入口網站 | Microsoft Intune"
 description: "設定 Intune 公司入口網站"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
+ms.reviewer: jve, arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
+ms.sourcegitcommit: 4ae0bd214dbae7e459f52b79e388aab23b5d6e8e
+ms.openlocfilehash: bea321c455a13a11766f19de42df193cefecf05f
 
 
 ---
 
-# Microsoft Intune 公司入口網站
+# <a name="microsoft-intune-company-portal"></a>Microsoft Intune 公司入口網站
 
 設定 Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列出的其他需求。
 
-Intune 公司入口網站是一項工具，可供使用者存取公司資料和應用程式。 公司入口網站有兩種形式︰
+Intune 公司入口網站可供使用者存取公司資料和應用程式。 公司入口網站有兩種形式︰
 
 -   **公司入口網站應用程式**：可在您使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理的裝置上使用的應用程式。 深入了解 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 適用的公司入口網站應用程式。
 
@@ -54,13 +54,13 @@ Intune 公司入口網站是一項工具，可供使用者存取公司資料和�
 
 > __iOS__：適用於 iOS 的公司入口網站應用程式已發佈至 Apple iOS App Store 的[所有適用區域](https://go.microsoft.com/fwlink/?linkid=831284)。
 
-> __Android__：適用於 Android 的公司入口網站應用程式尚無法用於安地卡及巴布達、阿路巴、貝南、布吉納法索、柬埔寨、中國、古巴、衣索比亞、捷克共和國、海地、伊朗、寮國、馬利、以色列、緬甸、荷屬安地列斯、尼日、巴布亞紐幾內亞、蘇丹、多哥。 針對上述這些國家/地區，替代方案是[側載公司入口網站應用程式的 Android 版本](https://www.microsoft.com/en-us/download/details.aspx?id=49140)。  
+> __Android__：中國目前無法使用適用於 Android 的公司入口網站應用程式。 針對上述這些國家/地區，替代方案是[側載公司入口網站應用程式的 Android 版本](https://www.microsoft.com/en-us/download/details.aspx?id=49140)。  
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

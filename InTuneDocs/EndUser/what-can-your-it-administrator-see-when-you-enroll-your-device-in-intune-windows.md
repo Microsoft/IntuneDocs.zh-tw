@@ -2,7 +2,7 @@
 title: "當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？ | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
-ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 4563673f1c38cbe29e7cf27e94e8b32411c6c089
 
 
 ---
 
 
-# 當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？
+# <a name="what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune"></a>當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？
 
 當您在 Intune 註冊 Windows 裝置時，您將授與 IT 系統管理員管理您裝置的權限，以協助保護裝置上的公司資訊。
 
-**IT 看不到的內容**
+**IT 看不到的項目**
 
--   呼叫和網頁歷程記錄
+-   通話與網頁歷程記錄
 
 -   位置
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 -   手機相簿
 
-**IT 可以看到的內容**
+**IT 看得到的項目**
 
 -   型號
 
@@ -62,6 +62,6 @@ ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

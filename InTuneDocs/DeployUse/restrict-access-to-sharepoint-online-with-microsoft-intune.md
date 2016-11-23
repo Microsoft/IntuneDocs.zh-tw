@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
+ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 
 ---
@@ -68,7 +68,7 @@ ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 您可以在從 **iOS** 和 **Android** 裝置上的瀏覽器進行存取時，限制存取 SharePoint Online。  將只允許從相容裝置上支援的瀏覽器進行存取︰
 * Safari (iOS)
 * Chrome (Android)
-* 受管理的瀏覽器 (iOS 和 Android)
+* 受管理的瀏覽器 (iOS 以及 Android 5.0 和更新版本)
 
 **不支援的瀏覽器將會被封鎖**。
 
@@ -195,6 +195,6 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

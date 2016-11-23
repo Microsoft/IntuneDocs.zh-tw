@@ -2,10 +2,10 @@
 title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Android 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 ---
 
 
-# 如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Android 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Android 裝置，會發生什麼情況？
 
 當您安裝公司入口網站應用程式，並在 Intune 中註冊您的 Android 裝置時，您可以使用公司入口網站應用程式執行下列動作：
 
@@ -56,10 +56,10 @@ ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 -   傳送任何公司應用程式清查更新。 (這些更新不含任何個人資訊。)
 
-需要協助嗎？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 Microsoft Android 小組 (wintunedroidfbk@microsoft.com)。
+需要協助嗎？ 請連絡您的 IT 系統管理員 (如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com))，或傳送電子郵件給 [Microsoft Android 小組](mailto:wintunedroidfbk@microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

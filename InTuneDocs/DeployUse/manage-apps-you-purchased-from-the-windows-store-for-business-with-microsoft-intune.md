@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
+ms.sourcegitcommit: c9d127aa074e8268b27d3b1aca4f0449c24b850f
+ms.openlocfilehash: 84daa5cdcbc1442c4d83e053cd7e9420c5987f9a
 
 
 ---
 
-# 以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
+# <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
 [商務用 Windows 市集](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找和購買應用程式。 將市集連接到 Microsoft Intune，您就可以從 Intune 主控台管理大量購買的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
 * 同步處理的應用程式會出現在 Intune 管理主控台，而您可以如同任何其他應用程式一般加以部署。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
 * 如果可用授權數目不足，Intune 會禁止部署及安裝應用程式。
 
-## 開始之前
+## <a name="before-you-start"></a>開始之前
 從商務用 Windows 市集開始同步處理及部署應用程式之前，請檢閱下列資訊︰
 * 您必須將 Intune 設定為組織的行動裝置管理授權單位。 如需詳細資訊，請參閱 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)。
 * 您必須已在商務用 Windows 市集註冊帳戶。
@@ -37,7 +37,7 @@ ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 * 裝置必須已加入 Active Directory 網域服務或工作場所，才能使用這項功能。
 * 註冊的裝置必須使用 Windows 10 的 1511 版本。
 
-## 將您的商務用 Windows 市集帳戶與 Intune 相關聯
+## <a name="associate-your-windows-store-for-business-account-with-intune"></a>將您的商務用 Windows 市集帳戶與 Intune 相關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
 1. 請確定使用您用來登入 Intune 的相同租用戶帳戶來登入商務用市集。
 2. 在商務用市集中，選擇 **[設定]** > **[管理工具]**。
@@ -45,10 +45,10 @@ ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
-## 設定同步處理
+## <a name="configure-synchronization"></a>設定同步處理
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
-2. 在 **[系統管理]** 工作區中，展開 **[行動裝置管理]**，然後選擇 **[商務用市集]**。
+2. 在 [管理] 工作區中，展開 [行動裝置管理] > [Windows]，然後選擇 [商務用市集]。
 3. 在**商務用 Windows 市集**頁面上，執行下列動作︰
  * 如果您尚未這樣做，請按一下連結以註冊使用商務用 Windows 市集。
  * 一旦註冊完成，請選擇 **[設定同步處理]**。
@@ -56,12 +56,12 @@ ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 5. 從 [語言] 下拉式清單中，選擇來自商務用 Windows 市集的應用程式將會在 Intune 主控台中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
 6. 按一下 [ **確定**]。
 
-## 同步處理應用程式
+## <a name="synchronize-apps"></a>同步處理應用程式
 
 1. 在 **[商務用 Windows 市集]** 頁面上，選擇 **[立即同步]** 來同步處理您使用 Intune 從市集購買的應用程式。
-2. 在 **[應用程式]** 工作區中，選擇 **[受管理的軟體]** > **[授權軟體]** 來檢視可用的應用程式，並確認已正確匯入您所購買的應用程式。 此節點中的應用程式會顯示，並加上您所擁有的授權總數，以及您可以使用的授權數目。
+2. 在 [應用程式] 工作區中，選擇 [應用程式] > [大量採購應用程式] 來檢視可用的應用程式，並確認已正確匯入您所購買的應用程式。 此節點中的應用程式會顯示，並加上您所擁有的授權總數，以及您可以使用的授權數目。
 
-## 部署 App
+## <a name="deploy-apps"></a>部署 App
 
 您可以使用與部署任何其他 Intune 應用程式的相同方式，部署來自市集的應用程式。 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
 當您部署商務用 Windows 市集應用程式時，安裝應用程式的每個使用者會耗用一個授權。 如果您對某個已部署的應用程式使用所有可用的授權，將無法再部署任何複本。 您必須採取下列其中一個動作：
@@ -73,11 +73,11 @@ ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 > 只有原先註冊裝置的使用者可使用已部署的應用程式。 其他使用者都不能存取應用程式。
 
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

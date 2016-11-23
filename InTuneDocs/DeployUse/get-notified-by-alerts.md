@@ -2,9 +2,10 @@
 title: "取得警示通知 | Microsoft Intune"
 description: "了解警示如何讓您隨時掌握 Microsoft Intune 的狀況。"
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
-ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 44b496aecd62d515512f10d2aae97f2c7a06dc6a
 
 
 ---
 
-# 取得 Microsoft Intune 警示通知
+# <a name="get-notified-by-microsoft-intune-alerts"></a>取得 Microsoft Intune 警示通知
 警示可讓您掌握 Microsoft Intune 的狀況。
 
 例如，警示可以通知您關於下列事件的資訊：
@@ -31,7 +32,7 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 -   偵測到兩個 Intune 原則相衝突
 
 
-## 警示的運作方式
+## <a name="how-alerts-work"></a>警示的運作方式
 警示的產生是依據**警示類型**，這是一組內建於 Intune 的預先設定規則。 例如，當您在雲端儲存應用程式而即將用盡空間時，**雲端存放裝置具有 10% (或低於) 的可用空間**的警示類型就會警示您。 您可以啟用或停用警示類型，並設定每個警示類型的內容。 例如，您可以使用上述警示類型，設定下列項目：
 
 -   **狀態：** 此警示類型為啟用或停用
@@ -51,7 +52,7 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 
 此外，您可以設定 Intune，在警示產生時以電子郵件通知您。
 
-## 設定警示
+## <a name="set-up-alerts"></a>設定警示
 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [系統管理員] &gt; [警示和通知]，然後選擇下列工作之一：
 
 |工作|說明|
@@ -60,10 +61,10 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 |**收件者**|選擇 [新增]，即可新增電子郵件地址，以便接收您設定的電子郵件通知。<br /><br />您也可以 **編輯** 或 **刪除** 現有收件者。<br /><br />若要接收通知，您也必須在 [通知規則] 下新增此電子郵件地址作為收件者。|
 |**通知規則**|設定規則以定義電子郵件警示的收件者。 您可以執行以下任一動作：<br /><br />**選擇現有規則** - 選擇規則，然後選擇 [選擇收件者]。 接著再選取當符合此規則的警示產生時，要接收電子郵件的所有收件者。<br /><br />**建立新規則** - 輸入規則的名稱、選取套用至規則的警示類別和警示嚴重性、選取套用規則的裝置群組，以及選取要在產生警示時收到電子郵件的使用者。<br /><br />您也可以 **啟用**、 **停用**、 **編輯**，或 **刪除** 現有規則。|
 
-## 使用警示
+## <a name="working-with-alerts"></a>使用警示
 使用下列選項協助您處理 Intune 管理主控台的警示。
 
-|選項|說明|
+|選項|描述|
 |----------|---------------|
 |**檢視作用中警示**|選擇其中一個：<br /><br />**檢視警示摘要** - 主要錯誤會顯示於 [儀表板] 工作區的 [警示] 窗格中。 選擇此窗格，以查看更多詳細資訊。<br /><br />此外，您可以在 [警示]  工作區的 [概觀]  頁面上檢視警示摘要 。<br /><br />**檢視所有警示** - 在 **[警示]** 工作區中，選擇 **[所有警示]**。|
 |**檢視通知**|選擇其中一個：<br /><br />在 **[儀表板]** 工作區中，選擇 **[通知]**。<br /><br />在 **[警示]** 工作區中，選擇 **[所有警示]** &gt; **[通知]**。|
@@ -80,11 +81,11 @@ Intune 警示會保持作用中狀態，直到發生以下狀況：
 > [!TIP]
 > 如果執行不同作業系統的裝置產生一樣的警示，您可能會在警示清單中看到多個版本的相同警示。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Microsoft Intune 的監視與報表](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,9 +2,10 @@
 title: "系統管理帳戶、網站和權限 | Microsoft Intune"
 description: "系統管理帳戶權限網站"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 017de4d0cc65c00129a45f140eebea11a61154af
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 69b19cec363c769209dab02a941f286057e9dc3e
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 017de4d0cc65c00129a45f140eebea11a61154af
 
 ## 系統管理員帳戶和具有特殊權限的使用者帳戶
 
-以下是將使用於 Intune 的帳戶和權限。
+以下是您會在 Intune 中使用的帳戶及權限。
 
 ### 租用戶系統管理員
 |權限層級|詳細資訊|
@@ -94,6 +95,6 @@ ms.openlocfilehash: 017de4d0cc65c00129a45f140eebea11a61154af
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,8 +2,8 @@
 title: "條款和條件原則設定 | Microsoft Intune"
 description: "您可以將 Intune 條款和條件部署到使用者群組，以說明註冊、對工作資源的存取，以及使用公司入口網站應用程式，如何影響裝置和使用者。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Microsoft Intune 的條款和條件原則設定
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的條款和條件原則設定
 您可以將 Intune 條款和條件部署到使用者群組，以說明註冊、對工作資源的存取以及公司入口網站應用程式如何影響裝置和使用者。 使用者必須先接受這些條款和條件，才可使用公司入口網站來註冊及存取其工作。
 
 您可以建立及部署多個包含不同條款和條件的原則。 您也可以產生相同條款和條件的不同語言版本，再將這些版本部署到適當的群組。
 
-## 建立條款和條件原則
+## <a name="create-a-terms-and-conditions-policy"></a>建立條款和條件原則
 
 1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
 4.  完成後，請按一下 [儲存]。 新原則會隨即顯示在 [原則] 工作區的 [條款和條件] 節點中。
 
-## 部署條款和條件原則
+## <a name="deploy-a-terms-and-conditions-policy"></a>部署條款和條件原則
 
 1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
@@ -57,16 +57,16 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
     當目標使用者存取公司入口網站時，Intune 會顯示您所部署的條款和條件。 使用者必須接受這些條款，才能存取公司資源。
 
-## 監視條款和條件原則
+## <a name="monitor-a-terms-and-conditions-policy"></a>監視條款和條件原則
 
 1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
 2.  在 [建立新報表] 視窗中，按一下 [檢視報表]。 報表會隨即開啟，並詳細列出哪些使用者已接受您所部署的條款和條件。
 
-### 更新條款和條件並進行版本控制
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>更新條款和條件並進行版本控制
 當您編輯現有的條款和條件原則時，您可以選擇部署原則時的行為。 請使用下列程序來協助您更新現有的條款和條件原則。
 
-## 使用多個版本的條款和條件
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用多個版本的條款和條件
 
 1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
@@ -76,11 +76,11 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
     建議您在大幅變更條款和條件原則時，增加版本號碼並要求接受。 如果您想要修正錯字或變更格式，請保留目前的版本號碼。
 
-### 請參閱
-[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>請參閱
+[使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
