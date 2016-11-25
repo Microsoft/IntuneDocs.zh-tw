@@ -15,171 +15,171 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: 
 translationtype: Human Translation
-ms.sourcegitcommit: af405a0d5437fceb752c3aa8e31fbd02fd8a2232
-ms.openlocfilehash: a8f24c92443a3063463292e690b034440a837705
+ms.sourcegitcommit: dd510ff917417507fa0d5c748ce32043ff435bd4
+ms.openlocfilehash: 6548e7d6e0e7d6d323ac7b3698987706ab3cac69
 
 
 ---
-# <a name="collected-enduser-content-links"></a>收集的終端使用者內容連結
+# <a name="collected-end-user-content-links"></a>收集的終端使用者內容連結
 
 ## <a name="company-portal"></a>公司入口網站
-### <a name="company-portal-app-not-supportedcompanyportalappnotsupportedmd"></a>[不支援公司入口網站應用程式](company-portal-app-not-supported.md)
-### <a name="company-portal-faqscompanyportalfrequentlyaskedquestionsmd"></a>[公司入口網站常見問題集](company-portal-frequently-asked-questions.md)
+### <a name="company-portal-app-not-supportedcompany-portal-app-not-supportedmd"></a>[不支援公司入口網站應用程式](company-portal-app-not-supported.md)
+### <a name="company-portal-faqscompany-portal-frequently-asked-questionsmd"></a>[公司入口網站常見問題集](company-portal-frequently-asked-questions.md)
 
 ## <a name="android-work-profile"></a>Android 工作設定檔
-### <a name="create-a-work-profile-and-enroll-your-device-in-intune-androidcreateaworkprofileandenrollyourdeviceinintuneandroidmd"></a>[建立工作設定檔並在 Intune 註冊您的裝置 | Android](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### <a name="create-a-work-profile-and-enroll-your-device-in-intune-androidcreate-a-work-profile-and-enroll-your-device-in-intune-androidmd"></a>[建立工作設定檔並在 Intune 註冊您的裝置 | Android](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 
 ## <a name="device-doesnt-comply"></a>裝置不符合
-### <a name="with-maximum-os-version-androiddevicedoesntcomplywithmaximumoperatingsystemversionandroidmd"></a>[最高 OS 版本 | Android](device-doesnt-comply-with-maximum-operating-system-version-android.md)
-### <a name="with-maximum-os-version-windowsdevicedoesntcomplywithmaximumoperatingsystemversionwindowsmd"></a>[最高 OS 版本 | Windows](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-### <a name="with-maximum-os-version-iosdevicedoesntcomplywiththemaximumoperatingsystemversioniosmd"></a>[最高 OS 版本 | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+### <a name="with-maximum-os-version-androiddevice-doesnt-comply-with-maximum-operating-system-version-androidmd"></a>[最高 OS 版本 | Android](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+### <a name="with-maximum-os-version-windowsdevice-doesnt-comply-with-maximum-operating-system-version-windowsmd"></a>[最高 OS 版本 | Windows](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
+### <a name="with-maximum-os-version-iosdevice-doesnt-comply-with-the-maximum-operating-system-version-iosmd"></a>[最高 OS 版本 | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
 
 ## <a name="device-doesnt-have"></a>裝置沒有
-### <a name="bitlocker-windowsdevicedoesnthavebitlockerenabledwindowsmd"></a>[Bitlocker | Windows](device-doesnt-have-bitlocker-enabled-windows.md)
-### <a name="code-integrity-windowsdevicedoesnthavecodeintegrityenabledwindowsmd"></a>[程式碼完整性 | Windows](device-doesnt-have-code-integrity-enabled-windows.md)
-### <a name="secure-boot-windowsdevicedoesnthavesecurebootenabledwindowsmd"></a>[安全開機 | Windows](device-doesnt-have-secure-boot-enabled-windows.md)
-### <a name="minimum-required-os-androiddevicedoesnthavetherequiredminimumoperatingsystemversionandroid"></a>[最低必要 OS | Android](device-doesnt-have-the-required-minimum-operating-system-version-android)
-### <a name="minimum-required-os-iosdevicedoesnthavetherequiredminimumoperatingsystemversionios"></a>[最低必要 OS | iOS](device-doesnt-have-the-required-minimum-operating-system-version-ios)
-### <a name="minimum-required-os-windowsdevicedoesnthavetherequiredminimumoperatingsystemversionwindows"></a>[最低必要 OS | Windows](device-doesnt-have-the-required-minimum-operating-system-version-windows)
+### <a name="bitlocker-windowsdevice-doesnt-have-bitlocker-enabled-windowsmd"></a>[Bitlocker | Windows](device-doesnt-have-bitlocker-enabled-windows.md)
+### <a name="code-integrity-windowsdevice-doesnt-have-code-integrity-enabled-windowsmd"></a>[程式碼完整性 | Windows](device-doesnt-have-code-integrity-enabled-windows.md)
+### <a name="secure-boot-windowsdevice-doesnt-have-secure-boot-enabled-windowsmd"></a>[安全開機 | Windows](device-doesnt-have-secure-boot-enabled-windows.md)
+### <a name="minimum-required-os-androiddevice-doesnt-have-the-required-minimum-operating-system-version-androidmd"></a>[最低必要 OS | Android](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
+### <a name="minimum-required-os-iosdevice-doesnt-have-the-required-minimum-operating-system-version-iosmd"></a>[最低必要 OS | iOS](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
+### <a name="minimum-required-os-windowsdevice-doesnt-have-the-required-minimum-operating-system-version-windowsmd"></a>[最低必要 OS | Windows](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 
 ## <a name="encrypt-your-device"></a>加密您的裝置
-### <a name="androidencryptyourdeviceandroid"></a>[Android](encrypt-your-device-android)
-### <a name="windowsencryptyourdevicewindows"></a>[Windows](encrypt-your-device-windows)
+### <a name="androidencrypt-your-device-androidmd"></a>[Android](encrypt-your-device-android.md)
+### <a name="windowsencrypt-your-device-windowsmd"></a>[Windows](encrypt-your-device-windows.md)
 
 ## <a name="enroll-your-device"></a>註冊您的裝置
-### <a name="allenrollyourdeviceinintuneall"></a>[全部](enroll-your-device-in-intune-all)
-### <a name="windowsenrollyourdeviceinintunewindows"></a>[Windows](enroll-your-device-in-intune-windows)
-### <a name="androidenrollyourdeviceinintuneandroid"></a>[Android](enroll-your-device-in-intune-android)
-### <a name="iosenrollyourdeviceinintuneios"></a>[iOS](enroll-your-device-in-intune-ios)
-### <a name="os-xenrollyourdeviceinintunemacosx"></a>[OS X](enroll-your-device-in-intune-mac-os-x)
-### <a name="win10-phone-or-pcenrollyourw10phoneorw10pcwindows"></a>[Win10：手機或電腦](enroll-your-w10-phone-or-w10-pc-windows)
-### <a name="win81rt81enrollyourw81orrt81windows"></a>[Win8.1/RT8.1](enroll-your-w81-or-rt81-windows)
-### <a name="winphone-81enrollyourwp81windows"></a>[WinPhone 8.1](enroll-your-wp81-windows)
+### <a name="allenroll-your-device-in-intune-allmd"></a>[全部](enroll-your-device-in-intune-all.md)
+### <a name="windowsenroll-your-device-in-intune-windowsmd"></a>[Windows](enroll-your-device-in-intune-windows.md)
+### <a name="androidenroll-your-device-in-intune-androidmd"></a>[Android](enroll-your-device-in-intune-android.md)
+### <a name="iosenroll-your-device-in-intune-iosmd"></a>[iOS](enroll-your-device-in-intune-ios.md)
+### <a name="os-xenroll-your-device-in-intune-mac-os-xmd"></a>[OS X](enroll-your-device-in-intune-mac-os-x.md)
+### <a name="win10-phone-or-pcenroll-your-w10-phone-or-w10-pc-windowsmd"></a>[Win10：手機或電腦](enroll-your-w10-phone-or-w10-pc-windows.md)
+### <a name="win81rt81enroll-your-w81-or-rt81-windowsmd"></a>[Win8.1/RT8.1](enroll-your-w81-or-rt81-windows.md)
+### <a name="winphone-81enroll-your-wp81-windowsmd"></a>[WinPhone 8.1](enroll-your-wp81-windows.md)
 
 ## <a name="error"></a>錯誤
-### <a name="evaluating-deviceerrorevaluatingdevice"></a>[評估裝置](error-evaluating-device)
+### <a name="evaluating-deviceerror-evaluating-devicemd"></a>[評估裝置](error-evaluating-device.md)
 
 ## <a name="existing-email"></a>現有的電子郵件
-### <a name="email-foundexistingcompanyemailaccountfound"></a>[找到的電子郵件](existing-company-email-account-found)
+### <a name="email-foundexisting-company-email-account-foundmd"></a>[找到的電子郵件](existing-company-email-account-found.md)
 
 ## <a name="how-to-do-i"></a>如何
-### <a name="find-the-serial-number-on-my-device-ioshowdoifindtheserialnumberonmydeviceios"></a>[在我的裝置上尋找序號 | iOS](how-do-i-find-the-serial-number-on-my-device-ios)
-### <a name="encrypt-your-windows-devicehowtoencryptyourwindowsdevice"></a>[為您的 Windows 裝置加密](how-to-encrypt-your-windows-device)
-### <a name="reconnect-a-compromised-android-devicehowtoreconnectacompromisedandroiddevice"></a>[重新連接遭盜用的 Android 裝置](how-to-reconnect-a-compromised-android-device)
-### <a name="reconnect-a-compromised-ios-devicehowtoreconnectacompromisediosdevice"></a>[重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device)
-### <a name="set-the-period-before-your-android-is-lockedhowtosettheperiodbeforeyourandroiddeviceislocked"></a>[設定 Android 鎖定前的時間長度](how-to-set-the-period-before-your-android-device-is-locked)
+### <a name="find-the-serial-number-on-my-device-ioshow-do-i-find-the-serial-number-on-my-device-iosmd"></a>[在我的裝置上尋找序號 | iOS](how-do-i-find-the-serial-number-on-my-device-ios.md)
+### <a name="encrypt-your-windows-devicehow-to-encrypt-your-windows-devicemd"></a>[為您的 Windows 裝置加密](how-to-encrypt-your-windows-device.md)
+### <a name="reconnect-a-compromised-android-devicehow-to-reconnect-a-compromised-android-devicemd"></a>[重新連接遭盜用的 Android 裝置](how-to-reconnect-a-compromised-android-device.md)
+### <a name="reconnect-a-compromised-ios-devicehow-to-reconnect-a-compromised-ios-devicemd"></a>[重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
+### <a name="set-the-period-before-your-android-is-lockedhow-to-set-the-period-before-your-android-device-is-lockedmd"></a>[設定 Android 鎖定前的時間長度](how-to-set-the-period-before-your-android-device-is-locked.md)
 
 ## <a name="install"></a>安裝
-### <a name="a-new-version-of-the-company-portal-appinstallanewversionofthecompanyportalapp"></a>[新版公司入口網站應用程式](install-a-new-version-of-the-company-portal-app)
-### <a name="and-sign-in-to-the-company-portal-app-iosinstallandsignintotheintunecompanyportalappios"></a>[並登入公司入口網站應用程式 | iOS](install-and-sign-in-to-the-intune-company-portal-app-ios)
-### <a name="androidinstallthemicrosoftintunecompanyportalappandroid"></a>[Android](install-the-microsoft-intune-company-portal-app-android)
-### <a name="vpn-androidinstallyourcompanysvirtualprivatenetworkvpnandroid"></a>[VPN | Android](install-your-companys-virtual-private-network-VPN-android)
+### <a name="a-new-version-of-the-company-portal-appinstall-a-new-version-of-the-company-portal-appmd"></a>[新版公司入口網站應用程式](install-a-new-version-of-the-company-portal-app.md)
+### <a name="and-sign-in-to-the-company-portal-app-iosinstall-and-sign-in-to-the-intune-company-portal-app-iosmd"></a>[並登入公司入口網站應用程式 | iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### <a name="androidinstall-the-microsoft-intune-company-portal-app-androidmd"></a>[Android](install-the-microsoft-intune-company-portal-app-android.md)
+### <a name="vpn-androidinstall-your-companys-virtual-private-network-vpn-androidmd"></a>[VPN | Android](install-your-companys-virtual-private-network-VPN-android.md)
 
 ## <a name="password"></a>密碼
-### <a name="does-not-meet-admin-requirementspassworddoesnotmeetitadministratorrequirements"></a>[不符合管理員需求](password-does-not-meet-it-administrator-requirements)
+### <a name="does-not-meet-admin-requirementspassword-does-not-meet-it-administrator-requirementsmd"></a>[不符合管理員需求](password-does-not-meet-it-administrator-requirements.md)
 
 ## <a name="remote-lock"></a>遠端鎖定
-### <a name="company-portal-websiteremotelockyourdevicecpwebsite"></a>[公司入口網站](remote-lock-your-device-cpwebsite)
+### <a name="company-portal-websiteremote-lock-your-device-cpwebsitemd"></a>[公司入口網站](remote-lock-your-device-cpwebsite.md)
 
 ## <a name="remove"></a>移除
-### <a name="your-device-websiteremoveyourdevicecpwebsite"></a>[您的裝置 | 網站](remove-your-device-cpwebsite)
+### <a name="your-device-websiteremove-your-device-cpwebsitemd"></a>[您的裝置 | 網站](remove-your-device-cpwebsite.md)
 
 ## <a name="rename"></a>重新命名
-### <a name="your-device-websiterenameyourdevicecpwebsite"></a>[您的裝置 | 網站](rename-your-device-cpwebsite)
+### <a name="your-device-websiterename-your-device-cpwebsitemd"></a>[您的裝置 | 網站](rename-your-device-cpwebsite.md)
 
 ## <a name="reseterase"></a>重設/清除
-### <a name="androidreseteraseyourlostorstolendeviceandroid"></a>[Android](reset-erase-your-lost-or-stolen-device-android)
-### <a name="iosreseteraseyourlostorstolendeviceios"></a>[iOS](reset-erase-your-lost-or-stolen-device-ios)
-### <a name="windowsreseteraseyourlostorstolendevicewindows"></a>[Windows](reset-erase-your-lost-or-stolen-device-windows)
-### <a name="websiteresetyourdevicecpwebsite"></a>[網站](reset-your-device-cpwebsite)
+### <a name="androidreset-erase-your-lost-or-stolen-device-androidmd"></a>[Android](reset-erase-your-lost-or-stolen-device-android.md)
+### <a name="iosreset-erase-your-lost-or-stolen-device-iosmd"></a>[iOS](reset-erase-your-lost-or-stolen-device-ios.md)
+### <a name="windowsreset-erase-your-lost-or-stolen-device-windowsmd"></a>[Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+### <a name="websitereset-your-device-cpwebsitemd"></a>[網站](reset-your-device-cpwebsite.md)
 
 ## <a name="reset-passcode"></a>重設密碼
-### <a name="websiteresetyourpasscodecpwebsite"></a>[網站](reset-your-passcode-cpwebsite)
+### <a name="websitereset-your-passcode-cpwebsitemd"></a>[網站](reset-your-passcode-cpwebsite.md)
 
 ## <a name="send-diags-and-errors-to-your-admin"></a>將診斷與錯誤傳送給管理員
-### <a name="diags-on-android-wusbsenddiagnosticdatalogstoyouritadministratorusingausbcableandroid"></a>[使用 USB 的 Android 診斷](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-### <a name="diags-on-email-on-androidsenddiagnosticdatalogstoyouritadministratorusingemailandroid"></a>[電子郵件上的 Android 診斷](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-### <a name="enrollment-errors-androidsendenrollmenterrorstoyouritadministratorandroid"></a>[註冊錯誤 | Android](send-enrollment-errors-to-your-it-administrator-android)
-### <a name="enrollment-errors-iossenderrorstoyouritadminios"></a>[註冊錯誤 | iOS](send-errors-to-your-it-admin-ios)
+### <a name="diags-on-android-wusbsend-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-androidmd"></a>[使用 USB 的 Android 診斷](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+### <a name="diags-on-email-on-androidsend-diagnostic-data-logs-to-your-it-administrator-using-email-androidmd"></a>[電子郵件上的 Android 診斷](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
+### <a name="enrollment-errors-androidsend-enrollment-errors-to-your-it-administrator-androidmd"></a>[註冊錯誤 | Android](send-enrollment-errors-to-your-it-administrator-android.md)
+### <a name="enrollment-errors-iossend-errors-to-your-it-admin-iosmd"></a>[註冊錯誤 | iOS](send-errors-to-your-it-admin-ios.md)
 
 ## <a name="set"></a>設定
-### <a name="passcode-iossetorchangeyourpasscodeios"></a>[密碼 | iOS](set-or-change-your-passcode-ios)
-### <a name="password-windowssetorchangeyourpasswordwindows"></a>[密碼 | Windows](set-or-change-your-password-windows)
-### <a name="time-before-device-lockout-androidsettheamountoftimebeforeyourdeviceislockedandroid"></a>[裝置鎖定前的時間 | Android](set-the-amount-of-time-before-your-device-is-locked-android)
-### <a name="pinpassword-androidsetyourpinorpasswordandroid"></a>[PIN/密碼 | Android](set-your-pin-or-password-android)
+### <a name="passcode-iosset-or-change-your-passcode-iosmd"></a>[密碼 | iOS](set-or-change-your-passcode-ios.md)
+### <a name="password-windowsset-or-change-your-password-windowsmd"></a>[密碼 | Windows](set-or-change-your-password-windows.md)
+### <a name="time-before-device-lockout-androidset-the-amount-of-time-before-your-device-is-locked-androidmd"></a>[裝置鎖定前的時間 | Android](set-the-amount-of-time-before-your-device-is-locked-android.md)
+### <a name="pinpassword-androidset-your-pin-or-password-androidmd"></a>[PIN/密碼 | Android](set-your-pin-or-password-android.md)
 
 ## <a name="sync-your-device-manually"></a>手動同步處理您的裝置
-### <a name="websitesyncyourdevicemanuallycpwebsite"></a>[網站](sync-your-device-manually-cpwebsite)
-### <a name="iossyncyourdevicemanuallyios"></a>[iOS](sync-your-device-manually-ios)
-### <a name="windowssyncyourdevicemanuallywindows"></a>[Windows](sync-your-device-manually-windows)
+### <a name="websitesync-your-device-manually-cpwebsitemd"></a>[網站](sync-your-device-manually-cpwebsite.md)
+### <a name="iossync-your-device-manually-iosmd"></a>[iOS](sync-your-device-manually-ios.md)
+### <a name="windowssync-your-device-manually-windowsmd"></a>[Windows](sync-your-device-manually-windows.md)
 
 ## <a name="troubleshoot"></a>疑難排解
-### <a name="win10troubleshootyourwindows10devicewindows"></a>[Win10](Troubleshoot-your-windows-10-device-windows)
+### <a name="win10troubleshoot-your-windows-10-device-windowsmd"></a>[Win10](Troubleshoot-your-windows-10-device-windows.md)
 
 ## <a name="turn-off-data-collection"></a>關閉資料收集
-### <a name="androidturnoffmicrosoftusagedatacollectionandroid"></a>[Android](turn-off-microsoft-usage-data-collection-android)
-### <a name="windowsturnoffmicrosoftusagedatacollectionwindows"></a>[Windows](turn-off-microsoft-usage-data-collection-windows)
-### <a name="iosturnoffmicrosoftusagedatacollectionios"></a>[iOS](turn-off-microsoft-usage-data-collection-ios)
+### <a name="androidturn-off-microsoft-usage-data-collection-androidmd"></a>[Android](turn-off-microsoft-usage-data-collection-android.md)
+### <a name="windowsturn-off-microsoft-usage-data-collection-windowsmd"></a>[Windows](turn-off-microsoft-usage-data-collection-windows.md)
+### <a name="iosturn-off-microsoft-usage-data-collection-iosmd"></a>[iOS](turn-off-microsoft-usage-data-collection-ios.md)
 
 ## <a name="unenroll"></a>取消註冊
-### <a name="androidunenrollyourdevicefromintuneandroid"></a>[Android](unenroll-your-device-from-intune-android)
-### <a name="declined-terms-of-use-androidunenrollyourdevicefromintuneifyoudeclinedtermsofuseandroid"></a>[拒絕使用條款 | Android](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
-### <a name="iosunenrollyourdevicefromintuneios"></a>[iOS](unenroll-your-device-from-intune-ios)
-### <a name="windowsunenrollyourdevicefromintunewindows"></a>[Windows](unenroll-your-device-from-intune-windows)
+### <a name="androidunenroll-your-device-from-intune-androidmd"></a>[Android](unenroll-your-device-from-intune-android.md)
+### <a name="declined-terms-of-use-androidunenroll-your-device-from-intune-if-you-declined-terms-of-use-androidmd"></a>[拒絕使用條款 | Android](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+### <a name="iosunenroll-your-device-from-intune-iosmd"></a>[iOS](unenroll-your-device-from-intune-ios.md)
+### <a name="windowsunenroll-your-device-from-intune-windowsmd"></a>[Windows](unenroll-your-device-from-intune-windows.md)
 
 ## <a name="use-using"></a>使用
-### <a name="managed-apps-androidusemanagedappsonyourdeviceandroid"></a>[受管理的應用程式 | Android](use-managed-apps-on-your-device-android)
-### <a name="managed-apps-iosusemanagedappsonyourdeviceios"></a>[受管理的應用程式 | iOS](use-managed-apps-on-your-device-ios)
-### <a name="verbose-logging-androiduseverboseloggingtohelpyouritadministratorfixdeviceissuesandroid"></a>[詳細資訊記錄 | Android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
-### <a name="intune-company-portal-websiteusingtheintunecompanyportalwebsite"></a>[Intune 公司入口網站](using-the-intune-company-portal-website)
-### <a name="device-with-intune-androidusingyourandroiddevicewithintune"></a>[裝置搭配 Intune | Android](using-your-android-device-with-intune)
-### <a name="device-with-intune-iosos-xusingyouriosormacosxdevicewithintune"></a>[裝置搭配 Intune | iOS/OS X](using-your-ios-or-mac-os-x-device-with-intune)
-### <a name="device-with-intune-windowsusingyourwindowsdevicewithintune"></a>[裝置搭配 Intune | Windows](using-your-windows-device-with-intune)
+### <a name="managed-apps-androiduse-managed-apps-on-your-device-androidmd"></a>[受管理的應用程式 | Android](use-managed-apps-on-your-device-android.md)
+### <a name="managed-apps-iosuse-managed-apps-on-your-device-iosmd"></a>[受管理的應用程式 | iOS](use-managed-apps-on-your-device-ios.md)
+### <a name="verbose-logging-androiduse-verbose-logging-to-help-your-it-administrator-fix-device-issues-androidmd"></a>[詳細資訊記錄 | Android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+### <a name="intune-company-portal-websiteusing-the-intune-company-portal-websitemd"></a>[Intune 公司入口網站](using-the-intune-company-portal-website.md)
+### <a name="device-with-intune-androidusing-your-android-device-with-intunemd"></a>[裝置搭配 Intune | Android](using-your-android-device-with-intune.md)
+### <a name="device-with-intune-iosos-xusing-your-ios-or-mac-os-x-device-with-intunemd"></a>[裝置搭配 Intune | iOS/OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+### <a name="device-with-intune-windowsusing-your-windows-device-with-intunemd"></a>[裝置搭配 Intune | Windows](using-your-windows-device-with-intune.md)
 
 ## <a name="what-can"></a>哪些是
-### <a name="your-it-admin-see-windowswhatcanyouritadministratorseewhenyouenrollyourdeviceinintunewindows"></a>[IT 系統管理員可見範圍 | Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)
+### <a name="your-it-admin-see-windowswhat-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windowsmd"></a>[IT 系統管理員可見範圍 | Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-happens-if-you"></a>執行以下動作的情況？
-### <a name="install-the-company-portal-app-and-enroll-in-intune-androidwhathappensifyouinstallthecompanyportalappandenrollyourdeviceinintuneandroid"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android)
-### <a name="install-the-company-portal-app-and-enroll-in-intune-ioswhathappensifyouinstallthecompanyportalappandenrollyourdeviceinintuneios"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios)
-### <a name="install-the-company-portal-app-and-enroll-in-intune-windowswhathappensifyouinstallthecompanyportalappandenrollyourdeviceinintuneandroid"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android)
-### <a name="install-the-company-portal-app-and-enroll-in-intune-win10whathappensifyouinstallthecompanyportalappandenrollyourdeviceinintunewindows10"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Win10](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10)
-### <a name="reset-your-device-websitewhathappensifyouresetyourdevicecpwebsite"></a>[重設您的裝置 | 網站](what-happens-if-you-reset-your-device-cpwebsite)
-### <a name="reset-your-device-androidwhathappensifyouresetyourdeviceusingthecompanyportalandroid"></a>[重設您的裝置 | Android](what-happens-if-you-reset-your-device-using-the-company-portal-android)
-### <a name="reset-your-device-ioswhathappensifyouresetyourdeviceusingthecompanyportalios"></a>[重設裝置 | iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios)
-### <a name="reset-your-device-windowswhathappensifyouresetyourdeviceusingthecompanyportalwindows"></a>[重設裝置 | Windows](what-happens-if-you-reset-your-device-using-the-company-portal-windows)
-### <a name="unenroll-androidwhathappensifyouunenrollyourdevicefromintuneandroid"></a>[取消註冊 | Android](what-happens-if-you-unenroll-your-device-from-intune-android)
-### <a name="unenroll-ioswhathappensifyouunenrollyourdevicefromintuneios"></a>[取消註冊 | iOS](what-happens-if-you-unenroll-your-device-from-intune-ios)
-### <a name="unenroll-windowswhathappensifyouunenrollyourdevicefromintunewindows"></a>[取消註冊 | Windows](what-happens-if-you-unenroll-your-device-from-intune-windows)
-### <a name="create-a-work-profile-androidwhathappenswhenyoucreateaworkprofileandroid"></a>[建立工作設定檔 | Android](what-happens-when-you-create-a-work-profile-android)
+### <a name="install-the-company-portal-app-and-enroll-in-intune-androidwhat-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-androidmd"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### <a name="install-the-company-portal-app-and-enroll-in-intune-ioswhat-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-iosmd"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### <a name="install-the-company-portal-app-and-enroll-in-intune-windowswhat-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-androidmd"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### <a name="install-the-company-portal-app-and-enroll-in-intune-win10what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10md"></a>[安裝公司入口網站應用程式並在 Intune 註冊 | Win10](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### <a name="reset-your-device-websitewhat-happens-if-you-reset-your-device-cpwebsitemd"></a>[重設您的裝置 | 網站](what-happens-if-you-reset-your-device-cpwebsite.md)
+### <a name="reset-your-device-androidwhat-happens-if-you-reset-your-device-using-the-company-portal-androidmd"></a>[重設您的裝置 | Android](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+### <a name="reset-your-device-ioswhat-happens-if-you-reset-your-device-using-the-company-portal-iosmd"></a>[重設裝置 | iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### <a name="reset-your-device-windowswhat-happens-if-you-reset-your-device-using-the-company-portal-windowsmd"></a>[重設裝置 | Windows](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+### <a name="unenroll-androidwhat-happens-if-you-unenroll-your-device-from-intune-androidmd"></a>[取消註冊 | Android](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+### <a name="unenroll-ioswhat-happens-if-you-unenroll-your-device-from-intune-iosmd"></a>[取消註冊 | iOS](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+### <a name="unenroll-windowswhat-happens-if-you-unenroll-your-device-from-intune-windowsmd"></a>[取消註冊 | Windows](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+### <a name="create-a-work-profile-androidwhat-happens-when-you-create-a-work-profile-androidmd"></a>[建立工作設定檔 | Android](what-happens-when-you-create-a-work-profile-android.md)
 
 ## <a name="you-are-askedprompted-to"></a>系統要求/提示您...
-### <a name="turn-off-usb-debugging-androidyouareaskedtoturnoffusbdebuggingandroid"></a>[關閉 USB 偵錯 | Android](you-are-asked-to-turn-off-usb-debugging-android)
-### <a name="id-your-devices-during-enrollment-iosyouareaskedtoidentifyyourdevicewhentryingtoenrollios"></a>[在註冊期間識別裝置 | iOS](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios)
-### <a name="turn-off-unknown-sources-androidyouareaskedtoturnoffunknownsourcesandroid"></a>[關閉未知來源 | Android](you-are-asked-to-turn-off-unknown-sources-android)
-### <a name="scan-device-for-security-threats-androidyouareaskedtoturnonscandeviceforsecuritythreatsandroid"></a>[掃描裝置是否有安全性威脅 | Android](you-are-asked-to-turn-on-scan-device-for-security-threats-android)
-### <a name="install-lookout-androidyouarepromptedtoinstalllookoutforworkandroid"></a>[安裝 Lookout | Android](you-are-prompted-to-install-lookout-for-work-android)
-### <a name="install-lookout-iosyouarepromptedtoinstalllookoutforworkios"></a>[安裝 Lookout | iOS](you-are-prompted-to-install-lookout-for-work-ios)
+### <a name="turn-off-usb-debugging-androidyou-are-asked-to-turn-off-usb-debugging-androidmd"></a>[關閉 USB 偵錯 | Android](you-are-asked-to-turn-off-usb-debugging-android.md)
+### <a name="id-your-devices-during-enrollment-iosyou-are-asked-to-identify-your-device-when-trying-to-enroll-iosmd"></a>[在註冊期間識別裝置 | iOS](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+### <a name="turn-off-unknown-sources-androidyou-are-asked-to-turn-off-unknown-sources-androidmd"></a>[關閉未知來源 | Android](you-are-asked-to-turn-off-unknown-sources-android.md)
+### <a name="scan-device-for-security-threats-androidyou-are-asked-to-turn-on-scan-device-for-security-threats-androidmd"></a>[掃描裝置是否有安全性威脅 | Android](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+### <a name="install-lookout-androidyou-are-prompted-to-install-lookout-for-work-androidmd"></a>[安裝 Lookout | Android](you-are-prompted-to-install-lookout-for-work-android.md)
+### <a name="install-lookout-iosyou-are-prompted-to-install-lookout-for-work-iosmd"></a>[安裝 Lookout | iOS](you-are-prompted-to-install-lookout-for-work-ios.md)
 
 ## <a name="you-get-an-error"></a>您收到錯誤的情況為
-### <a name="using-the-company-portal-app-iosyougetanerrorwhileusingthecompanyportalappios"></a>[使用公司入口網站應用程式 | iOS](you-get-an-error-while-using-the-company-portal-app-ios)
+### <a name="using-the-company-portal-app-iosyou-get-an-error-while-using-the-company-portal-app-iosmd"></a>[使用公司入口網站應用程式 | iOS](you-get-an-error-while-using-the-company-portal-app-ios.md)
 
 ## <a name="you-need-to"></a>您必須
-### <a name="resolve-a-threat-found-by-lookout-androidyouneedtoresolveathreatfoundbylookoutforworkandroid"></a>[解決 Lookout 找到的威脅 | Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-### <a name="resolve-a-threat-found-by-lookout-iosyouneedtoresolveathreatfoundbylookoutforworkios"></a>[解決 Lookout 找到的威脅 | iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
-### <a name="upgrade-to-install-outlookyouneedtoupgradeyourdevicetoinstalltheoutlookapp"></a>[升級以安裝 Outlook](you-need-to-upgrade-your-device-to-install-the-outlook-app)
+### <a name="resolve-a-threat-found-by-lookout-androidyou-need-to-resolve-a-threat-found-by-lookout-for-work-androidmd"></a>[解決 Lookout 找到的威脅 | Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+### <a name="resolve-a-threat-found-by-lookout-iosyou-need-to-resolve-a-threat-found-by-lookout-for-work-iosmd"></a>[解決 Lookout 找到的威脅 | iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+### <a name="upgrade-to-install-outlookyou-need-to-upgrade-your-device-to-install-the-outlook-appmd"></a>[升級以安裝 Outlook](you-need-to-upgrade-your-device-to-install-the-outlook-app.md)
 
 ## <a name="errors"></a>錯誤
-### <a name="you-see-errors-during-enrollment-iosyouseeerrorswhiletryingtoenrollyourdeviceinintuneios"></a>[您在註冊期間看到錯誤 | iOS](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios)
+### <a name="you-see-errors-during-enrollment-iosyou-see-errors-while-trying-to-enroll-your-device-in-intune-iosmd"></a>[您在註冊期間看到錯誤 | iOS](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
 
 ## <a name="your-devicecomputer"></a>您的裝置/電腦
-### <a name="is-already-enrolledyourcomputerisalreadyenrolled"></a>[已經註冊](your-computer-is-already-enrolled)
-### <a name="does-not-meet-minimum-security-androidyourdevicedoesnotmeettheminimumsecuritypatchandroid"></a>[不符合最低安全性 | Android](your-device-does-not-meet-the-minimum-security-patch-android)
-### <a name="missing-cert-androidyourdeviceismissingarequiredcertificateandroid"></a>[遺漏憑證 | Android](your-device-is-missing-a-required-certificate-android)
-### <a name="rooted-androidyourdeviceisrootedandyoucantconnectandroid"></a>[已 Root Android](your-device-is-rooted-and-you-cant-connect-android)
+### <a name="is-already-enrolledyour-computer-is-already-enrolledmd"></a>[已經註冊](your-computer-is-already-enrolled.md)
+### <a name="does-not-meet-minimum-security-androidyour-device-does-not-meet-the-minimum-security-patch-androidmd"></a>[不符合最低安全性 | Android](your-device-does-not-meet-the-minimum-security-patch-android.md)
+### <a name="missing-cert-androidyour-device-is-missing-a-required-certificate-androidmd"></a>[遺漏憑證 | Android](your-device-is-missing-a-required-certificate-android.md)
+### <a name="rooted-androidyour-device-is-rooted-and-you-cant-connect-androidmd"></a>[已 Root Android](your-device-is-rooted-and-you-cant-connect-android.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
