@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
     |**說明**|可協助您識別此設定檔的描述。|
     |**主機**|您公司伺服器的主機名稱，用來裝載原生電子郵件服務。|
     |**帳戶名稱**|在使用者裝置上向使用者顯示的電子郵件帳戶顯示名稱。|
-    |**使用者名稱**|取得電子郵件帳戶使用者名稱的方式。 選取內部部署 Exchange Server 的 **Username**，或選取 Office 365 的**使用者主體名稱**。|
+    |**使用者名稱**|Active Directory (AD) 或 Azure AD 中的這個屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取主要 SMTP 位址，例如 *user1@contoso.com* 或使用者主體名稱，例如 *user1* 或 *user1@contoso.com*。|
     |**電子郵件地址**|每個裝置上使用者的電子郵件地址的產生方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。|
     |**驗證方法** (Android for Work、Samsung KNOX 和 iOS)|選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。|
     |**選取用戶端憑證以進行用戶端驗證 (識別憑證)** (Android for Work、Samsung KNOX 和 iOS)|選取先前建立的用戶端 SCEP 憑證，以用來驗證 Exchange 連線。 如需如何使用 Intune 中憑證設定檔的詳細資訊，請參閱[使用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)。 只有在驗證方法是 [憑證] 時，才會顯示此選項。|
@@ -138,6 +138,6 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# 在 Microsoft Intune 中建立裝置相容性原則
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置相容性原則
 本主題概述您可用來建立裝置必須遵循的相容性原則步驟，以便視為相容。
 
-##  步驟 1︰加入新原則
+##  <a name="step-1-add-a-new-policy"></a>步驟 1︰加入新原則
   在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [相容性原則] &gt; [新增]。
 
   ![Intune 管理主控台中相容性原則頁面的螢幕擷取畫面，顯示頁面頂端功能表中的新增選項](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  步驟 2：組態設定
+##  <a name="step-2-configure-settings"></a>步驟 2：組態設定
 在 [建立原則] 頁面上，視需要啟用設定：
-  -   系統安全性設定 (例如密碼) 和加密
+  -   系統安全性設定，例如密碼和加密。
   -   裝置健全狀況設定，如裝置是否為 JB 破解，或者 Windows 裝置健全情況證明服務是否將裝置回報為狀況良好。
-  -   裝置屬性設定，例如需要最低 OS 版本或允許最高 OS 版本。
-![[建立原則] 頁面的 [一般] 索引標籤 ](./media/intune-sa-3b-create-policy.png)
+  -   裝置屬性設定，例如需要的最低作業系統版本或允許的最高作業系統版本。
+![[建立原則] 頁面的 [一般] 索引標籤](./media/intune-sa-3b-create-policy.png)
 
 
-##  步驟 3：儲存原則
+##  <a name="step-3-save-the-policy"></a>步驟 3：儲存原則
 完成之後，請選擇 [儲存原則]。
 
 您可以選擇在儲存原則後立即部署原則，也可以選擇稍後再進行部署。 新的原則會顯示在 [原則] 工作區的 [相容性原則] 節點中。
 
-##  步驟 4：設定相容性狀態有效期間
-若要指定裝置在被視為不相容之前必須進行簽入的時限，請移至 [相容性原則設定] 並更新時間。  預設值設定為 30 天。
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>步驟 4：設定相容性狀態有效期間
+若要指定裝置在被視為不相容之前必須進行簽入的時限，請移至 [合規性原則設定] 並更新時間。 預設值設定為 30 天。
 
-![[原則] 功能表列中的 [相容性原則設定] 選項](../media/mdm-compliance-policy-settings.png)
+![[原則] 功能表列中的 [合規性原則設定] 選項](../media/mdm-compliance-policy-settings.png)
 
-![相容性原則對話方塊](../media/mdm-ca-compliance-status-validity-period.png)
+![合規性原則對話方塊](../media/mdm-ca-compliance-status-validity-period.png)
 
-## 支援的原則設定
+## <a name="supported-policy-settings"></a>支援的原則設定
 下表列出相容性原則設定及其支援的平台。
 
 -------------
@@ -75,19 +75,19 @@ ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 選取下列其中一項以深入了解每個平台上支援的相容性設定︰
 > [!div class="op_single_selector"]
-- [IOS 裝置的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android 裝置的相容性原則設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows 和 Windows Phone 的相容性原則設定 ](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Windows 和 Windows Phone 的合規性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## 後續步驟
-[部署和監視相容性原則](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+## <a name="next-steps"></a>後續步驟
+[部署和監視合規性原則](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### 請參閱
-[裝置相容性原則簡介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+### <a name="see-also"></a>請參閱
+[裝置合規性原則簡介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

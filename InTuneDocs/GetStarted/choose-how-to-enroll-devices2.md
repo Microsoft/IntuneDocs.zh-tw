@@ -3,26 +3,27 @@ title: "選擇如何註冊行動裝置 | Microsoft Intune"
 description: "回答一些簡單的問題，以決定如何在 Intune 中註冊行動裝置"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 1e7c4f9963aaba3389a903e2fe2fd3fd582c8ce6
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 515f1edfc078e2061f74fc103ede42248cbea759
 
 
 ---
-# 選擇如何註冊行動裝置
+# <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
 下列一系列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
-## **您要啟用哪一個 BYOD 平台？**
+## <a name="which-byod-platform-do-you-want-to-enable"></a>**您要啟用哪一個 BYOD 平台？**
 
 > [!div class="button"]
 [Android >](/intune/deploy-use/set-up-android-management-with-microsoft-intune)
@@ -39,6 +40,6 @@ ms.openlocfilehash: 1e7c4f9963aaba3389a903e2fe2fd3fd582c8ce6
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

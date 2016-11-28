@@ -4,6 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8bc2f6e8dcf9d0ac3e7fccec792c86ff1fd4131c
-ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
+ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
+ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 
 ---
@@ -82,10 +83,18 @@ ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
 
 * **[Intune App SDK for Android 開發人員指南](intune-app-sdk-android.md)**：本文件將逐步引導您使用 Intune App SDK 來啟用 Android 行動應用程式。
 
-您可以在 Intune App SDK Xamarin 元件和 Intune App SDK Cordova 外掛程式各自的 GitHub 存放庫中找到它們的相關文件。
+若要使用 Intune App SDK Cordova 外掛程式建置 Cordova 應用程式，您需要下列項目︰
+
+* **[Intune App SDK Cordova 外掛程式指南](intune-app-sdk-cordova)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
+
+若要使用 Intune App SDK Xamarin 元件建置 Xamdarin 應用程式，您需要下列項目︰
+
+* **[Intune App SDK Xamarin 元件指南](intune-app-sdk-xamarin)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
 
 
-## <a name="set-up-telemetry-for-your-app"></a>設定應用程式的遙測
+
+
+## <a name="configure-telemetry-for-your-app"></a>設定應用程式的遙測
 
 Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
@@ -95,7 +104,7 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 * **適用於 Android 的 Intune App SDK**：不會透過 SDK 記錄遙測資料。
 
-## <a name="test-your-mamenabled-app-with-microsoft-intune"></a>使用 Microsoft Intune 測試啟用 MAM 的應用程式
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>使用 Microsoft Intune 測試啟用 MAM 的應用程式
 
 在您完成整合 iOS 或 Android 應用程式與 Intune App SDK 的必要步驟之後，需要確定使用者和 IT 系統管理員的所有應用程式管理原則皆已啟用且正常運作。 若要測試整合式應用程式，您需要下列項目：
 

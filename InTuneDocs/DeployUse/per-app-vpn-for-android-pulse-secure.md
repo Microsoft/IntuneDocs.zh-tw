@@ -2,9 +2,10 @@
 title: "使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Intune"
 description: "您可以為 Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +14,35 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
-ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 ---
 
-# 使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
+# <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
 
-您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。 
+您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 或 Citrix 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。 
 
-在您將原則部署至 Android 裝置或使用者群組後，使用者應啟動 PulseSecure VPN。 PulseSecure VPN 接著只允許來自指定應用程式的流量使用開放的 VPN 連線。
+在您將原則部署至 Android 裝置或使用者群組後，使用者應啟動 Pulse Secure 或 Citrix VPN。 連線接著只允許來自指定應用程式的流量使用開放的 VPN 連線。
 
 > [!NOTE]
 >
 > 此設定檔僅支援 Pulse Secure 連線類型。
 
 
-### 步驟 1︰建立 VPN 設定檔
+### <a name="step-1-create-a-vpn-profile"></a>步驟 1︰建立 VPN 設定檔
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則]。
 2. 展開 [Android]，然後選擇 [VPN 設定檔 (Android 4 及更新版本)])，以選取新原則的範本。
-3. 在範本中，針對 [連線類型]，選擇 [Pulse Secure]。
+3. 在範本中，針對 [連線類型]，選擇 [Pulse Secure] 或 [Citrix]。
 4. 完成並儲存 VPN 設定檔。 如需 VPN 設定檔的詳細資訊，請參閱 [VPN 連線](../deploy-use/vpn-connections-in-microsoft-intune.md)。
 
 > [!NOTE]
 >
 > 記下下一步驟中所使用的 VPN 設定檔名稱。 例如，MyAppVpnProfile。
 
-### 步驟 2：建立自訂設定原則
+### <a name="step-2-create-a-custom-configuration-policy"></a>步驟 2：建立自訂設定原則
 
    1. 在 Intune 管理主控台中，請選擇 [原則] > [新增原則][Android] > [Android] > [自訂設定] > [建立原則]。
    2. 輸入原則的名稱。
@@ -53,7 +54,7 @@ ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 ![Android 個別應用程式 VPN 自訂原則範例](./media/android_per_app_vpn_oma_uri.png)
 
-#### 將應用程式清單設定為封鎖清單或允許清單 (選用)
+#### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>將應用程式清單設定為封鎖清單或允許清單 (選用)
   使用 [BLACKLIST] 值，即可指定「不可」使用 VPN 連線的應用程式清單。 所有其他應用程式都會透過 VPN 進行連線。
 或者，您可以使用 [WHITELIST] 值以指定應用程式清單，這些應用程式「可以」使用 VPN 連線。 不在清單上的應用程式不會透過 VPN 連線。
   1.    在 [OMA-URI] 設定下，選擇 [新增]。
@@ -64,7 +65,7 @@ ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 
-### 步驟 3︰兩個原則都部署
+### <a name="step-3-deploy-both-policies"></a>步驟 3︰兩個原則都部署
 
 您必須將*兩個*原則部署至*相同的* Intune 群組。
 
@@ -77,6 +78,6 @@ ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "完成 Intune 評估後的後續步驟 | Microsoft Intune"
 description: "在您設定免費 30 天的 Intune 評估版後，所需知道的訂閱與授權事項"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,14 +14,14 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ea0e43d93a3e388d55329142292595a8b3b3dbd2
 
 
 ---
 
-# 完成 Intune 評估後的後續步驟
-如果您在符合條件的方案中購買了至少 150 套的 Microsoft Intune 授權，則可使用「FastTrack 中心權益」服務，透過此服務能讓您與 Microsoft 專家一起將您的環境備妥供 Intune 運作。 請參閱[適用於 Enterprise Mobility Suite (EMS) 的 FastTrack Center 權益](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems)。
+# <a name="next-steps-after-your-intune-evaluation-is-completed"></a>完成 Intune 評估後的後續步驟
+如果您在符合條件的方案中購買了至少 150 套的 Microsoft Intune 授權，則可使用「FastTrack 中心權益」服務，透過此服務能讓您與 Microsoft 專家一起將您的環境備妥供 Intune 運作。 請參閱[適用於 Enterprise Mobility + Security (EMS) 的 FastTrack Center 權益](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems)。
 
 您可以透過下列方式將 Intune 免費評估版轉換成付費訂閱：
 
@@ -34,6 +35,6 @@ ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
