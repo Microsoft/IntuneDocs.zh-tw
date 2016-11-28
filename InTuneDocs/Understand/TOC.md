@@ -1,4 +1,4 @@
-# [了解和探索](introduction-to-microsoft-intune.md)
+# 了解和探索
 ## [Intune 簡介](introduction-to-microsoft-intune.md)
 ## [Intune 評估指南](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [登入或註冊 30 天評估](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
@@ -11,7 +11,7 @@
 ## [常見案例](common-ways-to-use-intune.md)
 ## [名詞解釋](intune-glossary.md)
 
-# [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [開始使用](/intune/get-started/get-started)
 # [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -19,6 +19,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

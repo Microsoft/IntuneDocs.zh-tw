@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 
 如果裝置已開啟且連線，這過程將花費不到 15 分鐘的時間，以將抹除命令傳播到所有裝置類型。
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
+
+1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [系統管理] &gt; [Azure AD]。
+
+2.  利用頁面左側連結，以您的組織識別碼登入。
+
+3.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。
+
+4.  選取 [Active Directory]  ，然後選取您的組織。
+
+5.  選取 [使用者]  索引標籤。
+
+6.  選取您要刪除裝置的使用者。
+
+7.  選擇 [裝置]。
+
+8.  視需要移除裝置，例如不再使用的裝置，或具有不正確定義的裝置。
+
+
 ## <a name="selective-wipe"></a>選擇性抹除
 
 [選擇性抹除] 會移除公司資料，包括適用的行動應用程式管理 (MAM) 資料、設定和裝置的電子郵件設定檔。 選擇性抹除會將使用者的個人資料保留在裝置上。 並從 Intune 移除裝置。 下表說明將移除哪些資料，以及在選擇性抹除後對於保留在裝置上的資料有何影響 (此表格已依平台組織)。
@@ -95,7 +114,7 @@ ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
-|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。 如果 Microsoft Exchange 裝載在內部部署中，電子郵件設定檔和快取的電子郵件不會移除。|
+|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
 |Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
@@ -146,6 +165,6 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
