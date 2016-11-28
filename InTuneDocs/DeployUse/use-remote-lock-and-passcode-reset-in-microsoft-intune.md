@@ -2,10 +2,10 @@
 title: "遠端鎖定和密碼重設 | Microsoft Intune"
 description: "Intune 提供遠端鎖定和密碼重設功能。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: b32ef59aa33205e5687d951d50dfd605a6b071f2
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# 透過遠端鎖定或密碼重設來協助保護您的裝置
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>透過遠端鎖定或密碼重設來協助保護您的裝置
 Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
-## 從遠端鎖定裝置
+## <a name="lock-a-device-remotely"></a>從遠端鎖定裝置
 如果使用者遺失裝置，您可以從遠端鎖定裝置。 下表列出遠端鎖定在不同行動平台上的運作方式。
 
 |平台|遠端鎖定|
@@ -34,7 +34,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 註冊了 Intune 軟體用戶端的 Windows 電腦不支援遠端鎖定。
 
-### 透過 Intune 主控台從遠端鎖定行動裝置
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>透過 Intune 主控台從遠端鎖定行動裝置
 
 1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] &gt; [所有行動裝置]。
 
@@ -45,13 +45,13 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [遠端鎖定]。
 
-## 重設裝置上的密碼
+## <a name="reset-the-passcode-on-a-device"></a>重設裝置上的密碼
 如果使用者忘記密碼，您可以從裝置移除密碼或是在裝置上強制套用新的暫時密碼，以幫助使用者。 下表列出密碼重設在不同行動平台上的運作方式。
 
 |平台|密碼重設|
 |------------|------------------|
 |iOS|支援從裝置清除密碼。 不會建立新的暫時密碼。|
-|Android|支援。 建立暫時密碼。|
+|Android|支援 Android 7.0 之前的版本。 建立暫時密碼。|
 |Windows 10 Mobile|支援|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
 |Windows RT 8.1 和 Windows RT|不支援|
@@ -59,7 +59,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 註冊了 Intune 軟體用戶端的 Windows 電腦不支援密碼重設。
 
-### 重設密碼
+### <a name="reset-a-passcode"></a>重設密碼
 
 1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] &gt; [所有行動裝置]。
 
@@ -71,11 +71,11 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 3.  在清單中，選擇您要鎖定的一或多部裝置。 在工作列上，選擇 [遠端工作]，然後選取 [密碼重設]。
 
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)和 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (裝置資料管理的 Windows 選擇性抹除)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

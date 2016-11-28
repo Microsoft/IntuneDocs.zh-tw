@@ -14,14 +14,14 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
-ms.openlocfilehash: 2aa17e2dbee8d89cfcc942a63cb5005090cd7bbb
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>協助透過使用 Microsoft Intune 的完整或選擇性抹除來保護您的資料
-不論是否因為裝置已不再需要、被重新規劃用途，或是遺失，您都可以從使用 Intune 管理的裝置抹除應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 此外，使用者可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
+當 Intune 管理的裝置不再被需要、重新設定用途，或是已經遺失時，您可以抹除其中的應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 使用者也可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
 
   > [!NOTE]
   > 本主題只會說明如何抹除受 Intune 行動裝置管理所管理的裝置。 您也可以使用 [Azure 入口網站](https://portal.azure.com)來[從應用程式抹除公司資料](wipe-managed-company-app-data-with-microsoft-intune.md)。 您也可以[淘汰使用 Intune 用戶端軟體管理的電腦](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)。
@@ -77,7 +77,8 @@ ms.openlocfilehash: 2aa17e2dbee8d89cfcc942a63cb5005090cd7bbb
 |Wi-Fi 及 VPN 設定檔設定|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|
 |管理代理程式|移除管理設定檔。|
-|電子郵件|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
+|電子郵件|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。 如果 Microsoft Exchange 裝載在內部部署中，電子郵件設定檔和快取的電子郵件不會移除。|
+|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 
@@ -94,7 +95,8 @@ ms.openlocfilehash: 2aa17e2dbee8d89cfcc942a63cb5005090cd7bbb
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
-|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
+|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。 如果 Microsoft Exchange 裝載在內部部署中，電子郵件設定檔和快取的電子郵件不會移除。|
+|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 
@@ -106,10 +108,10 @@ ms.openlocfilehash: 2aa17e2dbee8d89cfcc942a63cb5005090cd7bbb
 |設定|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|不支援。|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|憑證會予以移除及撤銷。|不支援。|憑證會予以移除及撤銷。|
-|電子郵件|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。|不支援。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。 移除 Intune 佈建的郵件帳戶。|
+|電子郵件|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。|不支援。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。 移除 Intune 佈建的郵件帳戶。</br>**例外狀況**︰如果 Microsoft Exchange 裝載在內部部署中，電子郵件帳戶不會移除。|
 |Azure Active Directory (AAD) 退出|否。|否。|已移除 AAD 記錄。|不適用。 Windows 10 不支援對已加入 Azure Active Directory 的裝置進行選擇性抹除。|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>抹除已啟用加密檔案系統 (EFS) 的內容
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>抹除已啟用加密檔案系統 (EFS) 的內容
 Windows 8.1 和 Windows RT 8.1 支援選擇性抹除 EFS 加密的內容。 下列重點適用於支援選擇性抹除啟用 EFS 的內容：
 
 -   只有使用相同的網際網路網域做為 Intune 帳戶並被 EFS 保護的應用程式才會選擇性地抹除。 如需詳細資訊，請參閱 [Windows 選擇性清除裝置資料管理](http://technet.microsoft.com/library/dn486874.aspx)。
@@ -144,6 +146,6 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
