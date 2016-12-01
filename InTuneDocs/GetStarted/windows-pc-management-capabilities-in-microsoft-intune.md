@@ -3,8 +3,9 @@ title: "Intune 電腦軟體用戶端功能 | Microsoft Intune"
 description: "深入了解當您使用 Intune 軟體用戶端管理 Windows 電腦時，有關 Intune 的功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
-ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# 當您使用 Intune 軟體用戶端時的 Windows 電腦管理功能
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>當您使用 Intune 軟體用戶端時的 Windows 電腦管理功能
 在大部分情況下，您將使用 Microsoft Intune 註冊您的裝置，這可以提供更多的功能。 不過，您也可以使用提供下列功能的 Intune 軟體用戶端來管理電腦︰
 
 -   **[軟體更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
@@ -36,7 +37,7 @@ ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 Intune 支援在最多 7000 部 Windows 裝置上安裝軟體用戶端。
 
-## 作業系統需求
+## <a name="operating-system-requirements"></a>作業系統需求
 Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦︰
 
 
@@ -51,7 +52,7 @@ Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦�
 - **Windows 10** - 專業版、教育版和企業版
 
 
-## 最小硬體需求
+## <a name="minimum-hardware-requirements"></a>最小硬體需求
 以下列出安裝 Intune 軟體用戶端的最低硬體需求：
 
 |需求|詳細資料|
@@ -60,7 +61,7 @@ Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦�
 |處理器與記憶體|請參考電腦作業系統的處理器和 RAM 需求。|
 |磁碟空間|安裝用戶端軟體之前需有 200 MB 的可用磁碟空間。|
 
-## 進一步需求
+## <a name="further-requirements"></a>進一步需求
 以下列出安裝 Intune 軟體用戶端的軟體需求：
 
 |需求|詳細資料|
@@ -69,11 +70,11 @@ Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦�
 |Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。|
 |移除不相容的用戶端軟體|安裝 Intune 電腦用戶端軟體之前，您必須從該電腦解除安裝下列用戶端軟體：<br /><br />-   任何版本的 Configuration Manager<br />-   任何版本的 Microsoft Systems Management Server (SMS)|
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [Microsoft Intune 的已註冊裝置管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

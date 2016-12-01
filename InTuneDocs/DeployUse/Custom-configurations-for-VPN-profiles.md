@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
-ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
@@ -23,7 +23,15 @@ ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 # <a name="custom-configurations-for-vpn-profiles"></a>VPN 設定檔的自訂組態
 
 ## <a name="create-a-custom-configuration"></a>建立自訂組態
-您可以在 Intune 中使用自訂組態來建立 VPN 設定檔。 若要建立自訂組態：
+您可以在 Intune 中使用自訂組態來建立下列各項的 VPN 設定檔：
+
+* 執行 Android 4 和更新版本的裝置
+* Android for Work 裝置
+* 執行 Windows 8.1 和更新版本的已註冊裝置
+* 執行 Windows Phone 8.1 和更新版本的裝置
+* 執行 Windows 10 Desktop 和行動裝置版的裝置
+
+若要建立自訂組態：
 
    1. 在 Intune 管理主控台中，[原則] > [新增原則] > [擴充平台] > [自訂設定] > [建立原則]。
    2. 提供原則的名稱。
@@ -86,7 +94,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx。
 
-## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
+## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
 ### <a name="custom-uri-for-package-list"></a>套件清單的自訂 URI
 -  資料類型 = 字串
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList

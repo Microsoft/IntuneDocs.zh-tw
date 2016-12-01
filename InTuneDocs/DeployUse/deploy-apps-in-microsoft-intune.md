@@ -3,8 +3,9 @@ title: "如何部署應用程式 | Microsoft Intune"
 description: "使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# 在 Microsoft Intune 中部署應用程式
+# <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署應用程式
 
 使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。
 
 
-## 部署應用程式
+## <a name="deploy-an-app"></a>部署應用程式
 在這個程序中，您會將應用程式部署到選取的裝置或使用者群組。
 
-### 部署應用程式
+### <a name="to-deploy-an-app"></a>部署應用程式
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 **[應用程式]** &gt; **[應用程式]**，以檢視您管理的應用程式清單。
 
@@ -49,7 +50,12 @@ ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
 6. 如果您要部署的應用程式與 Intune VPN 設定檔相容，則會顯示 [VPN 設定檔] 頁面。 在這個頁面上，您可以選擇將 iOS 應用程式與已部署的 VPN 設定檔建立關聯。 啟動應用程式時，將會自動開啟 VPN 連線。 要讓 VPN 設定檔能夠使用，必須先啟用 [個別 App VPN] 設定檔設定。
  如需如何設定 VPN 設定檔 (包括如何將設定檔與應用程式建立關聯) 的詳細資訊，請參閱 [Microsoft Intune 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。
 
-## 範例
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>範例
 
 在此範例中，會將應用程式當作**可用**部署至 iOS 裝置。
 應用程式會在公司入口網站中使用者的裝置上顯示，而使用者可以從該處安裝應用程式。
@@ -57,15 +63,15 @@ ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
 例如，在此螢幕擷取畫面中，適用於 iOS 的 Bing 應用程式是透過使用具備自訂圖示的**外部連結**安裝類型進行部署， 且已選取**在公司入口網站中將此項目顯示為熱門應用程式並將它反白**選項。  
 ![iOS 可用應用程式](./media/available-install-on-iOS.png)
 
-如果您將**必要**應用程式部署至 iOS 裝置，使用者會收到應用程式準備安裝的通知。 例如，在這個螢幕擷取畫面中，適用於 iOS 的工作資料夾應用程式是透過 **[App Store 中所管理的 iOS 應用程式]** 安裝類型進行部署。
+如果您將**必要**應用程式部署至 iOS 裝置，使用者會收到應用程式準備安裝的通知。 例如，在這個螢幕擷取畫面中，適用於 iOS 的工作資料夾應用程式是透過 **[App Store 中所管理的 iOS 應用程式]** 安裝類型進行部署。  
 ![iOS 必要應用程式](./media/iOS-Required-install.PNG)
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
 部署應用程式之後，您會想要監視其進度。 如需詳細資訊，請參閱[在 Microsoft Intune 中監視應用程式](monitor-apps-in-microsoft-intune.md)。
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

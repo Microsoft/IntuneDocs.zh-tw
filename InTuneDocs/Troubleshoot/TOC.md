@@ -1,5 +1,5 @@
 # [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
-# [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [開始使用](/intune/get-started/get-started)
 # [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署與使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -15,14 +15,14 @@
 ## [用戶端設定疑難排解](Troubleshoot-client-setup-in-microsoft-intune.md)
 ## [軟體更新疑難排解](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [電子郵件設定檔疑難排解](Troubleshoot-email-profiles-in-microsoft-intune.md)
-## [條件式存取的疑難排解](troubleshoot-conditional-access.md)
-## [為 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)
+## [條件式存取疑難排解](troubleshoot-conditional-access.md)
+## [Exchange Connector 疑難排解](troubleshoot-exchange-connector.md)
 
 ## [行動應用程式管理疑難排解](troubleshoot-mam.md)
 
 ## [Lookout 整合疑難排解](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

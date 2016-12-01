@@ -3,22 +3,23 @@ title: "選擇如何註冊行動裝置 | Microsoft Intune"
 description: "回答一些簡單的問題，以決定如何在 Intune 中註冊行動裝置"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
-ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# 選擇如何註冊行動裝置
+# <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
 行動裝置註冊是由 Microsoft Intune 來管理智慧型手機、平板電腦和電腦的程序。 身為系統管理員，您需要決定如何根據下列項目來註冊裝置︰
 
@@ -28,7 +29,7 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 下列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
-## **員工攜帶自己的裝置，還是由您的組織提供裝置？**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**員工攜帶自己的裝置，還是由您的組織提供裝置？**
 
   - **使用者擁有的裝置** - "BYOD” (攜帶您自己的裝置) 註冊 - 使用者可以在裝置上安裝 Intune 公司入口網站應用程式然後進行註冊，以存取公司資源 (例如電子郵件、公司入口網站、公司資料和支援)。  
 
@@ -37,12 +38,12 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 > [!div class="button"]
 [BYOD 註冊 >](#what-byod-devices-can-your-users-enroll)   [COD 註冊 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **您的使用者可以註冊哪些 BYOD 裝置？**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**您的使用者可以註冊哪些 BYOD 裝置？**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS 和 Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 行動裝置版和 Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows 電腦](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **您的公司所擁有的裝置是共用裝置，或是否有專用使用者？**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**您的公司所擁有的裝置是共用裝置，或是否有專用使用者？**
 
 - **共用公司擁有的裝置** - 這些裝置沒有單一使用者，而且通常不會設定成存取電子郵件。 範例包括使用者視需要從集區取出然後傳回的 Kiosk 裝置或工作導向裝置。 建議的註冊方法取決於裝置平台。
 
@@ -52,12 +53,12 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 [共用 >](#what-operating-system-are-your-shared-devices-running)   [專用 >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **您共用的裝置正在執行哪個作業系統？**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**您共用的裝置正在執行哪個作業系統？**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **您會如何管理共用的 iOS 裝置？**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**您會如何管理共用的 iOS 裝置？**
 
 - **Apple 的裝置註冊方案 (DEP)** - 使用註冊設定檔，可以將目標設為使用 DEP 所購買或管理的 iOS 裝置。 使用者第一次開啟裝置的電源時，裝置會下載 DEP 設定檔，並使用設定檔 DEP 進行註冊
 
@@ -68,7 +69,7 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
   > [!div class="button"]
   [iOS DEP 註冊 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 直接註冊 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM 註冊 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 
-## **您會如何管理專用的 iOS 裝置？**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**您會如何管理專用的 iOS 裝置？**
 
 您可以透過下列方式，向專用的使用者註冊公司所擁有的裝置︰
 
@@ -83,6 +84,6 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

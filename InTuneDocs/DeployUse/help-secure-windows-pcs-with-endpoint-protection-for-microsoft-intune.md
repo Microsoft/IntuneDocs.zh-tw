@@ -2,7 +2,8 @@
 title: "Windows 電腦的 Endpoint Protection| Microsoft Intune"
 description: "使用 Endpoint Protection 保護您受管理的電腦，它可針對惡意程式碼威脅提供即時保護。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7d2c59332f2454694ecf58449a3b75a12027dfe
-ms.openlocfilehash: 5d662cab67c879a1f8bd5dbaf8e0461bf35b6e42
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# 使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
 Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的安全，它可針對惡意程式碼威脅提供即時保護、讓惡意程式碼定義保持在最新狀態，並能自動掃描電腦。 Endpoint Protection 也提供工具，協助您管理和監視惡意程式碼攻擊。
 
 如果您尚未在電腦上安裝 Intune 用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 使用以下各節中的資訊可協助您設定、部署及監視 Endpoint Protection。
 
-## 選擇何時使用 Endpoint Protection
+## <a name="choose-when-to-use-endpoint-protection"></a>選擇何時使用 Endpoint Protection
 身為 IT 系統管理員，您的優先要務之一是保護您管理的電腦不受惡意程式碼和病毒威脅。 將 Intune 部署到組織中的 Windows 電腦之前，您應選取下列其中一個選項並設定其相關原則設定，決定如何保護您的電腦：
 
 |若要：|Endpoint Protection 原則設定|詳細資訊|
@@ -49,7 +50,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 > [!NOTE]
 > Intune 將不會自動解除安裝協力廠商 Endpoint Protection 應用程式。
 
-## 設定 Microsoft Intune Endpoint Protection
+## <a name="configure-microsoft-intune-endpoint-protection"></a>設定 Microsoft Intune Endpoint Protection
 請使用下列步驟幫助您設定 Endpoint Protection for Microsoft Intune。
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [原則] > [新增原則]。
@@ -62,7 +63,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 
 您可以在 [原則] 工作區的 [所有原則] 頁面上檢視已部署的 Endpoint Protection 原則。
 
-## 指定 Endpoint Protection 服務設定
+## <a name="specify-endpoint-protection-service-settings"></a>指定 Endpoint Protection 服務設定
 
 |原則設定|詳細資料|
 |------------------|--------------------|
@@ -77,7 +78,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 
   Microsoft Security Essentials 會在潛在威脅 (例如病毒和間諜軟體) 嘗試在電腦上自行安裝或執行時，對您發出即時保護警示。 一旦發生這種情況，您就會在工作列右邊的通知區域中看到一則訊息。
 
-### 指定即時保護設定
+### <a name="specify-real-time-protection-settings"></a>指定即時保護設定
 
 |原則設定|詳細資料|
 |------------------|--------------------|
@@ -90,7 +91,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 
   ![Endpoint Protection 的即時設定](./media/pol-sa-pc-policy-realtime.png)
 
-### 指定掃描排程設定
+### <a name="specify-scan-schedule-settings"></a>指定掃描排程設定
 
 |原則設定|詳細資訊|
 |------------------|--------------------|
@@ -99,7 +100,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 |**排程完整掃描**|設定完整掃描本機電腦硬碟上的所有檔案和資源。 此掃描可能需要一些時間，而且可能影響電腦效能 (所需時間取決於掃描的檔案和資源數目)。<br /><br />建議值： **否**|
 |**如果您錯過連續兩次的完整掃描便執行完整掃描**|將 Endpoint Protection 設定成如果電腦錯過連續兩次掃描，它就會自動執行完整掃描。<br /><br />建議值：尚未設定|
 
-### 指定掃描選項設定
+### <a name="specify-scan-options-settings"></a>指定掃描選項設定
 
 |原則設定|詳細資料|
 |------------------|--------------------|
@@ -114,32 +115,32 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 |**掃描卸除式磁碟機**|設定為 [是] 可將 Endpoint Protection 設定成在您於電腦上執行完整掃描時，掃描卸除式磁碟機 (例如 USB 快閃磁碟機) 是否有惡意程式碼和垃圾軟體。<br /><br />建議值： **是**|
 |**限制掃描期間的 CPU 使用量**|設定在電腦上進行排程掃描期間可以使用的 CPU 使用量百分比上限。 您可以將此值設定為 1 到 100%。<br /><br />建議值： **50%**|
 
-### 選擇預設動作設定
+### <a name="choose-default-actions-settings"></a>選擇預設動作設定
 
 [選擇 Endpoint Protection 如何處理下列警示層級的惡意程式碼] 設定會指定在偵測到各種警示層級的惡意程式碼時，Endpoint Protection 所採取的預設動作。 針對每個警示層級，您可以移除惡意程式碼、進行隔離或採取 Microsoft 的建議動作。
 
 建議值︰**建議的動作** (可讓 Endpoint Protection 建議動作)。   
 
-### 決定是否要選擇排除的檔案與資料夾設定
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>決定是否要選擇排除的檔案與資料夾設定
 
 [執行掃描或使用即時保護時所要排除的檔案和資料夾] 設定會在對電腦執行掃描或使用即時保護時，排除特定的檔案或資料夾。
 
-### 決定是否要選擇排除的處理程序設定
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>決定是否要選擇排除的處理程序設定
 
 [執行掃描或使用即時保護時所要排除的處理程序] 設定可讓您在對電腦執行掃描或使用即時保護時，排除特定的處理程序。 您只能排除具有下列副檔名的檔案：**.exe**、**.com** 或 **.scr**。
 
-### 決定是否要選擇排除的檔案類型設定
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>決定是否要選擇排除的檔案類型設定
 
 [執行掃描或使用即時保護時所要排除的副檔名] 設定可讓您在對電腦執行掃描或使用即時保護時，排除特定的副檔名。
 
-### 指定 Microsoft Active Protection Service 設定
+### <a name="specify-microsoft-active-protection-service-settings"></a>指定 Microsoft Active Protection Service 設定
 Microsoft Active Protection Service 是一個線上社群，能協助您決定回應潛在威脅的方式。 這個社群也有助於阻止新惡意程式碼感染的擴散。 您可以選取 [是]，然後指定 [成員資格層級]，以 [加入 Microsoft Active Protection Service]：
   - **基本** - 將有關偵測到的惡意程式碼的基本資訊傳送到 Microsoft。 這包括軟體來源、您所套用或 Endpoint Protection 自動套用的動作，以及這些動作是否成功。
   - **進階** - 將有關惡意程式碼、間諜軟體和潛在的垃圾軟體的詳細資訊傳送到 Microsoft。 這包括有關軟體的位置、檔案名稱、軟體運作方式，以及軟體對電腦的影響的資訊。
 
 您也可以 **[根據 Microsoft Active Protection Service 報表接收動態定義]**。
 
-## 選擇 Endpoint Protection 的管理工作
+## <a name="choose-management-tasks-for-endpoint-protection"></a>選擇 Endpoint Protection 的管理工作
 下列工作可協助您在執行 Endpoint Protection 的受管理電腦上執行各項管理工作：
  - 更新惡意程式碼定義
   - Intune 主控台 - 從 [群組] 工作區，選取您要更新的電腦。 選擇 [遠端工作] &gt; [更新惡意程式碼定義]。
@@ -150,7 +151,7 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 
 您可以選擇 Intune 主控台右下角的 [遠端工作] 連結，檢視遠端工作的狀態。 [遠端工作狀態] 對話方塊會列出目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。 它也提供疑難排解資訊連結 (如果適用的話)。
 
-## 監視 Endpoint Protection
+## <a name="monitor-endpoint-protection"></a>監視 Endpoint Protection
 您可以使用 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 的 **[保護]** 工作區，監視電腦上惡意程式碼的狀態。 此工作區包含兩個頁面：
  - **保護概觀** - 以連結方式顯示重要問題，您可以選擇連結來取得詳細資訊。 可能顯示的問題包括：
   - **需要後續追蹤的惡意程式碼執行個體** - 按一下連結可檢視惡意程式碼問題的清單，包括需要採取來解決問題的後續追蹤動作。 您可以進一步瀏覽此清單，查看哪些電腦受到影響。
@@ -166,7 +167,7 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 
   ![監視 Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
-### 如何檢視電腦上最近偵測到惡意程式碼的路徑
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何檢視電腦上最近偵測到惡意程式碼的路徑
 Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行個體的路徑。 [最近的偵測路徑]  預設會停用。 若要啟用此檢視：
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] > [所有裝置] > [惡意程式碼]。
@@ -175,7 +176,7 @@ Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行
 
 3.  選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
 
-## 更新電腦上的惡意程式碼定義。
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>更新電腦上的惡意程式碼定義。
 Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 Endpoint Protection 或 Windows Defender 執行完整或快速惡意程式碼掃描。
 
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，移至 [群組] > [概觀] > [所有裝置] > [所有電腦]，然後選取您要設為目標的電腦。
@@ -185,14 +186,14 @@ Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 E
 
 
 
-## 需要其他協助？
+## <a name="need-more-help"></a>需要其他協助？
 如需進一步協助和支援，請參閱[針對 Microsoft Intune 中的 Endpoint Protection 進行疑難排解](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。
 
-### 另請參閱
+### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

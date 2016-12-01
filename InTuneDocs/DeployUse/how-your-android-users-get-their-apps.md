@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
+ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
+ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 該資訊可能會因裝置類型 (原生 Android 裝置或 Samsung Knox Standard 裝置) 而有所不同。
 
-## <a name="native-nonsamsung-knox-android-devices"></a>原生 (非 Samsung Knox) Android 裝置
+## <a name="native-non-samsung-knox-standard-android-devices"></a>原生 (非 Samsung Knox Standard) Android 裝置
 
 | 應用程式類型 | 企業營運 (LOB) 應用程式 | Play Store 應用程式  |
 | ------------- |-------------| -----|
@@ -53,6 +53,6 @@ ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

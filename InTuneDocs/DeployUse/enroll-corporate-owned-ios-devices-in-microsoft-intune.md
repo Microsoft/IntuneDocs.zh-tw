@@ -14,13 +14,13 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 81eb6df96f4c34e8524bb8f3faef964179c91dfc
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# <a name="enroll-corporateowned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置
 Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。
 
 **必要條件：**需要 [Apple 推播通知服務憑證](set-up-ios-and-mac-management-with-microsoft-intune.md)。
@@ -38,7 +38,7 @@ Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上�
 ## <a name="use-the-device-enrollment-program-dep"></a>使用裝置註冊方案 (DEP)
 DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置上。 當使用者在裝置上執行設定助理時，該裝置便會在 Intune 中註冊。  透過 DEP 註冊的裝置不能由使用者取消註冊。 如需詳細資訊，請參閱[註冊裝置註冊方案 iOS 裝置](ios-device-enrollment-program-in-microsoft-intune.md)。
 
-## <a name="use-the-company-portal-on-depenrolled-or-apple-configuratorenrolled-devices"></a>在已註冊 DEP 或 Apple Configurator 的裝置上使用公司入口網站
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>在已註冊 DEP 或 Apple Configurator 的裝置上使用公司入口網站
 
 已設定使用者親和性的裝置可以安裝並執行公司入口網站 App，以下載 App 及管理裝置。 使用者收到裝置之後，他們必須完成一些額外步驟，以完成設定助理並安裝公司入口網站 App。
 
@@ -68,7 +68,7 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 8. 現在已經完成註冊。 使用者現在已可使用裝置的完整功能。
 
-### <a name="about-corporateowned-managed-devices-with-no-user-affinity"></a>關於無使用者親和性之公司擁有的受管理的裝置
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>關於無使用者親和性之公司擁有的受管理的裝置
 
 設定為無使用者親和性的裝置並不支援公司入口網站，且不應該安裝該 App。 [公司入口網站] 是針對有公司認證且需要存取個人化公司資源 (如電子郵件) 的使用者而設計。 註冊為無使用者親和性的裝置並非專供單一使用者登入使用。 Kiosk、銷售點 (POS)，或共用公用程式裝置，皆屬註冊為無使用者親和性的常見案例。
 
@@ -77,10 +77,10 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 
 ### <a name="see-also"></a>請參閱
-[Microsoft Intune 中註冊裝置的必要條件](gprerequisites-for-enrollment.md)
+[Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

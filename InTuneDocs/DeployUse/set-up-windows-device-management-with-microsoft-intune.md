@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ Intune 系統管理員有兩種方式可為 Windows 電腦啟用註冊與管理�
 1. **設定 Intune**<br>
 如果尚未這麼做，請將[行動裝置管理 (MDM) 授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)設定為 **Microsoft Intune**，然後設定 MDM，為行動裝置管理做好準備。
 
-2. **建立 CNAME** (選用)<br>為公司網域建立 **CNAME** DNS 資源記錄以簡化註冊程序。 雖然建立 CNAME DNS 項目為選擇性作業，但是 CNAME 記錄可讓使用者更輕鬆地註冊。 如果找不到任何註冊 CNAME 記錄，系統會提示使用者手動輸入 MDM 伺服器名稱 `https://manage.microsoft.com`。 CNAME 資源記錄必須具有下列資訊：
+2. **建立 CNAME** (選用)<br>建立公司網域的 **CNAME** DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
+
+    如果您目前在 DNS 中有 CNAME，它會將EnterpriseEnrollment.contoso.com 重新導向到 manage.microsoft.com，我們建議您在 DNS 中將它取代為把 EnterpriseEnrollment.contoso.com 重新導向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建議進行這項變更，因為 manage.microsoft.com 端點即將取代為未來版本中的註冊。
+
+    CNAME 資源記錄必須具有下列資訊：
 
   |類型|主機名稱|指向|TTL|
   |--------|-------------|-------------|-------|
@@ -55,8 +59,12 @@ Intune 系統管理員有兩種方式可為 Windows 電腦啟用註冊與管理�
 
 4.  **選擇性步驟**<br>Windows 10 不需要**新增側載金鑰**步驟。 只有在您將無法在 Windows 市集使用的企業營運 (LOB) 應用程式散發到裝置時，才需要**上傳程式碼簽署憑證**步驟。
 
-6.  **通知使用者**<br>您將必須讓使用者知道如何註冊其裝置，以及開始管理之後會發生的情況：
-      - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **告訴使用者如何註冊其裝置，以及開始管理之後會發生的情況。**
+
+    如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](../enduser/enroll-your-device-in-intune-windows.md)。
+
+    如需使用者工作的詳細資訊，請參閱下列文章：
+      - [使用 Microsoft Intune 之使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [適用於 Windows 裝置的使用者指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>請參閱
@@ -64,6 +72,6 @@ Intune 系統管理員有兩種方式可為 Windows 電腦啟用註冊與管理�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -7,22 +7,22 @@ manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
-ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# 設定及部署 Lookout for Work 應用程式
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>設定及部署 Lookout for Work 應用程式
 本文說明如何為 Android 和 iOS 裝置，設定和部署 Lookout for Work 應用程式。
 
-## Android (Google Play 商店應用程式)
+## <a name="android-google-play-store-app"></a>Android (Google Play 商店應用程式)
 
 * **步驟 1：   **在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)中，移至 [應用程式]，然後選擇 [新增應用程式]。   
 * **步驟 2**︰   在發行者的 [軟體安裝程式] 頁面上，選擇 [外部連結]，然後指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
@@ -47,7 +47,7 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 * **步驟 6**︰選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
 
 
-## iOS (Lookout 應用程式的企業簽章版本)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (Lookout 應用程式的企業簽章版本)
 
 * **步驟 1**：確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置之 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
@@ -82,7 +82,7 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
 
-## 在裝置上開啟已部署的應用程式時，會發生什麼事
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在裝置上開啟已部署的應用程式時，會發生什麼事
 
 
 
@@ -93,11 +93,11 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 * [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 * [啟用相容性原則中的裝置威脅保護規則](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

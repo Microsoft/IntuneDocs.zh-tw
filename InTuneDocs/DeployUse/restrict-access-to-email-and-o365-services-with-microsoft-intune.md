@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/29/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 68fc47ba9f63f2ba05abae1f0e5ae5c6b3dca463
 
 
 ---
 
-# 使用 Microsoft Intune 限制電子郵件、O365 和其他服務的存取
+# <a name="restrict-access-to-email-o365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 限制電子郵件、O365 和其他服務的存取
 您可以使用 Intune 的條件式存取來限制公司電子郵件和 O365 服務的存取。 Intune 的條件式存取功能可讓您確保只有與您所設定的規則相容的裝置，才能存取公司電子郵件和 O365 服務。
-## 條件式存取的運作方式
+## <a name="how-does-conditional-access-work"></a>條件式存取的運作方式
 相容性原則設定用來評估裝置的相容性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 條件式存取原則與相容性原則搭配使用時，只有相容的裝置才能存取服務。 相容性原則和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
 
 請記住，必須將相容性原則部署至使用裝置的使用者，才能評估裝置的相容性。
@@ -34,7 +34,7 @@ ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
 
 ![此圖顯示用來決定允許或禁止裝置存取服務的決策點](../media/ConditionalAccess4.png)
 
-## 如何設定條件式存取？
+## <a name="how-to-configure-conditional-access"></a>如何設定條件式存取？
 使用條件式存取來管理 Microsoft **Exchange 內部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online** 和**商務用 Skype Online** 的存取。
 
 若要設定條件式存取，請設定裝置相容性原則和條件式存取原則。
@@ -49,10 +49,10 @@ ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
 不同於其他 Intune 原則，您不用部署條件式存取原則。 反之，一旦您設定原則並選取應該有此原則的使用者，此原則就會套用至所有目標使用者。 當使用者成為原則的目標時，他們使用的每個裝置都必須相容，才能存取資源。
 
 
-## 後續步驟
-1. [了解裝置相容性原則及其運作方式 ](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+## <a name="next-steps"></a>後續步驟
+1. [了解裝置合規性原則及其運作方式](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
-2. [建立相容性原則](create-a-device-compliance-policy-in-microsoft-intune.md)
+2. [建立合規性原則](create-a-device-compliance-policy-in-microsoft-intune.md)
 
 2.  針對下列項目建立條件式存取原則：
 > [!div class="op_single_selector"]
@@ -66,6 +66,6 @@ ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

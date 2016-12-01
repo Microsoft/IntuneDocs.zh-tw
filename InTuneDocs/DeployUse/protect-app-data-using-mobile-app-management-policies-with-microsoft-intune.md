@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: fc484be99d0956e707f96c0c285b2750754f746c
 
 
 ---
 
-# 使用行動應用程式管理原則搭配 Microsoft Intune 保護應用程式資料
+# <a name="protect-app-data-using-mobile-app-management-policies-with-microsoft-intune"></a>使用行動應用程式管理原則搭配 Microsoft Intune 保護應用程式資料
 
-## 如何保護應用程式資料
+## <a name="how-you-can-protect-app-data"></a>如何保護應用程式資料
 您的員工使用行動裝置處理公私事務。  確保員工生產力的同時，也要防止故意和不小心的資料外洩。  此外，即使您並不管理裝置，您也想要保護使用裝置所存取的公司資料。
 
 您可以使用行動裝置應用程式管理 (MAM) 原則來協助保護公司的資料。 因為 Intune MAM 原則可**獨立於任何行動裝置管理 (MDM) 解決方案之外**使用，不論是否在裝置管理解決方案中註冊裝置，都可以用它來保護公司的資料。 您可以實作**應用程式層級原則**，以限制存取公司資源，並將資料保留在 IT 部門範疇內。
@@ -54,21 +54,21 @@ MAM 原則可針對執行於下列裝置上的應用程式設定：
 - **MAM 原則確保應用程式層保護就定位**。 例如，如果資料可以在應用程式間共用，您可以要求在公務內容中開啟應用程式的 PIN，或防止公司應用程式資料儲存到個人的存放位置。
 
 
-### 下列平台目前支援 MAM：
+### <a name="mam-polices-are-currently-supported-on"></a>下列平台目前支援 MAM：
 -   iOS 8.1 或更新版本
 
 -   Android 4 或更新版本
 
 目前不支援 Windows 裝置。
-##  MAM 原則如何保護應用程式資料
+##  <a name="how-mam-policies-protect-app-data"></a>MAM 原則如何保護應用程式資料
 
-####  使用 MAM 原則的應用程式：
+####  <a name="apps-without-mam-policies"></a>使用 MAM 原則的應用程式：
 
 ![此圖顯示沒有 MAM 原則時可在應用程式之間自由移動資料](../media/Apps_without_MAM_policies.png)
 
 在沒有條件限制下使用應用程式時，公司和個人資料會互相混合。  公司資料最終可能放在個人存放裝置或傳送到外部應用程式，導致資料外洩。 圖中的箭號顯示資料在應用程式 (公司和個人) 之間無限制移動和移至儲存體位置。
 
-### 不使用 MAM 原則的資料保護：
+### <a name="data-protection-with-mam-policies"></a>不使用 MAM 原則的資料保護：
 
 ![此圖顯示套用 MAM 原則時如何保護公司資料 ](../media/Apps_with_mobile_app_policies.png)
 
@@ -76,7 +76,7 @@ MAM 原則可針對執行於下列裝置上的應用程式設定：
 - 資料重新配置原則，例如 [不可進行另存新檔]、[限制剪下、複製與貼上]。
 - 存取原則設定，例如 [需要簡單 PIN 碼才可存取]、[禁止受管理的應用程式在經過破解或刷機的裝置上執行]。
 
-### 在 MDM 解決方案所管理的裝置上使用 MAM 原則保護資料︰
+### <a name="data-protection-with-mam-policies-on-devices-managed-by-a-mdm-solution"></a>在 MDM 解決方案所管理的裝置上使用 MAM 原則保護資料︰
 
 ![此圖顯示 MAM 原則在 BYOD 裝置上的運作方式](../media/MAM_BYOD_November.png)
 
@@ -101,7 +101,7 @@ MDM 解決方案：
 -   抹除應用程式中的公司資料，但不從裝置移除這些應用程式
 
 
-### 在未註冊的裝置上使用 MAM 原則保護資料
+### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>在未註冊的裝置上使用 MAM 原則保護資料
 
 ![此圖顯示 MAM 原則在受管理裝置上的運作方式](../media/MAM_ManagedDevices_November.png)
 
@@ -117,7 +117,7 @@ MDM 解決方案：
 -   您無法在這些裝置上佈建公司 Wi-Fi 和 VPN 設定。
 
 
-## 多重身分識別
+## <a name="multi-identity"></a>多重身分識別
 
 在工作環境中使用應用程式且套用 MAM 原則時，多重身分識別讓您能夠使用不同的帳戶 (工作和個人) 來存取相同的應用程式。  
 
@@ -125,13 +125,13 @@ MDM 解決方案：
 
 所有的 Office 行動裝置應用程式都支援多重身分識別。
 
-##  後續步驟
+##  <a name="next-steps"></a>後續步驟
 [準備設定行動應用程式管理原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
