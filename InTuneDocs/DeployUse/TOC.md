@@ -1,9 +1,9 @@
 # [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
-# [開始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [開始使用](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
-# [部署與使用](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# 部署與使用
 ## [裝置和應用程式生命週期的概觀](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [裝置生命週期](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [應用程式生命週期](overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -89,7 +89,7 @@
 ### [Android for Work 應用程式設定原則](afw-app-configuration-policy.md)
 ### [iOS 行動應用程式佈建設定檔](ios-mobile-app-provisioning-profiles.md)
 ### [管理網際網路存取](manage-internet-access-using-managed-browser-policies.md)
-
+### [側載 LOB 應用程式](sideload-apps-for-windows.md)
 
 ## [保護應用程式和資料](protect-apps-and-data-with-microsoft-intune.md)
 ### [裝置相容性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -154,6 +154,6 @@
 # [疑難排解](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

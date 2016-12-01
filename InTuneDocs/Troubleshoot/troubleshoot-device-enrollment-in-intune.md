@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
 
--   [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [設定 iOS 和 Mac 裝置管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [設定 Windows 裝置管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="device-cap-reached"></a>已到達裝置上限
 **問題**：使用者於註冊期間在其裝置上收到錯誤 (例如 iOS 裝置上的 [公司入口網站暫時無法使用] 錯誤)，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
 
-**解決方式：** 根據設計，使用者只能註冊 5 個 (含) 以下的裝置。
+**解決方法：**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>檢查已註冊及允許的裝置數目
 
-1.  在 Intune 管理入口網站中，驗證指派給使用者的裝置未超過 5 部
+1.  在 Intune 管理入口網站中，驗證指派給使用者的裝置未超過允許的 15 部上限。
 
-2.  在 Intune 管理入口網站的 [系統管理]\[行動裝置管理]\[註冊規則] 下，確認裝置註冊限制設定為 5
+2.  在 Intune 管理主控台的 [系統管理]\[行動裝置管理]\[註冊規則] 下，確認已將裝置註冊限制設定為 15。
 
 行動裝置使用者可以刪除下列 URL 的裝置： [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)。
 
@@ -89,7 +89,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
 **問題**：使用者在裝置上收到 [公司入口網站暫時無法使用] 錯誤。
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>公司入口網站暫時無法使用錯誤疑難排解
+**解決方法：**
 
 1.  從裝置移除 Intune 公司入口網站應用程式。
 
@@ -104,7 +104,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
 **問題**：使用者收到 [MDM 授權單位未定義] 錯誤。
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>MDM 授權單位未定義錯誤疑難排解
+**解決方法：**
 
 1.  確認所設定的 MDM 授權單位適用於您使用的 Intune 服務版本，這些服務包括 Intune、O365 MDM 或 System Center Configuration Manager (含 Intune)。 若是 Intune，MDM 授權單位會在 [系統管理] &gt; [行動裝置管理] 中設定。 若是具備 Intune 的 Configuration Manager，您會在設定 Intune 連接器時進行設定；至於 O365，則為 行動裝置]**[** 設定。
 
@@ -152,16 +152,65 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ## <a name="android-issues"></a>Android 的問題
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」
+**問題：**一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
+
+- 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
+- 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
+- 受條件式存取原則所保護的使用者可能會遺失對公司資源的存取權。
+
+Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 會停用 Intune 公司入口網站及其元件。 當公司入口網站處於已停用狀態時，就不能在背景中執行，因而無法連絡 Intune 服務。
+
+**解決方法 1：**
+
+告知使用者手動啟動公司入口網站應用程式。 一旦應用程式重新啟動之後，裝置就會使用 Intune 服務進行簽入。
+
+> [!IMPORTANT]
+> 手動開啟公司入口網站應用程式是暫時性解決方案，因為 Samsung Smart Manager 可能會再次停用公司入口網站應用程式。
+
+**解決方法 2：**
+
+告訴使用者嘗試升級到 Android 6.0。 停用問題在 Android 6.0 裝置上不會發生。 若要檢查是否有可用的更新，使用者可以前往 [設定] > [關於裝置] > [手動下載更新]，然後依照裝置上的提示執行。
+
+**解決方法 3：**
+
+如果解決方案 2 無法運作，請使用者遵循下列步驟，好讓 Smart Manager 排除公司入口網站應用程式：
+
+1. 在裝置上啟動 Smart Manager 應用程式。
+
+  ![選取裝置上的 Smart Manager 圖示](./media/smart-manager-app-icon.png)
+
+2. 選擇 [電池] 磚。
+
+  ![選取 [電池] 磚](./media/smart-manager-battery-tile.png)
+
+3. 在 [應用程式省電] 或 [應用程式最佳化] 下方，選取 [詳細資料]。
+
+  ![在 [應用程式省電] 或 [應用程式最佳化] 下方選取 [詳細資料]](./media/smart-manager-app-power-saving-detail.png)
+
+4. 從應用程式清單中選擇 [公司入口網站]。
+
+  ![從應用程式清單中選取 [公司入口網站]](./media/smart-manager-company-portal.png)
+
+5. 選擇 [關閉]。
+
+  ![從 [應用程式最佳化] 對話方塊中選取 [關閉]](./media/smart-manager-app-optimization-turned-off.png)
+
+6. 在 [應用程式省電] 或 [應用程式最佳化] 下方，確認公司入口網站已關閉。
+
+  ![確認公司入口網站已關閉](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
 **問題**：使用者的 Android 裝置收到「設定檔安裝失敗」錯誤。
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
+**解決方法：**
 
 1.  確認已將您使用之 Intune 服務版本的適當授權指派給使用者。
 
 2.  確認未向其他 MDM 提供者註冊裝置，而且裝置尚未安裝管理設定檔。
 
-4.  確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
+3.  確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="android-certificate-issues"></a>Android 憑證問題
 
@@ -255,7 +304,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 ## <a name="pc-issues"></a>電腦問題
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
 **問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
@@ -307,6 +356,6 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

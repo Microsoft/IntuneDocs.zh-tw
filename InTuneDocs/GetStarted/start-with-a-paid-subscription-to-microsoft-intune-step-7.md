@@ -1,11 +1,11 @@
 ---
 title: "自訂公司入口網站 | Microsoft Intune"
-description: "為您的 Intune 訂閱自訂公司入口網站"
+description: "Intune 公司入口網站可讓使用者執行一般工作，例如註冊裝置、安裝應用程式，以及尋找 IT 部門資訊。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,46 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 15ef5c5b7f4c8aa2ceaa6867306e0e82a9835b02
 
 
 ---
 
+# <a name="customize-the-company-portal"></a>自訂公司入口網站
+Intune 公司入口網站是使用者存取公司資料並可以執行一般工作的位置，如註冊裝置、安裝應用程式，以及找到向 IT 尋求協助的資訊。
 
-# 自訂公司入口網站
-[!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] 是使用者存取公司資料並可以執行一般工作的位置，如註冊裝置、安裝應用程式，以及找到向 IT 尋求協助的資訊。
+Intune 公司入口網站可供使用者存取公司資料和應用程式。 公司入口網站有兩種形式︰
+
+-   **公司入口網站應用程式**：可在您使用 Intune 管理的裝置上使用的應用程式。 深入了解 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 適用的公司入口網站應用程式。
+
+
+- **公司入口網站**：一個網站，讓使用者可以執行大部分他們可從公司入口網站應用程式執行的工作。 Intune 公司入口網站 URL 為 [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com)。 在[使用 Intune 公司入口網站](/Intune/EndUser/using-the-intune-company-portal-website)深入了解此網站。
 
 > [!TIP]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要這麼做，只要以租用戶或服務管理員身分登入 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)，並選擇 [管理員] &gt; [公司入口網站]，然後進行公司入口網站設定。
+使用者可以在公司入口網站中執行的部分工作包括︰
+
+-   註冊裝置
+-   檢視其裝置的狀態
+-   重設其裝置
+-   重設其密碼
+-   遠端鎖定其裝置
+-   下載組織所部署的軟體
+-   連絡 IT 部門以取得支援
+
+> [!NOTE]
+> 某些國家/地區尚無法使用公司入口網站應用程式。
+> __iOS__：適用於 iOS 的公司入口網站應用程式已發佈至 Apple iOS App Store 的[所有適用區域](https://go.microsoft.com/fwlink/?linkid=831284)。
+> __Android__：中國目前無法使用適用於 Android 的公司入口網站應用程式。 針對上述這些國家/地區，替代方案是[側載公司入口網站應用程式的 Android 版本](https://www.microsoft.com/en-us/download/details.aspx?id=49140)。  
+
+## <a name="customize-company-portal-settings"></a>自訂公司入口網站設定
+自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 以租用戶或服務管理員身分登入 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)、選擇 [系統管理] &gt; [公司入口網站]，然後進行公司入口網站設定。
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
-## 公司連絡人資訊和隱私權聲明
+## <a name="company-contact-information-and-privacy-statement"></a>公司連絡人資訊和隱私權聲明
 公司名稱顯示為公司入口網站標題。 連絡資訊和詳細資料會在公司入口網站的 [連絡 IT] 畫面中向使用者顯示。 當使用者按一下隱私權連結時，會顯示隱私權聲明。
 
 |欄位名稱|長度上限|詳細資訊|
@@ -43,7 +65,7 @@ ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
     |其他資訊|120|顯示在 [連絡 IT] 頁面中。|
     |公司隱私權聲明 URL|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須使用 https://www.contoso.com 格式輸入有效的 URL。|
 
-## 支援連絡人
+## <a name="support-contacts"></a>支援連絡人
 支援網站將會顯示在公司入口網站中，讓使用者能夠存取線上支援。
 
 |欄位名稱|長度上限|詳細資訊|
@@ -51,7 +73,7 @@ ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
     |支援網站 URL|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 這個 URL 必須使用 https://www.contoso.com 的格式。 如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|
     |網站名稱|40|這是支援網站的 URL 所顯示的易記名稱。 如果您指定支援網站 URL，但沒有指定易記名稱，則公司入口網站的 [連絡 IT] 頁面上將會顯示 [移到 IT 網站]。|
 
-## 公司商標自訂
+## <a name="company-branding-customization"></a>公司商標自訂
 您可以使用公司標誌、公司名稱、佈景主題色彩和背景自訂您的公司入口網站。
 
 |欄位名稱|詳細資訊|
@@ -63,7 +85,7 @@ ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
 
 儲存變更之後，您可以使用管理主控台之 [公司入口網站] 頁面下方提供的連結，檢視公司入口網站。 這些連結無法變更。 當使用者登入時，這些連結會顯示您在公司入口網站的訂閱。
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛完成 *Intune 快速入門指南*的步驟 7。
 >[!div class="step-by-step"]
 
@@ -71,6 +93,6 @@ ms.openlocfilehash: bd24bc2ef3ff0ce8375440df147b48d8173d2525
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

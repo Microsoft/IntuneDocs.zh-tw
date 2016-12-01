@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,28 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 5972910bf64274685298877da9bf4a0a6c5fd626
+ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
+ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
 
 
 ---
 
 
-# 建立群組來組織使用者和裝置
+# <a name="create-groups-to-organize-users-and-devices"></a>建立群組來組織使用者和裝置
 Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您可以設定群組，使其符合組織的需求 (例如依據地理位置、部門或硬體特性設定)，並且使用它們來執行各種管理工作，從部署一組使用者的原則至部署一組裝置的應用程式皆可。
+
+## <a name="group-management-moving-to-azure-ad"></a>移至 Azure AD 的群組管理
+
+**從 2016 年 11 月開始**，新的帳戶將會在 Azure Acitve Directory (AD) 入口網站中管理使用者和裝置群組。 從 2016 年 12 月開始，Intune 產品小組會將現有客戶遷移至以新 Azure AD 為基礎的群組管理體驗。 所有的使用者和裝置群組都會移轉至 Azure AD 安全性群組。 我們會等到對您的日常工作所造成的任何影響降到最低，並且預期對您的使用者不會造成任何影響，再開始進行移轉。 我們也將在遷移您的帳戶之前通知您。
+
+
+>[!IMPORTANT]
+>
+>如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 **Intune 使用者群組現以 Azure Active Directory 群組的方式管理**以及 Azure Active Directory 入口網站的連結，則表示您已經在 Intune 中使用*新的* Azure AD 安全性群組方法進行群組管理。 若要了解如何建立群組，請參閱[在 Azure Active Directory 中管理群組](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)。
+>
+>如果您看不到 Azure AD 入口網站的連結，則表示您仍是使用 Intune 入口網站來管理群組。
+
+## <a name="group-management-in-the-intune-portal"></a>Intune 入口網站中的群組管理
 
 裝置和使用者群組都是在 Intune 系統管理主控台的 [群組] 工作區中建立。
 
@@ -33,7 +46,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 > 若要深入了解如何使用群組，請參閱[利用 Microsoft Intune，使用群組管理使用者和裝置](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 
-## 建立裝置群組
+## <a name="create-a-device-group"></a>建立裝置群組
 使用裝置群組來部署 App 和更新，並設定其他功能。 例如，使用下列步驟設定「我的裝置」群組：
 
 1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組]  >  [概觀]  >  [建立群組]。
@@ -48,7 +61,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 您可以在 [群組] 工作區之 [所有裝置] 下的 [群組] 清單中，找到新建立的群組。 您也可以從這裡編輯或刪除該群組。
 
-## 建立使用者群組
+## <a name="create-a-user-group"></a>建立使用者群組
 以使用者群組來部署軟體和裝置原則。 例如，使用下列步驟設定「Intune 使用者」群組：
 
 1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組]  >  [概觀]  >  [建立群組]。
@@ -67,7 +80,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛完成 *Intune 快速入門指南*的步驟 5。
 
 >[!div class="step-by-step"]
@@ -76,6 +89,6 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "建立原則及發行應用程式 | Microsoft Intune"
-description: "為您的 Intune 訂閱建立原則及發行範例應用程式"
+title: "部署原則和應用程式 |Microsoft Intune"
+description: "您可以啟用原則設定，以及部署將在註冊裝置以進行管理之後立即套用的應用程式。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,94 +14,57 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# 建立原則及發行 App
-Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 若要深入了解，請參閱[透過 Microsoft Intune 原則管理裝置上的設定和功能](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。
+# <a name="create-policies-and-publish-apps"></a>建立原則和發行應用程式
+開始在 Intune 中註冊應用程式之前，您可以啟用要在將這些裝置納入管理之後立即部署的原則設定及應用程式。 Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 您可以設定原則、新增應用程式，以及部署這些應用程式，使裝置在 Intune 中註冊之後就能立即接收設定和應用程式。
 
-您可以使用 Intune 執行兩種類型的 App 安裝。 第一個是 **必要的安裝**，會自動將 App 部署到受管理的電腦。 另一個則是**可用的安裝**，會部署應用程式或應用程式的連結到 Intune 公司入口網站，讓使用者可以選擇是否要將其安裝在電腦上，或安裝在行動裝置上。
+原則和應用程式是平台特定的。
 
-下列步驟協助您設定行動裝置組態原則、Windows 電腦防火牆原則，並將 Skype 設定為可供行動裝置在註冊後安裝。
+## <a name="manage-device-settings"></a>管理裝置設定
 
-> [!TIP]
-> 加入並部署新的原則之後，您部署此原則的群組之所有使用者或裝置，都會繼承此設定，當做其基準原則。 稍後從 [原則] 工作區，您隨時可以檢閱和編輯這些原則的詳細資料。
+ 裝置原則設定是根據每個平台來設定和管理的。 您可以針對下列平台設定原則：
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android and和 Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (個人電腦與行動裝置)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows 小組](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [執行 Intune 軟體用戶端的 Windows 電腦](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## 建立並部署行動裝置組態原則
+您可以深入了解如何[透過 Microsoft Intune 原則管理裝置上的設定和功能](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)。
 
-1.  開啟 [Intune 管理主控台](https://manage.microsoft.com/)。
+## <a name="add-and-deploy-apps"></a>新增和部署應用程式
 
-2.  在左窗格中，選擇 [原則] 圖示。
+您可以將應用程式新增至 Intune，然後以下列兩種方式將它們部署到受管理的裝置：
+- **必要安裝** - 應用程式會將該應用程式自動安裝到受管理的裝置
+- **可用安裝** - 應用程式會出現在 Intune 公司入口網站中，讓使用者可以選擇是否要在其裝置上安裝它們
 
-    ![admin-console-policy-workspace](./media/policy.png)
+### <a name="add-apps"></a>新增應用程式
 
-3.  在 **[原則概觀]** 頁面的 **[工作]** 清單中，選擇 **[新增原則]**。
+您必須使用其中一種下列方法，先讓應用程式可以在 Intune 中取得：
+- [為已註冊的裝置新增應用程式](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [為 Intune 軟體用戶端電腦新增應用程式](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  在原則清單中，展開您想要建立原則的平台，然後選擇 **[一般設定]** > **[使用建議的設定建立及部署原則]** > **[建立原則]**。
+### <a name="deploy-apps"></a>部署 App
 
-> [!NOTE]
-> 裝置組態原則並沒有建議的設定，因為您有很多選項可以選擇。 您需要建立自訂裝置組態原則。
+應用程式現在已可在 Intune 中取得，您可將它部署到受管理的裝置：
+- [將應用程式部署到裝置](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- 部署大量採購應用程式：
+    - [iOS - 大量採購方案](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [商務用 Windows 市集](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  當提示 **[選取您要部署此原則的群組]** 時，請從可用群組的清單中選擇群組，再依序選擇 **[新增]**  >  **[確定]**。
-
-您的原則會出現在設定原則清單中，而且已經部署到 [Intune 使用者] 群組。 按兩下原則以檢視其設定。
-
-## 發佈適用於行動裝置的 Skype App
-
-1.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [應用程式] 圖示，然後選擇 [應用程式] > [新增應用程式]。 如果出現提示，請輸入您的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 認證。
-
-    ![admin-console-apps-workspace](./media/apps.png)
-
-    > [!NOTE]
-    > 當您第一次啟動 **Intune 軟體發行者** 時，安裝應用程式時會出現短暫延遲的現象。
-
-2.  檢閱安全性警告，然後選擇 **[執行]**。
-
-3.  在 **[開始之前]** 頁面上，選擇 **[下一步]**。
-
-4.  在 **[軟體安裝程式]** 頁面的 **[選取將此軟體開放給裝置使用的方式]** (Select how this software is made available to devices) 中，選擇 **[外部連結]**。
-
-5.  在 [指定 URL] 中輸入軟體的外部連結，然後選擇 [下一步]。 請確定您會在 URL 前面加上 **http://**。 對於 Skype App，可以使用符合您所使用行動裝置平台的下列連結：
-
-    -   **iOS：**[https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android：**[https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 或 Windows Phone 8.1：**[http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  在 [軟體描述] 頁面上，提供您要讓使用者在公司入口網站中看到的軟體資訊，然後選擇 [下一步]。 您可以使用下列設定 (在此範例中是 Skype)：
-
-    -   **發行者：** 輸入發行者的名稱："Microsoft"。
-
-    -   **名稱：** 輸入 **Skype**
-
-    -   **描述:** 輸入軟體的描述，例如 **Skype 通訊 App**
-
-    -   **類別：** 選取最適合此軟體的類別，例如 [共同作業] 
-
-    -   **在公司入口網站中將此項目顯示為熱門應用程式，並予以反白：**選取此選項可在行動裝置上以顯目的方式將應用程式顯示在公司入口網站中。
-
-    -   **圖示：**選擇是否要讓圖示與軟體相關聯。 選擇性圖示的大小上限為 250 x 250 像素，建議的大小為 32 x 32 像素。
-
-7.  在 [摘要] 頁面上，驗證軟體資訊，然後選擇 [上傳]。 選擇 [關閉] 以結束精靈。
-
-8.  在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 **[應用程式]** > **[應用程式]** > **[Skype]** > **[管理部署]**。
-
-9. 在 **[選取群組]** 頁面上，選擇 **[Intune 使用者]**，將軟體部署到該使用者群組，然後選擇 **[新增]** > **[下一步]**。
-
-10. 在 [部署動作]  頁面中，從群組的 **[核准]** 欄選取 [可用安裝]  。
-
-11. 選擇 **[完成]**。
-
-現在可以從公司入口網站將 Skype 應用程式安裝到行動裝置，但首先您必須在電腦和行動裝置上安裝 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 軟體。
+    設定應用程式以進行部署之後，您可以[設定應用程式](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune)和[監視應用程式](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune)。
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛完成 *Intune 快速入門指南*的步驟 6。
 
 >[!div class="step-by-step"]
@@ -110,6 +73,6 @@ Intune 原則提供設定，協助您控制行動裝置上的安全性設定、�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

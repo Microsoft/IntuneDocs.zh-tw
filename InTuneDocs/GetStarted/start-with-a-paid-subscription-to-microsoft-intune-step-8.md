@@ -1,11 +1,11 @@
 ---
-title: "註冊行動裝置並安裝 App | Microsoft Intune"
-description: "註冊行動裝置並在已於 Intune 註冊的裝置上安裝應用程式"
+title: "啟用裝置註冊 | Microsoft Intune"
+description: "設定 MDM 授權單位並啟用對 iOS、Windows、Android 和 Mac 裝置的註冊。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,49 +14,50 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: ec478ad05b72a358dbce4f08a6b1a1f106a28303
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
 
 
 ---
 
-# 註冊行動裝置並安裝 App
-若要透過 Intune 設定行動裝置管理，您必須先設定行動裝置管理授權單位，並啟用裝置平台的管理，然後向公司入口網站應用程式註冊您的裝置。 接著便可部署您在步驟 6 發行的 Microsoft Skype 應用程式。
+# <a name="enroll-mobile-devices-and-install-an-app"></a>註冊行動裝置並安裝 App
+若要使用 Intune 設定行動裝置管理，您必須先設定*行動裝置管理授權單位*，以識別可管理與您帳戶相關聯之裝置的服務。 本指南假設您將使用 Intune 服務，而不是 System Center Configuration Manager。 一旦設定 MDM 授權單位之後，您就能啟用裝置平台的管理，並使用公司入口網站應用程式註冊您的裝置。
 
-## 啟用裝置管理並註冊裝置
+## <a name="enable-device-enrollment"></a>啟用裝置註冊
 
-1.  **讓 Intune 成為您的行動裝置管理授權單位**：在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 **[管理員]** > **[行動裝置管理]**，然後選擇 **[工作]** 下方的 **[設定 MDM 授權單位]**。  在 [MDM 授權單位] 對話方塊中，選擇 [是]。
+1. **讓 Intune 成為您的行動裝置管理授權單位**
+    在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [系統管理]**** > [行動裝置管理]****，然後選擇 [工作]**** 下方的 [設定 MDM 授權單位]****。  
+
+2. 在 [MDM 授權單位] 對話方塊中，選擇 [是]。
+
     ![管理主控台。 將 mdm 設為 Intune](./media/mdmAuthority.png)
 
-2.  **針對您的裝置平台啟用 MDM**：針對您想要管理的裝置平台啟用行動裝置管理。 依您的平台而異，需要使用不同的需求：
+## <a name="choose-how-to-enroll-devices"></a>選擇註冊裝置的方式
 
-    -   **iOS 和 Mac OS X**：請參閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。
+Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 「攜帶您自己的裝置」(BYOD)、屬公司擁有的裝置、「選擇您自己的裝置」(CYOD)，以及 Kiosk 模式的裝置只是幾個可用的註冊案例。
 
-    -   **Windows Phone**：請參閱[使用 Microsoft Intune 設定 Windows Phone 管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)。
+請依照下列步驟來[選擇註冊裝置的方式](choose-how-to-enroll-devices1.md)。
 
-    -   **Android**：Android 行動裝置可讓使用者使用 [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider) 提供的公司入口網站應用程式來註冊。 在 Intune 中無需進行其他設定。
+## <a name="enable-mdm-for-your-device-platform"></a>針對您的裝置平台啟用 MDM
+您必須針對 iOS、Mac 及 Android for Work 裝置啟用註冊，在平台提供者與您的 Intune 租用戶之間建立關聯性。 Windows 和 Android 裝置不需要額外的步驟，但針對 Windows 裝置，您可以藉由為使用者建立特殊的 DNS 登錄項目來簡化裝置註冊。
 
-3.  **註冊裝置**：
+針對您想要管理的裝置平台啟用裝置註冊。 依您的平台而異，需要使用不同的需求：
 
-    -   **Android** - 安裝 [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) 上 Microsoft Corporation 所提供的 **Intune 公司入口網站** App，然後使用上述新增的 Intune 使用者認證登入。
+-  [iOS 和 macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Windows 電腦](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Windows 10 行動裝置版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS 和 Mac OS X** - 安裝 App Store 上 Microsoft Corporation 所提供的 **Microsoft Intune 公司入口網站**應用程式，然後使用上述新增的 Intune 使用者認證登入。 檢視 [註冊的裝置]  以新增您的裝置。
+註冊啟用之後，使用者可以將公司入口網站應用程式下載至其裝置，並完成裝置註冊程序。
 
-    -   **Windows Phone 8.1** - 使用者會安裝 Windows Phone 市集上 Microsoft Corporation 所提供的**公司入口網站** App，然後使用上述新增的 Intune 使用者認證登入。  檢視 [註冊的裝置]  以新增您的裝置。
+### <a name="enable-company-owned-device-enrollment"></a>啟用屬公司擁有的裝置註冊
+您也可以啟用各種不同的[屬公司擁有的裝置註冊](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices)案例，包括：
+- [Apple 裝置註冊方案](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Apple Configurator 設定助理註冊](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Apple Configurator 設定助理註冊](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [裝置註冊管理員](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0** - 使用者可以選擇 **[系統設定]** &gt; **[公司應用程式]**，然後使用上述新增的 Intune 使用者認證登入。 公司入口網站應用程式會部署到您的手機上。
-
-    如果系統提示您提供 **伺服器位址**，請輸入 "manage.microsoft.com"。
-
-## 在已註冊的裝置上安裝應用程式
-在本快速入門指南的[步驟 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) 中，您已發佈 Skype 應用程式到您的自訂 Intune 使用者群組。 您現在將在新註冊的裝置上安裝該應用程式。
-
-在已註冊的行動裝置上開啟公司入口網站，選擇 **[應用程式]**，然後安裝 **Microsoft Skype**。
-
-若要深入了解如何使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理行動裝置，請參閱 [Microsoft Intune 中註冊裝置的必要條件](/intune/deploy-use/prerequisites-for-enrollment)。
-
-
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛完成 *Intune 快速入門指南*的最後一個步驟。 在您完成初始設定之後，您可以考慮啟用其他 MDM 功能。
 
 >[!div class="step-by-step"]
@@ -65,6 +66,6 @@ ms.openlocfilehash: ec478ad05b72a358dbce4f08a6b1a1f106a28303
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
