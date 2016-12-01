@@ -14,13 +14,13 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
 ---
 
-# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>註冊屬公司擁有的裝置註冊方案 iOS 裝置
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>註冊屬公司擁有的裝置註冊方案 iOS 裝置
 Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊透過裝置註冊方案 (DEP) 購買的 iOS 裝置。 註冊套件可以包括裝置的設定助理選項。 透過 DEP 註冊的裝置不能由使用者取消註冊。
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 裝置的 Apple DEP
@@ -56,7 +56,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
     在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
 
     提供 [一般] 詳細資料 (包括 [名稱] 和 [描述])，並指定指派給設定檔的裝置是否具有使用者親和性，或隸屬於某個群組。
-      - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後才能以該使用者身分存取公司資料與電子郵件。 如果受 DEP 管理的裝置是屬於使用者，且裝置會使用公司入口網站 (以安裝應用程式)，則必須為此裝置設定**使用者親和性**。</br> **注意**︰具有使用者親和性的 DEP 裝置不支援多重要素驗證。
+      - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後才能以該使用者身分存取公司資料與電子郵件。 如果受 DEP 管理的裝置是屬於使用者，且裝置會使用公司入口網站 (以安裝應用程式)，則必須為此裝置設定**使用者親和性**。 在具有使用者親和性的 DEP 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 
 
       > [!NOTE]
       > 具有使用者親和性的 DEP 必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。
@@ -116,6 +116,6 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

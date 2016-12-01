@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: bb94cb21bce5fb25c821b6a01d952ccba2f94834
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
 ---
@@ -81,7 +81,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
         111111111,PO 1234
         ```
 
-    -   **手動新增裝置詳細資料**&mdash;輸入最多五個裝置的序號和裝置詳細資料。
+    -   **手動新增裝置詳細資料**&mdash;輸入最多 15 部裝置的序號和裝置詳細資料。
 
     > [!NOTE]
     > 如果您稍後必須從 Intune 管理中移除公司所擁有的裝置，您可能需要從 [公司預先註冊的裝置] 下的 [依 iOS 序號] 裝置群組中移除裝置序號，以停用裝置註冊。 如果 Intune 在您移除序號期間或前後執行災害復原程序，則您必須確認該群組中只會出現使用中裝置的序號。
@@ -151,6 +151,6 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "使用裝置註冊管理員進行註冊 | Microsoft Intune"
 description: "裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 
 ---
 
 
-# 使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置
-組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是特殊的 Intune 帳戶，最多可以註冊 1,000 部裝置。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。 例如，使用者不能使用「原生」的電子郵件應用程式。
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置
+組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是特殊的 Intune 帳戶，最多可以註冊 1,000 部裝置。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。 例如，使用者不能使用「原生」的電子郵件應用程式。
 
 例如，您可以將裝置註冊管理員使用者帳戶指派給店長或主管，讓他們：
 
@@ -50,10 +51,10 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 > 若要將公司應用程式部署到受裝置註冊管理員管理的裝置，請以 [必要安裝] 將公司入口網站應用程式部署到裝置註冊管理員的使用者帳戶。
 > 為了改善效能，在 DEM 裝置上檢視公司入口網站應用程式只會顯示本機裝置。 只能從 Intune 管理主控台遠端管理其他 DEM 裝置。
 
-## 建立裝置註冊管理員帳戶
+## <a name="create-device-enrollment-manager-accounts"></a>建立裝置註冊管理員帳戶
 裝置註冊管理員帳戶是具有註冊大量公司所擁有裝置權限的使用者帳戶。 只有 Intune 主控台中的使用者才能是裝置註冊管理員。
 
-#### 將裝置註冊管理員新增至 Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>將裝置註冊管理員新增至 Intune
 
 1.  移至 [Microsoft Intune 帳戶入口網站](http://go.microsoft.com/fwlink/?LinkId=698854)，並登入系統管理員帳戶。
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 8.  裝置註冊管理員現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序註冊行動裝置。
 
-## 從 Intune 刪除裝置註冊管理員
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員
 
 1.  使用您的系統管理員認證登入 [Microsoft Intune 管理入口網站](http://manage.microsoft.com)。
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

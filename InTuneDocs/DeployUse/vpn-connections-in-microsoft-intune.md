@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: 00845ca053f443691a103c3d775906877eb59c9c
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
@@ -50,7 +50,7 @@ Intune 支援使用下列連線類型建立 VPN 設定檔：
 連線類型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |否  |否    | 是 (OMA-URI，僅限行動裝置)|     
-Cisco (IPsec)|是 |否   |否  |否  |否 | 否|
+Cisco (IPsec)|是 |是   |否  |否  |否 | 否|
 Citrix|是 |否   |否  |否  |否 | 否|
 Pulse Secure|是  |是 |是   |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
@@ -109,7 +109,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **Name**     |輸入 VPN 設定檔的唯一名稱，協助您在 Intune 主控台中識別該 VPN 設定檔。         
 **說明**     |提供概述 VPN 設定檔的描述以及協助您找到它的其他相關資訊。         
 **VPN 連線名稱 (對使用者顯示)**     |指定 VPN 設定檔的名稱。 這是使用者在其裝置的可用 VPN 連線清單中看到的名稱。         
-**連線類型**     |  請在下列項目中選取 VPN 設定檔要使用的連線類型：[Cisco AnyConnect (Windows 8.1 或 Windows Phone 8.1 不提供)]、[Pulse Secure]、[F5 Edge Client]、[Dell SonicWALL Mobile Connect]、[CheckPoint Mobile VPN]。
+**連線類型**     |  請在下列項目中選取 VPN 設定檔要使用的連線類型：[Cisco AnyConnect (Windows 8.1 或 Windows Phone 8.1 不提供)]、[Pulse Secure]、[Citrix]、[F5 Edge Client]、[Dell SonicWALL Mobile Connect]、[CheckPoint Mobile VPN]。
 **VPN 伺服器描述**     | 指定裝置將連線之 VPN 伺服器的描述。 範例：**Contoso VPN 伺服器**。 當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。
 **伺服器 IP 位址或 FQDN**    |提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。  當連線類型為 [F5 Edge Client] 時，使用 [伺服器清單] 欄位指定伺服器描述及 IP 位址的清單。         |         
 **伺服器清單**     |選擇 [新增] 來新增要用於 VPN 連線的新 VPN 伺服器。 您也可以指定哪部伺服器是連線時的預設伺服器。 只有在連線類型為 [F5 Edge Client] 時，才會顯示此選項。         
@@ -117,8 +117,8 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 **驗證方法**| 選取 VPN 連線使用的驗證方法：[憑證] 或 [使用者名稱及密碼]。 (當連線類型為 Cisco AnyConnect 時，無法使用 [使用者名稱及密碼])。Windows 8.1 沒有 [驗證方法] 選項。
 **在每次登入時記住使用者認證**|選取此選項，確保記住使用者認證，讓使用者不必每次建立連線時都輸入認證。
 **選取用戶端驗證的用戶端憑證 (身分識別憑證)**|選取先前建立的用戶端 SCEP 憑證，並用來驗證 VPN 連線。 如需如何使用 Intune 中憑證設定檔的詳細資訊，請參閱[使用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)。 只有在驗證方法是 [憑證] 時，才會顯示此選項。
-**角色**| 指定有權存取此連線之使用者角色的名稱。 使用者角色定義個人設定和選項，以及啟用或停用某些存取功能。 只有在連線類型為 [Pulse Secure] 時，才會顯示這個選項。
-**領域**|指定您想要使用之驗證領域的名稱。 驗證領域就是 Pulse Secure 連線類型使用的驗證資源群組。 只有在連線類型為 [Pulse Secure] 時，才會顯示這個選項。
+**角色**| 指定有權存取此連線之使用者角色的名稱。 使用者角色定義個人設定和選項，以及啟用或停用某些存取功能。 只有在連線類型為 [Pulse Secure] 或 [Citrix] 時，才會顯示這個選項。
+**領域**|指定您想要使用之驗證領域的名稱。 驗證領域就是 Pulse Secure 或 Citrix 連線類型使用的驗證資源群組。 只有在連線類型為 [Pulse Secure] 或 [Citrix] 時，才會顯示這個選項。
 **登入群組或網域**|指定您想要連線之登入群組或網域的名稱。 只有在連線類型為 [Dell SonicWALL Mobile Connect] 時，才會顯示此選項。
 **指紋**|指定將用來確認是否可信任 VPN 伺服器的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還沒有指紋，則會提示使用者信任所連線的 VPN 伺服器，同時顯示指紋。 (使用者可手動驗證指紋，然後選擇 [信任] 即可連線)。只有在連線類型為 [CheckPoint Mobile VPN] 時，才會顯示此選項。
 **個別應用程式的 VPN**|如果您想要這個 VPN 連線與 iOS 或 Mac OS X 應用程式產生關聯，以在執行應用程式時開啟連線，請選取這個選項。 部署軟體時，您可以將 VPN 設定檔與應用程式產生關聯。 如需詳細資訊，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
@@ -153,7 +153,7 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 新的原則會顯示在 [原則] 工作區的 [設定原則] 節點中。
 
-### <a name="ondemand-vpn-for-ios-devices"></a>適用於 iOS 裝置的隨選 VPN
+### <a name="on-demand-vpn-for-ios-devices"></a>適用於 iOS 裝置的隨選 VPN
 您可以針對 iOS 8.0 和更新裝置設定隨選 VPN。
 
 > [!NOTE]
@@ -201,6 +201,6 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

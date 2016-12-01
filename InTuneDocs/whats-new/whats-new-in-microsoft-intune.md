@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/2/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,107 +14,73 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b5035c4560fa298af83fe0d016cd83b85959b450
-ms.openlocfilehash: 12c066ed165509cc9182a3735d516fa2dd3e6a90
+ms.sourcegitcommit: 8e88c14ad77d8fe1b4c0fe2e7676d126e6288146
+ms.openlocfilehash: bcd77b751c2059131558e1cbfeebd4d3f71086e5
 
 
 ---
-# <a name="whats-new-in-microsoft-intune-october-2016"></a>Microsoft Intune 的新功能 - 2016 年 10 月
+# <a name="whats-new-in-microsoft-intune---november-2016"></a>Microsoft Intune 的新功能 - 2016 年 11 月
 了解此 Microsoft Intune 版本中的新功能。 您也可以了解即將推出且您應該加以規劃的變更，以及過去版本的相關資訊。
 
 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://technet.microsoft.com/library/mt718155.aspx) (混合式新功能) 頁面。
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
-## <a name="whats-new"></a>新功能
+## <a name="new-capabilities"></a>新功能
 
-### <a name="conditional-access-for-mobile-application-management"></a>行動應用程式管理的條件式存取
-您將可以限制 Exchange Online 的存取，讓存取只能來自支援 Intune 行動應用程式管理原則的應用程式，例如 Outlook。 [這項新功能](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)可完美對應 Intune 行動應用程式管理 (MAM) 原則，讓您可以封鎖存取內建電子郵件用戶端或並未使用 Intune MAM 原則設定的其他應用程式。 這可確保您的使用者是利用使用 Intune MAM 保護的 App 來存取組織的資料。 您可以透過 Azure 入口網站，從 Intune 行動應用程式管理開始。 尋找 [設定] 刀鋒視窗中新的 [條件式存取] 區段。
+<!--### View App States for All Platforms in Real Time
+App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
 
-### <a name="conditional-access-for-windows-pcs"></a>Windows 電腦的條件式存取
-您現在可以透過 Intune 管理主控台建立條件式存取原則，來封鎖 Windows 電腦存取 [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) 和 [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)。 您也可以建立條件式存取原則來封鎖存取 Office 桌面及通用應用程式。
+### Streamline iOS App Management for your End Users
+Intune can now automatically take over management of the previously installed app and no end user action is required.
 
-### <a name="android-for-work-support"></a>Android for Work 支援
-Intune 現在已是 Android for Work 方案中的一部分。 我們將從這個月開始到未來幾個月中，陸續推出 AfW 功能的支援。 請注意，所提供的 AfW 應用程式部署採用新的分組與目標設定功能。 當新佈建的 Intune 服務帳戶可以使用 AfW 時，也隨之能夠使用此功能。
+Previously, if the end user of an enrolled iOS device installed an app from the App Store before you deployed that same app with a deployment action of __Available__, then the end user had to:
 
-現有 Intune 客戶在其租用戶移轉之後，即可在生產環境中使用此功能。 歡迎現有的 Intune 客戶在其租用戶完成移轉之前，先建立 Intune 試用帳戶來規劃及測試此功能。 對於分組與設定目標如有任何問題，請連絡我們 [移轉小組](mailto:intunegrps@microsoft.com)。
+1. Open the __Company Portal__.
+2. Select the app.
+3. Tap __Install__ to enable Intune to take over management of the app.-->
 
-[請參閱 Microsoft 有關 Android for Work 之 Intune 支援的公告](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/)。
+<!--### New Microsoft Intune Company Portal App for Windows 10 Devices
+Microsoft is releasing a new Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike - while still enabling all the same functionality that they are using today.
 
-下列 Intune 主題是全新主題，或更新的 Android for Work 資訊：
+The new app will also allow users to leverage additional platform features like single sign-on and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.-->
 
-IT 專業人員：
-- [設定 Android for Work](/intune/deploy-use/set-up-android-for-work)
-<!--- [Nathan Bigman's resource access topics]()-->
-- [使用 Intune 限制電子郵件存取 Exchange Online 及新版的 Exchange Online Dedicated](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
-- [使用 Intune 限制電子郵件存取 Exchange 內部部署及舊版的 Exchange Online Dedicated](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
-- [Android for Work 的相容性原則設定](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
-- [如何部署 Android for Work 應用程式](/intune/deploy-use/android-for-work-apps)
-- [設定Android for Work 應用程式套用行動裝置應用程式設定原則 ](/intune/deploy-use/afw-app-configuration-policy)
-- [Android for Work 原則設定](/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+<!--### Support for Windows Store for Business Apps Being Deployed as Available
+You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
-使用者：
-- [當您建立工作設定檔時會如何](/intune/enduser/what-happens-when-you-create-a-work-profile-android)
-- [建立工作設定檔並向 Intune 註冊您的裝置](/intune/enduser/create-a-work-profile-and-enroll-your-device-in-intune-android)
+### Conditional Access for MAM with SharePoint Online
 
-### <a name="lookout-integration-to-protect-ios-devices"></a>Lookout 整合以保護 iOS 裝置
-在十月，Microsoft 要整合 Lookout 的行動威脅保護解決方案，藉由偵測裝置上的惡意程式碼、高風險 App 等等，以保護 iOS 行動裝置。 Lookout 的解決方案有助於您判斷威脅層級 (可設定)。 您可以根據 Lookout 的風險評估，在 Intune 中建立相容性原則規則，來決定裝置相容性。 您可以利用條件式存取原則，根據裝置相容性狀態，允許或封鎖公司資源的存取。
+You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
 
-系統將會提示不相容 iOS 裝置的使用者進行註冊，並且要求使用者在其裝置上安裝 Lookout for Work 應用程式、啟動應用程式，並修復 Lookout for Work 應用程式中所報告的威脅，才能存取公司資料。 了解如何[設定及部署 Lookout for Work 應用程式](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps)。
-<!--TFS 1319493-->
+> [!IMPORTANT]
 
-<!--### New Microsoft Intune Company Portal available for Windows 10 devices
-Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 devices](https://go.microsoft.com/fwlink/?linkid=830663). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
+> __Intune 和 Android for Work 的更新__
 
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
+> 雖然您可以用__必要__動作部署 Android for Work 應用程式，但如果您已將 Intune 群組移轉至新的 Azure AD 群組，就只能將應用程式部署為__可用__。
 
-### <a name="intune-app-wrapping-tool-for-android"></a>Intune App Wrapping Tool for Android
-您可以使用 Intune App Wrapping Tool，讓應用程式使用 Intune 行動應用程式管理 (MAM) 原則。 現在不需要註冊裝置，即可支援 Intune MAM 原則。
+### <a name="intune-app-sdk-for-cordova-plugin-now-supports-mam-without-enrollment"></a>Intune App SDK for Cordova 外掛程式現在支援 MAM 而不必註冊
+應用程式開發人員可以現在使用 Intune App SDK for Cordova 外掛程式啟用 MAM 功能，而不必在其 Android 和 iOS 的 Cordova 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 外掛程式。
 
-### <a name="manage-printing-from-apps-managed-using-mam-policies"></a>從使用 MAM 原則管理的應用程式管理列印
-您現在可以防止有 MAM 原則的應用程式列印公司資料。 此設定可於 [Azure 入口網站](/Intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)取得，而且 [iOS](/Intune/deploy-use/ios-mam-policy-settings) 和 [Android](/Intune/deploy-use/android-mam-policy-settings) 裝置都支援。
-<!--TFS 1014328-->
-
-### <a name="support-for-fingerprints-on-android-devices"></a>Android 裝置的指紋支援
-Android 行動裝置應用程式管理 (MAM) 原則現在已可讓使用者使用其指紋存取應用程式，而無須輸入PIN 碼。 請參閱本文及其他 [Android 行動裝置應用程式管理原則設定](/Intune/deploy-use/android-mam-policy-settings)。
+### <a name="intune-app-sdk-xamarin-component-now-supports-mam-without-enrollment"></a>Intune App SDK Xamarin 元件現在支援 MAM 而不必註冊
+應用程式開發人員可以現在使用 Intune App SDK Xamarin 元件啟用 MAM 功能，而不必在其 Android 和 iOS 的 Xamarin 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)找到 Intune App SDK Xamarin 元件。
 
 ## <a name="notices"></a>通知
 
-### <a name="android-samsung-knox-compatibility-with-intune"></a>Intune 的 Android Samsung KNOX 相容性
-某些 Samsung Galaxy Ace 手機型號，Intune 無法作為 Samsung KNOX 裝置管理。 當您向 Intune 註冊這些裝置時，它們會作為標準的 Android 裝置管理。
+### <a name="symantec-signing-certificate-no-longer-requires-signed-windows-phone-8-company-portal-for-upload"></a>Symantec 簽署憑證不再需要已簽署的 Windows Phone 8 公司入口網站以進行上傳
+上傳 Symantec 簽署憑證不再需要已簽署的 Windows Phone 8 公司入口網站應用程式。 可以獨立上傳憑證。
 
-受影響的型號︰
+## <a name="deprecations"></a>棄用功能
 
-* SM-G313HU
-* SM-G313HY
-* SM-G313M
-* SM-G313MY
-* SM-G313U
+### <a name="support-for-the-windows-phone-8-company-portal"></a>Windows Phone 8 公司入口網站的支援
+對 Windows Phone 8 公司入口網站的支援現在將被取代。 對於 Windows Phone 8 和 WinRT 平台的支援已在 2016 年 10 月被取代。 對於 Windows 8 公司入口網站的支援也已在 2016 年 10 月被取代。
 
-您和您的使用者不需要採取任何進一步的動作。 如需詳細資訊，請瀏覽 [Samsung KNOX](https://www.samsungknox.com) 網站。
-
-### <a name="company-portal-app-for-windows-8-is-deprecated-support-for-windows-phone-8-and-windows-rt-platforms-are-being-deprecated"></a>Windows 8 的公司入口網站應用程式已淘汰，對 Windows Phone 8 和 Windows RT 平台的支援也逐步淘汰。
-Microsoft Intune 自 2016 年 10 月起會取代 Windows 8 公司入口網站應用程式的支援。 Microsoft Intune 也會取代 Windows Phone 8 和 Windows RT 平台的支援。 因此，您將無法註冊或更新任何 Windows Phone 8 或 Windows RT 裝置。
-
-您可以繼續管理已註冊的 Windows Phone 8、Windows RT 和 Windows 8 裝置。 將 Windows Phone 8 和 Windows 8 裝置更新為 Windows 8.1 和 Windows Phone 8.1，並使用對應的 Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式繼續將應用程式發佈至這些裝置，而不受中斷。
-
-我們從 2016 年 11 月開始淘汰對 Windows Phone 8 公司入口網站的支援。
-<!--TFS 1255391-->
-
-## <a name="whats-coming"></a>未來動態
-
-### <a name="new-microsoft-intune-company-portal-available-for-windows-10-devices"></a>Windows 10 裝置提供新的 Microsoft Intune 公司入口網站
-Microsoft 即將發行新的 Windows 10 裝置 Microsoft Intune 公司入口網站。 利用新的 Windows 10 通用格式的此應用程式，會為使用者提供應用程式內更新的使用者體驗，以及所有 Windows 10 裝置、電腦和類似行動裝置的相同體驗，同時啟用他們目前仍在使用的相同功能。
-
-新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Windows 市集安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
-<!--TFS 1016502-->
 
 ### <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [舊版的 Intune](previous-intune-releases.md)
+* [舊版的 Intune](whats-new-archive.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

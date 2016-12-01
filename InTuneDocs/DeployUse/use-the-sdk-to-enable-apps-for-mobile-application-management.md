@@ -1,6 +1,6 @@
 ---
 title: "使用 SDK 讓應用程式進行 MAM | Microsoft Intune"
-description: "本主題可讓您快速瀏覽為什麼應該使用 Intune SDK。"
+description: "本主題可讓您快速瀏覽為什麼應該使用 Intune App SDK。"
 keywords: 
 author: karthikaraman
 ms.author: karaman
@@ -14,32 +14,32 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
-ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
+ms.sourcegitcommit: 8c2d3f7fd7478130184b2c66beca8d6106e6dd87
+ms.openlocfilehash: e6d4036565dc0b2a88e282b9bda060971ae0c67e
 
 
 ---
 
-# 使用 SDK 讓應用程式進行行動應用程式管理
-使用 Microsoft Intune App SDK，讓 Intune 管理 iOS 或 Android 應用程式的特定功能。 啟用應用程式之後，即可將原則部署至應用程式。 這些原則會使用這些功能來保護公司資料。 您可以使用 SDK 實作的保護類型範例如下︰
+# <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>使用 SDK 讓應用程式進行行動應用程式管理
+使用 Microsoft Intune App SDK，讓 Intune 管理 iOS 或 Android 應用程式的特定功能。 啟用應用程式之後，即可將原則部署至應用程式。 這些原則會使用這些功能來協助保護公司資料。 您可以使用 SDK 實作的保護類型範例如下︰
 
--   防止使用者將公司文件複製到雲端
+-   防止使用者將公司文件複製到雲端。
 
 -   需要加密應用程式儲存至裝置的資料。
 
--   強制使用受管理的瀏覽器
+-   強制使用受管理的瀏覽器。
 
--   從應用程式遠端抹除公司資料
+-   從應用程式遠端抹除公司資料。
 
 您需要存取應用程式的原始程式碼才能使用 SDK，但可以啟用大部分的 SDK 功能，而不需要變更應用程式的行為。
 
 如需 SDK 的概觀，請參閱[概觀](/intune/develop/intune-app-sdk)頁面。 若要開始使用 Intune App SDK，請參閱[開始使用 Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)。
 
-### 請參閱
-[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+### <a name="see-also"></a>請參閱
+[決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

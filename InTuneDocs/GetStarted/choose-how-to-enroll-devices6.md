@@ -3,33 +3,34 @@ title: "選擇如何註冊行動裝置 | Microsoft Intune"
 description: "回答一些簡單的問題，以決定如何在 Intune 中註冊行動裝置"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2bfba29b5b2585f276a85a8dee7e62009e41ec3f
-ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 ---
-# 選擇如何註冊行動裝置
+# <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
 下列一系列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
-## **您會如何管理專用、公司擁有的裝置？**
+## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**您會如何管理專用、公司擁有的裝置？**
 
   > [!div class="button"]
 [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
 [iOS 設定助理 >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[使用 IMEI 標記](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[使用 IMEI 標記 >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   您可以透過下列方式，向專用的使用者註冊公司所擁有的裝置︰
 
@@ -44,6 +45,6 @@ ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

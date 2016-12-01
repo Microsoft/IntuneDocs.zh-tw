@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
-ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# 使用 Microsoft Intune 限制存取 SharePoint Online
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
 使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 條件式存取來控制存取位於 SharePoint Online 的檔案。
 條件式存取有兩個元件：
 - 裝置相容性原則，裝置必須符合此原則才算相容。
@@ -55,12 +55,12 @@ ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 -   如果裝置不相容，就會顯示訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站，讓他們找到問題的相關資訊，以及如何修復問題的方法。
 
-**條件式存取會在所有 SharePoint 網站上強制執行，並封鎖外部共用**
+**條件式存取並不適用於外部共用**。 若要了解如何防止租用戶或站台集合中的外部共用，請參閱 [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US) (管理 SharePoint Online 環境的外部共用)
 
 >[!NOTE]
 >如果您啟用 SharePoint Online 的條件式存取，建議您停用 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主題中所述之清單上的網域。  
 
-## 支援行動裝置
+## <a name="support-for-mobile-devices"></a>支援行動裝置
 - iOS 8.0 和更新版本
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
 - Windows Phone 8.1 和更新版本
@@ -72,7 +72,7 @@ ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 **不支援的瀏覽器將會被封鎖**。
 
-## 對電腦的支援
+## <a name="support-for-pcs"></a>對電腦的支援
 - Windows 8.1 及更新版本 (已向 Intune 註冊)
 - Windows 7.0、Windows 8.1 或 Windows 10 (已加入網域時)
 > [!NOTE]
@@ -92,9 +92,9 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
     新式驗證將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 2013 Windows 用戶端中，並啟用更佳的安全性，例如 **Multi-Factor Authentication** 和**憑證式驗證**。
 
 
-## 設定 SharePoint Online 的條件式存取
+## <a name="configure-conditional-access-for-sharepoint-online"></a>設定 SharePoint Online 的條件式存取
 
-### 步驟 1：設定 Active Directory 安全性群組
+### <a name="step-1-configure-active-directory-security-groups"></a>步驟 1：設定 Active Directory 安全性群組
 在開始之前，請先為條件式存取原則設定 Azure Active Directory 安全性群組。 您可以在 **Office 365 系統管理中心**或 **Intune 帳戶入口網站**中設定這些群組。 這些群組將用於設定原則的目標使用者，或將使用者豁免於原則。 當使用者成為原則的目標時，他們使用的每個裝置都必須相容，才能存取資源。
 
 您可以在 SharePoint Online 原則中指定兩種群組類型：
@@ -105,7 +105,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 如果使用者隸屬於這兩個群組，他們將免套用原則。
 
-### 步驟 2：設定及部署相容性原則
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步驟 2：設定及部署相容性原則
 如果您尚未這麼做，請建立相容性原則，並部署到 SharePoint Online 原則的目標使用者。
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 當您準備好時，請繼續執行 **步驟 3**。
 
-### 步驟 3：設定 SharePoint Online 原則
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>步驟 3：設定 SharePoint Online 原則
 接著，設定原則要求只有受管理和相容的裝置才可以存取 SharePoint Online。 這項原則會儲存在 Azure Active Directory。
 
 #### <a name="bkmk_spopolicy"></a>
@@ -148,7 +148,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
      Windows 電腦則必須已加入網域，或已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且相容。 您可以設定下列要求：
 
-     -   **裝置必須已加入網域或相容。** 如果您希望電腦已加入網域或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中設定的原則，請選擇此選項。 如果電腦不符合上述任一需求，則會提示使用者將裝置註冊到[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]。
+     -   **裝置必須已加入網域或符合規範。** 如果您希望電腦已加入網域或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中設定的原則，請選擇此選項。 如果電腦不符合上述任一需求，則會提示使用者將裝置註冊到[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]。
 
      -   **裝置必須已加入網域。** 選擇此選項會要求電腦必須已加入網域才能存取 Exchange Online。 如果電腦未加入網域，則會封鎖存取電子郵件並提示使用者連絡 IT 管理員。
 
@@ -166,7 +166,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
   **iOS**
 
-  ![iPad 上的憑證提示螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![iPad 上憑證提示的螢幕擷取畫面](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 您不需部署條件式存取原則，它會立即生效。
 
-### 步驟 4：監視相容性及條件式存取原則
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步驟 4：監視相容性及條件式存取原則
 在 [群組]  工作區中，您可以檢視裝置的狀態。
 
 選取任何行動裝置群組，然後在 [裝置]  索引標籤上，選取下列 [篩選器] 其中之一：
@@ -190,11 +190,11 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 -   [已登錄了 AAD 並相容的裝置] – 這些裝置可以存取 SharePoint Online。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

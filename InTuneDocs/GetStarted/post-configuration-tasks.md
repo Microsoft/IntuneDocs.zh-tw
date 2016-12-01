@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# 組態後的工作
+# <a name="post-configuration-tasks"></a>組態後的工作
 完成 Intune 付費訂用帳戶初始組態步驟之後，您應該考慮啟用其他行動裝置管理功能。
 
 -   **將 Exchange 連線至 Intune：**針對還沒有在 Intune 中註冊的行動裝置使用者，您可以使用內部部署 Exchange 與 Microsoft Office 365 的 Exchange Online 連接器，啟用 Exchange ActiveSync 管理。 Exchange Connector 會建立您與 Exchange 部署間的連線，並讓您透過 Intune 系統管理主控台管理行動裝置。 若要深入了解 Exchange 連接器，請參閱[使用 Exchange ActiveSync 和 Microsoft Intune 的行動裝置管理](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
@@ -31,6 +31,6 @@ ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

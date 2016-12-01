@@ -13,12 +13,12 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
-ms.openlocfilehash: f93dc1d57e87b17bb949de8ad5476dd8abc364d0
+ms.sourcegitcommit: df77e1473532399056c3e0c1b4c4db3c7b6ba995
+ms.openlocfilehash: 0fc24f1c93cfcdb86c2a66c9a027b4ed9c516dab
 
 
 ---
-# 搭配 MAM CA 使用應用程式時的預期狀況
+# <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>搭配 MAM CA 使用應用程式時的預期狀況
 MAM CA 會透過裝置上必須有的 Broker 應用程式，來驗證核准的應用程式識別：
 *  在 **iOS** 上，**Azure Authenticator 應用程式**是 Broker 應用程式。
 * 在 **Android** 上，**Intune 公司入口網站應用程式**是 Broker 應用程式。 
@@ -32,8 +32,16 @@ MAM CA 會透過裝置上必須有的 Broker 應用程式，來驗證核准的�
 * deviceOSVersion
 * displayName
 
+## <a name="to-remove-a-device-from-azure-ad-registration"></a>移除 Azure AD 註冊的裝置。
+您可以透過 Azure AD 管理主控台移除裝置註冊，IT 系統管理員通常這麼做。  也可以讓使用者在裝置上進行。
 
-## MAM CA 與以裝置相容性為基礎的條件式存取  
+* **Azure AD 管理主控台**︰在 Azure AD 管理主控台**，刪除您想要移除的裝置。
+* **iOS 裝置**︰開啟 Azure Authenticator 應用程式，在帳戶向左撥動，然後選擇 [取消註冊]。  
+* **Android 裝置**︰解除安裝公司入口網站應用程式，或從 [系統設定] 移除帳戶。
+
+
+
+## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>MAM CA 與以裝置相容性為基礎的條件式存取  
 
 您可以在 [Intune 系統管理員主控台](https://manage.microsoft.com)或 [Azure AD Premium 管理主控台] (https://manage.windowsazure.com) 上設定[以裝置相容性為基礎的條件式存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**裝置 CA**)。 裝置 CA 要求使用者只透過符合 Intune 裝置相容性原則之受 Intune 管理的裝置或加入網域的電腦，來連線到 Exchange Online。  如果使用者屬於同時以 MAM CA 和裝置 CA 原則為目標的一或多個安全性群組，使用者必須符合下列兩個需求之一：
 * 用來存取服務的應用程式是 MAM CA 支援的行動裝置應用程式，且應用程式執行所在的裝置已安裝 **iOS Authenticator (適用於 iOS 裝置)** 或**公司入口網站應用程式 (適用於 Android 裝置)**。
@@ -44,17 +52,17 @@ MAM CA 會透過裝置上必須有的 Broker 應用程式，來驗證核准的�
 
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 [建立 MAM 應用程式的 Exchange Online 原則](mam-ca-for-exchange-online.md)
 
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 MAM 原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

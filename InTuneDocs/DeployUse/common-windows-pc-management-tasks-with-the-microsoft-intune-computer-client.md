@@ -14,8 +14,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
@@ -45,21 +45,20 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 
 |原則設定|詳細資料|
 |------------------|--------------------|
-|**Name**|管理電腦的系統管理員名稱。<br /><br />最大長度：40 個字元|
-|**電話號碼**|管理電腦之系統管理員的電話號碼。<br /><br />最大長度：20 個字元|
-|**電子郵件地址**|管理電腦之系統管理員的電子郵件地址。<br /><br />最大長度：40 個字元|
-|**網站名稱**|使用者支援網站的名稱。<br /><br />最大長度：40 個字元|
-|**網站 URL**|您的支援網站的 URL。<br /><br />最大長度：150 個字元|
-|**附註**|使用者看到的附註。<br /><br />最大長度：120 個字元|
+|**Name**|管理電腦的系統管理員名稱。<br />最大長度：40 個字元|
+|**電話號碼**|管理電腦之系統管理員的電話號碼。<br />最大長度：20 個字元|
+|**電子郵件地址**|管理電腦之系統管理員的電子郵件地址。<br />最大長度：40 個字元|
+|**網站名稱**|使用者支援網站的名稱。<br />最大長度：40 個字元|
+|**網站 URL**|您的支援網站的 URL。<br />最大長度：150 個字元|
+|**附註**|使用者看到的附註。<br />最大長度：120 個字元|
 
-## <a name="software-updates-settings"></a>軟體更新設定
-請使用原則來設定受管理電腦用來檢查和下載 Microsoft 和協力廠商提供之軟體更新的設定。 這些更新不包括作業系統升級 (亦即 從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
+請參閱下列資源以取得您可以為 Windows 電腦設定之原則和設定的相關資訊︰
 
-### <a name="endpoint-protection-settings"></a>Endpoint Protection 設定
-請使用原則來設定您隨後部署到受管理電腦的 Endpoint Protection 設定。 這包括掃描排程、偵測到惡意程式碼時採取的動作以及更多設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+- [在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 這些原則會讓受管理的電腦檢查軟體更新，並從 Microsoft 和協力廠商下載軟體更新。 這些更新不包括 OS 升級 (例如從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。
 
-## <a name="windows-firewall-settings"></a>Windows 防火牆設定
-原則可簡化受管理電腦上的 Windows 防火牆設定管理。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+- [使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - 這些設定包括掃描排程，以及偵測到惡意程式碼時要採取的動作。
+
+- [在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 這些原則可簡化受管理電腦上的 Windows 防火牆設定管理。
 
 ## <a name="view-hardware-and-software-inventory"></a>檢視硬體與軟體清查
 Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列程序中的資訊，瞭解如何建立：
@@ -144,7 +143,7 @@ Intune 會收集受管理電腦的硬體和軟體詳細資訊。 請使用下列
 
     如果用戶端無法解除安裝，請參閱[疑難排解 Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) 以取得更多協助。
 
-## <a name="manage-userdevice-linking"></a>管理使用者裝置連結
+## <a name="manage-user-device-linking"></a>管理使用者裝置連結
 將軟體部署給使用者之前，您必須先將使用者連結到電腦。 您可以將單一使用者連結到多部電腦，但是每一部電腦只能連結到一個使用者。 使用者會自動連結到他們在 Intune 中使用公司入口網站註冊的任何電腦。
 
 ### <a name="to-link-a-user-to-a-computer"></a>若要將使用者連結到電腦
@@ -217,6 +216,6 @@ Microsoft Intune 可以使用另外購買的 [TeamViewer](https://www.teamviewer
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

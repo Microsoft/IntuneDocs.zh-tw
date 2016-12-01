@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: camoya
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: efb8dd90eab9bbcc77135ef2ff3e0ffd37d128bf
+ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
+ms.openlocfilehash: 80681cf6c1b76b70b1da00b4a1f1b56a3436014a
 
 
 ---
 
-# Microsoft Intune 支援網頁瀏覽器
+# <a name="microsoft-intune-supported-web-browsers"></a>Microsoft Intune 支援網頁瀏覽器
 
 設定 Intune 之前，請檢閱本主題及[開始進行前的須知](what-to-know-before-you-start-microsoft-intune.md)中列示的其他需求。
 
@@ -33,11 +33,11 @@ ms.openlocfilehash: efb8dd90eab9bbcc77135ef2ff3e0ffd37d128bf
 > [!Note]
 > 因為 Microsoft Edge 和行動瀏覽器不支援 [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx)，所以系統管理員主控台不予支援。 Intune 主控台在一段時間之後會從 Silverlight 經驗移動；最後，所有 Intune 的行動裝置和應用程式管理功能都可以在[新的 Microsoft Azure 入口網站中使用](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

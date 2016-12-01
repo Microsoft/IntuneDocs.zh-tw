@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,13 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: b0fe31c93712f156711af16ed4028537060e8edc
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 1d7aa8f028d57d4749706b8632aec342483cac5e
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>設定 iOS 和 Mac 裝置管理
-如需設定 iOS 或 Mac 裝置的說明，請參閱[透過 Intune 使用 iOS 或 Mac OS X 裝置](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)。
-
 Intune 可啟用 iPad、iPhone 和 Mac OS X 裝置的行動裝置管理 (MDM)，且可提供使用者對公司電子郵件和應用程式的存取。 Intune 需要 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 和 Mac 裝置。 將憑證新增到 Intune 之後，使用者就可以安裝公司入口網站應用程式來註冊其裝置，或者系統管理員可以設定[公司擁有的 iOS 裝置管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **設定 Intune**<br>
@@ -36,14 +34,20 @@ Intune 可啟用 iPad、iPhone 和 Mac OS X 裝置的行動裝置管理 (MDM)，
 3.  **取得 Apple 推送通知服務憑證**<br>
     前往 [Apple Push Certificates 入口網站](http://go.microsoft.com/fwlink/?LinkId=269844)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 在 Apple Push Certificates 入口網站上選擇 [上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 [Certificates for Third-Party Servers] (協力廠商伺服器的憑證)，然後選擇 [下載]。
 
-    下載 APNs (.pem) 憑證，並將該檔案儲存在本機。 稍後必須使用這個 Apple ID 來更新 APNs 憑證。
+    下載 APNs (.pem) 憑證，並將該檔案儲存在本機。 
+
+    > [!NOTE]
+    > 每年您都需要更新 (不是取代) 此 APNs 憑證。 使用相同的這個 Apple 識別碼登入 Apple Push Certificate 入口網站來更新憑證，然後使用本主題中的相同指示下載憑證，再將它上傳至 Intune。
 
 4.  **將 APNs 憑證新增至 Intune**<br>
     在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 [Apple ID]。 使用 APNs 憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
 
-5.  **告訴使用者如何使用公司入口網站存取公司資源**<br>
-    您的使用者必須知道如何註冊其裝置，以及開始管理之後會發生的情況。
-    - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **告訴使用者如何註冊其裝置來存取公司資源。**
+
+    如需使用者註冊指示，請參閱[在 Intune 中註冊您的 iOS 裝置](../enduser/enroll-your-device-in-intune-ios.md)和[在 Intune 中註冊您的 Mac OS X 裝置](../enduser/enroll-your-device-in-intune-mac-os-x.md)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
+
+    如需其他使用者工作的資訊，請參閱下列文章：
+    - [使用 Microsoft Intune 之使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [iOS 與 Mac 裝置的使用者指南](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 如果您的公司或組織為使用者購買 iOS 裝置，這些裝置也可以註冊為[公司擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)以納入管理。
@@ -53,6 +57,6 @@ Intune 可啟用 iPad、iPhone 和 Mac OS X 裝置的行動裝置管理 (MDM)，
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
