@@ -14,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
-ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
+ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
+ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
 
 
 ---
@@ -43,7 +43,7 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 
 針對您想要管理的裝置平台啟用裝置註冊。 依您的平台而異，需要使用不同的需求：
 
--  [iOS 和 macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [Windows 電腦](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 行動裝置版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +66,6 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

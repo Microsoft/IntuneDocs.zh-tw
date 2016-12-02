@@ -4,15 +4,15 @@ description: "使用 Intune 管理 Android for Work 可為使用 Android 裝置�
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: aafeb58e28144740540a765ac04de68b41ae5ce5
+ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
+ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
 
 
 ---
@@ -43,7 +43,7 @@ Google Play for Work 服務屬於應用程式散發及管理的一部分。 工�
 
 ## <a name="app-configuration"></a>應用程式組態
 
-Android for Work 提供部署應用程式設定值到支援這些值之應用程式所需的基礎結構。 為工作應用程式指定設定值，可確保使用者第一次啟動應用程式時，就是使用正確設定的值。 應用程式設定支援需要應用程式開發人員在建立其 Android 應用程式時，特別將其設定成支援受管理的值。 若要執行此作業，可以使用 Intune 指定及套用這些組態設定。 深入了解 [Android for Work 應用程式的組態設定](deploy-use/afw-app-configuration-policy.md)。
+Android for Work 提供部署應用程式設定值到支援這些值之應用程式所需的基礎結構。 為工作應用程式指定設定值，可確保使用者第一次啟動應用程式時，就是使用正確設定的值。 應用程式設定支援需要應用程式開發人員在建立其 Android 應用程式時，特別將其設定成支援受管理的值。 若要執行此作業，可以使用 Intune 指定及套用這些組態設定。 深入了解 [Android for Work 應用程式的組態設定](afw-app-configuration-policy.md)。
 
 ## <a name="email-configuration"></a>電子郵件組態
 
@@ -77,7 +77,7 @@ VPN 支援類似於 Android VPN 設定檔， 會提供相同的 VPN 提供者與
 
 深入了解[憑證設定檔](secure-resource-access-with-certificate-profiles.md)。
 
-## <a name="wifi-profiles"></a>Wi-Fi 設定檔
+## <a name="wi-fi-profiles"></a>Wi-Fi 設定檔
 
 確保當裝置從 Intune 撤回並移除了工作設定檔之後，會移除 Android for Work 管理的 Wi-Fi 設定檔。 深入了解 [Wi-Fi 設定檔](wi-fi-connections-in-microsoft-intune.md)。
 
@@ -87,6 +87,6 @@ VPN 支援類似於 Android VPN 設定檔， 會提供相同的 VPN 提供者與
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

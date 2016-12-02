@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 >[!IMPORTANT]
 >
->如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 **Intune 使用者群組現以 Azure Active Directory 群組的方式管理**以及 Azure Active Directory 入口網站的連結，則表示您已經在 Intune 中使用*新的* Azure AD 安全性群組方法進行群組管理。 若要了解如何建立群組，請參閱[在 Azure Active Directory 中管理群組](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)。
+>如果您在 Intune 入口網站中開啟 [群組] 工作區，並看到 **Intune 使用者群組現以 Azure Active Directory 群組的方式管理**以及 Azure Active Directory 入口網站的連結，則表示您已經在 Intune 中使用*新的* Azure AD 安全性群組方法進行群組管理。 若要了解如何建立群組，請參閱[在 Azure Active Directory 中管理群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。
 >
 >如果您看不到 Azure AD 入口網站的連結，則表示您仍是使用 Intune 入口網站來管理群組。
 
@@ -89,6 +89,6 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

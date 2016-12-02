@@ -3,8 +3,7 @@
 title: "安裝電腦用戶端軟體 | Microsoft Intune"
 description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -104,7 +103,7 @@ Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用�
 
 當註冊成功或經過一個月之後 (取先達到者)，將會從目標電腦刪除 Intune 自動註冊工作、**WindowsIntuneEnrollPending** 登錄值與帳戶憑證。
 
-## <a name="instruct-users-to-selfenroll"></a>指示使用者自行註冊
+## <a name="instruct-users-to-self-enroll"></a>指示使用者自行註冊
 
 使用者可以前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 若入口網站能偵測出裝置為 Windows 電腦，就會提示使用者下載 Intune 軟體用戶端來註冊電腦。 下載軟體之後，使用者可以加以安裝來管理其電腦。
 
@@ -139,6 +138,6 @@ Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 
