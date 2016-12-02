@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
-ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
+ms.sourcegitcommit: 4f6e7525ae2a125851ad402644d5fbc8767c77dc
+ms.openlocfilehash: 9bfc8886b464452f8fe35d4b740607ef3bc07a71
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 -   如果裝置不相容，就會顯示訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站，讓他們找到問題的相關資訊，以及如何修復問題的方法。
 
-**條件式存取並不適用於外部共用**。 若要了解如何防止租用戶或站台集合中的外部共用，請參閱 [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US) (管理 SharePoint Online 環境的外部共用)
+**條件式存取並不適用於外部共用**。 若要了解如何防止租用戶或站台集合中的外部共用，請參閱 [為您的 SharePoint Online 環境管理外部共用](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >如果您啟用 SharePoint Online 的條件式存取，建議您停用 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主題中所述之清單上的網域。  
@@ -195,6 +195,6 @@ Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

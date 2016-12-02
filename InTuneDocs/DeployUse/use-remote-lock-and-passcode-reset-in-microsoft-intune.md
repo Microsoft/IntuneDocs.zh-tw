@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>透過遠端鎖定或密碼重設來協助保護您的裝置
@@ -25,6 +25,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 |平台|遠端鎖定|
 |------------|---------------|
+|macOS|不支援|
 |iOS|支援|
 |Android|支援|
 |Windows 10 和 Windows 10 Mobile|支援|
@@ -50,12 +51,14 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 |平台|密碼重設|
 |------------|------------------|
+|macOS|不支援|
 |iOS|支援從裝置清除密碼。 不會建立新的暫時密碼。|
 |Android|支援 Android 7.0 之前的版本。 建立暫時密碼。|
 |Windows 10 Mobile|支援|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
-|Windows RT 8.1 和 Windows RT|不支援|
+|Windows RT 8.1|不支援|
 |Windows 8.1|不支援|
+|Windows 10 Desktop|不支援|
 
 註冊了 Intune 軟體用戶端的 Windows 電腦不支援密碼重設。
 
@@ -76,6 +79,6 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

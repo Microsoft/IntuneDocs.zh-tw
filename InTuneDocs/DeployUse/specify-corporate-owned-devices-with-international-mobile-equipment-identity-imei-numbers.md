@@ -14,8 +14,8 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
 
 
 ---
@@ -40,7 +40,7 @@ Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台
 
     -   **手動新增裝置的詳細資料** - 輸入 IMEI 編號與裝置詳細資料，最多不得超過 15 部裝置。
 
-   *詳細資料*供系統管理之用，因此您可以指定裝置所關聯的 IMEI 編碼。 這項資訊不會傳送到裝置，但會出現在 Intune 主控台中。
+   [詳細資料] 欄位供系統管理之用。 您可以指定詳細資料，以協助識別屬公司擁有的裝置清單中依硬體識別碼列出的裝置。 這項資訊不會傳送到裝置，但會出現在 Intune 主控台中。
 
 2.   選擇 **[下一步]**。
 3.  在 [檢閱裝置] 窗格上，確認匯入之裝置的 IMEI 編碼。 您也可以決定是否要覆寫要重新匯入之 IMEI 編號的**詳細資料**。 您可以取消核取 [覆寫] 核取方塊，以保留目前的詳細資料。 選擇 **[完成]** 匯入 IMEI 編碼。
@@ -50,6 +50,6 @@ Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

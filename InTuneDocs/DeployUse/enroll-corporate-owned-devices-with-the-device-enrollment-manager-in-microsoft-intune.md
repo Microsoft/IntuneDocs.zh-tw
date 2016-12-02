@@ -14,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
 ---
 
 
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置
-組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是特殊的 Intune 帳戶，最多可以註冊 1,000 部裝置。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。 例如，使用者不能使用「原生」的電子郵件應用程式。
+組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是特殊的 Intune 帳戶，最多可以註冊 1,000 部裝置。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。 例如，使用者不能使用「原生」的電子郵件應用程式。 DEM 的授權是針對每部裝置，而非每位使用者。
 
 例如，您可以將裝置註冊管理員使用者帳戶指派給店長或主管，讓他們：
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 7.  輸入 Intune 帳戶的 [使用者識別碼]，然後選擇 [確定]。 裝置註冊管理員使用者不能是 Intune 系統管理員。
 
-8.  裝置註冊管理員現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序註冊行動裝置。
+8.  裝置註冊管理員現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序註冊行動裝置。 管理員使用者可以在最多 1000 部裝置上安裝公司入口網站應用程式，並使用其 DEM 認證註冊裝置。
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員
 
