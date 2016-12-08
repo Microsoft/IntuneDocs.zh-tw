@@ -15,7 +15,7 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
@@ -77,7 +77,7 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
     |**Name**|輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
     |**說明**|提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
-### <a name="omauri-settings"></a>OMA-URI 設定
+### <a name="oma-uri-settings"></a>OMA-URI 設定
 
    |設定名稱|詳細資料|
     |--------|--------------------|

@@ -15,7 +15,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
 
 
@@ -70,19 +70,19 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |**允許提交診斷資料**|允許裝置將診斷資訊提交到 Google。|否|是|
 |**允許恢復出廠預設值**|允許使用者在裝置上重設為原廠設定。|否|是|
 
-### <a name="cloud-settings-documents-and-data"></a>雲端設定 - 文件和資料
+### <a name="cloud-settings---documents-and-data"></a>雲端設定 - 文件和資料
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**允許 Google 備份**|允許使用 Google 備份。|否|是|
 
-### <a name="cloud-settings-accounts-and-synchronization"></a>雲端設定 - 帳戶和同步處理
+### <a name="cloud-settings---accounts-and-synchronization"></a>雲端設定 - 帳戶和同步處理
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**允許 Google 帳戶自動同步處理**|允許自動同步處理 Google 帳戶設定。|否|是|
 
-### <a name="application-settings-browser"></a>應用程式設定 - 瀏覽器
+### <a name="application-settings---browser"></a>應用程式設定 - 瀏覽器
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -92,13 +92,13 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |**允許 Cookie**|允許裝置的網頁瀏覽器使用 Cookie。|否|是|
 |**允許動態指令碼處理**|允許裝置的網頁瀏覽器使用動態指令碼處理。|否|是|
 
-### <a name="application-settings-apps"></a>應用程式設定 - 應用程式
+### <a name="application-settings---apps"></a>應用程式設定 - 應用程式
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**允許 Google Play 商店**|允許使用者在裝置上存取 Google Play 商店。|否|是|
 
-### <a name="device-capabilities-settings-hardware"></a>裝置功能設定 - 硬體
+### <a name="device-capabilities-settings---hardware"></a>裝置功能設定 - 硬體
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -111,7 +111,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |**允許藍牙**|允許在裝置上使用藍牙。|否|是|
 |**允許關閉電源**|可讓使用者關閉裝置電源。<br /><br />如果停用此設定，Samsung KNOX Standard 裝置的 [抹除裝置前允許的重複登入失敗次數] 設定無法運作。|否|是|
 
-### <a name="device-capabilities-settings-cellular"></a>裝置功能設定 - 行動電話通訊
+### <a name="device-capabilities-settings---cellular"></a>裝置功能設定 - 行動電話通訊
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -119,7 +119,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |**允許數據漫遊**|允許裝置在行動電話通訊網路時進行數據漫遊。|否|是|
 |**允許 SMS/MMS 傳訊**|允許在裝置上使用 SMS 和多媒體簡訊。|否|是|
 
-### <a name="device-capabilities-settings-features"></a>裝置功能設定 - 功能
+### <a name="device-capabilities-settings---features"></a>裝置功能設定 - 功能
 
 |設定名稱|詳細資料|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
@@ -188,7 +188,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
     |**Name**|輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
     |**說明**|提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
-### <a name="omauri-settings"></a>OMA-URI 設定
+### <a name="oma-uri-settings"></a>OMA-URI 設定
 
    |設定名稱|詳細資料|
     |--------|--------------------|
