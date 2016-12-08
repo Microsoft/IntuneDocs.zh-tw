@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設�
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>MAM 和 SharePoint Online 的條件存取 <!--VSO 679339-->
 您可以禁止不受 Intune 行動應用程式管理 (MAM) 原則支援的應用程式存取 SharePoint Online。  您可以在 Azure 入口網站中使用 Intune 行動應用程式管理開始進行。 在包含 SharePoint Online 選項的 [設定] 刀鋒視窗中，尋找 [條件存取] 區段。 這項功能將與服務版本的其餘部分分開提供。
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>限制 Intune 行動裝置註冊的能力
+Intune 正在新增新的註冊限制，以控制哪些行動裝置平台可以註冊。 Intune 將行動裝置平台分為 iOS、macOS、Android、Windows 和 Windows Mobile。 
+* macOS 和 Windows 8.1 或更新版本可能受限而無法註冊為行動裝置平台。 
+* 限制行動裝置註冊不會限制電腦代理程式註冊。 
+* 有一個僅適用於之iOS 的額外選項可封鎖個人擁有的裝置註冊。 Intune 會將所有的新裝置標示為個人，除非 IT 系統管理員採取動作將它們標示為公司擁有，如[本文章](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)所說明。
+
+
 ## <a name="notices"></a>通知
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>移至 Azure 入口網站的註冊相關 Multi-Factor Authentication <!--VSO 750545-->
@@ -82,6 +89,6 @@ Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
