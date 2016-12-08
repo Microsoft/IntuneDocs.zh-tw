@@ -14,7 +14,7 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
 
 
@@ -36,7 +36,7 @@ Exchange Connector可讓您在 Intune 主控台中管理您的 Exchange 部署�
 -   [為內部部署 Exchange 伺服器及舊版 Exchange Online 專用環境安裝 Intune 連接器](intune-on-premises-exchange-connector.md)
 
 
-## <a name="apply-policy-for-exchangemanaged-mobile-devices"></a>套用 Exchange 管理之行動裝置的原則
+## <a name="apply-policy-for-exchange-managed-mobile-devices"></a>套用 Exchange 管理之行動裝置的原則
 Intune 主控台可用以管理 [EAS 原則設定](exchange-activesync-policy-settings-in-microsoft-intune.md)，以及[限制公司資源的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。 如需特定行動服務支援的 Exchange ActiveSync 原則設定和功能清單，請參閱 [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Exchange ActiveSync 用戶端比較表)。
 
 > [!NOTE]

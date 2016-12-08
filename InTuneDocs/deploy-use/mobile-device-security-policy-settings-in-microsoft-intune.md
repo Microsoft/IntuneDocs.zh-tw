@@ -14,7 +14,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
@@ -133,7 +133,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**讓 Microsoft 帳戶變成 Windows Mail 應用程式的選用帳戶**|是|否|否|否|否|
 |**允許自訂電子郵件帳戶**|否|否|僅限 Windows Phone 8.1|否|否|
 
-## <a name="application-settings-browser"></a>應用程式設定 - 瀏覽器
+## <a name="application-settings---browser"></a>應用程式設定 - 瀏覽器
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -154,7 +154,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許企業模式功能表存取**|是|否|否|否|否|
 |**企業模式網站清單位置**|是|否|否|否|否|
 
-## <a name="application-settings-apps"></a>應用程式設定 - 應用程式
+## <a name="application-settings---apps"></a>應用程式設定 - 應用程式
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -167,14 +167,14 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許媒體市集中的成人內容**|否|否|否|是|否|
 |**允許應用程式安裝**|否|否|否|iOS 6 和更新版本|否|
 
-## <a name="application-settings-gaming"></a>應用程式設定 - 遊戲
+## <a name="application-settings---gaming"></a>應用程式設定 - 遊戲
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允許遊戲中心朋友**|否|否|否|是|否|
 |**允許多人連線遊戲**|否|否|否|是|否|
 
-## <a name="device-capabilities-settings-hardware"></a>裝置功能設定 - 硬體
+## <a name="device-capabilities-settings---hardware"></a>裝置功能設定 - 硬體
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +189,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許藍芽**|否|否|僅限 Windows Phone 8.1|否|是 (僅限 Samsung KNOX Standard)|
 |**允許關閉電源**<br>如果已停用此設定，Samsung KNOX Standard 裝置的 [抹除裝置前允許的重複登入失敗次數] 設定無法運作。|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-cellular"></a>裝置功能設定 - 行動電話通訊
+## <a name="device-capabilities-settings---cellular"></a>裝置功能設定 - 行動電話通訊
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -198,7 +198,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許在漫遊時自動同步處理**|否|否|否|是|否|
 |**允許 SMS/MMS 傳訊**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-features"></a>裝置功能設定 - 功能
+## <a name="device-capabilities-settings---features"></a>裝置功能設定 - 功能
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|

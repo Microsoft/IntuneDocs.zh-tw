@@ -14,18 +14,18 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c84b1e95b32ec878fffa001d0234940ebfb35576
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 
 
 ---
 
-# <a name="install-the-intune-onpremises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
+# <a name="install-the-intune-on-premises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
 
 
 若要設定連線，讓 Microsoft Intune 能夠與主控行動裝置信箱的 Exchange Server 通訊，您必須從 Intune 管理主控台下載並設定 On-Premises Exchange Connector。 Intune 僅支援每個訂用帳戶一個任一類型的 Exchange Connector 連線。
 
-## <a name="onpremises-exchange-connector-requirements"></a>On-Premises Exchange Connector 需求
+## <a name="on-premises-exchange-connector-requirements"></a>On-Premises Exchange Connector 需求
 下表列出安裝 On-Premises Exchange Connector 之電腦的需求。
 
 |需求|詳細資訊|
@@ -57,7 +57,7 @@ ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
  -   Set-ADServerSettings
  -   Get-Command
 
-## <a name="download-the-onpremises-exchange-connector-software-installation-package"></a>下載 On-Premises Exchange Connector 軟體安裝套件
+## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下載 On-Premises Exchange Connector 軟體安裝套件
 
 1. 在 On-premises Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com) (http://manage.microsoft.com)，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
 ![開啟 [設定 Exchange 連線]](../media/ExchangeConnector.gif)
@@ -71,7 +71,7 @@ ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 > [!IMPORTANT]
 > 請不要重新命名或移動 On-Premises Exchange Connector 資料夾內的檔案。 移動或重新命名資料夾的內容會造成安裝失敗。
 
-## <a name="install-and-configure-the-intune-onpremises-exchange-connector"></a>安裝和設定 Intune On-Premises Exchange Connector
+## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安裝和設定 Intune On-Premises Exchange Connector
 請執行下列步驟來安裝 Intune On-Premises Exchange Connector。 每個 Intune 訂閱只可安裝 On-Premises Exchange Connector 一次，而且只可安裝在一部電腦上。 如果您嘗試設定另一個 On-Premises Exchange Connector，則新連線會取代原始連線。
 
 1.  在 On-Premises Connector 支援的作業系統上，將 **Exchange_Connector_Setup.zip** 中的檔案解壓縮到安全位置。

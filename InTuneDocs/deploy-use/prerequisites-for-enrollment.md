@@ -14,7 +14,7 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 
 
@@ -119,7 +119,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 3.  使用者帳戶現在會加入至 Microsoft Intune 使用者群組，以授權使用者使用此服務並註冊裝置以納入管理。
 
-### <a name="to-synchronize-onpremises-users-with-azure-ad"></a>同步處理內部部署使用者與 Azure AD
+### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>同步處理內部部署使用者與 Azure AD
 
 1. 在內部部署 Active Directory 中，為自訂網域[新增 UPN 尾碼](https://technet.microsoft.com/en-us/library/cc772007.aspx)。
 2. 為您打算匯入的內部部署使用者設定新的 UPN 尾碼。
