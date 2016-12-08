@@ -14,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔
+# <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔
 以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 > [!NOTE]
@@ -58,7 +58,7 @@ ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
     > 此原則只能部署到使用者群組。
 
 每個裝置下一次簽入時，將套用此原則，並將裝置上建立 Wi-Fi 設定檔。 裝置可以自動連線到網路。
-## <a name="android-or-windows-wifi-profile"></a>Android 或 Windows Wi-Fi 設定檔
+## <a name="android-or-windows-wi-fi-profile"></a>Android 或 Windows Wi-Fi 設定檔
 
 Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
 
@@ -109,7 +109,7 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
       </MSM>
     </WLANProfile>
 
-## <a name="eapbased-wifi-profile"></a>EAP 型 Wi-Fi 設定檔
+## <a name="eap-based-wi-fi-profile"></a>EAP 型 Wi-Fi 設定檔
 EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
       </MSM>
     </WLANProfile>
 
-## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>從現有的 Wi-Fi 連線建立 XML 檔案
+## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>從現有的 Wi-Fi 連線建立 XML 檔案
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案：
 1. 在連線到或最近已連線到無線網路的電腦上，開啟下列資料夾 ︰C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。
 

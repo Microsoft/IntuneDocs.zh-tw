@@ -14,7 +14,7 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
@@ -68,7 +68,7 @@ ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 -   不支援 [已取消群組的使用者] 和 [已取消群組的裝置] 群組。 我們不會將這些群組從 Intune 遷移至 Azure AD。
 
 
-#### <a name="groupdependent-functionality"></a>群組的相依功能
+#### <a name="group-dependent-functionality"></a>群組的相依功能
 
 -   服務系統管理員角色並不會擁有**管理群組**權限。
 -   您無法將 Exchange ActiveSync 裝置分組。 您的 [所有 EAS 管理的裝置] 群組會從群組轉換成報表檢視。

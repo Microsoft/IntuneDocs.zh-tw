@@ -14,16 +14,16 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
 
 
 ---
 
-# <a name="protect-windows-devices-with-multifactor-authentication"></a>Protect Windows devices with multi-factor authentication
+# <a name="protect-windows-devices-with-multi-factor-authentication"></a>Protect Windows devices with multi-factor authentication
 Microsoft Intune 整合 Multi-Factor Authentication (MFA) 來協助您保護公司資源。 除了使用者名稱和密碼，MFA 還需要其他驗證因素，如文字驗證。 在註冊 Windows 8.1 或更新版本、Windows Phone 8.1 或 Windows 10 桌面版和行動裝置版的裝置期間，Intune 支援使用 MFA。
 
-## <a name="onpremises-infrastructure-requirements-for-adfs-mfa"></a>適用於 ADFS MFA 的內部部署基礎結構需求
+## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>適用於 ADFS MFA 的內部部署基礎結構需求
 若要設定 Multi-factor Authentication，需要下列項目：
 
 -   自動註冊，如[設定 Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)中所述。
