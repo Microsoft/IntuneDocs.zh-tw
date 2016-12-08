@@ -14,31 +14,40 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 ---
 
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 元件
 
+> [!NOTE]
+> 您可能想要先閱讀 [Intune App SDK 快速入門](intune-app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
+
+
+
 ## <a name="overview"></a>概觀
-[Intune App SDK Xamarin 元件](https://components.xamarin.com/view/microsoft.intune.mam)能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 行動應用程式管理功能](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將應用程式內限制及資料保護功能建置到以 Xamarin 為基礎的應用程式。
+[Intune App SDK Xamarin 元件](https://components.xamarin.com/view/microsoft.intune.mam)能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 行動應用程式管理功能](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將 Intune 應用程式內資料保護功能建置到以 Xamarin 為基礎的應用程式。
 
-您會發現，您可以啟用 SDK 功能，而不需要變更您的應用程式行為。 一旦將元件建置到您的 iOS 或 Android 的行動應用程式，IT 系統管理員便可以透過 Microsoft Intune 支援各種啟用資料保護的功能來部署原則。
+您會發現，您可以啟用 SDK 功能，而不需要變更您的應用程式行為。 一旦將元件建置到您的 iOS 或 Android 行動應用程式，IT 系統管理員便可以透過支援各種資料保護功能的 Microsoft Intune 行動應用程式管理 (MAM) 來部署原則。
 
-## <a name="supported-scenarios"></a>支援的案例
+## <a name="whats-supported"></a>支援的項目
 
-### <a name="platforms"></a>平台
+### <a name="developer-machines"></a>開發人員電腦
+* Windows
+
+
+### <a name="mobile-app-platforms"></a>行動應用程式平台
 * Android
 * iOS
 
 
-### <a name="emm-scenarios"></a>EMM 案例
+### <a name="intune-mobile-application-management-scenarios"></a>Intune 行動應用程式管理案例
 
-* Intune MDM 註冊裝置上的 Intune MAM
-* 協力廠商 EMM 註冊裝置上的 Intune MAM
-* 未註冊、未受管理裝置上的 Intune MAM
+* Intune MDM 已註冊的裝置
+* 協力廠商 EMM 已註冊的裝置
+* 未受管理的裝置 (未使用任何 MDM 註冊)
 
 使用 Intune App SDK Xamarin 元件建置的 Xamarin 應用程式，現在可以在 Intune 行動裝置管理 (MDM) 註冊裝置和未註冊裝置上，接收 Intune 行動應用程式管理 (MAM) 原則。
 
@@ -116,6 +125,6 @@ ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

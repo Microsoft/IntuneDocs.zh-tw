@@ -2,10 +2,10 @@
 title: "您的電腦已註冊 | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 6ea001a00007a323c88f2f384bc768edc06eaa87
 
 
 ---
 
-
-# 您的電腦已註冊
+# <a name="your-computer-is-already-enrolled"></a>您的電腦已註冊
 
 如果您收到電腦已經註冊的錯誤，表示您的電腦已經加入公司入口網站中，但尚未連結到您的使用者帳戶。 請依照此程序將您的電腦連結到使用者帳戶並完成程序。  
 
@@ -36,10 +35,10 @@ ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
 
 若要取消註冊裝置，請依據所擁有的裝置類型是 [Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md) 來使用相關指示。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

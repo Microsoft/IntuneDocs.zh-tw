@@ -2,10 +2,10 @@
 title: "如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8975e57c604565c57c86472564ab660aed560a7b
-ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
 
 
 ---
 
 
-# 如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
 您可以使用此頁面右側之 [本文內容]下方的連結，尋找您要使用之裝置類型的相關資訊。
 
 
-## Windows 10、Windows 8.1、Windows 8、Windows 7、Windows Vista
+## <a name="windows-10-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10、Windows 8.1、Windows 8、Windows 7、Windows Vista
 
 -   您的裝置將不再顯示於公司入口網站，而且您將無法再從公司入口網站安裝應用程式。
 
@@ -52,7 +52,7 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
 
 -   您可能無法再存取裝置上的某些公司資源，例如檔案共用或內部網站。
 
-## Windows 10 Mobile 和 Windows Phone 8.1
+## <a name="windows-10-mobile-and-windows-phone-81"></a>Windows 10 Mobile 和 Windows Phone 8.1
 
 -   公司入口網站應用程式會從您的裝置解除安裝。 這表示您的裝置將不再顯示於公司入口網站，而且您也無法再從公司入口網站應用程式或公司入口網站安裝應用程式。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
     > [!IMPORTANT]
     > 唯一例外是加密原則，其仍然有效。 若您的公司原則要求您加密您的 Windows Phone，唯一將手機解密的方法是使用 [設定] 功能表進行重設。
 
-## 執行 Windows 8.1 的 Windows RT
+## <a name="windows-rt-running-windows-81"></a>執行 Windows 8.1 的 Windows RT
 
 -   公司入口網站應用程式會從您的裝置解除安裝。 這表示您的裝置將不再顯示於公司入口網站，而且您將無法再從公司入口網站安裝應用程式。
 
@@ -85,10 +85,10 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
