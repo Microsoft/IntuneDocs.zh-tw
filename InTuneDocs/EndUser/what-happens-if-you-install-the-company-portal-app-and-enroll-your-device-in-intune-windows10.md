@@ -2,10 +2,10 @@
 title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 10 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 ---
 
 
-# 如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 10 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 10 裝置，會發生什麼情況？
 
 當您安裝公司入口網站應用程式，並使用該應用程式將您的 Windows 10 企業版或專業版裝置註冊到 Intune 時，您可以使用公司入口網站應用程式：
 
@@ -52,10 +52,10 @@ ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
 
 -   您的 IT 系統管理員可能對電腦施行原則。 例如要求您為電腦上設定密碼或 PIN 碼。 您的 IT 系統管理員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置或刪除電腦上的所有資料。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
