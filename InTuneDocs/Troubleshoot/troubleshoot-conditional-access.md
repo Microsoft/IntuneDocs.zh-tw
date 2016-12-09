@@ -2,7 +2,8 @@
 title: "條件式存取的疑難排解 | Microsoft Intune"
 description: "您的使用者無法透過 Intune 條件式存取取得資源的存取權時該怎麼辦。"
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 - 檢查 Exchange Connector 記錄檔中的 sendemail 活動，並檢查是否有錯誤。 所要搜尋命令的範例是從通知帳戶至 useremail 的 SendEmail。
 - Exchange Connector 封鎖裝置之前，它會傳送啟用電子郵件。 如果裝置已離線，它可能不會收到啟用電子郵件。 檢查裝置的電子郵件用戶端是否使用推送來擷取電子郵件，而不是輪詢，因為這也會造成使用者遺漏電子郵件。 切換到輪詢後，再查看裝置是否收到電子郵件。
 
-## <a name="noncompliant-device-not-blocked"></a>未封鎖不相容的裝置
+## <a name="non-compliant-device-not-blocked"></a>未封鎖不相容的裝置
 
 如果您遇到不相容但可以繼續存取的裝置，請採取下列步驟。
 
@@ -158,6 +159,6 @@ ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

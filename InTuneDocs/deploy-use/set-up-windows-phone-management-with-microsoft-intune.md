@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 ## <a name="company-portal-app-enrollment"></a>公司入口網站應用程式註冊
 您可以讓使用者使用 Intune 公司入口網站應用程式安裝並註冊其裝置。 如果您建立 DNS CNAME 資源記錄，使用者會連線並註冊 Intune，而不需要輸入伺服器名稱。
 
-1.  **設定 Intune**<br>如果尚未這麼做，請將[行動裝置管理 (MDM) 授權單位](prerequisites-for-enrollment.md#set-mobile-device-management-authority)設定為 **Microsoft Intune**，然後設定 MDM，為行動裝置管理做好準備。
+1.  **設定 Intune**<br>如果尚未這麼做，請將[行動裝置管理 (MDM) 授權單位](prerequisites-for-enrollment.md#step-2-set-mdm-authority)設定為 **Microsoft Intune**，然後設定 MDM，為行動裝置管理做好準備。
 
 2.  **建立 CNAME** (選用)<br>建立公司網域的 **CNAME** DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
 
-    雖然建立 CNAME DNS 項目為選擇性作業，但是 CNAME 記錄可讓使用者更輕鬆地註冊。 如果找不到任何註冊 CNAME 記錄，系統會提示使用者手動輸入 MDM 伺服器名稱 https://manage.microsoft.com。 
+    雖然建立 CNAME DNS 項目為選擇性作業，但是 CNAME 記錄可讓使用者更輕鬆地註冊。 如果找不到任何註冊 CNAME 記錄，系統會提示使用者手動輸入 MDM 伺服器名稱 https://manage.microsoft.com。
 
     如果您目前在 DNS 中有 CNAME，它會將EnterpriseEnrollment.contoso.com 重新導向到 manage.microsoft.com，我們建議您在 DNS 中將它取代為把 EnterpriseEnrollment.contoso.com 重新導向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建議進行這項變更，因為 manage.microsoft.com 端點即將取代為未來版本中的註冊。
 
@@ -64,7 +64,7 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
 5.  **告訴使用者如何註冊其裝置來存取公司資源。**
 
-    如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](../enduser/enroll-your-device-in-intune-windows.md)。 您也可以讓使用者前往[當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)
+    如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](../enduser/enroll-your-device-in-intune-windows.md)。 您也可以讓使用者前往[當您在 Intune 註冊您的裝置時，您的 IT 系統管理員會看到什麼內容？](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
     如需其他使用者工作的資訊，請參閱下列文章：
     - [要告訴使用者之關於使用 Microsoft Intune 的事項](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Intune 系統管理員有兩種方式可為 Windows 10 行動裝置版與 Window
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

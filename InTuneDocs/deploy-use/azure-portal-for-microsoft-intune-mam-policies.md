@@ -2,8 +2,8 @@
 title: "MAM 原則的 Azure 入口網站 | Microsoft Intune"
 description: "使用 Azure 入口網站建立行動裝置應用程式管理原則。 無論裝置是否有在 Intune 中註冊，您都可以套用在這裡建立的原則。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03410d1e82cfeb8d354ee1d010ada07ca86191bc
-ms.openlocfilehash: e9d917401a8927099bdf8558e9f7e7185351f709
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
 
 
 ---
@@ -67,6 +67,6 @@ Azure 入口網站可讓您建立和管理行動應用程式管理 (MAM) 原則�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

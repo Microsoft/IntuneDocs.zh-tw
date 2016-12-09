@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 * [Windows 10 行動裝置版](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
     「我們正在同步您的帳戶」訊息會顯示在畫面頂端。 [同步] 按鈕會呈現灰色，直到您的裝置完成同步為止。
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-有多個版本的 Windows 10，因此有兩組步驟。 若要找出要使用的步驟，請查看螢幕擷取畫面，然後依照您在裝置上看到的步驟。 
+有多個版本的 Windows 10，因此有兩組步驟。 若要找出要使用的步驟，請查看螢幕擷取畫面，然後依照您在裝置上看到的步驟。
 
 1. 選擇 [啟動] 按鈕，然後選擇 [設定]。
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
     如果您看到這個顯示 [公司存取] 的畫面，請遵循[如果看見 [公司存取] 時需遵循的步驟](#steps-to-follow-if-you-see-your-account)中的步驟。
 
-    ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png) 
+    ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>如果看見 [存取公司或學校資源] 時需遵循的步驟
 
@@ -80,9 +80,9 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
     ![選擇 [存取公司或學校資源]](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. 選擇工作或學校帳戶。 根據 IT 系統管理員設定項目的方式，您可能會看到兩個帳戶，其與下列所示的範例類似。 其中一個帳戶旁邊會有公事包，另一個帳戶旁邊則會有 Microsoft 標誌。 
+2. 選擇工作或學校帳戶。 根據 IT 系統管理員設定項目的方式，您可能會看到兩個帳戶，其與下列所示的範例類似。 其中一個帳戶旁邊會有公事包，另一個帳戶旁邊則會有 Microsoft 標誌。
 
-    - 如果您看到具有公事包的帳戶，請選取它，並尋找其下的 [資訊] 按鈕。 
+    - 如果您看到具有公事包的帳戶，請選取它，並尋找其下的 [資訊] 按鈕。
     - 如果您看到具有 Microsoft 標誌的帳戶，請選取該帳戶，並尋找其下的 [資訊] 按鈕。
 
     ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 4. 選擇 [同步] 按鈕。 您的裝置將會使用 Intune 進行同步處理。
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>如果看見 [公司存取] 時需遵循的步驟
-    
+
 1. 在 [帳戶] 頁面上，選擇 [公司存取]。
 
     ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

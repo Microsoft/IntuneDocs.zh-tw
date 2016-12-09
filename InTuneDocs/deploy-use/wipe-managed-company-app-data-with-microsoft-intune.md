@@ -2,8 +2,8 @@
 title: "抹除受管理的公司應用程式資料 | Microsoft Intune"
 description: "深入了解如何以遠端方式，選擇性地從裝置移除公司資料。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 2.  在 [抹除要求] 刀鋒視窗中，您可以看到您的要求清單 (依據使用者群組)。 由於系統會針對裝置上執行的每個受保護應用程式建立抹除要求，因此您可能會看到一名使用者具有多個要求的情況。 狀態指出抹除要求為**擱置**、**失敗**或**成功**。
 
-使用者必須開啟應用程式，抹除才會發生，並可能在發出要求後花費 30 分鐘的時間。 
+使用者必須開啟應用程式，抹除才會發生，並可能在發出要求後花費 30 分鐘的時間。
 
 處於擱置狀態的抹除將會顯示，直到您手動將其刪除為止。  若要手動刪除抹除要求，請以滑鼠右鍵按一下並選擇 [刪除]。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

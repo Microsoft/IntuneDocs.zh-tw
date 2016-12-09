@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
 8.  選擇適當的裝置，然後選擇 [刪除裝置]。 裝置將會在下一次與 Active Directory 同步處理時刪除。 這通常發生在四個小時內。 同步處理之後，裝置會從管理中移除。 這會移除僅供此使用者使用的一部裝置。
 
 ## <a name="retire-managed-computers"></a>淘汰受管理的電腦
-在 Intune 管理主控台中，可以移除 Intune 用戶端軟體所管理的電腦不進行管理。 這也會解除安裝用戶端軟體，並從電腦刪除 Intune 原則。 請參閱[淘汰使用 Intune 用戶端軟體管理的電腦](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)的資訊。
+在 Intune 管理主控台中，可以移除 Intune 用戶端軟體所管理的電腦不進行管理。 這也會解除安裝用戶端軟體，並從電腦刪除 Intune 原則。 請參閱[淘汰使用 Intune 用戶端軟體管理的電腦](retire-a-windows-pc-with-microsoft-intune.md)的資訊。
 
 ## <a name="block-access-a-device"></a>封鎖裝置的存取
 如果裝置遺失，或因員工離職但未繳回公司擁有的硬體，使您必須淘汰裝置的情況下，也可以[重設密碼並從遠端鎖定](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)裝置。 這可防止公司資訊遭到誤用，不過您可能需要將裝置當作遺失來註銷。
@@ -70,6 +70,6 @@ ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
