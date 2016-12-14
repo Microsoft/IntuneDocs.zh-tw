@@ -14,8 +14,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: 5581e80612286471b29d35f193fba5146f9ca90f
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 53c22143b5b367ed5732ed14fb06937d66489afa
 
 
 ---
@@ -26,12 +26,12 @@ ms.openlocfilehash: 5581e80612286471b29d35f193fba5146f9ca90f
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**您會如何管理共用的 iOS 裝置？**
 
-  > [!div class="button"]
-  [iOS DEP 註冊 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
-  > [!div class="button"]
-  [iOS 直接註冊 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
-  > [!div class="button"]
-  [DEM 註冊 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[iOS DEP 註冊 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [!div class="button"]
+[iOS 直接註冊 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[DEM 註冊 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Apple 的裝置註冊方案 (DEP)** - 使用註冊設定檔，可以將目標設為使用 DEP 所購買或管理的 iOS 裝置。 使用者第一次開啟裝置的電源時，裝置會下載 DEP 設定檔，並使用設定檔 DEP 進行註冊。
 
@@ -44,6 +44,6 @@ ms.openlocfilehash: 5581e80612286471b29d35f193fba5146f9ca90f
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

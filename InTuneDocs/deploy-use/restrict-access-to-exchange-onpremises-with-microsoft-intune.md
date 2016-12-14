@@ -2,8 +2,8 @@
 title: "限制 Exchange 內部部署的電子郵件存取 | Microsoft Intune"
 description: "使用條件式存取保護與控制 Exchange 內部部署上的公司電子郵件存取。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 9567d67a8567113c81b20428b5e4f8749aae3d69
 
 
 ---
@@ -128,6 +128,6 @@ Windows 8.1 和更新版本上的**郵件**應用程式 (已註冊到 [!INCLUDE[
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

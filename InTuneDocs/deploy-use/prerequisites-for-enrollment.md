@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 ## <a name="step-1-enable-connections"></a>步驟 1：啟用連線
 
 啟用行動裝置註冊之前，請確定您已完成下列作業︰
-- [檢閱所需的網路 URL 和通訊埠](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [新增和驗證網域名稱](../get-started/domain-names-for-microsoft-intune)
+- [檢閱所需的網路 URL 和通訊埠](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [新增和驗證網域名稱](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>步驟 2：設定 MDM 授權單位
 MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
@@ -111,7 +111,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 ## <a name="step-5-assign-user-licenses"></a>步驟 5：指派使用者授權
 
-您可以使用「Office 365 管理入口網站」手動新增雲端式使用者，並將授權同時指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure Active Directory (Azure AD) 的帳戶。 您可以[同步處理內部部署使用者與 Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md)。
+您可以使用「Office 365 管理入口網站」手動新增雲端式使用者，並將授權同時指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure Active Directory (Azure AD) 的帳戶。 您可以[同步處理內部部署使用者與 Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)。
 
 1.  使用您的租用戶系統管理員認證登入 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)。
 
@@ -136,7 +136,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 - [Windows 電腦和膝上型電腦](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 行動裝置版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-您也可以啟用[屬公司擁有的裝置註冊](manage-corporate-owned-devices)。
+您也可以啟用[屬公司擁有的裝置註冊](manage-corporate-owned-devices.md)。
 
 ## <a name="step-7-next-steps"></a>步驟 7：後續步驟
 
@@ -149,6 +149,6 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

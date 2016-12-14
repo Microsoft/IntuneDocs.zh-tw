@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 當 Intune 管理的裝置不再被需要、重新設定用途，或是已經遺失時，您可以抹除其中的應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 使用者也可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
 
   > [!NOTE]
-  > 本主題只會說明如何抹除受 Intune 行動裝置管理所管理的裝置。 您也可以使用 [Azure 入口網站](https://portal.azure.com)來[從應用程式抹除公司資料](wipe-managed-company-app-data-with-microsoft-intune.md)。 您也可以[淘汰使用 Intune 用戶端軟體管理的電腦](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)。
+  > 本主題只會說明如何抹除受 Intune 行動裝置管理所管理的裝置。 您也可以使用 [Azure 入口網站](https://portal.azure.com)來[從應用程式抹除公司資料](wipe-managed-company-app-data-with-microsoft-intune.md)。 您也可以[淘汰使用 Intune 用戶端軟體管理的電腦](retire-a-windows-pc-with-microsoft-intune.md)。
 
 ## <a name="full-wipe"></a>完整抹除
 
@@ -165,6 +165,6 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
