@@ -2,8 +2,8 @@
 title: "保護未註冊裝置上的 LOB 應用程式 | Microsoft Intune"
 description: "本主題說明如何準備您自訂的企業營運應用程式，以便您可以套用有助於防止資料遺失的行動裝置應用程式管理原則。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
 
 ##  <a name="step-1-prepare-the-app"></a>步驟 1：準備應用程式
 
-在您可以將 MAM 原則套用到應用程式之前，您必須先包裝應用程式，方法是使用適用於 [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 和 [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 的 Microsoft Intune App Wrapping Tool，或使用 [Intune App SDK](/../develop/intune-app-sdk) 來手動整合 Intune 應用程式保護功能。
+在您可以將 MAM 原則套用到應用程式之前，您必須先包裝應用程式，方法是使用適用於 [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 的 Microsoft Intune App Wrapping Tool，或使用 [Intune App SDK](../develop/intune-app-sdk.md) 來手動整合 Intune 應用程式保護功能。
 
-如需有關使用 App Wrapping Tool 與 SDK 的詳細資訊，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)。
+如需有關使用 App Wrapping Tool 與 SDK 的詳細資訊，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
 
 ## <a name="step-2-add-the-app"></a>步驟 2：新增應用程式
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

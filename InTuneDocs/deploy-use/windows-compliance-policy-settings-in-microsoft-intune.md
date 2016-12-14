@@ -2,8 +2,8 @@
 title: "Windows 裝置的相容性原則設定| Microsoft Intune"
 description: "本主題說明您能為 Windows 裝置之相容性原則設定的規則與設定。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
 > [!div class="op_single_selector"]
 - [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Android for Work 的法務遵循政策設定](afw-compliance-policy-settings-in-microsoft-intune)
+- [Android for Work 的法務遵循政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone 裝置的相容性原則設定
 Windows Phone 8.1 及更新版本支援這一節所列的設定。
@@ -151,6 +151,6 @@ Windows 電腦支援這一節所列的設定。
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

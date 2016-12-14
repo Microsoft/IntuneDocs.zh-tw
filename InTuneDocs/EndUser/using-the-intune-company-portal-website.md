@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 
 ---
@@ -45,12 +45,12 @@ ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 使用者在**公司入口網站**上所能執行的大部分工作，都能使用其安裝在裝置上的**公司入口網站應用程式**來執行。 如需使用者可在其裝置上執行的所有工作連結，請參閱下列頁面：
 
-- [透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
-- [透過 Intune 使用 iOS 或 Mac OS X 裝置](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [透過 Intune 使用 Windows 裝置](using-your-windows-device-with-intune.md)
+- [在 Intune 上使用您的 Android 裝置](using-your-android-device-with-intune.md)
+- [搭配 Intune 使用 iOS 或 macOS 裝置](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [在 Intune 上使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

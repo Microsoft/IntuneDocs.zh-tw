@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
  ![註冊此裝置 macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 請參閱[當您在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios)。
+  > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 請參閱[當您在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)。
 
 6. 隨即會開啟 [系統喜好設定]，並詢問您是否想要__安裝「管理設定檔」？__ 按一下 [安裝] 繼續進行，或按一下 [顯示設定檔] 以取得更多詳細資料。
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

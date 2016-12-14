@@ -14,8 +14,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
 |需求|詳細資訊|
 |---------------|--------------------|
 |已設定並執行 Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
+|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
 |Microsoft Exchange 版本|Exchange Online 或新版 Exchange Online Dedicated 服務|
 |Active Directory 同步|使用 Intune Connector 之前，必須先[設定 Active Directory 同步處理](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，如此本機使用者及安全性群組才能與您的 Azure Active Directory 進行同步處理。|
 
@@ -65,6 +65,6 @@ Service to Service Connector 會自動設定及同步您的 Exchange Online 或�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
