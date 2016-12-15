@@ -47,7 +47,7 @@ ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 2.  選取 [工作場所聯結] 下的 [離開]。
 
-3.  選取 [Turn on device management] (開啟裝置管理) 下的 [關閉]。
+3.  選取 [Turn on device management] \(開啟裝置管理) 下的 [關閉]。
 
 4.  在開啟的快顯視窗上，選取 [關閉]。
 
