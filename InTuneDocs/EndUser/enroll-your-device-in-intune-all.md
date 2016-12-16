@@ -12,8 +12,8 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 531fb4274a3a2ebd26278c0dd3f0d45d5458120d
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: da065b7ea92d9372b9dd8bbbcdf21b0f789cc241
 
 
 ---
@@ -26,11 +26,11 @@ ms.openlocfilehash: 531fb4274a3a2ebd26278c0dd3f0d45d5458120d
 
 - [在 Intune 註冊 Android 裝置](enroll-your-device-in-Intune-android.md)
 - [在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
-- [在 Intune 註冊 Mac OS X 裝置](enroll-your-device-in-intune-mac-os-x.md)
+- [在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
 - [在 Intune 註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

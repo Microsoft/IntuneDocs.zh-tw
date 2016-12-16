@@ -1,21 +1,21 @@
 ---
-title: "開始使用 Microsoft Intune App SDK | Microsoft Intune"
+title: "開始使用 Microsoft Intune App SDK | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 若要使用 Intune App SDK Cordova 外掛程式建置 Cordova 應用程式，您需要下列項目︰
 
-* **[Intune App SDK Cordova 外掛程式指南](intune-app-sdk-cordova)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
+* **[Intune App SDK Cordova 外掛程式指南](intune-app-sdk-cordova.md)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
 
 若要使用 Intune App SDK Xamarin 元件建置 Xamdarin 應用程式，您需要下列項目︰
 
-* **[Intune App SDK Xamarin 元件指南](intune-app-sdk-xamarin)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
+* **[Intune App SDK Xamarin 元件指南](intune-app-sdk-xamarin.md)**︰本文件將協助您使用 Cordova for Intune 行動應用程式管理建置 iOS 和 Android 應用程式。
 
 
 
@@ -118,6 +118,6 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

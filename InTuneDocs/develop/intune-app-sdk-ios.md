@@ -1,21 +1,21 @@
 ---
-title: "Microsoft Intune App SDK for iOS 開發人員指南 | Microsoft Intune"
+title: "Microsoft Intune App SDK for iOS 開發人員指南 | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則以
 * 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並在該電腦上安裝 Xcode 工具組第 5 版或更新版本。
 
 * 檢閱[適用於 iOS 的 Intune App SDK 授權條款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 列印並保留一份授權條款供您備查。 下載並使用 Intune App SDK for iOS 即表示您同意這些授權條款。  若貴用戶不同意這些授權條款，請不要使用「軟體」。
+
+* 在 [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) 上，下載 Intune App SDK for iOS 的檔案。
 
 ## <a name="whats-in-the-sdk"></a>SDK 的功能
 
@@ -322,9 +324,9 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收 MAM 原則，而�
 
 叫用這個 API 之後，應用程式可以繼續正常運作。 如果註冊成功，SDK 將通知使用者：需要重新啟動應用程式。
 
-## <a name="debug-information"></a>偵錯資訊
+## <a name="status-result-and-debug-notifications"></a>狀態、結果和偵錯通知
 
-應用程式可以接收有關向 Intune MAM 服務提出下列要求的偵錯通知：
+應用程式可以接收有關向 Intune MAM 服務提出下列要求的狀態、結果和偵錯通知：
 
  - 註冊要求
  - 原則更新要求
@@ -365,7 +367,7 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收 MAM 原則，而�
 
 這個物件與可傳回的特定狀態碼定義在 Headers/IntuneMAMEnrollmentStatus.h 中。
 
-請務必注意，沒有任何應用程式的商務邏輯應該根據這些通知。 概念是應用程式可以將這項資訊傳送至遙測服務來進行偵錯或監視。
+
 
 
 ## <a name="sample-code"></a>範例程式碼
@@ -637,7 +639,7 @@ SDK 將會在背景定期採取下列動作：
 
 ## <a name="submit-your-app-to-the-app-store"></a>將應用程式提交至 App Store
 
-Intune App SDK 的靜態程式庫和架構組建是通用二進位檔， 表示它們包含適用於所有裝置和模擬器架構的程式碼。 如果提交至 App Store 的應用程式包含模擬器程式碼，則 Apple 會拒絕提交這些應用程式。 針對僅限裝置組建的靜態程式庫進行編譯時，連結器會自動去除模擬器程式碼。
+Intune App SDK 的靜態程式庫和架構組建是通用二進位檔， 表示它們包含適用於所有裝置和模擬器架構的程式碼。 如果提交至 App Store 的應用程式包含模擬器程式碼，則 Apple 會拒絕提交這些應用程式。 針對僅限裝置組建的靜態程式庫進行編譯時，連結器會自動去除模擬器程式碼。 請遵循下列步驟，確認已移除所有模擬器程式碼，然後再將您的應用程式上傳至 App Store。
 
 1. 確定 `IntuneMAM.framework` 在桌面上。
 
@@ -654,6 +656,6 @@ Intune App SDK 的靜態程式庫和架構組建是通用二進位檔， 表示�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

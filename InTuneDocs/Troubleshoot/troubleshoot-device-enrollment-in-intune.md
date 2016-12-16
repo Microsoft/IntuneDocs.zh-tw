@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 >
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至「裝置註冊管理員」群組的使用者帳戶將無法完成註冊。
 
-### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
+### <a name="company-portal-emporarily-unavailable"></a>公司入口網站暫時無法使用
 **問題**：使用者在裝置上收到 [公司入口網站暫時無法使用] 錯誤。
 
 **解決方法：**
@@ -216,21 +216,38 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 **問題**：使用者在裝置上收到下列訊息：「您無法登入，因為您的裝置缺少必要的憑證」。
 
-**解決方案**：
+**解決方法 1**：
 
-- 使用者透過遵循[這些指示](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)，可能可以擷取遺失的憑證。
-- 若使用者無法擷取憑證，您的 ADFS 伺服器上可能遺失中繼憑證。 Android 需要中繼憑證以信任伺服器。
+要求您的使用依照[您的裝置遺漏必要的憑證](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)中的指示解決問題。 如果使用者依照指示進行之後仍出現錯誤，請嘗試「解決方法 2」。
 
-您可以將憑證匯入 ADFS 伺服器或 Proxy 上的中繼存放區，如下所示：
+**解決方法 2**：
 
-1.  在 ADFS 伺服器上，啟動 **Microsoft Management Console**，並新增「電腦帳戶」的憑證嵌入式管理單元。
-5.  尋找您的 ADFS 服務所使用的憑證，並檢視它的父憑證。
-6.  複製父憑證，並將它貼在 **Computer\Intermediate Certification Authorities\Certificates** 之下。
-7.  複製您的 ADFS、ADFS 解密及 ADFS 簽署憑證，並將它們貼在 ADFS 服務的個人存放區中。
-8.  重新啟動 ADFS 伺服器。
+如果使用者輸入其公司認證並被重新導向至聯盟登入體驗之後，仍看到遺漏憑證的錯誤，表示您的 Active Directory 同盟服務 (AD FS) 伺服器可能遺失中繼憑證。
 
+出現憑證錯誤是因為 Android 裝置需要在 [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx) 中包含中繼憑證，但目前預設的 AD FS 伺服器或 AD FS Proxy 伺服器安裝只會在對 SSL Client hello 的 SSL Server hello 回應中傳送 AD FS 的服務 SSL 憑證。
+
+若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
+
+1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] 按鈕，選擇 [執行] 並輸入 **certlm.msc**，以啟動本機電腦的「憑證管理」主控台。
+2.  展開 [個人] 並選取 [憑證]。
+3.  尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
+4.  選取 [憑證路徑] 索引標籤來查看憑證的父憑證。
+5.  在每個父憑證上，選取 [檢視憑證]。
+6.  按一下 [詳細資料] 索引標籤，然後按一下 [複製到檔案]。
+7.  按照精靈的提示將憑證的公開金鑰匯出或儲存到想要的檔案位置。
+8.  以滑鼠右鍵按一下 [憑證]，選取 [所有工作] > [匯入]並按照精靈的提示進行，以將在步驟 3 匯出的父憑證匯入到 Computer\Personal\Certificates。
+9.  重新啟動 AD FS 伺服器。
+10. 在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
 使用者現在應該能夠在 Android 裝置上登入公司入口網站。
 
+**驗證憑證已正確安裝**：
+
+下列步驟僅描述可用來驗證憑證以正確安裝之數種方法和工具的其中一種。
+
+1. 移至[免費的 Digicert 工具](ttps://www.digicert.com/help/)。
+2. 輸入您的 AD FS 伺服器的完整網域名稱 (例如，sts.contoso.com) 並選取 [CHECK SERVER]。
+
+如果伺服器憑證已正確安裝，您就會在結果中看到所有核取記號。 如果上述問題存在，您會看到報告的 [Certificate Name Matches] 和 [SSL Certificate is correctly Installed] 區段中有紅色 X。
 
 
 ## <a name="ios-issues"></a>iOS 問題
@@ -356,6 +373,6 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
