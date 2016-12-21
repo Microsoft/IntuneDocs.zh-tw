@@ -32,7 +32,7 @@ Intune 可啟用 iPad、iPhone 和 Mac OS X 裝置的行動裝置管理 (MDM)，
     ![上傳 APNs 憑證對話方塊](../media/Intune-iOS-enrollment-with-apns.png)
 
 3.  **取得 Apple 推送通知服務憑證**<br>
-    前往 [Apple Push Certificates 入口網站](http://go.microsoft.com/fwlink/?LinkId=269844)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 在 Apple Push Certificates 入口網站上選擇 [上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 [Certificates for Third-Party Servers] (協力廠商伺服器的憑證)，然後選擇 [下載]。
+    前往 [Apple Push Certificates 入口網站](http://go.microsoft.com/fwlink/?LinkId=269844)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 在 Apple Push Certificates 入口網站上選擇 [上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 「Certificates for Third-Party Servers」 (協力廠商伺服器的憑證)，然後選擇 [下載]。
 
     下載 APNs (.pem) 憑證，並將該檔案儲存在本機。
 
