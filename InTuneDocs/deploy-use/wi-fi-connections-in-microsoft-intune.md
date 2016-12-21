@@ -74,7 +74,7 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 5. 設定所選平台的 [安全性設定]  。 可用的設定取決於您選取的安全性類型。 相關說明請參閱[安全性設定](#security-settings)。
 
-6. 設定 [Proxy 設定] (僅限 iOS 和 MAC OS X)。
+6. 設定 「Proxy 設定」 (僅限 iOS 和 MAC OS X)。
 
     |設定名稱|詳細資訊|使用時機|
     |----------------|-------------------|-------------|

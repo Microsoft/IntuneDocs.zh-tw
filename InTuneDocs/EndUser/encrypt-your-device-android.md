@@ -29,8 +29,8 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 1.  確定已設定裝置的螢幕鎖定 PIN 或密碼。
 
-2.  在 [設定] 中，選擇 [安全性] &gt; [Encrypt Phone] (加密電話)。
-    注意：在某些電話上，您需要選擇 [儲存體] &gt; [Storage encryption] (儲存體加密) 或 [儲存體] &gt; [Lock screen and security] (鎖定螢幕和安全性) &gt; [其他安全性設定] 來尋找 [加密] 選項。
+2.  在 [設定] 中，選擇 [安全性] &gt; 「Encrypt Phone」 (加密電話)。
+    注意：在某些電話上，您需要選擇 [儲存體] &gt; 「Storage encryption」 (儲存體加密) 或 [儲存體] &gt; 「Lock screen and security」 (鎖定螢幕和安全性) &gt; [其他安全性設定] 來尋找 [加密] 選項。
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
 
@@ -51,9 +51,9 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
     2. 在 **[Choose screen lock] (選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。
 
-    3. 在 **[Secure start-up] (安全啟動)** 畫面上，依序點選 **[Require PIN to start device] (需要 PIN 以啟動裝置)** **[繼續]**。
+    3. 在 **「Secure start-up」 (安全啟動)** 畫面上，依序點選 **「Require PIN to start device」 (需要 PIN 以啟動裝置)** **[繼續]**。
 
-    4. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**[Confirm your PIN] (確認您的 PIN)**。
+    4. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**「Confirm your PIN」 (確認您的 PIN)**。
 
     5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
