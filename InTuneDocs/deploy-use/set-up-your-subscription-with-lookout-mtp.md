@@ -71,14 +71,14 @@ Lookout 支援部門會與您的主要連絡人合作，一同登入您的訂用
 
   ![開啟 [連接器] 索引標籤並醒目提示 [Intune] 選項之 Lookout 主控台的螢幕擷取畫面](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
-2.  在 [連線設定] 選項中，設定 [活動訊號頻率] (以分鐘為單位)。  您的 Intune 連接器已就緒。  
+2.  在 [連線設定] 選項中，設定 「活動訊號頻率」 (以分鐘為單位)。  您的 Intune 連接器已就緒。  
 
   ![顯示已設定 [活動訊號頻率] 之 [連線設定] 索引標籤的螢幕擷取畫面](../media/mtp/lookout-mtp-connection-settings.png)
 
 ### <a name="step-3-configure-enrollment-groups"></a>步驟 3︰設定註冊群組
-在 [Enrollment Management] (註冊管理) 選項中，定義應向 Lookout 註冊其裝置的一組使用者。 最佳做法是從小型的使用者群組開始，以測試並熟悉整合的運作方式。  一旦您滿意測試結果，即可擴充註冊更多使用者群組。
+在 「Enrollment Management」 (註冊管理) 選項中，定義應向 Lookout 註冊其裝置的一組使用者。 最佳做法是從小型的使用者群組開始，以測試並熟悉整合的運作方式。  一旦您滿意測試結果，即可擴充註冊更多使用者群組。
 
-若要開始使用註冊群組，請先定義適合作為要在 Lookout 裝置威脅防護中註冊之第一組使用者的 Azure AD 安全性群組。 在 Azure 中建立群組之後，請在 Lookout 主控台前往 [Enrollment Management] (註冊管理) 選項，然後新增 Azure AD 安全性群組的 [顯示名稱] 以進行註冊。
+若要開始使用註冊群組，請先定義適合作為要在 Lookout 裝置威脅防護中註冊之第一組使用者的 Azure AD 安全性群組。 在 Azure 中建立群組之後，請在 Lookout 主控台前往 「Enrollment Management」 (註冊管理) 選項，然後新增 Azure AD 安全性群組的 [顯示名稱] 以進行註冊。
 
 如果使用者隸屬於某個註冊群組，且他們擁有的任何裝置已受 Azure AD 識別及支援，即會向 Lookout 裝置威脅防護註冊這些裝置並可在其中啟用。  當使用者第一次在其支援的裝置上開啟 Lookout for Work 應用程式時，Lookout 即啟用該裝置。
 
@@ -96,9 +96,9 @@ Lookout 支援部門會與您的主要連絡人合作，一同登入您的訂用
 
 
 ### <a name="step-4-configure-state-sync"></a>步驟 4︰設定狀態同步處理
-在 [State Sync] (狀態同步處理) 選項中，指定應傳送至 Intune 的資料類型。  目前，您必須同時啟用裝置狀態和威脅狀態，Lookout 與 Intune 的整合才能正常運作。  預設會啟用這些狀態。
+在 「State Sync」 (狀態同步處理) 選項中，指定應傳送至 Intune 的資料類型。  目前，您必須同時啟用裝置狀態和威脅狀態，Lookout 與 Intune 的整合才能正常運作。  預設會啟用這些狀態。
 ### <a name="step-5-configure-error-report-email-recipient-information"></a>步驟 5︰設定錯誤報告電子郵件收件者資訊
-在 [Error Management] (錯誤管理) 選項中，輸入應接收錯誤報告的電子郵件地址。
+在 「Error Management」 (錯誤管理) 選項中，輸入應接收錯誤報告的電子郵件地址。
 
 ![Intune 連接器之 [錯誤管理] 頁面的螢幕擷取畫面](../media/mtp/lookout-mtp-connector-error-notifications.png)
 

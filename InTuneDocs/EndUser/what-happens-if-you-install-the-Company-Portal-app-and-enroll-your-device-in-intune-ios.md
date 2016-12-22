@@ -1,5 +1,5 @@
 ---
-title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 Mac OS X 裝置，會發生什麼情況？ | Microsoft Intune"
+title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 macOS 裝置，會發生什麼情況？ | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 Mac OS X 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 macOS 裝置，會發生什麼情況？
 
-當您安裝公司入口網站應用程式，並且在 Intune 中註冊您的 iOS 或 Mac OS X 裝置時，您可以使用公司入口網站應用程式執行下列動作：
+當您安裝公司入口網站應用程式，並且在 Intune 中註冊您的 iOS 或 macOS 裝置時，您可以使用公司入口網站應用程式執行下列動作：
 
 -   存取公司的網路、電子郵件與工作檔案。
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

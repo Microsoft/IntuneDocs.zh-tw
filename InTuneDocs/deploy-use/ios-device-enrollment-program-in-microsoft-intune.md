@@ -14,7 +14,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
@@ -73,7 +73,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
      以下是可用於 DEP 管理之裝置的設定：
 
-     - **部門** - 使用者在啟用期間點選 [About Configuration] (關於設定) 時顯示。
+     - **部門** - 使用者在啟用期間點選 「About Configuration」 \(關於設定) 時顯示。
      - **支援電話號碼** - 使用者在啟用期間按一下 [需要協助] 按鈕時顯示。
      - **準備模式** - 在啟用期間設定，而且需要將裝置重設為出廠預設值才能進行變更︰
         - **不受監督** - 有限的管理功能
@@ -97,7 +97,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
         - **允許** - 允許裝置透過任何電腦或 Mac 的 USB 連線進行通訊
         - **需要憑證** - 允許使用匯入至註冊設定檔的憑證與 Mac 配對
 
-6.  **指派要管理的 DEP 裝置**：前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com) 並使用公司 Apple ID 登入。 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。 指定您 **選擇裝置**的方式、提供裝置資訊，並利用裝置的 [序號] 、[訂單號碼] 或 [上傳 CSV 檔案] 指定詳細資料。 接著，依序選擇 [Assign to Server] (指派給伺服器)、針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt; 以及 [確定]。
+6.  **指派要管理的 DEP 裝置**：前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com) 並使用公司 Apple ID 登入。 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。 指定您 **選擇裝置**的方式、提供裝置資訊，並利用裝置的 [序號] 、[訂單號碼] 或 [上傳 CSV 檔案] 指定詳細資料。 接著，依序選擇 「Assign to Server」 \(指派給伺服器)、針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt; 以及 [確定]。
 
 7.  **同步處理 DEP 管理的裝置**：以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [立即同步處理]。 同步處理要求會傳送至 Apple。 若要在同步處理之後查看 DPE 管理的裝置，請在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [公司預先註冊的裝置] &gt; [依 iOS 序號]。 在 [依 iOS 序號] 工作區中，受管理裝置的 [狀態] 會顯示為 [未連線]，直到裝置開機並執行 [設定助理] 來註冊裝置為止。
 

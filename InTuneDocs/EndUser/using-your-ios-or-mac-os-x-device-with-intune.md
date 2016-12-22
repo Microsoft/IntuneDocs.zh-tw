@@ -1,6 +1,6 @@
 ---
-title: "透過 Intune 使用 iOS 或 Mac OS X 裝置 | Microsoft Intune"
-description: "可以在已註冊至 Intune 的 iOS 或 Mac OS X 行動裝置上執行之工作的連結清單"
+title: "搭配 Intune 使用 iOS 或 macOS 裝置 | Microsoft Intune"
+description: "可以在已註冊至 Intune 的 iOS 或 macOS 行動裝置上執行之工作的連結清單"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>搭配 Intune 使用 iOS 或 macOS 裝置
 
 針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作必需遵循的步驟，這些工作會按照下列類別分組︰
 - 公司入口網站應用程式安裝和 Intune 註冊
@@ -33,8 +33,8 @@ ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
 本節中的資訊可協助使用者進行 Intune 公司入口網站安裝以及適用於 iOS 裝置的裝置註冊。
 
 - [安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-- [將您的 iOS 裝置註冊到 Intune](enroll-your-device-in-intune-ios.md)
-- [將您的 Mac OS X 裝置註冊到 Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
+- [在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
 - [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>使用者在 Intune 註冊其裝置時可執行的工作
@@ -67,6 +67,6 @@ ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
