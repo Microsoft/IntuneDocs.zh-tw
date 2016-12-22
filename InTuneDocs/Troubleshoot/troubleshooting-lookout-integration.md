@@ -1,11 +1,11 @@
 ---
-title: "Lookout 整合疑難排解 | Microsoft Intune"
+title: "Lookout 整合疑難排解 | Microsoft Docs"
 description: "本主題描述如何針對 Lookout 整合的常見問題進行疑難排解"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Lookout MTP 已設定為只允許所設定之 Azure AD 群組中的使用者進�
 
 ![顯示登入錯誤之 Lookout 登入畫面的螢幕擷取畫面](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-若要解決此問題，全域管理員使用者必須登入 https://aad.lookout.com/les?action=consent 並接受初始化設定的提示。 您可以在[設定訂用帳戶使用 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) 主題中找到更詳細的資訊
+若要解決此問題，全域管理員使用者必須登入 https://aad.lookout.com/les?action=consent 並接受初始化設定的提示。 您可以在[設定訂用帳戶使用 Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) 主題中找到更詳細的資訊
 
 ## <a name="troubleshoot-device-status-issues"></a>裝置狀態問題疑難排解
 
@@ -90,6 +90,6 @@ Lookout MTP 已設定為只允許所設定之 Azure AD 群組中的使用者進�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

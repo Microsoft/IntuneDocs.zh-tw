@@ -14,7 +14,7 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
@@ -129,13 +129,13 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
         > [!WARNING]
         > 在註冊過程，會將裝置重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您啟動設定助理時，裝置應該會在 [Hello] 畫面上。
 
-    5.  選擇 [準備]。 在 [Prepare iOS Device] (準備 iOS 裝置) 窗格上，選取 [手動]，然後選擇 [下一步]。
+    5.  選擇 [準備]。 在 「Prepare iOS Device」 (準備 iOS 裝置) 窗格上，選取 [手動]，然後選擇 [下一步]。
 
-    6. 在 [Enroll in MDM Server] (在 MDM 伺服器中註冊) 窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]。
+    6. 在 「Enroll in MDM Server」 (在 MDM 伺服器中註冊) 窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]。
 
-    7. 在 [Supervise Devices] (監督裝置) 窗格上，選取監督層級，然後選擇 [下一步]。
+    7. 在 「Supervise Devices」 (監督裝置) 窗格上，選取監督層級，然後選擇 [下一步]。
 
-    8. 在 [Create an Organization] (建立組織) 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
+    8. 在 「Create an Organization」 (建立組織) 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
 
     9. 在 [Configure iOS Setup Assistant] (設定 iOS 設定助理) 窗格上，選擇要呈現給使用者的步驟，然後選擇 [準備]。 若出現提示，請驗證以更新信任設定。  
 

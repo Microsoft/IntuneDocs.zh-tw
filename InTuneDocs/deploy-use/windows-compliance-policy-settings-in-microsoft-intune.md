@@ -142,7 +142,7 @@ Windows 電腦支援這一節所列的設定。
 
   當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
-若要尋找要用於 [Minimum OS required] (所需的 OS 下限)和 [Maximum OS version allowed] (允許的最高 OS 版本) 設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 **winver** 命令會傳回 OS 的回報版本。
+若要尋找要用於 「Minimum OS required」 (所需的 OS 下限)和 「Maximum OS version allowed」 (允許的最高 OS 版本) 設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 **winver** 命令會傳回 OS 的回報版本。
 
 - Windows 8.1 電腦會傳回 **6.3** 版。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 

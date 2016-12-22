@@ -40,7 +40,7 @@ ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 * **步驟 5**：若要將應用程式部署給使用者，請選取 Lookout for Work 應用程式，然後選取 [管理部署]。
 
-  您必須選取加入 Lookout MTP 主控台中 [Enrollment Management] (註冊管理) 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) 一節中的步驟 3。
+  您必須選取加入 Lookout MTP 主控台中 「Enrollment Management」 (註冊管理) 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) 一節中的步驟 3。
 
   >[!IMPORTANT]
   > Intune 應用程式部署精靈未發現 Azure AD 使用者群組，並會改用 Intune 使用者群組。 因此您必須建立以 Lookout MTP 主控台中註冊之 Azure AD 使用者群組為基礎的 Intune 使用者群組，如[這個主題](plan-your-user-and-device-groups.md)中所述。
@@ -77,7 +77,7 @@ ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 * **步驟 6**：**若要將應用程式部署給使用者**，請選取 Lookout for Work 應用程式，然後選取 [管理部署]。
 
-  您必須選取已在 Lookout 主控台中新增至 [Enrollment Management] (註冊管理) 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout 裝置威脅防護](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection)一節中的步驟 3。
+  您必須選取已在 Lookout 主控台中新增至 「Enrollment Management」 (註冊管理) 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout 裝置威脅防護](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection)一節中的步驟 3。
 
 >[!IMPORTANT]
 > Intune 應用程式部署精靈無法察覺 Azure AD 使用者群組，而會改用 Intune 使用者群組，因此您必須依據 Lookout 主控台中已註冊的 Azure AD 使用者群組，來建立一個 Intune 使用者群組 (如[本主題](plan-your-user-and-device-groups.md)中所述)。

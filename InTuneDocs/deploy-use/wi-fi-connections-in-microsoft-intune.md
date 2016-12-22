@@ -14,7 +14,7 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 5. 設定所選平台的 [安全性設定]  。 可用的設定取決於您選取的安全性類型。 相關說明請參閱[安全性設定](#security-settings)。
 
-6. 設定 [Proxy 設定] (僅限 iOS 和 MAC OS X)。
+6. 設定 「Proxy 設定」 (僅限 iOS 和 MAC OS X)。
 
     |設定名稱|詳細資訊|使用時機|
     |----------------|-------------------|-------------|
