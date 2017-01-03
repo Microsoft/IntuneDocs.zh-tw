@@ -1,11 +1,11 @@
 ---
-title: "如果從 Intune 取消註冊 iOS 裝置，會發生什麼情況？ | Microsoft Intune"
+title: "如果從 Intune 取消註冊 iOS 裝置，會發生什麼情況？ | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a88b89114db0f9d76c783bf99ff55e4eb4107865
 
 
 ---
 
 
-# 如果從 Intune 取消註冊 iOS 裝置，會發生什麼情況？
+# <a name="what-happens-if-you-unenroll-your-ios-device-from-intune"></a>如果從 Intune 取消註冊 iOS 裝置，會發生什麼情況？
 
 當您從 Intune 取消註冊 iOS 裝置時：
 
@@ -42,10 +42,10 @@ ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 如需如何取消註冊的指示，請參閱[從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
