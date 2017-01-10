@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>評估 Microsoft Intune 中的行動裝置管理功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本評估指南將示範 Intune 中行動裝置管理的運作方式。 您將會：
 - 註冊要由 Intune 管理的裝置。
 - 建立群組來組織使用者和裝置。

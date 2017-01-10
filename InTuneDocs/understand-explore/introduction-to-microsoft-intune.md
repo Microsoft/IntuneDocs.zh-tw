@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>什麼是 Intune？
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您的工作人員提高生產力，同時保護公司資料。 使用 Intune，您可以︰
 * 管理您的工作人員用來存取公司資料的行動裝置。
 * 管理您的工作人員使用的行動應用程式。
