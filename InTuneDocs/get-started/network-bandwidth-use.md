@@ -1,12 +1,12 @@
 ---
-title: "Intune 網路頻寬用量 | Microsoft Intune"
+title: "Intune 網路頻寬用量 | Microsoft Docs"
 description: "Intune 網路頻寬用量"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 363300f04480a9ed80bd710db5c4ec7c90dd8be3
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 
 
 ---
 
 # <a name="intune-network-bandwidth-use"></a>Intune 網路頻寬用量
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 設定 Microsoft Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列示的其他需求。
 
@@ -106,7 +108,9 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 
 |**網域**|**連接埠**|**IP 位址**|
 |------|----|---|
-|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 和 443|134.170.168.254<br>134.170.51.126
+|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>p.manage.microsoft.com<br>r.manage.microsoft.com|80 和 443|134.170.168.254<br>134.170.51.126
+|m.manage.microsoft.com|80 和 443| 13.91.59.243<br>40.68.30.140
+|portal.manage.microsoft.com|80 和 443|40.121.50.69<br>52.169.30.159
 |account.manage.microsoft.com|80 和 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 和 443|138.91.243.97
 |fef.msua02.manage.microsoft.com|80 和 443|23.96.112.46
@@ -223,10 +227,10 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 
 >[!div class="step-by-step"]
 
->[&larr; **必要條件**](supported-mobile-devices-and-computers.md)     [**網路** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
+>[&larr; **必要條件**](what-to-know-before-you-start-microsoft-intune.md)     [**訂閱** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

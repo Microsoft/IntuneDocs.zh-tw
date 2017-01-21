@@ -68,13 +68,13 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 若要啟用 Intune App SDK，請遵循下列步驟：
 
-1. **選項 1**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 [Linked Frameworks and Libraries] (連結架構和程式庫) 清單中。
+1. **選項 1**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
     ![Intune App SDK iOS：連結架構和程式庫](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     > [!NOTE]
     > 如果您計劃將應用程式發行至 App Store，請使用針對發行所建置的 `libIntuneMAM.a` 版本，而非偵錯版本。 發行版本會在 [發行] 資料夾中。 偵錯版本包含詳細資訊輸出，有助於針對 Intune App SDK 問題進行疑難排解。
 
-    **選項 2**：將 `IntuneMAM.framework` 連結至專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [Linked Frameworks and Libraries] (連結架構和程式庫) 清單中。
+    **選項 2**：將 `IntuneMAM.framework` 連結至專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
 
     > [!NOTE]
     > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱＜將應用程式提交至 App Store＞一節。
@@ -95,17 +95,17 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     >
     > 此外，Xcode 7 已將 `.dylib` 副檔名切換為 `.tbd`。
 
-3. 藉由拖曳 [Build Phases] (建置階段) 的 [Copy Bundle Resources] (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
+3. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
 ![Intune App SDK iOS：複製配套資源](../media/intune-app-sdk-ios-copy-bundle-resources.png)
 
 4. 將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 加入下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
     * 專案的 `OTHER_LDFLAGS` 組建組態設定
-    * UI 的 [Other Linker Flags] (其他連結器旗標)<br>
+    * UI 的 「Other Linker Flags」 (其他連結器旗標)<br>
 
     > [!NOTE]
     > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
 
-5. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請移除 [Main Storyboard] (主要腳本) 或 [Main Nib] (主要 Nib) 欄位。 如果適當的話，請使用下列索引鍵名稱，將您先前移除的腳本或 nib 值新增至名為 IntuneMAMSettings 的新目錄下：
+5. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請移除 「Main Storyboard」 (主要腳本) 或 「Main Nib」 (主要 Nib) 欄位。 如果適當的話，請使用下列索引鍵名稱，將您先前移除的腳本或 nib 值新增至名為 IntuneMAMSettings 的新目錄下：
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -114,9 +114,9 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     > [!NOTE]
     > 如果您的行動應用程式未在其 Info.plist 檔案中定義主要 nib 或腳本檔案，則不需要這些設定。
 
-    您可以在文件本文中的任何位置按一下滑鼠右鍵，然後將檢視類型變更為 [Show Raw Keys/Values] (顯示原始索引鍵/值)，來檢視原始格式的 Info.plist (以查看索引鍵名稱)。
+    您可以在文件本文中的任何位置按一下滑鼠右鍵，然後將檢視類型變更為 「Show Raw Keys/Values」 (顯示原始索引鍵/值)，來檢視原始格式的 Info.plist (以查看索引鍵名稱)。
 
-6. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 [Keychain Sharing] (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
+6. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
     > [!NOTE]
     > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：     ```xml
@@ -157,11 +157,11 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     > [!NOTE]
     > Intune App SDK 自 2015 年 6 月 19 日起，已經過 ADAL Broker 分支程式碼的測試。 請確定您要連結的版本是最新/有效的 ADAL 程式庫版本。
 
-12. 藉由拖曳 [Build Phases] (建置階段) 的 [Copy Bundle Resources] (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
+12. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
 
 13. 當您連結至程式庫時，使用 `-force_load PATH_TO_ADAL_LIBRARY` 連結器選項。
 
-    將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 [Other Linker Flags] (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。
+    將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。
 
 ## <a name="set-up-azure-directory-authentication-library"></a>設定 Azure Directory Authentication Library
 
@@ -179,7 +179,7 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 
 **如何連結至 ADAL 二進位檔？**
 
-將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 [Other Linker Flags] (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。 也請務必將 ADAL 配套複製至應用程式。  
+將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。 也請務必將 ADAL 配套複製至應用程式。  
 
 如需詳細資訊，請參閱 [GitHub 上的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 中的指示。
 
@@ -577,22 +577,22 @@ SDK 會追蹤本機檔案擁有者的身分識別，並據以套用原則。 建
 
 使用 Microsoft Intune 手動測試啟用 MAM 的應用程式之前，您可以在 Xcode 中使用 Settings.bundle 檔案。 這可讓您設定測試原則，而不需要連線到 Intune。 若要加以啟用：
 
-1. 以滑鼠右鍵按一下您專案中的最上層資料夾，來新增 Settings.bundle 檔案。 從功能表選擇 [新增] > [新增檔案]。 在 [資源] 底下，選擇要新增的 [Settings Bundle] (設定配套) 範本。
+1. 以滑鼠右鍵按一下您專案中的最上層資料夾，來新增 Settings.bundle 檔案。 從功能表選擇 [新增] > [新增檔案]。 在 [資源] 底下，選擇要新增的 「Settings Bundle」 (設定配套) 範本。
 
 2. 只在偵錯組建上，將 MAMDebugSettings.plist 複製到 Settings.bundle 中。
 
 3. 在 Settings.bundle 的 Root.plist 中，新增 `Type` = `Child Pane` 且 `FileName` = `MAMDebugSettings` 的喜好設定。
 
-4. 在 [設定] > [您的應用程式名稱] 中，開啟 [Enable Test Policies] (啟用測試原則)。
+4. 在 [設定] > [您的應用程式名稱] 中，開啟 「Enable Test Policies」 (啟用測試原則)。
 
 5. 在 Xcode 內部或外部啟動應用程式。
 
-6. 在 [設定] > [您的應用程式名稱] > [Enable Test Policies] (啟用測試原則) 中，開啟原則，例如 **PIN**。
+6. 在 [設定] > [您的應用程式名稱] > 「Enable Test Policies」 (啟用測試原則) 中，開啟原則，例如 **PIN**。
 
 7. 在 Xcode 內部或外部啟動應用程式。 確認 PIN 如預期般運作。
 
 > [!NOTE]
-> 您可以使用 [設定] > [您的應用程式名稱] > [Enable Test Policies] (啟用測試原則)，來啟用並切換設定。
+> 您可以使用 [設定] > [您的應用程式名稱] > 「Enable Test Policies」 (啟用測試原則)，來啟用並切換設定。
 
 ## <a name="ios-best-practices"></a>iOS 最佳做法
 
