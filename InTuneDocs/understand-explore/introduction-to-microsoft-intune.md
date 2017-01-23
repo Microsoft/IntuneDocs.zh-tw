@@ -14,13 +14,16 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
 
 # <a name="what-is-intune"></a>什麼是 Intune？
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您的工作人員提高生產力，同時保護公司資料。 使用 Intune，您可以︰
 * 管理您的工作人員用來存取公司資料的行動裝置。
 * 管理您的工作人員使用的行動應用程式。
@@ -92,7 +95,7 @@ Intune 提供行動應用程式安全性的一種方式，是透過其**應用�
 
 組織會隨著它們採用「不需註冊」案例的程度而不同。 有些組織會以它為標準。 有些允許伴隨裝置，例如個人平板電腦。 其他的組織則完全不支援。 即使在最後這個情況下，亦即組織要求所有員工裝置都在 MDM 註冊，這些組織通常會為承包商、廠商以及其他有特定豁免的裝置支援「不需註冊」的案例。
 
-您甚至可以在已註冊的裝置上使用 Intune 的「不需註冊」技術。 例如，在 MDM 中註冊的裝置可能會有行動作業系統所提供的已開啟保護。 此外，IT 可能會對 EMS 管理行動應用程式，套用應用程式保護原則來控制另存新檔，或是提供多因素驗證。
+您甚至可以在已註冊的裝置上使用 Intune 的「不需註冊」技術。 例如，在 MDM 中註冊的裝置可能會有行動作業系統所提供的已開啟保護。 (Open-in 保護是一項 iOS 功能，會限制您不能從某個 App (例如 Outlook) 開啟文件來進入另一個 App (例如 Word)，除非兩個 App 均受 MDM 提供者管理。)此外，IT 可能會對 EMS 管理行動應用程式，套用應用程式保護原則來控制另存新檔，或是提供多因素驗證。
 
 無論貴組織在註冊和未註冊的行動裝置和應用程式上的定位如何，Intune 作為 EMS 的一部分，都有工具可以協助提升工作人員產能，同時保護公司資料。
 
@@ -113,6 +116,6 @@ Intune 提供行動應用程式安全性的一種方式，是透過其**應用�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

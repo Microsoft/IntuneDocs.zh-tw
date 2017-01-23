@@ -4,8 +4,8 @@
   - Apple iOS 8.0 及更新版本
   - Mac OS X 10.9 及更新版本
 
-### <a name="windows"></a>Windows
-  - 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦
+### <a name="windows"></a>訊息
+  - 執行 Windows 10 (專業版、教育版和企業版) 的電腦
   - Windows Phone 8.1 和更新版本
   - Windows 8.1 RT
   - 執行 Windows 8.1 的電腦
@@ -23,6 +23,6 @@
  
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
