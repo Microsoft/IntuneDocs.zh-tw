@@ -1,29 +1,34 @@
 ---
-title: "加密您的裝置 | Microsoft Intune"
-description: "描述加密 Android 裝置的方式"
+title: "如何使用加密保護您的 Android 裝置 | Microsoft Docs"
+description: "保護 Android 裝置"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>加密您的裝置
+# <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
-如果您的公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
+當您加密裝置時，系統會用一層防護性程式碼包覆其中的資訊，防止未經授權的人員進行存取。 貴組織需要您先加密 Android 裝置才能存取公司檔案、電子郵件或資料，此為確保資訊安全的步驟。
+
+> [!Note]
+> 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
 如果您取消註冊您的電話，則它會維持加密狀態。
 
@@ -61,6 +66,6 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

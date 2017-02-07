@@ -1,5 +1,5 @@
 ---
-title: "關於 Android for Work |Microsoft Intune"
+title: "關於 Android for Work | Microsoft Docs"
 description: "使用 Intune 管理 Android for Work 可為使用 Android 裝置工作的使用者，提供額外的管理功能與隱私權。"
 keywords: 
 author: nathbarn
@@ -11,13 +11,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
-ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
+ms.sourcegitcommit: d28902223352cefecb62b2226a2eef8775de0953
+ms.openlocfilehash: 28994238d2874a0b6c64e188db04b09439d841bc
 
 
 ---
 
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Android for Work 是一組 Android 裝置功能及服務。 這些功能及服務可以為使用 Android 裝置工作的使用者，提供額外的管理功能與隱私權。 Intune 可協助您將應用程式及公司資源部署到 Android for Work 裝置，以確保工作及個人資訊各自分開。 部署成功之後，裝置存取的應用程式及只會提供給裝置上的 Android for Work 環境使用。
 
@@ -29,7 +31,7 @@ Android for Work 是一組 Android 裝置功能及服務。 這些功能及服�
 
 ## <a name="onboarding"></a>入門訓練
 
-註冊 Android for Work 裝置之前，必須先完成一些上架步驟。 下列步驟會在您的 Intune 租用戶與 Android for Work 應用程式散發及管理程序隨附的 Google Play for Work 之間建立連線。 深入了解[啟用 Android for Work 裝置的註冊](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)。
+註冊 Android for Work 裝置之前，必須先完成一些上架步驟。 下列步驟會在您的 Intune 租用戶與 Android for Work 應用程式散發及管理程序隨附的 Google Play for Work 之間建立連線。 深入了解[啟用 Android for Work 裝置的註冊](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)。
 
 ## <a name="work-profile-management"></a>工作設定檔管理
 
@@ -39,7 +41,7 @@ Android for Work 是一組 Android 裝置功能及服務。 這些功能及服�
 
 Google Play for Work 服務屬於應用程式散發及管理的一部分。 工作設定檔中所有部署到 Android for Work 裝置的應用程式皆來自 Play for Work。 若要管理及部署 Play Store 中的應用程式，必須以 Intune 系統管理員登入 Play for Work 網站，然後為您的 Intune 租用戶核准應用程式。 這些應用程式會同步到 Intune 主控台，以便於 Intune 進行部署及管理。 您組織所開發的企業營運 (LOB) 應用程式，必須使用 Google 的 Android 應用程式發行主控台，才能發行到 Play for Work。 企業營運應用程式必須在 Android 應用程式發行主控台中設定，以限制對您組織的存取。
 
-應用程式安裝時不會與使用者互動，而且也不會要求使用者允許**來自未知來源的安裝**。 若要瀏覽及安裝選擇性或可用的應用程式，使用者可以選擇其裝置上標示有 Work 徽章的 Play Store 應用程式。 深入了解[如何使用 Intune 將應用程式部署至 Android for Work 裝置](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)。
+應用程式安裝時不會與使用者互動，而且也不會要求使用者允許**來自未知來源的安裝**。 若要瀏覽及安裝選擇性或可用的應用程式，使用者可以瀏覽其裝置上的 Play Store。 深入了解[如何使用 Intune 將應用程式部署至 Android for Work 裝置](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)。
 
 ## <a name="app-configuration"></a>應用程式組態
 
@@ -87,6 +89,6 @@ VPN 支援類似於 Android VPN 設定檔， 會提供相同的 VPN 提供者與
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO5-->
 
 
