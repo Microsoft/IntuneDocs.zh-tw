@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
