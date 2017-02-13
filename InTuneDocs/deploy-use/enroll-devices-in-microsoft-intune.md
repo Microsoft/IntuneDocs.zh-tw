@@ -1,11 +1,11 @@
 ---
-title: "註冊裝置 | Microsoft Intune"
+title: "註冊裝置 | Microsoft Docs"
 description: "行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>註冊裝置以在 Intune 中管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 您可以向 Microsoft Intune 註冊裝置 (包括 Windows 電腦)，以啟用行動裝置管理 (MDM)。 本主題說明在 Intune 管理中註冊行動裝置的不同方式。 裝置的註冊方式取決於裝置類型、擁有權和所需的管理層級而定。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (CYOD) 註冊允許進行遠端抹除、共用裝置或裝置的使用者親和性等管理案例。
 
 如果您使用內部部署或裝載於雲端的 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)，您可以進行不需要註冊的簡單 Intune 管理。 也可以使用 [Intune 用戶端軟體](#manage-windows-pcs-with-intune)來管理 Windows 電腦。
@@ -31,7 +34,7 @@ ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
 
 - **抹除** - 指出裝置是否需要先抹除，然後使用者才能註冊裝置。 「抹除」一詞表示將裝置進行原廠重設，這會移除所有資料。 如需詳細資訊，請參閱[淘汰裝置](retire-devices-from-microsoft-intune-management.md)。
 - **親和性**：將裝置與使用者相關聯。 行動應用程式管理 (MAM) 和公司資料的條件式存取需要此功能。 如需詳細資訊，請參閱[使用者親和性](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices)。
-- **鎖定** - 防止使用者移除受管理的裝置。 iOS 裝置需要受監管模式才能進行鎖定。 如需詳細資訊，請參閱[遠端鎖定](retire-devices-from-microsoft-intune-management.md#block-access-a-device)。
+- **鎖定** - 指出是否防止使用者取消註冊其裝置不進行管理。 使用者可以使用公司入口網站應用程式來取消註冊其在所有平台上的裝置。 他們無法使用原生作業系統功能表來取消註冊。 
 
 **iOS 的註冊方法**
 
@@ -120,6 +123,6 @@ Intune 可以管理下列裝置平台︰
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
