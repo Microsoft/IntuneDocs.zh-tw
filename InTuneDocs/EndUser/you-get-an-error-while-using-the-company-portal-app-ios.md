@@ -1,39 +1,43 @@
 ---
-title: "您在使用公司入口網站應用程式時收到錯誤 | Microsoft Intune"
+title: "您在公司入口網站應用程式中收到錯誤 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
 
 
 ---
 
 
-# 您在使用公司入口網站應用程式時收到錯誤
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>您在使用公司入口網站應用程式時收到錯誤
 
-如果您在 iOS 裝置上使用公司入口網站應用程式時出現錯誤，您可以傳送錯誤的相關資訊，以協助 IT 系統管理員對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
+如果您在 iOS 裝置上使用公司入口網站應用程式時出現錯誤，您可以傳送相關資訊給 IT 系統管理員，以協助他們對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
 
 -   在錯誤警示訊息上，點選 [報告]。
 
 -   在公司入口網站應用程式的 [關於] 畫面上，點選 [傳送診斷報告]。
 
--   進入公司入口網站應用程式後，請搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] &gt; [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
+-   進入公司入口網站應用程式後，請搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] > [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
+
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

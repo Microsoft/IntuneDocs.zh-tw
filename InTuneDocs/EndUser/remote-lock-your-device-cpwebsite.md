@@ -1,43 +1,43 @@
 ---
-title: "從公司入口網站遠端鎖定裝置 | Microsoft Intune"
+title: "從公司入口網站鎖定裝置 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
 
+# <a name="remotely-lock-your-device-from-the-company-portal-website"></a>從公司入口網站遠端鎖定裝置
 
-# 從公司入口網站遠端鎖定裝置
+意外無處不在，所以有時候裝置會遺失。 如果裝置遺失或失竊，您首先擔心的可能是任何人都能存取裝置中的資訊，不論它在哪裡。
 
-如果裝置遺失或遭竊，您可以使用[公司入口網站](http://portal.manage.microsoft.com)的 [遠端鎖定] 選項來鎖定裝置。 遠端鎖定支援下列類型的裝置︰
+[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-平台  |支援詳細資料  
----------|---------
-Android | 支援       
-iOS | 支援
-Windows 10 Mobile | 只有在電話已設定密碼時才支援     
-Windows 10 Desktop | 不支援  
-Windows Phone 8.1 | 只有在電話已設定密碼時才支援
-電腦 (Windows 8.0 及更早版本) | 不支援       
-電腦 (Windows 8.1) | 不支援
+為了安全起見，您可以使用[公司入口網站](http://portal.manage.microsoft.com)的 [遠端鎖定] 選項來鎖定裝置。 [遠端鎖定] 適用於︰
 
-</br>
-若要使用遠端鎖定來鎖定裝置︰
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (如果裝置已設定密碼)
+* Windows Phone 8.1 (如果裝置已設定密碼)
+
+## <a name="to-use-remote-lock-to-lock-your-device"></a>使用 [遠端鎖定] 來鎖定裝置
 
 1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要鎖定的裝置名稱。
 
@@ -45,25 +45,25 @@ Windows Phone 8.1 | 只有在電話已設定密碼時才支援
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  閱讀其中指出您即將鎖定裝置的警告訊息，然後點選 [遠端鎖定]，以讓公司入口網站嘗試鎖定裝置。
+3.  隨即會出現通知，讓您知道您即將要鎖定裝置。 點選 [遠端鎖定]，公司入口網站即會嘗試鎖定您的裝置。
 
-    點選 [遠端鎖定] 後會出現「遠端鎖定暫止」狀態。  遠端鎖定成功時，狀態會變更為「遠端鎖定成功」。
+    點選 [遠端鎖定] 後會出現「遠端鎖定暫止」訊息。  遠端鎖定成功時，狀態會變更為「遠端鎖定成功」。
 
     [遠端鎖定] 狀態會顯示在三個位置︰
 
     * 網站的通知區域。
-    * 裝置 [詳細資料] 頁面。
+    * 裝置的 [詳細資料] 頁面。
     * 頁面的 [我的裝置] 區段上顯示裝置名稱的磚。
 
-    如果您看到「遠端鎖定失敗」通知，請等候幾分鐘，再重試鎖定裝置。 點選以重試後，狀態會變更回「遠端鎖定暫止」。
+> [!Note]
+> 如果您看到「遠端鎖定失敗」通知，請等候幾分鐘，再次嘗試鎖定裝置。 開始重試後，狀態會變更回「遠端鎖定暫止」。 如果無法重試，您需要連絡 IT 管理員。
 
-    如果重試仍然失敗，請連絡 IT 管理員以取得協助。 在使用遠端鎖定之後，如果找回裝置且想要解除鎖定，只要輸入密碼即可。
+在使用遠端鎖定之後，如果找回裝置且想要解除鎖定，只要輸入密碼即可。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

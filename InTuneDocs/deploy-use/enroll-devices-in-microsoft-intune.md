@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/25/2017
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
-ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-您可以向 Microsoft Intune 註冊裝置 (包括 Windows 電腦)，以啟用行動裝置管理 (MDM)。 本主題說明在 Intune 管理中註冊行動裝置的不同方式。 裝置的註冊方式取決於裝置類型、擁有權和所需的管理層級而定。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (CYOD) 註冊允許進行遠端抹除、共用裝置或裝置的使用者親和性等管理案例。
+您可以向 Microsoft Intune 註冊裝置 (包括 Windows 電腦)，以啟用行動裝置管理 (MDM)。 本主題說明在 Intune 管理中註冊行動裝置的不同方式。 裝置的註冊方式取決於裝置類型、擁有權和所需的管理層級而定。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
 
 如果您使用內部部署或裝載於雲端的 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)，您可以進行不需要註冊的簡單 Intune 管理。 也可以使用 [Intune 用戶端軟體](#manage-windows-pcs-with-intune)來管理 Windows 電腦。
 
@@ -60,6 +60,20 @@ ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 |**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
+**Android for Work 註冊方法**
+
+| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**macOS 註冊方法**
+
+| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | 是|   是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
 如需有助於找出正確方法的一系列相關問題，請參閱[選擇如何註冊裝置](/intune/get-started/choose-how-to-enroll-devices1)。
 
 ## <a name="byod"></a>BYOD
@@ -76,27 +90,22 @@ ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 ### <a name="dep"></a>DEP
 Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
   - 已鎖定註冊
-  - 條件式存取
-  - 破解偵測
-  - 行動應用程式管理
+  - Kiosk 模式及其他進階設定與限制
 
 深入了解 [DEP](ios-device-enrollment-program-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
-屬公司擁有的 USB 連接裝置是使用 Intune 原則所準備。 為了進行設定輔助程式註冊，系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 系統管理員必須手動註冊每台裝置。 使用者會接收其裝置，並且執行 Setup Assistant 以註冊其裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
-  - 條件式存取
-  - 破解偵測
-  - 行動應用程式管理
+IT 系統管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公司擁有的裝置，以使用設定助理進行註冊。 IT 系統管理員會建立註冊設定檔，並將其匯出至 Apple Configurator。 當使用者收到裝置時，系統會提示他們執行設定助理以註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
+  - 已鎖定註冊
+  - Kiosk 模式及其他進階設定與限制
 
 深入了解 [使用 Apple Configurator 進行 Setup Assistant 註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-direct"></a>USB-Direct
-為了進行直接註冊，系統管理員會建立 Intune 原則，並將它匯出至 Apple Configurator。 公司擁有的 USB 連接裝置可直接註冊，而不需重設成出廠預設值。 系統管理員必須手動註冊每台裝置。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。 深入了解[使用 Apple Configurator 直接註冊](ios-direct-enrollment-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
+若是 Direct Enrollment，系統管理員必須建立註冊原則並將其匯出至 Apple Configurator，以手動註冊每部裝置。 公司擁有的 USB 連接裝置可直接註冊，而不需重設成出廠預設值。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。  深入了解[使用 Apple Configurator 直接註冊](ios-direct-enrollment-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 的行動裝置管理
-Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange ActiveSync (EAS) 的行動裝置。 Intune 會使用 Exchange Connector 與內部部署或雲端託管的 EAS 通訊。
-
-如需詳細資訊，請參閱[搭配 Microsoft Intune 的 Exchange ActiveSync 行動裝置管理](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)。
+Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange ActiveSync (EAS) 的行動裝置。 Intune 會使用 Exchange Connector 與內部部署或雲端託管的 EAS 通訊。 如需詳細資訊，請參閱[搭配 Microsoft Intune 的 Exchange ActiveSync 行動裝置管理](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)。
 
 
 ## <a name="windows-pc-management-with-intune"></a>搭配 Intune 的 Windows PC 管理  
@@ -106,9 +115,7 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
  - 安裝桌面應用程式 (例如 .exe 和 .msi 檔案)
  - 管理防火牆設定
 
-如果電腦是搭配 Intune 用戶端軟體來進行管理，則無法完全將其抹除 (即使可以進行選擇性抹除亦同)。 如果電腦是搭配 Intune 軟體用戶端來進行管理，就無法利用許多 Intune 管理功能，例如條件式存取、VPN 和 Wi-Fi 設定，或憑證和電子郵件組態部署。
-
-如需詳細資訊，請參閱[使用 Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)。
+如果電腦是搭配 Intune 用戶端軟體來進行管理，則無法完全將其抹除 (即使可以進行選擇性抹除亦同)。 如果電腦是搭配 Intune 軟體用戶端來進行管理，就無法利用許多 Intune 管理功能，例如條件式存取、VPN 和 Wi-Fi 設定，或憑證和電子郵件組態部署。 如需詳細資訊，請參閱[使用 Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)。
 
 ## <a name="supported-device-platforms"></a>支援的裝置平台
 

@@ -1,11 +1,11 @@
 ---
-title: "限制存取 SharePoint Online | Microsoft Intune"
+title: "保護 SharePoint Online | Microsoft Docs"
 description: "使用條件式存取保護與控制 SharePoint Online 上的公司資料存取。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 條件式存取來控制對於 SharePoint Online 上檔案的存取。
 條件式存取有兩個元件：
 - 裝置合規性原則，裝置必須符合此原則才算符合規範。
 - 條件式存取原則，其中您要指定裝置必須符合才能存取服務的條件。
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
+若要深入了解條件式存取如何運作，請參閱[限制電子郵件、O365 和其他服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
 
 您要向使用者部署合規性及條件式存取原則。 使用者用來存取服務的所有裝置都會經過檢查，以確定符合原則規範。
 
@@ -66,7 +69,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
 - Windows Phone 8.1 和更新版本
 
-您可以在 **iOS** 和 **Android** 裝置從瀏覽器進行存取時，限制存取 SharePoint Online。 只允許從符合規範裝置上的支援瀏覽器存取︰
+您可以在 **iOS** 和 **Android** 裝置從瀏覽器進行存取時，限制 SharePoint Online 的存取。 只允許從符合規範裝置上的支援瀏覽器存取︰
 * Safari (iOS)
 * Chrome (Android)
 * Intune 受管理的瀏覽器 (iOS 以及 Android 5.0 和更新版本)
@@ -196,6 +199,6 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

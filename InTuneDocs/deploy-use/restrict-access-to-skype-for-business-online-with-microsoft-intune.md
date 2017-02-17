@@ -1,11 +1,11 @@
 ---
-title: "限制存取商務用 Skype Online | Microsoft Intune"
+title: "保護商務用 Skype Online | Microsoft Docs"
 description: "使用條件式存取保護與控制商務用 Skype Online 的存取。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取商務用 Skype Online
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取商務用 Skype Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 您可以使用**商務用 Skype Online** 的條件式存取原則來控制對商務用 Skype Online 的存取。
 條件式存取有兩個元件：
 - 裝置合規性原則，裝置必須符合此原則才算符合規範。
 - 條件式存取原則，其中您要指定裝置必須符合，您才能存取服務的條件。
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件和 O365 服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
+若要深入了解條件式存取如何運作，請參閱[限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 當目標使用者嘗試在其裝置上使用商務用 Skype Online 時，就會進行下列評估：
 
@@ -117,6 +120,6 @@ ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

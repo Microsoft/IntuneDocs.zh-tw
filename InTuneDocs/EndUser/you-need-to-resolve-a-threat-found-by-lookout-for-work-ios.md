@@ -1,27 +1,29 @@
 ---
-title: "您必須解決 Lookout for Work 在 iOS 裝置上找到的威脅 | Microsoft Intune"
+title: "解決 iOS 上 Lookout for Work 所找到的威脅 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: 88b6a7107efb04accac4e7028e04a5505d8c865b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
 
 
 ---
 
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>您必須解決 Lookout for Work 找到的威脅
 
-Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 您可能會看到類似下列這則訊息： 
+Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 您可能會看到類似下列這則訊息：
 
 ![來自 Lookout from Work 的不符合規範訊息](./media/ios-lfw-noncompliant-in-ssp.png)
 
@@ -49,8 +51,6 @@ Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題
 
 
 
-
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

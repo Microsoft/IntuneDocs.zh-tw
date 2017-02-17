@@ -1,12 +1,12 @@
 ---
 
-title: "Android 和 Samsung KNOX Standard 原則設定 | Microsoft Intune"
+title: "Android 和 Samsung KNOX 原則設定 | Microsoft Docs"
 description: "建立可以在您使用 Intune 管理的 Android 裝置上控制設定及功能的原則。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX Standard 原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定。 此外，您可以指定開放行動聯盟的統一資源識別項 (OMA-URI) 值，來建立 Intune 未提供使用的自訂設定。
 
@@ -144,6 +146,8 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |**編輯**|可讓您編輯所選取應用程式的名稱、發行者和 URL。|
 |**刪除**|從清單中刪除選取的應用程式。|
 
+包含相容和不相容應用程式設定的原則必須部署到使用者群組。
+
 ### <a name="kiosk-mode-settings"></a>Kiosk 模式設定
 為 **Samsung KNOX Standard 裝置**指定下列設定：
 
@@ -177,9 +181,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 使用 Microsoft Intune **Android 自訂組態原則**來部署 OMA-URI 設定，此設定可用來控制 Android 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
 此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。
-
-> [!NOTE]
-> Android 自訂原則目前只支援針對包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。
+Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中的範例，以找出您可以設定的原則。
 
 ### <a name="general-settings"></a>一般設定
 
@@ -200,7 +202,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 
 ### <a name="examples"></a>範例
 
-- [建立使用預先共用金鑰的 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
+- [使用預先共用的金鑰建立 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
 - [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](per-app-vpn-for-android-pulse-secure.md)
 - [使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
@@ -209,6 +211,6 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

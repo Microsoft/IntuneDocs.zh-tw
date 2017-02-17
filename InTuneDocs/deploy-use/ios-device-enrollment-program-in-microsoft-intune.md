@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 1/30/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: e59c052170750cd7744f305934f76d65b976f37e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
 
 
 ---
@@ -25,6 +25,9 @@ ms.openlocfilehash: e59c052170750cd7744f305934f76d65b976f37e
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊透過裝置註冊方案 (DEP) 購買的 iOS 裝置。 註冊套件可以包括裝置的設定助理選項。
+
+>[!NOTE]
+>此註冊方法不能與[裝置註冊管理員](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法一起使用。
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>使用 Apple DEP 管理註冊 iOS 裝置的必要條件
 
@@ -121,7 +124,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 2. 選擇您要指派所建立之設定檔的目標裝置。 您可以選擇 [所有裝置] 或選取特定的裝置，然後選取 [新增]。
 
 > [!Important]
-> 目前，Intune 讓您指定「預設的裝置註冊設定檔」，這表示當您同步處理新序號與 Apple DEP 服務時，新的序號會自動指派給預設的設定檔。 當您的租用戶在不久的將來移轉到新的 Azure 入口網站時，您將無法再設定預設設定檔，並將序號自動指派給該設定檔。 反之，您必須將序號指派給設定檔。 [深入了解](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
+> Intune 目前可讓您指定「預設的裝置註冊設定檔」，這表示當您與 Apple DEP 服務同步新的序號時，新序號會自動指派到該預設的設定檔。 當您的租用戶在不久的將來移轉到新的 Azure 入口網站時，您將無法再設定預設設定檔，並將序號自動指派給該設定檔。 而是必須將序號指派到特定的設定檔。 [深入了解](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 
 ### <a name="assign-dep-devices-for-management"></a>指派要管理的 DEP 裝置
 
@@ -135,7 +138,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="synchronize-dep-managed-devices"></a>同步處理 DEP 管理的裝置
 
-    This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
+此步驟會將裝置與 Apple DEP 服務同步，並可讓裝置出現在 Intune 主控台中。
 
 1. 以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 [管理員] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [立即同步處理]。 同步處理要求會傳送至 Apple。
 
@@ -153,13 +156,13 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune 群組指派的變更
 
-從 2016 年 12 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在 [公司註冊設定檔] 選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+從 2016 年 12 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在公司註冊設定檔選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 每個公司裝置註冊設定檔預先指派的 Intune 裝置群組，在移轉到 Azure Active Directory 裝置群組期間，都會根據公司裝置註冊設定檔的名稱，在 AAD 中建立對應的動態裝置群組。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>另請參閱
 [註冊裝置的必要條件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

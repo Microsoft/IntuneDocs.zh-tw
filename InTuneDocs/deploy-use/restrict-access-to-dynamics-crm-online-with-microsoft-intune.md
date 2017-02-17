@@ -1,11 +1,11 @@
 ---
-title: "限制對 Dynamics CRM Online 的存取 | Microsoft Intune"
+title: "保護 Dynamics CRM Online | Microsoft Docs"
 description: "使用條件式存取保護與控制對 Dynamics CRM Online 的存取。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 限制對 Dynamics CRM Online 的存取
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 限制對 Dynamics CRM Online 的存取
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 您可以從 iOS 和 Android 裝置使用 Microsoft Intune 條件存取，以控制對 Microsoft Dynamics CRM Online 的存取。  Intune 條件式存取有兩個元件：
 * [裝置合規性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)，裝置必須遵循此原則才算符合規範。
 * [條件式存取原則](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，其中指定裝置必須符合才能存取服務的條件。
 
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
+若要深入了解條件式存取如何運作，請參閱[限制電子郵件、Office 365 和其他服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 > [!IMPORTANT]
 > 若要部署條件式存取，您必須訂閱 Intune 和 Azure Active Directory Premium，且使用者必須獲這兩項產品授權。 **Enterprise Mobility + Security (EMS) 訂閱**包括 Intune 和 Azure Active Directory Premium 訂閱。 如需詳細資訊，請瀏覽 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 若無 EMS 訂閱，您可以取得 Azure Active Directory Premium 訂閱。 請參閱 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
@@ -78,7 +81,7 @@ ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
   * **iOS**
   * **Android**
 4.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
-5.  選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+5.  選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
 6.  完成之後，請選擇 [儲存]。
 
 您現在已設定 Dynamics CRM 的條件式存取。 您不需部署條件式存取原則，它會立即生效。
@@ -92,15 +95,15 @@ ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
 * **已登錄了 AAD 並符合規範的裝置**。 這些裝置可以存取 Dynamics CRM。
 
 ##  <a name="next-steps"></a>後續步驟
-* [限制存取 Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [限制 Exchange Online 的存取](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [限制 Exchange 內部部署的存取](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [限制存取 SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [限制 Exchange 內部部署 的存取](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [限制存取商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

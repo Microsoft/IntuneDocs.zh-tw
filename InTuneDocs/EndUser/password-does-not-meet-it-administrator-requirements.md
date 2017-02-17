@@ -1,25 +1,27 @@
 ---
-title: "密碼不符合 IT 系統管理員需求 | Microsoft Intune"
+title: "您的密碼不符合 IT 系統管理員需求 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 60659d60e3fcf2146b444a3334192c8b1181f735
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>密碼不符合 IT 系統管理員需求
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>您的密碼不符合 IT 系統管理員需求
 
 您用來存取公司或學校資源的密碼，不符合一或多項 IT 系統管理員所設定的需求。 若要修正此問題，請遵循裝置上顯示的下列指示。 下方列出問題的描述。
 
@@ -49,6 +51,6 @@ PIN 或密碼問題的描述：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,25 +1,27 @@
 ---
-title: "系統提示在您的 iOS 裝置上安裝 Lookout for Work | Microsoft Intune"
+title: "您需要在 iOS 裝置上安裝 Lookout for Work | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>系統提示在您的 iOS 裝置上安裝 Lookout for Work
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>您需要在 iOS 裝置上安裝 Lookout for Work
 
 在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。 裝置上可能會看到不同的提示，視 IT 管理員設定 Lookout for Work 的方式而定。
 
@@ -41,7 +43,7 @@ ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
     ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Lookout for Work 完成安裝後，如果裝置上找不到任何安全性威脅，您會看到下列畫面。
 
 ![Lookout for Work 沒有找到任何安全性威脅](./media/ios-lfw-no-threats-found.png)
@@ -54,7 +56,6 @@ Lookout for Work 完成安裝後，如果裝置上找不到任何安全性威脅
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

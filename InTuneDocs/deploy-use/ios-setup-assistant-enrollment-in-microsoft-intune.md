@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: cf2408344d7ffa824a6c6f4bffd1b48bc15e6542
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
 
 
 ---
@@ -77,7 +77,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
    > [!Important]
    > 群組指派將從 Intune 移至 Azure Active Directory。 一旦 Intune 帳戶收到適用的更新，您不會看到 [將裝置指派給以下群組] 選項。 [深入了解](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)。
 
-        -  **Device Enrollment Program**&mdash;The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure that the toggle is set to **off**.
+   -  **裝置註冊方案**&mdash;Apple 裝置註冊方案 (DEP) 不能與設定助理註冊搭配使用。 請確定切換設定為 [關閉]。
 
 3.  選擇 [儲存設定檔] 以新增設定檔。
 
@@ -105,7 +105,10 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
   -  **手動新增裝置詳細資料**&mdash;輸入最多 15 部裝置的序號和任何註記或詳細資料。
 
-  稍後若要變更此序號清單，請參閱[新增或更新 iOS 序號](#add-or-update-ios-serial-numbers)。
+  您可在 [檢閱裝置] 窗格中確認序號。 您也可以決定要覆寫再次匯入的序號 [詳細資料]，還是要取消核取 [覆寫] 方塊，以保留目前的詳細資料。 
+
+> [!NOTE] 
+> 在現有的 Intune 系統管理員主控台中，管理員可以接受已上傳 之 CSV 的相關詳細資料，並覆寫個別序號的現有詳細資料。 在新的 Azure 入口網站中，您只能覆寫所有序號的詳細資料，或忽略所有序號的新詳細資料。
 
   > [!NOTE]
   > 如果稍後想從 Intune 管理中移除公司擁有的裝置，您可能需要前往 [公司預先註冊的裝置] 下的 [依 iOS 序號] 裝置群組，從 Intune 移除裝置序號，才能停用裝置註冊。 如果 Intune 在您移除序號期間或前後執行災害復原程序，則您必須確認該群組中只會出現使用中裝置的序號。
@@ -179,29 +182,12 @@ iOS 裝置會連線到 Mac 電腦並註冊，以進行行動裝置管理。
 
 關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
 
-## <a name="add-or-update-ios-serial-numbers"></a>新增或更新 iOS 序號
-
-上述步驟說明在「第 0 天」註冊裝置所需採取的全部步驟，包括如何上傳 iOS 序號，但您偶爾可能想要新增或更新序號的詳細資料。 使用下列步驟來新增或更新 iOS 裝置序號清單。 
-
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [群組] &gt; [所有裝置] &gt; [公司預先註冊的裝置] &gt; [依 iOS 序號]，然後選擇 [新增裝置…]。 如果想要移除或更新序號，請選取序號，然後選取 [移除]，而非選取 [新增裝置...]。
-
-2. 若要繼續新增或更新序號，請如本主題前文步驟中所述，選取下列其中一種，然後選取 [下一步]：
-
-   -  **上傳具有序號的 .csv 檔案** 
-   -  **手動新增裝置詳細資料** 
-
-3.  您可在 [檢閱裝置] 窗格中確認序號。 您也可以決定要覆寫再次匯入的序號 [詳細資料]，還是要取消核取 [覆寫] 方塊，以保留目前的詳細資料。 
-
-4.  選擇 [完成] 匯入序號。  匯入的序號和詳細資料會新增至 [依 iOS 序號] 清單。
-
-> [!NOTE] 
-> 當貴組織在不久的將來移轉到新的 Azure 入口網站後，您會看到這項功能的變更。 在現有的 Intune 系統管理員主控台中，管理員可以接受已上傳 之 CSV 的相關詳細資料，並覆寫個別序號的現有詳細資料。 在新的 Azure 入口網站中，您只能覆寫所有序號的詳細資料，或忽略所有序號的新詳細資料。
 
 ### <a name="see-also"></a>請參閱
 [註冊裝置的必要條件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -7,21 +7,20 @@
 ### [其他選項和額外項目](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [轉換為付費訂閱](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [常見案例](understand-explore/common-ways-to-use-intune.md)
-## [名詞解釋](understand-explore/intune-glossary.md)
+
 
 # [開始使用](get-started/get-started.md)
-## [快速入門指南](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [安裝 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [先決條件](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [支援的裝置和瀏覽器](get-started/supported-mobile-devices-and-computers.md)
-#### [網路頻寬使用量](get-started/network-bandwidth-use.md)
+#### [網路使用量](get-started/network-bandwidth-use.md)
 ### [登入 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [設定網域名稱](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [設定網域](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [新增使用者](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [管理 Intune 授權](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [管理授權](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [組織使用者與裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [部署原則和應用程式](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [自訂公司入口網站](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [註冊行動裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [註冊裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](get-started/post-configuration-tasks.md)
 ## [移轉至 Intune](get-started/migrate-to-intune.md)
 ## 後續步驟
@@ -30,14 +29,23 @@
 ### [將行動應用程式發佈給您的使用者](get-started/publish-mobile-apps-to-users.md)
 ### [簡化行動裝置上的電子郵件設定](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [防禦惡意程式碼威脅，保護 Windows 電腦](get-started/protect-pcs-against-malware-threats.md)
-## [Intune 部署的階段](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [專案範圍](get-started/project-scope.md)
-### [概念證明](get-started/proof-of-concept.md)
-### [試驗](get-started/pilot.md)
-### [企業首度發行](get-started/enterprise-rollout.md)
-### [操作和維護](get-started/operations-and-maintenance.md)
+
+# [規劃和設計](plan-design/introduction.md)
+## [第 1 節︰判斷部署目的、目標和挑戰](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [第 2 節︰識別使用案例](plan-design/section-2-identify-use-case-scenarios.md)
+## [第 3 節︰決定使用案例的需求](plan-design/section-3-determine-use-case-requirements.md)
+## [第 4 節︰開發推出計畫](plan-design/section-4-develop-a-rollout-plan.md)
+## [第 5 節︰開發通訊計畫](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [第 6 節︰開發支援計畫](plan-design/section-6-develop-a-support-plan.md)
+## [第 7 節︰建立 Intune 設計](plan-design/section-7-create-an-intune-design.md)
+## [第 8 節︰Intune 實作](plan-design/section-8-onboarding-process.md)
+## [第 9 節︰測試與驗證](plan-design/section-9-test-and-validation.md)
+## [其他資源](plan-design/additional-resources.md)
 
 # [新功能](whats-new/whats-new-in-microsoft-intune.md)
+## [Intune App UI 的新功能](whats-new/whats-new-in-intune-app-ui.md)
+## [Azure Preview 的新功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [封存的新功能](whats-new/whats-new-archive.md)
 
 # 部署與使用
 ## [裝置和應用程式生命週期的概觀](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -65,6 +73,7 @@
 #### [安裝電腦用戶端](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [一般電腦管理工作](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [解決電腦原則衝突](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [管理 Android for Work](deploy-use/android-for-work.md)
 
 ## 設定裝置
 ### [透過原則管理裝置上的設定和功能](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -90,6 +99,7 @@
 #### [Intune 的 VPN 連線](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Intune 的電子郵件設定檔](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [使用群組管理使用者和裝置](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [將群組移轉至 Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [將裝置對應到群組](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [透過清查了解您的裝置](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -135,24 +145,24 @@
 #### [Windows 和 Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [部署裝置相容性原則](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [根據裝置相容性限制存取權](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [根據裝置合規性保護存取](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online 和新 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange 內部部署和舊版 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [商務用 Skype Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [限制電子郵件存取︰範例](deploy-use/restrict-email-access-example-scenarios.md)
+#### [保護電子郵件存取︰範例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [僅允許受原則管理的應用程式存取 O365 服務](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [使用 MAM CA 的應用程式](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [封鎖沒有 ADAL 的應用程式](deploy-use/block-apps-with-no-modern-authentication.md)
-### [限制存取網路 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [根據裝置、網路和應用程式風險限制存取](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [設定 Lookout 裝置威脅保護](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [在 Intune 中啟用 Lookout](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [部署 Lookout for work 應用程式](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [啟用裝置威脅保護相容性原則](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [保護網路存取權 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [根據裝置、網路和應用程式風險保護存取](deploy-use/device-threat-protection.md)
+#### [設定 Lookout 裝置威脅保護](deploy-use/device-threat-protection-subscription-setup.md)
+#### [在 Intune 中啟用 Lookout](deploy-use/device-threat-protection-enable.md)
+#### [部署 Lookout for work 應用程式](deploy-use/device-threat-protection-apps.md)
+#### [啟用裝置威脅保護相容性原則](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保護應用程式資料](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM 原則的 Azure 入口網站](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -172,6 +182,7 @@
 #### [Intune 未管理之裝置上的 LOB 應用程式](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [在您撰寫應用程式時使用 SDK](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [MAM 和應用程式保護常見問題集](deploy-use/mam-faq.md)
 
 ## 淘汰應用程式與資料
 ### [使用完整或選擇性抹除](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -208,7 +219,9 @@
 
 ## [Lookout 整合疑難排解](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [名詞解釋](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

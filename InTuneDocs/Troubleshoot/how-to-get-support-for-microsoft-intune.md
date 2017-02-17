@@ -1,5 +1,5 @@
 ---
-title: "如何取得支援 | Microsoft Intune"
+title: "如何取得支援 | Microsoft Docs"
 description: "付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。"
 keywords: 
 author: staciebarker
@@ -14,17 +14,35 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 的管理支援
+# <a name="how-admins-get-support-for-microsoft-intune"></a>系統管理員如何取得 Microsoft Intune 支援
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱支援。 付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。 線上技術支援提供英文與日文。 電話支援與線上帳單支援另提供其他語言。
 
 Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂級支援客戶必須支付程序問題 (例如如何設定 Intune 功能) 的費用。
+
+## <a name="find-help-without-opening-a-support-ticket"></a>在不開啟支援票證的情況下尋求協助
+
+建立支援票證之前，請查看下列資源以取得解答。
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet 論壇
+
+提出問題或開始與 Microsoft 技術專家討論！ 我們在可搜尋的 [Microsoft Intune TechNet 論壇](https://social.technet.microsoft.com/Forums/home)上提供解答和深入解析。
+
+    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 產品意見反應網站
+
+您是否有 Microsoft 如何適當地改善 Intune 的意見反應？ 請在 Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) 意見反應網站上新增您的想法，讓我們知道。 您也可以對新增至 UserVoice 的他人想法進行投票。 
+
+    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## <a name="create-an-online-service-ticket"></a>建立線上服務票證
 
@@ -114,6 +132,6 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

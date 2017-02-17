@@ -1,11 +1,11 @@
 ---
-title: "Android for Work 的相容性原則設定 | Microsoft Intune"
+title: "Android for Work 的相容性設定 | Microsoft Docs"
 description: "本主題說明適用於 Android 裝置並與 Android for Work 相容的裝置相容性原則設定。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
+ms.sourcegitcommit: 1afe7093b80bb5fe3ea873cb065c8ca2673160e8
+ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置的相容性原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,6 +87,6 @@ ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
