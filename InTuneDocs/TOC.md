@@ -43,9 +43,9 @@
 ## [其他資源](plan-design/additional-resources.md)
 
 # [新功能](whats-new/whats-new-in-microsoft-intune.md)
-## [Intune App UI 的新功能](whats-new/whats-new-in-intune-app-ui.md)
-## [Azure Preview 的新功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
-## [封存的新功能](whats-new/whats-new-archive.md)
+## [應用程式 UI 的新功能](whats-new/whats-new-in-intune-app-ui.md)
+## [Azure 預覽的新功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [新功能封存](whats-new/whats-new-archive.md)
 
 # 部署與使用
 ## [裝置和應用程式生命週期的概觀](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -57,8 +57,7 @@
 #### [Android 管理](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work 管理](deploy-use/set-up-android-for-work.md)
 #### [Windows 裝置管理](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 行動裝置版和 Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
-### [管理屬公司擁有的裝置](deploy-use/manage-corporate-owned-devices.md)
+### [管理公司擁有的裝置](deploy-use/manage-corporate-owned-devices.md)
 #### [註冊屬公司擁有的 iOS 裝置](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [設定助理註冊](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
 ##### [直接註冊](deploy-use/ios-direct-enrollment-in-microsoft-intune.md)
@@ -106,7 +105,7 @@
 
 ## [保護裝置](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [遠端鎖定和密碼重設](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [利用 MFA 保護 Windows 裝置](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [利用 MFA 保護 Windows 裝置](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [控制 Windows Hello 企業版設定](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上略過啟用鎖定](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保護 Windows 電腦的原則](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -159,9 +158,9 @@
 #### [封鎖沒有 ADAL 的應用程式](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保護網路存取權 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [根據裝置、網路和應用程式風險保護存取](deploy-use/device-threat-protection.md)
-#### [設定 Lookout 裝置威脅保護](deploy-use/device-threat-protection-subscription-setup.md)
-#### [在 Intune 中啟用 Lookout](deploy-use/device-threat-protection-enable.md)
-#### [部署 Lookout for work 應用程式](deploy-use/device-threat-protection-apps.md)
+#### [設定裝置威脅防護](deploy-use/device-threat-protection-subscription-setup.md)
+#### [啟用裝置威脅防護](deploy-use/device-threat-protection-enable.md)
+#### [部署裝置威脅防護應用程式](deploy-use/device-threat-protection-apps.md)
 #### [啟用裝置威脅保護相容性原則](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保護應用程式資料](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,11 +216,11 @@
 
 ## [行動應用程式管理疑難排解](troubleshoot/troubleshoot-mam.md)
 
-## [Lookout 整合疑難排解](troubleshoot/troubleshooting-lookout-integration.md)
+## [對裝置威脅防護進行疑難排解](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [名詞解釋](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -42,7 +42,7 @@
 ### 管理裝置註冊
 #### [建立條款和條件](enroll-devices/create-terms-and-conditions.md)
 #### [設定註冊限制](enroll-devices/set-enrollment-restrictions.md)
-#### [對應裝置群組](enroll-devices/how-to-use-device-group-mapping.md)
+#### [將裝置對應到群組](enroll-devices/how-to-use-device-group-mapping.md)
 #### [新增公司識別碼](enroll-devices/add-corporate-identifiers.md)
 #### [使用 Windows Hello 企業版](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
