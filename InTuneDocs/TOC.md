@@ -11,7 +11,8 @@
 
 # [開始使用](get-started/get-started.md)
 ## [安裝 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [先決條件](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [必要條件]
+#### [支援的裝置](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [網路使用量](get-started/network-bandwidth-use.md)
 ### [登入 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [設定網域](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
