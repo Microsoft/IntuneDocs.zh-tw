@@ -1,11 +1,11 @@
 ---
-title: "VPN 連線 | Microsoft Intune"
+title: "VPN 連線 | Microsoft Docs"
 description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者和裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
+ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune 中的 VPN 連線
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用「VPN 連線設定檔」來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定部署給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到網路。
 
@@ -38,20 +41,16 @@ ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 VPN 設定檔組態選項會視您選取的裝置類型而有所不同。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## <a name="vpn-connection-types"></a>VPN 連線類型
 
 Intune 支援使用下列連線類型建立 VPN 設定檔：
-
-
 
 
 連線類型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 和行動裝置版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |否  |否    | 是 (OMA-URI，僅限行動裝置)|     
 Cisco (IPsec)|是 |是   |否  |否  |否 | 否|
-Citrix|是 |否   |否  |否  |否 | 否|
+Citrix|是 |是 (僅 Android)   |否  |否  |否 | 否|
 Pulse Secure|是  |是 |是   |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |是 |是 |是|         
@@ -67,7 +66,7 @@ L2TP|iOS 自訂設定檔|否 |否 |否|是 (OMA-URI)|是|
 > [!IMPORTANT]
 > 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用部署至裝置的 VPN 設定檔。 您可以使用[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)主題中的資訊，協助您使用 Intune 部署適用的應用程式。  
 
- 了解如何使用 [VPN 設定檔自訂組態](custom-configurations-for-vpn-profiles.md)中的 URI 設定，建立自訂 VPN 設定檔。     
+ 了解如何使用 [VPN 設定檔自訂組態](create-custom-vpn-profiles.md)中的 URI 設定，建立自訂 VPN 設定檔。     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>保護 VPN 設定檔的方法
 
@@ -194,13 +193,8 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板] 工作區中。
 
-### <a name="see-also"></a>請參閱
-[VPN 設定檔的自訂組態](Custom-configurations-for-VPN-profiles.md)
-
-[Android Pulse Secure 個別應用程式的 VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
