@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
 ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7

@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
@@ -30,7 +31,7 @@ ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
 
 -   您的 IT 系統管理員不會再管理裝置。
 
--   您會無法存取公司資料和資源。
+-    您會無法存取公司資料和資源。
 
 -   您的裝置將不再顯示於公司入口網站。
 

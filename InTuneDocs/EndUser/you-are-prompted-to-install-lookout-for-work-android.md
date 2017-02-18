@@ -14,6 +14,7 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
@@ -30,13 +31,13 @@ ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 **您必須執行的作業：**
 
-1.  從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 **[Required application – Install Lookout for Work from Play Store]** (必要應用程式 - 從 Play Store 安裝 Lookout for Work)。
+1.    從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 **[Required application – Install Lookout for Work from Play Store]** (必要應用程式 - 從 Play Store 安裝 Lookout for Work)。
 
     ![您必須安裝 Lookout for Work](./media/lookout-required-app-install-android.png)
 
     系統會帶您前往 Play Store 中的 Lookout for Work 安裝頁面。
 
-2.  安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
+2.    安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
 
     ![點選 [接受] 以便 Lookout for Work 存取裝置](./media/lookout-accept-store-permissions-android.png)
 

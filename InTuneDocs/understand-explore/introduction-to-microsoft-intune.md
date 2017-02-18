@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
 ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
@@ -71,7 +72,7 @@ Intune 整合了 Azure AD，以啟用一組廣泛的存取控制案例。 例如
 當您使用 Intune 與 EMS 中的其他服務時，可以提供給組織的行動應用程式安全性，會比行動作業系統和行動應用程式本身透過應用程式設定所提供的安全性更高。 使用 EMS 管理的應用程式可以存取更廣泛的行動應用程式和資料保護，包括︰
 
 * [單一登入](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多重要素驗證](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [多重要素驗證](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [應用程式條件式存取 (如果行動應用程式包含公司資料，便允許存取)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [隔離公司資料與相同應用程式內的個人資料](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)

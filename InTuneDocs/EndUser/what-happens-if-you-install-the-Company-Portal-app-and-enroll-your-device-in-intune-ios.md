@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
@@ -42,13 +43,13 @@ ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 
 -   通話與網頁歷程記錄
 
--   位置
+-    位置
 
 -   電子郵件和簡訊
 
 -   連絡人
 
--   密碼
+-    密碼
 
 -   行事曆
 

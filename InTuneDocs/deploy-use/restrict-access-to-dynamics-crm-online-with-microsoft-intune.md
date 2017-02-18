@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
@@ -81,8 +82,8 @@ ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
   * **iOS**
   * **Android**
 4.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
-5.  選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
-6.  完成之後，請選擇 [儲存]。
+5.    選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+6.    完成之後，請選擇 [儲存]。
 
 您現在已設定 Dynamics CRM 的條件式存取。 您不需部署條件式存取原則，它會立即生效。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>監視相容性及條件式存取原則

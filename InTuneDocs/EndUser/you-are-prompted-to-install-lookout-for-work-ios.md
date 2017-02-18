@@ -14,6 +14,7 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
@@ -27,7 +28,7 @@ ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 **您必須執行的作業：**
 
-1.  如果看到以下提示，請點選 [安裝] 允許 Lookout for Work 安裝在您的裝置上。
+1.    如果看到以下提示，請點選 [安裝] 允許 Lookout for Work 安裝在您的裝置上。
 
     ![點選 [安裝] 以安裝 Lookout for Work](./media/ios-lfw-install-app-request.png)
 

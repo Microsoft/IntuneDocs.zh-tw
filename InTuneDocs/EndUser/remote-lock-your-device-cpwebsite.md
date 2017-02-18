@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
@@ -39,13 +40,13 @@ ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>使用 [遠端鎖定] 來鎖定裝置
 
-1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要鎖定的裝置名稱。
+1.    開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要鎖定的裝置名稱。
 
-2.  點選 [遠端鎖定]。
+2.    點選 [遠端鎖定]。
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  隨即會出現通知，讓您知道您即將要鎖定裝置。 點選 [遠端鎖定]，公司入口網站即會嘗試鎖定您的裝置。
+3.    隨即會出現通知，讓您知道您即將要鎖定裝置。 點選 [遠端鎖定]，公司入口網站即會嘗試鎖定您的裝置。
 
     點選 [遠端鎖定] 後會出現「遠端鎖定暫止」訊息。  遠端鎖定成功時，狀態會變更為「遠端鎖定成功」。
 
