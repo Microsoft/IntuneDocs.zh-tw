@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
+ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 
 
 ---
@@ -119,7 +120,8 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 6. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
     > [!NOTE]
-    > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：     ```xml
+    > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -150,9 +152,9 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 9. 若是針對 iOS 9+ 開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-10. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentitifiers` 索引鍵下。
+10. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentifiers` 索引鍵下。
 
-11. 將行動應用程式連結至 Azure Directory Authentication Library (ADAL)。 您可以[在 GitHub 上取得](https://github.com/AzureAD/azure-activedirectory-library-for-objc) Objective C 的 ADAL 程式庫。
+11. 將行動應用程式連結至 Azure Directory Authentication Library (ADAL)。 您可以在 [GitHub 上取得](https://github.com/AzureAD/azure-activedirectory-library-for-objc) Objective C 的 ADAL 程式庫。
 
     > [!NOTE]
     > Intune App SDK 自 2015 年 6 月 19 日起，已經過 ADAL Broker 分支程式碼的測試。 請確定您要連結的版本是最新/有效的 ADAL 程式庫版本。
@@ -509,7 +511,7 @@ SDK 預設會將原則套用至應用程式整體。 多重身分識別是 MAM �
 
 ### <a name="identity-overview"></a>身分識別概觀
 
-身分識別就是帳戶的使用者名稱 (例如 user@contoso.com).)。開發人員可以設定應用程式在下列不同層級的身分識別：
+身分識別就是帳戶的使用者名稱 (例如 user@contoso.com)。 開發人員可以設定應用程式在下列層級的身分識別：
 
 * **處理序身分識別**：設定整個處理序的身分識別，並且主要用於單一身分識別應用程式。 這個身分識別會影響所有工作、檔案和 UI。
 * **UI 身分識別**：判斷在主要執行緒上將哪些原則套用至 UI 工作，例如剪下/複製/貼上、PIN、驗證和資料共用。 UI 身分識別不會影響檔案工作，例如加密和備份。
@@ -604,6 +606,12 @@ SDK 會追蹤本機檔案擁有者的身分識別，並據以套用原則。 建
 
 ## <a name="faq"></a>常見問題集
 
+
+**是否可透過原生 Swift 或 Objective-C 以及 Swift 互通性定址所有 API？**
+
+Intune App SDK API 僅限於 Objective-C 且不支援原生 Swift。  
+
+
 **是否需要向 MAM 服務註冊我應用程式的所有使用者？**
 
 否。 事實上，只應該向 Intune App SDK 註冊工作或學校帳戶。 應用程式負責決定是否在工作或學校內容中使用帳戶。   
@@ -637,6 +645,8 @@ SDK 將會在背景定期採取下列動作：
 
 是，IT 系統管理員可以將選擇性抹除命令傳送給應用程式， 以取消註冊使用者以及抹除使用者資料。 SDK 會自動處理這種情況，並透過取消註冊委派方法來傳送通知。
 
+
+
 ## <a name="submit-your-app-to-the-app-store"></a>將應用程式提交至 App Store
 
 Intune App SDK 的靜態程式庫和架構組建是通用二進位檔， 表示它們包含適用於所有裝置和模擬器架構的程式碼。 如果提交至 App Store 的應用程式包含模擬器程式碼，則 Apple 會拒絕提交這些應用程式。 針對僅限裝置組建的靜態程式庫進行編譯時，連結器會自動去除模擬器程式碼。 請遵循下列步驟，確認已移除所有模擬器程式碼，然後再將您的應用程式上傳至 App Store。
@@ -656,6 +666,6 @@ Intune App SDK 的靜態程式庫和架構組建是通用二進位檔， 表示�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

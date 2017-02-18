@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
 
 
 ---
@@ -28,6 +29,8 @@ ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
 
 如果您使用內部部署或裝載於雲端的 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)，您可以進行不需要註冊的簡單 Intune 管理。 也可以使用 [Intune 用戶端軟體](#manage-windows-pcs-with-intune)來管理 Windows 電腦。
 
+依預設，所有平台的裝置都可以在 Intune 中註冊。 若要阻擋註冊裝置，請以系統管理員認證登入 [Microsoft Intune 管理入口網站](http://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除您要封鎖之平台的核取方塊。
+
 ## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
 
 下表顯示 Intune 註冊方法和每個方法的支援功能與需求。 功能與需求如下所述。
@@ -38,41 +41,41 @@ ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
 
 **iOS 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料** |
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   否 |否 |否  | [詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   是 |   選用 |  選用|[詳細資訊](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**| 是 |   選用 |  否| [詳細資訊](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[詳細資訊](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    否 |否 |否    | [詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    是 |    選用 |    選用|[詳細資訊](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**|    是 |    選用 |    否| [詳細資訊](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[詳細資訊](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|   是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | 是|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work 註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS 註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|   是 |   否 | [詳細資訊](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | 是|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+
 
 如需有助於找出正確方法的一系列相關問題，請參閱[選擇如何註冊裝置](/intune/get-started/choose-how-to-enroll-devices1)。
 
@@ -89,15 +92,15 @@ ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
 
 ### <a name="dep"></a>DEP
 Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
-  - 已鎖定註冊
-  - Kiosk 模式及其他進階設定與限制
+  -    已鎖定註冊
+  -    Kiosk 模式及其他進階設定與限制
 
 深入了解 [DEP](ios-device-enrollment-program-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 IT 系統管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公司擁有的裝置，以使用設定助理進行註冊。 IT 系統管理員會建立註冊設定檔，並將其匯出至 Apple Configurator。 當使用者收到裝置時，系統會提示他們執行設定助理以註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
-  - 已鎖定註冊
-  - Kiosk 模式及其他進階設定與限制
+  -    已鎖定註冊
+  -    Kiosk 模式及其他進階設定與限制
 
 深入了解 [使用 Apple Configurator 進行 Setup Assistant 註冊](ios-setup-assistant-enrollment-in-microsoft-intune.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
@@ -130,6 +133,6 @@ Intune 可以管理下列裝置平台︰
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

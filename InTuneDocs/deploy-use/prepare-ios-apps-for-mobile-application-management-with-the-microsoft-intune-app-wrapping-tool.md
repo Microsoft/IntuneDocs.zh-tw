@@ -1,5 +1,5 @@
 ---
-title: "使用 Intune App Wrapping Tool 包裝 iOS 應用程式 | Microsoft Intune"
+title: "使用 Intune App Wrapping Tool 包裝 iOS 應用程式 | Microsoft Docs"
 description: "使用本主題中的資訊，了解如何能夠直接包裝 iOS 應用程式，但不需要修改應用程式本身的程式碼。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
 author: mtillman
@@ -13,35 +13,160 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理
 
-使用 Microsoft Intune App Wrapping Tool for iOS，只需啟用 Intune 應用程式保護功能，而無須變更應用程式本身的程式碼，就能變更內部 iOS 應用程式的行為。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-此工具為 Mac OS 命令列應用程式，可會建立應用程式的包裝函式。 應用程式經過處理之後，就能使用 IT 系統管理員所部署的 Intune [行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)，來變更應用程式的功能。
+使用 Microsoft Intune App Wrapping Tool for iOS 啟用內部 iOS 應用程式的 Intune 應用程式保護原則，而不需要變更應用程式本身的程式碼。
+
+此工具為 Mac OS 命令列應用程式，可會建立應用程式的包裝函式。 處理應用程式之後，將[應用程式保護原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)部署給它，即可變更應用程式的功能。
 
 若要下載此工具，請參閱 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>滿足 App Wrapping Tool 的必要條件
-若要深入了解取得必要條件的方式，請參閱[如何取得 Intune App Wrapping Tool for iOS 的必要條件](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)部落格文章。
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>App Wrapping Tool 的一般必要條件
 
-|需求|詳細資訊|
-|---------------|--------------------------------|
-|支援的作業系統和工具組 | 您必須對執行 OS X 10.8.5 或更新版本的 macOS 電腦執行 App Wrapping Tool，並在該電腦上安裝 XCode 工具組第 5 版或更新版本。|
-|簽署憑證和佈建設定檔 | 您必須擁有 Apple 簽署憑證和佈建設定檔。 請參閱 [Apple 開發人員文件](https://developer.apple.com/)。|
-|使用 App Wrapping Tool 處理應用程式  |應用程式必須由您的公司或獨立軟體廠商 (ISV) 開發及簽署。 您無法使用此工具來處理來自 Apple Store 的應用程式。 應用程式必須針對 iOS 8.0 或更新版本撰寫。 應用程式必須也採用位置獨立可執行檔 (PIE) 格式。 如需 PIE 格式的詳細資訊，請參閱您的 Apple 開發人員文件。 最後，應用程式的副檔名必須是 **.app** 或 **.ipa**。|
-|此工具無法處理的應用程式 | 加密的應用程式、未簽署的應用程式和具有擴充檔案屬性的應用程式。|
-|設定您的應用程式權利|包裝應用程式之前，必須先設定權利，將一般不會授與的其他權限及功能提供給應用程式。 如需指示，請參閱[設定應用程式權利](#setting-app-entitlements)。|
+您必須符合某些一般必要條件，才能執行 App Wrapping Tool︰
 
-## <a name="install-the-app-wrapping-tool"></a>安裝應用程式包裝工具
+* 從 GitHub 下載 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
+
+* 執行 OS X 10.8.5 或更新版本的 macOS 電腦，並在該電腦上安裝 Xcode 工具組第 5 版或更新版本。
+
+* 輸入 iOS 應用程式必須由您的公司或獨立軟體廠商 (ISV) 所開發並簽署。
+
+  * 輸入應用程式檔案的副檔名必須為 **.ipa** 或 **.app**。
+
+  * 輸入應用程式必須針對 iOS 8.0 或更新版本進行編譯。
+
+  * 無法加密輸入應用程式。
+
+  * 輸入應用程式不能有擴充檔案屬性。
+
+  * 輸入應用程式必須已設定權利，Intune App Wrapping Tool 才能對其進行處理。 [權利](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)會將一般不會授與的其他權限和功能提供給應用程式。 如需指示，請參閱[設定應用程式權利](#setting-app-entitlements)。
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>App Wrapping Tool 的 Apple Developer 必要條件
+
+
+若要將已包裝的應用程式只發佈至您組織的使用者，您需要 [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) 的帳戶以及連結至 Apple Developer 帳戶之應用程式簽署的數個實體。
+
+若要深入了解如何將 iOS 應用程式內部發佈至您組織的使用者，請閱讀 [Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1) (發佈 Apple Developer Enterprise Program 應用程式) 的正式指南。
+
+您需要有下列項目，才能發佈 Intune 所包裝的應用程式︰
+
+* Apple Developer Enterprise Program 的開發人員帳戶。
+
+* 具有有效小組識別碼的內部和特定發佈簽署憑證。
+
+  * 您需要將簽署憑證的 SHA1 雜湊作為 Intune App Wrapping Tool 的參數。
+
+
+* 內部發佈佈建設定檔。
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>建立 Apple Developer Enterprise 帳戶的步驟
+1. 前往 [Apple Developer Enterprise Program 網站](https://developer.apple.com/programs/enterprise/)。
+
+2. 按一下頁面右上方的 [註冊]。
+
+3. 閱讀註冊所需項目的檢查清單。 按一下頁面底部的 [Start Your Enrollment] (開始註冊)。
+
+4. 使用組織的 Apple 識別碼**登入**。 如果您沒有 Apple 識別碼，請按一下 [Create Apple ID] (建立 Apple 識別碼)。
+
+5. 選取您的 [實體類型]，然後按一下 [繼續]。
+
+6. 使用您組織的資訊來填寫表單。 按一下 [繼續] 。 Apple 此時會連絡您，確認您已獲授權可註冊您的組織。
+
+8. 驗證之後，請按一下 [Agree to License] (同意授權)。
+
+9. 同意授權之後，即可透過**購買和啟動程式**來完成。
+
+10. 如果您是小組代理程式 (代表您組織加入 Apple Developer Enterprise Program 的人員)，請先邀請小組成員並指派角色以建置您的小組。 若要了解如何管理您的小組，請閱讀 [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (管理開發人員帳戶小組) 的 Apple 文件。
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>建立 Apple 簽署憑證的步驟
+
+1. 前往 [Apple Developer 入口網站](https://developer.apple.com/)。
+
+2. 按一下頁面右上方的 [帳戶]。
+
+3. 使用組織 Apple 識別碼**登入**。
+
+4. 按一下 [Certificates, IDs & Profiles] (憑證、識別碼和設定檔)。
+
+  ![Apple Developer 入口網站](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. 按一下 [裝置] ![Apple Developer 入口網站加號](../media/app-wrapper/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
+
+6. 選擇在 [Production] (生產) 下建立 [In-House and Ad Hoc] (內部和特定) 憑證。
+
+  ![選取內部和特定憑證](../media/app-wrapper/iOS-signing-cert-3.png)
+
+>[!NOTE]
+>如果不打算散發應用程式，而只想要在內部進行測試，您可以使用 iOS 應用程式開發憑證，而不是生產環境憑證。 如果您使用開發憑證，請確定行動佈建設定檔參考應用程式安裝所在的裝置。
+
+7. 按一下頁面底部的 [下一步]。
+
+8. 閱讀如何在 macOS 電腦上使用金鑰鏈存取應用程式建立**憑證簽署要求 (CSR)** 的指示。
+
+  ![閱讀建立 CSR 的指示](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. 請遵循上方的指示來建立憑證簽署要求。 在 macOS 電腦上，啟動**金鑰鏈存取**應用程式。
+
+10. 在畫面頂端的 macOS 功能表上，移至 [Keychain Access] (金鑰鏈存取) > [Certificate Assistant] ( 憑證助理) > [Request a Certificate From a Certificate Authority] (向憑證授權單位要求憑證)。  
+
+  ![在金鑰鏈存取中向憑證授權單位要求憑證](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. 遵循上面的 Apple Developer 網站中如何建立 CSR 檔案的指示。 將 CSR 檔案儲存到 macOS 電腦。
+
+  ![在金鑰鏈存取中向憑證授權單位要求憑證](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. 返回 Apple Developer 站台。 按一下 [繼續] 。 然後上傳 CSR 檔案。
+
+13. Apple 會產生您的簽署憑證。 將它下載並儲存到 macOS 電腦上的易記位置。
+
+  ![下載簽署憑證](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. 按兩下您剛剛下載的憑證，以將憑證新增至金鑰鏈。
+
+15. 再次開啟**金鑰鏈存取**。 在右上方搜尋列中搜尋憑證的名稱，以找到憑證。 以滑鼠右鍵按一下項目來顯示功能表，然後按一下 [Get Info] (取得資訊)。 在範例畫面中，我們會使用開發憑證，而不是生產環境憑證。
+
+
+  ![將憑證新增至金鑰鏈](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. 隨即出現參考視窗。 捲動到底部，並查看 [指紋] 標籤下方。 複製 **SHA1** 字串 (模糊化)，作為 App Wrapping Tool 之 "-c" 的引數。
+
+  ![將憑證新增至金鑰鏈](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>建立內部發佈佈建設定檔的步驟
+
+1. 返回 [Apple Developer 帳戶入口網站](https://developer.apple.com/account/)，並使用組織 Apple 識別碼**登入**。
+
+2. 按一下 [Certificates, IDs & Profiles] (憑證、識別碼和設定檔)。
+
+3. 按一下 [裝置] ![Apple Developer 入口網站加號](../media/app-wrapper/iOS-signing-cert-2.png) (右上角) 來新增 iOS 佈建設定檔。
+
+4. 選擇在 [Distribution] (發佈) 下建立 [In House] (內部) 佈建設定檔。
+
+  ![選取內部佈建設定檔](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. 按一下 [繼續] 。 一定要將先前產生的簽署憑證連結至佈建設定檔。
+
+6. 遵循將設定檔 (副檔名為 .mobileprovision) 下載至 macOS 電腦的步驟。
+
+7. 將檔案儲存至易記位置。 使用 App Wrapping Tool 時，這個檔案將作為 -p 參數。
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>下載 App Wrapping Tool
 
 1.  從 [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 將 App Wrapping Tool 的檔案下載到 macOS 電腦。
 
@@ -277,6 +402,6 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
