@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1afe7093b80bb5fe3ea873cb065c8ca2673160e8
-ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置的相容性原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 本主題所述的原則設定適用於 Android for Work 裝置。
 
@@ -70,7 +69,7 @@ ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
 - **需要停用 USB 偵錯**︰您不需要進行此設定，因為 Android for Work 裝置上已停用 USB 偵錯。
 
 - **Android 安全性修補程式等級下限**︰使用此設定可指定 Android 修補程式等級下限。  未至少達此修補程式等級的裝置將視為不相容。 日期的格式必須指定為︰ YYYY-MM-DD。
-- **必須啟用裝置威脅防護**：使用此設定進行來自 Lookout MTP 解決方案的風險評估，以做為相容的條件。 選取允許的最高威脅等級，這會是下列其中一項：
+- **必須啟用裝置威脅防護**：使用此設定進行來自裝置威脅防護解決方案的風險評估，以作為合規性的條件。 選取允許的最高威脅等級，這會是下列其中一項：
 
   - **無 (受保護)**：這是最安全的選項。 這表示裝置不能受到任何威脅。 如果在裝置上偵測到任何等級的威脅，則會評估為不相容。
   - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
@@ -80,13 +79,13 @@ ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
   如需詳細資訊，請參閱[啟用相容性原則中的裝置威脅保護規則](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
 ## <a name="device-property-settings"></a>裝置屬性設定
-- **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。
+- **最低作業系統版本需求︰**當裝置不符合最低作業系統 (OS) 版本需求時，它會回報為不符合規範。
   會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
-- **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **允許的最高作業系統版本：**當裝置使用的作業系統 (OS) 版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。 在將規則變更為允許該作業系統版本之前，此裝置無法用來存取公司資源。
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

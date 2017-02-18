@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 377e7c25295b4408508fdb39644c38b4946fbb72
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
 
 
 ---
@@ -35,7 +36,7 @@ Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上�
 - 公司入口網站應用程式
 
 >[!NOTE]
->此註冊方法不能與[裝置註冊管理員](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法一起使用。
+>Apple Configurator 與裝置註冊方案的註冊方法，不可與[裝置註冊管理員](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法一起使用。
 
 所有 iOS 裝置預設都可以在 Intune 中註冊。 若要阻擋註冊個人或公司擁有的裝置，請以系統管理員認證登入 [Microsoft Intune 管理員入口網站](http://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除適用的選項。
 
@@ -56,8 +57,8 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 需要有使用者親和性，才能支援下項項目︰
   - 行動應用程式管理 (MAM) 應用程式
-  - 對電子郵件和公司資料進行條件式存取
-  - 公司入口網站應用程式
+  -    對電子郵件和公司資料進行條件式存取
+  -    公司入口網站應用程式
 
 **使用者如何註冊具有使用者親和性的屬公司擁有 iOS 裝置**
 1. 當使用者將其裝置開啟時，系統會提示他們完成設定助理。 設定期間，系統會提示使用者輸入其認證。 他們必須輸入與其 Intune 中訂閱相關聯的認證 (也就是唯一的個人識別碼或 UPN)。
@@ -93,6 +94,6 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,12 +1,12 @@
 ---
 
-title: "Android for Work 原則設定 | Microsoft Intune"
+title: "Android for Work 原則設定 | Microsoft Docs"
 description: "建立可以在您使用 Intune 管理的 Android for Work 裝置上控制設定及功能的原則。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,19 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android for Work 原則設定
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一般設定。
+Intune 提供一系列您可以在 [Android for Work 裝置](android-for-work.md)上設定的內建一般設定。
 
 ## <a name="general-configuration-policy"></a>一般組態原則
 
@@ -60,15 +61,11 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
 |**設定預設應用程式權限原則**<br>(Android 6 及更新版本)|設定工作設定檔中所有應用程式的預設權限原則。|
 
 
-
-
 ## <a name="custom-policy-settings"></a>自訂原則設定
 使用 Microsoft Intune **Android for Work 自訂設定原則**來部署 OMA-URI 設定，此設定可用來控制 Android for Work 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
 此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。
-
-> [!NOTE]
-> Android 自訂原則目前只支援針對包含預先共用金鑰的 Android 裝置設定 Wi-Fi 設定。
+Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中的範例，以找出您可以設定的原則。
 
 ### <a name="general-settings"></a>一般設定
 
@@ -93,10 +90,10 @@ Intune 提供一系列您可以在 Android for Work 裝置上設定的內建一�
 - [使用自訂原則為 Android 裝置建立個別應用程式的 VPN 設定擋](per-app-vpn-for-android-pulse-secure.md)
 
 ### <a name="see-also"></a>請參閱
-[使用 Microsoft Intune 原則管理您裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

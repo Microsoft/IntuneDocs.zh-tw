@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 008c0d20312e90f3897c3da8ae2226e3e2595225
-ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 您可以在 Microsoft Intune 中使用行動裝置應用程式組態原則，來提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定：
 
--   自訂連接埠號碼。
-
--   語言設定。
-
--   公司標誌等品牌設定。
+-   自訂連接埠號碼
+-   語言設定
+-   公司標誌等品牌設定
 
 如果使用者輸入不正確的設定，可能會增加技術支援中心的負擔，並使新應用程式的採用速度變慢。
 
-行動應用程式設定原則可協助您避免這些問題；您可以在使用者執行應用程式之前，先將這些設定部署給使用者。 接著系統會自動提供這些設定，使用者不需要採取任何動作。
+行動應用程式設定原則可讓您在使用者執行應用程式之前，先將這些設定部署至裝置。 系統會自動提供這些設定，使用者不需要採取任何動作。
 
-若要利用應用程式設定原則，應用程式的開發人員必須在建立企業應用程式時公開其設定。 例如，Google Chrome 會公開設定，讓您設定預設書籤、允許和拒絕的網站等等。 請連絡應用程式的開發人員，確認這些設定是否受到支援，以及如何在原則中指定這些設定。
+若要利用應用程式設定原則，應用程式開發人員必須在建立企業應用程式時公開其設定。 例如，Google Chrome 會公開設定，讓您設定預設書籤、允許和拒絕的網站等等。 請連絡應用程式的開發人員，確認這些設定是否受到支援，以及如何在原則中指定這些設定。
 
-您會將應用程式設定原則，部署給您部署應用程式以進行設定的相同使用者。 每次執行應用程式時，都會使用這些原則設定。
+您會將應用程式設定原則，部署給您部署應用程式以進行設定的相同使用者。 執行應用程式時，會套用應用程式設定。
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>設定行動裝置應用程式組態原則
 
@@ -80,6 +79,6 @@ ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

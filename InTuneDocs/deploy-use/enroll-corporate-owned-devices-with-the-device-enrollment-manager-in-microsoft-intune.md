@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 0fa5179c92add3ef774ca70a1d54a5e21b2a2bd1
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: 0fa5179c92add3ef774ca70a1d54a5e21b2a2bd1
 使用者必須存在於 Azure 入口網站才能新增為裝置註冊管理員。 為了取得最佳安全性，DEM 使用者不應該同時為 Intune 管理員。
 
 >[!NOTE]
->DEM 註冊方法不能與 [Apple Configurator 註冊方法](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)或 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。 
+>DEM 註冊方法不能與 [Apple Configurator 設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)或[直接註冊](ios-direct-enrollment-in-microsoft-intune.md)，或是 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
@@ -108,6 +109,6 @@ DEM 使用者可以︰
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
