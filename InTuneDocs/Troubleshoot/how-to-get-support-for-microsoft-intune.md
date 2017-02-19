@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
@@ -30,21 +31,33 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>在不開啟支援票證的情況下尋求協助
 
-建立支援票證之前，請查看下列資源以取得解答。
+建立支援票證之前，請查看下列資源以取得解答與資訊。 另也請您檢閱 [Microsoft Intune 的一般疑難排解提示](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)。
 
 ### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet 論壇
 
 提出問題或開始與 Microsoft 技術專家討論！ 我們在可搜尋的 [Microsoft Intune TechNet 論壇](https://social.technet.microsoft.com/Forums/home)上提供解答和深入解析。
 
-    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+![Microsoft Intune TechNet 論壇](./media/technet-forum-for-support.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 產品意見反應網站
 
 您是否有 Microsoft 如何適當地改善 Intune 的意見反應？ 請在 Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) 意見反應網站上新增您的想法，讓我們知道。 您也可以對新增至 UserVoice 的他人想法進行投票。 
 
-    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
+![Microsoft Intune UserVoice 意見反應頁面](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-service-ticket"></a>建立線上服務票證
+## <a name="create-an-online-support-ticket"></a>建立線上支援票證
+
+如果您用自助資源找不到解答，可以建立線上支援票證。
+
+**請在每份支援票證提出最多一個問題**，以協助我們以更好的品質為您服務。 以下說明原因：
+
+- 提供協助的支援工程師很可能專精於特定領域，而這樣做能夠更容易找到適合的主題相關專家來協助您解決問題。
+- 程式設計團隊會優先處理產生最多事件的產品領域。
+- 向正確的資源呈報具有挑戰性的問題，會比較容易。
+
+建立支援票證前，請先檢閱[支援事件的定義](#definition-of-a-support-incident)。
+
+**若要建立線上支援票證**：
 
 1.  使用 Intune 認證登入 [Office 365 系統管理中心](https://portal.office.com)。
     >[!NOTE]
@@ -87,12 +100,12 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 ## <a name="get-phone-support"></a>取得電話支援
 如需依國家和地區的支援電話號碼清單，或是需要知道支援時數和各地區支援的語言清單，請參閱[連絡 Microsoft Intune 的電話協助支援](contact-assisted-phone-support-for-microsoft-intune.md)。
 
-## <a name="track-your-service-requests"></a>追蹤服務要求
+## <a name="track-your-support-requests"></a>追蹤支援要求
 1.  使用 Intune 認證登入 [Office 365 系統管理中心](https://portal.office.com)。
 2.  選擇 [管理] 磚。
 3.  在左側的 [支援] 下方，選擇 [服務要求]。 接著您可以檢閱您的要求。
 
-第一次回應服務要求的時間，取決於問題的嚴重性。 對於最嚴重的問題，我們會在兩小時內對專業客戶進行第一次回應。 頂級支援客戶的回應時間取決於支援合約的規定。 舉例來說︰
+初步回應支援要求的時間，取決於問題的嚴重性。 對於最嚴重的問題，我們會在兩小時內對專業客戶進行第一次回應。 頂級支援客戶的回應時間取決於支援合約的規定。 舉例來說︰
 
 - 有一項或多項服務無法存取或無法使用。
 - 生產、作業或部署期限受到嚴重影響，或是將嚴重影響生產或獲利能力。
@@ -115,12 +128,6 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技術支援需要付費，或從您現有的授權或頂級支援協議中扣減。
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>在不開立支援票證的情況下解決問題
-
-您可能可以在不開立支援票證的情況下自行解決問題。
-
-若要自行解決 Intune 的問題，請參閱 [Microsoft Intune 的一般疑難排解提示](general-troubleshooting-tips-for-microsoft-intune.md)，或任何特定問題的疑難排解主題。 您也可以搜尋解決方案，或將您的問題張貼到 [Intune 論壇](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)。
-
 ## <a name="find-support-for-volume-licensing"></a>尋找大量授權的支援
 如果您已透過大量授權方案向 Microsoft 購買授權，請利用下列資源尋求支援：
 
@@ -129,6 +136,16 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 -   如有帳單問題，請參閱[帳單和訂閱管理支援](http://support.microsoft.com/oas/default.aspx?prid=15371)。
 
 -   如需大量授權的一般資訊，請參閱[大量授權](http://go.microsoft.com/fwlink/p/?LinkID=282015)。
+
+## <a name="definition-of-a-support-incident"></a>支援事件的定義
+
+支援事件的定義為單一支援問題及其解決過程。 單一支援問題無法細分為附屬問題。 如果您可以辨別附屬問題，各個附屬問題即視為個別事件。 要解決問題，可能需要多次聯繫及離線研究。 花在傳遞這些解決方案的時間與向您收取的費用無關。
+
+Microsoft Intune 及 Office 365 行動裝置管理的訂閱內含「協助修正」支援，因此開啟額外支援事件永遠不會產生額外費用。
+
+如果支援工程師要求您為額外問題開啟額外的支援事件，希望您了解這是為了各方最佳利益著想。 感謝您的理解與合作，讓我們得以提供世界級的支援體驗！
+
+若要了解各事件單價及嚴重性等級，請參閱[專業支援選項](https://support.microsoft.com/gp/offerprophone)。
 
 
 
