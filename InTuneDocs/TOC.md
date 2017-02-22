@@ -6,6 +6,7 @@
 ### [建立原則及發行 App](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [其他選項和額外項目](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [轉換為付費訂閱](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM 和應用程式保護常見問題集](understand-explore/mam-faq.md)
 ## [常見案例](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -78,6 +79,7 @@
 ## 設定裝置
 ### [透過原則管理裝置上的設定和功能](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 設定](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [還原受管理 iOS 裝置](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android 和 Samsung KNOX 設定](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -106,7 +108,7 @@
 
 ## [保護裝置](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [遠端鎖定和密碼重設](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [利用 MFA 保護 Windows 裝置](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [使用多重要素驗證保護裝置](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [控制 Windows Hello 企業版設定](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上略過啟用鎖定](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保護 Windows 電腦的原則](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -139,7 +141,7 @@
 ## [保護應用程式和資料](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [裝置相容性原則](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [建立裝置相容性原則](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows 和 Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -165,13 +167,14 @@
 #### [啟用裝置威脅保護相容性原則](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保護應用程式資料](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM 原則的 Azure 入口網站](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [準備設定 MAM 原則](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [建立及部署 MAM 原則](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [適用於 Android 的 MAM 原則](deploy-use/android-mam-policy-settings.md)
-#### [適用於 iOS 的 MAM 原則](deploy-use/ios-mam-policy-settings.md)
-#### [驗證 MAM 原則](deploy-use/validate-mobile-application-management.md)
-#### [監視原則相容性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [用於設定應用程式保護原則的 Azure 入口網站](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [準備好設定應用程式保護原則](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [建立及部署應用程式保護原則](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [適用於 Android 的應用程式保護原則](deploy-use/android-mam-policy-settings.md)
+#### [適用於 iOS 的應用程式保護原則](deploy-use/ios-mam-policy-settings.md)
+#### [驗證應用程式保護原則](deploy-use/validate-mobile-application-management.md)
+#### [監視應用程式保護原則的合規性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [管理 iOS 應用程式之間的資料傳輸](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [MAM 原則的 Intune 管理主控台](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,17 +185,16 @@
 #### [Intune 未管理之裝置上的 LOB 應用程式](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [在您撰寫應用程式時使用 SDK](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [MAM 和應用程式保護常見問題集](deploy-use/mam-faq.md)
 
 ## 淘汰應用程式與資料
 ### [使用完整或選擇性抹除](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [淘汰應用程式](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [抹除受管理的公司應用程式資料](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [使用者體驗的相關資源](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [還原受管理 iOS 裝置](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [使用 MAM 原則的 Android 應用程式](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [使用 MAM 原則的 iOS 應用程式](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [如何指導使用者使用 Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Android 使用者如何取得其應用程式](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS 使用者如何取得其應用程式](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows 使用者如何取得其應用程式](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # 開發和自訂應用程式
 ## [Microsoft Intune App SDK 概觀](develop/intune-app-sdk.md)
@@ -222,6 +224,6 @@
 # [名詞解釋](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
