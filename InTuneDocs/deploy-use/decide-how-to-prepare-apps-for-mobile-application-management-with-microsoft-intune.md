@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有應用程式並想要可以使用 Intune 管理應用程式的客戶。 不過，任何應用程式都可以利用 SDK 的整合，即使它是企業營運應用程式也是一樣。
 
-若要深入了解 SDK，請參閱[概觀](/intune/develop/intune-app-sdk)。 若要開始使用 SDK，請參閱[開始使用 Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)。
+若要深入了解 SDK，請參閱[概觀](../develop/intune-app-sdk.md)。 若要開始使用 SDK，請參閱[開始使用 Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的理由
 * 您的 App 沒有內建資料保護功能。
@@ -69,8 +70,8 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|是，使用 [Intune App SDK Xamarin 元件](/../develop/intune-app-sdk-xamarin)。|是，使用 [Intune App SDK Cordova 外掛程式](/../develop/intune-app-sdk-cordova)。|
-|**Android**| 是，使用 [Intune App SDK Xamarin 元件](/../develop/intune-app-sdk-xamarin)。|是，使用 [Intune App SDK Cordova 外掛程式](/../develop/intune-app-sdk-cordova)。|
+|**iOS**|是，使用 [Intune App SDK Xamarin 元件](../develop/intune-app-sdk-xamarin.md)。|是，使用 [Intune App SDK Cordova 外掛程式](../develop/intune-app-sdk-cordova.md)。|
+|**Android**| 是，使用 [Intune App SDK Xamarin 元件](../develop/intune-app-sdk-xamarin.md)。|是，使用 [Intune App SDK Cordova 外掛程式](../develop/intune-app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比較
 此表格列出您可以用於 App SDK 和 App Wrapping Tool 的設定。

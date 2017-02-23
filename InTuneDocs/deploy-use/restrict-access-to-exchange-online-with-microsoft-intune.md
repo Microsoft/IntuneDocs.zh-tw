@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: de80e3d375fa136a087644e6e86975c4d821a38e
-ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 
 - 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者必須獲得 EMS 或 Azure AD 的授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
--  考慮設定選擇性 **Intune Service to Service Connector**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用相容性原則或條件式存取原則時，您不需要使用連接器，但必須執行報告，以協助評估條件式存取的影響。
+-  考慮設定選擇性 **Intune Service to Service Connector**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用合規性政策或條件式存取原則時，您不需要使用連接器，但必須執行報告，以協助評估條件式存取的影響。
     -  深入了解 [Intune Service To Service Connector](intune-service-to-service-exchange-connector.md)。
 
    > [!NOTE]
@@ -54,13 +55,15 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 
   若是 Intune 和 Office 365 客戶，系統會自動啟用 Azure Active Directory 裝置註冊服務。 已部署 ADFS 裝置註冊服務的客戶將不會在內部部署 Active Directory 中看到已註冊的裝置。
 
--   裝置必須**符合**所部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 相容性原則，或已加入內部部署網域。
+-   裝置必須**符合**所部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合規性政策，或已加入內部部署網域。
 
-如果不符合條件式存取原則，使用者會在登入時看到下列其中一個訊息：
+### <a name="when-the-device-is-not-compliant"></a>當裝置不符合規範
+
+若裝置不符合條件式存取原則，會隨即予以隔離，而且使用者會在登入時，收到一封類似下列其中一則隔離通知的電子郵件︰
 
 - 如果裝置未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊，或未在 Azure Active Directory 中註冊，就會顯示一則訊息，其中包含安裝公司入口網站應用程式、註冊裝置及啟用電子郵件的指示。 此程序也會將裝置的 Exchange ActiveSync 識別碼與 Azure Active Directory 中的記錄產生關聯。
 
--   如果裝置評估結果為未遵循相容性原則規則，系統會將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站或公司入口網站應用程式，以尋找問題的相關資訊與修復問題的方法。
+-   如果裝置評估結果為未遵循合規性政策規則，系統會將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站或公司入口網站應用程式，以尋找問題的相關資訊與修復問題的方法。
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>條件式存取對 Exchange online 的運作方式
 
@@ -110,7 +113,7 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
   >[!NOTE]
   > 若要搭配使用條件式存取與 Windows 10 電腦，您必須使用 Windows 10 年度更新版來更新這些電腦。
 
-  電腦必須已加入網域或符合相容性規則。
+  電腦必須已加入網域或符合合規性政策規則。
 
   電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且符合原則才算相容。
 
@@ -126,12 +129,12 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 -   您可以設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 [案例 3：除了瀏覽器架構的應用程式以外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)提供詳細指示。
 
 ## <a name="configure-conditional-access"></a>設定條件式存取
-### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>步驟 1：設定及部署相容性原則
-請務必[建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則，並將其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到使用者群組 (這些使用者群組也會取得條件式存取原則)。
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>步驟 1：設定及部署合規性政策
+請務必[建立](create-a-device-compliance-policy-in-microsoft-intune.md)合規性政策，並將其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到使用者群組 (這些使用者群組也會取得條件式存取原則)。
 
 
 > [!IMPORTANT]
-> 如果您尚未部署相容性原則，則會將裝置視為符合規定，並允許存取 Exchange。
+> 如果您尚未部署合規性政策，則會將裝置視為符合規定，並允許存取 Exchange。
 
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>步驟 2：評估條件式存取原則的效果
 您可以使用**行動裝置清查報表**，識別在您設定條件式存取原則之後可能不允許存取 Exchange 的裝置。
@@ -151,7 +154,7 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 
 -   **AAD 已登錄**：指出是否已向 Azure Active Directory 登錄裝置 (又稱為「工作地方聯結」)。
 
--   **相容**：指出裝置是否符合您部署的任何相容性原則。
+-   **相容**：指出裝置是否符合您部署的任何合規性政策。
 
 -   **Exchange ActiveSync 識別碼**：iOS 和 Android 裝置的 Exchange ActiveSync 識別碼必須與 Azure Active Directory 中的裝置登錄記錄建立關聯。 這會在使用者選擇隔離電子郵件中的 [啟用電子郵件] 連結時發生。
 
@@ -196,7 +199,7 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 2.  在 [Exchange Online 原則] 頁面上，選擇 [啟用 Exchange Online 的條件式存取原則]。
 
     > [!NOTE]
-    > 如果您尚未部署相容性原則，則會將裝置視為符合規範。
+    > 如果您尚未部署合規性政策，則會將裝置視為符合規範。
     >
     > 無論相容性狀態為何，原則皆會要求所有使用者向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置。
 
@@ -207,7 +210,7 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
         任何用來存取 **Exchange Online** 的裝置都必須在 Intune 中註冊並符合原則。 使用**新式驗證**的任何用戶端應用程式都必須遵守條件式存取原則。 如果 Intune 目前不支援此平台，則會封鎖存取 **Exchange Online**。
 
         選取 [所有平台] 選項表示不論用戶端應用程式所回報的平台為何，Azure Active Directory 都會將此原則套用至所有驗證要求。 所有平台都必須經過註冊並符合規範，除了︰
-        *   必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
+        *    必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
         * 不支援例如 Mac OS 的平台。 即使這些平台的應用程式是使用新式驗證，仍會受到封鎖。
 
     -   **特定平台**
@@ -275,6 +278,6 @@ ms.openlocfilehash: 0f0db1a3213196f25820028ed26271fbca17f1cc
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

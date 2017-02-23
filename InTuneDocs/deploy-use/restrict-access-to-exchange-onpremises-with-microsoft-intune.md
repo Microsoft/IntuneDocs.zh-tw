@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ed2e19788eaa4c4bb0c8d06902ea37c17d5b63ad
-ms.openlocfilehash: 8ba3a6aea8e9d0180563ab63d548ed8eb72de925
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -58,15 +59,15 @@ ms.openlocfilehash: 8ba3a6aea8e9d0180563ab63d548ed8eb72de925
 
   若是 Intune 和 Office 365 客戶，系統會自動啟用 Azure Active Directory 裝置註冊服務。 已部署 ADFS 裝置註冊服務的客戶將不會在內部部署 Active Directory 中看到已註冊的裝置。 **這不適用於 Windows 電腦和 Windows Phone 裝置**。
 
--   裝置必須**符合**所部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 相容性原則。
+-   裝置必須**符合**所部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合規性政策。
 
-### <a name="how-conditional-access-works-with-exchange-on-premises"></a>條件式存取對 Exchange 內部部署的運作方式
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Exchange 內部部署之條件式存取的運作方式
 
 下圖說明 Exchange 內部部署的條件式存取原則在評估允許或封鎖裝置時的流程。
 
 ![此圖顯示決定允許或封鎖裝置存取 Exchange 內部部署的決策點](../media/ConditionalAccess8-2.png)
 
-如果不符合條件式存取原則，使用者會在登入時看到下列其中一個訊息：
+若裝置不符合條件式存取原則，在裝置遭到封鎖與使用者登入時收到一封類似下列其中一則隔離通知的電子郵件之間，會間隔 10 分鐘︰
 
 - 如果裝置未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊，或未在 Azure Active Directory 中註冊，就會顯示一則訊息，其中包含安裝公司入口網站應用程式、註冊裝置及啟用電子郵件的指示。 此程序也會將裝置的 Exchange ActiveSync 識別碼與 Azure Active Directory 中的記錄產生關聯。
 
@@ -97,9 +98,9 @@ ms.openlocfilehash: 8ba3a6aea8e9d0180563ab63d548ed8eb72de925
 
 2.  使用所需的設定來設定原則：![Exchange 內部部署原則頁面的螢幕擷取畫面](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **封鎖不符合規範或未向 Microsoft Intune 註冊之裝置的電子郵件應用程式存取 Exchange 內部部署**：當您選取此選項時，將封鎖未受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理或不符合相容性原則的裝置存取 Exchange 服務。
+  - **封鎖不符合規範或未向 Microsoft Intune 註冊之裝置的電子郵件應用程式存取 Exchange 內部部署**：當您選取此選項時，將封鎖未受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理或不符合合規性政策的裝置存取 Exchange 服務。
 
-  - **預設規則覆寫 - 一律允許已註冊且相容的裝置存取 Exchange**：當您選取此選項時，將允許已在 Intune 中註冊且符合相容性原則的裝置存取 Exchange。
+  - **預設規則覆寫 - 一律允許已註冊且相容的裝置存取 Exchange**：當您選取此選項時，將允許已在 Intune 中註冊且符合合規性政策的裝置存取 Exchange。
   此規則會覆寫 [預設規則]，這表示即使您將 [預設規則] 設為隔離或封鎖存取，已註冊且符合規範的裝置仍能夠存取 Exchange。
 
   - **目標群組**：選取必須向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置才能存取 Exchange 的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 使用者群組。
@@ -141,6 +142,6 @@ ms.openlocfilehash: 8ba3a6aea8e9d0180563ab63d548ed8eb72de925
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
