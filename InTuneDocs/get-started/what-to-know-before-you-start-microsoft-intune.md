@@ -1,11 +1,11 @@
 ---
-title: "必要條件 | Microsoft Docs"
-description: "Intune 必要條件及需求的連結"
+title: "支援的裝置 - Microsoft Intune？ | Microsoft Docs"
+description: "列出 Intune 裝置管理所支援的裝置平台及瀏覽器"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e2810513646828cc5da734f3af9cc8d81e0c03fc
-ms.openlocfilehash: 444d08d1a5e709572efbc2f639cef037453b9c0e
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>開始使用 Intune 的必要條件
+# <a name="supported-devices-and-browsers"></a>支援的裝置與瀏覽器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本文適用於負責管理企業裝置的系統管理員。 如需在手機上安裝 Intune 方面的協助，請參閱 [Using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。
 
 開始設定 Microsoft Intune 之前，請先檢閱下列需求︰
 
@@ -74,6 +77,6 @@ Intune 裝置管理提供[這些功能](mobile-device-management-capabilities-in
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

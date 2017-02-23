@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0d6106e22fdbfd65a12e9d46a28e907ba106aea
-ms.openlocfilehash: 85590cc6688c36ea5fc88a26d05f3dac4c830b69
+ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
+ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
 
 
 ---
 
-# <a name="the-early-edition---february-2017"></a>舊版 - 2017 年 2 月
+
+# <a name="the-early-edition-for-microsoft-intune---february-2017"></a>舊版 Microsoft Intune - 2017 年 2 月
 
 **舊版**提供 Microsoft Intune 即將發行版本要推出的功能清單。 此資訊以非常有限的基礎在 NDA 下提供，並可能有所變更。 這裡列出的一些功能可能有截止日期，而且可能會延遲到未來的版本。 其他功能正在實驗 (測試) 中進行測試，以確保它們可供客戶使用。 如果你們有任何問題或疑慮，請洽詢 Intune/PM 人員。
 
@@ -34,6 +35,11 @@ ms.openlocfilehash: 85590cc6688c36ea5fc88a26d05f3dac4c830b69
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>現代化公司入口網站 <!--753980-->
 公司入口網站會支援以沒有受管理裝置的使用者為目標的應用程式。 網站會與其他 Microsoft 產品和服務一致，方法是使用新的對比色彩配置、動態圖例和「漢堡功能表」：![公司入口網站左上角新增的漢堡功能表小型影像](./media/CP_hamburger_menu.png)，其包含技術服務連絡人詳細資料以及現有受管理裝置的相關資訊。 登陸頁面將會予以重新排列，以透過 [精選和最近更新] 應用程式的浮動切換來強調使用者可用的應用程式。 您可以在 [UI updates for Intune end user apps](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) (Intune 使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
+
+### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Windows 10 公司入口網站新型引導式體驗 <!--713927-->
+從 3 月開始，Windows 10 的公司入口網站將會包含之前尚未確定或註冊的裝置之引導式 Intune 逐步解說體驗。 此全新體驗提供逐步指示，專為使用者的 Windows 10 組建所量身打造，引導使用者執行 AAD 註冊 (條件式存取功能之識別所需)，以及 MDM 註冊 (裝置管理功能所需)。 從公司入口網站首頁上即可使用引導式體驗，且使用者如果沒有完成登錄與註冊，仍可選擇繼續使用該應用程式，但體驗的功能可能有限。
+
+###
 
 ## <a name="notices"></a>通知
 
@@ -48,7 +54,7 @@ ms.openlocfilehash: 85590cc6688c36ea5fc88a26d05f3dac4c830b69
 如果 Windows 和 Windows Phone 使用者輸入 __manage.microsoft.com__ 作為 MDM 伺服器位址 (系統提示時)，其嘗試註冊裝置會失敗。 MDM 伺服器位址已從 __manage.microsoft.com__ 變更為 __enrollment.manage.microsoft.com__。 請通知您的使用者，如果在註冊 Windows 或 Windows Phone 裝置時收到提示，請使用 __enrollment.manage.microsoft.com__ 作為 MDM 伺服器位址。 此更新需要 DNS 中有任何 CNAME 可將 __EnterpriseEnrollment.contoso.com__ 重新導向至 __manage.microsoft.com__，以替換成 DNS 中有 CNAME 可將 __EnterpriseEnrollment.contoso.com__ 重新導向至 __EnterpriseEnrollment-s.manage.microsoft.com__。 如需此變更的其他資訊，請前往 [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
-從&2; 月開始，Android 版公司入口網站應用程式會遵循[材料設計指導方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀和風格。 此改善的使用者體驗包括︰
+從&3; 月起，Android 版公司入口網站應用程式會遵循[素材設計方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀與風格。 此改善的使用者體驗包括︰
 
 * __色彩__︰索引標籤標頭可根據您的自訂調色盤上色。
 * __介面__︰[應用程式] 索引標籤已更新 [精選 App] 和 [所有應用程式] 按鈕。 [搜尋] 按鈕現在是浮動的動作按鈕。
@@ -56,6 +62,9 @@ ms.openlocfilehash: 85590cc6688c36ea5fc88a26d05f3dac4c830b69
 * __服務__︰[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
 
 您可以在 [UI updates for Intune end user apps](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) (Intune 終端使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
+
+### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>商務用 Windows 市集的相關多重管理工具 <!--926135-->
+如果您使用多種管理工具來部署商務用 Windows 市集應用程式，以前只能建立其中一種與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Azure 上新 Intune 管理體驗的公開預覽 <!--736542-->
 
@@ -108,6 +117,6 @@ iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派�
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

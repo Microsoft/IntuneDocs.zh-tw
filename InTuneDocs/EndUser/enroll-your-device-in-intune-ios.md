@@ -1,22 +1,25 @@
 ---
-title: "在 Intune 註冊 iOS 裝置 | Microsoft Intune"
+title: "在 Intune 註冊 iOS 裝置 | Microsoft Docs"
 description: "描述在 Intune 註冊 iOS 裝置的方式"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -26,7 +29,10 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊 iOS 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
 
-如果您嘗試註冊 macOS 裝置，請參閱[在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)。
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> 如果您真的想要嘗試註冊 iOS 裝置 (例如 iPhone 或 iPad)，請[改為嘗試這些指示](enroll-your-device-in-intune-macos.md)。
 
 **開始之前：**
 
@@ -53,7 +59,7 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 5.  在 [接下來該做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  在 [安裝設定檔] 畫面上，點選 [安裝]，然後在出現提示時輸入您的密碼。
 
@@ -65,15 +71,15 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 8.  點選 [安裝] 表示您已閱讀警告。
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  點選 [信任]。
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  畫面變更成顯示設定檔已完成安裝時，請點選 [完成]。
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     畫面上會顯示 [正在註冊裝置] 訊息。
 
@@ -91,11 +97,10 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 您的裝置現在已註冊在 Intune 中，而且會將您帶回公司入口網站應用程式。
 
-
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

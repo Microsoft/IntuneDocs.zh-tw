@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 註冊 macOS 裝置 | Microsoft Intune"
+title: "在 Intune 註冊 macOS 裝置 | Microsoft Docs"
 description: "描述在 Intune 註冊 macOS 裝置的方式"
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
@@ -11,19 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>在 Intune 註冊 macOS 裝置
 
-取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由 IT 系統管理員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
+取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由 IT 系統管理員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > 如果您真的想要嘗試註冊 iOS 裝置 (例如 iPhone 或 iPad)，請[試著改用下列指示](enroll-your-device-in-intune-ios.md)。
@@ -64,6 +67,6 @@ ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

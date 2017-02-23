@@ -1,27 +1,32 @@
 ---
-title: "使用 Microsoft Intune 監視 MAM 原則 | Microsoft Docs"
-description: "查看有多少使用者擁有原則，並向下鑽研以了解更多詳細資料。"
+title: "如何監視應用程式保護原則 | Intune Azure 預覽版 |Microsoft Docs"
+description: "Intune Azure 預覽版：查看使用此原則的使用者人數，並向下鑽研了解更多詳細資料。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: 482ae5f9adab39670b15c10f20883ef9684b2525
+ms.openlocfilehash: 6f121487aa369838a46d7c7dce16ad9259dd6f31
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 監視行動應用程式管理原則
-您可以監視您套用到使用者之行動應用程式管理 (MAM) 原則的合規性狀態。 您能夠找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
+# <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+**若您不是使用 Azure 上的 Intune 預覽版**，本主題說明在傳統 Intune 主控台中[如何建立應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
+
+
+您可以在 [Azure 入口網站](https://portal.azure.com)的 Intune 應用程式保護刀鋒視窗中，監視已套用到使用者的行動應用程式管理 (MAM) 原則的合規性狀態。 您能夠找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
 
 您有三個不同的位置可以監視合規性狀態︰
 
@@ -33,15 +38,12 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 ## <a name="summary-view"></a>摘要檢視
 
-請遵循下列三個步驟開啟 [摘要] 檢視︰
+1. 登入 Azure 入口網站。
+2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
+4. 在**管理應用程式**工作負載中，選擇 [監視]  >  [App protection user status] (應用程式保護使用者狀態)，以查看摘要檢視︰
 
-1. 移至 [Azure 入口網站](https://portal.azure.com)並輸入您的認證。
-2. 選擇 [更多服務]，然後在 [篩選] 文字方塊中輸入 **Intune**。
-3. 選擇 [Intune 應用程式保護]。
-
-在 [Intune 行動應用程式管理] 刀鋒視窗中，您可以看到合規性狀態的摘要：
-
-![Intune 行動應用程式管理刀鋒視窗上的摘要磚](../media/mam-azure-portal-user-status-summary.png)
+![Intune 行動應用程式管理刀鋒視窗上的摘要磚](../media/app-protection-user-status-summary.png)
 
 -   **使用者**︰公司中使用與原則相關聯應用程式的使用者總數。
 
@@ -131,8 +133,8 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 ## <a name="see-also"></a>請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [當 Android 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-android-apps.md)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-ios-apps.md)
 
 
 

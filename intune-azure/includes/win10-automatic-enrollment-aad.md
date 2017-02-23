@@ -9,13 +9,13 @@
 
 ### <a name="configure-automatic-mdm-enrollment"></a>設定自動 MDM 註冊
 
-1. 在 [Azure 管理入口網站](https://manage.windowsazure.com) (https://manage.windowsazure.com) 中，巡覽至 **Active Directory** 節點並選取您的目錄。
+1. 在 [Azure 管理入口網站](https://portal.azure.com) (https://manage.windowsazure.com) 中，巡覽至 **Active Directory** 節點並選取您的目錄。
 
 2. 選擇 [應用程式] 索引標籤。 **Microsoft Intune** 會出現在應用程式清單中。
 
     ![Azure AD 應用程式與 Microsoft Intune](../media/aad-intune-app.png)
 
-3. 選取 **Microsoft Intune** 的箭頭。 螢幕上會出現一個頁面讓您設定 Microsoft Intune。
+3. 選取 **Microsoft Intune** 的箭頭。 螢幕上會開啟一個頁面讓您設定 Microsoft Intune。
 
 4. 選取 [設定]，以開始設定自動向 Microsoft Intune 執行 MDM 註冊。
 
@@ -23,7 +23,7 @@
 
   - **MDM 註冊 URL** - 使用預設值。
   - **MDM 使用條款 URL** – 使用預設值。 使用者註冊裝置時，此 URL 會顯示使用條款。
-  - **MDM 合規性 URL** – 使用預設值。 如果發現裝置與相容性不符，即會顯示 [拒絕存取] 與此 URL。 URL 指向的頁面可協助使用者了解為何他們的裝置不符合原則，以及使其重新相容的方式。
+  - **MDM 相容性 URL** – 使用預設值。 如果發現裝置與合規性不符，即會顯示 [拒絕存取] 與此 URL。 此 URL 會指向可以協助使用者了解裝置不合規範的原因，以及其如何讓裝置符合規範的頁面。
 
 6.  指定哪些使用者的裝置應該由 Microsoft Intune 管理。 這些使用者的 Windows 10 裝置將會自動註冊，以便使用 Microsoft Intune 管理。
 
