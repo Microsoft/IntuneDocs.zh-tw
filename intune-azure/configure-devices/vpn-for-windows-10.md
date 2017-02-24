@@ -1,11 +1,11 @@
 ---
-title: "Windows 10 裝置的 Intune VPN 設定 | Intune Azure 預覽版 | Microsoft Docs"
-description: "Intune Azure 預覽版︰了解您可用於設定 Windows 10 裝置之 VPN 連線的 Intune 設定。"
+title: "Windows 10 裝置的 Intune VPN 設定 | Intune Azure Preview | Microsoft Docs"
+description: "Intune Azure Preview︰了解您可用於設定 Windows 10 裝置之 VPN 連線的 Intune 設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
 
 
 ---
 
-# <a name="vpn-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 Windows 10 裝置的 VPN 設定
+# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-下列清單中所列的值並非全部都能設定，須取決於您選擇的設定。
+根據您選擇的設定，下列清單中所列的值並非全部都能設定。
 
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
@@ -32,11 +32,11 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 
 - **連線名稱** - 輸入此連線的名稱。 當使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
 - **伺服器** - 新增裝置要連線的一或多部 VPN 伺服器。
-    - **新增**- 開啟 [加入資料列] 刀鋒視窗指定下列資訊︰
+    - **新增** - 開啟 [新增資料列] 刀鋒視窗以指定下列資訊︰
         - **描述** - 為伺服器指定描述性名稱，例如 **Contoso VPN 伺服器**。
-        - **IP 位或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+        - **IP 位址或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
         - **預設伺服器** - 啟用此伺服器作為裝置所要連線的預設伺服器。 您只可設定一部預設伺服器。
-    - **匯入** - 瀏覽至內含以逗點分隔之伺服器清單 (格式為：描述、IP 位址或 FQDN、預設伺服器) 的檔案。 選擇 [確定]，以匯入這些項目成為**伺服器**清單。
+    - **匯入** - 瀏覽至內含以逗點分隔之伺服器清單 (格式為：描述、IP 位址或 FQDN、預設伺服器) 的檔案。 選擇 [確定]，以將這些項目匯入 [伺服器] 清單。
     - **匯出** - 將伺服器清單匯出成逗點分隔值 (csv) 檔案。
 
 **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
@@ -49,7 +49,7 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 - **L2TP**
 - **PPTP**
 
-**登入群組或網域** (僅限 Dell SonicWALL Mobile Connect) - 指定登入群組或您要登入之網域的名稱。
+**登入群組或網域** (僅限 Dell SonicWALL Mobile Connect) - 指定登入群組或您要連線之網域的名稱。
 
 **自訂 XML**/**EAP XML** - 指定任何可用於設定 VPN 連線的自訂 XML 命令。
 
@@ -65,7 +65,7 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**ell SonicWALL Mobile Connect 的範例：**
+**Dell SonicWALL Mobile Connect 的範例：**
 
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
@@ -79,8 +79,8 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 
 如需如何撰寫自訂 XML 命令的詳細資訊，請參閱相關製造商的 VPN 文件。
 
-**分割通道**  -  **啟用**或**停用**此選項可讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
-- **此 VPN 連線的分割通道路徑** - 新增第三方 VPN 提供者的選擇性路由。 為每個路由指定目的地前置詞及前置詞大小。
+**分割通道** - **啟用**或**停用**此選項可讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
+- **此 VPN 連線的分割通道路徑** - 新增第三方 VPN 提供者的選擇性路由。 為每個路由指定目的地首碼及首碼大小。
 
 ## <a name="apps-and-traffic-rules"></a>應用程式與流量規則
 
@@ -103,7 +103,7 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 ## <a name="dns-settings"></a>DNS 設定
 
 **此 VPN 連線的 DNS 名稱和伺服器** - 選取連線之後 VPN 連線所要使用的 DNS 伺服器。
-為每部伺服器 指定：
+針對每部伺服器。 指定：
 - **DNS 名稱**
 - **DNS 伺服器**
 - **Proxy**
@@ -112,13 +112,13 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 
 - **自動偵測 Proxy 設定** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，請指定您的裝置是否需要自動偵測連線設定。 如需詳細資訊，請參閱 Windows Server 文件。
 - **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
-- **使用 proxy 伺服器** - 若要手動輸入 Proxy 伺服器設定，可啟用此選項。
-    - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
+- **使用 Proxy 伺服器** - 若要手動輸入 Proxy 伺服器設定，可啟用此選項。
+    - **位址** - 輸入 Proxy 伺服器位址 (例如 IP 位址)。
     - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
 - **本機位址不要使用 Proxy** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，但您希望您指定的本機位置不要使用 Proxy 伺服器，可選取此選項。 如需詳細資訊，請參閱 Windows Server 文件。
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

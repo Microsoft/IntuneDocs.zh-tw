@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 中設定註冊限制 | Intune Azure 預覽版 | Microsoft Docs"
-description: "Intune Azure 預覽版︰在 Intune 中限制不同平台的註冊及裝置註冊限制。 "
+title: "在 Intune 中設定註冊限制 | Intune Azure Preview | Microsoft Docs"
+description: "Intune Azure Preview：在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。 "
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 
 ---
 
@@ -23,40 +23,49 @@ ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-您可以藉由指定允許的平台，限制可以在 Intune 中註冊的裝置類型。 您也可以設定使用者能夠註冊的裝置數上限。
+您也可以設定您將允許註冊的裝置類型和數目上限。 在 [註冊限制] 刀鋒視窗上，您可以設定︰
 
-## <a name="set-device-type-restrictions"></a>設定裝置類型的限制
+- 允許註冊的平台，以及是否封鎖註冊適用於 Android 和 iOS 的個人擁有裝置。
 
-1. 在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+- 使用者能夠註冊的裝置數上限。
 
-2. 在 [Intune] 刀鋒視窗上選擇 [註冊裝置]，然後選擇 [註冊限制]。
+## <a name="set-device-type-restrictions"></a>設定裝置類型限制
+
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
+
+2. 在 [Intune] 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [註冊限制]。
 
 3. 從 [裝置類型限制] 下選取 [預設]。
 
-4. 在 [所有使用者] 刀鋒視窗中選取 [平台]。
+4. 在 [所有使用者] 刀鋒視窗上，選取 [平台]。
 
-5. 對於可以在 Intune 中註冊的平台，請選取 [允許]。 對於您要禁止註冊的平台，請選取 [封鎖]。
+5. 對於可以在 Intune 中註冊的平台，請選取 [允許]。 對於您要禁止註冊的平台，請選取 [封鎖]。 平台預設會設定為 [允許]。 
+
+    >[!NOTE]
+    >這些設定不適用於或封鎖使用 Intune 軟體用戶端的 Windows 註冊。 這些設定只會影響使用行動裝置管理的註冊。 
 
 6. 選取 [儲存]。
 
 7. 選取 [平台設定]。
 
-8. 選擇要允許或禁止註冊個人擁有的 iOS 裝置註冊。
+8. 選擇要 [允許] 或 [封鎖] 註冊個人擁有的 iOS 和 Android 裝置。
 
 9. 選取 [儲存]。
 
 ## <a name="set-device-limit-restrictions"></a>設定裝置限制
 
-1. 在 Azure 入口網站的 [Intune] 刀鋒視窗上選擇 [註冊裝置]，然後選擇 [註冊限制]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 從 [裝置限制] 下選取 [預設]。
+2. 在 [Intune] 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [註冊限制]。
 
-3. 在 [所有使用者] 刀鋒視窗中選取 [裝置限制]。
+3. 在 [裝置限制] 下選取 [預設]。
 
-4. 選取使用者能夠註冊的裝置數上限，然後按一下 [儲存]。
+4. 在 [所有使用者] 刀鋒視窗上，選取 [裝置限制]。
+
+5. 選取使用者能夠註冊的裝置數上限，然後選取 [儲存]。
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

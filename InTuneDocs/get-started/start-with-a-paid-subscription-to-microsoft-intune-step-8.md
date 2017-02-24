@@ -1,11 +1,11 @@
 ---
-title: "啟用裝置註冊 | Microsoft Intune"
+title: "啟用裝置註冊 | Microsoft Docs"
 description: "設定 MDM 授權單位並啟用對 iOS、Windows、Android 和 Mac 裝置的註冊。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>註冊行動裝置並安裝 App
+# <a name="enable-enrollment-for-mobile-devices"></a>啟用行動裝置的註冊
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題描述 Intune 系統管理員如何啟用行動裝置註冊。 如需在手機上使用 Intune 的協助，請參閱 [Using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。 
+
 若要使用 Intune 設定行動裝置管理，您必須先設定*行動裝置管理授權單位*，以識別可管理與您帳戶相關聯之裝置的服務。 本指南假設您將使用 Intune 服務，而不是 System Center Configuration Manager。 一旦設定 MDM 授權單位之後，您就能啟用裝置平台的管理，並使用公司入口網站應用程式註冊您的裝置。
 
 ## <a name="enable-device-enrollment"></a>啟用裝置註冊
@@ -43,7 +49,7 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 
 針對您想要管理的裝置平台啟用裝置註冊。 依您的平台而異，需要使用不同的需求：
 
--  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Windows 電腦](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 行動裝置版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +72,6 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "管理 Intune 授權 | Microsoft Intune"
+title: "管理 Intune 授權 | Microsoft Docs"
 description: "為您的 Intune 訂閱指派授權給使用者"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,23 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f0f9d60a27afa580aaba8a3c24fff6325ae53f08
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>管理 Intune 授權
-您必須先使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，指派您 Intune 訂閱的授權給每位使用者，使用者才能登入使用 Intune 服務，或是註冊其裝置接受管理。
 
-使用 Microsoft Enterprise Mobility + Security (EMS) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。 如需詳細資訊，請參閱[使用 PowerShell 管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題將告訴系統管理員如何將 Intune 授權指派給使用者，讓裝置接受管理。
+
+您必須先在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中將您 Intune 訂閱的授權指派給每位使用者，使用者才能登入以使用 Intune 服務，或是註冊其裝置接受管理。
+
+使用 Microsoft Enterprise Mobility + Security (EMS) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或一組服務。 如需詳細資訊，請參閱[使用 PowerShell 管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)。
 
 ## <a name="how-intune-licenses-are-assigned"></a>如何指派 Intune 授權
 當使用者帳戶從您的內部部署 Active Directory 同步處理或透過 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增至您的雲端服務訂用帳戶時，不會自動將 Intune 授權指派給他們。 而是在稍後，Intune 租用戶系統管理員必須編輯使用者帳戶，以從 Office 365 入口網站將授權指派給使用者。
@@ -94,6 +100,6 @@ ms.openlocfilehash: f0f9d60a27afa580aaba8a3c24fff6325ae53f08
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

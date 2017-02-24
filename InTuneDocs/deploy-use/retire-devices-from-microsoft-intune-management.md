@@ -1,11 +1,11 @@
 ---
-title: "淘汰裝置 | Microsoft Intune"
+title: "淘汰裝置 | Microsoft Docs"
 description: "Intune 同時支援選擇性抹除和完整抹除，可藉由移除原則與公司入口網站，從 Intune 管理中移除裝置。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,28 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>從 Intune 管理中淘汰裝置
 
-無論是公司擁有的或個人擁有的裝置，最後都需要從 Intune 管理中移除受管理裝置。 您可能會因各種原因而需要淘汰裝置：
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   使用者有計畫地離開公司 (在「受管理」狀況下離開)
--   使用者突然離開 (遭到解雇、離職等等)。
--   裝置遺失
--   裝置再利用 (移至另一位使用者，重複使用於不同用途等等)
+無論是公司擁有的或個人擁有的裝置，最後都需要從 Intune 管理中移除受管理裝置。
+
+除非您進行相關操作，否則永遠不會將裝置從 Intune 移除 (即使裝置已有一段時間未連接至 Intune 服務亦同)。
+
+您可能會因各種原因而需要淘汰裝置：
+
+-    使用者有計畫地離開公司 (在「受管理」狀況下離開)
+-    使用者突然離開 (遭到解雇、離職等等)。
+-    裝置遺失
+-    裝置再利用 (移至另一位使用者，重複使用於不同用途等等)
 
 您可以在作為行動裝置管理的裝置上執行選擇性抹除或完整抹除，也可以鎖定裝置並重設其密碼。 藉由抹除裝置，您可以釋出使用者的訂閱以新增其他裝置。 您也可以淘汰使用 Intune 用戶端軟體管理的電腦。
 
@@ -37,6 +44,9 @@ ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 如果員工已將自己的裝置註冊在 Intune 中，則[選擇性抹除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)是較適合的動作，因為這不會影響裝置上的個人資訊。 只會移除公司資料。
 
 對於需要重新規劃用途的裝置，您也可以使用[完整抹除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)，將裝置重設為原廠預設值。
+
+### <a name="removing-user-licenses-and-managed-devices"></a>移除使用者授權和受管理裝置
+移除使用者授權時，就會停止註冊該使用者的已註冊裝置。 最佳做法是先使用選擇性抹除移除受管理裝置中的公司資料，再移除使用者的 Intune 授權。 移除使用者授權之後，裝置就不再是遠端動作的目標。
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
 
@@ -70,6 +80,6 @@ ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
