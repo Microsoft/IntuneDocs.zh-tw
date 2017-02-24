@@ -1,5 +1,6 @@
 ---
-title: "設定行動裝置管理授權單位 | Intune Azure Preview | Microsoft Docs"
+title: "設定行動裝置管理授權單位"
+titleSuffix: Intune Azure preview
 description: "Intune Azure Preview︰了解如何在 Intune 中設定行動裝置管理授權單位。 "
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 
 ---
 
