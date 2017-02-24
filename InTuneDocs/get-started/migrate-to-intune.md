@@ -1,11 +1,11 @@
 ---
-title: "移轉至 Intune | Microsoft Intune"
-description: 
+title: "移轉至 Intune | Microsoft Docs"
+description: "您可以遵循以下的一般步驟順序從您現有的企業行動管理解決方案移轉至 Intune 。"
 keywords: 
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
 
 # <a name="migrate-to-intune"></a>移轉至 Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 從您現有的企業行動管理解決方案移轉至 Intune 可以依照以下的一般步驟順序︰
 
@@ -45,7 +47,7 @@ ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
 
 ## <a name="enrolling-devices-in-intune"></a>讓裝置註冊使用 Intune
 
-排程進行移轉的使用者應該立即註冊使用 Intune，以重新取得或防止失去對公司資源、電子郵件和應用程式的存取。 如果您已設定條件式存取，而使用者嘗試在註冊使用 Intune 之前連線至電子郵件，其存取將遭封鎖，並向他們提供註冊電子郵件。 這封電子郵件將引導他們在 Intune 中註冊裝置。  或者，使用者可以透過 Intune 公司入口網站應用程式，或透過 Windows 8.1 和 Windows 10 行動裝置上的作業系統原生註冊使用 Intune。 請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)，以取得每個平台註冊步驟的進一步指引。
+排程進行移轉的使用者應該立即註冊使用 Intune，以重新取得或防止失去對公司資源、電子郵件和應用程式的存取。 如果您已設定條件式存取，而使用者嘗試在註冊使用 Intune 之前連線至電子郵件，其存取將遭封鎖，並向他們提供註冊電子郵件。 這封電子郵件將引導他們在 Intune 中註冊裝置。  或者，使用者可以透過 Intune 公司入口網站應用程式，或透過 Windows 8.1 和 Windows 10 行動裝置上的作業系統原生註冊使用 Intune。 請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)，以取得每個平台註冊步驟的進一步指引。
 
 ## <a name="configure-intune-conditional-access-optional"></a>設定 Intune 條件式存取 (選擇性)
 
@@ -74,6 +76,6 @@ ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

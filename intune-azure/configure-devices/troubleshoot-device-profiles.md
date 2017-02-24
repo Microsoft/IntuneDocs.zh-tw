@@ -1,5 +1,6 @@
 ---
-title: "疑難排解 Microsoft Intune 中的裝置設定檔問題 | Intune Azure 預覽版 | Microsoft Docs"
+title: "疑難排解 Microsoft Intune 中的裝置設定檔問題"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰當您遭遇難解的問題時，可使用本主題協助您解決 Intune 裝置設定檔的問題。"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述)。
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

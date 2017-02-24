@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 74233e62997468921ad2f678c59866869bf09750
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
 
 
 ---
@@ -39,7 +40,7 @@ Android 裝置預設可以在 Intune 中註冊。 若要阻擋註冊 Android 裝
     如需使用者註冊指示，請參閱[在 Intune 註冊 Android 裝置](../enduser/enroll-your-device-in-intune-android.md)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
 
     如需其他使用者工作的資訊，請參閱下列文章：
-  - [使用 Microsoft Intune 之使用者體驗的相關資源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [使用 Microsoft Intune 之使用者體驗的相關資源](how-to-educate-your-end-users-about-microsoft-intune.md)
   - [適用於 Android 裝置的使用者指南](../enduser/using-your-android-device-with-intune.md)
 
 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式市集取得公司入口網站。 適用於 Android 的公司入口網站應用程式可在下列市集下載：
@@ -64,6 +65,6 @@ Android 裝置預設可以在 Intune 中註冊。 若要阻擋註冊 Android 裝
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO3-->
 
 

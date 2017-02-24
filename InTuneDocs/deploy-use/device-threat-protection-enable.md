@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
 >[!IMPORTANT]
 > 您**必須**先設定 Lookout for Work 應用程式，再建立相容性原則規則及設定條件式存取。 這樣做可確保應用程式已準備好供使用者進行安裝，安裝後，使用者才能存取電子郵件或其他公司資源。
 
-如此即完成 Intune 系統管理員主控台中的 Lookout 與 Intune 整合設定。  實作此解決方案的接下來幾個步驟，涉及部署 [Lookout for Work 應用程式](configure-and-deploy-lookout-for-work-apps.md)，以及設定[相容性](enable-device-threat-protection-rule-in-compliance-policy.md)原則。
+如此即完成 Intune 系統管理員主控台中的 Lookout 與 Intune 整合設定。  實作此解決方案的接下來幾個步驟，涉及部署 [Lookout for Work 應用程式](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)，以及設定[相容性](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy)原則。
 
 
 ## <a name="next-steps"></a>後續步驟
-[設定 Lookout for Work 應用程式](configure-and-deploy-lookout-for-work-apps.md)
+[設定 Lookout 工作應用程式](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 -   自動設定您的公司電子郵件帳戶。
 
 當您在 Intune 註冊裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護裝置上的公司資訊。
-
-**IT 看不到的項目**
-
--   通話與網頁歷程記錄
-
--    位置
-
--   電子郵件和簡訊
-
--   連絡人
-
--    密碼
-
--   行事曆
-
--   手機相簿
-
-**IT 看得到的項目**
-
--   型號
-
--   序號
-
--   作業系統
-
--   應用程式名稱
-
--   Owner
-
--   裝置名稱
 
 註冊裝置之後，您的 IT 系統管理員可以：
 
@@ -99,6 +69,6 @@ ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

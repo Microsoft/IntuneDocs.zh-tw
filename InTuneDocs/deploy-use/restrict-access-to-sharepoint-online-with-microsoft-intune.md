@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
      -   **裝置必須已加入或與網域相容。** 選擇此選項時，會要求電腦必須已加入網域，或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中設定的原則。 如果電腦不符合上述任一需求，則會提示使用者向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置。
 
-     -   **裝置必須已加入網域。** 選擇此選項時，會要求電腦必須已加入網域，才能存取 Exchange Online。 如果電腦未加入網域，則會禁止對電子郵件的存取，並提示使用者連絡 IT 系統管理員。
-
      -   **裝置必須相容。** 選擇此選項時，會要求電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中註冊且符合規範。 如果電腦未經過註冊，則會顯示註冊指示的訊息。
 
 4.   在 SharePoint Online 和商務用 OneDrive 的 [瀏覽器存取] 下，您可以選擇只允許透過支援的瀏覽器存取 Exchange Online︰Safari (iOS) 以及 Chrome (Android)。 從其他瀏覽器存取則會遭到禁止。 您為 OneDrive 應用程式存取所選取的相同平台限制也適用於此處。
@@ -200,6 +198,6 @@ ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
