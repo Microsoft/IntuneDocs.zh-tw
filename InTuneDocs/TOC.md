@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [保護電子郵件存取︰範例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [僅允許受原則管理的應用程式存取 O365 服務](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [使用 MAM CA 的應用程式](deploy-use/use-apps-with-mam-ca.md)
+#### [搭配以應用程式為基礎的 CA 使用應用程式](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [封鎖沒有 ADAL 的應用程式](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保護網路存取權 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -224,6 +224,6 @@
 # [名詞解釋](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
