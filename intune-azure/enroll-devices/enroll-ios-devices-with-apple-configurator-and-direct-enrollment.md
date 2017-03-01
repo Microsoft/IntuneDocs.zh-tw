@@ -1,5 +1,6 @@
 ---
-title: "為 iOS 裝置註冊 Apple Configurator 以及直接註冊 | Intune Azure 預覽版 | Microsoft Docs"
+title: "為 iOS 裝置註冊 Apple Configurator 以及直接註冊"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何使用 Apple Configurator 透過直接註冊，來註冊公司擁有的 iOS 裝置。"
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 642ecb716a4325d736be6fc392f39162e903d835
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
+ms.lasthandoff: 02/18/2017
 
 
 ---
