@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-您身為 Intune 系統管理員，可管理 macOS 裝置。 根據預設，使用者可利用 Azure 入口網站來註冊其 macOS 裝置。 您只需要告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)以及註冊其 macOS 裝置即可。 
+Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用者必須前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 管理 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos)。 即將推出更多功能。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -39,20 +40,17 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 ## <a name="set-up-macos-enrollment"></a>設定 macOS 註冊
 
-根據預設，Intune 已設定為允許註冊 macOS 裝置。 
+根據預設，Intune 已允許註冊 macOS 裝置。 
 
-若要查看允許或封鎖 macOS 裝置註冊的設定，請前往 Azure 入口網站中的 Intune 刀鋒視窗，然後選擇 [註冊][註冊限制] > 。 
+若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (設定裝置類型限制)。 
+
+若要設定使用者能夠註冊的裝置數上限，請參閱 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) (設定裝置限制)。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告知使用者如何註冊其裝置才可存取公司資源
 
-如需取得使用者註冊指示，請參閱[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
+您需要告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 
 
 如需其他使用者工作的資訊，請參閱下列文章：
 
 - [使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [搭配 Intune 使用 iOS 或 macOS 裝置](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

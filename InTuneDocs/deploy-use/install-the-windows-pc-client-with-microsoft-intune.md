@@ -5,7 +5,7 @@ description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -23,14 +25,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用戶端軟體可以使用下列方式安裝：
 
-- 由 IT 管理員：
-  - 手動安裝
-  - 使用群組原則安裝
-  - 安裝包含在磁碟映像中
+- 透過 IT 系統管理員，使用下列其中一種方法：手動安裝、群組原則或磁碟映像中所含的安裝
 
-- 由手動安裝軟體用戶端的使用者安裝
+- 由手動安裝用戶端軟體的使用者安裝
 
-IT 管理員部署至使用者或使用者下載的 Intune 軟體用戶端，包含在 Intune 管理中註冊電腦時所需的最小軟體。 註冊電腦之後，Intune 軟體用戶端會接著下載管理電腦時所需的完整用戶端軟體。
+Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟體。 註冊電腦之後，Intune 用戶端軟體接著會下載管理電腦時所需的完整用戶端軟體。
 
 此系列下載可降低對網路頻寬的影響，並將在 Intune 中初次註冊電腦時所需的時間縮到最短。 同時也可確保第二個下載完成之後，用戶端都是安裝最新可用的軟體。
 
@@ -44,17 +43,16 @@ IT 管理員部署至使用者或使用者下載的 Intune 軟體用戶端，包
 
 2.  在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
 
-    > [!NOTE]
-    > Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
+Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
 
 3.  將安裝套件的內容解壓縮到您的網路上安全的位置。
 
     > [!IMPORTANT]
-    > 請勿重新命名或移除已解壓縮的 **ACCOUNTCERT** 檔案，否則用戶端軟體安裝將會失敗。
+    > 請不要重新命名或移除已解壓縮的 **ACCOUNTCERT** 檔案，否則用戶端軟體安裝將會失敗。
 
 ## <a name="deploy-the-client-software-manually"></a>手動部署用戶端軟體
 
-在將要安裝軟體用戶端的電腦上，移至用戶端軟體安裝檔案所在的資料夾。 接著執行 **Microsoft_Intune_Setup.exe** 安裝用戶端軟體。
+在將要安裝用戶端軟體的電腦上，移至用戶端軟體安裝檔案所在的資料夾。 接著執行 **Microsoft_Intune_Setup.exe** 安裝用戶端軟體。
 
 > [!NOTE]
 > 當您將游標停留在用戶端電腦上工作列中的圖示上時，即可顯示安裝的狀態。
@@ -108,11 +106,56 @@ IT 管理員部署至使用者或使用者下載的 Intune 軟體用戶端，包
 
 ## <a name="instruct-users-to-self-enroll"></a>指示使用者自行註冊
 
-使用者可以前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 若入口網站能偵測出裝置為 Windows 電腦，就會提示使用者下載 Intune 軟體用戶端來註冊電腦。 下載軟體之後，使用者可以加以安裝來管理其電腦。
+使用者前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權單位以及使用者電腦的作業系統平台/版本而定。 
 
-使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權和使用者電腦的平台與版本而定。
+如果使用者尚未獲指派 Intune 授權，或者組織的 MDM 授權單位尚未設定為 Intune，則使用者看不到任何註冊選項。
 
-![Intune 入口網站將會提示您下載 Intune 軟體用戶端](../media/software-client-download.png)
+如果使用者已獲指派 Intune 授權，而且組織的 MDM 授權單位已設定為 Intune：
+
+- Windows 7 或 Windows 8 電腦使用者下載並安裝組織特有的電腦用戶端軟體，才會看到註冊 Intune 選項。
+
+- 會向 Windows 10 或 Windows 8.1 電腦使用者顯示兩個註冊選項︰
+
+  -  **將電腦註冊為行動裝置**：使用者選擇 [了解如何註冊] 按鈕，並取得如何將其電腦註冊為行動裝置的指示。 因為會將 MDM 註冊視為預設和慣用註冊選項，所以會以醒目方式顯示此按鈕。 不過，MDM 選項不適用於本主題，本主題僅涵蓋用戶端軟體安裝。
+  - **使用 Intune 用戶端軟體註冊電腦**︰您需要告訴使用者選取 [Click here to download it] (按一下這裡下載) 連結，以引導他們進行用戶端軟體安裝。
+
+下表摘要說明選項。
+
+  ![每個平台的預設註冊選項](../media/default-enrollment-options-table.png)
+
+下列螢幕擷取畫面顯示使用者在使用軟體用戶端註冊其裝置時看到的內容。
+
+系統會先提示使用者識別或註冊其裝置。
+
+  ![識別或註冊裝置](../media/identify-device-or-enroll.png)
+
+若要讓使用者安裝電腦用戶端軟體，則需要告訴他們選取 [Click here to download it] (按一下這裡下載) 連結，讓使用者下載電腦用戶端軟體，並帶領他們進行安裝程序。 [了解如何註冊] 按鈕會將使用者帶至有關如何使用 MDM 註冊來註冊的文件，而這與這些軟體用戶端指示無關。
+
+  ![選擇 [Click here to download it] (按一下這裡下載) 連結](../media/enroll-your-windows-device.png)
+
+使用者按一下連結時，就會看到 [下載軟體] 按鈕，只要選取它就會啟動電腦用戶端軟體安裝。
+
+  ![選擇 [下載軟體] 更新](../media/download-pc-client-software.png)
+
+系統接著會要求使用者使用其公司認證登入。
+
+  ![使用您的認證登入](../media/sign-in-to-intune.png)
+
+系統會將使用者帶至安裝的 [歡迎使用] 頁面。
+
+  ![電腦用戶端安裝的歡迎使用頁面](../media/welcome-to-pc-agent-install-wizard.png)
+
+使用者選擇 [下一步]，然後安裝開始。
+
+  ![電腦用戶端安裝的歡迎使用頁面](../media/welcome-to-pc-agent-install-wizard.png)
+
+安裝完成時，使用者選擇 [完成]。
+
+  ![完成電腦用戶端安裝](../media/completed-the-setup-wizard.png)
+
+如果使用者嘗試在已使用 Intune 電腦用戶端軟體註冊之後將電腦註冊為行動裝置，則會看到下列錯誤畫面。
+
+  ![顯示是否已註冊電腦的畫面](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>監視並驗證成功的用戶端部署
 請使用下列其中一個程序協助您監視及驗證成功的用戶端部署。
@@ -140,9 +183,4 @@ IT 管理員部署至使用者或使用者下載的 Intune 軟體用戶端，包
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 [為用戶端安裝進行疑難排解](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

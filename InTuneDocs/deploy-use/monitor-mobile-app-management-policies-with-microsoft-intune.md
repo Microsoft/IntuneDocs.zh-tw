@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 監視行動應用程式管理原則
-您可以監視您套用到使用者之行動應用程式管理 (MAM) 原則的合規性狀態。 您能夠找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 監視應用程式保護原則
+您可以監視您套用到使用者之應用程式保護原則的合規性狀態。 您能夠找到受應用程式保護原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
 
 您有三個不同的位置可以監視合規性狀態︰
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 您可以搜尋單一使用者，並查看該使用者的相容性狀態。 [應用程式報告] 刀鋒視窗會顯示所選使用者的下列資訊：
 - 與使用者帳戶相關聯的裝置
 
-- 裝置上具有 MAM 原則的應用程式
+- 裝置上具有應用程式保護原則的應用程式
 
 - 狀態：
 
@@ -68,7 +70,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
   - **未簽入**：此原則已部署至使用者，但是從那時起並未在工作環境中使用應用程式。
 
 >[!NOTE]
-> 如果您搜尋的使用者沒有部署 MAM 原則，您會看見一則訊息，通知您該使用者不針對任何 MAM 原則。
+> 如果您搜尋的使用者未部署應用程式保護原則，您會看見一則訊息，通知您該使用者不針對任何應用程式保護原則。
 
 若要查看使用者的報告，請遵循下列步驟︰
 
@@ -87,7 +89,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 ## <a name="reporting-view"></a>報告檢視
 
-您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理 MAM 原則合規性狀態的其他報表︰
+您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理應用程式保護原則合規性狀態的其他報表︰
 
 ![螢幕擷取畫面&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
     -   受管理 MAM 活動的使用者狀態 (受保護)︰這份報表會依每個使用者列出每個受管理 MAM 應用程式的活動。
 
-        -   它會顯示每個使用者的所有 MAM 原則目標應用程式，並將每個應用程式的狀態細分為使用 MAM 原則簽入，或由 MAM 原則鎖定但永遠不會簽入應用程式。
+        -   它會顯示每個使用者的所有應用程式保護原則目標應用程式，並將每個應用程式的狀態細分為使用應用程式保護原則簽入，或由應用程式保護原則鎖定但永遠不會簽入應用程式。
 <br></br>
     -   未受管理之 MAM 活動的使用者狀態 (不受保護)︰這份報表會依每個使用者列出目前未受管理之 MAM 啟用的應用程式活動。 可能的發生原因如下︰
 
-        -   使用者或目前不是由 MAM 原則鎖定的應用程式正在使用這些應用程式。
+        -   使用者或目前不是由應用程式保護原則鎖定的應用程式正在使用這些應用程式。
 
-        -   所有的應用程式都已簽入，但未收到任何 MAM 原則。
+        -   所有的應用程式都已簽入，但未收到任何應用程式保護原則。
 
 ![螢幕擷取畫面&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 ## <a name="see-also"></a>請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [當 Android 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

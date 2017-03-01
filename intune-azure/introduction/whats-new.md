@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune 預覽版的新功能 | Intune Azure 預覽版 | Microsoft Docs"
-description: "Intune Azure 預覽版︰了解 Intune Azure 預覽版的新功能"
+description: "了解 Intune Azure 預覽版中的新功能"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
 # <a name="whats-new-in-the-microsoft-intune-preview"></a>Microsoft Intune 預覽版的新功能
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 隨著公開預覽版的推出，更多新功能陸續加入，我們利用這裡的版面提供相關資訊。
 
-<!--## February 2017-->
+## <a name="february-2017"></a>2017 年 2 月
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>限制行動裝置註冊的能力 <!--747600, 795782-->
+Intune 正在新增新的註冊限制，以控制哪些行動裝置平台可以註冊。 Intune 將行動裝置平台分為 iOS、macOS、Android、Windows 和 Windows Mobile。
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* 限制行動裝置註冊不會限制電腦用戶端註冊。  
+* 僅限 iOS 與 Android，有一個額外選項可阻擋註冊個人擁有的裝置。
+
+Intune 會將所有的新裝置標示為個人，除非 IT 系統管理員採取動作將它們標示為公司擁有，如[本文章](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)所說明。
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>檢視受管理裝置上的所有動作 <!--677150-->
+新的__裝置動作__報表會顯示曾執行遠端動作的人員，像是裝置恢復出廠預設值，並會另外顯示該動作的狀態。 請參閱[什麼是裝置管理？](https://docs.microsoft.com/intune-azure/manage-devices/what-is)。
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>未受管理的裝置可以存取已指派的應用程式 <!--664691-->
+iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派給他們的「無須註冊即可使用」應用程式，這屬於公司入口網站的設計變更。 使用 Intune 認證，使用者能夠登入公司入口網站，並查看指派給他們的應用程式清單。 「無須註冊即可使用」應用程式的應用程式套件，可透過公司入口網站下載取得。 這項變更不會影響需要註冊才能安裝的應用程式，因為如果使用者想要安裝這些應用程式，系統會提示他們註冊裝置。
+
+### <a name="custom-app-categories---748805--"></a>自訂應用程式類別 <!--748805-->
+您現在可以建立、編輯和指派您新增至 Intune 之應用程式的類別。 目前只能以英文指定類別。
+請參閱[如何將應用程式新增至 Intune](/intune-azure/manage-apps/add-apps)。
+
+### <a name="display-device-categories---814654--"></a>顯示裝置類別 <!--814654-->
+裝置清單現在會以資料行顯示裝置類別。 您也可以在裝置內容刀鋒視窗的內容區段中編輯類別。 請參閱[如何將應用程式新增至 Intune](/intune-azure/manage-apps/add-apps)。 
 
 ## <a name="january-2017"></a>2017 年 1 月
 
@@ -83,9 +95,4 @@ Azure 入口網站不支援 Apple 裝置註冊程式 (DEP) 裝置序號的「預
 
 #### <a name="how-to-get-ready-for-this-change"></a>此變更需要哪些準備
 事先提出此變更資訊的目的在讓您的水援系統管理員知道這項變更。 這項變更會在移轉到 Azure 入口網站時一併實施，預定時間在 2017 年上半年。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
