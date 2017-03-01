@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>什麼是裝置設定檔？
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用 Microsoft Intune 的**設定裝置**工作負載可以管理您管理之所有裝置的設定及功能。
+使用 Microsoft Intune 的**設定裝置**工作負載可以管理您管理之所有裝置的設定及功能。 您大部分會使用此工作負載來建立裝置設定檔，讓您管理和控制所管理裝置上的各種不同功能。
 
 當您開啟此工作負載時，會顯示下列選項︰
 
@@ -60,10 +60,6 @@ ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
 此設定檔類型可讓您設定信任的憑證、SCEP 憑證及 PKCS 憑證指派給裝置，以及用於驗證 Wi-Fi、VPN 及電子郵件設定檔。
 如需詳細資訊，請參閱[如何設定憑證](how-to-configure-certificates.md) 支援︰Android、iOS、Windows Phone 8.1、Windows 8.1 及 Windows 10。
 
-## <a name="education"></a>教育
-協助您指定正確的憑證，以在教育環境中使用 iOS 裝置。
-如需詳細資訊，請參閱[如何設定 iOS 裝置的 Intune 教育設定](education-settings-for-ios.md) 支援︰ 僅限 iOS。
-
 ## <a name="edition-upgrade"></a>版本升級
 此設定檔類型可讓您自動將執行某些特定版本 Windows 10 的裝置升級為更新版本。如需詳細資訊，請參閱[如何設定 Windows 10 版本升級](how-to-configure-windows-10-edition-upgrade.md) 支援︰僅限 Windows 10。
 
@@ -74,9 +70,4 @@ Windows 資訊保護可協助防範資料流失，但不會干擾員工的操作
 ## <a name="custom"></a>自訂
 自訂設定可讓您指派不屬於 Intune 內建設定的裝置設定。 例如在 Android 裝置上，您可以指定 OMA-URI 值來設定裝置。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
 如需詳細資訊，請參閱[如何設定自訂設定](how-to-configure-custom-settings.md) 支援︰ Android、iOS、macOS 及 Windows 8.1。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

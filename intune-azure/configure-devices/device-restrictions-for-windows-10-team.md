@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6e0540acd5488077ae5217f8862e3bc5462ed71
-ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ab9c879763ce1ed02a52a57e66fdc06fa970c2a4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="windows-10-team-device-restriction-settings-in-intune-azure-preview"></a>Intune Azure 預覽版中 Windows 10 團隊版裝置限制設定
+# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 團隊版裝置限制設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,9 +34,4 @@ ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
 - **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://**。
 - **更新的維護期間** - 設定可以進行裝置更新的範圍。 您可以設定間隔的開始時間和持續時間 (從 1 到 5 小時) 。
 - **Azure Operational Insights** - Azure Operational Insights，Microsoft Operations Manager 套件組合會收集、儲存及分析來自 Windows 10 團隊版的記錄檔資料。<br>若要連線到 Azure Operational Insights，您必須指定 [工作區識別碼] 和 [工作區金鑰]。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

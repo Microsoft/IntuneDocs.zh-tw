@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 Windows 8.1 裝置的 VPN 設定
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 8.1 裝置的 VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -93,9 +94,4 @@ ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
     - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
     - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
 - **本機位址不要使用 Proxy** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，但您希望您指定的本機位置不要使用 Proxy 伺服器，可選取此選項。 如需詳細資訊，請參閱 Windows Server 文件。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

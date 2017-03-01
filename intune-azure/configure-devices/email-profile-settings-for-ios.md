@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-ios-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 iOS 裝置的電子郵件設定檔之設定
+# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的電子郵件設定檔設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
 - **允許將訊息移至其他電子郵件帳戶** - 其可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
 - **允許從協力廠商應用程式傳送電子郵件** - 允許使用者選取此設定檔作為預設的帳戶來傳送電子郵件，以及允許在原生電子郵件應用程式中開啟協力廠商應用程式以開啟電子郵件，例如，將檔案附加至電子郵件。
 - **同步最近使用過的電子郵件地址** - 使用者可利用此功能，將裝置上最近使用過的電子郵件地址清單，與伺服器同步。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

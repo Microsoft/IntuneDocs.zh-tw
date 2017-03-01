@@ -14,8 +14,9 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: a7249e96e737cc844e742a78d8a34899a428f52b
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 56e78f2c80c860c4cdf1c79bf94d7575d5cd9674
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -49,7 +50,7 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>建立 Windows Hello 企業版原則
 
-1.  在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+1.  在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
 2.  在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [管理] > [Windows Hello 企業版]。
 
@@ -96,9 +97,4 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 ## <a name="further-information"></a>進一步資訊
 如需 Microsoft Passport 的詳細資訊，請參閱 Windows 10 文件中的[指南](https://technet.microsoft.com/library/mt589441.aspx)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

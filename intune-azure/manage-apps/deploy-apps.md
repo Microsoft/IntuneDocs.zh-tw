@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 145f27e44d57e0f5ff7bbed76e14db713dd75286
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-assign-apps-to-groups"></a>如何將應用程式指派到群組
+# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 將應用程式指派給群組
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -62,9 +63,4 @@ ms.openlocfilehash: 145f27e44d57e0f5ff7bbed76e14db713dd75286
 應用程式現已指到您所選的群組。
 
 請參閱[如何監視應用程式](monitor-apps.md)，以取得協助您監視應用程式指派的資訊。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
 
 ## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
 
-使用者若要註冊個人 (BYOD (自攜裝置)) 的裝置，唯一可使用的註冊方式就是從 App Store 下載 iOS 版的公司入口網站應用程式，並依照應用程式中的指示註冊。 一經註冊之後，使用者就能連線到公司網路、加入網域或 Azure Active Directory 及存取公司資源。
+使用者若要註冊個人 (BYOD (自攜裝置)) 的裝置，唯一可使用的註冊方式就是從 App Store 下載 iOS 版的公司入口網站應用程式，並依照應用程式中的指示註冊。 一經註冊之後，使用者就能連線到公司網路、加入網域或 Azure Active Directory 及存取公司資源。 您可以封鎖註冊個人擁有的 iOS 裝置。 如需指示，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>使用裝置註冊管理員 (DEM)
 裝置註冊管理員是一種使用者帳戶類型，最多可以註冊及管理 1000 部裝置。 將現有的使用者新增到 DEM 帳戶，就能賦予他們這些能力。 DEM 使用者註冊的每一部裝置皆會佔用一份 Intune 授權。 如需詳細資訊，請參閱[使用裝置註冊管理員註冊 iOS 裝置](enroll-devices-using-device-enrollment-manager.md)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

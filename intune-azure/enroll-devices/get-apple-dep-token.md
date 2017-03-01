@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
 > 只有當您是從 Intune 管理主控台遷移至 Azure 入口網站的客戶時，才請閱讀此注意事項。 若已於遷移期間從 Intune 管理主控台刪除了 Apple DEP 權杖，可能會發現到 DEP 權杖已還原至您的 Intune 帳戶。 如果發生此情況，只要從 Azure 入口網站刪除該 DEP 權杖即可。 
 
 **取得 Apple DEP 憑證**</br>
-在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。 在 Intune 刀鋒視窗上，選擇 [註冊裝置]  >  [Apple DEP 權杖]，並依照 Azure 入口網站中的步驟編號進行，如下所示。
+在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。 在 Intune 刀鋒視窗上，選擇 [註冊裝置]  >  [Apple DEP 權杖]，並依照 Azure 入口網站中的步驟編號進行，如下所示。
 
 **步驟 1.下載建立 Apple DEP 權杖所需的 Intune 公開金鑰憑證。**<br>
 選取 [下載您的公開金鑰憑證]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
@@ -53,9 +54,4 @@ ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
 
 **步驟 4.瀏覽至 Apple DEP 權杖，以進行上傳。Intune 會自動與您的 DEP 帳戶同步。**<br>
 前往憑證 (.pem) 檔案，選擇 [開啟]，然後選擇 [上傳]。 使用推播憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

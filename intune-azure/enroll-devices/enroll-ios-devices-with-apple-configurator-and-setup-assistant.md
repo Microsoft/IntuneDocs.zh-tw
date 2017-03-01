@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -54,7 +55,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
 裝置註冊設定檔會定義套用至裝置群組的設定。 下列步驟示範如何針對使用 Apple Configurator 註冊的 iOS 裝置，建立裝置註冊設定檔。
 
-1. 在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
 2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
 
@@ -78,11 +79,13 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>為 Apple Configurator 設定檔指派序號
 
-1. 從 [Apple Configurator 註冊設定檔] 刀鋒視窗中，選取要指派序號的設定檔。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在為設定檔命名的刀鋒視窗中，選取 [序號]  >  [指派]。
+2. 從 [Apple Configurator 註冊設定檔] 刀鋒視窗中，選取要指派序號的設定檔。
 
-3. 選取要指派給設定檔的序號，然後選取 [指派] 按鈕。
+3. 在為設定檔命名的刀鋒視窗中，選取 [序號]  >  [指派]。
+
+4. 選取要指派給設定檔的序號，然後選取 [指派] 按鈕。
 
 ## <a name="export-the-profile-to-ios-devices"></a>將設定檔匯出到 iOS 裝置
 
@@ -90,11 +93,13 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>使用設定助理註冊匯出設定檔
 
-1. 在 [Apple Configurator 註冊設定檔] 刀鋒視窗上，選取要匯出的設定檔。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在 [設定檔] 刀鋒視窗中，選取 [匯出設定檔]。
+2. 在 [Apple Configurator 註冊設定檔] 刀鋒視窗上，選取要匯出的設定檔。
 
-3. 在連結著 iOS 裝置的情況下，將設定檔 URL 複製到 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 中。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
+3. 在 [設定檔] 刀鋒視窗中，選取 [匯出設定檔]。
+
+4. 在連結著 iOS 裝置的情況下，將設定檔 URL 複製到 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 中。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
 
   若要支援 Apple Configurator 2，則必須編輯 2.0 設定檔 URL。 若要執行這項操作，請將此程式碼：
     ```
@@ -108,7 +113,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
    您將使用下列程序中的 Apple Configurator 將這個設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
 
-4. 使用 Apple Configurator 將此設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
+5. 使用 Apple Configurator 將此設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
 
 
     1.  在 Mac 電腦上，開啟 [Apple Configurator 2] 在功能表列中，選擇 [Apple Configurator 2]，然後選擇 [喜好設定]。
@@ -139,7 +144,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
     10. 當 iOS 裝置完成準備時，請拔除 USB 纜線。  
 
-8.  **散發裝置**。
+6.  **散發裝置**。
     裝置現在已準備好進行公司註冊。 關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>使用者在其裝置安裝及使用公司入口網站的方式
@@ -165,9 +170,4 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 7. 序號通過驗證後，公司入口網站 App 會重新導向至「公司入口網站」網站，以完成註冊。 該網站隨即會提示使用者返回應用程式。
 
 如此即已完成註冊，且使用者現已可使用此裝置的完整功能。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

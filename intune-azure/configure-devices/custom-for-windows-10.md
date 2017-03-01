@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 Windows 10 裝置的自訂裝置設定
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的自訂裝置設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
 |**允許儲存密碼**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|桌面版和行動裝置版<br />**資料類型：** 整數<br />**值：**<br>**0** - 密碼管理員已停用； <br>**1** - 啟用密碼管理員 (預設值)|
 |**允許自動填入**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|僅限桌面版<br />**資料類型：** 整數<br />**值︰****0** – 停用 (預設)，**1** – 啟用|
 |**設定企業站台清單**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|僅限桌面版<br />**資料類型：**字串<br />**值︰<br>**0** – 未設定<br>**1** – 使用 IE 的企業模式網站清單，如已設定 (預設)<br>**2** – 指定企業網站清單位置|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

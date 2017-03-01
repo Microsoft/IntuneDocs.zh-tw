@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-custom-device-settings"></a>如何設定自訂裝置設定
+# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定自訂裝置設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -56,10 +57,5 @@ ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
 
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](how-to-assign-device-profiles.md)。
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

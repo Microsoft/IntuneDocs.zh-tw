@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -66,7 +67,7 @@ DEM 使用者可以︰
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
 
-1.  在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+1.  在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
 2.  在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
 
@@ -88,18 +89,17 @@ DEM 使用者可以︰
 
 **移除裝置註冊管理員**
 
-1. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [移除]。
+2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
+
+3. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [移除]。
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>檢視裝置註冊管理員的內容
 
-1. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [內容]。
+2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [內容]。
 

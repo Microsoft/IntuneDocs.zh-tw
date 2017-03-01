@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: 23322313bfedb089f2665f53795996a26efe40e0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 61bb77b24314aca234e20df42c2eaa975dfcee8d
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-ios-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 iOS 裝置的 VPN 設定
+# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -77,9 +78,4 @@ ms.openlocfilehash: 23322313bfedb089f2665f53795996a26efe40e0
 - **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
 - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
 - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

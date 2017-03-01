@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: 331299dc1e5cae4b789ce43400dc9daaa4fb5351
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: aeed271699656addce8f2bd8cde2a69ab8ede8f9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="use-an-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices-in-intune-azure-preview"></a>使用 Intune 自訂設定檔，為 Intune Azure 預覽版中的 Android 裝置建立個別應用程式 VPN 設定檔
+# <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -81,9 +82,4 @@ ms.openlocfilehash: 331299dc1e5cae4b789ce43400dc9daaa4fb5351
 ## <a name="step-3-assign-both-policies"></a>步驟 3︰指派這兩項原則
 
 使用[如何指派裝置設定檔](how-to-assign-device-profiles.md)中的指示，將兩個設定檔指派給必要的使用者或裝置。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

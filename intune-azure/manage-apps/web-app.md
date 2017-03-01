@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4188957e263717d416853f308a50e3dbd7a9244a
-ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 8b14b9dfef7100a86c338c362ba56be329a8639c
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-web-apps-to-intune"></a>如何將 Intune Web 應用程式新增到 Intune
+# <a name="how-to-add-web-apps-to-microsoft-intune"></a>如何將 Web 應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,8 +42,3 @@ ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
 8. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。
 
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

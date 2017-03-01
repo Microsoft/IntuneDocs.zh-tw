@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c2b49fb985290b2806e172543f95db21727c113e
-ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-intune-azure-preview"></a>使用自訂原則可允許及封鎖 Intune Azure 預覽版中的 Samsung KNOX Standard 裝置的應用程式
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式
 [!INCLUDE[azure_preview](../includes/azure_preview.md)] 使用此主題中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
 
 - 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
@@ -45,9 +46,9 @@ ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
 
 - **名稱** - 輸入 **PreventStartPackages**。
 - **描述** - 輸入選用描述，例如「封鎖而無法執行的應用程式清單」。
--   **資料類型** - 從下拉式清單中選擇 [字串]。
--   **OMA URI** - 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--   **值** - 輸入您允許的應用程式套件名稱之清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+-     **資料類型** - 從下拉式清單中選擇 [字串]。
+-     **OMA URI** - 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-     **值** - 輸入您允許的應用程式套件名稱之清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
 - **名稱** - 輸入 **AllowInstallPackages**。
@@ -65,9 +66,4 @@ ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
 
 
 <!---## Assign the custom profile--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

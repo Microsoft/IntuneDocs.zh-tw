@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
 
 **iOS 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料** |
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | 更多資訊即將推出|
-|**[DEM](#dem)**|   否 |否 |否  | [詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   是 |   選用 |  選用|[詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| 是 |   選用 |  否| [詳細資訊](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[詳細資訊](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | 更多資訊即將推出|
+|**[DEM](#dem)**|    否 |否 |否    | [詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    是 |    選用 |    選用|[詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    是 |    選用 |    否| [詳細資訊](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[詳細資訊](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|   是 |   否 | 更多資訊即將推出|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | 是|    是 |    否 | 更多資訊即將推出|
+|**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android 的註冊方法**
 
-| **方法** |  **需要抹除？** |    **同質性**    |   **鎖定** | **詳細資料**|
+| **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | 更多資訊即將推出|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | 更多資訊即將推出|
+|**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-「攜帶您自己的裝置」使用者會安裝公司入口網站應用程式，並註冊其裝置。 這可以讓使用者連線到公司網路，並加入網域或 Azure Active Directory。 以大多數的平台來說，您皆必須針對許多 COD 案例啟用 BYOD 註冊。
+「攜帶您自己的裝置」使用者會安裝公司入口網站應用程式，並註冊其裝置。 這可以讓使用者連線到公司網路，並加入網域或 Azure Active Directory。 以大多數的平台來說，您皆必須針對許多 COD 案例啟用 BYOD 註冊。 您可以封鎖註冊個人擁有的 iOS 和 Android 裝置。 如需指示，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
 
 ## <a name="corporate-owned-devices"></a>屬公司擁有的裝置
 您可使用 Azure 入口網站管理公司擁有的裝置 (COD)。 iOS 裝置可直接透過 Apple 提供的工具進行註冊。 系統管理員或管理員可使用裝置註冊管理員來註冊所有裝置類型。 也可以將包含 IMEI 號碼的裝置識別和標記為公司擁有，以啟用 COD 案例。
@@ -80,8 +81,8 @@ ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
 ### <a name="dep"></a>DEP
 Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
 
-  - 已鎖定註冊
-  - Kiosk 模式及其他進階設定與限制
+  -    已鎖定註冊
+  -    Kiosk 模式及其他進階設定與限制
 
 若要深入了解 iOS 註冊，請參閱︰
 
@@ -91,8 +92,8 @@ Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立�
 
 ### <a name="usb-sa"></a>USB-SA
 IT 系統管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公司擁有的裝置，以使用設定助理進行註冊。 IT 系統管理員會建立註冊設定檔，並將其匯出至 Apple Configurator。 當使用者收到裝置時，系統會提示他們執行設定助理以註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
-  - 已鎖定註冊
-  - Kiosk 模式及其他進階設定與限制
+  -    已鎖定註冊
+  -    Kiosk 模式及其他進階設定與限制
 
 若要深入了解 iOS 註冊，請參閱︰
 
@@ -127,9 +128,4 @@ Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange Active
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 憑證到期後的行動裝置清除
 
 當行動裝置與 Intune 服務通訊時，會自動更新 MDM 憑證。 若行動裝置 (而不是電腦) 遭抹除，或一段時間無法與 Intune 服務通訊，便無法更新 MDM 憑證。 當 MDM 憑證過期 180 天後，該裝置便會從 Azure 入口網站上移除。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

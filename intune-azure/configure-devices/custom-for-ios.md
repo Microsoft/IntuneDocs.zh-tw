@@ -1,11 +1,12 @@
 ---
-title: "iOS 裝置的 Intune 自訂設定 | Intune Azure 預覽版 | Microsoft Docs"
+title: "iOS 裝置的 Intune 自訂設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解可用於 iOS 自訂設定檔中的設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d8e6d0d641dd55c79442f68e7e97d21efcdad7fa
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-custom-settings-for-ios-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 iOS 裝置的自訂設定
+# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS 裝置的 Microsoft Intune 自訂設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +40,4 @@ ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
 確定您從 Apple Configurator 工具匯出的設定會與您部署 iOS 自訂原則之裝置上的 iOS 版本相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。
 
 您匯入的檔案將會顯示在刀鋒視窗的 [檔案內容] 區域中。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

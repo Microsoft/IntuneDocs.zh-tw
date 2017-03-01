@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 裝置註冊設定檔會定義套用至裝置群組的設定。 下列步驟示範如何使用 DEP 來為 iOS 裝置建立裝置註冊設定檔。
 
-1. 在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
 2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
 
@@ -110,17 +111,19 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ## <a name="synchronize-dep-managed-devices"></a>同步 DEP 管理的裝置
 
-1. 在 Azure 入口網站的 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在 [管理 Apple 裝置註冊方案 (DEP) 設定] 下，選取 [DEP 序號]。
+2. 在 Azure 入口網站的 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
+
+3. 在 [管理 Apple 裝置註冊方案 (DEP) 設定] 下，選取 [DEP 序號]。
 
 4. 在 [Apple DEP 序號] 刀鋒視窗中，選取 [同步]。
 
 5. 在 [同步] 刀鋒視窗中，選取 [要求同步]。 進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
     若要符合可接受 DEP 流量的 Apple 詞彙，Intune 具有下列限制︰
-     -  完整 DEP 同步處理每&7; 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在上一次完整同步處理過後的&7; 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
-     -  任何同步處理要求都會在 10 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
+     -    完整 DEP 同步處理每&7; 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在上一次完整同步處理過後的&7; 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
+     -    任何同步處理要求都會在 10 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
 
 >[!NOTE]
 >您也可以從 [Apple DEP 序號] 刀鋒視窗中，將 DEP 序號指派給設定檔。
@@ -153,9 +156,4 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 7. 序號通過驗證後，公司入口網站 App 會重新導向至「公司入口網站」網站，以完成註冊。 該網站隨即會提示使用者返回應用程式。
 
 如此即已完成註冊，且使用者現已可使用此裝置的完整功能。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

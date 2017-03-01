@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1609ed2f127fe9d7d1f1c3b3e923bd12f1088200
-ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -41,7 +42,7 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 ## <a name="how-to-configure-device-categories"></a>如何設定裝置類別
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步驟 1 - 在 Azure 入口網站的 Intune 刀鋒視窗中，建立裝置類別
-1. 登入 Azure 入口網站。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [註冊裝置]。
 3. 在 [註冊] 刀鋒視窗中，選擇 [裝置類別]。
@@ -61,17 +62,20 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 您設定好裝置群組之後，使用者註冊好其裝置，即會看到您設定的類別清單。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Active Directory 安全性群組中。
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>如何檢視您管理的裝置類別
-1.    在 Azure 入口網站的 [Intune] 刀鋒視窗中，選擇 [裝置和群組]。
 
-2.    在 [管理] 之下，按一下 [所有裝置]。
+1.    在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-3.    在裝置清單中，檢查 [類別] 資料行。
+2. 在 Azure 入口網站的 [Intune] 刀鋒視窗中，選擇 [裝置和群組]。
+
+3.    在 [管理] 之下，按一下 [所有裝置]。
+
+4.    在裝置清單中，檢查 [類別] 資料行。
 
 如果沒有顯示 [類別] 資料行，請按一下 [資料行]，從清單中選擇 [類別]，然後按一下 [套用]。
 
 ### <a name="to-change-the-category-of-a-device"></a>變更裝置類別
 
-1. 登入 Azure 入口網站。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置和群組]。
 4. 在 [裝置和群組] 刀鋒視窗中，選擇 [管理]  > [所有裝置]。
@@ -85,10 +89,5 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 
 - 如果刪除類別時，則所有指派給該類別的裝置，之後會顯示該類別名稱為**未指派**。
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a02b320498b3094db1e07ed3d1dab82e4d9effa
-ms.openlocfilehash: e3df68aee2a1584063f77429c828b0fd31103920
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 86f493e0ffd2a96ac4cfdfe6d8719f56532ed77c
+ms.lasthandoff: 02/16/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-intune-azure-preview"></a>在 Intune Azure 預覽版中為 SCEP 設定 Intune 憑證基礎結構
+# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>在 Microsoft Intune 中設定 SCEP 的憑證基礎結構
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 本主題說明建立及部署 SCEP 憑證設定檔所需的基礎結構。
@@ -348,9 +349,4 @@ ms.openlocfilehash: e3df68aee2a1584063f77429c828b0fd31103920
 
 ## <a name="next-steps"></a>後續步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](how-to-configure-certificates.md)中所述。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

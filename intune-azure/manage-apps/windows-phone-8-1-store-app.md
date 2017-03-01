@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 4a08e0ac90faa0715172e7c5355b474822536afe
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-phone-81-store-apps-to-intune"></a>如何將 Windows Phone 8.1 市集應用程式新增至 Intune
+# <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>如何將 Windows Phone 8.1 市集應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,3 @@ ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
 8. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。
 
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

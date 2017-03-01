@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-android-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 Android 裝置的 VPN 設定
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的 VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,9 +42,4 @@ ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
 
 - **指紋** (僅限 Check Point Capsule) - 指定用以確認 VPN 伺服器可茲信任的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 若裝置還未設定指紋，會在顯示指紋 (使用者手動驗證指紋，並選擇 [信任] 進行連線) 時，提示使用者信任所要連線的 VPN 伺服器。
 - **為 Citrix VPN 屬性輸入索引鍵/值組** (僅限 Citrix) - 輸入 Citrix 提供的索引鍵/值組，以設定 VPN 連線的內容。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,14 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 040c4e18d87110ab7380a64540d08127574a7c46
-ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 5ed437eca48375def0e4da9715693325845f53a9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-device-management"></a>什麼是裝置管理？ 
+# <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？ 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,9 +54,4 @@ ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
     ![偵測到的應用程式節點](./media/detected-applications.png)
 - **監視** - 選擇 [裝置動作] 可檢視內含已對您管理之裝置執行的裝置動作，以及這些動作目前的狀態的清單。
 ![監視裝置動作](./media/monitor-device-actions.png)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

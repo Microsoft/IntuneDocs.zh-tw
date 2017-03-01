@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
+ms.sourcegitcommit: 37c56d0c219c61c345874b24e8ba9ac640f1ef76
+ms.openlocfilehash: 4c2ebe535935518127a799ae0518c43a2e53de72
+ms.lasthandoff: 02/17/2017
 
 
 ---
 
-# <a name="add-apple-configurator-serial-numbers"></a>新增 Apple Configurator 序號 
+# <a name="add-apple-configurator-serial-numbers"></a>新增 Apple Configurator 序號
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-若要 [使用設定輔助程式的 Apple Configurator 註冊公司擁有的 iOS 裝置]，請使用下列步驟將序號新增到 Intune ((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)。 您可以一次新增一個序號，或上傳序號的逗點分隔值 (CSV) 檔案。 新增序號之後，可以為其指派一個設定檔。 設定檔包含您要套用到裝置的特定管理設定。 
+想要[使用設定輔助程式的 Apple Configurator 註冊公司擁有的 iOS 裝置](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)時，請使用下列步驟將序號新增至 Intune。 您可以一次新增一個序號，或上傳序號的逗點分隔值 (CSV) 檔案。 新增序號之後，可以為其指派一個設定檔。 設定檔包含您要套用到裝置的特定管理設定。
 
 註冊 iOS 裝置的其他方法，詳述於 [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md) (選擇如何在 Intune 中註冊 iOS 裝置)。
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
     F7TLWCLBX196,device details</br>
     DLXQPCWVGHMJ,device details
 
-2. 在 Azure 入口網站中，選擇 [更多服務]，再於文字方塊中輸入 **Intune**，然後選擇 [其他]  >  [Intune]。
+2. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
 3.  在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
 
@@ -51,11 +52,13 @@ ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
 
 Intune 可讓您從 Azure 入口網站中兩個的不同位置指派設定檔。 您可以使用下列步驟，或從您建立設定檔所在的 [Apple Configurator 註冊設定檔] 刀鋒視窗中指派設定檔 (請參閱[使用設定輔助程式的 Apple Configurator 註冊 iOS 裝置](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md))。 您必須先建立設定檔，才能使用下列步驟指派設定檔。
 
-1. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
+1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2. 在 [Apple Configurator 序號] 刀鋒視窗中，選取您要指派以設定檔的序號，然後選取 [指派設定檔]。
+2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [Apple 註冊]。
 
-3. 在 [指派設定檔] 刀鋒視窗中，選取您要指派的設定檔，然後選取 [指派]。
+3. 在 [Apple Configurator 序號] 刀鋒視窗中，選取您要指派以設定檔的序號，然後選取 [指派設定檔]。
+
+4. 在 [指派設定檔] 刀鋒視窗中，選取您要指派的設定檔，然後選取 [指派]。
 
 ## <a name="delete-serial-numbers"></a>刪除序號
 您可以刪除先前所匯入的序號。 必須先取消註冊裝置，才能刪除序號。 當您移除序號之後，除非重新新增序號，否則將無法再透過設定助理使用 Apple Configurator。
@@ -70,9 +73,4 @@ Intune 可讓您從 Azure 入口網站中兩個的不同位置指派設定檔。
 **檢視序號的狀態**
 
 在 [Apple Configurator 序號] 刀鋒視窗中選取您要檢視狀態的序號，再檢視 [狀態]項目下方。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

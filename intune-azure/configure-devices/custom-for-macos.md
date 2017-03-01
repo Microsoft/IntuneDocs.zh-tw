@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 113572430f0ef82c9a6fa533e3d6fc17b86119cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 13648aa35057201ac7420e2f1d334aee206605fe
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-macos-devices-in-intune-azure-preview"></a>Intune Azure 預覽版中 macOS 裝置的自訂設定
+# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的自訂設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +38,4 @@ ms.openlocfilehash: 113572430f0ef82c9a6fa533e3d6fc17b86119cb
 確定您從 Apple Configurator 工具匯出的設定會與您部署 macOS 自訂原則之裝置上的 macOS 版本相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。
 
 您匯入的檔案將會顯示在刀鋒視窗的 [檔案內容] 區域中。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
