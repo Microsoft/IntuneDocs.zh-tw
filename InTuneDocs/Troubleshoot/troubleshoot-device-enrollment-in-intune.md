@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 **解決方式︰**與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
 
-當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步處理以重新連線，使用者會看到**正在嘗試同步...** 內嵌的通知。 
+當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步處理以重新連線，使用者會看到**正在嘗試同步...** 內嵌的通知。
 
   ![正在嘗試同步通知](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
   ![同步處理成功通知](./media/ios_cp_app_sync_successful_notification.png)
 
-如果同步處理失敗，使用者會在 iOS 公司入口網站應用程式中看到**無法同步**內嵌通知。 
+如果同步處理失敗，使用者會在 iOS 公司入口網站應用程式中看到**無法同步**內嵌通知。
 
   ![無法同步通知](./media/ios_cp_app_unable_to_sync_notification.png)
 
-若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定] 按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。 
+若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定] 按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。
 
   ![公司存取設定畫面](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
