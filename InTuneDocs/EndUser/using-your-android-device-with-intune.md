@@ -1,21 +1,26 @@
 ---
-title: "透過 Intune 使用 Android 裝置 | Microsoft Intune"
+title: "搭配 Intune 使用 Android 裝置 | Microsoft Docs"
 description: "使用者可以在已註冊至 Intune 的 Android 行動裝置上執行之工作的連結清單"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
+ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -23,23 +28,15 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 # <a name="using-your-android-device-with-intune"></a>透過 Intune 使用 Android 裝置
 
-針對使用者可在其受 Intune 管理裝置上執行的工作，本文包含所有這類工作的連結。 IT 系統管理員可以參考此資訊，查看使用者執行各種工作必需採取的步驟，這些工作會按照下列類別分組：
+您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
 
-- 公司入口網站應用程式安裝和 Intune 註冊
-- 註冊後的管理工作
-- 相容性問題
-
-## <a name="company-portal-app-installation-and-intune-enrollment"></a>公司入口網站應用程式安裝和 Intune 註冊
-
-本節中的資訊可協助使用者進行 Intune 公司入口網站安裝以及適用於 Android 裝置的裝置註冊。
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
 - [在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)
 - [建立工作設定檔並在 Intune 註冊您的裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>使用者在 Intune 註冊其裝置時可執行的工作
-
-在 Intune 中註冊使用者的 Android 裝置之後，本節中的資訊可協助使用者採取相關動作。
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>在 Intune 註冊您的裝置時可執行的工作
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-android.md)
 - [加密您的裝置](encrypt-your-device-android.md)
@@ -53,28 +50,4 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 - [如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [使用公司入口網站應用程式重設 Android 裝置會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-
-## <a name="steps-to-fix-device-and-compliance-issues"></a>修正裝置與相容性問題的步驟
-
-在 Intune 中註冊使用者的 Android 裝置時，本節中的資訊可協助使用者修正可能遇到的問題。
-
-- [使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [使用電子郵件將診斷資料記錄檔傳送給 IT 系統管理員](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [使用 USB 纜線將診斷資料記錄檔傳送給 IT 系統管理員](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [將註冊錯誤傳送給 IT 系統管理員](send-enrollment-errors-to-your-it-administrator-android.md)
-- [裝置沒有最基本必備的作業系統版本](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [裝置不符合最大的作業系統版本](device-doesnt-comply-with-maximum-operating-system-version-android.md)
-- [您的裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)
-- [您的裝置遺漏必要的憑證](your-device-is-missing-a-required-certificate-android.md)
-- [系統要求您關閉不明來源](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [系統要求您關閉 USB 偵錯](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [系統要求您開啟安全性威脅的掃描裝置](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
-- [您的裝置不符合最低安全性修補程式](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- [系統提示在您的 Android 裝置上安裝 Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
-- [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,45 +1,47 @@
 ---
-title: "從公司入口網站重新命名裝置 | Microsoft Intune"
+title: "從公司入口網站重新命名裝置 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
+# <a name="rename-your-device-from-the-company-portal-website"></a>從公司入口網站重新命名裝置
 
-# 從公司入口網站重新命名裝置
-
-如果決定要重新命名您的裝置，您可以從[公司入口網站](http://portal.manage.microsoft.com)遠端進行。 公司入口網站是可讓您管理已在 Intune 註冊之電腦和裝置的網頁，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的作業。
+您可以決定要重新命名裝置，以利識別。 您可以從[公司入口網站](http://portal.manage.microsoft.com)執行此工作。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。
 
 若要重新命名裝置：
 
-1.  開啟[公司入口網站](http://portal.manage.microsoft.com)，點選您想要變更名稱的裝置。
+1.    在[公司入口網站](http://portal.manage.microsoft.com)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
 
-2.  點選 **[重新命名]**。
+2. 在 [我的裝置] 頁面上，選取您想要重新命名的裝置名稱。
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  在目前裝置名稱出現的方塊中，輸入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
+3.    裝置會在快顯視窗中開啟。 點選 [重新命名] 按鈕。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+    ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
 
+4.  在裝置名稱出現的方塊中，鍵入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
 
-
-<!--HONumber=Sep16_HO3-->
-
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

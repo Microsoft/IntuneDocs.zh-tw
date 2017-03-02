@@ -4,7 +4,7 @@ description: "為 Microsoft Intune 的 Windows 裝置啟用行動裝置管理 (M
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -25,13 +27,13 @@ ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 使用下列其中一種方法設定 Windows 裝置註冊︰
 
-- **[自動向 Azure Active Directory Premium 註冊 Windows 10 及 Windows 10 行動裝置版](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**自動向 Azure Active Directory Premium 註冊 Windows 10 及 Windows 10 行動裝置版**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
  -  此方法僅用於 Windows 10 裝置與 Windows 10 行動裝置版裝置。
  -  您必須擁有 Azure Active Directory Premium 才能使用此方法。 否則，請使用 Windows 8.1 及 Windows Phone 8.1 適用的註冊方法。
  -  若選擇不啟用自動註冊，請使用 Windows 8.1 及 Windows Phone 8.1 適用的註冊方法。
 
 
-- **[透過設定 CNAME 來註冊 Windows 8.1 及 Windows Phone 8.1](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+- [**透過設定 CNAME 來註冊 Windows 8.1 及 Windows Phone 8.1**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
  - 若要註冊 Windows 8.1 及 Windows Phone 8.1 裝置，必須使用此方法。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -45,9 +47,9 @@ ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 2. **建立 CNAME** (選用)<br>
 建立公司網域的 **CNAME** DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
 
-    雖然建立 CNAME DNS 項目並非必要，但 CNAME 記錄可以方便使用者進行註冊。 若找不到任何註冊 CNAME 記錄，會提示使用者手動輸入下列 MDM 伺服器名稱：enrollment.manage.microsoft.com。    
 
-    如果您目前在 DNS 中有 CNAME，它會將EnterpriseEnrollment.contoso.com 重新導向到 manage.microsoft.com，我們建議您在 DNS 中將它取代為把 EnterpriseEnrollment.contoso.com 重新導向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建議進行這項變更，因為 manage.microsoft.com 端點即將取代為未來版本中的註冊。
+    雖然建立 CNAME DNS 項目並非必要，但 CNAME 記錄可以方便使用者進行註冊。 若找不到任何註冊 CNAME 記錄，將會提示使用者手動輸入下列 MDM 伺服器名稱：https://enrollment.manage.microsoft.com。
+
 
     CNAME 資源記錄必須具有下列資訊：
 
@@ -72,12 +74,9 @@ ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
     如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
 
+如需終端使用者工作的詳細資訊，請參閱下列文章：      - [使用 Microsoft Intune 之終端使用者經驗的相關資源](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [適用於 Windows 裝置的終端使用者指引](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

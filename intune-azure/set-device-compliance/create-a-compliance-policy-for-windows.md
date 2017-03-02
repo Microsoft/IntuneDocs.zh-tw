@@ -1,5 +1,6 @@
 ---
-title: "如何建立 Windows 的合規性政策 | Intune Azure 預覽版 | Microsoft Docs"
+title: "如何建立 Windows 的合規性政策"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何為 Windows 裝置建立合規性政策。"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 58ed00fe7070d81d9d64c70ff7ffe9854c05eac9
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a50f4abea58a39b18347d03bb1553856d592c93
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -109,7 +112,7 @@ ms.openlocfilehash: 58ed00fe7070d81d9d64c70ff7ffe9854c05eac9
 ## <a name="device-health-settings"></a>裝置健全狀況設定
 
 - **需要裝置回報為狀況良好：**您可以設定規則，要求在新的或現有的合規性政策中，**Windows 10 Mobile** 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
-  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，以及協助確保電腦未遭到竄改，即使電腦無人看管、遺失或遭竊也是一樣。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
+  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
   - **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測是否將未簽署的驅動程式或系統檔案載入到核心；或者，以具有系統管理員權限的使用者帳戶所執行的惡意軟體是否已修改系統檔案。
   - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
 
@@ -164,7 +167,7 @@ ms.openlocfilehash: 58ed00fe7070d81d9d64c70ff7ffe9854c05eac9
 ## <a name="device-health-settings"></a>裝置健全狀況設定
 
 - **需要裝置回報為狀況良好︰** - Windows 10 裝置上支援。 您可以設定規則，要求在新的或現有的合規性政策中，Windows 10 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
-  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，以及協助確保電腦未遭到竄改，即使電腦無人看管、遺失或遭竊也是一樣。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
+  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
   - **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測是否將未簽署的驅動程式或系統檔案載入到核心；或者，以具有系統管理員權限的使用者帳戶所執行的惡意軟體是否已修改系統檔案。
   - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
   - **啟用早期啟動反惡意程式碼：**早期啟動反惡意程式碼 (ELAM) 可在啟動電腦時，以及協力廠商驅動程式初始化之前，保護網路中的電腦。
@@ -191,9 +194,4 @@ ms.openlocfilehash: 58ed00fe7070d81d9d64c70ff7ffe9854c05eac9
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
