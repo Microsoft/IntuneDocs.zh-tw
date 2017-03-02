@@ -1,5 +1,6 @@
 ---
-title: "設定 Office 365 應用程式的基本資料管理 - Intune Azure 預覽版 | Microsoft Docs"
+title: "設定 Office 365 應用程式的基本資料管理 - Intune Azure Preview"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰管理 Office 365 應用程式精靈的支援文件。"
 keywords: 
 author: lindavr
@@ -14,9 +15,11 @@ ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4c45b7fc8a520d869f21717fea36e27b242cf39
-ms.openlocfilehash: 7cff88f0365cff1de133fdafdce2bd45b36d551e
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -130,9 +133,4 @@ iOS 與 Android 的加密運作方式不相同。
 
 ## <a name="next-steps"></a>後續步驟
 深入了解[應用程式保護原則](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

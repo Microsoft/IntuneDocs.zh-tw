@@ -1,5 +1,6 @@
 ---
-title: "適用於內部部署 EAS 的 Exchange Connector | Intune Azure 預覽版 | Microsoft Docs"
+title: "適用於內部部署 EAS 的 Exchange Connector"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：Exchange ActiveSync MDM - 使用 Connector 工具啟用 Intune 管理主控台與內部部署 Exchange Server 之間的通訊"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 2871136fc15f945fe5b757a6e4364d3980832e37
-ms.openlocfilehash: 92e4a15630c70ac80dd07684baafbbd15cd2f38c
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -133,9 +136,4 @@ ms.openlocfilehash: 92e4a15630c70ac80dd07684baafbbd15cd2f38c
 
 ## <a name="next-steps"></a>後續步驟
 [建立 Exchange 內部部署的條件存取原則](create-conditional-access-policy-for-exchange-on-premises.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

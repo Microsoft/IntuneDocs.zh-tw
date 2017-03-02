@@ -1,5 +1,6 @@
 ---
-title: "開始進行裝置合規性 | Intune Azure 預覽版 | Microsoft Docs"
+title: "開始使用裝置相容性"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰使用本主題可了解需要哪些先決條件，才可在 Microsoft Intune 中建立合規性政策"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -79,9 +82,4 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 [建立 iOS 的合規性政策](create-a-compliance-policy-for-ios.md)
 
 [建立 Windows 的合規性政策](create-a-compliance-policy-for-windows.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

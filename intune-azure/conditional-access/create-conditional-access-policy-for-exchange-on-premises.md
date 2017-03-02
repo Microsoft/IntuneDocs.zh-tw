@@ -1,5 +1,6 @@
 ---
-title: "Exchange 內部部署的條件式存取原則 | Intune Azure 預覽版 | Microsoft Docs"
+title: "Exchange 內部部署的條件存取原則"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰如何在 Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 設定條件式存取"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ Windows 8.1 及更新版本上的**郵件**應用程式 (必須已向 Intune 註
   - 當您設定為禁止存取時，將會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為符合規範，即可存取 Exchange 內部部署。 因為非執行 Samsung KNOX Standard 的 Android 裝置不支援此設定，所以一律無法 Exchange 內部部署。
 10. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受管理的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且合規的裝置進行存取。 選擇 [確定]，以儲存設定。
 11. 在 [內部部署] 刀鋒視窗中按一下 [儲存]，以儲存條件式存取原則。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

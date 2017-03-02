@@ -1,57 +1,42 @@
 ---
-title: "手動同步處理您的 Windows 裝置 | Microsoft Intune"
+title: "手動同步您的 Windows 裝置 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
-如果您的應用程式安裝所花費的時間太長，您可以嘗試手動同步您的 Windows 裝置。 手動同步可能有助於加速安裝。
 
-只支援下列版本。 如果沒有列出您的裝置，不支援同步。 請使用適合您擁有之裝置類型的指示。
+有時嘗試在 Windows 裝置上安裝應用程式，所花的時間比您以為的長。 如果發生這種情況，您可以嘗試手動同步處理您的 Windows 裝置。 同步處理有助於加速安裝。
 
-* [Windows 10 行動裝置版](#windows-10-mobile)
-* [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note]
+> 如果您使用的網路速度較慢，或同時下載內容的裝置數量較多，安裝應用程式可能需時較長。
 
+下列 Windows 版本可以手動同步處理。 如果您的裝置不幸使用不同版本的 Windows，就無法啟動手動同步處理。
 
-## <a name="windows-10-mobile"></a>Windows 10 Mobile
-手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
-
-1. 移至 [所有應用程式] > [設定] > [帳戶]。
-
-    ![選擇 [設定] 畫面上的帳戶](./media/win10m-sync-1-settings-accounts.png)
-
-2. 選擇 [公司存取]。
-
-    ![選擇 [公司存取] 作為帳戶類型](./media/win10m-sync-2-work-access.png)
-
-3. 在 [註冊裝置管理] 下方，選擇您的公司名稱。
-
-    ![選擇用於裝置管理的公司名稱](./media/win10m-sync-3-tap-comp-name.png)
-
-4. 選擇**同步**圖示。
-
-    ![選擇同步圖示](./media/win10m-sync-4-tap-sync.png)
-
-    「我們正在同步您的帳戶」訊息會顯示在畫面頂端。 [同步] 按鈕會呈現灰色，直到您的裝置完成同步為止。
+* [同步處理 Windows 10 桌面](#windows-10-desktop)
+* [同步處理 Windows 10 Mobile](#windows-10-mobile)
+* [同步處理 Windows Phone 8.1](#windows-phone-81)
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
 有多個版本的 Windows 10，因此有兩組步驟。 若要找出要使用的步驟，請查看螢幕擷取畫面，然後依照您在裝置上看到的步驟。
@@ -109,6 +94,27 @@ ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
    按鈕會變成灰色，直到同步完成為止。
 
+   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
+   手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
+
+   1. 移至 [所有應用程式] > [設定] > [帳戶]。
+
+       ![選擇 [設定] 畫面上的帳戶](./media/win10m-sync-1-settings-accounts.png)
+
+   2. 選擇 [公司存取]。
+
+       ![選擇 [公司存取] 作為帳戶類型](./media/win10m-sync-2-work-access.png)
+
+   3. 在 [註冊裝置管理] 下方，選擇您的公司名稱。
+
+       ![選擇用於裝置管理的公司名稱](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. 選擇**同步**圖示。
+
+       ![選擇同步圖示](./media/win10m-sync-4-tap-sync.png)
+
+       「我們正在同步您的帳戶」訊息會顯示在畫面頂端。 [同步] 按鈕會呈現灰色，直到您的裝置完成同步為止。
+
 ## <a name="windows-phone-81"></a>Windows Phone 8.1
 手動同步處理您的 Windows Phone 8.1 裝置來加速緩慢的應用程式安裝：
 
@@ -127,9 +133,4 @@ ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
    「我們正在同步您的帳戶」訊息會顯示在畫面頂端，直到您的裝置完成同步為止。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

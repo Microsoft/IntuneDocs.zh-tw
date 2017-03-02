@@ -1,5 +1,6 @@
 ---
-title: "建立 Android for Work 的合規性政策 | Intune Azure 預覽版 | Microsoft Docs"
+title: "建立 Android for Work 的合規性政策"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何為 Android for Work 裝置建立合規性政策。"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 48eaa3cbe1ff4e3fb18bfa762a341dbe74a7adce
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -41,7 +44,7 @@ ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
 | **最高 OS 版本** | 已隔離 |
 | **Windows 健康情況證明** |不適用 |
 
-**已補救** = 裝置作業系統施行合規性  (例如強制使用者設定 PIN 碼)。
+**已補救** = 裝置作業系統強制符合規範。 (例如強制使用者設定 PIN 碼)。
 
 **已隔離** = 裝置作業系統不強制符合規範。 (例如，Android 裝置不強制使用者為裝置加密。)裝置不相容時，會採取下列動作︰
 
@@ -101,7 +104,7 @@ ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
 
 - **不得破解裝置或刷機：**如果您啟用這個設定，破解的裝置會評估為不相容。
 - **裝置必須防止從不明來源安裝應用程式**︰您不需要進行此設定，因為 Android for Work 裝置一律會限制來自不明來源的安裝。 。
-- **需要停用 USB 偵錯**︰因為 Android for Work 裝置已停用 USB 偵錯，所以您無須設定此設定。
+- **需要停用 USB 偵錯**︰因為 Android for Work 裝置已停用 USB 偵錯，所以您無須進行此設定。
 - **Android 安全性修補程式等級下限**︰使用此設定可指定 Android 修補程式等級下限。 未至少達此修補程式等級的裝置將視為不相容。 日期的格式必須指定為︰ YYYY-MM-DD。
 - **必須啟用裝置威脅防護**：使用此設定作為合規性條件來評估 Lookout MTP 解決方案的風險。 選取允許的最高威脅等級，這會是下列其中一項：
   - **無 (受保護)**：這是最安全的選項。 這表示裝置不能受到任何威脅。 如果在裝置上偵測到任何等級的威脅，則會評估為不相容。
@@ -119,9 +122,4 @@ ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

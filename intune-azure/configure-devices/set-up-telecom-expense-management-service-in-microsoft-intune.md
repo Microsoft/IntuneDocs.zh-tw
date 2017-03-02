@@ -1,5 +1,6 @@
 ---
-title: "設定的電信費用管理服務 | Intune Azure 預覽版 | Microsoft Docs"
+title: "設定電信費用管理服務"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰設定 Saaswedo 電信費用管理服務，與 Intune 相互整合。"
 keywords: Saaswedo
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
-ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -38,7 +40,7 @@ Intune 與 Datalert 整合可讓您集中設定、監視及實施漫遊與國內
 - Samsung Knox
 - iOS 8.0 和更新版本
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 訂閱 Microsoft Intune，並存取 Azure 入口網站，目前都是公用預覽版本。
 - 訂閱 Datalert 電信費用管理服務
@@ -57,7 +59,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 1. 使用系統管理員認證來登入 Datalert 管理主控台。
 
-2. 在 Datalert 管理主控台上，移至 [設定] 索引標籤，然後移至 [MDM 設定] 區段。
+2. 在 Datalert 管理主控台上，移至 [設定] 索引標籤，然後移至 [MDM 設定]。
 
 3. 選取 [解除鎖定]，讓您可以在該頁面上輸入設定。
 
@@ -87,23 +89,23 @@ Intune 目前整合了下列電信費用管理提供者︰
 
    尋找頁面頂端的 [使用中] 連線狀態。
 
-  ![顯示 Datalert 連線狀態 [使用中] 的 Azure 入口網站](../media/tem-azure-portal-enable-service.png)
+  ![顯示 [使用中] Datalert 連線狀態的 Azure 入口網站](../media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步驟 3︰將 Datalert 應用程式部署到公司註冊的裝置
 
-為了確保僅收集公司擁有之程式碼行的資料使用量，您需要在 Intune 中建立裝置分類，然後只將 Datalert 應用程式的目標設為公司電話。 完成下列子區段中的步驟。
+為了確保僅收集公司擁有之程式碼行的資料使用量，您需要在 Intune 中建立裝置分類，然後只將 Datalert 應用程式的目標設為公司電話。 完成下列小節中的步驟。
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>定義裝置分類以及對應至分類的裝置群組。
 
 根據組織需求，您需要建立至少兩個裝置分類 (例如，公司和個人)，並建立每個分類的動態裝置群組。 您可以視需要為組織建立更多的分類。 
 
-在註冊期間，會向使用者顯示這些分類。 根據使用者所選擇的分類，註冊的裝置將會移至對應的裝置群組。 如需如何建立裝置分類的步驟，請參閱[Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (將裝置對應至群組)。
+在註冊期間，會向使用者顯示這些分類。 根據使用者所選擇的分類，註冊的裝置將會移至對應的裝置群組。 如需如何建立裝置分類的步驟，請參閱 [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (將裝置對應到群組)。
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-dynamic-membership-rules.png)
 
 #### <a name="create-the-datalert-app-in-intune"></a>在 Intune 中建立 Datalert 應用程式
 
-請遵循下列步驟，以在 Intune 中建立每個平台的 Datalert 應用程式。 iOS 是用作這些步驟中的範例。
+請遵循下列步驟，以在 Intune 中建立每個平台的 Datalert 應用程式。 iOS 是作為這些步驟中的範例。
 
 1. 在 Azure 入口網站的 [Intune] 刀鋒視窗上，選擇 [管理應用程式]。
 
@@ -113,7 +115,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 4. 選取應用程式類型。 例如，若是 iOS，您需要選取 [iOS 市集應用程式]。
 
-5. 在 [搜尋 App Store] 中，於搜尋視窗中輸入 **Datalert** 來尋找 Datalert 應用程式。
+5. 在 [搜尋 App Store] 中，於搜尋視窗中鍵入 **Datalert** 來尋找 Datalert 應用程式。
 
 6. 選取 [Datalert] 應用程式，然後選取 [確定]。
 
@@ -131,7 +133,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 3. 選擇 [選取群組]，並遵循步驟來選取公司裝置群組。
 
-4. 選擇是要讓應用程式安裝成為群組的必要還是選擇性項目。 下列範例螢幕擷取畫面顯示所需的安裝，這表示使用者必須在註冊其裝置之後安裝 Datalert 應用程式安裝。
+4. 選擇是要讓應用程式安裝成為群組的必要或選擇性項目。 下列範例螢幕擷取畫面顯示所需的安裝，這表示使用者必須在註冊其裝置之後安裝 Datalert 應用程式安裝。
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-assign-datalert-app-to-device-group.png)
 
@@ -139,7 +141,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 您現在已設定 Intune 和 Datalert 服務彼此通訊。 您現在需要將公司付費電話線路新增至 Datalert 主控台，並定義任何行動或漫遊使用情況違規的臨界值和動作。 
 
-若要設定這些項目，請移至 [Microsoft Intune 的 Datalert 設定頁面](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)，並遵循安裝精靈之 [設定] 索引標籤下的步驟。
+若要設定這些項目，請移至 [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) (Microsoft Intune 的 Datalert 設定頁面)，並遵循安裝精靈之 [設定] 索引標籤下的步驟。
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-add-phone-lines-to-datalert-console.png)
 
@@ -164,5 +166,5 @@ Datalert 服務現在已上線執行，會開始監視數據使用量，並停�
 
 目前只會在 Saaswedo 的 Datalert 管理主控台中提供數據使用量報告。
 
-即將新增使用者安裝 Datalert 應用程式所遵循的指示。
+即將新增終端使用者安裝 Datalert 應用程式所遵循的指示。
 

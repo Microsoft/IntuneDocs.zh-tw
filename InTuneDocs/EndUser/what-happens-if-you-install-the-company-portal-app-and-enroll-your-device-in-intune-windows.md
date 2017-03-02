@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 
 -   存取公司的網路、電子郵件與工作檔案。
 
--   從公司入口網站取得公司應用程式。 (若為 Windows 7 及 Windows Vista，可以從公司入口網站取得公司應用程式)。
+-   從公司入口網站取得公司應用程式。 (__注意__：若為 Windows 7 及 Windows Vista，您只能從公司入口網站取得公司應用程式)。
 
 -   自動設定公司或學校的電子郵件帳戶。
 
@@ -67,6 +68,7 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 -  您的 IT 系統管理員可以在您的電腦上安裝應用程式並加以更新。
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>在註冊裝置後每隔八小時會發生的事
+
 已註冊的裝置每隔大約八小時將會：
 
 -   下載您 IT 系統管理員提供的原則或應用程式更新。
@@ -76,9 +78,4 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 -   傳送任何公司應用程式清查更新。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

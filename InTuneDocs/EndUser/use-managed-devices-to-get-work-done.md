@@ -1,11 +1,11 @@
 ---
-title: "使用受管理的裝置完成工作 |Microsoft Docs"
-description: "深入了解公司入口網站應用程式。"
+title: "使用受管理的裝置完成工作 | Microsoft Docs"
+description: "了解使用 Intune 註冊管理您的裝置代表的意義。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,26 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: jeffgilb
+ms.reviewer: robstack
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 1ca19828902585bf6011713ab214619b7f8c12c5
+ms.sourcegitcommit: d05b3200d145aa535216dc81c62cc73b022528f2
+ms.openlocfilehash: ae364b9e77876612be4eb6d68b8b57a5d3be9db2
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="using-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
-Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
+# <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
+Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
 
 當您註冊裝置交由 Intune 管理之後，您的 IT 部門就能管理這些工作或學校的資源，從而保護裝置的安全，並讓您、其員工可以使用其慣用的裝置完成工作。 透過公司入口網站註冊裝置交由管理是完成此作業最主要的方式。
 
+## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>當我在 Intune 中註冊裝置時，我的公司可以看到哪些資訊？
+貴公司的 IT 部門可以看到與工作相關，但不與您的個人資訊相關的資訊。 如果您要註冊在公司使用個人裝置時，知道這點特別重要。 我們[在使用者說明的下一篇文章細分他們可以看到及不能看到的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+
+## <a name="how-do-i-get-the-company-portal"></a>如何取得公司入口網站？
 您可以使用兩種不同的方式來取得公司入口網站︰
 
 - 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您的 IT 系統管理員也可以為您安裝公司入口網站應用程式。
@@ -57,7 +63,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 
 - [安裝 Android 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [安裝 iOS 與 macOS 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [安裝 Windows 版的公司入口網站應用程式](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [安裝 Windows 版的公司入口網站應用程式](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>您可以新增哪種電腦或裝置到公司入口網站？
 -   使用 iOS (例如 iPhone 和 iPad) 及 macOS (例如 MacBook 和 iMac) 的 Apple 裝置
@@ -71,7 +77,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>您可以從公司入口網站移除電腦或裝置嗎？
 您可以從公司入口網站移除或重設電腦或裝置。 [移除] 與 [重設] 不同。
 
-*移除*電腦或裝置時，即會從 Intune 取消註冊裝置。 取消註冊之後，將無法再從該裝置存取公司入口網站，而且有些公司資料也會從您的裝置上移除。 若要查看如何從公司入口網站移除裝置，請選擇下列其中一個連結︰
+從公司入口網站「移除」電腦或裝置時，即會從 Intune 取消註冊裝置。 取消註冊之後，將無法再從該裝置存取公司入口網站，而且有些公司資料也會從您的裝置上移除。 若要查看如何從公司入口網站移除裝置，請選擇下列其中一個連結︰
 
 - [取消註冊您的 Android 裝置](unenroll-your-device-from-intune-android.md)
 - [取消註冊您的 iOS 或 macOS 裝置](unenroll-your-device-from-intune-ios.md)
@@ -79,21 +85,19 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 
 當您*重設*電腦或裝置時，公司入口網站會嘗試將電腦或裝置重設為製造商的預設設定。 重設裝置時，會移除裝置中的所有公司和個人資料！ 如果您遺失您的裝置，則也可以從公司入口網站進行遠端重設。
 
-若要查看如何重設裝置，請選擇下列其中一個連結︰
+您可以在這裡找出如何重設您的裝置︰
 
-- [重設 (清除) 您的 Android 裝置](reset-erase-your-lost-or-stolen-device-android.md)
-- [重設 (清除) 您的 iOS 或 macOS 裝置](reset-erase-your-lost-or-stolen-device-ios.md)
-- [重設您的 Windows 裝置](reset-erase-your-lost-or-stolen-device-windows.md)
-- [從公司入口網站重設裝置](reset-your-device-cpwebsite.md)
+- [從公司入口網站重設 (清除) 裝置](reset-erase-your-device-cpwebsite.md)
 
 ## <a name="what-if-i-cant-see-my-device-in-the-company-portal"></a>如果公司入口網站看不到我的裝置怎麼辦？
 您必須先將裝置新增到公司入口網站，才能看到該裝置。 前往您系統管理員建議的公司入口網站，並遵循您裝置適用的步驟。 此外也無法再看到您公司所擁有及管理的裝置。
 
-## <a name="if-you-have-questions-contact-your-it-admin"></a>如有任何問題，請連絡您的 IT 系統管理員
-如果您需要協助，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+## <a name="where-else-can-i-go-for-help"></a>我還能去哪裡尋求協助？
+Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供一份對於 Intune 支援的每個平台，可以嘗試解決可能遭遇之問題的方式清單。
 
+- [修正 Android 裝置常見的問題](troubleshoot-your-device-android.md)
+- [修正 iOS 裝置常見的問題](troubleshoot-your-device-ios.md)
+- [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-
-<!--HONumber=Feb17_HO2-->
-
+您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您的 IT 管理員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](http://portal.manage.microsoft.com)中找到他們的連絡資訊。
 

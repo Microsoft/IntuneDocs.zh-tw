@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
     注意：在某些電話上，您需要選擇 [儲存體] &gt; 「Storage encryption」 (儲存體加密) 或 [儲存體] &gt; 「Lock screen and security」 (鎖定螢幕和安全性) &gt; [其他安全性設定] 來尋找 [加密] 選項。
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
+
+> [!Note]
+> 無法加密特定的 Android 裝置。 如需詳細資訊，請參閱[這裡](your-device-appears-encrypted-but-cp-says-otherwise-android.md)。
 
 ### <a name="what-to-do-if-you-have-issues"></a>發生問題時的解決方式
 **問題**：您已加密您的裝置，而看到下列其中一項：
@@ -64,10 +68,6 @@ ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
     5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
+
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 [Microsoft Android 小組](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

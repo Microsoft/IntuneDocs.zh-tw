@@ -1,11 +1,11 @@
 ---
-title: "行動裝置註冊先決條件 | Microsoft Intune"
+title: "行動裝置註冊必要條件 | Microsoft Docs"
 description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中的行動裝置管理先決條件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可讓員工向 Intune 註冊其行動裝置需要下列步驟。 需要這些相同的步驟才能管理公司擁有的裝置。
 
 |步驟|詳細資料|  
@@ -47,8 +52,7 @@ ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
 
 >[!IMPORTANT]
-> 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後便無法再做變更。
-
+> 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後，您一定要有 Microsoft 支援服務的協助才能變更它。 請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)以取得相關指示。
 
 
 1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [系統管理] &gt; [行動裝置管理]。
@@ -147,8 +151,63 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 - [新增應用程式](add-apps.md)和[部署應用程式](deploy-apps.md)至受管理的裝置
 - [建立裝置相容性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)和[根據相容性限制存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>選擇錯誤的 MDM 授權單位設定時該怎麼辦
 
+如果您決定您所選擇的 MDM 授權單位設定錯誤並且需要變更它，您必須連絡 Microsoft 支援服務。 您無法自行變更這些設定。 在連絡 Microsoft 支援服務之前，請檢閱下列資訊，這說明 Microsoft 支援服務進行變更時，需要您提供的資訊。
 
-<!--HONumber=Dec16_HO2-->
+有三種方式，可以重設 MDM 授權單位。 在您的支援要求，您必須選擇適用於您情況的方式。 如果未列出您所要求的案例，請後續追蹤 Microsoft 支援服務。
 
+Microsoft 支援服務將會要求您確認下列資訊︰
+
+- 租用戶識別碼︰用來登入服務的網域 (例如，intune.onmicrosoft.com)
+- 您想要變更為的 MDM 授權單位
+- 確認您已完成必要步驟，如下所示
+
+如果您使用共存，則需要確認 Intune 和 Office 365 的檢查清單。
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>將 MDM 授權單位從 Intune 重設為 Configuration Manager
+
+連絡 Microsoft 支援服務以重設 MDM 授權單位之前，請先完成這些步驟。
+
+- 從 Intune 管理主控台中淘汰所有裝置。 請勿嘗試從裝置本身淘汰裝置。 
+- 刪除 Service To Service Connector (位於 [管理] > [行動裝置管理] > [Microsoft Exchange])，或如果您已設定，請停用 Exchange Connector。 
+- 從 [管理] > [裝置註冊管理員] 移除裝置註冊管理員角色。
+- 在 [管理] > [行動裝置管理] > [裝置群組對應] 中關閉裝置群組對應。
+- 從 [管理] > [行動裝置管理] > [Windows] > [側載金鑰] 刪除側載金鑰。
+- 在 [管理] > [行動裝置管理] > [iOS] 頁面中，刪除 iOS APNs 憑證。
+- 在 [管理] > [行動裝置管理] > [iOS] 頁面中，刪除 iOS DEP 權杖。
+- 在 [原則] > [設定原則] 下，刪除針對 MDM 裝置的所有原則。
+- 在 [應用程式] > [受管理的軟體] 中，刪除針對 MDM 裝置的所有已發佈應用程式。
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>將 MDM 授權單位從 Configuration Manager 重設為 Intune
+
+連絡 Microsoft 支援服務以重設 MDM 授權單位之前，請先完成這些步驟。
+
+- 從 Configuration Manager 主控台中淘汰 (作為行動裝置管理的) 所有裝置。 請勿嘗試從裝置本身淘汰裝置。 
+- 從 Intune 使用者群組移除所有使用者。 將 Intune 訂閱指向空的使用者集合，或從目標集合移除所有使用者。  確認 CloudUserSync.log 中已移除使用者。 
+- 取消核取 iOS 平台，以清除 APNs 憑證。
+- 刪除針對 MDM 裝置的所有已發佈應用程式。
+- 刪除針對 MDM 裝置的所有原則。 
+- 從 Configuration Manager 主控台移除 Windows Intune 連接器 (僅適用於 R2 SP1 或以下版本)。
+-以滑鼠右鍵按一下訂閱，然後選取 [刪除]，移除 Intune 訂閱。
+- 重新啟動 SMS Executive 服務。
+- 提供我們一些範例使用者，以便我們可以驗證，在此程序完成之後，即已移除 Configuration Manager 授權。
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>將 MDM 授權單位從 Office 365 重設為 Configuration Manager
+
+1. 瀏覽至 [https://protection.office.com](https://protection.office.com)。
+2. 選取 [安全性原則] 索引標籤，然後選取 [裝置管理]。 
+3. 藉由選擇 [選擇性抹除] 淘汰所有裝置。 請勿嘗試從裝置本身淘汰裝置。 如果已停用選擇性抹除，則不需要進行其他動作。
+4. 選取 [安全性原則] 索引標籤，然後選取 [裝置安全性原則]。 
+5. 針對所有現有的原則選取 [刪除]。 如果原則處於暫止狀態，則不需要進行其他動作。
+
+>[!NOTE]
+>IOS APsN 憑證無法刪除，而且仍然附加到帳戶。 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>MDM 授權單位重設的後續步驟
+
+一旦 Microsoft 支援服務驗證適用檢查清單上的項目，重新設定 MDM 授權單位可能需要多達三個工作天，但通常一天內就會發生。 
+
+>[!IMPORTANT]
+>請勿嘗試設定您的訂閱，直到 Microsoft 支援服務確認重設已順利完成！ 過早設定可能會造成損毀及/或影響您使用 Intune 服務。 
 

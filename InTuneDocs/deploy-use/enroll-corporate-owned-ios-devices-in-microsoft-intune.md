@@ -2,10 +2,10 @@
 title: "註冊屬公司擁有的 iOS 裝置 | Microsoft Docs"
 description: "使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -49,7 +50,7 @@ Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上�
 - **直接註冊**：建立 Apple Configurator 相容的檔案以供裝置期間使用。 註冊的裝置未重設為原廠值，但不具有任何使用者關係。 此方法需要系統管理員透過 USB 將 iOS 裝置連接到執行 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 的 Mac 電腦以註冊裝置。 如需詳細資訊，請參閱[使用 Apple Configurator 和直接註冊來註冊 iOS 裝置](ios-direct-enrollment-in-microsoft-intune.md)。
 
 ## <a name="use-the-device-enrollment-program-dep"></a>使用裝置註冊方案 (DEP)
-DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置上。 當使用者在裝置上執行設定助理時，該裝置便會在 Intune 中註冊。  透過 DEP 註冊的裝置不能由使用者取消註冊。 如需詳細資訊，請參閱[註冊裝置註冊方案 iOS 裝置](ios-device-enrollment-program-in-microsoft-intune.md)。
+DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置上。 當使用者在裝置上執行設定助理時，該裝置便會在 Intune 中註冊。 如需詳細資訊，請參閱[註冊裝置註冊方案 iOS 裝置](ios-device-enrollment-program-in-microsoft-intune.md)。
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>在已註冊 DEP 或 Apple Configurator 的裝置上使用公司入口網站
 
@@ -91,9 +92,4 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
