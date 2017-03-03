@@ -1,11 +1,11 @@
 ---
-title: "限制存取 SharePoint Online | Microsoft Intune"
+title: "保護 SharePoint Online | Microsoft Docs"
 description: "使用條件式存取保護與控制 SharePoint Online 上的公司資料存取。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 條件式存取來控制對於 SharePoint Online 上檔案的存取。
 條件式存取有兩個元件：
 - 裝置合規性原則，裝置必須符合此原則才算符合規範。
 - 條件式存取原則，其中您要指定裝置必須符合才能存取服務的條件。
-若要深入了解條件式存取如何運作，請參閱[限制存取電子郵件、O365 和其他服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
+若要深入了解條件式存取如何運作，請參閱[限制電子郵件、O365 和其他服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主題。
 
 您要向使用者部署合規性及條件式存取原則。 使用者用來存取服務的所有裝置都會經過檢查，以確定符合原則規範。
 
@@ -66,7 +70,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 或更新版本
 - Windows Phone 8.1 和更新版本
 
-您可以在 **iOS** 和 **Android** 裝置從瀏覽器進行存取時，限制存取 SharePoint Online。 只允許從符合規範裝置上的支援瀏覽器存取︰
+您可以在 **iOS** 和 **Android** 裝置從瀏覽器進行存取時，限制 SharePoint Online 的存取。 只允許從符合規範裝置上的支援瀏覽器存取︰
 * Safari (iOS)
 * Chrome (Android)
 * Intune 受管理的瀏覽器 (iOS 以及 Android 5.0 和更新版本)
@@ -140,7 +144,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
         用來存取 **SharePoint Online** 的任何裝置都必須在 Intune 中註冊並符合原則規範。 使用**新式驗證**的任何用戶端應用程式都必須遵守條件式存取原則。 如果 Intune 目前不支援此平台，則會禁止存取 **SharePoint Online**。
 
         選取 [所有平台] 選項表示不論用戶端應用程式所回報的平台為何，Azure Active Directory 都會將此原則套用至所有驗證要求。 所有平台都必須經過註冊並成為符合規範，除了︰
-        *   必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
+        *    必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
         * 不支援例如 Mac 的平台。 不過，使用來自這些平台之新式驗證的應用程式仍然會遭到封鎖。
 
     -   **特定平台**
@@ -150,8 +154,6 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
      若是 Windows 電腦，則電腦必須已加入網域，或已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊且符合規範。 您可以設定下列要求：
 
      -   **裝置必須已加入或與網域相容。** 選擇此選項時，會要求電腦必須已加入網域，或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中設定的原則。 如果電腦不符合上述任一需求，則會提示使用者向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置。
-
-     -   **裝置必須已加入網域。** 選擇此選項時，會要求電腦必須已加入網域，才能存取 Exchange Online。 如果電腦未加入網域，則會禁止對電子郵件的存取，並提示使用者連絡 IT 系統管理員。
 
      -   **裝置必須相容。** 選擇此選項時，會要求電腦必須在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中註冊且符合規範。 如果電腦未經過註冊，則會顯示註冊指示的訊息。
 
@@ -196,6 +198,6 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

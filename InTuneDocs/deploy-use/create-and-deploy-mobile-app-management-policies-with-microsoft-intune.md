@@ -1,9 +1,9 @@
 ---
-title: "建立和部署 MAM 原則 | Microsoft Intune"
+title: "建立和部署 MAM 原則 | Microsoft Docs"
 description: "使用本主題中的逐步指示來建立及部署行動應用程式管理原則。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -13,32 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署行動應用程式管理原則
-不論裝置是否由 Intune 管理，行動應用程式管理 (MAM) 原則都可以套用至這些裝置上執行的應用程式。 如需 MAM 原則的運作方式詳細資訊，以及 Intune MAM 原則支援的案例，請參閱[使用行動應用程式管理原則來保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
-本主題描述在 **Azure 入口網站**中建立 MAM 原則的程序 。 Azure 入口網站是用於建立 MAM 原則的新管理主控台，並建議您使用這個入口網站建立 MAM 原則。 Azure 入口網站支援下列 MAM 案例：
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題描述在 **Azure 入口網站**中建立應用程式保護原則的程序 。 Azure 入口網站是用於建立應用程式保護原則的新管理主控台，並建議您使用這個入口網站建立應用程式保護原則。 Azure 入口網站支援下列 MAM 案例：
+
 - Intune 中註冊的裝置。
 - 協力廠商 MDM 解決方案管理的裝置。
 - 未受任何 MDM 解決方案 (BYOD) 管理的裝置。
 
 >[!IMPORTANT]
-如果您目前正在使用 **Intune 管理主控台**來管理您的裝置，請考慮下列項目︰
+以下是使用 **Intune 管理主控台**來管理裝置時的一些考量：
 
-> * 您可以建立 MAM 原則，該原則使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)支援 Intune 中註冊之裝置的應用程式。
-> * 在 Intune 管理主控台中建立的 MAM 原則無法匯入到 Azure 入口網站中。  您必須在 Azure 入口網站中重新建立 MAM 原則。
+> * 您可以建立應用程式保護原則，該原則使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)支援 Intune 中註冊之裝置的應用程式。
+> * 在 Intune 管理主控台中建立的應用程式保護原則無法匯入到 Azure 入口網站。  您必須在 Azure 入口網站中重新建立應用程式保護原則。
 
-> * 您可能看不到 Intune 管理主控台中的所有 MAM 原則設定。 Azure 入口網站是建立 MAM 原則的新管理主控台。
+> * 您在 Intune 管理主控台中可能看不到所有應用程式保護原則設定。 Azure 入口網站是建立應用程式保護原則的新管理主控台。
 
-> * 若要部署受管理應用程式，您必須在 Intune 管理主控台中建立 MAM 原則。 在此情況下，您可能想要在 Intune 管理主控台和 Azure 入口網站中建立 MAM 原則︰在 Intune 管理主控台中建立 MAM 原則，可確定您能夠部署受管理的應用程式，而在 Azure 入口網站中建立 MAM 原則，則是由於它是具有所有 MAM 原則設定的新管理主控台。
+> * 若要部署受管理應用程式，您必須在 Intune 管理主控台中建立應用程式保護原則。 在此情況下，您可能想要在 Intune 管理主控台和 Azure 入口網站中建立應用程式保護原則︰在 Intune 管理主控台中建立應用程式保護原則，可確定您能夠部署受管理的應用程式，而在 Azure 入口網站中建立應用程式保護原則，則是由於它是具有所有應用程式保護原則設定的新管理主控台。
 
-> * 如果您在 Intune 管理主控台和 Azure 入口網站上建立 MAM 原則，則會將在 Azure 入口網站中建立的原則套用至應用程式。
+> * 如果您在 Intune 管理主控台和 Azure 入口網站上建立應用程式保護原則，則會將在 Azure 入口網站中建立的原則套用至應用程式。
 
 若要查看為 Android 和 iOS 平台支援的原則設定清單，請選取下列其中一項︰
 
@@ -46,16 +49,24 @@ ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
 - [iOS 原則](ios-mam-policy-settings.md)
 - [Android 原則](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>建立 MAM 原則
-建立 MAM 原則之前，請檢閱[必要條件和支援](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)資訊。
-1.  選擇 [Intune 行動應用程式管理]**&gt;[設定]**開啟 [設定] 刀鋒視窗。
+- 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[使用應用程式保護原則來保護應用程式和資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
-    ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>建立應用程式保護原則
+應用程式保護原則是在 Azure 入口網站所建立。 如果這是您第一次使用 Azure 入口網站，請閱讀 [Microsoft Intune 應用程式保護原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以更熟悉 Azure入口網站。 建立應用程式保護原則之前，請檢閱[必要條件和支援](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)資訊。
 
-    > [!TIP]
-    > 如果這是您第一次使用 Azure 入口網站，請先閱讀 [Microsoft Intune MAM 原則的 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉入口網站。
+請遵循下列步驟來建立應用程式保護原則：
 
-2.  在 [設定] 刀鋒視窗中，選擇 [應用程式原則]。 這會開啟 [應用程式原則] 刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。 選擇 **[新增原則]**。
+1. 移至 [Azure 入口網站](http://portal.azure.com)並輸入您的認證。
+
+2. 選擇 [更多服務] 並輸入 "Intune"。
+
+3. 選擇 [Intune 應用程式保護]。
+
+4. 選擇 [Intune 行動應用程式管理]&gt; [設定] 開啟 [所有設定] 刀鋒視窗。
+
+    ![Intune 行動應用程式管理刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  在 [所有設定] 刀鋒視窗中，選擇 [應用程式原則]。 這會開啟 [應用程式原則] 刀鋒視窗，您將在其中建立新的原則及編輯現有的原則。 選擇 **[新增原則]**。
 
     ![反白顯示 [新增原則] 功能表選項的 [應用程式原則] 刀鋒視窗的螢幕擷取畫面 ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -87,10 +98,10 @@ ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
 當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。 若要部署原則，請參閱下列章節＜將原則部署給使用者＞。
 
 > [!IMPORTANT]
-> 如果您使用 Intune 管理主控台建立應用程式的 MAM 原則，及使用 Azure 入口網站建立 MAM 原則，則使用 Azure 入口網站建立的原則會優先適用。 不過，Intune 或 Configuration Manager 主控台中的報表會報告從 Intune 管理主控台建立的原則設定。 例如：
+> 如果您使用 Intune 管理主控台建立應用程式的應用程式保護原則，及使用 Azure 入口網站建立應用程式保護原則，則使用 Azure 入口網站建立的原則會優先適用。 不過，Intune 或 Configuration Manager 主控台中的報表會報告從 Intune 管理主控台建立的原則設定。 例如：
 >
-> -   您在 Intune 管理主控台中，建立了封鎖從應用程式複製的 MAM 原則。
-> -   您在 Azure 主控台中，建立了允許從應用程式複製的 MAM 原則。
+> -   您在 Intune 管理主控台中，建立了封鎖從應用程式複製的應用程式保護原則。
+> -   您在 Azure 主控台中，建立了允許從應用程式複製的應用程式保護原則。
 > -   您將這兩個原則與同一個應用程式建立關聯。
 > -   會優先使用您從 Azure 主控台建立的原則並允許複製。
 > -   不過，Intune 主控台中的狀態和報表會不正確地表示該複製遭到封鎖。
@@ -113,8 +124,8 @@ ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
 > 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者， 而不會影響巢狀於您選取之群組中的子群組成員。
 
 使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
-* [當 Android 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>變更現有的原則
 您可以編輯現有的原則，並將它套用到目標使用者。 不過，當您變更現有的原則時，已登入應用程式的使用者將有 8 小時看不到變更。
@@ -168,11 +179,11 @@ ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
 [監視合規性和使用者狀態](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>請參閱
-* [當 Android 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

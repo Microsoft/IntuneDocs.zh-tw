@@ -1,5 +1,5 @@
 ---
-title: "指定 IMEI 編號 | Microsoft Intune"
+title: "指定 IMEI 編號 | Microsoft Docs"
 description: "Microsoft Intune 允許系統管理員匯入行動裝置平台的 IMEI 編號，從而找出公司所擁有的行動裝置"
 keywords: 
 author: staciebarker
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
-ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
+ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
+ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 
 ---
 
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>使用國際行動設備識別碼 (IMEI) 編碼來指定公司擁有的裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台的 IMEI 編號的國際行動設備識別碼 (IMEI) 編號，從而找出公司擁有的行動裝置。 當裝置在 Intune 中註冊之後，您可以在 [群組]  >  [概觀]  >  [所有裝置] 下檢視 IMEI 編號已經匯入的裝置。 [裝置群組] 會在列出 IMEI 編號已經匯入的裝置時，會在 [擁有權] 資料行中將其標示為**公司**。
 
 1. 在 [Microsoft Intune](http://manage.microsoft.com) 管理主控台中，選擇 [群組] &gt; [所有裝置] &gt; [所有公司預先註冊的裝置] &gt;[依 IMEI (所有平台)]，然後選擇 [新增裝置]。 您可以使用下列兩種方式新增裝置：
@@ -48,8 +52,11 @@ Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台
 
 當具有 IMEI 編號的裝置註冊到 Intune (通常會在使用者安裝公司入口網站應用程式，並完成註冊程序之後) 時，裝置將其標示公司擁有，並在**IMEI 裝置**群組中將其顯示為已註冊。
 
+>[!NOTE] 
+> 當貴組織在不久的將來移轉到新的 Azure 入口網站後，您會看到這項功能的變更。 在現有的 Intune 系統管理員主控台中，管理員可以接受已上傳之 CSV 的相關詳細資料，並覆寫個別硬體識別碼的現有詳細資料。 在新的 Azure 入口網站中，您將可以自動覆寫所有硬體識別碼的詳細資料，或略過所有現有識別項的新詳細資料。
 
 
-<!--HONumber=Nov16_HO3-->
+
+<!--HONumber=Feb17_HO1-->
 
 

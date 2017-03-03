@@ -1,11 +1,11 @@
 ---
-title: "註冊或登入 Intune | Microsoft Intune"
+title: "註冊或登入 Intune | Microsoft Docs"
 description: "如何註冊 Intune 訂閱或如何登入以開始使用訂閱"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>註冊或登入 Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題將告訴系統管理員如何註冊 Intune 帳戶。
+
 需要先判斷您的組織是否已經使用 Microsoft Online Services 或學校帳戶，或您的組織是否與 Microsoft 簽訂 Enterprise 合約或等同的大量授權合約，您才能登入或註冊 Intune。 當您與 Microsoft 簽訂大量授權合約，或訂閱 Office 365 之類的 Microsoft 雲端服務時，將會提供工作或學校帳戶。
 
 如果您已經有工作或學校帳戶，則可直接以該帳戶**登入**，將 Intune 加入至現有的訂用帳戶環境。 否則，您需要**註冊**以建立新帳戶，用來為您的組織管理 Intune。
@@ -50,6 +56,6 @@ ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

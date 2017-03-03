@@ -1,21 +1,25 @@
 ---
-title: "在 Intune 註冊 Windows Phone 8.1 裝置 | Microsoft Intune"
+title: "在 Intune 註冊 Windows Phone 8.1 裝置 | Microsoft Docs"
 description: "描述在 Intune 註冊 Windows Phone 8.1 裝置的方法"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
 
 
 ---
@@ -23,7 +27,7 @@ ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 註冊 Windows Phone 8.1 裝置
 
-如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 
 若要在 Intune 註冊您的 Phone 8.1 裝置，請遵循適用於您公司或學校的指示：
@@ -81,12 +85,12 @@ ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 4.  如果提示您安裝公司應用程式或集線器，請確定核取相關方塊，然後點選 [完成]。
 
-如果您的 IT 系統管理員已設定為在註冊期間安裝公司入口網站，您的應用程式清單中會顯示公司入口網站。
+如果您的 IT 管理員已設定在註冊期間安裝公司入口網站，您的應用程式清單就會顯示公司入口網站。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

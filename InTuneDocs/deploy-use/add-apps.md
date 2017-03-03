@@ -1,11 +1,11 @@
 ---
-title: "新增應用程式 | Microsoft Intune"
+title: "新增應用程式 | Microsoft Docs"
 description: "使用 Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 新增應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 Microsoft Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。 這些概念有助於您了解可將哪些應用程式部署到哪一個平台。 還可協助您了解在部署應用程式之前必須先準備就緒的必要條件。
 
 ## <a name="app-types-that-you-can-deploy"></a>您可以部署的應用程式類型
@@ -60,7 +64,7 @@ ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
 ## <a name="cloud-storage-space"></a>雲端儲存空間
 使用軟體安裝程式安裝類型所建立的所有應用程式 (例如商務營運應用程式)，都必須封裝並上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 完整訂閱將包含 20 GB 的儲存空間。
 
-您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。
+您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請瀏覽 [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) (訂閱管理入口網站)。  否則，請連絡合作夥伴或銷售人員。
 
 雲端儲存空間需求如下：
 
@@ -93,6 +97,6 @@ Windows 10 電腦不需要側載金鑰，即可安裝商務營運應用程式。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

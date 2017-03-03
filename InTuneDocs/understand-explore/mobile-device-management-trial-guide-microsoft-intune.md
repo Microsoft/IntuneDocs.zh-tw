@@ -12,6 +12,7 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
@@ -20,6 +21,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>評估 Microsoft Intune 中的行動裝置管理功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本評估指南將示範 Intune 中行動裝置管理的運作方式。 您將會：
 - 註冊要由 Intune 管理的裝置。
 - 建立群組來組織使用者和裝置。
@@ -75,13 +79,13 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 
 1. **取得憑證簽署要求**<br/>
 使用您的系統管理員帳戶登入，然後移至 [系統管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。 .csr 檔案用來向 Apple Push Certificates Portal 要求信任關係憑證。 <!--- screen shot--->
-2.  **取得 Apple 推送通知服務憑證**<BR/>
-前往 [Apple Push Certificates 入口網站](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 選擇 [在 Apple Push Certificates 入口網站上上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 [Certificates for Third-Party Servers] (協力廠商伺服器的憑證)，然後選擇 [下載]。
+2.    **取得 Apple 推送通知服務憑證**<BR/>
+前往 [Apple Push Certificates 入口網站](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 選擇 [在 Apple Push Certificates 入口網站上上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 「Certificates for Third-Party Servers」 (協力廠商伺服器的憑證)，然後選擇 **[下載]**。
 
  下載 APNs (.pem) 憑證，並將該檔案儲存在本機。 稍後必須使用這個 Apple ID 來更新 APNs 憑證。
-3.  **將 APNs 憑證新增至 Intune**<BR/>
+3.    **將 APNs 憑證新增至 Intune**<BR/>
 在 Microsoft Intune 管理主控台中，移至 [系統管理] > [行動裝置管理] >  [iOS 與 Mac OS X] > [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 Apple ID。 使用 APNs 憑證。 透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
-4.  **告訴使用者如何註冊其裝置來存取公司資源。**<br/>
+4.    **告訴使用者如何註冊其裝置來存取公司資源。**<br/>
 如需使用者註冊指示，請參閱[在 Intune 中註冊您的 iOS 裝置](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios)和[在 Intune 中註冊您的 Mac OS X 裝置](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
 
 
@@ -117,6 +121,6 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

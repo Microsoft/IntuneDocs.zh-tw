@@ -1,29 +1,37 @@
 ---
-title: "加密您的裝置 | Microsoft Intune"
-description: "描述加密 Android 裝置的方式"
+title: "如何使用加密保護您的 Android 裝置 | Microsoft Docs"
+description: "保護 Android 裝置"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>加密您的裝置
+# <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
-如果您的公司或組織要求您加密 Android 裝置，才能存取公司檔案、電子郵件或資料，則請遵循下面這些步驟，來加密您的裝置。 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
+當您加密裝置時，系統會用一層防護性程式碼包覆其中的資訊，防止未經授權的人員進行存取。 貴組織需要您先加密 Android 裝置才能存取公司檔案、電子郵件或資料，此為確保資訊安全的步驟。
+
+> [!Note]
+> 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
 如果您取消註冊您的電話，則它會維持加密狀態。
 
@@ -33,6 +41,9 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
     注意：在某些電話上，您需要選擇 [儲存體] &gt; 「Storage encryption」 (儲存體加密) 或 [儲存體] &gt; 「Lock screen and security」 (鎖定螢幕和安全性) &gt; [其他安全性設定] 來尋找 [加密] 選項。
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
+
+> [!Note]
+> 無法加密特定的 Android 裝置。 如需詳細資訊，請參閱[這裡](your-device-appears-encrypted-but-cp-says-otherwise-android.md)。
 
 ### <a name="what-to-do-if-you-have-issues"></a>發生問題時的解決方式
 **問題**：您已加密您的裝置，而看到下列其中一項：
@@ -57,10 +68,6 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
     5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
+
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 [Microsoft Android 小組](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

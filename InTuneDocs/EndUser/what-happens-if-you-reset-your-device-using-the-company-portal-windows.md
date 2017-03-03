@@ -1,5 +1,5 @@
 ---
-title: "使用公司入口網站重設您的 Windows 裝置會發生什麼情況？ | Microsoft Docs"
+title: "如果重設 Windows 裝置，會發生什麼情況？ | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -24,7 +27,7 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司入口網站重設您的 Windows 裝置會發生什麼情況？
 
-當您使用公司入口網站應用程式或[公司入口網站](reset-your-device-cpwebsite.md)重設您的 Windows 裝置時，它會將裝置重設為其原廠設定，並刪除所有的應用程式、設定和資料，包括您的個人資料。 每個裝置上發生的情況取決於您擁有之裝置的類型以及您使用該裝置的方式 (如下表所述)。 如需如何重設遺失或遭竊裝置的指示，請參閱[重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-lost-or-stolen-device-windows.md)。
+當您使用公司入口網站應用程式或[公司入口網站](reset-erase-your-device-cpwebsite.md)重設您的 Windows 裝置時，它會將裝置重設為其原廠設定，並刪除所有的應用程式、設定和資料，包括您的個人資料。 每個裝置上發生的情況取決於您擁有之裝置的類型以及您使用該裝置的方式 (如下表所述)。 如需如何重設遺失或遭竊裝置的指示，請參閱[重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)。
 
 |裝置組態與管理|裝置類型：|
 |---------------------------------------|---------------|
@@ -36,6 +39,6 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

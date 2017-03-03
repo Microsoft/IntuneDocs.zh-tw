@@ -1,34 +1,41 @@
 ---
-title: "遠端鎖定和密碼重設 | Microsoft Intune"
+title: "遠端鎖定和密碼重設 | Microsoft Docs"
 description: "Intune 提供遠端鎖定和密碼重設功能。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>透過遠端鎖定或密碼重設來協助保護您的裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 ## <a name="lock-a-device-remotely"></a>從遠端鎖定裝置
-如果使用者遺失裝置，您可以從遠端鎖定裝置。 下表列出遠端鎖定在不同行動平台上的運作方式。
+如果使用者遺失裝置，您可以從遠端鎖定裝置。 裝置上必須已設定 PIN 或密碼，您才能使用遠端鎖定。
+
+下表列出遠端鎖定在不同行動平台上的運作方式。
 
 |平台|遠端鎖定|
 |------------|---------------|
 |macOS|不支援|
 |iOS|支援|
 |Android|支援|
-|Windows 10 和 Windows 10 Mobile|支援|
+|Windows 10 (行動裝置)|支援|
+|Windows 10 (桌面)|不支援|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
 |Windows RT 8.1 和 Windows RT|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|
 |Windows 8.1|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|
@@ -79,6 +86,6 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

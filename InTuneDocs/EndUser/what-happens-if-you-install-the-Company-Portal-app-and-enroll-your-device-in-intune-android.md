@@ -1,22 +1,25 @@
 ---
-title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Android 裝置，會發生什麼情況？ | Microsoft Intune"
+title: "安裝 Android 的公司入口網站應用程式 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
 
 
 ---
@@ -48,7 +51,7 @@ ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 -   要求為裝置上的所有資料加密，這將能在裝置遺失或遭竊的情況下協助保護資料。
 
-將裝置新增到公司入口網站之後，大約每隔 8 個小時，裝置會：
+將裝置新增到公司入口網站之後，大約每隔&8; 個小時，裝置會：
 
 -   下載您 IT 系統管理員提供的原則或應用程式更新。
 
@@ -60,6 +63,6 @@ ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

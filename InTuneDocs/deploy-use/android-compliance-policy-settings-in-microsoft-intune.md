@@ -1,11 +1,11 @@
 ---
-title: "Android 裝置的相容性原則設定 | Microsoft Intune"
+title: "Android 的相容性原則設定 | Microsoft Docs"
 description: "本主題說明適用於 Android 裝置的裝置相容性原則設定。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -23,12 +24,15 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android 裝置的相容性原則設定
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題所述的原則設定適用於執行 Android 4.0 及更新版本，或 Samsung KNOX 4.0 及更新版本的裝置。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
 - [iOS 裝置的的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Android for Work 裝置的合規性政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系統安全性設定
 ### <a name="password"></a>密碼
@@ -87,6 +91,6 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "用戶端設定疑難排解 | Microsoft Intune"
+title: "用戶端設定疑難排解 | Microsoft Docs"
 description: "針對常見用戶端安裝問題進行疑難排解。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune 的用戶端設定疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 請利用以下資訊協助您針對一般用戶端安裝問題進行疑難排解。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
 ## <a name="client-installation-fails"></a>用戶端安裝失敗
@@ -70,7 +75,7 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 **解決方式**：請確定您的軟體更新原則已啟用重大更新的安裝 (如[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述)。
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Microsoft Intune policyplatform.log 中的原則相關錯誤
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Microsoft Intune policyplatform.log 中的原則相關錯誤
 至於非 MDM Windows 裝置，policyplatform.log 檔案中的原則錯誤可能是因為裝置上 Windows 使用者帳戶控制 (UAC) 的非預設設定所造成。 某些非預設的 UAC 設定可能會影響 Microsoft Intune 用戶端安裝和原則執行。
 
 ### <a name="to-resolve-uac-issues"></a>解決 UAC 問題
@@ -116,17 +121,22 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 |**0x80070032**|用戶端電腦不符合安裝用戶端軟體的一或多個必要條件。|確定用戶端電腦已安裝所有必要更新，然後再次嘗試安裝用戶端軟體。 如需安裝用戶端軟體之必要條件的詳細資訊，請參閱[適用於 Microsoft Intune 的網路基礎結構需求](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)。|
 |**0x80043008**|無法啟動 Microsoft Online Management Updates 服務。|請依[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)所述連絡支援人員。|
 |**0x80043009**|用戶端電腦已註冊到服務中。|您必須先淘汰用戶端電腦，才能重新將它註冊到服務中。 如需指示，請參閱[從 Microsoft Intune 管理淘汰裝置](/intune/deploy-use/retire-devices-from-microsoft-intune-management)。|
+|**0x8004300A**|(階段 21) 將註冊套件部署到 GPO，以安裝在使用者範圍而非電腦範圍時，發生錯誤。 |請確定 GPO 透過 GPSI 正確地將目標設為電腦範圍。 若要查看此主題的論壇文章，請參閱此 [TechNet 論壇](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod)。|
 |**0x8004300B**|用戶端軟體安裝套件無法執行，因為不支援用戶端上執行的 Windows 版本。|Intune 不支援用戶端電腦上執行的 Windows 版本。 如需支援的作業系統清單，請參閱[適用於 Microsoft Intune 的網路基礎結構需求](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)。|
 |**0xAB2**|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 在為 DLL 疑難排解時，您可能必須使用 [Microsoft 支援服務 KB198038：實用的封裝與部署工具](http://go.microsoft.com/fwlink/?LinkID=234255)中所述的工具。|
 |**0x8004300f**|無法安裝軟體，因為已經安裝了 System Center Configuration Manager 用戶端。|移除 Configuration Manager 用戶端，然後再次嘗試安裝用戶端軟體。|
 |**0x80043010**|無法安裝軟體，因為已經安裝 Open Mobile Alliance Device Management (OMADM) 用戶端。|取消註冊 OMADM 用戶端，然後再次嘗試安裝用戶端軟體。|
 如果安裝問題持續發生，請依[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)所述連絡支援人員。 請備妥用戶端電腦註冊記錄檔 (位於 %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log 及 %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) 和 Windows Update 記錄檔 (%*windir*%\windowsupdate.log)，以供支援工程師參考。
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>當您解除安裝用戶端時未解除安裝 Endpoint Protection 該怎麼辦
+
+有時當您執行上述命令之後，主機保護 (Endpoint Protection) 代理程式可能會留下。 如果發生這種情況，請從提高權限的提示字元執行這個命令︰
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

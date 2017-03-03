@@ -1,26 +1,27 @@
 ---
-title: "設定 Android for Work 管理 | Microsoft Intune"
+title: "設定 Android for Work  | Microsoft Docs"
 description: "使用 Microsoft Intune 來啟用 Android for Work 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
 
 # <a name="enable-enrollment-of-android-for-work-devices"></a>啟用 Android for Work 裝置的註冊
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 若要啟用 Android for Work 裝置的管理，您必須將 Android for Work 繫結新增至 Intune。 若要註冊支援 Android for Work 但先前註冊為一般 Android 裝置的裝置，必須將裝置取消註冊，再重新註冊。
 
@@ -52,7 +53,7 @@ ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>解除 Android for Work 系統管理帳戶繫結
 
-您可以關閉 Android for Work 註冊和管理。 按一下 [解除繫結] 將所有註冊的 Android for Work 裝置取消註冊，並移除 Android for Work 帳戶與 Intune 之間的關聯性。
+您可以關閉 Android for Work 註冊和管理。 按一下 Intune 管理主控台中的 [解除繫結] 將所有註冊的 Android for Work 裝置取消註冊，並移除 Android for Work 帳戶與 Intune 之間的關聯性。
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何解除 Android for Work 帳戶繫結
 
@@ -64,6 +65,6 @@ ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

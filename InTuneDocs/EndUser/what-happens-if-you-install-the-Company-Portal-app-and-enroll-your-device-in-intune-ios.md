@@ -1,22 +1,25 @@
 ---
-title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 macOS 裝置，會發生什麼情況？ | Microsoft Intune"
+title: "安裝 iOS 和 macOS 的公司入口網站應用程式 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -35,36 +38,6 @@ ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 -   自動設定您的公司電子郵件帳戶。
 
 當您在 Intune 註冊裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護裝置上的公司資訊。
-
-**IT 看不到的項目**
-
--   通話與網頁歷程記錄
-
--   位置
-
--   電子郵件和簡訊
-
--   連絡人
-
--   密碼
-
--   行事曆
-
--   手機相簿
-
-**IT 看得到的項目**
-
--   型號
-
--   序號
-
--   作業系統
-
--   應用程式名稱
-
--   Owner
-
--   裝置名稱
 
 註冊裝置之後，您的 IT 系統管理員可以：
 
@@ -96,6 +69,6 @@ ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "部署原則和應用程式 |Microsoft Intune"
+title: "部署原則和應用程式 | Microsoft Docs"
 description: "您可以啟用原則設定，以及部署將在註冊裝置以進行管理之後立即套用的應用程式。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,27 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>建立原則和發行應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題將告訴 Intune 系統管理員如何建立原則、發佈應用程式，接著將它們部署到受管理裝置。
+
 開始在 Intune 中註冊應用程式之前，您可以啟用要在將這些裝置納入管理之後立即部署的原則設定及應用程式。 Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 您可以設定原則、新增應用程式，以及部署這些應用程式，使裝置在 Intune 中註冊之後就能立即接收設定和應用程式。
 
 原則和應用程式是平台特定的。
 
 ## <a name="manage-device-settings"></a>管理裝置設定
 
- 裝置原則設定是根據每個平台來設定和管理的。 您可以針對下列平台設定原則：
+ 裝置原則設定是根據每個平台來設定和管理的。 下列連結提供其各自平台的可用設定清單︰
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android and和 Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -69,6 +75,6 @@ ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

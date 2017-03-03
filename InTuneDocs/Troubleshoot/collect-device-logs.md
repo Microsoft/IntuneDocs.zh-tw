@@ -1,11 +1,11 @@
 ---
-title: "收集裝置記錄檔 | Microsoft Intune"
+title: "收集裝置記錄檔| Microsoft Docs"
 description: "了解如何收集受管理裝置的記錄檔。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0c05b4e16f7b0a87215a0cd20f7d559cd8497296
-ms.openlocfilehash: 0f175b1eb2d80a68c8b7864d21f5a9e585de458b
+ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
+ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
 
 
 ---
 
 # <a name="device-logs"></a>裝置記錄檔
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 進行疑難排解時，您可能想要從使用者裝置收集記錄檔。 這裡說明收集這些記錄檔的指示。 通常您需要存取裝置來取得這些記錄檔，或要求使用者收集記錄檔，並將記錄檔傳送給您。
 
@@ -33,7 +36,7 @@ Android 記錄檔位於 *<Android Device>\Phone\Android\data\com.microsoft.windo
 
 - [使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)：描述使用者如何開啟詳細資訊記錄，以自動傳送所有資料記錄給您。 根據預設，詳細資訊記錄為開啟狀態。
 
-- [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [使用 USB 纜線將診斷資料記錄傳送給 IT 系統管理員](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -57,6 +60,6 @@ Android 記錄檔位於 *<Android Device>\Phone\Android\data\com.microsoft.windo
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

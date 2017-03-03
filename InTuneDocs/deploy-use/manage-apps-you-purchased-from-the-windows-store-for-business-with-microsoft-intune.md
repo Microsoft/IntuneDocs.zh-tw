@@ -1,26 +1,30 @@
 ---
-title: "管理商務用 Windows 市集應用程式 | Microsoft Intune"
+title: "管理商務用 Windows 市集應用程式 | Microsoft Docs"
 description: "如果您想要從 Intune 主控台管理和部署大量購買的應用程式，請將 Microsoft Intune 連線至商務用 Windows 市集"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
+ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [商務用 Windows 市集](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找和購買應用程式。 將市集連接到 Microsoft Intune，您就可以從 Intune 主控台管理大量購買的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
 * 同步處理的應用程式會出現在 Intune 管理主控台，而您可以如同任何其他應用程式一般加以部署。
@@ -42,6 +46,9 @@ ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
 1. 請確定使用您用來登入 Intune 的相同租用戶帳戶來登入商務用市集。
 2. 在商務用市集中，選擇 **[設定]** > **[管理工具]**。
 3. 在 [管理工具] 頁面上，選擇 **[Add a management tool (新增管理工具)]**，然後選擇 **[Microsoft Intune]**。
+
+> [!NOTE]
+> 如果您使用多種管理工具來部署商務用 Windows 市集應用程式，以前只能建立其中一種與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
@@ -80,6 +87,6 @@ ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

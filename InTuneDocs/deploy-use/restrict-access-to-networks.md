@@ -1,11 +1,11 @@
 ---
-title: "使用 Cisco ISE 限制存取網路 | Microsoft Intune"
+title: "限制存取網路 (Cisco ISE) | Microsoft Docs"
 description: "使用 Cisco ISE 與 Intune，讓裝置向 Intune 註冊並符合原則，然後才存取 Cisco ISE 控制的 Wi-Fi 和 VPN。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 82fc7979426f3561aad78eb7de67b9729f93fba1
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>使用 Cisco ISE 與 Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中使用 Intune 裝置註冊與相容性狀態來撰寫網路原則。 您可以使用這些原則來確保您公司網路的存取權僅限於受 Intune 管理且符合 Intune 原則的裝置。
 
 ## <a name="configuration-steps"></a>設定步驟
@@ -64,7 +69,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 > 檢查憑證的到期日，因為您必須在此憑證到期時匯出並匯入新的憑證。
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>從 ISE 取得自我簽署憑證 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>從 ISE 取得自我簽署憑證 
 
 1.  在 ISE 主控台中，請移至 [管理] > [憑證] > [系統憑證] > [產生自我簽署憑證]。  
 2.       匯出自我簽署憑證。
@@ -100,7 +105,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 |OAuth 2.0 權杖端點|權杖簽發 URL|
 |使用用戶端識別碼更新您的程式碼|用戶端識別碼|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步驟 4︰將自我簽署憑證從 ISE 上傳至您在 Azure AD 中建立的 ISE 應用程式
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步驟 4︰將自我簽署憑證從 ISE 上傳至您在 Azure AD 中建立的 ISE 應用程式
 1.     從 .cer X509 公開憑證檔取得 Base64 編碼的憑證值和指紋。 這個範例使用 PowerShell：
    
       
@@ -151,7 +156,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租用戶和 Cisco ISE 伺服器之間共用的資訊
 下表列出您的 Intune 租用戶和 Cisco ISE 伺服器之間，針對受 Intune 管理之裝置所共用的資訊。
 
-|屬性|  說明|
+|屬性|    說明|
 |---------------|------------------------------------------------------------|
 |complianceState|指出裝置相容或不相容的 true 或 false 字串。|
 |isManaged|指出用戶端是否受 Intune 管理的 true 或 false 字串。|
@@ -176,8 +181,8 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 當使用者選擇註冊，就會重新導向至 Intune 註冊程序。 這些主題中說明 Intune 的使用者註冊體驗︰
 
 - [將您的 Android 裝置註冊到 Intune](/intune/enduser/enroll-your-device-in-Intune-android)</br>
-- [將您的 iOS 裝置註冊到 Intune](/intune/enduser/enroll-your-device-in-intune-ios)</br>
-- [將您的 Mac OS X 裝置註冊到 Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
+- [在 Intune 註冊 iOS 裝置](/intune/enduser/enroll-your-device-in-intune-ios)</br>
+- [在 Intune 註冊 Mac OS X 裝置](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
 - [將您的 Windows 裝置註冊到 Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br>
 
 另外還有[可下載的註冊指示集合](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)，可用來建立自訂的使用者體驗指導方針。
@@ -186,9 +191,4 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 ### <a name="see-also"></a>請參閱
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF) (思科身分服務引擎管理指南 2.1 版)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
