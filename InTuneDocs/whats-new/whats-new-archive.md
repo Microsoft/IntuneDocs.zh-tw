@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 43e951d763d788d94e97c35ea4c25a9c700baf1e
 ms.openlocfilehash: 1b1775507b454d45a673ca30c1674ac54b92a056
+ms.lasthandoff: 02/07/2017
 
 
 ---
@@ -27,9 +29,4 @@ ms.openlocfilehash: 1b1775507b454d45a673ca30c1674ac54b92a056
 
 ### <a name="see-also"></a>請參閱
 如需近期發展的詳細資料，請參閱 [Microsoft Intune 的新功能](whats-new-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
