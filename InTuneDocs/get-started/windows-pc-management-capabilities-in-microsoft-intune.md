@@ -1,26 +1,31 @@
 ---
-title: "Intune 電腦軟體用戶端功能 | Microsoft Intune"
+title: "Intune 電腦軟體用戶端功能 | Microsoft Docs"
 description: "深入了解當您使用 Intune 軟體用戶端管理 Windows 電腦時，有關 Intune 的功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 36a20feed1756ea8dde2230db81099b6c5f8c7f6
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>當您使用 Intune 軟體用戶端時的 Windows 電腦管理功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在大部分情況下，您將使用 Microsoft Intune 註冊您的裝置，這可以提供更多的功能。 不過，您也可以使用提供下列功能的 Intune 軟體用戶端來管理電腦︰
 
 -   **[軟體更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
@@ -72,9 +77,4 @@ Intune 可管理執行下列 Windows 版本 (32 位元和 64 位元) 的電腦�
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 的已註冊裝置管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

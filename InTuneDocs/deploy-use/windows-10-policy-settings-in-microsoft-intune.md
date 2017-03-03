@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 原則設定 | Microsoft Intune"
+title: "Windows 10 原則設定 | Microsoft Docs"
 description: "使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主題包含的資訊可協助您了解可用來管理 Windows 10 裝置的 Intune 原則設定。 請搭配閱讀本主題以及[使用 Microsoft Intune 原則管理您裝置上的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)中的程序，替註冊的 Windows 10 桌面版及 Windows 10 行動裝置版設定內建及自訂的設定。 您無法將原則和執行 [Intune 電腦用戶端軟體](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)的電腦搭配使用。
 
@@ -298,7 +302,7 @@ ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
 |**允許用戶端 UI 存取**|控制是否對使用者隱藏 Windows Defender 使用者介面。<br>變更此設定後，要在使用者電腦下次重新啟動時才會生效。|
 |**排程每日快速掃描**|讓您排程每天在您選取的時間進行快速掃描|
 |**排程系統掃描**|讓您排程在您指定的日期和時間定期進行完整或快速系統掃描|
-|**限制掃描期間的 CPU 使用量**|讓您限制允許使用掃描的 CPU 數量 (從 **1** 至 **100**)|
+|**限制掃描期間的 CPU 使用量**|讓您限制掃描可以使用的 CPU 資源數量 (從 **1** 至 **100**)|
 |**掃描封存檔**|允許 Defender 掃描封存的檔案，例如 .zip 或 .cab 檔案。|
 |**掃描電子郵件訊息**|允許 Defender 在電子郵件訊息到達裝置時加以掃描|
 |**掃描卸除式磁碟機**|讓 Defender 掃描 USB 隨身碟等卸除式磁碟機|
@@ -322,9 +326,4 @@ ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

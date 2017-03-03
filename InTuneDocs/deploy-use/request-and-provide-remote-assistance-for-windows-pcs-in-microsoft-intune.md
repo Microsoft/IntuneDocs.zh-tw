@@ -1,11 +1,11 @@
 ---
-title: "要求與提供 Windows 電腦的遠端協助 | Microsoft Intune"
-description: "描述針對 Windows 電腦提供遠端協助以及遠端啟動電腦的使用者與 IT 系統管理員步驟。"
+title: "要求與提供 Windows 電腦的遠端協助 | Microsoft Docs"
+description: "描述針對作為電腦管理的 Windows 電腦提供遠端協助以及遠端啟動電腦的終端使用者和 IT 系統管理員步驟。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,20 @@ ms.technology:
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
-Microsoft Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓您為執行 Intune 軟體用戶端的使用者提供遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。 這項功能會取代 Intune 中的現有 Windows 遠端協助功能。
+本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。
+
+Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓您為執行 Intune 軟體用戶端的使用者提供遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。 這項功能會取代 Intune 中的現有 Windows 遠端協助功能。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -30,7 +34,7 @@ Microsoft Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer
 請確認您具有下列必要條件，再開始建立並回應遠端協助要求︰
 
 - 您必須[已註冊 TeamViewer 帳戶](https://login.teamviewer.com/LogOn#register)，才能登入 TeamViewer 網站。
-- 您想要管理的 Windows 電腦必須[由 Windows 電腦用戶端所管理](manage-windows-pcs-with-microsoft-intune.md)。
+- 您想要管理的 Windows 電腦必須[由 Windows 軟體用戶端所管理](manage-windows-pcs-with-microsoft-intune.md)。
 - 可以管理 Intune 所支援的所有 Windows 電腦作業系統。
 
 ## <a name="configure-the-teamviewer-connector"></a>設定 TeamViewer 連接器
@@ -71,7 +75,7 @@ Microsoft Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer
 ## <a name="remotely-restart-a-windows-pc"></a>從遠端重新啟動 Windows 電腦
 當您協助發生問題的使用者時，您偶而便必須從遠端重新啟動他們的電腦。 使用下列步驟從遠端重新啟動 Windows 電腦。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置 (或包含您想要重新啟動之電腦的其他群組)]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要重新啟動之電腦的其他群組)。
 
 2.  選取一或多部電腦，然後選擇 [遠端工作] &gt; [重新啟動電腦]。
 
@@ -82,8 +86,3 @@ Microsoft Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer
 ### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Nov16_HO4-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "裝置相容性原則 | Microsoft Intune"
+title: "裝置相容性原則 | Microsoft Docs"
 description: "本主題說明什麼是裝置合規性原則，及其運作方式。"
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Microsoft Intune 的裝置相容性原則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>什麼是相容性原則？
 為協助保護公司資料，您必須確認用來存取公司應用程式及資料的裝置符合特定規則。 這些規則可能包括使用 PIN 來存取裝置，以及為裝置中儲存的資料加密。 這樣一組規則稱為合規性原則。
 
@@ -63,9 +68,4 @@ ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
 
 ### <a name="see-also"></a>請參閱
 [限制存取電子郵件和 O365 服務](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

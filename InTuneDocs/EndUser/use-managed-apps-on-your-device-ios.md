@@ -1,5 +1,5 @@
 ---
-title: "在 iOS 裝置上使用受管理的應用程式 | Microsoft Intune"
+title: "在 iOS 裝置上使用受管理的應用程式 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -62,9 +66,4 @@ ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
 
 
 針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

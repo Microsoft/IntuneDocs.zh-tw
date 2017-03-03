@@ -1,11 +1,11 @@
 ---
-title: "如何部署應用程式 | Microsoft Intune"
+title: "如何部署應用程式 | Microsoft Docs"
 description: "使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,16 @@ ms.technology:
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
-ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.lasthandoff: 12/30/2016
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。
 
@@ -69,9 +73,4 @@ ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 ## <a name="next-steps"></a>後續步驟
 
 部署應用程式之後，您會想要監視其進度。 如需詳細資訊，請參閱[在 Microsoft Intune 中監視應用程式](monitor-apps-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

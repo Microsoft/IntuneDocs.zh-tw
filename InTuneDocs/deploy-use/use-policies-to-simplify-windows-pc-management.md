@@ -1,11 +1,11 @@
 ---
-title: "使用原則來簡化 Windows 電腦管理 | Microsoft Intune"
+title: "使用原則來簡化 Windows 電腦管理 | Microsoft Docs"
 description: "描述 Windows 電腦管理原則和 Microsoft Intune Center 的設定。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,18 @@ ms.technology:
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用原則來簡化 Windows 電腦管理
 
-您可以使用 Intune 的**電腦管理**原則來管理執行 Intune 軟體用戶端的 Windoes 電腦。 使用 Intune 的 [電腦管理] 原則來設定 Microsoft Intune Center 中的設定，以控制對電腦的更新，以及設定電腦的 Windows 防火牆。
+若要在 Windows 桌面執行 Intune 軟體用戶端，將 Windows 桌面作為電腦管理，您只能使用 Intune 管理主控台原則 [電腦管理] 下的原則。 管理主控台中列出的所有其他原則僅供行動裝置使用。 使用 [電腦管理] 原則，您可以設定 Microsoft Intune Center 的設定、控制電腦的更新，以及設定電腦的 Windows 防火牆。
 
 ![Windows 電腦的原則範本](../media/pc_policy_template.png)
 
@@ -60,9 +62,4 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 ### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

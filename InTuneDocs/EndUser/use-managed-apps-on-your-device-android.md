@@ -1,28 +1,32 @@
 ---
-title: "在 Android 裝置上使用受管理的應用程式 | Microsoft Intune"
+title: "在 Android 裝置上使用受管理的應用程式 | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
-# 在 Android 裝置上使用受管理的應用程式
+# <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 
 受管理應用程式是 IT 系統管理員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 Android 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
 
@@ -32,14 +36,14 @@ ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## 如何取得受管理的應用程式？
+## <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？
 您可利用數個不同方是取得受管理的應用程式︰
 
 -   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要深入了解註冊，請參閱[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)。
 
 -   您從 Play Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
 
-## 我的 IT 系統管理員可以在應用程式中管理什麼內容？
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>我的 IT 系統管理員可以在應用程式中管理什麼內容？
 以下是您的 IT 系統管理員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
 
 -   特定網站的存取
@@ -72,10 +76,5 @@ ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 -   Microsoft Word、Excel 和 PowerPoint
 
-針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Oct16_HO2-->
-
+針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Intune"
+title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Docs"
 description: "Microsoft Intune 中的行動應用程式管理原則可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。 例如，您可以限制受管理應用程式中的剪下、複製及貼上作業，或將應用程式設定成只能在受管理瀏覽器中開啟所有的網頁連結。
 
 行動應用程式管理原則支援：
@@ -71,7 +76,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 -   **步驟 5：** 監視應用程式部署。
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
 
 從應用程式市集尋找並記下您所要部署之受原則管理的應用程式的 URL。 例如 iPad 版 Microsoft Word 應用程式的 URL 為 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
 
@@ -191,9 +196,4 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 -   如果原則已部署至裝置，則不會覆寫現有的原則設定。
 
 -   如果原則尚未部署到裝置，而已部署兩個衝突的設定，則會使用裝置內建的預設設定。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

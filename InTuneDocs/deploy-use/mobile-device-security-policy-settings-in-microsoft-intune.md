@@ -1,5 +1,5 @@
 ---
-title: "行動裝置安全性原則設定 | Microsoft Intune"
+title: "行動裝置安全性原則設定 | Microsoft Docs"
 description: "使用 Intune 來設定各種不同的設定，您可以部署到組織中受管理的裝置。"
 keywords: 
 author: robstackmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的行動裝置安全性原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune 現在具有區隔每個裝置平台之設定原則的功能。 這些原則包含您可以使用的最新設定。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作。 然而，因為行動裝置安全性原則未來將予移除，所以您應及早規劃改用新的設定原則。
 
@@ -53,7 +58,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**最小密碼長度**|是|是|是|是|是|
 |**允許簡單密碼**<br /><br />簡單密碼包括 '0000' 與 '1234'。|否|否|是|是|否|
 |**抹除裝置前允許的重複登入失敗次數**|是|是|是|是|是|
-|**在停止活動幾分鐘後關閉螢幕**<sup>1</sup>|是|是|是|是|是|
+|**在非使用狀態幾分鐘後會關閉螢幕**<sup>1</sup>|是|是|是|是|是|
 |**密碼到期 (天數)**|是|是|是|是|是|
 |**記住密碼歷程記錄**|是|是|是|是|是|
 |**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|是|是|是|是|是|
@@ -61,7 +66,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許圖片密碼和 PIN**|是|是|否|否|否|
 |**在非使用狀態幾分鐘後需要輸入密碼**|否|否|否|是|否|
 |**允許指紋解除鎖定**|否|否|否|iOS 7 及更新版本|否|
-<sup>1</sup>對於 iOS 裝置，您如有設定 [在停止活動幾分鐘後關閉螢幕] 和 [在非使用狀態幾分鐘後需要輸入密碼]，這兩項設定將會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
+<sup>1</sup>針對 iOS 裝置，在您設定 [在非使用狀態幾分鐘後會關閉螢幕] 和 [在非使用狀態幾分鐘後需要輸入密碼] 設定時，將會依序套用這兩項設定。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
 
 當您將密碼長度原則部署到執行 Windows RT 的裝置時，將會強制使用者重設其密碼—即使其目前的密碼符合原則需求也是一樣。
 
@@ -69,9 +74,9 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**在行動裝置上要求加密**<sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。|是|否|是|否|是|
+|**行動裝置需要加密**<sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。|是|否|是|否|是|
 |**儲存卡需要加密**<br /><br />此設定同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a <br />應用程式及相關聯的資料會自動加密。|n/a|是|
-<sup>1</sup>執行 Windows 8.1 之裝置的其他資訊：
+<sup>1</sup>以下是執行 Windows 8.1 之裝置的其他資訊：
 
 -   若要在執行 Windows 8.1 的裝置上強制加密，您必須在每個裝置上安裝 [2014 年 12 月適用於 Windows 的 MDM 用戶端更新](http://support.microsoft.com/kb/3013816) 。
 
@@ -105,7 +110,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許原廠重設**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>雲端設定 – 文件和資料
+## <a name="cloud-settings--documents-and-data"></a>雲端設定 – 文件和資料
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +121,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**工作資料夾 URL**<br /><br />此設定會設定工作資料夾的 URL，允許跨裝置同步處理文件。|是|否|否|否|否|
 |**允許 Google 備份**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>雲端設定 – 帳戶和同步處理
+## <a name="cloud-settings--accounts-and-synchronization"></a>雲端設定 – 帳戶和同步處理
 
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -210,10 +215,5 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允許 YouTube**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
 ### <a name="see-also"></a>請參閱
-[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+[使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

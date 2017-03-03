@@ -1,5 +1,5 @@
 ---
-title: "啟用公司資源存取 | Microsoft Intune"
+title: "啟用公司資源存取 | Microsoft Docs"
 description: "Wi-Fi、VPN 及電子郵件設定檔會一起運作，以協助您的使用者存取所需的檔案及資源。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 存取公司資源
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您的使用者隨時隨地都能存取完成其工作所需的檔案及資源。 憑證設定檔可協助保護存取安全。
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Wi-Fi 設定檔](wi-fi-connections-in-microsoft-intune.md)和支援的平台
@@ -54,9 +59,4 @@ Microsoft Intune Wi-Fi、VPN 和電子郵件設定檔一起運作，可協助您
 |Windows 8.1 及更新版本|Windows Phone 8.1 和更新版本|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |是|是|是|是|是|
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

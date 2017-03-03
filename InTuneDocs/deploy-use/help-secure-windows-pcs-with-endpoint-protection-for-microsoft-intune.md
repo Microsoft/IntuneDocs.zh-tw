@@ -1,11 +1,11 @@
 ---
-title: "Windows 電腦的 Endpoint Protection| Microsoft Intune"
+title: "Windows 電腦的 Endpoint Protection | Microsoft Docs"
 description: "使用 Endpoint Protection 保護您受管理的電腦，它可針對惡意程式碼威脅提供即時保護。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -191,9 +193,4 @@ Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 E
 
 ### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

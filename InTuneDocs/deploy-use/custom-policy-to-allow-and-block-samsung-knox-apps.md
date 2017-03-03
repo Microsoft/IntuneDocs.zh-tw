@@ -1,5 +1,5 @@
 ---
-title: "允許和封鎖 KNOX 的應用程式 | Microsoft Intune"
+title: "允許和封鎖 KNOX 的應用程式 | Microsoft Docs"
 description: "自訂設定檔來建立一份允許和封鎖 KNOX 的應用程式清單。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用本主題中的程序，建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一項項目︰
 
@@ -38,9 +42,9 @@ ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
     
     - **設定名稱。** 輸入 **PreventStartPackages**。
     - **設定描述。** 輸入選擇性描述，例如 「被封鎖而無法執行的應用程式清單」。
-    -   **資料類型。** 在下拉式清單中選擇 [字串]。
-    -   **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+    -     **資料類型。** 在下拉式清單中選擇 [字串]。
+    -     **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -     **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
     針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
 
@@ -69,9 +73,4 @@ ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中的 Android 和 Samsung KNOX 原則設定](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

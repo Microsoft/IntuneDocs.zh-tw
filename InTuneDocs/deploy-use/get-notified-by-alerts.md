@@ -1,5 +1,5 @@
 ---
-title: "取得警示通知 | Microsoft Intune"
+title: "取得警示通知 | Microsoft Docs"
 description: "了解警示如何讓您隨時掌握 Microsoft Intune 的狀況。"
 keywords: 
 author: arob98
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 27aed0126b8aac032f334c712108b23482ef70d7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: efad781dca4a759335b67126026bf4fed127380e
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="get-notified-by-microsoft-intune-alerts"></a>取得 Microsoft Intune 警示通知
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 警示可讓您掌握 Microsoft Intune 的狀況。
 
 例如，警示可以通知您關於下列事件的資訊：
@@ -83,9 +88,4 @@ Intune 警示會保持作用中狀態，直到發生以下狀況：
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 的監視與報表](monitoring-and-reports-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

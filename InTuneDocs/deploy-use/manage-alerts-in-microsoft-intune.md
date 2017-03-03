@@ -1,5 +1,5 @@
 ---
-title: "管理警示 | Microsoft Intune"
+title: "管理警示 | Microsoft Docs"
 description: "使用 Intune 中的 [警示] 工作區，評估組織中裝置的整體健全狀況。"
 keywords: 
 author: arob98
@@ -14,14 +14,19 @@ ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b84a6e353103f35ad62fb95052c44581dd439963
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 67a7e25c8365970eb108b2529692a6f67c5de054
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="manage-alerts-in-microsoft-intune"></a>在 Microsoft Intune 中管理警示
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 Intune 管理主控台中的 [警示] 工作區評估貴組織中裝置的整體健全狀況，並且識別出問題。
 
 ## <a name="view-active-alerts"></a>檢視作用中警示
@@ -111,9 +116,4 @@ Intune 警示會持續作用到發生這些事件之一為止：
 
 ### <a name="see-also"></a>請參閱
 [取得 Microsoft Intune 警示通知](../deploy-use/get-notified-by-alerts.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

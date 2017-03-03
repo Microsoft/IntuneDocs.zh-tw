@@ -1,5 +1,5 @@
 ---
-title: "Android 使用者如何取得其應用程式 | Microsoft Intune"
+title: "Android 使用者如何取得其應用程式 | Microsoft Docs"
 description: "讓終端使用者可以使用 Android 應用程式的方法"
 keywords: 
 author: barlanmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 該資訊可能會因裝置類型 (原生 Android 裝置或 Samsung Knox Standard 裝置) 而有所不同。
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>原生 (非 Samsung Knox Standard) Android 裝置
@@ -50,9 +55,4 @@ ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
 
 [Windows 使用者如何取得其應用程式](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

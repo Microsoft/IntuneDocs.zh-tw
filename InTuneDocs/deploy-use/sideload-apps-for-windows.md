@@ -1,5 +1,5 @@
 ---
-title: "側載 Windows 和 Windows Phone 的應用程式 |Microsoft Intune"
+title: "側載 Windows 和 Windows Phone 的應用程式 | Microsoft Docs"
 description: "了解如何簽署企業營運應用程式，讓您可以使用 Intune 部署它們。"
 keywords: 
 author: robstackmsft
@@ -10,13 +10,17 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
+ms.lasthandoff: 12/10/2016
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 身為 Intune 系統管理員，您可以將企業營運 (LOB) 應用程式部署到 Windows 和 Windows 10 行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 或.xap 應用程式部署到 Windows 10 和 Windows 10 行動裝置版的裝置，或將任何 LOB 應用程式部署到 Windows 8.1 或 Windows Phone 8.1 裝置，您必須取得 **Symantec 企業行動程式碼簽署憑證**。 這些適用於個別 Windows 裝置的應用程式只信任 Symantec 憑證。 您可以針對 Windows 10 應用程式和「通用」應用程式，使用自己的憑證授權單位。 您必須擁有此憑證，才能執行下列動作：
 
@@ -139,9 +143,4 @@ ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
 4.  上傳完成後，請從 [軟體]   工作區中移除舊版公司入口網站。
 
 5.  使用新的憑證簽署所有新增及更新的企業營運應用程式。 現有的應用程式無須重新簽署，也無須重新部署。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

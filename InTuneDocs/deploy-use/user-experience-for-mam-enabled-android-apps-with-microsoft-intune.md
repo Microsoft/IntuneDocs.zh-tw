@@ -1,5 +1,5 @@
 ---
-title: "使用 MAM 原則的 Android 應用程式 | Microsoft Intune"
+title: "使用 MAM 原則的 Android 應用程式 | Microsoft Docs"
 description: "本主題描述當您的應用程式受到行動應用程式管理原則所管理時需預期的情況。"
 keywords: 
 author: NathBarn
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>當 Android 應用程式由 MAM 原則管理時會發生的情況
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題描述使用行動應用程式管理 (MAM) 原則之應用程式的使用者體驗。 只有在工作環境中使用應用程式時，才會套用 MAM 原則：例如，當使用者使用工作帳戶來存取應用程式，或存取公司商務用 OneDrive 位置中所儲存的檔案。
 ##  <a name="access-apps"></a>存取應用程式
 
@@ -82,9 +87,4 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "從 Intune 取消註冊 Windows 裝置 | Microsoft Intune"
+title: "從 Intune 取消註冊 Windows 裝置 | Microsoft Docs"
 description: "描述從 Intune 取消註冊 Windows 裝置的方式"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -27,9 +32,9 @@ ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 若要取消註冊您的裝置，請使用符合您所使用之裝置類型的連結 (如上述＜在本文中＞一節所示)：
 
--   [取消註冊您的 Windows 10 裝置](#unenroll-your-windows-10-device)
--   [取消註冊您的 Windows 8.1 電腦](#unenroll-your-windows-8-1-computer)
--   [取消註冊您的 Windows Phone 8.1 裝置](#unenroll-your-windows-phone-8-1-device)
+-    [取消註冊您的 Windows 10 裝置](#unenroll-your-windows-10-device)
+-    [取消註冊您的 Windows 8.1 電腦](#unenroll-your-windows-8-1-computer)
+-    [取消註冊您的 Windows Phone 8.1 裝置](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>取消註冊您的 Windows 10 裝置
 
@@ -62,9 +67,4 @@ ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 4.  在 [刪除帳戶] 對話方塊上，點選 [刪除]。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

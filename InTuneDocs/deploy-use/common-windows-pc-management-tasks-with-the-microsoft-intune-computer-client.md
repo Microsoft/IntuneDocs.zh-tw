@@ -1,11 +1,11 @@
 ---
-title: "一般 Windows 電腦管理工作 | Microsoft Intune"
+title: "一般 Windows 電腦管理工作 | Microsoft Docs"
 description: "了解可用來管理執行 Intune 軟體用戶端之 Windows 電腦的方式。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 94cb6278e0df458ee3696cc0c8e1018822c44cd8
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作
-檢閱您在管理執行 Intune 軟體用戶端的電腦時，可以執行之工作的清單。 如果您尚未在電腦上安裝用戶端，請參閱 [Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
+本主題列出您可以執行的工作，以安裝 Intune 軟體用戶端來管理作為電腦管理的桌上型電腦。 本主題未涵蓋將電腦作為行動裝置管理。 如果您尚未在電腦上安裝用戶端，請參閱[安裝 Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 
 - [使用原則簡化電腦管理](use-policies-to-simplify-windows-pc-management.md)：描述 Intune 的「電腦管理」原則，並列出 Microsoft Intune Center 的設定。
@@ -34,10 +36,5 @@ ms.openlocfilehash: 94cb6278e0df458ee3696cc0c8e1018822c44cd8
 
 - [對 Windows 電腦要求及提供遠端協助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)：說明 Intune 電腦使用者如何向您取得遠端協助，以及描述先決條件和 TeamViewer 安裝程式。
 
-
-
-
-
-<!--HONumber=Nov16_HO5-->
 
 

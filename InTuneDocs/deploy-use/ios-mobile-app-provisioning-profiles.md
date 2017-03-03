@@ -1,11 +1,11 @@
 ---
-title: "應用程式佈建設定檔 | Microsoft Intune"
+title: "應用程式佈建設定檔 | Microsoft Docs"
 description: "Intune 提供工具，讓您可主動將新的佈建設定檔原則部署至有應用程式即將到期的裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 部署至 iPhone 與 iPad 的 Apple iOS 企業營運應用程式，是使用包含的佈建設定檔與透過憑證簽署的程式碼所建置。 當該應用程式執行時，iOS 會確認該 iOS 應用程式的完整性，並強制執行由佈建設定檔定義的原則。 發生下列驗證︰
 
@@ -50,9 +53,4 @@ ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
     - **[組態設定檔]** - 按一下 **[匯入]**，然後選擇您從 Apple 開發人員網站下載的 Apple 行動組態設定檔檔案 (副檔名為 **.mobileprovision**)。
 4. 完成之後，請選擇 [儲存原則]。
 5. 現在，將原則部署到所需的 iOS 裝置。 如需詳細資訊，請參閱[使用 Microsoft Intune 原則管理裝置上的設定與功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

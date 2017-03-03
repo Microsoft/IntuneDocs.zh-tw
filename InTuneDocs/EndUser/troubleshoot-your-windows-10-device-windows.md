@@ -1,26 +1,31 @@
 ---
-title: "針對您的 Windows 10 裝置註冊進行疑難排解 | Microsoft Intune"
+title: "針對您的 Windows 10 裝置註冊進行疑難排解 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
+ms.lasthandoff: 12/21/2016
 
 
 ---
 
-# 針對您的 Windows 10 裝置註冊進行疑難排解
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。
 
 1.  查看接下來的兩個畫面，並找出其中看起來像在您裝置上所看到的畫面。 遵循您在裝置上看見的畫面中所顯示的步驟。
@@ -33,7 +38,7 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## 針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解
 
 1.  如果您已遵循上述步驟，但仍然無法存取自己的工作或學校電子郵件及檔案，請回到 [存取公司或學校資源]。
 
@@ -45,7 +50,7 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
     - 如果您並未看到以上所示的連線資訊，或您有看到，但遺漏了部分選項，請點選 [連線]，然後使用您的工作或學校認證登入。 現在您應已連線。
 
-## 針對如果看見 [您的帳戶] 時需遵循的步驟進行疑難排解
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>針對如果看見 [您的帳戶] 時需遵循的步驟進行疑難排解
 
 如果您遵循上述步驟，但仍然無法存取自己的公司或學校電子郵件、檔案和其他資料，請回到 [帳戶] 並點選 [公司存取]。
 
@@ -53,10 +58,5 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
 - 如果看不到自己的公司或學校帳戶，請點選 [連線]，然後以公司或學校認證登入。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Aug16_HO4-->
-
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

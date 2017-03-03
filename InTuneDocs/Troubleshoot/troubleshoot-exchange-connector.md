@@ -1,8 +1,9 @@
 ---
-title: "為 Exchange Connector 進行疑難排解 | Microsoft Intune"
+title: "針為 Exchange Connector 進行疑難排解 | Microsoft Docs"
 description: "與 Intune Exchange Connector 相關的疑難排解問題。"
 keywords: 
-author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -12,17 +13,22 @@ ms.technology:
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
+ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
+ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# 為 Exchange Connector 進行疑難排解
+# <a name="troubleshoot-the-exchange-connector"></a>為 Exchange Connector 進行疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題描述如何針對可能與 Intune Exchange Connector 相關的問題進行疑難排解。
 
-## 檢查 Connector 設定的步驟 
+## <a name="steps-for-checking-the-connector-configuration"></a>檢查 Connector 設定的步驟 
 
 檢查 Exchange Connector 的設定，然後查看是否已將問題解決。
 
@@ -31,7 +37,7 @@ ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
 - 設定 Exchange Connector 時，指定的用戶端存取伺服器 (CAS) 要儘可能靠近裝載 Exchange Connector 的伺服器。 CAS 與 Exchange Connector 之間的通訊延遲，可能會導致裝置探索延遲，尤其是在使用 O365 專用時。
 - 請注意 Exchange Connector 同步處理與 Exchange CAS 之間，在時間上會有延遲。 完整同步處理會一天執行一次，而差異 (快速) 同步處理則是每兩小時執行一次。 使用新註冊裝置的使用者進行存取時，很可能會遇到延遲。
 - 
-## 無法從 Exchange 探索 Exchange ActiveSync 裝置
+## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>無法從 Exchange 探索 Exchange ActiveSync 裝置
 檢查 Exchange Connector 是否正在與 Exchange Server 進行同步處理。 若要這樣做，請找出完整同步處理或差異同步處理的記錄檔。 請參閱＜Exchange Connector 記錄檔＞。 如果自裝置加入之後已順利完成完整同步處理或差異同步處理，這就不會是問題來源。 如果尚未進行任何同步處理，請收集同步處理記錄檔，並附加到您的支援要求中。
 
 - 如果使用者沒有 Intune 授權，Exchange Connector 將不會探索他們的裝置。
@@ -40,16 +46,11 @@ ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
 - 在 Exchange 專用 (O365 專用) 環境中，您必須在初始設定時將 Exchange Connector 指向專用環境中的 Exchange 2013 (而非 2010) CAS，因為在執行 Powershell Cmdlet 時，它只會與此 CAS 通訊。
 
 
-## 使用 Powershell 取得 Exchange Connector 問題的更多資料
+## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>使用 Powershell 取得 Exchange Connector 問題的更多資料
 - 若要取得信箱所有行動裝置的清單，可使用 Get-ActiveSyncDeviceStatistics -mailbox mbx
 - 若要取得信箱 SMTP 位址的清單，可使用 Get-Mailbox -Identity user | select emailaddresses | fl。
 - 若要取得有關裝置存取狀態的詳細資訊，可使用 Get-CASMailbox <upn> | fl
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Aug16_HO1-->
-
 

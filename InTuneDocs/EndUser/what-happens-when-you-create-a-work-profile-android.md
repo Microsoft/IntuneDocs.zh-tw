@@ -1,5 +1,5 @@
 ---
-title: "當您建立工作設定檔時，會發生什麼事 | Microsoft Intune"
+title: "當您建立 Work 設定檔時，會發生什麼事 | Microsoft Docs"
 description: "描述加密 Android 裝置的方式"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -43,11 +48,4 @@ ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 如需建立工作設定檔的步驟，請參閱[建立工作設定檔並註冊您的裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

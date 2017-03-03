@@ -1,11 +1,11 @@
 ---
-title: "建立原則以及將應用程式發行給使用者 | Microsoft Intune"
+title: "建立原則以及將應用程式發行給使用者 | Microsoft Docs"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何建立原則並發行應用程式"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
+ms.lasthandoff: 12/14/2016
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>建立原則以及將應用程式發行給評估使用者
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 原則提供設定，協助您控制行動裝置上的安全性設定、維護電腦的 Windows 防火牆和 Endpoint Protection 設定，以及部署應用程式。 如果您打算在評估期過後，將 Intune 用於實際執行所設定的裝置，請務必遵循[透過 Microsoft Intune 原則管理裝置上的設定和功能](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)中的指示。
 
 您可以使用 Intune 執行兩種類型的 App 安裝。 第一種是**必要安裝**，會自動將應用程式部署到受管理的裝置。 另一個則是**可用的安裝**，會部署應用程式或應用程式的連結到 Intune 公司入口網站，讓使用者可以選擇是否要將其安裝在電腦上，或安裝在行動裝置上。
@@ -99,9 +104,4 @@ Intune 行動裝置管理指南到這裡已經結束，但您可以透過後續�
 閱讀[使用 Intune 的常見方式](common-ways-to-use-intune.md)
 
 轉換為[付費訂閱](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

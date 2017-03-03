@@ -1,11 +1,11 @@
 ---
-title: "使用 MAM 原則的 iOS 應用程式 | Microsoft Intune"
+title: "使用 MAM 原則的 iOS 應用程式 | Microsoft Docs"
 description: "本主題描述當您的 iOS 應用程式由行動應用程式管理原則管理時會發生的情況。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,29 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>當 iOS 應用程式由 MAM 原則管理時會發生的情況
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  本主題描述使用行動存取管理 (MAM) 原則之應用程式的使用者體驗。 只有在工作內容中使用應用程式時，才會套用 MAM 原則：例如，當使用者使用工作帳戶來存取應用程式，或存取公司商務用 OneDrive 地點中所儲存的檔案。
 
 ##  <a name="access-apps"></a>存取應用程式
 
-如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。  必須重新啟動，才能將 MAM 原則套用到應用程式。 下列 Skype 應用程式的螢幕擷取畫面說明這個重新啟動要求：
+如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。  必須重新啟動，才能將 MAM 原則套用到應用程式。 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![顯示 PIN 提示的 iOS 裝置螢幕擷取畫面](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 針對**在 Intune 中註冊以進行管理**的裝置，使用者會看到其應用程式現在已受管理的訊息：
 
@@ -65,9 +72,4 @@ Intune 僅支援將 MAM 原則部署到每個裝置的一個使用者帳戶。
 [當 Android 應用程式由 MAM 原則管理時會發生的情況](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 建立及部署行動應用程式管理原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

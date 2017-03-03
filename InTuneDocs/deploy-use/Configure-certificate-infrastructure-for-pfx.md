@@ -1,5 +1,5 @@
 ---
-title: "設定 PFX 的憑證基礎結構 | Microsoft Intune"
+title: "設定 PFX 的憑證基礎結構 | Microsoft Docs"
 description: "建立及部署 .PFX 憑證設定檔。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>設定憑證基礎結構
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題說明建立及部署 .PFX 憑證設定檔需要什麼。
 
 若要在組織中執行任何以憑證為基礎的驗證，您需要企業憑證授權單位。
@@ -31,7 +36,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 -  Intune Certificate Connector，其在可與憑證授權單位通訊的電腦上執行。
 
-## <a name="onpremises-infrastructure-description"></a>內部部署基礎結構描述
+## <a name="on-premises-infrastructure-description"></a>內部部署基礎結構描述
 
 
 -    **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
@@ -65,7 +70,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 - **工作 1** - 設定憑證授權單位上的憑證範本。
 - **工作 2** - 啟用、安裝及設定 Intune 憑證連接器。
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>工作 1 - 設定憑證授權單位上的憑證範本
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>工作 1 - 設定憑證授權單位上的憑證範本
 在此工作中，您將發行憑證範本。
 
 ##### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
@@ -104,7 +109,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 4.  在 CA 電腦上，確認裝載 Intune 憑證連接器的電腦有註冊權限，使其能夠存取用來建立 .PFX 設定檔的範本。 在 CA 電腦內容的 [安全性]  索引標籤上設定該權限。
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>工作 2 - 啟用、安裝及設定 Intune Certificate Connector
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>工作 2 - 啟用、安裝及設定 Intune Certificate Connector
 在這項工作中，您將會：
 
 下載、安裝及設定憑證連接器。
@@ -153,9 +158,4 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 ### <a name="next-steps"></a>後續步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

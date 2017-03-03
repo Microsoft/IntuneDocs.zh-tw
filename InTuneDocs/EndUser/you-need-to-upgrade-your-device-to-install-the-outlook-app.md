@@ -1,42 +1,41 @@
 ---
-title: "您需要升級裝置以安裝 Outlook 應用程式 | Microsoft Intune"
+title: "您必須升級裝置 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vadona
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 9219829cf73cbd141a165f88b30f564f857e2b5d
+ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
+ms.openlocfilehash: 8ef336e58c7b1d995d314202b5530d2f6b2ff138
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>您需要升級裝置以安裝 Outlook 應用程式
 
-如果您想要下載 Outlook 電子郵件應用程式，並且看到訊息，指出您的 Android 或 iOS 裝置作業系統版本低於最低必要版本，您需要升級裝置才能繼續進行。
+不論 [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) 或 [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) 裝置，Outlook 應用程式皆可協助數百萬名使用者在單一的方便位置中，連接所有電子郵件帳戶、行事曆和檔案。
 
-若要升級，請使用以下符合您所用裝置類型的指示：
+如果您嘗試下載 Outlook，但裝置沒有加以安裝，反而跳出一則訊息，指出裝置的作業系統版本不夠新， 此時就必須升級裝置以安裝 Outlook。
 
-## <a name="to-upgrade-your-android-device"></a>升級 Android 裝置
+## <a name="if-you-have-an-android-device"></a>如為 Android 裝置
 移至 [設定]，然後使用 [更新] 或 [系統更新] 選項。
 
-## <a name="to-upgrade-your-ios-device"></a>升級 iOS 裝置
-點選 [設定] &gt; [一般] &gt; [軟體更新]。
+## <a name="if-you-have-an-ios-device"></a>如為 iOS 裝置
+點選 [設定] > [一般] > [軟體更新]。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "使用 App Wrapping Tool 包裝 Android 應用程式 | Microsoft Intune"
+title: "使用 App Wrapping Tool 包裝 Android 應用程式 | Microsoft Docs"
 description: "使用本文中的資訊，了解如何在不需變更應用程式本身程式碼的情況下，包裝您的 Android 應用程式。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
+ms.lasthandoff: 12/20/2016
 
 
 ---
 
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune App Wrapping Tool for Android 變更內部 Android 應用程式的行為，讓您限制應用程式的功能，而不需變更應用程式本身的程式碼。
 
@@ -137,9 +141,4 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 - [使用 SDK 讓應用程式進行行動應用程式管理](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

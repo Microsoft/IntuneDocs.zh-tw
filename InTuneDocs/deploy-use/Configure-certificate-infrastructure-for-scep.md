@@ -1,5 +1,5 @@
 ---
-title: "設定 SCEP 的憑證基礎結構 |Microsoft Intune"
+title: "設定 SCEP 的憑證基礎結構 | Microsoft Docs"
 description: "建立及部署 SCEP 憑證設定檔的基礎結構。"
 keywords: 
 author: robstackmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.lasthandoff: 12/10/2016
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題說明建立及部署 SCEP 憑證設定檔所需的基礎結構。
 
-### <a name="onpremises-infrastructure"></a>內部部署基礎結構
+### <a name="on-premises-infrastructure"></a>內部部署基礎結構
 
 -    **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
 
@@ -77,14 +82,14 @@ I
 
 **工作 5**：啟用、安裝及設定 Intune 憑證連接器
 
-### <a name="task-1-create-an-ndes-service-account"></a>工作 1 - 建立 NDES 服務帳戶
+### <a name="task-1---create-an-ndes-service-account"></a>工作 1 - 建立 NDES 服務帳戶
 
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時指定此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
 
 
 
 
-### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>工作 2 - 設定憑證授權單位上的憑證範本
+### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>工作 2 - 設定憑證授權單位上的憑證範本
 在這項工作中，您將會：
 
 -   設定 NDES 的憑證範本
@@ -93,7 +98,7 @@ I
 
 ##### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
 
-1.  以企業系統管理員身分登入。 
+1.  以企業系統管理員身分登入。
 
 2.  在發行 CA 上，使用 [憑證範本] 嵌入式管理單元來建立新的自訂範本，或複製現有的範本，然後編輯現有的範本 (例如使用者範本) 以搭配 NDES 使用。
 
@@ -109,7 +114,7 @@ I
         > 若為 iOS 和 Mac OS X 憑證範本，請在 [延伸] 索引標籤上，編輯 [金鑰使用方法] ，並確保未選取 [簽章是原件證明]。
 
     -   在 [安全性] 索引標籤上，新增 NDES 服務帳戶，並提供其 [註冊] 範本的權限。 將建立 SCEP 設定檔的 Intune 系統管理員需要 [讀取] 權限，讓他們可以在建立 SCEP 設定檔時瀏覽至範本。
-    
+
     > [!NOTE]
     > 若要撤銷憑證，NDES 服務帳戶需要憑證設定檔所使用之每個憑證範本的*發行及管理憑證*權限。
 
@@ -120,19 +125,19 @@ I
 
 以下是範例範本設定的螢幕擷取畫面。
 
-![範本, 處理要求索引標籤](..\media\scep_ndes_request_handling.png) 
+![範本, 處理要求索引標籤](..\media\scep_ndes_request_handling.png)
 
-![範本, 主體名稱索引標籤](..\media\scep_ndes_subject_name.jpg) 
+![範本, 主體名稱索引標籤](..\media\scep_ndes_subject_name.jpg)
 
-![範本, 安全性索引標籤](..\media\scep_ndes_security.jpg) 
+![範本, 安全性索引標籤](..\media\scep_ndes_security.jpg)
 
-![範本, 延伸索引標籤](..\media\scep_ndes_extensions.jpg) 
+![範本, 延伸索引標籤](..\media\scep_ndes_extensions.jpg)
 
-![範本, 發行需求索引標籤](..\media\scep_ndes_issuance_reqs.jpg) 
+![範本, 發行需求索引標籤](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > 對於應用程式原則 (在第 4 個螢幕擷取畫面)，只能新增所需的應用程式原則。 向您的安全性系統管理員確認您的選擇。
-   
+
 
 
 若要設定 CA 以允許要求者指定有效期間，請在 CA 上執行下列命令：
@@ -149,7 +154,7 @@ I
     2.  檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
 
-### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>工作 3 - 設定 NDES 伺服器上的必要條件
+### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>工作 3 - 設定 NDES 伺服器上的必要條件
 在這項工作中，您將會：
 
 -   將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
@@ -190,7 +195,7 @@ I
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4-configure-ndes-for-use-with-intune"></a>工作 4 - 設定 NDES 以便搭配 Intune
+### <a name="task-4---configure-ndes-for-use-with-intune"></a>工作 4 - 設定 NDES 以便搭配 Intune
 在這項工作中，您將會：
 
 -   設定 NDES 以便用於發行 CA
@@ -239,12 +244,12 @@ I
 
 4. 在 IIS 管理員中，選擇 [預設的網站] -> [要求篩選] -> [編輯功能設定]，然後將 [URL 長度上限] 和 [查詢字串上限] 變更為 *65534* (如所顯示)。
 
-    ![IIS URL 和查詢長度上限](..\media\SCEP_IIS_max_URL.png) 
+    ![IIS URL 和查詢長度上限](..\media\SCEP_IIS_max_URL.png)
 
 5.  重新啟動伺服器。 在伺服器上執行 **iisreset** 並無法完成這些變更。
 6. 瀏覽至 http://*FQDN*/certsrv/mscep/mscep.dll。 您應該會看到與下面類似的 NDES 頁面︰
 
-    ![測試 NDES](..\media\SCEP_NDES_URL.png) 
+    ![測試 NDES](..\media\SCEP_NDES_URL.png)
 
     如果您收到「503 服務無法使用」，請檢查 eventviewer。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 工作 1 會說明這些權限。
 
@@ -294,7 +299,7 @@ I
 
 4.  重新啟動 NDES 伺服器。 伺服器現在已準備好支援 Certificate Connector。
 
-### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>工作 5 - 啟用、安裝及設定 Intune 憑證連接器
+### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>工作 5 - 啟用、安裝及設定 Intune 憑證連接器
 在這項工作中，您將會：
 
 啟用 Intune 中的 NDES 支援。
@@ -347,9 +352,4 @@ I
 
 ## <a name="next-steps"></a>後續步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
