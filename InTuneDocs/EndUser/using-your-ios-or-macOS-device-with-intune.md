@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
-ms.openlocfilehash: 0c594c7a22a86ab576c9bdb191ed02f13cdcc19c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -40,7 +40,8 @@ ms.lasthandoff: 02/18/2017
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 - [設定或變更密碼](set-or-change-your-passcode-ios.md)
-- [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-lost-or-stolen-device-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+- [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)
 - [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)
 - [如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
