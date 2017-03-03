@@ -1,5 +1,5 @@
 ---
-title: "建立群組來組織使用者和裝置 | Microsoft Intune"
+title: "在免費試用版中建立群組來組織使用者和裝置 | Microsoft Docs"
 description: "當您註冊免費 30 天的 Microsoft Intune 評估時，如何建立裝置群組和使用者群組。"
 keywords: 
 author: lindavr
@@ -12,14 +12,19 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab451a1213923ecd27dfc0b8ca353041e70435ed
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 4c17395480debfadcf05adef58c3eb1fa3b62a85
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>建立群組來組織評估訂閱使用者和裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您可以設定群組，使其符合組織的需求 (例如依據地理位置、部門或硬體特性)，並且使用它們來大規模地執行各種系統管理工作，從設定一組使用者的原則，到部署應用程式至一組裝置。
 
 ## <a name="create-a-device-group"></a>建立裝置群組
@@ -58,9 +63,4 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 ## <a name="next-steps"></a>後續步驟
 [建立原則](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "新增已註冊裝置的應用程式 | Microsoft Intune"
+title: "新增已註冊裝置的應用程式 | Microsoft Docs"
 description: "您必須先將應用程式新增至 Intune，才能部署它。 然後它便會提供於 Intune 主控台中，您可以在其中加以部署和管理。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
+ms.lasthandoff: 01/11/2017
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>將已註冊裝置的應用程式新增至 Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 您必須先將應用程式新增至 Microsoft Intune，才能部署或管理它。 本主題說明如何新增已註冊裝置的應用程式。
 
@@ -57,6 +61,9 @@ ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
         例如，如果您想要將 iTunes Store 的 Microsoft Word 應用程式部署到裝置，頁面將如下所示︰
 
         ![Intune 軟體發行者](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> 當您加入及部署來自存放區的應用程式時，使用者必須擁有該存放區的帳戶，才能安裝應用程式。
 
 3.  在 [軟體描述] 頁面上，設定下列項目：
 
@@ -97,9 +104,4 @@ ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
 ## <a name="next-steps"></a>後續步驟
 
 完成建立應用程式後，下一個步驟是進行部署。 若要深入了解，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 
