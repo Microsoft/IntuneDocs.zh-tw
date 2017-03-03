@@ -1,25 +1,28 @@
 ---
-title: "密碼不符合 IT 系統管理員需求 | Microsoft Intune"
+title: "您的密碼不符合 IT 系統管理員需求 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 60659d60e3fcf2146b444a3334192c8b1181f735
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>密碼不符合 IT 系統管理員需求
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>您的密碼不符合 IT 系統管理員需求
 
 您用來存取公司或學校資源的密碼，不符合一或多項 IT 系統管理員所設定的需求。 若要修正此問題，請遵循裝置上顯示的下列指示。 下方列出問題的描述。
 
@@ -43,12 +46,12 @@ PIN 或密碼問題的描述：
 
 - **您的密碼是最近使用過的密碼**。 IT 系統管理員不允許您使用之前用過的舊密碼。 請選擇您之前未曾使用過的密碼。
 
-- **密碼不夠複雜，無法符合需求**。 IT 系統管理員要求您必須在密碼中使用更複雜的字元。 請嘗試使用數字、大寫的字母和 $ %和 # 這類符號。
+- **密碼不夠複雜，無法符合需求**。 IT 系統管理員要求您必須在密碼中使用更複雜的字元。 請嘗試使用數字、大寫的字母和 $ %和 # 這類符號。 這也適用於您裝置上的其他帳戶，因此請務必檢查任何其他工作帳戶，確保您的密碼符合 IT 為您的裝置所設定的需求。
 
 如果您無法了解如何讓您的密碼符合需求，請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

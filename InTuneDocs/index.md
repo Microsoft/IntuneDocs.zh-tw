@@ -9,14 +9,14 @@ keywords: "Intune 文件, 應用程式管理, 裝置管理, MDM 文件, MAM 文�
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -25,20 +25,20 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
     <section id="hero-content">
       <h1>Intune 文件</h1>
       <h2>從雲端進行行動裝置和應用程式管理，以及電腦管理。 </h2>
-      <h3>要使用 Configuration Manager 管理 Intune 嗎？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">了解混合式行動裝置管理 &rarr;</a></h3>
+      <h3>要使用 Configuration Manager 管理 Intune 嗎？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">了解混合式行動裝置管理&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span>主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">150 台以上的授權？ 利用 FastTrack 權益</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">使用 Intune 的常見方式</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure 入口網站中的 Intune 預覽</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">需要&150; 份以上的授權嗎？運用您的 FastTrack 權益</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">常見的 Intune 用法</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure 入口網站 Intune 預覽版</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">保護公司資源的存取權</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">Microsoft Intune App SDK for iOS 開發人員指南</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Android 的 Microsoft Intune App SDK 開發人員指南</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">公司資源存取保護</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">在 Microsoft Graph 中使用 Intune</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">使用 Microsoft Intune 之使用者體驗的相關資源</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Intune 簡介</h3>
+                    <h3>什麼是 Intune？</h3>
                     <p>深入了解 Intune 如何為行動裝置 (iOS 裝置、Android 裝置、 Windows 手機) 和 Windows 電腦提供裝置、應用程式和資料管理功能。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune 評估指南</h3>
+                    <h3>Intune 是否適合您？</h3>
                     <p>使用試用版指南逐步解說的步驟，取得試用版並搭配最多 100 位使用者和裝置。</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>開始進行前的須知</h3>
-                    <p>讓您快速熟悉任何 Intune 部署的基準需求。</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Intune 快速入門指南</h3>
-                    <p>本主題以 30 天試用版指南為基礎，逐步引導您進行 Azure Active Directory 同步處理、網域和 DNS 考量與其他的 Intune 自訂項目。</p>
+                    <h3>入門指南</h3>
+            <p>本主題以 30 天試用版指南為基礎，逐步引導您進行 Azure Active Directory 同步處理、網域和 DNS 考量與其他的 Intune 自訂項目。</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>首展階段</h3>
-                    <p>定義您的 Intune 目標、架構、試驗和生產首展計劃。</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>防止公司資料從 Office 365 行動應用程式外洩</h3>
+                    <p>使用可協助防止公司資料外洩的應用程式保護原則，來保護您組織的資料。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>簡化行動裝置上的電子郵件設定</h3>
+                    <p>將電子郵件 (以及 VPN 和 WiFi) 設定檔部署至由 Intune 服務管理的 Windows、iOS 和 Android 行動裝置，以節省公司的時間和資源。</p>
                   </a>
                 </li>
               </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>要告訴使用者的內容</h3>
                     <p>了解您的使用者在其裝置上使用 Intune 時所需執行的步驟，並將這些資訊與使用者分享，以幫助他們自行完成工作。</p>
                   </a>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>限制存取電子郵件和 O365 服務</h3>
-                    <p>使用 Intune 的條件式存取功能，限制對公司電子郵件和 Office 365 服務的存取。</p>
+                    <h3>保護對電子郵件和 O365 服務的存取</h3>
+                    <p>使用 Intune 的條件式存取功能，保護對公司電子郵件和 Office 365 服務的存取。</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -262,12 +262,12 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
       <h2 class="section-heading"><span class="icon icon-note"></span>Intune 的其他資源</h2>
       <div class="resource-list row">
           <ul class="column-half">
-          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">針對 Intune 功能提供意見反應</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">針對文件提供意見反應</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">提供 Intune 功能的意見反應</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">提供文件的意見反應</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune 文件下載</a></li>
           </ul>
           <ul class="column-half">
-          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Enterprise Mobility Suite 的快速追蹤中心</a></li>
+          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Enterprise Mobility Suite 的 Fast Track Center</a></li>
           <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet 論壇</a></li>
           <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Intune 產品頁面</a></li>
           </ul>
@@ -278,13 +278,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
       <p>瞭解 Intune 的最新資訊</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune 小組部落格</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">Twitter 上的 @MSIntune</a></li>
+        <li>Twitter 上的 <a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

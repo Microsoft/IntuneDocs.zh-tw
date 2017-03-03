@@ -1,11 +1,11 @@
 ---
-title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Docs
+title: "若您拒絕接受＜使用規定＞，請取消註冊您的裝置"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1d91847166f0e2da22a322ac1a1483266b46d8ed
-ms.openlocfilehash: e8dbf10fcc649bd71ac33bd07d1d79f825a91f73
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
 
 
 ---
 
 
-# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請從 Intune 取消註冊您的裝置
+# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請取消註冊您的裝置
 
 取消註冊 Android 裝置的最佳方式是接受使用條款，並登入公司入口網站應用程式，然後使用[這些指示](unenroll-your-device-from-intune-android.md)來取消註冊。 不過，如果您在嘗試登入公司入口網站應用程式時拒絕使用條款，您未來就無法嘗試登入公司入口網站應用程式，因此您必須使用這些「因應措施」指示來取消註冊您的裝置。
 
@@ -45,6 +47,6 @@ ms.openlocfilehash: e8dbf10fcc649bd71ac33bd07d1d79f825a91f73
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

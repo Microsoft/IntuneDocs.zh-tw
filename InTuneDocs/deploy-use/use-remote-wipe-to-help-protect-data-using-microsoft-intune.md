@@ -1,11 +1,11 @@
 ---
-title: "使用遠端抹除以協助保護資料 | Microsoft Intune"
+title: "使用遠端抹除以協助保護資料 | Microsoft Docs"
 description: "Intune 提供選擇性抹除和完整抹除功能，以移除公司機密資料，以及移除許多公司資源的存取權。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>協助透過使用 Microsoft Intune 的完整或選擇性抹除來保護您的資料
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 當 Intune 管理的裝置不再被需要、重新設定用途，或是已經遺失時，您可以抹除其中的應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 使用者也可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
 
   > [!NOTE]
@@ -114,10 +118,14 @@ ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
-|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
-|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
+|電子郵件|無。 請參閱 Outlook 項目。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
+|Outlook|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
+
+**Android for Work**
+
+在 Android for Work 裝置上執行選擇性抹除會移除該裝置上工作設定檔中的所有資料、應用程式和設定。 這會從 Intune 管理淘汰裝置。 Android for Work 不支援完全抹除。
 
 **Windows**
 
@@ -165,6 +173,6 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

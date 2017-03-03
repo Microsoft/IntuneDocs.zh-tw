@@ -1,11 +1,11 @@
 ---
-title: "新增使用者並授與權限 | Microsoft Intune"
+title: "新增使用者並授與權限 | Microsoft Docs"
 description: "同步處理內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主題將告訴系統管理員如何將使用者新增至 Intune 以及 Intune 服務中可用的系統管理權限。
 
 身為系統管理員，您可以直接新增使用者，或同步內部部署 Active Directory 中的使用者。 新增之後，使用者便可以註冊裝置，並存取公司資源。 您也可以授與使用者其他權限，包括「租用戶系統管理員」、「服務管理員」，以及「裝置註冊管理員」權限。
 
@@ -33,7 +38,7 @@ ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
   - [裝置註冊管理員](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>將使用者新增至 Intune
-您可以透過 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，手動將使用者加入 Intune 訂閱，他們不會自動被指派 Intune 授權。 而是在稍後，Intune 租用戶系統管理員必須編輯使用者帳戶，以從 Office 365 入口網站將授權指派給使用者。 如需指引，請參閱[單獨或大量新增使用者到 Office 365 入口網站](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
+您可以透過 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，手動將使用者新增至 Intune 訂閱，但他們不會自動獲指派 Intune 授權。 而是在稍後，Intune 租用戶系統管理員必須編輯使用者帳戶，以從 Office 365 入口網站將授權指派給使用者。 如需指引，請參閱[單獨或大量新增使用者到 Office 365 入口網站](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>同步處理 Active Directory 並將使用者新增至 Intune
 您可以設定目錄同步處理，將使用者帳戶從內部部署 Active Directory 匯入到其中包括 Intune 使用者的 Microsoft Azure Active Directory (Azure AD)。 讓內部部署的 Active Directory 與所有 Azure Active Directory 服務連線，可更易於管理使用者身分識別。 您也可以設定單一登入功能，讓使用者的驗證體驗親切又簡單。 透過連結同一個 [Azure AD 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)與多個服務，您之前已經同步的使用者帳戶就可用於所有雲端服務。
@@ -101,6 +106,6 @@ ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

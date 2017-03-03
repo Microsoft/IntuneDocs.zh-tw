@@ -1,21 +1,25 @@
 ---
-title: "建立工作設定檔並在 Intune 註冊您的裝置 | Microsoft Intune"
-description: "描述加密 Android 裝置的方式"
+title: "使用工作設定檔註冊裝置 | Microsoft Docs"
+description: "使用工作設定檔讓 Android 裝置更安全的方法。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -69,7 +73,7 @@ ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
     您會暫時看到「註冊您的裝置」訊息。
 
-11. 當 [公司存取設定] 畫面顯示所有項目都已正確設定時，請點選 [繼續]。 
+11. 當 [公司存取設定] 畫面顯示所有項目都已正確設定時，請點選 [繼續]。
 
     ![公司存取設定顯示工作設定檔和註冊已完成](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -85,8 +89,6 @@ ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

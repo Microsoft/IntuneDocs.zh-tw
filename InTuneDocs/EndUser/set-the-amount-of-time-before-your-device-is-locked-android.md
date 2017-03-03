@@ -1,27 +1,31 @@
 ---
-title: "設定您的裝置在鎖定前的時間量 | Microsoft Intune"
+title: "如何設定鎖定裝置前的時間量 | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 47513e279ca1b79b0ce5fe1d27652e1d7fb312ab
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# 設定您的裝置在鎖定前的時間量
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>如何設定鎖定裝置前的時間量
 
 為了讓 Android 裝置上的資料更加安全，IT 系統管理員可以設定原則，要求您設定裝置在自動鎖定之前可以維持閒置的時間量。 請遵循下列步驟來設定裝置在鎖定前的時間量。
 
@@ -29,13 +33,10 @@ ms.openlocfilehash: 47513e279ca1b79b0ce5fe1d27652e1d7fb312ab
 
 2.  指定密碼逾時值。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-### 請參閱
-[透過 Intune 使用 Android 裝置](using-your-android-device-with-intune.md)
+是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

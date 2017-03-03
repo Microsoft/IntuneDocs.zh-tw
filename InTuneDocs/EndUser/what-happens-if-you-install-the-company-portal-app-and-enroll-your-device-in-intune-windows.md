@@ -1,11 +1,11 @@
 ---
-title: "如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？ | Microsoft Docs"
+title: "安裝 Windows 的公司入口網站應用程式 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -33,7 +35,7 @@ ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
 
 -   存取公司的網路、電子郵件與工作檔案。
 
--   從公司入口網站取得公司應用程式。 (若為 Windows 7 及 Windows Vista，可以從公司入口網站取得公司應用程式)。
+-   從公司入口網站取得公司應用程式。 (__注意__：若為 Windows 7 及 Windows Vista，您只能從公司入口網站取得公司應用程式)。
 
 -   自動設定公司或學校的電子郵件帳戶。
 
@@ -66,6 +68,7 @@ ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
 -  您的 IT 系統管理員可以在您的電腦上安裝應用程式並加以更新。
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>在註冊裝置後每隔八小時會發生的事
+
 已註冊的裝置每隔大約八小時將會：
 
 -   下載您 IT 系統管理員提供的原則或應用程式更新。
@@ -75,9 +78,4 @@ ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
 -   傳送任何公司應用程式清查更新。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

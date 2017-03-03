@@ -1,6 +1,6 @@
 ---
-title: "開始使用 | Microsoft Intune"
-description: "開始使用 Intune 訂用帳戶的需求和必要條件"
+title: "開始使用 | Microsoft Docs"
+description: "開始使用 Intune 訂閱的需求和必要條件"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,14 +14,18 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Intune 快速入門指南
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本指南可協助您開始使用 Microsoft Intune 的付費訂閱。 請依照下列步驟管理行動裝置和 Windows 電腦，以及您組織中的應用程式。 您可以依序執行每個步驟，或在某個步驟不適用於您的環境或商務需求時跳過該步驟。 如果您想要試著了解 Intune，請參閱 [Intune 評估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)。  
 
 如果您目前正在使用 Microsoft System Center Configuration Manager 來管理電腦和伺服器，您可以[延伸 Configuration Manager 來管理行動裝置](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
@@ -47,9 +51,4 @@ ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
 
 >[!div class="step-by-step"]
 [**必要條件** &rarr;](what-to-know-before-you-start-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "保護裝置 | Microsoft Intune"
+title: "使用 Microsoft Intune 保護裝置 | Microsoft Docs"
 description: "了解 Intune 可協助您針對未經授權存取和其他威脅保護您裝置的幾個方式。"
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保護裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 提供一組完整的功能，可協助您保護您所管理的裝置和儲存在這些裝置上的資料。 閱讀本主題來了解這些功能的基本概念，並找出深入了解的方法。
 
@@ -43,10 +47,10 @@ Intune 提供[裝置法務遵循政策](introduction-to-device-compliance-polici
 ### <a name="protect-apps-and-the-data-they-use"></a>保護應用裝置及其使用的資料
 Intune 為您提供多種功能以協助保護應用程式及其資料。 例如，行動應用程式管理 (MAM) 原則可禁止從受保護的應用程式備份資料、限制複製並貼到其他應用程式的作業、要求有 PIN 才能存取應用程式等。 如需保護應用程式的詳細資料，請參閱[使用 Microsoft Intune 保護應用程式和資料](protect-apps-and-data-with-microsoft-intune.md)
 
-## <a name="further-capabilities-for-windows-devices"></a>適用於 Windows 裝置的其他功能
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>為裝置多加一層保護
+[Multi-Factor Authentication (MFA)](multi-factor-authentication-azure-active-directory.md) 可以更安全地在網路上驗證裝置的使用者。  使用 MFA 時，除了使用者名稱和密碼之外，使用者還必須透過電話或簡訊來確認其身分識別。
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>為 Windows 裝置多加一層保護
-[Multi-Factor Authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) 可以更安全地在網路上驗證 Windows 和 Windows Phone 裝置的使用者。  使用 MFA 時，除了使用者名稱和密碼之外，使用者還必須透過電話或簡訊來確認其身分識別。
+## <a name="further-capabilities-for-windows-devices"></a>適用於 Windows 裝置的其他功能
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>控制 Windows 裝置上的 Windows Hello 企業版設定
 Intune 可讓您與 [Windows Hello 企業版](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (原稱為 Microsoft Passport) 整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 和更新版本的替代方法。
@@ -60,9 +64,4 @@ Intune 可讓您與 [Windows Hello 企業版](control-microsoft-passport-setting
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>保護使用 Intune 用戶端管理的 Windows 電腦
 對於您未註冊但以 Intune 電腦用戶端軟體管理的 Windows 電腦，Intune 持續支援安全性原則。 若要了解這些原則如何協助保護 Windows 電腦，請參閱[使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦](policies-to-protect-windows-pcs-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

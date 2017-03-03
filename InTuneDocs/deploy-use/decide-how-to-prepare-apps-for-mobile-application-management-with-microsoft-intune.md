@@ -1,11 +1,11 @@
 ---
-title: "針對行動應用程式管理準備應用程式 | Microsoft Intune"
+title: "決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理 | Microsoft Docs"
 description: "本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理原則。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理
+# <a name="prepare-line-of-business-apps-for-mam"></a>準備 MAM 的商務營運應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用行動應用程式管理 (MAM) 原則。 使用這項資訊可了解這兩種方法和其使用時機。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
@@ -52,7 +56,7 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有應用程式並想要可以使用 Intune 管理應用程式的客戶。 不過，任何應用程式都可以利用 SDK 的整合，即使它是企業營運應用程式也是一樣。
 
-若要深入了解 SDK，請參閱[概觀](/intune/develop/intune-app-sdk)。 若要開始使用 SDK，請參閱[開始使用 Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)。
+若要深入了解 SDK，請參閱[概觀](../develop/intune-app-sdk.md)。 若要開始使用 SDK，請參閱[開始使用 Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的理由
 * 您的 App 沒有內建資料保護功能。
@@ -66,8 +70,8 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|是，使用 [Intune App SDK Xamarin 元件](/../develop/intune-app-sdk-xamarin)。|是，使用 [Intune App SDK Cordova 外掛程式](/../develop/intune-app-sdk-cordova)。|
-|**Android**| 是，使用 [Intune App SDK Xamarin 元件](/../develop/intune-app-sdk-xamarin)。|是，使用 [Intune App SDK Cordova 外掛程式](/../develop/intune-app-sdk-cordova)。|
+|**iOS**|是，使用 [Intune App SDK Xamarin 元件](../develop/intune-app-sdk-xamarin.md)。|是，使用 [Intune App SDK Cordova 外掛程式](../develop/intune-app-sdk-cordova.md)。|
+|**Android**| 是，使用 [Intune App SDK Xamarin 元件](../develop/intune-app-sdk-xamarin.md)。|是，使用 [Intune App SDK Cordova 外掛程式](../develop/intune-app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比較
 此表格列出您可以用於 App SDK 和 App Wrapping Tool 的設定。
@@ -106,6 +110,6 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

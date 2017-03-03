@@ -1,11 +1,11 @@
 ---
-title: "Windows 裝置的相容性原則設定| Microsoft Intune"
+title: "Windows 裝置的相容性原則設定| Microsoft Docs"
 description: "本主題說明您能為 Windows 裝置之相容性原則設定的規則與設定。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 裝置的相容性原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主題中所述的原則設定適用於執行 Windows 作業系統的裝置。 下列各節說明支援的 Windows 版本。
 
@@ -71,9 +75,12 @@ Windows Phone 8.1 及更新版本支援這一節所列的設定。
 - **需要裝置回報為狀況良好：**您可以設定規則，要求在新的或現有的相容性原則中，**Windows 10 行動裝置版**裝置必須回報為狀況良好。  如果啟用這項設定，則會針對這些資料點，透過健全情況證明服務 (HAS) 評估 Windows 10 裝置︰
   -  **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 協助保護 Windows 作業系統和使用者資料。 BitLocker 也有助於確保電腦在無人看管、遺失或遭竊的情況下，不遭竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定有利保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰。
   -  **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測核心是否正在載入未簽署的驅動程式或系統檔案。 它也會偵測是否有具系統管理員權限的使用者帳戶，執行惡意軟體以修改系統檔案。
-  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會先驗證這項作業，再啟動電腦。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
+  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改、破壞其簽章，系統將無法開機。
 
-  如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
+  > [!IMPORTANT]
+  > Windows 裝置並不支援安裝為部分裝置健全狀況證明的協力廠商**初期啟動的反惡意程式碼** (ELAM) 軟體。
+
+  如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)(健康情況證明 CSP)。
 ###  <a name="device-property-settings"></a>裝置屬性設定
 - **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容。
     會顯示如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
@@ -126,7 +133,7 @@ Windows 電腦支援這一節所列的設定。
 您可以設定規則，要求在新的或現有的相容性原則中，Windows 10 裝置必須回報為狀況良好。 如果啟用這項設定，則會針對這些資料點，透過健全情況證明服務 (HAS) 評估 Windows 10 裝置︰
   -  **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 協助保護 Windows 作業系統和使用者資料。 BitLocker 也有助於確保電腦在無人看管、遺失或遭竊的情況下，不遭竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定有利保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰。
   -  **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測核心是否正在載入未簽署的驅動程式或系統檔案。 它也會偵測是否有具系統管理員權限的使用者帳戶，執行惡意軟體以修改系統檔案。
-  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會先驗證這項作業，再啟動電腦。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
+  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
   - **啟用早期啟動反惡意程式碼：**早期啟動反惡意程式碼 (ELAM) 可在啟動電腦時，以及協力廠商驅動程式初始化之前，保護網路中的電腦。
 
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
@@ -148,9 +155,4 @@ Windows 電腦支援這一節所列的設定。
 
 - 執行 Windows 10 的電腦，其版本應該設為 **10.0** 加上 **winver** 命令所傳回的作業系統組建編號。 例如，可能類似於 10.0.10586。
 > ![[關於 Windows] 對話方塊會反白顯示作業系統組建版本](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

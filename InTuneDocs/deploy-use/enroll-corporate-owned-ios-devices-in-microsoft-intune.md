@@ -1,11 +1,11 @@
 ---
-title: "註冊屬公司擁有的 iOS 裝置 | Microsoft Intune"
+title: "註冊屬公司擁有的 iOS 裝置 | Microsoft Docs"
 description: "使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,33 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上所執行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具，來註冊公司所擁有的 iOS 裝置。
 
-**必要條件：**需要 [Apple 推播通知服務憑證](set-up-ios-and-mac-management-with-microsoft-intune.md)。
+**必要條件：**[Apple 推播通知服務憑證](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-您可以利用下列三種方式來註冊公司所註冊的 iOS 裝置：使用 Apple Configurator、DEP 或公司入口網站。
+您可以使用下列三種方式之一來註冊公司已註冊的 iOS 裝置：
+
+- Apple Configurator，使用設定助理或直接註冊
+- 裝置註冊方案
+- 公司入口網站應用程式
+
+>[!NOTE]
+>Apple Configurator 與裝置註冊方案的註冊方法，不可與[裝置註冊管理員](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法一起使用。
+
+所有 iOS 裝置預設都可以在 Intune 中註冊。 若要阻擋註冊個人或公司擁有的裝置，請以系統管理員認證登入 [Microsoft Intune 管理員入口網站](http://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除適用的選項。
 
 ## <a name="use-apple-configurator"></a>使用 Apple Configurator
 
@@ -36,7 +50,7 @@ Microsoft Intune 支援透過 Apple 裝置註冊方案 (DEP) 或 Mac 電腦上�
 - **直接註冊**：建立 Apple Configurator 相容的檔案以供裝置期間使用。 註冊的裝置未重設為原廠值，但不具有任何使用者關係。 此方法需要系統管理員透過 USB 將 iOS 裝置連接到執行 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 的 Mac 電腦以註冊裝置。 如需詳細資訊，請參閱[使用 Apple Configurator 和直接註冊來註冊 iOS 裝置](ios-direct-enrollment-in-microsoft-intune.md)。
 
 ## <a name="use-the-device-enrollment-program-dep"></a>使用裝置註冊方案 (DEP)
-DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置上。 當使用者在裝置上執行設定助理時，該裝置便會在 Intune 中註冊。  透過 DEP 註冊的裝置不能由使用者取消註冊。 如需詳細資訊，請參閱[註冊裝置註冊方案 iOS 裝置](ios-device-enrollment-program-in-microsoft-intune.md)。
+DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置上。 當使用者在裝置上執行設定助理時，該裝置便會在 Intune 中註冊。 如需詳細資訊，請參閱[註冊裝置註冊方案 iOS 裝置](ios-device-enrollment-program-in-microsoft-intune.md)。
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>在已註冊 DEP 或 Apple Configurator 的裝置上使用公司入口網站
 
@@ -44,8 +58,8 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 需要有使用者親和性，才能支援下項項目︰
   - 行動應用程式管理 (MAM) 應用程式
-  - 對電子郵件和公司資料進行條件式存取
-  - 公司入口網站應用程式
+  -    對電子郵件和公司資料進行條件式存取
+  -    公司入口網站應用程式
 
 **使用者如何註冊具有使用者親和性的屬公司擁有 iOS 裝置**
 1. 當使用者將其裝置開啟時，系統會提示他們完成設定助理。 設定期間，系統會提示使用者輸入其認證。 他們必須輸入與其 Intune 中訂閱相關聯的認證 (也就是唯一的個人識別碼或 UPN)。
@@ -78,9 +92,4 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

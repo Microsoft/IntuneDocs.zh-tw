@@ -1,11 +1,11 @@
 ---
-title: "使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Intune"
+title: "使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Docs"
 description: "您可以為 Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
+ms.lasthandoff: 01/13/2017
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 或 Citrix 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。 
 
@@ -28,7 +32,7 @@ ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 > [!NOTE]
 >
-> 此設定檔僅支援 Pulse Secure 連線類型。
+> 此設定檔僅支援 Pulse Secure 和 Citrix 連線類型。
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>步驟 1︰建立 VPN 設定檔
@@ -50,7 +54,7 @@ ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
    4. 輸入設定名稱。
    5. 針對 [資料類型]，請指定 [String]。
    6. 針對 [OMA-URI]，指定此字串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在這個範例中，字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
-   7.   針對 [值]，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
+   7.    針對 [值]，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
 
 ![Android 個別應用程式 VPN 自訂原則範例](./media/android_per_app_vpn_oma_uri.png)
 
@@ -75,9 +79,4 @@ ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
     -   **若要關閉對話方塊而不部署原則**，請選擇 [取消]。
 
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 狀態摘要還會顯示在 [儀表板] 工作區中。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
