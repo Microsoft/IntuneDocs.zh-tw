@@ -1,5 +1,6 @@
 ---
-title: "什麼是 Microsoft Intune 裝置註冊 | Intune Azure 預覽版 | Microsoft Docs"
+title: "什麼是 Microsoft Intune 裝置註冊"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 iOS、Android 及 Windows 裝置註冊。"
 keywords: 
 author: staciebarker
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 本主題說明如何註冊，以及向 Intune 管理註冊行動裝置的各種方式。
 
-您在 Intune 註冊的裝置 (包括 Windows 電腦)，從而管理這些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置註冊為行動裝置 (不是電腦) 時，會核發給這些裝置 MDM 憑證，而裝置則可使用此憑證與 Intune 服務通訊。 
+您在 Intune 註冊的裝置 (包括 Windows 電腦)，從而管理這些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置註冊為行動裝置 (不是電腦) 時，會核發給這些裝置 MDM 憑證，而裝置則可使用此憑證與 Intune 服務通訊。
 
 您的裝置註冊方式取決於裝置類型、擁有權，以及您所需要的管理級。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 02/15/2017
 您可使用 Azure 入口網站管理公司擁有的裝置 (COD)。 iOS 裝置可直接透過 Apple 提供的工具進行註冊。 系統管理員或管理員可使用裝置註冊管理員來註冊所有裝置類型。 也可以將包含 IMEI 號碼的裝置識別和標記為公司擁有，以啟用 COD 案例。
 
 ### <a name="dem"></a>DEM
-裝置註冊管理員是特殊的使用者帳戶，可用於註冊及管理公司擁有的多部裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](enroll-devices-using-device-enrollment-manager.md)。 ([返回表格](#overview-of-device-enrollment-methods))
+裝置註冊管理員 (DEM) 是特殊的使用者帳戶，可用於註冊及管理公司擁有的多部裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](enroll-devices-using-device-enrollment-manager.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 **iOS 受監管**模式，其接著會啟用：
@@ -87,7 +88,7 @@ Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立�
 若要深入了解 iOS 註冊，請參閱︰
 
 - [選擇註冊 iOS 裝置的方式](choose-ios-enrollment-method.md)
-- [使用裝置註冊方案註冊 iOS 裝置](enroll-ios-devices-using-device-enrollment-program.md)。 
+- [使用裝置註冊方案註冊 iOS 裝置](enroll-ios-devices-using-device-enrollment-program.md)
 - [返回上列表格](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ IT 系統管理員會透過 USB 使用 Apple Configurator，手動準備每部�
 若要深入了解 iOS 註冊，請參閱︰
 
 - [決定 iOS 裝置的註方式](choose-ios-enrollment-method.md)
-- [使用 Configurator 及設定輔助程式註冊 iOS 裝置](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)。 
+- [使用 Configurator 及設定助理註冊 iOS 裝置](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-若是 Direct Enrollment，系統管理員必須建立註冊原則並將其匯出至 Apple Configurator，以手動註冊每部裝置。 公司擁有的 USB 連接裝置可直接註冊，而不需重設成出廠預設值。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。 
+若是 Direct Enrollment，系統管理員必須建立註冊原則並將其匯出至 Apple Configurator，以手動註冊每部裝置。 公司擁有的 USB 連接裝置可直接註冊，而不需重設成出廠預設值。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。
 
 若要深入了解 iOS 註冊，請參閱︰
 

@@ -1,5 +1,6 @@
 ---
-title: "註冊裝置 - 裝置註冊管理員 | Intune Azure 預覽版 | Microsoft Docs"
+title: "註冊裝置 - 裝置註冊管理員"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：使用裝置註冊管理員帳戶，於 Intune 中註冊裝置。 "
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b4629d98f935ab2fac95144940e2a58a1b1e7c5c
+ms.lasthandoff: 02/18/2017
 
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: "註冊 iOS 裝置 - 裝置註冊方案 | Intune Azure 預覽版 | Microsoft Docs"
+title: "註冊 iOS 裝置 - 裝置註冊方案"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：了解如何使用裝置註冊方案來註冊公司擁有的 iOS 裝置。"
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 6. 為 [使用者親和性] 選擇具備此設定檔的裝置，在註冊時要或不要有使用者親和性。
 
- - **搭配使用者親和性進行註冊** - 裝置必須在初始設定期間與使用者建立關聯，之後便可以存取公司資料與電子郵件。 為屬於使用者而受 DEP 管理的裝置，以及使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇使用者親和性。 請注意，在具有使用者親和性的 DEP 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。
+ - **搭配使用者親和性進行註冊** - 裝置必須在初始設定期間與使用者建立關聯，之後便可以存取公司資料與電子郵件。 為屬於使用者而受 DEP 管理的裝置，以及使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇使用者親和性。 請注意，在具有使用者親和性的 DEP 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 當第一次登入時必須變更密碼的新使用者，在 DEP 裝置上進行註冊期間無法收到提示。 此外，密碼已過期的使用者也不會在 DEP 註冊期間收到提示要重設其密碼，且必須從不同的裝置重設密碼。
 
     >[!NOTE]
     >具有使用者親和性的 DEP 必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。
@@ -101,11 +103,11 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>將 Apple DEP 序號指派到 MDM 伺服器
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司的 Apple ID 登入。 
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司的 Apple ID 登入。
 
-2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。 
+2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。
 
-3. 指定您**選擇裝置**的方式，然後提供裝置資訊，並利用裝置的 [序號]、[訂單號碼] 或 [上傳 CSV 檔案] 的方式，指定詳細資料。 
+3. 指定您**選擇裝置**的方式，然後提供裝置資訊，並利用裝置的 [序號]、[訂單號碼] 或 [上傳 CSV 檔案] 的方式，指定詳細資料。
 
 4. 依序選擇 [Assign to Server] (指派給伺服器)、針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt; 以及 [確定]。
 
@@ -137,7 +139,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 已設定使用者親和性的裝置可以安裝並執行公司入口網站 App，以下載 App 及管理裝置。 使用者收到裝置之後，必須如下所示完成一些額外的步驟，來完成設定助理並安裝公司入口網站應用程式。
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>使用者如何註冊具有使用者親和性之公司擁有的 iOS 裝置 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>使用者如何註冊具有使用者親和性之公司擁有的 iOS 裝置
 
 1. 當使用者將其裝置開啟時，系統會提示他們完成設定助理。 設定期間，系統會提示使用者輸入其認證。 他們必須輸入與其 Intune 中訂閱相關聯的認證 (也就是不重複的個人名稱或 UPN)。
 
