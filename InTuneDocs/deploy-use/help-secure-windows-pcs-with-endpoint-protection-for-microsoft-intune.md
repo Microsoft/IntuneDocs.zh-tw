@@ -4,7 +4,7 @@ description: "使用 Endpoint Protection 保護您受管理的電腦，它可針
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: angrobe
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 

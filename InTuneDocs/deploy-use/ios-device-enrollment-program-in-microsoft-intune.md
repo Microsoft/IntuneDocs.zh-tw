@@ -4,7 +4,7 @@ description: "部署註冊設定檔，以藉由「無線」方式註冊透過 iO
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 

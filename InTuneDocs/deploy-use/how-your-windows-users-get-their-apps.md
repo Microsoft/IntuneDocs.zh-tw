@@ -4,7 +4,7 @@ description: "讓使用者可以使用 Windows 應用程式的方法"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
