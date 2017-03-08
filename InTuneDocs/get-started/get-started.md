@@ -4,7 +4,7 @@ description: "本主題所提供的指引適用於準備好將 Microsoft Intune 
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune

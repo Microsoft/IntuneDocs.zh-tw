@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
 ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -228,12 +229,8 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |條件式存取的通訊|443|204.79.197.200|
 |文件、說明及支援：</br></br>* livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
+
 >[!div class="step-by-step"]
 
 >[&larr; **必要條件**](what-to-know-before-you-start-microsoft-intune.md)     [**訂閱** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

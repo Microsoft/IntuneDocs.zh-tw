@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 0306dea937b2b58bce06032d5f5bbe1e744902b8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -42,9 +43,4 @@ ms.openlocfilehash: 0306dea937b2b58bce06032d5f5bbe1e744902b8
 -   將會刪除您的公司電子郵件帳戶和尚未儲存的電子郵件。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

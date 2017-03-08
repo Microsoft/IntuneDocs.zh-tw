@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
 ms.openlocfilehash: c6414623087ed1a61ca26ca83d6ddccb2b1c1f70
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -39,9 +40,4 @@ ms.openlocfilehash: c6414623087ed1a61ca26ca83d6ddccb2b1c1f70
 2.  選擇 [開啟 BitLocker]，然後遵循指示來加密每部裝置。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
     如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

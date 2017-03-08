@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 |個人電腦和筆記型電腦|**Windows 8.1 及 Windows 8**<br />您不能重設執行 Windows 8 或 Windows 8.1 的電腦，除非該電腦僅供電子郵件用途。<br /><br />**Windows 7 或 Windows Vista**<br />您不能重設執行 Windows 7 (含) 以前版本的電腦。|
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

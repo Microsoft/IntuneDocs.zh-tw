@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,9 +33,4 @@ ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
 若要開啟或關閉 [詳細資訊記錄]，請使用公司或學校認證登入公司入口網站應用程式，點選 [設定]，然後點選 [詳細資訊記錄] 旁的開啟/關閉按鈕。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

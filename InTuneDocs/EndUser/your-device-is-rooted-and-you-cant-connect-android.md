@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
 - 您的裝置製造商在您的裝置上安裝了被 Root 破解偵測軟體判斷為安全性風險的應用程式。 在這種情況下，您必須連絡 IT 系統管理員以取得協助。 如需連絡資訊，請移至[公司入口網站](http://portal.manage.microsoft.com)。
 
 如果您已自行將裝置進行 Root 破解，您必須反轉程序並將裝置還原到未 Root 破解的狀態。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

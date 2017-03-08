@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
 -   進入公司入口網站應用程式後，請搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] > [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

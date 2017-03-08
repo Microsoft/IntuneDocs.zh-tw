@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
 如需如何取消註冊的指示，請參閱[使用公司入口網站應用程式從 Intune 取消註冊裝置](unenroll-your-device-from-intune-android.md)。
 
 需要協助嗎？ 請連絡您的 IT 系統管理員 (如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com))，或傳送電子郵件給 [Microsoft Android 小組](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

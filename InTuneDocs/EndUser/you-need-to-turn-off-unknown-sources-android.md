@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 16589a70cabe4971e89f2fe7983d2d79def2caca
 ms.openlocfilehash: 25d954040f7b94089e8b931a39257c05663002e0
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: 25d954040f7b94089e8b931a39257c05663002e0
 關閉 [未知來源] 之後，可能需要過幾分鐘，您才能繼續使用 Android 裝置來存取公司或學校的資料。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

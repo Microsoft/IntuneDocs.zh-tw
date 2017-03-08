@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -34,9 +35,4 @@ ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
 3. 輸入裝置序號最後四個字元，以協助 Intune 確認您的裝置已註冊。 若要尋找您的序號，請參閱[如何在我的裝置上尋找序號？](how-do-i-find-the-serial-number-on-my-device-ios.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

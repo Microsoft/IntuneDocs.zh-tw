@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 604bdec9cfbb982b75fc9b54dda6a572d2b11802
 ms.openlocfilehash: 47b9b0e882c277f5ad3200ab6eb8999ea000a696
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: 47b9b0e882c277f5ad3200ab6eb8999ea000a696
 關閉 [USB 偵錯] 之後，請稍等幾分鐘，然後應該就能正常使用您的 Android 裝置存取公司或學校資料。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

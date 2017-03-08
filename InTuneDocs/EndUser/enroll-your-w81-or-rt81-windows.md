@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -66,9 +67,4 @@ ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
 4.  點選 [安裝] 或 [免費]。 顯示的選項取決於您的公司設定應用程式的方式。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -88,9 +89,4 @@ ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
 如果您的 IT 管理員已設定在註冊期間安裝公司入口網站，您的應用程式清單就會顯示公司入口網站。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
