@@ -2,8 +2,8 @@
 title: "如何取得支援 | Microsoft Docs"
 description: "付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Microsoft Intune 及 Office 365 行動裝置管理的訂閱內含「協助修正
 如果支援工程師要求您為額外問題開啟額外的支援事件，希望您了解這是為了各方最佳利益著想。 感謝您的理解與合作，讓我們得以提供世界級的支援體驗！
 
 若要了解各事件單價及嚴重性等級，請參閱[專業支援選項](https://support.microsoft.com/gp/offerprophone)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

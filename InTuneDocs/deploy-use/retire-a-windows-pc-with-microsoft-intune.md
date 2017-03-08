@@ -2,8 +2,8 @@
 title: "淘汰 Windows 電腦 | Microsoft Docs"
 description: "如何淘汰受 Intune 管理的 Windows 電腦。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

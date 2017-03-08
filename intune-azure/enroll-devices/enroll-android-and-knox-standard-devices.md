@@ -3,8 +3,8 @@ title: "在 Intune 中註冊 Android 裝置"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何在 Intune Azure 預覽版中註冊 Android 裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

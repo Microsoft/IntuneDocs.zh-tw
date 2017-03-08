@@ -3,8 +3,8 @@ title: "設定 Microsoft Intune 中的條款和條件"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰設定使用者在 Intune 公司入口網站中看到條款與條件。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

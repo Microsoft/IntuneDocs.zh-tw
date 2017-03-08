@@ -2,7 +2,8 @@
 title: "設定 Windows 10 行動裝置版和 Windows Phone 管理 | Microsoft Docs"
 description: "啟用適用於使用 Microsoft Itune 之 Windows 10 行動裝置版或 Windows Phone 裝置的行動裝置管理 (MDM)。"
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

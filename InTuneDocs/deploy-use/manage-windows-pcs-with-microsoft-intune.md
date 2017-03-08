@@ -2,8 +2,8 @@
 title: "使用用戶端軟體管理電腦 | Microsoft Docs"
 description: "安裝 Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

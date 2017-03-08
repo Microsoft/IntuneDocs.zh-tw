@@ -2,8 +2,8 @@
 title: "一般 Windows 電腦管理工作 | Microsoft Docs"
 description: "了解可用來管理執行 Intune 軟體用戶端之 Windows 電腦的方式。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "要求與提供 Windows 電腦的遠端協助 | Microsoft Docs"
 description: "描述針對作為電腦管理的 Windows 電腦提供遠端協助以及遠端啟動電腦的終端使用者和 IT 系統管理員步驟。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

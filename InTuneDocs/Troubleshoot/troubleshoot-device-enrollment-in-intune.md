@@ -2,8 +2,8 @@
 title: "裝置註冊疑難排解| Microsoft Docs"
 description: "裝置註冊問題的疑難排解建議。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

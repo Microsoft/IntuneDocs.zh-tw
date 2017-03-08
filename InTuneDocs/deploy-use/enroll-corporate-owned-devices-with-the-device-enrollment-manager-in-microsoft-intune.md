@@ -2,8 +2,8 @@
 title: "使用裝置註冊管理員進行註冊 | Microsoft Docs"
 description: "裝置註冊管理員 (DEM) 帳戶可以透過單一使用者帳戶來管理大量共用且由公司所有的行動裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ DEM 使用者可以︰
 -   刪除的裝置註冊管理員帳戶認證仍然無法抹除或淘汰裝置。
 
 -   刪除的裝置註冊管理員帳戶與已註冊裝置之間的關聯性仍然存在，但不能再註冊其他裝置。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

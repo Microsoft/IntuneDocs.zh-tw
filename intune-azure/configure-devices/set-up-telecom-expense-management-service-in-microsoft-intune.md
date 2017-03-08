@@ -3,8 +3,8 @@ title: "設定電信費用管理服務"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰設定 Saaswedo 電信費用管理服務，與 Intune 相互整合。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

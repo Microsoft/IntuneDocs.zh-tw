@@ -3,8 +3,8 @@ title: "什麼是 Microsoft Intune 裝置註冊"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 iOS、Android 及 Windows 裝置註冊。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article

@@ -2,8 +2,8 @@
 title: "使用原則來簡化 Windows 電腦管理 | Microsoft Docs"
 description: "描述 Windows 電腦管理原則和 Microsoft Intune Center 的設定。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

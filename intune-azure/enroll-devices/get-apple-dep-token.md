@@ -3,8 +3,8 @@ title: "針對 Intune 取得 Apple DEP 憑證"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰設定及上傳 MDM 推播憑證的指示，其為在 Intune 中管理 Apple 裝置的必要條件。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/03/17
 ms.topic: article

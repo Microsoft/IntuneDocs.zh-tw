@@ -2,8 +2,8 @@
 title: "直接註冊 iOS 裝置 | Microsoft Docs"
 description: "透過將公司擁有的 iOS 裝置利用 USB 連線到 Mac 電腦，來使用 Apple Configurator 工具以預先定義的原則直接註冊那些裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

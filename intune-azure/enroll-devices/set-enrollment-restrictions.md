@@ -3,8 +3,8 @@ title: "在 Intune 中設定註冊限制"
 titleSuffix: Intune Azure preview
 description: "Intune Azure Preview：在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -65,9 +66,4 @@ ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
 4. 在 [所有使用者] 刀鋒視窗上，選取 [裝置限制]。
 
 5. 選取使用者能夠註冊的裝置數上限，然後選取 [儲存]。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

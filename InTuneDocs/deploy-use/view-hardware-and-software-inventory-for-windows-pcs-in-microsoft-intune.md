@@ -2,8 +2,8 @@
 title: "檢視 Windows 電腦的硬體和軟體清查 | Microsoft Docs"
 description: "如何檢視您使用 Intune 軟體用戶端作為電腦管理之 Windows 桌上型電腦的硬體和軟體資訊。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

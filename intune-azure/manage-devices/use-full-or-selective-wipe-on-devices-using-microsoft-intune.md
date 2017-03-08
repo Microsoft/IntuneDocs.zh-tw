@@ -3,8 +3,8 @@ title: "使用 Intune 在裝置上完整或選擇性抹除"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何選擇性地抹除裝置上的公司資料，或如何完全抹除資料，恢復裝置的出廠預設值。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

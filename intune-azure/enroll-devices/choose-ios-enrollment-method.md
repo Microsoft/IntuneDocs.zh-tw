@@ -3,8 +3,8 @@ title: "選擇 iOS 裝置在 Intune 中的註冊方式"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何在 Microsoft Intune 中設定 iOS 裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

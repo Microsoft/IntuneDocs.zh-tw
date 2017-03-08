@@ -2,8 +2,8 @@
 title: "設定 Android 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 來支援 Android 和 KNOX Standard 裝置的行動裝置管理 (MDM)。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
 ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -62,9 +63,4 @@ Android 裝置預設可以在 Intune 中註冊。 若要阻擋註冊 Android 裝
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

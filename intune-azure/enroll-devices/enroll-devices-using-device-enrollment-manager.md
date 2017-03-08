@@ -3,8 +3,8 @@ title: "註冊裝置 - 裝置註冊管理員"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：使用裝置註冊管理員帳戶，於 Intune 中註冊裝置。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

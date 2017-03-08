@@ -3,8 +3,8 @@ title: "註冊 iOS 裝置 - 裝置註冊方案"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：了解如何使用裝置註冊方案來註冊公司擁有的 iOS 裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

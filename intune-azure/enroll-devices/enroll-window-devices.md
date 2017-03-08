@@ -3,8 +3,8 @@ title: "註冊 Windows 裝置"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰啟用 Windows 裝置的 Intune 行動裝置管理 (MDM)。"
 keywords: 
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -84,9 +85,4 @@ ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
     如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
 
 除非您要將公司入口網站部署至裝置，否則不需要進行任何額外的工作。  在管理主控台中可以放心略過步驟 2 和 3。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

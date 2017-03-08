@@ -2,8 +2,8 @@
 title: "行動裝置註冊必要條件 | Microsoft Docs"
 description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

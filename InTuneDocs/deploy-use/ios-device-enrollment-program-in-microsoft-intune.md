@@ -2,8 +2,8 @@
 title: "iOS 裝置的 Apple DEP 管理 | Microsoft Docs"
 description: "部署註冊設定檔，以藉由「無線」方式註冊透過 iOS 裝置註冊方案 (DEP) 購買的 iOS 裝置，進而管理 Apple 裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
