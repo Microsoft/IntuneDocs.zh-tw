@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
-ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: a9336e3d230de962d2623dd627e45c6e9262a822
+ms.openlocfilehash: cfe4a0bb802956278387ac2a39d5316482e09332
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -80,6 +80,12 @@ Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設�
 如果您有任何關於租用戶移轉時間表的問題，請連絡我們的移轉團隊：[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)。
 
 您可以在[這裡](https://docs.microsoft.com/intune-azure/introduction/whats-new)找到 Azure 的 Intune 預覽新功能。
+
+## <a name="whats-coming"></a>未來動態
+
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 需要更新 Application Transport Security <!--748318-->
+
+Apple 宣告，從 2017 年春季開始，將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 這項變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。 如需詳細資訊，請檢閱我們的 [Intune 支援部落格](https://aka.ms/compportalats)。 
 
 ### <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)

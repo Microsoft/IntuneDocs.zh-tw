@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-電子郵件設定檔的設定，可用於設定您管理的裝置，為其設定連線所需的設定，以及與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
+電子郵件設定檔可用來為您管理的裝置設定連線所需的設定，並與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
 
 內建的郵件用戶端支援大部分的平台。 目前不支援大部分的協力廠商電子郵件應用程式。
 

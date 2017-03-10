@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 -    Android for Work
 
 >[!NOTE]
->Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。
+>Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
 
 除了在裝置上設定電子郵件帳戶，您可以設定要同步處理的電子郵件數量，以及每種裝置類型所要同步處理的內容類型。
 
@@ -105,7 +106,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
     |**電子郵件地址**|每個裝置上使用者的電子郵件地址的產生方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。|
     |**驗證方法** (Android for Work、Samsung KNOX 和 iOS)|選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。|
     |**選取用戶端憑證以進行用戶端驗證 (識別憑證)** (Android for Work、Samsung KNOX 和 iOS)|選取先前建立的用戶端 SCEP 憑證，以用來驗證 Exchange 連線。 如需如何使用 Intune 中憑證設定檔的詳細資訊，請參閱[使用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)。 只有在驗證方法是 [憑證] 時，才會顯示此選項。|
-    |**使用 S/MIME** (Samsung KNOX 和 iOS)|使用 S/MIME 加密傳送外寄電子郵件。|
+    |**使用 S/MIME** (Samsung KNOX 和 iOS)|使用 S/MIME 簽署傳送外寄電子郵件。|
     |**簽署憑證** (Samsung KNOX 和 iOS)|選取將用來簽署外寄電子郵件的簽署憑證。 只有在選取 [Use S/MIME (使用 S/MIME)] 時，才會顯示此選項。|
     |**同步電子郵件的間隔天數**|您想要同步處理電子郵件的天數，或選取 [無限制] 同步處理所有可用的電子郵件。|
     |**同步排程** (Android for Work、Samsung KNOX、Windows Phone 8 和更新版本、Windows 10)|選取裝置用來同步處理 Exchange Server 中資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或 [手動 (使用此方式，裝置使用者必須啟動同步處理)]。|
@@ -136,9 +137,4 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 > [!NOTE]
 > - 對於 Android for Work，除了適當的電子郵件設定檔之外，也必須部署 Gmail 或 Nine Work 應用程式。
 > - 若想要從裝置移除電子郵件設定檔，請編輯部署，再移除裝置所屬的群組。 請注意，若該電子郵件設定檔是裝置上唯一的電子郵件設定檔，即無法以此方式移除。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

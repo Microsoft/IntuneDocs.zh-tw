@@ -3,10 +3,10 @@ title: "將 IMEI 識別碼新增至 Intune"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何將公司識別碼 (IMEI 號碼) 新增到 Microsoft Intune。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
+ms.lasthandoff: 02/25/2017
 
 ---
 
@@ -44,6 +44,9 @@ ms.lasthandoff: 02/18/2017
 3. 若要匯入的檔案內含會覆寫現有詳細資料的新詳細資料，請選取 [覆寫現有識別碼的詳細資料]，以新的詳細資料取代現有的詳細資料。
 
 4. 瀏覽至 IMEI CSV 檔案，然後選取 [新增]。
+
+> [!IMPORTANT]
+> 如果您要匯入 Android 裝置的 IMEI 編號，請注意有些 Android 裝置可能會有多個 IMEI 編號。 如果您匯入的 IMEI 編號不是裝置向 Intune 回報的 IMEI，則會將該裝置分類為個人裝置，而不是公司擁有的裝置。
 
 **刪除公司識別碼的 .csv 清單**
 

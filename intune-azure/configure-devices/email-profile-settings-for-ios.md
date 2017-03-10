@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 - **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證]作為電子郵件設定檔所使用的驗證方法。
     - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
 - **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
-- **S/MIME** - 使用 S/MIME 加密傳送外寄電子郵件。
+- **S/MIME** - 使用 S/MIME 簽署傳送外寄電子郵件。
     - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
 - **從要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
 - **允許將訊息移至其他電子郵件帳戶** - 其可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
