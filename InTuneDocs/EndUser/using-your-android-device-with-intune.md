@@ -43,7 +43,6 @@ ms.lasthandoff: 03/02/2017
 - [設定您的 PIN 或密碼](set-your-pin-or-password-android.md)
 - [安裝您公司的虛擬私人網路 (VPN)](install-your-companys-virtual-private-network-VPN-android.md)
 - [設定您的裝置在鎖定前的時間量](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-android.md)
 - [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-android.md)
