@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: bea23fe261cdcb09c7f6699e3a2ee3fcb8f32aba
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -82,9 +83,4 @@ ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 有時安裝會因為您無法控制的技術問題而失敗。 如果發生這種情況，請嘗試從 Play Store 手動安裝 Lookout for Work：[https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

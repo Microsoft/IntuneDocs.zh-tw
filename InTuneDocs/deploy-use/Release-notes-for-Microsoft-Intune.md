@@ -2,10 +2,10 @@
 title: "Microsoft Intune 的版本資訊 | Microsoft Docs"
 description: "Intune 版本資訊"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -28,21 +28,21 @@ ms.lasthandoff: 12/10/2016
 
 Microsoft Intune 是一套整合式雲端架構的用戶端管理解決方案。除了提供最新版 Windows 的工具、報表和升級授權之外， 還能幫助您讓電腦保持最新狀態並維護電腦安全。 此外，Intune 也可讓您透過 Exchange ActiveSync 或是直接透過 Intune 管理網路上的行動裝置。 下列版本資訊說明 Microsoft Intune 的重要資訊和已知問題。
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>實作 Exchange Online 條件式存取時，Android 使用者無法傳送電子郵件
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**問題**：設定 Exchange Online 的條件式存取之後，在裝置上執行 Samsung Android 5.1.1 和更新版本的使用者無法傳送電子郵件。 Samsung 確認問題出在 Android 5.1.1 和更新版本中內建的郵件用戶端，正在研究修正程式。
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**因應措施 1**：建議使用者使用 Android 版 Outlook 應用程式。
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**因應措施 2**：若要讓受影響的使用者能夠傳送電子郵件，請遵循下列步驟：
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. 將受影響的使用者放入 Exchange Online 條件式存取原則的 [免套用的群組] 區段中的安全性群組。
-2. 可讓使用者在內建的電子郵件用戶端上暫時同步電子郵件。
-3. 從免套用的群組中移除受影響的使用者，並確認使用者現在可以傳送電子郵件。
-
-Microsoft 將持續與 Samsung 密切合作來研究修正程式或其他因應措施。
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>在 iOS 和 Android 群組之間變更資源存取設定檔可能會失敗
