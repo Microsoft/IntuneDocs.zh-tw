@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
   - **評估連線**：它有三個設定 a. **網域動作** - 選擇 [連線 (若需要)]**** 或 [一律不連線]****
      b. **以逗號分隔的網域清單** - 只有在您選擇 [網域動作]**** 的 [連線 (若需要)]**** 時才可以設定
      c. **必要的 URL 字串探查** - HTTP 或 HTTPS (建議選項) URL，例如 *https://vpntestprobe.contoso.com*。 規則會檢查是否有來自此地址的回應。 如果沒有，且 [網域動作] 為 [連線 (若需要)]，便會觸發 VPN。
+      
      > [!TIP]
      >
      >您可能使用此動作的範例，是您公司網路上的某些網站需要直接或是 VPN 公司網路連線，但其他網站則不用。 如果您將 *corp.contoso.com* 列入 [以逗號分隔的 DNS 搜尋網域清單]，您可以選擇 [連線 (若需要)]，然後在可能需要 VPN 的網路中列出特定網站，例如 *sharepoint.corp.contoso.com*。 此規則接著會檢查是否可連線到 *vpntestprobe.contoso.com*。 如果不行，則會針對 sharepoint 網站觸發 VPN。
@@ -192,9 +194,4 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 成功部署之後，使用者會看到您在其裝置的 VPN 連線清單中指定的 VPN 連線名稱。
 
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板] 工作區中。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
