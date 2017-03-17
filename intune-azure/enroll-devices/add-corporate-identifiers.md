@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
+ms.lasthandoff: 03/09/2017
 
 ---
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/25/2017
 4. 瀏覽至 IMEI CSV 檔案，然後選取 [新增]。
 
 > [!IMPORTANT]
-> 如果您要匯入 Android 裝置的 IMEI 編號，請注意有些 Android 裝置可能會有多個 IMEI 編號。 如果您匯入的 IMEI 編號不是裝置向 Intune 回報的 IMEI，則會將該裝置分類為個人裝置，而不是公司擁有的裝置。
+> 某些 Android 裝置有多個 IMEI 編號。 Intune 一部裝置清查一個 IMEI 編號。 如果您匯入的 IMEI 編號不是 Intune 清查過的 IMEI，則該裝置會分類為個人裝置，而不是公司擁有的裝置。 如果某部裝置匯入多個 IMEI 編號，則註冊狀態會將未經清查的編號顯示為**未知**。
 
 **刪除公司識別碼的 .csv 清單**
 
