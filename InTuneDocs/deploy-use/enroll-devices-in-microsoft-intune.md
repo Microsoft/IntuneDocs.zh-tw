@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,44 +38,44 @@ ms.lasthandoff: 02/21/2017
 
 - **抹除** - 指出裝置是否需要先抹除，然後使用者才能註冊裝置。 「抹除」一詞表示將裝置進行原廠重設，這會移除所有資料。 如需詳細資訊，請參閱[淘汰裝置](retire-devices-from-microsoft-intune-management.md)。
 - **親和性**：將裝置與使用者相關聯。 行動應用程式管理 (MAM) 和公司資料的條件式存取需要此功能。 如需詳細資訊，請參閱[使用者親和性](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices)。
-- **鎖定** - 指出是否防止使用者使用原生作業系統功能表取消註冊其裝置。 使用者可以使用公司入口網站應用程式來取消註冊其在所有平台上的裝置。 
+- **鎖定** - 指出是否防止使用者使用原生作業系統功能表取消註冊其裝置。 使用者可以使用公司入口網站應用程式來取消註冊其在所有平台上的裝置。
 
 **iOS 註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    [是] |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    否 |否 |否    | [詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    是 |    選擇性 |    選用|[詳細資訊](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    [是] |    選擇性 |    否| [詳細資訊](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    是 |    選用 |    選用|[詳細資訊](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**|    是 |    選用 |    否| [詳細資訊](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[詳細資訊](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows 的註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android 的註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    [是] |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work 註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    [是] |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS 註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](prerequisites-for-enrollment.md)|
 
 
 如需有助於找出正確方法的一系列相關問題，請參閱[選擇如何註冊裝置](/intune/get-started/choose-how-to-enroll-devices1)。

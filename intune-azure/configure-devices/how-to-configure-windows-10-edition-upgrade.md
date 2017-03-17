@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5edcdf20d07c63a33707c31134af8adf22049929
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 617ca50569885431394ab630f297ba919d119522
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -29,9 +29,10 @@ ms.lasthandoff: 02/18/2017
 
 使用本主題中的資訊，了解如何設定 Windows 10 版本升級設定檔。 此設定檔可讓您自動將執行下列任一 Windows 10 版本的裝置，升級為較新的版本：
 
-- Windows 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+
 
 支援下列升級路徑：
 
@@ -39,6 +40,7 @@ ms.lasthandoff: 02/18/2017
 - 從 Windows 10 Home 到 Windows 10 Education
 - 從 Windows 10 Mobile 到 Windows 10 Mobile Enterprise
 - 從 Windows 10 Holographic Pro 到 Windows 10 Holographic Enterprise
+
 
 ## <a name="before-you-start"></a>開始之前
 在開始將裝置升級至最新版本之前，您需要下列其中一項：

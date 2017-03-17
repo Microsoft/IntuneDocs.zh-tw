@@ -1,5 +1,5 @@
 ---
-title: "您的裝置不符合標準 | Microsoft Docs"
+title: "您必須更新 iOS 裝置 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
+ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
 - User help
 ROBOTS: 
@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
+ms.openlocfilehash: bb9dfe52aa2c0150bd48f5c5cfad48a03748142c
 ms.lasthandoff: 03/16/2017
 
 
 ---
 
-# <a name="your-device-is-noncompliant"></a>您的裝置不符合標準
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>您的 iOS 裝置沒有基本必備的作業系統版本
 
-您的裝置不符合至少一個組織的安全性原則，但目前無法立即顯示錯誤。  
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-在公司入口網站應用程式中，點選 [檢查相容性]。 公司入口網站應用程式即會告訴您導致裝置不符合標準的原因。
+依序點選 [設定] > [一般] > [軟體更新]，以更新 iOS 裝置。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

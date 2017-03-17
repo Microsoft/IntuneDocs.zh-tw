@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
-ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
-ms.lasthandoff: 12/22/2016
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -90,11 +90,5 @@ Azure AD 中未提供一些現有的 Intune 群組功能︰
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>您已部署的原則和應用程式會發生什麼事？
 
 就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在會從 Azure 入口網站管理這些群組，而不是從傳統 Intune 主控台。
-
-
-## <a name="how-to-get-more-information"></a>如何取得詳細資訊
-
-請連絡移轉小組：[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)。    
-     
-
+ 
 
