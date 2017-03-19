@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
 
 ## <a name="deploy-an-android-for-work-app"></a>部署 Android for Work 應用程式
 
-一般而言，Intune 一天會與 Google Play for Work 商店同步處理兩次。 如果您已核准商店中的某個應用程式，但尚未在 [應用程式] 工作區的 [大量採購應用程式] 節點中看到此應用程式，您可以強制立即同步，如下所示：
+如果您已核准商店中的某個應用程式，但尚未在 [應用程式] 工作區的 [大量採購應用程式] 節點中看到此應用程式，您可以強制立即同步，如下所示：
 
 1. 在 [Intune 系統管理員主控台](https://manage.microsoft.com)中，選擇 [管理] > [行動裝置管理] > [Android for Work]。
 2. 在 [Android for Work 行動裝置管理設定] 頁面上，選擇 [立即同步]。
 3. 此頁面也會顯示上一次同步的時間和狀態。
 
-當此應用程式顯示在 [應用程式] 工作區的 [大量採購應用程式] 節點時，您就可以[像是任何其他應用程式一樣來將它部署](deploy-apps-in-microsoft-intune.md)。 您只能將應用程式部署給使用者群組。 目前，您只能選取 [必要] 和 [解除安裝] 動作。 自 2016 年 10 月起，我們將開始為新租用戶新增 [可用] 部署動作。
+當此應用程式顯示在 [應用程式] 工作區的 [大量採購應用程式] 節點時，您就可以[像是任何其他應用程式一樣來將它部署](deploy-apps-in-microsoft-intune.md)。 您只能將應用程式部署給使用者群組。 目前，您只能選取 [必要] 和 [解除安裝] 動作。
+
+將應用程式部署為 [可用] 的能力，採用新的分組和目標設定體驗。 新佈建的 Intune 服務帳戶將可在發行時使用此功能。 現有的 Intune 客戶在其租用戶移轉至 Intune Azure 入口網站後，也可以使用這項功能。 歡迎現有的 Intune 客戶在其租用戶完成移轉之前，先建立 Intune 試用帳戶來規劃及測試此功能。
 
 在您部署應用程式之後，此應用程式將會安裝在您的目標裝置上。 而不會要求裝置的使用者進行核准。
 
+## <a name="manage-app-permissions"></a>管理應用程式權限
+Android for Work 會要求您在 Google 受管理的 Play Web 主控台核准應用程式，然後才將它們同步到 Intune 並部署到使用者。  因為 Android for Work 可讓您以無訊息模式且自動地將這些應用程式推送到使用者的裝置，您必須代表您所有的使用者接受應用程式的權限。  使用者在安裝時將不會看到任何應用程式權限，因此請務必閱讀並了解這些權限。
 
+當應用程式開發人員發行含有已更新權限的新版本應用程式時，即使您已核准先前的權限，也不會自動核准那些權限。 執行舊版應用程式的裝置仍然可以使用應用程式，但應用程式將不會升級，直到已核准新的權限為止。 在您核准應用程式的新權限之前，未安裝該應用程式的裝置將無法安裝應用程式。
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>如何更新應用程式權限
 
+您應該定期造訪受管理的 Google Play 主控台來檢查新的權限。 如果您部署應用程式並觀察到它並未安裝在裝置上，請依下列步驟檢查是否有新的權限：
+
+1. 造訪 http://play.google.com/work
+2. 使用您用來發行及核准應用程式的 Google 帳戶登入。
+3. 瀏覽 [更新] 索引標籤以查看是否有任何應用程式需要更新。  任何列出的應用程式都需要新的權限，而且在更新權限前將不會部署。  
 

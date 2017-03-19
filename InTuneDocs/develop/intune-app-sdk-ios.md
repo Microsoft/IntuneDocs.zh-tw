@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
-ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -27,11 +27,13 @@ ms.lasthandoff: 02/23/2017
 > [!NOTE]
 > 您可能想要先閱讀 [Intune App SDK 快速入門指南](intune-app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
 
-Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 - 也稱為 MAM 原則 - 併入 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， 可讓 IT 系統管理員在 Intune 主動管理應用程式時將應用程式保護原則部署至行動應用程式。
+Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 **APP** 或 **MAM** 原則) 併入原生 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-* 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並在該電腦上安裝 Xcode 工具組第 5 版或更新版本。
+* 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並在該電腦上安裝 Xcode 8 或更新版本。
+
+* 您的應用程式必須以 iOS 9 或更新版本為目標。
 
 * 檢閱[適用於 iOS 的 Intune App SDK 授權條款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 列印並保留一份授權條款供您備查。 下載並使用 Intune App SDK for iOS 即表示您同意這些授權條款。  若貴用戶不同意這些授權條款，請不要使用「軟體」。
 
@@ -70,56 +72,53 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 若要啟用 Intune App SDK，請遵循下列步驟：
 
 1. **選項 1**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
-    ![Intune App SDK iOS：連結架構和程式庫](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
+
+    ![Intune App SDK iOS：連結的架構和程式庫](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     > [!NOTE]
     > 如果您計劃將應用程式發行至 App Store，請使用針對發行所建置的 `libIntuneMAM.a` 版本，而非偵錯版本。 發行版本會在 [發行] 資料夾中。 偵錯版本包含詳細資訊輸出，有助於針對 Intune App SDK 問題進行疑難排解。
 
-    **選項 2**：將 `IntuneMAM.framework` 連結至專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
+    將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 加入下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
+      * 專案的 `OTHER_LDFLAGS` 組建組態設定
+      * UI 的 「Other Linker Flags」 (其他連結器旗標)
+
+        > [!NOTE]
+        > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
+
+2. **選項 2**：將 `IntuneMAM.framework` 連結至專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
 
     > [!NOTE]
-    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱＜將應用程式提交至 App Store＞一節。
+    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store)
 
-2. 將下列 iOS 架構新增至專案：
+3. 將下列 iOS 架構新增至專案：
     * MessageUI.framework
     * Security.framework
     * MobileCoreServices.framework
     * SystemConfiguration.framework
-    * libsqlite3.dylib
-    * libc++.dylib
+    * libsqlite3.tbd
+    * libc++.tbd
     * ImageIO.framework
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-    > [!NOTE]
-    > 如果應用程式是以 iOS 7 為目標，請將 `LocalAuthentication.framework` 的 `Status` 屬性設定為 [選擇性]。 如果未設定 `Status`，應用程式將無法在 iOS 7 上啟動。
-    >
-    > 此外，Xcode 7 已將 `.dylib` 副檔名切換為 `.tbd`。
 
-3. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
-![Intune App SDK iOS：複製配套資源](../media/intune-app-sdk-ios-copy-bundle-resources.png)
+4. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
 
-4. 將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 加入下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
-    * 專案的 `OTHER_LDFLAGS` 組建組態設定
-    * UI 的 「Other Linker Flags」 (其他連結器旗標)<br>
+    ![Intune App SDK iOS：複製配套資源](../media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    > [!NOTE]
-    > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
-
-5. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請移除 「Main Storyboard」 (主要腳本) 或 「Main Nib」 (主要 Nib) 欄位。 如果適當的話，請使用下列索引鍵名稱，將您先前移除的腳本或 nib 值新增至名為 IntuneMAMSettings 的新目錄下：
+5. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請剪下「Main Storyboard」(主要腳本) 或「Main Nib」(主要 Nib) 欄位。 視需要在 Info.plist 中，使用下列索引鍵名稱，將這些欄位和其對應的值貼入至名為 **IntuneMAMSettings** 的新目錄下：
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
-
     > [!NOTE]
-    > 如果您的行動應用程式未在其 Info.plist 檔案中定義主要 nib 或腳本檔案，則不需要這些設定。
+  > 如果您的行動應用程式未在其 Info.plist 檔案中定義主要 nib 或腳本檔案，則不需要這些設定。
 
     您可以在文件本文中的任何位置按一下滑鼠右鍵，然後將檢視類型變更為 「Show Raw Keys/Values」 (顯示原始索引鍵/值)，來檢視原始格式的 Info.plist (以查看索引鍵名稱)。
 
 6. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
-    > [!NOTE]
+  > [!NOTE]
     > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：
     ```xml
     <key>keychain-access-groups</key>
@@ -128,50 +127,50 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     </array>
     ```
 
-7. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個用於儲存 Intune App SDK 資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。
+7. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。
 
     如果您使用 UI 來建立 Keychain 存取群組：
 
-    a. 如果您的行動應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
+    1. 如果您的行動應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
-    b。 新增共用的 Keychain 群組 `com.microsoft.intune.mam`。 Intune App SDK 使用這個存取群組來儲存資料。
+    2. 新增共用的 Keychain 群組 `com.microsoft.intune.mam`。 Intune App SDK 使用這個存取群組來儲存資料。
 
-    c. 將 `com.microsoft.adalcache` 新增至現有存取群組。
+    3. 將 `com.microsoft.adalcache` 新增至現有存取群組。
 
     ![Intune App SDK iOS：Keychain 共用](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    如果您使用權利檔案來建立 Keychain 存取群組，請在權利檔案中，於 Keychain 存取群組之前加上 `$(AppIdentifierPrefix)`。 例如：  
+    如果您使用權利檔案來建立 Keychain 存取群組，請在權利檔案中，於 Keychain 存取群組之前加上 `$(AppIdentifierPrefix)`。 例如：
 
-    * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-    * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-    > [!NOTE]
-    > 權利檔案是行動應用程式特有的 XML 檔案， 可用來指定 iOS 應用程式內的特殊權限和功能。
-
-8. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
-
-9. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
-
-10. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentifiers` 索引鍵下。
-
-11. 將行動應用程式連結至 Azure Directory Authentication Library (ADAL)。 您可以在 [GitHub 上取得](https://github.com/AzureAD/azure-activedirectory-library-for-objc) Objective C 的 ADAL 程式庫。
+          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Intune App SDK 自 2015 年 6 月 19 日起，已經過 ADAL Broker 分支程式碼的測試。 請確定您要連結的版本是最新/有效的 ADAL 程式庫版本。
+    > 權利檔案是行動應用程式特有的 XML 檔案， 它用來指定 iOS 應用程式內的特殊權限和功能。
 
-12. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
+7. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
 
-13. 當您連結至程式庫時，使用 `-force_load PATH_TO_ADAL_LIBRARY` 連結器選項。
+8. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+
+9. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentifiers` 索引鍵下。
+
+10. 將行動應用程式連結至適用於 iOS 的 Azure Directory Authentication Library (ADAL)。 您可以在 [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 上取得 Objective-C 的 ADAL 程式庫。
+
+    > [!NOTE]
+    > 建議您將應用程式與 ADAL 的最新/工作版本連結。
+
+11. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
+
+12. 當您連結至程式庫時，使用 `-force_load PATH_TO_ADAL_LIBRARY` 連結器選項。
 
     將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。
 
 
 
-## <a name="set-up-azure-directory-authentication-library"></a>設定 Azure Directory Authentication Library
+## <a name="configure-azure-directory-authentication-library-adal"></a>設定 Azure Directory Authentication Library (ADAL)
 
 Intune App SDK 在自我驗證和條件式啟動案例中會使用 ADAL。 它也會依賴 ADAL 向 MAM 服務註冊使用者身分識別來進行沒有裝置註冊案例的管理。
 
-一般來說，ADAL 需要應用程式向 Azure Active Directory (Azure AD) 登錄並取得唯一識別碼 (稱為用戶端識別碼) 及其他識別碼，以確保授與應用程式的權杖安全無虞。 Intune App SDK 在連絡 Azure AD 時，會使用預設登錄值。  
+一般來說，ADAL 需要應用程式向 Azure Active Directory (AAD) 註冊並取得唯一識別碼 (用戶端識別碼) 及其他識別碼，以確保授與應用程式的權杖安全無虞。 Intune App SDK 在連絡 Azure AD 時，會使用預設登錄值。  
 
 如果應用程式本身在自我驗證案例中使用 ADAL，應用程式必須使用其現有的登錄值並覆寫 Intune App SDK 預設值， 以確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
 
@@ -187,13 +186,13 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 
 如需詳細資訊，請參閱 [GitHub 上的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 中的指示。
 
-**如何與其他使用相同佈建設定檔所簽署的應用程式共用 ADAL 快取？**
+**如何與其他使用相同佈建設定檔所簽署的應用程式共用 ADAL 權杖快取？**
 
-如果您的應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
+1. 如果您的應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
-在 Keychain 權利中新增 `com.microsoft.adalcache` 和 `com.microsoft.workplacejoin` 存取群組，以啟用 ADAL 單一登入 (SSO)。
+2. 在 Keychain 權利中新增 `com.microsoft.adalcache` 和 `com.microsoft.workplacejoin` 存取群組，以啟用 ADAL 單一登入 (SSO)。
 
-如果您明確地設定 ADAL 共用快取 Keychain 群組，請確定它設為 `<app_id_prefix>.com.microsoft.adalcache`。 除非您覆寫這個項目，否則 ADAL 將為您進行設定。 如果您想要指定自訂 Keychain 群組以取代 `com.microsoft.adalcache`，請在 Info.plist 檔案的 IntuneMAMSettings 下使用 `ADALCacheKeychainGroupOverride` 索引鍵指定該行為。
+3. 如果您明確地設定 ADAL 共用快取 Keychain 群組，請確定它設為 `<app_id_prefix>.com.microsoft.adalcache`。 除非您覆寫這個項目，否則 ADAL 將為您進行設定。 如果您想要指定自訂 Keychain 群組以取代 `com.microsoft.adalcache`，請在 Info.plist 檔案的 IntuneMAMSettings 下使用 `ADALCacheKeychainGroupOverride` 索引鍵指定該行為。
 
 **如何強制 Intune App SDK 使用我的應用程式已使用的 ADAL 設定？**
 
@@ -211,7 +210,7 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 在 IntuneMAMPolicyManager 執行個體上設定 `aadAuthorityUriOverride` 屬性。
 
 > [!NOTE]
-> 在沒有裝置註冊的 MAM 案例中需要有這個項目，才能讓 SDK 重複使用應用程式所擷取的 ADAL 重新整理權杖。
+> 在沒有裝置註冊的應用程式中需要有這個項目，才能讓 SDK 重複使用應用程式所擷取的 ADAL 重新整理權杖。
 
 除非清除或變更值，否則 SDK 將繼續使用這個授權單位 URL 進行原則重新整理以及任何後續註冊要求。  因此，請務必在公司使用者登出應用程式時清除值，並在新的公司使用者登入時進行重設。
 
@@ -229,18 +228,18 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 
 如果您的應用程式未使用 ADAL，Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。
 
-## <a name="register-your-app-with-the-intune-mam-service"></a>向 Intune MAM 服務註冊您的應用程式
+## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
 
-### <a name="use-the-apis"></a>使用 API
-Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護原則，而不需要透過行動裝置管理 (MDM) 向 Intune 註冊。 為了支援這項新功能，SDK 提供新的 API，讓應用程式接收應用程式保護原則。 若要使用新的 API，請遵循下列步驟：
+### <a name="overview"></a>概觀
+無裝置註冊的 Intune 應用程式保護原則 (也稱為 **APP-WE** 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune 行動裝置管理 (MDM) 註冊裝置。 若要支援這項新功能，應用程式必須參與註冊使用者帳戶以進行管理。 若要使用新的 API，請遵循下列步驟：
 
-1. 使用 Intune App SDK 的最新版本，其在註冊或未註冊裝置的情況下支援管理應用程式。 。
+1. 使用 Intune App SDK 的最新版本，其在註冊或未註冊裝置的情況下支援管理應用程式。
 
 2. 將 IntuneMAMEnrollment.h 新增至任何將呼叫 API 的檔案。
 
-### <a name="register-accounts"></a>註冊帳戶
+### <a name="register-user-accounts"></a>註冊使用者帳戶
 
-如果代表指定的使用者帳戶註冊應用程式，則應用程式可以從 Intune 服務接收應用程式保護原則。 應用程式必須負責向 Intune App SDK 註冊任何新登入的使用者。 驗證新的使用者帳戶之後，應用程式應該呼叫 Headers/IntuneMAMEnrollment.h 中的 `registerAndEnrollAccount` 方法：
+如果應用程式代表指定的使用者帳戶向 APP-WE 服務註冊，應用程式就可以從 Intune 服務接收應用程式保護原則。 應用程式必須負責向 SDK 註冊任何新登入的使用者。 驗證新的使用者帳戶之後，應用程式應該呼叫 Headers/IntuneMAMEnrollment.h 中的 `registerAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -258,17 +257,17 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 
 叫用這個 API 之後，應用程式可以繼續正常運作。 如果註冊成功，SDK 將通知使用者：需要重新啟動應用程式。 此時，使用者可以立即重新啟動應用程式。
 
-### <a name="deregister-accounts"></a>取消註冊帳戶
+### <a name="deregister-user-accounts"></a>取消註冊使用者帳戶
 
 將使用者登出應用程式之前，應用程式應該從 SDK 取消註冊使用者。 這確保：
 
 1. 使用者帳戶不再發生註冊重試。
 
-2. 如果使用者已成功註冊應用程式，則會從 Intune MAM 服務取消註冊使用者和應用程式，並移除應用程式保護原則。
+2. 將會移除應用程式保護原則。
 
-3. 如果應用程式起始選擇性抹除 (選擇性)，則會刪除任何工作或學校相關資料。
+3. 如果應用程式起始選擇性抹除 (選擇性)，則會刪除任何公司資料。
 
-將使用者登出之前，應用程式應該呼叫 Headers/IntuneMAMEnrollment.h 中的下列 API：
+將使用者登出之前，應用程式應該呼叫 `Headers/IntuneMAMEnrollment.h` 中的下列 API：
 
 ```objc
 /*
@@ -286,17 +285,17 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
 ```
 
-刪除使用者帳戶的 Azure AD 權杖之前，必須呼叫這個方法。 SDK 需要使用者應用程式權杖，才能代表使用者對 Intune MAM 服務提出特定要求。
+刪除使用者帳戶的 Azure AD 權杖之前，必須呼叫這個方法。 SDK 需要使用者帳戶的 AAD 權杖，才能代表使用者對 APP-WE 服務提出特定要求。
 
-如果應用程式將自行刪除使用者的工作或學校相關資料，則 `doWipe` 旗標可以設定為 false。 否則，應用程式可以讓 SDK 起始選擇性抹除， 這樣會呼叫應用程式的選擇性抹除委派。
+如果應用程式將自行刪除使用者的公司資料，則 `doWipe` 旗標可以設定為 false。 否則，應用程式可以讓 SDK 起始選擇性抹除， 這樣會呼叫應用程式的選擇性抹除委派。
 
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-### <a name="enroll-without-prior-sign-in"></a>在沒有先前登入的情況下註冊
+### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的應用程式
 
-未登入具有 Azure Active Directory 之使用者的應用程式仍然可以從 Intune 服務接收應用程式保護原則，方法是呼叫 API 讓 SDK 處理該驗證。 如果應用程式尚未向 Azure AD 驗證使用者，但仍需要擷取應用程式保護原則以協助保護資料，則應用程式應該使用這項技術。 例如：如果正在使用另一個驗證服務進行應用程式登入，或者，如果應用程式根本不支援登入。 若要這麼做，應用程式應該呼叫 Headers/IntuneMAMEnrollment.h 中的 `loginAndEnrollAccount` 方法：
+未使用 ADAL 登入使用者的應用程式，仍然可以從 Intune 服務接收應用程式保護原則，方法是呼叫 API 讓 SDK 處理該驗證。 如果應用程式尚未向 Azure AD 驗證使用者，但仍需要擷取應用程式保護原則以協助保護資料，則應用程式應該使用這項技術。 例如：如果正在使用另一個驗證服務進行應用程式登入，或者，如果應用程式根本不支援登入。 若要這麼做，應用程式應該呼叫 Headers/IntuneMAMEnrollment.h 中的 `loginAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -309,9 +308,9 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 
 ```
 
-藉由呼叫這個方法，SDK 將在找不到現有權杖時提示使用者提供認證。 然後，SDK 會代表這個帳戶嘗試註冊應用程式。 這個方法在呼叫時 "nil" 為身分識別。 在這個情況下，SDK 將在裝置上註冊現有 MAM 使用者，或在找不到任何現有使用者時提示使用者提供使用者名稱。
+藉由呼叫這個方法，SDK 將在找不到現有權杖時提示使用者提供認證。 SDK 接著將會代表所提供的使用者帳戶，嘗試向 APP-WE 服務註冊應用程式。 這個方法在呼叫時 "nil" 為身分識別。 在這個情況下，SDK 將會使用裝置上現有的受管理使用者註冊，或在找不到任何現有使用者時提示使用者提供使用者名稱。
 
-如果註冊失敗，應用程式應該考慮根據失敗詳細資料，在未來重新呼叫這個 API。 應用程式可以透過委派來接收有關任何註冊要求結果的通知。
+如果註冊失敗，應用程式應該考慮根據失敗詳細資料，在未來重新呼叫這個 API。 應用程式可以透過委派來接收有關任何註冊要求結果的[通知](#Status-result-and-debug-notifications)。
 
 叫用這個 API 之後，應用程式可以繼續正常運作。 如果註冊成功，SDK 將通知使用者：需要重新啟動應用程式。
 
@@ -323,7 +322,7 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
  - 原則更新要求
  - 取消註冊要求
 
-透過 Headers/IntuneMAMEnrollmentDelegate.h 中的委派方法來呈現通知：
+透過 `Headers/IntuneMAMEnrollmentDelegate.h` 中的委派方法來呈現通知：
 
 ```objc
 /**
@@ -356,9 +355,7 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 - 狀態碼描述的錯誤字串
 - `NSError` 物件
 
-這個物件與可傳回的特定狀態碼定義在 IntuneMAMEnrollmentStatus.h 中。
-
-
+這個物件與可傳回的特定狀態碼定義在 `IntuneMAMEnrollmentStatus.h` 中。
 
 
 ### <a name="sample-code"></a>範例程式碼
@@ -394,9 +391,9 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 ```objc
  - (BOOL) restartApplication
 ```
-這個方法的傳回值會指示 SDK，應用程式是否將處理必要重新啟動：   
+這個方法的傳回值會指示 SDK，應用程式是否必須處理必要的重新啟動：   
 
- - 如果傳回 true，應用程式將處理重新啟動。   
+ - 如果傳回 true，應用程式就必須處理重新啟動。   
 
  - 如果傳回 false，則 SDK 將在傳回這個方法之後重新啟動應用程式。 SDK 會立即顯示一個對話方塊，指示使用者重新啟動應用程式。
 
@@ -404,7 +401,7 @@ Intune App SDK 現在可讓 iOS 應用程式從 Intune 接收應用程式保護�
 
 Intune 應用程式 SDK 中有多個 API，您可以呼叫以取得部署至應用程式之 Intune 應用程式保護原則的相關資訊。 您可以使用這項資料來自訂您的應用程式行為。 大部分的應用程式保護原則設定會由 SDK 自動強制執行，而不是應用程式。 應用程式應該實作的唯一設定是「另存新檔」控制項。
 
-### <a name="get-the-app-protection-policy-settings"></a>取得應用程式保護原則設定
+### <a name="get-app-protection-policy"></a>取得應用程式保護原則
 
 #### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
 IntuneMAMPolicyManager 類別會公開部署給應用程式的 Intune 應用程式保護原則。 值得注意的是，它會公開適用於[啟用多重身分識別](#-enable-multi-identity-optional)的 API。
@@ -442,7 +439,9 @@ Intune 可讓 IT 系統管理員選取受管理的應用程式可儲存資料的
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的設定
 
-您可以使用應用程式 Info.plist 檔案中的 **IntuneMAMSettings** 字典，來設定 Intune App SDK。 下表列出所有支援的設定。
+您可以使用應用程式 Info.plist 檔案中的 **IntuneMAMSettings** 字典，以設定 Intune App SDK。 如果 Info.plist 檔案中看不到 IntuneMAMSettings 字典，您應該使用欄位名稱 "IntuneMAMSettings" 在應用程式的 Info.plist 中建立字典。
+
+在 IntuneMAMSettings 字典底下，您可以新增組態設定的索引鍵/值列以設定 SDK。 下表列出所有支援的設定。
 
 其中一些設定可能在前幾節中討論過，而且有些設定並不適用於所有應用程式。
 
@@ -590,15 +589,15 @@ SDK 會追蹤本機檔案擁有者的身分識別，並據以套用原則。 建
 
 * 如果 Xcode 在尋找 `libIntuneMAM.a` 時遇到問題，您可以藉由將這個程式庫的路徑加入連結器搜尋路徑中，來修正問題。
 
-## <a name="faq"></a>常見問題集
+## <a name="faqs"></a>常見問題集
 
 
 **是否可透過原生 Swift 或 Objective-C 以及 Swift 互通性定址所有 API？**
 
-Intune App SDK API 僅限於 Objective-C 且不支援原生 Swift。  
+Intune App SDK API 僅限於 Objective-C 且不支援原生 Swift。 必須有 Swift 與 Objective-C 的互通性。
 
 
-**是否需要向 MAM 服務註冊我應用程式的所有使用者？**
+**是否需要向 APP-WE 服務註冊應用程式的所有使用者？**
 
 否。 事實上，只應該向 Intune App SDK 註冊工作或學校帳戶。 應用程式負責決定是否在工作或學校內容中使用帳戶。   
 

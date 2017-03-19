@@ -4,8 +4,8 @@ description: "使用 Endpoint Protection 保護您受管理的電腦，它可針
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何檢視電腦上最近偵測到惡意程式碼的路徑
 Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行個體的路徑。 [最近的偵測路徑]  預設會停用。 若要啟用此檢視：
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] > [所有裝置] > [惡意程式碼]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] > [所有裝置] > [所有電腦]。
+2. 以滑鼠右鍵按一下您想要查看其最近偵測路徑的電腦，然後選取 [屬性]。
+3. 從頂端的索引標籤選取 [惡意程式碼]。
 
-2.  以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。
-
-3.  選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
+   ![選取 [惡意程式碼] 索引標籤，然後按一下 [最近的偵測路徑] 核取方塊](../media/malware-path-column.png)
+4. 以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。 選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>更新電腦上的惡意程式碼定義。
 Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 Endpoint Protection 或 Windows Defender 執行完整或快速惡意程式碼掃描。
@@ -184,9 +185,6 @@ Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 E
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，移至 [群組] > [概觀] > [所有裝置] > [所有電腦]，然後選取您要設為目標的電腦。
 
 2. 選擇 [遠端工作] 下拉式清單，然後選取要在遠端電腦上執行的工作。
-
-
-
 
 ## <a name="need-more-help"></a>需要其他協助？
 如需進一步協助和支援，請參閱[針對 Microsoft Intune 中的 Endpoint Protection 進行疑難排解](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。

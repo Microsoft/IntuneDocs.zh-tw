@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Intune 提供一系列您可以在 [Android for Work 裝置](android-for-work.md
 |----------------|-|
 |**允許工作和個人設定檔間的資料共用**|可讓工作設定檔中的應用程式與使用者個人設定檔中的應用程式共用資料。 從下列選項進行選擇：<br><br>- **禁止邊界之間共用**<br>- **工作設定檔中的應用程式可以處理來自個人設定檔的共用要求**<br>- **共用無限制**|
 |**當裝置處於鎖定狀態時，隱藏工作設定檔通知**<br>(Android 6 及更新版本)|控制當裝置處於鎖定狀態時，是否要顯示工作設定檔中的任何通知。|
-|**設定預設應用程式權限原則**<br>(Android 6 及更新版本)|設定工作設定檔中所有應用程式的預設權限原則。|
+|**設定預設應用程式權限原則**<br>(Android 6 及更新版本)|設定工作設定檔中所有應用程式的預設權限原則。 從 Android 6 開始，應用程式所要求的某些權限會在執行階段向使用者提示。  此原則設定可讓 IT 人員決定如何提示使用者 (或是否要提示使用者) 來為工作設定檔中的應用程式授與權限。 <br/><br/>例如，IT 人員可以將應用程式推送到需要位置存取權限的工作設定檔。  通常應用程式會向使用者顯示快顯對話方塊，詢問他們是否要授與應用程式位置存取權限，而使用者可以核准或拒絕。  此原則可讓 IT 人員決定是否應自動授與所有權限而不提示、自動拒絕而不提示，或是讓使用者決定。|
 
 
 ## <a name="custom-policy-settings"></a>自訂原則設定
@@ -91,9 +92,4 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
