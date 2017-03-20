@@ -88,7 +88,7 @@
 #### [Windows 8 和 Windows 8.1 設定](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 設定](deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 Desktop 和行動裝置版設定](deploy-use/windows-10-policy-settings-in-microsoft-intune.md)
-#### [Windows 小組設定](deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune.md)
+#### [Windows 團隊版設定](deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows 版本升級設定](deploy-use/edition-upgrade-policy-settings-in-microsoft-intune.md)
 #### [Mac OS X 設定](deploy-use/mac-os-x-policy-settings-in-microsoft-intune.md)
 #### [Exchange ActiveSync 設定](deploy-use/exchange-activesync-policy-settings-in-microsoft-intune.md)
@@ -120,6 +120,7 @@
 
 ## [新增應用程式](deploy-use/add-apps.md)
 ### [為已註冊的裝置新增應用程式](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [側載 Windows 應用程式](deploy-use/sideload-apps-for-windows.md)
 ### [為 Intune 用戶端電腦新增應用程式](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [管理 Intune 用戶端電腦的授權合約](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [部署應用程式](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Android for Work 應用程式設定原則](deploy-use/afw-app-configuration-policy.md)
 ### [iOS 行動應用程式佈建設定檔](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [管理網際網路存取](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [側載 LOB 應用程式](deploy-use/sideload-apps-for-windows.md)
 
 ## [保護應用程式和資料](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [裝置相容性原則](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)

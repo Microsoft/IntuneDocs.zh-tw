@@ -169,6 +169,8 @@
 ### [建立 Android for Work 相容性原則](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [建立 iOS 相容性原則](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [建立 Windows 相容性原則](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [針對非合規性建立動作](set-device-compliance/actions-for-noncompliance.md)
+### [監視裝置合規性](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
