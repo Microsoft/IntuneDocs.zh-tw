@@ -3,7 +3,7 @@
 ## 開始使用
 <!---(introduction/get-started.md) --->
 ### [註冊免費試用版](introduction/sign-up-free-trial-microsoft-intune.md)
-## [新功能](introduction/whats-new.md)
+## [新增功能](introduction/whats-new.md)
 ## [已知問題](introduction/known-issues-in-the-intune-preview.md)
 ## [取得支援](introduction/how-to-get-support-for-microsoft-intune.md)
 <!---
@@ -38,12 +38,12 @@
 #### [使用設定助理來註冊 iOS 裝置](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 #### [使用直接註冊來註冊 iOS 裝置](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [新增 Apple Configurator 序號](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [使用裝置註冊方案註冊 iOS 裝置](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+#### [使用裝置註冊計劃註冊 iOS 裝置](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [使用裝置註冊管理員註冊裝置](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [註冊 macOS 裝置](enroll-devices/enroll-macos-devices.md)
 ### [註冊 Windows 裝置](enroll-devices/enroll-window-devices.md)
 ### 管理裝置註冊
-#### [建立條款和條件](enroll-devices/create-terms-and-conditions.md)
+#### [建立條款及條件](enroll-devices/create-terms-and-conditions.md)
 #### [設定註冊限制](enroll-devices/set-enrollment-restrictions.md)
 #### [將裝置對應到群組](enroll-devices/how-to-use-device-group-mapping.md)
 #### [新增公司識別碼](enroll-devices/add-corporate-identifiers.md)
@@ -54,7 +54,7 @@
 ## [什麼是裝置管理？](manage-devices/what-is.md)
 <!--- ## [Get started](manage-devices/get-started.md) --->
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
-## 做法
+## 作法
 ### [使用完整或選擇性抹除](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## 做法
 ### [設定裝置設定檔](configure-devices/how-to-create-device-profiles.md)
+
+### [設定裝置功能](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [設定裝置限制](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -161,14 +166,14 @@
 ### [設定電信費用管理服務](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
 ## [疑難排解](configure-devices/troubleshoot-device-profiles.md)
 
-# 設定裝置相容性
-## [什麼是裝置相容性？](set-device-compliance/what-is-device-compliance.md)
+# 設定裝置合規性
+## [什麼是裝置合規性？](set-device-compliance/what-is-device-compliance.md)
 ## [開始使用](set-device-compliance/get-started-with-device-compliance.md)
-## 做法
-### [建立 Android 相容性原則](set-device-compliance/create-a-compliance-policy-for-android.md)
-### [建立 Android for Work 相容性原則](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
-### [建立 iOS 相容性原則](set-device-compliance/create-a-compliance-policy-for-ios.md)
-### [建立 Windows 相容性原則](set-device-compliance/create-a-compliance-policy-for-windows.md)
+## 作法
+### [建立 Android 合規性原則](set-device-compliance/create-a-compliance-policy-for-android.md)
+### [建立 Android for Work 合規性原則](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
+### [建立 iOS 合規性原則](set-device-compliance/create-a-compliance-policy-for-ios.md)
+### [建立 Windows 合規性原則](set-device-compliance/create-a-compliance-policy-for-windows.md)
 ### [針對非合規性建立動作](set-device-compliance/actions-for-noncompliance.md)
 ### [監視裝置合規性](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
@@ -177,7 +182,7 @@
 
 # 條件式存取
 ## [什麼是條件式存取？](conditional-access/what-is-conditional-access.md)
-## 做法
+## 作法
 ### [安裝 Exchange 內部部署連接器](conditional-access/install-intune-on-premises-exchange-connector.md)
 ### [建立條件式存取原則](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
 
