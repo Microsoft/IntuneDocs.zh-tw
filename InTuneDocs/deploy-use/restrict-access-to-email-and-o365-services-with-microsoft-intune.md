@@ -74,7 +74,7 @@ Microsoft Intune 和 Azure Active Directory (Azure AD) Premium 可完美合作�
 2. [建立裝置相容性原則](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
 2.  針對下列 Microsoft 雲端服務/產品建立條件式存取原則：
-> [!div class="op_single_selector"]
+
   - [建立 Exchange Online 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [建立 Exchange 內部部署的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [建立 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
