@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/18/2017
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|    是 |    否 | 更多資訊即將推出|
+|**[BYOD](#byod)** | 否 |    是 |    否 | 更多資訊即將推出|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android 的註冊方法**

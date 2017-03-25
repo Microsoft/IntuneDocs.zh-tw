@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -49,11 +49,11 @@ Intune 可啟用 iPad、iPhone 和 macOS 裝置的行動裝置管理 (MDM)，且
 
 5.  **告訴使用者如何註冊其裝置來存取公司資源。**
 
-    如需終端使用者註冊指示，請參閱[在 Intune 註冊 iOS 裝置](../enduser/enroll-your-device-in-intune-ios.md)和[在 Intune 註冊 macOS 裝置](../enduser/enroll-your-device-in-intune-macos.md)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
+    如需終端使用者註冊指示，請參閱[在 Intune 註冊 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)和[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
 
     如需其他使用者工作的資訊，請參閱下列文章：
     - [使用 Microsoft Intune 之使用者體驗的相關資源](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [iOS 與 Mac 裝置的使用者指南](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [iOS 與 Mac 裝置的使用者指南](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 如果您的公司或組織為使用者購買 iOS 裝置，這些裝置也可以註冊為[公司擁有的 iOS 裝置](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)以納入管理。
 

@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 63ac5ecf6fbe9ae66c879466c7785b051dfb7a61
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -42,17 +42,18 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 
 ## <a name="set-up-macos-enrollment"></a>設定 macOS 註冊
 
-根據預設，Intune 已允許註冊 macOS 裝置。 
+根據預設，Intune 已允許註冊 macOS 裝置。
 
-若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (設定裝置類型限制)。 
+若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (設定裝置類型限制)。
 
 若要設定使用者能夠註冊的裝置數上限，請參閱 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) (設定裝置限制)。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告知使用者如何註冊其裝置才可存取公司資源
 
-您需要告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 
+您需要告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 
-- [使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+- [使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
 - [搭配 Intune 使用 iOS 或 macOS 裝置](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
+
