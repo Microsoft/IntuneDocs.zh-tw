@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 有時候 Android 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](http://portal.manage.microsoft.com)上的連絡資訊，與您的 IT 系統管理員連絡。
 
+- [檢查 Android 裝置的合規性](check-compliance-on-your-device-android.md)
 - [使用詳細資訊記錄來協助 IT 系統管理員修正裝置問題](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [使用電子郵件將記錄檔傳送給 IT 管理員](send-logs-to-your-it-admin-by-email-android.md)
 - [使用 USB 纜線將記錄檔傳送給您的 IT 管理員](send-logs-to-your-it-admin-using-cable-android.md)

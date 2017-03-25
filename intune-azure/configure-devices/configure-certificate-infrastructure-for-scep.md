@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>在 Microsoft Intune 中設定 SCEP 的憑證基礎結構
@@ -54,7 +54,7 @@ ms.lasthandoff: 02/18/2017
 建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)，或是協力廠商 Proxy。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>憑證和範本
+### <a name="BKMK_CertsAndTemplates"></a>憑證和範本
 
 |物件|詳細資料|
 |----------|-----------|
@@ -63,13 +63,13 @@ ms.lasthandoff: 02/18/2017
 |**伺服器驗證憑證**|由發行的 CA 或公用 CA 所要求，於 NDES 伺服器的 IIS 中安裝並繫結的 SSL 憑證。|
 |**可信任的根 CA 憑證**|從根 CA (或任何信任根 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>帳戶
+### <a name="BKMK_Accounts"></a>帳戶
 
 |名稱|詳細資料|
 |--------|-----------|
 |**NDES 服務帳戶**|您指定網域使用者帳戶以做為 NDES 服務帳戶。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>設定基礎結構
+## <a name="BKMK_ConfigureInfrastructure"></a>設定基礎結構
 您可以設定憑證設定檔之前，必須先完成下列工作，這些需要 Windows Server 2012 R2 和 Active Directory 憑證服務 (ADCS) 的知識：
 
 **工作 1**：建立 NDES 服務帳戶
@@ -108,7 +108,7 @@ ms.lasthandoff: 02/18/2017
     -   在 [延伸]  索引標籤上，確定 [應用程式原則描述]  包含 [用戶端驗證] 。
 
         > [!IMPORTANT]
-        > 若為 iOS 和 Mac OS X 憑證範本，請在 [延伸] 索引標籤上，編輯 [金鑰使用方法] ，並確保未選取 [簽章是原件證明]。
+        > 若為 iOS 和 macOS 憑證範本，請在 [延伸] 索引標籤上編輯 [金鑰使用方法]，並確保未選取 [簽章是原件證明]。
 
     -   在 [安全性] 索引標籤上，新增 NDES 服務帳戶，並提供其 [註冊] 範本的權限。 將建立 SCEP 設定檔的 Intune 系統管理員需要 [讀取] 權限，讓他們可以在建立 SCEP 設定檔時瀏覽至範本。
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 02/18/2017
 3.  檢閱範本 [一般]  索引標籤上的 [有效期間]  。 根據預設，Intune 使用範本中所設定的值。 不過，您可以選擇設定 CA 以允許要求者指定不同的值，然後您可以從 Intune 管理主控台內設定該值。 如果您想要一律使用範本中的值，請略過此步驟中的其餘部分。
 
     > [!IMPORTANT]
-    > iOS 和 Mac OS X 平台一律會使用範本中的設定值，而不論您所做的其他組態設定。
+    > iOS 和 macOS 一律會使用範本中的值，而不論您所做的其他組態設定。
 
 以下是範例範本設定的螢幕擷取畫面。
 

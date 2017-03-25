@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 0ba6695b595849f72eb44d8e6f095e8b1aae39eb
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3b355d43d4be05535f256d88a8648c2e67035882
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/10/2017
 此頁面會定期更新。 請回來查看其他更新。
 
 > [!Note]
-> 下列變更正在 Intune 的開發過程中。 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) (混合式新功能) 頁面。
+> 下列變更正在 Intune 的開發過程中。 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) (混合式新功能) 頁面。
 
 ## <a name="new-capabilities"></a>新功能
 
@@ -47,11 +47,15 @@ Android 版公司入口網站應用程式將會更新其使用者介面，以提
 
 如需關於這些變更的詳細資料，請參閱[應用程式 UI 更新頁面](whats-new-in-intune-app-ui.md]。
 
+### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 公司入口網站的簽署指令碼 <!--941642-->
+
+若客戶需要下載和側載「Windows 10 公司入口網站」應用程式，您現在可以使用指令碼為您的組織簡化及加速應用程式簽署程序。   若需要下載指令碼及其使用指示，請參閱 TechNet 資源庫上 [Windows 10 公司入口網站專用的 Microsoft Intune 簽署指令碼](https://aka.ms/win10cpscript)。 如需本公告的詳細資訊，請參閱 Intune 支援小組部落格上的[更新您的 Windows 10 公司入口網站應用程式](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)。 
+
 ## <a name="notices"></a>通知
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改善對於中國 Android 使用者的支援 <!--720444-->
 
-由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文市集取得應用程式。 公司入口網站將支援此工作流程，方法是將中國的 Android 使用者重新導向，以便從當地的應用程式市集下載公司入口網站及 Outlook 應用程式。 這將會在啟用條件式存取原則時，改善對於行動裝置管理及行動應用程式管理的使用者體驗。 Android 版公司入口網站和 Outlook 應用程式可在下列中文應用程式市集取得： 
+由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文市集取得應用程式。 公司入口網站將支援此工作流程，方法是將中國的 Android 使用者重新導向，以便從當地的應用程式市集下載公司入口網站及 Outlook 應用程式。 這將會在啟用條件式存取原則時，改善對於行動裝置管理及行動應用程式管理的使用者體驗。 Android 版公司入口網站和 Outlook 應用程式可在下列中文應用程式市集取得：
 
 - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
 - [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -61,7 +65,7 @@ Android 版公司入口網站應用程式將會更新其使用者介面，以提
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 需要更新 Application Transport Security <!--748318-->
 
-Apple 宣告，從 2017 年春季開始，將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 這項變更會影響使用 iOS/macOS 公司入口網站應用程式的 Intune 客戶。 如需詳細資訊，請檢閱我們的 [Intune 支援部落格 (英文)](https://aka.ms/compportalats)。
+Apple 宣告，從 2017 年春季開始，將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 這項變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。 如需詳細資訊，請檢閱我們的 [Intune 支援部落格 (英文)](https://aka.ms/compportalats)。
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Azure 上新 Intune 管理體驗的公開預覽 <!--736542-->
 
@@ -69,9 +73,7 @@ Apple 宣告，從 2017 年春季開始，將會強制執行 Application Transpo
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新管理體驗的公開預覽。 在預覽狀態期間，將透過現有的 Intune 主控台反覆提供功能和同位檢查。
 
-Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設定功能；當您現有的租用戶移轉至新的群組體驗時，也會同時將您移轉，以預覽您租用戶的新管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)。
-
-如果您有任何關於租用戶移轉時間表的問題，請連絡我們的移轉團隊：[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)。
+Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設定功能；當您現有的租用戶移轉至新的群組體驗時，也會同時將您移轉，以預覽您租用戶的新管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)。
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>未受管理的裝置可以存取已指派的應用程式 <!--664691-->
 
@@ -92,7 +94,7 @@ iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派�
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>指派 LOB 應用程式給使用未註冊裝置的使用者 <!--748823-->
 
-您現在可以將市集中的企業營運應用程式指派給使用者，不論其裝置是否已向 Intune 註冊。 如果未向 Intune 註冊使用者裝置，則他們必須前往公司入口網站安裝它，而不是公司入口網站應用程式。
+您現在可以將市集中的企業營運應用程式指派給使用者，不論其裝置是否已向 Intune 註冊。 如果未向 Intune 註冊使用者裝置，則必須前往「公司入口網站」網站安裝它，而不是公司入口網站應用程式。
 
 ### <a name="new-compliance-reports---846671--"></a>新的合規性報告 <!--846671-->
 

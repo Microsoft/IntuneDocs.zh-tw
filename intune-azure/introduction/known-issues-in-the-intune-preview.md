@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ ms.lasthandoff: 02/18/2017
 ## <a name="administration-and-accounts"></a>管理與帳戶
 
 - 全域管理員 (也稱為租用戶管理員) 無須個別的 Intune 或 Enterprise Mobility Suite (EMS) 授權，也可以繼續執行日常的管理工作。 但是，如果全域系統管理員想要使用服務，例如註冊自己的裝置、公司裝置或使用 Intune 公司入口網站，他們就需要有 Intune 或 EMS 授權，像任何其他使用者一樣。
+
+## <a name="apple-enrollment-profile-migration"></a>Apple 註冊設定檔移轉
+- 在接下來的幾個月，Intune 會透過新的 Azure 入口網站啟用管理 Apple 裝置註冊方案和 Apple Configurator 註冊項目。 如果您刪除 Apple 裝置註冊方案的權杖，且沒有上傳更新的權杖，原始權杖就會還原在新的 Azure 入口網站中，成為您移轉 Intune 帳戶的一部分。 若要移除這個權杖，並避免 DEP 註冊，只要刪除 Azure 入口網站中的權杖即可。 
 

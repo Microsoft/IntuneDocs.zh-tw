@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/10/2016
 
 1.  在公司入口網站應用程式的 [我的裝置] 下，選取要取消註冊的裝置。
 
-2.  點選 [移除] &gt; [移除]。
+2.  點選 [移除] >; [移除]。
 
 當您從 Intune 取消註冊裝置時，會發生下列情況：
 

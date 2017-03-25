@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -32,9 +32,9 @@ ms.lasthandoff: 12/21/2016
 當您的系統使用安全開機時，即會自動開啟程式碼完整性。
 
 > [!Tip]
-> 啟用安全開機是進階工作。 如果您是使用 Windows 行動裝置，請連絡 IT 系統管理員以取得協助。 如果您是使用桌面裝置，則可以連絡 IT 系統管理員。
+> 啟用安全開機是進階工作。 建議您連絡 IT 管理員來協助您進行這個工作。
 
-<!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
+如果您認為可以繼續，請參閱[停用安全開機](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)頁面上的＜重新啟用安全開機＞一節，嘗試自行啟用安全開機。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

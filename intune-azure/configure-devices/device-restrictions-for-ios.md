@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ ms.lasthandoff: 02/18/2017
 -     **iCloud 照片圖庫** - 如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。    如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。
 -     **受管理應用程式同步至雲端** - 允許您使用 Intune 管理的應用程式將資料同步至使用者的 iCloud 帳戶。
 -     **共享相片串流** - 設定為 [否]，會停用裝置上的 [iCloud 相片共享]。
--     **活動接續** - 允許使用者在另一部 iOS 或 Mac OS X 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
+-     **活動接續** - 允許使用者在另一部 iOS 或 macOS 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
 
 ## <a name="kiosk"></a>Kiosk
 -     **啟用鎖定** - 在受監督的 iOS 裝置上將啟用鎖定啟用。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="set-your-pin-or-password"></a>設定您的 PIN 或密碼
 
-當您使用 Intune 存取公司或學校的資料時，IT 系統管理員可能會要求您在 Android 裝置上設定 PIN 或密碼。 您也可能會看到需要將 PIN 或密碼設為更久或更複雜，使其更為安全的訊息。  
+當您使用 Intune 存取公司或學校的資料時，IT 系統管理員可能會要求您在 Android 裝置上設定 PIN 或密碼。 您也可能會看到需要將 PIN 或密碼設為更久或更複雜，使其更為安全的訊息。 舉例來說，這些密碼會用於從鎖定畫面存取您的裝置。
 
 您可以使用下列步驟來設定 PIN 或密碼。
 

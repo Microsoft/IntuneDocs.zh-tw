@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-本指南此節應與第 2 節中的其他主題一起使用。 此設計會以您為完成本指南前面幾節所收集的資訊及決定為基礎。 這個設計部分會著重在 Intune 獨立，也就是位於雲端的 Microsoft 雲端服務。
+本指南此節應與第 2 節中的其他主題一起使用。 此設計會以您為完成本指南前面幾節所收集的資訊及決定為基礎。 這個設計部分會著重在 Intune 獨立版，也就是 Microsoft 雲端服務。
 
-雖然有基本的內部部署基礎結構需求，但仍建議您要有設計計畫，以確定您獲得符合目的、目標和需求的正確行動裝置管理解決方案。
+雖然有基本的內部部署基礎結構需求，但您要有設計計畫，以確定您獲得符合目的、目標和需求的正確行動裝置管理解決方案。
 
-此外，在實作和測試階段也常會發生設計變更，請務必記錄所有這些變更及其發生背後的原理。 我們繼續討論下列區域︰
+此外，在實作和測試階段也常會發生設計變更，請務必記錄這些變更及其發生背後的原理。 我們繼續討論下列區域︰
 
 -   目前的環境
 
@@ -409,9 +410,4 @@ Intune 支援以多種方式向使用者或裝置遞送應用程式。 遞送的
 ## <a name="next-section"></a>下一節
 
 下一節提供有關 [Intune 實作程序](section-8-onboarding-process.md)的指引。
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

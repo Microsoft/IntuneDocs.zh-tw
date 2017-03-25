@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>使用電子郵件將記錄檔傳送給 IT 管理員
 
-如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，您可以使用電子郵件將訊息傳送給 IT 管理員，協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log__ 的特殊文件中。
+如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，您可以使用電子郵件將訊息傳送給 IT 系統管理員，協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
 
 > [!Note]
 > 為方便 IT 管理員更容易找出問題，您應該開啟 [詳細資訊記錄]。 [詳細資訊記錄] 包含報表中所有相關的詳細資訊。 了解如何[開啟 [詳細資訊記錄]](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
