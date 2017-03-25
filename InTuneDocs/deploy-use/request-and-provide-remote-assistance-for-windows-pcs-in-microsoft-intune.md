@@ -75,7 +75,7 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 ## <a name="remotely-restart-a-windows-pc"></a>從遠端重新啟動 Windows 電腦
 當您協助發生問題的使用者時，您偶而便必須從遠端重新啟動他們的電腦。 使用下列步驟從遠端重新啟動 Windows 電腦。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要重新啟動之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\(或包含您想要重新啟動之電腦的其他群組)。
 
 2.  選取一或多部電腦，然後選擇 [遠端工作] &gt; [重新啟動電腦]。
 
