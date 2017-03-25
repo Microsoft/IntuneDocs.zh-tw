@@ -41,7 +41,7 @@
 #### [使用裝置註冊計劃註冊 iOS 裝置](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [使用裝置註冊管理員註冊裝置](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [註冊 macOS 裝置](enroll-devices/enroll-macos-devices.md)
-### [註冊 Windows 裝置](enroll-devices/enroll-window-devices.md)
+### [註冊 Windows 裝置](enroll-devices/enroll-windows-devices.md)
 ### 管理裝置註冊
 #### [建立條款及條件](enroll-devices/create-terms-and-conditions.md)
 #### [設定註冊限制](enroll-devices/set-enrollment-restrictions.md)
