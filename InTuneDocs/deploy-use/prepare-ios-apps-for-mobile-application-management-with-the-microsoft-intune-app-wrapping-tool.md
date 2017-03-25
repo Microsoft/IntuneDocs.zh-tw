@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
 ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -76,15 +77,15 @@ ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 2. 按一下頁面右上方的 [註冊]。
 
-3. 閱讀註冊所需項目的檢查清單。 按一下頁面底部的 [Start Your Enrollment] (開始註冊)。
+3. 閱讀註冊所需項目的檢查清單。 按一下頁面底部的 [Start Your Enrollment]\(開始註冊)。
 
-4. 使用組織的 Apple 識別碼**登入**。 如果您沒有 Apple 識別碼，請按一下 [Create Apple ID] (建立 Apple 識別碼)。
+4. 使用組織的 Apple 識別碼**登入**。 如果您沒有 Apple 識別碼，請按一下 [Create Apple ID]\(建立 Apple 識別碼)。
 
 5. 選取您的 [實體類型]，然後按一下 [繼續]。
 
 6. 使用您組織的資訊來填寫表單。 按一下 [繼續] 。 Apple 此時會連絡您，確認您已獲授權可註冊您的組織。
 
-8. 驗證之後，請按一下 [Agree to License] (同意授權)。
+8. 驗證之後，請按一下 [Agree to License]\(同意授權)。
 
 9. 同意授權之後，即可透過**購買和啟動程式**來完成。
 
@@ -399,9 +400,4 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 - [決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [使用 SDK 讓應用程式能夠管理行動裝置應用程式](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
