@@ -36,7 +36,7 @@ ms.lasthandoff: 03/16/2017
 > [!Note]
 > 若要更新比 Windows 8.1 舊版的作業系統電腦，請搜尋 **Windows Update**。
 
-若是 Windows 10 和 Windows 8.1，請在__搜尋列__中輸入 __Windows 版本__。 在 [Can I help?] (需要協助?) 下方，選取 [Windows 版本]。 即會出現版本號碼。 這個號碼看起來應該類似於 __10.0.14393.447__。
+若是 Windows 10 和 Windows 8.1，請在__搜尋列__中輸入 __Windows 版本__。 在 [Can I help?]\(需要協助?) 下方，選取 [Windows 版本]。 即會出現版本號碼。 這個號碼看起來應該類似於 __10.0.14393.447__。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 
