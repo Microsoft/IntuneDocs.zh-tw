@@ -23,7 +23,7 @@ ms.lasthandoff: 02/18/2017
 
 ---
 
-# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>使用 Apple Configurator 與設定助理來註冊 iOS 裝置 
+# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>使用 Apple Configurator 與設定助理來註冊 iOS 裝置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -102,50 +102,39 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 3. 在 [設定檔] 刀鋒視窗中，選取 [匯出設定檔]。
 
 4. 在連結著 iOS 裝置的情況下，將設定檔 URL 複製到 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 中。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
-
   若要支援 Apple Configurator 2，則必須編輯 2.0 設定檔 URL。 若要執行這項操作，請將此程式碼：
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     取代為以下程式碼：
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   您將使用下列程序中的 Apple Configurator 將這個設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
+您將使用下列程序中的 Apple Configurator 將這個設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
 
 5. 使用 Apple Configurator 將此設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
+ 1.  在 Mac 電腦上，開啟 [Apple Configurator 2] 在功能表列中，選擇 [Apple Configurator 2]，然後選擇 [喜好設定]。
 
+  > [!WARNING]
+  > 在註冊過程，會將裝置重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您將裝置連線時，裝置應該會在 **Hello** 畫面。
 
-    1.  在 Mac 電腦上，開啟 [Apple Configurator 2] 在功能表列中，選擇 [Apple Configurator 2]，然後選擇 [喜好設定]。
+  2. 在 [喜好設定] 窗格中，選取 [伺服器]，然後選擇加號 (+) 來啟動 [MDM 伺服器精靈]。 選擇 **[下一步]**。
 
-         > [!WARNING]
-         > 在註冊過程，會將裝置重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您將裝置連線時，裝置應該會在 **Hello** 畫面。
+  3. 輸入＜使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊＞下步驟 #6 中 MDM 伺服器的 [名稱] 和 [註冊 URL]。 對於 [註冊 URL]，輸入從 Intune 匯出的註冊設定檔 URL。 選擇 **[下一步]**。  
 
-    2. 在 [喜好設定] 窗格中，選取 [伺服器]，然後選擇加號 (+) 來啟動 [MDM 伺服器精靈]。 選擇 **[下一步]**。
+  您可以放心地忽略指出「伺服器 URL 未經驗證」的警告。 請選擇 [下一步] 以繼續，直到精靈完成為止。
 
-    3. 輸入＜使用 Microsoft Intune 進行 iOS 裝置的設定助理註冊＞下步驟 #6 中 MDM 伺服器的 [名稱] 和 [註冊 URL]。 對於 [註冊 URL]，輸入從 Intune 匯出的註冊設定檔 URL。 選擇 **[下一步]**。  
+  4.  將 iOS 行動裝置連線到具有 USB 介面卡的 Mac 電腦。
 
-       您可以放心地忽略指出「伺服器 URL 未經驗證」的警告。 請選擇 [下一步] 以繼續，直到精靈完成為止。
+  > [!WARNING]
+  > 在註冊過程，會將裝置重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您啟動設定助理時，裝置應該會在 [Hello] 畫面上。
 
-    4.  將 iOS 行動裝置連線到具有 USB 介面卡的 Mac 電腦。
-
-        > [!WARNING]
-        > 在註冊過程，會將裝置重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您啟動設定助理時，裝置應該會在 [Hello] 畫面上。
-
-    5.  選擇 [準備]。 在 [準備 iOS 裝置] 窗格上，選取 [手動]，然後選擇 [下一步]。
-
-    6. 在 [Enroll in MDM Server] (在 MDM 伺服器中註冊) 窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]。
-
-    7. 在 [監督裝置]窗格上，選取監督層級，然後選擇 [下一步]。
-
-    8. 在 [Create an Organization] (建立組織) 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
-
-    9. 在 [Configure iOS Setup Assistant] (設定 iOS 設定助理) 窗格上，選擇要呈現給使用者的步驟，然後選擇 [準備]。 若出現提示，請驗證以更新信任設定。  
-
-    10. 當 iOS 裝置完成準備時，請拔除 USB 纜線。  
-
+  5.  選擇 [準備]。 在 [準備 iOS 裝置] 窗格上，選取 [手動]，然後選擇 [下一步]。
+  6. 在 [Enroll in MDM Server] (在 MDM 伺服器中註冊) 窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]。
+  7. 在 [監督裝置]窗格上，選取監督層級，然後選擇 [下一步]。
+  8. 在 [Create an Organization] (建立組織) 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
+  9. 在 [Configure iOS Setup Assistant] (設定 iOS 設定助理) 窗格上，選擇要呈現給使用者的步驟，然後選擇 [準備]。 若出現提示，請驗證以更新信任設定。  
+  10. 當 iOS 裝置完成準備時，請拔除 USB 纜線。  
 6.  **散發裝置**。
     裝置現在已準備好進行公司註冊。 關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
 
