@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
 ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
+ms.lasthandoff: 02/13/2017
 
 
 ---
@@ -107,9 +108,4 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [使用 SDK 讓應用程式進行行動應用程式管理](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
