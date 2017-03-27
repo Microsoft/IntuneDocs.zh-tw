@@ -50,5 +50,5 @@ ms.lasthandoff: 12/10/2016
 啟動公司入口網站應用程式，並選取目前裝置磚並點選 [移除] 按鈕來取消註冊。 移除之後，請遵循[在 Intune 註冊 iOS 裝置](/Intune/EndUser/enroll-your-device-in-intune-ios)的標準註冊步驟。
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>使用新舊裝置的使用者
-點選 [設定] > [Safari] > [Clear History and Website Data] (清除歷程記錄和網站資料)，以從 Safari 清除 Cookie。 清除之後，解除安裝並重新安裝公司入口網站應用程式，然後遵循[在 Intune 註冊 iOS 裝置](/Intune/EndUser/enroll-your-device-in-intune-ios)的標準註冊步驟。
+點選 [設定] > [Safari] > [Clear History and Website Data]\(清除歷程記錄和網站資料)，以從 Safari 清除 Cookie。 清除之後，解除安裝並重新安裝公司入口網站應用程式，然後遵循[在 Intune 註冊 iOS 裝置](/Intune/EndUser/enroll-your-device-in-intune-ios)的標準註冊步驟。
 

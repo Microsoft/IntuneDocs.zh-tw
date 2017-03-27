@@ -29,7 +29,7 @@ ms.lasthandoff: 12/16/2016
 
 將使用者連結到電腦：
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要連結至使用者之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\ (或包含您想要連結至使用者之電腦的其他群組)。
 
 2.  選取您想要連結使用者的電腦，然後選擇 [連結使用者]。
 
