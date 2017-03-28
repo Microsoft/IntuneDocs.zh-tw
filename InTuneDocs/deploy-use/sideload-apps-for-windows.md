@@ -136,7 +136,7 @@ ms.lasthandoff: 03/15/2017
 
 1.  簽署企業營運應用程式的最新版本。
 
-2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
+2.  [開啟 Intune 管理主控台](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com)，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
@@ -159,7 +159,7 @@ ms.lasthandoff: 03/15/2017
 5. 將公司入口網站應用程式上傳至 Intune 之前，先建立資料夾 (例如 C:&#92;Company Portal)，並以如下結構放置套件︰
   1. 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 Dependencies 子資料夾。  
   ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](../media/Win10CP-Dependencies-save.png)
-  2. 將&9; 個相依性套件放在 Dependencies 資料夾中。  
+  2. 將 9 個相依性套件放在 Dependencies 資料夾中。  
   如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
   ![在應用程式資料夾中找不到此軟體安裝程式的 Windows 應用程式相依性。 您可以繼續建立並部署此應用程式，但必須等到提供遺失的 Windows 應用程式相依性之後，它才能執行。](../media/Win10CP-error-message.png)
 6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其部署為必要的應用程式。  
