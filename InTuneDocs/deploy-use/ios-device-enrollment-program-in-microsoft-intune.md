@@ -53,7 +53,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="get-a-device-enrollment-program-token"></a>取得裝置註冊方案 Token
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司的 Apple ID 登入。 稍後，您必須使用這個 Apple ID 來更新 DEP 權杖。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com),並使用公司的 Apple ID 登入。 稍後，您必須使用這個 Apple ID 來更新 DEP 權杖。
 
 2.  在裝置註冊方案入口網站中，移至 [裝置註冊方案]&gt; [管理伺服器]，然後選擇 [新增 MDM 伺服器]。
 
@@ -130,13 +130,13 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="assign-dep-devices-for-management"></a>指派要管理的 DEP 裝置
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司的 Apple ID 登入。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com),並使用公司的 Apple ID 登入。
 
 2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。
 
 3. 指定您 **選擇裝置**的方式、提供裝置資訊，並利用裝置的 [序號] 、[訂單號碼] 或 [上傳 CSV 檔案] 指定詳細資料。
 
-4. 依序選擇 [Assign to Server] (指派給伺服器)、針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt; 以及 [確定]。
+4. 依序選擇 [Assign to Server]\(指派給伺服器)、針對 Microsoft Intune 指定的 &lt;伺服器名稱&gt; 以及 [確定]。
 
 ### <a name="synchronize-dep-managed-devices"></a>同步處理 DEP 管理的裝置
 
@@ -148,7 +148,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
    若要符合可接受 DEP 流量的 Apple 詞彙，Intune 具有下列限制︰
 
-   - 完整 DEP 同步處理每&7; 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在上一次完整同步處理過後的&7; 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
+   - 完整 DEP 同步處理每 7 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
 
    - 任何同步處理要求都會在 10 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
 
