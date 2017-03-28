@@ -25,7 +25,7 @@ ms.lasthandoff: 12/16/2016
 # <a name="retire-a-windows-pc"></a>淘汰 Windows 電腦
 使用下列步驟，在電腦上執行 Intune 軟體用戶端，來淘汰您以電腦形式進行管理的桌面。 淘汰電腦後，即會將其從 Intune 管理中移除。 您無法透過 Intune 恢復電腦的出廠預設值，以將它設回其原始出廠設定。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要淘汰之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\(或包含您想要淘汰之電腦的其他群組)。
 
 2.  選取您要淘汰的裝置，然後選擇 [淘汰/抹除]。
 
