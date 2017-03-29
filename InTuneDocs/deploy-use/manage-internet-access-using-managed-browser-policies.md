@@ -110,7 +110,7 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
     -   針對 https 使用連接埠 443
 
-    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;**與 **http&colon;//www&period;contoso&period;com: /*;**。
+    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;**與**http&colon;//www&period;contoso&period;com: /*;**。
 
 -   使用下表來了解您在指定 URL 時可使用的允許模式：
 
