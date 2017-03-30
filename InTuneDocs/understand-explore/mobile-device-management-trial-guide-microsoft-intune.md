@@ -81,9 +81,8 @@ ms.lasthandoff: 01/05/2017
 1. **取得憑證簽署要求**<br/>
 使用您的系統管理員帳戶登入，然後移至 [系統管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。 .csr 檔案用來向 Apple Push Certificates Portal 要求信任關係憑證。 <!--- screen shot--->
 2.    **取得 Apple 推送通知服務憑證**<BR/>
-前往 [Apple Push Certificates 入口網站](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 選擇 [在 Apple Push Certificates 入口網站上上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 「Certificates for Third-Party Servers」\ (協力廠商伺服器的憑證)，然後選擇 **[下載]**。
-
- 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。 稍後必須使用這個 Apple ID 來更新 APNs 憑證。
+前往 [Apple Push Certificates 入口網站](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)，然後使用您公司的 Apple ID 登入，以使用 .csr 檔案建立 APNs 憑證。 選擇 [在 Apple Push Certificates 入口網站上上傳] 之後，您會收到一個無法用於 APNs 的 .json 檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 「Certificates for Third-Party Servers」\ (協力廠商伺服器的憑證)，然後選擇 **[下載]**。<br/>
+下載 APNs (.pem) 憑證，並將該檔案儲存在本機。 稍後必須使用這個 Apple ID 來更新 APNs 憑證。
 3.    **將 APNs 憑證新增至 Intune**<BR/>
 在 Microsoft Intune 管理主控台中，移至 [系統管理] > [行動裝置管理] >  [iOS 與 Mac OS X] > [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 Apple ID。 使用 APNs 憑證。 透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
 4.    **告訴使用者如何註冊其裝置來存取公司資源。**<br/>
