@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,14 +35,14 @@ ms.lasthandoff: 01/25/2017
 
 -    [準備在 Microsoft Intune 中註冊裝置](/intune/deploy-use/prerequisites-for-enrollment)
 -    [設定 iOS 和 Mac 裝置管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [使用 Microsoft Intune 設定 Windows Phone 和 Windows 10 行動裝置版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [設定 Windows 裝置管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [設定 Android 裝置管理](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - 不需要其他步驟
+-    [設定 Android for Work 裝置管理](/intune/deploy-use/set-up-android-for-work)
 
 您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
 
-- [將 Android 註冊錯誤傳送給 IT 管理員](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
-- [將 iOS 錯誤傳送給 IT 管理員](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
+- [將 Android 註冊錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [將 iOS 錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>一般註冊問題
@@ -149,7 +149,7 @@ ms.lasthandoff: 01/25/2017
 **問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
-**解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個頂層網域以提供使用者 UPN 尾碼 (例如 @contoso.com 或 @fabrikam.com)) 的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體。 現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+**解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個頂層網域以提供使用者 UPN 尾碼 (例如 @contoso.com 或 @fabrikam.com) 的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體。 現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的問題
@@ -279,6 +279,18 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
   ![公司存取設定畫面](./media/ios_cp_app_company_access_setup.png)
 
 註冊完成後，裝置會回復到正常狀態，並重新取得公司資源的存取權。
+
+### <a name="verify-ws-trust-13-is-enabled"></a>確認已啟用 WS-Trust 1.3
+**問題**：裝置註冊計劃 (DEP) 無法註冊 iOS 裝置
+
+註冊具有使用者親和性的裝置註冊計劃裝置，必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。 Active Directory 預設會啟用此端點。 您可以使用 Get-AdfsEndpoint PowerShell Cmdlet 並尋找 trust/13/UsernameMixed 端點，來取得已啟用的端點清單。 例如：
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+如需詳細資訊，請參閱 [Get-AdfsEndpoint 文件 (英文)](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+
+如需詳細資訊，請參閱[保護 Active Directory 同盟服務的最佳做法](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)。 如果您使用 ADFS 或第三方識別廠商，並需要協助以判斷 WS-Trust 1.3 使用者名稱/混合是否已在識別同盟提供者中啟用，請連絡 Microsoft 支援服務。
+
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
 **問題**：使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。

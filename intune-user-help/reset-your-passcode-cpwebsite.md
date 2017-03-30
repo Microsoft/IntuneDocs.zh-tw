@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ ms.lasthandoff: 02/24/2017
 
   ![重設密碼橫幅，與重設裝置密碼和使用者將如何登出的警告。 使用者輸入的按鈕為 [登出] 和 [取消]。](./media/iwp-reset-passcode-popup.png)
 
-4.  選取 [登出]，您會收到最後一個訊息，告訴您密碼從裝置移除的相關資訊。 如果您的裝置不在手邊，請勿移除密碼，因為任何能夠實際存取裝置的人都將能夠存取其上的大部分個人或公司資訊。
+5.  選取 [登出]，您會收到最後一個訊息，告訴您密碼從裝置移除的相關資訊。 如果您的裝置不在手邊，請勿移除密碼，因為任何能夠實際存取裝置的人都將能夠存取其上的大部分個人或公司資訊。
 
   ![第二個重設密碼橫幅，與重設裝置密碼和將會如何從裝置移除密碼的警告。 它也會建議如何前往裝置設定來設定新的密碼。](./media/iwp-reset-passcode-2nd-popup.png)
 
+  不同的裝置具有不同類型的密碼。
 
-由於不同的裝置有不同類型的密碼，您可以在下表中找出重設密碼對您的特定裝置可能會有什麼影響。 
+  **Android**：移除現有的密碼，並建立包含字母和數字的暫時密碼
 
-    |裝置類型|重設時會發生什麼事|
-    |------------|-----------|
-    |Android|移除現有的密碼並使用字母和數字建立暫時密碼|
-    |iOS|移除現有的密碼，但不建立暫時密碼。 如果您使用 Touch ID 指紋掃描器來開啟裝置或進行購物，您需要再設定一次。|
-    |Windows 10 Mobile|移除現有的密碼，並使用字母和數字建立暫時密碼。 如果您使用 Windows Hello 臉部辨識登入，其仍受支援。|
-    |Windows Phone 8.1|移除現有的密碼，並使用數字建立暫時密碼。|
+  **iOS**：移除現有的密碼，但不建立暫時密碼。 如果您使用 Touch ID 指紋掃描器來開啟裝置或進行購買，您必須再次設定指紋。
 
-    5.  解除鎖定裝置並設定新密碼，或移至裝置的 [設定] 變更暫時密碼。
+  **Windows 10 行動裝置版**：移除現有的密碼，並建立包含字母和數字的暫時密碼。 如果您使用 Windows Hello 臉部辨識登入，系統將繼續支援它。
+    
+  **Windows Phone 8.1**：移除現有的密碼，並建立包含數字的暫時密碼
 
-    若要查看密碼重設成功的確認通知，請按一下公司入口網站右上方的的通知旗標。
+6.  解除鎖定裝置並設定新密碼，或移至裝置的 [設定] 變更暫時密碼。
+
+若要查看密碼重設成功的確認通知，請按一下公司入口網站右上方的的通知旗標。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
 

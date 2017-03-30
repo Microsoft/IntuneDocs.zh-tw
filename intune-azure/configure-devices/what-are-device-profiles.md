@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用 Microsoft Intune 的**設定裝置**工作負載可以管理您管理之所有裝置的設定及功能。 您大部分會使用此工作負載來建立裝置設定檔，讓您管理和控制所管理裝置上的各種不同功能。
+使用 Microsoft Intune 的「裝置設定」工作負載，以管理您管理之所有裝置上的設定及功能。 您大部分會使用此工作負載來建立裝置設定檔，讓您管理和控制所管理裝置上的各種不同功能。
 
 當您開啟此工作負載時，會顯示下列選項︰
 
@@ -41,8 +41,13 @@ ms.lasthandoff: 02/18/2017
 
 您可以管理您裝置上的下列功能︰
 
+## <a name="device-features"></a>裝置功能
+
+裝置功能可讓您控制 iOS 和 macOS 裝置上的功能，例如 AirPrint、通知，以及共用的裝置設定。
+如需詳細資訊，請參閱[如何設定裝置功能設定](how-to-configure-device-features.md)支援：iOS 和 macOS。
+
 ## <a name="device-restrictions"></a>裝置限制
-裝置限制可讓您控制各種類別中，您所管理的各種設定及功能，包括安全性、瀏覽器、硬體及資料共用設定。 例如，您可以建立裝置限制設定檔，禁止 iOS 裝置的使用者存取裝置相機 。
+裝置限制可讓您在您所管理的裝置上控制各種類別的設定，包括安全性、瀏覽器、硬體及資料共用設定。 例如，您可以建立裝置限制設定檔，禁止 iOS 裝置的使用者存取裝置相機 。
 如需詳細資訊，請參閱[如何設定裝置限制設定](how-to-configure-device-restrictions.md) 支援︰Android、iOS、macOS、Windows 10 及 Windows 10 Team。
 
 ## <a name="email"></a>電子郵件
@@ -57,6 +62,10 @@ ms.lasthandoff: 02/18/2017
 虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 使用 VPN 設定檔將 VPN 設定部署給組織中的使用者及裝置，讓他們可以輕鬆安全地連線到網路。
 如需詳細資訊，請參閱[如何設定 VPN 設定](how-to-configure-vpn-settings.md)。
 支援︰Android、iOS、macOS、Windows Phone 8.1、Windows 8.1 及 Windows 10。
+
+## <a name="education"></a>教育
+可讓您設定 Windows「進行測驗」應用程式的選項。 當您設定這些選項時，裝置將無法執行其他應用程式，直到測驗結束為止。
+如需詳細資訊，請參閱[如何設定教育設定](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>憑證
 此設定檔類型可讓您設定信任的憑證、SCEP 憑證及 PKCS 憑證指派給裝置，以及用於驗證 Wi-Fi、VPN 及電子郵件設定檔。

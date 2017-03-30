@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ ms.lasthandoff: 03/16/2017
 
     ![公司存取設定畫面](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
+    > [!NOTE]
+    > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
 
-7.  在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
+7. 在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
 
     ![為什麼要註冊您的裝置畫面](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ ms.lasthandoff: 03/16/2017
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人！** Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只可讓公司入口網站應用程式建立、使用和管理您的工作帳戶。
+        如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人！** Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只可讓公司入口網站應用程式建立、使用和管理您的工作帳戶。
 
-    如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
+        如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
 11.  在 [啟用裝置管理員] 畫面上，點選 [啟用]。
 
     ![啟用裝置管理員畫面](./media/and-enroll-5-activate.png)
+
+    公司入口網站需要裝置管理員角色來管理您的裝置。 裝置管理員角色可讓您的系統管理員查看特定項目 (例如您嘗試將畫面解除鎖定的次數) 並採取某些動作。
+
+    請記住，這些動作都是為了實現安全性而執行。 IT 系統管理員不會毫無理由地嘗試侵犯您的隱私權或清除您的資訊，而是要確保公司資料的安全。
+
+    Microsoft 不會控制此訊息，而且我們了解其措辭可能顯得有點極端。 公司入口網站無法只顯示與您組織相關聯的限制和存取。 它們全部都會同時顯示於此畫面上。 如果您針對個別組織的使用有疑問，請使用[公司入口網站](http://portal.manage.microsoft.com)中的連絡資訊，連絡您的 IT 系統管理員以取得詳細資訊。
 
 12.  遵循提示以輸入 PIN 或密碼。 如果您在這部裝置上已設定 PIN 或密碼，您將不會看到這個畫面，或需要輸入新的 PIN 或密碼。
 
@@ -108,21 +114,21 @@ ms.lasthandoff: 03/16/2017
 
     此畫面會顯示您的裝置已註冊。
 
-      ![註冊裝置畫面](./media/and-enroll-8-device-enrolling.png)
+    ![註冊裝置畫面](./media/and-enroll-8-device-enrolling.png)
 
 14. 出現 [公司存取設定] 畫面時，點選 [繼續]。 如果訊息指出您的裝置不相容，請遵循指示來修正問題，然後點選 [繼續]。
 
-  ![裝置不符合規範但已註冊](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![裝置不符合規範但已註冊](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![出現需要解決的裝置合規性問題](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![出現需要解決的裝置合規性問題](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-點選它們便可以知道有關問題的詳細資訊。 
+    點選它們便可以知道有關問題的詳細資訊。
 
-  ![裝置合規性問題展開](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![裝置合規性問題展開](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![公司存取設定畫面](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. 在 [公司存取設定完成] 畫面上，點選 [完成]。 您的裝置現在已經註冊。
+15. 在 [公司存取設定完成] 畫面上，點選 [完成]。 您的裝置現在已經註冊。
 
     ![公司存取設定完成畫面](./media/and-enroll-10-comp-access-setup-complete.png)
 

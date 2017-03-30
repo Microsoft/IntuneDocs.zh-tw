@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ ms.lasthandoff: 03/15/2017
 2.    在 [遺失模式] 刀鋒視窗中，啟用遺失模式，輸入將顯示的訊息和連絡電話號碼 (選擇性)。
 3.    按一下 [ **確定**]。
 當您啟用遺失模式時，就會封鎖裝置的所有使用。 使用者無法存取裝置，直到您停用遺失模式。 啟用遺失模式時，您可以使用**尋找裝置**動作找出裝置所在之處。
+若要使用遺失模式，裝置必須是透過 DEP 註冊之公司擁有的 iOS 裝置，且處於受監督模式。
 
 ### <a name="locate-device"></a>**尋找裝置**
-使用這個遠端動作在地圖上顯示遺失或遭竊 iOS 裝置的位置。 裝置必須是受監督模式中的公司所擁有的 iOS 裝置。 使用此動作之前，必須已將裝置設置為遺失模式。
+使用這個遠端動作在地圖上顯示遺失或遭竊 iOS 裝置的位置。 裝置必須是透過 DEP 註冊之公司擁有的 iOS 裝置，且處於受監督模式。 使用此動作之前，必須已將裝置設置為遺失模式。
 1.    在 iOS 裝置的 [屬性] 刀鋒視窗上，選擇 [更多]  >  [尋找裝置]。
 2.    找到裝置之後，它的位置會顯示在 [尋找裝置] 刀鋒視窗上。 
     ![尋找裝置刀鋒視窗](./media/locate-device.png)

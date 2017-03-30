@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **鍵盤快速鍵 (僅限受監督)** - 允許使用鍵盤快速鍵。
 -     **已配對之 Apple Watch 的手腕偵測** - 啟用時，Apple Watch 就不會在穿戴期間顯示通知。
 - **需要 AirPlay 連出要求配對密碼** - 使用者在使用 AirePlay 將內容串流到其他 Apple 裝置時，需要有成對的密碼。
-- **帳戶修改 (僅限受監督)** - 允許使用者變更帳戶設定，例如電子郵件設定。
+- **帳戶修改 (僅限受監督)** - 封鎖時，這會防止使用者從 iOS 設定應用程式修改裝置特有的設定，例如建立新的裝置帳戶，以及變更使用者名稱或密碼。
+這也適用於可從 iOS 設定應用程式 (例如郵件、連絡人、行事曆、Facebook 和 Twitter) 中存取的設定。 若應用程式的帳戶設定無法從 iOS 設定應用程式 (例如 Microsoft Outlook 應用程式) 加以設定，則這不適用這類應用程式。
 - **Apple Watch 配對 (僅限受監督)** - 允許裝置與 Apple Watch 配對。
 - **修改藍牙 (僅限受監督)** - 封鎖使用者變更藍牙裝置上的設定。
 - **Classroom 應用程式的遠端螢幕觀察 (僅限受監督)** - 從觀察遠端裝置上的畫面來允許或封鎖 Classroom 應用程式。

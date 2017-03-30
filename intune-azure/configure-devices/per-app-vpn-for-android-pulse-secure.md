@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0cf638348df2f01d70c0765a4932abc3eb801f23
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 2c79f5f796152e930c4a952388541383ab50e595
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 2. 在設定檔清單刀鋒視窗中，選擇 [建立設定檔]。
 3. 在 [建立設定檔] 刀鋒視窗中，為 VPN 設定檔輸入 [名稱] 及 [描述]。
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在 [設定檔] 刀鋒視窗中，按一下 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為自訂檔輸入 [名稱] 及[描述]。
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/18/2017
 3. 在 [自訂 OMA URI 設定] 刀鋒視窗中，選擇 [新增]。
     - 輸入設定名稱。
     - 針對 [資料類型]，請指定 [String]。
-    - 針對 [OMA-URI]，指定此字串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在此範例中，此字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
+    - 針對 [OMA-URI]，指定此字串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中*Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在此範例中，此字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
     - 針對 [值]，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
 
 ![Android 個別應用程式 VPN 自訂原則範例](./media/android_per_app_vpn_oma_uri.png)
@@ -76,7 +76,7 @@ ms.lasthandoff: 02/18/2017
   1.    在 [自訂 OMA URI 設定] 刀鋒視窗中，選擇 [新增]。
   2.    輸入設定名稱。
   3.    針對 [資料類型]，請指定 [String]。
-  4.    針對 [OMA-URI]，使用此字串：**./Vendor/MSFT/VPN/Profile/*Name*/Mode**，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在這個範例中，字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  4.    針對 [OMA-URI]，使用此字串：**./Vendor/MSFT/VPN/Profile/*Name*/Mode**，其中*Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在這個範例中，字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
   5.    針對 [值]，請輸入 [BLACKLIST] 或 [WHITELIST]。
 
 

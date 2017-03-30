@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b7ab3041a38bd394195a67690d245d1ad9fd0566
-ms.openlocfilehash: fd54a1c94c9a4a279710d6be9f7cfe3b48468cb7
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: c3c5126b1c9437c2689b162c28e1a60e5dc4b108
+ms.openlocfilehash: ad39f4b2cc4a51346fcf226dc07208af336d3581
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,14 +41,15 @@ Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defens
 
 將裝置視為受到 Mobile Threat Defense 解決方案所感染時︰
 
-![](http://i.imgur.com/kF8tI42.png)
+![Mobile Threat Defense 受感染的裝置](../media/mtp/MTD-image-1.png)
 
 補救裝置時，會授與存取權︰
 
-![](http://i.imgur.com/zG4ZrzX.png)
+![Mobile Threat Defense 已授與存取權](../media/mtp/MTD-image-2.png)
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense 合作夥伴
 
 了解如何使用下列項目，根據裝置、網路和應用程式風險來保護對公司資源的存取：
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure (英文)](https://docs.microsoft.com/intune/deploy-use/skycure-mobile-threat-defense-connector)

@@ -5,7 +5,7 @@ description: "Intune Azure 預覽版︰啟用 Windows 裝置的 Intune 行動裝
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ ms.lasthandoff: 03/15/2017
  -  您必須擁有 Azure Active Directory Premium 才能使用此方法。 否則，請使用 Windows 8.1 及 Windows Phone 8.1 適用的註冊方法。
  -  若選擇不啟用自動註冊，請使用 Windows 8.1 及 Windows Phone 8.1 適用的註冊方法。
 
-- [**透過設定 CNAME 來註冊 Windows 8.1 及 Windows Phone 8.1**](#simplify-enrollment-by-configuring-cname)
+- [**不使用 Azure AD Premium 自動註冊進行註冊**](#enable-windows-enrollment-without-azure-ad-premium)
  - 若要註冊 Windows 8.1 及 Windows Phone 8.1 裝置，必須使用此方法。
- - 如果您沒有 Azure Active Directory (AD) Premium，也可以使用此方法。
-
-
-## <a name="prerequisites"></a>必要條件
-
-如果某些下列必要條件尚未在 Intune Azure 預覽版中，則您必須從傳統 Intune 管理主控台進行。
-
-- [設定自訂網域名稱](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [將行動裝置管理 (MDM) 授權單位](set-mdm-authority.md)設定為 **Microsoft Intune**
-- [設定公司入口網站應用程式](/intune-azure/manage-apps/company-portal-app.md)
-- 將授權指派給使用者
+ - 如果您不打算使用 Azure Active Directory (AD) Premium，您可以針對 Windows 8.1 及更新的裝置使用此方法。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>啟用 Windows 工作場所註冊
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>不使用 Azure AD Premium 啟用 Windows 註冊
 
 您可以讓使用者安裝及註冊其裝置，而不用 Azure AD Premium 自動註冊。 如果您建立 DNS CNAME 資源記錄，使用者會連線並註冊 Intune，而不需要輸入伺服器名稱。
 
@@ -79,7 +69,7 @@ ms.lasthandoff: 03/15/2017
 
     如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)。 您也可以傳送給使用者 [What can my IT admin see on my devic ](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) (我的 IT 系統管理員可看到我裝置上的什麼內容)。
 
-    如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
+    如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。
 
 除非您要將公司入口網站部署至裝置，否則不需要進行任何額外的工作。  在管理主控台中可以放心略過步驟 2 和 3。
 

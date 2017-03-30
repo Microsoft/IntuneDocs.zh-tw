@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6f78150b6c3821f6e9822ccfa905ac367bd359ad
-ms.openlocfilehash: 9e00e60472c8ba9f10a6071c42a53f58dcc00a08
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,19 +26,19 @@ ms.lasthandoff: 03/02/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-您可以根據與 Microsoft Intune 整合的裝置威脅防護解決方案 Lookout 所進行的風險評估，來控制行動裝置對公司資源的存取。 風險評估是根據 Lookout 服務收集自裝置的遙測，包括︰
+您可以根據由 Lookout (一個與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評估，來控制行動裝置對公司資源的存取。 風險評估是根據 Lookout 服務收集自裝置的遙測，包括︰
 - 作業系統漏洞
 - 安裝的惡意應用程式
 - 惡意網路設定檔
 
 您可以根據透過 Intune 相容性原則所啟用的 Lookout 風險評估，來設定條件式存取原則。 設定可讓您根據偵測到的威脅來允許或封鎖不符合規範的裝置。
 
-## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Intune 和 Lookout 裝置威脅保護如何協助保護公司資源？
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune 和 Lookout Mobile Threat Defense 如何協助保護公司資源？
 已在行動裝置上安裝和執行 Lookout 行動應用程式 (**Lookout for Work**)。 這個應用程式可擷取檔案系統、網路堆疊，以及裝置和應用程式遙測 (如果可用)，然後將其傳送至 Lookout 雲端服務，以評估裝置威脅的裝置風險。 您可以在 Lookout 主控台中變更威脅的風險層級分類，以符合您的需求。  
 
-Intune 中的相容性原則包含根據 Lookout 風險評估的 Lookout 行動裝置威脅防護規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。
+Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。
 
-如果裝置發現不相容，則可以封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會收到解決此問題並重新取得存取權的步驟。 指引是從 Lookout for Work 應用程式來啟動。
+如果發現裝置不符合規範，則可以封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會收到解決此問題並重新取得存取權的步驟。 指引是從 Lookout for Work 應用程式來啟動。
 
 ## <a name="supported-platforms"></a>支援的平台：
 在 Intune 中註冊時，Lookout 支援下列平台︰
@@ -92,9 +92,9 @@ Intune 中的相容性原則包含根據 Lookout 風險評估的 Lookout 行動�
 
 ## <a name="next-steps"></a>後續步驟
 以下是為了實作此解決方案所必須執行的主要步驟：
-1.    [設定您訂閱的裝置威脅保護](device-threat-protection-subscription-setup.md)
-2.    [在 Intune 中啟用裝置威脅保護連線](device-threat-protection-enable.md)
-3.  [設定及部署裝置威脅保護應用程式](device-threat-protection-apps.md)
-4.    [設定裝置威脅保護合規性原則](device-threat-protection-policy.md)
-5.    [疑難排解裝置威脅保護整合的問題](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.    [設定 Lookout 訂閱](device-threat-protection-subscription-setup.md)
+2.    [在 Intune 中啟用 Lookout Mobile Threat Defense](device-threat-protection-enable.md)
+3.  [設定和部署 Lookout Mobile Threat Defense 應用程式](device-threat-protection-apps.md)
+4.    [設定 Lookout 裝置合規性原則](device-threat-protection-policy.md)
+5.    [針對 Lookout Mobile Threat Defense 整合進行疑難排解](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 
