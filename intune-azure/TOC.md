@@ -32,7 +32,8 @@
 ### [取得 Apple MDM Push Certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
 ### [取得 Apple DEP 權杖](enroll-devices/get-apple-dep-token.md)
 ### [選擇註冊 iOS 裝置的方式](enroll-devices/choose-ios-enrollment-method.md)
-## 做法
+## 作法
+### [將授權指派給使用者](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [註冊 Android 裝置](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### 註冊 iOS 裝置
 #### [使用設定助理來註冊 iOS 裝置](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
