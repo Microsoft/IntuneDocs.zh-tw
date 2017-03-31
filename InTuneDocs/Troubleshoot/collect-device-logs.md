@@ -49,7 +49,7 @@ Android 記錄檔位於 *<Android Device>\Phone\Android\data\com.microsoft.windo
 
 1. 開啟 **[主控台]** 應用程式。
 2. 在 [檔案] 下，選擇 [system.log]。
-3. 在頂端的功能表列中，選擇 [檔案] >  [Save a Copy As] (將複本另存為)。 然後儲存檔案。
+3. 在頂端的功能表列中，選擇 [檔案] >  [Save a Copy As]\(將複本另存為)。 然後儲存檔案。
 
 ### <a name="windows-phone"></a>Windows Phone
 
