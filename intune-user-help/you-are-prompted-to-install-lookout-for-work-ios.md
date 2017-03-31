@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -31,24 +31,23 @@ ms.lasthandoff: 03/08/2017
 
 1.    如果看到以下提示，請點選 [安裝] 允許 Lookout for Work 安裝在您的裝置上。
 
-    ![點選 [安裝] 以安裝 Lookout for Work](./media/ios-lfw-install-app-request.png)
+  ![點選 [安裝] 以安裝 Lookout for Work](./media/ios-mtd-install-app-request.png)
 
 2. 當您看到下列訊息時，請點選 [設定]、開啟 [定位服務]，然後點選 [繼續]。
 
-    ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-location-services.png)
+  ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-location-services.png)
 
 3. 檢閱 Lookout for Work 需要的權限，然後點選 [繼續]。
 
-    ![您現已連線至 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+  ![您現已連線至 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. 在詢問是否允許 Lookout for Work 傳送通知給您的提示中，點選 [允許]。
 
-    ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-notifications.png)
-
+  ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-notifications.png)
 
 Lookout for Work 完成安裝後，如果裝置上找不到任何安全性威脅，您會看到下列畫面。
 
-![Lookout for Work 沒有找到任何安全性威脅](./media/ios-lfw-no-threats-found.png)
+  ![Lookout for Work 沒有找到任何安全性威脅](./media/ios-lfw-no-threats-found.png)
 
 如果 Lookout for Work 在裝置上找到安全性威脅，您會看到如何修正問題的指示。
 

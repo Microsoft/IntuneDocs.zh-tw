@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -35,7 +35,7 @@ Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題
 
 如果您在已註冊裝置上具有病毒或其他安全性威脅的情況下，嘗試存取公司電子郵件或檔案，您可能會看到類似下列這則訊息：
 
-![具有「公司入口網站」網站連結的 Lookout for Work 錯誤訊息](./media/lookout-go-to-device-management-portal-android.png)
+![具有「公司入口網站」網站連結的 Lookout for Work 錯誤訊息](./media/mtd-go-to-device-management-portal-android.png)
 
 點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](http://portal.manage.microsoft.com)，您將能在那裡看見修正該問題的指示。
 

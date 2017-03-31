@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1968bedeba42758c36e7b9bb9cddfc26309ca71
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 您的組織可能會使用電信費用管理軟體，以確保其資料和語音方案是在可接受的限制內使用。 當您完成註冊裝置後，接著會提示您選取最適合該裝置的類別。
 
-  ![iOS 裝置上 [選取最適合裝置的類別] 畫面的螢幕擷取畫面。 它會顯示一系列公司或個人註冊選項。](./media/and-enroll-11-tem-select-best-category.png)
+![iOS 裝置上 [選取最適合裝置的類別] 畫面的螢幕擷取畫面。 它會顯示一系列公司或個人註冊選項。](./media/and-enroll-11-tem-select-best-category.png)
 
 1. 選取適當的選項，然後您會收到從 Google Play 商店安裝 [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) 應用程式的通知。 Datalert 應用程式是您的組織用來測量資料使用量的方式。 點選螢幕右上角的 [下一步] 箭號以繼續。
 
