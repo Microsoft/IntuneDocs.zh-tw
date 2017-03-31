@@ -2,8 +2,8 @@
 title: "使用應用程式保護原則的 iOS 應用程式 | Microsoft Docs"
 description: "本主題說明當 iOS 應用程式交由應用程式保護原則管理時的行為。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
