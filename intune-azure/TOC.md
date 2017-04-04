@@ -1,5 +1,6 @@
 # 簡介
 ## [什麼是 Azure 入口網站預覽？](introduction/what-is-microsoft-intune.md)
+## [Azure 中的 Intune 功能](introduction/ui-changes-in-microsoft-intune.md)
 ## 開始使用
 <!---(introduction/get-started.md) --->
 ### [註冊免費試用版](introduction/sign-up-free-trial-microsoft-intune.md)
