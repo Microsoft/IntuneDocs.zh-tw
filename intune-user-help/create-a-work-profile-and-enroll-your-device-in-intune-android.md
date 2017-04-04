@@ -40,7 +40,7 @@ ms.lasthandoff: 03/16/2017
 
     ![公司存取設定畫面](./media/andr-afw-begin-company-access-setup.png)
 
-3.  在 [Why create a work profile?] (為什麼要建立工作設定檔?) 畫面上，閱讀您將能夠執行之動作的相關資訊，然後點選 [繼續]。
+3.  在 [Why create a work profile?]\(為什麼要建立工作設定檔?) 畫面上，閱讀您將能夠執行之動作的相關資訊，然後點選 [繼續]。
 
     ![為什麼要建立工作設定檔](./media/andr-afw-why-create-a-work-profile.png)
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 03/16/2017
 
     ![接下來要做什麼畫面](./media/andr-afw-what-comes-next.png)
 
-6. 在 [Set up work profile] (設定工作設定檔) 畫面上，點選 [下一步] 讓公司入口網站應用程式存取工作設定檔。
+6. 在 [Set up work profile]\(設定工作設定檔) 畫面上，點選 [下一步] 讓公司入口網站應用程式存取工作設定檔。
 
     ![讓公司入口網站應用程式存取工作設定檔](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 

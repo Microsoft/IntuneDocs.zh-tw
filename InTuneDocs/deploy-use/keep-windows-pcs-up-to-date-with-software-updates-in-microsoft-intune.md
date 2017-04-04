@@ -85,7 +85,7 @@ Microsoft Intune 可協助您使用一些方式來保護受管理的電腦，包
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [管理]&gt;[更新]。
 
-2.  在 [Server Settings: Updates] (伺服器設定: 更新) 頁面的 [自動核准規則] 區段中，選擇 [新增]。
+2.  在 [Server Settings: Updates]\(伺服器設定: 更新) 頁面的 [自動核准規則] 區段中，選擇 [新增]。
 
 3.  在建立自動核准規則精靈的 [一般]  頁面中，指定規則的名稱和選擇性描述。
 

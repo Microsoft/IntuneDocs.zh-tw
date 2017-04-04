@@ -69,7 +69,7 @@ ms.lasthandoff: 03/21/2017
 
 2.  利用頁面左側連結，以您的組織識別碼登入。
 
-3.  如果沒有帳戶，請選擇 [Register your free Azure Active Directory] (註冊免費的 Azure Active Directory) 訂閱連結來建立 Azure 訂用帳戶。 如已有付費帳戶，應該不需要信用卡或付款。
+3.  如果沒有帳戶，請選擇 [Register your free Azure Active Directory]\(註冊免費的 Azure Active Directory) 訂閱連結來建立 Azure 訂用帳戶。 如已有付費帳戶，應該不需要信用卡或付款。
 
 4.  選取 [Active Directory]  ，然後選取您的組織。
 
