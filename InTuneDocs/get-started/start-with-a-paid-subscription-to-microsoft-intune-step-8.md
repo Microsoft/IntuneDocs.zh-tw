@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
 ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 ## <a name="enable-device-enrollment"></a>啟用裝置註冊
 
 1. **讓 Intune 成為您的行動裝置管理授權單位**
-    在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [系統管理]**** > [行動裝置管理]****，然後選擇 [工作]**** 下方的 [設定 MDM 授權單位]****。  
+    在 [Intune 管理主控台](https://manage.microsoft.com/)中，選擇 **[系統管理]**  >  **[行動裝置管理]**，然後選擇 **[工作]** 下方的 **[設定 MDM 授權單位]**。  
 
 2. 在 [MDM 授權單位] 對話方塊中，選擇 [是]。
 
@@ -69,9 +70,4 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 >[!div class="step-by-step"]
 
 >[&larr; **註冊裝置**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**設定後的工作** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
