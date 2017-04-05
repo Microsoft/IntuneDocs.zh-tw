@@ -81,7 +81,7 @@ ms.lasthandoff: 03/21/2017
 
   ![開啟 [連接器] 索引標籤並醒目提示 [Intune] 選項之 Lookout 主控台的螢幕擷取畫面](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
-4.  移至 [連接器] > [連線設定]，設定 [Heartbeat Frequency] (活動訊號頻率) (以分鐘為單位)。
+4.  移至 [連接器] > [連線設定]，設定 [Heartbeat Frequency]\(活動訊號頻率) (以分鐘為單位)。
 
   ![顯示已設定 [活動訊號頻率] 之 [連線設定] 索引標籤的螢幕擷取畫面](../media/mtp/lookout-mtp-connection-settings.png)
 
