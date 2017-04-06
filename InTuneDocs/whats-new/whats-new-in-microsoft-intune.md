@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -28,6 +28,17 @@ ms.lasthandoff: 03/15/2017
 > 混合式客戶部署於未來將會支援這些功能 (具備 Intune 的 Configuration Manager)。 如需新混合式功能的詳細資訊，請查看我們的 [Hybrid What’s New](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) (混合式新功能) 頁面。
 
 ## <a name="new-capabilities"></a>新功能
+
+### <a name="support-for-skycure"></a>支援 Skycure
+
+您現在可以根據由 Skycure (一個與 Microsoft Intune 整合的行動威脅防禦解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估是根據收集自執行 Skycure 裝置的遙測，包括︰
+
+- 實體防禦
+- 網路防禦
+- 應用程式防禦
+- 弱點防禦
+
+您可以根據透過 Intune 裝置合規性政策所啟用的 Skycure 風險評估，來設定 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不符合規範的裝置存取公司資源。 如需詳細資訊，請參閱 [Skycure Mobile Threat Defense 連接器](/intune/deploy-use/skycure-mobile-threat-defense-connector)。
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
 
@@ -51,6 +62,12 @@ iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派�
 
 
 ## <a name="notices"></a>通知
+
+### <a name="support-for-ios-103"></a>支援 iOS 10.3
+
+iOS 10.3 版在 2017 年 3 月 27 日開始向 iOS 使用者推出。 所有現有的 Intune MDM 與 MAM 案例都與最新版本的 Apple OS 相容。 當使用者將裝置和應用程式升級到 iOS 10.3 時，我們預期所有目前可用來管理 iOS 裝置的 Intune 功能將可繼續運作。
+
+目前沒有任何已知問題可分享。 如果您在使用 iOS 10.3 時發生任何問題，歡迎連絡 [Intune 支援小組](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)。
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改善對於中國 Android 使用者的支援 <!--720444-->
 
@@ -82,10 +99,15 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新管理體驗的公開預覽。 在預覽狀態期間，將透過現有的 Intune 主控台反覆提供功能和同位檢查。
 
-Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設定功能；當您現有的租用戶移轉至新的群組體驗時，也會同時將您移轉，以預覽您租用戶的新管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](https://docs.microsoft.com/intune-azure/introduction/whats-new)。
+Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設定功能；當您現有的租用戶移轉至新的群組體驗時，也會同時將您移轉，以預覽您租用戶的新管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](/intune-azure/introduction/whats-new)。
 
 > [!Note]
 > 針對 Azure 入口網站預覽版，我們將在本月首度發行變更。 不過，基於 Intune 服務發行的方式不同，變更可能無法立即生效。  數個服務元件必須依序更新，才能使用新的入口網站功能。 Azure 入口網站預覽版的變更將於近日首度發行，屆時請務必試試看。 如需變更的完整清單，請參閱 [Microsoft Intune 預覽版的新功能](/intune-azure/introduction/whats-new)。
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 入口網站中要被取代的管理角色
+
+在 Intune 傳統入口網站 (Silverlight) 中使用的現有行動應用程式管理 (MAM) 管理角色 (參與者、擁有者或唯讀) 在 Intune Azure 入口網站中會取代為一組新的、完整的角色型管理控制 (RBAC)。 當您移轉至 Azure 入口網站之後，您必須將系統管理員重新指派至這些新的管理角色。 如需 RBAC 和新角色的詳細資訊，請參閱 [Microsoft Intune 的角色型存取控制](/intune-azure/access-control/role-based-access-control)。
+
 
 ## <a name="whats-coming"></a>未來動態
 

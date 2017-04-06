@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 -   iOS 上的原生電子郵件應用程式。
 
 -   Exchange ActiveSync 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
-- **Android for Work 裝置**上的 Exchange ActiveSync 郵件用戶端：Android for Work 裝置只支援 **Work 設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 若要讓條件式存取搭配 Android for Work 使用，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，並將這些應用程式部署為必要安裝。 
+-   **Android for Work 裝置**上的 Exchange ActiveSync 郵件用戶端：Android for Work 裝置只支援 **Work 設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 若要讓條件式存取搭配 Android for Work 使用，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，並將這些應用程式部署為必要安裝。 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
 
 ## <a name="support-for-pcs"></a>對電腦的支援
@@ -110,14 +112,12 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
   - **平台例外狀況**：選擇 [新增規則] 設定規則，以針對指定的行動裝置系列和機型來定義存取層級。 由於這些裝置可以是任何類型，因此您也可以設定 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 不支援的裝置類型。
 
   - **預設規則**：針對任何其他規則未涵蓋的裝置，您可以選擇允許它存取 Exchange、封鎖它或隔離它。 當您設定規則以允許存取時，對於已註冊且相容的裝置而言，將自動授與 iOS、Windows 和 Samsung KNOX 裝置的電子郵件存取。 使用者不必經過任何程序即可取得電子郵件。
-
-        如果 Android 裝置不是執行 Samsung KNOX，使用者會收到隔離電子郵件，其中包含驗證註冊和相容性的引導式逐步解說，之後才可存取電子郵件。 如果您將規則設為封鎖存取或隔離裝置，則所有裝置都將遭封鎖而無法存取 Exchange，不論是否已在 Intune 註冊皆同。 若要避免已註冊且符合規範的裝置受到此規則的影響，請核取 [預設規則覆寫] 方塊。
+      - 如果 Android 裝置不是執行 Samsung KNOX，使用者會收到隔離電子郵件，其中包含驗證註冊和相容性的引導式逐步解說，之後才可存取電子郵件。 如果您將規則設為封鎖存取或隔離裝置，則所有裝置都將遭封鎖而無法存取 Exchange，不論是否已在 Intune 註冊皆同。 若要避免已註冊且符合規範的裝置受到此規則的影響，請核取 [預設規則覆寫] 方塊。
 >[!TIP]
 >如果您想先封鎖所有裝置之後再授與電子郵件存取權，請選擇 [封鎖存取] 規則或 [隔離] 規則。 預設規則將套用到所有裝置類型，因此您設定為平台例外狀況的裝置類型以及 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 不支援的裝置類型也會受到影響。
 
   - **使用者通知**：除了 Exchange 傳送的通知電子郵件，Intune 也會傳送包含裝置解除封鎖步驟的電子郵件。 您可以編輯預設訊息，依照您的需求來自訂。 萬一使用者在收到 Intune 通知電子郵件之前 (這封包含修復指示的電子郵件會傳遞到使用者的 Exchange 信箱)，裝置就遭到封鎖，他們可以使用未封鎖的裝置或其他方法來存取 Exchange 並檢視該訊息。
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - 這在 [預設規則] 已設為封鎖或隔離時特別有用。 在此情況下，使用者必須前往應用程式市集，下載「Microsoft 公司入口網站」應用程式並註冊其裝置。 這適用於 iOS、Windows 和 Samsung KNOX 裝置。 對於不執行 Samsung KNOX 的裝置，您需要傳送隔離電子郵件至備用電子郵件帳戶。 使用者必須將電子郵件複製到其封鎖的裝置以完成註冊與合規性程序。
   > [!NOTE]
   > 為了讓 Exchange 能夠傳送通知電子郵件，您必須指定應該用來傳送通知電子郵件的帳戶。
   >
@@ -127,11 +127,11 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 -   您不需部署條件式存取原則，它會立即生效。
 
--   在使用者設好 Exchange ActiveSync 設定檔之後，可能需要&1;-3 個小時才能封鎖裝置 (如果不是由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理)。
+-   在使用者設好 Exchange ActiveSync 設定檔之後，可能需要 1-3 個小時才能封鎖裝置 (如果不是由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理)。
 
--   如果封鎖的使用者之後向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置並修復不相容性，則會在&2; 分鐘內解除封鎖電子郵件存取。
+-   如果封鎖的使用者之後向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置並修復不相容性，則會在 2 分鐘內解除封鎖電子郵件存取。
 
--   如果使用者從 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消註冊，則可能需要&1;-3 個小時才能封鎖裝置。
+-   如果使用者從 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消註冊，則可能需要 1-3 個小時才能封鎖裝置。
 
 **若要查看如何設定條件式存取原則以限制裝置存取的範例案例，請參閱[限制存取電子郵件的範例案例](restrict-email-access-example-scenarios.md)。**
 
@@ -139,9 +139,4 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 -   [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

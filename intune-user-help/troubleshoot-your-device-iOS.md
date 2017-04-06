@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ ms.lasthandoff: 02/21/2017
 - [如何在我的裝置上尋找序號？](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [我需要更新 iOS 裝置](you-need-to-update-your-ios-device.md)
 - [尚不支援我的 iOS 版本](your-ios-version-isnt-yet-supported.md)
-- [我需要在 iOS 裝置上安裝 Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [我需要解決 Lookout for Work 在 iOS 裝置上找到的威脅](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [我需要在 iOS 裝置上安裝行動威脅防禦應用程式](you-are-prompted-to-install-mtd-ios.md)
+- [我需要解決行動威脅防禦應用程式在 iOS 裝置上找到的威脅](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

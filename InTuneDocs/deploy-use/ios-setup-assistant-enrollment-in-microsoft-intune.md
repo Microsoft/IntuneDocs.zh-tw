@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>新增要使用設定助理註冊的 iOS 裝置
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [所有屬公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置]。 
+1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [所有屬公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置]。
 
    您可以使用下列兩種方式新增裝置：
 
@@ -96,7 +96,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
     |||
     |-|-|
     |&lt;序號 #1&gt;|&lt;裝置 #1 詳細資料&gt;|
-    |&lt;序號&#2;&gt;|&lt;裝置 #2 詳細資料&gt;|
+    |&lt;序號 #2&gt;|&lt;裝置 #2 詳細資料&gt;|
 
   在文字編輯器中檢視此 .csv 檔案時，其外觀大致如下：
 
@@ -107,13 +107,13 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
   -  **手動新增裝置詳細資料**&mdash;輸入最多 15 部裝置的序號和任何註記或詳細資料。
 
-  您可在 [檢閱裝置] 窗格中確認序號。 您也可以決定要覆寫再次匯入的序號 [詳細資料]，還是要取消核取 [覆寫] 方塊，以保留目前的詳細資料。 
+  您可在 [檢閱裝置] 窗格中確認序號。 您也可以決定要覆寫再次匯入的序號 [詳細資料]，還是要取消核取 [覆寫] 方塊，以保留目前的詳細資料。
 
-> [!NOTE] 
+> [!NOTE]
 > 在現有的 Intune 系統管理員主控台中，管理員可以接受已上傳 之 CSV 的相關詳細資料，並覆寫個別序號的現有詳細資料。 在新的 Azure 入口網站中，您只能覆寫所有序號的詳細資料，或忽略所有序號的新詳細資料。
 
-  > [!NOTE]
-  > 如果稍後想從 Intune 管理中移除公司擁有的裝置，您可能需要前往 [公司預先註冊的裝置] 下的 [依 iOS 序號] 裝置群組，從 Intune 移除裝置序號，才能停用裝置註冊。 如果 Intune 在您移除序號期間或前後執行災害復原程序，則您必須確認該群組中只會出現使用中裝置的序號。
+> [!NOTE]
+> 如果稍後想從 Intune 管理中移除公司擁有的裝置，您可能需要前往 [公司預先註冊的裝置] 下的 [依 iOS 序號] 裝置群組，從 Intune 移除裝置序號，才能停用裝置註冊。 如果 Intune 在您移除序號期間或前後執行災害復原程序，則您必須確認該群組中只會出現使用中裝置的序號。
 
 2. 選擇 **[下一步]**。
 
@@ -128,23 +128,22 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>匯出要部署到 iOS 裝置的設定檔
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選取要部署到行動裝置的裝置設定檔。 
+1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選取要部署到行動裝置的裝置設定檔。
 
 2. 選擇工作列中的 [匯出]。 複製並儲存 [設定檔 URL] 。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
 
   若要支援 Apple Configurator 2，則必須編輯 2.0 設定檔 URL。 若要執行這項操作，請將此程式碼：
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    取代為以下程式碼：
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  取代為以下程式碼：
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    您將使用下列程序中的 Apple Configurator 將這個設定檔 URL 上傳至 Apple DEP 服務，以定義 iOS 裝置所使用的 Intune 設定檔。
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>使用 Apple Configurator 準備裝置
 
@@ -180,9 +179,10 @@ iOS 裝置會連線到 Mac 電腦並註冊，以進行行動裝置管理。
 
 ### <a name="distribute-devices"></a>散發裝置
 
-裝置現在已準備好進行公司註冊。 
+裝置現在已準備好進行公司註冊。 關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
 
-關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
+>[!NOTE]
+>如果使用者嘗試註冊 DEP 裝置，但已超過其裝置限制，註冊將以無訊息的方式失敗而不警告使用者。
 
 
 ### <a name="see-also"></a>請參閱

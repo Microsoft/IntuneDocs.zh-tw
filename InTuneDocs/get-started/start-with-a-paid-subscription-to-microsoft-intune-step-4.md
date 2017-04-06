@@ -1,59 +1,49 @@
 ---
-title: "管理 Intune 授權 | Microsoft Docs"
+title: "指派 Intune 授權 | Microsoft Docs"
 description: "為您的 Intune 訂閱指派授權給使用者"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: lindavr
+ms.author: lindavr
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: jeffgilb
+ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
-# <a name="manage-intune-licenses"></a>管理 Intune 授權
+# <a name="assign-intune-licenses-to-your-user-accounts"></a>將 Intune 授權指派給您的使用者帳戶
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本主題將告訴系統管理員如何將 Intune 授權指派給使用者，讓裝置接受管理。
+無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。
 
-您必須先在 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中將您 Intune 訂閱的授權指派給每位使用者，使用者才能登入以使用 Intune 服務，或是註冊其裝置接受管理。
-
-使用 Microsoft Enterprise Mobility + Security (EMS) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或一組服務。 如需詳細資訊，請參閱[使用 PowerShell 管理 Intune 授權](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)。
-
-## <a name="how-intune-licenses-are-assigned"></a>如何指派 Intune 授權
-當使用者帳戶從您的內部部署 Active Directory 同步處理或透過 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增至您的雲端服務訂用帳戶時，不會自動將 Intune 授權指派給他們。 而是在稍後，Intune 租用戶系統管理員必須編輯使用者帳戶，以從 Office 365 入口網站將授權指派給使用者。
-
-當您的訂用帳戶與相關聯的其他雲端服務共用 Azure AD 時，您也可以存取已新增至這些服務的使用者。 在您將授權指派給這些使用者前，他們沒有使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 的授權。
-
-> [!TIP]
-> 若指派或撤銷 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權的選項已停用，表示您的訂用帳戶可能包含大量授權選項，例如在使用 [Enterprise Mobility Suite + 安全性](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx)時可用的選項。 如需如何指派或撤銷授權的詳細資訊，請參閱授權選項的文件。
-
-## <a name="assign-an-intune-user-license"></a>指派 Intune 使用者授權
+## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>在 Office 365 系統管理中心指派 Intune 授權
 
 您可以使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
 
-1.  登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)使用租用戶系統管理員認證，再選取 [人員]  >  [所有使用者]。
+1.  使用租用戶系統管理員認證登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]  >  [作用中使用者]。
 
-2.  選取您要指派以 Intune 使用者授權的使用者帳戶，然後選取 [Microsoft Intune (獨立)] 或 [Enterprise Mobility Suite]。
+2.  選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]  >  [編輯]。
 
-3.  使用者帳戶現在具有必要權限，可使用服務並將裝置註冊接受管理。
+3.  將 [Intune] 或 [Enterprise Mobility + Security] 切換為 [開啟]，然後選擇 [儲存]。
+
+4. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
 
 > [!NOTE]
-> 使用者註冊裝置之後，即顯示在主控台中。
+> 使用者必須先註冊裝置，才會顯示在管理主控台中。 此外，您可以一次選取一組使用者來編輯，可以選取以新增或取代所有選取使用者的授權。
 
-### <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>使用 PowerShell 來選擇性地管理 EMS 使用者授權
+## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>使用 PowerShell 來選擇性地管理 EMS 使用者授權
 使用 Microsoft Enterprise Mobility + Security (原稱為 Enterprise Mobility Suite) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。
 
 若要選擇性地指派 EMS 服務的使用者授權，請在已安裝[適用於 Windows PowerShell 的 Windows Azure Active Directory 模組](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)的電腦上，以系統管理員身分開啟 PowerShell。 您可以在本機電腦或 ADFS 伺服器上安裝 PowerShell。

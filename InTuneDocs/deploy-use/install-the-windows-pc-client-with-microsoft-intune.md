@@ -5,7 +5,7 @@ description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 
 ## <a name="instruct-users-to-self-enroll"></a>指示使用者自行註冊
 
-使用者前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權單位以及使用者電腦的作業系統平台/版本而定。 
+使用者前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權單位以及使用者電腦的作業系統平台/版本而定。
 
 如果使用者尚未獲指派 Intune 授權，或者組織的 MDM 授權單位尚未設定為 Intune，則使用者看不到任何註冊選項。
 
@@ -117,7 +117,7 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 - 會向 Windows 10 或 Windows 8.1 電腦使用者顯示兩個註冊選項︰
 
   -  **將電腦註冊為行動裝置**：使用者選擇 [了解如何註冊] 按鈕，並取得如何將其電腦註冊為行動裝置的指示。 因為會將 MDM 註冊視為預設和慣用註冊選項，所以會以醒目方式顯示此按鈕。 不過，MDM 選項不適用於本主題，本主題僅涵蓋用戶端軟體安裝。
-  - **使用 Intune 用戶端軟體註冊電腦**︰您需要告訴使用者選取 [Click here to download it] (按一下這裡下載) 連結，以引導他們進行用戶端軟體安裝。
+  - **使用 Intune 用戶端軟體註冊電腦**︰您需要告訴使用者選取 [Click here to download it]\(按一下這裡下載) 連結，以引導他們進行用戶端軟體安裝。
 
 下表摘要說明選項。
 
@@ -129,9 +129,9 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 
   ![識別或註冊裝置](../media/identify-device-or-enroll.png)
 
-若要讓使用者安裝電腦用戶端軟體，則需要告訴他們選取 [Click here to download it] (按一下這裡下載) 連結，讓使用者下載電腦用戶端軟體，並帶領他們進行安裝程序。 [了解如何註冊] 按鈕會將使用者帶至有關如何使用 MDM 註冊來註冊的文件，而這與這些軟體用戶端指示無關。
+若要讓使用者安裝電腦用戶端軟體，則需要告訴他們選取 [Click here to download it]\(按一下這裡下載) 連結，讓使用者下載電腦用戶端軟體，並帶領他們進行安裝程序。 [了解如何註冊] 按鈕會將使用者帶至有關如何使用 MDM 註冊來註冊的文件，而這與這些軟體用戶端指示無關。
 
-  ![選擇 [Click here to download it] (按一下這裡下載) 連結](../media/enroll-your-windows-device.png)
+  ![選擇 [Click here to download it]\(按一下這裡下載) 連結](../media/enroll-your-windows-device.png)
 
 使用者按一下連結時，就會看到 [下載軟體] 按鈕，只要選取它就會啟動電腦用戶端軟體安裝。
 
@@ -200,7 +200,7 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**方法 2** (請注意，並非每個 Windows 的 SKU 上都已安裝這些代理程式)：
+**方法 2**<br>請注意，Windows 的每個 SKU 上都已安裝這些代理程式：
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 - AgentInstaller
 - 記錄
 - Updates
-- Common 
+- Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>移除 OnlineManagement 資料夾
 

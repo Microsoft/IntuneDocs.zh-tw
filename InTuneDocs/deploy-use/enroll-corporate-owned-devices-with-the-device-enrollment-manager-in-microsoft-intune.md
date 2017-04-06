@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/04/2017
 使用者必須存在於 Azure 入口網站才能新增為裝置註冊管理員。 為了取得最佳安全性，DEM 使用者不應該同時為 Intune 管理員。
 
 >[!NOTE]
->DEM 註冊方法不能與 [Apple Configurator 設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)或[直接註冊](ios-direct-enrollment-in-microsoft-intune.md)，或是 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。 
+>DEM 註冊方法不能與 [Apple Configurator 設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)或[直接註冊](ios-direct-enrollment-in-microsoft-intune.md)，或是 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 02/04/2017
 
 DEM 使用者可以︰
 
--   在 Intune 中最多註冊 1000 部裝置。
--   登入公司入口網站以取得公司應用程式。
--   藉由將特定角色的應用程式部署到平板電腦來設定公司資料的存取權。
+-   在 Intune 中最多註冊 1000 部裝置
+-   使用公司入口網站應用程式以取得公司應用程式
+-   藉由將特定角色的應用程式部署到平板電腦來設定公司資料的存取權
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>以 DEM 帳戶註冊裝置的限制
 
@@ -57,9 +57,9 @@ DEM 使用者可以︰
   - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員有這項功能，但 DEM 使用者沒有。
 
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
- 
+
   - 因為進行應用程式管理需要每位使用者的 Apple ID，因此使用者無法使用 Apple 大量採購計劃 (VPP) 應用程式。
- 
+
   - (僅限 iOS) 如果使用 DEM 註冊 iOS 裝置，您就無法使用 Apple Configurator 或 Apple 裝置註冊方案 (DEP) 來註冊裝置。
 
 > [!NOTE]
@@ -77,7 +77,7 @@ DEM 使用者可以︰
 
 4.  選擇 [Add… (新增...)]。 [新增裝置註冊管理員]  對話方塊隨即開啟。
 
-5.  輸入 Intune 帳戶的 [使用者識別碼]，然後選擇 [確定]。 
+5.  輸入 Intune 帳戶的 [使用者識別碼]，然後選擇 [確定]。
 
     DEM 使用者現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序來註冊行動裝置。 管理員使用者可以在最多 1000 部裝置上安裝公司入口網站應用程式，並使用其 DEM 認證註冊裝置。 如需每個平台的使用者註冊步驟，請參閱︰
 

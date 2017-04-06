@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -32,17 +33,17 @@ ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 -   您也可以透過 **MDM 通道**來部署和管理應用程式。  這需要在 MDM 方案中註冊裝置。 這些可以是 **受原則管理的** 應用程式或其他受管理的應用程式。
 
-iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**部署的應用程式之間的檔案傳輸。 「開啟位置管理」限制是在組態設定中設定，並使用 MDM 軟體部署。  當使用者安裝部署的應用程式時，就會套用您設定的限制。
+iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**部署的應用程式之間的檔案傳輸。 「開啟位置管理」限制是在組態設定中設定，並使用 MDM 解決方案部署。  當使用者安裝部署的應用程式時，就會套用您設定的限制。
 
 ##  <a name="manage-data-transfer-between-ios-apps"></a>管理 iOS 應用程式之間的資料傳輸
 應用程式保護原則與 iOS 的「開啟位置管理」功能一起使用，可以下列方式保護公司資料︰
 
--   **員工擁有但未交由任何 MDM 解決方案管理的裝置：**您可以將[應用程式保護原則設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)設為 [Allow app to transfer data to only managed apps] (只允許應用程式將資料傳送至受管理的應用程式)。 使用者在不受原則管理的應用程式中開啟受保護的檔案時，會無法讀取檔案。
+-   **員工擁有但未交由任何 MDM 解決方案管理的裝置：**您可以將[應用程式保護原則設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)設為 [Allow app to transfer data to only managed apps]\(只允許應用程式將資料傳送至受管理的應用程式)。 使用者在不受原則管理的應用程式中開啟受保護的檔案時，會無法讀取檔案。
 
--   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要允許設有應用程式保護原則之應用程式間的資料傳輸，請啟用 [Allow app to transfer data to only managed apps] (只允許應用程式將資料傳送至受管理的應用程式) 設定。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。   
+-   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要允許設有應用程式保護原則之應用程式間的資料傳輸，請啟用 [Allow app to transfer data to only managed apps]\(只允許應用程式將資料傳送至受管理的應用程式) 設定。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。   
 
--   **協力廠商 MDM 所管理的裝置的解決方案：**您可以使用 iOS 的**開啟位置管理**功能，將資料傳輸在限制僅限受管理的應用程式。
-若要確定您使用第三方 MDM 解決方案部署的應用程式亦與您在 Intune 中設定的應用程式保護原則相關聯，則您必須遵循[設定使用者 UPN 設定](#configure-user-upn-setting-for-third-party-emm)逐步解說所述，設定使用者 UPN 設定。  應用程式若是透過使用者 UPN 設定部署，即會在使用者使用其工作帳戶登入時，將應用程式保護原則套用到應用程式。
+-   **第三方 MDM 解決方案管理的裝置：**您可以使用 iOS 的**開啟位置管理**功能，將資料傳輸在限制僅限受管理的應用程式。
+若要確定您使用第三方 MDM 解決方案部署的應用程式也關聯了您在 Intune 中設定的應用程式保護原則，您必須依照[設定使用者 UPN 設定](#configure-user-upn-setting-for-third-party-emm)逐步解說所述，設定使用者 UPN 設定。  應用程式若是透過使用者 UPN 設定部署，便會在使用者使用其工作帳戶登入時，將應用程式保護原則套用到應用程式。
 
 > [!IMPORTANT]
 > 只有部署到協力廠商 MDM 所管理裝置的應用程式，才需要使用者 UPN 設定。  Intune 受管理裝置則不需要此設定。
@@ -76,9 +77,9 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | 字串 | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | 字串 | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$ **或** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>範例 2：使用者體驗
 
@@ -95,13 +96,13 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 5.  登入成功時，會將應用程式保護原則設定套用至 Word 應用程式。
 
-6.  現在，資料傳輸成功，而且文件標記為應用程式中的公司身分識別。 此外，還會將資料視為在工作環境中，並據以套用原則設定。
+6.  現在，檔案傳輸成功，而且文件標記為應用程式中的公司身分識別。 此外，還會將檔案視為在工作環境中，並據以套用原則設定。
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>驗證協力廠商 EMM 的使用者 UPN 設定
 
 設定使用者 UPN 設定之後，您應該驗證 iOS 應用程式能夠接收並符合 Intune 應用程式保護原則。
 
-例如，[Require app PIN] (需要應用程式 PIN) 原則設定可以輕鬆地以視覺化方式在裝置上進行測試。 如果原則設定設為 [是]，則使用者應該會在嘗試存取公司資料時看到設定或輸入 PIN 的提示。
+例如，[Require app PIN]\(需要應用程式 PIN) 原則設定可以輕鬆地以視覺化方式在裝置上進行測試。 如果原則設定設為 [是]，則使用者應該會在嘗試存取公司資料時看到設定或輸入 PIN 的提示。
 
 首先，[建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)到 iOS 應用程式。 如需如何測試應用程式保護原則的詳細資訊，請參閱[驗證應用程式保護原則](validate-mobile-application-management.md)。
 
@@ -109,9 +110,4 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 的應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
