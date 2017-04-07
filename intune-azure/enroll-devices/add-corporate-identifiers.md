@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 身為 IT 系統管理員，您可以建立並匯入列出國際行動設備識別 (IMEI) 號碼以識別公司所擁有裝置的逗號分隔值 (.csv) 檔案。 基於系統管理目的，每個 IMEI 號碼均可含有清單中指定的詳細資料。
+
+當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。 
 
 ## <a name="create-a-csv-file"></a>建立 .csv 檔案
 建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 IMEI 識別碼，在右資料行中新增詳細資料。 詳細資料限制為 128 個字元。 目前的限制是每個 .csv 檔案 500 個資料列。
