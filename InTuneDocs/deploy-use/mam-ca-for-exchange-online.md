@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -62,9 +63,4 @@ ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>請參閱
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
