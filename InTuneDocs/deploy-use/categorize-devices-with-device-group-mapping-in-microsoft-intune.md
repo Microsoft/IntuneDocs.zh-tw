@@ -1,5 +1,5 @@
 ---
-title: "使用裝置群組對應分類裝置 | Microsoft Intune"
+title: "使用裝置群組對應分類裝置 | Microsoft Docs"
 description: "使用 Microsoft Intune 裝置群組對應來將裝置分組成定義的類別，以便讓您更輕鬆地管理那些裝置。"
 keywords: 
 author: robstackmsft
@@ -13,13 +13,18 @@ ms.technology:
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
+ms.lasthandoff: 12/10/2016
 
 ---
 
-# 在 Microsoft Intune 使用裝置群組對應分類裝置
+# <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>在 Microsoft Intune 使用裝置群組對應分類裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 Microsoft Intune [裝置群組對應] 根據您定義的類別將裝置自動新增至群組，以便讓您更輕鬆地管理這些裝置。 
 
 裝置群組對應會使用下列工作流程︰
@@ -36,18 +41,18 @@ ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 * 帳戶處理
 * Manager
 
-## Intune 群組管理變更的重要資訊
+## <a name="important-information-about-a-change-in-group-management-for-intune"></a>Intune 群組管理變更的重要資訊
 
 我們正根據您的意見反應來整合跨 Enterprise Mobility + Security 的群組和目標體驗。 因此，我們很快就會將 Intune 群組轉換成以 Azure Active Directory 為基礎的安全性群組。 這項變更之後，您將無法再使用 Intune 建立群組。 相反地，您將在 Azure 入口網站中建立。 這項變更將會以漸進方式進行，您可以在[此主題](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)中閱讀這項變更的完整詳細資訊及其時程表。
 
-### 您應該使用此主題中的哪項程序來設定裝置群組對應？
+### <a name="which-procedure-in-this-topic-should-you-use-to-configure-device-group-mapping"></a>您應該使用此主題中的哪項程序來設定裝置群組對應？
 
 由於會分階段實作以 Azure Active Directory 為基礎的安全性群組，因此您必須開啟 [Intune 管理主控台](https://manage.microsoft.com)中的 [群組] 工作區來識別要使用的程序：
 
 -  如果您看到 Azure 入口網站連結，則無法再使用 Intune 群組。 請遵循下方[如何設定 Azure Active Directory 群組的裝置群組對應](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups)程序。
 -  如果您看不到 Azure 入口網站連結，則仍在使用 Intune 群組。 請遵循下方[如何設定 Intune 群組的裝置群組對應](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups)程序。
 
-## 如何設定 Intune 群組的裝置群組對應
+## <a name="how-to-configure-device-group-mapping-for-intune-groups"></a>如何設定 Intune 群組的裝置群組對應
 1. 對於想要使用的每個裝置類別，建立一個 Intune 裝置群組，或識別現有的群組。 如需如何建立群組的資訊，請參閱[在 Microsoft Intune 中使用群組來管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
 2. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
 3. 在 [系統管理] 工作區中，展開 [行動裝置管理]，然後選擇 [裝置群組對應]。
@@ -58,9 +63,9 @@ ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 
 
 
-## 如何設定 Azure Active Directory 群組的裝置群組對應
+## <a name="how-to-configure-device-group-mapping-for-azure-active-directory-groups"></a>如何設定 Azure Active Directory 群組的裝置群組對應
 
-### 步驟 1 - 在 Intune 管理主控台中建立裝置類別
+### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>步驟 1 - 在 Intune 管理主控台中建立裝置類別
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
 3. 在 [管理] 工作區中，展開 [行動裝置管理]，然後選擇 [裝置類別]。
 4. 在 [裝置類別] 頁面上，您會看到可設定裝置類別的清單： 
@@ -69,7 +74,7 @@ ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 
 當您在步驟 2 中建立 Azure Active Directory 安全性群組時，您將會使用裝置類別名稱。
 
-### 步驟 2 - 建立 Azure Active Directory 安全性群組
+### <a name="step-2---create-azure-active-directory-security-groups"></a>步驟 2 - 建立 Azure Active Directory 安全性群組
 
 在此步驟中，您將根據裝置類別和裝置類別名稱，在 Azure 入口網站中建立動態群組。
 
@@ -78,15 +83,10 @@ ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
 例如 (**device.deviceCategory -eq** "<*您從 Intune 管理主控台取得的裝置類別名稱*>")
 
 
-## 設定裝置群組之後
+## <a name="after-you-configure-device-groups"></a>設定裝置群組之後
 
 當使用者註冊其裝置時，他們會看到您設定的類別清單。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
 
-### 請參閱
+### <a name="see-also"></a>請參閱
 [利用 Microsoft Intune，使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

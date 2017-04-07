@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: 173e95ac2d0039accb3465386bf67fb3dee90723
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -43,11 +44,6 @@ ms.openlocfilehash: 173e95ac2d0039accb3465386bf67fb3dee90723
 
   - **以 IMEI 編號標記** - 匯入公司擁有之裝置的國際行動設備識別 (IMEI) 編號，以在 Intune 中將其標記為公司擁有的裝置。 這是將專用的 (「單一使用者」) Windows 和 Android 裝置識別為公司擁有的唯一方法。 不會使用 Apple 的裝置註冊方案或 Apple Configurator 註冊的 iOS 裝置也可以使用 IMEI 編號標記。 在預先宣告裝置使其標記為「公司」之後，您就可以分配給使用者。 使用者接著可以安裝公司入口網站，以將他們的裝置註冊為專用裝置來存取公司資源 (例如電子郵件、應用程式和資料)。
 
-  > [!div class="button"]
-  [< 返回](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< 返回](choose-how-to-enroll-devices3.md)
 

@@ -1,10 +1,11 @@
 ---
-title: "軟體更新疑難排解 | Microsoft Intune"
+title: "軟體更新疑難排解 | Microsoft Docs"
 description: "解決 Microsoft Intune 的軟體更新問題。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +13,24 @@ ms.technology:
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 906371576609152aaf61e033da5ce60744ddd255
-ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Microsoft Intune 的軟體更新疑難排解
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune 的軟體更新疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 請使用本節中的資訊，協助您解決 Microsoft Intune 的軟體更新問題。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
-## 更新代理程式錯誤碼
+## <a name="update-agent-error-codes"></a>更新代理程式錯誤碼
 
 下表列出 intune **更新代理程式**錯誤碼。 如果您在這份表格中找不到特定錯誤碼，請參閱 [Windows Update Agent Result Codes (Windows Update 代理程式結果代碼)](http://go.microsoft.com/fwlink/?LinkID=221542)。
 
@@ -240,7 +246,7 @@ ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|安裝失敗，因為尚有擱置中的強制重新開機作業。|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|已取消下載。|
 
-## 包含大量被取代更新的 Windows 7 電腦會停止回報到 Microsoft Intune 主控台
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>包含大量被取代更新的 Windows 7 電腦會停止回報到 Microsoft Intune 主控台
 **問題**︰您可能會遇到下列情況，Microsoft Intune 用戶端遇到一或多個下列症狀︰
 - 它們突然停止回報到 Microsoft 管理主控台。  
 - 它們經歷高 CPU 使用率。
@@ -259,11 +265,6 @@ ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
 
 此外，如果您執行 Windows 7，請確定您已安裝下列更新︰[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月)。
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Aug16_HO2-->
-
 

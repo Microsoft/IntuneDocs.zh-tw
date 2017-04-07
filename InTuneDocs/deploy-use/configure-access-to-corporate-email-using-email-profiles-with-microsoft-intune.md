@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -37,28 +38,22 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 -    Windows Phone 8.1 和更新版本
 -    Windows 10 (適用於桌上型電腦)、Windows 10 Mobile 和更新版本
 -    iOS 8.0 和更新版本
--    Samsung KNOX 標準&4;.0 及更新版本
--    Android for Work
-
->[!NOTE]
->Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。
+-    Samsung KNOX 標準 4.0 及更新版本
+-    Android for Work (協力廠商電子郵件應用程式，原生的電子郵件應用程式僅限個人設定檔)
 
 除了在裝置上設定電子郵件帳戶，您可以設定要同步處理的電子郵件數量，以及每種裝置類型所要同步處理的內容類型。
 
->[!NOTE]
->
->如果使用者在 Intune 設定設定檔前已經安裝電子郵件設定檔，Intune 電子郵件設定檔部署的結果取決於裝置平台：
+如果使用者在 Intune 設定設定檔前已經安裝電子郵件設定檔，Intune 電子郵件設定檔部署的結果取決於裝置平台：
 
->**iOS**：依據主機名稱和電子郵件地址偵測到重複的現有電子郵件設定檔。 使用者建立的重複電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者這些檔案不相容，因為他們手動設定電子郵件設定檔，並提示使用者移除該設定檔。 使用者應該移除電子郵件設定檔，使 Intune 設定檔可以設定。 若要避免問題，請指示使用者先進行註冊，再安裝電子郵件設定檔，並允許 Intune 設定設定檔。
+**iOS**<br>依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 使用者建立的重複電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者這些檔案不相容，因為他們手動設定電子郵件設定檔，並提示使用者移除該設定檔。 使用者應該移除電子郵件設定檔，使 Intune 設定檔可以設定。 若要避免問題，請指示使用者先進行註冊，再安裝電子郵件設定檔，並允許 Intune 設定設定檔。
 
->**Windows**：依據主機名稱和電子郵件地址偵測到重複的現有電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
+**Windows**<br>依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
 
->**Samsung KNOX**：依據電子郵件地址，已偵測到重複的現有電子郵件設定檔，而且會使用 Intune 設定檔覆寫它。 如果使用者設定了該帳戶，Intune 設定檔會再次將其覆寫。 請注意，這可能導致使用者產生一些混淆。
+**Samsung KNOX**<br>依據電子郵件地址，偵測到重複的現有電子郵件設定檔，且會以 Intune 設定檔覆寫它。 如果使用者設定了該帳戶，Intune 設定檔會再次將其覆寫。 請注意，這可能導致使用者產生一些混淆。
 
->由於 Samsung KNOX 不會使用主機名稱來識別設定檔，因此建議您不要建立多個電子郵件設定檔來使用在不同主機上的同一個電子郵件地址，以避免彼此覆寫。
+由於 Samsung KNOX 不會使用主機名稱來識別設定檔，因此建議您不要建立多個電子郵件設定檔來使用在不同主機上的同一個電子郵件地址，以避免彼此覆寫。
 
->**Android for Work**：Intune 設定檔只會套用到裝置工作設定檔中的特定電子郵件應用程式，而不會影響裝置使用者設定檔的電子郵件組態。
-
+**Android for Work**<br>Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都是在 Google Play 商店取得，並且安裝在裝置工作設定檔中，因此不會產生重複的設定檔。 兩個應用程式都支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的電子郵件設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
 
 ## <a name="secure-email-profiles"></a>保護電子郵件設定檔
 您可以使用憑證或密碼保護電子郵件設定檔。
@@ -105,7 +100,7 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
     |**電子郵件地址**|每個裝置上使用者的電子郵件地址的產生方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。|
     |**驗證方法** (Android for Work、Samsung KNOX 和 iOS)|選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。|
     |**選取用戶端憑證以進行用戶端驗證 (識別憑證)** (Android for Work、Samsung KNOX 和 iOS)|選取先前建立的用戶端 SCEP 憑證，以用來驗證 Exchange 連線。 如需如何使用 Intune 中憑證設定檔的詳細資訊，請參閱[使用憑證設定檔保護資源存取](secure-resource-access-with-certificate-profiles.md)。 只有在驗證方法是 [憑證] 時，才會顯示此選項。|
-    |**使用 S/MIME** (Samsung KNOX 和 iOS)|使用 S/MIME 加密傳送外寄電子郵件。|
+    |**使用 S/MIME** (Samsung KNOX 和 iOS)|使用 S/MIME 簽署傳送外寄電子郵件。|
     |**簽署憑證** (Samsung KNOX 和 iOS)|選取將用來簽署外寄電子郵件的簽署憑證。 只有在選取 [Use S/MIME (使用 S/MIME)] 時，才會顯示此選項。|
     |**同步電子郵件的間隔天數**|您想要同步處理電子郵件的天數，或選取 [無限制] 同步處理所有可用的電子郵件。|
     |**同步排程** (Android for Work、Samsung KNOX、Windows Phone 8 和更新版本、Windows 10)|選取裝置用來同步處理 Exchange Server 中資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或 [手動 (使用此方式，裝置使用者必須啟動同步處理)]。|
@@ -136,9 +131,4 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 > [!NOTE]
 > - 對於 Android for Work，除了適當的電子郵件設定檔之外，也必須部署 Gmail 或 Nine Work 應用程式。
 > - 若想要從裝置移除電子郵件設定檔，請編輯部署，再移除裝置所屬的群組。 請注意，若該電子郵件設定檔是裝置上唯一的電子郵件設定檔，即無法以此方式移除。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

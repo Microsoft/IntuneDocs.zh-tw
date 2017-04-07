@@ -1,11 +1,11 @@
 ---
-title: "Windows 電腦的 Endpoint Protection| Microsoft Intune"
+title: "Windows 電腦的 Endpoint Protection | Microsoft Docs"
 description: "使用 Endpoint Protection 保護您受管理的電腦，它可針對惡意程式碼威脅提供即時保護。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -170,11 +172,12 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何檢視電腦上最近偵測到惡意程式碼的路徑
 Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行個體的路徑。 [最近的偵測路徑]  預設會停用。 若要啟用此檢視：
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] > [所有裝置] > [惡意程式碼]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] > [所有裝置] > [所有電腦]。
+2. 以滑鼠右鍵按一下您想要查看其最近偵測路徑的電腦，然後選取 [屬性]。
+3. 從頂端的索引標籤選取 [惡意程式碼]。
 
-2.  以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。
-
-3.  選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
+   ![選取 [惡意程式碼] 索引標籤，然後按一下 [最近的偵測路徑] 核取方塊](../media/malware-path-column.png)
+4. 以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。 選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>更新電腦上的惡意程式碼定義。
 Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 Endpoint Protection 或 Windows Defender 執行完整或快速惡意程式碼掃描。
@@ -183,17 +186,9 @@ Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 E
 
 2. 選擇 [遠端工作] 下拉式清單，然後選取要在遠端電腦上執行的工作。
 
-
-
-
 ## <a name="need-more-help"></a>需要其他協助？
 如需進一步協助和支援，請參閱[針對 Microsoft Intune 中的 Endpoint Protection 進行疑難排解](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。
 
 ### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

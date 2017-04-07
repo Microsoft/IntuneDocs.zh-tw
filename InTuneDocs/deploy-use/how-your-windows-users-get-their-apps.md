@@ -1,10 +1,10 @@
 ---
-title: "Windows 使用者如何取得其應用程式 | Microsoft Intune"
+title: "Windows 使用者如何取得其應用程式 | Microsoft Docs"
 description: "讓使用者可以使用 Windows 應用程式的方法"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e9c6add00356cbea0e86a1a5597813ba9b2811c4
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -36,9 +40,4 @@ ms.openlocfilehash: e9c6add00356cbea0e86a1a5597813ba9b2811c4
 ### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)</br>
 [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

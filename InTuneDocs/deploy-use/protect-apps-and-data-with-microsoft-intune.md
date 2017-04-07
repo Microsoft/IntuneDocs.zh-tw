@@ -1,11 +1,11 @@
 ---
-title: "保護應用程式和資料 | Microsoft Intune"
+title: "保護應用程式和資料 | Microsoft Docs"
 description: "本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.lasthandoff: 12/20/2016
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>使用 Microsoft Intune 保護應用程式和資料
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 透過多重技術層級保護公司資料。 在身分識別層，條件式存取保護服務的存取，只允許從受管理和相容的裝置才能存取。 在用戶端應用程式層中，行動應用程式管理 (MAM) 可防止資料移到未受保護的應用程式或儲存體位置，並於裝置遺失或遭竊時清除資料，以此來防止資料遺失。 建議您一起使用這兩個保護層來協助保護資料安全，同時保留您的行動工作者的生產力。
 
@@ -51,9 +54,4 @@ Microsoft Office 之類的應用程式已內建 Intune App SDK。 您可以移�
 您也可以[啟用自訂建置的企業營運應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)來搭配 MAM 原則一起使用。
 
 如果裝置遺失或遭竊，或使用者已不再與您的公司合作，則除了限制資料移動以外，您還可以[選擇性地清除公司資料](wipe-managed-company-app-data-with-microsoft-intune.md)，只留下個人資料。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

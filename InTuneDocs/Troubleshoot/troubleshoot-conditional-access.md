@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -55,7 +56,14 @@ ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
      -   使用者建立的現有電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者，他們因為手動設定電子郵件設定檔而不相容，並且會提示使用者移除該設定檔。使用者應該移除其電子郵件設定檔，以便可以部署 Intune 設定檔。 若要避免問題，請指示使用者進行註冊，而不要安裝電子郵件設定檔，並允許 Intune 部署設定檔。
      -     iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
 
-        一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路組態 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，依照[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)所述來連絡 Microsoft 支援服務。
+        一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路設定 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，遵循[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡 Microsoft 支援服務。
+
+ - Android 裝置：
+     - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
+    
+        -    這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up] (安全啟動) 畫面中選擇 [Require PIN to start device] (需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
+    
+        -     有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>原則問題
 
@@ -159,9 +167,4 @@ ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

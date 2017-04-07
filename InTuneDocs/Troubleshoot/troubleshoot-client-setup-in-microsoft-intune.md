@@ -2,8 +2,8 @@
 title: "用戶端設定疑難排解 | Microsoft Docs"
 description: "針對常見用戶端安裝問題進行疑難排解。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

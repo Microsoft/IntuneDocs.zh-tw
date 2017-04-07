@@ -1,26 +1,31 @@
 ---
-title: "簡化行動裝置上的電子郵件設定 | Microsoft Intune"
+title: "簡化行動裝置上的電子郵件設定 | Microsoft Docs"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入門指南：簡化行動裝置上的電子郵件設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署至由 Intune 服務管理的 Windows、iOS 及 Android 行動裝置，節省公司的時間和資源。 自動設定電子郵件設定檔可以大幅改善使用者體驗並增加滿意度，同時降低技術服務人員成本。
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>我適合使用此快速入門指南嗎？
@@ -31,8 +36,8 @@ Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署�
 設定電子郵件設定檔之後，您就可以輕鬆地利用 Intune 條件式存取原則，限制對公司電子郵件和 Office 365 服務的存取。 這些原則可讓您確保只有與您在 Intune 中所設定規則相容的裝置，才能存取公司電子郵件和 Office 365 服務。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
-1.  在 Windows、iOS 及 Android 裝置上，自動[設定使用者電子郵件設定檔](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
-2.  使用條件式存取原則[控制公司郵件的存取權](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+1.    在 Windows、iOS 及 Android 裝置上，自動[設定使用者電子郵件設定檔](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
+2.    使用條件式存取原則[控制公司郵件的存取權](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
 ### <a name="additional-information"></a>其他資訊：
@@ -44,9 +49,4 @@ Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署�
 [將 Wi-Fi 設定檔部署到受管理的裝置](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)
 
 [使用 Microsoft Intune 中的憑證設定檔來保護資源存取](/intune/deploy-use/secure-resource-access-with-certificate-profiles)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

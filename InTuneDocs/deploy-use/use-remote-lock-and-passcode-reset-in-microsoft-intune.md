@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>透過遠端鎖定或密碼重設來協助保護您的裝置
@@ -34,6 +35,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 |macOS|不支援|
 |iOS|支援|
 |Android|支援|
+|Android for Work|支援|
 |Windows 10 (行動裝置)|支援|
 |Windows 10 (桌面)|不支援|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
@@ -61,6 +63,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 |macOS|不支援|
 |iOS|支援從裝置清除密碼。 不會建立新的暫時密碼。|
 |Android|支援 Android 7.0 之前的版本。 建立暫時密碼。|
+|Android for Work|不支援|
 |Windows 10 Mobile|支援|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
 |Windows RT 8.1|不支援|
@@ -83,9 +86,4 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 
 ### <a name="see-also"></a>請參閱
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)和 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (裝置資料管理的 Windows 選擇性抹除)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

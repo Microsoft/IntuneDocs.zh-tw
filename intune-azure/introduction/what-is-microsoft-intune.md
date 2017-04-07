@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 Microsoft Intune 即將移轉到 Azure 入口網站，這意味著您所使用的工作流程及功能將會有所改變。
 新的入口網站可讓您預覽 Azure 入口網站中的新功能及更新功能，您可在其中管理您組織的行動裝置、電腦及應用程式。
-所有 Intune 功能最終都會移至 Azure，但您目前仍可在 Azure 入口網站中執行某些 Intune 工作。 這些新功能目前仍為預覽階段，所以仍有一些功能尚未在入口網站提供。 如需詳細資料，請檢閱[預覽版的新功能](#what's-new-in-the-preview)一節。
+所有 Intune 功能最終都會移至 Azure，但您目前已可在 Azure 入口網站中執行許多 Intune 工作。 這些新功能目前仍為預覽階段，所以仍有一些功能尚未在入口網站提供。 如需詳細資料，請檢閱[新功能](#what's-new)一節。
 
 > [!IMPORTANT]
-> **還沒1看到新的入口網站嗎？**<br>
-> 我們已經開始為一些預選的租用戶導入預覽版。 現有的租用戶自 2017 初開始，將陸續移轉到新的服務平台上。 在移轉您的租用戶之前，您會在 Office 訊息中心收到相關通知。 如果您有任何關於租用戶移轉時間表的問題，請連絡我們的移轉團隊：[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)。
+> **還沒看到新的入口網站嗎？**<br>
+> 我們已經開始為一些預選的租用戶導入預覽版。 現有的租用戶自 2017 初開始，將陸續移轉到新的服務平台上。 在移轉您的租用戶之前，您會在 Office 訊息中心收到相關通知。
 
 
 您可以在此文件庫中找到新的產品文件，而這份在文件在預覽期間仍會持續更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
@@ -74,24 +74,25 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 
 ![Azure 入口網站的工作負載](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>註冊裝置
+### <a name="introduction-and-get-started"></a>簡介和開始使用
+本節包含有關 Intune 的[新功能](/intune-azure/introduction/whats-new)、[已知問題](/intune-azure/introduction/known-issues-in-the-intune-preview)、[如何取得支援](/intune-azure/introduction/how-to-get-support-for-microsoft-intune)、如何[開始使用免費試用版](/intune-azure/introduction/sign-up-free-trial-microsoft-intune)等資訊。
+### <a name="plan-and-design"></a>規劃和設計
+可協助您[計劃和設計](/intune-azure/plan-and-design/get-started) Intune 環境的資訊。
+### <a name="device-enrollment"></a>裝置註冊
 [如何將您的裝置交付 Intune 管理](/intune-azure/enroll-devices/what-is)。
-### <a name="devices--groups"></a>裝置和群組
+### <a name="devices"></a>裝置
 [透過清查與報表了解您所管理的裝置](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users"></a>管理使用者
-[了解您所管理的裝置使用者](/intune-azure/manage-users/what-is)。
+### <a name="manage-users-and-groups"></a>管理使用者和群組
+[了解您管理之裝置的使用者，並將資源整理歸入群組](/intune-azure/manage-users/what-is)。
 ### <a name="manage-apps"></a>管理應用程式
 [如何發行、管理、設定和保護應用程式](/intune-azure/manage-apps/what-is-app-management)。
-### <a name="configure-devices"></a>設定裝置
+### <a name="device-configuration"></a>裝置設定
 [了解您可用於在您管理之裝置上進行設定及功能的各種設定檔](/intune-azure/configure-devices/what-are-device-profiles)。
-### <a name="set-device-compliance"></a>設定裝置相容性
+### <a name="device-compliance"></a>裝置相容性
 [定義裝置的相容性層級，然後回報所有不相容的裝置](/intune-azure/set-device-compliance/what-is-device-compliance)。
 ### <a name="conditional-access"></a>條件式存取
 [依據您指定的條件，限制對 Exchange 服務的存取](/intune-azure/conditional-access/what-is-conditional-access)。
-### <a name="access-control"></a>存取控制
+### <a name="intune-roles"></a>Intune 角色
 [控制可以執行各種 Intune 動作的使用者，以及這些動作的適用對象](/intune-azure/access-control/role-based-access-control)。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。
 
 

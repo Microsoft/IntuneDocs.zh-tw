@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 8a3e8634769b05e6639f7efb6394b7333d998f06
 ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
+ms.lasthandoff: 02/07/2017
 
 
 ---
@@ -36,7 +37,7 @@ ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
-2.  選擇 [更多服務]，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune App Protection] (Intune 應用程式保護)。 Intune [行動應用程式管理] 刀鋒視窗會隨即開啟。
+2.  選擇 [更多服務]，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune App Protection]\(Intune 應用程式保護)。 Intune [行動應用程式管理] 刀鋒視窗會隨即開啟。
 
     ![[新增抹除要求] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/wipe-request-mam-main-blade.png)
 
@@ -93,9 +94,4 @@ ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
 [使用行動應用程式管理原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

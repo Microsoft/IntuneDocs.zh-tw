@@ -1,11 +1,12 @@
 ---
-title: "如何設定 Intune 自訂電子郵件設定 | Intune Azure 預覽版 | Microsoft Docs"
+title: "如何設定 Intune 電子郵件設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何設定 Intune，以建立您管理的裝置上與公司電子郵件的連線。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -25,13 +27,14 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-電子郵件設定檔的設定，可用於設定您管理的裝置，為其設定連線所需的設定，以及與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
+電子郵件設定檔可用來為您管理的裝置設定連線所需的設定，並與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
 
 內建的郵件用戶端支援大部分的平台。 目前不支援大部分的協力廠商電子郵件應用程式。
 
 您可以使用電子郵件設定檔，在下列裝置類型上設定原生電子郵件用戶端：
 
-- Android 4.0 及更新版本
+- Android Samsung KNOX Standard 4.0 及更新版本
+- Android for Work
 - iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
 - Windows 10 桌面版與 Windows 10 行動裝置版
@@ -42,7 +45,7 @@ ms.lasthandoff: 02/16/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為電子郵件設定檔輸入 [名稱] 及 [描述]。

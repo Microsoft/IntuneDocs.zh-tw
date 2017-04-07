@@ -2,10 +2,10 @@
 title: "使用用戶端軟體管理電腦 | Microsoft Docs"
 description: "安裝 Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>使用 Intune 電腦用戶端軟體管理 Windows 電腦
-[將 Windows 電腦註冊為行動裝置](set-up-windows-device-management-with-microsoft-intune.md)是將 Windows 電腦註冊到 Intune 的慣用方法，但也可以選擇透過安裝 Intune 用戶端軟體來註冊和管理 Windows 電腦 (如本主題中所述)。
+[將 Windows 電腦註冊為行動裝置](set-up-windows-device-management-with-microsoft-intune.md)是將 Windows 電腦註冊到 Intune 的慣用方法，但身為 IT 系統管理員，您也可以選擇透過安裝 Intune 用戶端軟體來註冊和管理 Windows 電腦 (如本主題中所述)。 作為行動裝置註冊的方式不支援 Intune 軟體用戶端。
 
 Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Server Active Directory 網域服務 (AD DS) 群組原則物件 (GPO)。 如果您想要使用 Intune 來管理已加入 Active Directory 網域的電腦，請[確定 Intune 原則不會與組織中任何現有的 GPO 衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 您可以深入了解 [Gpo](https://technet.microsoft.com/library/hh147307.aspx)。
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Intune 軟體用戶端的原則和應用程式部署
 
-雖然 Intune 用戶端軟體透過管理軟體更新、Windows 防火牆和 Endpoint Protection 支援[協助保護電腦的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但使用 Intune 用戶端軟體管理的電腦無法作為其他 Intune 原則的目標，包括那些專用於行動裝置管理的 **Windows** 原則設定。 
+雖然 Intune 用戶端軟體透過管理軟體更新、Windows 防火牆和 Endpoint Protection 支援[協助保護電腦的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但使用 Intune 用戶端軟體管理的電腦無法作為其他 Intune 原則的目標，包括那些專用於行動裝置管理的 **Windows** 原則設定。
 
 當您使用 Intune 用戶端軟體管理 Windows 電腦時，可以只使用 [電腦管理] 區段下的原則。
 
@@ -57,7 +57,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 |---------------|--------------------|
 |網路|用戶端要求電腦必須具有網際網路連線。|
 |處理器和記憶體|請參考電腦作業系統的處理器和 RAM 需求。|
-|磁碟空間|安裝用戶端軟體之前需有&200; MB 的可用磁碟空間。|
+|磁碟空間|安裝用戶端軟體之前需有 200 MB 的可用磁碟空間。|
 
 **軟體**：下列是安裝用戶端軟體的軟體需求：
 
@@ -70,7 +70,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune 用戶端軟體的電腦管理功能
 
-安裝 Intune 用戶端軟體之後，管理功能包含： 
+安裝 Intune 用戶端軟體之後，管理功能包含：
 
 - [應用程式管理](deploy-apps-in-microsoft-intune.md)
 

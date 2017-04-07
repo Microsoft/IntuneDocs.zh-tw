@@ -1,9 +1,9 @@
 ---
-title: "Exchange ActiveSync 裝置管理 |Microsoft Intune"
+title: "Exchange ActiveSync 裝置管理 | Microsoft Docs"
 description: "透過使用 Exchange Connector 的 Exchange ActiveSync (EAS) 管理，來管理行動裝置"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>搭配 Microsoft Intune 的 Exchange ActiveSync 行動裝置管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 若要讓 Microsoft Intune 直接管理行動裝置，裝置必須[在 Intune 中註冊](prerequisites-for-enrollment.md)。 或者，系統管理員可以啟用受限程度更高的管理解決方案，透過 Exchange Connector 來使用 Exchange ActiveSync (EAS) 管理功能。 您可以透過內部部署 Exchange 伺服器或使用 Office 365 的 Exchange Online 管理裝置。 針對每個訂用帳戶，Intune 僅支援一個任意種類的 Exchange Connector 連線。
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>行動裝置的 Exchange 存取規則 ##
@@ -44,9 +49,4 @@ Intune 主控台可用以管理 [EAS 原則設定](exchange-activesync-policy-se
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>從行動裝置抹除公司資料
 最後，如果資料不再使用中，或如果裝置遺失或失竊，您可以[抹除來自 EAS 管理的行動裝置的公司資料](wipe-for-exchange-managed-mobile-devices.md)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

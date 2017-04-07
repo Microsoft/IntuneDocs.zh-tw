@@ -3,8 +3,8 @@ title: "裝置註冊疑難排解"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何疑難排解裝置註冊的問題。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

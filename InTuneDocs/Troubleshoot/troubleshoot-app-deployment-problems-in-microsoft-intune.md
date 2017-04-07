@@ -1,5 +1,5 @@
 ---
-title: "應用程式部署問題疑難排解 | Microsoft Intune"
+title: "應用程式部署問題疑難排解 | Microsoft Docs"
 description: "本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題"
 keywords: 
 author: robstackmsft
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 239371198cbbc01b1345c72b3f887055acd44462
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
-# Microsoft Intune 的應用程式部署問題疑難排解
+# <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Microsoft Intune 的應用程式部署問題疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 如果您有使用 Intune 部署和管理應用程式的問題，請從這裡開始。 本主題包含一些您在使用解決方案上可能會遇到的常見問題。
 
-## 常見應用程式部署錯誤碼
+## <a name="common-app-deployment-error-codes"></a>常見應用程式部署錯誤碼
 
 |錯誤碼|可能的問題|建議的解決方式|
 |--------------|--------------------|------------------------|
@@ -33,11 +38,11 @@ ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
 |0x80073CFB|提供的套件已經安裝，不允許重新安裝套件|如果您要安裝的套件與已經安裝的套件不同，可能就會收到這項錯誤。 請確認數位簽章也包含在套件中。 重建或重新簽署套件後，該套件之位元就不再與先前安裝的套件相同。 此錯誤有下列兩種可能的修正選項：<br /><br />-   遞增應用程式的版本號碼，然後再重建及重新簽署應用程式。<br />-   在安裝新套件之前，針對系統上的每個使用者移除舊套件。|
 |0x87D1041C|應用程式安裝成功，但未偵測到應用程式。|- Intune 已成功部署應用程式，接著便解除安裝 (可能為終端使用者所執行)。 指示使用者從公司入口網站重新安裝應用程式。 需要的應用程式會在裝置下次簽入時自動重新安裝。|
 
-## 針對來自 Windows 市集的應用程式進行疑難排解
+## <a name="troubleshooting-apps-from-the-windows-store"></a>針對來自 Windows 市集的應用程式進行疑難排解
 
 [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (針對封裝、部署及查詢 Windows 市集應用程式進行疑難排解) 主題中的資訊可協助您使用 Intune 或任何其他方法疑難排解從 Windows 市集安裝應用程式時可能發生的常見問題。
 
-## 針對將應用程式部署至受 Intune 軟體用戶端管理的電腦進行疑難排解
+## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>針對將應用程式部署至受 Intune 軟體用戶端管理的電腦進行疑難排解
 為了協助您針對將應用程式部署至受 Intune 軟體用戶端管理之電腦的問題進行疑難排解，您可以查看下列兩個記錄檔︰
 - %ProgramFiles%\Microsoft\OnlineManagement\Logs 資料夾
 - %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
@@ -45,11 +50,6 @@ ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
 此外，如果您需要開啟 Intune 的支援案例，則這也適用於將這些記錄檔傳送給 Microsoft。
 
 
-### 後續步驟
+### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

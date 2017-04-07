@@ -2,8 +2,8 @@
 title: "管理公司擁有的裝置 | Microsoft Docs"
 description: "根據裝置的類型、其購買方式和組織的需求，透過各種不同的方式註冊屬公司擁有的裝置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
  - 裝置在 [Azure Active Directory 或 Enterprise Mobility Suite 中註冊為 Windows 10 企業版裝置](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (僅限 Windows 10)。
 
 當裝置標記為公司裝置時，您會在系統管理員主控台中，看到該裝置記錄的 [擁有權] 資料行為 [公司]。 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

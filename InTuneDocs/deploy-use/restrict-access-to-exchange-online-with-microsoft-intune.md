@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -59,7 +60,7 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 ### <a name="when-the-device-is-not-compliant"></a>當裝置不符合規範
 
-若裝置不符合條件式存取原則，會隨即予以隔離，而且使用者會在登入時，收到一封類似下列其中一則隔離通知的電子郵件︰
+若裝置不符合條件式存取原則，會隨即予以隔離，而且使用者會在登入時，收到一封具有下列其中一則隔離通知的電子郵件︰
 
 - 如果裝置未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊，或未在 Azure Active Directory 中註冊，就會顯示一則訊息，其中包含安裝公司入口網站應用程式、註冊裝置及啟用電子郵件的指示。 此程序也會將裝置的 Exchange ActiveSync 識別碼與 Azure Active Directory 中的記錄產生關聯。
 
@@ -258,9 +259,9 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 -   在使用者建立電子郵件帳戶之後，裝置會立即遭到封鎖。
 
--   如果受封鎖的使用者向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置並修正任何不符合規範的問題，則會在&2; 分鐘內解除封鎖電子郵件存取。
+-   如果受封鎖的使用者向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 註冊裝置並修正任何不符合規範的問題，則會在 2 分鐘內解除封鎖電子郵件存取。
 
--   如果使用者取消註冊其裝置，大約會在&6; 小時後封鎖電子郵件。
+-   如果使用者取消註冊其裝置，大約會在 6 小時後封鎖電子郵件。
 
 若要查看**如何設定條件式存取原則以限制裝置存取的範例案例**，請參閱[限制存取電子郵件的範例案例](restrict-email-access-example-scenarios.md)。
 
@@ -275,9 +276,4 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 - [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

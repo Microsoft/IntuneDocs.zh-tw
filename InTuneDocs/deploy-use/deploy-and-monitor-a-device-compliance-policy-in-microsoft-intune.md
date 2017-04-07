@@ -1,5 +1,5 @@
 ---
-title: "部署及監視相容性原則 | Microsoft Intune"
+title: "部署和監視相容性原則 | Microsoft Docs"
 description: "使用本主題中的逐步指示以部署及監視裝置相容性原則。"
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中部署和監視裝置相容性原則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>部署相容性原則
 將您[建立的](create-a-device-compliance-policy-in-microsoft-intune.md)合規性原則部署到組織中的一或多個使用者群組。 將相容性原則部署到使用者時，即會檢查使用者裝置的相容性。
 
@@ -67,9 +72,4 @@ ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
 
 ### <a name="see-also"></a>請參閱
 [Intune 中的裝置合規性原則簡介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 如果在送出第一個通知之後，裝置未簽入以取得原則，Intune 還會另外嘗試三次。  如果裝置處於離線狀態 (例如已關閉或未連線到網路)，則可能不會收到通知。 在這種情況下，裝置會在其下次排定簽入 Intune 服務的時間取得原則，如下所示：
 
-- iOS 和 Mac OS X：每 6 小時。
+- iOS 和 macOS：每 6 小時。
 - Android：每 8 小時。
 - Windows Phone：每 8 小時。
 - 註冊為裝置的 Windows 8.1 和 Windows 10 電腦：每 8 小時。
 
 如果裝置剛註冊，簽入頻率會更頻繁，如下所示：
 
-- iOS 和 Mac OS X：前 6 小時每 15 分鐘，之後每 6 小時。
+- iOS 和 macOS：前 6 小時每 15 分鐘，之後每 6 小時。
 - Android：前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來每 8 小時。
 - Windows Phone：前 15 分鐘每 5 分鐘，之後 2 小時每 15 分鐘，再來每 8 小時。
 - Windows 電腦註冊為裝置：前 30 分鐘每 3 分鐘，之後每 8 小時。
@@ -499,8 +500,3 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述)。
-
-
-<!--HONumber=Feb17_HO3-->
-
-

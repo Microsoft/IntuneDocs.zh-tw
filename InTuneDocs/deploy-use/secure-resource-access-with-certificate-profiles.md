@@ -1,11 +1,11 @@
 ---
-title: "用於資源存取的憑證設定檔 |Microsoft Intune"
+title: "用於資源存取的憑證設定檔 |Microsoft Docs"
 description: "使用每部使用者裝置上安裝的憑證來保護 VPN、Wi-Fi 及電子郵件存取。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>使用 Microsoft Intune 中的憑證設定檔來保護資源存取
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 當您授與使用者透過 VPN、Wi-Fi 或電子郵件設定檔存取公司資源的權限時，您可以使用安裝在每部使用者裝置上的憑證來保護存取的安全。 它的運作方式如下：
 
 1. 確定您已備妥正確的憑證基礎結構，如[設定 SCEP 的憑證基礎結構](configure-certificate-infrastructure-for-scep.md)及[設定 PFX 的憑證基礎結構](configure-certificate-infrastructure-for-pfx.md)中所述。
@@ -44,7 +49,7 @@ ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
 
   針對執行這些平台的裝置使用 **SCEP 憑證設定檔**：
     -   Mac OS X 10.9 及更新版本
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 您必須為每個平台分別建立設定檔。 當您建立設定檔時，請將設定檔與您已建立之**受信任的根憑證設定檔**建立關聯。
 
@@ -58,9 +63,4 @@ ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
 - [設定 SCEP 的憑證基礎結構](configure-certificate-infrastructure-for-scep.md)
 - [設定 PFX 的憑證基礎結構](configure-certificate-infrastructure-for-pfx.md)
 - [設定 Intune 憑證設定檔](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 * **iOS 裝置**︰開啟 Azure Authenticator 應用程式，在帳戶向左撥動，然後選擇 [取消註冊]。  
 * **Android 裝置**︰解除安裝公司入口網站應用程式，或從 [系統設定] 移除帳戶。
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>應用程式 CA 與以裝置合規性為基礎的條件式存取  
+## <a name="app-based-ca-with-device-based-ca"></a>以應用程式為基礎的 CA 與以裝置為基礎的 CA  
 
 您可以在 [Intune 系統管理員主控台](https://manage.microsoft.com)或 [Azure AD Premium 管理主控台] (https://manage.windowsazure.com) 上設定[以裝置相容性為基礎的條件式存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**裝置 CA**)。 裝置 CA 要求使用者只透過符合 Intune 裝置相容性原則之受 Intune 管理的裝置或加入網域的電腦，來連線到 Exchange Online。  如果使用者屬於同時以應用程式 CA 和裝置 CA 原則為目標的一或多個安全性群組，使用者必須符合下列兩個需求之一：
 * 用來存取服務的應用程式是下者所支援的行動裝置應用程式 
@@ -63,9 +62,4 @@ ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 ### <a name="see-also"></a>請參閱
 
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

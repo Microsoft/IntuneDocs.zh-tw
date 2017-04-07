@@ -1,5 +1,5 @@
 ---
-title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
+title: "使用 PSK 的 Wi-Fi | Microsoft Docs"
 description: "使用自訂組態建立包含預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
 author: robstackmsft
@@ -13,35 +13,40 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
+ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
+ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
+ms.lasthandoff: 12/15/2016
 
 
 
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 > [!NOTE]
--   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
+-    您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
 - 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
+-    您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
 -  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.  若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂設定]，而不是 Wi-Fi 設定檔。
+1.    若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂設定]，而不是 Wi-Fi 設定檔。
 
-2.  提供名稱和描述。
-3.  加入新的 OMA-URI 設定︰
+2.    提供名稱和描述。
+3.    加入新的 OMA-URI 設定︰
 
-   a.   輸入此 Wi-Fi 網路設定的名稱。
+   a.    輸入此 Wi-Fi 網路設定的名稱。
 
-   b。   輸入 OMA-URI 設定的描述，或者保留空白。
+   b。    輸入 OMA-URI 設定的描述，或者保留空白。
 
-   c.   **資料類型**︰設為「字串(XML)」
+   c.    **資料類型**︰設為「字串(XML)」
 
-   d.   **OMA-URI**：
+   d.    **OMA-URI**：
 
     - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -69,24 +74,24 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
 >  `<hex>53534944</hex>` 應設定為 `<name><SSID of wifi profile></name>` 的十六進位值。
 >  Windows 10 裝置可能會傳回誤報的 *0x87D1FDE8 補救失敗*錯誤，但仍會使用設定檔進行佈建。
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-        <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -108,10 +113,12 @@ Android 或 Windows 的 Wi-Fi 設定檔 XML 程式碼範例如下︰
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="eap-based-wi-fi-profile"></a>EAP 型 Wi-Fi 設定檔
 EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -189,6 +196,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>從現有的 Wi-Fi 連線建立 XML 檔案
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案：
@@ -212,9 +220,4 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

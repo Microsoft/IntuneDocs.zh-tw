@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -32,7 +33,7 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 
 ## <a name="group-management-moving-to-azure-ad"></a>移至 Azure AD 的群組管理
 
-**從 2016 年 11 月開始**，新的帳戶將會在 Azure Acitve Directory (AD) 入口網站中管理使用者和裝置群組。 從 2016 年 12 月開始，Intune 產品小組會將現有客戶遷移至以新 Azure AD 為基礎的群組管理體驗。 所有的使用者和裝置群組都會移轉至 Azure AD 安全性群組。 我們會等到對您的日常工作所造成的任何影響降到最低，並且預期對您的使用者不會造成任何影響，再開始進行移轉。 我們也將在遷移您的帳戶之前通知您。
+**從 2016 年 11 月開始**，新的帳戶將會在 Azure Active Directory (AD) 入口網站中管理使用者和裝置群組。 從 2016 年 12 月開始，Intune 產品小組會將現有客戶遷移至以新 Azure AD 為基礎的群組管理體驗。 所有的使用者和裝置群組都會移轉至 Azure AD 安全性群組。 我們會等到對您的日常工作所造成的任何影響降到最低，並且預期對您的使用者不會造成任何影響，再開始進行移轉。 我們也將在遷移您的帳戶之前通知您。
 
 
 >[!IMPORTANT]
@@ -87,9 +88,4 @@ Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您
 >[!div class="step-by-step"]
 
 >[&larr; **管理 Intune 授權**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**建立原則和應用程式** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

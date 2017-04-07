@@ -1,11 +1,11 @@
 ---
-title: "iOS 原則設定 | Microsoft Intune"
+title: "iOS 原則設定 | Microsoft Docs"
 description: "建立原則，以在您使用 Intune 管理的 iOS 裝置上控制設定及功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 iOS 原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定。 此外，您可以使用 Apple Configurator 工具建立 Intune 所沒有的自訂設定。
 
@@ -78,12 +82,12 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |----------------|-------|
 |**允許備份至 iCloud**|允許使用者將裝置備份到 iCloud。|
 |**允許文件同步至 iCloud**|允許文件和索引鍵-值同步處理到 iCloud 儲存空間。|
-|**允許相片串流同步至 iCloud**|允許裝置上的相片同步處理到 iCloud。|
+|**允許相片串流同步至 iCloud**|可讓使用者在其裝置上啟用 [共享相片串流]，以允許將相片同步處理到 iCloud 並可在所有使用者裝置上使用。|
 |**需要加密備份**|需要加密任何裝置備份。|
 |**允許受管理的應用程式將資料同步到 iCloud**|允許您使用 Intune 管理的應用程式將資料同步至使用者的 iCloud 帳戶。|
 |**允許 Handoff，以繼續執行其他裝置上的活動**|允許使用者在另一部 iOS 或 Mac OS X 裝置上繼續執行在 iOS 裝置上啟動的工作。|
-|**允許 iCloud 照片共享**|允許使用 iOS 共享的照片串流功能。|
-|**允許 iCloud 照片圖庫**|允許使用者將照片儲存於 iCloud。 如果停用，就會移除已儲存於 iCloud 的所有照片。|
+|**允許 iCloud 照片共享**|設定為 [否]，停用裝置 上的 [iCloud 相片共享]。|
+|**允許 iCloud 照片圖庫**|如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。    如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。|
 
 ### <a name="application-settings-for-the-browser"></a>瀏覽器的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
@@ -172,6 +176,8 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**匯入應用程式**|匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 應用程式 URL」格式。|
 |**編輯**|編輯所選取應用程式的名稱、發行者和 URL。|
 |**刪除**|從清單中刪除選取的應用程式。|
+
+包含相容和不相容應用程式設定的原則必須部署到使用者群組。
 
 ### <a name="kiosk-mode-settings"></a>Kiosk 模式設定
 
@@ -380,9 +386,4 @@ Weather,Apple,com.apple.weather
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

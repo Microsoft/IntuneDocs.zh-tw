@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
 ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.lasthandoff: 12/15/2016
 
 
 ---
@@ -115,7 +116,7 @@ Intune Azure 預覽使用三個入口網站︰
 - 傳統的 Intune 管理主控台 ([manage.microsoft.com](https://manage.microsoft.com))
 
 第一次在 Azure 登入 Intune 時，Azure 儀表板上可能看不到它。 將 Intune 服務新增至 Azure 儀表板︰
-1. 在儀表板左邊的 Azure 服務清單中選擇 [More services >] (更多服務 >)，然後在搜尋方塊中輸入 Intune。
+1. 在儀表板左邊的 Azure 服務清單中選擇 [More services >]\(更多服務 >)，然後在搜尋方塊中輸入 Intune。
 2. 從清單中選擇 [Intune]，然後選取星號將服務加入服務清單中。<br/> ![從服務清單中選取 Intune 的映像](./media/sign-up/azure-add-intune1.png)
 3. 在服務清單中選擇 [Intune] 開啟 Intune 儀表板。
 
@@ -146,9 +147,4 @@ Intune Azure 預覽使用三個入口網站︰
 - [Multi-Factor Authentication 需求](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 深入了解使用 [Intune 搭配 System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

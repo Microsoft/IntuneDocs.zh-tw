@@ -3,8 +3,8 @@ title: "設定電信費用管理服務"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰設定 Saaswedo 電信費用管理服務，與 Intune 相互整合。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -16,9 +16,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -83,7 +83,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 
 4. 在 [裝置設定] 刀鋒視窗中選擇 [設定]   >  [電信費用管理]。 
 
@@ -141,7 +141,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 您現在已設定 Intune 和 Datalert 服務彼此通訊。 您現在需要將公司付費電話線路新增至 Datalert 主控台，並定義任何行動或漫遊使用情況違規的臨界值和動作。 
 
-若要設定這些項目，請移至 [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) (Microsoft Intune 的 Datalert 設定頁面)，並遵循安裝精靈之 [設定] 索引標籤下的步驟。
+若要設定這些項目，請移至 [Microsoft Intune 的 Datalert 設定頁面](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)，並遵循安裝精靈之 [設定] 索引標籤下的步驟。
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-add-phone-lines-to-datalert-console.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "透過清查了解您的裝置 | Microsoft Intune"
+title: "透過清查了解您的裝置 | Microsoft Docs"
 description: "使用 Intune 以檢視有關您所管理之裝置的硬體資訊。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>在 Microsoft Intune 透過清查了解您的裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 可讓您檢視已註冊裝置以及執行 Intune 用戶端軟體的 Windows 電腦。
 Intune 通常會每 7 天收集一次受管理裝置的清查。 基於此原因，報表可能會延遲顯示任何最近的裝置變更結果，例如變更裝置名稱或可用的儲存空間。
 
@@ -113,9 +118,4 @@ Intune 通常會每 7 天收集一次受管理裝置的清查。 基於此原因
 ### See Also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 -->
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

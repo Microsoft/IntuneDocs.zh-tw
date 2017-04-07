@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -87,7 +88,7 @@ ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>步驟 3：設定商務用 Skype Online 原則
 接著，設定原則來要求只有受管理和相容的裝置才可以存取商務用 Skype Online。 這項原則會儲存在 Azure Active Directory。
 
-1.  在 [Microsoft Intune 管理主控台][](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
+1.  在 [[Microsoft Intune 管理主控台]](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
 
   ![商務用 Skype Online 條件式存取原則頁面的螢幕擷取畫面](./media/conditional_access_SFBPolicy.png)
 
@@ -118,9 +119,4 @@ ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 * **不符合規範的裝置**：禁止這些裝置存取商務用 Skype Online。
 
 * **已向 AAD 註冊且符合規範的裝置**：這些裝置可以存取商務用 Skype Online。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Intune"
+title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Docs"
 description: "Microsoft Intune 中的行動應用程式管理原則可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。 例如，您可以限制受管理應用程式中的剪下、複製及貼上作業，或將應用程式設定成只能在受管理瀏覽器中開啟所有的網頁連結。
 
 行動應用程式管理原則支援：
@@ -71,7 +76,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 -   **步驟 5：** 監視應用程式部署。
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>步驟 1：取得受原則管理的應用程式連結，建立包裝的應用程式，或使用 Intune App SDK 撰寫啟用 MAM 的應用程式
 
 從應用程式市集尋找並記下您所要部署之受原則管理的應用程式的 URL。 例如 iPad 版 Microsoft Word 應用程式的 URL 為 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
 
@@ -135,7 +140,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
     |**需要裝置符合公司原則才能存取**|此設定只允許在裝置未越獄或 Root 時，才能使用應用程式。|
     |**重新檢查存取需求前等候時間 (分鐘)**|在 [逾時] 欄位中，指定在開啟應用程式之後，重新檢查應用程式存取需求之前的時間間隔。|
     |**離線寬限期**|如果裝置已離線，指定重新檢查應用程式存取需求之前的時間間隔。|
-    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法未經 FIPS 140-2 認證。|
+    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法符合 FIPS 140-2 規範且僅限 Samsung KNOX 裝置。|
     |**封鎖螢幕擷取** (僅限 Android 裝置)|此設定指定有人使用此應用程式時，將封鎖裝置的螢幕擷取功能。|
 
 4. 完成之後，請選擇 [儲存原則]。
@@ -191,9 +196,4 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 -   如果原則已部署至裝置，則不會覆寫現有的原則設定。
 
 -   如果原則尚未部署到裝置，而已部署兩個衝突的設定，則會使用裝置內建的預設設定。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

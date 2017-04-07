@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e6e6ba0aae5da25b3f8b07326a2e323c75268ff5
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -50,3 +50,7 @@ ms.lasthandoff: 02/18/2017
 8. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。
 
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
+
+## <a name="sign-the-windows-10-company-portal-app"></a>簽署 Windows 10 公司入口網站應用程式
+若客戶需要下載和側載「Windows 10 公司入口網站」應用程式，您現在可以使用指令碼為您的組織簡化及加速應用程式簽署程序。 若需要下載指令碼及其使用指示，請參閱 TechNet 資源庫上 Windows 10 公司入口網站專用的 [Microsoft Intune 簽署指令碼](https://aka.ms/win10cpscript)。
+

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -33,10 +34,10 @@ ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 |應用程式類型|詳細資料|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|這種類型的應用程式必須支援不需要使用者輸入的無訊息安裝。 應用程式文件應該包括相關的命令列選項，以無訊息方式安裝應用程式 (例如，**/q**)。 您可以在 [Microsoft Windows Installer 工具的命令列參數](https://support.microsoft.com/en-us/kb/227091)中，找到常用的命令列選項。<br><br>應用程式安裝程式需要的任何其他檔案和資料夾，都必須可以在您為應用程式安裝檔指定的位置中找到。<br><br>在大多數情況下，Windows Installer (.msi) 和 Windows Installer 修補 (.msp) 檔案都不需要 Intune 安裝任何命令列引數。 請查看您的應用程式文件。<br><br>如果需要命令列引數，必須以「名稱=值」配對的格式輸入 (例如 TRANSFORMS=custom_transform.mst)。|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|這種類型的應用程式必須支援不需要使用者輸入的無訊息安裝。 應用程式文件應該包括相關的命令列選項，以無訊息方式安裝應用程式 (例如，**/q**)。 您可以在 [Microsoft Windows Installer 工具的命令列參數](https://support.microsoft.com/en-us/kb/227091)中，找到常用的命令列選項。<br><br>應用程式安裝程式需要的任何其他檔案和資料夾，都必須可以在您為應用程式安裝檔指定的位置中找到。<br><br>在大多數情況下，Windows Installer (.msi) 和 Windows Installer 修補 (.msp) 檔案都不需要 Intune 安裝任何命令列引數。 請查看您的應用程式文件。<br><br>如果需要命令列引數，必須以「名稱=值」配對的格式輸入 (例如 TRANSFORMS=custom_transform.mst)。<br><br>此應用程式類型只適用於執行 Intune 軟體用戶端的電腦。|
 |**Android 應用程式套件 (&#42;.apk)**|若要部署 Android 應用程式，必須具備有效的 .apk 套件。|
 |**iOS 應用程式套件 (&#42;.ipa)**|若要部署 iOS 應用程式，必須具備有效的 .ipa 套件。<br><br>.ipa 套件必須已由 Apple 簽署，而且佈建設定檔中的到期日必須有效。 Intune 可散發企業憑證 iOS 應用程式。<br><br>但無法支援所有 Apple 開發人員憑證應用程式。<br><br>您的公司必須註冊 iOS Developer Enterprise Program。<br><br>請確定您的組織防火牆可讓您存取 iOS 佈建與憑證網站。<br><br>您不需要搭配應用程式部署資訊清單檔案 (.plist)。|
-|**Windows Phone 應用程式套件 (&#42;.xap、.appx、.appxbundle)**|若要部署應用程式，您將需要企業行動程式碼簽署憑證。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。|
+|**Windows Phone 應用程式套件 (&#42;.xap、.appx、.appxbundle)**|若要部署應用程式，您將需要企業行動程式碼簽署憑證。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Windows Phone 管理](set-up-windows-device-management-with-microsoft-intune.md)。|
 |**Windows 應用程式套件 (.appx、.appxbundle)**|若要部署應用程式，您將需要企業行動程式碼簽署憑證。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Windows 裝置管理](set-up-windows-device-management-with-microsoft-intune.md)。|
 |**透過 MDM 的 Windows Installer (&#42;.msi)**|您可以使用此應用程式建立以 Windows Installer 為基礎的應用程式，並部署到執行 Windows 10 的已註冊電腦上。 這些電腦可以透過行動裝置管理 (MDM) 來管理。<br /><br />您只能上傳副檔名為 .msi 的單一檔案。<br><br>使用檔案的產品代碼和產品版本來偵測應用程式。<br><br>使用應用程式的預設重新啟動行為。 Intune 無法控制這點。<br><br>針對單一使用者安裝每個使用者的 MSI 封裝。<br><br>針對裝置上的所有使用者安裝每台電腦的 MSI 封裝。<br><br>目前只有裝置上的所有使用者可安裝雙重模式的 MSI 封裝。<br><br>當各版的 MSI 產品代碼相同時，支援應用程式更新。<br>
 所有的軟體安裝程式應用程式類型都會上傳到您的雲端儲存空間。
@@ -64,7 +65,7 @@ ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 ## <a name="cloud-storage-space"></a>雲端儲存空間
 使用軟體安裝程式安裝類型所建立的所有應用程式 (例如商務營運應用程式)，都必須封裝並上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 完整訂閱將包含 20 GB 的儲存空間。
 
-您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請瀏覽 [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) (訂閱管理入口網站)。  否則，請連絡合作夥伴或銷售人員。
+您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請前往 [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) (訂閱管理入口網站)。  否則，請連絡合作夥伴或銷售人員。
 
 雲端儲存空間需求如下：
 
@@ -94,9 +95,4 @@ Windows 10 電腦不需要側載金鑰，即可安裝商務營運應用程式。
 ## <a name="next-steps"></a>後續步驟
 
 您必須先在 Intune 主控台中新增應用程式，才可以部署它們。 您可以新增適用於[註冊的裝置](add-apps-for-mobile-devices-in-microsoft-intune.md)，或[使用 Intune 用戶端軟體所管理的 Windows 電腦](add-apps-for-windows-pcs-in-microsoft-intune.md)的應用程式。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

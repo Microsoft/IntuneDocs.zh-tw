@@ -1,5 +1,5 @@
 ---
-title: "建立裝置相容性原則 | Microsoft Intune"
+title: "建立裝置相容性原則 | Microsoft Docs"
 description: "建立相容性原則以協助保護用來存取公司資料的行動裝置和電腦。"
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置相容性原則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題概述您可用來建立裝置必須遵循的相容性原則步驟，以便視為相容。
 
 ##  <a name="step-1-add-a-new-policy"></a>步驟 1︰加入新原則
@@ -28,7 +33,7 @@ ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
 
   ![Intune 管理主控台中相容性原則頁面的螢幕擷取畫面，顯示頁面頂端功能表中的新增選項](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>步驟 2：組態設定
+##  <a name="step-2--configure-settings"></a>步驟 2：組態設定
 在 [建立原則] 頁面上，視需要啟用設定：
   -   系統安全性設定，例如密碼和加密。
   -   裝置健全狀況設定，如裝置是否為 JB 破解，或者 Windows 裝置健全情況證明服務是否將裝置回報為狀況良好。
@@ -85,9 +90,4 @@ ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
 
 ### <a name="see-also"></a>請參閱
 [裝置合規性原則簡介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

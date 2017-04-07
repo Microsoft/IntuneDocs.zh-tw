@@ -2,7 +2,8 @@
 title: "一般疑難排解提示 | Microsoft Docs"
 description: "有助於解決 Intune 問題的一般資源。"
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article

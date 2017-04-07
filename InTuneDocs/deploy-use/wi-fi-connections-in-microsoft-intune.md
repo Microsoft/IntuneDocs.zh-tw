@@ -1,11 +1,11 @@
 ---
-title: "Wi-Fi 連線 | Microsoft Intune"
+title: "Wi-Fi 連線 | Microsoft Docs"
 description: "使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>將裝置設為連接至您的公司 Wi-Fi 網路
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune Wi-Fi 設定檔，將無線網路設定部署給您組織中的使用者與裝置。 當您部署 Wi-Fi 設定檔時，您的使用者不需要自行設定即可存取公司的 Wi-Fi。
 
@@ -41,15 +45,13 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 -   Android 4.0 及更新版本
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 和更新版本
 
 -   Mac OS X 10.9 及更新版本
 
 針對執行 Windows 8.1 或是 Windows 10 Desktop 或行動裝置版作業系統的裝置，您可以匯入先前匯出至檔案的 Wi-Fi 組態設定檔。 如需詳細資料，請參閱[匯出或匯入 Windows 裝置的 Wi-Fi 設定檔](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices)。
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則]** &gt; **[新增原則]**。
 
@@ -178,9 +180,4 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 ### <a name="see-also"></a>請參閱
 在[預先共用金鑰 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)中，了解如何使用預先共用的金鑰來建立 Wi-Fi 設定檔。
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

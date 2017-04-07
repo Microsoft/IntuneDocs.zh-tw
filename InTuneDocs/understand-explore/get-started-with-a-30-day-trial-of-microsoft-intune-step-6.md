@@ -1,5 +1,5 @@
 ---
-title: "Intune 評估版的其他選項和額外項目 | Microsoft Intune"
+title: "Intune 評估的其他選項和額外項目 | Microsoft Docs"
 description: "說明當您註冊免費 30 天的 Intune 評估版時，所需要了解的警示、通知和報表，以及一般的 Intune 功能"
 keywords: 
 author: lindavr
@@ -12,14 +12,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 評估訂閱的其他選項和額外項目
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>警示、通知和報表
 在 Intune 管理主控台中，**警示**可用來迅速評定組織中受管理裝置的整體健康情況。 您可以設定及自訂警示，讓它們只回報並顯示您所需要的組織相關資訊。 您可以設定啟用或停用警示、設定嚴重性、使用顯示閾值來決定顯示警示之前必須觸發警示事件的頻率，以及設定特定警示類型專屬的設定。
@@ -53,9 +57,4 @@ Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的�
 閱讀[使用 Intune 的常見方式](common-ways-to-use-intune.md)
 
 轉換為[付費訂閱](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

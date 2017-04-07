@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>Intune Azure 預覽版的裝置合規性是什麼？
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-為協助保護公司資料，您必須確認用來存取公司應用程式及資料的裝置符合特定規則。 這些規則可能包括使用 PIN 來存取裝置，以及為裝置中儲存的資料加密。 這組規則稱為**合規性政策**。
+Intune 中的裝置合規性政策定義裝置必須符合才能被 Intune 和 EMS 條件式存取原則視為符合規範的規則與設定。 您也可以使用裝置合規性政策，來監視和修復裝置的合規性問題。 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>如何使用合規性政策？
-合規性政策可與條件式存取原則規配使用，只讓符合合規性政策規則的裝置存取電子郵件和其他服務。
+這些規則包括：
 
-您也可以使用單獨使用合規性政策而不使用條件式存取。
-單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報表列出未加密的裝置數，或是列出越獄或 root 破解的裝置數。 不過，單獨使用合規性政策時，對公司資源沒有存取限制。
+- 使用密碼才能存取裝置
+- 加密
+- 裝置為越獄或取得根權限破解
+- 所需的最低 OS 版本
+- 允許的最高 OS 版本
+- 需要裝置層級不高於 Mobile Threat Defense
 
-您可以對使用者部署合規性政策。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。 如需深入了解行動裝置在部署原則之後原則生效所需的時間，請參閱您裝置上的管理設定和功能。
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>概念
-下列詞彙及概念對於了解如何使用合規性政策十分實用。
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>合規性需求
-合規性需求是一組基本規則，舉例來說，是否需要提供裝置 PIN 碼或加密就可以在合規性政策中指定。
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,30 +67,39 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>傳統 Intune 系統管理主控台與 Azure 入口網站之 Intune 的差異
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>如何使用合規性政策？
 
+### <a name="using-ems-conditional-access"></a>使用 EMS 條件式存取
+合規性政策可與 EMS 條件式存取原則搭配使用，只讓符合一或多條合規性政策規則的裝置存取電子郵件和其他公司資源。
 
-若您一直以來都是使用傳統 Intune 系統管理主控台，在移轉到 Azure 入口網站的新裝置合規性工作流程之前，請留意下列差異︰
+### <a name="not-using-ems-conditional-access"></a>不使用 EMS 條件式存取
+您也可以使用與 EMS 條件式存取無關的裝置合規性政策。
+單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 不過，單獨使用合規性政策時，對公司資源沒有存取限制。
 
+您可以對使用者部署合規性政策。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。 如需深入了解行動裝置在部署原則之後原則生效所需的時間，請參閱您裝置上的管理設定和功能。
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune 傳統管理主控台與Intune Azure 預覽版入口網站
+
+若您一直以來都是使用 Intune 傳統管理主控台，在轉換到 Azure 入口網站的新裝置合規性政策工作流程之前，請留意下列差異︰
 
 -   在 Azure 入口網站中，必須個別為各個支援平台建立合規性政策。 在 Intune 系統管理主控台中，所有支援平台可以共用同一個合規性政策。
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>從 Intune 傳統主控台移轉至 Intune Azure Preview 入口網站
+
+在 [Intune 傳統主控台](https://manage.microsoft.com)中建立的裝置合規性政策不會出現在新的 [Intune Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者做為目標，並可透過 Intune 傳統主控台管理。
+
+如果您想要充分利用 Intune Azure 入口網站中新的裝置合規性相關功能，您需要在 Intune Azure 入口網站本身中建立新的裝置合規性政策。 如果您在 Intune Azure 入口網站中將新的裝置合規性政策指派給已從 Intune 傳統入口網站被指派裝置合規性政策的使用者，則 Intune Azure 入口網站的裝置合規性政策會優先於在 Intune 傳統主控台中建立的裝置合規性政策。
+
 ##  <a name="next-steps"></a>後續步驟
 
-[開始使用合規性政策](get-started-with-device-compliance.md)
+[開始使用裝置合規性政策](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

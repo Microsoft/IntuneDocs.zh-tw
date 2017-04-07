@@ -2,8 +2,8 @@
 title: "新功能封存 | Microsoft Docs"
 description: "封存 Microsoft Intune 新功能公告"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

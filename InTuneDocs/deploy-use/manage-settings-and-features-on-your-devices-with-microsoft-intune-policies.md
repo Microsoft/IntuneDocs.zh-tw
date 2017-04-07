@@ -1,5 +1,5 @@
 ---
-title: "透過原則管理裝置設定 | Microsoft Intune"
+title: "使用原則管理裝置設定 | Microsoft Docs"
 description: "使用 Intune 建立和部署原則，控制您所管理之已註冊裝置上的設定和功能。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>透過 Microsoft Intune 原則管理裝置上的設定和功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune *原則*是控制行動裝置和電腦功能的設定群組。 您可以使用包含建議或自訂設定的範本建立原則，然後將原則部署到裝置或使用者群組。
 
 ## <a name="types-of-policies"></a>原則類型
@@ -208,9 +213,4 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>哪裡可以找到疑難排解原則的說明？
 
 請參閱[Microsoft Intune 的原則疑難排解](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

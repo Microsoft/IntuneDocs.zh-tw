@@ -1,9 +1,9 @@
 ---
-title: "行動裝置的 Exchange 存取規則 | Microsoft Intune"
+title: "行動裝置的 Exchange 存取規則 | Microsoft Docs"
 description: "Exchange ActiveSync 存取規則，允許或封鎖裝置與 EAS 的連線"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="exchange-access-rules-for-mobile-devices"></a>行動裝置的 Exchange 存取規則
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 行動裝置的 Exchange 存取規則決定那些裝置對 Exchange ActiveSync 的存取層級。 這些設定會影響所有行動裝置 (包含未在 Microsoft Intune 中註冊的裝置)。 您可以先定義 [預設規則]，這個預設規則會套用到沒有套用自訂規則的任何行動裝置。
 
 下表包含 Exchange ActiveSync 管理的存取層級：
@@ -53,9 +58,4 @@ ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
 1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [原則] &gt; [Exchange ActiveSync]。
 
 2.  在 [平台例外狀況] 清單中，選擇 [新增規則] 然後建立自訂規則。 選擇 [儲存]。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

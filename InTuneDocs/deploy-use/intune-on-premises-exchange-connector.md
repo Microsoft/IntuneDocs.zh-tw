@@ -1,5 +1,5 @@
 ---
-title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Intune"
+title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Docs"
 description: "使用 Connector 工具啟用 Intune 管理主控台和內部部署 Exchange Server 之間的通訊，以進行 Exchange ActiveSync MDM。"
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
+ms.lasthandoff: 03/21/2017
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 若要設定連線，讓 Microsoft Intune 能夠與主控行動裝置信箱的 Exchange Server 通訊，您必須從 Intune 管理主控台下載並設定 On-Premises Exchange Connector。 Intune 僅支援每個訂用帳戶一個任一類型的 Exchange Connector 連線。
@@ -91,7 +95,7 @@ ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
 
     1. 開啟適用於 Office 365 的 Outlook Web App。
 
-    2. 選擇左上方的 **?** 圖示，然後選取 [關於]。
+    2. 選擇左上方的 **？** 圖示，然後選取 [關於]。
 
     3. 找到 [POP 外部伺服器]  值。
 
@@ -129,9 +133,4 @@ ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
 
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

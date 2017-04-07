@@ -1,11 +1,12 @@
 ---
-title: "適用於 iOS 的 Intune 裝置限制設定 | Intune Azure 預覽版 | Microsoft Docs"
+title: "iOS 的 Intune 裝置限制設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 iOS 裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +51,8 @@ ms.lasthandoff: 02/16/2017
 -     **鍵盤快速鍵 (僅限受監督)** - 允許使用鍵盤快速鍵。
 -     **已配對之 Apple Watch 的手腕偵測** - 啟用時，Apple Watch 就不會在穿戴期間顯示通知。
 - **需要 AirPlay 連出要求配對密碼** - 使用者在使用 AirePlay 將內容串流到其他 Apple 裝置時，需要有成對的密碼。
-- **帳戶修改 (僅限受監督)** - 允許使用者變更帳戶設定，例如電子郵件設定。
+- **帳戶修改 (僅限受監督)** - 封鎖時，這會防止使用者從 iOS 設定應用程式修改裝置特有的設定，例如建立新的裝置帳戶，以及變更使用者名稱或密碼。
+這也適用於可從 iOS 設定應用程式 (例如郵件、連絡人、行事曆、Facebook 和 Twitter) 中存取的設定。 若應用程式的帳戶設定無法從 iOS 設定應用程式 (例如 Microsoft Outlook 應用程式) 加以設定，則這不適用這類應用程式。
 - **Apple Watch 配對 (僅限受監督)** - 允許裝置與 Apple Watch 配對。
 - **修改藍牙 (僅限受監督)** - 封鎖使用者變更藍牙裝置上的設定。
 - **Classroom 應用程式的遠端螢幕觀察 (僅限受監督)** - 從觀察遠端裝置上的畫面來允許或封鎖 Classroom 應用程式。
@@ -220,7 +223,7 @@ ms.lasthandoff: 02/16/2017
 -     **iCloud 照片圖庫** - 如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。    如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。
 -     **受管理應用程式同步至雲端** - 允許您使用 Intune 管理的應用程式將資料同步至使用者的 iCloud 帳戶。
 -     **共享相片串流** - 設定為 [否]，會停用裝置上的 [iCloud 相片共享]。
--     **活動接續** - 允許使用者在另一部 iOS 或 Mac OS X 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
+-     **活動接續** - 允許使用者在另一部 iOS 或 macOS 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
 
 ## <a name="kiosk"></a>Kiosk
 -     **啟用鎖定** - 在受監督的 iOS 裝置上將啟用鎖定啟用。

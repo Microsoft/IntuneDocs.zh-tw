@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
 ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -46,7 +47,7 @@ ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 |原則代理程式|3 MB|**一次**<br /><br />當此內容類型有更新時，可能會進行其他下載。|
 |Remote Assistance via Microsoft Easy Assist 代理程式|6 MB|**一次**<br /><br />當此內容類型有更新時，可能會進行其他下載。|
 |日常用戶端作業|6 MB|**每日**<br /><br />Intune 用戶端會定期與 Intune 服務通訊，以檢查是否有更新和原則，並將用戶端的狀態回報給服務。|
-|Endpoint Protection 惡意程式碼定義更新|不定<br /><br />通常為 40 KB 到 2 MB|**每日**<br /><br />最多一天&3; 次。|
+|Endpoint Protection 惡意程式碼定義更新|不定<br /><br />通常為 40 KB 到 2 MB|**每日**<br /><br />最多一天 3 次。|
 |Endpoint Protection 引擎更新|5 MB|**每月**|
 |軟體更新|不定<br /><br />大小依您部署的更新而定。|**每月**<br /><br />一般情況下，軟體更新會在每個月的第二個星期二發佈。<br /><br />剛完成註冊或部署的電腦在下載先前發行的整組更新時，可能也會佔用較大的網路頻寬。|
 |Service Pack|不定<br /><br />大小會因您部署的每個 Service Pack 而不同。|**不定**<br /><br />視您何時部署 Service Pack 而定。|
@@ -226,14 +227,10 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |DNS 查閱要求|manage.microsoft.com.nsatc.net|80|
 |透過防火牆的 Samsung KNOX Standard 裝置通訊|若要啟用 Samsung KNOX Standard 裝置以透過防火牆來連接 KNOX Standard 伺服器，請依照＜Samsung KNOX Standard 常見問題集＞中的指示執行。||
 |條件式存取的通訊|443|204.79.197.200|
-|文件、說明及支援：</br></br>* livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
+|文件、說明及支援：</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
+
 
 >[!div class="step-by-step"]
 
 >[&larr; **必要條件**](what-to-know-before-you-start-microsoft-intune.md)     [**訂閱** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

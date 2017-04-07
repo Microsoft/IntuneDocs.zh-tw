@@ -1,9 +1,9 @@
 ---
-title: "條款和條件原則設定 | Microsoft Intune"
+title: "條款和條件原則設定 | Microsoft Docs"
 description: "您可以將 Intune 條款和條件部署到使用者群組，以說明註冊、對工作資源的存取，以及使用公司入口網站應用程式，如何影響裝置和使用者。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的條款和條件原則設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 您可以將 Intune 條款和條件部署到使用者群組，以說明註冊、對工作資源的存取以及公司入口網站應用程式如何影響裝置和使用者。 使用者必須先接受這些條款和條件，才可使用公司入口網站來註冊及存取其工作。
 
 您可以建立及部署多個包含不同條款和條件的原則。 您也可以產生相同條款和條件的不同語言版本，再將這些版本部署到適當的群組。
@@ -78,9 +83,4 @@ ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

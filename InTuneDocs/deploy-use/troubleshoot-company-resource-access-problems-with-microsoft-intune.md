@@ -1,5 +1,5 @@
 ---
-title: "公司資源存取問題疑難排解 | Microsoft Intune"
+title: "公司資源存取問題疑難排解 | Microsoft Docs"
 description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 76056f04440b53aa76f833b5fd4f5cf3cbeb88b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 當 Microsoft Intune 動作傳回錯誤碼時，請使用本主題中的錯誤碼和狀態碼來協助您為問題進行疑難排解。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](../troubleshoot/how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
@@ -370,9 +375,4 @@ ms.openlocfilehash: 76056f04440b53aa76f833b5fd4f5cf3cbeb88b5
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](../troubleshoot/how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

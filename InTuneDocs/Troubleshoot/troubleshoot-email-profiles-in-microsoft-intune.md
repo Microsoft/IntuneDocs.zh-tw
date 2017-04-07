@@ -1,11 +1,11 @@
 ---
-title: "電子郵件設定檔疑難排解 |Microsoft Intune"
+title: "電子郵件設定檔疑難排解 | Microsoft Docs"
 description: "電子郵件設定檔問題，以及進行疑難排解並解決它們的方法。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,25 @@ ms.technology:
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 的電子郵件設定檔疑難排解
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本文列出一些電子郵件設定檔問題，並說明如何進行疑難排解及解決問題。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
 
-## <a name="unable-to-send-images-from-email-account"></a>無法從電子郵件帳戶傳送映像
+## <a name="unable-to-send-images-from--email-account"></a>無法從電子郵件帳戶傳送映像
 已自動設定電子郵件帳戶的使用者將無法從他們的裝置傳送圖片或映像。
 未啟用**允許從協力廠商應用程式傳送電子郵件**選項時就會發生這種情況。
 
@@ -61,16 +66,11 @@ ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 由於 Samsung KNOX 不會使用主機名稱識別設定檔，因此建議您不要建立多個電子郵件設定檔以部署到不同主機上的同一個電子郵件地址，避免彼此覆寫。
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>KNOX Standard 裝置的錯誤 0x87D1FDE8
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard 裝置的錯誤 0x87D1FDE8
 **問題**：針對各種 Android 裝置建立及部署 Samsung KNOX Standard 的 Exchange Active Sync 電子郵件設定檔之後，在 [裝置內容] &gt; [原則] 索引標籤中，回報錯誤 **0x87D1FDE8** 或 [補救失敗]。
 
 檢閱 Samsung KNOX 的 EAS 設定檔和來源原則的組態。 不再支援 Samsung Note 同步處理選項，因此不應該在您的設定檔中選取該選項。 請確定裝置有足夠的時間來處理原則，最多 24 小時。
 
 ## <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

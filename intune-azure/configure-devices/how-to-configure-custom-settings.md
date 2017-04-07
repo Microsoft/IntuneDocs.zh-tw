@@ -1,11 +1,12 @@
 ---
-title: "如何設定 Intune 自訂裝置設定 | Intune Azure 預覽版 | Microsoft Docs"
+title: "如何設定 Intune 自訂裝置設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何在管理的裝置上使用 Intune 設定自訂設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 029b5c4c011ddf3ff7dbb06c55b48ef0c18c725e
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -36,7 +38,7 @@ ms.lasthandoff: 02/16/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為自訂檔輸入 [名稱] 及[描述]。

@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-在此主題中，您將深入了解您需要什麼，才可開始建立裝置的合規性政策，以及快速瀏覽您在 Azure 入口網站中可看到之內容及可執行的動作為何。 如果您並不熟悉裝置合規性，可能需要閱讀本主題，以了解何謂裝置合規性，以及可如何於公司中運用它。
+您將在本主題中學習︰ 
+
+- 您需要先準備什麼才能開始建立裝置合規性原則。
+- 快速瀏覽您可以在 Intune Azure 預覽版入口網站上查看的資訊及執行的作業。 
+
+如果您並不熟悉裝置合規性，可能需要閱讀[本主題](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance)，了解何謂裝置合規性，以及如何於組織中運用它。
 
 ##  <a name="pre-requisites"></a>必要條件
-
 
 -   訂閱 Intune
 
 -   訂閱 Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>支援的平台：
-
 
 -   Android
 
@@ -54,8 +55,7 @@ ms.lasthandoff: 02/18/2017
 
 ##  <a name="azure-portal-workflow"></a>Azure 入口網站工作流程
 
-
-以下是如何在 Azure 入口網站中建立及管理裝置合規性的概觀。
+以下概觀說明如何在 Azure 預覽版入口網站中，建立及管理裝置合規性。
 
 <!---### Overview
 

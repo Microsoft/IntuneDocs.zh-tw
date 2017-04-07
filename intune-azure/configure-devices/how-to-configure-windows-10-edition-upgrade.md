@@ -1,22 +1,24 @@
 ---
-title: "以 Intune 設定 Windows 10 版本升級 | Intune Azure 預覽版 | Microsoft Docs"
+title: "使用 Intune 設定 Windows 10 版本升級"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何使用 Intune 升級您管理的 Windows 10 裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,9 +29,10 @@ ms.lasthandoff: 02/16/2017
 
 使用本主題中的資訊，了解如何設定 Windows 10 版本升級設定檔。 此設定檔可讓您自動將執行下列任一 Windows 10 版本的裝置，升級為較新的版本：
 
-- Windows 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+
 
 支援下列升級路徑：
 
@@ -37,6 +40,7 @@ ms.lasthandoff: 02/16/2017
 - 從 Windows 10 Home 到 Windows 10 Education
 - 從 Windows 10 Mobile 到 Windows 10 Mobile Enterprise
 - 從 Windows 10 Holographic Pro 到 Windows 10 Holographic Enterprise
+
 
 ## <a name="before-you-start"></a>開始之前
 在開始將裝置升級至最新版本之前，您需要下列其中一項：
@@ -48,7 +52,7 @@ ms.lasthandoff: 02/16/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為教育升級設定檔輸入 [名稱] 及 [描述]。

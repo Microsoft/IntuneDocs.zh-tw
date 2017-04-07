@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune 的角色型存取控制 (RBAC)"
+title: "Microsoft Intune 的 Intune角色 (RBAC)"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 RBAC 如何讓您控制誰可以執行動作及變更。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Microsoft Intune 的角色型存取控制 (RBAC)
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Microsoft Intune 的 Intune角色 (RBAC)
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 02/23/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗中選擇 [存取控制]。
+3. 在 [Intune] 刀鋒視窗上選擇 [Intune 角色]。
 ![存取控制工作負載](./media/axxess-control.png)
 1. 在**存取控制**工作負載的 [角色] 刀鋒視窗中選擇 [新增自訂]。
 2. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。

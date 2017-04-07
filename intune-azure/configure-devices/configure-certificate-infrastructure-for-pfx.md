@@ -1,11 +1,12 @@
 ---
-title: "為 PKCS 設定 Intune 憑證基礎結構 | Intune Azure 預覽 | Microsoft Docs"
+title: "針對 PKCS 設定 Intune 憑證基礎結構"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何設定基礎結構，以在 Intune 中使用 PKCS 憑證。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -84,12 +86,12 @@ ms.lasthandoff: 02/16/2017
     -   在 [延伸]  索引標籤上，確定 [應用程式原則描述]  包含 [用戶端驗證] 。
 
         > [!IMPORTANT]
-        > 若為 iOS 和 Mac OS X 憑證範本，請在 [延伸模組] 索引標籤上，編輯 [金鑰使用方法]，並確認未選取 [簽章是原件證明]。
+        > 若為 iOS 和 macOS 憑證範本，請在 [延伸模組] 索引標籤上，編輯 [金鑰使用方法]，並確認未選取 [簽章是原件證明]。
 
 2.  檢閱範本 [一般]  索引標籤上的 [有效期間]  。 根據預設，Intune 使用範本中所設定的值。 不過，您可以選擇設定 CA 以允許要求者指定不同的值，然後您可以從 Intune 管理主控台內設定該值。 如果您想要一律使用範本中的值，請略過此步驟中的其餘部分。
 
     > [!IMPORTANT]
-    > iOS 和 Mac OS X 平台一律會使用在範本中設定的值，而不論您進行的其他設定。
+    > iOS 和 macOS 一律會使用範本中的值，而不管您所做的其他組態設定。
 
     若要設定 CA 以允許要求者指定有效期間，請在 CA 上執行下列命令：
 

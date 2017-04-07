@@ -1,5 +1,6 @@
 ---
-title: "匯入 Windows 8.1 及更新版本的 Wi-Fi 設定 | Intune Azure 預覽版 | Microsoft Docs"
+title: "針對 Windows 8.1 及更新版本匯入 Wi-Fi 設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰如何設定將 Windows 的 Wi-Fi 設定匯入 Intune Wi-Fi 設定檔。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 9f98a786e97afbb93628609808637def0a7e8fe8
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,7 +41,7 @@ ms.lasthandoff: 02/16/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在 [設定檔] 刀鋒視窗中，按一下 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為裝置限制設定檔輸入 [名稱] 及 [描述]。

@@ -1,5 +1,6 @@
 ---
-title: "Samsung KNOX 的 Intune 原則允許/封鎖應用程式 | Intune Azure 預覽版 | Microsoft Docs"
+title: "Samsung KNOX 的 Intune 原則允許/封鎖應用程式"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版：建立自訂定檔可允許及封鎖 Samsung KNOX Standard 裝置的應用程式。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -33,7 +35,7 @@ ms.lasthandoff: 02/16/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 2. 在設定檔刀鋒視窗清單中，選擇 [建立設定檔]。
 3. 在 [建立設定檔] 刀鋒視窗中，為此裝置設定檔輸入 [名稱] 以及選用 [描述]。

@@ -2,8 +2,8 @@
 title: "使用遠端抹除以協助保護資料 | Microsoft Docs"
 description: "Intune 提供選擇性抹除和完整抹除功能，以移除公司機密資料，以及移除許多公司資源的存取權。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
 ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -170,9 +171,4 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (裝置資料管理的 Windows 選擇性抹除)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,22 +1,26 @@
 ---
-title: "側載 Windows 和 Windows Phone 的應用程式 |Microsoft Intune"
+title: "側載 Windows 和 Windows Phone 的應用程式 | Microsoft Docs"
 description: "了解如何簽署企業營運應用程式，讓您可以使用 Intune 部署它們。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
+ms.lasthandoff: 03/15/2017
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 身為 Intune 系統管理員，您可以將企業營運 (LOB) 應用程式部署到 Windows 和 Windows 10 行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 或.xap 應用程式部署到 Windows 10 和 Windows 10 行動裝置版的裝置，或將任何 LOB 應用程式部署到 Windows 8.1 或 Windows Phone 8.1 裝置，您必須取得 **Symantec 企業行動程式碼簽署憑證**。 這些適用於個別 Windows 裝置的應用程式只信任 Symantec 憑證。 您可以針對 Windows 10 應用程式和「通用」應用程式，使用自己的憑證授權單位。 您必須擁有此憑證，才能執行下列動作：
 
@@ -132,7 +136,7 @@ ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
 
 1.  簽署企業營運應用程式的最新版本。
 
-2.  開啟 Intune 管理主控台 ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com))，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
+2.  [開啟 Intune 管理主控台](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) ，並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 
@@ -140,8 +144,59 @@ ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
 
 5.  使用新的憑證簽署所有新增及更新的企業營運應用程式。 現有的應用程式無須重新簽署，也無須重新部署。
 
+## <a name="manually-deploy-windows-10-company-portal-app"></a>手動部署 Windows 10 公司入口網站應用程式
+即使您還沒有整合 Intune 與商務用 Windows 市集，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。
 
+ > [!NOTE]
+ > 這個選項將需要在每次應用程式發行更新時，部署手動更新。
 
-<!--HONumber=Dec16_HO2-->
+1. 在[商務用 Windows 市集](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
+2. 取得應用程式之後，在 [詳細目錄] 頁面中選取該應用程式。  
+3. 在 [平台] 選取 [Windows 10 所有裝置]，然後選取適當的 [架構] 並下載。 此應用程式不需要應用程式授權檔案。
+![Windows 10 所有裝置和供下載之 X86 架構套件詳細資料的圖片](../media/Win10CP-all-devices.png)
+4. 下載「必要架構」底下的所有套件。 x86、x64 及 ARM 架構都要執行這個步驟 – 所以總共 9 個套件，如下圖所示。
 
+![要下載之相依性檔案的圖片 ](../media/Win10CP-dependent-files.png)
+5. 將公司入口網站應用程式上傳至 Intune 之前，先建立資料夾 (例如 C:&#92;Company Portal)，並以如下結構放置套件︰
+  1. 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 Dependencies 子資料夾。  
+  ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](../media/Win10CP-Dependencies-save.png)
+  2. 將 9 個相依性套件放在 Dependencies 資料夾中。  
+  如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
+  ![在應用程式資料夾中找不到此軟體安裝程式的 Windows 應用程式相依性。 您可以繼續建立並部署此應用程式，但必須等到提供遺失的 Windows 應用程式相依性之後，它才能執行。](../media/Win10CP-error-message.png)
+6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其部署為必要的應用程式。  
+
+有關 Intune 如何處理通用應用程式的相依性，詳細資訊請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>如果使用者已從市集安裝較舊的公司入口網站應用程式，我如何能更新他們裝置上的公司入口網站應用程式？
+如果您的使用者已經從市集安裝 Windows 8.1 或 Windows Phone 8.1 公司入口網站應用程式，則他們的裝置應該會自動更新到新版本，您或您的使用者不需要採取任何動作。 如果更新沒發生，請使用者確認他們已在其裝置上啟用自動更新市集應用程式。   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我側載的 Windows 8.1 公司入口網站應用程式升級至 Windows 10 公司入口網站應用程式？
+我們建議的移轉方式是刪除 Windows 8.1 公司入口網站應用程式的部署，做法是將部署動作設定為「解除安裝」。 完成後，可以使用任何上述選項部署 Windows 10 公司入口網站應用程式。  
+
+如果您需要側載應用程式，且您部署 Windows 8.1 公司入口網站時未使用 Symantec 憑證簽署它，請遵循之前「透過 Intune 直接部署」一節所述步驟完成升級。
+
+如果您需要側載應用程式，且您已使用 Symantec 程式碼簽署憑證簽署及部署 Windows 8.1 公司入口網站，請遵循下一節的步驟。  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我已簽署及側載的 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式，升級至 Windows 10 公司入口網站應用程式？
+我們建議的移轉方式是刪除 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式的現有部署，做法是將部署動作設定為「解除安裝」。 完成後，便可以正常部署 Windows 10 公司入口網站應用程式。  
+
+否則，必須適當地更新及簽署 Windows 10 公司入口網站應用程式，以確保遵循升級方式。  
+
+如果是以這種方式簽署及部署 Windows 10 公司入口網站應用程式，每當市集內有新的應用程式更新時，您就必須為每個應用程式重複此程序。 當市集更新時，應用程式不會自動更新。  
+
+以下說明如何以此方式簽署和部署應用程式︰
+
+1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載 Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請前往 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
+2. 從商務用 Windows 市集下載 Windows 10 公司入口網站應用程式，詳如前述。  
+3. 搭配輸入參數執行詳載於指令碼標頭內的指令碼，簽署 Windows 10 公司入口網站應用程式 (摘錄於下)。 相依性不需要傳遞至指令碼。 這些只有在將應用程式上傳至 Intune 管理主控台時才需要。
+
+|參數 | 說明|
+| ------------- | ------------- |
+|InputWin10AppxBundle |來源 appxbundle 檔案所在路徑。 |
+|OutputWin10AppxBundle |已簽署之 appxbundle 檔案的輸出路徑。  Win81Appx Windows 8.1 或 Windows Phone 8.1 公司入口網站 (.APPX) 檔案所在路徑。|
+|PfxFilePath |Symantec 企業行動程式碼簽署憑證 (.PFX) 的路徑。 |
+|PfxPassword| Symantec 企業行動程式碼簽署憑證的密碼。 |
+|PublisherId |企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。|
+|SdkPath | 適用於 Windows 10 之 Windows SDK 的根資料夾路徑。 這個引數是選擇性，且預設值為 ${env:ProgramFiles(x86)}\Windows Kits\10|
+指令碼執行完成時，會輸出簽署版的 Windows 10 公司入口網站應用程式。 然後，您可以透過 Intune 將簽署版的應用程式部署為 LOB 應用程式，這會將目前部署的版本升級至此新應用程式。  
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
 
 -   **在註冊協力廠商 MDM 解決方案中註冊：**此類別中的裝置通常是公司擁有的裝置。
 
-  > [!NOTE]
-  > 不建議您使用應用程式保護原則搭配協力廠商行動裝置應用程式管理或安全容器解決方案。
+      > [!NOTE]
+      > 不建議您使用應用程式保護原則搭配協力廠商行動裝置應用程式管理或安全容器解決方案。
 
 -   **未在任何 MDM 解決方案中註冊︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
 
@@ -133,9 +134,4 @@ MDM 解決方案：
 - [準備好設定應用程式保護原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [使用 Microsoft Intune 建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
