@@ -42,7 +42,7 @@ ms.lasthandoff: 02/14/2017
 
     ![顯示 [條件式存取] 區段並反白顯示 [Exchange Online] 選項之 [設定] 刀鋒視窗的螢幕擷取畫面](../media/MAM-conditional-access-1.png)
 
-6. 在 [允許的應用程式] 刀鋒視窗上，選擇 [Allow apps that support Intune app policies] (允許支援 Intune 應用程式原則的應用程式) 選項，只允許 Intune 應用程式保護原則支援的應用程式能夠存取 Exchange Online。 當您選取此選項時，會顯示支援的應用程式清單。
+6. 在 [允許的應用程式] 刀鋒視窗上，選擇 [Allow apps that support Intune app policies] \(允許支援 Intune 應用程式原則的應用程式) 選項，只允許 Intune 應用程式保護原則支援的應用程式能夠存取 Exchange Online。 當您選取此選項時，會顯示支援的應用程式清單。
 
     >[!NOTE]
     >所有 Exchange Active Sync 郵件用戶端 (包括 iOS 和 Android 上連線到 Exchange Online 的內建郵件用戶端) 將無法傳送或接收電子郵件。 相反地，使用者會收到一封電子郵件，通知他們需要使用 Outlook 郵件應用程式。
