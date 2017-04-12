@@ -131,7 +131,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="assign-dep-devices-for-management"></a>指派要管理的 DEP 裝置
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com),並使用公司的 Apple ID 登入。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com) ,並使用公司的 Apple ID 登入。
 
 2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。
 
