@@ -31,17 +31,16 @@
 ### [設定 MDM 授權單位](enroll-devices/set-mdm-authority.md)
 ## 規劃和設計
 ### [取得 Apple MDM Push Certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [取得 Apple DEP 權杖](enroll-devices/get-apple-dep-token.md)
 ### [選擇註冊 iOS 裝置的方式](enroll-devices/choose-ios-enrollment-method.md)
 ## 作法
 ### [將授權指派給使用者](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [註冊 Android 裝置](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### 註冊 iOS 裝置
-#### [使用設定助理來註冊 iOS 裝置](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [使用直接註冊來註冊 iOS 裝置](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - 設定助理](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - 直接註冊](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [新增 Apple Configurator 序號](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [使用裝置註冊計劃註冊 iOS 裝置](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [使用裝置註冊管理員註冊裝置](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [裝置註冊管理員](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [註冊 macOS 裝置](enroll-devices/enroll-macos-devices.md)
 ### [註冊 Windows 裝置](enroll-devices/enroll-windows-devices.md)
 ### 管理裝置註冊
