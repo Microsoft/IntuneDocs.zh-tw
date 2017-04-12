@@ -24,7 +24,6 @@
 ### [自訂公司入口網站](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [註冊裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](get-started/post-configuration-tasks.md)
-## [移轉至 Intune](get-started/migrate-to-intune.md)
 ## 後續步驟
 ### [防止公司資料從 Office 365 行動應用程式外洩](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [使用資料加密保護公司資料](get-started/protect-data-encryption.md)
