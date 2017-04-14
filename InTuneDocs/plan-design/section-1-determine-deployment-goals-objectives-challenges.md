@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -92,7 +92,7 @@ ms.lasthandoff: 12/30/2016
 <br>
     -   **緩和措施：**在您興奮地一頭栽進專案時，請確定您擁有明確定義的目的與目標。 將這些目標納入所有認知和訓練活動，有助於確保使用者了解組織選擇 Intune 的原因。
 
-## <a name="next-section"></a>下一節
+## <a name="next-steps"></a>後續步驟
 
 現在，您已經識別部署目的、目標和潛在的挑戰，即可前往下一節：[識別使用案例](section-2-identify-use-case-scenarios.md)。
 

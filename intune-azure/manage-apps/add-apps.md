@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 296e7db9be18323b44cc79592c981f5d7241602f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
+ms.lasthandoff: 04/11/2017
 
 ---
 
@@ -34,9 +34,7 @@ Intune 允許新增及指派下列應用程式類型︰
 
 以下是支援的平台。 如需如何新增每種應用程式類型的詳細資訊，請按一下下列其中一個主題。
 
-- [Android 企業營運應用程式](/intune-azure/manage-apps/android-lob-app)
 - [Android 市集應用程式](/intune-azure/manage-apps/android-store-app)
-- [iOS 企業營運應用程式](/intune-azure/manage-apps/ios-lob-app)
 - [iOS 市集應用程式](/intune-azure/manage-apps/ios-store-app)
 - [Web 應用程式 (適用於所有平台)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 市集應用程式](/intune-azure/manage-apps/windows-phone-8-1-store-app)
