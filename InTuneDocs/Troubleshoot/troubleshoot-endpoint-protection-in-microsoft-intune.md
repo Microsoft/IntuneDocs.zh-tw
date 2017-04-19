@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
 ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-請使用本節中的資訊，協助您解決使用 Microsoft Intune Endpoint Protection 時的問題。 您也可以檢閱有關如何[對 Windows&10; 中的 Windows Defender 進行疑難排解](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10)的資訊。
+請使用本節中的資訊，協助您解決使用 Microsoft Intune Endpoint Protection 時的問題。 您也可以檢閱有關如何[對 Windows 10 中的 Windows Defender 進行疑難排解](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10)的資訊。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
@@ -49,9 +50,4 @@ ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
