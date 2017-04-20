@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 - [iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows 電腦和膝上型電腦](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 行動裝置版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 行動裝置版和 Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows 電腦和膝上型電腦](manage-windows-pcs-with-microsoft-intune.md) (Intune 用戶端軟體)
 
 您也可以啟用[屬公司擁有的裝置註冊](manage-corporate-owned-devices.md)。
 
@@ -170,7 +170,7 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 連絡 Microsoft 支援服務以重設 MDM 授權單位之前，請先完成這些步驟。
 
 - 從 Intune 管理主控台中淘汰所有裝置。 請勿嘗試從裝置本身淘汰裝置。 
-- 刪除 Service To Service Connector (位於 [管理] > [行動裝置管理] > [Microsoft Exchange])，或如果您已設定，請停用 Exchange Connector。 
+- 刪除 Service To Service Connector (位於 [管理] > [行動裝置管理] > [Microsoft Exchange])，或如果您已設定，請停用 Exchange Connector。
 - 從 [管理] > [裝置註冊管理員] 移除裝置註冊管理員角色。
 - 在 [管理] > [行動裝置管理] > [裝置群組對應] 中關閉裝置群組對應。
 - 從 [管理] > [行動裝置管理] > [Windows] > [側載金鑰] 刪除側載金鑰。
@@ -187,7 +187,7 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 - 從 Intune 使用者群組移除所有使用者。 將 Intune 訂閱指向空的使用者集合，或從目標集合移除所有使用者。  確認 CloudUserSync.log 中已移除使用者。 
 - 取消核取 iOS 平台，以清除 APNs 憑證。
 - 刪除針對 MDM 裝置的所有已發佈應用程式。
-- 刪除針對 MDM 裝置的所有原則。 
+- 刪除針對 MDM 裝置的所有原則。
 - 從 Configuration Manager 主控台移除 Windows Intune 連接器 (僅適用於 R2 SP1 或以下版本)。
 -以滑鼠右鍵按一下訂閱，然後選取 [刪除]，移除 Intune 訂閱。
 - 重新啟動 SMS Executive 服務。
@@ -196,18 +196,18 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>將 MDM 授權單位從 Office 365 重設為 Configuration Manager
 
 1. 瀏覽至 [https://protection.office.com](https://protection.office.com)。
-2. 選取 [安全性原則] 索引標籤，然後選取 [裝置管理]。 
+2. 選取 [安全性原則] 索引標籤，然後選取 [裝置管理]。
 3. 藉由選擇 [選擇性抹除] 淘汰所有裝置。 請勿嘗試從裝置本身淘汰裝置。 如果已停用選擇性抹除，則不需要進行其他動作。
-4. 選取 [安全性原則] 索引標籤，然後選取 [裝置安全性原則]。 
+4. 選取 [安全性原則] 索引標籤，然後選取 [裝置安全性原則]。
 5. 針對所有現有的原則選取 [刪除]。 如果原則處於暫止狀態，則不需要進行其他動作。
 
 >[!NOTE]
->IOS APsN 憑證無法刪除，而且仍然附加到帳戶。 
+>IOS APsN 憑證無法刪除，而且仍然附加到帳戶。
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>MDM 授權單位重設的後續步驟
 
-一旦 Microsoft 支援服務驗證適用檢查清單上的項目，重新設定 MDM 授權單位可能需要多達三個工作天，但通常一天內就會發生。 
+一旦 Microsoft 支援服務驗證適用檢查清單上的項目，重新設定 MDM 授權單位可能需要多達三個工作天，但通常一天內就會發生。
 
 >[!IMPORTANT]
->請勿嘗試設定您的訂閱，直到 Microsoft 支援服務確認重設已順利完成！ 過早設定可能會造成損毀及/或影響您使用 Intune 服務。 
+>請勿嘗試設定您的訂閱，直到 Microsoft 支援服務確認重設已順利完成！ 過早設定可能會造成損毀及/或影響您使用 Intune 服務。
 

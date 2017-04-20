@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 02/04/2017
     以 Intune 系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，移至 **[管理]** &gt; **[行動裝置管理]** &gt; **[Android for Work]**，然後按一下 **[設定]** 開啟 Google Play 的 Android for Work 網站。 這會在瀏覽器中以新的索引標籤開啟。
 
 3. **登入 Google**<br>
-   在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這可能是管理 Intune 之所有系統管理員所共用的 Google 帳戶。 這是您的組織在 Play for Work 主控台中管理及發行應用程式所使用的 Google 帳戶。
+   在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是您組織的 IT 系統管理員用來在 Play for Work 主控台中管理及發行應用程式所共用的 Google 帳戶。
 
 4. **提供組織詳細資料**<br>
    提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 *Microsoft Intune*。 同意 Android for Work 合約，然後按一下 [確認]。 您的要求將會被處理。
@@ -43,12 +43,12 @@ ms.lasthandoff: 02/04/2017
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 註冊設定
    只有特定 Android 裝置才支援 Android for Work。 請參閱 Google 的[使用 Android for Work 的必備條件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。  支援 Android for Work 的所有裝置也會支援傳統 Android 管理。  Intune 可讓您指定應該如何管理支援 Android for Work 的裝置：
 
-   - **將所有裝置當做 Android 來管理** - (已停用) 所有 Android 裝置 (包括支援 Android for Work 的裝置) 將會註冊為傳統 Android 裝置。
-   - **將支援的裝置當做 Android for Work 來管理** - (已啟用) 所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置會註冊為傳統 Android 裝置。
-   - **只為這些使用者群組中的使用者將支援的裝置當做 Android for Work 來管理** - (測試中) 可讓您將 Android for Work 管理的目標設為有限的一組使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。
+   - **將所有裝置作為 Android 管理** - 所有 Android 裝置 (包括支援 Android for Work 的裝置) 將會註冊為傳統 Android 裝置。
+   - **將受支援的裝置作為 Android for Work 管理** - 所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置會註冊為傳統 Android 裝置。
+   - **只為這些使用者群組中的使用者將支援的裝置當做 Android for Work 來管理** - 可讓您將 Android for Work 管理的目標設為有限的一組使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。 這在 Android for Work 試驗期間會很有用。
 
 ## <a name="next-steps-for-android-for-work"></a>Android for Work 的後續步驟
-設定 Android for Work 繫結和設定之後，您可以執行下列動作進行管理：
+設定 Android for Work 繫結和設定之後，您可以執行下列動作：
 - [部署 Android for Work 應用程式](android-for-work-apps.md)
 - [新增 Android for Work 設定原則](android-for-work-policy-settings-in-microsoft-intune.md)
 
