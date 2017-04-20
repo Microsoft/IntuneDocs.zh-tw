@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 iOS App Store 可讓您購買多個想要在公司內執行的應用程式授權。 這可協助您降低追蹤多個所購買應用程式複本的管理開銷。
 
 Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經使用了多少個授權，並避免您安裝超過擁有數目的應用程式複本，來協助您管理透過此程式購買的應用程式。
-
-> [!Important]
-> 目前，Intune 會指派 iOS 企業大量採購方案 (VPP) 應用程式授權給使用者，而不是裝置。 因此，使用者必須輸入其 Apple ID 密碼，才能安裝應用程式。
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理大量採購的 iOS 裝置應用程式
 您可透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 這項作業包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
@@ -71,8 +68,8 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 1. 在 [管理應用程式] 工作負載中，選擇 [管理]  > [授權的應用程式]。
 2. 在應用程式清單刀鋒視窗中，選擇您要指派的應用程式，然後選擇 '**...**' > [指派群組]。
 3. 在 <*應用程式名稱*> - [指派的群組] 刀鋒視窗中，選擇 [管理]  > [指派的群組]。
-4. 選擇 [指派群組]，然後，在 [選取群組] 刀鋒視窗中，選擇要指派該應用程式的 Azure AD 群組。
-您必須選擇指派動作**必要**。 目前不支援可用的安裝。
+4. 選擇 [指派群組]，然後在 [選取群組] 刀鋒視窗中，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
+您必須選擇指派動作**必要**。 目前不支援可用的安裝。 此外，在 2017 年 1 月之後建立的新租用戶將可以指派給裝置群組。 如果您的租用戶在這之前建立，而無法選擇將 VPP 應用程式指派給裝置群組，請連絡 Intune 支援。
 5. 完成之後，請選擇 [儲存]。
 
 請參閱[如何監視應用程式](monitor-apps.md)，以取得協助您監視應用程式指派的資訊。

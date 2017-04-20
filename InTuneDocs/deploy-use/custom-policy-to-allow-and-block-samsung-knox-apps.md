@@ -15,9 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/10/2016
     - **設定描述。** 輸入選擇性描述，例如 「被封鎖而無法執行的應用程式清單」。
     -     **資料類型。** 在下拉式清單中選擇 [字串]。
     -     **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+    -     **值。** 輸入您想要封鎖的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
     針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
 

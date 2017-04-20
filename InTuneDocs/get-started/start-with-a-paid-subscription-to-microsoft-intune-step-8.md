@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/15/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本主題描述 Intune 系統管理員如何啟用行動裝置註冊。 如需在手機上使用 Intune 的協助，請參閱 [Using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。 
+本主題描述 Intune 系統管理員如何啟用行動裝置註冊。 如需在手機上使用 Intune 的協助，請參閱 [Using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。
 
 若要使用 Intune 設定行動裝置管理，您必須先設定*行動裝置管理授權單位*，以識別可管理與您帳戶相關聯之裝置的服務。 本指南假設您將使用 Intune 服務，而不是 System Center Configuration Manager。 一旦設定 MDM 授權單位之後，您就能啟用裝置平台的管理，並使用公司入口網站應用程式註冊您的裝置。
 
@@ -50,9 +50,9 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 
 針對您想要管理的裝置平台啟用裝置註冊。 依您的平台而異，需要使用不同的需求：
 
--  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Windows 電腦](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Windows 10 行動裝置版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Window 10 及 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window 電腦](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune 軟體用戶端)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 註冊啟用之後，使用者可以將公司入口網站應用程式下載至其裝置，並完成裝置註冊程序。
@@ -61,13 +61,12 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 您也可以啟用各種不同的[屬公司擁有的裝置註冊](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices)案例，包括：
 - [Apple 裝置註冊方案](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Apple Configurator 設定助理註冊](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator 設定助理註冊](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator 直接註冊](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [裝置註冊管理員](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>後續步驟
 恭喜！ 您剛完成 *Intune 快速入門指南*的最後一個步驟。 在您完成初始設定之後，您可以考慮啟用其他 MDM 功能。
 
 >[!div class="step-by-step"]
-
 >[&larr; **註冊裝置**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**設定後的工作** &rarr;](.\post-configuration-tasks.md)  
 

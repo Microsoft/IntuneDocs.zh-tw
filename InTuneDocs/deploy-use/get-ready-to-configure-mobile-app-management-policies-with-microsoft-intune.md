@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -57,9 +58,10 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 ##  <a name="supported-platforms"></a>支援的平台
 - iOS 8.1 或更新版本
 - Android 4 或更新版本
+- Windows 10
 
 >[!NOTE]
->Windows 裝置不支援這些應用程式保護原則。 不過，當您將 Windows 10 裝置註冊 Intune 時，即可使用 Windows 資訊保護，以提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+>從 1703 版開始，可在不含註冊案例的 MAM 中定義 Windows 10 裝置的應用程式保護原則。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>支援的應用程式
 * **Microsoft 應用程式︰**這些應用程式已內建 Intune App SDK，而在您套用應用程式保護原則之前將不需要進一步處理。
@@ -106,9 +108,4 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 
 ## <a name="next-steps"></a>後續步驟
 [使用 Microsoft Intune 建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

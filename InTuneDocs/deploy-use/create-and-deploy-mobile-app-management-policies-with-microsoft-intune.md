@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
     ![顯示已設定的應用程式和設定的 [新增原則] 刀鋒視窗的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。 若要部署原則，請參閱下列章節＜將原則部署給使用者＞。
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 > -   您將這兩個原則與同一個應用程式建立關聯。
 > -   會優先使用您從 Azure 主控台建立的原則並允許複製。
 > -   不過，Intune 主控台中的狀態和報表會不正確地表示該複製遭到封鎖。
+
+## <a name="line-of-business-lob-apps-optional"></a>企業營運 (LOB) 應用程式 (選用)
+
+從 Intune 1703 版開始，您可以選擇在建立新的應用程式保護原則時，通常會將 LOB 應用程式新增至 Intune。 這可讓您選擇使用 MAM SDK 來定義 LOB 應用程式的應用程式保護原則，而不需要完整的應用程式部署權限。
+
+> [!TIP] 
+> 您也可以在進行 [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) 工作流程時，將 LOB 應用程式新增至 Intune。
+
+> [!IMPORTANT]
+> 如果使用者只有部署 MAM 應用程式的特定權限，而沒有完整的應用程式部署權限 (可讓他們在 Intune 中部署任何應用程式)，則不會進行 Intune SDK 工作流程，但仍然可以透過 MAM 應用程式保護原則建立工作流程新增其 LOB 應用程式。
+
+### <a name="to-add-lob-apps-ios-and-android"></a>新增 LOB 應用程式 (iOS 和 Android)
+
+1.  在 [新增原則] 刀鋒視窗中，選擇 [設定應用程式] 以開啟 [應用程式] 刀鋒視窗。
+
+    ![MAM 的 [新增原則] 刀鋒視窗](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] (適用於 iOS) 或 [套件識別碼] (適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
+
+    ![MAM 的 [更多應用程式] 刀鋒視窗](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>新增 LOB 應用程式 (Windows)
+
+> [!IMPORTANT] 
+> 當您建立新的應用程式保護原則時，您必須從 [平台] 下拉式清單選取 [Windows 10]。
+
+1.  在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps] (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps] (豁免應用程式) 刀鋒視窗。
+
+    > [!NOTE]
+    > 
+    - **允許的應用程式**︰這些應用程式是必須遵守此原則的應用程式。
+    - **豁免應用程式**︰這些應用程式不會套用此原則，而且可以存取公司資料，而沒有任何限制。
+<br></br>
+2. 在 [允許的應用程式] 或 [Exempt apps] (豁免應用程式) 刀鋒視窗中，按一下 [新增應用程式]。 您可以新增建議的 Microsoft 應用程式、市集應用程式或傳統型應用程式。
+
+    a.  **建議的應用程式︰**可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
+
+    b。  **市集應用程式︰**系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
+
+    c.  **Windows 傳統型應用程式︰**系統管理員可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 exe、dll 等)。
 
 ## <a name="deploy-a-policy-to-users"></a>將原則部署給使用者
 
@@ -181,9 +220,4 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 ### <a name="see-also"></a>請參閱
 * [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
