@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-您可以根據由 Skycure (一個與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估是根據收集自執行 Skycure 裝置的遙測，包括︰
+您可以根據由 Skycure (一個與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估以收集自執行 Skycure 裝置的遙測作為基礎，包括︰
 
 -   實體防禦
 
