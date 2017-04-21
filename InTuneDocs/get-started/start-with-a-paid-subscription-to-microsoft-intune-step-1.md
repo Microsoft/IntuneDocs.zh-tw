@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 ## <a name="post-sign-up-considerations"></a>註冊後的考量
 如果您註冊新的訂用帳戶，則在您於註冊過程中提供的電子郵件位址上，您會收到包含帳戶資訊的電子郵件訊息。 本電子郵件可確認您的訂閱是使用中的狀態。
 
-完成註冊程序後，將會導向另一個頁面，讓您使用 Office 365 系統管理中心來新增使用者和指派授權給他們。 如果您只會有使用預設 onmicrosoft.com 網域名稱的雲端式帳戶，則您現在可以繼續加入使用者並指派授權。 不過，如果您將使用組織的自訂網域名稱，或想要從內部部署 Active Directory 同步處理使用者帳戶資訊，則您可以關閉該瀏覽器視窗，並前往本快速入門指南的步驟 2。 您也可以深入了解 [Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+完成註冊程序後，將會導向另一個頁面，讓您使用 Office 365 系統管理中心來新增使用者和指派授權給他們。 如果您只會有使用預設 onmicrosoft.com 網域名稱的雲端式帳戶，則您現在可以繼續加入使用者並指派授權。 不過，如果您將使用組織的自訂網域名稱，或想要從內部部署 Active Directory 同步處理使用者帳戶資訊，則您可以關閉該瀏覽器視窗，並前往本快速入門指南的步驟 2。 您也可以深入了解 [Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!TIP]
 > 下一次登入 Intune 時，您將自動導向至 Intune 管理主控台。
@@ -53,9 +54,4 @@ ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 >[!div class="step-by-step"]
 
 >[&larr; **必要條件**](.\what-to-know-before-you-start-microsoft-intune.md)     [**網域設定** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/21/2017
 
 -   具有**包含 Exchange Online (例如 E3) 的 Office 365 訂閱**，而且使用者必須獲得 Exchange Online 的授權。
 
-- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者必須獲得 EMS 或 Azure AD 的授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者必須獲得 EMS 或 Azure AD 的授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 -  考慮設定選擇性 **Intune Service to Service Connector**，它可將 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 連接至 Exchange Online，並協助您透過 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 主控台管理裝置資訊。 使用合規性政策或條件式存取原則時，您不需要使用連接器，但必須執行報告，以協助評估條件式存取的影響。
     -  深入了解 [Intune Service To Service Connector](intune-service-to-service-exchange-connector.md)。
@@ -83,7 +83,7 @@ ms.lasthandoff: 03/21/2017
 **新式驗證**可將 Active Directory 驗證程式庫 (ADAL) 型登入功能整合到 Office 用戶端中。
 
 -   ADAL 型驗證可讓 Office 用戶端透過瀏覽器進行驗證 (又稱為被動驗證)。 系統會將使用者導向登入網頁，以便進行驗證。
--   這個新的登入方法可啟用**多重要素驗證**和**憑證式驗證**這類更高的安全性功能。 如需詳細資訊，請參閱[新式驗證的運作方式](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)。 您可以設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 [案例 3：除了瀏覽器架構的應用程式以外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)提供詳細指示。
+-   這個新的登入方法可啟用**多重要素驗證**和**憑證式驗證**這類更高的安全性功能。 如需詳細資訊，請參閱[新式驗證的運作方式](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)。 您可以設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 [案例 3：除了瀏覽器架構的應用程式以外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)提供詳細指示。
 
 您可以限制使用者，使其無法透過 **iOS** 和 **Android** 裝置的瀏覽器，存取 Exchange Online 上的 **Outlook Web Access (OWA)**。 只允許從符合規範裝置上的支援瀏覽器存取︰
 
@@ -123,7 +123,7 @@ ms.lasthandoff: 03/21/2017
   >[!NOTE]
     >執行 Intune 電腦用戶端的電腦不支援條件式存取。
 
--   [必須啟用 Office 365 新式驗證](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，並且具備所有最新的 Office 更新。
+-   [必須啟用 Office 365 新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，並且具備所有最新的 Office 更新。
 
     新式驗證可將 Active Directory 驗證程式庫 (ADAL) 型登入功能整合到 Office 2013/Windows 用戶端中。 如此即可啟用**多重要素驗證**和**憑證式驗證**這類更高的安全性功能。
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 03/21/2017
 >[!NOTE]
 > 您也可以在 Azure AD 管理主控台中建立條件式存取原則。 除了其他條件式存取原則 (例如多重要素驗證) 之外，Azure AD 管理主控台還可讓您建立 Intune 裝置條件式存取原則 (在 Azure AD 中稱為「裝置型條件式存取原則」)。
 
->您也可以針對 Azure AD 所支援的協力廠商企業應用程式 (例如，Salesforce 和 Box)，設定條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+>您也可以針對 Azure AD 所支援的協力廠商企業應用程式 (例如，Salesforce 和 Box)，設定條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [Exchange Online 原則]。

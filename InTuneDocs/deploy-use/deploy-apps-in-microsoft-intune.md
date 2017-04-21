@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署應用程式
@@ -49,7 +49,7 @@ ms.lasthandoff: 12/30/2016
 
 5. 如果您要部署的應用程式可以透過行動應用程式管理原則進行設定，則會顯示 [行動應用程式管理] 頁面。 在這個頁面上，選取您要與這個應用程式建立關聯的行動應用程式管理原則。
 
-    [查看哪些 Microsoft 應用程式與行動應用程式管理原則相容。](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [查看哪些 Microsoft 應用程式與行動應用程式管理原則相容。](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. 如果您要部署的應用程式與 Intune VPN 設定檔相容，則會顯示 [VPN 設定檔] 頁面。 在這個頁面上，您可以選擇將 iOS 應用程式與已部署的 VPN 設定檔建立關聯。 啟動應用程式時，將會自動開啟 VPN 連線。 要讓 VPN 設定檔能夠使用，必須先啟用 [個別 App VPN] 設定檔設定。
  如需如何設定 VPN 設定檔 (包括如何將設定檔與應用程式建立關聯) 的詳細資訊，請參閱 [Microsoft Intune 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)。

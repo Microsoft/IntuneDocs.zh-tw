@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 57c739444c18d12a6d7ee8ca591f9a1dd72985d7
+ms.lasthandoff: 04/14/2017
 
 ---
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 12/10/2016
 
 在此步驟中，您將根據裝置類別和裝置類別名稱，在 Azure 入口網站中建立動態群組。
 
-若要繼續，請參閱 Azure Active Directory 文件中的[使用屬性來建立進階規則](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)主題。
+若要繼續，請參閱 Azure Active Directory 文件中的[使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)主題。
 您可以使用此主題中的資訊，透過 **deviceCategory** 屬性來建立具有進階規則的裝置群組。
 例如 (**device.deviceCategory -eq** "<*您從 Intune 管理主控台取得的裝置類別名稱*>")
 

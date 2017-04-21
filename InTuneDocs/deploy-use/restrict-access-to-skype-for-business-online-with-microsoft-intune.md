@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,9 +38,9 @@ ms.lasthandoff: 01/24/2017
 
 設定商務用 Skype Online 的條件式存取原則**之前**，您必須：
 - 具有**商務用 Skype Online 訂用帳戶**，並將商務用 Skype Online 授權指派給使用者。
-- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者獲得 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者獲得 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 
--   對商務用 Skype Online [啟用新式驗證](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
+-   對商務用 Skype Online [啟用新式驗證](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
 -  讓所有使用者都使用**商務用 Skype Online**。 如果您的部署同時有商務用 Skype Online 和商務用 Skype 內部部署，則不會將條件式存取原則套用至使用者。
 
 需要存取商務用 Skype Online 的裝置必須：

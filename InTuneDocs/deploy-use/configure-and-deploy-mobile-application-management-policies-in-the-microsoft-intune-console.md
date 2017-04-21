@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 應用程式必須加入 Microsoft Intune 應用程式 SDK，才能將限制套用至該應用程式。 有三種方法可以取得這種類型的應用程式：
 
--   **使用受原則管理的應用程式**。 受原則管理的應用程式有內建的應用程式 SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 如需詳細資訊，請參閱[可與 Microsoft Intune 行動應用程式管理原則搭配使用的應用程式清單](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)。
+-   **使用受原則管理的應用程式**。 受原則管理的應用程式有內建的應用程式 SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 如需詳細資訊，請參閱[可與 Microsoft Intune 行動應用程式管理原則搭配使用的應用程式清單](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 -   **使用包裝的應用程式**。 包裝的應用程式就是經過 Microsoft Intune App Wrapping Tool 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 您不能用它來處理從應用程式市集下載的應用程式。 如需詳細資訊，請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
@@ -140,7 +140,7 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
     |**需要裝置符合公司原則才能存取**|此設定只允許在裝置未越獄或 Root 時，才能使用應用程式。|
     |**重新檢查存取需求前等候時間 (分鐘)**|在 [逾時] 欄位中，指定在開啟應用程式之後，重新檢查應用程式存取需求之前的時間間隔。|
     |**離線寬限期**|如果裝置已離線，指定重新檢查應用程式存取需求之前的時間間隔。|
-    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法符合 FIPS 140-2 規範且僅限 Samsung KNOX 裝置。|
+    |**加密應用程式資料**|此設定指定所有與此應用程式相關聯的資料都將加密。 這包括儲存在外部 (例如 SD 卡) 的資料。<br /><br />**iOS 的加密**<br /><br />針對與 Intune 行動應用程式管理原則相關聯的應用程式，資料會透過作業系統所提供的裝置層級加密，於靜止時進行加密。 您可以透過 IT 系統管理員設定的裝置 PIN 原則來啟用。 需要 PIN 時，資料將會根據行動應用程式管理原則中的設定加密。 如 Apple 文件中所述，[iOS 所使用的模組都已通過 FIPS 140-2 認證](http://support.apple.com/HT202739)。<br /><br />**Android 的加密**<br /><br />對於與 Intune 行動應用程式管理原則相關聯的應用程式，Microsoft 會提供加密。 資料會在檔案 I/O 作業期間，以同步方式加密。  裝置儲存空間上的內容將一律加密。 加密方法符合 FIPS 140-2 規範且僅限 Samsung KNOX 裝置。|
     |**封鎖螢幕擷取** (僅限 Android 裝置)|此設定指定有人使用此應用程式時，將封鎖裝置的螢幕擷取功能。|
 
 4. 完成之後，請選擇 [儲存原則]。

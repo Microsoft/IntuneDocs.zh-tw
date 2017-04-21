@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 86062a73092f6e438de7a315d9ec1c2f395c9c50
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,22 +49,17 @@ ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 3. 選擇 [新增網域]，然後輸入您的自訂網域名稱。
 
 4. [驗證網域] 對話方塊隨即開啟，提供您在 DNS 主機服務提供者中建立 TXT 記錄用的值。
-    - **GoDaddy 使用者**：Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 在您輸入認證，並接受網域變更權限合約之後，便會自動建立 TXT 記錄。 您也可以[建立 TXT 記錄](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US)。
-    - **Register.com 使用者**：遵循[逐步指示](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify)以建立 TXT 記錄。
+    - **GoDaddy 使用者**：Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 在您輸入認證，並接受網域變更權限合約之後，便會自動建立 TXT 記錄。 您也可以[建立 TXT 記錄](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。
+    - **Register.com 使用者**：遵循[逐步指示](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)以建立 TXT 記錄。
 
     > [!TIP]
     > 請務必建立 DNS 別名 (CNAME) 以進行 [Windows 裝置註冊](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)，同時在 DNS 主機服務提供者中進行變更。
 
-新增並驗證自訂網域的步驟也可以[在 Azure Active Directory 中執行](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/)。
+新增並驗證自訂網域的步驟也可以[在 Azure Active Directory 中執行](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)。
 
-深入了解 [Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+深入了解 [Office 365 中的初始 onmicrosoft.com 網域](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!div class="step-by-step"]
 
 >[&larr; **登入 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**將使用者新增至 Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

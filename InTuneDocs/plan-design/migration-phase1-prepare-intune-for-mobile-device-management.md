@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/28/2017
 
 -   使用者是否熟悉一般技術和 IT？
 
-### <a name="what-is-your-device-security-policy"></a>您的行動裝置安全性原則是什麼？ 
+### <a name="what-is-your-device-security-policy"></a>您的行動裝置安全性原則是什麼？
 
 -   您需要裝置層級加密嗎？
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 03/28/2017
 
 ## <a name="additional-information"></a>其他資訊
 
--   如需詳細範例，請檢閱這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。
+-   如需詳細範例，請檢閱這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3a7322bd389b6d2ca72108b9f54318000857895b
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/22/2017
 
 具有 Skycure 裝置威脅防護之合規性原則的必要條件：
 
--   [設定 Skycure 與 Intune 整合 (英文)](https://docs.microsoft.com/en-us/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [設定 Skycure 與 Intune 整合 (英文)](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [在 Intune 中啟用 Skycure 連線](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 

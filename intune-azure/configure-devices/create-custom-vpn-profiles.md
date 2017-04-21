@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 990f3ff6528b537d1ea62c82440f1e46bcde8c95
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: a91a1b92a4b3d720d3fae9f196d4c4e34aea24b7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -60,69 +60,6 @@ ms.lasthandoff: 03/17/2017
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](how-to-assign-device-profiles.md)。
 
-## <a name="example-uri-settings"></a>範例 URI 設定
-
-這些設定可以用來為稱為 Contoso 的虛構公司中的 VPN 建立自訂設定。
-如需您可使用之所有設定的完整詳細資訊，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)。
-
-原生 Contoso VPN (IKEv2)：./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
-
-vpn.contoso.com ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType
-
-Ikev2 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType
-
-SplitTunnel ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod
-
-Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration &lt;EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;EapMethod&gt;&lt;Type xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;13&lt;/Type&gt;&lt;VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorId&gt;&lt;VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorType&gt;&lt;AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/AuthorId&gt;&lt;/EapMethod&gt;&lt;Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"&gt;&lt;Type&gt;13&lt;/Type&gt;&lt;EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"&gt;&lt;CredentialsSource&gt;&lt;CertificateStore&gt;&lt;SimpleCertSelection&gt;true&lt;/SimpleCertSelection&gt;&lt;/CertificateStore&gt;&lt;/CredentialsSource&gt;&lt;ServerValidation&gt;&lt;DisableUserPromptForServerValidation&gt;false&lt;/DisableUserPromptForServerValidation&gt;&lt;ServerNames&gt;&lt;/ServerNames&gt;&lt;/ServerValidation&gt;&lt;DifferentUsername&gt;false&lt;/DifferentUsername&gt;&lt;PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/PerformServerValidation&gt;&lt;AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/AcceptServerName&gt;&lt;/EapType&gt;&lt;/Eap&gt;&lt;/Config&gt;&lt;/EapHostConfig&gt;
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/ByPassForLocal** True
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RememberCredentials** 1
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/DomainNameInformationList/1/DomainName** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/DnsSuffix** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrustedNetworkDetection** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/Address** 10.0.0.0
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/PrefixSize** 8
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AlwaysOn** true
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/0/App/Id** %PROGRAMFILES%\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/1/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/2/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/0/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
-
-若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx。
-
-## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
-### <a name="custom-uri-for-package-list"></a>套件清單的自訂 URI
--  資料類型 = 字串
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
--  值 = 分隔符號分隔的套件清單。
-   - 分隔符號︰分號 (;)、冒號 (:)、逗號 (,)、直立線符號 (|)
-
-範例：
-- com.android.chrome
-- com.android.chrome;com.android.browser
-
-### <a name="custom-uri-for-mode-optional"></a>模式自訂 URI (選用)
-- 資料類型 = 字串
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
-
-> 附註
-> - 使用指派給自訂設定檔的相同*名稱*
-> - 可能的值︰*GLOBAL*、*WHITELIST*、*BLACKLIST*
-> - 若未提供 PackageList，則預設為 *GLOBAL* (與全系統設定檔回溯相容)
-> - 若提供 PackageList，則預設為 *WHITELIST*
 
 
 

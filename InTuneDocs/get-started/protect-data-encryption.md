@@ -15,9 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ Microsoft Intune 也可協助您從 Office 行動應用程式防止資料遺失�
 > [!NOTE]
 > Office 行動應用程式尚未支援 Windows 平台。 未進行註冊的行動應用程式管理，還無法與 Exchange 或 SharePoint 內部部署相容。 您只能保護線上版本中所裝載的資料。
 
-本指南可協助您保護公司免於資料遺失，方法是在員工用來存取機密資料的行動應用程式上使用原則來強制使用密碼和資料加密，而不需要在任何裝置管理解決方案中進行完整註冊。 Microsoft Intune 可讓您在適用於 [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) 和 [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) 的 Office 行動應用程式上設定行動應用程式管理 (MAM) 原則。 這種方式不需要使用者將其裝置註冊到行動裝置管理解決方案，也能保護 O365 資料，同時維持絕佳的 Office 行動應用程式使用者經驗。
+本指南可協助您保護公司免於資料遺失，方法是在員工用來存取機密資料的行動應用程式上使用原則來強制使用密碼和資料加密，而不需要在任何裝置管理解決方案中進行完整註冊。 Microsoft Intune 可讓您在適用於 [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) 和 [Android](https://products.office.com/mobile/office-mobile-apps-for-android) 的 Office 行動應用程式上設定行動應用程式管理 (MAM) 原則。 這種方式不需要使用者將其裝置註冊到行動裝置管理解決方案，也能保護 O365 資料，同時維持絕佳的 Office 行動應用程式使用者經驗。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
 1.    [檢閱如何保護應用程式資料](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -51,5 +51,5 @@ Microsoft Intune 也可協助您從 Office 行動應用程式防止資料遺失�
 ## <a name="additional-information"></a>其他資訊：
 - [了解使用 Microsoft Intune 執行 MAM 啟用應用程式的使用者經驗。](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理。](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [檢視 Microsoft Intune 應用程式夥伴清單](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
+- [檢視 Microsoft Intune 應用程式夥伴清單](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

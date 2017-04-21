@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Azure AD 中未提供一些現有的 Intune 群組功能︰
 ## <a name="how-to-get-ready"></a>如何做好準備
 
 - 閱讀下列 Azure AD 主題，以了解 Azure AD 安全性群組和其運作方式︰
-    -  [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用屬性來建立進階規則](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+    -  [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+    -  [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+    -  [使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
 - 請考慮在移轉之前移除不再使用的任何 Intune 群組。
 -  請確定將任何需要建立群組的系統管理員新增至 [Intune 服務管理員] Azure AD 角色。 請注意，Azure AD 服務系統管理員角色沒有 [管理群組] 權限。
 -  如果您搭配使用群組與 [排除特定成員] 選項，請考慮是否可以將這些群組重新設計成不需要進行排除，或者是否可以在 Azure AD 查詢中使用進階規則來達成相同的結果。

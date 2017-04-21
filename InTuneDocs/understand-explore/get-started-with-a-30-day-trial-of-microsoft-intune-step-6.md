@@ -14,9 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/10/2016
 ## <a name="intune-capabilities"></a>Intune 功能
 Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的功能外)。 例如：
 
--   **控制對 Exchange 及 Office 365 的存取。** 如需詳細資訊，請參閱[管理 Exchange Online 的應用程式存取](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)和[管理 Office 365 服務的應用程式存取](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+-   **控制對 Exchange 及 Office 365 的存取。** 如需詳細資訊，請參閱[管理 Exchange Online 的應用程式存取](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)和[管理 Office 365 服務的應用程式存取](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 -   **管理公司擁有的 iOS 裝置。** 如需詳細資訊，請參閱[在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune)。
 

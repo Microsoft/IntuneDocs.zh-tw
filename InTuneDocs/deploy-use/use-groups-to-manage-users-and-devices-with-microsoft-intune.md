@@ -15,9 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
-ms.lasthandoff: 12/15/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -90,7 +90,7 @@ ms.lasthandoff: 12/15/2016
     > 目前，如果您的群組包含特定安全性群組或經理群組的成員，而且您排除某些群組的成員，則會移除您一開始所包含的成員。 若要建立同時具有包含成員和排除成員的群組，建議您先建立具有包含成員的父群組。 再建立該父群組的子群組。 在新的子群組中，列出排除的成員。 接著，使用該子群組來管理 Intune 原則、設定檔和應用程式發佈。
 
     > [!NOTE]
-    > 在 Azure 入口網站中，您可以建立以使用者回報之經理為基礎的群組。 此類型的群組是動態的，並隨著 Azure Active Directory 中該經理的團隊新增或移除員工而改變。 [使用屬性來建立進階規則](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)的**設定群組為「經理」群組**一節將說明如何建立以經理名稱為基礎的 Azure 群組。
+    > 在 Azure 入口網站中，您可以建立以使用者回報之經理為基礎的群組。 此類型的群組是動態的，並隨著 Azure Active Directory 中該經理的團隊新增或移除員工而改變。 [使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)的**設定群組為「經理」群組**一節將說明如何建立以經理名稱為基礎的 Azure 群組。
 
 4.  在 [定義直接成員資格] 頁面上，選擇 [瀏覽] 以選取要包含或排除的個別使用者。 如果您選取的使用者不在指定的父群組中，這些裝置會自動新增至父群組。 手動新增使用者的選項位於 [選取成員] 對話方塊的底部。 如果您想要新增還沒有已註冊裝置的使用者，這會很有幫助。
 

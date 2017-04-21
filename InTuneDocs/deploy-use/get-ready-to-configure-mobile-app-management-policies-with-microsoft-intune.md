@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 - Windows 10
 
 >[!NOTE]
->從 1703 版開始，可在不含註冊案例的 MAM 中定義 Windows 10 裝置的應用程式保護原則。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+>從 1703 版開始，可在不含註冊案例的 MAM 中定義 Windows 10 裝置的應用程式保護原則。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>支援的應用程式
 * **Microsoft 應用程式︰**這些應用程式已內建 Intune App SDK，而在您套用應用程式保護原則之前將不需要進一步處理。
-若要查看受支援的 Microsoft 應用程式完整清單，請移至 Microsoft Intune 應用程式合作夥伴頁面上的 [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) (Microsoft Intune 行動應用程式庫)。 按一下應用程式來查看支援的案例和平台，並查看該應用程式是否支援多重身分識別。
+若要查看受支援的 Microsoft 應用程式完整清單，請移至 Microsoft Intune 應用程式合作夥伴頁面上的 [Microsoft Intune mobile application gallery](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) (Microsoft Intune 行動應用程式庫)。 按一下應用程式來查看支援的案例和平台，並查看該應用程式是否支援多重身分識別。
 
 * **您組織的企業營運應用程式**：您必須先準備這些應用程式來包含 Intune App SDK，才能套用應用程式保護原則。
 
@@ -76,7 +76,7 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 ## <a name="prerequisites"></a>必要條件
 
 -   **Microsoft Intune 訂閱**。 使用者需要 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 授權才能取得使用應用程式保護原則的應用程式。
-如果您目前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 來管理裝置，表示您已經有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 訂閱。 如果您已經購買 Enterprise Mobility Suite (EMS) 授權，則您也會擁有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 訂閱。 如果您正在嘗試 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 以查看 MAM 功能，您可以在 [Microsoft Intune 頁面](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)上取得試用帳戶。
+如果您目前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 來管理裝置，表示您已經有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 訂閱。 如果您已經購買 Enterprise Mobility Suite (EMS) 授權，則您也會擁有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 訂閱。 如果您正在嘗試 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 以查看 MAM 功能，您可以在 [Microsoft Intune 頁面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上取得試用帳戶。
 
     若要檢查您是否擁有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 訂閱，請移至 Office 入口網站的 [帳單] 頁面。  如果您有訂閱，您在訂閱中應該會看到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 為 [作用中]。
 
@@ -98,13 +98,13 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 
 1.  使用您的系統管理員認證登入 [Office 入口網站](http://portal.office.com)。
 
-2.  依照 [Intune 評估指南](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 Intune 30 天評估步驟**一節所述來新增使用者，然後指派 Intune 授權。 若要讓使用者能夠存取 Office 入口網站、Azure AD 入口網站和 Azure 入口網站，請將 [全域管理員角色] 指派給使用者。
+2.  依照 [Intune 評估指南](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 Intune 30 天評估步驟**一節所述來新增使用者，然後指派 Intune 授權。 若要讓使用者能夠存取 Office 入口網站、Azure AD 入口網站和 Azure 入口網站，請將 [全域管理員角色] 指派給使用者。
 
-5.  應用程式保護原則會部署到 Azure Active Directory 的使用者群組。 若要建立應用程式保護原則的使用者群組，請遵循[建立群組來組織評估訂閱使用者和裝置](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)中的＜建立使用者群組＞一節所述來建立使用者群組。
+5.  應用程式保護原則會部署到 Azure Active Directory 的使用者群組。 若要建立應用程式保護原則的使用者群組，請遵循[建立群組來組織評估訂閱使用者和裝置](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)中的＜建立使用者群組＞一節所述來建立使用者群組。
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>指派角色給非全域系統管理員使用者
 
-全域管理員可以存取 [Azure 入口網站](https://portal.azure.com)。  如果您想讓非全域管理員的使用者能夠設定原則，並執行其他行動裝置應用程式管理工作，請參閱[使用角色指派來管理 Azure 訂用帳戶資源的存取權](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/)一文。
+全域管理員可以存取 [Azure 入口網站](https://portal.azure.com)。  如果您想讓非全域管理員的使用者能夠設定原則，並執行其他行動裝置應用程式管理工作，請參閱[使用角色指派來管理 Azure 訂用帳戶資源的存取權](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/)一文。
 
 ## <a name="next-steps"></a>後續步驟
 [使用 Microsoft Intune 建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

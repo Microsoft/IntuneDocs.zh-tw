@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Microsoft Intune 是雲端式服務，可協助您管理執行 Windows、Mac OS 
 
 Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務。 登入權益讓您能夠從遠端與 Microsoft 專家合作，來準備您的 Intune 環境以供使用。 如需登入權益的詳細資訊，請參閱 [Microsoft Intune 登入權益說明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
-您可以從包含 100 個使用者授權的 30 天免費試用版開始使用 Intune。 若要使用免費的試用版，[請前往 Intune 註冊頁面](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)。 如果您的組織有 Enterprise 合約或對等的大量授權合約，請連絡您的 Microsoft 代表來設定您的免費試用版。
+您可以從包含 100 個使用者授權的 30 天免費試用版開始使用 Intune。 若要使用免費的試用版，[請前往 Intune 註冊頁面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)。 如果您的組織有 Enterprise 合約或對等的大量授權合約，請連絡您的 Microsoft 代表來設定您的免費試用版。
 
 > [!NOTE]
 > 您的組織若已有 Microsoft Online Services 的工作或學校帳戶，而您在試用期結束後仍要繼續在生產環境中使用此 Intune 訂用帳戶，請在該頁面選擇 [登入] 選項，然後再以您組織的全域管理員帳戶進行驗證。 這個動作可確保您的 Intune 試用版連結至您現有的工作或學校帳戶。
@@ -70,13 +70,13 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 -**Intune 獨立設定。** 使用 Intune 中的 Web 式管理主控台來管理您組織中的裝置。 Intune 可以用於不含任何內部部署 IT 基礎結構的情況。 如果您使用 Intune 搭配 Active Directory 網域服務，就可以將透過網域服務來管理的網域使用者帳戶與 Intune 搭配使用。
 
--**Intune 搭配 System Center Configuration Manager。** 使用 Configuration Manager 管理主控台來管理您企業中的電腦和行動裝置。 此設定可協助您透過單一主控台 (Configuration Manager 管理主控台) 來管理貴組織的所有裝置。 Configuration Manager 可支援非常大量的行動裝置、伺服器及電腦。 如需 Configuration Manager 的詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。 若要更多協助以決定哪種方法最適合您，請參閱 [選擇 Microsoft Intune 獨立和混合式行動裝置管理與 Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)。
+-**Intune 搭配 System Center Configuration Manager。** 使用 Configuration Manager 管理主控台來管理您企業中的電腦和行動裝置。 此設定可協助您透過單一主控台 (Configuration Manager 管理主控台) 來管理貴組織的所有裝置。 Configuration Manager 可支援非常大量的行動裝置、伺服器及電腦。 如需 Configuration Manager 的詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。 若要更多協助以決定哪種方法最適合您，請參閱 [選擇 Microsoft Intune 獨立和混合式行動裝置管理與 Configuration Manager](https://technet.microsoft.com/library/mt706478.aspx)。
 
 
 ## <a name="learn-more-about-intune"></a>深入了解 Intune
 您可以使用這些資源來深入了解 Intune：
 
-- [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供 Intune 的安全性、隱私權和合規性作法的相關資訊，並說明其中一些 Intune 憑證。
+- [Microsoft Intune 信任中心](https://www.microsoft.com/server-cloud/products/intune-trust-center/)提供 Intune 的安全性、隱私權和合規性作法的相關資訊，並說明其中一些 Intune 憑證。
 
 - [Microsoft Intune 的已註冊裝置管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 

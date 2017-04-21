@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/15/2017
    在登入以購買公司帳戶時，使用公司帳戶資訊加入 [Windows Phone 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=268442) 。 這項要求需要在您收到程式碼簽署憑證之前，由公司主管人員授權。
 
 2. **取得公司 Symantec 憑證**<br>
-  使用您的 Symantec 識別碼，從 [Symantec 網站](http://go.microsoft.com/fwlink/?LinkId=268441) 購買憑證。 購買憑證後，您在 Windows Phone 開發人員中心帳戶中指定的公司核准者將收到一封請求核准憑證要求的電子郵件。 如需 Symantec 憑證需求的詳細資訊，請參閱[為什麼 Windows Phone 需要 Symantec 憑證？](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) Windows 裝置註冊常見問題集。
+  使用您的 Symantec 識別碼，從 [Symantec 網站](http://go.microsoft.com/fwlink/?LinkId=268441) 購買憑證。 購買憑證後，您在 Windows Phone 開發人員中心帳戶中指定的公司核准者將收到一封請求核准憑證要求的電子郵件。 如需 Symantec 憑證需求的詳細資訊，請參閱[為什麼 Windows Phone 需要 Symantec 憑證？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 裝置註冊常見問題集。
 
 3.  **匯入憑證**<br>
     一旦核准要求後，您就會收到包含匯入憑證指示的電子郵件。 請遵循電子郵件中的指示，匯入憑證。

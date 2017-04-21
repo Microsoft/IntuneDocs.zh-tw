@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -137,7 +137,7 @@ Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一
 #### <a name="how-to-specify-urls-to-app-stores"></a>如何指定 URL 給應用程式市集
 若要在允許和封鎖的應用程式清單中指定應用程式 URL，請使用下列格式：
 
-從 [Windows Phone 的 [應用程式+遊戲]](http://www.windowsphone.com/en-us/store/overview) 頁面中，搜尋您想要使用的應用程式。
+從 [Windows Phone 的 [應用程式+遊戲]](http://www.windowsphone.com/store/overview) 頁面中，搜尋您想要使用的應用程式。
 
 開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
 

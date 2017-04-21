@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/30/2016
 | 問題 | 說明 | 解決方法 |
 | -- | -- | -- |
 | 原則未套用至商務用 Skype | 在 Azure 入口網站中設定的無裝置註冊應用程式保護原則，未套用至 iOS 和 Android 裝置上的商務用 Skype。 | 商務用 Skype 必須設定使用新式驗證。  請依照 [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (啟用租用戶的新式驗證) 中的指示，設定 Skype 的新式驗證。 |
-| 未套用 office 應用程式原則 | 應用程式保護原則不適用於任何使用者的任何[支援的 Office 應用程式](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)。 | 確認使用者已獲得 Intune 授權，且部署的應用程式保護原則已將 Office 應用程式設為目標。 新部署的應用程式保護原則可能需要最多 8 小時才會套用。 |
+| 未套用 office 應用程式原則 | 應用程式保護原則不適用於任何使用者的任何[支援的 Office 應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 確認使用者已獲得 Intune 授權，且部署的應用程式保護原則已將 Office 應用程式設為目標。 新部署的應用程式保護原則可能需要最多 8 小時才會套用。 |
 | 管理員無法在 Azure 入口網站中設定應用程式保護原則 | IT 管理員使用者無法在 Azure 入口網站中設定應用程式保護原則。 | 下列使用者角色可以存取 Azure 入口網站： <ul><li>全域管理員，您可以在 [Office 入口網站](http://portal.office.com/)中設定</li><li>擁有者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li><li>參與者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li></ul>  如需設定這些角色的說明，請參閱[準備使用 Microsoft Intune 設定行動應用程式管理原則](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)。|
 |應用程式保護原則報表中遺漏使用者帳戶 | 管理員主控台報表沒有顯示最近部署應用程式保護原則的使用者帳戶。 | 如果使用者是應用程式保護原則的新目標，則可能需要最多 24 小時該使用者才會以目標使用者的狀態顯示在報表中。 |
 | 原則變更不作用 | 套用應用程式保護原則的變更與更新最多需時 8 個小時。 | 如適用，終端使用者可以登出應用程式並重新登入，來強制與服務同步。 |
@@ -88,7 +88,7 @@ Android | **需要公司入口網站**：您必須安裝 Intune 公司入口網�
 **歡迎使用 Intune Managed Browser**：此應用程式在由 Microsoft Intune 管理的情況下，可以達到最佳的運作效果。 您隨時可以使用此應用程式來瀏覽網路，且當它由 Microsoft Intune 管理時，還能進一步存取其他資料保護功能。 | 無法針對該 Intune Managed Browser 應用程式偵測所需的應用程式保護原則。 <br><br>使用者仍可以使用該應用程式瀏覽網站，但應用程式不受 Intune 管理。 | 請確認 iOS 應用程式保護原則已部署至使用者的安全性群組，且以該 Intune Managed Browser 應用程式為目標。
 **登入失敗**：目前無法將您登入。 請稍後再試一次。 | 使用者嘗試以工作或學校帳戶登入之後，無法向 MAM 服務註冊使用者。 | 請確認 iOS 應用程式保護原則已部署至使用者的安全性群組，且以此應用程式為目標。
 **帳戶未設定**：貴組織尚未將您的帳戶設定為可存取工作或學校資料。 請連絡您的 IT 系統管理員以尋求協助。 | 該使用者帳戶沒有 Intune A Direct 授權。 | 請確認使用者的帳戶具有在 [Office 入口網站](http://portal.office.com)中指派的 Intune 授權。
-**裝置不符合規範**無法使用此應用程式，因為您是使用越獄的裝置。 如需協助，請連絡 IT 系統管理員。 | Intune 偵測到使用者是在越獄的裝置上。 | 將裝置重設為原廠設定。 請遵循 Apple 支援網站的[這些指示](https://support.apple.com/en-us/HT201274)。
+**裝置不符合規範**無法使用此應用程式，因為您是使用越獄的裝置。 如需協助，請連絡 IT 系統管理員。 | Intune 偵測到使用者是在越獄的裝置上。 | 將裝置重設為原廠設定。 請遵循 Apple 支援網站的[這些指示](https://support.apple.com/HT201274)。
 **需要網際網路連線**：您必須連線至網際網路，以驗證您是否可使用此應用程式。 | 裝置未連線至網際網路。 | 請將裝置連線至 WiFi 或資料網路。
 **未知錯誤**：請嘗試重新啟動此應用程式。 如果問題持續發生，請連絡您的 IT 系統管理員尋求協助。 | 發生未知錯誤。 | 請稍待片刻，然後再試一次。 如果錯誤持續發生，請在[這裡](how-to-get-support-for-microsoft-intune.md)建立 Intune 的支援票證。
 **正在存取貴組織的資料**：您指定的工作或學校帳戶無權存取此應用程式。 您可能必須使用不同的帳戶登入。 如需協助，請連絡 IT 系統管理員。 | Intune 偵測到使用者嘗試以不同於該裝置之 MAM 註冊帳戶的第二個工作或學校帳戶來登入。 每部裝置一次只能有一個工作或學校帳戶由 MAM 管理。 | 讓使用者以登入畫面預先填入的使用者名稱登入。 <br> <br> 或者，讓使用者以新的工作或學校帳戶登入，並移除現有的 MAM 註冊帳戶。

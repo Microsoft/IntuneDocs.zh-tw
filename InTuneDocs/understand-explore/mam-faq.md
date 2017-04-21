@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 **什麼是 MAM？** [Intune 行動應用程式管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)指的是 Intune 管理功能套件，可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
 
-**MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)官方清單。
+**MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **MAM 支援哪些裝置組態？** Intune MAM 支援兩個組態︰
   1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要管理使用 MDM + MAM 的應用程式，客戶應該於下列位置使用 Intune 獨立主控台：http://manage.microsoft.com.
@@ -48,7 +49,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>您可以使用應用程式保護原則管理的應用程式
 
-**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](../develop/intune-app-sdk.md) 建置或由 [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)官方清單。
+**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](../develop/intune-app-sdk.md) 建置或由 [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **在可搭配 Intune 的應用程式上，使用應用程式保護原則的基本需求為何？**
   1. 使用者必須擁有 Azure Active Directory (AAD) 帳戶。 請參閱[新增使用者並提供管理權限給 Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)，以了解如何在 Azure Active Directory 中建立 Intune 使用者。
@@ -59,18 +60,18 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
   4. 使用者必須使用他/她的 AAD 帳戶登入應用程式。
 
-**使用 [Outlook 行動裝置應用程式 (英文)](https://www.microsoft.com/en-us/outlook-com/mobile/) 時有哪些其他需求？**
+**使用 [Outlook 行動裝置應用程式 (英文)](https://www.microsoft.com/outlook-com/mobile/) 時有哪些其他需求？**
 
   1. 使用者必須在其裝置上安裝 Outlook 行動裝置應用程式。
 
-  2. 使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online (英文)](https://products.office.com/en-us/exchange/exchange-online) 信箱和授權。
+  2. 使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online (英文)](https://products.office.com/exchange/exchange-online) 信箱和授權。
 
   >[!NOTE]
   > Outlook 行動裝置應用程式目前僅支援 Microsoft Exchange Online，而不支援 Exchange 內部部署或 Office 365 專用中的 Exchange。
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 
-  1. 使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂閱必須包含行動裝置上的 Office 應用程式，以及[商務用 OneDrive](https://onedrive.live.com/about/business/) 的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](http://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US)指派。
+  1. 使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂閱必須包含行動裝置上的 Office 應用程式，以及[商務用 OneDrive](https://onedrive.live.com/about/business/) 的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](http://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
   2. 使用者必須在其裝置上安裝 [OneDrive](https://onedrive.live.com/about/) 應用程式，並使用他們的 AAD 帳戶登入。
 
@@ -140,9 +141,4 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 - [驗證您的行動應用程式管理設定](../deploy-use/validate-mobile-application-management.md)
 - [準備使用 Microsoft Intune 設定行動應用程式管理原則](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [如何取得 Microsoft Intune 支援](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

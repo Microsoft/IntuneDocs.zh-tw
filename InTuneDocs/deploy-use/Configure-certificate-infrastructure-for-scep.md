@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
@@ -33,7 +33,7 @@ ms.lasthandoff: 12/10/2016
 -  **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需如何設定憑證授權單位的指示，請參閱 [安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。
     如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
 I
--  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/en-us/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
+-  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
 -  **Microsoft Intune Certificate Connector**：您可使用 Intune 管理主控台來下載 **Certificate Connector** 安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。
 -  **Web 應用程式 Proxy 伺服器** (選用)︰您可以將執行 Windows Server 2012 R2 或更新版本的伺服器用作 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
@@ -51,10 +51,10 @@ I
 
 從周邊網路到受信任網路，允許在加入網域的 NDES 伺服器上進行網域存取所需的所有連接埠和通訊協定。 NDES 伺服器需要存取憑證伺服器、DNS 伺服器、Configuration Manager 伺服器和網域控制站。
 
-建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)，或是協力廠商 Proxy。
+建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx)，或是協力廠商 Proxy。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>憑證和範本
+### <a name="BKMK_CertsAndTemplates"></a>憑證和範本
 
 |物件|詳細資料|
 |----------|-----------|
@@ -63,13 +63,13 @@ I
 |**伺服器驗證憑證**|由發行的 CA 或公用 CA 所要求，於 NDES 伺服器的 IIS 中安裝並繫結的 SSL 憑證。|
 |**可信任的根 CA 憑證**|從根 CA (或任何信任根 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>帳戶
+### <a name="BKMK_Accounts"></a>帳戶
 
 |名稱|詳細資料|
 |--------|-----------|
 |**NDES 服務帳戶**|您指定網域使用者帳戶以做為 NDES 服務帳戶。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>設定基礎結構
+## <a name="BKMK_ConfigureInfrastructure"></a>設定基礎結構
 您可以設定憑證設定檔之前，必須先完成下列工作，這些需要 Windows Server 2012 R2 和 Active Directory 憑證服務 (ADCS) 的知識：
 
 **工作 1**：建立 NDES 服務帳戶
