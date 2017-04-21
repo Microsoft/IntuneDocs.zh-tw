@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何指導使用者使用 Microsoft Intune
 
-Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保護公司資料。 有許多步驟可確保成功部署，包括透過[免費試用版](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md)評估 Intune、[保護您的電子郵件](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)和[將 Intune SDK 嵌入您的應用程式](/intune/develop/intune-app-sdk.md)。
+Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保護公司資料。 有許多步驟可確保成功部署，包括透過[免費試用版](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune)評估 Intune、[保護您的電子郵件](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)和[將 Intune SDK 嵌入您的應用程式](/intune/develop/intune-app-sdk)。
 
-這些技術全都無法確保您的使用者了解您管理他們裝置的原因有多重要。 事實上，許多使用者可能會感覺您正在侵害他們的隱私權 - 特別是若您要將 Intune 部署為 [BYOD 解決方案](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md)。
+這些技術全都無法確保您的使用者了解您管理他們裝置的原因有多重要。 事實上，許多使用者可能會感覺您正在侵害他們的隱私權 - 特別是若您要將 Intune 部署為 [BYOD 解決方案](/enterprise-mobility-security/solutions/byod-design-considerations-guide)。
 
 > [!Important]
 > 了解並主動解決使用者對於為何需要管理裝置的顧慮，對於成功部署而言很重要。
@@ -59,7 +59,7 @@ __這可能會對我的終端使用者造成什麼不便？__ 安裝應用程式
   * [Android 使用者如何取得其應用程式](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [在 Intune 上使用 iOS 裝置](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [在 Intune 上使用 iOS 裝置](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [iOS 使用者如何取得其應用程式](how-your-ios-users-get-their-apps.md)
 
 * **Windows**

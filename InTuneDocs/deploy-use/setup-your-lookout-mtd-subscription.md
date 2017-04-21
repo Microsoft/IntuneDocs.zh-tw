@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ ms.lasthandoff: 03/21/2017
 
 1. 登入 [Azure AD 管理入口網站](https://manage.windowsazure.com)，然後選取您的訂用帳戶。 
   ![顯示租用戶名稱的 Azure AD 頁面的螢幕擷取畫面](../media/mtp/aad_tenant_name.png)
-2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US)以取得尋找訂用帳戶 ID 的提示。 
+2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)以取得尋找訂用帳戶 ID 的提示。 
 3. 尋找您的 Azure AD 群組識別碼。 Lookout 主控台支援 2 個存取層級：  
   * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性地建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
   * **限制存取**︰此群組中的使用者無法存取 Lookout 主控台的幾項設定及註冊相關模組，但可唯讀存取 Lookout 主控台的 [安全性原則] 模組。  
 
-  如需權限的詳細資訊，請參閱 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/en-us/articles/114094105653)。
+  如需權限的詳細資訊，請參閱 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
 
   在 **Azure AD 管理主控台**中，您可以在群組的 [屬性] 頁面上找到**群組物件識別碼**。
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 03/21/2017
 ![顯示使用者帳戶喜好設定頁面的螢幕擷取畫面](../media/mtp/lookout-mtp-email-notifications.png) 如果您不想再收到電子郵件通知，請將通知設定為 [關閉]，然後儲存變更。
 
 ### <a name="configure-threat-classification"></a>設定威脅分類
-Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分類。 [Lookout 威脅分類](http://personal.support.lookout.com/hc/en-us/articles/114094130693)具有相關聯的預設風險層級。 您可以隨時變更這些層級，以符合您公司的需求。
+Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分類。 [Lookout 威脅分類](http://personal.support.lookout.com/hc/articles/114094130693)具有相關聯的預設風險層級。 您可以隨時變更這些層級，以符合您公司的需求。
 
 ![顯示威脅和分類之原則頁面的螢幕擷取畫面](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分�
 ## <a name="watching-enrollment"></a>監控註冊
 完成設定之後，Lookout Mobile Threat Defense 就會開始輪詢 Azure AD，找出對應至指定註冊群組的裝置。  您可以在 [裝置] 模組中找到已註冊裝置的相關資訊。  裝置的初始狀態會顯示為 [擱置中]。  在裝置上安裝、開啟及啟用 Lookout for Work 應用程式之後，裝置狀態將會變更。  如需如何取得發送至裝置之 Lookout for Work 應用程式的詳細資訊，請參閱[設定及部署 Lookout for Work 應用程式](configure-and-deploy-lookout-for-work-apps.md)主題。
 ## <a name="next-steps"></a>後續步驟
-[在 Intune 中啟用 Lookout MTP 連線](enable-lookout-mtp-connection-in-intune.md)
+[在 Intune 中啟用 Lookout MTP 連線](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

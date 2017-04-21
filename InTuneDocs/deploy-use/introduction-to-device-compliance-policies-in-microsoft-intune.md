@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 12/10/2016
 您也可以使用與條件式存取無關的相容性原則。 單獨使用合規性原則時，將會評估目標裝置，並回報其合規狀態。 例如，您可能想要報告有關未加密的裝置數目，或哪些裝置已進行破解或刷機。 不過，單獨使用合規性原則時，對公司資源沒有存取限制。
 
 您可以將相容性原則部署到使用者。 將相容性原則部署到使用者時，即會檢查使用者裝置的相容性。
-若要深入了解行動裝置在部署原則之後需要多長的時間才能取得原則，請參閱[管理裝置上的設定和功能](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)。
+若要深入了解行動裝置在部署原則之後需要多長的時間才能取得原則，請參閱[管理裝置上的設定和功能](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)。
 
 下表列出合規性原則所支援的裝置類型。 此表也描述如何在搭配條件式存取原則使用合規性原則時，管理不符合規範的設定。
 

@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -97,7 +97,7 @@ ms.lasthandoff: 03/13/2017
 | **解決方案區域** | **目前的環境** | **註解** |
 |:---:|:---:|:---:|
 | **身分識別** | Azure AD、Azure AD Connect、未同盟、無 MFA | 專案就緒，年底可啟用 MFA |                 
-| **電子郵件環境** | Exchange 內部部署、Exchange Online | 目前從 Exchange 內部部署移轉至 Exchange Online。 信箱已移轉&75;%。 Intune 試驗開始之前，會移轉最後的 25%。 |                
+| **電子郵件環境** | Exchange 內部部署、Exchange Online | 目前從 Exchange 內部部署移轉至 Exchange Online。 信箱已移轉 75%。 Intune 試驗開始之前，會移轉最後的 25%。 |                
 | **SharePoint** | SharePoint 內部部署 | 不打算移至 SharePoint Online |  
 | **目前的 MDM** | Exchange ActiveSync |  |
 | **憑證解決方案** | Microsoft Server 2012 R2、AD 憑證服務 | 網站伺服器只使用 PKI |
@@ -153,7 +153,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 您必須決定哪一種
 
 -   深入了解 [Plan your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups) (規劃您的使用者和裝置群組)。
 
--   了解[在 Microsoft Intune 中使用群組管理使用者和裝置](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
+-   了解[在 Microsoft Intune 中使用群組管理使用者和裝置](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 ### <a name="public-key-infrastructure-pki"></a>公開金鑰基礎結構 (PKI)
 
@@ -326,7 +326,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 電子郵件設定檔允許電子郵件用戶端自動設定連線資訊與安裝電子郵件設定。 Intune 支援某些裝置上的電子郵件設定檔。
 
--   深入了解[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)和支援的平台。
+-   深入了解[使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)和支援的平台。
 
 下例說明記錄電子郵件設定檔的設計：
 
@@ -388,7 +388,7 @@ Intune 支援以多種方式向使用者或裝置遞送應用程式。 遞送的
 
 條件式存取用於僅允許相容裝置存取公司資源。 Intune 適合整個 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 您必須判斷條件式存取是否必要，以及必須保護的項目。
 
--   深入了解[使用 Microsoft Intune 限制電子郵件、Office&365; 和其他服務的存取](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+-   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 為線上存取，判斷哪些平台和使用者群組會是條件式存取原則的目標。
 

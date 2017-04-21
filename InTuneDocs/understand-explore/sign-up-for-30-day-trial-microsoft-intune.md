@@ -14,9 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
-ms.lasthandoff: 12/15/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/15/2016
 本文將逐步引導您註冊 Intune 試用及準備一些使用者來試用，您就能依據相關聯的評估指南了解 Intune 如何管理行動裝置。 <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 從 2016 年 12 月開始，Microsoft Intune 移至 Azure 入口網站，免費試用登入有些在 Azure 入口網站的 Intune，有些在傳統的 Intune 中。 如果您在 Azure 入口網站中試用，完成本文的步驟後，您會發現 [Intune Azure 預覽內容](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)更實用。
+> 從 2016 年 12 月開始，Microsoft Intune 移至 Azure 入口網站，免費試用登入有些在 Azure 入口網站的 Intune，有些在傳統的 Intune 中。 如果您在 Azure 入口網站中試用，完成本文的步驟後，您會發現 [Intune Azure 預覽內容](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)更實用。
 
 ## <a name="assumptions"></a>假設
 本註冊文章與評估指南假設您使用的是僅供評估用途的試用版，且您訂閱時想要以全新的環境開始。
@@ -40,7 +40,7 @@ ms.lasthandoff: 12/15/2016
 ## <a name="sign-up-for-your-trial"></a>註冊試用版
 請造訪 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) 頁面並填寫表格以註冊試用版訂閱。
 
-如果您已經有工作或學校帳戶，而且想要將它用於您的 Intune 試用版，請改為依照[這些登入指示](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)執行作業。 但是，本文章和其評估指南是假設您沒有使用那些帳戶。
+如果您已經有工作或學校帳戶，而且想要將它用於您的 Intune 試用版，請改為依照[這些登入指示](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)執行作業。 但是，本文章和其評估指南是假設您沒有使用那些帳戶。
 
 > [!TIP]
 > 如果您大部分的 IT 作業和使用者的地區設定都和您不一樣，您可以為您的試用版設定該地區設定以測試效能。
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/15/2016
 ## <a name="add-users"></a>加入使用者
 在您離開 Office 365 系統管理中心到 Intune 之前，您需要新增一些使用者至您的試用帳戶。
 
-您可以在 Office 365 系統管理中心個別新增使用者，或透過上傳 .csv 檔案大量新增使用者。 我們支援以這兩種方式設定您的試用版。 但是，在您的生產環境中，您可能會想要使用您的 Azure Active Directory 使用者帳戶 (您可以在我們的[快速入門指南](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)本文章的[後續步驟](#Next-steps)一節中了解相關詳細資訊)。
+您可以在 Office 365 系統管理中心個別新增使用者，或透過上傳 .csv 檔案大量新增使用者。 我們支援以這兩種方式設定您的試用版。 但是，在您的生產環境中，您可能會想要使用您的 Azure Active Directory 使用者帳戶 (您可以在我們的[快速入門指南](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)本文章的[後續步驟](#Next-steps)一節中了解相關詳細資訊)。
 
 ### <a name="add-an-individual-user"></a>新增個別使用者
 1. 選擇兩個選項的其中之一來新增使用者，以開啟可讓您建立使用者的表單。 只需要填寫已加上星號 (\*) 的項目。
@@ -138,13 +138,13 @@ Intune Azure 預覽使用三個入口網站︰
 評估案例：[評估 Microsoft Intune 中的行動裝置管理功能](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Intune Azure 預覽
-深入了解 [Introduction to Microsoft Intune in the Azure portal preview](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) (Azure 入口網站預覽的 Microsoft Intune 簡介)。
+深入了解 [Introduction to Microsoft Intune in the Azure portal preview](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) (Azure 入口網站預覽的 Microsoft Intune 簡介)。
 
 ### <a name="integration-with-other-products"></a>與其他產品整合
 深入了解搭配 Intune 使用您的 Azure Active Directory 使用者帳戶：
-- [身分識別需求](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [目錄同步作業需求](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Multi-Factor Authentication 需求](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [身分識別需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [目錄同步作業需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Multi-Factor Authentication 需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-深入了解使用 [Intune 搭配 System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
+深入了解使用 [Intune 搭配 System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 

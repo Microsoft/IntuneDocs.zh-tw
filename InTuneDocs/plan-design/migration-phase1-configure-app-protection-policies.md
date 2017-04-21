@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/27/2017
 
 ## <a name="app-protection-policies-with-lob-apps"></a>應用程式保護原則搭配 LOB 應用程式
 
-您也可以利用 [Microsoft Intune App SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) 或 [IOS](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) 和[Android](https://www.microsoft.com/en-us/download/details.aspx?id=47267) 平台適用的 Microsoft Intune App Wrapping Tool，將行動裝置應用程式保護原則擴充到您的企業營運 (LOB) 應用程式。
+您也可以利用 [Microsoft Intune App SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) 或 [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) 和[Android](https://www.microsoft.com/download/details.aspx?id=47267) 平台適用的 Microsoft Intune App Wrapping Tool，將行動裝置應用程式保護原則擴充到您的企業營運 (LOB) 應用程式。
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>應用程式保護原則在移轉期間如何提供協助？
 
@@ -46,9 +46,9 @@ Intune 可以在移轉期間提供公司資料保護，所以在沒有裝置層�
 
 ## <a name="task-list-for-app-protection-policies"></a>應用程式保護原則的工作清單
 
--   工作 1：了解[如何準備好設定行動裝置應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+-   工作 1：了解[如何準備好設定行動裝置應用程式保護原則](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
--   工作 2：了解[如何建立及部署行動裝置應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   工作 2：了解[如何建立及部署行動裝置應用程式保護原則](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>後續步驟 
 

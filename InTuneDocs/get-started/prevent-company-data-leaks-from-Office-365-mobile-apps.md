@@ -15,9 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4c13eb3149ea0cc21604a5a05445cfccdc984293
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資�
 ### <a name="additional-information"></a>其他資訊：
 - 使用 MAM 啟用應用程式的[終端使用者體驗](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
 - [使用 Intune 準備 MAM 的 LOB 應用程式](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners" target="_blank"> Microsoft Intune 應用程式夥伴清單 &rarr;</a> 提供啟用 MAM 的應用程式。
+- <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Microsoft Intune 應用程式夥伴清單 &rarr;</a> 提供啟用 MAM 的應用程式。
 
 ## <a name="what-should-i-do-next"></a>下一步該怎麼做？
 [從非 Microsoft MDM 解決方案移轉到 Microsoft Intune](/intune/deploy-use/migrate-to-intune)

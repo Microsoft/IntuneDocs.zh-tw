@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 設定 SharePoint Online 的條件式存取原則**之前**，您必須：
 - 具有 **SharePoint Online 訂用帳戶**，且使用者必須獲得 SharePoint Online 的授權。
-- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者必須獲得 EMS 或 Azure AD 的授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有 **Enterprise Mobility + Security (EMS) 訂用帳戶**或 **Azure Active Directory (Azure AD) Premium 訂用帳戶**，且使用者必須獲得 EMS 或 Azure AD 的授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 
   若要連接到所需的檔案，裝置必須：
@@ -59,10 +60,10 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 -   如果裝置不符合規範，就會顯示一個訊息，將使用者引導至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司入口網站，讓他們找到問題的相關資訊，以及修復問題的方法。
 
-**條件式存取不適用於外部共用**。 若要了解如何防止租用戶或站台集合中的外部共用，請參閱[為您的 SharePoint Online 環境管理外部共用](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)。
+**條件式存取不適用於外部共用**。 若要了解如何防止租用戶或站台集合中的外部共用，請參閱[為您的 SharePoint Online 環境管理外部共用](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)。
 
 >[!NOTE]
->如果您啟用 SharePoint Online 的條件式存取，建議您停用清單上的網域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主題中所述。  
+>如果您啟用 SharePoint Online 的條件式存取，建議您停用清單上的網域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) 主題中所述。  
 
 ## <a name="support-for-mobile-devices"></a>支援行動裝置
 支援下列版本：
@@ -84,7 +85,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 > [!NOTE]
 >若要搭配使用條件式存取與 Windows 10 電腦，您必須使用 Windows 10 年度更新版來更新這些電腦。
 
-  - 您必須將已加入網域的電腦設定為向 Azure Active Directory [自動註冊](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。 Intune 和 Office 365 客戶將會自動啟用 Azure AD 裝置註冊服務。 已部署 ADFS 裝置註冊服務的客戶將不會在內部部署 Active Directory 中看到已註冊的裝置。
+  - 您必須將已加入網域的電腦設定為向 Azure Active Directory [自動註冊](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。 Intune 和 Office 365 客戶將會自動啟用 Azure AD 裝置註冊服務。 已部署 ADFS 裝置註冊服務的客戶將不會在內部部署 Active Directory 中看到已註冊的裝置。
 
   - 如果原則設為需要加入網域，而電腦未加入網域，則會顯示連絡 IT 系統管理員的訊息。
 
@@ -92,7 +93,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
   >[!NOTE]
   >執行 Intune 電腦用戶端的電腦不支援條件式存取。
 
-[必須啟用 Office 365 新式驗證](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，並且具備所有最新的 Office 更新。
+[必須啟用 Office 365 新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，並且具備所有最新的 Office 更新。
 
 新式驗證將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 2013 Windows 用戶端中，並啟用更佳的安全性，例如**多重要素驗證** 和**憑證式驗證**。
 
@@ -129,7 +130,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> 您也可以在 Azure AD 管理主控台中建立 Intune 裝置的條件式存取原則 (此原則在 Azure AD 中稱為**裝置型條件式存取原則**)。 此外，您還可以建立其他條件式存取原則，例如多重要素驗證。 您也可以針對 Azure AD 所支援的協力廠商企業應用程式 (例如，Salesforce 和 Box)，設定條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+> 您也可以在 Azure AD 管理主控台中建立 Intune 裝置的條件式存取原則 (此原則在 Azure AD 中稱為**裝置型條件式存取原則**)。 此外，您還可以建立其他條件式存取原則，例如多重要素驗證。 您也可以針對 Azure AD 所支援的協力廠商企業應用程式 (例如，Salesforce 和 Box)，設定條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com) 中，選擇 [原則]  >  [條件式存取]  >  [SharePoint Online 原則]。
@@ -195,9 +196,4 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

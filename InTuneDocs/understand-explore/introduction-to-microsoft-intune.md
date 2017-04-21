@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ Intune 整合了 Azure AD，以啟用一組廣泛的存取控制案例。 例如
 
 當您使用 Intune 與 EMS 中的其他服務時，可以提供給組織的行動應用程式安全性，會比行動作業系統和行動應用程式本身透過應用程式設定所提供的安全性更高。 使用 EMS 管理的應用程式可以存取更廣泛的行動應用程式和資料保護，包括︰
 
-* [單一登入](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [多重要素驗證](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [應用程式條件式存取 (如果行動應用程式包含公司資料，便允許存取)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [隔離公司資料與相同應用程式內的個人資料](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [從行動應用程式抹除公司資料](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [權限管理支援](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [單一登入](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [多重要素驗證](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [應用程式條件式存取 (如果行動應用程式包含公司資料，便允許存取)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [隔離公司資料與相同應用程式內的個人資料](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [從行動應用程式抹除公司資料](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [權限管理支援](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![顯示應用程式管理資料安全性層級的影像](./media/managing-mobile-apps.png)
 

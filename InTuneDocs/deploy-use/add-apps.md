@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/01/2017
 
 |應用程式類型|詳細資料|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|這種類型的應用程式必須支援不需要使用者輸入的無訊息安裝。 應用程式文件應該包括相關的命令列選項，以無訊息方式安裝應用程式 (例如，**/q**)。 您可以在 [Microsoft Windows Installer 工具的命令列參數](https://support.microsoft.com/en-us/kb/227091)中，找到常用的命令列選項。<br><br>應用程式安裝程式需要的任何其他檔案和資料夾，都必須可以在您為應用程式安裝檔指定的位置中找到。<br><br>在大多數情況下，Windows Installer (.msi) 和 Windows Installer 修補 (.msp) 檔案都不需要 Intune 安裝任何命令列引數。 請查看您的應用程式文件。<br><br>如果需要命令列引數，必須以「名稱=值」配對的格式輸入 (例如 TRANSFORMS=custom_transform.mst)。<br><br>此應用程式類型只適用於執行 Intune 軟體用戶端的電腦。|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|這種類型的應用程式必須支援不需要使用者輸入的無訊息安裝。 應用程式文件應該包括相關的命令列選項，以無訊息方式安裝應用程式 (例如，**/q**)。 您可以在 [Microsoft Windows Installer 工具的命令列參數](https://support.microsoft.com/kb/227091)中，找到常用的命令列選項。<br><br>應用程式安裝程式需要的任何其他檔案和資料夾，都必須可以在您為應用程式安裝檔指定的位置中找到。<br><br>在大多數情況下，Windows Installer (.msi) 和 Windows Installer 修補 (.msp) 檔案都不需要 Intune 安裝任何命令列引數。 請查看您的應用程式文件。<br><br>如果需要命令列引數，必須以「名稱=值」配對的格式輸入 (例如 TRANSFORMS=custom_transform.mst)。<br><br>此應用程式類型只適用於執行 Intune 軟體用戶端的電腦。|
 |**Android 應用程式套件 (&#42;.apk)**|若要部署 Android 應用程式，必須具備有效的 .apk 套件。|
 |**iOS 應用程式套件 (&#42;.ipa)**|若要部署 iOS 應用程式，必須具備有效的 .ipa 套件。<br><br>.ipa 套件必須已由 Apple 簽署，而且佈建設定檔中的到期日必須有效。 Intune 可散發企業憑證 iOS 應用程式。<br><br>但無法支援所有 Apple 開發人員憑證應用程式。<br><br>您的公司必須註冊 iOS Developer Enterprise Program。<br><br>請確定您的組織防火牆可讓您存取 iOS 佈建與憑證網站。<br><br>您不需要搭配應用程式部署資訊清單檔案 (.plist)。|
 |**Windows Phone 應用程式套件 (&#42;.xap、.appx、.appxbundle)**|若要部署應用程式，您將需要企業行動程式碼簽署憑證。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Windows Phone 管理](set-up-windows-device-management-with-microsoft-intune.md)。|
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/01/2017
 
 根據外部連結的應用程式不會儲存在您的 Intune 雲端儲存空間。
 ### <a name="managed-ios-app-from-the-app-store"></a>**App Store 中的受管理 iOS 應用程式**
-您可以使用受管理 iOS 應用程式，管理和部署 App Store 的免費 iOS 應用程式。 您也可以使用受管理 iOS 應用程式，將[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)與[相容的應用程式](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)產生關聯，並在系統管理員主控台中檢閱其狀態。<br /><br />受管理 iOS 應用程式不會儲存在您的 Intune 雲端儲存空間中。
+您可以使用受管理 iOS 應用程式，管理和部署 App Store 的免費 iOS 應用程式。 您也可以使用受管理 iOS 應用程式，將[行動應用程式管理原則](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)與[相容的應用程式](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)產生關聯，並在系統管理員主控台中檢閱其狀態。<br /><br />受管理 iOS 應用程式不會儲存在您的 Intune 雲端儲存空間中。
 
 > [!TIP]
 > 在您[設定 MDM 授權單位](prerequisites-for-enrollment.md)為 Intune 前，無法使用行動裝置的選項。

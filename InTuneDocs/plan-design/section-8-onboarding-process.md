@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 12/30/2016
 
 如前一節＜需求＞所指出，需要訂閱 EMS 或 Intune。 貴組織若未訂閱 EMS 或 Intune，請連絡 Microsoft 或 Microsoft 帳戶小組洽詢 Enterprise Mobility + Security (EMS) 或 Intune 購買事宜。
 
--   深入了解[如何購買 Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)。
+-   深入了解[如何購買 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)。
 
 #### <a name="task-2-add-office-365-subscription"></a>工作 2︰新增 Office 365 訂閱
 
@@ -116,7 +116,7 @@ Microsoft Intune 支援電子郵件、Wi-Fi 和 VPN 設定檔。 您可在 Intun
 
 Microsoft Intune 支援部署 Web、LOB 和公用市集應用程式。 此外，支援透過建立已整合 Intune SDK 的應用程式與 MAM 原則的關聯性，來管理它們。 您可在 Intune 管理入口網站的 [應用程式] 工作區中完成新增與部署應用程式。 您可在 Intune 管理入口網站的 [原則] 工作區中完成新增 MAM 原則。 適當新增應用程式，根據您的 Intune 部署使用案例和需求部署至目標群組。
 
--   深入了解 [Deploy apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps) (使用 Microsoft Intune 部署應用程式)。
+-   深入了解 [Deploy apps with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps) (使用 Microsoft Intune 部署應用程式)。
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>工作 11：新增及部署相容性原則
 

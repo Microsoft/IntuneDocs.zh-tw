@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 ## <a name="how-does-conditional-access-work"></a>條件式存取的運作方式
 您可以使用合規性原則設定來評估裝置的合規性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 當您使用條件式存取原則搭配裝置相容性原則時，只有符合規範的裝置才能存取服務。 相容性原則和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 請記住，必須將合規性原則部署至使用裝置的使用者，才能評估裝置的合規性。
 > 如果沒有將合規性原則部署至使用者，裝置就被視為符合規範，而不會套用存取限制。
 
@@ -48,7 +48,7 @@ Microsoft Intune 和 Azure Active Directory (Azure AD) Premium 可完美合作�
 
 **Azure AD Premium 授權**可以獨立服務的形式來購買，或與企業版合約一起購買 (連同 Intune)。 如果您要使用 Intune 來部署條件式存取原則，請務必取得適當的 Azure AD Premium 或 **EMS 授權**。
 
-- 深入了解 [Enterprise Mobility 定價頁面](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 深入了解 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 此外，請確認您已[指派 Azure AD Premium 或 EMS 授權](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)給要套用條件式存取原則的目標使用者。
 

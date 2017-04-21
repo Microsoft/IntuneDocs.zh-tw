@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: b01b68b7587cb91f24285cdffafeab43296886e6
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fce3edb43a147491465d8a58d1a9a4f009fba55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組�
 
 -   深入了解 [Plan your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups) (規劃您的使用者和裝置群組)。
 
--   了解[在 Microsoft Intune 中使用群組管理使用者和裝置](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
+-   了解[在 Microsoft Intune 中使用群組管理使用者和裝置](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 如果貴組織已使用 Office 365，Intune 使用相同的 Azure Active Directory 環境極為重要。
 

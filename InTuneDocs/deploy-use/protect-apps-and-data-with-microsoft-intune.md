@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -49,7 +49,7 @@ Intune 透過多重技術層級保護公司資料。 在身分識別層，條件
 
 若要讓應用程式與 MAM 原則產生關聯，應用程式必須納入 Microsoft Intune 應用程式軟體開發套件 (SDK)，或使用應用程式包裝工具。
 
-Microsoft Office 之類的應用程式已內建 Intune App SDK。 您可以移至 Microsoft Intune 應用程式夥伴頁面上的 [Microsoft Intune 行動應用程式庫](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)，查看受支援應用程式的完整清單。 選擇應用程式來查看支援的案例、平台和應用程式是否支援多重身分識別。
+Microsoft Office 之類的應用程式已內建 Intune App SDK。 您可以移至 Microsoft Intune 應用程式夥伴頁面上的 [Microsoft Intune 行動應用程式庫](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)，查看受支援應用程式的完整清單。 選擇應用程式來查看支援的案例、平台和應用程式是否支援多重身分識別。
 
 您也可以[啟用自訂建置的企業營運應用程式](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)來搭配 MAM 原則一起使用。
 

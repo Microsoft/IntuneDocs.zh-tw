@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |電子郵件設定檔|這個原則可以用來設定行動裝置上特定電子郵件用戶端的[電子郵件存取設定](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，以將使用者必須執行的設定量減到最少。|
-|EMS|Microsoft Enterprise Mobility + Security (之前為 Enterprise Mobility Suite) 會保護公司資料，同時讓使用者[存取應用程式和其所需的內容](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)。|
+|EMS|Microsoft Enterprise Mobility + Security (之前為 Enterprise Mobility Suite) 會保護公司資料，同時讓使用者[存取應用程式和其所需的內容](https://www.microsoft.com/cloud-platform/enterprise-mobility)。|
 |使用者|使用 Intune 管理之[手機和電腦這類裝置的使用者](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
 |註冊|Microsoft Intune 使用[註冊](/intune/deploy-use/enroll-devices-in-microsoft-intune)來管理裝置，並允許其存取資源。|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |遠端鎖定|一種 Intune 功能，可讓您[鎖定支援的裝置](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)，即使您未擁有裝置也是一樣。|
 |報告|Intune 提供各種[內建報表](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports)，以將所管理裝置的相關資訊提供給您。|
 |必要安裝|使用這項動作部署應用程式時，它會在[沒有使用者介入](/intune/deploy-use/deploy-apps)的情況下安裝於裝置上 (雖然對於某些平台，使用者可能必須接受安裝)。|
-|需求|一個[應用程式部署作業](/en-us/intune/deploy-use/add-apps)，可讓您選取必須符合才能在裝置上安裝應用程式的需求。 例如，您可以指定必須在安裝應用程式前安裝之 iOS 的作業系統版本。|
+|需求|一個[應用程式部署作業](/intune/deploy-use/add-apps)，可讓您選取必須符合才能在裝置上安裝應用程式的需求。 例如，您可以指定必須在安裝應用程式前安裝之 iOS 的作業系統版本。|
 
 ## <a name="s"></a>S
 |||

@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ ms.lasthandoff: 01/05/2017
 ## <a name="whats-not-covered"></a>未涵蓋的項目
 |如果您有興趣 |閱讀這個 |
 |------------------------|----------|
-|非測試環境中的 MDM | [快速入門](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|MDM 搭配 Intune 和 System Center Configuration Manager | [混合式行動裝置管理](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|非測試環境中的 MDM | [快速入門](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM 搭配 Intune 和 System Center Configuration Manager | [混合式行動裝置管理](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 因為上述指南會協助您在生產環境中設定 Intune，它們的設定程序較長，且設定時需要您做決定的決策點也比評估指南多。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/05/2017
 
 如果您單獨使用 Intune (如此試用版所假設)，或如果您在 Enterprise Mobility + Security (EMS) 訂閱中使用 Intune，您需要將 Intune 設定為您的行動裝置管理授權單位。 也就是說，您將 Intune 指定為要在組織中用來管理行動裝置的服務。
 
-想要使用 Intune 搭配 System Center Configuration Manager 來管理行動裝置的客戶，必須決定要使用 Intune 或 Configuration Manager 做為他們的行動裝置管理授權單位。 在生產環境中這是很重要的決策，因為一旦決定後就非常難以變更這個設定，但這已經超出本評估指南的範圍。 若要深入了解將 Intune 或 Configuration Manager 設定為您 MDM 授權單位的影響，請參閱[在獨立 Intune 和混合式行動裝置管理之間做選擇](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+想要使用 Intune 搭配 System Center Configuration Manager 來管理行動裝置的客戶，必須決定要使用 Intune 或 Configuration Manager 做為他們的行動裝置管理授權單位。 在生產環境中這是很重要的決策，因為一旦決定後就非常難以變更這個設定，但這已經超出本評估指南的範圍。 若要深入了解將 Intune 或 Configuration Manager 設定為您 MDM 授權單位的影響，請參閱[在獨立 Intune 和混合式行動裝置管理之間做選擇](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
 針對試用版，我們會將 Intune 設為 MDM 授權單位；這不會影響您的生產環境，除非您決定要將試用版用於實際執行環境。
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/05/2017
 3.    **將 APNs 憑證新增至 Intune**<BR/>
 在 Microsoft Intune 管理主控台中，移至 [系統管理] > [行動裝置管理] >  [iOS 與 Mac OS X] > [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 Apple ID。 使用 APNs 憑證。 透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
 4.    **告訴使用者如何註冊其裝置來存取公司資源。**<br/>
-如需使用者註冊指示，請參閱[在 Intune 中註冊您的 iOS 裝置](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios)和[在 Intune 中註冊您的 Mac OS X 裝置](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
+如需使用者註冊指示，請參閱[在 Intune 中註冊您的 iOS 裝置](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios)和[在 Intune 中註冊您的 Mac OS X 裝置](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
 
 
 ### <a name="learn-more-about-device-enrollment"></a>深入了解裝置註冊
