@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 
 1.  使用 Intune 認證登入 [Office 365 系統管理中心](https://portal.office.com)。
 
-    如果您是頂級支援客戶，您應該改為在[頂級支援頁面](https://support.microsoft.com/en-us/premier/contacts)開立 Intune 支援票證。
+    如果您是頂級支援客戶，您應該改為在[頂級支援頁面](https://support.microsoft.com/premier/contacts)開立 Intune 支援票證。
 
     >[!NOTE]
     >
-    >頂級支援客戶應該在[頂級支援頁面](https://support.microsoft.com/en-us/premier/contacts)中開立 Intune 支援票證。
+    >頂級支援客戶應該在[頂級支援頁面](https://support.microsoft.com/premier/contacts)中開立 Intune 支援票證。
 
 2.  選擇 [管理] 磚。
 3.  在左側的 [支援] 下方，選擇 [支援] 以開立票證。
@@ -136,7 +136,7 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 - 單一使用者正經歷部分中斷狀況，但有可接受的因應措施。
 
 > [!NOTE]
-> **如果您使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**如需 Configuration Manager 或 Endpoint Protection 的技術支援，請連絡您的合作夥伴，或瀏覽 [Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) 和 [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) 文件，以尋找豐富的自助資料。 它也提供透過線上或是電話開立支援要求的選項。
+> **如果您使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**如需 Configuration Manager 或 Endpoint Protection 的技術支援，請連絡您的合作夥伴，或瀏覽 [Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) 和 [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) 文件，以尋找豐富的自助資料。 它也提供透過線上或是電話開立支援要求的選項。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技術支援需要付費，或從您現有的授權或頂級支援協議中扣減。
 
