@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/30/2016
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-行動裝置管理使用案例會說明使用者類型或角色，以及其裝置的擁有權 (例如公司或個人)。 使用者案例非常實用，因為這些案例有助您將使用者細分成可管理的群組。 若想成功部署 Intune，識別使用案例是規劃程序中很重要的一部分。
+行動裝置管理使用案例會說明使用者類型或角色，以及其裝置的擁有權 (例如公司或個人)。 使用者案例非常實用，因為這些案例可讓您將使用者細分成可管理的群組。 若想成功部署 Intune，識別使用案例是規劃程序中很重要的一部分。
 
 接下來，我們會討論幾個範例，以協助組織識別 Intune 使用案例、組織群組，以及每個使用案例的相關聯行動裝置平台。
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/30/2016
 
 -   Kiosk
 
-以下是使用案例和次要使用案例的幾個範例。 您也可以使用下表來輸入您的組織使用案例及次要使用案例：
+以下是使用案例和次要使用案例的幾個範例。 您也可以使用下表來輸入您組織的使用案例及次要使用案例：
 
 | **使用案例** | **次要使用案例** |
 |:---:|:---:|
@@ -82,7 +82,7 @@ ms.lasthandoff: 12/30/2016
 | BYOD | 資訊工作者 | 行銷、銷售 | iOS |                                                           
 | BYOD | 主管 | 行銷、銷售 | iOS |
 
-## <a name="next-section"></a>下一節
+## <a name="next-steps"></a>後續步驟
 
 下一節提供[如何識別每個使用案例的 Intune 需求](section-3-determine-use-case-requirements.md)的指引。
 

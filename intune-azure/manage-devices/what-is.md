@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -80,6 +80,9 @@ ms.lasthandoff: 03/17/2017
 1.    在 iOS 裝置的 [屬性] 刀鋒視窗上，選擇 [更多]  >  [尋找裝置]。
 2.    找到裝置之後，它的位置會顯示在 [尋找裝置] 刀鋒視窗上。 
     ![尋找裝置刀鋒視窗](./media/locate-device.png)
+
+>[!NOTE]
+>基於隱私權之目的，您能將地圖放大的距離將會受到限制。
 
 ### <a name="restart"></a>**重新啟動**
 強制裝置重新開機。 重新啟動時不會自動通知裝置擁有者，因此將會遺失工作。
