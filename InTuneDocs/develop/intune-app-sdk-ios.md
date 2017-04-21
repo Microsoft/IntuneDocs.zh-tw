@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 1d2cb0d4b9442262c562e559a675f5a4a28ee572
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -71,7 +71,12 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 若要啟用 Intune App SDK，請遵循下列步驟：
 
-1. **選項 1**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
+1. **選項 1 (建議)**：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
+
+    > [!NOTE]
+    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store) 以取得詳細資料。
+
+2. **選項 2**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
 
     ![Intune App SDK iOS：連結的架構和程式庫](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -84,11 +89,6 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
         > [!NOTE]
         > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
-
-2. **選項 2**：將 `IntuneMAM.framework` 連結至專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
-
-    > [!NOTE]
-    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store)
 
 3. 將下列 iOS 架構新增至專案：
     * MessageUI.framework
@@ -127,22 +127,21 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     </array>
     ```
 
-7. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。
-
-    如果您使用 UI 來建立 Keychain 存取群組：
+7. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循下列步驟：
 
     1. 如果您的行動應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
-    2. 新增共用的 Keychain 群組 `com.microsoft.intune.mam`。 Intune App SDK 使用這個存取群組來儲存資料。
+    2. 將共用 Keychain 群組 `com.microsoft.intune.mam` 新增至現有的存取群組。 Intune App SDK 使用這個存取群組來儲存資料。
 
     3. 將 `com.microsoft.adalcache` 新增至現有存取群組。
 
-    ![Intune App SDK iOS：Keychain 共用](../media/intune-app-sdk-ios-keychain-sharing.png)
+        4. 將 `com.microsoft.workplacejoin` 新增至現有存取群組。
+            ![Intune App SDK iOS：Keychain 共用](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    如果您使用權利檔案來建立 Keychain 存取群組，請在權利檔案中，於 Keychain 存取群組之前加上 `$(AppIdentifierPrefix)`。 例如：
+      5. 如果您是使用權利檔案來建立 Keychain 存取群組，請在權利檔案中，於 Keychain 存取群組之前加上 `$(AppIdentifierPrefix)`。 例如：
 
-          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > 權利檔案是行動應用程式特有的 XML 檔案， 它用來指定 iOS 應用程式內的特殊權限和功能。
@@ -151,42 +150,37 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 8. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-9. 如果應用程式在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 IntuneMAMSettings 字典的 `AppGroupIdentifiers` 索引鍵下。
-
-10. 將行動應用程式連結至適用於 iOS 的 Azure Directory Authentication Library (ADAL)。 您可以在 [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 上取得 Objective-C 的 ADAL 程式庫。
-
-    > [!NOTE]
-    > 建議您將應用程式與 ADAL 的最新/工作版本連結。
-
-11. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
-
-12. 當您連結至程式庫時，使用 `-force_load PATH_TO_ADAL_LIBRARY` 連結器選項。
-
-    將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。
+9. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
 
 
 
-## <a name="configure-azure-directory-authentication-library-adal"></a>設定 Azure Directory Authentication Library (ADAL)
+## <a name="configure-azure-active-directory-authentication-library-adal"></a>設定 Azure Active Directory Authentication Library (ADAL)
 
-Intune App SDK 在自我驗證和條件式啟動案例中會使用 ADAL。 它也會依賴 ADAL 向 MAM 服務註冊使用者身分識別來進行沒有裝置註冊案例的管理。
+Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Directory Authentication Library (英文)](https://github.com/AzureAD/azure-activedirectory-library-for-objc)。 它也會依賴 ADAL 向 MAM 服務註冊使用者身分識別來進行沒有裝置註冊案例的管理。
 
-一般來說，ADAL 需要應用程式向 Azure Active Directory (AAD) 註冊並取得唯一識別碼 (用戶端識別碼) 及其他識別碼，以確保授與應用程式的權杖安全無虞。 Intune App SDK 在連絡 Azure AD 時，會使用預設登錄值。  
+一般來說，ADAL 需要應用程式向 Azure Active Directory (AAD) 註冊並取得唯一識別碼 (用戶端識別碼) 及其他識別碼，以確保授與應用程式的權杖安全無虞。 除非另行指定，否則 Intune App SDK 在連絡 Azure AD 時會使用預設登錄值。  
 
-如果應用程式本身在自我驗證案例中使用 ADAL，應用程式必須使用其現有的登錄值並覆寫 Intune App SDK 預設值， 以確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
+如果您的應用程式已經使用 ADAL 來驗證使用者，該應用程式必須使用其現有的登錄值，並覆寫 Intune App SDK 預設值。 這能確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
 
-### <a name="adal-faqs"></a>ADAL 常見問題集
+### <a name="recommendations"></a>建議
 
-**應該使用什麼 ADAL 二進位檔？**
+建議您的應用程式連接至 ADAL Master 分支上[最新版本的 ADAL (英文)](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)。 Intune App SDK 目前使用 ADAL 的 Broker 分支，以支援需要條件式存取的應用程式。 (因此這些應用程式需要 Microsoft Authenticator 應用程式)。不過，SDK 仍然與主要 ADAL 分支相容。 請使用適合您應用程式的分支。
 
-Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 的 Broker 分支，以支援需要條件存取的應用程式 (因此這些應用程式需要 Microsoft Authenticator 應用程式)。不過，SDK 仍然與主要 ADAL 分支相容。 請使用適合您應用程式的分支。
+### <a name="link-to-adal-binaries"></a>連結至 ADAL 二進位檔
 
-**如何連結至 ADAL 二進位檔？**
+請遵循下列步驟以將應用程式連結至 ADAL 二進位檔：
 
-將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。 也請務必將 ADAL 配套複製至應用程式。  
+1. 從 GitHub 下載[適用於 Objective-C 的 Azure Active Directory Authentication Library (ADAL) (英文)](https://github.com/AzureAD/azure-activedirectory-library-for-objc)，然後遵循使用 Git 子模組或 CocoaPods 下載 ADAL 的[指示 (英文)](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md)。
 
-如需詳細資訊，請參閱 [GitHub 上的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 中的指示。
+2. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `ADALiOSBundle.bundle` 資源配套加入專案。
 
-**如何與其他使用相同佈建設定檔所簽署的應用程式共用 ADAL 權杖快取？**
+3. 將 `-force_load {PATH_TO_LIB}/libADALiOS.a` 新增至專案的 `OTHER_LDFLAGS` 組建組態設定或 UI 的 「Other Linker Flags」 (其他連結器旗標) 中。 `PATH_TO_LIB` 應該取代成 ADAL 二進位檔位置。
+
+
+
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>與其他使用相同佈建設定檔簽署的應用程式共用 ADAL 權杖快取？**
+
+如果您想要在使用相同佈建設定檔簽署的應用程式之間共用 ADAL 權杖，請遵循下列指示：
 
 1. 如果您的應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
@@ -194,9 +188,9 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 
 3. 如果您明確地設定 ADAL 共用快取 Keychain 群組，請確定它設為 `<app_id_prefix>.com.microsoft.adalcache`。 除非您覆寫這個項目，否則 ADAL 將為您進行設定。 如果您想要指定自訂 Keychain 群組以取代 `com.microsoft.adalcache`，請在 Info.plist 檔案的 IntuneMAMSettings 下使用 `ADALCacheKeychainGroupOverride` 索引鍵指定該行為。
 
-**如何強制 Intune App SDK 使用我的應用程式已使用的 ADAL 設定？**
+### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的 ADAL 設定
 
-如果您的應用程式已經使用 ADAL，請參閱[設定 Intune App SDK 的設定](#configure-settings-for-the-intune-app-sdk)，以取得如何填入下列設定的相關資訊：  
+如果您的應用程式已經使用 ADAL 來進行驗證，並擁有自己的 ADAL 設定，您可以強制 Intune App SDK 在針對 Azure Active Directory 進行驗證期間使用相同的設定。 這能確保應用程式不會重複提示使用者進行驗證。 請參閱[設定 Intune App SDK 的設定](#configure-settings-for-the-intune-app-sdk)，以取得如何填入下列設定的相關資訊：  
 
 * ADALClientId
 * ADALAuthority
@@ -204,29 +198,25 @@ Intune App SDK 目前使用 [GitHub 上的 ADAL](https://github.com/AzureAD/azur
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
+如果您的應用程式已經使用 ADAL，下列設定為必要：
 
-**如何將 Azure AD 授權單位 URL 覆寫為執行階段時所提供的租用戶特定 URL？**
+1. 在專案的 Info.plist 檔案中，在 **IntuneMAMSettings** 字典下的索引鍵名稱 `ADALClientId` 處，指定要用於呼叫 ADAL 的用戶端識別碼。
 
-在 IntuneMAMPolicyManager 執行個體上設定 `aadAuthorityUriOverride` 屬性。
+2. 另外在 **IntuneMAMSettings** 字典下的索引鍵名稱 `ADALAuthority` 處，指定 Azure AD 授權。
+
+3. 另外在 **IntuneMAMSettings** 字典下的索引鍵名稱 `ADALRedirectUri` 處，指定要用於呼叫 ADAL 的重新導向 URI。 根據您應用程式的重新導向 URI 格式，您可能還需要指定 `ADALRedirectScheme`。
+
+
+除此之外，您可以於執行階段將 Azure AD 授權 URL 覆寫為租用戶特定 URL。 若要這麼做，請設定 `IntuneMAMPolicyManager` 執行個體上的 `aadAuthorityUriOverride` 屬性。
 
 > [!NOTE]
-> 在沒有裝置註冊的應用程式中需要有這個項目，才能讓 SDK 重複使用應用程式所擷取的 ADAL 重新整理權杖。
+> 針對[沒有裝置註冊的應用程式](#App-protection-policy-without-device-enrollment)，設定 AAD 授權 URL 是必要的，因為這才能讓 SDK 重複使用應用程式所擷取的 ADAL 重新整理權杖。
 
-除非清除或變更值，否則 SDK 將繼續使用這個授權單位 URL 進行原則重新整理以及任何後續註冊要求。  因此，請務必在公司使用者登出應用程式時清除值，並在新的公司使用者登入時進行重設。
+除非清除或變更值，否則 SDK 將繼續使用這個授權單位 URL 進行原則重新整理以及任何後續註冊要求。  因此，請務必在受管理使用者登出應用程式時清除值，並在新的受管理使用者登入時重設該值。
 
-**如果我的應用程式本身使用 ADAL 進行驗證，應該怎麼做？**
+### <a name="if-your-app-does-not-use-adal"></a>如果您的應用程式未使用 ADAL
 
-如果應用程式已經使用 ADAL 進行驗證，則需要下列動作：
-
-1. 在專案的 Info.plist 檔案中，於索引鍵名稱為 `ADALClientId` 的 IntuneMAMSettings 字典下，指定要用於呼叫 ADAL 的用戶端識別碼。
-
-2. 另外在 IntuneMAMSettings 字典下的索引鍵名稱 `ADALAuthority` 處，指定 Azure AD 授權單位。
-
-3. 另外在 IntuneMAMSettings 字典下的索引鍵名稱 `ADALRedirectUri` 處，指定要用於呼叫 ADAL 的重新導向 URI。 根據您應用程式的重新導向 URI 格式，您可能還需要指定 `ADALRedirectScheme`。
-
-**如果我的應用程式尚未使用 ADAL 進行驗證，該怎麼做？**
-
-如果您的應用程式未使用 ADAL，Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。
+如果您的應用程式未使用 ADAL，Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。 您不需要為上面所列的 ADAL 設定指定任何值。
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
 
@@ -426,9 +416,6 @@ Intune 可讓 IT 系統管理員選取受管理的應用程式可儲存資料的
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
-* IntuneMAMSaveLocationBox
-* IntuneMAMSaveLocationDropbox
-* IntuneMAMSaveLocationGoogleDrive
 * IntuneMAMSaveLocationLocalDrive
 
 應用程式應使用 **isSaveToAllowedForLocation** API 的常數確認是否可以將資料另存於其他被視為「受管理」(例如商務用 OneDrive) 或「個人」的位置。 此外，當應用程式無法確認位置為「受管理」或「個人」的位置時，也應使用 API。
@@ -560,27 +547,46 @@ SDK 會追蹤本機檔案擁有者的身分識別，並據以套用原則。 建
 
     請注意，會從背景執行緒呼叫這個方法。 在移除使用者的所有資料之前，應用程式不應該傳回值 (不包括應用程式傳回 FALSE 時的檔案)。
 
-## <a name="debug-the-intune-app-sdk-in-xcode"></a>在 Xcode 中對 Intune App SDK 進行偵錯
+## <a name="test-app-protection-policy-settings-in-xcode"></a>在 Xcode 中測試應用程式保護原則設定
 
-使用 Microsoft Intune 手動測試啟用 MAM 的應用程式之前，您可以在 Xcode 中使用 Settings.bundle 檔案。 這可讓您設定測試原則，而不需要連線到 Intune。 若要加以啟用：
+在您手動於生產環境中測試啟用 Intune 的應用程式之前，您可以在 Xcode 中使用 Settings.bundle 檔案。 這可讓您在無需要連線到 Intune 的情況下，針對測試設定應用程式保護原則。
 
-1. 以滑鼠右鍵按一下您專案中的最上層資料夾，來新增 Settings.bundle 檔案。 從功能表選擇 [新增] > [新增檔案]。 在 [資源] 底下，選擇要新增的 「Settings Bundle」 (設定配套) 範本。
+### <a name="enable-policy-testing"></a>啟用原則測試
 
-2. 只在偵錯組建上，將 MAMDebugSettings.plist 複製到 Settings.bundle 中。
+遵循下列步驟以在 Xcode 中啟用原則測試：
 
-3. 在 Settings.bundle 的 Root.plist 中，新增 `Type` = `Child Pane` 且 `FileName` = `MAMDebugSettings` 的喜好設定。
+1. 請確定您是使用偵錯組建。 以滑鼠右鍵按一下您專案中的最上層資料夾，來新增 Settings.bundle 檔案。 從功能表選擇 [新增] > [新增檔案]。 在 [資源] 底下，選擇 [設定配套] 範本。
 
-4. 在 [設定] > [您的應用程式名稱] 中，開啟 「Enable Test Policies」 (啟用測試原則)。
+2.  將下列區塊複製到偵錯組建的 Settings.bundle/**Root.plist** 檔案：
+    ```xml
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>MDM Debug Settings</string>
+            <key>Key</key>
+            <string>MAMDebugSettings</string>
+            <key>File</key>
+            <string>MAMDebugSettings</string>
+        </dict>
+    </array>
+    ```
 
-5. 在 Xcode 內部或外部啟動應用程式。
+3. 在應用程式 Info.plist 中的 **IntuneMAMSettings** 字典中，新增名為 "DebugSettingsEnabled" 的布林值。 將 DebugSettingsEnabled 的值設定為 [是]。
 
-6. 在 [設定] > [您的應用程式名稱] > 「Enable Test Policies」 (啟用測試原則) 中，開啟原則，例如 **PIN**。
 
-7. 在 Xcode 內部或外部啟動應用程式。 確認 PIN 如預期般運作。
 
-> [!NOTE]
-> 您可以使用 [設定] > [您的應用程式名稱] > 「Enable Test Policies」 (啟用測試原則)，來啟用並切換設定。
+### <a name="app-protection-policy-settings"></a>應用程式保護原則設定
 
+下表描述您可以使用 MAMDebugSettings.plist 進行測試的應用程式保護原則設定。 若要開啟某個設定，請將它新增到 MAMDebugSettings.plist。
+
+| 原則設定名稱 | 說明 | 可能值 |
+| -- | -- | -- |
+| AccessRecheckOfflineTimeout | 在啟用驗證的情況下，於 Intune 封鎖應用程式進行啟動或繼續之前，應用程式可以保持離線的時間長度 (以分鐘為單位)。 | 任何大於 0 的整數 |
+|    AccessRecheckOnlineTimeout | 在針對存取啟用驗證或 PIN 的情況下，於啟動或繼續時提示使用者輸入 PIN 或進行驗證之前，應用程式可以執行的時間長度 (以分鐘為單位)。 | 任何大於 0 的整數 |
+| AppSharingFromLevel | 指定此應用程式可以從哪些應用程式接收資料。 | 0 = |
 ## <a name="ios-best-practices"></a>iOS 最佳做法
 
 以下是用於開發 iOS 的建議最佳做法：

@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>系統管理員如何取得 Microsoft Intune 支援
+# <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱支援。 付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。 線上技術支援提供英文與日文。 電話支援與線上帳單支援另提供其他語言。
 
 Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂級支援客戶必須支付程序問題 (例如如何設定 Intune 功能) 的費用。
+
+>[!IMPORTANT]
+> 針對搭配 Intune 使用且不是由 Microsoft 所開發之產品 (例如 SaaSwedo、Cisco 或 Lookout) 的技術支援，請先連絡該產品的供應商，以確保您在向 Intune 支援開啟案例之前已做出正確的設定。
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>在不開啟支援票證的情況下尋求協助
 
@@ -39,6 +42,13 @@ Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 頂�
 提出問題或開始與 Microsoft 技術專家討論！ 我們在可搜尋的 [Microsoft Intune TechNet 論壇](https://social.technet.microsoft.com/Forums/home)上提供解答和深入解析。
 
 ![Microsoft Intune TechNet 論壇](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>開始使用論壇
+
+1. 在論壇頁面上，於 [論壇] 方塊中輸入 Microsoft Intune，然後從清單中選取它。<br>
+![Intune 論壇選取控制項](./media/forum-select-intune.png)
+2. 您將會在 [選取的論壇] 清單中看見 Microsoft Intune。<br>
+![已在論壇控制項中選取的 Intune](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 產品意見反應網站
 

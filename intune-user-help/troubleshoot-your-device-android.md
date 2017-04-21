@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
-ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
-ms.lasthandoff: 03/25/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -41,6 +41,7 @@ ms.lasthandoff: 03/25/2017
 - [您必須關閉 USB 偵錯](you-need-to-turn-off-usb-debugging-android.md)
 - [您必須開啟安全性威脅掃描](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [您的裝置不符合最低安全性修補程式](you-need-to-update-your-device-OS-security-patch-android.md)
+- [您的裝置顯示為已加密，但公司入口網站應用程式的說法不同](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [系統提示您在您的 Android 裝置上安裝裝置威脅防護應用程式](you-are-prompted-to-install-mtd-android.md)
 - [您必須解決裝置威脅防護應用程式在 Android 裝置上找到的威脅](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 
