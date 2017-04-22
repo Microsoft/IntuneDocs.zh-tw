@@ -360,7 +360,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 **解決方法：**
 
 1. 從 [開始] 功能表，鍵入 [執行] -> [MMC]。
-1. 選擇 [檔案] > [Add/ Remove Snap-ins] (新增/移除嵌入式管理單元)。
+1. 選擇 [檔案] > [Add/ Remove Snap-ins]\(新增/移除嵌入式管理單元)。
 1. 按兩下 [憑證]，並選擇 [電腦帳戶] > [下一步]，然後選取 [本機電腦]。
 1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。
 1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時刪除。
