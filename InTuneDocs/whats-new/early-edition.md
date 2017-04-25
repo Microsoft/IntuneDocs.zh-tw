@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Microsoft MyApps 現在於 Managed Browser 中提供更佳支援。 非管理目
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser 和公司入口網站的新圖示 <!--918433, 918431-->
 
-Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，因此與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。
+Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，因此與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。 您可以在 [Intune App UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Managed Browser 的新圖示。
 
 公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以改進與 EM+S 中其他應用程式的一致性。 從四月到五月底，這些圖示會逐漸在各平台發行。
 
@@ -59,7 +59,7 @@ Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示�
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
-Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。
+Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。 您可以在 [Intune App UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Android 公司入口網站應用程式的新畫面。 
 
 
 ## <a name="notices"></a>通知
@@ -175,11 +175,6 @@ Intune 將會使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>從 Apple VPP Store 同步處理電子書 <!-- 800878 -->
 
 您可以將從 Apple 大量採購程式市集購買的書籍與 Intune 同步處理，然後將這些書籍指派給使用者。
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Samsung KNOX Standard 裝置的共用輪班員工裝置 <!-- 773753 -->
-
-您可以在 Intune 入口網站中，將 Samsung KNOX Standard 裝置設定為共用輪班員工裝置。 一旦裝置處於共用模式，該裝置上的應用程式、原則和電子郵件會繫結至登入公司入口網站之使用者的身分識別。
-使用者可以使用其 Azure Active Directory 認證登入公司入口網站應用程式，而其應用程式、原則和電子郵件設定將會自動套用到裝置。
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX Standard 裝置的多使用者管理 <!-- 971988 -->
 
