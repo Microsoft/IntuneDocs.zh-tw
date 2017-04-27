@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: "Microsoft Intune 文件 | Microsoft Docs"
 description: "了解如何使用 Microsoft Intune。"
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 1f8b03315c6026a60ef25b1ee6946d4186c82b08
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
+ms.lasthandoff: 04/24/2017
 
 ---
 <div id="main" class="v2">
@@ -451,7 +451,7 @@ ms.lasthandoff: 04/14/2017
                     <a href="#manage-plan">規劃部署</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -461,8 +461,8 @@ ms.lasthandoff: 04/14/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>決定目的、目標和挑戰</h3>
-                                            <p>設定部署時所需管理目的、目標和挑戰的範圍。</p>
+                                            <h3>支援的裝置與瀏覽器</h3>
+                                            <p>閱讀服務所支援裝置和瀏覽器的詳細資訊。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -476,12 +476,12 @@ ms.lasthandoff: 04/14/2017
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>識別使用案例</h3>
-                                            <p>在識別您的部署使用案例之際，查看部分使用案例範例。 </p>
+                                            <h3>部署計劃、設計和實作指南</h3>
+                                            <p>開發部署計畫、建立設計、讓 Intune 運作，並在生產環境中推出。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,18 +489,18 @@ ms.lasthandoff: 04/14/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>開發推出計劃</h3>
-                                            <p>決定 Intune 推出的目標組織群組，以及每個群組的推出時間範圍。</p>
+                                            <h3>移轉指南</h3>
+                                            <p>逐步引導您有關從協力廠商 MDM 提供者移轉到 Intune 的各種詳細資料。</p>
                                         </div>
                                     </div>
                                 </div>
