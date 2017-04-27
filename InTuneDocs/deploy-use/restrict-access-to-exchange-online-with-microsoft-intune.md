@@ -78,8 +78,6 @@ ms.lasthandoff: 04/14/2017
 - Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本，以及 Android for Work
 - iOS 8.0 和更新版本
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 **新式驗證**可將 Active Directory 驗證程式庫 (ADAL) 型登入功能整合到 Office 用戶端中。
 
 -   ADAL 型驗證可讓 Office 用戶端透過瀏覽器進行驗證 (又稱為被動驗證)。 系統會將使用者導向登入網頁，以便進行驗證。

@@ -58,8 +58,6 @@ ms.lasthandoff: 04/14/2017
 
 -  Windows Phone 8.1 和更新版本
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  新增 [信任的憑證設定檔] 原則。
 
     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。

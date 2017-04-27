@@ -83,10 +83,7 @@ ms.lasthandoff: 03/30/2017
 -   Exchange ActiveSync 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
 -   **Android for Work 裝置**上的 Exchange ActiveSync 郵件用戶端：Android for Work 裝置只支援 **Work 設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 若要讓條件式存取搭配 Android for Work 使用，您必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔，並將這些應用程式部署為必要安裝。 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。
 
 ## <a name="support-for-pcs"></a>對電腦的支援

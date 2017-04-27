@@ -42,7 +42,6 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 - [資源存取原則]：搭配使用這些原則，可協助您的使用者隨時隨地都能存取順利完成其工作所需的檔案及資源。
 如需詳細資訊，請參閱[使用 Microsoft Intune 存取公司資源](enable-access-to-company-resources-with-microsoft-intune.md)。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 如需 Intune 原則的完整清單，請參閱 [Microsoft Intune 原則參考](microsoft-intune-policy-reference.md)。
 
