@@ -75,8 +75,8 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 2.       匯出自我簽署憑證。
 3. 在文字編輯器中，編輯匯出的憑證︰
 
- - 刪除 ** -----BEGIN CERTIFICATE-----**
- - 刪除 ** -----END CERTIFICATE-----**
+ - 刪除  **-----BEGIN CERTIFICATE-----**
+ - 刪除  **-----END CERTIFICATE-----**
  
 請確定所有的文字在同一行
 
