@@ -38,8 +38,6 @@ ms.lasthandoff: 12/10/2016
  -  Windows 8.1 及更新版本
  -  Windows Phone 8.1 和更新版本
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 3. 建立憑證設定檔，讓每個裝置要求一個用於驗證 VPN、Wi-Fi 和電子郵件存取的憑證，如[設定 Intune 憑證設定檔](configure-intune-certificate-profiles.md)中所述。 您可以針對執行這些平台的裝置，建立並部署 **PKCS #12 (.PFX) 憑證設定檔**或 **SCEP 憑證設定檔**︰
 
   -  iOS 8.0 和更新版本
