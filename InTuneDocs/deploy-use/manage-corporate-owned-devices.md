@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/31/2017
 
 您可以根據裝置的類型、裝置的購買方式和組織的需求，透過各種不同的方式註冊屬組織擁有或屬公司擁有的裝置，以使用 Intune 進行管理。 您也可以安裝公司入口網站應用程式，來註冊及管理屬公司擁有的裝置，例如在「攜帶您自己的裝置」(BYOD) 的情況下。
 
-所有平台的裝置預設都可以在 Intune 中註冊。 若要阻擋註冊裝置，請以系統管理員認證登入 [Microsoft Intune 管理員入口網站](http://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除您要封鎖之平台的核取方塊。
+所有平台的裝置預設都可以在 Intune 中註冊。 若要阻擋註冊裝置，請以系統管理員認證登入 [Microsoft Intune 管理入口網站](https://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除您要封鎖之平台的核取方塊。
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>註冊公司所擁有的 iOS 裝置
 

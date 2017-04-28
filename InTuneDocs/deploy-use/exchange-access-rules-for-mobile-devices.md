@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="create-a-default-access-rule"></a>建立預設存取規則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [原則] &gt; [Exchange ActiveSync]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [Exchange ActiveSync]。
 
 2.  在 [預設規則] 清單中，選取您要套用至不受規則或個人免除涵蓋之所有行動裝置的存取規則。 選擇 [儲存]。
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="create-a-custom-access-rule"></a>建立自訂存取規則
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [原則] &gt; [Exchange ActiveSync]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [Exchange ActiveSync]。
 
 2.  在 [平台例外狀況] 清單中，選擇 [新增規則] 然後建立自訂規則。 選擇 [儲存]。
 

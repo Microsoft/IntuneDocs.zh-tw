@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 2a35387cdc2ebeb3c83fa043a8b2c6583fccdbc9
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/11/2017
 
 如果您使用內部部署或裝載於雲端的 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)，您可以進行不需要註冊的簡單 Intune 管理。 也可以使用 [Intune 用戶端軟體](#manage-windows-pcs-with-intune)來管理 Windows 電腦。
 
-依預設，所有平台的裝置都可以在 Intune 中註冊。 若要阻擋註冊裝置，請以系統管理員認證登入 [Microsoft Intune 管理入口網站](http://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除您要封鎖之平台的核取方塊。
+依預設，所有平台的裝置都可以在 Intune 中註冊。 若要阻擋註冊裝置，請以系統管理員認證登入 [Microsoft Intune 管理入口網站](https://manage.microsoft.com)。 選擇 [管理員] > [行動裝置管理] > [註冊規則]，然後清除您要封鎖之平台的核取方塊。
 
 ## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
 

@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="set-up-the-service-to-service-connector"></a>設定 Service to Service Connector
 
-1. 使用具備[前文所述](#exchange-cmdlet-requirements)之 Exchange 管理權限與 Cmdlet 權限的使用者帳戶開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)。 Microsoft Intune 會使用目前登入之使用者的電子郵件地址來設定連線。
+1. 使用具備[前文所述](#exchange-cmdlet-requirements)之 Exchange 管理權限與 Cmdlet 權限的使用者帳戶開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)。 Microsoft Intune 會使用目前登入之使用者的電子郵件地址來設定連線。
 
 2.  在工作區捷徑窗格中，選擇 [管理] > [行動裝置管理]  >  [Microsoft Exchange]  >  [設定 Exchange 連線]。
 ![設定 Service to Service Connector 頁面](../media/intunesa5cservicetoserviceconnector.png)
@@ -63,7 +63,7 @@ Service to Service Connector 會自動設定及同步您的 Exchange Online 或�
 
 ## <a name="validate-your-exchange-connection"></a>驗證您的 Exchange 連線
 
-當您成功設定 Exchange Connector 之後，請前往 [Microsoft Intune 管理主控台](http://manage.microsoft.com)。 選擇 [管理] >  [行動裝置管理]  >  [Microsoft Exchange]。 接著在 [Exchange 連線資訊] 下方檢查您提供的詳細資料。
+當您成功設定 Exchange Connector 之後，請前往 [Microsoft Intune 管理主控台](https://manage.microsoft.com)。 選擇 [管理] >  [行動裝置管理]  >  [Microsoft Exchange]。 接著在 [Exchange 連線資訊] 下方檢查您提供的詳細資料。
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/01/2017
 
 請遵循下列步驟來建立應用程式保護原則：
 
-1. 移至 [Azure 入口網站](http://portal.azure.com)並輸入您的認證。
+1. 移至 [Azure 入口網站](https://portal.azure.com)並輸入您的認證。
 
 2. 選擇 [更多服務] 並輸入 "Intune"。
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 04/01/2017
 
 從 Intune 1703 版開始，您可以選擇在建立新的應用程式保護原則時，通常會將 LOB 應用程式新增至 Intune。 這可讓您選擇使用 MAM SDK 來定義 LOB 應用程式的應用程式保護原則，而不需要完整的應用程式部署權限。
 
-> [!TIP] 
+> [!TIP]
 > 您也可以在進行 [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) 工作流程時，將 LOB 應用程式新增至 Intune。
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ ms.lasthandoff: 04/01/2017
 
 ### <a name="to-add-lob-apps-windows"></a>新增 LOB 應用程式 (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 當您建立新的應用程式保護原則時，您必須從 [平台] 下拉式清單選取 [Windows 10]。
 
 1.  在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps] (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps] (豁免應用程式) 刀鋒視窗。
 
     > [!NOTE]
-    > 
+    >
     - **允許的應用程式**︰這些應用程式是必須遵守此原則的應用程式。
     - **豁免應用程式**︰這些應用程式不會套用此原則，而且可以存取公司資料，而沒有任何限制。
 <br></br>

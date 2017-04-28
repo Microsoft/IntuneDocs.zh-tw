@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -41,13 +41,13 @@ Apple 限制禁止公司入口網站應用程式中列出企業營運應用程�
 
 已註冊的使用者可在公司入口網站應用程式的 [應用程式] 畫面上點選下列磚，以取得他們的應用程式：
 
-- [所有應用程式] 會指向[公司入口網站](http://portal.manage.microsoft.com) [所有] 索引標籤中所有應用程式的清單。
+- [所有應用程式] 會指向[公司入口網站](https://portal.manage.microsoft.com) [所有] 索引標籤中所有應用程式的清單。
 
 - [精選應用程式] 則將使用者帶往公司入口網站的 [精選] 索引標籤。
 
 - [類別] 會指向公司入口網站的 [類別] 索引標籤。
 
- 
+
 ![iOS 公司入口網站應用程式畫面](./media/ios-cp-app-main-apps-screen.png)
 
 如需如何新增應用程式及將其放入這些磚的詳細資訊，請參閱[將已註冊裝置的應用程式新增至 Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)。
