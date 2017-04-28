@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 裝置註冊設定檔會定義套用至裝置群組的設定。
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
 
   ![建立裝置註冊設定檔](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>新增要使用設定助理註冊的 iOS 裝置
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [所有屬公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [所有屬公司擁有的裝置] &gt; [所有裝置]，然後選擇 [新增裝置]。
 
    您可以使用下列兩種方式新增裝置：
 
@@ -128,7 +128,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>匯出要部署到 iOS 裝置的設定檔
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選取要部署到行動裝置的裝置設定檔。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選取要部署到行動裝置的裝置設定檔。
 
 2. 選擇工作列中的 [匯出]。 複製並儲存 [設定檔 URL] 。 您稍後將在 Apple Configurator 中上傳它，以定義 iOS 裝置所使用的 Intune 設定檔。
 

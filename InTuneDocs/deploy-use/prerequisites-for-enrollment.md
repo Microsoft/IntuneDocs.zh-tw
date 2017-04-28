@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權�
 > 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後，您一定要有 Microsoft 支援服務的協助才能變更它。 請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)以取得相關指示。
 
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [系統管理] &gt; [行動裝置管理]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [系統管理] &gt; [行動裝置管理]。
 
 2.  在 [工作]  清單中，按一下 [設定行動裝置管理授權單位] 。 [設定 MDM 授權單位]  對話方塊隨即開啟。
 

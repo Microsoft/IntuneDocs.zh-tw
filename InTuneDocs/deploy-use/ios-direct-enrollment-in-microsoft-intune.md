@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 
 1.  如果您尚不具備此條件，請為透過 Apple Configurator 所註冊的 iOS 裝置建立裝置註冊設定檔。 裝置註冊設定檔會定義套用至裝置的設定。
 
-    1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
+    1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
 
         ![建立裝置註冊設定檔頁面](../media/pol-sa-corp-enroll.png)
 

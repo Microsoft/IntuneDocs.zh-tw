@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ __這可能會對我的終端使用者造成什麼不便？__ 安裝應用程式
 
 * __個人化。__ 提供非您的部署專屬的指示可能會讓使用者覺得您沒有思考過他們的經驗。 您可以使用這個[可供 IT 系統管理員自訂的使用者 Intune 註冊範本](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)，為終端使用者建立您自己的註冊指示。
 
-* __找出溝通的不同方式。__ 如同[不同學習模式](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)，使用者使用資訊的慣用方法。 對於偏好影片而非文件的使用者，我們提供[如何註冊各種裝置類型的影片版本](https://channel9.msdn.com/Series/IntuneEnrollment)，以及 Channel 9 上的更多內容。 這些影片可直接嵌入您自己的 [SharePoint 網站](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)，或下載本機複本 - 影片的複本或是只有音訊播放軌的複本。
+* __找出溝通的不同方式。__ 如同[不同學習模式](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)，使用者使用資訊的慣用方法。 對於偏好影片而非文件的使用者，我們提供[如何註冊各種裝置類型的影片版本](https://channel9.msdn.com/Series/IntuneEnrollment)，以及 Channel 9 上的更多內容。 這些影片可直接嵌入您自己的 [SharePoint 網站](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)，或下載本機複本 - 影片的複本或是只有音訊播放軌的複本。
 
 * __有意識。__ 您的終端使用者經驗將會影響您的生產力，而了解他們的經驗將能幫助您在他們前來時針對問題進行疑難排解。 了解終端使用者如何取得他們的應用程式，可以讓您更輕鬆地診斷他們遇到什麼問題，並且可以協助您更快地修正問題。
 

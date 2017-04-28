@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 |**監視電腦上的檔案和程式活動**|啟用監視傳入和傳出檔案，以及電腦上的程式活動。 使用此設定，Endpoint Protection 可監視檔案和程式何時開始執行，並將其執行的任何動作或將對其採取的動作發出警示給您。<br /><br />建議值： **是**|
 |**監視的檔案**|可讓您選擇只監視傳入、只監視傳出或監視所有檔案。<br /><br />建議值： **監視所有檔案**|
 |**啟用行為監視**|可讓 Microsoft Intune Endpoint Protection 在用戶端電腦上檢查可疑活動的某些模式。<br /><br />建議值： **是**|
-|**啟用網路檢查系統**|在用戶端電腦上啟用網路檢查系統 (NIS)。 NIS 會使用 [Microsoft Malware Protection Center (Microsoft 惡意程式碼防護中心)](http://go.microsoft.com/fwlink/?LinkId=234249) 提供之已知弱點的簽章，協助偵測及阻擋惡意網路流量。<br /><br />建議值： **是**|
+|**啟用網路檢查系統**|在用戶端電腦上啟用網路檢查系統 (NIS)。 NIS 會使用 [Microsoft Malware Protection Center (Microsoft 惡意程式碼防護中心)](https://go.microsoft.com/fwlink/?LinkId=234249) 提供之已知弱點的簽章，協助偵測及阻擋惡意網路流量。<br /><br />建議值： **是**|
 
   ![Endpoint Protection 的即時設定](./media/pol-sa-pc-policy-realtime.png)
 

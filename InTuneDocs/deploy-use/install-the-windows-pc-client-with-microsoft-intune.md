@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 
 ## <a name="instruct-users-to-self-enroll"></a>指示使用者自行註冊
 
-使用者前往[公司入口網站](http://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權單位以及使用者電腦的作業系統平台/版本而定。
+使用者前往[公司入口網站](https://portal.manage.microsoft.com)安裝 Intune 用戶端軟體。 使用者在 Web 入口網站中看到的實際資訊可能有所不同，視您帳戶的 MDM 授權單位以及使用者電腦的作業系統平台/版本而定。
 
 如果使用者尚未獲指派 Intune 授權，或者組織的 MDM 授權單位尚未設定為 Intune，則使用者看不到任何註冊選項。
 

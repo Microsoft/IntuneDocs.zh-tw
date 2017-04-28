@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ DEM 使用者可以︰
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
 
-1.  請確定您要新增至 DEM 帳戶的使用者已經存在。 如果需要新增使用者，請登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，並遵循[個別或大量將使用者新增至 Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 中的步驟。
+1.  請確定您要新增至 DEM 帳戶的使用者已經存在。 如果需要新增使用者，請登入 [Office 365 入口網站](https://go.microsoft.com/fwlink/p/?LinkId=698854)，並遵循[個別或大量將使用者新增至 Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 中的步驟。
 
-2.  使用您的系統管理員認證登入 [Microsoft Intune 管理主控台](http://manage.microsoft.com)。
+2.  使用您的系統管理員認證登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)。
 
 3.  在瀏覽窗格中選擇 [系統管理]，並移至 [系統管理員管理]，然後選取 [裝置註冊管理員]。 [裝置註冊管理員] 頁面隨即開啟。
 
@@ -88,7 +88,7 @@ DEM 使用者可以︰
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員
 
-1.  使用您的系統管理員認證登入 [Microsoft Intune 管理入口網站](http://manage.microsoft.com)。
+1.  使用您的系統管理員認證登入 [Microsoft Intune 管理入口網站](https://manage.microsoft.com)。
 
 2.  在瀏覽窗格中選擇 [系統管理]，並移至 [系統管理員管理]，然後選取 [裝置註冊管理員]。 [裝置註冊管理員] 頁面隨即開啟。
 
