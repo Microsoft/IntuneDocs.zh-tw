@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune 可啟用 iPad、iPhone 和 macOS 裝置的行動裝置管理 (MDM)，且
     如果尚未這麼做，請將[行動裝置管理授權單位](prerequisites-for-enrollment.md#step-2-set-mdm-authority)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
 
 2.  **取得憑證簽署要求**<br>
-    以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。 .csr 檔案用來向 Apple Push Certificates Portal 要求信任關係憑證。
+    以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，並移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。 .csr 檔案用來向 Apple Push Certificates Portal 要求信任關係憑證。
 
     ![上傳 APNs 憑證對話方塊](../media/Intune-iOS-enrollment-with-apns.png)
 
@@ -45,7 +45,7 @@ Intune 可啟用 iPad、iPhone 和 macOS 裝置的行動裝置管理 (MDM)，且
     > 每年您都需要更新 (不是取代) 此 APNs 憑證。 使用相同的這個 Apple 識別碼登入 Apple Push Certificate 入口網站來更新憑證，然後使用本主題中的相同指示下載憑證，再將它上傳至 Intune。
 
 4.  **將 APNs 憑證新增至 Intune**<br>
-    在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 [Apple ID]。 使用 APNs 憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
+    在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [上傳 APNs 憑證]。 移至憑證 (.pem) 檔案，並選擇 [開啟]，然後輸入您的 [Apple ID]。 使用 APNs 憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
 
 5.  **告訴使用者如何註冊其裝置來存取公司資源。**
 

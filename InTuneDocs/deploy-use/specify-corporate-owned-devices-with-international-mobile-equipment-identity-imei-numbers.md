@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5d317c837d43d58b9ac4750fa6f0e054fe2ff7da
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台的 IMEI 編號的國際行動設備識別碼 (IMEI) 編號，從而找出公司擁有的行動裝置。 當裝置在 Intune 中註冊之後，您可以在 [群組]  >  [概觀]  >  [所有裝置] 下檢視 IMEI 編號已經匯入的裝置。 [裝置群組] 會在列出 IMEI 編號已經匯入的裝置時，會在 [擁有權] 資料行中將其標示為**公司**。
 
-1. 在 [Microsoft Intune](http://manage.microsoft.com) 管理主控台中，選擇 [群組] &gt; [所有裝置] &gt; [所有公司預先註冊的裝置] &gt;[依 IMEI (所有平台)]，然後選擇 [新增裝置]。 您可以使用下列兩種方式新增裝置：
+1. 在 [Microsoft Intune](https://manage.microsoft.com) 管理主控台中，選擇 [群組] &gt; [所有裝置] &gt; [所有公司預先註冊的裝置] &gt;[依 IMEI (所有平台)]，然後選擇 [新增裝置]。 您可以使用下列兩種方式新增裝置：
 
     -   **上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。 詳細資料欄位的長度限制為 128 個字元。
 
