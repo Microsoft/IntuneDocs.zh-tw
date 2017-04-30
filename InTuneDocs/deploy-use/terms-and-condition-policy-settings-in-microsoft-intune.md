@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="create-a-terms-and-conditions-policy"></a>建立條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
     ![條款和條件原則螢幕擷取畫面](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>部署條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
 2.  在 [條款和條件原則] 清單中，選取您要部署的原則，然後按一下 [管理部署]。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>監視條款和條件原則
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
 2.  在 [建立新報表] 視窗中，按一下 [檢視報表]。 報表會隨即開啟，並詳細列出哪些使用者已接受您所部署的條款和條件。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用多個版本的條款和條件
 
-1.  在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
 2.  選取您要編輯的條款和條件原則，然後按一下 [編輯]。
 
