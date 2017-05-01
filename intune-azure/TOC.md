@@ -118,7 +118,6 @@
 #### [適用於 iOS 的主畫面版面配置](configure-devices/home-screen-settings-for-ios.md)
 #### [適用於 iOS 的應用程式通知](configure-devices/app-notification-settings-for-ios.md)
 #### [適用於 iOS 的共用的裝置](configure-devices/shared-device-settings-for-ios.md)
-#### [適用於 iOS 的網路內容篩選器](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [設定裝置限制](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [什麼是條件式存取？](conditional-access/what-is-conditional-access.md)
 ## 作法
 ### [安裝 Exchange 內部部署連接器](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [建立條件式存取原則](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [建立並指定條件式存取原則](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [監視條件式存取的相容性](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # 存取控制
 ## [什麼是角色型存取控制？](access-control/role-based-access-control.md)
