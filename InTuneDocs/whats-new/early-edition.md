@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示�
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
-Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。 您可以在 [Intune App UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Android 公司入口網站應用程式的新畫面。 
+Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。 您可以在 [Intune App UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Android 公司入口網站應用程式的新畫面。
 
 
 ## <a name="notices"></a>通知
@@ -186,7 +186,7 @@ Intune 的多使用者管理現在支援執行 Samsung KNOX Standard 的裝置�
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update 的多使用者支援 <!-- 822547 -->
 
-我們針對執行 Windows 10 Creators Update 並加入 Azure Active Directory 網域的裝置，新增了多使用者管理的支援。 這表示當不同的使用者使用其 AAD 認證登入裝置時，將會收到指派給其使用者名稱的任何應用程式和原則。
+針對執行 Windows 10 Creators Update 並加入 Azure Active Directory 網域的裝置，我們新增了多使用者管理的支援。 這表示當不同的標準使用者使用其 Azure AD 認證登入裝置時，將會收到指派給其使用者名稱的任何應用程式和原則。 針對安裝應用程式等自助式案例，使用者目前無法使用公司入口網站來進行。
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 電腦的 Fresh Start<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Intune 的多使用者管理現在支援執行 Samsung KNOX Standard 的裝置�
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>大量註冊 Windows 10 裝置 <!-- 747607 -->
 
-您可以使用 IT 自動化工具，將大量 Windows 10 裝置加入 Azure Active Directory 和 Intune。 若要啟用您的 Azure AD 租用戶的自動 MDM 註冊，請建立佈建套件，透過 Windows 設定設計工具將裝置加入 Azure AD 租用戶。 將該套件套用到您要大量註冊及管理之公司擁有的裝置。  套用套件之後，裝置會連線到 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。
+您可以使用 Windows Configuration Designer (WCD) 將執行 Windows 10 Creators Update 的大量裝置加入 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶啟用自動 MDM 註冊，請使用 Windows Configuration Designer 建立會將裝置加入 Azure AD 租用戶的佈建套件，然後將套件套用至您要大量註冊及管理的公司擁有裝置。 將套件套用至裝置之後，裝置會加入 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。  Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>PIN 碼和受管理儲存位置的新 MAM 設定 <!-- 58112, 736644 -->
 
