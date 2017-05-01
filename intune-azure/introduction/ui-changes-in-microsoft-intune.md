@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ ms.lasthandoff: 04/12/2017
 |依 IMEI 分組 (所有平台)| 群組 > 所有裝置 > 公司預先註冊的裝置 > 依 IMEI (所有平台) | [裝置註冊 > 公司裝置識別碼](#by-imei-all-platforms)|
 | 公司裝置註冊設定檔| 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > 註冊計劃設定檔](#where-did-corporate-pre-enrolled-devices-go) |
 | 公司裝置註冊設定檔 | 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > AC 設定檔](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | 管理 > 行動裝置管理 > Android for Work | 裝置註冊 > Android for Work 註冊 | | 條款和條件 | 原則 > 條款和條件 | 裝置註冊 > 條款和條件 |
 
 
 ## <a name="where-do-i-manage-groups"></a>我在何處管理群組？
