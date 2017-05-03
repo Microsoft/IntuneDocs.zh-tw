@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
-ms.lasthandoff: 01/14/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -109,8 +109,8 @@ ms.lasthandoff: 01/14/2017
 
   ![選取內部和特定憑證](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->如果不打算散發應用程式，而只想要在內部進行測試，您可以使用 iOS 應用程式開發憑證，而不是生產環境憑證。 如果您使用開發憑證，請確定行動佈建設定檔參考應用程式安裝所在的裝置。
+  >[!NOTE]
+  >如果不打算散發應用程式，而只想要在內部進行測試，您可以使用 iOS 應用程式開發憑證，而不是生產環境憑證。 如果您使用開發憑證，請確定行動佈建設定檔參考應用程式安裝所在的裝置。
 
 7. 按一下頁面底部的 [下一步]。
 
@@ -137,7 +137,6 @@ ms.lasthandoff: 01/14/2017
 14. 按兩下您剛剛下載的憑證，以將憑證新增至金鑰鏈。
 
 15. 再次開啟**金鑰鏈存取**。 在右上方搜尋列中搜尋憑證的名稱，以找到憑證。 以滑鼠右鍵按一下項目來顯示功能表，然後按一下 [Get Info] (取得資訊)。 在範例畫面中，我們會使用開發憑證，而不是生產環境憑證。
-
 
   ![將憑證新增至金鑰鏈](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -206,7 +205,7 @@ ms.lasthandoff: 01/14/2017
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|顯示可搭配 App Wrapping Tool 一起使用之命令列屬性的詳細用法資訊。|
-|**-v**|(選擇性) 將詳細訊息輸出到主控台。|
+|**-v**|(選擇性) 將詳細訊息輸出到主控台。 建議使用此旗標來偵錯任何錯誤。|
 |**-e**| (選擇性) 若使用此旗標，App Wrapping Tool 會書處理應用程式時移除缺少的權利。 如需詳細資料，請參閱設定應用程式的權利。|
 |**-xe**| (選擇性) 列印應用程式 iOS 延伸模組的相關資訊，以及使用這些功能所需的權利。 如需詳細資料，請參閱＜設定應用程式的權利＞。 |
 |**-x**| (可省略) `<An array of paths to extension provisioning profiles>`。 如果您的應用程式需要延伸模組佈建設定檔，請使用此選項。|

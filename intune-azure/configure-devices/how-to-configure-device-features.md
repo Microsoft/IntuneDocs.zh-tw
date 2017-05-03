@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ ms.lasthandoff: 03/17/2017
     - **macOS**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [裝置功能]。 
 7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [iOS 設定](device-features-for-ios.md)
-    - [macOS 設定](device-features-for-macos.md)
+    - [適用於 iOS 和 macOS 裝置的 AirPrint 設定](air-print-settings-for-ios-and-macos.md)
+     - [適用於 iOS 裝置的 AirPlay 設定](airplay-settings-for-ios-devices.md)
+    - [適用於 iOS 的主畫面配置設定](home-screen-settings-for-ios.md)
+    - [適用於 iOS 的應用程式通知設定](app-notification-settings-for-ios.md)
+    - [適用於 iOS 的共用裝置組態設定](shared-device-settings-for-ios.md)
+    - [適用於 iOS 的網路內容篩選器](web-content-filter-settings-for-ios.md)
 
 8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
 

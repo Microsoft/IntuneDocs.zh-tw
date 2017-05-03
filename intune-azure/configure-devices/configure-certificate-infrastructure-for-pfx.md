@@ -1,12 +1,12 @@
 ---
-title: "針對 PKCS 設定 Intune 憑證基礎結構"
+title: "透過 Intune 設定並管理 PKCS 憑證"
 titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何設定基礎結構，以在 Intune 中使用 PKCS 憑證。"
+description: "Intune Azure 預覽版︰了解如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 0c378fe6ed26bafb5a78daf36b9326771fdd287b
+ms.lasthandoff: 04/19/2017
 
 
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2017
 # <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>為 PKCS 設定 Microsoft Intune 憑證基礎結構
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-本主題說明建立 PKCS 憑證設定檔並將其部署到 Intune 所需的項目。
+本主題說明如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證設定檔。
 
 若要在組織中執行任何憑證式驗證，需要企業憑證授權單位。
 
@@ -61,17 +61,16 @@ ms.lasthandoff: 03/13/2017
 |物件|詳細資料|
 |----------|-----------|
 |**憑證範本**|在發行的 CA 上所設定的範本。|
-|**可信任的根 CA 憑證**|從發行 CA (或任何信任發行 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**可信任的根 CA 憑證**|您會從發行 CA (或任何信任發行 CA 的裝置) 將此匯出為 **.cer** 檔案，並使用受信任的 CA 憑證設定檔將它指派給裝置。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 
 ## <a name="configure-your-infrastructure"></a>設定基礎結構
-在您設定憑證設定檔前，必須先完成下列工作。 執行這些工作需要對 Windows Server 2012 R2 及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
+在您可以設定憑證設定檔之前，必須先完成下列步驟。 執行這些步驟需要對 Windows Server 2012 R2 及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
 
-- **工作 1** - 設定憑證授權單位上的憑證範本。
-- **工作 2** - 啟用、安裝及設定 Intune 憑證連接器。
+- **步驟 1**：設定憑證授權單位上的憑證範本。
+- **步驟 2**：啟用、安裝及設定 Intune 憑證連接器。
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>工作 1 - 設定憑證授權單位上的憑證範本
-在此工作中，您將發行憑證範本。
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>步驟 1：設定憑證授權單位上的憑證範本
 
 ### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
 
@@ -109,12 +108,13 @@ ms.lasthandoff: 03/13/2017
 
 4.  在 CA 電腦上，確認裝載 Intune 憑證連接器的電腦具備註冊權限，能夠存取建立 PKCS 憑證設定檔時所使用的範本。 在 CA 電腦內容的 [安全性]  索引標籤上設定該權限。
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>工作 2 - 啟用、安裝及設定 Intune Certificate Connector
-在這項工作中，您將會：
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>步驟 2：啟用、安裝及設定 Intune 憑證連接器
+在這個步驟中，您將：
 
-下載、安裝及設定憑證連接器。
+- 啟用針對憑證連接器的支援
+- 下載、安裝及設定憑證連接器。
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>啟用 Certificate Connector 的支援
+### <a name="to-enable-support-for-the-certificate-connector"></a>啟用針對憑證連接器的支援
 
 1.  登入 Azure 入口網站。
 2.  選擇 [更多服務]  >  [其他]  >  [Intune]。
@@ -158,6 +158,53 @@ ms.lasthandoff: 03/13/2017
 
 **http:// &lt;NDES 伺服器的 FQDN&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>後續步驟
-現在您已可開始依照[如何在 Microsoft Intune 中設定憑證](how-to-configure-certificates.md)所述設定憑證設定檔。
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>如何建立 PKCS 憑證設定檔
+
+在 Azure 入口網站中，選取 [設定裝置] 工作負載。
+2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
+3. 在 [設定檔] 刀鋒視窗中，按一下 [建立設定檔]。
+4. 在 [建立設定檔] 刀鋒視窗中，為 PKCS 憑證設定檔輸入 [名稱] 及 [描述]。
+5. 從 [平台] 下拉式清單中，選取此 PKCS 憑證的來源裝置平台：
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 及更新版本**
+6. 從 [設定檔類型] 下拉式清單中，選擇 [PKCS 憑證]。
+7. 在 [PKCS 憑證] 刀鋒視窗上，進行以下設定：
+    - **更新閾值 (%)** - 指定裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
+    - **憑證有效期間** - 如果您已在發行 CA 上執行 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，允許自訂有效期間，則可以指定憑證到期之前的剩餘時間長度。<br>您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。
+    - **金鑰儲存提供者 (KSP)** (Windows 10)：指定儲存憑證金鑰的位置。 選擇下列其中一個值：
+        - **註冊至受信任平台模組 (TPM) KSP (如果存在)，否則註冊至軟體 KSP**
+        - **註冊至信賴平台模組 (TPM) KSP，否則失敗**
+        - **註冊至 Passport，否則失敗 (Windows 10 及更新版本)**
+        - **註冊至軟體 KSP**
+    - **憑證授權單位**：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需如何設定憑證授權單位的指示，請參閱 [安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。 如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
+    - **憑證授權單位名稱**：輸入您的憑證授權單位名稱。
+    - **憑證範本名稱**：輸入網路裝置註冊服務設定要使用且已新增至發行 CA 的憑證範本名稱。
+    請確定該名稱完全符合執行網路裝置註冊服務的伺服器，於登錄中列出的其中一個憑證範本。 請確定您指定的是憑證範本的名稱，而非憑證範本的顯示名稱。 
+    若要尋找憑證範本的名稱，請瀏覽至下列機碼：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP。 您將會看見憑證範本已列為 [EncryptionTemplate] 、[GeneralPurposeTemplate] 和 [SignatureTemplate] 的值。 根據預示，這三個憑證範本的值是 [IPSECIntermediateOffline]，對應至 [IPSec (離線要求)] 的範本顯示名稱。 
+    - **主體名稱格式**從清單中選取 Intune 如何自動在憑證要求中建立主體名稱。 如果憑證是針對使用者，您也可以在主體名稱中包含使用者的電子郵件地址。 從下列選項進行選擇：
+        - **未設定**
+        - **一般名稱**
+        - **包括電子郵件的一般名稱**
+        - **一般名稱及電子郵件地址**
+    - **主體別名**指定 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證將用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。
+    - **擴充金鑰使用方法** (Android) - 選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]  ，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。 
+    - **根憑證**- 選擇先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是將發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 這是您先前所建立的受信任憑證設定檔。
+8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+
+隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+
+## <a name="how-to-assign-the-certificate-profile"></a>如何指派憑證設定檔
+
+將憑證設定檔指派給群組之前，請考慮下列事宜︰
+
+- 當您指派憑證設定檔給群組時，來自受信任 CA 憑證設定檔的憑證檔案，即會安裝在裝置上。 裝置會使用 PKCS 憑證設定檔來建立裝置所要求的憑證。
+- 憑證設定檔只會安裝在執行於您建立設定檔時所用的平台裝置上。
+- 您可以將憑證設定檔指派到使用者集合或裝置集合。
+- 若要在裝置註冊之後快速將憑證發行至裝置，請將憑證設定檔指派到使用者群組，而不是裝置群組。 如果您將它指派至裝置群組，便必須先執行完整的裝置註冊，裝置才能接收原則。
+- 雖然您會分別指派每個設定檔，但仍需指派受信任的根 CA 以及 PKCS 設定檔。 否則，PKCS 憑證原則會失敗。
+
+如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](how-to-assign-device-profiles.md)。
 

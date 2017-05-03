@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>在 Intune Azure 預覽版中設定電信費用管理服務
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune 可讓您管理公司擁有之行動裝置上的資料使用量所造成的電信費用。 為了啟用此功能，Intune 已整合協力廠商軟體開發人員 Saaswedo 的 Datalert 電信費用管理解決方案。 Datalert 是即時的電信費用管理軟體，可讓您管理電信數據使用量，協助 Intune 管理的裝置避免高額費用及非預期的超額數據費和漫遊費。 
+Intune 可讓您管理公司擁有之行動裝置上的資料使用量所造成的電信費用。 為了啟用此功能，Intune 已整合協力廠商軟體開發人員 Saaswedo 的 Datalert 電信費用管理解決方案。 Datalert 是即時的電信費用管理軟體，可讓您管理電信數據使用量，協助 Intune 管理的裝置避免高額費用及非預期的超額數據費和漫遊費。
 
 Intune 與 Datalert 整合可讓您集中設定、監視及實施漫遊與國內數據使用量限制，並在超出定義的閾值限制時自動發出警示。 您可以設定服務對個人或使用者群組套用不同的動作，包括在使用者超過閾值時停用漫遊。 Datalert 管理主控台也提供有關數據使用量與監視資訊的報表。
 
@@ -85,7 +85,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 
-4. 在 [裝置設定] 刀鋒視窗中選擇 [設定]   >  [電信費用管理]。 
+4. 在 [裝置設定] 刀鋒視窗中選擇 [設定]   >  [電信費用管理]。
 
    尋找頁面頂端的 [使用中] 連線狀態。
 
@@ -97,7 +97,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>定義裝置分類以及對應至分類的裝置群組。
 
-根據組織需求，您需要建立至少兩個裝置分類 (例如，公司和個人)，並建立每個分類的動態裝置群組。 您可以視需要為組織建立更多的分類。 
+根據組織需求，您需要建立至少兩個裝置分類 (例如，公司和個人)，並建立每個分類的動態裝置群組。 您可以視需要為組織建立更多的分類。
 
 在註冊期間，會向使用者顯示這些分類。 根據使用者所選擇的分類，註冊的裝置將會移至對應的裝置群組。 如需如何建立裝置分類的步驟，請參閱 [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (將裝置對應到群組)。
 
@@ -109,7 +109,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 1. 在 Azure 入口網站的 [Intune] 刀鋒視窗上，選擇 [管理應用程式]。
 
-2. 在 [管理應用程式] 刀鋒視窗上，選擇 [管理] > [應用程式]。 
+2. 在 [管理應用程式] 刀鋒視窗上，選擇 [管理] > [應用程式]。
 
 3. 選取 [新增] 來新增應用程式。
 
@@ -129,7 +129,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 1. 選取您先前在前一個步驟中建立的 iOS Datalert 應用程式。
 
-2. 在 [應用程式] 刀鋒視窗上，移至 [管理] > [指派]。 
+2. 在 [應用程式] 刀鋒視窗上，移至 [管理] > [指派]。
 
 3. 選擇 [選取群組]，並遵循步驟來選取公司裝置群組。
 
@@ -137,9 +137,9 @@ Intune 目前整合了下列電信費用管理提供者︰
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步驟 4︰將公司付費電話線路新增至 Datalert 主控台 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步驟 4︰將公司付費電話線路新增至 Datalert 主控台
 
-您現在已設定 Intune 和 Datalert 服務彼此通訊。 您現在需要將公司付費電話線路新增至 Datalert 主控台，並定義任何行動或漫遊使用情況違規的臨界值和動作。 
+您現在已設定 Intune 和 Datalert 服務彼此通訊。 您現在需要將公司付費電話線路新增至 Datalert 主控台，並定義任何行動或漫遊使用情況違規的臨界值和動作。 您可以手動將公司付費電話線路新增至 Datalert 主控台，或是讓線路在裝置註冊到 Intune 後自動新增。
 
 若要設定這些項目，請移至 [Microsoft Intune 的 Datalert 設定頁面](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)，並遵循安裝精靈之 [設定] 索引標籤下的步驟。
 
@@ -147,6 +147,11 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 
 Datalert 服務現在已上線執行，會開始監視數據使用量，並停用超出設定使用量限制之裝置的行動數據與漫遊數據。
+
+## <a name="client-enrollment-experience"></a>用戶端註冊體驗
+針對用戶端註冊體驗，請參閱下列內容：
+-    [在電信費用管理中註冊您的 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [在電信費用管理中註冊您的 Android 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>關閉 Datalert 服務
 

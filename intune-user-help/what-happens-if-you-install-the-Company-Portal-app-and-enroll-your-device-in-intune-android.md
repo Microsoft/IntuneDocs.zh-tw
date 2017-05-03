@@ -1,5 +1,5 @@
 ---
-title: "安裝 Android 的公司入口網站應用程式 | Microsoft Docs"
+title: "安裝 Android 版公司入口網站應用程式"
 description: 
 keywords: 
 author: barlanmsft
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 2517ad3d019b185ce3a048b95e595c189f08821e
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31e51e6fdf1bcbb17243425b69108ab433eb57c0
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -51,7 +51,7 @@ ms.lasthandoff: 03/13/2017
 
 -   要求為裝置上的所有資料加密，這將能在裝置遺失或遭竊的情況下協助保護資料。
 
-將裝置新增到公司入口網站之後，大約每隔&8; 個小時，裝置會：
+將裝置新增到公司入口網站之後，大約每隔 8 個小時，裝置會：
 
 -   下載您 IT 系統管理員提供的原則或應用程式更新。
 

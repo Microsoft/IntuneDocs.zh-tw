@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/17/2017
 - **主機配對，以控制 iOS 裝置所能配對的裝置 (僅限受監督)** - 允許主機配對，讓系統管理員可控制能與 iOS 裝置配對的裝置。
 - **修改通知設定 (僅限受監督)** - 允許使用者變更裝置通知設定。
 - **修改密碼 (僅限受監督)** - 允許新增、變更或移除裝置密碼。
-- **修改背景圖片 (僅限受監督)** - 允許使用者變更裝置的背景圖案。
+- **修改背景圖片 (僅限受監督)** - 允許使用者變更裝置的背景圖片。
 - **修改企業應用程式信任設定 (僅限受監督)** - 讓使用者能選擇信任不是從應用程式市集下載的應用程式。
 - **從應用程式市集下載應用程式 (僅限受監督)** - 允許裝置可存取應用程式市集，以及安裝應用程式。
 - **「尋找我的朋友」應用程式設定的變更 (僅限受監督)** - 允許使用者可變更「尋找我的朋友」應用程式之設定。
@@ -225,6 +225,67 @@ ms.lasthandoff: 03/17/2017
 -     **共享相片串流** - 設定為 [否]，會停用裝置上的 [iCloud 相片共享]。
 -     **活動接續** - 允許使用者在另一部 iOS 或 macOS 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>自發性單一應用程式模式 (僅限受監督)
+
+使用這些設定來設定 iOS 裝置在自發性單一應用程式模式中執行指定的應用程式。 設定此模式並執行應用程式時，裝置會被鎖定，因此只能執行該應用程式。 一個例子是當您設定應用程式讓使用者在裝置上進行測試時。 當應用程式的動作完成時，或當您移除此原則時，裝置就會回到其正常狀態。
+
+### <a name="settings"></a>設定
+
+- **應用程式名稱**：輸入應用程式的名稱，這將會顯示在此刀鋒視窗上的應用程式清單中。
+- **應用程式套件組合識別碼**：輸入應用程式的套件組合識別碼。 如需說明，請參閱本主題中的＜內建的 iOS 應用程式套件組合識別碼參考＞。
+
+在您指定每個應用程式的名稱和套件組合識別碼之後，選擇 [新增] 以將它附加至清單。
+
+- **匯入**：匯入包含應用程式名稱及其相關聯套件組合識別碼清單的逗點分隔值 (.csv) 檔案。
+- **匯出**：將您所設定的應用程式名稱及相關聯的套件組合識別碼匯出為逗點分隔值 (.csv) 檔案。
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>內建 iOS 應用程式的套件組合識別碼參考
+
+此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。
+
+|||
+|-|-|
+|應用程式名稱|套件組合識別碼|
+|App Store|com.apple.AppStore|
+|計算機|com.apple.calculator|
+|行事曆|com.apple.mobilecal|
+|相機|com.apple.camera|
+|時鐘|com.apple.mobiletimer|
+|指南針|com.apple.compass|
+|聯絡資訊|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|尋找朋友|com.apple.mobileme.fmf1|
+|尋找 iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|健康|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|郵件|com.apple.mobilemail|
+|地圖|com.apple.Maps|
+|訊息|com.apple.MobileSMS|
+|音樂|com.apple.Music|
+|新聞|com.apple.news|
+|備忘錄|com.apple.mobilenotes|
+|Numbers|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|照片|com.apple.mobileslideshow|
+|Podcast|com.apple.podcasts|
+|提醒事項|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|設定|com.apple.Preferences|
+|股市|com.apple.stocks|
+|提示|com.apple.tips|
+|影片|com.apple.videos|
+|語音備忘錄|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|天氣|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosk
 -     **啟用鎖定** - 在受監督的 iOS 裝置上將啟用鎖定啟用。
 -     **kiosk 模式下執行的應用程式** - 選擇 [受管理的應用程式] 可選取已新增至 Intune 的應用程式，而選擇 [市集應用程式] 則可指定市集中應用程式的 URL。 不允許在裝置上執行其他應用程式。 如需詳細說明，請參閱本主題稍後的＜如何將 URL 指定給應用程式市集＞。
@@ -256,4 +317,21 @@ ms.lasthandoff: 03/17/2017
 -     **JavaScript** - 允許在瀏覽器中執行 Java 指令碼。
 -     **詐騙警告** - 允許瀏覽器中的詐騙警告。
 -     **快顯** - 啟用或停用瀏覽器的快顯封鎖程式。
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>未標記的電子郵件網域
+
+在 [電子郵件網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 iOS 郵件應用程式中標記為不受信任。
+
+
+### <a name="managed-web-domains"></a>受管理的 Web 網域
+
+在 [Web 網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當文件是從您所指定的網域下載時，它們會被視為受管理的文件。 此設定僅適用於使用 Safari 瀏覽器下載的文件。
+
+
+### <a name="safari-password-auto-fill-domains"></a>Safari 密碼自動填入網域
+
+在 [網域 URL] 欄位中，將一或多個 URL 新增到清單中。 使用者只能儲存此清單中 URL 的密碼。 此設定僅適用於處於受監督模式的 iOS 9.3 及更新版本裝置中的 Safari 瀏覽器。 如果您不指定任何 URL，便可以儲存所有網站的密碼。
 

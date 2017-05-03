@@ -1,12 +1,12 @@
 ---
-title: "設定 SCEP 的憑證基礎結構"
+title: "透過 Intune 設定並管理 SCEP 憑證"
 titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解建立及部署 Intune SCEP 憑證設定檔之前，如何設定您的基礎結構。"
+description: "Intune Azure 預覽版︰了解如何設定基礎結構，並建立及指派 Intune SCEP 憑證設定檔。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,28 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 6838993b5b19bc1e23c9efe0911a01a2c66c6886
+ms.lasthandoff: 04/19/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>在 Microsoft Intune 中設定 SCEP 的憑證基礎結構
+# <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-本主題說明建立及部署 SCEP 憑證設定檔所需的基礎結構。
+本主題說明如何透過 Intune 設定基礎結構，並建立及指派簡單憑證註冊通訊協定 (SCEP) 憑證設定檔。
 
-### <a name="on-premises-infrastructure"></a>內部部署基礎結構
+## <a name="configure-on-premises-infrastructure"></a>設定內部部署基礎結構
 
 -    **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
 
--  **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需如何設定憑證授權單位的指示，請參閱 [安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。
+-  **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需詳細資料，請參閱[安裝憑證授權單位 (機器翻譯)](http://technet.microsoft.com/library/jj125375.aspx)。
     如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
 
--  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/en-us/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
+-  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。
+NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
--  **Microsoft Intune Certificate Connector**：您可使用 Intune 管理主控台來下載 **Certificate Connector** 安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。
--  **Web 應用程式 Proxy 伺服器** (選用)︰您可以將執行 Windows Server 2012 R2 或更新版本的伺服器用作 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
+-  **Microsoft Intune 憑證連接器**：使用 Intune 入口網站來下載「憑證連接器」安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。
+-  **Web 應用程式 Proxy 伺服器** (選用)︰使用執行 Windows Server 2012 R2 或更新版本的伺服器做為 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
     -  允許裝置使用網際網路連線接收憑證。
     -  是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
 
@@ -51,49 +52,49 @@ ms.lasthandoff: 03/13/2017
 
 從周邊網路到受信任網路，允許在加入網域的 NDES 伺服器上進行網域存取所需的所有連接埠和通訊協定。 NDES 伺服器需要存取憑證伺服器、DNS 伺服器、Configuration Manager 伺服器和網域控制站。
 
-建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)，或是協力廠商 Proxy。
+建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx)，或是協力廠商 Proxy。
 
 
-### <a name="BKMK_CertsAndTemplates"></a>憑證和範本
+### <a name="certificates-and-templates"></a>憑證和範本
 
 |物件|詳細資料|
 |----------|-----------|
-|**憑證範本**|在發行的 CA 上所設定的範本。|
-|**用戶端驗證憑證**|由發行的 CA 或公用 CA 所要求，安裝於 NDES 伺服器上的憑證。|
-|**伺服器驗證憑證**|由發行的 CA 或公用 CA 所要求，於 NDES 伺服器的 IIS 中安裝並繫結的 SSL 憑證。|
-|**可信任的根 CA 憑證**|從根 CA (或任何信任根 CA 的裝置) 匯出為 **.cer** 檔案，並使用受信任的 CA 憑證加以部署至裝置之中的憑證。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**憑證範本**|在發行 CA 上設定此範本。|
+|**用戶端驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會將它安裝於 NDES 伺服器上。|
+|**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。|
+|**可信任的根 CA 憑證**|您會從根 CA (或任何信任根 CA 的裝置) 將此匯出為 **.cer** 檔案，並使用受信任的 CA 憑證設定檔將它指派給裝置。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
-### <a name="BKMK_Accounts"></a>帳戶
+### <a name="accounts"></a>帳戶
 
-|名稱|詳細資料|
+|Name|詳細資料|
 |--------|-----------|
-|**NDES 服務帳戶**|您指定網域使用者帳戶以做為 NDES 服務帳戶。|
+|**NDES 服務帳戶**|指定網域使用者帳戶以做為 NDES 服務帳戶使用。|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>設定基礎結構
+## <a name="configure-your-infrastructure"></a>設定基礎結構
 您可以設定憑證設定檔之前，必須先完成下列工作，這些需要 Windows Server 2012 R2 和 Active Directory 憑證服務 (ADCS) 的知識：
 
-**工作 1**：建立 NDES 服務帳戶
+**步驟 1**：建立 NDES 服務帳戶
 
-**工作 2**：設定憑證授權單位上的憑證範本
+**步驟 2**：設定憑證授權單位上的憑證範本
 
-**工作 3**：設定 NDES 伺服器上的必要條件
+**步驟 3**：設定 NDES 伺服器上的必要條件
 
-**工作 4**：設定 NDES 以便搭配 Intune
+**步驟 4**：設定 NDES 以搭配 Intune 使用
 
-**工作 5**：啟用、安裝及設定 Intune 憑證連接器
+**步驟 5**：啟用、安裝及設定 Intune 憑證連接器
 
-### <a name="task-1---create-an-ndes-service-account"></a>工作 1 - 建立 NDES 服務帳戶
+#### <a name="step-1---create-an-ndes-service-account"></a>步驟 1：建立 NDES 服務帳戶
 
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時指定此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
 
-### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>工作 2 - 設定憑證授權單位上的憑證範本
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步驟 2：設定憑證授權單位上的憑證範本
 在這項工作中，您將會：
 
 -   設定 NDES 的憑證範本
 
 -   發行 NDES 的憑證範本
 
-#### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
+##### <a name="to-configure-the-certification-authority"></a>設定憑證授權單位
 
 1.  以企業系統管理員身分登入。
 
@@ -133,24 +134,22 @@ ms.lasthandoff: 03/13/2017
 ![範本, 發行需求索引標籤](.\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
-    > 對於應用程式原則 (在第 4 個螢幕擷取畫面)，只能新增所需的應用程式原則。 向您的安全性系統管理員確認您的選擇。
+    > 針對應用程式原則，僅新增所需的應用程式原則。 向您的安全性系統管理員確認您的選擇。
 
 
 
-若要設定 CA 以允許要求者指定有效期間，請在 CA 上執行下列命令：
+若要設定 CA 以允許要求者指定有效期間：
 
-   1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   2.  **net stop certsvc**
-   3.  **net start certsvc**
-
-4.  在發行的 CA 上使用 [憑證授權單位] 嵌入式管理單元來發行憑證範本。
-
-    1.  選取 [憑證範本] 節點，並按一下 [動作]-&gt; [新增]&gt; [要發出的憑證範本]，然後選取您在步驟 2 中建立的範本。
-
-    2.  檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
+1. 在 CA 上執行下列命令：
+    - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    - **net stop certsvc**
+    - **net start certsvc**
+2. 在發行的 CA 上使用 [憑證授權單位] 嵌入式管理單元來發行憑證範本。
+    選取 [憑證範本] 節點，並按一下 [動作]-&gt; [新增]&gt; [要發出的憑證範本]，然後選取您在步驟 2 中建立的範本。
+3. 檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
 
-### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>工作 3 - 設定 NDES 伺服器上的必要條件
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的必要條件
 在這項工作中，您將會：
 
 -   將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
@@ -191,7 +190,7 @@ ms.lasthandoff: 03/13/2017
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4---configure-ndes-for-use-with-intune"></a>工作 4 - 設定 NDES 以便搭配 Intune
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>步驟 4：設定 NDES 以搭配 Intune 使用
 在這項工作中，您將會：
 
 -   設定 NDES 以便用於發行 CA
@@ -200,7 +199,6 @@ ms.lasthandoff: 03/13/2017
 
 -   設定 IIS 中的要求篩選
 
-##### <a name="to-configure-ndes-for-use-with-intune"></a>設定 NDES 以便搭配 Intune
 
 1.  在 NDES 伺服器上，開啟 [AD CS 設定精靈]，然後進行下列組態設定。
 
@@ -295,14 +293,14 @@ ms.lasthandoff: 03/13/2017
 
 4.  重新啟動 NDES 伺服器。 伺服器現在已準備好支援 Certificate Connector。
 
-### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>工作 5 - 啟用、安裝及設定 Intune 憑證連接器
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步驟 5：啟用、安裝及設定 Intune 憑證連接器
 在這項工作中，您將會：
 
 啟用 Intune 中的 NDES 支援。
 
 下載、安裝及設定 NDES 伺服器上的憑證連接器。
 
-##### <a name="to-enable-support-for-the-certificate-connector"></a>啟用 Certificate Connector 的支援
+##### <a name="to-enable-support-for-the-certificate-connector"></a>啟用針對憑證連接器的支援
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
@@ -310,7 +308,7 @@ ms.lasthandoff: 03/13/2017
 4. 在 [裝置設定] 刀鋒視窗中選擇 [憑證授權單位]。
 5.  選取 [啟用憑證連接器]。
 
-##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定 Certificate Connector
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
@@ -349,6 +347,61 @@ ms.lasthandoff: 03/13/2017
 
 **http:// &lt;NDES 伺服器的 FQDN&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>後續步驟
-您現在已可設定憑證設定檔，如[設定憑證設定檔](how-to-configure-certificates.md)中所述。
+## <a name="how-to-create-a-scep-certificate-profile"></a>如何建立 SCEP 憑證設定檔
+
+1. 在 Azure 入口網站中，選取 [設定裝置] 工作負載。
+2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
+3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
+4. 在 [建立設定檔] 刀鋒視窗中，為 SCEP 憑證設定檔輸入 [名稱] 及 [描述]。
+5. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
+    - **Android**
+    - **iOS**
+    - **macOS**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 及更新版本**
+    - **Windows 10 及更新版本**
+6. 從 [設定檔類型] 下拉式清單中，選擇 [SCEP 憑證]。
+7. 在 [SCEP 憑證] 刀鋒視窗上，進行以下設定：
+    - **憑證有效期間** - 如果您已在發行 CA 上執行 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，允許自訂有效期間，則可以指定憑證到期之前的剩餘時間長度。<br>您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。 
+    - **金鑰儲存提供者 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10) - 指定儲存金鑰的憑證位置。 選擇下列其中一個值：
+        - **註冊至受信任平台模組 (TPM) KSP (如果存在)，否則註冊至軟體 KSP**
+        - **註冊至信賴平台模組 (TPM) KSP，否則失敗**
+        - **註冊至 Passport，否則失敗 (Windows 10 及更新版本)**
+        - **註冊至軟體 KSP**
+    - **主體名稱格式**從清單中選取 Intune 如何自動在憑證要求中建立主體名稱。 如果憑證是針對使用者，您也可以在主體名稱中包含使用者的電子郵件地址。 從下列選項進行選擇：
+        - **未設定**
+        - **一般名稱**
+        - **包括電子郵件的一般名稱**
+        - **一般名稱及電子郵件地址**
+    - **主體別名**指定 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證將用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。 
+    - **金鑰使用方式** - 指定憑證的金鑰使用方式選項。 您可以選擇下列選項： 
+        - **金鑰編密：**只允許在金鑰加密後交換金鑰。 
+        - **數位簽章：**只允許在以數位簽章協助保護金鑰後交換金鑰。 
+    - **金鑰大小 (位元)** - 金鑰中要包含的位元數。 
+    - **雜湊演算法：** (Android、Windows Phone 8.1、Windows 8.1、Windows 10) - 選取其中一種可用的雜湊演算法類型，搭配此憑證使用。 選取連線中裝置所支援的最強安全性層級。 
+    - **根憑證** - 選擇先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是將發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 
+    - **擴充金鑰使用方法** - 選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]  ，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。 
+    - **註冊設定**
+        - **更新閾值 (%)** - 指定裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
+        - **SCEP 伺服器 URL** - 指定一或多個將透過 SCEP 發行憑證的 NDES 伺服器 URL。 
+8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+
+隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+
+>[!Note]
+> 僅限 iOS 裝置：在 [主體名稱格式] 下，選取 [自訂]，以輸入自訂主體名稱格式。
+> 自訂格式目前支援的兩個變數為「一般名稱 (CN)」和「電子郵件 (E)」。 您可使用這些變數與靜態字串的組合，建立自訂主體名稱格式，例如此︰**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**在此範例中，您建立了主體名稱格式，除了 CN 與 E 變數之外，為組織單位、組織、位置、狀態與國家/地區值使用字串。 [本主題](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)會顯示 **CertStrToName** 函式與其支援的字串。
+
+## <a name="how-to-assign-the-certificate-profile"></a>如何指派憑證設定檔
+
+將憑證設定檔指派給群組之前，請考慮下列事宜︰
+
+- 當您指派憑證設定檔給群組時，來自受信任 CA 憑證設定檔的憑證檔案，即會安裝在裝置上。 裝置會使用 SCEP 憑證設定檔來建立裝置所要求的憑證。
+- 憑證設定檔只會安裝在執行於您建立設定檔時所用的平台裝置上。
+- 您可以將憑證設定檔指派到使用者集合或裝置集合。
+- 若要在裝置註冊之後快速將憑證發行至裝置，請將憑證設定檔指派到使用者群組，而不是裝置群組。 如果您將它指派至裝置群組，便必須先執行完整的裝置註冊，裝置才能接收原則。
+- 雖然您會分別指派每個設定檔，但仍需指派受信任的根 CA 以及 SCEP 或 PKCS 設定檔。 否則，SCEP 或 PKCS 憑證原則會失敗。
+
+如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](how-to-assign-device-profiles.md)。
+
 

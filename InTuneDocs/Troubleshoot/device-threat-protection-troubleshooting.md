@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 
 * 電子郵件：enterprisesupport@lookout.com
 * 登入 [MTP 主控台](http://aad.lookout.com)，並瀏覽至 [支援] 模組。
-* 前往：https://enterprise.support.lookout.com/hc/en-us/requests，並提出支援要求。
+* 移至：https://enterprise.support.lookout.com/hc/requests，並提出支援要求。
 
 ## <a name="unable-to-sign-in"></a>無法登入
 當 Azure AD 全域管理員使用者尚未接受 Lookout 的初始設定時，您會看到下列錯誤。
@@ -55,7 +56,7 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 
 ### <a name="device-reported-as-pending"></a>裝置回報為**擱置**
 
-如果終端使用者尚未開啟 Lookout for Work 應用程式即點選 [啟動] 按鈕，裝置會顯示 [擱置]。 如需以 Lookout for Work 應用程式啟動裝置的詳細資訊，請參閱[系統提示您安裝 Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)或[系統提示在您的 iOS 裝置上安裝 Lookout for Work](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)。
+如果終端使用者尚未開啟 Lookout for Work 應用程式即點選 [啟動] 按鈕，裝置會顯示 [擱置]。 如需以 Lookout for Work 應用程式啟動裝置的詳細資訊，請參閱[系統提示您安裝 Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)或[系統提示在您的 iOS 裝置上安裝 Lookout for Work](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)。
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>作用中但沒有裝置識別碼的裝置
 在 Lookout MTP 主控台中，如果作用中的裝置沒有裝置識別碼，則裝置使用者不在註冊群組中。 如果裝置的使用者已從註冊群組中移除，或已移除註冊群組，則裝置就會進入此狀態。
@@ -83,14 +84,9 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 ## <a name="compliance-remediation-workflows"></a>相容性補救工作流程
 - [系統提示在您的 Android 裝置上安裝 Lookout for Work]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [您必須解決 Lookout for Work 在 iOS 裝置上找到的威脅](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [您必須解決 Lookout for Work 在 iOS 裝置上找到的威脅](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>請參閱
-[設定訂用帳戶使用 Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[設定訂用帳戶使用 Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 

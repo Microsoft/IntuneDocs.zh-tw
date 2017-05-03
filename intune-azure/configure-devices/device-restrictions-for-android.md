@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**螢幕擷取**|讓使用者擷取螢幕內容做為映像。|否|是|
 |**語音助理**|允許在裝置上使用語音助理軟體。|否|是|
 |**YouTube**|允許在裝置上使用 YouTube 應用程式。|否|是|
+|**共用的裝置**|將受管理的 Samsung KNOX Standard 裝置設定為共用。 在此模式中，使用者可以使用其 Azure AD 認證登入和登出裝置，而且該裝置不論是否正在使用，都會集中管理。<br>當使用者登入時，他們可以存取應用程式，此外也可以將任何原則套用到這些應用程式。 當使用者登出時，會清除所有應用程式資料。|否|是|
 
 ## <a name="password"></a>密碼
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**在停止活動最少幾分鐘後鎖定螢幕**|指定裝置自動鎖定之前，需停止活動達幾分鐘。|是|是|
 |**登入失敗幾次後即抹除裝置**|指定抹除裝置前允許的登入失敗次數。|是|是|
 |**密碼到期 (天數)**|指定必須變更裝置密碼的天數。|是|是|
-|**必要的密碼類型**|指定所需的密碼複雜性等級，以及是否可以使用生物識別裝置。|是|是|
+|**必要的密碼類型**|指定所需的密碼複雜性等級，以及是否可以使用生物識別裝置。 從下列選項進行選擇：<br><br>    -     **裝置預設**<br>-     **低安全性生物識別**<br>    -     **至少包含數字**<br>    -     **複雜數字** (不允許重複或連續的數字，例如 '1111' 或 '1234')<sup>1</sup><br>    -     **至少包含字母**<br>    -     **至少包含英數字元**<br>    -     **至少包含英數字元和符號**|是|是|
 |**不得重複使用以前用過的密碼**|讓使用者無法建立以前用過的密碼。|是|是|
 |**指紋解除鎖定**|允許使用指紋來解除鎖定受支援的裝置。|否|是|
 |**Smart Lock 與其他信任代理程式**|可讓您控制相容的 Android 裝置 (Samsung KNOX Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。您可以使用此設定來防止使用者設定 Smart Lock。|是 (5.0 和更新版本)|否|
 |**加密**|裝置上的檔案需要加密。|是|是|
+
+<sup>1</sup>在您將此設定指派至裝置之前，請確定目標裝置上的公司入口網站應用程式已更新至最新版本。
+
+如果您設定 [複雜數字] 設定，然後將它指派至執行早於 5.0 之 Android 版本的裝置，則將適用下列行為。
+- 如果公司入口網站應用程式的版本早於 1704，PIN 原則將不會套用至裝置，且 Intune 入口網站中將會顯示錯誤。
+- 如果公司入口網站已更新至 1704 版本，則只會套用簡單 PIN。 早於 5.0 的 Android 版本並不支援此設定。 Intune 入口網站中將不會顯示錯誤。
+
 
 ## <a name="google-play-store"></a>Google Play 商店
 
