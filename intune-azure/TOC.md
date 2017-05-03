@@ -94,6 +94,8 @@
 ### [設定公司入口網站應用程式](manage-apps/company-portal-app.md)
 ## 如何使用應用程式保護原則
 ### [建立及指派應用程式保護原則](manage-apps/app-protection-policies.md)
+### [準備好設定 WIP 應用程式保護原則](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [建立與指派 WIP 應用程式保護原則](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android 設定](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS 設定](manage-apps/ios-app-protection-policy-settings.md)
 ### [驗證應用程式保護原則](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [設定 Windows 10 版本升級設定](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [設定 Windows 10 教育版的設定](configure-devices/how-to-configure-education-settings.md)
+### [設定 iOS 的教育設定](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [設定商務用 Windows Update 的設定](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [設定憑證](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
