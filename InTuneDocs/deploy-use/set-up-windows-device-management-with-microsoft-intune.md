@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
-ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
-ms.lasthandoff: 04/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f1291d6eec32ad834d33fcbfff320ce173521a25
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -62,7 +62,7 @@ CNAME 資源記錄必須具有下列資訊：
 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com。 DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播完成之前，您無法在 Intune 中驗證 DNS 變更。
 
 **步驟 2：驗證 CNAME** (選用)<br>
-在 [Intune 管理主控台](http://manage.microsoft.com)中，選擇 [管理] &gt; [行動裝置管理] &gt; [Windows]。 在 [指定已驗證的網域名稱] 方塊中輸入公司網站中已驗證網域的 URL，然後選擇 [測試自動偵測]。
+在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [管理] &gt; [行動裝置管理] &gt; [Windows]。 在 [指定已驗證的網域名稱] 方塊中輸入公司網站中已驗證網域的 URL，然後選擇 [測試自動偵測]。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告訴使用者如何註冊 Windows 裝置
 告訴使用者如何註冊其 Windows 裝置，以及開始管理之後會發生的情況。

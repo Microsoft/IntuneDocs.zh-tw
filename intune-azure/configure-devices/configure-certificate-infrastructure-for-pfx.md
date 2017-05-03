@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 0c378fe6ed26bafb5a78daf36b9326771fdd287b
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 11bb2cbcf14abe5966e0b203ba3466adc12bd4dd
+ms.lasthandoff: 04/24/2017
 
 
 
 ---
-# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>為 PKCS 設定 Microsoft Intune 憑證基礎結構
+# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>透過 Intune 設定並管理 PKCS 憑證
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 本主題說明如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證設定檔。
