@@ -1,5 +1,5 @@
 ---
-title: "搭配 MAM CA 使用應用程式 | Microsoft Docs"
+title: "搭配 MAM CA 使用應用程式"
 description: "了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。"
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ ms.lasthandoff: 02/25/2017
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> 在 Android 裝置上：
+  * 裝置上必須安裝公司入口網站應用程式，但使用者不需登入應用程式。
+  * 裝置註冊必須透過 OneDrive 或 Outlook 應用程式完成。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>移除 Azure AD 註冊的裝置。
 您可以透過 Azure AD 管理主控台移除裝置註冊，IT 系統管理員通常這麼做。  也可以讓使用者在裝置上進行。

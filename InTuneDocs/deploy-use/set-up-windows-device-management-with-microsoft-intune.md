@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: f6014c5500b05762d123b2285ef859d67382e402
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,21 +25,21 @@ ms.lasthandoff: 04/06/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-使用下列其中一種方法設定 Windows 裝置註冊︰
+本主題將協助 IT 系統管理員為其使用者簡化 Windows 註冊。  不需要任何額外的步驟即可註冊 Windows 裝置，但您可以讓使用者更容易註冊。
 
-- [**使用 Azure Active Directory Premium 自動註冊 Windows 10**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  這個方法僅適用於 Windows 10 裝置。
- -  您必須擁有 Azure Active Directory Premium 才能使用此方法。
- -  若選擇不啟用自動註冊，請使用 Windows 8.1 及 Windows Phone 8.1 適用的註冊方法。
+有兩個因素會決定如何簡化 Windows 裝置註冊：
+- **您是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
+- **哪些版本的 Windows 用戶端會進行註冊？** <br>加入工作或學校帳戶即可自動註冊 Windows 10 裝置。 較舊版本則必須使用公司入口網站應用程式進行註冊。
 
-- [**不使用 Azure AD Premium 自動註冊進行註冊**](#enable-windows-enrollment-without-azure-ad-premium)
- - 若要註冊 Windows 8.1 及 Windows Phone 8.1 裝置，必須使用此方法。
- - 如果您不打算使用 Azure Active Directory (AD) Premium，您可以針對 Windows 8.1 及更新的裝置使用此方法。
+||**Azure AD Premium**|**其他 AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[自動註冊](#enable-windows-10-automatic-enrollment) |[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
+|**舊版 Windows**|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>啟用不使用自動註冊的 Windows 註冊
-您可以讓使用者安裝及註冊其裝置，而不用 Azure AD Premium 自動註冊。 當您將授權指派給使用者的帳戶之後，使用者就可以將該帳戶新增至 Windows 裝置，並同意註冊管理中的裝置。 如果您建立 DNS CNAME 資源記錄，使用者會連線並註冊 Intune，而不需要輸入伺服器名稱。
+您可以讓使用者註冊其裝置，而不用 Azure AD Premium 自動註冊。 一旦您指派授權，使用者就可以在將其工作帳戶新增至其個人擁有的裝置，或將其公司擁有的裝置加入您的 Azure AD 之後進行註冊。 建立 DNS 別名 (CNAME 記錄類型) 可讓使用者更輕鬆地註冊裝置。 如果您建立 DNS CNAME 資源記錄，使用者會在 Intune 中進行連線和註冊，而不需要輸入 Intune 伺服器名稱。
 
 **步驟 1：建立 CNAME** (選用)<br>
 建立公司網域的 CNAME DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。

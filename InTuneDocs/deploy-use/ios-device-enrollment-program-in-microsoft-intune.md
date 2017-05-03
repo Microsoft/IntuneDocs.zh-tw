@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -54,7 +54,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="get-a-device-enrollment-program-token"></a>取得裝置註冊方案 Token
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) \(https://deploy.apple.com\),並使用公司的 Apple ID 登入。 稍後，您必須使用這個 Apple ID 來更新 DEP 權杖。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com\),並使用公司的 Apple ID 登入。 稍後，您必須使用這個 Apple ID 來更新 DEP 權杖。
 
 2.  在裝置註冊方案入口網站中，移至 [裝置註冊方案]&gt; [管理伺服器]，然後選擇 [新增 MDM 伺服器]。
 
@@ -131,7 +131,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="assign-dep-devices-for-management"></a>指派要管理的 DEP 裝置
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) \(https://deploy.apple.com\) ,並使用公司的 Apple ID 登入。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com\) ,並使用公司的 Apple ID 登入。
 
 2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。
 
@@ -162,8 +162,10 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune 群組指派的變更
 
-從 2017 年 4 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在公司註冊設定檔選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 每個公司裝置註冊設定檔預先指派的 Intune 裝置群組，在移轉到 Azure Active Directory 裝置群組期間，都會根據公司裝置註冊設定檔的名稱，在 AAD 中建立對應的動態裝置群組。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。 [深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+從 2017 年 4 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在公司註冊設定檔選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 每個公司裝置註冊設定檔預先指派的 Intune 裝置群組，在移轉到 Azure Active Directory 裝置群組期間，都會根據公司裝置註冊設定檔的名稱，在 AAD 中建立對應的動態裝置群組。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。 如需此變更如何影響公司擁有之 iOS 裝置註冊的詳細資料，請參閱[將公司預先註冊的 iOS 裝置變更為自動群組 (英文)](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)。
 
-### <a name="see-also"></a>另請參閱
+您也可以[深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+
+### <a name="see-also"></a>請參閱
 [註冊裝置的必要條件](prerequisites-for-enrollment.md)
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/27/2017
     -   [下載電子郵件 \#2 範本以在組織中使用 (英文)](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 。<br></br>
 
--   **電子郵件 \#3：**在存取受影響之前為使用者提供時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合階段的流水線操作。 例如： 在 6 月份傳送電子郵件 \#1 給階段使用者，傳送電子郵件 \#2 給階段 2 使用者，傳送電子郵件 \#1 給階段 3 使用者。
+-   **電子郵件 \#3：**在存取受影響之前為使用者提供時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合階段的流水線操作。 例如： 在 6 月份，傳送電子郵件 \#1 給階段 1 使用者，傳送電子郵件 \#2 給階段 2 使用者，傳送電子郵件 \#1 給階段 3 使用者。
 
     -   [下載電子郵件 \#3 範本以在組織中使用 (英文)](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)。
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/27/2017
 
 Intune 提供向使用者宣導註冊裝置的其他範本資源︰
 
--   請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)，以取得每個行動裝置作業系統平台註冊步驟的進一步指引
+-   請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)，以取得每個行動裝置作業系統平台註冊步驟的進一步指引
 
 -   下載可自訂的[適用於 IT 系統管理員的使用者 Intune 註冊範本 (英文)](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 

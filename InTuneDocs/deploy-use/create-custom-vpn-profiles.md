@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: 9dbb44981c1525e6137dd8a469b1582731ee9719
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 12/20/2016
 * Android for Work 裝置
 * 執行 Windows 8.1 和更新版本的已註冊裝置
 * 執行 Windows Phone 8.1 和更新版本的裝置
-* 執行 Windows 10 Desktop 的已註冊裝置 
+* 執行 Windows 10 Desktop 的已註冊裝置
 * 執行 Windows 10 行動裝置版的裝置
 
 標準 Intune VPN 原則未包含您想要使用的設定時，這類型的原則十分有用。
@@ -53,7 +53,7 @@ ms.lasthandoff: 12/20/2016
 ## <a name="example-uri-settings"></a>範例 URI 設定
 
 這些設定可以用來為稱為 Contoso 的虛構公司中的 VPN 建立自訂設定。
-如需您可使用之所有設定的完整詳細資訊，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)。
+如需您可使用之所有設定的完整詳細資訊，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx)。
 
 原生 Contoso VPN (IKEv2)：./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -91,7 +91,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 說明文件︰https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx。
+若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 文件︰https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx。
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
 ### <a name="custom-uri-for-package-list"></a>套件清單的自訂 URI

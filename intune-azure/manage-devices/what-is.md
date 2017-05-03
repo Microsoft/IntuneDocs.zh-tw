@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？ 
+# <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ ms.lasthandoff: 04/13/2017
 - **概觀** - 取得您註冊的裝置及每部裝置執行之作業系統的資訊。
 - **管理** - 選擇 [所有裝置] 可檢視您所管理之所有裝置的清單。
     從清單中選取其中一部裝置，以開啟 [<*裝置名稱*>  概觀] 刀鋒視窗，從中選取下列其中一項︰
-    - **概觀** - 檢視裝置的一般資訊，包括其名稱、其擁有者、其是否為 BYOD 裝置、其上次簽入的時間等等。 
-                
+    - **概觀** - 檢視裝置的一般資訊，包括其名稱、其擁有者、其是否為 BYOD 裝置、其上次簽入的時間等等。
+
     - **硬體** - 檢視更多裝置相關資訊，包括其可用儲存空間、型號、製造商等等。
     ![受管理的裝置硬體清查](./media/hardware-inventory.png)
     - **偵測到的應用程式** - 顯示 Intune 找到已在裝置上安裝的所有應用程式清單。
@@ -67,6 +67,12 @@ ms.lasthandoff: 04/13/2017
 ### <a name="bypass-activation-lock"></a>**略過啟用鎖定**
 不使用使用者的 Apple ID 和密碼從 iOS 裝置移除啟用鎖定。 當您略過啟用鎖定之後，裝置會在 [尋找我的 iPhone] 應用程式會啟動再次開啟啟用鎖定。 僅當您能夠實際使用裝置時，才略過啟用鎖定。
 
+### <a name="fresh-start"></a>**全新開始**
+
+在執行 Creators Update 的 Windows 10 電腦上移除所有已安裝的應用程式，然後將電腦自動更新至最新的 Windows 版本。
+這可用來協助移除通常會隨新電腦一起提供的預先安裝 OEM 應用程式。 您可以設定是否在發出此裝置動作時保留使用者資料。 在這種情況下，會移除應用程式和設定，但會保留使用者主資料夾的內容。
+
+
 ### <a name="lost-mode"></a>**遺失模式**
 如果 iOS 裝置遺失或遭竊，您可以啟用遺失模式。 這可讓您指定的訊息及電話號碼顯示在裝置的鎖定畫面上。 若要做到這一點，請執行下列動作：
 1.    在 iOS 裝置的 [屬性] 刀鋒視窗上，選擇 [更多]  >  [遺失模式]。
@@ -78,7 +84,7 @@ ms.lasthandoff: 04/13/2017
 ### <a name="locate-device"></a>**尋找裝置**
 使用這個遠端動作在地圖上顯示遺失或遭竊 iOS 裝置的位置。 裝置必須是透過 DEP 註冊之公司擁有的 iOS 裝置，且處於受監督模式。 使用此動作之前，必須已將裝置設置為遺失模式。
 1.    在 iOS 裝置的 [屬性] 刀鋒視窗上，選擇 [更多]  >  [尋找裝置]。
-2.    找到裝置之後，它的位置會顯示在 [尋找裝置] 刀鋒視窗上。 
+2.    找到裝置之後，它的位置會顯示在 [尋找裝置] 刀鋒視窗上。
     ![尋找裝置刀鋒視窗](./media/locate-device.png)
 
 >[!NOTE]

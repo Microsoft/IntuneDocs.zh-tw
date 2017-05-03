@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Android - 無法使用受管理瀏覽器應用程式。<br /><br />
 
 -   執行 iOS 8.0 和更新版本的裝置
 
-Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)開啟網路內容。
+Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)開啟網路內容。
 
 ## <a name="create-a-managed-browser-policy"></a>建立受管理的瀏覽器原則
 
@@ -110,7 +110,7 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
     -   針對 https 使用連接埠 443
 
-    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;**與**http&colon;//www&period;contoso&period;com: /*;**。
+    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;** 與 **http&colon;//www&period;contoso&period;com: /*;**。
 
 -   使用下表來了解您在指定 URL 時可使用的允許模式：
 

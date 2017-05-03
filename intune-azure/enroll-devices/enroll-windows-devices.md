@@ -5,7 +5,7 @@ description: "Intune Azure 預覽版︰啟用 Windows 裝置的 Intune 行動裝
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 本主題將協助 IT 系統管理員為其使用者簡化 Windows 註冊。  不需要任何額外的步驟即可註冊 Windows 裝置，但您可以讓使用者更容易註冊。
 
-有兩個因素會決定註冊 Windows 裝置的方式︰
+Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加入 Azure Active Directory 網域的裝置。 這表示當不同的標準使用者使用其 Azure AD 認證登入裝置時，將會收到指派給其使用者名稱的任何應用程式和原則。 針對安裝應用程式等自助式案例，使用者目前無法使用公司入口網站來進行。
+
+有兩個因素會決定如何簡化 Windows 裝置註冊：
+
 - **您是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
 - **哪些版本的 Windows 用戶端會進行註冊？** <br>加入工作或學校帳戶即可自動註冊 Windows 10 裝置。 較舊版本則必須使用公司入口網站應用程式進行註冊。
 
@@ -40,7 +43,7 @@ ms.lasthandoff: 04/06/2017
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>不使用 Azure AD Premium 啟用 Windows 註冊
-您可以讓使用者註冊其裝置，而不用 Azure AD Premium 自動註冊。 當您將授權指派給使用者的帳戶之後，使用者就可以將該帳戶新增至 Windows 裝置，並同意註冊管理中的裝置。 建立 DNS 別名 (CNAME 記錄類型) 可讓使用者更輕鬆地註冊裝置。 如果您建立 DNS CNAME 資源記錄，使用者會在 Intune 中進行連線和註冊，而不需要輸入 Intune 伺服器名稱。
+您可以讓使用者註冊其裝置，而不用 Azure AD Premium 自動註冊。 一旦您指派授權，使用者就可以在將其工作帳戶新增至其個人擁有的裝置，或將其公司擁有的裝置加入您的 Azure AD 之後進行註冊。 建立 DNS 別名 (CNAME 記錄類型) 可讓使用者更輕鬆地註冊裝置。 如果您建立 DNS CNAME 資源記錄，使用者會在 Intune 中進行連線和註冊，而不需要輸入 Intune 伺服器名稱。
 
 **步驟 1：建立 CNAME** (選用)<br>
 建立公司網域的 CNAME DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。

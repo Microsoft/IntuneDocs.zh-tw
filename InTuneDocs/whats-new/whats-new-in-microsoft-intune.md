@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: b3cf8d8f60482be2d4d903d1b2c00c1a3a392b73
+ms.lasthandoff: 04/20/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---march-2017"></a>Microsoft Intune 的新功能 - 2017 年 3 月
+# <a name="whats-new-in-microsoft-intune---april-2017"></a>Microsoft Intune 的新功能 - 2017 年 4 月
 了解此 Microsoft Intune 版本中的新功能。 您也可以了解即將推出且您應該加以規劃的變更，以及過去版本的相關資訊。
 
 > [!Note]
@@ -29,68 +29,55 @@ ms.lasthandoff: 03/29/2017
 
 ## <a name="new-capabilities"></a>新功能
 
-### <a name="support-for-skycure"></a>支援 Skycure
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改善適用於所有平台的公司入口網站應用程式登入體驗 <!--User Story 1132123-->
 
-您現在可以根據由 Skycure (一個與 Microsoft Intune 整合的行動威脅防禦解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估是根據收集自執行 Skycure 裝置的遙測，包括︰
+我們致力於改善適用於 Android、iOS 和 Windows 的 Intune 公司入口網站應用程式登入體驗。 當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。
 
-- 實體防禦
-- 網路防禦
-- 應用程式防禦
-- 弱點防禦
+您可以在[應用程式 UI 的新功能](whats-new-in-intune-app-ui.md)頁面上找到舊版登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗的螢幕擷取畫面。
 
-您可以根據透過 Intune 裝置合規性政策所啟用的 Skycure 風險評估，來設定 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不符合規範的裝置存取公司資源。 如需詳細資訊，請參閱 [Skycure Mobile Threat Defense 連接器](/intune/deploy-use/skycure-mobile-threat-defense-connector)。
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps 可供 Managed Browser 使用 <!--822308, 822303-->
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
+Microsoft MyApps 現在於 Managed Browser 中提供更佳支援。 非管理目標的 Managed Browser 使用者將會直接進入 MyApps 服務，以在其中存取其系統管理員佈建的 SaaS 應用程式。 Intune 管理目標的使用者將能夠繼續從內建 Managed Browser 書籤存取 MyApps。
 
-Android 版公司入口網站應用程式將會更新其使用者介面，以提供更現代化的外觀和操作，以及更佳的使用者體驗。 值得注意的更新如下︰
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser 和公司入口網站的新圖示 <!--918433, 918431, 971473-->
 
-- 色彩：公司入口網站索引標籤標頭會以 IT 定義的品牌上色。
-- 應用程式：在 [應用程式] 索引標籤中，已更新 [熱門應用程式] 和 [所有應用程式] 按鈕。
-- 搜尋：在 [應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
-- 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [熱門]、[所有] 與 [類別]，以更方便瀏覽。
-- 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤以提高可讀性。
+Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，因此與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。 您可以在 [Intune 應用程式 UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Managed Browser 的新圖示。
 
-如需有關這些變更的詳細資訊，請參閱 [Intune 使用者應用程式的 UI 更新](whats-new-in-intune-app-ui.md)。
+公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以改進與 EM+S 中其他應用程式的一致性。 從四月到五月底，這些圖示會逐漸在各平台發行。
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>未受管理的裝置可以存取已指派的應用程式 <!--664691-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
-iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派給他們的「無須註冊即可使用」應用程式，這屬於公司入口網站的設計變更。 使用 Intune 認證，使用者能夠登入公司入口網站，並查看指派給他們的應用程式清單。 「無須註冊即可使用」應用程式的應用程式套件，可透過公司入口網站下載取得。 這項變更不會影響需要註冊才能安裝的應用程式，因為如果使用者想要安裝這些應用程式，系統會提示他們註冊裝置。
+Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。 您可以在 [Intune 應用程式 UI 頁面的新功能](whats-new-in-intune-app-ui.md)中看到 Android 版公司入口網站應用程式的新畫面。
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 公司入口網站的簽署指令碼 <!--941642-->
+### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>禁止應用程式存取 SharePoint Online <!-- 679339 -->
 
-如果您需要下載和側載「Windows 10 公司入口網站」應用程式，您現在可以使用指令碼為您的組織簡化及加速應用程式簽署程序。   若需要下載指令碼及其使用指示，請參閱 TechNet 資源庫上 [Windows 10 公司入口網站專用的 Microsoft Intune 簽署指令碼](https://aka.ms/win10cpscript)。 如需本公告的詳細資訊，請參閱 Intune 支援小組部落格上的[更新您的 Windows 10 公司入口網站應用程式](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)。
+您現在可以建立以應用程式為基礎的條件式存取原則，來禁止沒有套用應用程式保護原則的應用程式存取 [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)。 在以應用程式為基礎的條件式存取案例中，您可以使用 Azure 入口網站指定能存取 SharePoint Online 的應用程式。
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>大量註冊 Windows 10 裝置 <!-- 747607 -->
+
+您現在可以使用 Windows 設定設計工具 (WCD) 將執行 Windows 10 Creators Update 的大量裝置加入到 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶啟用[大量 MDM 註冊](/intune/deploy-use/bulk-enroll-windows)，請使用 Windows 設定設計工具建立會將裝置加入到 Azure AD 租用戶的佈建套件，然後將套件套用至您要大量註冊及管理的公司擁有裝置。 將套件套用至裝置之後，裝置會加入 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。  Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
 
 ## <a name="notices"></a>通知
 
-### <a name="support-for-ios-103"></a>支援 iOS 10.3
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接存取 Apple 註冊案例 <!--951869-->
 
-iOS 10.3 版在 2017 年 3 月 27 日開始向 iOS 使用者推出。 所有現有的 Intune MDM 與 MAM 案例都與最新版本的 Apple OS 相容。 當使用者將裝置和應用程式升級到 iOS 10.3 時，我們預期所有目前可用來管理 iOS 裝置的 Intune 功能將可繼續運作。
+對於在 2017 年 1 月之後建立的 Intune 帳戶，Intune 已經啟用使用 Azure Preview 入口網站中的「註冊裝置」工作負載直接存取 Apple 註冊案例。 Apple 註冊預覽原本只能從傳統 Intune 入口網站中的連結存取。 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用這些功能。 移轉的排程尚未宣布，但將會盡快提供詳細資料。 如果您現有的帳戶無法存取預覽，我們強烈建議您建立試用帳戶來測試新的體驗。
 
-目前沒有任何已知問題可分享。 如果您在使用 iOS 10.3 時發生任何問題，歡迎連絡 [Intune 支援小組](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)。
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Appx 在 Azure 上的 Intune 中的未來動態 <!-- 1000270 -->
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改善對於中國 Android 使用者的支援 <!--720444-->
+在移轉到 Azure 上的 Intune 的過程中，我們將進行三項 appx 變更：
 
-由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文市集取得應用程式。 公司入口網站將支援此工作流程，方法是將中國的 Android 使用者重新導向，以便從當地的應用程式市集下載公司入口網站及 Outlook 應用程式。 這將會在啟用條件式存取原則時，改善對於行動裝置管理及行動應用程式管理的使用者體驗。 Android 版公司入口網站和 Outlook 應用程式可在下列中文應用程式市集取得：
+1. 在傳統 Intune 主控台中，新增只能部署到 MDM 註冊裝置的 appx 應用程式類型。
+2. 重新規劃現有的 appx 應用程式類型，將目標僅限於透過 Intune 電腦代理程式管理的電腦。
+3. 透過移轉，將所有現有的 appxs 轉換成 MDM appxs。
 
-- [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-- [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
-- [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
-- [華為](https://go.microsoft.com/fwlink/?linkid=836948)
-- [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
+#### <a name="how-does-this-affect-me"></a>這項變更對我造成什麼影響？
 
-### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>最佳作法︰請確定您的公司入口網站應用程式是最新版本 <!--879465-->
+這不會影響透過 Intune 電腦代理程式管理之裝置上的任何現有部署。 不過移轉之後，您無法將這些移轉的 appxs 部署到透過 Intune 電腦代理程式管理但先前未設為目標的任何新裝置。
 
-我們於 2016 年 12 月發行的更新，會針對成群使用者註冊 iOS、Android、Windows 8.1+ 或 Windows Phone 8.1+ 裝置時，強制使用 Multi-Factor Authentication (MFA)。 若公司入口網站應用程式低於特定基準版本 (Android 為 v5.0.3419.0+，iOS 為 v2.1.17+)，這個功能便無法運作。
+#### <a name="what-action-do-i-need-to-take"></a>我需要採取什麼動作
 
-Microsoft 不斷致力改善 Intune，在主控台及所有支援平台的公司入口網站應用程式中加入新功能。 有鑑於此，Microsoft 僅會針對在最新公司入口網站應用程式之中所發現問題來發行修正。 因此，我們建議您使用最新版的公司入口網站應用程式，才能為您帶來最佳的使用者體驗。
-
->[!Tip]
-> 請您的使用者將其裝置設定為自動從適當的應用程式商店更新應用程式。 如果您已在網路共用上提供 Android 公司入口網站應用程式，您可以從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=49140)下載最新版本。
-
-### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>iOS 和 Android 版本的 MAM 現在已可使用 Microsoft Teams
-
-Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Android 版 Microsoft Teams 應用程式，現在可在 Intune 行動裝置應用程式管理 (MAM) 功能中使用，因此您可以讓您的團隊自由地跨裝置工作，同時確保每回的交談和公司資料都受到保護。 如需詳細資訊，請參閱 Enterprise Mobility and Security 部落格上的 [Microsoft Teams 公告](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)。
+移轉之後，如果您想要執行新的電腦部署，您將必須再次重新上傳 appx 作為電腦的 appx。 若要深入了解，請參閱 Intune 支援小組部落格上的 [Appx changes in Intune on Azure](https://aka.ms/appxchange) (Azure 上的 Intune 中的 Appx 變更)。  
 
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 管理體驗公開預覽新功能<!--736542-->
@@ -117,7 +104,7 @@ Apple 宣告，從 2017 年春季開始，將會強制執行 Application Transpo
 
 ### <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [雲端平台藍圖](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Azure 預覽的新功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [公司入口網站 UI 的新功能](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [新功能封存](whats-new-archive.md)

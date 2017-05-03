@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/06/17
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
-ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
+ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>透過遠端鎖定或密碼重設來協助保護您的裝置
@@ -64,7 +64,7 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。
 |iOS|支援從裝置清除密碼。 不會建立新的暫時密碼。|
 |Android|支援 Android 7.0 之前的版本。 建立暫時密碼。|
 |Android for Work|不支援|
-|Windows 10 Mobile|支援|
+|Windows 10 行動裝置版|支援已加入 Azure AD 的 Windows 10 Creator 版本及更新版本行動裝置。|
 |Windows Phone 8 和 Windows Phone 8.1|支援|
 |Windows RT 8.1|不支援|
 |Windows 8.1|不支援|

@@ -1,23 +1,23 @@
 ---
 title: "Windows 版本升級原則設定 | Microsoft Docs"
-description: "了解如何透過 Intune 自動將 Windows 10 裝置升級到最新版本。"
+description: "了解如何透過 Intune 自動將 Windows 10 裝置升級到不同的版本。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/10/2016
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune **版本升級原則**可讓您自動將執行下列 Windows 10 版本之一的裝置升級至較新版本：
+Microsoft Intune「版本升級原則」可讓您自動將執行下列 Windows 10 版本之一的裝置升級至不同的版本：
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile

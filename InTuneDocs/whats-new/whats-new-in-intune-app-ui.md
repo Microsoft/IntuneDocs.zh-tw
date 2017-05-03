@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -27,11 +27,55 @@ ms.lasthandoff: 04/13/2017
 > [!Note]
 > 請注意，下列影像為預覽，宣告的產品可能與展示版本不同。
 
-## <a name="whats-coming-in-intune-app-ui"></a>Intune 應用程式 UI 的未來動態
+## <a name="april-2017"></a>2017 年 4 月
 
-### <a name="april-2017"></a>2017 年 4 月
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改善適用於所有平台的公司入口網站應用程式登入體驗 <!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser 和公司入口網站的新圖示 <!--918433, 918431-->
+我們致力於改善適用於 Android、iOS 和 Windows 的 Intune 公司入口網站應用程式登入體驗。  當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。  
+
+以下您可以看到舊版的登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗。
+
+__舊版登入體驗__
+
+![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![點選 [登入] 之後，使用者會在此頁面上輸入其認證，此頁面會要求輸入使用者的電子郵件和密碼，以及提供解決密碼失敗的方法。](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![使用者提供密碼之後，公司入口網站應用程式會登入，並以載入列指出進度。](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__新的登入體驗__
+
+![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![系統會在畫面上單獨提示使用者輸入電子郵件地址，而不是同時提示輸入電子郵件與密碼。](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![接受使用者的電子郵件地址後，系統會提示使用者輸入密碼。](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__從另一部裝置登入時的新登入體驗__
+
+![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+點選 [從另一部裝置登入] 連結。
+
+![系統會在畫面上單獨提示使用者輸入電子郵件地址，而不是同時提示輸入電子郵件與密碼。 電子郵件欄位底下的連結顯示 [從另一部裝置登入]。](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![系統會顯示從工作電腦移至 aka.ms/devicelogin 頁面，並使用應用程式所提供的唯一密碼進行登入的指示。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+啟動瀏覽器並移至 [http://aka.ms/devicelogin](https://aka.ms/devicelogin)。
+
+![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+輸入您在公司入口網站應用程式中看到的驗證碼。 當您選取 [繼續] 時，您可以使用貴公司所支援的任何方法 (例如智慧卡) 進行驗證。
+
+![使用者已將唯一驗證碼輸入至欄位，且 [裝置登入] 網站已要求確認 Intune 公司入口網站是接收驗證以登入的正確應用程式。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![確認頁面指出使用者現已在其裝置上登入公司入口網站應用程式，並且可以關閉此頁面。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+公司入口網站應用程式將會開始登入。
+
+![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出進度。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser 和公司入口網站的新圖示 <!--918433, 918431-->
 
 Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，以使它與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。
 
@@ -52,9 +96,9 @@ Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示�
 
 公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以改進與 EM+S 中其他應用程式的一致性。 從四月起到五月底，這些圖示會逐漸在各平台發行。
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
-Android 公司入口網站應用程式的更新，會在使用者啟動或繼續應用程式時顯示登入進度列指示器。 在允許使用者存取應用程式之前，該指示器會逐一顯示各種新狀態，從「正在連線...」開始，然後顯示「正在登入...」，最後顯示「正在檢查安全性需求...」。
+Android 公司入口網站應用程式的更新會在使用者啟動或繼續執行應用程式時，顯示登入進度指示器。 該指示器會顯示新的狀態進度，一開始為「正在連線...」，接著依序為「正在登入...」和「正在檢查安全性需求...」，之後才允許使用者存取應用程式。
 
 <html>
 <body>
@@ -74,9 +118,7 @@ Android 公司入口網站應用程式的更新，會在使用者啟動或繼續
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>已宣布的終端使用者應用程式 UI 更新內容
-
-### <a name="february-2017"></a>2017 年 2 月
+## <a name="february-2017"></a>2017 年 2 月
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622, announced 1702-->
 從 3 月起，Android 版公司入口網站應用程式會遵循[素材設計方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀與風格。 此改善的使用者體驗包括︰
@@ -113,7 +155,7 @@ Android 公司入口網站應用程式的更新，會在使用者啟動或繼續
 
 ### <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [雲端平台藍圖](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Azure 預覽的新功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [新功能封存](whats-new-archive.md)
 

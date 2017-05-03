@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>啟用 Windows 10 自動註冊
 
-自動註冊可讓使用者在 Intune 中註冊公司擁有或個人 Windows 10 電腦與 Windows 10 行動裝置，方法是新增工作或學校帳戶並同意進行管理。 就是這麼簡單。 在背景中，使用者的裝置註冊並加入 Azure Active Directory。 註冊後，就會使用 Intune 管理裝置。
+自動註冊可讓使用者在將工作帳戶新增到其個人擁有的裝置，或是將其公司擁有的裝置加入 Azure Active Directory 時，在 Intune 中註冊他們的 Windows 10 裝置。 在背景中，使用者的裝置註冊並加入 Azure Active Directory。 註冊後，就會使用 Intune 管理裝置。
 
 **先決條件**
 - Azure Active Directory Premium 訂閱 ([試用訂閱](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -21,19 +21,19 @@
 
   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-intune.png)
 
-4. 設定哪些使用者將會自動註冊。
+4. 設定 **MDM 使用者範圍**。 指定哪些使用者的裝置應該由 Microsoft Intune 管理。 這些使用者的 Windows 10 裝置將會自動註冊，以便使用 Microsoft Intune 管理。
 
-  ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
-
-  使用下列 URL 的預設值：
-  - **MDM 註冊**
-  - **MDM 使用條款**
-  - **MDM 合規性**
-
-5. 指定哪些使用者的裝置應該由 Microsoft Intune 管理。 這些使用者的 Windows 10 裝置將會自動註冊，以便使用 Microsoft Intune 管理。
-
-  - **全部**
-  - **群組**
   - **無**
+  - **部分**
+  - **全部**
+
+   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
+
+5. 使用下列 URL 的預設值：
+    - **MDM 使用條款 URL**
+    - **MDM 探索 URL**
+    - **MDM 合規性 URL**
 
 6. 選取 [儲存]。
+
+根據預設，不會對此服務啟用雙因素驗證。 不過，於註冊裝置時，會建議使用雙因素驗證。 您必須先在 Azure Active Directory 中設定雙因素驗證提供者，並針對多重要素驗證來設定您的使用者帳戶之後，才會需要此服務的雙因素驗證。 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。

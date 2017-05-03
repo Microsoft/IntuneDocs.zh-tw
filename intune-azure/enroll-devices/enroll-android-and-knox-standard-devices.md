@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune 可讓您管理 Android 裝置，包括 Samsung Knox Standard 裝置。 若要啟用裝置管理，您的使用者必須註冊其裝置，方法是下載從 Google Play 取得的 Intune 公司入口網站應用程式，然後開啟應用程式，並遵循提示進行註冊。 管理 Android 裝置之後，您可以[建立合規性原則](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)、[管理應用程式](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management)等。
+
+Intune 的多使用者管理現在支援執行 Samsung KNOX Standard 的裝置。 這代表使用者可以使用其 Azure AD 認證登入和登出裝置，而且該裝置不論是否正在使用，都會集中管理。 當終端使用者登入時，他們可以存取應用程式，此外也可以將任何原則套用到這些應用程式。 當使用者登出時，會清除所有應用程式資料。
 
 ## <a name="prerequisite"></a>必要條件
 

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,9 +61,9 @@ ms.lasthandoff: 03/04/2017
  - Android 裝置：
      - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
     
-        -    這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up] (安全啟動) 畫面中選擇 [Require PIN to start device] (需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
+        -    這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up]\(安全啟動) 畫面中選擇 [Require PIN to start device]\(需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
     
-        -     有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
+        -     有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>原則問題
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 03/04/2017
 ### <a name="exchange-connector-logs"></a>Exchange Connector 記錄檔
 
 #### <a name="general-log-information"></a>一般記錄檔資訊
-若要檢視 Exchange Connector 記錄檔，使用 [伺服器追蹤檢視器工具](https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
+若要檢視 Exchange Connector 記錄檔，請使用 [伺服器追蹤檢視器工具(伺服器追蹤檢視器工具)] (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
 
 >[!NOTE]
 >記錄檔位於 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 一系列共包含 30 個檔案的記錄檔是以 *Connector0.log* 開始並在 *Connector29.log* 停止。 記錄檔會在累積 10MB 的資料後，換用另一個檔案。 一旦記錄檔達到 Connector29，將會覆寫先前的記錄檔，再次從 Connector0 開始。
