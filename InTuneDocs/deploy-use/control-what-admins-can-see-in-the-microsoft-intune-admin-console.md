@@ -40,7 +40,7 @@ ms.lasthandoff: 12/30/2016
     -   **唯讀存取**
     -   **技術服務人員 - 群組節點**
 
-    完整存取權和唯讀存取權都一目了然。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    完整存取權和唯讀存取權都一目了然。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **技術服務人員 - 群組節點**會限制哪些系統管理員可以看到並執行下列工作︰
 
