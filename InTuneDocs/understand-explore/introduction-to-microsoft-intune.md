@@ -5,7 +5,7 @@ keywords: "什麼是 Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您
 * 藉由協助控制您的工作人員存取並共用公司資訊的方式，保護您的公司資訊。
 * 確保裝置和應用程式都符合公司安全性需求。
 
-Intune 和 Azure Active Directory (Azure AD) 緊密整合以進行身分識別和存取控制，並和 Azure 資訊保護緊密整合以進行資料保護。 它是 Microsoft Enterprise Mobility + Security (EMS) 的「管理手臂」，而 Office 365 則是 Microsoft 行動解決方案的「生產手臂」。  
+Intune 和 Azure Active Directory (Azure AD) 緊密整合以進行身分識別和存取控制，並和 Azure 資訊保護緊密整合以進行資料保護。
 
 Office 365 和 EMS 結合，能讓您的工作人員在所有裝置上都具有生產力，同時持續保護您的組織資訊。 Office 365 和 EMS 是企業行動 (包括生產力、身分識別、存取控制、管理和資料保護) 的完整整合式套件。 它可提供您在組織中部署和操作行動解決方案的有效方式。
 
