@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 54a424677ef2df62c7a1fb18f2419f7b419112c0
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -69,8 +69,4 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |功能|詳細資料|詳細資訊|
 |--------------|-----------|--------------------|
 |清查和報告|尋找您管理的裝置及裝置所用軟體的相關資訊。|[在 Microsoft Intune 透過清查了解您的裝置](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-
-
-### <a name="see-also"></a>請參閱
-[Microsoft Intune 的 Windows 電腦管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
