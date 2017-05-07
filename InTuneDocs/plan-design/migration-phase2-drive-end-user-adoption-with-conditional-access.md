@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ ms.lasthandoff: 03/27/2017
 
 -   先前的解決方案使用者可能會使用未受管理的裝置存取資源，直到針對這些使用者啟用條件式存取為止。
 
-> [!TIP] 
+> [!TIP]
 > 這是眾多方法之一。 您可以選擇較簡單的程序，以延遲所有條件式存取直到使用者已收到每個階段的註冊指示後為止，或是選擇較嚴格的程序，從一開始就強制條件式存取，而且要求所有存取的完整合規性。
 
 -   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access)。
@@ -61,7 +61,7 @@ ms.lasthandoff: 03/27/2017
 
 -   了解[如何設定條件式存取](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
-### <a name="task-2-setup-intune-conditional-access"></a>工作 2︰安裝 Intune 條件式存取
+### <a name="task-2-set-up-intune-conditional-access"></a>工作 2︰設定 Intune 條件式存取
 
 選擇下列其中一個條件式存取原則類型以深入了解︰
 

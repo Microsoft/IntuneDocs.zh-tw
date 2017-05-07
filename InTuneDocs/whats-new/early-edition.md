@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: d7f25657fc7cfb9298809f76f198810718e58c39
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/19/2017
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改進 Windows 10 公司入口網站應用程式的應用程式安裝狀態 <!--676495-->
 
-Windows 10 公司入口網站應用程式現在會針對從公司入口網站開始進行的所有現代應用程式安裝，提供應用程式安裝進度列。
+Windows 10 公司入口網站應用程式現在會針對從公司入口網站開始進行的所有現代應用程式安裝，提供應用程式安裝進度列。 您可以在 [Intune 應用程式 UI 中的新功能頁面](whats-new-in-intune-app-ui.md)上，查看適用於 Windows 10 的公司入口網站應用程式的新狀態訊息。
 
 ### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>改進 iOS 公司入口網站應用程式中的狀態訊息 <!--744866-->
 

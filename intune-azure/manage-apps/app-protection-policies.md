@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 無論裝置是否交由 Intune 管理，都能對裝置上執行的應用程式套用應用程式保護原則。 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[什麼是 Microsoft Intune 應用程式保護原則](what-is-app-protection-policy.md)。
 
 ##  <a name="create-an-app-protection-policy"></a>建立應用程式保護原則
-1.  在**管理應用程式**工作負載中選擇 [管理]  >  [應用程式設定原則]。
+1.  在 [行動應用程式] 工作負載中，選擇 [管理] > [應用程式保護原則]。
 
 2.  這會開啟 [應用程式原則] 刀鋒視窗，讓您從中建立新的原則及編輯現有的原則。 選擇 **[新增原則]**。
 

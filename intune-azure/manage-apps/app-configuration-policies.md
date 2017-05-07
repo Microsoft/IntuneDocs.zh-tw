@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 73360154765d53fe1f42e4e97699ad9385bfda6f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -54,8 +54,8 @@ ms.lasthandoff: 02/18/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
-1.  在**管理應用程式**工作負載中選擇 [管理]  >  [應用程式設定原則]。
+3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
+1.  在 [行動應用程式] 工作負載中，選擇 [管理] > [應用程式設定原則]。
 
 2.  在原則清單刀鋒視窗中選擇 [新增]。
 

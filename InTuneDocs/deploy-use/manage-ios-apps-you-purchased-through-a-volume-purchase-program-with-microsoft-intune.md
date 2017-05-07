@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>部署大量採購應用程式
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [應用程式] &gt; [受管理的軟體] &gt; [大量採購的應用程式]。 此清單會顯示已從 Apple VPP 服務同步處理的所有應用程式。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [應用程式] &gt; [應用程式] &gt; [大量採購的應用程式]。 此清單會顯示已從 Apple VPP 服務同步處理的所有應用程式。
 
 2.  選擇您想要部署的應用程式，選擇 **[管理部署]**，然後使用[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)主題中的指示，完成上傳、建立和部署應用程式。
 
@@ -79,22 +80,14 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 當具有合格裝置的使用者第一次嘗試安裝 VPP 應用程式時，系統會要求他們加入 Apple 大量採購方案。 他們必須這麼做，應用程式安裝才會繼續執行。
 
-> [!TIP]
-> 查看 [VPP 條款狀態] 欄，以了解已部署應用程式之每位使用者的接受狀態。
-
 如果沒有更多的可用授權，部署將會失敗。
 
 ## <a name="to-monitor-apple-vpp-apps"></a>監視 Apple VPP 應用程式
-您可以監視已部署了哪些 VPP 應用程式，以及從 **[應用程式]** 工作區了解使用了多少授權，其位於：**[受管理的軟體]** &gt; **[大量購買應用程式]** 節點。
+您可以從 [大量採購的應用程式] 節點中的 [應用程式] 工作區，監視已部署了哪些 VPP 應用程式，以及已使用了多少授權。
 
 > [!TIP]
 > 您也可以使用應用程式的 **[篩選器]** 來檢查每個應用程式的安裝狀態。
 
 ### <a name="see-also"></a>請參閱
 [在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

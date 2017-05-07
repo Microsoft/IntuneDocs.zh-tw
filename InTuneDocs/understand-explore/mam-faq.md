@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/14/2017
 **MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **MAM 支援哪些裝置組態？** Intune MAM 支援兩個組態︰
-  1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要管理使用 MDM + MAM 的應用程式，客戶應該於下列位置使用 Intune 獨立主控台：http://manage.microsoft.com.
+  1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該使用位於下列位置的 Intune 獨立主控台：https://manage.microsoft.com。
 
   2. **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 http://portal.azure.com。
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/28/2017
 ## <a name="using-reports"></a>使用報表
 Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表可幫助您確認目前的需求，以及預測未來的花費。 [報表]  工作區可提供您建立和管理報表的工具。 
 
-### <a name="report-types"></a>報表類型
+## <a name="report-types"></a>報表類型
 
 |報表類型|描述|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 |**健康情況證明報告**|顯示行動裝置的健康情況。|
 |**Mac OS X 硬體報表**|顯示所選群組中所有已註冊的 Mac OS X 裝置的硬體詳細資料。 如需從這些裝置收集的硬體清查相關資訊，請參閱[在 Microsoft Intune 透過清查了解您的裝置](understand-your-devices-with-inventory-in-microsoft-intune.md)。|
 |**Mac OS X 軟體報表**|顯示所選群組中所有 Mac OS X 裝置上安裝的軟體。 報表會列出軟體名稱 (當做套件組合識別碼)、簡短版本 (或易記的) 名稱、版本和已安裝軟體的裝置數目。|
+|**Windows 資訊保護報告**|顯示您所管理之裝置上的 Windows 資訊保護 (WIP) 作業相關資訊。|
+|**健康情況證明報告**|顯示由您所管理之裝置的 Windows 健康情況證明服務所報告的資訊。|
 
-#### <a name="to-create-a-report"></a>若要建立報表
+## <a name="to-create-a-report"></a>若要建立報表
 
 1.  在 Intune 管理主控台中，選擇 [報表]。 然後選擇您要產生的報表類型，如上表所述。
 

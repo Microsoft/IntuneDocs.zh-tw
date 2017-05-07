@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/21/2017
 
   ![重設密碼橫幅，與重設裝置密碼和使用者將如何登出的警告。 使用者輸入的按鈕為 [登出] 和 [取消]。](./media/iwp-reset-passcode-popup.png)
 
-5.  選取 [登出]，您會收到最後一個訊息，告訴您密碼從裝置移除的相關資訊。 如果您的裝置不在手邊，請勿移除密碼，因為任何能夠實際存取裝置的人都將能夠存取其上的大部分個人或公司資訊。
+5.  選取 [登出]，就會收到最後一個訊息，告訴您密碼從裝置移除的相關資訊。 如果您的裝置不在手邊，請勿移除密碼，因為任何能夠實際存取裝置的人都將能夠存取其上的大部分個人或公司資訊。 
 
   ![第二個重設密碼橫幅，與重設裝置密碼和將會如何從裝置移除密碼的警告。 它也會建議如何前往裝置設定來設定新的密碼。](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ ms.lasthandoff: 03/21/2017
   **Windows 10 行動裝置版**：移除現有的密碼，並建立包含字母和數字的暫時密碼。 如果您使用 Windows Hello 臉部辨識登入，系統將繼續支援它。
     
   **Windows Phone 8.1**：移除現有的密碼，並建立包含數字的暫時密碼
+
+  針對 Android 和 Windows 裝置，暫時密碼會顯示在 [裝置詳細資料] 中。 
 
 6.  解除鎖定裝置並設定新密碼，或移至裝置的 [設定] 變更暫時密碼。
 

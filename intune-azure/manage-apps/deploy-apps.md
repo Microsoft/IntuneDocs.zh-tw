@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ ms.lasthandoff: 02/18/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
-1. 在 [管理應用程式] 工作負載中，選擇 [管理]  >  [應用程式]。
+3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
+1. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 2. 在應用程式刀鋒視窗清單中，按一下想要指派的應用程式。
 3. 在 <*應用程式名稱*> - [概觀] 刀鋒視窗中，選擇 [管理]  >  [指派]。
 4. 選擇 [選取群組]然後，在 [選取群組] 刀鋒視窗中，選擇要指派該應用程式的 Azure AD 群組。
