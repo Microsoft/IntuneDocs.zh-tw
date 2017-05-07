@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
+3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 1. 在 [行動應用程式] 刀鋒視窗中選擇 [安裝]  >  [商務用 Windows 市集]。
 2. 按一下 [啟用]。
 3. 若還未執行此動作，請依照前文所述按一下連結註冊商務用 Windows 市集及關聯您的帳戶。
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="synchronize-apps"></a>同步處理應用程式
 
-1. 在**管理應用程式**工作負載中，選擇 [安裝]  >  [商務用 Windows 市集]。
+1. 在 [行動應用程式] 工作負載中，選擇 [安裝] > [商務用 Windows 市集]。
 2. 按一下 [同步]，以取得您從 Windows 市集購買的應用程式，將其同步到 Intune。
 
 ## <a name="assign-apps"></a>指派應用程式

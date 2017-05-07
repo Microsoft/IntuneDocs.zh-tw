@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
-ms.lasthandoff: 01/10/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -48,6 +48,8 @@ Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 8.0 和更�
 > [!TIP]
 > iOS 裝置的受監督模式可讓您使用 Apple Configurator 鎖定裝置，並將功能限制在特定商務用途。 受監督的模式通常僅適用於屬公司擁有的裝置。
 
+您可以在 [這裡](https://support.apple.com/en-us/HT201365)深入閱讀「啟用鎖定」。
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune 如何協助您管理啟用鎖定
 Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖定狀態。 僅針對受監督的裝置，Intune 可以擷取啟用鎖定略過碼並直接發給裝置。 如果已抹除裝置，您可以使用空白使用者名稱和代碼作為密碼，進而直接存取裝置。
 
@@ -55,7 +57,15 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
 
 -   使用者可以獲得「尋找我的 iPhone」應用程式的安全性優點。
 
--   您可以讓使用者執行工作，並使其知道在需要重新規劃裝置時，您可將裝置淘汰或解除鎖定。
+-   您可以讓使用者執行工作，並讓他知道在需要重新規劃裝置時，您可將裝置淘汰或解除鎖定。
+
+## <a name="before-you-start"></a>開始之前
+
+在您可以略過裝置上的啟用鎖定之前，必須先啟用它。 若要做到這一點，請執行下列動作：
+
+1. 使用[透過 Microsoft Intune 原則管理裝置上的設定和功能](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)主題中的資訊，建立 iOS [裝置設定原則](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)。
+2. 在設定頁面的 [註冊] 區段中，將 [允許裝置在受監督模式時使用啟用鎖定] 設定為 [是]。
+3. 儲存原則，並將它部署至您想要管理啟用鎖定略過的裝置上。
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>如何從 Intune 管理主控台使用啟用鎖定略過
 > [!IMPORTANT]

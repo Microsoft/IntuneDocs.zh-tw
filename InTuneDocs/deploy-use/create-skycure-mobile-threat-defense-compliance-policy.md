@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: c28ba63136c1037c8c8191e9a7f46fa9a4823b4e
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/14/2017
 
 具有 Skycure 裝置威脅防護之合規性原則的必要條件：
 
--   [設定 Skycure 與 Intune 整合 (英文)](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [設定 Skycure 與 Intune 整合](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [在 Intune 中啟用 Skycure 連線](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 04/14/2017
 
     d.  **高**：這是最不安全的選項。 這可允許所有威脅層級，並僅針對報告用途使用 Skycure Mobile Threat Defense。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 如果您建立 Office 365 或其他服務的條件式存取原則，則會評估這個相容性評估，並封鎖不相容裝置，使其無法存取這些服務，直到威脅獲得解決為止。
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>後續步驟

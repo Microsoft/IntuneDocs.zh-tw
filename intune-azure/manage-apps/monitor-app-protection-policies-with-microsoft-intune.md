@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
-4. 在**管理應用程式**工作負載中，選擇 [監視]  >  [App protection user status] (應用程式保護使用者狀態)，以查看摘要檢視︰
+3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
+4. 在 [行動應用程式] 工作負載中，選擇 [監視] > [應用程式保護使用者狀態]，以查看摘要檢視︰
 
 ![Intune 行動應用程式管理刀鋒視窗上的摘要磚](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理 MAM 原則合規性狀態的其他報表︰
 
-![螢幕擷取畫面&4;](../media/MAM-reporting-7.png)
+![螢幕擷取畫面 4](../media/MAM-reporting-7.png)
 
 -   **應用程式保護使用者報表︰**列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
 
@@ -109,7 +110,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
         -   所有的應用程式都已簽入，但未收到任何 MAM 原則。
 
-![螢幕擷取畫面&2;](../media/MAM-reporting-4.png)
+![螢幕擷取畫面 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>資料表群組
 
@@ -126,20 +127,15 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 1. 在 Intune [行動應用程式管理] 刀鋒視窗中，選擇 [應用程式保護報表]。
 
-    ![螢幕擷取畫面&6;](../media/app-protection-report-csv-2.png)
+    ![螢幕擷取畫面 6](../media/app-protection-report-csv-2.png)
 
 2. 選擇 [是] 儲存報表，然後選擇 [另存新檔]，再選取報表的儲存資料夾。
 
-    ![螢幕擷取畫面&7;](../media/app-protection-report-csv-1.png)
+    ![螢幕擷取畫面 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-android-apps.md)
 * [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 9ebfadd945916b6be8225b9e07d67100e3f91222
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: eae3a7d0771724076680ec7152b09e7364603880
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 > [!Tip]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從**管理應用程式**工作負載中選擇 [設定]  >  [Company Portal Branding] (公司入口網站商標)，然後設定必要的設定。
+自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [行動應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。
 
 ## <a name="company-contact-information-and-privacy-statement"></a>公司連絡人資訊和隱私權聲明
 公司名稱顯示為公司入口網站標題。 連絡資訊及詳細資料會在公司入口網站的 [連絡 IT] 畫面中顯示給使用者。 當使用者按一下隱私權連結時，會顯示隱私權聲明。

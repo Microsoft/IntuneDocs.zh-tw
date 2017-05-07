@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 本主題說明如何註冊，以及向 Intune 管理註冊行動裝置的各種方式。
 
-您在 Intune 註冊的裝置 (包括 Windows 電腦)，從而管理這些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置註冊為行動裝置 (不是電腦) 時，會核發給這些裝置 MDM 憑證，而裝置則可使用此憑證與 Intune 服務通訊。
+您會在 Intune 中註冊裝置的原因，是為了可以管理那些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置在 Intune 中註冊時，會核發給這些裝置 MDM 憑證，然後裝置會使用這些憑證與 Intune 服務通訊。
 
 您的裝置註冊方式取決於裝置類型、擁有權，以及您所需要的管理級。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
 
-您若是使用內部部署或裝載於雲端的 Exchange ActiveSync，則不需要註冊就能用一些簡單的 Intune 管理功能。 您可以將 Windows 電腦視為行動裝置加以管理。建議您依照下列步驟採取此做法。 您也可以使用[Intune 用戶端軟體](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)將其視為電腦進行管理。
+您若是使用內部部署或裝載於雲端的 Exchange ActiveSync，則不需要註冊就能用一些簡單的 Intune 管理功能。 您可以將 Windows 電腦視為行動裝置加以管理。建議您依照下列步驟採取此做法。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
@@ -53,21 +53,20 @@ ms.lasthandoff: 03/17/2017
 |**[USB-SA](#usb-sa)**|    是 |    選用 |    否| [詳細資訊](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[詳細資訊](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows 的註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否 |    是 |    否 | 更多資訊即將推出|
+|**[BYOD](#byod)** | 否 |    是 |    否 | [詳細資訊](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android 的註冊方法**
 
 | **方法** |    **需要抹除？** |    **同質性**    |    **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | 更多資訊即將推出|
+|**[BYOD](#byod)** | 否|    是 |    否 | [詳細資訊](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[詳細資訊](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| 否 | 是 | 否| [詳細資訊](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ IT 系統管理員會透過 USB 使用 Apple Configurator，手動準備每部�
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 的行動裝置管理
 Intune 可使用 EAS MDM 原則來管理未註冊、但連線到 Exchange ActiveSync (EAS) 的行動裝置。 Intune 會使用 Exchange Connector 與內部部署或雲端託管的 EAS 通訊。 更多資訊即將推出。
 
-
-## <a name="windows-pc-management-with-intune"></a>搭配 Intune 的 Windows PC 管理  
-您也可以透過 Intune 用戶端軟體，搭配 Microsoft Intune 來管理 Windows 電腦。 透過 Intune 用戶端管理的電腦可以：
-
- - 報告軟體和硬體清查
- - 安裝桌面應用程式 (例如 .exe 和 .msi 檔案)
- - 管理防火牆設定
-
-如果電腦是搭配 Intune 用戶端軟體來進行管理，則無法完全將其抹除 (即使可以進行選擇性抹除亦同)。 如果電腦是搭配 Intune 軟體用戶端來進行管理，就無法利用許多 Intune 管理功能，例如條件式存取、VPN 和 Wi-Fi 設定，或憑證和電子郵件組態部署。 更多資訊即將推出。
-
 ## <a name="supported-device-platforms-and-browsers"></a>支援的裝置平台與瀏覽器
 
 請參閱 [Intune 支援的裝置與瀏覽器](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 憑證到期後的行動裝置清除
 
-當行動裝置與 Intune 服務通訊時，會自動更新 MDM 憑證。 若行動裝置 (而不是電腦) 遭抹除，或一段時間無法與 Intune 服務通訊，便無法更新 MDM 憑證。 當 MDM 憑證過期 180 天後，該裝置便會從 Azure 入口網站上移除。
+當行動裝置與 Intune 服務通訊時，會自動更新 MDM 憑證。 若行動裝置被抹除，或有一段時間無法與 Intune 服務通訊，便無法更新 MDM 憑證。 當 MDM 憑證過期 180 天後，該裝置便會從 Azure 入口網站上移除。
 

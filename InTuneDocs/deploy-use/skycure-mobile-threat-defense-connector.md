@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: 219369dfdf9d7a82159563d3fe16bb287bc414d7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: f034114736e7de0ee6d0dd7fbdb121a2a092d1c5
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -126,7 +126,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 4.  [部署 Skycure 應用程式、Microsoft Authenticator 和 iOS 應用程式設定原則 (英文)](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
-5.  [設定 Skycure 與 Intune 整合 (英文)](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+5.  [設定 Skycure 與 Intune 整合](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 6.  [在 Intune 中啟用 Skycure Mobile Threat Defense (英文)](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 

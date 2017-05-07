@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 
   - 建立 SharePoint Online 和 Exchange Online 工作帳戶。 不支援 Exchange 內部部署和 SharePoint 內部部署。
 
--   **針對新式驗證的商務用 Skype Online 設定**。 如需詳細資訊，請參閱[啟用新式驗證](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
+-   **針對新式驗證的商務用 Skype Online 設定**。 如需詳細資訊，請參閱[啟用新式驗證](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
 
 
 - Azure Active Directory (Azure AD) 以建立使用者。 當使用者開啟應用程式並輸入公司認證時，Azure AD 便會驗證使用者。
@@ -96,7 +96,7 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>建立使用者及指派 Microsoft Intune 授權
 
-1.  使用您的系統管理員認證登入 [Office 入口網站](http://portal.office.com)。
+1.  使用您的系統管理員認證登入 [Office 入口網站](https://portal.office.com)。
 
 2.  依照 [Intune 評估指南](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 Intune 30 天評估步驟**一節所述來新增使用者，然後指派 Intune 授權。 若要讓使用者能夠存取 Office 入口網站、Azure AD 入口網站和 Azure 入口網站，請將 [全域管理員角色] 指派給使用者。
 

@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下載 On-Premises Exchange Connector 軟體安裝套件
 
-1. 在 On-premises Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com) ( http://manage.microsoft.com )，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
+1. 在內部部署 Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com) (https://manage.microsoft.com)，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
 ![開啟 [設定 Exchange 連線]](../media/ExchangeConnector.gif)
 
 2.  在工作區捷徑窗格中，選擇 [管理] >[行動裝置管理] > [Microsoft Exchange]>[設定 Exchange 連線]。
@@ -129,7 +129,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="validate-the-exchange-connection"></a>驗證 Exchange 連線
 
-順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，選擇 [管理] 工作區。 在 [行動裝置管理] 下方選擇 [Microsoft Exchange]，然後驗證您提供的詳細資料是否出現在 [Exchange 連線資訊] 下方。
+順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [管理] 工作區。 在 [行動裝置管理] 下方選擇 [Microsoft Exchange]，然後驗證您提供的詳細資料是否出現在 [Exchange 連線資訊] 下方。
 
 
 您也可以查看上次嘗試同步作業成功的時間和日期。

@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +55,7 @@ ms.lasthandoff: 04/14/2017
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (Lookout 應用程式的企業簽章版本)
 
-1. 確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置之 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
+1. 確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置以進行 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
 2. **重新簽署** Lookout for Work iOS 應用程式。 Lookout 會將其 Lookout for Work iOS 應用程式散發到 iOS App Store 之外。 **發佈應用程式之前**，您必須使用 iOS 企業開發人員憑證重新簽署應用程式。 如需重新簽署 Lookout for Work iOS 應用程式的詳細指示，請參閱 Lookout 網站上的 [Lookout for Work iOS App Re-Signing Process](https://personal.support.lookout.com/hc/articles/114094038714)。
 
@@ -87,12 +87,11 @@ ms.lasthandoff: 04/14/2017
   選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在裝置上開啟已部署的應用程式時，會發生什麼事
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟動應用程式，並選擇 [使用 Azure Active Directory 登入] 的選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
 
-當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟用應用程式，並選擇 [使用 Azure Active Directory 登入] 選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
+* [系統提示您在 Android 裝置上安裝 Lookout for Work](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [系統提示您在 Android 裝置上安裝 Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>後續步驟
 * [在 Intune 中建立 Lookout 裝置合規性原則](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

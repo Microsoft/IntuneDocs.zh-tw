@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本指導適用於負責管理企業裝置的系統管理員。 如需在您行動裝置上使用 Intune 的協助，請參閱 [Intune 公司入口網站的相關常見問題集](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。
-
-設定 Microsoft Intune 之前，請檢閱本主題及[啟動 Microsoft Intune 前的須知事項](what-to-know-before-you-start-microsoft-intune.md)中列示的其他需求。
-
-請使用下列各節中的資訊，規劃 Microsoft Intune 用戶端的網路流量。
+本指南可協助 Intune 系統管理員了解 Intune 服務的網路需求。 您可以使用這項資訊來了解頻寬需求，以及 Proxy 設定所需的 IP 位址和連接埠設定。
 
 ## <a name="average-network-traffic"></a>平均網路流量
 此表格列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。

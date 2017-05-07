@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 可協助您[計劃和設計](/intune-azure/plan-and-design/get-started) Intune 環境的資訊。
 ### <a name="device-enrollment"></a>裝置註冊
 [如何將您的裝置交付 Intune 管理](/intune-azure/enroll-devices/what-is)。
-### <a name="devices"></a>裝置
-[透過清查與報表了解您所管理的裝置](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users-and-groups"></a>管理使用者和群組
-[了解您管理之裝置的使用者，並將資源整理歸入群組](/intune-azure/manage-users/what-is)。
-### <a name="manage-apps"></a>管理應用程式
-[如何發行、管理、設定和保護應用程式](/intune-azure/manage-apps/what-is-app-management)。
-### <a name="device-configuration"></a>裝置設定
-[了解您可用於在您管理之裝置上進行設定及功能的各種設定檔](/intune-azure/configure-devices/what-are-device-profiles)。
 ### <a name="device-compliance"></a>裝置相容性
 [定義裝置的相容性層級，然後回報所有不相容的裝置](/intune-azure/set-device-compliance/what-is-device-compliance)。
+### <a name="device-configuration"></a>裝置設定
+[了解您可用於在您管理之裝置上進行設定及功能的各種設定檔](/intune-azure/configure-devices/what-are-device-profiles)。
+### <a name="devices"></a>裝置
+[透過清查與報表了解您所管理的裝置](/intune-azure/manage-devices/what-is)。
+### <a name="mobile-apps"></a>行動裝置應用程式
+[如何發行、管理、設定和保護應用程式](/intune-azure/manage-apps/what-is-app-management)。
 ### <a name="conditional-access"></a>條件式存取
 [依據您指定的條件，限制對 Exchange 服務的存取](/intune-azure/conditional-access/what-is-conditional-access)。
+### <a name="on-premises-access"></a>內部部署存取
+[設定 Exchange ActiveSync 和 Exchange 內部部署的存取](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Users
+[了解您管理之裝置的使用者，並將資源整理歸入群組](/intune-azure/manage-users/what-is)。
+### <a name="groups"></a>中
+[了解如何搭配 Intune 使用 Azure Active Directory 群組](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Intune 角色
 [控制可以執行各種 Intune 動作的使用者，以及這些動作的適用對象](/intune-azure/access-control/role-based-access-control)。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。
+### <a name="software-updates"></a>軟體更新
+[了解如何為 Windows 10 裝置設定軟體更新](/intune-azure/configure-devices/how-to-configure-windows-update-for-business)。
 
 
 
