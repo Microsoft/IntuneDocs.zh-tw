@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -46,7 +46,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="get-an-encryption-key"></a>取得加密金鑰
 
-1. 以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [下載加密金鑰]。
+1. 以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，並移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [下載加密金鑰]。
 
 2. 將加密金鑰 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
 
@@ -68,13 +68,13 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="add-the-dep-token-to-intune"></a>將 DEP Token 新增至 Intune
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [管理員] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [管理員] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]。
 
 2. 選擇 [上傳 DEP 權杖]。 **瀏覽** 至憑證 (.p7m) 檔案，輸入您的 **Apple ID**，然後選擇 [上傳] 。
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>新增公司裝置註冊原則
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [新增]。
 
 2. 提供 [一般] 詳細資料 (包括 [名稱] 和 [描述])，並指定指派給設定檔的裝置是否具有使用者親和性，或隸屬於某個群組：
 
@@ -122,7 +122,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="assign-the-profile-to-devices"></a>將設定檔指派給裝置
 
-1. 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [指派]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [原則] &gt; [公司裝置註冊]，然後選擇 [指派]。
 
 2. 選擇您要指派所建立之設定檔的目標裝置。 您可以選擇 [所有裝置] 或選取特定的裝置，然後選取 [新增]。
 
@@ -143,9 +143,9 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 此步驟會將裝置與 Apple DEP 服務同步，並可讓裝置出現在 Intune 主控台中。
 
-1. 以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](http://manage.microsoft.com)，並移至 [管理員] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [立即同步處理]。 同步處理要求會傳送至 Apple。
+1. 以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，並移至 [管理員] &gt; [行動裝置管理] &gt; [iOS] &gt; [裝置註冊方案]，然後選擇 [立即同步處理]。 同步處理要求會傳送至 Apple。
 
-2. 若要在同步處理之後查看 DPE 管理的裝置，請在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [公司預先註冊的裝置] &gt; [依 iOS 序號]。 在 [依 iOS 序號] 工作區中，受管理裝置的 [狀態] 會顯示為 [未連線]，直到裝置開機並執行 [設定助理] 來註冊裝置為止。
+2. 若要在同步處理之後查看 DPE 管理的裝置，請在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，移至 [群組] &gt; [所有裝置] &gt; [公司預先註冊的裝置] &gt; [依 iOS 序號]。 在 [依 iOS 序號] 工作區中，受管理裝置的 [狀態] 會顯示為 [未連線]，直到裝置開機並執行 [設定助理] 來註冊裝置為止。
 
    若要符合可接受 DEP 流量的 Apple 詞彙，Intune 具有下列限制︰
 
@@ -162,7 +162,11 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune 群組指派的變更
 
-從 2017 年 4 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在公司註冊設定檔選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。 每個公司裝置註冊設定檔預先指派的 Intune 裝置群組，在移轉到 Azure Active Directory 裝置群組期間，都會根據公司裝置註冊設定檔的名稱，在 AAD 中建立對應的動態裝置群組。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。 如需此變更如何影響公司擁有之 iOS 裝置註冊的詳細資料，請參閱[將公司預先註冊的 iOS 裝置變更為自動群組 (英文)](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)。
+從 2017 年 4 月開始，裝置群組管理會移至 Azure Active Directory。 轉換至 Azure Active Directory 群組之後，群組指派不會出現在公司註冊設定檔選項中。 因為此變更將在連續幾個月的時間推出，您可能不會立即看到變更。 在移動到新的入口網站後，動態裝置群組指派可以根據公司的註冊設定檔名稱來定義。
+
+在移轉之際，公司裝置註冊設定檔預先指派的每個 Intune 裝置群組，都會根據公司裝置註冊設定檔的名稱，在 Azure AD 中建立對應的動態裝置群組。 新設定檔名稱的格式如下：*EnrollmentProfile:&lt;相關設定檔的名稱&gt;*。 此程序可確保已指派裝置群組的裝置會自動在群組中註冊，並部署好原則和應用程式。
+
+上述自動群組建立只會在群組移轉時發生一次。 移轉之後，Intune 系統管理員必須使用 Azure 入口網站來建立群組。 如需此變更如何影響公司擁有之 iOS 裝置註冊的詳細資料，請參閱[將公司預先註冊的 iOS 裝置變更為自動群組 (英文)](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)。
 
 您也可以[深入了解 Azure Active Directory 群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
 
