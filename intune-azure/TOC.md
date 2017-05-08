@@ -1,5 +1,6 @@
 # 簡介
 ## [什麼是 Azure 入口網站預覽？](introduction/what-is-microsoft-intune.md)
+## [什麼是 Intune 教育版？](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Azure 中的 Intune 功能](introduction/ui-changes-in-microsoft-intune.md)
 ## 開始使用
 <!---(introduction/get-started.md) --->
@@ -32,7 +33,7 @@
 ## 規劃和設計
 ### [取得 Apple MDM Push Certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
 ### [選擇註冊 iOS 裝置的方式](enroll-devices/choose-ios-enrollment-method.md)
-## 作法
+## 操作說明
 ### [將授權指派給使用者](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [註冊 Android 裝置](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### 註冊 iOS 裝置
@@ -56,7 +57,7 @@
 ## [什麼是裝置管理？](manage-devices/what-is.md)
 <!--- ## [Get started](manage-devices/get-started.md) --->
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
-## 作法
+## 操作說明
 ### [使用完整或選擇性抹除](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
@@ -82,10 +83,13 @@
 #### [iOS LOB 應用程式](manage-apps/ios-lob-app.md)
 #### [Web 應用程式](manage-apps/web-app.md)
 #### [Windows Phone 8.1 市集應用程式](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB 應用程式](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows 市集應用程式](manage-apps/windows-store-app.md)
+#### [Windows LOB 應用程式](manage-apps/windows-line-of-business-app.md)
 ### [指派應用程式](manage-apps/deploy-apps.md)
 ### [監視應用程式](manage-apps/monitor-apps.md)
-### [使用應用程式設定原則](manage-apps/app-configuration-policies.md)
+### [使用應用程式組態設定檔](manage-apps/app-configuration-policies.md)
+### [使用 iOS 應用程式佈建設定檔](manage-apps/ios-app-provisioning-profile.md)
 ### [選擇性地抹除應用程式](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [使用大量採購應用程式](manage-apps/volume-purchased-apps.md)
@@ -111,7 +115,7 @@
 ## [什麼是裝置設定檔？](configure-devices/what-are-device-profiles.md)
 <!---## [Get started](configure-devices/get-started.md)
 ## [Plan and design](configure-devices/plan-and-design.md) --->
-## 做法
+## 操作說明
 ### [設定裝置設定檔](configure-devices/how-to-create-device-profiles.md)
 
 ### [設定裝置功能](configure-devices/how-to-configure-device-features.md)
@@ -181,7 +185,7 @@
 # 設定裝置合規性
 ## [什麼是裝置合規性？](set-device-compliance/what-is-device-compliance.md)
 ## [開始使用](set-device-compliance/get-started-with-device-compliance.md)
-## 作法
+## 操作說明
 ### [建立 Android 合規性原則](set-device-compliance/create-a-compliance-policy-for-android.md)
 ### [建立 Android for Work 合規性原則](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [建立 iOS 合規性原則](set-device-compliance/create-a-compliance-policy-for-ios.md)
@@ -194,7 +198,7 @@
 
 # 條件式存取
 ## [什麼是條件式存取？](conditional-access/what-is-conditional-access.md)
-## 作法
+## 操作說明
 ### [安裝 Exchange 內部部署連接器](conditional-access/install-intune-on-premises-exchange-connector.md)
 ### [建立並指定條件式存取原則](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
 ### [監視條件式存取的相容性](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
