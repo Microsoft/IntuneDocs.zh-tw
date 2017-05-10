@@ -15,9 +15,10 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 5a50f4abea58a39b18347d03bb1553856d592c93
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 入口網站中建立合規性政策
 
-1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies] (所有裝置合規性政策) 及 [建立]。
+1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies]\(所有裝置合規性政策) 及 [建立]。
 2. 輸入名稱及描述，然後選擇要套用此原則的平台。
 3. 選擇 [合規性需求]，以開啟 [合規性需求] 刀鋒視窗。  您可以在此指定 [安全性]、[裝置健全狀況] 及 [裝置屬性]。設定完成後，請選擇 [確定]。
 
@@ -186,7 +187,7 @@ ms.lasthandoff: 02/18/2017
 
 當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
-若要尋找 [Minimum OS required] (需要的最低 OS) 及 [Maximum OS version allowed] (允許的最大 OS 版本) 設定所使用的作業系統版本，可執行從命令提示字元執行 **winver**命令。 winver 命令會傳回回報的 OS 版本。
+若要尋找 [Minimum OS required]\(需要的最低 OS) 及 [Maximum OS version allowed]\(允許的最大 OS 版本) 設定所使用的作業系統版本，可執行從命令提示字元執行 **winver**命令。 winver 命令會傳回回報的 OS 版本。
 
 - Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 - 執行 Windows 10 之電腦的版本應設定為 &quot;10.0&quot;+ winver 命令傳回的 OS 組建編號。
