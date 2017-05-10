@@ -14,9 +14,10 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
 ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/29/2017
 
 
@@ -78,7 +79,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | 字串 | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$ **或** $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$  **或**  $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>範例 2：使用者體驗
