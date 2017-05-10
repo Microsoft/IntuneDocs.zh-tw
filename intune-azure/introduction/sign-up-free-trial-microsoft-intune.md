@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 
@@ -41,9 +42,9 @@ You can do everything in the trial version that you can do in a subscription ver
  <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![註冊頁面的影像](./media/1-clicking-try.png)
 
  > [!TIP]
-> 若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您從 [Where's your company located?] (您的公司位置？) 選取該語言設定。
+> 若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您從 [Where's your company located?]\(您的公司位置？) 選取該語言設定。
 
-2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>此時，若您按一下 [You're ready to go] (您已可開始)，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>但若要直接前往 Intune Azure 入口網站預覽版，請開啟新的瀏覽器視窗，然後在網址列中輸入**https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
+2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>此時，若您按一下 [You're ready to go]\(您已可開始)，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>但若要直接前往 Intune Azure 入口網站預覽版，請開啟新的瀏覽器視窗，然後在網址列中輸入**https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
 第一次登入 Intune Azure 預覽版時，Intune 可能不會出現在 Intune Azure 儀表板上。 將 Intune 服務新增至 Azure 儀表板︰
 1. 請從儀表板左側的 Azure 服務清單中選擇 [更多服務 >]，然後在搜尋方塊中輸入 **Intune**。
