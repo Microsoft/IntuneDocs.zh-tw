@@ -15,9 +15,10 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 07a42cf8fa10d3223129fbb2932217ff90ac365b
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 ---
@@ -44,7 +45,7 @@ ms.lasthandoff: 02/18/2017
 
    - **描述**︰ 選擇是否要輸入詳細資料來協助您識別 Azure 入口網站中的原則。
 
-5. 選取 [Define terms of use ] (定義使用規定) 旁的箭頭，以開啟 [條款及條件] 刀鋒視窗，然後輸入下列資訊︰
+5. 選取 [Define terms of use ]\(定義使用規定) 旁的箭頭，以開啟 [條款及條件] 刀鋒視窗，然後輸入下列資訊︰
 
    - **標題**：使用者在公司入口網站中看到的標題。
 
