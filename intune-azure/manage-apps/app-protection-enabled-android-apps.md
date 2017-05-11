@@ -15,9 +15,10 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 02/18/2017
 
 使用應用程式時，因為只會對工作內容套用應用程式保護原則，所以原則的行為會隨內容 (工作或個人) 而不同。
 
-對於支援多種身分識別的應用程式，Intune 只會在使用者於工作內容中使用應用程式時，才套用應用程式保護原則。  例如，使用者會在存取工作資料時取得 PIN 提示。  針對 **Outlook 應用程式**，系統會提示使用者在啟動應用程式時輸入 PIN。 針對 **OneDrive 應用程式**，這發生在使用者輸入工作帳戶時。  針對 Microsoft **Word**、**PowerPoint* 和 **Excel**，這發生於使用者存取公司商務用 OneDrive 位置中所儲存的文件時。
+對於支援多種身分識別的應用程式，Intune 只會在使用者於工作內容中使用應用程式時，才套用應用程式保護原則。  例如，使用者會在存取工作資料時取得 PIN 提示。  針對 **Outlook 應用程式**，系統會提示使用者在啟動應用程式時輸入 PIN。 針對 **OneDrive 應用程式**，這發生在使用者輸入工作帳戶時。  針對 Microsoft **Word**、**PowerPoint* 和* *Excel**，這發生於使用者存取公司商務用 OneDrive 位置中所儲存的文件時。
 ##  <a name="managing-user-accounts-on-the-device"></a>管理裝置上的使用者帳戶
 
 Intune 只允許將應用程式保護原則部署到每部裝置上的一個使用者帳戶。
