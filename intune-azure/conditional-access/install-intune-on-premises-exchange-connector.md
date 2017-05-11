@@ -15,9 +15,10 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="validate-the-exchange-connection"></a>驗證 Exchange 連線
 
-順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 在 [Azure 入口網站][](http://portal.azure.com) 中，選擇 [Intune]  > [條件式存取] 工作負載。 在 [安裝] 下，選取 [Exchange 內部部署連接器]，並確認連線顯示為作用中。
+順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 在 [[Azure 入口網站]](http://portal.azure.com) 中，選擇 [Intune]  > [條件式存取] 工作負載。 在 [安裝] 下，選取 [Exchange 內部部署連接器]，並確認連線顯示為作用中。
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
 
