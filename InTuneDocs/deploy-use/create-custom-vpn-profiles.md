@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune VPN 設定檔的自訂設定 | Microsoft Docs"
-description: "在 Intune 中使用自訂組態來建立 VPN 設定檔。"
+description: "在 Intune 中使用自訂設定來建立 VPN 設定檔。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,10 +14,11 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 56095b44e890759202d68312bd684c767d3410ce
+ms.openlocfilehash: 284868ba0c79a6cbb1c3e5096a84461e99c0ba76
+ms.contentlocale: zh-tw
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="create-a-custom-configuration"></a>建立自訂組態
+## <a name="create-a-custom-configuration"></a>建立自訂設定
 您可以使用 Intune 自訂設定原則來建立下列各項的 VPN 設定檔：
 
 * 執行 Android 4 和更新版本的裝置
@@ -36,15 +37,15 @@ ms.lasthandoff: 04/14/2017
 * 執行 Windows 10 Desktop 的已註冊裝置
 * 執行 Windows 10 行動裝置版的裝置
 
-標準 Intune VPN 原則未包含您想要使用的設定時，這類型的原則十分有用。
+標準 Intune VPN 原則未包含您想要使用的設定時，此類型的原則十分有用。
 
 ## <a name="to-create-a-custom-configuration-policy"></a>建立自訂設定原則：
 
    1. 在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則] > [擴充平台] > [自訂設定] > [建立原則]。
    2. 輸入原則的名稱。
-   3. 針對您想要指定的每個 URI 設定，選擇 [新增]，並提供要求的資訊。 範例如下：
+   3. 針對您想要指定的每個 URI 設定選擇 [新增]，並提供要求的資訊。 範例如下：
 
-   ![VPN 設定檔自訂組態對話方塊](./media/Intune_Add_VPN_URI.png)
+   ![VPN 設定檔自訂設定對話方塊](./media/Intune_Add_VPN_URI.png)
 
    4.  輸入所有 URI 設定後，請選擇 [儲存原則]，然後部署原則。
 
@@ -55,43 +56,92 @@ ms.lasthandoff: 04/14/2017
 這些設定可以用來為稱為 Contoso 的虛構公司中的 VPN 建立自訂設定。
 如需您可使用之所有設定的完整詳細資訊，請參閱 [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx)。
 
-原生 Contoso VPN (IKEv2)：./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
+**原生 Contoso VPN (IKEv2)：**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
-vpn.contoso.com ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType
+**vpn.contoso.com**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType
 
-Ikev2 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType
+**Ikev2<br />** ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType
 
-SplitTunnel ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod
+**SplitTunnel**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod
 
-Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration &lt;EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;EapMethod&gt;&lt;Type xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;13&lt;/Type&gt;&lt;VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorId&gt;&lt;VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorType&gt;&lt;AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/AuthorId&gt;&lt;/EapMethod&gt;&lt;Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"&gt;&lt;Type&gt;13&lt;/Type&gt;&lt;EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"&gt;&lt;CredentialsSource&gt;&lt;CertificateStore&gt;&lt;SimpleCertSelection&gt;true&lt;/SimpleCertSelection&gt;&lt;/CertificateStore&gt;&lt;/CredentialsSource&gt;&lt;ServerValidation&gt;&lt;DisableUserPromptForServerValidation&gt;false&lt;/DisableUserPromptForServerValidation&gt;&lt;ServerNames&gt;&lt;/ServerNames&gt;&lt;/ServerValidation&gt;&lt;DifferentUsername&gt;false&lt;/DifferentUsername&gt;&lt;PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/PerformServerValidation&gt;&lt;AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/AcceptServerName&gt;&lt;/EapType&gt;&lt;/Eap&gt;&lt;/Config&gt;&lt;/EapHostConfig&gt;
+**Eap**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration
+``` xml
+<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+   <EapMethod>
+      <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>
+      <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+      <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+      <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+   </EapMethod>
+   <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+      <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+         <Type>13</Type>
+         <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+            <CredentialsSource>
+               <CertificateStore>
+                  <SimpleCertSelection>true</SimpleCertSelection>
+               </CertificateStore>
+            </CredentialsSource>
+            <ServerValidation>
+               <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation>
+               <ServerNames></ServerNames>
+            </ServerValidation>
+            <DifferentUsername>false</DifferentUsername>
+            <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+               false
+            </PerformServerValidation>
+            <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+               false
+            </AcceptServerName>
+         </EapType>
+      </Eap>
+   </Config>
+</EapHostConfig>
+```
+**./Vendor/MSFT/VPNv2/ContosoVPN/ByPassForLocal**<br />
+True
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/ByPassForLocal** True
+**./Vendor/MSFT/VPNv2/ContosoVPN/RememberCredentials**<br />
+1
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/RememberCredentials** 1
+**./Vendor/MSFT/VPNv2/ContosoVPN/DomainNameInformationList/1/DomainName**<br />
+Corp.Contoso.com
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/DomainNameInformationList/1/DomainName** Corp.Contoso.com
+**./Vendor/MSFT/VPNv2/ContosoVPN/DnsSuffix**<br />
+Corp.Contoso.com
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/DnsSuffix** Corp.Contoso.com
+**./Vendor/MSFT/VPNv2/ContosoVPN/TrustedNetworkDetection**<br />
+Corp.Contoso.com
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrustedNetworkDetection** Corp.Contoso.com
+**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/Address**<br />
+10.0.0.0
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/Address** 10.0.0.0
+**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/PrefixSize**<br />
+8
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/PrefixSize** 8
+**./Vendor/MSFT/VPNv2/ContosoVPN/AlwaysOn**<br />
+true
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/AlwaysOn** true
+**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/0/App/Id**<br />
+%PROGRAMFILES%\Internet Explorer\iexplore.exe
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/0/App/Id** %PROGRAMFILES%\Internet Explorer\iexplore.exe
+**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/1/App/Id**<br />
+%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/1/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
+**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/2/App/Id**<br />
+Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/2/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/0/App/Id**<br />
+%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/0/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
+**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id**<br />
+Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
-
-若對這些設定的使用方式有任何疑問，或想更詳細了解它們的功用，客戶應參考設定服務提供者 (CSP) 文件︰https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx。
+若對這些設定的使用方式有任何疑問，或想更詳細了解這些設定的功能，客戶應參考閱[設定服務提供者 (CSP) 文件 (英文)](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)。
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>適用於 PulseSecure 上 Android 個別應用程式 VPN 的 URI 設定
 ### <a name="custom-uri-for-package-list"></a>套件清單的自訂 URI
@@ -115,6 +165,6 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 > - 若提供 PackageList，則預設為 *WHITELIST*
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [Microsoft Intune 中的 VPN 連線](vpn-connections-in-microsoft-intune.md)
 

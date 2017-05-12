@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,26 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68dbaa2209ad1432279683a291734641e39ff736
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/05/2017
 
 
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
+## <a name="coming-soon-in-the-ui"></a>即將在 UI 登場
+我們計劃將更新使用者介面，以改進使用者的體驗。
+
 > [!Note]
 > 請注意，下列影像為預覽，宣告的產品可能與展示版本不同。
 
-## <a name="april-2017"></a>2017 年 4 月
-
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改善適用於所有平台的公司入口網站應用程式登入體驗 <!--User Story 1132123-->
 
-我們致力於改善適用於 Android、iOS 和 Windows 的 Intune 公司入口網站應用程式登入體驗。  當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。  
+我們宣布將在幾個月內推出變更，以改進 Android、iOS 和 Windows 版 Intune 公司入口網站應用程式的登入體驗。 當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。  
 
 以下您可以看到舊版的登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗。
 
@@ -51,17 +53,17 @@ __新的登入體驗__
 
 ![接受使用者的電子郵件地址後，系統會提示使用者輸入密碼。](./media/cp_ios_aad_signin_after_1704_003.png)
 
+![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出進度。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 __從另一部裝置登入時的新登入體驗__
 
 ![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 點選 [從另一部裝置登入] 連結。
 
-![系統會在畫面上單獨提示使用者輸入電子郵件地址，而不是同時提示輸入電子郵件與密碼。 電子郵件欄位底下的連結顯示 [從另一部裝置登入]。](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+![系統會顯示使用唯一密碼從工作電腦移至 aka.ms/devicelogin 頁面，並使用驗證碼進行登入的指示。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-![系統會顯示從工作電腦移至 aka.ms/devicelogin 頁面，並使用應用程式所提供的唯一密碼進行登入的指示。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-啟動瀏覽器並移至 [http://aka.ms/devicelogin](https://aka.ms/devicelogin)。
+啟動瀏覽器並移至 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
 
 ![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -74,6 +76,8 @@ __從另一部裝置登入時的新登入體驗__
 公司入口網站應用程式將會開始登入。
 
 ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出進度。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="april-2017"></a>2017 年 4 月
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser 和公司入口網站的新圖示 <!--918433, 918431-->
 
@@ -105,18 +109,27 @@ Android 公司入口網站應用程式的更新會在使用者啟動或繼續執
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
           </td>
           <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
            </td>
            <td>
-              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
 </body>
 </html>
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改進 Windows 10 公司入口網站應用程式的應用程式安裝狀態 <!--676495-->
+Windows 10 公司入口網站應用程式現在於應用程式詳細資料頁面提供安裝進度列。 在執行 Windows 10 年度更新版與更新版本裝置上的新式應用程式可支援此功能。
+
+__改進前__
+  ![舊版載入畫面的影像，其中狀態僅簡單地表示「安裝中」。](./media/cp_win10_install_status_before_1704.png)
+
+__改進後__
+  ![更新版本的載入畫面影像，現在會顯示安裝進度列。](./media/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>2017 年 2 月
 
@@ -127,7 +140,7 @@ Android 公司入口網站應用程式的更新會在使用者啟動或繼續執
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [裝置] 索引標籤。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __介面__︰[應用程式] 索引標籤中已更新 [精選 App] 和 [所有應用程式] 按鈕。 [搜尋] 按鈕現在是浮動的動作按鈕。
+* __介面__︰[應用程式] 索引標籤中已更新 [精選 App] 和 [所有 App] 按鈕。 [搜尋] 按鈕現在是浮動的動作按鈕。
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [應用程式] 索引標籤。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
@@ -153,9 +166,9 @@ Android 公司入口網站應用程式的更新會在使用者啟動或繼續執
 ![在左側，影像會顯示具有其舊版 [應用程式]、[我的裝置] 以及 [精選] 和 [類別] 檢視的最新版公司入口網站。 在右側，影像會顯示具有重新整理之應用程式浮動切換、最近發佈的應用程式清單和更新過的 [類別] 檢視的公司入口網站更新版。](./media/CP_Website_BeforeAfter_Feb2016.png)
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Azure 預覽的新功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
-* [新功能封存](whats-new-archive.md)
+* [Azure 預覽中的新增功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
+* [新增功能封存](whats-new-archive.md)
 
