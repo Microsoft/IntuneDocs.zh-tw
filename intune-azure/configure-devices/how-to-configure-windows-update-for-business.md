@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/11/2017
 
     ![診斷與使用方式資料的 Windows 設定](./media/telemetry-basic.png)
 
-    您可以手動設定此設定，或使用 Intune 裝置限制設定檔 (用於 Windows 10 和更新版本)。 若要這樣做，請至少將 [一般]  >  [提交診斷資料] 的設定設為 [基本]。 如需有關裝置設定檔的詳細資訊，請參閱[如何設定裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)。
+    您可以手動設定此設定，或使用 Intune 裝置限制設定檔 (用於 Windows 10 和更新版本)。 若要這樣做，請至少將 [一般]  >  [提交診斷資料] 的設定設為 [基本]。 如需有關裝置設定檔的詳細資訊，請參閱[如何設定裝置限制設定](how-to-configure-device-restrictions.md)。
 
 - 在傳統 Intune 管理主控台中，有四種設定可控制軟體更新行為。 這些設定是 Windows 10 桌上電腦和行動裝置上，一般組態原則的一部分：
     - **允許自動更新**

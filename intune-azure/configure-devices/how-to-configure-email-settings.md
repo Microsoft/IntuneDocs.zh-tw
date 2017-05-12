@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: d5c84c5d3bc700985cc14dbd7eaae5a493cca064
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 37bfb7c9c35e5da5a346c822ed9d4252b5fff0e4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -75,8 +76,8 @@ ms.lasthandoff: 04/20/2017
 
 您可以使用下列兩種方法之一來保護電子郵件設定檔︰
 
-1. **憑證** - 當您建立電子郵件設定檔時，請選擇先前在 Intune 中建立的憑證設定檔。 這稱為識別憑證，用來針對允許使用者裝置連線的受信任憑證設定檔 (或根憑證) 進行驗證。 受信任的憑證會部署到可驗證電子郵件連線的電腦 (一般是原生郵件伺服器)。
-如需如何在 Intune 中建立及使用憑證設定檔的詳細資訊，請參閱 [How to configure certificates with](/intune-azure/configure-devices/how-to-configure-certificates) (如何利用 Intune 設定憑證)。
+1. **憑證** - 當您建立電子郵件設定檔時，請選擇先前在 Intune 中建立的憑證設定檔。 這稱為識別憑證，用來針對允許使用者裝置連線的受信任憑證設定檔 (或根憑證) 進行驗證。 受信任的憑證會指派到可驗證電子郵件連線的電腦 (一般是原生郵件伺服器)。
+如需如何在 Intune 中建立及使用憑證設定檔的詳細資訊，請參閱 [How to configure certificates with](how-to-configure-certificates.md) (如何利用 Intune 設定憑證)。
 2. **使用者名稱與密碼** - 使用者藉由提供使用者名稱和密碼，向原生郵件伺服器進行驗證。
 密碼不會包含在電子郵件設定檔中，因此使用者需要在連線至電子郵件時提供。
 

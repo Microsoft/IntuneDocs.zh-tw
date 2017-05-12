@@ -1,12 +1,12 @@
 ---
-title: "如何使用 Intune 設定憑證"
+title: "如何使用 Intune 設定憑證 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何使用 Intune 來建立及指派憑證，協助您保護 Wi-Fi、VPN 與其他連線的安全。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/19/2017
     - Windows 8.1 及更新版本
     - Windows Phone 8.1 和更新版本
     - Windows 10 及更新版本
-3. 建立憑證設定檔，讓每個裝置要求一個用於驗證 VPN、Wi-Fi 和電子郵件存取的憑證。 您可為執行這些平台的裝置，建立並部署 **PKCS** 或 **SCEP** 憑證設定檔︰
+3. 建立憑證設定檔，讓每個裝置要求一個用於驗證 VPN、Wi-Fi 和電子郵件存取的憑證。 您可為執行這些平台的裝置，建立並指派 **PKCS** 或 **SCEP** 憑證設定檔︰
     - iOS 8.0 和更新版本
     - Android 4.0 及更新版本
     - Android for Work
@@ -71,8 +72,8 @@ ms.lasthandoff: 04/19/2017
 
 如需設定憑證設定檔每種類型基礎結構的說明，請參閱下列主題之一：
 
-- [透過 Intune 設定並管理 SCEP 憑證](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [透過 Intune 設定並管理 PKCS 憑證](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [透過 Intune 設定並管理 SCEP 憑證](configure-certificate-infrastructure-for-scep.md)
+- [透過 Intune 設定並管理 PKCS 憑證](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>步驟 2：匯出受信任的根 CA 憑證
@@ -119,8 +120,8 @@ ms.lasthandoff: 04/19/2017
 
 如需設定及指派憑證設定檔每種類型的說明，請參閱下列主題之一：
 
-- [透過 Intune 設定並管理 SCEP 憑證](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [透過 Intune 設定並管理 PKCS 憑證](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [透過 Intune 設定並管理 SCEP 憑證](configure-certificate-infrastructure-for-scep.md)
+- [透過 Intune 設定並管理 PKCS 憑證](configure-certificate-infrastructure-for-pfx.md)
 
 建立受信任的憑證設定檔之後，請為您要使用的每個平台，建立 SCEP 或 PKCS 憑證設定檔。 建立 SCEP 憑證設定檔時，必須為該相同的平台指定受信任的憑證設定檔。 如此即會連結兩個憑證設定檔，但您仍然必須分別指派每個設定檔。
 

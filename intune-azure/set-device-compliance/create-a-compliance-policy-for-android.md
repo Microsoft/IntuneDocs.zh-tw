@@ -15,10 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 49c06de8ae4b04a3f6ea81cc17bc303b842374a5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/10/2017
 
 ## <a name="to-create-a-device-compliance-policy"></a>建立裝置合規性政策
 
-1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies] (所有裝置合規性政策) 及 [建立]。
+1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies]\(所有裝置合規性政策) 及 [建立]。
 2. 輸入名稱及描述，然後選擇要套用此原則的平台。
 3. 選擇 [合規性需求]，以指定 [安全性]、[裝置健全狀況] 及 [裝置屬性] 設定。 完成後，請選擇 [確定]。
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/10/2017
   - **中**︰若裝置有低等級或中等級的威脅，會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
   - **高**：這是最不安全的選項。 基本上，這會允許所有威脅等級， 若只將此解決方案用於報告，可能就還不錯。
 
-如需詳細資訊，請參閱[啟用合規性政策中的裝置威脅保護規則](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)。
+如需詳細資訊，請參閱[啟用合規性政策中的裝置威脅保護規則](https://docs.microsoft.com/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)。
 
 ## <a name="system-security-settings"></a>系統安全性設定
 

@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>針對 Android for Work 裝置建立 Intune 自訂設定檔設定
 
-使用 Intune Android for Work 自訂設定原則來部署 OMA-URI 設定，此設定可用來控制 Android for Work 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
+使用 Intune Android for Work 自訂設定原則來指派 OMA-URI 設定，以用於控制 Android for Work 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
-此功能的目的是讓您部署無法使用 Intune 原則設定的 Android 設定。 Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中的範例，以找出您可以設定的原則。
+此功能的目的是讓您指派無法使用 Intune 原則設定的 Android 設定。 Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中的範例，以找出您可以設定的原則。
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔
 
-1. 請使用[如何設定自訂裝置設定](/intune-azure/configure-devices/how-to-configure-custom-settings)中的指示以便開始。
+1. 請使用[如何設定自訂裝置設定](how-to-configure-custom-settings.md)中的指示以便開始。
 2. 在 [自訂 OMA-URI 設定] 刀鋒視窗上，選擇 [新增] 以新增新的設定。
 3. 在 [新增資料列] 刀鋒視窗上，設定下列各項︰
     - **名稱**：為 Android for Work 自訂設定輸入唯一名稱，以協助您在 Intune 入口網站中識別它。

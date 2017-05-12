@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定部署給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到網路。
+虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定指派給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到網路。
 
 例如，假設您想要使用連線到公司網路上檔案共用所需的設定來佈建所有 iOS 裝置。 建立包含連線到公司網路所需設定的 VPN 設定檔，然後將此設定檔部署給所有使用 iOS 裝置的使用者。 使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能完成連線。
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 03/17/2017
 
 
 > [!IMPORTANT]
-> 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用部署至裝置的 VPN 設定檔。 您可以使用 [What is app management in Microsoft Intune?](/intune-azure/manage-apps/what-is-app-management) (Microsoft Intune 中的應用程式管理為何？) 主題中的資訊，協助您使用 Intune 部署應用程式。  
+> 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用指派至裝置的 VPN 設定檔。 您可以使用[什麼是 Microsoft Intune 應用程式管理？](../manage-apps/what-is-app-management.md)主題中的資訊，協助您使用 Intune 指派應用程式。  
 
 了解如何使用[建立自訂 VPN 設定檔](create-custom-vpn-profiles.md)中的 URI 設定，建立自訂 VPN 設定檔。     
 
@@ -92,7 +93,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 ### <a name="certificates"></a>憑證
 
-當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PKCS 憑證設定檔。 這稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或「根憑證」) 進行驗證。 受信任的憑證會部署到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
+當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PKCS 憑證設定檔。 這稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或「根憑證」) 進行驗證。 受信任的憑證會指派到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
 
 如需如何在 Intune 中建立及使用憑證設定檔的詳細資訊，請參閱[如何利用 Microsoft Intune 設定憑證](how-to-configure-certificates.md)。
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/04/2017
     - **上傳圖示** - 上傳應用程式所要關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 8. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。
 
-您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
+您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](deploy-apps.md)。
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>手動部署 Windows 10 公司入口網站應用程式
-終端使用者可以從 Windows 市集安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果您的企業需要您部署公司入口網站應用程式，即使您還沒有整合 Intune 與商務用 Windows 市集，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。
+## <a name="manually-assign-windows-10-company-portal-app"></a>手動指派 Windows 10 公司入口網站應用程式
+終端使用者可以從 Windows 市集安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果因企業需求而必須指派公司入口網站應用程式，即使尚未整合 Intune 與商務用 Windows 市集，您仍然可直接從 Intune 手動指派 Windows 10 公司入口網站應用程式。
 
  > [!NOTE]
- > 這個選項將需要在每次應用程式發行更新時，部署手動更新。
+ > 這個選項將需要在每次應用程式發行更新時，指派手動更新。
 
 1. 在[商務用 Windows 市集](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
 2. 取得應用程式之後，在 [詳細目錄] 頁面中選取該應用程式。  
@@ -69,8 +70,8 @@ ms.lasthandoff: 04/04/2017
   ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](../media/Win10CP-Dependencies-save.png)
   2. 將 9 個相依性套件放在 Dependencies 資料夾中。  
   如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
-  ![在應用程式資料夾中找不到此軟體安裝程式的 Windows 應用程式相依性。 您可以繼續建立並部署此應用程式，但必須等到提供遺失的 Windows 應用程式相依性之後，它才能執行。](../media/Win10CP-error-message.png)
-6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其部署為必要的應用程式。  
+  ![在應用程式資料夾中找不到此軟體安裝程式的 Windows 應用程式相依性。 您可以繼續建立並指派此應用程式，但必須等到提供遺失的 Windows 應用程式相依性之後，它才能執行。](../media/Win10CP-error-message.png)
+6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其指派為必要的應用程式。  
 
 有關 Intune 如何處理通用應用程式的相依性，詳細資訊請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
 
@@ -78,20 +79,20 @@ ms.lasthandoff: 04/04/2017
 如果您的使用者已經從市集安裝 Windows 8.1 或 Windows Phone 8.1 公司入口網站應用程式，則他們的裝置應該會自動更新到新版本，您或您的使用者不需要採取任何動作。 如果更新沒發生，請使用者確認他們已在其裝置上啟用自動更新市集應用程式。   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我側載的 Windows 8.1 公司入口網站應用程式升級至 Windows 10 公司入口網站應用程式？
-我們建議的移轉方式是刪除 Windows 8.1 公司入口網站應用程式的部署，做法是將部署動作設定為「解除安裝」。 完成後，可以使用任何上述選項部署 Windows 10 公司入口網站應用程式。  
+我們建議的移轉路徑是刪除 Windows 8.1 公司入口網站應用程式的指派，做法是將指派動作設定為「解除安裝」。 完成後，就可以使用上述任何選項來指派 Windows 10 公司入口網站應用程式。  
 
-如果您需要側載應用程式，且您部署 Windows 8.1 公司入口網站時未使用 Symantec 憑證簽署它，請遵循之前「透過 Intune 直接部署」一節所述步驟完成升級。
+如果您需要側載應用程式並指派 Windows 8.1 公司入口網站，但不使用 Symantec 憑證來簽署，請遵循之前＜透過 Intune 直接指派＞一節所述步驟完成升級。
 
-如果您需要側載應用程式，且您已使用 Symantec 程式碼簽署憑證簽署及部署 Windows 8.1 公司入口網站，請遵循下一節的步驟。  
+如果您需要側載應用程式，並使用 Symantec 程式碼簽署憑證來簽署及指派 Windows 8.1 公司入口網站，請遵循下一節的步驟。  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我已簽署及側載的 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式，升級至 Windows 10 公司入口網站應用程式？
-我們建議的移轉方式是刪除 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式的現有部署，做法是將部署動作設定為「解除安裝」。 完成後，便可以正常部署 Windows 10 公司入口網站應用程式。  
+我們建議的移轉路徑是刪除 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式的現有指派，做法是將指派動作設定為「解除安裝」。 完成後，便可以正常指派 Windows 10 公司入口網站應用程式。  
 
 否則，必須適當地更新及簽署 Windows 10 公司入口網站應用程式，以確保遵循升級方式。  
 
-如果是以這種方式簽署及部署 Windows 10 公司入口網站應用程式，每當市集內有新的應用程式更新時，您就必須為每個應用程式重複此程序。 當市集更新時，應用程式不會自動更新。  
+如果是以這種方式簽署及指派 Windows 10 公司入口網站應用程式，每當市集內有新的應用程式更新時，您就必須為每個應用程式重複此程序。 當市集更新時，應用程式不會自動更新。  
 
-以下說明如何以此方式簽署和部署應用程式︰
+以下是以這種方式簽署和指派應用程式的方法：
 
 1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載 Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請前往 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
 2. 從商務用 Windows 市集下載 Windows 10 公司入口網站應用程式，詳如前述。  
@@ -105,5 +106,5 @@ ms.lasthandoff: 04/04/2017
 |PfxPassword| Symantec 企業行動程式碼簽署憑證的密碼。 |
 |PublisherId |企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。|
 |SdkPath | 適用於 Windows 10 之 Windows SDK 的根資料夾路徑。 這個引數是選擇性，且預設值為 ${env:ProgramFiles(x86)}\Windows Kits\10|
-指令碼執行完成時，會輸出簽署版的 Windows 10 公司入口網站應用程式。 然後，您可以透過 Intune 將簽署版的應用程式部署為 LOB 應用程式，這會將目前部署的版本升級至此新應用程式。  
+指令碼執行完成時，會輸出簽署版的 Windows 10 公司入口網站應用程式。 然後，您可以透過 Intune 將應用程式經過簽署的版本指派為 LOB 應用程式，這會將目前指派的版本升級至此新應用程式。  
 

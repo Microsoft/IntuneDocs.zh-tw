@@ -16,10 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 9ce22cb6e4031432f8d78653230b526f504b5f8c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -132,5 +133,5 @@ iOS 與 Android 的加密運作方式不相同。
 ![檢視原則的使用者介面路徑影像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>後續步驟
-深入了解[應用程式保護原則](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)。
+深入了解[應用程式保護原則](https://docs.microsoft.comwhat-is-app-protection-policy.md)。
 

@@ -15,10 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: f9b828c7546b2dafe03177c193a18203e5905e5a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -128,11 +129,11 @@ MDM 解決方案：
 
 ## <a name="multi-identity"></a>多重身分識別
 
-支援多重身分識別的應用程式讓您可以使用多個帳戶 (工作及個人) 存取相同的應用程式，而應用程式保護原則則會在應用程式於工作內容中執行時套用。
+當應用程式保護原則只有在工作環境中使用應用程式時才會套用，支援多重身分識別的應用程式讓您能夠使用不同的帳戶 (工作和個人) 來存取相同的應用程式。
 
-例如，當使用者使用工作帳戶啟動 OneDrive 應用程式時，無法將檔案移至個人儲存體位置。 不過，當使用者以個人帳戶使用 OneDrive 時，他們可以從個人 OneDrive 複製並移動資料，而沒有任何限制。
+例如，當使用者使用其工作帳戶啟動 OneDrive 應用程式，他們無法將檔案移動至個人存放區位置。 不過，當使用者以個人帳戶使用 OneDrive 時，他們可以從個人 OneDrive 複製並移動資料，而沒有任何限制。
 
-所有的 Office 行動裝置應用程式都支援多重身分識別。
+- 深入了解支援 Intune 的 [MAM 和多重身分識別](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的應用程式。
 
 ##  <a name="next-steps"></a>後續步驟
 

@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 根據組織需求，您需要建立至少兩個裝置分類 (例如，公司和個人)，並建立每個分類的動態裝置群組。 您可以視需要為組織建立更多的分類。
 
-在註冊期間，會向使用者顯示這些分類。 根據使用者所選擇的分類，註冊的裝置將會移至對應的裝置群組。 如需如何建立裝置分類的步驟，請參閱 [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (將裝置對應到群組)。
+在註冊期間，會向使用者顯示這些分類。 根據使用者所選擇的分類，註冊的裝置將會移至對應的裝置群組。 如需如何建立裝置分類的步驟，請參閱 [Map devices to groups](../enroll-devices/how-to-use-device-group-mapping.md) (將裝置對應到群組)。
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](../media/tem-dynamic-membership-rules.png)
 

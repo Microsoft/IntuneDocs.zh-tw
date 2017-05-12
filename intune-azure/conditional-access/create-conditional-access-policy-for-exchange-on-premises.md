@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 2a011bf390bb55d685f580cfc782b21ff0c2ebd5
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 289635354e7e2244857f56655de6ee227bf97ee7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2017
 
 - 您的 Exchange 版本必須是「Exchange 2010 SP1 或更新版本」。 支援 Exchange 伺服器用戶端存取伺服器 (CAS) 陣列。
 
-- 您必須使用 [Exchange Active Sync 內部部署 Exchange Connector](https://docs.microsoft.com/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)，將 Intune 連線至內部部署 Exchange。
+- 您必須使用 [Exchange Active Sync 內部部署 Exchange Connector](install-intune-on-premises-exchange-connector.md)，將 Intune 連線至內部部署 Exchange。
 
     >[!IMPORTANT]
     >內部部署 Exchange Connector 僅適用於您的 Intune 租用戶，無法搭配任何其他租用戶使用。 您也應該確定適用於租用戶的 Exchange 連接器**只安裝在一部電腦上**。
@@ -103,7 +104,7 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
     > [!TIP]
     > 若要深入了解標記語言，請參閱 Wikipedia 上的這篇[文章](https://en.wikipedia.org/wiki/Markup_language)。
 
-12. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings] (進階 Exchange Activesync 存取設定) 刀鋒視窗中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。
+12. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings]\(進階 Exchange Activesync 存取設定) 刀鋒視窗中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。
 
 13. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
   - 當您設定成允許存取時，所有裝置均能立即存取 Exchange 內部部署。  若**包含的群組**中之使用者的裝置稍後被評估為不符合合規性政策，或未向 Intune 註冊，將會予以封鎖。

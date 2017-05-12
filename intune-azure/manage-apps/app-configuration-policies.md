@@ -1,12 +1,12 @@
 ---
-title: "如何使用 Intune 應用程式設定原則"
+title: "如何使用 Intune 應用程式設定原則 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解如何使用應用程式設定原則在 iOS 應用程式執行時，將設定資料提供給該應用程式。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/24/2017
 
 應用程式組態原則可讓您在使用者執行應用程式之前，將這些設定指派給使用者來避開這些問題。 這些設定會自動提供，使用者無須採取任何動作。
 
-您不會直接將這些原則部署給使用者與裝置。 您將會將原則與應用程式關聯，然後才部署應用程式。 每當應用程式檢查是否有原則時 (通常是第一次執行時)，便會使用這些原則設定。
+您不會直接將這些原則部署給使用者與裝置。 而是將原則與應用程式關聯，然後再指派應用程式。 每當應用程式檢查是否有原則時 (通常是第一次執行時)，便會使用這些原則設定。
 
 > [!TIP]
 > 此原則類型目前僅針對執行 iOS 8.0 和更新版本的裝置提供。 它支援下列應用程式安裝類型︰
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/24/2017
 > -   **App Store 中的受管理 iOS 應用程式**
 > -   **iOS 應用程式套件**
 >
-> 如需應用程式安裝類型的詳細資訊，請參閱[如何將應用程式新增至 Microsoft Intune](/intune-azure/manage-apps/add-apps)。
+> 如需應用程式安裝類型的詳細資訊，請參閱[如何將應用程式新增至 Microsoft Intune](add-apps.md)。
 
 ## <a name="create-an-app-configuration-policy"></a>建立應用程式設定原則
 

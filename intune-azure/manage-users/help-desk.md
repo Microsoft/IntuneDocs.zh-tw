@@ -15,10 +15,10 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8cf12e434518c9f06c105a22f3b7aef2613fcdb0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>使用 Microsoft Intune 中的疑難排解入口網站協助使用者
@@ -36,7 +36,7 @@ Intune 系統管理員可以將服務台操作員權限指派給使用者。 服
 4. 輸入 [指派名稱] (必要)、[指派描述] (選擇性)，然後指派 [成員 (群組)] 和 [範圍 (群組)]。
 5. 「服務台操作員」角色的成員現在即可使用疑難排解入口網站。
 
-如需 Intune 角色的詳細資訊，請參閱 [Intune 角色 (RBAC)](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control)。
+如需 Intune 角色的詳細資訊，請參閱 [Intune 角色 (RBAC)](../access-control/role-based-access-control.md)。
 
 ## <a name="access-the-troubleshooting-portal"></a>存取疑難排解入口網站
 
