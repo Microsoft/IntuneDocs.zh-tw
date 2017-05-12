@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/10/2017
 - 您需要先準備什麼才能開始建立裝置合規性原則。
 - 快速瀏覽您可以在 Intune Azure 預覽版入口網站上查看的資訊及執行的作業。 
 
-如果您並不熟悉裝置合規性，可能需要閱讀[本主題](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance)，了解何謂裝置合規性，以及如何於組織中運用它。
+如果您並不熟悉裝置合規性，可能需要閱讀[本主題](what-is-device-compliance.md)，了解何謂裝置合規性，以及如何於組織中運用它。
 
 ##  <a name="pre-requisites"></a>必要條件
 

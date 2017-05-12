@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用者必須前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 管理 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos)。 即將推出更多功能。
+Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用者必須前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 管理 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](../configure-devices/custom-for-macos.md)。 即將推出更多功能。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -36,7 +37,7 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 - [設定網域](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [設定 MDM 授權單位](set-mdm-authority.md)
 - [建立群組](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [設定公司入口網站](/intune-azure/manage-apps/company-portal-app.md)
+- [設定公司入口網站](../manage-apps/company-portal-app.md)
 - 指派 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中的使用者授權
 - [取得 Apple MDM Push Certificate](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 
 根據預設，Intune 已允許註冊 macOS 裝置。
 
-若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (設定裝置類型限制)。
+若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions) (設定裝置類型限制)。
 
-若要設定使用者能夠註冊的裝置數上限，請參閱 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) (設定裝置限制)。
+若要設定使用者能夠註冊的裝置數上限，請參閱 [Set device limit restrictions](set-enrollment-restrictions.md#set-device-limit-restrictions) (設定裝置限制)。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告知使用者如何註冊其裝置才可存取公司資源
 

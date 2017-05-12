@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **平台** - 選擇您想要建立的設定檔之平台類型。
     - **設定檔類型** - 選取您想要建立的設定檔類型。 可用類型清單會因所選平台而有所不同。
     - **設定** - 請參閱下列主題，以了解每個設定檔類型有關設定的相關資訊︰
-        -  [裝置功能設定](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [電子郵件設定](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [VPN 設定](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Wi-Fi 設定](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Windows 10 版本升級設定](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [憑證設定](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Windows 資訊保護設定](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [教育設定](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [自訂設定](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [裝置功能設定](how-to-configure-device-features.md)
+        -  [裝置限制設定](how-to-configure-device-restrictions.md)
+        -  [電子郵件設定](how-to-configure-email-settings.md)
+        -  [VPN 設定](how-to-configure-vpn-settings.md)
+        -  [Wi-Fi 設定](how-to-configure-wi-fi-settings.md)
+        -  [Windows 10 版本升級設定](how-to-configure-windows-10-edition-upgrade.md)
+        -  [憑證設定](how-to-configure-certificates.md)
+        -  [Windows 資訊保護設定](how-to-configure-windows-information-protection.md)
+        -  [教育設定](how-to-configure-education-settings.md)
+        -  [自訂設定](how-to-configure-custom-settings.md)
 
     ![建立裝置設定檔](./media/create-device-profile.png)
 4. 進行完設定之後，請在 [建立設定檔] 刀鋒視窗中，選擇 [建立]。
@@ -58,5 +59,5 @@ ms.lasthandoff: 03/17/2017
 
 
 ### <a name="next-steps"></a>後續步驟
-如需如何指派裝置設定檔的相關資訊，請參閱[How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles) (如何以 Microsoft Intune 指派裝置設定檔)。
+如需如何指派裝置設定檔的相關資訊，請參閱[How to assign device profiles with Microsoft Intune](how-to-assign-device-profiles.md) (如何以 Microsoft Intune 指派裝置設定檔)。
 

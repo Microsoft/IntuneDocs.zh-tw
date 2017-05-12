@@ -1,12 +1,12 @@
 ---
-title: "如何將應用程式指派到群組"
+title: "如何將應用程式指派給群組 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰將應用程式新增至 Intune 之後，要將它指派到使用者或裝置的群組中。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/24/2017
 |指派經包裝之應用程式或應用程式，與 Intune SDK (適用於應用程式保護原則) 合併運作|是|是|
 |將應用程式指派為可用|是|是|
 |將應用程式指派為必要項目|是|否|
-|解除安裝應用程式|是|是|
+|解除安裝應用程式|是|否|
 |使用者從公司入口網站應用程式安裝可用的應用程式|是|否|
 |使用者從 Web 架構入口網站安裝可用的應用程式|是|是|
 
@@ -53,21 +54,21 @@ ms.lasthandoff: 04/24/2017
 ||||||
 |-|-|-|-|-|
 |**Intune 傳統型 (租用戶移轉前)**|-|**Intune Azure (租用戶移轉完成後)**|-|**詳細資訊**|
-|**父群組部署用途**|**子群組部署用途**|**針對先前父群組和子群組一般成員的指派用途結果**|**針對父群組成員的指派用途動作結果**|-|    
+|**父群組指派用途**|**子群組指派用途**|**針對先前父群組和子群組一般成員的指派用途結果**|**針對父群組成員的指派用途動作結果**|-|    
 |可用|必要|必要且可用|可用|「必要且可用」表示指派為必要的應用程式也會顯示在「公司入口網站」應用程式中。
-|不適用|可用|不適用|不適用|因應措施︰從 Intune 父群組中移除「不適用」的部署用途。
+|不適用|可用|不適用|不適用|因應措施︰從 Intune 父群組中移除「不適用」的指派用途。
 |必要|可用|必要且可用|必要|-|
 |必要且可用<sup>1</sup>|可用|必要且可用|必要且可用|-|    
 |必要|不適用|必要|必要|-|    
 |必要且可用|不適用|必要且可用|必要且可用|-|    
 |必要|解除安裝|必要|必要|-|    
 |必要且可用|解除安裝|必要且可用|必要且可用|-|
-<sup>1</sup> 僅適用於受管理的 iOS 市集應用程式，當您將這些應用程式新增到 Intune 並部署為「必要」時，系統會自動將它們建立成包含「必要」及「可用」用途。
+<sup>1</sup> 僅針對受管理的 iOS 市集應用程式，當您將這些應用程式新增到 Intune 並指派為「必要」時，系統會自動將它們建立成包含「必要」及「可用」用途。
 
-您可以採取下列動作以避免部署衝突︰
+您可以採取下列動作以避免指派衝突︰
 
-1.    如果您先前將應用程式部署到相關的父群組和子群組，建議您先移除這些部署，再開始租用戶移轉。
-2.    移除父群組中的子群組，然後建立包含先前子群組成員的新群組。 接著您可以對此群組建立新的應用程式部署。
+1.    如果您先前將應用程式指派給相關的 Intune 父群組和子群組，建議您先移除這些指派，再開始進行租用戶移轉。
+2.    移除父群組中的子群組，然後建立包含先前子群組成員的新群組。 接著，您可以對此群組建立新的應用程式指派。
 注意：如果先前的父群組是「所有使用者」，則您需要建立不包含子群組成員的新動態群組。
 您必須針對使用者和裝置群組對 [Azure 入口網站](https://portal.azure.com/)中的群組做出任何變更。 [傳統 Azure 入口網站](https://manage.windowsazure.com/)只允許您變更使用者群組。
 

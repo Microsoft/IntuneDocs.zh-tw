@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/25/2017
 
 下表顯示 Intune 註冊方法和每個方法的支援功能與需求。 功能與需求如下所述。 以下是表格中使用的詞彙：
 
-- **抹除** - 指出裝置是否需要先抹除，然後使用者才能註冊裝置。 「抹除」一詞表示將裝置進行原廠重設，這會移除所有資料。 如需詳細資訊，請參閱[對裝置上使用完全抹除或選擇性抹除](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)。
+- **抹除** - 指出裝置是否需要先抹除，然後使用者才能註冊裝置。 「抹除」一詞表示將裝置進行原廠重設，這會移除所有資料。 如需詳細資訊，請參閱[對裝置上使用完全抹除或選擇性抹除](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)。
 - **親和性**：將裝置與使用者相關聯。 行動應用程式管理 (MAM) 和公司資料的條件式存取需要此功能。 如需詳細資訊，請參閱[使用者親和性](enroll-ios-devices-using-device-enrollment-program.md)。
 - **鎖定** - 指出是否防止使用者取消註冊其裝置不進行管理。 使用者可以使用公司入口網站應用程式來取消註冊其在所有平台上的裝置。 他們無法使用原生作業系統功能表來取消註冊。
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/25/2017
 
 
 ## <a name="byod"></a>BYOD
-「攜帶您自己的裝置」使用者會安裝公司入口網站應用程式，並註冊其裝置。 這可以讓使用者連線到公司網路，並加入網域或 Azure Active Directory。 以大多數的平台來說，您皆必須針對許多 COD 案例啟用 BYOD 註冊。 您可以封鎖註冊個人擁有的 iOS 和 Android 裝置。 如需指示，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
+「攜帶您自己的裝置」使用者會安裝公司入口網站應用程式，並註冊其裝置。 這可以讓使用者連線到公司網路，並加入網域或 Azure Active Directory。 以大多數的平台來說，您皆必須針對許多 COD 案例啟用 BYOD 註冊。 您可以封鎖註冊個人擁有的 iOS 和 Android 裝置。 如需指示，請參閱[設定裝置類型限制](set-enrollment-restrictions.md#set-device-type-restrictions)。
 
 ## <a name="corporate-owned-devices"></a>屬公司擁有的裝置
 您可使用 Azure 入口網站管理公司擁有的裝置 (COD)。 iOS 裝置可直接透過 Apple 提供的工具進行註冊。 系統管理員或管理員可使用裝置註冊管理員來註冊所有裝置類型。 也可以將包含 IMEI 號碼的裝置識別和標記為公司擁有，以啟用 COD 案例。

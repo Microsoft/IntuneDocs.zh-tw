@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 如果您是第一次在 Azure 入口網站中使用 Intune，請注意，您已無法再建立 Intune 的群組。 一如您使用的其他許多應用程式，Intune 也使用 Azure AD 群組。
 
-若要深入了解如何在 Azure AD 中使用群組，請參閱[使用 Azure Active Directory 群組來管理資源的存取權](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups)。
+若要深入了解如何在 Azure AD 中使用群組，請參閱[使用 Azure Active Directory 群組來管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)。
 
 若要在 [Azure 入口網站](https://portal.azure.com)中管理群組，請搜尋 **Intune**，並選擇 [管理使用者]，然後會將您帶至 [使用者和群組] 工作負載，讓您從中執行下列動作︰
 
@@ -43,5 +44,5 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="next-step"></a>後續步驟
 
-[開始使用群組](/intune-azure/manage-users/get-started-with-groups)
+[開始使用群組](../manage-users/get-started-with-groups.md)
 

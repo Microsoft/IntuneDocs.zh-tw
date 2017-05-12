@@ -1,7 +1,7 @@
 ---
-title: "如何將 iOS 企業營運應用程式新增至 Intune"
+title: "如何將 Windows Phone 企業營運應用程式新增至 Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何將 iOS 企業營運應用程式新增至 Intune。"
+description: "Intune Azure 預覽版︰了解將 Windows Phone 企業營運應用程式新增至 Intune 的相關資訊。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -11,19 +11,19 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
+ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
-ms.openlocfilehash: 70f0b575c92fb000f267e8b2585aff4482c5518c
+ms.openlocfilehash: 95d0c1b5598785ff30bfd912f65c39cc5e46b85c
 ms.contentlocale: zh-tw
 ms.lasthandoff: 05/10/2017
 
 ---
 
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 iOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
+# <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/10/2017
 ## <a name="step-2---configure-the-app-package-file"></a>步驟 2：設定應用程式套件檔案
 
 1. 在 [新增應用程式] 刀鋒視窗上選擇 [應用程式套件] 檔案。
-2. 在 [應用程式套件] 檔案刀鋒視窗上，選擇瀏覽按鈕，然後選取副檔名為 **.ipa** 的 iOS 安裝檔。
+2. 在 [應用程式套件] 檔案刀鋒視窗上，選擇瀏覽按鈕，然後選取副檔名為 **.xap** 的 Windows Phone 安裝檔案。
 3. 完成之後，請選擇 [確定]。
 
 
@@ -51,7 +51,6 @@ ms.lasthandoff: 05/10/2017
     - **名稱** - 輸入要顯示在公司入口網站中的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **描述** - 輸入應用程式的描述。 使用者會在公司入口網站中看到這個描述。
     - **發行者** - 輸入應用程式的發行者名稱。
-    - **最小作業系統** - 從清單中選擇應用程式所能安裝的最小作業系統版本。 若將應用程式指派給安裝舊版作業系統的裝置，就不會進行安裝。
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 這可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式** - 當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
     - **資訊 URL** - 選擇是否要輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune 中的裝置設定檔是什麼？"
+title: "Microsoft Intune 中的裝置設定檔是什麼？ | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 Intune 裝置設定檔，以及這些設定檔如何協助管理及保護您公司裝置。"
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ ms.lasthandoff: 03/17/2017
 
 ## <a name="getting-started"></a>開始使用
 
-建立裝置設定檔的工作流程與所有設定檔的建立工作流程類似。 如需如何建立設定檔的資訊，請參閱[如何建立 Microsoft Intune 的裝置組態設定檔](/intune-azure/configure-devices/how-to-create-device-profiles)。 另外也請閱讀建立每種設定檔類型設定的特有資訊。
+建立裝置設定檔的工作流程與所有設定檔的建立工作流程類似。 如需如何建立設定檔的資訊，請參閱[如何建立 Microsoft Intune 的裝置組態設定檔](how-to-create-device-profiles.md)。 另外也請閱讀建立每種設定檔類型設定的特有資訊。
 
 您可以管理您裝置上的下列功能︰
 
@@ -51,15 +52,15 @@ ms.lasthandoff: 03/17/2017
 如需詳細資訊，請參閱[如何設定裝置限制設定](how-to-configure-device-restrictions.md) 支援︰Android、iOS、macOS、Windows 10 及 Windows 10 Team。
 
 ## <a name="email"></a>電子郵件
-電子郵件設定檔可讓您建立、部署及監視您管理之裝置上的 Exchange ActiveSync 電子郵件設定。 藉由部署這些設定，您可以確保一致性、減少支援來電，以及讓使用者無須任何設定，就能從其個人裝置存取公司的電子郵件。
+電子郵件設定檔可讓您建立、指派及監視您所管理裝置上的 Exchange ActiveSync 電子郵件設定。 藉由指派這些設定，您可以確保一致性、減少支援來電，以及讓使用者無須任何設定，就能從其個人裝置存取公司的電子郵件。
 如需詳細資訊，請參閱[如何設定電子郵件設定](how-to-configure-email-settings.md) 支援︰支援︰Android、iOS、Windows Phone 8.1 及 Windows 10。
 
 ## <a name="wi-fi"></a>Wi-Fi
-使用 Wi-Fi 設定檔將無線網路設定部署給組織中的使用者與裝置。 若您部署 Wi-Fi 設定檔，您的使用者不需要自行設定即可存取您公司的 Wi-Fi。
+使用 Wi-Fi 設定檔將無線網路設定指派給組織中的使用者與裝置。 若您指派 Wi-Fi 設定檔，使用者不需要自行設定即可存取您公司的 Wi-Fi。
 如需詳細資訊，請參閱[如何設定 Wi-Fi 設定](how-to-configure-wi-fi-settings.md) 支援︰ Android、iOS、macOS 及 Windows 8.1 (僅限匯入)。
 
 ## <a name="vpn"></a>VPN
-虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 使用 VPN 設定檔將 VPN 設定部署給組織中的使用者及裝置，讓他們可以輕鬆安全地連線到網路。
+虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 使用 VPN 設定檔將 VPN 設定指派給組織中的使用者與裝置，讓他們可以輕鬆又安全地連線到網路。
 如需詳細資訊，請參閱[如何設定 VPN 設定](how-to-configure-vpn-settings.md)。
 支援︰Android、iOS、macOS、Windows Phone 8.1、Windows 8.1 及 Windows 10。
 

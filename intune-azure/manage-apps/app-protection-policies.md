@@ -15,10 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 119c7172f8175d128c3e13d37bb9ec3c91719bcf
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/24/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**若您不是使用 Azure 入口網站的 Intune 服務預覽版**，本主題說明在傳統 Intune 主控台中[如何建立應用程式保護原則](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
+**若您不是使用 Azure 入口網站的 Intune 服務預覽版**，本主題說明在傳統 Intune 主控台中[如何建立應用程式保護原則](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 無論裝置是否交由 Intune 管理，都能對裝置上執行的應用程式套用應用程式保護原則。 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[什麼是 Microsoft Intune 應用程式保護原則](what-is-app-protection-policy.md)。
 

@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
 
-使用者若要註冊個人 (BYOD (自攜裝置)) 的裝置，唯一可使用的註冊方式就是從 App Store 下載 iOS 版的公司入口網站應用程式，並依照應用程式中的指示註冊。 一經註冊之後，使用者就能連線到公司網路、加入網域或 Azure Active Directory 及存取公司資源。 您可以封鎖註冊個人擁有的 iOS 裝置。 如需指示，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
+使用者若要註冊個人 (BYOD (自攜裝置)) 的裝置，唯一可使用的註冊方式就是從 App Store 下載 iOS 版的公司入口網站應用程式，並依照應用程式中的指示註冊。 一經註冊之後，使用者就能連線到公司網路、加入網域或 Azure Active Directory 及存取公司資源。 您可以封鎖註冊個人擁有的 iOS 裝置。 如需指示，請參閱[設定裝置類型限制](set-enrollment-restrictions.md#set-device-type-restrictions)。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

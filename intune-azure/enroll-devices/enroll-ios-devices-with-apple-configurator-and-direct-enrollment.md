@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
-ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 02675b6fe9872cb634d0515172f696cedc7e6463
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -44,7 +45,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 - [設定網域](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [設定 MDM 授權單位](set-mdm-authority.md)
 - [建立群組](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [設定公司入口網站](/intune-azure/manage-apps/company-portal-app)
+- [設定公司入口網站](../manage-apps/company-portal-app.md)
 - 指派 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中的使用者授權
 - [取得 Apple MDM Push Certificate](get-an-apple-mdm-push-certificate.md)
 - 確認您確實可存取 iOS 裝置
@@ -96,7 +97,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
    e. 接受**遠端警告**，然後選擇 [信任]。
 
-   f. 當 [Profile Installed] (安裝的設定檔) 方塊確認設定檔為 [已安裝] 時，選擇 [完成]。
+   f. 當 [Profile Installed]\(安裝的設定檔) 方塊確認設定檔為 [已安裝] 時，選擇 [完成]。
 
 4. 在 iOS 裝置上，開啟 [設定]，並前往 [一般]  >  [裝置管理]  >  [管理設定檔]。 確認其中有列出設定檔的安裝，並檢查 iOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
 

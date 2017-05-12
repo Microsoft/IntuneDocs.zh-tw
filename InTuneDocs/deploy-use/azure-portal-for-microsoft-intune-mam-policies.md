@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -40,7 +42,7 @@ ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>登入 Azure 入口網站並自訂起始畫面
 
-1.  移至 [Azure 入口網站](https://portal.azure.com)，並使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 認證登入。
+1.  移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。
 
     ![Azure 入口網站登入頁面的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -48,7 +50,7 @@ ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
     ![Azure 入口網站儀表板的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  在左功能表中選擇 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+3.  選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
 
     ![反白顯示 Intune 的 [瀏覽] 功能表螢幕擷取畫面](../media/AppManagement/MAM-Azure-Portal-1.png)
 
@@ -64,9 +66,4 @@ ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 ## <a name="next-steps"></a>後續步驟
 [準備好設定應用程式保護原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
