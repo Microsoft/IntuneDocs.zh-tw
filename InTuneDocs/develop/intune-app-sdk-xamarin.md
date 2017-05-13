@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 2. 閱讀 Microsoft Intune MAM Xamarin 元件的[授權條款](https://components.xamarin.com/license/microsoft.intune.mam)。
 
-3.    從 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下載 Intune App SDK Xamarin 元件資料夾並將它解壓縮。 從步驟 1 和步驟 2 下載的兩個檔案應該在相同的目錄層級中。
+3.    從 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下載 Intune App SDK Xamarin 元件資料夾並將它解壓縮。 從步驟 1 和步驟 3 下載的兩個檔案應該在相同的目錄層級中。
 
-4.    以系統管理員身分在命令列執行 `Xamain.Component.exe install <.xam> file`。
+4.    以系統管理員身分在命令列執行 `Xamarin.Component.exe install <.xam> file`。
 
 5.    在 Visual Studio 中，以滑鼠右鍵按一下先前所建立 Xamarin 專案中的 [元件]。
 
@@ -123,9 +125,4 @@ ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 ## <a name="test-your-app"></a>測試應用程式
 
 您已完成將元件建置成應用程式的基本步驟。 現在您可以依照 Xamarin Android 範例應用程式中的步驟。 我們提供了兩個範例，一個用於 Xamarin.Forms，另一個適用於 Android。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
