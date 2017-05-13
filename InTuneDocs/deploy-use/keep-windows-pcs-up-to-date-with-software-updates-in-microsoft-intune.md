@@ -14,9 +14,10 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 14ef9f901969449ca8b3c60a187da6b6e654bd67
+ms.contentlocale: zh-tw
 ms.lasthandoff: 12/30/2016
 
 
@@ -118,7 +119,7 @@ Microsoft Intune 可協助您使用一些方式來保護受管理的電腦，包
 
 2.  在 [自動核准規則]  區段中，選取規則，然後執行下列其中一項：
 
-    -   若要編輯規則，請選擇 [編輯]，然後在 [Update Auto Approval Rule Wizard] (更新自動核准規則精靈) 中變更規則的參數。
+    -   若要編輯規則，請選擇 [編輯]，然後在 [Update Auto Approval Rule Wizard]\(更新自動核准規則精靈) 中變更規則的參數。
 
     -   若要執行規則，請選擇 [執行已選取項目]。
 
