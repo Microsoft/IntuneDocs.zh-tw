@@ -14,9 +14,10 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 8425cee511cdd54e051a93a10a941142c33df893
+ms.contentlocale: zh-tw
 ms.lasthandoff: 12/16/2016
 
 
@@ -54,7 +55,7 @@ Intune 會收集您使用 Intune 軟體用戶端作為電腦管理之桌上型�
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>若要重新整理電腦清查以確保它是最新的
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置] (或包含您想要重新整理清查之電腦的其他群組)。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\(或包含您想要重新整理清查之電腦的其他群組)。
 
 2.  選取電腦，或按住 **Ctrl** 鍵選取多部電腦。
 
