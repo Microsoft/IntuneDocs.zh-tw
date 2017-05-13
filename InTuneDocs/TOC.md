@@ -84,7 +84,7 @@
 #### [Exchange 存取規則](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [管理 Android for Work](deploy-use/android-for-work.md)
 
-## [使用軟體代理程式來管理電腦](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [使用軟體客戶式來管理電腦](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [安裝電腦用戶端](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [一般電腦管理工作](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [電腦原則](deploy-use/use-policies-to-simplify-windows-pc-management.md)
