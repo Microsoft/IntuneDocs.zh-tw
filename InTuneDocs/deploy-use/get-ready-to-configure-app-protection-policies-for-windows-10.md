@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: zh-tw
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/25/2017
 
 3.  [Azure AD] 刀鋒視窗隨即開啟，選擇 [行動性 (MDM 與 MAM)]，然後按一下 [Microsoft Intune]。
 
-    ![行動性 (MDM 與 MAM)](../media/AppManagement/mam-provider-sc-1.png)
+    ![行動性 (MDM 與 MAM)](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  設定刀鋒視窗隨即開啟，首先選擇 [還原預設的 MAM URL]，然後設定下列各項︰
 
