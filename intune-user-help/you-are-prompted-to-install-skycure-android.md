@@ -15,9 +15,10 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
 ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/29/2017
 
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/29/2017
 
 **您必須執行的作業：**
 
-1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store] (必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
+1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store]\(必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
 
   ![Android 裝置上的合規性詳細資料頁面。 裝置不符合規範，公司入口網站頁面底部有一個訊息說明裝置不符合行動風險原則，以及必須開啟 Skycure 解決問題。](./media/skycure-resolves-compliance-android.png)
 
