@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/13/2017
 
 
@@ -126,7 +127,7 @@ ms.lasthandoff: 03/13/2017
 
 2.  選擇您要抹除之裝置的名稱。
 
-3.  在顯示裝置名稱的刀鋒視窗中選擇 [移除公司...] (代表移除公司資料)，然後選擇 [是] 確認抹除。
+3.  在顯示裝置名稱的刀鋒視窗中選擇 [移除公司...]\(代表移除公司資料)，然後選擇 [是] 確認抹除。
 
 如果裝置已開啟且連線，這過程將花費不到 15 分鐘的時間，以將抹除命令傳播到所有裝置類型。
 
