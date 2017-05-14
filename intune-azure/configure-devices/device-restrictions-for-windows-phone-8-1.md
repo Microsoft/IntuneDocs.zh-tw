@@ -15,9 +15,10 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 175401f05b10e7c8fdece996403832490e102a98
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/18/2017
 
 
@@ -69,7 +70,7 @@ ms.lasthandoff: 02/18/2017
 
 若要在允許和封鎖的應用程式清單中指定應用程式 URL，請使用下列格式：
 
-從 [Windows Phone 市集][](https://www.microsoft.com/store/apps/windows-phone)頁面中，搜尋您想要使用的應用程式。
+從 [[Windows Phone 市集]](https://www.microsoft.com/store/apps/windows-phone) 頁面中，搜尋您想要使用的應用程式。
 
 開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
 
