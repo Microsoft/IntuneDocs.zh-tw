@@ -14,9 +14,10 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 24e33bd106679c5de38f48b2863ad78702982da7
+ms.contentlocale: zh-tw
 ms.lasthandoff: 04/25/2017
 
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/25/2017
 
   已識別出且獲支援的某個 Azure AD 註冊群組使用者所有支援 Lookout、註冊 Intune 的裝置，都會註冊並有資格啟用 Lookout 裝置威脅防護。
 
-2. 在 [Lookout 主控台](https://aad.lookout.com)中，選擇 [系統] 模組的 [連接器] 索引標籤，然後選取 [Enrollment Management] (註冊管理) 定義裝置應該註冊 Lookout 的一組使用者。 新增 Azure AD 安全性群組 [顯示名稱] 以進行註冊。
+2. 在 [Lookout 主控台](https://aad.lookout.com)中，選擇 [系統] 模組的 [連接器] 索引標籤，然後選取 [Enrollment Management]\(註冊管理) 定義裝置應該註冊 Lookout 的一組使用者。 新增 Azure AD 安全性群組 [顯示名稱] 以進行註冊。
 
   ![Intune 連接器註冊頁面的螢幕擷取畫面](../media/mtp/lookout-mtp-enrollment.png)
 
