@@ -100,8 +100,8 @@
 ### [建立及指派應用程式保護原則](manage-apps/app-protection-policies.md)
 ### [準備好設定 WIP 應用程式保護原則](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [建立與指派 WIP 應用程式保護原則](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Android 設定](manage-apps/android-app-protection-policy-settings.md)
-#### [iOS 設定](manage-apps/ios-app-protection-policy-settings.md)
+### [Android 設定](manage-apps/android-app-protection-policy-settings.md)
+### [iOS 設定](manage-apps/ios-app-protection-policy-settings.md)
 ### [驗證應用程式保護原則](manage-apps/validate-app-protection-policies.md)
 ### [監視應用程式保護使用者狀態](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [管理 iOS 應用程式之間的資料傳輸](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +190,7 @@
 ### [建立 Android for Work 合規性原則](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [建立 iOS 合規性原則](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [建立 Windows 合規性原則](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [針對非合規性建立動作](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [監視裝置合規性](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
