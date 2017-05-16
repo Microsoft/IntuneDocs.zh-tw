@@ -8,9 +8,10 @@ ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
 title: "Microsoft Intune 文件 | Microsoft Docs"
 description: "了解如何使用 Microsoft Intune。"
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
 ms.openlocfilehash: 3d44038d316977ad0dedef2aee844a64ca24b744
+ms.contentlocale: zh-tw
 ms.lasthandoff: 05/02/2017
 
 ---
