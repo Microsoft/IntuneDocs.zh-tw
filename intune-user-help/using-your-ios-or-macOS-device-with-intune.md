@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
-ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
-ms.lasthandoff: 03/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,10 @@ ms.lasthandoff: 03/02/2017
 # <a name="using-your-ios-or-macos-device-with-intune"></a>搭配 Intune 使用 iOS 或 macOS 裝置
 
 您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+
+## <a name="supported-versions"></a>支援的版本
+
+Intune 目前支援 iOS 8.0 和更新版本。 Intune 也支援 macOS 10.9 Mavericks 及更新版本。 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
@@ -40,6 +45,7 @@ ms.lasthandoff: 03/02/2017
 
 - [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 - [設定或變更密碼](set-or-change-your-passcode-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)
 - [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)

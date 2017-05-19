@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>使用具有 Intune 的 Windows 裝置
 
 您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+
+## <a name="supported-versions"></a>支援的版本
+
+Intune 目前支援以下 Windows 的版本。
+
+* Windows 10 (家用版、專業版、教育版和企業版)
+* Windows Phone 8.1 和更新版本
+* Windows 8.1 RT
+* Windows 8.1
+
+Intune 也支援某些其他版本的 Windows，例如 [Windows 10 全像攝影版 (英文)](https://www.microsoft.com/hololens)。 此處未列出這些版本，因為這些版本是針對特殊目的使用。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
