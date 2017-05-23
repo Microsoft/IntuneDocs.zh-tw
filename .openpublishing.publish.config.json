@@ -66,8 +66,7 @@
     ""
   ],
   "branches_to_filter": [
-    "master-oldev",
-    "live"
+    "master-oldev"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs.zh-tw",
   "skip_source_output_uploading": false,
