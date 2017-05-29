@@ -14,9 +14,11 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -66,7 +68,7 @@ ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 
 ### <a name="email-profile"></a>電子郵件設定檔
 - **必須由 Intune 管理電子郵件帳戶**：將此選項設定為 [是] 時，裝置必須使用部署到裝置的電子郵件設定檔。 在下列情況下，裝置視為不相容︰
-  - 電子郵件設定檔部署到相容性原則的目標使用者群組以外的使用者群組。
+  - 電子郵件設定檔部署到合規性政策的目標使用者群組以外的使用者群組。
   - 使用者已經在裝置上設定符合部署到該裝置之 Intune 電子郵件設定檔的電子郵件帳戶。 Intune 無法覆寫使用者所佈建的設定檔，因此也無法加以管理。 若要確保相容，使用者必須移除現有電子郵件設定。 然後 Intune 可以安裝受管理的電子郵件設定檔。
 
 - **選取必須由 Intune 管理的電子郵件設定檔**︰如果已選取 [必須由 Intune 管理電子郵件帳戶] 設定，請選擇 [選取] 以指定 Intune 電子郵件設定檔。 電子郵件設定檔必須在裝置上。
@@ -82,9 +84,4 @@ ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 並顯示如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
 
 - **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

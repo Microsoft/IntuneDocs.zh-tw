@@ -14,9 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
-ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -97,9 +99,4 @@ ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 完成建立應用程式後，下一個步驟是進行部署。 若要深入了解，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
 
 如果您想要閱讀將軟體部署到 Windows 電腦之秘訣和技巧的詳細資訊，請參閱部落格文章：[Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) (支援秘訣：將 Intune 軟體部署到電腦的最佳做法)。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

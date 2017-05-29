@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
 ms.contentlocale: zh-tw
-ms.lasthandoff: 03/29/2017
+ms.lasthandoff: 05/23/2017
 
 
 ---
