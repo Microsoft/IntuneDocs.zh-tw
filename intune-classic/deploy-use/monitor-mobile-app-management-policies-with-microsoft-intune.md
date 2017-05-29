@@ -14,10 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -91,7 +92,7 @@ ms.lasthandoff: 02/14/2017
 
 您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理應用程式保護原則合規性狀態的其他報表︰
 
-![螢幕擷取畫面&4;](../media/MAM-reporting-7.png)
+![螢幕擷取畫面 4](../media/MAM-reporting-7.png)
 
 -   **應用程式保護使用者報表︰**列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 02/14/2017
 
         -   所有的應用程式都已簽入，但未收到任何應用程式保護原則。
 
-![螢幕擷取畫面&2;](../media/MAM-reporting-4.png)
+![螢幕擷取畫面 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>資料表群組
 
@@ -124,11 +125,11 @@ ms.lasthandoff: 02/14/2017
 
 1. 在 Intune [行動應用程式管理] 刀鋒視窗中，選擇 [應用程式保護報表]。
 
-    ![螢幕擷取畫面&6;](../media/app-protection-report-csv-2.png)
+    ![螢幕擷取畫面 6](../media/app-protection-report-csv-2.png)
 
 2. 選擇 [是] 儲存報表，然後選擇 [另存新檔]，再選取報表的儲存資料夾。
 
-    ![螢幕擷取畫面&7;](../media/app-protection-report-csv-1.png)
+    ![螢幕擷取畫面 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)

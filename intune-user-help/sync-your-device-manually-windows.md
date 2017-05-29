@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: e83299392fc516ed2b11248f28341403419d6758
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -76,7 +77,7 @@ ms.lasthandoff: 03/13/2017
 
     ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-button.png)
 
-4. 選擇 [同步] 按鈕。 您的裝置將會使用 Intune 進行同步處理。
+4. 選擇 [同步] 按鈕。 您的裝置將與 Intune 同步。
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>如果看見 [公司存取] 時需遵循的步驟
 
@@ -94,8 +95,8 @@ ms.lasthandoff: 03/13/2017
 
    按鈕會變成灰色，直到同步完成為止。
 
-   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
-   手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
+手動同步處理您的 Windows 10 Mobile 裝置來加速緩慢的應用程式安裝：
 
    1. 移至 [所有應用程式] > [設定] > [帳戶]。
 

@@ -2,8 +2,8 @@
 title: "設定 PFX 的憑證基礎結構 | Microsoft Docs"
 description: "建立及部署 .PFX 憑證設定檔。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -14,10 +14,11 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
-ms.lasthandoff: 12/10/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d2e3d25111c35bff814923f4824a1c8bda3677ec
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 

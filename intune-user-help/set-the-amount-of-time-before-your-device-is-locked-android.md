@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
-ms.lasthandoff: 01/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 2393b7193a81f9489e56d1fe50b85291e5a2260e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.lasthandoff: 01/24/2017
 
 為了讓 Android 裝置上的資料更加安全，IT 系統管理員可以設定原則，要求您設定裝置在自動鎖定之前可以維持閒置的時間量。 請遵循下列步驟來設定裝置在鎖定前的時間量。
 
-1.  在裝置的 [設定] 中，按一下 [安全性] &gt; [Automatically Lock] (自動鎖定) (在某些裝置上，這會顯示為 [Lock phone after] (在下列時間後鎖定電話))。
+1.  在裝置的 [設定] 中，按一下 [安全性] &gt; [Automatically Lock]\(自動鎖定) (在某些裝置上，這會顯示為 [Lock phone after]\(在下列時間後鎖定電話))。
 
 2.  指定密碼逾時值。
 

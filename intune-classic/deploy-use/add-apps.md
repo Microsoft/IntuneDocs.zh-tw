@@ -14,10 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
-ms.lasthandoff: 04/14/2017
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/14/2017
 ## <a name="cloud-storage-space"></a>雲端儲存空間
 使用軟體安裝程式安裝類型所建立的所有應用程式 (例如商務營運應用程式)，都必須封裝並上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 完整訂閱將包含 20 GB 的儲存空間。
 
-您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請前往 [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) (訂閱管理入口網站)。  否則，請連絡合作夥伴或銷售人員。
+您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請前往[訂用帳戶管理入口網站](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否則，請連絡合作夥伴或銷售人員。
 
 雲端儲存空間需求如下：
 

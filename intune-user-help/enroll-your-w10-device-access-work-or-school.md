@@ -1,11 +1,11 @@
 ---
 title: "在 Intune 註冊 Windows 10 裝置 | Microsoft Docs"
-description: "在 Intune 中註冊 Windows 10 1607 裝置"
+description: "在 Intune 中註冊 Windows 10 1607 或更新版裝置"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
+> [!NOTE]
+> Windows 10 適用於所有類型的裝置。 不論您使用桌上型電腦、手機或平板電腦，您都會遵循相同的步驟 (即使與本頁上的影像稍微不同也一樣)。
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
+1. 移至 [開始]。
 
-2. 選取 [帳戶] > [存取公司或學校資源] > [連接]。
+  - 如果您在 **Windows 10 Desktop** 裝置上，請移至 [開始] 功能表。
+  - 如果您在 **Windows 10 行動裝置版**裝置上，請移至**開始畫面**，然後滑到 [所有應用程式] 清單。
+
+2.  在搜尋列中搜尋「設定」，以開啟 Windows [設定] 應用程式。
+
+3. 選取 [帳戶] > [存取公司或學校資源] > [連接]。
 
     ![選取 [存取公司或學校帳戶]](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
-1.  開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
+> [!NOTE]
+> Windows 10 適用於所有類型的裝置。 不論您使用桌上型電腦、手機或平板電腦，您都會遵循相同的步驟 (即使與本頁上的影像稍微不同也一樣)。
 
-2. 選取 [帳戶]。
+1.  移至 [開始]。
+
+  - 如果您在 **Windows 10 Desktop** 裝置上，請移至 [開始] 功能表。
+  - 如果您在 **Windows 10 行動裝置版**裝置上，請移至**開始畫面**，然後滑到 [所有應用程式] 清單。
+
+2. 在搜尋列中搜尋「設定」，以開啟 Windows [設定] 應用程式。
+
+3. 選取 [帳戶]。
 
     ![前往 [設定] 與 [帳戶]](./media/W10-enroll-1-settings-accounts.png)
 
-3. 選取 [您的帳戶]。
+4. 選取 [您的帳戶]。
 
     ![選取 [您的帳戶]](./media/W10-enroll-2-accounts-your-account.png)
 
-4. 選取 [新增公司或學校帳戶]。
+5. 選取 [新增公司或學校帳戶]。
 
     ![選取 [新增公司或學校帳戶]](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. 使用工作或學校認證登入。
+6. 使用工作或學校認證登入。
 
     ![登入](./media/W10-enroll-4-sign-in.png)
 
