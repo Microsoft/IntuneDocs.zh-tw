@@ -80,8 +80,7 @@ Intune App SDK 是不含外部相依性的標準 Android 程式庫。 **Microsof
 Azure Active Directory Authentication Library (ADAL) 可能會有屬於自己的 ProGuard 限制。 如果應用程式整合了 ADAL，則您必須遵循這些限制的相關 ADAL 文件。
 
 ### <a name="entry-points"></a>進入點
-=======
-Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限以執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
+======= Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限以執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
 
 Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應用程式保護原則。 這是透過將 Android 基底類別取代為對等的 Intune 基底類別來完成，其名稱前面會加上 **MAM**。 SDK 類別的位置介於 Android 基底類別和應用程式本身針對該類別的衍生版本之間。 以活動為範例來看，最後您得到的繼承階層會像這樣：`Activity` > `MAMActivity` > `AppSpecificActivity`。
 
