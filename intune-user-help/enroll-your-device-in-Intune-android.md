@@ -33,7 +33,7 @@ ms.lasthandoff: 05/23/2017
 
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-這些註冊指示適用於原生及 Samsung KNOX Android 裝置。 Samsung KNOX 是一種安全性類型，特定的 Samsung 裝置使用它為除了原生 Android 所提供的保護之外，提供額外的保護。 若要查看裝置是否為 Samsung KNOX 裝置，請移至 [設定] > [About device] (關於裝置)。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
+這些註冊指示適用於原生及 Samsung KNOX Android 裝置。 Samsung KNOX 是一種安全性類型，特定的 Samsung 裝置使用它為除了原生 Android 所提供的保護之外，提供額外的保護。 若要查看裝置是否為 Samsung KNOX 裝置，請移至 [設定] > [About device]\(關於裝置)。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
 
 註冊之前或之後，系統可能會要求您選擇最能描述您裝置使用方式的類別。 IT 系統管理員會使用此類別來協助您查看可存取的應用程式。
 
