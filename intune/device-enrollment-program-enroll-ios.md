@@ -55,7 +55,7 @@ ms.lasthandoff: 05/23/2017
 2. 選取 [下載您的公開金鑰憑證]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
 
 **步驟 2.從正確的 Apple 網站下載 Apple DEP 權杖。**<br>
-選取 [透過 Apple 部署計劃建立 DEP 權杖][](https://deploy.apple.com)(https://deploy.apple.com)，並以您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
+選取 [[透過 Apple 部署計劃建立 DEP 權杖]](https://deploy.apple.com) (https://deploy.apple.com) ，並以您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
 
    1.  在 Apple 的[裝置註冊計劃入口網站](https://deploy.apple.com)中，移至 [裝置註冊計劃] &gt; [管理伺服器]，然後選擇 [新增 MDM 伺服器]。
    2.  輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
