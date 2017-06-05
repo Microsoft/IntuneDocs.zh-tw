@@ -117,7 +117,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>將 Apple DEP 序號指派到 MDM 伺服器
 裝置序號必須在 Apple DEP Web 入口網站中指派給您的 Intune MDM 伺服器，以允許 Intune 管理那些裝置。
 
-1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com)，並使用公司的 Apple ID 登入。
+1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com) ，並使用公司的 Apple ID 登入。
 
 2. 移至 [部署方案] &gt; [裝置註冊方案] &gt; [管理裝置]。
 
