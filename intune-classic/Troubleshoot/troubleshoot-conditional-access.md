@@ -127,7 +127,7 @@ ms.lasthandoff: 05/23/2017
 
 #### <a name="locating-sync-logs"></a>尋找同步記錄檔
 
--    搜尋「完整同步處理」，在記錄檔中尋找完整同步處理。 完整同步處理的開頭會標有此段文字︰
+-    搜尋 **full sync**，在記錄檔中尋找完整同步處理。 完整同步處理的開頭會標有此段文字︰
 
     「處理命令：為 <number> 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)」
 
@@ -135,7 +135,7 @@ ms.lasthandoff: 05/23/2017
 
     順利完成為 4 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)。 詳細資料: 清查命令結果 - 同步的裝置: 0 命令識別碼: commandIDGUID' Exchange 健全狀況: '伺服器健全狀況' 名稱: 'PowerShellExchangeServer: <Name=mymailservername>' 狀態: ’已連線','
 
--    搜尋「快速同步處理」，在記錄檔中尋找快速 (差異) 同步處理。
+-    搜尋 **quick sync**，在記錄檔中尋找快速 (差異) 同步處理。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next 命令中的例外狀況
 檢查 Exchange Connector 記錄檔中 **Get next 命令**的例外狀況，並將這些資訊提供給 Microsoft 支援服務。

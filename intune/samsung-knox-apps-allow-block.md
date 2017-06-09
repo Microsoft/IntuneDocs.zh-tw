@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] 使用此主題中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]使用此主題中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
 
 - 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
 - 裝置使用者可從 Google Play 市集安裝的應用程式清單。 只可以安裝您列出的應用程式。 無法從市集安裝其他應用程式。
