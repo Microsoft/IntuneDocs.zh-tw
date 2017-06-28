@@ -18,10 +18,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db7c3b4c5722bea449dc7185b179b7a85fa59018
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -56,5 +56,5 @@ ms.lasthandoff: 05/23/2017
 
 -   您的 IT 系統管理員可能對電腦施行原則。 例如要求您為電腦上設定密碼或 PIN 碼。 您的 IT 系統管理員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置或刪除電腦上的所有資料。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
 

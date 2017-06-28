@@ -1,5 +1,5 @@
 ---
-title: "淘汰裝置 | Microsoft Docs"
+title: "淘汰裝置"
 description: "Intune 同時支援選擇性抹除和完整抹除，可藉由移除原則與公司入口網站，從 Intune 管理中移除裝置。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ ms.lasthandoff: 05/23/2017
 
 您可能會因各種原因而需要淘汰裝置：
 
--    使用者有計畫地離開公司 (在「受管理」狀況下離開)
--    使用者突然離開 (遭到解雇、離職等等)。
--    裝置遺失
--    裝置再利用 (移至另一位使用者，重複使用於不同用途等等)
+-   使用者有計畫地離開公司 (在「受管理」狀況下離開)
+-   使用者突然離開 (遭到解雇、離職等等)。
+-   裝置遺失
+-   裝置再利用 (移至另一位使用者，重複使用於不同用途等等)
 
 您可以在作為行動裝置管理的裝置上執行選擇性抹除或完整抹除，也可以鎖定裝置並重設其密碼。 藉由抹除裝置，您可以釋出使用者的訂閱以新增其他裝置。 您也可以淘汰使用 Intune 用戶端軟體管理的電腦。
 

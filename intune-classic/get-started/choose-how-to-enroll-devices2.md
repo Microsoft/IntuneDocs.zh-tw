@@ -1,5 +1,5 @@
 ---
-title: "選擇如何註冊行動裝置 | Microsoft Docs"
+title: "選擇如何註冊行動裝置"
 description: "回答一些簡單的問題，以決定如何在 Intune 中註冊行動裝置"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9d1e5ff2fa4f7393b9beff7cca88ce23daeaa87e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5aa97d991c72ae9eb02b6b31f0d924685f4049ce
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -30,11 +30,14 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="which-byod-platform-do-you-want-to-enable"></a>**您要啟用哪一個 BYOD 平台？**
 
+> [!div  class="button"]
+[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-[Android >]/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) [!div class="button"]
-> [iOS 及 Mac >]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [!div class="button"]
-[Windows 電腦 >]/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) [!div class="button"]
-> [Windows 10 行動裝置版及 Windows Phone >]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+[iOS 和 Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+> [!div class="button"]
+[Windows 電腦 >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [!div class="button"]
+[Windows 10 行動裝置版與 Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 
 
 > [!div class="button"]

@@ -1,5 +1,5 @@
 ---
-title: "解決 GPO 和 Intune 原則衝突 | Microsoft Docs"
+title: "解決 GPO 和 Intune 原則衝突"
 description: "了解如何解決群組原則和 Intune 設定原則之間的衝突。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 使用原則協助您在的 Windows 電腦上管理設定。 例如，您可以使用原則來控制電腦上的 Windows 防火牆設定。 許多 Intune 設定與您透過 Windows 群組原則所做的設定很類似。 不過，有時候這兩種方法可能彼此衝突。
 
 發生衝突時，除非電腦無法登入網域，否則網域層級的群組原則將優先於 Intune 原則。 在這種情況下，Intune 原則會套用到用戶端電腦。

@@ -1,5 +1,5 @@
 ---
-title: "選擇如何註冊行動裝置 | Microsoft Docs"
+title: "選擇如何註冊行動裝置"
 description: "回答一些簡單的問題，以決定如何在 Intune 中註冊行動裝置"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364064f3507c00f87b367c0aa4ff7b0f31cea4b7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8fe7b2bb58655374d3e92391cd0a37aeda3062d4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -31,10 +31,11 @@ ms.lasthandoff: 05/23/2017
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**您會如何管理專用、公司擁有的裝置？**
 
   > [!div class="button"]
-[iOS DEP >]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
+[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[iOS 設定助理 >]/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [!div class="button"]
-> [以 IMEI 標記 >]/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[iOS 設定助理 >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[使用 IMEI 標記 >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   您可以透過下列方式，向專用的使用者註冊公司所擁有的裝置︰
 

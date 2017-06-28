@@ -1,5 +1,5 @@
 ---
-title: "設定 SCEP 的憑證基礎結構 | Microsoft Docs"
+title: "設定 SCEP 的憑證基礎結構"
 description: "建立及部署 SCEP 憑證設定檔的基礎結構。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88fd05cf1ccaf2c033b737ce76a3ce5d83557313
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9b62e03d88055c19a04c3968a1f060e20ae4fc65
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
@@ -48,7 +48,7 @@ I
 
 ### <a name="network-requirements"></a>網路需求
 
-從網際網路到周邊網路，允許經由連接埠 443 從網際網路上所有主機/IP 位址連接到 NDES 伺服器。
+從網際網路到周邊網路，允許網際網路上所有主機/IP 位址的連接埠 443 都能連線到 NDES 伺服器。
 
 從周邊網路到受信任網路，允許在加入網域的 NDES 伺服器上進行網域存取所需的所有連接埠和通訊協定。 NDES 伺服器需要存取憑證伺服器、DNS 伺服器、Configuration Manager 伺服器和網域控制站。
 

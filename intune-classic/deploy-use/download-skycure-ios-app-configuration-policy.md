@@ -1,5 +1,5 @@
 ---
-title: "下載 Skycure iOS 應用程式設定原則 | Microsoft Docs"
+title: "下載 Skycure iOS 應用程式設定原則"
 description: "下載 Skycure iOS 應用程式設定原則，以便與已部署至使用者的 Skycure iOS 應用程式搭配使用。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8e46960a5d469093052148eb457140b3c235d3a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3159985bfbaec40899dd58766e214daa672ee6d4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 您需要登入 Skycure 管理主控台，才能執行後續步驟。
 
 > [!TIP] 
-> 如果使用 Microsoft Internet Explorer 11 或 Edge，您可能需要使用 InPrivate 模式開啟 Skycure 管理主控台。
+> 如果使用 Microsoft Internet Explorer 11 或 Microsoft Edge，您可能需要使用 InPrivate 模式開啟 Skycure 管理主控台。
 
 ## <a name="to-download-the-ios-app-configuration-policy"></a>下載 iOS 應用程式設定原則
 

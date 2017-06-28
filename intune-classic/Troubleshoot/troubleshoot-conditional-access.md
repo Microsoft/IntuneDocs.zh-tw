@@ -1,5 +1,5 @@
 ---
-title: "條件式存取的疑難排解 | Microsoft Docs"
+title: "條件式存取的疑難排解"
 description: "您的使用者無法透過 Intune 條件式存取取得資源的存取權時該怎麼辦。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ ms.lasthandoff: 05/23/2017
 
 為了讓條件式存取能運作，您需要下列條件︰
 
--    裝置必須由 Intune 管理
--    裝置必須向 Azure Active Directory (AAD) 註冊。 在正常情況下，此註冊會在 Intune 註冊期間自動進行
--    裝置必須符合裝置和裝置使用者的 Intune 相容性原則規定。  如果沒有相容性原則，進行 Intune 註冊即可。
--    如果使用者透過裝置的原生郵件用戶端而不是透過 Outlook 來擷取郵件的話，則必須在裝置上啟用 Exchange ActiveSync。     這在 iOS、Windows Phone 及 Android/KNOX 裝置上會自動執行。
--    您的 Intune Exchange Connector 應該會正確設定。 如需詳細資訊，請參閱[為 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
+-   裝置必須由 Intune 管理
+-   裝置必須向 Azure Active Directory (AAD) 註冊。 在正常情況下，此註冊會在 Intune 註冊期間自動進行
+-   裝置必須符合裝置和裝置使用者的 Intune 相容性原則規定。  如果沒有相容性原則，進行 Intune 註冊即可。
+-   如果使用者透過裝置的原生郵件用戶端而不是透過 Outlook 來擷取郵件的話，則必須在裝置上啟用 Exchange ActiveSync。     這在 iOS、Windows Phone 及 Android/KNOX 裝置上會自動執行。
+-   您的 Intune Exchange Connector 應該會正確設定。 如需詳細資訊，請參閱[為 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
 
 在 Azure 管理入口網站和裝置清查報表中，可以檢視每個裝置的這些狀況。
 
@@ -55,16 +55,16 @@ ms.lasthandoff: 05/23/2017
  -  可能需要一些時間，來註冊裝置的相容性資訊。 請稍候幾分鐘，然後再試一次。
  -  對於 iOS 裝置：
      -   使用者建立的現有電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者，他們因為手動設定電子郵件設定檔而不相容，並且會提示使用者移除該設定檔。使用者應該移除其電子郵件設定檔，以便可以部署 Intune 設定檔。 若要避免問題，請指示使用者進行註冊，而不要安裝電子郵件設定檔，並允許 Intune 部署設定檔。
-     -     iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
+     -   iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
 
         一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路設定 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，遵循[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡 Microsoft 支援服務。
 
  - Android 裝置：
-     - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
+    - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
     
-        -    這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up]\(安全啟動) 畫面中選擇 [Require PIN to start device]\(需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
+        -   這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up]\(安全啟動) 畫面中選擇 [Require PIN to start device]\(需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
     
-        -     有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
+        -   有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>原則問題
 
@@ -135,7 +135,7 @@ ms.lasthandoff: 05/23/2017
 
     順利完成為 4 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)。 詳細資料: 清查命令結果 - 同步的裝置: 0 命令識別碼: commandIDGUID' Exchange 健全狀況: '伺服器健全狀況' 名稱: 'PowerShellExchangeServer: <Name=mymailservername>' 狀態: ’已連線','
 
--    搜尋 **quick sync**，在記錄檔中尋找快速 (差異) 同步處理。
+-   搜尋 **quick sync**，在記錄檔中尋找快速 (差異) 同步處理。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next 命令中的例外狀況
 檢查 Exchange Connector 記錄檔中 **Get next 命令**的例外狀況，並將這些資訊提供給 Microsoft 支援服務。
@@ -144,9 +144,9 @@ ms.lasthandoff: 05/23/2017
 
 若要啟用詳細資訊記錄：
 
-1.    開啟 Exchange Connector 追蹤組態檔。 該檔案位於︰ %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml。
-2.    使用下列機碼來尋找 TraceSourceLine：OnPremisesExchangeConnectorService
-3.    將 **SourceLevel** 節點值從 **警告 ActivityTracing** (預設值) 變更為 **Verbose ActivityTracing**，如下所示。
+1.  開啟 Exchange Connector 追蹤組態檔。 該檔案位於︰ %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml。
+2.  使用下列機碼來尋找 TraceSourceLine：OnPremisesExchangeConnectorService
+3.  將 **SourceLevel** 節點值從 **警告 ActivityTracing** (預設值) 變更為 **Verbose ActivityTracing**，如下所示。
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>

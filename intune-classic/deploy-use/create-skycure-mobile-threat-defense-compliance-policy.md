@@ -1,5 +1,5 @@
 ---
-title: "建立 Skycure Mobile Threat Defense 合規性原則 |Microsoft 文件"
+title: "建立 Skycure Mobile Threat Defense 合規性原則"
 description: "在 Intune 傳統主控台中，建立 Skycure Mobile Threat Defense 合規性原則。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 54c36ffaee24ed7643bf8d64c52084d66550b240
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

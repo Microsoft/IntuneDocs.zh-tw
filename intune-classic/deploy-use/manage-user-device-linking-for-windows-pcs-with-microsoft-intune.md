@@ -1,5 +1,5 @@
 ---
-title: "管理 Windows 電腦的使用者裝置連結 | Microsoft Docs"
+title: "管理 Windows 電腦的使用者裝置連結"
 description: "如何將使用者連結到受 Intune 管理的 Windows 電腦。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44edcb211852224e9e9e9a82dd2d097d84b49b74
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9641c40229be52066a97389584e55f2f95bc286d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 電腦的使用者裝置連結
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 
 
 將軟體部署給使用者之前，您必須先將使用者連結到電腦。 您可以將一位使用者連結到多部電腦，但每一部電腦只能連結到一位使用者。 使用者會自動連結到他們在 Intune 中使用公司入口網站註冊的任何電腦。

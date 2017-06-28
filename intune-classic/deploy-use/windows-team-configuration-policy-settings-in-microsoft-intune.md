@@ -1,6 +1,6 @@
 ---
-title: "Windows 小組設定原則設定| Microsoft Docs"
-description: "使用 Microsoft Intune **Windows 10 團隊版一般設定原則**為已註冊的 Windows 10 團隊版裝置進行設定，例如 Microsoft Surface Hub。"
+title: "Windows 團隊版設定原則設定"
+description: "使用 Microsoft Intune **Windows 10 團隊版一般設定原則** 為已註冊的 Windows 10 團隊版裝置進行設定，例如 Microsoft Surface Hub。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 24a64db3a3cf97b679ab0fa739eb6f452499ca63
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6e0f0ea969ed78f2daf482438b056c8b4eb1a316
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
