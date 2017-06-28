@@ -1,5 +1,5 @@
 ---
-title: "使用群組管理使用者和裝置 | Microsoft Docs"
+title: "使用群組管理使用者和裝置"
 description: "使用 [群組] 工作區建立及管理群組。"
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ ms.lasthandoff: 05/23/2017
 -   您想要讓 IT 系統管理員只能將項目部署到特定使用者和裝置
 -   您想要讓 IT 系統管理員只能看到與該系統管理員相關的群組
 
-您可以在 Intune 管理主控台中設定服務管理員的已篩選群組檢視。 如需詳細資訊，請參閱[設定啟動 Microsoft Intune 前的須知事項](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune)。
+您可以在 Intune 管理主控台中設定服務管理員的已篩選群組檢視。 如需詳細資訊，請參閱[設定啟動 Microsoft Intune 前的須知事項](/intune/supported-devices-browsers)。
 
 在您為服務管理員設定已篩選的群組檢視之後，當系統管理員部署軟體或原則，或是執行報表時，系統管理員可以只檢視和選取您指定的群組。 系統管理員也不會在管理主控台的這些頁面上看到狀態資訊：
 

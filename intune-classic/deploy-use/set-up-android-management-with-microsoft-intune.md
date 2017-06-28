@@ -1,5 +1,5 @@
 ---
-title: "設定 Android 管理 | Microsoft Docs"
+title: "設定 Android 管理"
 description: "使用 Microsoft Intune 來支援 Android 和 KNOX Standard 裝置的行動裝置管理 (MDM)。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Android 裝置預設可以在 Intune 中註冊。 若要阻擋註冊 Android 裝
     如需使用者註冊指示，請參閱[在 Intune 註冊 Android 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)。 註冊程序會告知使用者，他們能獲得什麼，以及 IT 系統管理員可以和無法在其裝置上看到什麼。
 
     如需其他使用者工作的資訊，請參閱下列文章：
-  - [使用 Microsoft Intune 之使用者體驗的相關資源](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [使用 Microsoft Intune 之使用者體驗的相關資源](/intune/end-user-educate)
   - [適用於 Android 裝置的使用者指南](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式市集取得公司入口網站。 適用於 Android 的公司入口網站應用程式可在下列市集下載：

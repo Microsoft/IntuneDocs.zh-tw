@@ -1,5 +1,5 @@
 ---
-title: "簡化行動裝置上的電子郵件設定 | Microsoft Docs"
+title: "簡化行動裝置上的電子郵件設定"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署�
 設定電子郵件設定檔之後，您就可以輕鬆地利用 Intune 條件式存取原則，限制對公司電子郵件和 Office 365 服務的存取。 這些原則可讓您確保只有與您在 Intune 中所設定規則相容的裝置，才能存取公司電子郵件和 Office 365 服務。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
-1.    在 Windows、iOS 及 Android 裝置上，自動[設定使用者電子郵件設定檔](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
-2.    使用條件式存取原則[控制公司郵件的存取權](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+1.  在 Windows、iOS 及 Android 裝置上，自動[設定使用者電子郵件設定檔](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
+2.  使用條件式存取原則[控制公司郵件的存取權](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
 ### <a name="additional-information"></a>其他資訊：

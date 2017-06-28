@@ -1,5 +1,5 @@
 ---
-title: "要求與提供 Windows 電腦的遠端協助 | Microsoft Docs"
+title: "對 Windows 電腦要求及提供遠端協助"
 description: "描述針對作為電腦管理的 Windows 電腦提供遠端協助以及遠端啟動電腦的終端使用者和 IT 系統管理員步驟。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。
 

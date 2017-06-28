@@ -1,5 +1,5 @@
 ---
-title: "規劃使用者和裝置群組 | Microsoft Docs"
+title: "規劃您的使用者和裝置群組"
 description: "規劃群組以符合組織的需求。"
 keywords: 
 author: sanchusa
@@ -14,10 +14,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e6727f633d2f74e1f1b018fad5f6765dfa4936b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1362c42cb44848d5ab3a88d08b19d8f6aee195b9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

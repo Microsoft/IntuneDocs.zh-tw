@@ -1,5 +1,5 @@
 ---
-title: "新增已註冊裝置的應用程式 | Microsoft Docs"
+title: "為已註冊的裝置新增 App"
 description: "您必須先將應用程式新增至 Intune，才能部署它。 然後它便會提供於 Intune 主控台中，您可以在其中加以部署和管理。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

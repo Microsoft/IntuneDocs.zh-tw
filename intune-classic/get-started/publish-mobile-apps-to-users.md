@@ -1,5 +1,5 @@
 ---
-title: "將行動應用程式發佈給您的使用者 | Microsoft Docs"
+title: "將行動應用程式發佈給您的使用者"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fea0f98051d1a13a2ace178fe440520f495aaa68
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,9 +35,9 @@ Microsoft Intune 可快速又輕鬆地讓使用者從其選用的裝置存取所
 如果是，Microsoft Intune 可讓您在一個一般入口網站中發佈應用程式 (Office 行動應用程式、內部商企業運應用程式，或其他行動及桌面應用程式)︰[Intune 公司入口網站應用程式或網站](/intune-user-help/company-portal-frequently-asked-questions)。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
-1.    向 Intune 行動裝置管理[註冊裝置](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)。
-2.    將您想要部署到已註冊裝置的[應用程式新增至 Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)。
-3.    [使用 Intune 將應用程式部署](/intune-classic/deploy-use/deploy-apps)到已註冊裝置。
+1.  向 Intune 行動裝置管理[註冊裝置](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)。
+2.  將您想要部署到已註冊裝置的[應用程式新增至 Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)。
+3.  [使用 Intune 將應用程式部署](/intune-classic/deploy-use/deploy-apps)到已註冊裝置。
 
 ### <a name="additional-information"></a>其他資訊：
 如果藉由使用 Intune 的 MAM 功能來完成發佈 Office 行動應用程式，以管理這些應用程式的資料遺失防護，則必須對指派 MAM 原則的每位使用者[指派或移除商務用 Office 365 的授權](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)。

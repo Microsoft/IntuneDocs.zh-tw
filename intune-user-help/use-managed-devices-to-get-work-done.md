@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -38,7 +38,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 您可以使用兩種不同的方式來取得公司入口網站︰
 
 - 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您的 IT 系統管理員也可以為您安裝公司入口網站應用程式。
-- 前往您 IT 系統管理員設定的[公司入口網站](http://portal.manage.microsoft.com)。
+- 前往您 IT 系統管理員設定的[公司入口網站](https://portal.manage.microsoft.com)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>應用程式與網站之間的差異為何？
 公司入口網站應用程式與公司入口網站有一些次要差異，但您可以對兩者執行的大部分工作都相同。 您可以執行的工作：
@@ -100,5 +100,5 @@ Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供
 - [修正 iOS 裝置常見的問題](troubleshoot-your-device-ios.md)
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您的 IT 管理員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](http://portal.manage.microsoft.com)中找到他們的連絡資訊。
+您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您的 IT 管理員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
 

@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則 | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則"
+titleSuffix: Intune on Azure
 description: "使用 Intune 建立及部署 WIP 應用程式保護原則"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 從 Intune 1704 版開始，您可以在行動應用程式管理 (MAM) 中搭配 Windows 10 使用應用程式保護原則，而不需要註冊。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/23/2017
 
 您需要先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。
 
--   深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md)。
+-   深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
 
 此外，您也需要下列各項：
 

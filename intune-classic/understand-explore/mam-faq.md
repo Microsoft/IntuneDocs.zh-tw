@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="mam-basics"></a>MAM 基本概念
 
 
-**什麼是 MAM？** [Intune 行動應用程式管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)指的是 Intune 管理功能套件，可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
+**什麼是 MAM？** [Intune 行動應用程式管理](/intune/app-lifecycle)指的是 Intune 管理功能套件，可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
 
 **MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
@@ -50,12 +50,12 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>您可以使用應用程式保護原則管理的應用程式
 
-**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](../develop/intune-app-sdk.md) 建置或由 [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
+**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](/intune/app-sdk) 建置或由 [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **在可搭配 Intune 的應用程式上，使用應用程式保護原則的基本需求為何？**
-  1. 使用者必須擁有 Azure Active Directory (AAD) 帳戶。 請參閱[新增使用者並提供管理權限給 Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)，以了解如何在 Azure Active Directory 中建立 Intune 使用者。
+  1. 使用者必須擁有 Azure Active Directory (AAD) 帳戶。 請參閱[新增使用者並提供管理權限給 Intune](/intune/users-permissions-add)，以了解如何在 Azure Active Directory 中建立 Intune 使用者。
 
-  2. 使用者必須擁有指派給其 Azure Active Directory 帳戶的 Microsoft Intune 授權。 請參閱[管理 Intune 授權](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)以了解如何將 Intune 授權指派給使用者。
+  2. 使用者必須擁有指派給其 Azure Active Directory 帳戶的 Microsoft Intune 授權。 請參閱[管理 Intune 授權](/intune/licenses-assign)以了解如何將 Intune 授權指派給使用者。
 
   3. 使用者必須隸屬於由應用程式保護原則設為目標的安全群組。 相同的應用程式保護原則必須將已使用的特定應用程式設為目標。 應用程式保護原則可在 [Azure 入口網站](http://portal.azure.com)中的 Intune 主控台中建立與部署。 安全群組目前可以在 [Office 入口網站](http://portal.office.com)中建立。
 

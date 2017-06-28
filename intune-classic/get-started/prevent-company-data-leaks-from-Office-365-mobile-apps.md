@@ -1,5 +1,5 @@
 ---
-title: "防止公司資料從 Office 365 行動應用程式外洩 | Microsoft Docs"
+title: "防止公司資料從 Office 365 行動應用程式外洩"
 description: "使用 Intune 透過行動應用程式管理 (MAM) 原則，協助避免公司資料從 Office 365 行動應用程式或其他企業營運 (LOB) 應用程式外洩，來保護組織的資料。"
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資�
 如果是，Microsoft Intune 可讓您為 iOS 與 Android 上的 Office 365 行動應用程式設定 MAM 原則，包括剪下/複製/貼上限制、防止「另存新檔」、設定 PIN 需求，以及能夠從遠端抹除由 MAM 保護的資料。  如此不需要使用者將其裝置註冊到 MDM 解決方案，也能保護公司資料，同時維持絕佳的 Office 行動應用程式終端使用者體驗。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
-1.    初步了解 [Intune 行動應用程式管理如何運作 /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。
-2.    了解您在 Azure 入口網站中[建立 MAM 原則之前所需執行的作業](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
-3.    使用 Intune [建立和部署 MAM 原則](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
+1.  初步了解 [Intune 行動應用程式管理 (MAM) 如何](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)運作。
+2.  了解您在 Azure 入口網站中[建立 MAM 原則之前所需執行的作業](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
+3.  使用 Intune [建立和部署 MAM 原則](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 
 ### <a name="additional-information"></a>其他資訊：
 - 使用 MAM 啟用應用程式的[終端使用者體驗](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
-- [使用 Intune 準備 MAM 的 LOB 應用程式](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [使用 Intune 準備 MAM 的 LOB 應用程式](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Microsoft Intune 應用程式夥伴清單 &rarr;</a> 提供啟用 MAM 的應用程式。
 
 ## <a name="what-should-i-do-next"></a>下一步該怎麼做？

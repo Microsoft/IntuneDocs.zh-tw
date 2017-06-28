@@ -1,12 +1,12 @@
 ---
-title: "準備好設定適用於 Windows 10 的應用程式保護原則 | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "準備好設定適用於 Windows 10 的應用程式保護原則"
+titleSuffix: Intune on Azure
 description: "設定 Azure AD 中的行動應用程式管理 (MAM) 提供者"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e179f72e4cd99a8cd1bdc017e9965f7d1eb608bf
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 在建立 Windows 10 應用程式保護原則之前，您必須在 Azure AD 中設定 MAM 提供者，以啟用適用於 Windows 10 的行動應用程式管理 (MAM)。 此設定可讓您在使用 Intune 建立新的 Windows 資訊保護 (WIP) 原則時，定義註冊狀態。
 
@@ -59,5 +59,5 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="next-steps"></a>後續步驟
 
-[建立 WIP 應用程式保護原則 (英文)](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[建立 WIP 應用程式保護原則 (英文)](windows-information-protection-policy-create.md)
 

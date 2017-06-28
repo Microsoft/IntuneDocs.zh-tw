@@ -1,5 +1,5 @@
 ---
-title: "尋找每個應用程式 VPN 的套件系列名稱 (PFN) | Microsoft Docs"
+title: "尋找個別應用程式 VPN 的套件系列名稱 (PFN)"
 description: "找到 PFN，以讓您設定每個應用程式 VPN。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: eea3b9e2888f07399c8cda1e81ae8a5318d02d42
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -74,10 +74,10 @@ Get-AppxPackage 的語法如下︰
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>如果電腦上未安裝應用程式，請尋找 PFN。
 
-1.    請移至 https://www.microsoft.com/store/apps。
-2.    在搜尋列中輸入應用程式的名稱。 在這個範例中，搜尋 OneNote。
-3.    選擇應用程式的連結。 請注意，URL 的結尾會有一系列的字母。 在這個範例中，URL 看起來如下︰`https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`。
-4.    在不同的索引標籤中貼上下列 URL，`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 將 `<app id>` 取代為您從 https://www.microsoft.com/store/apps 取得的應用程式識別碼，亦即步驟 3 中 URL 結尾的一串字母。 在這個 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
+1.  請移至 https://www.microsoft.com/store/apps。
+2.  在搜尋列中輸入應用程式的名稱。 在這個範例中，搜尋 OneNote。
+3.  選擇應用程式的連結。 請注意，URL 的結尾會有一系列的字母。 在這個範例中，URL 看起來如下︰`https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`。
+4.  在不同的索引標籤中貼上下列 URL，`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 將 `<app id>` 取代為您從 https://www.microsoft.com/store/apps 取得的應用程式識別碼，亦即步驟 3 中 URL 結尾的一串字母。 在這個 OneNote 範例中，您將貼上：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
 Microsoft Edge 會顯示您想要的資訊；在 Internet Explorer 中，選擇 [開啟] 以查看資訊。 PFN 值會出現在第一行。 以下是此範例的結果︰
 

@@ -1,5 +1,5 @@
 ---
-title: "啟用裝置註冊 | Microsoft Docs"
+title: "啟用裝置註冊"
 description: "設定 MDM 授權單位並啟用對 iOS、Windows、Android 和 Mac 裝置的註冊。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 76d6000c87843d1a785cd1027eb927f565784ca2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 
 2. 在 [MDM 授權單位] 對話方塊中，選擇 [是]。
 
-    ![管理主控台。 將 mdm 設為 Intune](./media/mdmAuthority.png)
+    ![管理主控台。 將 mdm 設為 Intune](../media/intune-mdm-authority.png)
 
 ## <a name="choose-how-to-enroll-devices"></a>選擇註冊裝置的方式
 
