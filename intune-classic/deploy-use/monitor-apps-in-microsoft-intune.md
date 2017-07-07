@@ -1,5 +1,5 @@
 ---
-title: "監視應用程式部署 | Microsoft Docs"
+title: "監視應用程式部署"
 description: "了解如何監視使用 Intune 部署的應用程式。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>在 Microsoft Intune 中監視應用程式部署
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ ms.lasthandoff: 05/23/2017
 在應用程式的 **[軟體內容]** 頁面上，選擇以下其中一個索引標籤︰**[一般]** - 顯示關於應用程式的一般資訊和其安裝狀態；**[裝置]** - 顯示已成功安裝應用程式的目標部署的裝置；以及 **[使用者]** - 顯示其裝置已成功安裝應用程式之目標部署的使用者。
 
 如前所述，您可以使用 [篩選器] 下拉式清單，來設定每個索引標籤所顯示的值。
-

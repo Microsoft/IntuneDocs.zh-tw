@@ -14,15 +14,12 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="retire-devices-from-intune-management"></a>從 Intune 管理中淘汰裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -79,4 +76,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="see-also"></a>請參閱
 [使用完整抹除或選擇性抹除來協助保護資料](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-

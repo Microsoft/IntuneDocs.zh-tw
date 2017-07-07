@@ -1,5 +1,5 @@
 ---
-title: "Lookout Mobile Threat Defense 連接器 | Microsoft Docs"
+title: "Lookout Mobile Threat Defense 連接器"
 description: "使用 Lookout Mobile Threat Defense 連接器與 Intune，根據裝置、網路和應用程式風險，保護對公司資源的存取。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense 連接器與 Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,9 +90,8 @@ Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile 
 
 ## <a name="next-steps"></a>後續步驟
 以下是為了實作此解決方案所必須執行的主要步驟：
-1.    [設定 Lookout 訂閱](setup-your-lookout-mtd-subscription.md)
-2.    [在 Intune 中啟用 Lookout Mobile Threat Defense](enable-lookout-mtd-connection.md)
+1.  [設定 Lookout 訂閱](setup-your-lookout-mtd-subscription.md)
+2.  [在 Intune 中啟用 Lookout Mobile Threat Defense](enable-lookout-mtd-connection.md)
 3.  [設定和部署 Lookout Mobile Threat Defense 應用程式](configure-deploy-lookout-for-work-app.md)
-4.    [設定 Lookout 裝置合規性原則](create-lookout-device-compliance-policy.md)
-5.    [針對 Lookout Mobile Threat Defense 整合進行疑難排解](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-
+4.  [設定 Lookout 裝置合規性原則](create-lookout-device-compliance-policy.md)
+5.  [針對 Lookout Mobile Threat Defense 整合進行疑難排解](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)

@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 註冊屬公司擁有的裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ ms.lasthandoff: 06/08/2017
  - 裝置在 [Azure Active Directory 或 Enterprise Mobility Suite 中註冊為 Windows 10 企業版裝置](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (僅限 Windows 10)。
 
 當裝置標記為公司裝置時，您會在系統管理員主控台中，看到該裝置記錄的 [擁有權] 資料行為 [公司]。 
-

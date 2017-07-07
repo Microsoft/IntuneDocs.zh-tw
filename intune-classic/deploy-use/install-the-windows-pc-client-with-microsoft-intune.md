@@ -1,6 +1,5 @@
 ---
-
-title: "安裝電腦用戶端軟體 | Microsoft Docs"
+title: "安裝電腦用戶端軟體"
 description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: nathbarn
@@ -14,16 +13,16 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用戶端軟體可以使用下列方式安裝：
 
 - 透過 IT 系統管理員，使用下列其中一種方法：手動安裝、群組原則或磁碟映像中所含的安裝
@@ -261,4 +260,3 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 [為用戶端安裝進行疑難排解](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-

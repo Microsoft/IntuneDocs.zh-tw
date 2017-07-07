@@ -1,5 +1,5 @@
 ---
-title: "Intune 裝置註冊的多重要素驗證 | Microsoft Docs"
+title: "Intune 裝置註冊的多重要素驗證"
 description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
 keywords: 
 author: robstackmsft
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dba070ef76de8015b347e760b424a5e28ce6ddec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune 裝置的註冊的多重要素驗證 | Microsoft Docs
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -59,4 +56,3 @@ iOS、Android、Windows 8.1 或更新版本，或 Windows Phone 8.1 或更新的
 > [!IMPORTANT]
 > 
 > 請勿針對 Microsoft Intune 註冊設定 [以裝置為準的存取規則]。
-
