@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 的 Intune 電子郵件設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於設定 Windows Phone 8.1 裝置之電子郵件連線的 Intune 設定。"
+titleSuffix: Intune on Azure
+description: "了解用於設定 Windows Phone 8.1 裝置上電子郵件連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986d02721012ce356b18cf983087b5babd03bb23
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows Phone 8.1 裝置的電子郵件設定檔設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 - **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **連絡人**
     - **行事曆**
     - **工作**
-

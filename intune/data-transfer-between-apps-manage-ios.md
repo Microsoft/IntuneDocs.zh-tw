@@ -1,12 +1,12 @@
 ---
-title: "管理 iOS 應用程式之間的資料傳輸 |Intune Azure 預覽版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版：使用本主題了解如何使用 iOS 的「打開方式...」功能及行動應用程式管理原則來管理應用程式之間的資料傳輸。"
+title: "管理 iOS 應用程式之間的資料傳輸"
+titleSuffix: Intune on Azure
+description: "使用本主題來了解如何使用 iOS「開啟於」功能和行動應用程式管理原則來管理應用程式之間的資料傳輸。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 應用程式之間的資料傳輸
 ## <a name="manage-ios-apps"></a>管理 iOS 應用程式
 保護公司資料包括確定檔案傳輸僅限於您所管理的應用程式。  您可以使用下列方式管理 iOS 應用程式：
@@ -36,7 +33,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 ##  <a name="using-app-protection-with-ios-apps"></a>對 iOS 應用程式施以應用程式保護
 應用程式保護原則與 iOS 的**打開方式管理**功能一起使用，可以下列方式保護公司資料︰
 
--   **員工擁有但未交由任何 MDM 解決方案管理的裝置**：您可以將應用程式保護原則設定為 [Allow app to transfer data to only managed apps]\(只允許應用程式將資料傳送至受管理的應用程式)。 終端使用者將無法在不受原則管理的應用程式中開啟受保護的檔案。
+-   **員工擁有但未交由任何 MDM 解決方案管理的裝置**：您可以將應用程式保護原則設定設為 [Allow app to transfer data to only Policy Managed apps] \(只允許應用程式將資料傳送至受原則管理的應用程式\)。 受原則管理應用程式中的「開啟於」行為只會將其他受原則管理的應用程式呈現為共用選項。 如果使用者嘗試在原生郵件中將來自 OneDrive 之受原則保護的檔案當作附件傳送，則該檔案將會無法讀取。
 
 -   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要允許設有應用程式保護原則之應用程式間的資料傳輸，請啟用 [Allow app to transfer data to only managed apps]\(只允許應用程式將資料傳送至受管理的應用程式) 設定。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。   
 
@@ -108,4 +105,3 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 ### <a name="see-also"></a>請參閱
 [什麼是 Intune 應用程式保護原則](app-protection-policy.md)
-

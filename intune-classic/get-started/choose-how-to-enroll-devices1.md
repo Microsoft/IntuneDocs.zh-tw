@@ -14,15 +14,12 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7d1e5fb629aaac768aefabad90caf98fc1cee37a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,4 +36,3 @@ ms.lasthandoff: 06/08/2017
 - **使用者擁有的裝置** - "BYOD” (攜帶您自己的裝置) 註冊 - 使用者可以在裝置上安裝 Intune 公司入口網站應用程式然後進行註冊，以存取公司資源 (例如電子郵件、公司入口網站、公司資料和支援)。  
 
 - **公司擁有的裝置** - 根據組織需求和所管理裝置的類型，Intune 可以透過各種方式來註冊公司擁有的裝置 (COD)。
-

@@ -1,7 +1,7 @@
 ---
-title: "如何將 iOS 市集應用程式新增至 Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何將 iOS 市集應用程式新增至 Intune。"
+title: "如何將 iOS 市集應用程式新增至 Intune"
+titleSuffix: Intune on Azure
+description: "了解如何將 iOS 市集應用程式新增至 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d6da2bf1ebab609b8e9be4bec998d2f081600b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 84c5b7c2d849fb39a9466d5b92eb4f2a4a411808
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何將 iOS 市集應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="before-you-start"></a>開始之前
 
@@ -63,4 +61,3 @@ ms.lasthandoff: 05/23/2017
 3. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。
 
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
-

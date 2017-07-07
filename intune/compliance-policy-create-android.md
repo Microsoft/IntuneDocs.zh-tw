@@ -1,7 +1,7 @@
 ---
 title: "如何建立 Android 的合規性政策"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何為 Android 裝置建立合規性政策。"
+titleSuffix: Intune on Azure
+description: "了解如何為 Android 裝置建立合規性政策。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>如何在 Intune Azure 預覽版入口網站中為 Android 裝置建立合規性政策
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-在 Intune Azure 預覽版入口網站中，為每個平台建立裝置合規性政策。 
+在 Intune Azure 入口網站中，為每個平台建立裝置合規性政策。 
 
 - 如需深入了解什麼是合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)主題。
 - 如需了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)主題。
@@ -134,4 +131,3 @@ ms.lasthandoff: 05/23/2017
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

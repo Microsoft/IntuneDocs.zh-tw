@@ -1,7 +1,7 @@
 ---
 title: "監視 Intune 裝置合規性政策"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何監視裝置合規性政策。"
+titleSuffix: Intune on Azure
+description: "了解如何監視裝置合規性政策。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -123,8 +121,6 @@ ms.lasthandoff: 05/23/2017
 
 如果按下 [更新] 按鈕，飛出視窗隨即關閉，並根據選取的篩選準則更新結果。
 
-![篩選更新按鈕](./media/idc-5.png)
-
 ##### <a name="device-details"></a>裝置詳細資訊
 
 在裝置上按一下即可開啟所選裝置的 [裝置刀鋒視窗]。 這會提供該裝置套用之裝置合規性政策設定的更多詳細資料。
@@ -154,4 +150,3 @@ ms.lasthandoff: 05/23/2017
 當您按一下 [設定合規性] 圖格，再按一下其中一個裝置合規性政策設定，便可以看到裝置合規性政策設定已鎖定目標的每個裝置的 [合規性狀態]、[使用者的電子郵件別名]、[裝置型號]、[位置]。
 
 ![設定合規性圖格](./media/idc-11.png)
-

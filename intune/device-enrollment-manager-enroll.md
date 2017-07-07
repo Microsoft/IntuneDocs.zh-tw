@@ -1,38 +1,36 @@
 ---
 title: "註冊裝置 - 裝置註冊管理員"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版：使用裝置註冊管理員帳戶，於 Intune 中註冊裝置。 "
+titleSuffix: Intune on Azure
+description: "使用裝置註冊管理員帳戶，在 Intune 中註冊裝置。 \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: aded0826c2628e4dc72859387fbe4a76d683db9e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用裝置註冊管理員註冊裝置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 *裝置註冊管理員* (DEM) 帳戶是特殊的使用者帳戶，最多可以註冊 1,000 部裝置。 將現有的使用者加入 DEM 帳戶，能夠賦予他們特殊的 DEM 功能。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。  
 
 使用者必須存在於 Azure 入口網站才能新增為裝置註冊管理員。 為了取得最佳安全性，DEM 使用者不應該同時為 Intune 管理員。
 
 >[!NOTE]
->DEM 註冊方法不可與其他這些註冊方法一併使用︰[Apple Configurator 設定助理](apple-configurator-setup-assistant-enroll-ios.md)[Apple Configurator 直接註冊](apple-configurator-direct-enroll-ios.md)或[裝置註冊方案](device-enrollment-program-enroll-ios.md)。 
+>DEM 註冊方法不可與其他這些註冊方法一併使用︰[Apple Configurator 搭配設定助理](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator 搭配直接註冊](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) 或[裝置註冊計劃 (DEP)](device-enrollment-program-enroll-ios.md)。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
@@ -50,17 +48,13 @@ DEM 使用者可以︰
 
 使用裝置註冊管理員帳戶所註冊的裝置具有下列限制︰
 
-  - 沒有特定的裝置「使用者」。 因此不會有電子郵件或公司資料的存取權。 不過，仍可使用 VPN 等為裝置應用程式提供資料的存取權。
-
-  - 因為這些都是個別使用者案例，所以沒有條件式存取。
-
-  - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員有這項功能，但 DEM 使用者沒有。
-
+  - 不具每位使用者的存取權。 由於裝置並未指派使用者，因此，裝置不具任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
+  - 因為這些案例均屬每位使用者，所以沒有條件式存取。
+  - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以執行此動作，但 DEM 使用者不能。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
- 
   - 因為進行應用程式管理需要每位使用者的 Apple ID，因此使用者無法使用 Apple 大量採購計劃 (VPP) 應用程式。
- 
-  - (僅限 iOS) 如果使用 DEM 註冊 iOS 裝置，您就無法使用 Apple Configurator 或 Apple 裝置註冊方案 (DEP) 來註冊裝置。
+  - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。
+  - 每部裝置都需要裝置授權。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 
 > [!NOTE]
@@ -78,31 +72,28 @@ DEM 使用者可以︰
 
 4.  在 [新增使用者] 刀鋒視窗中，輸入 DEM 使用者的使用者主體名稱，然後選取 [新增]。 DEM 隨即會新增至 DEM 使用者清單。
 
+## <a name="permissions-for-dem"></a>DEM 的權限
+
+需要具備全域或 Intune 服務管理員 Azure AD 角色，才能執行 DEM 註冊工作。 儘管 RBAC 權限列於且適用於自訂使用者角色之下，但也需要有這些角色才能查看所有 DEM 使用者。 未指派全域管理員或 Intune 服務管理員角色，但具備裝置註冊管理員角色之讀取權限的使用者，只能看到他們所建立的 DEM 使用者。 支援這些功能的 RBAC 角色將會在未來宣布。
+
+若未針對使用者指派全域管理員或 Intune 服務管理員角色，但他們具備已針對所指派之裝置註冊管理員角色啟用的讀取權限，則將只能看到他們所建立的 DEM 使用者。
+
 ## <a name="remove-a-device-enrollment-manager"></a>移除裝置註冊管理員
 
 移除裝置註冊管理員並不會影響已註冊的裝置。 移除裝置註冊管理員時：
 
--   從 DEM 使用者清單中移除使用者，並不會影響已註冊的裝置，且可繼續完整管理已註冊的裝置。
-
+-   已註冊的裝置不會受到影響，仍可全面管理。
 -   移除的裝置註冊管理員帳戶認證仍持續有效。
-
 -   移除裝置註冊管理員依然無法抹除或淘汰裝置。
-
--   除非達到 Intune 系統管理員所設定的每台裝置上限，否則移除的裝置註冊管理員無法註冊其他裝置。
+-   已移除的裝置註冊管理員可註冊的裝置數目，不得超過 Intune 管理員所設定的每位使用者限制。
 
 **移除裝置註冊管理員**
 
 1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
-
 2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
-
 3. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [移除]。
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>檢視裝置註冊管理員的內容
 
-1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
-
-2. 在 Intune 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
-
-3. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [內容]。
-
+1. 在 Intune 入口網站中，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
+2. 在 [裝置註冊管理員] 刀鋒視窗上，於 DEM 使用者上按一下滑鼠右鍵，然後選取 [內容]。

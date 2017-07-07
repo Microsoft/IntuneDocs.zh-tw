@@ -1,5 +1,5 @@
 ---
-title: "管理裝置上的 iOS 啟用鎖定 | Microsoft Docs"
+title: "管理裝置上的 iOS 啟用鎖定"
 description: "Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 22ccccefae44190ffb2d65bdf475eaef1f9b8bd2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>使用 Microsoft Intune 的啟用鎖定略過協助保護 iOS 裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -106,4 +103,3 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
 ### <a name="see-also"></a>請參閱
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)
 [透過遠端鎖定或密碼重設來協助保護您的裝置](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-

@@ -1,12 +1,12 @@
 ---
 title: "如何設定 Intune Wi-Fi 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何在管理的裝置上使用 Intune 設定 Wi-Fi 連線。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 在您管理的裝置上設定 Wi-Fi 連線。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune Wi-Fi 設定檔，將無線網路設定指派給您組織中的使用者與裝置。 當您指派 Wi-Fi 設定檔時，使用者不需要自行設定，即可存取您公司的 Wi-Fi 網路。
 
@@ -39,6 +36,7 @@ ms.lasthandoff: 05/23/2017
 Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
+- Android for Work
 - iOS 8.0 和更新版本
 - macOS (Mac OS X 10.9 及更新版本)
 
@@ -49,13 +47,14 @@ Wi-Fi 設定檔支援下列裝置平台：
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>建立內含 Wi-Fi 設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為 Wi-Fi 設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 您目前可為 Wi-Fi 裝置設定，選擇下列平台之一︰
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 及更新版本 (匯入設定檔)**
@@ -63,7 +62,7 @@ Wi-Fi 設定檔支援下列裝置平台：
     >[!TIP]
     >使用 [Wi-Fi Basic] 可提供基本功能，像是網路名稱以及 SSID。 您可利用 **Wi-Fi Enterprise** 提供更進階的資訊，像是「可延伸的驗證通訊協定 (EAP)」(如果您的 Wi-Fi 網路使用此)。 您可利用 **Wi-Fi 匯入** (適用於 Windows 8.1 與 Windows 10)，將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
 7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android 設定](wi-fi-settings-android.md)
+    - [Android 和 Android for Work 設定](wi-fi-settings-android.md)
     - [iOS 設定](wi-fi-settings-ios.md)
     - [macOS 設定](wi-fi-settings-macos.md)
     - [Windows Phone 8.1 設定](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +70,3 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
-
-

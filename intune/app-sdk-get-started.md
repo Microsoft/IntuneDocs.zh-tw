@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
 本指南可協助您使用 Microsoft Intune 快速啟用行動應用程式的應用程式保護原則。 若能先了解 [Intune App SDK 概觀](app-sdk.md)中說明的 Intune App SDK 優點，可能會對您很有幫助。
@@ -139,4 +136,3 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 * 可讀取 **.eps** 檔案的映像操作應用程式，或可讀取 **.ai** 檔案的 Adobe 應用程式。
 
 * 您可以在 Microsoft Intune GitHub 找到 [Intune app badge assets and guidelines](https://github.com/msintuneappsdk/intune-app-partner-badge) (Intune 應用程式徽章資產和指導方針)。
-

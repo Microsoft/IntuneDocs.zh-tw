@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>您的 Android 裝置已進行 Root 破解，因此無法連線
 
 您被引導到此處是因為您看見告知您裝置已進行 _Root_ 破解的訊息。
@@ -39,4 +35,3 @@ ms.lasthandoff: 05/23/2017
 - 您的裝置製造商在您的裝置上安裝了被 Root 破解偵測軟體判斷為安全性風險的應用程式。 在這種情況下，您必須連絡 IT 系統管理員以取得協助。 如需連絡資訊，請移至[公司入口網站](http://portal.manage.microsoft.com)。
 
 如果您已自行將裝置進行 Root 破解，您必須反轉程序並將裝置還原到未 Root 破解的狀態。
-

@@ -1,12 +1,12 @@
 ---
 title: "裝置註冊疑難排解"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何疑難排解裝置註冊的問題。"
+titleSuffix: Intune on Azure
+description: "了解如何針對裝置註冊進行疑難排解。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主題提供裝置註冊問題的疑難排解建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)，以尋找更多方法來取得協助。
 
@@ -102,8 +99,8 @@ ms.lasthandoff: 05/23/2017
 
 1.  確認您要使用的 Intune 服務 (亦即 Intune、Office 365 或 Intune 的 System Center Configuration Manager) 類型已正確設定了 MDM 授權單位。 如需指示，請參閱[設定行動裝置管理授權單位](mdm-authority-set.md)。
 
-    > [!NOTE]
-    > 設定 MDM 授權單位之後，您只能遵循[如何取得 Microsoft Intune 支援](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)中所述來連絡支援人員以進行變更。
+    > [!NOTE]    
+    > 在 Configuration Manager 1610 版或更新版本及 Microsoft Intune 1705 版中，您可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資訊，請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 2.  確認使用者的認證已正確地與 Azure Active Directory 同步處理，方式是檢查其 UPN 是否符合帳戶入口網站中的 Active Directory 資訊。
     如果 UPN 與 Active Directory 資訊不符：
@@ -222,16 +219,16 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
 
-1.    在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] 按鈕，選擇 [執行] 並輸入 **certlm.msc**，以啟動本機電腦的「憑證管理」主控台。
-2.    展開 [個人] 並選取 [憑證]。
-3.    尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
-4.    選取 [憑證路徑] 索引標籤來查看憑證的父憑證。
-5.    在每個父憑證上，選取 [檢視憑證]。
-6.    按一下 [詳細資料] 索引標籤，然後按一下 [複製到檔案]。
-7.    按照精靈的提示將憑證的公開金鑰匯出或儲存到想要的檔案位置。
-8.    以滑鼠右鍵按一下 [憑證]，選取 [所有工作] > [匯入]並按照精靈的提示進行，以將在步驟 3 匯出的父憑證匯入到 Computer\Personal\Certificates。
-9.    重新啟動 AD FS 伺服器。
-10.    在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
+1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] 按鈕，選擇 [執行] 並輸入 **certlm.msc**，以啟動本機電腦的「憑證管理」主控台。
+2.  展開 [個人] 並選取 [憑證]。
+3.  尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
+4.  選取 [憑證路徑] 索引標籤來查看憑證的父憑證。
+5.  在每個父憑證上，選取 [檢視憑證]。
+6.  按一下 [詳細資料] 索引標籤，然後按一下 [複製到檔案]。
+7.  按照精靈的提示將憑證的公開金鑰匯出或儲存到想要的檔案位置。
+8.  以滑鼠右鍵按一下 [憑證]，選取 [所有工作] > [匯入]並按照精靈的提示進行，以將在步驟 3 匯出的父憑證匯入到 Computer\Personal\Certificates。
+9.  重新啟動 AD FS 伺服器。
+10. 在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
 使用者現在應該能夠在 Android 裝置上登入公司入口網站。
 
 **驗證憑證已正確安裝**：
@@ -255,7 +252,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 **解決方式︰**與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
 
-當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步處理以重新連線，使用者會看到**正在嘗試同步...** 內嵌的通知。 
+當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步處理以重新連線，使用者會看到**正在嘗試同步...** 內嵌的通知。
 
   ![正在嘗試同步通知](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +260,11 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
   ![同步處理成功通知](./media/ios_cp_app_sync_successful_notification.png)
 
-如果同步處理失敗，使用者會在 iOS 公司入口網站應用程式中看到**無法同步**內嵌通知。 
+如果同步處理失敗，使用者會在 iOS 公司入口網站應用程式中看到**無法同步**內嵌通知。
 
   ![無法同步通知](./media/ios_cp_app_unable_to_sync_notification.png)
 
-若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定] 按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。 
+若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定] 按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。
 
   ![公司存取設定畫面](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +310,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 3. 重新啟動 SMS Executive 服務，或重新啟動 CM 伺服器。
 
 4. 取得新的 APN 憑證並予以上傳。 若要執行此動作，請在 Configuration Manager 左窗格中的 Intune 訂閱上按一下滑鼠右鍵。 選取 [建立 APN 憑證要求] 並遵循指示。
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
 
 ### <a name="mobile-devices-disappear"></a>行動裝置消失
@@ -362,7 +359,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
     > [!IMPORTANT]
     > 此節、方法或工作包含告訴您如何修改登錄的步驟。 然而，如果您不當修改登錄，可能會發生嚴重的問題。 因此，請務必小心遵循下列步驟。 為加強保護，請在修改登錄之前先加以備份。 之後如果發生問題，您還可以還原登錄。
-    > 如需如何備份及還原登錄的詳細資訊，請參閱[如何備份及還原 Windows 中的登錄](https://support.microsoft.com/en-us/kb/322756)。
+    > 如需如何備份及還原登錄的詳細資訊，請參閱[如何備份及還原 Windows 中的登錄](https://support.microsoft.com/kb/322756)。
 
 ## <a name="general-enrollment-error-codes"></a>常見註冊錯誤代碼
 
@@ -382,7 +379,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 |0x80043008、0x80CF3008|無法啟動 Microsoft Online Management Updates 服務。|連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)所述)。|
 |0x80043009、0x80CF3009|用戶端電腦已註冊到服務中。|您必須先淘汰用戶端電腦，才能重新將它註冊到服務中。|
 |0x8004300B、0x80CF300B|用戶端軟體安裝套件無法執行，因為不支援用戶端上執行的 Windows 版本。|Intune 不支援用戶端電腦上執行的 Windows 版本。|
-|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 在為 DLL 疑難排解時，您可能必須使用 [Microsoft 支援服務 KB198038：實用的封裝與部署工具](https://support.microsoft.com/en-us/kb/198038)中所述的工具。|
+|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 在為 DLL 疑難排解時，您可能必須使用 [Microsoft 支援服務 KB198038：實用的封裝與部署工具](https://support.microsoft.com/kb/198038)中所述的工具。|
 |0x80cf0440|與服務端點的連線已終止。|試用或付費帳戶已暫止。 建立新的試用或付費帳戶，然後重新註冊。|
 
 
@@ -390,4 +387,3 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 ### <a name="next-steps"></a>後續步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)中所述)。
-

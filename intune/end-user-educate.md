@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何指導使用者使用 Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保護公司資料。 有許多步驟可確保成功部署，包括透過[免費試用](app-sdk.md)來評估 Intune。
 
@@ -57,15 +56,15 @@ __這可能會對我的終端使用者造成什麼不便？__ 安裝應用程式
 
 * **Android**
   * [在 Intune 上使用 Android 裝置](/intune-user-help/using-your-android-device-with-intune)
-  * [Android 使用者如何取得其應用程式](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Android 使用者如何取得其應用程式](end-user-apps-android.md)
 
 * **iOS**
   * [在 Intune 上使用 iOS 裝置](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [iOS 使用者如何取得其應用程式](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [iOS 使用者如何取得其應用程式](end-user-apps-ios.md)
 
 * **Windows**
   * [在 Intune 上使用 Windows 裝置](/intune-user-help/using-your-windows-device-with-intune)
-  * [Windows 使用者如何取得其應用程式](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Windows 使用者如何取得其應用程式](end-user-apps-windows.md)
 
 * __事先告知。__ 清楚地告訴您的使用者您要管理他們裝置上的什麼內容。 告訴他們您要收集的資料類型，以及收集的原因。 告知他們您打算如何使用所有資產資料。 [Microsoft 相信您有權盡可能知道我們如何處理雲端中的客戶資料](https://www.microsoft.com/trustcenter/about/transparency)，並且我們相信這個觀點可以大幅提升終端使用者對 Intune 的滿意度。
 
@@ -73,4 +72,3 @@ __這可能會對我的終端使用者造成什麼不便？__ 安裝應用程式
 > 透明度，在任何可能之處，都是部署成功的基礎。
 
 您想要結合信任與經過精心設計的相容性原則，以確定終端使用者知道，即使您「可以」查看特定類型的個人資料，您也「不想」，以及您侵犯他們的隱私權時可能要負的責任。 與您的法務和人事部門一起精心製作一份聲明，對特別難相處的員工可能有效。
-

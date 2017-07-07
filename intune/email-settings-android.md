@@ -1,12 +1,12 @@
 ---
-title: "Android 裝置的 Intune 電子郵件設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於設定 Android 裝置上電子郵件連線的 Intune 設定。"
+title: "Android 和 Android for Work 裝置的 Intune 電子郵件設定"
+titleSuffix: Intune on Azure
+description: "了解可用於設定 Android 裝置上電子郵件連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +15,57 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1f87917f4441582fcdbbc3829b3350df492dfc11
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c1f80e09241609b420a186011ff8dd059f0dd8df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的電子郵件設定檔設定
 
-# <a name="email-profile-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的電子郵件設定檔設定
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+身為 Intune 系統管理員，您可以建立電子郵件設定並將其指派給下列 Android 裝置：
+- [Android Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
+- [Android for Work](#android-for-work-email-settings)
 
-
-
+## <a name="android-samsung-knox-standard-email-settings"></a>Android Samsung KNOX Standard 電子郵件設定
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
-- **來自 AAD 的使用者名稱屬** -Active Directory (AD) 或 Azure AD 中的這個屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，例如 user1 或 user1@contoso.com。
-- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
+- **來自 AAD 的使用者名稱屬性** - 此名稱為 Active Directory (AD) 或 Azure AD 中的屬性，會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，例如 user1 或 user1@contoso.com。
+- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
 - **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證]作為電子郵件設定檔所使用的驗證方法。
-    - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
+    - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
-## <a name="security-settings"></a>安全性設定
+### <a name="security-settings"></a>安全性設定
 
 - **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
 - **S/MIME** - 使用 S/MIME 加密傳送外寄電子郵件。
-    - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
+    - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
-## <a name="synchronization-settings"></a>同步處理設定
+### <a name="synchronization-settings"></a>同步處理設定
 
 - **從要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
-- **同步排程** - 選取裝置用來同步處理 Exchange Server 資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或 [手動 (使用此方式，裝置使用者必須啟動同步處理)]。
+- **同步排程** - 選取裝置用來同步處理 Exchange Server 資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時同步處理資料，或 [手動] (使用此方式，裝置使用者必須啟動同步處理)。
 
-## <a name="content-sync-settings"></a>內容同步設定
+### <a name="content-sync-settings"></a>內容同步設定
 
 - **要同步處理的內容類型** - 選取想要同步至裝置的內容類型來源：
     - **連絡人**
     - **行事曆**
     - **工作**
 
+## <a name="android-for-work-email-settings"></a>Android for Work 電子郵件設定
+
+- **電子郵件應用程式** - 選取 [Gmail] 或 [Nine Work]
+- **電子郵件伺服器** - Exchange 伺服器的主機名稱。
+- **來自 AAD 的使用者名稱屬性** - 此名稱是 Active Directory (AD) 或 Azure AD 中的屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，例如 user1 或 user1@contoso.com。
+- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [使用者主體名稱]，使用完整主體名稱作為電子郵件地址或**使用者名稱**。
+- **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證]作為電子郵件設定檔所使用的驗證方法。
+    - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
+- **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **從要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
+- **要同步處理的內容類型** (僅限 Nine Work) - 選取想要同步至裝置的內容類型來源：
+    - **連絡人**
+    - **行事曆**
+    - **工作**

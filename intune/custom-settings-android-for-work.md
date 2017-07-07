@@ -1,7 +1,7 @@
 ---
 title: "針對 Android for Work 的 Intune 自訂設定檔設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何針對 Android for Work 裝置建立 Intune 自訂設定檔設定。"
+titleSuffix: Intune on Azure
+description: "了解如何針對 Android for Work 裝置建立 Intune 自訂設定檔設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: cd81e911dd1ab7c5d166ee14f2e184ebd54a18df
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>針對 Android for Work 裝置建立 Intune 自訂設定檔設定
 
 使用 Intune Android for Work 自訂設定原則來指派 OMA-URI 設定，以用於控制 Android for Work 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。

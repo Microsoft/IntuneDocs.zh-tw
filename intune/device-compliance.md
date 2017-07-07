@@ -1,7 +1,7 @@
 ---
 title: "裝置合規性"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰使用本主題深入了解 Microsoft Intune 的裝置合規性"
+titleSuffix: Intune on Azure
+description: "使用本主題來了解 Microsoft Intune 中的裝置合規性"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Intune 中的裝置合規性是什麼？
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Intune Azure 預覽版的裝置合規性是什麼？
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 中的裝置合規性政策定義裝置必須符合才能被 Intune 和 EMS 條件式存取原則視為符合規範的規則與設定。 您也可以使用裝置合規性政策，來監視和修復裝置的合規性問題。 
 
@@ -79,7 +76,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 您可以對使用者部署合規性政策。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。 如需深入了解行動裝置在部署原則之後原則生效所需的時間，請參閱您裝置上的管理設定和功能。
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune 傳統管理主控台與Intune Azure 預覽版入口網站
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Intune 傳統管理主控台與Azure 入口網站上的 Intune
 
 若您一直以來都是使用 Intune 傳統管理主控台，在轉換到 Azure 入口網站的新裝置合規性政策工作流程之前，請留意下列差異︰
 
@@ -89,7 +86,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>從 Intune 傳統主控台移轉至 Intune Azure Preview 入口網站
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>從 Intune 傳統主控台移轉至 Azure 入口網站上的 Intune
 
 在 [Intune 傳統主控台](https://manage.microsoft.com)中建立的裝置合規性政策不會出現在新的 [Intune Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者做為目標，並可透過 Intune 傳統主控台管理。
 
@@ -103,4 +100,3 @@ Remember that you need to implement conditional access policies in addition to c
 <!---### See also
 
 Conditional access--->
-

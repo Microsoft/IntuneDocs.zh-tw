@@ -1,5 +1,5 @@
 ---
-title: "部署 Lookout for Work 應用程式 | Microsoft Docs"
+title: "部署 Lookout for Work 應用程式"
 description: "設定及部署適用於 Android 的 Lookout for Work 應用程式。"
 author: andredm7
 ms.author: andredm
@@ -13,15 +13,12 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95f7c782558f98d5be3a89d24b9e9721a7bd40c0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5d4f496709a8607b0d6d473355c96e8fc502838b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-lookout-for-work-app"></a>設定及部署 Lookout for Work 應用程式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,12 +27,12 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="android-google-play-store-app"></a>Android (Google Play 商店應用程式)
 
-1.    在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)中，移至 [應用程式]，然後選擇 [新增應用程式]。
-2.    在發行者的 [軟體安裝程式] 頁面上，選擇 [外部連結]，然後指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
+1.  在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)中，移至 [應用程式]，然後選擇 [新增應用程式]。
+2.  在發行者的 [軟體安裝程式] 頁面上，選擇 [外部連結]，然後指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >請勿按下要求 Managed Browser 的方塊。
 
-3.    在 [軟體描述] 頁面上，填入下列資訊：
+3.  在 [軟體描述] 頁面上，填入下列資訊：
   * **發行者**︰Lookout 行動安全性
   * **名稱**︰Lookout for Work
   * **描述**︰Lookout 提供最佳行動裝置威脅保護，以確保您的裝置安全無虞。 當裝置上安裝 Lookout 應用程式時，該應用程式可為您的裝置提供威脅保護，並在找到任何威脅時，通知您及您公司的系統管理員。
@@ -96,4 +93,3 @@ https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 當使�
 
 ## <a name="next-steps"></a>後續步驟
 * [在 Intune 中建立 Lookout 裝置合規性原則](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
-

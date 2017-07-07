@@ -1,12 +1,12 @@
 ---
 title: "Samsung KNOX 的 Intune 原則允許/封鎖應用程式"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版：建立自訂定檔可允許及封鎖 Samsung KNOX Standard 裝置的應用程式。"
+titleSuffix: Intune on Azure
+description: "建立自訂設定檔可允許及封鎖 Samsung KNOX Standard 裝置的應用程式。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dea090e108d5ea023dc64d8d168b25d30b688cb2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]使用此主題中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]使用此主題中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
 
 - 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
 - 裝置使用者可從 Google Play 市集安裝的應用程式清單。 只可以安裝您列出的應用程式。 無法從市集安裝其他應用程式。
@@ -35,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-an-allowed-or-blocked-app-list"></a>建立已允許或已封鎖的應用程式清單
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 2. 在設定檔刀鋒視窗清單中，選擇 [建立設定檔]。
@@ -49,9 +46,9 @@ ms.lasthandoff: 05/23/2017
 
 - **名稱** - 輸入 **PreventStartPackages**。
 - **描述** - 輸入選用描述，例如「封鎖而無法執行的應用程式清單」。
--     **資料類型** - 從下拉式清單中選擇 [字串]。
--     **OMA URI** - 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--     **值** - 輸入您允許的應用程式套件名稱之清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+-   **資料類型** - 從下拉式清單中選擇 [字串]。
+-   **OMA URI** - 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-   **值** - 輸入您允許的應用程式套件名稱之清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
 - **名稱** - 輸入 **AllowInstallPackages**。
@@ -69,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 
 
 <!---## Assign the custom profile--->
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司入口網站重設您的 Windows 裝置會發生什麼情況？
 
 當您使用公司入口網站應用程式或[公司入口網站](reset-erase-your-device-cpwebsite.md)重設您的 Windows 裝置時，它會將裝置重設為其原廠設定，並刪除所有的應用程式、設定和資料，包括您的個人資料。 每個裝置上發生的情況取決於您擁有之裝置的類型以及您使用該裝置的方式 (如下表所述)。 如需如何重設遺失或遭竊裝置的指示，請參閱[重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)。
@@ -38,4 +33,3 @@ ms.lasthandoff: 05/23/2017
 |個人電腦和筆記型電腦|**Windows 8.1 及 Windows 8**<br />您不能重設執行 Windows 8 或 Windows 8.1 的電腦，除非該電腦僅供電子郵件用途。<br /><br />**Windows 7 或 Windows Vista**<br />您不能重設執行 Windows 7 (含) 以前版本的電腦。|
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

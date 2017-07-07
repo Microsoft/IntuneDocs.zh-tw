@@ -1,5 +1,5 @@
 ---
-title: "透過報表來了解作業 | Microsoft Docs"
+title: "透過報表來了解作業"
 description: "建立並管理有關您組織中軟體、硬體及軟體授權資訊的報告。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>透過報表來了解 Microsoft Intune 作業
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 |**儲存**|在 [建立新報表]  頁面上，每一位使用者最多可儲存 100 份報表。 依照您的需求設定報表參數，然後選擇 [儲存]；若要使用不同名稱則選擇 [另存新檔]。|
 |**載入**|在 [建立新報表] 頁面上，選擇 [載入] 以擷取之前儲存的報表參數組。|
 |**刪除**|在 [報表] 工作區中，選取想要的報表類型並選擇 [載入]。 然後在報表清單中，選擇報表旁的刪除 (x) 圖示。|
-
 
 

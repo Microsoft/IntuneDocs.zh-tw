@@ -1,7 +1,7 @@
 ---
 title: "設定 Intune 裝置限制設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何在管理的裝置上使用 Intune 進行設定與功能的設定。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune，設定您管理之裝置上的設定與功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定裝置限制設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 裝置限制可讓您控制各種類別中，您所管理的各種設定及功能，包括安全性、瀏覽器、硬體及資料共用設定。 例如，您可以建立裝置限制設定檔，禁止 iOS 裝置的使用者存取裝置相機 。
 
@@ -35,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>建立內含裝置限制設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
@@ -67,5 +64,4 @@ ms.lasthandoff: 05/23/2017
 在此概略範例中，您將建立會封鎖而無法使用 Android 裝置上內建相機應用程式的裝置限制原則。
 
 ![如何停用 Android 裝置上的相機](./media/disable-android-camera.png)
-
 

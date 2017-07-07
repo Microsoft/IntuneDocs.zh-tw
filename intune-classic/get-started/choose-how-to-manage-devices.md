@@ -1,5 +1,5 @@
 ---
-title: "選擇如何管理裝置 | Microsoft Docs"
+title: "選擇如何管理裝置"
 description: "了解您可以註冊和管理裝置的各種方式。"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>選擇如何管理裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ ms.lasthandoff: 05/23/2017
 - Endpoint Protection 與 Windows 防火牆
 - 使用 TeamViewer 軟體為使用者提供遠端協助
 
-如需各方法提供的管理功能詳細清單，請參閱[行動裝置管理功能](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)。
-如需 Intune 支援的裝置與電腦相關資訊，請參閱[支援的行動裝置與電腦](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices)。
+如需各個方法提供的管理功能詳細清單，請參閱[行動裝置管理/intune/supported-devices-browserssoft-intune)。
+如需 Intune 支援的裝置與電腦相關資訊，請參閱[支援的行動裝置與電腦](/intune/supported-devices-browsers#intune-supported-devices)。
 
 ## <a name="next-steps"></a>後續步驟
 
 - [選擇如何註冊行動裝置](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [使用 Intune 電腦用戶端軟體管理 Windows 電腦](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [搭配 Microsoft Intune 的 Exchange ActiveSync 行動裝置管理](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
-

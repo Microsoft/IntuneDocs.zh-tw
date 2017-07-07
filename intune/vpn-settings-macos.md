@@ -1,7 +1,7 @@
 ---
-title: "macOS 裝置的 Intune VPN 設定 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於設定 macOS 裝置之 VPN 連線的 Intune 設定。"
+title: "macOS 裝置的 Intune VPN 設定"
+titleSuffix: Intune on Azure
+description: "了解可用於設定 macOS 裝置上 VPN 連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4737fc863e3eda92eafd0536a07abf4100ebe9cc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的 VPN 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 下列清單中所列的值並非全部都能設定，須取決於您選擇的設定。
 
@@ -61,4 +58,3 @@ ms.lasthandoff: 05/23/2017
 - **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
 - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
 - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
-

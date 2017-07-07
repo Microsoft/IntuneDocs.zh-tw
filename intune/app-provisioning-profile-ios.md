@@ -1,7 +1,7 @@
 ---
-title: "應用程式佈建設定檔 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版：Intune 提供工具，讓您可主動將新的佈建設定檔指派至有應用程式即將到期的裝置。"
+title: "應用程式佈建設定檔"
+titleSuffix: Intune on Azure
+description: "Intune 提供工具，讓您可主動將新的佈建設定檔指派至具有即將到期之應用程式的裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 行動佈建設定檔，以避免您的應用程式過期
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>簡介
 
@@ -42,7 +40,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何建立 iOS 行動應用程式佈建設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務] > [監視 + 管理] > [Intune]。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 1.  在 [行動應用程式] 工作負載中，選擇 [管理] > [iOS 佈建設定檔]。
 2.  在設定檔刀鋒視窗清單中，選擇 [建立設定檔]。
@@ -55,4 +53,3 @@ ms.lasthandoff: 05/23/2017
 ## <a name="next-steps"></a>後續步驟
 
 將設定檔指派給所需的 iOS 裝置。 如需詳細資訊，請使用[如何指派裝置設定檔](device-profile-assign.md)中的步驟。
-

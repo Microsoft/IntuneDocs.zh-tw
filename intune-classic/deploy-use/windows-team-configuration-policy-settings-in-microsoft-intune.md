@@ -14,15 +14,12 @@ ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 6e0f0ea969ed78f2daf482438b056c8b4eb1a316
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Windows 團隊版設定原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -42,5 +39,4 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
 

@@ -1,12 +1,12 @@
 ---
 title: "如何設定 Intune 自訂裝置設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何在管理的裝置上使用 Intune 設定自訂設定。"
+titleSuffix: Intune on Azure
+description: "了解如何在管理的裝置上使用 Intune 設定自訂設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定自訂裝置設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>使用自訂設定的時機
 
@@ -38,7 +35,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-custom-settings"></a>建立內含自訂設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
@@ -53,7 +50,7 @@ ms.lasthandoff: 05/23/2017
 7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
     - [Android 設定](custom-settings-android.md)
     - [iOS 設定](custom-settings-ios.md)
-    - [macOS 設定](custom settings-macos.md)
+    - [macOS 設定](custom-settings-macos.md)
     - [Windows Phone 8.1 設定](custom-settings-windows-phone-8-1.md)
     - [Windows 10 設定](custom-settings-windows-10.md)
     - [Android for Work 設定](custom-settings-android-for-work.md)
@@ -61,4 +58,3 @@ ms.lasthandoff: 05/23/2017
 
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
-

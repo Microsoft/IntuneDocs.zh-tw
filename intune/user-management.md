@@ -1,7 +1,7 @@
 ---
 title: "什麼是管理使用者工作負載？"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰ 了解如何檢視及管理使用 Microsoft Intune 及 Azure 的使用者。"
+titleSuffix: Intune on Azure
+description: "了解如何檢視及管理使用 Microsoft Intune 及 Azure 的使用者。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>什麼是使用者管理？
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 如果您是第一次在 Azure 入口網站中使用 Intune，請注意，您已無法再建立 Intune 的群組。 一如您使用的其他許多應用程式，Intune 也使用 Azure AD 群組。
 
@@ -45,4 +42,3 @@ ms.lasthandoff: 05/23/2017
 ## <a name="next-step"></a>後續步驟
 
 [開始使用群組](groups-get-started.md)
-

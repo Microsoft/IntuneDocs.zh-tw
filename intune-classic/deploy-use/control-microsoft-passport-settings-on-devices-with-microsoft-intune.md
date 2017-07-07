@@ -1,5 +1,5 @@
 ---
-title: "控制裝置上的 Windows Hello 企業版設定 | Microsoft Docs"
+title: "控制裝置上的 Windows Hello 企業版設定"
 description: "深入了解 Intune 如何與 Windows Hello 企業版整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡的替代登入方法。"
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a223f7fb1fd0736541da0d6a15ad5285241577a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7c4ac0b79e30283b90612c77acf1462a25bb6093
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>使用 Microsoft Intune 控制裝置上的 Windows Hello 企業版設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -83,4 +80,3 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 ## <a name="further-information"></a>進一步資訊
 如需 Microsoft Passport 的詳細資訊，請參閱 Windows 10 文件中的[指南](https://technet.microsoft.com/library/mt589441.aspx)。
-

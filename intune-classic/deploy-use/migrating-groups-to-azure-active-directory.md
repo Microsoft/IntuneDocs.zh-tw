@@ -1,5 +1,5 @@
 ---
-title: "移轉至 Azure Active Directory 群組 | Microsoft Docs"
+title: "移轉至 Azure Active Directory 群組"
 description: "如何將群組從 Intune 移轉至 Azure AD"
 keywords: 
 author: robstackmsft
@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 829057773e1ef40b179435b5b81bfcd9fc5c84f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="a-new-way-of-using-groups-in-intune"></a>在 Intune 中使用群組的新方式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -92,4 +89,3 @@ Azure AD 中未提供一些現有的 Intune 群組功能︰
 
 就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在會從 Azure 入口網站管理這些群組，而不是從傳統 Intune 主控台。
  
-

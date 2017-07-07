@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 裝置的 Intune 電子郵件設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於設定 Windows 10 裝置之電子郵件連線的 Intune 設定。"
+titleSuffix: Intune on Azure
+description: "了解可用於設定 Windows 10 裝置上電子郵件連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 50de3e52fa87170fe208dd944b87c9d3006bd437
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 121c21d49d3639925ef0abcdc55cb599ed276778
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的電子郵件設定檔設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **連絡人**
     - **行事曆**
     - **工作**
-

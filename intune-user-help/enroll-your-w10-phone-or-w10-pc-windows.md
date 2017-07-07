@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: dd8af3f07abc772408ccececf12a062a82a82e71
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-devices-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
 在 Microsoft Intune 中註冊您的裝置，可讓您的 Windows 10 裝置存取您組織的安全資料，包括電子郵件、檔案和其他資源。 這適用於 Windows 10 Desktop 和 Windows 10 Mobile 裝置。 註冊您的裝置能夠協助保護您和您的組織，並且協助保持區隔您的工作資料與個人資料。
@@ -40,18 +36,17 @@ ms.lasthandoff: 05/23/2017
 
  ![搜尋電腦的相關設定](media/searching_for_about_your_pc.png)
 
-3.    在您的 [設定] 中，會看到一份電腦上已安裝的 Windows 10 版本的資訊清單。 在此清單中，找出 [版本]。
+3.  在您的 [設定] 中，會看到一份電腦上已安裝的 Windows 10 版本的資訊清單。 在此清單中，找出 [版本]。
 
  ![Windows 10 Desktop 關於您的電腦](media/settings_about_pc.png)
 
-4.    如果您的版本是 __1607 或更新版本__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
+4.  如果您的版本是 __1607 或更新版本__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile 裝置        
 
-1.    在 [開始] 上，撥動到 [所有應用程式] 清單，然後選取 [設定] 應用程式。        
-2.    依序點選 [系統]、[關於]。        
-3.    在 [裝置資訊] 下，點選 [其他資訊]。 您會看到裝置的資訊清單。 在此清單中，找出 [版本]。        
-4.    如果您的版本是 __1607__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
+1.  在 [開始] 上，撥動到 [所有應用程式] 清單，然後選取 [設定] 應用程式。        
+2.  依序點選 [系統]、[關於]。       
+3.  在 [裝置資訊] 下，點選 [其他資訊]。 您會看到裝置的資訊清單。 在此清單中，找出 [版本]。        
+4.  如果您的版本是 __1607__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

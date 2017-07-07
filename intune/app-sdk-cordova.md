@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 外掛程式
 
@@ -159,4 +157,3 @@ $ cordova run --nobuild
 * 每當您在 **Info.plist** 檔案的 **CFBundleDocumentTypes** 節點下修改 UTI 清單，都必須在相同 plist 檔案的 [已匯入 UTI] 區段 (**UTImportedTypeDeclarations** 節點) 清除 Intune UTI，然後才再次建置。 所有的 Intune UTI 都會以 `com.microsoft.intune.mam` 前置詞做為開頭。
 
 * 如果您想要從 Cordova 專案移除適用於 Cordova 的 Intune App SDK 外掛程式，則也必須移除 iOS 平台，並且重新新增它，以復原 .xcodeproj 和.plist 檔案中的一些 Intune 設定。
-

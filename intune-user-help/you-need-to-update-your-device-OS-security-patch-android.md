@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>您必須更新 Android 裝置的作業系統
 
 如果您看到訊息顯示「未設定 Android 安全性修補程式等級下限」，您就需要安裝更新以確保裝置保持安全。 發行「修補程式」的目的是要維護軟體，使軟體運作順暢並保持在最新狀態。 您的 IT 系統管理員會要求您安裝此修補程式，以確保裝置上的公司資料盡可能受到保護。 您所需安全性修補程式的位置會依您是否擁有特定類型的 Samsung 裝置而改變。
@@ -43,4 +39,3 @@ ms.lasthandoff: 05/23/2017
 
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

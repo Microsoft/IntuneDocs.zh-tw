@@ -1,12 +1,12 @@
 ---
-title: "如何使用 Intune 設定憑證 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何使用 Intune 來建立及指派憑證，協助您保護 Wi-Fi、VPN 與其他連線的安全。"
+title: "如何使用 Intune 設定憑證"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 來建立及指派憑證，協助您保護 Wi-Fi、VPN 與其他連線的安全。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定憑證
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 當您授與使用者透過 VPN、Wi-Fi 或電子郵件設定檔存取公司資源的權限時，您可以使用憑證來驗證這些連線。 這樣就不必輸入使用者名稱和密碼來驗證連線。
 
@@ -56,8 +53,8 @@ ms.lasthandoff: 05/23/2017
 
     只有這些平台才可使用 SCEP 憑證設定檔：
 
--     macOS 10.9 及更新版本
--     Windows Phone 8.1 和更新版本
+-   macOS 10.9 及更新版本
+-   Windows Phone 8.1 和更新版本
 
 您必須為每個裝置平台建立自己的設定檔。 當您建立設定檔時，請將該設定檔與您已建立之受信任的根憑證設定檔相關聯。
 
@@ -88,7 +85,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="to-create-a-trusted-certificate-profile"></a>建立可信任的憑證設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
@@ -128,4 +125,3 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="next-steps"></a>後續步驟
 請參閱[如何指派裝置設定檔](device-profile-assign.md)，以取得如何指派裝置設定檔的一般資訊。
-
