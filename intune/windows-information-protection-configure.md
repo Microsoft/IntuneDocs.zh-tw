@@ -1,7 +1,7 @@
 ---
 title: "設定 Windows 資訊保護 - Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於管理 Windows 資訊保護的相關 Intune 設定。"
+titleSuffix: Intune on Azure
+description: "了解您可用於管理 Windows 資訊保護的相關 Intune 設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc58b07fe33ff6223dfa182fb4f81f15379295fa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7ac59456dd2bc59a0a50eeab4e483dea2033c0fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 資訊保護
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 隨著企業中員工擁有的裝置增加，透過不受企業控制的應用程式與服務 (像是電子郵件、社交媒體和公用雲端) 意外外洩資料的風險也隨之提高。 例如，員工從個人電子郵件帳戶傳送最新的工程圖片、將產品資訊複製並貼到推文中，或將進行中的銷售報表儲存到公用雲端存放裝置。
 
@@ -39,4 +36,3 @@ Intune 原則會管理受 Windows 資訊保護、企業網路位置、保護等�
 
 ### <a name="next-steps"></a>後續步驟
 如需詳細資訊，請參閱[使用「Windows 資訊保護」保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
-

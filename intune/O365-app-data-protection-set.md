@@ -1,7 +1,7 @@
 ---
-title: "設定 Office 365 應用程式的基本資料管理 - Intune Azure Preview"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰管理 Office 365 應用程式精靈的支援文件。"
+title: "在 Intune 中設定 Office 365 應用程式的基本資料管理"
+titleSuffix: Intune on Azure
+description: "管理 Office 365 應用程式精靈的支援文件。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>您的使用者將如何體驗受管理 Office 365 應用程式的基本保護
 
 [管理 Office 365 應用程式精靈] 會建立每個裝置平台的應用程式保護原則。
@@ -129,9 +125,8 @@ iOS 與 Android 的加密運作方式不相同。
 您隨時都能依照組織的需求編輯這些原則設定。
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>如何檢視及編輯精靈所建立的原則？
-若要查看或更新這些原則，或任何您在 Intune Azure 預覽版中建立的原則，請從儀表板中選擇 [管理應用程式]  >  [應用程式保護原則]。 原則清單會在右側開啟。 選擇您要檢視的原則來查看及編輯其設定。 <br/>
+若要查看或更新這些原則，或任何您在 Intune Azure 入口網站中建立的原則，請從儀表板中選擇 [管理應用程式] > [應用程式保護原則]。 原則清單會在右側開啟。 選擇您要檢視的原則來查看及編輯其設定。 <br/>
 ![檢視原則的使用者介面路徑影像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>後續步驟
 深入了解[應用程式保護原則](https://docs.microsoft.comapp-protection-policy.md)。
-

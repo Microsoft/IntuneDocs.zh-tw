@@ -14,15 +14,12 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 ### <a name="see-also"></a>請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)
-

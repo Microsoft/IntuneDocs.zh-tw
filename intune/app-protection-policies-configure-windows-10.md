@@ -15,15 +15,12 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
 ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -60,4 +57,3 @@ ms.lasthandoff: 06/13/2017
 ## <a name="next-steps"></a>後續步驟
 
 [建立 WIP 應用程式保護原則 (英文)](windows-information-protection-policy-create.md)
-

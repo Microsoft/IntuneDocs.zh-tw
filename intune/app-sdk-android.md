@@ -14,16 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 7dfcc0bf8f3da1e600df59927db6e78ec2021e0f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/03/2017
 ---
-
-
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
 > [!NOTE]
@@ -80,7 +76,8 @@ Intune App SDK 是不含外部相依性的標準 Android 程式庫。 **Microsof
 Azure Active Directory Authentication Library (ADAL) 可能會有屬於自己的 ProGuard 限制。 如果應用程式整合了 ADAL，則您必須遵循這些限制的相關 ADAL 文件。
 
 ### <a name="entry-points"></a>進入點
-======= Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限以執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
+
+Azure Active Directory 驗證程式庫 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限才能執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
 
 Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應用程式保護原則。 這是透過將 Android 基底類別取代為對等的 Intune 基底類別來完成，其名稱前面會加上 **MAM**。 SDK 類別的位置介於 Android 基底類別和應用程式本身針對該類別的衍生版本之間。 以活動為範例來看，最後您得到的繼承階層會像這樣：`Activity` > `MAMActivity` > `AppSpecificActivity`。
 
@@ -161,7 +158,7 @@ Intune App SDK 需要在與其整合的應用程式上，具有三個 [Android �
 
 * `android.permission.USE_CREDENTIALS`
 
-Azure Active Directory 驗證程式庫 ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限才能執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
+Azure Active Directory 驗證程式庫 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要這些權限才能執行代理驗證。 如果未將這些權限授與應用程式或使用者已撤銷這些權限，則會停用需要訊息代理程式 (公司入口網站應用程式) 的驗證流程。
 
 ## <a name="logging"></a>記錄
 
@@ -410,7 +407,7 @@ public interface MAMNotificationReceiver {
 
 首先，請參閱 [GitHub 上 ADAL 存放庫 (英文)](https://github.com/AzureAD/azure-activedirectory-library-for-android) 中的 ADAL 整合方針。
 
-SDK 仰賴 [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 進行[驗證](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)和條件式啟動案例，其中需要應用程式針對 [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/)進行設定。 設定值會透過 AndroidManifest 中繼資料傳送給 SDK。
+SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 進行[驗證](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和條件式啟動案例，其中需要應用程式針對 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)進行設定。 設定值會透過 AndroidManifest 中繼資料傳送給 SDK。
 
 若要設定您的應用程式並啟用適當的驗證，請將下列項目加入 AndroidManifest.xml 中的應用程式節點。 一般來說，其中某些設定僅在您的應用程式會使用 ADAL 來進行驗證時才需要；在此情況下，您必須具備應用程式使用的特定值，以向 AAD 註冊該應用程式。 這是為了確保使用者不會因為 AAD 辨識兩個不同的登錄值 (一個來自應用程式，另一個則來自 SDK)，而收到兩次驗證提示。
 
@@ -1181,4 +1178,3 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 * 使用最新的 Android SDK 建置工具。
 
 * 移除所有不必要和未使用的程式庫 (例如 android.support.v4)
-

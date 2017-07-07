@@ -1,7 +1,7 @@
 ---
 title: "Intune 的連絡電話協助支援"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽：Microsoft Intune 協助支援電話號碼。"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune 協助支援電話號碼。"
 keywords: "上班時間"
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e8d284e8bbcf472c4c03e6411902356ee42cd5a5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune 的連絡電話協助支援
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>電話號碼和營業時間
 
@@ -121,4 +118,3 @@ ms.lasthandoff: 05/23/2017
 |烏拉圭|全年無休|星期一到星期五<br /><br />09:00 – 17:00 UYST (UTC -2)|西班牙文*、英文|000-411-002-7131||
 |委內瑞拉|全年無休|星期一到星期五<br /><br />09:00 – 17:00 VET (UTC -4:30)|西班牙文*、英文|0-800-100-8763||
 * 提供電話口譯支援。
-

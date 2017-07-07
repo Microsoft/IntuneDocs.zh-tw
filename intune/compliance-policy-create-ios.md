@@ -1,7 +1,7 @@
 ---
 title: "如何建立 iOS 的合規性政策"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何為 iOS 裝置建立合規性政策。"
+titleSuffix: Intune on Azure
+description: "了解如何為 iOS 裝置建立合規性政策。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置建立裝置合規性政策
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>如何在 Intune Azure 預覽版中為 iOS 裝置建立合規性政策
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 每個平台都會建立合規性政策。  您可以在 Azure 入口網站中建立合規性政策。 如需深入了解什麼是合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)主題。 如需了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)主題。
 
@@ -124,4 +121,3 @@ ms.lasthandoff: 05/23/2017
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

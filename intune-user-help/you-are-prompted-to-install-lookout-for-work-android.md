@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work"></a>您需要安裝 Lookout for Work
 
 在存取您的工作之前，您的 IT 系統管理員要求您安裝 Lookout for Work App，這會尋找潛在的安全性威脅，有助於保護您的裝置。
@@ -32,11 +28,11 @@ ms.lasthandoff: 05/23/2017
 
 **您必須執行的作業：**
 
-1.    從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 **[Required application – Install Lookout for Work from Play Store]** (必要應用程式 - 從 Play Store 安裝 Lookout for Work)。
+1.  從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 **[Required application – Install Lookout for Work from Play Store]** (必要應用程式 - 從 Play Store 安裝 Lookout for Work)。
 
   ![您必須安裝 Lookout for Work](./media/lookout-required-app-install-android.png)
 
-2.    系統會帶您前往 Play Store 中的 Lookout for Work 安裝頁面。 安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
+2.  系統會帶您前往 Play Store 中的 Lookout for Work 安裝頁面。 安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
 
   ![點選 [接受] 以便 Lookout for Work 存取裝置](./media/lookout-accept-store-permissions-android.png)
 
@@ -79,4 +75,3 @@ ms.lasthandoff: 05/23/2017
 有時安裝會因為您無法控制的技術問題而失敗。 如果發生這種情況，請嘗試從 [Play 商店](https://play.google.com/store/apps/details?id=com.lookout.enterprise)手動安裝 Lookout for Work。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

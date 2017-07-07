@@ -1,5 +1,5 @@
 ---
-title: "抹除 Exchange 管理的行動裝置 | Microsoft Docs"
+title: "抹除 Exchange 管理的行動裝置"
 description: "Microsoft Intune 可讓您抹除或重設行動裝置，這些裝置搭配使用 Exchange ActiveSync (EAS) 和 Intune Exchange Connector 管理"
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b0914ab12456fd3ad5f957d68a59df9de539176
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>抹除 Exchange 管理的行動裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -35,4 +31,3 @@ Microsoft Intune 可讓您抹除或重設行動裝置，這些裝置搭配使用
 |完整抹除|移除郵件帳戶及快取的郵件。|重設成 XFactory。|恢復出廠預設值。|
 |選擇性抹除/電子郵件|移除電子郵件帳戶。|不支援。|不支援。|
 |選擇性抹除/原則|移除原則強制執行，但不變更設定|移除原則強制執行，但不變更設定。|移除原則強制執行，但不變更設定。|
-

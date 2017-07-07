@@ -1,7 +1,7 @@
 ---
-title: "我的 Intune 功能已移至 Azure 中的哪個位置？"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽︰協助您在 Azure 主控台中尋找 Intune 功能。"
+title: "我的 Intune 功能移到 Azure 中的哪個位置？"
+titleSuffix: Intune on Azure
+description: "協助您在 Azure 主控台中尋找 Intune 功能。"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對想要徹底熟悉傳統主控台中的 Intune，並想知道如何在 Azure 上的 Intune 中完成作業的使用者，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
-|功能 |傳統主控台中的路徑|Azure 上 Intune 中的路徑| |------------||---------------|---------------|
-|裝置註冊計劃 (DEP) |管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃|[裝置註冊 > Apple 註冊 > 註冊計劃權杖](#where-did-apple-dep-go) |
-|裝置註冊計劃 (DEP)| 管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃 |[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-apple-dep-go) |
-|註冊規則 |管理 > 行動裝置管理 > 註冊規則|[裝置註冊 > 註冊限制](#where-did-enrollment-rules-go) |
-|依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號|[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-corporate-pre-enrolled-devices-go) |
-|依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號| [裝置註冊 > Apple 註冊 > AC 序號](#where-did-corporate-pre-enrolled-devices-go)|
-|依 IMEI 分組 (所有平台)| 群組 > 所有裝置 > 公司預先註冊的裝置 > 依 IMEI (所有平台) | [裝置註冊 > 公司裝置識別碼](#by-imei-all-platforms)|
-| 公司裝置註冊設定檔| 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > 註冊計劃設定檔](#where-did-corporate-pre-enrolled-devices-go) |
-| 公司裝置註冊設定檔 | 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > AC 設定檔](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | 管理 > 行動裝置管理 > Android for Work | 裝置註冊 > Android for Work 註冊 | | 條款和條件 | 原則 > 條款和條件 | 裝置註冊 > 條款和條件 |
+|功能 |傳統主控台中的路徑|Azure 上 Intune 中的路徑| |------------||---------------|---------------| |裝置註冊計劃 (DEP) |管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃|[裝置註冊 > Apple 註冊 > 註冊計劃權杖](#where-did-apple-dep-go) | |裝置註冊計劃 (DEP)| 管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃 |[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-apple-dep-go) | |註冊規則 |管理 > 行動裝置管理 > 註冊規則|[裝置註冊 > 註冊限制](#where-did-enrollment-rules-go) | |依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號|[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-corporate-pre-enrolled-devices-go) | |依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號| [裝置註冊 > Apple 註冊 > AC 序號](#where-did-corporate-pre-enrolled-devices-go)| |依 IMEI 分組 (所有平台)| 群組 > 所有裝置 > 公司預先註冊的裝置 > 依 IMEI (所有平台) | [裝置註冊 > 公司裝置識別碼](#by-imei-all-platforms)| | 公司裝置註冊設定檔| 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > 註冊計劃設定檔](#where-did-corporate-pre-enrolled-devices-go) | | 公司裝置註冊設定檔 | 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > AC 設定檔](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | 管理 > 行動裝置管理 > Android for Work | 裝置註冊 > Android for Work 註冊 | | 條款和條件 | 原則 > 條款和條件 | 裝置註冊 > 條款和條件 |
 
 
 ## <a name="where-do-i-manage-groups"></a>我在何處管理群組？
@@ -117,4 +106,3 @@ Azure 入口網站中的 Intune 未來將支援除 IMEI 以外的其他識別碼
 
 **Apple Configurator 設定檔**
 ![Azure Apple Configurator 設定檔的影像](./media/16-azure-ac-profiles.png)
-

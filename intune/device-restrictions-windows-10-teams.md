@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 團隊版的 Intune 裝置限制"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解適用於 Windows 10 團隊版裝置的裝置限制。"
+titleSuffix: Intune on Azure
+description: "了解適用於 Windows 10 團隊版裝置的裝置限制。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: afbbe6b7649e1ffc3f84ada64396d9033a2db200
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7a5c3eaf3d2b1fc4383282473352124c793b666f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 團隊版裝置限制設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 - **有人在房間時喚醒螢幕** - 可在裝置感應器偵測到室內有人時自動喚醒裝置。
 - **無線投影的 PIN** - 指定您是否必須輸入 PIN，才可使用該裝置的無線投影功能。
@@ -37,4 +34,3 @@ ms.lasthandoff: 05/23/2017
 - **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://**。
 - **更新的維護期間** - 設定可以進行裝置更新的範圍。 您可以設定間隔的開始時間和持續時間 (從 1 到 5 小時) 。
 - **Azure Operational Insights** - Azure Operational Insights，Microsoft Operations Manager 套件組合會收集、儲存及分析來自 Windows 10 團隊版的記錄檔資料。<br>若要連線到 Azure Operational Insights，您必須指定 [工作區識別碼] 和 [工作區金鑰]。
-

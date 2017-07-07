@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 在裝置上完整或選擇性抹除"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何選擇性地抹除裝置上的公司資料，或如何完全抹除資料，恢復裝置的出廠預設值。"
+titleSuffix: Intune on Azure
+description: "了解如何選擇性地抹除裝置上的公司資料，或如何完整抹除資料，將裝置重設成出廠預設值。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>使用完整或選擇性抹除
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 當 Intune 管理的裝置不再被需要、重新設定用途，或是已經遺失時，您可以抹除其中的應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 使用者也可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
 
@@ -101,8 +98,8 @@ ms.lasthandoff: 05/23/2017
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
-|電子郵件|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
-|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
+|電子郵件|n/a (Android 裝置不支援電子郵件設定檔)|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
+|Outlook|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 
@@ -130,4 +127,3 @@ ms.lasthandoff: 05/23/2017
 3.  在顯示裝置名稱的刀鋒視窗中選擇 [移除公司...]\(代表移除公司資料)，然後選擇 [是] 確認抹除。
 
 如果裝置已開啟且連線，這過程將花費不到 15 分鐘的時間，以將抹除命令傳播到所有裝置類型。
-

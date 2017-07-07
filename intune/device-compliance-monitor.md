@@ -1,7 +1,7 @@
 ---
 title: "如何監視裝置相容性"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何監視裝置合規性。"
+titleSuffix: Intune on Azure
+description: "了解如何監視裝置合規性。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,22 +15,20 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>在 Intune Azure 預覽版中如何監視裝置合規性
+# <a name="how-to-monitor-device-compliance-in-intune"></a>如何在 Intune 中監視裝置合規性
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 您可以在 [概觀] 刀鋒視窗中，檢視您**合規性設定檔**的狀態摘要。
-您可以互動方式點選各個圖表來向下鑽研詳細資料。 您如有設定多個合規性設定檔，也可以前往原則刀鋒視窗的 [管理] 區段中選擇 [報表]，以檢視每項原則的狀態。  以下列出預覽版所提供之報表的詳細資料。
+您可以互動方式點選各個圖表來向下鑽研詳細資料。 您如有設定多個合規性設定檔，也可以前往原則刀鋒視窗的 [管理] 區段中選擇 [報表]，以檢視每項原則的狀態。  以下列出可用報表的詳細資料。
 
-##  <a name="device-compliance"></a>裝置相容性
+##  <a name="device-compliance"></a>裝置合規性
 
 裝置合規性報表的摘要檢視會先顯示下列報告項目之一的裝置數彙總資訊︰
 
@@ -48,4 +46,3 @@ ms.lasthandoff: 05/23/2017
 - 套用設定的平台。
 
 您可以向下鑽研每項設定，以查看啟用這些設定之設定檔的詳細資訊，以及該設定的值。
-

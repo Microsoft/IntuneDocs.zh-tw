@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 3de9589c46250727b1994381c24c68e6e2b90da2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
 您可以使用此頁面右側之 [本文內容]下方的連結，尋找您要使用之裝置類型的相關資訊。
@@ -91,4 +86,3 @@ ms.lasthandoff: 05/23/2017
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

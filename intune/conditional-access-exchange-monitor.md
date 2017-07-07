@@ -1,6 +1,6 @@
 ---
 title: "監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "透過 Intune Azure 入口網站監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>在 Intune Azure 預覽版中監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性
 
 從 Intune 1704 版本開始，系統管理員可以透過內部部署 Exchange Connector 或 Intune Service to Service Connector (Exchange Online Connector)，查看與 Intune 同步處理的 Exchange ActiveSync 裝置記錄相關的報告資訊。 條件式存取合規性報告提供包含不同同步處理狀態的裝置摘要：
 
@@ -70,4 +67,3 @@ ms.lasthandoff: 05/23/2017
 -   **裝置設定︰**顯示所有裝置設定詳細資料。
 
 -   **Exchange 存取：**您可以在這裡深入了解套用條件式存取原則之後的裝置狀態。
-

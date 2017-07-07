@@ -1,7 +1,7 @@
 ---
 title: "如何只抹除應用程式中的公司資料"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何使用 Microsoft Intune 選擇性抹除應用程式。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Microsoft Intune 選擇性抹除應用程式。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 當裝置遺失或遭竊，或者如果員工離職，您會想要確定公司應用程式資料已從裝置移除。 不過，您可能不想要移除裝置上的個人資料，特別是當該裝置為員工擁有的裝置時。
 
@@ -38,7 +36,7 @@ ms.lasthandoff: 05/23/2017
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
-2.  選擇 [更多服務]，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune]。 當 Intune 預覽版刀鋒視窗開啟時，請選擇 [管理應用程式] 刀鋒視窗。
+2.  選擇 [更多服務]，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune]。 當 Intune 刀鋒視窗開啟時，請選擇 [管理應用程式] 刀鋒視窗。
 
     ![[新增抹除要求] 刀鋒視窗的螢幕擷取畫面](./media/intune-azure-preview-blade.png)
 

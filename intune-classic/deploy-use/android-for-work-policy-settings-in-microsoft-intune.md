@@ -1,5 +1,4 @@
 ---
-
 title: "Android for Work 原則設定"
 description: "建立可以在您使用 Intune 管理的 Android for Work 裝置上控制設定及功能的原則。"
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android for Work 原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +89,3 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

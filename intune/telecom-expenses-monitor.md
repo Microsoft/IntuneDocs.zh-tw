@@ -1,7 +1,7 @@
 ---
 title: "設定電信費用管理服務"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰設定 Saaswedo 電信費用管理服務，與 Intune 相互整合。"
+titleSuffix: Intune on Azure
+description: "設定 Saaswedo 電信費用管理服務，與 Intune 相互整合。"
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>在 Intune Azure 預覽版中設定電信費用管理服務
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 可讓您管理公司擁有之行動裝置上的資料使用量所造成的電信費用。 為了啟用此功能，Intune 已整合協力廠商軟體開發人員 Saaswedo 的 Datalert 電信費用管理解決方案。 Datalert 是即時的電信費用管理軟體，可讓您管理電信數據使用量，協助 Intune 管理的裝置避免高額費用及非預期的超額數據費和漫遊費。
 
@@ -41,9 +39,9 @@ Intune 與 Datalert 整合可讓您集中設定、監視及實施漫遊與國內
 - Samsung Knox
 - iOS 8.0 和更新版本
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-- 訂閱 Microsoft Intune，並存取 Azure 入口網站，目前都是公用預覽版本。
+- Microsoft Intune 的訂用帳戶，以及對於 Azure 入口網站的存取。
 - 訂閱 Datalert 電信費用管理服務
 
 ## <a name="list-of-telecom-expense-management-providers"></a>電信費用管理提供者清單
@@ -108,9 +106,9 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 請遵循下列步驟，以在 Intune 中建立每個平台的 Datalert 應用程式。 iOS 是作為這些步驟中的範例。
 
-1. 在 Azure 入口網站的 [Intune] 刀鋒視窗上，選擇 [管理應用程式]。
+1. 在 Azure 入口網站的 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 
-2. 在 [管理應用程式] 刀鋒視窗上，選擇 [管理] > [應用程式]。
+2. 在 [行動應用程式] 刀鋒視窗上，選擇 [管理] > [應用程式]。
 
 3. 選取 [新增] 來新增應用程式。
 
@@ -151,8 +149,8 @@ Datalert 服務現在已上線執行，會開始監視數據使用量，並停�
 
 ## <a name="client-enrollment-experience"></a>用戶端註冊體驗
 針對用戶端註冊體驗，請參閱下列內容：
--    [在電信費用管理中註冊您的 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [在電信費用管理中註冊您的 Android 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [在電信費用管理中註冊您的 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [在電信費用管理中註冊您的 Android 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>關閉 Datalert 服務
 
@@ -173,4 +171,3 @@ Datalert 服務現在已上線執行，會開始監視數據使用量，並停�
 目前只會在 Saaswedo 的 Datalert 管理主控台中提供數據使用量報告。
 
 即將新增終端使用者安裝 Datalert 應用程式所遵循的指示。
-

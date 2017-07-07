@@ -1,5 +1,5 @@
 ---
-title: "使用資料加密保護公司資料 | Microsoft Docs"
+title: "使用資料加密保護公司資料"
 description: "本指南可在行動應用程式上使用原則來強制使用密碼和資料加密，協助您保護公司免於資料遺失。"
 keywords: "加密, PIN, 資料"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>快速入門指南：使用資料加密保護公司資料
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Microsoft Intune 也可協助您從 Office 行動應用程式防止資料遺失�
 本指南可協助您保護公司免於資料遺失，方法是在員工用來存取機密資料的行動應用程式上使用原則來強制使用密碼和資料加密，而不需要在任何裝置管理解決方案中進行完整註冊。 Microsoft Intune 可讓您在適用於 [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) 和 [Android](https://products.office.com/mobile/office-mobile-apps-for-android) 的 Office 行動應用程式上設定行動應用程式管理 (MAM) 原則。 這種方式不需要使用者將其裝置註冊到行動裝置管理解決方案，也能保護 O365 資料，同時維持絕佳的 Office 行動應用程式使用者經驗。
 
 ## <a name="how-do-i-do-it"></a>我該怎麼做？
-1.    [檢閱如何保護應用程式資料](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [準備設定行動應用程式管理原則](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [建立及部署行動應用程式管理原則](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [檢閱如何保護應用程式資料](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [準備設定行動應用程式管理原則](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [建立及部署行動應用程式管理原則](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>其他資訊：
-- [了解使用 Microsoft Intune 執行 MAM 啟用應用程式的終端使用者體驗。]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理。]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [了解使用 Microsoft Intune 執行 MAM 啟用應用程式的使用者經驗。](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理。](/intune/apps-prepare-mobile-application-management)
 - [檢視 Microsoft Intune 應用程式夥伴清單](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

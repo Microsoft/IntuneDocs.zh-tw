@@ -14,15 +14,12 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入門指南：簡化行動裝置上的電子郵件設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署�
 [將 Wi-Fi 設定檔部署到受管理的裝置](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
 
 [使用 Microsoft Intune 中的憑證設定檔來保護資源存取](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)
-

@@ -1,5 +1,5 @@
 ---
-title: "管理商務用 Windows 市集應用程式 | Microsoft Docs"
+title: "管理商務用 Windows 市集應用程式"
 description: "如果您想要從 Intune 主控台管理和部署大量購買的應用程式，請將 Microsoft Intune 連線至商務用 Windows 市集"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 888d825fb9955e97b49e54a0c36ab882055076d8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -86,4 +83,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="see-also"></a>請參閱
 [在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-ios-device-in-intune"></a>在 Intune 註冊 iOS 裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊 iOS 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
@@ -65,7 +60,7 @@ ms.lasthandoff: 05/23/2017
 
 5.  在 [接下來該做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
 
-     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  在 [安裝設定檔] 畫面上，點選 [安裝]，然後在出現提示時輸入您的密碼。
 
@@ -77,15 +72,15 @@ ms.lasthandoff: 05/23/2017
 
 8.  點選 [安裝] 表示您已閱讀警告。
 
-       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  點選 [信任]。
 
-       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  畫面變更成顯示設定檔已完成安裝時，請點選 [完成]。
 
-     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     畫面上會顯示 [正在註冊裝置] 訊息。
 
@@ -107,4 +102,3 @@ ms.lasthandoff: 05/23/2017
 > 如果您的組織使用電信費用管理軟體，您需要完成幾個額外步驟，裝置才會完全註冊。 如需詳細資訊，請參閱[這裡](enroll-your-device-with-telecom-expense-management-ios.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

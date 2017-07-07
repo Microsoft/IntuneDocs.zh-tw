@@ -1,11 +1,11 @@
 ---
-title: "使用 Pulse Secure 之 Android 的個別應用程式 VPN | Microsoft Docs"
+title: "Android 使用 Pulse Secure 的個別應用程式 VPN"
 description: "您可以為 Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ ms.lasthandoff: 05/23/2017
 
 > [!NOTE]
 >
-> 記下下一步驟中所使用的 VPN 設定檔名稱。 例如，MyAppVpnProfile。
+> 請記下您在建立 VPN 設定檔時指定的 [VPN 連線名稱 (顯示給使用者):] 值。 下一步中將需要此值。 例如，**MyAppVpnProfile**。
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>步驟 2：建立自訂設定原則
 
@@ -55,7 +52,7 @@ ms.lasthandoff: 05/23/2017
    4. 輸入設定名稱。
    5. 針對 [資料類型]，請指定 [String]。
    6. 針對 [OMA-URI]，指定此字串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在這個範例中，字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
-   7.    針對 [值]，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
+   7.   針對 [值]，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
 
 ![Android 個別應用程式 VPN 自訂原則範例](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ ms.lasthandoff: 05/23/2017
     -   **若要關閉對話方塊而不部署原則**，請選擇 [取消]。
 
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 狀態摘要還會顯示在 [儀表板] 工作區中。
-

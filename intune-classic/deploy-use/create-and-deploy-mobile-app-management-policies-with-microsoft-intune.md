@@ -1,5 +1,5 @@
 ---
-title: "建立和部署 MAM 原則 | Microsoft Docs"
+title: "建立及部署 MAM 原則"
 description: "使用本主題中的逐步指示來建立及部署行動應用程式管理原則。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ ms.lasthandoff: 05/23/2017
 ## <a name="line-of-business-lob-apps-optional"></a>企業營運 (LOB) 應用程式 (選用)
 
 從 Intune 1703 版開始，您可以選擇在建立新的應用程式保護原則時，通常會將 LOB 應用程式新增至 Intune。 這可讓您選擇使用 MAM SDK 來定義 LOB 應用程式的應用程式保護原則，而不需要完整的應用程式部署權限。
-
+/intune/app-sdk-get-started
 > [!TIP]
-> 您也可以在進行 [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started) 工作流程時，將 LOB 應用程式新增至 Intune。
+> 您也可以在進行 [Intune App SDK](/intune/app-sdk-get-started) 工作流程時，將 LOB 應用程式新增至 Intune。
 
 > [!IMPORTANT]
 > 如果使用者只有部署 MAM 應用程式的特定權限，而沒有完整的應用程式部署權限 (可讓他們在 Intune 中部署任何應用程式)，則不會進行 Intune SDK 工作流程，但仍然可以透過 MAM 應用程式保護原則建立工作流程新增其 LOB 應用程式。
@@ -131,14 +128,14 @@ ms.lasthandoff: 05/23/2017
 > [!IMPORTANT]
 > 當您建立新的應用程式保護原則時，您必須從 [平台] 下拉式清單選取 [Windows 10]。
 
-1.  在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps] (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps] (豁免應用程式) 刀鋒視窗。
+1.  在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗。
 
     > [!NOTE]
     >
     - **允許的應用程式**︰這些應用程式是必須遵守此原則的應用程式。
     - **豁免應用程式**︰這些應用程式不會套用此原則，而且可以存取公司資料，而沒有任何限制。
 <br></br>
-2. 在 [允許的應用程式] 或 [Exempt apps] (豁免應用程式) 刀鋒視窗中，按一下 [新增應用程式]。 您可以新增建議的 Microsoft 應用程式、市集應用程式或傳統型應用程式。
+2. 在 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗中，按一下 [新增應用程式]。 您可以新增建議的 Microsoft 應用程式、市集應用程式或傳統型應用程式。
 
     a.  **建議的應用程式︰**可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
 
@@ -164,8 +161,8 @@ ms.lasthandoff: 05/23/2017
 > 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者， 而不會影響巢狀於您選取之群組中的子群組成員。
 
 使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-android)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>變更現有的原則
 您可以編輯現有的原則，並將它套用到目標使用者。 不過，當您變更現有的原則時，已登入應用程式的使用者將有 8 小時看不到變更。
@@ -219,6 +216,5 @@ ms.lasthandoff: 05/23/2017
 [監視合規性和使用者狀態](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>請參閱
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-android)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-ios)

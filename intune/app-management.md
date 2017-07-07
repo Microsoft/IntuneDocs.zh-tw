@@ -1,12 +1,12 @@
 ---
-title: "什麼是應用程式管理 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰本主題可協助您了解 Microsoft Intune 管理應用程式的基本概念"
+title: "什麼是應用程式管理"
+titleSuffix: Intune on Azure
+description: "本主題可協助您了解 Microsoft Intune 管理應用程式的基本概念"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-IT 系統管理員的任務之一可能需要確定您的使用者能否存取其工作所需的應用程式。 這可能是一項挑戰，因為︰
+IT 系統管理員需負責確定您的使用者能夠存取其工作所需的應用程式。 這可能是一項挑戰，因為︰
 - 裝置平台及應用程式類型有千百種。
 - 您可能需要管理公司裝置及使用者裝置上的應用程式。
-- 您必須同時確保網路與資料的安全。 
+- 您必須確保網路和資料的安全。
 
 此外，您也可能想要指派及管理未向 Intune 註冊之裝置上的應用程式。
 
@@ -63,7 +60,6 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 
 <sup>2</sup>僅適用於 Intune 管理的裝置。
 
-
 ## <a name="how-to-get-started"></a>如何開始
 
 在**行動應用程式**工作負載中，您能存取的應用程式相關項目如下：
@@ -75,12 +71,13 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
     ![行動應用程式工作負載](./media/apps-workload.png)
 
 ### <a name="manage"></a>管理
-- **應用程式** - 您可以在此新增、指派及監視您大部分的應用程式。 
+- **應用程式** - 您可以在這個節點新增、指派及監視您大部分的應用程式。
     - [新增應用程式](apps-add.md)
     - [指派應用程式](apps-deploy.md)
     - [監視應用程式](apps-monitor.md)
-- **應用程式設定原則** - 應用程式設定原則可讓您提供使用者執行應用程式時可能需要的設定。 如需詳細資料，請參閱：
-    - [應用程式設定原則](app-configuration-policies.md)
+- **應用程式設定原則** - 應用程式設定原則可讓您提供使用者執行應用程式時可能需要的設定。
+    - [iOS 應用程式設定原則](app-configuration-policies-use-ios.md)
+    - [Android 應用程式設定原則](app-configuration-policies-use-android.md)
 - **應用程式保護原則** - 可讓您建立設定與應用程式之間的關聯來協助保護它所使用的公司資料。 例如，您可以限制某應用程式與其他應用程式的通訊能力，或是要求使用者輸入 PIN 碼才能存取公司應用程式。
     - [應用程式保護原則](app-protection-policies.md)
 - **應用程式選擇性抹除** - 只移除所選裝置上的公司資料。
@@ -100,8 +97,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **商務用 Windows 市集** - 設定對商務用 Windows 市集的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。 
+- **商務用 Windows 市集** - 設定對商務用 Windows 市集的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。
     - [商務用 Windows 市集大量採購應用程式](windows-store-for-business.md)
-- **公司入口網站品牌** - 自訂公司入口網站以顯示您公司的品牌。 
+- **公司入口網站品牌** - 自訂公司入口網站以顯示您公司的品牌。
     - [公司入口網站設定](company-portal-app.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "為 iOS 裝置註冊 Apple Configurator 以及直接註冊"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何使用 Apple Configurator 透過直接註冊，來註冊公司擁有的 iOS 裝置。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Apple Configurator 透過直接註冊，來註冊公司擁有的 iOS 裝置。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>為 iOS 裝置註冊 Apple Configurator 以及直接註冊 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)，來註冊屬公司擁有的 iOS 裝置。 此程序並不會將裝置重設成出廠預設值，並使用預先定義的原則來註冊裝置。 此方法適用於**無使用者親和性**的裝置，且需要透過 USB 將 iOS 裝置連線到 Mac 電腦，以設定公司註冊。
 
@@ -42,7 +39,7 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 
 請於設定 iOS 裝置註冊之前，先完成下列必要條件︰
 
-- [設定網域](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [設定網域](custom-domain-name-configure.md)
 - [設定 MDM 授權單位](mdm-authority-set.md)
 - [建立群組](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [設定公司入口網站](company-portal-app.md)
@@ -102,4 +99,3 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](https://itune
 4. 在 iOS 裝置上，開啟 [設定]，並前往 [一般]  >  [裝置管理]  >  [管理設定檔]。 確認其中有列出設定檔的安裝，並檢查 iOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
 
 5. 散發裝置。 iOS 裝置現在已向 Intune 註冊並且受管理。
-

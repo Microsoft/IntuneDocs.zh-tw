@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>您的 Android 裝置遺失通常已預先安裝於手機上的憑證
 
 如果您的裝置未在 Intune 中註冊，且遺失通常已安裝在手機上的憑證，您將無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息︰
@@ -51,4 +48,3 @@ ms.lasthandoff: 05/23/2017
 > 如果安裝憑證無法解決問題，且您看到不同的「遺失憑證」訊息，您將需要採取額外的步驟以[安裝遺失的憑證](your-device-is-missing-an-IT-required-certificate-android.md)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

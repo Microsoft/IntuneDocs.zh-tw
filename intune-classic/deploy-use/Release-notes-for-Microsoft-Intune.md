@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune 的版本資訊 | Microsoft Docs"
+title: "Microsoft Intune 的版本資訊"
 description: "Intune 版本資訊"
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2c7563ba79819a59740ba81c078c5540d0792ee5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="release-notes-for-microsoft-intune"></a>Microsoft Intune 的版本資訊
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -78,7 +75,7 @@ Microsoft will continue to work closely with Samsung on a fix or additional work
 ## <a name="microsoft-intune-app-wrapping-tool-for-android-has-no-built-in-uninstall-capability"></a>適用於 Android 的 Microsoft Intune 應用程式包裝工具沒有任何內建的解除安裝功能
 **問題：****Microsoft App Wrapping Tool for Android** 沒有任何內建功能可用來解除安裝工具。
 
-**因應措施：** 瀏覽至安裝工具的位置，然後刪除該目錄。 預設安裝位置為：**C:\Program Files /intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)。
+**因應措施：** 瀏覽至安裝工具的位置，然後刪除該目錄。 預設安裝位置為：**C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool。 如需 App Wrapping Tool 的詳細資訊，請參閱[準備將 Android 應用程式交由 App Wrapping Tool 管理](/intune/app-wrapper-prepare-android)。
 
 ## <a name="remote-assistance-is-not-available-on-computers-that-run-windows-8-or-windows-81"></a>執行 Windows 8 或 Windows 8.1 的電腦無法使用遠端協助
 **問題：** 在這個版本中，遠端協助功能無法在執行 Windows 8 或 Windows 8.1 的電腦上使用。
@@ -94,4 +91,3 @@ Microsoft will continue to work closely with Samsung on a fix or additional work
 Azure 入口網站支援下列語言：簡體中文、繁體中文、捷克文、荷蘭文、英文、德文、匈牙利文、義大利文、日文、葡萄牙文 (巴西)、葡萄牙文 (葡萄牙)、俄文、西班牙文、英文、法文、韓文、波蘭文、瑞典文、土耳其文。
 
 Intune 管理主控台和使用者導向的行動體驗支援丹麥文、希臘文、芬蘭文、挪威文和羅馬尼亞文，以及 Azure 入口網站支援的所有語言。
-

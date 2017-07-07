@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 081798753f3e962e0ca500097fc55e021802c73d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>您需要升級裝置以安裝 Outlook 應用程式
 
 不論 [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) 或 [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) 裝置，Outlook 應用程式皆可協助數百萬名使用者在單一的方便位置中，連接所有電子郵件帳戶、行事曆和檔案。
@@ -39,4 +35,3 @@ ms.lasthandoff: 05/23/2017
 點選 [設定] > [一般] > [軟體更新]。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

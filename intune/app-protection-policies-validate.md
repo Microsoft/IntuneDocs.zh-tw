@@ -1,7 +1,7 @@
 ---
 title: "驗證應用程式保護原則"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰本主題說明如何測試及驗證您的應用程式保護原則設定正確且正常運作。"
+titleSuffix: Intune on Azure
+description: "本主題說明如何測試及驗證您的應用程式保護原則設定正確且正常運作。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何驗證您的應用程式保護原則設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-本主題提供有關如何在設定應用程式保護原則之後檢查問題的資訊。 本指南適用於 Azure 入口網站**預覽版**的應用程式保護原則。
+本主題提供有關如何在設定應用程式保護原則之後檢查問題的資訊。 本指南適用於 Azure 入口網站的應用程式保護原則。
 
 ### <a name="checking-for-symptoms"></a>檢查有無徵兆
 因為 MAM 是資料保護工具，所以無法讓使用者回報問題。 當 MAM 設定有問題時，因為缺少了應用程式保護，所以使用者存取將不會受到限制，而且也不會察覺到發生問題。 因此建議您先對一小群可以協助仔細測試這些應用程式保護限制的使用者來試驗您的應用程式保護原則，從而驗證您的應用程式保護設定。
@@ -61,4 +58,3 @@ ms.lasthandoff: 05/23/2017
 ### <a name="see-also"></a>請參閱
 
 [什麼是 Intune 應用程式保護原則？](app-protection-policies.md)
-

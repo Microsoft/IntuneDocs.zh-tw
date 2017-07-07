@@ -1,7 +1,7 @@
 ---
 title: "iOS 裝置的 Intune 電子郵件設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解您可用於設定 iOS 裝置之電子郵件連線的 Intune 設定。"
+titleSuffix: Intune on Azure
+description: "了解可用於設定 iOS 裝置上電子郵件連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f941247295761815804b2e91234ce664c90e06f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的電子郵件設定檔設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -43,4 +40,3 @@ ms.lasthandoff: 05/23/2017
 - **允許將訊息移至其他電子郵件帳戶** - 其可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
 - **允許從協力廠商應用程式傳送電子郵件** - 允許使用者選取此設定檔作為預設的帳戶來傳送電子郵件，以及允許在原生電子郵件應用程式中開啟協力廠商應用程式以開啟電子郵件，例如，將檔案附加至電子郵件。
 - **同步最近使用過的電子郵件地址** - 使用者可利用此功能，將裝置上最近使用過的電子郵件地址清單，與伺服器同步。
-

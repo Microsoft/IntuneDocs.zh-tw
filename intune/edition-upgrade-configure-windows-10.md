@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 設定 Windows 10 版本升級"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何使用 Intune 將您管理的 Windows 10 裝置升級到其他版本。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune，將您管理的 Windows 10 裝置升級到其他版本。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 59a29cee51f228c647a2491a2e452555ac5aba05
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 10 版本升級
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用本主題中的資訊，了解如何設定 Windows 10 版本升級設定檔。 針對執行下列任一 Windows 10 版本的裝置，此設定檔可讓您自動將裝置升級為不同的版本：
 
@@ -52,7 +49,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>建立內含裝置限制設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
@@ -68,5 +65,4 @@ ms.lasthandoff: 05/23/2017
 
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
-
 

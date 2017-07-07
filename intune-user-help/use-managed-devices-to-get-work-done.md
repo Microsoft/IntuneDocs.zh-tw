@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
 
@@ -101,4 +97,3 @@ Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
 您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您的 IT 管理員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
-

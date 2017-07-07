@@ -1,5 +1,5 @@
 ---
-title: "保護 Dynamics CRM Online | Microsoft Docs"
+title: "保護 Dynamics CRM Online"
 description: "使用條件式存取保護與控制對 Dynamics CRM Online 的存取。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 限制對 Dynamics CRM Online 的存取
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,8 +81,8 @@ ms.lasthandoff: 05/23/2017
   * **iOS**
   * **Android**
 4.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
-5.    選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
-6.    完成之後，請選擇 [儲存]。
+5.  選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+6.  完成之後，請選擇 [儲存]。
 
 您現在已設定 Dynamics CRM 的條件式存取。 您不需部署條件式存取原則，它會立即生效。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>監視相容性及條件式存取原則
@@ -104,4 +101,3 @@ ms.lasthandoff: 05/23/2017
 * [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

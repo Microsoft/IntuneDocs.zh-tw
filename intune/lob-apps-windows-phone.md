@@ -1,7 +1,7 @@
 ---
-title: "如何將 Windows Phone 企業營運應用程式新增至 Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解將 Windows Phone 企業營運應用程式新增至 Intune 的相關資訊。"
+title: "如何將 Windows Phone 企業營運應用程式新增至 Intune"
+titleSuffix: Intune on Azure
+description: "了解如何將 Windows Phone 企業營運應用程式新增至 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d9adb9a5120c83023bb25199f666f1352752562
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 5c27b1a7d0c24bacc206cabe65bd3529a50fc2b4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>步驟 1 - 指定軟體安裝檔
@@ -67,4 +65,3 @@ ms.lasthandoff: 05/23/2017
 2. 選擇 [新增]，將應用程式上傳至 Intune。
 
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
-

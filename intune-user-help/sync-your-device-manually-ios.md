@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-ios-device-manually"></a>手動同步處理您的 iOS 裝置
 
 有時從公司入口網站下載應用程式耗時太長。 如果發生這種情況，您可以嘗試手動同步處理裝置。 這表示你正在告訴裝置再試一次，以取得它可能難以下載的資訊。
@@ -44,4 +39,3 @@ ms.lasthandoff: 05/23/2017
 螢幕上會出現載入列，而且會載入到同步處理完成。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

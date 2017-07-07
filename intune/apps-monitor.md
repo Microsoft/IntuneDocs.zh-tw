@@ -1,7 +1,7 @@
 ---
-title: "如何監視應用程式資訊和指派 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰將應用程式指派給使用者或裝置之後，可以使用此資訊協助您監視其狀態。"
+title: "如何監視應用程式資訊和指派"
+titleSuffix: Intune on Azure
+description: "將應用程式指派給使用者或裝置之後，可以使用此資訊協助您監視其狀態。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7c39c904cd2a7bd20525d9072067c6e484b4437a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: d588ecc8f2e211b5a8ccdfe7b7720869cc6327b8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 監視應用程式資訊和指派
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 提供了許多方式，可讓您監視您所管理之應用程式的內容，以及它們的指派狀態。
 

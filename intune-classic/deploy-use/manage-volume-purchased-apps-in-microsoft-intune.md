@@ -14,15 +14,12 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理大量購買的應用程式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,4 +35,3 @@ Microsoft Intune 透過此種程式從應用程式市集匯入授權資訊、追
 
 - [管理 iOS 大量購買的應用程式](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 - [從商務用 Windows 市集管理大量購買的應用程式](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-

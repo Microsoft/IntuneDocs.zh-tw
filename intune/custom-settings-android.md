@@ -1,7 +1,7 @@
 ---
 title: "Android 裝置的 Intune 自訂設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解可用於 Android 自訂設定檔中的設定。"
+titleSuffix: Intune on Azure
+description: "了解可用於 Android 自訂設定檔中的設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的自訂設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune Android **自訂**設定檔來指派 OMA-URI 設定，以用於控制 Android 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
@@ -43,4 +40,3 @@ ms.lasthandoff: 05/23/2017
     - **OMA-URI** - 指定您想要為其提供設定的 OMA-URI。
     - **值** - 輸入要與您所輸入之 OMA-URI 相關聯的值。
 4. 完成設定之後，請按一下 [確定]，然後再視需要新增更多設定。
-

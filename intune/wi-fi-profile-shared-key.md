@@ -1,7 +1,7 @@
 ---
 title: "使用預先共用金鑰建立 Wi-Fi 設定檔"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰使用 Intune 自訂設定檔建立附有預先共用金鑰的 Wi-Fi 設定檔。"
+titleSuffix: Intune on Azure
+description: "使用 Intune 自訂設定檔建立附有預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 以下是如何使用 Intune 的**自訂裝置設定檔**建立附有預先共用金鑰的 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 > [!NOTE]
--    您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
+-   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
 - 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--    您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
+-   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
 -  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.    若要為 Android 或 Windows 建立附有預先共用金鑰的 Wi-Fi 設定檔或或採用 EAP Wi-Fi 設定檔，請在建立裝置設定檔時，為該裝置平台 (而不是 Wi-Fi 設定檔) 選擇 [自訂]。
+1.  若要為 Android 或 Windows 建立附有預先共用金鑰的 Wi-Fi 設定檔或或採用 EAP Wi-Fi 設定檔，請在建立裝置設定檔時，為該裝置平台 (而不是 Wi-Fi 設定檔) 選擇 [自訂]。
 
-2.    提供名稱和描述。
-3.    加入新的 OMA-URI 設定︰
+2.  提供名稱和描述。
+3.  加入新的 OMA-URI 設定︰
 
-   a.    輸入此 Wi-Fi 網路設定的名稱。
+   a.   輸入此 Wi-Fi 網路設定的名稱。
 
-   b。    輸入 OMA-URI 設定的描述，或者保留空白。
+   b。   輸入 OMA-URI 設定的描述，或者保留空白。
 
-   c.    **資料類型**︰設為 [字串]。
+   c.   **資料類型**︰設為 [字串]。
 
-   d.    **OMA-URI**：
+   d.   **OMA-URI**：
 
     - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
     最好使用未連線至許多無線網路的電腦，因為您必須搜尋每個設定檔才能找到正確檔案。
 3.     搜尋 XML 檔案，找出名稱正確的檔案。
 4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
-
