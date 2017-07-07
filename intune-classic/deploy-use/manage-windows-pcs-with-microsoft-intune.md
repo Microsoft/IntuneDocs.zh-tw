@@ -1,5 +1,5 @@
 ---
-title: "使用用戶端軟體管理電腦 | Microsoft Docs"
+title: "使用用戶端軟體管理電腦"
 description: "安裝 Intune 用戶端軟體管理 Windows 電腦。"
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 為管理行動裝置的組織提供全面的解決方案。 Intune 可以使用 Windows 10 作業系統內建的現代裝置管理功能，將 Windows 電腦做為行動裝置管理。 為了符合貴組織的管理需求，Intune 也可以使用 Intune 軟體用戶端將 Windows 電腦做為電腦管理。 此管理方法使用舊版 Windows 作業系統中的傳統電腦管理功能。
 
@@ -79,7 +78,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 
 當您使用 Intune 用戶端軟體管理 Windows 電腦時，可以只使用 [電腦管理] 區段下的原則。
 
-Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Server Active Directory 網域服務 /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) 在組織中的使用方式。 若要深入了解，請參閱[適用於新手的群組原則](https://technet.microsoft.com/library/hh147307.aspx)。
+Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Server Active Directory 網域服務 (AD DS) 群組原則物件 (GPO)。 如果您使用 Intune 管理已加入 Active Directory 網域的電腦，請[確定 Intune 原則不會與組織中其他 GPO 衝突](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts)。 若要深入了解，請參閱[適用於新手的群組原則](https://technet.microsoft.com/library/hh147307.aspx)。
 
   ![為新的 Windows 電腦原則選取範本](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 Intune 用戶端軟體通常是在背景中以無訊息模式執行，不需要太多使用者互動或疑難排解。 如需要解決電腦管理問題，可以查看記錄檔。 Intune 用戶端軟體和對應的記錄會安裝在 %Program Files%\Microsoft\OnlineManagement 目錄下。
 
 您也可以檢閱[Microsoft Intune 的用戶端設定疑難排解](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune)，查看可能會發生的問題，以及有無任何解決方法或因應措施。
-

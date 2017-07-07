@@ -1,5 +1,5 @@
 ---
-title: "使用 MAM 原則保護應用程式資料 | Microsoft Docs"
+title: "使用 MAM 原則保護應用程式資料"
 description: "本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的應用程式保護原則保護應用程式資料
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ ms.lasthandoff: 05/31/2017
 
 -   **在註冊協力廠商 MDM 解決方案中註冊：**此類別中的裝置通常是公司擁有的裝置。
 
-      > [!NOTE]
-      > 不建議您使用應用程式保護原則搭配協力廠商行動裝置應用程式管理或安全容器解決方案。
+    > [!NOTE]
+    > 不建議您使用應用程式保護原則搭配協力廠商行動裝置應用程式管理或安全容器解決方案。
 
 -   **未在任何 MDM 解決方案中註冊︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
 
@@ -135,4 +132,3 @@ MDM 解決方案：
 - [準備好設定應用程式保護原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [使用 Microsoft Intune 建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

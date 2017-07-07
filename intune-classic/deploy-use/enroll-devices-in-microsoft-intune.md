@@ -14,15 +14,12 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-for-management-in-intune"></a>註冊裝置以在 Intune 中管理
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -132,4 +129,3 @@ Intune 可以管理下列裝置平台︰
 - [裝置註冊的必要條件](prerequisites-for-enrollment.md)
 - [管理公司擁有的裝置](manage-corporate-owned-devices.md)
 - [支援的行動裝置及電腦](/intune/supported-devices-browsers#intune-supported-devices)
-

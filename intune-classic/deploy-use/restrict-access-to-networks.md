@@ -1,5 +1,5 @@
 ---
-title: "限制存取網路 (Cisco ISE) | Microsoft Docs"
+title: "使用 Cisco ISE 保護網路存取權"
 description: "使用 Cisco ISE 與 Intune，讓裝置向 Intune 註冊並符合原則，然後才存取 Cisco ISE 控制的 Wi-Fi 和 VPN。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>使用 Cisco ISE 與 Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租用戶和 Cisco ISE 伺服器之間共用的資訊
 下表列出您的 Intune 租用戶和 Cisco ISE 伺服器之間，針對受 Intune 管理之裝置所共用的資訊。
 
-|屬性|    說明|
+|屬性|  說明|
 |---------------|------------------------------------------------------------|
 |complianceState|指出裝置相容或不相容的 true 或 false 字串。|
 |isManaged|指出用戶端是否受 Intune 管理的 true 或 false 字串。|
@@ -192,4 +189,3 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 ### <a name="see-also"></a>請參閱
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF) (思科身分服務引擎管理指南 2.1 版)
-

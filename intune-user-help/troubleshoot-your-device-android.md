@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>修正 Android 裝置常見的問題
 
 有時候 Android 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](http://portal.manage.microsoft.com)上的連絡資訊，與您的 IT 系統管理員連絡。
@@ -45,4 +41,3 @@ ms.lasthandoff: 05/23/2017
 - [您的裝置顯示為已加密，但公司入口網站應用程式的說法不同](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [系統提示您在您的 Android 裝置上安裝裝置威脅防護應用程式](you-are-prompted-to-install-mtd-android.md)
 - [您必須解決裝置威脅防護應用程式在 Android 裝置上找到的威脅](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

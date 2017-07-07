@@ -1,5 +1,5 @@
 ---
-title: "保護 Exchange Online 的電子郵件 | Microsoft Docs"
+title: "保護 Exchange Online 的電子郵件"
 description: "使用條件式存取保護與控制 Exchange Online 上的公司電子郵件存取。"
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: c428d7f01872c9f0968bb69dc4dc1886a7c1828b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 限制 Exchange Online 和新版 Exchange Online Dedicated 的電子郵件存取
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -210,7 +206,7 @@ ms.lasthandoff: 05/31/2017
         任何用來存取 **Exchange Online** 的裝置都必須在 Intune 中註冊並符合原則。 使用**新式驗證**的任何用戶端應用程式都必須遵守條件式存取原則。 如果 Intune 目前不支援此平台，則會封鎖存取 **Exchange Online**。
 
         選取 [所有平台] 選項表示不論用戶端應用程式所回報的平台為何，Azure Active Directory 都會將此原則套用至所有驗證要求。 所有平台都必須經過註冊並符合規範，除了︰
-        *    必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
+        *   必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
         * 不支援例如 Mac OS 的平台。 即使這些平台的應用程式是使用新式驗證，仍會受到封鎖。
 
     -   **特定平台**
@@ -275,4 +271,3 @@ ms.lasthandoff: 05/31/2017
 - [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

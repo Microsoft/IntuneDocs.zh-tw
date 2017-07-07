@@ -1,5 +1,5 @@
 ---
-title: "註冊 Microsoft Intune 的 30 天免費試用 | Microsoft Docs"
+title: "註冊 Microsoft Intune 的 30 天免費試用"
 description: "註冊並設定免費的 Microsoft Intune 30 天評估。"
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 本文將逐步引導您註冊 Intune 試用及準備一些使用者來試用，您就能依據相關聯的評估指南了解 Intune 如何管理行動裝置。 <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 從 2016 年 12 月開始，Microsoft Intune 移至 Azure 入口網站，免費試用登入有些在 Azure 入口網站的 Intune，有些在傳統的 Intune 中。 如果您在 Azure 入口網站中試用，完成本文的步驟後，您會發現 [Intune Azure 預覽內容](/intune/what-is--intune)更實用。
+> 從 2016 年 12 月開始，Microsoft Intune 移至 Azure 入口網站，免費試用登入有些在 Azure 入口網站的 Intune，有些在傳統的 Intune 中。 如果您在 Azure 入口網站中試用，完成本文的步驟後，您會發現 [Intune Azure 預覽內容](/intune/what-is-intune)更實用。
 
 ## <a name="assumptions"></a>假設
 本註冊文章與評估指南假設您使用的是僅供評估用途的試用版，且您訂閱時想要以全新的環境開始。
@@ -41,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="sign-up-for-your-trial"></a>註冊試用版
 請造訪 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) 頁面並填寫表格以註冊試用版訂閱。
 
-如果您已經有工作或學校帳戶，而且想要將它用於您的 Intune 試用版，請改為依照[這些登入指示](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)執行作業。 但是，本文章和其評估指南是假設您沒有使用那些帳戶。
+如果您已經有工作或學校帳戶，而且想要將它用於您的 Intune 試用版，請改為依照[這些登入指示](/intune/account-sign-up)執行作業。 但是，本文章和其評估指南是假設您沒有使用那些帳戶。
 
 > [!TIP]
 > 如果您大部分的 IT 作業和使用者的地區設定都和您不一樣，您可以為您的試用版設定該地區設定以測試效能。
@@ -56,7 +53,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="add-users"></a>加入使用者
 在您離開 Office 365 系統管理中心到 Intune 之前，您需要新增一些使用者至您的試用帳戶。
 
-您可以在 Office 365 系統管理中心個別新增使用者，或透過上傳 .csv 檔案大量新增使用者。 我們支援以這兩種方式設定您的試用版。 但是，在您的生產環境中，您可能會想要使用您的 Azure Active Directory 使用者帳戶 (您可以在我們的[快速入門指南](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)本文章的[後續步驟](#Next-steps)一節中了解相關詳細資訊)。
+您可以在 Office 365 系統管理中心個別新增使用者，或透過上傳 .csv 檔案大量新增使用者。 我們支援以這兩種方式設定您的試用版。 但是，在您的生產環境中，您可能會想要使用您的 Azure Active Directory 使用者帳戶 (您可以在我們的[快速入門指南](/intune/users-permissions-add)本文章的[後續步驟](#next-steps)一節中了解相關詳細資訊)。
 
 ### <a name="add-an-individual-user"></a>新增個別使用者
 1. 選擇兩個選項的其中之一來新增使用者，以開啟可讓您建立使用者的表單。 只需要填寫已加上星號 (\*) 的項目。
@@ -110,8 +107,8 @@ ms.lasthandoff: 05/23/2017
 
 ![返回 Office 365 系統管理中心連結的影像](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Intune Azure 預覽
-Intune Azure 預覽使用三個入口網站︰
+### <a name="intune-on-azure"></a>Azure 上的 Intune
+在 Azure 上，您將針對 Intune 使用三個入口網站：
 - Office 365 系統管理中心 ([portal.office.com](https://portal.office.com))
 - Azure 中的 Intune 儀表板 ([portal.azure.com](https://portal.azure.com))
 - 傳統的 Intune 管理主控台 ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +135,8 @@ Intune Azure 預覽使用三個入口網站︰
 ### <a name="classic-intune"></a>傳統的 Intune
 評估案例：[評估 Microsoft Intune 中的行動裝置管理功能](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Intune Azure 預覽
-深入了解 [Introduction to Microsoft Intune in the Azure portal preview](/intune/what-is-intune) (Azure 入口網站預覽的 Microsoft Intune 簡介)。
+### <a name="intune-on-azure"></a>Azure 上的 Intune
+深入了解 [Azure 上的 Intune](/intune/what-is-intune)
 
 ### <a name="integration-with-other-products"></a>與其他產品整合
 深入了解搭配 Intune 使用您的 Azure Active Directory 使用者帳戶：
@@ -148,4 +145,3 @@ Intune Azure 預覽使用三個入口網站︰
 - [Multi-Factor Authentication 需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 深入了解使用 [Intune 搭配 System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
-

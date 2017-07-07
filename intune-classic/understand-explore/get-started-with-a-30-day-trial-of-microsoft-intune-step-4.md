@@ -1,5 +1,5 @@
 ---
-title: "建立原則以及將應用程式發行給使用者 | Microsoft Docs"
+title: "建立原則並將應用程式發佈給使用者"
 description: "當您註冊免費 30 天的 Intune 評估版時，如何建立原則並發行應用程式"
 keywords: 
 author: lindavr
@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>建立原則以及將應用程式發行給評估使用者
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -102,7 +98,6 @@ Intune 行動裝置管理指南到這裡已經結束，但您可以透過後續�
 ## <a name="next-steps"></a>後續步驟
 深入了解其他 [Intune 功能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 
-閱讀[使用 Intune 的常見方式](common-ways-to-use-intune.md)
+閱讀[使用 Intune 的常見方式](/intune/common-scenarios)
 
 轉換為[付費訂閱](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

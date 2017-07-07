@@ -1,5 +1,5 @@
 ---
-title: "設定訂閱使用 Lookout | Microsoft Docs"
+title: "設定訂閱帳戶使用 Lookout"
 description: "本主題提供有關如何設定 Lookout 裝置威脅防護的詳細資訊。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>設定 Lookout Mobile Threat Defense 訂閱
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ ms.lasthandoff: 05/23/2017
 
   ![Lookout 主控台首次登入頁面的螢幕擷取畫面](../media/mtp/lookout_mtp_initial_login.png) 一旦您接受並同意，系統會將您重新導向 Lookout 主控台。
 
-  如需登入問題的說明，請參閱 [Lookout 與 Intune 整合疑難排解](/intune-classic/troubleshoot/troubleshooting-lookout-integration)。
+  如需登入問題的說明，請參閱 [Lookout 與 Intune 整合疑難排解](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md)。
 
 3.  在 [Lookout 主控台](https://aad.lookout.com)中，從 [系統] 模組選擇 [連接器] 索引標籤，然後選取 [Intune]。
 
@@ -139,4 +136,3 @@ Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分�
 完成設定之後，Lookout Mobile Threat Defense 就會開始輪詢 Azure AD，找出對應至指定註冊群組的裝置。  您可以在 [裝置] 模組中找到已註冊裝置的相關資訊。  裝置的初始狀態會顯示為 [擱置中]。  在裝置上安裝、開啟及啟用 Lookout for Work 應用程式之後，裝置狀態將會變更。  如需如何取得發送至裝置之 Lookout for Work 應用程式的詳細資訊，請參閱[設定及部署 Lookout for Work 應用程式](configure-deploy-lookout-for-work-app.md)主題。
 ## <a name="next-steps"></a>後續步驟
 [在 Intune 中啟用 Lookout MTP 連線](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

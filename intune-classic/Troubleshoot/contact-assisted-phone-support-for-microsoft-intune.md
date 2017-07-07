@@ -1,5 +1,5 @@
 ---
-title: "連絡電話協助支援 | Microsoft Docs"
+title: "連絡電話協助支援 "
 description: "Microsoft Intune 協助支援電話號碼。"
 keywords: "上班時間"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e514aaf67881a754eb2e75b2920445536978a68c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 99d837e589ed981f2d14f5f89312a195f45d26e2
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune 的連絡電話協助支援
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -120,4 +117,3 @@ ms.lasthandoff: 05/23/2017
 |烏拉圭|全年無休|星期一到星期五<br /><br />09:00 – 17:00 UYST (UTC -2)|西班牙文*、英文|000-411-002-7131||
 |委內瑞拉|全年無休|星期一到星期五<br /><br />09:00 – 17:00 VET (UTC -4:30)|西班牙文*、英文|0-800-100-8763||
 * 提供電話口譯支援。
-

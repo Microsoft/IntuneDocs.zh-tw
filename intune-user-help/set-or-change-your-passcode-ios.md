@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>設定或變更密碼
 
 如果您的 iOS 裝置不符合您的 IT 系統管理員密碼原則，則會出現訊息，簡要說明問題，並說明您需要如何讓您的密碼符合需求。
@@ -46,4 +42,3 @@ IT 系統管理員可以設定多個密碼需求。 例如，密碼可能必須�
 3. 輸入符合 IT 系統管理員需求的新密碼，然後再輸入一次予以確認。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

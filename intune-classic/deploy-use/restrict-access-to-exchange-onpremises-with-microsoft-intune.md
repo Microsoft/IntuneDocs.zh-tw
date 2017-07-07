@@ -1,5 +1,5 @@
 ---
-title: "保護 Exchange On-prem 的電子郵件 | Microsoft Docs"
+title: "保護 Exchange 內部部署的電子郵件"
 description: "使用條件式存取保護與控制 Exchange 內部部署上的公司電子郵件存取。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 58d89fed98994c3c1bf77118a26592c855e8498e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -137,4 +134,3 @@ ms.lasthandoff: 05/31/2017
 -   [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

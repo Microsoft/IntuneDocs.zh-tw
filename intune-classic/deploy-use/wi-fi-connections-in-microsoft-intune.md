@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi 連線 | Microsoft Docs"
+title: "Wi-Fi 連線"
 description: "使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路。"
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>將裝置設為連接至您的公司 Wi-Fi 網路
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ ms.lasthandoff: 05/23/2017
 
 -   Android 4.0 及更新版本
 
--    Android for Work   
+-   Android for Work   
 
 -   iOS 8.0 和更新版本
 
@@ -181,4 +178,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="see-also"></a>請參閱
 在[預先共用金鑰 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)中，了解如何使用預先共用的金鑰來建立 Wi-Fi 設定檔。
-

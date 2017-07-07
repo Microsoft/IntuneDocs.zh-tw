@@ -1,5 +1,5 @@
 ---
-title: "管理執行 Intune 軟體用戶端之電腦的軟體授權合約 | Microsoft Docs"
+title: "管理執行 Intune 軟體用戶端之電腦的軟體授權合約"
 description: "Intune 可讓您管理透過 Microsoft 大量授權合約購買之軟體，與透過其他方式購買之軟體的授權合約。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購買之軟體的授權合約資訊。 您也可以為透過其他方式購買的 Microsoft 或非 Microsoft 軟體執行此動作。 您可以將這項資訊組織成邏輯群組。
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 |重新命名授權群組|在 **[授權]** 工作區中，選擇授權群組，然後從 **[工作]** 功能表選擇 **[編輯授權群組]**。|
 |刪除授權群組|在 **[授權]** 工作區中，選擇授權群組，然後從 **[工作]** 功能表選擇 **[刪除授權群組]**。 **提示：**已刪除之群組中的所有授權都會移到 [未指派的合約] 授權群組中。|
 |刪除授權合約|在 **[授權]** 工作區中，選擇合約，然後選擇 **[刪除]**。 **提示：**在刪除大量授權合約之後，若要更新授權資訊，請在 **[授權概觀]** 頁面上或特定授權群組的 **[一般]** 索引標籤上，選擇 **[立即重新整理]**。|
-

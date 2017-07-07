@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
 您必須先註冊 Android 裝置，才能用其存取公司電子郵件、應用程式和其他工作資料。 在註冊程序期間，您會設定工作設定檔，以將裝置上的個人資料與工作資料區隔開來。 IT 系統管理員只能管理含有您的工作資料的工作設定檔。 IT 系統管理員無法管理您的裝置上的個人資料。 進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
@@ -88,4 +83,3 @@ ms.lasthandoff: 05/23/2017
     ![Play Store for Work 應用程式頁面](./media/andr-afw-tap-work-play-store-icon.png)
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

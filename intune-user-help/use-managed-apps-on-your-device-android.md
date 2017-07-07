@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 371e534a25df470edf2731b901640092e1a6e366
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 
 受管理應用程式是 IT 系統管理員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 Android 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
@@ -78,4 +73,3 @@ ms.lasthandoff: 05/23/2017
 -   Microsoft Word、Excel 和 PowerPoint
 
 針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

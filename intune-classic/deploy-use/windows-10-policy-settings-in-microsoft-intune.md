@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 原則設定 | Microsoft Docs"
+title: "Windows 10 原則設定"
 description: "使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dd81102eb768ab8ad5f9ee1d2f122f15a8e17b89
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -118,12 +115,12 @@ ms.lasthandoff: 05/23/2017
 
 |設定名稱|其他資訊 (如有需要)|
 |----------------|----------------------|
-|**允許網頁瀏覽器**|允許在裝置上使用 Edge 網頁瀏覽器<br>(僅限 Windows 10 行動裝置版)|
+|**允許網頁瀏覽器**|允許在裝置上使用 Microsoft Edge 網頁瀏覽器<br>(僅限 Windows 10 行動裝置版)|
 |**允許網址列中的搜尋建議**|讓您的搜尋引擎在您輸入搜尋片語時建議網站|
 |**允許將內部網路流量傳送到 Internet Explorer**|讓使用者在 Internet Explorer 中開啟內部網路網站<br>(僅限 Windows 10 Desktop)|
-|**允許不要追蹤**|設定 Edge 瀏覽器以傳送「不要追蹤」標頭給使用者瀏覽的網站|
+|**允許不要追蹤**|設定 Microsoft Edge 瀏覽器以傳送「不要追蹤」標頭給使用者瀏覽的網站|
 |**啟用 SmartScreen**||
-|**允許動態指令碼處理**|允許在 Edge 瀏覽器中執行 JavaScript 等指令碼|
+|**允許動態指令碼處理**|允許在 Microsoft Edge 瀏覽器中執行 JavaScript 等指令碼|
 |**允許快顯視窗**|僅使用於 Windows 10 桌面版|
 |**允許 Cookie**||
 |**允許自動填入**|可讓使用者變更瀏覽器中的自動完成設定<br>(僅限 Windows 10 Desktop)|
@@ -214,4 +211,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

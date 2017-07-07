@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
 
 有時嘗試在 Windows 裝置上安裝應用程式，所花的時間比您以為的長。 如果發生這種情況，您可以嘗試手動同步處理您的 Windows 裝置。 同步處理有助於加速安裝。
@@ -134,4 +130,3 @@ ms.lasthandoff: 05/23/2017
    「我們正在同步您的帳戶」訊息會顯示在畫面頂端，直到您的裝置完成同步為止。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

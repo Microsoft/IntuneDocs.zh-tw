@@ -1,11 +1,11 @@
 ---
-title: "裝置註冊疑難排解| Microsoft Docs"
+title: "裝置註冊疑難排解"
 description: "裝置註冊問題的疑難排解建議。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ ms.lasthandoff: 05/23/2017
 
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
 
--    [準備在 Microsoft Intune 中註冊裝置](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [設定 iOS 和 Mac 裝置管理](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [設定 Windows 裝置管理](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [設定 Android 裝置管理](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 不需要其他步驟
--    [設定 Android for Work 裝置管理](/intune-classic/deploy-use/set-up-android-for-work)
+-   [準備在 Microsoft Intune 中註冊裝置](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [設定 iOS 和 Mac 裝置管理](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [設定 Windows 裝置管理](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [設定 Android 裝置管理](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 不需要其他步驟
+-   [設定 Android for Work 裝置管理](/intune-classic/deploy-use/set-up-android-for-work)
 
 您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
 
@@ -110,8 +107,8 @@ ms.lasthandoff: 05/23/2017
 
 1.  確認所設定的 MDM 授權單位適用於您使用的 Intune 服務類型，這些服務包括 Intune、Office 365 或 System Center Configuration Manager (含 Intune)。 若是 Intune，MDM 授權單位會在 [管理員] &gt; [行動裝置管理] 中設定。 若是具備 Intune 的 Configuration Manager，您會在設定 Intune 連接器時進行設定；至於 Office 365，則為 [行動裝置] 設定。
 
-    > [!NOTE]
-    > 設定 MDM 授權單位之後，您只能遵循[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡支援人員以進行變更。
+    > [!NOTE]    
+    > 在 Configuration Manager 1610 版或更新版本及 Microsoft Intune 1705 版中，您可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資訊，請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 2.  確認使用者的認證已正確地與 Azure Active Directory 同步處理，方法是檢查使用者的 UPN 是否符合 Office 365 入口網站中的 Active Directory 資訊。
     如果 UPN 與 Active Directory 資訊不符：
@@ -230,16 +227,16 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
 
-1.    在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] 按鈕，選擇 [執行] 並輸入 **certlm.msc**，以啟動本機電腦的「憑證管理」主控台。
-2.    展開 [個人] 並選取 [憑證]。
-3.    尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
-4.    選取 [憑證路徑] 索引標籤來查看憑證的父憑證。
-5.    在每個父憑證上，選取 [檢視憑證]。
-6.    按一下 [詳細資料] 索引標籤，然後按一下 [複製到檔案]。
-7.    按照精靈的提示將憑證的公開金鑰匯出或儲存到想要的檔案位置。
-8.    以滑鼠右鍵按一下 [憑證]，選取 [所有工作] > [匯入]並按照精靈的提示進行，以將在步驟 3 匯出的父憑證匯入到 Computer\Personal\Certificates。
-9.    重新啟動 AD FS 伺服器。
-10.    在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
+1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] 按鈕，選擇 [執行] 並輸入 **certlm.msc**，以啟動本機電腦的「憑證管理」主控台。
+2.  展開 [個人] 並選取 [憑證]。
+3.  尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
+4.  選取 [憑證路徑] 索引標籤來查看憑證的父憑證。
+5.  在每個父憑證上，選取 [檢視憑證]。
+6.  按一下 [詳細資料] 索引標籤，然後按一下 [複製到檔案]。
+7.  按照精靈的提示將憑證的公開金鑰匯出或儲存到想要的檔案位置。
+8.  以滑鼠右鍵按一下 [憑證]，選取 [所有工作] > [匯入]並按照精靈的提示進行，以將在步驟 3 匯出的父憑證匯入到 Computer\Personal\Certificates。
+9.  重新啟動 AD FS 伺服器。
+10. 在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
 使用者現在應該能夠在 Android 裝置上登入公司入口網站。
 
 **驗證憑證已正確安裝**：
@@ -261,10 +258,10 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|找不到註冊原則|請檢查所有註冊必要條件 (例如 APNs 憑證)，並確認已設定並啟用 [iOS as a platform]\(iOS 即平台)。 如需指示，請參閱[設定 iOS 和 Mac 裝置管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceCapReached|已經註冊過多行動裝置。|註冊其他行動裝置之前，使用者必須先從公司入口網站移除目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示︰[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
-|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連接已註冊 iOS 裝置的管道。 若未執行取得 APNs 憑證的步驟，或者 APNs 憑證已過期，則嘗試註冊將會失敗，且會出現此訊息。<br /><br />如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[組織使用者和裝置](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)。|
+|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連接已註冊 iOS 裝置的管道。 若未執行取得 APNs 憑證的步驟，或者 APNs 憑證已過期，則嘗試註冊將會失敗，且會出現此訊息。<br /><br />如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](/intune/users-permissions-add) 和[組織使用者和裝置](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)。|
 |AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連接已註冊 iOS 裝置的管道。 若未執行取得 APNs 憑證的步驟，或者 APNs 憑證已過期，則嘗試註冊將會失敗，且會出現此訊息。<br /><br />如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS 8.0 版或更新版本。<br /><br />|確定您的使用者裝置正在執行 iOS 8.0 版或更新版本。|
-|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們擁有的授權類型錯誤，不能用於指定的行動裝置管理授權單位。 例如，如果已指定 Intune 做為行動裝置管理授權單位，而他們使用的是 System Center 2012 R2 Configuration Manager 授權，他們就會發現這個錯誤。<br /><br />如需詳細資訊，請檢閱下列內容：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)，以及[同步處理 Active Directory 並將使用者新增至 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[組織使用者和裝置](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)，以取得如何設定使用者的資訊。|
+|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們擁有的授權類型錯誤，不能用於指定的行動裝置管理授權單位。 例如，如果已指定 Intune 做為行動裝置管理授權單位，而他們使用的是 System Center 2012 R2 Configuration Manager 授權，他們就會發現這個錯誤。<br /><br />如需詳細資訊，請檢閱下列內容：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)，以及[同步處理 Active Directory 並將使用者新增至 Intune](/intune/users-permissions-add) 和[組織使用者和裝置](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)，以取得如何設定使用者的資訊。|
 |MdmAuthorityNotDefined|尚未定義行動裝置管理授權單位。<br /><br />|尚未在 Intune 中指定行動裝置管理授權單位。<br /><br />檢閱[開始使用 Microsoft Intune 30 天試用版](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中＜步驟 6：註冊行動裝置並安裝應用程式＞一節中的項目 #1。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>裝置處於非使用狀態或管理員主控台無法與它們通訊
@@ -413,4 +410,3 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 ### <a name="next-steps"></a>後續步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-

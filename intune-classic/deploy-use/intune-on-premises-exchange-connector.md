@@ -1,5 +1,5 @@
 ---
-title: "適用於內部部署 EAS 的 Exchange Connector | Microsoft Docs"
+title: "適用於內部部署 EAS 的 Exchange Connector"
 description: "使用 Connector 工具啟用 Intune 管理主控台和內部部署 Exchange Server 之間的通訊，以進行 Exchange ActiveSync MDM。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d6954e852f33456258fd0d214c00aa9438fa716c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c820a7071340599be161dd92441720f1eb7e9ff7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ ms.lasthandoff: 05/23/2017
 |作業系統|在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此 Connector。|
 |Microsoft Exchange|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為**新**或**舊版**設定，請連絡您的帳戶管理員。|
 |行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)。|
-|硬體|安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。|
-|Active Directory 同步處理|您必須[設定 Active Directory 同步處理](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。|
+|硬體|安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。|/intune/users-permissions-add
+|Active Directory 同步處理|您必須[設定 Active Directory 同步處理](/intune/users-permissions-add)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。|
 |其他軟體|託管連接器的電腦必須安裝 Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完整安裝。|
 |Network (網路)|安裝連接器的電腦所在的網域，必須與託管 Exchange Server 的網域有信任關係。<br /><br />電腦需要設定，使其能夠在連接埠 80 和 443 上，透過防火牆和 Proxy 伺服器來存取 Intune 服務。 Intune 使用的網域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
@@ -134,4 +131,3 @@ ms.lasthandoff: 05/23/2017
 
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
-

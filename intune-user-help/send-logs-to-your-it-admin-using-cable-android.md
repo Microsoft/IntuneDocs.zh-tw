@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>使用 USB 纜線將記錄檔傳送給您的 IT 系統管理員
 
 如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，您可以使用電子郵件將訊息傳送給 IT 系統管理員，協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
@@ -43,4 +38,3 @@ ms.lasthandoff: 05/23/2017
 4.  選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給您的 IT 系統管理員。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以註冊 Android 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)。
@@ -79,7 +74,7 @@ ms.lasthandoff: 05/23/2017
 10.  如果您是使用 Android 6.0 或更新版本，請執行此步驟。 否則請移到下一個步驟。
 
     如果您的 IT 系統管理員已設定特定原則，您可能會看到下列訊息：
-    -    **是否允許公司入口網站進行和管理通話？**
+    -   **是否允許公司入口網站進行和管理通話？**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -87,7 +82,7 @@ ms.lasthandoff: 05/23/2017
 
     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
-    -    **是否允許公司入口網站存取您的連絡人？**
+    -   **是否允許公司入口網站存取您的連絡人？**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -139,4 +134,3 @@ ms.lasthandoff: 05/23/2017
 > 如果您的組織使用電信費用管理軟體，您需要完成幾個額外步驟，裝置才會完全註冊。 如需詳細資訊，請參閱[這裡](enroll-your-device-with-telecom-expense-management-android.md)。
 
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
-

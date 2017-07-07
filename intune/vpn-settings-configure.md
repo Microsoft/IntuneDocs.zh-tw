@@ -1,12 +1,12 @@
 ---
 title: "如何設定 Intune VPN 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何在管理的裝置上使用 Intune 設定 VPN 連線。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 在您管理的裝置上設定 VPN 連線。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8a8742d0b579fec734dd8335e2a610d126db21fa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 VPN 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 裝置使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 在 Microsoft Intune 中使用「VPN 設定檔」，將 VPN 設定指派給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到網路。
 
@@ -36,12 +33,11 @@ ms.lasthandoff: 05/23/2017
 
 您可使用下列連線類型，建立 VPN 設定檔︰
 
-||||||||
+|連線類型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|連線類型|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|是|是|是|是|是|是|
 |Cisco (IPSec)|否|是|否|否|否|否|
-|Citrix|是|是|否|否|否|否|
+|Citrix|是 (僅 Android)|是|否|否|否|否|
 |F5 Edge Client|是|是|是|是|是|是|
 |Dell SonicWALL Mobile Connect|是|是|是|是|是|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
@@ -61,13 +57,14 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>建立內含 VPN 設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為 VPN 設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 VPN 設定的裝置平台。 您目前可為 VPN 裝置設定，選擇下列平台之一︰
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -75,7 +72,7 @@ ms.lasthandoff: 05/23/2017
     - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [VPN]。
 7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android 設定](vpn-settings-android.md)
+    - [Android 和 Android for Work 設定](vpn-settings-android.md)
     - [iOS 設定](vpn-settings-ios.md)
     - [macOS 設定](vpn-settings-macos.md)
     - [Windows Phone 8.1 設定](vpn-settings-windows-phone-8-1.md)
@@ -100,4 +97,3 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 ### <a name="user-name-and-password"></a>使用者名稱和密碼
 
 使用者藉由提供使用者名稱和密碼向 VPN 伺服器進行驗證。
-

@@ -1,5 +1,5 @@
 ---
-title: "iOS 裝置的 Apple DEP 管理 | Microsoft Docs"
+title: "iOS 裝置的 Apple DEP 管理"
 description: "部署註冊設定檔，以藉由「無線」方式註冊透過 iOS 裝置註冊方案 (DEP) 購買的 iOS 裝置，進而管理 Apple 裝置。"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>註冊屬公司擁有的裝置註冊方案 iOS 裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -81,8 +78,8 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
    - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後才能以該使用者身分存取公司資料與電子郵件。 如果受 DEP 管理的裝置是屬於使用者，且裝置會使用公司入口網站 (以安裝應用程式)，則必須為此裝置設定**使用者親和性**。 在具有使用者親和性的 DEP 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 當第一次登入時必須變更密碼的新使用者，在 DEP 裝置上進行註冊期間無法收到提示。 此外，密碼已過期的使用者也不會在 DEP 註冊期間收到提示要重設其密碼，且必須從不同的裝置重設密碼。
 
-       >[!NOTE]
-       >具有使用者親和性的 DEP 必須啟用 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)，才能要求使用者權杖。 [深入了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+    >[!NOTE]
+    >具有使用者親和性的 DEP 必須啟用 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)，才能要求使用者權杖。 [深入了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
    - **無使用者親和性**：該裝置不會與使用者建立關聯。 如果裝置只會用來執行工作而不存取本機使用者資料，請使用這種關聯。 在這種情況下，需要使用者關聯的應用程式將無法運作 (包括用於安裝企業營運應用程式的公司入口網站應用程式)。
 
@@ -173,4 +170,3 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 ### <a name="see-also"></a>請參閱
 [註冊裝置的必要條件](prerequisites-for-enrollment.md)
-

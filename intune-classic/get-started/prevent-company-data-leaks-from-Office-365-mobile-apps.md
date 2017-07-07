@@ -14,15 +14,12 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>快速入門指南︰防止公司資料從 Office 365 行動應用程式外洩
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,4 +45,3 @@ Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資�
 [從非 Microsoft MDM 解決方案移轉到 Microsoft Intune](/intune-classic/deploy-use/migrate-to-intune)
 
 [將裝置註冊到 Intune MDM](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
-

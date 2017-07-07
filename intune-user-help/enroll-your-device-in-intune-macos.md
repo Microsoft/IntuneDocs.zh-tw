@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>在 Intune 註冊 macOS 裝置
 
 取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由 IT 系統管理員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -70,4 +66,3 @@ ms.lasthandoff: 05/23/2017
  ![已安裝 macOS 設定檔](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 是否仍需要協助？ 請洽詢您的 IT 系統管理員。 您可以在[公司入口網站](http://portal.manage.microsoft.com)中找到他們的連絡資訊。
-

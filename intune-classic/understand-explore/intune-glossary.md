@@ -1,26 +1,24 @@
 ---
-title: "Intune 字彙 | Microsoft Docs"
+title: "Intune 字彙"
 description: "了解 Microsoft Intune 中的一些術語"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 字彙
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,10 +27,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|App SDK|[Microsoft Intune App SDK](/intune-classic/develop/intune-app-sdk) 可讓您將功能新增至您的內部撰寫應用程式，讓 Intune 行動應用程式管理原則可以管理他們。|
-|App Wrapping Tool|建立企業營運應用程式包裝函式的[命令列應用程式](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)，因而可讓 Intune 行動應用程式管理原則管理應用程式。|
+|應用程式組態設定檔|在執行之前使用[特定設定](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)設定 iOS 應用程式。|
+|應用程式部署|可讓使用者[尋找、下載及安裝](/intune-classic/deploy-use/deploy-apps)他們需要的應用程式。|
+|應用程式監視|可讓您[檢閱與應用程式部署相關的最近狀態和活動](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)。|
+|應用程式保護資料移除工作|從使用者的裝置中[移除應用程式資料](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。|
+|應用程式保護原則|可確保使用者的應用程式符合您的[公司資料保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。|
+|應用程式報告|可讓您[檢閱有關應用程式部署狀態與活動的歷程記錄資料](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)。|
+|App SDK|[Microsoft Intune App SDK](/intune/app-sdk) 可讓您將功能新增至您的內部撰寫應用程式，讓 Intune 行動應用程式管理原則可以管理他們。|
+|應用程式解除安裝動作|可讓您從使用者的裝置[解除安裝應用程式](/intune-classic/deploy-use/deploy-apps)。|
+|App Wrapping Tool|建立企業營運應用程式包裝函式的[命令列應用程式](/intune/apps-prepare-mobile-application-management)，因而可讓 Intune 行動應用程式管理原則管理應用程式。|
 |可用安裝|使用這個動作部署應用程式時，應用程式會顯示在公司入口網站中，而且使用者可以[隨需安裝](/intune-classic/deploy-use/deploy-apps)。|
-|Azure 入口網站|很快就會引進的新 Intune 主控台。 此時，您可以使用 Azure 入口網站建立裝置的 [Intune MAM 原則](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。|
+|Azure 入口網站|即將引進的全新 Intune 主控台。 [深入了解全新入口網站](/intune/what-is-intune)。|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +61,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |部署|將應用程式或原則傳送至所管理裝置或使用者的動作。|
 |部署動作|[部署應用程式](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)時所進行的選擇。 您可以選擇將應用程式安裝設為必要、將應用程式安裝設為選擇性，也可以解除安裝應用程式。|
-|裝置註冊管理員|組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 [裝置註冊管理員 /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) 帳戶是特殊的 Intune 帳戶，最多可以註冊 1,000 部裝置。|
+|裝置註冊管理員|組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 [裝置註冊管理員 (DEM) 帳戶](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)是最多可註冊 1,000 部裝置的特殊 Intune 帳戶。|
 |裝置群組對應|協助您根據您或使用者可指派給裝置的裝置類別目錄 (例如 "Personal" 或 "Sales")，[自動將裝置新增至群組](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。|
 
 ## <a name="e"></a>E
@@ -64,7 +69,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |電子郵件設定檔|這個原則可以用來設定行動裝置上特定電子郵件用戶端的[電子郵件存取設定](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，以將使用者必須執行的設定量減到最少。|
 |EMS|Microsoft Enterprise Mobility + Security (之前為 Enterprise Mobility Suite) 會保護公司資料，同時讓使用者[存取應用程式和其所需的內容](https://www.microsoft.com/cloud-platform/enterprise-mobility)。|
-|使用者|使用 Intune 管理之[手機和電腦這類裝置的使用者](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
+|使用者|使用 Intune 管理之[手機和電腦這類裝置的使用者](/intune/end-user-educate)。|
 |註冊|Microsoft Intune 使用[註冊](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)來管理裝置，並允許其存取資源。|
 
 ## <a name="f"></a>F
@@ -99,8 +104,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |受管理的瀏覽器|一個[網頁瀏覽應用程式](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)，您可以在組織中使用 Microsoft Intune 來部署此應用程式。 受管理的瀏覽器原則會設定允許清單或封鎖清單，以限制受管理瀏覽器的使用者可瀏覽的網站。|
-|行動應用程式管理|[行動應用程式管理 /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) 可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
-|行動裝置管理|[行動裝置管理 /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) 可讓您在 Intune 中註冊裝置，以在這些裝置上進行佈建、設定、監視和採取動作。
+|行動應用程式管理|[行動應用程式管理 (MAM)](/intune/app-lifecycle) 可讓您針對使用者發行、推送、設定、保護、監視和更新行動應用程式。
+|行動裝置管理|[行動裝置管理 (MDM)](/intune/device-lifecycle) 可讓您在 Intune 中註冊裝置，以在這些裝置上進行佈建、設定、監視和採取動作。
 |MDM 授權單位|[MDM 授權單位](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。|
 |行動應用程式佈建原則|一個 iOS 原則，可協助您確定所部署 iOS 應用程式的[佈建設定檔](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)未過期。|
 |行動應用程式組態原則|一個 iOS 原則，用來在執行時[提供相容 iOS 應用程式的設定](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) (例如，公司名稱或伺服器位址)。|
@@ -148,4 +153,3 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Wi-Fi 設定檔|一種原則，可將[無線網路設定](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)部署至裝置，讓使用者連接至公司網路，而不需要知道或進行任何設定。
-

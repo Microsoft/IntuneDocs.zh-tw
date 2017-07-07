@@ -1,5 +1,5 @@
 ---
-title: "保護 SharePoint Online | Microsoft Docs"
+title: "保護 SharePoint Online"
 description: "使用條件式存取保護與控制 SharePoint Online 上的公司資料存取。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: e22686964df7415ece75361a645103006af43c51
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取 SharePoint Online
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -146,7 +143,7 @@ ms.lasthandoff: 05/31/2017
         用來存取 **SharePoint Online** 的任何裝置都必須在 Intune 中註冊並符合原則規範。 使用**新式驗證**的任何用戶端應用程式都必須遵守條件式存取原則。 如果 Intune 目前不支援此平台，則會禁止存取 **SharePoint Online**。
 
         選取 [所有平台] 選項表示不論用戶端應用程式所回報的平台為何，Azure Active Directory 都會將此原則套用至所有驗證要求。 所有平台都必須經過註冊並成為符合規範，除了︰
-        *    必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
+        *   必須註冊並符合規範的 Windows 裝置、使用內部部署 Active Directory 加入網域的 Windows 裝置，或兩者。
         * 不支援例如 Mac 的平台。 不過，使用來自這些平台之新式驗證的應用程式仍然會遭到封鎖。
 
     -   **特定平台**
@@ -197,4 +194,3 @@ ms.lasthandoff: 05/31/2017
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-

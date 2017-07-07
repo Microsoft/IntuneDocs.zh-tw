@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-windows-device-with-intune"></a>使用具有 Intune 的 Windows 裝置
 
 您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
@@ -57,4 +53,3 @@ Intune 也支援某些其他版本的 Windows，例如 [Windows 10 全像攝影�
 - [使用公司入口網站重設您的裝置會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)
 - [手動同步您的裝置](sync-your-device-manually-windows.md)
-
