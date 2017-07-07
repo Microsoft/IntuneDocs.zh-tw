@@ -1,7 +1,7 @@
 ---
-title: "針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰當您遭遇難解的問題時，可使用本主題協助您解決 Intune 裝置設定檔的問題。"
+title: "針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解"
+titleSuffix: Intune on Azure
+description: "當您遭遇難解的問題時，可使用本主題協助您解決 Intune 裝置設定檔的問題。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,19 +15,16 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f3586c4cbe37c44cc289ba3ea47bf127c150d35
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主題中的資訊可協助您針對 Intune 裝置設定檔的常見問題進行疑難排解。
 
