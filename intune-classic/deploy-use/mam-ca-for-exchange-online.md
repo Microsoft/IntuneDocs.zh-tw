@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online 的應用程式存取 | Microsoft Docs"
+title: "Exchange Online 的應用程式存取"
 description: "本主題說明如何設定 MAM 應用程式的條件式存取原則。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: df84bdf2358b596905299c7099ce22e128e9d17d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ef4a0c0e642026d625d7139b2ea2629cdd96930
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>建立 Exchange Online 條件式存取，只允許 MAM 支援的應用程式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ ms.lasthandoff: 05/23/2017
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>請參閱
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

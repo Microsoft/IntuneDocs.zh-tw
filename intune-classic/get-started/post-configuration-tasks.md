@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>組態後的工作
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ ms.lasthandoff: 06/08/2017
 -   **Intune 報告：**Microsoft Intune 提供可用來協助監視裝置的警示和報告，並提供軟體授權狀態及影響裝置的動作 (例如抹除裝置)。  若要深入了解報告，請參閱[透過使用報表來了解 Microsoft Intune 作業](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)。
 
 -   **保護公司資源：**在您設定 Intune 並註冊裝置之後，需要確定您是否已保護裝置，避免資料遺失和其他威脅。 若要深入了解保護資源，請參閱[使用 Microsoft Intune 保護應用程式和資料](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)。
-

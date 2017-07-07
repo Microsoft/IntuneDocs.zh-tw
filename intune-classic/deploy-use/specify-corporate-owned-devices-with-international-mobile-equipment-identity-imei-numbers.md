@@ -1,5 +1,5 @@
 ---
-title: "指定 IMEI 編號 | Microsoft Docs"
+title: "指定 IMEI 編號"
 description: "Microsoft Intune 允許系統管理員匯入行動裝置平台的 IMEI 編號，從而找出公司所擁有的行動裝置"
 keywords: 
 author: NathBarn
@@ -14,15 +14,12 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3388bce5bc4bb675b0342b463ed620c6023d51a2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d1ecc65dac893740b152aa743e6b32c5de5a3ec9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>使用國際行動設備識別碼 (IMEI) 編碼來指定公司擁有的裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -61,4 +58,3 @@ Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台
 > 當貴組織在不久的將來移轉到新的 Azure 入口網站後，您會看到這項功能的變更。 在現有的 Intune 系統管理員主控台中，管理員可以接受已上傳之 CSV 的相關詳細資料，並覆寫個別硬體識別碼的現有詳細資料。 在新的 Azure 入口網站中，您將可以自動覆寫所有硬體識別碼的詳細資料，或略過所有現有識別項的新詳細資料。
 
 如需國際行動設備識別碼的詳細規格，請參閱 [3GGPP TS 23.003 (英文)](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)。
-

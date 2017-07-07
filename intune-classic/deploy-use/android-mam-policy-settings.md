@@ -1,5 +1,5 @@
 ---
-title: "Android MAM 原則設定 | Microsoft Docs"
+title: "Android MAM 原則設定"
 description: "本主題說明適用於 Android 裝置的行動裝置應用程式管理原則設定。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ ms.lasthandoff: 05/31/2017
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式本身會執行選擇性抹除。 此選擇性抹除與系統管理員在 MAM 抹除工作流程中起始的抹除相同。 <br><br> | 90 天 |
 | **封鎖螢幕擷取及 Android 助手 (Android 6.0+)** | 選擇 [是]，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Android 助手] 功能。 選擇 [是]，也會在搭配使用這個應用程式與工作或學校帳戶時模糊應用程式切換器預覽影像。 | 否 |
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選擇 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 | 否 |
-

@@ -226,12 +226,12 @@
 ## [變更 MDM 授權單位](deploy-use/change-mdm-authority.md)
 
 ## [如何指導使用者使用 Intune](/intune/end-user-educate?toc=/intune-classic/toc.json)
-### [使用者看到的公司入口網站訊息](deploy-use/help-end-users-understand-company-portal-app-messages.md)
-### [使用已啟用 MAM 的應用程式的 Android 使用者體驗](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [使用已啟用 MAM 的應用程式的 iOS 使用者體驗](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-### [Android 使用者如何取得其應用程式](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS 使用者如何取得其應用程式](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows 使用者如何取得其應用程式](deploy-use/how-your-windows-users-get-their-apps.md)
+### [使用者看到的公司入口網站訊息](/intune/end-user-company-portal-messages?toc=/intune-classic/toc.json)
+### [使用已啟用 MAM 的應用程式的 Android 使用者體驗](/intune/end-user-mam-apps-android?toc=/intune-classic/toc.json)
+### [使用已啟用 MAM 的應用程式的 iOS 使用者體驗](/intune/end-user-mam-apps-ios?toc=/intune-classic/toc.json)
+### [Android 使用者如何取得其應用程式](/intune/end-user-apps-android?toc=/intune-classic/toc.json)
+### [iOS 使用者如何取得其應用程式](/intune/end-user-apps-ios?toc=/intune-classic/toc.json)
+### [Windows 使用者如何取得其應用程式](/intune/end-user-apps-windows?toc=/intune-classic/toc.json)
 
 
 # 開發和自訂應用程式
