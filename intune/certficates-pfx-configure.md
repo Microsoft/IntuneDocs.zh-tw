@@ -1,12 +1,12 @@
 ---
 title: "透過 Intune 設定並管理 PKCS 憑證"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證。"
+titleSuffix: Intune on Azure
+description: "了解如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>透過 Intune 設定並管理 PKCS 憑證
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主題說明如何透過 Intune 設定基礎結構，並建立及指派 PKCS 憑證設定檔。
 
@@ -118,7 +115,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="to-enable-support-for-the-certificate-connector"></a>啟用針對憑證連接器的支援
 
 1.  登入 Azure 入口網站。
-2.  選擇 [更多服務]  >  [其他]  >  [Intune]。
+2.  選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3.  在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
 2.  在 [裝置設定] 刀鋒視窗中選擇 [設定]  >  [憑證授權單位]。
 2.  在 [步驟 1] 中選擇 [啟用]。
@@ -190,12 +187,13 @@ ms.lasthandoff: 05/23/2017
         - **一般名稱**
         - **包括電子郵件的一般名稱**
         - **一般名稱及電子郵件地址**
-    - **主體別名**指定 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證將用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。
+    - **主體別名**指定 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證是用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。 
+    您也可以選取 [自訂 Azure AD 屬性]。 當您選取此選項時，會顯示另一個下拉式欄位。 [自訂 Azure AD 屬性] 下拉式欄位中有一個選項：[部門]。 當您選取此選項時，如果 Azure AD 中沒有識別部門，就不會發行憑證。 若要解決這個問題，請識別部門並儲存變更。 在下一次裝置簽入時，就會解決問題並發行憑證。 ASN.1 是用於此欄位的標記法。 
     - **擴充金鑰使用方法** (Android) - 選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]  ，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。 
     - **根憑證**- 選擇先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是將發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 這是您先前所建立的受信任憑證設定檔。
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後按一下 [建立]。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+就會建立設定檔，並顯示在 [設定檔清單] 刀鋒視窗上。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>如何指派憑證設定檔
 
@@ -208,4 +206,3 @@ ms.lasthandoff: 05/23/2017
 - 雖然您會分別指派每個設定檔，但仍需指派受信任的根 CA 以及 PKCS 設定檔。 否則，PKCS 憑證原則會失敗。
 
 如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
-

@@ -1,6 +1,7 @@
 ---
-title: "設定商務用 Windows Update 的設定 - Intune | Intune Azure 預覽版 | Microsoft Docs"
-description: "Intune Azure 預覽版︰了解如何在 Intune 中設定商務用 Windows Update 的設定，來控制 Windows 10 裝置的更新。"
+title: "設定商務用 Windows Update 的設定 - Intune"
+titleSuffix: Intune on Azure
+description: "了解如何在 Intune 中設定商務用 Windows Update 的設定，以控制 Windows 10 裝置的更新。"
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>如何使用 Microsoft Intune 設定商務用 Windows Update 的設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>簡介
 「Windows 即服務」是一種為 Windows 10 提供更新的新做法。 從 Windows 10 開始，任何新的「功能更新」和「品質更新」都會包含所有先前的更新內容。 這表示只要您安裝了最新的更新，就能確定您的 Windows 10 裝置已完全更新至最新版。 不同於舊版 Windows，您現在必須安裝整個更新而不是部分更新。
@@ -87,7 +85,7 @@ ms.lasthandoff: 05/23/2017
     - **自動更新行為**︰選擇要如何管理自動更新行為，以進行掃描、下載及安裝更新。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **品質更新延遲期間 (天)** - 指定品質更新將延遲的天數。 最多可以延遲接收「品質更新」至其發行後 30 天。  
 
-      品質更新通常會修正和改進現有的 Windows 功能，而且通常在每個月的第一個星期二發行，不過 Microsoft 也可能在任何時間發行。 您可以定義在品質更新發行後，「是否」要延遲以及延遲「多久」接收品質更新。
+    品質更新通常會修正和改進現有的 Windows 功能，而且通常在每個月的第一個星期二發行，不過 Microsoft 也可能在任何時間發行。 您可以定義在品質更新發行後，「是否」要延遲以及延遲「多久」接收品質更新。
     - **功能更新延遲期間 (天)** - 指定功能更新將延遲的天數。 您可以延遲接收「功能更新」至其發行後 180 天。
 
     功能更新一般是 Windows 的新功能。 設定 [服務分支] 設定之後 ([CB] 或 [CBB])，接著可以定義在功能更新發行後「是否」要延遲以及延遲「多久」在 Windows Update 上從 Windows 接收功能更新。
@@ -148,4 +146,3 @@ ms.lasthandoff: 05/23/2017
 > [!IMPORTANT]
 > 在您發出暫停命令後，裝置會在下次向服務確認時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。
 > 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
-

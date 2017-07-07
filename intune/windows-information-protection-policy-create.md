@@ -15,15 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
 ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -185,4 +182,3 @@ Windows 資訊保護 (WIP) 學習是一種報告，可讓系統管理員監視�
     [新增使用者群組] 刀鋒視窗中隨即會開啟使用者群組清單，此清單由 Azure Active Directory 中的所有安全性群組所組成。
 
 1.  選擇您要套用原則的群組，然後按一下 [選取] 來部署原則。
-
