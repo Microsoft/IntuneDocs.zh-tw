@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 macOS 裝置，會發生什麼情況？
 
 當您安裝公司入口網站應用程式，並且在 Intune 中註冊您的 iOS 或 macOS 裝置時，您可以使用公司入口網站應用程式執行下列動作：
@@ -68,4 +63,3 @@ ms.lasthandoff: 05/26/2017
 -   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 若允許自動同步檔案，可能會產生漫遊費用。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
-

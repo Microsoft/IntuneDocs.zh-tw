@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-ios-device"></a>您需要在 iOS 裝置上安裝 Skycure
 
 在存取您的工作之前，您的 IT 系統管理員會要求您安裝 Skycure 應用程式，這會尋找潛在的安全性威脅，有助於保護您的裝置。 裝置上可能會看到不同的提示，視 IT 管理員設定 Skycure 的方式而定。
 
 **您必須執行的作業：**
 
-1.    如果看到以下提示，請點選 [安裝] 允許 Skycure 安裝在您的裝置上。
+1.  如果看到以下提示，請點選 [安裝] 允許 Skycure 安裝在您的裝置上。
 
   ![點選 [安裝] 以安裝 Skycure](./media/ios-mtd-install-app-request.png)
 
@@ -57,4 +53,3 @@ ms.lasthandoff: 05/23/2017
 **若安裝無法運作**
 
 有時安裝會因為您無法控制的技術問題而失敗。 此種情況請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

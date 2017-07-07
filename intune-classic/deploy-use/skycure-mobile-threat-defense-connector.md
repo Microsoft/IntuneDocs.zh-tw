@@ -1,5 +1,5 @@
 ---
-title: "Skycure Mobile Threat Defense 連接器 | Microsoft Docs"
+title: "Skycure Mobile Threat Defense 連接器"
 description: "使用 Skycure Mobile Threat Defense 連接器與 Intune，根據裝置、網路和應用程式風險，保護對公司資源的存取。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -119,7 +116,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 以下是整合 Intune 與 Skycure 所需完成的步驟：
 
-1.  [將 Skycure 設定為使用 Azure Active Directory 單一登入 /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [設定 Skycure 使用 Azure Active Directory 單一登入 (SS)](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [下載 Skycure iOS 應用程式設定原則 (英文)](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
@@ -132,4 +129,3 @@ Intune 支援兩種與 Skycure 整合的模式：
 6.  [在 Intune 中啟用 Skycure Mobile Threat Defense (英文)](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 7.  [在 Intune 中建立 Skycure Mobile Threat Defense 合規性原則 (英文)](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

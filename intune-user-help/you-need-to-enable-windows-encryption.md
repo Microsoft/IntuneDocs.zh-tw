@@ -11,19 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be200787cf628e79e95ca40f5f733123aa2e58f9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="you-need-to-enable-encryption"></a>您必須啟用加密
 
@@ -32,4 +29,3 @@ ms.lasthandoff: 05/23/2017
 BitLocker 是一種軟體，可加密您的磁碟機，並有助於保護您的資料。 請遵循在 Windows 10 裝置上啟用 BitLocker 的[這些指示](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

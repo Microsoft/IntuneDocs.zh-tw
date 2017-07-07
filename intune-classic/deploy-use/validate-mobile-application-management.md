@@ -1,5 +1,5 @@
 ---
-title: "驗證您的 MAM 設定 |Microsoft Docs"
+title: "驗證您的 MAM 設定"
 description: "本主題說明如何測試並驗證 MAM 原則是否已正確設定且正常運作。"
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>驗證您的行動應用程式管理設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="what-to-do"></a>解決方式
 以下是要根據使用者狀態所採取的動作︰
 
-- 如果使用者不具有 MAM 授權，依照[管理 Intune 授權](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md)中所述將 Intune 授權指派給使用者。
+- 如果使用者不具有 MAM 授權，依照[管理 Intune 授權](/intune/setup-steps)中所述將 Intune 授權指派給使用者。
 - 如果使用者不具有 O365 授權，替使用者取得授權。
 - 如果使用者的應用程式列為 [未簽入 (Not checked in)]，檢查是否已替該應用程式正確地設定 MAM 原則。
 - 請確保這些條件會套用至您想要套用 MAM 原則的所有使用者。
@@ -59,4 +56,3 @@ ms.lasthandoff: 05/23/2017
 [準備使用 Microsoft Intune 設定行動應用程式管理原則](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Microsoft Intune 的行動應用程式管理原則保護應用程式資料](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

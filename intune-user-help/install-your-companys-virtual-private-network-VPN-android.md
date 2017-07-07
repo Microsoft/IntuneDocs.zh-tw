@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>如何安裝您公司的虛擬私人網路 (VPN)
 
 如果您的 IT 系統管理員已設定 VPN 應用程式，讓您連線到公司的資源，您會在 Android 裝置上看到通知，表示您需要安裝 VPN 應用程式。 請依照下列步驟安裝 VPN 應用程式：
@@ -39,4 +34,3 @@ ms.lasthandoff: 05/23/2017
 
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

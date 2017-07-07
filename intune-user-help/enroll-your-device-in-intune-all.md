@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7b4206d49731195dc08fed5e91942f6071789724
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-device-in-intune"></a>在 Intune 註冊您的裝置
 
 如果您的公司或學校使用 Microsoft Intune，您可以將裝置註冊為可存取公司電子郵件、檔案及其他資源。 註冊您的裝置，可讓您的組織保護公司資料的安全。 若要深入了解註冊以及 IT 系統管理員可以在裝置上看到和看不到的內容，請查看本主題底端的連結。
@@ -34,4 +30,3 @@ ms.lasthandoff: 05/23/2017
 - [在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
 - [在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
 - [在 Intune 註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)
-
