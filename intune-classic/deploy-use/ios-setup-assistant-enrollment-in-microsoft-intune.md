@@ -1,5 +1,5 @@
 ---
-title: "使用設定助理註冊 iOS 裝置 | Microsoft Docs"
+title: "使用設定助理註冊 iOS 裝置"
 description: "透過 Apple Configurator 工具將裝置重設為原廠設定，並使裝置準備好執行設定助理，來註冊屬公司擁有的 iOS 裝置。"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>搭配使用 Apple Configurator 與設定助理來註冊 iOS 裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ iOS 裝置會連線到 Mac 電腦並註冊，以進行行動裝置管理。
 
 ### <a name="see-also"></a>請參閱
 [註冊裝置的必要條件](prerequisites-for-enrollment.md)
-

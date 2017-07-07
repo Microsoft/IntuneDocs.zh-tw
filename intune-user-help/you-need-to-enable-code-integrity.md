@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-enable-code-integrity"></a>您必須啟用程式碼完整性
 
 保存組織資訊時，需使用不同類型的安全性來防範不同類型的問題。 為了保障安全性，其中一個方法是使用 Windows 程式碼完整性以確保深層程式 (驅動程式) 和系統檔案未受修改。
@@ -38,4 +34,3 @@ ms.lasthandoff: 05/23/2017
 如果您認為可以繼續，請參閱[停用安全開機](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)頁面上的＜重新啟用安全開機＞一節，嘗試自行啟用安全開機。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

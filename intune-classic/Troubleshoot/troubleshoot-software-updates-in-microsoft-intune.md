@@ -14,15 +14,12 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b33c5978c2cb27eb7e486d139e71937c41f48b28
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune 的軟體更新疑難排解
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -268,4 +265,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="next-steps"></a>後續步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-

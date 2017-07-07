@@ -1,5 +1,5 @@
 ---
-title: "使用受管理的瀏覽器管理 Web 存取 | Microsoft Docs"
+title: "使用 Managed Browser 管理 Web 存取"
 description: "部署受管理的瀏覽器應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 49ad005846265deb7d4b34b52a1c139e8f61372b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 -   如果裝置是第一次接收受管理的瀏覽器原則且有兩個原則發生衝突，則不會在裝置上強制執行 URL。 請使用 [原則]  工作區的 [原則衝突]  節點來檢視衝突。
 
 -   如果裝置已經接收受管理的瀏覽器原則且部署的第二個原則含有發生衝突的設定，則會在裝置上保留原始的設定。 請使用 [原則]  工作區的 [原則衝突]  節點來檢視衝突。
-

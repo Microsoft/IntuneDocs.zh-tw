@@ -1,6 +1,5 @@
 ---
-
-title: "Android 和 Samsung KNOX 原則設定 | Microsoft Docs"
+title: "Android 和 Samsung KNOX 原則設定"
 description: "建立可以在您使用 Intune 管理的 Android 裝置上控制設定及功能的原則。"
 keywords: 
 author: robstackmsft
@@ -15,15 +14,12 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c2652e405879d4506c40b500c489a5e92ad15282
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 07d49d9f9628dd296c3708a063de34d485c77acb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX Standard 原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -211,4 +207,3 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

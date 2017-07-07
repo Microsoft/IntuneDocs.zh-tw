@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>使用公司入口網站重設您的 iOS 裝置會發生什麼情況？
 
 當您使用公司入口網站重設 iPhone 或 iPad 時，裝置上的某些應用程式和設定可能會遭到刪除，包括您的某些個人資料。 每個裝置上發生的狀況，則取決於您使用該裝置的方式，如下列清單所述。
@@ -44,4 +39,3 @@ ms.lasthandoff: 05/23/2017
 -   將會刪除您的公司電子郵件帳戶和尚未儲存的電子郵件。
 
 如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

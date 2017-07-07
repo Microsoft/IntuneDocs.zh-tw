@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
   > [!NOTE]
@@ -67,4 +63,3 @@ ms.lasthandoff: 06/12/2017
 3. 在結果清單中，選取 [公司入口網站] > [安裝]。
 
 4. 選取 [安裝] 或 [免費]。 這兩個選項對您而言並沒有差別，所顯示的選擇取決於您的組織如何設定公司入口網站應用程式。
-

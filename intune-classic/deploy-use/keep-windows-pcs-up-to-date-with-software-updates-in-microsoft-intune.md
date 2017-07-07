@@ -1,5 +1,5 @@
 ---
-title: "Windows 電腦的軟體更新 | Microsoft Docs"
+title: "Windows 電腦的軟體更新"
 description: "Intune 會確保盡快安裝最新的修補程式和軟體更新，協助您將受管理的電腦保持在最新狀態。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 可協助您使用一些方式來保護受管理的電腦，包括管理軟體更新，透過確保快速安裝最新修補程式和軟體更新，讓電腦維持最新狀態。
 
 如果您尚未在電腦上安裝 Intune 用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
@@ -255,4 +255,3 @@ Microsoft Intune 可協助您使用一些方式來保護受管理的電腦，包
 
 ### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

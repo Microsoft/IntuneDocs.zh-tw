@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>您的密碼不符合 IT 系統管理員需求
 
 您用來存取公司或學校資源的密碼，不符合一或多項 IT 系統管理員所設定的需求。 若要修正此問題，請遵循裝置上顯示的下列指示。 下方列出問題的描述。
@@ -51,4 +47,3 @@ PIN 或密碼問題的描述：
 - **密碼不夠複雜，無法符合需求**。 IT 系統管理員要求您必須在密碼中使用更複雜的字元。 請嘗試使用數字、大寫的字母和 $ %和 # 這類符號。 這也適用於您裝置上的其他帳戶，因此請務必檢查任何其他工作帳戶，確保您的密碼符合 IT 為您的裝置所設定的需求。
 
 如果您無法了解如何讓您的密碼符合需求，請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

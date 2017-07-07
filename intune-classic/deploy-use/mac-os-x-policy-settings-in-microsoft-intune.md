@@ -1,5 +1,5 @@
 ---
-title: "Mac OS X 原則設定 | Microsoft Docs"
+title: "Mac OS X 原則設定"
 description: "Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設定。 此外，您可以使用 Apple Configurator 工具建立 Intune 所沒有的自訂設定。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 176f4343030c242d928aaeb486dfad78e1058644
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f4f1660f93724ee57f2d6567c2ac0f04660f49f8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Mac OS X 設定原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -123,4 +120,3 @@ Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設
 
 ### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

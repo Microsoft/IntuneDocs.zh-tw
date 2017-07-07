@@ -1,11 +1,11 @@
 ---
-title: "行動裝置註冊必要條件 | Microsoft Docs"
+title: "行動裝置註冊的必要條件"
 description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中的行動裝置管理先決條件
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ ms.lasthandoff: 05/23/2017
 ## <a name="step-1-enable-connections"></a>步驟 1：啟用連線
 
 啟用行動裝置註冊之前，請確定您已完成下列作業︰
-- [檢閱所需的網路 URL 和通訊埠](../get-started/network-bandwidth-use.md)
-- [新增和驗證網域名稱](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [檢閱所需的網路 URL 和通訊埠](/intune/network-bandwidth-use)
+- [新增和驗證網域名稱](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>步驟 2：設定 MDM 授權單位
 MDM 授權單位會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。 如果您將 Configuration Manager 設定為管理授權單位，就不能使用其他服務管理行動裝置。
 
 >[!IMPORTANT]
-> 請仔細考慮要單獨使用 Intune (線上服務) 還是使用具備 Intune 的 System Center Configuration Manager (搭配線上服務的內部部署軟體解決方案) 來管理行動裝置。 設定行動裝置管理授權單位之後，您一定要有 Microsoft 支援服務的協助才能變更它。 請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)以取得相關指示。
-
+> 在 Configuration Manager 1610 版或更新版本及 Microsoft Intune 1705 版中，您可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資訊，請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [系統管理] &gt; [行動裝置管理]。
 
@@ -116,7 +112,7 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 ## <a name="step-5-assign-user-licenses"></a>步驟 5：指派使用者授權
 
-您可以使用「Office 365 管理入口網站」手動新增雲端式使用者，並將授權同時指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure Active Directory (Azure AD) 的帳戶。 您可以[同步處理內部部署使用者與 Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)。
+您可以使用「Office 365 管理入口網站」手動新增雲端式使用者，並將授權同時指派給雲端式使用者帳戶，以及從內部部署 Active Directory 同步至 Azure Active Directory (Azure AD) 的帳戶。 您可以[同步處理內部部署使用者與 Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad)。
 
 1.  使用您的租用戶系統管理員認證登入 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)。
 
@@ -154,7 +150,13 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>選擇錯誤的 MDM 授權單位設定時該怎麼辦
 
-如果您決定您所選擇的 MDM 授權單位設定錯誤並且需要變更它，您必須連絡 Microsoft 支援服務。 您無法自行變更這些設定。 在連絡 Microsoft 支援服務之前，請檢閱下列資訊，這說明 Microsoft 支援服務進行變更時，需要您提供的資訊。
+如果您確定選擇了錯誤的 MDM 授權單位設定並且需要加以變更，則有下列選項。
+
+### <a name="change-the-mdm-authority-yourself"></a>自行變更 MDM 授權單位
+從 Configuration Manager 1610 版和 Microsoft Intune 1705 版開始，您可以在不需要連絡 Microsoft 支援服務的情況下將 MDM 授權單位從 Microsoft Intune 變更為 Configuration Manager (混合式) 或反之，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資料，請參閱[變更 MDM 授權單位]( /sccm/mdm/deploy-use/change-mdm-authority)。
+
+### <a name="contact-microsoft-support"></a>連絡 Microsoft 支援服務
+當您的 Configuration Manager 版本早於 1610 版時，必須連絡 Microsoft 支援服務。 您無法自行變更這些設定。 在連絡 Microsoft 支援服務之前，請檢閱下列資訊，這說明 Microsoft 支援服務進行變更時，需要您提供的資訊。
 
 有三種方式，可以重設 MDM 授權單位。 在您的支援要求，您必須選擇適用於您情況的方式。 如果未列出您所要求的案例，請後續追蹤 Microsoft 支援服務。
 
@@ -166,7 +168,7 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 
 如果您使用共存，則需要確認 Intune 和 Office 365 的檢查清單。
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>將 MDM 授權單位從 Intune 重設為 Configuration Manager
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>將 MDM 授權單位從 Intune 重設為 Configuration Manager
 
 連絡 Microsoft 支援服務以重設 MDM 授權單位之前，請先完成這些步驟。
 
@@ -180,7 +182,7 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 - 在 [原則] > [設定原則] 下，刪除針對 MDM 裝置的所有原則。
 - 在 [應用程式] > [受管理的軟體] 中，刪除針對 MDM 裝置的所有已發佈應用程式。
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>將 MDM 授權單位從 Configuration Manager 重設為 Intune
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>將 MDM 授權單位從 Configuration Manager 重設為 Intune
 
 連絡 Microsoft 支援服務以重設 MDM 授權單位之前，請先完成這些步驟。
 
@@ -194,7 +196,7 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 - 重新啟動 SMS Executive 服務。
 - 提供我們一些範例使用者，以便我們可以驗證，在此程序完成之後，即已移除 Configuration Manager 授權。
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>將 MDM 授權單位從 Office 365 重設為 Configuration Manager
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>將 MDM 授權單位從 Office 365 重設為 Configuration Manager
 
 1. 瀏覽至 [https://protection.office.com](https://protection.office.com)。
 2. 選取 [安全性原則] 索引標籤，然後選取 [裝置管理]。
@@ -205,10 +207,9 @@ Microsoft 支援服務將會要求您確認下列資訊︰
 >[!NOTE]
 >IOS APsN 憑證無法刪除，而且仍然附加到帳戶。
 
-### <a name="next-steps-for-mdm-authority-resets"></a>MDM 授權單位重設的後續步驟
+#### <a name="next-steps-for-mdm-authority-resets"></a>MDM 授權單位重設的後續步驟
 
 一旦 Microsoft 支援服務驗證適用檢查清單上的項目，重新設定 MDM 授權單位可能需要多達三個工作天，但通常一天內就會發生。
 
 >[!IMPORTANT]
 >請勿嘗試設定您的訂閱，直到 Microsoft 支援服務確認重設已順利完成！ 過早設定可能會造成損毀及/或影響您使用 Intune 服務。
-

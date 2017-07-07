@@ -1,5 +1,5 @@
 ---
-title: "設定原則參考 | Microsoft Docs"
+title: "設定原則參考"
 description: "您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986e720f2b0722dd3f16e35f54c975eac5a12153
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: af13a591bdd0e3185a92702aab093d9ae3bc6434
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune 設定原則參考
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -122,4 +119,3 @@ Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**�
 ### <a name="see-also"></a>請參閱
 
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

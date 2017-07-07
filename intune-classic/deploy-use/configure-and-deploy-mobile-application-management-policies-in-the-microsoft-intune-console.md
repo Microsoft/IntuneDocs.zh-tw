@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 主控台中設定 MAM 原則 | Microsoft Docs"
+title: "在 Intune 主控台中設定 MAM 原則"
 description: "Microsoft Intune 中的行動應用程式管理原則可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 -   **使用受原則管理的應用程式**。 受原則管理的應用程式有內建的應用程式 SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 如需詳細資訊，請參閱[可與 Microsoft Intune 行動應用程式管理原則搭配使用的應用程式清單](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
--   **使用包裝的應用程式**。 包裝的應用程式就是經過 Microsoft Intune App Wrapping Tool 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 您不能用它來處理從應用程式市集下載的應用程式。 如需詳細資訊，請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[準備 Android 應用程式以使用 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
+-   **使用包裝的應用程式**。 包裝的應用程式就是經過 Microsoft Intune App Wrapping Tool 重新封裝，以包含應用程式 SDK 的應用程式。 此工具通常用來處理內部建立的公司應用程式。 您不能用它來處理從應用程式市集下載的應用程式。 如需詳細資訊，請參閱[準備將 iOS 應用程式交由 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](/intune/app-wrapper-prepare-ios)和[準備 Android 應用程式以使用 Microsoft Intune App Wrapping Tool 進行行動應用程式管理](/intune/app-wrapper-prepare-android)。
 
-- **自行撰寫納入 Intune App SDK 的應用程式**。 Intune App SDK 讓您可在撰寫應用程式時，將應用程式管理功納入該應用程式中。 如需詳細資訊，請參閱 [Intune App SDK 概觀](/intune-classic/develop/intune-app-sdk)。
-
-如需在 App Wrapping Tool 與 Intune App SDK 之間做出選擇的協助，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+- **自行撰寫納入 Intune App SDK 的應用程式**。 Intune App SDK 讓您可在撰寫應用程式時，將應用程式管理功納入該應用程式中。 如需詳細資訊，請參閱 [Intune App SDK 概觀](/intune/app-sdk)。
+/intune/apps-prepare-mobile-application-management 如需在 App Wrapping Tool 與 Intune App SDK 之間做出選擇的協助，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/intune/apps-prepare-mobile-application-management)。
 
 某些受管理的應用程式 (例如適用於 iOS 和 Android 的 Outlook 應用程式) 支援「多重身分識別」。 這表示 Intune 只會將管理設定套用到應用程式中的公司帳戶或資料。
 
@@ -197,4 +193,3 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 -   如果原則已部署至裝置，則不會覆寫現有的原則設定。
 
 -   如果原則尚未部署到裝置，而已部署兩個衝突的設定，則會使用裝置內建的預設設定。
-

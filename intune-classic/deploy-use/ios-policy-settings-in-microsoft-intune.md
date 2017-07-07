@@ -1,5 +1,5 @@
 ---
-title: "iOS 原則設定 | Microsoft Docs"
+title: "iOS 原則設定"
 description: "建立原則，以在您使用 Intune 管理的 iOS 裝置上控制設定及功能。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 iOS 原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許受管理的應用程式將資料同步到 iCloud**|允許您使用 Intune 管理的應用程式將資料同步至使用者的 iCloud 帳戶。|
 |**允許 Handoff，以繼續執行其他裝置上的活動**|允許使用者在另一部 iOS 或 Mac OS X 裝置上繼續執行在 iOS 裝置上啟動的工作。|
 |**允許 iCloud 照片共享**|設定為 [否]，停用裝置 上的 [iCloud 相片共享]。|
-|**允許 iCloud 照片圖庫**|如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。    如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。|
+|**允許 iCloud 照片圖庫**|如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。   如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。|
 
 ### <a name="application-settings-for-the-browser"></a>瀏覽器的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
@@ -387,4 +384,3 @@ Weather,Apple,com.apple.weather
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "iOS MAM 原則設定 | Microsoft Docs"
+title: "iOS MAM 原則設定"
 description: "本主題說明適用於 iOS 裝置的行動裝置應用程式管理原則設定。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca0fa4b433710eecbb28f931e9b5cbe5b230598b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 384c3a8c930bf7ee8487726c37f1ff3652675650
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS 行動裝置應用程式保護原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -71,14 +68,14 @@ ms.lasthandoff: 05/23/2017
 | **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234 或 1111)。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (iOS 8.0+)**：選擇 [是]，讓使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。 預設值 = [是]</li></ul> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 來證明其身分識別。 使用者嘗試使用自己的工作或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。 </li></ul>| 需要 PIN 碼：是 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 |
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |  選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。 | 是 |
-| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當系統管理員開啟原則中的 PIN 時，若使用者開啟 MAM 應用程式，則必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。</li></ul>| 逾時：30 <br><br> 離線：720 |
+| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當系統管理員開啟原則中的 PIN 時，若使用者開啟 MAM 應用程式，則必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。<br><br>存取需求逾時是依據任何由原則管理之應用程式之間的非使用狀態時間來測量。<br><br></li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。</li></ul>| 逾時：30 <br><br> 離線：720 |
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式本身會執行選擇性抹除。 此選擇性抹除與系統管理員在 MAM 抹除工作流程中起始的抹除相同。 <br><br> | 90 天 |
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選擇 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 | 否 |
 | **需要最低的 iOS 作業系統** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，將會封鎖使用者進行存取。 | 否 |
 | **需要最低的 iOS 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 | 否 |
 | **需要最低的應用程式版本** | 選擇 [是] 以要求使用應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，將會封鎖使用者進行存取。<br><br>選取目標應用程式時，請注意，應用程式之間通常會有不同的版本控制配置。<br><br> | 否 | 
 | **需要最低的應用程式版本 (僅警告)** | 選擇 [是] 以建議使用此應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br>選取目標應用程式時，請注意，應用程式之間通常會有不同的版本控制配置。<br><br> | 否 | 
-| **需要最低的 Intune 應用程式保護原則 SDK 版本** | 選擇 [是] 以要求在應用程式上使用的最低 Intune 應用程式保護原則 SDK 版本。 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，將會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | 否 |
+| **需要最低的 Intune 應用程式保護原則 SDK 版本** | 選擇 [是] 以要求在應用程式上使用的最低 Intune 應用程式保護原則 SDK 版本。 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，將會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](/intune/app-sdk) <br><br> | 否 |
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 應用程式增益集
 
 Outlook 最近為 iOS 版 Outlook 推出了增益集，您可將熱門的應用程式與電子郵件用戶端相整合。 Web、Windows、Mac 和 iOS 版的 Outlook，皆提供 Outlook 增益集。 因為增益集透過 Microsoft Exchange 進行管理，所以除非使用者的 Exchange 對使用者關閉了增益集，否則，使用者將可在 Outlook 與未受管理的增益集應用程式之間，共用資料與郵件。
@@ -93,4 +90,3 @@ Outlook 最近為 iOS 版 Outlook 推出了增益集，您可將熱門的應用�
 
 - 深入了解[適用於 Outlook 的增益集](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx)。
 - 深入了解 [How to specify the administrators and users who can install and manage add-ins for Outlook app](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx) (如何指定可安裝及管理 Outlook 應用程式增益集的系統管理員與使用者)。
-

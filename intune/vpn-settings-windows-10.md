@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 裝置的 Intune VPN 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure Preview︰了解您可用於設定 Windows 10 裝置之 VPN 連線的 Intune 設定。"
+titleSuffix: Intune on Azure
+description: "了解可用於設定 Windows 10 裝置上 VPN 連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,20 +15,17 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6dd98b176c76e19d6ff261a4dafbabfb9698f787
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 VPN 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-根據您選擇的設定，下列清單中所列的值並非全部都能設定。
+以下清單中的值並非全部都能設定，須取決於您選擇的設定。
 
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
@@ -120,4 +117,3 @@ ms.lasthandoff: 05/23/2017
     - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
     - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
 - **本機位址不要使用 Proxy** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，但您希望您指定的本機位置不要使用 Proxy 伺服器，可選取此選項。 如需詳細資訊，請參閱 Windows Server 文件。
-

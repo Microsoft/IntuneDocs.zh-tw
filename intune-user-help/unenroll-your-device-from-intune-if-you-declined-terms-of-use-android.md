@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b99ce8b30e25960e09e39b81f0f58aa09af2affa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請取消註冊您的裝置
 
 取消註冊 Android 裝置的最佳方式是接受使用條款，並登入公司入口網站應用程式，然後使用[這些指示](unenroll-your-device-from-intune-android.md)來取消註冊。 不過，如果您在嘗試登入公司入口網站應用程式時拒絕使用條款，您未來就無法嘗試登入公司入口網站應用程式，因此您必須使用這些「因應措施」指示來取消註冊您的裝置。
@@ -46,4 +41,3 @@ ms.lasthandoff: 05/23/2017
     您現在可以解除安裝公司入口網站應用程式。
 
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
-

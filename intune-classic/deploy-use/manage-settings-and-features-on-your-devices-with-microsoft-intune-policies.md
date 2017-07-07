@@ -1,5 +1,5 @@
 ---
-title: "使用原則管理裝置設定 | Microsoft Docs"
+title: "使用原則管理裝置設定"
 description: "使用 Intune 建立和部署原則，控制您所管理之已註冊裝置上的設定和功能。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8f1a4cb3bcab4aee534fc5fb9a1f1a1eb5a6f3a1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f8ceb98181543d846934a16b8c9551207892ae0e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>透過 Microsoft Intune 原則管理裝置上的設定和功能
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -213,4 +210,3 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>哪裡可以找到疑難排解原則的說明？
 
 請參閱[Microsoft Intune 的原則疑難排解](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
-

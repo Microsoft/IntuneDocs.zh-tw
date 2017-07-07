@@ -1,5 +1,5 @@
 ---
-title: "Windows 電腦的防火牆原則 | Microsoft Docs"
+title: "Windows 電腦的防火牆原則"
 description: "Intune 有數種方式可協助您保護使用 Intune 用戶端管理的電腦，包括協助您設定 Windows Firewall 防火牆設定。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 有數種方式可協助您保護使用 Intune 用戶端管理的 Windows 電腦。 其中一項方式為提供可讓您在電腦上設定 Windows 防火牆設定的原則。
 
 如果您尚未在電腦上安裝 Intune Windows 電腦用戶端，請參閱[使用 Microsoft Intune 安裝 Windows 電腦用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
@@ -135,4 +135,3 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 
 ### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

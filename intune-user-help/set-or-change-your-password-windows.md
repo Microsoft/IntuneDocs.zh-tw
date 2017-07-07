@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>使用良好的密碼讓您的裝置更安全
 
 存取公司資源 (例如電子郵件和文件) 是使用者在其 Windows 裝置上的日常事務。 您的組織希望確保您的裝置可以安全地執行這些功能。 若要確保您的裝置安全地存取這些資源，其中一種方法便是要求裝置使用密碼。 舉例來說，這些密碼會用於從鎖定畫面存取您的裝置。
@@ -49,4 +45,3 @@ ms.lasthandoff: 05/23/2017
 4. 選擇 [完成]。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-ios-device-from-intune"></a>從 Intune 取消註冊 iOS 裝置
 
 當您從 Intune 取消註冊 iOS 裝置時，您的裝置將無法再存取公司資源，並且將不再受 Intune 管理。
@@ -59,4 +54,3 @@ ms.lasthandoff: 05/23/2017
 -   只有公司入口網站應用程式或網站上不會再顯示為電子郵件設定的裝置。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-
