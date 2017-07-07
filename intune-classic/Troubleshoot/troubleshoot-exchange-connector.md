@@ -1,5 +1,5 @@
 ---
-title: "針為 Exchange Connector 進行疑難排解 | Microsoft Docs"
+title: "Exchange Connector 疑難排解"
 description: "與 Intune Exchange Connector 相關的疑難排解問題。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0519145b6cc7c837490892089c18bf20e08d57
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebcbcbc36c925b3c3d9600eb9a5039b70d7e056d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-the-exchange-connector"></a>為 Exchange Connector 進行疑難排解
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="next-steps"></a>後續步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-

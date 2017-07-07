@@ -1,5 +1,5 @@
 ---
-title: "條款和條件原則設定 | Microsoft Docs"
+title: "條款和條件原則設定"
 description: "您可以將 Intune 條款和條件部署到使用者群組，以說明註冊、對工作資源的存取，以及使用公司入口網站應用程式，如何影響裝置和使用者。"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2e8028abe5f25e4a05d79ae543d3029490c01668
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的條款和條件原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "使用 Microsoft Intune 監視 MAM 原則 | Microsoft Docs"
+title: "使用 Microsoft Intune 監視 MAM 原則"
 description: "查看有多少使用者擁有原則，並向下鑽研以了解更多詳細資料。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 監視應用程式保護原則
 您可以監視您套用到使用者之應用程式保護原則的合規性狀態。 您能夠找到受應用程式保護原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
 
@@ -134,6 +131,5 @@ ms.lasthandoff: 05/23/2017
 ## <a name="see-also"></a>請參閱
 [管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [當 Android 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-android)
+* [當 iOS 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-ios)

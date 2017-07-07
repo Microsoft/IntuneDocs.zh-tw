@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4f5a81c053aaf7539f84870c53ca65c6571fedd0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-computer-is-already-enrolled"></a>您的電腦已註冊
 
 如果您收到電腦已經註冊的錯誤，表示您的電腦已經加入公司入口網站中，但尚未連結到您的使用者帳戶。 請依照此程序將您的電腦連結到使用者帳戶並完成程序。  
@@ -41,4 +37,3 @@ ms.lasthandoff: 05/23/2017
 若要取消註冊裝置，請依據所擁有的裝置類型是 [Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md) 來使用相關指示。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

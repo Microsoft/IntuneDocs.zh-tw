@@ -1,5 +1,5 @@
 ---
-title: "Intune 評估的其他選項和額外項目 | Microsoft Docs"
+title: "Intune 評估的其他選項和額外項目"
 description: "說明當您註冊免費 30 天的 Intune 評估版時，所需要了解的警示、通知和報表，以及一般的 Intune 功能"
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 評估訂閱的其他選項和額外項目
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,16 +43,13 @@ Intune 具有許多不同的功能 (除了這些簡短設定步驟中所示的�
 
 -   **控制對公司資源的存取。** 您可以將憑證、電子郵件設定檔、VPN 設定檔及 Wi-Fi 設定檔部署到行動裝置，以縮短設定行動裝置的時間。 如需詳細資訊，請參閱[使用 Microsoft Intune 存取公司資源](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune)。
 
-如需了解 Intune 的完整功能，請參閱：
-- [Microsoft Intune 的已註冊裝置管理功能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Microsoft Intune 的 Windows 電腦管理功能](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+若要了解 Intune 的完整功能，請參閱 [Microsoft Intune 的已註冊裝置管理功能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)。
 
-若要深入了解最近引進 Intune 的功能，請參閱 [Microsoft Intune 的新功能](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune)。
+若要深入了解最近引進 Intune 的功能，請參閱 [Microsoft Intune 的新功能](/intune-classic/whats-new/whats-new-in-microsoft-intune)。
 
 支援選項在[如何取得 Microsoft Intune 支援](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune)中有所說明，而且您可以加入 [Microsoft Intune 論壇](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)一起討論 Intune。
 
 ## <a name="next-steps"></a>後續步驟
-閱讀[使用 Intune 的常見方式](common-ways-to-use-intune.md)
+閱讀[使用 Intune 的常見方式](/intune/common-scenarios)
 
 轉換為[付費訂閱](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "應用程式部署問題疑難排解 | Microsoft Docs"
+title: "應用程式部署問題的疑難排解"
 description: "本主題會協助您解決 Microsoft Intune 的相關應用程式部署問題"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0277c0baed66a1340373cb607976d03a07ca5282
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Microsoft Intune 的應用程式部署問題疑難排解
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="next-steps"></a>後續步驟
 如果這項疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
-

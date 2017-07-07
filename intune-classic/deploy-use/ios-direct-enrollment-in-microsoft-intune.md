@@ -1,5 +1,5 @@
 ---
-title: "直接註冊 iOS 裝置 | Microsoft Docs"
+title: "直接註冊 iOS 裝置"
 description: "透過將公司擁有的 iOS 裝置利用 USB 連線到 Mac 電腦，來使用 Apple Configurator 工具以預先定義的原則直接註冊那些裝置。"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>使用 Apple Configurator 直接註冊 iOS 裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ Intune 支援使用 Mac 電腦上所執行的 [Apple Configurator](http://go.mic
 9.  在 iOS 裝置上，開啟 [設定]，並移至 [一般] &gt; [裝置管理] &gt; [管理設定檔]。 確認其中有列出設定檔的安裝，並檢查 iOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
 
 10.  散發裝置。 iOS 裝置現在已向 Intune 註冊並且受管理。
-

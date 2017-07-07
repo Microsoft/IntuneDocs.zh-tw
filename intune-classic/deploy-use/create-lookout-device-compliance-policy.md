@@ -1,5 +1,5 @@
 ---
-title: "啟用裝置保護規則 | Microsoft Docs"
+title: "啟用裝置保護規則"
 description: "啟用裝置相容性原則中的行動裝置威脅保護規則。"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67913bfcbca3cef52e309ad86bfe722db6e16895
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 28ae825a9e33547a1987989d38667417214b97b2
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>在 Intune 中建立 Lookout 裝置合規性原則
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ ms.lasthandoff: 05/23/2017
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   * [商務用 Skype Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "自訂系統管理員角色的主控台檢視 | Microsoft Docs"
+title: "自訂管理員角色的主控台檢視"
 description: "使用本主題來協助您篩選 Intune 管理主控台檢視，以讓您的管理員僅查看其角色所需的項目。"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1ab4c0a7ae79d0d3396efe7c54deaf1d794a5aeb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b2016bc4f2c7ef63722becc413422d618939336
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>根據系統管理員角色自訂 Intune 主控台檢視
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -72,4 +69,3 @@ ms.lasthandoff: 05/23/2017
         -   重設密碼
 
 當您設定的系統管理員隨後開啟 Intune 管理主控台時，即會獲得您指定的存取層級。
-

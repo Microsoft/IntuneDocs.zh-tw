@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>您必須解決 Lookout for Work 找到的威脅
 
 Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 您可能會看到類似下列這則訊息：
@@ -51,4 +47,3 @@ Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題
 當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

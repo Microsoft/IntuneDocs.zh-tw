@@ -1,11 +1,11 @@
 ---
-title: "使用裝置群組對應分類裝置 | Microsoft Docs"
+title: "使用裝置群組對應分類裝置"
 description: "使用 Microsoft Intune 裝置群組對應來將裝置分組成定義的類別，以便讓您更輕鬆地管理那些裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>在 Microsoft Intune 使用裝置群組對應分類裝置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ ms.lasthandoff: 05/23/2017
 1. 建立使用者註冊其裝置時將從中選擇的類別
 2. 為想要使用的每個類別建立群組，或使用現有的群組。 根據您使用的 Intune 版本，這些群組將會是 Intune 群組或 Azure Active Directory 安全性群組。
 2. 您可以設定規則，將所選擇的類別對應至所建立的裝置群組。
-3. 當使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇之後，他們的裝置會自動新增至您建立的對應群組。 如果裝置已註冊，則會在使用者下次存取公司入口網站應用程式時，要求使用者選取一個類別。
+3. 當 iOS 和 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 若要指派類別給 Windows 裝置，使用者必須使用公司入口網站 (如需更多詳細資料，請參閱本主題的**設定裝置群組之後**)。
 4. 您接著可以將原則和應用程式部署至這些群組。
 
 您可以建立任何想要的裝置類別，例如：
@@ -86,8 +84,13 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="after-you-configure-device-groups"></a>設定裝置群組之後
 
-當使用者註冊其裝置時，他們會看到您設定的類別清單。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
+當 iOS 和 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
+
+若要指派類別給 Windows 裝置，使用者必須在註冊裝置之後使用公司入口網站 (portal.manage.microsoft.com)。 在 Windows 裝置上，存取該網站並移至 [功能表] > [我的裝置]。 選擇頁面中列出的已註冊裝置，然後選取類別。 
+
+選擇類別之後，裝置就會自動新增至您建立的對應群組。 如果設定類別之前，裝置已經註冊，使用者將會在公司入口網站上看到和裝置有關的通知，並且將會在使用者下次於 iOS 或 Android 裝置上存取公司入口網站 App 時，要求他們選取類別。
+
+
 
 ### <a name="see-also"></a>請參閱
 [利用 Microsoft Intune，使用群組管理使用者和裝置](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
