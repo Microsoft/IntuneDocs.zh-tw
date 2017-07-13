@@ -1,6 +1,5 @@
-<a id="enable-windows-10-automatic-enrollment" class="xliff"></a>
-
 ## 啟用 Windows 10 自動註冊
+<a id="enable-windows-10-automatic-enrollment" class="xliff"></a>
 
 自動註冊可讓使用者在將工作帳戶新增到其個人擁有的裝置，或是將其公司擁有的裝置加入 Azure Active Directory 時，在 Intune 中註冊他們的 Windows 10 裝置。 在背景中，使用者的裝置註冊並加入 Azure Active Directory。 註冊後，就會使用 Intune 管理裝置。
 
@@ -9,11 +8,10 @@
 - Microsoft Intune 訂閱
 
 
+### 設定自動 MDM 註冊
 <a id="configure-automatic-mdm-enrollment" class="xliff"></a>
 
-### 設定自動 MDM 註冊
-
-1. 登入 [Azure 管理入口網站](https://portal.azure.com) (https://manage.windowsazure.com)， 然後選取 [Azure Active Directory]。
+1. 登入 [Azure 管理入口網站](https://portal.azure.com) (https://manage.windowsazure.com) ，然後選取 [Azure Active Directory]。
 
   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-azure-main.png)
 
