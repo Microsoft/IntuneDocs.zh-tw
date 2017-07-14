@@ -14,13 +14,14 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-is-intune-for-education"></a>什麼是 Intune 教育版？
+# 什麼是 Intune 教育版？
+<a id="what-is-intune-for-education" class="xliff"></a>
 
 Intune 教育版是專門設計來讓老師和學生提高生產力，同時保護學校資料。 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，是 Intune 教育版的基礎。
 
@@ -30,7 +31,7 @@ Intune 教育版可讓您使用 Intune 中完整的 MDM 功能管理 Windows 10 
 
 Intune 教育版本身可單獨使用，或搭配 [Intune 中可用的完整裝置管理體驗](introduction-intune.md)使用。 也可以搭配 [Microsoft 教育](https://microsoft.com/education)提供的其餘工具一起使用，這可讓您輕鬆地使用 Intune 教育版搭配其他 Microsoft 有用的教育性工具。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 使用 Intune 和 Intune 教育版兩者，您可以︰
 * 管理工作人員用來存取資料的行動裝置。
@@ -38,7 +39,8 @@ Intune 教育版本身可單獨使用，或搭配 [Intune 中可用的完整裝�
 * 藉由協助控制使用者存取並共用組織資訊的方式，保護組織資訊。
 * 確保裝置和應用程式都符合安全性需求。
 
-### <a name="next-steps"></a>後續步驟
+### 後續步驟
+<a id="next-steps" class="xliff"></a>
 * [使用 Intune 的 30 天試用](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)來熟悉產品。
 * 閱讀[開始使用 Intune 教育版](/intune-education/what-is-express-configuration)最快速的方法。
 * 深入了解 Intune 的[技術需求和功能](/intune/supported-devices-browsers)。

@@ -13,18 +13,17 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4f893c0c8308a246d7bab15fed68a78c4e10b70a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 828dd9406d308d9bdb7af686b31689df79633940
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
+# 規劃 Intune 部署的其他資源
+<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-## <a name="templates"></a>範本
+## 範本
+<a id="templates" class="xliff"></a>
 
 規劃指南中使用之資料表的 Microsoft Excel 範本可供[下載](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)。
 
@@ -45,7 +44,8 @@ ms.lasthandoff: 07/01/2017
 | | 條件式存取原則|-|
 
 
-## <a name="links"></a>Links
+## 進階閱讀
+<a id="further-reading" class="xliff"></a>
 
 請參閱 Intune 部署規劃、設計和實作程序期間可能有用之其他資訊的這些資源。
 
