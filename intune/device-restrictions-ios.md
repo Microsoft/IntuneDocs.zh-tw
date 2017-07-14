@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 裝置限制設定
+# Microsoft Intune 中的 iOS 裝置限制設定
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>一般
+## 一般
+<a id="general" class="xliff"></a>
 -   **相機** - 指定是否可以使用裝置上的相機。   
 -   **診斷資料提交** - 允許或封鎖裝置提交診斷資料給 Apple。
 -   **FaceTime** -允許在裝置上使用 FaceTime 應用程式。
@@ -73,7 +75,8 @@ ms.lasthandoff: 07/01/2017
 - **Apple News (僅限受監督)** - 允許使用 Apple News 應用程式。
 - **組態設定檔變更** - 允許使用者安裝組態設定檔。
 
-## <a name="password"></a>密碼
+## 密碼
+<a id="password" class="xliff"></a>
 -   **需要密碼** - 需要使用者輸入密碼才可存取該裝置。
 -   **簡單密碼** - 允許簡單密碼，像是0000 和 1234。
 -   **必要的密碼類型** - 指定需要的密碼類型，例如只可包含數字或英數字元。
@@ -88,7 +91,8 @@ ms.lasthandoff: 07/01/2017
 
 <sup>1</sup>當您設定 [沒有活動最久幾分鐘後鎖定螢幕] 的設定以及 [在螢幕鎖定最少幾分鐘後必須輸入密碼] 時，它們會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
 
-## <a name="app-store-doc-viewing-gaming"></a>App Store、文件檢視、遊戲
+## App Store、文件檢視、遊戲
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **App Store (僅限受監督)** - 封鎖對受監督裝置上 App Store 的存取。
@@ -106,7 +110,8 @@ ms.lasthandoff: 07/01/2017
 -   **分級區域** - 為想要設定允許的下載項目選擇分級區域，然後為**電影**和**電視節目**選擇允許的分級。
 -   **應用程式** - 選擇使用者可下載之應用程式的年齡分級，也可以選擇 [允許所有應用程式]。
 
-## <a name="restricted-apps"></a>受限應用程式
+## 受限應用程式
+<a id="restricted-apps" class="xliff"></a>
 
 您可以在受限制應用程式清單中，設定下列清單之一︰
 
@@ -115,7 +120,8 @@ ms.lasthandoff: 07/01/2017
 
 若要設定清單，請按一下 [新增]，然後在應用程式市集中，指定您所選的名稱 (也可指定選用的應用程式發行者) 以及應用程式的 URL。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>如何在市集中指定應用程式的 URL
+### 如何在市集中指定應用程式的 URL
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 若要指定應用程式清單中的應用程式 URL，請使用下列格式：
 
@@ -130,11 +136,13 @@ ms.lasthandoff: 07/01/2017
 
 
 
-### <a name="additional-options"></a>其他選項
+### 其他選項
+<a id="additional-options" class="xliff"></a>
 
 您也可以按一下 [匯入]填入格式如一下的 csv 檔案清單：<*應用程式 URL*>，<*應用程式名稱*>，<*應用程式發行者*>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的受限應用程式清單內容。
 
-## <a name="show-or-hide-apps"></a>顯示或隱藏應用程式
+## 顯示或隱藏應用程式
+<a id="show-or-hide-apps" class="xliff"></a>
 
 在顯示或隱藏的應用程式清單中，可以設定下列清單之一 (需要執行 iOS 9.3 或更新版本的受監督裝置)。
 
@@ -143,7 +151,8 @@ ms.lasthandoff: 07/01/2017
 
 若要設定清單，請按一下 [新增]，然後在應用程式市集中，指定您所選的名稱 (也可指定選用的應用程式發行者) 以及應用程式的 URL。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>如何在市集中指定應用程式的 URL
+### 如何在市集中指定應用程式的 URL
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 若要指定應用程式清單中的應用程式 URL，請使用下列格式：
 
@@ -155,19 +164,22 @@ ms.lasthandoff: 07/01/2017
 > [!Note]
 > 您也可以先使用 iTunes 軟體尋找應用程式，再使用 [複製連結]  命令取得應用程式的 URL。
 
-### <a name="additional-options"></a>其他選項
+### 其他選項
+<a id="additional-options" class="xliff"></a>
 
 您也可按一下 [匯入]，填入格式如下的 csv 檔案清單：<*應用程式 URL*>，<*應用程式名稱*>，<*應用程式發行者*>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的隱藏或顯示之應用程式清單的內容。
 
 
-## <a name="cellular"></a>行動電話通訊
+## 行動電話通訊
+<a id="cellular" class="xliff"></a>
 -   **數據漫遊** - 允許裝置在行動電話通訊網路時進行資料漫遊。
 -   **漫遊時執行全域背景擷取** - 允許裝置在行動電話通訊網路漫遊時擷取資料 (例如電子郵件)。
 -   **語音撥號** - 允許在裝置上使用語音撥號功能。
 -   **語音漫遊** - 允許裝置在行動電話通訊網路時進行語音漫遊。
 -   **應用程式行動數據使用量設定的變更 (僅限受監督)** - 允許使用者控制哪些應用程式可以使用行動數據資料。
 
-## <a name="cloud-and-storage"></a>雲端與儲存體
+## 雲端與儲存體
+<a id="cloud-and-storage" class="xliff"></a>
 -   **備份至 iCloud** - 允許使用者將裝置備份到 iCloud。
 -   **文件同步至 iCloud (僅限受監督)** - 允許文件和索引鍵-值同步處理到 iCloud 儲存空間。
 -   **相片串流同步至 iCloud** - 讓使用者可在其裝置上啟用 [共享相片串流]，以允許將相片同步處理到 iCloud 並可在所有使用者裝置上使用。
@@ -177,11 +189,13 @@ ms.lasthandoff: 07/01/2017
 -   **共享相片串流** - 設定為 [否]，會停用裝置上的 [iCloud 相片共享]。
 -   **活動接續** - 允許使用者在另一部 iOS 或 macOS 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>自發性單一應用程式模式 (僅限受監督)
+## 自發性單一應用程式模式 (僅限受監督)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 使用這些設定來設定 iOS 裝置在自發性單一應用程式模式中執行指定的應用程式。 設定此模式並執行應用程式時，裝置會被鎖定，因此只能執行該應用程式。 一個例子是當您設定應用程式讓使用者在裝置上進行測試時。 當應用程式的動作完成時，或當您移除此原則時，裝置就會回到其正常狀態。
 
-### <a name="settings"></a>設定
+### 設定
+<a id="settings" class="xliff"></a>
 
 - **應用程式名稱**：輸入應用程式的名稱，這將會顯示在此刀鋒視窗上的應用程式清單中。
 - **應用程式套件組合識別碼**：輸入應用程式的套件組合識別碼。 如需說明，請參閱本主題中的＜內建的 iOS 應用程式套件組合識別碼參考＞。
@@ -191,54 +205,57 @@ ms.lasthandoff: 07/01/2017
 - **匯入**：匯入包含應用程式名稱及其相關聯套件組合識別碼清單的逗點分隔值 (.csv) 檔案。
 - **匯出**：將您所設定的應用程式名稱及相關聯的套件組合識別碼匯出為逗點分隔值 (.csv) 檔案。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>內建 iOS 應用程式的套件組合識別碼參考
+### 內建 iOS 應用程式的套件組合識別碼參考
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。
 
-|||
-|-|-|
-|應用程式名稱|套件組合識別碼|
-|App Store|com.apple.AppStore|
-|計算機|com.apple.calculator|
-|行事曆|com.apple.mobilecal|
-|相機|com.apple.camera|
-|時鐘|com.apple.mobiletimer|
-|指南針|com.apple.compass|
-|連絡人|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|尋找朋友|com.apple.mobileme.fmf1|
-|尋找 iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|健全狀況|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|地圖|com.apple.Maps|
-|訊息|com.apple.MobileSMS|
-|音樂|com.apple.Music|
-|新聞|com.apple.news|
-|附註|com.apple.mobilenotes|
-|數字|com.apple.Numbers|
-|頁面|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|相片|com.apple.mobileslideshow|
-|Podcast|com.apple.podcasts|
-|提醒事項|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|設定|com.apple.Preferences|
-|股市|com.apple.stocks|
-|秘訣|com.apple.tips|
-|影片|com.apple.videos|
-|語音備忘錄|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|觀看|com.apple.Bridge|
-|天氣|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Kiosk
+```
+
+
+## Kiosk
+<a id="kiosk" class="xliff"></a>
 -   **啟用鎖定** - 在受監督的 iOS 裝置上將啟用鎖定啟用。
 -   **kiosk 模式下執行的應用程式** - 選擇 [受管理的應用程式] 可選取已新增至 Intune 的應用程式，而選擇 [市集應用程式] 則可指定市集中應用程式的 URL。 不允許在裝置上執行其他應用程式。 如需詳細說明，請參閱本主題稍後的＜如何將 URL 指定給應用程式市集＞。
 -   **輔助觸控** - 啟用或停用 [輔助觸控] 協助工具設定，協助使用者執行可能很難執行的螢幕手勢。
@@ -262,7 +279,8 @@ ms.lasthandoff: 07/01/2017
 > 您必須先使用 Apple Configurator 工具或 Apple 裝置註冊方案，將裝置設為受監督模式，才可為 iOS 裝置設定 kiosk 模式。 如需 Apple Configurator 工具的詳細資訊，請參閱您的 Apple 文件。
 >如果指定的 iOS 應用程式在您指派設定檔之後安裝，則裝置在重新啟動之前，不會進入 Kiosk 模式。
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (僅限受監督)** - 指定是否可以在裝置上使用 Safari 瀏覽器。
 -   **自動填滿** - 允許使用者變更瀏覽器中的自動完成設定。
 -   **Cookie** - 允許瀏覽器使用 Cookie。
@@ -271,18 +289,22 @@ ms.lasthandoff: 07/01/2017
 -   **快顯** - 啟用或停用瀏覽器的快顯封鎖程式。
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>未標記的電子郵件網域
+### 未標記的電子郵件網域
+<a id="unmarked-email-domains" class="xliff"></a>
 
 在 [電子郵件網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 iOS 郵件應用程式中標記為不受信任。
 
 
-### <a name="managed-web-domains"></a>受管理的 Web 網域
+### 受管理的 Web 網域
+<a id="managed-web-domains" class="xliff"></a>
 
 在 [Web 網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當文件是從您所指定的網域下載時，它們會被視為受管理的文件。 此設定僅適用於使用 Safari 瀏覽器下載的文件。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari 密碼自動填入網域
+### Safari 密碼自動填入網域
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 在 [網域 URL] 欄位中，將一或多個 URL 新增到清單中。 使用者只能儲存此清單中 URL 的密碼。 此設定僅適用於處於受監督模式的 iOS 9.3 及更新版本裝置中的 Safari 瀏覽器。 如果您不指定任何 URL，便可以儲存所有網站的密碼。

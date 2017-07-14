@@ -2,8 +2,8 @@
 title: "使用應用程式保護原則的 iOS 應用程式"
 description: "本主題說明當 iOS 應用程式交由應用程式保護原則管理時的行為。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -14,21 +14,23 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a4b7ad6cfd8e07137bac9d430088274d9161c7ac
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e66042e5198b76ec484fe0218127acb653394cce
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
+# 當 iOS 應用程式交由應用程式保護原則管理時的行為
+<a id="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
  針對已套用應用程式保護原則的應用程式，本主題說明使用者的使用體驗。 只有在工作環境中使用應用程式時，才會套用應用程式保護原則；例如，當使用者使用工作帳戶來存取應用程式的情況，或是存取公司商務用 OneDrive 地點中所儲存檔案的情況。
 
-##  <a name="access-apps"></a>存取應用程式
+##  存取應用程式
+<a id="access-apps" class="xliff"></a>
 
-如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。 必須先重新啟動，才會將應用程式保護原則套用到應用程式。 
+如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。 必須先重新啟動，才會將應用程式保護原則套用到應用程式。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -37,7 +39,8 @@ ms.lasthandoff: 07/01/2017
 
 針對**在 Intune 中註冊以進行管理**的裝置，使用者會看到其應用程式現在已受管理的訊息。
 
-##  <a name="use-apps-with-multi-identity-support"></a>使用具有多重身分識別支援的應用程式
+##  使用具有多重身分識別支援的應用程式
+<a id="use-apps-with-multi-identity-support" class="xliff"></a>
 
 當應用程式保護原則只有在工作環境中使用應用程式時才會套用，支援多重身分識別的應用程式讓您能夠使用不同的帳戶 (工作和個人) 來存取相同的應用程式。  
 
@@ -47,7 +50,8 @@ ms.lasthandoff: 07/01/2017
 
 應用程式保護原則只適用於工作環境。 因此，應用程式可能因工作環境或個人環境而有不同的行為。
 
-##  <a name="manage-user-accounts-on-the-device"></a>管理裝置上的使用者帳戶
+##  管理裝置上的使用者帳戶
+<a id="manage-user-accounts-on-the-device" class="xliff"></a>
 
 Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用者帳戶。
 
@@ -63,9 +67,11 @@ Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用�
 
 使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在這兩家公司各有一個工作帳戶，且兩者全都使用 Intune 部署應用程式保護原則。 **X 公司**部署**先於** **Y 公司**部署應用程式保護原則。**X 公司**關聯的帳戶將得到應用程式保護原則，Y 公司關聯的帳戶則否。如果您希望 Y 公司關聯的使用者帳戶受應用程式保護原則管理，您必須移除與 X 公司關聯的使用者帳戶。
 
-### <a name="add-a-second-account"></a>新增第二個帳戶
+### 新增第二個帳戶
+<a id="add-a-second-account" class="xliff"></a>
 
 如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 將會顯示帳戶，接著您可以選擇想要移除的帳戶。
 
-## <a name="next-steps"></a>後續步驟
+## 後續步驟
+<a id="next-steps" class="xliff"></a>
 [當 Android 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-android.md)
