@@ -2,6 +2,7 @@
 ## [什麼是 Azure 入口網站？](what-is-intune.md)
 ## [什麼是 Intune 教育版？](introduction-intune-education.md)
 ## [Azure 中的 Intune 功能](ui-changes.md)
+### [變更群組](groups-get-started.md)
 ## [註冊免費試用版](free-trial-sign-up.md)
 ## [新增功能](whats-new.md)
 ### [應用程式 UI 的新功能](whats-new-app-ui.md)
@@ -16,12 +17,13 @@
 ## [常見案例](common-scenarios.md)
 ## [已知問題](known-issues.md)
 ## [取得支援](get-support.md)
-## [Intune 服務說明](microsoft-intune-service-description.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [開始使用](get-started-evaluation.md)
+## [建立群組](get-started-groups.md)
+## [建立使用者](get-started-users.md)
+## [註冊裝置](get-started-enroll.md)
+## [指派原則](get-started-policies.md)
+## [指派應用程式](get-started-apps.md)
 
 
 # 規劃部署
@@ -63,20 +65,21 @@
 ### [登入 Intune](account-sign-up.md)
 ### [設定網域](custom-domain-name-configure.md)
 ### [新增使用者](users-permissions-add.md)
+### [新增群組](groups-add.md)
 ### [指派授權](licenses-assign.md)       
 ### [自訂公司入口網站](company-portal-customize.md)     
 ### [設定 MDM 授權單位](mdm-authority-set.md)
 
 ## [註冊裝置](device-enrollment.md)
-### 必要條件
-#### [設定條款及條件](terms-and-conditions-create.md)
-#### [設定限制](enrollment-restrictions-set.md)
-#### [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
-#### [新增公司識別碼](corporate-identifiers-add.md)
-#### [設定裝置註冊管理員](device-enrollment-manager-enroll.md)
+### 設定選項
+#### [條款及條件](terms-and-conditions-create.md)
+#### [限制](enrollment-restrictions-set.md)
+#### [Apple MDM 推播憑證](apple-mdm-push-certificate-get.md)
+#### [公司識別碼](corporate-identifiers-add.md)
+#### [裝置註冊管理員](device-enrollment-manager-enroll.md)
 #### [將裝置對應到群組](device-group-mapping.md)
-### [設定 Windows 註冊](windows-enroll.md)
-#### [自動註冊](windows-enroll.md)
+### 設定 Windows 註冊
+#### [Windows 註冊](windows-enroll.md)
 #### [大量註冊](windows-bulk-enroll.md)
 ### [設定 Android 註冊](android-enroll.md)
 ### 設定 iOS 註冊
@@ -84,7 +87,6 @@
 #### [使用 Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [使用 Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [設定 macOS 註冊](macos-enroll.md)
-### [使用者教育](end-user-educate.md)
 
 ## [管理裝置](device-management.md)
 ### [抹除裝置](devices-wipe.md)
@@ -97,11 +99,13 @@
 ### [移除公司資料](device-company-data-remove.md)
 ### [重設密碼](device-passcode-reset.md)
 ### [重新啟動裝置](device-restart.md)
+### [登出目前的使用者](device-logout-user.md)
+### [移除使用者](device-remove-user.md)
 ### [Android 裝置的遠端控制](device-profile-android-teamviewer.md)
+### [重設 Windows 10 的 PIN 碼](device-windows-pin-reset.md)
 ### [檢視裝置清查](device-inventory.md)
 
 ## [管理使用者](user-management.md)
-### [開始使用群組](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [管理應用程式](app-management.md)
@@ -128,16 +132,6 @@
 #### [iOS 電子書](vpp-ebooks-ios.md)
 ### [設定公司入口網站應用程式](company-portal-app.md)
 ### [設定 Managed Browser](app-configuration-managed-browser.md)
-## [使用應用程式保護原則](app-protection-policies.md)
-### [準備好設定 WIP 應用程式保護原則](app-protection-policies-configure-windows-10.md)
-### [建立與指派 WIP 應用程式保護原則](windows-information-protection-policy-create.md)
-### [Android 設定](app-protection-policy-settings-android.md)
-### [iOS 設定](app-protection-policy-settings-ios.md)
-### [驗證應用程式保護原則](app-protection-policies-validate.md)
-### [監視應用程式保護使用者狀態](app-protection-policies-monitor.md)
-### [準備好設定 WIP 應用程式保護原則](app-protection-policies-configure-windows-10.md)
-### [建立與指派 WIP 應用程式保護原則](windows-information-protection-policy-create.md)
-### [管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)
 
 ## [設定裝置](device-profiles.md)
 ### [設定裝置設定檔](device-profile-create.md)
@@ -175,13 +169,16 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 和 Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [設定 Windows 10 版本升級設定](edition-upgrade-configure-windows-10.md)
+### [Windows 10 Endpoint Protection](endpoint-protection-windows-10.md)
 ### [設定 Windows 10 教育版的設定](education-settings-configure.md)
 ### [設定 iOS 的教育設定](education-settings-configure-ios.md)
+### [設定 iOS 的教育共用裝置](education-settings-configure-ios-shared.md)
 ### [設定商務用 Windows Update 的設定](windows-update-for-business-configure.md)
 ### [設定憑證](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [設定 Windows 資訊保護設定](windows-information-protection-configure.md)
+### [監視電信費用](telecom-expenses-monitor.md)
 ### [指派設定檔](device-profile-assign.md)
 ### [監視設定檔](device-profile-monitor.md)
 ### [針對設定檔進行疑難排解](device-profile-troubleshoot.md)
@@ -192,48 +189,65 @@
 ### [建立 Android for Work 原則](compliance-policy-create-android-for-work.md)
 ### [建立 iOS 原則](compliance-policy-create-ios.md)
 ### [建立 Windows 原則](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### 針對非合規性建立動作
 ### [監視裝置合規性](compliance-policy-monitor.md)
 
 ## [設定條件式存取](conditional-access.md)
 ### [使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)
-### [以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)
 ### [安裝 Exchange 內部部署連接器](exchange-connector-install.md)
 ### [建立並指定條件式存取原則](conditional-access-exchange-create.md)
-### [為 Exchange Online 設定以應用程式為基礎的條件式存取](app-based-conditional-access-intune-exchange-online-create.md)
-### [為 SharePoint Online 設定以應用程式為基礎的條件式存取](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [從 Intune 傳統入口網站重新指派條件式存取原則](conditional-access-intune-reassign.md)
+### [以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)
+### [設定以應用程式為基礎的條件式存取](app-based-conditional-access-intune-create.md)
 ### [ADAL 與 Intune](app-modern-authentication-block.md)
 ### [監視條件式存取的相容性](conditional-access-exchange-monitor.md)
 
-## 保護資料和裝置
+## 保護應用程式和裝置資料
+
+### [使用應用程式保護原則](app-protection-policy.md)
+#### [建立應用程式保護原則](app-protection-policies.md)
+##### [Android 設定](app-protection-policy-settings-android.md)
+##### [iOS 設定](app-protection-policy-settings-ios.md)
+#### [驗證應用程式保護原則](app-protection-policies-validate.md)
+#### [監視應用程式保護使用者狀態](app-protection-policies-monitor.md)
+#### [準備好設定 WIP 應用程式保護原則](app-protection-policies-configure-windows-10.md)
+#### [建立與指派 WIP 應用程式保護原則](windows-information-protection-policy-create.md)
+#### [管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [設定 Lookout](lookout-mobile-threat-defense-connector.md)
-##### [Lookout 與 Intune 整合](lookout-mtd-subscription-setup.md)
-##### [在 Intune 中啟用 Lookout](lookout-mtd-connector-enable.md)
-##### [部署要與 Lookout 一起使用的應用程式](lookout-for-work-app-configure-deploy.md)
-##### [Lookout 裝置合規性原則](lookout-device-compliance-policy-create.md)
-
+##### [Lookout 與 Intune 整合](lookout-mtd-connector-integration.md)
 #### [設定 Skycure](skycure-mobile-threat-defense-connector.md)
 ##### [設定 Azure AD SSO](skycure-azure-sso-configure.md)
 ##### [下載 iOS 應用程式設定原則](skycure-ios-app-configuration-policy-download.md)
-##### [新增和設定應用程式](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [部署要與 Skycure 一起使用的應用程式](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
 ##### [Skycure 與 Intune 整合](skycure-mtd-connector-integration.md)
-##### [在 Intune 中啟用 Skycure](skycure-mtd-connector-enable.md)
-##### [Skycure 裝置合規性原則](skycure-device-compliance-policy-create.md)
+#### [新增 MTD 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [在 Intune 中啟用 MTD](mtd-connector-enable.md)
+#### [建立 MTD 裝置合規性政策](mtd-device-compliance-policy-create.md)
+
+### [網路存取控制](network-access-control-integrate.md)
+
+
+<!-- ### Set up mobile threat protection        
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
 
 ### [設定 Windows Hello](windows-hello.md)        
-<!-- ### Protect devices with remote actions        -->
+<!-- ### Protect devices with remote actions -->
 
 ## [管理角色](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [使用技術服務人員角色](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [使用軟體代理程式來管理電腦](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [比較電腦管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [安裝電腦用戶端](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [一般電腦管理工作](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [電腦原則](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -249,10 +263,16 @@
 ### [管理授權合約](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [解決原則衝突](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [使用者教育](end-user-educate.md)
+### [公司入口網站訊息](end-user-company-portal-messages.md)
+### [Android 上啟用 MAM 的應用程式](end-user-mam-apps-android.md)
+### [iOS 上啟用 MAM 的應用程式](end-user-mam-apps-ios.md)
+### [如何取得 Android 應用程式](end-user-apps-android.md)
+### [如何取得 iOS 應用程式](end-user-apps-ios.md)
+### [如何取得 Windows 應用程式](end-user-apps-windows.md)
 
 # 監視及疑難排解
-## [監視電信費用](telecom-expenses-monitor.md)
-
+## [使用技術服務人員角色](help-desk-operators.md)
 
 # 開發和自訂
 ## [設定自訂裝置設定](custom-settings-configure.md)
@@ -277,6 +297,5 @@
 ### [Intune App SDK Xamarin 元件](app-sdk-xamarin.md)
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [名詞解釋](intune-glossary.md)
