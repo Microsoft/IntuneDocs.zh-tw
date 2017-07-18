@@ -118,6 +118,7 @@
 #### [Windows 市集應用程式](store-apps-windows.md)
 #### [Windows LOB 應用程式](lob-apps-windows.md)
 #### [Android for Work 應用程式](apps-add-android-for-work.md)
+#### [適用於 Windows 10 的 Office 365 應用程式](apps-add-office365.md)
 ### [指派應用程式](apps-deploy.md)
 ### [監視應用程式](apps-monitor.md)
 ### [iOS 應用程式組態設定檔](app-configuration-policies-use-ios.md)
