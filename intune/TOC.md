@@ -38,9 +38,9 @@
 ### [實作](planning-guide-onboarding.md)
 ### [測試與驗證](planning-guide-test-validation.md)
 ### [其他資源](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## 案例實作指南
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -64,14 +64,13 @@
 #### [網路頻寬使用量](network-bandwidth-use.md)
 ### [登入 Intune](account-sign-up.md)
 ### [設定網域](custom-domain-name-configure.md)
-### [新增使用者](users-permissions-add.md)
+### [新增使用者](users-add.md)
 ### [新增群組](groups-add.md)
-### [指派授權](licenses-assign.md)       
-### [自訂公司入口網站](company-portal-customize.md)     
+### [指派授權](licenses-assign.md)
 ### [設定 MDM 授權單位](mdm-authority-set.md)
 
 ## [註冊裝置](device-enrollment.md)
-### 設定選項
+### [註冊選項](enrollment-options.md)
 #### [條款及條件](terms-and-conditions-create.md)
 #### [限制](enrollment-restrictions-set.md)
 #### [Apple MDM 推播憑證](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [重設 Windows 10 的 PIN 碼](device-windows-pin-reset.md)
 ### [檢視裝置清查](device-inventory.md)
 
-## [管理使用者](user-management.md)
 <!--### Add and delete users -->
 
 ## [管理應用程式](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [設定 Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout 與 Intune 整合](lookout-mtd-connector-integration.md)
+
 #### [設定 Skycure](skycure-mobile-threat-defense-connector.md)
-##### [設定 Azure AD SSO](skycure-azure-sso-configure.md)
-##### [下載 iOS 應用程式設定原則](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure 與 Intune 整合](skycure-mtd-connector-integration.md)
+
+#### [設定檢查點](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [檢查點與 Intune 整合](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [新增 MTD 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [在 Intune 中啟用 MTD](mtd-connector-enable.md)
 #### [建立 MTD 裝置合規性政策](mtd-device-compliance-policy-create.md)
 
 ### [網路存取控制](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [設定 Windows Hello](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [管理角色](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [使用軟體代理程式來管理電腦](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [比較電腦管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
