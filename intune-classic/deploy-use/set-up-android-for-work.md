@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>啟用 Android for Work 裝置的註冊
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,7 +30,7 @@ ms.lasthandoff: 06/08/2017
 如果尚未這麼做，請將[行動裝置管理授權單位](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment)設定為 **Microsoft Intune** 並設定 MDM，為行動裝置管理做好準備。
 
 2. **設定 Android for Work 繫結**<br>
-    以 Intune 系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，移至 **[管理]** &gt; **[行動裝置管理]** &gt; **[Android for Work]**，然後按一下 **[設定]** 開啟 Google Play 的 Android for Work 網站。 這會在瀏覽器中以新的索引標籤開啟。
+    以 Intune 系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，移至 [管理] &gt; [行動裝置管理] &gt; [Android for Work]，然後按一下 [設定] 開啟 Google Play 的 Android for Work 網站。 這會在瀏覽器中以新的索引標籤開啟。
 
 3. **登入 Google**<br>
    在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是您組織的 IT 系統管理員用來在 Play for Work 主控台中管理及發行應用程式所共用的 Google 帳戶。
@@ -60,8 +57,7 @@ ms.lasthandoff: 06/08/2017
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何解除 Android for Work 帳戶繫結
 
 1. **解除 Android for Work 繫結**<br>
-    以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，移至 **[管理]** &gt; **[行動裝置管理]** &gt; **[Android for Work]**，然後按一下 **[解除繫結]**。
+    以系統管理使用者身分開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com)，移至 [管理] &gt; [行動裝置管理] &gt; [Android for Work]，然後按一下 [解除繫結]。
 
 2. **同意刪除 Android for Work 繫結**<br>
   按一下 [是] 刪除繫結，並從 Intune 取消註冊所有 Android for Work 裝置。
-

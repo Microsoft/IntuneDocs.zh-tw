@@ -1,5 +1,5 @@
 ---
-title: "VPN 連線 | Microsoft Docs"
+title: "VPN 連線"
 description: "使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者和裝置。"
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune 中的 VPN 連線
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 3. 選擇性：提供 URL 字串探查，這是規則會用來做為測試的 URL。 如果安裝此設定檔的裝置可以在不需重新導向之下存取這個 URL，VPN 便會建立，且裝置將會連線到目標 URL。 使用者將不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，然後再將裝置透過 VPN 連線到目標 URL。
 4. 選擇下列其中一項動作：
   - **連線**
-  - **評估連線**：它有三個設定 a. **網域動作** - 選擇 **[連線 (若需要)]** 或 **[一律不連線]**
-      b. **以逗號分隔的網域清單** - 只有在您選擇 **[網域動作]** 的 **[連線 (若需要)]** 時才可以設定
-      c. **必要的 URL 字串探查** - HTTP 或 HTTPS (建議選項) URL，例如 *https://vpntestprobe.contoso.com*。 規則會檢查是否有來自此地址的回應。 如果沒有，且 [網域動作] 為 [連線 (若需要)]，便會觸發 VPN。
+  - **評估連線**：它有三個設定 a. **網域動作** - 選擇 [連線 (若需要)] 或 [Never connect] (一律不連線) b. **以逗號分隔的網域清單** - 只有在您選擇 [網域動作] 的 [連線 (若需要)] 時才能進行這項設定 c. **必要的 URL 字串探查** - HTTP 或 HTTPS (建議選項) URL，例如 *https://vpntestprobe.contoso.com*。 規則會檢查是否有來自此地址的回應。 如果沒有，且 [網域動作] 為 [連線 (若需要)]，便會觸發 VPN。
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Windows 10 Desktop 和行動裝置版也提供下列設定。
 成功部署之後，使用者會看到您在其裝置的 VPN 連線清單中指定的 VPN 連線名稱。
 
 在 [原則]  工作區的 [概觀]  頁面上，狀態摘要和警示可識別需要注意的原則問題。 此外，狀態摘要還會顯示在 [儀表板] 工作區中。
-

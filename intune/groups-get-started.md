@@ -1,7 +1,7 @@
 ---
-title: "開始使用 Intune Azure 入口網站預覽版中的群組"
-titleSuffix: Intune Azure preview
-description: "了解 Intune Azure 入口網站預覽版中群組的新功能"
+title: "Azure 入口網站中的 Intune 傳統群組"
+titleSuffix: Intune on Azure
+description: "了解 Intune Azure 入口網站中群組的新功能"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -13,32 +13,29 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6e2b75b1c85c0cd0ed98623dcd9d87b15eb082
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3e7cf02ed43507eabdf6038940058f94eb09b0fa
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Azure 入口網站中的 Intune 傳統群組
 
-# <a name="get-started-with-groups"></a>開始使用群組
-
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 我們已收到您的意見反應，將會對如何在 Microsoft Intune 中使用群組進行一些變更。
 如果您從 Azure 入口網站使用 Intune，則您的 Intune 群組即已遷移至 Azure Active Directory 安全性群組。
 
-對您而言，優點是您現在會對所有 Enterprise Mobility + Security 和 Azure AD 應用程式使用相同的群組體驗。 此外，您還可以使用 PowerShell 和 Graph API 來擴充和自訂這項新功能。
+對您而言，優點是您現在在所有 Enterprise Mobility + Security 和 Azure AD 應用程式都能使用相同的群組體驗。 此外，您還可以使用 PowerShell 和 Graph API 來擴充和自訂這項新功能。
 
-Azure AD 安全性群組支援使用者和裝置的所有 Intune 部署類型。 此外，您還可以使用 Azure AD 動態群組，根據您提供的屬性自動進行更新。 例如，您可以建立可執行 iOS 9 的裝置群組。 只要註冊執行 iOS 9 的裝置，裝置就會自動顯示動態群組。
+Azure AD 安全性群組支援使用者和裝置的所有 Intune 部署類型。 此外，您還可以使用 Azure AD 動態群組，根據您提供的屬性自動進行更新。 例如，您可以建立可執行 iOS 9 的裝置群組。 只要註冊執行 iOS 9 的裝置，裝置就會自動出現在動態群組中。
 
 ## <a name="what-is-not-available"></a>不適用的範圍為？
 
 Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
 - 將不再提供 [已取消群組的使用者] 與 [已取消群組的裝置] Intune 群組。
-- 從 Azure 入口網站中不存在的群組，[排除特定成員] 的選項。 不過，您可以搭配使用 Azure AD 安全性群組與進階規則來複寫這項行為。 例如，若要建立進階規則來包含安全性群組中 Sales 部門的所有人員，但排除職稱中有 "Assistant" 這個字的人員，則可以使用這個進階規則︰
+- 從 Azure 入口網站中不存在的群組，[排除特定成員] 的選項。 不過，您可以搭配使用 Azure AD 安全性群組與進階規則來複寫這項行為。 例如，若要建立進階規則來包含安全性群組中 Sales 部門的所有人員，但排除職稱中有 "Assistant" 這個字的群組，您可以使用這個進階規則︰
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
 - Intune 主控台中的 [所有受 Exchange ActiveSync 管理的裝置] 群組將不會移轉至 Azure AD。 不過，您仍然可以從 Azure 入口網站存取 EAS 受管理裝置的相關資訊。
@@ -46,9 +43,9 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 ## <a name="how-to-get-started"></a>如何開始使用？
 
 - 閱讀下列主題，以了解 Azure AD 安全性群組和其運作方式︰
-    -  [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用屬性來建立進階規則](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+    -  [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+    -  [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+    -  [使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
 -  請確定將需要建立群組的系統管理員新增至 [Intune 服務管理員] Azure AD 角色。 Azure AD 服務系統管理員角色沒有 [管理群組] 權限。
 -  如果您的 Intune 群組已使用 [排除特定成員] 選項，則請決定是否可以重新設計這些群組，而沒有排除項目，或者是否需要進階規則來符合商業需求。
 
@@ -56,7 +53,7 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 ## <a name="what-happened-to-intune-groups"></a>Intune 群組發生什麼事？
 在 Azure 入口網站中，將群組從傳統 Intune 入口網站移轉至 Intune 時，會套用下列規則︰
 
-| Intune 中的群組|Azure AD 中的群組|
+| 傳統的 Intune 群組|Azure AD 的群組|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |靜態使用者群組|靜態 Azure AD 安全性群組|
 |動態使用者群組|含有 Azure AD 安全性群組階層的靜態 Azure AD 安全性群組|
@@ -64,14 +61,14 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 |動態裝置群組|動態 Azure AD 安全性群組|
 |包含 include 條件的群組|靜態 Azure AD 安全性群組，包含 Intune 中 include 條件的任何靜態或動態成員|
 |包含 exclude 條件的群組|未移轉|
-|內建群組：<br>- **所有使用者**<br>- **已取消群組的使用者**<br>- **所有裝置**<br>- **已取消群組的裝置**<br>- **所有電腦**<br>- **所有行動裝置**<br>- **所有 MDM 受管理裝置**<br>- **所有 EAS 受管理裝置**|Azure AD 安全性群組|
+|內建群組：<br>- **所有使用者**<br>- **已取消群組的使用者**<br>- **所有裝置**<br>- **已取消群組的裝置**<br>- **所有電腦**<br>- **所有行動裝置**<br>- **所有 MDM 管理裝置**<br>- **所有 EAS 管理裝置**|Azure AD 安全性群組|
 
 ## <a name="group-hierarchy"></a>群組階層
 
 在傳統 Intune 主控台中，所有群組都會有父群組。 群組只能包含其父群組的成員。 在 Azure AD 中，子群組可以包含其父群組中沒有的成員。
 
 ## <a name="group-attributes"></a>群組屬性
-屬性是可用於定義群組的裝置內容。 這個表格描述這些準則如何移轉至 Azure AD 安全性群組。
+屬性是可用於定義群組的裝置內容。 本表說明這些準則如何移轉至 Azure AD 安全性群組。
 
 | Intune 中的屬性|Azure AD 中的屬性|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
@@ -87,5 +84,4 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>您先前部署的原則與應用程式會發生什麼事？
 
-就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在會從 Azure 入口網站管理這些群組，而不是從傳統 Intune 主控台。
-
+就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在是從 Azure 入口網站管理這些群組，不是從傳統的 Intune 主控台。

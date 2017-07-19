@@ -1,12 +1,12 @@
 ---
 title: "透過 Intune 設定並管理 SCEP 憑證"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何設定基礎結構，並建立及指派 Intune SCEP 憑證設定檔。"
+titleSuffix: Intune on Azure
+description: "了解如何設定基礎結構，並建立及指派 Intune SCEP 憑證設定檔。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主題說明如何透過 Intune 設定基礎結構，並建立及指派簡單憑證註冊通訊協定 (SCEP) 憑證設定檔。
 
@@ -84,6 +83,10 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 **步驟 5**：啟用、安裝及設定 Intune 憑證連接器
 
+> [!NOTE]
+> 由於某個已知的問題，請使用下列程序來下載、安裝及設定憑證連接器：[設定 SCEP 的憑證基礎結構 -> 設定基礎結構 -> 工作 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>步驟 1：建立 NDES 服務帳戶
 
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時指定此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
@@ -100,6 +103,9 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 1.  以企業系統管理員身分登入。
 
 2.  在發行 CA 上，使用 [憑證範本] 嵌入式管理單元來建立新的自訂範本，或複製現有的範本，然後編輯現有的範本 (例如使用者範本) 以搭配 NDES 使用。
+
+    >[!NOTE]
+    > NDES 憑證範本必須根據 v2 憑證範本 (具有 Windows 2003 相容性)。
 
     範本必須要有下列組態：
 
@@ -246,7 +252,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
     ![測試 NDES](.\media\SCEP_NDES_URL.png)
 
-    如果您收到「503 服務無法使用」，請檢查 eventviewer。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 工作 1 會說明這些權限。
+    如果您收到「503 服務無法使用」，請檢查事件檢視器。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 工作 1 會說明這些權限。
 
 ##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>在 NDES 伺服器上安裝並繫結憑證
 
@@ -304,7 +310,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>啟用針對憑證連接器的支援
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
 4. 在 [裝置設定] 刀鋒視窗中選擇 [憑證授權單位]。
 5.  選取 [啟用憑證連接器]。
@@ -312,10 +318,10 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 
 > [!NOTE]
-> 由於某個已知的問題，請使用下列程序來下載、安裝及設定憑證連接器：[設定 SCEP 的憑證基礎結構 -> 設定基礎結構 -> 工作 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> 由於某個已知的問題，請使用下列程序來下載、安裝及設定憑證連接器：[設定 SCEP 的憑證基礎結構 -> 設定基礎結構 -> 工作 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
 4. 在 [裝置設定] 刀鋒視窗中選擇 [憑證授權單位]。
 5. 選擇 [下載憑證連接器]。
@@ -377,6 +383,8 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
         - **一般名稱**
         - **包括電子郵件的一般名稱**
         - **一般名稱及電子郵件地址**
+        - **自訂** - 當您選取此選項時，會顯示另一個下拉式欄位。 您可以使用此欄位輸入自訂主體名稱格式。 自訂格式支援的兩個變數為「一般名稱 (CN)」和「電子郵件 (E)」。 您可使用由這些變數與靜態字串的其中之一或多個組成的組合，建立自訂主體名稱格式，例如︰**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**。在此範例中，您建立了主體名稱格式，除了 CN 與 E 變數之外，為組織單位、組織、位置、州與國家/地區值使用字串。 [本主題](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) 說明 **CertStrToName** 函式和它支援的字串。
+        
     - **主體別名**指定 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證將用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。 
     - **金鑰使用方式** - 指定憑證的金鑰使用方式選項。 您可以選擇下列選項： 
         - **金鑰編密：**只允許在金鑰加密後交換金鑰。 
@@ -392,10 +400,6 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
 
->[!Note]
-> 僅限 iOS 裝置：在 [主體名稱格式] 下，選取 [自訂]，以輸入自訂主體名稱格式。
-> 自訂格式目前支援的兩個變數為「一般名稱 (CN)」和「電子郵件 (E)」。 您可使用這些變數與靜態字串的組合，建立自訂主體名稱格式，例如此︰**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**在此範例中，您建立了主體名稱格式，除了 CN 與 E 變數之外，為組織單位、組織、位置、狀態與國家/地區值使用字串。 [本主題](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)會顯示 **CertStrToName** 函式與其支援的字串。
-
 ## <a name="how-to-assign-the-certificate-profile"></a>如何指派憑證設定檔
 
 將憑證設定檔指派給群組之前，請考慮下列事宜︰
@@ -407,5 +411,4 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 - 雖然您會分別指派每個設定檔，但仍需指派受信任的根 CA 以及 SCEP 或 PKCS 設定檔。 否則，SCEP 或 PKCS 憑證原則會失敗。
 
 如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
-
 

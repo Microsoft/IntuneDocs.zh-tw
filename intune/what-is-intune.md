@@ -1,12 +1,12 @@
 ---
-title: "Azure 入口網站預覽版中的 Intune 簡介"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解 Azure 入口網站之 Intune 預覽版的基本概念，以及這項服務如何協助您管理裝置。"
+title: "Azure 入口網站中的 Intune 簡介"
+titleSuffix: Intune on Azure
+description: "了解 Azure 入口網站之 Intune 的基本概念，以及這項服務如何協助您管理裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/10/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Azure 入口網站之 Microsoft Intune 預覽版的簡介
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune 即將移轉到 Azure 入口網站，這意味著您所使用的工作流程及功能將會有所改變。
-新的入口網站可讓您預覽 Azure 入口網站中的新功能及更新功能，您可在其中管理您組織的行動裝置、電腦及應用程式。
-所有 Intune 功能最終都會移至 Azure，但您目前已可在 Azure 入口網站中執行許多 Intune 工作。 這些新功能目前仍為預覽階段，所以仍有一些功能尚未在入口網站提供。 如需詳細資料，請檢閱[新功能](#whats-new)一節。
+Microsoft Intune 現已在 Azure 入口網站上提供，這意味著您慣用的工作流程及功能現在會有所改變。
+新的入口網站在 Azure 入口網站中提供新功能及更新功能，您可在其中管理您組織的行動裝置、電腦及應用程式。
 
 > [!IMPORTANT]
 > **還沒看到新的入口網站嗎？**<br>
-> 我們已經開始為一些預選的租用戶導入預覽版。 現有的租用戶自 2017 初開始，將陸續移轉到新的服務平台上。 在移轉您的租用戶之前，您會在 Office 訊息中心收到相關通知。
+> 現有的租用戶將移轉至新的體驗。 在您的租用戶移轉之前，通知會顯示在 Office 訊息中心。
 >
-> 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用 Apple 註冊工作流程。 移轉的排程尚未宣布，但將會盡快提供詳細資料。 如果您現有的帳戶無法存取預覽，我們強烈建議您建立試用帳戶來測試新的體驗。
+> 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用 Apple 註冊工作流程。 移轉的排程尚未公告。 如果您現有的帳戶無法存取 Azure 入口網站，建議您建立試用帳戶。
+>
+> 請檢閱潛在封鎖程式的清單 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-您可以在此文件庫中找到新的產品文件，而這份在文件在預覽期間仍會持續更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+您可以在此文件庫中找到新入口網站的相關資訊，這項資訊會不斷更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
 
 以下是新版服務的一些重點摘要︰
 
@@ -78,13 +73,13 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 ![Azure 入口網站的工作負載](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>簡介和開始使用
-本節包含有關 Intune 的[新功能](whats-new.md)、[已知問題](known-issues.md)、[如何取得支援](get-support.md)、如何[開始使用免費試用版](free-trial-sign-up.md)等資訊。
+此小節包含[簡介資訊](introduction-intune.md)，可以協助您開始使用 Intune。
 ### <a name="plan-and-design"></a>規劃和設計
-可協助您[計劃和設計](/intune-classic/plan-and-design/introduction) Intune 環境的資訊。
+可協助您[計劃和設計](/intune-classic/plan-design/introduction) Intune 環境的資訊。
 ### <a name="device-enrollment"></a>裝置註冊
 [如何將您的裝置交付 Intune 管理](device-enrollment.md)。
-### <a name="device-compliance"></a>裝置相容性
-[定義裝置的相容性層級，然後回報所有不相容的裝置](device-compliance.md)。
+### <a name="device-compliance"></a>裝置合規性
+[定義裝置的合規性層級，並回報所有不符合規範的裝置](device-compliance.md)。
 ### <a name="device-configuration"></a>裝置設定
 [了解您可用於在您管理之裝置上進行設定及功能的各種設定檔](device-profiles.md)。
 ### <a name="devices"></a>裝置
@@ -96,7 +91,7 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 ### <a name="on-premises-access"></a>內部部署存取
 [設定 Exchange ActiveSync 和 Exchange 內部部署的存取](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[了解您管理之裝置的使用者，並將資源整理歸入群組](user-management.md)。
+[了解您管理之裝置的使用者，並將資源整理歸入群組](users-add.md)。
 ### <a name="groups"></a>中
 [了解如何搭配 Intune 使用 Azure Active Directory 群組](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune 角色
@@ -108,5 +103,4 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 
 ## <a name="whats-new"></a>新功能
 
-[了解預覽版的新功能](whats-new.md)。
-
+[Intune 的新功能](whats-new.md)。
