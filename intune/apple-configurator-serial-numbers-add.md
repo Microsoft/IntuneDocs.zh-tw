@@ -1,7 +1,7 @@
 ---
 title: "新增 Apple Configurator 序號"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何將序號新增至公司擁有並使用 Apple Configurator 的 iOS 裝置。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Apple Configurator 將序號新增至公司擁有的 iOS 裝置。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>新增 Apple Configurator 序號
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 想要[使用設定輔助程式的 Apple Configurator 註冊公司擁有的 iOS 裝置](apple-configurator-setup-assistant-enroll-ios.md)時，請使用下列步驟將序號新增至 Intune。 您可以一次新增一個序號，或上傳序號的逗點分隔值 (CSV) 檔案。 新增序號之後，可以為其指派一個設定檔。 設定檔包含您要套用到裝置的特定管理設定。
 
@@ -76,4 +73,3 @@ Intune 可讓您從 Azure 入口網站中兩個的不同位置指派設定檔。
 **檢視序號的狀態**
 
 在 [Apple Configurator 序號] 刀鋒視窗中選取您要檢視狀態的序號，再檢視 [狀態]項目下方。
-

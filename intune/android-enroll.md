@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>必要的中繼資料
-
-title: 在 Intune 中註冊 Android 裝置 titleSuffix: "Intune Azure 預覽版" description: "Intune Azure 預覽版︰了解如何在 Intune Azure 預覽版中註冊 Android 裝置。"
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>選擇性中繼資料
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: "在 Intune 中註冊 Android 裝置"
+titleSuffix: Intune on Azure
+description: "了解如何在 Intune 中註冊 Android 裝置。"
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 身為 Intune 系統管理員，Intune 可讓您管理 Android 裝置，包括 Samsung Knox Standard 裝置。 您也可以管理 [Android for Work 裝置](#enable-enrollment-of-android-for-work-devices)上的工作設定檔。
 
@@ -25,15 +31,13 @@ Intune 的多使用者管理支援執行 Samsung KNOX Standard 的裝置。 這�
 
 ## <a name="prerequisite"></a>必要條件
 
-您必須將 MDM 授權單位設定為 **Microsoft Intune**準備管理行動裝置。 請參閱[設定 MDM 授權單](mdm-authority-set.md)以取得相關指示。 此項目只會設定一次，也就是第一次為行動裝置管理設定 Intune 之時，因此您有可能已經設定過此項目。
+您必須將 MDM 授權單位設定為 **Microsoft Intune**準備管理行動裝置。 請參閱[設定 MDM 授權單](mdm-authority-set.md)以取得相關指示。 此項目只會設定一次，也就是第一次為行動裝置管理設定 Intune 之時。
 
 ## <a name="set-up-android-enrollment"></a>設定 Android 註冊
 
 根據預設，Intune 允許註冊 Android 和 Samsung Knox Standard 裝置。
 
-若要封鎖 Android 裝置，或者僅封鎖註冊個人擁有的 Android 裝置，請參閱[Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions) (設定裝置類型限制)。
-
-若要設定使用者能夠註冊的裝置數上限，請參閱 [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions) (設定裝置限制)。
+若要封鎖 Android 裝置，或者僅封鎖註冊個人擁有的 Android 裝置，請參閱[Set device type restrictions](enrollment-restrictions-set.md) (設定裝置類型限制)。
 
 若要啟用裝置管理，您的使用者必須註冊其裝置，方法是下載從 Google Play 取得的 Intune 公司入口網站應用程式，然後開啟應用程式，並遵循提示進行註冊。 當 Android 裝置受到管理之後，您可以[指派合規性原則](compliance-policy-create-android.md)、[管理應用程式](app-management.md)等。
 
@@ -47,7 +51,7 @@ Intune 的多使用者管理支援執行 Samsung KNOX Standard 的裝置。 這�
 如果尚未這麼做，請將[行動裝置管理授權單位](mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
 
 2. **設定 Android for Work 繫結**<br>
-    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務]**** > [監視 + 管理]**** > [Intune]****。
+    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
     1. 在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後按一下 [設定] 以開啟 Google Play 的 Android for Work 網站。 這會在瀏覽器中以新的索引標籤開啟。
   ![顯示設定 Android for Work 繫結之連結的螢幕擷取畫面](./media/android-work-bind.png)
@@ -78,7 +82,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 
 如需其他使用者工作的資訊，請參閱下列文章：
 
-- [使用 Microsoft Intune 之使用者體驗的相關資源](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)
 - [在 Intune 上使用您的 Android 裝置](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>解除 Android for Work 系統管理帳戶繫結
@@ -88,7 +92,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何解除 Android for Work 帳戶繫結
 
 1. **解除 Android for Work 繫結**<br>
-    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務]**** > [監視 + 管理]**** > [Intune]****。  在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後按一下 [解除繫結]。
+    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務] > [監視 + 管理] > [Intune]。  在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後按一下 [解除繫結]。
 
 2. **同意刪除 Android for Work 繫結**<br>
   按一下 [是] 刪除繫結，並從 Intune 取消註冊所有 Android for Work 裝置。

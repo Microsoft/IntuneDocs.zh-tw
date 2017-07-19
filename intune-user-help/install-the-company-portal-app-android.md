@@ -5,25 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d3401f32994fcd0e54d35a2615a636c5d06183d2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ab021708898fe87c2c5acf7d8b33df5a57e36c84
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安裝 Android 版公司入口網站應用程式
 
@@ -45,7 +42,6 @@ ms.lasthandoff: 05/23/2017
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-在您下載公司入口網站應用程式之後，建議您[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)以取得公司資訊的完整存取權限。
+在您下載公司入口網站應用程式之後，建議您[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)以取得公司資訊的完整存取權限。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
-

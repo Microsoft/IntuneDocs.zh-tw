@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune 的 Intune角色 (RBAC)"
+title: "RBAC 搭配 Intune"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 預覽版︰了解 RBAC 如何讓您控制誰可以執行動作及變更。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,161 +15,119 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a6dfde1d02313e51f59d4fd101a175f347f6cec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
 
-# <a name="intune-roles-rbac-for-microsoft-intune"></a>Microsoft Intune 的 Intune角色 (RBAC)
+RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及這些工作適用於誰。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。 角色的定義包括︰
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+- **角色定義**：角色的名稱、其所管理的資源，以及針對每個資源授與的權限。
+- **成員**：授與權限的使用者群組。
+- **範圍**：成員可以管理的使用者或裝置群組。
+- **指派**：當定義、成員及範圍設定完成之後，便完成了指派。
 
-簡單地說，Intune 的**角色** (或稱 RBAC) 可協助您控制誰可以執行各種 Intune 動作，以及這些動作的適用人員。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。
+![Intune RBAC 範例](./media/intune-rbac-1.PNG)
 
-角色的定義包括︰
+從新的 Intune 入口網站開始，**Azure Active Directory (Azure AD)** 提供兩個可與 Intune 搭配使用的目錄角色。 這些角色會獲得完整的權限，以在 Intune 中執行所有活動：
 
-- **定義** - 角色的名稱，以及其所設定的權限。
-- **成員** - 獲授與這些權限的使用者或使用者群組。
-- **範圍** - 指定人員 (即成員) 可管理的使用者或裝置。
-- **指派** - 當定義、成員及範圍設定完成之後，便完成了指派。
+- **全域管理員：**具有此角色的使用者可存取 Azure AD 中的所有管理功能，以及與 Azure AD 同盟的服務，例如 Exchange Online、SharePoint Online 及商務用 Skype Online。 註冊 Azure AD 租用戶的人員會變成全域管理員。 只有全域管理員可以指派其他 Azure AD 系統管理員角色。 您的組織可以擁有多個全域管理員。 全域管理員可為任何使用者及其他所有系統管理員重設密碼。
+
+- **Intune 服務管理員：**存在服務時，具有此角色的使用者在 Intune 內具有全域權限。 此外，此角色還提供管理使用者、裝置與建立和管理群組的能力。
+
+- **條件式存取系統管理員：**具有此角色的使用者，只擁有檢視、建立、修改和刪除條件式存取原則的權限。
+
+    > [!IMPORTANT]
+    > Intune 服務管理員角色不提供管理 Azure AD 條件式存取設定的能力。
+
+    > [!TIP]
+    > Intune 也會顯示三個使用 Azure AD RBAC 控制的 Azure AD 延伸模組：**使用者**、**群組**和**條件式存取**。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資料，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+
+## <a name="roles-created-in-the-intune-classic-console"></a>在 Intune 傳統主控台中建立的角色
+
+只有具有「完整」權限的 Intune **服務管理員**使用者可從 Intune 傳統主控台移轉至 Azure 上的 Intune。 您需要將具有「唯讀」或「技術支援」存取權的 Intune **服務管理員**使用者重新指派至 Azure 入口網站中的 Intune 角色，並將它們傳統入口網站移除。
+
+> [!IMPORTANT]
+> 如果您的系統管理員仍然需要使用 Intune 管理電腦的存取權，您可能需要在傳統主控台中保留 Intune 服務管理員存取權。
 
 ## <a name="built-in-roles"></a>內建角色
 
-以下是 Intune 的內建角色。您可以自訂這些角色，也可以不進一步設定而將其指派給群組。
+以下是 Intune 的內建角色。您可以將它們指派給群組而不進一步設定：
 
-- **Intune 系統管理員** - 具備 Intune 的所有作業的完整權限。
-- **應用程式管理員** - 管理及部署應用程式與設定檔。
-- **設定原則管理員** - 管理及部署組態設定及設定檔。
-- **技術服務人員** - 執行遠端工作及檢視使用者與裝置的資訊。
-- **唯讀操作員** - 只能在 Intune 入口網站中檢視資訊而無權變更。
+- **技術支援人員**：對使用者和裝置執行遠端工作，並可將應用程式或原則指派給使用者或裝置。 
+- **原則和設定檔管理員**：管理合規性原則、組態設定檔、Apple 註冊和公司裝置識別碼。
+- **唯讀操作員**：檢視使用者、裝置、註冊、設定和應用程式資訊，但無法對 Intune 進行變更。
+- **應用程式管理員**：管理行動裝置及受管理的應用程式，並可讀取裝置資訊。
 
+### <a name="to-assign-a-built-in-role"></a>指派內建角色
 
-## <a name="custom-roles"></a>自訂角色
+1. 在 [Intune 角色] 上，選擇您想要指派的內建角色。
 
-若內建角色全不符合您的需求，可以選擇設定涵蓋許多 Intune 功能的設定來建立您自己的角色。 本主題後文將會顯示可用設定的清單。
+2. 在 [<角色名稱> - 內容] 刀鋒視窗中，依序選擇 [管理] 和 [指派]。
 
-### <a name="example"></a>範例
+    > [!NOTE] 
+    > 您無法刪除或編輯內建角色
+    
+3. 在自訂角色刀鋒視窗中，選擇 [指派]。
 
-您僱用新的 IT 系統管理員負責將應用程式部署給您倫敦辦公室的使用者並加以管理。 這些使用者屬於名為 **London** 的 Azure AD 群組。 您想要讓 IT 系統管理員無法將應用程式部署給其他辦公室的使用者。 您採取下列動作：
-
-- 指派具有下列內容的內建**應用程式管理員**角色︰
-    - **成員** - 選取要部署應用程式之 IT 系統管理員所屬的群組
-    - **範圍** - 選取 **London** Azure AD 群組。
-
-    >[!IMPORTANT]
-    >若要建立、編輯或指派角色，您的帳戶必須具備下列其中一項 Azure AD 權限︰
-    >- **全域 AAD 系統管理員**
-    >- **Intune 服務系統管理員**
-
-### <a name="how-to-create-a-custom-role"></a>如何建立自訂角色
-
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗上選擇 [Intune 角色]。
-![存取控制工作負載](./media/axxess-control.png)
-1. 在**存取控制**工作負載的 [角色] 刀鋒視窗中選擇 [新增自訂]。
-2. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。
-3. 在 [權限] 刀鋒視窗中，選擇此角色所要使用的權限。 您可以使用本主題後文的自訂角色設定參考清單協助您。
-4. 完成之後，請按一下 [確定] 。
-5. 在 [新增自訂角色] 刀鋒視窗中按一下 [建立]。
-
-新角色會顯示 [角色] 刀鋒視窗內的清單中。
-
-## <a name="how-to-assign-a-role"></a>如何指派角色
-
-1. 在**存取控制**工作負載的 [角色] 刀鋒視窗中，選擇您要指派的內建或自訂角色。
-2. 在 [角色名稱] >- [內容] 刀鋒視窗中選擇 [管理]  >  [指派]。 您也可以在此刀鋒視窗中編輯或刪除現有的角色。
-3. 在下一個刀鋒視窗中選擇 [指派]。
 4. 在 [角色指派] 刀鋒視窗中，為指派輸入**名稱**及**描述** (非必要)，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
     - **範圍** - 選取包含上列成員可以管理的使用者群組。
-5. 完成之後，請按一下 [確定] 。
+<br></br>
+5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
-新指派會隨即顯示在指派清單中。
+### <a name="intune-rbac-table"></a>Intune RBAC 表格
 
-## <a name="custom-role-settings-reference"></a>自訂角色設定參考
+- 下載 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可查看每個角色可以執行之工作的更多詳細資料。
 
-當您建立自訂角色時，可以設定下列一或多個設定︰
+## <a name="custom-roles"></a>自訂角色
 
-### <a name="device-configurations"></a>服務設定
+您可以建立自訂角色，其中包含特定工作功能所需的任何權限。 比方說，如果 IT 部門群組管理應用程式、原則和組態設定檔，您可以將這裡的所有權限一起加到一個自訂角色中。
 
-|||
-|-|-|
-|**指派**|將裝置設定檔指派給群組。|
-|**建立**|建立裝置設定檔。|
-|**刪除**|刪除裝置設定檔。|
-|**讀取**|讀取裝置設定檔及其內容。|
-|**更新**|更新現有的裝置設定檔。|
+> [!IMPORTANT]
+> 若要建立、編輯或指派角色，您的帳戶必須具備下列其中一項 Azure AD 權限︰
+> - **全域管理員**
+> - **Intune 服務管理員**
 
-### <a name="managed-apps"></a>受管理的應用程式
+### <a name="to-create-a-custom-role"></a>建立自訂角色
 
-|||
-|-|-|
-|**指派**|將受管理的應用程式指派給群組。|
-|**建立**|將受管理的應用程式新增到 Intune。|
-|**刪除**|刪除受管理的應用程式。|
-|**讀取**|讀取受管理的應用程式及其內容。|
-|**更新**|更新現有受管理的應用程式。|
-|**抹除**|從裝置抹除受管理的應用程式。|
+1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)。
 
-### <a name="managed-devices"></a>受管理的裝置
+2. 選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
 
-|||
-|-|-|
-|**刪除**|從 Intune 刪除受管理的裝置。|
-|**讀取**|在 Intune 入口網站中檢視受管理裝置的相關資訊。|
-|**更新**|更新受管理裝置的相關資訊。|
+3. 選擇 [Intune]，隨即開啟 [Intune 儀表板]，然後選擇 [Intune 角色]。
 
-### <a name="mobile-apps"></a>行動裝置應用程式
+4. 在 [Intune 角色] 刀鋒視窗中，依序選擇 [Intune 角色] 和 [新增自訂]。
 
-|||
-|-|-|
-|**指派**|將行動裝置應用程式指派給群組。|
-|**建立**|將新的行動應用程式新增至 Intune。|
-|**刪除**|刪除行動裝置應用程式。|
-|**讀取**|讀取行動應用程式及其內容。|
-|**更新**|更新現有的行動應用程式。|
+5. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。
 
-### <a name="organization"></a>組織
+3. 在 [權限] 刀鋒視窗中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
 
-|||
-|-|-|
-|**讀取**|讀取租用戶設定。|
-|**更新**|更新租用戶設定。|
+4. 完成後，請選擇 [確定]。
 
-### <a name="remote-tasks"></a>遠端工作
+5. 在 [新增自訂角色] 刀鋒視窗中按一下 [建立]。 新角色會顯示在 [Intune 角色] 刀鋒視窗的清單中。
 
-|||
-|-|-|
-|**略過啟用鎖定**|不使用使用者的 Apple ID 及密碼而從 iOS 裝置移除啟用鎖定。 |
-|**停用遺失模式**|停用遺失模式。 遺失模式可讓您指定的訊息及電話號碼顯示在裝置的鎖定畫面上。|
-|**啟用遺失模式**|啟用遺失模式。 遺失模式可讓您指定的訊息及電話號碼顯示在裝置的鎖定畫面上。|
-|**尋找裝置**|-|
-|**立即重新開機**|強制裝置重新開機。|
-|**遠端鎖定**|鎖定裝置。 裝置擁有者必須使用其密碼才能解除裝置鎖定。|
-|**重設密碼**|為裝置產生新密碼。新密碼將會顯示在裝置的 [概觀]<device name> 刀鋒視窗中。|
-|**Retire**|只移除 Intune 管理的公司資料。 裝置上的個人資料不會移除。|
-|**抹除**|將裝置回復成預設設定。|
+### <a name="to-assign-a-custom-role"></a>指派自訂角色
 
+1. 在 [Intune 角色] 上，選擇您想要指派的自訂角色。
 
+2. 在 [<角色名稱> - 內容] 刀鋒視窗中，依序選擇 [管理] 和 [指派]。 您也可以在此刀鋒視窗中編輯或刪除現有的角色。
 
-### <a name="telecom-expenses"></a>電信費用
+3. 在自訂角色刀鋒視窗中，選擇 [指派]。
 
-|||
-|-|-|
-|**讀取**|讀取電信費用管理 (TEM) 設定。|
-|**更新**|更新電信費用管理 (TEM) 設定。|
+4. 在 [角色指派] 刀鋒視窗中，為指派輸入**名稱**及**描述** (非必要)，然後選擇下列項目︰
+    - **成員** - 選取包含您要授與權限之使用者的群組。
+    - **範圍** - 選取包含上列成員可以管理的使用者群組。
+<br></br>
+5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
-### <a name="terms-and-conditions"></a>條款及條件
+## <a name="next-steps"></a>後續步驟
 
-|||
-|-|-|
-|**指派**|為群組指派條款及條件。|
-|**建立**|建立條款及條件設定。|
-|**刪除**|刪除條款及條件設定。|
-|**讀取**|讀取 Intune 入口網站中的條款及條件設定。|
-|**更新**|更新現有的條款及條件設定。|
+[使用 Intune 技術服務人員角色搭配疑難排解入口網站](help-desk-operators.md)
+
+## <a name="see-also"></a>請參閱
+
+[使用 Azure AD 指派角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

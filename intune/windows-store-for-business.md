@@ -1,12 +1,12 @@
 ---
-title: "管理來自商務用 Windows 市集的應用程式 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版︰了解如何將應用程式從商務用 Windows 市集同步到 Intune，然後加以指派及追蹤。"
+title: "從商務用 Windows 市集管理應用程式"
+titleSuffix: Intune on Azure
+description: "了解如何將應用程式從商務用 Windows 市集同步到 Intune，然後加以指派及追蹤。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,35 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b1a76e9f30e3587157d4b3085b1b3ce2abe0b37c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: de6ed7623e33a50bdf8452cbf1bad9c648b13d04
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 [商務用 Windows 市集](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找和購買應用程式。 連接市集與 Microsoft Intune 可讓您從 Intune 入口網站管理大量採購的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
-* 經過同步的應用程式會出現在 Intune 系統管理主控台。一如其他應用程式，您也可以指派這些應用程式。
+* 經過同步的應用程式會出現在 Intune 系統管理主控台；一如其他應用程式，您也可以指派這些應用程式。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
 * 如果可用授權數目不足，Intune 會禁止指派及安裝應用程式。
 
 ## <a name="before-you-start"></a>開始之前
+
 從商務用 Windows 市集開始同步處理及指派應用程式之前，請先檢閱下列資訊︰
-* 您必須將 Intune 設定為組織的行動裝置管理授權單位。
-* 您必須已在商務用 Windows 市集註冊帳戶。
-* 一旦您將 Intune 與企業用 Windows 市集帳戶建立關聯，未來將無法變更為不同帳戶。
-* 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Windows 市集同步。
-* Intune 只會同步處理您透過商務用 Windows 市集購買的線上授權應用程式。
-* 裝置必須加入 Active Directory Domain Services 或工作場所，才能使用此功能。
-* 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
+
+- 將 Intune 設定為組織的行動裝置管理授權單位。
+- 您必須已在商務用 Windows 市集註冊帳戶。
+- 一旦您將 Intune 與企業用 Windows 市集帳戶建立關聯，未來將無法變更為不同帳戶。
+- 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Windows 市集同步。
+- Intune 會同步處理您透過商務用 Windows 市集購買的線上和離線授權應用程式。
+- 只有免費的離線應用程式才能同步處理至 Intune。
+- 裝置必須加入 Active Directory Domain Services 或工作場所，才能使用此功能。
+- 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
 
 ## <a name="associate-your-windows-store-for-business-account-with-intune"></a>將您的商務用 Windows 市集帳戶與 Intune 相關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
@@ -51,18 +52,18 @@ ms.lasthandoff: 05/23/2017
 3. 在 [管理工具] 頁面上，選擇 **[Add a management tool (新增管理工具)]**，然後選擇 **[Microsoft Intune]**。
 
 > [!NOTE]
-> 如果您使用多種管理工具來指派商務用 Windows 市集應用程式，以往只能針對其中一種工具來建立與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
+> 您先前可能只建立了某個用來指派應用程式的管理工具與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
 ## <a name="configure-synchronization"></a>設定同步處理
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [其他]  >  [Intune]。
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 1. 在 [行動應用程式] 刀鋒視窗中選擇 [安裝]  >  [商務用 Windows 市集]。
 2. 按一下 [啟用]。
-3. 若還未執行此動作，請依照前文所述按一下連結註冊商務用 Windows 市集及關聯您的帳戶。
+3. 若還未執行此動作，請依照前文所述按一下連結來註冊商務用 Windows 市集並關聯您的帳戶。
 5. 從 [語言] 下拉式清單中，選擇商務用 Windows 市集應用程式在 Intune 主控台中的顯示語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
 6. 按一下 [同步]，以取得您從 Windows 市集購買的應用程式，將其同步到 Intune。
 
@@ -75,11 +76,13 @@ ms.lasthandoff: 05/23/2017
 
 您可以使用指派任何其他 Intune 應用程式的方式來指派市集應用程式。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。 但您也可以不從 [所有應用程式] 頁面而改從 [授權的應用程式] 頁面指派應用程式。
 
-當您部署商務用 Windows 市集應用程式時，安裝該應用程式的每位使用者都會佔用一個授權。 如果您對某個已指派的應用程式使用了所有可用的授權，則將無法再指派任何複本。 您必須採取下列其中一個動作：
+離線應用程式可以將目標設為使用者群組、 裝置群組或包含使用者和裝置的群組。
+離線應用程式可以針對裝置上的特定使用者或裝置上的所有使用者進行安裝。 
+
+
+當您部署商務用 Windows 市集應用程式時，安裝該應用程式的每位使用者都會佔用一個授權。 如果您對某個已指派的應用程式使用了所有可用的授權，則無法再指派任何複本。 請採取下列其中一個動作：
 * 從某些裝置解除安裝應用程式。
 * 將目前指派的範圍減少，僅以您擁有足夠授權的使用者為目標。
 * 從商務用 Windows 市集購買更多份應用程式。
 
-> [!Important]
-> 只有原先註冊裝置的使用者可使用已指派的應用程式。 其他使用者都不能存取應用程式。
 
