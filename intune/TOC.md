@@ -15,6 +15,7 @@
 ### [裝置生命週期](device-lifecycle.md)
 ### [應用程式生命週期](app-lifecycle.md)
 ## [常見案例](common-scenarios.md)
+## [服務描述](microsoft-intune-service-description.md)
 ## [已知問題](known-issues.md)
 ## [取得支援](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows 註冊](windows-enroll.md)
 #### [大量註冊](windows-bulk-enroll.md)
 ### [設定 Android 註冊](android-enroll.md)
-### 設定 iOS 註冊
-#### [使用裝置註冊計劃](device-enrollment-program-enroll-ios.md)
-#### [使用 Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [使用 Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [設定 iOS 註冊](ios-enroll.md)
+#### [裝置註冊方案](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [設定 macOS 註冊](macos-enroll.md)
 
 ## [管理裝置](device-management.md)
