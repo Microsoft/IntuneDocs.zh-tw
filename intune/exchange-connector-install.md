@@ -1,12 +1,12 @@
 ---
 title: "搭配 Intune 設定適用於內部部署 EAS 的 Exchange Connector"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 預覽版：Exchange ActiveSync MDM - 使用 Connector 工具啟用 Intune 與內部部署 Exchange Server 之間的通訊"
+titleSuffix: Intune Azure
+description: "Intune Azure：Exchange ActiveSync MDM - 使用 Connector 工具啟用 Intune 與內部部署 Exchange Server 之間的通訊"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/14/2017
 ---
-# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>在 Microsoft Intune Azure 預覽版中設定 Intune 內部部署 Exchange Connector
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange Connector
 
 內部部署 Exchange Server 環境可以使用 Intune 內部部署 Exchange Connector，來管理裝置對內部部署 Exchange 信箱的存取 (依據裝置是否已經在 Intune 中註冊，以及是否符合 Intune 裝置合規性原則)。 內部部署 Exchange Connector 也會負責找出連線至內部部署 Exchange Server 的行動裝置，方法是透過與 Intune 同步處理現有的 Exchange Active Sync (EAS) 記錄。
 
@@ -42,8 +42,8 @@ ms.lasthandoff: 07/01/2017
 |作業系統|在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此 Connector。|
 |Microsoft Exchange|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為**新**或**舊版**設定，請連絡您的帳戶管理員。|
 |行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。|
-|硬體|安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。|users-permissions-add.md
-|Active Directory 同步處理|您必須[設定 Active Directory 同步處理](users-permissions-add.md)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。|
+|硬體|安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。|users-add.md
+|Active Directory 同步處理|您必須[設定 Active Directory 同步處理](users-add.md)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。|
 |其他軟體|託管連接器的電腦必須安裝 Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完整安裝。|
 |Network (網路)|安裝連接器的電腦所在的網域，必須與託管 Exchange Server 的網域有信任關係。<br /><br />電腦需要設定，使其能夠在連接埠 80 和 443 上，透過防火牆和 Proxy 伺服器來存取 Intune 服務。 Intune 使用的網域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 

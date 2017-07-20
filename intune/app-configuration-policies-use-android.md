@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 07/01/2017
 
 如此即可建立原則，並顯示在原則清單刀鋒視窗上。
 
-接著一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
+
 
 當指派的應用程式在裝置上執行時，會依照您在應用程式組態原則中的設定執行。
 
@@ -89,3 +89,8 @@ ms.lasthandoff: 07/01/2017
 8. 若要指派應用程式設定原則，請選取應用程式設定原則，選取 [指派]，然後選取 [選取群組]。
 9. 選取要指派的使用者群組，然後選擇 [選取]。
 10. 選擇 [儲存] 來指派原則。
+
+## <a name="next-steps"></a>後續步驟
+
+一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
+

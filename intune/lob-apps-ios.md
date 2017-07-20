@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,20 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb26ca341fbef6ae02556b09044f43cec23dae2b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb0e151c8b9a948dfd6bb330e1375ddeff2d8e16
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 iOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+使用本主題中的資訊，協助您將 iOS 商務營運應用程式新增至 Intune。
+
+>[!NOTE]
+>雖然 IOS 裝置的使用者可以移除部分內建的 iOS 應用程式 (如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，他們必須移至應用程式市集，並手動重新進行安裝。
 
 ## <a name="step-1---specify-the-software-setup-file"></a>步驟 1 - 指定軟體安裝檔
 
