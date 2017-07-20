@@ -4,7 +4,7 @@ description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -32,6 +32,8 @@ Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用�
 Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟體。 註冊電腦之後，Intune 用戶端軟體接著會下載管理電腦時所需的完整用戶端軟體。
 
 此系列下載可降低對網路頻寬的影響，並將在 Intune 中初次註冊電腦時所需的時間縮到最短。 同時也可確保第二個下載完成之後，用戶端都是安裝最新可用的軟體。
+
+一個 Intune 授權可允許在最多五部電腦上安裝 Intune 用戶端軟體。
 
 ## <a name="download-the-intune-client-software"></a>下載 Intune 用戶端軟體
 

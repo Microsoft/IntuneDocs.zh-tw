@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec45b9445f2737ad99852ebf46cc40c03537a2e5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe2387f57d73b86b647e997eac4c411fbaf2bfbc
+ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合
 
@@ -51,3 +51,4 @@ Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defens
 
 - [Lookout](lookout-mobile-threat-defense-connector.md)
 - [Skycure (英文)](skycure-mobile-threat-defense-connector.md)
+- [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)

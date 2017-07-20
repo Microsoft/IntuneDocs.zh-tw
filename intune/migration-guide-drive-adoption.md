@@ -1,6 +1,6 @@
 ---
 title: "使用條件式存取引導使用者採用"
-description: "本文旨在提供如何使用條件式存取引導使用者註冊 Intune 的見解。"
+description: "本文提供如何使用條件式存取引導使用者註冊 Intune 的見解。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="drive-end-user-adoption-with-conditional-access"></a>使用條件式存取引導使用者採用
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 使用 Intune 啟用條件式存取功能 (例如封鎖來自未註冊裝置的電子郵件) 有助於推動註冊與合規性，但不是移轉成功的要件。 您的移轉採用目標和安全性需求才是決定成功的關鍵。
 
@@ -48,16 +45,16 @@ ms.lasthandoff: 07/03/2017
 
 -   先前的解決方案使用者可能會使用未受管理的裝置存取資源，直到針對這些使用者啟用條件式存取為止。
 
-> [!TIP]
-> 這是眾多方法之一。 您可以選擇較簡單的程序，以延遲所有條件式存取直到使用者已收到每個階段的註冊指示後為止，或是選擇較嚴格的程序，從一開始就強制條件式存取，而且要求所有存取的完整合規性。
 
--   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](/intune/conditional-access)。
+這是眾多方法之一。 您可以選擇較簡單的程序，以延遲所有條件式存取直到使用者已收到每個階段的註冊指示後為止，或是選擇較嚴格的程序，從一開始就強制條件式存取，而且要求所有存取的完整合規性。
+
+-   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 
 ## <a name="task-list-for-conditional-access"></a>條件式存取的工作清單
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>工作 1：決定實作條件式存取的方式
 
-[使用條件式存取的常見方式](/intune/conditional-access-intune-common-ways-use)。
+[使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>工作 2︰設定 Intune 條件式存取
 
@@ -65,14 +62,14 @@ ms.lasthandoff: 07/03/2017
 
 -   [在 Azure Active Directory 中設定條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [使用 Intune 安裝內部部署 Exchange Connector](/intune/exchange-connector-install)
+-   [使用 Intune 安裝內部部署 Exchange Connector](exchange-connector-install.md)
 
--   [為 Exchange Online 設定以應用程式為基礎的條件式存取原則](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [為 Exchange Online 設定以應用程式為基礎的條件式存取原則](app-based-conditional-access-intune-create.md)
 
--   [為 SharePoint Online 設定以應用程式為基礎的條件式存取原則](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [為 SharePoint Online 設定以應用程式為基礎的條件式存取原則](app-based-conditional-access-intune-create.md)
 
--   [封鎖未使用新式驗證 (ADAL) 的應用程式](/intune/app-modern-authentication-block)
+-   [封鎖未使用新式驗證 (ADAL) 的應用程式](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>後續步驟
 
-[典型移轉週期](migration-guide-cycle.md)
+了解[典型移轉週期](migration-guide-cycle.md)。

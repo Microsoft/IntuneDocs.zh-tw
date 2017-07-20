@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置限制設定
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>工作設定檔密碼
 - **需要工作設定檔密碼**：(已啟用工作設定檔的 Android 7.0 和更新版本) 定義只適用於工作設定檔中之應用程式的密碼原則。 根據預設，使用者能選擇使用這兩個個別定義的 PIN，或選擇結合這兩個定義的 PIN，並使用兩者中的較強者。
 - **密碼長度下限**：輸入使用者密碼至少須包含的字元數 (從 **4**-**16**)
-- **在停止活動最少幾分鐘後鎖定螢幕**：選取在停止活動的裝置要求使用者重新輸入工作設定檔密碼以執行工作設定檔中的應用程式之前的時間量。
+- **在停止活動最多幾分鐘後鎖定螢幕** - 選取工作設定檔鎖定之前的時間長度。 然後，使用者必須輸入其認證，才能重新取得存取權。
 - **登入失敗幾次後即抹除裝置**：輸入將裝置上的工作設定檔抹除之前可輸入錯誤密碼的次數。
 - **密碼到期 (天數)**：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)。
 - **必要的密碼類型**：選取必須在裝置上設定的密碼類型。 從下列選項進行選擇：
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **不得重複使用以前用過的密碼**：輸入在舊密碼可以重新使用之前，必須使用新密碼的次數 (從 **1**-**24**)。
 - **指紋解除鎖定**：封鎖使用者使用裝置的指紋掃描器來解鎖裝置。
 - **Smart Lock 與其他信任代理程式**：可讓您控制相容裝置上的 Smart Lock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。您可以使用此設定來防止使用者設定 Smart Lock。
+
+## <a name="next-steps"></a>後續步驟
+
+使用[如何設定裝置限制設定](device-restrictions-configure.md)主題中的資訊進行儲存，並將設定檔指派給使用者和裝置。
