@@ -183,13 +183,12 @@
 ### [監視設定檔](device-profile-monitor.md)
 ### [針對設定檔進行疑難排解](device-profile-troubleshoot.md)
 
-## [設定裝置合規性](device-compliance.md)
-### [先決條件](device-compliance-get-started.md)
+## [設定裝置合規性](device-compliance-get-started.md)
 ### [建立 Android 原則](compliance-policy-create-android.md)
 ### [建立 Android for Work 原則](compliance-policy-create-android-for-work.md)
 ### [建立 iOS 原則](compliance-policy-create-ios.md)
+### [建立 macOS 原則](compliance-policy-create-mac-os.md)
 ### [建立 Windows 原則](compliance-policy-create-windows.md)
-### 針對非合規性建立動作
 ### [監視裝置合規性](compliance-policy-monitor.md)
 
 ## [設定條件式存取](conditional-access.md)
