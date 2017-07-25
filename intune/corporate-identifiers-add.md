@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 57ab3b79ad53a4b195fac426d211a114f054602f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a9852759983a4bc68c596146e2f5691893376cfd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="add-corporate-identifiers"></a>新增公司識別碼
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-身為 IT 管理員，您可以建立並匯入列出國際行動設備識別碼 (IMEI) 編號或序號以識別公司擁有之裝置的逗號分隔值 (.csv) 檔案。 您只能宣告適用於 iOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
+身為 Intune 管理員，您可以建立及匯入逗點分隔值 (.csv) 檔案，其會列出國際行動設備識別 (IMEI) 號碼或序號。 Intune 會使用這些識別碼，將裝置擁有權指定為公司所有。 您只能宣告適用於所有平台的 IMEI 編號。 您只能宣告適用於 iOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-[了解如何尋找 Apple 裝置序號](https://support.apple.com/HT204308)。
+[了解如何尋找 Apple 裝置序號](https://support.apple.com/HT204308)。<br>
 [了解如何尋找您的 Android 裝置序號](https://support.google.com/store/answer/3333000)。
 
 ## <a name="add-corporate-identifiers"></a>新增公司識別碼
@@ -50,7 +50,10 @@ ms.lasthandoff: 07/01/2017
 ```
 
 > [!IMPORTANT]
-> 某些 Android 裝置有多個 IMEI 編號。 Intune 根據每個已註冊的裝置，只會讀取一個 IMEI 編號。 如果您匯入的 IMEI 編號不是 Intune 清查過的 IMEI，則該裝置會分類為個人裝置，而不是公司擁有的裝置。 如果某部裝置匯入多個 IMEI 編號，則註冊狀態會將未經清查的編號顯示為**未知**。
+> 某些 Android 裝置有多個 IMEI 編號。 Intune 根據每個已註冊的裝置，只會讀取一個 IMEI 編號。 若您匯入的 IMEI 編號並非由 Intune 所清查，裝置將會分類為個人裝置而非公司擁有的裝置。 若某部裝置有多個 IMEI 編號匯入，未清查編號的註冊狀態將會顯示**未知**。<br>
+>另請注意：Android 序號可能重複，或是不存在。 請洽詢裝置供應商，以了解序號是否為可靠的裝置識別碼。
+>裝置回報給 Intune 的序號，可能與裝置上 Android [設定/關於] 功能表中顯示的識別碼不符。 請驗證裝置製造商所回報的序號類型。
+
 
 **新增公司識別碼的 .csv 清單**
 
@@ -58,13 +61,13 @@ ms.lasthandoff: 07/01/2017
 
  ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區螢幕擷取畫面。](./media/add-corp-id.png)
 
-2. 在 [新增識別碼] 刀鋒視窗中，指定識別碼類型 [IMEI] 或 [序號]。 您可以指定先前匯入的數字是否應該「覆寫現有識別碼的詳細資料」。
+2. 在 [新增識別碼] 刀鋒視窗中，指定識別碼類型：[IMEI] 或 [序號]。 您可以指定先前匯入的數字是否應該「覆寫現有識別碼的詳細資料」。
 
 3. 按一下資料夾圖示並指定要匯入之清單的路徑。 巡覽至 .csv 檔案，然後選取 [新增]。 您可以按一下 [重新整理] 來查看新的裝置識別碼。
 
-匯入之後，這些裝置不一定已經註冊，所以狀態可能是「已註冊」或「未連線」。 「未連線」表示裝置從未與 Intune 服務通訊。
+匯入的裝置不一定經過註冊。 裝置的狀態可能為 [已註冊] 或 [未連線]。 「未連線」表示裝置從未與 Intune 服務通訊。
 
-## <a name="delete--corporate-identifiers"></a>刪除公司識別碼
+## <a name="delete-corporate-identifiers"></a>刪除公司識別碼
 
 1. 在 Intune 入口網站中，選擇 [裝置註冊] > [註冊限制]，選擇 [公司裝置識別碼]，然後選擇 [刪除]。
 

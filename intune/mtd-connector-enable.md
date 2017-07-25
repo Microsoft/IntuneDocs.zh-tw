@@ -15,13 +15,16 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 38fb9977ed8af05380a265ee254259acef7b43f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5dfef35c9f2d2fa543d8b19c2566b25d47b8f72
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense
+
+> [!NOTE] 
+> 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
 若要在 Intune 中啟用 Mobile Threat Defense (MTD) 連線，您應該已在 MTD 解決方案主控台中設定 Intune 連接器。
 

@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
@@ -115,14 +115,10 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 以下是整合 Intune 與 Skycure 所需完成的步驟：
 
-1.  [設定 Skycure 使用 Azure Active Directory 單一登入 (SSO) (英文)](skycure-azure-sso-configure.md)
+1.  [新增並指派 Skycure 應用程式、Microsoft Authenticator 和 iOS 應用程式設定原則](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [下載 Skycure iOS 應用程式設定原則 (英文)](skycure-ios-app-configuration-policy-download.md)
+2.  [設定 Skycure 與 Intune 整合](skycure-mtd-connector-integration.md)
 
-3.  [新增並指派 Skycure 應用程式、Microsoft Authenticator 和 iOS 應用程式設定原則](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [在 Intune 中啟用 Skycure MTD 連接器](mtd-connector-enable.md)
 
-4.  [設定 Skycure 與 Intune 整合](skycure-mtd-connector-integration.md)
-
-5.  [在 Intune 中啟用 Skycure Mobile Threat Defense (英文)](mtd-connector-enable.md)
-
-6.  [在 Intune 中建立 Skycure Mobile Threat Defense 裝置合規性原則](mtd-device-compliance-policy-create.md)
+4.  [使用 Intune 建立 Skycure 的合規性政策](mtd-device-compliance-policy-create.md)

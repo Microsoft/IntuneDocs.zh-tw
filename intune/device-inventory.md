@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/25/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dae92c117bcf8a4a8ff133ed613f9f77ea0c07c2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如何檢視 Intune 裝置清查
 
@@ -44,9 +44,13 @@ ms.lasthandoff: 07/01/2017
     ![受管理的裝置硬體清查](./media/hardware-inventory.png)
     - **探索到的應用程式** - 顯示 Intune 找到已在裝置上安裝的所有應用程式清單。
     ![探索到的應用程式節點](./media/detected-applications.png)
+    
+
+
     - **裝置合規性** - 顯示所有已指派給裝置之合規性原則的合規性狀態。
     - **裝置設定** - 顯示所有已指派給裝置之裝置設定原則的合規性狀態。
 - **監視** - 選擇 [裝置動作] 可查看內含已對您管理之裝置執行的裝置動作，以及其目前狀態的清單。
 - **安裝程式** > **TeamViewer 連接器** - 可讓您使用 TeamViewer 軟體在裝置上設定遠端管理。 如需詳細資料，請參閱[對 Intune 管理的 Android 裝置提供遠端協助](/intune/device-profile-android-teamviewer)。
 
-
+>[!NOTE]
+> Intune 只會在公司擁有的裝置上收集應用程式清查。 個人裝置上的應用程式不會受到清查。 若為 Windows 10 電腦，則只會收集公司擁有裝置上的新式應用程式清查。 Intune 不會收集裝置上的 Win32 應用程式相關資訊。
