@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c9d10e4e2a1d2a745b9e327bf9a8a9cd99e5ce4
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: ce779e8dad2c9813d5faf1f03bca9b33690508fe
+ms.sourcegitcommit: b287025b1a0d09d41faf51cf98c34b676fa1d98e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/07/2017
 ---
 # <a name="add-groups-in-intune"></a>在 Intune 中新增群組
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -50,5 +50,5 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 5. 選擇 [建立] 新增新的群組。
 
 ## <a name="see-also"></a>請參閱
-[使用 Azure Active Directory 群組管理資源存取](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-[Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)
+- [利用 Azure Active Directory 群組管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
+- [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)

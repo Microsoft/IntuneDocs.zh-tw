@@ -15,13 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1354d3170f007af2a4bf7f5b2f233a186175c621
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c6b05522c7390acb3974e088ecd60d13db46ef5a
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense (MTD) 裝置合規性原則
+
+> [!NOTE] 
+> 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
 搭配 MTD 的 Intune 可協助您偵測行動裝置上的威脅及評估其風險。 您可以建立評估風險的 Intune 裝置合規性原則規則，來判斷裝置是否符合規範。 接著，您即可使用條件式存取原則，根據裝置合規性來封鎖對服務的存取。
 
@@ -57,7 +60,7 @@ ms.lasthandoff: 07/01/2017
 
     c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高等級的威脅，則會將裝置判斷為不相容。
 
-    d.  **高**：這是最不安全的選項。 這可允許所有威脅層級，並僅針對報告用途使用 Skycure Mobile Threat Defense。
+    d.  **高**：這是最不安全的選項。 這會允許所有威脅等級，並只將 Mobile Threat Defense 用於回報用途。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
 
 8.  按一下 [確定] 兩次，然後選擇 [建立]。
 

@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -49,15 +49,25 @@ Intune App SDK for iOS 包含靜態程式庫、資源檔、API 標頭、偵錯�
 
 * **IntuneMAMResources.bundle**：包含 SDK 相依資源的資源配套。
 
-* **標頭**：公開 Intune App SDK API。 如果您使用 API，您必須加入包含 API 的標頭檔。 下列標頭檔包含啟用 Intune App SDK 功能所需的 API 函數呼叫：
+* **標頭**：公開 Intune App SDK API。 如果您使用 API，您必須加入包含 API 的標頭檔。 下列標頭檔包含 API、資料類型及通訊協定，由 Intune App SDK 提供開發人員使用：
 
-    * IntuneMAMAsyncResult.h
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
     * IntuneMAMFileProtectionInfo.h
     * IntuneMAMFileProtectionManager.h
-    * IntuneMAMPolicyDelegate.h
     * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+開發人員只要匯入 IntuneMAM.h，即可使用上述標頭的內容
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Intune App SDK 的運作方式
@@ -144,11 +154,13 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     > [!NOTE]
     > 權利檔案是行動應用程式特有的 XML 檔案， 它用來指定 iOS 應用程式內的特殊權限和功能。
 
-7. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
+8. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
 
-8. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+9. 若應用程式在其 Info.plist 檔案內定義 Document 類型，請在每個項目的「文件內容類型 UTI」陣列，為每個有 "com.microsoft.intune.mam." 前置詞的字串新增重複項。
 
-9. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
+10. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+
+11. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
 
 
 

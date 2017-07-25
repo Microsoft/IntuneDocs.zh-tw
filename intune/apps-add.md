@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何將應用程式新增至 Microsoft Intune
 
@@ -79,34 +79,9 @@ Intune 可讓您新增及指派下列應用程式類型：
 
 ## <a name="apps-added-automatically-by-intune"></a>Intune 自動新增的應用程式
 
-下列由 Microsoft 發佈的應用程式內建於 Intune 中，且可以供您指派：
-
-|||
-|-|-|
-|名稱|平台|應用程式類型|
-|Azure 資訊保護|Android|受管理的 Android Store 應用程式|
-|適用手機的 Dynamics CRM|Android|受管理的 Android Store 應用程式|
-|適用於平板電腦的 Dynamics CRM|Android|受管理的 Android Store 應用程式|
-|Excel|iOS|受管理的 iOS Store 應用程式|
-|Excel|Android|受管理的 Android Store 應用程式|
-|受管理的瀏覽器|Android|受管理的 Android Store 應用程式|
-|受管理的瀏覽器|iOS|受管理的 iOS Store 應用程式|
-|適用於手機的 Microsoft Dynamics CRM|iOS|受管理的 iOS Store 應用程式|
-|適用於平板電腦的 Microsoft Dynamics CRM|iOS|受管理的 iOS Store 應用程式|
-|Microsoft Power BI|iOS|受管理的 iOS Store 應用程式|
-|Microsoft Power BI|Android|受管理的 Android Store 應用程式|
-|Microsoft SharePoint|iOS|受管理的 iOS Store 應用程式|
-|Microsoft SharePoint|Android|受管理的 Android Store 應用程式|
-|Microsoft Teams|Android|受管理的 Android Store 應用程式|
-|Microsoft Teams|iOS|受管理的 iOS Store 應用程式|
-|OneDrive|iOS|受管理的 iOS Store 應用程式|
-|OneDrive|Android|受管理的 Android Store 應用程式|
-|OneNote|iOS|受管理的 iOS Store 應用程式|
-|Outlook|Android|受管理的 Android Store 應用程式|
-|Outlook|iOS|受管理的 iOS Store 應用程式|
-|Outlook Groups|Android|受管理的 Android Store 應用程式|
-|Outlook Groups|iOS|受管理的 iOS Store 應用程式|
-|PowerPoint|iOS|受管理的 iOS Store 應用程式|
+原本，Intune 包含許多您可以快速指派的內建應用程式。 應客戶的意見反應，我們已移除此清單，而您不會再看到內建應用程式。
+不過，您已指派的任何內建應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
+在之後的版本中，我們計畫新增一個方法，讓從 Intune 入口網站選取及指派內建應用程式的流程變得更輕鬆。
 
 ## <a name="next-steps"></a>後續步驟
 

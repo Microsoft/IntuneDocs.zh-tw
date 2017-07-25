@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -55,25 +55,25 @@ Intune 現在支援上傳 iOS、macOS 和 Android 序號以作為公司裝置識
 
 ### <a name="device-management"></a>裝置管理
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>適用於 iOS 裝置的新遠端動作<!-- 854689 -->
-在此版本中，我們已新增兩個適用於 iOS 裝置的新遠端裝置動作：
+在此版本中，我們為用於管理 Apple Classroom 的共用 iPad 裝置新增了兩個遠端裝置動作：
 
 -   [登出目前的使用者](device-logout-user.md) - 會登出您所選擇之 iOS 裝置的目前使用者。
 -   [移除使用者](device-remove-user.md) - 會從 iOS 裝置的本機快取中刪除您選擇的使用者。
 
-
-使用這些遠端動作，系統管理員能夠管理在共用的 iPad 上快取的使用者帳戶，也可以登出目前登入裝置的使用者。
-
-在註冊期間，系統管理員會決定在裝置上可以快取的使用者帳戶數目上限。 [移除使用者] 可讓系統管理員移除已快取的特定使用者。
-
-[登出目前使用者] 會登出目前已登入裝置的使用者。 這個動作可以在裝置概觀刀鋒視窗頂端找到，也就是裝置動作一般存在的位置。
-
-[移除使用者] 會從裝置的本機快取中刪除指定的使用者。 這個動作可以藉由巡覽至 [監視] -> [使用者] -> 以滑鼠右鍵按一下清單中的特定使用者找到。 與尚未同步的使用者帳戶建立關聯的任何資料將會遺失。 此外，可能需要 24 小時，使用者清單才會反映使用者已經移除。
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>使用 iOS Classroom 應用程式支援共用的 iPad <!-- 1044681 -->
 在此版本中，我們擴充了對管理 iOS Classroom 應用程式的支援，以包含使用受管理 Apple ID 登入共用 iPad 的學生。
 
 
 ### <a name="app-management"></a>應用程式管理  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Intune 內建應用程式的變更 <!-- 1332306 -->
+
+原本，Intune 包含許多您可以快速指派的內建應用程式。 應客戶的意見反應，我們已移除此清單，而您不會再看到內建應用程式。
+不過，您已指派的任何內建應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
+在之後的版本中，我們計畫新增一個方法，讓從 Intune 入口網站選取及指派內建應用程式的流程變得更輕鬆。
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>支援來自商務用 Windows 市集的離線應用程式 <!--- 777044 --->
 您購買自商務用 Windows 市集的離線應用程式現在將能同步處理至 Intune 入口網站。 您接著可將這些應用程式部署至裝置群組或使用者群組。 離線應用程式會透過 Intune 安裝，而不透過市集。
 
@@ -113,8 +113,8 @@ Intune 現在支援上傳 iOS、macOS 和 Android 序號以作為公司裝置識
 
 ## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日一週
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 公司入口網站應用程式的應用程式保護原則現在有了新的終端使用者體驗<!--1305217-->
-根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，顯示 [存取公司內容] 按鈕。 目的是為了防止終端使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面看到這些變更。
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 公司入口網站應用程式的應用程式保護原則現在有了新的使用者體驗<!--1305217-->
+根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，以顯示 [存取公司內容] 按鈕。 目的是為了防止終端使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面看到這些變更。
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>新的功能表動作，可輕鬆地移除公司入口網站<!--1164569-->
 根據使用者意見反應，Android 版公司入口網站應用程式已新增功能表動作，可從裝置起始公司入口網站的移除。 這個動作會從 Intune 管理移除裝置，讓使用者可以從裝置移除應用程式。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面和 [Android 使用者文件](/intune-user-help/unenroll-your-device-from-intune-android)中看到這些變更。
@@ -266,12 +266,16 @@ Azure 主控台的 Azure Active Directory 區段提供條件式存取，在設�
 
 ## <a name="whats-coming"></a>未來動態
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>結束對 Android 4.3 和較舊版本的支援<!---1171127, 1326920 --->
+受管理的應用程式和 Android 公司入口網站應用程式需要 Android 4.4 及更新版本才能存取公司資源。 10 月初前未更新的裝置將不再能存取公司入口網站或這些應用程式。 今年 12 月會強制淘汰所有已註冊的裝置，以致無法存取公司資源。 如果您使用不含 MDM 的應用程式保護原則，應用程式就不會接收更新，其體驗品質會隨著時間而降低。
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>平台支援提醒：Windows Phone 8.1 主要支援將於 2017 年 7 月 11 日結束
 <!-- 1327781 -->
 
 Windows Phone 8.1 平台將於 2017 年 7 月 11 日結束主要支援。 Windows 8.1 電腦的支援不受影響。
 
-受 Intune 服務管理的所有 Windows Phone 8.1 裝置沒有直接影響。 已註冊的裝置會繼續運作，而所有的原則、設定和應用程式也會一如預期般運作。 請注意，沒有以 Intune 服務內的 Windows Phone 8.1 平台為目標的改進，也沒有以 Windows Phone 8.1 公司入口網站應用程式為目標的改進。 
+受 Intune 服務管理的所有 Windows Phone 8.1 裝置沒有直接影響。 已註冊的裝置會繼續運作，而所有的原則、設定和應用程式也會一如預期般運作。 請注意，沒有以 Intune 服務內的 Windows Phone 8.1 平台為目標的改進，也沒有以 Windows Phone 8.1 公司入口網站應用程式為目標的改進。
 
 我們建議您儘早將符合資格的 Windows Phone 8.1 裝置升級至 Windows 10 行動裝置版。 
 
