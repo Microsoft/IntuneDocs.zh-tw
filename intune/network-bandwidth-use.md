@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune 網路頻寬用量
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/03/2017
 此表格列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。
 
 > [!NOTE]
-> 若要確保電腦和行動裝置可從 Intune 服務接收必要的更新和內容，它們必須定期連線到網際網路。 接收更新或內容所花費的時間並不固定，但如同指導方針，應保持每天至少 1 小時持續連線到網際網路。
+> 為確保裝置從 Intune 接收更新與內容，它們必須定期連線到網際網路。 接收更新或內容所需要的時間不定，但應保持每天至少 1 小時持續連線到網際網路。
 
 |內容類型|大小近似值|頻率和詳細資料|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ ms.lasthandoff: 07/03/2017
 您可以使用下列其中一或多種方法，減少 Intune 用戶端佔用的網路頻寬。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>使用 Proxy 伺服器快取內容要求
-您可以使用可快取內容的 Proxy 伺服器來減少重複的下載，並減少從網際網路要求內容的用戶端使用的網路頻寬。
+Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網路內容佔用的網路頻寬。
 
-快取 Proxy 伺服器會從網路上的用戶端電腦接收內容的要求、從網際網路擷取該內容，並可以接著快取 HTTP 回應和二進位檔下載。 伺服器會使用快取的資訊來回應 Intune 用戶端電腦的後續要求。
+接收用戶端內容要求的快取 Proxy 伺服器可以擷取該內容，並快取網頁回應和下載。 伺服器會使用快取的資料回應用戶端的後續要求。
 
 下列一般設定適用於快取 Intune 用戶端內容的 Proxy 伺服器。
 
@@ -70,7 +70,7 @@ Intune 支援在 Windows 電腦上使用背景智慧型傳送服務 (BITS)，以
 若要深入了解 BITS 和 Windows 電腦，請參閱 TechNet Library 中的[背景智慧型傳送服務](http://technet.microsoft.com/library/bb968799.aspx)。
 
 ### <a name="use-branchcache-on-computers"></a>在電腦上使用 BranchCache
-Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 下列支援作為用戶端的作業系統也支援 BranchCache：
+Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 下列作業系統支援 BranchCache：
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 �
 
 若要使用 BranchCache，用戶端電腦必須已啟用 BranchCache，接著再完成**分散式快取模式**的設定。
 
-根據預設，已安裝 Intune 用戶端時電腦會啟用 BranchCache 和分散式快取模式。 不過，如果用戶端已有停用 BranchCache 的群組原則，Intune 不會覆寫該原則，因此 BranchCache 將在該部電腦上維持停用狀態。
+根據預設，已安裝 Intune 用戶端時，電腦會啟用 BranchCache 和分散式快取模式。 不過，如果群組原則已停用 BranchCache，則 Intune 不會覆寫該原則，且 BranchCache 保持停用。
 
-如果使用 BranchCache，您應該與組織中負責管理群組原則和 Intune 防火牆原則的其他系統管理員溝通，確認他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](http://technet.microsoft.com/library/hh831696.aspx)。
+如果使用 BranchCache，請與組織中其他系統管理員合作管理群組原則和 Intune 防火牆原則。 確認他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](http://technet.microsoft.com/library/hh831696.aspx)。
 
 ## <a name="network-communication-requirements"></a>網路通訊需求
 
-您必須在所管理的裝置和用來管理 Intune 訂閱的裝置，以及雲端服務所需的網站之間，啟用網路通訊。
+啟用所管理裝置和雲端服務所需網站之間的網路通訊。
 
 Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器)，但會提供選項來使用內部部署基礎結構 (包括 Exchange 和 Active Directory 同步處理工具)。
 
-若要管理位於防火牆和 Proxy 伺服器後方的電腦，您必須將防火牆和 Proxy 伺服器設定為允許 Intune 進行通訊。 若要管理位於 Proxy 伺服器後方的電腦，請注意︰
+若要管理位於防火牆和 Proxy 伺服器後方的電腦，您必須啟用 Intune 的通訊。
 
 -   Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)**，因為 Intune 用戶端會使用這兩種通訊協定
--   Intune 需要對 manage.microsoft.com 的未驗證 Proxy 伺服器存取，才能進行某些作業，例如下載軟體和更新
+-   Intune 需要存取 manage.microsoft.com 的未驗證 Proxy 伺服器，才能進行某些工作，例如下載軟體和更新。
 
 您可以修改個別用戶端電腦上的 Proxy 伺服器設定，也可以使用群組原則設定來變更所有位於指定之 Proxy 伺服器後方的用戶端電腦設定。
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 受管理裝置需要進行可讓 [所有使用者] 穿過防火牆存取服務的設定。
 

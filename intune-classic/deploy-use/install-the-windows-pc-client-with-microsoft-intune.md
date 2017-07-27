@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -43,11 +43,11 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
   ![下載 Intune 電腦用戶端](../media/pc-sa-client-download.png)
 
-2.  在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
+2. 在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
 
-Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
+  Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
 
-3.  將安裝套件的內容解壓縮到您的網路上安全的位置。
+3. 將安裝套件的內容解壓縮到您的網路上安全的位置。
 
     > [!IMPORTANT]
     > 請不要重新命名或移除已解壓縮的 **ACCOUNTCERT** 檔案，否則用戶端軟體安裝將會失敗。
@@ -198,13 +198,10 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 
 **方法 1**：
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **方法 2**<br>請注意，Windows 的每個 SKU 上都已安裝這些代理程式：
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > 取消註冊用戶端會針對受影響用戶端留下伺服器端過時記錄。 取消註冊是非同步的，且有九個代理程式要解除安裝，因此最多可能需要 30 分鐘才能完成。
@@ -255,10 +251,8 @@ Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬�
 
 取消註冊程序不會移除 [OnlineManagement] 資料夾。 解除安裝之後請等候 30 分鐘，然後執行此命令。 如果太早執行，解除安裝程序可能會停留在未知狀態。 若要移除資料夾，請啟動已提高權限的命令提示字元並執行：
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>請參閱
+### <a name="next-steps"></a>後續步驟
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 [為用戶端安裝進行疑難排解](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

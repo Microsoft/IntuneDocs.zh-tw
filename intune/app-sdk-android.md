@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -83,7 +83,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 
 例如，當 `AppSpecificActivity` 與父系互動 (例如，呼叫 `super.onCreate()`) 時，`MAMActivity` 是超級類別。
 
-一般而言，Android 應用程式擁有單一模式，並可透過其 [**Context (英文)**](https://developer.android.com/reference/android/content/Context.html) 物件存取系統。 另一方面，已經和 Intune App SDK 整合的應用程式則具有雙重模式。 這些應用程式可以繼續透過 `Context` 物件存取系統。 根據所使用的基底 `Activity`，`Context` 物件將由 Android 提供，或在系統的限制檢視和 Android 提供的 `Context` 之間，以智慧的方式進行多工處理。
+一般而言，Android 應用程式擁有單一模式，並可透過其 [**Context (英文)**](https://developer.android.com/reference/android/content/Context.html) 物件存取系統。 另一方面，已經和 Intune App SDK 整合的應用程式則具有雙重模式。 這些應用程式可以繼續透過 `Context` 物件存取系統。 根據所使用的基底 `Activity`，`Context` 物件將由 Android 提供，或在系統的限制檢視和 Android 提供的 `Context` 之間，以智慧的方式進行多工處理。 在您從其中一個 MAM 進入點進行衍生之後，就可以用正常方式安全地使用 `Context`，例如用來啟動 `Activity` 類別和使用 `PackageManager`。
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>將類別、方法和活動取代為其 MAM 對等項目
@@ -136,7 +136,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 
 
 ### <a name="renamed-methods"></a>重新命名的方法
-在您從其中一個 MAM 進入點進行衍生之後，就可以用正常方式安全地使用 `Context`，例如用來啟動 `Activity` 類別和使用 `PackageManager`。
+
 
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫的類似具名方法 (通常後置字元為 `MAM`)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `onCreate()` 然後呼叫 `super.onCreate()` 時，`Activity` 必須覆寫 `onMAMCreate()` 並呼叫 `super.onMAMCreate()`。 Java 編譯器應該強制執行完稿的限制，以防止意外覆寫原始的方法，而不是 MAM 對等項目。
 
@@ -146,7 +146,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 ### <a name="manifest-replacements"></a>資訊清單取代
 請注意，您可能需要在資訊清單及 Java 程式碼中執行部分上述類別取代。 特殊注意事項：
 * 針對 `android.support.v4.content.FileProvider` 的資訊清單參考，必須以 `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` 取代。
-
+* 如果您的應用程式不需要自己的衍生應用程式類別，`com.microsoft.intune.mam.client.app.MAMApplication` 必須設定為資訊清單所用的應用程式類別名稱。
 
 ## <a name="sdk-permissions"></a>SDK 權限
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>啟用需要應用程式參與的功能
 
-有數個 SDK 無法自行實作的應用程式保護原則。 此應用程式可控制其行為，以使用可在以下 `AppPolicy` 介面中找到的數個 API，實現這些功能。
+有數個 SDK 無法自行實作的應用程式保護原則。 此應用程式可控制其行為，以使用可在以下 `AppPolicy` 介面中找到的數個 API，實現這些功能。 若要擷取 `AppPolicy` 執行個體，請使用 `MAMPolicyManager.getPolicy`。
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> `MAMComponents.get(AppPolicy.class)` 一律會傳回非 null 的應用程式原則，即使裝置或應用程式不受 Intune 管理原則限制，亦是如此。
+> `MAMPolicyManager.getPolicy` 一律會傳回非 null 的應用程式原則，即使裝置或應用程式不受 Intune 管理原則限制，亦是如此。
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>範例：判斷應用程式是否需要 PIN
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_FOR_BUSINESS
     * SaveLocation.LOCAL
-    * SaveLocation.OTHER
+    * SaveLocation.SHAREPOINT
 
 在此之前，能用來判斷使用者的原則是否允許他們將資料儲存至各種位置的方法，為位於相同 **AppPolicy** 類別中的 `getIsSaveToPersonalAllowed()`。 此函數目前已「被取代」，且不應該使用。下列的引動過程等同於 `getIsSaveToPersonalAllowed()`：
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -748,13 +748,17 @@ BackupAgent 可讓您更明確了解備份了哪些資料。 由於開發人員�
 ### <a name="overview"></a>概觀
 Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識別為選擇性的 Intune 應用程式保護功能，可以啟用以允許將原則套用至每個身分識別。 這需要的應用程式參與明顯高於其他應用程式保護功能。
 
-應用程式在想要變更使用中身分識別時「必須」通知 SDK，SDK 也會在需要進行身分識別變更時通知應用程式。 使用者註冊裝置或應用程式之後，SDK 會註冊這個身分識別，並將其視為主要的 Intune 受管理身分識別。 應用程式中的其他使用者則會被視為未受管理，並具有不受限制的原則設定。
+當應用程式想要變更作用中身分識別時，「必須」通知 SDK。 有時候，需要身分識別變更時，SDK 也會通知應用程式。 但在大部分情況下，MAM 無法知道哪些資料會於指定的時間顯示在 UI 中或用在執行緒上，依賴應用程式設定正確的身分識別，才能避免資料洩漏。 在接下來的各節中，會呼叫某些需要應用程式動作的特定案例。
+
+> [!NOTE]
+>  缺乏正確的應用程式參與，會導致資料洩漏和其他安全性問題。
+
+使用者註冊裝置或應用程式之後，SDK 會註冊這個身分識別，並將其視為主要的 Intune 受管理身分識別。 應用程式中的其他使用者則會被視為未受管理，並具有不受限制的原則設定。
 
 > [!NOTE]
 > 目前，每個裝置上僅支援一個 Intune 受管理身分識別。
 
 請注意，身分識別只會定義為字串。 身分識別「不區分大小寫」，而且針對身分識別對 SDK 所做出的要求，可能不會傳回原本設定身分識別時所使用的相同大小寫。
-
 
 ### <a name="enabling-multi-identity"></a>啟用多重身分識別
 
@@ -774,7 +778,9 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
   2. 內容 (通常是活動) 層級
   3. 處理程序層級
 
-設定為執行緒層級的身分識別會取代設定為內容層級的身分識別，而設定為內容層級的身分識別則會取代設定為處理程序層級的身分識別。 設定為內容層級的身分識別只會用於適當的相關聯案例，舉例來說，檔案 IO 作業並沒有相關聯的內容。 您可以使用 `MAMPolicyManager` 中的下列方法來設定身分識別，並擷取之前設定的身分識別值。
+設定為執行緒層級的身分識別會取代設定為內容層級的身分識別，而設定為內容層級的身分識別則會取代設定為處理程序層級的身分識別。 只有在適當的相關案例中，才會使用內容上所設定的身分識別。 例如，檔案 IO 操作沒有相關聯的內容。 最常見的情況是，應用程式會在活動上設定內容身分識別。 應用程式「絕不」顯示受管理身分識別的資料，除非活動的身分識別設定為相同的身分識別。 一般情況下，只有當應用程式在所有執行緒上一次只處理一名使用者時，處理序層級的身分識別才有用。 許多應用程式可能不需要使用它。
+
+您可以使用 `MAMPolicyManager` 中的下列方法來設定身分識別，並擷取之前設定的身分識別值。
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 | 傳回值 | 案例 |
 |--|--|
 | SUCCEEDED | 身分識別變更成功。 |
-| NOT_ALLOWED | 不允許身分識別變更。 <br><br>如果嘗試切換至和已註冊使用者屬於相同組織的不同受管理使用者，就會發生此情況。 在目前執行緒上已設定不同身分識別的情況下，嘗試設定 UI (內容) 身分識別，也會發生此情況。 |
+| NOT_ALLOWED | 不允許身分識別變更。 不允許身分識別變更。 在目前執行緒上已設定不同身分識別的情況下，嘗試設定 UI (內容) 身分識別，就會發生此情況。 |
 | CANCELLED | 使用者已取消身分識別變更，通常是透過於 PIN 或驗證提示上按下 [返回] 按鈕。 |
 | FAILED | 不明原因導致身分識別變更失敗。|
+
+應用程式「必須」確保身分識別順利切換，再顯示或使用公司資料。 目前，處理序和執行緒身分識別切換在啟用多身分識別的應用程式上一直都很成功，但我們保留新增失敗狀況的權利。 如果與執行緒身分識別發生衝突，或是使用者因為條件式啟動需求而取消 (例如按下 PIN 畫面的 [上一步] 按鈕)，無效引數的 UI 身分識別切換可能失敗。
 
 
 如果設定內容身分識別，則會以非同步方式報告結果。 如果內容是活動，在執行條件式啟動之前 (可能需要使用者輸入 PIN 或公司認證)，SDK 將無法得知身分識別變更是否成功。 應用程式必須實作 `MAMSetUIIdentityCallback` 以接收此結果，您可以針對此參數傳遞 null。
@@ -927,10 +935,10 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
     }
 
   ```
+#### <a name="app-responsibility"></a>應用程式責任
+MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之間的關聯性。 應用程式「必須」先適當地設定 UI 身分識別，才能顯示公司資料。 這包括從檔案讀取的資料。 如果檔案來自應用程式之外 (來自 `ContentProvider` 或讀取自公開寫入位置)，應用程式「必須」嘗試先判斷檔案身分識別 (使用 `MAMFileProtectionManager.getProtectionInfo`) 才能顯示從檔案讀取的資訊。 如果 `getProtectionInfo` 回報非 null、非空白的身分識別，則 UI 身分識別「必須」設定成符合此身分識別 (使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`)。 如果身分識別切換失敗，「絕無法」顯示檔案中的資料。
+
+範例流程可能看起來像這樣：
+  * 使用者選取要在應用程式中開啟的文件
+  * 在開啟流程的過程中，還未從磁碟讀取資料之前，應用程式會確認顯示內容應該使用的身分識別。
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * 應用程式等待回報給回呼的結果
+    * 如果報告的結果是失敗，應用程式就不會顯示文件。
+  * 應用程式會開啟並轉譯檔案
+
+## <a name="offline-scenarios"></a>離線案例
 
 離線模式需要檔案身分識別標記。 下列各點應該列入考量：
 
@@ -1093,6 +1128,150 @@ public final class MAMDataProtectionManager {
 
 若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」__想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式一律不應同時註冊 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>啟用 Android 應用程式的 MAM 目標設定 (選擇性)
+您可在 Intune 主控台中設定應用程式特定的機碼值組。 Intune 完全不解譯這些機碼值組，僅傳遞給應用程式。 想要接收這類設定的應用程式可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 類別來執行作業。 如有多個原則以相同的應用程式為目標，相同的機碼可能會有多個衝突值。
+
+### <a name="example"></a>範例
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>MAMAppConfig 參考
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>通知
+應用程式設定新增新的通知類型：
+* **REFRESH_APP_CONFIG**：這個通知是在 `MAMUserNotification` 中傳送，通知應用程式，確定應用程式有新的應用程式設定資料可用。
+
+如需圖形 API 與 MAM 目標設定值有關之功能的詳細資訊，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (圖形 API 參考 MAM 目標設定)。 <br>
+
+如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android)中有關 MAM 目標應用程式設定的一節。
 
 ## <a name="style-customization-optional"></a>樣式自訂 (選擇性)
 
@@ -1141,18 +1320,22 @@ public final class MAMDataProtectionManager {
 1.  65K 的欄位限制。
 2.  65K 的方法限制。
 
-
-
 ### <a name="policy-enforcement-limitations"></a>原則強制執行限制
 
 * **螢幕擷取**：SDK 無法強制執行 Activity 中已經透過 Activity.onCreate 完成的新螢幕擷取設定值。 這會導致應用程式已設定為停用螢幕擷取畫面一段時間，但仍可取得螢幕擷取畫面。
 
 * **使用內容解析程式**：「傳送或接收」Intune 原則可能會封鎖或部分封鎖內容解析程式的使用，不讓其存取另一個應用程式中的內容提供者。 這將導致 ContentResolver 方法傳回 null，或者擲回錯誤值 (例如，若受到封鎖， `openOutputStream` 將會擲回 `FileNotFoundException` )。 應用程式可以藉由呼叫下列項目，判斷透過內容解析程式無法寫入資料是否起因於原則 (或可能由原則造成)：
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    或如果沒有相關聯的活動
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    在第二個案例中，多重身分識別應用程式必須仔細正確設定執行緒身分識別 (或將明確的身分識別傳遞給 `getPolicy` 呼叫)。
+    
 ### <a name="exported-services"></a>匯出服務
 
  Intune App SDK 隨附的 AndroidManifest.xml 檔案包含 **MAMNotificationReceiverService**，其必須為匯出的服務，才能讓公司入口網站傳送通知給可搭配 Intune 的應用程式。 服務會檢查呼叫者以確保僅允許公司入口網站傳送通知。

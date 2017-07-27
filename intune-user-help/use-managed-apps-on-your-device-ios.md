@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 裝置上使用受管理的應用程式
 
@@ -38,6 +38,8 @@ ms.lasthandoff: 07/01/2017
 -   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 macOS 裝置](enroll-your-device-in-intune-macos.md)。
 
 -   您從 App Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
+
+您的 IT 管理員有時可能會購買某個安裝之應用程式的多個授權。 如果您看到要求您接受 Apple 大量採購方案授權合約的訊息，這是正常的，您可以接受它。 如果不接受，即無法安裝應用程式。
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>我的 IT 系統管理員可以在應用程式中管理什麼內容？
 以下是您的 IT 系統管理員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰

@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ ms.lasthandoff: 07/01/2017
 | **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當系統管理員開啟原則中的 PIN 時，若使用者開啟 MAM 應用程式，則必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。</li></ul>| 逾時：30 <br><br> 離線：720 |
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式本身會執行選擇性抹除。 此選擇性抹除與系統管理員在 MAM 抹除工作流程中起始的抹除相同。 <br><br> | 90 天 |
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選擇 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 | 否 |
-| **需要最低的 iOS 作業系統** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，將會封鎖使用者進行存取。 | 否 |
-| **需要最低的 iOS 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 | 否 |
+| **需要最低的 iOS 作業系統** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，將會封鎖使用者進行存取。 此原則僅支援一個小數位數，如 iOS 10.3。 | 否 |
+| **需要最低的 iOS 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 此原則僅支援一個小數位數，如 iOS 10.3。 | 否 |
 | **需要最低的應用程式版本** | 選擇 [是] 以要求使用應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，會封鎖使用者進行存取。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，Outlook 版本原則)。 <br><br> | 否 | 
 | **需要最低的應用程式版本 (僅警告)** | 選擇 [是] 以建議使用此應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，使用者會看見通知。 此通知可以關閉。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，Outlook 版本原則)。 <br><br> | 否 | 
 | **需要最低的 Intune 應用程式保護原則 SDK 版本** | 選擇 [是] 以要求在應用程式上使用的最低 Intune 應用程式保護原則 SDK 版本。 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](app-sdk.md) <br><br> | 否 |

@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-行動應用程式管理 (MAM) 原則可協助保護公司資料，方法是限制可能會遺漏公司資料的動作，以及強制執行資料存取需求 (例如應用程式 PIN)。 若要將 MAM 原則套用至 iOS 和 Android 企業營運應用程式，您必須先使用 Microsoft Intune App Wrapping Tool 來包裝應用程式。 應用程式包裝是不需要執行任何 chan/intune/apps-prepare-mobile-application-managementes，即可將管理層套用到行動應用程式並散發給使用者的程序。  
+行動應用程式管理 (MAM) 原則可協助保護公司資料，方法是限制可能會遺漏公司資料的動作，以及強制執行資料存取需求 (例如應用程式 PIN)。 若要將 MAM 原則套用至 iOS 和 Android 企業營運應用程式，您必須先使用 Microsoft Intune App Wrapping Tool 來包裝應用程式。 應用程式包裝處理程序會將管理層套用到行動應用程式，而不需要對基礎應用程式進行任何變更，然後散發給您的使用者。  
 
 本主題說明套用應用程式之 MAM 原則所需的步驟，而應用程式是在**員工擁有的未受管理裝置**以及**協力廠商行動裝置管理 (MDM) 解決方案**所管理的裝置上進行存取。  若要準備企業營運應用程式以在 **Intune MDM 中註冊的裝置**上執行，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/intune/apps-prepare-mobile-application-management)。
 

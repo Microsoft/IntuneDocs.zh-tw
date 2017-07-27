@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
@@ -28,13 +28,10 @@ ms.lasthandoff: 07/10/2017
 Microsoft Intune 現已在 Azure 入口網站上提供，這意味著您慣用的工作流程及功能現在會有所改變。
 新的入口網站在 Azure 入口網站中提供新功能及更新功能，您可在其中管理您組織的行動裝置、電腦及應用程式。
 
-> [!IMPORTANT]
-> **還沒看到新的入口網站嗎？**<br>
-> 現有的租用戶將移轉至新的體驗。 在您的租用戶移轉之前，通知會顯示在 Office 訊息中心。
->
-> 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用 Apple 註冊工作流程。 移轉的排程尚未公告。 如果您現有的帳戶無法存取 Azure 入口網站，建議您建立試用帳戶。
->
-> 請檢閱潛在封鎖程式的清單 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* [我的功能在 Azure 的什麼位置？](ui-changes.md)此參考會向您顯示因為移至 Azure 而變更的特定工作流程與 UI。
+* [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)說明移至 Azure Active Directory 安全性群組對群組管理的含意。
+
+
 
 
 您可以在此文件庫中找到新入口網站的相關資訊，這項資訊會不斷更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
@@ -47,7 +44,14 @@ Microsoft Intune 現已在 Azure 入口網站上提供，這意味著您慣用�
 - Azure Active Directory (AD) 群組可為所有 Azure 應用程式提供相容性
 - 支援時下絕大多數的現代化網頁瀏覽器
 
-如果您是尋找傳統 Intune 主控台的文件，請參閱 [Intune 文件庫](https://docs.microsoft.com/intune-classic/)。
+> [!IMPORTANT]
+> **還沒看到新的入口網站嗎？**<br>
+> 現有的租用戶將移轉至新的體驗。 在您的租用戶移轉之前，通知會顯示在 Office 訊息中心。
+>
+> 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用 Apple 註冊工作流程。 移轉的排程尚未公告。 如果您現有的帳戶無法存取 Azure 入口網站，建議您建立試用帳戶。
+>
+> 請檢閱潛在封鎖程式的清單 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>開始之前
 
