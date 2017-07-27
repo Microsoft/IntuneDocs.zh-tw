@@ -1,7 +1,7 @@
 ---
-title: "註冊 30 天免費試用版"
-titleSuffix: Intune on Azure
-description: "如何在 Azure 上註冊 Intune。"
+title: "註冊 Microsoft Intune 的 30 天免費試用"
+titleSuffix: 
+description: "如何註冊 Intune 的 30 天免費試用。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,22 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>註冊 Azure 入口網站的 Microsoft Intune 免費試用版
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
 
 這篇文章會逐步引導您完成註冊 Azure 入口網站適用的獨立式 Intune 試用版。
 
 1. 請造訪 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) 頁面並填寫表格以註冊試用版訂閱。
-account-sign-up.md
+* 如果您已經有工作或學校帳戶，而且想要將它用於您的 Intune 試用版，請改為依照[這些登入指示](/intune/account-sign-up)執行作業。
 
-  若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您從 [Where's your company located?]\(您的公司位置？) 選取該語言設定。
+* 若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您從 [Where's your company located?]\(您的公司位置？) 選取該語言設定。
 
 2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>但若要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
@@ -70,8 +70,6 @@ Intune Azure 入口網站使用三個入口網站：
 
 ### <a name="intune-on-azure"></a>Azure 上的 Intune
 深入了解 [Azure 入口網站中的 Intune](what-is-intune.md)
-### <a name="classic-intune"></a>傳統的 Intune
-評估案例：[評估 Microsoft Intune 中的行動裝置管理功能](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>與其他產品整合
 深入了解搭配 Intune 使用您的 Azure Active Directory 使用者帳戶：

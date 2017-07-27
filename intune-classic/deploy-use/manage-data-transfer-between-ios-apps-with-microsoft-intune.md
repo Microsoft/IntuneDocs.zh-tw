@@ -14,11 +14,11 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05975303bd45764d56f00986aea5aa30399893f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6314f6b13ec7fa23c0b3b46ecd3418a75d581db1
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -78,6 +78,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 | VMware AirWatch | IntuneMAMUPN | 字串 | {UserPrincipalName}|
 | MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$  **或**  $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
+| ManageEngine Mobile Device Manager | IntuneMAMUPN | 字串 | %upn% |
 
 ### <a name="example-2-end-user-experience"></a>範例 2：使用者體驗
 

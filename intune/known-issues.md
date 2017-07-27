@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -107,7 +107,11 @@ Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>資料保護
+
+### <a name="ios-app-protection-policies"></a>iOS 應用程式保護原則
+
+您可以定義 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)，在透過 MAM 管理而不需要註冊的裝置上供使用者使用。 由於暫時性的錯誤，您只能為僅一個小數位數、而非多個小數位數的 iOS 版本定義這些原則。 可為 iOS 10.3 設定，不能為 iOS 10.3.1 的最低版本設定。 即將推出的 iOS SDK 更新會解決此問題。
 
 
 ## <a name="administration-and-accounts"></a>管理與帳戶
