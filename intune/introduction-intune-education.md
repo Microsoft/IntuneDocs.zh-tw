@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/13/2017
 ---
-# 什麼是 Intune 教育版？
-<a id="what-is-intune-for-education" class="xliff"></a>
+# <a name="what-is-intune-for-education"></a>什麼是 Intune 教育版？
 
 Intune 教育版是專門設計來讓老師和學生提高生產力，同時保護學校資料。 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，是 Intune 教育版的基礎。
 
@@ -39,8 +38,7 @@ Intune 教育版本身可單獨使用，或搭配 [Intune 中可用的完整裝�
 * 藉由協助控制使用者存取並共用組織資訊的方式，保護組織資訊。
 * 確保裝置和應用程式都符合安全性需求。
 
-### 後續步驟
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>後續步驟
 * [使用 Intune 的 30 天試用](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)來熟悉產品。
 * 閱讀[開始使用 Intune 教育版](/intune-education/what-is-express-configuration)最快速的方法。
 * 深入了解 Intune 的[技術需求和功能](/intune/supported-devices-browsers)。
