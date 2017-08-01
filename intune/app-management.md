@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2017
 ---
-# 什麼是 Microsoft Intune 應用程式管理？
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ IT 系統管理員需負責確定您的使用者能夠存取其工作所需的�
 
 Intune 提供各種功能協助您從您需要的裝置上取得所需的應用程式。
 
-## 各種平台的應用程式管理功能
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>各種平台的應用程式管理功能
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 
 <sup>2</sup>僅適用於 Intune 管理的裝置。
 
-## 如何開始
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>如何開始
 
 在**行動應用程式**工作負載中，您能存取的應用程式相關項目如下：
 
@@ -73,8 +70,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 
     ![行動應用程式工作負載](./media/apps-workload.png)
 
-### 管理
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>管理
 - **應用程式** - 您可以在這個節點新增、指派及監視您大部分的應用程式。
     - [新增應用程式](apps-add.md)
     - [指派應用程式](apps-deploy.md)
@@ -89,8 +85,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 - **iOS 佈建設定檔** - iOS 應用程式包含佈建設定檔和由憑證所簽署的程式碼。 憑證過期之後，就無法再執行應用程式。 Intune 提供工具，讓您可主動將新的佈建設定檔原則指派至具有即將到期之應用程式的裝置。
     - [iOS 應用程式佈建設定檔](app-provisioning-profile-ios.md)
 
-### 監視
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>監視
 - **授權的應用程式** - 檢視、指派及監視從應用程式市集大量採購的應用程式。
     - [商務用 Windows 市集大量採購應用程式](windows-store-for-business.md)
 - **探索應用程式** - 顯示 Intune 指派並安裝在裝置上的所有應用程式。
@@ -99,8 +94,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 
 如需詳細資訊，請參閱[監視應用程式](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **商務用 Windows 市集** - 設定對商務用 Windows 市集的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。
