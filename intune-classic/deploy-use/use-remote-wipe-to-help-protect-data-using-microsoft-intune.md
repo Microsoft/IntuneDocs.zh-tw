@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 036899c5e438355cc10da8ab2bd47ec0830c9946
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>協助透過使用 Microsoft Intune 的完整或選擇性抹除來保護您的資料
 
@@ -99,8 +99,8 @@ ms.lasthandoff: 07/01/2017
 |Wi-Fi 及 VPN 設定檔設定|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|
 |管理代理程式|移除管理設定檔。|
-|電子郵件|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。 如果 Microsoft Exchange 裝載在內部部署中，電子郵件設定檔和快取的電子郵件不會移除。|
-|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
+|電子郵件|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
+|Outlook|適用於 iOS 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 07/01/2017
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
 |電子郵件|無。 請參閱 Outlook 項目。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
-|Outlook|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。</br>例外狀況︰如果 Exchange 裝載在內部部署中，電子郵件不會移除。|
+|Outlook|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。|
 |Azure Active Directory (AAD) 退出|已移除 AAD 記錄。|已移除 AAD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 
@@ -134,7 +134,7 @@ ms.lasthandoff: 07/01/2017
 |設定|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|不支援。|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|憑證會予以移除及撤銷。|不支援。|憑證會予以移除及撤銷。|
-|電子郵件|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。|不支援。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。 移除 Intune 佈建的郵件帳戶。</br>**例外狀況**︰如果 Microsoft Exchange 裝載在內部部署中，電子郵件帳戶不會移除。|
+|電子郵件|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。|不支援。|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|移除已啟用 EFS 且包含 Windows 電子郵件與附件的郵件應用程式。 移除 Intune 佈建的郵件帳戶。|
 |Azure Active Directory (AAD) 退出|否。|否。|已移除 AAD 記錄。|不適用。 Windows 10 不支援對已加入 Azure Active Directory 的裝置進行選擇性抹除。|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>抹除已啟用加密檔案系統 (EFS) 的內容

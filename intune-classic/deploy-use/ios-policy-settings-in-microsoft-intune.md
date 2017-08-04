@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2017
 ---
-# Microsoft Intune 的 iOS 原則設定
-<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 iOS 原則設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定。 此外，您可以使用 Apple Configurator 工具建立 Intune 所沒有的自訂設定。
 
-## 一般設定原則設定
-<a id="general-configuration-policy-settings" class="xliff"></a>
+## <a name="general-configuration-policy-settings"></a>一般設定原則設定
 
 使用 Microsoft Intune **iOS 一般設定原則**進行下列設定：
 
@@ -43,8 +41,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 若本主題中未包含您所需要的設定，您可以使用 iOS 自訂原則加以建立，以便您使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)匯入您所建立的設定。 如需詳細資訊，請參閱本主題稍後的＜自訂原則設定＞。
 
-### 安全性設定
-<a id="security-settings" class="xliff"></a>
+### <a name="security-settings"></a>安全性設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -63,8 +60,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許指紋解除鎖定**|允許使用指紋解除鎖定裝置。|
 <sup>1</sup> 對於 iOS 裝置，您如有設定 [在非使用狀態幾分鐘後會關閉螢幕] 和 [在非使用狀態幾分鐘後需要輸入密碼]，這兩項設定將會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
 
-### 系統設定
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>系統設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -77,8 +73,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許提交診斷資料**|允許或封鎖裝置提交診斷資料給 Apple。|
 |**允許在鎖定時使用 Passbook**|允許使用者在鎖定裝置時存取 Passbook 應用程式。|
 
-### 文件和資料的雲端設定
-<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+### <a name="cloud-settings-for-documents-and-data"></a>文件和資料的雲端設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -92,8 +87,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許 iCloud 照片共享**|設定為 [否]，停用裝置 上的 [iCloud 相片共享]。|
 |**允許 iCloud 照片圖庫**|如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。   如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。|
 
-### 瀏覽器的應用程式設定
-<a id="application-settings-for-the-browser" class="xliff"></a>
+### <a name="application-settings-for-the-browser"></a>瀏覽器的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -105,8 +99,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許撰寫 Java 指令碼**|允許在瀏覽器中執行 Java 指令碼。|
 |**允許詐騙警告**|允許瀏覽器中的詐騙警告。|
 
-### 應用程式的應用程式設定
-<a id="application-settings-for-apps" class="xliff"></a>
+### <a name="application-settings-for-apps"></a>應用程式的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -120,8 +113,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許使用者信任新的企業應用程式作者**|讓使用者選擇信任不是從應用程式市集下載的應用程式。|
 
 
-### 遊戲的應用程式設定
-<a id="application-settings-for-games" class="xliff"></a>
+### <a name="application-settings-for-games"></a>遊戲的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -129,8 +121,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許新增 Game Center 的朋友**|允許使用者在 Game Center 中新增朋友。|
 |**允許多人連線遊戲**|允許使用者在裝置上玩多人遊戲。|
 
-### 媒體內容的應用程式設定
-<a id="application-settings-for-media-content" class="xliff"></a>
+### <a name="application-settings-for-media-content"></a>媒體內容的應用程式設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -140,8 +131,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許使用者從 iBook Store 下載標示為 [成人作品] 的內容**|允許使用者下載「成人作品」類別的書籍。|
 
 
-### 硬體的裝置功能設定
-<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+### <a name="device-capabilities-settings-for-hardware"></a>硬體的裝置功能設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -150,8 +140,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**強制已配對的 Apple Watch 使用手腕偵測**|啟用時，Apple Watch 就不會在穿戴期間顯示通知。|
 |**須有配對密碼，才能傳出 AirPlay 要求**|使用者在使用 AirePlay 將內容串流到其他 Apple 裝置時，需要有成對的密碼。|
 
-### 行動數據的裝置功能設定
-<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+### <a name="device-capabilities-settings-for-cellular"></a>行動數據的裝置功能設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -160,8 +149,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許數據漫遊**|允許裝置在行動電話通訊網路時進行資料漫遊。|
 |**允許漫遊時進行全域背景擷取**|允許裝置在行動電話通訊網路漫遊時擷取資料 (例如電子郵件)。|
 
-### 功能的裝置功能設定
-<a id="device-capabilities-settings-for-features" class="xliff"></a>
+### <a name="device-capabilities-settings-for-features"></a>功能的裝置功能設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
@@ -172,8 +160,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**不允許來自受管理應用程式的 Airdrop**|讓受管理的應用程式不再能夠 從 Airdrop 傳送資料。|
 
 
-### 相容與不相容之應用程式的設定
-<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>相容與不相容之應用程式的設定
 在 **[相容和不相容的應用程式]** 清單中，使用下列資訊指定相容或不相容的應用程式清單。
 
 > [!NOTE]
@@ -190,8 +177,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 包含相容和不相容應用程式設定的原則必須部署到使用者群組。
 
-### Kiosk 模式設定
-<a id="kiosk-mode-settings" class="xliff"></a>
+### <a name="kiosk-mode-settings"></a>Kiosk 模式設定
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
@@ -218,20 +204,17 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 > -   您必須先使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)或 [Apple 裝置註冊方案](ios-device-enrollment-program-in-microsoft-intune.md)，將裝置設為受監督模式，才能為 iOS 裝置設定 kiosk 模式。 如需 Apple Configurator 工具的詳細資訊，請參閱您的 Apple 文件。
 > -   如果在部署組態原則之後安裝您指定的 iOS 應用程式，則除非重新啟動裝置，否則裝置不會進入 kiosk 模式。
 
-### 相容與不相容之應用程式的參考資訊
-<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>相容與不相容之應用程式的參考資訊
 
 使用 [不相容應用程式報表]  檢視允許和封鎖應用程式的相容性。
 
-##### 執行不相容應用程式報表
-<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
+##### <a name="to-run-the-noncompliant-apps-report"></a>執行不相容應用程式報表
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 [報表] &gt; [不相容應用程式報表]。
 
 2.  選取您想要檢查的裝置群組、選取是否要檢查相容應用程式和 (或) 不相容應用程式，然後選擇 **[檢視報告]**。
 
-#### 如何指定 URL 給應用程式市集
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+#### <a name="how-to-specify-urls-to-app-stores"></a>如何指定 URL 給應用程式市集
 若要在符合規定及不符合規定的應用程式清單中或在 [選取當裝置為 Kiosk 模式時，允許執行的受管理應用程式]  選項 (僅限 iOS) 中，指定應用程式 URL，請使用下列其中一種格式：
 
 1. 使用搜尋引擎，在 iTunes App Store 中尋找您要使用的應用程式，然後開啟應用程式的頁面。
@@ -243,20 +226,17 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 > [!NOTE]
 > 您也可以先使用 iTunes 軟體尋找應用程式，再使用 [複製連結]  命令取得應用程式的 URL。
 
-### 註冊設定
-<a id="enrollment-settings" class="xliff"></a>
+### <a name="enrollment-settings"></a>註冊設定
 所有設定適用於 iOS 8.0 和更新版本。
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
 |**允許裝置在受監督模式時使用啟用鎖定**|在受監督的 iOS 裝置上將啟用鎖定啟用。|
 
-### 受監督模式設定
-<a id="supervised-mode-settings" class="xliff"></a>
+### <a name="supervised-mode-settings"></a>受監督模式設定
 您可以在處於受監督模式且執行 iOS 8.0 和更新版本的裝置上進行下列設定。
 
-### 用於限制裝置的受監督模式設定
-<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-device-restrictions"></a>用於限制裝置的受監督模式設定
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
@@ -272,8 +252,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許通知設定修改**|允許使用者變更裝置通知設定。|
 |**允許背景圖片修改**|允許使用者變更裝置背景圖片。|
 
-### 用於限制功能的受監督模式設定
-<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-feature-restrictions"></a>用於限制功能的受監督模式設定
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
@@ -287,8 +266,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許鍵盤拼字檢查**|允許裝置的拼字檢查工具。|
 |**允許鍵盤快速鍵**|允許使用鍵盤快速鍵。|
 
-### 用於限制應用程式的受監督模式設定
-<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-app-restrictions"></a>用於限制應用程式的受監督模式設定
 
 |設定名稱|詳細資料|
 |----------------|--------------------|
@@ -305,8 +283,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**允許 Game Center**|允許使用 Game Center 應用程式。|
 
 
-### 顯示或隱藏應用程式
-<a id="show-or-hide-apps" class="xliff"></a>
+### <a name="show-or-hide-apps"></a>顯示或隱藏應用程式
 
 使用 **[Hidden and shown apps list]** (隱藏與顯示的應用程式清單) 來在受監督的裝置 (執行 iOS 9.3 或更新版本) 上控制下列項目︰
 
@@ -314,8 +291,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 - 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
 
 
-#### 如何建立隱藏或顯示的應用程式清單
-<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
+#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>如何建立隱藏或顯示的應用程式清單
 
 指定下列設定：
 
@@ -329,8 +305,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**編輯**|讓我們編輯所選取應用程式的名稱、發行者和 URL。|
 |**刪除**|從清單中刪除選取的應用程式。|
 
-#### 內建 iOS 應用程式的應用程式資訊
-<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
+#### <a name="app-information-for-built-in-ios-apps"></a>內建 iOS 應用程式的應用程式資訊
 
 使用此清單中的資訊來識別您可能想要顯示或隱藏之內建 iOS 應用程式的名稱、發行者及組合識別碼。 如果您想要顯示或隱藏清單中的所有應用程式，您可以將下列資料複製到文字檔，並使用副檔名 **.csv**，然後使用 [匯入應用程式] 選項來同時匯入所有的應用程式。
 
@@ -380,30 +355,26 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 
 
-## 自訂原則設定
-<a id="custom-policy-settings" class="xliff"></a>
+## <a name="custom-policy-settings"></a>自訂原則設定
 
 使用 Microsoft Intune **iOS 自訂原則**，將您使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)建立的設定，部署至 iOS 裝置。 此工具讓您能夠建立許多設定來控制這些裝置的操作，並將它們匯出到組態設定檔。 您接著可將這個組態設定檔匯入 Intune iOS 自訂原則，並將設定部署到組織中的使用者和裝置。
 
 這項功能可讓您部署無法使用 Intune 一般組態原則進行的 iOS 設定。
 
-### 必要條件
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>必要條件
 開始之前，您必須安裝 Apple Configurator，並建立包含您要部署到使用者或裝置之設定的組態檔。 您可以從 [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) 下載並了解 Apple Configurator。
 
 > [!NOTE]
 > Intune 不會報告 iOS 自訂原則中個別設定的相容性。 不過，會報告原則的整體相容性。
 
-### 一般設定
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>一般設定
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
     |**Name**|輸入 iOS 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
     |**說明**|提供可給予 iOS 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
-### 自訂設定
-<a id="custom-settings" class="xliff"></a>
+### <a name="custom-settings"></a>自訂設定
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
@@ -411,6 +382,5 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**組態設定檔**|選擇 **[匯入]**，然後瀏覽到您使用 Apple Configurator 建立的組態設定檔。 **注意：** 確定您從 Apple Configurator 工具匯出的設定會與您部署 iOS 自訂原則之裝置上的 iOS 版本相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。|
     |**組態設定檔詳細資料**|顯示您所匯入組態設定檔的 XML 程式碼。|
 
-### 請參閱
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

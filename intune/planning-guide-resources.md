@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/11/2017
 ---
-# 規劃 Intune 部署的其他資源
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
 
-## 範本
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>範本
 
 規劃指南中使用之資料表的 Microsoft Excel 範本可供[下載](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)。
 
@@ -44,8 +42,7 @@ ms.lasthandoff: 07/11/2017
 | | 條件式存取原則|-|
 
 
-## 進階閱讀
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>進階閱讀
 
 請參閱 Intune 部署規劃、設計和實作程序期間可能有用之其他資訊的這些資源。
 

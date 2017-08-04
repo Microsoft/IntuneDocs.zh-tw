@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>一般
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
+
 -   **相機** - 啟用或封鎖裝置的相機。
 -   **複製並貼上** - 可以在裝置上使用複製及貼上功能。
 -   **抽取式存放裝置** - 允許裝置使用如 SD 記憶卡等抽取式存放裝置。
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **自訂電子郵件帳戶同步** - 讓裝置可連線到非 Microsoft 的電子郵件帳戶。
 
 ## <a name="password"></a>密碼
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
--   **需要密碼** - 需要使用者輸入密碼才可存取該裝置。
+
+-   **密碼** - 需要使用者輸入密碼才可存取該裝置。
     -   **必要的密碼類型** - 指定必要密碼的類型，例如只可是英數字元或數字等等。
     -   **密碼長度下限** - 指定密碼所需的字元數下限。
     -   **簡單密碼** - 指定是否能使用 ’0000’ 和 ‘1234’ 等簡單密碼。
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **加密** - 需要加密受支援行動裝置上的資料。
 
 ## <a name="app-store"></a>App Store
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
+
 -   **App Store** - 讓使用者可從裝置連接到 App Store。
 
 ## <a name="restricted-apps"></a>受限應用程式
-
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
 
 您可以在受限制應用程式清單中，設定下列清單之一︰
 
@@ -81,11 +79,11 @@ ms.lasthandoff: 07/01/2017
 
 
 ## <a name="browser"></a>瀏覽器
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
+
 -   **網頁瀏覽器** - 啟用或封鎖裝置的內建網頁瀏覽器。
 
 ## <a name="cellular-and-connectivity"></a>行動數據與連線
--   **將所有設定套用至 Windows 8.1** - 您可以在傳統 Intune 入口網站中設定此設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定將只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用到 Windows 10 行動裝置版裝置。
+
 -   **Wi-Fi** - 啟用或停用裝置的 Wi-Fi 功能。
 -   **Wi-Fi 網際網路共用功能** - 可以使用裝置的 Wi-Fi 網際網路共用功能。
 -   **自動連線至 Wi-Fi 熱點** - 讓裝置可自動連線到免費 Wi-Fi 熱點，並自動接受任何使用條款。

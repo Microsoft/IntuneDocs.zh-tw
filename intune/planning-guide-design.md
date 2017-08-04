@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fdd75bd2b96eb20e0e73b7f8f76cf1a5cc035011
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -189,7 +189,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 決定哪一種符合您
 
 您需要知道哪些裝置會放在環境中，並確認 Intune 是否會在建立您的設計時支援它們。 Intune 支援 iOS、Android 和 Windows 平台。
 
--   深入了解 [Intune 支援的裝置](/intune-classic/get-started/supported-mobile-devices-and-computers)。
+-   深入了解 [Intune 支援的裝置](/intune/supported-devices-browsers)。
 
 ### <a name="devices"></a>裝置
 

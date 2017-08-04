@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2e27bdcb6af7d81ed87aa113b11affbff695b808
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登入公司入口網站應用程式？ <!--User Story 1132123-->
-
-> [!IMPORTANT]
-> 這項功能正在推出中。 帶給您的體驗可能會有所不同。 完成推出後，我們將會移除本聲明。
 
 您可以使用公司入口網站應用程式來存取公司資源，如電子郵件和商務應用程式。 登入公司入口網站有兩種主要方式：
 
