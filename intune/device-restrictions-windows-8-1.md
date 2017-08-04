@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 8.1 及更新版本的裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>一般
--   **套用所有設定至 Windows 10** - 啟用此原則中之設定，除了套用到 Windows 8.1 裝置之外，也套用至 Windows 10 裝置。
+
 -   **診斷資料提交** - 讓裝置可將診斷資訊提交到 Microsoft。
 -   **防火牆** - 需要開啟 Windows 防火牆。
 -   **使用者帳戶控制** - 需要在裝置上使用使用者帳戶控制 (UAC)。
+
 ## <a name="password"></a>密碼
 -   **必要的密碼類型** - 需要使用者輸入密碼才可存取該裝置。
 -   **密碼長度下限** - 設定密碼的必要長度下限 (字元)。
@@ -62,8 +63,10 @@ ms.lasthandoff: 07/03/2017
 -   **企業模式功能表存取** - 讓使用者可從 Internet Explorer 存取企業模式功能表選項。
 如果您選取此設定，您也可以指定 [記錄報告位置]，其中包含報告的 URL，顯示使用者已開啟企業模式存取的網站。
 -   **企業模式網站清單位置** - 指定啟用企業模式時，將使用企業模式的網站清單位置。
+
 ## <a name="cellular"></a>行動電話通訊
 -   **數據漫遊** - 讓裝置可在行動電話通訊網路上時進行數據漫遊。
+
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 -   **工作資料夾 URL** - 此設定會設定工作資料夾的 URL，允許跨裝置同步處理文件。
 -   **在沒有 Microsoft 帳戶的情況下存取 Windows Mail 應用程式** - 讓您可在沒有 Microsoft 帳戶的情況下，存取 Windows Mail 應用程式。    

@@ -15,14 +15,17 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 97a7a2d2727d823c24e720b61531dce78f6935d1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]本主題說明使用者在使用應用程式保護原則所管理之應用程式時的體驗。 僅當應用程式在工作內容中使用時 (例如使用工作帳戶存取應用程式，或存取公司 OneDrive 上公司位置內儲存的檔案)，才會套應用程式保護原則。
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本主題說明應用程式保護原則所管理應用程式的使用者體驗。 僅當應用程式在工作內容中使用時 (例如使用工作帳戶存取應用程式，或存取公司 OneDrive 上公司位置內儲存的檔案)，才會套應用程式保護原則。
 ##  <a name="accessing-apps"></a>存取應用程式
 
 所有與 Android 裝置上之應用程式保護原則相關聯的應用程式，都需要公司入口網站應用程式。

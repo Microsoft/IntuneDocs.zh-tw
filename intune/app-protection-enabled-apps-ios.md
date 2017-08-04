@@ -15,14 +15,17 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 519a721b19e42c3fe2cc8120f7985b18cd57a1ce
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]本主題說明使用者在使用應用程式保護原則所管理之應用程式時的體驗。 僅當應用程式在工作內容中使用時 (例如使用工作帳戶存取應用程式，或存取公司 OneDrive 上公司位置內儲存的檔案)，才會套應用程式保護原則。
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本主題說明應用程式保護原則所管理應用程式的使用者體驗。 僅當應用程式在工作內容中使用時 (例如使用工作帳戶存取應用程式，或存取公司 OneDrive 上公司位置內儲存的檔案)，才會套應用程式保護原則。
 ##  <a name="accessing-apps"></a>存取應用程式
 
 如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。  必須先重新啟動，才會將應用程式保護原則套用到應用程式。 下列螢幕擷取畫面使用 Skype 應用程式來說明這點︰

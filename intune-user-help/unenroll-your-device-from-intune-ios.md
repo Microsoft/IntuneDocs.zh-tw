@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/13/2017
 ---
-# 從 Intune 取消註冊 iOS 裝置
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>從 Intune 取消註冊 iOS 裝置
 
 當您從 Intune 取消註冊 iOS 裝置時，您的裝置將無法再存取公司資源，並且將不再受 Intune 管理。
 

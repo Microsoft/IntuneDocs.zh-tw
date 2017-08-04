@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/11/2017
 ---
-# 決定使用案例的需求
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>決定使用案例的需求
 
 在本節中，您會判斷每個使用案例中每個組織群組的需求。 此程序可協助您準備其他 Intune 部署規劃領域 (如架構和設計、上架以及推出等)。 此程序亦有助於找出可能的落差以及 Intune 部署專案的相關挑戰。
 
@@ -42,8 +41,7 @@ ms.lasthandoff: 07/11/2017
 您可以[下載上表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來輸入組織的使用案例和子使用案例需求。
 
 
-## 需求範例
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>需求範例
 
 下列幾個範例可用於「需求」資料行：
 
@@ -64,7 +62,6 @@ ms.lasthandoff: 07/11/2017
     - Office 365 與應用程式保護原則
     - 企業營運 (LOB) 與應用程式保護原則
 
-## 後續步驟
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>後續步驟
 
 下一節提供[如何開發 Intune 推出計畫](planning-guide-rollout-plan.md)的指引。
