@@ -8,9 +8,7 @@
 ### [應用程式 UI 的新功能](whats-new-app-ui.md)
 ### [新增功能封存 (Azure 入口網站)](whats-new-archive.md)
 ### [新增功能封存 (傳統入口網站)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [高階架構](high-level-architecture.md)
 ## [裝置與應用程式生命週期](introduction-device-app-lifecycles.md)
 ### [裝置生命週期](device-lifecycle.md)
 ### [應用程式生命週期](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # 監視及疑難排解
 ## [使用技術服務人員角色](help-desk-operators.md)
+## [使用 Intune 資料倉儲](reports-nav-create-intune-reports.md)
+### [使用 Power BI 連線至資料倉儲](reports-proc-get-a-link-powerbi.md)
 
 # 開發和自訂
 ## [設定自訂裝置設定](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune App SDK Xamarin 元件](app-sdk-xamarin.md)
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune 資料倉儲 API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [ 端點](reports-api-url.md)
+### [資料倉儲資料模型](reports-ref-data-model.md)
+#### [日期實體的參考](reports-ref-date.md)
+#### [使用者實體的參考](reports-ref-user.md)
+#### [行動裝置應用程式管理 (MAM) 實體的參考](reports-ref-mobile-app-management.md)
+#### [裝置實體的參考](reports-ref-devices.md)
+#### [應用程式實體的參考](reports-ref-application.md)
+#### [原則實體的參考](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [名詞解釋](intune-glossary.md)
