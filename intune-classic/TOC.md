@@ -237,7 +237,7 @@
 ## [Intune App SDK Xamarin 元件](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [疑難排解](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
-## [如何取得支援](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [如何取得支援](/intune/get-support?toc=/intune-classic/toc.json)
 ## [使用報告來監視 Intune](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection 疑難排解](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [公司資源存取問題的疑難排解](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
