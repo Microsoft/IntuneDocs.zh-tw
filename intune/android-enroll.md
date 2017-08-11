@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 183e60af4d6174c18fc3883f2cdd9827505d2aba
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -49,7 +49,6 @@ Intune 的多使用者管理支援執行 Samsung KNOX Standard 的裝置。 這�
 
 1. **設定 Intune MDM**<br>
 如果尚未這麼做，請將[行動裝置管理授權單位](mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
-
 2. **設定 Android for Work 繫結**<br>
     以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
