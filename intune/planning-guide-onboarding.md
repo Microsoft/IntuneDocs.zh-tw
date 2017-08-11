@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>實作您的 Intune 計劃
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 07/11/2017
 
 -   Enterprise Mobility + Security (EMS)/Intune 訂閱
 
--   Office 365 訂閱 (適用於 Office 應用程式和 MAM 原則管理的應用程式)
+-   Office 365 訂閱 (適用於 Office 應用程式和應用程式保護原則管理的應用程式)
 
 -   Apple APN 憑證 (啟用 iOS 裝置平台管理)
 
@@ -109,7 +109,7 @@ Intune 支援電子郵件、Wi-Fi 和 VPN 設定檔。 適當新增這些設定�
 
 ### <a name="task-10-add-and-deploy-apps"></a>工作 10：新增及部署應用程式
 
-Intune 支援部署 Web、企業營運和公用市集應用程式。 您也可以建立應用程式與 MAM 原則的關聯性，來管理已與 Intune SDK 整合的應用程式。 適當新增應用程式，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
+Intune 支援部署 Web、企業營運和公用市集應用程式。 您也可以建立應用程式與應用程式保護原則的關聯性，來管理已與 Intune SDK 整合的應用程式。 適當新增應用程式，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
 -   深入了解[新增與部署應用程式](app-management.md)。
 

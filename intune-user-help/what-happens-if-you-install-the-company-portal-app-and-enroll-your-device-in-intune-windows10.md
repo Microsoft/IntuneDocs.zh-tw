@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 10 裝置，會發生什麼情況？
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/01/2017
 
 -   當手機遺失或遭竊時，將其重設為原廠設定。
 
-如需註冊步驟，請參閱[在 Intune 註冊 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解您的 IT 系統管理員能夠檢視您裝置上的哪些項，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+如需註冊步驟，請參閱[在 Intune 註冊 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 系統管理員可以在您的裝置上看到什麼內容，請參閱[當我在 Intune 註冊裝置時，我的 IT 系統管理員會看到什麼內容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 新增電腦時：
 

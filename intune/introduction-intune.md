@@ -5,7 +5,7 @@ keywords: "什麼是 Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>什麼是 Intune？
 
@@ -72,10 +72,10 @@ Intune 整合了 Azure AD，以啟用一組廣泛的存取控制案例。 例如
 
 * [單一登入](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [多重要素驗證](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [應用程式條件式存取 - 如果行動應用程式包含公司資料，便允許存取](app-based-conditional-access-intune.md) ([傳統主控台](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [隔離公司資料與相同應用程式內的個人資料](app-protection-policy.md) ([傳統主控台](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](app-protection-policies.md) ([傳統主控台](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [從行動應用程式抹除公司資料](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [應用程式條件式存取 - 如果行動應用程式包含公司資料，便允許存取](app-based-conditional-access-intune.md)
+* [隔離公司資料與相同應用程式內的個人資料](app-protection-policy.md)
+* [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](app-protection-policies.md)
+* [從行動應用程式抹除公司資料](apps-selective-wipe.md)
 * [權限管理支援](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![顯示應用程式管理資料安全性層級的影像](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Intune 提供行動應用程式安全性的一種方式，是透過其**應用�
 * [將限制使用的共用平板電腦發給您的工作人員](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>後續步驟
-* 請閱讀一些[常見的 Intune 使用方式](common-scenarios.md) ([傳統主控台](/intune-classic/understand-explore/common-ways-to-use-intune))。
-* [使用 Intune 的 30 天試用](free-trial-sign-up.md)來熟悉產品 ([傳統主控台](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune))。
-* 深入了解 Intune 的[技術需求和功能](supported-devices-browsers.md) ([傳統主控台](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in))。
+* 請閱讀一些[常見的 Intune 使用方式](common-scenarios.md)。
+* [使用 Intune 的 30 天試用](free-trial-sign-up.md)來熟悉產品。
+* 深入了解 Intune 的[技術需求和功能](supported-devices-browsers.md)。

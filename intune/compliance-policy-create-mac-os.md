@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>使用 Intune 為 macOS 裝置 (預覽) 建立裝置合規性政策
 
@@ -104,6 +104,9 @@ ms.lasthandoff: 07/20/2017
 
 - **避免重複使用前幾個密碼**：指定不可重複使用先前使用的多少個密碼。
 
+    > [!IMPORTANT]
+    > 如果 macOS 裝置上的密碼需求有所變更，在下次使用者變更其密碼之前不會生效。 例如，如果您將密碼長度限制設定為 8 位數，而 macOS 裝置目前有 6 位數密碼，則在下次使用者更新裝置上的密碼之前，該裝置仍保持相容。
+
 ## <a name="to-create-a-device-compliance-policy"></a>建立裝置合規性政策
 
 1. 移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。
@@ -128,7 +131,7 @@ ms.lasthandoff: 07/20/2017
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 
-若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [合規性 - 政策] 刀鋒視窗中找到。
+若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [合規性原則] 刀鋒視窗中找到。
 
 1. 選擇您想要指派給使用者的裝置合規性政策，然後選擇 [指派]。 這會開啟刀鋒視窗讓您從中選取 [Azure Active Directory 安全性群組]，並將其指派給原則。
 

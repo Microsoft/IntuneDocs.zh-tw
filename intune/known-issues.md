@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/17/2017
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>由 Intune 在移轉期間所建立的群組，可能會影響其他 Microsoft 產品的功能
 
-當您從傳統 Intune 移轉到 Azure 時，可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
+當您從傳統 Intune 移轉到 Azure 入口網站時，您可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>需進行次要移轉以選取功能
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/17/2017
 
 因為這些功能無法從傳統 Silverlight 和 Azure 主控台管理，所以移轉：
 - 在傳統主控台中停用它們
-- 在 Azure 主控台中啟用它們。  
+- 在 Azure 主控台中啟用它們  
 
 如果您現在於 Azure 入口網站中管理這些 Intune 功能，請注意以下幾點：
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>移除 Apple DEP 中的預設公司裝置註冊設定檔
-Azure 入口網站不支援 Apple 裝置註冊方案 (DEP) 裝置的預設公司裝置註冊設定檔。 傳統 Silverlight Intune 主控台中原本提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
+Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 傳統 Silverlight Intune 主控台中原本提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>移轉時還原的 Apple DEP 權杖
 
@@ -64,8 +64,7 @@ Azure 入口網站不支援 Apple 裝置註冊方案 (DEP) 裝置的預設公司
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>用於移轉原則的「狀態」刀鋒視窗無法運作
 
-您無法在 Azure 入口網站中，檢視從傳統入口網站移轉之原則的狀態資訊。 但是，您可以在傳統入口網站中繼續檢視這些原則的報表。
-若要檢視移轉之設定原則的狀態資訊，請在 Azure 入口網站中重新建立它們。
+您無法在 Azure 入口網站中，檢視從傳統入口網站移轉之原則的狀態資訊。 但是，您可以在傳統入口網站中繼續檢視這些原則的報表。 若要檢視移轉之設定原則的狀態資訊，請在 Azure 入口網站中重新建立它們。
 
 ## <a name="apps"></a>應用程式
 
@@ -111,7 +110,7 @@ Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune
 
 ### <a name="ios-app-protection-policies"></a>iOS 應用程式保護原則
 
-您可以定義 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)，在透過 MAM 管理而不需要註冊的裝置上供使用者使用。 由於暫時性的錯誤，您只能為僅一個小數位數、而非多個小數位數的 iOS 版本定義這些原則。 可為 iOS 10.3 設定，不能為 iOS 10.3.1 的最低版本設定。 即將推出的 iOS SDK 更新會解決此問題。
+您可以定義 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)，在透過行動應用程式管理 (MAM) 進行管理而不需要註冊的裝置上供使用者使用。 由於暫時性的錯誤，您只能為僅一個小數位數、而非多個小數位數的 iOS 版本定義這些原則。 可為 iOS 10.3 設定，不能為 iOS 10.3.1 的最低版本設定。 即將推出的 iOS SDK 更新會解決此問題。
 
 
 ## <a name="administration-and-accounts"></a>管理與帳戶

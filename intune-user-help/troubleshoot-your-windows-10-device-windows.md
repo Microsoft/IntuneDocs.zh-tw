@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。
@@ -35,7 +35,7 @@ ms.lasthandoff: 07/01/2017
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>針對如果看見 [存取公司或學校資源] 時需遵循的步驟進行疑難排解
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>看見 [存取公司或學校資源] 時所需遵循的疑難排解步驟
 
 1.  如果您已遵循上述步驟，但仍然無法存取自己的工作或學校電子郵件及檔案，請回到 [存取公司或學校資源]。
 
@@ -47,12 +47,16 @@ ms.lasthandoff: 07/01/2017
 
     - 如果您並未看到以上所示的連線資訊，或您有看到，但遺漏了部分選項，請點選 [連線]，然後使用您的工作或學校認證登入。 現在您應已連線。
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>針對如果看見 [您的帳戶] 時需遵循的步驟進行疑難排解
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>看見 [您的帳戶] 時所需遵循的疑難排解步驟
 
 如果您遵循上述步驟，但仍然無法存取自己的公司或學校電子郵件、檔案和其他資料，請回到 [帳戶] 並點選 [公司存取]。
 
 - 如果您看到自己的公司或學校帳戶，恭喜您 已連線。
 
 - 如果看不到自己的公司或學校帳戶，請點選 [連線]，然後以公司或學校認證登入。
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看見 [設定公司或學校帳戶] 時所需遵循的疑難排解步驟
+
+如果您看到訊息，指出__無法自動探索符合所輸入使用者名稱的管理端點。請檢查您的使用者名稱，然後再試一次。若您知道管理端點的 URL，請輸入它__，然後您應該嘗試重新輸入使用者名稱和密碼。 如果仍然無法運作，則應該洽詢您的 IT 系統管理員，以取得您需要在 [管理端點] 文字方塊中提供的網站。 此網站看起來可能類似 **www.yourcompany.onmicrosoft.com**。 
 
 是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
