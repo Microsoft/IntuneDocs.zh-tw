@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 將應用程式指派給群組
 
@@ -59,6 +59,7 @@ ms.lasthandoff: 07/01/2017
     - **必要** - 此應用程式安裝所選群組中的裝置上。
     - **解除安裝** - 此應用程式會從所選群組中的裝置上解除安裝。
     - **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。
+6. **僅限 iOS 應用程式** - 如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，您可以在 [VPN] 下加以選取。 當應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
 6. 完成之後，請選擇 [儲存]。
 
 應用程式現已指派給您所選取的群組。
@@ -100,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |使用者可用而無需註冊|使用者可用|可用|
 |使用者可用而無需註冊|裝置為必要|必要且可用而無需註冊|
 |使用者可用而無需註冊|裝置無法使用|可用而無需註冊|
-|使用者可用而無需註冊|裝置解除安裝|解除安裝且可用而無需註冊。<br>如果使用者未從公司入口網站安裝應用程式，將接受解除安裝。<br>如果使用者從公司入口網站安裝應用程式，則安裝將優先於解除安裝。|
+|使用者可用而無需註冊|裝置解除安裝|解除安裝且可用而無需註冊。<br>如果使用者未從公司入口網站安裝應用程式，則接受解除安裝。<br>如果使用者從公司入口網站安裝應用程式，則安裝將優先於解除安裝。|
 
 >[!NOTE]
 >僅針對受管理的 iOS 市集應用程式，當您將這些應用程式新增到 Intune 並指派為「必要」時，系統會自動將它們建立成包含「必要」及「可用」用途。

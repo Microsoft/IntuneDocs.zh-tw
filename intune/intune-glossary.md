@@ -1,37 +1,35 @@
 ---
 title: "Intune 字彙"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "了解在 Microsoft Intune 中使用的一些術語"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 字彙
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |應用程式指派|可讓使用者[尋找、下載及安裝](/intune/app-management)他們需要的應用程式。 這先前稱為*應用程式部署*。|
-|應用程式組態設定檔|在執行之前使用特定設定，設定 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 應用程式。|
+|應用程式組態設定檔 <br/><br/>應用程式設定原則|適用於具有廠商特定設定的 Mobile Apps。 在執行之前使用特定設定，設定 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 應用程式。|
 |應用程式監視|可讓您[檢閱與應用程式指派相關的最近狀態和活動](/intune/apps-monitor)。|
 |應用程式保護資料移除工作|從使用者的裝置中[移除應用程式資料](/intune/app-protection-policies)。|
-|應用程式保護原則|可確保使用者的應用程式符合您的[公司資料保護原則](/intune/app-protection-policies)。|
+|應用程式保護原則|適用於與 Enterprise Mobility + Security (EMS) 技術整合的 Mobile Apps。 可確保使用者的應用程式符合您的[公司資料保護原則](/intune/app-protection-policies)。|
 |App SDK|[Microsoft Intune App SDK](/intune/app-sdk) 可讓您將功能新增至內部撰寫的應用程式，讓 Intune 應用程式保護原則可以管理它們。|
 |應用程式解除安裝動作|可讓您從使用者的裝置[解除安裝應用程式](/intune/apps-deploy)。|
 |App Wrapping Tool|建立企業營運應用程式包裝函式的[命令列應用程式](/intune/apps-prepare-mobile-application-management)，可讓 Intune 應用程式保護原則對其進行管理。|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |受管理的瀏覽器|一個[網頁瀏覽應用程式](/intune/app-configuration-managed-browser)，您可以在組織中使用 Intune 來指派此應用程式。 受管理的瀏覽器原則會設定允許清單或封鎖清單，以限制受管理瀏覽器的使用者可瀏覽的網站。|
 |MDM 授權單位|[MDM 授權單位](/intune/mdm-authority-set)會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。|
-|行動應用程式組態原則|一個 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 原則，用來在執行時提供相容應用程式的設定 (例如，公司名稱或伺服器位址)。|
+|行動應用程式組態原則|適用於具有廠商特定設定的 Mobile Apps。 例如，一個 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 原則，用來在執行時提供相容應用程式的設定 (例如公司名稱或伺服器位址)。|
 |行動應用程式佈建原則|一個 iOS 原則，可協助您確定所指派 iOS 應用程式的[佈建設定檔](/intune/app-provisioning-profile-ios)未過期。|
 |行動應用程式管理|[行動應用程式管理 (MAM)](/intune/app-lifecycle) 可讓您針對使用者發行、推送、設定、保護、監視和更新行動應用程式。
 |行動裝置管理|[行動裝置管理 (MDM)](/intune/device-lifecycle) 可讓您在 Intune 中註冊裝置，以佈建、設定、監視和管理這些裝置。
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|選擇性抹除|[選擇性抹除](/intune/device-company-data-remove)只會移除公司資料，包括適用的行動應用程式管理 (MAM) 資料、設定和裝置的電子郵件設定檔。 選擇性抹除會將使用者的個人資料保留在裝置上。|
+|選擇性抹除|[選擇性抹除](/intune/device-company-data-remove)只會從裝置移除由應用程式保護原則所保護的公司資料，包括設定和電子郵件設定檔。 選擇性抹除會將使用者的個人資料保留在裝置上。|
 |側載|安裝企業營運應用程式，而不需要從應用程式市集中存取的動作。|
 |訂用帳戶|您為了存取 Intune 租用戶所簽訂的合約。|
 

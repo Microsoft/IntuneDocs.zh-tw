@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
 
-此應用程式類型方便您將 Office 365 ProPlus 2016 應用程式指派給由您管理且執行 Windows 10 的裝置。 此外，若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為一個應用程式的那些應用程式。
+此應用程式類型方便您將 Office 365 ProPlus 2016 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為一個應用程式的那些應用程式。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -34,11 +34,8 @@ ms.lasthandoff: 07/17/2017
 - 部署這些應用程式的裝置必須執行 Windows 10 Creators Update 或更新版本。
 - Intune 僅支援從 Office 365 ProPlus 2016 套件新增 Office 應用程式。
 - 如果在 Intune 安裝應用程式套件時有任何 Office 應用程式是開啟的，使用者未儲存的檔案可能會遺失資料。
-- 如果您在已安裝 Office 的裝置上安裝 Office，請閱讀下列考量：
-    - 不論使用何種 Office 版本，都不能在相同裝置上安裝 32 位元和 64 位元的 Office 產品。
-    - 您不能在相同的裝置上安裝相同版本的隨選即用及 MSI 版本的 Office，但可以安裝不同的主要版本。
-    - 如有使用隨選即用安裝的舊版 Office，您必須移除所有想要更換為較新版本的應用程式。 例如，如果裝置上有較舊版本的 Word，而您想要指派最新的版本，您必須先移除舊版。
-    - 如果裝置已安裝 Office 365，將 Office 365 ProPlus 2016 套件指派給裝置可能表示您必須變更您的 Office 訂閱層級。
+- Windows 10S 裝置不支援此安裝方法。
+- 如果您將此應用程式類型指派為 [可用]，並使用不同指派以多位使用者為目標，這些使用者只會看到最近設為目標的指派。
 
 
 ## <a name="get-started"></a>開始使用

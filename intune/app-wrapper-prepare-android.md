@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理
 
@@ -50,16 +50,7 @@ ms.lasthandoff: 07/18/2017
     > [!NOTE]
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 您最好安裝 64 位元版本。
 
-- Android 要求所有應用程式套件 (.apk) 均已簽署。 使用 Java keytool 產生簽署包裝輸出應用程式所需的認證。 例如，下列命令使用 Java 可執行檔 keytool.exe 產生 App Wrapping Tool 可使用的金鑰，以簽署包裝的輸出應用程式。
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    這個範例會使用 RSA 演算法產生金鑰組 (大小為 2,048 位元的公開金鑰及相關私密金鑰)。 然後將公開金鑰包裝成 X.509 v3 自我簽署憑證，以單一項目憑證鏈結的形式儲存。 此憑證鏈結與私密金鑰會儲存在名為 "mykeystorefile" 的新金鑰儲存區中，並依別名 "mykeyalias" 識別。 金鑰儲存區項目有效期限為 50,000 天。
-
-    命令會提示您提供金鑰儲存區與金鑰的密碼。 請使用安全的密碼並記住，因為執行 App Wrapping Tool 時會需要這些密碼。
-
-    如需詳細文件，請在 Oracle 文件網站上閱讀更多 Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) 及 Java [金鑰儲存區](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)資訊。
+- Android 要求所有應用程式套件 (.apk) 均已簽署。 若要**重複使用**現有憑證和整個簽署憑證指引，請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 使用 Java 可執行檔 keytool.exe 產生簽署包裝輸出應用程式所需的**新**認證。 任何設定的密碼都必須安全，但請記下密碼，因為執行 App Wrapping Tool 時會需要這些密碼。
 
 ## <a name="install-the-app-wrapping-tool"></a>安裝應用程式包裝工具
 
@@ -95,7 +86,7 @@ ms.lasthandoff: 07/18/2017
 |**-KeyStorePassword**&lt;SecureString&gt;|用來解密 keystore 的密碼。 Android 要求所有應用程式套件 (.apk) 均已簽署。 使用 Java keytool 來產生 KeyStorePassword。 在這裡深入了解 Java [金鑰儲存區](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)。| |
 |**-KeyAlias**&lt;String&gt;|要用於簽署的金鑰名稱。| |
 |**-KeyPassword**&lt;SecureString&gt;|用來解密簽署用途之私密金鑰的密碼。| |
-|**-SigAlg**&lt;SecureString&gt;| (選擇性) 要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA、MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (選擇性) 要用於簽署的簽章演算法名稱。 此演算法必須與私密金鑰相容。|範例：SHA256withRSA、SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (選擇性) 此命令支援 verbose 和 debug 等常用 PowerShell 參數。 |
 
 

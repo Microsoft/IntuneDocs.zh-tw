@@ -15,17 +15,17 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1c4f6d18fd78f455be8e333bb765080184c908
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="get-started-with-users"></a>開始使用使用者
 
-![Azure 中的一般使用者](/intune/media/generic-intune-user.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Azure AD 管理貴組織的物件群組，例如裝置和應用程式，也會管理使用者群組。 您可以將使用者或裝置分組在一起，而不必個別管理每部裝置。 這可讓您輕鬆地將應用程式和設定指派給大量的使用者和裝置。
+Azure Active Directory 管理貴組織的物件群組，例如裝置和應用程式，也會管理使用者群組。 您可以將使用者或裝置分組在一起，而不必個別管理每部裝置。 這可讓您輕鬆地將應用程式和設定指派給大量的使用者和裝置。
 
 ## <a name="how-do-i-create-a-user"></a>如何建立使用者？
 

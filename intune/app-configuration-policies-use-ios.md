@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>如何使用 iOS 適用的 Microsoft Intune 應用程式設定原則
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/12/2017
 
 若使用者未正確輸入這些設定，可能會增加技術支援中心的負擔，使得採用新應用程式的速度變慢。
 
-應用程式組態原則可讓您在使用者執行應用程式之前，將這些設定指派給使用者來避開這些問題。 這些設定會自動提供，使用者無須採取任何動作。
+應用程式組態原則可讓您在使用者執行應用程式之前，將這些設定指派給使用者來避開這些問題。 這些設定會自動提供，使用者無須採取任何動作。 必須撰寫應用程式，才能支援使用應用程式設定。 如需詳細資訊，請洽詢您的應用程式廠商。
 
 您不會直接將這些原則部署給使用者與裝置。 而是將原則與應用程式關聯，然後再指派應用程式。 每當應用程式檢查是否有原則設定時 (通常於初次執行時)，都會加以使用。
 
@@ -57,8 +57,8 @@ ms.lasthandoff: 07/12/2017
 5.  在原則清單刀鋒視窗中選擇 [新增]。
 6.  在 [新增設定原則] 刀鋒視窗上，為應用程式原則提供 [名稱] 及選擇性 [敘述]。
 7.  對於 [裝置註冊類型]，請選擇下列其中一項：
-    - **已向 Intune 註冊** - 適用於已整合 Intune 應用程式 SDK，且受 Intune 管理的應用程式。
-    - **未向 Intune 註冊** - 適用於已整合 Intune 應用程式 SDK，且不受 Intune 管理，或由另一個解決方案管理的應用程式。
+    - **已註冊到 Intune** - 適用於由 Intune 管理的應用程式。
+    - **尚未註冊到 Intune** - 適用於不受 Intune 管理，或由另一個解決方案管理的應用程式。
 8.  對於 [平台]，請選擇 [iOS] (僅限已向 Intune 註冊的裝置)
 9.  選擇 [相關聯的應用程式]，然後在 [相關聯的應用程式] 刀鋒視窗中，選擇要套用設定之受管理的應用程式。
 10. 在 [新增設定原則] 刀鋒視窗上，選擇 [組態設定]

@@ -1,11 +1,11 @@
 ---
 title: "使用 Microsoft Intune 來啟用 BYOD"
-description: 
+description: "用於設定 Intune 來為您的組織啟用「攜帶您自己的裝置」(BYOD) 解決方案的高階工作流程。"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 880b83a63eefe13a96ab8838c7092c185aa32cd0
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-byod-with-intune"></a>使用 Intune 來啟用 BYOD
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/11/2017
 
 -   **[註冊裝置及檢查合規性](#enroll-devices-and-check-for-compliance)**說明如何讓使用者利用 Intune 註冊其個人裝置以納入管理。 Intune 可管理 iOS、macOS、Android 和 Windows 裝置。 本節也說明如何將原則部署到裝置，以及確保它們符合基本的安全性需求。
 
-- **[提供公司資源存取](#provide-access-to-company-resources)**為您示範 IT 如何讓使用者輕鬆且安全地存取公司資源。 您可以將存取設定檔部署到受管理的裝置來完成這項操作。 本節也說明如何使用 Intune 管理大量採購的應用程式部署。
+- **[提供公司資源存取](#provide-access-to-company-resources)**為您示範如何讓使用者輕鬆且安全地存取公司資源。 您可以將存取設定檔部署到受管理的裝置來完成這項操作。 本節也說明如何使用 Intune 管理大量採購的應用程式部署。
 
 -   **[保護公司資料](#protect-company-data)**可協助您了解如何提供公司資源的條件式存取、避免資料遺失，以及當工作不再需要裝置、裝置遺失或遭竊時，如何移除裝置上的公司應用程式與資料。
 
@@ -38,19 +38,17 @@ ms.lasthandoff: 07/11/2017
 ## <a name="before-you-begin"></a>開始之前
 在使用者註冊裝置之前，您必須先準備 Intune 服務本身。 若要這樣做，請[指派授權給使用者](licenses-assign.md)並[設定行動裝置管理授權單位](mdm-authority-set.md)。
 
-當您進行這項操作時，也應該[自訂公司入口網站](company-portal-customize.md)。 新增公司品牌並向使用者提供支援資訊。 這會為您的使用者建立可信任的註冊和支援體驗。
+當您進行這項操作時，也應該[自訂公司入口網站](company-portal-customize.md)。 新增公司品牌並向使用者提供支援資訊。 這會為您的使用者建立可信任的註冊和支援體驗。 您也可以建立使用者在註冊前必須接受的[使用規定](terms-and-conditions-create.md)，或用來指定支援哪些平台的[裝置限制](enrollment-restrictions-set.md)。
 
 ## <a name="enroll-devices-and-check-for-compliance"></a>註冊裝置及檢查合規性
 
 準備好 Intune 服務之後，您必須符合想要管理之不同裝置類型的各種註冊需求。 註冊裝置以納入管理的程序很簡單，但根據裝置類型會略有不同。
 
--   **iOS 和 Mac 裝置** 您必須[取得 Apple Push Notification Service (APN) 憑證](apple-mdm-push-certificate-get.md)，才能註冊 iPad、iPhone 或 MacOS 裝置。 將 APN 憑證上傳至 Intune 之後，使用者可以使用公司入口網站應用程式[註冊 iOS 裝置](/intune-user-help/enroll-your-device-in-intune-ios)，並使用公司入口網站[註冊 MacOS 裝置](/intune-user-help/enroll-your-device-in-intune-macos)。
+-   **iOS 和 Mac 裝置**：您必須[取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)，才能註冊 iPad、iPhone 或 MacOS 裝置。 將 MDM Push Certificate 上傳至 Intune 之後，使用者可以使用公司入口網站應用程式[註冊 iOS 裝置](/intune-user-help/enroll-your-device-in-intune-ios)，並使用公司入口網站[註冊 MacOS 裝置](/intune-user-help/enroll-your-device-in-intune-macos)。
 
--   **Android 裝置** 您不需要準備 Intune 服務即可註冊 Android 裝置。 使用者只要使用 Google Play 提供的公司入口網站應用程式即可[註冊 Android 裝置](/intune-user-help/enroll-your-device-in-intune-android.md)。
+-   **Android 裝置** 您不需要準備 Intune 服務即可註冊 Android 裝置。 使用者只要使用 Google Play 提供的公司入口網站應用程式即可[註冊 Android 裝置](/intune-user-help/enroll-your-device-in-intune-android)。
 
--   **Windows Phone 和電腦** 您應該[設定註冊伺服器的 DNS 別名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) 以利註冊 Windows 裝置。 使用者也可以藉由新增工作或學校帳戶[註冊 Windows 裝置](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows)。
-
-  - 如果您具有 Azure AD Premium，則可以[啟用自動註冊](windows-enroll.md)功能，讓使用者更方便註冊 Windows 裝置。 當使用者新增工作或學校帳戶來註冊其個人裝置時，此功能會將裝置自動註冊到 Intune 中。 這也適用於加入貴組織之 Azure AD 的屬公司擁有的裝置。
+-   **Windows 手機和電腦**：您可以進行額外設定來註冊 Windows 裝置。 若要簡化您的使用者體驗，您可以在 Azure Active Directory (AD) Premium 中，啟用 Windows 10 電腦和 Windows 10 行動裝置的自動註冊。 如果您沒有 Azure AD Premium 或需要支援 Windows 8.1，您可以建立[註冊伺服器的 DNS 別名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)來簡化註冊。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>請確定受管理的裝置符合基本安全性需求
@@ -61,13 +59,13 @@ ms.lasthandoff: 07/11/2017
 
 ## <a name="provide-access-to-company-resources"></a>提供公司資源存取
 
-大部分員工在其行動裝置上要做的第一件事，就是存取公司電子郵件和文件。 他們希望不經複雜的步驟或呼叫技術支援中心，就能完成設定。 Intune 可讓您為預先安裝在行動裝置上的原生電子郵件應用程式，輕鬆[建立及部署電子郵件設定](conditional-access-intune-common-ways-use.md)。
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+大部分員工在其行動裝置上要做的第一件事，就是存取公司電子郵件和文件。 他們希望不經複雜的步驟或呼叫技術支援中心，就能完成設定。 Intune 可讓您為預先安裝在行動裝置上的原生電子郵件應用程式，輕鬆[建立及部署電子郵件設定](email-settings-configure.md)。
+
 
 > [!NOTE]
 > Intune 支援 Google Play 商店中 Gmail 和 Nine Work 電子郵件應用程式的 Android for Work 電子郵件設定檔設定。
 
-Intune 也可在您於異地工作時，協助您控制及保護對內部部署公司資料的存取。 Intune [Wi-Fi](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune)、[VPN](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile) 和電子郵件設定檔一起運作，允許使用者隨時隨地存取完成其工作所需的檔案及資源。 貴公司內部部署裝載的 Web 應用程式和服務，也可以使用 Azure Active Directory 應用程式 Proxy 和條件式存取進行安全存取和保護。
+Intune 也可在您於異地工作時，協助您控制及保護對內部部署公司資料的存取。 Intune [Wi-Fi](wi-fi-settings-configure.md)、[VPN](vpn-settings-configure.md) 和電子郵件設定檔一起運作，允許隨時隨地存取完成工作所需的檔案及資源。 貴公司內部部署裝載的 Web 應用程式和服務，也可以使用 Azure Active Directory 應用程式 Proxy 和條件式存取進行安全存取和保護。
 
 ### <a name="manage-volume-purchased-apps"></a>管理大量購買的應用程式
 利用 Intune，輕鬆地：
@@ -109,8 +107,8 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 
 ### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>抹除公司資料，但是完整保留個人資料
 
-當裝置不再用於工作、要重新決定用途或只是遺失時，您需要能夠從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的選擇性抹除和完整抹除功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端抹除這些裝置。
+當裝置不再用於工作、要重新決定用途或只是遺失時，您可以從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的選擇性抹除和完整抹除功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端抹除這些裝置。
 
 [完整抹除](devices-wipe.md)會將裝置還原為其原廠預設值，並移除使用者資料和設定。 [選擇性抹除](devices-wipe.md#selective-wipe)只會從裝置移除公司資料，而保留使用者的個人資料。
 
-只要一啟動，裝置就會立即開始要從管理移除的選擇性抹除程序。 當程序完成時，會刪除所有的公司資料，並從 Intune 系統管理員主控台中移除裝置名稱。 這會結束裝置管理生命週期。
+只要一啟動，裝置就會立即開始要從管理移除的選擇性抹除程序。 當程序完成時，會刪除所有的公司資料，並從 Intune 入口網站中移除裝置名稱。 這會結束裝置管理生命週期。

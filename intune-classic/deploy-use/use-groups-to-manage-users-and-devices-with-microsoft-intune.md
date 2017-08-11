@@ -14,11 +14,11 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c5acd617e9d69fa23455d382dfd78518e52515b
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用群組管理使用者和裝置
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 07/01/2017
 >
 >![Azure 群組管理連結螢幕擷取畫面](../media/groups-link-azure.png) 
 >
->如果您看不到 Azure AD 入口網站的連結，則表示您仍使用「目前的」方法進行群組管理，如本主題的[使用 Microsoft Intune 建立群組以管理使用者和裝置](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
+>如果您看不到 Azure AD 入口網站的連結，則表示您仍使用「目前的」方法進行群組管理，如本主題的[建立群組](#create-groups)中所述。
 
 本主題描述如何在 Intune 管理主控台中建立 Intune 群組。
 

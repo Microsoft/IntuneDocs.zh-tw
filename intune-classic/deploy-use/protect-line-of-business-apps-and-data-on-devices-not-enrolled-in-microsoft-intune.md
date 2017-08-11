@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 07/18/2017
 
 ##  <a name="step-1-prepare-the-app"></a>步驟 1：準備應用程式
 
-在您可以將 MAM 原則套用到應用程式之前，必須先包裝應用程式，方法是使用適用於 [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) 的 Microsoft Intune App Wrapping Tool，或使用 [Intune App SDK](/intune/app-sdk) 來手動整合 Intune 應用程式保護功能。
+在您可以將 MAM 原則套用到應用程式之前，您必須先包裝應用程式，方法是使用適用於 [iOS](/intune/app-wrapper-prepare-ios) 和 [Android](/intune/app-wrapper-prepare-android) 的 Microsoft Intune App Wrapping Tool，或使用 [Intune App SDK](/intune/app-sdk) 來手動整合 Intune 應用程式保護功能。
 
 如需有關使用 App Wrapping Tool 與 SDK 的詳細資訊，請參閱[決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/intune/apps-prepare-mobile-application-management)。
 

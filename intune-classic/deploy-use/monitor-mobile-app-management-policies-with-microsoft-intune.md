@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 監視應用程式保護原則
 您可以監視您套用到使用者之應用程式保護原則的合規性狀態。 您能夠找到受應用程式保護原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
@@ -43,11 +43,13 @@ ms.lasthandoff: 07/01/2017
 
 ![Intune 行動應用程式管理刀鋒視窗上的摘要磚](../media/mam-azure-portal-user-status-summary.png)
 
--   **使用者**︰公司中使用與原則相關聯應用程式的使用者總數。
+-   **使用者**︰公司中使用與工作內容中的原則建立關聯之應用程式的使用者總數。
 
--   **由原則管理**︰工作環境中已使用至少其中一個應用程式的使用者數目。
+-   **由原則管理**：已使用應用程式並在工作內容中獲派原則的使用者數目。
 
--   **沒有任何原則**︰使用與原則相關聯應用程式，但不是原則之目標的使用者數目。 您可以考慮將這些使用者新增至原則。
+-   **沒有原則**：使用工作內容中的任何原則未設為目標之應用程式的使用者數目。 您可以考慮將這些使用者新增至原則。
+    > [!NOTE]
+    > 如果一個平台有多個原則，當至少指派一個原則給使用者時，使用者會視為由原則管理。
 
 - **已標記的使用者**︰遇到問題的使用者數目。 目前只有使用已進行 JB 破解之裝置的使用者，會被報告為**已標記的使用者**。
 

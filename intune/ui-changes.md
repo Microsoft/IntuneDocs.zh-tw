@@ -15,16 +15,27 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對想要徹底熟悉傳統主控台中的 Intune，並想知道如何在 Azure 上的 Intune 中完成作業的使用者，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
-|功能 |傳統主控台中的路徑|Azure 上 Intune 中的路徑| |------------||---------------|---------------| |裝置註冊計劃 (DEP) |管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃|[裝置註冊 > Apple 註冊 > 註冊計劃權杖](#where-did-apple-dep-go) | |裝置註冊計劃 (DEP)| 管理 > 行動裝置管理 > iOS 與 Mac OS X > 裝置註冊計劃 |[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-apple-dep-go) | |註冊規則 |管理 > 行動裝置管理 > 註冊規則|[裝置註冊 > 註冊限制](#where-did-enrollment-rules-go) | |依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號|[裝置註冊 > Apple 註冊 > 註冊計劃序號](#where-did-corporate-pre-enrolled-devices-go) | |依 iOS 序號分組 |群組 > 所有裝置 > 公司預先註冊的裝置 > 依 iOS 序號| [裝置註冊 > Apple 註冊 > AC 序號](#where-did-corporate-pre-enrolled-devices-go)| |依 IMEI 分組 (所有平台)| 群組 > 所有裝置 > 公司預先註冊的裝置 > 依 IMEI (所有平台) | [裝置註冊 > 公司裝置識別碼](#by-imei-all-platforms)| | 公司裝置註冊設定檔| 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > 註冊計劃設定檔](#where-did-corporate-pre-enrolled-devices-go) | | 公司裝置註冊設定檔 | 原則 > 公司裝置註冊 | [裝置註冊 > Apple 註冊 > AC 設定檔](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | 管理 > 行動裝置管理 > Android for Work | 裝置註冊 > Android for Work 註冊 | | 條款和條件 | 原則 > 條款和條件 | 裝置註冊 > 條款和條件 |
+|功能 |傳統主控台中的路徑|Azure 上 Intune 中的路徑|
+|------------|---------------|---------------|
+|裝置註冊計劃 (DEP) |[管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃]|[[裝置註冊] > [Apple 註冊] > [註冊計劃權杖]](#where-did-apple-dep-go) |
+|裝置註冊計劃 (DEP)| [管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃] |[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-apple-dep-go) |
+|註冊規則 |[管理] > [行動裝置管理] > [註冊規則]|[[裝置註冊] > [註冊限制]](#where-did-enrollment-rules-go) |
+|依 iOS 序號分組 |[群組] > [所有裝置] > [公司預先註冊的裝置] > [依 iOS 序號]|[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-corporate-pre-enrolled-devices-go) |
+|依 iOS 序號分組 |[群組] > [所有裝置] > [公司預先註冊的裝置] > [依 iOS 序號]| [[裝置註冊] > [Apple 註冊] > [AC 序號]](#where-did-corporate-pre-enrolled-devices-go)|
+|依 IMEI 分組 (所有平台)| [群組] > [所有裝置] > [公司預先註冊的裝置] > [依 IMEI (所有平台)] | [[裝置註冊] > [公司裝置識別碼]](#by-imei-all-platforms)|
+| 公司裝置註冊設定檔| [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [註冊計劃設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
+| 公司裝置註冊設定檔 | [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [AC 設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | [管理] > [行動裝置管理] > [Android for Work] | [裝置註冊] > [Android for Work 註冊] |
+| 條款及條件 | [原則] > [條款及條件] | [裝置註冊] > [條款及條件] |
 
 
 ## <a name="where-do-i-manage-groups"></a>我在何處管理群組？
