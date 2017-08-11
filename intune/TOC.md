@@ -263,7 +263,7 @@
 ### [如何取得 Windows 應用程式](end-user-apps-windows.md)
 
 # 監視及疑難排解
-## [使用技術服務人員角色](help-desk-operators.md)
+## [協助使用者疑難排解問題](help-desk-operators.md)
 ## [使用 Intune 資料倉儲](reports-nav-create-intune-reports.md)
 ### [使用 Power BI 連線至資料倉儲](reports-proc-get-a-link-powerbi.md)
 
