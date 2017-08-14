@@ -74,6 +74,7 @@
 #### [限制](enrollment-restrictions-set.md)
 #### [Apple MDM 推播憑證](apple-mdm-push-certificate-get.md)
 #### [公司識別碼](corporate-identifiers-add.md)
+#### [多重要素驗證](multi-factor-authentication.md)
 #### [裝置註冊管理員](device-enrollment-manager-enroll.md)
 #### [將裝置對應到群組](device-group-mapping.md)
 ### 設定 Windows 註冊
@@ -291,7 +292,7 @@
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune 資料倉儲 API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [使用 REST 用戶端從資料倉儲 API 取得資料](reports-proc-data-rest.md)
 ### [資料倉儲 API 端點](reports-api-url.md)
 ### [資料倉儲資料模型](reports-ref-data-model.md)
 #### [日期實體的參考](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [裝置實體的參考](reports-ref-devices.md)
 #### [應用程式實體的參考](reports-ref-application.md)
 #### [原則實體的參考](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [詞彙](intune-glossary.md)
