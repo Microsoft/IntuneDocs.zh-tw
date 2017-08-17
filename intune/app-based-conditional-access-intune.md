@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>搭配 Intune 使用以應用程式為基礎的條件式存取
 
@@ -36,8 +36,10 @@ ms.lasthandoff: 07/01/2017
 ## <a name="prerequisites"></a>必要條件
 在您建立以應用程式為基礎的條件式存取原則之前，必須擁有：
 
-- **Enterprise Mobility + Security 或 Azure Active Directory Premium 訂閱**，且使用者必須獲 EMS 或 Azure AD 授權。
-    - 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
+- **Enterprise Mobility + Security (EMS)** 或 **Azure Active Directory (AD) Premium 訂用帳戶**
+- 使用者必須獲得 EMS 或 Azure AD 的授權
+
+如需詳細資訊，請參閱 [Enterprise Mobility 定價](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 ## <a name="supported-apps"></a>支援的應用程式
 
@@ -53,24 +55,22 @@ ms.lasthandoff: 07/01/2017
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > 以應用程式為基礎的條件式存取[也支援 LOB 應用程式](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)，但這些應用程式需使用 [Office 365 新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)。
+以應用程式為基礎的條件式存取[也支援企業營運 (LOB) 應用程式](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)，但這些應用程式需使用 [Office 365 新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)。
 
 ## <a name="how-app-based-conditional-access-works"></a>以應用程式為基礎的條件式存取如何運作
 
 在這個範例中，系統管理員已經將應用程式保護原則套用至 Outlook 應用程式，接著套用條件式存取規則，將 Outlook 應用程式新增到可在存取公司電子郵件時使用之應用程式的核准清單中。
 
-> [!NOTE] 
+> [!NOTE]
 > 下方的流程圖結構可以用於其他受管理的應用程式。
 
-![以應用程式為基礎的條件式存取與 Intune 流程圖](./media/ca-intune-common-ways-3.png)
+![搭配 Intune 流程圖使用以應用程式為基礎的條件式存取](./media/ca-intune-common-ways-3.png)
 
 1.  使用者嘗試從 Outlook 應用程式向 Azure AD 驗證。
 
 2.  在第一次嘗試驗證時，系統會將使用者重新導向至應用程式市集，以安裝訊息代理程式應用程式。 訊息代理程式應用程式可以是適用於 iOS 的 Microsoft 驗證器，或適用於 Android 裝置的 Microsoft 公司入口網站。
 
-    > [!NOTE]
-    > 在這個案例中，如果使用者嘗試使用原生電子郵件應用程式，系統會將他們重新導向至應用程式市集，然後安裝 Outlook 應用程式。
+ 如果使用者嘗試使用原生電子郵件應用程式，系統會將他們重新導向至應用程式市集，然後安裝 Outlook 應用程式。
 
 3.  會在裝置上安裝訊息代理程式應用程式。
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 07/01/2017
 
 6.  訊息代理程式應用程式會在使用者驗證程序中，將應用程式用戶端識別碼傳送至 Azure AD，以檢查該應用程式是否在原則核准的清單中。
 
-7.  Azure AD 可允許使用者依據原則核准的清單驗證及使用應用程式。 如果應用程式不在原則核准的清單中，Azure AD 會拒絕存取應用程式。
+7.  Azure AD 可允許使用者依據原則核准的清單驗證及使用應用程式。 如果應用程式不在清單中，Azure AD 會拒絕存取應用程式。
 
 8.  Outlook 應用程式會與 Outlook 雲端服務通訊，以起始和 Exchange Online 的通訊。
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>使用 Intune 在整合了 Microsoft PIN 重設服務的 Windows 裝置上重設密碼
 
 與 Microsoft Pin 重設服務整合的 Windows 裝置重設密碼功能，能讓您為執行 Windows 10 行動裝置版的裝置產生新的密碼。 這些裝置必須執行 Windows 10 Creators Update 或更新版本。
+
+## <a name="supported-platforms"></a>支援的平台
+
+- Windows - 支援 Windows 10 Creators Update 和更新版本 (已加入 Azure AD)
+- Windows Phone - 不支援
+- iOS - 不支援
+- macOS - 不支援
+- Android - 不支援
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -43,10 +51,11 @@ ms.lasthandoff: 07/06/2017
 若要在您管理的 Windows 裝置上設定 PIN 重設，請使用 [Intune Windows 10 自訂裝置原則](custom-settings-windows-10.md)啟用功能。 使用下列 Windows 原則設定服務提供者 (CSP) 設定原則：
 
 
-- **使用者為** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **裝置為** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **裝置為** - **./Device/Vendor/MSFT/PassportForWork/<租用戶識別碼>**/Policies/EnablePinRecovery**
 
-這些 CSP 的值必須都設為 **True**。
+<租用戶識別碼>是指您的 Azure Active Directory，您可以從 Azure Active Directory 的 [屬性] 頁面取得 Directory 識別碼。
+
+針對此 CSP 將值設定為 **True**。
 
 ## <a name="steps-to-reset-the-passcode"></a>重設密碼的步驟
 

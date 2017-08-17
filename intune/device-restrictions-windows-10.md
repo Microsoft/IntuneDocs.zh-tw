@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="privacy"></a>隱私權
 
--   **輸入個人化** – 不允許為 Cortana、聽寫或 Windows 市集應用程式使用雲端式語音服務。 如果您允許使用這些服務，Microsoft 可能會收集語音資料來改進服務。
+-   **輸入個人化** - 不允許為 Cortana、聽寫或 Microsoft 網上商店應用程式使用雲端式語音服務。 如果您允許使用這些服務，Microsoft 可能會收集語音資料來改進服務。
 -   **自動接受配對及隱私權使用者同意提示** – 允許 Windows 在執行應用程式時，自動接受配對及隱私權同意訊息。
 
 
@@ -91,12 +91,12 @@ ms.lasthandoff: 08/03/2017
 ## <a name="app-store"></a>App Store
 
 -   **App Store (僅限行動裝置)** - 啟用或封鎖在 Windows 10 行動裝置上使用 App Store。
--   **自動更新來自市集的應用程式** - 允許自動更新從 Windows 市集安裝的應用程式。
+-   **自動更新來自市集的應用程式** - 允許自動更新從 Microsoft 網上商店安裝的應用程式。
 -   **安裝信任的應用程式** - 允許側載使用受信任憑證簽署的應用程式。
 -   **開發人員解除鎖定** - 允許 Windows 開發人員設定，例如允許使用者修改側載應用程式。
 -   **共用的使用者應用程式資料** - 允許應用程式在相同裝置上的不同使用者之間共用資料。
 -   **僅使用私人市集** - 啟用此設定以僅允許使用者從您的私人市集下載應用程式。
--   **啟動來自市集的應用程式** - 用來停用預先安裝於裝置上，或是從 Windows 市集下載的所有應用程式。
+-   **啟動來自市集的應用程式** - 用來停用預先安裝於裝置上，或是從 Microsoft 網上商店下載的所有應用程式。
 -   **將應用程式資料安裝在系統磁碟區** - 阻止應用程式將資料儲存在裝置的系統磁碟區上。
 -   **將應用程式安裝在系統磁碟機** - 阻止應用程式將資料儲存在裝置的系統磁碟機上。
 -   **遊戲 DVR (僅限桌面版)** - 設定是否允許錄製和廣播遊戲。

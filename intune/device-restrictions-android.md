@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung KNOX Standard 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 搭配 Android 裝置限制原則使用這些設定，來設定您組織中的裝置。
+
+>[!TIP]
+>如果沒有您想要的設定，您可以使用[自訂設定檔](custom-settings-android.md)來設定裝置。 
 
 ## <a name="general"></a>一般
 
@@ -132,3 +135,8 @@ Kiosk 設定僅適用於 Samsung KNOX Standard 裝置。
     - **新增受管理的應用程式**。
 - **螢幕睡眠按鈕** - 啟用或停用裝置上的喚醒螢幕睡眠按鈕。
 - **音量按鈕** - 啟用或停用裝置上的音量按鈕。
+
+
+## <a name="next-steps"></a>後續步驟
+
+繼續使用[如何設定裝置限制設定](device-restrictions-configure.md)中的指示建立裝置限制設定檔，然後進行指派。

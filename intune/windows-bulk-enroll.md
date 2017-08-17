@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 67af5f6545a0ef4a833c6f709fc4685de7f64113
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -37,7 +37,7 @@ Window 裝置大量註冊需要下列事項：
 
 ## <a name="create-a-provisioning-package"></a>建立佈建套件
 
-1. 從 Windows 市集下載 [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
+1. 從 Microsoft 網上商店下載 [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
 ![Windows Configuration Designer 應用程式在市集中之螢幕擷取畫面和描述的螢幕擷取畫面](media/bulk-enroll-store.png)
 
 2. 開啟 **Windows Configuration Designer** 應用程式並選取 [Provision desktop devices (佈建電腦裝置)]。

@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -87,7 +87,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 
 ### <a name="monitor"></a>監視
 - **授權的應用程式** - 檢視、指派及監視從應用程式市集大量採購的應用程式。
-    - [商務用 Windows 市集大量採購應用程式](windows-store-for-business.md)
+    - [商務用 Microsoft 網上商店大量採購應用程式](windows-store-for-business.md)
 - **探索應用程式** - 顯示 Intune 指派並安裝在裝置上的所有應用程式。
 - **應用程式安裝狀態** - 顯示您所建立之應用程式指派的狀態。
 - **應用程式保護狀態** - 顯示您選取之使用者的應用程式保護原則狀態。
@@ -97,7 +97,7 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **商務用 Windows 市集** - 設定對商務用 Windows 市集的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。
-    - [商務用 Windows 市集大量採購應用程式](windows-store-for-business.md)
+- **商務用 Microsoft 網上商店** - 設定對商務用 Microsoft 網上商店的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。
+    - [商務用 Microsoft 網上商店大量採購應用程式](windows-store-for-business.md)
 - **公司入口網站品牌** - 自訂公司入口網站以顯示您公司的品牌。
     - [公司入口網站設定](company-portal-app.md)

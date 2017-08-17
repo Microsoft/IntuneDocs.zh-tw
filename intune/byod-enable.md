@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>使用 Intune 來啟用 BYOD
 
@@ -75,14 +75,14 @@ Intune 也可在您於異地工作時，協助您控制及保護對內部部署�
 * [將市集應用程式傳遞給受管理的裝置](apps-deploy.md)
 * 使用公司入口網站，將應用程式目標設為未受管理的裝置
 
-Intune 也可讓管理及部署您從 iOS 應用程式市集和商務用 Windows 市集所大量購買的應用程式。 這可協助您降低追蹤大量採購應用程式的管理負荷。
+Intune 也可讓您管理及部署從 iOS 應用程式市集和商務用 Microsoft 網上商店所大量購買的應用程式。 這可協助您降低追蹤大量採購應用程式的管理負荷。
 
 > [!TIP]
 > 您可以[使用 Azure AD Connect 設定單一登入 (SSO) ](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。 SSO 可讓使用者利用內部部署所使用的網域使用者名稱和密碼來登入應用程式。 此外，您還可以使用 Azure Active Directory 應用程式 Proxy，[為內部部署裝載的 Web 應用程式提供網際網路存取](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)。
 
 -   [管理大量採購的 iOS 裝置應用程式](vpp-apps-ios.md)。 您可以透過 [Apple 商務適用的大量採購方案](http://www.apple.com/business/vpp/)購買多個 iOS 應用程式的授權。 您需要從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。 您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
 
--   [管理您從商務用 Windows 市集購買的應用程式](windows-store-for-business.md)。 [商務用 Windows 市集](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 透過連接市集與 Intune，可讓您從 Intune 入口網站管理大量採購的應用程式。
+-   [管理您從商務用 Microsoft 網上商店購買的應用程式](windows-store-for-business.md)。 [商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 透過連接市集與 Intune，可讓您從 Intune 入口網站管理大量採購的應用程式。
 
 ## <a name="protect-company-data"></a>保護公司資料
 
@@ -105,10 +105,10 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 
 使用 [Windows 資訊保護 (WIP) 原則](app-protection-policies-configure-windows-10.md)，可為受管理的 Windows 10 裝置執行相同動作。 這些原則的運作不會干擾員工的體驗。 它們不需要變更您的網路環境或其他應用程式。
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>抹除公司資料，但是完整保留個人資料
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>移除公司資料，但完整保留個人資料
 
-當裝置不再用於工作、要重新決定用途或只是遺失時，您可以從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的選擇性抹除和完整抹除功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端抹除這些裝置。
+當裝置不再用於工作、要重新決定用途或只是遺失時，您可以從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的移除公司資料和恢復出廠預設值功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端重設這些裝置。
 
-[完整抹除](devices-wipe.md)會將裝置還原為其原廠預設值，並移除使用者資料和設定。 [選擇性抹除](devices-wipe.md#selective-wipe)只會從裝置移除公司資料，而保留使用者的個人資料。
+[恢復出廠預設值](devices-wipe.md)會將裝置還原為其出廠預設值、移除使用者資料和設定，並從 Intune 管理項目移除裝置。 [移除公司資料](devices-wipe.md#remove-company-data)只會從裝置移除公司資料，但完整保留使用者的個人資料。
 
-只要一啟動，裝置就會立即開始要從管理移除的選擇性抹除程序。 當程序完成時，會刪除所有的公司資料，並從 Intune 入口網站中移除裝置名稱。 這會結束裝置管理生命週期。
+只要一啟動，裝置就會立即開始重設程序。 當程序完成時，會刪除所有的公司資料，並從 Intune 移除裝置名稱。 這會結束裝置管理生命週期。

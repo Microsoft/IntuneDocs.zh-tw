@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f55d99ccf2fb5263ac9c7e0c4c8d0db8208456f5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 90ce9ae6c1f48b6a42cf62f8873621499ba05256
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Intune 傳統主控台的新功能 - 前幾個月
 
@@ -232,8 +232,8 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 
 您可以在 [UI updates for Intune end user apps](whats-new-app-ui.md) (Intune 終端使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
 
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>商務用 Windows 市集的相關多重管理工具 <!--926135-->
-如果您使用多種管理工具來部署商務用 Windows 市集應用程式，以前只能建立其中一種與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>商務用 Microsoft 網上商店的相關多重管理工具 <!--926135-->
+如果您使用多種管理工具來部署商務用 Microsoft 網上商店應用程式，以前只能建立與其中一種與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 管理體驗公開預覽新功能<!--736542-->
 
@@ -346,7 +346,7 @@ __Android 上不再支援 Intune AV Player、Image Viewer 和 PDF Viewer 應用�
 
 __可供 Windows 10 裝置使用的新 Microsoft Intune 公司入口網站__  Microsoft 已經發行 [Windows 10 裝置適用的新 Microsoft Intune 公司入口網站應用程式](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 利用新的 Windows 10 通用格式的此應用程式，會為使用者提供應用程式內更新的使用者體驗，以及所有 Windows 10 裝置、電腦和類似行動裝置的相同體驗，同時啟用他們目前仍在使用的相同功能。
 
-新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Windows 市集安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
+新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Microsoft 網上商店安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
 > __在 Intune 和 Android for Work 上的更新__ 雖然您可以用__必要__動作部署 Android for Work 應用程式，但如果您已將 Intune 群組移轉至新的 Azure AD 群組，就只能將應用程式部署為__可用__。

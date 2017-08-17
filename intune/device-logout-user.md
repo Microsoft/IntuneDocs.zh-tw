@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>在 Intune 管理的 iOS 裝置上登出目前的使用者
 
@@ -26,7 +26,17 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-[登出目前的使用者] 動作會在已使用 [iOS 教育設定檔](education-settings-configure-ios.md)進行設定，以管理 iOS Classroom 應用程式的共用 iPad 裝置上，將目前的使用者登出。 
+[登出目前的使用者] 動作會在使用 [iOS 教育設定檔](education-settings-configure-ios.md)進行設定，以管理 iOS Classroom 應用程式的共用 iPad 裝置上，將目前的使用者登出。 
+
+## <a name="supported-platforms"></a>支援的平台
+
+- Windows - 不支援
+- Windows Phone - 不支援
+- iOS - 支援 iOS 9.3 和更新版本 (僅限共用的 iPad 裝置)
+- macOS - 不支援
+- Android - 不支援
+
+## <a name="how-to-logout-the-current-user"></a>如何登出目前的使用者
 
 1.  登入 Azure 入口網站。
 2.  選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。

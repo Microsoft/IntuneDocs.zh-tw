@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -159,7 +159,7 @@ ms.lasthandoff: 07/17/2017
 |錯誤訊息|問題|解決方法|
 |---|---|---|
 |**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 請向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型錯誤，不能用於指定的行動裝置管理授權單位。 例如，如果已指定 Intune 做為行動裝置管理授權單位，而他們使用的是 System Center 2012 R2 Configuration Manager 授權，他們就會發現這個錯誤。<br><br>相關資訊請參閱如何[將 Intune 授權指派給使用者帳戶](/intune/licenses-assign.md)。
-|**IT 管理員需要設定 MDM 授權單位<br>您的 IT 管理員似乎尚未設定 MDM 授權單位。 請向您的 IT 管理員尋求協助，或稍後再試。|尚未定義行動裝置管理授權單位。|尚未在 Intune 中指定行動裝置管理授權單位。 如需相關資訊，請參閱如何[設定行動裝置管理授權單位](/intune/mdm-authority-set.md)。|
+|**IT 系統管理員需要設定 MDM 授權單位**<br>您的 IT 管理員似乎尚未設定 MDM 授權單位。 請向您的 IT 管理員尋求協助，或稍後再試。|尚未定義行動裝置管理授權單位。|尚未在 Intune 中指定行動裝置管理授權單位。 如需相關資訊，請參閱如何[設定行動裝置管理授權單位](/intune/mdm-authority-set.md)。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」

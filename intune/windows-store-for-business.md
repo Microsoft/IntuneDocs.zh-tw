@@ -1,7 +1,7 @@
 ---
-title: "從商務用 Windows 市集管理應用程式"
+title: "管理來自商務用 Microsoft 網上商店的應用程式"
 titleSuffix: Intune on Azure
-description: "了解如何將應用程式從商務用 Windows 市集同步到 Intune，然後加以指派及追蹤。"
+description: "了解如何將應用程式從商務用 Microsoft 網上商店同步到 Intune，然後加以指派及追蹤。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de6ed7623e33a50bdf8452cbf1bad9c648b13d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理購自商務用 Windows 市集的應用程式
+# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-[商務用 Windows 市集](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找和購買應用程式。 連接市集與 Microsoft Intune 可讓您從 Intune 入口網站管理大量採購的應用程式。 例如：
+[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，您就可以從 Intune 入口網站管理大量採購的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
 * 經過同步的應用程式會出現在 Intune 系統管理主控台；一如其他應用程式，您也可以指派這些應用程式。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
@@ -34,25 +34,25 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="before-you-start"></a>開始之前
 
-從商務用 Windows 市集開始同步處理及指派應用程式之前，請先檢閱下列資訊︰
+從商務用 Microsoft 網上商店開始同步及指派應用程式之前，請檢閱下列資訊：
 
 - 將 Intune 設定為組織的行動裝置管理授權單位。
-- 您必須已在商務用 Windows 市集註冊帳戶。
+- 您必須已在商務用 Microsoft 網上商店註冊帳戶。
 - 一旦您將 Intune 與企業用 Windows 市集帳戶建立關聯，未來將無法變更為不同帳戶。
-- 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Windows 市集同步。
-- Intune 會同步處理您透過商務用 Windows 市集購買的線上和離線授權應用程式。
+- 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Microsoft 網上商店同步處理。
+- Intune 會同步處理您透過商務用 Microsoft 網上商店購買的線上和離線授權應用程式。
 - 只有免費的離線應用程式才能同步處理至 Intune。
 - 裝置必須加入 Active Directory Domain Services 或工作場所，才能使用此功能。
 - 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
 
-## <a name="associate-your-windows-store-for-business-account-with-intune"></a>將您的商務用 Windows 市集帳戶與 Intune 相關聯
+## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>建立您的商務用 Microsoft 網上商店帳戶與 Intune 的關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
 1. 請確定使用您用來登入 Intune 的相同租用戶帳戶來登入商務用市集。
 2. 在商務用市集中，選擇 **[設定]** > **[管理工具]**。
 3. 在 [管理工具] 頁面上，選擇 **[Add a management tool (新增管理工具)]**，然後選擇 **[Microsoft Intune]**。
 
 > [!NOTE]
-> 您先前可能只建立了某個用來指派應用程式的管理工具與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
+> 您先前可能只建立了某個用來指派應用程式的管理工具與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
@@ -61,16 +61,16 @@ ms.lasthandoff: 07/01/2017
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-1. 在 [行動應用程式] 刀鋒視窗中選擇 [安裝]  >  [商務用 Windows 市集]。
+1. 在 [Mobile Apps] 刀鋒視窗中選擇 [安裝] > [商務用 Microsoft 網上商店]。
 2. 按一下 [啟用]。
-3. 若還未執行此動作，請依照前文所述按一下連結來註冊商務用 Windows 市集並關聯您的帳戶。
-5. 從 [語言] 下拉式清單中，選擇商務用 Windows 市集應用程式在 Intune 主控台中的顯示語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
-6. 按一下 [同步]，以取得您從 Windows 市集購買的應用程式，將其同步到 Intune。
+3. 若還未執行此動作，請遵循前文所述按一下連結來註冊商務用 Microsoft 網上商店並關聯您的帳戶。
+5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店的應用程式在 Intune 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
+6. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
 
 ## <a name="synchronize-apps"></a>同步處理應用程式
 
-1. 在 [行動應用程式] 工作負載中，選擇 [安裝] > [商務用 Windows 市集]。
-2. 按一下 [同步]，以取得您從 Windows 市集購買的應用程式，將其同步到 Intune。
+1. 在 [Mobile Apps] 工作負載中，選擇 [安裝] > [商務用 Microsoft 網上商店]。
+2. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
 
 ## <a name="assign-apps"></a>指派應用程式
 
@@ -80,9 +80,9 @@ ms.lasthandoff: 07/01/2017
 離線應用程式可以針對裝置上的特定使用者或裝置上的所有使用者進行安裝。 
 
 
-當您部署商務用 Windows 市集應用程式時，安裝該應用程式的每位使用者都會佔用一個授權。 如果您對某個已指派的應用程式使用了所有可用的授權，則無法再指派任何複本。 請採取下列其中一個動作：
+當您指派商務用 Microsoft 網上商店應用程式時，安裝應用程式的每個使用者會使用一個授權。 如果您對某個已指派的應用程式使用了所有可用的授權，則無法再指派任何複本。 請採取下列其中一個動作：
 * 從某些裝置解除安裝應用程式。
 * 將目前指派的範圍減少，僅以您擁有足夠授權的使用者為目標。
-* 從商務用 Windows 市集購買更多份應用程式。
+* 從商務用 Microsoft 網上商店購買更多份應用程式。
 
 

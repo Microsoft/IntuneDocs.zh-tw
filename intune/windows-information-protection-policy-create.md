@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-從 Intune 1704 版開始，您可以在行動應用程式管理 (MAM) 中搭配 Windows 10 使用應用程式保護原則，而不需要註冊。
+從 Intune 1704 版開始，您可以搭配 Windows 10 使用應用程式保護原則，不用註冊即可保護應用程式。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -39,17 +39,15 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="types-of-apps"></a>應用程式類型
 
--   **建議的應用程式︰**此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓系統管理員輕鬆匯入原則。
+-   **建議的應用程式︰**此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓您輕鬆匯入原則。 <!---I really don't know what you mean by "easily import into policy"--->
 
--   **市集應用程式︰**系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
+-   **市集應用程式︰**您可以將 Windows 市集中的任何應用程式新增至原則。
 
--   **Windows 傳統型應用程式︰**系統管理員可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 exe、dll 等)。
+-   **Windows 傳統型應用程式︰**您可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 .exe、.dll)。
 
 ## <a name="pre-requisites"></a>必要條件
 
-您需要先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。
-
--   深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
+您需要先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
 
 此外，您也需要下列各項：
 
@@ -58,12 +56,13 @@ ms.lasthandoff: 07/01/2017
 
 > [!IMPORTANT]
 > WIP 不支援多重身分識別，一次只能存在一個受管理的身分識別。
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>新增 WIP 原則
 
-當您在組織中設定 Intune 之後，就可以透過 [Azure 入口網站](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)建立 WIP 特定原則。
+當您在組織中設定 Intune 之後，就可以透過 [Azure 入口網站](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)建立 WIP 特定原則。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  移至 [Intune 行動應用程式管理儀表板]，選擇 [所有設定]，然後選擇 [應用程式原則]。
+1.  移至 [Intune 行動應用程式管理儀表板]，選擇 [所有設定] > [應用程式原則]。
 
 2.  在 [應用程式原則] 刀鋒視窗中，選擇 [新增原則]，然後輸入下列值：
 
@@ -120,65 +119,64 @@ ms.lasthandoff: 07/01/2017
 > [!NOTE]
 > 若要同時新增多個**傳統型應用程式**，可以按一下應用程式資料列結尾的功能表 **(…)**，然後繼續新增更多應用程式。 完成後，選擇 [確定]。
 
-## <a name="windows-information-protection-wip-learning"></a>Windows 資訊保護 (WIP) 學習
-
+## <a name="wip-learning"></a>WIP 學習
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 在您新增要使用 WIP 來保護的應用程式之後，需要使用「WIP 學習」來套用保護模式。
 
 ### <a name="before-you-begin"></a>開始之前
 
-Windows 資訊保護 (WIP) 學習是一種報告，可讓系統管理員監視其 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 系統管理員強制 WIP 使用「隱藏覆寫」模式之前，可以從報告匯出這些應用程式，然後將這些應用程式新增到 WIP 原則，以避免造成生產力中斷。
+WIP 學習是一種報表，可讓您監視 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「隱藏覆寫」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
 
 您應該利用一小群使用者來驗證允許的應用程式清單中是否有正確的應用程式。驗證時，建議先使用「無訊息」或「允許覆寫」模式。 完成之後，您就可以變更為最終強制原則「隱藏覆寫」。
 
-#### <a name="what-the-protection-modes-are"></a>什麼是保護模式？
+### <a name="what-are-the-protection-modes"></a>什麼是保護模式？
 
-- **隱藏覆寫：**
-    - WIP 會尋找不適當的資料共用做法，並阻止使用者完成動作。
-    - 這可能包括與未受公司保護的應用程式共用資料，以及與組織以外的人員或裝置共用公司資料。
-<br></br>
+#### <a name="hide-overrides"></a>隱藏覆寫
+WIP 會尋找不適當的資料共用做法，並阻止使用者完成動作。 這可能包括與未受公司保護的應用程式共用資料，以及與組織以外的人員或裝置共用公司資料。
 
-- **允許覆寫：**
-    - WIP 會尋找不適當的資料共用，並在使用者執行某些可能不安全的動作時警告使用者。
-    - 不過，此模式可讓使用者覆寫原則並共用資料，但是會將動作記錄到稽核記錄中。
-<br></br>
-- **無訊息：**
-    - WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封鎖在「允許覆寫」模式中可能會提示員工互動的任何動作。
-    - 此模式仍然會停止不允許的動作，例如，應用程式以不適當的方式嘗試存取網路資源或受 WIP 保護的資料。
-<br></br>
-- **關閉 (不建議使用)：**
-    - 此模式會關閉 WIP，因此不會協助保護或稽核資料。
-    - 關閉 WIP 之後，系統會嘗試將本機連接之磁碟機上任何 WIP 標記的檔案解密。 請注意，如果您再次開啟 WIP 保護，不會自動套用先前的解密和原則資訊。
+#### <a name="allow-overrides"></a>允許覆寫
+WIP 會尋找不適當的資料共用，並在使用者執行某些可能不安全的動作時警告使用者。 不過，此模式可讓使用者覆寫原則並共用資料，但是會將動作記錄到稽核記錄中。
 
-### <a name="to-add-a-protection-mode"></a>新增保護模式
+#### <a name="silent"></a>無訊息
+WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封鎖在「允許覆寫」模式中可能會提示員工互動的任何動作。 此模式仍然會停止不允許的動作，例如，應用程式以不適當的方式嘗試存取網路資源或受 WIP 保護的資料。
 
-1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後從 [新增原則] 刀鋒視窗按一下 [必要設定]。
+#### <a name="off-not-recommended"></a>關閉 (不建議使用)
+此模式會關閉 WIP，因此不會協助保護或稽核資料。
+
+關閉 WIP 之後，系統會嘗試將本機連接之磁碟機上任何 WIP 標記的檔案解密。 請注意，如果您再次開啟 WIP 保護，不會自動套用先前的解密和原則資訊。
+
+### <a name="add-a-protection-mode"></a>新增保護模式
+
+1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後選擇 [Required settings] (必要設定)。
 
     ![學習模式的螢幕擷取畫面](./media/learning-mode-sc1.png)
 
 1.  選擇 [儲存]。
 
-### <a name="to-use-wip-learning"></a>使用 WIP 學習
+### <a name="use-wip-learning"></a>使用 WIP 學習
 
-1. 移至 Azure 儀表板。
+1. 移至 Azure 儀表板。 <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. 選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
 
 3. 選擇 [Intune]，隨即開啟 [Intune 儀表板]，然後選擇 [行動應用程式]。
 
-4. 選擇 [監視] 區段之下的 [WIP 學習]。 您會看到 WIP 學習所記錄的未知應用程式。
+4. 選擇 [監視] 下的 [WIP 學習]。 您會看到 WIP 學習所記錄的未知應用程式。
 
 > [!IMPORTANT]
 > 您可以根據 WIP 學習記錄報告中顯示的應用程式，將這些應用程式加入應用程式保護原則。
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>部署 WIP 應用程式保護原則
+## <a name="deploy-your-wip-app-protection-policy"></a>部署 WIP 應用程式保護原則
 
 > [!IMPORTANT]
-> 這適用於 WIP 搭配行動應用程式管理 (MAM) 而不需要註冊的情況。
+> 這適用於不註冊裝置的 WIP。
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 建立 WIP 應用程式保護原則之後，您需要使用 MAM 將它部署到組織。
 
-1.  在 [應用程式原則] 刀鋒視窗上，選擇您新建立的應用程式保護原則，然後依序選擇 [使用者群組]、[新增使用者群組]。
+1.  在 [應用程式原則] 刀鋒視窗上，選擇您新建立的應用程式保護原則，然後選擇 [使用者群組] > [新增使用者群組]。
 
     [新增使用者群組] 刀鋒視窗中隨即會開啟使用者群組清單，此清單由 Azure Active Directory 中的所有安全性群組所組成。
 
-1.  選擇您要套用原則的群組，然後按一下 [選取] 來部署原則。
+1.  選擇您要套用原則的群組，然後選擇 [選取] 來部署原則。

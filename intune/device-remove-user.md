@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ed66c47215a9e1c1ab28f2e30a3663d0287869d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 00f5898d0f2cc167a66026dd108d6bbd54c39cec
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>使用 Intune 從共用的 iOS 裝置中移除使用者
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 [移除使用者] 動作會在已使用 [iOS 教育設定檔](education-settings-configure-ios.md)進行設定，以管理 iOS Classroom 應用程式的共用 iPad 裝置上，將您選擇的使用者從本機快取中刪除。 
+
+## <a name="supported-platforms"></a>支援的平台
+
+- Windows - 不支援
+- Windows Phone - 不支援
+- iOS - 支援 iOS 9.3 和更新版本 (僅限共用的 iPad 裝置)
+- macOS - 不支援
+- Android - 不支援
+
+## <a name="how-to-remove-a-user"></a>如何移除使用者
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
