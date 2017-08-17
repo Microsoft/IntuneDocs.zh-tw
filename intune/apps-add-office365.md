@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
 
@@ -36,6 +36,7 @@ ms.lasthandoff: 08/03/2017
 - 如果在 Intune 安裝應用程式套件時有任何 Office 應用程式是開啟的，使用者未儲存的檔案可能會遺失資料。
 - Windows 10S 裝置不支援此安裝方法。
 - 如果您將此應用程式類型指派為 [可用]，並使用不同指派以多位使用者為目標，這些使用者只會看到最近設為目標的指派。
+- Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Windows 市集的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
 
 
 ## <a name="get-started"></a>開始使用

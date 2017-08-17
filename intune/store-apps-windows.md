@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何將 Windows 市集應用程式新增至 Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>手動指派 Windows 10 公司入口網站應用程式
-終端使用者可以從 Windows 市集安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果因企業需求而必須指派公司入口網站應用程式，即使尚未整合 Intune 與商務用 Windows 市集，您仍然可直接從 Intune 手動指派 Windows 10 公司入口網站應用程式。
+終端使用者可以從 Microsoft 網上商店安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果因企業需求而必須指派公司入口網站應用程式，即使尚未整合 Intune 與商務用 Microsoft 網上商店，您仍然可直接從 Intune 手動指派 Windows 10 公司入口網站應用程式。
 
  > [!NOTE]
  > 這個選項將需要在每次應用程式發行更新時，指派手動更新。
 
-1. 在[商務用 Windows 市集](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
+1. 在[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
 2. 取得應用程式之後，在 [詳細目錄] 頁面中選取該應用程式。  
 3. 在 [平台] 選取 [Windows 10 所有裝置]，然後選取適當的 [架構] 並下載。 此應用程式不需要應用程式授權檔案。
 ![Windows 10 所有裝置和供下載之 X86 架構套件詳細資料的圖片](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ ms.lasthandoff: 07/01/2017
 以下是以這種方式簽署和指派應用程式的方法：
 
 1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載 Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請前往 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
-2. 從商務用 Windows 市集下載 Windows 10 公司入口網站應用程式，詳如前述。  
+2. 從商務用 Microsoft 網上商店下載 Windows 10 公司入口網站應用程式，詳如前述。  
 3. 搭配輸入參數執行詳載於指令碼標頭內的指令碼，簽署 Windows 10 公司入口網站應用程式 (摘錄於下)。 相依性不需要傳遞至指令碼。 這些只有在將應用程式上傳至 Intune 管理主控台時才需要。
 
 |參數 | 說明|

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 45a3a8fe4960cc1bb8c5f2150f57d34d59c08e0a
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的自訂設定
 
@@ -40,3 +40,13 @@ ms.lasthandoff: 07/01/2017
     - **OMA-URI** - 指定您想要為其提供設定的 OMA-URI。
     - **值** - 輸入要與您所輸入之 OMA-URI 相關聯的值。
 4. 完成設定之後，請按一下 [確定]，然後再視需要新增更多設定。
+
+## <a name="next-steps"></a>後續步驟
+
+當您完成設定時，設定檔會隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+
+如需您可以使用之自訂設定的一些範例，請參閱：
+
+- [使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔](/intune/wi-fi-profile-shared-key)
+- [使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](/intune/android-pulse-secure-per-app-vpn)
+- [使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式](/intune/samsung-knox-apps-allow-block)

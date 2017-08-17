@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受監督的 iOS 裝置上略過啟用鎖定
 
@@ -39,23 +39,23 @@ Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 8.0 和更�
 - 您需要一份啟用鎖定已啟用之所有裝置的報表。
 - 在重新整理組織中的裝置期間，您想要將某些裝置重新指派給不同的部門。 您只能重新指派啟用鎖定未啟用的裝置。
 
-為了協助解決這些問題，Apple 在 iOS 7.1 中引進了啟用鎖定略過。 這可讓您從沒有使用者的 Apple ID 和密碼的受監督裝置移除啟用鎖定。 受監督的裝置會產生裝置特定啟用鎖定略過碼，並儲存在 Apple 啟用伺服器上。
+為了協助解決這些問題，Apple 在 iOS 7.1 中引進了啟用鎖定略過。 啟用鎖定略過可讓您從沒有使用者的 Apple ID 和密碼的受監督裝置移除啟用鎖定。 受監督的裝置會產生裝置特定啟用鎖定略過碼，並儲存在 Apple 啟用伺服器上。
 
 >[!TIP]
->iOS 裝置的受監督模式可讓您使用 Apple Configurator 鎖定裝置，並將功能限制在特定商務用途。 受監督的模式通常僅適用於屬公司擁有的裝置。
+>iOS 裝置的受監督模式可讓您使用 Apple Configurator 鎖定裝置，並將功能限制在特定商務用途。 受監督的模式僅用於屬公司擁有的裝置。
 
 您可以在 [Apple 網站](https://support.apple.com/HT201365) \(英文\) 上深入了解「啟用鎖定」。
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune 如何協助您管理啟用鎖定
 Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖定狀態。 僅針對受監督的裝置，Intune 可以擷取啟用鎖定略過碼並直接發給裝置。 如果已抹除裝置，您可以使用空白使用者名稱和代碼作為密碼，進而直接存取裝置。
 
-**這對公司的好處包括：**
+**使用 Intune 管理啟用鎖定對公司的好處包括：**
 
 - 使用者可以獲得「尋找我的 iPhone」應用程式的安全性優點。
-- 您可以讓使用者執行工作，並讓他知道在需要重新規劃裝置時，您可將裝置淘汰或解除鎖定。
+- 您可以讓使用者執行工作，並使其知道在需要重新規劃裝置時，您可將裝置淘汰或解除鎖定。
 
 ## <a name="before-you-start"></a>開始之前
-在您可以略過裝置上的啟用鎖定之前，必須先啟用它。 若要做到這一點，請執行下列動作：
+在您可以略過裝置上的啟用鎖定之前，必須先遵循下列指示啟用它：
 
 1. 使用[如何設定裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的資訊，來設定適用於 iOS 的 Intune 裝置限制設定檔。
 2. 啟用 [Kiosk] 模式設定 [啟用鎖定]。
@@ -74,5 +74,7 @@ Intune 的**略過啟用鎖定**遠端裝置動作即使沒有使用者的 Apple
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
 4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
 5. 從您管理的裝置清單中，選擇受監督的 iOS 裝置，然後選擇 [略過啟用鎖定] 裝置遠端動作。
+
+## <a name="next-steps"></a>後續步驟
 
 您可以在 [管理裝置] 工作負載中，於裝置的詳細資料頁面上，檢查解除鎖定要求的狀態。

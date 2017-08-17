@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: a09235d53b9340d853dba95299fc5788494ed165
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 07/13/2017
 |**裝置設定檔**|無法使用|可用 <br>[什麼是 Microsoft Intune 裝置設定檔？](https://docs.microsoft.com/intune-azure/configure-devices/what-are-device-profiles)|
 |**無代理程式註冊**|無法使用 |可用<br>[註冊 Windows 裝置](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices)|
 |**軟體更新管理**| Windows Updates 和 Microsoft 應用程式更新<br>[使用軟體更新讓 Windows 電腦維持最新狀態](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Windows 10 和 Microsoft 應用程式更新的商務用 Microsoft 市集<br> [設定商務用 Windows Update 的設定](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**軟體授權管理**|可用 <br>[管理 Windows 電腦軟體的授權合約](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|商務用 Microsoft 市集 (僅限 .appx 應用程式)<br>[管理您從商務用 Windows 市集購買的應用程式](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**軟體授權管理**|可用 <br>[管理 Windows 電腦軟體的授權合約](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|商務用 Microsoft 市集 (僅限 .appx 應用程式)<br>[管理您從商務用 Microsoft 網上商店購買的應用程式](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
 |**清查**|可用 <br>[檢視 Windows 電腦的硬體和軟體清查](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|可用 <br>[如何監視應用程式資訊](https://docs.microsoft.com/intune/apps-monitor)<br>[什麼是裝置管理](https://docs.microsoft.com/intune/device-management)|
 |**Windows 防火牆原則**|可用 <br>[使用 Windows 防火牆原則協助保護 Windows 電腦](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |無法使用|
 |**反惡意程式碼防護**|Endpoint Protection<br>[使用 Endpoint Protection 協助保護 Windows 電腦](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender 設定](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|

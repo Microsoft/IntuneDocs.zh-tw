@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>範例：下載、簽署和部署適用於 Windows 裝置的公司入口網站應用程式
 
-您可以使用 Intune，將公司入口網站應用程式部署到 Windows 裝置 (包括 Windows Phone 和 Windows 10 行動裝置版的裝置)，而不是從 Windows 市集進行安裝。 您必須下載公司入口網站應用程式，並使用您的憑證進行簽署。  只有在您的使用者不會使用公司市集，並且您想要將公司入口網站部署到 Windows Phone 8.1 裝置時，才需要執行這項動作。
+您可以使用 Intune，將公司入口網站應用程式部署到 Windows 裝置 (包括 Windows Phone 和 Windows 10 行動裝置版的裝置)，而不是從 Microsoft 網上商店進行安裝。 您必須下載公司入口網站應用程式，並使用您的憑證進行簽署。  只有在您的使用者不會使用公司市集，並且您想要將公司入口網站部署到 Windows Phone 8.1 裝置時，才需要執行這項動作。
 
 
 1.  **下載公司入口網站**
@@ -75,7 +75,7 @@ ms.lasthandoff: 07/01/2017
 
     -   WinPhoneCompanyPortal.ps1 - PowerShell 指令碼，您可用來簽署公司入口網站應用程式檔案，因此可將它部署到 Windows Phone 8.1 裝置
 
-    或者，您可以從[商務用 Windows 市集](http://businessstore.microsoft.com/)下載 Windows Phone 8.1 公司入口網站 (離線授權套件) 或 Windows 10 公司入口網站 (離線授權套件)。 您必須使用離線授權及下載來供離線使用的適當封裝，來取得公司入口網站應用程式。 選項中的 Windows 8 和 Windows Phone 8 平台清單會參考其 8.1 對應項。 如需如何使用 Intune 執行此作業的相關詳細資訊，請參閱[管理購自商務用 Windows 市集的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)。
+    或者，您可以從[商務用 Microsoft 網上商店](http://businessstore.microsoft.com/)下載 Windows Phone 8.1 公司入口網站 (離線授權套件) 或 Windows 10 公司入口網站 (離線授權套件)。 您必須使用離線授權及下載來供離線使用的適當封裝，來取得公司入口網站應用程式。 選項中的 Windows 8 和 Windows Phone 8 平台清單會參考其 8.1 對應項。 如需如何使用 Intune 執行此作業的詳細資訊，請參閱[管理購自商務用 Microsoft 網上商店的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)。
 
 2.  **下載 Windows Phone SDK** 下載 Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)，並將 SDK 安裝到您的電腦。 您需要有這個 SDK，才能產生應用程式註冊權杖。
 
@@ -144,12 +144,12 @@ ms.lasthandoff: 07/01/2017
 5.  使用新的憑證簽署所有新增及更新的企業營運應用程式。 現有的應用程式無須重新簽署，也無須重新部署。
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>手動部署 Windows 10 公司入口網站應用程式
-即使您還沒有整合 Intune 與商務用 Windows 市集，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。
+即使您還沒有整合 Intune 與商務用 Microsoft 網上商店，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。
 
  > [!NOTE]
  > 這個選項將需要在每次應用程式發行更新時，部署手動更新。
 
-1. 在[商務用 Windows 市集](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
+1. 在[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
 2. 取得應用程式之後，在 [詳細目錄] 頁面中選取該應用程式。  
 3. 在 [平台] 選取 [Windows 10 所有裝置]，然後選取適當的 [架構] 並下載。 此應用程式不需要應用程式授權檔案。
 ![Windows 10 所有裝置和供下載之 X86 架構套件詳細資料的圖片](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ ms.lasthandoff: 07/01/2017
 以下說明如何以此方式簽署和部署應用程式︰
 
 1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載 Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請前往 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
-2. 從商務用 Windows 市集下載 Windows 10 公司入口網站應用程式，詳如前述。  
+2. 從商務用 Microsoft 網上商店下載 Windows 10 公司入口網站應用程式，詳如前述。  
 3. 搭配輸入參數執行詳載於指令碼標頭內的指令碼，簽署 Windows 10 公司入口網站應用程式 (摘錄於下)。 相依性不需要傳遞至指令碼。 這些只有在將應用程式上傳至 Intune 管理主控台時才需要。
 
 |參數 | 說明|

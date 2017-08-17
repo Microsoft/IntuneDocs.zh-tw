@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -49,6 +49,11 @@ Managed Browser 不支援安全通訊端層版本 3 (SSLv3) 密碼編譯通訊�
 -   執行 Android 4 和更新版本的裝置
 
 -   執行 iOS 8.0 和更新版本的裝置
+
+>[!IMPORTANT]
+>自 2017 年 10 月起，Android 應用程式上的 Intune Managed Browser 應用程式只會支援執行 Android 4.4 和更新版本的裝置。 iOS 上的 Intune Managed Browser 應用程式只支援執行 iOS 9.0 及更新版本的裝置。
+>較舊版本的 Android 和 iOS 能夠繼續使用 Managed Browser，但是無法安裝新版的應用程式，而且可能無法存取所有的應用程式功能。 建議您將這些裝置更新為受支援的作業系統版本。
+
 
 Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)開啟網路內容。
 
@@ -84,19 +89,15 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 
 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) 可以一起使用，以支援下列 iOS 和 Android 裝置的使用者案例：
 
-- 使用者下載並登入 Microsoft Outlook 應用程式。  自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用 Managed Browser 應用程式開啟該連結，不用其他瀏覽器。
-Managed Browser 可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者是透過應用程式 Proxy 自動路由，在到達內部網路網站之前，向所有合適的 Multi-Factor Authentication 和條件式存取驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。  
-
-- 遠端使用者開啟 Managed Browser 應用程式，並巡覽至使用內部 URL 的內部網路網站。 Managed Browser 可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者是透過應用程式 Proxy 自動路由，在到達內部網路網站之前，向所有合適的 Multi-Factor Authentication 和條件式存取驗證。
-使用者以前從遠端找不到這個網站，但現在可以存取。  
+- 使用者下載並登入 Microsoft Outlook 應用程式。 自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用 Managed Browser 應用程式開啟該連結，不用其他瀏覽器。 Managed Browser 可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者是透過應用程式 Proxy 自動路由，在到達內部網路網站之前，向所有合適的 Multi-Factor Authentication 和條件式存取驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。
+- 遠端使用者開啟 Managed Browser 應用程式，並巡覽至使用內部 URL 的內部網路網站。 Managed Browser 可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者是透過應用程式 Proxy 自動路由，在到達內部網路網站之前，向所有合適的 Multi-Factor Authentication 和條件式存取驗證。 使用者以前從遠端找不到這個網站，但現在可以存取。
 
 ### <a name="before-you-start"></a>開始之前
 
-- 請確定您的內部應用程式是透過 Azure AD 應用程式 Proxy 發佈的。
-- 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
-- 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
-- Managed Browser 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
-- A 只能看見已指派給它們的應用程式 Proxy 應用程式自動重新導向。
+- 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
+    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
+    - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
+    - Managed Browser 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步驟 1：從 Outlook 啟用自動重新導向至 Managed Browser
 Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web 內容只在 Managed Browser 中顯示**。

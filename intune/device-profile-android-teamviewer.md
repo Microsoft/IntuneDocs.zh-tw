@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: bf25ec3fbdec76fb1defb5e4cb12be6dcdf03b0d
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>對 Intune 管理的 Android 裝置提供遠端協助
 
-Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) \(英文\) 軟體，讓您為執行 Android 裝置的使用者提供遠端協助。 使用本主題中的資訊，讓一切就緒並開始使用。
+Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓您為 Android 裝置的使用者提供遠端協助。 使用本主題中的資訊以開始使用。
 
 ## <a name="before-you-start"></a>開始之前
 
@@ -31,7 +31,7 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) \(�
 
 確認 Azure 入口網站的使用者具有下列指派給他們作為 [Intune 角色](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control)的權限：
 - 若要讓管理員能夠修改 TeamViewer 連接器設定，請授與**更新遠端協助**權限。
-- 若要讓管理員能夠起始新的遠端協助設定，請授與**要求遠端協助**權限。 具有此權限的使用者可以要求起始任何使用者的工作階段；這不會受到任何 Intune 角色指派範圍所限制。 Intune 角色指派範圍不會限制可以對其起始遠端協助要求的裝置或使用者。
+- 若要讓系統管理員能夠起始新的遠端協助要求，請授與**要求遠端協助**權限。 具有**要求遠端協助**權限的使用者可以要求起始任何使用者的工作階段， 而不會受到任何 Intune 角色指派範圍所限制。 Intune 角色指派範圍不會限制可以對其起始遠端協助要求的裝置或使用者。
 
 >[!NOTE]
 >藉由啟用 TeamViewer，您允許適用於 Intune 連接器的 TeamViewer 建立 TeamViewer 工作階段、讀取 Active Directory 資料，以及儲存 TeamViewer 帳戶存取權杖。
@@ -63,9 +63,9 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) \(�
 
 在 TeamViewer 視窗中，您可以在 Android 裝置上執行一連串的遠端動作，包括裝置的遠端控制。 如需您可執行之動作的完整詳細資料，請參閱 [TeamViewer 文件](https://www.teamviewer.com/support/documents/) \(英文\)。
 
-完成時， 請關閉 TeamViewer 視窗。
+完成後，請關閉 TeamViewer 視窗。
 
-## <a name="end-user-notifications"></a>使用者通知
+## <a name="end-user-notifications"></a>終端使用者通知
 
-使用者將在其裝置內的公司入口網站應用程式圖示上看到通知旗標，也會在其開啟應用程式時看到通知。 接著，他們就能接受遠端協助要求。
+終端使用者會在其裝置的公司入口網站應用程式圖示上看到通知旗標，也會在其開啟應用程式時看到通知。 接著，他們就能接受遠端協助要求。
 

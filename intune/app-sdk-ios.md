@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 29911cf5a8fa3488640813efd8f33ee07c951c31
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -465,6 +465,7 @@ BackgroundColor| 字串| 指定啟動畫面和 PIN 畫面的背景色彩。 接�
 ForegroundColor| 字串| 指定啟動畫面和 PIN 畫面的前景色彩，例如文字色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。  | 選擇性。 預設為黑色。 |
 AccentColor | 字串| 指定 PIN 畫面的輔色，例如按鈕文字色彩和方塊醒目提示色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。| 選擇性。 預設為系統藍色。 |
 MAMTelemetryDisabled| 布林值| 指定 SDK 是否不會將任何遙測資料傳送至其後端。| 選擇性。 |
+WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所處理的 URL 配置。 | 如果您的應用程式使用透過連結及 (或) JavaScript 處理 URL 的 WebView，則為必要項。 |  
 
 > [!NOTE]
 > 如果您的應用程式將發行到 App Store，`MAMPolicyRequired` 必須設為 [否]，這是根據 App Store 的標準。

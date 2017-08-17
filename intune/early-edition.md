@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 8/3/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5861c999752bfef05b8a33161d0bf75a6d4daf59
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Microsoft Intune 的舊版 - 2017 年 8 月
 
@@ -42,29 +42,8 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="intune-on-the-azure-portal"></a>Azure 入口網站上的 Intune
 
-
-
-
-### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>新的裝置動作會強制裝置與 Intune 同步處理<!-- 711369 -->    
-我們要新增裝置動作，強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。  這個動作可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
-
 ### <a name="actions-for-non-compliance----730266--"></a>非合規性動作 <!--730266-->     
 [不符合規定時所採取的動作] 是合規性原則的新功能，可讓您對不相容的裝置採取動作。 您可以指定單一或多個動作，並指定必須進行這些動作的時間週期。 例如，您可以在裝置變成不相容之後透過電子郵件立即通知使用者有不相容的裝置，也可以在 3 天寬限期之後透過條件式存取封鎖不相容的裝置存取公司資源。
-
-
-### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>依作業系統版本限制 Android 和 iOS 裝置註冊限制 <!--- 1333256,  1245463 --->  
-Intune 現在支援依作業系統版本號碼限制 iOS 和 Android 註冊。 在 [Intune]  >  [註冊限制]  >  [裝置類型限制]  >  [預設]  >  [平台限制] 下，IT 管理員現在可以設定平台設定，將註冊限制在作業系統值上下限之間。 Android 作業系統版本必須指定為 Major.Minor.Build.Rev，其中 Build 及 Rev 均為選擇性。 iOS 版本必須指定為 Major.Minor.Build，其中 Build 為選擇性。
-
->[!NOTE]
->此設定不會限制透過 Apple 註冊程式的註冊，這些程式包括 Apple 裝置註冊方案和 Apple School Manager 或 Apple Configurator。
-
-### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>限制 Android、iOS 和 macOS 裝置以個人擁有的裝置註冊<!--- 1333272,  1333275, 1245709 --->
-Intune 現在支援限制使用裝置序號註冊個人擁有的 iOS、Android 和 macOS 裝置。 某些裝置不會回報序號。 如需詳細資訊，請洽裝置製造商。 將序號上傳至 Intune，您就可以預先宣告此為公司擁有的裝置。 使用註冊限制，您可以封鎖個人擁有 (BYOD) 的裝置，僅註冊公司擁有的裝置。
-
-若要在 Intune 入口網站匯入序號，請移至 [裝置註冊] > [公司裝置識別碼] 並按一下 [新增]，然後上傳 .CSV 檔案。 此檔案應該不含標頭，並具有兩欄，一欄用於序號，另一欄用於 IMEI 編號等詳細資料。  若要限制個人擁有的裝置，請移至 [裝置註冊]  >  [註冊限制]。 在 [裝置類型限制] 下選取 [預設]，然後選取 [平台設定]。 您可以 [允許] 或 [封鎖] 個人擁有的 iOS、Android 和 macOS 裝置。 
-
-### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>強制受監督的 iOS 裝置自動安裝最新可用的軟體更新<!-- 777100 -->   
-新的原則將可從 [軟體更新] 工作區取得，您可在此強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。 您也可以檢視新的報表，它會列出舊版的 iOS 裝置，並摘要說明其過期的原因。
 
 ### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>列出舊版 iOS 之 iOS 裝置的新報表   <!-- 1352223 -->
 [軟體更新] 工作區將提供**過期的 iOS 裝置**報表。 在此報表中，您可以檢視受監督的 iOS 裝置清單，這些是 iOS 更新原則之前鎖定並有可用更新的裝置。 針對每部裝置，您可以檢視狀態，以了解為何尚未自動更新裝置。 
@@ -115,9 +94,6 @@ IT 系統管理員可以透過 Azure AD 工作負載中的新條件式存取原�
 ### <a name="system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>適用於 Exchange connector 的 System Center Operations Manager 管理組件<!-- 885457 -->   
 適用於 Exchange Connector 的 System Center Operations Manager 管理組件將可協助您剖析 Exchange Connector 記錄。 此管理組件可在您需要針對問題進行疑難排解時，為您提供不同方式來監視 Intune。
 
-### <a name="conditional-access-support-for-mac-devices-----720172---"></a>條件式存取支援 Mac 裝置<!-- 720172 -->   
-您很快就能夠設定條件式存取原則，要求 Mac 裝置向 Intune 註冊，並符合其裝置的合規性政策。 例如，使用者可以下載適用於 macOS 的 Intune 公司入口網站應用程式，並在 Intune 中註冊其 Mac 裝置。 Intune 會評估 Mac 裝置是否符合 PIN、加密、作業系統版本和系統完整性等需求。
-
 ### <a name="end-of-support-for-ios-80----1164477---"></a>結束對 iOS 8.0 的支援<!---1164477--->
 受管理的應用程式和 iOS 公司入口網站應用程式需要 iOS 9.0 及更新版本才能存取公司資源。 今年 9 月前未更新的裝置將不再能存取公司入口網站或這些應用程式。 今年 12 月會禁止存取所有公司資源，包括電子郵件。 
 
@@ -132,13 +108,11 @@ Windows Phone 8.1 平台將於 2017 年 7 月 11 日結束主要支援。 Window
 
 我們建議您盡早將符合資格的 Windows Phone 8.1 裝置升級至 Windows 10 行動裝置版。 
 
-
-
-
 ## <a name="intune-apps"></a>Intune 應用程式
 
-### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>Windows 10 的公司入口網站應用程式提供日間和夜間模式<!---676547--->
-使用者可以自訂 Windows 10 公司入口網站應用程式的色彩模式。 使用者可在公司入口網站應用程式的 [設定] 區段中進行變更。 使用者重新啟動應用程式後，即會看到變更。 至於 Windows 10 版本 1607 及更新版本，應用程式模式預設為系統設定。 至於執行 Windows 10 版本 1511 及較舊版本的電腦，應用程式模式會預設為日間模式。
+### <a name="intune-managed-browser-support-for-ios-and-android----1374196---"></a>iOS 和 Android 的 Intune Managed Browser 支援 <!---1374196--->
+
+自 2017 年 10 月起，Android 應用程式上的 Intune Managed Browser 應用程式只會支援執行 Android 4.4 和更新版本的裝置。 iOS 上的 Intune Managed Browser 應用程式只支援執行 iOS 9.0 及更新版本的裝置。 較舊版本的 Android 和 iOS 能夠繼續使用 Managed Browser，但是無法安裝新版的應用程式，而且可能無法存取所有的應用程式功能。 建議您將這些裝置更新為受支援的作業系統版本。
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>允許使用者存取適用於 Android 的公司入口網站應用程式，不需要註冊。<!---1169910--->  
 使用者很快地不必註冊裝置也能存取 Android 的公司入口網站。 使用應用程式保護原則的組織使用者，在開啟公司入口網站應用程式時，將不會再收到註冊裝置的提示。 使用者也可以從公司入口網站安裝應用程式，不用註冊裝置。 

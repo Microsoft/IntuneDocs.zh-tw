@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 註冊 Windows Phone 8.1 裝置
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 07/01/2017
 
 若要在 Intune 註冊您的 Phone 8.1 裝置，請遵循適用於您公司或學校的指示：
 
--   [如果貴公司讓您從 Windows 市集使用公司入口網站](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [如果貴公司讓您從 Microsoft 網上商店使用公司入口網站](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [如果不允許您從 Windows Phone 存取 Windows 市集，或者如果您沒有 Microsoft 帳戶](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [如果不允許您從 Windows Phone 存取 Microsoft 網上商店，或者如果您沒有 Microsoft 帳戶](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>如果貴公司讓您從 Windows 市集使用公司入口網站
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>如果貴公司讓您從 Microsoft 網上商店使用公司入口網站
 在您的裝置上安裝公司入口網站應用程式：
 
 1.  點選 [開始] &gt; [存放區]。
@@ -72,7 +72,7 @@ ms.lasthandoff: 07/01/2017
 
     ![已新增帳戶畫面](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允許您從 Windows Phone 存取 Windows 市集，或者如果您沒有 Microsoft 帳戶
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允許您從 Windows Phone 存取 Microsoft 網上商店，或者如果您沒有 Microsoft 帳戶
 
 1.  點選 [設定] &gt; [工作場所]。
 
