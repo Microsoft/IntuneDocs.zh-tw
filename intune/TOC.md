@@ -17,11 +17,12 @@
 ## [已知問題](known-issues.md)
 ## [取得支援](get-support.md)
 
-# [開始使用](get-started-evaluation.md)
-## [建立群組](get-started-groups.md)
+# [開始使用 Intune](get-started-evaluation.md)
+## [瀏覽 Azure 入口網站](get-started-azure.md)
 ## [建立使用者](get-started-users.md)
-## [註冊裝置](get-started-enroll.md)
+## [建立群組](get-started-groups.md)
 ## [指派原則](get-started-policies.md)
+## [註冊裝置](get-started-enroll.md)
 ## [指派應用程式](get-started-apps.md)
 
 
