@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0da2e96e6e80672f666b8bbca160a1fc1515d1c
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 51b61fdc20c8d532be23a26f751be8d52cc21f9f
+ms.sourcegitcommit: a4a9bd7c432b58fea738e4bc3455d1221eb314c1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 應用程式保護原則設定
 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式保護原則[設定](app-protection-policies.md)本主題所述的原則設定。
@@ -83,6 +83,6 @@ ms.lasthandoff: 08/09/2017
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。 | 是 |
 | **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當系統管理員開啟原則中的 PIN 時，若使用者開啟 MAM 應用程式，則必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。</li></ul>| 逾時：30 <br><br> 離線：720 |
-| **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式本身會執行選擇性抹除。 此選擇性抹除與系統管理員在 MAM 抹除工作流程中起始的抹除相同。 <br><br> | 90 天 |
+| **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式需要使用者連線到網路並重新驗證。 如果使用者成功驗證，就可以繼續存取其資料，而且會重設離線間隔。  如果使用者無法驗證，應用程式會執行使用者帳戶和資料的選擇性抹除。  如需使用選擇性抹除會移除哪些資料的詳細資訊，請參閱[如何只抹除 Intune 管理之應用程式中的公司資料](https://docs.microsoft.com/en-us/intune/apps-selective-wipe)。<br><br> | 90 天 |
 | **封鎖螢幕擷取及 Android 助手 (Android 6.0+)** | 選擇 [是]，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Android 助手] 功能。 選擇 [是]，也會在搭配使用這個應用程式與工作或學校帳戶時模糊應用程式切換器預覽影像。 | 否 |
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選擇 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 | 否 |

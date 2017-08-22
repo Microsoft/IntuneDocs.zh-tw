@@ -3,8 +3,8 @@ title: "使用 Android for Work 適用的 Intune 應用程式設定原則"
 titleSuffix: Intune on Azure
 description: "了解如何使用應用程式設定原則在 Android for Work 應用程式執行時，將設定資料提供給該應用程式。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/12/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 7486a62ed11b83f00414a74b2d816f6048826f73
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則
 
@@ -92,5 +92,5 @@ ms.lasthandoff: 07/12/2017
 
 ## <a name="next-steps"></a>後續步驟
 
-一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
+一如往常般地[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
 

@@ -3,8 +3,8 @@ title: "如何監視應用程式資訊和指派"
 titleSuffix: Intune on Azure
 description: "將應用程式指派給使用者或裝置之後，可以使用此資訊協助您監視其狀態。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d588ecc8f2e211b5a8ccdfe7b7720869cc6327b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a558c7d7c804b62535b2223cde9c409c56f22f6
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 監視應用程式資訊和指派
 
