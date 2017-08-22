@@ -2,7 +2,8 @@
 title: "側載 Windows 和 Windows Phone 的應用程式"
 description: "了解如何簽署企業營運應用程式，讓您可以使用 Intune 部署它們。"
 keywords: 
-author: robstackmsft
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -11,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
