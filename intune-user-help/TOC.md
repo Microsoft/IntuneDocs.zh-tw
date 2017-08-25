@@ -1,16 +1,111 @@
 # Intune 的使用者說明
+
 ## [使用受管理的裝置完成工作](use-managed-devices-to-get-work-done.md)
+
 ## [我的公司可以從 Intune 查看哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
 ## [重設裝置時會發生什麼事？](what-happens-if-you-reset-your-device-cpwebsite.md)
+
 ## [如何登入公司入口網站](sign-in-to-the-company-portal.md)
+
 ## [在 Intune 上使用您的 Android 裝置](using-your-android-device-with-intune.md)
 ### [註冊 Android 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### [註冊裝置](enroll-your-device-in-Intune-android.md)
+#### [使用 Android for Work 來註冊裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-android.md)
+### [加密您的裝置](encrypt-your-device-android.md)
+### [設定您的 PIN 或密碼](set-your-pin-or-password-android.md)
+### [重設裝置時會發生什麼事？](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+### [重設裝置](reset-erase-your-device-cpwebsite.md)
+### [設定鎖定時間](set-the-amount-of-time-before-your-device-is-locked-android.md)
+### [安裝 VPN](install-your-companys-virtual-private-network-VPN-android.md)
+### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-android.md)
+### [如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+#### [將裝置取消註冊](unenroll-your-device-from-intune-android.md)
+#### [如果您已拒絕使用條款，請取消註冊您的裝置](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+
 ### [修正 Android 的常見問題](troubleshoot-your-device-android.md)
+#### [檢查裝置合規性](check-compliance-on-your-device-android.md)
+
+#### [使用記錄檔以修正問題]
+##### [開啟詳細資訊記錄](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+##### [使用電子郵件來傳送記錄檔](send-logs-to-your-it-admin-by-email-android.md)
+##### [使用 USB 纜線來傳送記錄檔](send-logs-to-your-it-admin-using-cable-android.md)
+##### [提交註冊錯誤](send-enrollment-errors-to-your-it-admin-android.md)
+
+### 作業系統問題
+#### [更新裝置](you-need-to-update-your-android-device.md)
+#### [不支援的版本](your-android-version-isnt-yet-supported.md)
+#### [您的裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [遺漏必要的憑證](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [關閉不明的來源](you-need-to-turn-off-unknown-sources-android.md)
+#### [關閉 USB 偵錯](you-need-to-turn-off-usb-debugging-android.md)
+#### [開啟安全性威脅掃描](you-need-to-turn-on-scanning-for-security-threats-android.md)
+#### [不支援的安全性修補程式](you-need-to-update-your-device-OS-security-patch-android.md)
+#### [發生加密錯誤的裝置](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
+
+### Mobile Threat Defense
+#### [安裝 Mobile Threat Defense 應用程式](you-are-prompted-to-install-mtd-android.md)
+#### [解決威脅](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+
+
 ## [搭配 Intune 使用 iOS 或 macOS 裝置](using-your-iOS-or-macOS-device-with-intune.md)
 ### [註冊 iOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [安裝並登入公司入口網站](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### [註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
+### [註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
+### [使用公司入口網站來註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
+
+### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
+### [設定或變更密碼](set-or-change-your-passcode-ios.md)
+### [使用公司入口網站重設您的裝置會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### [重設裝置](reset-erase-your-device-cpwebsite.md)
+### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)
+### [將裝置取消註冊](unenroll-your-device-from-intune-ios.md)
+#### [如果將裝置取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+### [手動同步您的裝置](sync-your-device-manually-ios.md)
+
 ### [修正 iOS 的常見問題](troubleshoot-your-device-iOS.md)
-## [搭配 Intune 使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
+#### [重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
+#### [將錯誤傳送給公司](send-errors-to-your-it-admin-ios.md)
+#### [將錯誤傳送給 Microsoft](send-logs-to-microsoft-ios.md)
+#### [出現錯誤](you-get-an-error-while-using-the-company-portal-app-ios.md)
+#### [識別裝置](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+#### [尋找序號](how-do-i-find-the-serial-number-on-my-device-ios.md)
+#### [更新 iOS 裝置](you-need-to-update-your-ios-device.md)
+#### [尚不支援我的 iOS 版本](your-ios-version-isnt-yet-supported.md)
+
+### Mobile Threat Defense
+#### [安裝 Mobile Threat Defense 應用程式](you-are-prompted-to-install-mtd-ios.md)
+#### [解決威脅](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+
+
+## [使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
 ### [註冊 Windows 10 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [註冊 Windows 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [使用其他版本的 Windows 來註冊 Windows 裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+
+### [註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)
+### [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [重設裝置](reset-erase-your-device-cpwebsite.md)
+
+### [加密您的裝置](encrypt-your-device-windows.md)
+### [設定或變更密碼](set-or-change-your-password-windows.md)
+### [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-windows.md)
+### [如果將裝置取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+### [如果重設裝置，會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)
+### [手動同步您的裝置](sync-your-device-manually-windows.md)
+
 ### [修正 Windows 的常見問題](troubleshoot-your-device-windows.md)
+#### [我的 Windows 10 裝置無法註冊](troubleshoot-your-windows-10-device-windows.md)
+#### [更新 Windows 裝置](you-need-to-update-your-windows-device.md)
+#### [從公司入口網站應用程式傳送記錄檔](send-logs-to-your-it-admin-cp-windows.md)
+#### [從設定應用程式傳送記錄檔](send-logs-to-your-it-admin-settings-windows.md)
+#### [尚不支援我的 Windows 版本](your-windows-version-isnt-yet-supported.md)
+#### [啟用 Windows 加密](you-need-to-enable-windows-encryption.md)
+#### [我的裝置需要反惡意程式碼軟體](your-device-needs-antimalware-software.md)
+#### [啟用安全開機](you-need-to-enable-secure-boot-windows.md)
+#### [啟用程式碼完整性](you-need-to-enable-code-integrity.md)
+
+
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
