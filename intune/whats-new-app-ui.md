@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+
+## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日這週
+
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新
+
+Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下方移至 [裝置詳細資料] 頁面上的屬性。
+
+![Windows 之公司入口網站應用程式的 [裝置詳細資料] 畫面，現在會將 [類別] 欄位顯示為屬性，而不是直接顯示在該畫面的標題下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日一週
 
@@ -197,7 +205,7 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [裝置] 索引標籤。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __介面__︰[應用程式] 索引標籤中已更新 [精選 App] 和 [所有 App] 按鈕。 [搜尋] 按鈕現在是浮動的動作按鈕。
+* __介面__︰[應用程式] 索引標籤中已更新 [精選 App] 和 [所有 App] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [應用程式] 索引標籤。](./media/CP_Android_AppsTab_BeforeAfter.png)
 

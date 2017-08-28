@@ -1,12 +1,12 @@
 ---
 title: "開始使用原則"
 titleSuffix: Intune on Azure
-description: 
+description: "建立原則，以防止使用者透過其裝置執行未經授權的動作。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>開始使用原則
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>開始使用原則
 
 開始使用 Intune 的其中一個主要目標是註冊裝置，以確定它們符合公司原則。 合規性原則不只可以協助您管理特殊裝置類型，例如公司擁有的 Kiosk，也能管理個人 (攜帶您自己) 的裝置、平板電腦和無使用者裝置。
 
@@ -56,3 +54,12 @@ __如何建立原則？__
 7. 返回 [建立原則] 刀鋒視窗，然後選取 [建立]。
 8. 建立原則之後，選取 [指派] 將它指派給您的測試群組。 選取您的測試群組 - 群組中應該有您的測試使用者 - 然後按一下 [儲存] 將原則指派給該群組。
 9. 等待幾分鐘的時間，您的已註冊裝置應該會提示您需要更新密碼，以維持符合公司原則。 您也可以在 **iOS 公司入口網站應用程式**手動檢查這點，方法是依序點選裝置名稱和 [同步] 按鈕。
+
+## <a name="next-steps"></a>後續步驟
+
+[開始註冊裝置](get-started-enroll.md) - 透過 iOS 裝置的完整註冊體驗，來學習註冊體驗。
+
+## <a name="learn-more"></a>進一步了解
+
+* [監視 Intune 裝置合規性原則](compliance-policy-monitor.md)
+* [透過 Intune 使用條件式存取原則的常見方式](conditional-access-intune-common-ways-use.md)

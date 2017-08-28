@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -103,18 +103,16 @@ ms.lasthandoff: 08/07/2017
 
     - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
 
-    - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。
+     - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。
+   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與 [受監督] 模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。
+   >[!NOTE]
+   >如果將 [使用者親和性] 設定為 [搭配使用者親和性]，或將 [受監督] 模式設定為 [關閉]，就會停用註冊設定檔的「共用的 iPad」模式。
 
-  - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與 [受監督] 模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。
-
-  >[!NOTE]
-  >如果將 [使用者親和性] 設定為 [搭配使用者親和性]，或將 [受監督] 模式設定為 [關閉]，就會停用註冊設定檔的「共用的 iPad」模式。
-
-  - **快取使用者上限** - (需要 **共用的 iPad** = **是**) 在每個使用者的裝置上建立分割區。 建議的值為某段時間內可能使用裝置的學生人數。 例如，如果六位學生在週間定時使用裝置，請將此數字設為 6。  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **允許配對** - 指定 iOS 裝置是否可與電腦同步。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
-    - **Apple Configurator 憑證** - 如果在 [允許配對] 下選擇了 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
+      - **Apple Configurator 憑證** - 如果在 [允許配對] 下選擇了 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
 
 7. 選擇 [設定助理設定]，設定下列設定檔設定，然後選擇 [儲存]：
 
@@ -140,15 +138,15 @@ ms.lasthandoff: 08/07/2017
 
 1. 在 [註冊程式權杖] 刀鋒視窗中，選擇藍色資訊橫幅或 [連線 SDS]。
 2. 選擇 [允許 Microsoft School Data Sync 使用此權杖]，設定為 [允許]。 此設定會允許 Intune 和 Office 365 中的 SDS 連線。
-3. 若要啟用 Apple School Manager 與 Azure AD 之間的連線，請選擇 [設定 Microsoft School Data Sync]。 深入了解[如何設定 School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)。
+3. 若要啟用 Apple School Manager 與 Azure AD 之間的連線，請選擇 [設定 Microsoft School Data Sync]。深入了解[如何設定 School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)。
 4. 按一下 [確定] 以儲存並繼續。
 
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 已被指派管理您 Apple School Manager 裝置的權限，您可以同步處理 Intune 與 Apple 服務，以在 Intune 中查看受管理裝置。
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]，然後選擇 [Apple 註冊]。
-2. 在 [註冊計劃裝置] 下，選擇 [同步]。 進度列會顯示再次要求進行同步之前，必須要等待的總時間。
-3. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。 進度列會顯示再次要求進行同步之前，必須要等待的總時間。
+2. 在 [註冊計劃裝置] 下，選擇 [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
+3. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![[同步] 刀鋒視窗，以及正在選擇 [要求同步] 連結的螢幕擷取畫面。](./media/enrollment-program-device-request-sync.png)
 

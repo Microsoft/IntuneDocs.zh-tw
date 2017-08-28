@@ -15,24 +15,24 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-下列清單中所列的值並非全部都能設定，須取決於您選擇的設定。
+下列清單中的值並非全部都能設定，須取決於您選擇的設定。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
 
-**連線名稱** - 輸入此連線的名稱。 當使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
-- **IP 位或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
-- **驗證方法** - 從下列各方式中選擇裝置對 VPN 伺服器的驗證方式︰
+**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
+- **IP 位或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+- **驗證方法** - 從下列方式中選擇裝置對 VPN 伺服器的驗證方式︰
     - **憑證** - 從 [驗證憑證] 下選擇先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資訊，請參閱[如何設定憑證](certificates-configure.md)。
     - **使用者名稱與密碼** - 使用者必須提供使用者名稱及密碼才能登入 VPN 伺服器。
 - **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
@@ -56,17 +56,17 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="apps-per-app-vpn-settings"></a>應用程式 (個別應用程式 VPN) 設定
 
-- **個別應用程式 VPN** - 若希望從 Safari 瀏覽器連入 URL 時能夠使用 VPN 連線，可啟用此選項。 若要如此設定，必須選取**憑證**作為基本 VPN 設定中的驗證方法。
-- **使用 Safari 瀏覽器時能夠使用 VPN 連線的 URL** - 按一下 [新增] 新增一或多個網站的 URL。 當瀏覽這些 URL 時，將會啟用 VPN 連線。
+- **個別應用程式 VPN** - 如果希望從 Safari 瀏覽器連入 URL 時能夠使用 VPN 連線，可啟用此選項。 若要如此設定，必須選取**憑證**作為基本 VPN 設定中的驗證方法。
+- **使用 Safari 瀏覽器時啟用的 VPN 連線 URL** - 按一下 [新增]，以新增一或多個網站 URL。 前往這些 URL 時，會啟用 VPN 連線。
 
 - **依需求指定的規則** - 這可讓您設定條件式規則，控制初始化 VPN 連線的時機。 例如，您可以建立條件，在裝置未連線到您公司任何一個 Wi-Fi 網路時才使用 VPN 連線。 您也可以建立條件，在裝置無法存取您指定的 DNS 搜尋網域時不啟動 VPN 連線。
 
-    - **SSID 或 DNS 搜尋網域** - 選取此條件要使用無線網路 **SSID** 或 **DNS 搜尋網域**。 選擇 [新增] 設定一或多個 SSID 或搜尋網域。
-    - **URL 字串探查** - (非必要) 提供規則用於測試的 URL。 若此設定檔的安裝裝置無須重新導向就能存取此 URL，便會起始 VPN 連線讓裝置連線到目標 URL。 使用者將不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，然後再將裝置透過 VPN 連線到目標 URL。
-    - **網域動作** - 請選擇下列其中一項︰
+    - **SSID 或 DNS 搜尋網域** - 選取此條件要使用無線網路 **SSID** 還是 **DNS 搜尋網域**。 選擇 [新增] 設定一或多個 SSID 或搜尋網域。
+    - **URL 字串探查** - (非必要) 提供規則用於測試的 URL。 如果此設定檔的安裝裝置無須重新導向就能存取此 URL，便會起始 VPN 連線讓裝置連線到目標 URL。 使用者將不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，再將裝置透過 VPN 連線到目標 URL。
+    - **網域動作** - 請選擇下列其中一個項目︰
         - 連線 (若需要) - 
         - 一律不連線 - 
-    - **動作** - 請選擇下列其中一項︰
+    - **動作** - 請選擇下列其中一個項目︰
         - 連線 - 
         - 評估連線 - 
         - 忽略 - 

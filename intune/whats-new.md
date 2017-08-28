@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/10/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f915c805b20e88c661ad52e280a31054bbebce02
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: f28ce989b5907f7e7474543c364508424dc0c9cf
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -40,8 +40,14 @@ ms.lasthandoff: 08/10/2017
   ### Intune apps
 -->   
 
-## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日一週
 
+## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日這週
+### <a name="app-management"></a>應用程式管理
+#### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司入口網站使用者和應用程式防護原則使用者的新登入體驗 <!-- 621669 -->
+
+終端使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置以及檢視 IT 連絡人資訊，而不需要註冊其 Android 裝置。 此外，如果終端使用者已使用由 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，則終端使用者無法再收到註冊裝置的提示。
+
+## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日一週
 ### <a name="device-enrollment"></a>裝置註冊  
 
 #### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>依作業系統版本限制 Android 和 iOS 裝置註冊限制 <!--- 1333256,  1245463 --->
@@ -64,7 +70,6 @@ Intune 可以透過將公司裝置 IMEI 編號列入白名單，來限制個人�
 
 #### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>強制受監督的 iOS 裝置自動安裝最新可用的軟體更新<!-- 777100 -->
 新的原則可從 [軟體更新] 工作區取得，您可在此強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。 如需詳細資料，請參閱[設定 iOS 更新原則](/intune/software-updates-ios)
-
 
 #### <a name="check-point-sandblast-mobile---new-mobile-threat-defense-partner-----954651-1172027---"></a>Check Point SandBlast Mobile - 新的 Mobile Threat Defense 夥伴<!-- 954651, 1172027 -->
 您可以根據由 Checkpoint SandBlast Mobile (一個與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。
@@ -95,12 +100,22 @@ Intune 可以透過將公司裝置 IMEI 編號列入白名單，來限制個人�
 #### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>公司入口網站的 iBooks 支援 <!--1231841-->
 我們已將專用頁面新增至公司入口網站，讓使用者可以瀏覽並下載 iBooks。 
 
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="additional-help-desk-troubleshooting-details------applies-to-1263399-1326964-1341642----"></a>其他技術服務人員疑難排解詳細資料 <!---  Applies to 1263399, 1326964, 1341642 --->
+ 
+Intune 已更新疑難排解顯示，並新增至針對系統管理員和技術服務人員所提供的資訊。 您現在可以看到 [指派] 表格，其中根據群組成員資格來摘要說明所有使用者指派。 此清單包括：
+- 行動裝置應用程式
+- 相容性原則
+- 組態設定檔
+ 
+此外，[裝置] 資料表現在會包含 [Azure AD 聯結類型] 和 [符合 Azure AD 規範] 資料行。 如需詳細資訊，請參閱[協助使用者針對問題進行疑難排解](help-desk-operators.md)。
+
 ### <a name="reporting"></a>報告
 
 #### <a name="intune-data-warehouse-public-preview"></a>Intune 資料倉儲 (公開預覽)
 
 Intune 資料倉儲會每日對資料進行抽樣，以提供您租用戶的歷程檢視。 您可以藉由使用 Power BI 檔案 (PBIX)、與許多分析工具相容的 OData 連結，或與 REST API 互動，來存取資料。 如需詳細資訊，請參閱[使用 Intune 資料倉儲](reports-nav-create-intune-reports.md)。
-
 
 ## <a name="week-of-july-23rd-2017"></a>2017 年 7 月 23 日一週
 
@@ -155,19 +170,12 @@ Windows Phone 8.1 平台已於 2017 年 7 月 11 日結束主要支援。 Window
 iOS 的 Microsoft Intune 公司入口網站應用程式很快將會有更新，屆時將只支援執行 iOS 9.0 或更新版本的裝置。 支援 iOS 8 的公司入口網站版本仍然可以使用非常短的一段時間。 不過，請注意，如果您也使用啟用 MAM 的 iOS 應用程式，我們支援 iOS 9.0 及更新版本，因此您會想要確保您的終端使用者更新到最新的作業系統。 
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-我們讓您事先知道這項資訊，雖然我們沒有特定的日期，您仍有時間進行規劃。 請確認您的使用者更新為 iOS 9+，且當公司入口網站應用程式發表時，要求您的終端使用者更新其公司入口網站應用程式。
+我們讓您事先知道這項資訊，雖然我們沒有特定的日期，您仍有時間進行規劃。 請確認您的使用者更新為 iOS 9+，且當公司入口網站應用程式發行時，要求您的終端使用者更新其公司入口網站應用程式。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 鼓勵您的使用者更新到 iOS 9.0 或更新版本，以便完全利用 Intune 的新功能。  鼓勵使用者安裝新版的公司入口網站，並利用它將提供的新功能。
 
 在 Azure 入口網站移至 Intune，並檢視 [裝置] > [所有裝置]，並依 iOS 版本篩選，查看作業系統早於 iOS 9 的任何目前的裝置。
-
-### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>變更計畫：Intune 正在變更 Intune 合作夥伴入口網站體驗 <!-- 1050016 -->
-我們會在 2017 年 5 月中旬的服務更新將 Intune 合作夥伴頁面從 manage.microsoft.com 移除。  
-
-如果您是合作夥伴系統管理員，將無法再從 Intune 合作夥伴頁面代表客戶檢視或採取動作，但會需要登入在 Microsoft 的另外兩個合作夥伴入口網站的其中一個。
-
-[Microsoft 合作夥伴中心](https://partnercenter.microsoft.com/)和 [Microsoft Office 365 合作夥伴系統管理中心](https://portal.office.com/)都能讓您登入所管理客戶的帳戶。 合作夥伴在此後請使用這兩個網站來管理客戶。
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -41,26 +41,28 @@ ms.lasthandoff: 08/03/2017
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>需進行次要移轉以選取功能
 
-2017 年 1 月之前建立的 Intune 帳戶必須先移轉，才能在 Azure 入口網站中使用這些功能：
+必須先移轉 2017 年 1 月之前建立的 Intune 帳戶，才能在 Azure 入口網站中使用下列功能：
 
 - 公司裝置註冊設定檔
 - Apple 裝置註冊方案
-- 依 iOS 序號群組的公司預先註冊裝置
-- 裝置註冊管理員
+- 依 iOS 序號預先宣告公司裝置
+- 裝置註冊管理員帳戶
 - Apple 大量採購方案
 
-因為這些功能無法從傳統 Silverlight 和 Azure 主控台管理，所以移轉：
+因為無法從傳統 Intune (Silverlight) 主控台和 Azure 入口網站管理這些功能，所以移轉會：
 - 在傳統主控台中停用它們
-- 在 Azure 主控台中啟用它們  
+- 在 Azure 入口網站中啟用它們  
+
+在 2017 年 9 月 11 之後，會將這些功能的移轉合併至「主要移轉至 Azure」。 如果您的帳戶已經移轉成使用 Azure 入口網站，則此次要移轉會在 2017 年 9 月 11 日與 22 日之間發生。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統主控台中停用這些功能開始算起。
 
 如果您現在於 Azure 入口網站中管理這些 Intune 功能，請注意以下幾點：
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>移除 Apple DEP 中的預設公司裝置註冊設定檔
-Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 傳統 Silverlight Intune 主控台中原本提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
+Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 傳統 Intune (Silverlight) 主控台中提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>移轉時還原的 Apple DEP 權杖
 
-如果您刪除 Intune 傳統 (Silverlight) 入口網站中的 Apple 裝置註冊方案權杖，且未將新的權杖上傳至 Azure 入口網站，原始權杖就會在您移轉時於 Azure 入口網站中還原。 若要移除這個權杖並避免 DEP 註冊，請刪除 Azure 入口網站中的權杖。
+如果您刪除傳統 Intune (Silverlight) 入口網站中的 Apple 裝置註冊計畫權杖，且未將新的權杖上傳至 Azure 入口網站，則會在您移轉時於 Azure 入口網站中還原原始權杖。 若要移除這個權杖並避免 DEP 註冊，請刪除 Azure 入口網站中的權杖。
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>用於移轉原則的「狀態」刀鋒視窗無法運作
 
@@ -72,7 +74,7 @@ Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」
 iOS 大量採購應用程式只能針對與您的 Intune 帳戶相同的國碼/地區碼顯示，並且予以指派。 Intune 只會同步處理其 iTunes 地區設定與 Intune 租用戶帳戶國碼/地區碼相同的應用程式。 例如，如果您購買僅於美國市集中提供的應用程式，但您的 Intune 帳戶是德文，則 Intune 不會顯示該應用程式。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>上傳多份相同的 iOS 大量採購方案
-請勿針對相同的 VPP 權杖多次按一下 [上傳] 按鈕。 這會導致上傳重複的 VPP 權杖，並針對相同的 VPP 權杖多次進行應用程式同步處理。 
+請勿針對相同的 VPP 權杖多次按一下 [上傳] 按鈕。 這會導致上傳重複的 VPP 權杖，並針對相同的 VPP 權杖多次進行應用程式同步處理。
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ iOS 大量採購應用程式只能針對與您的 Intune 帳戶相同的國碼/�
 如果您新增了其他網域 (使用 [進階設定] > [網路周圍] > [新增受保護網域])，則將無法儲存原則。 您看到的錯誤訊息很快就會變得更為準確。
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN 用戶端支援
- 
-Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune 相容。 未來的 Intune 更新將會包含與這個 VPN 用戶端版本的相容性。 在此之前，建議您不要更新 Cisco AnyConnect VPN 用戶端，並繼續使用現有的版本。
+
+Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune 相容。
+未來的 Intune 更新將會包含與這個 VPN 用戶端版本的相容性。 在此之前，建議您不要更新 Cisco AnyConnect VPN 用戶端，並繼續使用現有的版本。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>搭配 macOS Sierra 裝置使用數值密碼類型
 
@@ -118,16 +121,3 @@ Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune
 全域管理員 (也稱為租用戶管理員) 無須個別的 Intune 或 Enterprise Mobility Suite (EMS) 授權，也可以繼續執行日常的管理工作。 但是，若要使用服務，例如註冊自己的裝置、公司裝置或使用 Intune 公司入口網站，他們就需要有 Intune 或 EMS 授權。
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 
