@@ -40,6 +40,8 @@
 ### [其他資源](planning-guide-resources.md)
 ## 案例實作指南
 ### [BYOD](byod-enable.md)
+### [保護 Exchange Online](exchange-online-protect.md)
+### [減少技術支援中心成本](password-reset.md)
 <!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
