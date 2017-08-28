@@ -175,7 +175,6 @@
 ### [設定 iOS 的教育設定](education-settings-configure-ios.md)
 ### [設定 iOS 的教育共用裝置](education-settings-configure-ios-shared.md)
 ### [設定 iOS 更新原則](software-updates-ios.md)
-### [設定商務用 Windows Update 的設定](windows-update-for-business-configure.md)
 ### [設定憑證](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [管理角色](role-based-access-control.md)
-
+## [管理軟體更新](windows-update-for-business-configure.md)
 
 ## [使用軟體代理程式來管理電腦](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [比較電腦管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
@@ -44,7 +44,6 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 * Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。
 * 在您將 VPP 權杖匯入到 Intune 之後，請不要將相同的權杖匯入到任何其他裝置管理解決方案。 這樣做會導致授權指派與使用者記錄遺失。
 * 開始搭配 Intune 使用 iOS 書籍之前，請移除任何其他行動裝置管理 (MDM) 廠商所建立的現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
-* 目前，您僅能以 [必要] 安裝來指派書籍。 當您將書籍指派為**必要**安裝時，安裝該書籍的每個使用者都會使用一個授權。
 * 當您將書籍指派給裝置時，該裝置必須已安裝內建的 iBooks 應用程式。 如果未安裝，則使用者必須重新安裝該應用程式才能閱讀書籍。 您目前無法使用 Intune 來還原已移除的內建應用程式。
 * 您只能從 Apple 大量採購方案網站指派書籍。 您無法先上傳，然後再指派在內部建立的書籍。
 * 您目前無法以指派應用程式的相同方式將書籍指派給使用者類別。
@@ -72,10 +71,10 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
 1. 在 [電子書] 工作負載中，選擇 [管理]  >  [所有電子書]。
-2. 在書籍清單刀鋒視窗中，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
+2. 在書籍清單刀鋒視窗上，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
 3. 在 <書籍名稱> - [指派的群組] 刀鋒視窗中，選擇 [管理] > [指派的群組]。
 4. 選擇 [指派群組]，然後，在 [選取群組] 刀鋒視窗中，選擇要指派該書籍的 Azure AD 使用者群組。 裝置群組目前尚未支援。
-請選擇 [必要] 的指派動作。 
+選擇指派動作：**可用**或**必要**。 
 5. 完成之後，請選擇 [儲存]。
 
 ## <a name="next-steps"></a>後續步驟

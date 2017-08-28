@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑難排解入口網站協助使用者
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 08/10/2017
 若要新增支援人員使用者：
 1. 視需要[將使用者新增至 Intune](users-add.md)。
 2. [建立支援人員群組](groups-add.md)，並將使用者新增至該群組。
-3. [指派 RBAC 技術服務人員角色](role-based-access-control.md#built-in-roles)
+3. [指派 RBAC 技術服務人員角色](role-based-access-control.md#built-in-roles).
 
   ![顯示反白顯示的 Intune 角色，以及包含技術服務人員之內建角色清單的 Intune 入口網站螢幕擷取畫面](./media/help-desk-user-add.png)您也可以[建立自訂角色](role-based-access-control.md#custom-roles)，以進一步修改並授與技術服務人員存取權。  技術服務人員需要下列權限，以協助為使用者問題進行疑難排解：
     - MobileApps：讀取
@@ -61,8 +61,6 @@ ms.lasthandoff: 08/10/2017
 - 登入 Azure 入口網站，選擇 [More Services] (更多服務) > [監視 + 管理] > [Intune]，然後移至 [說明及支援] > [疑難排解]。
 
 按一下 [選取使用者] 以檢視使用者及其詳細資料。
-
-![Intune 疑難排解工作負載 (包含 [選取使用者] 連結) 的螢幕擷取畫面](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>使用疑難排解入口網站
 

@@ -1,12 +1,12 @@
 ---
-title: "將 IMEI 識別碼新增至 Intune"
+title: "將公司識別碼新增至 Intune"
 titleSuffix: Intune on Azure
-description: "了解如何將公司識別碼 (IMEI 編號) 新增到 Microsoft Intune。 \""
+description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。 \""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,31 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b38bf2da70537d07a050fa21be9a2a3062ca84b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="add-corporate-identifiers"></a>新增公司識別碼
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-身為 Intune 管理員，您可以建立及匯入逗點分隔值 (.csv) 檔案，其會列出國際行動設備識別 (IMEI) 號碼或序號。 Intune 會使用這些識別碼，將裝置擁有權指定為公司所有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
+身為 Intune 系統管理員，您可以使用各種方式將裝置識別為公司擁有的裝置。 Intune 可以從公司擁有的裝置收集其他資訊。 您也可以設定裝置限制，以防止透過非公司擁有的裝置進行註冊。
+
+當下列任一條件成立時，會將裝置識別為「屬公司擁有」：
+
+- 使用[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶進行註冊 (所有平台)
+- 使用 Apple [裝置註冊計劃](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md) 或 [Apple Configurator](apple-configurator-enroll-ios.md) 進行註冊 (僅限 iOS)
+- 已使用國際行動設備識別碼 (IMEI) 編號 (所有具有 IMEI 編號的平台) 或序號 (iOS 和 Android) 預先宣告
+- 在 Azure Active Directory 或 Enterprise Mobility Suite 中註冊為 Windows 10 企業版裝置 (僅限 Windows 10)
+- 在裝置的 [屬性] 中指定 [公司]
+
+在 Intune 中，公司擁有的裝置會在其裝置記錄的 [擁有權] 資料行中顯示 [公司]。 若要檢視，請移至 [裝置] > [所有裝置]。
+
+## <a name="predeclare-a-device-with-imei-or-serial-number"></a>預先宣告具有 IMEI 或序號的裝置
+
+身為 Intune 管理員，您可以建立和匯入逗點分隔值 (.csv) 檔案，其會列出 IMEI 編號或序號。 Intune 會使用這些識別碼，將裝置擁有權指定為公司所有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -54,10 +68,9 @@ ms.lasthandoff: 08/03/2017
 >另請注意：Android 序號可能重複，或是不存在。 請洽詢裝置供應商，以了解序號是否為可靠的裝置識別碼。
 >裝置回報給 Intune 的序號，可能與裝置上 Android [設定/關於] 功能表中顯示的識別碼不符。 請驗證裝置製造商所回報的序號類型。
 
+### <a name="add-a-csv-list-of-corporate-identifiers"></a>新增公司識別碼的 .csv 清單
 
-**新增公司識別碼的 .csv 清單**
-
-1. 在 Intune 入口網站中，選擇 [裝置註冊] > [註冊限制]，選擇 [公司裝置識別碼]，然後按一下 [新增]。
+1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
 
  ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區螢幕擷取畫面。](./media/add-corp-id.png)
 
@@ -69,9 +82,11 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="delete-corporate-identifiers"></a>刪除公司識別碼
 
-1. 在 Intune 入口網站中，選擇 [裝置註冊] > [註冊限制]，選擇 [公司裝置識別碼]，然後選擇 [刪除]。
+1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]。
+2. 選取您想要刪除的裝置識別碼，然後選擇 [刪除]。
+3. 確認刪除。
 
-3. 在 [刪除識別碼] 刀鋒視窗中，瀏覽至要刪除之裝置識別碼的 .csv 檔案，然後按一下 [刪除]。
+刪除已註冊裝置的公司識別碼並不會變更裝置的擁有權。 若要變更裝置的擁有權，請移至 [裝置] > [所有裝置]，並選取裝置，然後選擇 [屬性]，並變更 [裝置擁有權]。
 
 ## <a name="imei-specifications"></a>IMEI 規格
 如需國際行動設備識別碼的詳細規格，請參閱 [3GGPP TS 23.003 (英文)](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)。

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,32 +14,36 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 966183f0da7a48148a193a1823f74b9e416f4004
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-up-intune"></a>設定 Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-設定步驟會準備好進行行動裝置管理的環境。  
+這些設定步驟可協助您啟用行動裝置管理 (MDM)。 必須先管理裝置，您才能讓使用者存取公司資源或管理這些裝置上的設定。
+
+在大部分情況下，需要一些步驟 (例如，設定 Intune 訂用帳戶，以及設定 MDM 授權單位)。 根據您公司的需求，其他步驟 (例如，設定自訂網域，或新增應用程式) 為選擇性。
 
 如果您目前正在使用 Microsoft System Center Configuration Manager 來管理電腦和伺服器，您可以[延伸 Configuration Manager 來管理行動裝置](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
 >[!TIP]
 >凡在符合條件方案中購買至少 150 套 Intune 授權，即可享有「FastTrack Center 服務權益」。 這項服務讓您和 Microsoft 專家一起整備 Intune 環境。 請參閱[適用於 Enterprise Mobility + Security (EMS) 的 FastTrack Center 權益](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。
 
+
+
 | 步驟 | 狀態  |
 | ------------- |-------------|
-| 1  | [必要條件](supported-devices-browsers.md) - 開始之前需要知道的資訊|
-| 2 |  [登入 Intune](account-sign-up.md) - 登入試用訂閱或建立新的訂閱 |  
-| 3 | [設定網域名稱](custom-domain-name-configure.md) - 設定 DNS 登錄連接 Intune 與公司的網域名稱  |
-| 4 | [新增使用者](users-add.md) - 手動新增使用者或連線 Active Directory 以同步使用者和 Intune  |
-| 5 | [指派授權](licenses-assign.md) - 提供使用者使用 Intune 的權限|
-| 6 |  [新增群組](groups-add.md) - 使用使用者和裝置群組來簡化管理工作 |
-| 7 | [新增應用程式](apps-add.md) - 啟用可對使用者部署的設定和應用程式 |
-| 8 | [設定裝置](device-profiles.md) - 設定管理裝置和存取公司資源的設定檔 |
-| 9 | [自訂公司入口網站](company-portal-app.md) - 自訂 Intune 公司入口網站   |
-| 10 | [啟用裝置註冊](mdm-authority-set.md) - 啟用 iOS、Windows、Android 及 Mac 裝置的 Intune 管理 |
+| 1  | [必要條件](supported-devices-browsers.md) - 開始之前需要知道的資訊。 這包含支援的設定和網路需求。|
+| 2 |  [登入 Intune](account-sign-up.md) - 登入試用訂用帳戶，或建立新的 Intune 訂用帳戶。 |  
+| 3 | [設定網域名稱](custom-domain-name-configure.md) - 設定 DNS 註冊，以連線您公司的網域名稱與 Intune。 連線至 Intune 並使用資源時，這可將熟悉的網域提供給使用者。  |
+| 4 | [新增使用者](users-add.md) - 手動新增使用者，或連線 Active Directory 以同步使用者與 Intune。 例如，除非您的裝置是「無使用者」Kiosk 裝置，否則為必要項目。 |
+| 5 | [指派授權](licenses-assign.md) - 將使用 Intune 的權限提供給使用者。 每個使用者或無使用者裝置都需要有 Intune 授權才能存取服務。|
+| 6 |  [新增群組](groups-add.md) - 使用使用者和裝置群組來簡化管理工作。 群組用來指派應用程式、設定和其他資源。 |
+| 7 | [新增應用程式](apps-add.md) - 可以將應用程式指派給群組，並自動或選擇性地進行安裝。 |
+| 8 | [設定裝置](device-profiles.md) - 設定可管理裝置設定的設定檔。 裝置設定檔可以預先設定電子郵件、VPN、Wi-Fi 和裝置功能的設定。 它們也可以限制裝置，協助保護裝置和資料。  |
+| 9 | [自訂公司入口網站](company-portal-app.md) - 自訂使用者用來註冊裝置並安裝應用程式的 Intune 公司入口網站。 這些設定會顯示在公司入口網站應用程式和 Intune 公司入口網站中。 |
+| 10 | [啟用裝置註冊](mdm-authority-set.md) - 設定 MDM 授權單位以及啟用特定平台，以啟用 iOS、Windows、Android 及 Mac 裝置的 Intune 管理。 |

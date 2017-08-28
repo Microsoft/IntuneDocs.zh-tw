@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
@@ -33,8 +33,8 @@ ms.lasthandoff: 07/01/2017
 
 1.  確定已設定裝置的螢幕鎖定 PIN 或密碼。
 
-2.  在 [設定] 中，選擇 [安全性] &gt; [加密裝置]。
-    注意：在某些電話上，您需要選擇 [儲存體] &gt; 「Storage encryption」 (儲存體加密) 或 [儲存體] &gt; 「Lock screen and security」 (鎖定螢幕和安全性) &gt; [其他安全性設定] 來尋找 [加密] 選項。
+2.  在 [設定] 中，選擇 [安全性] > [加密裝置]
+    (在某些電話上，您需要選擇 [儲存體] > [儲存體加密] 或 [儲存體] > [Lock screen and security] (鎖定螢幕和安全性) > [其他安全性設定] 來尋找 [加密] 選項)。
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
 
@@ -54,14 +54,16 @@ ms.lasthandoff: 07/01/2017
 - 請確定您已在裝置上設定 PIN 或密碼。
 - 如果您已在裝置上設定 PIN 或密碼，請嘗試下列的步驟，以讓 IT 系統管理員為您的裝置進行更安全的防護。 您所看到的功能表名稱可能和步驟中的名稱稍有不同，視您擁有的 Android 裝置類型而定。
 
-    1. 移至 **[設定]** > **[安全性]** > **[螢幕鎖定]**。 確認目前的 PIN 或密碼。
+    1. 移至 [設定] > [Lock screen and security] (鎖定螢幕和安全性) > [螢幕鎖定]。 確認目前的 PIN 或密碼。
 
-    2. 在 **[Choose screen lock] (選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。
+    2. 在 **[Choose screen lock] (選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。 
 
-    3. 在 **「Secure start-up」 (安全啟動)** 畫面上，依序點選 **「Require PIN to start device」 (需要 PIN 以啟動裝置)** **[繼續]**。
+    3. 在您選擇螢幕鎖定之後，請回到 [Lock screen and security] (鎖定螢幕和安全性) 畫面，然後選取 [安全啟動]。 
+    
+    4. 在 [安全啟動] 畫面上，依序點選 [Require PIN to start device] (需要 PIN 才能啟動裝置) 和 [繼續]。
 
-    4. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**「Confirm your PIN」 (確認您的 PIN)**。
+    5. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**「Confirm your PIN」 (確認您的 PIN)**。
 
-    5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
+    6. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
 是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
@@ -60,18 +60,20 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 使用向 Azure AD 驗證的用戶端，OData URL 會連線至資料倉儲 API 中向報告用戶端公開資料模型的 RESTful 端點。 請遵循這些指示，使用 Power BI Desktop 連線並建立您自己的報表。 您不是只能使用 Power BI Desktop，但可以搭配使用最愛的分析工具與 OData URL，但前提是用戶端支援 OAUTH2.0 驗證和 OData 4.0 版標準。
 
-1.  從報告刀鋒視窗中擷取 **OData URL**，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`。
-2.  開啟 [Power BI Desktop]。
-3.  選擇 [首頁] > [取得資料]。 選取 [OData 摘要]。
-4.  選擇 [基本]。
-5.  將 [OData URL] 鍵入或貼入 URL 方塊。
-6.  按一下 [ **確定**]。
-7.  如果尚未從 Power BI Desktop 用戶端向租用戶的 Azure AD 驗證您，請鍵入您的認證。  
-    a.  選取 [組織帳戶]。  
-    b。  鍵入您的使用者名稱和密碼。  
-    c.  按一下 [登入]。  
-    d.  按一下 **[Connect]**(連線)。  
-8.  按一下 [載入]。
+1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
+2.  開啟 [Microsoft Intune 資料倉儲 API (預覽)] 刀鋒視窗。
+3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`。
+4. 開啟 [Power BI Desktop]。
+5. 選擇 [首頁] > [取得資料]。 選取 [OData 摘要]。
+6. 選擇 [基本]。
+7. 將 [OData URL] 鍵入或貼入 URL 方塊。
+8. 按一下 [ **確定**]。
+9. 如果尚未從 Power BI Desktop 用戶端向租用戶的 Azure AD 驗證您，請鍵入您的認證。  
+    1.  選取 [組織帳戶]。  
+    2.  鍵入您的使用者名稱和密碼。  
+    3.  按一下 [登入]。  
+    4.  按一下 **[Connect]**(連線)。  
+10. 按一下 [載入]。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -79,4 +81,4 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  已組織您的租用戶資料，協助您從資料中提取深入解析。 如需資料組織方式的詳細資訊，請參閱[資料倉儲資料模型](reports-ref-data-model.md)。 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  您也可以從 RESTful 介面存取資料，並且將資料併入您自己的應用程式。 如需詳細資訊，請參閱[使用 REST 用戶端從資料倉儲 API 取得資料](reports-proc-data-rest.md)。

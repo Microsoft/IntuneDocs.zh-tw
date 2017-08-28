@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Intune 註冊選項
 
@@ -41,6 +41,9 @@ ms.lasthandoff: 07/11/2017
 ## <a name="corporate-identifiers"></a>公司識別碼
 
 您可以列出國際行動設備識別碼 (IMEI) 編號及序號，以識別公司擁有的裝置。 深入了解[公司識別碼](corporate-identifiers-add.md)。
+## <a name="multi-factor-authentication"></a>[Multi-Factor Authentication]
+
+您可以要求使用者在註冊裝置時使用其他驗證方法，例如電話、PIN 或生物特徵辨識資料。 深入了解[多重要素驗證](multi-factor-authentication.md)。
 
 ## <a name="device-enrollment-manager"></a>裝置註冊管理員
 指派使用者擔任裝置註冊管理員。  DEM 使用者可以使用單一使用者帳戶來註冊大量的行動裝置。 裝置註冊管理員 (DEM) 帳戶最多可以註冊 1,000 部裝置。 深入了解[裝置註冊管理員](device-enrollment-manager-enroll.md)。

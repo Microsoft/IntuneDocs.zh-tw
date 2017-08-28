@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 VPN 設定
 
@@ -96,10 +96,13 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="conditional-access"></a>條件式存取
 
-**此 VPN 連線的條件式存取** -
-**使用其他憑證的單一登入 (SSO)** -
-**擴充金鑰使用方法** -
-**簽發者雜湊** -
+**此 VPN 連線的條件式存取** - 從用戶端啟用裝置合規性流程。 啟用時，VPN 用戶端將嘗試與 Azure Active Directory 通訊，以取得要用於驗證的憑證。 VPN 應該設定成使用憑證驗證，而且 VPN 伺服器必須信任 Azure Active Directory 所傳回的伺服器。
+
+**使用其他憑證的單一登入 (SSO)** - 針對裝置合規性，使用與 VPN 驗證憑證不同的憑證來進行 Kerberos 驗證。 指定具有下列設定的憑證： 
+
+- **擴充金鑰使用方法** - 擴充金鑰使用方法 (EKU) 的名稱。
+- **物件識別碼** - EKU 的物件識別碼。
+- **簽發者雜湊** - SSO 憑證的指紋。
 
 ## <a name="dns-settings"></a>DNS 設定
 

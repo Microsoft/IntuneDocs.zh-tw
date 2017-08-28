@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -52,9 +52,9 @@ ms.lasthandoff: 08/04/2017
 | IsCurrent |指出資料倉儲目前是否有此應用程式版本 |True/False |
 | RowLastModifiedDateTimeUTC |此應用程式修訂前次在資料倉儲中修改的 UTC 日期和時間 |11/23/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-**AppInstallerTypes** 實體會列出應用程式的安裝來源。
+**AppTypes** 實體會列出應用程式的安裝來源。
 
 | 屬性  | 描述 |
 |---------|------------|
@@ -80,44 +80,6 @@ ms.lasthandoff: 08/04/2017
 | 11 |Windows Mobile MSI |MSI 企業營運應用程式 |
 | 12 |Windows Phone LOB 應用程式 |Windows Phone 企業營運應用程式 |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-**ApplicationTypes** 實體會列出應用程式的可能類型。
-
-| 屬性  | 描述 |
-|---------|------------|
-| ApplicationTypeID |類型識別碼 |
-| ApplicationTypeKey |索引鍵的 Surrogate 索引鍵 |
-| ApplicationTypeName |應用程式類型 |
-
-## <a name="example"></a>範例
-
-| ApplicationTypeID  | Name | 描述 |
-|---------|------------|--------|
-| 0 |InHouse |內部開發的應用程式 |
-| 1 |DeepLink |應用程式市集中的應用程式連結 |
-| 2 |WebLink |Web 應用程式的連結 |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-**ManagedSoftwareTypes** 實體會列出應用程式可能受管理的軟體類型。
-
-| 屬性  | 描述 |
-|---------|------------|
-| SoftwareTypeID |類型識別碼 |
-| SoftwareTypeKey |索引鍵的 Surrogate 索引鍵 |
-| SoftwareTypeName |軟體類型 |
-
-## <a name="example"></a>範例
-
-| SoftwareTypeID  | Name | 描述 |
-|---------|------------|--------|
-| 0 |桌面 |桌面應用程式 |
-| 2 |更新 |視窗更新 |
-| 5 |SideCarAgent | |
-| 1 |行動電話 |行動裝置應用程式 |
-| 3 |WebLink |網頁連結 |
-| 4 |VppDeepLink |屬於 VPP (大量採購方案) 的應用程式市集中的應用程式連結 |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

@@ -1,12 +1,12 @@
 ---
 title: "開始使用註冊裝置"
 titleSuffix: Intune on Azure
-description: 
+description: "透過 iOS 裝置的完整註冊體驗，來學習註冊體驗。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>開始使用註冊裝置
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>開始註冊裝置
 
 Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保護公司資料。 因為您的終端使用者會與 Intune 在其裝置上互動，而不是在管理主控台互動，所以請確定您的註冊體驗流暢。 如此一來，您可以結合精巧的合規性原則與體驗，展現對使用者的同理心。 這點尤其重要，因為您的使用者將會知道身為系統管理員的您究竟可以看到哪些資訊：
 
-## <a name="what-it-cannot-see"></a>IT 看不到的內容
-* 電話和 Web 瀏覽歷程記錄
-* 位置
-* 個人電子郵件
-* 簡訊
-* 連絡人
-* 您的個人帳戶密碼
-* 行事曆事件
-* 圖片，包括相片應用程式或手機相簿的內容
-
-## <a name="what-it-can-see"></a>IT 可以看到的內容
-* 型號
-* 序號
-* 作業系統版本
-* 應用程式名稱
-* Owner
-* 裝置名稱
-* 製造商 (適用於非 Apple 製造的裝置)
-* 電話號碼 (若為公司的裝置，則為完整號碼。 若為個人裝置，則僅為末四碼)。
+| IT 看不到的內容 | IT 可以看到的內容 |
+|---|---|
+| 電話和 Web 瀏覽歷程記錄 | 型號 |
+| 位置 | 序號 |
+| 個人電子郵件 | 作業系統版本 |
+| 簡訊 | 應用程式名稱 |
+| 連絡人 | Owner |
+| 您的個人帳戶密碼 | 裝置名稱 |
+| 行事曆事件 | 製造商 (適用於非 Apple 製造的裝置) |
+| 圖片，包括相片應用程式或手機相簿的內容 | 電話號碼 (若為公司的裝置，則為完整號碼。 若為個人裝置，則僅為末四碼)。 |
 
 ## <a name="how-do-i-enroll-a-device"></a>如何註冊裝置？
 
@@ -67,3 +56,13 @@ Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保
 14. 畫面變更成顯示設定檔已完成安裝時，請點選 [完成]。
 15. 畫面上會顯示「註冊裝置」訊息，然後顯示已成功註冊裝置。 會出現快顯視窗，詢問是否在公司入口網站中開啟頁面。 點選 [開啟]。
 16. 您會回到 [公司存取設定] 畫面。 如果您未設定任何測試原則，那麼裝置應該會顯示為符合規範。 如果您有任何測試原則，則點選 [裝置合規性] 會顯示需要完成的事項，以確保裝置安全。
+
+## <a name="next-steps"></a>後續步驟
+
+[開始新增應用程式](get-started-apps.md) - 找到應用程式，並將其新增至裝置，讓您的員工可以完成工作。
+
+## <a name="learn-more"></a>進一步了解
+
+* [Intune 註冊選項](enrollment-options.md)
+* [使用 Intune 啟用攜帶您自己的裝置](byod-enable.md)
+* [教育終端使用者的註冊和裝置管理](end-user-educate.md)
