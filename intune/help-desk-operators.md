@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
-ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
+ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑難排解入口網站協助使用者
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 08/12/2017
 例如，當使用者向支援人員諮詢 Intune 的技術問題時，服務台操作員會輸入使用者的名稱。 Intune 會顯示可協助解決許多第 1 層問題的實用資料，包括：
 - 使用者狀態
 - 作業
-- 應用程式安裝失敗
 - 相容性問題
 - 裝置沒有回應
 -   裝置無法取得 VPN 或 Wi-Fi 設定
