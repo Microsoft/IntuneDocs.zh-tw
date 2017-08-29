@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: ba953f1f471cc8bdbfdadad75c8f4eeb8acc2279
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Microsoft Intune 的舊版 - 2017 年 8 月
 
@@ -57,15 +57,12 @@ ms.lasthandoff: 08/10/2017
 您可依 URL、套件名稱，或從管理的應用程式清單中指定應用程式。
 
 ### <a name="new-settings-for-windows-10-device-restriction-profile"></a>適用於 Windows 10 裝置限制設定檔的新設定
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 我們將為 Windows Defender SmartScreen 類別中的 Windows 10 裝置限制設定檔新增設定。
 
 如需 Windows 10 裝置限制設定檔的詳細資料，請參閱 [Windows 10 及更新版本的裝置限制設定]( device-restrictions-windows-10.md)。
 
-### <a name="new-device-restriction-settings-for-windows-10------1063965---"></a>Windows 10 的新裝置限制設定   <!-- 1063965 -->
-我們將為下列類別中的 [Windows 10 裝置限制設定檔](/intune/device-restrictions-windows-10)新增設定：
-- Windows Defender SmartScreen
-- App Store
+
 
 
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>適用於 Lookout 的 Android for Work 支援 <!-- 1087312 -->   
@@ -118,13 +115,11 @@ Windows Phone 8.1 平台將於 2017 年 7 月 11 日結束主要支援。 Window
 使用者很快地不必註冊裝置也能存取 Android 的公司入口網站。 使用應用程式保護原則的組織使用者，在開啟公司入口網站應用程式時，將不會再收到註冊裝置的提示。 使用者也可以從公司入口網站安裝應用程式，不用註冊裝置。 
 
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>改進使用者達到允許註冊的裝置數目上限時的錯誤訊息 <!-- 1270370 -->
-終端使用者不會看到一般錯誤訊息，而是會看到實用且可採取動作的錯誤訊息：「您已註冊 IT 系統管理員所允許的裝置數目上限。 請移除已註冊的裝置，或向您的 IT 系統管理員取得協助。」
+終端使用者不會看到一般錯誤訊息，而是會看到實用且可採取動作的錯誤訊息：「您已註冊 IT 系統管理員所允許的裝置數目上限。請移除已註冊的裝置，或向您的 IT 系統管理員取得協助。」
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司入口網站使用者和應用程式防護原則使用者的新登入體驗 <!-- 621669 -->
-終端使用者將能夠使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置及檢視 IT 連絡人資訊，而不需要註冊其 Android 裝置。 此外，如果終端使用者已使用由 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，則終端使用者將無法再收到註冊裝置的提示。 
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知終端使用者可看到哪些 iOS 裝置資訊 <!--739894-->
-我們將為適用於 iOS 的公司入口網站應用程式中的 [裝置詳細資料] 畫面新增 [Ownership Type] (擁有權類型)。 如此一來，使用者就能夠直接從 Intune 終端使用者文件的此頁面，了解有關隱私權的更多資訊。 他們也能夠在 [關於] 畫面上找到這項資訊。
+我們將為適用於 iOS 的公司入口網站應用程式中的 [裝置詳細資料] 畫面新增 [Ownership Type] (擁有權類型)。 如此一來，使用者就能夠直接從 Intune 終端使用者文件的此頁面，了解有關隱私權的更多資訊。他們也能夠在 [關於] 畫面上找到這項資訊。
 
 ### <a name="apps-details-pages-display-new-information-for-android-devices---1287476--"></a>應用程式詳細資料頁面會顯示 Android 裝置的新資訊 <!--1287476-->
 適用於 Android 之公司入口網站應用程式的應用程式詳細資料頁面，會顯示 IT 系統管理員已為該應用程式定義的應用程式類別。
