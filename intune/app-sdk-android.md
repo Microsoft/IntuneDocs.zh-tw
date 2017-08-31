@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -597,7 +597,7 @@ Result getRegisteredAccountStatus(String upn);
 
 * 如果應用程式沒有傳回有效的 AAD 權杖，來自註冊嘗試的最終結果將會是 `AUTHENTICATION_NEEDED`。 如果應用程式透過通知接收到此結果，它可以透過取得 **MAMService** 權杖，並呼叫 `updateToken()` 方法以再次初始化註冊程序，來加快註冊程序的速度。 這並「不是」強制的需求，不過由於 SDK 會定期重試註冊並叫用回呼以取得權杖，
 
-* 因此也會呼叫應用程式的已註冊 `MAMServiceAuthenticationCallback`，以取得定期應用程式保護原則重新整理簽入的權杖。 如果應用程式無法在要求時提供權杖，便不會收到通知，不過它應該於下一個適當的時機嘗試取得權杖並呼叫 `updateToken()`，以加速簽入程序。 如果不提供權杖，在下一個簽入嘗試時仍然會呼叫回呼。
+* 因此也會呼叫應用程式的已註冊 `MAMServiceAuthenticationCallback`，以取得定期應用程式保護原則重新整理簽入的權杖。如果應用程式無法在要求時提供權杖，便不會收到通知，不過它應該於下一個適當的時機嘗試取得權杖並呼叫 `updateToken()`，以加速簽入程序。 如果不提供權杖，在下一個簽入嘗試時仍然會呼叫回呼。
 
 #### <a name="registration"></a>註冊
 
@@ -663,6 +663,7 @@ Intune 可讓您利用 Android 中可用的所有[自動備份功能](https://de
     ```xml
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
+
 
 2. **[選擇性]** 如果您實作選擇性的自訂 BackupAgent，則必須使用 MAMBackupAgent 或 MAMBackupAgentHelper。 請參閱下列各節。 請考慮改用 Intune 的 **MAMDefaultFullBackupAgent** (已於步驟 1 中詳述)，它能針對 Android M 及更新版本提供簡易的備份功能。
 
@@ -1340,8 +1341,6 @@ public interface MAMAppConfig {
 
  Intune App SDK 隨附的 AndroidManifest.xml 檔案包含 **MAMNotificationReceiverService**，其必須為匯出的服務，才能讓公司入口網站傳送通知給可搭配 Intune 的應用程式。 服務會檢查呼叫者以確保僅允許公司入口網站傳送通知。
 
-
-
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 取用者的期望
 
 Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強制執行原則，而更頻繁地觸發失敗狀況。 下列 Android 最佳作法可降低失敗的可能性：
@@ -1353,6 +1352,13 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 * 任何衍生的函式皆必須透過其超級類別版本進行呼叫。
 
 * 避免以模稜兩可的方式使用任何 API。 例如，在未檢查 requestCode 的情況下使用 `Activity.startActivityForResult`，將會導致奇怪的行為。
+
+## <a name="telemetry"></a>遙測
+
+Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄下列使用狀況事件的遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。
+
+> [!NOTE]
+> 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="recommended-android-best-practices"></a>建議的 Android 最佳作法
 

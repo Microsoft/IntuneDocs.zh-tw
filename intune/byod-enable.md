@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>使用 Intune 來啟用 BYOD
 
@@ -44,22 +44,22 @@ ms.lasthandoff: 08/08/2017
 
 準備好 Intune 服務之後，您必須符合想要管理之不同裝置類型的各種註冊需求。 註冊裝置以納入管理的程序很簡單，但根據裝置類型會略有不同。
 
--   **iOS 和 Mac 裝置**：您必須[取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)，才能註冊 iPad、iPhone 或 MacOS 裝置。 將 MDM Push Certificate 上傳至 Intune 之後，使用者可以使用公司入口網站應用程式[註冊 iOS 裝置](/intune-user-help/enroll-your-device-in-intune-ios)，並使用公司入口網站[註冊 MacOS 裝置](/intune-user-help/enroll-your-device-in-intune-macos)。
+-   **iOS 和 Mac 裝置**：您必須[取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)，才能註冊 iPad、iPhone 或 macOS 裝置。 將 MDM Push Certificate 上傳至 Intune 之後，使用者可以使用公司入口網站應用程式[註冊 iOS 裝置](/intune-user-help/enroll-your-device-in-intune-ios)，並使用公司入口網站[註冊 macOS 裝置](/intune-user-help/enroll-your-device-in-intune-macos)。
 
 -   **Android 裝置** 您不需要準備 Intune 服務即可註冊 Android 裝置。 使用者只要使用 Google Play 提供的公司入口網站應用程式即可[註冊 Android 裝置](/intune-user-help/enroll-your-device-in-intune-android)。
 
--   **Windows 手機和電腦**：您可以進行額外設定來註冊 Windows 裝置。 若要簡化您的使用者體驗，您可以在 Azure Active Directory (AD) Premium 中，啟用 Windows 10 電腦和 Windows 10 行動裝置的自動註冊。 如果您沒有 Azure AD Premium 或需要支援 Windows 8.1，您可以建立[註冊伺服器的 DNS 別名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)來簡化註冊。
+-   **Windows 手機和電腦**：您可以進行額外設定來註冊 Windows 裝置。 您可以在 Azure Active Directory (AD) Premium 中啟用 Windows 10 電腦和 Windows 10 行動裝置的自動註冊，以簡化您的使用者體驗。 如果您沒有 Azure AD Premium 或需要支援 Windows 8.1，您可以建立[註冊伺服器的 DNS 別名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)來簡化註冊。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>請確定受管理的裝置符合基本安全性需求
 
 在使用者註冊其裝置以納入管理之後，IT 必須確定用來存取公司應用程式和資料的裝置必須符合基本安全性需求。 這些規則可能包括使用 PIN 來存取裝置，以及為裝置中儲存的資料加密。 這組規則稱為[合規性政策](device-compliance.md)。
 
-當您為使用者[部署合規性原則](device-compliance-get-started.md)時，Intune 會檢查 Intune 管理的所有使用者裝置，以確認這些裝置符合您 BYOD 原則中定義的基本安全性需求。 裝置經過原則合規性評估之後，會向 Intune 回報其狀態。 在某些情況下，可能會要求使用者修正設定，例如其 PIN 或裝置加密。 其他時候，公司入口網站應用程式只會通知使用者有關任何不符合原則的設定。
+當您為使用者[部署合規性原則](device-compliance-get-started.md)時，Intune 會檢查使用者使用 Intune 所管理的每部裝置，以確認裝置符合您 BYOD 原則中定義的基本安全性需求。 裝置經過原則合規性評估之後，會向 Intune 回報其狀態。 在某些情況下，可能會要求使用者修正設定，例如其 PIN 或裝置加密。 其他時候，公司入口網站應用程式只會通知使用者有關任何不符合原則的設定。
 
 ## <a name="provide-access-to-company-resources"></a>提供公司資源存取
 
-大部分員工在其行動裝置上要做的第一件事，就是存取公司電子郵件和文件。 他們希望不經複雜的步驟或呼叫技術支援中心，就能完成設定。 Intune 可讓您為預先安裝在行動裝置上的原生電子郵件應用程式，輕鬆[建立及部署電子郵件設定](email-settings-configure.md)。
+大部分員工想在其行動裝置上存取的第一個項目，就是公司電子郵件和文件。 他們希望不經複雜的步驟或呼叫技術支援中心，就能完成設定。 Intune 可讓您為預先安裝在行動裝置上的原生電子郵件應用程式，輕鬆[建立及部署電子郵件設定](email-settings-configure.md)。
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Intune 也可讓您管理及部署從 iOS 應用程式市集和商務用 Microso
 
 ## <a name="protect-company-data"></a>保護公司資料
 
-Intune 透過多個技術層級保護公司資料。 在身分識別層中，條件式存取可保護服務存取。 條件式存取僅允許受管理及符合標準的裝置存取公司資源。 在用戶端應用程式層中，行動應用程式管理 (MAM) 可保護避免資料遺失。  應用程式保護原則可防止資料移至未受保護的應用程式或儲存位置。 這些原則也可讓您在裝置遺失或遭竊時抹除公司資料。
+Intune 透過多個技術層級保護公司資料。 在身分識別層中，條件式存取可保護服務存取。 條件式存取僅允許受管理及符合標準的裝置存取公司資源。 在用戶端應用程式層，應用程式保護原則可避免資料遺失。 應用程式保護原則可防止資料移至未受保護的應用程式或儲存位置。 這些原則也可讓您在裝置遺失或遭竊時抹除公司資料。
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>強制執行公司資源的條件式存取
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > 如果沒有可驗證相容性的相容性原則，條件式存取原則即無法運作。
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>使用應用程式保護原則來避免公司資料遺失
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>使用應用程式保護原則來避免公司資料遺失
 
-利用 Intune 的應用程式保護原則，不論裝置是否已註冊，您都可以選擇存取資料方式。 這項彈性可讓您保護公司資料，即使使用者未在 Intune 中註冊其裝置，他們仍然可以安全地存取公司資料。
+利用 Intune 應用程式保護原則，不論裝置是否已註冊，您都可以選擇資料存取方式。 這項彈性可讓您保護公司資料，即使使用者未在 Intune 中註冊其裝置，他們仍然可以安全地存取公司資料。
 
-您可以使用 [Intune 應用程式保護原則](app-protection-policies.md)，協助保護由使用者的 iOS 和 Android 裝置存取的公司資料。 使用這些應用程式層級原則時，即使裝置本身不是由 Intune 所管理，您也可以控制員工使用與共用公司資料的方式
+您可以使用 [Intune 應用程式保護原則](app-protection-policies.md)，協助保護 iOS 和 Android 裝置存取的公司資料。 使用這些應用程式層級原則時，即使裝置本身不是由 Intune 所管理，您也可以控制員工使用與共用公司資料的方式
 
-使用 [Windows 資訊保護 (WIP) 原則](app-protection-policies-configure-windows-10.md)，可為受管理的 Windows 10 裝置執行相同動作。 這些原則的運作不會干擾員工的體驗。 它們不需要變更您的網路環境或其他應用程式。
+使用 [Windows 資訊保護 (WIP)](app-protection-policies-configure-windows-10.md)，可為受管理的 Windows 10 裝置執行相同動作。 這些原則的運作不會干擾員工的體驗。 它們不需要變更您的網路環境或其他應用程式。
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>移除公司資料，但完整保留個人資料
 
-當裝置不再用於工作、要重新決定用途或只是遺失時，您可以從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的移除公司資料和恢復出廠預設值功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端重設這些裝置。
+當裝置不再用於工作、要重新決定用途或遺失時，您可以從中移除公司的應用程式和資料。 若要這樣做，您可以使用 Intune 的移除公司資料和恢復出廠預設值功能。 如果已在 Intune 中註冊使用者的個人自有裝置，您的使用者也可以從 Intune 公司入口網站遠端重設這些裝置。
 
 [恢復出廠預設值](devices-wipe.md)會將裝置還原為其出廠預設值、移除使用者資料和設定，並從 Intune 管理項目移除裝置。 [移除公司資料](devices-wipe.md#remove-company-data)只會從裝置移除公司資料，但完整保留使用者的個人資料。
 
