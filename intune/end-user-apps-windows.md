@@ -14,11 +14,11 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 68b02a52dce49db470b11cbdf32308a74688ca45
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 1a1c853aa16b771eff47d1d179f8870d7c1036a8
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 07/13/2017
 
 **可用的應用程式** - 公司入口網站應用程式清單中所提供且使用者可能選擇要安裝。
 
-**受管理的應用程式** - 可透過原則進行管理，以及已由 Intune「包裝」或已透過 Intune 行動應用程式管理 (MAM) 軟體開發套件 (SDK) 建置。 這些應用程式可由 Intune 管理，並套用應用程式原則。
+**受管理的應用程式**可透過原則進行進行管理，以及已由 Intune「包裝」或已透過 Intune App 軟體開發套件 (SDK) 建置的應用程式。 這些應用程式可由 Intune 管理，並套用應用程式保護原則。
 
-**未受管理的應用程式** - 可透過原則進行管理，以及未受 Intune 包裝或不包含 Intune MAM SDK。 應用程式原則不適用於這些應用程式。
+**未受管理的應用程式** - 可透過原則進行管理，以及未受 Intune 包裝或不包含 Intune App SDK。 應用程式保護原則不適用於這些應用程式。
 
 ### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)

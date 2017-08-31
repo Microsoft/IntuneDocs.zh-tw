@@ -6,20 +6,20 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -41,13 +41,13 @@ ms.lasthandoff: 08/21/2017
 ## <a name="set-mdm-authority-to-intune"></a>將 MDM 授權單位設為 Intune
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
-2. 在 [Intune] 刀鋒視窗上，選擇 [裝置註冊]，然後選擇 [概觀]。
-![Intune 設定行動裝置管理授權單位畫面的螢幕擷取畫面](media/set-mdm-auth.png)
-
+2. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。
 3. 在 [行動裝置管理授權單位] 下，從下列選項中選擇您的 MDM 授權單位：
   - **Intune MDM 授權單位**
   - **Configuration Manager MDM 授權單位**
   - **無**
+
+  ![Intune 設定行動裝置管理授權單位畫面的螢幕擷取畫面](media/set-mdm-auth.png)
 
   接著會顯示一則訊息指出您已成功將 Intune 設定為 MDM 授權單位。
 

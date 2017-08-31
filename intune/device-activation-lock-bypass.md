@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受監督的 iOS 裝置上略過啟用鎖定
 
@@ -58,8 +58,8 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
 在您可以略過裝置上的啟用鎖定之前，必須先遵循下列指示啟用它：
 
 1. 使用[如何設定裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的資訊，來設定適用於 iOS 的 Intune 裝置限制設定檔。
-2. 啟用 [Kiosk] 模式設定 [啟用鎖定]。
-3. 儲存設定檔，然後將它指派給您想要管理啟用鎖定略過的裝置。
+2. 在 [iOS 的裝置限制設定](device-restrictions-ios.md) 中，於 [一般] 設定下，啟用 [啟用鎖定] 選項。
+3. 儲存設定檔，然後將它[指派](device-profile-assign.md)給您想要管理啟用鎖定略過的裝置。
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>如何使用啟用鎖定略過

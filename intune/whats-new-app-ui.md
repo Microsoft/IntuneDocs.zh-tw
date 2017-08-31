@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
+## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日這週
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune 行動應用程式管理 (MAM) 對話方塊會有新式介面 <!-- 1199015 -->
+
+Intune 行動應用程式管理 (MAM) 對話方塊將更新為新式外觀和操作。 這些對話方塊的運作方式會與舊版樣式相同。
+
+**先前經驗**
+
+![舊介面](media\NewUI_Old_AttachFileHandler.jpg)
+
+**新式經驗**
+
+![新式介面](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日這週
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新 <!---1287448--->
 
 Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下方移至 [裝置詳細資料] 頁面上的屬性。
 
 ![Windows 之公司入口網站應用程式的 [裝置詳細資料] 畫面，現在會將 [類別] 欄位顯示為屬性，而不是直接顯示在該畫面的標題下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日一週
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>應用程式詳細資料頁面將顯示 Android 裝置的新資訊 <!--1287476-->
+
+適用於 Android 之公司入口網站應用程式的應用程式詳細資料頁面，現在會顯示 IT 系統管理員已為該應用程式定義的應用程式類別。
+
+![新的應用程式詳細資料頁面](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改善適用於所有平台的公司入口網站應用程式登入體驗 <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊
 
 ## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日一週
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>iOS 版公司入口網站應用程式中應用程式磚的增強功能
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>適用於 iOS 之公司入口網站應用程式中應用程式磚的改善 <!--1230777-->
 我們已更新首頁上應用程式磚的設計，以反映您為公司入口網站設定的商標色彩。
 
 **更新前**

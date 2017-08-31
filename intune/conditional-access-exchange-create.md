@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立及指派條件式存取原則
 
@@ -122,11 +122,7 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 在 [Intune 儀表板] 中，選擇 [條件式存取]。
 
-2. 在 [條件式存取儀表板] 中，選擇 [Azure Active Directory 中的條件式存取]。
-
-3. 選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
-
-    ![Azure AD 條件式存取原則](./media/Azure-AD-CA-Intune.png)
+2. 在 [原則] 刀鋒視窗中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
 
 ## <a name="see-also"></a>請參閱
 

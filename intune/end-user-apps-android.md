@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 08/21/2017
 
 應用程式可為受管理或不受管理，如下所述。 讓應用程式受管理的程序，針對所有類型的 Android 裝置都是相同的。
 
-**受管理的應用程式** - 可透過原則進行管理的應用程式。 這些應用程式已由 Intune「包裝」或已透過 Intune 行動應用程式管理 (MAM) 軟體開發套件 (SDK) 建置。 這些應用程式可由 Intune 管理，並套用應用程式原則。
+**受管理的應用程式** - 可透過原則進行管理的應用程式。 它們已由 Intune「包裝」或已透過 Intune App SDK 建置。 這些應用程式可由 Intune 管理，並套用應用程式原則。
 
-**未受管理的應用程式** - 無法透過原則進行管理的應用程式。 這些應用程式未受 Intune 包裝或不包含 Intune MAM SDK。 應用程式原則不適用於這些應用程式。
+**未受管理的應用程式** - 無法透過原則進行管理的應用程式。 它們未受 Intune 包裝或不包含 Intune App SDK。 應用程式原則不適用於這些應用程式。
 
 ### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 新增應用程式](apps-add.md)

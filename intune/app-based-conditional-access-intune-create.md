@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>設定以應用程式為基礎的條件式存取原則
 
@@ -59,9 +59,30 @@ ms.lasthandoff: 07/03/2017
 2. 按一下省略符號以查看刪除選項。
 3. 選擇 [刪除] 從清單中移除使用者群組。
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>在 Azure AD 工作負載中建立以應用程式為基礎的條件式存取原則
+
+從 Intune 1708 版本開始，IT 系統管理員可以從 Azure AD 工作負載建立以應用程式為基礎的條件式存取原則。 這提供方便性，因此您不需要切換 Azure 與 Intune 工作負載。
+
+> [!IMPORTANT]
+> 您必須要有 Azure AD Premium 授權，才能從 Intune Azure 入口網站建立 Azure AD 條件式存取原則。
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>建立以應用程式為基礎的條件式存取原則
+
+> [!IMPORTANT]
+> 您需要先將 [Intune 應用程式保護原則](app-protection-policies.md)套用至應用程式，再使用以應用程式為基礎的條件式存取原則。
+
+1. 在 [Intune 儀表板] 中，選擇 [條件式存取]。
+
+2. 在 [原則] 刀鋒視窗中，選擇 [新增原則] 來建立以應用程式為基礎的新條件式存取原則。
+
+4. 在您輸入原則名稱並在 [指派] 區段中設定可用的設定之後，接著選擇 [存取控制] 區段下的 [授與]。
+
+5. 依序選擇 [需要經過核准的用戶端應用程式][選取]及 [確定] 儲存新的原則。
+
 ## <a name="next-steps"></a>後續步驟
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>請參閱
 
 [使用應用程式保護原則保護應用程式資料](app-protection-policies.md)
+[Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

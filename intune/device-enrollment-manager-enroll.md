@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用裝置註冊管理員註冊裝置
 
@@ -40,15 +40,15 @@ ms.lasthandoff: 07/01/2017
 
 DEM 使用者可以︰
 
--   在 Intune 中最多註冊 1000 部裝置。
--   登入公司入口網站以取得公司應用程式。
--   藉由將特定角色的應用程式部署到平板電腦來設定公司資料的存取權。
+-   在 Intune 中最多註冊 1000 部裝置
+-   登入公司入口網站以取得公司應用程式
+-   藉由將特定角色的應用程式部署到平板電腦來設定公司資料的存取權
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>以 DEM 帳戶註冊裝置的限制
 
 使用裝置註冊管理員帳戶所註冊的裝置具有下列限制︰
 
-  - 不具每位使用者的存取權。 由於裝置並未指派使用者，因此，裝置不具任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
+  - 不具每位使用者的存取權。 因為裝置並未指派使用者，所以裝置沒有任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
   - 因為這些案例均屬每位使用者，所以沒有條件式存取。
   - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以執行此動作，但 DEM 使用者不能。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
