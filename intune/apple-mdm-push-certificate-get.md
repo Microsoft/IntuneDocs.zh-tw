@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 915b432ed32565e820e16a65932fcdeac00d9bc3
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: a100b436ecf257c1e3886c23f15fa967fb877b7c
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>取得 Apple MDM Push Certificate
 
@@ -36,15 +36,16 @@ Intune 可啟用 iPad、iPhone 和 Mac 電腦的行動裝置管理 (MDM)，且�
   ![顯示未設定 MDM Push 之 [設定 MDM Push Certificate] 的螢幕擷取畫面。](./media/create-mdm-push-certificate.png)
 
 **步驟 2.建立 Apple MDM Push Certificate。**<br>
-選取 [建立您的 MDM Push Certificate]，以前往 Apple Push Certificates 入口網站。 透過公司 Apple ID 登入，以使用要求檔案建立 Push Certificate。 於 Apple 的 Push Certificates 入口網站上選擇 [上傳] 之後，您會收到一個 .json 檔案。 請務必為推播憑證使用此檔案。 完成下載，並回到 Apple Push Certificates 入口網站的 「Certificates for Third-Party Servers」 (協力廠商伺服器的憑證)，然後選擇 **[下載]**。 下載推播憑證 (.pem 檔案)，並於本機儲存該檔案。
+選取 [建立您的 MDM Push Certificate]，以前往 Apple Push Certificates 入口網站。 使用您的公司 Apple ID 登入，然後按一下 [建立憑證]。 選取 [選擇檔案]，然後瀏覽至憑證簽署要求檔案，然後選擇 [上傳]。 在 [確認] 頁面上，選取 [下載] 以下載憑證檔案 (.pem)，然後將檔案儲存在本機。
 
 > [!NOTE]
 > 憑證會與用來建立憑證的 Apple ID 相關。 最佳做法是對管理工作使用公司 Apple ID。 請不要使用個人 Apple ID。
 
-**步驟 3.輸入用以建立 Apple MDM Push Certificate 的 Apple ID。**
+**步驟 3.輸入用以建立 Apple MDM Push Certificate 的 Apple ID。**<br>
+請記錄此識別碼，以在需要更新此憑證時提醒您。
 
 **步驟 4.瀏覽至 Apple MDM Push Certificate 以進行上傳。**<br>
-前往憑證 (.pem) 檔案，選擇 [開啟]，然後選擇 [上傳]。 使用推播憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。
+前往憑證 (.pem) 檔案，選擇 [開啟]，然後選擇 [上傳]。 Intune 可利用推播憑證，註冊及管理 Apple 裝置。
 
 ## <a name="renew-apple-mdm-push-certificate"></a>更新 Apple MDM Push Certificate
 Apple MDM Push Certificate 有效期限為一年，必須每年更新以維護 iOS 及 macOS 裝置管理。 如果您的憑證過期，即無法連絡註冊的 Apple 裝置。

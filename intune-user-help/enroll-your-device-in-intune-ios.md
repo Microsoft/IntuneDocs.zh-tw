@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>在 Intune 註冊 iOS 裝置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 07/13/2017
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> 如果您要嘗試註冊 macOS 裝置 (例如 MacBook Pro 或 iMac)，請[改為嘗試這些指示](enroll-your-device-in-intune-macos.md)。
+> 若您嘗試在「郵件」應用程式中存取公司的電子郵件，可能會出現提示要管理您的裝置以確保安全。 請遵循以下指示，在 iOS 裝置上存取電子郵件以及其他公司資源。
 
 **開始之前：**
 
@@ -101,4 +101,4 @@ ms.lasthandoff: 07/13/2017
 > [!Note]
 > 在完全註冊您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
