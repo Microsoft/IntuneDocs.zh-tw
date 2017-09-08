@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+
+## <a name="week-of-august-28-2017"></a>2017 年 8 月 28 日當週
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!---1196951--->
+
+Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者不會再看到隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
+
+![在原生郵件應用程式中選取帳戶類型。](./media/ios-11-ca-email-after-1708-01.png)
+
+![選取 [Exchange] 之後，iOS 裝置會提示您輸入電子郵件地址與帳戶名稱。](./media/ios-11-ca-email-after-1708-02.png)
+
+![請提供電子郵件地址與帳戶名稱。](./media/ios-11-ca-email-after-1708-03.png)
+
+![傳送至外部 Microsoft 登入頁面。](./media/ios-11-ca-email-after-1708-04.png)
+
+![在 Microsoft 頁面上提供密碼。](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft 會提示使用者註冊裝置以納入管理。](./media/ios-11-ca-email-after-1708-06.png)
+
+![系統會提示使用者從公司入口網站註冊。](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日這週
 
@@ -31,11 +52,11 @@ Intune 行動應用程式管理 (MAM) 對話方塊將更新為新式外觀和操
 
 **先前經驗**
 
-![舊介面](media\NewUI_Old_AttachFileHandler.jpg)
+![舊介面](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **新式經驗**
 
-![新式介面](media\NewUI_Modern_AttachFileHandler.jpg)
+![新式介面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日這週
