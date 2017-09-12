@@ -1,6 +1,6 @@
 ---
 title: "如何將 iOS 企業營運應用程式新增至 Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何將 iOS 企業營運應用程式新增至 Intune。"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc7cf547cff33dde04760e23184f861200430a86
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 78f65a197be9017461b0480d4ead35c81f39a419
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 iOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 

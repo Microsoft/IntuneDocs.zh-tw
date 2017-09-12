@@ -1,6 +1,6 @@
 ---
 title: "設定 iOS 更新原則"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "設定 iOS 更新原則，強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。"
 keywords: 
 author: dougeby
@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: d4af2d58ec21c54362cf451eac1a33b2088885d5
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-ios-update-policies"></a>設定 iOS 更新原則
 設定 iOS 更新原則，強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。 當您不想要裝置安裝更新時，可以選擇設定星期幾和時間。

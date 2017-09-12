@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 管理裝置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 查看您管理的裝置，以及對這些裝置執行各種動作。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d78b4a87eaa366b7bb00356c4b98d609620dcf3
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ca40eee8a53fa3e8b2610ce414f0037180d4beaf
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 08/25/2017
 - 執行遠端裝置動作：
     - [移除公司資料](devices-wipe.md#remove-company-data)
     - [重設為原廠設定](devices-wipe.md#factory-reset)
-    - [遠端鎖定](device-remote-lock.md) 
+    - [遠端鎖定](device-remote-lock.md)
     - [重設密碼](device-passcode-reset.md)
     - [略過啟用鎖定](device-activation-lock-bypass.md) (僅限 iOS)
     - [全新開始](device-fresh-start.md) (僅限 Windows)

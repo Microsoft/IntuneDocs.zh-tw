@@ -1,6 +1,6 @@
 ---
 title: "在 Intune 中設定 Office 365 應用程式的基本資料管理"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "管理 Office 365 應用程式精靈的支援文件。"
 keywords: 
 author: lindavr
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>您的使用者將如何體驗受管理 Office 365 應用程式的基本保護
 

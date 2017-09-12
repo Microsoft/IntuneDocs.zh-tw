@@ -1,6 +1,6 @@
 ---
 title: "macOS 裝置的 Intune Wi-Fi 設定"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解您可用於設定 macOS 裝置上 Wi-Fi 連線的 Intune 設定。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 539c4d97f6f868ea2c4d4e6f2f58bfffa9cf7ce6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 59659ffc4674d09ea4b2ed9800bd05c2545ecf05
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的 Wi-Fi 設定
 

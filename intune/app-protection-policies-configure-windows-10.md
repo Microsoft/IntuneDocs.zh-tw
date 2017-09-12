@@ -1,6 +1,6 @@
 ---
 title: "準備好設定適用於 Windows 10 的應用程式保護原則"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "設定 Azure AD 中的行動應用程式管理 (MAM) 提供者"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08fd1362363a4795e5372431b2000c97273caf41
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 52b273532935184918e65d25a37ca3d03e76680c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 

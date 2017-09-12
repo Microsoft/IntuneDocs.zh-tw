@@ -1,6 +1,6 @@
 ---
 title: "適用於 iOS 的 Intune 共用裝置組態設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解您可以用來在 iOS 裝置鎖定畫面上顯示資訊的 Intune 設定。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bb1f8c7a9b6c92c128f32910f2ad8d390b6c64
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: bf1547115a1c5d15890504c26a9d1086df489718
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>在 iOS 裝置鎖定畫面上顯示訊息的共用裝置組態設定
 

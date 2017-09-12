@@ -1,6 +1,6 @@
 ---
 title: "如何建立 Android 的合規性政策"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何為 Android 裝置建立合規性政策。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="device-property-settings"></a>裝置屬性設定
 
 - **Minimum OS required** (需要的最低作業系統版本)：當裝置不符合最低作業系統版本需求時，會回報為不符合規範。 您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
-- **Maximum OS version allowed** (允許的最高 OS 版本)：當裝置使用的作業系統版本高於規則指定的版本時，會禁止存取公司資源，並要求使用者連絡其 IT 系統管理員。 除非將規則變更為允許該作業系統版本，否則此裝置無法用來存取公司資源。
+- **Maximum OS version allowed** (允許的最高 OS 版本)：當裝置使用的作業系統版本高於規則指定的版本時，會禁止存取公司資源，並要求使用者連絡其 IT 系統管理員。除非將規則變更為允許該作業系統版本，否則此裝置無法用來存取公司資源。
 
 ## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>如何將不合規設定用於條件式存取原則？
 
