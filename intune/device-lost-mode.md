@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 啟用 iOS 遺失模式"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 來啟用遺失或遭竊 iOS 裝置上的遺失模式。"
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ed792011de9109dd415ba2fac3c9428e955e5e7
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 5ae763ff24b9837b99f6402a78b9acb992bf599c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>啟用 iOS 裝置上的遺失模式
 

@@ -1,10 +1,10 @@
 ---
 title: "開始使用 Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "逐步進行一系列的簡短實際操作練習，以了解 Intune。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 對我的公司有何作用？
 
@@ -27,7 +27,7 @@ Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您
 
 ![Microsoft Intune 的高階架構圖](/intune/media/intunearchitecture.svg)
 
-我們了解開始管理行動裝置可能十分困難，因為您必須代表您的公司進行許多不同決策。 這些練習將引導您完成一些工作，協助您了解如何使用 Intune 來保護公司資源。 
+我們了解開始管理行動裝置可能十分困難，因為您必須代表您的公司進行許多不同決策。 這些練習將引導您完成一些工作，協助您了解如何使用 Intune 來保護公司資源。
 
 ## <a name="what-are-the-exercises"></a>有哪些練習？
 

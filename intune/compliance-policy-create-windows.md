@@ -1,6 +1,6 @@
 ---
 title: "如何建立 Windows 的合規性政策"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何為 Windows 裝置建立合規性政策。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中為 Windows 裝置建立裝置合規性政策
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="device-property-settings"></a>裝置屬性設定
 
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
-- **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 <!---## Compliance policy settings for Windows PCs--->
 
@@ -183,7 +183,7 @@ ms.lasthandoff: 07/01/2017
 
 - **允許的最高 OS 版本︰** - Windows 8.1 和 Windows 10 上支援。
 
-當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 若要尋找 [Minimum OS required]\(需要的最低 OS) 及 [Maximum OS version allowed]\(允許的最大 OS 版本) 設定所使用的作業系統版本，可執行從命令提示字元執行 **winver**命令。 winver 命令會傳回回報的 OS 版本。
 

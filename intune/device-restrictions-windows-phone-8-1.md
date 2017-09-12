@@ -1,6 +1,6 @@
 ---
 title: "Windows Phone 8.1 的 Intune 裝置限制設定"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解 Windows Phone 8.1 裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 14007c8e36166e3de482afc796a01d6f4ed649c2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 裝置限制設定
 

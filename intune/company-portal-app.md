@@ -1,6 +1,6 @@
 ---
 title: "如何設定公司入口網站應用程式"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何將公司自有商標套用到 Intune 公司入口網站應用程式。 \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 118e842c40574a0858f6b8071fd9c0c8db5cb3a3
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/15/2017
 
 |欄位名稱|長度上限|詳細資訊|        
 |-|-|-|     
-|**支援網站 URL**|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 這個 URL 必須使用 **https://www.contoso.com** 的格式。 如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|        
+|**支援網站 URL**|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 這個 URL 必須使用 **https://www.contoso.com** 的格式。如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|        
 |**支援網站 URL**|40|這是支援網站的 URL 所顯示的易記名稱。 若只指定支援網站 URL 而未指定易記名稱，將會在公司入口網站的 [連絡 IT] 頁面上顯示 [移至 IT 部門網站]。       
 
 ## <a name="company-branding-customization"></a>公司商標自訂       

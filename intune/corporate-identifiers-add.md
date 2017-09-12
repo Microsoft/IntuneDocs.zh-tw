@@ -1,6 +1,6 @@
 ---
 title: "將公司識別碼新增至 Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。 \""
 keywords: 
 author: NathBarn
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 

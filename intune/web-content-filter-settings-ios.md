@@ -1,6 +1,6 @@
 ---
 title: "適用於 iOS 裝置的 Intune 網路內容篩選器設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解您可以用來允許及禁止從 iOS 裝置上存取網站的設定。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1fb2ce8ed9db6ff808cac2ee8ff46ee865dbdf35
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: e2ff764b7500cf79b2feb64f55cac29d7dcf2eee
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 
@@ -73,4 +73,4 @@ ms.lasthandoff: 07/05/2017
 
 ## <a name="next-steps"></a>後續步驟
 
-您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資訊，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

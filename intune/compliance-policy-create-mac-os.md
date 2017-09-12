@@ -1,6 +1,6 @@
 ---
 title: "如何建立 macOS 的合規性政策"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何為 macOS 裝置建立合規性政策。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0c6e3c3f8e31d9ac6d42c3a2c519836dee186f0b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>使用 Intune 為 macOS 裝置 (預覽) 建立裝置合規性政策
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 08/03/2017
 
 - **最低作業系統版本**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容。 並顯示如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
 
-- **最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 ### <a name="system-security-settings"></a>系統安全性設定
 

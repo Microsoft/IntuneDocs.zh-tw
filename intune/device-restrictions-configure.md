@@ -1,6 +1,6 @@
 ---
 title: "設定 Intune 裝置限制設定"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何使用 Intune，設定您管理之裝置上的設定與功能。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fc818d1fa1d72165a8d456718d506c7e18c944ba
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定裝置限制設定
 
