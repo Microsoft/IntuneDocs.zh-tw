@@ -1,12 +1,12 @@
 ---
 title: "檢視 Intune 裝置清查"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 檢視您管理的裝置，並了解其硬體和已安裝的應用程式。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如何檢視 Intune 裝置清查
 
@@ -54,3 +54,4 @@ ms.lasthandoff: 07/12/2017
 
 >[!NOTE]
 > Intune 只會在公司擁有的裝置上收集應用程式清查。 個人裝置上的應用程式不會受到清查。 若為 Windows 10 電腦，則只會收集公司擁有裝置上的新式應用程式清查。 Intune 不會收集裝置上的 Win32 應用程式相關資訊。
+> 並非所有清查項目都會收集，這取決於您搭配裝置使用的電訊廠商。
