@@ -1,6 +1,6 @@
 ---
 title: "管理來自商務用 Microsoft 網上商店的應用程式"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何將應用程式從商務用 Microsoft 網上商店同步到 Intune，然後加以指派及追蹤。"
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 649766b26a1061c4bce11235c04dcbe8570fcdc4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，您就可以從 Intune 入口網站管理大量採購的應用程式。 例如：
+[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，就可以從 Azure 入口網站管理大量採購的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
 * 經過同步的應用程式會出現在 Intune 系統管理主控台；一如其他應用程式，您也可以指派這些應用程式。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
@@ -64,7 +64,7 @@ ms.lasthandoff: 08/08/2017
 1. 在 [Mobile Apps] 刀鋒視窗中選擇 [安裝] > [商務用 Microsoft 網上商店]。
 2. 按一下 [啟用]。
 3. 若還未執行此動作，請遵循前文所述按一下連結來註冊商務用 Microsoft 網上商店並關聯您的帳戶。
-5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店的應用程式在 Intune 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
+5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店應用程式在 Azure 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
 6. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
 
 ## <a name="synchronize-apps"></a>同步處理應用程式

@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8707253139ee5a12a48d38a333ae49fbb4d3ead
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: b82c0832fc102e4ae30268a6cd08ed0e14e1c931
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -122,14 +122,14 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 
 如果無法使用先前的簽署憑證，或者之前並未部署應用程式，您可以遵循 [Android 開發人員指南](https://developer.android.com/studio/publish/app-signing.html#signing-manually)中的指示建立新的簽署憑證。
 
-如果之前已使用不同的簽署憑證來部署應用程式，應用程式在升級之後即無法上傳至 Intune 主控台。 如果應用程式的簽署憑證和建置時的憑證不同，應用程式升級案例就會中斷。 因此，應該維持任何新的簽署憑證以用於應用程式升級。 
+如果之前已使用不同的簽署憑證來部署應用程式，應用程式在升級之後即無法上傳至 Intune。 如果應用程式的簽署憑證和建置時的憑證不同，應用程式升級案例就會中斷。 因此，應該維持任何新的簽署憑證以用於應用程式升級。 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>執行 App Wrapping Tool 的安全性考量
 若要防止潛在的詐騙、資訊洩漏和權限提升攻擊：
 
 -   請確定輸入的企業營運 (LOB) 應用程式、輸出應用程式及 Java 金鑰儲存區都位於執行 App Wrapping Tool 的同一部 Windows 電腦上。
 
--   在匯入執行工具的同一部機器上，將輸出應用程式匯入 Intune 主控台。 如需 Java keytool 的詳細資訊，請參閱 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
+-   在執行工具所在的同一部電腦上，將輸出應用程式匯入 Intune。 如需 Java keytool 的詳細資訊，請參閱 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
 
 -   如果輸出應用程式和工具位於通用命名慣例 (UNC) 路徑上，而您未在同一部電腦上執行工具和輸入檔案，請使用 [網際網路通訊協定安全性 (IPsec)](http://wikipedia.org/wiki/IPsec) 或[伺服器訊息區 (SMB) 簽署](https://support.microsoft.com/kb/887429)，將環境設定為安全的。
 

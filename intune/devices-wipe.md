@@ -1,12 +1,12 @@
 ---
 title: "透過 Intune 使用恢復出廠預設值或移除裝置上的公司資料"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何移除裝置上的公司資料或將裝置恢復出廠預設值。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 08/10/2017
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>從 Azure Active Directory 入口網站刪除裝置
 
-由於通訊問題或遺失裝置，您可能需要從 Azure Active Directory (AD) 刪除裝置。 刪除命令不會從管理項目移除裝置，但您可以使用 [刪除] 從 Azure 主控台移除已知無法連線且不太可能與 Azure 再次通訊的裝置記錄。
+由於通訊問題或遺失裝置，您可能需要從 Azure Active Directory (AD) 刪除裝置。 刪除命令不會從管理項目中移除裝置，但您可以使用 [刪除] 來移除 Azure 入口網站中已知無法連線且不太可能與 Azure 再次通訊的裝置記錄。
 
 1.  以系統管理員認證登入 [Azure 入口網站中的 Azure Active Directory](http://aka.ms/accessaad)。 您也可以登入 [Office 365 入口網站](https://portal.office.com)，然後使用頁面左側的連結來選擇 [管理] &gt; [Azure AD]。
 3.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。

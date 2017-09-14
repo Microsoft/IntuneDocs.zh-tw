@@ -1,6 +1,6 @@
 ---
 title: "註冊 Windows 裝置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "啟用 Windows 裝置的 Intune 行動裝置管理 (MDM)。"
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b5b5e2cdf2b31c33a02a90560e4abf955d398b0
-ms.sourcegitcommit: d5b5cb9b6dcb59094e436e07f8ed46924b37ac94
+ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-windows-devices"></a>註冊 Windows 裝置
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 08/30/2017
 本主題將協助 IT 系統管理員為其使用者簡化 Windows 註冊。 一旦您[設定 Intune](setup-steps.md)，使用者以其工作或學校帳戶[登入](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)即可註冊 Windows 裝置。  
 
 身為 Intune 系統管理員，您可以用下列方式來簡化註冊：
-- 啟用自動註冊 (需要 Azure AD Premium)
-- CNAME 註冊
+- [啟用自動註冊](#enable-windows-10-automatic-enrollment) (需要 Azure AD Premium)
+- [CNAME 註冊]()
 - 啟用大量註冊 (需要 Azure AD Premium 與 Windows 設定設計工具)
 
 有兩個因素會決定如何簡化 Windows 裝置註冊：
@@ -48,8 +48,8 @@ Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>不使用 Azure AD Premium 啟用 Windows 註冊
-您可以建立 DNS 別名 (CNAME 記錄類型)，自動將註冊要求重新導向至 Intune 伺服器，來簡化使用者的註冊。 如果您不建立 DNS CNAME 資源記錄，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>簡化 Windows 註冊，而不使用 Azure AD Premium
+您可以建立網域名稱伺服器 (DNS) 別名 (CNAME 記錄類型)，自動將註冊要求重新導向至 Intune 伺服器，以簡化使用者的註冊。 如果您不建立 DNS CNAME 資源記錄，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。
 
 **步驟 1：建立 CNAME** (選用)<br>
 建立公司網域的 CNAME DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
@@ -74,7 +74,7 @@ Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加
 DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播完成之前，您無法在 Intune 中驗證 DNS 變更。
 
 **步驟 2：驗證 CNAME** (選用)<br>
-在 Azure Intune 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。 在 [Intune] 刀鋒視窗中，選擇 [註冊裝置]  >  [Windows 註冊]。 在 [指定已驗證的網域名稱] 方塊中輸入公司網站 URL，然後選擇 [測試自動偵測]。
+在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。 在 [Intune] 刀鋒視窗中，選擇 [註冊裝置]  >  [Windows 註冊]。 在 [指定已驗證的網域名稱] 方塊中輸入公司網站 URL，然後選擇 [測試自動偵測]。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告訴使用者如何註冊 Windows 裝置
 告訴使用者如何註冊其 Windows 裝置，以及開始管理之後會發生的情況。 如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 您也可以告訴使用者檢閱[我的 IT 系統管理員可以在我的裝置上看到哪些資訊](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。

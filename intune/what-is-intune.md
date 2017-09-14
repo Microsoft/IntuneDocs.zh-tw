@@ -1,7 +1,7 @@
 ---
 title: "Azure 入口網站中的 Intune 簡介"
-titleSuffix: Intune on Azure
-description: "了解 Azure 入口網站之 Intune 的基本概念，以及這項服務如何協助您管理裝置。"
+titlesuffix: Azure portal
+description: "了解 Azure 入口網站中 Intune 的基本概念，以及這些概念如何協助您管理裝置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
-ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
+ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
@@ -72,7 +72,7 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 
 ## <a name="whats-in-this-library"></a>本文件庫內容
 
-為方便您尋找所需的資訊，此文件採用 Intune 入口網站的配置。
+為方便您尋找所需的資訊，此文件採用 Azure 入口網站的配置。
 
 ![Azure 入口網站的工作負載](./media/azure-portal-workloads.png)
 

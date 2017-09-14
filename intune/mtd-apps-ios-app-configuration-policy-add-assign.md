@@ -1,7 +1,7 @@
 ---
 title: "將 MTD 應用程式新增並指派至 Intune"
-titleSuffix: Intune on Azure
-description: "將 MTD 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則新增至 Azure 上的 Intune"
+titleSuffix: Azure portal
+description: "Azure 入口網站上使用 Intune 來新增 MTD 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
@@ -115,7 +115,7 @@ ms.lasthandoff: 07/10/2017
 
 ### <a name="for-skycure"></a>若為 Skycure
 
--   使用先前在 [Skycure Management 主控台](https://aad.skycure.com)中設定的同一個 Azure AD 帳戶，此帳戶應與用於登入 Intune 傳統主控台的帳戶相同。
+-   使用先前在 [Skycure 管理主控台](https://aad.skycure.com)中設定的同一個 Azure AD 帳戶，此帳戶應與用於登入 Intune 傳統入口網站的帳戶相同。
 
 -   您必須**下載** iOS 應用程式設定原則檔案： 
     -   前往 [Skycure Management 主控台](https://aad.skycure.com)，並以管理員認證登入。

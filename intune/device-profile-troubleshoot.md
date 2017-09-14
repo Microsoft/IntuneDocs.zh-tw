@@ -1,6 +1,6 @@
 ---
 title: "針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "當您遭遇難解的問題時，可使用本主題協助您解決 Intune 裝置設定檔的問題。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 07/01/2017
 
 -   如果與不同合規性政策中的相同設定一起評估，則會套用限制最嚴格的合規性政策設定。
 
--   如果設定原則的設定與不同設定原則中的設定衝突，這項衝突會顯示在 Intune 主控台中。 您必須以手動方式解決此類衝突。
+-   如果設定原則的設定與不同設定原則中的設定衝突，這項衝突會顯示在 Azure 入口網站中。 您必須以手動方式解決此類衝突。
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>應用程式保護原則互相衝突時，會發生什麼情況？ 哪一個原則會套用至應用程式？
 除了數字輸入欄位 (例如重設前的 PIN 嘗試次數) 之外，衝突值是應用程式保護原則中限制最嚴格的設定。  數字輸入欄位會設定為相同的值，如同您在主控台中使用建議的設定選項建立 MAM 原則一樣。

@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>支援的裝置與瀏覽器
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/28/2017
 - [支援的裝置和電腦](#intune-supported-devices)
 - [支援使用 Intune 的網頁瀏覽器清單](#intune-supported-web-browsers)
 
-您也應該進一步熟悉 [Intune 網路頻寬用量](network-bandwidth-use.md) ([傳統主控台](/intune-classic/get-started/network-bandwidth-use))。
+您也應該進一步熟悉 [Intune 網路頻寬用量](network-bandwidth-use.md) ([傳統入口網站](/intune-classic/get-started/network-bandwidth-use))。
 
 ## <a name="intune-supported-devices"></a>支援 Intune 的裝置
 
@@ -43,7 +43,7 @@ Intune 無法用於管理 Windows Server 作業系統。
 
 ### <a name="windows-pc-software-client"></a>Windows 電腦軟體用戶端
 
-[Intune 軟體用戶端](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統主控台時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
+[Intune 軟體用戶端](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 執行不同的系統管理工作時，您必須使用下列其中一個系統管理網站。
 
 - [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune 入口網站](https://portal.azure.com/)
+- [Azure 入口網站](https://portal.azure.com/)
 
 以下是這些入口網站支援的瀏覽器：
 - Microsoft Edge (最新版本)
@@ -67,12 +67,12 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 
 Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
 
-下列 Silverlight 瀏覽器支援傳統 Intune 主控台：
+下列 Silverlight 瀏覽器支援 Intune 主控台：
 - Internet Explorer 10 或更新版本
 - Google Chrome (42 版之前的版本)
 - 啟用 Silverlight 的 Mozilla Firefox [深入了解](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> 因為 Microsoft Edge 和行動瀏覽器不支援 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)，所以 Intune 傳統主控台不予支援。
+> 因為 Microsoft Edge 和行動瀏覽器不支援 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) \(英文\)，所以 Intune 傳統入口網站不予支援。
 
 唯有具有服務系統管理員權限的使用者，或是具有全域系統管理員角色的租用戶系統管理員，才能登入此入口網站。 若要存取管理主控台，您的帳戶必須擁有使用 Intune 的授權，且登入狀態必須為 [已允許]。

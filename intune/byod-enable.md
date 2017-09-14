@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>使用 Intune 來啟用 BYOD
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 08/25/2017
 
 -   **Android 裝置** 您不需要準備 Intune 服務即可註冊 Android 裝置。 使用者只要使用 Google Play 提供的公司入口網站應用程式即可[註冊 Android 裝置](/intune-user-help/enroll-your-device-in-intune-android)。
 
--   **Windows 手機和電腦**：您可以進行額外設定來註冊 Windows 裝置。 您可以在 Azure Active Directory (AD) Premium 中啟用 Windows 10 電腦和 Windows 10 行動裝置的自動註冊，以簡化您的使用者體驗。 如果您沒有 Azure AD Premium 或需要支援 Windows 8.1，您可以建立[註冊伺服器的 DNS 別名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)來簡化註冊。
+-   **Windows 手機和電腦**：您可以進行額外設定來註冊 Windows 裝置。 您可以在 Azure Active Directory (AD) Premium 中啟用 Windows 10 電腦和 Windows 10 行動裝置的自動註冊，以簡化您的使用者體驗。 如果您沒有 Azure AD Premium 或需要支援 Windows 8.1，您可以建立[註冊伺服器的 DNS 別名](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)來簡化註冊。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>請確定受管理的裝置符合基本安全性需求
@@ -82,7 +82,7 @@ Intune 也可讓您管理及部署從 iOS 應用程式市集和商務用 Microso
 
 -   [管理大量採購的 iOS 裝置應用程式](vpp-apps-ios.md)。 您可以透過 [Apple 商務適用的大量採購方案](http://www.apple.com/business/vpp/)購買多個 iOS 應用程式的授權。 您需要從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。 您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
 
--   [管理您從商務用 Microsoft 網上商店購買的應用程式](windows-store-for-business.md)。 [商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 透過連接市集與 Intune，可讓您從 Intune 入口網站管理大量採購的應用程式。
+-   [管理您從商務用 Microsoft 網上商店購買的應用程式](windows-store-for-business.md)。 [商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 透過連接市集與 Intune，可讓您從 Azure 入口網站管理大量採購的應用程式。
 
 ## <a name="protect-company-data"></a>保護公司資料
 

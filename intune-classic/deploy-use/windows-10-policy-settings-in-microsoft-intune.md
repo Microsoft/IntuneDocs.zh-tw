@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="oma-uri-settings"></a>OMA-URI 設定
 
-為您想要新增的各個 OMA-URI 設定輸入下列資訊。 使用本主題的 [Windows 10 URI 設定參考](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings)您可使用的設定︰
+針對要新增的各個 OMA-URI 設定，輸入下列資訊：
 
-- **設定名稱**：輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。
+- **設定名稱**：輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。 如需有關 URI 設定的詳細資訊，請參閱[原則設定服務提供者 (原則 CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)。
 - **設定描述**：選擇性地輸入設定的描述。
 - **資料類型**︰從下列資料類型中選擇：
     - **字串**

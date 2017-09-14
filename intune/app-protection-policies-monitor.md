@@ -1,6 +1,6 @@
 ---
 title: "如何監視應用程式保護原則"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "查看有多少使用者擁有原則，並向下鑽研以了解更多詳細資料。"
 keywords: 
 author: mattbriggs
@@ -15,16 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 241ae7d2d615cd58babfc2d14b98e2bfb2f63f7d
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 31ed141bb4d6f7d9e5f1362c7dfd24e710389e3b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**若您不是在 Azure 入口網站中**，本主題會說明在傳統 Intune 主控台中[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
+**若您不是在 Azure 入口網站中**，本主題會說明在 Intune 傳統入口網站中[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 
 您可以在 [Azure 入口網站](https://portal.azure.com)的 Intune 應用程式保護刀鋒視窗中，監視已套用到使用者的行動應用程式管理 (MAM) 原則的合規性狀態。 您能夠找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。

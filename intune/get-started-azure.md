@@ -1,10 +1,10 @@
 ---
 title: "開始使用 Azure 入口網站"
-titleSuffix: Intune on Azure
-description: "了解如何在 Azure 的 Intune 中建立和共用儀表板。"
+titlesuffix: Azure portal
+description: "了解如何在 Azure 入口網站的 Intune 中建立和共用儀表板。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Intune
 
@@ -52,7 +52,7 @@ Azure 入口網站左側的「資訊看板」會顯示所有可用 Azure 服務�
 
 ## <a name="using-services"></a>使用服務
 
-只要在 Azure 中開啟 Intune 或任何其他服務，它就會出現在「刀鋒視窗」中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。 
+只要在 Azure 中開啟 Intune 或任何其他服務，它就會出現在「刀鋒視窗」中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
 
 ## <a name="next-steps"></a>後續步驟
 

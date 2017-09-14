@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7873481ccd33d2eaf4ec1a4c7fadf30c61b8d42e
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 2384bede0ef4ed68072d1884d235e091cc625fa5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/03/2017
 身為系統管理員，您可以直接新增使用者，或同步內部部署 Active Directory 中的使用者。 新增之後，使用者便可以註冊裝置，並存取公司資源。 您也可以授與使用者其他權限，包括「全域管理員」和「服務管理員」權限。
 
 ## <a name="add-users-to-intune"></a>將使用者新增至 Intune
-您可以透過 [Office 365 入口網站](https://www.office.com/signin)或 [Azure Intune 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)，將使用者手動新增至 Intune 訂閱。 系統管理員可以編輯使用者帳戶來指派 Intune 授權。 您可從 Office 365 入口網站或 Intune Azure 入口網站指派授權。 如需使用 Office 365 入口網站的詳細資訊，請參閱[個別或大量新增使用者至 Office 365 入口網站](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
+您可以透過 [Office 365 入口網站](https://www.office.com/signin)或 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)，將使用者手動新增至 Intune 訂閱。 系統管理員可以編輯使用者帳戶來指派 Intune 授權。 您可從 Office 365 入口網站或 Intune Azure 入口網站指派授權。 如需使用 Office 365 入口網站的詳細資訊，請參閱[個別或大量新增使用者至 Office 365 入口網站](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
 
 ### <a name="add-intune-users-in-the-office-365-admin-center"></a>在 Office 365 系統管理中心新增 Intune 使用者
 1. 使用全域管理員或使用者管理管理員帳戶登入 [Office 365 入口網站](https://www.office.com/signin)。
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/03/2017
 5. 指派 Intune 授權。 選取 [產品授權]，然後選擇產品的授權。 需要包括 Intune 的授權。
 6. 選擇 [新增] 建立新的使用者。
 
-### <a name="add-intune-users-in-the-azure-intune-portal"></a>在 Azure Intune 入口網站中新增 Intune 使用者
+### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 入口網站中新增 Intune 使用者
 1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [More services] (更多服務) > [監視 + 管理] > [Intune]。 您也可以「搜尋 **Intune** 資源」。
 2. 選取 [使用者]。
 3. 在系統管理中心，選取 [新增使用者]。
@@ -84,27 +84,27 @@ ms.lasthandoff: 08/03/2017
 ![Office 365 入口網站指派角色的影像。](./media/office-assign-roles.png)
 6. 選擇 [儲存]。
 
-### <a name="give-admin-permissions-in-the-intune-portal"></a>在 Intune 入口網站中授與系統管理員權限
-1. 使用全域管理員帳戶登入 [Intune 入口網站](https://www.office.com/signin)。
-2. 在 Intune 入口網站中，選擇 [使用者]，然後選擇您要授與系統管理員權限的使用者。
+### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 入口網站中授與系統管理員權限
+1. 使用全域管理員帳戶登入 [Azure 入口網站](https://www.office.com/signin)。
+2. 在 Azure 入口網站中，選擇 [使用者]，然後選擇您要授與系統管理員權限的使用者。
 3. 選取 [目錄角色]，然後選取權限。
   ![螢幕擷取畫面](./media/add-intune-directory-role.png)
 4. 選擇 [儲存]。
 
 ### <a name="types-of-administrators"></a>系統管理員類型
 
-將一或多個系統管理員權限指派給使用者。 這些權限會定義使用者的管理範圍及其可以管理的工作。 不同 Microsoft 雲端服務之間的系統管理員權限是共通的，而且某些服務可能不支援部分權限。 Intune 入口網站和 Office 365 入口網站會列出 Intune 未使用的受限系統管理員角色。 Intune 系統管理員權限包括下列選項：
+將一或多個系統管理員權限指派給使用者。 這些權限會定義使用者的管理範圍及其可以管理的工作。 不同 Microsoft 雲端服務之間的系統管理員權限是共通的，而且某些服務可能不支援部分權限。 Azure 入口網站和 Office 365 入口網站皆會列出 Intune 未使用的受限系統管理員角色。 Intune 系統管理員權限包括下列選項：
 
-- **全域管理員** - (Office 365 和 Intune) 存取 Intune 中的所有系統管理功能。 註冊 Intune 的人員將成為全域管理員。 全域管理員是唯一可以指派其他管理員角色的管理員。 在組織中可以有一個以上的全域管理員。 我們建議的最佳做法是只讓公司內幾位人員擁有此角色，以降低企業風險。
+- **全域管理員** - (Office 365 和 Intune) 存取 Intune 中的所有系統管理功能。 註冊 Intune 的人員將成為全域管理員。全域管理員是唯一可以指派其他管理員角色的管理員。 在組織中可以有一個以上的全域管理員。 我們建議的最佳做法是只讓公司內幾位人員擁有此角色，以降低企業風險。
 - **密碼管理員** - (Office 365 和 Intune) 重設密碼、管理服務要求以及監控服務健康狀況。 密碼管理員限於重設使用者的密碼。
 - **服務管理員** - (Office 365 和 Intune) 開啟 Microsoft 的支援要求，以及檢視服務儀表板和訊息中心。 除了開啟及讀取支援票證之外，他們擁有「僅檢視」權限。
 - **計費管理員** - (Office 365 和 Intune) 進行採購、管理訂閱、管理支援票證以及監控服務健康狀況。
 - **使用者管理員** - (Office 365 和 Intune) 重設密碼、監控服務健全狀況、新增和刪除使用者帳戶和管理服務要求。 使用者管理管理員無法刪除全域管理員、建立其他管理員角色，或重設其他管理員的密碼。
 - **Intune 服務管理員** - 除了使用 [目錄角色] 選項建立系統管理員之權限以外的所有 Intune 全域管理員權限。
 
-您用來建立 Microsoft Intune 訂閱的帳戶即為全域管理員。 最佳做法是不要使用全域管理員進行日常管理工作。 系統管理員不需要 Intune 的授權即可存取 Intune 入口網站。 
+您用來建立 Microsoft Intune 訂閱的帳戶即為全域管理員。 最佳做法是不要使用全域管理員進行日常管理工作。 系統管理員不需要 Intune 的授權即可存取 Azure 入口網站。 
 
-若要存取 Office 365 入口網站，您的帳戶必須已設定 [允許登入]。 在 Intune 入口網站的 [設定檔] 下，將 [封鎖登入] 設為 [否] 以允許存取。 此狀態與獲得訂閱的授權有所區別。 根據預設，所有使用者帳戶的狀態均為 [已允許]。 沒有系統管理員權限的使用者可以使用 Office 365 入口網站來重設 Intune 密碼。
+若要存取 Office 365 入口網站，您的帳戶必須已設定 [允許登入]。 在 Azure 入口網站的 [設定檔] 下，將 [封鎖登入] 設定為 [否] 以允許存取。 此狀態與獲得訂閱的授權有所區別。 根據預設，所有使用者帳戶的狀態均為 [已允許]。 沒有系統管理員權限的使用者可以使用 Office 365 入口網站來重設 Intune 密碼。
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>同步處理 Active Directory 並將使用者新增至 Intune
 您可以設定目錄同步處理，將使用者帳戶從內部部署 Active Directory 匯入到其中包括 Intune 使用者的 Microsoft Azure Active Directory (Azure AD)。 讓內部部署的 Active Directory 與所有 Azure Active Directory 服務連線，可更易於管理使用者身分識別。 您也可以設定單一登入功能，讓使用者的驗證體驗親切又簡單。 透過連結同一個 [Azure AD 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)與多個服務，您之前已經同步的使用者帳戶就可用於所有雲端服務。
@@ -113,4 +113,4 @@ ms.lasthandoff: 08/03/2017
 同步處理使用者帳戶與 Azure AD 唯一需要的工具是 [Azure AD Connect 精靈](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 精靈提供簡單和引導式的體驗，將內部部署身分識別基礎結構連線至雲端。  選擇您的拓撲和需求 (單一或多個目錄、密碼同步或同盟)。 此精靈會部署並設定啟動及執行連線所需之所有元件。 包括︰同步處理服務、Active Directory 同盟服務 (AD FS)，以及 Azure AD PowerShell 模組。
 
 > [!TIP]
-> Azure AD Connect 包含先前發行為 Dirsync 和 Azure AD Sync 的功能。 深入了解[目錄整合](http://technet.microsoft.com/library/jj573653.aspx)。 若要了解將本機目錄的使用者帳戶同步至 Azure AD，請參閱 [Active Directory 與 Azure AD 的相似性](http://technet.microsoft.com/library/dn518177.aspx)。
+> Azure AD Connect 包含先前發行為 Dirsync 和 Azure AD Sync 的功能。深入了解[目錄整合](http://technet.microsoft.com/library/jj573653.aspx)。 若要了解將本機目錄的使用者帳戶同步至 Azure AD，請參閱 [Active Directory 與 Azure AD 的相似性](http://technet.microsoft.com/library/dn518177.aspx)。

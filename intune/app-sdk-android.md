@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -456,8 +456,9 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
     |--|--|
     | Authority | 已設定 AAD 帳戶的所需環境 |
     | ClientID | 應用程式的 ClientID (由 Azure AD 於應用程式註冊時產生) |
-    | NonBrokerRedirectURI | 應用程式的有效重新導向 URI，或是預設值 `urn:ietf:wg:oauth:2.0:oob`。 <br><br> 請務必將值設定為您應用程式 ClientID 可接受的重新導向 URI。
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | 應用程式的有效重新導向 URI，或是 `urn:ietf:wg:oauth:2.0:oob` 
+    。 <br><br> 請務必將值設定為您應用程式 ClientID 可接受的重新導向 URI。
+   | SkipBroker | False |
 
 
 3. **應用程式會整合 ADAL，但不支援代理驗證/全裝置 SSO：**
@@ -1355,7 +1356,7 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 
 ## <a name="telemetry"></a>遙測
 
-Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄下列使用狀況事件的遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。
+Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。
 
 > [!NOTE]
 > 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 

@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 將 Office 365 ProPlus 應用程式安裝到 Windows 10 裝置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 以更容易在 Windows 10 裝置上安裝 Office 365 應用程式。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 08/14/2017
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
-在此步驟中，提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 主控台中識別它，同時也能幫助使用者在公司入口網站應用程式中尋找它。
+在此步驟中，提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別，同時也能幫助使用者在公司入口網站應用程式中尋找。
 
 1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Information] (應用程式套件資訊)。
 2.  在 [App Suite Information] (應用程式套件資訊) 刀鋒視窗中，指定下列資訊： 

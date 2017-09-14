@@ -1,6 +1,6 @@
 ---
 title: "服務台疑難排解入口網站"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "服務台人員使用疑難排解入口網站來解決使用者的技術問題"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑難排解入口網站協助使用者
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/28/2017
 -   應用程式安裝失敗
 
 ## <a name="add-help-desk-operators"></a>新增服務台操作員
-身為 Intune 管理員，您可以將服務台操作員角色指派給使用者群組。 該群組的成員可以使用管理入口網站來為使用者的問題進行疑難排解。 每個服務台操作員都必須要有 Intune 授權來存取 Intune 入口網站。 了解如何[指派 Intune 授權](licenses-assign.md)。
+身為 Intune 管理員，您可以將服務台操作員角色指派給使用者群組。 該群組的成員可以使用 Azure 入口網站來為使用者的問題進行疑難排解。 每個服務台操作員都必須要有 Intune 授權來存取 Azure 入口網站。 了解如何[指派 Intune 授權](licenses-assign.md)。
 
 若要新增支援人員使用者：
 1. 視需要[將使用者新增至 Intune](users-add.md)。
 2. [建立支援人員群組](groups-add.md)，並將使用者新增至該群組。
 3. [指派 RBAC 技術服務人員角色](role-based-access-control.md#built-in-roles).
 
-  ![顯示反白顯示的 Intune 角色，以及包含技術服務人員之內建角色清單的 Intune 入口網站螢幕擷取畫面](./media/help-desk-user-add.png)您也可以[建立自訂角色](role-based-access-control.md#custom-roles)，以進一步修改並授與技術服務人員存取權。  技術服務人員需要下列權限，以協助為使用者問題進行疑難排解：
+  ![顯示反白顯示的 Intune 角色，以及包含技術服務人員之內建角色清單的 Azure 入口網站螢幕擷取畫面](./media/help-desk-user-add.png)您也可以[建立自訂角色](role-based-access-control.md#custom-roles)，以進一步修改並授與技術服務人員存取權。  技術服務人員需要下列權限，以協助為使用者問題進行疑難排解：
     - MobileApps：讀取
     - ManagedApps：讀取
     - ManagedDevices：讀取

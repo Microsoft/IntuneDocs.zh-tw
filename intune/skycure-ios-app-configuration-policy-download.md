@@ -1,6 +1,6 @@
 ---
 title: "下載與 Intune 搭配使用的 Skycure iOS 應用程式設定原則"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "下載與 Intune 搭配使用的 Skycure iOS 應用程式設定原則。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>下載 Skycure iOS 應用程式設定原則
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 
 3.  移至 [設定] &gt; [裝置管理整合] &gt; [EMM 整合選項]、選擇 [Microsoft Intune]，然後儲存您的選項。
 
-4.  按一下 [整合安裝檔案] 連結，然後儲存所產生的 \*.zip 檔案。 此 .zip 檔包含 **skycure\_configuration.plist** 檔案，此檔案將用來在 Intune 傳統主控台中建立 iOS 應用程式設定原則。
+4.  按一下 [整合安裝檔案] 連結，然後儲存所產生的 \*.zip 檔案。 此 .zip 檔包含 **skycure\_configuration.plist** 檔案，可用來在 Intune 傳統入口網站中建立 iOS 應用程式設定原則。
 
 ![Skycure 整合安裝檔案](./media/skycure-ios-app-2.png)
 

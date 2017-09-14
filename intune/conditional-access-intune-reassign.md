@@ -1,6 +1,6 @@
 ---
 title: "將條件式存取原則從 Intune 傳統入口網站移轉到 Azure 入口網站"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "將條件式存取原則從 Intune 傳統入口網站移轉到 Azure 入口網站。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 08/03/2017
 
 - 遵循本主題中的步驟，在 Azure 入口網站中重新建立這些原則。
 
-- 確認新的原則在 Azure 入口網站中能如預期運作之後，請停用 Intune 傳統主控台中的條件式原則。
+- 確認新的原則在 Azure 入口網站中能如預期運作之後，請停用 Intune 傳統入口網站中的條件式原則。
 <br /><br />
     - 請先規劃如何將使用者移至新的原則，**再停用** Intune 傳統入口網站中條件式存取原則。 有兩種方式：
 <br /><br />
@@ -82,7 +82,7 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
     ![Intune 與 Azure 入口網站之間的使用者群組 UI 比較](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Intune 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
+    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Azure 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
 
 5. 選擇群組之後，按一下 [選取]，然後按一下 [完成]。
 
@@ -150,7 +150,7 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
     ![Intune 與 Azure 入口網站之間的使用者群組 UI 比較](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Intune 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
+    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Azure 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
 
 5. 選擇群組之後，按一下 [選取]，然後按一下 [完成]。
 
