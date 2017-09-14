@@ -1,6 +1,6 @@
 ---
 title: "針對 Android for Work 的 Intune 裝置限制設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解 Android for Work 裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7e7f74f516a4b60b6a727d6c51ec54dab96aa88e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作設定檔設定
-- **工作設定檔與個人設定檔之間的資料共用**：使用此設定來控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定會從 Intune 入口網站加以管理，並使用 Android for Work 工作設定檔分割區來隔離受管理的應用程式。 從下列選項進行選擇：
+- **工作設定檔與個人設定檔之間的資料共用**：使用此設定來控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定可從 Azure 入口網站加以管理，並使用 Android for Work 工作設定檔分割區來隔離受管理的應用程式。 從下列選項進行選擇：
     - **預設共用限制** - 此設定是裝置的預設共用行為，會視正在執行的 Android 版本而有所不同。 預設允許從個人設定檔共用至工作設定檔。 預設也會封鎖從工作設定檔共用至個人設定檔。 此設定是為了防止資料從工作設定檔共用至個人設定檔。 Google 並未針對執行版本 6.0 和更新版本的裝置提供任何方式來封鎖從個人設定檔共用至工作設定檔。   
     - **工作設定檔中的應用程式可以處理來自個人設定檔的共用要求**：使用此選項來啟用允許從個人設定檔共用至工作設定檔的內建 Android 功能。 啟用時，來自個人設定檔中應用程式的共用要求，可以與工作設定檔中的應用程式共用。 此設定是執行早於 6.0 版本之 Android 裝置的預設行為。
     - **允許跨界限進行共用**：跨工作設定檔界限啟用雙向共用。 當您選取此設定時，工作設定檔中的應用程式可以和個人設定檔中不具徽章的應用程式共用資料。 請小心使用此設定，因為它可讓工作設定檔中受管理的應用程式與裝置未受管理端上的應用程式共用。

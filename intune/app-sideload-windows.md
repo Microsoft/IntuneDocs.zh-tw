@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/15/2017
 6.  **將應用程式上傳至 Intune**<br>
     上傳已簽署的應用程式檔案和您的程式碼簽署憑證，讓使用者能夠使用應用程式。
 
-    1.  在 Intune 入口網站中，依序按一下 [系統管理] &gt; [Windows Phone]。
+    1.  在 Azure 入口網站中，依序按一下 [系統管理] &gt; [Windows Phone]。
 
     2.  按一下 [上傳已簽署的應用程式檔案] ，並使用您的 Intune 系統管理員識別碼登入。
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 08/15/2017
 
     -   `-EnterpriseId` - 企業識別碼。 您必須提供這個引數或 'AetxPath'。 如果未提供這個引數，則會從 AETX 檔案讀取企業識別碼。 例如，1000000001
 
-6.  部署 Windows Phone 8.1 公司入口網站 (SSP.appx) 應用程式。 如需指引，請參閱[如何新增 Windows Phone 企業營運 (LOB) 應用程式](lob-apps-windows-phone.md) ([傳統主控台](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune))。
+6.  部署 Windows Phone 8.1 公司入口網站 (SSP.appx) 應用程式。 如需指導方針，請參閱[如何新增 Windows Phone 企業營運 (LOB) 應用程式](lob-apps-windows-phone.md) ([傳統入口網站](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune))。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>如何更新 Symantec 企業程式碼簽署憑證
 
@@ -136,7 +136,7 @@ ms.lasthandoff: 08/15/2017
 
 1.  簽署企業營運應用程式的最新版本。
 
-2.  開啟 Intune 主控台並移至 [管理員] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
+2.  開啟Azure 入口網站並移至 [管理] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
 
 3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
 

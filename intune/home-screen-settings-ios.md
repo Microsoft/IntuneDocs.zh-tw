@@ -1,6 +1,6 @@
 ---
 title: "適用於 iOS 裝置的 Intune 主畫面配置設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解您可以用來在 iOS 裝置上自訂主畫面和 Dock 的設定。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>適用於 iOS 裝置的 Intune 主畫面配置設定
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 07/05/2017
 
 
 1. 在 [頁面] 刀鋒視窗上，選擇 [新增]。
-2. 在 [新增列] 刀鋒視窗上，輸入 [頁面名稱]。 此名稱僅供您在 Intune 入口網站參考，「不顯示」在 iOS 裝置上。
+2. 在 [新增列] 刀鋒視窗上，輸入 [頁面名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 3. 選擇 [新增]，然後選擇您要新增 [應用程式] 或 [資料夾] 到頁面。
 4. 使用本主題的資訊，設定您想要在頁面顯示的應用程式與資料夾。
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 07/05/2017
 
 ## <a name="how-to-add-an-app-to-the-list"></a>如何將應用程式新增到清單
 
-1. 輸入 [應用程式名稱]。 此名稱僅供您在 Intune 入口網站參考，「不顯示」在 iOS 裝置上。
+1. 輸入 [應用程式名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 2. 輸入您要顯示之應用程式的 [應用程式套件組合識別碼]。 如需說明，請參閱本主題稍後的＜內建 iOS 應用程式的套件組合識別碼參考＞。
 3. 按一下 [確定]，然後繼續新增項目，裝置 Dock 最多可達 **6** 個，而裝置頁面最多可達 **60** 個。
 4. 完成後，請按一下 [確定] 。
@@ -87,8 +87,8 @@ ms.lasthandoff: 07/05/2017
 
 1. 輸入[資料夾名稱]。 使用者會在裝置上看到此名稱。
 2. 選擇 [新增] 來在資料夾內建立頁面。 您最多可以新增 20 個頁面。
-3. 在 [新增列] 刀鋒視窗上，輸入頁面的名稱。 此名稱僅供您在 Intune 入口網站參考，「不顯示」在 iOS 裝置上。
-3. 輸入 [應用程式名稱]。 此名稱僅供您在 Intune 入口網站參考，「不顯示」在 iOS 裝置上。
+3. 在 [新增列] 刀鋒視窗上，輸入頁面的名稱。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
+3. 輸入 [應用程式名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 2. 輸入您要顯示之應用程式的 [應用程式套件組合識別碼]。 如需說明，請參閱＜如何將應用程式新增到清單＞。
 3. 選擇 [新增]。 您最多可以新增 60 個項目。
 4. 完成後，請按一下 [確定] 。

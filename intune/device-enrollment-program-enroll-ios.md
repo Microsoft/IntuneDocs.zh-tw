@@ -1,6 +1,6 @@
 ---
 title: "註冊 iOS 裝置 - 裝置註冊方案"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。"
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/03/2017
 您可以使用 Apple DEP 入口網站建立 DEP 權杖。 您也可以使用 DEP 入口網站將裝置指派給 Intune 以便管理。
 
 > [!NOTE]
-> 若您在遷移至 Azure 之前從 Intune 傳統主控台刪除了權杖，Intune 可能會還原已刪除的 Apple DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。
+> 若在移轉至 Azure 之前從 Intune 傳統入口網站刪除了權杖，Intune 可能會還原已刪除的 Apple DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。
 
 **步驟 1.下載建立 Apple DEP 權杖所需的 Intune 公開金鑰憑證。**<br>
 
@@ -154,7 +154,7 @@ ms.lasthandoff: 08/03/2017
 2. 在 [註冊計劃裝置] 下，選擇 [同步]。
 
   ![已選取註冊計劃裝置節點，且正在選擇 [同步] 連結的螢幕擷取畫面。](./media/enrollment-program-device-sync.png)
-3. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。 進度列會顯示再次要求進行同步之前，必須要等待的總時間。
+3. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![[同步] 刀鋒視窗，以及正在選擇 [要求同步] 連結的螢幕擷取畫面。](./media/enrollment-program-device-request-sync.png)
 

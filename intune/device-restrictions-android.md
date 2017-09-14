@@ -1,12 +1,12 @@
 ---
 title: "Android 的 Intune 裝置限制設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解 Android 裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung KNOX Standard 裝置限制設定
 
@@ -67,8 +67,8 @@ ms.lasthandoff: 08/08/2017
 <sup>1</sup> 在您將此設定指派至裝置之前，請確定會將這些裝置上的公司入口網站應用程式更新至最新版本。
 
 如果您設定 [複雜數字] 設定，然後將它指派至執行早於 5.0 之 Android 版本的裝置，則將適用下列行為。
-- 如果公司入口網站應用程式的版本早於 1704，就不會將任何 PIN 原則套用至裝置，且 Intune 入口網站中會顯示錯誤。
-- 如果公司入口網站應用程式執行 1704 版或更新版本，則只能套用簡單的 PIN。 早於 5.0 的 Android 版本並不支援此設定。 Intune 入口網站中將不會顯示錯誤。
+- 如果公司入口網站應用程式的版本早於 1704，就不會將任何 PIN 原則套用至裝置，且 Azure 入口網站中會顯示錯誤。
+- 如果公司入口網站應用程式執行 1704 版或更新版本，則只能套用簡單的 PIN。 早於 5.0 的 Android 版本並不支援此設定。 Azure 入口網站中將不會顯示錯誤。
 
 
 ## <a name="google-play-store"></a>Google Play 商店
@@ -79,7 +79,7 @@ ms.lasthandoff: 08/08/2017
 
 在受限應用程式清單中，您可以針對 Android 和 Samsung KNOX Standard 裝置設定下列其中一個清單：
 
-**禁止的應用程式**清單 - 列出不允許使用者安裝與執行的應用程式 (並非由 Intune 管理)。
+**禁止的應用程式**清單：列出使用者安裝與執行時將會回報的應用程式 (並非由 Intune 管理)。
 **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 為了持續符合規範，使用者絕不能安裝其他應用程式。 自動允許 Intune 所管理的應用程式。
 包含受限應用程式設定的裝置設定檔，必須指派給使用者群組。
 
@@ -107,6 +107,21 @@ ms.lasthandoff: 08/08/2017
 - **JavaScript (僅限 Samsung KNOX)** - 允許裝置的網頁瀏覽器執行 Java 指令碼。
 - **快顯 (僅限 Samsung KNOX)** - 允許在網頁瀏覽器中使用快顯封鎖程式。
 
+## <a name="allow-or-block-apps"></a>允許或封鎖應用程式
+
+針對執行 Samsung KNOX Standard 的裝置，這些設定可以用來指定只能在這些裝置上安裝或啟動的應用程式。
+此外，您還可以指定將會對裝置使用者隱藏的已安裝應用程式。 使用者將無法執行這些應用程式。
+
+- **允許安裝的應用程式 (僅限 Samsung KNOX Standard)**
+- **禁止應用程式啟動 (僅限 Samsung KNOX Standard)**
+- **不對使用者顯示應用程式 (僅限 Samsung KNOX Standard)**
+
+針對每個設定，使用下列其中一項來設定應用程式清單：
+
+- **依套件名稱新增應用程式**：主要用於商務營運應用程式。 輸入應用程式名稱，以及應用程式套件的名稱。 
+- **依 URL 新增應用程式**：輸入應用程式名稱，及其在 Google Play 商店中的 URL。
+- **新增受管理的應用程式**：從您使用 Intune 管理的應用程式清單，選取您需要的應用程式。
+
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 
 - **Google 備份 (僅限 Samsung KNOX)** - 允許使用 Google 備份。
@@ -127,9 +142,9 @@ ms.lasthandoff: 08/08/2017
 
 ## <a name="kiosk"></a>Kiosk
 
-Kiosk 設定僅適用於 Samsung KNOX Standard 裝置。
+Kiosk 設定僅套用至 Samsung KNOX Standard 裝置，且只套用至您使用 Intune 管理的應用程式。
 
-- **選取受管理的應用程式** - 選擇下列其中一個選項，以新增當裝置處於 Kiosk 模式時可執行的一或多個應用程式。 不允許在裝置上執行其他應用程式。
+- **選取受管理的應用程式**：選擇下列其中一個選項，以新增當裝置處於 Kiosk 模式時可執行的一或多個受管理的應用程式。 不允許在裝置上執行其他應用程式。
     - **依套件名稱新增應用程式**
     - **依 URL 新增應用程式**
     - **新增受管理的應用程式**。

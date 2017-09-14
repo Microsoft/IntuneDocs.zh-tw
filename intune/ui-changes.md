@@ -1,7 +1,7 @@
 ---
 title: "我的 Intune 功能移到 Azure 中的哪個位置？"
-titleSuffix: Intune on Azure
-description: "協助您在 Azure 主控台中尋找 Intune 功能。"
+titlesuffix: Azure portal
+description: "協助您在 Azure 入口網站中尋找 Intune 功能。"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
-當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對想要徹底熟悉傳統主控台中的 Intune，並想知道如何在 Azure 上的 Intune 中完成作業的使用者，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
+當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對已經十分熟悉傳統入口網站中 Intune 的使用者，但是想知道 Azure 入口網站中 Intune 的操作步驟，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
-|功能 |傳統主控台中的路徑|Azure 上 Intune 中的路徑|
+|功能 |傳統入口網站中的路徑|Azure 入口網站中 Intune 的路徑|
 |------------|---------------|---------------|
 |裝置註冊計劃 (DEP) |[管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃]|[[裝置註冊] > [Apple 註冊] > [註冊計劃權杖]](#where-did-apple-dep-go) |
 |裝置註冊計劃 (DEP)| [管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃] |[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ ms.lasthandoff: 08/03/2017
 
 
 ## <a name="where-do-i-manage-groups"></a>我在何處管理群組？
-Azure 上的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 來管理群組。
+Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 來管理群組。
 
 ## <a name="where-did-enrollment-rules-go"></a>註冊規則在哪裡？
-在傳統主控台中，您可以設定規則來管理行動裝置以及 Windows 和 macOS 裝置的 MDM 註冊：
+在傳統入口網站中，您可以設定規則來控管行動裝置以及新式 Windows 和 macOS 裝置的 MDM 註冊：
 
 ![傳統行動裝置註冊規則的影像](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Azure 上的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.
 
 ![Azure 行動裝置註冊限制的影像](./media/02-azure-enroll-restrictions.png)
 
-預設的 [裝置限制] 對應至傳統主控台中的 [裝置註冊限制]：
+預設的 [裝置限制的限制] 對應至傳統入口網站中的 [裝置註冊限制]：
 
 ![Azure 裝置限制的影像](./media/03-azure-device-limit.png)
 
-預設的 [裝置類型限制] 對應至傳統主控台中的 [平台限制]：
+預設的 [裝置類型限制] 對應至傳統入口網站中的 [平台限制]：
 
 ![Azure 裝置類型限制的影像](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ Azure 上的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.
 新的限制功能只會新增至 Azure 入口網站。
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
-在傳統主控台中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務的同步處理：
+在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：
 
 ![傳統 DEP 權杖的影像](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ Azure 上的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.
 
 ![Azure DEP 權杖的影像](./media/07-azure-dep-token.png)
 
-不過，傳統主控台中的 [同步] 選項已移至序號管理工作流程，因為手動同步的結果會出現在此處：
+不過，傳統入口網站中的 [同步] 選項已移至序號管理工作流程，因為手動同步的結果會出現在該處：
 
 ![Azure DEP 同步的影像](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>公司預先註冊的裝置在哪裡？
 ### <a name="by-ios-serial-number"></a>依 iOS 序號
-在傳統主控台中，您可以透過 Apple 裝置註冊計劃 (DEP) 和 Apple Configurator 工具註冊 iOS 裝置。 這兩種方法會依序號提供裝置預先註冊，而且需要指派特殊的公司裝置註冊設定檔。 在註冊之前，可透過 [公司預先註冊的裝置] 的 [依 iOS 序號] 裝置群組管理註冊設定檔指派：
+在傳統入口網站中，您可以透過 Apple 裝置註冊計劃 (DEP) 和 Apple Configurator 工具來註冊 iOS 裝置。 這兩種方法會依序號提供裝置預先註冊，而且需要指派特殊的公司裝置註冊設定檔。 在註冊之前，可透過 [公司預先註冊的裝置] 的 [依 iOS 序號] 裝置群組管理註冊設定檔指派：
 
 ![傳統 Apple 序號的影像](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Azure 上的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.
 
 ### <a name="by-imei-all-platforms"></a>依 IMEI (所有平台)
 
-在傳統主控台中，您可以預先列出裝置的 IMEI 編號，以在向 Intune 註冊裝置時，將裝置標示為公司：
+在傳統入口網站中，您可以預先列出裝置的 IMEI 編號，以在向 Intune 註冊裝置時，將裝置標示為公司：
 
 ![IMEI 編號之傳統清單的影像](./media/12-classic-corp-imei.png)
 
-在 Azure 主控台中，您必須使用逗號分隔值 (CSV) 檔案，將相同的 IMEI 上傳至公司裝置識別碼清單。 新的入口網站不支援手動輸入 IMEI 編號：
+在 Azure 入口網站中，您必須使用逗號分隔值 (CSV) 檔案，將相同的 IMEI 上傳至「公司裝置識別碼」清單。 新的入口網站不支援手動輸入 IMEI 編號：
 
 ![IMEI 編號之 Azure 清單的影像](./media/13-azure-corp-imei.png)
 
 Azure 入口網站中的 Intune 未來將支援除 IMEI 以外的其他識別碼類型，但目前只允許預先列出 IMEI 編號。
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>公司裝置註冊設定檔在哪裡？
-若要透過 Apple 裝置註冊計劃或 Apple Configurator 工具註冊 iOS 裝置，您必須提供要指派裝置的公司裝置註冊設定檔。 在傳統主控台中，這些設定檔的建立和管理作業都是在單一清單中進行：
+若要透過 Apple 裝置註冊計劃或 Apple Configurator 工具註冊 iOS 裝置，您必須提供要指派裝置的公司裝置註冊設定檔。 在傳統入口網站中，這些設定檔的建立和管理作業都是在單一清單中進行：
 
 ![傳統裝置註冊設定檔的影像](./media/14-classic-corp-profiles.png)
 

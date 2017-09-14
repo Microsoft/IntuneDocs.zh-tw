@@ -1,6 +1,6 @@
 ---
-title: "管理軟體更新"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "在 Intune 中設定商務用 Windows Update 的設定"
+titleSuffix: Azure portal
 description: "了解如何在 Intune 中設定商務用 Windows Update 的設定，以控制 Windows 10 裝置的更新。"
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -54,20 +54,20 @@ ms.lasthandoff: 08/22/2017
 
     您可以手動設定此設定，或使用 Intune 裝置限制設定檔 (用於 Windows 10 和更新版本)。 若要這樣做，請至少將 [一般]  >  [提交診斷資料] 的設定設為 [基本]。 如需有關裝置設定檔的詳細資訊，請參閱[如何設定裝置限制設定](device-restrictions-configure.md)。
 
-- 在傳統 Intune 管理主控台中，有四種設定可控制軟體更新行為。 這些設定是 Windows 10 桌上電腦和行動裝置上，一般組態原則的一部分：
+- 在 Intune 管理主控台中，有四種設定可控制軟體更新行為。 這些設定是 Windows 10 桌上電腦和行動裝置上，一般組態原則的一部分：
     - **允許自動更新**
     - **允許發行前版本功能**
     - **已排程的安裝日**
     - **已排程的安裝時間**
 
-  傳統主控台在裝置組態設定檔中也有其他 Windows 10 更新設定的數量限制。 如果您移轉至 Azure 入口網站時，在傳統 Intune 管理主控台中有這些設定，我們強烈建議您執行下列操作︰
+  傳統入口網站在裝置組態設定檔中也有一些其他的 Windows 10 更新設定。 當您移轉至 Azure 入口網站時，如果在 Intune 管理主控台中設定了這些設定，強烈建議您執行下列操作︰
 
 1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許搶鮮版功能] 設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新響鈴時，可以設定另外三個設定，以及其他 Windows 10 更新設定。
 
   > [!NOTE]
-  > 移轉之後，在傳統主控台中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，這些設定仍會繼續套用。 如果您有移轉這些設定，並在 Azure 入口網站中編輯移轉的原則，這些設定將會從原則中移除。
+  > 移轉之後，在傳統入口網站中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，這些設定仍會繼續套用。 如果您有移轉這些設定，並在 Azure 入口網站中編輯移轉的原則，這些設定將會從原則中移除。
 
-2. 刪除傳統主控台中的更新設定。 移轉至 Azure 入口網站，並新增相同設定到更新響鈴之後，您必須在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，相同的設定使用不同的值，會造成衝突且無從得知，因為在傳統主控台中設定的設定不會顯示在 Azure 入口網站。
+2. 刪除傳統入口網站中的更新設定。 移轉至 Azure 入口網站，並新增相同設定到更新響鈴之後，您必須在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，相同的設定若使用不同的值將會造成衝突且無從得知，因為在傳統入口網站中設定的設定不會顯示在 Azure 入口網站。
 
 ## <a name="how-to-create-and-assign-update-rings"></a>如何建立及指派更新響鈴
 

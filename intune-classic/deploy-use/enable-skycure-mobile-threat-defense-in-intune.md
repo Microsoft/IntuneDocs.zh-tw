@@ -1,6 +1,6 @@
 ---
 title: "在 Intune 中啟用 Skycure Mobile Threat Defense"
-description: "在 Intune 傳統主控台中啟用 Skycure Mobile Threat Defense。"
+description: "在 Intune 傳統入口網站中啟用 Skycure Mobile Threat Defense。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Skycure Mobile Threat Defense
 
@@ -28,11 +28,11 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>在 Intune 中啟用 Skycure MTD 連線
 
-1.  移至 [Intune 傳統主控台](https://manage.microsoft.com/)，然後輸入您的認證。
+1.  移至 [Intune 傳統入口網站](https://manage.microsoft.com/)，然後輸入您的認證。
 
 2.  選擇 [管理] &gt; [協力廠商服務整合]，然後選擇 [Skycure 狀態]，接著使用切換按鈕來啟用 [以 MTD 進行同步處理]。
 
-    ![在 Intune 傳統主控台中啟用 Skycure 切換](../media/mtp/enable-skycure-1.png)
+    ![在 Intune 傳統入口網站中啟用 Skycure 切換](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > 您必須先設定 Skycure 應用程式，然後建立合規性原則規則及設定條件式存取。 這樣做可確保應用程式已準備好供使用者進行安裝，安裝後，使用者才能存取電子郵件或其他公司資源。

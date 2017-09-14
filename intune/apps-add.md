@@ -1,6 +1,6 @@
 ---
 title: "如何將應用程式新增至 Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "這些程序可協助您將應用程式加入 Intune，讓您可以指派給使用者與裝置。 \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f2ac5b25cfe3e688363a21775872baaa9ff89a
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 108f789f16304498cf54387326d112353bf70aa2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何將應用程式新增至 Microsoft Intune
 
@@ -81,7 +81,7 @@ Intune 可讓您新增及指派下列應用程式類型：
 
 原本，Intune 包含許多您可以快速指派的內建應用程式。 應客戶的意見反應，我們已移除此清單，而您不會再看到內建應用程式。
 不過，您已指派的任何內建應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
-在之後的版本中，我們計畫新增一個方法，讓從 Intune 入口網站選取及指派內建應用程式的流程變得更輕鬆。
+在之後的版本中，我們計劃新增一個方法，讓從 Azure 入口網站選取及指派內建應用程式的流程變得更輕鬆。
 
 ## <a name="next-steps"></a>後續步驟
 

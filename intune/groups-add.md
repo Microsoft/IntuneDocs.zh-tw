@@ -1,6 +1,6 @@
 ---
 title: "在 Intune 中設定註冊限制"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。 \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>在 Intune 中新增群組
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -33,8 +33,8 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 ## <a name="add-a-new-group"></a>新增新的群組
 
 使用下列步驟建立新的群組。
-1. 在 Intune 入口網站中，移至 [群組]，然後在 [所有群組] 刀鋒視窗中選擇 [新增群組]。
-  ![選取了 [新增群組] 的 Intune 入口網站螢幕擷取畫面](./media/groups-add-new.png)
+1. 在 Azure 入口網站中，移至 [群組]，然後在 [所有群組] 刀鋒視窗中選擇 [新增群組]。
+  ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add-new.png)
 2. 指定新群組的 [名稱] 和 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
 
 3. 選擇 [成員資格類型]：

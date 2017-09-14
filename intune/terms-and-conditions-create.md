@@ -1,6 +1,6 @@
 ---
 title: "設定 Microsoft Intune 中的條款及條件"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "設定使用者會在 Intune 公司入口網站中看到的條款及條件。 "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>確定使用者接受公司條款以進行存取
 
@@ -32,14 +32,14 @@ ms.lasthandoff: 07/01/2017
 ## <a name="create-terms-and-conditions"></a>建立條款及條件
 完成下列步驟以建立條款及條件。 顯示名稱和描述是供系統管理使用，而條款屬性則會在公司入口網站中向使用者顯示。
 
-1. 在 Intune 入口網站中，選擇 [裝置註冊]，然後選擇 [條款及條件]。
+1. 在 Azure 入口網站中，選擇 [裝置註冊]，然後選擇 [條款及條件]。
 2. 選取 [建立]。
-![正在顯示條款及條件之 [建立] 按鈕的 Intune 入口網站螢幕擷取畫面](media/terms-create-terms.png)
+![正在顯示條款及條件 [建立] 按鈕的 Azure 入口網站螢幕擷取畫面](media/terms-create-terms.png)
 3. 在展開的刀鋒視窗上，指定下列資訊：
 
-   - **顯示名稱**：Intune 入口網站中條款的名稱。 使用者不會看見此名稱。
+   - **顯示名稱**：Azure 入口網站中條款的名稱。 使用者不會看見此名稱。
 
-   - **描述**︰可協助您在 Intune 入口網站中識別這組條款的選擇性詳細資料。
+   - **描述**︰可協助您在 Azure 入口網站中識別這組條款的選擇性詳細資料。
 
 4. 選取 [Define terms of use ]\(定義使用規定) 旁的箭頭，以開啟 [條款及條件] 刀鋒視窗，然後輸入下列資訊︰
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 07/01/2017
 
 您可以將條款及條件指派給使用者群組，群組中的使用者必須先接受它們才能使用公司入口網站。
 
-1. 在 Intune 入口網站中，選擇 [裝置註冊]，然後選擇 [條款及條件]。
+1. 在 Azure 入口網站中，選擇 [裝置註冊]，然後選擇 [條款及條件]。
 2. 在條款及條件清單中，選取您要指派的條款，然後選取 [指派的群組]。
-![正在顯示 [選取群組] 按鈕和指派條款及條件之 [選取] 按鈕的 Intune 入口網站 [指派群組] 刀鋒視窗螢幕擷取畫面](media/terms-assign-groups.png)
+![顯示指派條款及條件 [選取群組] 按鈕和 [選取] 按鈕的 Azure 入口網站 [指派群組] 刀鋒視窗螢幕擷取畫面](media/terms-assign-groups.png)
 3. 按一下 [選取群組] 按鈕，然後在 [選取群組] 刀鋒視窗中，選取您要指派條款的群組，然後按一下 [選取]。 無法為動態群組指派條款及條件。
 4. 在 [指派的群組] 刀鋒視窗中，按一下 [儲存]。  條款及條件現在已指派給所選群組中的使用者。 使用者將會在下次存取公司入口網站時，收到接受條款的提示。 條款及條件只需要接受一次。 具有多部裝置的使用者不需要在每部裝置上接受。
 

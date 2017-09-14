@@ -1,6 +1,6 @@
 ---
 title: "建立 Skycure Mobile Threat Defense 合規性原則"
-description: "在 Intune 傳統主控台中，建立 Skycure Mobile Threat Defense 合規性原則。"
+description: "在 Intune 傳統入口網站中，建立 Skycure Mobile Threat Defense 合規性原則。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>建立 Skycure Mobile Threat Defense 合規性原則
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-create-skycure-compliance-policy"></a>建立 Skycure 合規性原則
 
-1.  移至 [Intune 傳統主控台](https://manage.microsoft.com/)，然後輸入您的認證。
+1.  移至 [Intune 傳統入口網站](https://manage.microsoft.com/)，然後輸入您的認證。
 
 2.  選擇 [原則] &gt; [合規性原則]。 您可以使用現有的相容性原則，也可以建立新的相容性原則。
 

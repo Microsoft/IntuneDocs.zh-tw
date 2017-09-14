@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5da29dceb5308eab72e5b24e220586aa739982ea
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>管理透過 Microsoft Intune 大量採購方案購買的 iOS 應用程式
 
@@ -30,7 +30,7 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 
 > [!Important]
 > 目前，Intune 會指派 iOS 企業大量採購方案 (VPP) 應用程式授權給使用者，而不是裝置。 因此，使用者必須輸入其 Apple ID 密碼，才能安裝應用程式。
-> 這個版本不支援教育用 Apple 大量採購方案。
+> 這個版本不支援教育用 Apple 大量採購方案與 B2B 應用程式。
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理大量採購的 iOS 裝置應用程式
 您可以透過 [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) 購買多個 iOS 應用程式的授權。 這項作業包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。

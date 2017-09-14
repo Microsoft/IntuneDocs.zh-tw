@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 > 如果您的應用程式將發行到 App Store，`MAMPolicyRequired` 必須設為 [否]，這是根據 App Store 的標準。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>啟用 iOS 應用程式的 MAM 目標設定
-MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 應用程式擁有者/開發人員必須定義此資料的格式和變化，並向 Intune 客戶溝通。 Intune 系統管理員可以透過 Intune Azure 主控台為設定資料設定目標並進行部署。 在 Intune App SDK for iOS (v7.0.1) 中，可以透過 MAM 服務提供 MAM 目標設定資料給參與 MAM 目標設定的應用程式。 應用程式設定資料是透過我們的 MAM 服務 (而非透過 MDM 通道) 直接向應用程式發佈。 Intune App SDK 會提供類別來存取從這些主控台擷取的資料。 請將下列各項視為必要條件： <br>
+MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 應用程式擁有者/開發人員必須定義此資料的格式和變化，並向 Intune 客戶溝通。 Intune 系統管理員可以透過 Intune Azure 入口網站為設定資料設定目標並進行部署。 在 Intune App SDK for iOS (v7.0.1) 中，可以透過 MAM 服務提供 MAM 目標設定資料給參與 MAM 目標設定的應用程式。 應用程式設定資料是透過我們的 MAM 服務 (而非透過 MDM 通道) 直接向應用程式發佈。 Intune App SDK 會提供類別來存取從這些主控台擷取的資料。 請將下列各項視為必要條件： <br>
 * 應用程式必須已完成 MAM-WE 註冊，才能存取 MAM 目標設定 UI。 如需 MAM-WE 的詳細資訊，請參閱 [App protection policy without device enrollment in the Intune App SDK guide](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) (Intune App SDK 指南中無裝置註冊的應用程式保護原則)。
 * 在應用程式的原始程式檔中包含 ```IntuneMAMAppConfigManager.h```。
 * 呼叫 ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` 以取得應用程式設定物件。

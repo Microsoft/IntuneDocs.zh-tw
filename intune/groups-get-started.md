@@ -1,6 +1,6 @@
 ---
 title: "Azure 入口網站中的 Intune 傳統群組"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解 Intune Azure 入口網站中群組的新功能"
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Azure 入口網站中的 Intune 傳統群組
 
@@ -38,7 +38,7 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 - 從 Azure 入口網站中不存在的群組，[排除特定成員] 的選項。 不過，您可以搭配使用 Azure AD 安全性群組與進階規則來複寫這項行為。 例如，若要建立進階規則來包含安全性群組中 Sales 部門的所有人員，但排除職稱中有 "Assistant" 這個字的群組，您可以使用這個進階規則︰
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
-- Intune 主控台中的 [所有受 Exchange ActiveSync 管理的裝置] 群組將不會移轉至 Azure AD。 不過，您仍然可以從 Azure 入口網站存取 EAS 受管理裝置的相關資訊。
+- Intune 傳統主控台中的 [所有受 Exchange ActiveSync 管理的裝置] 群組將不會移轉至 Azure AD。 不過，您仍然可以從 Azure 入口網站存取 EAS 受管理裝置的相關資訊。
 
 ## <a name="how-to-get-started"></a>如何開始使用？
 
@@ -51,9 +51,9 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune 群組發生什麼事？
-在 Azure 入口網站中，將群組從傳統 Intune 入口網站移轉至 Intune 時，會套用下列規則︰
+在 Azure 入口網站中，將群組從 Azure 入口網站移轉至 Intune 時，會套用下列規則︰
 
-| 傳統的 Intune 群組|Azure AD 的群組|
+| Intune 中的群組|Azure AD 的群組|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |靜態使用者群組|靜態 Azure AD 安全性群組|
 |動態使用者群組|含有 Azure AD 安全性群組階層的靜態 Azure AD 安全性群組|
@@ -65,7 +65,7 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
 ## <a name="group-hierarchy"></a>群組階層
 
-在傳統 Intune 主控台中，所有群組都會有父群組。 群組只能包含其父群組的成員。 在 Azure AD 中，子群組可以包含其父群組中沒有的成員。
+在 Intune 主控台中，所有群組都會有父群組。 群組只能包含其父群組的成員。 在 Azure AD 中，子群組可以包含其父群組中沒有的成員。
 
 ## <a name="group-attributes"></a>群組屬性
 屬性是可用於定義群組的裝置內容。 本表說明這些準則如何移轉至 Azure AD 安全性群組。
@@ -84,4 +84,4 @@ Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>您先前部署的原則與應用程式會發生什麼事？
 
-就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在是從 Azure 入口網站管理這些群組，不是從傳統的 Intune 主控台。
+就像以前一樣，原則和應用程式會繼續部署到群組。 不過，您現在是從 Azure 入口網站管理這些群組，不是從 Intune 主控台。

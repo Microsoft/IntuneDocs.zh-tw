@@ -1,7 +1,7 @@
 ---
 title: "搭配 Intune 設定適用於內部部署 EAS 的 Exchange Connector"
-titleSuffix: Intune Azure
-description: "Intune Azure：Exchange ActiveSync MDM - 使用 Connector 工具啟用 Intune 與內部部署 Exchange Server 之間的通訊"
+titleSuffix: Azure portal
+description: "使用 Connector 工具來啟用 Intune 與內部部署 Exchange Server 之間的通訊"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange Connector
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/14/2017
 
 若要設定可讓 Microsoft Intune 與內部部署 Exchange Server 通訊的連線，您必須依照下面的步驟執行作業：
 
-1.  從 Intune 入口網站下載 Intune 內部部署 Exchange Connector。
+1.  從 Azure 入口網站下載 Intune 內部部署 Exchange Connector。
 2.  安裝和設定 Intune 內部部署 Exchange Connector。
 3.  驗證 Exchange 連線。
 

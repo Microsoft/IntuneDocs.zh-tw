@@ -1,6 +1,6 @@
 ---
-title: "Azure 上 Microsoft Intune 的已知問題"
-titleSuffix: Intune on Azure
+title: "Azure 入口網站中 Microsoft Intune 的已知問題"
+titlesuffix: Azure portal
 description: "閱讀 Intune 的相關已知問題"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 08/15/2017
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>由 Intune 在移轉期間所建立的群組，可能會影響其他 Microsoft 產品的功能
 
-當您從傳統 Intune 移轉到 Azure 入口網站時，您可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
+當您從 Intune 移轉到 Azure 入口網站時，可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>需進行次要移轉以選取功能
 
@@ -49,20 +49,20 @@ ms.lasthandoff: 08/15/2017
 - 裝置註冊管理員帳戶
 - Apple 大量採購方案
 
-因為無法從傳統 Intune (Silverlight) 主控台和 Azure 入口網站管理這些功能，所以移轉會：
-- 在傳統主控台中停用它們
+因為無法從 Intune (Silverlight) 主控台和 Azure 入口網站管理這些功能，所以移轉會：
+- 在傳統入口網站中停用這些功能
 - 在 Azure 入口網站中啟用它們  
 
-在 2017 年 9 月 11 之後，會將這些功能的移轉合併至「主要移轉至 Azure」。 如果您的帳戶已經移轉成使用 Azure 入口網站，則此次要移轉會在 2017 年 9 月 11 日與 22 日之間發生。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統主控台中停用這些功能開始算起。
+在 2017 年 9 月 11 之後，會將這些功能的移轉合併至「主要移轉至 Azure」。 如果您的帳戶已經移轉成使用 Azure 入口網站，則此次要移轉會在 2017 年 9 月 11 日與 22 日之間發生。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統入口網站中停用這些功能開始算起。
 
 如果您現在於 Azure 入口網站中管理這些 Intune 功能，請注意以下幾點：
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>移除 Apple DEP 中的預設公司裝置註冊設定檔
-Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 傳統 Intune (Silverlight) 主控台中提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
+Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 Intune (Silverlight) 主控台中提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>移轉時還原的 Apple DEP 權杖
 
-如果您刪除傳統 Intune (Silverlight) 入口網站中的 Apple 裝置註冊計畫權杖，且未將新的權杖上傳至 Azure 入口網站，則會在您移轉時於 Azure 入口網站中還原原始權杖。 若要移除這個權杖並避免 DEP 註冊，請刪除 Azure 入口網站中的權杖。
+如果您刪除 Intune (Silverlight) 入口網站中的 Apple 裝置註冊計劃權杖，且未將新的權杖上傳至 Azure 入口網站，則會在移轉時於 Azure 入口網站中還原原始權杖。 若要移除這個權杖並避免 DEP 註冊，請刪除 Azure 入口網站中的權杖。
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>用於移轉原則的「狀態」刀鋒視窗無法運作
 
@@ -101,8 +101,9 @@ Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune 的合規性原則不會顯示於新的主控台中
 
-您在傳統入口網站中所建立的合規性原則都會移轉，但並不會顯示於 Azure 入口網站中，因為 Azure 入口網站的設計改變了。 您在傳統 Intune 入口網站中所建立的合規性原則仍然會強制執行，但您必須在傳統 Intune 入口網站中檢視及編輯它們。
-除此之外，您在 Azure 入口網站中所建立的新合規性原則不會顯示於傳統 Intune 入口網站中。
+您在傳統入口網站中所建立的合規性原則都會移轉，但並不會顯示於 Azure 入口網站中，因為 Azure 入口網站的設計改變了。 您在傳統 Intune 傳統入口網站所建立的合規性原則仍然會強制執行，但您必須在傳統入口網站中檢視及編輯這些原則。
+
+除此之外，您在 Azure 入口網站中所建立的新合規性原則不會顯示於傳統入口網站中。
 
 如需詳細資訊，請參閱[什麼是裝置合規性](device-compliance.md)。
 

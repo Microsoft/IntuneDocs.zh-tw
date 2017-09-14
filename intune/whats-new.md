@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 的新功能"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解 Intune Azure 入口網站中的新功能"
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 09/01/2017
 - 深入了解支援 Intune 的[應用程式保護和多重身分識別](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的應用程式。
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>在 Samsung KNOX Standard 裝置上允許或封鎖應用程式的新設定
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 在此版本中，我們新增新的[裝置限制設定](device-restrictions-android.md)，可讓您指定下列應用程式清單：
  
 - 允許使用者安裝的應用程式
@@ -112,7 +112,7 @@ ms.lasthandoff: 09/01/2017
 您可依 URL、套件名稱，或從管理的應用程式清單中指定應用程式。
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>來自 Intune 的新 Azure AD 應用程式條件式存取原則 UI 連結
-
+<!-- 1016201 -->
 IT 管理員現在可以透過 Azure AD 工作負載中的新條件式存取原則 UI，來設定應用程式條件式存取原則。 Azure 入口網站的 [Intune 應用程式防護] 區段中，應用程式條件式存取會暫時保留不動，且會強制並存。 Intune 工作負載中另有提供方便的連結，可連至新的條件式存取原則 UI。
 
 - 深入了解 [Azure AD 上的應用程式條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)。
@@ -124,10 +124,10 @@ IT 管理員現在可以透過 Azure AD 工作負載中的新條件式存取原�
 防火牆 Proxy 設定有[更新的 DNS 名稱和 IP 位址清單](/intune/network-bandwidth-use)。
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>使用 Azure Active Directory 進行條件式存取<!-- 967947 -->
-Azure 主控台的 Azure Active Directory 區段提供條件式存取，在設定 Office 365 Exchange Online 和 SharePoint Online 等雲端應用程式的原則時，可提供更強大而彈性的架構。  使用 [Azure Active Directory] 刀鋒視窗中的 [條件式存取] 來設定原則，取代傳統的 Intune 主控台。 傳統 Intune 主控台中的現有原則，必須在 Azure 主控台中重新建立。 如需詳細資訊，請參閱[建立 Azure AD 條件式存取原則](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)。
+Azure 入口網站的 Azure Active Directory 區段提供條件式存取，在設定 Office 365 Exchange Online 和 SharePoint Online 等雲端應用程式的原則時，可提供更強大而彈性的架構。  使用 [Azure Active Directory] 刀鋒視窗中的 [條件式存取] 來設定原則，以取代 Intune 主控台。 Intune 主控台中的現有原則，必須在 Azure 入口網站中重新建立。 如需詳細資訊，請參閱[建立 Azure AD 條件式存取原則](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)。
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接存取 Apple 註冊案例 <!--951869-->
-對於在 2017 年 1 月之後建立的 Intune 帳戶，Intune 已經啟用使用 Azure 入口網站中的「註冊裝置」工作負載直接存取 Apple 註冊案例。 Apple 註冊預覽原本只能從傳統 Intune 入口網站中的連結存取。 在 2017 年 1 月之前建立的 Intune 帳戶需要進行一次性移轉，才能在 Azure 中使用這些功能。 移轉的排程尚未宣布，但將會盡快提供詳細資料。 如果您現有的帳戶無法存取 Azure 入口網站，我們強烈建議您建立試用帳戶來測試新的體驗。
+對於在 2017 年 1 月之後建立的 Intune 帳戶，Intune 已經啟用使用 Azure 入口網站中的「註冊裝置」工作負載直接存取 Apple 註冊案例。 Apple 註冊預覽原本只能從 Intune 傳統入口網站中的連結存取。 在 2017 年 1 月之前建立的 Intune 帳戶需要進行一次性移轉，才能在 Azure 中使用這些功能。 移轉的排程尚未宣布，但將會盡快提供詳細資料。 如果您現有的帳戶無法存取 Azure 入口網站，我們強烈建議您建立試用帳戶來測試新的體驗。
 
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 入口網站中將被取代的系統管理角色
 在 Intune 傳統入口網站 (Silverlight) 中使用的現有行動應用程式管理 (MAM) 系統管理角色 (參與者、擁有者或唯讀) 在 Intune Azure 入口網站中會被取代為一組新的、完整的角色型系統管理控制 (RBAC)。 當您移轉至 Azure 入口網站之後，必須將系統管理員重新指派至這些新的系統管理角色。 如需 RBAC 和新角色的詳細資訊，請參閱 [Microsoft Intune 的角色型存取控制](/intune/role-based-access-control)。
@@ -168,7 +168,7 @@ iOS 的 Microsoft Intune 公司入口網站應用程式很快將會有更新，�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 鼓勵您的使用者更新到 iOS 9.0 或更新版本，以便完全利用 Intune 的新功能。  鼓勵使用者安裝新版的公司入口網站，並利用它將提供的新功能。
 
-在 Azure 入口網站移至 Intune，並檢視 [裝置] > [所有裝置]，並依 iOS 版本篩選，查看作業系統早於 iOS 9 的任何目前的裝置。
+在 Azure 入口網站中移至 Intune，檢視 [裝置] > [所有裝置]，並依 iOS 版本篩選，以查看作業系統早於 iOS 9 的任何目前裝置。
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
