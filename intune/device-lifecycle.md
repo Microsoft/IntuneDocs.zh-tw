@@ -2,8 +2,8 @@
 title: "MDM 生命週期的概觀"
 description: "了解 Intune 如何協助您從註冊、設定至淘汰的裝置生命週期中管理裝置。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7a2eab6ece5628598a7b5a5f9414aa43abc60d69
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1bb6f92fc974b09a5a8abca9fee96251519a1b98
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>行動裝置管理 (MDM) 生命週期的概觀
 

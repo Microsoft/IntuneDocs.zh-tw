@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -35,13 +35,6 @@ ms.lasthandoff: 08/14/2017
 -   **允許的應用程式︰**這些應用程式是必須遵守此原則的應用程式。
 
 -   **豁免應用程式︰**這些應用程式不會套用此原則，且可以不受限制地存取公司資料。
-
-> [!IMPORTANT]  
-> Intune 建議將公司入口網站應用程式新增至排除清單，以允許應用程式正常運作。 若要這樣做，請將下列**市集應用程式**新增至**排除應用程式**清單：  
->   - 名稱：公司入口網站  
->   - 發行者：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - 產品名稱：Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>應用程式類型
 

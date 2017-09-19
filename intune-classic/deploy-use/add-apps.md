@@ -2,8 +2,8 @@
 title: "新增應用程式"
 description: "使用 Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/13/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aae944c86029be6eaa111ce7c274a466095651d1
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 5ec891a49888da7ad8c2b962e236ec10210cafd7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 新增應用程式
 
