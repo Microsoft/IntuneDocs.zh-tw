@@ -2,8 +2,8 @@
 title: "使用電子郵件設定檔存取公司電子郵件"
 description: "電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 04/19/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 911cd480b10d5e44d63af9748412ebb365102f79
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權
 

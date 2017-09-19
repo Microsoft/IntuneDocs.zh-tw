@@ -115,7 +115,7 @@
     - name: 設定 Intune
       href: setup-steps.md
       items:
-        - name: 必要條件
+        - name: 支援的設定
           href: supported-devices-browsers.md
           items:
             - name: 網路頻寬使用量
@@ -146,7 +146,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: 公司識別碼
               href: corporate-identifiers-add.md
-            - name: 多重要素驗證
+            - name: '[Multi-Factor Authentication]'
               href: multi-factor-authentication.md
             - name: 裝置註冊管理員
               href: device-enrollment-manager-enroll.md

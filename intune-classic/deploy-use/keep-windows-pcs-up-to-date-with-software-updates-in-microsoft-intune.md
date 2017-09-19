@@ -2,8 +2,8 @@
 title: "Windows 電腦的軟體更新"
 description: "Intune 會確保盡快安裝最新的修補程式和軟體更新，協助您將受管理的電腦保持在最新狀態。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fc9ff89294e0b9ba6050be9724a78eb504b1f51a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態
 

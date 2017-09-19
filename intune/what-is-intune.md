@@ -3,8 +3,8 @@ title: "Azure 入口網站中的 Intune 簡介"
 titlesuffix: Azure portal
 description: "了解 Azure 入口網站中 Intune 的基本概念，以及這些概念如何協助您管理裝置。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 nmanager: angrobe
 ms.date: 07/17/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
