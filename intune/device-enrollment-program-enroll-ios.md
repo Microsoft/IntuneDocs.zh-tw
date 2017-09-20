@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -43,7 +43,6 @@ ms.lasthandoff: 09/09/2017
 - [Apple 的裝置註冊計劃](http://deploy.apple.com)中所購買的裝置
 - [MDM 授權單位](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
-- 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
 > [!NOTE]
 > 在設定使用者親和性的 DEP 註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 第一次登入時必須變更密碼的使用者不會收到裝置提示。 此外，密碼已過期的使用者也不會在註冊期間收到提示要重設其密碼。 使用者必須使用不同的裝置來重設密碼。
@@ -109,7 +108,7 @@ ms.lasthandoff: 09/09/2017
 
   為 [使用者親和性] 選擇具備此設定檔的裝置，在註冊時要或不要有指派的使用者。
 
- - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及需要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。
+ - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及需要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
  - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 用於執行工作而不需存取本機使用者資料的裝置。 公司入口網站應用程式之類的應用程式無法運作。
 
@@ -119,6 +118,8 @@ ms.lasthandoff: 09/09/2017
     - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
 
     - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。
+
+  - **啟用共用 iPad** - Apple 的裝置註冊計劃不支援共用 iPad。
 
     - **允許配對** - 指定 iOS 裝置是否可與電腦同步。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 

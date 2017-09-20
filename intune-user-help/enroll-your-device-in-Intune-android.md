@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
@@ -54,14 +54,14 @@ ms.lasthandoff: 07/13/2017
 
 6.  在 [公司存取設定] 畫面上，點選 [開始]。
 
-    ![公司存取設定畫面](./media/and-enroll-4a-comp-access-setup.png)
+    ![公司存取設定畫面](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
 
-7. 在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
+7. 在 [Benefits of device management] \(裝置管理的優點\) 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
 
-    ![為什麼要註冊您的裝置畫面](./media/and-enroll-4b-why-enroll.png)
+    ![[裝置管理的優點] 畫面](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  檢閱 IT 系統管理員在您的裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
 
@@ -114,13 +114,13 @@ ms.lasthandoff: 07/13/2017
 
 14. 出現 [公司存取設定] 畫面時，點選 [繼續]。 如果訊息指出您的裝置不相容，請遵循指示來修正問題，然後點選 [繼續]。
 
-    ![裝置不符合規範但已註冊](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![裝置不符合規範但已註冊](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![出現需要解決的裝置合規性問題](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![出現需要解決的裝置合規性問題](/intune/media/android_cp_enroll_03_post_1709.png)
 
     點選它們便可以知道有關問題的詳細資訊。
 
-    ![裝置合規性問題展開](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![裝置合規性問題展開](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![公司存取設定畫面](./media/and-enroll-9d-comp-access-setup.png)  
 

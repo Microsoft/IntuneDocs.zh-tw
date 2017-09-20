@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對已經十分熟悉傳統入口網站中 Intune 的使用者，但是想知道 Azure 入口網站中 Intune 的操作步驟，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
 |功能 |傳統入口網站中的路徑|Azure 入口網站中 Intune 的路徑|
 |------------|---------------|---------------|
-|裝置註冊計劃 (DEP) |[管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃]|[[裝置註冊] > [Apple 註冊] > [註冊計劃權杖]](#where-did-apple-dep-go) |
-|裝置註冊計劃 (DEP)| [管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃] |[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-apple-dep-go) |
+|裝置註冊計劃 (DEP) [僅限 iOS]|[管理] > [行動裝置管理] > [iOS] > [裝置註冊計劃]|[[裝置註冊] > [Apple 註冊] > [註冊計劃權杖]](#where-did-apple-dep-go) |
+|裝置註冊計劃 (DEP) [僅限 iOS]| [管理] > [行動裝置管理] > [iOS 與 Mac OS X] > [裝置註冊計劃] |[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-apple-dep-go) |
 |註冊規則 |[管理] > [行動裝置管理] > [註冊規則]|[[裝置註冊] > [註冊限制]](#where-did-enrollment-rules-go) |
 |依 iOS 序號分組 |[群組] > [所有裝置] > [公司預先註冊的裝置] > [依 iOS 序號]|[[裝置註冊] > [Apple 註冊] > [註冊計劃序號]](#where-did-corporate-pre-enrolled-devices-go) |
 |依 iOS 序號分組 |[群組] > [所有裝置] > [公司預先註冊的裝置] > [依 iOS 序號]| [[裝置註冊] > [Apple 註冊] > [AC 序號]](#where-did-corporate-pre-enrolled-devices-go)|
