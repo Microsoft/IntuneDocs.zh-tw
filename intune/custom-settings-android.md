@@ -3,10 +3,10 @@ title: "Android 裝置的 Intune 自訂設定"
 titleSuffix: Azure portal
 description: "了解可用於 Android 自訂設定檔中的設定。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92014eb9fd5564c0527b8cbf68732a51cf83bc96
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 433e79ae1518f86aeb7206d5213fc38a38de5218
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的自訂設定
 
@@ -27,7 +27,14 @@ ms.lasthandoff: 09/09/2017
 
 使用 Microsoft Intune Android **自訂**設定檔來指派 OMA-URI 設定，以用於控制 Android 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
 
-此功能的目的是讓您指派無法使用 Intune 原則設定的 Android 設定。
+此功能的目的是讓您指派無法使用 Intune 原則設定的下列 Android 設定：
+
+- [使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔](/intune/wi-fi-profile-shared-key)
+- [使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](/intune/android-pulse-secure-per-app-vpn)
+- [使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式](/intune/samsung-knox-apps-allow-block)
+
+>[!IMPORTANT]
+>這種設定檔類型目前只能進行上方列出的設定。 Android 裝置不會公開您可設定的完整 OMA-URI 設定清單。 如果您希望新增進一步設定，請到 [Intune Uservoice 網站](https://microsoftintune.uservoice.com/forums/291681-ideas)上提議。
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Android 裝置的自訂設定檔設定
 
@@ -45,8 +52,6 @@ ms.lasthandoff: 09/09/2017
 
 當您完成設定時，設定檔會隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
-如需您可以使用之自訂設定的一些範例，請參閱：
 
-- [使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔](/intune/wi-fi-profile-shared-key)
-- [使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](/intune/android-pulse-secure-per-app-vpn)
-- [使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式](/intune/samsung-knox-apps-allow-block)
+
+

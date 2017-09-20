@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -38,17 +38,8 @@ ms.lasthandoff: 09/09/2017
 - 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 - 從 [Apple School Management](http://school.apple.com) 方案購買的裝置
 
-**Apple School Manager 註冊步驟**
-1. [取得 Apple School Manager 權杖並指派裝置](#get-the-apple-token-and-assign-devices)
-2. [建立註冊設定檔](#create-an-apple-enrollment-profile)
-3. [連線 School Data Sync](#connect-school-data-sync) \(選用\)
-4. [同步 Apple School Manager 管理的裝置](#sync-managed-devices)
-5. [將 Apple School Manager 設定檔指派給裝置](#assign-a-profile-to-devices)
-6. [將裝置散發給使用者](#distribute-devices-to-users)
-
 >[!NOTE]
 >在具有使用者親和性的 Apple School Manager 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 註冊後，MFA 會如預期地在這些裝置上運作。 第一次登入時必須變更密碼的使用者不會收到裝置提示。 此外，密碼已過期的使用者也不會在註冊期間收到提示要重設其密碼。 使用者必須使用不同的裝置來重設密碼。
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>取得 Apple 權杖並指派裝置
 
@@ -104,7 +95,8 @@ ms.lasthandoff: 09/09/2017
     - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
 
      - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。
-   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與 [受監督] 模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。
+   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與 [受監督] 模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
+
    >[!NOTE]
    >如果將 [使用者親和性] 設定為 [搭配使用者親和性]，或將 [受監督] 模式設定為 [關閉]，就會停用註冊設定檔的「共用的 iPad」模式。
 

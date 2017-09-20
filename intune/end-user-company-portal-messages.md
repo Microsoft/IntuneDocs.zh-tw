@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>幫助使用者了解公司入口網站應用程式訊息
 
@@ -95,6 +95,17 @@ ms.lasthandoff: 08/03/2017
 ### <a name="how-to-explain-this-to-your-users"></a>如何對使用者說明
 將使用者移至[使用電子郵件將記錄檔傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。 如果要讓使用者比較這兩個方法，您也可以將使用者移至[使用纜線將記錄檔傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-cable-android)。
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>您的公司支援部門必須提供您公司資源的存取權
+
+### <a name="where-it-appears"></a>出現的位置
+如果您未將公司入口網站應用程式新增到**允許的應用程式**或**豁免應用程式**清單，如有使用者嘗試登入，將會登入失敗。 系統會顯示下列訊息：
+
+> **您的公司支援部門必須提供您公司資源的存取權**  
+> 您的公司使用 Windows 資訊保護原則來保護裝置。 您的公司支援部門必須確認其允許公司入口網站加以存取。
+
+### <a name="what-it-means"></a>代表的意義
+
+將公司入口網站新增到 Windows 資訊保護 (WIP) 應用程式保護原則中**允許的應用程式**或**豁免應用程式**清單。 如需詳細資訊，請參閱[使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)。
 
 ### <a name="see-also"></a>請參閱
 [告知使用者有關使用 Intune 的事項](end-user-educate.md)
