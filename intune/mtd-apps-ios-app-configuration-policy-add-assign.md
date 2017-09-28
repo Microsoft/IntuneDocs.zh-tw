@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 98a5b1b705e79b875b83cecb53cd82d7bf5dff30
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
@@ -54,16 +54,6 @@ ms.lasthandoff: 09/09/2017
 #### <a name="microsoft-authenticator-app-for-ios"></a>適用於 iOS 的 Microsoft Authenticator 應用程式
 
 - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Microsoft Authenticator 應用程式市集 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
-
-### <a name="skycure"></a>Skycure
-
-#### <a name="android"></a>Android
-
-- 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用這個 [Skycure 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。
-
-#### <a name="ios"></a>iOS
-
-- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Skycure 應用程式市集 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
 ### <a name="lookout"></a>Lookout
 
@@ -101,6 +91,16 @@ ms.lasthandoff: 09/09/2017
 
 - 上傳重新簽署的 .ipa 檔案，如[使用 Intune 新增 iOS LOB 應用程式](lob-apps-ios.md)主題中所述。 您也必須將最低作業系統版本設定為 iOS 8.0 或更新版本。
 
+### <a name="skycure"></a>Skycure
+
+#### <a name="android"></a>Android
+
+- 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用這個 [Skycure 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。
+
+#### <a name="ios"></a>iOS
+
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Skycure 應用程式市集 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
+
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
 #### <a name="android"></a>Android
@@ -111,7 +111,21 @@ ms.lasthandoff: 09/09/2017
 
 - 請連絡 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以取得該 iOS 應用程式。 請參閱[將 iOS 商店應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示，然後使用**設定應用程式資訊**一節下，**步驟 5** 的 Apple 商店 URL。
 
+### <a name="zimperium"></a>Zimperium
+
+#### <a name="android"></a>Android
+
+- 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用這個 [Zimperium 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
+
+#### <a name="ios"></a>iOS
+
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Zimperium 應用程式市集 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
+
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>建立 MTD 應用程式與 iOS 應用程式設定原則的關聯性
+
+### <a name="for-lookout"></a>若為 Lookout
+
+- 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)主題中所述。
 
 ### <a name="for-skycure"></a>若為 Skycure
 
@@ -139,10 +153,6 @@ ms.lasthandoff: 09/09/2017
 </dict>
 
 ```
-### <a name="for-lookout"></a>若為 Lookout
-
-- 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)主題中所述。
-
 ### <a name="for-check-point-sandblast-mobile"></a>適用於 Check Point SandBlast Mobile
 
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)指示，新增 Check Point SandBlast Mobile iOS 應用程式設定原則。
@@ -152,12 +162,30 @@ ms.lasthandoff: 09/09/2017
 <dict><key>MDM</key><string>INTUNE</string></dict>
 
 ```
+
+### <a name="for-zimperium"></a>若為 Zimperium
+
+- 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Zimperium iOS 應用程式設定原則。
+    - 在**步驟 8** 中，使用選項 [輸入 XML 資料]，複製下方內容，並將其貼到設定原則本文中。
+
+```
+<dict>
+<key>provider</key><string>Intune</string>
+<key>userprincipalname</key><string>{{userprincipalname}}</string>
+<key>deviceid</key>
+<string>{{deviceid}}</string>
+<key>serialnumber</key>
+<string>{{serialnumber}}</string>
+<key>udidlast4digits</key>
+<string>{{udidlast4digits}}</string>
+</dict>
+
+```
+
 ## <a name="to-assign-apps-all-mtd-partners"></a>指派應用程式 (所有 MTD 合作夥伴)
 
 - 請參閱[利用 Intune 將應用程式指派給群組](apps-deploy.md)的指示。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [設定 Lookout 與 Intune 的整合](lookout-mtd-connector-integration.md)
-- [設定 Skycure 與 Intune 整合](skycure-mtd-connector-integration.md)
-- [設定 Check Point SandBlast 與 Intune 的整合](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [新增 MTD 的裝置合規性政策](mtd-device-compliance-policy-create.md)

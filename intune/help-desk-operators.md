@@ -57,7 +57,7 @@ ms.lasthandoff: 09/09/2017
 服務台人員和 Intune 系統管理員有兩種方式可以存取疑難排解入口網站：
 - 在網頁瀏覽器中開啟 [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting)，僅檢視疑難排解入口網站。
   ![疑難排解主控台的螢幕擷取畫面](./media/help-desk-console.png)
-- 登入 Azure 入口網站，選擇 [More Services] (更多服務) > [監視 + 管理] > [Intune]，然後移至 [說明及支援] > [疑難排解]。
+- 登入 Azure 入口網站，選擇 [More Services] \(更多服務) > [監視 + 管理] > [Intune]，然後移至 [說明及支援] > [疑難排解]。
 
 按一下 [選取使用者] 以檢視使用者及其詳細資料。
 

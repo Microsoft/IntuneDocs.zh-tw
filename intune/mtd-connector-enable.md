@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense
 
 > [!NOTE] 
 > 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
-若要在 Intune 中啟用 Mobile Threat Defense (MTD) 連線，您應該已在 MTD 解決方案主控台中設定 Intune 連接器。
+若要在 Intune 中啟用 Mobile Threat Defense (MTD) 連線，您必須已在 MTD 夥伴主控台中設定 Intune 連接器。
 
 ## <a name="to-enable-the-mtd-connector"></a>啟用 MTD 連接器
 
@@ -65,7 +65,3 @@ ms.lasthandoff: 09/09/2017
 
 > [!TIP]
 > 您可從 [Mobile Threat Defense] 刀鋒視窗中看見 Intune 與 MTD 合作夥伴之間的 [連線狀態] 與 [上次同步處理] 時間。
-
-## <a name="next-steps"></a>後續步驟
-
-[搭配 Intune 建立 Mobile Threat Defense 裝置合規性原則](mtd-device-compliance-policy-create.md)

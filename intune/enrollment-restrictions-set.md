@@ -69,8 +69,8 @@ ms.lasthandoff: 09/09/2017
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 選擇 [裝置註冊] > [註冊限制]。
 4. 在 Azure 入口網站中，依序選擇 [裝置註冊] 和 [註冊限制]。
-5. 選擇 [註冊限制] > [Device Limit Restrictions] (裝置數量限制)。
+5. 選擇 [註冊限制] > [Device Limit Restrictions]\ (裝置數量限制)。
 6. 選取 [所有使用者] 下的 [裝置限制]。 指定每位使用者已註冊裝置的數目上限。  
-![有裝置數量限制之 [device limit restrictions] (裝置數量限制) 刀鋒視窗的螢幕擷取畫面。](./media/device-restrictions-limit.png)
+![有裝置數量限制之 [device limit restrictions]\ (裝置數量限制) 刀鋒視窗的螢幕擷取畫面。](./media/device-restrictions-limit.png)
 
   按一下 [儲存]。
