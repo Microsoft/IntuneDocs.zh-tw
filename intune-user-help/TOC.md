@@ -27,7 +27,7 @@
 ### [修正 Android 的常見問題](troubleshoot-your-device-android.md)
 #### [檢查裝置合規性](check-compliance-on-your-device-android.md)
 
-#### [使用記錄檔以修正問題]
+#### 使用記錄檔以修正問題
 ##### [開啟詳細資訊記錄](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [使用電子郵件來傳送記錄檔](send-logs-to-your-it-admin-by-email-android.md)
 ##### [使用 USB 纜線來傳送記錄檔](send-logs-to-your-it-admin-using-cable-android.md)
