@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -98,3 +98,17 @@ ms.lasthandoff: 08/11/2017
 | 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Microsoft 的 VPP 方案 |
 | 00000000-0000-0000-0000-000000000000 |尚未提供 |預設值為 [無 VPP] |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Apple 的 VPP 方案 |
+
+
+
+## <a name="applicationinventory"></a>ApplicationInventory
+
+**ApplicationInventory** 實體會列出清查收集期間在裝置上找到的應用程式。
+
+| 屬性  | 描述 |
+|---------|------------|
+| DeviceKey |這是包含 Intune 裝置識別碼的裝置資料表參考 |
+| DateKey |表示清查當日的日期資料表參考 |
+| ApplicationName |應用程式名稱 |
+| ApplicationVersion |應用程式的版本 |
+| BundleSize |以位元組為單位的應用程式大小 |

@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>使用警示以取得 Microsoft Intune 的通知
 
@@ -61,6 +61,8 @@ ms.lasthandoff: 09/05/2017
 
 ## <a name="working-with-alerts"></a>使用警示
 
+若要在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中檢視警示，請選擇 [警示]，以及要檢視的警示類型。
+
 使用下列選項協助您處理 Intune 管理主控台的警示。
 
 |選項|描述|
@@ -70,11 +72,12 @@ ms.lasthandoff: 09/05/2017
 |**關閉警示**|在警示清單中，選擇要關閉的警示，然後選擇 [關閉警示]。<br /><br />90 天後永久刪除關閉的警示。|
 |**重新啟動已關閉的警示**|在警示清單中，將 [篩選] 下拉式清單設為 [已關閉]。<br /><br />在已關閉的警示清單中，選取您想要重新啟用的警示，然後選擇 [重新啟用警示]。|
 
-Intune 警示會保持作用中狀態，直到發生以下狀況：
+Intune 警示會保持在有效狀態 30 天，或直到發生以下狀況：
 
-- 已修正導致警示的問題
-- 您手動關閉警示
-- 警示產生後已過了 45 天
+- 導致發生警示的問題已修正。
+- 已手動關閉警示。
+
+關閉的警示可在關閉後重新啟動，為期 30 天。 30 天過後，已關閉與非作用中的警示會從 Intune 移除。
 
 > [!TIP]
 > 如果執行不同作業系統的裝置產生一樣的警示，您可能會在警示清單中看到多個版本的相同警示。

@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d48664186b1914d30757557bd97d3d61b6410338
-ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
+ms.openlocfilehash: 08a22a1fa6829807860b6278181dd638f1049770
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -46,9 +46,9 @@ ms.lasthandoff: 09/19/2017
 
 ### <a name="device-enrollment"></a>裝置註冊
 
-#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o----1475932---"></a>在 Android O 的公司入口網站應用程式新增終端使用者的推播通知 <!---1475932--->
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-oreo----1475932---"></a>在 Android Oreo 的公司入口網站應用程式上新增終端使用者的推播通知 <!---1475932--->
 
-終端使用者會看到額外的通知，向他們指出 Android O 的公司入口網站應用程式執行背景工作的時間，例如從 Intune 服務擷取原則。 這讓終端使用者更能夠看到公司入口網站在裝置上執行管理工作的時間。 這是 Android O 公司入口網站應用程式整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部份。 
+終端使用者將會看到其他通知，這些通知會指出 Android Oreo 版公司入口網站應用程式正在執行背景工作，例如從 Intune 服務擷取原則。 這讓終端使用者更能夠看到公司入口網站在裝置上執行管理工作的時間。 這是適用於 Android Oreo 版公司入口網站應用程式之整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部分。 
 
 #### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知終端使用者可看到哪些 iOS 裝置資訊 <!--739894--> 
 
@@ -116,7 +116,7 @@ Windows 10 公司入口網站應用程式已經更新，以支援 Windows 資訊
 
 ### <a name="app-management"></a>應用程式管理
 #### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司入口網站使用者和應用程式防護原則使用者的新登入體驗 <!-- 621669 -->
-終端使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置以及檢視 IT 連絡人資訊，而不需要註冊其 Android 裝置。 此外，如果終端使用者已使用由 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，則終端使用者無法再收到註冊裝置的提示。
+使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置及檢視 IT 連絡人資訊，而無需註冊其 Android 裝置。 此外，如果終端使用者已使用由 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，則終端使用者無法再收到註冊裝置的提示。
 
 ### <a name="new-setting-in-the-android-company-portal-app-to-toggle-battery-optimization---1405990--"></a>Android 公司入口網站應用程式中用來切換電池最佳化的新設定 <!--1405990-->
 適用於 Android 的公司入口網站應用程式中的 [設定] 頁面，具有新的設定，可讓使用者輕鬆關閉公司入口網站及 Microsoft Authenticator 應用程式的電池最佳化功能。 設定中所顯示的應用程式名稱，會依管理公司帳戶的應用程式而有所不同。 建議使用者關閉電池最佳化功能，以提升同步電子郵件與資料的公司應用程式效能。 

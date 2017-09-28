@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: 案例實作指南
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: 保護 Exchange Online
           href: exchange-online-protect.md
         - name: 減少技術支援中心成本
           href: password-reset.md
+        - name: 防止未經授權的存取
+          href: data-outside-protect.md
+        - name: 防止資料在未受管理的裝置上外洩
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: 移轉指南
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Check Point 與 Intune 整合
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: 新增 MTD 應用程式
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: 在 Intune 中啟用 MTD
-              href: mtd-connector-enable.md
-            - name: 建立 MTD 裝置合規性原則
-              href: mtd-device-compliance-policy-create.md
+            - name: 設定 Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Zimperium 與 Intune 整合
+                  href: zimperium-mtd-connector-integration.md
+            - name: 為 MTD 設定 Intune
+              items:
+                - name: 新增 MTD 應用程式
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: 建立 MTD 裝置合規性原則
+                  href: mtd-device-compliance-policy-create.md
+                - name: 在 Intune 中啟用 MTD
+                  href: mtd-connector-enable.md
         - name: 網路存取控制
           href: network-access-control-integrate.md
         - name: 設定 Windows Hello
