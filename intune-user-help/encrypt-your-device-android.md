@@ -60,7 +60,7 @@ ms.lasthandoff: 08/17/2017
 
     3. 在您選擇螢幕鎖定之後，請回到 [Lock screen and security] \(鎖定螢幕和安全性) 畫面，然後選取 [安全啟動]。 
     
-    4. 在 [安全啟動] 畫面上，依序點選 [Require PIN to start device] (需要 PIN 才能啟動裝置) 和 [繼續]。
+    4. 在 [安全啟動] 畫面上，依序點選 [Require PIN to start device] \(需要 PIN 才能啟動裝置) 和 [繼續]。
 
     5. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**「Confirm your PIN」 (確認您的 PIN)**。
 
