@@ -103,7 +103,7 @@ ms.lasthandoff: 08/25/2017
 
 5. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
 
-6. 選擇在 [Production] (生產) 下建立 [In-House and Ad Hoc] (內部和特定) 憑證。
+6. 選擇在 [Production]\(生產) 下建立 [In-House and Ad Hoc]\(內部和特定) 憑證。
 
   ![選取內部和特定憑證](./media/iOS-signing-cert-3.png)
 
