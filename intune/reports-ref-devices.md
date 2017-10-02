@@ -354,7 +354,7 @@ ms.lasthandoff: 08/14/2017
 | CellularTechnology |行動電信業者網路類型 (CDMA/GSM) |
 | Imsi |IMSI 編號 |
 | JB 破解 |如果裝置已 JB 破解或刷機，則為 True。 |
-| IsActivationLockEnabled |已啟用 [True Is Activation Lock] (True 為啟用鎖定) |
+| IsActivationLockEnabled |已啟用 [True Is Activation Lock]\(True 為啟用鎖定) |
 | DeviceType |裝置類型 |
 | IsSupervised |受監督 |
 | DeviceDisplayNumberOfColors |彩色的裝置顯示編號 |

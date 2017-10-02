@@ -37,7 +37,7 @@ ms.lasthandoff: 08/11/2017
 在 Azure 中建立原生應用程式。 此原生應用程式是用戶端應用程式。 本機用戶端要求認證時，在本機電腦上執行的用戶端會參考 Intune 資料倉儲 API。 
 
 1. 登入您租用戶的 Azure 入口網站。 選擇 [Azure Active Directory] > [應用程式註冊]，以開啟 [應用程式註冊] 刀鋒視窗。
-2. 按一下 [New app registration] (新增應用程式註冊)。
+2. 按一下 [New app registration]\(新增應用程式註冊)。
 3. 鍵入應用程式詳細資料。
     1.  在 [名稱] 中，鍵入易記名稱 (例如 Intune 資料倉儲用戶端)。
     2.  在 [應用程式類型] 中，選取 [原生]。
@@ -65,7 +65,7 @@ ms.lasthandoff: 08/11/2017
 5.  搜尋 Web 應用程式名稱。 它會命名為 **Microsoft Intune API**。
 6.  按一下清單中的應用程式。
 7.  按一下 [選取]。
-8.  核取 [委派的權限] 方塊，以新增 [Get data warehouse information from Microsoft Intune] (從 Microsoft Intune 取得資料倉儲資訊)。
+8.  核取 [委派的權限] 方塊，以新增 [Get data warehouse information from Microsoft Intune]\(從 Microsoft Intune 取得資料倉儲資訊)。
 
     ![啟用存取](media\reports-get_rest_data_client_access.png)
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 08/11/2017
 
     `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  選擇 [授權] 索引標籤，然後從 [類型] 清單中選取 [OAuth 2.0]。
-5.  按一下 [Get New Access Token] (取得新存取權杖)。
+5.  按一下 [Get New Access Token]\(取得新存取權杖)。
 6.  確認您已經在 Azure 中將回呼 URL 新增至應用程式。 回呼 URL 是 `https://www.getpostman.com/oauth2/callback`。
 7.  在 [權杖名稱] 中，鍵入 [持有人]。
 8.  新增 [驗證 URL]。 它應該看起來像這樣：  
@@ -132,7 +132,7 @@ ms.lasthandoff: 08/11/2017
     ![權杖的資訊](media\reports-postman_getnewtoken.png)
 
 14. 在 Active AD 授權頁面中，鍵入認證。 Postman 中的 [現有權杖] 清單現在包含名為 `Bearer` 的權杖。
-16. 選擇權杖。 在 [Add token to] (將權杖新增至) 中，選取 [標頭]。
+16. 選擇權杖。 在 [Add token to]\(將權杖新增至) 中，選取 [標頭]。
 17. 按一下 [使用權杖]。 標頭清單包含授權的新金鑰值以及值 `Bearer <your-authorization-token>`。
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>使用 Postman 將呼叫傳送至端點
@@ -153,7 +153,7 @@ ms.lasthandoff: 08/11/2017
 2.  選擇 [檔案] > [新增專案]。 展開 [Visual C#]，然後選擇 [主控台應用程式 (.NET Framework)]。 
 3.  將專案命名為 ` IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後按一下 [確定]。
 3.  以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]。 按一下 [瀏覽]，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory'。
-4. 選擇套件，並在 [Manage Packages for Your Solution] (管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後按一下 [安裝]。 
+4. 選擇套件，並在 [Manage Packages for Your Solution]\(管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後按一下 [安裝]。 
 5. 按一下 [我接受]，以接受 NuGet 套件授權。
 6. 從方案總管中，開啟 `Program.cs`。
 
