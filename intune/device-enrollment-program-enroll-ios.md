@@ -67,7 +67,7 @@ ms.lasthandoff: 09/14/2017
   ![[Apple 憑證] 工作區中 [註冊計劃權杖] 窗格下載公開金鑰的螢幕擷取畫面。](./media/enrollment-program-token-download.png)
 
 **步驟 2.建立並下載 Apple DEP 權杖。**<br>
-1. 選擇 [Create a token via Apple's Device Enrollment Program] (透過 Apple 裝置註冊計劃建立權杖) 開啟 Apple 的部署計劃入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
+1. 選擇 [Create a token via Apple's Device Enrollment Program]\(透過 Apple 裝置註冊計劃建立權杖) 開啟 Apple 的部署計劃入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
 2.  在 Apple 的[部署計劃入口網站](https://deploy.apple.com)，針對 [裝置註冊計劃] 選擇 [開始使用]。
 
 3. 在 [管理伺服器] 頁面上，選擇 [新增 MDM 伺服器]。
@@ -87,7 +87,7 @@ ms.lasthandoff: 09/14/2017
 
    ![指定依據序號選擇裝置、將選擇的動作設定為 [指派給伺服器]，然後選取伺服器名稱的螢幕擷取畫面。](./media/enrollment-program-token-specify-serial.png)
 
-9. 針對 [選擇動作] 選擇 [Assign to Server] (指派給伺服器))，然後選擇指定給 Microsoft Intune 的 &lt;伺服器名稱&gt;，再選擇 [確定]。 Apple 入口網站會將指定的裝置指派給 Intune 伺服器以便管理 ，然後顯示 [指派完成]。
+9. 針對 [選擇動作] 選擇 [Assign to Server]\(指派給伺服器))，然後選擇指定給 Microsoft Intune 的 &lt;伺服器名稱&gt;，再選擇 [確定]。 Apple 入口網站會將指定的裝置指派給 Intune 伺服器以便管理 ，然後顯示 [指派完成]。
 
    在 Apple 入口網站中，移至 [部署計劃] &gt; [裝置註冊計劃] &gt; [檢視指派歷程記錄] 查看裝置及其 MDM 伺服器指派的清單。
 
@@ -130,7 +130,7 @@ ms.lasthandoff: 09/14/2017
 5. 選擇 [設定助理設定]，對下列設定檔進行設定：
 
   ![為新註冊計劃設定檔使用可用設定選取組態設定的螢幕擷取畫面。](./media/enrollment-program-profile-settings.png)
-    - **部門名稱** - 使用者於啟用期間點選 [About Configuration] (關於設定) 時顯示。
+    - **部門名稱** - 使用者於啟用期間點選 [About Configuration]\(關於設定) 時顯示。
 
     - **部門電話** - 在使用者於啟用期間按一下 [需要協助] 按鈕時顯示。
     - **設定輔助程式選項** - 這些是選用設定，稍後可以在 iOS [設定] 功能表中進行設定。

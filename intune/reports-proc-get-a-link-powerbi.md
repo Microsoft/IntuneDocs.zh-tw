@@ -51,8 +51,8 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
 2.  開啟 [Microsoft Intune 資料倉儲 API (預覽)] 刀鋒視窗。
-3.  按一下 [Download PowerBI file] (下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
-4.  使用 Power BI 開啟檔案。 [Intune Data Warehouse Reports] (Intune 資料倉儲報表) 即會載入，但可能需要一秒才能取得租用戶資料。
+3.  按一下 [Download PowerBI file]\(下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
+4.  使用 Power BI 開啟檔案。 [Intune Data Warehouse Reports]\(Intune 資料倉儲報表) 即會載入，但可能需要一秒才能取得租用戶資料。
 5.  按一下 [重新整理] 載入您的租用戶資料以及檢閱報表。
 6.  如果尚未使用 Azure Active Directory 認證來驗證 Power BI，Power BI 會提示您提供認證。 選取您的認證時，請選擇 [組織帳戶] 作為驗證方法。
 

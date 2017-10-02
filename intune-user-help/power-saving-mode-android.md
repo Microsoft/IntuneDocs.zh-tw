@@ -38,7 +38,7 @@ Microsoft Intune 小組正積極處理有關此問題的解決方案。 確定�
 許多製造商會在他們的 Android 裝置中新增修改。 如此會變更您與裝置互動的某些方式，例如佈景主題和通知。 Google 通常不會在他們的電話上進行這類修改。 例如，在使用 Android 7.0 或更高版本的 Google Pixel 裝置上，您要依照下列步驟從電池最佳化中移除這些應用程式：
 
 1. 開啟 [設定] 。
-2. 點選 [電池] > [更多] > [Battery optimization] (電池最佳化)。
+2. 點選 [電池] > [更多] > [Battery optimization]\(電池最佳化)。
 3. 點選向下箭號，再點選 [Not optimized] (未最佳化)。
 4. 選取公司入口網站和 Outlook 應用程式，然後關閉電池最佳化。
 
@@ -47,14 +47,14 @@ Microsoft Intune 小組正積極處理有關此問題的解決方案。 確定�
 至於其他類型的 Android 裝置，例如使用 Android 7.0 或更新版本的 Samsung 裝置，您可能必須遵循不同的步驟從電池最佳化中移除 Outlook 和公司入口網站應用程式。
 
 1. 開啟 [設定] 。
-2. 點選 [功能表 (…)]  > [特殊存取] > [Optimize battery usage] (最佳化電池使用方式)。
+2. 點選 [功能表 (…)]  > [特殊存取] > [Optimize battery usage]\(最佳化電池使用方式)。
 3. 從下拉式清單選取 [所有應用程式]。
 4. **關閉**公司入口網站和 Outlook 應用程式旁邊的切換按鈕，以關閉電池最佳化。
 
 此外，如果您使用的是具有較低 Android 版本的 Samsung 裝置，您可能需要遵循下列步驟從省電模式中移除這些應用程式。
 
 1. 開啟 [設定] 。
-2. 點選 [Device maintenance] (裝置維護) > [電池] > [Unmonitored apps] (未受監視的應用程式)。
+2. 點選 [Device maintenance]\(裝置維護) > [電池] > [Unmonitored apps]\(未受監視的應用程式)。
 3. 點選 [新增應用程式]。
 4. 選取公司入口網站和 Outlook 應用程式，然後點選 [完成]。
 
@@ -64,8 +64,8 @@ Microsoft Intune 小組正積極處理有關此問題的解決方案。 確定�
 
 1. 開啟 [系統設定]。 
 2. 點選 [搜尋] 按鈕。 這看起來像螢幕右上方的放大鏡。 
-3. 在搜尋中鍵入**電池最佳化**，然後在出現的 [設定] 畫面中選取 [Battery optimization] (電池最佳化) 選項。 
-4. 點選 [電池] > [Battery optimization] (電池最佳化)。
+3. 在搜尋中鍵入**電池最佳化**，然後在出現的 [設定] 畫面中選取 [Battery optimization]\(電池最佳化) 選項。 
+4. 點選 [電池] > [Battery optimization]\(電池最佳化)。
 5. 選取公司入口網站和 Outlook 應用程式，然後點選 [Don't optimize] (不要最佳化)。 點選 [完成]。
 
 <!--On a OnePlus 5 device with Android 7.1.1, you would follow these steps to remove these apps from battery optimization:
