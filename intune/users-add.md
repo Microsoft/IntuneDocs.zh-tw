@@ -53,7 +53,7 @@ ms.lasthandoff: 09/09/2017
 6. 選擇 [新增] 建立新的使用者。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 入口網站中新增 Intune 使用者
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [More services] (更多服務) > [監視 + 管理] > [Intune]。 您也可以「搜尋 **Intune** 資源」。
+1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [More services]\(更多服務) > [監視 + 管理] > [Intune]。 您也可以「搜尋 **Intune** 資源」。
 2. 選取 [使用者]。
 3. 在系統管理中心，選取 [新增使用者]。
   ![Office 365 系統管理員的螢幕擷取畫面](media/intune-add-user.png)
