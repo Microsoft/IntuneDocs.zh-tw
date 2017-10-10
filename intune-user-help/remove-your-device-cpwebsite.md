@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4293e05d3668c7f6d6d6b9986e006061df5afe80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b490148a932339d4fb4366d28e020416782ceee
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>從公司入口網站移除裝置
 
-如果決定不想再由公司或組織管理您的裝置，您可以使用[公司入口網站](http://portal.manage.microsoft.com)從公司入口網站移除它。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。 如果移除裝置，公司入口網站將不再列出此裝置，而且您還可能無法再存取公司或學校的資料、應用程式和電子郵件。
+如果決定不想再由公司或組織管理您的裝置，您可以使用[公司入口網站](https://portal.manage.microsoft.com)從公司入口網站移除它。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。 如果移除裝置，公司入口網站將不再列出此裝置，而且您還可能無法再存取公司或學校的資料、應用程式和電子郵件。
 
 若要移除裝置︰
 
-1.  在[公司入口網站](http://portal.manage.microsoft.com)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+1.  在[公司入口網站](https://portal.manage.microsoft.com)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
 
   ![公司入口網站的影像，畫面左邊是展開的側邊功能表，有 [首頁]、[所有應用程式]、[我的裝置]、[技術支援] 和 [登出] 按鈕。](/media/iwp-expanded-sidebar.png)
 
@@ -42,4 +42,4 @@ ms.lasthandoff: 07/01/2017
 
 4. 閱讀警告訊息，然後點選 [移除] 以從公司入口網站移除您的裝置。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
