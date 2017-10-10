@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 081798753f3e962e0ca500097fc55e021802c73d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>您需要升級裝置以安裝 Outlook 應用程式
 
@@ -34,4 +34,4 @@ ms.lasthandoff: 07/01/2017
 ## <a name="if-you-have-an-ios-device"></a>如為 iOS 裝置
 點選 [設定] > [一般] > [軟體更新]。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

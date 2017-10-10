@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e29819ec65325ad69c51fd155047afa19769ccfa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>以裝置註冊計劃在 Intune 註冊 iOS 裝置
 
@@ -33,4 +33,4 @@ Apple 向各公司行號及組織提供裝置註冊計劃，希望讓使用者�
 5.  同意**條款和條件**並決定是否將診斷資訊傳送至 Apple。
 6.  完成註冊後，裝置可能會提示您執行更多動作。 其中某些可能要輸入存取電子郵件的密碼、設定密碼、同意安裝應用程式，全部都是根據貴公司 Intune 系統管理員設定的進行。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

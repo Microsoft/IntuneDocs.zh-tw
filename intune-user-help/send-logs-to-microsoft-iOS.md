@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4abb070d6cf4f8200bdf1b9380ade7db81535622
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b77c28b7c3ccec979a7c3612483f8682c3094576
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>將 iOS 裝置的記錄傳送給公司入口網站開發人員
 
@@ -33,4 +33,4 @@ ms.lasthandoff: 07/01/2017
 3.  按住畫面，然後上下拖曳藍色小點，直到選取了報告中的所有文字。 點選快顯功能表中的 [複製]。
 4.  開啟您的電子郵件應用程式，將報告內容貼到電子郵件的本文。 將這封電子郵件傳送至 <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
