@@ -1,5 +1,5 @@
 ---
-title: "若您拒絕接受＜使用規定＞，請取消註冊您的裝置"
+title: "如果您拒絕接受使用規定，請取消註冊您的裝置 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b99ce8b30e25960e09e39b81f0f58aa09af2affa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d96619693c879d7e3041b6554363bea58f6792a5
+ms.sourcegitcommit: 659fe1b08eb7f02bc7eaed6b9e21a95fa1ef45b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請取消註冊您的裝置
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 07/01/2017
 
     您現在可以解除安裝公司入口網站應用程式。
 
-是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+是否仍需要協助？ 請連絡公司支援人員 (請查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是將電子郵件傳送給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

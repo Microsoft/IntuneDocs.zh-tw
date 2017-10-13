@@ -1,5 +1,5 @@
 ---
-title: "使用電子郵件將記錄檔傳送給 IT 管理員 | Microsoft Docs"
+title: "使用電子郵件將記錄傳送給公司支援人員 | Microsoft Docs"
 description: "在 Android 裝置上使用電子郵件傳送資料記錄"
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>使用電子郵件將記錄檔傳送給 IT 管理員
+# <a name="send-logs-to-your-company-support-using-email"></a>使用電子郵件將記錄傳送給公司支援人員
 
-如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，您可以使用電子郵件將訊息傳送給 IT 系統管理員，協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
 
 > [!Note]
-> 為方便 IT 管理員更容易找出問題，您應該開啟 [詳細資訊記錄]。 [詳細資訊記錄] 包含報表中所有相關的詳細資訊。 了解如何[開啟 [詳細資訊記錄]](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
+> 為方便公司支援人員更容易找出問題，您應該開啟 [詳細資訊記錄]。 [詳細資訊記錄] 包含報表中所有相關的詳細資訊。 了解如何[開啟 [詳細資訊記錄]](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
 
-使用電子郵件將記錄檔傳送給 IT 系統管理員：
+使用電子郵件將記錄傳送給公司支援人員：
 
 1.  開啟公司入口網站應用程式。
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 07/01/2017
 
 3.  在 [說明] 底下，點選 [取得說明]。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

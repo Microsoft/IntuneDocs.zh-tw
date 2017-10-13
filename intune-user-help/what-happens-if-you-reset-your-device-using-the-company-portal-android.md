@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司入口網站重設 Android 裝置會發生什麼情況？
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 07/01/2017
 
 如果您有 Samsung KNOX 裝置，則可以從公司入口網站選擇 [裝置移除] 選項，以進行「選擇性抹除」。 「選擇性抹除」只會移除：
 
-- IT 系統管理員提供給您的商務應用程式。
+- 公司支援人員提供給您的商務應用程式。
 - 電子郵件、VPN 和 Wi-Fi。
-- IT 系統管理員強制執行特定設定的能力。
+- 公司支援人員強制執行特定設定的能力。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

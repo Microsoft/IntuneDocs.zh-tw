@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
@@ -33,8 +33,8 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 ## <a name="how-do-i-get-the-company-portal"></a>如何取得公司入口網站？
 您可以使用兩種不同的方式來取得公司入口網站︰
 
-- 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您的 IT 系統管理員也可以為您安裝公司入口網站應用程式。
-- 前往您 IT 系統管理員設定的[公司入口網站](https://portal.manage.microsoft.com)。
+- 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您公司的支援人員也可以為您安裝公司入口網站應用程式。
+- 前往您公司支援人員設定的[公司入口網站](https://portal.manage.microsoft.com)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>應用程式與網站之間的差異為何？
 公司入口網站應用程式與公司入口網站有一些次要差異，但您可以對兩者執行的大部分工作都相同。 您可以執行的工作：
@@ -54,9 +54,9 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 - [使用公司入口網站](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>當您新增電腦或裝置到公司入口網站時會發生什麼情況？
-當您新增電腦或裝置到公司入口網站時，可能會安裝某項軟體或下載某個應用程式 (視裝置而定)。 同時，您也將賦予 IT 管理員管理您裝置的權限，協助保護裝置上的公司資訊。
+當您新增電腦或裝置到公司入口網站時，可能會安裝某項軟體或下載某個應用程式 (視裝置而定)。 同時，您也將授與公司支援人員管理您裝置的權限，協助保護裝置上的公司資訊。
 
-如需了解 IT 系統管理員可以在您裝置上看到及看不到的內容，請使用符合所用裝置類型的連結︰
+若要了解公司支援人員可以在您裝置上看到及看不到的內容，請使用符合所用裝置類型的連結︰
 
 - [安裝 Android 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [安裝 iOS 與 macOS 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供
 - [修正 iOS 裝置常見的問題](troubleshoot-your-device-ios.md)
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您的 IT 管理員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
+您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您公司的支援人員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。

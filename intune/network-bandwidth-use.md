@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
-ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
+ms.openlocfilehash: d68cbb05025e89e256a22dc88f5c4ee2afc3c536
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune 網路頻寬用量
 
@@ -155,3 +155,16 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+
+### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
+| 主機名稱  | URL (IP 位址/子網路) | 通訊協定 | Port | Device |
+| --- | --- | --- | --- | --- |
+|  管理員主控台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
+| 管理員主控台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |
+| 管理員主控台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
+| PI 伺服器  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | 適用於 Apple iOS 和 macOS 雲端傳訊。 |
+| 裝置服務  | gateway.push.apple.com | TCP | 2195 | Apple  |
+| 裝置服務  | feedback.push.apple.com | TCP | 2196 | Apple  |
+| 裝置服務  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
+| 裝置 (網際網路/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 和 443 | 僅限 Apple。 &#39;#&#39; 是 0 到 200 之間的亂數。 |
+| 裝置 (網際網路/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 或 443 | 僅限 Apple |

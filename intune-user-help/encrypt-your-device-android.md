@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
 當您加密裝置時，系統會用一層防護性程式碼包覆其中的資訊，防止未經授權的人員進行存取。 貴組織需要您先加密 Android 裝置才能存取公司檔案、電子郵件或資料，此為確保資訊安全的步驟。
 
 > [!Note]
-> 如果 IT 系統管理員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
+> 如果公司支援人員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
 
 如果您取消註冊您的電話，則它會維持加密狀態。
 
@@ -52,11 +52,11 @@ ms.lasthandoff: 08/17/2017
 
 - 請確定您的裝置已連接電源線且正在充電。
 - 請確定您已在裝置上設定 PIN 或密碼。
-- 如果您已在裝置上設定 PIN 或密碼，請嘗試下列的步驟，以讓 IT 系統管理員為您的裝置進行更安全的防護。 您所看到的功能表名稱可能和步驟中的名稱稍有不同，視您擁有的 Android 裝置類型而定。
+- 如果您已在裝置上設定 PIN 或密碼，請嘗試下列的步驟，以讓公司支援人員為您的裝置進行更安全的防護。 您所看到的功能表名稱可能和步驟中的名稱稍有不同，視您擁有的 Android 裝置類型而定。
 
     1. 移至 [設定] > [Lock screen and security] \(鎖定螢幕和安全性) > [螢幕鎖定]。 確認目前的 PIN 或密碼。
 
-    2. 在 **[Choose screen lock] \(選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。 
+    2. 在 **[Choose screen lock] (選擇螢幕鎖定** 畫面上，選擇您想要使用的螢幕鎖定類型。 
 
     3. 在您選擇螢幕鎖定之後，請回到 [Lock screen and security] \(鎖定螢幕和安全性) 畫面，然後選取 [安全啟動]。 
     
@@ -66,4 +66,4 @@ ms.lasthandoff: 08/17/2017
 
     6. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
-是否仍需要協助？ 請連絡您的 IT 系統管理員 (請查看[公司入口網站](http://portal.manage.microsoft.com)以取得連絡資訊)，或是傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+是否仍需要協助？ 請連絡公司支援人員 (請查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是將電子郵件傳送給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

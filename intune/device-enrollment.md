@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ ms.lasthandoff: 09/09/2017
 ## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
 
 下表提供 Intune 註冊方法的概觀及其功能與需求，如下所述。
+
 **圖例**
 
 - **需要重設**：裝置會在註冊期間重設成出廠預設值。
@@ -79,18 +80,59 @@ ms.lasthandoff: 09/09/2017
 裝置註冊管理員 (DEM) 是特殊的使用者帳戶，可用於註冊及管理公司擁有的多部裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](./device-enrollment-manager-enroll.md)。
 
 ### <a name="dep"></a>DEP
-Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 **iOS 監督**模式，其接著會啟用下列功能：
+Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 iOS 受監督模式，接著會使用下列功能來設定裝置：
 
-  - 已鎖定註冊
-  - Kiosk 模式及其他進階設定與限制
+- App Lock (單一應用程式模式) 
+- 全域 HTTP Proxy 
+- 啟用鎖定略過 
+- 自發性單一應用程式模式 
+- 網路內容篩選 
+- 設定背景和鎖定畫面 
+- 無訊息應用程式推送 
+- AlwaysOn VPN 
+- 只允許受管理應用程式安裝 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- 主機配對 
+- 雲端同步 
+- Spotlight 搜尋 
+- 遞交 
+- 清除裝置 
+- 限制 UI 
+- 透過 UI 安裝組態設定檔 
+- 新聞 
+- 鍵盤快速鍵 
+- 密碼修改 
+- 裝置名稱變更 
+- 底色圖案變更 
+- 自動應用程式下載 
+- 企業應用程式信任變更 
+- Apple Music 
+- 郵件放置 
+- 與 Apple Watch 配對 
+
+> [!NOTE]
+> Apple 確認在 2018 年，特定設定將會移至僅受監督。 建議您在使用這些設定時考慮這點，而不是等待 Apple 將它們移轉至僅受監督：
+> - 應用程式安裝
+> - 應用程式移除
+> - FaceTime
+> - Safari
+> - iTunes
+> - 偏激內容
+> - iCloud 文件和資料
+> - 多人遊戲
+> - 新增 Game Center 朋友
 
 深入了解 iOS DEP 註冊：
 
-- [選擇註冊 iOS 裝置的方式](enrollment-method-choose-ios.md)
+- [選擇註冊 iOS 裝置的方式](ios-enroll.md)
 - [使用裝置註冊方案註冊 iOS 裝置](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-IT 管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公司擁有的裝置，以使用「設定助理」進行註冊。 IT 系統管理員會建立註冊設定檔，並將其匯出至 Apple Configurator。 當使用者收到裝置時，系統會提示他們執行設定助理以註冊裝置。 這種方法支援 **iOS 監督**模式，其接著會啟用下列功能：
+IT 管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公司擁有的裝置，以使用「設定助理」進行註冊。 IT 系統管理員會建立註冊設定檔，並將其匯出至 Apple Configurator。 當使用者收到裝置時，系統會提示他們執行設定助理以註冊裝置。 這種方法支援 **iOS 受監督**模式，其接著會啟用下列功能：
   - 已鎖定註冊
   - Kiosk 模式及其他進階設定與限制
 

@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>在 Intune 註冊 macOS 裝置
 
-取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由 IT 系統管理員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由公司支援人員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > 如果您真的想要嘗試註冊 iOS 裝置 (例如 iPhone 或 iPad)，請[試著改用下列指示](enroll-your-device-in-intune-ios.md)。
 
-1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](http://portal.manage.microsoft.com)。
+1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com)。
 2. 使用您的工作或學校帳戶登入公司入口網站。
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ ms.lasthandoff: 07/01/2017
 
  ![已安裝 macOS 設定檔](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-是否仍需要協助？ 請洽詢您的 IT 系統管理員。 您可以在[公司入口網站](http://portal.manage.microsoft.com)中找到他們的連絡資訊。
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。

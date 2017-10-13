@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 註冊 iOS 裝置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 支援註冊 iOS 裝置，這些裝置使用在 Mac 電腦執行上的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 使用 Apple Configurator 註冊裝置時，會要求您透過 USB 連接方式，將每個 iOS 裝置連接至 Mac 電腦來設定公司註冊作業。 您可以透過兩種方式使用 Apple Configurator 將裝置註冊到 Intune 中：
+Intune 支援註冊 iOS 裝置，這些裝置使用在 Mac 電腦執行上的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 註冊裝置時，會要求您透過 USB 連接方式，將每個 iOS 裝置連接至 Mac 電腦來設定公司註冊作業。 您可以透過兩種方式使用 Apple Configurator 將裝置註冊到 Intune 中：
 - **設定助理註冊** - 恢復裝置的出廠預設值，並準備好裝置在設定助理期間進行註冊。
 - **直接註冊** - 不會恢復裝置的出廠預設值，而會透過 iOS 設定註冊裝置。 這個方法僅支援**無使用者親和性**的裝置。
 
@@ -38,7 +38,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - 裝置序號 (僅設定助理註冊)
 - USB 連接線
-- 執行 [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 電腦
+- 執行 [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) 的 macOS 電腦
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>為建立裝置 Apple Configurator 設定檔
 
@@ -69,7 +69,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 **將 Apple Configurator 序號新增至 Intune**
 
-1. 建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增序號，然後在右資料行中新增詳細資料。 清單目前最多可容納 500 個資料列。 在文字編輯器中，.csv 清單會像這樣：
+1. 建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增序號，然後在右資料行中新增詳細資料。 清單目前最多可容納 5,000 個資料列。 在文字編輯器中，.csv 清單會像這樣：
 
     F7TLWCLBX196,device details</br>
     DLXQPCWVGHMJ,device details

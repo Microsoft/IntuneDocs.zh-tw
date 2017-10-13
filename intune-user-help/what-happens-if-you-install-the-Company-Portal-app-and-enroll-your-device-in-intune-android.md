@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Android 裝置，會發生什麼情況？
 
@@ -34,13 +34,13 @@ ms.lasthandoff: 07/01/2017
 
 -   當手機遺失或遭竊時，將其重設為原廠設定。
 
-當您註冊您的 Android 裝置時，即授權您的 IT 系統管理員可以存取您的裝置。 IT 系統管理員可以執行下列作業：
+當您註冊您的 Android 裝置時，即授權您公司的支援人員可以存取您的裝置。 IT 系統管理員可以執行下列作業：
 
 -   將裝置重設為製造商的預設值。 這項功能對裝置遺失或失竊的情況很有幫助。
 
 -   移除所有公司相關資料。 不會移除您的個人資料和設定。
 
--   設定裝置的需求，例如要求您為裝置設定密碼或 PIN 碼，以保護公司的資料。 您的 IT 系統管理員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置，禁止您繼續使用。
+-   設定裝置的需求，例如要求您為裝置設定密碼或 PIN 碼，以保護公司的資料。 您公司的支援人員也可能會限制您能輸入錯誤密碼的次數，並在嘗試次數過多時鎖定裝置，禁止您繼續使用。
 
 -   要求您接受條款和條件。
 
@@ -50,10 +50,10 @@ ms.lasthandoff: 07/01/2017
 
 將裝置新增到公司入口網站之後，大約每隔 8 個小時，裝置會：
 
--   下載您 IT 系統管理員提供的原則或應用程式更新。
+-   下載您公司支援人員提供的原則或應用程式更新。
 
 -   傳送任何硬體清查更新。 (這些更新不含任何個人資訊。)
 
 -   傳送任何公司應用程式清查更新。 (這些更新不含任何個人資訊。)
 
-需要協助嗎？ 請連絡您的 IT 系統管理員 (如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com))，或傳送電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+需要協助嗎？ 請連絡公司支援人員 (請查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是將電子郵件傳送給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

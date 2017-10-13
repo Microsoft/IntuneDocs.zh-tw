@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司入口網站
 [公司入口網站](https://portal.manage.microsoft.com)是使用者可用來管理已在 Intune 註冊之電腦和裝置的網頁。
@@ -39,10 +39,10 @@ ms.lasthandoff: 07/01/2017
 
 -   [手動同步您的裝置，以更快速安裝應用程式](sync-your-device-manually-cpwebsite.md)
 
--   尋找 IT 系統管理員的連絡資訊 (如果您已設定)
+-   尋找公司支援人員的連絡資訊 (如果您已設定)
 
 -   查看其裝置的詳細資料，包括其是否符合貴公司或學校的原則
 
 -   從遠端管理其電腦 (僅適用於電腦)
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

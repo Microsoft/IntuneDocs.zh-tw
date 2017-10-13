@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 裝置上使用受管理的應用程式
 
-受管理應用程式是 IT 系統管理員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 iOS 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
+受管理應用程式是公司支援人員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 iOS 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
 
 不同的受管理應用程式也可能在您的裝置上一同運作，讓您可以執行日常工作，同時持續保護公司資料。 例如，如果您在一個受管理的應用程式中開啟公司檔案，而另一個受管理的應用程式被要求檢視該檔案，可讓您檢視檔案的受管理應用程式會自動開啟。 如果可用的特定動作的不必要的應用程式，像是開啟文件或存取網頁連結從受管理的文件，可能無法使用。
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 07/15/2017
 ### <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？
 您可利用數個不同方是取得受管理的應用程式︰
 
--   當您在 Microsoft Intune 中註冊您的裝置，您可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您的 IT 系統管理員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 macOS 裝置](enroll-your-device-in-intune-macos.md)。
+-   當您在 Microsoft Intune 中註冊您的裝置，可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您公司的支援人員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 macOS 裝置](enroll-your-device-in-intune-macos.md)。
 
 -   您從 App Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
 
-您的 IT 管理員有時可能會購買某個安裝之應用程式的多個授權。 如果您看到要求您接受 Apple 大量採購方案授權合約的訊息，這是正常的，您可以接受它。 如果不接受，即無法安裝應用程式。
+您公司的支援人員有時可能會購買某個安裝之應用程式的多個授權。 如果您看到要求您接受 Apple 大量採購方案授權合約的訊息，這是正常的，您可以接受它。 如果不接受，即無法安裝應用程式。
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>我的 IT 系統管理員可以在應用程式中管理什麼內容？
-以下是您的 IT 系統管理員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
+### <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？
+以下是您公司的支援人員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
 
 -   特定網站的存取
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/15/2017
 
 -   資料加密需求
 
-針對您的裝置上的受管理的應用程式的詳細資訊，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

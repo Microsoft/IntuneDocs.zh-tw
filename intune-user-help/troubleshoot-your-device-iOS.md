@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>修正 iOS 裝置常見的問題
 
-有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](http://portal.manage.microsoft.com)上的連絡資訊，與您的 IT 系統管理員連絡。
+有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com)上的連絡資訊，與您公司的支援人員連絡。
 
 - [我需要重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
-- [我需要將錯誤傳送給我的 IT 系統管理員](send-errors-to-your-it-admin-ios.md)
+- [我需要將錯誤傳送給我的公司支援人員](send-errors-to-your-it-admin-ios.md)
 - [我需要將錯誤傳送給 Microsoft](send-logs-to-microsoft-ios.md)
 - [我在使用公司入口網站應用程式時收到錯誤](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [我需要找出我的裝置以便註冊](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

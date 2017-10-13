@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>您的 Android 裝置遺失通常已預先安裝於手機上的憑證
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 07/01/2017
 
 5. 關閉瀏覽器和公司入口網站應用程式。
 
-6. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您還是無法使用公司入口網站應用程式，請使用[公司入口網站](http://portal.manage.microsoft.com)提供的資訊來連絡您的 IT 系統管理員以取得進一步指示。
+6. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您還是無法使用公司入口網站應用程式，請使用[公司入口網站](https://portal.manage.microsoft.com)提供的資訊來連絡您公司的支援人員以取得進一步指示。
 
 >[!NOTE]
 > 如果安裝憑證無法解決問題，且您看到不同的「遺失憑證」訊息，您將需要採取額外的步驟以[安裝遺失的憑證](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

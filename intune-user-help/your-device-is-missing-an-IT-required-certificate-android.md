@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>您的 Android 裝置遺失 IT 系統管理員要求的憑證
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>您的 Android 裝置遺失公司支援人員所要求的憑證
 
-如果您的裝置未在 Intune 註冊，且遺失 IT 系統管理員要求的特定憑證，您就無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
+如果您的裝置未在 Intune 註冊，且遺失公司支援人員所要求的特定憑證，您就無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>透過公司或學校電腦上尋找以識別遺失的憑證
 
-1. 在電腦上開啟 Internet Explorer。 如果您沒有可用於此用途的電腦，請連絡 IT 系統管理員。 如需 IT 系統管理員的連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+1. 在電腦上開啟 Internet Explorer。 如果您沒有可用於此用途的電腦，請連絡公司支援人員。 如需公司支援人員的連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
 
-2. 請移至[公司入口網站](http://portal.manage.microsoft.com)，並使用您的公司或學校認證登入。
+2. 請移至[公司入口網站](https://portal.manage.microsoft.com)，並使用您的公司或學校認證登入。
 
 3. 在瀏覽器的網址列最右側，選擇看似掛鎖的符號，如下方螢幕擷取畫面所示。
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    如果未顯示掛鎖符號，請停止作業並連絡您的 IT 系統管理員。 鎖頭符號表示您已經安全地登入，因此除非您看到該符號，否則不應該繼續。
+    如果未顯示掛鎖符號，請停止作業，並連絡您公司的支援人員。 鎖頭符號表示您已經安全地登入，因此除非您看到該符號，否則不應該繼續。
 
 4. 按一下 [檢視憑證]。
 
@@ -67,6 +67,6 @@ ms.lasthandoff: 07/01/2017
 
 6. 關閉公司入口網站應用程式。
 
-7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您的 IT 系統管理員。
+7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您公司的支援人員。
 
-如果您已經遵循相關步驟，卻仍顯示上述相同的「遺失憑證」訊息，可能表示您需要 IT 系統管理員協助安裝其他憑證。 請使用可在[公司入口網站](http://portal.manage.microsoft.com)取得的連絡資訊來連絡您的 IT 系統管理員以取得協助。
+如果您已經遵循相關步驟，卻仍顯示上述相同的「遺失憑證」訊息，可能表示您需要公司支援人員協助安裝其他憑證。 請使用可在[公司入口網站](https://portal.manage.microsoft.com)取得的連絡資訊來連絡您公司的支援人員以取得協助。

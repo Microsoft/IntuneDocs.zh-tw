@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 09ccff78188e81565b4ec464a37908ab6919a1a3
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-your-ios-or-macos-device-with-intune"></a>搭配 Intune 使用 iOS 或 macOS 裝置
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 iOS 8.0 和更新版本。 Intune 也支援 macOS 10.9 Mavericks 及更新版本。 
+Intune 目前支援 iOS 9.0 和更新版本。 Intune 也支援 macOS 10.9 Mavericks 及更新版本。 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
