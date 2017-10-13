@@ -1,12 +1,12 @@
 ---
-title: "管理 iOS 大量採購的應用程式"
+title: "管理 iOS 大量採購的應用程式 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "針對從 iOS Store 大量採購的應用程式，了解如何將應用程式同步到 Intune，然後管理及並追蹤其使用情況。"
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/18/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8be922d6cc839708ff26de2ebe792241b9bf357a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
+# <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -48,12 +48,17 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 當您將一個應用程式指派給多位使用者時，會使用一個應用程式授權，並與使用者相關聯。 該應用程式可以在使用者擁有的多部裝置上執行 (受 Apple 有限控制)。
 當您將大量採購的應用程式指派給多位使用者時，每位終端使用者都必須具備有效和唯一的 Apple ID，才能存取 App Store。
 
-
 此外，針對從 Apple 大量採購方案市集購買的書籍，您可以使用 Intune 來進行同步處理、管理及指派。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS 電子書](vpp-ebooks-ios.md)。
 
-
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理大量採購的 iOS 裝置應用程式
+
+### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援 Apple 大量採購方案大量採購的應用程式
+
 請透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
+
+### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援企業對企業大量採購的應用程式
+
+此外，協力廠商開發人員也可以私下將應用程式散發給 iTunes Connect 中所指定的授權企業大量採購方案成員。 這些企業 VPP 成員可以登入大量採購方案 App Store，並購買其應用程式。 終端使用者所購買的企業 VPP 應用程式將與其 Intune 租用戶同步。
 
 ## <a name="before-you-start"></a>開始之前
 在開始之前，您必須從 Apple 取得 VPP 權杖，並將它上傳至您的 Intune 帳戶。 此外，您還應該了解下列準則︰
@@ -64,12 +69,9 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 * Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。
 * 開始搭配 Intune 使用 iOS VPP 之前，請移除任何以其他行動裝置管理 (MDM) 廠商所建立的現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
 * Intune 支援新增最多 256 個 VPP 權杖。
-* 如果您為透過裝置註冊設定檔或 Apple Configurator 註冊的裝置，指派大量採購的應用程式，只有以裝置為目標的應用程式會運作。 您無法將大量採購的應用程式目標設為 DEP 裝置的使用者，DEP 裝置沒有任何使用者親和性。
-原因是 ioS VPP 使用者授權可以使用相同的使用者帳戶註冊數千部裝置。 iOS VPP 使用者授權允許終端使用者在 5-10 部裝置上安裝應用程式。
-這表示前幾個 DEM 已註冊裝置會利用使用者授權安裝 VPP 應用程式，其他裝置則無法取得應用程式。
+* Apple 的裝置註冊設定檔 (DEP) 方案會自動化行動裝置管理 (MDM) 註冊。 使用 DEP，您可以設定企業裝置，而不需要碰觸它們。 您可以使用與 Apple 之 VPP 搭配使用的相同方案代理程式帳戶來註冊 DEP 方案。 Apple 部署方案識別碼對 [Apple Deployment Programs](https://deploy.apple.com) 網站下所列的方案而言是唯一的，而且無法用來登入 iTunes 商店這類 Apple 服務。 
 * VPP 權杖只支援一次用於一個 Intune 帳戶。 請勿將相同的 VPP 權杖重複用於多個 Intune 租用戶。
-* 當您使用使用者授權模型指派 VPP 應用程式給使用者或裝置 (具有使用者親和性) 時，每個 Intune 使用者在裝置上接受 Apple 條款和條件時，都必須與唯一的 Apple ID 或電子郵件地址建立關聯。
-請確定當您為新 Intune 使用者設定裝置時，您用該使用者的唯一 Apple ID 或電子郵件地址來進行設定。 Apple ID 或電子郵件地址和 Intune 使用者形成唯一的組合，並可以用於多達 5 部裝置。
+* 當您使用使用者授權模型指派 VPP 應用程式給使用者或裝置 (具有使用者親和性) 時，每個 Intune 使用者在裝置上接受 Apple 條款和條件時，都必須與唯一的 Apple ID 或電子郵件地址建立關聯。 請不要使用作為 Apple 部署方案識別碼的 Apple ID。 請確定當您為新 Intune 使用者設定裝置時，以該使用者的唯一 Apple ID 或電子郵件地址來進行設定。 Apple ID 或電子郵件地址和 Intune 使用者形成唯一的組合，並可以用於多達五部裝置。
 
 >[!IMPORTANT]
 >在您將 VPP 權杖匯入到 Intune 之後，請不要將相同的權杖匯入到任何其他裝置管理解決方案。 這樣做會導致授權指派與使用者記錄遺失。
@@ -78,17 +80,13 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-1.  在 [行動應用程式] 工作負載中，選擇 [安裝] > [iOS VPP 權杖]。
-2.  在 [VPP 權杖清單] 刀鋒視窗中，按一下 [新增]。
-3.  在 [新的 VPP 權杖] 刀鋒視窗中，指定下列資訊：
+2.  在 VPP 權杖刀鋒視窗清單上，按一下 [建立]。
+4. 在 [建立 VPP 權杖] 刀鋒視窗上，指定下列資訊：
     - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
-    - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
-    - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
+    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
 4. 完成之後，請按一下 [上傳]。
 
 該權杖會顯示在權杖清單刀鋒視窗內。
-
 
 您可以隨時選擇 [立即同步處理]，使用 Intune 同步處理 Apple 所儲存的資料。
 
@@ -97,10 +95,9 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
-1.  在 [Mobile Apps] 工作負載中，選擇 [管理] > [應用程式授權]。
-2.  在應用程式清單刀鋒視窗中，選擇您要指派的應用程式，然後選擇 [...] > [指派群組]。
-3.  在 <app name> - [指派] 刀鋒視窗中，選擇 [管理] > [指派]。
-4.  選擇 [選取群組]，然後在 [選取群組] 刀鋒視窗中，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
+1.  在 [Intune] 刀鋒視窗上，選擇 [管理] 下的 [行動應用程式] > [應用程式]。
+2.  在應用程式刀鋒視窗清單上，選擇您要指派的應用程式，然後選擇 [指派]。
+3.  在 [應用程式名稱] - [指派] 刀鋒視窗上，選擇 [選取群組]，然後在 [選取群組] 刀鋒視窗上選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
 5.  針對您選取的每個群組，選擇下列設定：
     - **類型** - 選擇應用程式會是 [可用] (終端使用者可以從公司入口網站安裝應用程式) 或 [必要] (終端使用者的裝置會自動安裝應用程式)。
     - **授權類型** - 選擇 [使用者授權] 或 [裝置授權]。

@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4946404a4bdb4968c47904549a581c9c39f6e9e0
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="what-is-intune"></a>什麼是 Intune？
 
@@ -37,7 +37,7 @@ Intune 是企業行動管理 (EMM) 空間中的雲端式服務，可協助讓您
 * [向工作人員核發公司擁有的電話](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
 * [將「攜帶您自己的裝置」(BYOD) 或個人裝置計劃提供給所有員工](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [讓您的員工從未受管理的公用 kiosk 中安全存取 Office 365](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [將限制使用的共用平板電腦發給您的工作人員](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
+* [將有使用限制的共用平板電腦核發給工作人員](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 
 ## <a name="how-does-intune-work"></a>Intune 如何運作？

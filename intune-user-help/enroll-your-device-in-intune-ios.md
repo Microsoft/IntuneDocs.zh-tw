@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>在 Intune 註冊 iOS 裝置
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/01/2017
   > [!NOTE]
   > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
 
-4. 檢閱 IT 系統管理員在您的已註冊裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
+4. 檢閱公司支援人員在您已註冊裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ ms.lasthandoff: 09/01/2017
 > [!Note]
 > 在完全註冊您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

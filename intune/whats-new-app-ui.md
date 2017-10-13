@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,43 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a43c15f7fb7323a17b8fe24f26128834288e0dec
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+
+## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
+
+#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>對公司入口網站之裝置安裝工作流程的改善 <!--1490692-->
+我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
+
+|之前|在|
+|---|---|
+|![01](./media/android_cp_enroll_01_post_1709.png)|![01](./media/android_cp_enroll_01_1709_new.png)|
+|![01a](./media/android_cp_enroll_01_before_1710.png)| *與上一個步驟合併* |
+|![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
+|![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
+
+已改善 Android for Work 裝置上的額外步驟。
+
+|之前|在|
+|---|---|
+|![04](./media/android_work_cp_enroll_01_before_1710.png)|![04](./media/android_work_cp_enroll_01_after_1710.png)|
+|![05](./media/android_work_cp_enroll_02_before_1710.png)| *與上一個步驟合併* |
+|![06](./media/android_work_cp_enroll_03_before_1710.png)|![06](./media/android_work_cp_enroll_03_after_1710.png)|
+|![07](./media/android_work_cp_enroll_04_before_1710.png)|![07](./media/android_work_cp_enroll_04_after_1710.png)|
+|![08](./media/android_work_cp_enroll_05_before_1710.png)| *與上一個步驟合併* |
+
+
+我們也已更新電子郵件啟用畫面的條件式存取。
+
+|之前|在|
+|---|---|
+|![06](./media/android_conditional_access_email_before_1710.png)|![06](./media/android_conditional_access_email_after_1710.png)
 
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日當週
 

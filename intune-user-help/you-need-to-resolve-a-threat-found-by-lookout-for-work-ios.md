@@ -1,6 +1,6 @@
 ---
 title: "解決 iOS 上 Lookout for Work 所找到的威脅 | Microsoft Docs"
-description: 
+description: "了解如何修正 Lookout for Work 在 iOS 上找到的威脅。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>您必須解決 Lookout for Work 找到的威脅
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>解決 Lookout for Work 應用程式找到的威脅
 
 Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 您可能會看到類似下列這則訊息：
 
@@ -34,7 +34,7 @@ Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題
 
 ![具有「公司入口網站」網站連結的 Lookout for Work 錯誤訊息](./media/mtd-go-to-device-management-portal-android.png)
 
-點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](http://portal.manage.microsoft.com)，您將能在那裡看見修正該問題的指示。
+點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](https://portal.manage.microsoft.com)，您將能在那裡看見修正該問題的指示。
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work 會視為威脅的 App 範例
 
@@ -46,4 +46,5 @@ Lookout for Work 在您的裝置上找到潛在威脅，您必須修正此問題
 
 當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+

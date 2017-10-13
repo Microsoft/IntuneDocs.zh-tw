@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
+ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/13/2017
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>使用 IMEI 或序號識別公司擁有的裝置
 
-身為 Intune 管理員，您可以建立和匯入逗點分隔值 (.csv) 檔案，其會列出 IMEI 編號或序號。 在裝置註冊期間，Intune 會使用這些識別碼，將裝置擁有權指定為公司所擁有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
+身為 Intune 管理員，您可以建立和匯入逗點分隔值 (.csv) 檔案，其會列出 IMEI 編號或序號。 在裝置註冊期間，Intune 會使用這些識別碼，將裝置擁有權指定為公司所擁有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS、macOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/13/2017
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>新增公司識別碼的 .csv 清單
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
+1. 在 Azure 入口網站的 Intune 中，選擇 裝置註冊 > 公司裝置識別碼，然後按一下新增。
 
  ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區螢幕擷取畫面。](./media/add-corp-id.png)
 

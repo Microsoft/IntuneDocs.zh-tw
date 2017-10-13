@@ -1,5 +1,5 @@
 ---
-title: "使用 USB 纜線將記錄檔傳送給您的 IT 系統管理員 | Microsoft Docs"
+title: "使用 USB 纜線將記錄傳送給公司支援人員 | Microsoft Docs"
 description: "使用 USB 纜線傳送資料記錄"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>使用 USB 纜線將記錄檔傳送給您的 IT 系統管理員
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 纜線將記錄傳送給公司支援人員
 
-如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，您可以使用電子郵件將訊息傳送給 IT 系統管理員，協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
 
 > [!Note]
-> 開始之前，請確定您有 IT 系統管理員的電子郵件地址。 您可以在[公司入口網站](http://portal.manage.microsoft.com)或您的公司入口網站應用程式中找到此資訊。
+> 開始之前，請確定您有公司支援人員的電子郵件地址。 您可以在[公司入口網站](https://portal.manage.microsoft.com)或您的公司入口網站應用程式中找到此資訊。
 
 1.  在錯誤畫面上，點選 [傳送資訊]。 當您看到訊息詢問要用哪一種方法傳送記錄檔時，請選擇會將檔案儲存至裝置的選項。
 
@@ -35,6 +35,6 @@ ms.lasthandoff: 07/01/2017
 
 3.  在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 **Android 裝置\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\**。
 
-4.  選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給您的 IT 系統管理員。
+4.  選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給公司支援人員。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

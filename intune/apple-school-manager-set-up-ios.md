@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -54,11 +54,11 @@ ms.lasthandoff: 09/14/2017
 
 **步驟 2.下載權杖並指派裝置。**<br>
 1. 選擇 [透過 Apple School Manager 建立權杖]，並以您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 Apple School Manager 權杖。
-2.  在 [Apple School Manager 入口網站](https://school.apple.com) 中，移至 [MDM 伺服器]，然後選擇 [新增 MDM 伺服器]\(右上角)。
+2.  在 [Apple School Manager 入口網站](https://school.apple.com) 中，移至 [MDM 伺服器]，然後選擇 [新增 MDM 伺服器] (右上角)。
 3.  輸入 **MDM 伺服器名稱**。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
    ![螢幕擷取畫面：選取序號選項的 Apple School Manager 入口網站](./media/asm-server-assignment.png)
 
-4.  在 Apple 入口網站中選擇 [上傳檔案...]，瀏覽至 .pem 檔案，然後選擇 [儲存 MDM 伺服器]\(右下角)。
+4.  在 Apple 入口網站中選擇 [上傳檔案...]，瀏覽至 .pem 檔案，然後選擇 [儲存 MDM 伺服器] (右下角)。
 5.  選擇 [取得權杖]，然後將伺服器權杖 (.p7m) 檔案下載到您的電腦。
 6. 移至 [裝置指派]，然後手動輸入 [序號]、[訂單號碼]，或 [上傳 CSV 檔案] 來 [選擇裝置]。
      ![螢幕擷取畫面：選取序號選項的 Apple School Manager 入口網站](./media/asm-device-assignment.png)
@@ -95,7 +95,7 @@ ms.lasthandoff: 09/14/2017
     - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
 
      - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。
-   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與 [受監督] 模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
+   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與受監督模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
 
    >[!NOTE]
    >如果將 [使用者親和性] 設定為 [搭配使用者親和性]，或將 [受監督] 模式設定為 [關閉]，就會停用註冊設定檔的「共用的 iPad」模式。
@@ -108,7 +108,7 @@ ms.lasthandoff: 09/14/2017
 
 7. 選擇 [設定助理設定]，設定下列設定檔設定，然後選擇 [儲存]：
 
-    - **部門名稱** - 使用者於啟用期間點選 [About Configuration]\(關於設定) 時顯示。
+    - **部門名稱** - 使用者於啟用期間點選 [About Configuration] (關於設定) 時顯示。
 
     - **部門電話號碼** - 使用者於啟用期間按一下 [需要協助] 按鈕時顯示。
     - **設定輔助程式選項** - 如果從設定輔助選項排除，稍後可以在 iOS [設定] 功能表中進行設定。
@@ -153,7 +153,7 @@ ms.lasthandoff: 09/14/2017
 在註冊由 Intune 管理的 Apple School Manager 裝置之前，必須將註冊設定檔指派給它們。
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊]，然後選擇 [註冊計劃設定檔]。
-2. 從 [註冊計劃設定檔] 清單中，選擇您想要指派給裝置的設定檔，然後選擇 [Device Assignments]\(裝置指派)。
+2. 從 [註冊計劃設定檔] 清單中，選擇您想要指派給裝置的設定檔，然後選擇 [Device Assignments] (裝置指派)。
 
  ![選取 [指派] 的 [裝置指派] 螢幕擷取畫面。](./media/enrollment-program-device-assign.png)
 

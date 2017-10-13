@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
             title: 使用 Intune 資料倉儲 (預覽版) 來建立報表
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
-            title: '[部落格] 了解新的角色型存取控制'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
+            title: '[部落格] 使用 Intune 憑證連接器發出的 PFX 憑證'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
-            title: '[部落格] 了解 Intune 服務健康狀況'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
+            title: '[部落格] 設定 MAM 管理應用程式與 MDM 管理應用程式之間的通訊'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: 影片
@@ -128,6 +128,7 @@ sections:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://fasttrack.microsoft.com/ems">需要 150 份以上的授權嗎？運用您的 FastTrack 權益</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">閱讀企業行動力與安全性部落格</a> \(英文\)'
           - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">在 Intune 支援部落格上取得協助</a> \(英文\)'
           - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">在 UserVoice 提供有關 Intune 的意見反應</a> \(英文\)'

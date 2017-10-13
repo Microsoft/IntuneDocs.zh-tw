@@ -1,11 +1,11 @@
 ---
 title: "解決行動威脅防禦應用程式在 iOS 上找到的威脅 | Microsoft Docs"
-description: 
+description: "了解如何使用適用於 iOS 的 Mobile Threat Defense 應用程式來解決威脅。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,25 +14,29 @@ ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f3d03fe3c9da641f3c33d5d1e32032ac540adc9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 399a910e9aa2ad9fdd4ceefe446c637aa5076c12
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>您需要解決行動威脅防禦應用程式所找到的威脅
+# <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解決 Mobile Threat Defense 應用程式找到的威脅
 
-行動威脅防禦在您的 iOS 裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 根據您的 IT 系統管理員設定行動威脅防禦的方式，您將使用下列其中一個應用程式解決這類問題。
+行動威脅防禦在您的 iOS 裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 根據您公司設定 Mobile Threat Defense 的方式，您將使用下列其中一個應用程式解決這類問題。
+
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
-* [Skycure (英文)](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
+* [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
+* [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
+* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
 若要解決此問題，請開啟行動威脅防禦應用程式，並遵循應用程式中顯示的指示。
 
-## <a name="example-of-an-app-that-mobile-threat-defense-sees-as-a-threat"></a>行動威脅防禦視為威脅的應用程式範例
+**Mobile Threat Defense 視為威脅的應用程式範例**
 
 如果您已安裝行動威脅防禦視為威脅的應用程式，您會看到畫面告知您具威脅性的應用程式。 如果您看到類似如下的畫面，請點選畫面頂端顯示的應用程式名稱，然後遵循指示以移除潛在威脅。
 
 當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![登入](./media/W10-enroll-4-sign-in.png)
 
-仍然無法存取您的工作或學校電子郵件、檔案或其他資料嗎？ 嘗試[針對您的帳戶問題進行難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)，修正您的存取權。 如果仍然無效，您將需要連絡 IT 系統管理員以取得進一步的協助。
+仍然無法存取您的工作或學校電子郵件、檔案或其他資料嗎？ 嘗試[針對您的帳戶問題進行難排解](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)，修正您的存取權。 如果仍然無效，您將需要連絡公司支援人員以取得進一步的協助。
 
-有一個輕鬆地從 IT 系統管理員取得協助的方法，是透過公司入口網站應用程式中提供的連絡資訊，它也可讓您尋找並下載每日工作所需的建議與必要應用程式。 可能您已經在裝置上安裝公司入口網站應用程式。 快速確認的方法是在 [所有應用程式] 清單中尋找 [公司入口網站]。
+有一個輕鬆地從公司支援人員取得協助的方法，是透過公司入口網站應用程式中提供的連絡資訊，它也可讓您尋找並下載每日工作所需的建議與必要應用程式。 可能您已經在裝置上安裝公司入口網站應用程式。 快速確認的方法是在 [所有應用程式] 清單中尋找 [公司入口網站]。
 
 如果應用程式清單中找不到 [公司入口網站]，請遵循下列步驟安裝它。
 

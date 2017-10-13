@@ -1,6 +1,6 @@
 ---
 title: "iOS 裝置的 Apple DEP 管理"
-description: "部署註冊設定檔，以藉由「無線」方式註冊透過 iOS 裝置註冊方案 (DEP) 購買的 iOS 裝置，進而管理 Apple 裝置。"
+description: "部署註冊設定檔，以藉由無線方式註冊透過 iOS 裝置註冊方案 (DEP) 購買的 iOS 裝置，進而管理 Apple 裝置。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>註冊屬公司擁有的裝置註冊方案 iOS 裝置
 
@@ -28,13 +28,13 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 >[!NOTE]
 >DEP 註冊不能與[裝置註冊管理員](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法一起使用。
->此外，如果使用者註冊 iOS 裝置 (亦即 使用公司入口網站應用程式)，並接著將這些裝置的序號匯入並指派給 DEP 設定檔，將會從 Intune 取消註冊裝置。
+>此外，如果使用者註冊 iOS 裝置 (即使用公司入口網站應用程式)，並接著將這些裝置的序號匯入並指派給 DEP 設定檔，將會從 Intune 取消註冊裝置。
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>使用 Apple DEP 管理註冊 iOS 裝置的必要條件
 
 - [安裝 APNs 憑證](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- 您的組織必須加入 Apple DEP，並透過該計畫取得裝置。 下列網址提供該程序的詳細資料：  [https://deploy.apple.com](https://deploy.apple.com)。 這個方案的優點包括不需要使用 USB 纜線將每部裝置連接到電腦，即可進行裝置的無操作安裝作業。
+- 您的組織必須加入 Apple DEP，並透過該計畫取得裝置。 下列網址提供該程序的詳細資料：  [https://deploy.apple.com](https://deploy.apple.com)。這個方案的優點包括不需要使用 USB 纜線將每部裝置連接到電腦，即可進行裝置的無操作安裝作業。
 
 - 您必須先從 Apple 取得 DEP 權杖，才能為屬公司擁有的 iOS 裝置註冊 DEP。 此權杖可讓 Intune 同步處理貴公司所擁有的 DEP 參與裝置資訊。 它也允許 Intune 執行註冊設定檔上傳至 Apple ，並將這些設定檔指定給裝置。
 

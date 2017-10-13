@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3de9589c46250727b1994381c24c68e6e2b90da2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3b5b4136d1f6cee1dd16f9b946b35c9edf46481a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
@@ -85,4 +85,4 @@ ms.lasthandoff: 07/01/2017
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

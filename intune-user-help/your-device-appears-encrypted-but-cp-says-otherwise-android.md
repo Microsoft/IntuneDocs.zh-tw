@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
+ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>您的 Android 裝置似乎已加密，但公司入口網站的說法不同
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/10/2017
 
 ### <a name="downgrade-your-version-of-android"></a>將您的 Android 版本降級
 
-如果您的裝置提供降級為 Android 6.0+ 的選項，請執行這些動作。 萬一您嘗試將裝置降級，會有資料遺失的風險。 否則，我們建議您連絡您的 IT 管理員以解決此問題。 您可以在[公司入口網站](http://portal.manage.microsoft.com)取得您的 IT 管理員連絡資訊。
+如果您的裝置提供降級為 Android 6.0+ 的選項，請執行這些動作。 萬一您嘗試將裝置降級，會有資料遺失的風險。 因此，建議您連絡公司支援人員以解決此問題。 您可以在[公司入口網站](https://portal.manage.microsoft.com)取得您公司支援人員的連絡資訊。
 
 ## <a name="specific-manufacturer-issues"></a>特定製造商問題
 
@@ -54,12 +54,11 @@ ms.lasthandoff: 07/10/2017
 如果您擁有下列其中一個裝置，而且未將該裝置更新至最新版的 Android，可能就會遇到此問題。 您可以前往 [設定] > [更新] 來安裝這些裝置的更新。 
 
 - [華為榮耀 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [華為 P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+- [華為 P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>已知目前無法透過更新來修正此問題的裝置
 
 您無法解決下列裝置的此一問題。 您可能需要使用不同的裝置來存取公司資源。 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm) \(英文\)
-- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [小米 Mi 智慧型手機](https://xiaomi-mi.com/mi-smartphones/) \(英文\)

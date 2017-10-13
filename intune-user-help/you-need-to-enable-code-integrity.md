@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>您必須啟用程式碼完整性
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 07/01/2017
 當您的系統使用安全開機時，即會自動開啟程式碼完整性。
 
 > [!Tip]
-> 啟用安全開機是進階工作。 建議您連絡 IT 管理員來協助您進行這個工作。
+> 啟用安全開機是進階工作。 建議您連絡公司支援人員來協助您進行這個工作。
 
 如果您認為可以繼續，請參閱[停用安全開機](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)頁面上的＜重新啟用安全開機＞一節，嘗試自行啟用安全開機。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

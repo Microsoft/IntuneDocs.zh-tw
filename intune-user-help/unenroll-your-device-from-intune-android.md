@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>如何從 Intune 取消註冊 Android 裝置
 
@@ -36,6 +36,6 @@ ms.lasthandoff: 07/01/2017
 
 3. 確認將會出現，詢問您是否確定要移除公司入口網站。 它會提供有關當您取消註冊裝置時，會發生什麼情況的一些資訊。 閱讀此訊息後，點選 [確定] 來移除應用程式。 
 
-  ![確認對話方塊的影像，會在從動作功能表中選取新的 [移除公司入口網站] 選項之後出現。 此對話方塊會告知使用者「若移除公司入口網站，您的裝置將不再受 IT 管理員管理，並可能移除對公司資料、公司應用程式及公司電子郵件的存取權。」 然後，它會要求使用者選取 [是] 以確認要移除公司入口網站應用程式。](./media/android_remove_cp_menu_confirmation_after_1705.png)
+  ![確認對話方塊的影像，從動作功能表選取新的 [移除公司入口網站] 選項後就會顯示。 此對話方塊會告知使用者「若移除公司入口網站，您的裝置將不再受公司支援人員，並可能移除對公司資料、公司應用程式及公司電子郵件的存取權。」 然後，它會要求使用者選取 [是] 以確認要移除公司入口網站應用程式。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>檢查 Android 裝置的相容性
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 07/01/2017
 
 2. 點選 [檢查相容性]。
 
-如果您無法重設遺失或遭竊的裝置，請要求您的 IT 系統管理員為您重設。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+如果您無法重設遺失或遭竊的裝置，請要求您公司的支援人員為您重設。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

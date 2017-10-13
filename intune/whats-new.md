@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/18/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08a22a1fa6829807860b6278181dd638f1049770
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: b2817537cd9bc5ec6b8e9f5800f0c8f87cfde189
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -42,17 +42,77 @@ ms.lasthandoff: 09/21/2017
 
 -->   
 
+## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
+
+### <a name="intune-apps"></a>Intune 應用程式
+
+#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>對公司入口網站之裝置安裝工作流程的改善 <!--1490692-->
+我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md#week-of-october-2-2017)頁面中，查看這些變更。
+
+#### <a name="improved-guidance-around-the-request-for-access-to-contacts-on-android-devices---1484985--"></a>改善在 Android 裝置上要求存取連絡人的相關指引 <!--1484985-->
+
+Android 版公司入口網站應用程式通常會要求使用者接受「連絡人」權限。 如果使用者拒絕此存取權，系統現會顯示應用程式內通知，提醒他們授與此權限以進行條件式存取。 
+
+#### <a name="secure-startup-remediation-for-android---1490712--"></a>Android 的安全啟動修復 <!--1490712-->
+
+如果使用者是使用 Android 裝置，可以點選公司入口網站應用程式中的不相容原因。 如此一來，系統會盡可能將使用者直接移至設定應用程式的正確位置，以修正問題。 
+
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o---1475932---"></a>針對 Android O 版公司入口網站應用程式使用者的其他推播通知 <!---1475932--->
+
+終端使用者會看到額外的通知，向他們指出 Android O 的公司入口網站應用程式執行背景工作的時間，例如從 Intune 服務擷取原則。 這讓終端使用者更能夠看到公司入口網站在裝置上執行管理工作的時間。 這是 Android O 公司入口網站應用程式整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部份。 
+
+針對 Android O 中啟用的其他新 UI 項目，還有進一步的最佳化。當公司入口網站正在執行背景工作 (例如從 Intune 服務擷取原則) 時，系統會向使用者顯示額外的通知。  這可讓使用者清楚知道公司入口網站在裝置上執行管理工作的時間。
+
+#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Android 公司入口網站應用程式使用工作設定檔的新行為 <!---1485783--->
+
+當您使用工作設定檔註冊 Android for Work 裝置時，是由工作設定檔中的公司入口網站應用程式來執行裝置上的管理工作。 
+
+除非您使用個人設定檔中啟用 MAM 的應用程式，否則 Android 公司入口網站應用程式不再有任何用途。 為了改善工作設定檔的體驗，Intune 會在成功註冊工作設定檔後，自動隱藏個人的公司入口網站應用程式。
+
+您可以隨時啟用個人設定檔中的 Android 公司入口網站應用程式，方法是瀏覽 [Play Store 中的公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)，然後點選 [啟用]。
+
+#### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode---1428681--"></a>Windows 8.1 和 Windows Phone 8.1 版公司入口網站移至維持模式 <!--1428681-->
+
+自 2017 年 10 月起，Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式將會移至維持模式。 這表示這些平台將會繼續支援應用程式和現有的案例 (例如註冊和合規性)。 這些應用程式仍可透過現有的發行通道 (例如 Microsoft 市集) 下載取得。 
+
+一旦進入維持模式，這些應用程式僅會接收重大安全性更新。 但是，將不會針對這些應用程式發行額外的更新或功能。 如需新功能，建議您將裝置更新為 Windows 10 或 Windows 10 行動裝置版。 
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="block-unsupported-samsung-knox-device-enrollment------1490695----"></a>封鎖不支援的 Samsung Knox 裝置註冊 <!--- 1490695 --->
+
+公司入口網站應用程式只會嘗試註冊支援的 Samsung Knox 裝置。 為了避免 KNOX 啟用錯誤而導致 MDM 註冊失敗，系統只會嘗試針對 [Samsung 發佈的裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中所含的裝置進行裝置註冊。 有些 Samsung 裝置型號可能支援 KNOX，而有些不支援。 在您購買及部署之前，請先跟裝置轉銷商確認 KNOX 相容性。 您可以在 [Android 和 Samsung KNOX Standard 原則設定](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)中找到已驗證裝置的完整清單。
+
+#### <a name="end-of-support-for-android-43-and-lower----1171126-1326920----"></a>結束對 Android 4.3 和較舊版本的支援<!---1171126, 1326920 --->
+受管理的應用程式和 Android 公司入口網站應用程式需要 Android 4.4 及更新版本才能存取公司資源。 今年 12 月會強制淘汰所有已註冊的裝置，以致無法存取公司資源。 如果您使用不含 MDM 的應用程式保護原則，應用程式就不會接收更新，其體驗品質會隨著時間而降低。
+
+#### <a name="inform-end-users-what-device-information-can-be-seen-on-enrolled-devices---1165314--"></a>通知使用者可在已註冊裝置上看到哪些裝置資訊 <!--1165314-->
+針對所有公司入口網站應用程式的 [裝置詳細資料] 畫面，我們會新增 [擁有權類型]。 如此一來，使用者就能夠直接從[公司可以看到哪些資訊？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)一文中，了解隱私權的詳細資訊。 在不久的將來，這項功能就會跨所有公司入口網站應用程式推出。 iOS 的這項功能已於 [9 月](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017)推出。 
+
+
+## <a name="week-of-september-25-2017"></a>2017 年 9 月 25 日當週
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="intune-supports-ios-11---1428975--"></a>Intune 支援 iOS 11 <!--1428975-->
+Intune 支援 iOS 11。 這項資訊之前已在 [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/)宣布過。
+
+### <a name="end-of-support-for-ios-80----1164477---"></a>結束對 iOS 8.0 的支援<!---1164477--->
+受管理的應用程式和 iOS 公司入口網站應用程式需要 iOS 9.0 及更新版本才能存取公司資源。 今年 9 月前未更新的裝置將不再能存取公司入口網站或這些應用程式。 
+
+### <a name="intune-apps"></a>Intune 應用程式
+
+#### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>重新整理動作已新增至 Windows 10 的公司入口網站應用程式 <!--1132468-->
+
+Windows 10 公司入口網站應用程式可讓使用者提取以重新整理，或按桌上型電腦的 F5，重新整理應用程式中的資料。
+
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日當週
 
 ### <a name="device-enrollment"></a>裝置註冊
 
-#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-oreo----1475932---"></a>在 Android Oreo 的公司入口網站應用程式上新增終端使用者的推播通知 <!---1475932--->
+#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知終端使用者可看到哪些 iOS 裝置資訊 <!--739894-->
 
-終端使用者將會看到其他通知，這些通知會指出 Android Oreo 版公司入口網站應用程式正在執行背景工作，例如從 Intune 服務擷取原則。 這讓終端使用者更能夠看到公司入口網站在裝置上執行管理工作的時間。 這是適用於 Android Oreo 版公司入口網站應用程式之整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部分。 
-
-#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知終端使用者可看到哪些 iOS 裝置資訊 <!--739894--> 
-
-我們在 iOS 的公司入口網站應用程式 [裝置詳細資料] 畫面新增了 [擁有權類型]。 如此一來，使用者就能夠直接從 Intune 終端使用者文件的此頁面，了解有關隱私權的更多資訊。他們也能夠在 [關於] 畫面上找到這項資訊。 
+我們在 iOS 的公司入口網站應用程式 [裝置詳細資料] 畫面新增了 [擁有權類型]。 這樣可讓使用者直接從此頁面從 Intune 終端使用者文件尋找有關隱私權的詳細資訊。他們也能夠在 [關於] 畫面上找到這項資訊。
 
 #### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>允許使用者存取適用於 Android 的公司入口網站應用程式，不需要註冊。<!---1169910--->
 
@@ -65,7 +125,7 @@ Android 公司入口網站應用程式的註冊程序已經使用新的文字來
 
 #### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy----677129---"></a>Windows 10 公司入口網站應用程式已新增到 Windows 資訊保護允許原則 <!-- 677129 -->
 
-Windows 10 公司入口網站應用程式已經更新，以支援 Windows 資訊保護 (WIP)。 此應用程式可新增至 WIP 允許原則。 透過這項變更，此應用程式將不再需要新增至 [豁免] 清單。 
+Windows 10 公司入口網站應用程式已經更新，以支援 Windows 資訊保護 (WIP)。 此應用程式可以加入到 WIP 允許原則。 透過這項變更，此應用程式將不再需要新增至 [豁免] 清單。
 
 
 ## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日這週
@@ -164,17 +224,9 @@ Azure 入口網站的 Azure Active Directory 區段提供條件式存取，在�
 #### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!---1196951--->
 Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
 
-### <a name="end-of-support-for-ios-80----1164477---"></a>結束對 iOS 8.0 的支援<!---1164477--->
-受管理的應用程式和 iOS 公司入口網站應用程式需要 iOS 9.0 及更新版本才能存取公司資源。 今年 9 月前未更新的裝置將不再能存取公司入口網站或這些應用程式。 
-
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>公司入口網站的 UI 更新 <!--1313244 part 2-->
 __精選 App 的更新__  
 我們已將專用頁面新增至網站 (使用者可在其中瀏覽您選為精選的應用程式)，並對首頁上的 [精選] 區段進行一些 UI 調校。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面看到這些變更的樣子。
-
-
-### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>結束對 Android 4.3 和較舊版本的支援<!---1171127, 1326920 --->
-受管理的應用程式和 Android 公司入口網站應用程式需要 Android 4.4 及更新版本才能存取公司資源。 10 月初前未更新的裝置將不再能存取公司入口網站或這些應用程式。 今年 12 月會強制淘汰所有已註冊的裝置，以致無法存取公司資源。 如果您使用不含 MDM 的應用程式保護原則，應用程式就不會接收更新，其體驗品質會隨著時間而降低。
-
 
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>平台支援提醒：Windows Phone 8.1 的主要支援已於 2017 年 7 月 11 日結束
 <!-- 1327781 -->

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 或 macOS 裝置，會發生什麼情況？
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 07/01/2017
 
 -   自動設定您的公司電子郵件帳戶。
 
-當您在 Intune 註冊裝置時，即授權您的 IT 系統管理員可以管理您的裝置來協助保護裝置上的公司資訊。
+當您在 Intune 註冊裝置時，即授權您公司的支援人員可以管理您的裝置來協助保護裝置上的公司資訊。
 
-註冊裝置之後，您的 IT 系統管理員可以：
+註冊裝置之後，您公司的支援人員可以：
 
 -   在裝置遺失或遭竊時，將裝置重設回製造商的預設值。
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/01/2017
 
 -   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 若允許自動同步檔案，可能會產生漫遊費用。
 
-如有任何問題，請連絡您的 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

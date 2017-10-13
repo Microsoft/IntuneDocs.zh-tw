@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置
 
-如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 系統管理員在您的裝置上可看到和不可看到的項目](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+如果您的公司或學校使用 Microsoft Intune，您可以註冊裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和[公司支援人員在您裝置上可看到和不可看到的項目](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 
 註冊 Windows 8.1 或 Windows RT 8.1 裝置：
@@ -45,7 +45,7 @@ ms.lasthandoff: 07/01/2017
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  在 [允許 IT 系統管理員提供應用程式和服務] 對話方塊中，核取 [我同意] 方塊，然後點選 [開啟]。
+5.  在 [Allow apps and services from company support (允許公司支援人員提供應用程式和服務)] 對話方塊中，核取 [我同意] 方塊，然後點選 [開啟]。
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ ms.lasthandoff: 07/01/2017
 
 4.  點選 [安裝] 或 [免費]。 顯示的選項取決於您的公司設定應用程式的方式。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需其連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 08/14/2017
 
 | enrollmentTypeID  | Name | 描述 |
 |---------|------------|--------|
-| 0 |未知 |未知的註冊類型 |
+| 0 |未知 |未收集註冊類型 |
 | 1 |UserEnrollment |起始註冊的使用者 |
 | 2 |DeviceEnrollment |以無使用者設定檔註冊的裝置 |
 | 3 |DeviceEnrollmentWithUDA |以 UDA 設定檔註冊的裝置。 |
@@ -354,9 +354,9 @@ ms.lasthandoff: 08/14/2017
 | CellularTechnology |行動電信業者網路類型 (CDMA/GSM) |
 | Imsi |IMSI 編號 |
 | JB 破解 |如果裝置已 JB 破解或刷機，則為 True。 |
-| IsActivationLockEnabled |已啟用 [True Is Activation Lock]\(True 為啟用鎖定) |
+| IsActivationLockEnabled |已啟用 [True Is Activation Lock] (True 為啟用鎖定) |
 | DeviceType |裝置類型 |
-| IsSupervised |受監督 |
+| IsSupervised |為受監督 |
 | DeviceDisplayNumberOfColors |彩色的裝置顯示編號 |
 | HorizontalResolution |裝置的水平螢幕解析度 |
 | VerticalResolution |裝置的垂直螢幕解析度 |

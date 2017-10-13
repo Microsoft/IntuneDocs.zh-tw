@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Microsoft Intune 的初期版 - 2017 年 9 月
 
@@ -184,6 +184,14 @@ Windows Phone 8.1 平台將於 2017 年 7 月 11 日結束主要支援。 Window
 
 
 ## <a name="intune-apps"></a>Intune 應用程式
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>公司入口網站的搜尋改善<!--1331697-->
+我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
+
+iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。 
+
+我們仍然會微調相關性的追蹤方式；因此，請使用公司入口網站底端的 [意見反應] 連結，讓我們知道其運作方式。
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>重新整理動作已新增至 Windows 10 的公司入口網站應用程式 <!--1132468-->
 Windows 10 的公司入口網站應用程式可讓使用者重新整理應用程式中的資料，無論是拖動以重新整理，或 (在桌上型電腦) 按一下 F5 皆可。
 

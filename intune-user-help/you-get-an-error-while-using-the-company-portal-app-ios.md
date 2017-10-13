@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2208d25b4e27f3a896c431f301a46392a4b21f80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>您在使用公司入口網站應用程式時收到錯誤
 
-如果您在 iOS 裝置上使用公司入口網站應用程式時出現錯誤，您可以傳送相關資訊給 IT 系統管理員，以協助他們對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
+如果您在 iOS 裝置上使用公司入口網站應用程式時出現錯誤，則可以將相關資訊傳送給公司支援人員，以協助他們對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
 
 -   在錯誤警示訊息上，點選 [報告]。
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 07/01/2017
 
 -   進入公司入口網站應用程式後，請搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] > [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

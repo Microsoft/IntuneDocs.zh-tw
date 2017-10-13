@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>您的裝置遺漏必要的憑證
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="fixing-certificate-issues"></a>修正憑證問題
 
-如果您的 Android 裝置未在 Intune 註冊，且遺失 IT 系統管理員要求的特定憑證，您就無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
+如果您的 Android 裝置未在 Intune 註冊，且遺失公司支援人員所要求的特定憑證，您就無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
 您應該先查看裝置是否[遺失通常已預先安裝的憑證](your-device-is-missing-a-preinstalled-certificate-android.md)。
 
-如果仍然有問題，您的 IT 系統管理員可能會[要求您安裝第二個憑證以獲得額外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
+如果仍然有問題，您公司的支援人員可能會[要求您安裝第二個憑證以獲得額外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
