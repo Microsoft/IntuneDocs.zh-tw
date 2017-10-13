@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
-您必須先註冊 Android 裝置，才能用其存取公司電子郵件、應用程式和其他工作資料。 在註冊程序期間，您會設定工作設定檔，以將裝置上的個人資料與工作資料區隔開來。 IT 系統管理員只能管理含有您的工作資料的工作設定檔。 IT 系統管理員無法管理您的裝置上的個人資料。 進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
+您必須先註冊 Android 裝置，才能用其存取公司電子郵件、應用程式和其他工作資料。 在註冊程序期間，您會設定工作設定檔，以將裝置上的個人資料與工作資料區隔開來。
+
+公司支援人員只能管理含有您工作資料的工作設定檔。 公司支援人員無法管理您裝置上的個人資料。 進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
 
 若要建立工作設定檔：
 
@@ -32,27 +34,27 @@ ms.lasthandoff: 07/01/2017
 
     ![Android 公司入口網站應用程式的歡迎畫面](./media/and-enroll-0-welcome-screen.png)
 
-2. 在 [公司存取設定] 畫面上，點選 [開始]。
+2. 在 [公司存取設定] 畫面上，點選 [繼續]。
 
-    ![公司存取設定畫面](./media/andr-afw-begin-company-access-setup.png)
+    ![公司存取設定畫面](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  在 [Why create a work profile?]\(為什麼要建立工作設定檔?) 畫面上，閱讀您將能夠執行之動作的相關資訊，然後點選 [繼續]。
 
     ![為什麼要建立工作設定檔](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  檢閱 IT 系統管理員在您的裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
+4.  檢閱公司支援人員在您的裝置上可查看和無法查看的項目清單，然後點選 [繼續]。
 
-    ![IT 系統管理員在您的裝置上可看到和不可看到的項目](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![公司支援人員在您的裝置上可查看和無法查看的項目](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  在 [接下來要做什麼] 畫面上，閱讀有關接下來將會發生的事況，然後點選 [繼續]。
+5.  在 [What's next?] (新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
 
-    ![接下來要做什麼畫面](./media/andr-afw-what-comes-next.png)
+    ![新功能畫面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. 在 [Set up work profile]\(設定工作設定檔) 畫面上，點選 [下一步] 讓公司入口網站應用程式存取工作設定檔。
 
     ![讓公司入口網站應用程式存取工作設定檔](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. 檢閱 Google 畫面，其中描述當您建立工作設定檔時 IT 系統管理員可以執行的動作，然後點選 [確定]。
+7. 檢閱 Google 畫面，了解當您建立工作設定檔時公司支援人員可以執行的動作，然後點選 [確定]。
 
     ![檢閱 Google 的工作設定檔資訊](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ ms.lasthandoff: 07/01/2017
 
     您會暫時看到「註冊您的裝置」訊息。
 
-11. 當 [公司存取設定] 畫面顯示所有項目都已正確設定時，請點選 [繼續]。
+11. 當 [You're all set!] (已全部完成!) 畫面顯示所有項目都已正確設定時，請點選 [完成]。
 
-    ![公司存取設定顯示工作設定檔和註冊已完成](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. 在 [公司存取設定完成] 畫面上，點選 [完成]。 如果您的 IT 系統管理員有新增其他需求，您可能還要完成額外步驟。
-
-    ![公司存取設定已完成](./media/andr-afw-company-access-setup-complete.png)
+    ![公司存取設定顯示工作設定檔和註冊已完成](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     現在，您即可從 Play Store for Work 取得公司應用程式。
 
     ![Play Store for Work 應用程式頁面](./media/andr-afw-tap-work-play-store-icon.png)
 
-是否仍需要協助？ 請連絡 IT 系統管理員。 如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
