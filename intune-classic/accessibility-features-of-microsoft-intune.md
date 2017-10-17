@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33d9fea9c0177722d6772e33b9a343a9c1edfe5c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a218a8b0135e587b7eff88490966ea0b2090b84a
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune 的協助工具功能
 除了 Microsoft Windows 的協助功能和協助工具之外，下列功能也可使 Microsoft Intune 更方便殘障人士使用：使用鍵盤快速鍵

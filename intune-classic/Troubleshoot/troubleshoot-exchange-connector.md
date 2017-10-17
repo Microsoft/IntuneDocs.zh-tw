@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebcbcbc36c925b3c3d9600eb9a5039b70d7e056d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>為 Exchange Connector 進行疑難排解
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 07/01/2017
 - 請注意 Exchange Connector 同步處理與 Exchange CAS 之間，在時間上會有延遲。 完整同步處理會一天執行一次，而差異 (快速) 同步處理則是每兩小時執行一次。 使用新註冊裝置的使用者進行存取時，很可能會遇到延遲。
 - 
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>無法從 Exchange 探索 Exchange ActiveSync 裝置
-檢查 Exchange Connector 是否正在與 Exchange Server 進行同步處理。 若要這樣做，請找出完整同步處理或差異同步處理的記錄檔。 請參閱＜Exchange Connector 記錄檔＞。 如果自裝置加入之後已順利完成完整同步處理或差異同步處理，這就不會是問題來源。 如果尚未進行任何同步處理，請收集同步處理記錄檔，並附加到您的支援要求中。
+檢查 Exchange Connector 是否正在與 Exchange Server 進行同步處理。 若要這樣做，請找出完整同步處理或差異同步處理的記錄檔。請參閱＜Exchange Connector 記錄檔＞。 如果自裝置加入之後已順利完成完整同步處理或差異同步處理，這就不會是問題來源。 如果尚未進行任何同步處理，請收集同步處理記錄檔，並附加到您的支援要求中。
 
 - 如果使用者沒有 Intune 授權，Exchange Connector 將不會探索他們的裝置。
 - 如果使用者的主要 SMTP 位址和他們在 AAD 中的 UPN 不同，Exchange Connector 將無法探索該 Intune/AAD 使用者的任何裝置。 修正主要 SMTP 位址。

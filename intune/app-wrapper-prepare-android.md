@@ -2,8 +2,8 @@
 title: "使用 App Wrapping Tool 包裝 Android 應用程式"
 description: "使用本文中的資訊，了解如何在不需變更應用程式本身程式碼的情況下，包裝您的 Android 應用程式。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 07/07/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b82c0832fc102e4ae30268a6cd08ed0e14e1c931
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b6ca498b60590fc1dd96a86bad23991936e8b41e
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 

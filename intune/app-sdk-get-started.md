@@ -2,9 +2,9 @@
 title: "開始使用 Microsoft Intune App SDK"
 description: "使用 Microsoft Intune 快速為行動應用程式啟用行動應用程式管理 (MAM)。"
 keywords: 
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: oydang
+ms.author: mabriggs
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e55246f8f089a998fa4a04fe07e5e54408d8513
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -109,7 +109,7 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 ## <a name="next-steps-after-integration"></a>整合後的後續步驟
 
 ### <a name="test-your-app"></a>測試應用程式
-在您完成整合 iOS 或 Android 應用程式與 Intune App SDK 的必要步驟之後，需要確定使用者和 IT 系統管理員的所有應用程式保護原則皆已啟用且正常運作。 若要測試整合式應用程式，您需要下列項目：
+在您完成整合 iOS 或 Android 應用程式與 Intune App SDK 的必要步驟之後，需要確定使用者和 IT 系統管理員的所有應用程式保護原則皆已啟用且正常運作。若要測試整合式應用程式，您需要下列項目：
 
 * **Microsoft Intune 測試帳戶**：若要對啟用 Intune 的應用程式測試 Intune 應用程式保護功能，您必須具備 Microsoft Intune 帳戶。
 

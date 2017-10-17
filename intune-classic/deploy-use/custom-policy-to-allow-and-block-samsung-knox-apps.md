@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2632da8ca8d149e1519aeac33a57571ae1a55a54
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 32a023db057f864625ba2a56500c0e669770fad2
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 09/14/2017
     - **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
     - **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
-4. 按一下 [確定]，然後按一下 [儲存原則]。 
+4. 按一下 確定，然後按一下儲存原則。 
 
 >[!TIP]
 > 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。

@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1d3248747740dafe858a581ed19a02ba87c4b761
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6cd64a833aa9dbddd2e85dbc427f5c5d5d2bca64
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的相容性原則設定
 
@@ -79,4 +80,4 @@ ms.lasthandoff: 07/01/2017
 - **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容，
 並顯示如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
 
-- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。

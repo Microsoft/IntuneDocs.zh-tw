@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c820a7071340599be161dd92441720f1eb7e9ff7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下載 On-Premises Exchange Connector 軟體安裝套件
 
-1. 在內部部署 Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com) (https://manage.microsoft.com) ，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
+1. 在內部部署 Exchange Connector 支援的 Windows Server 作業系統上，利用使用者帳戶開啟 [Microsoft Intune 管理主控台](https://manage.microsoft.com) (https://manage.microsoft.com)，這個使用者帳戶是 Exchange 租用戶中具有使用 Exchange Server 之授權的系統管理員。
 ![開啟 [設定 Exchange 連線]](../media/ExchangeConnector.gif)
 
 2.  在工作區捷徑窗格中，選擇 [管理] >[行動裝置管理] > [Microsoft Exchange]>[設定 Exchange 連線]。
