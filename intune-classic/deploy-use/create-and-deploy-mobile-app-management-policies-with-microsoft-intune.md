@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 07/01/2017
 
     ![MAM 的 [新增原則] 刀鋒視窗](../media/AppManagement/mam-lob-apps-1.png)
 
-2.  按一下 [更多應用程式]，然後輸入 [配套識別碼]\(適用於 iOS) 或 [套件識別碼]\(適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
+2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] (適用於 iOS) 或 [套件識別碼] (適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
 
     ![MAM 的 [更多應用程式] 刀鋒視窗](../media/AppManagement/mam-lob-apps-2.png)
 

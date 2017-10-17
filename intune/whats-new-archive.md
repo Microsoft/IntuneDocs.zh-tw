@@ -3,8 +3,8 @@ title: "幾個月前的 Microsoft Intune 新功能"
 titlesuffix: Azure portal
 description: "檢閱 Intune 新功能頁面中較舊的公告"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
 ms.date: 8/23/2017
 ms.topic: get-started-article
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 155b7e685cfd87865bf6d9786535eeb58e8cedc2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: c742a084f1347870c6436088710fb13ccfe8de70
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
 
@@ -320,7 +320,7 @@ Android for Work 裝置限制設定檔現在有新的選項，可協助您設定
 
 - 完全開啟或關閉指定應用程式的通知。
 - 在通知中心內開啟或關閉指定應用程式的通知。
-- 指定警示類型，可以是 [無]、[橫幅] 或 [Modal Alert]\(強制回應警示)。
+- 指定警示類型，可以是 [無]、[橫幅] 或 [Modal Alert] (強制回應警示)。
 - 指定此應用程式是否允許徽章。
 - 指定是否允許通知音效。
 

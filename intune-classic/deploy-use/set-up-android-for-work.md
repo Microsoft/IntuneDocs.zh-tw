@@ -11,12 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b3a961bdf754100f1a48258290a635add8e03053
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="enable-enrollment-of-android-for-work-devices"></a>啟用 Android for Work 裝置的註冊
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 07/01/2017
    在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是您組織的 IT 系統管理員用來在 Play for Work 主控台中管理及發行應用程式所共用的 Google 帳戶。
 
 4. **提供組織詳細資料**<br>
-   提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 *Microsoft Intune*。 同意 Android for Work 合約，然後按一下 [確認]。 您的要求將會被處理。
+   提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 *Microsoft Intune*。 同意 Android for Work 合約，然後按一下確認。 您的要求將會被處理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 註冊設定
    只有特定 Android 裝置才支援 Android for Work。 請參閱 Google 的[使用 Android for Work 的必備條件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。  支援 Android for Work 的所有裝置也會支援傳統 Android 管理。  Intune 可讓您指定應該如何管理支援 Android for Work 的裝置：

@@ -14,11 +14,11 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8b903d5b1ae66b7ce022480864fb08e7107ff4b0
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
 
@@ -177,7 +177,7 @@ Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行
 2. 以滑鼠右鍵按一下您想要查看其最近偵測路徑的電腦，然後選取 [屬性]。
 3. 從頂端的索引標籤選取 [惡意程式碼]。
 
-   ![選取 [惡意程式碼] 索引標籤，然後按一下 [最近的偵測路徑] 核取方塊](../media/malware-path-column.png)
+   ![選取 惡意程式碼 索引標籤，然後按一下最近的偵測路徑 核取方塊](../media/malware-path-column.png)
 4. 以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。 選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>更新電腦上的惡意程式碼定義。

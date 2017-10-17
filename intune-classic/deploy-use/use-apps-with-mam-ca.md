@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>搭配使用應用程式與應用程式 CA 時的預期狀況
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 07/01/2017
   * 裝置註冊必須透過 OneDrive 或 Outlook 應用程式完成。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>移除 Azure AD 註冊的裝置。
-您可以透過 Azure AD 管理主控台移除裝置註冊，IT 系統管理員通常這麼做。  也可以讓使用者在裝置上進行。
+您可以透過 Azure AD 管理主控台移除裝置註冊，IT 系統管理員通常這麼做。也可以讓使用者在裝置上進行。
 
 * **Azure AD 管理主控台**︰在 Azure AD 管理主控台**，刪除您想要移除的裝置。
 * **iOS 裝置**︰開啟 Azure Authenticator 應用程式，在帳戶向左撥動，然後選擇 [取消註冊]。  

@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
-ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
+ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -174,7 +174,7 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [報表] &gt; [電腦清查報表]。
 
-2.  在 [建立新報表] 頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下 [檢視報表]。
+2.  在 建立新報表 頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下檢視報表。
 
 3.  [電腦清查報表] 頁面會隨即在新視窗中開啟，顯示已在 Intune 中註冊成功的所有電腦。
 

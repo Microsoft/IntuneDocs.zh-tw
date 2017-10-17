@@ -2,8 +2,8 @@
 title: "使用 Intune App Wrapping Tool 包裝 iOS 應用程式"
 description: "使用本主題中的資訊，了解如何能夠直接包裝 iOS 應用程式，但不需要修改應用程式本身的程式碼。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 06/12/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f9d27a9cc1893fc28f27a603403f02fcad514ad0
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 109b0867f207742f56886f723c1646432b1260ca
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 08/25/2017
 
 5. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
 
-6. 選擇在 [Production]\(生產) 下建立 [In-House and Ad Hoc]\(內部和特定) 憑證。
+6. 選擇在 [Production] (生產) 下建立 [In-House and Ad Hoc] (內部和特定) 憑證。
 
   ![選取內部和特定憑證](./media/iOS-signing-cert-3.png)
 

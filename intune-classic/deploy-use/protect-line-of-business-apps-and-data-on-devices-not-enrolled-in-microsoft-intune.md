@@ -2,8 +2,8 @@
 title: "保護未註冊裝置上的 LOB 應用程式"
 description: "本主題說明如何準備您自訂的企業營運應用程式，以便您可以套用有助於防止資料遺失的行動裝置應用程式管理原則。"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料
 

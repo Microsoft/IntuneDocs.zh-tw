@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
@@ -124,7 +125,7 @@ ms.lasthandoff: 07/01/2017
 
 #### <a name="locating-sync-logs"></a>尋找同步記錄檔
 
--    搜尋 **full sync**，在記錄檔中尋找完整同步處理。 完整同步處理的開頭會標有此段文字︰
+-    搜尋 **full sync**，在記錄檔中尋找完整同步處理。完整同步處理的開頭會標有此段文字︰
 
     「處理命令：為 <number> 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)」
 

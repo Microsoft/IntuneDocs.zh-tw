@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e8028abe5f25e4a05d79ae543d3029490c01668
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75e68a49fb8437bb7742cfa1e458edab5c0b1836
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的條款和條件原則設定
 
@@ -54,9 +55,9 @@ ms.lasthandoff: 07/01/2017
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
-2.  在 [條款和條件原則] 清單中，選取您要部署的原則，然後按一下 [管理部署]。
+2.  在 條款和條件原則 清單中，選取您要部署的原則，然後按一下管理部署。
 
-3.  在 [管理部署] 對話方塊中，選取您要部署原則的使用者群組，然後按一下 [確定]。
+3.  在 管理部署 對話方塊中，選取您要部署原則的使用者群組，然後按一下確定。
 
     當目標使用者存取公司入口網站時，Intune 會顯示您所部署的條款和條件。 使用者必須接受這些條款，才能存取公司資源。
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 07/01/2017
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，按一下 [原則] &gt; [條款和條件]。
 
-2.  選取您要編輯的條款和條件原則，然後按一下 [編輯]。
+2.  選取您要編輯的條款和條件原則，然後按一下編輯。
 
 3.  在 [編輯條款和條件] 頁面上，進行任何必要的編輯，然後指定這個新版本是否要求所有使用者都接受條款和條件，還是只有新使用者會看到新版本。
 

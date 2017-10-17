@@ -55,9 +55,9 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 對於在 2017 年 1 月之後建立的 Intune 帳戶，Intune 已經啟用使用 Azure Preview 入口網站中的「註冊裝置」工作負載直接存取 Apple 註冊案例。 Apple 註冊預覽原本只能從傳統 Intune 入口網站中的連結存取。 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用這些功能。 移轉的排程尚未宣布，但將會盡快提供詳細資料。 如果您現有的帳戶無法存取預覽，我們強烈建議您建立試用帳戶來測試新的體驗。
 
-#### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Appx 在 Azure 上的 Intune 中的未來動態 <!-- 1000270 -->
+#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Azure 入口網站中 Intune 的 Appx 未來動態 <!-- 1000270 -->
 
-在移轉到 Azure 上的 Intune 的過程中，我們將進行三個 appx 變更：
+在移轉到 Azure 入口網站中 Intune 的過程中，我們將進行三個 appx 變更：
 
 1. 在傳統 Intune 主控台中，新增只能部署到 MDM 註冊裝置的 appx 應用程式類型。
 2. 重新規劃現有的 appx 應用程式類型，將目標僅限於透過 Intune PC 代理程式管理的電腦。
@@ -69,7 +69,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 ##### <a name="what-action-do-i-need-to-take"></a>我需要採取什麼動作
 
-移轉之後，如果您想要執行新的 PC 部署，您將必須再次重新上傳 appx 作為 PC 的 appx。 若要深入了解，請參閱 Intune 支援小組部落格上的 [Azure 上的 Intune 中的 Appx 變更 (英文)](https://aka.ms/appxchange)。  
+移轉之後，如果您想要執行新的 PC 部署，您將必須再次重新上傳 appx 作為 PC 的 appx。 若要深入了解，請參閱 Intune 支援小組部落格上的 [Azure 入口網站中 Intune 的 Appx 變更](https://aka.ms/appxchange) \(英文\)。  
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 入口網站中將被取代的系統管理角色
 
@@ -192,20 +192,20 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 適用於 iOS 的公司入口網站應用程式連結 (包括文件和應用程式的連結) 會使用 Safari 的應用程式內檢視直接在公司入口網站應用程式中開啟。 這項更新將在 1 月與服務更新分開提供。
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 裝置的新 MDM 伺服器位址 <!--893007-->
-如果 Windows 和 Windows Phone 使用者輸入 __manage.microsoft.com__ 作為 MDM 伺服器位址 (系統提示時)，其嘗試註冊裝置會失敗。 MDM 伺服器位址已從 __manage.microsoft.com__ 變更為 __enrollment.manage.microsoft.com__。 請通知您的使用者，如果在註冊 Windows 或 Windows Phone 裝置時收到提示，請使用 __enrollment.manage.microsoft.com__ 作為 MDM 伺服器位址。 不需要變更您的 CNAME 設定。 如需此變更的其他資訊，請前往 [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
+如果 Windows 和 Windows Phone 使用者輸入 __manage.microsoft.com__ 作為 MDM 伺服器位址 (系統提示時)，其嘗試註冊裝置會失敗。 MDM 伺服器位址已從 __manage.microsoft.com__ 變更為 __enrollment.manage.microsoft.com__。請通知您的使用者，如果在註冊 Windows 或 Windows Phone 裝置時收到提示，請使用 __enrollment.manage.microsoft.com__ 作為 MDM 伺服器位址。 不需要變更您的 CNAME 設定。 如需此變更的其他資訊，請前往 [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
 從 3 月起，Android 版公司入口網站應用程式會遵循[素材設計方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀與風格。 此改善的使用者體驗包括︰
 
 * __色彩__︰索引標籤標頭可根據您的自訂調色盤上色。
-* __介面__︰[應用程式] 索引標籤已更新 [精選 App] 和 [所有應用程式] 按鈕。 [搜尋] 按鈕現在是浮動的動作按鈕。
+* __介面__︰[應用程式] 索引標籤已更新 [精選 App] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
 * __瀏覽__︰所有應用程式都會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以方便瀏覽。
 * __服務__︰[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
 
 您可以在 [UI updates for Intune end user apps](/intune/whats-new-app-ui) (Intune 終端使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
 
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>商務用 Windows 市集的相關多重管理工具 <!--926135-->
-如果您使用多種管理工具來部署商務用 Windows 市集應用程式，以前只能建立其中一種與商務用 Windows 市集的關聯性。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Windows 市集的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>商務用 Microsoft 網上商店的相關多重管理工具 <!--926135-->
+如果您使用多種管理工具來部署商務用 Microsoft 網上商店應用程式，以前只能建立與其中一種與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 管理體驗公開預覽新功能<!--736542-->
 
@@ -318,7 +318,7 @@ __Android 上不再支援 Intune AV Player、Image Viewer 和 PDF Viewer 應用�
 
 __可供 Windows 10 裝置使用的新 Microsoft Intune 公司入口網站__  Microsoft 已經發行 [Windows 10 裝置適用的新 Microsoft Intune 公司入口網站應用程式](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 利用新的 Windows 10 通用格式的此應用程式，會為使用者提供應用程式內更新的使用者體驗，以及所有 Windows 10 裝置、電腦和類似行動裝置的相同體驗，同時啟用他們目前仍在使用的相同功能。
 
-新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Windows 市集安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
+新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Microsoft 網上商店安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
 > __在 Intune 和 Android for Work 上的更新__ 雖然您可以用__必要__動作部署 Android for Work 應用程式，但如果您已將 Intune 群組移轉至新的 Azure AD 群組，就只能將應用程式部署為__可用__。

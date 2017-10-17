@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9b62e03d88055c19a04c3968a1f060e20ae4fc65
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 486c223181e831680c46495a3014701211fcd716
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
 
@@ -260,7 +261,7 @@ I
     > [!TIP]
     > 在 IIS 中繫結 SSL 憑證之後，您也會安裝用戶端驗證憑證。 此憑證可以由 NDES 伺服器所信任的任何 CA 發出。 雖然不是最佳的作法，但您可以使用相同的憑證，進行伺服器和用戶端驗證，只要憑證中同時有雙方的增強金鑰使用方法 (EKU) 即可。 請檢閱以下的步驟，以取得這些驗證憑證的相關資訊。
 
-    1.  取得伺服器驗證憑證後，開啟 [IIS 管理員] ，在 [連線]  窗格中選取 [預設的網站]  ，然後按一下 [動作]  窗格中的 [繫結]  。
+    1.  取得伺服器驗證憑證後，開啟 IIS 管理員 ，在 連線  窗格中選取 預設的網站  ，然後按一下動作  窗格中的 繫結  。
 
     2.  按一下 [新增] ，將 [類型]  設為 [https] ，然後確定連接埠是 [443] 。 (獨立版 Intune 只支援連接埠 443)。
 
@@ -312,11 +313,11 @@ I
 
 2.  按一下 [設定內部部署憑證連接器]。
 
-3.  選取 [啟用 Certificate Connector] ，然後按一下 [確定] 。
+3.  選取 啟用 Certificate Connector ，然後按一下確定 。
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定 Certificate Connector
 
-1.  開啟 [Intune 管理主控台](https://manage.microsoft.com)，然後按一下 [系統管理] &gt; [行動裝置管理] &gt; [憑證連接器] &gt; [下載憑證連接器]。
+1.  開啟 [Intune 管理主控台](https://manage.microsoft.com)，然後按一下系統管理 &gt; [行動裝置管理] &gt; [憑證連接器] &gt; [下載憑證連接器]。
 
 2.  下載完成之後，請在 Windows Server 2012 R2 伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
 
@@ -344,7 +345,7 @@ I
 
     您現在可以關閉 Certificate Connector UI。
 
-6.  開啟命令提示字元並輸入 **services.msc**，然後按下 **Enter**，再以滑鼠右鍵按一下 [Intune Connector 服務]，然後按一下 [重新啟動]。
+6.  開啟命令提示字元並輸入 **services.msc**，然後按下 **Enter**，再以滑鼠右鍵按一下 Intune Connector 服務，然後按一下重新啟動。
 
 若要驗證服務正在執行，請開啟瀏覽器並輸入下列 URL，這應傳回 **403** 錯誤：
 
