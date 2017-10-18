@@ -31,7 +31,7 @@
           href: device-lifecycle.md
         - name: 應用程式生命週期
           href: app-lifecycle.md
-    - name: 常見案例
+    - name: 常見的案例
       href: common-scenarios.md
     - name: 服務說明
       href: microsoft-intune-service-description.md
@@ -128,7 +128,7 @@
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 加入使用者
+        - name: 新增使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -142,7 +142,7 @@
         - name: 註冊選項
           href: enrollment-options.md
           items:
-            - name: 條款及條件
+            - name: 條款和條件
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -316,6 +316,8 @@
               href: vpn-settings-android.md
             - name: iOS
               href: vpn-settings-ios.md
+            - name: 設定 iOS 裝置的個別應用程式 VPN
+              href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
             - name: Windows 8.1
@@ -606,5 +608,5 @@
       items:
         - name: 適用於 Intune 的圖形 API 參考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 字彙
+- name: 詞彙
   href: intune-glossary.md
