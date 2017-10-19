@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/15/2017
 - 在傳統入口網站中停用這些功能
 - 在 Azure 入口網站中啟用它們  
 
-在 2017 年 9 月 11 之後，會將這些功能的移轉合併至「主要移轉至 Azure」。 如果您的帳戶已經移轉成使用 Azure 入口網站，則此次要移轉會在 2017 年 9 月 11 日與 22 日之間發生。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統入口網站中停用這些功能開始算起。
+在 2017 年 9 月 22 日之後，會將這些功能的移轉合併至 Azure 的主要移轉。 如果您已經將帳戶移轉為使用 Azure 入口網站，則這項次要移轉可能早已完成。 如果沒有，這些功能會在 11 月前移轉至 Azure。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統入口網站中停用這些功能開始算起。
 
 如果您現在於 Azure 入口網站中管理這些 Intune 功能，請注意以下幾點：
 

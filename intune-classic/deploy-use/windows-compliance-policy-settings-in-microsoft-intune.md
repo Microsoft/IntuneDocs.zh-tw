@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 裝置的相容性原則設定
 
@@ -83,7 +84,7 @@ Windows Phone 8.1 及更新版本支援這一節所列的設定。
 - **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容。
     會顯示如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
-- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 
 ## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows 電腦的相容性原則設定
@@ -145,7 +146,7 @@ Windows 電腦支援這一節所列的設定。
 
 - **允許的最高 OS 版本︰**Windows 8.1 和 Windows 10 上支援。
 
-  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。 在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 若要尋找要用於 「Minimum OS required」 (所需的 OS 下限)和 「Maximum OS version allowed」 (允許的最高 OS 版本) 設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 **winver** 命令會傳回 OS 的回報版本。
 
