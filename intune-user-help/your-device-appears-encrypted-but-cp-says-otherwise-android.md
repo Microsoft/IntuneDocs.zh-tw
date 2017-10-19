@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>您的 Android 裝置似乎已加密，但公司入口網站的說法不同
 
@@ -39,6 +39,15 @@ ms.lasthandoff: 10/09/2017
 ### <a name="downgrade-your-version-of-android"></a>將您的 Android 版本降級
 
 如果您的裝置提供降級為 Android 6.0+ 的選項，請執行這些動作。 萬一您嘗試將裝置降級，會有資料遺失的風險。 因此，建議您連絡公司支援人員以解決此問題。 您可以在[公司入口網站](https://portal.manage.microsoft.com)取得您公司支援人員的連絡資訊。
+
+### <a name="encrypt-the-entire-device"></a>加密整部裝置
+
+某些裝置可讓您選擇加密整部裝置，或僅加密已使用的空間。 請選擇加密整部裝置，而非僅加密已使用的空間。 如果您僅加密已使用的空間：
+
+1. [從公司入口網站移除這部裝置](unenroll-your-device-from-intune-android.md)
+2. 解密已使用的空間
+3. 加密整部裝置
+4. 重新註冊裝置
 
 ## <a name="specific-manufacturer-issues"></a>特定製造商問題
 

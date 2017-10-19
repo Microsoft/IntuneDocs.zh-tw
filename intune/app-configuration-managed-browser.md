@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -64,10 +64,10 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 3.  在 [管理] 清單的 [Mobile Apps] 刀鋒視窗中，選擇 [應用程式設定原則]。
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
 5.  在 [新增應用程式設定] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
-6.  [裝置註冊] 類別請選擇 [尚未註冊到]。
+6.  針對 [裝置註冊] 類型，選擇 [受管理的裝置] 或 [受管理的應用程式]。
 7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]。
 8.  選擇 [確定] 返回 [新增應用程式設定] 刀鋒視窗。
-9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 您稍候可以使用本主題中的各個小節來了解您可以定義的不同金鑰和值組。
+9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 10. 完成後，請選擇 [確定]。
 11. 在 [新增應用程式設定] 刀鋒視窗上，選擇 [建立]。
 12. 就會建立新設定，然後在 [應用程式設定] 刀鋒視窗上顯示。
@@ -127,6 +127,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 - 使用者無法刪除或修改這些書籤
 - 這些書籤會顯示在清單頂端。 使用者建立的所有書籤都會顯示在這些書籤下方。
+- 如果您已啟用 App Proxy 重新導向，即可使用 App Proxy Web 應用程式的內部或外部 URL 來新增這些 Web 應用程式。
 
 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
@@ -166,15 +167,15 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 -   使用下表來了解您在指定 URL 時可使用的允許模式：
 
 |URL|詳細資料|相符項|不符合|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|比對單一頁面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|比對單一頁面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|比對所有以 www.contoso.com 開頭的 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|比對 contoso.com 下的所有子網域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|比對單一資料夾|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|使用連接埠號碼來比對單一頁面|http://www.contoso.com:80|
-    |https://www.contoso.com|比對單一且安全的頁面|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|符合單一資料夾及所有子資料夾|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|比對單一頁面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|比對單一頁面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|比對所有以 www.contoso.com 開頭的 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|比對 contoso.com 下的所有子網域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|比對單一資料夾|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|使用連接埠號碼來比對單一頁面|http://www.contoso.com:80|
+|https://www.contoso.com|比對單一且安全的頁面|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|符合單一資料夾及所有子資料夾|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   以下是一些您無法指定的輸入範例：
 
@@ -200,8 +201,6 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全性與隱私權
 
--   在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
-
 -   Managed Browser 不會使用使用者在其裝置上針對內建瀏覽器所做的設定。 Managed Browser 無法存取這些設定。
 
 -   如果您已在與 Managed Browser 建立關聯的應用程式防護原則中設定 [需要簡單的 PIN 以進行存取] 或 [需要公司認證以進行存取] 選項，而且使用者選取了驗證頁面上的說明連結，他們就可以瀏覽任何的網際網路網站，而不論其是否已加入原則的封鎖清單中。
@@ -214,3 +213,14 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
 
+-   在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
+-   Managed Browser 不會使用使用者在其裝置上針對內建瀏覽器所做的設定。 Managed Browser 無法存取這些設定。
+
+-   如果您已在與 Managed Browser 建立關聯的應用程式防護原則中設定 [需要簡單的 PIN 以進行存取] 或 [需要公司認證以進行存取] 選項，而且使用者選取了驗證頁面上的說明連結，他們就可以瀏覽任何的網際網路網站，而不論其是否已加入原則的封鎖清單中。
+
+-   Managed Browser 只有在它們直接存取網站時，才能封鎖對網站的存取。 使用中繼服務 (例如翻譯服務) 存取網站時，不封鎖存取。
+
+-   若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 **&#42;.microsoft.com**。 一律允許。
+
+### <a name="turn-off-usage-data"></a>關閉使用量資料
+Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。

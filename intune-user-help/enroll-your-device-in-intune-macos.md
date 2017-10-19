@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>在 Intune 註冊 macOS 裝置
 
 取得組織應用程式、資料及資源的存取權，讓您能夠執行您的工作。 如果您使用 macOS 裝置來工作，這表示要安裝__管理設定檔__。 這只是由公司支援人員所設定的檔案，可在您的 Mac 上載入設定和存取資訊。 想要深入了解嗎？ 請參閱[當您安裝公司入口網站應用程式並在 Intune 註冊您的裝置時，會發生什麼情況](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-
-  > [!NOTE]
-  > 如果您真的想要嘗試註冊 iOS 裝置 (例如 iPhone 或 iPad)，請[試著改用下列指示](enroll-your-device-in-intune-ios.md)。
 
 1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com)。
 2. 使用您的工作或學校帳戶登入公司入口網站。
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. 當您登入時，您會看到任何可用的 [首頁]、[應用程式] 和 [類別] 索引標籤。 此頁面會顯示可供您安裝的任何應用程式。 如果您尚未註冊任何裝置，您會看到通知，指出**我們無法顯示任何應用程式。** 您可以選取 [我的裝置] 繼續。
+3. 登入之後，按一下頁面左上角的 [功能表]，然後選取 [我的裝置]。
 
  ![Web 入口網站登陸頁面的螢幕擷取畫面，顯示尚無任何應用程式可以安裝，並且在下方有 [我的裝置] 按鈕。](./media/macOS_enroll_001_landing_page.png)
 
-4. 在 [我的裝置] 頁面上，您將看到一份已註冊的裝置清單或是只看到橫幅。 這取決於您是否已註冊裝置、macOS 或其他。 若要註冊未列出的裝置，請選取橫幅：__如果已列出您的裝置，請點選這裡來識別它。您也可以點選這裡來註冊未列出的裝置__。
+4. 在 [我的裝置] 頁面上，您將看到一份已註冊的裝置清單或是只看到橫幅。 這取決於您是否已註冊裝置、macOS 或其他。 若要註冊未列出的裝置，請選取橫幅：__如果已列出您的裝置，請點選這裡來識別它。您也可以點選這裡來註冊未列出的裝置__。 如果您沒有任何已註冊的裝置，橫幅會顯示**您沒有任何已註冊的裝置，請點選此處以註冊這部裝置。**
 
   ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -64,5 +61,7 @@ ms.lasthandoff: 09/28/2017
 9. 您可能會看到一些來自您 Mac 的其他訊息，其中包括更多關於此設定檔的詳細資料，或者您是否確定要__安裝__。 在這些過程中按一下 [繼續] 和 [安裝] 繼續進行。 一旦安裝完成後，您將能夠在 [裝置設定檔] 清單中檢視剛安裝的 [管理設定檔]。
 
  ![已安裝 macOS 設定檔](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+某些設定檔可能是會顯示為**未驗證**；只要它們是來自您的公司，這就是正常現象。
 
 是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
