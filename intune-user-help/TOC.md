@@ -62,6 +62,7 @@
 ### [註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
 ### [註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
 ### [使用公司入口網站來註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
+### [此裝置稍有不同](device-little-different-jamf.md)
 
 ### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 ### [設定或變更密碼](set-or-change-your-passcode-ios.md)
