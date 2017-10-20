@@ -31,7 +31,7 @@
           href: device-lifecycle.md
         - name: 應用程式生命週期
           href: app-lifecycle.md
-    - name: 常見的案例
+    - name: 常見案例
       href: common-scenarios.md
     - name: 服務說明
       href: microsoft-intune-service-description.md
@@ -128,7 +128,7 @@
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 新增使用者
+        - name: 加入使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -142,7 +142,7 @@
         - name: 註冊選項
           href: enrollment-options.md
           items:
-            - name: 條款和條件
+            - name: 條款及條件
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -536,6 +536,8 @@
       items:
         - name: 使用 Power BI 連線至資料倉儲
           href: reports-proc-get-a-link-powerbi.md
+        - name: 利用 Power BI 的 OData 摘要建立報表
+          href: reports-proc-create-with-odata.md
 - name: 自動化和自訂
   items:
     - name: 設定自訂裝置設定
@@ -608,5 +610,5 @@
       items:
         - name: 適用於 Intune 的圖形 API 參考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 詞彙
+- name: 字彙
   href: intune-glossary.md
