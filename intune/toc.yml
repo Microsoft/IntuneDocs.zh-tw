@@ -162,6 +162,8 @@
               href: windows-enroll.md
             - name: 大量註冊
               href: windows-bulk-enroll.md
+            - name: Windows AutoPilot Deployment 方案
+              href: enrollment-autopilot.md
         - name: 設定 Android 註冊
           href: android-enroll.md
         - name: 設定 iOS 註冊
@@ -601,11 +603,9 @@
               href: reports-ref-devices.md
             - name: 應用程式實體的參考
               href: reports-ref-application.md
-            - name: 原則實體的參考
-              href: reports-ref-policy.md
+            - name: 使用者裝置關聯實體的參考
+              href: reports-ref-userdeviceassociations.md
     - name: 側載 Windows 應用程式
-      href: app-sideload-windows.md
-    - name: 使用適用於 Intune 的圖形 API
       href: intune-graph-apis.md
       items:
         - name: 適用於 Intune 的圖形 API 參考
