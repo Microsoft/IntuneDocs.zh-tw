@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: 建立 Windows 原則
           href: compliance-policy-create-windows.md
+        - name: 不符合標準時所採取的動作
+          href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
     - name: 設定條件式存取
@@ -461,6 +463,8 @@
           href: windows-hello.md
     - name: 管理角色
       href: role-based-access-control.md
+    - name: 管理作業系統版本
+      href: manage-os-versions.md
     - name: 管理軟體更新
       href: windows-update-for-business-configure.md
     - name: 使用軟體代理程式來管理電腦
