@@ -50,7 +50,7 @@ ms.lasthandoff: 09/09/2017
 
     ![匯出簽署憑證](./media/wit-walk-cert2.gif)
 
-    在 **[憑證匯出精靈]**中，選取 [是，匯出私密金鑰]  ，然後按一下 [下一步] 。 **選取 [個人資訊交換 – PKCS #12 (.PFX)]**，然後選取 [如果可能的話，包含憑證路徑中的所有憑證]。 完成精靈。 如需詳細資訊，請參閱 [How to Export a Certificate with the Private Key (如何以私密金鑰匯出憑證)](http://go.microsoft.com/fwlink/?LinkID=203031)。
+    在 **憑證匯出精靈**中，選取 是，匯出私密金鑰  ，然後按一下下一步 。 **選取 [個人資訊交換 – PKCS #12 (.PFX)]**，然後選取 [如果可能的話，包含憑證路徑中的所有憑證]。 完成精靈。 如需詳細資訊，請參閱 [How to Export a Certificate with the Private Key (如何以私密金鑰匯出憑證)](http://go.microsoft.com/fwlink/?LinkID=203031)。
 
 6.  **將應用程式上傳至 Intune**<br>
     上傳已簽署的應用程式檔案和您的程式碼簽署憑證，讓使用者能夠使用應用程式。
