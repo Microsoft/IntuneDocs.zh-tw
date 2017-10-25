@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
+ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -92,6 +92,10 @@ Window 裝置大量註冊需要下列事項：
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>大量註冊和公司入口網站的問題
 如果使用者使用公司入口網站嘗試註冊先前的大量註冊裝置，就會收到警告，指出其裝置需要進一步的動作 (設定或註冊)。 裝置已註冊，但公司入口網站應用程式或網站無法辨識註冊。
+
+### <a name="bulk-enrollment-with-wi-fi"></a>大量註冊使用 Wi-Fi 
+
+大量註冊的裝置無法使用指派給使用者的憑證及 Wi-Fi 部署。 您必須使用[裝置層級的憑證](certificates-configure.md)，才能管理這些連線。 
 
 ### <a name="conditional-access"></a>條件式存取
 使用大量註冊來註冊的 Windows 裝置無法使用條件式存取。
