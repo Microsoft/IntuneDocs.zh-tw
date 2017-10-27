@@ -26,6 +26,7 @@
 
 ### [修正 Android 的常見問題](troubleshoot-your-device-android.md)
 #### [檢查裝置合規性](check-compliance-on-your-device-android.md)
+#### [在省電模式下同步 Outlook 電子郵件](power-saving-mode-android.md)
 
 #### 使用記錄檔以修正問題
 ##### [開啟詳細資訊記錄](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
