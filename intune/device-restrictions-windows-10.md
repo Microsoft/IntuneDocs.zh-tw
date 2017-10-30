@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/15/2017
     -   **避免重複使用以前用過的密碼** - 指定裝置記憶先前使用過的密碼數目。
     -   **裝置從閒置狀態回復時需要密碼 (僅限行動裝置)** - 指定使用者必須輸入密碼才能解除鎖定裝置 (僅限 Windows 10 行動裝置版)。
     -   **簡單密碼** - 可讓您使用 1111 和 1234 等簡單密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
--   **加密** - 啟用在目標裝置 (僅限 Windows 10 行動裝置版) 上加密。
+-   **加密** - 在目標裝置上啟用加密。
 
 ## <a name="personalization"></a>個人化
 

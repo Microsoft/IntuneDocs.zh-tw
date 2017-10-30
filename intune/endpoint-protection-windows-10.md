@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19c20ac5dd73b45dc06d1df6a7d08cc6bac42982
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
+ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中適用於 Windows 10 和更新版本的 Endpoint Protection 設定
 
@@ -28,6 +28,9 @@ ms.lasthandoff: 09/15/2017
 Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上 BitLocker 和 Windows Defender 這類安全性功能。
 
 請使用本主題中的資訊，以了解如何建立 Endpoint Protection 設定檔。
+
+> [!Note]
+> Home 和 Professional 版本的 Windows 10 不支援這些設定。
 
 ## <a name="create-an-endpoint-protection-profile"></a>建立 Endpoint Protection 設定檔
 

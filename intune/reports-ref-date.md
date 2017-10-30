@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 766d7619f2438d4291210ad8adfbc8d3eb9b2381
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 894617cd47e5221be6988c377608c82bad2c7a67
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
@@ -30,21 +30,21 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| DateKey |資料倉儲中此日期的唯一識別碼 | 20160703 |
-| FullDate |此日期以完整日期/時間格式表示 | 7/3/2016 12:00:00 AM |
-| DayOfWeek |週中的日 |1 |
-| DayOfMonth |月中的日 |3 |
-| DayOfYear |年中的日 |185 |
-| WeekOfYear |年中的週 |28 |
-| MonthOfYear |年中的月 |7 |
-| CalendarQuarter |日曆季度 |3 |
-| CalendarYear |日曆年度 |2016 |
-| DateKey |資料倉儲中此日期的唯一識別碼 |20160703 |
-| FullDate |此日期以完整日期/時間格式表示 | 7/3/2016 12:00:00 AM |
-| DayOfWeek |週中的日 |1 |
-| DayOfMonth |月中的日 |3 |
-| DayOfYear |年中的日 |185 |
-| WeekOfYear |年中的週 |28 |
-| MonthOfYear |年中的月 |7 |
-| CalendarQuarter |日曆季度 |3 |
-| CalendarYear |日曆年度 |2016 |
+| DateKey | 資料倉儲中此日期的唯一識別碼。 | 20160703 |
+| FullDate | 此日期以完整日期/時間格式表示。 | 7/3/2016 12:00:00 AM |
+| DayOfWeek | 週中的日 | 1 |
+| DayOfMonth | 月中的日 | 3 |
+| DayOfYear | 年中的日 | 185 |
+| WeekOfYear | 年中的週 | 28 |
+| MonthOfYear | 年中的月 | 7 |
+| CalendarQuarter | 日曆季度 | 3 |
+| CalendarYear | 日曆年度 | 2016 |
+| DateKey | 資料倉儲中此日期的唯一識別碼。 | 20160703 |
+| FullDate | 此日期以完整日期/時間格式表示。 | 7/3/2016 12:00:00 AM |
+| DayOfWeek | 週中的日 | 1 |
+| DayOfMonth | 月中的日 | 3 |
+| DayOfYear | 年中的日 | 185 |
+| WeekOfYear | 年中的週 | 28 |
+| MonthOfYear | 年中的月 | 7 |
+| CalendarQuarter | 日曆季度 | 3 |
+| CalendarYear | 日曆年度 | 2016 |

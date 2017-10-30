@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52b273532935184918e65d25a37ca3d03e76680c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
@@ -53,6 +53,9 @@ ms.lasthandoff: 09/09/2017
     d.  MAM 合規性 URL：
 
 5.  一旦您設定了這些設定，請選擇 [儲存]。
+
+> [!NOTE]
+> 需要具有 MAM 註冊狀態的裝置才能加入 Azure AD。
 
 ## <a name="next-steps"></a>後續步驟
 

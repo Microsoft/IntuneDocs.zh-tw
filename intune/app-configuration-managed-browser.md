@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -37,7 +37,11 @@ Managed Browser 是網頁瀏覽應用程式，您可從公共應用程式市集�
 
 如需詳細資料，請參閱[什麼是應用程式保護原則？](/intune/app-protection-policy)
 
-您可以將這些設定套用至已在 Intune 註冊、已在另一個裝置管理產品註冊的裝置，或完全未受管理的裝置。
+您可以套用這些設定至：
+
+- 向 Intune 註冊的裝置
+- 向其他 MDM 產品註冊
+- 未受管理的裝置
 
 如果使用者從應用程式市集安裝 Managed Browser，且 Intune 並沒有管理它，可以將它作為基本網頁瀏覽器使用，並透過 Microsoft MyApps 網站支援單一登入。 系統會將使用者直接帶往 MyApps 網站，他們可以在該網站看到其所有已佈建的 SaaS 應用程式。
 由於 Managed Browser 未受 Intune 管理，所以無法存取來自其他受 Intune 管理的應用程式資料。 
