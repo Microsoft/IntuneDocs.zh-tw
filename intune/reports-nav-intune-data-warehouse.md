@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune 資料倉儲 API
 
@@ -41,9 +41,12 @@ OData (開放式資料通訊協定) 是一種 Organization for the Advancement o
 
 ## <a name="odata-custom-client"></a>OData 自訂用戶端
 
-您可以透過 RESTful 端點存取 Intune 資料倉儲資料模型。 若要存取您的資料，您的用戶端必須使用 OAuth 2.0 向 Microsoft Azure Active Directory (Azure AD) 進行授權。 您可以先在 Azure 中設定 Web 應用程式和用戶端應用程式，並授與用戶端的權限。 您的本機用戶端將取得授權，接著可以與資料倉儲端點進行通訊。
+您可以透過 RESTful 端點存取 Intune 資料倉儲資料模型。 若要存取您的資料，您的用戶端必須使用 OAuth 2.0 向 Azure Active Directory (Azure AD) 進行授權。 您可以先在 Azure 中設定 Web 應用程式和用戶端應用程式，並授與用戶端的權限。 您的本機用戶端將取得授權，接著可以與資料倉儲端點進行通訊。
 
 如需詳細資訊，請參閱[使用 REST 用戶端從資料倉儲 API 取得資料](reports-proc-data-rest.md)。
+
+> [!Note]  
+> 您可以存取 Github 上的 [GitHub Intune 資料倉儲儲存機制](https://github.com/Microsoft/Intune-Data-Warehouse)以取得程式碼範例。
 
 ## <a name="interacting-with-the-api"></a>與 API 互動
 
@@ -58,6 +61,8 @@ OData 會定義抽象資料模型和通訊協定，可讓任何資料來源所�
 
 ## <a name="next-steps"></a>後續步驟
 
-[Azure AD 的驗證案例](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData 版本 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+藉由閱讀 [Azure AD 的驗證案例](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)，深入了解使用 Azure AD。
+
+在 [odata.org](http://www.odata.org) 尋找 OData 資源。
+  
+在 [OData Version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) (OData 4.0 版) 檢閱 OData 4.0 版標準  

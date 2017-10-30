@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>原則實體的參考
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| PolicyKey |代表資料倉儲中原則的唯一索引鍵 |123 |
-| PolicyId |資料倉儲中原則的唯一識別碼 |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |原則的名稱 |"Windows 10 Baseline" |
+| PolicyKey |代表資料倉儲中原則的唯一索引鍵。 |123 |
+| PolicyId |資料倉儲中原則的唯一識別碼。 |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |原則的名稱。 |"Windows 10 Baseline" |
 | PolicyVersion |原則的版本。 編輯或變更原則時，會建立較新版本。 |1, 2, 3 |
-| IsDeleted |指出是否已更新 [原則] 記錄。  True - 原則具有含已更新欄位的新記錄。 False - 原則的最新記錄。 |True/False |
-| StartDateInclusiveUTC |在資料倉儲中建立原則的 UTC 日期和時間 |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |IsDeleted 變更為 True 的 UTC 日期和時間 |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |前次在資料倉儲中修改原則的 UTC 日期和時間 |11/23/2016 12:00:00 AM |
+| IsDeleted |指出是否已更新 [原則] 記錄。  <br>True - 原則具有含已更新欄位的新記錄。 <br>False - 原則的最新記錄。 |True/False |
+| StartDateInclusiveUTC |在資料倉儲中建立原則的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |IsDeleted 變更為 True 的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |前次在資料倉儲中修改原則的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| PolicyTypeId |來源系統中原則的唯一識別碼 |123 |
-| PolicyTypeKey |資料倉儲中原則的唯一識別碼 |1 |
-| PolicyTypeName |原則類型的名稱。 |Windows 10 合規性原則 |
+| PolicyTypeId |來源系統中原則的唯一識別碼。 |123 |
+| PolicyTypeKey |資料倉儲中原則的唯一識別碼。 |1 |
+| PolicyTypeName |原則類型的名稱。 |Windows 10 合規性原則。 |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵 |20160703 |
-| Pending |處於擱置狀態的唯一裝置數目 |123 |
-| 已成功 |處於成功狀態的唯一裝置數目 |12 |
-| 錯誤 |處於錯誤狀態的唯一裝置數目 |10 |
-| Failed |處於失敗狀態的唯一裝置數目 |2 |
+| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |20160703 |
+| Pending |處於擱置狀態的唯一裝置數目。 |123 |
+| 已成功 |處於成功狀態的唯一裝置數目。 |12 |
+| 錯誤 |處於錯誤狀態的唯一裝置數目。 |10 |
+| Failed |處於失敗狀態的唯一裝置數目。 |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵 |20160703 |
-| Pending |處於擱置狀態的唯一使用者數目 |123 |
-| 已成功 |處於成功狀態的唯一使用者數目 |12 |
-| 錯誤 |處於錯誤狀態的唯一使用者數目 |10 |
-| Failed |處於失敗狀態的唯一使用者數目 |2 |
+| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |20160703 |
+| Pending |處於擱置狀態的唯一使用者數目。 |123 |
+| 已成功 |處於成功狀態的唯一使用者數目。 |12 |
+| 錯誤 |處於錯誤狀態的唯一使用者數目。 |10 |
+| Failed |處於失敗狀態的唯一使用者數目。 |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ ms.lasthandoff: 08/04/2017
 
 | 屬性  | 描述 | 範例 |
 |---------|------------|--------|
-| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵 |20160703 |
-| PolicyKey |原則索引鍵，可以與 [原則] 聯結以取得 policyName |Windows 10 基準 |
-| PolicyTypeKey |原則索引鍵類型，可以與 [原則類型] 聯結以取得原則類型名稱 |Windows10 合規性原則 |
-| Pending |處於擱置狀態的唯一裝置數目 |123 |
-| 已成功 |處於成功狀態的唯一裝置數目 |12 |
-| 錯誤 |處於錯誤狀態的唯一裝置數目 |10 |
-| 失敗 - |處於失敗狀態的唯一裝置數目 |2 |
+| DateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |20160703 |
+| PolicyKey |原則索引鍵，可以與 [原則] 聯結以取得 policyName。 |Windows 10 基準 |
+| PolicyTypeKey |原則索引鍵類型，可以與 [原則類型] 聯結以取得原則類型名稱。 |Windows 10 合規性原則 |
+| Pending |處於擱置狀態的唯一裝置數目。 |123 |
+| 已成功 |處於成功狀態的唯一裝置數目。 |12 |
+| 錯誤 |處於錯誤狀態的唯一裝置數目。 |10 |
+| 失敗 - |處於失敗狀態的唯一裝置數目。 |2 |

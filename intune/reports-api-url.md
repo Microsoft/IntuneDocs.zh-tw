@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
 您可以搭配使用 Intune 資料倉儲 API 與具有特定角色型存取控制和 Azure AD 認證的帳戶。 您接著會使用 OAuth 2.0 向 Azure AD 授權 REST 用戶端。 最後，您會形成有意義的 URL 來呼叫資料倉儲資源。
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD 和 Intune 認證需求
-
-驗證和授權是以 Azure AD 認證和 Intune 角色型存取控制 (RBAC) 為基礎。 租用戶的所有全域管理員和 Intune 服務管理員預設可以存取 API。 使用 Intune 角色來提供更多使用者的存取權，方法是讓他們存取**報告資源**。
-
-API 的存取需求如下：
-
-  -  必須將 Intune 授權指派給使用者
-  -  使用者必須是下列其中一個：
-      -  Azure AD 全域管理員
-      -  Intune 服務管理員
-      -  具有 [報表] 資源之角色型存取權的使用者
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>授權
 
@@ -64,4 +54,4 @@ API 的目前版本為：`beta`。
 
 ## <a name="odata-query-options"></a>OData 查詢選項
 
-目前版本支援下列 OData 查詢參數：`$skip, $top, $filter, $orderby`。
+目前版本支援下列 OData 查詢參數：`$filter, $orderby, $select, $skip,` 和 `$top`。

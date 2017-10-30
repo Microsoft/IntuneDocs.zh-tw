@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ae828adff5d159c24e436b35ed480033c54560f
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>防止未經授權的公司資料存取 
 
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/23/2017
 在接下來的步驟中，您可以深入了解提高公司資料保護的其他方式，包含： 
 
 * 了解如何使用 [iOS 和 Android 裝置上的 Azure 資訊保護](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
-* 若是 Windows Phone 和 Mac 電腦，則參閱 [Microsoft Rights Management SharePoint 應用程式](https://technet.microsoft.com/dn451248)。
+* 若為 Windows Phone 和 Mac 電腦，請參閱 [Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/dn451248)。

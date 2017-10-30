@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 199760a60ee2290560ebdf933192de0eaf569e9e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="configure-ios-update-policies"></a>設定 iOS 更新原則
 設定 iOS 更新原則，強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。 當您不想要裝置安裝更新時，可以選擇設定星期幾和時間。
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="assign-an-ios-update-policy-to-users"></a>將 iOS 更新原則指派給使用者
 若要將 iOS 更新原則指派給使用者，請選擇您已設定的原則。 現有的原則位於 [軟體更新] > [iOS 更新原則] 刀鋒視窗中。
-1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這會開啟刀鋒視窗讓您選取 Azure Active Directory 安全性群組，並將其指派給原則。
+1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 隨即開啟刀鋒視窗讓您選取 Azure Active Directory 安全性群組，並將其指派給原則。
 2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。 選擇 [選取] 將原則部署給使用者。
 
 您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受更新合規性評估。
@@ -40,3 +40,7 @@ ms.lasthandoff: 09/09/2017
 1. 在 [軟體更新] 刀鋒視窗中，選擇 [iOS 更新原則]。
 2. 選取您想要更新的 iOS 更新原則。
 3. 選取 [屬性] 更新限於星期幾的資訊。
+
+## <a name="monitor-ios-devices-with-older-ios-versions"></a>監視舊版 iOS 的 iOS 裝置 
+<!-- 1352223 -->
+[軟體更新] > [iOS 更新原則] 刀鋒視窗將提供**過期的 iOS 裝置**報表。 在此報表中，您可以檢視受監督的 iOS 裝置清單，這些是 iOS 更新原則之前鎖定且無法更新的裝置。 針對每部裝置，您可以檢視狀態，以了解為何尚未自動更新裝置。

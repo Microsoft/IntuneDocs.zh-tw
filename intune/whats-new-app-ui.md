@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+
+## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日當週
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>公司入口網站的搜尋改善<!--1331697-->
+我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
+
+iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
+
+我們仍然會微調相關性的追蹤方式；因此，請使用公司入口網站底端的 [意見反應] 連結，讓我們知道其運作方式。
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS 公司入口網站顯示大型圖示 <!-- 1454593 -->
+此版本修正 iOS 公司入口網站於應用程式磚中顯示圖示方式的已知問題。 如果您上傳 120x120 像素或更大的應用程式圖示，現在會以完整的應用程式磚大小顯示在[公司入口網站](https://portal.manage.microsoft.com)和 iOS 公司入口網站的應用程式頁面中。
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
@@ -67,7 +85,7 @@ Android 公司入口網站應用程式的註冊程序已經使用新的文字來
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>2017 年 8 月 28 日當週
+## <a name="august-2017"></a>2017 年 8 月
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!---1196951--->
 
@@ -87,7 +105,7 @@ Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 
 
 ![系統會提示使用者從公司入口網站註冊。](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日這週
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune 行動應用程式管理 (MAM) 對話方塊會有新式介面 <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Intune 行動應用程式管理 (MAM) 對話方塊將更新為新式外觀和操
 ![新式介面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日這週
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新 <!---1287448--->
 
 Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下方移至 [裝置詳細資料] 頁面上的屬性。
 
 ![Windows 之公司入口網站應用程式的 [裝置詳細資料] 畫面，現在會將 [類別] 欄位顯示為屬性，而不是直接顯示在該畫面的標題下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日一週
+## <a name="july-2017"></a>2017 年 7 月
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>應用程式詳細資料頁面將顯示 Android 裝置的新資訊 <!--1287476-->
 
@@ -164,7 +180,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出進度。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日一週
+## <a name="june-2017"></a>2017 年 6 月
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 公司入口網站應用程式的應用程式保護原則現在有了新的使用者體驗<!--1305217-->
 根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，以顯示 [存取公司內容] 按鈕。 目的是為了防止使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。
@@ -210,8 +226,6 @@ Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊
 ![Android 版公司入口網站應用程式的影像，右上角是開啟的動作功能表。 新的 [移除公司入口網站] 選項是第三個選項，位於 [我的設定檔] 和 [設定] 底下，在 [條款及條件]、[說明與意見反應] 和 [關於] 之上。](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![確認對話方塊的影像，從動作功能表選取新的 [移除公司入口網站] 選項後就會顯示。 此對話方塊會告知使用者「若移除公司入口網站，您的裝置將不再受 IT 管理員管理，並可能移除對公司資料、公司應用程式及公司電子郵件的存取權。」 然後，它會要求使用者選取 [是] 以確認要移除公司入口網站應用程式。](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日一週
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>適用於 iOS 之公司入口網站應用程式中應用程式磚的改善 <!--1230777-->
 我們已更新首頁上應用程式磚的設計，以反映您為公司入口網站設定的商標色彩。

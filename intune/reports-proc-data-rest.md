@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 08/11/2017
 
 您現在已在 Azure 中定義應用程式。 將存取權從原生應用程式授與 Microsoft Intune API。
 
-1.  按一下原生應用程式。 您已將應用程式命名為「Intune 資料倉儲用戶端」這類名稱。
+1.  按一下原生應用程式。 您已將應用程式命名為 **Intune 資料倉儲用戶端**這類名稱。
 2.  從 [設定] 刀鋒視窗中，按一下 [必要權限]。
 3.  在 [必要權限] 刀鋒視窗中，按一下 [新增]。
 4.  按一下 [選取 API]。
@@ -82,7 +82,7 @@ ms.lasthandoff: 08/11/2017
 
 您需要下列資訊，才能使用 Postman 進行 REST 呼叫：
 
-| 屬性        | 描述                                                                                                                                                                          | 範例                                                                                       |
+| 屬性        | 說明                                                                                                                                                                          | 範例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回呼 URL     | 在應用程式設定頁面中，將此項目設定為回呼 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | 權杖名稱       | 用來將認證傳遞給 Azure 應用程式的字串。 此程序會產生您的權杖，以針對資料倉儲 API 進行呼叫。                          | Bearer                                                                                        |
@@ -132,7 +132,7 @@ ms.lasthandoff: 08/11/2017
     ![權杖的資訊](media\reports-postman_getnewtoken.png)
 
 14. 在 Active AD 授權頁面中，鍵入認證。 Postman 中的 [現有權杖] 清單現在包含名為 `Bearer` 的權杖。
-16. 選擇權杖。 在 [Add token to]\(將權杖新增至) 中，選取 [標頭]。
+16. 選擇權杖。 在 [Add token to] (將權杖新增至) 中，選取 [標頭]。
 17. 按一下 [使用權杖]。 標頭清單包含授權的新金鑰值以及值 `Bearer <your-authorization-token>`。
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>使用 Postman 將呼叫傳送至端點
@@ -152,14 +152,14 @@ ms.lasthandoff: 08/11/2017
 1.  開啟 [Microsoft Visual Studio]。
 2.  選擇 [檔案] > [新增專案]。 展開 [Visual C#]，然後選擇 [主控台應用程式 (.NET Framework)]。 
 3.  將專案命名為 ` IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後按一下 [確定]。
-3.  以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]。 按一下 [瀏覽]，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory'。
-4. 選擇套件，並在 [Manage Packages for Your Solution]\(管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後按一下 [安裝]。 
-5. 按一下 [我接受]，以接受 NuGet 套件授權。
-6. 從方案總管中，開啟 `Program.cs`。
+4.  以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]。 按一下 [瀏覽]，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
+5. 選擇套件，並在 [Manage Packages for Your Solution]\(管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後按一下 [安裝]。 
+6. 按一下 [我接受]，以接受 NuGet 套件授權。
+7. 從方案總管中，開啟 `Program.cs`。
 
     ![Visual Studio 中的專案](media\reports-get_rest_data_in.png)
 
-7.  將 Program.cs 中的程式碼取代為下列程式碼：  
+8.  將 Program.cs 中的程式碼取代為下列程式碼：  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  更新程式碼範例中的 `TODO`。
-9.  按 **Ctrl + F5**，以偵錯模式建置並執行 Intune.DataWarehouseAPIClient 用戶端。
+9.  更新程式碼範例中的 `TODO`。
+10.  按 **Ctrl + F5**，以偵錯模式建置並執行 Intune.DataWarehouseAPIClient 用戶端。
 
     ![以 JSON 格式擷取的 date 實體。](media\reports-get_rest_data_output.png)
 
-10.  檢閱主控台輸出。 此輸出包含從 Intune 租用戶的 **dates** 實體中提取的資料，且格式為 JSON。
+11.  檢閱主控台輸出。 此輸出包含從 Intune 租用戶的 **dates** 實體中提取的資料，且格式為 JSON。
 
 ## <a name="next-steps"></a>後續步驟
 
