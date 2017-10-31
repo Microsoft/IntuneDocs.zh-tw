@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e55246f8f089a998fa4a04fe07e5e54408d8513
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -94,6 +94,16 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 
 
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>針對應用程式型條件式存取啟用 iOS 或 Android 應用程式
+ 
+ 除了針對應用程式保護原則啟用您的應用程式之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
+ 
+ * 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
+ 
+ * 您應用程式的 [AAD 用戶端識別碼](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)在 iOS 與 Android 平台上都必須是唯一的。
+ 
+ 
+ 
 
 ## <a name="configure-telemetry-for-your-app"></a>設定應用程式的遙測
 

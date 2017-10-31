@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6fd8525da11fcc376c4850c53ed1b98f37798ae
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 27725d28ac621bae9500d0e6639a82d6f033e4dc
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -47,7 +47,7 @@ Intune App SDK 包含下列檔案：
 
 ## <a name="requirements"></a>需求
 
-Intune App SDK 是一種編譯過的 Android 專案。 因此，它基本上不會受到應用程式針對其最低或目標 API 版本使用的 Android 版本所影響。 此 SDK 支援 Android API 14 (Android 4.0+) 到 Android API 25 (Android 7.1)。
+Intune App SDK 是一種編譯過的 Android 專案。 因此，它基本上不會受到應用程式針對其最低或目標 API 版本使用的 Android 版本所影響。 SDK 支援 Android API 19 (Android 4.4+) 到 Android API 25 (Android 7.1)。
 
 
 

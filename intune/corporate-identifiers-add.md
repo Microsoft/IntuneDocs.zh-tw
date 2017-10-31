@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
-ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
+ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -45,9 +45,9 @@ ms.lasthandoff: 09/29/2017
 [了解如何尋找您的 Android 裝置序號](https://support.google.com/store/answer/3333000)。
 
 ## <a name="add-corporate-identifiers"></a>新增公司識別碼
-建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 IMEI 或序號，然後在右資料行中新增詳細資料。 單一 .csv 檔案只能匯入某一類型的識別碼、IMEI 或序號。 詳細資料限制為 128 個字元，且僅能供系統管理使用。 詳細資料不會顯示在裝置上。 目前的限制是每個 .csv 檔案 500 個資料列。
+建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 IMEI 或序號，然後在右資料行中新增詳細資料。 單一 .csv 檔案只能匯入某一類型的識別碼、IMEI 或序號。 詳細資料限制為 128 個字元，且僅能供系統管理使用。 詳細資料不會顯示在裝置上。 目前限制是每個 .csv 檔案 5,000 列。
 
-**上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。
+**上傳內含序號的 .csv 檔案** - 建立只有兩個行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只能包含 5,000 部裝置，或每個.csv 檔案不得超過 5 MB。
 
 |||
 |-|-|
@@ -68,7 +68,7 @@ ms.lasthandoff: 09/29/2017
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>新增公司識別碼的 .csv 清單
 
-1. 在 Azure 入口網站的 Intune 中，選擇 裝置註冊 > 公司裝置識別碼，然後按一下新增。
+1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
 
  ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區螢幕擷取畫面。](./media/add-corp-id.png)
 

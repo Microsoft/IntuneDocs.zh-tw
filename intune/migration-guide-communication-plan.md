@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -53,6 +53,8 @@ Intune 提供可用來向使用者宣導註冊裝置的其他範本：
 
 -   [適用於 IT 系統管理員的 Intune 使用者註冊範本](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)是可自訂的 Word 文件，說明如何在 Intune 中註冊 Android、iOS 和 Mac 裝置。
 
+-   [適用於 EMS 的 FastTrack 作法指南與電子郵件](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) \(英文\) 可讓您自訂為顯示您的公司標誌，以提高組織內的 Intune 與 EMS 採用率。
+
 ## <a name="next-steps"></a>後續步驟
 
-[使用條件式存取引導使用者採用](migration-guide-drive-adoption.md).
+[使用條件式存取引導使用者採用](migration-guide-drive-adoption.md)。
