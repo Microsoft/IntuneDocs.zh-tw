@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -130,10 +130,23 @@ ms.lasthandoff: 10/20/2017
 
 **MdmStatuses** 實體會指出裝置的合規性狀態。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 |
+|---------|------------|
+| MdmStatusID |合規性狀態的唯一識別碼 |
+| MdmStatusKey |資料倉儲中合規性狀態的唯一識別碼 - surrogate 索引鍵 | 
+| ComplianceStatus |裝置的合規性狀態，必須具有來自下表的其中一個值 | 
+
+
+## <a name="example"></a>範例
+
+| MdmStatusID  | ComplianceStatus | 描述 |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus 識別碼 |0 - 不明 <br>1 - 符合規範 <br>2 - 不符合規範 |
-| MdmStatusKey |資料倉儲中合規性狀態的唯一識別碼 - surrogate 索引鍵 | |
+| 0 |未知 |裝置的合規性狀態不明。 |
+| 1 |符合規範 |裝置符合規範。 |
+| 2 |不符合規範 |裝置符合規範。 |
+| 3 |衝突 |裝置的合規性導致衝突。 |
+| 4 |錯誤 |讀取裝置的合規性狀態時發生錯誤。 |
+
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -260,7 +273,7 @@ ms.lasthandoff: 10/20/2017
 | 屬性  | 描述 |
 |---------|------------|
 | DateKey |指出當日的日期資料表參考。 |
-| DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼的裝置資料表的參考。 |
+| DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼之裝置資料表的參考。 |
 | DeviceName |允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不能提供所有裝置使用。 |
 | DeviceTypeKey |此裝置的裝置類型屬性索引鍵。 |
 | ClientRegisterationStateKey |此裝置的用戶端註冊狀態屬性索引鍵。 |

@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -147,7 +147,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 |||
 |-|-|
 |金鑰|值|
-|從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 **&#124;** 字元分隔。<br><br>範例：<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 **&#124;** 字元分隔。<br><br>範例：<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >請勿同時指定這兩個金鑰。 如果兩個金鑰都以同一使用者為目標，會使用允許金鑰，因為它是最嚴格的選項。
