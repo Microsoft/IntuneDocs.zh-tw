@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: angrobe
-ms.date: 07/17/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
@@ -43,15 +43,6 @@ Microsoft Intune 現已在 Azure 入口網站上提供，這意味著您慣用�
 - Microsoft Graph API 可用於自動化許多動作
 - Azure Active Directory (AD) 群組可為所有 Azure 應用程式提供相容性
 - 支援時下絕大多數的現代化網頁瀏覽器
-
-> [!IMPORTANT]
-> **還沒看到新的入口網站嗎？**<br>
-> 現有的租用戶將移轉至新的體驗。 在您的租用戶移轉之前，通知會顯示在 Office 訊息中心。
->
-> 在 2017 年 1 月之前建立的 Intune 帳戶，將需要進行一次性移轉，才能在 Azure 中使用 Apple 註冊工作流程。 移轉的排程尚未公告。 如果您現有的帳戶無法存取 Azure 入口網站，建議您建立試用帳戶。
->
-> 請檢閱潛在封鎖程式的清單 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
-
 
 ## <a name="before-you-start"></a>開始之前
 
