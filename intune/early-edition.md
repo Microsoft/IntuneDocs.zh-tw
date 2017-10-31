@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune 的舊版 - 2017 年 10 月
 
@@ -151,19 +151,6 @@ Intune 現在支援 Symantec 雲端 CA，因此 Intune 憑證連接器可將來�
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>支援 Windows 10 版本升級原則 <!-- 903672(archived), 1119689 -->  
 您可以建立 Windows 10 版本升級原則，以將 Windows 10 裝置升級為 Windows 10 教育版、Windows 10 教育版 N、Windows 10 專業版、Windows 10 專業版 N、Windows 10 專業教育版和 Windows 10 專業教育版 N。如需 Windows 10 版本升級的詳細資料，請參閱[如何設定 Windows 10 版本升級](edition-upgrade-configure-windows-10.md)。
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Intune MAM 和 Android 版 Outlook 的增益集 <!-- 1450688 -->
-在未來幾週，Office 小組將會宣布適用於 Android 版 Outlook 的增益集。 此增益集功能集現已存在於 Windows、iOS，Web 和 Mac 版 Outlook 中。 因為增益集是透過 Exchange 管理，除非 Exchange 系統管理員關閉增益集的存取功能，否則使用者將能夠在 Outlook 和未受管理的增益集應用程式之間複製並共用資料和郵件。 
-
-若要管理使用者的增益集存取權限，請與您的 Exchange 系統管理員合作，確保 MAM 資料保護原則套用至增益集。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-如果您的 Exchange 原則已設定為防止側載增益集或安裝增益集，則無需繼續閱讀。 您的 MAM 原則將會如預期套用。 不過，如果您已在 MAM 中設定原則以限制 Android 版 Outlook 中的剪下、複製和貼上操作，而並未在 Exchange 中設定增益集原則，您應該了解使用者預設將能夠安裝增益集至 Outlook。 這些增益集可以存取郵件內文、主旨和其他的郵件屬性。 您可以請 Exchange 系統管理員移除「我的市集應用程式」和「我的自訂應用程式」角色，即可關閉讓使用者安裝增益集的功能。
-
-Exchange 中的設定變更將會套用至 Windows、iOS、Web、Mac 和行動裝置版 Outlook。 
-
-#### <a name="what-do-i-need-to-do"></a>我需要做什麼？
-檢閱您目前的 Exchange 原則。 通知您的 IT 和技術服務人員。 如有任何問題或疑慮，請連絡我們的支援小組。 
 
 
 
