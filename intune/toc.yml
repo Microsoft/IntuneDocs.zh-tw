@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: 監視 App
           href: apps-monitor.md
-        - name: iOS 應用程式組態設定檔
-          href: app-configuration-policies-use-ios.md
-        - name: Android 應用程式組態設定檔
-          href: app-configuration-policies-use-android.md
+        - name: 應用程式設定原則
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS 受管理裝置
+              href: app-configuration-policies-use-ios.md
+            - name: Android 受管理裝置
+              href: app-configuration-policies-use-android.md
+            - name: 受管理的應用程式
+              href: app-configuration-policies-managed-app.md
         - name: 使用 iOS 應用程式佈建設定檔
           href: app-provisioning-profile-ios.md
         - name: 選擇性地抹除應用程式
