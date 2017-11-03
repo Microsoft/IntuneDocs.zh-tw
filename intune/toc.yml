@@ -545,6 +545,8 @@
     - name: 使用 Intune 資料倉儲
       href: reports-nav-create-intune-reports.md
       items:
+        - name: 更改數據倉庫的日誌
+          href: reports-changelog.md
         - name: 使用 Power BI 連線至資料倉儲
           href: reports-proc-get-a-link-powerbi.md
         - name: 利用 Power BI 的 OData 摘要建立報表
@@ -602,18 +604,20 @@
         - name: 資料倉儲資料模型
           href: reports-ref-data-model.md
           items:
-            - name: Date 實體的參考
-              href: reports-ref-date.md
-            - name: User 實體的參考
-              href: reports-ref-user.md
-            - name: 行動應用程式管理 (MAM) 實體的參考
-              href: reports-ref-mobile-app-management.md
-            - name: 裝置實體的參考
-              href: reports-ref-devices.md
             - name: 應用程式實體的參考
               href: reports-ref-application.md
-            - name: 使用者裝置關聯實體的參考
-              href: reports-ref-userdeviceassociations.md
+            - name: 日期實體的參考
+              href: reports-ref-date.md
+            - name: 裝置實體的參考
+              href: reports-ref-devices.md
+            - name: 行動應用程式管理 (MAM) 實體的參考
+              href: reports-ref-mobile-app-management.md
+            - name: 原則實體的參考
+              href: reports-ref-policy.md
+            - name: 用戶設備關聯的參考
+              href: reports-ref-user-device.md
+            - name: User 實體的參考
+              href: reports-ref-user.md
     - name: 側載 Windows 應用程式
       href: intune-graph-apis.md
       items:
