@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 應用程式保護原則設定
 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式保護原則[設定](app-protection-policies.md)本主題所述的原則設定。
@@ -90,4 +90,3 @@ ms.lasthandoff: 10/26/2017
 | **需要最低的 Android 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 Android 作業系統。 如果裝置上的 Android 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 | 否 |
 | **需要最低的應用程式版本** | 選擇 [是] 以要求使用應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，將會封鎖使用者進行存取。<br><br>選取目標應用程式時，請注意，應用程式之間通常會有不同的版本控制配置。<br><br> | 否 | 
 | **需要最低的應用程式版本 (僅警告)** | 選擇 [是] 以建議使用此應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br>選取目標應用程式時，請注意，應用程式之間通常會有不同的版本控制配置。<br><br> | 否 | 
-

@@ -2,10 +2,10 @@
 title: "新增使用者並授與權限"
 description: "同步處理內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/19/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2384bede0ef4ed68072d1884d235e091cc625fa5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/09/2017
 6. 選擇 [新增] 建立新的使用者。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 入口網站中新增 Intune 使用者
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [More services]\(更多服務) > [監視 + 管理] > [Intune]。 您也可以「搜尋 **Intune** 資源」。
+1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [More services] (更多服務) > [監視 + 管理] > [Intune]。 您也可以「搜尋 **Intune** 資源」。
 2. 選取 [使用者]。
 3. 在系統管理中心，選取 [新增使用者]。
   ![Office 365 系統管理員的螢幕擷取畫面](media/intune-add-user.png)

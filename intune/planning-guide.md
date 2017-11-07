@@ -2,10 +2,10 @@
 title: "Intune 規劃和設計簡介"
 description: "本文介紹所有 Intune 規劃、設計和實作章節。 工具可協助您判斷目的、使用案例和需求、建立推出和通訊計劃、支援、測試和驗證計劃。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ceee7a766fa8f60b91d3a84b6577223e1bfd652e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 754c38a33fa6e08a6022c726f6e1eb8088b82e94
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署規劃、設計和實作指南
 

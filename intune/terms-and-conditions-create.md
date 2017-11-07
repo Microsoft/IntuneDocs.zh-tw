@@ -3,10 +3,10 @@ title: "設定 Microsoft Intune 中的條款及條件"
 titlesuffix: Azure portal
 description: "設定使用者會在 Intune 公司入口網站中看到的條款及條件。 "
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 63434cbbc9edc668d59fb99968727551e0c4cc40
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>確定使用者接受公司條款以進行存取
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/09/2017
 1. 在 Azure 入口網站中，選擇 [裝置註冊]，然後選擇 [條款及條件]。
 2. 在條款及條件清單中，選取您要指派的條款，然後選取 [指派的群組]。
 ![顯示指派條款及條件 [選取群組] 按鈕和 [選取] 按鈕的 Azure 入口網站 [指派群組] 刀鋒視窗螢幕擷取畫面](media/terms-assign-groups.png)
-3. 按一下 選取群組 按鈕，然後在 選取群組 刀鋒視窗中，選取您要指派條款的群組，然後按一下選取。 無法為動態群組指派條款及條件。
+3. 按一下 [選取群組] 按鈕，然後在 [選取群組] 刀鋒視窗中，選取您要指派條款的群組，然後按一下 [選取]。 無法為動態群組指派條款及條件。
 4. 在 [指派的群組] 刀鋒視窗中，按一下 [儲存]。  條款及條件現在已指派給所選群組中的使用者。 使用者將會在下次存取公司入口網站時，收到接受條款的提示。 條款及條件只需要接受一次。 具有多部裝置的使用者不需要在每部裝置上接受。
 
 
