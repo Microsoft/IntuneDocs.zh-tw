@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: 裝置實體的參考
               href: reports-ref-devices.md
+            - name: Intune 管理延伸模組的參考
+              href: reports-ref-intunemanagementextension.md
             - name: 行動應用程式管理 (MAM) 實體的參考
               href: reports-ref-mobile-app-management.md
             - name: 原則實體的參考
