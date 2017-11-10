@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 監視應用程式資訊和指派
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune 提供了許多方式，可讓您監視您所管理之應用程式的內容，以及它們的指派狀態。
 
-1. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
-2. 在應用程式清單刀鋒視窗中，選擇您想要查看資訊的應用程式。 您會看到 [<應用程式名稱> 裝置安裝狀態] 刀鋒視窗：![應用程式安裝狀態刀鋒視窗。](./media/monitor-apps.png)
+1. 登入 Azure 入口網站。
+2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
+3. 在 [Mobile Apps] 工作負載中，選擇 [管理] 群組中的 [應用程式]。
+     
+    ![應用程式安裝狀態刀鋒視窗。](./media/monitor-apps.png)
+5. 在應用程式清單的刀鋒視窗中，選擇應用程式。 您會看到 [<應用程式名稱> 裝置安裝狀態] 刀鋒視窗。
+
+裝置安裝狀態報表包含下列資料行：
+
+1.  **裝置名稱** - 裝置類型的名稱。
+2.  **使用者名稱** - 使用者的名稱。
+3.   **平台**裝置上安裝的作業系統。
+4.  **版本**應用程式的版本號碼。
+5.   **狀態** - 應用程式的可能狀態包括：**已安裝**、**未安裝**、**安裝擱置中**和**錯誤**。
+6. **狀態詳細資料** - 裝置上應用程式狀態的可讀取描述。
+7. **上次簽入** - 裝置上次簽入至 Intune 的時間。
 
 然後，採取下列其中一個動作來深入了解應用程式及其指派。
 

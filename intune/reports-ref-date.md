@@ -1,5 +1,5 @@
 ---
-title: Date | Microsoft Docs
+title: "日期 - Intune 資料倉儲 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中 [日期] 類別實體集合的參考主題。"
 keywords: "Intune 資料倉儲"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 894617cd47e5221be6988c377608c82bad2c7a67
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 93d0f08697c8ee17ff44d599cb7b1bb262daa7ee
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 

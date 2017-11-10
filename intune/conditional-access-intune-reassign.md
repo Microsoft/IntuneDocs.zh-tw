@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -82,9 +82,9 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
     ![Intune 與 Azure 入口網站之間的使用者群組 UI 比較](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Azure 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
+    > 您在 Azure 入口網站中所做的選擇，應該會對應至您在傳統入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
 
-5. 選擇群組之後，按一下 選取，然後按一下完成。
+5. 選擇群組之後，按一下 [選取]，然後按一下 [完成]。
 
 6. 在 [指派] 區段下，選擇 [雲端應用程式]。
 
@@ -125,13 +125,13 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 
 17. 在 [存取控制] 區段下，選擇 [授與]。
 
-18. 在 Grant Access Controls\(授與存取控制)) 下，選擇 裝置需要標記為相容，然後按一下選取。
+18. 在 [Grant Access Controls] (授與存取控制)) 下，選擇 [裝置需要標記為相容]，然後按一下 [選取]。
 
 19. 如有要求 Windows 裝置加入網域的原則，而您也允許 Intune 已註冊且相容的 Windows 裝置，請選擇 [要求已加入網域的裝置] 和 [裝置需要標記為相容]，以及 [需要其中一個選取的控制項]。
 
-20. 如不允許 Intune 已註冊且相容的 Windows 裝置，請從目前的原則中排除 Windows 原則。 然後另外建立原則，將 [裝置平台] 設為 [Windows]，如上述包含其他條件為一個集合，然後選擇 [Grant Access Controls]\(授與存取控制) 下的 [要求已加入網域的裝置]。
+20. 如不允許 Intune 已註冊且相容的 Windows 裝置，請從目前的原則中排除 Windows 原則。 然後另外建立原則，將 [裝置平台] 設為 [Windows]，如上述包含其他條件為一個集合，然後選擇 [Grant Access Controls] (授與存取控制) 下的 [要求已加入網域的裝置]。
 
-21. 在 新增 條件式存取原則刀鋒視窗中，開啟 啟用原則 切換，然後按一下建立。
+21. 在 [新增] 條件式存取原則刀鋒視窗中，開啟 [啟用原則] 切換，然後按一下 [建立]。
 
     ![Intune 與 Azure 入口網站之間的啟用條件式存取原則 UI 比較](./media/reassign-ca-11.png)
 
@@ -152,7 +152,7 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
     > [!IMPORTANT] 
     > 您在 Azure 入口網站中所做的選擇，應該會對應至您在 Azure 入口網站中所做的選擇。 例如，如已在 Intune 傳統入口網站中選取所有使用者，請在 Azure 入口網站中選取 [所有使用者]。 此外，如已在 Intune 傳統入口網站中選擇 [豁免群組] 選項，也請在 Azure 入口網站中排除這些選取的群組。
 
-5. 選擇群組之後，按一下 選取，然後按一下完成。
+5. 選擇群組之後，按一下 [選取]，然後按一下 [完成]。
 
 6. 在 [指派] 區段下，選擇 [雲端應用程式]。
 
@@ -171,11 +171,11 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 
 10. 在 [存取控制] 區段下，選擇 [授與]。
 
-11. 在 Grant Access Controls\(授與存取控制)) 下，選擇 裝置需要標記為相容，然後按一下選取。
+11. 在 [Grant Access Controls] (授與存取控制)) 下，選擇 [裝置需要標記為相容]，然後按一下 [選取]。
 
     ![Intune 與 Azure 入口網站之間的授與存取權 UI 比較](./media/reassign-ca-16.png)
 
-12. 在 新增 條件式存取原則刀鋒視窗中，開啟 啟用原則 切換，然後按一下建立。
+12. 在 [新增] 條件式存取原則刀鋒視窗中，開啟 [啟用原則] 切換，然後按一下 [建立]。
 
     ![Intune 與 Azure 入口網站之間的啟用條件式存取原則 UI 比較](./media/reassign-ca-17.png)
 
@@ -194,7 +194,7 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 
 3.  選擇 [條件式存取]，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
 
-4.  取消核取 啟用 Exchange Online 的條件式存取原則 選項，然後按一下儲存。
+4.  取消核取 [啟用 Exchange Online 的條件式存取原則] 選項，然後按一下 [儲存]。
 
     ![停用 Intune 傳統入口網站的條件式存取原則](./media/reassign-ca-18.png)
 

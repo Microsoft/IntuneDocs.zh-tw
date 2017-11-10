@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>一般
-    
+
 -   **診斷資料提交** - 允許或封鎖裝置提交診斷資料給 Apple。
 -   **螢幕擷取** - 允許使用者可擷取螢幕內容做成影像。
     - **Classroom 應用程式的遠端螢幕觀察 (僅限受監督)** - 允許或封鎖 Apple Classroom 應用程式檢視 iOS 裝置螢幕。
@@ -44,6 +44,54 @@ ms.lasthandoff: 10/27/2017
 - **組態設定檔變更** - 允許使用者安裝組態設定檔。
 - **啟用鎖定 (僅限受監督)** - 在受監督的 iOS 裝置上將啟用鎖定啟用。
 
+## <a name="configurations-requiring-supervision"></a>設定需要監督
+
+iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Configurator，在初始裝置安裝期間啟用。 一旦啟用受監督模式，Intune 即可設定裝置的下列功能：
+
+- App Lock (單一應用程式模式) 
+- 全域 HTTP Proxy 
+- 啟用鎖定略過 
+- 自發性單一應用程式模式 
+- 網路內容篩選 
+- 設定背景和鎖定畫面 
+- 無訊息應用程式推送 
+- AlwaysOn VPN 
+- 只允許受管理應用程式安裝 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- 主機配對 
+- 雲端同步 
+- Spotlight 搜尋 
+- 遞交 
+- 清除裝置 
+- 限制 UI 
+- 透過 UI 安裝組態設定檔 
+- 新聞 
+- 鍵盤快速鍵 
+- 密碼修改 
+- 裝置名稱變更 
+- 底色圖案變更 
+- 自動應用程式下載 
+- 企業應用程式信任變更 
+- Apple Music 
+- 郵件放置 
+- 與 Apple Watch 配對 
+
+> [!NOTE]
+> Apple 確認在 2018 年，特定設定將會移至僅受監督。 建議您在使用這些設定時考慮這點，而不是等待 Apple 將它們移轉至僅受監督：
+> - 由使用者安裝應用程式
+> - 應用程式移除
+> - FaceTime
+> - Safari
+> - iTunes
+> - 偏激內容
+> - iCloud 文件和資料
+> - 多人遊戲
+> - 新增 Game Center 朋友
+
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。
     -   **簡單密碼** - 允許簡單密碼，像是0000 和 1234。
@@ -56,7 +104,7 @@ ms.lasthandoff: 10/27/2017
     -   **密碼到期 (天數)** - 指定多少天後必須變更裝置密碼。
     -   **避免重複使用以前用過的密碼** - 指定裝置記憶先前使用過的密碼數目。
     -   **指紋解除鎖定** - 允許使用指紋來解除鎖定相容的裝置。
-- **修改密碼 (僅限受監督)** - 防止變更、新增或移除密碼。 
+- **修改密碼 (僅限受監督)** - 防止變更、新增或移除密碼。
     - **修改指紋 (僅限受監督)** - 防止使用者變更、新增或移除 TouchID 設定。
 
 <sup>1</sup>當您設定 [沒有活動最久幾分鐘後鎖定螢幕] 的設定以及 [在螢幕鎖定最少幾分鐘後必須輸入密碼] 時，它們會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
@@ -89,7 +137,7 @@ ms.lasthandoff: 10/27/2017
 
 ## <a name="built-in-apps"></a>內建應用程式
 
--   **相機** - 指定是否可以使用裝置上的相機。 
+-   **相機** - 指定是否可以使用裝置上的相機。
     -   **FaceTime** -允許在裝置上使用 FaceTime 應用程式。
 -   **Siri** - 允許在裝置上使用 Siri 語音助理。
     -   **在鎖定裝置時使用 Siri** - 允許裝置在鎖定的情況下使用 Siri 語音助理。
@@ -124,9 +172,7 @@ ms.lasthandoff: 10/27/2017
 範例：搜尋 Microsoft Word for iPad。 您要使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
-> 您也可以先使用 iTunes 軟體尋找應用程式，再使用 [複製連結]  命令取得應用程式的 URL。
-
-
+> 您也可以先使用 iTunes 尋找應用程式，再使用**複製連結**命令取得應用程式的 URL。
 
 ### <a name="additional-options"></a>其他選項
 
@@ -247,7 +293,7 @@ ms.lasthandoff: 10/27/2017
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ ms.lasthandoff: 10/27/2017
 在 [Web 網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當文件是從您所指定的網域下載時，它們會被視為受管理的文件。 此設定僅適用於使用 Safari 瀏覽器下載的文件。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari 密碼自動填入網域
+### <a name="safari-password-autofill-domains"></a>Safari 密碼自動填入網域
 
 在 [網域 URL] 欄位中，將一或多個 URL 新增到清單中。 使用者只能儲存此清單中 URL 的密碼。 此設定僅適用於處於受監督模式的 iOS 9.3 及更新版本裝置中的 Safari 瀏覽器。 如果您不指定任何 URL，便可以儲存所有網站的密碼。

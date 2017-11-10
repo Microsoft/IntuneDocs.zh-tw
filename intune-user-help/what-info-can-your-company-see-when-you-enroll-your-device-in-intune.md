@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
-ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
+ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的公司可以看到哪些資訊？
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/18/2017
 
 - 裝置型號，像是 iPhone 7
 - 製造商，像是 Microsoft
-- 作業系統，像是 Android 7.1
+- 作業系統，像是 iOS
 - 應用程式名稱，像是 Microsoft Word
 - 裝置擁有者
 - 裝置名稱
