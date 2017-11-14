@@ -3,10 +3,10 @@ title: "檢視 Intune 裝置清查"
 titlesuffix: Azure portal
 description: "了解如何使用 Intune 檢視您管理的裝置，並了解其硬體和已安裝的應用程式。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 09/05/2017
+author: arob98
+ms.author: angrobe
+nmanager: angrobe
+ms.date: 11/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e74651acf11ff0ea88531460d030e03749520a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 17916d513b338716a62f165545bdf44a3216bbe9
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如何檢視 Intune 裝置清查
 
@@ -39,19 +39,11 @@ ms.lasthandoff: 09/15/2017
 - **管理** - 選擇 [所有裝置] 可檢視您所管理之所有裝置的清單。
     從清單中選取其中一部裝置，以開啟 [<*裝置名稱*>  概觀] 刀鋒視窗，從中選取下列其中一項︰
     - **概觀** - 查看裝置的一般資訊，包括其名稱、擁有者、是否為 BYOD 裝置及簽入的時間等等。
-    ![裝置概觀](./media/device-overview.png)
     - **硬體** - 查看更多裝置相關資訊，包括其可用儲存空間、型號及製造商等等。
-    ![受管理的裝置硬體清查](./media/hardware-inventory.png)
     - **探索到的應用程式** - 顯示 Intune 找到已在裝置上安裝的所有應用程式清單。
-    ![探索到的應用程式節點](./media/detected-applications.png)
-    
-
-
     - **裝置合規性** - 顯示所有已指派給裝置之合規性原則的合規性狀態。
     - **裝置設定** - 顯示所有已指派給裝置之裝置設定原則的合規性狀態。
 - **監視** - 選擇 [裝置動作] 可查看內含已對您管理之裝置執行的裝置動作，以及其目前狀態的清單。
 - **安裝程式** > **TeamViewer 連接器** - 可讓您使用 TeamViewer 軟體在裝置上設定遠端管理。 如需詳細資料，請參閱[對 Intune 管理的 Android 裝置提供遠端協助](/intune/device-profile-android-teamviewer)。
 
->[!NOTE]
-> Intune 只會在公司擁有的裝置上收集應用程式清查。 個人裝置上的應用程式不會受到清查。 若為 Windows 10 電腦，則只會收集公司擁有裝置上的新式應用程式清查。 Intune 不會收集裝置上的 Win32 應用程式相關資訊。
-> 並非所有清查項目都會收集，這取決於您搭配裝置使用的電訊廠商。
+Intune 只會在公司擁有的裝置上收集應用程式清查。 個人裝置上的應用程式不會受到清查。 若為 Windows 10 電腦，則只會收集公司擁有裝置上的新式應用程式清查。 Intune 不會收集裝置上的 Win32 應用程式相關資訊。 並非所有清查項目都會收集，這取決於您搭配裝置使用的電訊廠商。
