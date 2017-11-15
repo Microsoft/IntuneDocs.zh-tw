@@ -95,6 +95,7 @@
 #### [管理授權合約](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [解決原則衝突](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [管理警示](deploy-use/get-notified-by-alerts.md)
+### [Azure 上的 Intune](deploy-use/intune-on-azure.md)
 ## 設定裝置
 ### [透過原則管理裝置上的設定和功能](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 設定](deploy-use/ios-policy-settings-in-microsoft-intune.md)
