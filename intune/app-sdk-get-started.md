@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -113,8 +113,50 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
     * 如果您選擇不要將 SDK 遙測資料從應用程式傳送至 Microsoft Intune，則必須停用遙測傳輸，方法是在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 "YES"。
 
-
 * **適用於 Android 的 Intune App SDK**：不會透過 SDK 記錄遙測資料。
+
+ 顯示 iOS 和 Android 的企業營運應用程式版本號碼<!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>企業營運應用程式版本號碼
+
+Intune 的企業營運應用程式現在會顯示 iOS 和 Android 應用程式的版本號碼。 此號碼會顯示在 Azure 入口網站的應用程式清單及 [應用程式概觀] 刀鋒視窗中。 使用者可以在公司入口網站應用程式及入口網站中看到應用程式號碼。
+
+### <a name="full-version-number"></a>完整的版本號碼
+
+完整的版本號碼可識別特定的應用程式版本。 此號碼會顯示為_版本_(_組建_)。 例如，2.2(2.2.17560800)
+
+完整的版本號碼有兩個部分：
+
+ - **版本**  
+   版本號碼是人類可讀的應用程式版本號碼。 可供使用者識別不同的應用程式版本。
+
+ - **組建編號**  
+    組建編號是內部編號，用於偵測應用程式與以程式設計方式管理應用程式。 組建編號是指參考程式碼變更的應用程式反覆項目。
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Android 和 iOS 中的版本與組建編號
+
+Android 和 iOS 會在應用程式參考中同時使用版本和組建編號。 不過，這兩個作業系統都有作業系統特定的意義。 下表說明這些詞彙的關係。
+
+在開發用於 Intune 的企業營運應用程式時，請記得同時使用版本和組建編號。 Intune 應用程式管理功能仰賴於有意義的 **CFBundleVersion** (適用於 iOS) 和 **PackageVersionCode** (適用於 Android)。 這些數字會包含在應用程式資訊清單中。 
+
+Intune|iOS|Android|說明|
+|---|---|---|---|
+版本號碼|CFBundleShortVersionString|PackageVersionName |這個數字表示使用者的特定應用程式版本。|
+組建編號|CFBundleVersion|PackageVersionCode |這個數字用來表示應用程式程式碼中的反覆項目。|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    指定配套的版本號碼。 此數字可識別應用程式的發行版本。 此數字可供使用者用來參考應用程式。
+ - **CFBundleVersion**  
+    配套的組建版本，可識別配套的反覆項目。 此數字可識別發行或未發行的配套。 此數字用於偵測應用程式。
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    向使用者顯示的版本號碼。 這個屬性可以設定為原始字串或字串資源的參考。 此字串除了顯示給使用者之外，沒有任何其他的用途。
+ - **PackageVersionCode**  
+    內部版本號碼。 此數字只能用來判斷某個版本是否比另一個版本更新，較高的數字表示較新的版本。 這不是版本 
 
 ## <a name="next-steps-after-integration"></a>整合後的後續步驟
 

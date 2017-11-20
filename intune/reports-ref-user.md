@@ -1,5 +1,5 @@
 ---
-title: User | Microsoft Docs
+title: "使用者 - Intune 資料倉儲 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中 [使用者] 類別實體集合的參考主題。"
 keywords: "Intune 資料倉儲"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be8b7041882539c4e379074cffea385f582f686e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8088127f5968c0b4f07f83b1dad02ba90f4e6b9a
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="reference-for-user-entity"></a>User 實體的參考
 

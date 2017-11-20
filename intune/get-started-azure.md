@@ -1,12 +1,12 @@
 ---
 title: "開始使用 Azure 入口網站"
 titlesuffix: Azure portal
-description: "了解如何在 Azure 入口網站的 Intune 中建立和共用儀表板。"
+description: "了解如何在 Azure 入口網站中針對 Intune 建立和共用儀表板。"
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Intune
 
@@ -27,11 +27,11 @@ Azure 入口網站是您可以在其中尋找 Intune 服務的位置。 Azure �
 
 ## <a name="changing-the-sidebar"></a>變更資訊看板
 
-Azure 入口網站左側的「資訊看板」會顯示所有可用 Azure 服務清單。 您可以從其預設檢視修改此完整清單，以保留您最重要服務的持續性檢視。 我們將使用 Intune 作為要新增至清單頂端的服務範例。
+Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清單。 您可以從預設檢視變更此完整清單，以保留您最重要服務的持續性檢視。 我們將使用 Intune 作為要新增至清單頂端的服務範例。
 
-![在 [More services] \(更多服務) 清單中搜尋 Intune 的使用者。](./media/azure-add-intune1.png)
+![在 [More services] (更多服務) 清單中搜尋 Intune 的使用者。](./media/azure-add-intune1.png)
 
-1. 從頁面左側的資訊看板底部，選取 [More services] \(更多服務)。
+1. 從頁面左側的資訊看板底部，選取 [More services] (更多服務)。
 2. 在篩選方塊中，搜尋 **Intune**。
 3. 選取**星狀**，以將 Intune 新增至我的最愛服務清單底部。
 4. 將滑鼠游標放在 Intune 服務上方。 使用服務名稱右側的三個垂直點，以選取並拖曳 Intune。
@@ -52,7 +52,7 @@ Azure 入口網站左側的「資訊看板」會顯示所有可用 Azure 服務�
 
 ## <a name="using-services"></a>使用服務
 
-只要在 Azure 中開啟 Intune 或任何其他服務，它就會出現在「刀鋒視窗」中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
+只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**刀鋒視窗**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,5 +1,5 @@
 ---
-title: "裝置 | Microsoft Docs"
+title: "裝置 - Intune 資料倉儲 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中的實體集合裝置類別的參考主題。"
 keywords: "Intune 資料倉儲"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -139,11 +139,11 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="example"></a>範例
 
-| MdmStatusID  | ComplianceStatus | 描述 |
+| MdmStatusID  | ComplianceStatus | 說明 |
 |---------|------------|--------|
 | 0 |未知 |裝置的合規性狀態不明。 |
-| 1 |符合規範 |裝置符合規範。 |
-| 2 |不符合規範 |裝置符合規範。 |
+| 1 |符合標準 |裝置符合規範。 |
+| 2 |不符合標準 |裝置符合規範。 |
 | 3 |衝突 |裝置的合規性導致衝突。 |
 | 4 |錯誤 |讀取裝置的合規性狀態時發生錯誤。 |
 

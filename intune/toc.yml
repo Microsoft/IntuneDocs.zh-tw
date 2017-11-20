@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment 方案
               href: enrollment-autopilot.md
+            - name: 註冊狀態畫面
+              href: windows-enrollment-status.md
         - name: 設定 Android 註冊
           href: android-enroll.md
         - name: 設定 iOS 註冊
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: 設定 Windows 資訊保護設定
           href: windows-information-protection-configure.md
+        - name: 管理 PowerShell 指令碼
+          href: intune-management-extension.md
         - name: 監視電信費用
           href: telecom-expenses-monitor.md
         - name: 指派設定檔
@@ -556,11 +560,11 @@
     - name: 設定自訂裝置設定
       href: custom-settings-configure.md
       items:
+        - name: 使用預先共用金鑰的 Wi-Fi 設定檔
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: 使用預先共用金鑰的 Wi-Fi 設定檔
-              href: wi-fi-profile-shared-key.md
             - name: 針對應用程式的 VPN 設定檔
               href: android-pulse-secure-per-app-vpn.md
             - name: 允許/封鎖 Samsung KNOX Standard 的應用程式
@@ -604,19 +608,23 @@
         - name: 資料倉儲資料模型
           href: reports-ref-data-model.md
           items:
+            - name: Intune 資料倉儲中的使用者存留期表示法
+              href: reports-ref-user-timeline.md
             - name: 應用程式實體的參考
               href: reports-ref-application.md
+            - name: 目前使用者實體的參考
+              href: reports-ref-current-user.md
             - name: 日期實體的參考
               href: reports-ref-date.md
             - name: 裝置實體的參考
               href: reports-ref-devices.md
-            - name: Intune 管理延伸模組的參考
+            - name: Intune 管理延伸模組實體的參考
               href: reports-ref-intunemanagementextension.md
             - name: 行動應用程式管理 (MAM) 實體的參考
               href: reports-ref-mobile-app-management.md
             - name: 原則實體的參考
               href: reports-ref-policy.md
-            - name: 用戶設備關聯的參考
+            - name: 使用者裝置關聯實體的參考
               href: reports-ref-user-device.md
             - name: User 實體的參考
               href: reports-ref-user.md

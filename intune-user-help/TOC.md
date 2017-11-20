@@ -8,7 +8,7 @@
 
 ## [如何登入公司入口網站](sign-in-to-the-company-portal.md)
 
-## [在 Intune 上使用您的 Android 裝置](using-your-android-device-with-intune.md)
+## [使用您的 Android 裝置](using-your-android-device-with-intune.md)
 ### [註冊 Android 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [註冊裝置](enroll-your-device-in-Intune-android.md)
 #### [使用 Android for Work 來註冊裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [使用 SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [使用 Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [搭配 Intune 使用 iOS 或 macOS 裝置](using-your-iOS-or-macOS-device-with-intune.md)
+## [使用您的 iOS 裝置](using-your-iOS-device-with-intune.md)
 ### [註冊 iOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [安裝並登入公司入口網站](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
-### [註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)
-### [使用公司入口網站來註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
-### [此裝置稍有不同](device-little-different-jamf.md)
 
 ### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 ### [設定或變更密碼](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [使用 SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [使用 Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [使用您的 macOS 裝置](using-your-macos-device-with-intune.md)
+### [註冊 macOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
+### [註冊您的舊版 macOS 裝置](enroll-your-device-in-intune-macos-legacy.md)
+### [此裝置稍有不同](device-little-different-jamf.md)
 
 ## [使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
 ### [註冊 Windows 10 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [我的裝置需要反惡意程式碼軟體](your-device-needs-antimalware-software.md)
 #### [啟用安全開機](you-need-to-enable-secure-boot-windows.md)
 #### [啟用程式碼完整性](you-need-to-enable-code-integrity.md)
-
+#### [我需要啟用防火牆](you-need-to-enable-defender-firewall-windows.md)
+#### [我需要啟用 UAC](you-need-to-enable-uac-windows.md)
+#### [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
+#### [我需要開啟 Windows Defender](turn-on-defender-windows.md) 
 
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)

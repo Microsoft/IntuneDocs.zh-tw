@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="data-warehouse-data-model"></a>資料倉儲資料模型
 
@@ -38,14 +38,10 @@ Intune 資料倉儲結構會使用星型結構描述模型。 星型結構描述
 
 實體集是資料模型中的具名實體集合。 這些集合包含可定義模型中所收集資料的實體。 每個實體集都會提供資料倉儲資料模型的存取點。 您可以找到下列實體類別的詳細資料：
 
-  -  [日期](reports-ref-date.md)
-  -  [User](reports-ref-user.md)
-  -  [行動應用程式管理 (MAM)](reports-ref-mobile-app-management.md)
-  -  [裝置](reports-ref-devices.md)
   -  [應用程式](reports-ref-application.md)
+  -  [日期](reports-ref-date.md)
+  -  [裝置](reports-ref-devices.md)
   -  [原則](reports-ref-policy.md)
-  -  [使用者裝置關聯](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [行動應用程式管理 (MAM)](reports-ref-mobile-app-management.md)
+  -  [User](reports-ref-user.md)
+  -  [使用者裝置關聯](reports-ref-user-device.md)
