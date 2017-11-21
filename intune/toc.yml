@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager Web 服務
+              href: certificates-symantec-configure.md
         - name: 設定 Windows 資訊保護設定
           href: windows-information-protection-configure.md
         - name: 管理 PowerShell 指令碼
@@ -425,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS 設定
                   href: app-protection-policy-settings-ios.md
+                - name: 在 Managed Browser 中檢閱應用程式保護記錄
+                  href: app-protection-policy-settings-log.md
             - name: 驗證應用程式保護原則
               href: app-protection-policies-validate.md
             - name: 監視應用程式保護使用者狀態
