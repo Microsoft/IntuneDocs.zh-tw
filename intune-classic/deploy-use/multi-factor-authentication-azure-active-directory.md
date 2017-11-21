@@ -2,8 +2,8 @@
 title: "Intune 裝置註冊的多重要素驗證"
 description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angerobe
 ms.date: 02/17/2017
 ms.topic: article
@@ -11,13 +11,13 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d8a13033486256da171847646bd95fe77c978c8
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune 裝置的註冊的多重要素驗證 | Microsoft Docs
 
@@ -41,7 +41,7 @@ iOS、Android、Windows 8.1 或更新版本，或 Windows Phone 8.1 或更新的
 
 1. 使用您的系統管理員認證登入您的 [Microsoft Azure 入口網站](https://manage.windowsazure.com)。
 2. 選擇您的租用戶。
-2. 選擇 [應用程式] 索引標籤。 您將會看到一份服務清單，您可以在其中設定 Azure AD 安全性功能。
+2. 選擇 [應用程式] 索引標籤。您將會看到一份服務清單，您可以在其中設定 Azure AD 安全性功能。
 3. 選擇 [Microsoft Intune 註冊]。
 4. 選擇 **[設定]**。 
 5. 在 [多重要素驗證與以位置為準的存取規則] 底下，您可以：
