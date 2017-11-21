@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -159,7 +159,24 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 11. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
 
+## <a name="using-the-intune-mam-configurator-tool"></a>使用 Intune MAM 設定程式工具 (Intune MAM Configurator Tool)
 
+Intune MAM 設定程式工具 (Intune MAM Configurator Tool) 現在能夠處理手動整合 SDK 時，所需的所有 info.plist 操作。 您可以在適用於 iOS 的 Intune App SDK 存放庫中找到此工具。 此工具不會處理 multi-ID、AAD 設定等任何其他應用程式特定設定。 此工具有 3 個參數：
+ 
+|屬性|用法|
+|---------------|--------------------------------|
+|- i |  `<Path to the input plist>` |
+|- e | 權利檔案 |
+|- o |  (選擇性) `<Path for the changed input plist>` |
+    
+Intune MAM 設定程式工具 (Intune MAM Configurator Tool) 可用於更新：
+* 任何您應用程式的主要腳本及 (或) 主要 nib 檔到 IntuneMAMSettings 中。
+* 任何您應用程式在其具有 -intunemam 尾碼的 Info.plist 檔案中，定義的每個 URL 配置。
+* 任何您應用程式在其 Info.plist 檔案中定義的「文件」類型，針對每個項目的「文件內容類型 UTI」陣列，為每個具有 "com.microsoft.intune.mam" 的字串新增重複項目。 前置詞的字串新增重複項。
+* 任何您應用程式在其權利中定義的應用程式群組，將這些群組以字串陣列的形式新增到 AppGroupIdentifiers 索引鍵下的 IntuneMAMSettings 字典中。
+
+    
+>[!NOTE] 若您決定使用此工具來取代 info.plist 操作，建議每當應用程式的 info.plist 或權利變更時重新執行。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>設定 Azure Active Directory Authentication Library (ADAL)
 

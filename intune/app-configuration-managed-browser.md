@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -68,7 +68,7 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 3.  在 [管理] 清單的 [Mobile Apps] 刀鋒視窗中，選擇 [應用程式設定原則]。
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
 5.  在 [新增應用程式設定] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
-6.  針對 [裝置註冊] 類型，選擇 [受管理的裝置] 或 [受管理的應用程式]。
+6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
 7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]。
 8.  選擇 [確定] 返回 [新增應用程式設定] 刀鋒視窗。
 9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
@@ -202,6 +202,22 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用受管理的瀏覽器存取受管理應用程式的記錄檔
+
+在其 iOS 裝置上安裝了受管理瀏覽器的使用者，可以檢視所有 Microsoft 所發行應用程式的管理狀態。 他們可以傳送記錄檔用於疑難排解其受管理的 iOS 應用程式。
+
+1. 開啟 iOS [設定]。
+2. 選取受管理的**瀏覽器**應用程式設定。
+3. 切換 [啟用 Intune 診斷] 在疑難排解模式中設定瀏覽器。
+4. 開啟受管理的**瀏覽器**。 按一下 [檢視 Intune 應用程式狀態] 查看個別的應用程式原則設定。
+5. 按 [開始使用] 和 [共用記錄] 或 [將記錄傳送給 Microsoft]，將疑難排解記錄檔傳送給您的 IT 系統管理員或 Microsoft。
+
+您也可以從應用程式內，在疑難排解模式中開啟瀏覽器。
+
+1. 開啟受管理的瀏覽器。
+2. 網址方塊中的類型 `about:intunehelp`。
+瀏覽器啟動疑難排解模式。
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全性與隱私權
 

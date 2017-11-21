@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 方案註冊 Windows 裝置
 Windows AutoPilot Deployment 方案可簡化裝置佈建。 現在，需要許多時間來建置和維護自訂的作業系統映像。 您也可能會花很多時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 AutoPilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 AutoPilot 裝置時，可以在它們註冊之後管理裝置上的原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) (Windows AutoPilot 概觀)。
@@ -57,6 +57,13 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 > - 略過 Cortana、OneDrive 和 OEM 登錄設定頁面
 > - 針對工作或學校自動設定
 > - 公司或學校品牌的登入體驗    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot 未指派裝置的警示 <!-- 163236 -->
+您可以檢視 Windows AutoPilot 未指派裝置的警示，查看有多少來自 AutoPilot 程式的裝置未指派 AutoPilot 部署設定檔。 您可以使用警示中的資訊來建立設定檔，並加以指派至未指派的裝置。 當您按一下警示時，會看到 Windows AutoPilot 裝置的完整清單，以及這些裝置的詳細資訊。 
+1. 登入 [Azure](https://portal.azure.com/)。 
+2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置註冊]。
+4. 選擇 [概觀] 查看警示。 按一下警示查看 AutoPilot 裝置的清單。  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>指派 AutoPilot 部署設定檔
 建立 AutoPilot 部署設定檔之後，可以將它們指派給選取的裝置。

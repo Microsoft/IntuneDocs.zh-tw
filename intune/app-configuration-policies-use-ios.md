@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受管理的 iOS 裝置新增應用程式設定原則
 
@@ -40,21 +40,21 @@ ms.lasthandoff: 11/01/2017
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
 3. 選擇 [Mobile Apps] 工作負載。
-4. 按一下 [管理] 群組中的 [應用程式設定原則]，然後按一下 [新增]。
+4. 選擇 [管理] 群組中的 [應用程式設定原則]，然後選擇 [新增]。
 5. 使用下列詳細資料：
-    - **名稱**  
+    - **名稱**<br>
       將在 Azure 入口網站中顯示的設定檔名稱。
-    - **說明**  
+    - **描述**<br>
       將在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型**  
+    - **裝置註冊類型**<br>
       選擇 [受管理裝置]。
 6. 為 [平台] 選取 [iOS]。
-7.  選擇 [相關聯的應用程式]，然後在 [相關聯的應用程式] 刀鋒視窗中，選擇要套用設定之受管理的應用程式。
-8.  在 [新增設定原則] 刀鋒視窗上，選擇 [組態設定]
-9. 選取 [組態設定格式]。 選取一項：
+7.  選擇 [相關聯的應用程式]。 然後在 [相關聯的應用程式] 刀鋒視窗中，選擇要套用設定的受管理應用程式。
+8.  在 [新增設定原則] 刀鋒視窗上，選擇 [組態設定]。
+9. 選取 [組態設定格式]。 選取下列其中一項：
     - **[使用設定設計工具](#Use-the-configuration-designer)**
     - **[輸入 XML 資料](#enter-xml-data)**
-10. 按一下 [確定] ，然後按一下 [新增]。
+10. 選擇 [確定]，然後選擇 [新增]。
 
 ## <a name="use-configuration-designer"></a>使用設定設計工具
 
@@ -62,12 +62,18 @@ ms.lasthandoff: 11/01/2017
 
 ### <a name="add-a-setting"></a>新增設定
 
-1. 對於設定中的每個金鑰和值，請設定： <ul><li>**設定金鑰**<br>這可用來唯一識別特定的設定組態。</li><li>**值類型**<br>設定值的資料類型。 類型包括整數、實數、字串或布林值。</li><li>**設定值**<br>設定的值。</li></ul>
-2. 按一下 [確定] 來設定您的組態設定。
+1. 對於設定中的每個金鑰和值，請設定：
+   - **設定金鑰**<br>
+     唯一識別特定設定組態的金鑰。
+   - **實值型別**<br>
+     設定值的資料類型。 類型包括整數、實數、字串或布林值。
+   - **設定值**<br>
+     設定的值。
+2. 選擇 [確定] 來設定您的組態設定。
 
 ### <a name="delete-a-setting"></a>刪除設定
 
-1. 按一下設定旁邊的省略符號 (...)。
+1. 選擇設定旁邊的省略符號 (**...**)。
 2. 選取 [刪除]。
 
 \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。
@@ -76,13 +82,12 @@ ms.lasthandoff: 11/01/2017
 
 您可以輸入或貼上 XML 屬性清單，其中包含 Intune 中所註冊裝置的應用程式組態設定。 XML 屬性清單的格式會依您所設定的應用程式而有所不同。 如需所要使用之確切格式的詳細資訊，請連絡應用程式供應商。
 
-Intune 會驗證 XML 格式。 但 Intune 不會檢查 XML 屬性清單是否適用於目標應用程式。
-若要深入了解 XML 屬性清單，請參閱 [Understanding XML Property Lists] (了解 XML 屬性清單)
+Intune 會驗證 XML 格式。 但 Intune 不會檢查 XML 屬性清單 (PList) 是否適用於目標應用程式。
 
 若要深入了解 XML 屬性清單：
 
   -  閱讀[在 Microsoft Intune 中使用行動應用程式設定原則設定 iOS 應用程式](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
-  -  請參閱 iOS Developer Library 中的 [Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (了解 XML Plist)。
+  -  請參閱 iOS 開發人員程式庫的 [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (了解 XML 屬性 Plist)。
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>應用程式設定 XML 檔案的範例格式
 
@@ -126,15 +131,15 @@ Intune 支援屬性清單中的下列資料類型：
 ### <a name="tokens-used-in-the-property-list"></a>屬性清單中使用的權杖
 
 此外，Intune 支援屬性清單中的下列權杖類型︰
-- \{\{userprincipalname\}\} - (範例：**John@contoso.com**)
-- \{\{mail\}\} - (範例：**John@contoso.com**)
-- \{\{partialupn\}\} - (範例：**John**)
-- \{\{accountid\}\} - (範例：**fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (範例：**b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (範例：**3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (範例：**John Doe**)
-- \{\{serialnumber\}\} - 適用於 iOS 裝置 (範例：**F4KN99ZUG5V2**)
-- \{\{serialnumberlast4digits\}\} - 適用於 iOS 裝置 (範例：**G5V2**)
+- \{\{userprincipalname\}\}—例如，**John@contoso.com**
+- \{\{mail\}\}—例如，**John@contoso.com**
+- \{\{partialupn\}\}—例如，**John**
+- \{\{accountid\}\}—例如，**fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}—例如，**b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}—例如，**3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}—例如，**John Doe**
+- \{\{serialnumber\}\}—例如，**F4KN99ZUG5V2** (適用於 iOS 裝置)
+- \{\{serialnumberlast4digits\}\}—例如，**G5V2** (適用於 iOS 裝置)
 
 ## <a name="next-steps"></a>後續步驟
 

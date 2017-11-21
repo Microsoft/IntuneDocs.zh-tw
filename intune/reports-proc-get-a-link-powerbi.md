@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
@@ -53,9 +53,9 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
 2.  開啟 [Microsoft Intune 資料倉儲 API (預覽)] 刀鋒視窗。
-3.  按一下 [Download PowerBI file] (下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
+3.  選取 [Download PowerBI file] (下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
 4.  使用 Power BI 開啟檔案。 「Intune 資料倉儲報表」 即會載入，但可能需要一秒才能取得租用戶資料。
-5.  按一下 [重新整理] 載入您的租用戶資料以及檢閱報表。
+5.  選取 [重新整理] 載入您的租用戶資料以及檢閱報表。
 6.  如果尚未使用 Azure Active Directory 認證來驗證 Power BI，Power BI 會提示您提供認證。 選取您的認證時，請選擇 [組織帳戶] 作為驗證方法。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>使用 OData 連結在 Power BI 中載入資料
@@ -69,13 +69,13 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 5. 選擇 [首頁] > [取得資料]。 選取 [OData 摘要]。
 6. 選擇 [基本]。
 7. 將 [OData URL] 鍵入或貼入 URL 方塊。
-8. 按一下 [ **確定**]。
+8. 選取 [確定]。
 9. 如果尚未從 Power BI Desktop 用戶端向租用戶的 Azure AD 驗證您，請鍵入您的認證。 若要存取您的資料，您必須使用 OAuth 2.0 向 Azure Active Directory (Azure AD) 進行授權。  
     1.  選取 [組織帳戶]。  
     2.  鍵入您的使用者名稱和密碼。  
-    3.  按一下 [登入]。  
-    4.  按一下 **[Connect]**(連線)。  
-10. 按一下 [載入]。
+    3.  選取 [登入]。  
+    4.  選取 [連線]。  
+10. 選取 [載入]。
 
 ## <a name="next-steps"></a>後續步驟
 
