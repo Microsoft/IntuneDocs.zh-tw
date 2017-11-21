@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>對 Intune 管理的裝置提供遠端協助
 
@@ -29,13 +29,10 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 
 ### <a name="supported-devices"></a>支援的裝置
 
-下列的 Intune 管理裝置支援遠端管理：
-
-- Intune 管理的 Android 裝置
-- Intune 管理的 Windows 裝置，並執行 Windows 10、Windows 10 Mobile 及更新版本。
+Intune 管理的 Android 和 Windows 裝置支援遠端管理。
 
 >[!NOTE]
->TeamViewer 軟體不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 和 Windows 10 S
+>TeamViewer 軟體不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 和 Windows 10 S。 
 
 
 

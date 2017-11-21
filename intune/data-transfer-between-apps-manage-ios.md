@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 應用程式之間的資料傳輸
 ## <a name="manage-ios-apps"></a>管理 iOS 應用程式
@@ -30,6 +30,7 @@ ms.lasthandoff: 09/09/2017
 -   您也可以透過 **MDM 通道**來部署和管理應用程式。  這需要在 MDM 方案中註冊裝置。 這些可以是 **受原則管理的** 應用程式或其他受管理的應用程式。
 
 iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**部署的應用程式之間的檔案傳輸。 「開啟位置管理」限制是在組態設定中設定，並使用 MDM 軟體部署。  當使用者安裝部署的應用程式時，就會套用您設定的限制。
+
 ##  <a name="using-app-protection-with-ios-apps"></a>對 iOS 應用程式施以應用程式保護
 應用程式保護原則與 iOS 的**打開方式管理**功能一起使用，可以下列方式保護公司資料︰
 
@@ -40,30 +41,25 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 -   **第三方 MDM 解決方案管理的裝置：**您可以使用 iOS 的**開啟位置管理**功能，將資料傳輸在限制僅限受管理的應用程式。
 若要確定您使用第三方 MDM 解決方案部署的應用程式也關聯了您在 Intune 中設定的應用程式保護原則，您必須依照[設定使用者 UPN 設定](#configure-user-upn-setting-for-third-party-emm)逐步解說所述，設定使用者 UPN 設定。  應用程式若是透過使用者 UPN 設定部署，便會在使用者使用其工作帳戶登入時，將應用程式保護原則套用到應用程式。
 
-> [!IMPORTANT]
-> 只有部署到協力廠商 MDM 所管理裝置的應用程式，才需要使用者 UPN 設定。  Intune 受管理裝置則不需要此設定。
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>設定協力廠商 EMM 的使用者 UPN 設定
-協力廠商 EMM 解決方案所管理的裝置**需要**設定使用者 UPN 設定。 下面程序描述設定 UPN 設定之方式和所產生使用者體驗的一般流程︰
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>設定 Microsoft Intune 或協力廠商 EMM 的使用者 UPN 設定
+Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用者 UPN 設定。 下面程序描述設定 UPN 設定之方式和所產生使用者體驗的一般流程︰
 
 1.  在 [Azure 入口網站](https://portal.azure.com)中，針對 iOS [建立和指派應用程式保護原則](app-protection-policies.md)。 根據公司需求設定原則設定，然後選取應該具有此原則的 iOS 應用程式。
 
-2.  使用下面的一般化步驟，**透過協力廠商 MDM 解決方案**來部署應用程式和您要受管理的電子郵件設定檔。 範例 1 也涵蓋這個體驗。
+2.  使用下面的一般化步驟，透過 Intune 或協力廠商 MDM 解決方案來部署應用程式和所要受管理的電子郵件設定檔。 範例 1 也涵蓋這個體驗。
 
-  1.  使用下列應用程式組態設定來部署應用程式：
+3.  使用下列應用程式組態設定來部署應用程式：
 
       **金鑰** = IntuneMAMUPN，**值** = <username@company.com>
 
       範例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  使用協力廠商 MDM 提供者，將「開啟位置管理」原則部署到已註冊的裝置。
+4.  使用 Intune 或協力廠商 MDM 提供者，將**開啟位置管理**原則部署到已註冊的裝置。
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>範例 1︰協力廠商 MDM 主控台中的管理體驗
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>範例 1︰Intune 或協力廠商 MDM 主控台中的管理體驗
 
-1. 移至協力廠商 MDM 提供者的管理主控台。 移至主控台區段，您可以在其中將應用程式組態設定部署到已註冊的 iOS 裝置。
+1. 移至 Intune 或協力廠商 MDM 提供者的管理主控台。 移至主控台區段，您可以在其中將應用程式組態設定部署到已註冊的 iOS 裝置。
 
 2. 在 [應用程式設定] 區段中，輸入下列設定：
 
@@ -73,6 +69,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | 字串 | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | 字串 | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
 

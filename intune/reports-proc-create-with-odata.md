@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
@@ -60,16 +60,16 @@ ms.lasthandoff: 10/20/2017
 
     ![OData 摘要](media/reports-create-01-odatafeed.png)
 
-9. 按一下 [ **確定**]。
+9. 選取 [確定]。
 10. 選取 [組織帳戶]，然後使用您的 Intune 認證登入。 
 
     ![組織帳戶認證](media/reports-create-02-org-account.png)
 
-11. 按一下 **[Connect]**(連線)。 導覽器會開啟並顯示 Intune 資料倉儲中的資料表清單。 
+11. 選取 [連線]。 導覽器會開啟並顯示 Intune 資料倉儲中的資料表清單。 
 
     ![導覽器](media/reports-create-02-loadentities.png)
 
-12. 選取 **devices** 和 **ownerTypes** 資料表。  按一下 [載入]。 Power BI 將資料載入至模型。
+12. 選取 **devices** 和 **ownerTypes** 資料表。  選取 [載入]。 Power BI 將資料載入至模型。
 
 ## <a name="create-a-relationship"></a>建立關聯性 
 
@@ -77,8 +77,8 @@ ms.lasthandoff: 10/20/2017
 
 ![管理關聯性](media/reports-create-03-managerelationships.png)
 
-1. 按一下 [管理關聯性]。
-2. 如果 PowerBI 尚未偵測到關聯性，請按一下 [自動偵測]。  
+1. 選取 [管理關聯性]。
+2. 如果 PowerBI 尚未偵測到關聯性，請選取 [自動偵測...]。  
 關聯性顯示為「從」資料行到「至」資料行。 在此範例中，**devices** 資料表中的資料欄位 **ownerTypeKey**，連結至 **ownerTypes** 資料表中的資料欄位 **ownerTypeKey**。 您可以使用關聯性來查閱 **devices** 資料表中裝置類型代碼的一般名稱。
 
 ## <a name="create-a-treemap-visualization"></a>建立矩形式樹狀結構圖視覺效果
@@ -100,7 +100,7 @@ ms.lasthandoff: 10/20/2017
 
 您可以將篩選新增到矩形式樹狀結構圖，以便可以使用您的應用程式回答其他問題。 
 
-1. 按一下報表畫布，然後按一下 [視覺效果] 下的交叉分析篩選器圖示 (![具有資料的矩形式樹狀結構圖](media/reports-create-slicer.png))，新增篩選。
+1. 選取報表畫布，然後選取 [視覺效果] 下的**交叉分析篩選器圖示** (![具有資料的矩形式樹狀結構圖](media/reports-create-slicer.png))，新增篩選。
 2. 尋找 **ownerTypes** 資料表，並拖曳 [視覺效果] 面板的 [篩選] 區段下的 **ownerTypeName** 資料欄位。  
    在 devices 資料表下，有一個稱為 **OwnerTypeKey** 的資料欄位，它包含裝置是公司擁有還是個人擁有的代碼。 因為您想要在此篩選中顯示易記名稱，所以請尋找 **ownerTypes** 資料表，並拖曳 **ownerTypeName**。 這是資料模型支援資料表之間關聯性的範例方式。
 
@@ -108,8 +108,8 @@ ms.lasthandoff: 10/20/2017
 
 您現在已有互動式篩選，可用來切換公司所擁有的裝置和個人擁有的裝置，查看分佈的變化情形。
 
-1. 按一下 [公司] 查看公司所擁有的裝置分佈。
-2. 按一下 [個人] 查看個人擁有的裝置。
+1. 選取 [公司] 查看公司所擁有的裝置分佈。
+2. 選取 [個人] 查看個人擁有的裝置。
 
 ## <a name="next-steps"></a>後續步驟
 

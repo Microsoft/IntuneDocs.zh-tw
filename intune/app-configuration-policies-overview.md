@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 的應用程式設定原則
 
 使用 Microsoft Intune 中的應用程式設定原則，提供使用者執行 iOS 或 Android 應用程式時的設定。 例如，應用程式可能需要使用者指定：
 
-- 自訂連接埠號碼
-- 語言設定
-- 安全性設定
-- 公司標誌等品牌設定
+- 自訂連接埠號碼。
+- 語言設定。
+- 安全性設定。
+- 公司標誌等品牌設定。
 
 若使用者未正確輸入這些設定，可能會增加技術支援中心的負擔，使得採用新應用程式的速度變慢。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/01/2017
 
 對於如何使用 Intune 的應用程式設定，您有兩個選項：
  - **受管理的裝置**  
-   裝置由 Intune 作為 MDM 提供者進行管理。
+   Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
  - **受管理的應用程式**  
    在不註冊裝置的情況下管理應用程式。
 

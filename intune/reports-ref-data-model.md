@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>資料倉儲資料模型
 
@@ -41,6 +41,7 @@ Intune 資料倉儲結構會使用星型結構描述模型。 星型結構描述
   -  [應用程式](reports-ref-application.md)
   -  [日期](reports-ref-date.md)
   -  [裝置](reports-ref-devices.md)
+  -  [Intune 管理延伸模組](reports-ref-intunemanagementextension.md)
   -  [原則](reports-ref-policy.md)
   -  [行動應用程式管理 (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)

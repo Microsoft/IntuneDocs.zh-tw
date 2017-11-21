@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **手動取消註冊** - 讓使用者可從裝置手動刪除工作場所帳戶。
 -   **手動安裝根憑證 (僅限行動裝置)** - 阻止使用者手動安裝根憑證及中繼 CAP 憑證。
 -   **診斷資料提交** - 可能的值為︰
-    -       **無** 不傳送任何資料到 Microsoft
-    -       **基本** 傳送有限的資訊到 Microsoft
-    -       **增強** 傳送增強的診斷資料到 Microsoft
-    -       **完整** 傳送和增強相同的資料，再加上裝置狀態的其他相關資料
+    - **無** - 不傳送任何資料到 Microsoft
+    - **基本** - 將有限資訊傳送給 Microsoft
+    - **增強** - 傳送增強的診斷資料到 Microsoft
+    - **完整** 傳送和增強相同的資料，再加上裝置狀態的其他相關資料
 -   **相機** - 允許或封鎖在裝置上使用相機。
 -   **OneDrive 檔案同步** - 封鎖裝置將檔案同步處理至 OneDrive。
 -   **抽取式存放裝置** - 指定是否可以與裝置搭配使用 SD 卡等外部存放裝置。
@@ -105,6 +105,7 @@ ms.lasthandoff: 10/19/2017
 
 
 ## <a name="edge-browser"></a>Microsoft Edge 瀏覽器
+
 -   **Microsoft Edge 瀏覽器 (僅限行動裝置)** - 允許在裝置上使用 Edge 網頁瀏覽器。
 -   **網址列下拉 (僅限桌面版)** – 使用此選項可阻止 Edge 在您輸入時，於下拉式清單中顯示建議清單。 這有助於將 Edge 與 Microsoft 服務之間的網路頻寬用量降到最低。
 -   **在 Microsoft 瀏覽器之間同步我的最愛 (僅限桌面版)** – 可讓 Windows 同步處理 Internet Explorer 與 Edge 之間的我的最愛。
@@ -180,6 +181,44 @@ ms.lasthandoff: 10/19/2017
     -   **輕鬆存取** - 封鎖對 [設定] 應用程式 [輕鬆存取] 區域的存取。
     -   **隱私權** - 封鎖對 [設定] 應用程式 [隱私權] 區域的存取。
     -   **更新與安全性** - 封鎖對設定應用程式之更新與安全性區域的存取。
+
+## <a name="kiosk"></a>Kiosk
+
+-   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)類型。  這些選項包括：
+
+      - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
+      - **單一應用程式 kiosk** - 啟用裝置為單一應用程式 kiosk 的設定檔。
+      - **多個應用程式 kiosk** - 啟用裝置為多個應用程式 kiosk 的設定檔。
+
+    單一應用程式 kiosk 需要下列設定：
+
+      - **使用者帳戶** - 指定與 kiosk 應用程式建立關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。  若為加入 Azure AD 網域的帳戶，請以 `domain\\username@tenant.org` 的格式指定帳戶。
+
+         若裝置在公用環境，請使用權限最低的使用者帳戶以防止授權的活動。  
+
+      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。  若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
+
+    多個應用程式的 kiosk 需要 kiosk 設定。  使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
+
+    多個應用程式的 kiosk 設定包括下列設定：
+
+    - **kiosk 設定名稱** - 用來識別指定設定的易記名稱。
+
+    - 一或多個 **kiosk 應用程式**由下列項目組成：
+
+        - 指定 kiosk 應用程式類型的**應用程式類型**。  支援的值包括：   
+
+            - **Win32 應用程式** - 傳統型應用程式。  (在裝置方面，您必須具有可執行檔的完整路徑名稱)。
+
+            - **UWP App** - 通用 Windows app。  您需要[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+
+        - **應用程式識別碼** - 指定可執行檔的完整路徑名稱 (Win32 應用程式) 或[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
+
+    - **工作列**指出工作列在 kiosk 上要顯示 (**已啟用**) 或隱藏 (**未設定**)。
+
+    - **開始 功能表配置** - 指定描述應用程式[在 [開始] 功能表上如何顯示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)的 XML 檔案。
+
+    - **指派的使用者** - 指定一或多個與 kiosk 設定建立關聯的使用者帳戶。  帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。  以 `domain\\username@tenant.org` 的格式指定加入網域的帳戶。
 
 ## <a name="defender"></a>Defender
 

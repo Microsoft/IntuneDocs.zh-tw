@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
@@ -28,7 +28,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 當您註冊裝置交由 Intune 管理之後，您的 IT 部門就能管理這些工作或學校的資源，從而保護裝置的安全，並讓您、其員工可以使用其慣用的裝置完成工作。 透過公司入口網站註冊裝置交由管理是完成此作業最主要的方式。
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>當我在 Intune 中註冊裝置時，我的公司可以看到哪些資訊？
-貴公司的 IT 部門可以看到與工作相關，但不與您的個人資訊相關的資訊。 如果您要註冊在公司使用個人裝置時，知道這點特別重要。 我們[在使用者說明的下一篇文章細分他們可以看到及不能看到的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+貴公司的支援部門可以看到與工作相關，但不與您的個人資訊相關的資訊。 如果您要註冊在公司使用個人裝置時，知道這點特別重要。 我們[在使用者說明的下一篇文章細分他們可以看到及不能看到的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 ## <a name="how-do-i-get-the-company-portal"></a>如何取得公司入口網站？
 您可以使用兩種不同的方式來取得公司入口網站︰
@@ -49,7 +49,8 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 若要查看您可以在裝置上使用公司入口網站所能執行的工作與使用公司入口網站應用程式所能執行的工作，請選擇下列其中一個連結：
 
 - [使用您的 Android 裝置](using-your-android-device-with-intune.md)
-- [使用您的 iOS 或 macOS 裝置](using-your-ios-or-macOS-device-with-intune.md)
+- [使用您的 iOS 裝置](using-your-ios-device-with-intune.md)
+- [使用您的 macOS 裝置](using-your-macos-device-with-intune.md)
 - [使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
 - [使用公司入口網站](using-the-intune-company-portal-website.md)
 

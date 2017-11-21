@@ -3,10 +3,10 @@ title: "使用預先共用金鑰建立 Wi-Fi 設定檔"
 titleSuffix: Azure portal
 description: "使用 Intune 自訂設定檔建立附有預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 以下是如何使用 Intune 的**自訂裝置設定檔**建立附有預先共用金鑰的 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
@@ -205,3 +205,12 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
     最好使用未連線至許多無線網路的電腦，因為您必須搜尋每個設定檔才能找到正確檔案。
 3.     搜尋 XML 檔案，找出名稱正確的檔案。
 4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
+
+## <a name="best-practices"></a>最佳作法
+以 PSK 部署 Wi-Fi 設定檔之前，請確認裝置可以直接連接至端點。
+
+當輪替金鑰 (密碼或複雜密碼) 時，預期據此部署停機時間和規劃。 請考慮在非工作時間推送新的 Wi-Fi 設定檔。 此外，警告使用者連線可能會受到影響。
+ 
+為確保平順地轉換體驗，並傳遞即時原則更新，裝置必須至少與 Intune 保持一個開啟的通訊通道。 若要這樣做，請使用行動連線或提供客體 Wi-Fi 存取，只將使用者連接到 Intune 的端點。
+
+

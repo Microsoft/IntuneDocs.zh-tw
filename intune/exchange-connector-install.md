@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange Connector
 
@@ -134,13 +134,18 @@ ms.lasthandoff: 11/01/2017
 > [!NOTE]
 > 如果您已安裝 On-Premises Exchange Connector，而且在某個階段刪除 Exchange 連線，您必須從已安裝 On-Premises Exchange Connector 的電腦解除安裝該軟體。
 
-## <a name="validate-the-exchange-connection"></a>驗證 Exchange 連線
+## <a name="monitor-the-exchange-connector-activity"></a>監視 Exchange Connector 活動
 
 順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 驗證 Exchange Connector 連線：
 
-- 在 Intune 儀表板中，選擇 [內部部署存取]。 在 [管理] 下，選取 [Exchange 內部部署存取] 來驗證連線狀態。
+1. 在 Intune 儀表板中，選擇 [內部部署存取]。
+2. 在 [管理] 下，選取 [Exchange 內部部署存取] 來驗證連線狀態。
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) 管理組件
+
+從 Intune 1710 版開始，您可以使用[適用於 Exchange connector 和 Intune 的 SCOM 管理組件](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)。 這可在您需要針對問題進行疑難排解時，為您提供不同方式來監視 Exchange Connector。
 
 ## <a name="next-steps"></a>後續步驟
 [建立 Exchange 內部部署的條件存取原則](conditional-access-exchange-create.md)

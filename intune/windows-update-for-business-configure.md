@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-「Windows 即服務」是更新 Windows 10 裝置的方式。 使用 Windows 10，新的「功能更新」和「品質更新」會包含所有先前更新的內容。 這表示只要您安裝了最新的更新，就能確定您的 Windows 10 裝置已完全更新至最新版。 不同於舊版 Windows，您現在必須安裝整個更新而不是部分更新。
+「Windows 即服務」是更新 Windows 10 裝置的方式。 使用 Windows 10，新的「功能更新」和「品質更新」會包含所有先前更新的內容。 這表示只要您安裝了最新的更新，就能確定您的 Windows 10 裝置已更新至最新版。 不同於舊版 Windows，您現在必須安裝整個更新而不是部分更新。
 
 使用商務用 Windows Update，可以簡化更新管理體驗，因此您不需要核准裝置群組的個別更新。 只要設定更新首度發行策略，您還是可以管理環境中的風險，Windows Update 會確保在適當的時間安裝更新。 Microsoft Intune 可讓您在裝置上設定更新設定，並可讓您延後更新的安裝。 Intune 不會儲存更新，只會儲存更新原則指派。 裝置會直接存取 Windows Update 以取得更新。 使用 Intune 來設定及管理 **Windows 10 更新通道**。 更新響鈴是一組包含何時及如何安裝 Windows 10 更新的設定。 例如，您可以進行下列設定：
 
-- **Windows 10 服務分支**︰選擇要讓裝置群組從最新分支或最新商務分支接收更新。  
+- **Windows 10 維護通道**：選擇您希望裝置的群組要從半年通道 (已設定目標) 或半年通道收到更新。  
 - **延遲設定**︰設定更新延遲設定，以延遲裝置群組的更新安裝。 使用這些設定讓您能推展階段性的更新，以便全程檢查過程進度。
 - **暫停**︰如果您在更新首度發行期間發現問題，延後更新的安裝。
 - **維護期間**︰設定可以安裝更新的時數。
@@ -78,7 +78,7 @@ ms.lasthandoff: 10/20/2017
 5. 在顯示更新響鈴清單的刀鋒視窗中，選擇 [建立]。
 6. 在 [建立更新響鈴] 刀鋒視窗中，提供更新響鈴的名稱和描述 (選擇性)，然後選擇 [設定]。
 7. 在 [設定] 刀鋒視窗中，設定下列資訊：
-    - **服務分支**︰設定裝置將接收 Windows 更新的分支 (最新分支或最新商務分支)。
+    - **維護通道**：設定裝置接收 Windows 更新的通道 (半年通道 (已設定目標) 或半年通道)。
     - **Microsoft 更新**︰選擇是否要從 Microsoft Update 掃描應用程式更新。
     - **Windows 驅動程式**︰選擇是否要在更新期間排除 Windows Update 驅動程式。
     - **自動更新行為**︰選擇要如何管理自動更新行為，以進行掃描、下載及安裝更新。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
@@ -87,12 +87,12 @@ ms.lasthandoff: 10/20/2017
     品質更新通常會修正和改進現有的 Windows 功能，而且通常在每個月的第一個星期二發行，不過 Microsoft 也可能在任何時間發行。 您可以定義在品質更新發行後，「是否」要延遲以及延遲「多久」接收品質更新。
     - **功能更新延遲期間 (天)** - 指定功能更新延遲的天數。 您可以延遲接收「功能更新」至其發行後 180 天。
 
-    功能更新一般是 Windows 的新功能。 設定 [服務分支] 設定之後 ([CB] 或 [CBB])，接著可以定義在功能更新發行後「是否」要延遲以及延遲「多久」在 Windows Update 上從 Windows 接收功能更新。
+    功能更新一般是 Windows 的新功能。 進行 [維護通道] 設定之後 (半年通道 (已設定目標) 或半年通道)，您接著可以定義在 Microsoft 於 Windows Update 發行「功能更新」後，是否要延遲接收「功能更新」，以及要延遲多久。
 
     例如：  
-    **如果服務分支設為 CB (最新分支) 且延遲期間為 30 天**︰假設「功能更新 X」在 1 月於 Windows Update 上以 CB 首度公開發行。 裝置要到 2 月 (30 天後) 才會接收更新。
+    **若維護通道已設為 [半年通道 (已設定目標)] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 裝置要到 2 月 (30 天後) 才會接收更新。
 
-    **如果服務分支設為 CBB (最新商務分支) 且延遲期間是 30 天**︰假設「功能更新 X」在 1 月於 Windows Update 上以 CB 首度公開發行。 四個月後 (4 月)，功能更新 X 才發行 CBB。 裝置將會在此 CBB 發行的 30 天後接收功能更新 X，並將在 5 月更新。
+    **若維護通道已設為 [半年通道] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置將會在此半年通道發行的 30 天後收到「功能更新 X」，並將在 5 月更新。
 
     - **傳遞最佳化** - 選擇裝置將下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)。
 8. 完成設定後，按一下 [確定]，然後在 [建立更新響鈴] 刀鋒視窗中按一下 [建立]。
@@ -112,7 +112,7 @@ ms.lasthandoff: 10/20/2017
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [軟體更新]。
-4. 在 [軟體更新] 刀鋒視窗中，選擇 [概觀]。 從這裡您可以看到您指派之任何更新通道的狀態一般資訊。
+4. 在 [軟體更新] 刀鋒視窗中，選擇 [概觀]。 您可以從這裡看到您指派之任何更新通道的狀態一般資訊。
 5. 請開啟下列其中一個報表： 
      
    **針對所有的部署通道：**
