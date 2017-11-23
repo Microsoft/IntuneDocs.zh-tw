@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: 建立 Android for Work 原則
           href: compliance-policy-create-android-for-work.md
+        - name: 建立原則以啟用 Google Play Protect
+          href: compliance-policy-create-google-play-protect.md
         - name: 建立 iOS 原則
           href: compliance-policy-create-ios.md
         - name: 建立 macOS 原則
