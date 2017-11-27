@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -125,13 +125,13 @@ ms.lasthandoff: 10/04/2017
 
 ### <a name="before-you-begin"></a>開始之前
 
-WIP 學習是一種報表，可讓您監視 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「隱藏覆寫」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
+WIP 學習是一種報表，可讓您監視 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「封鎖」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
 
-您應該利用一小群使用者來驗證允許的應用程式清單中是否有正確的應用程式。驗證時，建議先使用「無訊息」或「允許覆寫」模式。 完成之後，您就可以變更為最終強制原則「隱藏覆寫」。
+您應該利用一小群使用者來驗證允許的應用程式清單中是否有正確的應用程式。驗證時，建議先使用「無訊息」或「允許覆寫」模式。 完成之後，您就可以變更為最終強制原則**封鎖**。
 
 ### <a name="what-are-the-protection-modes"></a>什麼是保護模式？
 
-#### <a name="hide-overrides"></a>隱藏覆寫
+#### <a name="block"></a>封鎖
 WIP 會尋找不適當的資料共用做法，並阻止使用者完成動作。 這可能包括與未受公司保護的應用程式共用資料，以及與組織以外的人員或裝置共用公司資料。
 
 #### <a name="allow-overrides"></a>允許覆寫

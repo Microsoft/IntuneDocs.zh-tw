@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>只允許支援 Intune 應用程式保護原則的行動裝置應用程式存取 Office 365 服務
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[Intune 應用程式保護原則](protect-apps-and-data-with-microsoft-intune.md)可協助您在向 Intune 註冊管理的裝置上保護公司資料。 您也可以在**未向 Intune 註冊管理之屬員工擁有的裝置**上，使用應用程式保護原則。  在此情況下，即使未管理裝置，仍然需要確定公司資料和資源受到保護。 透過以應用程式為基礎的條件式存取與 MAM，您可以建立原則，只允許支援 Intune 應用程式保護原則的行動裝置應用程式存取 Exchange Online 等 O365 服務。
+[Intune 應用程式保護原則](protect-apps-and-data-with-microsoft-intune.md)可協助您在向 Intune 註冊管理的裝置上保護公司資料。 您也可以在**未向 Intune 註冊管理之屬員工擁有的裝置**上，使用應用程式保護原則。  在此情況下，即使未管理裝置，仍然需要確定公司資料和資源受到保護。 透過應用程式型條件式存取與 MAM，您可以建立原則，只允許支援 Intune 應用程式保護原則的行動裝置應用程式存取 Exchange Online 等 O365 服務。
 
 例如，您可以藉由只允許 **Microsoft Outlook 應用程式**存取 Exchange Online，來**封鎖 iOS 和 Android 上的內建郵件應用程式**，這些應用程式從**Exchange Online** 取得電子郵件時，不會受到 Intune MAM 原則所提供的資料保護。 或者您可以禁止不具有 Intune MAM 支援的行動裝置存取 **SharePoint Online**。
 
-下列圖表描述以應用程式為基礎的條件式存取原則在決定允許或封鎖存取的時機時所使用的流程：![此圖表顯示所含用以決定要允許或封鎖存取的各種準則](../media/mam-ca-decision-flow_simple.png)。
+下列圖表描述應用程式型條件式存取原則在決定允許或封鎖存取時所使用的流程：![此圖表顯示所含用以決定要允許或封鎖存取的各種準則](../media/mam-ca-decision-flow_simple.png)。
 
 圖表中使用的縮寫描述：
 * **CP**：公司入口網站應用程式
@@ -37,8 +37,8 @@ ms.lasthandoff: 10/10/2017
 * **AAD**：Azure Active Directory
 * **EAS**：Exchange Active Sync
 
-## <a name="prerequisites"></a>先決條件
-建立以應用程式為基礎的條件式存取原則**之前**，您必須擁有 **Enterprise Mobility + Security 或 Azure Active Directory Premium 訂閱**，且使用者必須獲 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
+## <a name="prerequisites"></a>必要條件
+建立應用程式型條件式存取原則**之前**，您必須擁有 **Enterprise Mobility + Security 或 Azure Active Directory Premium 訂用帳戶**，且使用者必須獲 EMS 或 Azure AD 授權。 如需詳細資訊，請參閱 [Enterprise Mobility 定價頁面](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定價頁面](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 
 ## <a name="supported-apps"></a>支援的應用程式
@@ -55,7 +55,7 @@ ms.lasthandoff: 10/10/2017
 >[!IMPORTANT]
 >針對 Android 裝置，初始裝置註冊必須透過登入至 OneDrive 應用程式或 Outlook 應用程式來完成。 適用於 Android 的 OneNote 應用程式尚未支援不需要註冊的 MAM。
 
-若要了解具有以應用程式為基礎的條件式存取原則之應用程式的使用者體驗，請參閱[搭配 MAM CA 使用應用程式時的預期狀況](use-apps-with-mam-ca.md)。
+若要了解具有應用程式型條件式存取原則之應用程式的使用者體驗，請參閱[搭配 MAM CA 使用應用程式時的預期狀況](use-apps-with-mam-ca.md)。
 
 
 ## <a name="next-steps"></a>後續步驟

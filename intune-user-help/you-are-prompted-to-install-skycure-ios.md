@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c03ac73377278925773123dc10d10cf3e8256e41
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>在 iOS 裝置上安裝 Symantec Endpoint Protection Mobile
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 
-有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/sep-mobile/id695620821)安裝 Zimperium zIPS。
+有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/sep-mobile/id695620821)安裝 SEP Mobile。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
 當您加密裝置時，系統會用一層防護性程式碼包覆其中的資訊，防止未經授權的人員進行存取。 貴組織需要您先加密 Android 裝置才能存取公司檔案、電子郵件或資料，此為確保資訊安全的步驟。
 
 > [!Note]
-> 如果公司支援人員要求 PIN 或密碼，則系統可能會要求您在加密之前設定 PIN 或密碼。
+> 某些 Android 裝置無法加密，包括部分由華為製造的裝置，以及由 Vivo 和 OPPO 製造的裝置。 如需詳細資訊，請參閱[這裡](your-device-appears-encrypted-but-cp-says-otherwise-android.md)。
 
 如果您取消註冊您的電話，則它會維持加密狀態。
 
@@ -37,9 +37,6 @@ ms.lasthandoff: 09/28/2017
     (在某些電話上，您需要選擇 [儲存體] > [儲存體加密] 或 [儲存體] > [Lock screen and security] \(鎖定螢幕和安全性) > [其他安全性設定] 來尋找 [加密] 選項)。
 
 3.  遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
-
-> [!Note]
-> 無法加密特定的 Android 裝置。 如需詳細資訊，請參閱[這裡](your-device-appears-encrypted-but-cp-says-otherwise-android.md)。
 
 ### <a name="what-to-do-if-you-have-issues"></a>發生問題時的解決方式
 **問題**：您已加密您的裝置，而看到下列其中一項：
@@ -66,4 +63,4 @@ ms.lasthandoff: 09/28/2017
 
     6. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 
-是否仍需要協助？ 請連絡公司支援人員 (請查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是將電子郵件傳送給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+是否仍需要協助？ 請連絡公司支援人員 (可查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是撰寫電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
