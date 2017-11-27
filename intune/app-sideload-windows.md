@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/09/2017
 
     ![匯出簽署憑證](./media/wit-walk-cert2.gif)
 
-    在 **憑證匯出精靈**中，選取 是，匯出私密金鑰  ，然後按一下下一步 。 **選取 [個人資訊交換 – PKCS #12 (.PFX)]**，然後選取 [如果可能的話，包含憑證路徑中的所有憑證]。 完成精靈。 如需詳細資訊，請參閱 [How to Export a Certificate with the Private Key (如何以私密金鑰匯出憑證)](http://go.microsoft.com/fwlink/?LinkID=203031)。
+    在 **[憑證匯出精靈]**中，選取 [是，匯出私密金鑰]  ，然後按一下 [下一步] 。 **選取 [個人資訊交換 – PKCS #12 (.PFX)]**，然後選取 [如果可能的話，包含憑證路徑中的所有憑證]。 完成精靈。 如需詳細資訊，請參閱 [How to Export a Certificate with the Private Key (如何以私密金鑰匯出憑證)](http://go.microsoft.com/fwlink/?LinkID=203031)。
 
 6.  **將應用程式上傳至 Intune**<br>
     上傳已簽署的應用程式檔案和您的程式碼簽署憑證，讓使用者能夠使用應用程式。
@@ -193,7 +193,8 @@ ms.lasthandoff: 09/09/2017
 |參數 | 說明|
 | ------------- | ------------- |
 |InputWin10AppxBundle |來源 appxbundle 檔案所在路徑。 |
-|OutputWin10AppxBundle |已簽署之 appxbundle 檔案的輸出路徑。  Win81Appx Windows 8.1 或 Windows Phone 8.1 公司入口網站 (.APPX) 檔案所在路徑。|
+|OutputWin10AppxBundle |已簽署之 appxbundle 檔案的輸出路徑。 |
+|Win81Appx | Windows 8.1 或 Windows Phone 8.1 公司入口網站 (.APPX) 檔案所在路徑。|
 |PfxFilePath |Symantec 企業行動程式碼簽署憑證 (.PFX) 的路徑。 |
 |PfxPassword| Symantec 企業行動程式碼簽署憑證的密碼。 |
 |PublisherId |企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。|

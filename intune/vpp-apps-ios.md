@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-iOS App Store 可讓您購買多個想要在公司內執行的應用程式授權。 購買多個應用程式複本可協助您降低追蹤多個所購買應用程式複本的管理開銷。
+iOS App Store 可讓您購買多個想要在公司內執行的應用程式授權。 購買多個複本有助於您在公司中有效率地管理應用程式。
 
-Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的應用程式：
+Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多個應用程式複本：
 
-- 從應用程式市集報告授權資訊
-- 追蹤您已經使用多少個授權
-- 協助您不要安裝超過擁有數目的應用程式複本
+- 從應用程式市集報告授權資訊。
+- 追蹤您已經使用多少個授權。
+- 協助您不要安裝超過擁有數目的應用程式複本。
 
 您可以使用兩種方法來指派大量採購的應用程式：
 
 ### <a name="device-licensing"></a>裝置授權
 
-當您將一個應用程式指派給多部裝置時，會使用一個應用程式授權，並與您指派的目標裝置保持關聯。
+當您將一個應用程式指派給多部裝置時，會使用一個應用程式授權，並與您指派的目標裝置保持關聯。 
+
 當您將大量採購的應用程式指派給一部裝置時，裝置的終端使用者不需要提供 Apple ID 來存取市集。 
 
 ### <a name="user-licensing"></a>使用者授權
 
 當您將應用程式指派給使用者時，會使用一個應用程式授權，並與使用者建立關聯。 該應用程式可以在使用者擁有的多部裝置上執行 (受 Apple 有限控制)。
+
 當您將大量採購的應用程式指派給多位使用者時，每位終端使用者都必須具備有效和唯一的 Apple ID，才能存取 App Store。
 
 此外，針對從 Apple 大量採購方案 (VPP) 市集購買的書籍，您可以使用 Intune 來進行同步處理、管理及指派。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS 電子書](vpp-ebooks-ios.md)。
@@ -81,7 +83,7 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 1.  在 [Intune] 刀鋒視窗上，選擇 [設定] 下的 [行動應用程式] > [iOS VPP 權杖]。
-2.  在 VPP 權杖刀鋒視窗清單上，按一下 [建立]。
+2.  在 VPP 權杖清單刀鋒視窗上，選取 [建立]。
 4. 在 [建立 VPP 權杖] 刀鋒視窗上，指定下列資訊：
     - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
@@ -91,14 +93,11 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
     - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
-4. 完成之後，請按一下 [上傳]。
+4. 完成之後，請選取 [上傳]。
 
 該權杖會顯示在權杖清單刀鋒視窗內。
 
 您可以隨時選擇 [立即同步處理]，使用 Intune 同步處理 Apple 所儲存的資料。
-
-> [!NOTE]
-> Microsoft Intune 只會同步可透過 iTunes Store 公開取得之應用程式的資訊。 尚不支援 **iOS 的自訂 B2B 應用程式**。 如果您的案例以這類應用程式為目標，將不會同步應用程式資訊。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
@@ -134,7 +133,7 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 ## <a name="further-information"></a>進一步資訊
 
-若要回收授權，您必須將指派動作變更為「解除安裝」。 在應用程式解除安裝之後，將會回收授權。 如果您移除已指派給使用者的應用程式，則 Intune 會嘗試回收所有已與該使用者建立關聯的應用程式授權。
+若要回收授權，您必須將指派動作變更為**解除安裝**。 在應用程式解除安裝之後，將會回收授權。 如果您移除已指派給使用者的應用程式，則 Intune 會嘗試回收所有已與該使用者建立關聯的應用程式授權。
 
 當具有合格裝置的使用者第一次嘗試將 VPP 應用程式安裝至裝置時，系統會要求他們加入 Apple 大量採購方案。 他們必須加入，應用程式安裝才會繼續執行。 對於加入 Apple 大量採購方案的邀請，需要使用者能夠在 iOS 裝置上使用 iTunes 應用程式。 如果您已經設定停用 iTunes Store 應用程式的原則，則 VPP 應用程式以使用者為基礎的授權將無法運作。 解決方法是移除原則以允許 iTunes 應用程式，或是使用以裝置為基礎的授權。
 

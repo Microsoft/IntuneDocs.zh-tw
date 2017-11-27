@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -201,5 +201,5 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 ## <a name="see-also"></a>請參閱
 
 - [透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)
-- [搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)
+- [搭配 Intune 使用應用程式型條件式存取](app-based-conditional-access-intune.md)
 - [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

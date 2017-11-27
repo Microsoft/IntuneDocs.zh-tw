@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 註冊 iOS 裝置 | Microsoft Docs"
-description: "描述在 Intune 註冊 iOS 裝置的方式"
+title: "設定對您公司資源的存取 | Microsoft Docs"
+description: "描述如何讓 Intune 管理您的 iOS 裝置"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,89 +16,63 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="enroll-your-ios-device-in-intune"></a>在 Intune 註冊 iOS 裝置
+# <a name="set-up-access-to-your-company-resources"></a>設定對您公司資源的存取
 
-如果您的公司或學校使用 Microsoft Intune，您可以註冊 iOS 裝置來存取公司電子郵件、檔案和其他資源。 當您註冊裝置時，您的 IT 部門可以管理這些公司或學校資源、保護它們的安全，並讓您能夠自由地使用慣用的裝置來完成工作。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
+貴公司有許多的專屬資訊，從電子郵件到檔案、網路等等。 當您從 iOS 裝置存取資訊時，貴公司會使用 Microsoft Intune 來協助保護該資訊。 這可讓他們管理這些資源，讓它們更安全，同時讓您自由地使用您慣用的裝置來完成工作。
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > 若您嘗試在「郵件」應用程式中存取公司的電子郵件，可能會出現提示要管理您的裝置以確保安全。 請遵循以下指示，在 iOS 裝置上存取電子郵件以及其他公司資源。
 
-**開始之前：**
+## <a name="before-you-start"></a>開始之前
 
-- 開始步驟之後，請務必完成註冊。 暫停超過幾分鐘時，通常會停止此程序，並要求您重新啟動。
-- 如果您的註冊因為任何原因失敗，您必須返回公司入口網站應用程式再試一次。
-- 確定您的 Wi-Fi 運作正常。 否則，註冊將會失敗。
-- 如果您在裝置上封鎖 Safari，請將它解除封鎖。 在裝置註冊的過程中會使用 Safari。
+- 請確定您一開始就完成整個程序。 暫停超過幾分鐘時，通常會停止此程序，並要求您重新開始。
+- 如果此程序失敗，您需要返回公司入口網站應用程式重試。
+- 請確定您的 Wi-Fi 運作正常，而且您裝置上的 Safari 運作正常。
+- 下載[安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。
 
 
-**註冊 iOS 裝置：**
+## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>使用公司入口網站應用程式設定公司資源的存取權
 
-1.  遵循[安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)中的步驟。
-
-2. 在 [公司存取設定] 頁面上，點選 [開始]。
-
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. 在 [為什麼要註冊您的裝置?] 畫面上，閱讀有關註冊您的裝置時可執行的作業，然後點選 [繼續]。
-
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
-
-4. 檢閱公司支援人員在您已註冊裝置上可看到和不可看到的項目清單，然後點選 [繼續]。
-
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  在 [接下來該做什麼] 畫面上，閱讀有關註冊期間所發生的事況，然後點選 [註冊]。
-
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  在 [安裝設定檔] 畫面上，點選 [安裝]，然後在出現提示時輸入您的密碼。
-
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  點選 [安裝]。
-
-    ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  點選 [安裝] 表示您已閱讀警告。
-
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  點選 [信任]。
-
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  畫面變更成顯示設定檔已完成安裝時，請點選 [完成]。
-
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-    畫面上會顯示 [正在註冊裝置] 訊息。
-
-11.  當訊息詢問您是否要在公司入口網站中開啟頁面時，請點選 [開啟]。
-
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. 在 [公司存取設定] 畫面上，點選 [繼續]。 這個畫面會顯示有哪些您必須完成以使裝置符合標準的其他需求，如設定密碼。 遵循畫面上的指示，直到您符合所有的合規性需求為止。 完成之後，您會回到 [公司存取設定] 畫面。 點選 [繼續]。
-
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. 點選 [完成]。
-
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-您的裝置現在已註冊在 Intune 中，而且會將您帶回公司入口網站應用程式。
+|您所看到的內容|說明|
+|---|---|
+|![公司入口網站登入畫面，底部有 [登入] 按鈕。](./media/ios-0-cp-enroll-1711.png)|開啟公司入口網站應用程式，然後點選 [登入]。|
+|![Azure AD 登入提示。](./media/ios-0a-cp-enroll-1711.png)|輸入您的公司電子郵件地址，然後點選 [下一步]。|
+|![Azure AD 密碼提示。](./media/ios-0b-cp-enroll-1711.png)|輸入您的密碼，然後點選 [登入]。|
+|![正在載入公司資源啟動顯示畫面。](./media/ios-1-cp-enroll-1711.png)|等候載入。|
+|![條款及條件。](./media/ios-2-cp-enroll-1711.png)|閱讀並接受所有條款及條件。|
+|![設定公司存取畫面。 管理和設定目前都需要解決。](./media/ios-3-cp-enroll-1711.png)|點選 [讓您的裝置接受管理] 開始執行讓您的裝置能夠存取公司資源的程序。 如果您無法立刻執行此作業，則可以**延遲**程序，但這表示您將無法取得電子郵件、文件等。|
+|![我的公司能看到什麼畫面。](./media/ios-4-cp-enroll-1711.png)|您可以透過點選底部的連結來**深入了解**您的公司能看到什麼相關資訊。 否則，請點選 [繼續]。|
+|![下一步是什麼畫面。](./media/ios-5-cp-enroll-1711.png)|此畫面會引導您了解安裝程式中的情況。 您將花費時間在 Safari、[設定] 應用程式與 [公司入口網站] 應用程式來完成此程序。 點選 [下一步]。|
+|![點選 [下一步是什麼] 上的 [下一步] 之後正在載入畫面。](./media/ios-6-cp-enroll-1711.png)||
+|![切換到 Safari 進行註冊。](./media/ios-7-cp-enroll-1711.png)|您會被傳送到 Safari 以取得您的裝置的管理資訊。|
+|![系統提示要求開啟 [設定] 應用程式。](./media/ios-8-cp-enroll-1711.png)|點選 [允許] 開啟 [設定] 應用程式以下載組態設定檔。 安裝組態設定檔，讓您的公司管理您裝置上的公司資訊。|
+|![設定檔在設定中開啟。](./media/ios-9-cp-enroll-1711.png)|點選 [安裝]。|
+|![畫面底部的安裝設定檔強制回應對話方塊。](./media/ios-10-cp-enroll-1711.png)|點選 [安裝]。|
+|![設定檔正在安裝載入畫面。](./media/ios-11-cp-enroll-1711.png)|等候載入。|
+|![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.png)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![系統提示詢問對遠端管理的信任。](./media/ios-13-cp-enroll-1711.png)|點選 [信任]，讓您的公司管理您裝置上的公司資訊和設定。|
+|![設定檔完成安裝載入畫面。](./media/ios-14-cp-enroll-1711.png)|等候載入。|
+|![已安裝設定檔畫面。](./media/ios-15-cp-enroll-1711.png)|您的設定檔已安裝，且您的裝置的公司資訊和設定離受管理更近一步。|
+|![切換到 Safari 進行註冊。](./media/ios-16-cp-enroll-1711.png)|您會被傳送回 Safari 以完成取得您裝置的管理資訊。 |
+|![系統提示開啟公司入口網站。](./media/ios-17-cp-enroll-1711.png)|點選 [開啟]。|
+|![正在載入公司資源畫面。](./media/ios-18-cp-enroll-1711.png)|等候載入。|
+|![在公司入口網站應用程式中選取裝置類別。](./media/ios-19-cp-enroll-1711.png)|為您的裝置選取最適合的類別。 這通常與誰擁有該裝置，或大部分時間裝置位於何處有關。|
+|![已選取類別。](./media/ios-20-cp-enroll-1711.png)||
+|![裝置管理成功；現在需要更新設定。](./media/ios-21-cp-enroll-1711.png)|您已成功讓您的裝置受到管理。 您的公司可能還有需要您更新的設定，例如密碼的長度。 點選 [更新裝置設定] 繼續進行。|
+|![確認裝置設定。](./media/ios-22-cp-enroll-1711.png)|「公司入口網站」將檢查是否有任何設定需要更新。|
+|![設定檢查完成，具有不正確的 OS 版本](./media/ios-23-cp-enroll-1711.png)|「公司入口網站」將提供有關如何修正設定問題的指示。 修復問題後，點選 [檢查設定]。|
+|![確認裝置設定載入畫面](./media/ios-24-cp-enroll-1711.png)|您的裝置將檢查您的設定是否足夠安全地存取公司資源。|
+|![已成功註冊和更新設定](./media/ios-25-cp-enroll-1711.png)|恭喜！ 您的裝置現在已在 Intune 註冊。|
 
 > [!Note]
-> 在完全註冊您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
+> 在完全管理您的裝置之前，還有幾個步驟需要完成。 深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

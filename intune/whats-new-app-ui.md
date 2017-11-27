@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
+## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日當週
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 版公司入口網站 2.9.0 版中裝置設定工作流程的改善 <!---1417174--->
+
+我們已改善 iOS 版公司入口網站應用程式中的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
+
+> [!NOTE]
+> 我們會使用您在 Azure 入口網站 中 [Microsoft Intune] > [Mobile Apps] > [公司入口網站品牌] > [公司名稱] 中設定的公司名稱。 如果您沒有設定此值，我們將使用在 [Azure Active Directory] > [屬性] > [名稱] 中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
+
+|之前|之後|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*已與上一個步驟合併*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日當週
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Windows 10 版公司入口網站應用程式的更新 <!--1299474-->
+Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更新，以使設定和預期的使用者動作在所有設定中更加一致。 它也已更新為符合其他 Windows 應用程式的配置。
+
+|之前|之後|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>公司入口網站應用程式與網站的搜尋改善<!--1418189-->
 公司入口網站應用程式現在會在應用程式類別、名稱及描述之間進行搜尋。 結果會依相關性的遞減順序進行排序。 [公司入口網站](https://portal.manage.microsoft.com)也會得到這些更新。
 
 我們仍然會微調相關性的追蹤方式；因此，請使用公司入口網站底端的 [意見反應] 連結，讓我們知道其運作方式。
-
-
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日當週
 
@@ -47,36 +72,32 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 此版本修正 iOS 公司入口網站於應用程式磚中顯示圖示方式的已知問題。 如果您上傳 120x120 像素或更大的應用程式圖示，現在會以完整的應用程式磚大小顯示在[公司入口網站](https://portal.manage.microsoft.com)和 iOS 公司入口網站的應用程式頁面中。
 
 
-
-
-
-
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
 #### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>對公司入口網站之裝置安裝工作流程的改善 <!--1490692-->
 我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
 
-|之前|在|
+|之前|之後|
 |---|---|
 |![01](./media/android_cp_enroll_01_post_1709.png)|![01](./media/android_cp_enroll_01_1709_new.png)|
-|![01a](./media/android_cp_enroll_01_before_1710.png)| *與上一個步驟合併* |
+|![01a](./media/android_cp_enroll_01_before_1710.png)| *已與上一個步驟合併* |
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
 已改善 Android for Work 裝置上的額外步驟。
 
-|之前|在|
+|之前|之後|
 |---|---|
 |![04](./media/android_work_cp_enroll_01_before_1710.png)|![04](./media/android_work_cp_enroll_01_after_1710.png)|
-|![05](./media/android_work_cp_enroll_02_before_1710.png)| *與上一個步驟合併* |
+|![05](./media/android_work_cp_enroll_02_before_1710.png)| *已與上一個步驟合併* |
 |![06](./media/android_work_cp_enroll_03_before_1710.png)|![06](./media/android_work_cp_enroll_03_after_1710.png)|
 |![07](./media/android_work_cp_enroll_04_before_1710.png)|![07](./media/android_work_cp_enroll_04_after_1710.png)|
-|![08](./media/android_work_cp_enroll_05_before_1710.png)| *與上一個步驟合併* |
+|![08](./media/android_work_cp_enroll_05_before_1710.png)| *已與上一個步驟合併* |
 
 
 我們也已更新電子郵件啟用畫面的條件式存取。
 
-|之前|在|
+|之前|之後|
 |---|---|
 |![06](./media/android_conditional_access_email_before_1710.png)|![06](./media/android_conditional_access_email_after_1710.png)
 
@@ -86,7 +107,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
-|之前|在|
+|之前|之後|
 |---|---|
 |![01](./media/android_cp_enroll_01_before_1709.png)|![01](./media/android_cp_enroll_01_post_1709.png)|
 |![02](./media/android_cp_enroll_02_before_1709.png)|![02](./media/android_cp_enroll_02_post_1709.png)|

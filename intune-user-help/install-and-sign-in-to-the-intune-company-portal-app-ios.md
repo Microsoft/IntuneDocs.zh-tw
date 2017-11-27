@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3036485eef5d7a2b633b51229015d2f53d3fa7
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安裝並登入公司入口網站應用程式
 
@@ -34,6 +34,6 @@ ms.lasthandoff: 09/28/2017
 
 3.  開啟公司入口網站應用程式，輸入您的公司或學校電子郵件地址和密碼，然後點選 [登入]。
 
-    如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 註冊 macOS 裝置](enroll-your-device-in-intune-macos.md)。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。 
+    如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)中的步驟。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。

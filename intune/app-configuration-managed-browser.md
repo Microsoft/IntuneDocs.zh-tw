@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -100,8 +100,9 @@ Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
     - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
-    - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
-    - Managed Browser 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
+- 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
+- Managed Browser 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
+注意：更新的應用程式 Proxy 重新導向資料，最多可能需要花費 24 小時才會在 Managed Browser 中生效。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步驟 1：從 Outlook 啟用自動重新導向至 Managed Browser
 Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web 內容只在 Managed Browser 中顯示**。
@@ -218,6 +219,8 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 1. 開啟受管理的瀏覽器。
 2. 網址方塊中的類型 `about:intunehelp`。
 瀏覽器啟動疑難排解模式。
+
+如需儲存在應用程式記錄中的設定清單，請參閱[在 Managed Browser 中檢閱應用程式保護記錄](app-protection-policy-settings-log.md)。
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全性與隱私權
 
