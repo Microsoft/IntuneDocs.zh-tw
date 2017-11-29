@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 902bb538-d30a-44e4-80e1-7ae34e6a605d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: cdda63b4b4acf365fc38cc43fb58812832f5c0b7
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 487c107b85f5146b5c286b8b363b35979cc0ca3f
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>在 Android 裝置上安裝 Mobile Threat Defense
 
-在存取您的工作之前，公司會要求您安裝 Symantec Endpoint Protection (SEP) Mobile 應用程式，其會尋找潛在的安全性威脅，有助於保護您的裝置。 裝置上出現的提示會視公司的設定方式而有所不同。
+在存取您的工作之前，您的公司會要求您安裝 Mobile Threat Defense 應用程式。此應用程式可尋找潛在的安全性威脅，有助於保護您的裝置。 裝置上出現的提示會視公司的設定方式而有所不同。
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-are-prompted-to-install-skycure-android.md)

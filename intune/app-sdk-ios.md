@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -95,6 +95,10 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
         > [!NOTE]
         > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
 
+    藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
+
+    ![Intune App SDK iOS：複製配套資源](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. 將下列 iOS 架構新增至專案：
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. 藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
-
-    ![Intune App SDK iOS：複製配套資源](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請剪下「Main Storyboard」(主要腳本) 或「Main Nib」(主要 Nib) 欄位。 視需要在 Info.plist 中，使用下列索引鍵名稱，將這些欄位和其對應的值貼入至名為 **IntuneMAMSettings** 的新目錄下：
+4. 如果您的行動應用程式在其 Info.plist 檔案中定義主要 nib 或腳本檔案，請剪下「Main Storyboard」(主要腳本) 或「Main Nib」(主要 Nib) 欄位。 視需要在 Info.plist 中，使用下列索引鍵名稱，將這些欄位和其對應的值貼入至名為 **IntuneMAMSettings** 的新目錄下：
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
     您可以在文件本文中的任何位置按一下滑鼠右鍵，然後將檢視類型變更為 「Show Raw Keys/Values」 (顯示原始索引鍵/值)，來檢視原始格式的 Info.plist (以查看索引鍵名稱)。
 
-6. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
+5. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
   > [!NOTE]
     > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：
@@ -132,7 +131,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     </array>
     ```
 
-7. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循下列步驟：
+6. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循下列步驟：
 
     1. 如果您的行動應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
@@ -140,24 +139,23 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
     3. 將 `com.microsoft.adalcache` 新增至現有存取群組。
 
-        4. 將 `com.microsoft.workplacejoin` 新增至現有存取群組。
-            ![Intune App SDK iOS：Keychain 共用](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS：Keychain 共用](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. 如果您是使用權利檔案來建立 Keychain 存取群組，請在權利檔案中，於 Keychain 存取群組之前加上 `$(AppIdentifierPrefix)`。 例如：
+    4. 如果您正在直接編輯權利檔案，而不是使用上方所示的 Xcode UI 來建立 Keychain 存取群組，請將 `$(AppIdentifierPrefix)` 附加到 Keychain 存取群組 (Xcode 會自動處理此動作)。 例如：
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > 權利檔案是行動應用程式特有的 XML 檔案， 它用來指定 iOS 應用程式內的特殊權限和功能。
+    > 權利檔案是行動應用程式特有的 XML 檔案， 它用來指定 iOS 應用程式內的特殊權限和功能。 如果您的應用程式之前沒有權利檔案，啟用 Keychain 共用 (步驟 6) 應該會使得 Xcode 為您的應用程式產生一個權利檔案。
 
-8. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
+7. 如果應用程式在其 Info.plist 檔案中定義 URL 配置，請針對每個 URL 配置新增另一個具有 `-intunemam` 尾碼的配置。
 
-9. 若應用程式在其 Info.plist 檔案內定義 Document 類型，請在每個項目的「文件內容類型 UTI」陣列，為每個有 "com.microsoft.intune.mam." 前置詞的字串新增重複項。
+8. 若應用程式在其 Info.plist 檔案內定義 Document 類型，請在每個項目的「文件內容類型 UTI」陣列，為每個有 "com.microsoft.intune.mam." 前置詞的字串新增重複項。
 
-10. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+9. 若是在 iOS 9+ 上開發的行動應用程式，請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 此外，針對每個列出的通訊協定，新增一個通訊協定並附加 `-intunemam`。 您也必須在陣列中包含 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-11. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
+10. 如果應用程式已在其權利中定義應用程式群組，請將這些群組以字串陣列形式新增至 **IntuneMAMSettings** 字典的 `AppGroupIdentifiers` 索引鍵下。
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>使用 Intune MAM 設定程式工具 (Intune MAM Configurator Tool)
 
