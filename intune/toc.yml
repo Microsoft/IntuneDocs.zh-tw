@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment 方案
               href: enrollment-autopilot.md
-            - name: 註冊狀態畫面
-              href: windows-enrollment-status.md
         - name: 設定 Android 註冊
           href: android-enroll.md
         - name: 設定 iOS 註冊
