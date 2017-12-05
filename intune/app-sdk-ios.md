@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 6d7b22c871ed1e62bfdc148f30fb832786baf294
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -172,9 +172,9 @@ Intune MAM 設定程式工具 (Intune MAM Configurator Tool) 可用於更新：
 * 任何您應用程式在其具有 -intunemam 尾碼的 Info.plist 檔案中，定義的每個 URL 配置。
 * 任何您應用程式在其 Info.plist 檔案中定義的「文件」類型，針對每個項目的「文件內容類型 UTI」陣列，為每個具有 "com.microsoft.intune.mam" 的字串新增重複項目。 前置詞的字串新增重複項。
 * 任何您應用程式在其權利中定義的應用程式群組，將這些群組以字串陣列的形式新增到 AppGroupIdentifiers 索引鍵下的 IntuneMAMSettings 字典中。
-
     
->[!NOTE] 若您決定使用此工具來取代 info.plist 操作，建議每當應用程式的 info.plist 或權利變更時重新執行。
+> [!Note]
+> 若您決定使用此工具來取代 info.plist 操作，建議每當應用程式的 info.plist 或權利變更時重新執行。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>設定 Azure Active Directory Authentication Library (ADAL)
 
