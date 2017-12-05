@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.openlocfilehash: 89726ab76832ea4023910ea132a87fc8dbda5ea8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/10/2017
 > [!div  class="button"]
 [Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-[iOS 和 Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+[iOS 和 Mac](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 > [!div class="button"]
 [Windows 電腦 >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 > [!div class="button"]
