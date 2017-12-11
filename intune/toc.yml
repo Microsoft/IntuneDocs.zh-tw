@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: iOS 的共用裝置
               href: shared-device-settings-ios.md
+            - name: 設定 Intune 以進行 iOS 裝置單一登入
+              href: sso-ios.md
             - name: iOS 的網站篩選設定
               href: web-content-filter-settings-ios.md
         - name: 設定裝置限制
