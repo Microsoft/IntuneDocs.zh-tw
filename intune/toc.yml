@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: 防止資料在未受管理的裝置上外洩
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: 比較 MDM 與 MAM
+          href: byod-technology-decisions.md
     - name: 移轉指南
       href: migration-guide.md
       items:
