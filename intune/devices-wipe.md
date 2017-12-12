@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
@@ -39,7 +39,21 @@ ms.lasthandoff: 09/09/2017
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
 4. 選擇您要恢復出廠預設值之裝置的名稱。
-5. 在顯示裝置名稱的刀鋒視窗中選擇 [恢復出廠預設值]，然後選擇 [是] 進行確認。
+5. 在顯示裝置名稱的刀鋒視窗中選擇 [恢復出廠預設值]
+6. 若為 Windows 10 1709 版或更新版本，還有額外選項 [Retain enrollment state and user account] (保留註冊狀態及使用者帳戶)。 
+    
+    |透過恢復出廠預設值來保留|不保留|
+    | -------------|------------|
+    |與裝置建立關聯的使用者帳戶|使用者檔案|
+    |電腦狀態 \(網域加入，已加入 Azure Active Directory)| 使用者安裝的應用程式 \(市集和 Win32 應用程式)|
+    |MDM 註冊|非預設的裝置設定|
+    |OEM 安裝的應用程式 \(市集和 Win32 應用程式)||
+    |使用者設定檔||
+    |使用者設定檔外的使用者資料||
+    |使用者自動登入|| 
+    
+         
+7. 選擇 [是] 確認恢復出廠預設值。
 
 如果裝置已開啟且連線，這過程將花費不到 15 分鐘的時間，以將恢復出廠預設值命令傳播到所有裝置類型。
 

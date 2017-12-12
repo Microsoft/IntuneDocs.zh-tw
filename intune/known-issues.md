@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059242b76ef1f14a5237c34e57ed626fc53f17be
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -34,6 +34,10 @@ ms.lasthandoff: 11/01/2017
 若要要求在 Intune 中新增功能，請考慮前往我們的 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 網站填寫報告。
 
 ## <a name="migration"></a>移轉
+
+### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 舊版電腦用戶端功能只在 Silverlight 主控台提供
+
+Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows 10 的能力。 如需詳細資訊，請參閱 [Azure 主控台上的 Intune 和電腦用戶端上的舊版 Intune](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure)。
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>由 Intune 在移轉期間所建立的群組，可能會影響其他 Microsoft 產品的功能
 

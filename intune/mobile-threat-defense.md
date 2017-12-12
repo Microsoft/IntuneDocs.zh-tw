@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f928b214642c5954561f2c56b30b71b36ecd57eb
-ms.sourcegitcommit: 012f262660fa9fb321ac3470f5dba165b8e5256a
+ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合
 
@@ -37,6 +37,22 @@ Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defens
 連接器會透過在 Intune 與您選擇的 Mobile Threat Defense 廠商之間建立通訊通道來保護公司資源。 Intune Mobile Threat Defense 合作夥伴提供直覺且易於部署行動裝置的應用程式，而行動裝置會主動掃描並分析威脅資訊以與 Intune 共用，來進行報告或強制執行。 
 
 例如，如果連線的 Mobile Threat Defense 應用程式會回報到 Mobile Threat Defense 廠商，而它在您網路上的電話目前連線至易受攔截式攻擊的網路，則這項資訊會與適當的風險層級 (低/中/高) 共用，並分類為適當的風險層級 (低/中/高)；接著可以比較該層級與 Intune 中設定的允許風險層級，來判定危害裝置時是否應該撤銷所選擇特定資源的存取權。
+
+## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 會收集哪些 Mobile Threat Defense 資料？
+
+Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 Mobile Threat Defense (MTD) 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 11+ 裝置使用者的應用程式清查。
+
+**應用程式清查**  
+個人擁有和公司擁有的 iOS 11+ 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
+
+ - 應用程式識別碼
+ - 應用程式版本
+ - 應用程式簡短版本
+ - 應用程式名稱
+ - 應用程式套件組合大小
+ - 應用程式動態大小
+ - 應用程式是否已驗證
+ - 應用程式是否受管理
 
 ## <a name="sample-scenarios"></a>範例案例
 

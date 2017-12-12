@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung KNOX Standard 裝置限制設定
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/15/2017
 - **螢幕擷取 (僅限 Samsung KNOX)** - 讓使用者將螢幕內容擷取成影像。
 - **語音助理 (僅限 Samsung KNOX)** - 允許在裝置上使用語音助理軟體。
 - **YouTube (僅限 Samsung KNOX)** - 允許在裝置上使用 YouTube 應用程式。
-- **共用的裝置** - 將受管理的 Samsung KNOX Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>當使用者登入時，他們可以存取應用程式，此外也可以將任何原則套用到這些應用程式。 當使用者登出時，會清除所有應用程式資料。
+- **共用的裝置 (僅限 Samsung KNOX)** - 將受管理的 Samsung KNOX Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
 
 ## <a name="password"></a>密碼
 

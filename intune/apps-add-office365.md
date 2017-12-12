@@ -1,5 +1,5 @@
 ---
-title: "使用 Intune 將 Office 365 ProPlus 應用程式安裝到 Windows 10 裝置"
+title: "使用 Intune 將 Office 365 應用程式安裝到行動裝置"
 titlesuffix: Azure portal
 description: "了解如何使用 Intune 以更容易在 Windows 10 裝置上安裝 Office 365 應用程式。"
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
 
-此應用程式類型方便您將 Office 365 ProPlus 2016 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為一個應用程式的那些應用程式。
+此應用程式類型方便您將 Office 365 ProPlus 2016 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為單一項目的那些應用程式。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -137,7 +137,3 @@ ms.lasthandoff: 09/15/2017
 ## <a name="next-steps"></a>後續步驟
 
 您現在可以將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
-
-             
-
-

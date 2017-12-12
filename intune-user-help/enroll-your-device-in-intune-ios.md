@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>設定對您公司資源的存取
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/21/2017
 - 請確定您一開始就完成整個程序。 暫停超過幾分鐘時，通常會停止此程序，並要求您重新開始。
 - 如果此程序失敗，您需要返回公司入口網站應用程式重試。
 - 請確定您的 Wi-Fi 運作正常，而且您裝置上的 Safari 運作正常。
-- 下載[安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。
+- 下載並安裝 [Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>使用公司入口網站應用程式設定公司資源的存取權

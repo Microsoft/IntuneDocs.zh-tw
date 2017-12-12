@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 585c9ba232f8a1d9c7bb529d6d260165c2d0883d
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 8905b97a5912010a2516788a8da66441fc6f89ae
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>使用 Intune 從遠端鎖定受管理的裝置
 
@@ -32,7 +32,10 @@ ms.lasthandoff: 09/15/2017
 - Windows - 不支援
 - Windows Phone - 支援 Windows Phone 8.1 和更新版本
 - iOS - 支援
-- macOS - 不支援
+- macOS - 支援
+
+    > [!Note]  
+    > 設定 6 位數的修復 PIN。 鎖定時，[裝置概觀] 刀鋒視窗會顯示 PIN，直到傳送另一個裝置動作為止。
 - Android - 支援
 
 ## <a name="how-to-remote-lock-a-device"></a>如何從遠端鎖定裝置

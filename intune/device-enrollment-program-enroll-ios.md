@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -76,7 +76,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 3. 在 [管理伺服器] 頁面上，選擇 [新增 MDM 伺服器]。
 4. 輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
 
-   ![新增 DEP 的 MDM 伺服器名稱，然後按一下下一步 的螢幕擷取畫面。](./media/enrollment-program-token-add-server.png)
+   ![新增 DEP 的 MDM 伺服器名稱，然後按一下 [下一步] 的螢幕擷取畫面。](./media/enrollment-program-token-add-server.png)
 
 5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
 
@@ -157,11 +157,11 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] >  [Apple 註冊] > [註冊計劃裝置]。
-2. 在 [註冊計劃裝置] 下，選擇 [同步]。
+1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![已選取註冊計劃裝置節點，且正在選擇 [同步] 連結的螢幕擷取畫面。](./media/enrollment-program-device-sync.png)
-3. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
+  
+2. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![[同步] 刀鋒視窗，以及正在選擇 [要求同步] 連結的螢幕擷取畫面。](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
      -  任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
      - Intune 每 24 小時會與 Apple 同步一次新增及移除的裝置。
 
-4. 在 [註冊計劃裝置] 工作區中，選擇 [重新整理] 以查看您的裝置。
+3. 在 [註冊計劃裝置] 工作區中，選擇 [重新整理] 以查看您的裝置。
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>將註冊設定檔指派給裝置
 必須先將註冊計劃設定檔指派至裝置，裝置才能註冊。
@@ -187,7 +187,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
   - **未指派**
   - **任何**
   - **&lt;設定檔名稱&gt;**
-4. 選擇您想要指派的裝置。 資料行上方的核取方塊最多可選取 1000 個列出的裝置，然後按一下指派。 若要註冊 1000 部以上的裝置，請重複指派步驟，直到將註冊設定檔指派給所有的裝置為止。
+4. 選擇您想要指派的裝置。 資料行上方的核取方塊最多可選取 1000 個列出的裝置，然後按一下 [指派]。 若要註冊 1000 部以上的裝置，請重複指派步驟，直到將註冊設定檔指派給所有的裝置為止。
 
   ![在 Intune 中用來指派註冊計劃設定檔的 [指派] 按鈕螢幕擷取畫面](media/dep-profile-assignment.png)
 

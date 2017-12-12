@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf0fc665ef70950b292241751d56122ebc9b0912
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ecb5a310e8b869deb493bc5554029d641ba419c3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -31,6 +31,7 @@ ms.lasthandoff: 09/15/2017
 * 經過同步的應用程式會出現在 Intune 系統管理主控台；一如其他應用程式，您也可以指派這些應用程式。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
 * 如果可用授權數目不足，Intune 會禁止指派及安裝應用程式。
+* 當使用者離開企業，或系統管理員移除使用者及使用者裝置時，受商務用 Microsoft Store 管理的應用程式就會自動撤銷授權。
 
 ## <a name="before-you-start"></a>開始之前
 
