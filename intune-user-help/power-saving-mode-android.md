@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f4a6ed7d399806b2b8ac8fb24d9a29675ffe00b3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android 開啟電池最佳化時，Outlook 不會同步處理受管理的電子郵件。
 
 > [!IMPORTANT]
-> 此問題記錄在此，是因為我們收到的客戶相關報告數量一直不斷增加。 如果在您採取下列步驟之後仍然遇到這個問題，請連絡[公司支援人員](https://portal.manage.microsoft.com)取得額外協助。
+> 此問題記錄在此，是因為我們收到的客戶相關報告數量一直不斷增加。 如果在您採取下列步驟之後仍然遇到這個問題，請連絡[公司支援人員](https://portal.manage.microsoft.com#HelpDeskDialog)取得額外協助。
 
 在 Intune 中註冊裝置，可讓您存取公司資源。 電子郵件是最常存取的資源之一。 當電池最佳化開啟時，已知在 Android 裝置上透過 Outlook 存取電子郵件會發生問題。 電池最佳化可能會自動開啟，嘗試協助裝置保持電池的續航力。 電池最佳化因為會嘗試停止自動下載電子郵件，所以能在這方面提供一些協助。
 
@@ -73,4 +73,4 @@ Microsoft Intune 小組正積極處理有關此問題的解決方案。 確定�
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

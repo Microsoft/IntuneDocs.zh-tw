@@ -14,11 +14,11 @@ ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 62bcd106b4a75609436ef3a472262a6970daf1b8
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 95d6e4d52349e3e6527027fa8074cc92e54b0ca7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>您必須解決 Zimperium zIPS 找到的威脅
 
@@ -30,7 +30,7 @@ Zimperium zIPS 在您的裝置上找到潛在威脅，您必須修正此問題�
 
 如果您的已註冊裝置具有病毒或其他安全性威脅，並且嘗試存取公司電子郵件或檔案，則來自 Zimperium zIPS 的訊息會警告您採取動作。
 
-點選 [裝置管理入口網站] 連結以移至[公司入口網站](https://portal.manage.microsoft.com)，您可以在其中遵循如何修正問題的指示。
+點選 [裝置管理入口網站] 連結以移至[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)，您可以在其中遵循如何修正問題的指示。
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Zimperium zIPS 視為威脅的應用程式範例
 
@@ -38,4 +38,4 @@ Zimperium zIPS 在您的裝置上找到潛在威脅，您必須修正此問題�
 
 發生此情況時，請解除安裝應用程式，以立即重新存取公司電子郵件和資料。 如果未解除安裝應用程式，在解除安裝應用程式之前，您將會失去電子郵件和資料的存取權。
 
-是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

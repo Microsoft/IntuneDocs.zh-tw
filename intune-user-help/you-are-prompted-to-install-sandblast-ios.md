@@ -14,11 +14,11 @@ ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e596d1594c73373ac3679291bae9f435a5445d2
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 2335f92bd4755152aaae88f057f6b92481eacbdc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>您需要在 iOS 裝置上安裝 SandBlast Mobile Protect
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 09/28/2017
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797)安裝 SandBlast Mobile Protect。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

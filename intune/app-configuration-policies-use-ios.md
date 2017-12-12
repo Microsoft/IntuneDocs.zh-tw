@@ -3,8 +3,8 @@ title: "為受管理的 iOS 裝置新增應用程式設定原則 | Microsoft Doc
 titlesuffix: Azure portal
 description: "了解如何使用應用程式設定原則在 iOS 應用程式執行時，將設定資料提供給該應用程式。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受管理的 iOS 裝置新增應用程式設定原則
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/09/2017
 5. 使用下列詳細資料：
     - **名稱**<br>
       將在 Azure 入口網站中顯示的設定檔名稱。
-    - **描述**<br>
+    - **說明**<br>
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**<br>
       選擇 [受管理裝置]。

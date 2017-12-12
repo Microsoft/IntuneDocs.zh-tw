@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -94,8 +94,8 @@ ms.lasthandoff: 11/07/2017
 
     **若維護通道已設為 [半年通道] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置將會在此半年通道發行的 30 天後收到「功能更新 X」，並將在 5 月更新。
 
-    - **傳遞最佳化** - 選擇裝置將下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)。
-8. 完成設定後，按一下 [確定]，然後在 [建立更新響鈴] 刀鋒視窗中按一下 [建立]。
+    - **傳遞最佳化** - 選擇裝置將下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+1. 完成設定後，按一下 [確定]，然後在 [建立更新響鈴] 刀鋒視窗中按一下 [建立]。
 
 新的更新響鈴會隨即顯示在更新響鈴清單中。
 

@@ -3,8 +3,8 @@ title: "為受管理的 Android 裝置新增應用程式設定原則 | Microsoft
 titlesuffix: Azure portal
 description: "了解如何使用應用程式設定原則在 Android for Work 應用程式執行時，將設定資料提供給該應用程式。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f3fcc589010e9a153ee105aaf4b161ebcbcbfbb4
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: c936c6e0c23afa374c1de73d83e69a4e014d60e5
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/09/2017
 5. 使用下列詳細資料：
     - **名稱**  
       將在 Azure 入口網站中顯示的設定檔名稱。
-    - **描述**  
+    - **說明**  
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**  
       選擇 [受管理裝置]。

@@ -2,8 +2,8 @@
 title: "Windows Phone 8.1 原則設定"
 description: "Intune 提供一系列您可以在 Windows Phone 8.1 裝置上設定的內建一般設定。 此外，您可以指定 OMA-URI 值，來建立 Intune 未提供使用的自訂設定。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b496acfa2a596f016142b73b8fc99d1f763c35e0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Windows Phone 8.1 原則設定
 

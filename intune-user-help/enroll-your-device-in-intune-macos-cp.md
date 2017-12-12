@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/08/2017
 > [!NOTE]
 > 您可以在[這裡](enroll-your-device-in-intune-macos-legacy.md)找到在舊版 macOS 上註冊 macOS 裝置的指示。
 
-1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com)。
+1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 
 2. 使用您的工作或學校帳戶登入公司入口網站。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/08/2017
 
    ![Web 入口網站登陸頁面的螢幕擷取畫面，顯示尚無任何應用程式可以安裝，並且在下方有 [我的裝置] 按鈕。](./media/macOS_enroll_001_landing_page.png)
 
-4. 在 [我的裝置] 頁面上，您將看到一份已註冊的裝置清單或是只看到橫幅。 這取決於您是否已註冊裝置、macOS 或其他。 若要註冊未列出的裝置，請選取橫幅：__如果已列出您的裝置，請點選這裡來識別它。您也可以點選這裡來註冊未列出的裝置__。 如果您沒有任何已註冊的裝置，橫幅會顯示**您沒有任何已註冊的裝置。按一下這裡來註冊這部裝置。**
+4. 在 [我的裝置] 頁面上，您將看到一份已註冊的裝置清單或是只看到橫幅。 這取決於您是否已註冊裝置、macOS 或其他。 若要註冊未列出的裝置，請選取橫幅：__如果已列出您的裝置，請點選這裡來識別它。您也可以點選這裡來註冊未列出的裝置__。 如果您沒有任何已註冊的裝置，橫幅會顯示**您沒有任何已註冊的裝置。請點選這裡註冊這部裝置。**
 
     ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 11/08/2017
 
 7. 安裝程式完成後，開啟 [應用程式] 資料夾或 [啟動控制板]，然後開啟 [公司入口網站]。
 
-8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？** 按一下 [開啟] 。
+8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？ 按一下 [開啟]。
 
   > [!NOTE]
   > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請嘗試[關閉閘道管理員](https://support.apple.com/HT202491)，然後開啟應用程式。
@@ -62,4 +62,4 @@ ms.lasthandoff: 11/08/2017
 
 11. Mac 將會開始註冊以進行管理。 在此期間，系統可能會提示您提供您電腦的登入資訊。 這可能需要幾分鐘的時間註冊。 在此期間，您可以在電腦上執行其他事項。 完成公司存取設定之後會顯示一則訊息，讓您知道已完成。
 
-是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中找到他們的連絡資訊。

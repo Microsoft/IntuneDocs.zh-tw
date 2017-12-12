@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>從公司入口網站重設裝置
 
-如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](https://portal.manage.microsoft.com)遠端重設裝置。 公司入口網站是您可用來管理已在 Intune 註冊之電腦和裝置的網頁。 您可以使用此網站，來執行使用公司入口網站應用程式時可執行的大部分相同工作。
+如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)遠端重設裝置。 公司入口網站是您可用來管理已在 Intune 註冊之電腦和裝置的網頁。 您可以使用此網站，來執行使用公司入口網站應用程式時可執行的大部分相同工作。
 
 如果重設裝置，公司入口網站將不再列出此裝置，裝置將重設為出廠預設值。
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/02/2017
 
 若要重設裝置：
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com)上，點選 [功能表] 按鈕，然後選取 [我的裝置]。
+1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕，然後選取 [我的裝置]。
 
 2. 在 [我的裝置] 頁面上，選取您想要重新命名的裝置名稱。
 
@@ -47,4 +47,4 @@ ms.lasthandoff: 10/02/2017
 
 現在已重設您的裝置。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

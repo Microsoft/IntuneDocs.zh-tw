@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 纜線將記錄傳送給公司支援人員
 
 如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
 
 > [!Note]
-> 開始之前，請確定您有公司支援人員的電子郵件地址。 您可以在[公司入口網站](https://portal.manage.microsoft.com)或您的公司入口網站應用程式中找到此資訊。
+> 開始之前，請確定您有公司支援人員的電子郵件地址。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)或您的公司入口網站應用程式中找到此資訊。
 
 1.  在錯誤畫面上，點選 [傳送資訊]。 當您看到訊息詢問要用哪一種方法傳送記錄檔時，請選擇會將檔案儲存至裝置的選項。
 
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/28/2017
 
 4.  選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給公司支援人員。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

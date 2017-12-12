@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解決 SandBlast Mobile Protect 找到的威脅
 
@@ -30,7 +30,7 @@ SandBlast Mobile Protect 在您的裝置上找到潛在威脅，您必須修正�
 
 如果您的已註冊裝置具有病毒或其他安全性威脅，並且嘗試存取公司電子郵件或檔案，則來自 SandBlast Mobile Protect 的訊息會警告您採取動作。
 
-點選 [裝置管理入口網站] 連結以移至[公司入口網站](https://portal.manage.microsoft.com)，您可以在其中遵循如何修正問題的指示。
+點選 [裝置管理入口網站] 連結以移至[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)，您可以在其中遵循如何修正問題的指示。
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>SandBlast Mobile Protect 視為威脅的應用程式範例
 
@@ -38,4 +38,4 @@ SandBlast Mobile Protect 在您的裝置上找到潛在威脅，您必須修正�
 
 發生此情況時，請解除安裝應用程式，以立即重新存取公司電子郵件和資料。 如果未解除安裝應用程式，在解除安裝應用程式之前，您將會失去電子郵件和資料的存取權。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
