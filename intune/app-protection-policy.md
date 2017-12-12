@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 12/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f642df3cfd3910522e226d864c72cc148c3b7a4c
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -61,9 +61,8 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>支援應用程式保護原則的平台
--   iOS 8.1 或更新版本
-
--   Android 4 或更新版本
+-   iOS 9 或更新版本
+-   Android 4.4 或更新版本
 
 目前不支援 Windows 裝置。 不過，當您將 Windows 10 裝置註冊 Intune 時，即可使用 Windows 資訊保護，以提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 ##  <a name="how-app-protection-policies-protect-app-data"></a>應用程式保護原則如何保護應用程式資料

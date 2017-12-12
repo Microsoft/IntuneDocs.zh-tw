@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑難排解入口網站協助使用者
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 疑難排解入口網站可協助技術服務人員和 Intune 系統管理員檢視使用者資訊，以解決使用者協助要求。 包含技術服務人員的組織，可以指派**技術支援中心操作員**給使用者群組。 技術支援中心操作員角色現在可以使用 [疑難排解] 刀鋒視窗。
+
+[疑難排解] 刀鋒視窗也會顯示使用者的註冊問題。 其中包含問題的詳細資料與建議的補救步驟，可協助系統管理員和技術服務人員針對相關問題進行疑難排解。 未擷取特定註冊問題，某些錯誤可能也沒有補救建議。 
 
 如需新增技術支援中心操作員角色的步驟，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Intune](/intune/role-based-access-control)
 
@@ -33,7 +35,7 @@ ms.lasthandoff: 10/20/2017
 - 使用者狀態
 - 作業
 - 相容性問題
-- 裝置沒有回應
+- 裝置未
 - 裝置無法取得 VPN 或 Wi-Fi 設定
 - 應用程式安裝失敗
 

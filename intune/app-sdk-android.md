@@ -5,7 +5,7 @@ keywords: SDK
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27725d28ac621bae9500d0e6639a82d6f033e4dc
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: f6a7df413cb8107e8dabc6e1de6ddabd441eaeca
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -35,6 +35,7 @@ Intune App SDK 包含下列檔案：
 * **Microsoft.Intune.MAM.SDK.aar**：SDK 元件 (Support.V4 和 Support.V7 JAR 檔案除外)。 如果您的建置系統支援 AAR 檔案，則可以使用這個檔案來取代個別的元件。
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在使用 Android v4 支援程式庫的應用程式中啟用 MAM 所需的介面。 需要這項支援的應用程式必須直接參考 JAR 檔案。
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在使用 Android v7 支援程式庫的應用程式中啟用 MAM 所需的介面。 需要這項支援的應用程式必須直接參考 JAR 檔案。
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**：這個 jar 包含 Android 系統類別的虛設常式，它們只出現在較新的裝置上，但可由 MAMActivity 中的方法參考。 較新的裝置會忽略這些虛設常式類別。 只有當應用程式對衍生自 MAMActivity 的類別執行反映時，才需要這個 jar，大部分的應用程式並不需要包含它。 如果使用這個 jar，必須仔細排除它所有來自 ProGuard 的類別。 它們全都位在 "android" 根套件下
 * **proguard.txt**：包含使用 ProGuard 進行建置時必須套用的 ProGuard 規則。
 * **CHANGELOG.txt**：提供每個 SDK 版本中的變更記錄。
 * **THIRDPARTYNOTICES.TXT**：確認將會編譯至應用程式中的協力廠商及/或 OSS 程式碼的屬性通知。
@@ -47,8 +48,7 @@ Intune App SDK 包含下列檔案：
 
 ## <a name="requirements"></a>需求
 
-Intune App SDK 是一種編譯過的 Android 專案。 因此，它基本上不會受到應用程式針對其最低或目標 API 版本使用的 Android 版本所影響。 SDK 支援 Android API 19 (Android 4.4+) 到 Android API 25 (Android 7.1)。
-
+Intune App SDK 是一種編譯過的 Android 專案。 因此，它基本上不會受到應用程式針對其最低或目標 API 版本使用的 Android 版本所影響。 SDK 支援 Android API 19 (Android 4.4+) 到 Android API 26 (Android 8.0)。
 
 
 ### <a name="company-portal-app"></a>公司入口網站應用程式
@@ -88,7 +88,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>將類別、方法和活動取代為其 MAM 對等項目
 
-您必須將 Android 基底類別取代為其各自的 MAM 對等項目。 若要這樣做，請找到下表所列類別的所有執行個體，並取代為 Intune App SDK 對等項目。
+您必須將 Android 基底類別取代為其各自的 MAM 對等項目。 若要這樣做，請找到下表所列類別的所有執行個體，並取代為 Intune App SDK 對等項目。 這些類別大多是您的應用程式類別的繼承來源，但有部分 (例如 MediaPlayer) 會是您的應用程式不需衍生即可使用的類別。
 
 | Android 基底類別 | Intune App SDK 取代 |
 |--|--|
@@ -103,7 +103,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
 | android.app.NativeActivity | MAMNativeActivity |
-| android.app.PendingIntent | MAMPendingIntent (請參閱下列附註) |
+| android.app.PendingIntent | MAMPendingIntent (請參閱[擱置的意圖](#pendingintent)) |
 | android.app.Service | MAMService |
 | android.app.TabActivity | MAMTabActivity |
 | android.app.TaskStackBuilder | MAMTaskStackBuilder |
@@ -114,9 +114,13 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 | android.content.BroadcastReceiver | MAMBroadcastReceiver |
 | android.content.ContentProvider | MAMContentProvider |
 | android.os.Binder | MAMBinder (只有在 Binder 不是從 Android Interface Definition Language (AIDL) 介面產生時才需要) |
+| android.media.MediaPlayer | MAMMediaPlayer |
+| android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 
+> [!NOTE]
+> 即使您的應用程式不需要自己的衍生 `Application` 類別，[請參閱下文的 `MAMApplication`](#mamapplication)
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar：
 
@@ -125,6 +129,7 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
 | android.support.v4.app.Fragment | MAMFragment
+| android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
 
@@ -132,14 +137,15 @@ Intune App SDK 需要變更應用程式的原始程式碼，以啟用 Intune 應
 
 |Android 類別 | Intune App SDK 取代 |
 |--|--|
-|android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
-
+|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>重新命名的方法
 
 
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫的類似具名方法 (通常後置字元為 `MAM`)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `onCreate()` 然後呼叫 `super.onCreate()` 時，`Activity` 必須覆寫 `onMAMCreate()` 並呼叫 `super.onMAMCreate()`。 Java 編譯器應該強制執行完稿的限制，以防止意外覆寫原始的方法，而不是 MAM 對等項目。
 
+### <a name="mamapplication"></a>MAMApplication
+由於 MAM SDK 中的條件約束，您**必須**建立 `com.microsoft.intune.mam.client.app.MAMApplication` 的子類別並以資訊清單中所用的 `Application` 類別名稱設定它。 `MAMApplication` 是抽象的，需要覆寫 `byte[] getADALSecretKey`，如需有關如何實作的詳細資訊，請參閱該函式的 Javadoc。
 ### <a name="pendingintent"></a>PendingIntent
 您必須使用 `MAMPendingIntent.get*` 方法，而不是 `PendingIntent.get*`。 之後，您可以像往常一樣使用結果 `PendingIntent`。
 
@@ -256,6 +262,15 @@ boolean getIsManagedBrowserRequired();
 boolean getIsContactSyncAllowed();
 
 /**
+ * This method is intended for diagnostic/telemetry purposes only. It can be used to discover whether
+ * file encryption is in use. File encryption is transparent to the app, and the app should not need
+ * to make any business logic decisions based on this.
+ * 
+ * @return True if file encryption is in use.
+ */
+boolean diagnosticIsFileEncryptionInUse();
+
+/**
  * Return the policy in string format to the app.
  *  
  * @return The string representing the policy.
@@ -274,7 +289,8 @@ String toString();
 在 IT 系統管理員已設定 SDK 以提示輸入應用程式 PIN 的情況下，如果應用程式有屬於自己的 PIN 使用者體驗，您可能會想要停用它。 若要判斷 IT 系統管理員是否已將應用程式 PIN 原則部署至此應用程式，請針對目前的使用者呼叫下列方法：
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsPinRequired();
+
+MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
 ### <a name="example-determine-the-primary-intune-user"></a>範例：判斷主要 Intune 使用者
@@ -312,9 +328,9 @@ public interface MAMUserInfo {
 若要判斷是否已強制執行該原則，請進行下列呼叫：
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-```
+``````
 
 其中 `service` 為下列其中一個 SaveLocations：
 
@@ -344,13 +360,13 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 ```java
 @Override
 public void onCreate() {
-    super.onCreate();
-    MAMComponents.get(MAMNotificationReceiverRegistry.class)
-        .registerReceiver(
-            new ToastNotificationReceiver(),
-            MAMNotificationType.WIPE_USER_DATA);
-    }
-```
+  super.onCreate();
+  MAMComponents.get(MAMNotificationReceiverRegistry.class)
+    .registerReceiver(
+      new ToastNotificationReceiver(),
+      MAMNotificationType.WIPE_USER_DATA);
+  }
+``````
 
 ### <a name="mamnotificationreceiver"></a>MAMNotificationReceiver
 
@@ -456,9 +472,8 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
     |--|--|
     | Authority | 已設定 AAD 帳戶的所需環境 |
     | ClientID | 應用程式的 ClientID (由 Azure AD 於應用程式註冊時產生) |
-    | NonBrokerRedirectURI | 應用程式的有效重新導向 URI，或是 `urn:ietf:wg:oauth:2.0:oob` 
-    。 <br><br> 請務必將值設定為您應用程式 ClientID 可接受的重新導向 URI。
-   | SkipBroker | False |
+    | NonBrokerRedirectURI | 應用程式的有效重新導向 URI，或是預設值 `urn:ietf:wg:oauth:2.0:oob`。 <br><br> 請務必將值設定為您應用程式 ClientID 可接受的重新導向 URI。
+    | SkipBroker | False |
 
 
 3. **應用程式會整合 ADAL，但不支援代理驗證/全裝置 SSO：**
@@ -797,16 +812,15 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
   public static String getCurrentThreadIdentity();
 
-  /**
-   * Get the currently applicable app policy. Same as
-   * MAMComponents.get(AppPolicy.class). This method does
-   * not take the context identity into account.
+/**
+   * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy();
 
   /**
-  * Get the current app policy. This does NOT take the UI (Context) identity into account.
-   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
+  * Get the current app policy. This DOES take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use this function.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -929,7 +943,33 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
   如果要求的身分識別是受管理的 (可使用 `MAMPolicyManager.getIsIdentityManaged` 檢查)，但應用程式無法使用該帳戶 (例如，因為必須先在應用程式中設定如電子郵件帳戶等的帳戶)，則應該拒絕身分識別切換。
 
+### <a name="preserving-identity-in-async-operations"></a>保留非同步作業中的身分識別
+UI 執行緒上的作業通常會將背景工作分派至另一個執行緒。 多重身分識別應用程式會想要確保這些背景工作都以適當的身分識別操作，而這通常是分派它們的活動所使用的相同身分識別。 為方便起見，MAM SDK 提供 `MAMAsyncTask` 和 `MAMIdentityExecutors` 協助保留身分識別。
+#### <a name="mamasynctask"></a>MAMAsyncTask
 
+若要使用 `MAMAsyncTask`，只要繼承它即可，不用繼承 AsyncTask；並分別以 `doInBackgroundMAM` 和 `onPreExecuteMAM` 取代 `doInBackground` 和 `onPreExecute` 的覆寫。 `MAMAsyncTask` 建構函式接受活動內容。 例如：
+
+```java
+  AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
+
+    @Override
+    protected Object doInBackgroundMAM(final Object[] params) {
+        // Do operations.
+    }
+    
+    @Override
+    protected void onPreExecuteMAM() {
+        // Do setup.
+    };
+```
+
+### <a name="mamidentityexecutors"></a>MAMIdentityExecutors
+`MAMIdentityExecutors` 可讓您以 `wrapExecutor` 和 `wrapExecutorService` 方法，將現有的 `Executor` 或 `ExecutorService` 執行個體包裝為保留身分識別的 `Executor`/`ExecutorService`。 例如 。
+
+```java
+  Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
+  ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
+```
 
   ### <a name="file-protection"></a>檔案保護
 
@@ -1122,7 +1162,7 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>內容提供者
 
-如果應用程式透過 **ContentProvider** 提供 **ParcelFileDescriptor** 以外的公司資料，該應用程式必須在 `MAMContentProvider` 中呼叫 `isProvideContentAllowed(String)` 方法，並針對內容傳遞擁有者身分識別的 UPN (使用者主體名稱)。 如果此函數傳回 false，內容「可能不會」傳回給呼叫者。 透過內容提供者傳回的檔案描述元會自動根據檔案身分識別進行處理。
+如果應用程式透過 **ContentProvider** 提供 **ParcelFileDescriptor** 以外的公司資料，該應用程式必須在 `MAMContentProvider` 中呼叫 `isProvideContentAllowed(String)` 方法，並針對內容傳遞擁有者身分識別的 UPN (使用者主體名稱)。 如果此函式傳回 false，內容「絕不能」傳回給呼叫者。 透過內容提供者傳回的檔案描述元會自動根據檔案身分識別進行處理。
 
 ### <a name="selective-wipe"></a>選擇性抹除
 
@@ -1342,6 +1382,8 @@ public interface MAMAppConfig {
 
  Intune App SDK 隨附的 AndroidManifest.xml 檔案包含 **MAMNotificationReceiverService**，其必須為匯出的服務，才能讓公司入口網站傳送通知給可搭配 Intune 的應用程式。 服務會檢查呼叫者以確保僅允許公司入口網站傳送通知。
 
+### <a name="reflection-limitations"></a>反映限制
+部分 MAM 基底類別 (例如 MAMActivity、MAMDocumentsProvider) 包含的方法 (以原始的 Android 基底類別為基礎)，使用只存在某些 API 層級以上的參數或傳回型別。 因此，它不可能一直使用反映來列舉所有的應用程式元件方法。 這項限制並不限於 MAM，如果應用程式本身實作這些來自 Android 基底類別的方法，也會套用相同的限制。
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 取用者的期望
 
 Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強制執行原則，而更頻繁地觸發失敗狀況。 下列 Android 最佳作法可降低失敗的可能性：

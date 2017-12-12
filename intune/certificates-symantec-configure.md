@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad97ee87262b6169ff363bff2ab88b7906d4e90e
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>針對 Symantec PKI Manager Web 服務設定 Intune 憑證連接器
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/17/2017
 * 來自 Microsoft CA 的 SCEP 憑證
 * 來自 Symantec CA 的 PKCS 憑證
 
-如果您想要針對 Microsoft CA 和 Symantec CA 使用 Intune 憑證連接器，您必須先針對 Microsoft CA 完成 Intune 憑證連接器的設定，然後再依照下列指示完成針對 Symantec CA 的設定。  如需針對 Microsoft CA 設定 Intune 憑證連接器的詳細資料，請參閱[透過 Intune 設定並管理 PKCS 憑證](certificates-scep-configure.md)。
+如果您想要針對 Microsoft CA 和 Symantec CA 使用 Intune 憑證連接器，您必須先針對 Microsoft CA 完成 Intune 憑證連接器的設定，然後再依照下列指示完成針對 Symantec CA 的設定。  如需針對 Microsoft CA 設定 Intune 憑證連接器的詳細資料，請參閱[如何在 Microsoft Intune 中設定憑證](certificates-configure.md)。
 
 ## <a name="prepare-to-install-intune-certificate-connector"></a>準備安裝 Intune 憑證連接器
 
@@ -279,7 +279,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     |PKCS 憑證參數 | 值 | 說明 |
     | --- | --- | --- |
-    | 憑證授權單位 | pki-ws.symauth.com | 此值必須為不具結尾斜線的 Symantec CA 基礎服務 URL。  如果您不確定這是否為適用於您 Symantec CA 訂閱的正確基礎服務 URL，請連絡 Symantec 客戶服務。 <br><br> 如果 URL 不正確，Intune 憑證連接器將不會從 Symantec CA 核發 PKCS 憑證。| 
+    | 憑證授權單位 | pki-ws.symauth.com | 此值必須為不具結尾斜線的 Symantec CA 基礎服務 FQDN。  如果您不確定這是否為適用於您 Symantec CA 訂閱的正確基礎服務 FQDN，請連絡 Symantec 客戶服務。 <br><br> 如果 FQDN 不正確，Intune 憑證連接器將不會從 Symantec CA 核發 PKCS 憑證。| 
     | 憑證授權單位名稱 | Symantec | 此值必須為 **Symantec**字串。 <br><br> 如果對此值做出任何變更，Intune 憑證連接器將不會從 Symantec CA 核發 PKCS 憑證。|
     | 憑證範本名稱 | 來自 Symantec CA 的憑證設定檔 OID。 <br><br> 範例：`2.16.840.1.113733.1.16.1.2.3.1.1.61904612`| 此值必須為在上一節中從 Symantec CA 憑證設定檔範本取得的憑證設定檔 OID。 <br><br> 如果 Intune 憑證連接器無法在 Symantec CA 中找到與此憑證設定檔 OID 相關聯的憑證範本，它將不會從 Symantec CA 核發 PKCS 憑證。|
 
@@ -305,11 +305,11 @@ Intune 憑證連接器服務記錄可於 NDES 連接器電腦上的 `%ProgramFil
 | --- | --- |
 | 無法在 NDES 連接器 UI 上使用 Intune 租用戶系統管理員帳戶登入 | 當內部部署憑證連接器沒有在 Intune 系統管理入口網站中啟用時，便可能發生此情況。 若要解決此問題，請使用下列步驟： <br><br> 從 Silver Light UI： <br> 1.登入 [Intune 系統管理入口網站](https://admin.manage.microsoft.com) <br> 2.按一下 [管理員] <br> 3.選取 [行動裝置管理] > [憑證連接器] <br> 4.按一下 [設定內部部署憑證連接器] <br> 5.選取 [啟用憑證連接器] 核取方塊 <br> 6.按一下 [ **確定**]。 <br><br>或是 <br><br> 從 Azure 入口網站 UI： <br> 1.登入 [Azure 入口網站](https://portal.azure.com) <br> 2.移至 [Microsoft Intune] <br> 3.選取 [裝置設定] > [憑證授權單位] <br> 4.按一下 [啟用]。 <br><br> 從 Silver Light UI 或 Azure 入口網站完成上述步驟之後，請嘗試在 NDES 連接器 UI 中使用相同的 Intune 租用戶系統管理員帳戶登入。 |
 | 找不到 NDES 連接器憑證。 <br><br> System.ArgumentNullException: 值不可以是 Null。 | 如果 Intune 租用戶系統管理員帳戶從未登入 NDES 連接器 UI，Intune 憑證連接器便會顯示此錯誤。 <br><br> 如果此錯誤持續發生，請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 services.msc <br> 2.選取 [Intune 連接器服務]。 <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]。|
-| NDES 連接器 - IssuePfx - 一般例外狀況： <br> System.NullReferenceException: 物件參考未設定至物件的執行個體。 | 此為暫時性錯誤。 請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 services.msc <br> 2.選取 [Intune 連接器服務] <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]。 |
-| Symantec 提供者 - 無法取得 Symantec 原則「作業逾時」 | Intune 憑證連接器在與 Symantec CA 通訊期間接收到作業逾時錯誤。 如果此錯誤持續發生，請提升連線逾時值並再試一次。 <br><br> 嘗試提升連線逾時： <br> 1.移至 NDES 連接器電腦 2. 在記事本中開啟 `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` 檔案 <br> 3.提升下列參數的逾時值 <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新啟動 Intune 連接器服務 <br> 如果此問題持續發生，請連絡 Symantec 客戶服務。 |
+| NDES 連接器 - IssuePfx - 一般例外狀況： <br> System.NullReferenceException: 物件參考未設定至物件的執行個體。 | 這是暫時性的錯誤。 請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 services.msc <br> 2.選取 [Intune 連接器服務] <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]。 |
+| Symantec 提供者 - 無法取得 Symantec 原則「作業逾時」 | Intune 憑證連接器在與 Symantec CA 通訊期間接收到作業逾時錯誤。 如果此錯誤持續發生，請提升連線逾時值並再試一次。 <br><br> 嘗試提升連線逾時： <br> 1.移至 NDES 連接器電腦。 <br>2.在 [記事本] 中開啟 `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` 檔案。 <br> 3.提升下列參數的逾時值： <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新啟動 Intune 連接器服務。 <br><br> 如果此問題持續發生，請連絡 Symantec 客戶服務。 |
 | Symantec 提供者 - 無法取得用戶端憑證 | Intune 憑證連接器無法從 [本機電腦\個人] 憑證存放區擷取資源驗證憑證。 若要解決此問題，請務必將資源驗證憑證連同其私密金鑰一起安裝於 [本機電腦\個人] 憑證存放區中。 <br><br> **注意：**資源驗證憑證必須從 Symantec CA 取得。 如需詳細資料，請連絡 Symantec 客戶服務。 | 
 | Symantec 提供者 - 無法取得 Symantec 原則「要求已經中止: 無法建立 SSL/TLS 的安全通道」。 | 此錯誤會在下列案例發生： <br><br> 1.Intune 憑證連接器服務沒有從 [本機電腦\個人] 憑證存放區讀取資源驗證憑證及其私密金鑰的足夠權限。 若要解決此問題，請檢查 services.msc 中執行內容帳戶的「連接器」服務。 「連接器」服務必須於 NT AUTHORITY\SYSTEM 內容下執行。 <br><br> 2.Intune 系統管理入口網站中的 PKCS 憑證設定檔可能具有無效的 Symantec CA 基礎服務 FQDN 設定。 FQDN 應該會類似於 `pki-ws.symauth.com`。 若要解決此問題，請連絡 Symantec 客戶服務以確認該 URL 是否適用於您的訂閱。 <br><br> 3.Intune 憑證連接器無法使用資源驗證憑證與 Symantec CA 進行驗證，因為該憑證無法擷取其私密金鑰。 若要解決此問題，請務必將資源驗證憑證連同其私密金鑰一起安裝於 [本機電腦\個人] 憑證存放區中。 <br><br> 如果此問題持續發生，請連絡 Symantec 客戶服務。 |
-| Symantec 提供者 - 無法取得 Symantec 原則「無法解讀要求項目」。 | Intune 憑證連接器無法取得 Symantec 憑證設定檔範本，因為用戶端設定檔 OID 與 Intune 憑證設定檔不符。 在另一個情況下，Intune 憑證連接器無法在 Symantec CA 中找到與指定用戶端設定檔 OID 相關聯的憑證設定檔範本。 <br><br> 若要解決此問題，請務必從 Symantec CA 中的 Symantec 憑證範本取得正確的用戶端設定檔 OID，並更新 Intune 系統管理入口網站中的 PKCS 憑證設定檔。 <br><br> 從 Symantec CA 取得用戶端設定檔 OID： <br> 1.登入 Symantec CA 系統管理入口網站。 <br> 2.按一下 [Manage Certificate Profiles] \(管理憑證設定檔\) <br> 3.選取您要使用的憑證設定檔。 <br> 4.取得憑證設定檔 OID。 它看起來會與下列範例類似： <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 為 PKCS 憑證設定檔更新正確的憑證設定檔 OID： <br>1.登入 Intune 系統管理入口網站 <br> 2.移至 [PKCS 憑證設定檔]，並按一下 [編輯]。 <br> 3.在 [憑證範本名稱] 欄位中，更新憑證設定檔 OID。 <br> 4.儲存 PKCS 憑證設定檔。 |
+| Symantec 提供者 - 無法取得 Symantec 原則「無法解讀要求項目」。 | Intune 憑證連接器無法取得 Symantec 憑證設定檔範本，因為用戶端設定檔 OID 與 Intune 憑證設定檔不符。 在另一個情況下，Intune 憑證連接器無法在 Symantec CA 中找到與指定用戶端設定檔 OID 相關聯的憑證設定檔範本。 <br><br> 若要解決此問題，請務必從 Symantec CA 中的 Symantec 憑證範本取得正確的用戶端設定檔 OID。 然後在 Intune 管理入口網站中更新 PKCS 憑證設定檔。 <br><br> 從 Symantec CA 取得用戶端設定檔 OID： <br> 1.登入 Symantec CA 系統管理入口網站。 <br> 2.按一下 [Manage Certificate Profiles] \(管理憑證設定檔\) <br> 3.選取您要使用的憑證設定檔。 <br> 4.取得憑證設定檔 OID。 它看起來會與下列範例類似： <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 為 PKCS 憑證設定檔更新正確的憑證設定檔 OID： <br>1.登入 Intune 系統管理入口網站 <br> 2.移至 [PKCS 憑證設定檔]，並按一下 [編輯]。 <br> 3.在 [憑證範本名稱] 欄位中，更新憑證設定檔 OID。 <br> 4.儲存 PKCS 憑證設定檔。 |
 | Symantec 提供者 - 原則驗證失敗。 <br><br> 屬性沒有位於 Symantec 支援的憑證範本屬性清單上 | 當 Symantec 憑證設定檔範本和 Intune 憑證設定檔之間出現差異時，Symantec CA 便會顯示此訊息。 此問題很可能是因為 SubjectName 或 SubjectAltName 屬性不符而造成。 <br><br> 若要解決此問題，請務必在 Symantec 憑證設定檔範本中，針對 SubjectName 和 SubjectAltName 選取 Intune 支援的屬性。 如需詳細資訊，請參閱＜憑證參數＞一節中的 Intune 支援的屬性。 |
 | 某些使用者裝置沒有接收到來自 Symantec CA 的 PKCS 憑證。 | 此問題會在使用者 UPN 包含如底線等特殊字元時發生 (範例：`global_admin@intune.onmicrosoft.com`)。 <br><br> Symantec CA 在 mail_firstname 和 mail_lastname 中並不支援特殊字元。 <br><br> 下列步驟可協助解決此問題： <br><br> 1. 登入 Symantec CA 系統管理入口網站。 <br> 2.移至 [Manage Certificate Profiles] \(管理憑證設定檔\)。 <br> 3. 按一下用於 Intune 的憑證設定檔。 <br> 4.按一下 [Customize] \(自訂\) 選項連結。 <br> 5. 按一下 [Advanced] \(進階\) 按鈕。 <br> 6.在 [Certificate fields – Subject DN] \(憑證欄位 - 主體 DN\) 底下，新增 [Common Name (CN)] \(一般名稱 (CN)\) 欄位，並刪除現有的 [Common Name (CN)] \(一般名稱 (CN)\) 欄位。 新增和刪除動作必須同時執行。 <br> 7.  按一下 [儲存]。 <br><br> 透過先前的變更，Symantec 憑證設定檔將會要求 “CN=<upn>”，而非 mail_firstname 和 mail_lastname。 |
 | 使用者手動從裝置刪除已部署的憑證。 | Intune 會在下一次簽入或強制執行原則時，重新部署相同的憑證。 在此情況下，NDES 連接器並不會接收到 PKCS 憑證要求。 |
