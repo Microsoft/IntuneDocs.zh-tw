@@ -2,8 +2,8 @@
 title: "Android 使用 Pulse Secure 的個別應用程式 VPN"
 description: "您可以為 Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: debedcb5137b4cdd56aaff2536b9f55bd07bb0f7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 65bd7e15a49d5b563b6a095593ca5d8d5316a1fa
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔
 
