@@ -2,8 +2,8 @@
 title: "允許和封鎖 KNOX 的應用程式"
 description: "自訂設定檔來建立一份允許和封鎖 KNOX 的應用程式清單。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32a023db057f864625ba2a56500c0e669770fad2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ee5279c91eeaa2d75044a156ebe9c4b100bd8047
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 10/10/2017
     - **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
     - **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
-4. 按一下 確定，然後按一下儲存原則。 
+4. 按一下 [確定]，然後按一下 [儲存原則]。 
 
 >[!TIP]
 > 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。

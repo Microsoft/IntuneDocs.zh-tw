@@ -2,8 +2,8 @@
 title: "Exchange ActiveSync 原則設定"
 description: "使用 Intune Exchange ActiveSync 原則進行設定，讓您能夠控制由 Exchange ActiveSync 所管理之裝置上的特性與功能。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dd762af4295c788202150799ef60b748fe7de21
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 08e8fde89fc7b0b4114e9c084f8e00692bcc92b0
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Exchange ActiveSync 原則設定
 

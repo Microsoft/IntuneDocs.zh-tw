@@ -14,11 +14,11 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解決 Symantec Endpoint Protection Mobile 找到的威脅
 
@@ -34,7 +34,7 @@ Symantec Endpoint Protection Mobile 在您的裝置上找到潛在威脅，您�
 
 ![具有「公司入口網站」網站連結的 Skycure 錯誤訊息](./media/mtd-go-to-device-management-portal-android.png)
 
-點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](https://portal.manage.microsoft.com)，您將能在那裡看見修正該問題的指示。
+點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](https://portal.manage.microsoft.com#HelpDeskDialog)，您將能在那裡看見修正該問題的指示。
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile 視為威脅的應用程式範例
 
@@ -44,5 +44,5 @@ Symantec Endpoint Protection Mobile 在您的裝置上找到潛在威脅，您�
 
 當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 
