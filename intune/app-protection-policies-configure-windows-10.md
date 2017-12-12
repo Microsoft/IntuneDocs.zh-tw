@@ -3,8 +3,8 @@ title: "準備好設定適用於 Windows 10 的應用程式保護原則"
 titlesuffix: Azure portal
 description: "設定 Azure AD 中的行動應用程式管理 (MAM) 提供者"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/25/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
-ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
+ms.openlocfilehash: 91e26256d220ba70e5ad6daa3910d34eea8bb5ed
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
@@ -52,8 +52,8 @@ ms.lasthandoff: 10/26/2017
     **MAM 合規性 URL**  
       MAM 服務的合規性端點的 URL。 當使用者從不符合規範的裝置存取資源遭拒時，將會對該使用者顯示此合規性 URL。 使用者可以瀏覽至 MDM 服務主控的此 URL，了解他們的裝置被視為不符合規範的原因。 使用者也可起始自助式補救，讓裝置變為符合規範，以繼續存取資源。
 
-5.  按一下 [儲存]。
+5.  按一下 **[儲存]**。
 
 ## <a name="next-steps"></a>後續步驟
 
-[建立 WIP 應用程式保護原則](windows-information-protection-policy-create.md)
+[建立 WIP 應用程式保護原則 (英文)](windows-information-protection-policy-create.md)

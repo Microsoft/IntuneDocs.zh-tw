@@ -14,11 +14,11 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2eaa2da79f8ce85cef8c258dd17828f6639bba71
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>您必須讓您的裝置能夠掃描安全性威脅
 
@@ -26,4 +26,4 @@ ms.lasthandoff: 09/28/2017
 
 若要開啟掃描功能，您可以移至 [設定] > [Google] > [安全性]，然後開啟 [掃描裝置中的安全性威脅]。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

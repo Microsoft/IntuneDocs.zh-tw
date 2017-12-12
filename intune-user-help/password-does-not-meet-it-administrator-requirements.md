@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>您的密碼不符合公司支援人員需求
 
@@ -46,4 +46,4 @@ PIN 或密碼問題的描述：
 
 - **密碼不夠複雜，無法符合需求**。 公司支援人員要求您必須在密碼中使用多個複雜字元。 請嘗試使用數字、大寫的字母和 $ %和 # 這類符號。 這也適用於您裝置上的其他帳戶，因此請務必檢查任何其他工作帳戶，確保您的密碼符合 IT 為您的裝置所設定的需求。
 
-如果您無法了解如何讓您的密碼符合需求，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+如果您無法了解如何讓您的密碼符合需求，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

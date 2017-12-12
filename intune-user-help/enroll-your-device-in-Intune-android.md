@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 10/06/2017
 
     請記住，這些動作都是為了實現安全性而執行。 公司支援人員不會毫無理由地嘗試侵犯您的隱私權或清除您的資訊，而是要確保公司資料的安全。
 
-    Microsoft 不會控制此訊息，而且我們了解其措辭可能顯得有點極端。 公司入口網站無法只顯示與您組織相關聯的限制和存取。 它們全部都會同時顯示於此畫面上。 如果您針對個別組織的使用方式有疑問，請使用[公司入口網站](https://portal.manage.microsoft.com)中的連絡資訊，連絡您公司的支援人員以取得詳細資訊。
+    Microsoft 不會控制此訊息，而且我們了解其措辭可能顯得有點極端。 公司入口網站無法只顯示與您組織相關聯的限制和存取。 它們全部都會同時顯示於此畫面上。 如果您針對個別組織的使用方式有疑問，請使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中的連絡資訊，連絡您公司的支援人員以取得詳細資訊。
 
 12.  遵循提示以輸入 PIN 或密碼。 如果您在這部裝置上已設定 PIN 或密碼，您將不會看到這個畫面，或需要輸入新的 PIN 或密碼。
 
@@ -129,4 +129,4 @@ ms.lasthandoff: 10/06/2017
 
 如果在 Intune 嘗試註冊裝置時出現錯誤，您可以[將註冊錯誤傳送給公司的支援人員](send-enrollment-errors-to-your-it-admin-android.md)。
 
-是否仍需要協助？ 請連絡公司支援人員 (可查看[公司入口網站](https://portal.manage.microsoft.com)以取得連絡資訊)，或是撰寫電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+是否仍需要協助？ 請連絡公司支援人員 (可查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)以取得連絡資訊)，或是撰寫電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

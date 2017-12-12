@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cdcad8e7265c72312663ce45056e1d42b7379699
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a64a8c6f0f616b0e236cf063b396eae3106ca445
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>尚不支援您的 Windows 裝置作業系統版本
 
 隨著快速的技術開發步調，有時候您的裝置可能是連公司支援人員都還沒有機會測試的新裝置。 最新的 Windows 版本有可能無法和您公司的其他工具搭配使用。 
 
-您必須連絡您公司的支援人員以解決此問題。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+您必須連絡您公司的支援人員以解決此問題。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

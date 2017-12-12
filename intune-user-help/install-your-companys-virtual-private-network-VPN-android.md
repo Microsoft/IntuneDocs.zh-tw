@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e4180a20fdbc3181fe631f1b57ec6758a9e16ee4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>如何安裝您公司的虛擬私人網路 (VPN)
 
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/28/2017
 3.  點選 [安裝公司 VPN 設定檔]，然後遵循提示進行。 安裝步驟視您公司使用的 VPN 提供者而可能稍有不同。
 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

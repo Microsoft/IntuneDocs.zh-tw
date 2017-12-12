@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>從公司入口網站遠端鎖定裝置
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/28/2017
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-為了安全起見，您可以使用[公司入口網站](https://portal.manage.microsoft.com)的 [遠端鎖定] 選項來鎖定裝置。 [遠端鎖定] 適用於︰
+為了安全起見，您可以使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)的 [遠端鎖定] 選項來鎖定裝置。 [遠端鎖定] 適用於︰
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>使用 [遠端鎖定] 來鎖定裝置
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
 
   ![公司入口網站的影像，畫面左邊是展開的側邊功能表，包括 [首頁]、[所有應用程式]、[我的裝置]、[技術支援] 和 [登出] 按鈕。](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ ms.lasthandoff: 09/28/2017
 
 在使用遠端鎖定之後，如果找回裝置且想要解除鎖定，只要輸入密碼即可。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

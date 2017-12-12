@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f4e3b0fac86fb49ac86e2c3c5daf68c0f5f154c
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f8f24629cbf6768e49c244ee6dfe31f0035d052a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-enable-user-access-control"></a>如何啟用使用者存取控制
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 11/09/2017
 2. 開啟 [安全性與維護] > [變更使用者帳戶控制設定]。
 3. 在 [選擇電腦變更的通知時機] 頁面上，將滑桿移至最接近 [一律通知] 的前兩格之一。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune 的初期版本 - 2017 年 12 月
 
@@ -60,9 +60,6 @@ Intune 應用程式防護原則能提供建立全域預設原則的能力，以�
 
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 裝置動作 <!-- 1244701 -->
 您可以關閉 iOS 10.3 受監督的裝置。 這個動作會立即關閉裝置，而不會警告使用者。 您可以在 [裝置] 工作負載中選取裝置時，於裝置屬性中找到 [關機 (僅限受監督)] 動作。
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>現已支援 Palo Alto VPN <!-- 1333680 eeready -->
-當您設定基底 VPN 時，[連線類型] 清單將會包含 Palo Alto VPN。
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>針對 SCEP 和 PFX 憑證處理的多連接器支援 <!-- 1361755 eeready -->
 使用內部部署 NDES 連接器將憑證傳遞至裝置的客戶，將可在單一租用戶上設定多個連接器。

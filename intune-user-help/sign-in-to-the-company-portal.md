@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 622006bf6ac244ddcf5e11f765f4119e6822866f
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登入公司入口網站應用程式？ <!--User Story 1132123-->
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 10/27/2017
 
 1.  在您的裝置上開啟「公司入口網站」應用程式。
 
-2.  輸入您的**工作或學校帳戶**。
+2.  輸入 [工作或學校帳戶]。
 
 3.  點選 [以憑證登入] 連結。
 
@@ -89,4 +89,4 @@ ms.lasthandoff: 10/27/2017
 
   ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出其進度。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

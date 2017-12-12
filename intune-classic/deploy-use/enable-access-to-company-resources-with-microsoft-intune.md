@@ -2,8 +2,8 @@
 title: "存取公司資源"
 description: "Wi-Fi、VPN 及電子郵件設定檔會一起運作，以協助您的使用者存取所需的檔案及資源。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 515dde28e55524895137ed46ee517e900cdae20c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e3d1b8cff396f6a78d635d96b936a1bb155ca198
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 存取公司資源
 
