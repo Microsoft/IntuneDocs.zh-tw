@@ -552,6 +552,8 @@
   items:
     - name: 協助使用者疑難排解問題
       href: help-desk-operators.md
+    - name: Intune 活動的稽核記錄
+      href: monitor-audit-logs.md
     - name: 使用 Intune 資料倉儲
       href: reports-nav-create-intune-reports.md
       items:
