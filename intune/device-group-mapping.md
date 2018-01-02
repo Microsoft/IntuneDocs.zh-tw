@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>對應裝置群組
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ ms.lasthandoff: 09/15/2017
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>步驟 2 - 建立 Azure Active Directory 安全性群組
 在此步驟中，您將根據裝置類別和裝置類別名稱，在 Azure 入口網站中建立動態群組。
 
-若要繼續，請參閱 Azure Active Directory 文件中的[使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)主題。 
+若要繼續，請參閱 Azure Active Directory 文件中的[使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)主題。
 
 您可以使用此章節中的資訊，運用 **deviceCategory** 屬性來建立具有進階規則的裝置群組。 例如 (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 09/15/2017
 
 當 iOS 和 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
 
-若要指派類別給 Windows 裝置，使用者必須在註冊裝置之後使用公司入口網站 (portal.manage.microsoft.com)。 在 Windows 裝置上，存取該網站並移至 [功能表] > [我的裝置]。 選擇頁面中列出的已註冊裝置，然後選取類別。 
+無論何種平台，您的使用者一律可在註冊裝置後移至 portal.manage.microsoft.com。 讓使用者存取公司入口網站，並移至 [我的裝置]。 他們可以選擇頁面中列出的已註冊裝置，然後選取類別。
 
 選擇類別之後，裝置就會自動新增至您建立的對應群組。 如果裝置在您設定類別之前就已註冊，則使用者將會在公司入口網站上看到關於該裝置的通知，並將在使用者下次於 iOS 或 Android 上存取公司入口網站應用程式時，要求他們選取類別。
 
@@ -92,5 +91,3 @@ ms.lasthandoff: 09/15/2017
 - 您可以在 Azure 入口網站中編輯裝置類別，但如果這麼做，就必須手動更新所有參考此類別的 Azure Active Directory 安全性群組。
 
 - 如果刪除類別時，則所有指派給該類別的裝置，之後會顯示該類別名稱為**未指派**。
-
-

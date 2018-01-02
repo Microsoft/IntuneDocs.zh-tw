@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: 移除使用者
           href: device-remove-user.md
-        - name: Android 遠端控制
+        - name: 遠端控制行動裝置
           href: device-profile-android-teamviewer.md
         - name: 重設 Windows 10 的 PIN 碼
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: 適用於 Windows 10 的 Office 365 應用程式
               href: apps-add-office365.md
+            - name: 適用於 macOS 的 Office 365 應用程式
+              href: apps-add-office365-macos.md
         - name: 指派應用程式
           href: apps-deploy.md
         - name: 監視 App
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: 監視條件式存取合規性
           href: conditional-access-exchange-monitor.md
+        - name: 將 Jamf Pro 與 Intune 整合以取得合規性
+          href: conditional-access-integrate-jamf.md
+        - name: 在使用 Jamf Pro 管理的 Mac 上強制執行合規性
+          href: conditional-access-assign-jamf.md
     - name: 保護應用程式和裝置資料
       items:
         - name: 使用應用程式保護原則

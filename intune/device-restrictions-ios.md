@@ -3,8 +3,8 @@ title: "iOS 的 Intune 裝置限制設定"
 titleSuffix: Azure portal
 description: "了解 iOS 裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 裝置限制設定
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 - **修改通知設定 (僅限受監督)** - 允許使用者變更裝置通知設定。
 - **修改背景圖片 (僅限受監督)** - 允許使用者變更裝置的背景圖片。
 - **修改企業應用程式信任設定 (僅限受監督)** - 讓使用者能選擇信任不是從應用程式市集下載的應用程式。
-- **組態設定檔變更** - 允許使用者安裝組態設定檔。
+- **組態設定檔變更 (僅供監督)** - 允許使用者安裝組態設定檔。
 - **啟用鎖定 (僅限受監督)** - 在受監督的 iOS 裝置上將啟用鎖定啟用。
 
 ## <a name="configurations-requiring-supervision"></a>設定需要監督

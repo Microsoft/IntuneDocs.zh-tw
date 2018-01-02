@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>自動化針對不符合合規性的動作
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/23/2017
 
 動作有兩種：
 
--   **透過電子郵件通知終端使用者**：您可以先自訂電子郵件通知，再將它傳送給終端使用者。 Intune 提供主旨、郵件內文的自訂功能，包含公司標誌、連絡資訊和其他收件者。
+-   **透過電子郵件通知終端使用者**：您可以先自訂電子郵件通知，再將它傳送給終端使用者。 Intune 提供主旨、郵件內文的自訂功能，包含公司標誌和連絡資訊。
 
 -   **標記裝置不符合規**：您可以用天數決定排程，在該天數之後裝置應標記為不符合規範。 這可以是立即執行，但您也可以給使用者一個寬限期，讓其符合裝置合規性原則。
 
