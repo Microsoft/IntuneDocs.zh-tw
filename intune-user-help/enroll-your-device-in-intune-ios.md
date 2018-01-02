@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>設定對您公司資源的存取
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/01/2017
 |![設定檔在設定中開啟。](./media/ios-9-cp-enroll-1711.png)|點選 [安裝]。|
 |![畫面底部的安裝設定檔強制回應對話方塊。](./media/ios-10-cp-enroll-1711.png)|點選 [安裝]。|
 |![設定檔正在安裝載入畫面。](./media/ios-11-cp-enroll-1711.png)|等候載入。|
-|![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.png)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.png)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
 |![系統提示詢問對遠端管理的信任。](./media/ios-13-cp-enroll-1711.png)|點選 [信任]，讓您的公司管理您裝置上的公司資訊和設定。|
 |![設定檔完成安裝載入畫面。](./media/ios-14-cp-enroll-1711.png)|等候載入。|
 |![已安裝設定檔畫面。](./media/ios-15-cp-enroll-1711.png)|您的設定檔已安裝，且您的裝置的公司資訊和設定離受管理更近一步。|
@@ -75,4 +75,4 @@ ms.lasthandoff: 12/01/2017
 > [!Note]
 > 在完全管理您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
