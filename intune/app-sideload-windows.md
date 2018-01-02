@@ -1,9 +1,9 @@
 ---
-title: "側載 Windows 和 Windows Phone 的應用程式"
+title: "側載適用於 Intune 的 Windows 和 Windows Phone 應用程式"
 description: "了解如何簽署企業營運應用程式，讓您可以使用 Intune 部署它們。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/17/2017
 下列步驟可協助您取得所需的憑證及簽署應用程式。 您將必須註冊為 Microsoft 開發人員，然後購買 Symantec 憑證。
 
 
-1. **註冊為 Microsoft 開發人員**<br>使用您登入以購買公司帳戶時所使用的公司帳戶資訊
-   [註冊為 Microsoft 開發人員](http://go.microsoft.com/fwlink/?LinkId=268442)。 這項要求需要在您收到程式碼簽署憑證之前，由公司主管人員授權。
+1. **註冊為 Microsoft 開發人員**<br>
+   使用您登入以購買公司帳戶時所使用的公司帳戶資訊[註冊成為 Microsoft 開發人員](http://go.microsoft.com/fwlink/?LinkId=268442)。 這項要求需要在您收到程式碼簽署憑證之前，由公司主管人員授權。
 
 2. **取得公司 Symantec 憑證**<br>
   使用您的 Symantec 識別碼，從 [Symantec 網站](http://go.microsoft.com/fwlink/?LinkId=268441) 購買憑證。 購買憑證之後，您在註冊為 Microsoft 開發人員時指定的公司核准者，將會收到一封請求核准憑證要求的電子郵件。 如需 Symantec 憑證需求的詳細資訊，請參閱[為什麼 Windows Phone 需要 Symantec 憑證？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 裝置註冊常見問題集。

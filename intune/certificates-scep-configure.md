@@ -3,10 +3,10 @@ title: "透過 Intune 設定並管理 SCEP 憑證"
 titlesuffix: Azure portal
 description: "了解如何設定基礎結構，並建立及指派 Intune SCEP 憑證設定檔。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +88,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時指定此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步驟 2：設定憑證授權單位上的憑證範本
-在這項工作中，您將會：
+在這項工作中，您要：
 
 -   設定 NDES 的憑證範本
 
@@ -153,7 +153,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的必要條件
-在這項工作中，您將會：
+在這項工作中，您要：
 
 -   將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
 
@@ -164,7 +164,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 
 
-   1.  在將裝載 NDES 的伺服器上，您必須以**企業系統管理員**的身分登入，然後使用[新增角色及功能精靈](https://technet.microsoft.com/library/hh831809.aspx)來安裝 NDES：
+   1.  在裝載 NDES 的伺服器上，以**企業系統管理員**的身分登入，然後使用[新增角色及功能精靈](https://technet.microsoft.com/library/hh831809.aspx)來安裝 NDES：
 
     1.  在精靈中，選取 [Active Directory 憑證服務]  以存取 AD CS 角色服務。 選取 [網路裝置註冊服務] ，取消核取 [憑證授權單位] ，然後完成精靈。
 
@@ -194,7 +194,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步驟 4：設定 NDES 以搭配 Intune 使用
-在這項工作中，您將會：
+在這項工作中，您要：
 
 -   設定 NDES 以便用於發行 CA
 
@@ -239,7 +239,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (十進位)|
 
 
-4. 在 IIS 管理員中，選擇 [預設的網站] -> [要求篩選] -> [編輯功能設定]，然後將 [URL 長度上限] 和 [查詢字串上限] 變更為 *65534* (如所顯示)。
+4. 在 IIS 管理員中，選取 [預設的網站] -> [要求篩選] -> [編輯功能設定]，然後將 [URL 長度上限] 和 [查詢字串上限] 變更為 *65534* (如所顯示)。
 
     ![IIS URL 和查詢長度上限](.\media\SCEP_IIS_max_URL.png)
 
@@ -255,7 +255,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 1.  在 NDES 伺服器上，要求並安裝來自內部 CA 或公用 CA 的 **伺服器驗證** 憑證。 然後將此 SSL 憑證繫結在 IIS 中。
 
     > [!TIP]
-    > 在 IIS 中繫結 SSL 憑證之後，您也會安裝用戶端驗證憑證。 此憑證可以由 NDES 伺服器所信任的任何 CA 發出。 雖然不是最佳做法，但您可以使用相同的憑證，進行伺服器和用戶端驗證，只要憑證中同時有雙方的增強金鑰使用方法 (EKU) 即可。 請檢閱以下的步驟，以取得這些驗證憑證的相關資訊。
+    > 在 IIS 中繫結 SSL 憑證之後，安裝用戶端驗證憑證。 此憑證可以由 NDES 伺服器所信任的任何 CA 發出。 雖然不是最佳做法，但您可以使用相同的憑證，進行伺服器和用戶端驗證，只要憑證中同時有雙方的增強金鑰使用方法 (EKU) 即可。 請檢閱以下的步驟，以取得這些驗證憑證的相關資訊。
 
     1.  取得伺服器驗證憑證後，開啟 [IIS 管理員] ，在 [連線]  窗格中選取 [預設的網站]  ，然後按一下 [動作]  窗格中的 [繫結]  。
 
@@ -297,32 +297,19 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 4. 重新啟動 NDES 伺服器。 伺服器現在已準備好支援 Certificate Connector。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步驟 5：啟用、安裝及設定 Intune 憑證連接器
-在這項工作中，您將會：
+在這項工作中，您要：
 
 - 啟用 Intune 中的 NDES 支援。
-
-- 下載、安裝及設定 NDES 伺服器上的憑證連接器。
-
-   > [!NOTE]
-   > 若要支援高可用性，您可以安裝多個憑證連接器執行個體。
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>啟用針對憑證連接器的支援
-
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
-4. 在 [裝置設定] 刀鋒視窗中選擇 [憑證授權單位]。
-5.  選取 [啟用憑證連接器]。
+- 在您環境的伺服器上下載、安裝及設定憑證連接器。 若要支援高可用性，您可以在不同的伺服器上安裝多個憑證連接器。
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
-
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
-4. 在 [裝置設定] 刀鋒視窗中選擇 [憑證授權單位]。
-5. 選擇 [下載憑證連接器]。
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. 登入 Azure 入口網站。 
+2. 選取 [More Services] (更多服務) > [監視 + 管理] > [Intune]。
+3. 在 [Intune] 刀鋒視窗中，選取 [裝置設定]。
+4. 在 [裝置設定] 刀鋒視窗中選取 [憑證授權單位]。
+5. 按一下 [新增] 並選取 [Download Connector file] (下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
 6.  下載完成之後，請在 Windows Server 2012 R2 伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
 
     > [!NOTE]
@@ -358,17 +345,17 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 ## <a name="how-to-create-a-scep-certificate-profile"></a>如何建立 SCEP 憑證設定檔
 
 1. 在 Azure 入口網站中，選取 [設定裝置] 工作負載。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
+2. 在 [裝置設定] 刀鋒視窗中，選取 [管理]  >  [設定檔]。
+3. 在 [設定檔] 刀鋒視窗中，選取 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為 SCEP 憑證設定檔輸入 [名稱] 及 [描述]。
-5. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
+5. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選取下列平台之一，進行裝置限制設定︰
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
-6. 從 [設定檔類型] 下拉式清單中，選擇 [SCEP 憑證]。
+6. 從 [設定檔類型] 下拉式清單中，選取 [SCEP 憑證]。
 7. 在 [SCEP 憑證] 刀鋒視窗上，進行以下設定：
     - **憑證有效期間** - 如果您已在發行 CA 上執行 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，允許自訂有效期間，則可以指定憑證到期之前的剩餘時間長度。<br>您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。 
     - **金鑰儲存提供者 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10) - 指定儲存憑證金鑰的位置。 選擇下列其中一個值：
@@ -392,7 +379,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     - **金鑰大小 (位元)** - 選取金鑰中要包含的位元數。 
     - **雜湊演算法：** (Android、Windows Phone 8.1、Windows 8.1、Windows 10) - 選取其中一種可用的雜湊演算法類型，搭配此憑證使用。 選取連線中裝置所支援的最強安全性層級。 
     - **根憑證** - 選擇先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 
-    - **擴充金鑰使用方法** - 選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。 
+    - **擴充金鑰使用方法** - 選取 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。 
     - **註冊設定**
         - **更新閾值 (%)** - 指定裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
         - **SCEP 伺服器 URL** - 指定一或多個將透過 SCEP 發行憑證的 NDES 伺服器 URL。 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
@@ -34,7 +34,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 您可以使用兩種不同的方式來取得公司入口網站︰
 
 - 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您公司的支援人員也可以為您安裝公司入口網站應用程式。
-- 前往您公司支援人員設定的[公司入口網站](https://portal.manage.microsoft.com)。
+- 前往您公司支援人員設定的[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>應用程式與網站之間的差異為何？
 公司入口網站應用程式與公司入口網站有一些次要差異，但您可以對兩者執行的大部分工作都相同。 您可以執行的工作：
@@ -60,8 +60,9 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 若要了解公司支援人員可以在您裝置上看到及看不到的內容，請使用符合所用裝置類型的連結︰
 
 - [安裝 Android 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [安裝 iOS 與 macOS 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [安裝 Windows 版的公司入口網站應用程式](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [安裝 iOS 版公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [安裝 macOS 版公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [安裝 Windows 版的公司入口網站應用程式](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>您可以新增哪種電腦或裝置到公司入口網站？
 -   使用 iOS (例如 iPhone 和 iPad) 及 macOS (例如 MacBook 和 iMac) 的 Apple 裝置
@@ -78,7 +79,8 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 從公司入口網站「移除」電腦或裝置時，即會從 Intune 取消註冊裝置。 取消註冊之後，將無法再從該裝置存取公司入口網站，而且有些公司資料也會從您的裝置上移除。 若要查看如何從公司入口網站移除裝置，請選擇下列其中一個連結︰
 
 - [取消註冊您的 Android 裝置](unenroll-your-device-from-intune-android.md)
-- [取消註冊您的 iOS 或 macOS 裝置](unenroll-your-device-from-intune-ios.md)
+- [取消註冊 iOS 裝置](unenroll-your-device-from-intune-ios.md)
+- [取消註冊 macOS 裝置](unenroll-your-device-from-intune-macos.md)
 - [取消註冊您的 Windows 裝置](unenroll-your-device-from-intune-windows.md)
 
 當您*重設*電腦或裝置時，公司入口網站會嘗試將電腦或裝置重設為製造商的預設設定。 重設裝置時，會移除裝置中的所有公司和個人資料！ 如果您遺失您的裝置，則也可以從公司入口網站進行遠端重設。
@@ -95,6 +97,7 @@ Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供
 
 - [修正 Android 裝置常見的問題](troubleshoot-your-device-android.md)
 - [修正 iOS 裝置常見的問題](troubleshoot-your-device-ios.md)
+- [修正 macOS 裝置常見的問題](troubleshoot-your-device-macos.md)
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您公司的支援人員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
+您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您公司的支援人員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中找到他們的連絡資訊。

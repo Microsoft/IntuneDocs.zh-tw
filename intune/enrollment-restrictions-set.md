@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 身為 Intune 系統管理員，您可以建立和管理註冊限制，定義可以註冊使用 Intune 管理的裝置數目和類型。 您可以建立多項限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
->註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。 
+>註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。
+
+>[!NOTE]
+>正陸續針對所有 Intune 客戶推出以下所述的群組指派註冊限制和優先權功能。 全部推出後，您可能無法存取群組，也沒有優先權功能。 
 
 您可以建立的特定註冊限制包括：
 

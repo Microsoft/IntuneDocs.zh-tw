@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -57,7 +57,7 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
    a. 在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [設定] 以開啟 Google Play 的 Android for Work 網站。 在瀏覽器的新索引標籤中開啟網站。
    ![顯示設定 Android for Work 繫結之連結的螢幕擷取畫面](./media/android-work-bind.png)
 
-   b. **登入 Google**<br>
+   b。 **登入 Google**<br>
    在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是貴公司 IT 管理員共用的 Google 帳戶，以在 Play for Work 主控台中管理及發行應用程式。
 
    c. **提供組織詳細資料**<br>
@@ -69,6 +69,17 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
    - **將所有裝置當成 Android 管理**。 所有 Android 裝置 (包括支援 Android for Work 的裝置) 都會註冊為傳統 Android 裝置。
    - **將支援的裝置當成 Android for Work 管理**。 所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置會註冊為傳統 Android 裝置。
    - **將這些使用者群組中僅限使用者的受支援裝置當成 Android for Work 管理**。 您可將 Android for Work 管理的目標設為一組有限的使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。 這在 Android for Work 試驗期間會很有用。
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>在受控的 Google Play 商店中核准公司入口網站應用程式
+您需要在受控的 Google Play 商店中核准 Android 公司入口網站應用程式，以確保它會接收自動的應用程式更新。 如果不核准，公司入口網站最後會過時，不能接收 Microsoft 發行的重要 Bug) 修正或新功能。
+
+請遵循下列步驟核准 Intune 公司入口網站：
+
+1.  從[受控的 Google Play 商店](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)下載公司入口網站應用程式。
+2.  以設定 Android for Work 繫結的相同 Google 帳戶，登入受控的 Google Play 商店。
+3.  按一下 [核准]。  這會開啟新的對話方塊。
+4.  檢閱此對話方塊中的權限，然後按一下 [核准]。 您需要允許這些權限，才能讓公司入口網站應用程式管理裝置上的工作設定檔。
+5.  選取 [Keep approved when app requests new permissions] (當應用程式要求新權限時，保留已核准的權限)，然後按一下 [儲存]。
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:

@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>透過 Intune 設定並管理 PKCS 憑證
 
@@ -101,22 +101,20 @@ ms.lasthandoff: 11/16/2017
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 瀏覽至 [Intune]，[裝置設定]，[憑證授權單位]，然後按一下 [下載憑證連接器]。
-   * 將下載項目儲存到要安裝它的伺服器上您可以存取的位置。
-3. 登入您將安裝 Microsoft Intune 憑證連接器的伺服器。
-4. 執行安裝程式，並接受預設位置。 它會將連接器安裝到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
+1. 在 Azure 入口網站中，選取 [More Services] (更多服務) > [監視 + 管理] > [Intune]。
+2. 在 [Intune] 刀鋒視窗中，選取 [裝置設定]。 
+3. 在 [裝置設定] 刀鋒視窗中選取 [憑證授權單位]。 
+4. 按一下 [新增] 並選取 [Download Connector file] (下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
+5.  登入您將安裝 Microsoft Intune 憑證連接器的伺服器。
+6.  執行安裝程式，並接受預設位置。 它會將連接器安裝到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
+    1. 在 [安裝程式選項] 頁面上，選擇 [PFX 發佈] 並按一下 [下一步]。
+    2. 按一下 [安裝]，然後等候安裝完成。
+    3. 在 [完成] 頁面上，選取標籤為 [Launch Intune Connector] (啟動 Intune 連接器) 的方塊，然後按一下 [完成]。
+7.  NDES 連接器現在應該會開啟至 [註冊] 索引標籤。若要連線到 Intune，請按一下 [登入] 並提供具有系統管理權限的帳戶。
+8.  在 [進階] 索引標籤上，您可以讓選項按鈕 [使用此電腦的 SYSTEM 帳戶 (預設)] 保持選取。
+9.  按一下 [套用]，然後按一下 [關閉]。
+10. 現在請返回 Azure 入口網站。 在幾分鐘之後，您在 [Intune] > [裝置設定] > [憑證授權單位] 底下，應該會看到 [連線狀態] 下顯示綠色的核取記號和 [作用中] 的文字。 這項確認可讓您知道您的連接器伺服器能夠與 Intune 通訊。
 
-      a. 在 [安裝程式選項] 頁面上，選擇 [PFX 發佈] 並按一下 [下一步]。
-
-   b。 按一下 [安裝]，然後等候安裝完成。
-
-   c. 在 [完成] 頁面上，選取標籤為 [啟動 Intune 連接器] 的方塊，然後按一下 [完成]。
-
-5. NDES 連接器現在應該會開啟至 [註冊] 索引標籤。若要連線到 Intune，您必須按一下 [登入] 並提供具有系統管理權限的帳戶。
-6. 在 [進階] 索引標籤上，您可以讓選項按鈕 [使用此電腦的 SYSTEM 帳戶 (預設)] 保持選取。
-7. 按一下 [套用]，然後按一下 [關閉]。
-8. 現在請返回 Azure 入口網站。 在幾分鐘之後，您在 [Intune]，[裝置設定]，[憑證授權單位] 底下，應該會看到 [連線狀態] 下顯示綠色的核取記號和 [作用中] 的文字。 這項確認可讓您知道您的連接器伺服器能夠與 Intune 通訊。
 
 ## <a name="create-a-device-configuration-profile"></a>建立裝置組態設定檔
 
@@ -169,4 +167,4 @@ ms.lasthandoff: 11/16/2017
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "在 Azure 入口網站中瀏覽至 Intune 並建立受信任憑證的新設定檔"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "建立設定檔並上傳受信任的憑證"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "從 Azure 入口網站下載憑證連接器"
+[ConnectorDownload]: ./media/certificates-download-connector.png "從 Azure 入口網站下載憑證連接器"  

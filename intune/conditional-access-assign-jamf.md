@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -42,12 +42,9 @@ ms.lasthandoff: 12/01/2017
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>在 Jamf Pro 中部署 macOS 的公司入口網站應用程式
 
-有兩種方式可在 Jamf Pro 中部署 macOS 的公司入口網站應用程式：
+您應該遵循下列程序，在 Jamf Pro 中將 macOS 公司入口網站應用程式部署為背景安裝：
 
-- 在 Jamf 自助服務中提供公司入口網站應用程式部署；或者，
-- 作為背景安裝，以便使用者遵循下列程序：
-
-1. 在 macOS 裝置上，下載 [macOS 版公司入口網站應用程式](https://go.microsoft.com/fwlink/?linkid=862280)的目前版本。
+1. 在 macOS 裝置上，下載 [macOS 版公司入口網站應用程式](https://go.microsoft.com/fwlink/?linkid=862280)的目前版本。 不要安裝它。您需要將應用程式複本上傳至 Jamf Pro。
 2. 開啟 Jamf Pro，然後瀏覽至[電腦管理] > [套件]。
 3. 搭配 macOS 版公司入口網站應用程式建立新的套件，然後按一下 [儲存]。
 4. 開啟 [電腦] > [原則]，然後選取 [新增]。
@@ -71,7 +68,7 @@ ms.lasthandoff: 12/01/2017
 > 公司入口網站應用程式必須從 Jamf 自助服務啟動，才能開始裝置註冊。 <br><br>以手動方式啟動公司入口網站應用程式 (例如，從 [應用程式] 或 [下載] 資料夾)，不會註冊裝置。 如果使用者以手動方式啟動公司入口網站，他們會看到 'AccountNotOnboarded' 警告。
 
 1. 在 Jamf Pro 中，瀏覽至 [電腦] > [原則]，然後針對裝置註冊建立新的原則。
-2. 設定 [Microsoft Intune 整合] 承載，包括觸發程序和執行頻率。 將優先順序設定為 [之後]。
+2. 設定 [Microsoft Intune 整合] 承載，包括觸發程序和執行頻率。
 3. 按一下 [範圍] 索引標籤，然後將原則的範圍設定為所有目標裝置。
 4. 按一下 [自助服務] 索引標籤，使原則可在 Jamf 自助服務中使用。 將原則包含在 [裝置合規性] 類別中。 按一下 **[儲存]**。
 

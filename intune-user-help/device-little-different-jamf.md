@@ -1,11 +1,11 @@
 ---
-title: "此裝置稍有不同 | Microsoft Docs"
+title: "如果使用 Jamf 自助服務可能看到的錯誤 | Microsoft Docs"
 description: "深入了解啟用 Intune 且由 Jamf 管理的 macOS 裝置。"
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>在 Jamf 管理的 macOS 裝置上執行動作
 
@@ -28,4 +28,8 @@ ms.lasthandoff: 11/08/2017
 
 如果您的 macOS 裝置有合規性問題，請按一下 [解決] 按鈕，啟動 [自助]。
 
-是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
+__如果看到 "AccountNotOnboarded" 或「已註冊裝置」該怎麼辦__
+
+如已開啟公司入口網站應用程式，並出現訊息指出 "AccountNotOnboarded"，您需要結束公司入口網站應用程式，並移至 [應用程式] > [自助]。 貴公司有您需要安裝的裝置註冊原則。 按一下原則安裝它，然後再次開啟公司入口網站。
+
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中找到他們的連絡資訊。

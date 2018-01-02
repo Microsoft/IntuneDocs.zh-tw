@@ -4,9 +4,9 @@
 
 ## [我的公司可以從 Intune 查看哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [重設裝置時會發生什麼事？](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [重設我的裝置](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [如何登入公司入口網站](sign-in-to-the-company-portal.md)
+## [登入公司入口網站](sign-in-to-the-company-portal.md)
 
 ## [使用您的 Android 裝置](using-your-android-device-with-intune.md)
 ### [註冊 Android 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -66,15 +66,15 @@
 ### [設定或變更密碼](set-or-change-your-passcode-ios.md)
 ### [使用公司入口網站重設您的裝置會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [重設裝置](reset-erase-your-device-cpwebsite.md)
-### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)
 ### [將裝置取消註冊](unenroll-your-device-from-intune-ios.md)
 #### [如果將裝置取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [手動同步您的裝置](sync-your-device-manually-ios.md)
 
-### [修正 iOS 的常見問題](troubleshoot-your-device-iOS.md)
+#### [修正 iOS 的常見問題](troubleshoot-your-device-iOS.md)
 #### [重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
 #### [將錯誤傳送給公司](send-errors-to-your-it-admin-ios.md)
 #### [將錯誤傳送給 Microsoft](send-logs-to-microsoft-ios.md)
+#### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-ios.md)
 #### [出現錯誤](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [識別裝置](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [尋找序號](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,11 +97,20 @@
 ### [註冊 macOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
 ### [註冊您的舊版 macOS 裝置](enroll-your-device-in-intune-macos-legacy.md)
-### [此裝置稍有不同](device-little-different-jamf.md)
+### [取消註冊 macOS 裝置](unenroll-your-device-from-intune-macos.md)
+
+### [修正 macOS 的常見問題](troubleshoot-your-device-macos.md)
+#### [尚不支援我的 macOS 版本](your-macos-version-isnt-yet-supported.md)
+#### [更新 macOS 裝置](you-need-to-update-your-macos-device.md)
+#### [提交公司入口網站錯誤](send-errors-macos.md)
+#### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-macos.md)
+#### [此裝置稍有不同](device-little-different-jamf.md)
+#### [尋找序號](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [識別裝置](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
-### [註冊 Windows 10 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [使用其他版本的 Windows 來註冊 Windows 裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [註冊 Windows 10 裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [註冊其他 Windows 版本](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)
 ### [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +137,6 @@
 #### [我需要啟用防火牆](you-need-to-enable-defender-firewall-windows.md)
 #### [我需要啟用 UAC](you-need-to-enable-uac-windows.md)
 #### [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
-#### [我需要開啟 Windows Defender](turn-on-defender-windows.md) 
+#### [我需要開啟 Windows Defender](turn-on-defender-windows.md)
 
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)

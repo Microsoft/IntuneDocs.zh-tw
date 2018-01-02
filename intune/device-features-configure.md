@@ -3,10 +3,10 @@ title: "設定 Intune 裝置功能設定"
 titleSuffix: Azure portal
 description: "了解如何在管理的裝置上使用 Intune 設定功能。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定裝置功能設定
 
@@ -47,11 +47,12 @@ ms.lasthandoff: 09/15/2017
     - [適用於 iOS 的主畫面配置設定](home-screen-settings-ios.md)
     - [適用於 iOS 的應用程式通知設定](app-notification-settings-ios.md)
     - [適用於 iOS 的共用裝置組態設定](shared-device-settings-ios.md)
+    - [設定 Intune 以進行 iOS 裝置單一登入](sso-ios.md)
     - [適用於 iOS 的網路內容篩選器](web-content-filter-settings-ios.md)
 
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後按一下 [建立]。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 2071eac453bb0bc4f241d8bf16d5c848dedfd64c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 10/06/2017
 
     您會暫時看到「註冊您的裝置」訊息。
 
-11. 當 [You're all set!] (已全部完成!) 畫面顯示所有項目都已正確設定時，請點選 [完成]。
+11. 當**已全部完成！**畫面 顯示所有項目都已正確設定時，請點選 [完成]。
 
     ![公司存取設定顯示工作設定檔和註冊已完成](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
@@ -80,4 +80,4 @@ ms.lasthandoff: 10/06/2017
 
     ![Play Store for Work 應用程式頁面](./media/andr-afw-tap-work-play-store-icon.png)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
