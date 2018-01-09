@@ -2,8 +2,8 @@
 title: "使用 EMS 的 BYOD 技術決策"
 description: "使用 Microsoft Enterprise Mobility + Security 啟用 BYOD 和保護公司資料的主要技術決策。"
 keywords: 
-author: 
-ms.author: pfetty
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: a0b5f170c10cff189a269b29ffc466bd2d51ed12
-ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
+ms.openlocfilehash: 9f8fa87c3100a3e0444f6f44a9976c3b399ab334
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 12/09/2017
 | 意外的資料共用或儲存至不安全的位置 | 限制另存為 | 限制另存為 |
 |意外的資料共用或儲存至不安全的位置 | 停用列印 | n/a|
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 現在要將焦點放在裝置管理、應用程式管理或兩者的組合，決定您組織中是否啟用 BYOD。 實作選擇的決定權在您，以確保無論如何都能使用 Azure AD 提供的身分識別和安全性功能。
 
 使用 Intune [規劃指南](planning-guide.md)規劃下一個層級。

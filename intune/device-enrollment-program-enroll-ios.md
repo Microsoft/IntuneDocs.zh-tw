@@ -3,8 +3,8 @@ title: "註冊 iOS 裝置 - 裝置註冊方案"
 titlesuffix: Azure portal
 description: "了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 25e5922de658ca2137a32e43802072367587747c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -78,7 +78,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
    ![新增 DEP 的 MDM 伺服器名稱，然後按一下 [下一步] 的螢幕擷取畫面。](./media/enrollment-program-token-add-server.png)
 
-5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
+5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。  
 
 
 7. 移至 [部署計劃] &gt; [裝置註冊計劃] &gt; [管理裝置]。
@@ -194,4 +194,4 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 ## <a name="distribute-devices"></a>散發裝置
 您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。
 
-請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。
+請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。 

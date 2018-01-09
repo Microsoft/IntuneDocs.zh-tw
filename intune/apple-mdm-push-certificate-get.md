@@ -3,8 +3,8 @@ title: "取得 Apple MDM Push Certificate"
 titlesuffix: Azure portal
 description: "了解取得 Apple MDM Push Certificate 以利用 Intune 管理 iOS 裝置的步驟。\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d05199359f7e4ca2c41415c0db13e339c66c162
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b67c2cb238d354ccd9801ec0b5c9f8ccb49c6715
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>取得 Apple MDM Push Certificate
 
@@ -36,7 +36,7 @@ Intune 可啟用 iPad、iPhone 和 Mac 電腦的行動裝置管理 (MDM)，且�
   ![顯示未設定 MDM Push 之 [設定 MDM Push Certificate] 的螢幕擷取畫面。](./media/create-mdm-push-certificate.png)
 
 **步驟 2.建立 Apple MDM Push Certificate。**<br>
-選取 [建立您的 MDM Push Certificate]，以前往 Apple Push Certificates 入口網站。 使用您的公司 Apple ID 登入，然後按一下建立憑證。 選取 [選擇檔案]，然後瀏覽至憑證簽署要求檔案，然後選擇 [上傳]。 在 [確認] 頁面上，選取 [下載] 以下載憑證檔案 (.pem)，然後將檔案儲存在本機。
+選取 [建立您的 MDM Push Certificate]，以前往 Apple Push Certificates 入口網站。 使用您的公司 Apple ID 登入，然後按一下 [建立憑證]。 選取 [選擇檔案]，然後瀏覽至憑證簽署要求檔案，然後選擇 [上傳]。 在 [確認] 頁面上，選取 [下載] 以下載憑證檔案 (.pem)，然後將檔案儲存在本機。
 
 > [!NOTE]
 > 憑證會與用來建立憑證的 Apple ID 相關。 最佳做法是對管理工作使用公司 Apple ID。 請不要使用個人 Apple ID。

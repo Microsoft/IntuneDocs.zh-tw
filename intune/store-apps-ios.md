@@ -3,8 +3,8 @@ title: "如何將 iOS 市集應用程式新增至 Intune | Microsoft Docs"
 titlesuffix: Azure portal
 description: "了解如何將 iOS 市集應用程式新增至 Intune。"
 keywords: Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何將 iOS 市集應用程式新增至 Microsoft Intune
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 10/20/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
+3. 在 [Intune] 刀鋒視窗上選擇 [管理應用程式]。
 4. 在 [行動裝置應用程式] 工作負載中，選擇 [管理] > [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
 6. 在 [新增應用程式] 刀鋒視窗中，選擇 [搜尋 App Store]。

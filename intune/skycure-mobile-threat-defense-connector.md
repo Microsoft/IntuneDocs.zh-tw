@@ -3,10 +3,10 @@ title: "Skycure 連接器與 Intune"
 titlesuffix: Azure portal
 description: "Skycure 連接器與 Intune 的整合。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47df2c4a909c397ac5a6c0f736d11344de44736e
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 555c8fa7960a080e3c845053a4893d16a082088d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
@@ -67,7 +67,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 ![偵測到惡意應用程式](./media/skycure-arch-1.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![偵測到惡意應用程式後授與存取](./media/skycure-arch-2.png)
 
@@ -79,7 +79,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 ![封鎖透過 Wi-Fi 的網路存取](./media/skycure-arch-3.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![補救後授與存取](./media/skycure-arch-4.png)
 
@@ -91,7 +91,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 ![偵測到網路威脅時封鎖 SharePoint Online](./media/skycure-arch-5.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![Sharepoint 的補救後授與存取範例](./media/skycure-arch-6.png)
 
@@ -111,7 +111,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 如需詳細資訊，請參閱 [Skycure 網站 (英文)](https://www.skycure.com/skycure-microsoft-integration/)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 以下是整合 Intune 與 Skycure 所需完成的步驟：
 

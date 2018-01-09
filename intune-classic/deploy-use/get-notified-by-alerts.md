@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>使用警示以取得 Microsoft Intune 的通知
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 10/10/2017
 
 使用下列選項協助您處理 Intune 管理主控台的警示。
 
-|選項|描述|
+|選項|說明|
 |-----|----|
 |**檢視作用中警示**|選擇其中一個：<br /><br />**檢視警示摘要**   主要錯誤會顯示在 [儀表板] 工作區的 [警示] 窗格中。 選擇此窗格，以查看更多詳細資訊。<br /><br />此外，您可以在 [警示]  工作區的 [概觀]  頁面上檢視警示摘要 。<br /><br />**檢視所有警示**   在 [警示] 工作區中，選擇 [所有警示]。|
 |**檢視通知**|選擇其中一個：<br /><br />在 **[儀表板]** 工作區中，選擇 **[通知]**。<br /><br />在 **[警示]** 工作區中，選擇 **[所有警示]** &gt; **[通知]**。|

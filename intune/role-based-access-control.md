@@ -3,8 +3,8 @@ title: "RBAC 搭配 Intune"
 titleSuffix: Azure portal
 description: "Intune Azure 預覽版︰了解 RBAC 如何讓您控制誰可以執行動作及變更。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: e33ee50ea7973a2ea2cf71c06255d99e1bc48f45
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
 
@@ -124,10 +124,10 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 <br></br>
 5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [使用 Intune 技術服務人員角色搭配疑難排解入口網站](help-desk-operators.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Azure AD 指派角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
