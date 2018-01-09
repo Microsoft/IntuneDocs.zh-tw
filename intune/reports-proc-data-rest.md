@@ -2,8 +2,8 @@
 title: "使用 REST 用戶端從資料倉儲 API 取得資料"
 description: "使用 RESTful API 從 Intune 資料倉儲擷取資料。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4991a2b26b97428fc54234ff35871d446107b950
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 11/09/2017
 
 您需要下列資訊，才能使用 Postman 進行 REST 呼叫：
 
-| 屬性        | 描述                                                                                                                                                                          | 範例                                                                                       |
+| 屬性        | 說明                                                                                                                                                                          | 範例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回呼 URL     | 在應用程式設定頁面中，將此項目設定為回呼 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | 權杖名稱       | 用來將認證傳遞給 Azure 應用程式的字串。 此程序會產生您的權杖，以針對資料倉儲 API 進行呼叫。                          | Bearer                                                                                        |
@@ -222,7 +222,7 @@ namespace IntuneDataWarehouseSamples
 
 11.  檢閱主控台輸出。 此輸出包含從 Intune 租用戶的 **dates** 實體中提取的資料，且格式為 JSON。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您可以在[使用 Intune 資料倉儲 API](reports-api-url.md) 中找到授權、API URL 結構和 OData 端點的詳細資料。 
 

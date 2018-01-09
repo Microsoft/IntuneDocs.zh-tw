@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司入口網站重設 Android 裝置會發生什麼情況？
 
 當您使用公司入口網站來重設 Android 裝置時，會刪除裝置上的所有應用程式、設定和個人資料。 這會將裝置重設回其原廠預設設定。
 
-如果您有 Samsung KNOX 裝置，則可以從公司入口網站選擇 [裝置移除] 選項，以進行「選擇性抹除」。 「選擇性抹除」只會移除：
+如果您有 Samsung Knox 裝置，則可以從公司入口網站選擇 **「device remove」** (裝置移除) 選項，進行「選擇性抹除」。 「選擇性抹除」只會移除：
 
 - 公司支援人員提供給您的商務應用程式。
 - 電子郵件、VPN 和 Wi-Fi。

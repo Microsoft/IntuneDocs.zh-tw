@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>透過 Intune 設定並管理 PKCS 憑證
 
@@ -55,10 +55,11 @@ ms.lasthandoff: 12/11/2017
 
    例如：
 
+4.  在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI] 。
+
    `certutil -ca.cert certnew.cer`
 
    如需詳細資訊，請參閱[管理憑證的 Certutil 工作](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign)。
-
 
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>設定憑證授權單位上的憑證範本
 

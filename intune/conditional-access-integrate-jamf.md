@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |您需要傳統入口網站的 Intune 相關文件嗎？ [請移至這裡](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
 | |
 
-|目前處於私人預覽|
-|--|
-|只有目前處於私人預覽中的客戶才能使用本主題所述的功能。 針對所有客戶發行時，會移除此訊息。|
-| |
-
 如果您的組織使用 [Jamf Pro](https://www.jamf.com) 來管理使用者的 Mac，您可以使用 Microsoft Intune 合規性原則搭配 Azure Active Directory 條件式存取，來確保您組織中的裝置能符合規範。
 
 ## <a name="prerequisites"></a>必要條件
 
 您需要下列項目以搭配 Jamf Pro 設定條件式存取：
 
-- Intune 私人預覽的存取權，以使用 macOS 條件式存取
 - Jamf Pro 10.1.0 或更新版本
 - [macOS 版公司入口網站應用程式](https://aka.ms/macoscompanyportal)
 - 具有 OS X 10.11 Yosemite 或更新版本的 macOS 裝置
@@ -60,7 +54,7 @@ ms.lasthandoff: 12/01/2017
 4. 選取 [Web 應用程式 / API]。
 5. 使用 Jamf Pro 執行個體 URL 指定 [登入 URL]。
 6. 按一下 [建立應用程式]。
-7. 儲存新建立的 [應用程式識別碼]，然後開啟 [設定] 並巡覽至 [API 存取] > [金鑰] 以建立新的應用程式金鑰。 輸入 [描述]、[到期日] 前等待的時間，然後將儲存應用程式金鑰。 
+7. 儲存新建立的 [應用程式識別碼]，然後開啟 [設定] 並巡覽至 [API 存取] > [金鑰] 以建立新的應用程式金鑰。 輸入 [描述]、[到期日] 前等待的時間，然後將儲存應用程式金鑰。
 
   > [!IMPORTANT]
   > 應用程式金鑰在此程序期間只會顯示一次。 請務必將它儲存在您可以輕鬆擷取的地方。
@@ -139,6 +133,6 @@ Jamf Pro 會擷取有關受管理 macOS 裝置的清查資訊。 Jamf Pro 會將
 * UDID
 * 使用者電子郵件
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [將合規性原則套用至受 Jamf 管理的裝置](conditional-access-assign-jamf.md)

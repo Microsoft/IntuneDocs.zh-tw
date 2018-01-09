@@ -2,8 +2,8 @@
 title: "Intune 資料倉儲 API | Microsoft Docs"
 description: "您可以使用 API 來建置報表，以深入了解您的企業行動環境。"
 keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: b9328f372e3f3d90c47db2ee77d06a924f38b560
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune 資料倉儲 API
 
@@ -59,7 +59,7 @@ API 需要使用 Azure AD 進行授權。 Azure AD 使用 OAuth 2.0。 授權之
 
 OData 會定義抽象資料模型和通訊協定，可讓任何資料來源所公開的任何用戶端存取資訊。 資料模型文件主題包含 Intune 資料倉儲資料模型中命名空間、實體和傳回物件的說明。 如需詳細資訊，請參閱[資料倉儲資料模型](reports-ref-data-model.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 藉由閱讀 [Azure AD 的驗證案例](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)，深入了解使用 Azure AD。
 

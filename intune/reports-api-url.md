@@ -2,8 +2,8 @@
 title: "Intune 資料倉儲 API 端點 | Microsoft Docs"
 description: "參考主題描述 API URL 結構。"
 keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6dd9098a7db7004f0b7273fc4628d5dd1b535d6d
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -41,7 +41,7 @@ https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouse
 
 URL 包含下列元素：
 
-| 元素 | 範例 | 描述 |
+| 元素 | 範例 | 說明 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 在 Azure 入口網站中檢視資料倉儲 API 刀鋒視窗，即可找到基底 URL。 |
 | entity-collection | dates | OData 實體集合的名稱。 如需資料模型中集合和實體的詳細資訊，請參閱[資料模型](reports-ref-data-model.md)。 |

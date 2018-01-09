@@ -3,8 +3,8 @@ title: "在 Intune 中註冊 Android 裝置 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "了解如何在 Intune 中註冊 Android 裝置。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -95,7 +95,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 如需其他使用者工作的資訊，請參閱下列文章：
 
 - [使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)
-- [在 Intune 上使用您的 Android 裝置](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
+- [搭配 Intune 使用您的 Android 裝置](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbind-your-android-for-work-administrative-account"></a>解除 Android for Work 系統管理帳戶繫結
 

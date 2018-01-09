@@ -2,8 +2,8 @@
 title: "搭配 Intune 使用以應用程式為基礎的條件式存取原則"
 description: "本主題說明如何搭配 Intune 設定以應用程式為基礎的條件式存取原則。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/28/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ccbbe448a61d19b18c9f4f02f90aefa4f415d80b
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>設定以應用程式為基礎的條件式存取原則
 
@@ -79,10 +79,10 @@ ms.lasthandoff: 08/25/2017
 
 5. 依序選擇 [需要經過核准的用戶端應用程式][選取]及 [確定] 儲存新的原則。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用應用程式保護原則保護應用程式資料](app-protection-policies.md)
 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -3,8 +3,8 @@ title: "在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN"
 titleSuffix: Intune on Azure
 description: "指定哪些受管理應用程式可以在受 Intune 管理的 iOS 裝置使用您的 VPN。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/5/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c883ab2b96618502be20583908a4caa52ac5432b
-ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
+ms.openlocfilehash: 1a37fcc372db6fec9f460fdc242cd6d2294f96e1
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN
 
@@ -56,14 +56,14 @@ ms.lasthandoff: 10/17/2017
 將 CA 發行的 VPN 伺服器根憑證匯入在 Intune 中建立的設定檔。 受信任的憑證設定檔會指示 iOS 裝置自動信任 VPN 伺服器顯示的 CA。
 
 1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-2. 選擇 裝置設定，然後按一下設定檔。
+2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
     2. 鍵入**描述**。
     3. 為 [平台] 選取 [iOS]。
     4. 為 [設定檔類型] 選取 [信任的憑證]。
 4. 按一下資料夾圖示，並瀏覽至從您 VPN 管理主控台匯出的 VPN 憑證 (.cer 檔案)。 按一下 [確定]
-5. 按一下 **建立**。
+5. 按一下 [建立]。
 
     ![建立受信任的憑證設定檔](media\vpn-per-app-create-trusted-cert.png)
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 10/17/2017
 受信任的根憑證設定檔可讓 iOS 自動信任 VPN 伺服器。 SCEP 憑證提供從 iOS VPN 用戶端連線到 VPN 伺服器的認證。 憑證可讓裝置以無訊息的方式進行驗證，不會提示 iOS 裝置使用者使用者名稱和密碼。 
 
 1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。 
-2. 選擇 裝置設定，然後按一下設定檔。
+2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
     2. 鍵入**描述**。
@@ -86,10 +86,10 @@ ms.lasthandoff: 10/17/2017
 9. 按一下 [根憑證]，然後選取一個 SCEP 憑證。 按一下 [ **確定**]。
 10. 在 [擴充金鑰使用方法] 的 [名稱] 中，鍵入 `Client Authentication`。
 11. 在 [物件識別碼] 中，鍵入 `1.3.6.1.5.5.7.3.2`。
-12. 按一下 [新增] 。
+12. 按一下 [加入] 。
 13. 鍵入伺服器 URL 並按一下 [新增]。
 14. 按一下 [ **確定**]。
-15. 按一下 **建立**。
+15. 按一下 [建立]。
 
     ![建立 SCEP 憑證設定檔](media\vpn-per-app-create-scep-cert.png)
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 10/17/2017
 VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
 
 1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-2. 選擇 裝置設定，然後按一下設定檔。
+2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
     2. 鍵入**描述**。
@@ -117,7 +117,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
     2. 鍵入 VPN 的 URL 並按一下 [新增]。
     3. 按一下 [ **確定**]。
 6. 按一下 [ **確定**]。
-7. 按一下 **建立**。
+7. 按一下 [建立]。
 
     ![建立個別應用程式 VPN 設定檔](media\vpn-per-app-create-vpn-profile.png)
 
@@ -182,7 +182,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 若要檢閱 iOS 設定，請參閱 [Microsoft Intune 中 iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
 -  若要深入了解 VPN 設定和 Intune，請參閱[如何在 Microsoft Intune 中進行 VPN 設定](vpn-settings-configure.md)。

@@ -3,8 +3,8 @@ title: "如何監視應用程式資訊和指派"
 titlesuffix: Azure portal
 description: "將應用程式指派給使用者或裝置之後，可以使用此資訊協助您監視其狀態。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: cb95319d2574116d480de9bdf74ef36129d0970f
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 監視應用程式資訊和指派
 
@@ -98,6 +98,6 @@ Azure AD 中的使用者名稱。
 使用者未安裝的應用程式數目。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要深入了解如何使用 Intune 資料，請參閱[使用 Intune 資料倉儲](reports-nav-create-intune-reports.md)。

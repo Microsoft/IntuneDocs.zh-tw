@@ -3,10 +3,10 @@ title: "搭配 Intune 使用的 Zimperium MTD 連接器"
 titleSuffix: Intune on Azure
 description: "Zimperium 連接器與 Intune 的整合"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78214293a66784d4bc05e441c2c1cdbf718b0a9a
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Zimperium Mobile Threat Defense 連接器
 
@@ -51,7 +51,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 ![偵測到惡意應用程式](./media/Maliciousapps_blocked_Zimperium.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![偵測到惡意應用程式後授與存取](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 ![封鎖透過 Wi-Fi 的網路存取](./media/network_wifi_blocked_Zimperium.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![補救後授與存取](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,7 +75,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 ![偵測到網路威脅時封鎖 SharePoint Online](./media/network_spo_blocked_Zimperium.png)
 
-**補救後授與存取：**
+**修復後允許存取：**
 
 ![Sharepoint 的補救後授與存取範例](./media/network_spo_unblocked_Zimperium.png)
 
@@ -95,7 +95,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
     -   如需詳細資訊，請參閱 [Zimperium 網站](https://www.zimperium.com/zips-mobile-ips)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [將 Zimperium 與 Intune 整合](zimperium-mtd-connector-integration.md)
 

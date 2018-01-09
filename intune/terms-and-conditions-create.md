@@ -3,8 +3,8 @@ title: "設定 Microsoft Intune 中的條款及條件"
 titlesuffix: Azure portal
 description: "設定使用者會在 Intune 公司入口網站中看到的條款及條件。 "
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63434cbbc9edc668d59fb99968727551e0c4cc40
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fa35cb7b08f0bbf677dd7d8b5122b8b286c49b72
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>確定使用者接受公司條款以進行存取
 

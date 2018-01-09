@@ -3,8 +3,8 @@ title: "將公司識別碼新增至 Intune"
 titlesuffix: Azure portal
 description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。 \""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/26/2017
 ## <a name="add-corporate-identifiers"></a>新增公司識別碼
 建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 IMEI 或序號，然後在右資料行中新增詳細資料。 單一 .csv 檔案只能匯入某一類型的識別碼、IMEI 或序號。 詳細資料限制為 128 個字元，且僅能供系統管理使用。 詳細資料不會顯示在裝置上。 目前限制是每個 .csv 檔案 5,000 列。
 
-**上傳內含序號的 .csv 檔案** - 建立只有兩個行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只能包含 5,000 部裝置，或每個.csv 檔案不得超過 5 MB。
+**上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。
 
 |||
 |-|-|

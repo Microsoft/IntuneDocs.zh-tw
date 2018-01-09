@@ -3,8 +3,8 @@ title: "如何將應用程式指派到群組"
 titlesuffix: Azure portal
 description: "將應用程式新增至 Intune 之後，要將它指派到使用者或裝置的群組中。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 將應用程式指派給群組
 
@@ -106,6 +106,6 @@ ms.lasthandoff: 09/09/2017
 >[!NOTE]
 >僅針對受管理的 iOS 市集應用程式，當您將這些應用程式新增到 Intune 並指派為「必要」時，系統會自動將它們建立成包含「必要」及「可用」用途。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 請參閱[如何監視應用程式](apps-monitor.md)，以取得協助您監視應用程式指派的資訊。

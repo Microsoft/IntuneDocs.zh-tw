@@ -3,8 +3,8 @@ title: "如何將 iOS 企業營運應用程式新增至 Intune"
 titlesuffix: Azure portal
 description: "了解如何將 iOS 企業營運應用程式新增至 Intune。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 20a044ea6b517279a2546f62d05cc79e09dcdc5f
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 iOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/20/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
+3. 在 [Intune] 刀鋒視窗上選擇 [管理應用程式]。
 4. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
 6. 在 [新增應用程式] 刀鋒視窗中，選擇 [企業營運應用程式]。
@@ -75,7 +75,7 @@ ms.lasthandoff: 11/20/2017
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] 注意：若要讓 Intune 服務成功地將新的 IPA 檔案部署到裝置，您必須對 IPA 套件中 Info.plist 檔案內的 CFBundleVersion 字串進行遞增處理。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您已建立的應用程式會顯示在應用程式清單中。 您現在可以將它指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 
