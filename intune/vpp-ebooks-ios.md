@@ -3,8 +3,8 @@ title: "管理大量採購的 iOS 電子書"
 titlesuffix: Azure portal
 description: "針對從 iOS Store 大量採購的電子書，了解如何將電子書同步到 Intune，然後管理及並追蹤其使用情況。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 08/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16f1e720e94ac8c6b35158477b41bfaeac9dc0a8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 78f4ce4b8b37e519e8cb377030a7b119b6a64d92
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
@@ -77,7 +77,7 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 選擇指派動作：**可用**或**必要**。 
 5. 完成之後，請選擇 [儲存]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 請參閱[如何監視應用程式](apps-monitor.md)，以取得協助您監視書籍指派的資訊。
 

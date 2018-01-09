@@ -3,8 +3,8 @@ title: "如何將 Windows 企業營運應用程式新增至 Intune"
 titlesuffix: Azure portal
 description: "了解如何將 Windows 企業營運應用程式新增至 Intune。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33959b941e39d8694387770e1f3264d74647de69
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 256cf22c0a1d061b76c9f7d93a8472e3579d496a
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Windows 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/04/2017
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
-3. 在 **Intune** 刀鋒視窗上選擇 [管理應用程式]。
+3. 在 [Intune] 刀鋒視窗上選擇 [管理應用程式]。
 4. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
 6. 在 [新增應用程式] 刀鋒視窗中，選擇 [企業營運應用程式]。
@@ -69,7 +69,7 @@ ms.lasthandoff: 10/04/2017
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您已建立的應用程式會顯示在應用程式清單中。 您現在可以將它指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 

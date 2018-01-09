@@ -3,10 +3,10 @@ title: "管理 iOS 大量採購的應用程式 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "針對從 iOS Store 大量採購的應用程式，了解如何將應用程式同步到 Intune，然後管理及並追蹤其使用情況。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -38,9 +38,9 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ### <a name="device-licensing"></a>裝置授權
 
-當您將一個應用程式指派給多部裝置時，會使用一個應用程式授權，並與您指派的目標裝置保持關聯。 
+當您將一個應用程式指派給多部裝置時，會使用一個應用程式授權，並與您指派的目標裝置保持關聯。
 
-當您將大量採購的應用程式指派給一部裝置時，裝置的終端使用者不需要提供 Apple ID 來存取市集。 
+當您將大量採購的應用程式指派給一部裝置時，裝置的終端使用者不需要提供 Apple ID 來存取市集。
 
 ### <a name="user-licensing"></a>使用者授權
 
@@ -92,7 +92,8 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
         > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步時的存放區 URL 。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
-    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
+    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。
+會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
 4. 完成之後，請選取 [上傳]。
 
 該權杖會顯示在權杖清單刀鋒視窗內。
@@ -135,8 +136,10 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 若要回收授權，您必須將指派動作變更為**解除安裝**。 在應用程式解除安裝之後，將會回收授權。 如果您移除已指派給使用者的應用程式，則 Intune 會嘗試回收所有已與該使用者建立關聯的應用程式授權。
 
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
+
 當具有合格裝置的使用者第一次嘗試將 VPP 應用程式安裝至裝置時，系統會要求他們加入 Apple 大量採購方案。 他們必須加入，應用程式安裝才會繼續執行。 對於加入 Apple 大量採購方案的邀請，需要使用者能夠在 iOS 裝置上使用 iTunes 應用程式。 如果您已經設定停用 iTunes Store 應用程式的原則，則 VPP 應用程式以使用者為基礎的授權將無法運作。 解決方法是移除原則以允許 iTunes 應用程式，或是使用以裝置為基礎的授權。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 請參閱[如何監視應用程式](apps-monitor.md)，以取得協助您監視應用程式指派的資訊。

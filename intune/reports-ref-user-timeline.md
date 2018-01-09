@@ -2,8 +2,8 @@
 title: "資料倉儲使用者實體時間軸 | Microsoft Docs"
 description: "Intune 資料倉儲以時間軸的方式呈現使用者。"
 keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43234003da859b81dd499f22f7280db5bda41b
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 3f8f3d835369900eb4d1e0bf1287d0354cc1151c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune 資料倉儲中的使用者存留期表示法
 
@@ -73,7 +73,7 @@ John Smith 在 2017/07/25 放棄他的授權。 **User** 資料表有下列項�
  
 若只要查看目前存在的維度實體，可以套用 **IsDeleted = FALSE** 的篩選條件。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。
