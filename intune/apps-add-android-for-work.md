@@ -3,8 +3,8 @@ title: "將應用程式指派給 Android for Work 裝置"
 titlesuffix: Azure portal
 description: "您可以使用本主題進行同步處理，再將應用程式從 Google Play for Work 商店指派給 Android for Work 裝置。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 將應用程式指派至 Android for Work 裝置
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/09/2017
 2. 搜尋商店以尋找您要使用 Intune 指派的應用程式。
 3. 在您選擇的應用程式頁面上，選擇 [核准]。 在此範例中，您已選擇 Microsoft Excel 應用程式。<br>
   ![核准應用程式範例](media/approve.png)
-4. 應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 請選擇 [核准] 來繼續。<br>
+4. 應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 請選擇 [核准] 以繼續。<br>
   ![核准應用程式權限範例](media/approve-app-permissions.png)
 5. 應用程式已通過核准並顯示在您的 IT 管理主控台中。
 

@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -57,7 +57,7 @@ Intune 管理延伸模組具有下列必要條件：
   ![新增 PowerShell 指令碼刀鋒視窗](./media/mgmt-extension-assignments.png)
  
 6. 選擇 [選取群組] 列出可用的 Azure AD 群組。 
-7. 選取群組，然後按一下 [選取] 將原則指派給選取的群組。
+7. 針對裝置將接收指令碼的使用者，選取包含這些使用者的一或多個群組，然後按一下 [選取]，以便將原則指派至選取的群組。
 
 Intune 管理延伸模組每小時會與 Intune 進行同步處理一次。 將原則指派給 Azure AD 群組之後，即會執行 PowerShell 指令碼，並報告執行結果。 
  

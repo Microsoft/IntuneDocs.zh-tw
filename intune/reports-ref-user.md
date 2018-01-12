@@ -2,10 +2,10 @@
 title: "使用者 - Intune 資料倉儲 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中 [使用者] 類別實體集合的參考主題。"
 keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="reference-for-user-entity"></a>User 實體的參考
 
-[使用者] 類別包含 **User** 實體，以定義資料模型中的使用者和代理程式屬性。
+**User** 類別包含定義資料模型中使用者屬性的 **User** 實體。
 
-## <a name="user"></a>使用者
+## <a name="user"></a>User
 
 **User** 實體列出企業中具有所指派授權的所有 Azure Active Directory (Azure AD) 使用者。
 
-**User** 實體集合包含上個月的資料。 這些資料列包含資料收集期間的使用者狀態，即使使用者已經被移除。 例如，某個使用者可能在上個月內被新增到 Intune 然後又被移除。 雖然在報告的時候這個使用者不會出現，但使用者和狀態會出現在上個月的資料中。 您可以建立一個報告，其中顯示使用者的歷程記錄在您資料中出現的期間。
+**User** 實體集合包含了使用者資料。 這些資料列包含資料收集期間的使用者狀態，即使使用者已經被移除。 例如，某個使用者可能在上個月內被新增到 Intune 然後又被移除。 雖然在報告的時候這個使用者不會出現，但使用者和狀態會出現在上個月的資料中。 您可以建立一個報告，其中顯示使用者的歷程記錄在您資料中出現的期間。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 | 範例 |
 |---------|------------|--------|
 | UserKey |資料倉儲中使用者的唯一識別碼 - Surrogate 索引鍵。 |123 |
 | UserId |使用者的唯一識別碼 - 與 UserKey 類似，但為自然索引鍵。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -44,6 +44,6 @@ ms.lasthandoff: 11/15/2017
 | IsCurrent |指出此資料列是否代表該使用者的最新狀態。 針對單一使用者可能會有多個資料列存在，但只有其中一個代表目前的狀態。  |True/False |
 | RowLastModifiedDateTimeUTC |資料列最近一次在資料倉儲中被修改的 UTC 日期和時間  |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>後續步驟
- - 您可以使用 **Current User** 實體集合來將使用者資料限制於目前作用中的使用者。 如需詳細資訊，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。 
+## <a name="next-steps"></a>接下來的步驟
+ - 您可以使用 **Current User** 實體集合來將使用者資料限制於目前作用中的使用者。 如需詳細資訊，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。

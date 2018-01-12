@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="android"></a>Android
 
-|資料類型|Android|Android Samsung KNOX Standard|
+|資料類型|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |網頁連結|已移除。|已移除。|
 |未受管理的 Google Play 應用程式|應用程式和資料仍會保持安裝。|應用程式和資料仍會保持安裝。|
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/01/2017
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
 |電子郵件|n/a (Android 裝置不支援電子郵件設定檔)|經由 Intune 佈建的電子郵件設定檔會予移除，並會刪除裝置上的快取電子郵件。|
-|Outlook|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|適用於 Android 的 Microsoft Outlook 應用程式所收到的電子郵件會予移除。|
+|Outlook|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。|僅當 Android 版 Microsoft Outlook 應用程式受到 MAM 原則保護時，才會移除其所接收的電子郵件。 否則解除註冊時不會抹除 Outlook 的資料。|
 |Azure Active Directory (AD) 退出|已移除 Azure AD 記錄。|已移除 Azure AD 記錄。|
 |連絡人 | 移除直接從應用程式同步到原生通訊錄的連絡人。  無法移除從原生通訊錄同步到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。|移除直接從應用程式同步到原生通訊錄的連絡人。  無法移除從原生通訊錄同步到其他外部來源的任何連絡人。 <br /> <br />目前，只支援 Outlook 應用程式。
 

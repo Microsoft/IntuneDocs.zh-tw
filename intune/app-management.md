@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a1cbd6fc3244686c1f5a1db3e4365e615662f0e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/08/2017
 
 IT 系統管理員需負責確定您的使用者能夠存取其工作所需的應用程式。 這可能是一項挑戰，因為︰
 - 裝置平台及應用程式類型有千百種。
-- 您可能需要管理公司裝置及使用者裝置上的應用程式。
+- 您可能需要同時管理公司裝置和使用者本身裝置上的應用程式。
 - 您必須確保網路和資料的安全。
 
-此外，您也可能想要指派及管理未向 Intune 註冊之裝置上的應用程式。
+此外，您也可能需要指派及管理未向 Intune 註冊之裝置上的應用程式。
 
-Intune 提供各種功能協助您從您需要的裝置上取得所需的應用程式。
+Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式。
 
 ## <a name="app-management-capabilities-by-platform"></a>各種平台的應用程式管理功能
 
@@ -85,19 +85,33 @@ Intune 提供各種功能協助您從您需要的裝置上取得所需的應用�
 - **iOS 佈建設定檔** - iOS 應用程式包含佈建設定檔和由憑證所簽署的程式碼。 憑證過期之後，就無法再執行應用程式。 Intune 提供工具，讓您可主動將新的佈建設定檔原則指派至具有即將到期之應用程式的裝置。
     - [iOS 應用程式佈建設定檔](app-provisioning-profile-ios.md)
 
+如需詳細資訊，請參閱[管理應用程式](app-management.md)。
+
 ### <a name="monitor"></a>監視
-- **授權的應用程式** - 檢視、指派及監視從應用程式市集大量採購的應用程式。
+- **應用程式授權** - 檢視、指派及監視從應用程式市集大量採購的應用程式。
     - [商務用 Microsoft 網上商店大量採購應用程式](windows-store-for-business.md)
-- **探索應用程式** - 顯示 Intune 指派並安裝在裝置上的所有應用程式。
+- **探索到的應用程式** - 顯示 Intune 指派並安裝在裝置上的所有應用程式。
 - **應用程式安裝狀態** - 顯示您所建立之應用程式指派的狀態。
 - **應用程式保護狀態** - 顯示您選取之使用者的應用程式保護原則狀態。
+- **稽核記錄檔** - 顯示所有 IT 系統管理員所進行的 Intune 應用程式相關活動。
 
-如需詳細資訊，請參閱[監視應用程式](apps-monitor.md)
+如需詳細資訊，請參閱[監視應用程式](apps-monitor.md)。
 
 ### <a name="setup"></a>Setup
-<!--- **iOS VPP Tokens**
-    - [iOS volume-purchased apps](vpp-apps-ios.md) --->
+- **iOS VPP 權杖** - 套用並檢視您的 iOS 大量採購方案 (VPP) 授權。
+    - [iOS 大量採購應用程式](vpp-apps-ios.md)
+- **Windows 企業憑證** - 套用或檢視程式碼簽署憑證的狀態，此憑證可用來將企業營運應用程式發佈到您的受控 Windows 裝置。 
+- **Windows Symantec 憑證** - 套用或檢視 Symantec 程式碼簽署憑證的狀態，將 XAP 和 WP8.x appx 檔案發佈至 Windows 10 行動裝置時需要此憑證。 
 - **商務用 Microsoft 網上商店** - 設定對商務用 Microsoft 網上商店的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。
     - [商務用 Microsoft 網上商店大量採購應用程式](windows-store-for-business.md)
+- **Windows 側載金鑰** - 您可以新增 Windows 側載金鑰，以便用來將應用程式直接安裝到裝置，而非發行應用程式並從 Windows 市集下載。
+    - [側載 Windows 應用程式](app-sideload-windows.md) 
 - **公司入口網站品牌** - 自訂公司入口網站以顯示您公司的品牌。
     - [公司入口網站設定](company-portal-app.md)
+- **應用程式類別** - 新增、釘選及刪除應用程式類別名稱。
+- **Android for Work** - 核准並同步處理您已經為企業核准的應用程式。
+    - [Android for Work 應用程式](apps-add-android-for-work.md) 
+
+### <a name="help-and-support"></a>說明及支援
+- **說明及支援** - 進行疑難排解、要求支援，或者檢視 Intune 狀態。
+    - [針對問題進行疑難排解](help-desk-operators.md)

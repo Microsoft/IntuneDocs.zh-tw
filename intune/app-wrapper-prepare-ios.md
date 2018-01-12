@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -345,7 +345,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>權利常見錯誤的疑難排解
 若 App Wrapping Tool for iOS 顯示權利錯誤，請嘗試下列疑難排解步驟。
 
-|問題|原因|解決方法|
+|問題|原因|解決方案|
 |---------|---------|--------------|
 |無法剖析從輸入應用程式產生的權利。|App Wrapping Tool 無法讀取從應用程式解壓縮的權利檔案。 權利檔案的格式可能不正確。|檢查您應用程式的權利檔案。 下列指示說明其作法。 檢查權利檔案時，請檢查是否有任何格式不正確的語法。 檔案格式應該是 XML。|
 |佈建設定檔中遺失權利 (會列出遺失的權利)。 使用具有這些權利的佈建設定檔重新封裝應用程式。|在佈建設定檔中啟用的權利與在應用程式中啟用的功能不符。 與特定功能 (例如 [應用程式群組]、[金鑰鏈共用] 等等) 相關聯的識別碼也會不符。|一般而言，您可以建立新的佈建設定檔，並啟用與應用程式相同的功能。 當設定檔與應用程式之間的識別碼不符時，App Wrapping Tool 會更換識別碼 (如果可以)。 若在建立新的佈建設定檔之後繼續收到此錯誤，您可以嘗試使用 -e 參數移除應用程式的權利 (請參閱＜使用 -e 參數移除應用程式的權利＞一節)。|
@@ -393,7 +393,19 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 -   當您從經過包裝的應用程式內監視裝置上的文件資料夾時，可能會出現一個名為 .msftintuneapplauncher 的資料夾。 若您變更或刪除此檔案，可能會影響受限應用程式正常運作。
 
-### <a name="see-also"></a>請參閱
-- [決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](apps-prepare-mobile-application-management.md)</br>
+## <a name="getting-logs-for-your-wrapped-applications"></a>取得已包裝應用程式的記錄檔
+使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。
+
+1. 移至您裝置上的 iOS 設定應用程式，並選取您的 LOB 應用程式。
+2. 將 [診斷主控台] 切換為 [開啟]。
+3. 啟動您的 LOB 應用程式。
+4. 按一下「開始使用」連結。
+5. 您現在可以透過電子郵件來共用記錄檔，或者將記錄檔複製到 OneDrive 位置。
+
+>[!NOTE]
+已針對使用 Intune App Wrapping Tool 版本 7.1.13 或更新版本包裝的應用程式啟用記錄功能。
+
+### <a name="see-also"></a>另請參閱
+- [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)</br>
 - [使用 Microsoft Intune 原則管理裝置的設定及功能](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [使用 SDK 讓應用程式能夠管理行動裝置應用程式](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

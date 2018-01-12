@@ -2,10 +2,10 @@
 title: "應用程式 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中的實體集合應用程式類別的參考主題。"
 keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/20/2017
 
 **AppRevision** 實體會列出應用程式的所有版本。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 | 範例 |
 |---------|------------|--------|
 | AppKey |應用程式的唯一識別碼。 |123 |
 | ApplicationId |應用程式的唯一識別碼 - 類似 AppKey，但此金鑰是自然的。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -56,15 +56,15 @@ ms.lasthandoff: 10/20/2017
 
 **AppTypes** 實體會列出應用程式的安裝來源。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | AppTypeID |類型識別碼 |
 | AppTypeKey |索引鍵的 Surrogate 索引鍵 |
 | AppTypeName |應用程式類型 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
-| AppTypeID  | Name | 描述 |
+| AppTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 0 |Android 市集應用程式 | Android 市集應用程式。 |
 | 1 |Android LOB 應用程式 | Android 企業營運應用程式。 |
@@ -85,15 +85,15 @@ ms.lasthandoff: 10/20/2017
 
 **VppProgramTypes** 實體會列出應用程式可能的 VPP 方案類型。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | VppProgramTypeID | 類型識別碼。 |
 | VppProgramTypeKey | 索引鍵的 Surrogate 索引鍵。 |
-| VppProgramTypeName | Vpp 方案類型。 |
+| VppProgramTypeName | VPP 方案類型。 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
-| VppProgramID  | Name | 描述 |
+| VppProgramID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft 的 VPP 方案。 |
 | 00000000-0000-0000-0000-000000000000 | 尚未提供 | 預設值為 [無 VPP]。 |
@@ -105,10 +105,33 @@ ms.lasthandoff: 10/20/2017
 
 **ApplicationInventory** 實體會列出清查收集期間在裝置上找到的應用程式。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DeviceKey | 這是包含 Intune 裝置識別碼的裝置資料表參考。 |
 | DateKey | 表示清查當日的日期資料表參考。 |
 | ApplicationName | 應用程式的名稱。 |
 | ApplicationVersion | 應用程式的版本。 |
 | BundleSize | 以位元組為單位的應用程式大小。 |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+**MobileAppInstallState** 實體代表行動應用程式在被指派至包含裝置或使用者 (或兩者) 的群組之後的安裝狀態。
+
+| 屬性 | 說明 |
+|---|---|
+| AppInstallStateKey | 您帳戶之應用程式安裝狀態的唯一識別碼。 |
+| AppInstallState | 應用程式安裝狀態的列舉值。 |
+| AppInstallStateName | 應用程式安裝狀態的名稱。 |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+**MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
+
+| 屬性 | 說明 |
+|---|---|
+| DateKey | 記錄應用程式安裝狀態之日期的索引鍵。 |
+| AppKey | 用來識別 AppRevision 執行個體之行動應用程式的索引鍵。 |
+| DeviceKey | 用來識別 Device 執行個體之目標裝置的索引鍵。 |
+| UserKey | 用來識別 User 執行個體之目標使用者的索引鍵。 |
+|AppInstallStateKey | 用來識別 MobileAppInstallState 執行個體之應用程式安裝狀態的索引鍵。 |
+| ErrorCode | 由與應用程式之安裝相關的應用程式安裝程式、行動平台或服務所傳回的錯誤碼。 |

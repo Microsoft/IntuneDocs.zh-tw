@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,35 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c89d253f28a26a560251b159a3705016b4c7fad3
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung KNOX Standard 裝置限制設定
+# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung Knox Standard 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 搭配 Android 裝置限制原則使用這些設定，來設定您組織中的裝置。
 
 >[!TIP]
->如果沒有您想要的設定，您可以使用[自訂設定檔](custom-settings-android.md)來設定裝置。 
+>如果沒有您想要的設定，您可以使用[自訂設定檔](custom-settings-android.md)來設定裝置。
 
 ## <a name="general"></a>一般
 
 - **相機** - 允許使用裝置的相機。
-- **複製並貼上 (僅限 Samsung KNOX)** - 允許裝置上的複製及貼上功能。
-- **應用程式之間的剪貼簿共用 (僅限 Samsung KNOX)** - 允許使用剪貼簿在應用程式之間複製並貼上。
-- **診斷資料提交 (僅限 Samsung KNOX)** - 讓使用者無法從裝置提交診斷資料。
-- **恢復出廠預設值 (僅限 Samsung KNOX)** - 可讓使用者在裝置上執行原廠重設。
-- **地理位置 (僅限 Samsung KNOX)** - 允許裝置使用位置資訊。
-- **關閉電源 (僅限 Samsung KNOX)** - 可讓使用者關閉裝置電源。<br>如果停用，就無法設定**登入失敗幾次後即抹除裝置**。
-- **螢幕擷取 (僅限 Samsung KNOX)** - 讓使用者將螢幕內容擷取成影像。
-- **語音助理 (僅限 Samsung KNOX)** - 允許在裝置上使用語音助理軟體。
-- **YouTube (僅限 Samsung KNOX)** - 允許在裝置上使用 YouTube 應用程式。
-- **共用的裝置 (僅限 Samsung KNOX)** - 將受管理的 Samsung KNOX Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
+- **複製並貼上 (僅限 Samsung Knox)** - 允許裝置上的複製及貼上功能。
+- **應用程式之間的剪貼簿共用 (僅限 Samsung Knox)** - 允許使用剪貼簿在應用程式之間複製並貼上。
+- **診斷資料提交 (僅限 Samsung Knox)** - 讓使用者無法從裝置提交診斷資料。
+- **恢復出廠預設值 (僅限 Samsung Knox)** - 可讓使用者在裝置上執行原廠重設。
+- **地理位置 (僅限 Samsung Knox)** - 允許裝置使用位置資訊。
+- **關閉電源 (僅限 Samsung Knox)** - 可讓使用者關閉裝置電源。<br>如果停用，就無法設定**登入失敗幾次後即抹除裝置**。
+- **螢幕擷取 (僅限 Samsung Knox)** - 讓使用者將螢幕內容擷取成影像。
+- **語音助理 (僅限 Samsung Knox)** - 允許在裝置上使用語音助理軟體。
+- **YouTube (僅限 Samsung Knox)** - 允許在裝置上使用 YouTube 應用程式。
+- **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
+- **封鎖日期和時間變更 (Samsung Knox)** - 防止使用者在裝置上變更日期和時間設定。 
 
 ## <a name="password"></a>密碼
 
@@ -60,8 +61,8 @@ ms.lasthandoff: 12/12/2017
     - **至少包含英數字元**
     - **至少包含英數字元和符號**
 - **避免重複使用先前的密碼** - 讓使用者無法建立以前用過的密碼。
-- **指紋解除鎖定 (僅限 Samsung KNOX)** - 允許使用指紋來解除鎖定受支援的裝置。
-- **Smart Lock 與其他信任代理程式** - 可讓您控制相容的 Android 裝置 (Samsung KNOX Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時稱為信任代理程式) 可讓您在裝置位於受信任的位置時，停用或略過裝置鎖定畫面密碼。 例如，當裝置連線到特定的藍牙裝置或靠近 NFC 標記時，就能使用此功能。 您可以使用此設定來防止使用者設定 Smart Lock。
+- **指紋解除鎖定 (僅限 Samsung Knox)** - 允許使用指紋將支援的裝置解除鎖定。
+- **Smart Lock 與其他信任代理程式** - 可讓您控制相容 Android 裝置 (Samsung Knox Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時稱為信任代理程式) 可讓您在裝置位於受信任的位置時，停用或略過裝置鎖定畫面密碼。 例如，當裝置連線到特定的藍牙裝置或靠近 NFC 標記時，就能使用此功能。 您可以使用此設定來防止使用者設定 Smart Lock。
 - **加密** - 需要加密裝置上的檔案。
 
 <sup>1</sup> 在您將此設定指派至裝置之前，請確定會將這些裝置上的公司入口網站應用程式更新至最新版本。
@@ -73,11 +74,11 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="google-play-store"></a>Google Play 商店
 
-- **Google Play 商店 (僅限 Samsung KNOX)** - 可讓使用者在裝置上存取 Google Play 商店。
+- **Google Play 商店 (僅限 Samsung Knox)** - 可讓使用者在裝置上存取 Google Play 商店。
 
 ## <a name="restricted-apps"></a>受限應用程式
 
-在受限應用程式清單中，您可以針對 Android 和 Samsung KNOX Standard 裝置設定下列其中一個清單：
+在受限應用程式清單中，您可以針對 Android 和 Samsung Knox Standard 裝置設定下列其中一個清單：
 
 **禁止的應用程式**清單：列出使用者安裝與執行時將會回報的應用程式 (並非由 Intune 管理)。
 **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 為了持續符合規範，使用者絕不能安裝其他應用程式。 自動允許 Intune 所管理的應用程式。
@@ -101,48 +102,48 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="browser"></a>瀏覽器
 
-- **網頁瀏覽器 (僅限 Samsung KNOX)** - 指定是否可使用裝置的預設網頁瀏覽器。
-- **自動填入 (僅限 Samsung KNOX)** - 允許使用網頁瀏覽器的自動填入功能。
-- **Cookie (僅限 Samsung KNOX)** - 允許裝置的網頁瀏覽器使用 Cookie。
-- **JavaScript (僅限 Samsung KNOX)** - 允許裝置的網頁瀏覽器執行 Java 指令碼。
-- **快顯 (僅限 Samsung KNOX)** - 允許在網頁瀏覽器中使用快顯封鎖程式。
+- **網頁瀏覽器 (僅限 Samsung Knox)** - 指定是否可使用裝置的預設網頁瀏覽器。
+- **自動填入 (僅限 Samsung Knox)** - 允許使用網頁瀏覽器的自動填入功能。
+- **Cookie (僅限 Samsung Knox)** - 允許裝置的網頁瀏覽器使用 Cookie。
+- **Javascript (僅限 Samsung Knox)** - 允許裝置的網頁瀏覽器執行 Java 指令碼。
+- **快顯 (僅限 Samsung Knox)** - 允許在網頁瀏覽器中使用快顯封鎖程式。
 
 ## <a name="allow-or-block-apps"></a>允許或封鎖應用程式
 
-針對執行 Samsung KNOX Standard 的裝置，這些設定可以用來指定只能在這些裝置上安裝或啟動的應用程式。
+針對執行 Samsung Knox Standard 的裝置，這些設定可以用來指定只能在這些裝置上安裝或啟動的應用程式。
 此外，您還可以指定將會對裝置使用者隱藏的已安裝應用程式。 使用者將無法執行這些應用程式。
 
-- **允許安裝的應用程式 (僅限 Samsung KNOX Standard)**
-- **禁止應用程式啟動 (僅限 Samsung KNOX Standard)**
-- **不對使用者顯示應用程式 (僅限 Samsung KNOX Standard)**
+- **允許安裝的應用程式 (僅限 Samsung Knox Standard)**
+- **禁止應用程式啟動 (僅限 Samsung Knox Standard)**
+- **不對使用者顯示應用程式 (僅限 Samsung Knox Standard)**
 
 針對每個設定，使用下列其中一項來設定應用程式清單：
 
-- **依套件名稱新增應用程式**：主要用於商務營運應用程式。 輸入應用程式名稱，以及應用程式套件的名稱。 
+- **依套件名稱新增應用程式**：主要用於商務營運應用程式。 輸入應用程式名稱，以及應用程式套件的名稱。
 - **依 URL 新增應用程式**：輸入應用程式名稱，及其在 Google Play 商店中的 URL。
 - **新增受管理的應用程式**：從您使用 Intune 管理的應用程式清單，選取您需要的應用程式。
 
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 
-- **Google 備份 (僅限 Samsung KNOX)** - 允許使用 Google 備份。
-- **Google 帳戶自動同步 (僅限 Samsung KNOX)** - 允許自動同步處理 Google 帳戶設定。
-- **抽取式存放裝置 (僅限 Samsung KNOX)** - 允許裝置使用抽取式存放裝置，例如 SD 記憶卡。
-- **加密儲存卡上的內容 (僅限 Samsung KNOX)** - 指定是否必須加密裝置儲存卡。
+- **Google 備份 (僅限 Samsung Knox)** - 允許使用 Google 備份。
+- **Google 帳戶自動同步 (僅限 Samsung Knox)** - 允許自動同步處理 Google 帳戶設定。
+- **抽取式存放裝置 (僅限 Samsung Knox)** - 允許裝置使用抽取式存放裝置，例如 SD 記憶卡。
+- **加密儲存卡上的內容 (僅限 Samsung Knox)** - 指定是否必須加密裝置儲存卡。
 
 ## <a name="cellular-and-connectivity"></a>行動數據與連線
 
-- **數據漫遊 (僅限 Samsung KNOX)** - 允許裝置在行動電話通訊網路時進行數據漫遊。
-- **簡訊/多媒體簡訊傳訊 (僅限 Samsung KNOX)** - 允許在裝置上使用簡訊和多媒體簡訊傳訊。
-- **語音撥號 (僅限 Samsung KNOX)** - 在裝置上啟用或停用語音撥號功能。
-- **語音漫遊 (僅限 Samsung KNOX)** - 允許裝置在行動電話通訊網路時進行語音漫遊。
-- **藍牙 (僅限 Samsung KNOX)** - 允許在裝置上使用藍牙。
-- **NFC (僅限 Samsung KNOX)** - 允許在支援裝置上使用近距離無線通訊的操作。
-- **Wi-Fi (僅限 Samsung KNOX)** - 允許在裝置上使用 Wi-Fi 功能。
-- **Wi-Fi 網際網路共用功能 (僅限 Samsung KNOX)** - 允許在裝置上使用 Wi-Fi 網際網路共用功能。
+- **數據漫遊 (僅限 Samsung Knox)** - 允許裝置在行動電話通訊網路時進行數據漫遊。
+- **簡訊/多媒體簡訊傳訊 (僅限 Samsung Knox)** - 允許在裝置上使用簡訊和多媒體簡訊傳訊。
+- **語音撥號 (僅限 Samsung Knox)** - 在裝置上啟用或停用語音撥號功能。
+- **語音漫遊 (僅限 Samsung Knox)** - 允許裝置在行動電話通訊網路時進行語音漫遊。
+- **藍牙 (僅限 Samsung Knox)** - 允許在裝置上使用藍牙。
+- **NFC (僅限 Samsung Knox)** - 允許在支援裝置上使用近距離無線通訊的操作。
+- **Wi-Fi (僅限 Samsung Knox)** - 允許在裝置上使用 Wi-Fi 功能。
+- **Wi-Fi 網際網路共用功能 (僅限 Samsung Knox)** - 允許在裝置上使用 Wi-Fi 網際網路共用功能。
 
 ## <a name="kiosk"></a>Kiosk
 
-Kiosk 設定僅套用至 Samsung KNOX Standard 裝置，且只套用至您使用 Intune 管理的應用程式。
+Kiosk 設定僅套用至 Samsung Knox Standard 裝置，且只套用至您使用 Intune 管理的應用程式。
 
 - **選取受管理的應用程式**：選擇下列其中一個選項，以新增當裝置處於 Kiosk 模式時可執行的一或多個受管理的應用程式。 不允許在裝置上執行其他應用程式。
     - **依套件名稱新增應用程式**
@@ -152,6 +153,6 @@ Kiosk 設定僅套用至 Samsung KNOX Standard 裝置，且只套用至您使用
 - **音量按鈕** - 啟用或停用裝置上的音量按鈕。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 繼續使用[如何設定裝置限制設定](device-restrictions-configure.md)中的指示建立裝置限制設定檔，然後進行指派。

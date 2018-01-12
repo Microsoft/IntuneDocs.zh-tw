@@ -5,7 +5,7 @@
   - Mac OS X 10.9 及更新版本
 
 ### <a name="google"></a>Google
-  - Android 4.4 及更新版本 (包括 Samsung KNOX Standard 4.4 及更新版本)*
+  - Android 4.4 及更新版本 (包括 Samsung Knox Standard 4.4 及更新版本)*
   - Android for Work ([需求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 ### <a name="microsoft"></a>Microsoft
@@ -18,6 +18,6 @@
 
 使用 Enterprise Management + Security (EMS) 的客戶也可[使用 Azure Active Directory (Azure AD) 註冊 Windows 10 裝置](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)。
 
-* 您可以在 [Android 和 Samsung KNOX Standard 原則設定](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)中，找到已驗證 Samsung KNOX Standard 裝置的完整清單。
+* 您可以在 [Android 和 Samsung Knox Standard 原則設定](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)中，找到已驗證 Samsung Knox Standard 裝置的完整清單。
 
 如需裝置和管理方法的完整清單，請參閱 [Intune 支援的裝置](/intune/supported-devices-browsers#intune-supported-devices)。

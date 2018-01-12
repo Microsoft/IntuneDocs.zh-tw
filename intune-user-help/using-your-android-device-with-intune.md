@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 18e0608c28a6a292da7fc766fb50edfd27e5a138
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 644f7be61a8d26470a54b0eff46f20e3fbaef1d5
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="using-your-android-device-with-intune"></a>透過 Intune 使用 Android 裝置
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/06/2017
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 Android 4.4 和更新版本。 這包括 Samsung KNOX 4.4 和更新版本的裝置。
+Intune 目前支援 Android 4.4 和更新版本。 這包括 Samsung Knox 4.4 和更新版本的裝置。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 

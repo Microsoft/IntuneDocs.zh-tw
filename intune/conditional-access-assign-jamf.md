@@ -1,12 +1,12 @@
 ---
-title: "將合規性原則套用至受 Jamf 管理的裝置"
+title: "將合規性原則強制執行於 Jamf 受控裝置"
 titlesuffix: Azure portal
 description: "使用合規性以協助保護受 Jamf 管理的裝置。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
 |適用對象：Azure 入口網站的 Intune |
 |--|
 |您需要傳統入口網站的 Intune 相關文件嗎？ [請移至這裡](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
-
-|目前處於私人預覽|
-|--|
-|只有目前處於私人預覽中的客戶才能使用本主題所述的功能。 針對所有客戶發行時，會移除此訊息。|
 | |
 
 您可以使用 Azure Active Directory 和 Microsoft Intune 的條件式存取原則，確定您的使用者符合組織需求的規範。 您可以將這些原則套用至[使用 Jamf Pro 管理的](conditional-access-integrate-jamf.md) Mac 上。 這需要 Intune 和 Jamf Pro 主控台的存取權。
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/06/2017
 2. 開啟 Jamf Pro，然後瀏覽至[電腦管理] > [套件]。
 3. 搭配 macOS 版公司入口網站應用程式建立新的套件，然後按一下 [儲存]。
 4. 開啟 [電腦] > [原則]，然後選取 [新增]。
-5. 使用**一般**承載來設定原則設定。 這些設定應為： 
+5. 使用**一般**承載來設定原則設定。 這些設定應為：
    - 觸發程序：選取 [註冊完成] 和 [Recurring Check-in] (重複簽入)
    - 執行頻率：選取 [每部電腦一次]
 6. 選取 [套件] 承載並按一下 [設定]。
@@ -72,7 +67,7 @@ ms.lasthandoff: 12/06/2017
 3. 按一下 [範圍] 索引標籤，然後將原則的範圍設定為所有目標裝置。
 4. 按一下 [自助服務] 索引標籤，使原則可在 Jamf 自助服務中使用。 將原則包含在 [裝置合規性] 類別中。 按一下 **[儲存]**。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 - [開始使用 Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
