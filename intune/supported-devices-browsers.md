@@ -2,10 +2,10 @@
 title: "支援的裝置 - Microsoft Intune"
 description: "列出 Intune 裝置管理所支援的裝置平台及瀏覽器"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>支援的裝置與瀏覽器
 
@@ -39,11 +39,14 @@ ms.lasthandoff: 11/14/2017
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>支援的 Samsung KNOX Standard 裝置
+### <a name="supported-samsung-knox-standard-devices"></a>支援的 Samsung Knox Standard 裝置
 
-公司入口網站應用程式僅會在 MDM 註冊期間嘗試啟用 Samsung KNOX (如果[支援的 KNOX 裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中包含該裝置的話)。 這有助於避免 KNOX 啟用錯誤而導致 MDM 註冊失敗。 如果裝置不支援 Samsung KNOX 啟用，則會註冊為標準 Android 裝置。 有些 Samsung 裝置型號可能支援 KNOX，而有些不支援。 在您購買及部署 Samsung 裝置之前，請先跟裝置轉銷商確認 KNOX 相容性。
+公司入口網站應用程式僅會在 MDM 註冊期間嘗試啟用 Samsung Knox (如果[支援的 Knox 裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace) \(英文\) 中包含該裝置的話)。 這有助於避免 Knox 啟用錯誤而導致 MDM 註冊失敗。 如果裝置不支援 Samsung Knox 啟用，則會註冊為標準 Android 裝置。 相同 Samsung 裝置的某些型號可能支援 Knox，而其他則不支援。 在您購買及部署 Samsung 裝置之前，請先跟裝置轉銷商確認 Knox 相容性。
 
-下列清單中的 Samsung 裝置型號不支援 KNOX，因此 Android 版公司入口網站應用程式會將其註冊為原生 Android 裝置：
+> [!NOTE]
+> 註冊 Samsung Knox 裝置可能會需要[啟用針對 Samsung 伺服器的存取](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) \(英文\)。 
+
+下列清單中的 Samsung 裝置型號不支援 Knox，因此 Android 版公司入口網站應用程式會將其註冊為原生 Android 裝置：
 
 | **裝置名稱** | **裝置型號** |
 | --- | --- |

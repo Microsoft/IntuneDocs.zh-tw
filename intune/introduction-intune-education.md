@@ -5,22 +5,22 @@ keywords: "什麼是 Intune"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 12/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
-ms.reviewer: lindavr
+ms.reviewer: travisj
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.custom: intune-azure
+ms.openlocfilehash: 78286293dc57bfded09eb29c5809c09e5acff49b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="what-is-intune-for-education"></a>什麼是 Intune 教育版？
+# <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune 教育版與 Intune 完整裝置管理體驗的差異為何？
 
 Intune 教育版是專門設計來讓老師和學生提高生產力，同時保護學校資料。 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，是 Intune 教育版的基礎。
 
@@ -33,12 +33,12 @@ Intune 教育版本身可單獨使用，或搭配 [Intune 中可用的完整裝�
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 使用 Intune 和 Intune 教育版兩者，您可以︰
-* 管理工作人員用來存取資料的行動裝置。
+* 管理員工與學生用來存取資料的行動裝置。
 * 管理使用者每天存取的行動應用程式。
 * 藉由協助控制使用者存取並共用組織資訊的方式，保護組織資訊。
 * 確保裝置和應用程式都符合安全性需求。
 
-### <a name="next-steps"></a>後續步驟
-* [使用 Intune 的 30 天試用](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)來熟悉產品。
+### <a name="next-steps"></a>接下來的步驟
+* [使用 Intune 的 90 天免費試用](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)來熟悉產品。 若您已經有存取權，請移至 (https://intuneeducation.portal.azure.com) 以開始。
 * 閱讀[開始使用 Intune 教育版](/intune-education/what-is-express-configuration)最快速的方法。
 * 深入了解 Intune 的[技術需求和功能](/intune/supported-devices-browsers)。

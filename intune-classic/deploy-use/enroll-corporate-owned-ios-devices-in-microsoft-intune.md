@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中註冊屬公司擁有的 iOS 裝置
 
@@ -73,7 +73,7 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
   如果此裝置尚未經過公司註冊，使用者應該選擇 [新裝置] 來繼續標準註冊流程。
 
-6. 在下一個畫面中，使用者必須確認新裝置的序號。 使用者可以點選 [確認序號] 連結，來啟動「設定」App 以確認序號。 使用者必須在公司入口網站 App 中輸入序號的最後四個字元。
+6. 在下一個畫面中，使用者必須確認新裝置的序號。 使用者可以點選 [確認序號] 連結，隨即啟動使用「設定」App 來驗證序號的指示。 使用者必須在公司入口網站 App 中輸入序號的最後四個字元。
 
   此步驟會確認裝置是公司在 Intune 中註冊的裝置。 如果裝置上的序號不符，則可能選取了錯誤的裝置。 使用者應該返回上一個畫面，並選取不同的裝置。
 
@@ -89,5 +89,5 @@ DEP 會以「無線」的方式將設定檔部署到透過 DEP 購買的裝置�
 
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [Microsoft Intune 中註冊裝置的必要條件](prerequisites-for-enrollment.md)

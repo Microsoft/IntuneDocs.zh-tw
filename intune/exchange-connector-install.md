@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange Connector
 
@@ -134,6 +134,13 @@ ms.lasthandoff: 11/08/2017
 > [!NOTE]
 > 如果您已安裝 On-Premises Exchange Connector，而且在某個階段刪除 Exchange 連線，您必須從已安裝 On-Premises Exchange Connector 的電腦解除安裝該軟體。
 
+## <a name="on-premises-exchange-connector-high-availability-support"></a>內部部署 Exchange Connector 高可用性支援 
+在 Exchange Connector 使用指定的 CAS 建立與 Exchange 的連線之後，連接器便能夠探索其他 CAS。 如果無法使用主要的 CAS，連接器將容錯移轉至另一個 CAS (如果有的話)，直到有可用的主要 CAS 為止。 這項功能預設為開啟。 您可以使用下列程序來關閉此功能：
+1. 在安裝 Exchange Connector 的伺服器上，移至 %*ProgramData*%\Microsoft\Windows Intune Exchange Connector。 
+2. 使用文字編輯器，開啟 **OnPremisesExchangeConnectorServiceConfiguration.xml**。
+3. 將 &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; 變更為 &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; 以停用該功能。    
+
+
 ## <a name="monitor-the-exchange-connector-activity"></a>監視 Exchange Connector 活動
 
 順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 驗證 Exchange Connector 連線：
@@ -147,5 +154,5 @@ ms.lasthandoff: 11/08/2017
 
 從 Intune 1710 版開始，您可以使用[適用於 Exchange connector 和 Intune 的 SCOM 管理組件](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)。 這可在您需要針對問題進行疑難排解時，為您提供不同方式來監視 Exchange Connector。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [建立 Exchange 內部部署的條件存取原則](conditional-access-exchange-create.md)

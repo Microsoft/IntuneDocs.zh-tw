@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
+ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>一般
--   **螢幕擷取 (僅限行動裝置)** - 讓使用者可將裝置螢幕擷取為影像。
--   **複製並貼上 (僅限行動裝置)** - 允許在裝置上的應用程式之間，進行複製並貼上的動作。
--   **手動取消註冊** - 讓使用者可從裝置手動刪除工作場所帳戶。
--   **手動安裝根憑證 (僅限行動裝置)** - 阻止使用者手動安裝根憑證及中繼 CAP 憑證。
--   **診斷資料提交** - 可能的值為︰
+- **螢幕擷取 (僅限行動裝置)** - 讓使用者可將裝置螢幕擷取為影像。
+- **複製並貼上 (僅限行動裝置)** - 允許在裝置上的應用程式之間，進行複製並貼上的動作。
+- **手動取消註冊** - 讓使用者可從裝置手動刪除工作場所帳戶。
+- **手動安裝根憑證 (僅限行動裝置)** - 阻止使用者手動安裝根憑證及中繼 CAP 憑證。
+- **診斷資料提交** - 可能的值為︰
     - **無** - 不傳送任何資料到 Microsoft
     - **基本** - 將有限資訊傳送給 Microsoft
     - **增強** - 傳送增強的診斷資料到 Microsoft
     - **完整** 傳送和增強相同的資料，再加上裝置狀態的其他相關資料
--   **相機** - 允許或封鎖在裝置上使用相機。
--   **OneDrive 檔案同步** - 封鎖裝置將檔案同步處理至 OneDrive。
--   **抽取式存放裝置** - 指定是否可以與裝置搭配使用 SD 卡等外部存放裝置。
--   **地理位置** - 指定裝置是否可以使用定位服務資訊。
--   **網際網路共用** - 允許在裝置上使用網際網路連線共用。
--   **重設手機** - 控制使用者是否可以將裝置重設成出廠預設值。
--   **USB 連線 (僅限行動裝置)** - 控制裝置是否可以透過 USB 連接來存取外接式存放裝置。
--   **防竊模式 (僅限行動裝置)** - 設定是否啟用 Windows 防竊模式。
--   **Cortana** - 啟用或停用 Cortana 語音助理。
--   **錄音 (僅限行動裝置)** - 允許或封鎖使用裝置錄音機。
--   **修改裝置名稱** - 防止終端使用者變更裝置名稱 (僅限 Windows 10 行動裝置版)
--   **新增佈建套件** - 封鎖安裝佈建套件的執行階段設定代理程式。
--   **移除佈建套件** - 封鎖移除佈建套件的執行階段設定代理程式。
--   **裝置探索** - 封鎖裝置以使它無法被其他裝置找到。
--   **工作切換器 (僅限行動裝置)** - 封鎖裝置上的工作切換器。
--   **SIM 卡錯誤對話方塊 (僅限行動裝置)** - 封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
+- **相機** - 允許或封鎖在裝置上使用相機。
+- **OneDrive 檔案同步** - 封鎖裝置將檔案同步處理至 OneDrive。
+- **抽取式存放裝置** - 指定是否可以與裝置搭配使用 SD 卡等外部存放裝置。
+- **地理位置** - 指定裝置是否可以使用定位服務資訊。
+- **網際網路共用** - 允許在裝置上使用網際網路連線共用。
+- **重設手機** - 控制使用者是否可以將裝置重設成出廠預設值。
+- **USB 連線 (僅限行動裝置)** - 控制裝置是否可以透過 USB 連接來存取外接式存放裝置。
+- **防竊模式 (僅限行動裝置)** - 設定是否啟用 Windows 防竊模式。
+- **Cortana** - 啟用或停用 Cortana 語音助理。
+- **錄音 (僅限行動裝置)** - 允許或封鎖使用裝置錄音機。
+- **修改裝置名稱** - 防止終端使用者變更裝置名稱 (僅限 Windows 10 行動裝置版)
+- **新增佈建套件** - 封鎖安裝佈建套件的執行階段設定代理程式。
+- **移除佈建套件** - 封鎖移除佈建套件的執行階段設定代理程式。
+- **裝置探索** - 封鎖裝置以使它無法被其他裝置找到。
+- **工作切換器 (僅限行動裝置)** - 封鎖裝置上的工作切換器。
+- **SIM 卡錯誤對話方塊 (僅限行動裝置)** - 封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
+<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
 
 
 ## <a name="password"></a>密碼
@@ -68,19 +68,68 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="personalization"></a>個人化
 
--   **桌面背景圖片 URL (僅限桌面版)** - 指定要作為 Windows 桌面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者將無法變更此設定。
+- **桌面背景圖片 URL (僅限桌面版)** - 指定要作為 Windows 桌面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者無法變更此項目。
 
 ## <a name="privacy"></a>隱私權
 
 -   **輸入個人化** - 不允許為 Cortana、聽寫或 Microsoft 網上商店應用程式使用雲端式語音服務。 如果您允許使用這些服務，Microsoft 可能會收集語音資料來改進服務。
 -   **自動接受配對及隱私權使用者同意提示** – 允許 Windows 在執行應用程式時，自動接受配對及隱私權同意訊息。
 
+您可以定義可供裝置上所有應用程式存取的資訊。 您可以使用**個別應用程式隱私權例外狀況**來定義以個別應用程式為基礎的例外。
+
+### <a name="exceptions"></a>例外
+
+- **帳戶資訊** - 定義此應用程式能否存取使用者名稱、圖片及其他連絡人資訊。
+- **背景應用程式** - 定義此應用程式能否在背景執行。
+- **行事曆** - 定義此應用程式能否存取行事曆。
+- **通話記錄** - 定義此應用程式能否存取我的通話記錄。
+- **相機** - 定義此應用程式能否存取網路攝影機。
+- **連絡人** - 定義此應用程式能否存取連絡人。
+- **電子郵件** - 定義此應用程式能否存取及傳送電子郵件。
+- **位置** - 定義此應用程式能否存取位置資訊。
+- **訊息中心** - 定義此應用程式能否讀取或傳送文字或 MMS 訊息。
+- **麥克風** - 定義此應用程式能否使用麥克風。
+- **動作** - 定義此應用程式能否存取裝置動作資訊。
+- **通知** - 定義此應用程式能否存取通知。
+- **電話** - 定義此應用程式能否存取手機。
+- **無線電** - 有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
+- **工作** - 定義此應用程式能否存取您的工作。
+- **信任的裝置** - 定義此應用程式是否可以使用信任的裝置 (您已連線或此電腦、平板電腦或手機上搭載的硬體)。 例如電視、投影機等等。
+- **意見反應與診斷** - 定義此應用程式能否存取診斷資訊。
+- **與裝置同步** - 定義此應用程式能否自動與未和此電腦、平板電腦或手機直接配對的無線裝置共用及同步資訊。
+
+## <a name="per-app-privacy-exceptions"></a>個別應用程式的隱私權例外狀況
+
+您可以新增隱私權行為應該與您在「預設原則」中所定義之隱私權行為不同的應用程式。
+
+- **套件名稱** - 新增套件系列名稱。
+- **應用程式名稱** - 應用程式的名稱。
+
+### <a name="exceptions"></a>例外
+
+- **帳戶資訊** - 定義此應用程式能否存取使用者名稱、圖片及其他連絡人資訊。
+- **背景應用程式** - 定義此應用程式能否在背景執行。
+- **行事曆** - 定義此應用程式能否存取行事曆。
+- **通話記錄** - 定義此應用程式能否存取我的通話記錄。
+- **相機** - 定義此應用程式能否存取網路攝影機。
+- **連絡人** - 定義此應用程式能否存取連絡人。
+- **電子郵件** - 定義此應用程式能否存取及傳送電子郵件。
+- **位置** - 定義此應用程式能否存取位置資訊。
+- **訊息中心** - 定義此應用程式能否讀取或傳送文字或 MMS 訊息。
+- **麥克風** - 定義此應用程式能否使用麥克風。
+- **動作** - 定義此應用程式能否存取裝置動作資訊。
+- **通知** - 定義此應用程式能否存取通知。
+- **電話** - 定義此應用程式能否存取手機。
+- **無線電** - 有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
+- **工作** - 定義此應用程式能否存取您的工作。
+- **信任的裝置** - 定義此應用程式是否可以使用信任的裝置 (您已連線或此電腦、平板電腦或手機上搭載的硬體)。 例如電視、投影機等等。
+- **意見反應與診斷** - 定義此應用程式能否存取診斷資訊。
+- **與裝置同步** - 定義此應用程式能否自動與未和此電腦、平板電腦或手機直接配對的無線裝置共用及同步資訊。
 
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
-
--   **控制中心通知 (僅限行動裝置)** – 可讓控制中心通知出現在裝置鎖定畫面上 (僅限 Windows 10 行動裝置版)。
--   **鎖定畫面圖片 URL (僅限桌面版)** - 指定會做為 Windows 鎖定畫面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者將無法變更此設定。
+- **控制中心通知 (僅限行動裝置)** – 可讓控制中心通知出現在裝置鎖定畫面上 (僅限 Windows 10 行動裝置版)。
+- **鎖定畫面圖片 URL (僅限桌面版)** - 指定會做為 Windows 鎖定畫面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者無法變更此項目。
 -   **使用者可設定的畫面逾時 (僅限行動裝置)** – 可讓使用者設定時間量 
 -   **鎖定畫面上的 Cortana (僅限桌面版)** – 不允許使用者在裝置位於鎖定畫面時與 Cortana 互動 (僅限 Windows 10 桌面版)。
 -   **鎖定畫面上的快顯通知** – 封鎖警示訊息，使其無法顯示在裝置鎖定畫面上。
@@ -125,17 +174,17 @@ ms.lasthandoff: 12/12/2017
     -   **初次執行 URL** – 指定使用者第一次執行 Edge 時顯示的網頁 URL (僅限 Windows 10 行動裝置版)。
 -   **首頁** - 新增要作為 Edge 瀏覽器首頁使用的網站清單 (僅限桌面版)。
 -   **起始畫面的變更** – 可讓使用者變更 Edge 開啟時顯示的起始畫面。 若要建立 Edge 啟動時開啟的網頁或網頁清單，請使用 [首頁] 設定。
--   **禁止存取 about 旗標** - 防止使用者存取 Edge 中包含開發人員和實驗性設定的 about:flags 頁面。
+-   **禁止存取 About 旗標** - 防止使用者存取 Edge 中包含開發人員和實驗性設定的 about:flags 頁面。
 -   **WebRtc localhost IP 位址** - 禁止於使用 Web RTC 通訊協定撥打電話時，顯示使用者的 localhost IP 位址。
 -   **預設搜尋引擎** - 指定要使用的預設搜尋引擎。 使用者可以隨時變更此值。
 -   **在結束時清除瀏覽資料** – 當使用者結束 Edge 時，清除歷程記錄和瀏覽資料。
 -   **動態磚資料收集** – 當使用者從 Edge 釘選網站到 [開始] 功能表時，阻止 Windows 從動態磚收集資訊。
 
-## <a name="edge-browser-smartscreen"></a>Edge 瀏覽器 SmartScreen
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
 
--   **SmartScreen** - 啟用或停用封鎖詐騙網站的 SmartScreen。
--   **SmartScreen 提示覆寫** - 允許使用者略過有關潛在惡意網站的 SmartScreen 篩選工具警告。
--   **檔案的 SmartScreen 提示覆寫** - 允許使用者略過有關下載潛在惡意檔案的 SmartScreen 篩選工具警告。
+- **適用於 Microsoft Edge 的 SmartScreen 篩選工具** - 啟用 Edge SmartScreen 以存取網站和檔案下載。
+- **惡意網站存取** - 禁止使用者略過 Windows Defender SmartScreen 篩選工具警告，並防止他們進入網站。
+- **未經驗證的檔案下載** - 禁止使用者略過 Windows Defender SmartScreen 篩選工具警告，並防止他們下載未經驗證的檔案。
 
 ## <a name="search"></a>搜尋
 - **安全搜尋 (僅限行動裝置)** - 控制 Cortana 在搜尋結果中篩選成人內容的方式。 您可以選取 [嚴格]、[普通]，或允許使用者自行選擇設定。
@@ -182,9 +231,30 @@ ms.lasthandoff: 12/12/2017
     -   **隱私權** - 封鎖對 [設定] 應用程式 [隱私權] 區域的存取。
     -   **更新與安全性** - 封鎖對設定應用程式之更新與安全性區域的存取。
 
-## <a name="kiosk"></a>Kiosk
+## <a name="start"></a>開始
 
--   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)類型。  這些選項包括：
+- **從工作列取消釘選應用程式** - 阻止使用者從 [開始] 功能表取消釘選應用程式。
+- **[開始] 上的 [文件]** - 隱藏或顯示 Windows [開始] 功能表中的 [文件] 資料夾。
+- **[開始] 上的 [下載]** - 隱藏或顯示 Windows [開始] 功能表中的 [下載] 資料夾。
+- **[開始] 上的 [檔案總管]** - 隱藏或顯示 Windows [開始] 功能表中的 [檔案總管] 應用程式。
+- **[開始] 上的 [家用群組]** - 隱藏或顯示 Windows [開始] 功能表中的 [家用群組] 資料夾。
+- **[開始] 上的 [音樂]** - 隱藏或顯示 Windows [開始] 功能表中的 [音樂] 資料夾。
+- **[開始] 上的 [網路]** - 隱藏或顯示 Windows [開始] 功能表中的 [網路] 資料夾。
+- **[開始] 上的 [個人] 資料夾** - 隱藏或顯示 Windows [開始] 功能表中的 [個人] 資料夾。
+- **[開始] 上的 [圖片]** - 隱藏或顯示 Windows [開始] 功能表中的 [圖片] 資料夾。
+- **[開始] 上的 [設定]** - 隱藏或顯示 Windows [開始] 功能表中的 [設定] 應用程式。
+- **[開始] 上的 [影片]** - 隱藏或顯示 Windows [開始] 功能表中的 [影片] 資料夾。
+
+## <a name="display"></a>顯示
+
+- **開啟應用程式的 GDI 調整功能**
+- **關閉應用程式的 GDI 調整功能**
+
+  GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成個別監視器 DPI 感知。 請指定會開啟 GDI DPI 縮放比例的舊版應用程式。 應用程式上的 GDI DPI 縮放比例若同時設為開啟和關閉，該應用程式的縮放比例功能就會關閉。
+
+## <a name="kiosk-preview"></a>Kiosk (預覽)
+
+-   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)類型。 這些選項包括：
 
       - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
       - **單一應用程式 kiosk** - 啟用裝置為單一應用程式 kiosk 的設定檔。
@@ -192,13 +262,13 @@ ms.lasthandoff: 12/12/2017
 
     單一應用程式 kiosk 需要下列設定：
 
-      - **使用者帳戶** - 指定與 kiosk 應用程式建立關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。  若為加入 Azure AD 網域的帳戶，請以 `domain\\username@tenant.org` 的格式指定帳戶。
+      - **使用者帳戶** - 指定與 kiosk 應用程式建立關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。 若為加入 Azure AD 網域的帳戶，請以 `domain\\username@tenant.org` 的格式指定帳戶。
 
          若裝置在公用環境，請使用權限最低的使用者帳戶以防止授權的活動。  
 
-      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。  若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
+      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
-    多個應用程式的 kiosk 需要 kiosk 設定。  使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
+    多個應用程式的 kiosk 需要 kiosk 設定。 使用 [新增] 按鈕以建立 kiosk 設定或選取現有的 kiosk。
 
     多個應用程式的 kiosk 設定包括下列設定：
 
@@ -208,9 +278,9 @@ ms.lasthandoff: 12/12/2017
 
         - 指定 kiosk 應用程式類型的**應用程式類型**。  支援的值包括：   
 
-            - **Win32 應用程式** - 傳統型應用程式。  (在裝置方面，您必須具有可執行檔的完整路徑名稱)。
+            - **Win32 應用程式** - 傳統型應用程式。 (在裝置方面，您需要可執行檔的完整路徑名稱)。
 
-            - **UWP App** - 通用 Windows app。  您需要[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+            - **UWP App** - 通用 Windows app。 您需要[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
         - **應用程式識別碼** - 指定可執行檔的完整路徑名稱 (Win32 應用程式) 或[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
 
@@ -218,9 +288,9 @@ ms.lasthandoff: 12/12/2017
 
     - **開始 功能表配置** - 指定描述應用程式[在 [開始] 功能表上如何顯示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)的 XML 檔案。
 
-    - **指派的使用者** - 指定一或多個與 kiosk 設定建立關聯的使用者帳戶。  帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。  以 `domain\\username@tenant.org` 的格式指定加入網域的帳戶。
+    - **指派的使用者** - 指定一或多個與 kiosk 設定建立關聯的使用者帳戶。 帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。 以 `domain\\username@tenant.org` 的格式指定加入網域的帳戶。
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender 防毒軟體
 
 -   **即時監視** - 啟用惡意程式碼、間諜軟體和其他垃圾軟體的即時掃描。
 -   **行為監視** - 讓 Defender 在裝置上檢查某些已知模式的可疑活動。
@@ -256,7 +326,7 @@ ms.lasthandoff: 12/12/2017
 
 
 
-## <a name="defender-exclusions"></a>Defender 排除
+### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防毒軟體排除
 
 -   **不進行掃描和即時保護的檔案和資料夾** - 將一或多個 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe** 等檔案與資料夾，新增至排除清單。 任何即時或已排程的掃描都不會包含這些檔案和資料夾。
 -   **不進行掃描和即時保護的副檔名** - 新增一或多個檔案副檔名，像是 **jpg** 或 **txt** 至排除清單中。 任何即時掃描或排定的掃描，都不會包含有這些副檔名的任何檔案。
@@ -272,7 +342,7 @@ ms.lasthandoff: 12/12/2017
     -   **位址** - 輸入 Proxy 伺服器的名稱或 IP 位址。
     -   **連接埠號碼** - 輸入 Proxy 伺服器的連接埠號碼。
     -   **Proxy 例外狀況** - 輸入任何不得使用 Proxy 伺服器的 URL。 請使用分號來分隔每個項目。
-    -   **針對本機位址略過 Proxy 伺服器** - 如果您不想要針對內部網路上的本機位址使用 Proxy 伺服器，請啟用此選項。
+    -   **為本機位址略過 Proxy 伺服器** - 如果您不想要針對內部網路上的本機位址使用 Proxy 伺服器，請啟用此選項。
 
 
 ## <a name="windows-spotlight"></a>Windows 焦點
@@ -294,16 +364,41 @@ ms.lasthandoff: 12/12/2017
 - **投影到此電腦** - 阻止其他裝置探索該電腦以進行投影。
 - **要求提供 PIN 以進行配對** - 於連線至投影裝置時要求 PIN。
 
-## <a name="start"></a>開始
+## <a name="cloud-printer"></a>雲端印表機
 
-- **從工作列取消釘選應用程式** - 阻止使用者從 [開始] 功能表取消釘選應用程式。
-- **[開始] 上的 [文件]** - 隱藏或顯示 Windows [開始] 功能表中的 [文件] 資料夾。
-- **[開始] 上的 [下載]** - 隱藏或顯示 Windows [開始] 功能表中的 [下載] 資料夾。
-- **[開始] 上的 [檔案總管]** - 隱藏或顯示 Windows [開始] 功能表中的 [檔案總管] 應用程式。
-- **[開始] 上的 [家用群組]** - 隱藏或顯示 Windows [開始] 功能表中的 [家用群組] 資料夾。
-- **[開始] 上的 [音樂]** - 隱藏或顯示 Windows [開始] 功能表中的 [音樂] 資料夾。
-- **[開始] 上的 [網路]** - 隱藏或顯示 Windows [開始] 功能表中的 [網路] 資料夾。
-- **[開始] 上的 [個人] 資料夾** - 隱藏或顯示 Windows [開始] 功能表中的 [個人] 資料夾。
-- **[開始] 上的 [圖片]** - 隱藏或顯示 Windows [開始] 功能表中的 [圖片] 資料夾。
-- **[開始] 上的 [設定]** - 隱藏或顯示 Windows [開始] 功能表中的 [設定] 應用程式。
-- **[開始] 上的 [影片]** - 隱藏或顯示 Windows [開始] 功能表中的 [影片] 資料夾。
+- **印表機探索 URL** - 用於探索雲端印表機的端點。
+- **印表機存取授權 URL** - 用於取得 OAuth 權杖的驗證端點。
+- **Azure 原生用戶端應用程式 GUID** - GUID，識別已有授權可從 OAuthAuthority 擷取 OAuth 權杖的用戶端應用程式。
+- **列印服務資源 URI** - 列印服務的 OAuth 資源 URI，如 Azure 入口網站中所設定。
+- **要查詢的印表機上限 (僅限行動裝置)**  - 應該從探索端點查詢的印表機數目上限。
+- **印表機探索服務資源 URI** - 印表機探索服務的 OAuth 資源 URI，如 Azure 入口網站中所設定。
+
+## <a name="reporting-and-telemetry"></a>報告和遙測
+
+- **共用使用方式資料** - 選取診斷資料傳送層級。
+- **遙測 Proxy 伺服器**
+
+  指定要用來轉送「已連線使用者體驗與遙測」要求 (使用安全通訊端層 (SSL) 連線) 之 Proxy 伺服器的完整網域名稱 (FQDN) 或 IP 位址。 此設定的格式是*伺服器*:*連接埠*。 若具名 Proxy 失敗，或若啟用此原則時未指定 Proxy，「已連線使用者體驗與遙測」資料不會傳輸且會留在本機裝置上。
+
+   範例格式：
+
+   IPv4：192.246.246.106:100<br>
+ IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN：www.contoso.com:345
+
+## <a name="messaging"></a>訊息傳送
+
+- **訊息同步 (僅限行動裝置)** - 停用訊息中心橋接和文字訊息備份及還原。
+- **多媒體訊息 (僅限行動裝置)** - 停用裝置上的多媒體訊息傳送/接收功能。
+- **RCS (僅限行動裝置)** - 停用裝置上的 Rich Communication Services 傳送/接收功能。
+
+
+
+
+
+
+
+
+
+
+
+

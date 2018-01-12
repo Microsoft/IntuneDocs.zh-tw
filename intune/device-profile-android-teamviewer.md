@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>對 Intune 管理的裝置提供遠端協助
 
@@ -32,7 +32,7 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 Intune 管理的 Android 和 Windows 裝置支援遠端管理。
 
 >[!NOTE]
->TeamViewer 軟體不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 和 Windows 10 S。 
+>TeamViewer 軟體不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 和 Windows 10 S。 您仍然需要使用 Intune 傳統入口網站中的[電腦用戶端](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)來管理裝置。
 
 
 
@@ -74,7 +74,6 @@ Intune 管理的 Android 和 Windows 裝置支援遠端管理。
 
 完成後，請關閉 TeamViewer 視窗。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 終端使用者會在其裝置的公司入口網站應用程式圖示上看到通知旗標，也會在其開啟應用程式時看到通知。 接著，他們就能接受遠端協助要求。
-

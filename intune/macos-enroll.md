@@ -3,8 +3,8 @@ title: "在 Intune 中註冊 macOS 裝置"
 titlesuffix: Azure portal
 description: "了解如何在 Intune 中註冊 macOS 裝置。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 nmanager: angrobe
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a18aa5091c8be2095e2ac95717c2b8294b845cd5
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 3d1382e85b9ce58cd65380a799ca8eb4da98b84c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>在 Intune 中註冊 macOS 裝置
 
@@ -46,7 +46,7 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告知使用者如何註冊其裝置才可存取公司資源
 
-您需要告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+告訴使用者前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 

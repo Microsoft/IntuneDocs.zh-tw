@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>使用 Intune 的常見方式
 
@@ -82,7 +82,7 @@ Intune 與 Enterprise Mobility Suite + Security 解決方案特別加入了條�
 ## <a name="issue-corporate-owned-phones-to-your-employees"></a>向您的員工發放屬於公司的電話
 現今有許多員工用行動裝置工作，這讓行動裝置生產力成為競爭力的要件。 這些員工隨時隨地都需要順暢地存取所有公司應用程式和資料。 您需要確保公司資料安全且具有低管理成本。  
 
-Intune 提供了[大量佈建和管理解決方案](device-enrollment.md) ([傳統入口網站](/intune-classic/deploy-use/manage-corporate-owned-devices))，來與目前市場上的主要企業裝置管理平台整合，包括 Apple 裝置註冊計劃和 Samsung KNOX 行動安全性平台。 使用 Intune 集中撰寫裝置設定，有助於高度自動化佈建某些公司裝置。  
+Intune 提供了[大量佈建和管理解決方案](device-enrollment.md) ([傳統入口網站](/intune-classic/deploy-use/manage-corporate-owned-devices))，可以與目前市場上的主要企業裝置管理平台整合，包括 Apple 裝置註冊計劃和 Samsung Knox 行動安全性平台。 使用 Intune 集中撰寫裝置設定，有助於高度自動化佈建某些公司裝置。  
 
 試想一下︰將未拆封的 iPhone 手機交給員工。 員工開啟手機電源，然後瀏覽他們必須自行驗證之帶有公司品牌的安裝流程。 已順利使用[安全性原則](device-profiles.md) ([傳統入口網站](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)) 設定 iPhone。
 

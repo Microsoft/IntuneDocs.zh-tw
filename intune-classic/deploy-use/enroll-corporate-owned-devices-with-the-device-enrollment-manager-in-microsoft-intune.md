@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/10/2017
 使用者必須存在於 Azure 入口網站才能新增為裝置註冊管理員。 為了取得最佳安全性，DEM 使用者不應該同時為 Intune 管理員。
 
 >[!NOTE]
->DEM 註冊方法不能與 [Apple Configurator 設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)或[直接註冊](ios-direct-enrollment-in-microsoft-intune.md)，或是 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。
+>DEM 註冊方法不能與 [Apple Configurator 設定助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)或[直接註冊](ios-direct-enrollment-in-microsoft-intune.md)、macOS 註冊，以及 [DEP 註冊方法](ios-device-enrollment-program-in-microsoft-intune.md)一起使用。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
@@ -81,7 +81,7 @@ DEM 使用者可以︰
 
   - [在 Intune 註冊 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
   - [在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [在 Intune 註冊 Android 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+  - [將您的 Android 裝置註冊到 Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
   - [在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員

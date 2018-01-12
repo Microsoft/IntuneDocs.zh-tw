@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定電子郵件設定
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 
 您可以使用電子郵件設定檔，在下列裝置類型上設定原生電子郵件用戶端：
 
-- Android Samsung KNOX Standard 4.0 及更新版本
+- Android Samsung Knox Standard 4.0 及更新版本
 - Android for Work
 - iOS 8.0 和更新版本
 - Windows Phone 8.1 和更新版本
@@ -48,14 +48,14 @@ ms.lasthandoff: 12/12/2017
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗中，為電子郵件設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用電子郵件設定的裝置平台。 您目前可為電子郵件裝置設定選擇下列平台之一︰
-    - **Android** (僅限 Samsung Android KNOX Standard)
+    - **Android** (僅限 Samsung Android Knox Standard)
     - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [電子郵件]。
 7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android for Work 和 Samsung KNOX Standard 設定](email-settings-android.md)
+    - [Android for Work 和 Samsung Knox Standard 設定](email-settings-android.md)
     - [iOS 設定](email-settings-ios.md)
     - [Windows Phone 8.1 設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 設定](email-settings-windows-10.md)
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/12/2017
 
 - **iOS：**依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 重複的電子郵件設定檔將會封鎖 Intune 設定檔的指派。 在此情況下，公司入口網站會通知使用者他們並不符合規範，且會提示使用者要手動移除設定的設定檔。 為避免此問題，請指示使用者先進行註冊，再安裝電子郵件設定檔，允許 Intune 設定該設定檔。
 - **Windows：**依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
-- **Android Samsung KNOX Standard** 依據電子郵件地址，偵測到重複的現有電子郵件設定檔，而且會使用 Intune 設定檔覆寫它。
+- **Android Samsung Knox Standard** 依據電子郵件地址，偵測到重複的現有電子郵件設定檔，而且會使用 Intune 設定檔覆寫它。
 因為 Android 不會使用主機名稱來識別設定檔，所以建議您不要建立多個電子郵件設定檔在不同主機上的使用相同的電子郵件地址，以避免彼此覆寫。
 - **Android for Work** Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都是在 Google Play 商店取得，並且安裝在裝置工作設定檔中，因此不會產生重複的設定檔。 兩個應用程式都支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的電子郵件設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+
+## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日當週
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>帳戶的終端使用者傳訊 <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+「公司入口網站」網站的使用者將無法執行需要您租用戶寫入存取權的動作。 這些使用者將會看到適當的錯誤訊息，說明其帳戶正在維護中。 相同的變更也即將在 Android、iOS、macOS 與 Windows 版「公司入口網站」應用程式上套用。
+
+![在帳戶移動期間發生的錯誤訊息](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日當週
 
@@ -115,7 +123,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
-|之前|在|
+|之前|之後|
 |---|---|
 |![01](./media/android_cp_enroll_01_before_1709.png)|![01](./media/android_cp_enroll_01_post_1709.png)|
 |![02](./media/android_cp_enroll_02_before_1709.png)|![02](./media/android_cp_enroll_02_post_1709.png)|
@@ -245,7 +253,7 @@ Windows 10 版公司入口網站應用程式現在會針對具有 Windows 10 Cre
 ![Windows 10 公司入口網站應用程式的影像，其中顯示新的自動同步處理狀態與一則狀態訊息，該訊息指出裝置正在同步處理，並嘗試下載應用程式。](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司入口網站新型引導式體驗 <!---1058938--->
-Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊之裝置的引導式 Intune 逐步解說體驗。 此全新體驗提供逐步指示，引導使用者向 Azure Active Directory 註冊 (條件式存取功能所需)，以及 MDM 註冊 (裝置管理功能所需)。 此引導式體驗將可從公司入口網站首頁上存取。 如果使用者無法完成註冊，他們可以繼續使用該應用程式，但將經歷有限的功能。
+Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊之裝置的引導式 Intune 逐步解說體驗。 此全新體驗提供逐步指示，引導使用者向 Azure Active Directory 註冊 (條件式存取功能所需)，以及 MDM 註冊 (裝置管理功能所需)。 此引導式體驗將可從公司入口網站首頁上存取。 未完成註冊的使用者可以繼續使用應用程式，但可使用的功能將會受到限制。
 
 此更新只會顯示在執行 Windows 10 年度更新版 (組建 1607) 或更高版本的裝置上。
 
@@ -380,7 +388,7 @@ __精選 App 的更新__：我們已將專用頁面新增至網站 (使用者可
 
 ![顯示應用程式的彩色磚。 這是在每個應用程式下方的彩色大方塊，其色彩是提取自應用程式商標內的主要色彩。 [精選 Apps] 區段會顯示在公司入口網站應用程式頂端。](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Intune 的新功能](https://docs.microsoft.com/intune/whats-new)

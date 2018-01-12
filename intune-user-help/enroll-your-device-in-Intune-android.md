@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/12/2017
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-這些註冊指示適用於原生及 Samsung KNOX Android 裝置。 Samsung KNOX 是一種安全性類型，特定的 Samsung 裝置使用它為除了原生 Android 所提供的保護之外，提供額外的保護。 若要查看裝置是否為 Samsung KNOX 裝置，請移至 [設定] > [About device]\(關於裝置)。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
+這些註冊指示適用於原生及 Samsung Knox Android 裝置。 Samsung Knox 是某種類型的安全性，可供特定 Samsung 裝置使用，以提供原生 Android 所提供之外的額外保護。 若要查看裝置是否為 Samsung Knox 裝置，請移至 [設定] > [關於裝置]。 若該處未列出「Knox 版本」，則您擁有原生 Android 裝置。
 
 註冊之前或之後，系統可能會要求您選擇最能描述您裝置使用方式的類別。 公司的支援人員會使用此類別來協助查看您可存取的應用程式。
 
@@ -98,9 +98,9 @@ ms.lasthandoff: 12/12/2017
 
     ![輸入 PIN 或密碼](./media/and-enroll-6-PIN-native.png)
 
-13.  如果您使用 Samsung KNOX 裝置，請點選 [確認]，然後您會看到一個訊息，指出您的裝置已註冊。 如果您使用原生 Android 裝置，則請注意下方畫面，該畫面顯示您的裝置已註冊。
+13.  如果您使用 Samsung Knox 裝置，請點選 **[確認]**，然後您會看到一個訊息，指出您的裝置已註冊。 如果您使用原生 Android 裝置，則請注意下方畫面，該畫面顯示您的裝置已註冊。
 
-    ![Samsung KNOX 隱私權原則](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox 隱私權原則](./media/and-enroll-7-knox-privacy-policy.png)
 
     此畫面會顯示您的裝置已註冊。
 

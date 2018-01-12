@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立及指派條件式存取原則
 
@@ -105,9 +105,9 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 13. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
   - 當您設定成允許存取時，所有裝置均能立即存取 Exchange 內部部署。  若**包含的群組**中之使用者的裝置稍後被評估為不符合合規性政策，或未向 Intune 註冊，將會予以封鎖。
-  - 當您設定為禁止存取時，將會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為符合規範，即可存取 Exchange 內部部署。 因為非執行 Samsung KNOX Standard 的 Android 裝置不支援此設定，所以一律無法 Exchange 內部部署。
+  - 當您設定為禁止存取時，將會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為符合規範，即可存取 Exchange 內部部署。 因為非執行 Samsung Knox Standard 的 Android 裝置不支援此設定，所以一律會被封鎖。
 <br></br>
-14. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受管理的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且合規的裝置進行存取。 選擇 [確定]，以儲存設定。
+14. 從 [裝置平台例外] 下選擇 [新增]，以指定平台。 若將 [未受管理的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且合規的裝置進行存取。 選擇 [確定]，以儲存設定。
 
 15. 在 [內部部署] 刀鋒視窗中按一下 [儲存]，以儲存條件式存取原則。
 
@@ -124,6 +124,6 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 2. 在 [原則] 刀鋒視窗中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

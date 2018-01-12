@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的自訂設定
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 
 - [使用 Microsoft Intune 自訂裝置設定檔，使用預先共用金鑰建立 Wi-Fi 設定檔](/intune/wi-fi-profile-shared-key)
 - [使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](/intune/android-pulse-secure-per-app-vpn)
-- [使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式](/intune/samsung-knox-apps-allow-block)
+- [使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung Knox Standard 裝置的應用程式](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 >這種設定檔類型目前只能進行上方列出的設定。 Android 裝置不會公開您可設定的完整 OMA-URI 設定清單。 如果您希望新增進一步設定，請到 [Intune Uservoice 網站](https://microsoftintune.uservoice.com/forums/291681-ideas)上提議。
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/12/2017
     - **值** - 輸入要與您所輸入之 OMA-URI 相關聯的值。
 4. 完成設定之後，請按一下 [確定]，然後再視需要新增更多設定。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 當您完成設定時，設定檔會隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 

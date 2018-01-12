@@ -1,7 +1,7 @@
 ---
-title: "Samsung KNOX 的 Intune 原則允許/封鎖應用程式"
+title: "Samsung Knox 的 Intune 原則允許/封鎖應用程式"
 titlesuffix: Azure portal
-description: "建立自訂設定檔可允許及封鎖 Samsung KNOX Standard 裝置的應用程式。"
+description: "建立自訂設定檔以允許及封鎖 Samsung Knox Standard 裝置的應用程式。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,13 +15,13 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung KNOX Standard 裝置的應用程式
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>使用自訂原則來允許和封鎖 Microsoft Intune 中 Samsung Knox Standard 裝置的應用程式
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/12/2017
 - 無法在裝置上執行的應用程式清單。 這份清單中的應用程式會被封鎖而無法執行，即使它們在套用原則時已安裝也一樣。
 - 裝置使用者可從 Google Play 市集安裝的應用程式清單。 只可以安裝您列出的應用程式。 無法從市集安裝其他應用程式。
 
-只有執行 Samsung KNOX Standard 的裝置可使用這些設定。
+只有執行 Samsung Knox Standard 的裝置可使用這些設定。
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>建立已允許或已封鎖的應用程式清單
 

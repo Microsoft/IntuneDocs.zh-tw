@@ -3,10 +3,10 @@ title: "什麼是 Microsoft Intune 裝置註冊"
 titlesuffix: Azure portal
 description: "了解 iOS、Android 及 Windows 裝置註冊。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,9 +27,9 @@ ms.lasthandoff: 11/03/2017
 
 您會在 Intune 中註冊裝置的原因，是為了可以管理那些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置在 Intune 中註冊時，會核發給這些裝置 MDM 憑證，然後裝置會使用這些憑證與 Intune 服務通訊。
 
-您的裝置註冊方式取決於裝置類型、擁有權，以及您所需要的管理級。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
+您的裝置註冊方式取決於裝置類型、擁有權，以及您所需要的管理層級。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
 
-您若是使用內部部署或裝載於雲端的 Exchange ActiveSync，則不需要註冊就能用一些簡單的 Intune 管理功能。 您可以將 Windows 電腦視為行動裝置加以管理。建議您依照下列步驟採取此做法。
+如果您使用內部部署或裝載於雲端的 Exchange ActiveSync，則可以啟用不需要註冊的簡單 Intune 管理。 您可以將 Windows 電腦視為行動裝置加以管理。建議您依照下列步驟採取此做法。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/03/2017
 | **方法** |  **需要重設** |    **使用者親和性**   |   **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](./android-enroll.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| 否 | 是 | 否| [詳細資訊](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 

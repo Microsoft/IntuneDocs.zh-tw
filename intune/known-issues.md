@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -43,31 +43,6 @@ Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows
 
 當您從 Intune 移轉到 Azure 入口網站時，可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>需進行次要移轉以選取功能
-
-必須先移轉 2017 年 1 月之前建立的 Intune 帳戶，才能在 Azure 入口網站中使用下列功能：
-
-- 公司裝置註冊設定檔
-- Apple 裝置註冊方案
-- 依 iOS 序號預先宣告公司裝置
-- 裝置註冊管理員帳戶
-- Apple 大量採購方案
-
-因為無法從 Intune (Silverlight) 主控台和 Azure 入口網站管理這些功能，所以移轉會：
-- 在傳統入口網站中停用這些功能
-- 在 Azure 入口網站中啟用它們  
-
-在 2017 年 9 月 22 日之後，會將這些功能的移轉合併至 Azure 的主要移轉。 如果您已經將帳戶移轉為使用 Azure 入口網站，則這項次要移轉可能早已完成。 如果沒有，這些功能會在 11 月前移轉至 Azure。 而開始移轉您的帳戶之後，將會在同一天完成。 移轉最多可能需要 6 個小時，而且是從在 Intune 傳統入口網站中停用這些功能開始算起。
-
-如果您現在於 Azure 入口網站中管理這些 Intune 功能，請注意以下幾點：
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>移除 Apple DEP 中的預設公司裝置註冊設定檔
-Azure 入口網站不支援 Apple 裝置註冊計劃 (DEP) 裝置的「預設」公司裝置註冊設定檔。 Intune (Silverlight) 主控台中提供此功能，但已停止提供，以避免不慎指派這類設定檔。 在 Azure 入口網站中進行 DEP 序號同步處理時，不會指派任何公司裝置註冊設定檔。 使用裝置之前，必須先指派註冊設定檔。
-
-#### <a name="apple-dep-token-restored-with-migration"></a>移轉時還原的 Apple DEP 權杖
-
-如果您刪除 Intune (Silverlight) 入口網站中的 Apple 裝置註冊計劃權杖，且未將新的權杖上傳至 Azure 入口網站，則會在移轉時於 Azure 入口網站中還原原始權杖。 若要移除這個權杖並避免 DEP 註冊，請刪除 Azure 入口網站中的權杖。
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>用於移轉原則的「狀態」刀鋒視窗無法運作
 
 您無法在 Azure 入口網站中，檢視從傳統入口網站移轉之原則的狀態資訊。 但是，您可以在傳統入口網站中繼續檢視這些原則的報表。 若要檢視移轉之設定原則的狀態資訊，請在 Azure 入口網站中重新建立它們。
@@ -79,6 +54,9 @@ iOS 大量採購應用程式只能針對與您的 Intune 帳戶相同的國碼/�
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>上傳多份相同的 iOS 大量採購方案
 請勿針對相同的 VPP 權杖多次按一下 [上傳] 按鈕。 這會導致上傳重複的 VPP 權杖，並針對相同的 VPP 權杖多次進行應用程式同步處理。
+
+### <a name="assigning-office-365-to-macos-devices"></a>將 Office 365 指派給 macOS 裝置
+使用 Microsoft Intune 將 Office 365 指派給 macOS 裝置的功能，將會在我們完成 UI 更新之後提供使用。
 
 <!-- ## Groups -->
 
