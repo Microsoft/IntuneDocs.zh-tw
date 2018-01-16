@@ -6,7 +6,7 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f04793f6fe2526088aa5074da5e9ff04b82ba5a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e8477acf609bc55b6ff235a7ddfb2afcc7eb7d2d
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="choose-how-to-manage-devices"></a>選擇如何管理裝置
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/10/2017
 如需各個方法提供的管理功能詳細清單，請參閱[行動裝置管理/intune/supported-devices-browserssoft-intune)。
 如需 Intune 支援的裝置與電腦相關資訊，請參閱[支援的行動裝置與電腦](/intune/supported-devices-browsers#intune-supported-devices)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [選擇如何註冊行動裝置](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [使用 Intune 電腦用戶端軟體管理 Windows 電腦](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)

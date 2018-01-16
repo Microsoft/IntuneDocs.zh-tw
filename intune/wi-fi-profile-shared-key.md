@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ ms.lasthandoff: 11/10/2017
 
 > [!NOTE]
 -   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
-- 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
+- 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://intunepskgenerator.johnathonb.com/)。
 -   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
--  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
+-  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://intunepskgenerator.johnathonb.com/)。
 
 
 1.  若要為 Android 或 Windows 建立附有預先共用金鑰的 Wi-Fi 設定檔或或採用 EAP Wi-Fi 設定檔，請在建立裝置設定檔時，為該裝置平台 (而不是 Wi-Fi 設定檔) 選擇 [自訂]。
@@ -206,7 +206,7 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 3.     搜尋 XML 檔案，找出名稱正確的檔案。
 4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
 
-## <a name="best-practices"></a>最佳作法
+## <a name="best-practices"></a>最佳做法
 以 PSK 部署 Wi-Fi 設定檔之前，請確認裝置可以直接連接至端點。
 
 當輪替金鑰 (密碼或複雜密碼) 時，預期據此部署停機時間和規劃。 請考慮在非工作時間推送新的 Wi-Fi 設定檔。 此外，警告使用者連線可能會受到影響。

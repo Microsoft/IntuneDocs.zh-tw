@@ -15,16 +15,13 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613997340867dda6def6a9a0a308b1ef0b618b5
-ms.sourcegitcommit: 138df6f793d2dc718041346b90c367c0181990da
+ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
-
->[!Note]
-> 有一個會影響此功能的已知問題。 如需詳細資訊，請參閱 [Microsoft Intune 中的已知問題](/intune/known-issues#apps)。
 
 此應用程式類型可讓您輕鬆地將 Office 365 應用程式指派給 macOS 裝置。 這個新的應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 與 OneNote。 這些應用程式也會隨附 Microsoft 自動更新程式 (MAU)，以協助保護您的應用程式並使它保持在最新狀態。 您希望在 Intune 主控台的應用程式清單中，顯示為一個應用程式的那些應用程式。
 
@@ -77,6 +74,6 @@ ms.lasthandoff: 12/20/2017
 
 5. 選取 [儲存] 以認可您的指派。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要了解如何將 Office 365 應用程式新增到 Windows 10 裝置，請參閱[如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置](/intune/apps-add-office365)。

@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 07/13/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 839815417a6b7ad54ea974fac3e885a0cd862fc8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f02e4fb0da11a251c33c6ee1e44ba07848f69f9b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>在 Intune 管理的 iOS 裝置上登出目前的使用者
 
@@ -44,6 +44,6 @@ ms.lasthandoff: 09/15/2017
 4.  在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
 5.  從您管理的裝置清單中選擇 iOS 裝置，然後選擇 [登出目前的使用者] 裝置遠端動作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。

@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>如何關閉 Microsoft 資料收集
+# <a name="how-to-turn-off-microsoft-data-collection"></a>如何關閉 Microsoft 資料收集
 
 Microsoft 會自動收集有關產品和服務的特定資料。 我們這樣做是為了提升產品的可靠性和效能，包括公司入口網站應用程式。 雖然這項資料是匿名的，但可能有使用者對此等收集覺得不舒服。 公司支援人員無權控制該資料的收集，且無法變更您對該設定的選項。
 

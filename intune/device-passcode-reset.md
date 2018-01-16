@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/06/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 3fdbb2fe6d52eaff8844ccfe14cef6c15a31cdff
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>在 Intune 管理的裝置上重設及移除密碼
 
@@ -45,6 +45,6 @@ ms.lasthandoff: 11/07/2017
 4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
 5. 從您管理的裝置清單中，選擇裝置，然後選擇 [移除密碼] 裝置遠端動作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。
