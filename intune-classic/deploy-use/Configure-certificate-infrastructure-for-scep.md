@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
 
@@ -339,6 +339,9 @@ I
 
     按一下 [登入] 並輸入您的 Intune 服務系統管理員認證，或擁有全域管理權限的租用戶管理員認證。
 
+    > [!NOTE]
+    > 如果您在登入 NDESConnectorUI.exe 時收到**無法辨識使用者名稱**的錯誤，這通常表示您使用了不具有效 Intune 授權的帳戶。 請指派 Intune 或 EMS 授權給帳戶，並重試作業。
+
     如果您的組織使用 Proxy 伺服器，而且 NDES 伺服器需要該 Proxy 以存取網際網路，請按一下 [使用 Proxy 伺服器]，然後提供 Proxy 伺服器名稱、連接埠，以及用以連接的帳戶認證。
 
     選取 [進階]  索引標籤，然後再提供對您的發行憑證授權單位具有 [發行及管理憑證]  權限的帳戶認證，再按一下 [套用] 。
@@ -351,5 +354,5 @@ I
 
 **http:// &lt;NDES 伺服器的 FQDN&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。

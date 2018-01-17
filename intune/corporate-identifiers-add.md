@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: a278a0ca4614611685420cfeed898270926cd9ca
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -27,13 +27,15 @@ ms.lasthandoff: 01/03/2018
 
 身為 Intune 系統管理員，您可以識別公司擁有的裝置，以縮小管理及識別的範圍。 Intune 可執行其他管理工作，以及從公司擁有的裝置收集其他資訊，像是完整電話號碼和應用程式的清查。 您也可以設定裝置限制，以禁止非公司擁有的裝置進行註冊。
 
-當下列任一條件成立時，會將裝置識別為「屬公司擁有」：
+在註冊時，Intune 會自動將公司擁有的狀態指派給符合下列條件的裝置：
 
 - 使用[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶進行註冊 (所有平台)
 - 使用 Apple [裝置註冊計劃](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md) 或 [Apple Configurator](apple-configurator-enroll-ios.md) 進行註冊 (僅限 iOS)
 - 已使用國際行動設備識別碼 (IMEI) 編號 (所有具有 IMEI 編號的平台) 或序號 (iOS 和 Android) [先識別為屬公司擁有再註冊](#identify-corporate-owned-devices-with-imei-or-serial-number)
 - 在 Azure Active Directory 或 Enterprise Mobility + Security 中註冊為 Windows 10 企業版裝置
-- 裝置的內容會將[裝置擁有權列為公司所擁有](#change-device-ownership)
+- 在[裝置的屬性清單](#change-device-ownership)中設為公司
+
+在註冊後，[擁有權設定可以變更](#change-device-ownership)為**個人**或**公司**。
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>使用 IMEI 或序號識別公司擁有的裝置
 

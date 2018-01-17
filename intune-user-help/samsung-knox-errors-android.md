@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>修正 Samsung Knox 裝置的常見問題
 
-有時候 Samsung Knox 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 Samsung Knox 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 若是更複雜的問題，建議您[連絡 Android 公司入口網站小組](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md)。
 
 ## <a name="network-activation-error"></a>網路啟用錯誤
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/03/2018
 
 |錯誤訊息|您應該嘗試的步驟|
 |---|---|
-|**Samsung Knox 啟用錯誤** - 無法啟用 Samsung Knox 授權。 切換至其他無線網路或行動電話通訊網路，然後再試一次。|您的裝置無法在目前所在的網路上啟用。 如果您位在行動電話通訊網路上，請切換到 Wi-Fi 網路，然後再試一次。|
+|**Samsung Knox 啟用錯誤** - 無法啟用 Samsung Knox 授權。 切換至其他無線網路或行動電話通訊網路，然後再試一次。|您的裝置無法在目前所在的網路上啟用。 若您正在使用行動數據，請切換到 Wi-Fi 網路並再試一次，反之亦然。|
 
 ## <a name="license-activation-error"></a>授權啟用錯誤
 

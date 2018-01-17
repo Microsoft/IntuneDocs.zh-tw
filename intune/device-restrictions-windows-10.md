@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
-ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/08/2018
 - **裝置探索** - 封鎖裝置以使它無法被其他裝置找到。
 - **工作切換器 (僅限行動裝置)** - 封鎖裝置上的工作切換器。
 - **SIM 卡錯誤對話方塊 (僅限行動裝置)** - 封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
-<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
+- **自動重新部署** 允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
 
 
 ## <a name="password"></a>密碼
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/08/2018
 
 您可以定義可供裝置上所有應用程式存取的資訊。 您可以使用**個別應用程式隱私權例外狀況**來定義以個別應用程式為基礎的例外。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帳戶資訊** - 定義此應用程式能否存取使用者名稱、圖片及其他連絡人資訊。
 - **背景應用程式** - 定義此應用程式能否在背景執行。
@@ -105,7 +105,7 @@ ms.lasthandoff: 01/08/2018
 - **套件名稱** - 新增套件系列名稱。
 - **應用程式名稱** - 應用程式的名稱。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帳戶資訊** - 定義此應用程式能否存取使用者名稱、圖片及其他連絡人資訊。
 - **背景應用程式** - 定義此應用程式能否在背景執行。
@@ -268,7 +268,7 @@ ms.lasthandoff: 01/08/2018
 
       - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
-    多個應用程式的 kiosk 需要 kiosk 設定。 使用 [新增] 按鈕以建立 kiosk 設定或選取現有的 kiosk。
+    多個應用程式的 kiosk 需要 kiosk 設定。 使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
 
     多個應用程式的 kiosk 設定包括下列設定：
 
