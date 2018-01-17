@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bc907e5671fcd6c7b777f3bc95a533503d85ca64
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -113,6 +113,14 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 隨即會產生已包裝的應用程式和記錄檔，並儲存於您指定的輸出路徑中。
 
+## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>我應該多久一次，用 Intune App Wrapping Tool 來重新包裝我的 Android 應用程式？
+會需要重新包裝應用程式的主要案例如下：
+* 應用程式本身發行了新版本。
+* Intune App Wrapping Tool for Android 發行了新版本，讓關鍵 Bug 獲得修正，或提供新的特定 Intune 應用程式保護原則功能。 這會透過 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) 的 GitHub 存放庫，每 6-8 週發生一次。
+
+重新包裝的幾種最佳做法包括： 
+* 保留在建置程序中使用的簽署憑證。請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>重複使用簽署憑證和包裝應用程式
 Android 要求所有的應用程式都必須以有效的憑證簽署，才能安裝在 Android 裝置上。
 
@@ -137,7 +145,7 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 
 -   保護包含已包裝應用程式的輸出目錄。 考慮針對輸出使用使用者層級目錄。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)
 
 - [使用 SDK 讓應用程式進行行動應用程式管理](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

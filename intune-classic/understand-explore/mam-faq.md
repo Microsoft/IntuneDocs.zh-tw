@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 12/21/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -91,19 +91,26 @@ ms.lasthandoff: 12/22/2017
 
 **多重身分識別支援的用途為何？** 多重身分識別支援允許同時包含「公司」與消費者對象的應用程式 (例如，Office 應用程式) 以具備用於「公司」帳戶之 Intune 應用程式保護功能的方式公開發行。
 
-**PIN 畫面何時出現？** Intune PIN 畫面只會在使用者嘗試存取應用程式中的「公司」資料時出現。 例如，在 Word/Excel/PowerPoint 應用程式中，當使用者嘗試從商務用 OneDrive 開啟文件時就會出現 (假設您成功部署一個強制執行 PIN 的應用程式保護原則)。
-
 **Outlook 以及多重身分識別呢？** 因為 Outlook 有合併個人與「公司」電子郵件的電子郵件檢視，所以 Outlook 應用程式會在啟動時提示 Intune PIN。
 
 **什麼是 Intune 應用程式 PIN？** 個人識別碼 (PIN) 是一組密碼，用來驗證在應用程式中存取組織資料的是正確的使用者。
 
   1. **何時會提示使用者輸入 PIN？** Intune 僅會在使用者要存取「公司」資料時提示使用者提供應用程式 PIN。 在多重身分識別應用程式 (例如 Word/Excel/PowerPoint) 中，系統會在使用者嘗試開啟「公司」文件或檔案時提示他們提供 PIN。 在單一身分識別應用程式 (例如，使用 Intune App Wrapping Tool 建置的企業營運應用程式) 中，則會在啟動時提示提供 PIN，因為 Intune App SDK 知道使用者一定是在「公司」環境中使用應用程式。
 
-  2. **PIN 安全嗎？** PIN 是用來允許僅有正確的使用者可以存取應用程式中的組織資料。 因此，使用者必須使用他們的工作或學校帳戶登入，才能設定或重設其 Intune 應用程式 PIN。 這項驗證是由 Azure Active Directory 透過安全語彙基元交換來處理，且未向 Intune App SDK 公開。 從安全性角度來看，保護工作或學校資料的最佳方式是將資料加密。 加密與應用程式 PIN 無關，而是其本身的應用程式保護原則。
+2. **使用者收到 Intune PIN 提示的頻率為何？**
+IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式保護原則設定「重新檢查存取需求前的剩餘時間 (分鐘)」。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率： 
 
-  3. **Intune 如何針對暴力密碼破解攻擊保護 PIN？** 做為應用程式 PIN 原則的一部份，IT 系統管理員可以設定在鎖定應用程式之前，使用者可以嘗試驗證其 PIN 的次數上限。 當嘗試次數達到上限之後，Intune App SDK 可以抹除應用程式中的「公司」資料。
+* **PIN 會在相同發行者的多個應用程式間共用，以提升可用性：**在 iOS，一組應用程式 PIN 會在**相同發行者**的所有應用程式間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
+* **與 PIN 相關的計時器過時性質：**在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。 
+
+>[!NOTE] 
+> 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前的剩餘時間 (分鐘)」設定的值。 
+
+  3. **PIN 安全嗎？** PIN 是用來允許僅有正確的使用者可以存取應用程式中的組織資料。 因此，使用者必須使用他們的工作或學校帳戶登入，才能設定或重設其 Intune 應用程式 PIN。 這項驗證是由 Azure Active Directory 透過安全語彙基元交換來處理，且未向 Intune App SDK 公開。 從安全性角度來看，保護工作或學校資料的最佳方式是將資料加密。 加密與應用程式 PIN 無關，而是其本身的應用程式保護原則。
+
+  4. **Intune 如何針對暴力密碼破解攻擊保護 PIN？** 做為應用程式 PIN 原則的一部份，IT 系統管理員可以設定在鎖定應用程式之前，使用者可以嘗試驗證其 PIN 的次數上限。 當嘗試次數達到上限之後，Intune App SDK 可以抹除應用程式中的「公司」資料。
   
-  4. **為何我需要在來自同一個發行者的應用程式上設定兩次 PIN？**
+  5. **為何我需要在來自同一個發行者的應用程式上設定兩次 PIN？**
 MAM (在 iOS 上) 目前允許應用程式層級 PIN 包含英數字元與特殊字元 (稱為「密碼」)，這需要應用程式參與 (即 WXP、Outlook、Managed Browser、Yammer) 以整合適用於 iOS 的 Intune APP SDK。 如果沒有，密碼設定將不會正確地針對目標應用程式強制執行。 這是在「適用於 iOS 7.1.12 版的 Intune SDK」中推出的功能 。 <br> 為了支援此功能，並確保對其他版本「適用於 iOS 的 Intune SDK」的回溯相容性，7.1.12 及更新版本中的所有 PIN (不論數字或密碼)，都與先前 SDK 版本中的數字 PIN 分開處理。 因此，如果裝置上有來自同一個發行者的多個應用程式，且其使用的「適用於 iOS 的 Intune SDK」有 7.1.12 之前和 7.1.12 之後的版本，則這些應用程式必須設定兩次 PIN。 <br><br> 雖然如此，這兩個 PIN (針對每個應用程式) 沒有任何關係，亦即，它們必須遵守套用至應用程式的應用程式保護原則。 確切地說，只有當應用程式 A 和 B 套用相同的原則 (相對於 PIN) 時，使用者才需要設定相同的 PIN 兩次。 <br><br> 這是啟用了「Intune 行動裝置應用程式管理」之 iOS 應用程式上的 PIN 才有的行為。 一段時間之後，隨著應用程式採用較新版的「適用於 iOS 的 Intune SDK」，需要針對同一個發行者的應用程式設定 PIN 兩次的問題就會減少。 如需範例，請查看下面的注意事項。
 
 >[!NOTE]

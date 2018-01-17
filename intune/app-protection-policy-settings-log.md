@@ -15,19 +15,19 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 8eb231a225a642e4ccdd538f307442921633ddaf
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>在 Managed Browser 中檢閱應用程式保護記錄
+# <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
 您可以透過針對行動用戶端上的應用程式啟用 Intune 診斷模式來存取記錄。 下表顯示記錄於記錄中之設定的名稱和說明。
 
 ## <a name="app-protection-policy-settings"></a>應用程式保護原則設定
 
-| Name                        | 可能的值                                                                                                                                                                                                                                                                                           | Azure Intune 行動應用程式管理入口網站中的設定                                                                                                                            |
+| 名稱                        | 可能的值                                                                                                                                                                                                                                                                                           | Azure Intune 行動應用程式管理入口網站中的設定                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 離線寬限期<br>注意：這是在裝置已離線的情況下，重新檢查應用程式存取需求之前的時間間隔。             |
 | AccessRecheckOnlineTimeout  | _x_ 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 逾時。<br>注意：這是在裝置已離線的情況下，於應用程式啟動後重新檢查應用程式存取需求之前的時間間隔。 |
@@ -58,7 +58,7 @@ ms.lasthandoff: 12/08/2017
 | SimplePINAllowed            | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許簡單的 PIN                                                                                                                                                               |
 | TouchIDEnabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許指紋而非 PIN (iOS 8+)。                                                                                                                                      |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 若要深入了解應用程式保護原則，請參閱[什麼是應用程式保護原則？](app-protection-policy.md)
  - Intune 有提供數種工具來協助您對環境中的問題進行疑難排解。 如需詳細資訊，請參閱[使用疑難排解入口網站協助使用者](help-desk-operators.md)。

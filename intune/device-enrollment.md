@@ -14,72 +14,58 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主題說明如何註冊，以及向 Intune 管理註冊行動裝置的各種方式。
+Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司資料的方式。 若要使用這項行動裝置管理 (MDM)，裝置必須先在 Intune 服務中註冊。 裝置會在註冊時收到 MDM 憑證。 這項憑證會用來與 Intune 服務通訊。
 
-您會在 Intune 中註冊裝置的原因，是為了可以管理那些裝置。 在 Intune 文件中，我們將此功能稱為「行動裝置管理」(MDM)。 當裝置在 Intune 中註冊時，會核發給這些裝置 MDM 憑證，然後裝置會使用這些憑證與 Intune 服務通訊。
+在下表中，您可以看到數種註冊員工裝置的方法。 每種方法皆會因裝置擁有權 (個人或公司)、裝置類型 (iOS、Windows、Android) 及管理需求 (重設、親和性、鎖定) 而有所不同。
 
-您的裝置註冊方式取決於裝置類型、擁有權，以及您所需要的管理層級。 「攜帶您自己的裝置」(BYOD) 註冊可讓使用者註冊其個人電話、平板電腦或電腦。 屬公司擁有的裝置 (COD) 註冊可執行自動註冊、共用裝置或授權前註冊需求的管理案例。
+## <a name="ios-enrollment-methods"></a>iOS 註冊方法
 
-如果您使用內部部署或裝載於雲端的 Exchange ActiveSync，則可以啟用不需要註冊的簡單 Intune 管理。 您可以將 Windows 電腦視為行動裝置加以管理。建議您依照下列步驟採取此做法。
-
-
-## <a name="overview-of-device-enrollment-methods"></a>裝置的註冊方法概觀
-
-下表提供 Intune 註冊方法的概觀及其功能與需求，如下所述。
-
-**圖例**
-
-- **需要重設**：裝置會在註冊期間重設成出廠預設值。
-- **使用者親和性**：將裝置關聯至使用者。 如需詳細資訊，請參閱[使用者親和性](device-enrollment-program-enroll-ios.md)。
-- **鎖定**：防止使用者取消註冊裝置。
-
-**iOS 註冊方法**
-
-| **方法** |  **需要重設** |    **使用者親和性**   |   **鎖定** | **詳細資料** |
+| **方法** |  **需要重設** |    [**使用者親和性**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   否 |否 |否  | [詳細資訊](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   是 |   選用 |  選用|[詳細資訊](./device-enrollment-program-enroll-ios.md)|
+| | 裝置會在註冊期間恢復出廠預設值。 |  建立每部裝置與使用者的關聯。| 使用者無法取消註冊裝置。  | |
+|**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [詳細資訊](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| 否 |否 |否  | [詳細資訊](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   是 |   選用 |  選用|[詳細資訊](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| 是 |   選用 |  否| [詳細資訊](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[詳細資訊](./apple-configurator-direct-enroll-ios.md)|
 
-**Windows 的註冊方法**
+## <a name="windows-enrollment-methods"></a>Windows 註冊方法
 
 | **方法** |  **需要重設** |    **使用者親和性**   |   **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否 |   是 |   否 | [詳細資訊](windows-enroll.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | 否 |  是 |   否 | [詳細資訊](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[詳細資訊](device-enrollment-manager-enroll.md)|
 |**自動註冊** | 否 |是 |否 | [詳細資訊](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**大量註冊** |否 |否 |否 | [詳細資訊](./windows-bulk-enroll.md) |
 
-**Android 的註冊方法**
+## <a name="android-enrollment-methods"></a>Android 註冊方法
 
 | **方法** |  **需要重設** |    **使用者親和性**   |   **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [詳細資訊](./android-enroll.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[詳細資訊](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [詳細資訊](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[詳細資訊](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| 否 | 是 | 否| [詳細資訊](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-「攜帶您自己的裝置」使用者會安裝並執行公司入口網站應用程式，以註冊其裝置。 此程式可讓使用者存取公司資源，例如電子郵件。
+## <a name="bring-your-own-device"></a>攜帶您自己的裝置
+攜帶您自己的裝置 (BYOD) 包括個人手機、平板電腦及電腦。 使用者必須安裝並執行公司入口網站應用程式以註冊 BYOD。 此程式可讓使用者存取公司資源，例如電子郵件。
 
-## <a name="corporate-owned-devices"></a>屬公司擁有的裝置
-以下是屬公司擁有的裝置 (COD) 註冊案例。 iOS 裝置可直接透過 Apple 提供的工具進行註冊。 系統管理員或管理員可使用裝置註冊管理員來註冊所有裝置類型。 也可以將包含 IMEI 號碼的裝置識別和標記為公司擁有，以啟用 COD 案例。
+## <a name="corporate-owned-device"></a>公司擁有的裝置
+公司擁有的裝置 (COD) 包括手機、平板電腦及電腦，由組織擁有並分配給員工。 COD 註冊支援自動註冊、共用裝置或授權前註冊需求等案例。 常見的 COD 註冊方式是由系統管理員或主管使用裝置註冊管理員 (DEM)。 iOS 裝置可直接透過 Apple 提供的裝置註冊計劃 (DEP) 工具進行註冊。 具備 IMEI 編號的裝置也能識別並標記為公司所有。
 
-### <a name="dem"></a>DEM
+### <a name="device-enrollment-manager"></a>裝置註冊管理員
 裝置註冊管理員 (DEM) 是特殊的使用者帳戶，可用於註冊及管理公司擁有的多部裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 深入了解 [DEM](./device-enrollment-manager-enroll.md)。
 
-### <a name="dep"></a>DEP
+### <a name="apple-device-enrollment-program"></a>Apple 裝置註冊方案
 Apple 裝置註冊方案 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這種方法支援 iOS 受監督模式，接著會使用持定功能來設定裝置。
 
 深入了解 iOS DEP 註冊：

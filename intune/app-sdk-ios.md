@@ -5,20 +5,20 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/10/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 942e7ceb8d42240c46387889677cb4620a9da103
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -29,9 +29,9 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (�
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並在該電腦上安裝 Xcode 8 或更新版本。
+* 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並且該電腦已安裝 Xcode 9 或更新版本。
 
-* 您的應用程式必須以 iOS 9 或更新版本為目標。
+* 您的應用程式必須以 iOS 9.3.5 或更新版本為目標。
 
 * 檢閱[適用於 iOS 的 Intune App SDK 授權條款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 列印並保留一份授權條款供您備查。 下載並使用 Intune App SDK for iOS 即表示您同意這些授權條款。  如果您不接受這些條款，請不要使用此軟體。
 
@@ -208,7 +208,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 ## <a name="receiving-app-protection-policy"></a>接收應用程式保護原則
 
 ### <a name="overview"></a>概觀
-若要接收 Intune 應用程式保護原則，應用程式必須向 Intune 服務起始註冊要求。 應用程式可以在 Intune 主控台中設定，以接收應用程式保護原則 (不論是否有裝置註冊)。 無註冊的應用程式保護原則 (亦稱為 **APP-WE** 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune 行動裝置管理 (MDM) 註冊裝置。 在這兩種案例中，必須向 Intune 服務註冊，才能接收原則。
+若要接收 Intune 應用程式保護原則，應用程式必須向 Intune MAM 服務起始註冊要求。 應用程式可以在 Intune 主控台中設定，以接收應用程式保護原則 (不論是否有裝置註冊)。 無註冊的應用程式保護原則 (亦稱為 **APP-WE** 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune 行動裝置管理 (MDM) 註冊裝置。 在這兩種案例中，都必須向 Intune MAM 服務註冊才能接收原則。
 
 ### <a name="apps-that-use-adal"></a>使用 ADAL 的應用程式
 
@@ -225,7 +225,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 ```
 
-透過呼叫 `registerAndEnrollAccount` 方法，SDK 將註冊使用者帳戶，並代表這個帳戶嘗試註冊應用程式。 如果註冊因任何原因而失敗，SDK 將自動在 24 個小時之後重新嘗試註冊。 基於偵錯目的，應用程式可以透過委派來接收有關任何註冊要求結果的[通知](#Status-result-and-debug-notifications)。
+藉由呼叫 `registerAndEnrollAccount` 方法，SDK 將註冊使用者帳戶，並代表這個帳戶嘗試註冊應用程式。 如果註冊因任何原因而失敗，SDK 將自動在 24 個小時之後重新嘗試註冊。 基於偵錯目的，應用程式可以透過委派來接收有關任何註冊要求結果的[通知](#Status-result-and-debug-notifications)。
 
 叫用這個 API 之後，應用程式可以繼續正常運作。 如果註冊成功，SDK 將通知使用者：需要重新啟動應用程式。 此時，使用者可以立即重新啟動應用程式。
 
@@ -235,7 +235,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 ### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的應用程式
 
-未使用 ADAL 登入使用者的應用程式，仍然可以從 Intune 服務接收應用程式保護原則，方法是呼叫 API 讓 SDK 處理該驗證。 如果應用程式尚未向 Azure AD 驗證使用者，但仍需要擷取應用程式保護原則以協助保護資料，則應用程式應該使用這項技術。 例如：如果正在使用另一個驗證服務進行應用程式登入，或者，如果應用程式根本不支援登入。 若要這樣做，應用程式應該會呼叫 `IntuneMAMEnrollmentManager` 執行個體上的 `loginAndEnrollAccount` 方法：
+未使用 ADAL 登入使用者的應用程式，仍然可以從 Intune MAM 服務接收應用程式保護原則，方法是呼叫 API 讓 SDK 處理該驗證。 如果應用程式尚未向 Azure AD 驗證使用者，但仍需要擷取應用程式保護原則以協助保護資料，則應用程式應該使用這項技術。 例如：如果正在使用另一個驗證服務進行應用程式登入，或者，如果應用程式根本不支援登入。 若要這樣做，應用程式應該會呼叫 `IntuneMAMEnrollmentManager` 執行個體上的 `loginAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -248,7 +248,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 ```
 
-藉由呼叫這個方法，SDK 將在找不到現有權杖時提示使用者提供認證。 SDK 接著將會代表所提供的使用者帳戶，嘗試向 Intune 服務註冊應用程式。 這個方法在呼叫時 "nil" 為身分識別。 在這個情況下，SDK 將會使用裝置上現有的受控使用者註冊 (在 MDM 的案例中)，或在找不到任何現有使用者時提示使用者提供使用者名稱。
+藉由呼叫這個方法，SDK 將在找不到現有權杖時提示使用者提供認證。 SDK 接著將會代表所提供的使用者帳戶，嘗試向 Intune MAM 服務註冊應用程式。 這個方法在呼叫時 "nil" 為身分識別。 在這個情況下，SDK 將會使用裝置上現有的受控使用者註冊 (在 MDM 的案例中)，或在找不到任何現有使用者時提示使用者提供使用者名稱。
 
 如果註冊失敗，應用程式應該考慮根據失敗詳細資料，在未來重新呼叫這個 API。 應用程式可以透過委派來接收有關任何註冊要求結果的[通知](#Status-result-and-debug-notifications)。
 
@@ -287,7 +287,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 ```
 
-刪除使用者帳戶的 Azure AD 權杖之前，必須呼叫這個方法。 SDK 需要使用者帳戶的 AAD 權杖，才能代表使用者對 Intune 服務提出特定要求。
+刪除使用者帳戶的 Azure AD 權杖之前，必須呼叫這個方法。 SDK 需要使用者帳戶的 AAD 權杖，才能代表使用者對 Intune MAM 服務提出特定要求。
 
 如果應用程式將自行刪除使用者的公司資料，則 `doWipe` 旗標可以設定為 false。 否則，應用程式可以讓 SDK 起始選擇性抹除。 這樣會呼叫應用程式的選擇性抹除委派。
 
@@ -424,7 +424,7 @@ Intune 可讓 IT 系統管理員選取受管理的應用程式可儲存資料的
 
 其中一些設定可能在前幾節中討論過，而且有些設定並不適用於所有應用程式。
 
-設定  | 類型  | 定義 | 必要？
+Setting  | 類型  | 定義 | 必要？
 --       |  --   |   --       |  --
 ADALClientId  | 字串  | 應用程式的 Azure AD 用戶端識別碼。 | 如果應用程式使用 ADAL，則為必要項。 |
 ADALAuthority | 字串 | 應用程式的使用中 Azure AD 授權單位。 您應該使用已設定 AAD 帳戶的專屬環境。 | 如果應用程式使用 ADAL，則為必要項。 如果此值不存在，則會使用 Intune 預設值。|
@@ -453,10 +453,10 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 > 如果您的應用程式將發行到 App Store，`MAMPolicyRequired` 必須設為 [否]，這是根據 App Store 的標準。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>啟用 iOS 應用程式的 MAM 目標設定
-MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 應用程式擁有者/開發人員必須定義此資料的格式和變化，並向 Intune 客戶溝通。 Intune 系統管理員可以透過 Intune Azure 入口網站為設定資料設定目標並進行部署。 在 Intune App SDK for iOS (v7.0.1) 中，可以透過 MAM 服務提供 MAM 目標設定資料給參與 MAM 目標設定的應用程式。 應用程式設定資料是透過我們的 MAM 服務 (而非透過 MDM 通道) 直接向應用程式發佈。 Intune App SDK 會提供類別來存取從這些主控台擷取的資料。 請將下列各項視為必要條件： <br>
-* 應用程式必須已完成 MAM-WE 註冊，才能存取 MAM 目標設定 UI。 如需 MAM-WE 的詳細資訊，請參閱 [App protection policy without device enrollment in the Intune App SDK guide](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) (Intune App SDK 指南中無裝置註冊的應用程式保護原則)。
+MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 應用程式擁有者/開發人員必須定義此資料的格式和變化，並向 Intune 客戶溝通。 Intune 系統管理員可以透過 Intune Azure 入口網站為設定資料設定目標並進行部署。 從 Intune App SDK for iOS 7.0.1 版開始，可以透過 MAM 服務提供 MAM 目標設定資料給參與 MAM 目標設定的應用程式。 應用程式設定資料是透過我們的 MAM 服務 (而非透過 MDM 通道) 直接向應用程式發佈。 Intune App SDK 會提供類別來存取從這些主控台擷取的資料。 請將下列各項視為必要條件： <br>
+* 應用程式必須向 Intune MAM 服務註冊，您才能存取 MAM 目標設定 UI。 如需詳細資訊，請參閱[接收應用程式保護原則](#receiving-app-protection-policy)。
 * 在應用程式的原始程式檔中包含 ```IntuneMAMAppConfigManager.h```。
-* 呼叫 ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` 以取得應用程式設定物件。
+* 呼叫 ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` 以取得應用程式設定物件。
 * 在 ```IntuneMAMAppConfig``` 物件上呼叫適當的選取器。 例如，如果您的應用程式金鑰是字串，您會想要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 檔案是針對傳回值/錯誤狀況。
 
 如需圖形 API 與 MAM 目標設定值有關之功能的詳細資訊，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (圖形 API 參考 MAM 目標設定)。 <br>

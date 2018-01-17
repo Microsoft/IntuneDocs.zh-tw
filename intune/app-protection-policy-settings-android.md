@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba48723a81850f2835456cc34eb71111ec69d348
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: 6be20f8297db39da8d96ab152b632c4258d91a39
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 應用程式保護原則設定
 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式保護原則[設定](app-protection-policies.md)本主題所述的原則設定。
@@ -27,18 +27,18 @@ ms.lasthandoff: 12/22/2017
 
 ##  <a name="data-relocation-settings"></a>資料重新配置設定
 
-| 設定 | 如何使用 | 預設值 |
+| Setting | 如何使用 | 預設值 |
 |------|------|------|
-| **禁止 Android 備份** | 選擇 [是] 防止這個應用程式將公司或學校資料備份至 [Android Backup Service](https://developer.android.com/google/backup/index.html)。選擇 [否] 允許這個應用程式備份公司或學校資料。| 是 |
+| **禁止 Android 備份** | 選擇 [是] 防止這個應用程式將工作或學校資料備份至 [Android Backup Service](https://developer.android.com/google/backup/index.html)。選擇 [否] 允許這個應用程式備份工作或學校資料。| 是 |
 | **允許應用程式將資料傳送到其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> <p>有一些 Intune 可以允許資料傳輸至其中的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#Data-transfer-exemptions)。<p>**注意：**Intune 目前不支援 Android Instant Apps 功能。 Intune 會封鎖與應用程式之間的任何資料連接。  如需 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) 的詳細資訊，請參閱 Android 開發人員文件。</p>| 所有應用程式 |
 | **允許應用程式接收來自其他應用程式的資料** | 指定可將資料傳送至這個應用程式的應用程式： <ul><li>**受原則管理的應用程式**：只允許從其他受原則管理的應用程式傳送。</li><li>**所有應用程式**：允許從任何應用程式傳送資料。</li><li>**無**：不允許從任何應用程式 (包括其他受原則管理的應用程式) 傳送資料。 </li></ul> <p>有一些 Intune 可以允許從中進行資料傳輸的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#Data-transfer-exemptions)。 | 所有應用程式 |
 | **不可進行另存新檔** | 選擇 [是]，在這個應用程式中停用 [另存新檔] 選項。 如果您想要允許使用 [另存新檔]，請選擇 [否]。 <p><br>**選取要用於儲存公司資料的儲存體服務** <br>使用者可以儲存到幾個選取的服務 (商務用 OneDrive、SharePoint 和本機存放區)。 將會封鎖所有其他服務。</p> | 否 <br><br> 0 (已選取) |
 | **限制與其他應用程式的剪下、複製和貼上** | 指定何時剪下、複製和貼上動作可與這個應用程式搭配使用。 從下列選項進行選擇： <ul><li>**封鎖**：不允許在這個應用程式與任何其他應用程式之間進行剪下、複製和貼上動作。</li><li>**受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下、複製和貼上動作。</li><li>**具有貼上的受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下或複製。 允許將資料從任何應用程式貼入這個應用程式。</li><li>**任何應用程式**：不限制與這個應用程式之間的剪下、複製和貼上。 | 任何應用程式 |
 |**限制 Web 內容以顯示於受管理的瀏覽器中** | 選擇 [是]，強制在 Managed Browser 應用程式中開啟應用程式中的網頁連結。 <br><br> 針對未在 Intune 中註冊的裝置，受原則管理應用程式中的網頁連結只能在 Managed Browser 應用程式中開啟。 <br><br> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。 | 否 |
-| **加密應用程式資料** | 選擇 [是]，啟用這個應用程式中公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 128 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 <br><br> 加密方法**未**經 FIPS 140-2 認證。  | 是 |
+| **加密應用程式資料** | 選擇 [是]，啟用這個應用程式中工作或學校資料的加密。 Intune 可搭配使用 OpenSSL 128 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 <br><br> 加密方法**未**經 FIPS 140-2 認證。  | 是 |
 | **在裝置加密已啟用時停用應用程式加密** | 選擇 [是]，在註冊的裝置上偵測到裝置加密時停用內部應用程式的應用程式加密。 <br><br>**注意：**Intune 只能偵測已註冊 Intune MDM 的裝置。 外部應用程式儲存空間仍會加密，以確保未受管理的應用程式無法加以存取。 | 是 |
-| **停用連絡人同步** | 選擇 [是]，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選擇 [否]，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的公司或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。 | 否 |
-| **停用列印** | 選擇 [是]，防止應用程式列印公司或學校資料。 | 否 |
+| **停用連絡人同步** | 選擇 [是]，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選擇 [否]，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。 | 否 |
+| **停用列印** | 選擇 [是]，防止應用程式列印工作或學校資料。 | 否 |
 
   >[!NOTE]
   >[加密應用程式資料] 設定的加密方法**未**經 FIPS 140-2 認證。
@@ -71,20 +71,20 @@ ms.lasthandoff: 12/22/2017
   | com.android.chrome | Google Chrome 瀏覽器 | Chrome 用於 Android 7.0+ 上的一些 WebView 元件，而且絕不會隱藏，可供檢視。 不過，一律會限制送至應用程式的資料流程以及接收來自其中的資料流程。
   | com.skype.raider | Skype | Skype 應用程式只適用於導致通話的特定動作。 |
   | com.android.providers.media | Android 媒體內容提供者 | 只允許進行鈴聲選取動作的媒體內容提供者。 |
-  | com.google.android.gms; com.google.android.gsf | Google Play Services 套件 | 這些套件允許用於 Google Cloud Messaging 動作 (例如推播通知)。 |
+  | com.google.android.gms; com.google.android.gsf | Google Play Services 套件 | 這些套件允許用於 Google Cloud Messaging 動作 (例如推送通知)。 |
 
 
 
 ##  <a name="access-settings"></a>存取設定
 
-| 設定 | 如何使用 | 預設值 |
+| Setting | 如何使用 | 預設值 |
 |------|------|------|
-| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在公司或學校環境中執行應用程式時，系統會提示他們設定這個 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234 或 1111)。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 <br><br> 此原則設定格式支援正整數。</li><li> **允許指紋而非 PIN (Android 6.0+)**：選擇 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。 預設值 = [是]。</li></ul> 在 Android 裝置上，您可以讓使用者使用 [Android fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) (Android 指紋驗證) 而非 PIN 來證明其身分識別。 使用者嘗試使用自己的公司或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 </li></ul>| 需要 PIN 碼：是 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 |
-| **需要公司認證才能存取** | 選擇 [是]，需要使用者使用公司或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
-| **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的公司或學校資料。 | 是 |
-| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當系統管理員開啟原則中的 PIN 時，若使用者開啟 MAM 應用程式，則必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。<br><br> 此原則設定格式支援正整數。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。<br><br> 此原則設定格式支援正整數。</li></ul>| 逾時：30 <br><br> 離線：720 |
+| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234 或 1111)。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 <br><br> 此原則設定格式支援正整數。</li><li> **允許指紋而非 PIN (Android 6.0+)**：選擇 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。 預設值 = [是]。</li></ul> 在 Android 裝置上，您可以讓使用者使用 [Android fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) (Android 指紋驗證) 而非 PIN 來證明其身分識別。 使用者嘗試使用自己的工作或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 </li></ul>| 需要 PIN 碼：是 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 |
+| **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
+| **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。 | 是 |
+| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早於原則中定義) 前經過的分鐘數。 例如，當管理員在原則中開啟 PIN 時，若使用者開啟已啟用 Intune 的應用程式，就必須輸入 PIN。 如果使用這項設定，使用者在另外 **30 分鐘** (預設值) 內都不需要在任何已啟用 Intune 的應用程式上輸入 PIN。 <br><br> **注意：**在 Android，PIN 會在所有已啟用 Intune 的應用程式間共用。 當裝置上的應用程式離開前景時，PIN 計時器就會重設。 在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並已啟用 Intune 的應用程式上輸入 PIN。 <br><br> 此原則設定格式支援正整數。<br></li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。<br><br> 此原則設定格式支援正整數。</li></ul>| 逾時：30 <br><br> 離線：720 |
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式需要使用者連線到網路並重新驗證。 如果使用者成功驗證，就可以繼續存取其資料，而且會重設離線間隔。  如果使用者無法驗證，應用程式會執行使用者帳戶和資料的選擇性抹除。  如需使用選擇性抹除會移除哪些資料的詳細資訊，請參閱[如何只抹除 Intune 管理之應用程式中的公司資料](https://docs.microsoft.com/en-us/intune/apps-selective-wipe)。<br><br> 此原則設定格式支援正整數。 | 90 天 |
-| **封鎖螢幕擷取及 Android 助手 (Android 6.0+)** | 選擇 [是]，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Android 助手] 功能。 選擇 [是]，也會在搭配使用這個應用程式與公司或學校帳戶時模糊應用程式切換器預覽影像。 | 否 |
+| **封鎖螢幕擷取及 Android 助手 (Android 6.0+)** | 選擇 [是]，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Android 助手] 功能。 選擇 [是]，也會在搭配使用這個應用程式與工作或學校帳戶時模糊應用程式切換器預覽影像。 | 否 |
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選擇 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 | 否 |
 | **需要最低的 Android 作業系統** | 選擇 [是] 以要求使用此應用程式的最低 Android 作業系統。 如果裝置上的 Android 版本不符合需求，將會禁止使用者進行存取。<br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。| 否 |
 | **需要最低的 Android 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 Android 作業系統。 如果裝置上的 Android 版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 | 否 |

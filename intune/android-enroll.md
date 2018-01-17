@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -75,7 +75,7 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
 
 請遵循下列步驟核准 Intune 公司入口網站：
 
-1.  從[受控的 Google Play 商店](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)下載公司入口網站應用程式。
+1.  在[受控 Google Play 商店](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)中瀏覽到公司入口網站應用程式。
 2.  以設定 Android for Work 繫結的相同 Google 帳戶，登入受控的 Google Play 商店。
 3.  按一下 [核准]。  這會開啟新的對話方塊。
 4.  檢閱此對話方塊中的權限，然後按一下 [核准]。 您需要允許這些權限，才能讓公司入口網站應用程式管理裝置上的工作設定檔。
