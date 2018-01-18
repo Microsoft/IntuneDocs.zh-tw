@@ -66,7 +66,7 @@
           href: device-lifecycle.md
         - name: 應用程式生命週期
           href: app-lifecycle.md
-    - name: 常見的案例
+    - name: 常見案例
       href: common-scenarios.md
 - name: 規劃部署
   items:
@@ -130,7 +130,7 @@
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 新增使用者
+        - name: 加入使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -144,7 +144,7 @@
         - name: 註冊選項
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: 條款及條件
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -404,7 +404,7 @@
           href: compliance-policy-create-mac-os.md
         - name: 建立 Windows 原則
           href: compliance-policy-create-windows.md
-        - name: 處理不相容狀況的動作
+        - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -654,12 +654,12 @@
               href: reports-ref-user-device.md
             - name: User 實體的參考
               href: reports-ref-user.md
-    - name: Intune Graph API
+    - name: 在 Microsoft Graph 中使用 Azure AD 存取 Intune API
       href: intune-graph-apis.md
       items:
-        - name: 適用於 Intune 的圖形 API 參考
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune API 參考
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: 資源
   items:
-    - name: 詞彙
+    - name: 字彙
       href: intune-glossary.md
