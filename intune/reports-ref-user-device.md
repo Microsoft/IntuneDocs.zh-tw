@@ -11,20 +11,20 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45c3e14631fdfe74cafea4a0965efac51386524a
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 095395be4c86780ad65ba1e24b856f6eef8d41ae
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="user-device-association"></a>使用者裝置關聯
 
 **UserDeviceAssociation** 實體包含您組織中的使用者裝置關聯。
 
-| 名稱               | 說明                                                                                      | 範例                |
+| 名稱               | 描述                                                                                      | 範例                |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 | UserKey            | 資料倉儲中使用者的唯一識別碼。 (Surrogate 索引鍵)。                              | 123                    |
 | DeviceKey          | 資料倉儲中裝置的唯一識別碼。                                            | 123                    |

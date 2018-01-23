@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 436114837d515d3a03f253c9c8c6e195bff0af41
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 86a57747f903231bbcfe55bd49fcb25a9d16060c
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 01/04/2018
 1. 選取 [公司] 查看公司所擁有的裝置分佈。
 2. 選取 [個人] 查看個人擁有的裝置。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
  - 在 Power BI 文件中深入了解在 Power BI Desktop [建立和管理關聯性](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)。
  - 請參閱 [Intune 資料倉儲模型](https://docs.microsoft.com/intune/reports-ref-data-model)。

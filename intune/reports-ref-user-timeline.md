@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3f8f3d835369900eb4d1e0bf1287d0354cc1151c
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: af9ccd1400127801e5d4de0a3a3e143fabf525f6
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune 資料倉儲中的使用者存留期表示法
 
@@ -73,7 +73,7 @@ John Smith 在 2017/07/25 放棄他的授權。 **User** 資料表有下列項�
  
 若只要查看目前存在的維度實體，可以套用 **IsDeleted = FALSE** 的篩選條件。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
  - 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。
