@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 632a5b2a5f6f5188ef034bdcff927af6a7fe1a59
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -57,8 +57,8 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
    a. 在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [設定] 以開啟 Google Play 的 Android for Work 網站。 在瀏覽器的新索引標籤中開啟網站。
    ![顯示設定 Android for Work 繫結之連結的螢幕擷取畫面](./media/android-work-bind.png)
 
-   b。 **登入 Google**<br>
-   在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是貴公司 IT 管理員共用的 Google 帳戶，以在 Play for Work 主控台中管理及發行應用程式。
+   b. **登入 Google**<br>
+   在 Google 的登入頁面上，輸入要與此租用戶之所有 Android for Work 管理工作相關聯的 Google 帳戶。 這是貴公司 IT 管理員共用的 Google 帳戶，以在 Play for Work 主控台中管理及發行應用程式。 您可以使用現有的 Google 帳戶或建立新帳戶。  您選擇的帳戶絕不能與 G 套件網域建立關聯性。
 
    c. **提供組織詳細資料**<br>
    提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 **Microsoft Intune**。 同意 Android for Work 合約，然後選擇 [確認]。 您的要求將會被處理。

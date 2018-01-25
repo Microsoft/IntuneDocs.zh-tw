@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5645e337e34c6310c82a76d537fe6539e04e71e
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 73caf124e94994acf816c98f0788efdabe024cc4
+ms.sourcegitcommit: c3bd0d192d712fcfd52f64dd1377155796239fcb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 元件
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/12/2018
 
 
 ## <a name="overview"></a>概觀
-[Intune App SDK Xamarin 元件 (英文)](https://components.xamarin.com/view/microsoft.intune.mam) 能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將 Intune 應用程式內資料保護功能建置到以 Xamarin 為基礎的應用程式。
+[Intune App SDK Xamarin 元件 (英文)](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將 Intune 應用程式內資料保護功能建置到以 Xamarin 為基礎的應用程式。
 
 > [!NOTE]
 > Xamarin 的 Intune SDK 支援目前可供預覽。 
@@ -64,7 +64,7 @@ Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保�
 
 2. 閱讀 Microsoft Intune MAM Xamarin 元件的[授權條款](https://components.xamarin.com/license/microsoft.intune.mam)。
 
-3.  從 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下載 Intune App SDK Xamarin 元件資料夾並將它解壓縮。 從步驟 1 和步驟 3 下載的兩個檔案應該在相同的目錄層級中。
+3.  從 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下載 Intune App SDK Xamarin 元件資料夾並將它解壓縮。 從步驟 1 和步驟 3 下載的兩個檔案應該在相同的目錄層級中。
 
 4.  以系統管理員身分在命令列執行 `Xamarin.Component.exe install <.xam> file`。
 
@@ -108,6 +108,6 @@ Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保�
 
 3.  將新增之 `remapping-config.json` 檔案的建置動作設為 **RemappingConfigFile**。 包含的 `remapping-config.json` 僅適用於 Xamarin.Forms。 若為其他 UI 架構，請參閱 Remapper NuGet 套件所包含的讀我檔案。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您已完成將元件建置成應用程式的基本步驟。 現在您可以依照 Xamarin Android 範例應用程式中的步驟。 我們提供了兩個範例，一個用於 Xamarin.Forms，另一個適用於 Android。

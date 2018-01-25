@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -66,7 +65,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 ### <a name="accounts"></a>帳戶
 
-|Name|詳細資料|
+|名稱|詳細資料|
 |--------|-----------|
 |**NDES 服務帳戶**|指定網域使用者帳戶以做為 NDES 服務帳戶使用。|
 
@@ -88,7 +87,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時指定此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步驟 2：設定憑證授權單位上的憑證範本
-在這項工作中，您要：
+在這項工作中，您將會：
 
 -   設定 NDES 的憑證範本
 
@@ -194,7 +193,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步驟 4：設定 NDES 以搭配 Intune 使用
-在這項工作中，您要：
+在這項工作中，您將會：
 
 -   設定 NDES 以便用於發行 CA
 
@@ -297,7 +296,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 4. 重新啟動 NDES 伺服器。 伺服器現在已準備好支援 Certificate Connector。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步驟 5：啟用、安裝及設定 Intune 憑證連接器
-在這項工作中，您要：
+在這項工作中，您將會：
 
 - 啟用 Intune 中的 NDES 支援。
 - 在您環境的伺服器上下載、安裝及設定憑證連接器。 若要支援高可用性，您可以在不同的伺服器上安裝多個憑證連接器。
@@ -329,6 +328,9 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 5.  在 **Certificate Connector** UI 中：
 
     按一下 [登入] 並輸入您的 Intune 服務系統管理員認證，或擁有全域管理權限的租用戶管理員認證。
+
+    > [!IMPORTANT]
+    > 使用者帳戶必須指派有效的 Intune 授權。 如果使用者帳戶沒有有效的 Intune 授權，則 NDESConnectorUI.exe 就會失敗。
 
     如果您的組織使用 Proxy 伺服器，而且 NDES 伺服器需要該 Proxy 以存取網際網路，請按一下 [使用 Proxy 伺服器]，然後提供 Proxy 伺服器名稱、連接埠，以及用以連接的帳戶認證。
 

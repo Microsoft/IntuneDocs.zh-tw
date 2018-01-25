@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 12f4a09fe10ec792abe8183369a21f53c23f5d1a
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2018"></a>Microsoft Intune 的初期版本 - 2018 年 1 月
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/04/2018
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/04/2018
 
 ### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>針對 Windows 10 公司入口網站應用程式，可以更容易解決合規性問題 <!--676546 -->
 
-如果終端使用者是使用 Windows 裝置，便可以在公司入口網站應用程式中點選不符合規範的原因。 如此一來，系統會盡可能將使用者直接移至設定應用程式的正確位置，以修正問題。 
+如果終端使用者是使用 Windows 裝置，便可以在公司入口網站應用程式中點選不符合規範的原因。 如此一來，系統會盡可能將使用者直接移至設定應用程式的正確位置，以修正問題。
 
 ### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>適用於 Apple 大量註冊的使用者驗證新選項 <!-- 747625 -->
 Intune 可讓您使用公司入口網站應用程式於下列註冊方法，以便對裝置進行驗證：
@@ -59,16 +59,16 @@ Intune 可支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DE
 
 移轉之後，透過 Graph 來管理 Apple DEP 或 ASM 的搶鮮版 (Beta) Graph API 與發佈的指令碼將無法再運作。 新的搶鮮版 (Beta) Graph API 正在開發，將會在移轉後發行。
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 eeready --> 
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 eeready -->
 如果您已啟用[裝置群組對應](https://docs.microsoft.com/en-us/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>讓合規性原則以裝置群組中的裝置為目標 <!--1307012 -->
 
-您可以讓合規性原則以使用者群組中的使用者為目標。 您可以讓合規性原則以裝置群組中的裝置為目標。 
+您可以讓合規性原則以使用者群組中的使用者為目標。 您可以讓合規性原則以裝置群組中的裝置為目標。
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>依據群組來包含和排除應用程式指派 <!-- 1406920 -->
 
-應用程式指派期間和選取指派類型之後，您將能選取要包含的群組，以及要排除的群組。 您也可以使用預先建立的群組 ([所有使用者]、[所有裝置] 和 [所有使用者+裝置]) 作為要包含的群組。
+應用程式指派期間和選取指派類型之後，您將能選取要包含的群組，以及要排除的群組。
 
 ### <a name="remote-erase-command-support----1438084---"></a>遠端「清除」命令支援 <!-- 1438084 -->
 
@@ -93,7 +93,7 @@ Intune 將引入 Windows 資訊保護 (WIP) 學習模式的延伸模組。 除�
 
 當傳送電子郵件以回報不符合規範的裝置時，電子郵件會包含不符合規範的裝置相關詳細資料。 下列文章將會更新以指示這項事實：[針對不符合規範的自動化動作](#actions-for-noncompliance)。
 
-### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Intune 的條件式存取原則只能從 Azure 入口網站使用 <!-- 1737088 1634311 --> 
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Intune 的條件式存取原則只能從 Azure 入口網站使用 <!-- 1737088 1634311 -->
 我們將會簡化您設定與管理條件式存取之處。 您將會從 [Azure Active Directory] > [條件式存取]，在 [Azure 入口網站](https://portal.azure.com)中設定與管理原則。 為了方便起見，您也可以從 [Intune] > [條件式存取]，在 Azure 入口網站中從 Intune 存取此刀鋒視窗。
 
 ###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>過期的權杖與即將過期之權杖的警示 <!-- 1639263 -->
@@ -105,8 +105,11 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 ### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>核准適用於 Android for Work 的公司入口網站應用程式 <!--1797090 -->
 如果您的組織使用 Android for Work，您就必須手動核准適用於 Android 的公司入口網站應用程式，這樣它才能繼續從受控的 Google Play 商店接收自動更新。
 
+### <a name="faceid-on-ios-devices----1807377---"></a>iOS 裝置上的 FaceID <!-- 1807377 -->
+Intune 應用程式保護原則現在支援控制 iOS 裝置 FaceID 的設定。 此設定適用於支援 FaceID 功能的裝置 (目前僅 iPhone X 提供此功能)。 這項設定與目前支援的 TouchID 控制項是分開的。 組織可以選擇是否在 TouchID 控制項外，信任 FaceID 作為有效的 PIN 提示。
+
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>適用於 Intune 的 Microsoft Graph API - 正式運作  <!-- 1833289 -->
-Microsoft Graph 中的 Intune API 可提供以程式設計的方式來存取資料與方法，以自動化 Intune 服務的系統管理動作。  這些 API **正式運作**之後，客戶、合作夥伴和開發人員將能利用這些 API，針對 Intune 或透過 Microsoft Graph 提供的其他 Microsoft 服務，整合相關或需要其支援的內部或商業解決方案。 
+Microsoft Graph 中的 Intune API 可提供以程式設計的方式來存取資料與方法，以自動化 Intune 服務的系統管理動作。  這些 API **正式運作**之後，客戶、合作夥伴和開發人員將能利用這些 API，針對 Intune 或透過 Microsoft Graph 提供的其他 Microsoft 服務，整合相關或需要其支援的內部或商業解決方案。
 
 <!-- the following are present prior to 1801 -->
 
@@ -118,13 +121,6 @@ Intune 應用程式防護原則能提供建立全域預設原則的能力，以�
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤銷 iOS 大量採購方案權杖的授權 <!-- 820870 -->
 您將可針對指定的 VPP 權杖撤銷所有 iOS 大量採購方案 (VPP) 應用程式的授權。
-
-### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>網路存取控制 (NAC) 裝置簽入報告 <!-- 1232250 -->
-在此項變更之前，IT 系統管理員無法從 Intune 端判斷受 NAC 管理的裝置是否正與其 NAC 解決方案通訊。 當受 NAC 管理的裝置並未與其 NAC 解決方案通訊時，NAC 解決方案會將裝置視為不符合規範，使該裝置被 NAC 解決方案本身封鎖，並於後續進一步被依賴裝置合規性狀態的條件式存取原則封鎖。
-
-透過這項變更，IT 系統管理員就可看到有哪些受 NAC 管理的裝置已成功與其 NAC 解決方案通訊。 此新功能包含兩個位於 Intune 內的 [裝置合規性] 工作負載中的新監視功能，其統計資料如下：
-- **過去一小時內的平均 NAC 呼叫**
-- **上次的 NAC 傳入要求 (日期/時間)**
 
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 裝置動作 <!-- 1244701 -->
 您可以關閉 iOS 10.3 受監督的裝置。 這個動作會立即關閉裝置，而不會警告使用者。 您可以在 [裝置] 工作負載中選取裝置時，於裝置屬性中找到 [關機 (僅限受監督)] 動作。
@@ -171,11 +167,11 @@ Intune 會支援從 Android 平台獨立管理 Android for Work 裝置的註冊�
 #### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>是否曾啟動 Android for Work 註冊
 如果曾經啟動過，您的情況會隨您選擇的設定而異：
 
-| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 附註 |
+| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 注意 |
 | --- | --- | --- |
-| **將所有裝置當成 Android 管理** | 封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
+| **將所有裝置當成 Android 管理** | 已封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
 | **將支援的裝置當成 Android for Work 管理** | 允許 | 所有支援 Android for Work 的裝置都必須註冊 Android for Work。 |
-| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
+| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 已封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
 
 無論什麼情況，都會保留您預期的法規。 您不需要執行任何動作，即能維持您環境中 Android for Work 的全域或各群組額度。
 
@@ -184,6 +180,14 @@ Intune 會支援從 Android 平台獨立管理 Android for Work 裝置的註冊�
 
 ### <a name="configure-an-ios-app-pin----1586774---"></a>設定 iOS 應用程式 PIN <!-- 1586774 -->
 您很快就可以要求目標 iOS 應用程式的 PIN。 您可以透過 Azure 入口網站設定 PIN 需求及以天計的到期日期。 必要時，使用者必須設定並使用新的 PIN，才能存取 iOS 應用程式。 只有使用 Intune App SDK 啟用應用程式保護的 iOS 應用程式才支援這項功能。
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!--1412866-->
+
+我們將發行 iOS 版公司入口網站應用程式的重大使用者體驗更新。 此項更新的重點是全面視覺效果的重新設計，包括提高使用性和存取範圍的現代化外觀及操作。 保留目前所有的 iOS 公司入口網站功能。
+
+我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 請在 https://aka.ms/intune_ios_cp_testflight 註冊存取 TestFlight。 
+
+![新 ios 公司入口網站應用程式的預告片影像](./media/ios-cp-app-redesign-1801-teaser.png)
 
 
 <!-- the following are present prior to 1711 -->
@@ -204,10 +208,6 @@ Intune 會支援從 Android 平台獨立管理 Android for Work 裝置的註冊�
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### <a name="android-for-work-support-for-lookout----1087312---"></a>適用於 Lookout 的 Android for Work 支援 <!-- 1087312 -->   
-具有 Lookout 的 Intune 連接器將在使用 Lookout for Work 應用程式時支援 Android for Work 裝置。 您能在容器內部或外部部署 Lookout 應用程式。
 
 ### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune 應用程式防護和 Citrix MDX 開發工具 <!-- 709185 -->
 您可以搭配使用 Citrix XenMobile MDX 和 Microsoft Intune 來管理裝置和應用程式。 如此一來，您就可以使用 Citrix 的 mVPN 技術，透過 Intune 應用程式防護原則來管理應用程式。

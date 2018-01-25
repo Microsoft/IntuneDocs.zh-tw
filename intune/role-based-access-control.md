@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
 
@@ -61,6 +61,18 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 - **原則和設定檔管理員**：管理合規性原則、組態設定檔、Apple 註冊和公司裝置識別碼。
 - **唯讀操作員**：檢視使用者、裝置、註冊、設定和應用程式資訊， 但無法對 Intune 進行變更。
 - **應用程式管理員**：管理行動裝置及受管理的應用程式，並可讀取裝置資訊。
+- **學校管理員**：管理 [Intune 教育版](introduction-intune-education.md)的 Windows 10 裝置，可以採取下列動作： 
+
+|權限|失敗|
+|---|---|
+|稽核資料|讀取|
+|DeviceConfigurations|指派、建立、刪除、讀取、更新|
+|裝置註冊管理員|讀取、更新|
+|受控裝置|讀取、更新<!--, Delete [To be added in 1803]-->|
+|行動裝置應用程式|指派、建立、刪除、讀取、更新|
+|報告|讀取|
+|遠端動作|清除電腦、重新開機、遠端鎖定、淘汰、同步處理裝置、抹除|
+|組織|讀取|
 
 ### <a name="to-assign-a-built-in-role"></a>指派內建角色
 
@@ -124,7 +136,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 <br></br>
 5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [使用 Intune 技術服務人員角色搭配疑難排解入口網站](help-desk-operators.md)
 

@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/08/2017
 
 使用應用程式時，因為只會對工作內容套用應用程式保護原則，所以原則的行為會隨內容 (工作或個人) 而不同。  
 
-對於支援多種身分識別的應用程式，Intune 只會在使用者於工作內容中使用應用程式時，才套用應用程式保護原則。  例如，使用者會在存取工作資料時取得 PIN 提示。  針對 **Outlook 應用程式**，系統會提示使用者在啟動應用程式時輸入 PIN。 針對 **OneDrive 應用程式**，這發生在使用者輸入工作帳戶時。  對於 Microsoft **Word**、**PowerPoint*、及 **Excel**，這會在終端使用者存取儲存在公司商務用 OneDrive 位置中的文件時發生。
+對於支援多種身分識別的應用程式，Intune 只會在使用者於工作內容中使用應用程式時，才套用應用程式保護原則。  例如，使用者會在存取工作資料時取得 PIN 提示。  針對 **Outlook 應用程式**，系統會提示使用者在啟動應用程式時輸入 PIN。 針對 **OneDrive 應用程式**，這發生在使用者輸入工作帳戶時。  對於 Microsoft **Word**、**PowerPoint**、及 **Excel**，這會在終端使用者存取儲存在公司商務用 OneDrive 位置中的文件時發生。
 ##  <a name="managing-user-accounts-on-the-device"></a>管理裝置上的使用者帳戶
 
 Intune 只允許將應用程式保護原則部署到每部裝置上的一個使用者帳戶。
@@ -65,5 +65,5 @@ Intune 只允許將應用程式保護原則部署到每部裝置上的一個使�
 
 ## <a name="next-steps"></a>後續步驟
 [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 建立及部署應用程式保護原則](app-protection-policies.md)
