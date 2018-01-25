@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/11/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5575d02d0c270e9d22e4b858d8fb00753b60448
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 8301e7fbd47ec0870f569ae03908e07cd6589549
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -216,11 +216,11 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 如果曾經啟動過，您的情況會隨您選擇的設定而異：
 
-| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 附註 |
+| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 注意 |
 | --- | --- | --- |
-| **將所有裝置當成 Android 管理** | 封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
+| **將所有裝置當成 Android 管理** | 已封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
 | **將支援的裝置當成 Android for Work 管理** | 允許 | 所有支援 Android for Work 的裝置都必須註冊 Android for Work。 |
-| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
+| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 已封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
 
 無論什麼情況，都會保留您預期的法規。 您不需要執行任何動作，即能維持您環境中 Android for Work 的全域或各群組額度。
 
@@ -736,6 +736,10 @@ Windows 10 公司入口網站應用程式可讓使用者提取以重新整理，
 
 ## <a name="notices"></a>通知
 
+### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>規劃變更：立即在 Azure 上使用 Intune 進行 MDM 管理 <!-- 1227338 -->
+一年多前，我們公佈了 [Azure 上的 Intune 公開預覽版 ](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六個月前追加了 Intune 的[新管理員體驗正式運作](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 4 月 2 日起，使用 Intune 獨立版的客戶將無法繼續在傳統 Silverlight 主控台中使用行動裝置管理 (MDM)。 但您可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 處理 MDM 需求。 如果仍在使用 MDM 的傳統主控台，請停止使用並熟悉 Azure 上的 Intune。 我們不希望這項變更影響任何使用者。 Silverlight 仍提供傳統的電腦管理。 您可以在[這裡](https://aka.ms/Intune_on_Azure_mdm)深入了解這項變更，以及它對您的影響。
+
+
 ### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>規劃變更：Easy Assist 生命週期結束 <!-- 1556480 -->
 Intune 會使用 Microsoft Easy Assist 進行電腦管理遠端協助。 您可能不知道 Microsoft Easy Assist 為 Office Live Meeting 的元件，而該服務已於 2017 年 12 月 31 日被取代。 因此，Intune 的 Easy Assist 供應項目生命週期也將於 2017 年 12 月 31 日結束。
 
@@ -758,11 +762,11 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 如果曾經啟動過，您的情況會隨您選擇的設定而異：
 
-| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 附註 |
+| Setting | 預設裝置類型限制中的 Android for Work 狀態 | 注意 |
 | --- | --- | --- |
-| **將所有裝置當成 Android 管理** | 封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
+| **將所有裝置當成 Android 管理** | 已封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
 | **將支援的裝置當成 Android for Work 管理** | 允許 | 所有支援 Android for Work 的裝置都必須註冊 Android for Work。 |
-| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
+| **將這些群組中僅限使用者的受支援裝置當成 Android for Work 管理** | 已封鎖 | 已建立不同的裝置類型限制原則，以覆寫預設值。 此原則會定義您先前選取的群組，以允許 Android for Work 註冊。 所選群組內的使用者仍可以繼續註冊他們的 Android for Work 裝置。 所有其他使用者則限制不能註冊 Android for Work。 |
 
 無論什麼情況，都會保留您預期的法規。 您不需要執行任何動作，即能維持您環境中 Android for Work 的全域或各群組額度。
 
@@ -786,9 +790,13 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 入口網站中將被取代的系統管理角色
 在 Intune 傳統入口網站 (Silverlight) 中使用的現有行動應用程式管理 (MAM) 系統管理角色 (參與者、擁有者或唯讀) 在 Intune Azure 入口網站中會被取代為一組新的、完整的角色型系統管理控制 (RBAC)。 當您移轉至 Azure 入口網站之後，必須將系統管理員重新指派至這些新的系統管理角色。 如需 RBAC 和新角色的詳細資訊，請參閱 [Microsoft Intune 的角色型存取控制](/intune/role-based-access-control)。
 
-
-
 ## <a name="whats-coming"></a>未來動態
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!--1412866-->
+
+我們將發行 iOS 版公司入口網站應用程式的重大使用者體驗更新。 此項更新的重點是全面視覺效果的重新設計，包括提高使用性和存取範圍的現代化外觀及操作。 保留目前所有的 iOS 公司入口網站功能。
+
+我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 請在 https://aka.ms/intune_ios_cp_testflight 註冊存取 TestFlight。
 
 ### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Intune 的條件式存取原則只在 Azure 入口網站提供 <!-- 1737088 -->
 我們正在簡化您設定與管理條件式存取的方法。 目前，您可以在 [Intune 應用程式防護] (MAM) 刀鋒視窗中，透過 [Windows Azure 入口網站](https://manage.windowsazure.com)的傳統 Azure AD 體驗管理條件式存取。 自 1 月開始，您只能夠從 [Azure Active Directory] > [條件式存取]，在 [Azure 入口網站](https://portal.azure.com)設定與管理原則。 為了方便起見，您也可以在 [Intune] > [條件式存取]，從 Azure 入口網站的 Intune 存取此刀鋒視窗。

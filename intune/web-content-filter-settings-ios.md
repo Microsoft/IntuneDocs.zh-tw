@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 
@@ -47,8 +46,11 @@ ms.lasthandoff: 12/30/2017
 ## <a name="configure-urls"></a>設定 URL
 
 1. 在 [網路內容篩選器] 刀鋒視窗上，視需要選擇下列一項設定：
-    - **允許的 URL**：在 [允許的 URL] 刀鋒視窗上，輸入您要允許 (略過 Apple 網站篩選) 的 URL，並在輸入每個 URL 後選擇 [輸入]。
-    - **封鎖的 URL**：在 [封鎖的 URL] 刀鋒視窗上，輸入您要封鎖 (不論 Apple 網站篩選設定為何) 的 URL，並在輸入每個 URL 後選擇 [輸入]。
+   - **允許的 URL**：在 [允許的 URL] 刀鋒視窗上，輸入您要允許 (略過 Apple 網站篩選) 的 URL，並在輸入每個 URL 後選擇 [輸入]。
+     > [!NOTE]
+     > 您在此指定的 URL 是不想受制於 Apple web 篩選器的 URL。 這些 URL 不是網站的唯一允許清單。 如果這是您想要的，請使用 [僅限特定網站]。
+
+   - **封鎖的 URL**：在 [封鎖的 URL] 刀鋒視窗上，輸入您要封鎖 (不論 Apple 網站篩選設定為何) 的 URL，並在輸入每個 URL 後選擇 [輸入]。
 2. 完成後，請按一下 [確定] 。
 
 
@@ -71,6 +73,6 @@ ms.lasthandoff: 12/30/2017
 
 選擇 [確定] 以返回 [建立設定檔] 刀鋒視窗，然後選擇 [建立]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

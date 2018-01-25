@@ -1,6 +1,6 @@
 ---
-title: "如何使用 Azure AD 存取 Intune 圖形 API"
-description: "描述應用程式使用 Azure AD 存取 Intune 圖形 API 所需的步驟"
+title: "如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API"
+description: "描述應用程式使用 Azure AD 在 Microsoft Graph 中存取 Intune API 所需的步驟。"
 keywords: "intune graphapi c# powershell 權限角色"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>如何使用 Azure AD 存取 Intune 圖形 API
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/) 現在支援具有特定 API 和權限角色的 Microsoft Intune。  圖形 API 使用 Azure Active Directory (Azure AD) 進行驗證和存取控制。  
-對於 Intune 圖形 API 的存取需要：
+[Microsoft Graph API](https://developer.microsoft.com/graph/) 現在支援具有特定 API 和權限角色的 Microsoft Intune。  Microsoft Graph API 使用 Azure Active Directory (Azure AD) 進行驗證和存取控制。  
+在 Microsoft Graph 中存取 Intune API 需要：
 
 - 具有以下項目的應用程式識別碼：
 
-    - 呼叫 Azure AD 和圖形 API 的權限。
+    - 呼叫 Azure AD 和 Microsoft Graph API 的權限。
     - 與特定應用程式工作相關的權限範圍。
 
 - 具有以下項目的使用者認證：
@@ -38,11 +38,11 @@ ms.lasthandoff: 12/12/2017
 
 這篇文章：
 
-- 示範如何使用圖形 API 和相關權限角色的存取權註冊應用程式。
+- 示範如何使用 Microsoft Graph API 和相關權限角色的存取權註冊應用程式。
 
-- 描述 Intune 圖形 API 權限角色。
+- 描述 Intune API 權限角色。
 
-- 提供 C# 和 PowerShell 的 Intune 圖形 API 驗證範例。
+- 提供 C# 和 PowerShell 的 Intune API 驗證範例。
 
 - 描述如何支援多個租用戶
 
@@ -53,9 +53,9 @@ ms.lasthandoff: 12/12/2017
 - [整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [了解 OAuth 2.0](https://oauth.net/2/) \(英文\)
 
-## <a name="register-apps-to-use-graph-api"></a>註冊應用程式以使用圖形 API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>註冊應用程式以使用 Microsoft Graph API
 
-若要註冊應用程式以使用圖形 API：
+註冊應用程式以使用 Microsoft Graph API：
 
 1.  使用系統管理認證登入 [Azure 入口網站](https://portal.azure.com)。
 
@@ -127,15 +127,15 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="intune-permission-scopes"></a>Intune 權限範圍
 
-Azure AD 和圖形 API 使用權限範圍來控制公司資源的存取權。  
+Azure AD 和 Microsoft Graph 使用權限範圍來控制公司資源的存取權。  
 
-權限範圍 (也稱為 _OAuth 範圍_) 可控制特定 Intune 實體和其內容的存取權。 本節摘要說明 Intune 圖形 API 功能的權限範圍。
+權限範圍 (也稱為 _OAuth 範圍_) 可控制特定 Intune 實體和其內容的存取權。 本節摘要說明 Intune API 功能的權限範圍。
 
 若要深入了解：
 - [Azure AD 驗證](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [應用程式權限範圍](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-當您將權限授與圖形 API 時，可以指定下列範圍來控制 Intune 功能的存取權：下表摘要說明 Intune 圖形 API 權限範圍。  第一欄顯示了出現在 Azure 入口網站中的功能名稱，第二欄提供權限範圍名稱。
+當您將權限授與 Microsoft Graph 時，可以指定下列範圍來控制 Intune 功能的存取權：下表摘要說明 Intune API 權限範圍。  第一欄顯示了出現在 Azure 入口網站中的功能名稱，第二欄提供權限範圍名稱。
 
 _啟用存取_設定 | 領域名稱
 :--|:--
@@ -153,7 +153,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 
 表格依照 Azure 入口網站中顯示的順序列出設定。 以下幾節依字母順序說明範圍。
 
-此時，所有 Intune 權限範圍都需要系統管理員存取權。  這表示執行存取 Intune 圖形 API 資源的應用程式或指令碼時，需要對應的認證。
+此時，所有 Intune 權限範圍都需要系統管理員存取權。  這表示執行存取 Intune API 資源的應用程式或指令碼時，需要對應的認證。
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 
 如果發生這種情況，請確認：
 
-- 您已將應用程式識別碼更新為已獲授權可使用圖形 API 和 `DeviceManagementManagedDevices.Read.All` 權限範圍。
+- 您已將應用程式識別碼更新為已獲授權可使用 Microsoft Graph API 和 `DeviceManagementManagedDevices.Read.All` 權限範圍。
 
 - 您的租用戶認證支援系統管理功能。
 
@@ -559,7 +559,7 @@ catch {
 
     a. 使用 [Microsoft 合作夥伴中心](https://partnercenter.microsoft.com/) 來定義與您的用戶端及其電子郵件地址之間的關聯性。
 
-    b。 邀請使用者成為您租用戶的來賓。
+    b. 邀請使用者成為您租用戶的來賓。
 
 若要邀請使用者成為您租用戶的來賓：
 

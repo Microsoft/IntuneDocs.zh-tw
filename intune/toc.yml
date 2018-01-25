@@ -124,7 +124,7 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路頻寬使用量
+            - name: 網路設定
               href: network-bandwidth-use.md
         - name: 登入 Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment 方案
               href: enrollment-autopilot.md
+            - name: 註冊狀態畫面
+              href: windows-enrollment-status.md
         - name: 設定 Android 註冊
           href: android-enroll.md
         - name: 設定 iOS 註冊
