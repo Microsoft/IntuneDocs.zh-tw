@@ -3,7 +3,7 @@ title: "開始使用 Microsoft Intune App SDK"
 description: "使用 Microsoft Intune 快速為行動應用程式啟用行動應用程式管理 (MAM)。"
 keywords: 
 author: erikre
-manager: angrobe
+manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: 13a6174856ad18034fc3d3c912339c8f844b3db0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -133,7 +133,7 @@ Android 和 iOS 會在應用程式參考中同時使用版本和組建編號。 
 
 在開發用於 Intune 的企業營運應用程式時，請記得同時使用版本和組建編號。 Intune 應用程式管理功能仰賴於有意義的 **CFBundleVersion** (適用於 iOS) 和 **PackageVersionCode** (適用於 Android)。 這些數字會包含在應用程式資訊清單中。 
 
-Intune|iOS|Android|描述|
+Intune|iOS|Android|說明|
 |---|---|---|---|
 版本號碼|CFBundleShortVersionString|PackageVersionName |這個數字表示使用者的特定應用程式版本。|
 組建編號|CFBundleVersion|PackageVersionCode |這個數字用來表示應用程式程式碼中的反覆項目。|

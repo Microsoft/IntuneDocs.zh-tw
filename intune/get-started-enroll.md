@@ -5,7 +5,7 @@ description: "透過 iOS 裝置的完整註冊體驗，來學習註冊體驗。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00d462639e6f85e6d76ea7061588ba976242e21d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-enrolling-devices"></a>開始註冊裝置
 
@@ -57,7 +57,7 @@ Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保
 15. 畫面上會顯示「註冊裝置」訊息，然後顯示已成功註冊裝置。 會出現快顯視窗，詢問是否在公司入口網站中開啟頁面。 點選 [開啟]。
 16. 您會回到 [公司存取設定] 畫面。 如果您未設定任何測試原則，那麼裝置應該會顯示為符合規範。 如果您有任何測試原則，則點選 [裝置合規性] 會顯示需要完成的事項，以確保裝置安全。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始新增應用程式](get-started-apps.md) - 找到應用程式，並將其新增至裝置，讓您的員工可以完成工作。
 

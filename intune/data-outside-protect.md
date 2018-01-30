@@ -3,7 +3,7 @@ title: "防止未經授權的公司資料存取"
 description: "當公司資料在公司網路外部共用時，防止發生未經授權的存取。"
 keywords: "Office 365 O365 Azure 資訊保護會保護外部網路的公司資料"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>防止未經授權的公司資料存取 
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 10/21/2017
 
 您可以共用[如何和何時保護含有敏感性資訊的文件和電子郵件](https://docs.microsoft.com/information-protection/deploy-use/help-users)的詳細資料。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 在接下來的步驟中，您可以深入了解提高公司資料保護的其他方式，包含： 
 

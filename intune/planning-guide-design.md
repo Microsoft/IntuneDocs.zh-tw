@@ -4,7 +4,7 @@ description: "本文可協助您建立 Microsoft Intune 僅限雲端設計及實
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -349,7 +349,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 -   [商務用 iOS 大量採購方案 (VPP)](vpp-apps-ios.md)
 
--   [商務用 Windows 市集應用程式](windows-store-for-business.md)
+-   [商務用 Microsoft 網上商店應用程式](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>應用程式類型需求
 
@@ -379,7 +379,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別應用程式保護原則需求。
-#### <a name="compliance-policies"></a>相容性原則
+#### <a name="compliance-policies"></a>合規性政策
 
 相容性原則決定裝置是否符合特定需求。 Intune 使用相容性原則判斷裝置視為相容或不相容。 相容性狀態也可用來限制或允許存取公司資源。 如果需要條件式存取，建議您設計[裝置相容性原則](device-compliance.md)。
 
@@ -412,6 +412,6 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別條件式存取原則需求。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 下一節提供有關 [Intune 實作程序](planning-guide-onboarding.md)的指引。

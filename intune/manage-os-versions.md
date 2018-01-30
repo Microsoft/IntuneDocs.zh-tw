@@ -3,18 +3,18 @@ title: "使用 Intune 管理作業系統版本"
 description: "了解如何使用 Microsoft Intune 跨平台管理作業系統版本。"
 keywords: 
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: c1b49619e07c4381f7bc5314ff9e25c063ad3e1d
-ms.sourcegitcommit: 6daa83bdaf9186cb2e5f59ba81add4cf297ee1cd
+ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理作業系統版本
 在現代化行動和桌面平台上，主要更新、修補程式以及新版本的發行速度很快。 您有控制方法可以完全管理 Windows 上的更新和修補程式，但像是 iOS 和 Android 等其他平台則需要終端使用者參與此程序。  Microsoft Intune 具有可協助在不同平台之間組織作業系統版本管理結構的功能。
@@ -79,7 +79,7 @@ Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，
 - **步驟 3b**：使用裝置合規性原則，要求作業系統 v2 作為裝置要符合規範時的最低版本。
   - 這些原則會要求裝置更新，以便它們能繼續存取組織的資料。 搭配裝置條件式存取使用時，受保護的服務會遭到封鎖。 已啟用應用程式保護原則的應用程式，會在開啟時或存取組織資料時遭到封鎖。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 使用下列資源來管理組織中的作業系統版本： 
 
 - [設定裝置類型限制](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)

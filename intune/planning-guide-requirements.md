@@ -4,7 +4,7 @@ description: "本文可協助您判斷 Intune 使用案例，以及適用於 Mic
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>決定使用案例的需求
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/01/2017
 
 以下是一些組織使用案例需求的範例，其中說明每個使用案例與次要使用案例、組織群組和行動裝置平台的不同需求。 您也可以使用下表來輸入您的組織使用案例需求：
 
-| **使用案例** | **次要使用案例** | **群組** | **裝置平台** | **Requirements** |
+| **使用案例** | **次要使用案例** | **群組** | **裝置平台** | **需求** |
 |:---:|:---:|:---:|:---:|:---:|
 | 公司 | 資訊工作者 | 人力資源、財務 | iOS | 安全電子郵件、裝置設定、設定檔、應用程式 |                                                          
 | 公司 | 主管 | 人力資源、財務 | iOS | 安全電子郵件、裝置設定、設定檔、應用程式 |                                                         
@@ -62,6 +62,6 @@ ms.lasthandoff: 11/01/2017
     - Office 365 與應用程式保護原則
     - 企業營運 (LOB) 與應用程式保護原則
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 下一節提供[如何開發 Intune 推出計畫](planning-guide-rollout-plan.md)的指引。

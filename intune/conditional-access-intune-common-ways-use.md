@@ -5,7 +5,7 @@ description: "透過 Intune 使用條件式存取的常見方式"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: dff3c5c077c9d67c667c7f3a53326e555a1cce92
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>透過 Intune 使用條件式存取的常見方式
 
@@ -141,7 +141,7 @@ Intune 與 Azure Active Directory 會共同運作，以確保只有受管理的�
 
 -   深入了解[搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [如何在 Azure Active Directory 中設定條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 

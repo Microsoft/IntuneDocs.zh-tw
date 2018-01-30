@@ -5,7 +5,7 @@ description: "Intune Azure 預覽版︰了解 RBAC 如何讓您控制誰可以�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
 
@@ -63,7 +63,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 - **應用程式管理員**：管理行動裝置及受管理的應用程式，並可讀取裝置資訊。
 - **學校管理員**：管理 [Intune 教育版](introduction-intune-education.md)的 Windows 10 裝置，可以採取下列動作： 
 
-|權限|失敗|
+|權限|操作|
 |---|---|
 |稽核資料|讀取|
 |DeviceConfigurations|指派、建立、刪除、讀取、更新|
@@ -136,7 +136,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 <br></br>
 5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [使用 Intune 技術服務人員角色搭配疑難排解入口網站](help-desk-operators.md)
 

@@ -5,7 +5,7 @@ description: "逐步進行一系列的簡短實際操作練習，以了解 Intun
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04852dfd9a509413dd9e532c8a464f3d02e60fd4
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 0792bc51b956f2aad634d6777b2222a9439e9538
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 對我的公司有何作用？
 
@@ -46,7 +46,7 @@ Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您
 
 您也需要確定您是組織的全域系統管理員，才能完成所有工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始使用 Azure](get-started-azure.md) - 了解 Azure 入口網站的結構以及如何變更您看到的頁面。
 

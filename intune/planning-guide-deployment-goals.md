@@ -4,7 +4,7 @@ description: "本文有助於判斷 Microsoft Intune 僅限雲端實作的部署
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 47bba6d9f65aa1e2ff8cc0255cd7fccfda417f92
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fe680fcb617c29678f193aac2d74c12398a2a7f8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>判斷部署目的、目標和挑戰
 
@@ -88,6 +88,6 @@ ms.lasthandoff: 11/01/2017
 
     -   **緩和措施：**在您興奮地一頭栽進專案時，請確定您擁有明確定義的目的與目標。 將這些目標納入所有認知和訓練活動，有助於確保使用者了解組織選擇 Intune 的原因。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 現在，您已經識別部署目的、目標和潛在的挑戰，即可前往下一節：[識別使用案例](planning-guide-scenarios.md)。

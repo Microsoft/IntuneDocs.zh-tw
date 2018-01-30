@@ -4,7 +4,7 @@ description: "同步處理內部部署使用者和 Azure AD 以及將您 Intune 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/01/2017
 3. 在系統管理中心，選取 [新增使用者]。
   ![Office 365 系統管理員的螢幕擷取畫面](media/intune-add-user.png)
 4. 指定下列使用者詳細資訊：
-  - **Name**
+  - **名稱**
   - **使用者名稱** - Azure Active Directory 入口網站中的新名稱![Office 365 系統管理員的螢幕擷取畫面](media/intune-add-user-info.png)選擇 [確定] 繼續。
 5. 或者，您也可以指定下列使用者內容：
   - **設定檔** - 工作資訊，包括 [職稱]和 [部門]

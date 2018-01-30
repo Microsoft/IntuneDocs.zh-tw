@@ -4,7 +4,7 @@ description: "Intune 資料倉儲 API 中的實體集合裝置類別的參考主
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c708361708468c544533a27a446ef33a23d88d8a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 13edf33aba614337d18806b3442668e74a9295dc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/16/2018
 
 **DeviceTypes** 實體代表其他資料倉儲實體所參考的裝置類型。 裝置類型通常會描述裝置型號、製造商或兩者的組合。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DeviceTypeID |裝置類別的唯一識別碼 |
 | DeviceTypeKey |資料倉儲中裝置類型的唯一識別碼 - surrogate 索引鍵 |
@@ -45,7 +45,7 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| deviceTypeID  | 名稱 | 描述 |
+| deviceTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 0 |桌面 |Windows Desktop 裝置 |
 | 1 |WindowsRT |WindowsRT 裝置 |
@@ -66,13 +66,13 @@ ms.lasthandoff: 01/16/2018
 | 17 |AndroidForWork |使用 Android for Work 設定檔擁有者的受管理 Android 裝置 |
 | 100 |Blackberry |Blackberry 裝置 |
 | 101 |Palm |掌上型裝置 |
-| 255 |未知 |未知的裝置類型 |
+| 255 |Unknown |未知的裝置類型 |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
 **ClientRegistrationStateTypes** 實體代表其他資料倉儲資料表所參考的註冊類型。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | clientRegisterationStateID |註冊狀態的唯一識別碼 |
 | clientRegisterationStateKey |資料倉儲中註冊狀態的唯一識別碼 - surrogate 索引鍵 |
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| ClientRegisterationStateID  | 名稱 | 描述 |
+| ClientRegisterationStateID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 0 |NotRegistered |未註冊 |
 | 1 |SMSIDConflict |SMS 識別碼衝突 |
@@ -90,13 +90,13 @@ ms.lasthandoff: 01/16/2018
 | 5 |ApprovalPending |擱置核准 |
 | 6 |ResetCert |重設憑證 |
 | 7 |NotRegisteredPendingEnrollment |未註冊、擱置註冊 |
-| 8 |未知 |未知的狀態 |
+| 8 |Unknown |未知的狀態 |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 **EnrollmentTypes** 實體會指出裝置的註冊方式。 註冊類型會擷取註冊的方法。 範例會列出不同的註冊類型及其代表的意義。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | managementStateID |管理狀態的唯一識別碼。 |
 | managementStateKey |資料倉儲中管理狀態的唯一識別碼 - surrogate 索引鍵 |
@@ -104,9 +104,9 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| enrollmentTypeID  | 名稱 | 描述 |
+| enrollmentTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
-| 0 |未知 |未收集註冊類型 |
+| 0 |Unknown |未收集註冊類型 |
 | 1 |UserEnrollment |起始註冊的使用者 |
 | 2 |DeviceEnrollment |以無使用者設定檔註冊的裝置 |
 | 3 |DeviceEnrollmentWithUDA |以 UDA 設定檔註冊的裝置。 |
@@ -120,7 +120,7 @@ ms.lasthandoff: 01/16/2018
 
 **EnrollmentTypes** 實體會指出裝置為公司所有、個人擁有或未知。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 | 範例 |
 |---------|------------|--------|
 | ownerTypeID |擁有者類型的唯一識別碼。 | |
 | ownerTypeKey |資料倉儲中擁有者類型的唯一識別碼 - Surrogate 索引鍵。 | |
@@ -130,7 +130,7 @@ ms.lasthandoff: 01/16/2018
 
 **MdmStatuses** 實體會指出裝置的合規性狀態。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | MdmStatusID |合規性狀態的唯一識別碼 |
 | MdmStatusKey |資料倉儲中合規性狀態的唯一識別碼 - surrogate 索引鍵 | 
@@ -139,9 +139,9 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| MdmStatusID  | ComplianceStatus | 描述 |
+| MdmStatusID  | ComplianceStatus | 說明 |
 |---------|------------|--------|
-| 0 |未知 |裝置的合規性狀態不明。 |
+| 0 |Unknown |裝置的合規性狀態不明。 |
 | 1 |符合標準 |裝置符合規範。 |
 | 2 |不符合標準 |裝置符合規範。 |
 | 3 |衝突 |裝置的合規性導致衝突。 |
@@ -152,7 +152,7 @@ ms.lasthandoff: 01/16/2018
 
 **ManagementStates** 實體會提供裝置狀態的詳細資訊。 在套用遠端動作的情況下，裝置如進行 JB 破解或刷機，詳細資料會很有幫助。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | managementStateID | 管理狀態的唯一識別碼。 |
 | managementStateKey | 資料倉儲中管理狀態的唯一識別碼 - surrogate 索引鍵 |
@@ -160,14 +160,14 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| managementStateID  | 名稱 | 描述 |
+| managementStateID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 0 |受管理 | 使用無擱置遠端動作進行管理。 |
 | 1 |RetirePending | 該裝置有擱置的淘汰命令。 |
 | 2 |RetireFailed | 裝置上的淘汰命令失敗。 |
 | 3 |WipePending | 該裝置有擱置的抹除命令。 |
 | 4 |WipeFailed | 裝置上的抹除命令失敗。 |
-| 5 |狀況不良 | 狀況不良狀態。 |
+| 5 |Unhealthy | 狀況不良狀態。 |
 | 6 |DeletePending | 該裝置有擱置的刪除命令。 |
 | 7 |RetireIssued | 已向裝置發出淘汰命令。 |
 | 8 |WipeIssued | 已發出抺除命令。 |
@@ -179,7 +179,7 @@ ms.lasthandoff: 01/16/2018
 
 **WorkPlaceJoinStateTypes** 實體代表裝置的 Azure Active Directory Workplace Join 狀態。  註冊工作流程可以使用一或多個憑證進行確認或驗證。 註冊裝置工作場所時，會使用這些憑證來驗證裝置與使用者。 憑證簽發是透過 SCEP (簡單憑證註冊點) 伺服器提供。 實體中的值會指出裝置在經歷此程序時，可能有的各種狀態。 這些狀態中，有些包括因簽發必要憑證 (來自 SCEP 伺服器) 失敗導致 WorkPlace Join 失敗。 如果裝置從未完成此工作流程，則值會設為 [未知]。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | WorkPlaceJoinStateID | 工作場所加入狀態的唯一識別碼 |
 | WorkPlaceJoinStateKey | 資料倉儲中工作場所加入狀態的唯一識別碼 - surrogate 索引鍵 |
@@ -187,9 +187,9 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| workPlaceJoinStateID  | 名稱 | 描述 |
+| workPlaceJoinStateID  | 名稱 | 說明 |
 |---------|------------|--------|
-| 0 |未知 |如果裝置沒有加入工作場所，即處於未知狀態 |
+| 0 |Unknown |如果裝置沒有加入工作場所，即處於未知狀態 |
 | 1 |已成功 |成功加入工作場所 |
 | 2 |FailureToGetScepMetadata |無法取得 SCEP 中繼資料 |
 | 3 |FailureToGetScepChallenge |無法取得 SCEP 查問 |
@@ -203,7 +203,7 @@ ms.lasthandoff: 01/16/2018
 
 **ManagementAgentTypes** 實體代表管理裝置的代理程式。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | ManagementAgentTypeID | 管理代理程式類型的唯一識別碼。 |
 | ManagementAgentTypeKey | 資料倉儲中管理代理程式類型的唯一識別碼 - Surrogate 索引鍵。 |
@@ -211,7 +211,7 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="example"></a>範例
 
-| ManagementAgentTypeID  | 名稱 | 描述 |
+| ManagementAgentTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
 | 1 |EAS | 透過 Exchange Active Sync 管理的裝置 |
 | 2 |MDM | 使用 MDM 代理程式管理的裝置 |
@@ -219,13 +219,13 @@ ms.lasthandoff: 01/16/2018
 | 4 |IntuneClient | Intune 電腦代理程式管理的裝置 |
 | 5 |EasIntuneClient | 由 Exchange Active Sync 與 Intune 電腦代理程式管理的裝置 |
 | 8 |ConfigManagerClient | 由 System Center Configuration Manager 代理程式管理的裝置 |
-| 16 |未知 | 未知的管理代理程式類型 |
+| 16 |Unknown | 未知的管理代理程式類型 |
 
 ## <a name="devices"></a>裝置
 
 **Devices** 實體會列出管理下的所有已註冊裝置及其對應的屬性。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DeviceKey | 資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 |
 | DeviceId | 裝置的唯一識別碼。 |
@@ -270,7 +270,7 @@ ms.lasthandoff: 01/16/2018
 
 **DevicePropertyHistory** 實體與裝置資料表和每部裝置過去 90 天內每天記錄的每日快照集有相同的內容。 DateKey 資料行會指出每個資料列的日期。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DateKey |指出當日的日期資料表參考。 |
 | DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼之裝置資料表的參考。 |
@@ -314,12 +314,12 @@ ms.lasthandoff: 01/16/2018
 
 **MdmDeviceInventoryHistories** 實體包含過去 90 天內 MDM 管理裝置的清查資料每日快照集。 DateKey 資料行指出資料列是哪一天。 部分屬性可能不適合或無法填入所有裝置，詳細資料請參閱此頁面。 如需詳細資訊，請參閱[在 Microsoft Intune 透過清查了解您的裝置](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DateKey | 指出當日的日期資料表參考。 |
 | DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼之裝置資料表的參考。 |
 | DeviceModel |裝置的型號。 |
-| OS |裝置的作業系統。 |
+| 作業系統 |裝置的作業系統。 |
 | DeviceName |允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不能提供所有裝置使用。 |
 | SoftwareVersion |在大部分情況下，這是作業系統版本，與作業系統版本不同的 Apple 平台除外。 |
 | Imei |IMEI 編號 |
@@ -331,7 +331,7 @@ ms.lasthandoff: 01/16/2018
 | ComputerSystemName |系統名稱。 |
 | ComputerSystemManufacturer |系統製造商。 |
 | ComputerSystemModel |系統型號。 |
-| 使用者名稱 |使用者名稱。 |
+| UserName |使用者名稱。 |
 | OSType |作業系統類型。 |
 | OSCaption |作業系統標題。 |
 | OSName |作業系統名稱。 |
@@ -412,7 +412,7 @@ ms.lasthandoff: 01/16/2018
 
 **ApplicationInventory** 實體會列出清查收集期間在裝置上找到的應用程式。
 
-| 屬性  | 描述 |
+| 屬性  | 說明 |
 |---------|------------|
 | DeviceKey |裝置資料表的參考。 |
 | ApplicationKey |? (從 ExchangeDeviceService\DeviceApplication 複製)。 |

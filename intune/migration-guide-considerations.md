@@ -4,7 +4,7 @@ description: "本文提供開始移轉活動之前的特殊移轉考量。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 7ff1180275fddc7f0d6ef957c4680d7c34ad471e
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 86f3f7f2c8066e1b7b50dfc5931184c394d4f15b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="special-migration-considerations"></a>特殊移轉考量
 
@@ -30,6 +30,6 @@ Apple 裝置註冊計劃 (DEP) 設定了使用者無法移除的裝置組態。 
 若要繼續使用 DEP 管理來 Intune 中的裝置，請[使用裝置註冊計劃來設定 iOS 裝置註冊](device-enrollment-program-enroll-ios.md)。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [階段 2：移轉活動](migration-guide-campaign.md)

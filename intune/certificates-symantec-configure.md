@@ -5,7 +5,7 @@ description: "安裝並設定 Intune 憑證連接器，以從 Symantec PKI Manag
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>針對 Symantec PKI Manager Web 服務設定 Intune 憑證連接器
 
@@ -314,7 +314,7 @@ Intune 憑證連接器服務記錄可於 NDES 連接器電腦上的 `%ProgramFil
 | 某些使用者裝置沒有接收到來自 Symantec CA 的 PKCS 憑證。 | 此問題會在使用者 UPN 包含如底線等特殊字元時發生 (範例：`global_admin@intune.onmicrosoft.com`)。 <br><br> Symantec CA 在 mail_firstname 和 mail_lastname 中並不支援特殊字元。 <br><br> 下列步驟可協助解決此問題： <br><br> 1. 登入 Symantec CA 系統管理入口網站。 <br> 2.移至 [Manage Certificate Profiles] \(管理憑證設定檔\)。 <br> 3. 按一下用於 Intune 的憑證設定檔。 <br> 4.按一下 [Customize] \(自訂\) 選項連結。 <br> 5. 按一下 [Advanced] \(進階\) 按鈕。 <br> 6.在 [Certificate fields – Subject DN] \(憑證欄位 - 主體 DN\) 底下，新增 [Common Name (CN)] \(一般名稱 (CN)\) 欄位，並刪除現有的 [Common Name (CN)] \(一般名稱 (CN)\) 欄位。 新增和刪除動作必須同時執行。 <br> 7.  按一下 [儲存]。 <br><br> 透過先前的變更，Symantec 憑證設定檔將會要求 “CN=<upn>”，而非 mail_firstname 和 mail_lastname。 |
 | 使用者手動從裝置刪除已部署的憑證。 | Intune 會在下一次簽入或強制執行原則時，重新部署相同的憑證。 在此情況下，NDES 連接器並不會接收到 PKCS 憑證要求。 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 使用在本文及[什麼是 Microsoft Intune 裝置設定檔？](device-profiles.md)中所提供的資訊，來管理您組織的裝置及裝置上的憑證。
 

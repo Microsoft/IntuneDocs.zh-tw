@@ -5,7 +5,7 @@ description: "了解如何在 Azure 入口網站中針對 Intune 建立和共用
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Intune
 
@@ -54,6 +54,6 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**刀鋒視窗**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 * [開始管理使用者](get-started-users.md) - 將使用者新增至 Intune，以允許他們存取行動裝置上的公司資源。

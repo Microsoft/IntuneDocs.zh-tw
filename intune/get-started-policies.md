@@ -5,7 +5,7 @@ description: "建立原則，以防止使用者透過其裝置執行未經授權
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eaac36810f8df524fa795a0fef2cf9a368984658
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-policies"></a>開始使用原則
 
@@ -55,7 +55,7 @@ __如何建立原則？__
 8. 建立原則之後，選取 [指派] 將它指派給您的測試群組。 選取您的測試群組 - 群組中應該有您的測試使用者 - 然後按一下 [儲存] 將原則指派給該群組。
 9. 等待幾分鐘的時間，您的已註冊裝置應該會提示您需要更新密碼，以維持符合公司原則。 您也可以在 **iOS 公司入口網站應用程式**手動檢查這點，方法是依序點選裝置名稱和 [同步] 按鈕。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始註冊裝置](get-started-enroll.md) - 透過 iOS 裝置的完整註冊體驗，來學習註冊體驗。
 

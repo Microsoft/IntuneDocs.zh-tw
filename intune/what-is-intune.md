@@ -5,7 +5,7 @@ description: "了解 Azure 入口網站中 Intune 的基本概念，以及這些
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
@@ -85,7 +85,7 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 [依據您指定的條件，限制對 Exchange 服務的存取](conditional-access.md)。
 ### <a name="on-premises-access"></a>內部部署存取
 [設定 Exchange ActiveSync 和 Exchange 內部部署的存取](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>Users
+### <a name="users"></a>使用者
 [了解您管理之裝置的使用者，並將資源整理歸入群組](users-add.md)。
 ### <a name="groups"></a>中
 [了解如何搭配 Intune 使用 Azure Active Directory 群組](groups-get-started.md)

@@ -5,7 +5,7 @@ description: "使用 Intune 設定 Lookout 訂閱"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: 6b5d9a5fafdec0750e943dcfb3542d4dfd69f6ae
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/07/2017
 您的 Lookout Mobility Endpoint Security 租用戶與 Azure AD 訂用帳戶將會建立關聯，以將 Lookout 及 Intune 整合在一起。 若要啟用 Lookout Mobile Threat Defense 服務訂閱，您必須提供下列資訊給 Lookout 支援 (enterprisesupport@lookout.com)︰
 
 * **Azure AD 租用戶識別碼**
-* 可**完整存取** Lookout 主控台的 **Azure AD 群組物件識別碼**
+* 用於**完整** Lookout 主控台存取的 **Azure AD 群組物件識別碼**
 * 可**限制存取** Lookout 主控台的 **Azure AD 群組物件識別碼** (選擇性)
 
 請使用下列步驟收集您需要提供給 Lookout 支援小組的資訊。
@@ -133,6 +133,6 @@ Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分�
 ## <a name="watching-enrollment"></a>監控註冊
 完成設定之後，Lookout Mobile Threat Defense 就會開始輪詢 Azure AD，找出對應至指定註冊群組的裝置。  您可以在 [裝置] 模組中找到已註冊裝置的相關資訊。  裝置的初始狀態會顯示為 [擱置中]。  在裝置上安裝、開啟及啟用 Lookout for Work 應用程式之後，裝置狀態將會變更。  如需如何取得推送至裝置之 Lookout for Work 應用程式的詳細資訊，請參閱[使用 Intune 新增 Lookout for Work 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)主題。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [設定 Lookout 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
