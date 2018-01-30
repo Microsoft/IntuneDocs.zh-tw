@@ -5,7 +5,7 @@ description: "了解如何使用 Intune，以協助將 iOS 和 macOS 裝置自�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8953997ce5437227463b8061b8059d58721dce7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>適用於 iOS 和 macOS 裝置的 AirPrint 設定
 
@@ -47,6 +47,6 @@ ms.lasthandoff: 12/12/2017
 您也可以從逗號分隔值 (.csv) 檔案匯入印表機清單，或是將清單匯出。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

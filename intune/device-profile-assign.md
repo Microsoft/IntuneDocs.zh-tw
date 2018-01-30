@@ -5,7 +5,7 @@ description: "建立 Intune 裝置設定檔之後，可使用本主題來了解�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba1438fe9227e0c7933fda7e9a2b60c8d4a5dca4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>如何指派 Microsoft Intune 裝置設定檔
 
@@ -55,5 +55,5 @@ Intune 裝置組態設定檔可讓您從原則指派排除群組。 例如，您
 >合規性政策或應用程式指派目前不提供排除項目。 若要從指派排除成員，您可以使用「可用」及「不適用」的指派意圖。 例如，您將應用程式指派給具有**可用**意圖的**所有公司使用者**，又指派給具有**不適用**意圖的**資深管理層**。 此應用程式會指派給所有使用者，但**資深管理層**群組的使用者「除外」。 如果您將應用程式指派給具有**必要**意圖的**所有公司使用者**，不會排除**資深管理層**群組的使用者。
  
     
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 請參閱[如何監視裝置設定檔](device-profile-monitor.md)以取得資訊，協助您監視裝置的設定檔指派。

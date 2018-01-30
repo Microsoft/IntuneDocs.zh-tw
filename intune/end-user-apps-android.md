@@ -4,7 +4,7 @@ description: "讓終端使用者可以使用 Android 應用程式的方法"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ad05e4eac40a6d3b8c522e893d8aea51de34c67a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: c37fedd23606b51182ada561ae467ebe52c829d6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 01/16/2018
 | 應用程式類型 | 企業營運 (LOB) 應用程式 | Play Store 應用程式  |
 | ------------- |-------------| -----|
 | 可用的應用程式      | 使用者在公司入口網站中點選 [安裝]。 應用程式將在使用者無須介入下完成安裝。 | 使用者點選公司網站中的應用程式，並被移至 Play Store 中的應用程式頁面，使用者可以在該處開始安裝。|
-| 必要的應用程式      | 應用程式將在使用者無須介入下完成安裝。    | 使用者會看見一個無法關閉的通知，指出他們必須安裝應用程式。 使用者點選通知，並被移至 Play Store 中的應用程式頁面，使用者可以在該處開始安裝。 安裝成功之後，通知將會消失。 |
+| Required apps      | 應用程式將在使用者無須介入下完成安裝。    | 使用者會看見一個無法關閉的通知，指出他們必須安裝應用程式。 使用者點選通知，並被移至 Play Store 中的應用程式頁面，使用者可以在該處開始安裝。 安裝成功之後，通知將會消失。 |
 
 應用程式可為受管理或不受管理，如下所述。 讓應用程式受管理的程序，針對所有類型的 Android 裝置都是相同的。
 

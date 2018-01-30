@@ -4,7 +4,7 @@ description: "請評估您的商務和技術需求，然後再移轉至 Intune�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Intune 以用於行動裝置管理 (MDM)
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 07/12/2017
 <br/><br/>
 -   可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 閱讀這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。
 
 檢閱[基本 Intune 設定](migration-guide-setup.md)。
