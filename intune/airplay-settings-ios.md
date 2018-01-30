@@ -5,7 +5,7 @@ description: "了解如何使用 Intune，以協助將 iOS 裝置自動連線到
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a1472d86a0a25e35ef26be1c579ff491437676b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>適用於 iOS 裝置的 Intune AirPlay 設定
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/12/2017
 您也可以從逗號分隔值 (csv) 檔案匯入裝置和密碼，以及允許的目的地。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 

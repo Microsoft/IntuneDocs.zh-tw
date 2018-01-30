@@ -4,7 +4,7 @@ description: "本指南將逐步解說有關從協力廠商 MDM 提供者移轉�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: d86260872230bb0a9274fa302acac5caeaa682a7
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-migration-guide"></a>Intune 移轉指南
 
@@ -65,6 +65,6 @@ ms.lasthandoff: 08/03/2017
 
 -   請檢閱[使用 Intune 的常見方式](common-scenarios.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [階段 1：準備 Intune 以用於行動裝置管理](migration-guide-prepare.md)

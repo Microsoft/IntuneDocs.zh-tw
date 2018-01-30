@@ -5,7 +5,7 @@ description: "了解如何使用 Intune，將您管理的 Windows 10 裝置升�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4e1fc203633a9624ce748ab1f36374c5322e3f7
-ms.sourcegitcommit: 061dab899e3fbc59b0128e2b4fbdf8ebf80afddd
+ms.openlocfilehash: 8581aea9db4c04efda5fe9f3281be95330bcd2e2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 10 版本升級
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,10 +36,10 @@ ms.lasthandoff: 12/19/2017
 下列清單提供 Windows 10 版本升級設定檔所支援的升級路徑。 要升級至的 Windows 10 版本會以粗體顯示，並於下方列出支援升級至該版本的所有版本：
 
 **Windows 10 教育版**
-- Windows 10 專業版
+- Windows 10 Pro
 - Windows 10 專業教育版
 - Windows 10 Cloud
-- Windows 10 企業版
+- Windows 10 Enterprise
 - Windows 10 Core
     
 **Windows 10 教育版 N 版本**    
@@ -79,7 +79,7 @@ ms.lasthandoff: 12/19/2017
 - Windows 10 Holographic
 
 **Windows 10 行動裝置企業版**
-- Windows 10 行動裝置版
+- Windows 10 Mobile
 
 <!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 

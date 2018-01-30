@@ -5,7 +5,7 @@ description: "了解 Intune 裝置設定檔，以及這些設定檔如何協助�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 101e19a9de67a3a47f488988957bc1e7ef7626a3
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
@@ -85,5 +85,5 @@ Windows 資訊保護可協助防範資料流失，但不會干擾員工的操作
 自訂設定可讓您指派不屬於 Intune 內建設定的裝置設定。 例如在 Android 裝置上，您可以指定 OMA-URI 值來設定裝置。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
 如需詳細資訊，請參閱[如何設定自訂設定](custom-settings-configure.md) 支援︰ Android、iOS、macOS 及 Windows 8.1。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 從清單中選擇其中一個設定檔類型，開始進行裝置設定。

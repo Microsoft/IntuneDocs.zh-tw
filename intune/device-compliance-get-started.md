@@ -5,7 +5,7 @@ description: "使用本主題來了解 Microsoft Intune 中的裝置合規性"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa78383233950e342c5ab0f83095bba3c8fda1f9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>開始使用 Intune 裝置合規性政策
 
@@ -109,7 +109,7 @@ Remember that you need to implement conditional access policies in addition to c
 合規性政策可與條件式存取原則搭配使用，只讓符合一或多條合規性政策規則的裝置存取電子郵件和其他公司資源。
 
 ### <a name="without-conditional-access"></a>不使用條件式存取
-您也可以使用與條件式存取無關的裝置合規性政策。 單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 不過，單獨使用合規性政策時，對公司資源沒有存取限制。
+您也可以使用與條件式存取無關的裝置合規性政策。 單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 不過，單獨使用合規性原則時，對公司資源沒有存取限制。
 
 您可以對使用者部署合規性政策。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。 如需深入了解行動裝置在部署原則之後原則生效所需的時間，請參閱您裝置上的管理設定和功能。
 
@@ -130,7 +130,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 如果您想要充分利用 Azure 入口網站中新的裝置合規性相關功能，您需要在 Azure 入口網站本身中建立新的裝置合規性政策。 如果您在 Azure 入口網站中將新的裝置合規性政策指派給已從 Intune 傳統入口網站被指派裝置合規性政策的使用者，則 Intune Azure 入口網站的裝置合規性政策會優先於在 Intune 傳統入口網站中建立的裝置合規性政策。
 
-##  <a name="next-steps"></a>後續步驟
+##  <a name="next-steps"></a>接下來的步驟
 
 為下列平台建立裝置合規性政策：
 

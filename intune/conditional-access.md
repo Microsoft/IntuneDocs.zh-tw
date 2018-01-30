@@ -5,7 +5,7 @@ description: "了解如何在 Microsoft Intune 中定義使用者與裝置在存
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1cd12a105142d5e537da487e3bd9297ef83ddcb3
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 
@@ -59,6 +59,6 @@ Intune 會新增行動裝置合規性和應用程式管理原則，以支援 EMS
 
 -   **以應用程式為基礎的條件式存取**
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)

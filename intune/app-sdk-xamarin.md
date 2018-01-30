@@ -3,7 +3,7 @@ title: "Microsoft Intune App SDK Xamarin 元件"
 description: 
 keywords: sdk, Xamarin, intune
 author: erikre
-manager: angrobe
+manager: dougeby
 ms.author: erikre
 ms.date: 11/01/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73caf124e94994acf816c98f0788efdabe024cc4
-ms.sourcegitcommit: c3bd0d192d712fcfd52f64dd1377155796239fcb
+ms.openlocfilehash: 4b52b83b84e36a89b5e578c9e14c5093715a559c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 元件
 
@@ -108,6 +108,6 @@ Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保�
 
 3.  將新增之 `remapping-config.json` 檔案的建置動作設為 **RemappingConfigFile**。 包含的 `remapping-config.json` 僅適用於 Xamarin.Forms。 若為其他 UI 架構，請參閱 Remapper NuGet 套件所包含的讀我檔案。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您已完成將元件建置成應用程式的基本步驟。 現在您可以依照 Xamarin Android 範例應用程式中的步驟。 我們提供了兩個範例，一個用於 Xamarin.Forms，另一個適用於 Android。

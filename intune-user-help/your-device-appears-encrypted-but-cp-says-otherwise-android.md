@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>您的 Android 裝置似乎已加密，但公司入口網站的說法不同
 
@@ -36,10 +37,6 @@ ms.lasthandoff: 12/12/2017
 
 某些 Android 裝置會要求您建立啟動 PIN 以確保裝置的安全。 有許多來自許多不同製造商的 Android 版本。 您可以嘗試在設定應用程式中尋找啟用此選項的位置，藉以修正此問題。 例如，在 Samsung Galaxy S7 中，您可以前往 [設定] > [鎖定螢幕與安全性] > [安全啟動]，來啟用「安全啟動」。  
 
-### <a name="downgrade-your-version-of-android"></a>將您的 Android 版本降級
-
-如果您的裝置提供降級為 Android 6.0+ 的選項，請執行這些動作。 萬一您嘗試將裝置降級，會有資料遺失的風險。 因此，建議您連絡公司支援人員以解決此問題。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)取得您公司支援人員的連絡資訊。
-
 ### <a name="encrypt-the-entire-device"></a>加密整部裝置
 
 某些裝置可讓您選擇加密整部裝置，或僅加密已使用的空間。 請選擇加密整部裝置，而非僅加密已使用的空間。 如果您僅加密已使用的空間：
@@ -48,6 +45,10 @@ ms.lasthandoff: 12/12/2017
 2. 解密已使用的空間
 3. 加密整部裝置
 4. 重新註冊裝置
+
+### <a name="downgrade-your-version-of-android"></a>將您的 Android 版本降級
+
+如果您的裝置提供降級為 Android 6.0+ 的選項，請執行這些動作。 萬一您嘗試將裝置降級，會有資料遺失的風險。 因此，建議您連絡公司支援人員以解決此問題。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)取得您公司支援人員的連絡資訊。
 
 ## <a name="specific-manufacturer-issues"></a>特定製造商問題
 

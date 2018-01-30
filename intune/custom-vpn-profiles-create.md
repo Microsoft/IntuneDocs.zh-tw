@@ -1,11 +1,11 @@
 ---
 title: "如何使用 Microsoft Intune 建立自訂 VPN 設定檔"
 titleSuffix: Azure portal
-description: "在 Intune 中使用自訂組態來建立 VPN 設定檔。"
+description: "在 Intune 中使用自訂設定來建立 VPN 設定檔。"
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,15 +15,15 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc1374c3ccb60ed5a3dc57449f5c772963b8efc7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 70af9ce41efa7f52987e1103b89493b4cf200091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中建立自訂 VPN 設定檔
 
-## <a name="create-a-custom-configuration"></a>建立自訂組態
+## <a name="create-a-custom-configuration"></a>建立自訂設定
 您可以使用 Intune 自訂設定原則來建立下列各項的 VPN 設定檔：
 
 * 執行 Android 4 和更新版本的裝置
