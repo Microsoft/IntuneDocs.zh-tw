@@ -4,7 +4,7 @@ description: "這篇文章可協助您決定可推出至 Intune 的群組以及�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6edb71b7d97ac3c20b4207d2cac42669ac35c4c0
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: cea27825261b05da6ce5157c2738a5be3a256cfe
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-rollout-plan"></a>開發推出計劃
 
@@ -102,6 +102,6 @@ ms.lasthandoff: 11/01/2017
 | 自助式 |  |  |  | 人力資源、財務 |
 | 服務周全方式 |  |  |  | 主管 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 下一節提供[開發 Intune 推出通訊計畫](planning-guide-communication-plan.md)的指引。

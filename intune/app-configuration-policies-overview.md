@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 的應用程式設定原則。"
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 727bf031a9e8a4c761d8d7b0c1d2737398a0fb7e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: d7267de95d36ed0e27c8a720599cc78004cd71d3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 的應用程式設定原則
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/08/2017
 
 此外，您也可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (以圖形 API 參考 MAM 為目標的設定)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 ### <a name="managed-devices"></a>受管理的裝置
 

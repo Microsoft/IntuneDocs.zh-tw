@@ -5,7 +5,7 @@ description: "在 Intune 中限制不同平台的註冊以及設定裝置註冊�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ddf5cc624685e684973b0e4ee85de609845f3bd
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 5e55a96ee1bee5b1f25a4ddf3366f3e7dc94122a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-groups-in-intune"></a>在 Intune 中新增群組
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -49,6 +49,6 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 4. 您可以選取 [Enable Office features] (啟用 Office 功能) 讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 5. 選擇 [建立] 新增新的群組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [利用 Azure Active Directory 群組管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
 - [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)

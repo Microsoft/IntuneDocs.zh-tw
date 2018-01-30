@@ -5,7 +5,7 @@ description: "Azure 入口網站上使用 Intune 來新增 MTD 應用程式、Mi
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a5b1b705e79b875b83cecb53cd82d7bf5dff30
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 4d84ecc31d266deb196192c8e1b3eeade6eb5ea3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
@@ -186,6 +186,6 @@ ms.lasthandoff: 09/19/2017
 
 - 請參閱[利用 Intune 將應用程式指派給群組](apps-deploy.md)的指示。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [新增 MTD 的裝置合規性政策](mtd-device-compliance-policy-create.md)

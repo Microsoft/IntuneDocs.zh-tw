@@ -4,7 +4,7 @@ description: "Intune 資料倉儲 API 中 [使用者] 類別實體集合的參�
 keywords: "Intune 資料倉儲"
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 895855befe31e84b3dc472216afdf52d636bc27a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d25825910e878d428bde72414c4bbee2d5092a89
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-current-user-entity"></a>Current User 實體的參考
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/16/2018
 
 **Current User** 實體列出企業中具有所指派授權的所有 Azure Active Directory (Azure AD) 使用者。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 | 範例 |
 |---------|------------|--------|
 | UserKey |資料倉儲中使用者的唯一識別碼 - Surrogate 索引鍵。 |123 |
 | UserId |使用者的唯一識別碼 - 與 UserKey 類似，但為自然索引鍵。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -40,6 +40,6 @@ ms.lasthandoff: 01/16/2018
 | StartDateInclusiveUTC |在資料倉儲中建立此使用者的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |前次在資料倉儲中修改此使用者的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
  - 您可以使用 **User** 實體集合來將使用者資料擴展到目前非作用中的使用者。 如需詳細資訊，請參閱 [User 實體的參考](reports-ref-user.md)。
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。

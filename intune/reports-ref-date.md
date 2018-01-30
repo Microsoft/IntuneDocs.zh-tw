@@ -4,7 +4,7 @@ description: "Intune 資料倉儲 API 中 [日期] 類別實體集合的參考�
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 918f1ac3185515d2ec72fdf9718a3654d7b0ab1d
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 4f04396e19f71030d7d522b05b2dab1de4b564c4
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/16/2018
 
 **Date** 實體代表跨多個資料倉儲實體所參考的日期。
 
-| 屬性  | 描述 | 範例 |
+| 屬性  | 說明 | 範例 |
 |---------|------------|--------|
 | DateKey | 資料倉儲中此日期的唯一識別碼。 | 20160703 |
 | FullDate | 此日期以完整日期/時間格式表示。 | 7/3/2016 12:00:00 AM |

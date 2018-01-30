@@ -4,7 +4,7 @@ description: "本文可協助您在環境中上架 Intune 僅限雲端解決方�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aab3c202272d91f9e1596eae6f740f68f049a657
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="implement-your-intune-plan"></a>實作您的 Intune 計劃
 
@@ -132,7 +132,7 @@ Intune 支援 iOS、Mac 作業系統、Android、Windows Desktop 和 Windows 行
 -   深入了解[註冊裝置以在 Intune 中管理](device-enrollment.md)。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需 Intune 實作程序的詳細資訊，請參閱 [Microsoft Virtual Academy Intune 工作階段模組](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)。
 

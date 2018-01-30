@@ -5,7 +5,7 @@ description: "了解您可以用來允許及禁止從 iOS 裝置上存取網站�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 
@@ -73,6 +73,6 @@ ms.lasthandoff: 01/19/2018
 
 選擇 [確定] 以返回 [建立設定檔] 刀鋒視窗，然後選擇 [建立]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

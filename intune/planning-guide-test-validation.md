@@ -4,7 +4,7 @@ description: "以下是當您在環境中測試和驗證 Intune 僅限雲端解�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: f10b4b0e7c48e921eb92392edf95bfcfaa83db9f
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/01/2017
 
 ![第 9 節表 3](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 現在您已測試並驗證您的 Intune 功能和使用案例，因此可以[推出 Intune 產品](planning-guide-rollout-plan.md)。
 

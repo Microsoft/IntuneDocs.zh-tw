@@ -3,7 +3,7 @@ title: "減少技術支援中心成本"
 description: "使用自助式密碼重設減少技術支援中心成本"
 keywords: "Azure Active Directory SSPR 密碼重設"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 08/27/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 87d294fd873c680e950552eae82747bd59c784ec
-ms.sourcegitcommit: 3242b627c83072beaf57878234a16f1a04ddc8b4
+ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>使用自助式密碼重設減少技術支援中心成本
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/28/2017
 3. 為供日後參考，請將[如何重設或變更密碼](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)的指示提供給員工和學生。
 4. [啟用自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 深入了解下列主題：
 * [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 

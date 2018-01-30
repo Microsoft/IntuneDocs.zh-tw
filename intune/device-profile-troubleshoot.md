@@ -5,7 +5,7 @@ description: "當您遭遇難解的問題時，可使用本主題協助您解決
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: 6424be562401c672966c0f7f3fbe145c19182299
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 01/18/2018
 
 如果其中一個設定檔指派到應用程式並生效，然後再指派第二個設定檔，則會優先使用並持續套用第一個設定檔，而第二個設定檔會顯示為處於衝突狀態。 如果同時套用這兩個設定檔，代表沒有優先的設定檔，則兩者皆處於衝突狀態。 任何衝突的設定都會設為限制最嚴格的值。
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>IOS 自訂原則衝突時，會發生什麼情況？
+## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS 自訂原則衝突時，會發生什麼情況？
 Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識別項 (OMA-URI) 設定檔的承載。 它只做為傳遞機制。
 
 當您指派自訂設定檔時，請確定所進行的設定未與合規性、組態或其他自訂原則衝突。 如果是具有設定衝突的自訂設定檔案例，則會依隨機順序來套用設定。
@@ -100,7 +100,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
     - [Windows Phone 8.1 裝置]：會移除下列設定：
         - 需要密碼來解除鎖定行動裝置
         - 允許簡單密碼
-        - 最小密碼長度
+        - 密碼長度下限
         - 所需的密碼類型
         - 密碼到期 (天數)
         - 記住密碼歷程記錄
@@ -138,5 +138,5 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 您可能需要停用 Android、Windows Phone 8.1 與更新版本及 iOS 等其他 MDM 裝置，再重新註冊到服務中，才能套用較不嚴格的設定檔。
 
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](get-support.md)中所述)。

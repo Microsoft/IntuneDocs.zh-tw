@@ -5,7 +5,7 @@ description: "如何註冊 Intune 的 30 天免費試用。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4faf888f470806c837058497c49afa24efdfe54d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
@@ -66,7 +66,7 @@ Intune Azure 入口網站使用三個入口網站：
 
 若要從 Intune 回到 Office 365 系統管理中心，請在瀏覽器位址列中輸入 https://portal.office.com。 如已登入 Intune，您會直接跳到 Office 365 系統管理中心。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 ### <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
 深入了解 [Azure 入口網站中的 Intune](what-is-intune.md)

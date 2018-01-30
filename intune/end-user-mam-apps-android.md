@@ -4,7 +4,7 @@ description: "本主題說明當應用程式交由應用程式保護原則管理
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 030e17a9f28a9476c82e89d4dd26151a2d3cb953
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 2889a0a32e58a677f825800bfa50dea64839d663
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為
 
@@ -80,5 +80,5 @@ Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用�
 |----|----|
 |Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 Azure 資訊保護授權。 它可用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等等可以在 App 中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰.txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [當 iOS 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-ios.md)

@@ -4,7 +4,7 @@ description: "Intune 資料倉儲 API 中的變更清單。"
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
@@ -14,17 +14,17 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 095395be4c86780ad65ba1e24b856f6eef8d41ae
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 9032ffa547daeb19e694a0245dfec676d85a5793
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="user-device-association"></a>使用者裝置關聯
 
 **UserDeviceAssociation** 實體包含您組織中的使用者裝置關聯。
 
-| 名稱               | 描述                                                                                      | 範例                |
+| 名稱               | 說明                                                                                      | 範例                |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 | UserKey            | 資料倉儲中使用者的唯一識別碼。 (Surrogate 索引鍵)。                              | 123                    |
 | DeviceKey          | 資料倉儲中裝置的唯一識別碼。                                            | 123                    |

@@ -4,7 +4,7 @@ description: "封存 Microsoft Intune 新功能公告"
 keywords: 
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4d83b8b83cba0dab1fc089309201aa591b3d26e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -38,7 +38,7 @@ Microsoft MyApps 現在於 Managed Browser 中提供更佳支援。 非管理目
 
 Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，因此與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。 您可以在 [Intune App UI 中的新增功能頁面](whats-new-app-ui.md)中看到 Managed Browser 的新圖示。
 
-公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以改進與 EM+S 中其他應用程式的一致性。 從四月起到五月底，這些圖示會逐漸在各平台發行。
+公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以增強與 EM+S 中其他應用程式的一致性。 從四月起到五月底，這些圖示會逐漸在各平台發行。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
@@ -73,7 +73,7 @@ iOS 公司入口網站應用程式中現在會顯示更具體的新錯誤訊息�
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新系統管理體驗的公開預覽。 在預覽狀態期間，將提供與現有 Intune 主控台相同與相當的功能。
 
-Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](whats-new.md)。
+Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](whats-new.md)。
 
 您可以在[這裡](whats-new.md)找到 Azure 的 Intune 預覽新功能。
 
@@ -241,7 +241,7 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新系統管理體驗的公開預覽。 在預覽狀態期間，將提供與現有 Intune 主控台相同與相當的功能。
 
-Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](whats-new.md)。
+Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](whats-new.md)。
 
 您可以在[這裡](whats-new.md)找到 Azure 的 Intune 預覽新功能。
 
@@ -279,7 +279,7 @@ Intune 現在完全支援和管理 Android 7.1.1。
 
 已更新下列文章：
 
-* [決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](apps-prepare-mobile-application-management.md)
+* [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)
 * [準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](app-wrapper-prepare-ios.md)
 * [開始使用 Microsoft Intune App SDK](/app-sdk-get-started.md)
 * [Intune App SDK for iOS 開發人員指南](app-sdk-ios.md)
@@ -364,5 +364,5 @@ __Symantec 簽署憑證不再需要已簽署的 Windows Phone 8 公司入口網�
 __Windows Phone 8 公司入口網站的支援__ 對 Windows Phone 8 公司入口網站的支援現在將被取代。 對於 Windows Phone 8 和 WinRT 平台的支援已在 2016 年 10 月被取代。 對於 Windows 8 公司入口網站的支援也已在 2016 年 10 月被取代。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 如需近期發展的詳細資料，請參閱 [Microsoft Intune 的新功能](whats-new.md)。

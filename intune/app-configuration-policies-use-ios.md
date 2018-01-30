@@ -5,7 +5,7 @@ description: "了解如何使用應用程式設定原則在 iOS 應用程式執�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受管理的 iOS 裝置新增應用程式設定原則
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/08/2017
 5. 使用下列詳細資料：
     - **名稱**<br>
       將在 Azure 入口網站中顯示的設定檔名稱。
-    - **說明**<br>
+    - **描述**<br>
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**<br>
       選擇 [受管理裝置]。
@@ -141,6 +141,6 @@ Intune 支援屬性清單中的下列資料類型：
 - \{\{serialnumber\}\}—例如，**F4KN99ZUG5V2** (適用於 iOS 裝置)
 - \{\{serialnumberlast4digits\}\}—例如，**G5V2** (適用於 iOS 裝置)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 一如往常般地[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。

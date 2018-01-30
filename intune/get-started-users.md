@@ -5,7 +5,7 @@ description: "將使用者新增至 Intune，以允許他們存取行動裝置�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05378c5ecdb7950e63a2fa859afebcd9eb59c853
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 297a9244bac8e45e14e1d22cadee9088c87f34a3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-managing-users"></a>開始管理使用者
 
@@ -49,6 +49,6 @@ ms.lasthandoff: 11/01/2017
 
 5. 選取 [儲存]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始使用群組](get-started-groups.md) - 將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。

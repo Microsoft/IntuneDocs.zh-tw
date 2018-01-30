@@ -4,7 +4,7 @@ description: "您可以下載與 Microsoft Power BI 搭配使用的檔案，以�
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b3c9b7d9df8bea32f6737b66ed22017bf5fc25f1
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 7542a2d4fa84c2c23d638400fa564823c02357d0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
@@ -77,7 +77,7 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
     4.  選取 [連線]。  
 10. 選取 [載入]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您可以找到環境問題的答案，例如上週每日註冊的裝置數目。 您可以深入了解使用報表的 Intune 租用戶和用戶端母群體，而報表使用 Azure 中刀鋒視窗所擷取的 Intune 資料倉儲 Power BI 檔案 (pbix)。 不過，Intune 會提供許多其他的方式，來延伸或重複使用資料。 還有更多方式可以使用 Power BI 和 Intune 資料倉儲 API，例如：
 

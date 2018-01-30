@@ -5,7 +5,7 @@ description: "了解 Windows 10 裝置上可用以控制BitLocker 等 Endpoint P
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8393699a06def8f01c9f70561bb1894bb7cba04e
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中適用於 Windows 10 和更新版本的 Endpoint Protection 設定
 
@@ -250,6 +250,6 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 - **IT 部門電子郵件地址**
 - **IT 支援網站 URL**
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

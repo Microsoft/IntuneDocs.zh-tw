@@ -5,7 +5,7 @@ description: "了解您可用於管理 Windows 資訊保護的相關 Intune 設�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 96af3413d559b57dafe166797816f886e79c22b0
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: e33fa9b22687f7f8c4d301c6cd82ecd787c23246
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 資訊保護
 
@@ -33,7 +33,7 @@ Intune 原則會管理受 Windows 資訊保護、企業網路位置、保護等�
 >[!NOTE]
 > 若要搭配使用 Windows 10 公司入口網站應用程式和 Windows 資訊保護，則您必須在 Windows 資訊保護的「豁免」模式下新增公司入口網站應用程式。 
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如需詳細資訊，請參閱：
 -  [使用 Windows 資訊保護來保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 - [使用 Microsoft Intune 的傳統主控台建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
