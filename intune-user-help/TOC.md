@@ -30,8 +30,9 @@
 #### [檢查裝置合規性](check-compliance-on-your-device-android.md)
 #### [在省電模式下同步 Outlook 電子郵件](power-saving-mode-android.md)
 #### [修正 Samsung Knox 的常見問題](samsung-knox-errors-android.md)
+#### [更新裝置以安裝 Outlook](update-device-outlook-android.md)
 
-#### 使用記錄檔以修正問題
+#### 使用記錄檔以協助修正問題
 ##### [開啟詳細資訊記錄](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [使用電子郵件來傳送記錄檔](send-logs-to-your-it-admin-by-email-android.md)
 ##### [使用 USB 纜線來傳送記錄檔](send-logs-to-your-it-admin-using-cable-android.md)
@@ -85,6 +86,7 @@
 #### [識別裝置](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [尋找序號](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [更新 iOS 裝置](you-need-to-update-your-ios-device.md)
+#### [更新裝置以安裝 Outlook](update-device-outlook-ios.md)
 #### [尚不支援我的 iOS 版本](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense
