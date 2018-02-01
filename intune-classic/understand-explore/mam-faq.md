@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
 
 **什麼是 MAM？** [Intune 行動應用程式管理](/intune/app-lifecycle)指的是 Intune 管理功能套件，可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
 
-**MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
+**MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Intune 受控應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **MAM 支援哪些裝置組態？** Intune MAM 支援兩個組態︰
   1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該使用位於下列位置的 Intune 獨立主控台：https://manage.microsoft.com。
@@ -48,9 +48,9 @@ ms.lasthandoff: 01/11/2018
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>您可以使用應用程式保護原則管理的應用程式
 
-**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](/intune/app-sdk) 建置或由 [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的[可搭配 Intune 的應用程式 (英文)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
+**應用程式保護原則可以管理哪些應用程式？** 由 [Intune App SDK](/intune/app-sdk) 建置或由 [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 請參閱可供公開使用的 [Intune 受控應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
-**在可搭配 Intune 的應用程式上，使用應用程式保護原則的基本需求為何？**
+**在 Intune 受控應用程式上，使用應用程式保護原則的基本需求為何？**
   1. 使用者必須擁有 Azure Active Directory (AAD) 帳戶。 請參閱[新增使用者並提供管理權限給 Intune](/intune/users-permissions-add)，以了解如何在 Azure Active Directory 中建立 Intune 使用者。
 
   2. 使用者必須擁有指派給其 Azure Active Directory 帳戶的 Microsoft Intune 授權。 請參閱[管理 Intune 授權](/intune/licenses-assign)以了解如何將 Intune 授權指派給使用者。
@@ -136,7 +136,7 @@ MAM (在 iOS 上) 目前允許應用程式層級 PIN 包含英數字元與特殊
 
 **為什麼內部部署 (on-prem) 服務無法搭配受 Intune 保護的應用程式運作？** Intune 應用程式保護取決於使用者的身分識別在應用程式與 Intune App SDK 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不一致也不保證。
 
-**是否有安全的方式能夠從受管理的應用程式開啟網頁連結？** 可以！ IT 系統管理員可以針對 [Intune Managed Browser 應用程式](../deploy-use/manage-internet-access-using-managed-browser-policies.md)部署與設定應用程式保護原則，這是由 Microsoft Intune 開發的網頁瀏覽器，可輕鬆地利用 Intune 加以管理。 針對可搭配 Intune 的應用程式，IT 系統管理員可以要求其中的所有網頁連結都必須使用 Managed Browser 應用程式來開啟。
+**是否有安全的方式能夠從受管理的應用程式開啟網頁連結？** 可以！ IT 系統管理員可以針對 [Intune Managed Browser 應用程式](../deploy-use/manage-internet-access-using-managed-browser-policies.md)部署與設定應用程式保護原則，這是由 Microsoft Intune 開發的網頁瀏覽器，可輕鬆地利用 Intune 加以管理。 針對 Intune 受控應用程式，IT 系統管理員可以要求其中的所有網頁連結都必須使用 Managed Browser 應用程式來開啟。
 
 
 ## <a name="app-experience-on-android"></a>Android 上的應用程式體驗

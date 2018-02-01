@@ -1,11 +1,11 @@
 ---
-title: "Intune 網路頻寬用量"
-description: "Intune 網路頻寬用量"
+title: "Intune 網路設定需求與頻寬"
+description: 
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/16/2018
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2055a0949921b52937af18bf1cd73286bf046cf
-ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
+ms.openlocfilehash: 29ea491ab176a9bf2237a4e7546131945ad2dab7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="intune-network-bandwidth-use"></a>Intune 網路頻寬用量
+# <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -41,11 +41,11 @@ ms.lasthandoff: 01/17/2018
 |原則代理程式|3 MB|**一次**<br /><br />當此內容類型有更新時，可能會進行其他下載。|
 |Remote Assistance via Microsoft Easy Assist 代理程式|6 MB|**一次**<br /><br />當此內容類型有更新時，可能會進行其他下載。|
 |日常用戶端作業|6 MB|**每日**<br /><br />Intune 用戶端會定期與 Intune 服務通訊，以檢查是否有更新和原則，並將用戶端的狀態回報給服務。|
-|Endpoint Protection 惡意程式碼定義更新|變動<br /><br />通常為 40 KB 到 2 MB|**每日**<br /><br />最多一天 3 次。|
+|Endpoint Protection 惡意程式碼定義更新|不定<br /><br />通常為 40 KB 到 2 MB|**每日**<br /><br />最多一天 3 次。|
 |Endpoint Protection 引擎更新|5 MB|**每月**|
-|軟體更新|變動<br /><br />大小依您部署的更新而定。|**每月**<br /><br />一般情況下，軟體更新會在每個月的第二個星期二發佈。<br /><br />剛完成註冊或部署的電腦在下載先前發行的整組更新時，可能也會佔用較大的網路頻寬。|
+|軟體更新|不定<br /><br />大小依您部署的更新而定。|**每月**<br /><br />一般情況下，軟體更新會在每個月的第二個星期二發佈。<br /><br />剛完成註冊或部署的電腦在下載先前發行的整組更新時，可能也會佔用較大的網路頻寬。|
 |Service Pack|不定<br /><br />大小會因您部署的每個 Service Pack 而不同。|**不定**<br /><br />視您何時部署 Service Pack 而定。|
-|軟體發佈|變動<br /><br />大小依您部署的軟體而定。|**不定**<br /><br />視您何時部署軟體而定。|
+|軟體發佈|不定<br /><br />大小依您部署的軟體而定。|**不定**<br /><br />視您何時部署軟體而定。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>減少網路頻寬用量的方式
 您可以使用下列其中一或多種方法，減少 Intune 用戶端佔用的網路頻寬。
@@ -158,7 +158,7 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
-| 主機名稱  | URL (IP 位址/子網路) | 通訊協定 | Port | 裝置 |
+| 主機名稱  | URL (IP 位址/子網路) | 通訊協定 | Port | Device |
 | --- | --- | --- | --- | --- |
 |  管理員主控台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
 | 管理員主控台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |

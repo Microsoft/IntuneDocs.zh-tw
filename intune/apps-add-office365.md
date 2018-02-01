@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 以更容易在 Windows 10 裝置上安�
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 12/01/2017
 - Intune 僅支援從 Office 365 ProPlus 2016 套件新增 Office 應用程式。
 - 如果在 Intune 安裝應用程式套件時有任何 Office 應用程式是開啟的，使用者未儲存的檔案可能會遺失資料。
 - Windows 10S 裝置不支援此安裝方法。
-- Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Windows 市集的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
+- Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Microsoft Store 的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
 
 
 ## <a name="get-started"></a>開始使用
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/01/2017
 在此步驟中，提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別，同時也能幫助使用者在公司入口網站應用程式中尋找。
 
 1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Information] (應用程式套件資訊)。
-2.  在 [App Suite Information] (應用程式套件資訊) 刀鋒視窗中，指定下列資訊： 
+2.  在 [App Suite Information] (應用程式套件資訊) 刀鋒視窗中，指定下列資訊：
     - **套件名稱** - 輸入應用程式套件要顯示在公司入口網站中的名稱。 確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述** - 輸入應用程式套件的描述。 例如，您可以列出已選取包含的應用程式。
     - **發行者** - 輸入應用程式的發行者名稱。
@@ -82,9 +82,9 @@ ms.lasthandoff: 12/01/2017
 在此步驟中，設定應用程式套件的安裝選項。 此設定適用於您新增至套件的所有應用程式。
 
 1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Settings] (應用程式套件設定)。
-2.  在 [App Suite Settings] (應用程式套件設定) 刀鋒視窗中，指定下列資訊： 
+2.  在 [App Suite Settings] (應用程式套件設定) 刀鋒視窗中，指定下列資訊：
     - **Office 版本** - 選擇要指派 32 位元還是 64 位元版本的 Office。 32 位元版本可以安裝在 32 位元和 64 位元的裝置上，但 64 位元版本只能安裝在 64 位元的裝置。
-    - **更新頻道** - 選擇裝置更新 Office 的方式。 如需不同更新頻道的相關資訊，請參閱＜Office 365 ProPlus 更新頻道概觀＞。 從下列選項進行選擇： 
+    - **更新頻道** - 選擇裝置更新 Office 的方式。 如需不同更新頻道的相關資訊，請參閱＜Office 365 ProPlus 更新頻道概觀＞。 從下列選項進行選擇：
         - **目前**
         - **延遲**
         - **初次發行，目前**
@@ -104,19 +104,19 @@ ms.lasthandoff: 12/01/2017
 
 下表列出您可能會遇到的常見錯誤碼及其意義。
 
-### <a name="status-for-office-csp"></a>Office CSP 狀態： 
+### <a name="status-for-office-csp"></a>Office CSP 狀態：
 
 ||||
 |-|-|-|
-|狀態|階段|描述|
+|狀態|階段|說明|
 |1460 (ERROR_TIMEOUT)|下載|無法下載 Office 部署工具|    
-|13 (ERROR_INVALID_DATA)|-|無法驗證下載的 Office 部署工具簽章| 
+|13 (ERROR_INVALID_DATA)|-|無法驗證下載的 Office 部署工具簽章|
 |來自 CertVerifyCertificateChainPolicy 的錯誤碼|-|對下載的 Office 部署工具的憑證檢查失敗|    
-|997|WIP|安裝| 
+|997|WIP|安裝|
 |0|安裝後|安裝成功|    
 |1603 (ERROR_INSTALL_FAILURE)|-|任何必要條件檢查皆失敗，例如：<br>- SxS (已安裝 2016 MSI 時嘗試安裝)<br>- 版本不符<br>- 等等|     
 |0x8000ffff (E_UNEXPECTED)|-|電腦上沒有隨選即用 Office 時嘗試解除安裝。|    
-|17002|-|無法完成案例 (安裝)。 可能的原因：<br>- 使用者已取消安裝<br>- 其他安裝已取消安裝<br>- 安裝期間磁碟空間不足<br>- 未知的語言識別碼| 
+|17002|-|無法完成案例 (安裝)。 可能的原因：<br>- 使用者已取消安裝<br>- 其他安裝已取消安裝<br>- 安裝期間磁碟空間不足<br>- 未知的語言識別碼|
 |17004|-|未知的 SKU|   
 
 
@@ -124,16 +124,16 @@ ms.lasthandoff: 12/01/2017
 
 |||||
 |-|-|-|-|
-|案例|傳回碼|UI|注意| 
-|沒有任何使用中的隨選即用安裝時即解除安裝|-2147418113、0x8000ffff 或 2147549183|錯誤碼：30088-1008<br>錯誤碼：30125-1011 (404)|Office 部署工具| 
-|已安裝 MSI 版本時安裝|1603|-|Office 部署工具| 
-|使用者或另一個安裝已取消安裝|17002|-|隨選即用| 
-|嘗試在已安裝 32 位元的裝置上安裝 64 位元。|1603|-|Office 部署工具傳回碼| 
-|嘗試安裝未知的 SKU (Office CSP 的不合法使用案例，因為我們應該只傳遞有效的 SKU)|17004|-|隨選即用| 
-|空間不足|17002|-|隨選即用| 
-|隨選即用用戶端無法啟動 (非預期)|17000|-|隨選即用| 
-|隨選即用用戶端無法佇列案例 (非預期)|17001|-|隨選即用| 
+|案例|傳回碼|UI|注意|
+|沒有任何使用中的隨選即用安裝時即解除安裝|-2147418113、0x8000ffff 或 2147549183|錯誤碼：30088-1008<br>錯誤碼：30125-1011 (404)|Office 部署工具|
+|已安裝 MSI 版本時安裝|1603|-|Office 部署工具|
+|使用者或另一個安裝已取消安裝|17002|-|隨選即用|
+|嘗試在已安裝 32 位元的裝置上安裝 64 位元。|1603|-|Office 部署工具傳回碼|
+|嘗試安裝未知的 SKU (Office CSP 的不合法使用案例，因為我們應該只傳遞有效的 SKU)|17004|-|隨選即用|
+|空間不足|17002|-|隨選即用|
+|隨選即用用戶端無法啟動 (非預期)|17000|-|隨選即用|
+|隨選即用用戶端無法佇列案例 (非預期)|17001|-|隨選即用|
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。

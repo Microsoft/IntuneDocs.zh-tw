@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/10/2017
 
 ##  <a name="data-relocation-settings"></a>資料重新配置設定
 
-| 設定 | 如何使用 | 預設值 |
+| Setting | 如何使用 | 預設值 |
 |------|------|------|
 | **禁止 Android 備份** | 選擇 [是] 防止這個應用程式將工作或學校資料備份至 [Android Backup Service](https://developer.android.com/google/backup/index.html)。選擇 [否] 允許這個應用程式備份工作或學校資料。| 是 |
 | **允許應用程式將資料傳送到其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> <p>有一些 Intune 可以允許資料傳輸至其中的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#Data-transfer-exemptions)。| 所有應用程式 |
@@ -48,13 +48,13 @@ ms.lasthandoff: 10/10/2017
 
   ## <a name="data-transfer-exemptions"></a>資料傳輸豁免
 
-  有一些 Intune 應用程式保護原則可以允許豁免應用程式和平台服務傳送和接收資料傳輸。 例如，Android 上所有啟用 Intune 的應用程式都必須能夠將資料傳輸至 Google 文字轉換語音並從中傳輸資料，因此可以大聲讀出您行動裝置螢幕中的文字。 這份清單可能隨時變更，並反映視為對安全產能有所幫助的服務和應用程式。
+  有一些 Intune 應用程式保護原則可以允許豁免應用程式和平台服務傳送和接收資料傳輸。 例如，Android 上所有 Intune 受控應用程式都必須能夠將資料傳輸至 Google 文字轉換語音並從中傳輸資料，因此可以大聲讀出您行動裝置螢幕中的文字。 這份清單可能隨時變更，並反映視為對安全產能有所幫助的服務和應用程式。
 
   ### <a name="full-exemptions"></a>完整豁免
 
   這些應用程式和服務完全可以接收和傳送 Intune 管理應用程式的資料傳輸。
 
-  |應用程式/服務名稱 | 描述 |
+  |應用程式/服務名稱 | 說明 |
   | ------ | ---- |
   | com.android.phone | 原生 Phone 應用程式
   | com.android.vending | Google Play 商店 |
@@ -69,7 +69,7 @@ ms.lasthandoff: 10/10/2017
   ### <a name="conditional-exemptions"></a>條件式豁免
   只有在特定情況下，這些應用程式和服務才能接收和傳送 Intune 管理應用程式的資料傳輸。
 
-  |應用程式/服務名稱 | 描述 | 豁免條件|
+  |應用程式/服務名稱 | 說明 | 豁免條件|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome 瀏覽器 | Chrome 用於 Android 7.0+ 上的一些 WebView 元件，而且絕不會隱藏，可供檢視。 不過，一律會限制送至應用程式的資料流程以及接收來自其中的資料流程。
   | com.skype.raider | Skype | Skype 應用程式只適用於導致通話的特定動作。 |
@@ -80,7 +80,7 @@ ms.lasthandoff: 10/10/2017
 
 ##  <a name="access-settings"></a>存取設定
 
-| 設定 | 如何使用 | 預設值 |
+| Setting | 如何使用 | 預設值 |
 |------|------|------|
 | **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234 或 1111)。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (Android 6.0+)**：選擇 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。 預設值 = [是]。</li></ul> 在 Android 裝置上，您可以讓使用者使用 [Android fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) (Android 指紋驗證) 而非 PIN 來證明其身分識別。 使用者嘗試使用自己的工作或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 </li></ul>| 需要 PIN 碼：是 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 |
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |

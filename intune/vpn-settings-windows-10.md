@@ -5,27 +5,25 @@ description: "了解可用於設定 Windows 10 裝置上 VPN 連線的 Intune �
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 10/20/2017
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-以下清單中的值並非全部都能設定，須取決於您選擇的設定。
+下列清單中的值並非全部都能設定，須取決於您選擇的設定。
 
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
@@ -81,6 +79,8 @@ ms.lasthandoff: 12/12/2017
 ```
 
 如需如何撰寫自訂 XML 命令的詳細資訊，請參閱相關製造商的 VPN 文件。
+
+如需建立自訂 EAP XML 的詳細資訊，請參閱 [EAP configuration](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration) (EAP 設定)。
 
 **分割通道**  -  **啟用**或**停用**此選項可讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
 - **此 VPN 連線的分割通道路徑** - 新增第三方 VPN 提供者的選擇性路由。 為每個路由指定目的地首碼及首碼大小。

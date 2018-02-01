@@ -4,7 +4,7 @@ description: "使用本主題中的資訊，了解如何能夠直接包裝 iOS �
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 01/19/2018
 
   ![Apple Developer 入口網站](./media/iOS-signing-cert-1.png)
 
-5. 按一下 ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
+5. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
 
 6. 選擇在 [Production] (生產) 下建立 [In-House and Ad Hoc] (內部和特定) 憑證。
 
@@ -173,6 +173,9 @@ ms.lasthandoff: 01/19/2018
 
 4.  開啟 **IntuneMAMPackager** 資料夾，並將其內容儲存到 macOS 電腦。 您現在已可開始執行 App Wrapping Tool。
 
+> [!NOTE]
+> Intune MAM Packager 可以分別裝載到 macOS 電腦上，且在執行包裝命令時，可能會導致「找不到檔案」的錯誤。 因此，移動 IntuneMAMPackager 資料夾的內容可在換行時找到封裝程式的路徑。
+
 ## <a name="run-the-app-wrapping-tool"></a>執行應用程式包裝工具
 
 ### <a name="use-terminal"></a>使用終端機
@@ -214,7 +217,7 @@ ms.lasthandoff: 01/19/2018
 
 在 IntuneMAMPackager/Contents/MacOS 資料夾中，使用文字編輯器或 Xcode 開啟 `Parameters.plist` {空白的 plist 範本)。 為下列金鑰輸入您的引數︰
 
-| Plist 金鑰 |  預設值| 注意 |
+| Plist 金鑰 |  預設值| 附註 |
 |------------------|--------------|-----|
 | 輸入應用程式封裝路徑  |empty| 與 -i 相同|
 | 輸出應用程式封裝路徑 |empty| 與 -o 相同|
@@ -316,7 +319,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>App Wrapping Tool for iOS 的支援功能
 
-|Capability|描述|建議的指引|
+|功能|說明|建議的指引|
 |--------------|---------------|------------------------|
 |應用程式群組|使用 [應用程式群組] 可以讓多個應用程式同時存取共用容器，並允許應用程式之間進行其他處理序之間的通訊。<br /><br />若要啟用應用程式群組，請開啟 [功能] 窗格，然後按一下 [應用程式群組] 中的 [開啟]。 您可以新增應用程式群組或選取現有的應用程式群組。|使用應用程式群組時，請使用反向 DNS 標記法：<br /><br />*group.com.companyName.AppGroup*|
 |背景模式|啟用 [背景模式] 可讓您的 iOS 應用程式繼續在背景中執行。||
@@ -333,7 +336,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
     a.  在 Xcode 中，移至您的應用程式的目標，然後按一下 [功能]。
 
-    b.  開啟適當的功能。 如需每項功能及如何決定正確值的詳細資訊，請參閱 [iOS Developer Library 中的新增功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
+    b。  開啟適當的功能。 如需每項功能及如何決定正確值的詳細資訊，請參閱 [iOS Developer Library 中的新增功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
 
     c.  記下您在程序期間所建立的任何識別碼。
 
@@ -343,7 +346,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
     a.  登入 Apple Developer Member Center。
 
-    b.  為您的應用程式建立佈建設定檔。 如需相關指示，請參閱[如何取得 Intune App Wrapping Tool for iOS 的必要條件](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。
+    b。  為您的應用程式建立佈建設定檔。 如需相關指示，請參閱[如何取得 Intune App Wrapping Tool for iOS 的必要條件](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。
 
     c.  在您的佈建設定檔中，啟用您應用程式中所擁有的相同權利。 您必須提供在開發應用程式期間所指定的相同識別碼。
 

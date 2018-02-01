@@ -5,7 +5,7 @@ description: "了解如何將 iOS 市集應用程式新增至 Intune。"
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何將 iOS 市集應用程式新增至 Microsoft Intune
 
@@ -35,6 +35,8 @@ ms.lasthandoff: 01/04/2018
 
 如果應用程式在應用程式市集中是免費的，您只能使用這個方法指派應用程式。 如果您想要使用 Intune 指派付費應用程式，請考慮使用 [iOS 大量採購方案](vpp-apps-ios.md)。
 
+>[!NOTE]
+>使用 Microsoft Intune 時，建議的瀏覽器是 Chrome 與 Edge。
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>步驟 1 - 搜尋存放區中的應用程式
 
@@ -63,9 +65,9 @@ ms.lasthandoff: 01/04/2018
 - **將此顯示為公司入口網站中的精選應用程式** -- 當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
 - **資訊 URL** -- 選擇是否要鍵入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
 - **隱私權 URL** -- 選擇是否要鍵入包含此應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
-- **開發人員** -- 選擇是否要鍵入應用程式開發人員的姓名。 這個欄位才會顯示給系統管理員，而不會顯示給終端使用者。
-- **擁有者** -- 選擇是否要鍵入此應用程式的擁有者名稱，例如**人力資源部門**。  這個欄位才會顯示給系統管理員，而不會顯示給終端使用者。
-- **注意** -- 鍵入要與此應用程式建立關聯的附註。 這個欄位才會顯示給系統管理員，而不會顯示給終端使用者。
+- **開發人員** -- 選擇是否要鍵入應用程式開發人員的姓名。 這個欄位只有系統管理員看得到，使用者看不到。
+- **擁有者** -- 選擇是否要鍵入此應用程式的擁有者名稱，例如**人力資源部門**。  這個欄位只有系統管理員看得到，使用者看不到。
+- **注意** -- 鍵入要與此應用程式建立關聯的附註。 這個欄位只有系統管理員看得到，使用者看不到。
 - **標誌** -- 上傳將與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 3. 完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [確定]。
 

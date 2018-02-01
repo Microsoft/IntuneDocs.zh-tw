@@ -5,21 +5,20 @@ description: "了解 Android for Work 裝置上可用以控制裝置設定與功
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置限制設定
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>工作設定檔密碼
 - **需要工作設定檔密碼**：(已啟用工作設定檔的 Android 7.0 和更新版本) 定義只適用於工作設定檔中之應用程式的密碼原則。 根據預設，終端使用者能選擇使用這兩個個別定義的 PIN，或選擇結合兩者，並使用兩者中的較強者。
 - **密碼長度下限**：輸入使用者密碼至少須包含的字元數 (從 **4**-**16**)
-- **在停止活動最多幾分鐘後鎖定螢幕** - 選取工作設定檔鎖定之前的時間長度。 然後，使用者必須輸入其認證，才能重新取得存取權。
+- **在停止工作設定檔最多幾分鐘後鎖定螢幕** - 選取工作設定檔鎖定之前的時間長度。 然後，使用者必須輸入其認證，才能重新取得存取權。
 - **登入失敗幾次後即抹除裝置**：輸入將裝置上的工作設定檔抹除之前可輸入錯誤密碼的次數。
 - **密碼到期 (天數)**：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)。
 - **必要的密碼類型**：選取必須在裝置上設定的密碼類型。 從下列選項進行選擇：
@@ -86,6 +85,6 @@ ms.lasthandoff: 12/12/2017
    > [!Note]  
    > 此設定僅適用於 Android O 或更新版本的裝置。 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 使用[如何設定裝置限制設定](device-restrictions-configure.md)主題中的資訊進行儲存，並將設定檔指派給使用者和裝置。

@@ -5,7 +5,7 @@ description: "了解您可用於設定 iOS 裝置上 Wi-Fi 連線的 Intune 設�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 087a8ad8ad8d07bee1d00cd6adaca86ede737eb7
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 6a4a5b9b76995be6a82cc3dcaa9f782c158ba174
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 Wi-Fi 設定
 
@@ -33,6 +33,7 @@ ms.lasthandoff: 12/30/2017
 - **SSID** - 簡短的服務組識別元。 這是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您所建立的上列網路名稱。
 - **自動連線** - 當裝置進入此網路的範圍內時自動連線。
 - **隱藏的網路** - 禁止此網路顯示在裝置的可用網路清單中。
+- **預先共用金鑰** - 
 - **Proxy 設定** - 選擇下列其中一項︰
     - **無** - 不設定任何 Proxy 設定。
     - **手動** - 輸入 **Proxy 伺服器位址** (IP 位址)，以及其所關聯的**連接埠號碼**。

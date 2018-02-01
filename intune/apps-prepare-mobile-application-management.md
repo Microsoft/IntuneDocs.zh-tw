@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1612f5af24bd4c96aced4e3a6f1572a4c49d9913
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式保護原則的企業營運應用程式
 
@@ -50,7 +50,7 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |是|是|
-|**Android**| 否 |是|
+|**Android**| 預覽中 |是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有應用程式並想要可以使用 Intune 管理應用程式的客戶。 不過，任何應用程式都可以利用 SDK 的整合，即使它是企業營運應用程式也是一樣。
