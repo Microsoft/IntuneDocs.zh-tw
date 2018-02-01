@@ -19,7 +19,7 @@
 ### [自訂公司入口網站](/intune/company-portal-customize?toc=/intune-classic/toc.json)
 ### [註冊裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](get-started/post-configuration-tasks.md)
-## 後續步驟
+## 接下來的步驟
 ### [防止公司資料從 Office 365 行動應用程式外洩](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [使用資料加密保護公司資料](get-started/protect-data-encryption.md)
 ### [將行動應用程式發佈給您的使用者](get-started/publish-mobile-apps-to-users.md)
@@ -256,4 +256,4 @@
 
 ## [對裝置威脅防護進行疑難排解](troubleshoot/device-threat-protection-troubleshooting.md)
 
-# [名詞解釋](understand-explore/intune-glossary.md)
+# [詞彙](understand-explore/intune-glossary.md)
