@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 在整合了 Microsoft PIN 重設服務�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 144313b63c1a6349a59220c901072dbf9d4c6f43
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>使用 Intune 在整合了 Microsoft PIN 重設服務的 Windows 裝置上重設密碼
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/12/2018
 若要在您管理的 Windows 裝置上設定 PIN 重設，請使用 [Intune Windows 10 自訂裝置原則](custom-settings-windows-10.md)啟用功能。 使用下列 Windows 原則設定服務提供者 (CSP) 設定原則：
 
 
-- **裝置為** - **./Device/Vendor/MSFT/PassportForWork/<租用戶識別碼>**/Policies/EnablePinRecovery**
+- **裝置為** - **./Device/Vendor/MSFT/PassportForWork/租用戶識別碼/Policies/EnablePinRecovery**
 
 <租用戶識別碼>是指您的 Azure Active Directory，您可以從 Azure Active Directory 的 [屬性] 頁面取得 Directory 識別碼。
 

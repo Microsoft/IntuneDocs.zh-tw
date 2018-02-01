@@ -4,7 +4,7 @@ description: "本文提供移轉溝通計劃和策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -55,6 +55,6 @@ Intune 提供可用來向使用者宣導註冊裝置的其他範本：
 
 -   [適用於 EMS 的 FastTrack 作法指南與電子郵件](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) \(英文\) 可讓您自訂為顯示您的公司標誌，以提高組織內的 Intune 與 EMS 採用率。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-[使用條件式存取引導使用者採用](migration-guide-drive-adoption.md)。
+[使用條件式存取引導使用者採用](migration-guide-drive-adoption.md).

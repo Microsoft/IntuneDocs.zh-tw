@@ -5,7 +5,7 @@ description: "了解如何設定 Intune 以進行 iOS 裝置單一登入。」"
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>設定 Intune 以進行 iOS 裝置單一登入
 
@@ -89,7 +89,7 @@ URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單�
 
 指出使用者裝置上哪個應用程式可以使用單一登入承載。
 
-`AppIdentifierMatches` 陣列必須包含符合應用程式套件組合識別碼的字串。 這些字串可能是完全相符項目 (例如：`com.contoso.myapp`)，或者使用 * 萬用字元指定套件組合識別碼首碼相符。 萬用字元必須出現在句號字元 (.) 之後，在字串結尾處，而且只能出現一次 (例如：`com.contoso.*`)。 包含萬用字元時，套件組合識別碼開頭為首碼的任何應用程式都會被授與帳戶存取權。
+`AppIdentifierMatches` 陣列必須包含符合應用程式套件組合識別碼的字串。 這些字串可能是完全相符項目 (例如：`com.contoso.myapp`)，或者使用 *\ 萬用字元指定套件組合識別碼首碼相符。 萬用字元必須出現在句號字元 (.) 之後，在字串結尾處，而且只能出現一次 (例如：`com.contoso.*`)。 包含萬用字元時，套件組合識別碼開頭為首碼的任何應用程式都會被授與帳戶存取權。
 
 [應用程式名稱] 欄位用以新增使用者易記的名稱，以利識別套件組合識別碼。
 
@@ -97,6 +97,6 @@ URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單�
 
 如果使用憑證 (不是密碼) 驗證您的使用者，則請使用此欄位選取部署至使用者當作驗證憑證的 SCEP 或 PFX 憑證。 一般而言，這和部署至使用者供 VPN、WiFi 或電子郵件等使用的其他設定檔是相同的憑證。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需其他的裝置功能設定資訊，請參閱[如何在 Microsoft Intune 中設定裝置功能設定](device-features-configure.md)。
