@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何設定共用 iPad 裝置的 Intune 教育設定
 
@@ -34,7 +34,7 @@ Intune 支援 iOS Classroom 應用程式，可協助老師在課堂中引導學�
 使用共用 iPad 功能的必要條件如下：
 
 - 安裝 [Apple School Manager](apple-school-manager-set-up-ios.md) 和 [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617)。
-- 在 Apple School Manager 的安裝過程中，為學生設定[管理式 Apple ID](http://help.apple.com/schoolmanager/#/tes78b477c81)。 [深入了解管理式 Apple ID](https://support.apple.com/en-us/HT205918)。
+- 在 Apple School Manager 的安裝過程中，為學生設定[管理式 Apple ID](http://help.apple.com/schoolmanager/#/tes78b477c81)。 [深入了解管理式 Apple ID](https://support.apple.com/HT205918)。
 - 針對已從 Apple School Manager 同步處理的裝置序號，建立註冊設定檔。
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>步驟 1 - 將學校資料匯入至 Azure Active Directory

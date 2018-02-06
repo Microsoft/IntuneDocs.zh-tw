@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13a6174856ad18034fc3d3c912339c8f844b3db0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dc061a525a4b20cafbbb2ae31ee90c878d2a98fe
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -92,9 +92,9 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
  
  除了針對應用程式保護原則啟用您的應用程式之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
  
- * 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
+ * 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
  
- * 您應用程式的 [AAD 用戶端識別碼](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)在 iOS 與 Android 平台上都必須是唯一的。
+ * 您應用程式的 [AAD 用戶端識別碼](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application)在 iOS 與 Android 平台上都必須是唯一的。
  
 ## <a name="configure-telemetry-for-your-app"></a>設定應用程式的遙測
 
@@ -106,7 +106,7 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 * **Intune App SDK for Android**：Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。 
 
-    * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+    * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 
  顯示 iOS 和 Android 的企業營運應用程式版本號碼<!-- 1380712 -->
