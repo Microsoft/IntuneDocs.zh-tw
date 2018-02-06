@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 註冊 iOS 裝置
 
@@ -71,8 +71,8 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 1. 建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增序號，然後在右資料行中新增詳細資料。 清單目前最多可容納 5,000 個資料列。 在文字編輯器中，.csv 清單會像這樣：
 
-    F7TLWCLBX196,device details</br>
-    DLXQPCWVGHMJ,device details
+  F7TLWCLBX196,device details</br>
+  DLXQPCWVGHMJ,device details
 
    了解[如何尋找 iOS 裝置序號](https://support.apple.com/HT204073)。
 2. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]，然後選擇 [Apple 註冊]。
@@ -164,3 +164,5 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 7. 在 iOS 裝置上，開啟 [設定]，並前往 [一般]  >  [裝置管理]  >  [管理設定檔]。 確認其中有列出設定檔的安裝，並檢查 iOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
 
 8. 散發裝置。 iOS 裝置現在已向 Intune 註冊並且受管理。
+
+

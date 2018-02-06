@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -254,7 +254,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="kiosk-preview"></a>Kiosk (預覽)
 
--   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)類型。 這些選項包括：
+-   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)類型。 這些選項包括：
 
       - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
       - **單一應用程式 kiosk** - 啟用裝置為單一應用程式 kiosk 的設定檔。
@@ -266,7 +266,7 @@ ms.lasthandoff: 01/25/2018
 
          若裝置在公用環境，請使用權限最低的使用者帳戶以防止授權的活動。  
 
-      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
+      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
     多個應用程式的 kiosk 需要 kiosk 設定。 使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
 
@@ -280,13 +280,13 @@ ms.lasthandoff: 01/25/2018
 
             - **Win32 應用程式** - 傳統型應用程式。 (在裝置方面，您需要可執行檔的完整路徑名稱)。
 
-            - **UWP App** - 通用 Windows app。 您需要[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+            - **UWP App** - 通用 Windows app。 您需要[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
-        - **應用程式識別碼** - 指定可執行檔的完整路徑名稱 (Win32 應用程式) 或[應用程式的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
+        - **應用程式識別碼** - 指定可執行檔的完整路徑名稱 (Win32 應用程式) 或[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
 
     - **工作列**指出工作列在 kiosk 上要顯示 (**已啟用**) 或隱藏 (**未設定**)。
 
-    - **開始 功能表配置** - 指定描述應用程式[在 [開始] 功能表上如何顯示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)的 XML 檔案。
+    - **開始 功能表配置** - 指定描述應用程式[在 [開始] 功能表上如何顯示](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)的 XML 檔案。
 
     - **指派的使用者** - 指定一或多個與 kiosk 設定建立關聯的使用者帳戶。 帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。 以 `domain\\username@tenant.org` 的格式指定加入網域的帳戶。
 
