@@ -36,7 +36,7 @@ ms.lasthandoff: 01/25/2018
 您的終端使用者必須允許來自未知來源的安裝，才能安裝 [LOB 應用程式](lob-apps-android.md)。 這些通常可以在兩個不同的位置找到：
 
 * **Android 7.1.2 和以下版本**：[設定] > [安全性] > [未知來源]
-* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] (特殊應用程式存取) > [Install unknown apps] (安裝未知應用程式) > [公司入口網站] > [Allow from this source] (允許來自此來源)
+* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] \(特殊應用程式存取) > [Install unknown apps] \(安裝未知應用程式) > [公司入口網站] > [Allow from this source] \(允許來自此來源)
 
 如果發生這種情況，公司入口網站應用程式將會通知，並直接引導終端使用者進行適當的設定。 
 
