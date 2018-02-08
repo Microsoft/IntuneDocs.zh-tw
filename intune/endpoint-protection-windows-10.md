@@ -69,7 +69,7 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上 BitLocker 和 
 - **刪除前的安全性關聯閒置時間** - *n* 秒偵測不到任何網路流量之後，即刪除安全性關聯。
 - **預先共用金鑰編碼** - 使用 UTF-8 編碼預先共用的金鑰。
 - **IPsec 豁免** - 設定自 IPsec 豁免特定的流量，包括**鄰居探索 IPv6 的 ICMP 類型代碼**、**ICMP**、**路由器探索 IPv6 的 ICMP 類型代碼**，和 **IPv4 和 IPv6 的 DHCP 網路流量**。
-- **憑證撤銷清單驗證** - 設定憑證撤銷清單驗證強制執行方式的值，包括 [Disable CRL verification] (停用 CRL 驗證)、[Fail CRL verification on revoked certificate only] (僅撤銷憑證上的 CRL 驗證會失敗)，以及 [Fail CRL verification on any error encountered] (發生任何錯誤 CRL 驗證都會失敗)。
+- **憑證撤銷清單驗證** - 設定憑證撤銷清單驗證強制執行方式的值，包括 [Disable CRL verification] \(停用 CRL 驗證)、[Fail CRL verification on revoked certificate only] \(僅撤銷憑證上的 CRL 驗證會失敗)，以及 [Fail CRL verification on any error encountered] \(發生任何錯誤 CRL 驗證都會失敗)。
 - **每個金鑰處理模組都伺機比對驗證組** - 如果金鑰處理模組不支援驗證集中所有的驗證套件，設定金鑰處理模組以忽略整個驗證集。
 - **封包佇列** - 指定如何啟用接收端軟體的縮放比例，處理 IPsec 通道閘道案例中轉接接收和清除的加密文字。 這可確定保留封包順序。
 
@@ -244,7 +244,7 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 #### <a name="it-contact-information"></a>IT 連絡人資訊
 
-提供 IT 連絡人資訊，顯示在 Windows Defender 資訊安全中心應用程式和應用程式通知中。 您可以選擇 [Display in app and in notifications] (在應用程式和通知中顯示)、[Display only in app] (只在應用程式中顯示)、[Display only in notifications] (只在通知中顯示) 或 [Don't display] (不顯示)。 您必須定義 **IT 組織名稱**以及至少一個下列連絡選項：
+提供 IT 連絡人資訊，顯示在 Windows Defender 資訊安全中心應用程式和應用程式通知中。 您可以選擇 [Display in app and in notifications] \(在應用程式和通知中顯示)、[Display only in app] \(只在應用程式中顯示)、[Display only in notifications] \(只在通知中顯示) 或 [Don't display] \(不顯示)。 您必須定義 **IT 組織名稱**以及至少一個下列連絡選項：
 
 - **IT 部門電話號碼或 Skype 識別碼**
 - **IT 部門電子郵件地址**
