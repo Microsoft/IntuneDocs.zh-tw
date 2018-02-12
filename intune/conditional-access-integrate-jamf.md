@@ -73,7 +73,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
 
-1. 在 Microsoft Azure 入口網站中，開啟 [Microsoft Intune] > [裝置合規性] > [Partner device management] (夥伴裝置管理)。
+1. 在 Microsoft Azure 入口網站中，開啟 [Microsoft Intune] > [裝置合規性] > [Partner device management] \(夥伴裝置管理)。
 2. 將應用程式識別碼貼上至 [Jamf Azure Active Directory 應用程式識別碼] 欄位，以啟用適用於 Jamf 的合規性連接器。
 3. 按一下 **[儲存]**。
 

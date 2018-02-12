@@ -62,7 +62,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 3. 選取 [解除鎖定]，讓您可以在該頁面上輸入設定。
 
-4. 為 [Server MDM] (伺服器的 MDM) 選擇 [ Microsoft Intune]。
+4. 為 [Server MDM] \(伺服器的 MDM) 選擇 [ Microsoft Intune]。
 
 5. 在 [Azure AD 網域] 中輸入您的 Azure 租用戶識別碼，然後選取 [連線] 按鈕。
 

@@ -47,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
     ![公司支援人員在您的裝置上可查看和無法查看的項目](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  在 [What's next?] (新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
+5.  在 [What's next?] \(新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
 
     ![新功能畫面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

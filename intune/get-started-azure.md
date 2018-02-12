@@ -31,7 +31,7 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 ![在 [More services] (更多服務) 清單中搜尋 Intune 的使用者。](./media/azure-add-intune1.png)
 
-1. 從頁面左側的資訊看板底部，選取 [More services] (更多服務)。
+1. 從頁面左側的資訊看板底部，選取 [More services] \(更多服務)。
 2. 在篩選方塊中，搜尋 **Intune**。
 3. 選取**星狀**，以將 Intune 新增至我的最愛服務清單底部。
 4. 將滑鼠游標放在 Intune 服務上方。 使用服務名稱右側的三個垂直點，以選取並拖曳 Intune。

@@ -69,7 +69,7 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
 5.  在 [新增應用程式設定] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
 6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
-7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]。
+7.  選擇 [Select the required apps] \(選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]。
 8.  選擇 [確定] 返回 [新增應用程式設定] 刀鋒視窗。
 9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 10. 完成後，請選擇 [確定]。

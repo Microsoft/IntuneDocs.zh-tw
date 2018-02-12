@@ -102,15 +102,15 @@ ms.lasthandoff: 01/25/2018
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. 在 Azure 入口網站中，選取 [More Services] (更多服務) > [監視 + 管理] > [Intune]。
+1. 在 Azure 入口網站中，選取 [More Services] \(更多服務) > [監視 + 管理] > [Intune]。
 2. 在 [Intune] 刀鋒視窗中，選取 [裝置設定]。 
 3. 在 [裝置設定] 刀鋒視窗中選取 [憑證授權單位]。 
-4. 按一下 [新增] 並選取 [Download Connector file] (下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
+4. 按一下 [新增] 並選取 [Download Connector file] \(下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
 5.  登入您將安裝 Microsoft Intune 憑證連接器的伺服器。
 6.  執行安裝程式，並接受預設位置。 它會將連接器安裝到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
     1. 在 [安裝程式選項] 頁面上，選擇 [PFX 發佈] 並按一下 [下一步]。
     2. 按一下 [安裝]，然後等候安裝完成。
-    3. 在 [完成] 頁面上，選取標籤為 [Launch Intune Connector] (啟動 Intune 連接器) 的方塊，然後按一下 [完成]。
+    3. 在 [完成] 頁面上，選取標籤為 [Launch Intune Connector] \(啟動 Intune 連接器) 的方塊，然後按一下 [完成]。
 7.  NDES 連接器現在應該會開啟至 [註冊] 索引標籤。若要連線到 Intune，請按一下 [登入] 並提供具有系統管理權限的帳戶。
 8.  在 [進階] 索引標籤上，您可以讓選項按鈕 [使用此電腦的 SYSTEM 帳戶 (預設)] 保持選取。
 9.  按一下 [套用]，然後按一下 [關閉]。
