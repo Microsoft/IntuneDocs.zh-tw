@@ -120,7 +120,7 @@ ms.lasthandoff: 10/10/2017
 
     ![MAM 的 [新增原則] 刀鋒視窗](../media/AppManagement/mam-lob-apps-1.png)
 
-2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] (適用於 iOS) 或 [套件識別碼] (適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
+2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] \(適用於 iOS) 或 [套件識別碼] \(適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
 
     ![MAM 的 [更多應用程式] 刀鋒視窗](../media/AppManagement/mam-lob-apps-2.png)
 

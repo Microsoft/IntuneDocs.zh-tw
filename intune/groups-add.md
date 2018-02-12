@@ -46,7 +46,7 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 
   Azure AD 讓您根據定義成員資格的規則，建立動態群組。 深入了解[建立以屬性為基礎的動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
-4. 您可以選取 [Enable Office features] (啟用 Office 功能) 讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+4. 您可以選取 [Enable Office features] \(啟用 Office 功能) 讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 5. 選擇 [建立] 新增新的群組。
 
 ## <a name="see-also"></a>另請參閱

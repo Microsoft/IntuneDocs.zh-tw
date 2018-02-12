@@ -154,7 +154,7 @@ ms.lasthandoff: 01/25/2018
 2.  選擇 [檔案] > [新增專案]。 展開 [Visual C#]，然後選擇 [主控台應用程式 (.NET Framework)]。 
 3.  將專案命名為 ` IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後選取 [確定]。
 4.  以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]。 選取 [瀏覽]，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
-5. 選擇套件，並在 [Manage Packages for Your Solution] (管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後選取 [安裝]。 
+5. 選擇套件，並在 [Manage Packages for Your Solution] \(管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後選取 [安裝]。 
 6. 選取 [我接受]，以接受 NuGet 套件授權。
 7. 從方案總管中，開啟 `Program.cs`。
 
