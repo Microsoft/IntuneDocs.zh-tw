@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>您的使用者將如何體驗受管理 Office 365 應用程式的基本保護
 
@@ -128,4 +128,4 @@ iOS 與 Android 的加密運作方式不相同。
 ![檢視原則的使用者介面路徑影像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>接下來的步驟
-深入了解[應用程式保護原則](https://docs.microsoft.comapp-protection-policy.md)。
+深入了解[應用程式保護原則](app-protection-policy.md)。
