@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -52,7 +52,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 |強制安裝在裝置上的應用程式 (必要)<sup>2</sup>|是|是|是|是|
 |可從公司入口網站安裝在裝置上的選擇 (可用安裝)|是|是|是|是|
 |安裝網路應用程式的捷徑 (網路美工圖案)|是|是|是|是|
-|內部 (企業營運) 應用程式|是|是|否|否|
+|內部 (企業營運) 應用程式|是|是|否|是|
 |市集應用程式|是|是|是|是|
 |更新應用程式|是|是|是|是|
 

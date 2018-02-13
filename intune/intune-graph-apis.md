@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2bef90d3f5c317a0191f31901834c96829eea7e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/25/2018
 
 4.  在 [建立] 刀鋒視窗中，指定下列各項︰
 
-    1.  應用程式的 [名稱] \(於使用者登入時顯示)。
+    1.  應用程式的 [名稱] (於使用者登入時顯示)。
 
     2.  [應用程式類型] 和 [重新導向 URI] 值。
 
@@ -434,7 +434,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>驗證 Azure AD (PowerShell)
 
-下列 PowerShell 指令碼使用 AzureAD PowerShell 模組來進行驗證。  若要深入了解，請參閱 [Azure Active Directory PowerShell 第 2 版](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) \(英文\) 和 [Intune PowerShell 範例](https://github.com/microsoftgraph/powershell-intune-samples) \(英文\)。
+下列 PowerShell 指令碼使用 AzureAD PowerShell 模組來進行驗證。  若要深入了解，請參閱 [Azure Active Directory PowerShell 第 2 版](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) \(英文\) 和 [Intune PowerShell 範例](https://github.com/microsoftgraph/powershell-intune-samples) \(英文\)。
 
 在此範例中，更新 `$clientID` 的值以符合有效的應用程式識別碼。
 
