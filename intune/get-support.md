@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -47,7 +47,7 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
     - **支援方案**：**技術支援 - 包含** (對於 Intune 技術問題，支援是免費。)
 
     >[!IMPORTANT]
-    >Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 若要檢閱頂級支援供應項目的詳細資訊，請參閱[服務的描述](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx)文件的 5.3.3＜諮詢服務＞一節。
+    >Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 若要檢閱頂級支援供應項目的詳細資訊，請參閱[服務的描述](https://www.microsoft.com/microsoftservices/services-list.aspx)文件的 5.3.3＜諮詢服務＞一節。
 
     選擇 [下一步] 以繼續。
 4. 在 [問題] 刀鋒視窗中，若要確保您的要求是由合適的主題專家解決，請選取下列選項：
