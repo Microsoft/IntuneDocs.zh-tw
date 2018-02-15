@@ -34,7 +34,7 @@ Intune 提供了許多方式，可讓您監視您所管理之應用程式的內�
 
 ## <a name="app-overview-blade"></a>應用程式概觀刀鋒視窗
 
-您可以使用 <應用程式名稱> [Device install status] (裝置安裝狀態) 刀鋒視窗，檢閱您環境中的應用程式狀態的詳細資料。
+您可以使用 <應用程式名稱> [Device install status] \(裝置安裝狀態) 刀鋒視窗，檢閱您環境中的應用程式狀態的詳細資料。
 
 ### <a name="essentials"></a>Essentials
 

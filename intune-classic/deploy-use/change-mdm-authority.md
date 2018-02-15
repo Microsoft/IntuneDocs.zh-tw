@@ -43,7 +43,7 @@ ms.lasthandoff: 10/10/2017
 - 變更之前，MDM 授權單位在 Intune 管理主控台中會顯示為 [設定為 Microsoft Intune]\ (獨立部署)。
 - 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示 [設定為 Microsoft Intune] \(獨立租用戶)。
     > [!NOTE]    
-    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] (混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
+    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] \(混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
 
 - 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移除「裝置註冊管理員」角色。 如需詳細資料，請參閱[從 Intune 刪除裝置註冊管理員](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)。
 - 關閉所有已設定的裝置群組對應。 如需詳細資料，請參閱[在 Microsoft Intune 使用裝置群組對應分類裝置](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。
@@ -87,15 +87,15 @@ ms.lasthandoff: 10/10/2017
 
     ![Apple Push Certificates 入口網站登入頁面](../media/mdm-change-apns-portal.png)
 
-3. 選取您用於 Intune 獨立部署的 APNs 憑證，然後按一下更新。
+3. 選取您用於 Intune 獨立部署的 APNs 憑證，然後按一下 [更新]。
 
     ![更新 APNs 對話方塊](../media/mdm-change-renew-apns.png)
 
-4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下上傳。
+4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下 [上傳]。
 
     ![Apple Push Certificates 入口網站登入頁面](../media/mdm-change-renew-apns-upload.png)
  
-5. 選取相同的 APNs，然後按一下下載。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
+5. 選取相同的 APNs，然後按一下 [下載]。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
 
     ![Apple Push Certificates 入口網站登入頁面](../media/mdm-change-renew-apns-download.png)
 
