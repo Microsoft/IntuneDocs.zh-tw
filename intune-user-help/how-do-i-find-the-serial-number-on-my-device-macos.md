@@ -25,6 +25,6 @@ ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>如何在我的裝置上尋找序號？
 
-裝置序號可唯一識別該裝置，並可協助公司支援人員執行特定工作，例如將您的裝置取代為新的裝置。 若要尋找序號，請移至 **Apple 功能表** > [About This Mac] (關於此 Mac)。
+裝置序號可唯一識別該裝置，並可協助公司支援人員執行特定工作，例如將您的裝置取代為新的裝置。 若要尋找序號，請移至 **Apple 功能表** > [About This Mac] \(關於此 Mac)。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
