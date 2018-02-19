@@ -62,7 +62,7 @@ ms.lasthandoff: 01/25/2018
 
     ![隱私權設定](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  在 [What's next?] (新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
+9.  在 [What's next?] \(新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
 
     ![接下來要做什麼畫面](/intune/media/android_cp_enroll_03_after_1710.png)
 
