@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立及指派條件式存取原則
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 - EAS 郵件用戶端 **Android for Work 裝置**：Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 Android for Work 若要使用條件式存取，除了必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
 
 > [!NOTE]
-> 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。 Android for Work 即將在接下來幾個月陸續推出給 Intune 租用戶使用。
+> 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。 
 
 ### <a name="support-for-pcs"></a>對電腦的支援
 
