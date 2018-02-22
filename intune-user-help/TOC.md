@@ -104,7 +104,6 @@
 ## [使用您的 macOS 裝置](using-your-macos-device-with-intune.md)
 ### [註冊 macOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
-### [註冊您的舊版 macOS 裝置](enroll-your-device-in-intune-macos-legacy.md)
 ### [取消註冊 macOS 裝置](unenroll-your-device-from-intune-macos.md)
 
 ### [修正 macOS 的常見問題](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [從公司入口網站應用程式傳送記錄檔](send-logs-to-your-it-admin-cp-windows.md)
 #### [從設定應用程式傳送記錄檔](send-logs-to-your-it-admin-settings-windows.md)
 #### [尚不支援我的 Windows 版本](your-windows-version-isnt-yet-supported.md)
+#### [在您的 Windows 10 裝置上安裝 Office 365](install-office-windows.md)
 #### [啟用 Windows 加密](you-need-to-enable-windows-encryption.md)
 #### [我的裝置需要反惡意程式碼軟體](your-device-needs-antimalware-software.md)
 #### [啟用安全開機](you-need-to-enable-secure-boot-windows.md)

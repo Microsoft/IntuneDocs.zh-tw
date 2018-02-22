@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: 指派授權
           href: licenses-assign.md
+        - name: Intune 授權
+          href: licenses.md
         - name: 設定 MDM 授權單位
           href: mdm-authority-set.md
     - name: 註冊裝置
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: 啟用 iOS 遺失模式
           href: device-lost-mode.md
+        - name: 開啟 iOS 監督模式
+          href: device-supervised-mode.md
         - name: 鎖定裝置
           href: device-remote-lock.md
         - name: 重設密碼
@@ -251,7 +255,7 @@
             - name: Web 應用程式
               href: web-app.md
             - name: 內建應用程式
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: 部署 App
           href: apps-deploy.md
           items:
