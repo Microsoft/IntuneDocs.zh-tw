@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0da2ba5d842a004f167a4bbeca62d4b00f756612
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 
 2. 使用您的工作或學校帳戶登入公司入口網站。
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. 登入之後，按一下頁面左上角的 [功能表]，然後選取 [我的裝置]。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 01/25/2018
 
 7. 安裝程式完成後，開啟 [應用程式] 資料夾或 [啟動控制板]，然後開啟 [公司入口網站]。
 
-8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？ 按一下 [開啟]。
+8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？** 按一下 [開啟]。
 
   > [!NOTE]
   > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請嘗試[關閉閘道管理員](https://support.apple.com/HT202491)，然後開啟應用程式。

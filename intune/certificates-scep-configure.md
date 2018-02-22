@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 -  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。
 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
--  **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載「憑證連接器」安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。 
+-  **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載「憑證連接器」安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在裝載網路裝置註冊服務 (NDES) 角色，在要安裝憑證連接器的伺服器上執行 **ndesconnectorssetup.exe**。 
 -  **Web 應用程式 Proxy 伺服器** (選用)︰使用執行 Windows Server 2012 R2 或更新版本的伺服器做為 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
     -  允許裝置使用網際網路連線接收憑證。
     -  是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
@@ -299,7 +299,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 在這項工作中，您將會：
 
 - 啟用 Intune 中的 NDES 支援。
-- 在您環境的伺服器上下載、安裝及設定憑證連接器。 若要支援高可用性，您可以在不同的伺服器上安裝多個憑證連接器。
+- 在您環境中裝載網路裝置註冊服務 (NDES) 角色的伺服器上，下載、安裝及設定憑證連接器。 若要增加您組織的 NDES 實作擴充性，您可以在每部 NDES 伺服器上，安裝多部 NDES 伺服器與 Microsoft Intune 憑證連接器。
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
@@ -309,7 +309,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 3. 在 [Intune] 刀鋒視窗中，選取 [裝置設定]。
 4. 在 [裝置設定] 刀鋒視窗中選取 [憑證授權單位]。
 5. 按一下 [新增] 並選取 [Download Connector file] (下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
-6.  下載完成之後，請在 Windows Server 2012 R2 伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
+6.  下載完成之後，在裝載網路裝置註冊服務 (NDES) 角色的伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
 
     > [!NOTE]
     > 當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。 當您使用 Intune 搭配 Configuration Manager 時，將憑證註冊點安裝為個別的網站系統角色。

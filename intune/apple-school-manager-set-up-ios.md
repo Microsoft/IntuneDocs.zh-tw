@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 666ce43e3bd87db5a8245694d22401819c369951
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
+>
+>本頁所述功能的使用者介面正在進行更新。 這些更新將會在 4 月底推出給所有的使用者帳戶。
+>
+>如果您的**裝置註冊**頁面如下圖所示，代表您的帳戶尚未更新至新的使用者介面，因此您可以使用本說明頁面。
+>
+>![舊的使用者介面](./media/appleenroll-oldui.png)
+>
+>如果您的**裝置註冊**頁面如下圖所示，代表您已經有最新的使用者介面。  移至[此說明頁面](apple-school-manager-set-up-ios-newui.md)。
+>
+>![新的使用者介面](./media/appleenroll-newui.png)
 
 本主題將協助您針對透過 [Apple School Manager](https://school.apple.com/) 計劃購買的裝置啟用 iOS 裝置註冊。 使用 Intune 與 Apple School Manager，您甚至不用碰到它們即可註冊大量的 iOS 裝置。 當學生或老師啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
@@ -54,11 +67,11 @@ ms.lasthandoff: 01/25/2018
 
 **步驟 2.下載權杖並指派裝置。**<br>
 1. 選擇 [透過 Apple School Manager 建立權杖]，並以您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 Apple School Manager 權杖。
-2.  在 [Apple School Manager 入口網站](https://school.apple.com) 中，移至 [MDM 伺服器]，然後選擇 [新增 MDM 伺服器] \(右上角)。
+2.  在 [Apple School Manager 入口網站](https://school.apple.com) 中，移至 [MDM 伺服器]，然後選擇 [新增 MDM 伺服器] (右上角)。
 3.  輸入 **MDM 伺服器名稱**。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
    ![螢幕擷取畫面：選取序號選項的 Apple School Manager 入口網站](./media/asm-server-assignment.png)
 
-4.  在 Apple 入口網站中選擇 [上傳檔案...]，瀏覽至 .pem 檔案，然後選擇 [儲存 MDM 伺服器] \(右下角)。
+4.  在 Apple 入口網站中選擇 [上傳檔案...]，瀏覽至 .pem 檔案，然後選擇 [儲存 MDM 伺服器] (右下角)。
 5.  選擇 [取得權杖]，然後將伺服器權杖 (.p7m) 檔案下載到您的電腦。
 6. 移至 [裝置指派]，然後手動輸入 [序號]、[訂單號碼]，或 [上傳 CSV 檔案] 來 [選擇裝置]。
      ![螢幕擷取畫面：選取序號選項的 Apple School Manager 入口網站](./media/asm-device-assignment.png)

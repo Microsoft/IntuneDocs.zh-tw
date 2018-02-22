@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -45,8 +44,9 @@ ms.lasthandoff: 01/25/2018
 - Windows Update 支援下列 Windows 10 版本：
     - Windows 10
     - Windows 10 Team (適用於 Surface Hub 裝置)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- 不支援執行 Windows 10 行動版和 Windows 10 全像攝影版的裝置。
+ 不支援執行 Windows 10 行動裝置版的裝置。
 
 - 在 Windows 裝置上，[意見與診斷]  >  [診斷與使用方式資料] 必須至少設定為 [基本]。
 
@@ -89,8 +89,7 @@ ms.lasthandoff: 01/25/2018
 
     功能更新一般是 Windows 的新功能。 進行 [維護通道] 設定之後 (半年通道 (已設定目標) 或半年通道)，您接著可以定義在 Microsoft 於 Windows Update 發行「功能更新」後，是否要延遲接收「功能更新」，以及要延遲多久。
 
-    例如：  
-    **若維護通道已設為 [半年通道 (已設定目標)] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 裝置要到 2 月 (30 天後) 才會接收更新。
+    例如：**若維護通道已設為 [半年通道 (已設定目標)] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 裝置要到 2 月 (30 天後) 才會接收更新。
 
     **若維護通道已設為 [半年通道] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置將會在此半年通道發行的 30 天後收到「功能更新 X」，並將在 5 月更新。
 
@@ -154,3 +153,11 @@ ms.lasthandoff: 01/25/2018
 > [!IMPORTANT]
 > 在您發出暫停命令後，裝置會在下次向服務確認時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。
 > 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
+
+Windows Holographic for Business 支援下列設定：
+
+- **自動更新行為**
+- **Microsoft 產品更新**
+- **維護通道**

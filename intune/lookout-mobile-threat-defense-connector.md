@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2647875ed6753cf437d4487faf0137e28bd40f43
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense 連接器與 Intune
 
@@ -28,14 +28,14 @@ ms.lasthandoff: 01/25/2018
 - 安裝的惡意應用程式
 - 惡意網路設定檔
 
-您可以根據透過 Intune 合規性原則所啟用的 Lookout 風險評估，來設定條件式存取原則。 設定可讓您根據偵測到的威脅來允許或封鎖不符合規範的裝置。
+您可以根據透過 Intune 合規性原則所啟用的 Lookout 風險評估，來設定條件式存取原則。 設定可讓您根據偵測到的威脅來允許或封鎖不相容的裝置。
 
 ## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune 和 Lookout Mobile Threat Defense 如何協助保護公司資源？
 已在行動裝置上安裝和執行 Lookout 行動應用程式 (**Lookout for Work**)。 這個應用程式可擷取檔案系統、網路堆疊，以及裝置和應用程式遙測 (如果可用)，然後將其傳送至 Lookout 雲端服務，以評估裝置威脅的裝置風險。 您可以在 Lookout 主控台中變更威脅的風險層級分類，以符合您的需求。  
 
 Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。
 
-如果發現裝置不符合規範，則可以封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會收到解決此問題並重新取得存取權的步驟。 指引是從 Lookout for Work 應用程式來啟動。
+如果裝置發現不相容，則可以封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會收到解決此問題並重新取得存取權的步驟。 指引是從 Lookout for Work 應用程式來啟動。
 
 ## <a name="supported-platforms"></a>支援的平台
 在 Intune 中註冊時，Lookout 支援下列平台︰
@@ -61,7 +61,7 @@ Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile 
 
 **於偵測到惡意應用程式時進行封鎖：**
 
-![此圖表顯示，當裝置因為其中的惡意應用程式導致判定為不符合規範時，條件式存取原則會封鎖存取](./media/malicious-apps-blocked.png)
+![此圖表顯示，當裝置因為其中的惡意應用程式導致判定為不相容時，條件式存取原則會封鎖存取](./media/malicious-apps-blocked.png)
 
 **修復後允許存取：**
 

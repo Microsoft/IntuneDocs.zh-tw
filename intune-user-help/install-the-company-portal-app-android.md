@@ -17,15 +17,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0072c3e11c679ea6c5d5cfe8e55d1894c4a5c0f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e63ce5f8f16fff7a758c7fa3ed935acc38b2337d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安裝 Android 版公司入口網站應用程式
 
-「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全，例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 公司入口網站應用程式可協助您[在 Microsoft Intune 中註冊裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)而達到此目標。
+「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 公司入口網站應用程式可協助您[在 Microsoft Intune 中註冊裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)而達到此目標。
 
 1.  點選 [首頁] > [Play Store]。
 

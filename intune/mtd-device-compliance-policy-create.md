@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23155cbb84c2d170f1b0216981621e35fd3ac0f1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense (MTD) 裝置合規性原則
 
@@ -56,14 +56,14 @@ ms.lasthandoff: 01/25/2018
 
     b。  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
 
-    c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高等級的威脅，則會將裝置判斷為不相容。
+    c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
 
     d.  **高**：這是最不安全的選項。 這會允許所有威脅等級，並只將 Mobile Threat Defense 用於回報用途。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
 
 8.  按一下 [確定] 兩次，然後選擇 [建立]。
 
 > [!IMPORTANT]
-> 如果您建立 Office 365 或其他服務的條件式存取原則，則會評估裝置合規性評估，並封鎖不符合規範的裝置，使其無法存取公司資源，直到裝置中的威脅獲得解決為止。
+> 如果您建立 Office 365 或其他服務的條件式存取原則，則會評估裝置相容性評估，並封鎖不相容的裝置，使其無法存取公司資源，直到裝置中的威脅獲得解決為止。
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>指派 MTD 裝置合規性原則
 

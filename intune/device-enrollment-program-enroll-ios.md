@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: b56907217b45ddb2bfe869f23abc34c0508bdbd7
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
+>
+>本頁所述功能的使用者介面正在進行更新。 這些更新將會在 4 月底推出給所有的使用者帳戶。
+>
+>如果您的**裝置註冊**頁面如下圖所示，代表您的帳戶尚未更新至新的使用者介面，因此您可以使用本說明頁面。
+>
+>![舊的使用者介面](./media/appleenroll-oldui.png)
+>
+>如果您的**裝置註冊**頁面如下圖所示，代表您已經有最新的使用者介面。  移至[此說明頁面](device-enrollment-program-enroll-ios-newui.md)。
+>
+>![新的使用者介面](./media/appleenroll-newui.png)
 
 本主題將協助您針對透過 Apple 的[裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的裝置啟用 iOS 裝置註冊。 您可以在完全不需要接觸的情況下，啟用大量裝置的 DEP 註冊。 您可以將 iPhone 和 iPad 等裝置直接交付給使用者。 當使用者啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
@@ -138,7 +151,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 5. 選擇 [設定助理設定]，對下列設定檔進行設定：
 
   ![為新註冊計劃設定檔使用可用設定選取組態設定的螢幕擷取畫面。](./media/enrollment-program-profile-settings.png)
-  - **部門名稱** - 使用者於啟用期間點選 [About Configuration] (關於設定) 時顯示。
+  - **部門名稱** - 使用者於啟用期間點選 [About Configuration] \(關於設定) 時顯示。
 
   - **部門電話** - 在使用者於啟用期間按一下 [需要協助] 按鈕時顯示。
     - **設定輔助程式選項** - 這些是選用設定，稍後可以在 iOS [設定] 功能表中進行設定。

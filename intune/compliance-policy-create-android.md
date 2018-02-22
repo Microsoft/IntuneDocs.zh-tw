@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
 
@@ -103,9 +103,9 @@ ms.lasthandoff: 01/25/2018
 - **Minimum OS required** (需要的最低作業系統版本)：當裝置不符合最低作業系統版本需求時，會回報為不符合規範。 您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
 - **Maximum OS version allowed** (允許的最高 OS 版本)：當裝置使用的作業系統版本高於規則指定的版本時，會禁止存取公司資源，並要求使用者連絡其 IT 系統管理員。除非將規則變更為允許該作業系統版本，否則此裝置無法用來存取公司資源。
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>如何將不合規設定用於條件式存取原則？
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>如何將不相容設定用於條件式存取原則？
 
-下表說明搭配使用合規性政策與條件式存取原則時，如何管理不合規設定。
+下表說明如何搭配使用合規性政策與條件式存取原則時，不合規設定的管理方式。
 
 --------------------
 

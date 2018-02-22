@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 macOS 裝置限制設定
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。
     -   **必要的密碼類型** - 指定密碼是否只能是數字，或者是否必須為英數字元 (包含字母和數字)。 只有 Mac OS X 10.10.3 版與更新版本才支援這項設定。
-    -   **密碼中的非英數字元數目** - 指定密碼中所需的複雜字元數 (**0** 到 **4**)。<br>複雜字元是一種符號，如 **?**
+    -   **密碼中的非英數字元數目** - 指定密碼中所需的複雜字元數 (**0** 到 **4**)。<br>複雜字元是一種符號，例如 "**?**"。
     -   **密碼長度下限** - 輸入使用者必須設定的密碼長度下限 (介於 **4** 到 **16** 個字元之間)。
     -   **簡單密碼** - 允許使用簡單密碼，例如 **0000** 或 **1234**。
     -   **在螢幕鎖定最少幾分鐘後必須輸入密碼**- 指定電腦多長時間沒有活動後，即需要密碼才可解除鎖定。
@@ -42,8 +40,8 @@ ms.lasthandoff: 01/25/2018
 
 您可以在受限制應用程式清單中，設定下列清單之一︰
 
-**禁止的應用程式**清單 - 列出不允許使用者安裝與執行的應用程式 (並非由 Intune 管理)。
-**核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 若要保持相容，使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。
+- **禁止的應用程式**清單 - 列出不允許使用者安裝與執行的應用程式 (並非由 Intune 管理)。 使用者安裝禁止的應用程式並不會受到阻止，但如果已安裝，系統會向您回報。
+- **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。 使用者安裝不在核准的清單上的應用程式並不會受到阻止，但如果已安裝，系統會向您回報。
 
 若要設定清單，請按一下 [新增]，然後指定您所選的名稱，也可指定應用程式發行者以及應用程式的套件組合識別碼 (例如 *com.apple.calculator*)。
 

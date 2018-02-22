@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46a25f60e43b2106446904c36ee6aa10fceff579
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
 
@@ -372,5 +372,5 @@ ms.lasthandoff: 12/12/2017
 |-2016345912|0x87D100C8|成功完成 SyncML 命令。|
 |-2016346011|0x87D10065|正在執行指定的 SyncML 命令，但是尚未完成。|
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](../troubleshoot/how-to-get-support-for-microsoft-intune.md)中所述)。

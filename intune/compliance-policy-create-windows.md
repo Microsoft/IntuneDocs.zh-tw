@@ -6,29 +6,27 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中為 Windows 裝置建立裝置合規性政策
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-每個平台都會建立合規性政策。  您可以在 Azure 入口網站中建立合規性政策。 如需深入了解什麼是合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)主題。 如需了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)主題。
+每個平台都會建立合規性政策。 您可以在 Azure 入口網站中建立合規性政策。 如需深入了解什麼是合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)主題。 如需了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)主題。
 
-下表說明如何搭配使用合規性政策與條件式存取原則時，不合規設定的管理方式。
+下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
 
 ---------------------------
 
@@ -46,7 +44,7 @@ ms.lasthandoff: 01/25/2018
 
 **已補救** = 裝置作業系統強制符合規範。 (例如強制使用者設定 PIN 碼)。
 
-**已隔離** = 裝置作業系統不強制符合規範。 (例如，Android 裝置不強制使用者為裝置加密。)裝置不合規範時，會採取下列動作︰
+**已隔離** = 裝置作業系統不強制符合規範。 (例如，Android 裝置不強制使用者為裝置加密。)裝置不相容時，會採取下列動作︰
 
 - 如果對使用者套用了條件式存取原則，裝置會遭到封鎖。
 - 公司入口網站會通知使用者任何合規性問題的相關事項。
@@ -55,7 +53,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies]\(所有裝置合規性政策) 及 [建立]。
 2. 輸入名稱及描述，然後選擇要套用此原則的平台。
-3. 選擇 [合規性需求]，以開啟 [合規性需求] 刀鋒視窗。  您可以在此指定 [安全性]、[裝置健全狀況] 及 [裝置屬性]。設定完成後，請選擇 [確定]。
+3. 選擇 [合規性需求]，以開啟 [合規性需求] 刀鋒視窗。  您可以在此指定 [安全性]、[裝置健全狀況] 及 [裝置屬性]，設定完成後，請選擇 [確定]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -71,7 +69,7 @@ ms.lasthandoff: 01/25/2018
 1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這會開啟刀鋒視窗讓您從中選取 [Azure Active Directory 安全性群組]，並將其指派給原則。
 2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。  選擇 [選取] 會將原則部署給使用者。
 
-您已對使用者套用此原則。  要套用原則之使用者的裝置將會接受合規性評估。
+您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受合規性評估。
 
 <!---## Compliance policy settings--->
 
@@ -82,7 +80,7 @@ ms.lasthandoff: 01/25/2018
 - **需要密碼來解除鎖定行動裝置︰**將此設定為 [是]，以要求使用者在存取他們的裝置前輸入密碼。
 - **允許簡單密碼**︰將此項目設定為 [是] 可允許使用者建立簡單密碼，例如 **1234** 或 **1111**。
 - **最小密碼長度**：指定使用者密碼中至少須包含的數字位數或字元數。
-- **需要的密碼類型**：指定使用者必須建立**英數字元**或**數字**密碼。
+- **必要的密碼類型：**指定使用者是否必須建立**英數**或**數值**密碼。
 
 對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
 
@@ -132,19 +130,19 @@ ms.lasthandoff: 01/25/2018
 
 指定使用者密碼中至少須包含的數字位數或字元數。
 
-對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過 8 個字元，或 [字元集數目下限] 大於兩個字元，合規性政策將無法正確進行評估。
+對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
 
 - **需要的密碼類型**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定
 
 指定使用者必須建立**英數字元**或**數字**密碼。
 
-- **字元集數目下限**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。 如若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數。 四個字元集為：
+- **字元集數目下限**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。 若將 [必要的密碼類型] 設為 [英數字元]，此設定即會指定密碼至少須包含的字元集數下限。 四個字元集為：
   - 小寫字母
   - 大寫字母
   - 符號
   - 數字：若要將此設定設為較高的數目，使用者必須建立更複雜的密碼。
 
-對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過 8 個字元，或 [字元集數目下限] 大於 2 個字元，合規性政策將無法正確進行評估。
+對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
 
 - **要求密碼前的閒置分鐘數︰** - Windows RT、Windows RT 8.1 和 Windows 8.1 上支援
 
@@ -179,16 +177,24 @@ ms.lasthandoff: 01/25/2018
 
 在此指定 major.minor.build 數目。 此版本號碼與 ```winver``` 命令傳回的版本必須一致。
 
-若裝置上的 OS 版本較指定版本舊，會將其回報為不符合規範。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
+若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
 - **允許的最高 OS 版本︰** - Windows 8.1 和 Windows 10 上支援。
 
 當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
-若要尋找 [Minimum OS required]\(需要的最低 OS) 及 [Maximum OS version allowed]\(允許的最大 OS 版本) 設定所使用的作業系統版本，可執行從命令提示字元執行 **winver**命令。 winver 命令會傳回回報的 OS 版本。
+若要尋找要用於**所需的 OS 下限**和**允許的最高 OS 版本**設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 winver 命令會傳回回報的 OS 版本。
 
 - Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 - 執行 Windows 10 之電腦的版本應設定為 &quot;10.0&quot;+ winver 命令傳回的 OS 組建編號。
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
+
+Windows Holographic for Business 支援下列設定：
+
+- 系統安全性/加密
+
+  **裝置上資料儲存的加密**。
 
 <!--- ## Next steps
 

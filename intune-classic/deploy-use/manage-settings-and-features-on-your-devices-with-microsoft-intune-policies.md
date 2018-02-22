@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>透過 Microsoft Intune 原則管理裝置上的設定和功能
 
@@ -34,7 +34,7 @@ Intune 原則可分為以下類別。 您使用的類別會影響您建立和部
 
 - [設定原則]︰這些原則通常用來管理您裝置的安全性設定和功能。 使用本主題中的資訊來了解如何建立及部署這些原則，以及瀏覽可用的設定。
 - [裝置相容性原則]：這些原則定義裝置必須符合才能被條件式存取原則視為相容的規則與設定。 您也可以使用相容性原則，來監視和修復與條件式存取無關的裝置相容性。
-如需詳細資訊，請參閱 [Microsoft Intune 的裝置相容性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)。
+如需詳細資訊，請參閱 [Microsoft Intune 的裝置合規性政策](introduction-to-device-compliance-policies-in-microsoft-intune.md)。
 - [條件式存取原則]：這些原則可協助您依據指定的條件保護電子郵件及其他服務。
 如需詳細資訊，請參閱[使用 Microsoft Intune 限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 - [公司裝置註冊原則]：如需公司裝置註冊原則的資訊，請參閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
@@ -166,7 +166,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
     - [Windows Phone 8.1 裝置]：會移除下列設定：
         - 需要密碼來解除鎖定行動裝置
         - 允許簡單密碼
-        - 最小密碼長度
+        - 密碼長度下限
         - 所需的密碼類型
         - 密碼到期 (天數)
         - 記住密碼歷程記錄
@@ -186,7 +186,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
         - 允許自動連線到免費的 Wi-Fi 熱點
         - 允許 Wi-Fi 熱點回報
         - 允許原廠重設
-        - 允許藍芽
+        - 允許藍牙
         - 允許 NFC
         - 允許 Wi-Fi
 
@@ -198,7 +198,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 #### <a name="windows-pcs-running-the-intune-client-software"></a>執行 Intune 用戶端軟體的 Windows 電腦
 
 - [Endpoint Protection 設定]：設定會還原回其建議值。 唯一例外是 **[加入 Microsoft Active Protection Service]** 設定，其預設值為 **[否]**。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
-- [軟體更新設定]：設定會重設為作業系統的預設狀態。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
+- [軟體更新設定]：設定會重設為作業系統的預設狀態。 如需詳細資料，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 - [Microsoft Intune Center 設定]：由原則設定的任何支援連絡資訊都會從電腦刪除。
 - [Windows 防火牆設定]：設定會重設為電腦作業系統的預設值。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 

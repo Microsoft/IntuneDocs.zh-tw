@@ -10,7 +10,7 @@ Microsoft MyApps 現在於 Managed Browser 中提供更佳支援。 非管理目
 
 Managed Browser 會同時收到 Android 和 iOS 版應用程式的更新圖示。 此新圖示會包含更新的 Intune 徽章，因此與 Enterprise Mobility + Security (EM+S) 中的其他應用程式更一致。 您可以在 [Intune App UI 中的新增功能頁面](/intune/whats-new-app-ui)中看到 Managed Browser 的新圖示。
 
-公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以改進與 EM+S 中其他應用程式的一致性。 從四月起到五月底，這些圖示會逐漸在各平台發行。
+公司入口網站也會收到 Android、iOS 和 Windows 版應用程式的更新圖示，以增強與 EM+S 中其他應用程式的一致性。 從四月起到五月底，這些圖示會逐漸在各平台發行。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司入口網站中的登入進度列指示器 <!--953374-->
 
@@ -39,13 +39,13 @@ iOS 公司入口網站應用程式中現在會顯示更具體的新錯誤訊息�
 
 您現在可以使用 Windows 設定設計工具 (WCD) 將執行 Windows 10 Creators Update 的大量裝置加入到 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶啟用[大量 MDM 註冊](/intune-classic/deploy-use/bulk-enroll-windows)，請使用 Windows 設定設計工具建立會將裝置加入到 Azure AD 租用戶的佈建套件，然後將套件套用至您要大量註冊及管理的公司擁有裝置。 將套件套用至裝置之後，裝置會加入 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。  Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
 
-### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 管理體驗公開預覽新功能<!--736542-->
+### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 系統管理體驗公開預覽新增功能 <!--736542-->
 
 在 2017 年初，我們會將完整系統管理體驗移轉到 Azure，以便在可透過圖形 API 擴充的新式服務平台上，對核心 EMS 工作流程進行強大的整合式管理。
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新系統管理體驗的公開預覽。 在預覽狀態期間，將提供與現有 Intune 主控台相同與相當的功能。
 
-Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](/intune/whats-new)。
+Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](/intune/whats-new)。
 
 您可以在[這裡](/intune/whats-new)找到 Azure 的 Intune 預覽新功能。
 
@@ -111,7 +111,7 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 - 應用程式防禦
 - 弱點防禦
 
-您可以根據透過 Intune 裝置合規性政策所啟用的 Skycure 風險評估，來設定 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不符合規範的裝置存取公司資源。 如需詳細資訊，請參閱 [Skycure Mobile Threat Defense 連接器](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)。
+您可以根據透過 Intune 裝置合規性政策所啟用的 Skycure 風險評估，來設定 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不相容的裝置存取公司資源。 如需詳細資訊，請參閱 [Skycure Mobile Threat Defense 連接器](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
 
@@ -207,13 +207,13 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>商務用 Microsoft 網上商店的相關多重管理工具 <!--926135-->
 如果您使用多種管理工具來部署商務用 Microsoft 網上商店應用程式，以前只能建立與其中一種與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
 
-## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 管理體驗公開預覽新功能<!--736542-->
+## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 的 Intune 系統管理體驗公開預覽新增功能 <!--736542-->
 
 在 2017 年初，我們會將完整系統管理體驗移轉到 Azure，以便在可透過圖形 API 擴充的新式服務平台上，對核心 EMS 工作流程進行強大的整合式管理。
 
 新的試用租用戶將於本月開始看到 Azure 入口網站中新系統管理體驗的公開預覽。 在預覽狀態期間，將提供與現有 Intune 主控台相同與相當的功能。
 
-Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 在此同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](/intune/whats-new)。
+Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目標設定功能；當您現有的租用戶移轉至新的分組體驗時，也會同時將您移轉，以預覽您租用戶的新系統管理體驗。 同時，如果您想要在移轉租用戶之前測試或查看任何新功能，請註冊新的 Intune 試用帳戶或查看[新文件](/intune/whats-new)。
 
 您可以在[這裡](/intune/whats-new)找到 Azure 的 Intune 預覽新功能。
 
@@ -251,7 +251,7 @@ Intune 現在完全支援和管理 Android 7.1.1。
 
 已更新下列文章：
 
-* [決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](/intune/apps-prepare-mobile-application-management)
+* [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](/intune/apps-prepare-mobile-application-management)
 * [準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](/intune/app-wrapper-prepare-ios)
 * [開始使用 Microsoft Intune App SDK](/intune/app-sdk-get-started)
 * [Intune App SDK for iOS 開發人員指南](/intune/app-sdk-ios)

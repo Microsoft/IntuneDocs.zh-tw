@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>在 Intune 中建立 Lookout 裝置合規性原則
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 10/10/2017
 2. 選取 [允許的最高威脅層級]：
   * **無 (受保護)**：這是最安全的選項。  裝置不能在具有任何威脅的同時還能存取公司資源。  發現任何威脅時，即會將裝置評估為不相容。  
   * **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
-  * **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高等級的威脅，則會將裝置判斷為不相容。
+  * **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
   * **高**：這是最不安全的選項。 這可允許所有威脅層級，並僅針對報告用途使用 Lookout 行動裝置威脅防護。
 
 ![顯示裝置威脅保護規則設定之威脅等級選項的螢幕擷取畫面](../media/mtp/mtp-compliance-policy-setting.png)
@@ -53,7 +53,7 @@ ms.lasthandoff: 10/10/2017
 
 ![Intune 管理主控台中顯示裝置相容性狀態之 [裝置] 頁面的螢幕擷取畫面](../media/mtp/mtp-device-status-intune-console.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 * 建立條件式存取原則
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange 內部部署](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

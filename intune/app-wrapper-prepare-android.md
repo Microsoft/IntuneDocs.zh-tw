@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/25/2018
     > [!NOTE]
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 您最好安裝 64 位元版本。
 
-- Android 要求所有應用程式套件 (.apk) 均已簽署。 若要**重複使用**現有憑證和整個簽署憑證指引，請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 使用 Java 可執行檔 keytool.exe 產生簽署包裝輸出應用程式所需的**新**認證。 任何設定的密碼都必須安全，但請記下密碼，因為執行 App Wrapping Tool 時會需要這些密碼。
+- Android 要求所有應用程式套件 (.apk) 均已簽署。 若要**重複使用**現有憑證和整個簽署憑證指引，請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 使用 Java 可執行檔 keytool.exe 產生簽署包裝輸出應用程式所需的**新**認證。 任何設定的密碼都必須安全，但請記下密碼，因為執行 App Wrapping Tool 時會需要這些密碼。
 
 ## <a name="install-the-app-wrapping-tool"></a>安裝應用程式包裝工具
 
@@ -119,7 +119,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 * Intune App Wrapping Tool for Android 發行了新版本，讓關鍵 Bug 獲得修正，或提供新的特定 Intune 應用程式保護原則功能。 這會透過 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) 的 GitHub 存放庫，每 6-8 週發生一次。
 
 重新包裝的幾種最佳做法包括： 
-* 保留在建置程序中使用的簽署憑證。請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* 保留在建置程序中使用的簽署憑證。請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>重複使用簽署憑證和包裝應用程式
 Android 要求所有的應用程式都必須以有效的憑證簽署，才能安裝在 Android 裝置上。
@@ -158,7 +158,7 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
 
-1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
 > [!NOTE] 
 > 與您應用程式繫結的「用戶端識別碼」一詞，和與您應用程式繫結的 Azure 入口網站「應用程式識別碼」一詞是相同的。 
 * 若要啟用 SSO，需要「一般 ADAL 設定」#2。
@@ -174,4 +174,4 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 ### <a name="see-also"></a>另請參閱
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)
 
-- [使用 SDK 讓應用程式進行行動應用程式管理](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)

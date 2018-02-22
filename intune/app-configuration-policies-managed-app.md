@@ -3,10 +3,10 @@ title: "在不註冊裝置的情況下新增受管理應用程式的應用程式
 titlesuffix: Azure portal
 description: "了解如何在不註冊裝置的情況下使用受管理應用程式的應用程式設定原則。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2266e460d816dfdd908d6a68944c8c2cc5c0afc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 01/25/2018
 6. 選取 [相關聯的應用程式] 來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 7. 對於應用程式支援的每個組態設定，請鍵入 [名稱] 和 [值]，然後選擇省略符號 (**...**)。  
     若要刪除設定，請選擇省略符號 (**...**)，然後選取 [刪除]。  
-    啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。  
-    此外，您可以使用權杖，其會動態填入應用程式所產生的資料。
+    
+啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需適用於 iOS 的 Outlook 應用程式設定原則設定的詳細資訊，請參閱[使用 Microsoft Intune 管理適用於 iOS 的 Outlook 應用程式](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx) \(機器翻譯\)。
 
 ## <a name="configuration-values-for-using-tokens"></a>使用權杖的設定值
 

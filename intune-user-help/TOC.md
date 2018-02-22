@@ -150,3 +150,4 @@
 #### [我需要開啟 Windows Defender](turn-on-defender-windows.md)
 
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
+### [從遠端鎖定裝置](remote-lock-your-device-cpwebsite.md)

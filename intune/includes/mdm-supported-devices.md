@@ -7,7 +7,7 @@
 ### <a name="google"></a>Google
 - Android 4.4 及更新版本 (包括 Samsung Knox Standard 4.4 及更新版本)
 
-  您可以在 [Android 和 Samsung Knox Standard 原則設定](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)中，找到已驗證 Samsung Knox Standard 裝置的完整清單。
+  您可以在 [Android 和 Samsung Knox Standard 原則設定](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)中，找到已驗證 Samsung Knox Standard 裝置的完整清單。
 
 
 - Android for Work [(需求)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
@@ -18,9 +18,9 @@
 - Windows 10 Mobile
 - Windows 10 IoT 企業版 (x86、x64)
 - Windows 10 IoT 行動裝置企業版
-- Windows 全像攝影版和 Windows 全像攝影企業版
+- Windows Holographic for Business
 
-  如需管理 Microsoft HoloLens 裝置的資訊，請參閱[在 MDM 中註冊 HoloLens](https://docs.microsoft.com/hololens/hololens-enroll-mdm)。
+  如需管理執行 Windows Holographic for Business 之裝置的詳細資訊，請參閱 [Window Holographic for Business 支援](../windows-holographic-for-business.md)。
 
 - Windows Phone 8.1、Windows 8.1 RT、執行 Windows 8.1 (基本維護模式) 的電腦
 

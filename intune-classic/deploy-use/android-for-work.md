@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 17c066ee7208790a591272ae5e1edc99cf2141a4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 裝置
 
@@ -82,7 +82,7 @@ Android 管理可使用的相同憑證設定檔設定選項，Android for Work �
 
 當裝置從 Intune 汰除並刪除了公司設定檔之後，會移除 Android for Work 所管理的 Wi-Fi 設定檔。 深入了解 [Wi-Fi 設定檔](wi-fi-connections-in-microsoft-intune.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [啟用 Android for Work 註冊](/intune-classic/deploy-use/set-up-android-for-work)
 
 [部署 Android for Work 應用程式](/intune-classic/deploy-use/android-for-work-apps)

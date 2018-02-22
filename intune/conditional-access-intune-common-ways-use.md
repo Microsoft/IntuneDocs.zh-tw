@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff3c5c077c9d67c667c7f3a53326e555a1cce92
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>透過 Intune 使用條件式存取的常見方式
 
@@ -52,7 +52,7 @@ Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合
 
 若已套用裝置合規性政策和條件式存取原則，即會檢查任何用來存取 Exchange 內部部署之裝置的合規性。
 
-若裝置不符合條件設定，將逐步引導使用者進行註冊裝置的程序，以修正使裝置不符合規範的問題。
+若裝置不符合條件設定，將逐步引導使用者進行註冊裝置的程序，以修正使裝置不相容的問題。
 
 #### <a name="how-conditional-access-for-exchange-on-premises-works"></a>Exchange 內部部署的條件式存取如何運作
 

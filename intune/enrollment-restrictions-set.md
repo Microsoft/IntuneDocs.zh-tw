@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/25/2018
 >註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。
 
 >[!NOTE]
->正陸續針對所有 Intune 客戶推出以下所述的群組指派註冊限制和優先權功能。 全部推出後，您可能無法存取群組，也沒有優先權功能。 
+>正陸續針對所有 Intune 客戶推出以下所述的群組指派註冊限制和優先權功能。 全部推出後，您可能無法存取群組，也沒有優先權功能。
 
 您可以建立的特定註冊限制包括：
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/25/2018
   - Android 和 Android for Work 支援 major.minor.rev.build。
   - iOS 支援 major.minor.rev。
   - Windows 支援 major.minor.rev.build，僅限 Windows 10。
-  作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。 
+  作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
 8. 指定要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
 
     ![顯示設定 [個人所擁有] 設定之預設裝置平台設定的裝置限制工作區螢幕擷取畫面。](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ ms.lasthandoff: 01/25/2018
     ![有裝置數量限制之 [device limit restrictions] (裝置數量限制) 刀鋒視窗的螢幕擷取畫面。](./media/device-restrictions-limit.png)
 6. 按一下 **[儲存]**。
 
+您的使用者會看到通知，告訴他們何時符合其已註冊裝置的限制。 例如，在 iOS 上，它看起來會像這樣：
+
+![iOS 裝置限制通知的螢幕擷取畫面](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>變更註冊限制優先順序
 
-當使用者屬於多個指派限制的群組時，會使用優先順序。 使用者只受制於所屬群組被指派的最高優先順序限制。 例如，Joe 屬於指派了優先順序 5 限制的群組 A 與指派了優先順序 2 限制的群組 B。 Joe 只受制於優先順序 2 限制。 
+當使用者屬於多個指派限制的群組時，會使用優先順序。 使用者只受制於所屬群組被指派的最高優先順序限制。 例如，Joe 屬於指派了優先順序 5 限制的群組 A 與指派了優先順序 2 限制的群組 B。 Joe 只受制於優先順序 2 限制。
 
 當您建立一項限制時，它會新增至清單，剛好高預設值一階。
 
-裝置註刪包括裝置類型和裝置限制的預設限制。 除非為更高的優先順序限制所覆寫，否則這兩項限制適用於所有使用者。 
+裝置註刪包括裝置類型和裝置限制的預設限制。 除非為更高的優先順序限制所覆寫，否則這兩項限制適用於所有使用者。
 
-您可以變更任何非預設限制的優先順序。 
+您可以變更任何非預設限制的優先順序。
 
 **變更限制優先順序**
 
@@ -120,8 +124,3 @@ ms.lasthandoff: 01/25/2018
 3. 選擇 [裝置註冊] > [註冊限制]。
 4. 將滑鼠停留在優先順序清單的限制上。
 5. 使用三個垂直點，將優先順序拖曳到所要的清單位置。
-
-
-
-
-

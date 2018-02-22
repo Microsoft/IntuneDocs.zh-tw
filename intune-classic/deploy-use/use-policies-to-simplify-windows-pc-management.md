@@ -14,11 +14,11 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d67bf344be7a20853e21cf580939f1156d1a723
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: dc32063a952b198e830f061e0d8d3c0598a631d8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用原則來簡化 Windows 電腦管理
 
@@ -43,7 +43,7 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 
 |原則設定|詳細資料|
 |------------------|--------------------|
-|**Name**|管理電腦的系統管理員名稱。<br />最大長度：40 個字元|
+|**名稱**|管理電腦的系統管理員名稱。<br />最大長度：40 個字元|
 |**電話號碼**|管理電腦之系統管理員的電話號碼。<br />最大長度：20 個字元|
 |**電子郵件地址**|管理電腦之系統管理員的電子郵件地址。<br />最大長度：40 個字元|
 |**網站名稱**|使用者支援網站的名稱。<br />最大長度：40 個字元|
@@ -52,13 +52,13 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 
 請參閱下列資源以取得您可以為 Windows 電腦設定之原則和設定的相關資訊︰
 
-- [在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 這些原則會讓受管理的電腦檢查軟體更新，並從 Microsoft 和協力廠商下載軟體更新。 這些更新不包括 OS 升級 (例如從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。
+- [在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 這些原則會讓受控的電腦檢查軟體更新，並從 Microsoft 和協力廠商下載軟體更新。 這些更新不包括 OS 升級 (例如從 Windows 7 升級為 Windows 10，或將一種 Windows 10 版本升級為更新版本)。
 
 - [使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - 這些設定包括掃描排程，以及偵測到惡意程式碼時要採取的動作。
 
 - [在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 這些原則可簡化受管理電腦上的 Windows 防火牆設定管理。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

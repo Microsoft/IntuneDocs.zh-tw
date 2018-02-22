@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
 
@@ -33,6 +31,8 @@ ms.lasthandoff: 01/25/2018
 2. 將設定檔指派給此群組，包含所有 iOS 裝置的使用者。
 3. 使用者即可在其裝置上的無線網路清單中找到此新的 Contoso Wi-Fi 網路，且可輕鬆地連線到該網路。
 
+## <a name="supported-device-platforms"></a>支援的裝置平台
+
 Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
@@ -40,7 +40,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 - iOS 8.0 和更新版本
 - macOS (Mac OS X 10.9 及更新版本)
 
-對於執行 Windows 8.1、Windows 10 以及 Windows 10 行動裝置版的裝置，可以匯入先前從其他裝置所匯出的 Wi-fi 設定。
+對於執行 Windows 8.1、Windows 10、Windows 10 行動裝置版和 Windows Holographic for Business 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。
 
 使用本主題中的資訊，可深入了解設定 Wi-Fi 設定檔的相關基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
 
@@ -58,13 +58,22 @@ Wi-Fi 設定檔支援下列裝置平台：
     - **iOS**
     - **macOS**
     - **Windows 8.1 及更新版本 (匯入設定檔)**
-6. 從 [設定檔類型] 下拉式清單中，選擇 [Wi-Fi Basic] 或 [Wi-Fi Enterprise]。 您可以使用 **Wi-Fi Basic** 提供基本功能，像是網路名稱以及 SSID。 您可利用 **Wi-Fi Enterprise** 提供更進階的資訊，像是「可延伸的驗證通訊協定 (EAP)」(如果您的 Wi-Fi 網路使用此)。 您可利用 **Wi-Fi 匯入** (適用於 Windows 8.1 與 Windows 10)，將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
-7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+
+   > [!IMPORTANT]
+   > 如果您要為執行 Windows 10 (包括 Windows Holographic for Business) 的裝置建立設定檔，您必須選擇 **Windows 8.1 和更新版本**平台。 **Windows 10 和更新版本**平台不包含 Wi-Fi 設定檔類型。 
+
+6. Apple 或 Android 裝置請在 [WiFi type] (WiFi 類型) 下拉式清單中選擇 [基本] 或 [企業]。 您可以使用 [基本] 提供基本功能，像是網路名稱以及 SSID。 [企業] 可讓您提供更進階的資訊，像是可延伸的驗證通訊協定 (EAP)，如果您的 Wi-Fi 網路使用此項目。 
+
+   **Wi-Fi 匯入**設定檔 (適用於 Windows 8.1 與更新版本) 可讓您將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
+1. 您可設定的設定值隨您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
     - [Android 和 Android for Work 設定](wi-fi-settings-android.md)
     - [iOS 設定](wi-fi-settings-ios.md)
     - [macOS 設定](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1 設定](wi-fi-settings-import-windows-8-1.md)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+    - [Windows 8.1 和更新版本設定](wi-fi-settings-import-windows-8-1.md) (包括 Windows Holographic for Business)
+1. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+
+## <a name="next-steps"></a>接下來的步驟
+
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
