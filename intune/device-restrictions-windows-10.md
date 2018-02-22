@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -268,7 +268,7 @@ ms.lasthandoff: 02/01/2018
 
       - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
-    多個應用程式的 kiosk 需要 kiosk 設定。 使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
+    [多個應用程式的 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) 需要 kiosk 設定。 使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
 
     多個應用程式的 kiosk 設定包括下列設定：
 

@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定自訂裝置設定
 
@@ -47,14 +45,15 @@ ms.lasthandoff: 01/25/2018
     - **Windows Phone 8.1**
     - **Windows 10 及更新版本**
 6. 從 [設定檔] 類型下拉式清單中選擇 [自訂]。
-7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+7. 您可設定的設定值隨您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
     - [Android 設定](custom-settings-android.md)
     - [iOS 設定](custom-settings-ios.md)
     - [macOS 設定](custom-settings-macos.md)
     - [Windows Phone 8.1 設定](custom-settings-windows-phone-8-1.md)
     - [Windows 10 設定](custom-settings-windows-10.md)
+    - [Windows Holographic for Business 設定](custom-settings-windows-holographic.md)
     - [Android for Work 設定](custom-settings-android-for-work.md)
 8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="compliance-issues"></a>相容性問題
 
  -  裝置不符合 Intune 原則。 常見的問題是加密與密碼的需求。 使用者會被重新導向到公司入口網站，在這裡他們可以設定其裝置，讓它相容。
- -  可能需要一些時間，來註冊裝置的相容性資訊。 請稍候幾分鐘，然後再試一次。
+ -  可能需要一些時間，來註冊裝置的合規性資訊。 請稍候幾分鐘，然後再試一次。
  -  對於 iOS 裝置：
      -   使用者建立的現有電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者，他們因為手動設定電子郵件設定檔而不相容，並且會提示使用者移除該設定檔。使用者應該移除其電子郵件設定檔，以便可以部署 Intune 設定檔。 若要避免問題，請指示使用者進行註冊，而不要安裝電子郵件設定檔，並允許 Intune 部署設定檔。
      -   iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
@@ -90,7 +90,7 @@ ms.lasthandoff: 10/10/2017
 - 檢查 Exchange Connector 記錄檔中的 sendemail 活動，並檢查是否有錯誤。 所要搜尋命令的範例是從通知帳戶至 useremail 的 SendEmail。
 - Exchange Connector 封鎖裝置之前，它會傳送啟用電子郵件。 如果裝置已離線，它可能不會收到啟用電子郵件。 檢查裝置的電子郵件用戶端是否使用推送來擷取電子郵件，而不是輪詢，因為這也會造成使用者遺漏電子郵件。 切換到輪詢後，再查看裝置是否收到電子郵件。
 
-## <a name="non-compliant-device-not-blocked"></a>未封鎖不相容的裝置
+## <a name="noncompliant-device-not-blocked"></a>未封鎖不相容的裝置
 
 如果您遇到不相容但可以繼續存取的裝置，請採取下列步驟。
 
@@ -151,5 +151,5 @@ ms.lasthandoff: 10/10/2017
 
 
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。

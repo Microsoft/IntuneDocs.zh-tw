@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -49,6 +49,9 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
 
 ## <a name="add-android-for-work-binding-for-intune"></a>新增 Intune 的 Android for Work 繫結
 
+> [!NOTE]
+> 因為 Google 和 Microsoft 網域之間的互動，這個步驟可能需要調整瀏覽器設定，才能順利完成。  請確認 "portal.azure.com" 和 "play.google.com" 位於您瀏覽器中相同的安全性區域。
+
 1. **設定 Intune MDM**<br>
 如果尚未這麼做，請將[行動裝置管理授權單位](mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
 2. **設定 Android for Work 繫結**<br>
@@ -64,11 +67,10 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
    提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 **Microsoft Intune**。 同意 Android for Work 合約，然後選擇 [確認]。 您的要求將會被處理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 註冊設定
-   只有特定 Android 裝置才支援 Android for Work。 請參閱 Google 的[使用 Android for Work 的必備條件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。 支援 Android for Work 的所有裝置也會支援傳統 Android 管理。 Intune 可讓您指定應該如何管理支援 Android for Work 的裝置：
+只有特定 Android 裝置才支援 Android for Work。 請參閱 Google 的[使用 Android for Work 的必備條件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)。 支援 Android for Work 的所有裝置也會支援傳統 Android 管理。 Intune 可讓您指定應如何從[註冊限制](enrollment-restrictions-set.md)管理支援 Android for Work 的裝置。
 
-   - **將所有裝置當成 Android 管理**。 所有 Android 裝置 (包括支援 Android for Work 的裝置) 都會註冊為傳統 Android 裝置。
-   - **將支援的裝置當成 Android for Work 管理**。 所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置會註冊為傳統 Android 裝置。
-   - **將這些使用者群組中僅限使用者的受支援裝置當成 Android for Work 管理**。 您可將 Android for Work 管理的目標設為一組有限的使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。 這在 Android for Work 試驗期間會很有用。
+- **封鎖 (預設設定)**：所有 Android 裝置 (包括支援 Android for Work 的裝置) 都會註冊為傳統 Android 裝置。
+- **允許**：所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置會註冊為傳統 Android 裝置。
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>在受控的 Google Play 商店中核准公司入口網站應用程式
 您需要在受控的 Google Play 商店中核准 Android 公司入口網站應用程式，以確保它會接收自動的應用程式更新。 如果不核准，公司入口網站最後會過時，不能接收 Microsoft 發行的重要 Bug) 修正或新功能。

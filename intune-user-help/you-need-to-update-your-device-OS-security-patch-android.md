@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>您必須更新 Android 裝置的作業系統
 
-如果您看到訊息顯示「未設定 Android 安全性修補程式等級下限」，您就需要安裝更新以確保裝置保持安全。 發行「修補程式」的目的是要維護軟體，使軟體運作順暢並保持在最新狀態。 您公司的支援人員會要求您安裝此修補程式，以確保裝置上的公司資料盡可能受到保護。 您所需安全性修補程式的位置會依您是否擁有特定類型的 Samsung 裝置而改變。
+如果您看到訊息顯示「未設定 Android 安全性修補程式等級下限」，您就需要安裝更新以確保裝置保持安全。 發行「修補程式」的目的是要維護軟體，使軟體運作順暢並保持在最新狀態。 您公司的支援人員會要求您安裝此修補程式，以確保裝置上的公司資料盡可能受到保護。 您需要的安全性修補程式位置會隨您擁有的 Android 裝置類型而改變。
 
 如果是 Samsung 裝置，請移至 [設定] > [關於手機]，然後檢查畫面上是否有任何 "Knox" 文字。 如果有，請遵循下面 Samsung Knox 的指示。
 

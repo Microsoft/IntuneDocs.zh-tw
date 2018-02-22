@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune 設定原則參考
 
@@ -113,10 +113,10 @@ Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**�
 
 |原則名稱|當您想要執行此作業時使用|
 |---------------|------------------------|
-|**Microsoft Intune 代理程式設定**|設定電腦上的 Intune PC 用戶端，包括下列項目的設定：<br /><br />-   Endpoint Protection<br />-   軟體更新<br />-   原則檢查排程<br /><br />這類型的原則只能部署到裝置群組。<br /><br />Intune 用戶端可根據 **[更新和應用程式偵測頻率]** 設定下載新的和更新過的原則，預設為 8 小時。 不過，您可以隨時在電腦上強制重新整理原則。<br /><br />如需詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。|
+|**Microsoft Intune 代理程式設定**|設定電腦上的 Intune PC 用戶端，包括下列項目的設定：<br /><br />-   Endpoint Protection<br />-   軟體更新<br />-   原則檢查排程<br /><br />這類型的原則只能部署到裝置群組。<br /><br />Intune 用戶端可根據 **[更新和應用程式偵測頻率]** 設定下載新的和更新過的原則，預設為 8 小時。 不過，您可以隨時在電腦上強制重新整理原則。<br /><br />如需詳細資料，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。|
 |**Microsoft Intune Center 設定**|設定要出現在受管理電腦上之 Microsoft Intune 中心中的詳細資料。<br /><br />這類型的原則只能部署到裝置群組。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。|
 |**Windows 防火牆設定**|設定電腦上一般網路通訊的 Windows 防火牆設定和例外，包括：<br /><br />-   BranchCache<br />-   遠端協助<br />-   媒體共用<br /><br />這類型的原則只能部署到裝置群組。<br /><br />如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。|
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

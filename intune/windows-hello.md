@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企業版
 
@@ -43,7 +41,7 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 >在年度更新版中，這兩個 PIN 已經合併成一個單一的裝置 PIN 。
 任何您設定來控制裝置 PIN 的 Intune 設定原則，以及您所設定的 Windows Hello 企業版原則，現在都會設定此一新 PIN 值。
-如果您將這兩種原則都設定成可以控制該 PIN，則 Windows Hello 企業版原則將會套用到 Windows 10 電腦和行動裝置。
+如果您將這兩種原則都設定成可以控制該 PIN，則 Windows Hello 企業版原則會套用到 Windows 10 Desktop 和行動裝置。
 若要確保解決原則衝突，且正確套用 PIN 原則，請更新您的 Windows Hello 企業版原則，以符合您設定原則中的設定，並要求使用者在「公司入口網站」App 中同步他們的裝置。
 
 
@@ -62,7 +60,7 @@ Intune 以兩種方式與 Hello 企業版整合：
 
     - **Disabled**。 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法停用。
     - **Enabled**。 如果您想要設定 Windows Hello 企業版設定，請選取此設定。
-    - **未設定**。 如果您不想要使用 Intune 來控制 Windows Hello 企業版設定，請選取此設定。 將不會變更 Windows 10 裝置上任何現有的 Windows Hello 企業版設定。 刀鋒視窗上的所有其他設定，都無法使用。
+    - **未設定**。 如果您不想要使用 Intune 來控制 Windows Hello 企業版設定，請選取此設定。 不會變更 Windows 10 裝置上任何現有的 Windows Hello 企業版設定。 刀鋒視窗上的所有其他設定，都無法使用。
 
 6.  如果在前一步驟選取了 [已啟用]，請設定會套用到所有已註冊之 Windows 10 與 Windows 10 行動裝置版裝置所需的設定。
 
@@ -94,6 +92,18 @@ Intune 以兩種方式與 Hello 企業版整合：
 
  - **使用電話登入**。 若此選項設為 [是]，使用者即可使用遠端 Passport 作為桌上型電腦驗證的可攜式配套裝置。 桌上型電腦必須已加入 Azure Active Directory，且配套裝置必須設有 Windows Hello 企業版的 PIN。
 
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
+
+Windows Holographic for Business 支援下列 Windows Hello 企業版設定：
+
+- 使用信賴平台模組 (TPM)
+- PIN 長度下限
+- PIN 長度上限
+- PIN 中的小寫字母
+- PIN 中的大寫字母
+- PIN 中的特殊字元
+- PIN 碼到期 (天數)
+- 記住 PIN 碼歷程記錄
 
 ## <a name="further-information"></a>進一步資訊
 如需 Microsoft Passport 的詳細資訊，請參閱 Windows 10 文件中的[指南](https://technet.microsoft.com/library/mt589441.aspx)。

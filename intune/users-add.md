@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 01/25/2018
 - **使用者管理員** - (Office 365 和 Intune) 重設密碼、監控服務健全狀況、新增和刪除使用者帳戶和管理服務要求。 使用者管理管理員無法刪除全域管理員、建立其他管理員角色，或重設其他管理員的密碼。
 - **Intune 服務管理員** - 除了使用 [目錄角色] 選項建立系統管理員之權限以外的所有 Intune 全域管理員權限。
 
-您用來建立 Microsoft Intune 訂閱的帳戶即為全域管理員。 最佳做法是不要使用全域管理員進行日常管理工作。 系統管理員不需要 Intune 的授權即可存取 Azure 入口網站。 
+您用來建立 Microsoft Intune 訂閱的帳戶即為全域管理員。 最佳做法是不要使用全域管理員進行日常管理工作。 雖然系統管理員不需要 Intune 授權即可存取 Azure 入口網站上的 Intune，但為執行某些管理工作，例如設定 Exchange 服務連接器則需要 Intune 授權。 
 
 若要存取 Office 365 入口網站，您的帳戶必須已設定 [允許登入]。 在 Azure 入口網站的 [設定檔] 下，將 [封鎖登入] 設定為 [否] 以允許存取。 此狀態與獲得訂閱的授權有所區別。 根據預設，所有使用者帳戶的狀態均為 [已允許]。 沒有系統管理員權限的使用者可以使用 Office 365 入口網站來重設 Intune 密碼。
 

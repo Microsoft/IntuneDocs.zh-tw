@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>行動應用程式管理疑難排解
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 10/10/2017
 
 這些是 IT 管理員在使用 Intune 應用程式保護原則時經常碰到的問題。
 
-| 問題 | 說明 | 解決方法 |
+| 問題 | 說明 | 解決方案 |
 | -- | -- | -- |
 | 原則未套用至商務用 Skype | 在 Azure 入口網站中設定的無裝置註冊應用程式保護原則，未套用至 iOS 和 Android 裝置上的商務用 Skype。 | 商務用 Skype 必須設定使用新式驗證。  請依照 [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (啟用租用戶的新式驗證) 中的指示，設定 Skype 的新式驗證。 |
 | 未套用 office 應用程式原則 | 應用程式保護原則不適用於任何使用者的任何[支援的 Office 應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 確認使用者已獲得 Intune 授權，且部署的應用程式保護原則已將 Office 應用程式設為目標。 新部署的應用程式保護原則可能需要最多 8 小時才會套用。 |
@@ -105,14 +105,14 @@ Android | **需要公司入口網站**：您必須安裝 Intune 公司入口網�
 **找不到任何應用程式**：此裝置上沒有您公司允許用來開啟此內容的任何應用程式。 如需協助，請連絡 IT 系統管理員。 | 使用者嘗試以其他應用程式開啟工作或學校資料，但 Intune 找不到任何其他已允許可開啟該資料之受管理的應用程式。 | 請確認已將 Android 應用程式保護原則部署到該使用者的安全性，並且至少將另一個支援 MAM 且開啟資料有問題的應用程式設為目標。
 **登入失敗**：請嘗試重新登入。 如果此問題持續發生，請連絡您的 IT 系統管理員尋求協助。 | 無法驗證使用者嘗試登入的帳戶。 | 請確認使用者是使用已經向 MAM 服務註冊的工作或學校帳戶登入 (第一個登入此應用程式的工作或學校帳戶)。 <br><br> 清除應用程式的資料。 <br><br> 請確認應用程式為最新版。 <br><br> 請確認公司入口網站為最新版。
 **需要網際網路連線**：您必須連線至網際網路，以驗證您是否可使用此應用程式。 | 裝置未連線至網際網路。 | 請將裝置連線至 WiFi 或資料網路。
-**裝置不符合規範**無法使用此應用程式，因為您是使用已進行 Root 破解的裝置。 如需協助，請連絡 IT 系統管理員。 | Intune 偵測到使用者是在已進行 Root 破解的裝置上。 | 將裝置重設為原廠設定。
+**裝置不相容**：無法使用此應用程式，因為您使用的是已進行 Root 破解的裝置。 如需協助，請連絡 IT 系統管理員。 | Intune 偵測到使用者是在已進行 Root 破解的裝置上。 | 將裝置重設為原廠設定。
 **帳戶未設定**：此應用程式必須由 Microsoft Intune 管理，但您的帳戶尚未設定。 如需協助，請連絡 IT 系統管理員。 | 該使用者帳戶沒有 Intune A Direct 授權。 | 請確認使用者的帳戶具有在 [Office 入口網站](http://portal.office.com)中指派的 Intune 授權。
 **無法登錄應用程式**：此應用程式必須由 Microsoft Intune 管理，但我們目前無法註冊此應用程式。 如需協助，請連絡 IT 系統管理員。 | 當應用程式保護原則為必要條件時，無法自動向 MAM 服務註冊應用程式。 | 清除應用程式的資料。 <br><br> 請使用入口網站應用程式將記錄傳送至 Intune，或在[這裡](how-to-get-support-for-microsoft-intune.md)建立支援票證。
 
 
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 - [驗證您的行動應用程式管理設定](../deploy-use/validate-mobile-application-management.md)
 - [準備使用 Microsoft Intune 設定行動應用程式管理原則](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)

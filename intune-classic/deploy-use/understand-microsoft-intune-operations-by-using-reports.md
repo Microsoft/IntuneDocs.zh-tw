@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>透過報表來了解 Microsoft Intune 作業
 
@@ -32,7 +32,7 @@ Intune 報表提供有關貴組織中硬體、軟體和授權的資訊。 報表
 
 ## <a name="report-types"></a>報表類型
 
-|報表類型|描述|
+|報表類型|說明|
 |---------------|---------------|
 |**更新報表**|顯示在您組織電腦上成功的軟體更新。 並且顯示失敗、待決或需要的更新。 如需軟體更新的詳細資訊，請參閱[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。|
 |**軟體清查報表**|顯示安裝於您組織電腦上的軟體。 包含軟體版本。 您可以篩選依照軟體發行者和軟體類別顯示的資訊。 您可以選擇清單項目旁的方向箭頭，展開清單中的更新以顯示更多詳細資料 (例如安裝更新的電腦)。<br /><br />當您在 Intune 中淘汰電腦或變更其群組成員資格時，可能需要幾分鐘的時間，這些變更才會反映在軟體清查報表中。 如需最正確的軟體清查資料，請在淘汰電腦或變更其群組成員資格之後稍候數分鐘，然後再執行包含這些電腦的軟體清查報表。|

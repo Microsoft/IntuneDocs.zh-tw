@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -125,9 +125,11 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="before-you-begin"></a>開始之前
 
-WIP 學習是一種報表，可讓您監視 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「封鎖」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
+WIP 學習是一種報表，可讓您監視啟用 WIP 的應用程式與 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「封鎖」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
 
-您應該利用一小群使用者來驗證允許的應用程式清單中是否有正確的應用程式。驗證時，建議先使用「無訊息」或「允許覆寫」模式。 完成之後，您就可以變更為最終強制原則**封鎖**。
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+當使用啟用 WIP 的應用程式和 WIP 未知的應用程式時，建議您先使用 [無訊息] 或 [允許覆寫]，同時利用一小群使用者確認允許應用程式清單上的具有正確的應用程式。 完成之後，您就可以變更為最終強制原則**封鎖**。
 
 ### <a name="what-are-the-protection-modes"></a>什麼是保護模式？
 

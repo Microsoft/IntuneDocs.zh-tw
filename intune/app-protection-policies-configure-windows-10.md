@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/25/2018
     MAM 服務註冊端點的 URL。 註冊端點用來註冊裝置，以使用 MAM 服務進行管理。
 
     **MAM 合規性 URL**  
-      MAM 服務的合規性端點的 URL。 當使用者從不符合規範的裝置存取資源遭拒時，將會對該使用者顯示此合規性 URL。 使用者可以瀏覽至 MDM 服務主控的此 URL，了解他們的裝置被視為不符合規範的原因。 使用者也可起始自助式補救，讓裝置變為符合規範，以繼續存取資源。
+      MAM 服務的合規性端點的 URL。 當使用者從不相容的裝置存取資源遭拒時，將會對該使用者顯示此合規性 URL。 使用者可以巡覽至由 MDM 服務主控的此 URL，了解他們的裝置被視為不相容的原因。 使用者也可起始自助式補救，讓裝置變為符合規範，以繼續存取資源。
 
 5.  按一下 **[儲存]**。
 

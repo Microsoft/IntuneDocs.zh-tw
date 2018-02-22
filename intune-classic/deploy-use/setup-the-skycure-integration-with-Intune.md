@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba03621015d7bbf9a141e57e0fde71561ef94f72
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c981d6fb927d29f0d450c5c7571933626897b4f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>設定 Skycure 與 Intune 整合
 
@@ -39,7 +39,7 @@ Skycure 支援兩種與 Intune 整合的模式：
 
 -   **唯讀整合 (基本設定)：**僅清查來自 Azure Active Directory 的裝置，並將它們填入 Skycure 主控台。
 <br>
-    -   如果未在 Skycure 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險] 和 [也向 Intune 報告安全性事件] 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
+    -   如果未在 Skycure 管理主控台中選取 [Report the health and risk of devices to Intune] (向 Intune 報告裝置的健全狀況和風險) 和 [Also report security incidents to Intune] (也向 Intune 報告安全性事件) 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (相容或不相容)。
 <br></br>
 -   **完整整合：**允許 Skycure 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
 
@@ -107,6 +107,6 @@ Skycure 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 安
 
     ![完成的 Skycure 完整整合](../media/mtp/skycure-setup-6.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [在 Intune 中啟用 Skycure Mobile Threat Defense (英文)](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)

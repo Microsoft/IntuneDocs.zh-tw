@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0db27bb8f83c7183b411705b16bbb9ad4d357e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: beaf027334ce4929e4ca824b2b7e199cea22a832
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>設定 Skycure 與 Intune 整合
 
@@ -37,7 +37,7 @@ Skycure 支援兩種與 Intune 整合的模式：
 
 -   **唯讀整合 (基本設定)：**僅清查來自 Azure Active Directory 的裝置，並將它們填入 Skycure 主控台。
 <br>
-    -   如果未在 Skycure 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險] 和 [也向 Intune 報告安全性事件] 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
+    -   如果未在 Skycure 管理主控台中選取 [Report the health and risk of devices to Intune] (向 Intune 報告裝置的健全狀況和風險) 和 [Also report security incidents to Intune] (也向 Intune 報告安全性事件) 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (相容或不相容)。
 <br></br>
 -   **完整整合：**允許 Skycure 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
 

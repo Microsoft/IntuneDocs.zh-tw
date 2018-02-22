@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dc50fe1018bae0c13ddba51e5351f463d0ec1c8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0c2ebbe451f83dc14a9294c78a21ecfd30e5d155
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung Knox Standard 裝置限制設定
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/25/2018
 
 針對每個設定，使用下列其中一項來設定應用程式清單：
 
-- **依套件名稱新增應用程式**：主要用於商務營運應用程式。 輸入應用程式名稱，以及應用程式套件的名稱。
+- **依套件名稱新增應用程式**：主要用於企業營運應用程式。 輸入應用程式名稱，以及應用程式套件的名稱。
 - **依 URL 新增應用程式**：輸入應用程式名稱，及其在 Google Play 商店中的 URL。
 - **新增受管理的應用程式**：從您使用 Intune 管理的應用程式清單，選取您需要的應用程式。
 

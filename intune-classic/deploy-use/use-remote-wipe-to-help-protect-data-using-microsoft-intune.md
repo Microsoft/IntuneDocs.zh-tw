@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>協助透過使用 Microsoft Intune 的完整或選擇性抹除來保護您的資料
 
@@ -111,9 +111,9 @@ ms.lasthandoff: 10/10/2017
 |-------------|-----------|------------------------|
 |網頁連結|已移除。|已移除。|
 |未受管理的 Google Play 應用程式|應用程式和資料仍會保持安裝。|應用程式和資料仍會保持安裝。|
-|未受管理的企業營運應用程式|應用程式和資料仍會保持安裝。|最後會將應用程式解除安裝並移除應用程式的本機資料。 未移除應用程式外 (例如 SD 記憶卡上) 的任何資料。|
+|非受控企業營運應用程式|應用程式和資料仍會保持安裝。|最後會將應用程式解除安裝並移除應用程式的本機資料。 未移除應用程式外 (例如 SD 記憶卡上) 的任何資料。|
 |受管理的 Google Play 應用程式|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態且無法使用，但未移除。|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態，但未移除。|
-|受管理的企業營運系統應用程式|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態且無法使用，但未移除。|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態且無法使用，但未移除。|
+|非受控企業營運應用程式|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態且無法使用，但未移除。|將會移除應用程式資料。 應用程式不會移除。 應用程式外 (例如 SD 記憶卡上) 受 MAM 加密保護的資料仍維持加密狀態且無法使用，但未移除。|
 |設定|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|由 Intune 原則所設定的設定不再是強制性，而且可由使用者進行變更。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
@@ -166,7 +166,7 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 
 此報表也會顯示執行此動作的人員。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (裝置資料管理的 Windows 選擇性抹除)

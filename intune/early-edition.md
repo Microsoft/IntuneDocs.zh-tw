@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d4bcabc4d1af4554a3e3bea875be45f9376b4ef7
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>舊版 Microsoft Intune - 2018 年 2 月
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/29/2018
 此頁面會定期更新。 請回來查看其他更新。
 
 > [!Note]
->下列變更正在 Intune 的開發過程中。 如需新混合式功能的詳細資訊，請查看我們的[混合式新增功能](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)頁面。
+>下列變更正在 Intune 的開發過程中。 如需新混合式功能的詳細資訊，請參閱[混合式新功能頁面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
 <!--
 ## What's coming to Intune in the Azure portal  
@@ -41,6 +41,8 @@ ms.lasthandoff: 01/29/2018
 
 <!-- 1802 start -->
 
+### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止終端使用者在工作設定檔中新增或移除帳戶 <!-- 1728700 -->    
+當您將 Gmail 應用程式部署到 Android for Work 設定檔時，您將可使用 Android for Work 裝置限制設定檔中的 [Add and remove accounts] (新增與移除帳戶) 設定，防止終端使用者在工作設定檔中新增或移除帳戶。
 
 ### <a name="app-protection-policies-----679615---"></a>應用程式防護原則 <!-- 679615 -->
 Intune 應用程式防護原則能提供建立全域預設原則的能力，以針對整個租用戶中的所有使用者快速啟用保護。
@@ -76,11 +78,11 @@ Intune 可支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DE
 您可以使用十六進位碼自訂公司入口網站應用程式的佈景主題色彩。 當您輸入您的十六進位碼時，Intune 會決定文字色彩，依 [WCAG 2.0 標準](http://www.w3.org/TR/WCAG20)提供文字色彩和背景色彩之間的最高階對比。 您可以在 [Mobile Apps] > **[公司入口網站]** 中預覽文字色彩和公司標誌的色彩。 
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 --> 
-如果您已啟用[裝置群組對應](https://docs.microsoft.com/en-us/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
+如果您已啟用[裝置群組對應](https://docs.microsoft.com/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>新增至 Endpoint Protection 設定的新 Windows Defender Credential Guard 設定 <!--1102252 --> 
 
-新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定會新增至 [裝置設定] > **[設定檔]** > **[Endpoint Protection]**。 會新增下列設定： 
+新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定會新增至 **[裝置設定]** > **[設定檔]** > **[Endpoint Protection]**。 會新增下列設定： 
 
 - 平台安全性層級：指定下次重新開機時是否啟用平台安全性層級。 虛擬化型安全性需要安全開機。 使用直接記憶體存取 (DMA) 保護，可以選擇性啟用虛擬化型安全性。 DMA 保護需要硬體支援，而且只能在正確設定的裝置上啟用。
 - 虛擬化型安全性：指定下次重新開機時是否啟用虛擬化型安全性。 
@@ -214,50 +216,20 @@ Intune 可支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DE
 移轉之後，透過 Graph 來管理 Apple DEP 或 ASM 的搶鮮版 (Beta) Graph API 與發佈的指令碼將無法再運作。 新的搶鮮版 (Beta) Graph API 正在開發，將會在移轉後發行。
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 -->
-如果您已啟用[裝置群組對應](https://docs.microsoft.com/en-us/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
+如果您已啟用[裝置群組對應](https://docs.microsoft.com/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>讓合規性原則以裝置群組中的裝置為目標 <!--1307012 -->
 
 您可以讓合規性原則以使用者群組中的使用者為目標。 您可以讓合規性原則以裝置群組中的裝置為目標。
 
-### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>依據群組來包含和排除應用程式指派 <!-- 1406920 -->
-
-應用程式指派期間和選取指派類型之後，您將能選取要包含的群組，以及要排除的群組。
-
-### <a name="remote-erase-command-support----1438084---"></a>遠端「清除」命令支援 <!-- 1438084 -->
-
-系統管理員可以從遠端發出清除命令。
-
-> [!IMPORTANT]
-> 清除命令無法回復，應該謹慎使用。
-
-清除命令會從裝置移除所有資料，包括作業系統。 這樣做也會從 Intune 管理移除裝置。 系統不會向使用者發出任何警告，且將在發出命令之際，立即開始清除。
-
-您可以設定 6 位數的復原 PIN。 此 PIN 可用來將已清除的裝置解除鎖定，並開始重新安裝作業系統。 開始進行清除後，PIN 會出現在 Intune 中裝置 [概觀] 刀鋒視窗的狀態列上。 在清除進行期間，PIN 會持續顯示。 完成清除後，裝置會完全從 Intune 管理中消失。 請務必記錄復原 PIN，以供還原裝置的人員來使用。
-
 ### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜尋結果中的 Windows 資訊保護 (WIP) 加密資料 <!-- 1469193 -->
 
 Windows 資訊保護 (WIP) 原則中的新設定可讓您控制 Windows 搜尋結果是否包含 WIP 加密資料。
 
-### <a name="website-learning-mode----1631908---"></a>網站學習模式 <!-- 1631908 -->
-
-Intune 將引入 Windows 資訊保護 (WIP) 學習模式的延伸模組。 除了檢視已啟用 WIP 的應用程式相關資訊以外，您也能檢視與網站共用工作資料之裝置的摘要。 您可以藉由這項資訊，決定哪些網站應該加入群組和使用者 WIP 原則。
-
-### <a name="updates-to-compliance-emails---1637547---"></a>更新合規性電子郵件 <!--1637547 -->
-
-當傳送電子郵件以回報不符合規範的裝置時，電子郵件會包含不符合規範的裝置相關詳細資料。 下列文章將會更新以指示這項事實：[針對不符合規範的自動化動作](#actions-for-noncompliance)。
-
-###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>過期的權杖與即將過期之權杖的警示 <!-- 1639263 -->
-[概觀] 頁面會顯示過期的權杖與即將過期之權杖的警示。 當您按一下單一權杖的警示時，將會移至權杖的詳細資料頁面。  當您按一下多個權杖的警示時，將會移至所有權杖的清單，其中包含權杖的狀態。 系統管理員應該在到期日之前更新其權杖。
-
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>透過安全網路進行遠端列印 <!-- 1709994  -->
 PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全的網路來進行遠端列印。 PrinterOn 將與適用於 iOS 和 Android 的 Intune APP SDK 整合。 您將能透過管理主控台中的 [應用程式保護原則] 刀鋒視窗，讓應用程式保護原則以此應用程式為目標。 終端使用者將能夠透過 Play 商店或 iTunes 下載 'PrinterOn for Microsoft' 應用程式，以在其 Intune 生態系統內使用。
 
-### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>核准適用於 Android for Work 的公司入口網站應用程式 <!--1797090 -->
-如果您的組織使用 Android for Work，您就必須手動核准適用於 Android 的公司入口網站應用程式，這樣它才能繼續從受控的 Google Play 商店接收自動更新。
 
-### <a name="faceid-on-ios-devices----1807377---"></a>iOS 裝置上的 FaceID <!-- 1807377 -->
-Intune 應用程式保護原則現在支援控制 iOS 裝置 FaceID 的設定。 此設定適用於支援 FaceID 功能的裝置 (目前僅 iPhone X 提供此功能)。 這項設定與目前支援的 TouchID 控制項是分開的。 組織可以選擇是否在 TouchID 控制項外，信任 FaceID 作為有效的 PIN 提示。
 
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>適用於 Intune 的 Microsoft Graph API - 正式運作  <!-- 1833289 -->
 Microsoft Graph 中的 Intune API 可提供以程式設計的方式來存取資料與方法，以自動化 Intune 服務的系統管理動作。  這些 API **正式運作**之後，客戶、合作夥伴和開發人員將能利用這些 API，針對 Intune 或透過 Microsoft Graph 提供的其他 Microsoft 服務，整合相關或需要其支援的內部或商業解決方案。
@@ -267,26 +239,11 @@ Microsoft Graph 中的 Intune API 可提供以程式設計的方式來存取資�
 ### <a name="app-protection-policies-----679615---"></a>應用程式防護原則 <!-- 679615 -->
 Intune 應用程式防護原則能提供建立全域預設原則的能力，以針對整個租用戶中的所有使用者快速啟用保護。
 
-### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>撤銷 iOS 大量採購方案應用程式 <!-- 820863 -->
-對於具有一或多個 iOS 大量採購方案 (VPP) 應用程式的指定裝置，您將可撤銷與該裝置相關連的裝置型應用程式授權。 撤銷應用程式授權將不會從該裝置解除安裝相關聯的 VPP 應用程式。 若要解除安裝 VPP 應用程式，您必須將指派動作變更為 [解除安裝]。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式](vpp-apps-ios.md)。
-
-### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤銷 iOS 大量採購方案權杖的授權 <!-- 820870 -->
-您將可針對指定的 VPP 權杖撤銷所有 iOS 大量採購方案 (VPP) 應用程式的授權。
-
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 裝置動作 <!-- 1244701 -->
 您可以關閉 iOS 10.3 受監督的裝置。 這個動作會立即關閉裝置，而不會警告使用者。 您可以在 [裝置] 工作負載中選取裝置時，於裝置屬性中找到 [關機 (僅限受監督)] 動作。
 
 ### <a name="intune-provides-the-account-move-operation-----1573558-1579830---"></a>Intune 提供帳戶移動作業 <!-- 1573558, 1579830 -->
 **帳戶移動**可將租用戶從某個 Azure 縮放單位 (ASU) 移轉至另一個。 **帳戶移動**可用於客戶起始的案例 (當您呼叫 Intune 支援小組並要求它時)，也可用於由 Microsoft 驅動的案例 (當 Microsoft 需要對後端對服務進行調整時)。 在**帳戶移動**期間，租用戶會進入唯讀模式 (ROM)。 諸如註冊、重新命名裝置、更新合規性狀態等服務作業，在 ROM 期間都將會失敗。
-
-
-
-<!-- the following are present prior to 1712 -->
-### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>將 Office 365 行動應用程式指派給使用內建應用程式類型的 iOS 和 Android 裝置 <!-- 1332318 -->
-**內建** - 應用程式類型能讓您更輕鬆地建立 Office 365 應用程式，並將它們指派給您管理的 iOS 及 Android 裝置。 這些應用程式包括 0365 應用程式，例如 Word、Excel、PowerPoint 和 OneDrive。 您可以將特定的應用程式指派給應用程式類型，並編輯應用程式資訊設定。
-
-### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>iOS 市集應用程式之指派衝突的解析已變更 <!-- 1480316 -->
-使用者可能會遇到 iOS 市集應用程式可用性的變更。 目前，已指派給兩個群組，在**必要且可用**與**不適用**之間發生衝突的應用程式，會解析成**必要且可用**。 因為這項變更，發生此衝突的應用程式會解析成**不適用**。
 
 當一個應用程式指派給多個具有不同應用程式用途的群組時，此變更會處理此混亂。
 
@@ -316,11 +273,16 @@ Intune 應用程式防護原則能提供建立全域預設原則的能力，以�
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Azure Active Directory 網站可以要求使用 Intune Managed Browser 應用程式，並支援 Managed Browser (公開預覽) 的單一登入 <!-- 710595 -->   
 使用 Azure Active Directory (Azure AD) 時，您能夠限制行動裝置使用 Intune Managed Browser 應用程式存取網站。 在 Managed Browser 中，網站資料的安全受到保護，並會與使用者的個人資料區隔開來。 此外，針對受 Azure AD 保護的網站，Managed Browser 也支援單一登入功能。 當使用者登入 Managed Browser，或在裝置上搭配使用 Managed Browser 與受 Intune 管理的其他應用程式時，即可在不需輸入認證的情況下，讓 Managed Browser 存取受 Azure AD 保護的公司網站。 這項功能適用於 Outlook Web Access (OWA) 和 SharePoint Online 等網站，以及透過 Azure App Proxy 存取的內部網路資源等其他公司網站。
 
+<!-- the following are present prior to 1709 -->
+### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune 應用程式防護和 Citrix MDX 開發工具 <!-- 709185 -->
+您可以搭配使用 Citrix XenMobile MDX 和 Microsoft Intune 來管理裝置和應用程式。 如此一來，您就可以使用 Citrix 的 mVPN 技術，透過 Intune 應用程式防護原則來管理應用程式。
+
+您可以尋找程式碼存放庫，其中包含適用於 iOS 和 Android 的 Intune App Wrapping Tool 和 Intune App SDK，並與 Citrix MDX mVPN 技術整合。
+
 <!-- the following are present prior to 1711 -->
 
-### <a name="redirecting-macos-users-to-our-new-company-portal-app---1380728--"></a>將 macOS 使用者重新導向至新的公司入口網站應用程式 <!--1380728-->   
+### <a name="redirecting-macos-users-to-the-new-company-portal-app---1380728--"></a>將 macOS 使用者重新導向至新的公司入口網站應用程式 <!--1380728-->   
 當使用者登入公司入口網站，並註冊 macOS 裝置時，系統會指示他們下載 macOS 版的新公司入口網站應用程式以 完成程序。 使用 OS X El Capitan 10.11 或更新版本的 macOS 裝置會發生這種情況。 
-
 
 <!-- the following are present prior to 1709 -->
 

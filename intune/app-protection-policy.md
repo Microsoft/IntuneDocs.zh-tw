@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -72,6 +72,7 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 ![此圖顯示在沒有設定應用程式保護原則的情況下，資料可以在應用程式之間自由移動](./media/apps-without-protection-policies.png)
 
 在沒有條件限制下使用應用程式時，公司和個人資料會互相混合。  公司資料最終可能放在個人存放裝置或傳送到外部應用程式，導致資料外洩。 圖中的箭號顯示資料在應用程式 (公司和個人) 之間無限制移動和移至儲存體位置。
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>使用應用程式保護原則保護資料
 
@@ -134,3 +135,6 @@ MDM 解決方案：
 ##  <a name="next-steps"></a>接下來的步驟
 
 [如何使用 Microsoft Intune 建立及部署應用程式保護原則](app-protection-policies.md)
+
+## <a name="see-also"></a>另請參閱
+協力廠商應用程式 (例如 Salesforce 行動裝置應用程式) 可以特定方式與 Intune 搭配使用來保護公司資料。 若要深入了解 Salesforce 應用程式與 Intune 搭配使用的特定方式 (包括 MDM 應用程式組態設定)，請參閱 [Salesforce 應用程式和 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) \(英文\)。

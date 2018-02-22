@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df60b45ede53190660733d3879ab6c020e5448b1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c8be5d271bfff84ec440b25724ca2101ec7f224d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/25/2018
 
 -   弱點防禦
 
-您可以根據透過 Intune 裝置合規性原則啟用的 Skycure 風險評估，設定條件式存取原則。透過該原則，您可以根據偵測到的威脅來允許或封鎖不符合規範的裝置存取公司資源。
+您可以根據透過 Intune 裝置相容性原則啟用的 Skycure 風險評估，設定條件式存取原則。透過該原則，您可以根據偵測到的威脅來允許或封鎖不相容的裝置存取公司資源。
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune 和 Skycure 如何協助保護您的公司資源？
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/25/2018
 
 Intune 裝置合規性原則包含以 Skycure 風險評估為基礎的 Skycure Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。
 
-如果發現裝置不符合規範，則會封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會從 Skycure 行動應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
+如果發現裝置不相容，則會封鎖對 Exchange Online 和 SharePoint Online 這類資源的存取。 已封鎖裝置上的使用者會從 Skycure 行動應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
 
 Intune 支援兩種與 Skycure 整合的模式：
 

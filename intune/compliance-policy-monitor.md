@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/25/2018
 
 -   **在寬限期內︰**系統管理員已為裝置鎖定一或多個裝置合規性政策設定目標，但使用者尚未套用這些政策，這表示裝置不符合標準，但在系統管理員定義的寬限期中。
 
-    -   了解對不符合標準裝置要採取的動作。
+    -   了解對不相容之裝置所要採取的動作。
 
 -   **裝置未同步處理︰**裝置無法報告其裝置合規性政策狀態，因為下列原因之一︰
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="per-policy-device-compliance-report"></a>每一政策的裝置合規性報告
 
-此報告會提供每個合規性政策的檢視，以及每個合規性狀態中的裝置總數。 [裝置合規性儀表板] 中有 [政策合規性] 標題，其中顯示所有先前由系統管理員建立的政策、套用政策的平台、符合標準的裝置數目和不符合標準的裝置數目。
+此報告會提供每個合規性政策的檢視，以及每個合規性狀態中的裝置總數。 [裝置相容性儀表板] 中有 [原則合規性] 標題，其中顯示所有先前由系統管理員建立的原則、套用原則的平台、相容的裝置數目和不相容的裝置數目。
 
 ![每一政策的裝置合規性報告](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="per-setting-device-compliance-report"></a>每一設定的裝置合規性報告
 
-此報告可讓您檢視每個合規性設定和每個合規性狀態中的裝置總數。 [裝置合規性儀表板] 中有 [設定合規性] 標題，其中顯示由系統管理員建立的所有裝置合規性政策下的所有裝置合規性政策設定、套用政策設定的平台、不符合標準的裝置數目。
+此報告可讓您檢視每個合規性設定和每個合規性狀態中的裝置總數。 [裝置相容性儀表板] 中有 [設定相容性] 標題，其中顯示由系統管理員建立的所有裝置相容性原則下的所有裝置相容性原則設定、套用原則設定的平台、不相容的裝置數目。
 
 ![每一設定的裝置合規性報告](./media/idc-10.png)
 

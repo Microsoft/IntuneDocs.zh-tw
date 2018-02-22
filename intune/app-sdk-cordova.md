@@ -2,10 +2,10 @@
 title: "Microsoft Intune App SDK Cordova 外掛程式"
 description: 
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 外掛程式
 
-> [!NOTE]
-> 您可能想要先閱讀 [Intune App SDK 快速入門](app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
+> [!IMPORTANT]
+> Intune 將於 2018 年 5 月 1 日結束對 Microsoft Intune App SDK Cordova 外掛程式的支援。 我們建議您改用 Intune App Wrapping Tool。 如需了解 App Wrapping Tool 的詳細資訊，請參閱[適用於 iOS 的 App Wrapping Tool](app-wrapper-prepare-ios.md) 和[適用於 Android 的 App Wrapping Tool](app-wrapper-prepare-android.md)。 如需這項變更的詳細資訊，請參閱 [Microsoft Intune 的新功能](whats-new.md)的[通知](whats-new.md#notices)區段。
 
 ## <a name="overview"></a>概觀
 
 [Intune App SDK Cordova 外掛程式](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)能在使用 Cordova 建置的 iOS 和 Android 應用程式中啟用 Intune 行動應用程式保護原則。 外掛程式可讓開發人員將 Intune 應用程式和資料保護功能整合至其 Cordova 應用程式。
+
+> [!NOTE]
+> 您可能想要先閱讀 [Intune App SDK 快速入門](app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
 
 您會發現您可以啟用 SDK 功能，而不需要變更您應用程式的行為。 當您於 iOS 或 Android 應用程式中建置該外掛程式之後，Microsoft Intune 系統管理員將能部署 Intune 應用程式保護原則，其中包含各種不同的資料保護功能。 該外掛程式已建置為能使大部分的步驟在 Cordova 建置程序中自動執行。 如此一來，您應該能夠快速地啟用應用程式的 Intune 應用程式保護。 若要開始，請根據目標平台遵循下列步驟。
 
@@ -65,7 +68,7 @@ ms.lasthandoff: 01/25/2018
 
 
 
-## <a name="quick-start"></a>快速入門
+## <a name="quickstart"></a>快速入門
 
 1. 更新您的 ADAL 版本︰
 
