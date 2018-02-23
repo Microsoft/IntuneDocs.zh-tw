@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 01/25/2018
 3. 搭配 macOS 版公司入口網站應用程式建立新的套件，然後按一下 [儲存]。
 4. 開啟 [電腦] > [原則]，然後選取 [新增]。
 5. 使用**一般**承載來設定原則設定。 這些設定應為：
-   - 觸發程序：選取 [註冊完成] 和 [Recurring Check-in] \(重複簽入)
+   - 觸發程序：選取 [註冊完成] 和 [Recurring Check-in] (重複簽入)
    - 執行頻率：選取 [每部電腦一次]
 6. 選取 [套件] 承載並按一下 [設定]。
 7. 按一下 [新增] 以選取搭配公司入口網站應用程式的套件。
@@ -66,6 +66,12 @@ ms.lasthandoff: 01/25/2018
 2. 設定 [Microsoft Intune 整合] 承載，包括觸發程序和執行頻率。
 3. 按一下 [範圍] 索引標籤，然後將原則的範圍設定為所有目標裝置。
 4. 按一下 [自助服務] 索引標籤，使原則可在 Jamf 自助服務中使用。 將原則包含在 [裝置合規性] 類別中。 按一下 **[儲存]**。
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>從 Intune 移除受控於 Jamf 的裝置
+
+您無法從 Intune 移除受控於 Jamf 的裝置。 您只能從 Jamf Pro 移除受 Jamf 管理的裝置，裝置接著就會從 Intune 中移除。 
+
+在 Jamf Pro 文件中了解如何[移除受控於 Jamf 的裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 
 ## <a name="next-steps"></a>接下來的步驟
 

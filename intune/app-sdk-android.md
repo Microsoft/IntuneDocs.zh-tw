@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -1311,9 +1311,9 @@ public interface MAMAppConfig {
 應用程式設定新增新的通知類型：
 * **REFRESH_APP_CONFIG**：這個通知是在 `MAMUserNotification` 中傳送，通知應用程式，確定應用程式有新的應用程式設定資料可用。
 
-如需圖形 API 與 MAM 目標設定值有關之功能的詳細資訊，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (圖形 API 參考 MAM 目標設定)。 <br>
+如需圖形 API 功能關於 MAM 目標設定值的詳細資訊，請參閱 [圖形 API 參考 MAM 目標設定]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
 
-如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android)中有關 MAM 目標應用程式設定的一節。
+如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-use-android)中有關 MAM 目標應用程式設定的一節。
 
 ## <a name="style-customization-optional"></a>樣式自訂 (選擇性)
 
@@ -1366,7 +1366,7 @@ public interface MAMAppConfig {
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
 
-1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
 > [!NOTE] 
 > 與您應用程式繫結的「用戶端識別碼」一詞，和 Azure 入口網站的「應用程式識別碼」一詞是相同的。 
 * 若要啟用 SSO，需要「一般 ADAL 設定」#2。
@@ -1427,7 +1427,7 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。
 
 > [!NOTE]
-> 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+> 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="recommended-android-best-practices"></a>建議的 Android 最佳作法
 

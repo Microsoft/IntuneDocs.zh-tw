@@ -2,8 +2,8 @@
 title: "指派 Intune 授權"
 description: "為您的 Intune 訂閱指派授權給使用者"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>將 Intune 授權指派給您的使用者帳戶
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。
+無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。 如需授權清單，請參閱[包含 Intune 的授權](licenses.md)。
 
 ## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>在 Office 365 系統管理中心指派 Intune 授權
 

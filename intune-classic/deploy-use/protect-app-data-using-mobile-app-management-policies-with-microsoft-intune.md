@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的應用程式保護原則保護應用程式資料
 
@@ -57,9 +57,7 @@ ms.lasthandoff: 10/10/2017
 - **應用程式保護原則可確保應用程式層保護完全就位**。 例如，您可以設定如下的原則：在工作環境中需要有 PIN 才能開啟應用程式、禁止資料在應用程式之間共用，以及禁止公司應用程式資料儲存到個人存放區位置。
 
 ## <a name="devices-that-support-mam"></a>支援 MAM 的裝置
-下列平台目前支援應用程式保護原則：
--   iOS 8.1 或更新版本
--   Android 4 或更新版本
+Intune 應用程式保護原則平台支援與 Office 應用程式平台支援一致。 如需詳細資料，請參閱 [Office 的系統需求](https://products.office.com/en-US/office-system-requirements)。
 
 >[!NOTE]
 >在沒有註冊的情況下，MAM 中不支援 Windows 裝置。 不過，當您將 Windows 10 裝置註冊 Intune 時，即可使用 Windows 資訊保護，以提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
@@ -129,7 +127,7 @@ MDM 解決方案：
 
 - 深入了解支援 Intune 的 [MAM 和多重身分識別](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的應用程式。
 
-##  <a name="next-steps"></a>後續步驟
+##  <a name="next-steps"></a>接下來的步驟
 - [準備好設定應用程式保護原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [使用 Microsoft Intune 建立及部署應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

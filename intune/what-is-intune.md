@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: dougeby
-ms.date: 10/30/2017
+ms.date: 02/14/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,25 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 現已在 Azure 入口網站上提供，這意味著您慣用的工作流程及功能現在會有所改變。
-新的入口網站在 Azure 入口網站中提供新功能及更新功能，您可在其中管理您組織的行動裝置、電腦及應用程式。
+Microsoft Intune 現在就如同其他 Azure 服務，已可在 Azure 入口網站中使用。 選取 Azure 入口網站內的 [Intune]，您就能管理組織的行動裝置、電腦及應用程式。
 
-* [我的功能在 Azure 的什麼位置？](ui-changes.md)此參考會向您顯示因為移至 Azure 而變更的特定工作流程與 UI。
-* [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)說明移至 Azure Active Directory 安全性群組對群組管理的含意。
+>[!NOTE] 
+> 如果您使用過舊版的 Microsoft Intune，以下資訊會對您有幫助：
+    * [我的功能在 Azure 的什麼位置？](ui-changes.md)此參考會向您顯示因為移至 Azure 而變更的特定工作流程與 UI。
+    * [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)說明移至 Azure Active Directory 安全性群組對群組管理的含意。
 
-
-
-
-您可以在此文件庫中找到新入口網站的相關資訊，這項資訊會不斷更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
-
-以下是新版服務的一些重點摘要︰
+Azure 入口網站中的 Microsoft Intune 體驗重點包括：
 
 - 所有 Enterprise Mobility + Security (EMS) (EMS) 元件全部整合在同一主控台內
 - 主控台採用符合網路標準的 HTML
@@ -61,41 +57,37 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 
 如需所支援瀏覽器的最新資訊，請參閱 [Azure 入口網站](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices)。
 
-## <a name="whats-in-this-library"></a>本文件庫內容
+## <a name="microsoft-intune-in-the-azure-portal"></a>Azure 入口網站中的 Microsoft Intune
 
-為方便您尋找所需的資訊，此文件採用 Azure 入口網站的配置。
+您可以在 [Azure 入口網站](https://portal.azure.com)中找到 Microsoft Intune 服務。 Azure 中有多項服務，而其中幾項您可能不會定期使用。 如需自訂入口網站體驗的快速指南，請參閱[開始在 Azure 入口網站中使用 Intune](get-started-azure.md)。
+
+## <a name="the-microsoft-intune-documentation"></a>Microsoft Intune 文件
+
+本主題及整份 Microsoft Intune 文件集均持續更新。 您對於這項服務如有任何建議，可在主題評論中留下您的意見反應。 我們十分希望您提供您的寶貴意見。
+
+文件反映了 Microsoft Intune 在 Azure 入口網站中的版面配置 (如下所示)，因此較容易找到您需要的資訊。
 
 ![Azure 入口網站的工作負載](./media/azure-portal-workloads.png)
 
-### <a name="introduction-and-get-started"></a>簡介和開始使用
-此小節包含[簡介資訊](introduction-intune.md)，可以協助您開始使用 Intune。
-### <a name="plan-and-design"></a>規劃和設計
-可協助您[計劃和設計](/intune-classic/plan-design/introduction) Intune 環境的資訊。
-### <a name="device-enrollment"></a>裝置註冊
-[如何將您的裝置交付 Intune 管理](device-enrollment.md)。
-### <a name="device-compliance"></a>裝置合規性
-[定義裝置的合規性層級，並回報所有不符合規範的裝置](device-compliance.md)。
-### <a name="device-configuration"></a>裝置設定
-[了解您可用於在您管理之裝置上進行設定及功能的各種設定檔](device-profiles.md)。
-### <a name="devices"></a>裝置
-[透過清查與報表了解您所管理的裝置](device-management.md)。
-### <a name="mobile-apps"></a>行動裝置應用程式
-[如何發行、管理、設定和保護應用程式](app-management.md)。
-### <a name="conditional-access"></a>條件式存取
-[依據您指定的條件，限制對 Exchange 服務的存取](conditional-access.md)。
-### <a name="on-premises-access"></a>內部部署存取
-[設定 Exchange ActiveSync 和 Exchange 內部部署的存取](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>使用者
-[了解您管理之裝置的使用者，並將資源整理歸入群組](users-add.md)。
-### <a name="groups"></a>中
-[了解如何搭配 Intune 使用 Azure Active Directory 群組](groups-get-started.md)
-### <a name="intune-roles"></a>Intune 角色
-[控制可以執行各種 Intune 動作的使用者，以及這些動作的適用對象](role-based-access-control.md)。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。
-### <a name="software-updates"></a>軟體更新
-[了解如何為 Windows 10 裝置設定軟體更新](windows-update-for-business-configure.md)。
+### <a name="documentation-guide"></a>文件指南
 
+使用下表快速尋找並了解 Microsoft Intune 的主要領域。
 
+| 區段                                                      | 說明                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [簡介和入門](introduction-intune.md)       | 了解 Intune 的基本概念，包括：<br /> - 常用解決方案<br /> - Microsoft Intune 運作方式<br /> - Intune 中的裝置管理<br /> - Intune 中的應用程式管理<br /> - 已註冊及未註冊裝置的 Enterprise Mobility Management (EMM)                                                         |
+| [規劃和設計](planning-guide.md)                         | 協助您成功規劃及設計 Microsoft Intune 環境的指南。                                                                                                                                                                                                             |
+| [裝置註冊](device-enrollment.md)                    | 了解 Microsoft Intune 如何協助您透過向 Intune 服務註冊員工裝置來加以管理。 有數種方法可以註冊員工裝置。                                                                                                         |
+| [裝置合規性](device-compliance.md)                    | Intune 裝置合規性政策會定義規則與設定，裝置必須遵循才能讓 Microsoft Intune 將其視為符合規範。 例如，要求裝置存取的密碼、為裝置加密及要求最低 OS 版本都是合規性的例子。 |
+| [裝置設定](device-profiles.md)                   | 建立裝置設定檔，在您使用 Microsoft Intune 管理的所有裝置上進行包含功能在內的設定。 例如，您可以設定通知、資料共用、電子郵件支援、wi-fi 連線、憑證及端點保護等功能。              |
+| [裝置](device-management.md)                              | 確保您管理的裝置只為終端使用者提供他們進行工具所需要的資源，同時保護公司資料遠離風險。 透過檢閱員工裝置清查及執行遠端裝置動作來管理裝置。                                                      |
+| [行動裝置應用程式](app-management.md)                             | 了解如何新增、部署、監視、設定及保護應用程式。                                                                                                                                                                                                                             |
+| [條件式存取](conditional-access.md)                  | 定義以裝置為基礎及以應用程式為基礎的條件，以限制公司資料的存取。                                                                                                                                                                                                            |
+| [使用者](users-add.md)                                        | 了解如何新增您管理的裝置及應用程式使用者。                                                                                                                                                                                                                                           |
+| [群組](groups-get-started.md)                              | 了解如何使用 Intune 建立及管理群組。 使用群組就能快速指派裝置及應用程式設定與保護原則。                                                                                                                                             |
+| [Intune 角色](role-based-access-control.md)                 | 了解如何控制可以執行各種 Intune 動作的使用者，以及這些動作的應用方式。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。                                                                                 |
+| [軟體更新](windows-update-for-business-configure.md) | 了解如何為 Windows 10 裝置設定軟體更新。                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>新功能
 
-[Intune 的新功能](whats-new.md)。
+若要了解 Microsoft Intune 的最新功能，請參閱[新增功能](whats-new.md)。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 05/05/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76f00caa3781d0efe85a17ccb8efc6bf27c77e97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a9d17f8066ddd16c06322cf9cc64457daff87f1
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
 
@@ -49,23 +49,19 @@ ms.lasthandoff: 01/25/2018
 
 ##  <a name="manage-user-accounts-on-the-device"></a>管理裝置上的使用者帳戶
 
-Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用者帳戶。
+多重身分識別應用程式可讓使用者新增多個帳戶。  Intune 應用程式僅支援一個受控帳戶。  Intune 應用程式不會限制非受控帳戶的數目。
 
-* 根據您所使用的應用程式，可能會封鎖裝置上的第二個使用者。 在所有情況下，只有套用應用程式保護原則的第一位使用者會受原則影響。
-  * **Microsoft Word**、**Excel** 及 **PowerPoint** 不會封鎖第二個使用者帳戶，但第二個使用者帳戶不會受應用程式保護原則影響。  
-
-  * 若為 **OneDrive** 和 **Outlook 應用程式**，您只能使用一個工作帳戶。 您無法針對這些應用程式新增多個工作帳戶。 不過，您可以在裝置上移除使用者並新增不同的使用者。
-
-* 若裝置在應用程式保護原則部署之前已有多個使用者帳戶，則應用程式保護原則所部署的第一個帳戶將由 Intune 應用程式保護原則管理。
-
+當應用程式中有受控帳戶時：
+*   若使用者嘗試新增第二個受控帳戶，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
+*   若 IT 系統管理員對第二個現有帳戶新增原則，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
 
 閱讀下列案例範例以深入了解如何處理多個使用者帳戶。
 
-使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在這兩家公司各有一個工作帳戶，且兩者全都使用 Intune 部署應用程式保護原則。 **X 公司**部署**先於** **Y 公司**部署應用程式保護原則。**X 公司**關聯的帳戶將得到應用程式保護原則，Y 公司關聯的帳戶則否。如果您希望 Y 公司關聯的使用者帳戶受應用程式保護原則管理，您必須移除與 X 公司關聯的使用者帳戶。
+使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在這兩家公司各有一個工作帳戶，且兩者全都使用 Intune 部署應用程式保護原則。 **X 公司**部署**先於** **Y 公司**部署應用程式保護原則。與 **X 公司**建立關聯的帳戶會先得到應用程式保護原則。 如果您希望與 Y 公司建立關聯的使用者帳戶受控於應用程式保護原則，您必須移除與 X 公司建立關聯的使用者帳戶，然後新增與 Y 公司建立關聯的使用者帳戶。
 
 ### <a name="add-a-second-account"></a>新增第二個帳戶
 
-如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 將會顯示帳戶，接著您可以選擇想要移除的帳戶。
+如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 帳戶隨即顯示，接著您可以選擇想要移除的帳戶。
 
 ## <a name="next-steps"></a>接下來的步驟
 [當 Android 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-android.md)
