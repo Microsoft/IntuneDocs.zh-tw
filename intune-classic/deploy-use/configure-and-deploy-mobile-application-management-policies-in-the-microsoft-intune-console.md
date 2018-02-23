@@ -16,10 +16,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
 
@@ -124,8 +124,8 @@ Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所�
 
 |設定名稱|詳細資料|
     |---------|--------------------|
-    |**Name**|指定這個原則的名稱。|
-    |**說明**|(選用) 指定這個原則的描述。|
+    |**名稱**|指定這個原則的名稱。|
+    |**描述**|(選用) 指定這個原則的描述。|
     |**限制要在公司管理的瀏覽器中顯示網頁內容**|啟用這項設定時，會在受管理的瀏覽器中開啟應用程式中的任何連結。 您必須將此應用程式部署到裝置，此選項才會運作。|
     |**防止 Android 備份** 或 **防止 iTunes 和 iCloud 備份**|這個設定可停用針對來自應用程式之任何資訊的備份。|
     |**允許應用程式將資料傳送到其他應用程式**|這個設定指定此應用程式可傳送資料的應用程式。 您可以選擇不允許將資料傳送到任何應用程式、只允許傳送至其他受管理的應用程式，或允許傳送到任何應用程式。 <br /><br />例如，若不允許資料傳輸，可以限制資料只可傳輸給像是 SMS 訊息等服務、限制不得將影像指派給連絡人，以及不得張貼到 Facebook 或 Twitter。<br /><br />針對 iOS 裝置，若要避免受管理與未受管理應用程式之間的文件傳送，您必須也設定及部署行動裝置安全性原則來停用 [在其他未受管理的應用程式中允許受管理的文件] 設定。 若您選擇只允許傳送到其他受管理的應用程式，系統將會使用 Intune PDF 及影像檢視器 (如有部署) 開啟個別類型的內容。<br /><br />此外，如果這個選項設定為 [受原則管理的應用程式] 或 [無]，則會封鎖允許焦點搜尋在應用程式中搜尋資料的 iOS 9 功能。<br><br>此設定對於在行動裝置上使用「開啟於」功能沒有影響。 若要管理「開啟於」功能，請參閱[使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)。|
