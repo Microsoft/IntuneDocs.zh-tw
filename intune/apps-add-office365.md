@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 應用程式指派給 Windows 10 裝置
 
-此應用程式類型方便您將 Office 365 ProPlus 2016 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為單一項目的那些應用程式。
+此應用程式類型方便您將 Office 365 ProPlus 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為單一項目的那些應用程式。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/01/2018
 >這種安裝 Office 的方法，只有在裝置上未安裝其他版本的 Microsoft Office 時才支援。
 
 - 部署這些應用程式的裝置必須執行 Windows 10 Creators Update 或更新版本。
-- Intune 僅支援從 Office 365 ProPlus 2016 套件新增 Office 應用程式。
+- Intune 僅支援從 Office 365 ProPlus 套件新增 Office 應用程式。
 - 如果在 Intune 安裝應用程式套件時有任何 Office 應用程式是開啟的，安裝會失敗且使用者未儲存的檔案可能會遺失資料。
 - Windows 10S、Windows Home、1, Windows Team、Windows Holographic 和 Windows Holographic for Business 裝置不支援此安裝方法。
 - Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Microsoft Store 的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
@@ -63,7 +63,7 @@ ms.lasthandoff: 02/01/2018
 
 在此步驟中，提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別，同時也能幫助使用者在公司入口網站應用程式中尋找。
 
-1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Information] (應用程式套件資訊)。
+1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Information] \(應用程式套件資訊)。
 2.  在 [App Suite Information] (應用程式套件資訊) 刀鋒視窗中，指定下列資訊：
     - **套件名稱** - 輸入應用程式套件要顯示在公司入口網站中的名稱。 確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述** - 輸入應用程式套件的描述。 例如，您可以列出已選取包含的應用程式。

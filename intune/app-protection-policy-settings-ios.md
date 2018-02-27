@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/26/2018
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 268cd673ccb21dffcd8424cfc49c55c734312bff
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/03/2018
 
 | Setting | 如何使用 | 預設值 |
 |------|------|------|
-| **禁止 iTunes 和 iCloud 備份** | 選擇 [是]，防止這個應用程式將工作或學校資料備份至 iTunes 和 iCloud。 選擇 [否]，允許這個應用程式將工作或學校資料備份至 iTunes 和 iCloud。| 是 |
+| **禁止 iTunes 和 iCloud 備份** | 選擇 [是]，停止將所有受控檔案備份至 iTunes 和 iCloud。 選擇 [否]，允許此應用程式將受控檔案備份至 iTunes 和 iCloud。| 是 |
 | **允許應用程式將資料傳送到其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> 此外，如果這個選項設定為 [受原則管理的應用程式] 或 [無]，則會封鎖允許焦點搜尋在應用程式中搜尋資料的 iOS 9 功能。 <br><br> 有一些 Intune 可以允許資料傳輸至其中的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#data-transfer-exemptions)。 | 所有應用程式 |
 | **允許應用程式接收來自其他應用程式的資料** | 指定可將資料傳送至這個應用程式的應用程式： <ul><li>**受原則管理的應用程式**：只允許從其他受原則管理的應用程式傳送。</li><li>**所有應用程式**：允許從任何應用程式傳送資料。</li><li>**無**：不允許從任何應用程式 (包括其他受原則管理的應用程式) 傳送資料。</li></ul> 有一些 Intune 可以允許從中進行資料傳輸的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#data-transfer-exemptions)。 在未註冊的 iOS 裝置上，啟用多重身分識別 MAM 的應用程式會忽略這項原則，並允許所有內送資料。 | 所有應用程式 |
 | **不可進行另存新檔** | 選擇 [是]，在這個應用程式中停用 [另存新檔] 選項。 如果您想要允許使用 [另存新檔]，請選擇 [否]。 | 否 |
@@ -65,10 +65,10 @@ ms.lasthandoff: 02/03/2018
 
 | Setting | 如何使用 | 預設值 |
 |------|------|------|
-| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 線上或離線工作時都會套用 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值型需求只有數字，而密碼型則至少要以 1 個字母或特殊字元定義。 預設值 = **數值**。</li><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。 <br> 此原則設定格式支援正整數。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列，例如 1234、1111、abcd 或 aaaa。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (iOS 8.0+)**：選擇 [是]，讓使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。 預設值 = [是]。</li><li> **允許臉部辨識而非 PIN (iOS 11+)**：選擇 [是]，以允許使用者使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 存取應用程式。 預設值 = [是]。 當使用者透過其公司帳戶存取應用程式時，系統會提示使用者提供臉部識別碼。</li><li> **在裝置 PIN 受控時，停用應用程式 PIN**：選擇 [是] 以在於註冊的裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。</li></ul> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109)而非 PIN 來證明其身分識別。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 來驗證使用 Touch ID 和 Face ID 的使用者。 若要深入了解 Touch ID 和 Face ID，請參閱 [iOS 安全性指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 使用者嘗試透過其公司或學校帳戶使用此應用程式時，系統會提示他們提供自己的指紋識別或臉部識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 存取需要 PIN 碼：是 <br><br> 選取類型：數值 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 <br><br> 允許臉部辨識：是 <br><br> 停用應用程式 PIN：否 |
+| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 線上或離線工作時都會套用 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 預設值 = **數值**。</li><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。 <br> 此原則設定格式支援正整數。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列，例如 1234、1111、abcd 或 aaaa。 選擇 [否]，防止其使用簡單的序號。 <br>**注意**：在 iOS 上，如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，則需要至少 1 個字母**或**至少 1 個特殊字元。 如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，則需要至少 1 個字母**和**至少 1 個特殊字元。  預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (iOS 8.0+)**：選擇 [是]，讓使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。 預設值 = [是]。</li><li> **允許臉部辨識而非 PIN (iOS 11+)**：選擇 [是]，以允許使用者使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 存取應用程式。 預設值 = [是]。 當使用者透過其公司帳戶存取應用程式時，系統會提示使用者提供臉部識別碼。</li><li> **在裝置 PIN 受控時，停用應用程式 PIN**：選擇 [是] 以在於註冊的裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。 預設值 = 否</li></ul> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109)而非 PIN 來證明其身分識別。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 來驗證使用 Touch ID 和 Face ID 的使用者。 若要深入了解 Touch ID 和 Face ID，請參閱 [iOS 安全性指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 使用者嘗試透過其公司或學校帳戶使用此應用程式時，系統會提示他們提供自己的指紋識別或臉部識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 存取需要 PIN 碼：是 <br><br> 選取類型：數值 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 <br><br> 允許臉部辨識：是 <br><br> 停用應用程式 PIN：否 |
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |  選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。 | 是 |
-| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，當管理員在原則中開啟 PIN 時，若使用者開啟 Intune 管理的應用程式，就必須輸入 PIN。 如果使用這項設定，使用者在 **30 分鐘** (預設值) 內都不需要在任何 MAM 應用程式上輸入 PIN。 <br><br>**注意：**在 iOS 上，**相同發行者**的所有受 Intune 管理的應用程式會共用一組 PIN。 當裝置上的應用程式離開前景時，特定 PIN 的 PIN 計時器就會重設。 在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並受 Intune 管理的應用程式上輸入 PIN。 <br><br> 此原則設定格式支援正整數。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。<br><br> 此原則設定格式支援正整數。</li></ul>| 逾時：30 <br><br> 離線：720 |
+| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟「PIN」及「封鎖已 Root 破解的裝置」，當使用者開啟受控於 Intune 的裝置時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 如果使用這項設定，使用者在另外 **30 分鐘** (預設值) 內都不需要在任何受控於 Intune 的應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br>**注意：**在 iOS 上，**相同發行者**的所有受 Intune 管理的應用程式會共用一組 PIN。 當裝置上的應用程式離開前景時，特定 PIN 的 PIN 計時器就會重設。 在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並受 Intune 管理的應用程式上輸入 PIN。 <br><br> 此原則設定格式支援正整數。</li><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。<br><br> 此原則設定格式支援正整數。</li></ul>| 逾時：30 <br><br> 離線：720 |
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式需要使用者連線到網路並重新驗證。 如果使用者成功驗證，就可以繼續存取其資料，而且會重設離線間隔。  如果使用者無法驗證，應用程式會執行使用者帳戶和資料的選擇性抹除。  如需使用選擇性抹除會移除哪些資料的詳細資訊，請參閱[如何只抹除 Intune 管理之應用程式中的公司資料](https://docs.microsoft.com/intune/apps-selective-wipe)。 <br><br> 此原則設定格式支援正整數。 | 90 天 |
 | **需要最低的 iOS 作業系統** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，將會封鎖使用者進行存取。 <br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。 | 否 |
 | **需要最低的 iOS 作業系統 (僅警告)** | 選擇 [是] 以要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 <br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。 | 否 |

@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企業版
 
@@ -50,7 +50,7 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 1.  在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
 
-2.  在 Intune 刀鋒視窗上，選擇 [Endpoint Protection]，然後選擇 [管理] > [Windows Hello 企業版]。
+2.  在 [Intune] 刀鋒視窗上，依序選擇 [裝置註冊]、[Windows 註冊] > [Windows Hello 企業版]。
 
 3.  在開啟的刀鋒視窗上，選擇 [預設] 設定。
 
