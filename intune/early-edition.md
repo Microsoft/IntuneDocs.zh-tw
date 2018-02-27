@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>舊版 Microsoft Intune - 2018 年 2 月
 
@@ -40,6 +40,10 @@ ms.lasthandoff: 02/03/2018
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>新註冊失敗趨勢圖和失敗原因表 <!-- 1471783 -->
+
+在 [註冊概觀] 頁面上，您將能夠檢視註冊失敗趨勢和失敗的前五個原因。 按一下圖表或資料表，即可向下鑽研至詳細資料來尋找疑難排解建議和補救建議。
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止終端使用者在工作設定檔中新增或移除帳戶 <!-- 1728700 -->    
 當您將 Gmail 應用程式部署到 Android for Work 設定檔時，您將可使用 Android for Work 裝置限制設定檔中的 [Add and remove accounts] (新增與移除帳戶) 設定，防止終端使用者在工作設定檔中新增或移除帳戶。
@@ -77,12 +81,9 @@ Intune 可支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DE
 
 您可以使用十六進位碼自訂公司入口網站應用程式的佈景主題色彩。 當您輸入您的十六進位碼時，Intune 會決定文字色彩，依 [WCAG 2.0 標準](http://www.w3.org/TR/WCAG20)提供文字色彩和背景色彩之間的最高階對比。 您可以在 [Mobile Apps] > **[公司入口網站]** 中預覽文字色彩和公司標誌的色彩。 
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 --> 
-如果您已啟用[裝置群組對應](https://docs.microsoft.com/intune/device-group-mapping)，當 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕來註冊之後或在全新體驗期間，會出現選取裝置類別的提示。
-
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>新增至 Endpoint Protection 設定的新 Windows Defender Credential Guard 設定 <!--1102252 --> 
 
-新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定會新增至 **[裝置設定]** > **[設定檔]** > **[Endpoint Protection]**。 會新增下列設定： 
+新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定會新增至 [裝置設定] > **[設定檔]** > **[Endpoint Protection]**。 會新增下列設定： 
 
 - 平台安全性層級：指定下次重新開機時是否啟用平台安全性層級。 虛擬化型安全性需要安全開機。 使用直接記憶體存取 (DMA) 保護，可以選擇性啟用虛擬化型安全性。 DMA 保護需要硬體支援，而且只能在正確設定的裝置上啟用。
 - 虛擬化型安全性：指定下次重新開機時是否啟用虛擬化型安全性。 

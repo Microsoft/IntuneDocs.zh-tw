@@ -3,10 +3,10 @@ title: "準備好設定適用於 Windows 10 的應用程式保護原則"
 titlesuffix: Azure portal
 description: "設定 Azure AD 中的行動應用程式管理 (MAM) 提供者"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
@@ -40,17 +40,17 @@ ms.lasthandoff: 01/30/2018
 
 4. 在 [設定] 刀鋒視窗上的 [還原預設的 MAM URL] 群組中進行設定。
 
-    **MAM 使用者範圍**  
-      使用 MAM 自動註冊來管理您員工之 Windows 裝置上的企業資料。 將會針對攜帶您自己的裝置案例設定 MAM 自動註冊。<ul><li>**無**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li><li>**部分**<br>選取包含將要在 MAM 中註冊之使用者的 Azure AD 群組。</li><li>**全部**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li></ul>
+   **MAM 使用者範圍**  
+   使用 MAM 自動註冊來管理您員工之 Windows 裝置上的企業資料。 將會針對攜帶您自己的裝置案例設定 MAM 自動註冊。<ul><li>**無**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li><li>**部分**<br>選取包含將要在 MAM 中註冊之使用者的 Azure AD 群組。</li><li>**全部**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li></ul>
 
-    **MDM 使用規定 URL**  
-     MAM 服務之使用規定端點的 URL。 使用規定端點是用來在使用者註冊其裝置以供管理之前顯示服務條款給使用者。 使用規定文字會通知使用者關於在行動裝置上強制執行的原則。
+   **MDM 使用規定 URL**  
+   Microsoft Intune 不支援 MAM 使用條款 URL。 此輸入方塊必須保留空白才能套用保護原則。
 
-    **MAM 探索 URL**  
-    MAM 服務註冊端點的 URL。 註冊端點用來註冊裝置，以使用 MAM 服務進行管理。
+   **MAM 探索 URL**  
+   MAM 服務註冊端點的 URL。 註冊端點用來註冊裝置，以使用 MAM 服務進行管理。
 
-    **MAM 合規性 URL**  
-      MAM 服務的合規性端點的 URL。 當使用者從不相容的裝置存取資源遭拒時，將會對該使用者顯示此合規性 URL。 使用者可以巡覽至由 MDM 服務主控的此 URL，了解他們的裝置被視為不相容的原因。 使用者也可起始自助式補救，讓裝置變為符合規範，以繼續存取資源。
+   **MAM 合規性 URL**  
+   Microsoft Intune 不支援 MAM 合規性 URL。 此輸入方塊必須保留空白才能套用保護原則。 
 
 5.  按一下 **[儲存]**。
 

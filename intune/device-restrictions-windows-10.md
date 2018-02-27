@@ -6,19 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **螢幕擷取 (僅限行動裝置)** - 讓使用者可將裝置螢幕擷取為影像。
 - **複製並貼上 (僅限行動裝置)** - 允許在裝置上的應用程式之間，進行複製並貼上的動作。
 - **手動取消註冊** - 讓使用者可從裝置手動刪除工作場所帳戶。
+   - 如果電腦已加入 Azure Active Directory，並且啟用自動註冊，則不會套用此原則設定。 
+   - 此原則設定不適用於執行 Windows 10 家用版的電腦。
 - **手動安裝根憑證 (僅限行動裝置)** - 阻止使用者手動安裝根憑證及中繼 CAP 憑證。
 - **診斷資料提交** - 可能的值為︰
     - **無** - 不傳送任何資料到 Microsoft
@@ -68,7 +69,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="personalization"></a>個人化
 
-- **桌面背景圖片 URL (僅限桌面版)** - 指定要作為 Windows 桌面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者無法變更此項目。
+- **桌面背景圖片 URL (僅限桌面版)** - 指定要作為 Windows 桌面桌布使用之 JPEG 格式圖片的 URL。 使用者無法變更此項目。
 
 ## <a name="privacy"></a>隱私權
 

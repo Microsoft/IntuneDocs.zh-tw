@@ -196,7 +196,7 @@
           href: device-locate.md
         - name: 啟用 iOS 遺失模式
           href: device-lost-mode.md
-        - name: 開啟 iOS 監督模式
+        - name: 開啟 iOS 受監管模式
           href: device-supervised-mode.md
         - name: 鎖定裝置
           href: device-remote-lock.md
@@ -470,6 +470,30 @@
           href: conditional-access-assign-jamf.md
     - name: 保護裝置資料
       items:
+        - name: 使用應用程式保護原則
+          href: app-protection-policy.md
+          items:
+            - name: 建立應用程式保護原則
+              href: app-protection-policies.md
+              items:
+                - name: Android 設定
+                  href: app-protection-policy-settings-android.md
+                - name: iOS 設定
+                  href: app-protection-policy-settings-ios.md
+                - name: 資料傳輸原則例外狀況
+                  href: app-protection-policies-exception.md
+                - name: 在 Managed Browser 中檢閱應用程式保護記錄
+                  href: app-protection-policy-settings-log.md
+            - name: 驗證應用程式保護原則
+              href: app-protection-policies-validate.md
+            - name: 監視應用程式保護使用者狀態
+              href: app-protection-policies-monitor.md
+            - name: 準備好設定 WIP 應用程式保護原則
+              href: app-protection-policies-configure-windows-10.md
+            - name: 建立與指派 WIP 應用程式保護原則
+              href: windows-information-protection-policy-create.md
+            - name: 管理 iOS 應用程式之間的資料傳輸
+              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
