@@ -52,7 +52,7 @@ ms.lasthandoff: 10/10/2017
 1. 移至 Google Play Developer Console ([play.google.com/apps/publish](https://play.google.com/apps/publish))。
 2. 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。 如果您是第一次登入，您必須註冊並支付費用，才能成為 Google 開發人員計劃的會員。
 3. 在主控台中，選擇 「Add new application」 \(加入新的應用程式)。
-4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<*組織名稱*>) 使用此應用程式]**** 設定：<br>
+4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<*組織名稱*>) 使用此應用程式]** 設定：<br>
   ![只將應用程式提供給您組織使用的選項](media/restrict.png)<br>
 此作業可確保只有您的組織可以使用此應用程式，而不會在公用 Google Play 商店中提供。
 如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469)。
