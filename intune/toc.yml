@@ -606,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: 如何取得 Windows 應用程式
           href: end-user-apps-windows.md
+        - name: Intune 傳送至 Apple 的資料
+          href: data-intune-sends-to-apple.md
+        - name: Intune 傳送至 Google 的資料
+          href: data-intune-sends-to-google.md
     - name: 監視及疑難排解
       items:
         - name: 協助使用者疑難排解問題
