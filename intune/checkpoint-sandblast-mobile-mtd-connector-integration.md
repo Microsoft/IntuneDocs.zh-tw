@@ -3,8 +3,8 @@ title: "設定和 Intune 整合的 Check Point SandBlast"
 titlesuffix: Azure portal
 description: "設定和 Intune 整合的 Check Point SandBlast"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88aa717a298b2f84a74b61d95efac6a105b3bd1a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>整合 Check Point SandBlast Mobile 與 Intune
 
@@ -64,9 +64,9 @@ Check Point SandBlast 應用程式授權程序是由下列項目所組成：
 
 3.  依序選擇 [裝置管理] 和 [設定]。
 
-4.  從 [MDM Service] \(MDM 服務) 下拉式清單中選擇 [Microsoft Intune]。
+4.  從 [MDM Service] (MDM 服務) 下拉式清單中選擇 [Microsoft Intune]。
 
-5.  一旦將 Microsoft Intune 設為 MDM 服務，[Microsoft Intune 設定] 視窗就會出現，選擇 [Add to my organization] \(新增至我的組織) 接受每個裝置平台：iOS、 Android 和 Windows 授權 Check Point SandBlast Mobile 與 Intune 和 Azure AD 進行通訊。
+5.  一旦將 Microsoft Intune 設為 MDM 服務，[Microsoft Intune 設定] 視窗就會出現，選擇 [Add to my organization] (新增至我的組織) 接受每個裝置平台：iOS、 Android 和 Windows 授權 Check Point SandBlast Mobile 與 Intune 和 Azure AD 進行通訊。
 
     ![Check Point MTD Intune 設定](./media/checkpoint-MTD-1.PNG)
 

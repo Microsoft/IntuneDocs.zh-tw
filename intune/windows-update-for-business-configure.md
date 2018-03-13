@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -130,14 +130,14 @@ ms.lasthandoff: 02/01/2018
 
 在 Intune 主控台中，您可以使用自訂原則的 OMA-URI 設定來設定商業識別碼。 如需詳細資訊，請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。   
 
-用於設定商業識別碼的 OMA-URI (區分大小寫) 路徑是：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+用於設定商業識別碼的 OMA-URI (區分大小寫) 路徑是：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 例如，您可以在 [新增或編輯 OMA-URI 設定] 中使用下列值：
 
 - **設定名稱**：Windows Analytics 商業識別碼
 - **設定描述**︰設定 Windows Analytics 解決方案的商業識別碼
 - **資料類型**：字串
-- **OMA-URI** (區分大小寫)：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI** (區分大小寫)：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **值**：<使用 OMS 工作區中的 [Windows 遙測] 索引標籤上顯示的 GUID>
 
 ![診斷與使用方式資料的 Windows 設定](./media/commID.png)
