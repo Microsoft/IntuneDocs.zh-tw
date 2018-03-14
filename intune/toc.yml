@@ -236,6 +236,9 @@
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft 網上商店應用程式
                   href: store-apps-windows.md
+                  items:
+                    - name: 手動新增公司入口網站應用程式
+                      href: store-apps-company-portal-app.md
                 - name: Android for Work 應用程式
                   href: apps-add-android-for-work.md
                 - name: 適用於 Windows 10 的 Office 365 應用程式
@@ -441,6 +444,8 @@
           href: compliance-policy-create-mac-os.md
         - name: 建立 Windows 原則
           href: compliance-policy-create-windows.md
+        - name: 評估原則
+          href: policy-evaluate.md
         - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
