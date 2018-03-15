@@ -1,6 +1,6 @@
 ---
-title: "指派 Intune 授權"
-description: "為您的 Intune 訂閱指派授權給使用者"
+title: "指派 Microsoft Intune 授權"
+description: "將授權指派給使用者，讓使用者可以在 Intune 中註冊"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>將 Intune 授權指派給您的使用者帳戶
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/15/2018
 
 3.  將 [Intune] 或 [Enterprise Mobility + Security] 切換為 [開啟]，然後選擇 [儲存]。
 
-  ![Office 365 入口網站指派產品授權的影像。](./media/office-assign-license.png)
+  ![Office 365 入口網站產品授權區段的螢幕擷取畫面。](./media/office-assign-license.png)
 
 4. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
 
@@ -46,11 +46,11 @@ ms.lasthandoff: 02/15/2018
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>使用「學校資料同步處理」將授權指派給 Intune 教育版中的使用者
 如果您是教育組織，則可以使用「學校資料同步處理」(SDS) 將 Intune 教育版授權指派給同步的使用者。 只要在設定 SDS 設定檔時，選取 [Intune 教育版] 核取方塊即可。  
 
-![SDS 設定檔設定的影像](./media/i4e-sds-profile-setup-setting.png)
+![SDS 設定檔設定的螢幕擷取畫面](./media/i4e-sds-profile-setup-setting.png)
 
 當您指派 Intune 教育版授權時，請務必一併指派 Intune A Direct 授權。
 
-![產品授權設定的影像](./media/i4e-set-licenses.png)
+![產品授權設定的螢幕擷取畫面](./media/i4e-set-licenses.png)
 
 若要深入了解 SDS，請參閱此[學校資料同步處理概觀](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 02/15/2018
 
 若要選擇性地指派 EMS 服務的使用者授權，請在已安裝[適用於 Windows PowerShell 的 Windows Azure Active Directory 模組](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)的電腦上，以系統管理員身分開啟 PowerShell。 您可以在本機電腦或 ADFS 伺服器上安裝 PowerShell。
 
-您必須建立只適用於所需服務方案的新授權 SKU 定義。 若要這樣做，請停用您不想要套用的方案。 例如，您可能建立不指派 Intune 授權的授權 SKU 定義。 若要查看可用的服務清單，請輸入︰
+您必須建立只適用於所需服務方案的新授權 SKU 定義。 若要這樣做，請停用您不想要套用的方案。 例如，您可能建立不指派 Intune 授權的授權 SKU 定義。 若要查看可用的服務清單，請鍵入︰
 
     (Get-MsolAccountSku | Where {$_.SkuPartNumber -eq "EMS"}).ServiceStatus
 

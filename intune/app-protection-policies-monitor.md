@@ -1,12 +1,12 @@
 ---
 title: "如何監視應用程式保護原則"
-titleSuffix: Azure portal
-description: "查看有多少使用者擁有原則，並向下鑽研以了解更多詳細資料。"
+titleSuffix: Microsoft Intune
+description: "監視 Intune 中行動應用程式管理原則的合規性狀態。"
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **若您不是在 Azure 入口網站中**，本主題會說明在 Intune 傳統入口網站中[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 
-您可以在 [Azure 入口網站](https://portal.azure.com)的 Intune 應用程式保護刀鋒視窗中，監視已套用到使用者的行動應用程式管理 (MAM) 原則的合規性狀態。 您能夠找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
+在 [Azure 入口網站](https://portal.azure.com)的 Intune 應用程式保護窗格中，監視已套用至使用者的行動應用程式管理 (MAM) 原則的合規性狀態。 找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
 
 您有三個不同的位置可以監視合規性狀態︰
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="summary-view"></a>摘要檢視
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-4. 在 [行動應用程式] 工作負載中，選擇 [監視] > [應用程式保護使用者狀態]，以查看摘要檢視︰
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格上，選擇 [行動應用程式]。
+4. 在 [行動應用程式] 工作負載中，選擇 [監視] > [應用程式保護狀態]，以查看摘要檢視︰
 
-![Intune 行動應用程式管理刀鋒視窗上的摘要磚](./media/app-protection-user-status-summary.png)
+![[Intune 行動應用程式管理] 窗格上的 [摘要] 磚](./media/app-protection-user-status-summary.png)
 
 -   **使用者**︰公司中使用與工作內容中的原則建立關聯之應用程式的使用者總數。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/25/2018
 選擇 [使用者狀態] 磚 (依裝置作業系統平台而定) 和 [已標記的使用者] 磚，即可進入摘要的 [詳細檢視]。
 
 ### <a name="user-status"></a>使用者狀態
-您可以搜尋單一使用者，並查看該使用者的相容性狀態。 [應用程式報告] 刀鋒視窗會顯示所選使用者的下列資訊：
+您可以搜尋單一使用者，並查看該使用者的相容性狀態。 [應用程式報告] 窗格會顯示所選使用者的下列資訊：
 - 與使用者帳戶相關聯的裝置
 
 - 裝置上具有 MAM 原則的應用程式
@@ -73,19 +73,19 @@ ms.lasthandoff: 01/25/2018
   - **未簽入**：此原則已部署至使用者，但是從那時起並未在工作環境中使用應用程式。
 
 >[!NOTE]
-> 如果您搜尋的使用者沒有部署 MAM 原則，您會看見一則訊息，通知您該使用者不針對任何 MAM 原則。
+> 如果您搜尋的使用者沒有部署 MAM 原則，則會看見一則訊息，通知您該使用者不針對任何 MAM 原則。
 
 若要查看使用者的報告，請遵循下列步驟︰
 
 1.  若要選取使用者，請選擇 [摘要] 磚。
 
-    ![螢幕擷取畫面 3](./media/MAM-reporting-6.png)
+    ![反白顯示 Intune 行動應用程式管理 [設定] 刀鋒視窗上 [摘要] 磚的螢幕擷取畫面](./media/MAM-reporting-6.png)
 
-2. 在開啟的 [應用程式報告] 刀鋒視窗上，選擇 [選取使用者] 來搜尋 Azure Active Directory 使用者。
+2. 在開啟的 [應用程式報告] 窗格上，選擇 [選取使用者] 來搜尋 Azure Active Directory 使用者。
 
-    ![[應用程式報告] 刀鋒視窗上的 [選取使用者] 選項](./media/MAM-reporting-2.png)
+    ![反白顯示 [應用程式報告] 窗格上 [選取使用者] 選項的螢幕擷取畫面](./media/MAM-reporting-2.png)
 
-3. 從清單中選取一個使用者。 您會看到該使用者之相容性狀態的詳細資料。
+3. 從清單中選取一個使用者。 您可以看到該使用者之合規性狀態的詳細資料。
 
 ### <a name="flagged-users"></a>標有旗標的使用者
 [詳細檢視] 會顯示錯誤訊息、發生錯誤時存取的應用程式、受影響的裝置作業系統平台和時間戳記。
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/25/2018
 
 您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理 MAM 原則合規性狀態的其他報表︰
 
-![螢幕擷取畫面 4](./media/MAM-reporting-7.png)
+![反白顯示 [設定] 窗格中可用之 2 份報表的螢幕擷取畫面](./media/MAM-reporting-7.png)
 
 -   **應用程式保護使用者報表︰**列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 01/25/2018
 
         -   所有的應用程式都已簽入，但未收到任何 MAM 原則。
 
-![螢幕擷取畫面 2](./media/MAM-reporting-4.png)
+![顯示具有 3 個已註冊應用程式詳細資料表格之使用者 [應用程式報告] 刀鋒視窗的螢幕擷取畫面](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>資料表群組
 
@@ -125,16 +125,16 @@ ms.lasthandoff: 01/25/2018
 
 若要產生應用程式保護報表，請執行下列步驟︰
 
-1. 在 Intune [行動應用程式管理] 刀鋒視窗中，選擇 [應用程式保護報表]。
+1. 在 Intune [行動應用程式管理] 窗格上，選擇 [應用程式保護報表]。
 
-    ![螢幕擷取畫面 6](./media/app-protection-report-csv-2.png)
+    ![反白顯示 Intune 行動應用程式管理窗格上應用程式保護下載連結的螢幕擷取畫面](./media/app-protection-report-csv-2.png)
 
 2. 選擇 [是] 儲存報表，然後選擇 [另存新檔]，再選取報表的儲存資料夾。
 
-    ![螢幕擷取畫面 7](./media/app-protection-report-csv-1.png)
+    ![[儲存報表] 確認方塊的螢幕擷取畫面](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>另請參閱
 [管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)
 
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-android.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-ios.md)
+* [當 Android 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-android.md)
+* [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)

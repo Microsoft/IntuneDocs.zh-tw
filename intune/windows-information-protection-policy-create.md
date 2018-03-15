@@ -3,10 +3,10 @@ title: "使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保
 titlesuffix: Azure portal
 description: "使用 Intune 建立及部署 WIP 應用程式保護原則"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -47,9 +47,9 @@ ms.lasthandoff: 02/03/2018
 
 ## <a name="pre-requisites"></a>必要條件
 
-您必須先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
+您必須先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](app-protection-policies-configure-windows-10.md)。
 
-此外，您也需要下列各項：
+此外，您也需要下列授權和更新：
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 授權。
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/03/2018
 
 ## <a name="to-add-a-wip-policy"></a>新增 WIP 原則
 
-當您在組織中設定 Intune 之後，就可以透過 [Azure 入口網站](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)建立 WIP 特定原則。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+當您在組織中設定 Intune 之後，就可以透過 [Azure 入口網站](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)建立 WIP 特定原則。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  移至 [Intune 行動應用程式管理儀表板]，選擇 [所有設定] > [應用程式原則]。
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 02/03/2018
 
 1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後從 [新增原則] 刀鋒視窗選擇 [允許的應用程式]。 [允許的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
 
-2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。 [新增應用程式] 刀鋒視窗隨即開啟，顯示此清單中包含的所有應用程式。
+2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。 **新增應用程式**資訊會顯示此清單中包含的所有應用程式。
 
 3.  選取要存取公司資料的每個應用程式，然後選擇 [確定]。 [允許的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 02/03/2018
 
 2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。
 
-3.  在 [新增應用程式] 刀鋒視窗上，從下拉式清單中選擇 [市集應用程式]。 刀鋒視窗會變更為顯示方塊，讓您新增**發行者**和應用程式**名稱**。
+3.  在 [新增應用程式] 刀鋒視窗上，從下拉式清單中選擇 [市集應用程式]。 資訊會變更為顯示方塊，讓您新增**發行者**和應用程式**名稱**。
 
 4.  輸入應用程式的名稱與其發行者的名稱，然後選擇 [確定]。
 
@@ -153,7 +153,7 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
     ![學習模式的螢幕擷取畫面](./media/learning-mode-sc1.png)
 
-1.  選擇 [儲存]。
+2.  選擇 [儲存]。
 
 ### <a name="use-wip-learning"></a>使用 WIP 學習
 
@@ -165,10 +165,23 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
  
     您可以根據 WIP 學習記錄報告中顯示的應用程式，將這些應用程式新增至應用程式保護原則。
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>允許 Windows 搜尋索引子搜尋加密項目
+允許或不允許編製項目的索引。 這個參數是針對 Windows 搜尋索引子，它控制是否編製加密項目的索引，例如 Windows 資訊保護 (WIP) 保護的檔案。
+
+這個應用程式保護原則選項是在 Windows 資訊保護原則的 [進階設定] 中。 應用程式保護原則必須設為 *Windows 10* 平台，且應用程式原則 [註冊狀態] 必須設為 [註冊]。 
+
+啟用此原則時，會編製 WIP 保護項目的索引，而其相關中繼資料會儲存在未加密的位置。 中繼資料包含像是檔案路徑和修改日期等事項。
+
+停用此原則時，不會編製 WIP 保護項目的索引，且不會出現在 Cortana 或檔案總管的結果中。 如果裝置上有許多 WIP 保護的媒體檔案，也可能影響相片和 Groove 應用程式的效能。
+
+## <a name="add-encrypted-file-extensions"></a>新增加密副檔名
+
+除了設定 [Allow Windows Search Indexer to search encrypted items] (允許 Windows 搜尋索引子搜尋加密項目 選項，您也可以指定副檔名清單。 從網路位置清單中所定義之公司界限內的伺服器訊息區塊 (SMB) 共用複製時，會加密具有這些副檔名的檔案。 未指定此原則時，會套用現有的自動加密行為。 已設定此原則時，將只會加密具有清單中之副檔名的檔案。
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>部署 WIP 應用程式保護原則
 
 > [!IMPORTANT]
-> 這適用於不註冊裝置的 WIP。
+> 此資訊適用於未不註冊裝置的 WIP。
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
     [新增使用者群組] 刀鋒視窗中隨即會開啟使用者群組清單，此清單由 Azure Active Directory 中的所有安全性群組所組成。
 
-1.  選擇您要套用原則的群組，然後選擇 [選取] 來部署原則。
+2.  選擇您要套用原則的群組，然後選擇 [選取] 來部署原則。
+
+## <a name="next-steps"></a>接下來的步驟
+
+- 深入了解 Windows 資訊保護，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)。 

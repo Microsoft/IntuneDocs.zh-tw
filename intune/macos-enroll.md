@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 中註冊 macOS 裝置"
-titlesuffix: Azure portal
-description: "了解如何在 Intune 中註冊 macOS 裝置。"
+title: "設定 macOS 裝置的註冊"
+titlesuffix: Microsoft Intune
+description: "了解如何在 Intune 中設定 macOS 裝置的註冊。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-macos-devices-in-intune"></a>在 Intune 中註冊 macOS 裝置
+# <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,6 +37,13 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 - [設定公司入口網站](company-portal-app.md)
 - 指派 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中的使用者授權
 - [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
+
+## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
+
+您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 macOS 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。
+
+## <a name="company-owned-ios-devices"></a>公司擁有的 iOS 裝置
+針對為使用者購買裝置的組織來說，Intune 可支援使用[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶來註冊公司擁有裝置 macOS 裝置。
 
 ## <a name="set-up-macos-enrollment"></a>設定 macOS 註冊
 

@@ -1,12 +1,12 @@
 ---
 title: "如何將應用程式新增至 Microsoft Intune"
-titlesuffix: Azure portal
-description: "這些程序可協助您將應用程式加入 Intune，讓您可以指派給使用者與裝置。 \""
+titlesuffix: 
+description: "了解如何為 Microsoft Intune 新增應用程式，以便您可以指派應用程式給使用者和裝置。 Intune 支援各種不同的應用程式類型。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 91762eafbba5f96ce04f3ffd4d83f63434a3ac74
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何將應用程式新增至 Microsoft Intune
 
@@ -121,8 +121,8 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 應用程式類別可協助您排序應用程式，以利使用者在公司入口網站中執行搜尋。 您可以指派一或多個類別給應用程式，例如**開發人員應用程式**或**通訊應用程式**。
 當您將應用程式新增到 Intune 時，可以自由選取所需的類別。 使用平台相關的主題來新增應用程式及指派類別。 若要建立及編輯您自己的類別，請使用下列程序︰
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 4. 在**行動應用程式**工作負載中，選擇 [安裝] >  [應用程式類別]。
 5. 在 [應用程式類別] 刀鋒視窗中會列出目前的類別。 請選擇下列其中一個動作：
@@ -149,5 +149,5 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 - [Windows 市集應用程式](store-apps-windows.md)
 - [Windows LOB 應用程式](lob-apps-windows.md)
 - [適用於 Windows 10 的 Office 365 應用程式](apps-add-office365.md)
-- [內建應用程式](apps-add-bulit-in.md)
+- [內建應用程式](apps-add-built-in.md)
 

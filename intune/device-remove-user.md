@@ -1,10 +1,10 @@
 ---
-title: "使用 Intune 從 iOS 裝置移除使用者"
-titlesuffix: Azure portal
+title: "使用 Microsoft Intune 從 iOS 裝置移除使用者"
+titlesuffix: 
 description: "了解如何使用 Intune 從共用的 iOS 裝置中移除使用者。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 979614aaa450493ea0b5cc2a1baaccc10a6dd028
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1b2321de0c0541111fdf6f18345bd952ca8b5448
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>使用 Intune 從共用的 iOS 裝置中移除使用者
+# <a name="remove-a-user-from-a-shared-ios-device"></a>從共用的 iOS 裝置中移除使用者
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,14 +37,14 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-remove-a-user"></a>如何移除使用者
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
 4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
 5. 從您管理的裝置清單中，選擇 iOS 裝置。
 6. 在該裝置的刀鋒視窗中，選擇 [使用者]。
 7. 從清單中，以滑鼠右鍵按一下您想要移除的使用者，然後選擇 [移除使用者]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。
+若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。

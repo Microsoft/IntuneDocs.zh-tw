@@ -2,10 +2,10 @@
 title: "Intune 資料倉儲變更記錄檔 | Microsoft Docs"
 description: "Intune 資料倉儲 API 中的變更清單。"
 keywords: "Intune 資料倉儲"
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 保持 Intune 資料倉儲更新的最新狀態。
+
+## <a name="1801"></a>1801
+_發行日期：2018 年 1 月_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>僅限 Intune 資料倉儲應用程式的驗證<!-- 1867540 -->
+
+您可以使用 Azure Active Directory (Azure AD) 來設定應用程式並向 Intune 資料倉儲驗證。 如需詳細資訊，請參閱[僅限 Intune 資料倉儲應用程式的驗證](data-warehouse-app-only-auth.md)。
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 和 Intune 認證需求<!-- 2077525 -->
+
+- 存取 Intune 資料倉儲 (包括 API) 時，不再需要指派 Intune 授權給使用者。
+- Intune 角色名稱已從**報表**變更為 **Intune 資料倉儲**。 
+
+    如需詳細資訊，請參閱 [Azure AD 和 Intune 認證需求](reports-api-url.md#azure-ad-and-intune-credential-requirements)。
+
+### <a name="odata-query-options----2077711---"></a>OData 查詢選項<!-- 2077711 -->
+
+您可以使用 <code>$select</code> 作為 OData 查詢參數。 目前版本支援下列 OData 查詢參數：<code>$filter</code>、<code>$orderby</code>、<code>$select</code>、<code>$skip</code> 及 <code>$top</code>。 如需詳細資訊，請參閱 [OData 查詢選項](reports-api-url.md#odata-query-options)。
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>資料倉儲資料模型中的新實體 <!-- 2077804 -->
+
+ - 已新增 [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) 實體。 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
+ - 已新增 [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 實體。 **MobileAppInstallState** 實體代表行動應用程式在被指派至包含裝置或使用者 (或兩者) 的群組之後的安裝狀態。 
 
 ## <a name="1710"></a>1710
 _發行日期：2017 年 11 月_

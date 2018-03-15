@@ -1,10 +1,10 @@
 ---
-title: "Intune 字彙"
-titleSuffix: Azure portal
-description: "了解在 Microsoft Intune 中使用的一些術語"
+title: "Microsoft Intune 字彙"
+titleSuffix: Microsoft Intune
+description: "了解在 Microsoft Intune 中使用之術語的意義。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 6c066dde1c302c647514659b45e17cc5ac186a13
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d1b92613b127ccb21146f9d5f973eb1a25213792
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 字彙
+了解在 Microsoft Intune 中使用之通用字詞的定義。
 
 ## <a name="a"></a>A
 
@@ -63,9 +64,9 @@ ms.lasthandoff: 01/25/2018
 ## <a name="e"></a>E
 |||
 |-|-|
-|電子郵件設定檔|這個原則可以用來設定行動裝置上的[電子郵件存取設定](/intune/email-settings-configure)，以將使用者必須執行的設定量減到最少。|
+|電子郵件設定檔|這個原則可以用來設定行動裝置上的[電子郵件存取設定](/intune/email-settings-configure)，以將終端使用者必須執行的設定量減到最少。|
 |EMS|Microsoft Enterprise Mobility + Security (之前為 Enterprise Mobility Suite) 會保護公司資料，同時讓使用者[存取應用程式和其所需的內容](https://www.microsoft.com/cloud-platform/enterprise-mobility)。|
-|使用者|使用 Intune 管理之[手機和電腦這類裝置的使用者](/intune/end-user-educate)。|
+|終端使用者|使用 Intune 管理之[手機和電腦這類裝置的使用者](/intune/end-user-educate)。|
 |註冊|Microsoft Intune 使用[註冊](/intune/device-enrollment)來管理裝置，並允許其存取資源。|
 
 ## <a name="f"></a>F
@@ -76,7 +77,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="g"></a>G
 |||
 |-|-|
-|中|群組可讓您[邏輯收集使用者或裝置](/intune/groups-get-started)。 例如，您可以建立所有 Windows 電腦的群組。 然後，您可以將應用程式和設定檔指派給這些群組。|
+|群組|群組可讓您[邏輯收集使用者或裝置](/intune/groups-get-started)。 例如，您可以建立所有 Windows 電腦的群組。 然後，您可以將應用程式和設定檔指派給這些群組。|
 
 ## <a name="h"></a>H
 |||
@@ -87,23 +88,23 @@ ms.lasthandoff: 01/25/2018
 |||
 |-|-|
 |Azure 入口網站|用於大部分 Intune 管理作業的 Azure 入口網站。|
-|Intune 軟體用戶端|另一種[管理一些 Windows 電腦](/intune-classic/get-started/choose-how-to-manage-devices)的方式。如需決定要使用之方法的協助，請參閱選擇如何管理裝置。|
-|Intune 軟體發行者|一種工具，用來[定義您要部署的應用程式並將它們上傳至雲端儲存空間](/intune-classic/deploy-use/add-apps)。|
+|Intune 軟體用戶端|[管理某些 Windows 電腦](/intune-classic/get-started/choose-how-to-manage-devices)的另一種方式，協助您決定該使用何種方法。|
+|Intune 軟體發行者|用來[定義您要部署的應用程式並將它們上傳至雲端儲存空間](/intune-classic/deploy-use/add-apps)的一種工具。|
 |清查|用來檢視所管理裝置上[安裝的硬體和軟體](/intune/device-inventory)。|
 
 ## <a name="k"></a>K
 |||
 |-|-|
-|資訊站模式|設定為[裝置限制設定檔](/intune/device-restrictions-configure)的一 部分，這個模式可讓您鎖定裝置。 例如，您可以設定零售裝置只允許執行一些應用程式。|
+|Kiosk 模式|設定為[裝置限制設定檔](/intune/device-restrictions-configure)的一部分，這個模式可讓您鎖定裝置。 例如，您可以設定零售裝置只能執行某些應用程式。|
 
 ## <a name="m"></a>M
 |||
 |-|-|
-|受管理的瀏覽器|一個[網頁瀏覽應用程式](/intune/app-configuration-managed-browser)，您可以在組織中使用 Intune 來指派此應用程式。 受管理的瀏覽器原則會設定允許清單或封鎖清單，以限制受管理瀏覽器的使用者可瀏覽的網站。|
+|Managed Browser|一個[網頁瀏覽應用程式](/intune/app-configuration-managed-browser)，您可以在組織中使用 Intune 來指派此應用程式。 Managed Browser 原則會設定允許清單或封鎖清單，以限制 Managed Browser 的使用者可瀏覽的網站。|
 |MDM 授權單位|[MDM 授權單位](/intune/mdm-authority-set)會定義有權管理一組裝置的管理服務。 MDM 授權單位選項包括單獨使用 Intune，以及具備 Intune 的 Configuration Manager。|
-|行動應用程式組態原則|適用於具有廠商特定設定的 Mobile Apps。 例如，一個 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 原則，用來在執行時提供相容應用程式的設定 (例如公司名稱或伺服器位址)。|
+|行動應用程式組態原則|適用於具有廠商特定設定的行動應用程式。 例如，一個 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 原則，用來在執行時提供相容應用程式的設定 (例如公司名稱或伺服器位址)。|
 |行動應用程式佈建原則|一個 iOS 原則，可協助您確定所指派 iOS 應用程式的[佈建設定檔](/intune/app-provisioning-profile-ios)未過期。|
-|行動應用程式管理|[行動應用程式管理 (MAM)](/intune/app-lifecycle) 可讓您針對使用者發行、推送、設定、保護、監視和更新行動應用程式。
+|行動應用程式管理|[行動應用程式管理 (MAM)](/intune/app-lifecycle) 可讓您針對使用者發行、推送、設定、保護、監視和更新 Mobile Apps。
 |行動裝置管理|[行動裝置管理 (MDM)](/intune/device-lifecycle) 可讓您在 Intune 中註冊裝置，以佈建、設定、監視和管理這些裝置。
 
 
@@ -111,19 +112,19 @@ ms.lasthandoff: 01/25/2018
 ## <a name="o"></a>O
 |||
 |-|-|
-|OMA-DM|開放行動裝置聯盟裝置管理。 一種業界標準裝置管理通訊協定，許多硬體製造商可用來控制行動裝置和電腦的功能。|
+|OMA-DM|Open Mobile Alliance Device Management (開放行動裝置聯盟裝置管理)。 一種業界標準裝置管理通訊協定，許多硬體製造商可用來控制行動裝置和電腦的功能。|
 |OMA-URI|開放行動裝置聯盟統一資源識別碼。 這些項目可識別符合 OMA-DM 標準的個別裝置設定。 沒有內建設定符合需求時，這些設定可以用於 [Intune 自訂設定檔](/intune/custom-settings-configure)。|
 
 ## <a name="p"></a>P
 |||
 |-|-|
-|密碼重設|一種 Intune 功能，可讓您強制使用者在支援的裝置上[重設密碼](/intune/device-passcode-reset)。|
+|密碼重設|一種 Intune 功能，可讓您強制終端使用者在支援的裝置上[重設密碼](/intune/device-passcode-reset)。|
 
 ## <a name="r"></a>R
 |||
 |-|-|
 |遠端鎖定|這是一種 Intune 功能，讓您即使未擁有裝置，也能[鎖定支援的裝置](/intune/device-remote-lock)。|
-|必要安裝|當您使用這個動作指派應用程式時，不需要[使用者介入](/intune/apps-deploy)即可完成安裝。 在某些平台上，使用者可能必須接受安裝)。|
+|必要安裝|當您使用這個動作指派應用程式時，不需要[使用者介入](/intune/apps-deploy)即可完成安裝。 在某些平台上，終端使用者可能必須接受安裝)。|
 
 
 ## <a name="s"></a>S
@@ -144,7 +145,7 @@ ms.lasthandoff: 01/25/2018
 |||
 |-|-|
 |大量採購應用程式與書籍|針對您想要在公司內使用的應用程式或書籍，某些應用程式市集可讓您購買多個授權。 Intune 可協助您管理[透過此類方案所購買](/intune/vpp-apps)的應用程式與書籍。 您可以從應用程式市集匯入授權資訊、追蹤已經使用的授權數，並避免您所安裝的應用程式超過您所擁有的授權數。|
-|VPN 設定檔|一種原則，可將 [VPN 設定](/intune/vpn-settings-configure)指派給所管理的裝置，以將使用者所需的任何設定減到最少。|
+|VPN 設定檔|一種原則，可將 [VPN 設定](/intune/vpn-settings-configure)指派給所管理的裝置，以將終端使用者所需的任何設定減到最少。|
 
 ## <a name="w"></a>W
 |||

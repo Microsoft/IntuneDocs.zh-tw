@@ -1,11 +1,12 @@
 ---
 title: "在 Intune 上封鎖沒有新式驗證的應用程式"
-description: 
+titleSuffix: Microsoft Intune
+description: "了解封鎖未使用新式驗證 (ADAL) 的應用程式。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ab83b5fc6c7e87210ad7df387151ebf4b80b445
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 798a1552e27d21c699e1ac8f22fedbad4b7c624e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>封鎖未使用新式驗證 (ADAL) 的應用程式
 

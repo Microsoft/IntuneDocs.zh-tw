@@ -1,13 +1,13 @@
 ---
-title: "開始使用 Azure 入口網站"
-titlesuffix: Azure portal
-description: "了解如何在 Azure 入口網站中針對 Intune 建立和共用儀表板。"
+title: "開始在 Azure 入口網站中使用 Microsoft Intune"
+titlesuffix: 
+description: "了解如何在 Azure 入口網站中針對 Microsoft Intune 建立、共用和覽儀表板。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
-ms.topic: article
+ms.date: 02/22/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,21 +15,21 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="getting-started-with-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Intune
+# <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Microsoft Intune
 
-Azure 入口網站是您可以在其中尋找 Intune 服務的位置。 Azure 中有許多服務，而其中大部分可能不會定期使用。 自訂儀表板和資訊看板可協助您在每次登入以使用 Intune 來管理裝置時快速找到正確的資訊。
+您可以在 Azure 入口網站中找到 Microsoft Intune 服務。 Azure 中有許多服務，而其中幾項您可能不會定期使用。 自訂 Azure 內的儀表板和資訊看板可協助您在每次登入以使用 Intune 來管理裝置時快速找到正確的資訊。
 
 ## <a name="changing-the-sidebar"></a>變更資訊看板
 
-Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清單。 您可以從預設檢視變更此完整清單，以保留您最重要服務的持續性檢視。 我們將使用 Intune 作為要新增至清單頂端的服務範例。
+Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清單。 您可以從預設檢視變更此完整清單，以保留您最重要服務的持續性檢視。 下列資訊使用 Intune 作為要新增至清單頂端的服務範例。
 
-![在 [More services] (更多服務) 清單中搜尋 Intune 的使用者。](./media/azure-add-intune1.png)
+![在 [More services] (更多服務) 清單中搜尋 Microsoft Intune 的使用者。](./media/azure-add-intune1.png)
 
 1. 從頁面左側的資訊看板底部，選取 [More services] \(更多服務)。
 2. 在篩選方塊中，搜尋 **Intune**。
@@ -38,21 +38,21 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 ## <a name="changing-the-dashboard"></a>變更儀表板
 
-您的預設登陸頁面是「儀表板」。 您將在這個位置自訂您的磚，以顯示與您最相關的資訊。
+您的預設登陸頁面是「儀表板」。 您可以在這個頁面自訂您的磚，以顯示與您最相關的資訊。
 
 ![泛型新儀表板的影像。 它會在左側顯示具有所有服務的資訊看板，然後在中央顯示主要儀表板。 儀表板修改按鈕會沿著上方，並且具有多個磚可以存取所有資源、快速入門教學課程、服務健全狀況和 Azure Marketplace。](./media/azure-default-dashboard.png)
 
-若要修改目前儀表板，請選取 [編輯儀表板] 按鈕。 如果您不想要變更預設儀表板，也可以建立「新儀表板」。 建立新的儀表板，即可透過「磚庫」提供空白的私用儀表板。 這可讓您新增或重新排列磚。 您可以透過 [搜尋] 以及 [資源群組] 或 [標記]，依 [一般] 類別 [類型] 找到磚。
+若要修改目前儀表板，請選取 [編輯儀表板] 按鈕。 如果您不想要變更預設儀表板，也可以建立「新儀表板」。 建立新的儀表板，即可透過「磚庫」提供空白的私用儀表板，以讓您新增或重新排列磚。 您可以透過 [搜尋] 以及 [資源群組] 或 [標記]，依 [一般] 類別 [類型] 找到磚。
 
 您也可以透過任何**省略**按鈕以及選取 [釘選到儀表板]，直接將磚新增至儀表板。
 
 ![[使用者和群組] > Intune 中的 [所有群組] 位置的特寫，其可在群組最右側顯示 [釘選到儀表板] 選項。](./media/azure-pin-to-dashboard.png)
 
-將更多內容 (例如群組和使用者) 新增至 Intune 之後，這會更具相關性。
+將更多內容 (例如群組和使用者) 新增至 Intune 之後，此功能會更具相關性。
 
 ## <a name="using-services"></a>使用服務
 
-只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**刀鋒視窗**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
+只要在 Azure 中開啟 Microsoft Intune 或任何其他服務，該服務就會顯示在**刀鋒視窗**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
 
 ## <a name="next-steps"></a>接下來的步驟
 

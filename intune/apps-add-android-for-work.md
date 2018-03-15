@@ -1,12 +1,12 @@
 ---
 title: "將應用程式指派給 Android for Work 裝置"
-titlesuffix: Azure portal
-description: "您可以使用本主題進行同步處理，再將應用程式從 Google Play for Work 商店指派給 Android for Work 裝置。"
+titlesuffix: Microsoft Intune
+description: "了解如何同步處理，並將應用程式從 Google Play for Work 商店指派給 Android for Work 裝置。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 將應用程式指派至 Android for Work 裝置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-將應用程式指派至 Android for Work 裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您針對 Android for Work 安裝的所有應用程式都是來自 Google Play for Work 商店。 您可以登入商店、瀏覽所需的應用程式並核准這些應用程式。
-應用程式接著會出現在 Azure 入口網站的 [授權的應用程式] 節點中。 您可以在這裡管理應用程式的指派，方式與指派任何其他應用程式相同。
+Android for Work 是適用於 Android 裝置的計劃。 您在 Android for Work 裝置上安裝的所有應用程式都是來自 Google Play for Work 商店。 將應用程式指派至 Android for Work 裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您可以登入商店、瀏覽所需的應用程式並核准這些應用程式。 應用程式接著會出現在 Azure 入口網站的 [授權的應用程式] 節點中。 您可以在這裡管理應用程式的指派，方式與指派任何其他應用程式相同。
 
 此外，如果您已建立自己的企業營運 (LOB) 應用程式，則可以依照以下方式指派這些應用程式：
 - 註冊一個 Google 開發人員帳戶，您就能夠在 Google Play 商店的私人區域發佈應用程式。

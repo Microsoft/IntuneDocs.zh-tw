@@ -3,10 +3,10 @@ title: "利用 Intune 的條件式存取"
 titlesuffix: Azure portal
 description: "透過 Intune 使用條件式存取的常見方式"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>透過 Intune 使用條件式存取的常見方式
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-您需要設定 Intune 行動裝置合規性政策和 Intune 行動應用程式管理 (MAM) 功能，以便在組織中導入條件式存取合規性。 讓我們來談談透過 Intune 使用條件式存取的常見方式。
+使用 Intune 的條件式存取有兩種類型。 第一個類型是以裝置為基礎的條件式存取。 第二個類型是以應用程式為基礎的條件式存取。 您需要設定相關的相容性原則以在您的組織推動條件式存取相容性。
+
+下列資訊可協助您了解如何使用 Intune 行動裝置性功能和 Intune 行動應用程式管理 (MAM) 功能。 
 
 ## <a name="device-based-conditional-access"></a>裝置型條件式存取
 
@@ -32,11 +34,11 @@ Intune 與 Azure Active Directory 會共同運作，以確保只有受管理且�
 
 Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合規性狀態會回報給 Azure Active Directory，在使用者嘗試存取公司資源時，使用它來強制執行 Azure Active Directory 中所建立的條件式存取原則。
 
-從[新版 Azure 入口網站](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)開始，適用於 Exchange Online 和其他 Office 365 產品的裝置型條件式存取原則均透過 Azure 入口網站來設定。
+適用於 Exchange Online 和其他 Office 365 產品的裝置型條件式存取原則均透過 [Azure 入口網站](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)來設定。
 
 -   深入了解 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。
 
--   深入了解[什麼是 Intune 裝置合規性](device-compliance.md)。
+-   深入了解 [Intune 裝置相容性](device-compliance.md)。
 
 -   深入了解[透過 Intune 使用條件式存取來保護電子郵件、Office 365 和其他服務](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 

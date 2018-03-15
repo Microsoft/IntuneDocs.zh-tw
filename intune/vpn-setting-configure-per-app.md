@@ -1,7 +1,7 @@
 ---
 title: "在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN"
-titleSuffix: Intune on Azure
-description: "指定哪些受管理應用程式可以在受 Intune 管理的 iOS 裝置使用您的 VPN。"
+titleSuffix: 
+description: "指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。"
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
-您可以指定哪些受管理應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。 您在 Intune 中指定個別應用程式 VPN 後，當終端使用者存取公司文件時，就會自動透過您的 VPN 連線。
+您可以指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。 您在 Intune 中建立個別應用程式 VPN 後，使用者存取公司文件時，就會自動透過您的 VPN 連線。
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>個別應用程式 VPN 的必要條件
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/25/2018
 
 建立或選擇 Azure Active Directory (Azure AD) 中的現有群組，以納入可存取個別應用程式 VPN 的成員。
 
-1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 開啟 Azure 入口網站。 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
 2. 選擇 [群組] 並按一下 [新增群組]。
 3. 鍵入群組的**名稱**。 
 4. 鍵入群組的**名稱**。 
@@ -55,7 +55,7 @@ ms.lasthandoff: 01/25/2018
 
 將 CA 發行的 VPN 伺服器根憑證匯入在 Intune 中建立的設定檔。 受信任的憑證設定檔會指示 iOS 裝置自動信任 VPN 伺服器顯示的 CA。
 
-1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 開啟 Azure 入口網站。 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/25/2018
 
 受信任的根憑證設定檔可讓 iOS 自動信任 VPN 伺服器。 SCEP 憑證提供從 iOS VPN 用戶端連線到 VPN 伺服器的認證。 憑證可讓裝置以無訊息的方式進行驗證，不會提示 iOS 裝置使用者使用者名稱和密碼。 
 
-1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。 
+1. 開啟 Azure 入口網站。 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。 
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -88,16 +88,16 @@ ms.lasthandoff: 01/25/2018
 11. 在 [物件識別碼] 中，鍵入 `1.3.6.1.5.5.7.3.2`。
 12. 按一下 [加入] 。
 13. 鍵入伺服器 URL 並按一下 [新增]。
-14. 按一下 [ **確定**]。
+14. 按一下 [確定]。
 15. 按一下 [建立]。
 
     ![建立 SCEP 憑證設定檔](media\vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>建立個別應用程式 VPN 設定檔
 
-VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
+VPN 設定檔包含具有用戶端認證、VPN 的連線資訊及個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
 
-1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 開啟 Azure 入口網站。 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [+ 建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -115,8 +115,8 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 5. 按一下 [自動 VPN]。 在 [自動 VPN] 中：
     1. 為 [自動 VPN 類型] 選取 [個別應用程式 VPN]。
     2. 鍵入 VPN 的 URL 並按一下 [新增]。
-    3. 按一下 [ **確定**]。
-6. 按一下 [ **確定**]。
+    3. 按一下 [確定]。
+6. 按一下 [確定]。
 7. 按一下 [建立]。
 
     ![建立個別應用程式 VPN 設定檔](media\vpn-per-app-create-vpn-profile.png)
@@ -126,7 +126,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 
 在新增 VPN 設定檔之後，請對設定檔建立應用程式與 Azure AD 群組的關聯。
 
-1. 開啟 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 開啟 Azure 入口網站。 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
 2. 選擇 [Mobile Apps]。
 3. 按一下 [應用程式]。
 4. 從應用程式清單中選取應用程式。
@@ -152,7 +152,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
  - 請確定您將上述提到的「所有」原則部署都到相同的使用者群組。 若未如實執行，個別應用程式 VPN 體驗一定會中斷。  
  - 請確定您已安裝支援的協力廠商 VPN 應用程式。 支援下列 VPN 應用程式：
     - Pulse Secure
-    - Checkpoint
+    - 檢查點
     - F5
     - SonicWall
 
@@ -182,7 +182,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 若要檢閱 iOS 設定，請參閱 [Microsoft Intune 中 iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
 -  若要深入了解 VPN 設定和 Intune，請參閱[如何在 Microsoft Intune 中進行 VPN 設定](vpn-settings-configure.md)。

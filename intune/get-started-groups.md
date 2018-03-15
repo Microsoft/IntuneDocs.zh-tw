@@ -1,10 +1,10 @@
 ---
-title: "開始使用群組"
-titleSuffix: Azure portal
+title: "在 Microsoft Intune 中建立群組"
+titleSuffix: 
 description: "將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>開始使用群組
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>建立群組來管理您的使用者和資料存取
 
 群組是用來管理您的使用者，以及控制您的員工對公司資源的存取。 這些資源可以是您目錄的一部分，也可以是外部資源，例如 SaaS 應用程式或 SharePoint 網站。
 
@@ -35,15 +35,15 @@ Microsoft Intune 使用 Azure Active Directory (Azure AD) 來管理公司資源�
 4. 在 [使用者和群組 - 所有群組] 刀鋒視窗中，選取 [新增群組] 命令。
 5. 在 [群組] 刀鋒視窗中，新增群組的 [名稱] 和 [描述]。
 6. 將 [成員資格類型] 設定為 [指派]。 請不要為測試群組 [啟用 Office 功能]。
-7. 按一下 **建立**。
+7. 按一下 [建立]。
 
 如果您已成功建立群組，它應該會出現在 [所有群組] 清單中。 如果未出現，請嘗試建立另一個群組。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [開始使用原則](get-started-policies.md) - 建立原則，以防止使用者透過其裝置執行未經授權的動作。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 * [在 Intune 中使用群組設定註冊限制](groups-add.md)
 * [使用 Azure Active Directory 群組來管理公司資源存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

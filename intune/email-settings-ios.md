@@ -1,42 +1,42 @@
 ---
-title: "iOS 裝置的 Intune 電子郵件設定"
-titleSuffix: Azure portal
-description: "了解可用於設定 iOS 裝置上電子郵件連線的 Intune 設定。"
+title: "iOS 裝置的 Microsoft Intune 電子郵件設定"
+titleSuffix: 
+description: "了解可用於設定執行 iOS 之裝置上電子郵件設定的 Microsoft Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/24/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7baec2990b9020e8125395b589fba7a965ba86ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1634512c85c156046d0324953463d745be06d649
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的電子郵件設定檔設定
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>在執行 iOS 之裝置上的 Microsoft Intune 電子郵件設定檔設定 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+本文展示您可為執行 iOS 之裝置設定的電子郵件設定檔設定。
 
+## <a name="email-settings"></a>電子郵件設定
 
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
-- **來自 AAD 的使用者名稱屬** -Active Directory (AD) 或 Azure AD 中的這個屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
-- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
-- **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證]作為電子郵件設定檔所使用的驗證方法。
-    - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
-- **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
+- **來自 AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange，或使用 [使用者主體名稱]，將完整的主體名稱用作為電子郵件地址。
+- **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。
+    - 若選取了 [憑證]，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
+- **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL)。
 - **S/MIME** - 使用 S/MIME 簽署傳送外寄電子郵件。
-    - 若選取了 [憑證]，請選取先前所建立的用戶端 SCEP 或 PKCS 憑證 (將用於驗證 Exchange 連線)。
-- **從要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
-- **允許將訊息移至其他電子郵件帳戶** - 其可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
-- **允許從協力廠商應用程式傳送電子郵件** - 允許使用者選取此設定檔作為預設的帳戶來傳送電子郵件，以及允許在原生電子郵件應用程式中開啟協力廠商應用程式以開啟電子郵件，例如，將檔案附加至電子郵件。
-- **同步最近使用過的電子郵件地址** - 使用者可利用此功能，將裝置上最近使用過的電子郵件地址清單，與伺服器同步。
+    - 若選取了 [憑證]，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
+- **要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制]，同步處理所有可用的電子郵件。
+- **允許將訊息移至其他電子郵件帳戶** - 這選項可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
+- **允許從協力廠商應用程式傳送電子郵件** - 允許使用者選取此設定檔作為傳送電子郵件的預設帳戶，以及允許協力廠商的應用程式在原生電子郵件應用程式中開啟開啟電子郵件，例如，將檔案附加至電子郵件。
+- **同步處理最近使用過的電子郵件地址** - 使用者可利用此功能，將裝置上最近使用過的電子郵件地址清單，與伺服器同步。

@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 檢視您管理的裝置，並了解其�
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39351e76c2510f7411c64d4bc3e3275bc051c63e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如何檢視 Intune 裝置清查
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 01/25/2018
 
 檢視裝置清查：
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
 
 現在，請選擇下列其中一個選項：

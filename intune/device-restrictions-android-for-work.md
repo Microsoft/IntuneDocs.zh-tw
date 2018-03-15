@@ -1,35 +1,39 @@
 ---
-title: "針對 Android for Work 的 Intune 裝置限制設定"
-titlesuffix: Azure portal
-description: "了解 Android for Work 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "針對 Android for Work 的 Microsoft Intune 裝置限制設定"
+titlesuffix: 
+description: "了解執行 Android for Work 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置限制設定
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Microsoft Intune Android for Work 裝置限制設定
+
+本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Android for Work 的裝置進行設定。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作設定檔設定
+
+### <a name="general-settings"></a>一般設定
+
 -   **在工作與個人設定檔之間複製和貼上** - 控制工作和個人應用程式之間的複製和貼上。 選擇 [封鎖] 啟用封鎖。 選擇 [未設定] 停用封鎖。
-- **工作設定檔與個人設定檔之間的資料共用**：使用此設定來控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定會從 Intune 入口網站加以管理，並使用 Android for Work 工作設定檔分割區來隔離受管理的應用程式。 從下列選項進行選擇：
+- **工作設定檔與個人設定檔之間的資料共用**：使用此設定來控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定會從 Intune 入口網站加以管理，並使用 Android for Work 工作設定檔分割區來隔離受控應用程式。 從下列選項進行選擇：
     - **預設共用限制** - 此設定是裝置的預設共用行為，會視正在執行的 Android 版本而有所不同。 預設允許從個人設定檔共用至工作設定檔。 預設也會封鎖從工作設定檔共用至個人設定檔。 此設定是為了防止資料從工作設定檔共用至個人設定檔。 Google 並未針對執行版本 6.0 和更新版本的裝置提供任何方式來封鎖從個人設定檔共用至工作設定檔。   
     - **工作設定檔中的應用程式可以處理來自個人設定檔的共用要求**：使用此選項來啟用允許從個人設定檔共用至工作設定檔的內建 Android 功能。 啟用時，來自個人設定檔中應用程式的共用要求，可以與工作設定檔中的應用程式共用。 此設定是執行早於 6.0 版本之 Android 裝置的預設行為。
-    - **允許跨界限進行共用**：跨工作設定檔界限啟用雙向共用。 當您選取此設定時，工作設定檔中的應用程式可以和個人設定檔中不具徽章的應用程式共用資料。 請小心使用此設定，因為它可讓工作設定檔中受管理的應用程式與裝置未受管理端上的應用程式共用。
+    - **允許跨界限進行共用**：跨工作設定檔界限啟用雙向共用。 當您選取此設定時，工作設定檔中的應用程式可以和個人設定檔中不具徽章的應用程式共用資料。 請小心使用此設定，因為它可讓工作設定檔中受控應用程式與裝置未受控端上的應用程式共用。
 
 -   **裝置鎖定時的工作設定檔通知**：控制工作設定檔中的應用程式是否可以在裝置鎖定時顯示通知中的資料。
 -   **預設應用程式權限**：設定工作設定檔中所有應用程式的預設權限原則。 從 Android 6 開始，會在啟動應用程式時，提示使用者授與應用程式所需的特定權限。 此原則設定可讓您決定是否要提示使用者來為工作設定檔中的所有應用程式授與權限。 例如，您可以將應用程式指派至需要位置存取的工作設定檔。 通常，該應用程式會提示使用者核准或拒絕對應用程式的位置存取。 此原則可讓您決定是否應自動授與所有權限而不提示、自動拒絕而不提示，或是讓終端使用者決定。 從下列選項進行選擇：
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **自動拒絕**
 
     您可以針對特定應用程式進一步定義權限的授與狀態，方法是定義個別應用程式的應用程式組態原則 (位於 [行動應用程式] > [應用程式組態原則] 下方)。
+
+- **新增和移除帳戶**
+
+   防止終端使用者在工作設定檔中手動新增或移除帳戶。
+
+   例如，當您將 Gmail 應用程式部署到 Android for Work 設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
 
 ### <a name="work-profile-password"></a>工作設定檔密碼
 - **需要工作設定檔密碼**：(已啟用工作設定檔的 Android 7.0 和更新版本) 定義只適用於工作設定檔中之應用程式的密碼原則。 根據預設，終端使用者能選擇使用這兩個個別定義的 PIN，或選擇結合兩者，並使用兩者中的較強者。
@@ -85,6 +95,6 @@ ms.lasthandoff: 01/25/2018
    > [!Note]  
    > 此設定僅適用於 Android O 或更新版本的裝置。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-使用[如何設定裝置限制設定](device-restrictions-configure.md)主題中的資訊進行儲存，並將設定檔指派給使用者和裝置。
+使用[如何設定裝置限制設定](device-restrictions-configure.md)中的資訊進行儲存，並將設定檔指派給使用者和裝置。

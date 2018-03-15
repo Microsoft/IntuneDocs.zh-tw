@@ -1,31 +1,30 @@
 ---
-title: "Android 的 Intune 裝置限制設定"
-titlesuffix: Azure portal
-description: "了解 Android 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "Android 的 Microsoft Intune 裝置限制設定"
+titlesuffix: 
+description: "了解執行 Android 的裝置上可用以控制裝置設定與功能之 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 與 Samsung Knox Standard 裝置限制設定
+# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 與 Samsung Knox Standard 裝置限制設定 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-搭配 Android 裝置限制原則使用這些設定，來設定您組織中的裝置。
+本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Android 的裝置進行設定。
 
 >[!TIP]
 >如果沒有您想要的設定，您可以使用[自訂設定檔](custom-settings-android.md)來設定裝置。
@@ -42,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 - **螢幕擷取 (僅限 Samsung Knox)** - 讓使用者將螢幕內容擷取成影像。
 - **語音助理 (僅限 Samsung Knox)** - 允許在裝置上使用語音助理軟體。
 - **YouTube (僅限 Samsung Knox)** - 允許在裝置上使用 YouTube 應用程式。
-- **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
+- **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，終端使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓終端使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
 - **封鎖日期和時間變更 (Samsung Knox)** - 防止使用者在裝置上變更日期和時間設定。 
 
 ## <a name="password"></a>密碼
@@ -60,7 +59,7 @@ ms.lasthandoff: 02/09/2018
     - **至少包含字母**
     - **至少包含英數字元**
     - **至少包含英數字元和符號**
-- **避免重複使用先前的密碼** - 讓使用者無法建立以前用過的密碼。
+- **避免重複使用先前的密碼** - 讓終端使用者無法建立以前用過的密碼。
 - **指紋解除鎖定 (僅限 Samsung Knox)** - 允許使用指紋將支援的裝置解除鎖定。
 - **Smart Lock 與其他信任代理程式** - 可讓您控制相容 Android 裝置 (Samsung Knox Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時稱為信任代理程式) 可讓您在裝置位於受信任的位置時，停用或略過裝置鎖定畫面密碼。 例如，當裝置連線到特定的藍牙裝置或靠近 NFC 標記時，就能使用此功能。 您可以使用此設定來防止使用者設定 Smart Lock。
 - **加密** - 需要加密裝置上的檔案。
@@ -80,7 +79,7 @@ ms.lasthandoff: 02/09/2018
 
 在受限應用程式清單中，您可以針對 Android 和 Samsung Knox Standard 裝置設定下列其中一個清單：
 
-**禁止的應用程式**清單：列出使用者安裝與執行時將會回報的應用程式 (並非由 Intune 管理)。
+**禁止的應用程式**清單：列出使用者安裝與執行時會回報的應用程式 (並非由 Intune 管理)。
 **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 為了持續符合規範，使用者絕不能安裝其他應用程式。 自動允許 Intune 所管理的應用程式。
 包含受限應用程式設定的裝置設定檔，必須指派給使用者群組。
 
@@ -111,7 +110,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="allow-or-block-apps"></a>允許或封鎖應用程式
 
 針對執行 Samsung Knox Standard 的裝置，這些設定可以用來指定只能在這些裝置上安裝或啟動的應用程式。
-此外，您還可以指定將會對裝置使用者隱藏的已安裝應用程式。 使用者將無法執行這些應用程式。
+此外，您還可以指定會對裝置使用者隱藏的已安裝應用程式。 使用者無法執行這些應用程式。
 
 - **允許安裝的應用程式 (僅限 Samsung Knox Standard)**
 - **禁止應用程式啟動 (僅限 Samsung Knox Standard)**
@@ -153,6 +152,6 @@ Kiosk 設定僅套用至 Samsung Knox Standard 裝置，且只套用至您使用
 - **音量按鈕** - 啟用或停用裝置上的音量按鈕。
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 繼續使用[如何設定裝置限制設定](device-restrictions-configure.md)中的指示建立裝置限制設定檔，然後進行指派。

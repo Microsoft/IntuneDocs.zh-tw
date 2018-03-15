@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune App SDK Xamarin 元件"
-description: 
+description: "Intune App SDK Xamarin 元件可在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 Intune 應用程式保護原則。"
 keywords: sdk, Xamarin, intune
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 02/08/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,24 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 元件
 
 > [!NOTE]
 > 您可能想要先閱讀 [Intune App SDK 快速入門](app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
 
-
-
 ## <a name="overview"></a>概觀
-[Intune App SDK Xamarin 元件 (英文)](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將 Intune 應用程式內資料保護功能建置到以 Xamarin 為基礎的應用程式。
+[Intune App SDK Xamarin 元件](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)能在使用 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 元件可讓開發人員輕鬆將 Intune 應用程式內資料保護功能建置到以 Xamarin 為基礎的應用程式。
 
 > [!NOTE]
 > Xamarin 的 Intune SDK 支援目前可供預覽。 
 
-Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入使用 Xamarin 所開發的應用程式。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
+Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入使用 Xamarin 所開發的應用程式。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式。 IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
 ## <a name="whats-supported"></a>支援的項目
 
@@ -50,7 +48,7 @@ Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保�
 
 * Intune MDM 已註冊的裝置
 * 協力廠商 EMM 已註冊的裝置
-* 未受管理的裝置 (未使用任何 MDM 註冊)
+* 未受控裝置 (未使用任何 MDM 註冊)
 
 使用 Intune App SDK Xamarin Component 建置的 Xamarin 應用程式，現在可以在 Intune 行動裝置管理 (MDM) 註冊裝置和未註冊裝置上，接收 Intune 應用程式保護原則。
 
@@ -108,6 +106,6 @@ Microsoft Intune App SDK Xamarin Component 可讓您將 Intune 應用程式保�
 
 3.  將新增之 `remapping-config.json` 檔案的建置動作設為 **RemappingConfigFile**。 包含的 `remapping-config.json` 僅適用於 Xamarin.Forms。 若為其他 UI 架構，請參閱 Remapper NuGet 套件所包含的讀我檔案。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您已完成將元件建置成應用程式的基本步驟。 現在您可以依照 Xamarin Android 範例應用程式中的步驟。 我們提供了兩個範例，一個用於 Xamarin.Forms，另一個適用於 Android。

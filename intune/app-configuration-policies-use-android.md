@@ -1,12 +1,12 @@
 ---
-title: "為受管理的 Android 裝置新增應用程式設定原則 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何使用應用程式設定原則在 Android for Work 應用程式執行時，將設定資料提供給該應用程式。"
+title: "為受管理的 Android 裝置新增應用程式設定原則"
+titlesuffix: Microsoft Intune
+description: "在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android for Work 應用程式時的設定。"
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android for Work 應用程式時的設定。 您不會直接將這些原則部署給使用者與裝置。 而是將原則與應用程式關聯，然後再指派應用程式。 每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
+在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android for Work 應用程式時的設定。 您不會直接將這些原則部署給使用者與裝置。 而是建立原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
 
 > [!Note]  
 > 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們建置的應用程式是否支援應用程式設定原則。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 選擇 [Mobile Apps] 工作負載。
 4. 選擇 [管理] 群組中的 [應用程式設定原則]，然後選擇 [新增]。
 5. 使用下列詳細資料：
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/25/2018
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**  
       選擇 [受管理裝置]。
-6. 為 [平台] 選取 [Android]。
+6. 為 [平台] 選取 [Android for Work]。
 7. 選取 [相關聯的應用程式] 來選擇您要定義應用程式設定原則的應用程式。 從 Android for Work 應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 8. 選取 [組態設定]。 您可以透過下列方式設定組態：
     - [設定設計工具](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ ms.lasthandoff: 01/25/2018
 
 您也可以預先設定應用程式的權限，以存取 Android 裝置功能。 根據預設，需要裝置權限 (例如存取位置或裝置相機) 的 Android 應用程式會提示使用者接受或拒絕授與權限。 例如，若應用程式會使用裝置的麥克風，則系統會提示使用者授與應用程式使用麥克風的權限。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
-3. 選擇 [Mobile Apps]。 在 [管理] 下方，選擇 [應用程式設定原則]，然後選擇 [新增]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 選擇 [Mobile Apps]。
+3. 在 [管理] 下方，選擇 [應用程式設定原則]，然後選擇 [新增]。
 4. 使用下列詳細資料：
     - **名稱**。 將在 Azure 入口網站中顯示的設定檔名稱。
     - **描述**。 將在 Azure 入口網站中顯示的設定檔描述。
-    - **平台**。 選取 [Android]。
-    - **裝置註冊類型**。 已經預先為您選取 [受管理的裝置]。
+    - **裝置註冊類型**。 選取 **受控裝置**。
+    - **平台**。 選取 **Android for Work**。
 5. 選取 [相關聯的應用程式] 來選擇您要定義設定原則的應用程式。 從 Android for Work 應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 6. 選取 [權限]，然後選擇 [新增]。
 7. 從可用應用程式權限的清單選取權限，然後選擇 [確定]。

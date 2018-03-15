@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 管理裝置"
-titleSuffix: Intune on Azure
-description: "了解如何使用 Intune 查看您管理的裝置，以及對這些裝置執行各種動作。"
+title: "使用 Microsoft Intune 管理行動裝置"
+titleSuffix: 
+description: "使用 Intune 檢閱您管理的裝置，以及對這些裝置執行各種動作。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 01/25/2018
 
 **裝置**工作負載可讓您深入了解您所管理的裝置，並讓您從遠端對這些裝置執行工作。 若要存取工作負載︰
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 **Intune** 中選擇 [裝置]。
 4. 您可以檢視裝置的相關資訊，並執行下列遠端裝置動作：
     - **概觀** - 您可以管理的已註冊裝置快照集。
@@ -38,10 +38,12 @@ ms.lasthandoff: 01/25/2018
     - **Azure AD 裝置** - 與 Azure Active Directory (AD) 註冊或聯結的裝置清單。 深入了解 [Azure AD 裝置管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。
     - **裝置動作** - 在裝置上執行的遠端動作記錄，包括動作、其狀態、起始動作的人員及時間。
 
-    ![監視裝置動作](./media/monitor-device-actions.png)
+        ![監視裝置動作的螢幕擷取畫面](./media/monitor-device-actions.png)
 
-    - **TeamViewer** - TeamViewer 服務可讓 Intune 管理的 Android 裝置使用者，從他們的 IT 系統管理員處取得遠端協助。 深入了解 [TeamViewer](device-profile-android-teamviewer.md)。
-
+    - **稽核記錄** - 稽核記錄提供您在 Microsoft Intune 中產生變更之活動的記錄。 深入了解[稽核記錄](monitor-audit-logs.md)。
+    - **TeamViewer 連接器** - TeamViewer 服務可讓 Intune 管理的 Android 裝置使用者，從他們的 IT 系統管理員處取得遠端協助。 深入了解 [TeamViewer](device-profile-android-teamviewer.md)。
+    - **說明及支援** - 進行疑難排解、要求支援，或者檢視 Intune 狀態。  
+    
 ## <a name="available-device-actions"></a>可執行的裝置動作
 可用的動作取決於裝置平台和裝置設定。
 

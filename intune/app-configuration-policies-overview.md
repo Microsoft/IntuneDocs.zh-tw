@@ -1,7 +1,7 @@
 ---
-title: "Intune 的應用程式設定原則 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 的應用程式設定原則。"
+title: "Intune 的應用程式設定原則"
+titlesuffix: Microsoft Intune
+description: "了解在 Intune 中如何於 iOS 或 Android 裝置上使用應用程式設定原則。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7267de95d36ed0e27c8a720599cc78004cd71d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52e0906b58680fa0b5628b2b5fc7445f8135658a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 的應用程式設定原則
 
@@ -37,9 +37,9 @@ ms.lasthandoff: 01/25/2018
 您不會直接將這些原則部署給使用者與裝置。 而是將原則與應用程式關聯，然後再指派應用程式。 每當應用程式檢查是否有原則設定時 (通常於初次執行時)，都會加以使用。
 
 對於如何使用 Intune 的應用程式設定，您有兩個選項：
- - **受管理的裝置**  
+ - **受控裝置**  
    Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
- - **受管理的應用程式**  
+ - **受控應用程式**  
    在不註冊裝置的情況下管理應用程式。
 
 ## <a name="apps-that-support-app-configuration"></a>支援應用程式設定的應用程式
@@ -52,13 +52,13 @@ ms.lasthandoff: 01/25/2018
 
 此外，您也可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (以圖形 API 參考 MAM 為目標的設定)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-### <a name="managed-devices"></a>受管理的裝置
+### <a name="managed-devices"></a>受控裝置
 
- - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受管理的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
- - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
+ - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+ - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受控的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
 
-### <a name="managed-apps"></a>受管理的應用程式
+### <a name="managed-apps"></a>受控應用程式
 
- - 了解如何在受管理的應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。
+ - 了解如何在受控應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受控應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。

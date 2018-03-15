@@ -1,12 +1,12 @@
 ---
 title: "使用 Managed Browser 應用程式管理 Web 存取"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "部署 Managed Browser 應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。"
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -63,17 +63,17 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 
 ## <a name="create-a-managed-browser-app-configuration"></a>建立 Managed Browser 應用程式設定
 
-1.  登入 Azure 入口網站。
-2.  選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3.  在 [管理] 清單的 [Mobile Apps] 刀鋒視窗中，選擇 [應用程式設定原則]。
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
-5.  在 [新增應用程式設定] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
+5.  在 [新增設定原則] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
 6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
-7.  選擇 [Select the required apps] \(選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]。
-8.  選擇 [確定] 返回 [新增應用程式設定] 刀鋒視窗。
+7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的**受控瀏覽器**。
+8.  選擇 [確定] 返回 [新增設定原則] 刀鋒視窗。
 9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 10. 完成後，請選擇 [確定]。
-11. 在 [新增應用程式設定] 刀鋒視窗上，選擇 [建立]。
+11. 在 [新增設定原則] 刀鋒視窗上，選擇 [新增]。
 12. 就會建立新設定，然後在 [應用程式設定] 刀鋒視窗上顯示。
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
 
 您可以將設定指派給使用者的 Azure AD 群組。 如果該使用者已經安裝 Managed Browser 應用程式，則此應用程式是由您指定的設定管理。
 
-1. 在 Intune 行動應用程式管理儀表板的 [設定] 刀鋒視窗上，選擇 [應用程式設定]。
+1. 在 Intune 行動應用程式管理儀表板的 [行動應用程式] 刀鋒視窗上，選擇 [應用程式設定原則]。
 2. 從應用程式設定清單，選取您要指派的設定。
-3. 在下一個刀鋒視窗中選擇 [使用者群組]。
-4. 在 [使用者群組] 刀鋒視窗中，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]。
+3. 在下一個刀鋒視窗上，選擇 [指派]。
+4. 在 [指派] 刀鋒視窗上，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]。
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>如何設定 Managed Browser 的應用程式 Proxy 設定

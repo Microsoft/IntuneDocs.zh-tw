@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-sync-a-device"></a>如何同步裝置
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選擇裝置，然後選擇 [同步] 遠端動作。
+4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
+5. 從您管理的裝置清單中，依序選擇裝置、[...其他]，然後選擇 [同步] 遠端動作。
 7. 選擇 [是] 確認該動作。
 
 

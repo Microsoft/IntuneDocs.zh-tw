@@ -1,7 +1,7 @@
 ---
-title: "如何在 Intune 中使用裝置類別"
-titleSuffix: Azure portal
-description: "了解如何運用使用者在 Intune 中註冊其裝置時可選擇的裝置類別。"
+title: "如何在 Intune 中將裝置分組為群組"
+titleSuffix: Microsoft Intune
+description: "了解如何將裝置分類成群組，以便管理。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1200ce4ab5d24f8c9212c064961a167e0ec6c42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="map-device-groups"></a>對應裝置群組
+# <a name="categorize-devices-into-groups-for-easier-management"></a>將裝置分類成群組以便管理
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,11 +41,11 @@ ms.lasthandoff: 01/25/2018
 ## <a name="how-to-configure-device-categories"></a>如何設定裝置類別
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步驟 1 - 在 Azure 入口網站的 Intune 刀鋒視窗中，建立裝置類別
-1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選擇 [All services] (所有服務) > Intune。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置註冊]。
 3. 在 [裝置註冊] 刀鋒視窗中，選擇 [裝置類別]。
 4. 在 [裝置類別] 頁面上，選擇 [建立] 以新增新的類別。
-5. 在下一個刀鋒視窗中，為新類別輸入 [名稱]，以及選用的 [描述]。
+5. 在 [建立裝置類別] 刀鋒視窗中，為新類別輸入 [名稱]，以及選用的 [描述]。
 6. 完成時按一下 [建立]。 您可以在類別清單中看到新類別。
 
 當您在步驟 2 中建立 Azure Active Directory 安全性群組時，您將會使用裝置類別名稱。
@@ -61,27 +61,29 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>如何檢視您管理的裝置類別
 
-1.  在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
+1.  在 [Azure 入口網站](https://portal.azure.com)中，選擇 [All services] (所有服務) > Intune。 Intune 位於 [監視 + 管理] 區段。
 
-2. 在 Azure 入口網站的 [Intune] 刀鋒視窗中，選擇 [裝置和群組]。
+2. 在 Azure 入口網站的 [Intune] 刀鋒視窗中，選擇 [裝置]。
 
 3.  在 [管理] 之下，按一下 [所有裝置]。
 
-4.  在裝置清單中，檢查 [類別] 資料行。
+4.  在裝置清單中，檢查 [裝置類別] 資料行。
 
-如果沒有顯示 [類別] 資料行，請按一下 [資料行]，從清單中選擇 [類別]，然後按一下 [套用]。
+如果沒有顯示 [裝置類別] 資料行，請按一下 [資料行]、從清單選擇 [裝置類別]，然後按一下 [套用]。
 
 ### <a name="to-change-the-category-of-a-device"></a>變更裝置類別
 
-1. 在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置和群組]。
-4. 在 [裝置和群組] 刀鋒視窗中，選擇 [管理]  > [所有裝置]。
-5. 在裝置清單中，選擇您的裝置，然後在 [裝置屬性] 刀鋒視窗中，選擇 [管理]  > [屬性]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選擇 [All services] (所有服務) > Intune。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
+4. 在 [裝置] 刀鋒視窗的 [管理] 區段下，選擇 [所有裝置]。
+5. 在裝置清單中，選擇您要的裝置，然後在 [裝置屬性] 刀鋒視窗的 [管理] 區段下，選擇 [屬性]。
 6. 在下一個刀鋒視窗中，您可將所選裝置的 [裝置類別] 變更為任一您先前設定的類別名稱。
 
 ## <a name="after-you-configure-device-groups"></a>設定裝置群組之後
 
 當 iOS 和 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
+
+Windows 上的終端使用者應該使用公司入口網站來選取類別。
 
 無論何種平台，您的使用者一律可在註冊裝置後移至 portal.manage.microsoft.com。 讓使用者存取公司入口網站，並移至 [我的裝置]。 他們可以選擇頁面中列出的已註冊裝置，然後選取類別。
 

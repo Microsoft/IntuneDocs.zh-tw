@@ -3,10 +3,10 @@ title: "管理來自商務用 Microsoft 網上商店的應用程式"
 titlesuffix: Azure portal
 description: "了解如何將應用程式從商務用 Microsoft 網上商店同步到 Intune，然後加以指派及追蹤。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -39,12 +39,15 @@ ms.lasthandoff: 01/25/2018
 
 - 將 Intune 設定為組織的行動裝置管理授權單位。
 - 您必須已在商務用 Microsoft 網上商店註冊帳戶。
-- 一旦您將 Intune 與企業用 Windows 市集帳戶建立關聯，未來將無法變更為不同帳戶。
+- 一旦您將 Intune 與商務用 Microsoft Store 帳戶建立關聯，未來將無法變更為不同帳戶。
 - 從市集購買的應用程式無法手動加入 Intune 中，或從中刪除。 它們只能與商務用 Microsoft 網上商店同步處理。
-- Intune 會同步處理您透過商務用 Microsoft 網上商店購買的線上和離線授權應用程式。
-- 只有免費的離線應用程式才能同步處理至 Intune。
+- 您透過商務用 Microsoft Store 購買的線上和離線授權應用程式都會同步處理到 Intune 入口網站。 您接著可將這些應用程式部署至裝置群組或使用者群組。 
+- 線上應用程式安裝由市集來管理。
+- 免費的離線應用程式也可以同步處理至 Intune。 這些應用程式會透過 Intune 安裝，而不透過市集。
 - 裝置必須加入 Active Directory Domain Services 或工作場所，才能使用此功能。
 - 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
+
+此外，從商務用 Microsoft 市集同步處理的相關集合和離線授權應用程式，現在將合併成 UI 中的單一應用程式項目。 來自個別套件的任何部署詳細資料都會移轉到單一項目。 若要在 Azure 入口網站中檢視相關的集合，請選取 [Mobile Apps] 刀鋒視窗中的 [應用程式授權]。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>建立您的商務用 Microsoft 網上商店帳戶與 Intune 的關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
@@ -62,11 +65,12 @@ ms.lasthandoff: 01/25/2018
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-1. 在 [Mobile Apps] 刀鋒視窗中選擇 [安裝] > [商務用 Microsoft 網上商店]。
-2. 按一下 [啟用]。
-3. 若還未執行此動作，請遵循前文所述按一下連結來註冊商務用 Microsoft 網上商店並關聯您的帳戶。
-5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店應用程式在 Azure 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
-6. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
+4. 在 [Mobile Apps] 刀鋒視窗中選擇 [安裝] > [商務用 Microsoft 網上商店]。
+5. 按一下 [啟用]。
+6. 若還未執行此動作，請遵循前文所述按一下連結來註冊商務用 Microsoft 網上商店並關聯您的帳戶。
+7. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店應用程式在 Azure 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
+8. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
+9. 按一下 **[儲存]**。
 
 ## <a name="synchronize-apps"></a>同步處理應用程式
 

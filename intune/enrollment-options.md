@@ -1,6 +1,7 @@
 ---
-title: "Intune 註冊選項"
-description: 
+title: "Microsoft Intune 所管理裝置的註冊選項"
+titleSuffix: 
+description: "系統管理員可針對 Microsoft Intune 所管理裝置來設定的註冊選項清單。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Intune 註冊選項
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune 所管理裝置的註冊選項
 
 身為 Intune 管理員，您可以設定裝置註冊，協助使用者並啟用 Intune 的功能。  Intune 包含下列註冊選項：
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="corporate-identifiers"></a>公司識別碼
 
 您可以列出國際行動設備識別碼 (IMEI) 編號及序號，以識別公司擁有的裝置。 深入了解[公司識別碼](corporate-identifiers-add.md)。
-## <a name="multi-factor-authentication"></a>[Multi-Factor Authentication]
+## <a name="multi-factor-authentication"></a>Multi-factor authentication
 
 您可以要求使用者在註冊裝置時使用其他驗證方法，例如電話、PIN 或生物特徵辨識資料。 深入了解[多重要素驗證](multi-factor-authentication.md)。
 

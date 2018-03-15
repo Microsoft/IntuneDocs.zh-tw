@@ -1,7 +1,7 @@
 ---
 title: "將公司識別碼新增至 Intune"
-titlesuffix: Azure portal
-description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。 \""
+titlesuffix: Microsoft Intune
+description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
 
- ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區螢幕擷取畫面。](./media/add-corp-id.png)
+ ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區](./media/add-corp-id.png)
 
 2. 在 [新增識別碼] 刀鋒視窗中，指定識別碼類型：[IMEI] 或 [序號]。 您可以指定先前匯入的數字是否應該「覆寫現有識別碼的詳細資料」。
 
@@ -100,4 +100,4 @@ ms.lasthandoff: 01/25/2018
 3. 選擇 [內容]。
 4. 將 [裝置擁有權] 指定為 [個人] 或 [公司]。
 
-  ![顯示裝置類別及裝置擁有權選項之裝置內容的螢幕擷取畫面。](./media/device-properties.png)
+  ![顯示裝置類別及裝置擁有權選項的裝置內容](./media/device-properties.png)

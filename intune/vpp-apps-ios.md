@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc5ebd90483b0fa0e25461574085bd4160f012ea
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
+ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -134,17 +134,20 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>撤銷應用程式授權和刪除權杖 
 
-<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+<!-- 820863 -->  
+對於具有一或多個 iOS Volume Purchasing Program (VPP) 應用程式的指定裝置，您可將裝置撤銷與其建立關聯的裝置應用程式授權。 撤銷應用程式授權將不會從該裝置解除安裝相關聯的 VPP 應用程式。 若要解除安裝 VPP 應用程式，並回收授權，您必須將 VPP 應用程式的指派類型變更為 [解除安裝]。 如果您移除已指派給使用者的應用程式，Intune 會回收使用者或裝置授權，並從裝置解除安裝應用程式。
 
 >[!NOTE]
 >當員工離職且不再屬於 AAD 群組時，Intune 會擷取所有使用者授權的 iOS VPP 應用程式授權。
 
-<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+<!-- 820879 -->  
+您可以使用主控台來刪除 iOS 大量採購方案 (VPP) 權杖。 當您擁有重複的 VPP 權杖執行個體時，這可能是必要的。 刪除權杖也會刪除任何相關聯的應用程式和指派。 不過，刪除權杖不會撤銷應用程式授權或解除安裝應用程式。 
 
 >[!NOTE]
 >刪除權杖之後，Intune 無法撤銷應用程式授權。 
 
-<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+<!-- 820870 -->  
+若要撤銷指定 VPP 權杖的所有 VPP 應用程式的授權，您必須先撤銷與權杖建立關聯的所有應用程式授權，然後刪除權杖。
 
 ## <a name="further-information"></a>進一步資訊
 

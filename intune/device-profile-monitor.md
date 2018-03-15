@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中監視裝置設定檔
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 01/25/2018
 您有兩種方式可以監視 Intune 裝置設定檔的指派進度︰
 
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
+2. 在 [裝置設定] 刀鋒視窗的 [管理] 區段下，選擇 [設定檔]。
 2. 在設定檔刀鋒視窗清單中，選擇您要管理的設定檔，然後︰
-    - 在 <*設定檔名稱*> [報表] 刀鋒視窗中，選擇 [概觀] 可查看設定檔及其指派的相關基本資訊。
-    - 在 <*設定檔名稱*>  [報表] 刀鋒視窗中，選擇 [概觀] 可查看設定檔及其指派的相關基本資訊。
+    - 在 <設定檔名稱> [裝置設定檔] 刀鋒視窗中，選擇 [概觀] 可查看設定檔及其指派的基本資訊。
+    - 在 <設定檔名稱> [裝置設定檔] 刀鋒視窗中，選擇 [指派] 可查看設定檔及其指派的詳細資訊。

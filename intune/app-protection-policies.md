@@ -1,12 +1,12 @@
 ---
 title: "建立及部署應用程式保護原則"
-titleSuffix: Azure portal
-description: "了解 Intune 應用程式保護原則如何協助保護您管理之應用程式所使用的公司資料。"
+titleSuffix: Microsoft Intune
+description: "了解如何建立及指派 Microsoft Intune 應用程式防護原則。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,18 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+了解如何建立及指派 Microsoft Intune 應用程式防護原則給使用者。 本主題也會描述如何變更現有的原則。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -34,96 +37,98 @@ ms.lasthandoff: 01/25/2018
 如果您正在尋找 MAM 支援之應用程式的清單，請參閱 [MAM 應用程式清單](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 ##  <a name="create-an-app-protection-policy"></a>建立應用程式保護原則
-1.  在 [行動應用程式] 工作負載中，選擇 [管理] > [應用程式保護原則]。
-
-2.  這會開啟 [應用程式原則] 刀鋒視窗，讓您從中建立新的原則及編輯現有的原則。 選擇 **[新增原則]**。
+1.  在 [行動應用程式] 工作負載中，從 [管理] 區段中選取 [應用程式防護原則]。 此選取項目會開啟 [應用程式原則] 的詳細資料，讓您從中建立新的原則及編輯現有的原則。 
+2. 選擇 [新增原則]。 
 
   ![[新增原則] 刀鋒視窗的螢幕擷取畫面](./media/app-protection-add-policy.png)
 
-3.  輸入原則的名稱、新增簡短描述並選取平台類型，以建立適用於 iOS 或 Android 的原則。 您可以針對每部平台建立多項原則。
+3.  為您的原則鍵入名稱、新增簡短描述並選取平台類型。 如需要，您可以針對每個平台建立多項原則。
 
-4.  選擇 [應用程式] 開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 請從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 選取應用程式之後，選擇 [應用程式] 刀鋒視窗底部的 [選取] 儲存您的選擇。
+4.  選擇 [應用程式] 以開啟 [應用程式]  刀鋒視窗，其中會顯示可用的應用程式清單。 請從清單中選取要與所建立之原則建立關聯的一或多個應用程式。 
+5. 選取應用程式後，請選擇 [選取] 來儲存您的選擇。
 
     > [!IMPORTANT]
     > 您至少必須選取一個應用程式，才能建立原則。
 
-5.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 開啟 [原則設定] 刀鋒視窗。
+6.  在 [新增原則] 刀鋒視窗上，選擇 [設定必要設定] 以開啟 [設定]。
 
-    原則設定分為兩類：[資料重新配置] 和 [存取]。  資料重新配置原則適用於在應用程式中移入及移出資料，而存取原則決定使用者如何存取工作內容中的應用程式。
+    原則設定分為兩類：[資料重新配置] 和 [存取]。  資料重新配置原則適用於應用程式的資料移入和移出。 存取原則決定終端使用者如何存取工作內容中的應用程式。
     原則設定中的預設值可協助您開始使用。 如果預設值符合您的需求，則不需要進行任何變更。
 
     > [!TIP]
-    > 只有在工作內容中使用應用程式時，才會強制執行這些原則設定。  當使用者使用應用程式來執行個人工作時，不會受到這些原則的影響。
+    > 只有在工作內容中使用應用程式時，才會強制執行這些原則設定。 當終端使用者使用應用程式來執行個人工作時，不會受到這些原則的影響。
 
+7.  選擇 [確定] 儲存這項設定。 現在您已回到 [新增原則]  窗格。 選擇 [建立] 建立原則並儲存您的設定。
+8. 選擇 [確定] 儲存這項設定。 現在您已回到 [新增原則]  刀鋒視窗。 
+9. 選擇 [建立] 建立原則並儲存您的設定。
 
-
-6.  選擇 [確定] 儲存這項設定。 現在您已回到 [新增原則]  刀鋒視窗。 選擇 [建立] 建立原則並儲存您的設定。
-
-
-當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。 若要部署原則，請參閱下列章節＜將原則部署給使用者＞。
+當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。 若要部署原則，請參閱[＜將原則部署給使用者＞](app-protection-policies.md#deploy-a-policy-to-users)。
 
 ## <a name="deploy-a-policy-to-users"></a>將原則部署給使用者
 
-1.  在 [原則] 刀鋒視窗中，選擇 [使用者群組] 開啟 [使用者群組] 刀鋒視窗。 在 [使用者群組] 刀鋒視窗中，選擇 [新增使用者群組] 開啟 [新增使用者群組] 刀鋒視窗。
 
-  ![反白顯示 [新增使用者群組] 功能表選項的 [使用者群組] 刀鋒視窗的螢幕擷取畫面](./media/app-protection-policy-add-users.png)
+1. 在 [應用程式防護原則] 窗格中，選取原則。
 
-2.  [新增使用者群組]  刀鋒視窗中會顯示使用者群組清單。 這是 **Azure Active Directory**中的所有安全性群組清單。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
-  ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 刀鋒視窗的螢幕擷取畫面](./media/azure-ad-user-group-list.png)
+1. 在 [原則] 窗格中，選擇 [指派]，這會開啟 [Intune 應用程式防護 - 指派] 窗格。 在 [指派] 窗格中選擇 [選取要包含的群組]，來開啟 [選取要包含的群組] 窗格。
+
+   ![將 [選取要包含的群組] 功能表選項反白之指派窗格的螢幕擷取畫面](./media/app-protection-policy-add-users.png)
+
+2.  [新增使用者群組]  窗格中會顯示使用者群組清單。 此清單會顯示 **Azure Active Directory**中的所有安全性群組。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
+  
+    ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 窗格的螢幕擷取畫面](./media/azure-ad-user-group-list.png)
 
 您現在已建立原則並將其部署給使用者。
 
-只有獲指派 Microsoft Intune 授權的使用者才會受此原則影響。 所選安全性群組中的使用者若未獲指派 Microsoft Intune 授權，將不受影響。
+只有獲指派 Microsoft Intune 授權的使用者才會受此原則影響。 已選取安全性群組中的使用者若無指派的 Intune 授權，則不會受到影響。
 
 >[!IMPORTANT]
-> 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者， 而不會影響巢狀於您選取之群組中的子群組成員。
+> 如果您使用 Intune 和 Configuration Manager 來管理您的裝置，則只會將原則套用至您選取之群組中的直屬使用者。 而不會影響巢狀於您選取之群組中的子群組成員。
 
-使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
+終端使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
 * [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-android.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-ios.md)
+* [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)
 
 ##  <a name="change-existing-policies"></a>變更現有的原則
 您可以編輯現有的原則，並將它套用到目標使用者。 不過，當您變更現有的原則時，已登入應用程式的使用者將有 8 小時看不到變更。
 
-若要立即查看變更的影響，使用者必須登出應用程式再重新登入。
+若要立即查看變更的影響，終端使用者必須登出應用程式再重新登入。
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>變更與原則相關聯的應用程式清單
 
-1.  在 [應用程式原則] 刀鋒視窗中，選擇您要變更的原則。 這會開啟您剛才選取之原則的特定刀鋒視窗。
+1.  在 [應用程式防護原則] 窗格中，選擇您想要變更的原則，以開啟特定於您選取之原則的窗格。
 
-2.  在 [原則] 刀鋒視窗中，選擇 [目標應用程式] 開啟應用程式清單。
+2.  在 [原則] 窗格中，選擇 [目標應用程式] 開啟應用程式清單。
 
 3.  在清單中移除或新增應用程式，然後選擇 [儲存] 圖示儲存您的變更。
 
 ### <a name="to-change-the-list-of-user-groups"></a>變更使用者群組清單
 
-1.  在 [應用程式原則] 刀鋒視窗中，選擇您要變更的原則。 這會開啟您選取之原則的特定刀鋒視窗。
 
-2.  在 [原則] 刀鋒視窗中，選擇 [使用者群組] 開啟 [使用者群組] 刀鋒視窗，其中會顯示具有這項原則的目前使用者群組清單。
+1.  在 [應用程式防護原則] 窗格中，選擇您想要變更的原則，以開啟特定於您選取之原則的窗格。
 
-3.  若要將新的使用者群組加入原則中，請選擇 [新增使用者群組]，然後選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
+2.  在 [原則] 窗格中，選擇 [指派] 來開啟 [Intune 應用程式防護 - 指派]窗格，該窗格會顯示具有這項原則的目前使用者群組清單。
 
-4.  若要刪除使用者群組，請反白顯示您想要移除的使用者群組。 然後選擇省略符號 (...)，再選擇 [刪除] 移除使用者群組。
-  ![顯示 [刪除] 選項的螢幕擷取畫面](./media/app-protection-policy-delete-user.png)
+3.  若要將新的使用者群組新增至原則，在 [包含] 索引標籤選擇 [選取要包含的群組]，並選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
+
+4.  若要刪除使用者群組新增，在 [排除] 索引標籤選擇 [選取群組以排除]，並選取使用者群組。 選擇 [選取]以移除使用者群組。
 
 ### <a name="to-change-policy-settings"></a>變更原則設定
 
-1.  在 [應用程式原則] 刀鋒視窗中，選擇您要變更的原則。 這會開啟您剛才選取之原則的特定刀鋒視窗。
+1.  在 [應用程式防護原則] 窗格中，選擇您想要變更的原則，以開啟特定於您選取之原則的窗格。
 
-
-2.  選擇 [原則設定] 開啟 [原則設定] 刀鋒視窗。
+2.  選擇 [原則設定] 以開啟 [原則設定] 窗格。
 
 3.  變更設定，然後選擇 [儲存] 圖示儲存您的變更。
 
 ## <a name="policy-settings"></a>原則設定
-若要查看 iOS 和 Android 的原則設定的完整清單，請選取下列其中一項︰
+若要查看 iOS 和 Android 的原則設定的完整清單，請選取下列其中一個連結︰
 
 - [iOS 原則](app-protection-policy-settings-ios.md)
 - [Android 原則](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [監視合規性和使用者狀態](app-protection-policies-monitor.md)
 
 ### <a name="see-also"></a>另請參閱
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-android.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-ios.md)
+* [當 Android 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-android.md)
+* [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)

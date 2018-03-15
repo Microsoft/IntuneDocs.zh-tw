@@ -1,10 +1,10 @@
 ---
 title: "使用預先共用金鑰建立 Wi-Fi 設定檔"
-titleSuffix: Azure portal
-description: "使用 Intune 自訂設定檔建立附有預先共用金鑰的 Wi-Fi 設定檔。"
+titleSuffix: Microsoft Intune
+description: "使用 Intune 自訂設定檔建立具有預先共用金鑰的 Wi-Fi 設定檔。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

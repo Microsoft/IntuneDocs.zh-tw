@@ -1,31 +1,30 @@
 ---
-title: "Intune 裝置合規性政策"
-titleSuffix: Azure portal
-description: "使用本主題來了解 Microsoft Intune 中的裝置合規性"
+title: "Microsoft Intune 裝置相容性原則"
+titleSuffix: 
+description: "了解 Microsoft Intune 中的裝置相容性"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>開始使用 Intune 裝置合規性政策
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>開始使用 Microsoft Intune 裝置相容性原則
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>Intune 中的裝置合規性是什麼？
-
-Intune 裝置合規性政策會定義裝置必須符合才能被 Intune 視為符合規範的規則與設定。
+Intune 裝置相容性原則會定義裝置必須符合才能被 Intune 視為相容的規則與設定。
 
 這些規則包括：
 
@@ -43,7 +42,7 @@ Intune 裝置合規性政策會定義裝置必須符合才能被 Intune 視為�
 
 您也可以使用裝置合規性政策，來監視裝置的合規性狀態。
 
-### <a name="device-compliance-requirements"></a>裝置合規性需求
+## <a name="device-compliance-requirements"></a>裝置合規性需求
 
 合規性需求是一組基本規則，舉例來說，是否需要提供裝置 PIN 碼或加密就可以在合規性政策中指定。
 
@@ -74,7 +73,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 您需要有下列訂閱才能使用 Intune 的裝置合規性政策：
 
-- Intune EMS
+- Intune
 
 - Azure AD Premium
 

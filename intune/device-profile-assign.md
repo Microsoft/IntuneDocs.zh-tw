@@ -1,12 +1,11 @@
 ---
-title: "如何使用 Intune 指派裝置設定檔"
-titlesuffix: Azure portal
-description: "建立 Intune 裝置設定檔之後，可使用本主題來了解如何將其指派給裝置。"
+title: "在 Microsoft Intune - Azure 中指派裝置設定檔 | Microsoft Docs"
+description: "使用 Azure 入口網站將裝置設定檔和原則指派給使用者和裝置，以及如何排除 Microsoft InTune 中設定檔指派的群組"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/05/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,45 +14,44 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 512b9a0506241f87b5e0c19cf19cd6fe629fb291
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-assign-microsoft-intune-device-profiles"></a>如何指派 Microsoft Intune 裝置設定檔
+# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔 
+
+在您建立設定檔之後，可以將設定檔指派至 Azure Active Directory 群組。
 
 ## <a name="assign-a-device-profile"></a>指派裝置設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-1. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-2. 在設定檔刀鋒視窗清單中，選擇您想要管理的設定檔，然後在<*設定檔名稱*>  [報表] 刀鋒視窗中，選擇 [管理]  > [指派]。
-3. 在下一個刀鋒視窗中，選擇 [包含] \(包含群組) 或 [排除] \(排除群組)，然後選擇 [選取群組]。
-![在設定檔指派中包含和排除群組。](./media/group-include-exclude.png)
-4. 在 [選取群組] 刀鋒視窗中，選擇要在指派中包含或排除的 Azure AD 群組。 您可按住 **CTRL** 鍵以選取多個群組。
-4. 完成之後，請在 [選取群組] 刀鋒視窗中，選擇 [選取]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [All services] (所有服務)，並搜尋 [Microsoft Intune]。
+2. 在 **Microsoft Intune** 中，選取 [裝置設定]，然後選取 [設定檔]。 
+3. 在設定檔清單中，選取您要指派的設定檔，然後選取 [指派]。
+4. 選擇 [包含] 群組或 [排除] 群組，然後 [選取群組]：  
 
+    ![從設定檔指派包含或排除群組](./media/group-include-exclude.png)
 
+5. 當您選取群組時，會選擇 Azure Active Directory 群組。 若要選取多個群組，請按住 **CTRL** 鍵。
+6. 完成後，請 [儲存] 變更。
 
-## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>如何從裝置設定檔指派排除群組
+## <a name="exclude-groups-from-a-profile-assignment"></a>從設定檔指派排除群組
 
-Intune 裝置組態設定檔可讓您從原則指派排除群組。 例如，您可能會將裝置設定檔指派給**所有公司使用者**群組，但排除**資深管理層**群組的任何成員。
+Intune 裝置組態設定檔可讓您從原則指派排除群組。 例如，您可以將裝置設定檔指派給**所有公司使用者**群組，但排除**資深管理層**群組的任何成員。
 
-當您從指派排除群組時，只排除使用者或只排除裝置群組，不是排除混合的群組。 Intune 在排除群組時，不會考慮任何使用者與裝置關聯。 包含使用者群組的同時排除裝置群組，不可能產生您所要的結果。 萬一使用了混合群組，或有其他衝突，包含的優先順序高於排除。
+如果您排除指派的群組、只排除使用者，或只排除裝置群組 (不是群組的混合)，則 Intune 不會視為任何使用者與裝置關聯性。 包含使用者群組的同時排除裝置群組，可能不會建立您預期的結果。 如果使用混合群組，或發生其他衝突，則包含的優先順序高於排除。
 
 例如，您想要將裝置設定檔指派給組織中 Kiosk 裝置以外的所有裝置。 您包含**所有使用者**群組，但是排除**所有裝置**群組。
 
 在此情況下，所有的使用者及其裝置都受原則約束，即使使用者的裝置屬於**所有裝置**群組。 
 
-排除只會評估群組的直屬成員，不包含與使用者建立關聯的裝置。 不過，沒有使用者的裝置不受原則約束，因為它們和**所有使用者**群組沒有任何關聯。 
+排除只會查看群組的直屬成員，不包含與使用者建立關聯的裝置。 不過，沒有使用者的裝置則無法取得原則。 發生原因是這些裝置不具有與**所有使用者**群組的關聯性。 
 
-如果您包含**所有裝置**但排除**所有使用者**，則所有裝置都會收到原則。 本例的目的是要排除此原則中有相關聯使用者的裝置。 不過，它做不到，因為排除功能只會比對直屬群組成員。 
+如果您包含**所有裝置**，並排除**所有使用者**，則所有裝置都會收到原則。 在此情況下，目的是要排除此原則中有相關聯使用者的裝置。 不過，它不會排除裝置，因為排除只會比對直屬群組成員。 
 
->[!Tip]
->合規性政策或應用程式指派目前不提供排除項目。 若要從指派排除成員，您可以使用「可用」及「不適用」的指派意圖。 例如，您將應用程式指派給具有**可用**意圖的**所有公司使用者**，又指派給具有**不適用**意圖的**資深管理層**。 此應用程式會指派給所有使用者，但**資深管理層**群組的使用者「除外」。 如果您將應用程式指派給具有**必要**意圖的**所有公司使用者**，不會排除**資深管理層**群組的使用者。
- 
+>[!TIP]
+>合規性原則或應用程式指派無法使用排除。 若要從指派排除成員，您可以使用**可用**和**不適用**指派。 例如，您將應用程式指派給具有**可用**目的的**所有公司使用者**，並將應用程式指派給具有**不適用**目的的**資深管理層**。 應用程式會指派給所有使用者，但**資深管理層**群組的使用者「除外」。 如果您將應用程式指派給具有**必要**目的的**所有公司使用者**，則也會包含**資深管理層**群組的使用者。
     
-## <a name="next-steps"></a>接下來的步驟
-請參閱[如何監視裝置設定檔](device-profile-monitor.md)以取得資訊，協助您監視裝置的設定檔指派。
+## <a name="next-steps"></a>後續步驟
+請參閱[如何監視裝置設定檔](device-profile-monitor.md)以取得監視裝置設定檔指派的指示。

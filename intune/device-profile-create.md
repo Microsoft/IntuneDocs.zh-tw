@@ -1,12 +1,11 @@
 ---
-title: "建立 Intune 裝置組態設定檔"
-titlesuffix: Azure portal
-description: "了解如何建立 Intune 裝置組態設定檔。"
+title: "在 Microsoft Intune - Azure 中建立裝置設定檔 | Microsoft Docs"
+description: "在 Microsoft Intune 中新增或設定裝置設定檔 (包括選取平台類型) 並在 Azure 入口網站中設定"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中建立裝置組態設定檔
+# <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>建立設定檔
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-2. 在顯示設定檔清單的刀鋒視窗上，選擇 [建立設定檔]。
-3. 在 [建立設定檔] 刀鋒視窗中，指定下列各項：
-    - **名稱** - 為新的設定檔輸入敘述性的名稱。
-    - **描述** - 為設定檔輸入選擇性的描述。
-    - **平台** - 選擇您想要建立的設定檔之平台類型。
-    - **設定檔類型** - 選取您想要建立的設定檔類型。 可用類型清單會因所選平台而有所不同。
-    - **設定** - 請參閱下列主題，以了解每個設定檔類型有關設定的相關資訊︰
+2. 在 **Microsoft Intune** 中，選取 [裝置設定]，選取 [設定檔]，然後選取 [建立設定檔]。
+
+3. 輸入下列內容：
+
+    - **名稱**：為新的設定檔輸入描述性名稱
+    - **描述**：選擇性，但建議使用。 輸入設定檔的描述。
+    - **平台**：選取平台類型：  
+
+        - **Android**
+        - **Android for Work**
+        - **iOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 及更新版本**
+        - **Windows 10 及更新版本**
+
+    - **設定檔類型**：選取您想要建立的類型。 清單取決於您選擇的平台。
+    - **設定**：下列主題描述每個設定檔類型的設定︰
+
         -  [裝置功能設定](device-features-configure.md)
         -  [裝置限制設定](device-restrictions-configure.md)
         -  [電子郵件設定](email-settings-configure.md)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [教育設定](education-settings-configure.md)
         -  [自訂設定](custom-settings-configure.md)
 
-    ![建立裝置設定檔](./media/create-device-profile.png)
-4. 進行完設定之後，請在 [建立設定檔] 刀鋒視窗中，選擇 [建立]。
+    ![輸入設定來建立裝置設定檔](./media/create-device-profile.png)
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+4. 完成時選取 [建立]。
+
+會建立設定檔，而且會出現在清單中。 若要將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
 
-### <a name="next-steps"></a>接下來的步驟
-如需如何指派裝置設定檔的相關資訊，請參閱[How to assign device profiles with Microsoft Intune](device-profile-assign.md) (如何以 Microsoft Intune 指派裝置設定檔)。
+## <a name="next-steps"></a>後續步驟
+若要指派裝置設定檔，請參閱 [How to assign device profiles with Microsoft Intune](device-profile-assign.md) (如何以 Microsoft Intune 指派裝置設定檔)。
