@@ -1,25 +1,25 @@
 ---
 title: "針對 Windows 8.1 及更新版本匯入 Wi-Fi 設定"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "如何將 Windows 的 Wi-Fi 設定匯入 Intune Wi-Fi 設定檔。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>如何在 Microsoft Intune 中匯入 Windows 8.1 及更新版本之裝置的 Wi-Fi 設定
+# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>在 Microsoft Intune 中匯入 Windows 8.1 及更新版本之裝置的 Wi-Fi 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,20 +37,20 @@ ms.lasthandoff: 02/01/2018
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在 [設定檔] 刀鋒視窗中，按一下 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為裝置限制設定檔輸入 [名稱] 及 [描述]。
+3. 在 [Intune] 頁面中，選擇 [裝置設定]。
+2. 在 [裝置設定] 頁面中，選擇 [管理] >  [設定檔]。
+3. 在 [設定檔] 頁面中，按一下 [建立設定檔]。
+4. 在 [建立設定檔] 頁面中，為裝置限制設定檔輸入 [名稱] 及 [描述]。
 
    > [!WARNING]
    > 名稱**必須**和 Wi-Fi 設定檔 XML 的名稱屬性相同，否則會失敗。
 
 5. 從 [平台] 下拉式清單中選擇 [Windows 8.1 及更新版本]。
 6. 從 [設定檔類型] 下拉式清單中選擇 [Wi-Fi 匯入]。
-7. 在 [Wi-Fi Basic] (Wi-Fi 基本) 刀鋒視窗中設定下列設定︰
-    - **連線名稱** - 輸入 Wi-Fi 連線的名稱。 當使用者瀏覽可用的 Wi-Fi 網路時，會看到此名稱。
+7. 在 [Wi-Fi Basic] (Wi-Fi 基本) 頁面中進行下列設定︰
+    - **連線名稱** - 輸入 Wi-Fi 連線的名稱。 當終端使用者瀏覽可用的 Wi-Fi 網路時，會看到此名稱。
     - **設定檔 XML** - 按一下 [瀏覽] 按鈕可選取內含您要匯入 Intune 之 Wi-Fi 設定檔設定的 XML 檔案。
     - **檔案內容** - 顯示所選組態設定檔的 XML 程式碼。
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 頁面，然後點擊 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 頁面上。

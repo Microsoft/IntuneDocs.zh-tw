@@ -1,7 +1,7 @@
 ---
-title: "Intune 裝置註冊的多重要素驗證"
-titlesuffix: Azure portal
-description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
+title: "需要 Intune 裝置註冊的多重要素驗證"
+titlesuffix: Microsoft Intune
+description: "如何在 Azure AD 中針對 Intune 裝置註冊要求多重要素驗證。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: 27135f0b698f5a321bd14b70f0b346a91fc0ab1e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4dbb1b94fa7e2ebc5ce31ae00c3cb893f9e1470e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune 裝置的註冊的多重要素驗證 | Microsoft Docs
+# <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -62,12 +62,12 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 12. 在 [條件] 中，您不需要設定 MFA 的任何設定。
 13. 在 [存取控制] 區段中，選擇 [授與]。
 14. 在 [授與] 中，選擇 [授與存取權]，然後選取 [需要多重要素驗證]。
-    請不要選取 [裝置需要標記為合規]，因為在註冊之前無法評估裝置的合規性。
+    請不要選取 [裝置需要標記為相容]，因為在註冊之前無法評估裝置的相容性。
 15. 選擇 [選取]。
 16. 在 [新增原則] 中，選擇 [啟用原則] > [開啟]，然後選擇 [建立]。
 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 終端使用者在註冊其裝置時，現在必須使用第兩種形式的識別進行驗證，例如 PIN、電話或生物特徵辨識。

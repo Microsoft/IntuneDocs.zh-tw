@@ -1,12 +1,12 @@
 ---
 title: "如何只抹除應用程式中的公司資料"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "了解如何使用 Microsoft Intune 選擇性抹除應用程式。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a9690e75e0d0dced9ad30951b0178685813eeae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
@@ -39,21 +39,23 @@ ms.lasthandoff: 01/25/2018
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
-2.  選擇 [更多服務]，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune]。 當 [Intune] 刀鋒視窗開啟時，選擇 [行動應用程式] 刀鋒視窗。
+2.  選擇 [More Services] (更多服務)，接著在 [篩選]文字方塊中輸入 **Intune**，然後選取 [Intune]。 Intune 刀鋒視窗隨即開啟。 選取 [行動應用程式]。
 
     ![Microsoft Intune 刀鋒視窗的螢幕擷取畫面](./media/apps-selective-wipe01.png)
 
 3.  在 [行動應用程式] 刀鋒視窗中選擇 [應用程式選擇性抹除]。
 
-4.  選擇 [新增抹除要求]。 [新增抹除要求] 刀鋒視窗會隨即開啟。
+4.  選擇 [新增抹除要求]。 [新增抹除要求] 窗格會隨即開啟。
 
-    ![[新增抹除要求] 刀鋒視窗的螢幕擷取畫面](./media/AzurePortal_MAM_NewWipeRequest.png)
+    ![[新增抹除要求] 窗格的螢幕擷取畫面](./media/AzurePortal_MAM_NewWipeRequest.png)
 
 5.  選擇 [使用者] 開啟 [使用者] 刀鋒視窗，然後選取您要抹除其應用程式資料的使用者。
 
-6.  接下來，從 [新增抹除要求] 刀鋒視窗中選擇 [裝置]。 這會開啟 [選取裝置] 刀鋒視窗，列出與所選使用者建立關聯的所有裝置，並會提供兩個資料行，其中 [裝置名稱] 是使用者定義的易記名稱，而 [裝置類型] 則是其裝置平台。 選取您要抹除的裝置。
+6.  接下來，從 [新增抹除要求] 刀鋒視窗中選擇 [裝置]。 此動作會開啟 [選取裝置] 刀鋒視窗。 這會列出所有與所選取使用者建立關聯的裝置。 此外，這個窗格也會提供使用者所定義易記名稱的裝置名稱以及指定裝置平台的裝置類型。 
 
-7.  現在您已回到 [新增抹除要求] 刀鋒視窗。 選擇 [確定] 以提出抹除要求。
+7. 從清單中，選取您要抹除的裝置。
+
+8.  現在您已回到 [新增抹除要求] 刀鋒視窗。 選擇 [確定] 以提出抹除要求。
 
 此服務會為裝置上每個受保護的應用程式建立個別的抹除要求，並加以追蹤，以及抹除要求相關聯的使用者。
 
@@ -63,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 
 1.  [行動應用程式 - 應用程式選擇性抹除] 刀鋒視窗中會依使用者分組列出您的要求清單。 由於系統會針對裝置上執行的每個受保護應用程式建立抹除要求，因此您可能會看到一名使用者具有多個要求的情況。 狀態指出抹除要求為**擱置**、**失敗**或**成功**。
 
-    ![[應用程式選擇性抹除] 刀鋒視窗中抹除要求狀態的螢幕擷取畫面](./media/wipe-request-status-1.png)
+    ![[應用程式選擇性抹除] 窗格中抹除要求狀態的螢幕擷取畫面](./media/wipe-request-status-1.png)
 
 此外，您可以查看裝置名稱及其裝置類型，這對閱讀報表十分有幫助。
 
@@ -72,13 +74,13 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="delete-a-wipe-request"></a>刪除抹除要求
 
-處於擱置狀態的抹除將會顯示，直到您手動將其刪除為止。  若要手動刪除抹除要求：
+處於擱置狀態的抹除將會顯示，直到您手動將其刪除為止。 若要手動刪除抹除要求：
 
-1.  在 [行動應用程式 - 應用程式選擇性抹除] 刀鋒視窗中。
+1.  開啟 [行動應用程式 - 應用程式選擇性抹除] 刀鋒視窗。
 
 2.  在清單中，以滑鼠右鍵按一下要刪除的抹除要求，然後選擇 [刪除抹除要求]。
 
-    ![[應用程式選擇性抹除] 刀鋒視窗中抹除要求清單的螢幕擷取畫面](./media/delete-wipe-request.png)
+    ![[應用程式選擇性抹除] 窗格中抹除要求清單的螢幕擷取畫面](./media/delete-wipe-request.png)
 
 3.  當收到確認刪除的提示時，請選擇 [是] 或 [否]，然後按一下 [確定]。
 

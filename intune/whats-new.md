@@ -5,9 +5,9 @@ description: "了解 Intune Azure 入口網站中的新功能"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: dougeby
-ms.date: 02/01/2018
-ms.topic: article
+manager: angrobe
+ms.date: 01/02/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5058428dca9212d8b20364f58ac463939a699221
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -41,6 +41,107 @@ ms.lasthandoff: 02/19/2018
   ### Monitor and troubleshoot
 
 -->   
+
+
+## <a name="week-of-february-19-2018"></a>2018 年 2 月 19 日這週
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Intune 支援多個 Apple DEP / Apple School Manager 帳戶 <!-- 747685 -->
+ 
+Intune 現在支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DEP) 或 Apple School Manager 帳戶的裝置。 每個上傳的權杖可以針對註冊設定檔和裝置來個別管理。 不同的註冊設定檔可以根據上傳的 DEP/School Manager 權杖來自動指派。 如果上傳了多個 School Manager 權杖，則一次只能與 Microsoft School Data Sync 共用一個權杖。
+
+移轉之後，透過 Graph 來管理 Apple DEP 或 ASM 的搶鮮版 (Beta) Graph API 與發佈的指令碼將無法再運作。 新的搶鮮版 (Beta) Graph API 正在開發，將會在移轉後發行。
+
+#### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>查看每位使用者的註冊限制 <!-- 1634444 eeready wnready -->
+在 [疑難排解] 刀鋒視窗中，您現在可以看到對每位使用者有效的註冊限制，方法是從 [指派] 清單選取 [註冊限制]。
+
+### <a name="device-management"></a>裝置管理
+#### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Windows Defender 健全狀況狀態和威脅狀態報告 <!--854704 -->
+
+瞭解 Windows Defender 的健全狀況狀態是管理 Windows 電腦的關鍵。  使用此更新，Intune 會在 Windows Defender 代理程式的健全狀況狀態中新增報告和動作。 在裝置相容性工作負載中使用狀態積存報表，即可看到需要下列任一項的裝置：
+- 簽章更新
+- [重新啟動]，
+- 手動介入
+- 完整掃描
+- 需要介入的其他代理程式狀態
+
+每個狀態類別的鑽研報表都會列出需要注意的個別電腦，或那些回報為**清除**的電腦。
+
+#### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>裝置限制的新隱私權設定 <!--1308926 -->
+裝置現在有兩項新的隱私權設定可用：
+- **發佈使用者活動**：設定此項以**封鎖**防止共用體驗以及在工作切換器中探索最近使用的資源。
+- **僅限本機活動**：設定此項以**封鎖**防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
+
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Edge 瀏覽器的新設定 <!--1469166 -->
+現在使用 Edge 瀏覽器的裝置有兩項新設定可用：[Path to favorites file] (我的最愛檔案路徑) 和 [Changes to Favorites] (我的最愛的變更)。 
+
+### <a name="app-management"></a>應用程式管理
+#### <a name="protocol-exceptions-for-applications---1035509---"></a>應用程式的通訊協定例外狀況 <!--1035509 -->
+
+您現在可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況，開啟特定的非受控應用程式。 這類應用程式必須為 IT 所信任。 當資料傳輸原則設為**僅限受管理應用程式** 時，除您建立的例外狀況，資料傳輸仍僅限於受 Intune 管理的應用程式。 您可以使用通訊協定 (iOS) 或套件 (Android) 來建立限制。
+ 
+例如，您可以將 Webex 套件新增為 MAM 資料傳輸原則的例外狀況。 這樣可以直接在 Webex 應用程式中開啟受控 Outlook 電子郵件訊息中的 Webex 連結。 其他非受控應用程式中的資料傳輸仍會受到限制。 如需詳細資訊，請參閱[應用程式的資料傳輸原則例外狀況](app-protection-policies-exception.md)。
+
+#### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜尋結果中的 Windows 資訊保護 (WIP) 加密資料 <!-- 1469193 -->
+Windows 資訊保護 (WIP) 原則中的設定現在可讓您控制 Windows 搜尋結果是否包含 WIP 加密資料。 在 Windows 資訊保護原則的 [進階設定] 中，選取 [允許 Windows 搜尋索引子搜尋加密項目] 來設定此應用程式保護原則選項。 應用程式保護原則必須設為 *Windows 10* 平台，且應用程式原則 [註冊狀態] 必須設為 [註冊]。 如需詳細資訊，請參閱[允許 Windows 搜尋索引子搜尋加密項目](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items)。
+
+#### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>設定自行更新的行動 MSI 應用程式 <!-- 1740840 -->
+您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。 這項功能對於不陷入競爭狀況很有用。 例如，當應用程式開發人員正在執行自動更新的應用程式，也正被 Intune 更新時，就可能發生這種競爭狀況。 雙方都可能嘗試在 Windows 用戶端上強制執行某個版本的應用程式，這可能造成衝突。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊] 刀鋒視窗中設定 [略過應用程式版本] 設定。 當此設定切換為 [是] 時，Microsoft Intune 將會忽略 Windows 用戶端上安裝的應用程式版本。 
+
+#### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Intune 支援的相關應用程式授權集 <!-- 1864117 -->
+Azure 入口網站中的 Intune 現在支援相關的應用程式授權集，作為 UI 中單一應用程式項目。 此外，從商務用 Microsoft Store 同步處理的任何離線授權應用程式都會合併到單一應用程式項目，而個別套件的所有部署詳細資料都會移轉至單一項目。 若要在 Azure 入口網站中檢視相關的應用程式授權集，請選取 [Mobile Apps] 刀鋒視窗中的 [應用程式授權]。
+
+### <a name="device-configuration"></a>裝置設定
+#### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>自動加密的 Windows 資訊保護 (WIP) 檔案副檔名 <!-- 1463582 -->
+Windows 資訊保護 (WIP) 原則中的設定現在可讓您指定，哪些檔案副檔名會在從公司界限內的伺服器訊息區塊 (SMB) 共用 (如 WIP 原則中所定義) 複製時自動加密。
+
+#### <a name="configure-resource-account-settings-for-surface-hubs"></a>設定 Surface Hub 的資源帳戶設定
+
+您現在可以從遠端設定 Surface Hub 的資源帳戶設定。
+
+Surface Hub 會使用資源帳戶驗證 Skype/Exchange 以加入會議。 您會想要建立唯一的資源帳戶，使 Surface Hub 在會議中顯示為會議室。 例如，像**會議室 B41/6233** 的資源帳戶。
+
+> [!NOTE]
+> - 如果欄位留白，您會覆寫先前在裝置上設定的屬性。
+>
+> - Surface Hub 的資源帳戶內容可以動態變更。 例如，開啟密碼輪換。 因此，Azure 主控台中的這些值很可能需要一些時間才能反映裝置的實際狀況。 
+>
+>   若要了解 Surface Hub 目前的設定內容，資源帳戶資訊可以包含在硬體清查 (已有 7 天間隔) 中，或當成唯讀屬性。 為在採取遠端動作後強化精確度，您可以立即在執行動作後取得參數狀態，更新 Surface Hub 上的帳戶/參數。
+
+
+##### <a name="attack-surface-reduction"></a>攻擊表面縮減
+
+
+|設定名稱  |設定選項  |說明  |
+|---------|---------|---------|
+|執行電子郵件中受密碼保護的可執行檔內容|封鎖、稽核、未設定|避免執行透過電子郵件下載的受密碼保護可執行檔。|
+|進階勒索軟體防護|啟用、稽核、未設定|使用積極的勒索軟體防護。|
+|從 Windows 本機安全性授權子系統設立認證竊取旗標|啟用、稽核、未設定|從 Windows 本機安全性授權子系統設立認證竊取旗標 (lsass.exe)。|
+|從 PSExec 和 WMI 命令建立處理程序|封鎖、稽核、未設定|封鎖源自 PSExec 和 WMI 命令的處理程序建立。|
+|從 USB 執行的不受信任和不帶正負號的處理程序|封鎖、稽核、未設定|封鎖從 USB 執行的不受信任和不帶正負號的處理程序。|
+|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。|
+
+##### <a name="controlled-folder-access"></a>受控資料夾存取權
+
+|設定名稱  |設定選項  |說明  |
+|---------|---------|---------|
+|資料夾防護 (已實作)|未設定、啟用、僅稽核 (已實作)<br><br> **新增**<br>封鎖磁碟修改、稽核磁碟修改|
+保護檔案和資料夾免於惡意應用程式未經授權的變更。<br><br>**啟用**：免於不受信任的應用程式修改或刪除受保護資料夾中的檔案，也不讓這些應用程式在磁碟磁區寫入資料。<br><br>
+**僅封鎖磁碟修改**：<br>封鎖不受信任的應用程式在磁碟磁區寫入資料。 不受信任的應用程式仍然可以修改或刪除受保護資料夾中的檔案。|
+
+#### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>Windows 10 和更新版本系統安全性設定新增項目的相容性原則 <!--1704133-->
+
+Windows 10 相容性設定的新增項目現在已可供使用，但需要防火牆及 Windows Defender 防毒軟體才能包含此內容。 
+
+
+### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="intune-apps"></a>Intune 應用程式
+#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>支援來自商務用 Microsoft 網上商店的離線應用程式 <!--1222672-->
+您從商務用 Microsoft Store 購買的離線應用程式現在會同步處理至 Azure 入口網站。 您可以將這些應用程式部署至裝置群組或使用者群組。 離線應用程式會透過 Intune 安裝，而不透過市集。
+
+#### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止終端使用者在工作設定檔中手動新增或移除帳戶 <!-- 1728700 -->
+
+當您將 Gmail 應用程式部署到 Android for Work 設定檔時，現在可以使用 Android for Work 裝置限制設定檔中的 [Add and remove accounts] (新增與移除帳戶) 設定，防止終端使用者在工作設定檔中手動新增或移除帳戶。
 
 ## <a name="week-of-february-5-2018"></a>2018 年 2 月 5 日這週
 
@@ -69,6 +170,10 @@ Intune 現在支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 
 
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>透過安全網路進行遠端列印 <!-- 1709994  -->
 PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全的網路來進行遠端列印。 PrinterOn 將與適用於 iOS 和 Android 的 Intune APP SDK 整合。 您將能透過管理主控台中的 [應用程式保護原則] 刀鋒視窗，讓應用程式保護原則以此應用程式為目標。 終端使用者將能夠透過 Play 商店或 iTunes 下載 'PrinterOn for Microsoft' 應用程式，以在其 Intune 生態系統內使用。
+
+### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>macOS 公司入口網站支援使用裝置註冊管理員註冊 <!-- 1352411 -->
+
+使用者現在於使用 macOS 公司入口網站進行註冊時，已可以使用裝置註冊管理員。
 
 ## <a name="week-of-january-29-2018"></a>2018 年 1 月 29 日當週
 
@@ -104,16 +209,6 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>依據群組來包含和排除應用程式指派 <!-- 1406920 -->
 
 在應用程式指派期間和選取指派類型後，您可選取要包含的群組及要排除的群組。
-
-#### <a name="website-learning-mode----1631908---"></a>網站學習模式 <!-- 1631908 -->
-
-Intune 現已有 Windows 資訊保護 (WIP) 學習模式的延伸模組。 除了檢視啟用 WIP 之應用程式的資訊外，您也可檢視與網站共用工作資料之裝置的摘要。 您可以藉由這項資訊，決定哪些網站應該加入群組和使用者 WIP 原則。
-
-#### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>核准適用於 Android for Work 的公司入口網站應用程式 <!--1797090 -->
-如果您的組織使用 Android for Work，您就必須手動核准適用於 Android 的公司入口網站應用程式，這樣它才能繼續從受控的 Google Play 商店接收自動更新。
-
-#### <a name="faceid-on-ios-devices----1807377---"></a>iOS 裝置上的 FaceID <!-- 1807377 -->
-Intune 應用程式保護原則現在支援控制 iOS 裝置 FaceID 的設定。 此設定適用於支援 FaceID 功能的裝置 (目前僅 iPhone X 提供此功能)。 這項設定與目前支援的 TouchID 控制項是分開的。 組織可以選擇是否在 TouchID 控制項外，信任 FaceID 作為有效的 PIN 提示。
 
 ### <a name="device-configuration"></a>裝置設定
 
@@ -159,7 +254,7 @@ Android 版公司入口網站應用程式正在擴充 [更新裝置設定] 的�
 
 #### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新的 Windows Defender 資訊安全中心 (WDSC) 裝置組態設定檔設定 <!-- 1335507 -->
 
-Intune 在 [端點保護] 下新增了新的裝置組態設定檔設定區段，名為 [Windows Defender 資訊安全中心]。 IT 系統管理員可以設定終端使用者可存取的 Windows Defender 資訊安全中心應用程式方針。 如果 IT 系統管理員在 Windows Defender 資訊安全中心應用程式中隱藏某個方針，則與該隱藏方針相關聯的所有通知都不會顯示在使用者的裝置上。
+Intune 在 [端點保護] 下新增了新的裝置組態設定檔設定區段，名為 [Windows Defender 資訊安全中心]。 IT 系統管理員可以設定使用者可存取的 Windows Defender 資訊安全中心應用程式方針。 如果 IT 系統管理員在 Windows Defender 資訊安全中心應用程式中隱藏某個方針，則與該隱藏方針相關聯的所有通知都不會顯示在使用者的裝置上。
 
 以下是系統管理員可從 Windows Defender 資訊安全中心裝置組態設定檔設定中隱藏的方針：
 - 病毒與威脅防護
@@ -196,7 +291,7 @@ IT 系統管理員也可以自訂使用者可接收的通知。 例如，您可�
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>不允許 Samsung Knox 裝置的日期/時間變更 <!-- 1468103 -->
 
-您現在可以封鎖 Samsung Knox 裝置上的日期和時間變更。 您可以在 [Device configuration profiles (裝置組態設定檔)] > [Device restrictions (Android) (裝置限制 (Android))] > [一般] 中找到此功能。
+我們已加入新的功能，可讓您封鎖 Samsung Knox 裝置上的日期與時間變更。 您可以在 [裝置組態設定檔] > [裝置限制 (Android)] > [一般] 中找到此功能。
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>支援 Surface Hub 資源帳戶 <!-- 1566442  -->
 
@@ -241,7 +336,7 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
      指定是否啟用行事曆同步處理和其他 Exchange 伺服器服務。 例如：會議同步處理。
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>在 macOS 裝置上安裝 Office 應用程式 <!-- 1494311 -->
-您現在可在 macOS 裝置上安裝 Office 應用程式。 這個新的應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 與 OneNote。 這些應用程式也會隨附於 Microsoft AutoUpdate (MAU)，以協助保護您的應用程式並使它保持在最新狀態。
+您現在可在 macOS 裝置上安裝 Office 應用程式。 這個新的應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 及 OneNote。 這些應用程式也會隨附於 Microsoft AutoUpdate (MAU)，以協助保護您的應用程式並使它保持在最新狀態。
 
 ### <a name="app-management"></a>應用程式管理
 
@@ -267,8 +362,7 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
 
 ### <a name="updated-graph-apis----1736360---"></a>更新的 Graph API <!-- 1736360 -->
 
-我們已更新一些 Intune 搶鮮版 (Beta) 的 Graph API。 如需詳細資訊，請參閱每月 [Graph API 變更記錄](https://developer.microsoft.com/graph/docs/concepts/changelog)。
-
+在此版本中，我們已更新一些 Intune 的搶鮮版 (Beta) Graph API。 如需詳細資訊，請查看每月 [Graph API 變更記錄](https://developer.microsoft.com/graph/docs/concepts/changelog) \(英文\)。
 
 ## <a name="week-of-december-4-2017"></a>2017 年 12 月 4 日當週
 
@@ -599,6 +693,28 @@ Intune 資料倉儲資料模型的第一個版本只包含最新的歷程 Intune
 
 
 ## <a name="notices"></a>通知
+
+
+### <a name="coming-soon-workflow-updates-to-intune-administration-ui"></a>即將推出：Intune 系統管理使用者介面的工作流程更新
+
+Intune 會在 3 月的服務版本中更新系統管理員體驗。 您不需要採取任何動作，但是我們希望您了解這點，因為這是 Microsoft 對透明度的承諾的一部分。 啟用 Android 或 Apple 裝置管理時，Intune 會傳送裝置與使用者資訊，以便與第三方服務整合來管理其各自的裝置。 我們在 3 月服務版本中引進之增強旳系統管理員使用者介面體驗，會提供對於共用資料的更高透明度。 這些使用者介面變更對終端使用者不會有任何影響。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+
+將新增共用資料視窗的同意的情況包括：
+- 啟用 Android for Work 時 
+- 啟用並上傳 Apple MDM Push Certificate 時 
+- 啟用任何 Apple 服務時，例如裝置註冊計劃、School Manager 和大量採購計劃
+
+在每個案例中，同意會與執行行動裝置管理服務嚴格相關，例如確認 IT 系統管理員已授權 Google 或 Apple 裝置註冊。 當新的工作流程推出時，強調會共用哪些資訊的文件位於這裡：
+- [Intune 傳送至 Google 的資料](data-intune-sends-to-google.md)
+- [Intune 傳送至 Apple 的資料](data-intune-sends-to-apple.md)
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+
+您完全不需要對這項變更做任何準備，因為這些是次要的工作流程使用者介面更新。 如需 Microsoft 的 GDPR 相容性詳細資訊，請參閱可從 [其他資訊] 連結存取的＜信任中心＞。
+
+
 
 ### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>規劃變更：設定應用程式保護原則的更新
 

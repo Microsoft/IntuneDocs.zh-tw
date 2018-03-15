@@ -3,8 +3,8 @@ title: "將 Zimperium 與 Intune 整合"
 titleSuffix: Intune on Azure
 description: "將 Intune 與 Zimperium 整合"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4759bab0c302f758f3f0a4af5ca333a5f560f3b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/25/2018
 > [!NOTE]
 > 下列步驟必須在 [Zimperium MTD 主控台](https://staging2-console.zimperium.com)中完成。
 
-開始將 Zimperium 與 Intune 整合之前，請確定您有下列項目：
+開始將 Zimperium 與 Intune 整合之前，請確定您有下列訂閱和認證：
 
 -   Microsoft Intune 訂閱
 
@@ -52,7 +52,7 @@ Zimperium 應用程式授權程序如下：
 
 -   允許 Zimperium 服務將裝置健全狀況狀態的相關資訊傳送回 Intune。
 
--   將 Zimperium 與 Azure AD 註冊群組成員資格同步，以填入其裝置的資料庫。
+-   將 Zimperium 與 Azure Active Directory (AD) 註冊群組成員資格同步，以填入其裝置的資料庫。
 
 -   允許 Zimperium 管理主控台使用 Azure AD 單一登入 (SSO)。
 
@@ -75,7 +75,7 @@ Zimperium 應用程式授權程序如下：
 
 6.  選擇 [接受] 以授權 Zimperium 應用程式與 Intune 和 Azure Active Directory 進行通訊。
 
-7.  將 **Zimperium zConsole** 與 **zIPS iOS 和 Android** 應用程式新增至 Azure AD 後，請新增 Azure AD 安全性群組，這樣 Zimperium 才可將 Azure AD 安全性群組與其服務同步。
+7.  將 **Zimperium zConsole** 與 **zIPS iOS 和 Android** 應用程式新增至 Azure AD 後，請新增 Azure AD 安全性群組。 此新增可讓 Zimperium 與服務同步處理 Azure AD 安全性群組。
 
 8.  選擇 [完成] 以儲存設定並啟動第一次 Azure AD 安全性群組同步處理。
 

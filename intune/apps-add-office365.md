@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 將 Office 365 應用程式安裝到行動裝置"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 以更容易在 Windows 10 裝置上安裝 Office 365 應用程式。"
+title: "使用 Microsoft Intune 將 Office 365 應用程式安裝到裝置"
+titlesuffix: 
+description: "了解如何使用 Microsoft Intune 以更容易在 Windows 10 裝置上安裝 Office 365 應用程式。"
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 應用程式指派給 Windows 10 裝置
 
@@ -85,11 +85,11 @@ ms.lasthandoff: 02/19/2018
 1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Settings] (應用程式套件設定)。
 2.  在 [App Suite Settings] (應用程式套件設定) 刀鋒視窗中，指定下列資訊：
     - **Office 版本** - 選擇要指派 32 位元還是 64 位元版本的 Office。 32 位元版本可以安裝在 32 位元和 64 位元的裝置上，但 64 位元版本只能安裝在 64 位元的裝置。
-    - **更新頻道** - 選擇裝置更新 Office 的方式。 如需不同更新頻道的相關資訊，請參閱＜Office 365 ProPlus 更新頻道概觀＞。 從下列選項進行選擇：
-        - **目前**
-        - **延遲**
-        - **初次發行，目前**
-        - **初次發行，延遲**
+    - **更新頻道** - 選擇裝置更新 Office 的方式。 如需不同更新頻道的相關資訊，請參閱 [Office 365 ProPlus 更新頻道概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 從下列選項進行選擇：
+        - **每月**
+        - **每月 (目標)**
+        - **每半年**
+        - **每半年 (目標)**
     - **自動接受應用程式的使用者授權合約** - 如果您不需要使用者接受授權合約，請選取此選項。 Intune 會自動接受合約。
     - **使用共用的電腦啟用** - 有多位使用者共用一部電腦時使用共用的電腦啟用。 如需詳細資訊，請參閱 ＜Office 365 專業增強版的共用電腦啟用概觀＞。
     - **語言** - Office 會自動以終端使用者裝置上與 Windows 一起安裝的任何受支援的語言安裝。 如果想要使用其他語言安裝應用程式套件，請選取此選項。

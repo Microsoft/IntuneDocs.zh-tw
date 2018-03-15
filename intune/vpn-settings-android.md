@@ -1,41 +1,39 @@
 ---
-title: "Android 裝置的 Intune VPN 設定"
-titlesuffix: Azure portal
-description: "了解設定 Android 裝置 VPN 連線所用的 Intune 設定"
+title: "執行 Android 的裝置的 Microsoft Intune VPN 設定"
+titlesuffix: 
+description: "了解可用於設定執行 Android 之裝置上 VPN 連線的 Intune 設定"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ec20a5c808df1fa30a4357f973c9544dc6664b5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fe05b5fdd87e92f5acc35c0a750287f8fd01b92
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中 Android 裝置的 VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>設定 Microsoft Intune 中執行 Android 之裝置的 VPN 設定 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-身為 Intune 系統管理員，您可為下列平台進行 VPN 設定：
+您可以為下列平台進行 VPN 設定：
 
 - [Android](#android-vpn-settings)
 - [Android for Work](#android-for-work-vpn-settings)
 
-以下所列的值並非全部都能設定，須取決於您選擇的設定。
+根據您選擇的設定，下列所有值並非全部都是可設定的。
 
 ## <a name="android-vpn-settings"></a>Android VPN 設定
-**連線名稱** - 輸入此連線的名稱。 當使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
-- **IP 位或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
-- **驗證方法** - 從下列各方式中選擇裝置對 VPN 伺服器的驗證方式︰
+**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
+- **IP 位或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+- **驗證方法** - 從下列方式中選擇裝置對 VPN 伺服器的驗證方式︰
     - **憑證** - 選取您先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資訊，請參閱[如何設定憑證](certificates-configure.md)。
     - **使用者名稱與密碼** - 使用者必須提供使用者名稱及密碼才能登入 VPN 伺服器。
 - **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
@@ -46,15 +44,15 @@ ms.lasthandoff: 01/25/2018
     - **Pulse Secure**
     - **Citrix**
 
-- **指紋** (僅限 Check Point Capsule) - 指定用以確認 VPN 伺服器可茲信任的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 若裝置還未設定指紋，會在顯示指紋 (使用者手動驗證指紋，並選擇 [信任] 進行連線) 時，提示使用者信任所要連線的 VPN 伺服器。
+- **指紋** (僅限 Check Point Capsule) - 指定用以確認 VPN 伺服器可受信任的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還未設定指紋，則會在顯示指紋 (使用者手動驗證指紋，並選擇信任以進行連線) 時，提示使用者信任所要連線的 VPN 伺服器。
 - **為 Citrix VPN 屬性輸入索引鍵/值組** (僅限 Citrix) - 輸入 Citrix 提供的索引鍵/值組，以設定 VPN 連線的內容。
 
 ## <a name="android-for-work-vpn-settings"></a>Android for Work VPN 設定
 
-**連線名稱** - 輸入此連線的名稱。 當使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
-- **IP 位或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
-- **驗證方法** - 從下列各方式中選擇裝置對 VPN 伺服器的驗證方式︰
-    - **憑證** - 選取您先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資訊，請參閱[如何設定憑證](certificates-configure.md)。
+**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線清單時，使用者會看到此名稱。
+- **IP 位址或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+- **驗證方法** - 從下列方式中選擇裝置對 VPN 伺服器的驗證方式︰
+    - **憑證** - 選取您先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資料，請參閱[如何設定憑證](certificates-configure.md)。
     - **使用者名稱與密碼** - 使用者必須提供使用者名稱及密碼才能登入 VPN 伺服器。
 - **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
     - **Check Point Capsule VPN**

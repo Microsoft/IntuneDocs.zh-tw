@@ -1,10 +1,10 @@
 ---
-title: "開始使用使用者"
-titlesuffix: Azure portal
-description: "將使用者新增至 Intune，以允許他們存取行動裝置上的公司資源。"
+title: "開始管理使用者"
+titlesuffix: Microsoft Intune
+description: "將使用者新增至 Intune，並將授權指派給他們，讓他們可以在行動裝置上存取公司資源。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 297a9244bac8e45e14e1d22cadee9088c87f34a3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-managing-users"></a>開始管理使用者
+# <a name="get-started-managing-users"></a>開始管理使用者
 
 請思考組織中所有不同的人。 使用公司資料的所有這些使用者都需要使用者在 Intune 中管理其存取權。
 
@@ -49,6 +49,6 @@ ms.lasthandoff: 01/25/2018
 
 5. 選取 [儲存]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [開始使用群組](get-started-groups.md) - 將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>啟用 iOS 裝置上的遺失模式
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-activate-lost-mode"></a>如何啟用遺失模式
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選擇 iOS 裝置，然後選擇 [遺失模式] 遠端動作。
+4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
+5. 從您管理的裝置清單中，依序選擇 iOS 裝置、[...其他]，然後選擇 [Lost mode] (遺失模式) 遠端動作。
 6. 在 [遺失模式] 刀鋒視窗中，啟用遺失模式。 然後，輸入要顯示的訊息並選擇性地輸入連絡人電話號碼。
 7. 按一下 [ **確定**]。
 
@@ -57,5 +57,5 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>接下來的步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。
+若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。
 

@@ -3,8 +3,8 @@ title: "設定 Lookout 與 Intune 的整合"
 titlesuffix: Azure portal
 description: "使用 Intune 設定 Lookout 訂閱"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/30/2018
 2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)以取得尋找訂用帳戶 ID 的提示。
 
 3. 尋找您的 Azure AD 群組識別碼。 Lookout 主控台支援 2 個存取層級：  
-  * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性地建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
+  * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
   * **限制存取**︰此群組中的使用者無法存取 Lookout 主控台的幾項設定及註冊相關模組，但可唯讀存取 Lookout 主控台的 [安全性原則] 模組。  
 
     > [!TIP] 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense 會將各種類型的行動裝置威脅進行分�
 > 風險層級對於 Mobile Threat Defense 而言很重要，因為 Intune 整合會根據這些風險層級，在執行階段計算裝置合規性。 Intune 管理員可在原則中設定規則，以判斷裝置的現行威脅最低層級為何 (**高**、**中**或**低**) 時，要將其識別為不相容。 Lookout Mobile Threat Defense 中的威脅分類原則會直接在 Intune 中驅動裝置合規性計算。
 
 ## <a name="watching-enrollment"></a>監控註冊
-完成設定之後，Lookout Mobile Threat Defense 就會開始輪詢 Azure AD，找出對應至指定註冊群組的裝置。  您可以在 [裝置] 模組中找到已註冊裝置的相關資訊。  裝置的初始狀態會顯示為 [擱置中]。  在裝置上安裝、開啟及啟用 Lookout for Work 應用程式之後，裝置狀態將會變更。  如需如何取得推送至裝置之 Lookout for Work 應用程式的詳細資訊，請參閱[使用 Intune 新增 Lookout for Work 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)主題。
+完成設定之後，Lookout Mobile Threat Defense 就會開始輪詢 Azure AD，找出對應至指定註冊群組的裝置。  您可以在 [裝置] 模組中找到已註冊裝置的相關資訊。  裝置的初始狀態會顯示為 [擱置中]。  在裝置上安裝、開啟及啟用 Lookout for Work 應用程式之後，裝置狀態將會變更。  如需如何取得推送至裝置之 Lookout for Work 應用程式的詳細資料，請參閱[使用 Intune 新增 Lookout for Work 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)。
 
 ## <a name="next-steps"></a>接下來的步驟
 

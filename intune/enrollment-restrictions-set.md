@@ -1,7 +1,7 @@
 ---
-title: "在 Intune 中設定註冊限制"
-titlesuffix: Azure portal
-description: "在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。 \""
+title: "在 Microsoft Intune 中設定註冊限制"
+titlesuffix: 
+description: "在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-身為 Intune 系統管理員，您可以建立和管理註冊限制，定義可以註冊使用 Intune 管理的裝置數目和類型。 您可以建立多項限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
+作為 Intune 系統管理員，您可以建立和管理註冊限制。 這些限制會定義可以註冊於 Intune 管理中的裝置類型與數量。 您可以建立多項限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
 >註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/01/2018
 您可以遵循下列步驟變更裝置類型限制的設定：
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]，搜尋 [Intune]，然後選擇 [Intune]。
+2. 選擇 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
 3. 選擇 [裝置註冊] > [註冊限制]。
 4. 在 [裝置類型限制] 下選擇您想要設定的限制。
 5. 在限制名稱下 (預設限制為 [所有使用者])，選取 [平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/01/2018
   作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
 8. 指定要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
 
-    ![顯示設定 [個人所擁有] 設定之預設裝置平台設定的裝置限制工作區螢幕擷取畫面。](media/device-restrictions-platform-configurations.png)
+    ![顯示設定為個人所擁有的裝置之預設裝置平台之裝置限制工作區螢幕擷取畫面](media/device-restrictions-platform-configurations.png)
 9. 按一下 **[儲存]**。
 
 >[!NOTE]
@@ -96,14 +96,14 @@ ms.lasthandoff: 02/01/2018
 您可以遵循下列步驟變更裝置限制的設定：
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]，搜尋 [Intune]，然後選擇 [Intune]。
+2. 選擇 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
 3. 選擇 [裝置註冊] > [註冊限制]。
 4. 在 [裝置限制] 下選擇您想要設定的限制。
 5. 選擇 [裝置限制]，然後在下拉式清單中，選取使用者可以註冊的裝置數目上限。
-    ![有裝置數量限制之 [device limit restrictions] (裝置數量限制) 刀鋒視窗的螢幕擷取畫面。](./media/device-restrictions-limit.png)
+    ![裝置限制刀鋒視窗的螢幕擷取畫面](./media/device-restrictions-limit.png)
 6. 按一下 **[儲存]**。
 
-您的使用者會看到通知，告訴他們何時符合其已註冊裝置的限制。 例如，在 iOS 上，它看起來會像這樣：
+您的終端使用者會看到通知，告訴他們何時符合其已註冊裝置的限制。 例如，在 iOS 上，看起來會像這樣：
 
 ![iOS 裝置限制通知的螢幕擷取畫面](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 02/01/2018
 **變更限制優先順序**
 
 1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]，搜尋 [Intune]，然後選擇 [Intune]。
+2. 選擇 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
 3. 選擇 [裝置註冊] > [註冊限制]。
 4. 將滑鼠停留在優先順序清單的限制上。
 5. 使用三個垂直點，將優先順序拖曳到所要的清單位置。

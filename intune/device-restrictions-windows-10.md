@@ -1,25 +1,26 @@
 ---
-title: "Windows 10 的 Intune 裝置限制設定"
-titlesuffix: Azure portal
-description: "了解 Windows 10 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "Windows 10 的 Microsoft Intune 裝置限制設定"
+titlesuffix: 
+description: "了解執行 Windows 10 的裝置上可用以控制裝置設定與功能的 Microsoft Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 及更新版本的裝置限制設定
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 和更新版本的裝置限制設定
+本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - 如果電腦已加入 Azure Active Directory，並且啟用自動註冊，則不會套用此原則設定。 
    - 此原則設定不適用於執行 Windows 10 家用版的電腦。
 - **手動安裝根憑證 (僅限行動裝置)** - 阻止使用者手動安裝根憑證及中繼 CAP 憑證。
-- **診斷資料提交** - 可能的值為︰
-    - **無** - 不傳送任何資料到 Microsoft
-    - **基本** - 將有限資訊傳送給 Microsoft
-    - **增強** - 傳送增強的診斷資料到 Microsoft
-    - **完整** 傳送和增強相同的資料，再加上裝置狀態的其他相關資料
+
 - **相機** - 允許或封鎖在裝置上使用相機。
 - **OneDrive 檔案同步** - 封鎖裝置將檔案同步處理至 OneDrive。
 - **抽取式存放裝置** - 指定是否可以與裝置搭配使用 SD 卡等外部存放裝置。
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **裝置探索** - 封鎖裝置以使它無法被其他裝置找到。
 - **工作切換器 (僅限行動裝置)** - 封鎖裝置上的工作切換器。
 - **SIM 卡錯誤對話方塊 (僅限行動裝置)** - 封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
+- **Ink 工作區** - 禁止使用者存取 Ink 工作區。 未設定此設定時，會啟用 Ink 工作區 (功能已開啟)，並允許使用者在鎖定螢幕上使用它。
 - **自動重新部署** 允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
 
 
@@ -75,6 +73,9 @@ ms.lasthandoff: 02/19/2018
 
 -   **輸入個人化** - 不允許為 Cortana、聽寫或 Microsoft 網上商店應用程式使用雲端式語音服務。 如果您允許使用這些服務，Microsoft 可能會收集語音資料來改進服務。
 -   **自動接受配對及隱私權使用者同意提示** – 允許 Windows 在執行應用程式時，自動接受配對及隱私權同意訊息。
+- **發佈使用者活動**：設定此項以**封鎖**防止共用體驗以及在工作切換器中探索最近使用的資源。
+- **僅限本機活動**：設定此項以**封鎖**防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
+
 
 您可以定義可供裝置上所有應用程式存取的資訊。 您可以使用**個別應用程式隱私權例外狀況**來定義以個別應用程式為基礎的例外。
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 02/19/2018
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
 - **控制中心通知 (僅限行動裝置)** – 可讓控制中心通知出現在裝置鎖定畫面上 (僅限 Windows 10 行動裝置版)。
-- **鎖定畫面圖片 URL (僅限桌面版)** - 指定會做為 Windows 鎖定畫面桌布使用之 PNG、JPG 或 JPEG 格式圖片的 URL。 使用者無法變更此項目。
+- **鎖定畫面圖片 URL (僅限桌面版)** - 指定會作為 Windows 鎖定畫面桌布使用之 JPEG 格式圖片的 URL。 使用者無法變更此項目。
 -   **使用者可設定的畫面逾時 (僅限行動裝置)** – 可讓使用者設定時間量 
 -   **鎖定畫面上的 Cortana (僅限桌面版)** – 不允許使用者在裝置位於鎖定畫面時與 Cortana 互動 (僅限 Windows 10 桌面版)。
 -   **鎖定畫面上的快顯通知** – 封鎖警示訊息，使其無法顯示在裝置鎖定畫面上。
@@ -180,6 +181,8 @@ ms.lasthandoff: 02/19/2018
 -   **預設搜尋引擎** - 指定要使用的預設搜尋引擎。 使用者可以隨時變更此值。
 -   **在結束時清除瀏覽資料** – 當使用者結束 Edge 時，清除歷程記錄和瀏覽資料。
 -   **動態磚資料收集** – 當使用者從 Edge 釘選網站到 [開始] 功能表時，阻止 Windows 從動態磚收集資訊。
+-  **我的最愛清單** - 定義我的最愛檔案的路徑。 例如，http://contoso.com/favorites.html。
+-  **限制我的最愛變更** - 將此項目設定為 [封鎖]，防止使用者新增、匯入、排序或編輯我的最愛清單。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
 

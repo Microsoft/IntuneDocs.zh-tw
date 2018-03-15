@@ -1,12 +1,12 @@
 ---
-title: "在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何在不註冊裝置的情況下使用受管理應用程式的應用程式設定原則。"
+title: "在不註冊裝置的情況下受控應用程式的設定原則"
+titlesuffix: Microsoft Intune
+description: "了解如何在不註冊裝置的情況下設定受控應用程式的原則。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/05/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: b61f98669651dd63dc27379c6eba0c6cd5f8a531
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 即使在未註冊的裝置上，您仍然可以透過支援 Intune App SDK 的受管理應用程式使用應用程式設定原則。 
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 選擇 [Mobile Apps] 工作負載。
 4. 選擇 [管理] 群組中的 [應用程式設定原則]，然後選擇 [新增]。
 5. 使用下列詳細資料：
@@ -64,4 +64,4 @@ Intune 支援組態設定中的下列權杖類型：
 
 ## <a name="next-steps"></a>接下來的步驟
 
-一如往常般地[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
+一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。

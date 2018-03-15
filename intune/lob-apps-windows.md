@@ -1,12 +1,12 @@
 ---
-title: "如何將 Windows 企業營運應用程式新增至 Intune"
-titlesuffix: Azure portal
-description: "了解如何將 Windows 企業營運應用程式新增至 Intune。"
+title: "如何將 Windows 企業營運應用程式新增至 Microsoft Intune"
+titlesuffix: 
+description: "了解如何將 Windows 企業營運 (LOB) 應用程式新增至 Microsoft Intune。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Windows 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+企業營運 (LOB) 應用程式是您從應用程式安裝檔案新增的應用程式。 這些類型的應用程式通常都是內部撰寫的。 下列步驟提供指引，協助您將 Windows LOB 應用程式新增至 Microsoft Intune。
 
 ## <a name="step-1---specify-the-software-setup-file"></a>步驟 1 - 指定軟體安裝檔
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>步驟 5 - 更新企業營運應用程式
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>設定自行更新行動 MSI 應用程式略過版本檢查程序
+
+您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。 應用程式開發人員會自動更新某些 MSI 安裝程式應用程式。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊] 刀鋒視窗中設定 [略過應用程式版本] 設定。 當此設定切換為 [是] 時，Microsoft Intune 不會強制執行 Windows 用戶端上安裝的應用程式版本。 這項功能對於不陷入競爭狀況很有用。 例如，當應用程式開發人員正在自動更新的應用程式也正被 Intune 更新時，就可能發生這種競爭狀況。 雙方都可能嘗試在 Windows 用戶端上強制執行某個版本的應用程式，這可能造成衝突。
 
 ## <a name="next-steps"></a>接下來的步驟
 

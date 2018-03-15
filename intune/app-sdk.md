@@ -1,11 +1,12 @@
 ---
 title: "Intune App SDK 優點"
+titlesuffix: Microsoft Intune
 description: "Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概觀
-Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了改進使用者和 IT 系統管理員體驗，您可以利用我們的 API，針對需要應用程式參與的功能自訂您的應用程式行為。
+Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。
 
 啟用應用程式的應用程式保護原則之後，IT 系統管理員就可以部署這些原則，以保護他們在應用程式內的公司資料。
 
@@ -42,7 +43,7 @@ IT 系統管理員可以強制執行原則，以確保應用程式儲存到裝�
 IT 系統管理員可以從受 Intune 管理的應用程式遠端抹除公司資料。 這項功能是以身分識別為基礎，而且只會刪除與使用者公司身分識別相關聯的檔案。 若要執行這項操作，此功能需要應用程式的參與。 應用程式可以根據使用者設定，指定應該進行抹除的身分識別。 如果沒有來自應用程式的這些指定的使用者設定，預設行為是抹除應用程式目錄，並通知使用者已移除存取權。
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>強制使用受管理的瀏覽器
-IT 系統管理員可以強制使用 [Intune Managed Browser 應用程式](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)開啟應用程式中的網頁連結。 這可確保出現在公司環境中的連結會保留在受 Intune 管理之應用程式的網域內。
+IT 系統管理員可以強制使用 [Intune Managed Browser 應用程式](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)開啟應用程式中的網頁連結。 此功能可確保出現在公司環境中的連結會保留在受 Intune 管理之應用程式的網域內。
 
 ### <a name="enforce-a-pin-policy"></a>強制執行 PIN 原則
 IT 系統管理員可以要求終端使用者先輸入 PIN，才能存取應用程式中的公司資料。 這可確保使用應用程式的人員就是一開始使用其工作或學校帳戶登入的相同人員。 當終端使用者設定其 PIN 時，Intune App SDK 會使用 Azure Active Directory 依據已註冊的 Intune 帳戶來驗證終端使用者的認證。

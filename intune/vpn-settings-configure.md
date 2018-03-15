@@ -1,7 +1,7 @@
 ---
-title: "如何設定 Intune VPN 設定"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 在您管理的裝置上設定 VPN 連線。"
+title: "如何在 Microsoft Intune 中設定 VPN 設定"
+titleSuffix: 
+description: "了解如何使用 Microsoft Intune 在您管理的裝置上設定虛擬私人網路 (VPN) 連線。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 VPN 設定
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/01/2018
 
 
 > [!IMPORTANT]
-> 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用指派至裝置的 VPN 設定檔。 您可以使用[什麼是 Microsoft Intune 應用程式管理？](app-management.md)主題中的資訊，協助您使用 Intune 指派應用程式。  
+> 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用指派至裝置的 VPN 設定檔。 您可以使用[什麼是 Microsoft Intune 應用程式管理？](app-management.md)一中的資訊，協助您使用 Intune 指派應用程式。  
 
 了解如何使用[建立自訂 VPN 設定檔](custom-vpn-profiles-create.md)中的 URI 設定，建立自訂 VPN 設定檔。     
 
@@ -88,7 +88,7 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 ### <a name="certificates"></a>憑證
 
-當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PKCS 憑證設定檔。 這稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或「根憑證」) 進行驗證。 受信任的憑證會指派到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
+當您建立 VPN 設定檔時，請選擇先前在 Intune 中建立的 SCEP 或 PKCS 憑證設定檔。 這個設定檔稱為識別憑證。 其用來針對您建立且允許使用者裝置連線的受信任憑證設定檔 (或「根憑證」) 進行驗證。 受信任的憑證會指派到可驗證 VPN 連線的電腦 (一般是 VPN 伺服器)。
 
 如需如何在 Intune 中建立及使用憑證設定檔的詳細資訊，請參閱[如何利用 Microsoft Intune 設定憑證](certificates-configure.md)。
 

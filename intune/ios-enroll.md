@@ -1,7 +1,7 @@
 ---
-title: "選擇在 Intune 中註冊 Windows 裝置的方式"
-titlesuffix: Azure portal
-description: "了解如何在 Microsoft Intune 中設定 Windows 裝置註冊。"
+title: "選擇 iOS 裝置在 Intune 中的註冊方式"
+titlesuffix: Microsoft Intune
+description: "在 Microsoft Intune 中設定 iOS 裝置註冊。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f36e579282f7aeaec74c3e80d866e52dfa508d3d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 602c4c1da553215ad222a7e593531fdd879c996c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
@@ -34,7 +34,7 @@ Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者存取�
 
 ## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
 
-您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 iOS 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。
+您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 Intune 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。
 
 ## <a name="company-owned-ios-devices"></a>公司擁有的 iOS 裝置
 針對為使用者購買裝置的組織來說，Intune 可支援下列 iOS 公司擁有裝置的註冊方法：

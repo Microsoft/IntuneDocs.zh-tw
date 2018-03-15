@@ -1,12 +1,12 @@
 ---
-title: "Azure 入口網站中 Microsoft Intune 的已知問題"
-titlesuffix: Azure portal
-description: "閱讀 Intune 的相關已知問題"
+title: "Microsoft Intune 的已知問題"
+titlesuffix: Microsoft Intune
+description: "閱讀有關 Microsoft Intune 的已知問題。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9933e6ed7f8ee636cb0a9416ff2409e2054e3aa0
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -81,7 +81,7 @@ Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune 的合規性原則不會顯示於新的主控台中
 
-您在傳統入口網站中所建立的合規性原則都會移轉，但並不會顯示於 Azure 入口網站中，因為 Azure 入口網站的設計改變了。 您在傳統 Intune 傳統入口網站所建立的合規性原則仍然會強制執行，但您必須在傳統入口網站中檢視及編輯這些原則。
+您在傳統入口網站中所建立的合規性原則都會移轉，但不會顯示於 Azure 入口網站中，因為 Azure 入口網站的設計已變更。 您在傳統 Intune 傳統入口網站所建立的合規性原則仍然會強制執行，但您必須在傳統入口網站中檢視及編輯這些原則。
 
 除此之外，您在 Azure 入口網站中所建立的新合規性原則不會顯示於傳統入口網站中。
 

@@ -1,6 +1,6 @@
 ---
-title: "透過 Intune 使用恢復出廠預設值或移除裝置上的公司資料"
-titlesuffix: Azure portal
+title: "透過 Microsoft Intune 使用重設為原廠預設值或移除裝置上的公司資料"
+titlesuffix: 
 description: "了解如何移除裝置上的公司資料或將裝置恢復出廠預設值。"
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
@@ -36,10 +36,10 @@ ms.lasthandoff: 01/30/2018
 ### <a name="to-factory-reset-a-device"></a>將裝置恢復出廠預設值
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
 4. 選擇您要恢復出廠預設值之裝置的名稱。
-5. 在顯示裝置名稱的刀鋒視窗中選擇 [恢復出廠預設值]
+5. 在顯示裝置名稱的刀鋒視窗上，選擇 [重設為原廠預設值]。
 6. 若為 Windows 10 1709 版或更新版本，還有額外選項 [Retain enrollment state and user account] (保留註冊狀態及使用者帳戶)。 
     
     |透過恢復出廠預設值來保留|不保留|
@@ -123,8 +123,8 @@ ms.lasthandoff: 01/30/2018
 ### <a name="to-remove-company-data"></a>移除公司資料
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
 4. 選擇您要從中移除公司資料之裝置的名稱。
 5. 在顯示裝置名稱的刀鋒視窗中選擇 [移除公司資料]，然後選擇 [是] 進行確認。
 
@@ -134,9 +134,9 @@ ms.lasthandoff: 01/30/2018
 
 由於通訊問題或遺失裝置，您可能需要從 Azure Active Directory (AD) 刪除裝置。 刪除命令不會從管理項目中移除裝置，但您可以使用 [刪除] 來移除 Azure 入口網站中已知無法連線且不太可能與 Azure 再次通訊的裝置記錄。
 
-1.  以系統管理員認證登入 [Azure 入口網站中的 Azure Active Directory](http://aka.ms/accessaad)。 您也可以登入 [Office 365 入口網站](https://portal.office.com)，然後使用頁面左側的連結來選擇 [管理] &gt; [Azure AD]。
+1.  以系統管理員認證登入 [Azure 入口網站中的 Azure Active Directory](http://aka.ms/accessaad)。 您也可以登入 [Office 365 入口網站](https://portal.office.com)，然後使用頁面左側的連結來選擇 [系統管理中心] &gt; [Azure AD]。
 3.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選擇 [Register your free Azure Active Directory (註冊免費的 Azure Active Directory)] 訂閱連結)。
-4.  選取 [Active Directory]  ，然後選取您的組織。
+4.  選取 [Azure Active Directory] ，然後選取您的組織。
 5.  選取 [使用者]  索引標籤。
 6.  選取您要刪除裝置的使用者。
 7.  選擇 [裝置]。

@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 活動的稽核記錄
-稽核記錄提供您在 Microsoft Intune 中產生變更之活動的記錄。 Create、Update (編輯)、Delete 和 Assign 動作或遠端工作會產生您可以檢閱的稽核事件。 您可以檢閱大部分 Intune 工作負載的稽核記錄。 
+稽核記錄提供您在 Microsoft Intune 中產生變更之活動的記錄。 Create、Update (編輯)、Delete 和 Assign 動作或遠端工作會產生您可以檢閱的稽核事件。 您可以檢閱大部分 Intune 工作負載的稽核記錄。 預設會為所有客戶啟用稽核，且無法停用。 從 2017 年 12 月的功能發行日期開始記錄稽核事件；先前的事件都無法使用。
 
 ## <a name="who-can-access-the-data"></a>誰可以存取資料？
 具有下列權限的使用者可以檢閱稽核記錄：

@@ -1,27 +1,26 @@
 ---
-title: "iOS 的 Intune 裝置限制設定"
-titleSuffix: Azure portal
-description: "了解 iOS 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "iOS 的 Microsoft Intune 裝置限制設定"
+titleSuffix: 
+description: "了解執行 iOS 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 裝置限制設定
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
+本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 iOS 的裝置進行設定。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -107,7 +106,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 - **修改密碼 (僅限受監督)** - 防止變更、新增或移除密碼。
     - **修改指紋 (僅限受監督)** - 防止使用者變更、新增或移除 TouchID 設定。
 
-<sup>1</sup>當您設定 [沒有活動最久幾分鐘後鎖定螢幕] 的設定以及 [在螢幕鎖定最少幾分鐘後必須輸入密碼] 時，它們會依序套用。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
+<sup>1</sup>當您設定 [沒有活動最久幾分鐘後鎖定螢幕] 的設定以及 [在螢幕鎖定最少幾分鐘後必須輸入密碼] 時，它們會依序套用。 例如，如果您將兩個設定的值都設定為 **5** 分鐘，則會在五分鐘後自動關閉螢幕，並會在另一個五分鐘之後鎖定裝置。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在五分鐘後鎖定。
 
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
@@ -156,8 +155,8 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 您可以在受限制應用程式清單中，設定下列清單之一︰
 
-- **禁止的應用程式**清單 - 列出不允許使用者安裝與執行的應用程式 (並非由 Intune 管理)。 使用者安裝禁止的應用程式並不會受到阻止，但如果安裝了，系統會向您回報。
-- **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。 使用者安裝不在核准的清單上的應用程式並不會受到阻止，但如果安裝了，系統會向您回報。
+- **禁止的應用程式**清單 - 列出不允許使用者安裝與執行的應用程式 (並非由 Intune 管理)。 使用者安裝禁止的應用程式並不會受到阻止，但如果已安裝，系統會向您回報。
+- **核准的應用程式**清單 - 列出允許使用者安裝的應用程式。 使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。 使用者安裝不在核准的清單上的應用程式並不會受到阻止，但如果已安裝，系統會向您回報。
 
 若要設定清單，請按一下 [新增]，然後在應用程式市集中，指定您所選的名稱 (也可指定選用的應用程式發行者) 以及應用程式的 URL。
 
@@ -169,7 +168,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 複製頁面的 URL，並使用此 URL 作為設定允許或禁止的應用程式清單之 URL，或是想要以 kiosk 模式執行的應用程式。
 包含受限應用程式設定的裝置設定檔，必須指派給使用者群組。
 
-範例：搜尋 Microsoft Word for iPad。 您要使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
+範例：搜尋 Microsoft Word for iPad。 您使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
 > 您也可以先使用 iTunes 尋找應用程式，再使用**複製連結**命令取得應用程式的 URL。
@@ -194,7 +193,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 使用搜尋引擎，在 iTunes App Store 中尋找您要使用的應用程式，然後開啟應用程式的頁面。
 複製頁面的 URL，並使用此 URL 作為設定允許或禁止的應用程式清單之 URL，或是想要以 kiosk 模式執行的應用程式。
 
-範例：搜尋 Microsoft Word for iPad。 您要使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
+範例：搜尋 Microsoft Word for iPad。 您使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
 > 您也可以先使用 iTunes 軟體尋找應用程式，再使用 [複製連結]  命令取得應用程式的 URL。
@@ -228,7 +227,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 ## <a name="keyboard-and-dictionary"></a>鍵盤與字典
 
--   **字組定義查閱 (僅限受監督)** - 允許可讓您反白字組並查詢其定義的 iOS 功能。
+-   **字組定義查閱 (僅限受監督)** - 允許可讓您反白字組並查閱其定義的 iOS 功能。
 -   **預測鍵盤 (僅限受監督)** - 允許使用預測鍵盤，以建議使用者可能想要使用的字組。
 -   **自動校正 (僅限受監督)** - 讓裝置自動校正拼字錯誤的字組。
 -   **鍵盤拼字檢查 (僅限受監督)** - 允許在裝置進行拼字檢查程式。
@@ -238,9 +237,9 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 -   **備份至 iCloud** - 允許使用者將裝置備份到 iCloud。
 -   **文件同步至 iCloud (僅限受監督)** - 允許文件和索引鍵-值同步處理到 iCloud 儲存空間。
--   **相片串流同步至 iCloud** - 讓使用者可在其裝置上啟用 [共享相片串流]，以允許將相片同步處理到 iCloud 並可在所有使用者裝置上使用。
+-   **相片串流同步至 iCloud** - 讓使用者可在其裝置上啟用 [My Photo Stream] (共享相片串流)，以允許將相片同步處理到 iCloud 並可在所有使用者裝置上使用。
 -   **加密備份** - 需要加密任何裝置備份。
--   **iCloud 照片圖庫** - 如果設定為 [否]，請停用 iCloud 相片圖庫，讓使用者在雲端中儲存相片和視訊。    如果這是設定為 [否]，將會從裝置中移除任何未從 iCloud 相片圖庫完整下載到裝置的相片。
+-   **iCloud 照片圖庫** - 如果設定為 [否]，請停用 iCloud 照片圖庫，讓使用者在雲端中儲存相片和視訊。   如果這是設定為 [否]，則會從裝置中移除任何未從 iCloud 照片圖庫完整下載到裝置的相片。
 -   **受管理應用程式同步至雲端** - 允許您使用 Intune 管理的應用程式將資料同步至使用者的 iCloud 帳戶。
 -   **共享相片串流** - 設定為 [否]，會停用裝置上的 [iCloud 相片共享]。
 -   **活動接續** - 允許使用者在另一部 iOS 或 macOS 裝置上繼續執行在 iOS 裝置上啟動的工作 (遞交)。
@@ -251,7 +250,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 ### <a name="settings"></a>設定
 
-- **應用程式名稱**：輸入應用程式的名稱，這將會顯示在此刀鋒視窗上的應用程式清單中。
+- **應用程式名稱**：輸入應用程式的名稱，這會顯示在此刀鋒視窗上的應用程式清單中。
 - **應用程式套件組合識別碼**：輸入應用程式的套件組合識別碼。 如需說明，請參閱本主題中的＜內建的 iOS 應用程式套件組合識別碼參考＞。
 
 在您指定每個應用程式的名稱和套件組合識別碼之後，選擇 [新增] 以將它附加至清單。
@@ -348,7 +347,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 ### <a name="managed-web-domains"></a>受管理的 Web 網域
 
-在 [Web 網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當文件是從您所指定的網域下載時，它們會被視為受管理的文件。 此設定僅適用於使用 Safari 瀏覽器下載的文件。
+在 [Web 網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當文件是從您所指定的網域下載時，它們會被視為受控文件。 此設定僅適用於使用 Safari 瀏覽器下載的文件。
 
 
 ### <a name="safari-password-autofill-domains"></a>Safari 密碼自動填入網域

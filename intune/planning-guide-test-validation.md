@@ -1,9 +1,10 @@
 ---
 title: "Intune 測試與驗證"
-description: "以下是當您在環境中測試和驗證 Intune 僅限雲端解決方案時必須考慮的詳細資料。"
+titlesuffix: Microsoft Intune
+description: "如何在您的環境中測試及驗證 Intune 僅雲端解決方案。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
-在實作階段期間和之後，都需要執行測試階段。 您需要測試帳戶、群組和裝置，以測試先前所識別的所有必要 IT (管理員) 和使用者 (使用案例) 案例。
+在測試 Microsoft Intune 的實作時，請考慮功能驗證及使用案例驗證。 功能驗證包含測試每個元件和設定，以判斷是否正確運作。 使用案例驗證包含測試以驗證涉及一系列工作的案例會如預期般運作。 
 
 建議您在測試階段納入 IT 支援和技術服務人員，以便建立支援文件，讓 IT 支援和技術服務人員熟悉支援產品。 如果元件或案例無法根據使用案例運作，請務必記錄必要的變更，並包含進行變更的原因。
 

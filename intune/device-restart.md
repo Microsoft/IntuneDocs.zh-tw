@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9afe804d2f9e48e27ced4bd92959cd065f6ec89a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a49f95ce81f750c539959674a15df41118f20aaa
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -40,12 +40,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-restart-a-device"></a>如何重新啟動裝置
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選擇裝置，然後選擇 [重新啟動] 裝置遠端動作。
+4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
+5. 從您管理的裝置清單中，依序選擇裝置、[...其他]，然後選擇 [重新啟動] 裝置遠端動作。
 
 ## <a name="next-steps"></a>接下來的步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。
+若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。

@@ -1,9 +1,10 @@
 ---
-title: "Intune 網路設定需求與頻寬"
-description: 
+title: "Microsoft Intune 的網路需求與頻寬詳細資料"
+titlesuffix: 
+description: "檢閱 Intune 的網路設定需求與頻寬詳細資料。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,11 +15,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29ea491ab176a9bf2237a4e7546131945ad2dab7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
@@ -92,7 +93,7 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 若要管理位於防火牆和 Proxy 伺服器後方的電腦，您必須啟用 Intune 的通訊。
 
 -   Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)**，因為 Intune 用戶端會使用這兩種通訊協定
--   Intune 需要存取 manage.microsoft.com 的未驗證 Proxy 伺服器，才能進行某些工作，例如下載軟體和更新。
+-   Intune 需要存取 manage.microsoft.com 的未驗證 Proxy 伺服器，才能進行某些工作，例如下載軟體和更新
 
 您可以修改個別用戶端電腦上的 Proxy 伺服器設定，也可以使用群組原則設定來變更所有位於指定之 Proxy 伺服器後方的用戶端電腦設定。
 
@@ -162,7 +163,7 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 | --- | --- | --- | --- | --- |
 |  管理員主控台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
 | 管理員主控台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |
-| 管理員主控台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
+| 管理主控台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
 | PI 伺服器  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | 適用於 Apple iOS 和 macOS 雲端傳訊。 |
 | 裝置服務  | gateway.push.apple.com | TCP | 2195 | Apple  |
 | 裝置服務  | feedback.push.apple.com | TCP | 2196 | Apple  |

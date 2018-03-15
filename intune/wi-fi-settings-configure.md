@@ -1,7 +1,7 @@
 ---
 title: "如何設定 Intune Wi-Fi 設定"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 在您管理的裝置上設定 Wi-Fi 連線。"
+titleSuffix: Microsoft Intune
+description: "了解如何使用 Microsoft Intune 在您管理的裝置上設定 Wi-Fi 連線。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
 
@@ -46,7 +46,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>建立內含 Wi-Fi 設定的裝置設定檔
 
-1. 登入 Azure 入口網站。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
@@ -62,7 +62,7 @@ Wi-Fi 設定檔支援下列裝置平台：
    > [!IMPORTANT]
    > 如果您要為執行 Windows 10 (包括 Windows Holographic for Business) 的裝置建立設定檔，您必須選擇 **Windows 8.1 和更新版本**平台。 **Windows 10 和更新版本**平台不包含 Wi-Fi 設定檔類型。 
 
-6. Apple 或 Android 裝置請在 [WiFi type] (WiFi 類型) 下拉式清單中選擇 [基本] 或 [企業]。 您可以使用 [基本] 提供基本功能，像是網路名稱以及 SSID。 [企業] 可讓您提供更進階的資訊，像是可延伸的驗證通訊協定 (EAP)，如果您的 Wi-Fi 網路使用此項目。 
+6. Apple 或 Android 裝置請在 [WiFi type] (WiFi 類型) 下拉式清單中選擇 [基本] 或 [企業]。 您可以使用 [基本] 提供基本功能，像是網路名稱以及 SSID。 您可利用 **Enterprise** 提供更進階的資訊，例如「可延伸的驗證通訊協定」(EAP) (如果您的 Wi-Fi 網路使用此通訊協定)。 
 
    **Wi-Fi 匯入**設定檔 (適用於 Windows 8.1 與更新版本) 可讓您將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
 1. 您可設定的設定值隨您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰

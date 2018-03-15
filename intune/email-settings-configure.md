@@ -1,31 +1,29 @@
 ---
-title: "如何設定 Intune 電子郵件設定"
-titleSuffix: Azure portal
-description: "了解如何設定 Intune，以建立您管理的裝置上與公司電子郵件的連線。"
+title: "如何設定 Microsoft Intune 電子郵件設定"
+titleSuffix: 
+description: "了解如何設定 Microsoft Intune，以建立您管理的裝置上與公司電子郵件的連線。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定電子郵件設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-電子郵件設定檔可用來為您管理的裝置設定連線所需的設定，並與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
+電子郵件設定檔可以用來為您管理的裝置設定連線所需的設定，並與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
 
 內建的郵件用戶端支援大部分的平台。 目前不支援大部分的協力廠商電子郵件應用程式。
 
@@ -37,16 +35,16 @@ ms.lasthandoff: 01/25/2018
 - Windows Phone 8.1 和更新版本
 - Windows 10 桌面版與 Windows 10 行動裝置版
 
-使用本主題中的資訊，可深入了解設定電子郵件設定檔的相關基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
+使用本文中的資訊，可深入了解設定電子郵件設定檔的相關基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>建立內含電子郵件設定的裝置設定檔
 
 1. 登入 Azure 入口網站。
 2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為電子郵件設定檔輸入 [名稱] 及 [描述]。
+3. 在 [Intune] 頁面上，選擇 [裝置設定]。
+2. 在 [裝置設定] 頁面上，選擇 [管理] > [設定檔]。
+3. 在 [設定檔] 頁面上，選擇 [建立設定檔]。
+4. 在 [建立設定檔] 頁面上，為電子郵件設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用電子郵件設定的裝置平台。 您目前可為電子郵件裝置設定選擇下列平台之一︰
     - **Android** (僅限 Samsung Android Knox Standard)
     - **Android for Work**
@@ -54,21 +52,21 @@ ms.lasthandoff: 01/25/2018
     - **Windows Phone 8.1**
     - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [電子郵件]。
-7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+7. 您可設定的設定會視您選擇的平台而不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
     - [Android for Work 和 Samsung Knox Standard 設定](email-settings-android.md)
     - [iOS 設定](email-settings-ios.md)
     - [Windows Phone 8.1 設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 設定](email-settings-windows-10.md)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 頁面，然後點擊 [建立]。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 頁面上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
 ## <a name="further-information"></a>進一步資訊
 
 ### <a name="remove-an-email-profile"></a>移除電子郵件設定檔
 
-若想要從裝置移除電子郵件設定檔，請編輯指派，然後再移除裝置所屬的任一群組。 請注意，若該電子郵件設定檔是裝置上唯一的電子郵件設定檔，即無法以此方式移除。
+若想要從裝置移除電子郵件設定檔，請編輯指派，然後再移除裝置所屬的任一群組。 如果電子郵件設定檔是裝置上唯一的電子郵件設定檔，則無法以此方式移除。
 
 ### <a name="securing-email-access"></a>保護電子郵件存取
 
@@ -84,7 +82,7 @@ ms.lasthandoff: 01/25/2018
 
 如果使用者已設定了電子郵件帳戶，則 Intune 電子郵件設定檔指派的結果會取決於裝置平台︰
 
-- **iOS：**依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 重複的電子郵件設定檔將會封鎖 Intune 設定檔的指派。 在此情況下，公司入口網站會通知使用者他們並不符合規範，且會提示使用者要手動移除設定的設定檔。 為避免此問題，請指示使用者先進行註冊，再安裝電子郵件設定檔，允許 Intune 設定該設定檔。
+- **iOS：**依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 重複的電子郵件設定檔會封鎖 Intune 設定檔的指派。 在此情況下，公司入口網站會通知使用者他們並不符合規範，且會提示使用者要手動移除設定的設定檔。 為避免此問題，請指示使用者先進行註冊，再安裝電子郵件設定檔，允許 Intune 設定該設定檔。
 - **Windows：**依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
 - **Android Samsung Knox Standard** 依據電子郵件地址，偵測到重複的現有電子郵件設定檔，而且會使用 Intune 設定檔覆寫它。
 因為 Android 不會使用主機名稱來識別設定檔，所以建議您不要建立多個電子郵件設定檔在不同主機上的使用相同的電子郵件地址，以避免彼此覆寫。

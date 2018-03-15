@@ -1,12 +1,12 @@
 ---
-title: "如何將應用程式指派到群組"
-titlesuffix: Azure portal
-description: "將應用程式新增至 Intune 之後，要將它指派到使用者或裝置的群組中。"
+title: "如何在 Microsoft Intune 中將應用程式指派給群組"
+titlesuffix: 
+description: "將應用程式新增至 Microsoft Intune 之後，要將它指派給使用者或裝置的群組。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 將應用程式指派給群組
 
@@ -38,29 +38,30 @@ ms.lasthandoff: 01/25/2018
 |將應用程式指派為可用|是|是|
 |將應用程式指派為必要項目|是|否|
 |解除安裝應用程式|是|否|
+|從 Intune 接收應用程式更新|是|否|
 |使用者從公司入口網站應用程式安裝可用的應用程式|是|否|
 |使用者從 Web 架構入口網站安裝可用的應用程式|是|是|
 
 > [!NOTE]
-> 您目前可指派 iOS 與 Android 應用程式 (企業營運與市集購買兩者) 未註冊有 Intune 的裝置。
+> 您目前可指派 iOS 與 Android 應用程式 (企業營運與市集購買兩者) 未註冊有 Intune 的裝置。<br></br><br></br>
+> 若要在未向 Intune 註冊的裝置上接收應用程式更新，裝置使用者必須巡覽至其公司入口網站，並手動安裝應用程式更新。
 
 ## <a name="how-to-assign-an-app"></a>如何指派應用程式
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 1. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 2. 在應用程式刀鋒視窗清單中，按一下想要指派的應用程式。
-3. 在 <*應用程式名稱*> - [概觀] 刀鋒視窗中，選擇 [管理]  >  [指派]。
-4. 選擇 [選取群組]然後，在 [選取群組] 刀鋒視窗中，選擇要指派該應用程式的 Azure AD 群組。
+3. 在 [概觀] 刀鋒視窗上，選擇 [管理] > [指派]。
+4. 選擇 [新增群組]，然後在 [新增群組] 刀鋒視窗上選擇要或不要指派應用程式的 Azure AD 群組。
 5. 為每個您選擇的應用程式，從以下項目選擇應用程式的 [指派類型]︰
-    - **可用** - 使用者從公司入口網站應用程式或網站，安裝應用程式。
-    - **不適用** - 公司入口網站中未安裝或未顯示此應用程式。
+    - **可透過已註冊裝置使用** - 使用者從公司入口網站應用程式或網站中安裝應用程式。
+    - **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。
     - **必要** - 此應用程式安裝所選群組中的裝置上。
     - **解除安裝** - 此應用程式會從所選群組中的裝置上解除安裝。
-    - **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。
-6. **僅限 iOS 應用程式** - 如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，您可以在 [VPN] 下加以選取。 當應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
-6. 完成之後，請選擇 [儲存]。
+6. **僅限 iOS 應用程式** - 如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，您可以在 [VPN] 下加以選取。 應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
+6. 完成之後，請選擇 [確定]，然後選擇 [儲存]。
 
 應用程式現已指派給您所選取的群組。
 

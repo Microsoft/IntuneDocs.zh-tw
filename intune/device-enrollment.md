@@ -1,6 +1,6 @@
 ---
 title: "什麼是 Microsoft Intune 裝置註冊"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "了解 iOS、Android 及 Windows 裝置註冊。"
 keywords: 
 author: ErikjeMS
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,6 +37,14 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 |**[DEP](#apple-device-enrollment-program)**|   是 |   選用 |  選用|[詳細資訊](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| 是 |   選用 |  否| [詳細資訊](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[詳細資訊](./apple-configurator-direct-enroll-ios.md)|
+
+## <a name="macos-enrollment-methods"></a>macOS 註冊方法
+
+| **方法** |  **需要重設** |  **使用者親和性** | **鎖定** | **詳細資料**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | 否| 是 | 否 | [詳細資訊](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| 否 |否 |否  | [詳細資訊](./device-enrollment-manager-enroll.md)|
+
 
 ## <a name="windows-enrollment-methods"></a>Windows 註冊方法
 

@@ -1,10 +1,11 @@
 ---
-title: "決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理"
-description: "本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理原則。"
+title: "準備應用程式保護原則的企業營運應用程式"
+titlesuffix: Microsoft Intune
+description: "您可以使用 App Wrapping Tool 與 App SDK 來啟用自訂的企業營運應用程式，以在 Microsoft Intune 中使用應用程式防護原則。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,13 +15,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式保護原則的企業營運應用程式
+# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -31,7 +32,7 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 
 您不需要原始程式碼即可使用工具，但需要簽署認證。 如需簽署認證的詳細資訊，請參閱 [Intune 部落格](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 如需 App Wrapping Tool 文件，請參閱 [Android App Wrapping Tool](app-wrapper-prepare-android.md) 和 [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)。
 
-應用程式包裝工具**不**支援 Apple App Store 或 Google Play 商店中的應用程式。 它也不支援某些需要開發人員整合的功能 (請參閱下列的功能比較表)。
+應用程式包裝工具**不支援** Apple App Store 或 Google Play 商店中的應用程式。 它也不支援某些需要開發人員整合的功能 (請參閱下列的功能比較表)。
 
 
 如需 Intune 中未註冊裝置上應用程式保護原則之 App Wrapping Tool 的詳細資訊，請參閱[保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
@@ -85,11 +86,11 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |允許應用程式將資料傳送到其他應用程式|X|X|
 |允許應用程式接收來自其他應用程式的資料|X|X|
 |限制利用其他應用程式剪下、複製及貼上|X|X|
-|需要簡單的 PIN 碼才能存取|X|X|
+|需要簡單的 PIN 以進行存取|X|X|
 |將內建應用程式 PIN 取代為 Intune PIN|X||
 |指定 PIN 重設之前的嘗試次數|X|X|
 |允許指紋而非 PIN |X|X|
-|需要公司認證才能存取|X|X|
+|需要公司認證以進行存取|X|X|
 |封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行|X|X|
 |加密應用程式資料|X|X|
 |在指定的分鐘數之後重新檢查存取需求|X|X|
@@ -102,7 +103,8 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |目標應用程式組態 |X||
 |支援多重身分識別|X||
 |可自訂樣式 |X|||
-## <a name="next-steps"></a>接下來的步驟
+
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解應用程式保護原則和 Intune，請參閱下列主題：
 
