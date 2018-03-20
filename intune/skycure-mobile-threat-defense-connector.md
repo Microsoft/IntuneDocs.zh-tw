@@ -1,7 +1,7 @@
 ---
-title: "Skycure 連接器與 Intune"
-titlesuffix: Azure portal
-description: "Skycure 連接器與 Intune 的整合。"
+title: "Skycure 連接器與 Microsoft Intune"
+titlesuffix: 
+description: "深入了解整合 Intune 與 Skycure Mobile Threat Defense 來控制行動裝置對公司資源的存取。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 333322022882566b55e869e5d6a1a1e2b203b830
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
@@ -69,7 +69,7 @@ Intune 支援兩種與 Skycure 整合的模式：
 
 **修復後允許存取：**
 
-![偵測到惡意應用程式後授與存取](./media/skycure-arch-2.png)
+![偵測到惡意應用程式之後的補救後授與存取](./media/skycure-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 

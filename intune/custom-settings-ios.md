@@ -1,27 +1,25 @@
 ---
-title: "iOS 裝置的 Intune 自訂設定"
+title: "執行 iOS 之裝置的 Microsoft Intune 自訂設定"
 titleSuffix: Azure portal
 description: "了解可用於 iOS 自訂設定檔中的設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 761b19de8442e88717a5dcd52f7f0375bace91da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS 裝置的 Microsoft Intune 自訂設定
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 自訂裝置設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ ms.lasthandoff: 01/25/2018
 
 
 1. 請使用[如何在 Microsoft Intune 中設定自訂裝置設定](custom-settings-configure.md)中的指示，即可開始使用。
-2. 在 [建立設定檔] 刀鋒視窗中，指定下列各項︰
+2. 在 [自訂組態設定檔] 窗格中，設定下列每個設定：
 
 - **自訂組態設定檔名稱** - 提供原則的名稱，其會顯示在裝置以及 Intune 狀態中。
 - **組態設定檔** - 瀏覽至使用 Apple Configurator 所建立的組態設定檔。
 針對您所指派 iOS 自訂原則之裝置上的 iOS 版本，確認從 Apple Configurator 工具匯出的設定與其相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。
 
-您匯入的檔案將會顯示在刀鋒視窗的 [檔案內容] 區域中。
+您匯入的檔案會顯示在窗格的 [檔案內容] 區域中。

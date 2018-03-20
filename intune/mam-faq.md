@@ -1,25 +1,19 @@
----
-title: "MAM 和應用程式保護的相關常見問題"
-description: "本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。"
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>必要的中繼資料
+
+標題：MAM 和應用程式保護的相關常見問題 描述：本文提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>選擇性中繼資料
+
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: esaggese ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
 本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
@@ -135,14 +129,21 @@ ms.lasthandoff: 02/09/2018
 
 **是否有安全的方式能夠從受管理的應用程式開啟網頁連結？** 可以！ IT 系統管理員可以針對 [Intune Managed Browser 應用程式](app-configuration-managed-browser.md)部署與設定應用程式保護原則，這是由 Microsoft Intune 開發的網頁瀏覽器，可輕鬆地利用 Intune 加以管理。 針對 Intune 受控應用程式，IT 系統管理員可以要求其中的所有網頁連結都必須使用 Managed Browser 應用程式來開啟。
 
-
 ## <a name="app-experience-on-android"></a>Android 上的應用程式體驗
 
 **為什麼需要公司入口網站應用程式，才能讓 Intune 應用程式保護在 Android 裝置上運作呢？** 大部分的應用程式保護功能是內建在公司入口網站應用程式中。 即使公司入口網站應用程式一律為必要，也_不需要_註冊裝置。 若是 MAM-WE，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
 
+**已設定為相同應用程式和使用者集合的多個 Intune 應用程式保護存取設定，在 Android 上如何運作？** Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，封鎖會優先，然後是可以關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者進行修補程式升級的最低 Android 修補程式版本設定，將在封鎖使用者使其無法存取的最低 Android 修補程式版本設定之後套用。 因此，當情況是 IT 系統管理員將最低 Android 修補程式版本設定為 2018-03-01，最低 Android 修補程式版本 (僅警告) 設定為 2018-02-01 時，如果嘗試存取應用程式的裝置使用修補程式版本 2018-01-01，則因為導致封鎖存取的最低 Android 修補程式版本設定限制更多，而使得終端使用者將會被封鎖。 
+
+處理不同類型的設定時，應用程式版本需求會優先，然後是 Android 作業系統版本需求和 Android 修補程式版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。
+
 ## <a name="app-experience-on-ios"></a>iOS 上的應用程式體驗
 
 **我可以使用 iOS 共用延伸模組在不受管理的應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設為 [僅限受管理的應用程式] 或 [沒有應用程式]。這樣不會流失資料嗎？** Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，Intune _**會先加密「公司」資料，才會在應用程式之外共用**_。 您可以嘗試在受管理的應用程式外開啟「公司」檔案來加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。
+
+**已設定為相同應用程式和使用者集合的多個 Intune 應用程式保護存取設定，在 iOS 上如何運作？** Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，其順序會是抹除、封鎖及可關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者更新其 iOS 版本的最低 iOS 作業系統設定，將在封鎖使用者使其無法存取的最低 iOS 作業系統設定之後套用。 因此，當情況是 IT 系統管理員將最低 iOS 作業系統設定為 11.0.0.0，最低 iOS 作業系統 (僅警告) 設定為 11.1.0.0 時，如果嘗試存取應用程式的裝置使用 iOS 10，則因為導致封鎖存取的最低 iOS 作業系統版本設定限制更多，而使得終端使用者將會被封鎖。
+
+處理不同類型的設定時，Intune 應用程式 SDK 版本需求會優先，然後是應用程式版本需求，再然後是 iOS 作業系統版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。 我們建議您只針對基本的封鎖情況，在 Intune 產品小組的指導下，設定 Intune App SDK 版本需求。
 
 ## <a name="see-also"></a>另請參閱
 - [實作您的 Intune 計劃](planning-guide-onboarding.md)

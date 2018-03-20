@@ -1,29 +1,30 @@
 ---
-title: "Windows 8.1 的 Intune 裝置限制設定"
-titleSuffix: Azure portal
-description: "了解 Windows 8.1 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "執行 Windows 8.1 之裝置的 Microsoft Intune 裝置限制設定"
+titleSuffix: 
+description: "了解執行 Windows 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 8.1 及更新版本的裝置限制設定
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 和更新版本的裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 8.1 和更新版本的裝置進行設定。
+
 
 ## <a name="general"></a>一般
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 01/25/2018
 -   **SmartScreen** - 啟用或停用潛在詐騙網站的警告。
 -   **JavaScript** - 讓瀏覽器可執行指令碼，例如 Java 指令碼。
 -   **快顯** - 啟用或停用瀏覽器的快顯封鎖程式。
--   **傳送不追蹤標頭** - 在 Internet Explorer 中傳送「不追蹤」標頭給造訪的網站。
+-   **傳送不追蹤標頭** - 在 Internet Explorer 中傳送「不追蹤」標頭至瀏覽的網站。
 -   **外掛程式** - 讓使用者可將外掛程式加入 Internet Explorer 中。
 -   **內部網路網站中的單一文字** - 可以使用單一文字來將 Internet Explorer 導向某個網站，例如 Bing。
 -   **自動偵測內部網路網站**協助在 Internet Explorer 中設定內部網站的安全性。

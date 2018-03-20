@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
 
@@ -76,16 +76,19 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 ### <a name="to-assign-a-built-in-role"></a>指派內建角色
 
-1. 在 [Intune 角色] 上，選擇您想要指派的內建角色。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [Intune 角色]，然後選取 [所有角色]。
+1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的內建角色。
 
-2. 在 [<角色名稱> - 內容] 刀鋒視窗中，依序選擇 [管理] 和 [指派]。
+2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。
 
     > [!NOTE]
     > 您無法刪除或編輯內建角色
 
-3. 在自訂角色刀鋒視窗中，選擇 [指派]。
+3. 在自訂角色窗格中，選擇 [指派]。
 
-4. 在 [角色指派] 刀鋒視窗中，為指派輸入**名稱**及**描述** (非必要)，然後選擇下列項目︰
+4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
     - **範圍** - 選取包含上列成員可以管理的使用者群組。
 <br></br>
@@ -108,29 +111,29 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)。
 
-2. 選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+2. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
 3. 選擇 [Intune]，隨即開啟 [Intune 儀表板]，然後選擇 [Intune 角色]。
 
-4. 在 [Intune 角色] 刀鋒視窗中，依序選擇 [Intune 角色] 和 [新增自訂]。
+4. 在 [Intune 角色] 窗格中，依序選擇 [所有角色] 和 [新增自訂]。
 
-5. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。
+5. 在 [Add Custom Role] (新增自訂角色) 窗格中，輸入新角色的名稱和描述，然後按一下 [權限]。
 
-3. 在 [權限] 刀鋒視窗中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
+3. 在 [權限] 窗格中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
 
 4. 完成後，請選擇 [確定]。
 
-5. 在 [新增自訂角色] 刀鋒視窗中按一下 [建立]。 新角色會顯示在 [Intune 角色] 刀鋒視窗的清單中。
+5. 在 [Add Custom Role] (新增自訂角色) 窗格中按一下 [建立]。 新角色會顯示在 [Intune 角色 - 所有角色] 窗格的清單中。
 
 ### <a name="to-assign-a-custom-role"></a>指派自訂角色
 
-1. 在 [Intune 角色] 上，選擇您想要指派的自訂角色。
+1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的自訂角色。
 
-2. 在 [<角色名稱> - 內容] 刀鋒視窗中，依序選擇 [管理] 和 [指派]。 您也可以在此刀鋒視窗中編輯或刪除現有的角色。
+2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。 您也可以在此窗格中編輯或刪除現有的角色。
 
-3. 在自訂角色刀鋒視窗中，選擇 [指派]。
+3. 在自訂角色窗格中，選擇 [指派]。
 
-4. 在 [角色指派] 刀鋒視窗中，為指派輸入**名稱**及**描述** (非必要)，然後選擇下列項目︰
+4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
     - **範圍** - 選取包含上列成員可以管理的使用者群組。
 <br></br>

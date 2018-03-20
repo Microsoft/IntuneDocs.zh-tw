@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/04/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
@@ -32,44 +32,20 @@ ms.lasthandoff: 01/25/2018
 
 2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>但若要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
-第一次登入 Intune Azure 入口網站時，Intune 可能不會出現在 Azure 儀表板上。 將 Intune 服務新增至 Azure 儀表板︰
-1. 請從儀表板左側的 Azure 服務清單中選擇 [更多服務 >]，然後在搜尋方塊中輸入 **Intune**。
+第一次登入 Intune [Azure 入口網站](https://portal.azure.com)時，Intune 可能不會出現在 Azure 儀表板上。 將 Intune 服務新增至 Azure 儀表板︰
+1. 請從儀表板左側的 Azure 服務清單中選擇 [All services] (所有服務)，然後在搜尋方塊中輸入 **Intune**。
 2. 從清單中選擇 [Intune]，然後選取星號將服務加入服務清單中。<br/> ![從服務清單中選取 Intune 的映像](./media/azure-add-intune1.png)
 3. 在服務清單中選擇 [Intune]，以開啟 Intune 儀表板。
 
 當您註冊試用版時，您在註冊期間提供的電子郵件地址也會收到一封內含您帳戶資訊的電子郵件訊息。 本電子郵件可確認您的試用版是使用中的狀態。
 
-
-
 ## <a name="keeping-the-admin-experiences-straight"></a>讓管理體驗有條理
 
-
-Intune Azure 入口網站使用三個入口網站：
-- Azure 中的 Intune 儀表板 ([portal.azure.com](https://portal.azure.com))，您可以瀏覽[Azure 入口網站中的 Intune 功能 ](what-is-intune.md)。
-- Office 365 系統管理中心 ([portal.office.com](https://portal.office.com))，若您未使用 Azure Active Directory 新增及管理使用者，可利用此處執行這些作業。 您也可以管理您帳戶的其他事宜，包括計費及支援。
-- Intune 管理主控台 ([manage.microsoft.com](https://manage.microsoft.com)) 可讓您探索尚未新增到 Azure 的功能。
-
-一般是在 Intune 儀表板中執行工作，如下所示。 這是您設定及管理您的群組、原則、裝置及應用程式的網站。
-
-您可以選擇儀表板頂端的 [傳統入口網站]，便可從儀表板移至 Intune 管理主控台。
-
-若要返回 Intune Azure 入口網站，請在瀏覽器網址列中輸入 https://portal.azure.com，然後再次從服務清單中選擇 [Intune]。
-
- ![Intune 儀表板的映像](./media/intune-azure-dashboard.png)
-
-
-您將會使用 Office 365 系統管理中心 (如下所示) 來新增及管理您的使用者和您帳戶的其他層面，包括帳單和支援。
-
-![Office 365 系統管理中心的影像](./media/office-admin-center.png)
-
-若要從 Office 365 系統管理中心前往 Intune 儀表板，請在瀏覽器網址列中輸入 https://portal.azure.com。 在服務清單中選擇 [Intune]。
-
-若要從 Intune 回到 Office 365 系統管理中心，請在瀏覽器位址列中輸入 https://portal.office.com。 如已登入 Intune，您會直接跳到 Office 365 系統管理中心。
+您可能使用的有兩個入口網站：
+- Azure 中的 Intune 儀表板 ([portal.azure.com](https://portal.azure.com))，您可以瀏覽 [Intune 功能](what-is-intune.md)。 一般是在 Intune 儀表板中執行工作。
+- Office 365 系統管理中心 ([portal.office.com](https://portal.office.com))，若您未使用 Azure Active Directory 新增及管理使用者，可於此處執行這些作業。 您也可以管理您帳戶的其他事宜，包括計費及支援。
 
 ## <a name="next-steps"></a>接下來的步驟
-
-### <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
-深入了解 [Azure 入口網站中的 Intune](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>與其他產品整合
 深入了解搭配 Intune 使用您的 Azure Active Directory 使用者帳戶：

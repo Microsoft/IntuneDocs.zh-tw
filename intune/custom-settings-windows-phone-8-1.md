@@ -1,27 +1,25 @@
 ---
-title: "Windows Phone 8.1 裝置的 Intune 自訂設定"
-titleSuffix: Azure portal
+title: "執行 Windows Phone 8.1 之裝置的 Microsoft Intune 自訂設定"
+titleSuffix: 
 description: "了解可用於 Windows Phone 8.1 自訂設定檔中的設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbe76f454575d9f09617b12e3811b0c7d5a75ca1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows Phone 8.1 裝置的自訂設定
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>執行 Windows Phone 8.1 之裝置的 Microsoft Intune 自訂裝置設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,12 +30,12 @@ ms.lasthandoff: 01/25/2018
 ## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Windows Phone 8.1 裝置的自訂原則設定
 
 1. 請使用[如何在 Microsoft Intune 中設定自訂裝置設定](custom-settings-configure.md)中的指示，即可開始使用。
-2. 在 [建立設定檔] 刀鋒視窗中選擇 [設定]，可新增一或多個 OMA URI 設定。
-3. 在 [新增資料列] 刀鋒視窗中，設定每個設定的下列值︰
+2. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定) 窗格中，選擇 [新增] 以新增一或多個 OMA-URI 設定。
+3. 在 [新增資料列] 窗格中，設定每個設定的下列值︰
     - **名稱** - 輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。
     - **描述** - 提供描述概述設定及其他可協助您找到設定的相關資訊。
     - **OMA-URI** - 指定您想要為其提供設定的 OMA-URI。
-    - **資料類型** - 選取要指定此 OMA-URI 設定的資料類型。 請從 [字串]、[日期和時間]、[整數]、[浮點數]，或 [布林] 之間選擇。
-    - **值** - 輸入要與您所輸入之 OMA-URI 相關聯的值。
+    - **資料類型** - 選取要用來指定此 OMA-URI 設定的資料類型。 選擇 [字串]、[字串 (XML)]、[日期和時間]、[整數]、[浮點數]、[布林值] 或 [Base64]。
+    - **值** - 輸入要與您所輸入之 OMA-URI 建立關聯的值或檔案。
 
 4. 完成設定之後，請按一下 [確定]，然後再視需要新增更多設定。

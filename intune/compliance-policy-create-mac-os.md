@@ -1,12 +1,12 @@
 ---
-title: "如何建立 macOS 的合規性政策"
-titleSuffix: Azure portal
-description: "了解如何為 macOS 裝置建立合規性政策。"
+title: "在 Microsoft Intune 中建立 macOS 裝置相容性原則"
+titleSuffix: 
+description: "建立適用於 macOS 裝置的 Microsoft Intune 裝置相容性原則，以便您可以指定裝置必須符合的需求。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置建立裝置合規性政策
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+適用於 macOS 的 Intune 裝置相容性原則指定 macOS 設備必須符合的規則和設置，才能視為相容。 您可以使用這些原則與條件式存取來允許或封鎖存取公司資源，並取得裝置報告、針對不相容來採取動作。 在 Intune Azure 入口網站中，為每個平台建立裝置相容性原則。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -108,7 +110,7 @@ ms.lasthandoff: 02/14/2018
 
 2. 成功登入之後，您會看到 [Azure 儀表板]。
 
-3. 選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+3. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
 4. 選擇 [Intune]，您會看到 [Intune 儀表板]。
 
@@ -118,7 +120,7 @@ ms.lasthandoff: 02/14/2018
 
 7. 輸入名稱及描述，然後選擇要套用此原則的平台。
 
-8. [MacOS 合規性政策] 刀鋒視窗隨即開啟，選擇裝置合規性設定的分類來指定設定：[安全性]、[裝置健全狀況] 和 [裝置屬性]。
+8. [Mac compliance policy] (Mac 相容性原則) 窗格隨即開啟，選擇裝置相容性設定的分類來指定設定：[系統安全性]、[裝置健全狀況] 和 [裝置屬性]。
 
 10. 完成設定選擇後，請選擇每項裝置合規性設定類別下的 [確定]。
 
@@ -126,15 +128,15 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 
-若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [合規性原則] 刀鋒視窗中找到。
+若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 - 原則] 窗格中找到。
 
-1. 選擇您想要指派給使用者的裝置合規性政策，然後選擇 [指派]。 這會開啟刀鋒視窗讓您從中選取 [Azure Active Directory 安全性群組]，並將其指派給原則。
+1. 選擇您想要指派給使用者的裝置合規性政策，然後選擇 [指派]。 這會開啟窗格讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
 
-2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。
+2. 選擇 [選取群組] 會開啟窗格顯示 Azure AD 安全性群組。
 
-3. 依序選擇 [選取] 和 [儲存] 將裝置合規性政策指派給 Azure AD 安全性群組。
+3. 選擇 [儲存] 將裝置相容性原則指派給 Azure AD 安全性群組。
 
-4. 將裝置合規性政策指派給群組後，您就可以關閉 [指派] 刀鋒視窗。
+4. 將裝置相容性原則指派給群組後，您就可以關閉 [指派] 窗格。
 
     > [!TIP]
     > 根據預設，裝置每八小時會檢查一次合規性，但使用者可以透過 Intune 公司入口網站應用程式強制執行此程序。

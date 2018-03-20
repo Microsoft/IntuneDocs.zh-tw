@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>如何建立可啟用「Google Play 安全防護」的裝置合規性原則
 
@@ -29,14 +29,15 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-a-compliance-policy"></a>建立合規性政策
 
-1. 登入 Azure 入口網站。 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 在 [管理群組] 中選擇 [裝置合規性]。 
 3. 選擇 [原則]，然後選擇 [建立原則]。
 4. 輸入原則 [名稱] 和 [描述]。
 5. 為 [平台] 選取 [Android]。
 6. 選擇 [設定] > [裝置健全狀況]。
 7. 設定 [Google Play 安全防護] 設定。
-8. 設定完 [Google Play 安全防護] 之後，請指定 [安全性] 與 [裝置屬性] 設定。 完成後，請選擇 [確定]。
+8. 設定 [Google Play Protect] (Google Play 安全防護) 之後，請指定 [系統安全性] 與 [裝置屬性] 設定。 完成後，請選擇 [確定]。
 
 ## <a name="configure-the-google-play-protect-settings"></a>設定 [Google Play 安全防護] 設定
 

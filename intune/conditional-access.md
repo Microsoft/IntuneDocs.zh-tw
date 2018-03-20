@@ -1,12 +1,12 @@
 ---
-title: "利用 Intune 的條件式存取"
-titlesuffix: Azure portal
-description: "了解如何在 Microsoft Intune 中定義使用者與裝置在存取公司資源之前必須符合的條件。"
+title: "Microsoft Intune 的條件式存取"
+titlesuffix: 
+description: "了解如何在 Microsoft Intune 中定義使用者、裝置和應用程式在存取公司資源之前必須符合的條件。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主題會先說明適用於 Enterprise Mobility + Security (EMS) 的條件式存取，接著說明使用 Intune 時的條件式存取常見案例。
+條件式存取是指您可以控制可連線到您電子郵件和公司資源的裝置與應用程式的方式。 在本主題中，深入了解以裝置和應用程式為基礎的條件式存取，並尋找搭配 Intune 使用條件式存取的常見案例。
 
 Enterprise Mobility + Security (EMS) 的條件式存取不是一項獨立產品，它是參與屬於 EMS 之所有服務與產品的解決方案。 它提供更細微的存取控制來保障您公司資料的安全，同時為使用者提供體驗，讓他們能夠從任何裝置及從任何位置完成最佳工作成果。
 

@@ -1,29 +1,29 @@
 ---
-title: "適用於 iOS 的 Intune 共用裝置組態設定"
-titlesuffix: Azure portal
-description: "了解您可以用來在 iOS 裝置鎖定畫面上顯示資訊的 Intune 設定。"
+title: "適用於 iOS 的 Microsoft Intune 共用裝置組態設定"
+titlesuffix: 
+description: "了解您可以用來在 iOS 裝置鎖定畫面上顯示資訊的 Microsoft Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5473a280551ab74f781a2de682d7e5922491e98
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9147eaff2bd366dbfd86c6422e0f7a29f685db62
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>在 iOS 裝置鎖定畫面上顯示訊息的共用裝置組態設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文將說明可以用來在 iOS 裝置鎖定畫面上顯示資訊的 Microsoft Intune 設定。
 
 共用裝置組態設定可讓您指定登入視窗與鎖定畫面上所顯示的選擇性文字。 例如，您可以輸入「若遺失，請送回」訊息和「資產標籤資訊」。 
 
@@ -32,11 +32,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-shared-device-settings"></a>建立共用的裝置設定
 
-1. 在 [裝置功能] 刀鋒視窗上，選擇 [共用裝置設定 (僅限受監督)]。
-2. 在 [共用裝置設定 (僅限受監督)] 刀鋒視窗上，設定下列設定：
+1. 從 [Azure 入口網站中的 Intune](https://portal.azure.com)，巡覽至 [[裝置設定] 區域中的 [裝置功能]](device-features-configure.md)。 
+1. 在 [裝置功能] 窗格中，選擇 [Shared Device Configuration (supervised only)] (共用裝置設定 (僅限受監督))。
+2. 在 [Shared Device Configuration (supervised only)] (共用裝置設定 (僅限受監督)) 窗格中，設定下列設定：
     - **資產標籤資訊**：輸入裝置資產標籤的相關資訊。 例如：「由 Contoso 公司所擁有」。您輸入的資訊會套用至您指派此設定檔的所有裝置上。
     - **鎖定畫面註腳** - 如果裝置遺失或遭竊，輸入可能有助於取回裝置的備註。 例如：「如果拾獲，請撥打 (號碼)」。
-3. 完成之後，選擇 [確定] 直到您返回 [建立設定檔] 刀鋒視窗，然後選擇 [建立]。 
+3. 完成之後，選擇 [確定] 直到您返回 [建立設定檔] 窗格，然後選擇 [建立]。 
 
 
 ## <a name="next-steps"></a>接下來的步驟

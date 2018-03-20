@@ -1,7 +1,7 @@
 ---
-title: "設定 Skycure 與 Intune 整合"
-titlesuffix: Azure portal
-description: "設定 Skycure 與 Microsoft Intune 整合。"
+title: "設定 Skycure 與 Microsoft Intune 整合"
+titlesuffix: 
+description: "如何使用 Microsoft Intune 設定 Skycure Mobile Threat Defense (MTD) 解決方案，來控制行動裝置對公司資源的存取。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>設定 Skycure 與 Intune 整合
 
-您必須將 Skycure 應用程式新增至 Azure AD，才能使用單一登入功能。
+完成下列步驟以將 Skycure Mobile Threat Defense 解決方案與 Intune 整合。 您必須將 Skycure 應用程式新增至 Azure AD，才能使用單一登入功能。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -62,15 +62,15 @@ Skycure 支援兩種與 Intune 整合的模式：
 
 4.  在 [iOS 應用程式] 標籤上，按一下 [新增至 Active Directory]。
 
-    ![Skycure 管理主控台上的 iOS 應用程式](./media/skycure-setup-1.png)
+    ![Skycure 管理主控台上 iOS 應用程式的影像](./media/skycure-setup-1.png)
 
 5.  隨即會開啟登入頁面。請輸入您的 Intune 認證，然後按一下 [接受]。
 
-    ![iOS 應用程式 Intune 登入提示](./media/skycure-setup-2.png)
+    ![iOS 應用程式 Intune 登入提示的影像](./media/skycure-setup-2.png)
 
 6.  一旦將應用程式新增至 Azure AD，您就可以在 Skycure 管理主控台上看到指示，指出應用程式已成功新增至 Azure AD。
 
-    ![iOS 應用程式完成畫面](./media/skycure-setup-3.png)
+    ![iOS 應用程式完成畫面的影像](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > 針對 [Skycure Android] 和 [管理] 應用程式重複相同程序。
@@ -79,13 +79,13 @@ Skycure 支援兩種與 Intune 整合的模式：
 
 您需要新增包含所有執行 Skycure 之裝置的 Azure AD 安全性群組。
 
-1.  輸入並選取所有執行 Skycure 之裝置的安全性群組，然後按一下 [套用變更]。
+-  輸入並選取所有執行 Skycure 之裝置的安全性群組，然後按一下 [套用變更]。
 
-    ![設定安全性群組 Skycure 管理主控台](./media/skycure-setup-4.png)
+    ![顯示安全性群組 Skycure 管理主控台設定位置的影像](./media/skycure-setup-4.png)
 
 Skycure 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 安全性群組同步。
 
-![在 Skycure 管理主控台上完成的安全性群組設定](./media/skycure-setup-5.png)
+![顯示在 Skycure 管理主控台上完成之安全性群組設定的影像](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>設定 Intune 和 Skycure 之間的完整整合
 
@@ -103,7 +103,7 @@ Skycure 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 安
 
 5.  按一下 [套用變更]。
 
-    ![完成的 Skycure 完整整合](./media/skycure-setup-6.png)
+    ![顯示完成之 Skycure 完整整合的影像](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>接下來的步驟
 

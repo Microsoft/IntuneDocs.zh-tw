@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>針對 Symantec PKI Manager Web 服務設定 Intune 憑證連接器
 
@@ -166,8 +166,11 @@ ms.lasthandoff: 02/13/2018
 
 如果您已針對現有的 Microsoft CA 使用最新的 Intune 憑證連接器，並想要新增 Symantec CA 支援，請略過此步驟。 否則，請從 Intune 系統管理入口網站下載最新的 Intune 憑證連接器，並遵循下列指示。
 
-1. 使用您的 Intune 租用戶系統管理員認證登入 https://portal.azure.com，並搜尋 Intune 資源。
-2. 從 [Microsoft Intune] > [裝置設定] > [憑證授權單位] > [下載憑證連接器] 連結下載 NDESConnectorSetup.exe。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選取 [裝置設定]。
+4. 在 [裝置設定] 窗格中，選取 [憑證授權單位]。
+5. 按一下 [新增] 並選取 [下載連接器檔案]。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
 3. 以較高的權限執行 NDESConnectorSetup.exe。
 
     a. 在 [安裝選項] 畫面上，選取 [PFX 發佈]，如下列螢幕擷取畫面所示。  以預設選項完成剩餘的設定。
@@ -233,7 +236,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     a. 使用 Intune 租用戶系統管理員認證登入 [Azure 入口網站](https://portal.azure.com)，並搜尋 Intune 資源。
 
-    b。 從 [Microsoft Intune] > [裝置設定] - [設定檔] > [建立設定檔] 建立受信任的憑證設定檔。
+    b。 從 [Microsoft Intune] > [裝置設定] > [設定檔] > [建立設定檔] 建立受信任的憑證設定檔。
 
     c. 在 [名稱] 和 [描述] 欄位中提供必要的資訊，然後選取目標平台。 
 
@@ -264,7 +267,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 ## <a name="create-a-pkcs-certificate-profile"></a>建立 PKCS 憑證設定檔
 
 1. 使用您的 Intune 租用戶系統管理員認證登入 [Azure 入口網站](https://portal.azure.com)，並搜尋 Intune 資源。
-2. 從 [Microsoft Intune] > [裝置設定 – 設定檔] > [建立設定檔] > [PKCS 憑證] 建立 PKCS 憑證設定檔。
+2. 從 [Microsoft Intune] > [裝置設定] > [設定檔] > [建立設定檔] 建立 PKCS 憑證設定檔。
 
     a. 在 [名稱] 和 [描述] 欄位中提供必要的資訊，然後選取目標平台。
 

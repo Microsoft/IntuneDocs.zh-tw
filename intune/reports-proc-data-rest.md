@@ -1,11 +1,12 @@
 ---
 title: "使用 REST 用戶端從資料倉儲 API 取得資料"
+titlesuffix: Microsoft Intune
 description: "使用 RESTful API 從 Intune 資料倉儲擷取資料。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e96e1a728fbb054f412dc6c2a3610179aec18b75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -34,9 +35,9 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-a-client-app-as-a-native-app-in-azure"></a>在 Azure 中將用戶端應用程式建立為原生應用程式
 
-在 Azure 中建立原生應用程式。 此原生應用程式是用戶端應用程式。 本機用戶端要求認證時，在本機電腦上執行的用戶端會參考 Intune 資料倉儲 API。 
+在 Azure 中建立原生應用程式。 此原生應用程式是用戶端應用程式。 本機用戶端要求認證時，在本機電腦上執行的用戶端會參考 Intune 資料倉儲 API。
 
-1. 登入您租用戶的 Azure 入口網站。 選擇 [Azure Active Directory] > [應用程式註冊]，以開啟 [應用程式註冊] 刀鋒視窗。
+1. 登入您租用戶的 Azure 入口網站。 選擇 [Azure Active Directory] > [應用程式註冊]，以開啟 [應用程式註冊] 窗格。
 2. 選取 [新增應用程式註冊]。
 3. 鍵入應用程式詳細資料。
     1.  在 [名稱] 中，鍵入易記名稱 (例如 Intune 資料倉儲用戶端)。
@@ -53,19 +54,19 @@ ms.lasthandoff: 01/25/2018
 您現在已在 Azure 中定義應用程式。 將存取權從原生應用程式授與 Microsoft Intune API。
 
 1.  選取原生應用程式。 您已將應用程式命名為 **Intune 資料倉儲用戶端**這類名稱。
-2.  在 [設定] 刀鋒視窗選取 [必要權限]
-3.  在 [必要權限] 刀鋒視窗中選取 [新增]。
+2.  在 [設定] 窗格選取 [必要權限]
+3.  在 [必要權限] 窗格中選取 [新增]。
 4.  選取 [選取 API]。
 5.  搜尋 Web 應用程式名稱。 它會命名為 **Microsoft Intune API**。
 6.  選取清單中的應用程式。
 7.  選取 [選取]。
 8.  核取 [委派的權限] 方塊，以新增 [Get data warehouse information from Microsoft Intune]\(從 Microsoft Intune 取得資料倉儲資訊)。
 
-    ![啟用存取](media\reports-get_rest_data_client_access.png)
+    ![啟用存取 - Microsot Intune API](media\reports-get_rest_data_client_access.png)
 
 9.  選取 [選取]。
 10.  選取 [完成]。
-11.  此外，也可在 [必要權限] 刀鋒視窗中選取 [授與權限]。 這會授與目前目錄中所有帳戶的存取權。 這會防止針對租用戶中的每位使用者顯示同意對話方塊。 如需詳細資訊，請參閱[整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
+11.  此外，也可在 [必要權限] 窗格中選取 [授與權限]。 這會授與目前目錄中所有帳戶的存取權。 這會防止針對租用戶中的每位使用者顯示同意對話方塊。 如需詳細資訊，請參閱[整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
 12.  選取 [是]。
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>使用 Postman 從 Microsoft Intune API 取得資料
@@ -88,14 +89,14 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="odata-endpoint"></a>OData 端點
 
-您也需要端點。 若要取得資料倉儲端點，您需要自訂摘要 URL。 您可以從 [資料倉儲] 刀鋒視窗取得 OData 端點。
+您也需要端點。 若要取得資料倉儲端點，您需要自訂摘要 URL。 您可以從 [資料倉儲] 窗格取得 OData 端點。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  +  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [其他工作] 之下選取 [設定 Intune 資料倉儲]。
 4. 複製 [使用協力廠商報表服務] 之下的自訂摘要 URL。 這應該看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-端點會遵循以下格式：`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`。 
+端點會遵循以下格式：`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`。
 
 例如，**日期**實體看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -151,10 +152,10 @@ ms.lasthandoff: 01/25/2018
 > 您可以存取 [GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) 上的下列程式碼範例。 如需範例的最新變更和更新，請參閱 GitHub 存放庫。
 
 1.  開啟 [Microsoft Visual Studio]。
-2.  選擇 [檔案] > [新增專案]。 展開 [Visual C#]，然後選擇 [主控台應用程式 (.NET Framework)]。 
+2.  選擇 [檔案] > [新增專案]。 展開 [Visual C#]，然後選擇 [主控台應用程式 (.NET Framework)]。
 3.  將專案命名為 ` IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後選取 [確定]。
 4.  以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]。 選取 [瀏覽]，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
-5. 選擇套件，並在 [Manage Packages for Your Solution] \(管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後選取 [安裝]。 
+5. 選擇套件，並在 [Manage Packages for Your Solution] (管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後選取 [安裝]。
 6. 選取 [我接受]，以接受 NuGet 套件授權。
 7. 從方案總管中，開啟 `Program.cs`。
 
@@ -178,15 +179,15 @@ namespace IntuneDataWarehouseSamples
     * emailAddress - The email address of the user that you will authenticate as.
     *
     * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not 
+    *    This is inline only for simplicity in this sample. We do not
     *    recommend storing passwords in plaintext.
     *
     * applicationId - The application ID of the native app that was created in AAD.
     *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in 
+    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
     *      the Azure portal.
-    * 
-    * collectionName - The name of the warehouse entity collection you would like to 
+    *
+    * collectionName - The name of the warehouse entity collection you would like to
     *      access.
     */
    var emailAddress = "intuneadmin@yourcompany.com";
@@ -224,6 +225,6 @@ namespace IntuneDataWarehouseSamples
 
 ## <a name="next-steps"></a>接下來的步驟
 
-您可以在[使用 Intune 資料倉儲 API](reports-api-url.md) 中找到授權、API URL 結構和 OData 端點的詳細資料。 
+您可以在[使用 Intune 資料倉儲 API](reports-api-url.md) 中找到授權、API URL 結構和 OData 端點的詳細資料。
 
 您也可以參考 Intune 資料倉儲資料模型，以尋找 API 中所含的資料實體。 如需詳細資訊，請參閱 [Intune 資料倉儲 API 資料模型](reports-ref-data-model.md)。

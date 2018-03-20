@@ -1,5 +1,6 @@
 ---
-title: "支援的裝置 - Microsoft Intune"
+title: "Microsoft Intune 支援的作業系統和瀏覽器"
+titleSuffix: 
 description: "列出 Intune 裝置管理所支援的裝置平台及瀏覽器"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>支援的作業系統與瀏覽器
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本文適用於負責管理企業裝置的系統管理員。 如需在裝置上安裝 Intune 方面的協助，請參閱[使用受控裝置完成工作](/intune-user-help/company-portal-frequently-asked-questions)。
+設定 Microsoft Intune 之前，請先檢閱支援的作業系統和瀏覽器。
 
-開始設定 Microsoft Intune 之前，請先檢閱下列需求︰
-
-- [支援的作業系統](#intune-supported-operating-systems)
-- [支援使用 Intune 的網頁瀏覽器清單](#intune-supported-web-browsers)
-
-您也應該進一步熟悉 [Intune 網路頻寬用量](network-bandwidth-use.md) ([傳統入口網站](/intune-classic/get-started/network-bandwidth-use))。
+如需在裝置上安裝 Intune 方面的協助，請參閱[使用受控裝置完成工作](/intune-user-help/company-portal-frequently-asked-questions)。 您也應該進一步熟悉 [Intune 網路頻寬用量](network-bandwidth-use.md) ([傳統入口網站](/intune-classic/get-started/network-bandwidth-use))。
 
 ## <a name="intune-supported-operating-systems"></a>Intune 支援的作業系統
 

@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -71,20 +71,21 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="how-to-create-and-assign-update-rings"></a>如何建立及指派更新響鈴
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [軟體更新]。
-4. 在 [軟體更新] 刀鋒視窗中，選擇 [管理]  >  [Windows 10 更新響鈴]。
-5. 在顯示更新響鈴清單的刀鋒視窗中，選擇 [建立]。
-6. 在 [建立更新響鈴] 刀鋒視窗中，提供更新響鈴的名稱和描述 (選擇性)，然後選擇 [設定]。
-7. 在 [設定] 刀鋒視窗中，設定下列資訊：
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [軟體更新]。
+4. 在 [軟體更新] 窗格中，選擇 [管理]  >  [Windows 10 更新響鈴]。
+5. 在顯示更新響鈴清單的窗格中，選擇 [建立]。
+6. 在 [建立更新響鈴] 窗格中，提供更新響鈴的名稱和描述 (選擇性)，然後選擇 [設定 - 設定]。
+7. 在 [設定] 窗格中，設定下列資訊：
     - **維護通道**：設定裝置接收 Windows 更新的通道 (半年通道 (已設定目標) 或半年通道)。
-    - **Microsoft 更新**︰選擇是否要從 Microsoft Update 掃描應用程式更新。
+    - **Microsoft 產品更新**︰選擇是否要從 Microsoft Update 掃描應用程式更新。
     - **Windows 驅動程式**︰選擇是否要在更新期間排除 Windows Update 驅動程式。
     - **自動更新行為**︰選擇要如何管理自動更新行為，以進行掃描、下載及安裝更新。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **品質更新延遲期間 (天)** - 指定品質更新延遲的天數。 最多可以延遲接收「品質更新」至其發行後 30 天。  
 
     品質更新通常會修正和改進現有的 Windows 功能，而且通常在每個月的第一個星期二發行，不過 Microsoft 也可能在任何時間發行。 您可以定義在品質更新發行後，「是否」要延遲以及延遲「多久」接收品質更新。
+
     - **功能更新延遲期間 (天)** - 指定功能更新延遲的天數。 您可以延遲接收「功能更新」至其發行後 180 天。
 
     功能更新一般是 Windows 的新功能。 進行 [維護通道] 設定之後 (半年通道 (已設定目標) 或半年通道)，您接著可以定義在 Microsoft 於 Windows Update 發行「功能更新」後，是否要延遲接收「功能更新」，以及要延遲多久。
@@ -93,13 +94,13 @@ ms.lasthandoff: 03/02/2018
 
     **若維護通道已設為 [半年通道] 且延遲期間為 30 天**：可以假設「功能更新 X」會在 1 月以半年通道 (已設定目標) 首度公開發行。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置將會在此半年通道發行的 30 天後收到「功能更新 X」，並將在 5 月更新。
 
-    - **傳遞最佳化** - 選擇裝置將下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
-1. 完成設定後，按一下 [確定]，然後在 [建立更新響鈴] 刀鋒視窗中按一下 [建立]。
+    - **傳遞最佳化下載方法** - 選擇裝置將下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+1. 完成設定後，按一下 [確定]，然後在 [建立更新響鈴] 窗格中按一下 [建立]。
 
 新的更新響鈴會隨即顯示在更新響鈴清單中。
 
 1. 若要指派更新響鈴，在更新響鈴清單中，選取響鈴，在 [<響鈴名稱>] 索引標籤中選擇 [指派]。
-2. 在下一個索引標籤中，選擇 [選取群組]，然後選擇要指派此響鈴的群組。
+2. 在下一個索引標籤中，選擇 [Select groups to include] (選取要包含的群組)，然後選擇要指派此響鈴的群組。
 3. 完成之後，選擇 [選取] 來完成這項指派。
 
 ## <a name="update-compliance-reporting"></a>更新合規性報告
@@ -108,22 +109,21 @@ ms.lasthandoff: 03/02/2018
 ### <a name="review-update-compliance-in-intune"></a>在 Intune 中檢視更新合規性 
 <!-- 1352223 -->
 檢視原則報告，以檢視您已設定之 Windows 10 更新通道的部署狀態。 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [軟體更新]。
-4. 在 [軟體更新] 刀鋒視窗中，選擇 [概觀]。 您可以從這裡看到您指派之任何更新通道的狀態一般資訊。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [軟體更新]。
+4. 在 [軟體更新] 窗格中，選擇 [概觀]。 您可以從這裡看到您指派之任何更新通道的狀態一般資訊。
 5. 請開啟下列其中一個報表： 
      
    **針對所有的部署通道：**
-   1. 在 [軟體更新] > [Windows 10 更新通道] 刀鋒視窗上。 
+   1. 在 [軟體更新] > [Windows 10 更新通道] 窗格中。 
    2. 在 [監視] 區段，選擇 [依更新通道別部署狀態]。
                    
    **針對特定的部署通道：** 
-   1. 在 軟體更新 > Windows 10 更新通道 刀鋒視窗上，選擇要檢視的部署通道。
+   1. 在 軟體更新 > Windows 10 更新通道 窗格中，選擇要檢視的部署通道。
    2. 在 [監視] 區段中，從下列報表選擇，以檢視更新通道的更多詳細資訊：
-      - **裝置的更新通道部署**
-      - **使用者的更新通道部署**
-      - **每個設定部署狀態**
+      - **裝置狀態**
+      - **使用者狀態**
 
 ### <a name="review-update-compliance-using-oms"></a>使用 OMS 檢視更新合規性
 您可以使用 Operations Management Suite (OMS) 中的免費解決方案 Update Compliance 來監視 Windows 10 更新的首度發行。 如需詳細資訊，請參閱[使用Update Compliance 來監視 Windows Updates](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 當您使用此解決方案時，可以將商業識別碼部署至任何您用 Intune 管理、且要報告更新合規性的 Windows 10 裝置。
@@ -136,19 +136,19 @@ ms.lasthandoff: 03/02/2018
 
 - **設定名稱**：Windows Analytics 商業識別碼
 - **設定描述**︰設定 Windows Analytics 解決方案的商業識別碼
-- **資料類型**：字串
 - **OMA-URI** (區分大小寫)：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **資料類型**：字串
 - **值**：<使用 OMS 工作區中的 [Windows 遙測] 索引標籤上顯示的 GUID>
 
 ![診斷與使用方式資料的 Windows 設定](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>如何暫停更新
 您可以讓裝置暫停接收功能更新或品質更新一段期間，自您暫停更新起最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [軟體更新]。
-4. 在 [軟體更新] 刀鋒視窗中，選擇 [管理]  >  [Windows 10 更新響鈴]。
-5. 在顯示更新響鈴清單的刀鋒視窗中，選擇您要暫停的響鈴，然後選擇 [...]  >  [暫停品質] 或 > [暫停功能]，取決於您要暫停的更新類型。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [軟體更新]。
+4. 在 [軟體更新] 窗格中，選擇 [管理]  > [Windows 10 更新響鈴]。
+5. 在顯示更新響鈴清單的窗格中，選擇您要暫停的響鈴，然後選擇 ...  > 暫停品質 > 或 暫停功能，取決於您要暫停的更新類型。
 
 > [!IMPORTANT]
 > 在您發出暫停命令後，裝置會在下次向服務確認時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。

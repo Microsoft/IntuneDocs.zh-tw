@@ -1,12 +1,12 @@
 ---
-title: "建立 Android for Work 的合規性政策"
-titleSuffix: Azure portal
-description: "了解如何為 Android for Work 裝置建立合規性政策。"
+title: "建立 Android for Work 合規性政策"
+titleSuffix: Microsoft Intune
+description: "建立適用於 Android for Work 裝置的 Intune 裝置合規性政策，以便您可指定裝置為符合規範必須滿足的需求。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>如何在 Intune 中為 Android for Work 裝置建立裝置合規性政策
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-每個平台都會建立合規性政策。  您可以在 Azure 入口網站中建立合規性政策。 若要深入了解合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)。 若要了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)。
+適用於 Android for Work 的 Intune 裝置合規性政策，會指定 Android for Work 裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則與條件式存取來允許或禁止存取公司資源，並針對不符合規範的裝置取得裝置報告及採取動作。 您可於 Azure 入口網站中為每個平台建立裝置合規性政策。 若要深入了解建立合規性政策前必須滿足的合規性政策與必要條件，請參閱[裝置合規性入門](device-compliance-get-started.md)。
 
 下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
 
@@ -51,12 +51,14 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 入口網站中建立合規性政策
 
-1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies]\(所有裝置合規性政策) 及 [建立]。
-2. 鍵入名稱、描述並選擇要套用此原則的平台。
-3. 選擇 [合規性需求]，以指定 [安全性]、[裝置健全狀況] 及 [裝置屬性] 設定。 完成後請按一下 [確定]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+1. 從 [Intune] 頁面中，選擇 [裝置合規性]。 在 [管理] 下選擇 [原則]，然後選擇 [建立原則]。
+2. 輸入名稱及描述，然後選擇要套用此原則的平台。
+3. 在此處選擇 [組態設定] 來指定 [系統安全性]、[裝置健康情況] 及 [裝置屬性] 設定。 完成後，請選擇 [確定]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 
-若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [合規性 - 政策] 刀鋒視窗中找到。
+若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置合規性 - 原則] 窗格中找到。
 
-1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這會開啟刀鋒視窗讓您從中選取 [Azure Active Directory 安全性群組]，並將其指派給原則。
-2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。  選擇 [選取] 會將原則部署給使用者。
+1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這會開啟窗格讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
+2. 選擇 [選取群組] 以開啟顯示 Azure AD 安全性群組的窗格。  選擇 [儲存] 會將原則部署給使用者。
 
 您已對使用者套用此原則。  要套用原則之使用者的裝置將會接受合規性評估。
 

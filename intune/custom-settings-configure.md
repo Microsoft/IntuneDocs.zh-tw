@@ -1,51 +1,53 @@
 ---
-title: "如何設定 Intune 自訂裝置設定"
-titleSuffix: Azure portal
-description: "了解如何在管理的裝置上使用 Intune 設定自訂設定。"
+title: "在 Microsoft Intune - Azure 中使用自訂裝置設定 | Microsoft Docs"
+description: "新增或建立設定檔，以 Microsoft Intune 來使用 Windows、Android 和 iOS 裝置的自訂設定"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定自訂裝置設定
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>在 Intune 中使用自訂設定建立設定檔
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>使用自訂設定的時機
+Intune 可能不具備您需要或想要的所有內建設定。 或者，您可能想要使用其他裝置設定檔中可用的設定。 若要新增這些設定，請建立裝置設定檔，然後使用自訂裝置設定來設定設定檔。
 
-當 Intune 沒有您想要設定的內建設定時，自訂設定很實用，且可從其他裝置設定檔取得。
-為每個平台設定自訂設定的方式皆不同。 例如，對於 Android 與 Windows 裝置來說，您可指定開放行動裝置聯盟統一資源識別項 (OMA-URI) 值，控制裝置上的功能。 對於 Apple 裝置來說，您可匯入利用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 所建立的檔案。
+本文列出使用自訂設定建立設定檔的基本步驟。 它也包含連結，以便更深入發掘如何使用不同平台建立自訂設定。
 
-使用本主題中的資訊可深入了解使用自訂設定進行設定檔設定的基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
+## <a name="custom-settings-on-different-platforms"></a>不同平台上的自訂設定
+為每個平台設定自訂設定的方式皆不同。 例如，若要控制 Android 與 Windows 裝置上的功能，您可輸入開放行動裝置聯盟統一資源識別項 (OMA-URI) 值。 對於 Apple 裝置來說，您可匯入利用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 所建立的檔案。
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>建立內含自訂設定的裝置設定檔
+## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為自訂檔輸入 [名稱] 及[描述]。
-5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可以為自訂裝置設定選擇下列平台之一︰
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 依序選取 [裝置設定]、[設定檔]，然後選擇 [建立設定檔]。
+4. 輸入自訂設定檔的 [名稱] 和 [描述]。
+5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您可以選擇下列任何平台：
+
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
+
 6. 從 [設定檔] 類型下拉式清單中選擇 [自訂]。
-7. 您可設定的設定值隨您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+7. 您可設定的設定會視您選擇的平台而不同。 下列連結提供每個平台自訂設定的更多詳細資料：
+
     - [Android 設定](custom-settings-android.md)
     - [iOS 設定](custom-settings-ios.md)
     - [macOS 設定](custom-settings-macos.md)
@@ -53,7 +55,7 @@ ms.lasthandoff: 02/01/2018
     - [Windows 10 設定](custom-settings-windows-10.md)
     - [Windows Holographic for Business 設定](custom-settings-windows-holographic.md)
     - [Android for Work 設定](custom-settings-android-for-work.md)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+8. 完成後，請選取 [建立]。
+
+設定檔隨即建立，並出現在設定檔清單上。 若要將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

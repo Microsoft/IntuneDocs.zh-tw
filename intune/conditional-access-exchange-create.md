@@ -1,12 +1,12 @@
 ---
-title: "建立及指派內部部署 Exchange 條件式存取原則"
-titlesuffix: Azure portal
+title: "建立 Exchange 條件式存取原則"
+titlesuffix: Microsoft Intune
 description: "在 Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 設定條件式存取。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立及指派條件式存取原則
+# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主題逐步說明如何依據裝置合規性，為 Exchange 內部部署設定條件式存取的程式。
+本文將說明，如何根據裝置相容性來設定 Exchange 內部部署的條件式存取。
 
 如果您有 Exchange Online Dedicated 環境，而且需要了解它是使用新版或舊版的設定，請連絡您的帳戶管理員。 若要控制 Exchange 內部部署或舊版 Exchange Online Dedicated 環境的電子郵件存取，請在 Intune 中設定 Exchange 內部部署的條件式存取。
 
@@ -76,40 +76,39 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 移至 [Azure 入口網站](https://portal.azure.com/)，並使用您的 Intune 認證登入。
 
-2. 成功登入之後，您會看到 [Azure 儀表板]。
+1. 成功登入之後，您會看到 [Azure 儀表板]。
 
-3. 選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+1. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
-4. 選擇 [Intune]，您會看到 [Intune 儀表板]。
+1. 選擇 [Intune]，您會看到 [Intune 儀表板]。
 
-5. 選擇 [內部部署存取]，然後選擇
+1. 選擇 [內部部署存取]。 [內部部署] 窗格會顯示條件式存取原則與受該原則影響之裝置的狀態。
 
-6. [內部部署] 刀鋒視窗會顯示條件式存取原則與受該原則影響之裝置的狀態。
+1. 從 [管理] 下選擇 [Exchange 內部部署存取]。
 
-7. 從 [管理] 下選擇 [Exchange 內部部署存取]。
-
-8. 在 [Exchange 內部部署存取] 刀鋒視窗中選擇 [是]，以啟用 Exchange 內部部署存取控制。
+1. 在 [Exchange 內部部署存取] 窗格中選擇 [是]，以啟用 Exchange 內部部署存取控制。
 
     > [!NOTE]
-    > 若未設定 Exchange Active Sync 內部部署連接器，將會停用此選項。  您必須先安裝及設定此連接器，才能為 Exchange 內部部署啟用條件式存取。 如需詳細資訊，請參閱[安裝 Intune 內部部署 Exchange 連接器](exchange-connector-install.md)
+    > 若未設定 Exchange Active Sync 內部部署連接器，則會停用此選項。  您必須先安裝及設定此連接器，才能為 Exchange 內部部署啟用條件式存取。 如需詳細資訊，請參閱[安裝 Intune 內部部署 Exchange 連接器](exchange-connector-install.md)
 
-9. 從 [指派] 下選擇 [包含的群組]。  請使用應套用條件式存取的安全性使用者群組。 這會需要使用者向 Intune 註冊其裝置，而且必須符合合規性設定檔的規範。
+1. 從 [指派] 下選擇 [包含的群組]。  請使用應套用條件式存取的安全性使用者群組。 此動作會需要使用者向 Intune 註冊其裝置，而且必須符合相容性設定檔的規範。
 
-10. 若要排除特定的使用者群組，可以選擇 [排除的群組]，然後選取要免套用裝置註冊與合規需求的使用者群組。
+1. 若要排除特定的使用者群組，可以選擇 [排除的群組]，然後選取要免套用裝置註冊與合規需求的使用者群組。
 
-11. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊輸入訊息時，會一邊顯示訊息的預覽。
+1. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
     > [!TIP]
     > 若要深入了解標記語言，請參閱 Wikipedia 上的這篇[文章](https://en.wikipedia.org/wiki/Markup_language)。
 
-12. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings]\(進階 Exchange Activesync 存取設定) 刀鋒視窗中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。
+1. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings] (進階 Exchange Activesync 存取設定) 窗格中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。
 
-13. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
-  - 當您設定成允許存取時，所有裝置均能立即存取 Exchange 內部部署。  若**包含的群組**中之使用者的裝置稍後被評估為不符合合規性政策，或未向 Intune 註冊，將會予以封鎖。
-  - 當您設定為禁止存取時，將會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為符合規範，即可存取 Exchange 內部部署。 因為非執行 Samsung Knox Standard 的 Android 裝置不支援此設定，所以一律會被封鎖。
-<br></br>
-14. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受管理的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且合規的裝置進行存取。 選擇 [確定]，以儲存設定。
+1. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
 
-15. 在 [內部部署] 刀鋒視窗中按一下 [儲存]，以儲存條件式存取原則。
+   - 當您設定成允許存取時，所有裝置即可立即存取 Exchange 內部部署。  若**包含的群組**中之使用者的裝置稍後被評估為不符合合規性政策，或未向 Intune 註冊，將會予以封鎖。
+   - 當您設定為禁止存取時，會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為相容，即可存取 Exchange 內部部署。 因為非執行 Samsung Knox Standard 的 Android 裝置不支援此設定，所以一律會被封鎖。
+
+1. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受控的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且相容的裝置進行存取。 選擇 [確定]，以儲存設定。
+
+1. 在 [內部部署] 窗格中，按一下 [儲存]，以儲存條件式存取原則。
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>在 Intune 中建立 Azure AD 條件式存取原則
 
@@ -122,7 +121,7 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 在 [Intune 儀表板] 中，選擇 [條件式存取]。
 
-2. 在 [原則] 刀鋒視窗中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
+2. 在 [原則] 窗格中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
 
 ## <a name="see-also"></a>另請參閱
 

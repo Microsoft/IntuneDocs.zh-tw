@@ -1,12 +1,12 @@
 ---
-title: "適用於 Windows 10 的 Intune Endpoint Protection 設定"
-titlesuffix: Azure portal
-description: "了解 Windows 10 裝置上可用以控制BitLocker 等 Endpoint Protection 設定的 Intune 設定。"
+title: "適用於 Windows 10 的 Microsoft Intune Endpoint Protection 設定"
+titlesuffix: 
+description: "了解 Windows 10 裝置上可用以控制 BitLocker 等 Endpoint Protection 設定的 Intune 設定。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中適用於 Windows 10 和更新版本的 Endpoint Protection 設定
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>在 Microsoft Intune 中建立適用於 Windows 10 和更新版本的 Endpoint Protection 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上 BitLocker 和 Windows Defender 這類安全性功能。
+Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker 和 Windows Defender 等安全性功能。
 
-請使用本主題中的資訊，以了解如何建立 Endpoint Protection 設定檔。
+請使用本文中的資訊，以了解如何建立 Endpoint Protection 設定檔。
 
 > [!Note]
 > Home 和 Professional 版本的 Windows 10 不支援這些設定。
 
 ## <a name="create-an-endpoint-protection-profile"></a>建立 Endpoint Protection 設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
+2. 在 [裝置設定] 刀鋒視窗的 [管理] 區段下，選擇 [設定檔]。
 3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
 4. 在 [建立設定檔] 刀鋒視窗上，為裝置功能設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取 [Windows 10 及更新版本]。
 6. 從 [設定檔類型] 下拉式清單中，選擇 [Endpoint Protection]。
-7. 設定您想要的設定。 請使用本主題中的詳細資料，以協助您了解每個設定的用途。 完成之後，請選擇 [確定]。
+7. 設定您想要的設定。 使用本文中的詳細資料有助您了解每個設定的用途。 完成之後，請選擇 [確定]。
 8. 返回 [建立設定檔] 刀鋒視窗，然後選擇 [建立]。
 
 設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
@@ -57,6 +57,7 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上 BitLocker 和 
 - **從虛擬瀏覽器列印** - 允許 PDF、XPS、本機及/或網路印表機，列印虛擬瀏覽器的內容。
 - **收集記錄檔** - 收集應用程式防護瀏覽工作階段內發生的事件記錄檔。
 - **保留使用者產生的瀏覽器資料** - 允許儲存於應用程式防護虛擬瀏覽工作階段期間內建立的使用者資料 (例如密碼、我的最愛和 Cookie)。
+- **圖形加速** - 透過啟用對虛擬圖形處理單位的存取，在應用程式防護虛擬瀏覽工作階段中作業時，加快載入高圖形效能需求網站的速度。
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender 防火牆

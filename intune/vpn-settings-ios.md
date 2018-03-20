@@ -1,29 +1,29 @@
 ---
-title: "iOS 裝置的 Intune VPN 設定"
-titlesuffix: Azure portal
-description: "了解可用於設定 iOS 裝置上 VPN 連線的 Intune 設定。"
+title: "執行 iOS 之裝置的 Microsoft Intune VPN 設定"
+titlesuffix: 
+description: "了解可用於設定執行 iOS 之裝置上 VPN 連線的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>設定 Microsoft Intune 中執行 iOS 之裝置的 VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文說明可用於設定執行 iOS 之裝置上 VPN 連線的 Intune 設定。
 
 下列清單中的值並非全部都能設定，須取決於您選擇的設定。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 01/25/2018
 - **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/25/2018
 - **依需求指定的規則** - 這可讓您設定條件式規則，控制初始化 VPN 連線的時機。 例如，您可以建立條件，在裝置未連線到您公司任何一個 Wi-Fi 網路時才使用 VPN 連線。 您也可以建立條件，在裝置無法存取您指定的 DNS 搜尋網域時不啟動 VPN 連線。
 
     - **SSID 或 DNS 搜尋網域** - 選取此條件要使用無線網路 **SSID** 還是 **DNS 搜尋網域**。 選擇 [新增] 設定一或多個 SSID 或搜尋網域。
-    - **URL 字串探查** - (非必要) 提供規則用於測試的 URL。 如果此設定檔的安裝裝置無須重新導向就能存取此 URL，便會起始 VPN 連線讓裝置連線到目標 URL。 使用者將不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，再將裝置透過 VPN 連線到目標 URL。
+    - **URL 字串探查** - (非必要) 提供規則用於測試的 URL。 如果此設定檔的安裝裝置無須重新導向就能存取此 URL，便會起始 VPN 連線讓裝置連線到目標 URL。 使用者不會看到 URL 字串探查網站。 URL 字串探查的範例，是會在連線 VPN 之前先檢查裝置相容性的稽核網頁伺服器位址。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，再將裝置透過 VPN 連線到目標 URL。
     - **網域動作** - 請選擇下列其中一個項目︰
         - 連線 (若需要) - 
         - 一律不連線 - 
@@ -75,6 +75,6 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="proxy-settings"></a>Proxy 設定
 
-- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如 **http://proxy.contoso.com**)。
 - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
 - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。
