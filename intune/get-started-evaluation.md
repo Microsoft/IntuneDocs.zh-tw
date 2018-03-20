@@ -1,6 +1,6 @@
 ---
-title: "開始使用 Intune"
-titlesuffix: Azure portal
+title: "開始使用 Microsoft Intune"
+titleSuffix: 
 description: "逐步進行一系列的簡短實際操作練習，以了解 Intune。"
 keywords: 
 author: Erikre
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a8a2c4b9c88b935e7560457792c02b2e4d08cd2
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 00f7b3708e20819ad76816587e128ceecee5102b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 對我的公司有何作用？
 
@@ -50,7 +50,7 @@ Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您
 
 [開始使用 Azure](get-started-azure.md) - 了解 Azure 入口網站的結構以及如何變更您看到的頁面。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 * [什麼是 Intune？](introduction-intune.md)
 * [什麼是 Azure 入口網站？](what-is-intune.md)
