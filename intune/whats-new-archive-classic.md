@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -281,7 +281,7 @@ Intune 現在完全支援和管理 Android 7.1.1。
 
 * [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)
 * [準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](app-wrapper-prepare-ios.md)
-* [開始使用 Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [開始使用 Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Intune App SDK for iOS 開發人員指南](app-sdk-ios.md)
 
 下列文章是文件庫的新增項目︰

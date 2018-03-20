@@ -1,11 +1,12 @@
 ---
 title: "識別使用案例"
+titlesuffix: Microsoft Intune
 description: "本文可協助您識別 Intune 使用案例，以及適用於 Microsoft Intune 僅限雲端實作的次要使用案例。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 869bfee563e056450c6c53cf2fbbf1a0c16d27ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ef2030ba36e7a2c5f1a9566a2fcb94ecca465149
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>識別行動裝置管理使用案例
 

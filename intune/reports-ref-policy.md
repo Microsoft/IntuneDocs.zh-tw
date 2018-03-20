@@ -1,5 +1,6 @@
 ---
-title: Policy | Microsoft Docs
+title: "原則"
+titlesuffix: Microsoft Intune
 description: "Intune 資料倉儲 API 中 [原則] 類別實體集合的參考主題。"
 keywords: "Intune 資料倉儲"
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>原則實體的參考
 
@@ -104,10 +105,10 @@ ms.lasthandoff: 02/15/2018
 |---------|---------|---------|
 |DateKey  |日期索引鍵，時間點為建立合規性政策的摘要時。|20161204 |
 |Unknown  |離線或因為其他原因而無法與 Intune 或 Azure AD 通訊的裝置數目。 |5|
-|NotApplicable      |管理員設為目標的裝置合規性政策並不適用的裝置數。|201 |
-|符合標準      |一或多項管理員設為目標的裝置合規性政策已成功套用的裝置數。 |4083 |
-|InGracePeriod      |不合規但仍在管理員定義之寬限期內的裝置數。 |57|
-|NonCompliant      |管理員設為目標的裝置合規性政策無法套用，或使用者未予以遵循的裝置數。|43 |
+|NotApplicable      |管理員設為目標的裝置合規性政策並不適用的裝置數目。|201 |
+|符合標準      |一或多項管理員設為目標的裝置合規性政策已成功套用的裝置數目。 |4083 |
+|InGracePeriod      |不合規但仍在管理員定義之寬限期內的裝置數目。 |57|
+|NonCompliant      |管理員設為目標的裝置合規性政策無法套用，或使用者未予以遵循的裝置數目。|43 |
 |錯誤      |無法與 Intune 或 Azure AD 通訊且傳回錯誤訊息的裝置數目。 |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 

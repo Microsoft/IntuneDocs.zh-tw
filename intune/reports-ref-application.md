@@ -1,11 +1,12 @@
 ---
-title: "應用程式 | Microsoft Docs"
+title: "應用程式"
+titlesuffix: Microsoft Intune
 description: "Intune 資料倉儲 API 中的實體集合應用程式類別的參考主題。"
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4a33dd69f20d6cfd9eeda7de5e1d45432c505c81
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 

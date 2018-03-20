@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
 
@@ -32,8 +32,8 @@ ms.lasthandoff: 03/08/2018
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-1. 從 [Intune] 頁面中，選擇 [裝置相容性]。 在 [管理] 中選擇 [原則]，然後選擇 [建立原則]。
-3. 選擇 [組態設定] 來指定此處的 [系統安全性]、[裝置健全狀況] 和 [裝置屬性] 設定。 完成後，請選擇 [確定]。
+1. 從 [Intune] 頁面中，選擇 [裝置相容性]。 在 [管理] 下選擇 [原則]，然後選擇 [建立原則]。
+3. 在此處選擇 [組態設定] 來指定 [系統安全性]、[裝置健康情況] 及 [裝置屬性] 設定。 完成後，請選擇 [確定]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/08/2018
 若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 – 原則] 窗格中找到。
 
 1. 選擇原則，然後選擇 [指派]。 這會開啟窗格讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
-2. 選擇 [選取群組] 會開啟窗格顯示 Azure AD 安全性群組。 您可以從中尋找您 Azure Active Directory 中的安全性群組。  您可以選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
+2. 選擇 [選取群組] 以開啟顯示 Azure AD 安全性群組的窗格。 您可以從中尋找您 Azure Active Directory 中的安全性群組。  您可以選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
 
 您已對使用者套用此原則。  要套用原則之使用者的裝置將會接受合規性評估。
 
@@ -70,8 +70,6 @@ ms.lasthandoff: 03/08/2018
   - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
   - **中**︰如果裝置有低等級或中等級的威脅，則會將裝置評估為相容。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
   - **高**：這是最不安全的選項。 基本上，這會允許所有威脅等級， 若只將此解決方案用於報告，可能就還不錯。
-
-如需詳細資訊，請參閱[啟用合規性政策中的裝置威脅保護規則](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)。
 
 ## <a name="system-security-settings"></a>系統安全性設定
 
