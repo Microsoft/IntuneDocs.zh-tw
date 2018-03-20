@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
@@ -52,28 +52,29 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>取得並上傳 Apple VPP 權杖
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
 1.  在 [行動應用程式] 工作負載中，選擇 [安裝] > [iOS VPP 權杖]。
-2.  在 [VPP 權杖清單] 刀鋒視窗中，按一下 [新增]。
-3.  在 [新的 VPP 權杖] 刀鋒視窗中，指定下列資訊：
+2.  在 VPP 權杖清單窗格中，按一下 [建立]。
+3.  在 [新的 VPP 權杖] 窗格中，指定下列資訊：
     - **VPP 權杖檔案** - 確認您已註冊商務大量採購方案或教育大量採購方案。 然後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
-4. 完成之後，請按一下 [上傳]。
+4. 完成時按一下 [建立]。
 
-該權杖會顯示在權杖清單刀鋒視窗內。
+該權杖會顯示在權杖清單窗格內。
 
 
 您可以隨時選擇 [立即同步處理]，使用 Intune 同步處理 Apple 所儲存的資料。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
+3. 在 [Intune] 窗格中，選擇 [電子書]。
 1. 在 [電子書] 工作負載中，選擇 [管理]  >  [所有電子書]。
-2. 在書籍清單刀鋒視窗上，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
-3. 在 <書籍名稱> - [指派的群組] 刀鋒視窗中，選擇 [管理] > [指派的群組]。
-4. 選擇 [指派群組]，然後，在 [選取群組] 刀鋒視窗中，選擇要指派該書籍的 Azure AD 使用者群組。 裝置群組目前尚未支援。
+2. 在書籍清單窗格中，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
+3. 在 <書籍名稱> - [指派的群組] 窗格中，選擇 [管理] > [指派的群組]。
+4. 選擇 [指派群組]，然後在 [選取群組] 窗格中，選擇要指派該書籍的 Azure AD 使用者群組。 裝置群組目前尚未支援。
 選擇指派動作：**可用**或**必要**。 
 5. 完成之後，請選擇 [儲存]。
 

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>適用於 iOS 和 macOS 裝置的 AirPrint 設定
 
@@ -40,8 +40,9 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="configure-an-airprint-profile"></a>設定 AirPrint 設定檔
 
-1. 在 [裝置功能] 刀鋒視窗上選擇 [AirPrint]。
-2. 在 [AirPrint] 刀鋒視窗上，輸入 AirPrint 目的地的 **IP 位址**和**資源路徑**以新增 AirPrint 目的地，然後按一下 [新增]。
+1. 從 [Azure 入口網站中的 Intune](https://portal.azure.com)，巡覽至 [[裝置設定] 區域中的 [裝置功能]](device-features-configure.md)。 
+1. 在 [裝置功能] 窗格中，選擇 [AirPrint]。
+2. 在 [AirPrint] 窗格中，輸入 AirPrint 目的地的 **IP 位址**和**資源路徑**以新增 AirPrint 目的地，然後按一下 [新增]。
 3. 繼續新增您所需的目的地。 完成之後，請選擇 [確定]。
 
 您也可以從逗號分隔值 (.csv) 檔案匯入印表機清單，或是將清單匯出。

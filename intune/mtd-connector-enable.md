@@ -1,12 +1,12 @@
 ---
-title: "搭配 Intune 啟用 Mobile Threat Defense 連接器"
+title: "在 Microsoft Intune 中啟用 Mobile Threat Defense 連接器"
 titlesuffix: Azure portal
-description: "在 Intune 中啟用 Mobile Threat Defense 連接器。"
+description: "啟用 Mobile Threat Defense (MTD) 合作夥伴與 Microsoft Intune 之間的連接器。"
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,30 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
 > [!NOTE] 
 > 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
-若要在 Intune 中啟用 Mobile Threat Defense (MTD) 連線，您必須已在 MTD 夥伴主控台中設定 Intune 連接器。
+在 Mobile Threat Defense (MTD) 安裝期間，您已設定原則以在 MTD 合作夥伴主控台中分類威脅，且已在 Intune 中建立裝置相容性原則。 如果您已在 MTD 合作夥伴主控台中設定 Intune 連接器，現在可以在 Intune 中啟用 MTD 連線。
 
 ## <a name="to-enable-the-mtd-connector"></a>啟用 MTD 連接器
 
 1. 移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。 成功登入之後，您會看到 [Azure 儀表板]。
 
-2. 在 [Azure 儀表板] 中，選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+2. 在 [Azure 儀表板] 中，選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
 3. 選擇 [Intune]，即會開啟 [Intune 儀表板]。
 
 4. 在 [Intune 儀表板] 上，選擇 [裝置合規性]，然後選擇 [設定] 區段下的 [Mobile Threat Defense]。
 
-5. 在 [Mobile Threat Defense] 刀鋒視窗上，選擇 [新增]。
+5. 在 [Mobile Threat Defense] 窗格中，選擇 [新增]。
 
 6. 從下拉式清單中選擇 MTD 解決方案作為**要設定的 Mobile Threat Defense 連接器**。
 
@@ -64,4 +64,4 @@ ms.lasthandoff: 02/23/2018
 > 您必須新增並指派 MTD 應用程式，再建立裝置相容性和條件式存取原則規則。 這樣做可確保 MTD 應用程式已準備好供使用者進行安裝，安裝後使用者才能存取電子郵件或其他公司資源。
 
 > [!TIP]
-> 您可從 [Mobile Threat Defense] 刀鋒視窗中看見 Intune 與 MTD 合作夥伴之間的 [連線狀態] 與 [上次同步處理] 時間。
+> 您可從 [Mobile Threat Defense] 窗格中看見 Intune 與 MTD 合作夥伴之間的 [連線狀態] 與 [上次同步處理] 時間。

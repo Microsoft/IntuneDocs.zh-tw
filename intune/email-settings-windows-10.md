@@ -1,35 +1,34 @@
 ---
-title: "Windows 10 裝置的 Intune 電子郵件設定"
-titleSuffix: Azure portal
-description: "了解可用於設定 Windows 10 裝置上電子郵件連線的 Intune 設定。"
+title: "執行 Windows 10 之裝置的 Microsoft Intune 電子郵件設定"
+titleSuffix: 
+description: "深入了解可用於設定執行 Windows 10 之裝置上電子郵件設定的 Microsoft Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3ea7974600daccb8308cd558ccb365c2f5e8bff
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的電子郵件設定檔設定
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>在執行 Windows 10 之裝置上的 Microsoft Intune 電子郵件設定檔設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+本文展示您可為執行 Windows 10 之裝置設定的電子郵件設定檔設定。
 
 
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
-- **來自 AAD 的使用者名稱屬** -Active Directory (AD) 或 Azure AD 中的這個屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
+- **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
 - **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
 
 

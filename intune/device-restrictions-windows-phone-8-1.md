@@ -1,29 +1,30 @@
 ---
-title: "Windows Phone 8.1 的 Intune 裝置限制設定"
-titleSuffix: Azure portal
-description: "了解 Windows Phone 8.1 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "Windows Phone 8.1 的 Microsoft Intune 裝置限制設定"
+titleSuffix: 
+description: "了解執行 Windows Phone 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 裝置限制設定
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows Phone 8.1 的裝置進行設定。
+
 
 ## <a name="general"></a>一般
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="password"></a>密碼
 
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。
-    -   **必要的密碼類型** - 指定必要密碼的類型，例如只可是英數字元或數字等等。
+    -   **必要的密碼類型** - 指定必要密碼的類型，例如只可為英數字元或數字等等。
     -   **密碼長度下限** - 指定密碼所需的字元數下限。
     -   **簡單密碼** - 指定是否能使用 ’0000’ 和 ‘1234’ 等簡單密碼。
     -   **登入失敗幾次後即抹除裝置** - 指定抹除裝置前可輸入錯誤密碼的次數。
@@ -69,13 +70,13 @@ ms.lasthandoff: 01/25/2018
 
 開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
 
-範例：在市集中搜尋 Skype 應用程式。 您要使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
+範例：在市集中搜尋 Skype 應用程式。 您使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
 
 
 
 ### <a name="additional-options"></a>其他選項
 
-您也可以按一下 [匯入]填入格式如一下的 csv 檔案清單：<*應用程式 URL*>，<*應用程式名稱*>，<*應用程式發行者*>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的受限應用程式清單內容。
+您也可以按一下 [匯入] 填入格式如下的 csv 檔案清單：<應用程式 URL>, <應用程式名稱>, <app publisher>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的受限應用程式清單內容。
 
 
 ## <a name="browser"></a>瀏覽器

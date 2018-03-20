@@ -1,10 +1,10 @@
 ---
-title: "將合規性原則強制執行於 Jamf 受控裝置"
-titlesuffix: Azure portal
-description: "使用合規性以協助保護受 Jamf 管理的裝置。"
+title: "Jamf 裝置的裝置相容性原則"
+titlesuffix: Microsoft Intune
+description: "使用 Microsoft Intune 相容性原則搭配 Azure Active Directory 條件式存取，來協助保護受 Jamf 管理的裝置。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 

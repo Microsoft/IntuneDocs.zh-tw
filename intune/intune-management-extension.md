@@ -5,7 +5,7 @@ description: "了解如何在 Intune 中上傳 PowerShell 指令碼，以便在 
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8c959ca3df62cbda17e5a659d0703cbc37f3249
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -37,24 +37,24 @@ Intune 管理延伸模組具有下列必要條件：
 
 ## <a name="create-a-powershell-script-policy"></a>建立 PowerShell 指令碼原則 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-4. 在 [裝置設定] 刀鋒視窗中，選擇 [管理] > [PowerShell 指令碼]。
-5. 在 [PowerShell 指令碼] 刀鋒視窗中，選擇 [新增指令碼]。
-6. 在 [新增 PowerShell 指令碼] 刀鋒視窗中，輸入 PowerShell 指令碼的 [名稱] 和 [描述]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+4. 在 [裝置設定] 窗格中，選擇 [管理] > [PowerShell 指令碼]。
+5. 在 [PowerShell 指令碼] 窗格中，選擇 [新增]。
+6. 在 [新增 PowerShell 指令碼] 窗格中，輸入 PowerShell 指令碼的 [名稱] 和 [描述]。
 7. 對於 [指令碼位置]，瀏覽 PowerShell 指令碼。 指令碼必須小於 10 KB (ASCII) 或 5 KB (Unicode)。
 8. 選擇 [設定]，然後選擇是要在裝置上 (**是**) 還是系統內容 (**否**) 上執行包含使用者認證的指令碼。 根據預設，會在系統內容中執行指令碼。 除非需要在系統內容中執行指令碼，否則請選取 [是]。 
-  ![新增 PowerShell 指令碼刀鋒視窗](./media/mgmt-extension-add-script.png)
+  ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-add-script.png)
 9. 選擇指令碼是否必須由信任的發行者簽署 (**是**)。 根據預設，指令碼不需要簽署。 
 10. 按一下 [確定]，然後按一下 [建立] 來儲存指令碼。
 
 ## <a name="assign-a-powershell-script-policy"></a>指派 PowerShell 指令碼原則
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-4. 在 [裝置設定] 刀鋒視窗中，選擇 [管理] > [PowerShell 指令碼]。
-5. 在 [PowerShell 指令碼] 刀鋒視窗中，選取要指派的指令碼，然後選擇 [管理] > [指派]。
-  ![新增 PowerShell 指令碼刀鋒視窗](./media/mgmt-extension-assignments.png)
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+4. 在 [裝置設定] 窗格中，選擇 [管理] > [PowerShell 指令碼]。
+5. 在 [PowerShell 指令碼] 窗格中，選取要指派的指令碼，然後選擇 [管理] > [指派]。
+  ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-assignments.png)
  
 6. 選擇 [選取群組] 列出可用的 Azure AD 群組。 
 7. 針對裝置將接收指令碼的使用者，選取包含這些使用者的一或多個群組，然後按一下 [選取]，以便將原則指派至選取的群組。
@@ -64,9 +64,9 @@ Intune 管理延伸模組每小時會與 Intune 進行同步處理一次。 將�
 ## <a name="monitor-run-status-for-powershell-scripts"></a>監視 PowerShell 指令碼的執行狀態
 您可以在 Azure 入口網站中，監視使用者和裝置之 PowerShell 指令碼的執行狀態。
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-4. 在 [裝置設定] 刀鋒視窗中，選擇 [管理] > [PowerShell 指令碼]。
-5. 在 [PowerShell 指令碼] 刀鋒視窗中，選取要監視的指令碼，然後選擇 [監視]，再選擇下列其中一種報表：
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+4. 在 [裝置設定] 窗格中，選擇 [管理] > [PowerShell 指令碼]。
+5. 在 [PowerShell 指令碼] 窗格中，選取要監視的指令碼，然後選擇 [監視]，再選擇下列其中一種報表：
    - **裝置狀態**
    - **使用者狀態**

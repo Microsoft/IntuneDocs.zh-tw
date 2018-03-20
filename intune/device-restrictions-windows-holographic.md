@@ -1,25 +1,25 @@
 ---
-title: "適用於 Windows Holographic for Business 的 Intune 裝置限制設定"
+title: "適用於 Windows Holographic for Business 的 Microsoft Intune 裝置限制設定"
 titlesuffix: Azure portal
-description: "了解 Windows Holographic for Business 裝置上可用以控制裝置設定與功能的 Intune 設定。」"
+description: "了解執行 Windows Holographic for Business 之裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/19/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 300ddb15f2d7b8f2fc6ab4a0e9e32852e0604e0a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 10bb5a2eac9e72ba5b09a9a6f02932e872328c75
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-holographic-for-business-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Holographic for Business 裝置限制設定
+# <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Microsoft Intune Windows Holographic for Business 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,7 +41,6 @@ ms.lasthandoff: 02/01/2018
 
 ## <a name="app-store"></a>App Store
 
--   **應用程式市集** - 啟用或封鎖裝置使用應用程式市集。
 -   **自動更新來自市集的應用程式** - 允許自動更新從 Microsoft 網上商店安裝的應用程式。
 -   **安裝信任的應用程式** - 允許側載使用受信任憑證簽署的應用程式。
 -   **開發人員解除鎖定** - 允許 Windows 開發人員設定，例如允許使用者修改側載應用程式。

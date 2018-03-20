@@ -1,27 +1,25 @@
 ---
-title: "macOS 裝置的 Intune 自訂設定"
-titleSuffix: Azure portal
+title: "執行 macOS 之裝置的 Microsoft Intune 自訂設定"
+titleSuffix: 
 description: "了解可用於 macOS 自訂設定檔中的設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的自訂設定
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>執行 macOS 之裝置的 Microsoft Intune 自訂裝置設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ ms.lasthandoff: 01/25/2018
 
 
 1. 請使用[如何在 Microsoft Intune 中設定自訂裝置設定](custom-settings-configure.md)中的指示，即可開始使用。
-2. 在 [建立設定檔] 刀鋒視窗中，指定下列各項︰
+2. 在 [自訂組態設定檔] 窗格中，設定下列每個設定：
 
 - **自訂組態設定檔名稱** - 提供原則的名稱，其會顯示在裝置以及 Intune 狀態中。
 - **組態設定檔** - 瀏覽至使用 Apple Configurator 所建立的組態設定檔。
 針對您所指派 macOS 自訂原則之裝置上的 macOS 版本，確認從 Apple Configurator 工具匯出的設定與其相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。
 
-您匯入的檔案將會顯示在刀鋒視窗的 [檔案內容] 區域中。
+您匯入的檔案會顯示在窗格的 [檔案內容] 區域中。

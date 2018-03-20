@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e02ee14f87f4c0a15b4ac942befb4b2eee2b4be9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>設定自訂網域名稱
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 01/25/2018
 
 2. 在瀏覽窗格中，選擇 [設定] &gt; [網域]。
 
-3. 選擇 [新增網域]，然後輸入您的自訂網域名稱。
+3. 選擇 [新增網域]，然後輸入您的自訂網域名稱。 選取 [下一步]。
    ![螢幕擷取畫面：Office 365 系統管理中心，選取 [設定] > [網域]，正在新增新的網域名稱](./media/domain-custom-add.png)
 4. [驗證網域] 對話方塊隨即開啟，提供您在 DNS 主機服務提供者中建立 TXT 記錄用的值。
     - **GoDaddy 使用者**：Office 365 管理入口網站會將您重新導向至 GoDaddy 的登入頁面。 在您輸入認證，並接受網域變更權限合約之後，便會自動建立 TXT 記錄。 您也可以[建立 TXT 記錄](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。

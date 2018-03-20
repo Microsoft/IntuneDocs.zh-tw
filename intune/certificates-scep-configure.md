@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -304,11 +304,11 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. 登入 Azure 入口網站。 
-2. 選取 [More Services] (更多服務) > [監視 + 管理] > [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選取 [裝置設定]。
-4. 在 [裝置設定] 刀鋒視窗中選取 [憑證授權單位]。
-5. 按一下 [新增] 並選取 [Download Connector file] (下載連接器檔案)。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選取 [裝置設定]。
+4. 在 [裝置設定] 窗格中選取 [憑證授權單位]。
+5. 按一下 [新增] 並選取 [下載連接器檔案]。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
 6.  下載完成之後，在裝載網路裝置註冊服務 (NDES) 角色的伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
 
     > [!NOTE]
@@ -346,10 +346,10 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>如何建立 SCEP 憑證設定檔
 
-1. 在 Azure 入口網站中，選取 [設定裝置] 工作負載。
-2. 在 [裝置設定] 刀鋒視窗中，選取 [管理]  >  [設定檔]。
-3. 在 [設定檔] 刀鋒視窗中，選取 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為 SCEP 憑證設定檔輸入 [名稱] 及 [描述]。
+1. 在 Azure 入口網站中，選取 [裝置設定] 工作負載。
+2. 在 [裝置設定] 窗格中，選取 [管理]  >  [設定檔]。
+3. 在 [設定檔] 窗格中，選取 [建立設定檔]。
+4. 在 [建立設定檔] 窗格中，為 SCEP 憑證設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選取下列平台之一，進行裝置限制設定︰
     - **Android**
     - **iOS**
@@ -358,7 +358,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選取 [SCEP 憑證]。
-7. 在 [SCEP 憑證] 刀鋒視窗上，進行以下設定：
+7. 在 [SCEP 憑證] 窗格中，進行以下設定：
     - **憑證有效期間** - 如果您已在發行 CA 上執行 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，允許自訂有效期間，則可以指定憑證到期之前的剩餘時間長度。<br>您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。 
     - **金鑰儲存提供者 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10) - 指定儲存憑證金鑰的位置。 選擇下列其中一個值：
         - **註冊至受信任平台模組 (TPM) KSP (如果存在)，否則註冊至軟體 KSP**
@@ -385,9 +385,9 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     - **註冊設定**
         - **更新閾值 (%)** - 指定裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
         - **SCEP 伺服器 URL** - 指定一或多個將透過 SCEP 發行憑證的 NDES 伺服器 URL。 
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 選取 [確定]，然後移回至 [建立設定檔] 窗格，再選取 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>如何指派憑證設定檔
 

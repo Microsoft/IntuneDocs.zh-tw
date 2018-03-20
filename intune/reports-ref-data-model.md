@@ -1,11 +1,12 @@
 ---
-title: "資料倉儲資料模型 | Microsoft Docs"
-description: "Intune 資料倉儲會每日對資料進行抽樣，以提供持續變更中行動環境的歷程檢視。"
+title: "資料倉儲資料模型"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune 資料倉儲會每日對資料進行抽樣，以提供持續變更中行動環境的歷程檢視。"
 keywords: "Intune 資料倉儲"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>資料倉儲資料模型
 
-Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持續變更中環境的歷程檢視。 檢視是由在時間上相關的項目所組成。
+Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持續變更中環境的歷程檢視。 檢視由在時間上的相關實體所組成。
 
-## <a name="things-entity-sets"></a>項目：實體集
+## <a name="entities-entity-sets"></a>實體：實體集
 
 倉儲會公開下列高階區域中的資料：
 
@@ -33,7 +34,7 @@ Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持�
   -  應用程式和軟體清查
   -  裝置組態和合規性原則
 
-這些區域包含對您的 Intune 環境有意義的實體或項目。 您可在下列主題中找到有關實體集的詳細資訊：
+這些區域包含對您 Intune 環境有意義的實體。 您可在下列主題中找到有關實體集的詳細資訊：
 
   -  [應用程式](reports-ref-application.md)
   -  [日期](reports-ref-date.md)

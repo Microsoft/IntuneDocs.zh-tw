@@ -1,29 +1,29 @@
 ---
-title: "macOS 的 Intune 裝置限制設定"
-titlesuffix: Azure portal
-description: "了解 macOS 裝置上可用以控制裝置設定與功能的 Intune 設定。"
+title: "macOS 的 Microsoft Intune 裝置限制設定"
+titlesuffix: 
+description: "了解執行 macOS 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 macOS 裝置限制設定
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 裝置限制設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用這些設定可在裝置限制設定檔中管理 macOS 裝置。
+本文將說明可以為執行 macOS 之裝置設定的 Microsoft Intune 裝置限制設定。
 
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。

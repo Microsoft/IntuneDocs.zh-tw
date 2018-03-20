@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 
@@ -72,12 +72,12 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 
 ### <a name="configure-general-settings"></a>設定一般設定
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3.  在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
-4.  在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-5.  在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-6.  在 [建立設定檔] 刀鋒視窗中，為 iOS 教育設定檔輸入 [名稱] 及 [描述]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
+5.  在 [設定檔] 窗格中，選擇 [建立設定檔]。
+6.  在 [建立設定檔] 窗格中，為 iOS 教育設定檔輸入 [名稱] 及 [描述]。
 7.  從 [平台] 下拉式清單中，選擇 [iOS]。
 8.  從 [設定檔類型] 下拉式清單中，選擇 [教育]。
 9.  選擇 [設定]  >  [設定]。
@@ -94,7 +94,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ### <a name="configure-teacher-certificates"></a>設定老師憑證
 
-在 [教育] 刀鋒視窗中，選擇 [老師憑證]。
+在 [教育] 窗格中，選擇 [老師憑證]。
 
 #### <a name="configure-teacher-root-certificate"></a>設定老師根憑證
 
@@ -116,8 +116,8 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ### <a name="configure-student-certificates"></a>設定學生憑證
 
-1.  在 [教育] 刀鋒視窗中，選擇 [學生憑證]。
-2.  在 [學生憑證] 刀鋒視窗中，從 [學生裝置憑證] 類型清單中，選擇 [1:1]。
+1.  在 [教育] 窗格中，選擇 [學生憑證]。
+2.  在 [學生憑證] 窗格中，從 [學生裝置憑證] 類型清單中，選擇 [1:1]。
 
 #### <a name="configure-student-root-certificate"></a>設定學生根憑證
 
@@ -139,10 +139,10 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ## <a name="finish-up"></a>完成
 
-1.  在 [教育] 刀鋒視窗中，選擇 [確定]。
-2.  在 [建立設定檔] 刀鋒視窗中，選擇 [建立]。
+1.  在 [教育] 窗格中，選擇 [確定]。
+2.  在 [建立設定檔] 窗格中，選擇 [建立]。
     
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 
 針對當您將學校資料與 Azure AD 同步時所建立的課堂群組，將設定檔指派給群組中的學生裝置。請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 

@@ -1,6 +1,6 @@
 ---
 title: "Windows 10 的大量註冊"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "建立 Microsoft Intune 的大量註冊套件"
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -36,7 +36,7 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
 ## <a name="create-a-provisioning-package"></a>建立佈建套件
 
 1. 從 Microsoft 網上商店下載 [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
-![Windows Configuration Designer 應用程式在市集中之螢幕擷取畫面和描述的螢幕擷取畫面](media/bulk-enroll-store.png)
+![Windows 設定設計工具 Microsoft Store 的螢幕擷取畫面](media/bulk-enroll-store.png)
 
 2. 開啟 **Windows Configuration Designer** 應用程式並選取 [Provision desktop devices (佈建電腦裝置)]。
 ![在 Windows Configuration Designer 應用程式中選取佈建電腦裝置的螢幕擷取畫面](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
   - **Description (描述)** - 專案的選擇性描述 ![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-name.png)
 
 4.  輸入您裝置的唯一名稱。 名稱可以包含序號 (%%SERIAL%%) 或一組隨機字元。 您也可以選擇輸入產品金鑰 (如果您正在升級 Windows 的版本)、將裝置設定為共用，以及移除預先安裝的軟體。
-![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-device.png)
+
+    ![在 Windows 設定設計工具應用程式中指定名稱和產品金鑰的螢幕擷取畫面](media/bulk-enroll-device.png)
 
 5.  您可以選擇設定裝置第一次啟動時要連線的 Wi-Fi 網路。  如果未設定網路裝置，則裝置第一次啟動時需要有線網路連線。
 ![在 Windows Configuration Designer 中啟用 Wi-Fi (包含網路 SSID 和網路類型選項) 的螢幕擷取畫面](media/bulk-enroll-network.png)
 
 6.  選取 [Enroll in Azure AD (在 Azure AD 中註冊)]，輸入 [Bulk Token Expiry (大量權杖到期)] 日期，然後選取 [Get Bulk Token (取得大量權杖)]。
-![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-account.png)
+![Windows 設定設計工具應用程式中帳戶管理的螢幕擷取畫面](media/bulk-enroll-account.png)
 
 7. 提供您的 Azure AD 認證以取得大量權杖。
-![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-cred.png)
+![登入 Windows 設定設計工具應用程式的螢幕擷取畫面](media/bulk-enroll-cred.png)
 
 8.  成功擷取「大量權杖」之後，按一下 [Next (下一步)]。
 
 9. 您可以選擇 [Add applications (新增應用程式)] 和 [Add certificates (新增憑證)]。 這些應用程式和憑證都佈建在該裝置上。
 
 10. 您可以選擇以密碼保護佈建套件。  按一下 [建立]。
-![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-create.png)
+![Windows 設定設計工具應用程式中套件保護的螢幕擷取畫面](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>佈建裝置
 
