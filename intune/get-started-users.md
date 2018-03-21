@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>開始管理使用者
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 ## <a name="how-do-i-create-a-user"></a>如何建立使用者？
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 使用 [搜尋資源]，搜尋 **Intune**。
-3. 在您開啟 [Microsoft Intune] 刀鋒視窗之後，請選取 [使用者]。 在 [所有使用者] 頁面上，選取[+ 新增使用者]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在您開啟 [Microsoft Intune] 窗格之後，請選取 [使用者]。 在 [所有使用者] 頁面上，選取[+ 新增使用者]。
 4. 輸入使用者的詳細資料，例如 [名稱] 和 [使用者名稱]。 使用者名稱的網域名稱部分，必須是初始預設網域名稱 "contoso.onmicrosoft.com" 網域名稱，或已驗證、非同盟的網域名稱，例如 "contoso.com"。
 5. 在 [群組] 下，選擇要將使用者新增到其中的測試群組。
 6. 儲存自動產生的使用者密碼，以便您可以使用它來登入測試裝置。 您必須提供這個密碼給使用者，讓使用者將其能變更為易記的一般密碼。
-7. 在 [使用者] 刀鋒視窗上，選取 [建立]。
+7. 在 [使用者] 窗格中，選取 [建立]。
 
 ## <a name="assigning-licenses-to-users"></a>將授權指派給使用者
 
@@ -49,6 +49,6 @@ ms.lasthandoff: 03/05/2018
 
 5. 選取 [儲存]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始使用群組](get-started-groups.md) - 將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。

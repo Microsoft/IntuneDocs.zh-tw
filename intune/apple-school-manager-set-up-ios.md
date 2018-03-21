@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 設定 iOS 裝置註冊
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="create-an-apple-enrollment-profile"></a>建立 Apple 註冊設定檔
 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]，然後選擇 [Apple 註冊]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]，然後選擇 [Apple 註冊]。
 2. 在 [註冊計劃] 下方，選擇 [註冊計劃設定檔]。
 3. 在 [註冊計劃設定檔] 刀鋒視窗中，選擇 [建立]。
 4. 在 [建立註冊設定檔] 刀鋒視窗中，為 Intune 顯示的設定檔輸入 [名稱] 和 [描述]。
@@ -149,7 +149,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 已被指派管理您 Apple School Manager 裝置的權限，您可以同步處理 Intune 與 Apple 服務，以在 Intune 中查看受管理裝置。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
 2. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
@@ -166,7 +166,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="assign-a-profile-to-devices"></a>將設定檔指派給裝置
 在註冊由 Intune 管理的 Apple School Manager 裝置之前，必須將註冊設定檔指派給它們。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊]，然後選擇 [註冊計劃設定檔]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊]，然後選擇 [註冊計劃設定檔]。
 2. 從 [註冊計劃設定檔] 清單中，選擇您想要指派給裝置的設定檔，然後選擇 [Device Assignments] (裝置指派)。
 
  ![已選取 [指派] 的裝置指派。](./media/enrollment-program-device-assign.png)

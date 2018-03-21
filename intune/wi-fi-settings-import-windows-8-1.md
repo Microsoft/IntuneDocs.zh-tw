@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 890a10ecf4212656c189adaf46bb2839898758c1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>在 Microsoft Intune 中匯入 Windows 8.1 及更新版本之裝置的 Wi-Fi 設定
 
@@ -35,22 +35,23 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>將 Wi-Fi 設定匯入 Intune
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 頁面中，選擇 [裝置設定]。
-2. 在 [裝置設定] 頁面中，選擇 [管理] >  [設定檔]。
-3. 在 [設定檔] 頁面中，按一下 [建立設定檔]。
-4. 在 [建立設定檔] 頁面中，為裝置限制設定檔輸入 [名稱] 及 [描述]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+4. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
+5. 在 [設定檔] 窗格中，按一下 [建立設定檔]。
+6. 在 [建立設定檔] 窗格上，輸入裝置限制設定檔的 [名稱] 和 [描述]。
+
 
    > [!WARNING]
    > 名稱**必須**和 Wi-Fi 設定檔 XML 的名稱屬性相同，否則會失敗。
 
-5. 從 [平台] 下拉式清單中選擇 [Windows 8.1 及更新版本]。
-6. 從 [設定檔類型] 下拉式清單中選擇 [Wi-Fi 匯入]。
-7. 在 [Wi-Fi Basic] (Wi-Fi 基本) 頁面中進行下列設定︰
-    - **連線名稱** - 輸入 Wi-Fi 連線的名稱。 當終端使用者瀏覽可用的 Wi-Fi 網路時，會看到此名稱。
+7. 從 [平台] 下拉式清單中選擇 [Windows 8.1 及更新版本]。
+8. 從 [設定檔類型] 下拉式清單中選擇 [Wi-Fi 匯入]。
+9. 在 [Wi-Fi] 窗格中進行下列設定︰
+    - **連線名稱** - 輸入 Wi-Fi 連線的名稱。 當使用者瀏覽可用的 Wi-Fi 網路時，會看到此名稱。
     - **設定檔 XML** - 按一下 [瀏覽] 按鈕可選取內含您要匯入 Intune 之 Wi-Fi 設定檔設定的 XML 檔案。
     - **檔案內容** - 顯示所選組態設定檔的 XML 程式碼。
-8. 當您完成時，請返回 [建立設定檔] 頁面，然後點擊 [建立]。
+10. 當您完成時，請選擇 [確定] 返回 [建立設定檔] 窗格，然後選取 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 頁面上。
+設定檔隨即建立，並出現在 [設定檔清單] 窗格上。

@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 與 Samsung Knox Standard 裝置限制設定 
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/05/2018
 - **螢幕擷取 (僅限 Samsung Knox)** - 讓使用者將螢幕內容擷取成影像。
 - **語音助理 (僅限 Samsung Knox)** - 允許在裝置上使用語音助理軟體。
 - **YouTube (僅限 Samsung Knox)** - 允許在裝置上使用 YouTube 應用程式。
-- **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，終端使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓終端使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
+- **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
 - **封鎖日期和時間變更 (Samsung Knox)** - 防止使用者在裝置上變更日期和時間設定。 
 
 ## <a name="password"></a>密碼
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/05/2018
     - **至少包含字母**
     - **至少包含英數字元**
     - **至少包含英數字元和符號**
-- **避免重複使用先前的密碼** - 讓終端使用者無法建立以前用過的密碼。
+- **避免重複使用先前的密碼** - 讓使用者無法建立以前用過的密碼。
 - **指紋解除鎖定 (僅限 Samsung Knox)** - 允許使用指紋將支援的裝置解除鎖定。
 - **Smart Lock 與其他信任代理程式** - 可讓您控制相容 Android 裝置 (Samsung Knox Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時稱為信任代理程式) 可讓您在裝置位於受信任的位置時，停用或略過裝置鎖定畫面密碼。 例如，當裝置連線到特定的藍牙裝置或靠近 NFC 標記時，就能使用此功能。 您可以使用此設定來防止使用者設定 Smart Lock。
 - **加密** - 需要加密裝置上的檔案。
@@ -144,7 +144,7 @@ ms.lasthandoff: 03/05/2018
 
 Kiosk 設定僅套用至 Samsung Knox Standard 裝置，且只套用至您使用 Intune 管理的應用程式。
 
-- **選取受管理的應用程式**：選擇下列其中一個選項，以新增當裝置處於 Kiosk 模式時可執行的一或多個受管理的應用程式。 不允許在裝置上執行其他應用程式。
+- **選取受管理的應用程式**：選擇下列其中一個選項，以新增當裝置處於 Kiosk 模式時可執行的一或多個受管理的應用程式。 不允許在裝置上執行其他應用程式。 預先安裝的瀏覽器無法定義為可在裝置處於 kiosk 模式時允許執行的應用程式。 如果瀏覽器為必要項目，請考慮使用[受控瀏覽器](app-configuration-managed-browser.md)。
     - **依套件名稱新增應用程式**
     - **依 URL 新增應用程式**
     - **新增受管理的應用程式**。
@@ -152,6 +152,6 @@ Kiosk 設定僅套用至 Samsung Knox Standard 裝置，且只套用至您使用
 - **音量按鈕** - 啟用或停用裝置上的音量按鈕。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 繼續使用[如何設定裝置限制設定](device-restrictions-configure.md)中的指示建立裝置限制設定檔，然後進行指派。

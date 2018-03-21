@@ -1,10 +1,10 @@
 ---
-title: "利用 Intune 的條件式存取"
-titlesuffix: Azure portal
-description: "透過 Intune 使用條件式存取的常見方式"
+title: "Microsoft Intune 的條件式存取"
+titlesuffix: 
+description: "了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。"
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>透過 Intune 使用條件式存取的常見方式
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用 Intune 的條件式存取有兩種類型。 第一個類型是以裝置為基礎的條件式存取。 第二個類型是以應用程式為基礎的條件式存取。 您需要設定相關的相容性原則以在您的組織推動條件式存取相容性。
+Intune 條件式存取有兩種類型：裝置型條件式存取和應用程式型條件式存取。 您需要設定相關的相容性原則以在您的組織推動條件式存取相容性。 條件式存取通常用於執行以下作業：允許或封鎖存取 Exchange 內部部署、控制存取網路，或與 Mobile Threat Defense 解決方案整合等等。
 
 下列資訊可協助您了解如何使用 Intune 行動裝置性功能和 Intune 行動應用程式管理 (MAM) 功能。 
 

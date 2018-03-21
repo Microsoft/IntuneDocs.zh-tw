@@ -1,7 +1,7 @@
 ---
-title: "Mobile Threat Defense 與 Intune"
-titleSuffix: Azure portal
-description: "根據裝置風險，保護對公司資源的存取"
+title: "Mobile Threat Defense 與 Microsoft Intune"
+titleSuffix: 
+description: "使用 Intune Mobile Threat Defense (MTD)，與您的 Mobile Threat Defense 夥伴根據裝置的風險來保護公司資源的存取權。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合是什麼？
 
 
 Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defense 廠商，作為合規性政策和條件式存取規則的資訊來源。 這可讓 IT 系統管理員對 Exchange 和 Sharepoint 這類公司資源增添一道保護，特別是防止來自遭盜用之行動裝置的威脅。
@@ -32,7 +32,7 @@ Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defens
 
 在過去，公司已經主動保護電腦免受攻擊，但行動裝置則不受監視且未受保護。 行動平台具有應用程式隔離和經審核的消費者 App Store 這類內建保護，但這些平台仍然容易受到複雜的攻擊。 現在，多位員工使用裝置進行工作，而且需要存取機密資訊。 裝置必須受到保護，以免受到更複雜的攻擊。
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 連接器如何運作？
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 連接器如何運作？
 
 連接器會透過在 Intune 與您選擇的 Mobile Threat Defense 廠商之間建立通訊通道來保護公司資源。 Intune Mobile Threat Defense 合作夥伴提供直覺且易於部署行動裝置的應用程式，而行動裝置會主動掃描並分析威脅資訊以與 Intune 共用，來進行報告或強制執行。 
 
@@ -58,11 +58,11 @@ Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 
 
 將裝置視為受到 Mobile Threat Defense 解決方案所感染時︰
 
-![Mobile Threat Defense 受感染的裝置](./media/MTD-image-1.png)
+![顯示 Mobile Threat Defense 受感染裝置的圖片](./media/MTD-image-1.png)
 
 補救裝置時，會授與存取權︰
 
-![Mobile Threat Defense 已授與存取權](./media/MTD-image-2.png)
+![顯示授與 Mobile Threat Defense 存取權的圖片](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > 不支援搭配 Intune 使用多個 Mobile Threat Defense 供應商。 如果您啟用多個 MTD 工具，系統會強制安裝所有 MTD 應用程式並掃描所有裝置是否有潛在威脅。

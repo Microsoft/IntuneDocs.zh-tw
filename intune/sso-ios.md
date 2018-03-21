@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>設定 Microsoft Intune 以進行 iOS 裝置單一登入
 
@@ -34,18 +34,19 @@ ms.lasthandoff: 03/05/2018
 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 頁面上，選擇 [裝置設定]。
-2. 在 [裝置設定] 頁面上，選擇 [設定檔]。
-3. 在 [設定檔] 頁面上，選擇 [建立設定檔]、提供名稱和描述，並設定下列設定：
-   - **平台**：選擇 [iOS]。 
-   - **設定檔類型**：選擇 [裝置功能]。
-4. 在 [裝置功能] 頁面上，選擇 [單一登入]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+4. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
+5. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
+6. 提供名稱和描述，並設定下列設定：
+   - [平台]：選擇 [iOS]。
+   - [設定檔類型]：選擇 [裝置功能]。
+7. 在 [裝置功能] 窗格上，選擇 [單一登入]。
 
-   ![單一登入頁面](./media/sso-blade.png)
+   ![單一登入窗格](./media/sso-blade.png)
 
-2. 使用下列摘要表，協助您填寫 [單一登入] 頁面上的欄位。 如需詳細資料，請參閱表格之後的章節。
-   
+8. 使用下列摘要表，協助您填寫 [單一登入] 窗格上的欄位。 如需詳細資料，請參閱表格之後的章節。
+
    |欄位  |附註|
    |---------|---------|
    |**AAD 中的使用者名稱屬性**|Intune 會在 AAD 中查看每個使用者的屬性，並填入個別欄位 (例如 UPN)，然後產生安裝在裝置上的 XML 承載。|
@@ -95,8 +96,8 @@ URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單�
 
 ### <a name="credential-renewal-certificate"></a>認證更新憑證
 
-如果使用憑證 (不是密碼) 驗證您的使用者，則請使用此欄位選取部署至使用者當作驗證憑證的 SCEP 或 PFX 憑證。 一般而言，這和部署至使用者供 VPN、WiFi 或電子郵件等使用的其他設定檔是相同的憑證。
+如果使用憑證 (不是密碼) 驗證您的使用者，則請使用此欄位選取部署至使用者當作驗證憑證的 SCEP 或 PFX 憑證。 一般而言，這和部署至使用者供 VPN、Wi-Fi 或電子郵件等使用的其他設定檔是相同的憑證。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需其他的裝置功能設定資訊，請參閱[如何在 Microsoft Intune 中設定裝置功能設定](device-features-configure.md)。

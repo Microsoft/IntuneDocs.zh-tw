@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
 
@@ -47,17 +47,19 @@ Wi-Fi 設定檔支援下列裝置平台：
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>建立內含 Wi-Fi 設定的裝置設定檔
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為 Wi-Fi 設定檔輸入 [名稱] 及 [描述]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
+3. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
+4. 在 [建立設定檔] 窗格中，為 Wi-Fi 設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 您目前可為 Wi-Fi 裝置設定，選擇下列平台之一︰
     - **Android**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 及更新版本 (匯入設定檔)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 及更新版本**
+    - **Windows 10 及更新版本**
 
    > [!IMPORTANT]
    > 如果您要為執行 Windows 10 (包括 Windows Holographic for Business) 的裝置建立設定檔，您必須選擇 **Windows 8.1 和更新版本**平台。 **Windows 10 和更新版本**平台不包含 Wi-Fi 設定檔類型。 
@@ -70,9 +72,9 @@ Wi-Fi 設定檔支援下列裝置平台：
     - [iOS 設定](wi-fi-settings-ios.md)
     - [macOS 設定](wi-fi-settings-macos.md)
     - [Windows 8.1 和更新版本設定](wi-fi-settings-import-windows-8-1.md) (包括 Windows Holographic for Business)
-1. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+1. 當您完成時，請返回 [建立設定檔] 窗格，然後點擊 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 
 ## <a name="next-steps"></a>接下來的步驟
 

@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則"
-titlesuffix: Azure portal
-description: "使用 Intune 建立及部署 WIP 應用程式保護原則"
+title: "建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則"
+titlesuffix: Microsoft Intune
+description: "使用 Microsoft Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: doubeby
-ms.date: 02/16/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-從 Intune 1704 版開始，您可以搭配 Windows 10 使用應用程式保護原則，不用註冊即可保護應用程式。
+您可以搭配 Windows 10 應用程式使用應用程式保護原則，不用註冊裝置即可保護應用程式。
 
 ## <a name="before-you-begin"></a>開始之前
 
-我們先聊聊新增 WIP 原則時的一些概念。
+您必須了解新增 WIP 原則時的一些概念：
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>允許和豁免應用程式的清單
 
@@ -39,95 +39,84 @@ ms.lasthandoff: 02/24/2018
 
 ### <a name="types-of-apps"></a>應用程式類型
 
--   **建議的應用程式︰**此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓您輕鬆匯入原則。 <!---I really don't know what you mean by "easily import into policy"--->
-
+-   **建議的應用程式︰**此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓您輕鬆匯入原則。
 -   **市集應用程式︰**您可以將 Windows 市集中的任何應用程式新增至原則。
-
 -   **Windows 傳統型應用程式︰**您可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 .exe、.dll)。
 
-## <a name="pre-requisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件
 
 您必須先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](app-protection-policies-configure-windows-10.md)。
 
 此外，您也需要下列授權和更新：
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 授權。
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 授權
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
 > WIP 不支援多重身分識別，一次只能存在一個受管理的身分識別。
-<!---Should you be linking to a topic that explains what multi-identity is?--->
 
-## <a name="to-add-a-wip-policy"></a>新增 WIP 原則
+## <a name="to-add-a-wip-app-protection-policy"></a>新增 WIP 應用程式保護原則
 
-當您在組織中設定 Intune 之後，就可以透過 [Azure 入口網站](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)建立 WIP 特定原則。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
+當您在組織中設定 Intune 之後，就可以建立 WIP 特定原則。
 
-1.  移至 [Intune 行動應用程式管理儀表板]，選擇 [所有設定] > [應用程式原則]。
-
-2.  在 [應用程式原則] 刀鋒視窗中，選擇 [新增原則]，然後輸入下列值：
-
-    a.  **名稱：**輸入新原則的名稱 (必要)。
-
-    b。  **描述：**輸入選擇性的描述。
-
-    c.  **平台：**選擇 [Windows 10] 做為應用程式保護原則的支援平台。
-
-    d.  **註冊狀態：**選擇 [沒有註冊] 做為原則的註冊狀態。
-
-3.  選擇 **[建立]**。 原則將會建立並顯示在 [應用程式原則] 刀鋒視窗的表格中。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [所有服務] > [Intune]。
+3. 在 [Microsoft Intune] 刀鋒視窗中選取 [行動應用程式]。
+4. 在 [行動應用程式] 刀鋒視窗中選取 [應用程式防護原則]。
+5. 按一下 [新增原則] 顯示 [新增原則] 刀鋒視窗。
+6. 新增下列值：
+    - **名稱：**輸入新原則的名稱 (必要)。
+    - **描述：**(選擇性) 鍵入描述。
+    - **平台：**選擇 [Windows 10] 做為應用程式保護原則的支援平台。
+    - **註冊狀態：**選擇 [沒有註冊] 做為原則的註冊狀態。
+7.  選擇 **[建立]**。 原則會建立並顯示在 [應用程式防護原則] 刀鋒視窗的表格中。
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>將建議的應用程式新增到允許的應用程式清單
 
-1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後從 [新增原則] 刀鋒視窗選擇 [允許的應用程式]。 [允許的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
-
-2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。 **新增應用程式**資訊會顯示此清單中包含的所有應用程式。
-
-3.  選取要存取公司資料的每個應用程式，然後選擇 [確定]。 [允許的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
+1. 在 [Microsoft Intune] 刀鋒視窗中選取 [行動應用程式]。
+2. 在 [行動應用程式] 刀鋒視窗中選取 [應用程式防護原則]。
+3. 在 [應用程式防護原則] 刀鋒視窗中，選擇您想要修改的原則。 [Intune 應用程式防護] 刀鋒視窗隨即出現。
+4. 從 [Intune 應用程式防護] 刀鋒視窗中選擇 [受保護的應用程式]。 [受保護的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
+5. 選取 [新增應用程式]。 [新增應用程式] 資訊會向您顯示應用程式的篩選清單。 刀鋒視窗頂端的清單允許您變更清單篩選條件。
+6. 選取您希望允許存取公司資料的每個應用程式。
+7. 按一下 [確定]。 [受保護的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
+8. 按一下 **[儲存]**。
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>將市集應用程式新增到允許的應用程式清單
 
 **新增市集應用程式**
-
-1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後從顯示的功能表中選擇 [允許的應用程式]。此功能表會顯示此應用程式保護原則清單中已包含的所有應用程式。
-
-2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。
-
-3.  在 [新增應用程式] 刀鋒視窗上，從下拉式清單中選擇 [市集應用程式]。 資訊會變更為顯示方塊，讓您新增**發行者**和應用程式**名稱**。
-
-4.  輸入應用程式的名稱與其發行者的名稱，然後選擇 [確定]。
-
-    > [!TIP]
-    > 以下是範例應用程式，其中**發行者**是 *CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US*，而產品**名稱**是 *Microsoft.MicrosoftAppForWindows*。
-
-5.  在您將資訊輸入欄位之後，選擇 [確定]，便可將應用程式新增到 [允許的應用程式] 清單。
-
-> [!NOTE]
-> 若要同時新增多個市集應用程式，可以按一下應用程式列結尾的功能表 **(…)**，然後繼續新增更多應用程式。 完成後，選擇 [確定]。
+1. 在 [Microsoft Intune] 刀鋒視窗中選取 [行動應用程式]。
+2. 在 [行動應用程式] 刀鋒視窗中選取 [應用程式防護原則]。
+3. 在 [應用程式防護原則] 刀鋒視窗中，選擇您想要修改的原則。 [Intune 應用程式防護] 刀鋒視窗隨即出現。
+4. 從 [Intune 應用程式防護] 刀鋒視窗中選擇 [受保護的應用程式]。 [受保護的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
+5. 選取 [新增應用程式]。 [新增應用程式] 資訊會向您顯示應用程式的篩選清單。 刀鋒視窗頂端的清單允許您變更清單篩選條件。
+6. 從清單中，選取 [市集應用程式]。
+7. 輸入 [名稱]、[Pubisher] (發行者)、[產品名稱] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
+9. 按一下 [確定]。 [受保護的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
+10. 按一下 **[儲存]**。
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>將傳統型應用程式新增到允許的應用程式清單
 
 **新增傳統型應用程式**
-
-1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後選擇 [允許的應用程式]。 [允許的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
-
-2.  從 [允許的應用程式] 刀鋒視窗，選擇 [新增應用程式]。
-
-3.  從 [新增應用程式] 刀鋒視窗的下拉式清單中選擇 [傳統型應用程式]。
-
-4.  在您將資訊輸入欄位之後，選擇 [確定]，即可將應用程式新增到 [允許的應用程式] 清單。
-
-> [!NOTE]
-> 若要同時新增多個**傳統型應用程式**，可以按一下應用程式資料列結尾的功能表 **(…)**，然後繼續新增更多應用程式。 完成後，選擇 [確定]。
+1. 在 [Microsoft Intune] 刀鋒視窗中選取 [行動應用程式]。
+2. 在 [行動應用程式] 刀鋒視窗中選取 [應用程式防護原則]。
+3. 在 [應用程式防護原則] 刀鋒視窗中，選擇您想要修改的原則。 [Intune 應用程式防護] 刀鋒視窗隨即出現。
+4. 從 [Intune 應用程式防護] 刀鋒視窗中選擇 [受保護的應用程式]。 [受保護的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
+5. 選取 [新增應用程式]。 [新增應用程式] 資訊會向您顯示應用程式的篩選清單。 刀鋒視窗頂端的清單允許您變更清單篩選條件。
+6. 從清單中，選取 [桌面應用程式]。
+7. 輸入 [名稱]、[Pubisher] (發行者)、[產品名稱]、[檔案]、[最小版本]、[最大版本] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
+9. 按一下 [確定]。 [受保護的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
+10. 按一下 **[儲存]**。
 
 ## <a name="wip-learning"></a>WIP 學習
-<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 在您新增要使用 WIP 來保護的應用程式之後，需要使用「WIP 學習」來套用保護模式。
 
 ### <a name="before-you-begin"></a>開始之前
 
 WIP 學習是一種報表，可讓您監視啟用 WIP 的應用程式與 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「封鎖」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
 
-<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+<!-- 1631908 -->
+除了檢視啟用 WIP 之應用程式的資訊外，您也可檢視與網站共用工作資料之裝置的摘要。 您可以藉由這項資訊，決定哪些網站應該加入群組和使用者 WIP 原則。 摘要會顯示啟用 WIP 之應用程式所存取的網站 URL。
 
 當使用啟用 WIP 的應用程式和 WIP 未知的應用程式時，建議您先使用 [無訊息] 或 [允許覆寫]，同時利用一小群使用者確認允許應用程式清單上的具有正確的應用程式。 完成之後，您就可以變更為最終強制原則**封鎖**。
 
@@ -153,22 +142,22 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
     ![學習模式的螢幕擷取畫面](./media/learning-mode-sc1.png)
 
-2.  選擇 [儲存]。
+1.  選取設定，然後選擇 [儲存]。
 
 ### <a name="use-wip-learning"></a>使用 WIP 學習
 
-1. 開啟 Azure 入口網站。 選擇 [More services] (更多服務)。 在文字方塊篩選中，鍵入 **Intune**。
+1. 開啟 [Azure 入口網站](https://portal.azure.com)。 選擇 [所有服務]。 在文字方塊篩選中，鍵入 **Intune**。
 
 3. 選擇 [Intune] > [行動應用程式]。
 
 4. 選擇 [應用程式保護狀態] > [報告] > [Windows 資訊保護學習]。  
- 
+
     您可以根據 WIP 學習記錄報告中顯示的應用程式，將這些應用程式新增至應用程式保護原則。
 
 ## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>允許 Windows 搜尋索引子搜尋加密項目
 允許或不允許編製項目的索引。 這個參數是針對 Windows 搜尋索引子，它控制是否編製加密項目的索引，例如 Windows 資訊保護 (WIP) 保護的檔案。
 
-這個應用程式保護原則選項是在 Windows 資訊保護原則的 [進階設定] 中。 應用程式保護原則必須設為 *Windows 10* 平台，且應用程式原則 [註冊狀態] 必須設為 [註冊]。 
+這個應用程式保護原則選項是在 Windows 資訊保護原則的 [進階設定] 中。 應用程式保護原則必須設為 *Windows 10* 平台，且應用程式原則 [註冊狀態] 必須設為 [註冊]。
 
 啟用此原則時，會編製 WIP 保護項目的索引，而其相關中繼資料會儲存在未加密的位置。 中繼資料包含像是檔案路徑和修改日期等事項。
 
@@ -195,4 +184,4 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
 ## <a name="next-steps"></a>接下來的步驟
 
-- 深入了解 Windows 資訊保護，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)。 
+深入了解 Windows 資訊保護，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)。

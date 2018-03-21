@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 ProPlus 應用程式指派給 Windows 10 裝置
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
-此應用程式類型方便您將 Office 365 ProPlus 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為單一項目的那些應用程式。
+此應用程式類型方便您將 Office 365 應用程式指派給由您管理且執行 Windows 10 的裝置。 若有其授權，您也可以安裝適用於 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的應用程式。 您希望在 Intune 主控台的應用程式清單中，顯示為單一項目的那些應用程式。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/02/2018
 >這種安裝 Office 的方法，只有在裝置上未安裝其他版本的 Microsoft Office 時才支援。
 
 - 部署這些應用程式的裝置必須執行 Windows 10 Creators Update 或更新版本。
-- Intune 僅支援從 Office 365 ProPlus 套件新增 Office 應用程式。
+- Intune 僅支援從 Office 365 套件新增 Office 應用程式。
 - 如果在 Intune 安裝應用程式套件時有任何 Office 應用程式是開啟的，安裝會失敗且使用者未儲存的檔案可能會遺失資料。
 - Windows 10S、Windows Home、1, Windows Team、Windows Holographic 和 Windows Holographic for Business 裝置不支援此安裝方法。
 - Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Microsoft Store 的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
@@ -41,12 +41,13 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="get-started"></a>開始使用
 
-1.  登入 Azure 入口網站。
-2.  選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
+1.  登入 [Azure 入口網站](https://portal.azure.com)。
+2.  選擇 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3.  在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-4.  在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
+4.  在 [行動應用程式] 工作負載中，選擇 [管理] 區段下的 [應用程式]。
 5.  從應用程式清單上方選擇 [新增]。
-6.  在 [新增應用程式] 刀鋒視窗中，選擇 [Office 365 ProPlus Suite (Windows 10)] (Office 365 ProPlus 套件 (Windows 10))。
+6.  在 [新增應用程式] 刀鋒視窗的 [應用程式類型] 清單中，選取 [Office 365 套件] 下的 [Windows 10]。
+    您現在可以設定應用程式套件。
 
 ## <a name="configure-the-app-suite"></a>設定應用程式套件
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
-在此步驟中，提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別，同時也能幫助使用者在公司入口網站應用程式中尋找。
+在此步驟中，您必須提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式套件，同時也能幫助使用者在公司入口網站應用程式中尋找。
 
 1.  在 [新增應用程式] 刀鋒視窗中選擇 [App Suite Information] \(應用程式套件資訊)。
 2.  在 [App Suite Information] (應用程式套件資訊) 刀鋒視窗中，指定下列資訊：
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/02/2018
     - **開發人員** - 選擇是否要輸入應用程式開發人員的姓名。
     - **擁有者** - 選擇是否要輸入此應用程式的擁有者名稱，例如**人力資源部門**。
     - **注意** - 輸入要與此應用程式相關聯的附註。
-    - **上傳圖示** - 上傳當使用者瀏覽公司入口網站時，隨應用程式一起顯示的圖示。
+    - **標誌** - 上傳當使用者瀏覽公司入口網站時，隨應用程式一起顯示的圖示。
 3.  完成之後，請按一下 [確定] 。
 
 ## <a name="configure-app-settings"></a>設定應用程式設定
@@ -91,7 +92,7 @@ ms.lasthandoff: 03/02/2018
         - **每半年**
         - **每半年 (目標)**
     - **自動接受應用程式的使用者授權合約** - 如果您不需要使用者接受授權合約，請選取此選項。 Intune 會自動接受合約。
-    - **使用共用的電腦啟用** - 有多位使用者共用一部電腦時使用共用的電腦啟用。 如需詳細資訊，請參閱 ＜Office 365 專業增強版的共用電腦啟用概觀＞。
+    - **使用共用的電腦啟用** - 有多位使用者共用一部電腦時使用共用的電腦啟用。 如需詳細資訊，請參閱 ＜Office 365 的共用電腦啟用概觀＞。
     - **語言** - Office 會自動以終端使用者裝置上與 Windows 一起安裝的任何受支援的語言安裝。 如果想要使用其他語言安裝應用程式套件，請選取此選項。
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="finish-up"></a>完成
 
-完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [儲存]。 您已建立的應用程式會顯示在應用程式清單中。
+完成之後，請在 [新增應用程式] 刀鋒視窗中選擇 [新增]。 您已建立的應用程式會顯示在應用程式清單中。
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>安裝應用程式套件時的錯誤碼
 
@@ -137,4 +138,4 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="next-steps"></a>接下來的步驟
 
-您現在可以將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。
+- 您現在可以將應用程式指派給您選擇的群組，請參閱[如何將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。

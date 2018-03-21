@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 將應用程式指派至 Android for Work 裝置
 
@@ -38,36 +38,35 @@ Android for Work 是適用於 Android 裝置的計劃。 您在 Android for Work
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>與 Google Play for Work 商店中的應用程式同步處理
 
 1. 移至 [Google Play for Work 商店](https://play.google.com/work)。 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。
-2. 搜尋商店以尋找您要使用 Intune 指派的應用程式。
-3. 在您選擇的應用程式頁面上，選擇 [核准]。 在此範例中，您已選擇 Microsoft Excel 應用程式。<br>
-  ![核准應用程式範例](media/approve.png)
-4. 應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 請選擇 [核准] 來繼續。<br>
-  ![核准應用程式權限範例](media/approve-app-permissions.png)
-5. 應用程式已通過核准並顯示在您的 IT 管理主控台中。
+2. 搜尋市集並選取您要使用 Intune 指派的應用程式。
+3. 選取頁面上的 [核准] 顯示應用程式。 下列範例示範已被選擇的 Microsoft Excel 應用程式。</br>
 
-## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>從 Google Play for Work 商店發行企業營運應用程式，再進行同步處理
+    ![範例 - 在 Google Play for Work 商店中核准應用程式](media/approve.png)</br>
+    
+  應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 
 
-1. 移至 Google Play Developer Console ([play.google.com/apps/publish](https://play.google.com/apps/publish))。
-2. 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。 如果您是第一次登入，您必須註冊並支付費用，才能成為 Google 開發人員計劃的會員。
-3. 在主控台中，選擇 「Add new application」 \(加入新的應用程式)。
-4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<組織名稱>) 使用此應用程式] 設定：<br>
-  ![只將應用程式提供給您組織使用的選項](media/restrict.png)<br>
-此作業可確保只有您的組織可以使用此應用程式，而不會在公用 Google Play 商店中提供。
-如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469)。
-5. 在您發行應用程式之後，移至 [Google Play for Work 商店](https://play.google.com/work)。 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。
-6. 在商店的 [應用程式] 節點中，確認您可以看見已發行的應用程式。 應用程式會自動通過核准，以與 Intune 同步處理。
+4. 選取 [核准] 接受應用程式權限，並繼續作業。</br>
 
-## <a name="assign-an-android-for-work-app"></a>指派 Android for Work 應用程式
+    ![範例 - 核准應用程式權限](media/approve-app-permissions.png)
+
+5. 選擇如何處理新的應用程式權限要求。 然後，選取 [儲存] 來儲存新的應用程式權限要求處理方法。</br>
+
+    ![範例 - 儲存新的應用程式權限要求](media/approve-app-settings.png)</br>
+
+    應用程式已通過核准並顯示在您的 IT 管理主控台中。 現在，您可以[使用 Intune 同步處理 Android for Work 應用程式](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)。 
+
+## <a name="sync-an-android-for-work-app-with-intune"></a>使用 Intune 同步處理 Android for Work 應用程式
 
 如果您已核准商店中的某個應用程式，但未在 [行動應用程式] 工作負載的 [授權的應用程式] 節點中看到它，請以如下方式強制立即同步：
 
-1. 登入 Azure 入口網站。
-2. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-3. 在 [行動應用程式] 工作負載中，選擇 [安裝] > [Android for Work]。
-4. 在 [Android for Work] 刀鋒視窗上，選擇 [立即同步]。
-5. 此頁面也會顯示上一次同步的時間和狀態。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
+4. 在 [行動應用程式] 工作負載中，選擇 [安裝] 區段的 [Android for Work]。
+5. 在 [Android for Work] 窗格中選擇 [同步處理]。此頁面會更新上一次同步的時間和狀態。
+6. 在 [行動應用程式] 工作負載中，選取 [應用程式] 顯示新近可用的 Android for Work 應用程式。
 
-當此應用程式顯示在 [行動應用程式] 工作負載的 [授權的應用程式] 節點時，您就可以[像是指派任何其他應用程式一樣來指派它](/intune-azure/manage-apps/deploy-apps)。 您只能將應用程式指派給使用者的群組。
+當此應用程式顯示在 [行動應用程式] 工作負載的 [App licenses] (應用程式授權) 節點時，您就可以[像是指派任何其他應用程式一樣來指派它](/intune-azure/manage-apps/deploy-apps)。 您只能將應用程式指派給使用者的群組。
 
 在您指派應用程式之後，它將會安裝在您的目標裝置上， 而不會要求裝置的使用者核准安裝。
 
@@ -86,5 +85,21 @@ Android for Work 會要求您在 Google 受管理的 Play Web 主控台核准應
 
 或者，您可以設定 Google Play，以每個應用程式為基礎，自動核准應用程式權限。 
 
+## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>使用 Google Play for Work 商店的企業營運應用程式
 
+1. 移至 Google Play Developer Console ([play.google.com/apps/publish](https://play.google.com/apps/publish))。
+2. 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。 如果您是第一次登入，您必須註冊並支付費用，才能成為 Google 開發人員計劃的會員。
+3. 在主控台中，選擇 「Add new application」 \(加入新的應用程式)。
+4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<組織名稱>) 使用此應用程式] 設定：</br>
+
+    ![只讓您的組織使用應用程式的選項](media/restrict.png)</br>
+
+此作業可確保只有您的組織可以使用此應用程式，而不會在公用 Google Play 商店中提供。
+如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469)。
+5. 在您發行應用程式之後，移至 [Google Play for Work 商店](https://play.google.com/work)。 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。
+6. 在商店的 [應用程式] 節點中，確認您可以看見已發行的應用程式。 應用程式會自動通過核准，以與 Intune 同步處理。
+
+## <a name="next-steps"></a>接下來的步驟
+
+- [如何將應用程式指派到群組](apps-deploy.md)
 

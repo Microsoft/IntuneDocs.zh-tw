@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ ms.lasthandoff: 03/05/2018
 
 具有指派設定檔的執行 iOS 之裝置必須處於受監督模式，且執行 iOS 9.3 或更新版本。
 
-1. 在 [裝置組態]、[建立設定檔]、[裝置功能]頁面上，選擇 [主畫面配置 (僅限受監督)]。
-2. 在 [主畫面配置 (僅限受監督)] 頁面上，選擇是否要設定 [Dock] 或 [頁面] 配置。
+1. 從 [Azure 入口網站中的 Intune](https://portal.azure.com)，瀏覽至 [[裝置設定] 區域中的 [裝置功能]](device-features-configure.md)。
+2. 在 [裝置功能] 窗格上選擇 [主畫面配置 (僅限受監督)]。
+3. 在 [主畫面配置 (僅限受監督)] 窗格上，選擇是否要設定 [Dock] 或 [頁面] 配置。
 
-## <a name="add-items-to-the-dock"></a>將項目新增至 Dock
+## <a name="add-items-to-the-dock"></a>將項目新增到 Dock
 
-在 [Dock] 頁面上，您可以新增最多 6 個項目或資料夾到 iOS 畫面的 Dock。 不過，許多裝置支援的項目少於此數目。例如，iPhone 裝置支援最多 4 個項目。 在此情況下，裝置上只會顯示您設定的前四個項目。
+在 [Dock] 窗格上，您可以新增最多 6 個項目或資料夾到 iOS 畫面的 Dock。 不過，許多裝置支援的項目少於此數目。例如，iPhone 裝置支援最多 4 個項目。 在此情況下，裝置上只會顯示您設定的前四個項目。
 
 1. 選擇 [新增] 來將項目新增到 Dock。
-2. 在 [新增列] 頁面上，選擇您要新增 [應用程式] 或 [資料夾]。
+2. 在 [新增列] 窗格上，選擇您要新增 [應用程式] 或 [資料夾]。
 3. 使用本主題的資訊，設定您想要在 Dock 顯示的應用程式與資料夾。
-4. 繼續新增項目。 完成之後，在每個頁面上按一下 [確定] 直到您返回 [建立設定檔] 頁面為止。 選擇 **[建立]**。
+4. 繼續新增項目。 完成之後，在每個窗格上按一下 [確定] 直到您返回 [建立設定檔] 窗格為止。 選擇 **[建立]**。
 
 >[!TIP]
-> 您可以在任何主畫面或頁面清單中拖放項目以調整順序。 
+> 您可以在任何主畫面或頁面清單中拖放項目以調整順序。
 
 ### <a name="example"></a>範例
 
@@ -56,9 +57,8 @@ ms.lasthandoff: 03/05/2018
 
 新增您想要在主畫面顯示的頁面，以及要在每個頁面顯示的應用程式。 新增到頁面的應用程式會按照您在清單中指定的順序由左往右排列。 如果您新增的應用程式超過一個頁面所能容納的數目，應用程式就會移到下一個頁面。
 
-
-1. 在 [頁面] 頁面上，選擇 [新增]。
-2. 在 [新增列] 頁面上，輸入 [頁面名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
+1. 在 [頁面] 窗格上，選擇 [新增]。
+2. 在 [新增列] 窗格上，輸入 [頁面名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 3. 選擇 [新增]，然後選擇您要新增 [應用程式] 或 [資料夾] 到頁面。
 4. 使用本主題的資訊，設定您想要在頁面顯示的應用程式與資料夾。
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 03/05/2018
 
 1. 輸入[資料夾名稱]。 使用者會在裝置上看到此名稱。
 2. 選擇 [新增] 來在資料夾內建立頁面。 您最多可以新增 20 個頁面。
-3. 在 [新增列] 頁面上，輸入頁面的名稱。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
+3. 在 [新增列] 窗格上，輸入頁面的名稱。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 3. 輸入 [應用程式名稱]。 此名稱僅供您在 Azure 入口網站中參考，「不會顯示」在 iOS 裝置上。
 2. 輸入您要顯示之應用程式的 [應用程式套件組合識別碼]。 如需說明，請參閱＜如何將應用程式新增到清單＞。
 3. 選擇 [新增]。 您最多可以新增 60 個項目。
@@ -94,7 +94,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>內建 iOS 應用程式的套件組合識別碼參考
 
-此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。 
+此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。
 
 |||
 |-|-|
@@ -139,6 +139,6 @@ ms.lasthandoff: 03/05/2018
 |天氣|com.apple.weather|
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您現在可以將裝置設定檔指派給您選擇的群組。 如需詳細資料，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

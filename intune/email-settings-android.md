@@ -6,22 +6,24 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f989f9fafa4766ab71843c9dddef2bf3e18c5134
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>執行 Android 和 Android for Work 之裝置的 Microsoft Intune 電子郵件設定檔設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文展示您可為執行 Android 之裝置設定的電子郵件設定檔設定。
 
 身為 Intune 系統管理員，您可以建立電子郵件設定並將其指派給下列 Android 裝置：
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
@@ -30,9 +32,9 @@ ms.lasthandoff: 03/05/2018
 ## <a name="android-samsung-knox-standard-email-settings"></a>Android Samsung Knox Standard 電子郵件設定
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
-- **來自 AAD 的使用者名稱屬性** - 此名稱為 Active Directory (AD) 或 Azure AD 中的屬性，會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，例如 user1 或 user1@contoso.com。
-- **來自 AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
-- **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。
+- **來自 AAD 的使用者名稱屬性** - 此名稱為 Active Directory (AD) 或 Azure AD 中的屬性，會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，像是 user1 或 user1@contoso.com。
+- **AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址以登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
+- **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證]作為電子郵件設定檔所使用的驗證方法。
     - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
 ### <a name="security-settings"></a>安全性設定
@@ -58,7 +60,7 @@ ms.lasthandoff: 03/05/2018
 - **電子郵件應用程式** - 選取 [Gmail] 或 [Nine Work]
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **AAD 的使用者名稱屬性** - 此名稱是 Active Directory (AD) 或 Azure AD 中的屬性，會用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，像是 user1 或 user1@contoso.com。
-- **AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [使用者主體名稱]，使用完整主體名稱作為電子郵件地址或**使用者名稱**。
+- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [使用者主體名稱]，使用完整主體名稱作為電子郵件地址或**使用者名稱**。
 - **驗證方法** - 選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。
     - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 - **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL)。
