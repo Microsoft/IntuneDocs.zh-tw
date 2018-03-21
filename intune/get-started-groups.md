@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>建立群組來管理您的使用者和資料存取
 
@@ -30,16 +30,18 @@ Microsoft Intune 使用 Azure Active Directory (Azure AD) 來管理公司資源�
 ## <a name="how-do-i-create-a-group"></a>如何建立群組？
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 使用 [搜尋資源]，搜尋 **Intune**。
-3. 在您開啟 [Microsoft Intune] 刀鋒視窗之後，請選取 [群組]。
-4. 在 [使用者和群組 - 所有群組] 刀鋒視窗中，選取 [新增群組] 命令。
-5. 在 [群組] 刀鋒視窗中，新增群組的 [名稱] 和 [描述]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在您開啟 [Microsoft Intune] 窗格之後，請選取 [群組]。
+4. 在 [使用者和群組 - 所有群組] 窗格中，選取 [新增群組] 命令。
+5. 在 [群組] 窗格中，選擇 [群組類型]。
+5. 新增群組的 [名稱] 和 [描述]。
 6. 將 [成員資格類型] 設定為 [指派]。 請不要為測試群組 [啟用 Office 功能]。
+7. 選取群組的 [成員]。
 7. 按一下 [建立]。
 
 如果您已成功建立群組，它應該會出現在 [所有群組] 清單中。 如果未出現，請嘗試建立另一個群組。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [開始使用原則](get-started-policies.md) - 建立原則，以防止使用者透過其裝置執行未經授權的動作。
 

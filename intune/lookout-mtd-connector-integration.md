@@ -1,7 +1,7 @@
 ---
-title: "設定 Lookout 與 Intune 的整合"
-titlesuffix: Azure portal
-description: "使用 Intune 設定 Lookout 訂閱"
+title: "設定 Lookout 與 Microsoft Intune 的整合"
+titlesuffix: 
+description: "深入了解整合 Intune 與 Lookout Mobile Threat Defense 來控制行動裝置對公司資源的存取。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 

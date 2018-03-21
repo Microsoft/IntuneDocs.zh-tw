@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定電子郵件設定
 
@@ -39,17 +39,19 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>建立內含電子郵件設定的裝置設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 頁面上，選擇 [裝置設定]。
-2. 在 [裝置設定] 頁面上，選擇 [管理] > [設定檔]。
-3. 在 [設定檔] 頁面上，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 頁面上，為電子郵件設定檔輸入 [名稱] 及 [描述]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
+3. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
+4. 在 [建立設定檔] 窗格中，為電子郵件設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用電子郵件設定的裝置平台。 您目前可為電子郵件裝置設定選擇下列平台之一︰
     - **Android** (僅限 Samsung Android Knox Standard)
     - **Android for Work**
     - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [電子郵件]。
 7. 您可設定的設定會視您選擇的平台而不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
@@ -57,9 +59,9 @@ ms.lasthandoff: 03/02/2018
     - [iOS 設定](email-settings-ios.md)
     - [Windows Phone 8.1 設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 設定](email-settings-windows-10.md)
-8. 當您完成時，請返回 [建立設定檔] 頁面，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 窗格，然後點擊 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 頁面上。
+隨即會建立設定檔，並會出現在 [設定檔清單] 窗格上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
 ## <a name="further-information"></a>進一步資訊

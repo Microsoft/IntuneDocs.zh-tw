@@ -1,10 +1,10 @@
 ---
-title: "監視 Intune 裝置合規性政策"
-titlesuffix: Azure portal
-description: "了解如何監視裝置相容性原則"
+title: "監視 Microsoft Intune 裝置相容性原則"
+titlesuffix: 
+description: "使用裝置相容性儀表板來監視整體裝置相容性、檢視報表，以及逐條原則與逐項設定地檢視裝置相容性。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -25,15 +25,15 @@ ms.lasthandoff: 02/28/2018
 
 ## <a name="before-you-begin"></a>開始之前
 
-請使用下列步驟在 Azure 入口網站中尋找 **Intune 裝置相容性儀表板**︰
+請遵循下列步驟在 Azure 入口網站中尋找 **Intune 裝置合規性儀表板**︰
 
 1.  移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。
 
-2.  選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+2.  選擇左功能表中的 [所有服務]，然後在文字方塊篩選中鍵入 **Intune**。
 
 3.  選擇 [Intune] &gt; [裝置合規性] &gt; [概觀]，然後 [裝置合規性儀表板] 隨即開啟。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 裝置必須在 Intune 註冊才能接收裝置合規性政策。
 
 ## <a name="device-compliance-dashboard"></a>裝置合規性儀表板
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/28/2018
 
 -   每一設定的裝置合規性
 
-![裝置合規性儀表板](./media/idc-1.png)
+![顯示裝置相容性儀表板的圖片](./media/idc-1.png)
 
 您也可以檢視套用至個別裝置的特定合規性政策和設定，以及裝置上這些設定個別的最終合規性狀態。
 
@@ -62,28 +62,28 @@ ms.lasthandoff: 02/28/2018
 
     -   了解對不相容之裝置所要採取的動作。
 
--   **裝置未同步處理︰**裝置無法報告其裝置相容性原則狀態，因為下列原因之一︰
+-   **裝置未同步處理︰**裝置無法報告其裝置合規性政策狀態，原因為下列其中之一︰
 
     -   **不明**︰裝置已離線或因為其他原因無法與 Azure AD 或 Intune 通訊。
 
     -   **錯誤**︰裝置無法與 Intune 和 Azure AD 通訊，並收到錯誤訊息和原因。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 已在 Intune 註冊但未鎖定任何裝置相容性原則目標的裝置，會納入此報表中的 [相容] 值區之下。
 
 #### <a name="drill-down-option"></a>向下切入選項
 
 從 [裝置相容性儀表板] 中，如果您按一下 [裝置相容性] 磚，便可以向下切入至已鎖定裝置相容性原則目標的每個裝置的特定 [相容性狀態]、[使用者的電子郵件別名]、[裝置型號] 及 [位置]。
 
-![裝置相容性儀表板向下切入](./media/idc-2.png)
+![顯示裝置相容性儀表板向下切入的圖片](./media/idc-2.png)
 
 如果您需要特定使用者的詳細資訊，可以輸入使用者的電子郵件別名來篩選裝置合規性圖表報告。
 
-![裝置相容性儀表板特定使用者](./media/idc-3.png)
+![顯示裝置相容性儀表板特定使用者的圖片](./media/idc-3.png)
 
 您也可以按一下裝置合規性圖表中的不同合規性狀態，查看使用者的裝置合規性政策狀態的相關詳細資料。
 
-![裝置合規性儀表板中的不同狀態](./media/idc-4.png)
+![顯示裝置相容性儀表板不同狀態的圖片](./media/idc-4.png)
 
 #### <a name="filter"></a>篩選
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 02/28/2018
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -121,41 +121,22 @@ ms.lasthandoff: 02/28/2018
 
 ##### <a name="device-details"></a>裝置詳細資訊
 
-在裝置上按一下即可開啟所選裝置的 [裝置刀鋒視窗]。 這會提供該裝置套用之裝置合規性政策設定的更多詳細資料。
-
-![裝置合規性儀表板](./media/idc-6.png)
+在裝置上按一下，開啟所選裝置的 [裝置] 窗格，這會提供該裝置所套用的裝置相容性原則設定詳細資訊。
 
 當您按一下裝置政策設定本身，可以看到裝置合規性政策的名稱，這個名稱源自管理員鎖定目標的裝置合規性設定。
 
-![裝置合規性設定名稱](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>原則相容性報表
+### <a name="per-policy-device-compliance-report"></a>每一政策的裝置合規性報告
 
 此報告會提供每個合規性政策的檢視，以及每個合規性狀態中的裝置總數。 [裝置相容性儀表板] 中有 [原則合規性] 標題，其中顯示所有先前由系統管理員建立的原則、套用原則的平台、相容的裝置數目和不相容的裝置數目。
 
-![每一政策的裝置合規性報告](./media/idc-8.png)
+![顯示逐條原則裝置相容性報告的圖片](./media/idc-8.png)
 
 當您按一下 [裝置相容性] 磚，然後按一下其中一個裝置相容性原則，便可以看到裝置相容性原則已鎖定目標之每個裝置的 [相容性狀態]、[使用者的電子郵件別名]、[裝置型號] 及 [位置]。
-
-![政策合規性圖格](./media/idc-9.png)
 
 ## <a name="setting-compliance-report"></a>設定相容性報表
 
 此報告可讓您檢視每個合規性設定和每個合規性狀態中的裝置總數。 [裝置相容性儀表板] 中有 [設定相容性] 標題，其中顯示由系統管理員建立的所有裝置相容性原則下的所有裝置相容性原則設定、套用原則設定的平台、不相容的裝置數目。
 
-![每一設定的裝置合規性報告](./media/idc-10.png)
+![顯示逐項設定裝置相容性報告的圖片](./media/idc-10.png)
 
 當您按一下 [設定相容性] 磚，然後按一下其中一個裝置相容性原則設定，便可以看到裝置相容性原則設定已鎖定目標的每個裝置的 [相容性狀態]、[使用者的電子郵件別名]、[裝置型號] 及 [位置]。
-
-![設定合規性圖格](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>威脅代理程式狀態報表
-
-此報表可讓您檢視 Windows Defender 代理程式的狀態和健全狀況。 在 [裝置相容性] 中使用狀態積存報表，即可看到需要下列任何動作的裝置：
-- 簽章更新
-- [重新啟動]，
-- 手動介入
-- 完整掃描
-- 需要介入的其他代理程式狀態
-
-每個狀態類別的鑽研報表都會列出需要注意的個別電腦，以及回報為**清除**的電腦。

@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 VPN 設定
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/02/2018
 |Cisco (IPSec)|否|是|否|否|否|否|
 |Citrix|是|是|否|否|否|是|
 |F5 Edge Client|是|是|是|是|是|是|
-|Dell SonicWALL Mobile Connect|是|是|是|是|是|是|
+|SonicWall Mobile Connect|是|是|是|是|是|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
 |Cisco AnyConnect|是|是|是|否|否|否|
 |自動|否|否|否|否|否|是|
@@ -54,12 +54,12 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>建立內含 VPN 設定的裝置設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為 VPN 設定檔輸入 [名稱] 及 [描述]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [裝置設定]。
+2. 在 [裝置設定] 窗格中，選擇 [管理] >  [設定檔]。
+3. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
+4. 在 [建立設定檔] 窗格中，輸入 VPN 設定檔的 [名稱] 和 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 VPN 設定的裝置平台。 您目前可為 VPN 裝置設定，選擇下列平台之一︰
     - **Android**
     - **Android for Work**
@@ -76,9 +76,9 @@ ms.lasthandoff: 03/02/2018
     - [Windows Phone 8.1 設定](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 設定](vpn-settings-windows-8-1.md)
     - [Windows 10 設定](vpn-settings-windows-10.md) (包括 Windows Holographic for Business)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+8. 當您完成時，請返回 [建立設定檔] 窗格，然後選取 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
+設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
 

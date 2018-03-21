@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Microsoft Intune
 
@@ -31,7 +31,7 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 ![在 [More services] (更多服務) 清單中搜尋 Microsoft Intune 的使用者。](./media/azure-add-intune1.png)
 
-1. 從頁面左側的資訊看板底部，選取 [More services] \(更多服務)。
+1. 從頁面左側的資訊看板，選取 [所有服務]。
 2. 在篩選方塊中，搜尋 **Intune**。
 3. 選取**星狀**，以將 Intune 新增至我的最愛服務清單底部。
 4. 將滑鼠游標放在 Intune 服務上方。 使用服務名稱右側的三個垂直點，以選取並拖曳 Intune。
@@ -52,7 +52,7 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 ## <a name="using-services"></a>使用服務
 
-只要在 Azure 中開啟 Microsoft Intune 或任何其他服務，該服務就會顯示在**刀鋒視窗**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕刀鋒視窗中。 當您選取工作負載時，它會以完整頁面開啟該刀鋒視窗。 其他刀鋒視窗會在開啟時從刀鋒視窗右側滑出，並摺疊在其來源主要刀鋒視窗下方。
+只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**窗格**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕窗格中。 當您選取工作負載時，它會以完整頁面開啟該窗格。 其他窗格會在開啟時從窗格右側滑出，並摺疊在其來源主要窗格下方。
 
 ## <a name="next-steps"></a>接下來的步驟
 

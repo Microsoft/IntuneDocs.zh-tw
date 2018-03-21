@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
-餐廳想要提供 50 部銷售點平板電腦給其服務生，和訂單監視器給廚房員工。 那些員工永遠不會需要存取公司資料或以使用者身分登入。 Intune 管理員會建立裝置註冊管理員帳戶，並將餐廳管理者新增至 DEM 帳戶，提供該管理者 DEM 功能。 管理者現在可以使用 DEM 認證來註冊 50 部平板電腦裝置。
+餐廳想要提供 50 部銷售點平板電腦給其服務生，和訂單監視器給廚房員工。 那些員工永遠不會需要存取公司資料或以使用者身分登入。 Intune 管理員會建立裝置註冊管理員帳戶，並將餐廳管理者新增至 DEM 帳戶。 管理者現在擁有 DEM 功能。 管理者現在可以使用 DEM 認證來註冊 50 部平板電腦裝置。
 
 只有 [Azure 入口網站](https://portal.azure.com)中的使用者才能是裝置註冊管理員。 裝置註冊管理員使用者不能是 Intune 系統管理員。
 
@@ -50,16 +50,16 @@ DEM 使用者可以︰
 
   - 不具每位使用者的存取權。 因為裝置並未指派使用者，所以裝置沒有任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
   - 因為這些案例均屬每位使用者，所以沒有條件式存取。
-  - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以執行此動作，但 DEM 使用者不能。
+  - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以取消註冊。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
   - 因為進行應用程式管理需要每位使用者的 Apple ID，因此使用者無法使用 Apple 大量採購計劃 (VPP) 應用程式。
   - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。
-  - (僅限 Android) 可以單一 DEM 帳戶註冊的 Android for Work 裝置有數量限制。 每個 DEM 帳戶最多可以註冊十部 Android 工作設定檔裝置。 這項限制不適用於舊版的 Android 註冊。
+  - (僅限 Android) 可以單一 DEM 帳戶註冊的 Android for Work 裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 這項限制不適用於舊版的 Android 註冊。
   - 每部裝置都需要裝置授權。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 
 > [!NOTE]
-> 若要將公司應用程式部署到受裝置註冊管理員管理的裝置，請以 [必要安裝] 將公司入口網站應用程式部署到裝置註冊管理員的使用者帳戶。
+> 您可以將公司應用程式部署到裝置註冊管理員管理的裝置。 請將公司入口網站應用程式以**必要安裝**部署到裝置註冊管理員的使用者帳戶。
 > 為了改善效能，在 DEM 裝置上檢視公司入口網站應用程式只會顯示本機裝置。 只能從 Intune 管理主控台遠端管理其他 DEM 裝置。
 
 
@@ -88,9 +88,8 @@ DEM 使用者可以︰
 
 **移除裝置註冊管理員**
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選擇 [All services] (所有服務) > Intune。 Intune 位於 [監視 + 管理] 區段。
-2. 在 [Intune] 刀鋒視窗上，選擇 [註冊裝置]，然後選擇 [裝置註冊管理員]。
-3. 在 [裝置註冊管理員] 刀鋒視窗上，依序選取 DEM 使用者和 [刪除]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]，然後選擇 [裝置註冊管理員]。
+2. 在 [裝置註冊管理員] 刀鋒視窗上，依序選取 DEM 使用者和 [刪除]。
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>檢視裝置註冊管理員的內容
 

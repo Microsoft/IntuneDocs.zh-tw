@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>如何將 Android 市集應用程式新增至 Microsoft Intune
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 在您將應用程式指派給一部裝置或一群使用者之前，必須先將該應用程式新增到 Microsoft Intune。 下列步驟可讓您從 Azure 入口網站，將 Android 市集應用程式新增到 Intune。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [More Services] (更多服務)  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Microsoft Intune] 刀鋒視窗上，選擇 [行動應用程式]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
 4. 在 [Mobile Apps] 工作負載中，選擇 [管理] 區段下的 [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
-6. 在 [新增應用程式] 刀鋒視窗中，選取可用 [市集應用程式] 類型下的 [Android]。
-7. 選取 [設定]，設定應用程式的下列資訊：取決於您選擇的應用程式，此刀鋒視窗中某些值可能已自動填入：
+6. 在 [新增應用程式] 窗格中，選取可用 [市集應用程式] 類型下的 [Android]。
+7. 選取 [設定]，設定應用程式的下列資訊：取決於您選擇的應用程式，此窗格中某些值可能已自動填入：
     - **名稱** - 輸入要顯示在公司入口網站中的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **描述** - 輸入應用程式的描述。 使用者會在公司入口網站中看到這個描述。
     - **發行者** - 輸入應用程式的發行者名稱。
@@ -52,6 +52,6 @@ ms.lasthandoff: 03/05/2018
 
 您建立的應用程式會顯示在應用程式清單中，而您可從中將該應用程式指派給您選擇的群組。 
 
-##<a name="next-steps"></a>後續步驟
+##<a name="next-steps"></a>接下來的步驟
 
 - [如何將應用程式指派到群組](apps-deploy.md)

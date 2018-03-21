@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/02/2018
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>新增公司識別碼的 .csv 清單
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
+1. 在 [Azure 入口網站的 Intune](https://portal.azure.com) 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
 
  ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ ms.lasthandoff: 03/02/2018
 
 ### <a name="delete-corporate-identifiers"></a>刪除公司識別碼
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [公司裝置識別碼]。
+1. 在 [Azure 入口網站的 Intune](https://portal.azure.com) 中，選擇 [裝置註冊] > [公司裝置識別碼]。
 2. 選取您想要刪除的裝置識別碼，然後選擇 [刪除]。
 3. 確認刪除。
 
-刪除已註冊裝置的公司識別碼並不會變更裝置的擁有權。 若要變更裝置的擁有權，請移至 [裝置] > [所有裝置]，並選取裝置，然後選擇 [屬性]，並變更 [裝置擁有權]。
+刪除已註冊裝置的公司識別碼並不會變更裝置的擁有權。 若要變更裝置的擁有權，請移至 [裝置]，並選取裝置，然後選擇 [屬性]，並變更 [裝置擁有權]。
 
 ### <a name="imei-specifications"></a>IMEI 規格
 如需國際行動設備識別碼的詳細規格，請參閱 [3GGPP TS 23.003 (英文)](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)。
@@ -96,7 +96,7 @@ ms.lasthandoff: 03/02/2018
 裝置內容會顯示 Intune 中每筆裝置記錄的 [擁有權]。 身為系統管理員，您可以將裝置指定為 [個人] 或 [公司]。
 
 **變更裝置擁有權：**
-1. 在 Azure 入口網站的 Intune 中，移至 [裝置] > [所有裝置]，然後選擇裝置。
+1. 在 [Azure 入口網站的 Intune](https://portal.azure.com) 中，移至 [裝置]，然後選擇裝置。
 3. 選擇 [內容]。
 4. 將 [裝置擁有權] 指定為 [個人] 或 [公司]。
 

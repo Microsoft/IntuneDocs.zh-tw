@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -55,9 +55,9 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
 1. **設定 Intune MDM**<br>
 如果尚未這麼做，請將[行動裝置管理授權單位](mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
 2. **設定 Android for Work 繫結**<br>
-    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務] > [監視 + 管理] > [Intune]。
+    以 Intune 系統管理員的身分，在 [Azure 入口網站](https://portal.azure.com)中選擇 [所有服務] > [監視 + 管理] > [Intune]。
 
-   a. 在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [設定] 以開啟 Google Play 的 Android for Work 網站。 在瀏覽器的新索引標籤中開啟網站。
+   a. 在 [Intune] 窗格上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [受控 Google Play – 設定] 以開啟 Google Play 的 Android for Work 網站。 在瀏覽器的新索引標籤中開啟網站。
    ![Android for Work 註冊畫面](./media/android-work-bind.png)
 
    b。 **登入 Google**<br>
@@ -106,7 +106,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 ### <a name="to-unbind-an-android-for-work-account"></a>解除 Android for Work 帳戶的繫結
 
 1. **解除 Android for Work 繫結**<br>
-    以 Intune 系統管理員的身分，在 Azure 入口網站中選擇 [更多服務] > [監視 + 管理] > [Intune]。  在 [Intune] 刀鋒視窗上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [解除繫結]。
+    以 Intune 系統管理員的身分，在 [Azure 入口網站](https://portal.azure.com)中選擇 [所有服務] > [監視 + 管理] > [Intune]。  在 [Intune] 窗格上，選擇 [裝置註冊] > [Android for Work 註冊]，然後選擇 [解除繫結]。
 
 2. **同意刪除 Android for Work 繫結**<br>
   選擇 [是] 刪除繫結，並從 Intune 取消註冊所有 Android for Work 裝置。

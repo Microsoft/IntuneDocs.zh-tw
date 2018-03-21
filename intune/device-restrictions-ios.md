@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
-本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 iOS 的裝置進行設定。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+本文將告訴您，可以為執行 iOS 之裝置設定的 Microsoft Intune 裝置限制設定。
+
 ## <a name="general"></a>一般
 
+-   **共用的使用方式資料** - 允許或封鎖裝置將診斷和使用方式的遙測資料傳送至 Apple。
 -   **診斷資料提交** - 允許或封鎖裝置提交診斷資料給 Apple。
 -   **螢幕擷取** - 允許使用者可擷取螢幕內容做成影像。
     - **Classroom 應用程式的遠端螢幕觀察 (僅限受監督)** - 允許或封鎖 Apple Classroom 應用程式檢視 iOS 裝置螢幕。
@@ -213,8 +215,8 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 -   **僅使用組態設定檔加入 Wi-Fi 網路 (僅限受監督)** - 僅允許裝置加入已設定 Intune Wi-Fi 設定檔的 Wi-Fi 網路。
 
 - **行動數據使用規則 (僅限受管理的應用程式)** - 讓您定義受管理的應用程式可在行動電話通訊網路上使用的資料類型。 從下列選項進行選擇：
-    - **禁止使用行動數據**
-    - **禁止在漫遊時使用行動數據**
+    - **封鎖使用行動數據** - 您可以封鎖使用 [All managed apps] (所有受控應用程式)**** 的行動數據，或 [Choose specific apps] (選擇特定的應用程式)。
+    - **漫遊時封鎖使用行動數據** - 您可以封鎖漫遊時使用 [All managed apps] (所有受控應用程式)**** 的行動數據，或 [Choose specific apps] (選擇特定的應用程式)。
 
 ## <a name="connected-devices"></a>已連線的裝置
 

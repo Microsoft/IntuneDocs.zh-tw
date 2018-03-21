@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,59 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91762eafbba5f96ce04f3ffd4d83f63434a3ac74
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 407a332e170497dbb618a2915bba6b794c4a720f
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何將應用程式新增至 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-您必須先將應用程式新增至 Intune，才可以指派、監視、設定或保護它們。 Intune 支援各種不同的應用程式類型。 每種應用程式類型的可用選項都不相同。
+您必須先將應用程式新增至 Microsoft Intune，才可以進行指派、監視、設定或保護。
 
-Intune 可讓您新增及指派下列應用程式類型：
-| 應用程式類型                                  | 安裝                                                                  | Updates                       |
+您公司中的應用程式與裝置使用者 (貴公司的員工) 可能會有不同的應用程式需求。 將應用程式新增至 Intune 並向員工開放使用前，您必須評估並了解幾項應用程式基本概念。 您必須了解 Intune 適用的各類型應用程式。 您必須評估應用程式需求，例如員工需要的平台與功能。 此外，也必須決定是否要使用 Intune 來管理裝置 (包含應用程式)，或僅管理應用程式而不管理裝置。 您必須決定有哪些員工需要不同的應用程式與不同的功能。 本文提供的資訊將能協助您開始著手。
+
+## <a name="app-types-in-microsoft-intune"></a>Microsoft Intune 中的應用程式類型
+
+Intune 支援各種不同的應用程式類型。 每種應用程式類型的可用選項都不相同。 Intune 可讓您新增及指派下列應用程式類型：
+
+| **應用程式類型**                                     | **安裝**                                                                  | **更新**                       |
 |------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
-| 網站上的應用程式                           | Intune 會在裝置主畫面上建立 Web 應用程式捷徑          | 應用程式會自動更新     |
+| 來自市集的應用程式 (市集應用程式)          | Intune 將應用程式安裝在裝置上                                       | 應用程式會自動更新     |
 | 內部撰寫的應用程式 (企業營運)  | Intune 將應用程式安裝在裝置上 (您提供安裝檔案)    | 您必須更新應用程式       |
-| 市集的應用程式                       | Intune 將應用程式安裝在裝置上                                       | 應用程式會自動更新     |
-| 內建的應用程式                        | Intune 將應用程式安裝在裝置上                                       | 應用程式會自動更新     |
+| 內建的應用程式 (內建應用程式)    | Intune 將應用程式安裝在裝置上                                       | 應用程式會自動更新     |
+| Web 上的應用程式 (Web 連結)                | Intune 會在裝置主畫面上建立 Web 應用程式捷徑          | 應用程式會自動更新     |
 
+### <a name="specific-app-type-details"></a>特定應用程式類型詳細資料
+ 
+下表列出了特定應用程式類型，以及如何從 Microsoft Intune 中的 [新增應用程式] 刀鋒視窗加以新增的方式：
 
-除了 Web 應用程式，Intune 也為市集應用程式和 LOB 應用程式支援下列特定平台：
-- 市集應用程式
-    - Android 市集應用程式
-    - iOS 市集應用程式
-    - Windows Phone 8.1 市集應用程式
-    - Windows 市集應用程式
-    - Android for Work 應用程式
-    - 適用於 Windows 的 Office 365 應用程式
-    - 適用於 macOS 的 Office 365 應用程式
-- 建置應用程式 - 企業營運 (LOB)
-    - Android 企業營運 (LOB) 應用程式
-    - iOS 企業營運 (LOB) 應用程式
-    - Windows Phone 企業營運 (LOB) 應用程式 (.xap 檔案)
-    - Windows 企業營運 (LOB) 應用程式 (僅限 .msi 檔案)
-- 內建應用程式    
+| **應用程式   特殊類型**                         | **一般類型**             | **應用程式特殊程序**                                                                                                                                                 |
+|---------------------------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Android   市集應用程式                        | Microsoft Store   應用程式                  | 選取 [Android] 為 [應用程式類型]，並輸入應用程式的 Google Play 商店 URL。                                                                                       |
+| iOS   市集應用程式                            | Microsoft Store   應用程式                  | 選取 [iOS] 為 [應用程式類型] 並搜尋應用程式，然後在 Intune 中選取該應用程式。                                                                                     |
+| Windows   Phone 8.1 Microsoft Store 應用程式              | Microsoft Store   應用程式                  | 選取 [Windows Phone 8.1] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。                                                                               |
+| Microsoft   Microsoft Store 應用程式                      | Microsoft Store   應用程式                  | 選取 [Windows] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。                                                                                         |
+| Android   for Work 應用程式                     | Microsoft Store   應用程式                  | 從 Google Play for Work 商店尋找並核准 Android for Work 應用程式。                                                                                        |
+| Office   適用於 Windows 10 的 365 應用程式            | Store   應用程式 (Office 365)     | 選取 [Office 365 Suite] 下的 [Windows 10] 為 [應用程式類型]，然後選取想要安裝的 Office 365 應用程式。                                                |
+| Office   適用於 macOS 的 365 應用程式                 | Store   應用程式 (Office 365)     | 選取 [Office 365 Suite] 下的 [macOS] 為 [應用程式類型]，然後選取 Office 365 應用程式套件。                                                                     |
+| Android   企業營運 (LOB) 應用程式       | 企業營運   (LOB) 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，並選取 [應用程式套件檔案]，然後輸入副檔名為 **.apk** 的 Android 安裝檔。                    |
+| iOS   企業營運 (LOB) 應用程式           | 企業營運   (LOB) 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，並選取 [應用程式套件檔案]，然後輸入副檔名為 **.ipa** 的 iOS 安裝檔。                        |
+| Windows   Phone 企業營運 (LOB) 應用程式 | 企業營運   (LOB) 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，並選取 [應用程式套件檔案]，然後輸入副檔名為 **.xap** 的 iOS 安裝檔。                        |
+| Windows   企業營運 (LOB) 應用程式       | 企業營運   (LOB) 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，並選取 [應用程式套件檔案]，然後輸入副檔名為 **.msi**、**.appx** 或 **.appxbundle** 的 iOS 安裝檔。 |
+| 內建   iOS 應用程式                          | 內建   應用程式               | 選取 [內建應用程式] 為 [應用程式類型]，並從提供的應用程式清單中選取內建應用程式。                                                                  |
+| 內建   Android 應用程式                      | 內建   應用程式               | 選取 [內建應用程式] 為 [應用程式類型]，並從提供的應用程式清單中選取內建應用程式。                                                                  |
+| Web   應用程式                                  | Web   應用程式                    | 選取 [Web 連結] 為 [應用程式類型]，並輸入指向 Web 應用程式的有效 URL。                                                                                        |
+
+   
+您可以依序選取 [Mobile Apps] > [應用程式] > [新增] 在 Microsoft Intune 中新增應用程式。 [新增應用程式] 刀鋒視窗會隨即顯示，並可讓您選取 [應用程式類型]。 
 
 >[!TIP]
 > 企業營運 (LOB) 應用程式是您從應用程式安裝檔案新增的應用程式。 例如，若要安裝 iOS LOB 應用程式，您要從 [新增應用程式] 刀鋒視窗選擇 [企業營運應用程式] 作為**應用程式類型**來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .ipa)。 這些類型的應用程式通常都是內部撰寫的。
 
-## <a name="assess-application-requirements"></a>評估應用程式需求 
+## <a name="assess-app-requirements"></a>評估應用程式需求
 身為 IT 管理員，您不僅必須判斷您的群組必須使用哪些應用程式，還必須為每個群組和子群組判斷所需要的功能。 您必須為每個應用程式決定需要的平台、需要應用程式的使用者群組、這些群組要套用的設定原則，以及要套用的保護原則。  
 
 此外，您還必須決定重心要放在行動裝置管理 (MDM) 還是只放在行動應用程式管理 (MAM)。 使用 Intune 管理裝置 (行動裝置管理) 很有用，當：
@@ -71,15 +83,17 @@ Intune 可讓您新增及指派下列應用程式類型：
 如需詳細資訊，請[比較 MDM 和 MAM](byod-technology-decisions.md)。
 
 ### <a name="determine-who-will-use-the-app"></a>決定誰會使用應用程式
-一旦將應用程式新增至 Intune 之後，您就要指派可以使用應用程式的使用者群組。 首先，您必須根據應用程式包含的資料敏感度，決定應該存取應用程式的適當群組。 您可能要包含或排除組織內特定的角色類型。 例如，銷售群組可能只需要特定的 LOB 應用程式，而關注工程、財務、人力資源或法律的使用者可能不需要使用 LOB 應用程式。 此外，您的銷售群組可能需要額外的資料保護，以及從行動裝置存取內部的公司服務。 您必須決定這個群組如何使用應用程式連線到資源。 應用程式存取的資料是存在雲端中或內部部署？ 以及，使用者如何使用應用程式連線到資源。 Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。 這種存取通常是使用 [Intune 受控憑證](certificates-configure.md)完成，適用於在周邊網路結合標準 VPN 閘道或 Proxy 的存取控制，例如 Microsoft Azure Active Directory 應用程式 Proxy。 Intune 的 [App Wrapping Tool 與 App SDK](apps-prepare-mobile-application-management.md) 可協助包含企業營運應用程式中的存取資料，讓它無法將公司資料傳遞至取用者應用程式或服務。
 
-使用 [Intune 部署規劃、設計和實作指南](planning-guide.md)來協助判斷如何識別與每個使用案例和子使用案例應用程式狀況建立關聯的組織群組。 如需指派群組應用程式的詳細資料，請參閱[如何使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。 
+在決定員工需要的必要應用程式時，請考慮使用不同應用程式的不同使用者群組。 了解這些群組，即使在您新增應用程式後也很實用。 新增應用程式後，請指派可使用該應用程式的使用者群組。 首先，您必須根據應用程式包含的資料敏感度，決定應該存取應用程式的適當群組。 您可能要包含或排除組織內特定的角色類型。 例如，銷售群組可能只需要特定的 LOB 應用程式，而關注工程、財務、人力資源或法律的使用者可能不需要使用 LOB 應用程式。 此外，您的銷售群組可能需要額外的資料保護，以及從行動裝置存取內部的公司服務。 您必須決定這個群組如何使用應用程式連線到資源。 應用程式存取的資料是存在雲端中或內部部署？ 以及，使用者如何使用應用程式連線到資源。 Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。 這種存取通常是使用 [Intune 受控憑證](certificates-configure.md)完成，適用於在周邊網路結合標準 VPN 閘道或 Proxy 的存取控制，例如 Microsoft Azure Active Directory 應用程式 Proxy。 Intune 的 [App Wrapping Tool 與 App SDK](apps-prepare-mobile-application-management.md) 可協助包含企業營運應用程式中的存取資料，讓它無法將公司資料傳遞至取用者應用程式或服務。
+
+使用 [Intune 部署規劃、設計和實作指南](planning-guide.md)來協助判斷如何識別與每個使用案例和子使用案例應用程式狀況建立關聯的組織群組。 如需指派群組應用程式的詳細資料，請參閱[如何使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 
 ### <a name="determine-the-type-of-app-for-your-solution"></a>決定解決方案的應用程式類型
+
 您可以選擇下列應用程式類型：
+- **來自市集的應用程式** - 市集應用程式是已上傳至 Microsoft Store、iOS Store 或 Android Store 的應用程式。 市集應用程式的提供者會維護應用程式並提供更新。 您從市集清單中選取應用程式，使用 Intune 將它新增為使用者可用的應用程式。
+- **內部撰寫的應用程式 (企業營運)** - 內部建立的應用程式是企業營運 (LOB) 應用程式。 已為其中一個 Intune 支援的平台，例如 Windows、iOS 或 Android 建立此類型應用程式的功能。 您的組織會建立更新，並以個別檔案提供給您。 您使用 Intune 新增及部署更新，向使用者提供應用程式更新。
 - **網站上的應用程式** - Web 應用程式是用戶端伺服器應用程式。 伺服器提供 Web 應用程式，包括 UI、內容和功能。 此外，現代的 Web 裝載平台通常會提供安全性、負載平衡和其他優勢。 這種類型的應用程式在網站上會分開維護。 您使用 Intune 指向此應用程式類型。 您也可以指派哪些使用者群組可以存取這個應用程式。 請注意，Android 不支援 Web 應用程式。
-- **內部撰寫的應用程式 (企業營運)** - 內部建立的應用程式是企業營運 (LOB) 應用程式。 已為其中一個 Intune 支援的平台，例如 Windows、iOS 或 Android 建立此類型應用程式的功能。 您的組織會建立更新，並以個別檔案提供給您。 您使用 Intune 新增及部署更新，向使用者提供應用程式更新。 
-- **市集的應用程式** - 市集應用程式是已上傳至 Microsoft Store、iOS Store 或 Android Store 的應用程式。 市集應用程式的提供者會維護應用程式並提供更新。 您從市集清單中選取應用程式，使用 Intune 將它新增為使用者可用的應用程式。
 
 在決定您的組織需要的應用程式時，請考慮這些應用程式如何與雲端服務整合、應用程式存取哪些資料、BYOD 使用者是否能夠使用這些應用程式，以及應用程式是否需要存取網際網路。
 
@@ -98,9 +112,9 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 除了 Web 應用程式、市集應用程式和 LOB 應用程式，您應該也要知道大量採購方案應用程式和授權應用程式的目的地，例如：     
 - **Apple 商務大量採購方案 (iOS 和 MacOS)** - iOS App Store 可讓您購買多個想要在公司中執行的應用程式授權。 購買多個複本有助於您在公司中有效率地管理應用程式。 如需詳細資訊，請參閱[管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
 - **Android for Work (Android)** - 將應用程式指派至 Android for Work 裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您針對 Android for Work 安裝的所有應用程式都是來自 Google Play for Work 商店。 您可以登入商店、瀏覽所需的應用程式並核准這些應用程式。 應用程式接著會出現在 Azure 入口網站的 [授權的應用程式] 節點中。 您可以在這裡管理應用程式的指派，方式與指派任何其他應用程式相同。
-- **商務用 Microsoft Store (Windows 10)** - 商務用 Microsoft Store 可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，就可以從 Azure 入口網站管理大量採購的應用程式。 如需詳細資訊，請參閱[從商務用 Microsoft Store 管理應用程式](windows-store-for-business.md)。 
+- **商務用 Microsoft Store (Windows 10)** - 商務用 Microsoft Store 可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，就可以從 Azure 入口網站管理大量採購的應用程式。 如需詳細資訊，請參閱[從商務用 Microsoft Store 管理應用程式](windows-store-for-business.md)。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-add-apps"></a>在您新增應用程式之前
 在您開始新增和指派應用程式之前，請考慮下列事項。
 
 - 當您新增及指派來自市集的應用程式時，使用者必須擁有該市集的帳戶，才能安裝應用程式。
@@ -109,7 +123,7 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 ## <a name="cloud-storage-space"></a>雲端儲存空間
 使用軟體安裝程式安裝類型所建立的所有應用程式 (例如企業營運應用程式)，都必須封裝並上傳至 Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 完整訂閱將包含 20 GB 的儲存空間。
 
-您可以使用原始購買方法來購買 Intune 的額外儲存空間。  如果您是用發票或信用卡支付，請前往[訂用帳戶管理入口網站](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否則，請連絡合作夥伴或銷售人員。
+您可以使用原始購買方法來購買 Intune 的額外儲存空間。 如果您是用發票或信用卡支付，請前往[訂用帳戶管理入口網站](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。 否則，請連絡合作夥伴或銷售人員。
 
 雲端儲存空間需求如下：
 
@@ -124,7 +138,7 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-4. 在**行動應用程式**工作負載中，選擇 [安裝] >  [應用程式類別]。
+4. 在 [Mobile Apps] 工作負載中，選擇 [安裝] 區段的 [應用程式類別]。 
 5. 在 [應用程式類別] 刀鋒視窗中會列出目前的類別。 請選擇下列其中一個動作：
     - **建立類別**︰選取 [新增] 顯示 [建立類別] 刀鋒視窗，然後新增新類別的名稱。 名稱只能以一種語言輸入，而且 Intune 不會翻譯它。 完成時按一下 [建立]。
     - **編輯類別** - 為清單中的類別選擇 [...]。 此選項會顯示快顯功能表，讓您 [釘選至儀表板] 或 [刪除] 類別。
@@ -133,7 +147,6 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 
 原本，Intune 包含許多您可以快速指派的內建應用程式。 本清單已應客戶意見反應移除，您不會再看到內建應用程式。
 不過，您已指派的任何內建應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
-在之後的版本中，我們計劃新增一個方法，讓從 Azure 入口網站選取及指派內建應用程式的流程變得更輕鬆。
 
 ## <a name="next-steps"></a>接下來的步驟
 
@@ -146,8 +159,8 @@ Intune 受控應用程式也可以不需要註冊就啟用應用程式保護，�
 - [Web 應用程式 (適用於所有平台)](web-app.md)
 - [Windows Phone 8.1 市集應用程式](store-apps-windows-phone-8-1.md)
 - [Windows Phone LOB 應用程式](lob-apps-windows-phone.md)
-- [Windows 市集應用程式](store-apps-windows.md)
+- [Microsoft Store 應用程式](store-apps-windows.md)
 - [Windows LOB 應用程式](lob-apps-windows.md)
 - [適用於 Windows 10 的 Office 365 應用程式](apps-add-office365.md)
+- [適用於 macOS 的 Office 365 應用程式](apps-add-office365-macos.md)
 - [內建應用程式](apps-add-built-in.md)
-

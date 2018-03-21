@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b7d2b551832d8d0e467d079df673954318623e4c
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -33,9 +33,11 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 ## <a name="add-a-new-group"></a>新增新的群組
 
 使用下列步驟建立新的群組。
-1. 在 Azure 入口網站中，移至 [群組]，然後在 [所有群組] 刀鋒視窗中選擇 [新增群組]。
-  ![已選取 [新增群組] 之 [使用者和群組] 畫面的螢幕擷取畫面](./media/groups-add-new.png)
-2. 指定新群組的 [名稱] 和 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+3. 在 [Intune] 窗格中，選擇 [群組]，然後在 [所有群組] 窗格中選擇 [新增群組]。
+  ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add-new.png)
+2. 指定新群組的 [群組類型]、[名稱] 和 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
 
 3. 選擇 [成員資格類型]：
   - [已指派] 會建立以手動方式指派成員的群組。 深入了解 [Azure AD 指派的群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。

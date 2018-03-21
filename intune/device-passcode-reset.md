@@ -1,12 +1,11 @@
 ---
-title: "使用 Intune 重設及移除裝置密碼"
-titlesuffix: Azure portal
-description: "了解如何在使用 Intune 管理的裝置上重設及移除密碼。"
+title: "使用 Microsoft Intune 重設裝置密碼 - Azure | Micrososft Docs"
+description: "使用您以 Intune 管理或監視之裝置上的移除密碼動作，移除或重設密碼。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,37 +13,37 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e1496d24fd9d3bb636a4eab00c254b753210f63
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 8f23a79bbe72d12750ef642226aefd1e11dcac24
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>在 Intune 管理的裝置上重設及移除密碼
-
+# <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本文會交換使用「移除」和「重設」二詞。
-
-[移除密碼] 動作會為裝置產生新的密碼，新密碼會顯示在 [<裝置名稱> 概觀] 刀鋒視窗上。
+若要建立新的裝置密碼，請使用 [移除密碼] 動作。
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- Windows - 不支援
-- Windows Phone - 支援 Windows Phone 8.1 至未加入 Azure AD 的 Windows 10 Creators Update、Windows 10 Creators Update 和更新版本
-- iOS - 支援
-- macOS - 不支援
-- Android - 支援 Android 7 之前的 Android 版本。 不支援 Android for Work。
+- Windows Phone 8.1 至未聯結 Azure AD 的 Windows 10 Creators Update，以及 Windows 10 Creators Update 及更新版本
+- iOS
+- Android 7 之前的 Android 版本
 
-## <a name="how-to-reset-a-passcode"></a>如何重設密碼
+下列系統**不**支援這項功能：
+
+- Windows
+- macOS
+- Android for Work
+
+## <a name="reset-a-passcode"></a>重設密碼
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選取裝置、選擇 [...其他]，然後選擇 [移除密碼] 裝置遠端動作。
+2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [裝置]，然後選取 [所有裝置]。
+4. 從您管理的裝置清單中，選取裝置、選擇 [...其他]，然後選擇 [移除密碼] 裝置遠端動作。
 
 ## <a name="next-steps"></a>接下來的步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。
+若要查看您剛採取的動作狀態，請在 [裝置] 中選擇 [裝置動作]。

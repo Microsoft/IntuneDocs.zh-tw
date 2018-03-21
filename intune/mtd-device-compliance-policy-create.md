@@ -1,12 +1,12 @@
 ---
-title: "搭配 Intune 建立 Mobile Threat Defense 裝置合規性原則"
-titlesuffix: Azure portal
-description: "在 Intune 中建立 Mobile Threat Defense 裝置合規性原則"
+title: "使用 Microsoft Intune 建立 MTD 裝置相容性原則"
+titlesuffix: 
+description: "建立使用您 MTD 夥伴威脅層級的 Intune 裝置相容性原則，判斷行動裝置是否可以存取公司資源。"
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense (MTD) 裝置合規性原則
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/23/2018
 
 1.  移至 [Azure 入口網站](https://portal.azure.com/)，並使用您的 Intune 認證登入。
 
-2.  在 [Azure 儀表板] 中，選擇左功能表中的 [更多服務]，然後在文字方塊篩選中輸入 **Intune**。
+2.  在 [Azure 儀表板] 中，選擇左功能表中的 [所有服務]，然後在文字方塊篩選中鍵入 **Intune**。
 
 3.  選擇 [Intune]，即會開啟 [Intune 儀表板]。
 
@@ -48,9 +48,9 @@ ms.lasthandoff: 02/23/2018
 
 5.  選擇 [建立原則]，輸入裝置合規性 [名稱]、[描述]，選取 [平台]，然後選擇 [設定] 區段下的 [設定]。
 
-6.  在 [合規性原則] 刀鋒視窗中，選擇 [裝置健全狀況]。
+6.  在 [相容性原則] 窗格中，選擇 [裝置健全狀況]。
 
-7.  在 [裝置健全狀況] 刀鋒視窗中，從 [Require the device to be at or under the Mobile threat Defense Level] (需要裝置等於或低於 Mobile Threat Defense 等級) 下方的下拉式清單中選擇行動威脅等級。
+7.  在 [裝置健全狀況] 窗格中，從 [Require the device to be at or under the Device Threat Level] (需要裝置層級不高於裝置威脅等級) 下方的下拉式清單中選擇行動威脅等級。
 
     a.  **受保護**︰這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
 
@@ -67,11 +67,11 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>指派 MTD 裝置合規性原則
 
-若要將裝置合規性原則指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置合規性原則] 刀鋒視窗中找到。
+若要將裝置合規性原則指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 - 政策] 窗格中找到。
 
-1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這個動作會開啟刀鋒視窗讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
+1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這個動作會開啟窗格讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
 
-2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。  選擇 [選取] 會將原則部署給使用者。
+2. 選擇 [Select groups to include] (選取要包含的群組) 會開啟顯示 Azure AD 安全性群組的窗格。  選擇 [選取] 會將原則部署給使用者。
 
     > [!NOTE] 
     > 您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受相容性評估。

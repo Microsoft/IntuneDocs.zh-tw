@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -80,11 +80,11 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>取得並上傳 Apple VPP 權杖
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-1.  在 [Intune] 刀鋒視窗上，選擇 [設定] 下的 [行動應用程式] > [iOS VPP 權杖]。
-2.  在 VPP 權杖清單刀鋒視窗上，選取 [建立]。
-4. 在 [建立 VPP 權杖] 刀鋒視窗上，指定下列資訊：
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+1.  在 [Intune] 窗格上，選擇 [設定] 下的 [行動應用程式] > [iOS VPP 權杖]。
+2.  在 VPP 權杖清單窗格上，選取 [建立]。
+4. 在 [建立 VPP 權杖] 窗格上，指定下列資訊：
     - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
     - **國家/地區** - 選取 VPP 國家/地區市集。  Intune 會從指定的 VPP 國家/地區市集同步處理所有地區設定的 VPP 應用程式。
@@ -94,17 +94,17 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
     - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。
 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
-4. 完成之後，請選取 [上傳]。
+4. 完成之後，請選取 [建立]。
 
-該權杖會顯示在權杖清單刀鋒視窗內。
+該權杖會顯示在權杖清單窗格內。
 
 您可以隨時選擇 [立即同步處理]，使用 Intune 同步處理 Apple 所儲存的資料。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
-1.  在 [Intune] 刀鋒視窗上，選擇 [管理] 下的 [行動應用程式] > [應用程式]。
-2.  在應用程式刀鋒視窗清單上，選擇您要指派的應用程式，然後選擇 [指派]。
-3.  在 [應用程式名稱] - [指派] 刀鋒視窗上，選擇 [選取群組]，然後在 [選取群組] 刀鋒視窗上選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
+1.  在 [Intune] 窗格上，選擇 [管理] 下的 [行動應用程式] > [應用程式]。
+2.  在應用程式窗格清單上，選擇您要指派的應用程式，然後選擇 [指派]。
+3.  在 [應用程式名稱] - [指派] 窗格上，選擇 [新增群組]，然後在 [新增群組] 窗格中選擇 [指派類型]，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
 5.  針對您選取的每個群組，選擇下列設定：
     - **類型** - 選擇應用程式會是 [可用] (終端使用者可以從公司入口網站安裝應用程式) 或 [必要] (終端使用者的裝置會自動安裝應用程式)。
     - **授權類型** - 選擇 [使用者授權] 或 [裝置授權]。
