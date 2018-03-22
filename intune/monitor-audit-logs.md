@@ -1,7 +1,8 @@
 ---
-title: "Intune 活動的稽核記錄"
-description: "了解如何檢閱記錄 Intune 活動的稽核記錄"
+title: "Microsoft Intune 活動的稽核記錄"
+description: "了解如何檢閱記錄 Microsoft Intune 活動的稽核記錄。"
 keywords: 
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
@@ -10,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 活動的稽核記錄
 稽核記錄提供您在 Microsoft Intune 中產生變更之活動的記錄。 Create、Update (編輯)、Delete 和 Assign 動作或遠端工作會產生您可以檢閱的稽核事件。 您可以檢閱大部分 Intune 工作負載的稽核記錄。 預設會為所有客戶啟用稽核，且無法停用。 從 2017 年 12 月的功能發行日期開始記錄稽核事件；先前的事件都無法使用。
@@ -28,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="audit-logs-for-intune-workloads"></a>Intune 工作負載的稽核記錄
 您可以檢閱每個 Intune 工作負載「監視」群組中的稽核記錄。  
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇您想要檢閱稽核記錄的工作負載，例如 [裝置]。
 4. 在工作負載的 [監視] 群組中，選擇 [稽核記錄檔]。
 

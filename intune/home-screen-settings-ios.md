@@ -1,7 +1,7 @@
 ---
 title: "執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定"
-titlesuffix: Azure portal
-description: "了解您可以用來在執行 iOS 之裝置上自訂主畫面和 Dock 的設定。"
+titleSuffix: 
+description: "了解您在 Microsoft Intune 中可用來在執行 iOS 之裝置上自訂主畫面和 Dock 的設定。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 具有指派設定檔的執行 iOS 之裝置必須處於受監督模式，且執行 iOS 9.3 或更新版本。
 
-1. 從 [Azure 入口網站中的 Intune](https://portal.azure.com)，瀏覽至 [[裝置設定] 區域中的 [裝置功能]](device-features-configure.md)。
+1. 從 [Azure 入口網站中的 Intune](https://portal.azure.com)，巡覽至 [[裝置設定] 區域中的 [裝置功能]](device-features-configure.md)。
 2. 在 [裝置功能] 窗格上選擇 [主畫面配置 (僅限受監督)]。
 3. 在 [主畫面配置 (僅限受監督)] 窗格上，選擇是否要設定 [Dock] 或 [頁面] 配置。
 

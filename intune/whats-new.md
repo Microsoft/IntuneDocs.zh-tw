@@ -5,21 +5,21 @@ description: "了解 Intune Azure 入口網站中的新功能"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 01/02/2018
+manager: dougeby
+ms.date: 03/16/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 513164a1f734fddb6ac66fcaffdc2fb885a4659a
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: f171779a2606790dd1e59caf5e261e6d22faaf7f
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -43,22 +43,51 @@ ms.lasthandoff: 03/09/2018
 -->   
 
 
+
+
+
+## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日當週
+
+### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>新的 Windows Defender 惡意探索防護設定 <!-- 1631893 -->
+
+有六項新的 [攻擊面縮減] 設定和擴充的 [受控資料夾存取權: 資料夾保護] 功能可用。 這些設定位在：Device configuration\Profiles\
+建立 profile\Endpoint protection\Windows Defender 惡意探索防護。
+
+#### <a name="attack-surface-reduction"></a>攻擊表面縮減
+
+|設定名稱  |設定選項  |說明  |
+|---------|---------|---------|
+|進階勒索軟體防護|啟用、稽核、未設定|使用積極的勒索軟體防護。|
+|從 Windows 本機安全性授權子系統設立認證竊取旗標|啟用、稽核、未設定|從 Windows 本機安全性授權子系統設立認證竊取旗標 (lsass.exe)。|
+|從 PSExec 和 WMI 命令建立處理程序|封鎖、稽核、未設定|封鎖源自 PSExec 和 WMI 命令的處理程序建立。|
+|從 USB 執行的不受信任和不帶正負號的處理程序|封鎖、稽核、未設定|封鎖從 USB 執行的不受信任和不帶正負號的處理程序。|
+|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。|
+
+#### <a name="controlled-folder-access"></a>受控資料夾存取權
+
+|設定名稱  |設定選項  |說明  |
+|---------|---------|---------|
+|資料夾防護 (已實作)|未設定、啟用、僅稽核 (已實作)<br><br> **新增**<br>封鎖磁碟修改、稽核磁碟修改|
+保護檔案和資料夾免於惡意應用程式未經授權的變更。<br><br>**啟用**：免於不受信任的應用程式修改或刪除受保護資料夾中的檔案，也不讓這些應用程式在磁碟磁區寫入資料。<br><br>
+**僅封鎖磁碟修改**：<br>封鎖不受信任的應用程式在磁碟磁區寫入資料。 不受信任的應用程式仍然可以修改或刪除受保護資料夾中的檔案。|
+
 ## <a name="week-of-february-19-2018"></a>2018 年 2 月 19 日這週
+
 ### <a name="device-enrollment"></a>裝置註冊
 
 #### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Intune 支援多個 Apple DEP / Apple School Manager 帳戶 <!-- 747685 -->
- 
-Intune 現在支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 (DEP) 或 Apple School Manager 帳戶的裝置。 每個上傳的權杖可以針對註冊設定檔和裝置來個別管理。 不同的註冊設定檔可以根據上傳的 DEP/School Manager 權杖來自動指派。 如果上傳了多個 School Manager 權杖，則一次只能與 Microsoft School Data Sync 共用一個權杖。
+
+Intune 現在支援註冊最多達 100 個來自不同 [Apple 裝置註冊計劃 (DEP)](device-enrollment-program-enroll-ios.md) 或 [Apple School Manager](apple-school-manager-set-up-ios.md) 帳戶的裝置。 每個上傳的權杖可以針對註冊設定檔和裝置來個別管理。 不同的註冊設定檔可以根據上傳的 DEP/School Manager 權杖來自動指派。 如果上傳了多個 School Manager 權杖，則一次只能與 Microsoft School Data Sync 共用一個權杖。
 
 移轉之後，透過 Graph 來管理 Apple DEP 或 ASM 的搶鮮版 (Beta) Graph API 與發佈的指令碼將無法再運作。 新的搶鮮版 (Beta) Graph API 正在開發，將會在移轉後發行。
 
 #### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>查看每位使用者的註冊限制 <!-- 1634444 eeready wnready -->
-在 [疑難排解] 刀鋒視窗中，您現在可以看到對每位使用者有效的註冊限制，方法是從 [指派] 清單選取 [註冊限制]。
+在 [疑難排解] 刀鋒視窗中，您現在可以從 [指派] 清單中選取 [註冊限制]，以查看對每位使用者有效的[註冊限制](enrollment-restrictions-set.md)。
 
 ### <a name="device-management"></a>裝置管理
 #### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Windows Defender 健全狀況狀態和威脅狀態報告 <!--854704 -->
 
-瞭解 Windows Defender 的健全狀況狀態是管理 Windows 電腦的關鍵。  使用此更新，Intune 會在 Windows Defender 代理程式的健全狀況狀態中新增報告和動作。 在裝置相容性工作負載中使用狀態積存報表，即可看到需要下列任一項的裝置：
+瞭解 Windows Defender 的健全狀況狀態是管理 Windows 電腦的關鍵。  使用此更新，Intune 會在 Windows Defender 代理程式的健全狀況狀態中新增報告和動作。 在[裝置合規性工作負載](compliance-policy-monitor.md)中使用狀態積存報表，即可看到需要下列任一項的裝置：
 - 簽章更新
 - [重新啟動]，
 - 手動介入
@@ -68,25 +97,25 @@ Intune 現在支援註冊最多達 100 個來自不同 Apple 裝置註冊計劃 
 每個狀態類別的鑽研報表都會列出需要注意的個別電腦，或那些回報為**清除**的電腦。
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>裝置限制的新隱私權設定 <!--1308926 -->
-裝置現在有兩項新的隱私權設定可用：
+裝置現在有[兩項新的隱私權設定](device-restrictions-windows-10.md#privacy)可用：
 - **發佈使用者活動**：設定此項以**封鎖**防止共用體驗以及在工作切換器中探索最近使用的資源。
 - **僅限本機活動**：設定此項以**封鎖**防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
 
 #### <a name="new-settings-for-the-edge-browser---1469166---"></a>Edge 瀏覽器的新設定 <!--1469166 -->
-現在使用 Edge 瀏覽器的裝置有兩項新設定可用：[Path to favorites file] (我的最愛檔案路徑) 和 [Changes to Favorites] (我的最愛的變更)。 
+現在使用 Edge 瀏覽器的裝置有[兩項新設定](device-restrictions-windows-10.md#edge-browser)可用：[我的最愛檔案路徑] 和 [我的最愛的變更]。
 
 ### <a name="app-management"></a>應用程式管理
 #### <a name="protocol-exceptions-for-applications---1035509---"></a>應用程式的通訊協定例外狀況 <!--1035509 -->
 
 您現在可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況，開啟特定的非受控應用程式。 這類應用程式必須為 IT 所信任。 當資料傳輸原則設為**僅限受管理應用程式** 時，除您建立的例外狀況，資料傳輸仍僅限於受 Intune 管理的應用程式。 您可以使用通訊協定 (iOS) 或套件 (Android) 來建立限制。
- 
+
 例如，您可以將 Webex 套件新增為 MAM 資料傳輸原則的例外狀況。 這樣可以直接在 Webex 應用程式中開啟受控 Outlook 電子郵件訊息中的 Webex 連結。 其他非受控應用程式中的資料傳輸仍會受到限制。 如需詳細資訊，請參閱[應用程式的資料傳輸原則例外狀況](app-protection-policies-exception.md)。
 
 #### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜尋結果中的 Windows 資訊保護 (WIP) 加密資料 <!-- 1469193 -->
 Windows 資訊保護 (WIP) 原則中的設定現在可讓您控制 Windows 搜尋結果是否包含 WIP 加密資料。 在 Windows 資訊保護原則的 [進階設定] 中，選取 [允許 Windows 搜尋索引子搜尋加密項目] 來設定此應用程式保護原則選項。 應用程式保護原則必須設為 *Windows 10* 平台，且應用程式原則 [註冊狀態] 必須設為 [註冊]。 如需詳細資訊，請參閱[允許 Windows 搜尋索引子搜尋加密項目](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items)。
 
 #### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>設定自行更新的行動 MSI 應用程式 <!-- 1740840 -->
-您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。 這項功能對於不陷入競爭狀況很有用。 例如，當應用程式開發人員正在執行自動更新的應用程式，也正被 Intune 更新時，就可能發生這種競爭狀況。 雙方都可能嘗試在 Windows 用戶端上強制執行某個版本的應用程式，這可能造成衝突。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊] 刀鋒視窗中設定 [略過應用程式版本] 設定。 當此設定切換為 [是] 時，Microsoft Intune 將會忽略 Windows 用戶端上安裝的應用程式版本。 
+您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。 這項功能對於不陷入競爭狀況很有用。 例如，當應用程式開發人員正在執行自動更新的應用程式，也正被 Intune 更新時，就可能發生這種競爭狀況。 雙方都可能嘗試在 Windows 用戶端上強制執行某個版本的應用程式，這可能造成衝突。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊] 刀鋒視窗中設定 [略過應用程式版本] 設定。 當此設定切換為 [是] 時，Microsoft Intune 將會忽略 Windows 用戶端上安裝的應用程式版本。
 
 #### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Intune 支援的相關應用程式授權集 <!-- 1864117 -->
 Azure 入口網站中的 Intune 現在支援相關的應用程式授權集，作為 UI 中單一應用程式項目。 此外，從商務用 Microsoft Store 同步處理的任何離線授權應用程式都會合併到單一應用程式項目，而個別套件的所有部署詳細資料都會移轉至單一項目。 若要在 Azure 入口網站中檢視相關的應用程式授權集，請選取 [Mobile Apps] 刀鋒視窗中的 [應用程式授權]。
@@ -99,12 +128,14 @@ Windows 資訊保護 (WIP) 原則中的設定現在可讓您指定，哪些檔�
 
 您現在可以從遠端設定 Surface Hub 的資源帳戶設定。
 
-Surface Hub 會使用資源帳戶驗證 Skype/Exchange 以加入會議。 您會想要建立唯一的資源帳戶，使 Surface Hub 在會議中顯示為會議室。 例如，像**會議室 B41/6233** 的資源帳戶。
+Surface Hub 會使用資源帳戶驗證 Skype/Exchange 以加入會議。
+您會想要建立唯一的資源帳戶，使 Surface Hub 在會議中顯示為會議室。
+例如，像**會議室 B41/6233** 的資源帳戶。
 
 > [!NOTE]
 > - 如果欄位留白，您會覆寫先前在裝置上設定的屬性。
 >
-> - Surface Hub 的資源帳戶內容可以動態變更。 例如，開啟密碼輪換。 因此，Azure 主控台中的這些值很可能需要一些時間才能反映裝置的實際狀況。 
+> - Surface Hub 的資源帳戶內容可以動態變更。 例如，開啟密碼輪換。 因此，Azure 主控台中的這些值很可能需要一些時間才能反映裝置的實際狀況。
 >
 >   若要了解 Surface Hub 目前的設定內容，資源帳戶資訊可以包含在硬體清查 (已有 7 天間隔) 中，或當成唯讀屬性。 為在採取遠端動作後強化精確度，您可以立即在執行動作後取得參數狀態，更新 Surface Hub 上的帳戶/參數。
 
@@ -131,7 +162,7 @@ Surface Hub 會使用資源帳戶驗證 Skype/Exchange 以加入會議。 您會
 
 #### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>Windows 10 和更新版本系統安全性設定新增項目的相容性原則 <!--1704133-->
 
-Windows 10 相容性設定的新增項目現在已可供使用，但需要防火牆及 Windows Defender 防毒軟體才能包含此內容。 
+Windows 10 相容性設定的新增項目現在已可供使用，但需要防火牆及 Windows Defender 防毒軟體才能包含此內容。
 
 
 ### <a name="role-based-access-control"></a>以角色為基礎的存取控制
@@ -195,7 +226,7 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 
 您必須設定 6 位數的復原 PIN。 此 PIN 可用來將已清除的裝置解除鎖定，並開始重新安裝作業系統。 開始進行清除後，PIN 會出現在 Intune 中裝置 [概觀] 刀鋒視窗的狀態列上。 在清除進行期間，PIN 會持續顯示。 完成清除後，裝置會完全從 Intune 管理中消失。 請務必記錄復原 PIN，以供還原裝置的人員來使用。
 
-#### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤銷 iOS 大量採購方案權杖的授權 <!-- 820870 --> 
+#### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤銷 iOS 大量採購方案權杖的授權 <!-- 820870 -->
 您可針對指定的 VPP 權杖，撤銷所有 iOS Volume Purchasing Program (VPP) 應用程式的授權。
 
 ### <a name="app-management"></a>應用程式管理
@@ -212,7 +243,7 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 
 ### <a name="device-configuration"></a>裝置設定
 
-#### <a name="you-can-assign-an-application-configuration-policy-to-groups-by-including-and-excluding-assignments-----1480316---"></a>您可包含和排除指派，將應用程式設定原則指派給群組  <!-- 1480316 --> 
+#### <a name="you-can-assign-an-application-configuration-policy-to-groups-by-including-and-excluding-assignments-----1480316---"></a>您可包含和排除指派，將應用程式設定原則指派給群組  <!-- 1480316 -->
 
 您可使用包含和排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 您可選擇自選群組或虛擬群組作為指派。 虛擬群組可以包括 [所有使用者]、[所有裝置] 或 [所有使用者及所有裝置]。
 
@@ -225,7 +256,7 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 
 #### <a name="updates-to-compliance-emails---1637547---"></a>更新合規性電子郵件 <!--1637547 -->
 
-當傳送電子郵件回報不相容的裝置時，電子郵件會包含不相容之裝置的詳細資料。 
+當傳送電子郵件回報不相容的裝置時，電子郵件會包含不相容之裝置的詳細資料。
 
 
 ## <a name="week-of-january-22-2018"></a>2018 年 1 月 22 日當週
@@ -345,11 +376,6 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
 
 ### <a name="intune-apps"></a>Intune 應用程式
 
-#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>帳戶的終端使用者傳訊 <!--1573558 for 1712-->
-
-「公司入口網站」網站的使用者將無法執行需要您租用戶寫入存取權的動作。 這些使用者將會看到適當的錯誤訊息，說明其帳戶正在維護中。 相同的變更也即將在 Android、iOS、macOS 與 Windows 版「公司入口網站」應用程式上套用。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md)中看到此錯誤。
-
-
 
 ### <a name="role-based-access-control"></a>以角色為基礎的存取控制
 
@@ -431,7 +457,7 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 #### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>適用於行動裝置威脅偵測的 iOS 11 應用程式清查 API <!-- 1391759 -->
 
-Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供行動裝置威脅偵測 (MTD) 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 11+ 裝置使用者的應用程式清查。
+Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，並供 Lookout for Work 等行動裝置威脅偵測 (MTD) 提供者來擷取。 您可以收集 iOS 11+ 裝置使用者的應用程式清查。
 
 **應用程式清查**  
 個人擁有和公司擁有的 iOS 11+ 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
@@ -702,8 +728,8 @@ Intune 會在 3 月的服務版本中更新系統管理員體驗。 您不需要
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 
 將新增共用資料視窗的同意的情況包括：
-- 啟用 Android for Work 時 
-- 啟用並上傳 Apple MDM Push Certificate 時 
+- 啟用 Android for Work 時
+- 啟用並上傳 Apple MDM Push Certificate 時
 - 啟用任何 Apple 服務時，例如裝置註冊計劃、School Manager 和大量採購計劃
 
 在每個案例中，同意會與執行行動裝置管理服務嚴格相關，例如確認 IT 系統管理員已授權 Google 或 Apple 裝置註冊。 當新的工作流程推出時，強調會共用哪些資訊的文件位於這裡：
@@ -712,13 +738,14 @@ Intune 會在 3 月的服務版本中更新系統管理員體驗。 您不需要
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 
-您完全不需要對這項變更做任何準備，因為這些是次要的工作流程使用者介面更新。 如需 Microsoft 的 GDPR 相容性詳細資訊，請參閱可從 [其他資訊] 連結存取的＜信任中心＞。
+您完全不需要對這項變更做任何準備，因為這些是次要的工作流程使用者介面更新。
+如需 Microsoft 的 GDPR 相容性詳細資訊，請參閱可從 [其他資訊] 連結存取的＜信任中心＞。
 
 
 
 ### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>規劃變更：設定應用程式保護原則的更新
 
-從 2018 年 3 月開始，我們暫時會將您從 Azure 入口網站中的 [Intune 應用程式防護] 服務刀鋒視窗重新導向至 Azure 入口網站的 Intune 內的 [行動應用程式] 刀鋒視窗。 請注意，所有應用程式保護原則都已在 Intune 之應用程式組態的 [行動應用程式] 刀鋒視窗上。 您就會前往 Intune，而不是前往 Intune 應用程式保護。 在 4 月，我們將停止重新導向，並完全移除 [Intune 應用程式保護] 服務刀鋒視窗，而且它所複寫的項目現在內建於 Intune。 
+從 2018 年 3 月開始，我們暫時會將您從 Azure 入口網站中的 [Intune 應用程式防護] 服務刀鋒視窗重新導向至 Azure 入口網站的 Intune 內的 [行動應用程式] 刀鋒視窗。 請注意，所有應用程式保護原則都已在 Intune 之應用程式組態的 [行動應用程式] 刀鋒視窗上。 您就會前往 Intune，而不是前往 Intune 應用程式保護。 在 4 月，我們將停止重新導向，並完全移除 [Intune 應用程式保護] 服務刀鋒視窗，而且它所複寫的項目現在內建於 Intune。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 這項變更會影響 Intune 獨立客戶和混合式 (含 Configuration Manager 的 Intune) 客戶。 這項整合有助於簡化雲端管理系統管理。 現在，Azure 中只會有一個刀鋒視窗 (Intune 刀鋒視窗) 來管理群組、原則、應用程式和任何行動裝置管理。
@@ -739,15 +766,15 @@ Intune 會在 3 月的服務版本中更新系統管理員體驗。 您不需要
 在 3 月更新開始推出這項變更時，根據是否已指派合規性原則，這項功能會以不同的方式影響您。
 
 - 如果您是新的或現有的租用戶，而且未將任何合規性原則指派給裝置，請將切換自動設定為**相容**。 將會關閉此功能，這是主控台中的預設設定。 不會影響任何終端使用者。
-- 如果您是現有的租用戶，而且您有任何已指派合規性原則的裝置，則切換會自動設定為「不相容」。 推出 3 月更新時，將會開啟此功能 (預設設定)。 
+- 如果您是現有的租用戶，而且您有任何已指派合規性原則的裝置，則切換會自動設定為「不相容」。 推出 3 月更新時，將會開啟此功能 (預設設定)。
 
 如果您搭配使用合規性原則與條件式存取 (CA)，並且開啟此功能，則 CA 現在會封鎖任何未指派至少一個合規性原則的裝置。 除非您將至少一個合規性原則指派給所有裝置，否則與這些裝置建立關聯並且先前允許存取電子郵件的終端使用者將會遺失其存取權。   
- 
+
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？  
 
 如果您使用條件式存取，則建議您開啟此功能，並將切換設定為「不相容」。 為了避免遺失終端使用者的電子郵件存取，請確定所有裝置都已獲指派至少一個合規性原則。 我們會進行下列一些變更，協助您執行這項操作：   
 
-- 我們已在 Intune 入口網站中引進稱為「無合規性原則的裝置」的報表，可用來識別環境中所有未指派合規性原則的裝置。 
+- 我們已在 Intune 入口網站中引進稱為「無合規性原則的裝置」的報表，可用來識別環境中所有未指派合規性原則的裝置。
 - [所有使用者] 選項可讓您輕鬆指派所有使用者的合規性原則。
 
 如果您選擇關閉切換，則不需要採取任何進一步動作。
@@ -757,9 +784,9 @@ Intune 會在 3 月的服務版本中更新系統管理員體驗。 您不需要
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>變更計劃：變更適用於 Cordova 外掛程式的 Microsoft Intune App SDK 支援
 Intune 即將在 2018 年 5 月 1 日結束 [Microsoft Intune App SDK Cordova 外掛程式](app-sdk-cordova.md)的支援。 建議您改用 Intune App Wrapping Tool，以讓您的 Cordova 應用程式可在 Intune 中管理及運作。 當此變更生效時，適用於 Cordova 外掛程式的 Microsoft Intune APP SDK 將不再保留或接收更新。 應用程式開發人員將無法使用此外掛程式。 Intune 計劃繼續支援以 Cordova 建置的應用程式。 但是，以適用於 Cordova 外掛程式之 Microsoft Intune APP SDK 建置的任何應用程式在 Intune 中的功能會減少。 使用 Intune App Wrapping Tool 包裝後，應用程式就能以其一般狀態部署至終端使用者。 對於發行至 Google Play 商店之 Cordova 的 Android 應用程式：
 - 使用者第一次啟動時，系統將提示其認證，以接收 Intune 原則。
-- 應用程式應發行至以 Intune 使用者為目標的應用程式市集，如「適用於 Intune 的 Contoso 應用程式」。 
+- 應用程式應發行至以 Intune 使用者為目標的應用程式市集，如「適用於 Intune 的 Contoso 應用程式」。
 
-如需了解 App Wrapping Tool 的詳細資訊，請參閱[適用於 iOS 的 App Wrapping Tool](app-wrapper-prepare-ios.md) 和[適用於 Android 的 App Wrapping Tool](app-wrapper-prepare-android.md)。 如有任何問題或疑問，請連絡 [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com)。 
+如需了解 App Wrapping Tool 的詳細資訊，請參閱[適用於 iOS 的 App Wrapping Tool](app-wrapper-prepare-ios.md) 和[適用於 Android 的 App Wrapping Tool](app-wrapper-prepare-android.md)。 如有任何問題或疑問，請連絡 [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com)。
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>規劃變更：立即在 Azure 上使用 Intune 進行 MDM 管理 <!-- 1227338 -->
 一年多前，我們公佈了 [Azure 上的 Intune 公開預覽版 ](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六個月前追加了 Intune 的[新管理員體驗正式運作](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 8 月 31 日起，使用 Intune 獨立版的客戶將無法繼續在傳統 Silverlight 主控台中使用行動裝置管理 (MDM)。 但您可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 處理 MDM 需求。 如果仍在使用 MDM 的傳統主控台，請停止使用並熟悉 Azure 上的 Intune。 我們不希望這項變更影響任何使用者。 Silverlight 仍提供傳統的電腦管理。 您可以在[這裡](https://aka.ms/Intune_on_Azure_mdm)深入了解這項變更，以及它對您的影響。
@@ -797,11 +824,22 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 ## <a name="whats-coming"></a>未來動態
 
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>公司入口網站的新使用者體驗更新 <!--2000968-->
+
+我們將在四月引進新的公司入口網站體驗，其中有 UI 更新、簡化的工作流程和協助工具改進。 這將包含客戶所要求的增強功能，例如應用程式共用和改善的整體效能，讓您擁有更方便使用的體驗。
+我們已根據客戶的意見反應來新增一些新功能，這將大幅改善現有功能和可用性：
+
+-   整個網站的 UI 改進
+-   可以共用應用程式的直接連結
+- 改善大型應用程式目錄的效能
+
+您不需要為此變更進行任何準備動作。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最終可能需要使用更新過的螢幕擷取畫面來更新使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。 您可以在[應用程式 UI 中的新功能](whats-new-app-ui.md)頁面上查看此動作的範例影像。
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!--1412866-->
 
 我們將發行 iOS 版公司入口網站應用程式的重大使用者體驗更新。 此項更新的重點是全面視覺效果的重新設計，包括提高使用性和存取範圍的現代化外觀及操作。 保留目前所有的 iOS 公司入口網站功能。
 
-我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 請在 https://aka.ms/intune_ios_cp_testflight 註冊存取 TestFlight。
+我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 在 https://aka.ms/intune_ios_cp_testflight 中註冊以存取 TestFlight。 如需這項更新的最新資訊，請參閱 https://aka.ms/iOS_companyportal_update。
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
 Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 此變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。
@@ -810,6 +848,6 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 
 ## <a name="see-also"></a>另請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [雲端平台藍圖](https://www.microsoft.com/cloud-platform/roadmap)
 * [公司入口網站 UI 中的新增功能](whats-new-app-ui.md)
 * [前幾個月的新功能](whats-new-archive.md)

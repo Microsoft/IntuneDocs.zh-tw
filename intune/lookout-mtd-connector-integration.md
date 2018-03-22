@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -67,13 +67,11 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="configure-your-subscription"></a>設定訂閱
 
-1. 當 Lookout 支援建立了您的 Lookout Enterprise 帳戶後，Lookout 會傳送電子郵件給貴公司的主要連絡人，並提供下列登入 URL 的連結：https://aad.lookout.com/les?action=consent。
+1. 當 Lookout 支援建立了您的 Lookout Enterprise 帳戶後，Lookout 會傳送電子郵件給您的公司主要連絡人，並提供下列登入 URL 的連結：https://aad.lookout.com/les?action=consent。
 
 2.  第一次登入 Lookout 主控台必須使用具有 Azure AD 全域管理員角色的使用者帳戶，才能註冊您的 Azure AD 租用戶。 以後的登入不需要此層級的 Azure AD 權限。 隨即顯示同意頁面。 選擇 [接受] 以完成註冊。 接受並同意之後，會將您重新導向至 Lookout 主控台。
 
     ![Lookout 主控台之第一次登入頁面的螢幕擷取畫面](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > 如需登入問題的說明，請參閱 [Lookout 與 Intune 整合疑難排解](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)。
 
 3.  在 [Lookout 主控台](https://aad.lookout.com)中，從 [系統] 模組選擇 [連接器] 索引標籤，然後選取 [Intune]。
 
