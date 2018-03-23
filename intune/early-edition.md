@@ -1,25 +1,25 @@
 ---
-title: "舊版"
-description: 
-keywords: 
+title: 舊版
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>舊版 Microsoft Intune - 2018 年 3 月
 
@@ -147,6 +147,33 @@ Windows Defender 資訊安全中心 (WDSC) 通知裝置組態設定檔將新增�
 
 我們將為 Android 更新公司入口網站應用程式，以遵循 Android 的 [Material Design](https://material.io/) 指導方針。 當應用程式發行時，我們將發佈新圖示的影像至[應用程式 UI 的新功能](whats-new-app-ui.md)文章。 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 應用程式防護原則的 Edge 行動支援 <!-- 1817882 -->
+
+行動裝置的 Microsoft Edge 瀏覽器將支援 Intune 中所定義的應用程式防護原則。
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>使用完整辨別名稱作為 SCEP 憑證的主體 <!--2221763 eeready-->
+當您建立 SCEP 憑證設定檔時，會輸入主體名稱。 您可以使用完整辨別名稱作為主體。 針對 [主體名稱]，選取 [自訂]，然後輸入 `CN={{OnPrem_Distinguished_Name}}`。 若要使用 `{{OnPrem_Distinguished_Name}}` 變數，請務必將使用 [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onpremisesdistingishedname` 使用者屬性與 Azure AD 同步。 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>每 15 分鐘都會提示 iOS 裝置輸入PIN <!--1550837 eeready-->
+將合規性或設定原則套用至 iOS 裝置之後，系統會每 15 分鐘都提示使用者設定 PIN。 除非設定 PIN，否則系統將會持續提示使用者。
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>啟用藍牙連絡人共用 - Android for Work <!--1098983 eeready-->
+Android 預設會防止工作設定檔中的連絡人與藍牙裝置同步。 因此，工作設定檔連絡人不會顯示在藍牙裝置的呼叫者識別碼上。
+
+[Android for Work] > [裝置限制] > [工作設定檔設定] 中會有新的設定：
+- 透過藍牙的連絡人共用
+
+Intune 系統管理員可以設定這些設定，以啟用共用。 將裝置與汽車藍牙裝置配對時，這十分有用，而汽車藍牙裝置顯示免持式使用的呼叫者識別碼。 啟用時，會顯示工作設定檔連絡人。 未啟用時，不會顯示工作設定檔連絡人。
+
+適用於：Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>排程自動更新 <!--1805514 -->
+
+Intune 可讓您使用 [Windows Update Ring 設定](windows-update-for-business-configure.md)來控制自動更新安裝。 您可以排程重複發生的更新，包含週、日和時間。 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>停用裝置重新啟動的檢查 <!--1805490 -->
+
+Intune 可讓您控制[管理軟體更新](windows-update-for-business-configure.md)。 預設會新增並啟用 [重新啟動檢查] 屬性。 若要跳過重新啟動裝置時進行的典型檢查 (如作用中使用者、電池電量等等) 時，請選取 [跳過]。 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Windows Defender 資訊安全中心 (WDSC) 通知裝置組態設定檔將新增�
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>新增至 Endpoint Protection 設定的新 Windows Defender Credential Guard 設定 <!--1102252 --> 
 
-新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定會新增至 [裝置設定] > **[設定檔]** > **[Endpoint Protection]**。 會新增下列設定： 
+新的 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定將會新增至 [裝置設定] > [設定檔] > [端點保護]。 會新增下列設定： 
 
 - 平台安全性層級：指定下次重新開機時是否啟用平台安全性層級。 虛擬化型安全性需要安全開機。 使用直接記憶體存取 (DMA) 保護，可以選擇性啟用虛擬化型安全性。 DMA 保護需要硬體支援，而且只能在正確設定的裝置上啟用。
 - 虛擬化型安全性：指定下次重新開機時是否啟用虛擬化型安全性。 
@@ -185,29 +212,6 @@ Windows Defender 資訊安全中心 (WDSC) 通知裝置組態設定檔將新增�
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS 應用程式佈建設定 <!-- 1581650 -->
 您可以指派 iOS 應用程式佈建設定檔，包含或排除安全性群組以免應用程式過期。
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>新的 Windows Defender 惡意探索防護設定 <!-- 631893 -->
-
-有六項新的 [Attack Surface Reduction] (攻擊表面縮減) 設定和擴充的 [Controlled folder access: Folder protection] (受控資料夾存取權: 資料夾防護) 功能可用。 這些設定位在：Device configuration\Profiles\
-建立 profile\Endpoint protection\Windows Defender 惡意探索防護。
-
-#### <a name="attack-surface-reduction"></a>攻擊表面縮減
-
-|設定名稱  |設定選項  |說明  |
-|---------|---------|---------|
-|進階勒索軟體防護|啟用、稽核、未設定|使用積極的勒索軟體防護。|
-|從 Windows 本機安全性授權子系統設立認證竊取旗標|啟用、稽核、未設定|從 Windows 本機安全性授權子系統設立認證竊取旗標 (lsass.exe)。|
-|從 PSExec 和 WMI 命令建立處理程序|封鎖、稽核、未設定|封鎖源自 PSExec 和 WMI 命令的處理程序建立。|
-|從 USB 執行的不受信任和不帶正負號的處理程序|封鎖、稽核、未設定|封鎖從 USB 執行的不受信任和不帶正負號的處理程序。|
-|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。|
-
-#### <a name="controlled-folder-access"></a>受控資料夾存取權
-
-|設定名稱  |設定選項  |說明  |
-|---------|---------|---------|
-|資料夾防護 (已實作)|未設定、啟用、僅稽核 (已實作)<br><br> **新增**<br>封鎖磁碟修改、稽核磁碟修改|
-保護檔案和資料夾免於惡意應用程式未經授權的變更。<br><br>**啟用**：免於不受信任的應用程式修改或刪除受保護資料夾中的檔案，也不讓這些應用程式在磁碟磁區寫入資料。<br><br>
-**僅封鎖磁碟修改**：<br>封鎖不受信任的應用程式在磁碟磁區寫入資料。 不受信任的應用程式仍然可以修改或刪除受保護資料夾中的檔案。|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>新的 Windows Defender 應用程式防護設定 <!-- 1631890 -->
 
