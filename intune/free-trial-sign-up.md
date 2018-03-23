@@ -1,24 +1,24 @@
 ---
-title: "註冊 Microsoft Intune 的 30 天免費試用"
-titleSuffix: Azure portal
-description: "如何註冊 Intune 的 30 天免費試用。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 註冊 Microsoft Intune 的 30 天免費試用
+titleSuffix: Microsoft Intune
+description: 了解如何註冊 Microsoft Intune 的 30 天免費試用。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
@@ -30,11 +30,15 @@ ms.lasthandoff: 03/08/2018
 
 * 若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您從 [Where's your company located?]\(您的公司位置？) 選取該語言設定。
 
-2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>但若要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
+2. 在註冊程序結束時，會顯示訊息提供您新帳戶的資訊。 <br/> 
+
+![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>
+
+此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>不過，如果您要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
 第一次登入 Intune [Azure 入口網站](https://portal.azure.com)時，Intune 可能不會出現在 Azure 儀表板上。 將 Intune 服務新增至 Azure 儀表板︰
 1. 請從儀表板左側的 Azure 服務清單中選擇 [All services] (所有服務)，然後在搜尋方塊中輸入 **Intune**。
-2. 從清單中選擇 [Intune]，然後選取星號將服務加入服務清單中。<br/> ![從服務清單中選取 Intune 的映像](./media/azure-add-intune1.png)
+2. 從清單中選擇 [Intune]，然後選取星號將服務加入服務清單中。<br/> ![在 Azure 入口網站內選取 Microsoft Intune 的影像](./media/azure-add-intune1.png)
 3. 在服務清單中選擇 [Intune]，以開啟 Intune 儀表板。
 
 當您註冊試用版時，您在註冊期間提供的電子郵件地址也會收到一封內含您帳戶資訊的電子郵件訊息。 本電子郵件可確認您的試用版是使用中的狀態。

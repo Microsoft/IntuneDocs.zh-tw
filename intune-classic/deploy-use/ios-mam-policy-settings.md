@@ -1,27 +1,30 @@
 ---
-title: "iOS MAM 原則設定"
-description: "本主題說明適用於 iOS 裝置的行動裝置應用程式管理原則設定。"
-keywords: 
+title: iOS MAM 原則設定
+description: 本主題說明適用於 iOS 裝置的行動裝置應用程式管理原則設定。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS 行動裝置應用程式保護原則設定
+
+> [!IMPORTANT]
+> 此頁面上的內容現在大部分已過期，因為 Intune 應用程式防護原則已整個移轉至 Azure 入口網站。 深入了解 [Azure 入口網站中 iOS 的 Intune 應用程式防護原則](https://docs.microsoft.com/intune/app-protection-policy-settings-ios)。
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

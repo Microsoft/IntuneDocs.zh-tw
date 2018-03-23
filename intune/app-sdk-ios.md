@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK for iOS 開發人員指南"
-description: "Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入原生 iOS 應用程式中。"
-keywords: 
+title: Microsoft Intune App SDK for iOS 開發人員指南
+description: Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入原生 iOS 應用程式中。
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 49ffac609ec24917b8490c535ebd74c6d2729ccd
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -435,7 +435,7 @@ Intune 可讓 IT 系統管理員選取受管理的應用程式可儲存資料的
 
 其中一些設定可能在前幾節中討論過，而且有些設定並不適用於所有應用程式。
 
-Setting  | 類型  | 定義 | 必要？
+設定  | 類型  | 定義 | 必要？
 --       |  --   |   --       |  --
 ADALClientId  | 字串  | 應用程式的 Azure AD 用戶端識別碼。 | 如果應用程式使用 ADAL，則為必要項。 |
 ADALAuthority | 字串 | 應用程式的使用中 Azure AD 授權單位。 您應該使用已設定 AAD 帳戶的專屬環境。 | 如果應用程式使用 ADAL，則為必要項。 如果此值不存在，則會使用 Intune 預設值。|
@@ -470,7 +470,7 @@ MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 �
 * 呼叫 ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` 以取得應用程式設定物件。
 * 在 ```IntuneMAMAppConfig``` 物件上呼叫適當的選取器。 例如，如果您的應用程式金鑰是字串，您會想要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 檔案是針對傳回值/錯誤狀況。
 
-如需圖形 API 與 MAM 目標設定值有關之功能的詳細資訊，請參閱 [Graph API Reference MAM Targeted Config](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (圖形 API 參考 MAM 目標設定)。 <br>
+如需圖形 API 功能的詳細資訊，請參閱[圖形 API 參考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
 
 如需如何在 iOS 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱 [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) (如何使用適用於 iOS 的 Microsoft Intune 應用程式設定原則) 的＜MAM 目標應用程式設定＞一節。
 

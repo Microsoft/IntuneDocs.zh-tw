@@ -1,27 +1,26 @@
 ---
-title: "RBAC 搭配 Intune"
-titleSuffix: Azure portal
-description: "Intune Azure 預覽版︰了解 RBAC 如何讓您控制誰可以執行動作及變更。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: RBAC 搭配 Microsoft Intune
+description: 了解角色型存取控制 (RBAC) 如何讓您控制誰可以執行動作，並在 Microsoft Intune 中進行變更。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Intune
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
 
 RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及這些工作適用於誰。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。 角色的定義包括︰
 
@@ -88,7 +87,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 3. 在自訂角色窗格中，選擇 [指派]。
 
-4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用 [描述]，然後選擇下列項目︰
+4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
     - **範圍** - 選取包含上列成員可以管理的使用者群組。
 <br></br>

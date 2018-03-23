@@ -1,25 +1,25 @@
 ---
-title: "使用 Intune 資料倉儲"
+title: 使用 Intune 資料倉儲
 titlesuffix: Microsoft Intune
-description: "使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。"
-keywords: "Intune 資料倉儲"
+description: 使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>使用 Intune 資料倉儲
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/02/2018
   -  使用 OData 標準的資料模型
 
 > [!Note]
-> 如果使用混合式行動裝置管理 (MDM) 搭配 System Center Configuration Manager 與 Microsoft Intune，您想要從 SCCM 擷取資料。 Intune 資料倉儲只包含 Intune 資料。 您可以針對自訂報表使用 SCCM Power BI 儀表板。 如需詳細資訊，請參閱 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (宣佈適用於 System Center Configuration Manager 的 Power BI 解決方案範本) 和[建立 Power BI 報表和儀表板](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)。
+> 如果使用混合式行動裝置管理 (MDM) 搭配 System Center Configuration Manager 與 Microsoft Intune，您想要從 SCCM 擷取資料。 Intune 資料倉儲只包含 Intune 資料。 您可以針對自訂報表使用 SCCM Power BI 儀表板。 如需詳細資訊，請參閱 "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (宣告適用於 System Center Configuration Manager 的 Power BI 解決方案範本) 和 [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Dynamics 365 的 Power BI 內容)。
 
 
 > [!Important]  

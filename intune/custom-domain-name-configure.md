@@ -1,30 +1,31 @@
 ---
-title: "設定自訂網域名稱"
-description: "針對您的 Intune 訂閱新增自訂網域名稱"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 設定自訂網域名稱
+titlesuffix: Microsoft Intune
+description: 針對 Microsoft Intune 訂用帳戶新增自訂網域名稱
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>設定自訂網域名稱
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本主題將告訴系統管理員如何建立 DNS CNAME，以簡化和自訂其登入體驗。
+本主題將告訴系統管理員如何使用 Microsoft Intune 來建立 DNS CNAME，以簡化和自訂其登入體驗。
 
 當貴組織註冊諸如 Intune 的 Microsoft 雲端式服務時，您會取得裝載在 Azure Active Directory (AD) 中的初始網域名稱，像 **yourdomain.onmicrosoft.com**。在本例中，**your-domain** 是您註冊時選擇的網域名稱。 **onmicrosoft.com** 是指派給新增至訂閱之帳戶的尾碼。 您可以設定貴組織的自訂網域存取 Intune，而不使用訂閱提供的網域名稱。
 

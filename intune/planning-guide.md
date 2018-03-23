@@ -1,30 +1,31 @@
 ---
-title: "Intune 規劃和設計簡介"
-description: "本文介紹所有 Intune 規劃、設計和實作章節。 工具可協助您判斷目的、使用案例和需求、建立推出和通訊計劃、支援、測試和驗證計劃。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune 規劃和設計簡介
+titlesuffix: Microsoft Intune
+description: 本文介紹所有 Microsoft Intune 規劃、設計和實作章節。 工具可協助您判斷目的、使用案例和需求、建立推出和通訊計劃、支援、測試和驗證計劃。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署規劃、設計和實作指南
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-成功的 Intune 部署是從具有良好的規劃和設計開始。 本指南的用途是逐步引導您逐步開發部署計畫、建立設計、將 Intune 上架並進行生產推出的程序。
+成功的 Microsoft Intune 部署是從具有良好的規劃和設計開始。 本指南的用途是逐步引導您逐步開發部署計畫、建立設計、將 Intune 上架並進行生產推出的程序。
 
 ## <a name="whats-included-in-this-guide"></a>本指南包含哪些內容？
 

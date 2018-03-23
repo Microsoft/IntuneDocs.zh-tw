@@ -1,26 +1,25 @@
 ---
-title: "透過 Intune 設定並管理 SCEP 憑證"
-titlesuffix: Azure portal
-description: "了解如何設定基礎結構，並建立及指派 Intune SCEP 憑證設定檔。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 使用 Microsoft Intune 設定和管理 SCEP 憑證
+description: 了解如何在 Microsoft Intune 中設定基礎結構，然後建立和指派 Intune 簡單憑證註冊通訊協定 (SCEP) 憑證設定檔。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>透過 Intune 設定並管理 SCEP 憑證
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>使用 Microsoft Intune 設定和管理 SCEP 憑證
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主題說明如何透過 Intune 設定基礎結構，並建立及指派簡單憑證註冊通訊協定 (SCEP) 憑證設定檔。
@@ -305,9 +304,9 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選取 [裝置設定]。
-4. 在 [裝置設定] 窗格中選取 [憑證授權單位]。
+4. 在 [裝置設定] 窗格中，選取 [憑證授權單位]。
 5. 按一下 [新增] 並選取 [下載連接器檔案]。 將下載項目儲存到可從安裝它之伺服器存取的位置。 
 6.  下載完成之後，在裝載網路裝置註冊服務 (NDES) 角色的伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
 

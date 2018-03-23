@@ -1,23 +1,23 @@
 ---
-title: "在 Intune 中設定商務用 Windows Update 的設定"
-titleSuffix: Azure portal
-description: "了解如何在 Intune 中設定商務用 Windows Update 的設定，以控制 Windows 10 裝置的更新。"
-keywords: 
+title: 在 Microsoft Intune 中設定商務用 Windows Update 設定
+titleSuffix: ''
+description: 了解如何在 Microsoft Intune 中設定商務用 Windows Update 設定，以控制 Windows 10 裝置的更新。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>管理軟體更新
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 03/08/2018
 - **資料類型**：字串
 - **值**：<使用 OMS 工作區中的 [Windows 遙測] 索引標籤上顯示的 GUID>
 
-![診斷與使用方式資料的 Windows 設定](./media/commID.png)
+![OMA-URI 設定 - 新增資料列](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>如何暫停更新
 您可以讓裝置暫停接收功能更新或品質更新一段期間，自您暫停更新起最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。

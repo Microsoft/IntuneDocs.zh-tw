@@ -1,27 +1,30 @@
 ---
-title: "Android MAM 原則設定"
-description: "本主題說明適用於 Android 裝置的行動裝置應用程式管理原則設定。"
-keywords: 
+title: Android MAM 原則設定
+description: 本主題說明適用於 Android 裝置的行動裝置應用程式管理原則設定。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: dc65dd5ef170bff4cb1d1c126fa1549b7a357276
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
+
+> [!IMPORTANT]
+此頁面上的內容現在大部分已過期，因為 Intune 應用程式防護原則已整個移轉至 Azure 入口網站。 深入了解 [Azure 入口網站中 Android 的 Intune 應用程式防護原則](https://docs.microsoft.com/intune/app-protection-policy-settings-android)。
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -30,7 +33,7 @@ ms.lasthandoff: 01/23/2018
 
 ##  <a name="data-relocation-settings"></a>資料重新配置設定
 
-| Setting | 如何使用 | 預設值 |
+| 設定 | 如何使用 | 預設值 |
 |------|------|------|
 | **禁止 Android 備份** | 選擇 [是] 防止這個應用程式將工作或學校資料備份至 [Android Backup Service](https://developer.android.com/google/backup/index.html)。選擇 [否] 允許這個應用程式備份工作或學校資料。| 是 |
 | **允許應用程式將資料傳送到其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> <p>有一些 Intune 可以允許資料傳輸至其中的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](#Data-transfer-exemptions)。| 所有應用程式 |
@@ -80,7 +83,7 @@ ms.lasthandoff: 01/23/2018
 
 ##  <a name="access-settings"></a>存取設定
 
-| Setting | 如何使用 | 預設值 |
+| 設定 | 如何使用 | 預設值 |
 |------|------|------|
 | **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234 或 1111)。 選擇 [否]，防止其使用簡單的序號。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (Android 6.0+)**：選擇 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。 預設值 = [是]。</li></ul> 在 Android 裝置上，您可以讓使用者使用 [Android fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) (Android 指紋驗證) 而非 PIN 來證明其身分識別。 使用者嘗試使用自己的工作或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 </li></ul>| 需要 PIN 碼：是 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 |
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |

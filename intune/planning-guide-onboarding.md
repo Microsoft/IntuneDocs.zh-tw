@@ -1,26 +1,27 @@
 ---
-title: "Intune 上架流程"
-description: "本文可協助您在環境中上架 Intune 僅限雲端解決方案時，處理需要考量的所有詳細資訊。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune 上架流程
+titlesuffix: Microsoft Intune
+description: 本文可協助您在環境中上架 Microsoft Intune 僅限雲端解決方案時，處理需要考量的所有詳細資訊。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="implement-your-intune-plan"></a>實作您的 Intune 計劃
+# <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
 在上架階段中，您要將 Intune 部署到生產環境。 實作程序包含根據[使用案例需求](planning-guide-requirements.md)安裝及設定 Intune 與外部相依性 (如有必要)。
 

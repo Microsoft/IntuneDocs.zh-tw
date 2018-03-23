@@ -1,25 +1,26 @@
 ---
-title: "準備 Intune 以用於行動裝置管理"
-description: "請評估您的商務和技術需求，然後再移轉至 Intune。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: 準備 Intune 以用於行動裝置管理
+titlesuffix: Microsoft Intune
+description: 請先評估您的商務和技術需求，再移轉至 Microsoft Intune。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Intune 以用於行動裝置管理 (MDM)
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
 在探究設定 Intune 的詳細資訊之前，讓我們先檢閱您組織的行動裝置管理需求。 它可能有助於在目前的 MDM 提供者中執行作用中使用者的報告，以識別重要的使用者群組。 然後，您就可以開始處理[評估 MDM 需求](migration-guide-prepare.md#assess-mdm-requirements)一節中的問題。
 

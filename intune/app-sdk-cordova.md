@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Cordova 外掛程式"
-description: 
+title: Microsoft Intune App SDK Cordova 外掛程式
+description: Intune App SDK Cordova 外掛程式可讓開發人員將 Intune 應用程式和資料保護功能整合至其 Cordova 應用程式。
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 外掛程式
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 02/03/2018
 * 需要 0.8.0 版以上的 [Cordova 的 Azure Active Directory 驗證程式庫 (ADAL) 外掛程式](https://github.com/AzureAD/azure-activedirectory-library-for-cordova)。
 
 > [!NOTE]
-> 由於[這裡 (英文)](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) 所記載的 Apache Cordova Bug，已經有外掛程式相依性的應用程式將不會把外掛程式自動升級為要求的版本。
+> 因為[這裡](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22)所記載的 Apache Cordova Bug，所以已經有外掛程式相依性的應用程式不會將外掛程式自動升級為要求的版本。
 
 
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 02/03/2018
 
 1. 使用最新的 Cordova 工具匯入此外掛程式。 外掛程式會自動叫用作為 `after_compile` 步驟。
 
-2. 外掛程式會在建置程序的結尾建立建置 APK (Android API 14+) 的啟用 Intune 版本。 建置輸出將會包含 `[Project]-intunewrapped-[Build_Configuration].apk` (例如 `helloWorld-intunewrapped-debug.apk`)。
+2. 外掛程式會在建置程序的結尾建立已建置 APK (Android API 14+) 的 Intune 啟用版本。 建置輸出將會包含 `[Project]-intunewrapped-[Build_Configuration].apk` (例如 `helloWorld-intunewrapped-debug.apk`)。
 
 > [!NOTE]
 > 外掛程式只支援 gradle 組建。
@@ -118,7 +118,7 @@ $ cordova run --nobuild
 
 請參閱 [Cordova gradle 簽署資訊 (英文)](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) 以取得預期格式的詳細資訊。
 
-我們目前不支援以 `build.json` 或透過參數提供的任意位置來為 Cordova 組建提供簽署資訊的能力。
+Intune 目前不支援以 `build.json` 或透過參數提供的任意位置來為 Cordova 組建提供簽署資訊的能力。
 
 ## <a name="debugging-from-visual-studio"></a>從 Visual Studio 偵錯
 
@@ -129,8 +129,8 @@ $ cordova run --nobuild
 ### <a name="android"></a>Android
 
 * MultiDex 支援不完整。
-* 應用程式的 `minSdkVersion` 必須為 14，且 `targetSdkVersion` 必須為 24 或以下。 我們目前不支援以 API 25 為目標的應用程式
-* 我們無法重新簽署已使用 V2 簽署配置進行簽署的應用程式。 當 V2 簽署的應用程式由外掛程式包裝時，包裝的輸出 .apk 將會移除簽署。
+* 應用程式的 `minSdkVersion` 必須為 14，且 `targetSdkVersion` 必須為 24 或以下。 Intune 目前不支援以 API 25 為目標的應用程式
+* Intune 無法重新簽署已使用 V2 簽署配置進行簽署的應用程式。 當 V2 簽署的應用程式由外掛程式包裝時，包裝的輸出 .apk 將會移除簽署。
 *
   * 您可以將下列內容新增至 `build-extras.gradle` 檔案，來停用 Cordova 的預設 V2 簽署：
 
@@ -157,6 +157,6 @@ $ cordova run --nobuild
 
 ### <a name="ios"></a>iOS
 
-* 每當您在 **Info.plist** 檔案的 **CFBundleDocumentTypes** 節點下修改 UTI 清單，都必須在相同 plist 檔案的 [已匯入 UTI] 區段 (**UTImportedTypeDeclarations** 節點) 清除 Intune UTI，然後才再次建置。 所有的 Intune UTI 都會以 `com.microsoft.intune.mam` 前置詞做為開頭。
+* 每當您在 **Info.plist** 檔案的 **CFBundleDocumentTypes** 節點下修改 UTI 清單，都必須先在相同 plist 檔案的 [已匯入 UTI] 區段 (**UTImportedTypeDeclarations** 節點) 清除 Intune UTI，再重新建置。 所有的 Intune UTI 都會以 `com.microsoft.intune.mam` 前置詞作為開頭。
 
 * 如果您想要從 Cordova 專案移除適用於 Cordova 的 Intune App SDK 外掛程式，則也必須移除 iOS 平台，並且重新新增它，以復原 .xcodeproj 和.plist 檔案中的一些 Intune 設定。

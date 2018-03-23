@@ -1,37 +1,48 @@
 ---
-title: "以裝置註冊計劃註冊 iOS 裝置 | Microsoft Docs"
-description: "描述以 DEP 在 Intune 註冊 iOS 裝置的方式"
-keywords: 
+title: 以裝置註冊計劃註冊 iOS 裝置 | Microsoft Docs
+description: 描述以 DEP 在 Intune 註冊 iOS 裝置的方式
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 07/07/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 542a7e382b6f140af3f4cf605e503efd0b7a4c6e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 07a336635ae76b1fce19236eb676155703dd9a84
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>以裝置註冊計劃在 Intune 註冊 iOS 裝置
 
-Apple 向各公司行號及組織提供裝置註冊計劃，希望讓使用者體驗更容易的現成 iOS 裝置管理。 如果貴公司允許您攜帶自己的裝置，您只要依照[一般 iOS 註冊步驟](enroll-your-device-in-intune-ios.md)即可，不用按照本頁的步驟執行。 如果貴公司提供您 iOS 裝置，並告知這是裝置註冊計劃的一部分，請繼續閱讀。
+Apple 提供裝置註冊計劃，讓公司更容易管理大量 iOS 裝置。 如果您的公司允許您攜帶自己的裝置，請遵循[一般 iOS 註冊步驟](enroll-your-device-in-intune-ios.md)，而不需要遵循本頁的步驟。 如果貴公司提供您 iOS 裝置，並告知這是裝置註冊計劃的一部分，請繼續閱讀。
 
-1.  開啟您的 iPad，完成前幾個安裝畫面。
+1.  開啟 iOS 裝置。 
 2.  選取 [語言] 後，將裝置連上 Wi-Fi。
-3.  連接到 Wi-Fi 後，即會出現 [設定] 畫面。 它會顯示：**[您的公司] 將會自動設定 [iPad/iPhone]。**
-4.  以公司的 [使用者名稱] 和 [密碼] 登入。
-5.  同意**條款和條件**並決定是否將診斷資訊傳送至 Apple。
-6.  完成註冊後，裝置可能會提示您執行更多動作。 其中某些可能要輸入存取電子郵件的密碼、設定密碼、同意安裝應用程式，全部都是根據貴公司 Intune 系統管理員設定的進行。
+3. 在 [Set up iOS device] (設定 iOS 裝置) 畫面上，選擇您是否想要： 
+ 
+ - **設定為新的裝置**
+ - **從 iCloud 備份還原**
+ - **從 iTunes 備份還原**
+
+4.  連接到 Wi-Fi 後，即會出現 [設定] 畫面。 它會顯示：**[您的公司] 將會自動設定裝置。**
+
+  **設定可讓 [您的公司] 無線管理此裝置。系統管理員可協助您設定電子郵件和網路帳戶、安裝和設定應用程式，以及遠端管理設定。系統管理員可以停用功能、安裝和移除應用程式、監視和限制您的網際網路流量，以及從遠端清除此裝置。**
+ 
+  **設定提供者：[您的公司] 的 iOS 小組 [位址]**
+
+5. 使用 Apple 識別碼登入。 登入可讓您安裝公司入口網站應用程式，並安裝管理設定檔，讓您的公司將其資源 (如電子郵件和應用程式) 的存取權授與您。 
+6.  同意**條款和條件**並決定是否將診斷資訊傳送至 Apple。
+7.  完成註冊後，裝置可能會提示您執行更多動作。 其中一些步驟可能會輸入您的密碼來進行電子郵件存取，或設定密碼。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

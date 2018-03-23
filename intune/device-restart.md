@@ -1,24 +1,24 @@
 ---
-title: "使用 Intune 從遠端重新啟動裝置"
-titlesuffix: Azure portal
-description: "了解如何使用重新啟動裝置動作，從遠端重新啟動裝置。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 使用 Intune 從遠端重新啟動裝置
+titlesuffix: Microsoft Intune
+description: 了解如何在 Microsoft Intune 中使用重新啟動裝置動作，來遠端重新啟動裝置。
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a49f95ce81f750c539959674a15df41118f20aaa
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/23/2018
 ## <a name="how-to-restart-a-device"></a>如何重新啟動裝置
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
 4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
 5. 從您管理的裝置清單中，依序選擇裝置、[...其他]，然後選擇 [重新啟動] 裝置遠端動作。

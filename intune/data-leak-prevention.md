@@ -1,25 +1,27 @@
 ---
-title: "防止資料在未受管理的裝置上外洩"
-description: "允許在裝置上存取公司資料，並防止資料外洩。"
-keywords: "資料保護避免外洩裝置 O365 Office 365 的資料"
-author: arob98
+title: 防止資料在未受管理的裝置上外洩
+titlesuffix: Microsoft Intune
+description: 允許在裝置上存取公司資料，並使用 Microsoft Intune 防止資料外洩。
+keywords: 資料保護避免外洩裝置 O365 Office 365 的資料
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices"></a>防止資料在未受管理的裝置上外洩
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止資料在非受控裝置上外洩
 
 如果您允許存取 Office 365 所裝載的公司資料，就可以控制使用者如何共用和儲存資料，避免發生蓄意或意外資料外洩的風險。 Microsoft Intune 提供應用程式保護原則，讓您可在使用者擁有的裝置上設定，以保護您的公司資料。 裝置無須在 Intune 服務中註冊。 
 
@@ -55,8 +57,8 @@ Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行�
 ## <a name="what-to-tell-employees-and-students"></a>員工和學生須知
 
 在情況允許下，分享下列連結以提供其他資訊： 
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-ios.md)
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-android.md) 
+* [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)
+* [當 Android 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-android.md) 
 
 ## <a name="next-steps"></a>接下來的步驟
 
