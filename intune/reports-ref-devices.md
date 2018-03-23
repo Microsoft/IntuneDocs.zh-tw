@@ -1,30 +1,31 @@
 ---
-title: "裝置 - Intune 資料倉儲 | Microsoft Docs"
-description: "Intune 資料倉儲 API 中的實體集合裝置類別的參考主題。"
-keywords: "Intune 資料倉儲"
+title: 裝置 - Intune 資料倉儲
+titlesuffix: Microsoft Intune
+description: Intune 資料倉儲 API 中的實體集合裝置類別的參考主題。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f304e07de7ceefb09152aeb30d113c378e716d38
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d8a7aeba4170bf6640083b95562d644299693f31
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
 [裝置] 類別包含的行動裝置實體，可追蹤下列資訊：
 
-  -  裝置類型：
+  -  裝置類型
   -  裝置註冊和註冊狀態
   -  裝置擁有權
   -  裝置管理狀態
@@ -41,7 +42,7 @@ ms.lasthandoff: 01/30/2018
 |---------|------------|
 | DeviceTypeID |裝置類別的唯一識別碼 |
 | DeviceTypeKey |資料倉儲中裝置類型的唯一識別碼 - surrogate 索引鍵 |
-| DeviceTypeName |裝置類型： |
+| DeviceTypeName |裝置類型 |
 
 ## <a name="example"></a>範例
 
@@ -319,7 +320,7 @@ ms.lasthandoff: 01/30/2018
 | DateKey | 指出當日的日期資料表參考。 |
 | DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼之裝置資料表的參考。 |
 | DeviceModel |裝置的型號。 |
-| 作業系統 |裝置的作業系統。 |
+| OS |裝置的作業系統。 |
 | DeviceName |允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不能提供所有裝置使用。 |
 | SoftwareVersion |在大部分情況下，這是作業系統版本，與作業系統版本不同的 Apple 平台除外。 |
 | Imei |IMEI 編號 |

@@ -1,24 +1,25 @@
 ---
-title: "IntuneManagementExtension 實體 | Microsoft Docs"
-description: "Intune 資料倉儲 API 中實體集合的 IntuneManagementExtension 實體類別參考主題。"
-keywords: "Intune 資料倉儲"
+title: IntuneManagementExtension 實體
+titlesuffix: Microsoft Intune
+description: Intune 資料倉儲 API 中實體集合的 IntuneManagementExtension 實體類別參考主題。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93a5fde5f0c6ac870104ab90035e119757064cb3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 74c6868caace323699e4c84ddc90278dadb56b6a
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 管理延伸模組的參考
 

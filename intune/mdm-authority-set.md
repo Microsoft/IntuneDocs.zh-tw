@@ -1,25 +1,25 @@
 ---
-title: "設定行動裝置管理授權單位"
+title: 設定行動裝置管理授權單位
 titlesuffix: Microsoft Intune
-description: "在 Intune 中設定行動裝置管理授權單位。"
-keywords: 
+description: 在 Intune 中設定行動裝置管理授權單位。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4d91d00995d821b14b3b2a04681b4c57258a7c0
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -40,7 +40,8 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="set-mdm-authority-to-intune"></a>將 MDM 授權單位設為 Intune
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選擇 [更多服務] > [監視 + 管理] > [Intune]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。
 3. 在 [行動裝置管理授權單位] 下，從下列選項中選擇您的 MDM 授權單位：
   - **Intune MDM 授權單位**
@@ -59,7 +60,7 @@ ms.lasthandoff: 03/05/2018
 - **iOS** - (必要) [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)，然後[啟用公司擁有之 iOS 裝置的註冊](ios-enroll.md) (選擇性)。
 - **Android** - (選擇性) [啟用 Android 工作設定檔](android-enroll.md)
 - **Windows** - (選擇性) 啟用[自動註冊](windows-enroll.md)或[大量註冊](windows-bulk-enroll.md)
-- **macOS** - 沒有任何需求
+- **macOS** - (必要) [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 憑證到期後的行動裝置清除

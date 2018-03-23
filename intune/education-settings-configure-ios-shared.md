@@ -1,25 +1,25 @@
 ---
-title: "iOS Classroom 應用程式的 Intune 共用裝置設定"
-titlesuffix: Azure portal
-description: "了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。"
-keywords: 
+title: iOS Classroom 應用程式的 Intune 共用裝置設定
+titleSuffix: Microsoft Intune
+description: 了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4924d01c6f5d423b7c553d11eea065534179fe5f
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何設定共用 iPad 裝置的 Intune 教育設定
 
@@ -48,7 +48,6 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 
 - [CSV 檔案](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - 手動匯出並編譯逗號分隔值 (.csv) 檔案
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - 簡化 Azure AD 同步流程的 SIS 提供者
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - 直接與 Azure AD 進行同步處理的身分識別管理解決方案
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - 您可以匯出並轉換成此種 CSV 格式以便與 Azure AD 同步
 
 ### <a name="find-out-more"></a>深入了解

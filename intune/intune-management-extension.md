@@ -1,24 +1,25 @@
 ---
-title: "在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼"
-titlesuffix: Azure portal
-description: "了解如何在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。"
-keywords: 
+title: 在 Microsoft Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
+titlesuffix: ''
+description: 了解如何在 Microsoft Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。

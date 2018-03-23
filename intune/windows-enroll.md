@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 設定 Windows 裝置的註冊"
-titlesuffix: 
-description: "設定 Windows 裝置的註冊。"
-keywords: 
+title: 使用 Microsoft Intune 設定 Windows 裝置的註冊
+titlesuffix: ''
+description: 設定 Windows 裝置的註冊。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -85,6 +85,9 @@ DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播
 > 使用者必須透過 Microsoft Edge 存取公司入口網站，檢視針對特定 Windows 版本指派的 Windows 應用程式。 其他瀏覽器，包括 Google Chrome、Mozilla Firefox 和 Internet Explorer 均不支援這種篩選。
 
 如需使用者註冊指示，請參閱[在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 您也可以告訴使用者檢閱[我的 IT 系統管理員可以在我的裝置上看到哪些資訊](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。
+
+>[!IMPORTANT]
+> 如果您未啟用 Auto-MDM 註冊，但您的 Windows 10 裝置已加入至 Azure AD，則會在註冊之後於 Intune 主控台中顯示兩筆記錄。 停止方式是使用相同的帳戶確定具有加入 Azure AD 之裝置的使用者移至 [帳戶] > [Access work or school] (存取工作或學校) 和 [連線]。 
 
 如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)。
 

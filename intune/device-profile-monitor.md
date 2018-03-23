@@ -1,25 +1,25 @@
 ---
-title: "如何以 Intune 監視裝置設定檔"
-titlesuffix: Azure portal
-description: "了解如何監視指派的 Intune 裝置設定檔。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 如何以 Intune 監視裝置設定檔
+titlesuffix: Microsoft Intune
+description: 了解如何監視指派的 Microsoft Intune 裝置設定檔。
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7483d2568ef3a43b7774916ef0a5f8f9b4540e4e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中監視裝置設定檔
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/23/2018
 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
 2. 在 [裝置設定] 刀鋒視窗的 [管理] 區段下，選擇 [設定檔]。
 2. 在設定檔刀鋒視窗清單中，選擇您要管理的設定檔，然後︰

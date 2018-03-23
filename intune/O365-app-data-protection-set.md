@@ -1,28 +1,28 @@
 ---
-title: "在 Intune 中設定 Office 365 應用程式的基本資料管理"
-titlesuffix: Azure portal
-description: "管理 Office 365 應用程式精靈的支援文件。"
-keywords: 
+title: Microsoft Intune 中的 Office 365 應用程式資料管理
+titlesuffix: ''
+description: 了解 Microsoft Intune 中的 Office 365 應用程式資料管理。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>您的使用者將如何體驗受管理 Office 365 應用程式的基本保護
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>您的使用者將如何體驗 Microsoft Intune 中受控 Office 365 應用程式的基本保護
 
 [管理 Office 365 應用程式精靈] 會建立每個裝置平台的應用程式保護原則。
 
@@ -46,30 +46,30 @@ ms.lasthandoff: 02/27/2018
 
 ## <a name="user-experience-on-an-ios-device"></a>iOS 裝置上的使用者體驗
 
-1. 啟動商務用 OneDrive 應用程式，以開啟登入頁面。  <br/> ![iOS 版 OneDrive 登入畫面的影像](./media/onedrive-ios-sign-in.png)
-2. 輸入您的工作帳戶使用者名稱。 您會被重新導向至 Office 365 驗證 頁面輸入您的工作認證。 <br/> ![Office 365 登入頁面的影像](./media/o365-sign-in-ios.png)
-3. 當您的認證成功通過 Azure Active Directory 驗證之後，會套用應用程式保護原則，而且會要求您重新啟動商務用 OneDrive 應用程式。  <br/>![iOS 的重新啟動提示影像](./media/ios-restart-prompt.png)    
+1. 啟動商務用 OneDrive 應用程式，以開啟登入頁面。  
+2. 輸入您的工作帳戶使用者名稱。 您會被重新導向至 Office 365 驗證 頁面輸入您的工作認證。 
+3. 當您的認證成功通過 Azure Active Directory 驗證之後，會套用應用程式保護原則，而且會要求您重新啟動商務用 OneDrive 應用程式。 
+
   > [!NOTE]
   > 只有未向 Intune 註冊的裝置上才會顯示 [需要重新啟動] 訊息。
 
+4. 重新啟動商務用 OneDrive 應用程式。 應用程式啟動時，應用程式保護原則會隨即開啟，並會提示您設定裝置的 PIN 碼 (若裝置還未設定 PIN 碼)。  
 
-4. 重新啟動商務用 OneDrive 應用程式。 應用程式啟動時，應用程式保護原則會隨即開啟，並會提示您設定裝置的 PIN 碼 (若裝置還未設定 PIN 碼)。 <br/> ![提示建立 PIN 碼的影像](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > 大部分使用者都不會看到此提示。 只有 iOS 裝置還未啟用 PIN 碼的使用者會看到此提示。
 
-
-5. 當您設定並確認 PIN 碼之後，請回到商務用 OneDrive。 您會看到一則通知指出您的 IT 系統管理員已在保護 OneDrive 中的工作資料；此通知只會顯示一次。 <br/> ![從您的 IT 系統管理員發出只會顯示一次的通知映像](./media/one-time-notice.png)
-6. 按一下略過此通知之後，即可開始存取您商務用 OneDrive 上的檔案。 <br/> ![iOS 裝置上 OneDrive 檔案的影像](./media/onedrive-files-ios.png) <br/>
+5. 當您設定並確認 PIN 碼之後，請回到商務用 OneDrive。 您會看到一則通知指出您的 IT 系統管理員已在保護 OneDrive 中的工作資料；此通知只會顯示一次。 
+6. 按一下略過此通知之後，即可開始存取您商務用 OneDrive 上的檔案。 
 
 >[!NOTE]
 >當您變更已部署的原則時，會在下次開啟應用程式時套用這些變更。
-
 
 ## <a name="user-experience-on-an-android-device"></a>Android 裝置上的使用者體驗
 
 1. 啟動商務用 OneDrive 應用程式，以開啟登入頁面。  <br/> ![OneDrive 應用程式歡迎畫面的影像](./media/onedrive-android-welcome.png)
 2. 輸入您的工作帳戶使用者名稱。 您會被重新導向至 Office 365 驗證 頁面輸入您的工作認證。 <br/> ![Android 上的 O365 登入影像](./media/o365-sign-in-android.png)
-3. 當您的認證成功通過 Azure AD 驗證之後，若裝置上還未安裝公司入口網站應用程式，將會顯示一則訊息指示您加以安裝。 點選 [移至市集] 以繼續。 <br/> ![取得公司入口網站應用程式訊息的影像](./media/get-company-portal-android.png) <br/>若您的手機上已有安裝公司入口網站應用程式，商務用 OneDrive 將會自動啟動，您可以跳到結尾的注意事項。    
+3. 當您的認證成功通過 Azure AD 驗證之後，若裝置上還未安裝公司入口網站應用程式，將會顯示一則訊息指示您加以安裝。 點選 [移至市集] 以繼續。 <br/> ![取得公司入口網站應用程式訊息的影像](./media/get-company-portal-android.png) <br/>若您的手機上已有安裝公司入口網站應用程式，商務用 OneDrive 將會自動啟動，您可以跳到結尾的注意事項。   
+
   > [!IMPORTANT]
   > 在 Android 上，當您將 Office 應用程式設定成交由應用程式保護原則管理之後，裝置使用者**必須**安裝公司入口網站應用程式，才能存取工作電子郵件及文件，不過終端使用者不需要開啟或登入應用程式來實際讀取電子郵件或文件。
 
@@ -128,4 +128,4 @@ iOS 與 Android 的加密運作方式不相同。
 ![檢視原則的使用者介面路徑影像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>接下來的步驟
-深入了解[應用程式保護原則](app-protection-policy.md)。
+- 深入了解[應用程式保護原則](app-protection-policy.md)。

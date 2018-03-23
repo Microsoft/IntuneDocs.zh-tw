@@ -1,25 +1,25 @@
 ---
-title: "註冊 iOS 裝置 - 裝置註冊方案"
-titlesuffix: Azure portal
-description: "了解如何使用裝置註冊計劃來註冊公司擁有的 iOS 裝置 (新 UI)。"
-keywords: 
+title: 註冊 iOS 裝置 - 裝置註冊方案
+titleSuffix: Microsoft Intune
+description: 了解如何使用裝置註冊計劃來註冊公司擁有的 iOS 裝置 (新 UI)。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48b74b81c9f3f8b9c936ae22a343ccfb565b4ec1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -151,7 +151,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
 11. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | Setting | 說明 |
+    | 設定 | 說明 |
     | --- | --- |
     | **部門名稱** | 使用者在啟用期間點選 [關於設定] 時顯示。 |
     | **部門電話** | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |

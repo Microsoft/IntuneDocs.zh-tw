@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK for Android 開發人員指南"
-description: "Microsoft Intune App SDK for Android 可讓您將 Intune 行動應用程式管理 (MAM) 併入 Android 應用程式中。"
+title: Microsoft Intune App SDK for Android 開發人員指南
+description: Microsoft Intune App SDK for Android 可讓您將 Intune 行動應用程式管理 (MAM) 併入 Android 應用程式中。
 keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53f0d46fa1a9452b7a0cc1e243373f21556f5fb6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -57,7 +57,7 @@ Intune App SDK for Android 必須仰賴裝置上的[公司入口網站](https://
 > [!NOTE]
 > 當裝置上沒有公司入口網站應用程式時，Intune 的受控應用程式會具有和不支援 Intune 應用程式保護原則的一般應用程式相同的行為。
 
-對於沒有裝置註冊的應用程式保護，使用者「不」需要使用公司入口網站應用程式註冊裝置。
+對於沒有裝置註冊的應用程式保護，使用者「不」__需要使用公司入口網站應用程式註冊裝置。
 
 ## <a name="sdk-integration"></a>SDK 整合
 
@@ -685,7 +685,7 @@ android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackup
 
 3. 當您決定應用程式應該接收的完整備份類型 (未篩選、已篩選或無) 時，您必須將將屬性 `android:fullBackupContent` 設定為 true、false，或您應用程式中的 XML 資源。
 
-4. 接著，您「必須」將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
+4. 接著，您「必須」__將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
 
     **範例 1**：如果您想要讓應用程式具有完整備份並不排除任何內容，請將 `android:fullBackupContent` 屬性和 `com.microsoft.intune.mam.FullBackupContent` Metadata 標記設定為 **true**：
 
@@ -1168,7 +1168,7 @@ public final class MAMDataProtectionManager {
 
 如果應用程式註冊 `WIPE_USER_DATA` 通知，它將無法取得 SDK 預設選擇性抹除行為的好處。 針對感知多重身分識別的應用程式，此影響可能更為明顯，因為 MAM 預設選擇性抹除只會抹除其身分識別為抹除目標的檔案。
 
-若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式一律不應同時註冊 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
+若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」__想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式一律不應同時註冊 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>啟用 Android 應用程式的 MAM 目標設定 (選擇性)
 您可在 Intune 主控台中設定應用程式特定的機碼值組。 Intune 完全不解譯這些機碼值組，僅傳遞給應用程式。 想要接收這類設定的應用程式可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 類別來執行作業。 如有多個原則以相同的應用程式為目標，相同的機碼可能會有多個衝突值。
@@ -1311,7 +1311,7 @@ public interface MAMAppConfig {
 應用程式設定新增新的通知類型：
 * **REFRESH_APP_CONFIG**：這個通知是在 `MAMUserNotification` 中傳送，通知應用程式，確定應用程式有新的應用程式設定資料可用。
 
-如需圖形 API 功能關於 MAM 目標設定值的詳細資訊，請參閱 [圖形 API 參考 MAM 目標設定]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
+如需圖形 API 功能的詳細資訊，請參閱[圖形 API 參考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
 
 如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-use-android)中有關 MAM 目標應用程式設定的一節。
 

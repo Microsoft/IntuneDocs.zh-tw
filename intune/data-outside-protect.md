@@ -1,25 +1,27 @@
 ---
-title: "防止未經授權的公司資料存取"
-description: "當公司資料在公司網路外部共用時，防止發生未經授權的存取。"
-keywords: "Office 365 O365 Azure 資訊保護會保護外部網路的公司資料"
-author: arob98
+title: 防止未經授權的公司資料存取
+titlesuffix: Microsoft Intune
+description: 當公司網路外部共用公司資料時，使用 Microsoft Intune 防止對其發生未經授權的存取。
+keywords: Office 365 O365 Azure 資訊保護會保護外部網路的公司資料
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>防止未經授權的公司資料存取 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止未經授權的公司資料存取
 
 您可以分類、標記及保護 Office 365 文件和電子郵件，這樣就只有授權使用者才能存取資料。 IT 系統管理員或使用者設定了規則和條件後，系統就會自動管理設定。 或者，IT 小組可以提供建議的設定供使用者遵循。 系統管理員和使用者也可以撤銷已與其他人共用之資料的存取權，而無須另一個授權單位的協助。 這樣做的結果是，即使資料已離開公司的網路，也能控制開啟或更新受保護資料的人員。 
 
@@ -44,5 +46,5 @@ ms.lasthandoff: 01/25/2018
 
 在接下來的步驟中，您可以深入了解提高公司資料保護的其他方式，包含： 
 
-* 了解如何使用 [iOS 和 Android 裝置上的 Azure 資訊保護](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
+* 了解如何使用 [iOS 和 Android 裝置上的 Azure 資訊保護](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq。
 * 若為 Windows Phone 和 Mac 電腦，請參閱 [Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/dn451248)。

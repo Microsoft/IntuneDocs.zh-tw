@@ -1,25 +1,25 @@
 ---
-title: "適用於 iOS Classroom 應用程式的 Intune 設定"
-titlesuffix: Azure portal
-description: "了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。"
-keywords: 
+title: 適用於 iOS Classroom 應用程式的 Intune 設定
+titleSuffix: Microsoft Intune
+description: 了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 063287ac1bf3441092ff7c9daea5102314384b7d
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 
@@ -59,7 +59,6 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 
 - [CSV 檔案](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - 手動匯出並編譯逗號分隔值 (.csv) 檔案
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - 簡化 Azure AD 同步流程的 SIS 提供者
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - 直接與 Azure AD 進行同步處理的身分識別管理解決方案
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - 您可以匯出並轉換成此種 CSV 格式以便與 Azure AD 同步
 
 ### <a name="find-out-more"></a>深入了解
@@ -73,11 +72,11 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 ### <a name="configure-general-settings"></a>設定一般設定
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [裝置設定]。
 2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
 5.  在 [設定檔] 窗格中，選擇 [建立設定檔]。
-6.  在 [建立設定檔] 窗格中，為 iOS 教育設定檔輸入 [名稱] 及 [描述]。
+6.  在 [建立設定檔] 窗格中，輸入 iOS 教育設定檔的 [名稱] 和 [描述]。
 7.  從 [平台] 下拉式清單中，選擇 [iOS]。
 8.  從 [設定檔類型] 下拉式清單中，選擇 [教育]。
 9.  選擇 [設定]  >  [設定]。
@@ -94,7 +93,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ### <a name="configure-teacher-certificates"></a>設定老師憑證
 
-在 [教育] 窗格中，選擇 [老師憑證]。
+在 [教育] 窗格中，選擇 [教師憑證]。
 
 #### <a name="configure-teacher-root-certificate"></a>設定老師根憑證
 

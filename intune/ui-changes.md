@@ -1,25 +1,25 @@
 ---
-title: "我的 Intune 功能移到 Azure 中的哪個位置？"
-titlesuffix: Azure portal
-description: "協助您在 Azure 入口網站中尋找 Intune 功能。"
-keywords: 
-author: dagerrit
-ms.author: dagerrit
+title: 我的 Intune 功能移到 Azure 中的哪個位置？
+titleSuffix: Microsoft Intune
+description: 協助您在 Azure 入口網站中尋找 Microsoft Intune 功能。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00f45d9a126e76c45712c6483b458f935e6d0021
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對已經十分熟悉傳統入口網站中 Intune 的使用者，但是想知道 Azure 入口網站中 Intune 的操作步驟，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。

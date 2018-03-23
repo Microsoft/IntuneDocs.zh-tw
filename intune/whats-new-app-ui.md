@@ -1,35 +1,30 @@
 ---
-title: "Intune 終端使用者應用程式的 UI 更新"
-description: "了解在與 Intune 搭配使用之終端使用者裝置上運作的應用程式 UI 變更。"
-keywords: 
+title: Intune 終端使用者應用程式的 UI 更新
+titlesuffix: Microsoft Intune
+description: 了解在與 Microsoft Intune 搭配使用之終端使用者裝置上運作的應用程式 UI 變更。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
-了解我們針對您的使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 這可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
+了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
-## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日當週
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>帳戶的終端使用者傳訊 <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-「公司入口網站」網站的使用者將無法執行需要您租用戶寫入存取權的動作。 這些使用者將會看到適當的錯誤訊息，說明其帳戶正在維護中。 相同的變更也即將在 Android、iOS、macOS 與 Windows 版「公司入口網站」應用程式上套用。
-
-![在帳戶移動期間發生的錯誤訊息](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日當週
 
@@ -121,7 +116,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司入口網站應用程式中更易了解的措辭 <!---1396349--->  
 
-Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
+Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓終端使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
 |之前|在|
 |---|---|
@@ -189,7 +184,7 @@ Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下�
 
 __舊版登入體驗__
 
-![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_before_1704_001.png)
+![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 [登入] 按鈕在下方。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![點選 [登入] 之後，使用者會在此頁面上輸入其認證，此頁面會要求輸入使用者的電子郵件和密碼，以及提供解決密碼失敗的方法。](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -213,7 +208,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ![系統會顯示使用唯一密碼從工作電腦移至 aka.ms/devicelogin 頁面，並使用驗證碼進行登入的指示。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-啟動瀏覽器並移至 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
+啟動瀏覽器，並移至 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
 
 ![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ## <a name="june-2017"></a>2017 年 6 月
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 公司入口網站應用程式的應用程式保護原則現在有了新的使用者體驗<!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Android 公司入口網站應用程式的應用程式防護原則現在有新的使用者體驗
 根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，以顯示 [存取公司內容] 按鈕。 目的是為了防止使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。
 
 使用者將點選 [存取公司內容] 按鈕，而非開始註冊裝置。
@@ -261,7 +256,7 @@ Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊
 
 ![Windows 10 公司入口網站應用程式設定頁面的影像，警告使用者他們需要將公司帳戶新增到此裝置，然後可以註冊它以接受管理。](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Windows 10 公司入口網站應用程式已將公司帳戶新增到此裝置頁面的影像，告知使用者他們需要移至設定應用程式，然後選取 [連接] 以完成註冊。 這麼做之後，畫面會告知使用者他們必須返回公司入口網站應用程式，以完成註冊。](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Windows 10 公司入口網站應用程式已將公司帳戶新增到此裝置頁面的影像，告知使用者他們需要移至設定應用程式，然後選取 [連線] 以完成註冊。 這麼做之後，畫面會告知使用者他們必須返回公司入口網站應用程式，以完成註冊。](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Windows 10 公司入口網站應用程式註冊以接受管理畫面的影像，其中顯示完成的狀態訊息，指出使用者的裝置現在已註冊，以及他們應點選 [下一步] 按鈕以繼續。](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -322,13 +317,13 @@ Android 公司入口網站應用程式的更新會在使用者啟動或繼續執
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 > [!Note]
 > 請注意，下列影像為預覽，宣告的產品可能與展示版本不同。
 
+### <a name="ui-iwp"></a>公司入口網站的新使用者體驗更新 <!--2000968-->
+
+我們將在四月引進新的公司入口網站體驗，以及 UI 更新、簡化的工作流程和協助工具改善。 這將包含客戶驅動的增強功能，例如應用程式共用和改善的整體效能，讓您擁有更方便使用的體驗。
+
+我們已根據像您這類客戶的意見新增一些新功能，大幅改善現有功能和可用性：
+
+-   整個網站的 UI 增強功能
+-   可以共用應用程式的直接連結
+- 改善的大型應用程式目錄效能
+
+您不需要採取任何動作即可準備這項變更。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最後可能需要使用更新過的螢幕擷取畫面來更新終端使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。
+
+|已更新|上一頁|
+|---|---|
+|![更新過的裝置頁面會在裝置資訊正上方顯示裝置，不再跳出在完整清單上方。](./media/iwp-device-after-1803.png)|![舊版的裝置頁面。](./media/iwp-device-before-1803.png)|
+|![更新過的應用程式安裝頁面會顯示描述正上方的應用程式和各種安裝資訊，包含應用程式的發佈日期、版本和類型。](./media/iwp-app-install-after-1803.png)|![舊版的應用程式安裝頁面。](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!--1412866-->
 
 我們將發行 iOS 版公司入口網站應用程式的重大使用者體驗更新。 此項更新的重點是全面視覺效果的重新設計，包括提高使用性和存取範圍的現代化外觀及操作。 保留目前所有的 iOS 公司入口網站功能。
 
-我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 請在 https://aka.ms/intune_ios_cp_testflight 註冊存取 TestFlight。
+我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 註冊於 https://aka.ms/intune_ios_cp_testflight，以進行 TestFlight 存取。 如需這項更新的最新資訊，請參閱 https://aka.ms/iOS_companyportal_update。
 
 ![新 ios 公司入口網站應用程式的預告片影像](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __精選 App 的更新__：我們已將專用頁面新增至網站 (使用者可
 
 ### <a name="see-also"></a>另請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [雲端平台藍圖](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [雲端平台藍圖](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune 的新功能](https://docs.microsoft.com/intune/whats-new)

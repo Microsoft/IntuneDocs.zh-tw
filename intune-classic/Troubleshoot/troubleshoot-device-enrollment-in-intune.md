@@ -1,25 +1,25 @@
 ---
-title: "裝置註冊疑難排解"
-description: "裝置註冊問題的疑難排解建議。"
-keywords: 
+title: 裝置註冊疑難排解
+description: 裝置註冊問題的疑難排解建議。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/05/2018
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
 
-1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [系統管理] &gt; [Azure AD]。
+1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [Admin] &gt; [Azure AD]。
 
 2.  利用頁面左側連結，以您的組織識別碼登入。
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 01/05/2018
 
 1.  從裝置移除 Intune 公司入口網站應用程式。
 
-2.  在裝置上開啟瀏覽器，瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後嘗試使用者登入。
+2.  在裝置上，開啟瀏覽器，並瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後嘗試使用者登入。
 
 3.  如果使用者無法登入，請其嘗試其他網路。
 
@@ -165,8 +165,8 @@ ms.lasthandoff: 01/05/2018
 
 |錯誤訊息|問題|解決方案|
 |---|---|---|
-|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 請向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型錯誤，不能用於指定的行動裝置管理授權單位。 例如，如果已指定 Intune 做為行動裝置管理授權單位，而他們使用的是 System Center 2012 R2 Configuration Manager 授權，他們就會發現這個錯誤。<br><br>相關資訊請參閱如何[將 Intune 授權指派給使用者帳戶](/intune/licenses-assign.md)。
-|**IT 系統管理員需要設定 MDM 授權單位**<br>您的 IT 管理員似乎尚未設定 MDM 授權單位。 請向您的 IT 管理員尋求協助，或稍後再試。|尚未定義行動裝置管理授權單位。|尚未在 Intune 中指定行動裝置管理授權單位。 如需相關資訊，請參閱如何[設定行動裝置管理授權單位](/intune/mdm-authority-set.md)。|
+|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 請向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型錯誤，不能用於指定的行動裝置管理授權單位。 例如，如果已指定 Intune 做為行動裝置管理授權單位，而他們使用的是 System Center 2012 R2 Configuration Manager 授權，他們就會發現這個錯誤。<br><br>相關資訊請參閱如何[將 Intune 授權指派給使用者帳戶](/intune/licenses-assign)。
+|**IT 系統管理員需要設定 MDM 授權單位**<br>您的 IT 管理員似乎尚未設定 MDM 授權單位。 請向您的 IT 管理員尋求協助，或稍後再試。|尚未定義行動裝置管理授權單位。|尚未在 Intune 中指定行動裝置管理授權單位。 如需相關資訊，請參閱如何[設定行動裝置管理授權單位](/intune/mdm-authority-set)。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」
@@ -332,7 +332,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 2.  確認未向其他 MDM 提供者註冊裝置，而且裝置尚未安裝管理設定檔。
 
-3.  請瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，並在出現提示時嘗試安裝設定檔。
+3.  巡覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
 
 4.  確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
@@ -377,7 +377,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 註冊錯誤
-在[您在 Intune 嘗試註冊裝置時看到錯誤](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)的裝置使用者文件中提供 iOS 註冊錯誤清單。
+[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解) 這份文件提供 iOS 註冊錯誤清單。
 
 ## <a name="pc-issues"></a>電腦問題
 

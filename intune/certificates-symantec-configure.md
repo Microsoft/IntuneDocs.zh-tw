@@ -1,25 +1,25 @@
 ---
-title: "透過 Intune 核發 Symantec PKCS 憑證"
-titlesuffix: Azure portal
-description: "安裝並設定 Intune 憑證連接器，以從 Symantec PKI Manager Web 服務向受 Intune 管理的裝置核發 PKCS 憑證"
-keywords: 
-author: MicrosoftGuyJFlo
-ms.author: joflore
+title: 透過 Microsoft Intune 核發 Symantec PKCS 憑證
+titlesuffix: ''
+description: 安裝並設定 Intune 憑證連接器，以從 Symantec PKI Manager Web 服務向受 Intune 管理的裝置核發 PKCS 憑證。
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1fbb0ccd21ff15cf86656d7badf08002f1e42bb3
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>針對 Symantec PKI Manager Web 服務設定 Intune 憑證連接器
 
@@ -306,7 +306,7 @@ Intune 憑證連接器服務記錄可於 NDES 連接器電腦上的 `%ProgramFil
 
 | 問題/錯誤訊息 | 解決步驟 |
 | --- | --- |
-| 無法在 NDES 連接器 UI 上使用 Intune 租用戶系統管理員帳戶登入 | 當內部部署憑證連接器沒有在 Intune 系統管理入口網站中啟用時，便可能發生此情況。 若要解決此問題，請使用下列步驟： <br><br> 從 Silver Light UI： <br> 1.登入 [Intune 系統管理入口網站](https://admin.manage.microsoft.com) <br> 2.按一下 [管理員] <br> 3.選取 [行動裝置管理] > [憑證連接器] <br> 4.按一下 [設定內部部署憑證連接器] <br> 5.選取 [啟用憑證連接器] 核取方塊 <br> 6.按一下 [ **確定**]。 <br><br>或是 <br><br> 從 Azure 入口網站 UI： <br> 1.登入 [Azure 入口網站](https://portal.azure.com) <br> 2.移至 [Microsoft Intune] <br> 3.選取 [裝置設定] > [憑證授權單位] <br> 4.按一下 [啟用]。 <br><br> 從 Silver Light UI 或 Azure 入口網站完成上述步驟之後，請嘗試在 NDES 連接器 UI 中使用相同的 Intune 租用戶系統管理員帳戶登入。 |
+| 無法在 NDES 連接器 UI 上使用 Intune 租用戶系統管理員帳戶登入 | 當內部部署憑證連接器沒有在 Intune 系統管理入口網站中啟用時，便可能發生此情況。 若要解決此問題，請使用下列步驟： <br><br> 從 Silver Light UI： <br> 1.登入 [Intune 系統管理入口網站](https://admin.manage.microsoft.com) <br> 2.按一下 [管理員] <br> 3.選取 [行動裝置管理] > [憑證連接器] <br> 4.按一下 [設定內部部署憑證連接器] <br> 5.選取 [啟用憑證連接器] 核取方塊 <br> 6.按一下 [確定]。 <br><br>或是 <br><br> 從 Azure 入口網站 UI： <br> 1.登入 [Azure 入口網站](https://portal.azure.com) <br> 2.移至 [Microsoft Intune] <br> 3.選取 [裝置設定] > [憑證授權單位] <br> 4.按一下 [啟用]。 <br><br> 從 Silver Light UI 或 Azure 入口網站完成上述步驟之後，請嘗試在 NDES 連接器 UI 中使用相同的 Intune 租用戶系統管理員帳戶登入。 |
 | 找不到 NDES 連接器憑證。 <br><br> System.ArgumentNullException: 值不可以是 Null。 | 如果 Intune 租用戶系統管理員帳戶從未登入 NDES 連接器 UI，Intune 憑證連接器便會顯示此錯誤。 <br><br> 如果此錯誤持續發生，請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 services.msc <br> 2.選取 [Intune 連接器服務]。 <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]。|
 | NDES 連接器 - IssuePfx - 一般例外狀況： <br> System.NullReferenceException: 物件參考未設定至物件的執行個體。 | 這是暫時性的錯誤。 請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 services.msc <br> 2.選取 [Intune 連接器服務] <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]。 |
 | Symantec 提供者 - 無法取得 Symantec 原則「作業逾時」 | Intune 憑證連接器在與 Symantec CA 通訊期間接收到作業逾時錯誤。 如果此錯誤持續發生，請提升連線逾時值並再試一次。 <br><br> 嘗試提升連線逾時： <br> 1.移至 NDES 連接器電腦。 <br>2.在 [記事本] 中開啟 `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` 檔案。 <br> 3.提升下列參數的逾時值： <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新啟動 Intune 連接器服務。 <br><br> 如果此問題持續發生，請連絡 Symantec 客戶服務。 |

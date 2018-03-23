@@ -1,25 +1,26 @@
 ---
-title: "在 Intune 移轉期間設定裝置合規性與應用程式管理原則"
-description: "本文提供 Intune 移轉期間設定裝置相容性與應用程式管理原則的必要步驟。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: 在 Intune 移轉期間設定裝置合規性與應用程式管理原則
+titlesuffix: Microsoft Intune
+description: 本文提供 Microsoft Intune 移轉期間設定裝置合規性和應用程式管理原則的必要步驟。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>設定裝置合規性與應用程式管理原則
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>移轉至 Microsoft Intune 時設定裝置合規性和應用程式管理原則
 
 移轉至 Intune 時的主要目標，是在 Intune 中註冊所有裝置，並使它們符合自身原則的規範。 裝置原則不僅可協助您管理公司擁有的單一使用者裝置，還包括個人 (BYOD) 和共用裝置，例如 Kiosk、銷售點的電腦、教室裡多個學生共用的平板電腦或無使用者裝置 (僅限 iOS)。
 

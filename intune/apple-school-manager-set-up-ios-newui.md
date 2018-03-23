@@ -1,25 +1,25 @@
 ---
-title: "設定 Apple School Manager 註冊計劃註冊 iOS 裝置"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 為公司擁有的 iOS 裝置設定 Apple School Manager 計劃註冊 (新 UI)\""
-keywords: 
+title: 設定 Apple School Manager 註冊計劃註冊 iOS 裝置
+titleSuffix: Microsoft Intune
+description: 了解如何使用 Intune 為公司擁有的 iOS 裝置設定 Apple School Manager 計劃註冊 (新 UI)。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c9ef9355299a18833999c1c4eee941a0b6c68de
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -130,7 +130,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 11. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | Setting | 說明 |
+    | 設定 | 說明 |
     | --- | --- |
     | **部門名稱** | 使用者在啟用期間點選 [關於設定] 時顯示。 |
     | **部門電話** | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |

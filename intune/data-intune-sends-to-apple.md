@@ -1,25 +1,25 @@
 ---
-title: "Intune 傳送至 Apple 的資料"
-titlesuffix: Azure portal
-description: "Intune 傳送至 Apple 的資料清單。"
-keywords: 
+title: Intune 傳送至 Apple 的資料
+titleSuffix: Microsoft Intune
+description: Intune 傳送至 Apple 的資料清單。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d23fdce58b9ef35fe292ca6570904320e0922f16
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: c247cfbd715368f65dfb1ba2ce8b5e88a491d302
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune 傳送至 Apple 的資料
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 - [Apple 裝置註冊方案 (DEP)](device-enrollment-program-enroll-ios.md)
 - [Apple MDM Push Certificate (APNS)](apple-mdm-push-certificate-get.md)
-- [Apple School Manager (ASM)](https://docs.microsoft.com/en-us/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync.md)
+- [Apple School Manager (ASM)](https://docs.microsoft.com/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync)
 - [Apple 大量採購方案 (VPP)](vpp-apps-ios.md)
 
 您必須先為每個 Apple 服務建立 Apple 帳戶，Microsoft Intune 才能建立連線。

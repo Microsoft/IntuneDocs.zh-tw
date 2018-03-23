@@ -1,24 +1,24 @@
 ---
-title: "使用 Intune App Wrapping Tool 包裝 Android 應用程式"
-description: "了解如何包裝 Android 應用程式，而不需要變更應用程式本身的程式碼。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。"
-keywords: 
+title: 使用 Intune App Wrapping Tool 包裝 Android 應用程式
+description: 了解如何包裝 Android 應用程式，而不需要變更應用程式本身的程式碼。 準備應用程式，以便您可以套用行動裝置應用程式管理原則。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -30,8 +30,6 @@ ms.lasthandoff: 03/05/2018
 
 
 執行此工具之前，請檢閱[執行 App Wrapping Tool 的安全性考量](#security-considerations-for-running-the-app-wrapping-tool)。 若要下載此工具，請前往 GitHub 的 [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)。
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>滿足使用 App Wrapping Tool 的必要條件
 
@@ -51,6 +49,8 @@ ms.lasthandoff: 03/05/2018
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 您最好安裝 64 位元版本。
 
 - Android 要求所有應用程式套件 (.apk) 均已簽署。 若要**重複使用**現有憑證和整個簽署憑證指引，請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 使用 Java 可執行檔 keytool.exe 產生簽署包裝輸出應用程式所需的**新**認證。 任何設定的密碼都必須安全，但請記下密碼，因為執行 App Wrapping Tool 時會需要這些密碼。
+
+- (選擇性) 在輸入應用程式內啟用 Multidex。 應用程式有時可能會達到 Dalvik 可執行檔 (DEX) 大小限制，因為包裝期間新增 Intune MAM SDK 類別。 DEX 檔案是 Android 應用程式編譯的一部分。 在此情況下，最佳做法是在應用程式本身內啟用 Multidex。 在某些組織中，這可能需要與編譯應用程式的人員合作 (即應用程式建置小組)。 
 
 ## <a name="install-the-app-wrapping-tool"></a>安裝應用程式包裝工具
 
@@ -159,6 +159,7 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
+
 > [!NOTE] 
 > 與您應用程式繫結的「用戶端識別碼」一詞，和與您應用程式繫結的 Azure 入口網站「應用程式識別碼」一詞是相同的。 
 * 若要啟用 SSO，需要「一般 ADAL 設定」#2。

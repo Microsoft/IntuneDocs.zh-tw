@@ -1,25 +1,25 @@
 ---
-title: "使用 Managed Browser 應用程式管理 Web 存取"
+title: 使用 Managed Browser 應用程式管理 Web 存取
 titlesuffix: Microsoft Intune
-description: "部署 Managed Browser 應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。"
-keywords: 
-author: erikre
+description: 部署 Managed Browser 應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -35,7 +35,7 @@ Managed Browser 是網頁瀏覽應用程式，您可從公共應用程式市集�
 - 防止擷取螢幕畫面
 - 確保使用者選取的內容連結，只在其他受管理的應用程式中開啟。
 
-如需詳細資料，請參閱[什麼是應用程式保護原則？](/intune/app-protection-policy)
+如需詳細資料，請參閱[什麼是應用程式保護原則？](/intune/app-protection-policy.md)
 
 您可以套用這些設定至：
 
@@ -59,12 +59,52 @@ Managed Browser 不支援安全通訊端層版本 3 (SSLv3) 密碼編譯通訊�
 >較舊版本的 Android 和 iOS 能夠繼續使用 Managed Browser，但是無法安裝新版的應用程式，而且可能無法存取所有的應用程式功能。 建議您將這些裝置更新為受支援的作業系統版本。
 
 
-Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)開啟網路內容。
+Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)開啟網路內容。
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Intune Managed Browser 的條件式存取
+
+Managed Browser 現在是進行條件式存取的經過核准用戶端應用程式。 這表示您可以限制行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取，而在這些 Web 應用程式中，使用者只能使用 Managed Browser，並封鎖存取任何其他未受保護的瀏覽器 (如 Safari 或 Chrome)。 這項保護可以套用至 Azure 資源 (如 Exchange Online 和 SharePoint Online)、Office 入口網站，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)公開到外部使用者的內部部署網站。 
+
+若要限制 Azure AD 已連線 Web 應用程式在行動平台上使用 Intune Managed Browser，您可以建立需要經過核准之用戶端應用程式的 Azure AD 條件式存取原則。 
+
+1. 在 Azure 入口網站中，選取 [Azure Active Directory] > [企業應用程式][條件式存取] >  > [新增原則]。 
+2. 接下來，選取刀鋒視窗之 [存取控制] 區段中的 [授與]。 
+3. 按一下 [需要經過核准的用戶端應用程式]。 
+4. 按一下 [授與] 刀鋒視窗上的 [選取]。 此原則必須指派給您只想要讓 Intune Managed Browser 應用程式存取的雲端應用程式。
+
+    ![Azure AD - Managed Browser 條件式存取原則](./media/managed-browser-conditional-access-01.png)
+
+5. 在 [指派] 區段中，選取 [條件] > [用戶端應用程式]。 即會顯示 [用戶端應用程式] 刀鋒視窗。
+6. 按一下 [設定] 下的 [是]，將原則套用至特定用戶端應用程式。
+7. 驗證將 [瀏覽器] 選取為用戶端應用程式。
+
+    ![Azure AD - Managed Browser - 選取用戶端應用程式](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > 如果您想要限制哪些原生應用程式 (非瀏覽器應用程式) 可以存取這些雲端應用程式，則也可以選取 [行動裝置 App 及桌面用戶端]。
+
+8. 在 [指派] 區段中，選取 [使用者和群組]，然後選擇您想要指派此原則的使用者或群組。 
+
+    > [!NOTE]
+    > 使用者也必須設定進行 Intune 應用程式防護。 如需建立 Intune 應用程式防護原則詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)。
+
+9. 在 [指派] 區段中，選取 [雲端應用程式] 選擇要使用此原則保護的應用程式。
+
+設定上述原則之後，會強制使用者使用 Intune Managed Browser 存取您使用此原則保護的 Azure AD 已連線 Web 應用程式。 在此情況下，如果使用者嘗試使用非受控瀏覽器，則會注意到必須改為使用 Intune Managed Browser。
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Intune Managed Browser 中 Azure AD 已連線 Web 應用程式的單一登入
+
+iOS 和 Android 上的 Intune Managed Browser 應用程式現在可以利用所有 Azure AD 已連線 Web 應用程式 (SaaS 和內部部署) 的 SSO。 iOS 上存在 Microsoft Authenticator 應用程式或 Android 上存在 Intune 公司入口網站應用程式時，Intune Managed Browser 使用者可以存取 Azure AD 已連線 Web 應用程式，而不需要重新輸入其認證。
+
+Intune Managed Browser 中的 SSO 需要 iOS 上的 Microsoft Authenticator 應用程式或 Android 上的 Intune 公司入口網站註冊裝置。 如果另一個應用程式尚未註冊具有 Authenticator 應用程式或 Intune 公司入口網站的使用者的裝置，則這些使用者在 Intune Managed Browser 中巡覽至 Azure AD 已連線 Web 應用程式時，系統會提示他們註冊其裝置。 使用 Intune 所管理的帳戶註冊裝置之後，該帳戶也已啟用 Azure AD 已連線 Web 應用程式的 SSO。 
+
+> [!NOTE]
+> 裝置註冊是使用 Azure AD 服務的簡單簽入。 它不需要完整裝置註冊，而且不表示將裝置上的任何其他權限授與 IT。
 
 ## <a name="create-a-managed-browser-app-configuration"></a>建立 Managed Browser 應用程式設定
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3.  在 [管理] 清單的 [Mobile Apps] 刀鋒視窗中，選擇 [應用程式設定原則]。
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
 5.  在 [新增設定原則] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
@@ -102,7 +142,10 @@ Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft
     - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
 - Managed Browser 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
-注意：更新的應用程式 Proxy 重新導向資料，最多可能需要花費 24 小時才會在 Managed Browser 中生效。
+
+    > [!NOTE]
+    > 更新的應用程式 Proxy 重新導向資料，最多可能需要 24 小時才會在 Managed Browser 中生效。
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步驟 1：從 Outlook 啟用自動重新導向至 Managed Browser
 Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web 內容只在 Managed Browser 中顯示**。
@@ -115,6 +158,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 |金鑰|值|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+如需如何前後使用 Managed Browser 和 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (搭配使用最好：Intune 和 Azure Active Directory 合作以改善使用者存取)。
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>如何設定 Managed Browser 首頁
 
@@ -247,3 +291,7 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
 ### <a name="turn-off-usage-data"></a>關閉使用量資料
 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
+
+## <a name="next-steps"></a>接下來的步驟
+
+- [什麼是應用程式保護原則？](app-protection-policy.md)
