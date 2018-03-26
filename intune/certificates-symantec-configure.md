@@ -56,7 +56,7 @@ ms.lasthandoff: 03/17/2018
 
     a. 開啟 [控制台] > [程式和功能] > [開啟或關閉 Windows 功能]
 
-    b。 選取 [.NET Framework 3.5]，然後安裝它。
+    b. 選取 [.NET Framework 3.5]，然後安裝它。
 
 ## <a name="install-the-symantec-registration-authorization-certificate"></a>安裝 Symantec 註冊驗證憑證
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 03/17/2018
 
    a. 在指定的文字方塊中提供來自步驟 3 的 CSR 內容。
 
-   b。 在指定的文字方塊中提供憑證易記名稱。
+   b. 在指定的文字方塊中提供憑證易記名稱。
 
    c. 按一下 [繼續] 。
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 03/17/2018
 
     a. 開啟 MMC 主控台。
 
-    b。 按一下 [檔案] > [新增或移除嵌入式管理單元] > [憑證] > 然後按一下 [新增]。
+    b. 按一下 [檔案] > [新增或移除嵌入式管理單元] > [憑證] > 然後按一下 [新增]。
 
     c. 選取 [電腦帳戶] > 然後按一下 [下一步]。
 
@@ -142,7 +142,7 @@ ms.lasthandoff: 03/17/2018
 
     a. 展開 [憑證 (本機電腦)] > [個人] > [憑證]。
 
-    b。 選取於上個步驟中匯入的憑證。
+    b. 選取於上個步驟中匯入的憑證。
 
     c. 以滑鼠右鍵按一下憑證，然後選擇 [所有工作] > [匯出]。
 
@@ -193,13 +193,13 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
-    b。 儲存並關閉檔案。
+    b. 儲存並關閉檔案。
 
 2. 開啟 services.msc。
 
     a. 選取 [Intune 連接器服務]。
 
-    b。 停止服務，然後啟動服務。
+    b. 停止服務，然後啟動服務。
 
     c. 關閉 [服務] 視窗。
 
@@ -211,7 +211,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     a. 按一下 [註冊] 索引標籤，然後按一下 [登入]。
 
-    b。 在指定的文字方塊中提供您的 Intune 租用戶系統管理員認證。
+    b. 在指定的文字方塊中提供您的 Intune 租用戶系統管理員認證。
 
     c. 按一下 [登入]。  這將會顯示具有 [已成功註冊] 訊息的確認對話方塊，如下列螢幕擷取畫面所示。
 2. 關閉 NDES 連接器使用者介面。
@@ -226,7 +226,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     a. 登入 Symantec CA 系統管理入口網站。
 
-    b。 從 [Tasks] \(工作\) 按一下 [Manage CAs] \(管理 CA\)：
+    b. 從 [Tasks] \(工作\) 按一下 [Manage CAs] \(管理 CA\)：
 
     c. 從 CA 清單選取適當的 CA。
 
@@ -236,7 +236,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     a. 使用 Intune 租用戶系統管理員認證登入 [Azure 入口網站](https://portal.azure.com)，並搜尋 Intune 資源。
 
-    b。 從 [Microsoft Intune] > [裝置設定] > [設定檔] > [建立設定檔] 建立受信任的憑證設定檔。
+    b. 從 [Microsoft Intune] > [裝置設定] > [設定檔] > [建立設定檔] 建立受信任的憑證設定檔。
 
     c. 在 [名稱] 和 [描述] 欄位中提供必要的資訊，然後選取目標平台。 
 
@@ -271,7 +271,7 @@ Intune 憑證連接器預設是安裝在 `%ProgramFiles%\Microsoft Intune`。
 
     a. 在 [名稱] 和 [描述] 欄位中提供必要的資訊，然後選取目標平台。
 
-    b。 從 [設定檔類型] 下拉式清單中，選取 [PKCS 憑證設定檔]。  
+    b. 從 [設定檔類型] 下拉式清單中，選取 [PKCS 憑證設定檔]。  
 
     c. 完成剩餘的步驟以建立設定檔。
 
