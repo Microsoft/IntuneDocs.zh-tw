@@ -1,25 +1,25 @@
 ---
-title: "如何部署應用程式"
-description: "使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。"
-keywords: 
+title: 如何部署應用程式
+description: 使用本主題中的資訊以協助您透過 Microsoft Intune 部署應用程式。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7e0fd24dffaf58267e492f470ee8a7861d6810aa
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ed098a22da1def82c90fbb159d54be9b1a369ba8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署應用程式
 
@@ -71,6 +71,6 @@ ms.lasthandoff: 10/10/2017
 如果您將**必要**應用程式部署至 iOS 裝置，使用者會收到應用程式準備安裝的通知。 例如，在這個螢幕擷取畫面中，適用於 iOS 的工作資料夾應用程式是透過 **[App Store 中所管理的 iOS 應用程式]** 安裝類型進行部署。  
 ![iOS 必要應用程式](./media/iOS-Required-install.PNG)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 部署應用程式之後，您會想要監視其進度。 如需詳細資訊，請參閱[在 Microsoft Intune 中監視應用程式](monitor-apps-in-microsoft-intune.md)。

@@ -1,27 +1,27 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: "Microsoft Intune 文件"
+title: Microsoft Intune 文件
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
-  title: "Microsoft Intune 文件"
-  description: "快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。"
-  keywords: "保護, 公司, 資料, Azure, Intune, EMM, 裝置, App, 管理"
-  author: arob98
-  ms.author: angrobe
+  title: Microsoft Intune 文件
+  description: 快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。
+  keywords: 保護, 公司, 資料, Azure, Intune, EMM, 裝置, App, 管理
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
-  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
+  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/08/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。 Intune 整合了 Azure Active Directory 以進行身分識別和存取控制，並整合了 Azure 資訊保護以進行資料保護。"
+    text: 快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。 Intune 整合了 Azure Active Directory 以進行身分識別和存取控制，並整合了 Azure 資訊保護以進行資料保護。
 - items:
   - type: list
     style: cards
@@ -29,112 +29,112 @@ sections:
     columns: 2
     items:
     - href: introduction-intune.md
-      html: "<p>閱讀 Intune 的功能及其運作方式。</p>"
+      html: <p>閱讀 Intune 的功能及其運作方式。</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: "什麼是 Intune？"
+      title: 什麼是 Intune？
     - href: get-started-evaluation.md
-      html: "<p>藉由這個簡單的教學課程，了解 Intune 如何運作。</p>"
+      html: <p>藉由這個簡單的教學課程，了解 Intune 如何運作。</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: "開始使用"
+      title: 開始使用
     - href: get-support.md
-      html: "<p>了解在需要時如何建立支援票證並取得協助。</p>"
+      html: <p>了解在需要時如何建立支援票證並取得協助。</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: "取得支援"
+      title: 取得支援
     - href: whats-new.md
-      html: "<p>查看 Intune 本週新功能。</p>"
+      html: <p>查看 Intune 本週新功能。</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: "新功能"
-- title: "新的文章與部落格文章"
+      title: 新功能
+- title: 新的文章與部落格文章
   items:
   - type: paragraph
-    text: "閱讀必須知道的最新及最佳資訊。"
+    text: 閱讀必須知道的最新及最佳資訊。
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
     - href: what-is-intune.md
-      title: "了解 Azure 入口網站上的 Intune"
+      title: 了解 Azure 入口網站上的 Intune
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
-      title: "查看 Intune 功能在 Azure 入口網站中的位置"
+      title: 查看 Intune 功能在 Azure 入口網站中的位置
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
     - href: high-level-architecture.md
-      title: "檢視 Intune 高階架構"
+      title: 檢視 Intune 高階架構
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
     - href: enrollment-autopilot.md
-      title: "Microsoft Intune 中的 Windows AutoPilot Deployment 方案支援"
+      title: Microsoft Intune 中的 Windows AutoPilot Deployment 方案支援
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: "[部落格] Intune 服務中的安全性增強功能 "
+      title: '[部落格] Intune 服務中的安全性增強功能 '
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: "[部落格] 針對入口網站進行疑難排解讓診斷和解決使用者問題變得更容易"
+      title: '[部落格] 針對入口網站進行疑難排解讓診斷和解決使用者問題變得更容易'
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-- title: "影片"
+- title: 影片
   items:
   - type: markdown
     text: '>[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]'
   - type: markdown
     text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-- title: "規劃文章"
+- title: 規劃文章
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/planning-guide\">Intune 部署規劃、設計和實作指南</a>"
-    - html: "<a href=\"/intune/migration-guide\">Intune 移轉指南</a>"
-- title: "作法文章"
+    - html: <a href="/intune/planning-guide">Intune 部署規劃、設計和實作指南</a>
+    - html: <a href="/intune/migration-guide">Intune 移轉指南</a>
+- title: 作法文章
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/device-enrollment\">註冊裝置</a>"
-    - html: "<a href=\"/intune/device-management\">管理裝置</a>"
-    - html: "<a href=\"/intune/app-management\">管理應用程式</a>"
-    - html: "<a href=\"/intune/device-profiles\">設定裝置</a>"
-    - html: "<a href=\"/intune/device-compliance-get-started\">設定裝置合規性</a>"
-    - html: "<a href=\"/intune/conditional-access\">設定條件式存取</a>"
-    - html: "<a href=\"/intune/app-protection-policy\">保護應用程式</a>"
-    - html: "<a href=\"/intune/mobile-threat-defense\">設定 Mobile Threat Defense</a>"
-    - html: "<a href=\"/intune/network-access-control-integrate\">整合網路存取控制</a>"
-    - html: "<a href=\"/intune/role-based-access-control\">管理角色</a>"
-    - html: "<a href=\"/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json\">使用 Intune 軟體用戶端來管理電腦</a>"
-- title: "疑難排解文章"
+    - html: <a href="/intune/device-enrollment">註冊裝置</a>
+    - html: <a href="/intune/device-management">管理裝置</a>
+    - html: <a href="/intune/app-management">管理應用程式</a>
+    - html: <a href="/intune/device-profiles">設定裝置</a>
+    - html: <a href="/intune/device-compliance-get-started">設定裝置合規性</a>
+    - html: <a href="/intune/conditional-access">設定條件式存取</a>
+    - html: <a href="/intune/app-protection-policy">保護應用程式</a>
+    - html: <a href="/intune/mobile-threat-defense">設定 Mobile Threat Defense</a>
+    - html: <a href="/intune/network-access-control-integrate">整合網路存取控制</a>
+    - html: <a href="/intune/role-based-access-control">管理角色</a>
+    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">使用 Intune 軟體用戶端來管理電腦</a>
+- title: 疑難排解文章
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/help-desk-operators\">使用疑難排解入口網站來協助使用者</a>"
-    - html: "<a href=\"/intune/known-issues\">Intune 的已知問題</a>"
-    - html: "<a href=\"/intune/get-support\">取得支援</a>"
-- title: "開發與自訂文章"
+    - html: <a href="/intune/help-desk-operators">使用疑難排解入口網站來協助使用者</a>
+    - html: <a href="/intune/known-issues">Intune 的已知問題</a>
+    - html: <a href="/intune/get-support">取得支援</a>
+- title: 開發與自訂文章
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/custom-settings-configure\">設定自訂裝置設定</a>"
-    - html: "<a href=\"/intune/apps-prepare-mobile-application-management\">使用 Intune 應用程式包裝函式工具來準備商務營運 (LOB) 應用程式</a>"
-    - html: "<a href=\"/intune/app-sdk\">使用 Intune App SDK 來準備 LOB 應用程式</a>"
-    - html: "<a href=\"https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview\">在 Microsoft Graph 中使用 Intune</a>"
-    - html: "<a href=\"/intune/reports-nav-intune-data-warehouse\">Intune 資料倉儲 API</a>"
-- title: "其他資源"
+    - html: <a href="/intune/custom-settings-configure">設定自訂裝置設定</a>
+    - html: <a href="/intune/apps-prepare-mobile-application-management">使用 Intune 應用程式包裝函式工具來準備商務營運 (LOB) 應用程式</a>
+    - html: <a href="/intune/app-sdk">使用 Intune App SDK 來準備 LOB 應用程式</a>
+    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">在 Microsoft Graph 中使用 Intune</a>
+    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune 資料倉儲 API</a>
+- title: 其他資源
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program\">需要 150 份以上的授權嗎？運用您的 FastTrack 權益</a>"
-    - html: "<a href=\"https://blogs.technet.microsoft.com/enterprisemobility/\">閱讀企業行動力與安全性部落格</a> \\(英文\\)"
-    - html: "<a href=\"https://blogs.technet.microsoft.com/intunesupport/\">在 Intune 支援部落格上取得協助</a> \\(英文\\)"
-    - html: "<a href=\"https://microsoftintune.uservoice.com/forums/291681-ideas\">在 UserVoice 提供有關 Intune 的意見反應</a> \\(英文\\)"
-    - html: "<a href=\"https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc\">在 Intune 論壇上詢問或回答問題</a> \\(英文\\)"
+    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">需要 150 份以上的授權嗎？運用您的 FastTrack 權益</a>
+    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">閱讀企業行動力與安全性部落格</a> \(英文\)
+    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">在 Intune 支援部落格上取得協助</a> \(英文\)
+    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">在 UserVoice 提供有關 Intune 的意見反應</a> \(英文\)
+    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">在 Intune 論壇上詢問或回答問題</a> \(英文\)

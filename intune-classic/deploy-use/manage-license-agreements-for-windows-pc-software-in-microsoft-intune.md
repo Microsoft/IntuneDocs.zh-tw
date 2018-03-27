@@ -1,24 +1,24 @@
 ---
-title: "管理執行 Intune 軟體用戶端之電腦的軟體授權合約"
-description: "Intune 可讓您管理透過 Microsoft 大量授權合約購買之軟體，與透過其他方式購買之軟體的授權合約。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 管理執行 Intune 軟體用戶端之電腦的軟體授權合約
+description: Intune 可讓您管理透過 Microsoft 大量授權合約購買之軟體，與透過其他方式購買之軟體的授權合約。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb60588f793ae430d5e40de6a42db3610e3a1cb6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/10/2017
 Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購買之軟體的授權合約資訊。 您也可以為透過其他方式購買的 Microsoft 或非 Microsoft 軟體執行此動作。 您可以將這項資訊組織成邏輯群組。
 
 > [!IMPORTANT]
-> 這項功能只是為了方便起見，並不保證其正確度。 因此不該完全仰賴它來確認是否遵守 Microsoft 大量授權合約。 Microsoft 不會使用收集的任何資料來調查您可能與我們簽訂之授權合約的可能違約情事或履約狀況。
+> 這項功能只是為了方便起見，並不保證其正確度。 因此不該完全仰賴它來確認是否符合 Microsoft 大量授權合約。 Microsoft 不會使用收集的任何資料來調查您可能與我們簽訂之授權合約的可能違約情事或履約狀況。
 >
 > 您新增至 Intune 的授權不會影響您的授權合約或軟體使用權利。 例如，如果您從 Intune 中刪除授權/合約組，並不會刪除您與 Microsoft 間存在的授權合約，或使合約失效。
 

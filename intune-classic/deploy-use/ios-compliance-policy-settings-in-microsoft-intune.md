@@ -1,25 +1,25 @@
 ---
-title: "iOS 裝置的合規性原則設定"
-description: "本主題說明您可以在 iOS 裝置的法務遵循政策中設定的規則和設定。"
-keywords: 
+title: iOS 裝置的合規性原則設定
+description: 本主題說明您可以在 iOS 裝置的合規性政策中設定的規則和設定。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cd64a833aa9dbddd2e85dbc427f5c5d5d2bca64
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的相容性原則設定
 

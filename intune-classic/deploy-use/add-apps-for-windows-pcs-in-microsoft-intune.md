@@ -1,24 +1,24 @@
 ---
-title: "為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式"
-description: "使用本主題的資訊，了解如何在部署之前，將適用於 Windows 電腦的應用程式新增至 Intune。"
-keywords: 
+title: 為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
+description: 使用本主題的資訊，了解如何在部署之前，將適用於 Windows 電腦的應用程式新增至 Intune。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7c2352ea47d7dab22867e213169d382b9330c171
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b44ed650019c7e189b1f8f3bfe29e161558258e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 10/10/2017
 
 應用程式會顯示在 [應用程式] 工作區的 [應用程式] 節點上。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 完成建立應用程式後，下一個步驟是進行部署。 若要深入了解，請參閱[在 Microsoft Intune 中部署應用程式](deploy-apps.md)。
 

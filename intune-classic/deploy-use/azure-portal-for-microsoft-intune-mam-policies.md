@@ -1,25 +1,25 @@
 ---
-title: "MAM 原則的 Azure 入口網站"
-description: "使用 Azure 入口網站建立行動裝置應用程式管理原則。 無論裝置是否有在 Intune 中註冊，您都可以套用在這裡建立的原則。"
-keywords: 
+title: MAM 原則的 Azure 入口網站
+description: 使用 Azure 入口網站建立行動裝置應用程式管理原則。 無論裝置是否有在 Intune 中註冊，您都可以套用在這裡建立的原則。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 10/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be6435b3418f06908a972fc298a26765e67c4d26
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>用於 Intune 應用程式保護原則的 Azure 入口網站
 
@@ -62,5 +62,5 @@ ms.lasthandoff: 10/10/2017
 
     ![包含釘選的 Intune 磚之儀表板的螢幕擷取畫面](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [準備好設定應用程式保護原則](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

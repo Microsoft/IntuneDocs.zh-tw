@@ -1,25 +1,25 @@
 ---
-title: "Endpoint Protection 疑難排解"
-description: "在使用 Microsoft Intune Endpoint Protection 的同時解決問題。"
-keywords: 
+title: Endpoint Protection 疑難排解
+description: 在使用 Microsoft Intune Endpoint Protection 的同時解決問題。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1effa7c421448889280926acbb9369f220211b9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: edfc9e4995610aaadfd12e8370a42bfcc15032e6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
@@ -47,5 +47,5 @@ ms.lasthandoff: 10/10/2017
 |**快速掃描逾期**|已有 14 天完成未完成快速掃描。 原因可能是在快速掃描期間重新啟動。|若快速掃描已逾期，您可以執行一次性的快速掃描，或從 [Intune 管理主控台](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)排定週期性快速掃描。|
 |**其他 Endpoint Protection 應用程式正在執行**|其他 Endpoint Protection 應用程式正在執行且電腦狀況良好。|根據預設，如果已安裝其他 Endpoint Protection 應用程式，且 Intune 偵測到該應用程式，Endpoint Protection 將會自動停用。 如果 Intune 偵測不到其他 Endpoint Protection 應用程式，Endpoint Protection 將保持啟用。 如需詳細資訊，請參閱[使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。|
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。

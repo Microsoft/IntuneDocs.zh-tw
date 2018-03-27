@@ -1,25 +1,25 @@
 ---
-title: "建立及部署 MAM 原則"
-description: "使用本主題中的逐步指示來建立及部署行動應用程式管理原則。"
-keywords: 
+title: 建立及部署 MAM 原則
+description: 使用本主題中的逐步指示來建立及部署行動應用程式管理原則。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 10/10/2017
 
     ![MAM 的 [新增原則] 刀鋒視窗](../media/AppManagement/mam-lob-apps-1.png)
 
-2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] \(適用於 iOS) 或 [套件識別碼] \(適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
+2.  按一下 [更多應用程式]，然後輸入 [配套識別碼] (適用於 iOS) 或 [套件識別碼] (適用於 Android)，然後按一下 [選取] 以新增您的 LOB 應用程式。
 
     ![MAM 的 [更多應用程式] 刀鋒視窗](../media/AppManagement/mam-lob-apps-2.png)
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 10/10/2017
 
     a.  **建議的應用程式︰**可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
 
-    b。  **市集應用程式︰**系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
+    b.  **市集應用程式︰**系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
 
     c.  **Windows 傳統型應用程式︰**系統管理員可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 exe、dll 等)。
 
@@ -162,7 +162,7 @@ ms.lasthandoff: 10/10/2017
 > 如果您使用 Intune 和 Configuration Manager 來管理您的 iOS 和 Android 裝置，則只會將原則套用至您選取之群組中的直屬使用者， 而不會影響巢狀於您選取之群組中的子群組成員。
 
 使用者可以從應用程式市集或 Google Play 下載應用程式。 如需詳細資訊，請參閱：
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-android)
+* [當 Android 應用程式交由應用程式防護原則管理時的行為](/intune/end-user-mam-apps-android)
 * [當 iOS 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>變更現有的原則
@@ -213,9 +213,9 @@ ms.lasthandoff: 10/10/2017
 - [iOS 原則](ios-mam-policy-settings.md)
 - [Android 原則](android-mam-policy-settings.md)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [監視合規性和使用者狀態](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-### <a name="see-also"></a>請參閱
-* [當 Android 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-android)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](/intune/end-user-mam-apps-ios)
+### <a name="see-also"></a>另請參閱
+* [當 Android 應用程式交由應用程式防護原則管理時的行為](/intune/end-user-mam-apps-android)
+* [當 iOS 應用程式交由應用程式防護原則管理時的行為](/intune/end-user-mam-apps-ios)

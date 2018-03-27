@@ -1,23 +1,23 @@
 ---
-title: "適用於 Windows Holographic for Business 的 Microsoft Intune 裝置限制設定"
-titleSuffix: 
-description: "了解執行 Windows Holographic for Business 之裝置上可用以控制裝置設定與功能的 Intune 設定。"
-keywords: 
+title: 適用於 Windows Holographic for Business 的 Microsoft Intune 裝置限制設定
+titleSuffix: ''
+description: 了解執行 Windows Holographic for Business 之裝置上可用以控制裝置設定與功能的 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9acce571330a754de85b65caf8ec71912fd36a69
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Microsoft Intune Windows Holographic for Business 裝置限制設定
 

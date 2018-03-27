@@ -1,25 +1,25 @@
 ---
-title: "建立 Skycure Mobile Threat Defense 合規性原則"
-description: "在 Intune 傳統入口網站中，建立 Skycure Mobile Threat Defense 合規性原則。"
-keywords: 
+title: 建立 Skycure Mobile Threat Defense 合規性原則
+description: 在 Intune 傳統入口網站中，建立 Skycure Mobile Threat Defense 合規性原則。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>建立 Skycure Mobile Threat Defense 合規性原則
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/30/2018
 
     a.  **無 (受保護)**：這是最安全的選項。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
 
-    b。  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+    b.  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
 
     c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
 

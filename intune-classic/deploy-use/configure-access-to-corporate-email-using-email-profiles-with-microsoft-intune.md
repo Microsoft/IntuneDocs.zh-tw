@@ -1,25 +1,25 @@
 ---
-title: "使用電子郵件設定檔存取公司電子郵件"
-description: "電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。"
-keywords: 
+title: 使用電子郵件設定檔存取公司電子郵件
+description: 電子郵件設定檔設定可用來設定行動裝置上，特定電子郵件用戶端的電子郵件存取設定。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權
 
@@ -91,8 +91,8 @@ IT 系統管理員或使用者也可以選擇安裝替代的電子郵件用戶�
 
 |設定名稱 | 詳細資訊|
 | ----------- | --------------- |
-    |**Name**|電子郵件設定檔的唯一名稱。|
-    |**說明**|可協助您識別此設定檔的描述。|
+    |**名稱**|電子郵件設定檔的唯一名稱。|
+    |**描述**|可協助您識別此設定檔的描述。|
     |**主機**|您公司伺服器的主機名稱，用來裝載原生電子郵件服務。|
     |**帳戶名稱**|在使用者裝置上向使用者顯示的電子郵件帳戶顯示名稱。|
     |**使用者名稱**|Active Directory (AD) 或 Azure AD 中的這個屬性，將會用來產生此電子郵件設定檔的使用者名稱。 選取主要 SMTP 位址，例如 *user1@contoso.com* 或使用者主體名稱，例如 *user1* 或 *user1@contoso.com*。|

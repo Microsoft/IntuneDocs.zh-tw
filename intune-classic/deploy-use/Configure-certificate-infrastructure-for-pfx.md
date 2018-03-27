@@ -1,25 +1,25 @@
 ---
-title: "設定 PFX 的憑證基礎結構"
-description: "建立及部署 .PFX 憑證設定檔。"
-keywords: 
+title: 設定 PFX 的憑證基礎結構
+description: 建立及部署 .PFX 憑證設定檔。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b415e84f488d3bcdd14d6c3bca1aad76831fc499
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>設定憑證基礎結構
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 12/12/2017
 
     a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
-    b。  **net stop certsvc**
+    b.  **net stop certsvc**
 
     c.  **net start certsvc**
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 12/12/2017
 
     a.  選取 [憑證範本] 節點，並按一下 [動作]-&gt; [新增]&gt; [要發出的憑證範本]，然後選取您在步驟 2 中建立的範本。
 
-    b。  檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
+    b.  檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
 4.  在 CA 電腦上，確認裝載 Intune 憑證連接器的電腦有註冊權限，使其能夠存取用來建立 .PFX 設定檔的範本。 在 CA 電腦內容的 [安全性]  索引標籤上設定該權限。
 
@@ -146,7 +146,7 @@ ms.lasthandoff: 12/12/2017
 
     a. 選擇 [登入] 並輸入您的 Intune 服務管理員認證，或擁有全域管理權限的租用戶管理員認證。
 
-    b。 選取 [進階] 索引標籤，然後提供對您的發行憑證授權單位具有 [發行及管理憑證] 權限的帳戶認證。
+    b. 選取 [進階] 索引標籤，然後提供對您的發行憑證授權單位具有 [發行及管理憑證] 權限的帳戶認證。
 
     c. 選擇 [套用]。
 
@@ -155,5 +155,5 @@ ms.lasthandoff: 12/12/2017
 6.  開啟命令提示字元，然後鍵入 **services.msc**。 然後按 **Enter**，以滑鼠右鍵按一下 [Intune 連接器服務]，再選擇 [重新啟動]。
 
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 您現在已可設定憑證設定檔，如[設定憑證設定檔](Configure-Intune-certificate-profiles.md)中所述。

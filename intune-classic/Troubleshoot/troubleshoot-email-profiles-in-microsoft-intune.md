@@ -1,25 +1,25 @@
 ---
-title: "電子郵件設定檔疑難排解"
-description: "電子郵件設定檔問題，以及進行疑難排解並解決它們的方法。"
-keywords: 
+title: 電子郵件設定檔疑難排解
+description: 電子郵件設定檔問題，以及進行疑難排解並解決它們的方法。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f74ffd45fd46186b8b225fc64212ec61fefdad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 382d9240d751c69f3b415ef9ab205b3ef596463a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 的電子郵件設定檔疑難排解
 
@@ -70,5 +70,5 @@ ms.lasthandoff: 12/12/2017
 
 檢閱 Samsung KNOX 的 EAS 設定檔和來源原則的組態。 不再支援 Samsung Note 同步處理選項，因此不應該在您的設定檔中選取該選項。 請確定裝置有足夠的時間來處理原則，最多 24 小時。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。

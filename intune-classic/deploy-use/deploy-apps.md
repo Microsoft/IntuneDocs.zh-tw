@@ -1,25 +1,25 @@
 ---
-title: "部署 App"
-description: "本主題說明您在開始使用 Intune 部署應用程式之前必須了解的概念。"
-keywords: 
+title: 部署 App
+description: 本主題說明您在開始使用 Intune 部署應用程式之前必須了解的概念。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e3761ad892ff17abdfb8b61516ef56b1fb8318d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>使用 Microsoft Intune 部署應用程式
 
@@ -71,6 +71,6 @@ ms.lasthandoff: 10/10/2017
 -   若裝置同時收到必要及可用安裝，表示兩個動作皆須執行。 也就是說，使用者可以在必要的安裝開始之前，從公司入口網站安裝可用的應用程式。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 深入了解如何[在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)。

@@ -1,25 +1,25 @@
 ---
-title: "新增應用程式"
-description: "使用 Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。"
-keywords: 
+title: 新增應用程式
+description: 使用 Intune 開始部署應用程式之前，請花點時間熟悉本主題所介紹的概念。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 新增應用程式
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="cloud-storage-space"></a>雲端儲存空間
 使用軟體安裝程式安裝類型所建立的所有應用程式都必須上傳至 Microsoft Intune 雲端儲存空間。 Intune 的試用版訂閱內容包含 2 GB 的雲端式儲存空間，可用來儲存受管理的應用程式和更新。 完整訂閱將包含 20 GB 的儲存空間。
 
-您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外存放空間。  如果您是用發票或信用卡支付，請前往[訂用帳戶管理入口網站](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否則，請連絡合作夥伴或銷售人員。
+您可以在 [系統管理] 工作區的 [使用的存放裝置] 節點中，查看您正在使用的空間量。 您可以使用原始購買方法來購買 Intune 的額外儲存空間。  如果您是用發票或信用卡支付，請前往[訂用帳戶管理入口網站](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否則，請連絡合作夥伴或銷售人員。
 
 雲端儲存空間需求如下：
 
@@ -91,6 +91,6 @@ Windows 10 電腦不需要側載金鑰，即可安裝商務營運應用程式。
 ![如何選取 Windows 10 UWP appxbundle 相依性](./media/w10-dependencies.png)
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您必須先在 Intune 主控台中新增應用程式，然後才能部署它們。 您可以新增適用於[註冊的裝置](add-apps-for-mobile-devices-in-microsoft-intune.md)，或[使用 Intune 用戶端軟體所管理的 Windows 電腦](add-apps-for-windows-pcs-in-microsoft-intune.md)的應用程式。

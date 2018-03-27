@@ -1,25 +1,25 @@
 ---
-title: "管理商務用 Microsoft 網上商店應用程式"
-description: "如果您想要從 Intune 主控台管理和部署大量採購的應用程式，請將 Microsoft Intune 連線至商務用 Microsoft 網上商店"
-keywords: 
+title: 管理商務用 Microsoft 網上商店應用程式
+description: 如果您想要從 Intune 主控台管理和部署大量採購的應用程式，請將 Microsoft Intune 連線至商務用 Microsoft 網上商店
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 10/10/2017
  * 一旦註冊完成，請選擇 **[設定同步處理]**。
 4. 在 [設定商務用 Microsoft 網上商店應用程式同步] 對話方塊中，選取 [啟用商務用 Microsoft 網上商店同步]。
 5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店的應用程式將會在 Intune 主控台中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
-6. 按一下 [ **確定**]。
+6. 按一下 [確定]。
 
 ## <a name="synchronize-apps"></a>同步處理應用程式
 
@@ -82,5 +82,5 @@ ms.lasthandoff: 10/10/2017
 > 只有原先註冊裝置的使用者可使用已部署的應用程式。 其他使用者都不能存取應用程式。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [在 Microsoft Intune 中新增行動裝置的應用程式](add-apps-for-mobile-devices-in-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
-title: "Exchange ActiveSync 原則設定"
-description: "使用 Intune Exchange ActiveSync 原則進行設定，讓您能夠控制由 Exchange ActiveSync 所管理之裝置上的特性與功能。"
-keywords: 
+title: Exchange ActiveSync 原則設定
+description: 使用 Intune Exchange ActiveSync 原則進行設定，讓您能夠控制由 Exchange ActiveSync 所管理之裝置上的特性與功能。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e8fde89fc7b0b4114e9c084f8e00692bcc92b0
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Exchange ActiveSync 原則設定
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 12/12/2017
 |設定名稱|詳細資料
 |----------------|---|
 |**需要密碼才可解除鎖定行動裝置**|指定是否必須使用密碼鎖定裝置。<br>(不適用於執行 Windows RT 的裝置)。|
-|**所需的密碼類型**|指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。|
+|**必要的密碼類型**|指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。|
 |**密碼長度下限**|指定裝置密碼所需的字元數下限。|
 |**允許簡單密碼**|指定您是否可以使用簡單密碼，包括 '0000' 與 '1234'。|
 |**抹除裝置前允許的重複登入失敗次數**|指定抹除裝置前允許使用者輸入錯誤密碼的次數。|
@@ -80,5 +80,5 @@ ms.lasthandoff: 12/12/2017
 
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

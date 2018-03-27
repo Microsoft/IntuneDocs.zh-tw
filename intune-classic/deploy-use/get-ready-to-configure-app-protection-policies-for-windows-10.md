@@ -1,25 +1,25 @@
 ---
-title: "準備好設定適用於 Windows 10 的應用程式保護原則"
-description: "在 Azure AD 中設定行動應用程式管理 (MAM) 提供者"
-keywords: 
+title: 準備好設定適用於 Windows 10 的應用程式保護原則
+description: 在 Azure AD 中設定行動應用程式管理 (MAM) 提供者
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6fc748f060d131364be39899fcb5ac35f1228801
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a18136a6b7aa26391a38aa071699dc60dc024c21
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/10/2017
 
     a.  MAM 使用者範圍︰您可以使用 MAM 保護使用 Windows 10 裝置之特定使用者群組，或是所有使用者的公司資料。
 
-    b。  MAM 使用規定 URL：MAM 服務之使用規定端點的 URL。 這是用來向使用者顯示 MAM 服務規定。
+    b.  MAM 使用規定 URL：MAM 服務之使用規定端點的 URL。 這是用來向使用者顯示 MAM 服務規定。
 
     c.  MAM 探索 URL：這是裝置在需要套用應用程式保護原則時會尋找的 URL。
 
@@ -54,6 +54,6 @@ ms.lasthandoff: 10/10/2017
 
 5.  一旦您設定了這些設定，請選擇 [儲存]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [建立 WIP 應用程式保護原則 (英文)](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)

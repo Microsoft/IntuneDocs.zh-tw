@@ -1,25 +1,25 @@
 ---
-title: "Android for Work 原則設定"
-description: "建立可以在您使用 Intune 管理的 Android for Work 裝置上控制設定及功能的原則。"
-keywords: 
+title: Android for Work 原則設定
+description: 建立可以在您使用 Intune 管理的 Android for Work 裝置上控制設定及功能的原則。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android for Work 原則設定
 
@@ -70,8 +70,8 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
-    |**Name**|輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
-    |**說明**|提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
+    |**名稱**|輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
+    |**描述**|提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
 ### <a name="oma-uri-settings"></a>OMA-URI 設定
 
@@ -88,5 +88,5 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 - [使用預先共用的金鑰建立 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)
 - [使用自訂原則為 Android 裝置建立個別應用程式的 VPN 設定擋](per-app-vpn-for-android-pulse-secure.md)
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

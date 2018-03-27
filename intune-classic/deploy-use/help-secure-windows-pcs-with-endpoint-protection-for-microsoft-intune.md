@@ -1,24 +1,24 @@
 ---
-title: "Windows 電腦的 Endpoint Protection"
-description: "使用 Endpoint Protection 保護您受管理的電腦，它可針對惡意程式碼威脅提供即時保護。"
-keywords: 
+title: Windows 電腦的 Endpoint Protection
+description: 使用 Endpoint Protection 保護您受管理的電腦，它可針對惡意程式碼威脅提供即時保護。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8b903d5b1ae66b7ce022480864fb08e7107ff4b0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
 
@@ -177,7 +177,7 @@ Intune 最多可以顯示裝置上最近偵測到之 10 個惡意程式碼執行
 2. 以滑鼠右鍵按一下您想要查看其最近偵測路徑的電腦，然後選取 [屬性]。
 3. 從頂端的索引標籤選取 [惡意程式碼]。
 
-   ![選取 惡意程式碼 索引標籤，然後按一下最近的偵測路徑 核取方塊](../media/malware-path-column.png)
+   ![選取 [惡意程式碼] 索引標籤，然後按一下 [最近的偵測路徑] 核取方塊](../media/malware-path-column.png)
 4. 以滑鼠右鍵按一下欄標題。 可用的欄標題隨即出現。 選取清單中的 [最近的偵測路徑] 核取方塊。 [最近的偵測路徑] 欄隨即出現，且最多會顯示裝置上最近監視到的 10 個惡意程式碼執行個體。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>更新電腦上的惡意程式碼定義。

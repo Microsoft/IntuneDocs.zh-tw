@@ -1,25 +1,25 @@
 ---
-title: "管理大量購買的 iOS 應用程式"
-description: "藉由匯入應用程式市集的授權資訊、追蹤已使用的授權數量，並避免您安裝超過所擁有數目的應用程式複本，來使用 Intune 管理您從 Apple 大量購買的應用程式。"
-keywords: 
+title: 管理大量購買的 iOS 應用程式
+description: 藉由匯入應用程式市集的授權資訊、追蹤已使用的授權數量，並避免您安裝超過所擁有數目的應用程式複本，來使用 Intune 管理您從 Apple 大量購買的應用程式。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 10/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5140d2fa04a229dda0896a74333801899f5946e2
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 2b05007a7c2d6fa1719b0f298f0e7981e735042e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>管理透過 Microsoft Intune 大量採購方案購買的 iOS 應用程式
 
@@ -85,5 +85,5 @@ Microsoft Intune 藉由從應用程式市集匯入授權資訊、追蹤您已經
 > [!TIP]
 > 您也可以使用應用程式的 **[篩選器]** 來檢查每個應用程式的安裝狀態。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [在 Microsoft Intune 中部署應用程式](deploy-apps-in-microsoft-intune.md)

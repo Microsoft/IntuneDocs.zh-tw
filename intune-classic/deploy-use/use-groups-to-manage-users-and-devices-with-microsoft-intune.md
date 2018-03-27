@@ -1,25 +1,25 @@
 ---
-title: "使用群組管理使用者和裝置"
-description: "使用 [群組] 工作區建立及管理群組。"
-keywords: 
-author: arob98
+title: 使用群組管理使用者和裝置
+description: 使用 [群組] 工作區建立及管理群組。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ca73c6d84c6f4b63c4d7b0cb544dc7998224821
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 5f84469f0514d2e644db2ec9b0700644af143d81
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用群組管理使用者和裝置
 
@@ -135,7 +135,7 @@ ms.lasthandoff: 10/11/2017
 
 您可以刪除不再符合組織需求的群組。 刪除群組不會刪除隸屬於該群組的使用者。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 在您設定群組和原則之後，請檢閱 [預定的值] 和 [狀態] 來檢查設計的實際影響。
 
 ### <a name="to-check-your-design"></a>檢查您的設計

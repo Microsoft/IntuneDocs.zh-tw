@@ -1,23 +1,23 @@
 ---
-title: "適用於 Windows Holographic for Business 裝置的 Microsoft Intune 自訂設定"
-titlesuffix: 
-description: "了解可用於 Windows Holographic for Business 自訂設定檔中的設定。"
-keywords: 
+title: 適用於 Windows Holographic for Business 裝置的 Microsoft Intune 自訂設定
+titlesuffix: ''
+description: 了解可用於 Windows Holographic for Business 自訂設定檔中的設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>執行 Windows Holographic for Business 之裝置的 Microsoft Intune 自訂裝置設定
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/08/2018
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|字串<br>URL - 裝置會在指定的 URL 檢查來自 WSUS 伺服器的更新。<br>未設定 - 裝置會檢查來自 Microsoft Update 的更新。|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整數<br>0 - 未設定。 裝置會安裝所有適用的更新。<br>1 - 裝置只會安裝適用並且在核准更新清單上的更新。 如果 IT 想要控制在裝置上部署更新，例如需要先測試才能部署時，將此原則設定為 1。|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**重要**<br>您必須閱讀並代表您的使用者接受更新 EULA。 若不這樣做將違反法律或契約義務。|更新核准以及代表終端使用者接受 UELA 的節點。|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**重要**<br>AppLocker CSP 文章使用逸出的 XML 範例。 若要使用 Intune 自訂設定檔進行設定，您必須使用純文字 XML。|字串<br>如需詳細資訊，請參閱 [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) 一文。 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**重要**<br>AppLocker CSP 文章使用逸出的 XML 範例。 若要使用 Intune 自訂設定檔進行設定，您必須使用純文字 XML。|字串<br>如需詳細資訊，請參閱 [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) 一文。
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>如何尋找可設定的原則
 

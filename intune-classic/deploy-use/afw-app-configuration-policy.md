@@ -1,25 +1,25 @@
 ---
-title: "Android for Work 應用程式設定原則"
-description: "您可以在 Intune 中使用行動應用程式設定原則，來提供使用者執行 Android for Work 應用程式時可能需要的設定。"
-keywords: 
+title: Android for Work 應用程式設定原則
+description: 您可以在 Intune 中使用行動應用程式設定原則，來提供使用者執行 Android for Work 應用程式時可能需要的設定。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3fd5e2891eb628fe84fae8842791b4ac4e883d21
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 02934e40346be88cb823bcfa80ff9618e86e757b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用行動應用程式設定原則設定 Android for Work 應用程式
 

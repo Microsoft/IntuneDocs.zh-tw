@@ -1,25 +1,25 @@
 ---
-title: "設定 Skycure 使用 Azure Active Directory 單一登入"
-description: "設定 Skycure 使用 Azure Active Directory 單一登入 (SSO)"
-keywords: 
+title: 設定 Skycure 使用 Azure Active Directory 單一登入
+description: 設定 Skycure 使用 Azure Active Directory 單一登入 (SSO)
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 34d5d359-5c7c-4225-a205-8ce890b6f890
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b89f9acded5cfd45b2716ce16aeedfd95e0af94e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: aef978e3d8431238a5b717628b13b875aa5b89cc
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>設定 Skycure 使用 Azure Active Directory 單一登入 (SSO)
 
@@ -81,6 +81,6 @@ ms.lasthandoff: 10/10/2017
 > [!IMPORTANT] 
 > Skycure 會藉由查詢 Azure AD 來驗證 Azure AD 租用戶識別碼是否存在，如果 Skycure 找到該識別碼，管理員就可以繼續下一個步驟，此為基本安裝程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [下載 Skycure iOS 應用程式設定原則 (英文)](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
