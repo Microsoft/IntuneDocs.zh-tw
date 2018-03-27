@@ -1,25 +1,25 @@
 ---
-title: "適用於 Android 的合規性原則設定"
-description: "本主題說明適用於 Android 裝置的裝置相容性原則設定。"
-keywords: 
+title: 適用於 Android 的合規性原則設定
+description: 本主題說明適用於 Android 裝置的裝置相容性原則設定。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f781c5498a569a067f0f2aa6f780a6cc37c9985c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android 裝置的相容性原則設定
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/10/2017
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [iOS 裝置的的相容性原則設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 - [Android for Work 裝置的合規性政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 

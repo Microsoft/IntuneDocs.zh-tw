@@ -1,25 +1,25 @@
 ---
-title: "管理裝置上的 iOS 啟用鎖定"
-description: "Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 管理裝置上的 iOS 啟用鎖定
+description: Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a05c8e6a45c57f5f6f0c90d5fbb48164cde34a1c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>使用 Microsoft Intune 的啟用鎖定略過協助保護 iOS 裝置
 
@@ -101,6 +101,6 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
     >Intune 每七天會針對啟用鎖定對裝置進行清查。 因此，裝置可能無法立即在 Intune 主控台中顯示它們的啟用鎖定狀態。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [淘汰裝置](retire-devices-from-microsoft-intune-management.md)
 [透過遠端鎖定或密碼重設來協助保護您的裝置](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)

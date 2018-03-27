@@ -1,25 +1,25 @@
 ---
-title: "下載 Skycure iOS 應用程式設定原則"
-description: "下載 Skycure iOS 應用程式設定原則，以便與已部署至使用者的 Skycure iOS 應用程式搭配使用。"
-keywords: 
+title: 下載 Skycure iOS 應用程式設定原則
+description: 下載 Skycure iOS 應用程式設定原則，以便與已部署至使用者的 Skycure iOS 應用程式搭配使用。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d211b876-4d3a-473c-999f-843c0a16cd22
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f452ca2305b83ee106827a7dca4b02a90910a289
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0f8197146d8b4f42bcf199070551ba13aed92626
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>下載 Skycure iOS 應用程式設定原則
 
@@ -49,6 +49,6 @@ ms.lasthandoff: 10/10/2017
 
 ![Skycure 整合安裝檔案](../media/mtp/skycure-ios-app-2.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [新增 Skycure 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)

@@ -1,25 +1,25 @@
 ---
-title: "使用 Cisco ISE 保護網路存取權"
-description: "使用 Cisco ISE 與 Intune，讓裝置向 Intune 註冊並符合原則，然後才存取 Cisco ISE 控制的 Wi-Fi 和 VPN。"
-keywords: 
-author: arob98
+title: 使用 Cisco ISE 保護網路存取權
+description: 使用 Cisco ISE 與 Intune，讓裝置向 Intune 註冊並符合原則，然後才存取 Cisco ISE 控制的 Wi-Fi 和 VPN。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>使用 Cisco ISE 與 Microsoft Intune
 
@@ -39,7 +39,7 @@ Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中
 
    a. 以系統管理員身分執行 Internet Explorer，並登入 Azure AD 主控台。
 
-   b。 在網址列中選擇鎖定圖示，然後選擇 [檢視憑證]。
+   b. 在網址列中選擇鎖定圖示，然後選擇 [檢視憑證]。
 
    c. 在憑證內容的 [詳細資料] 索引標籤，選擇 [複製到檔案]。
 
@@ -55,7 +55,7 @@ Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中
 
  a. 登入 Azure AD 主控台。
 
-b。 選擇鎖定圖示 &gt; [更多資訊]。
+b. 選擇鎖定圖示 &gt; [更多資訊]。
 
    c. 選擇 [檢視憑證] &gt; [詳細資料]。
 
@@ -94,7 +94,7 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
         - 隨時存取使用者的資料
         - 登入使用者
 
- b。 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
+ b. 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
 
 7. 選擇 [檢視端點]，並複製下列值以便用於進行 ISE 設定︰
 
@@ -182,11 +182,11 @@ b。 選擇鎖定圖示 &gt; [更多資訊]。
 - [將您的 Android 裝置註冊到 Intune](/intune-user-help/enroll-your-device-in-Intune-android)</br>
 - [在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-in-intune-ios)</br>
 - [在 Intune 註冊 Mac OS X 裝置](/intune-user-help/enroll-your-device-in-intune-mac-os-x)</br>
-- [將您的 Windows 裝置註冊到 Intune](/intune-user-help/enroll-your-device-in-intune-windows)</br>
+- [在 Intune 註冊 Windows 裝置](/intune-user-help/enroll-your-device-in-intune-windows)</br>
 
 另外還有[可下載的註冊指示集合](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)，可用來建立自訂的使用者體驗指導方針。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF) (思科身分服務引擎管理指南 2.1 版)

@@ -1,25 +1,25 @@
 ---
-title: "Exchange Connector 疑難排解"
-description: "與 Intune Exchange Connector 相關的疑難排解問題。"
-keywords: 
+title: Exchange Connector 疑難排解
+description: 與 Intune Exchange Connector 相關的疑難排解問題。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>為 Exchange Connector 進行疑難排解
 
@@ -50,5 +50,5 @@ ms.lasthandoff: 10/10/2017
 - 若要取得信箱 SMTP 位址的清單，可使用 Get-Mailbox -Identity user | select emailaddresses | fl。
 - 若要取得有關裝置存取狀態的詳細資訊，可使用 Get-CASMailbox <upn> | fl
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。

@@ -1,25 +1,25 @@
 ---
-title: "管理 iOS 應用程式之間的資料傳輸"
-description: "使用本主題來了解如何使用 iOS「開啟位置」功能和行動應用程式管理原則來管理應用程式之間的資料傳輸。"
-keywords: 
+title: 管理 iOS 應用程式之間的資料傳輸
+description: 使用本主題來了解如何使用 iOS「開啟位置」功能和行動應用程式管理原則來管理應用程式之間的資料傳輸。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -57,7 +57,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
   1.  使用下列應用程式組態設定來部署應用程式：
 
-      **金鑰** = IntuneMAMUPN，**值** = <username@company.com>
+      **金鑰**= IntuneMAMUPN，**值** = <username@company.com>
 
       範例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -70,14 +70,14 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 2. 在 [應用程式設定] 區段中，輸入下列設定：
 
-  **金鑰** = IntuneMAMUPN，**值** = <username@company.com>
+  **金鑰**= IntuneMAMUPN，**值** = <username@company.com>
 
   根據您的協力廠商 MDM 提供者，金鑰/值配對的確切語法可能會不同。 下表顯示協力廠商 MDM 提供者範例，以及應該輸入的金鑰/值配對確切值。
 
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | 字串 | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$  **或**  $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | 字串 | $EMAIL$ **或** $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
 | ManageEngine Mobile Device Manager | IntuneMAMUPN | 字串 | %upn% |
 
@@ -108,5 +108,5 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 的應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

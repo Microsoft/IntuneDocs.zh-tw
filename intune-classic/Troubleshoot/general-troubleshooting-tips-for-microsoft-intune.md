@@ -1,25 +1,25 @@
 ---
-title: "一般疑難排解提示"
-description: "有助於解決 Intune 問題的一般資源。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 一般疑難排解提示
+description: 有助於解決 Intune 問題的一般資源。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/08/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7085429b8e3e9e7dff3b56e681fb425c6551d722
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune 的一般疑難排解提示
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 10/10/2017
 
 -   [Intune 論壇](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 以下主題都有特定問題的疑難排解說明。 如果該資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述)。
 
 [使用 Microsoft Intune 疑難排解 Endpoint Protection 的問題](troubleshoot-endpoint-protection-in-microsoft-intune.md)

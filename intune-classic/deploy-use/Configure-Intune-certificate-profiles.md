@@ -1,25 +1,25 @@
 ---
-title: "設定憑證設定檔"
-description: "了解如何建立 Intune 憑證設定檔。"
-keywords: 
+title: 設定憑證設定檔
+description: 了解如何建立 Intune 憑證設定檔。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 785958d0d6c907edb1ae16ffeab94ccdce140c60
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>設定 Intune 憑證設定檔
 
@@ -149,7 +149,7 @@ ms.lasthandoff: 12/12/2017
 
 當您選取某項已部署的原則時，可以在原則清單下方查看部署的詳細資訊。
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 
 接著了解如何使用憑證來協助保護電子郵件、Wi-Fi 及 VPN 設定檔。
 

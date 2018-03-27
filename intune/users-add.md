@@ -1,25 +1,25 @@
 ---
-title: "新增使用者並授與權限"
+title: 新增使用者並授與權限
 titlesuffix: Microsoft Intune
-description: "同步處理內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員。"
-keywords: 
+description: 同步處理內部部署使用者和 Azure AD 以及將您 Intune 訂閱的權限授與系統管理員。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8fe6d668885345f4bd710e4b96b8d7855f12632
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 

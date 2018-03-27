@@ -1,24 +1,24 @@
 ---
-title: "使用 Microsoft Intune 管理行動裝置"
-titleSuffix: 
-description: "使用 Intune 檢閱您管理的裝置，以及對這些裝置執行各種動作。"
-keywords: 
+title: 使用 Microsoft Intune 管理行動裝置
+titleSuffix: ''
+description: 使用 Intune 檢閱您管理的裝置，以及對這些裝置執行各種動作。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/02/2018
 **裝置**工作負載可讓您深入了解您所管理的裝置，並讓您從遠端對這些裝置執行工作。 若要存取工作負載︰
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 **Intune** 中選擇 [裝置]。
 4. 您可以檢視裝置的相關資訊，並執行下列遠端裝置動作：
     - **概觀** - 您可以管理的已註冊裝置快照集。

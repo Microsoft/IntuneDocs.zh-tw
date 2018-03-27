@@ -1,25 +1,25 @@
 ---
-title: "對 O365 以應用程式為基礎的條件式存取"
-description: "了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。"
-keywords: 
+title: 對 O365 以應用程式為基礎的條件式存取
+description: 了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>只允許支援 Intune 應用程式保護原則的行動裝置應用程式存取 Office 365 服務
 
@@ -58,13 +58,13 @@ ms.lasthandoff: 11/15/2017
 若要了解具有應用程式型條件式存取原則之應用程式的使用者體驗，請參閱[搭配 MAM CA 使用應用程式時的預期狀況](use-apps-with-mam-ca.md)。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [建立 MAM 應用程式的 Exchange Online 原則](mam-ca-for-exchange-online.md)
 
 [建立 MAM 應用程式的 SharePoint Online 原則](mam-ca-for-sharepoint-online.md)
 
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

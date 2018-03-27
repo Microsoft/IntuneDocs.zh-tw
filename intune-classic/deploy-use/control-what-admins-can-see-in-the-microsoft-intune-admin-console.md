@@ -1,25 +1,25 @@
 ---
-title: "自訂管理員角色的主控台檢視"
-description: "使用本主題來協助您篩選 Intune 管理主控台檢視，以讓您的管理員僅查看其角色所需的項目。"
-keywords: 
+title: 自訂管理員角色的主控台檢視
+description: 使用本主題來協助您篩選 Intune 管理主控台檢視，以讓您的管理員僅查看其角色所需的項目。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a0b71719bc8b24291599cf50644647f2ffcac2e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9baa0325a90e152ffd6cf6a31cdd0a458588758a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>根據系統管理員角色自訂 Intune 主控台檢視
 

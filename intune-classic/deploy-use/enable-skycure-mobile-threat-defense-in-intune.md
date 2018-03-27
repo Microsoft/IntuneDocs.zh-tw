@@ -1,25 +1,25 @@
 ---
-title: "在 Intune 中啟用 Skycure Mobile Threat Defense"
-description: "在 Intune 傳統入口網站中啟用 Skycure Mobile Threat Defense。"
-keywords: 
+title: 在 Intune 中啟用 Skycure Mobile Threat Defense
+description: 在 Intune 傳統入口網站中啟用 Skycure Mobile Threat Defense。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce0e61a27f44f0c6cb00d79442d346db679a55ea
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Skycure Mobile Threat Defense
 
@@ -40,6 +40,6 @@ ms.lasthandoff: 10/10/2017
 
 如此即會完成 Intune 管理員主控台中的 Skycure 與 Intune 整合設定。 實作此解決方案的後續幾個步驟，涉及部署 Skycure for Work 應用程式，以及設定合規性原則。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [建立 Skycure Mobile Threat Defense 合規性原則](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

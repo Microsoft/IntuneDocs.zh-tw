@@ -1,25 +1,25 @@
 ---
-title: "Exchange Online 的應用程式存取"
-description: "本主題說明如何設定 MAM 應用程式的條件式存取原則。"
-keywords: 
+title: Exchange Online 的應用程式存取
+description: 本主題說明如何設定 MAM 應用程式的條件式存取原則。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a687af9396236af9685fd2bb423226a7e83797
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d582421ed842f1e5b87419e25c5d03ad7a138e99
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>建立 Exchange Online 條件式存取，只允許 MAM 支援的應用程式
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 10/10/2017
 若要從 [受限的使用者群組] 清單中**刪除使用者群組**，請開啟 [受限的使用者群組] 刀鋒視窗，反白顯示您要刪除的使用者群組，然後按一下**省略符號 (...)** 檢視 [刪除] 選項。 選擇 [刪除] 從清單中移除使用者群組。 您可以遵循相同的程序，從 [免套用使用者群組] 清單中移除使用者群組。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

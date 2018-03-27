@@ -1,25 +1,25 @@
 ---
-title: "註冊裝置"
-description: "行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。"
-keywords: 
+title: 註冊裝置
+description: 行動裝置管理 (MDM) 會使用註冊來管理裝置，並允許其存取資源。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b28ea0220425c3def2594fa9ddf795b33aaafc3d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99a4273a5f3ef2e1696d2fdc1c2a9b9f251b5b87
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>註冊裝置以在 Intune 中管理
 
@@ -126,7 +126,7 @@ Intune 可以管理下列裝置平台︰
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 - [裝置註冊的必要條件](prerequisites-for-enrollment.md)
 - [管理公司擁有的裝置](manage-corporate-owned-devices.md)
 - [支援的行動裝置及電腦](/intune/supported-devices-browsers#intune-supported-devices)
