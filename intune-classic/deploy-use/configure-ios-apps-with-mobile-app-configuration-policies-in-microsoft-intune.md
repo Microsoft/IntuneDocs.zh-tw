@@ -1,25 +1,25 @@
 ---
-title: "使用 iOS 行動應用程式設定原則"
-description: "您可以在 Intune 中使用行動裝置應用程式組態原則，來提供使用者執行 iOS 應用程式時可能需要的設定。"
-keywords: 
+title: 使用 iOS 行動應用程式設定原則
+description: 您可以在 Intune 中使用行動裝置應用程式組態原則，來提供使用者執行 iOS 應用程式時可能需要的設定。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31acadce1af55b2ce751b4c6b5bfead27fce3c8c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 10/10/2017
 
 如果使用者輸入不正確的設定，可能會增加技術支援中心的負擔，並使新應用程式的採用速度變慢。
 
-行動裝置應用程式組態原則可協助您避免這些問題；您可以在使用者執行應用程式之前，先在原則中將這些設定部署給使用者。 接著系統會自動提供這些設定，使用者不需要採取任何動作。
+行動裝置應用程式組態原則可協助您避免這些問題；您可以在使用者執行應用程式之前，先在原則中將這些設定部署給使用者。 這些設定會自動提供，使用者無須採取任何動作。
 
 您不會直接將這些原則部署給使用者和裝置。 您將會將原則與應用程式關聯，然後才部署應用程式。 每當應用程式檢查是否有原則時 (通常是第一次執行時)，便會使用這些原則設定。
 

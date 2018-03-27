@@ -1,25 +1,25 @@
 ---
-title: "啟用裝置註冊"
-description: "設定 MDM 授權單位並啟用對 iOS、Windows、Android 和 Mac 裝置的註冊。"
-keywords: 
+title: 啟用裝置註冊
+description: 設定 MDM 授權單位並啟用對 iOS、Windows、Android 和 Mac 裝置的註冊。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab0dfd5abc1cf2f1a0d8576e9072509ba51b4e57
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>啟用行動裝置的註冊
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="enable-device-enrollment"></a>啟用裝置註冊
 
-1. **讓 Intune 成為您的行動裝置管理授權單位** 在 [[Intune 管理主控台]](https://manage.microsoft.com/) 中，選擇 **[系統管理]** > **[行動裝置管理]**，然後選擇 **[工作]** 下方的 **[設定 MDM 授權單位]**。  
+1. **讓 Intune 成為您的行動裝置管理授權單位** 在 [Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [系統管理] > [行動裝置管理]，然後選擇 [工作] 下方的 [設定 MDM 授權單位]。  
 
 2. 在 [MDM 授權單位] 對話方塊中，選擇 [是]。
 
