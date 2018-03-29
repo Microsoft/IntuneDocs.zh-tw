@@ -1,25 +1,25 @@
 ---
-title: "將應用程式部署至 Android for Work 裝置"
-description: "您可以使用本主題進行同步處理，再將應用程式從 Google Play for Work 商店部署至Android for Work 裝置。"
-keywords: 
+title: 將應用程式部署至 Android for Work 裝置
+description: 您可以使用本主題進行同步處理，再將應用程式從 Google Play for Work 商店部署至Android for Work 裝置。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 將應用程式部署至 Android for Work 裝置
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 10/10/2017
 1. 移至 Google Play Developer Console ([play.google.com/apps/publish](https://play.google.com/apps/publish))。
 2. 使用您用來設定 Intune 和 Android for Work 間連線的相同帳戶進行登入。 如果您是第一次登入，您必須註冊並支付費用，才能成為 Google 開發人員計劃的會員。
 3. 在主控台中，選擇 「Add new application」 \(加入新的應用程式)。
-4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<*組織名稱*>) 使用此應用程式] 設定：<br>
+4. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<組織名稱>) 使用此應用程式] 設定：<br>
   ![只將應用程式提供給您組織使用的選項](media/restrict.png)<br>
 此作業可確保只有您的組織可以使用此應用程式，而不會在公用 Google Play 商店中提供。
 如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469)。
@@ -82,7 +82,7 @@ Android for Work 會要求您在 Google 受管理的 Play Web 主控台核准應
 
 請定期造訪受管理的 Google Play 主控台來檢查新的權限。 您可以設定 Google Play 在需要新權限以使用核准的應用程式時，寄送電子郵件給您或其他使用者。 如果您指派了應用程式，並發現它並未安裝在裝置上，請依下列步驟檢查是否有新的權限：
 
-1. 造訪 http://play.google.com/work
+1. 請瀏覽 http://play.google.com/work
 2. 使用您用來發行及核准應用程式的 Google 帳戶登入。
 3. 瀏覽 [更新] 索引標籤以查看是否有任何應用程式需要更新。  任何列出的應用程式都需要新的權限，而且在套用新權限之前不會指派。  
 

@@ -1,25 +1,25 @@
 ---
-title: "使用 Managed Browser 管理 Web 存取"
-description: "部署受管理的瀏覽器應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。"
-keywords: 
+title: 使用 Managed Browser 管理 Web 存取
+description: 部署受管理的瀏覽器應用程式，以限制網頁瀏覽和傳輸網頁資料至其他應用程式。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取
 
@@ -31,8 +31,8 @@ Managed Browser 是一個網頁瀏覽應用程式，您可以在組織中使用 
 
 >[!IMPORTANT]
 >Managed Browser 應用程式只會在裝置上另一個應用程式已擷取應用程式保護原則的情況下，擷取並套用 Intune 應用程式保護原則。<br><br> 此外，如果使用者從應用程式市集安裝 Managed Browser，且 Intune 未加以管理，則會適用下列行為︰<br /><br />
->**iOS**：Managed Browser 應用程式可以當做基本網頁瀏覽器使用，但某些功能將無法使用，且它將無法存取來自其他受 Intune 管理之應用程式的資料。<br />
-**Android**：無法使用 Managed Browser 應用程式。<br /><br />
+>**iOS** – Managed Browser 應用程式可以當作基本網頁瀏覽器使用，但某些功能將無法使用，且它將無法存取來自其他受 Intune 管理之應用程式的資料。<br />
+**Android** – 無法使用受控瀏覽器應用程式。<br /><br />
 如果使用者自行在版本早於 iOS 9 的 iOS 裝置上安裝 Managed Browser，您建立的任何原則管理都不會管理瀏覽器。 若要確保 Intune 會管理瀏覽器，使用者必須先將該應用程式解除安裝，您才可將其部署為受管理的應用程式以供其使用。 在 iOS 9 及更新版本，如果使用者自行安裝受管理瀏覽器，將會提示他們允許其受到原則管理。
 
 您可以針對下列裝置類型建立受管理的瀏覽器原則：

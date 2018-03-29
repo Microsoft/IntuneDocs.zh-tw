@@ -1,25 +1,25 @@
 ---
-title: "如何將 Windows Phone 企業營運應用程式新增至 Microsoft Intune"
-titlesuffix: 
-description: "了解如何將 Windows Phone 企業營運 (LOB) 應用程式新增至 Intune。"
-keywords: 
+title: 如何將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
+titlesuffix: ''
+description: 了解如何將 Windows Phone 企業營運 (LOB) 應用程式新增至 Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8466a77929620ef9ef7c1559dae62990730d0acd
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4053c2f932f6101397deb6bf0c3a142fa713aec4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 03/12/2018
 ## <a name="step-1---specify-the-software-setup-file"></a>步驟 1 - 指定軟體安裝檔
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 窗格中，選擇 [Mobile Apps]。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
 4. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
 6. 在 [新增應用程式] 窗格中，選擇 [企業營運應用程式]。

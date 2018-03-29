@@ -1,25 +1,25 @@
 ---
-title: "Mac OS X 原則設定"
-description: "Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設定。 此外，您可以使用 Apple Configurator 工具建立 Intune 所沒有的自訂設定。"
-keywords: 
+title: Mac OS X 原則設定
+description: Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設定。 此外，您可以使用 Apple Configurator 工具建立 Intune 所沒有的自訂設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Mac OS X 設定原則設定
 
@@ -63,7 +63,7 @@ Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設
 |----------------|---------------|
 |**當使用者安裝列出的應用程式時回報不符合規範**|顯示不允許使用者安裝的 Mac OS X 應用程式。 如果使用者安裝上述任何應用程式，**[不相容的應用程式報告]** 中會回報這些應用程式。|
 |**當使用者安裝未列出的應用程式時回報不符合規範**|顯示允許使用者安裝的 Mac OS X 應用程式。 如果使用者安裝其他任何應用程式，**[不相容的應用程式報告]**中會回報這些應用程式。|
-|**新增**|將應用程式加入選取的清單中。 指定您選擇的名稱，並選擇性地指定應用程式發行者及應用程式套件組合識別碼。 提示：若要尋找應用程式套件組合識別碼，請在已安裝應用程式的 Mac 電腦上，執行下列步驟：<ol><li>開啟應用程式安裝所在的資料夾 (例如 **/Applications**)。</li><li>選取 *&lt;應用程式名稱&gt;***.app** 套件組合，然後選擇 **[Show Package Contents (顯示封裝內容)]**。</li><li>開啟 **Info.plist** 檔案。</li><li>檢查已與索引鍵 **CFBundleIdentifier** 建立關聯的值。</li></ol>套件組合識別碼的格式為 **com.contoso.appname**。|
+|**新增**|將應用程式加入選取的清單中。 指定您選擇的名稱，並選擇性地指定應用程式發行者及應用程式套件組合識別碼。 提示：若要尋找應用程式套件組合識別碼，請在已安裝應用程式的 Mac 電腦上，執行下列步驟：<ol><li>開啟應用程式安裝所在的資料夾 (例如 **/Applications**)。</li><li>選取 &lt;應用程式名稱&gt;***.app* 搭售方案，然後選擇 [Show Package Contents] (顯示套件內容)。</li><li>開啟 **Info.plist** 檔案。</li><li>檢查已與索引鍵 **CFBundleIdentifier** 建立關聯的值。</li></ol>套件組合識別碼的格式為 **com.contoso.appname**。|
 |**匯入應用程式**|匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 套件組合識別碼」格式。|
 |**編輯**|編輯所選應用程式的名稱、發行者和應用程式套件組合識別碼。|
 |**刪除**|從清單中刪除選取的應用程式。|
@@ -91,14 +91,14 @@ Intune 提供一些內建的一般設定，您可在 Mac OS X 裝置上加以設
 開始之前，您必須安裝 Apple Configurator，並建立包含您要部署到使用者或裝置之設定的組態檔。 您可以從 [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)下載並了解 Apple Configurator。
 
 > [!NOTE]
-> Intune 不會回報 Mac OS X 自訂原則中個別設定的相容性。 不過，會報告原則的整體相容性。
+> Intune 不會回報 Mac OS X 自訂原則中個別設定的合規性。 不過，會報告原則的整體相容性。
 
 ### <a name="general-settings"></a>一般設定
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
-    |**Name**|輸入 Mac OS X 自訂原則的專用名稱，有助於您在 Intune 主控台中識別該原則。|
-    |**說明**|提供可給予 Mac OS X 自訂原則概觀的描述，以及可協助您找到該描述的其他相關資訊。|
+    |**名稱**|輸入 Mac OS X 自訂原則的專用名稱，有助於您在 Intune 主控台中識別該原則。|
+    |**描述**|提供可給予 Mac OS X 自訂原則概觀的描述，以及可協助您找到該描述的其他相關資訊。|
 
 
 ### <a name="custom-settings"></a>自訂設定

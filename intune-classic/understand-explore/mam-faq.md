@@ -1,25 +1,25 @@
 ---
-title: "MAM 和應用程式保護的相關常見問題"
-description: "本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。"
-keywords: 
+title: MAM 和應用程式保護的相關常見問題
+description: 本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+keywords: ''
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -35,12 +35,12 @@ ms.lasthandoff: 01/23/2018
 **MAM 應用程式保護的優點有哪些？** MAM 可保護應用程式內組織的資料。 透過 MAM-WE，包含機密資料的工作或學校相關應用程式幾乎可在任何裝置上管理，包含攜帶您自己的裝置 (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Intune 受控應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)官方清單。
 
 **MAM 支援哪些裝置組態？** Intune MAM 支援兩個組態︰
-  1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該使用位於下列位置的 Intune 獨立主控台：https://manage.microsoft.com。
+  1. **Intune MDM + MAM**：這是 MAM 首次啟動時所支援的第一個組態。 IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要管理使用 MDM + MAM 的應用程式，客戶應該於下列位置使用 Intune 獨立主控台：https://manage.microsoft.com。
 
   2. **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 http://portal.azure.com。
 
 
-## <a name="app-protection-policies"></a>應用程式保護原則
+## <a name="app-protection-policies"></a>應用程式防護原則
 
 **什麼是應用程式保護原則**？ 應用程式保護原則是確保組織資料能夠在受管理的應用程式中保持安全或受到管制的規則。 原則可以是在使用者嘗試存取或移動「公司」資料時，強制執行的一項規則，或者是當使用者在應用程式內時，禁止執行或受到監視的一組動作。
 

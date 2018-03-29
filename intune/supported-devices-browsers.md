@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune 支援的作業系統和瀏覽器"
-titleSuffix: 
-description: "列出 Intune 裝置管理所支援的裝置平台及瀏覽器"
-keywords: 
+title: Microsoft Intune 支援的作業系統和瀏覽器
+titleSuffix: ''
+description: 列出 Intune 裝置管理所支援的裝置平台及瀏覽器
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5a8962223bac0ed27b6a52404973f2c30abfc28b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>支援的作業系統與瀏覽器
 
@@ -109,7 +109,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 
 ### <a name="intune-classic-portal"></a>Intune 傳統入口網站
 
-Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
+Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com)) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
 
 下列 Silverlight 瀏覽器支援 Intune 主控台：
 - Internet Explorer 10 或更新版本

@@ -1,25 +1,25 @@
 ---
-title: "Lookout 整合疑難排解"
-description: "本主題描述如何針對 Lookout 整合的常見問題進行疑難排解"
-keywords: 
+title: Lookout 整合疑難排解
+description: 本主題描述如何針對 Lookout 整合的常見問題進行疑難排解
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Lookout 與 Intune 整合疑難排解
 
@@ -36,7 +36,7 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 
 * 電子郵件：enterprisesupport@lookout.com
 * 登入 [MTP 主控台](http://aad.lookout.com)，並瀏覽至 [支援] 模組。
-* 移至：https://enterprise.support.lookout.com/hc/requests，並提出支援要求。
+* 移至：https://enterprise.support.lookout.com/hc/requests 並提出支援要求。
 
 ## <a name="unable-to-sign-in"></a>無法登入
 當 Azure AD 全域系統管理員使用者尚未接受 Lookout 的初始設定時，您會看到下列錯誤。

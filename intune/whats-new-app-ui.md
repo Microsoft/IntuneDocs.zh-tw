@@ -6,7 +6,7 @@ keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日當週
+
+#### <a name="company-portal-for-android-visual-updates---976944---"></a>Android 視覺效果更新的公司入口網站 <!--976944 -->
+
+我們已更新 Android 版公司入口網站應用程式，以遵循 Android 的 [Material Design](https://material.io/) 指導方針。
+
+|之前|在|
+|---|---|
+|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
+|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
+|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日當週
 
@@ -381,13 +397,13 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 我們將在四月引進新的公司入口網站體驗，以及 UI 更新、簡化的工作流程和協助工具改善。 這將包含客戶驅動的增強功能，例如應用程式共用和改善的整體效能，讓您擁有更方便使用的體驗。
 
-我們已根據像您這類客戶的意見新增一些新功能，大幅改善現有功能和可用性：
+我們已根據客戶的意見反應來新增一些新功能，這將大幅改善現有功能和可用性：
 
--   整個網站的 UI 增強功能
+-   整個網站的 UI 改進
 -   可以共用應用程式的直接連結
-- 改善的大型應用程式目錄效能
+- 改善大型應用程式目錄的效能
 
-您不需要採取任何動作即可準備這項變更。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最後可能需要使用更新過的螢幕擷取畫面來更新終端使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。
+您不需要為此變更進行任何準備動作。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最後可能需要使用更新過的螢幕擷取畫面來更新終端使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。
 
 |已更新|上一頁|
 |---|---|
@@ -398,7 +414,7 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 我們將發行 iOS 版公司入口網站應用程式的重大使用者體驗更新。 此項更新的重點是全面視覺效果的重新設計，包括提高使用性和存取範圍的現代化外觀及操作。 保留目前所有的 iOS 公司入口網站功能。
 
-我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 註冊於 https://aka.ms/intune_ios_cp_testflight，以進行 TestFlight 存取。 如需這項更新的最新資訊，請參閱 https://aka.ms/iOS_companyportal_update。
+我們會透過 Apple TestFlight 計劃，提供更新公司入口網站應用程式的發行前版本讓您使用，並歡迎您提供意見反應。 在 https://aka.ms/intune_ios_cp_testflight 中註冊以存取 TestFlight。 如需這項更新的最新資訊，請參閱 https://aka.ms/iOS_companyportal_update。
 
 ![新 ios 公司入口網站應用程式的預告片影像](./media/ios-cp-app-redesign-1801-teaser.png)
 

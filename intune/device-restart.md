@@ -1,12 +1,11 @@
 ---
-title: 使用 Intune 從遠端重新啟動裝置
-titlesuffix: Microsoft Intune
-description: 了解如何在 Microsoft Intune 中使用重新啟動裝置動作，來遠端重新啟動裝置。
+title: 使用 Microsoft Intune 重新啟動裝置 - Azure | Micrososft Docs
+description: 在 Azure 入口網站中使用 [重新啟動] 遠端動作，重新啟動使用 Microsoft Intune 的 Windows 和 iOS 裝置。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +13,18 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 98b3403e3f45e1aa7169937a05692686d97d7362
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**重新啟動**裝置動作會導致您選擇的裝置重新啟動。 重新啟動時不會自動通知裝置擁有者，因此將會遺失工作。
+**重新啟動**裝置動作會導致您選擇的裝置重新啟動。 重新啟動時不會自動通知裝置擁有者，所以他們可能會遺失工作。
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -34,18 +33,17 @@ ms.lasthandoff: 03/17/2018
 - iOS - 支援
 
     > [!Note]  
-    > 此命令需要受監督的裝置和**裝置鎖定**存取權限。 裝置隨即重新啟動。 密碼鎖定的 iOS 裝置重新啟動後，不會重新加入 Wi-Fi 網路；重新啟動後，它們可能無法與伺服器通訊。
+    > 此命令需要受監督的裝置和**裝置鎖定**存取權限。 裝置隨即重新啟動。 以密碼鎖定的 iOS 裝置在重新啟動之後，不會重新加入 Wi-Fi 網路。 重新啟動之後，裝置可能無法與伺服器通訊。
 - macOS - 不支援
 - Android - 不支援
 
-## <a name="how-to-restart-a-device"></a>如何重新啟動裝置
+## <a name="restart-a-device"></a>重新啟動裝置
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
-5. 從您管理的裝置清單中，依序選擇裝置、[...其他]，然後選擇 [重新啟動] 裝置遠端動作。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [裝置] > [所有裝置]。
+4. 在您管理的裝置清單中，依序選取裝置、[其他]，然後選取 [重新啟動] 裝置遠端動作。
 
 ## <a name="next-steps"></a>接下來的步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。
+- 若要查看 [重新啟動] 裝置動作的狀態，請選取 [裝置] > [裝置動作]。

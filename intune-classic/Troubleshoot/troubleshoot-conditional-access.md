@@ -1,25 +1,25 @@
 ---
-title: "條件式存取的疑難排解"
-description: "您的使用者無法透過 Intune 條件式存取取得資源的存取權時該怎麼辦。"
-keywords: 
+title: 條件式存取的疑難排解
+description: 您的使用者無法透過 Intune 條件式存取取得資源的存取權時該怎麼辦。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/30/2018
 ### <a name="exchange-connector-logs"></a>Exchange Connector 記錄檔
 
 #### <a name="general-log-information"></a>一般記錄檔資訊
-若要檢視 Exchange Connector 記錄檔，請使用 [伺服器追蹤檢視器工具(伺服器追蹤檢視器工具)] (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
+若要檢視 Exchange Connector 記錄檔，請使用 [伺服器追蹤檢視器工具] (伺服器追蹤檢視器工具https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
 
 >[!NOTE]
 >記錄檔位於 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 一系列共包含 30 個檔案的記錄檔是以 *Connector0.log* 開始並在 *Connector29.log* 停止。 記錄檔會在累積 10MB 的資料後，換用另一個檔案。 一旦記錄檔達到 Connector29，將會覆寫先前的記錄檔，再次從 Connector0 開始。

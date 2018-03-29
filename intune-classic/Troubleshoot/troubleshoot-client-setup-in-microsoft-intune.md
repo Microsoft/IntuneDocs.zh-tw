@@ -1,25 +1,25 @@
 ---
-title: "用戶端設定疑難排解"
-description: "針對常見用戶端安裝問題進行疑難排解。"
-keywords: 
+title: 用戶端設定疑難排解
+description: 針對常見用戶端安裝問題進行疑難排解。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f9cb68fcac7abc895f51cf2c8758c2cf59b32759
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune 的用戶端設定疑難排解
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/30/2018
 
 ## <a name="client-installation-fails"></a>用戶端安裝失敗
 
--   如果 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中沒有顯示電腦的用戶端軟體部署警示，請檢查電腦的網際網路連線以及 Proxy 組態，並確定電腦可以與 服務 URL ([https://manage.microsoft.com](https://manage.microsoft.com/)) 進行通訊。然後重試用戶端軟體的安裝。
+-   如果 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中沒有顯示電腦的用戶端軟體部署警示，請檢查電腦的網際網路連線以及 Proxy 設定，並確定電腦可以與服務 URL ([https://manage.microsoft.com](https://manage.microsoft.com/)) 進行通訊。然後重試用戶端軟體的安裝。
 
 -   您可以在 [系統管理]  工作區中設定通知規則，以在發出用戶端軟體部署失敗警示時，傳送電子郵件給選取的收件者。 如需詳細資訊，請參閱[取得 Microsoft Intune 警示通知](/intune-classic/deploy-use/get-notified-by-alerts)。
 

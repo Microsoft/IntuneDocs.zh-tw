@@ -1,23 +1,23 @@
 ---
-title: "iOS 的 Microsoft Intune 裝置限制設定"
-titleSuffix: 
-description: "了解執行 iOS 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
-keywords: 
+title: iOS 的 Microsoft Intune 裝置限制設定
+titleSuffix: ''
+description: 了解執行 iOS 的裝置上可用以控制裝置設定與功能的 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/12/2018
 - **在裝置上使用 [清除所有內容及設定] 選項 (僅限受監督)** - 允許使用者可利用清除所有內容與裝置上的設定的選項。
 - **修改裝置名稱 (僅限受監督)** - 允許使用者變更裝置的名稱。
 - **修改通知設定 (僅限受監督)** - 允許使用者變更裝置通知設定。
-- **修改背景圖片 (僅限受監督)** - 允許使用者變更裝置的背景圖片。
 - **修改企業應用程式信任設定 (僅限受監督)** - 讓使用者能選擇信任不是從應用程式市集下載的應用程式。
 - **組態設定檔變更 (僅供監督)** - 允許使用者安裝組態設定檔。
 - **啟用鎖定 (僅限受監督)** - 在受監督的 iOS 裝置上將啟用鎖定啟用。
@@ -74,7 +73,6 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 - 鍵盤快速鍵 
 - 密碼修改 
 - 裝置名稱變更 
-- 底色圖案變更 
 - 自動應用程式下載 
 - 企業應用程式信任變更 
 - Apple Music 

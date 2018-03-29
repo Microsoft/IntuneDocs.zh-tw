@@ -1,25 +1,25 @@
 ---
-title: "使用裝置註冊計劃註冊 iOS 裝置"
+title: 使用裝置註冊計劃註冊 iOS 裝置
 titlesuffix: Microsoft Intune
-description: "了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。"
-keywords: 
+description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -42,10 +42,10 @@ ms.lasthandoff: 03/08/2018
 
 若要啟用 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
 
-此外，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)一起使用。
+DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)一起使用。 此外，macOS 目前不支援 DEP。
 
 ## <a name="what-is-supervised-mode"></a>何謂受監督模式？
-Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置可以透過更多控制進行管理。 因此，特別適用於屬公司擁有的裝置。 Intune 支援針對受監督模式設定裝置，以作為 Apple 裝置註冊方案 (DEP) 的一部分。 
+Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置可以透過更多控制進行管理。 因此，特別適用於屬公司擁有的裝置。 Intune 支援針對受監督模式設定裝置，以作為 Apple 裝置註冊方案 (DEP) 的一部分。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -172,7 +172,7 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
   ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
-  
+
 2. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
    ![已選取 [要求同步處理] 連結的 [同步處理] 刀鋒視窗](./media/enrollment-program-device-request-sync.png)
@@ -206,6 +206,4 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 ## <a name="distribute-devices"></a>散發裝置
 您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。
 
-請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。 
-
-
+請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。
