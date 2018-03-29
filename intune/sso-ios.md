@@ -1,23 +1,23 @@
 ---
-title: "設定 Microsoft Intune 以進行 iOS 裝置單一登入"
-titlesuffix: 
-description: "了解如何設定 Microsoft Intune 以進行 iOS 裝置單一登入。"
-keywords: 
+title: 設定 Microsoft Intune 以進行 iOS 裝置單一登入
+titlesuffix: ''
+description: 了解如何設定 Microsoft Intune 以進行 iOS 裝置單一登入。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>設定 Microsoft Intune 以進行 iOS 裝置單一登入
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/08/2018
 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [裝置設定]。
 4. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
 5. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
@@ -90,7 +90,7 @@ URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單�
 
 指出使用者裝置上哪個應用程式可以使用單一登入承載。
 
-`AppIdentifierMatches` 陣列必須包含符合應用程式套件組合識別碼的字串。 這些字串可能是完全相符項目 (例如：`com.contoso.myapp`)，或者使用 *\ 萬用字元指定套件組合識別碼首碼相符。 萬用字元必須出現在句號字元 (.) 之後，在字串結尾處，而且只能出現一次 (例如：`com.contoso.*`)。 包含萬用字元時，套件組合識別碼開頭為首碼的任何應用程式都會被授與帳戶存取權。
+`AppIdentifierMatches` 陣列必須包含符合應用程式套件組合識別碼的字串。 這些字串可能是完全相符項目 (例如：`com.contoso.myapp`)，或者使用 \* 萬用字元指定套件組合識別碼首碼相符。 萬用字元必須出現在句號字元 (.) 之後，在字串結尾處，而且只能出現一次 (例如：`com.contoso.*`)。 包含萬用字元時，套件組合識別碼開頭為首碼的任何應用程式都會被授與帳戶存取權。
 
 [應用程式名稱] 欄位用以新增使用者易記的名稱，以利識別套件組合識別碼。
 

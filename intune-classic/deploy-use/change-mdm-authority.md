@@ -1,24 +1,24 @@
 ---
-title: "將您的 MDM 授權單位變更為 Configuration Manager (混合式 MDM)"
-description: "了解如何將 MDM 授權單位從 Intune 獨立式變更為 Configuration Manager (混合式 MDM)。"
-keywords: 
+title: 將您的 MDM 授權單位變更為 Configuration Manager (混合式 MDM)
+description: 了解如何將 MDM 授權單位從 Intune 獨立式變更為 Configuration Manager (混合式 MDM)。
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>變更 MDM 授權單位
 自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 本主題提供步驟，讓您在無需將現有受管理裝置解除註冊並重新註冊的情況下，將從 Intune 設定且 MDM 授權單位設定為 [Microsoft Intune] \(獨立式) 的現有 Microsoft Intune 租用戶，設定為 [Configuration Manager] \(混合式 MDM)。
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/10/2017
 - 變更之前，MDM 授權單位在 Intune 管理主控台中會顯示為 [設定為 Microsoft Intune]\ (獨立部署)。
 - 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示 [設定為 Microsoft Intune] \(獨立租用戶)。
     > [!NOTE]    
-    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] \(混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
+    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] (混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
 
 - 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移除「裝置註冊管理員」角色。 如需詳細資料，請參閱[從 Intune 刪除裝置註冊管理員](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)。
 - 關閉所有已設定的裝置群組對應。 如需詳細資料，請參閱[在 Microsoft Intune 使用裝置群組對應分類裝置](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。
@@ -51,7 +51,7 @@ ms.lasthandoff: 10/10/2017
 - 如果您在變更 MDM 授權單位之前，是使用 Intune 獨立部署來管理 iOS 裝置，請務必確保先前用於 Intune 的 Apple Push Notification Service (APNs) 憑證已經更新，並已再次用來在 Configuration Manager (混合式) 中設定租用戶。    
 
     > [!IMPORTANT]  
-    > 如果針對混合式使用不同的 APNs 憑證，先前註冊的所有 iOS 裝置都會取消註冊，且您必須再次執行重新註冊這些裝置的程序。 在變更 MDM 授權單位之前，請務必了解先前於 Intune 中用來管理 iOS 裝置的 APNs 憑證為何。 在 Apple Push Certificates 入口網站 (https://identity.apple.com) 中尋找相同的憑證，識別擁有用來建立原始 APNs 憑證之 Apple ID 的使用者，並確定他可以更新該 APNs 憑證，以順利變更至新的 MDM 授權單位。  
+    > 如果針對混合式使用不同的 APNs 憑證，先前註冊的所有 iOS 裝置都會取消註冊，且您必須再次執行重新註冊這些裝置的程序。 在變更 MDM 授權單位之前，請務必了解先前於 Intune 中用來管理 iOS 裝置的 APNs 憑證為何。 在 Apple Push Certificates 入口網站 (https://identity.apple.com)) 中尋找相同的憑證，識別擁有用來建立原始 APNs 憑證之 Apple 識別碼的使用者，並確定他可以更新該 APNs 憑證，以順利變更至新的 MDM 授權單位。  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>將 MDM 授權單位變更為 Configuration Manager
 將 MDM 授權單位變更至 Configuration Manager (混合式) 的程序包含下列高階步驟：  
@@ -78,7 +78,7 @@ ms.lasthandoff: 10/10/2017
 
     1. 在 Configuration Manager 主控台中，移至 [系統管理] &gt; [雲端服務] &gt; [Microsoft Intune 訂閱]，然後選取 [建立 APNs 憑證要求] 來開啟 [要求 Apple Push Notification Service 憑證簽署要求] 對話方塊。  
     2. **瀏覽**至儲存新的憑證簽署要求 (.csr) 檔案的路徑。 在本機儲存憑證簽署要求 (.csr) 檔案。  
-    3. 按一下 [下載]。 下載新的 Microsoft Intune .csr 檔案，並由 Configuration Manager 儲存。   
+    3. 按一下 [下載] 。 下載新的 Microsoft Intune .csr 檔案，並由 Configuration Manager 儲存。   
 
     > [!IMPORTANT]
     > 您必須下載新的憑證簽署要求。 請不要使用現有的檔案，否則會失敗。  
@@ -120,7 +120,7 @@ ms.lasthandoff: 10/10/2017
 2. 選取您想要啟用的平台，然後按一下 [確定]。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 完成 MDM 授權單位的變更之後，請檢閱下列步驟：
 - 當 Intune 服務偵測到租用戶的 MDM 授權單位已變更之後，將會向所有已註冊的裝置傳送通知訊息，以要求簽入服務並進行同步處理 (這有別於一般的排程簽入)。 因此，當租用戶的 MDM 授權單位從 Intune 獨立部署變更至混合式之後，所有電源已開啟並處於線上的裝置都會連線至服務，接收新的 MDM 授權單位，並由混合式進行管理。 這些裝置的管理和保護不會有任何中斷。
 - 就算裝置在 MDM 授權單位變更期間 (或於結束後立即) 啟動電源並上線，在裝置能與處於新 MDM 授權單位之下的服務進行註冊之前，將會有最多 8 小時 (視下一個已排程一般簽入的時間而定) 的延遲。    

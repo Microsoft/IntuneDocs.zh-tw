@@ -1,49 +1,42 @@
 ---
-title: "在 Microsoft Intune 中建立 iOS 裝置相容性原則"
-titleSuffix: 
-description: "建立適用於 iOS 裝置的 Microsoft Intune 裝置相容性原則，以便您可以指定裝置必須符合的需求。"
-keywords: 
-author: msmimart
-ms.author: mimart
+title: 在 Microsoft Intune 中建立 iOS 裝置相容性原則 - Azure | Microsoft Docs
+description: 建立適用於 iOS 裝置的 Microsoft Intune 裝置相容性原則，即可輸入電子郵件帳戶、檢查已進行 JB 破解的裝置、檢查最低與最高作業系統，以及設定密碼限制，包括密碼長度和裝置停止活動。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置建立裝置合規性政策
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置新增裝置相容性原則
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-適用於 iOS 的 Intune 裝置相容性原則指定 iOS 設備必須符合的規則和設置，才能視為相容。 當您使用裝置相容性原則搭配條件式存取時，可以允許或封鎖公司資源的存取。 您也可以取得裝置報表，並針對不相容採取動作。 在 Intune Azure 入口網站中，可以為每個平台建立裝置相容性原則。 若要更了解建立相容性原則之前必須滿足的先決條件，請參閱[裝置相容性入門](device-compliance-get-started.md)主題。
+Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定，才能視為相容。 當您使用裝置相容性原則搭配條件式存取時，可以允許或封鎖公司資源的存取。 您也可以取得裝置報表，並針對不相容採取動作。 在 Intune Azure 入口網站中，可以為每個平台建立裝置相容性原則。 若要深入了解建立相容性原則之前必須滿足的先決條件，請參閱[開始使用 Microsoft Intune 裝置相容性原則](device-compliance-get-started.md)。
 
 下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
 
--------------------------------
-
-
 | **原則設定** | **iOS 8.0 及更新版本** |
 | --- | --- |
-| **PIN 或密碼設定** | 已修復 |   
+| **PIN 或密碼設定** | 已修復 |
 | **裝置加密** | 已修復 (藉由設定 PIN 碼) |
 | **已越獄或 Root 的裝置** | 隔離 (非設定)
 | **電子郵件設定檔** | 已隔離 |
 |**最低 OS 版本** | 已隔離 |
-| **最高 OS 版本** | 已隔離 |  
-| **Windows 健康情況證明** | 不適用 |  
-----------------------------
-
+| **最高 OS 版本** | 已隔離 |
+| **Windows 健康情況證明** | 不適用 |
 
 **已補救** = 裝置作業系統強制符合規範。 (例如，強制使用者設定 PIN。)
 
@@ -55,10 +48,10 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 入口網站中建立合規性政策
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-1. 從 [Intune] 頁面中，選擇 [裝置相容性]。 在 [管理] 中選擇 [原則]，然後選擇 [建立原則]。
-2. 輸入名稱及描述，然後選擇要套用此原則的平台。
-3. 選擇 [相容性需求]，在此指定 [系統安全性]、[裝置健全狀況] 及 [裝置屬性]。完成設定後，請選擇 [確定]。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [裝置相容性] > [原則] > [建立原則]。
+4. 輸入名稱及描述，然後選擇要套用此原則的平台。
+5. 選擇 [設定] 輸入 [電子郵件]、[裝置健全狀況]、[裝置屬性] 和 [系統安全性] 設定。 完成後，選擇 [確定]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ ms.lasthandoff: 03/08/2018
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>系統安全性設定
-
-### <a name="password"></a>密碼
-
-- **需要密碼才可解除鎖定行動裝置**：設定為 [是] 會要求使用者必須輸入密碼才能存取其裝置。 使用密碼的 iOS 裝置會予以加密。
-- **允許簡單密碼**︰設定為 [是] 會允許使用者建立如 **1234** 或 **1111** 的密碼。
-- **最小密碼長度**：指定密碼至少須包含的位數或字元數。
-- **必要的密碼類型**：指定使用者是否必須建立**英數**密碼或**數值**密碼。
-- **字元集數目下限**︰如果您將 [必要的密碼類型] 設定為 [英數]，請使用此設定以指定密碼必須包含的字元集數目下限。 四個字元集為：
-  - 小寫字母
-  - 大寫字母
-  - 符號
-  - 數字
-
-若設定較高的數目，使用者就必須建立較複雜的密碼。
-
-若是 iOS 裝置，此設定是指密碼中必須包含的特殊字元數 (例如 **!** 、**#**、**&amp;** )。
-
-- **在非使用狀態幾分鐘後需要輸入密碼**：指定使用者在經過多久閒置時間之後必須重新輸入密碼。
-- **密碼到期 (天數)**：選取密碼到期前，必須建立新密碼的天數。
-- **記住密碼歷程記錄**：此設定請與 [不得重複使用以前用過的密碼] 一起使用，以限制使用者建立以前用過的密碼。
-- **不得重複使用以前用過的密碼**：如果已選取 [記住密碼歷程記錄]，請指定不得重複使用的舊密碼數目。
-- **當裝置從閒置狀態返回時，需要密碼**：請搭配使用這項設定與 [在非使用狀態幾分鐘後需要輸入密碼] 設定。 如果裝置達到 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定的閒置時間，系統會提示使用者輸入密碼，才能存取該裝置。
-
-### <a name="email-profile"></a>電子郵件設定檔
+## <a name="email"></a>電子郵件
 
 - **必須由 Intune 管理電子郵件帳戶**：將此選項設定為 [是] 時，裝置必須使用部署到裝置的電子郵件設定檔。 在下列情況下，裝置視為不相容︰
   - 電子郵件設定檔部署到合規性政策的目標使用者群組以外的使用者群組。
@@ -111,14 +80,34 @@ ms.lasthandoff: 03/08/2018
 
 如需電子郵件設定檔的詳細資訊，請參閱[使用 Microsoft Intune 的電子郵件設定檔設定對公司電子郵件存取](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
 
-## <a name="device-health-settings"></a>裝置健全狀況設定
+## <a name="device-health"></a>Device health
 
-- **不得破解裝置或刷機**︰如果您啟用此設定，破解的裝置將不相容。
+- **已進行 JB 破解的裝置**：如果您啟用此設定，已進行 JB 破解的裝置即不相容。
+- **Require the device to be at or under the Device Threat Level** (裝置層級需要不高於裝置威脅層級)：選擇將裝置標記為不相容的最高威脅層級。 例如，如果您將威脅層級設定為 [中]，則中、低或安全的裝置都相容。 高威脅層級的裝置則不相容。
 
 ## <a name="device-properties"></a>裝置內容
 
-- **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容， 並顯示如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
-- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 系統管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+- **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容， 您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
+- **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取。 然後要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法存取公司資源。
+
+## <a name="system-security"></a>系統安全性
+
+### <a name="password"></a>密碼
+
+> [!NOTE]
+> 將相容性或設定原則套用至 iOS 裝置之後，系統每 15 分鐘會提示使用者設定密碼。 在設定密碼之前，使用者會一直收到系統提示。
+
+- **需要密碼才可解除鎖定行動裝置**：設定為 [是] 會要求使用者必須輸入密碼才能存取其裝置。 使用密碼的 iOS 裝置會予以加密。
+- **簡單密碼**︰設定為 [是] 會允許使用者建立如 **1234** 或 **1111** 這類的密碼。
+- **最小密碼長度**：輸入密碼至少須包含的位數或字元數。
+- **需要的密碼類型**：輸入使用者必須建立**英數字元**密碼或**數字**密碼。
+- **密碼中的非英數字元數目**：輸入密碼中必須包含的最少特殊字元 (&、#、%、! 等等) 數目。
+
+    若設定較高的數目，使用者就必須建立較複雜的密碼。
+
+- **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。
+- **密碼到期 (天數)**：選取密碼到期前，必須建立新密碼的天數。
+- **避免重複使用前幾個密碼**：輸入不可使用先前使用的多少個密碼。
 
 <!--- ## Next steps
 

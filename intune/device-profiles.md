@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune - Azure 中的裝置設定檔 | Microsoft Docs"
-description: "不同 Microsoft Intune 裝置設定檔的概觀，包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Windows defender、Windows 資訊保護，以及 Azure 入口網站的自訂裝置設定。 使用這些設定檔來管理及保護資料和公司中的裝置。"
-keywords: 
+title: Microsoft Intune - Azure 中的裝置設定檔 | Microsoft Docs
+description: 不同 Microsoft Intune 裝置設定檔的概觀，包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Windows defender、Windows 資訊保護，以及 Azure 入口網站的自訂裝置設定。 使用這些設定檔來管理及保護資料和公司中的裝置。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
@@ -120,7 +120,9 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 ## <a name="endpoint-protection-profile"></a>Endpoint Protection 設定檔
 [適用於 Windows 10 的 Endpoint protection 設定](endpoint-protection-windows-10.md) 可設定適用於 Windows 10 裝置的 BitLocker 及 Windows Defender 設定。
 
-此功能支援：僅限 Windows 10
+若要使用 Microsoft Intune 上架 Windows Defender 進階威脅防護 (WDATP)，請參閱 [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (使用行動裝置管理 (MDM) 工具設定端點)。
+
+這項功能支援：僅限 Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Windows 資訊保護設定檔
 [Windows 資訊保護](windows-information-protection-configure.md)可協助防範資料流失，但不會干擾員工的操作。 其也能協助保護企業應用程式與資料，防止企業擁有的裝置和員工在工作中使用的個人裝置意外外洩資料。 不需要變更您的環境或其他應用程式即可進行。
@@ -130,7 +132,7 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 ## <a name="custom-profile"></a>自訂設定檔
 [自訂設定](custom-settings-configure.md)包含指派不屬於 Intune 內建設定之裝置設定的能力。 例如，您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。 
 
-這項功能支援： 
+這項功能支援：
 
 - Android
 - iOS

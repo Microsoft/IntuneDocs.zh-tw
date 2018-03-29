@@ -1,25 +1,25 @@
 ---
-title: "iOS 原則設定"
-description: "建立原則，以在您使用 Intune 管理的 iOS 裝置上控制設定及功能。"
-keywords: 
+title: iOS 原則設定
+description: 建立原則，以在您使用 Intune 管理的 iOS 裝置上控制設定及功能。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 iOS 原則設定
 
@@ -48,11 +48,11 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |設定名稱|詳細資料|
 |----------------|-------|
 |**需要密碼才可解除鎖定行動裝置**|指定使用者是否需要輸入密碼才能存取其裝置。|
-|**所需的密碼類型**|指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。|
+|**必要的密碼類型**|指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。|
 |**密碼所需的複合字元數**|指定密碼中必須包含的符號字元數 (例如 **#** 或 **@**)。|
 |**密碼長度下限**|指定密碼的字元數下限。|
 |**允許簡單密碼**|允許簡單密碼，例如 **0000** 和 **1234**。|
-|**抹除裝置前允許的重複登入失敗次數**|指定失敗的登入嘗試次數，之後這個設定即抹除裝置。|
+|**重複登入失敗多少次之後抹除該裝置**|指定失敗的登入嘗試次數，之後這個設定即抹除裝置。|
 |**在非使用狀態幾分鐘後需要輸入密碼**<sup>1</sup>|指定使用者必須重新輸入密碼之前，裝置可保持閒置多長的時間。|
 |**密碼到期 (天數)**|指定必須變更裝置密碼前的天數。|
 |**記住密碼歷程記錄**|指定使用者是否可以使用先前使用過的密碼。|
@@ -222,7 +222,7 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 
 2. 複製頁面的 URL，並以此 URL 設定相容和不相容的應用程式清單，或您要在 kiosk 模式下執行的應用程式。
 
-範例： 搜尋 **Microsoft Word for iPad**。 您要使用的 URL 是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
+範例： 搜尋 **Microsoft Word for iPad**。 您使用的 URL 會是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
 
 > [!NOTE]
 > 您也可以先使用 iTunes 軟體尋找應用程式，再使用 [複製連結]  命令取得應用程式的 URL。
@@ -366,14 +366,14 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 開始之前，您必須安裝 Apple Configurator，並建立包含您要部署到使用者或裝置之設定的組態檔。 您可以從 [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) 下載並了解 Apple Configurator。
 
 > [!NOTE]
-> Intune 不會報告 iOS 自訂原則中個別設定的相容性。 不過，會報告原則的整體相容性。
+> Intune 不會報告 iOS 自訂原則中個別設定的合規性。 不過，會報告原則的整體相容性。
 
 ### <a name="general-settings"></a>一般設定
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
-    |**Name**|輸入 iOS 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
-    |**說明**|提供可給予 iOS 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
+    |**名稱**|輸入 iOS 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
+    |**描述**|提供可給予 iOS 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
 ### <a name="custom-settings"></a>自訂設定
 
@@ -383,5 +383,5 @@ Intune 提供一些內建的一般設定，您可在 iOS 裝置上加以設定�
 |**組態設定檔**|選擇 **[匯入]**，然後瀏覽到您使用 Apple Configurator 建立的組態設定檔。 **注意：** 確定您從 Apple Configurator 工具匯出的設定會與您部署 iOS 自訂原則之裝置上的 iOS 版本相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。|
     |**組態設定檔詳細資料**|顯示您所匯入組態設定檔的 XML 程式碼。|
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

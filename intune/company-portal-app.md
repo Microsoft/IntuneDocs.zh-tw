@@ -1,25 +1,25 @@
 ---
-title: "如何設定公司入口網站應用程式"
+title: 如何設定公司入口網站應用程式
 titleSuffix: Microsoft Intune
-description: "了解如何將公司自有商標套用到 Intune 公司入口網站應用程式。"
-keywords: 
+description: 了解如何將公司自有商標套用到 Intune 公司入口網站應用程式。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 03/02/2018
 |**公司名稱**|40|這是顯示為公司入口網站標題的名稱。|        
 |**IT 部門連絡人姓名**|40|此姓名會顯示在 [連絡 IT] 頁面中。|      
 |**IT 部門電話號碼**|20|此連絡電話號碼會顯示在 [連絡 IT] 頁面中。|        
-|IT 部門電子郵件地址|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|     
+|**IT 部門電子郵件地址**|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|     
 |**其他資訊**|120|顯示在 [連絡 IT] 頁面中。|      
-|**公司隱私權聲明 URL**|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須使用 **https://www.contoso.com** 此格式輸入有效的 URL。|        
+|**公司隱私權聲明 URL**|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須輸入格式為 **https://www.contoso.com** 的有效 URL。|        
 
 ## <a name="support-contacts"></a>支援連絡人     
 支援網站將會顯示在公司入口網站中，讓使用者能夠存取線上支援。        
@@ -52,7 +52,7 @@ ms.lasthandoff: 03/02/2018
 
 |欄位名稱|長度上限|詳細資訊|        
 |-|-|-|     
-|**支援網站 URL**|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 這個 URL 必須使用 **https://www.contoso.com** 的格式。如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|        
+|**支援網站 URL**|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 URL 的格式必須為 **https://www.contoso.com**。如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|        
 |**支援網站 URL**|40|這是支援網站的 URL 所顯示的易記名稱。 若只指定支援網站 URL 而未指定易記名稱，將會在公司入口網站的 [連絡 IT] 頁面上顯示 [移至 IT 部門網站]。       
 
 ## <a name="company-branding-customization"></a>公司商標自訂       

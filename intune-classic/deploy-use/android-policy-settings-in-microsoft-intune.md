@@ -1,25 +1,25 @@
 ---
-title: "Android 和 Samsung KNOX 原則設定"
-description: "建立可以在您使用 Intune 管理的 Android 裝置上控制設定及功能的原則。"
-keywords: 
+title: Android 和 Samsung KNOX 原則設定
+description: 建立可以在您使用 Intune 管理的 Android 裝置上控制設定及功能的原則。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX Standard 原則設定
 
@@ -48,7 +48,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 |----------------|-|----------------|----------------|
 |**需要密碼來解除行動裝置鎖定**|指定支援的裝置上是否需要密碼。|是|是|
 |**最小密碼長度**|指定密碼長度下限。|是|是|
-|**抹除裝置前允許的重複登入失敗次數**|指定抹除裝置前允許的登入失敗次數。|是|是|
+|**重複登入失敗多少次之後抹除該裝置**|指定抹除裝置前允許的登入失敗次數。|是|是|
 |**關閉螢幕前的非使用狀態分鐘數**|指定裝置自動鎖定之前，需停止活動達幾分鐘。|是|是|
 |**密碼到期 (天數)**|指定必須變更密碼的間隔天數。|是|是|
 |**記住密碼歷程記錄**|指定要記憶先前使用過的密碼數目。|是|是|
@@ -175,7 +175,7 @@ Intune 提供一系列您可以在 Android 裝置上設定的內建一般設定�
 
 開啟應用程式的安裝頁面，然後將 URL 複製到剪貼簿。 您現在可以使用在相容或不相容的應用程式清單中使用此 URL。
 
-範例：在 Google Play 中搜尋 Microsoft Office Mobile。 您要使用的 URL 是 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
+範例：在 Google Play 中搜尋 Microsoft Office Mobile。 您使用的 URL 會是 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
 
 ## <a name="custom-policy-settings"></a>自訂原則設定
 使用 Microsoft Intune **Android 自訂組態原則**來部署 OMA-URI 設定，此設定可用來控制 Android 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
@@ -187,8 +187,8 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 |設定名稱|詳細資料|
     |----------------|--------------------|
-    | **Name** |輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
-    | **說明** |提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
+    | **名稱** |輸入 Android 自訂原則的唯一名稱，有助於您在 Intune 主控台中識別該原則。|
+    | **描述** |提供可給予 Android 自訂原則概觀的說明，以及可協助您找到該說明的其他相關資訊。|
 
 ### <a name="oma-uri-settings"></a>OMA-URI 設定
 
@@ -212,5 +212,5 @@ Intune 目前支援有限數目的 Android 自訂原則。 請參閱本主題中
 
 您可以找到支援的 Samsung KNOX 裝置清單，以及 [Intune 支援的裝置](/intune/supported-devices-browsers.md#intune-supported-devices)清單。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

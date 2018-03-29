@@ -1,24 +1,24 @@
 ---
-title: "部署 Lookout for Work 應用程式"
-description: "設定及部署適用於 Android 的 Lookout for Work 應用程式。"
+title: 部署 Lookout for Work 應用程式
+description: 設定及部署適用於 Android 的 Lookout for Work 應用程式。
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>設定及部署 Lookout for Work 應用程式
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="android-google-play-store-app"></a>Android (Google Play 商店應用程式)
 
 1.  在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com)中，移至 [應用程式]，然後選擇 [新增應用程式]。
-2.  在發行者的 [軟體安裝程式] 頁面上，選擇 [外部連結]，然後指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  在發行者的 [軟體安裝] 頁面上，選擇 [外部連結]，並指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >請勿按下要求 Managed Browser 的方塊。
 
@@ -86,11 +86,11 @@ ms.lasthandoff: 10/10/2017
   選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在裝置上開啟已部署的應用程式時，會發生什麼事
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟動應用程式，並選擇 [使用 Azure Active Directory 登入] 的選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟用應用程式，並選擇 [使用 Azure Active Directory 登入] 選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
 
 * [系統提示您在 Android 裝置上安裝 Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
 * [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 * [在 Intune 中建立 Lookout 裝置合規性原則](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

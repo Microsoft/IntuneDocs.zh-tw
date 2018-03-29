@@ -1,31 +1,31 @@
 ---
-title: "使用 Microsoft Intune 從 iOS 裝置移除使用者"
-titlesuffix: 
-description: "了解如何使用 Intune 從共用的 iOS 裝置中移除使用者。"
-keywords: 
+title: 使用 Microsoft Intune 從 iOS 裝置移除使用者
+titlesuffix: ''
+description: 了解如何使用 Intune 從共用的 iOS 裝置中移除使用者。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b2321de0c0541111fdf6f18345bd952ca8b5448
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 01928439f3a4d9280036b2e1a9576175ef425050
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>從共用的 iOS 裝置中移除使用者
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[移除使用者] 動作會在已使用 [iOS 教育設定檔](education-settings-configure-ios.md)進行設定，以管理 iOS Classroom 應用程式的共用 iPad 裝置上，將您選擇的使用者從本機快取中刪除。 
+[移除使用者] 動作會刪除您從共用 iPad 裝置本機快取中選取的使用者。 iPad 裝置必須使用 [iOS 教育設定檔](education-settings-configure-ios.md)設定，來管理 iOS Classroom 應用程式。 
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 03/02/2018
 - macOS - 不支援
 - Android - 不支援
 
-## <a name="how-to-remove-a-user"></a>如何移除使用者
+## <a name="remove-a-user"></a>移除使用者
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選擇 iOS 裝置。
-6. 在該裝置的刀鋒視窗中，選擇 [使用者]。
-7. 從清單中，以滑鼠右鍵按一下您想要移除的使用者，然後選擇 [移除使用者]。
+2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格中，選取 [裝置]。
+4. 在 [裝置] 窗格中，選取 [所有裝置]。
+5. 在您管理的裝置清單中選取 iOS 裝置。
+6. 在裝置的窗格中選取 [使用者]。
+7. 在清單中，以滑鼠右鍵按一下您想要移除的使用者，然後選取 [移除使用者]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置] 刀鋒視窗中，選擇 [裝置動作]。
+- 若要查看 [移除使用者] 動作的狀態，請選取 [裝置] > [裝置動作]。

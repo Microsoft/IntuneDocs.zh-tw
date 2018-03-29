@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 啟動 iOS 遺失模式 - Azure | Microsoft Docs"
-description: "開啟或啟動遺失模式，以使用 Microsoft Intune 自訂遺失或遭竊之 iOS 裝置鎖定畫面顯示的訊息。 此外，在使用遺失模式動作時，取得安全性和隱私權資訊的詳細資訊。"
-keywords: 
+title: 使用 Microsoft Intune 啟動 iOS 遺失模式 - Azure | Microsoft Docs
+description: 開啟或啟動遺失模式，使用 Microsoft Intune 自訂顯示在遺失或遭竊之 iOS 裝置鎖定畫面中的訊息。 此外，在使用遺失模式動作時，取得安全性和隱私權資訊的詳細資料。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 在 iOS 裝置上啟用遺失模式
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 - iOS 9.3 和更新版本
 
-下列系統**不**支援這項功能： 
+下列系統不支援這項功能： 
 - Windows
 - Windows Phone
 - macOS
@@ -38,9 +38,9 @@ ms.lasthandoff: 03/08/2018
 ## <a name="enable-lost-mode"></a>啟用遺失模式
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置]，然後選取 [所有裝置]。
-4. 從您管理的裝置清單中，依序選擇 iOS 裝置、[...其他]，然後選擇 [Lost mode] (遺失模式) 遠端動作。
+4. 從您管理的裝置清單中，選擇 iOS 裝置，然後選擇 [...More] (...其他)。 然後選擇 [遺失模式] 遠端動作。
 5. 在**遺失模式**中啟用這項功能。 然後，輸入要顯示的訊息及連絡人電話號碼。
 6. 按一下 [確定] 以儲存您的變更。
 

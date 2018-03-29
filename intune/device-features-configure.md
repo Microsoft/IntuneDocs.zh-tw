@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 建立 iOS 或 macOS 裝置設定檔 - Azure | Micrososft Docs"
-description: "新增或建立 iOS 或 macOS 裝置設定檔，然後在 Microsoft Intune 中設定 AirPrint、AirPlay、主畫面配置、應用程式通知、共用裝置、單一登入以及 web 內容篩選器的設定"
-keywords: 
+title: 使用 Microsoft Intune 建立 iOS 或 macOS 裝置設定檔 - Azure | Micrososft Docs
+description: 新增或建立 iOS 或 macOS 裝置設定檔，然後在 Microsoft Intune 中設定 AirPrint、AirPlay、主畫面配置、應用程式通知、共用裝置、單一登入以及網路內容篩選器的設定。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3de7d1bccd57da1290987a714416373cbdd2b0d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 291ad9cb8b07893f538171c365110618ea376388
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS 或 macOS 裝置功能設定
 
@@ -38,24 +38,24 @@ ms.lasthandoff: 03/09/2018
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 依序選取 [裝置設定]、[設定檔]，然後選取 [建立設定檔]。
+3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 4. 輸入下列內容：
 
-  - **名稱**：為新的設定檔輸入描述性名稱
-  - **描述**：(選擇性但建議使用) 輸入設定檔的描述
-  - **平台**：選取您的平台類型：
-    - **iOS**
-    - **macOS**
-  - **設定檔類型**：選取 [裝置功能]
-  - **設定**：設定取決於您選擇的平台。 下列文章會描述每個設定檔類型的設定︰
+   - **名稱**：為新的設定檔輸入描述性名稱。
+   - **描述**：輸入設定檔的描述。 (這是選用項目，但建議使用。)
+   - **平台**：選取您的平台類型：
+     - **iOS**
+     - **macOS**
+   - **設定檔類型**：選取 [裝置功能]。
+   - **設定**：設定取決於您選擇的平台。 下列文章會描述每個設定檔類型的設定︰
 
-    - [適用於 iOS 和 macOS 裝置的 AirPrint 設定](air-print-settings-ios-macos.md)
-    - [適用於 iOS 裝置的 AirPlay 設定](airplay-settings-ios.md)
-    - [適用於 iOS 的主畫面配置設定](home-screen-settings-ios.md)
-    - [適用於 iOS 的應用程式通知設定](app-notification-settings-ios.md)
-    - [適用於 iOS 的共用裝置組態設定](shared-device-settings-ios.md)
-    - [設定 Intune 以進行 iOS 裝置單一登入](sso-ios.md)
-    - [適用於 iOS 的網路內容篩選器](web-content-filter-settings-ios.md)
+     - [適用於 iOS 和 macOS 裝置的 AirPrint 設定](air-print-settings-ios-macos.md)
+     - [適用於 iOS 裝置的 AirPlay 設定](airplay-settings-ios.md)
+     - [適用於 iOS 的主畫面配置設定](home-screen-settings-ios.md)
+     - [適用於 iOS 的應用程式通知設定](app-notification-settings-ios.md)
+     - [適用於 iOS 的共用裝置組態設定](shared-device-settings-ios.md)
+     - [設定 Intune 以進行 iOS 裝置單一登入](sso-ios.md)
+     - [適用於 iOS 的網路內容篩選器](web-content-filter-settings-ios.md)
 
 5. 當您完成時，請選取 [確定]，然後選擇 [建立] 儲存變更。
 

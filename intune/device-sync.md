@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 同步處理裝置 - Azure | Micrososft Docs"
-description: "同步處理使用 Microsoft Intune 註冊或管理的裝置，以取得最新的原則和動作。 包含使用 Azure 入口網站同步處理的步驟，並列出可重試的錯誤碼。"
-keywords: 
+title: 使用 Microsoft Intune 同步處理裝置 - Azure | Micrososft Docs
+description: 同步處理使用 Microsoft Intune 註冊或管理的裝置，以取得最新的原則和動作。 使用 Azure 入口網站包含要同步處理的步驟，並列出可重試的錯誤碼。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>同步處理裝置以取得最新的原則和動作 - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -38,14 +38,14 @@ ms.lasthandoff: 03/08/2018
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。 
-3. 在 **Intune** 中選取 [裝置]，然後選取 [所有裝置]。
-4. 從您管理的裝置清單中，依序選擇裝置、[...其他]，然後選取 [同步] 動作。
+3. 在 [Intune] 中選取 [裝置] > [所有裝置]。
+4. 在您管理的裝置清單中，依序選取裝置、[其他]，然後選取 [同步處理]。
 5. 選取 [是] 確認。
 
 
 ## <a name="retryable-error-codes"></a>可重試的錯誤碼
 
-當系統管理員執行 [同步] 裝置動作時，失敗但引發可重試錯誤碼的 iOS 和 Androids 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
+當系統管理員執行 [同步處理] 裝置動作時，失敗但引發可重試錯誤碼的 iOS 和 Androids 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
 
 
 | 錯誤碼  | 建議的描述 | 可重試 |
@@ -62,6 +62,6 @@ ms.lasthandoff: 03/08/2018
 | 2016330889 | 安全連線失敗。 請重設您的連線。 | 是|
 | 2016330888 | 伺服器信任評估失敗。 | 否|
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-選擇 [裝置動作] 以查看同步動作的狀態。 
+- 選取 [裝置動作] 以查看同步處理動作的狀態。 

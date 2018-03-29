@@ -1,22 +1,22 @@
 ---
-title: "關於 Android for Work"
-description: "使用 Intune 管理 Android for Work 可為使用 Android 裝置工作的使用者，提供額外的管理功能與隱私權。"
-keywords: 
+title: 關於 Android for Work
+description: 使用 Intune 管理 Android for Work 可為使用 Android 裝置工作的使用者，提供額外的管理功能與隱私權。
+keywords: ''
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 裝置
 
@@ -56,7 +56,7 @@ Intune 會在將 Gmail 及 Nine Work 應用程式當成工作應用程式管理�
 
 若是對 Android for Work 裝置使用 Exchange ActiveSync 條件式存取，必須使用 Gmail 或 Nine Work 電子郵件應用程式。 此外也支援 Android 版的 Microsoft Outlook 應用程式，或其他任何經由 ADAL 使用新式驗證的電子郵件應用程式。 深入了解[公司電子郵件的電子郵件設定檔](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。
 
-## <a name="app-protection-policies"></a>應用程式保護原則
+## <a name="app-protection-policies"></a>應用程式防護原則
 
 在工作設定檔和個人設定檔中完全支援已套用的應用程式保護原則。 您可以在 Android 應用程式發行主控台 (https://play.google.com/apps/publish) 中發行企業營運應用程式。 此主控台提供可以讓您將應用程式設為不對組織公開的選項。 深入了解 [Android for Work 合規性政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)。 如需關於應用程式保護原則的一般資訊，請參閱[應用程式原則](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
