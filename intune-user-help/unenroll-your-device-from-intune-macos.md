@@ -1,27 +1,27 @@
 ---
-title: "從 Intune 取消註冊您的 macOS 裝置 | Microsoft Docs"
-description: "描述從 Intune 取消註冊 macOS 裝置的方式"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 從 Intune 取消註冊您的 macOS 裝置 | Microsoft Docs
+description: 描述從 Intune 取消註冊 macOS 裝置的方式
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dd79fc4d-6265-4dd0-87fb-8ab66b1cf692
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 142c4126957ded6a0bcb86ea797be7d2fb33f36a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c61b0d62ea2b12712e47e0e83b21cc40b7d1e9ef
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>從 Intune 取消註冊 macOS 裝置
 

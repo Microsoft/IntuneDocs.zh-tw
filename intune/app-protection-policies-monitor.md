@@ -1,28 +1,28 @@
 ---
-title: "如何監視應用程式保護原則"
+title: 如何監視應用程式保護原則
 titleSuffix: Microsoft Intune
-description: "監視 Intune 中行動應用程式管理原則的合規性狀態。"
-keywords: 
+description: 監視 Intune 中行動應用程式管理原則的合規性狀態。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 **若您不是在 Azure 入口網站中**，本主題會說明在 Intune 傳統入口網站中[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="summary-view"></a>摘要檢視
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格上，選擇 [行動應用程式]。
 4. 在 [行動應用程式] 工作負載中，選擇 [監視] > [應用程式保護狀態]，以查看摘要檢視︰
 

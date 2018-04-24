@@ -1,27 +1,27 @@
 ---
-title: "手動同步您的 Windows 裝置 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 手動同步您的 Windows 裝置 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
 
@@ -65,10 +65,10 @@ ms.lasthandoff: 01/25/2018
 
 2. 選擇工作或學校帳戶。 根據公司支援人員設定項目的方式，您可能會看到兩個帳戶，其與下列所示的範例類似。 其中一個帳戶旁邊會有公事包，另一個帳戶旁邊則會有 Microsoft 標誌。
 
-    - 如果您看到具有公事包的帳戶，請選取它，並尋找其下的 [資訊] 按鈕。
-    - 如果您看到具有 Microsoft 標誌的帳戶，請選取該帳戶，並尋找其下的 [資訊] 按鈕。
+   - 如果您看到具有公事包的帳戶，請選取它，並尋找其下的 [資訊] 按鈕。
+   - 如果您看到具有 Microsoft 標誌的帳戶，請選取該帳戶，並尋找其下的 [資訊] 按鈕。
 
-    ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-info-button.png)
+     ![選擇公事包或 Microsoft 標誌旁邊的帳戶名稱](./media/win10pc-rs1-sync-info-button.png)
 
 3. 選擇 [資訊] 按鈕。 隨即開啟與下面範例類似的對話方塊。
 

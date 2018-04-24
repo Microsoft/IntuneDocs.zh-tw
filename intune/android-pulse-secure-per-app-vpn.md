@@ -1,12 +1,12 @@
 ---
-title: Android 的個別應用程式 VPN 設定檔 - Pulse Secure
+title: 自訂 Android 的個別應用程式 VPN 設定檔
 titlesuffix: Microsoft Intune
 description: 了解如何針對 Microsoft Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。
 keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc87363169cd2d967b2fea9683926970c18c5e97
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 96d164c0f4274a6d1fc81a0c7f9d86cccfec1fb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。
+您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 或 Citrix 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。
 
-在您將原則指派至 Android 裝置或使用者群組後，使用者應該啟動 PulseSecure VPN。 PulseSecure 接著只允許來自指定應用程式的流量使用開放的 VPN 連線。
+在您將原則指派給 Android 裝置或使用者群組之後，使用者應該啟動 Pulse Secure 或 Citrix VPN 用戶端。 接著，VPN 用戶端 就只會允許來自指定應用程式的流量使用開啟的 VPN 連線。
 
 > [!NOTE]
 >
-> 此設定檔僅支援 Pulse Secure 連線類型。
+> 此設定檔僅支援 Pulse Secure 和 Citrix 連線類型。
 
 
 ## <a name="step-1-create-a-vpn-profile"></a>步驟 1︰建立 VPN 設定檔

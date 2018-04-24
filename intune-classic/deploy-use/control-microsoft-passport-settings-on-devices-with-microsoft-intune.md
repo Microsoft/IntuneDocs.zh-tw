@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 63532456edbaf3579b9b6da8c0f376e7f4409c88
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b841bcf97ecb213f75575508362de0234bc8a2b9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>使用 Microsoft Intune 控制裝置上的 Windows Hello 企業版設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 與 Windows Hello 企業版 (先前稱為 Microsoft Passport for Work) 整合運作，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡的替代登入方法。
 
@@ -37,13 +37,13 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 > [!IMPORTANT]
 > 在年度更新版之前的 Windows 10 電腦和行動裝置版本中，您可以設定兩個不同的 PIN 碼，以用來驗證資源：
-- 「裝置 PIN」可以用來解除鎖定裝置及連線到雲端資源。
-- 「公司 PIN」是用來在使用者的個人裝置 (BYOD) 上存取 Azure AD 資源。
-
->在年度更新版中，這兩個 PIN 已經合併成一個單一的裝置 PIN 。
-任何您設定來控制裝置 PIN 的 Intune 設定原則，以及您所設定的 Windows Hello 企業版原則，現在都會設定此一新 PIN 值。
-如果您將這兩種原則都設定成可以控制該 PIN，則 Windows Hello 企業版原則將會套用到 Windows 10 電腦和行動裝置。
-若要確保解決原則衝突，且正確套用 PIN 原則，請更新您的 Windows Hello 企業版原則，以符合您設定原則中的設定，並要求使用者在「公司入口網站」App 中同步他們的裝置。
+> - 「裝置 PIN」可以用來解除鎖定裝置及連線到雲端資源。
+> - 「公司 PIN」是用來在使用者的個人裝置 (BYOD) 上存取 Azure AD 資源。
+> 
+> 在年度更新版中，這兩個 PIN 已經合併成一個單一的裝置 PIN 。
+> 任何您設定來控制裝置 PIN 的 Intune 設定原則，以及您所設定的 Windows Hello 企業版原則，現在都會設定此一新 PIN 值。
+> 如果您將這兩種原則都設定成可以控制該 PIN，則 Windows Hello 企業版原則將會套用到 Windows 10 電腦和行動裝置。
+> 若要確保解決原則衝突，且正確套用 PIN 原則，請更新您的 Windows Hello 企業版原則，以符合您設定原則中的設定，並要求使用者在「公司入口網站」App 中同步他們的裝置。
 
 
 

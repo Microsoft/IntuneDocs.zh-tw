@@ -1,27 +1,27 @@
 ---
-title: "如何教育終端使用者關於 Microsoft Intune 的事項 | Microsoft Intune"
-description: "與您的使用者共用資訊，以成功完成 Intune 部署。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 如何教育終端使用者關於 Microsoft Intune 的事項 | Microsoft Intune
+description: 與您的使用者共用資訊，以成功完成 Intune 部署。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: 7fc524fe3f31d886427e5ebff56d3f2cb7b14693
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何指導使用者使用 Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune 可協助您提供行動裝置給您的工作人員，同時保護公司資料。 有許多步驟可確保成功部署，包括透過[免費試用](app-sdk.md)來評估 Intune。
 

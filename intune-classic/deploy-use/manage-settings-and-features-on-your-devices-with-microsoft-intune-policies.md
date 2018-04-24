@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e639dda2509ab51bfcf6d0976be517e220800e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>透過 Microsoft Intune 原則管理裝置上的設定和功能
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune *原則*是控制行動裝置和電腦功能的設定群組。 您可以使用包含建議或自訂設定的範本建立原則，然後將原則部署到裝置或使用者群組。
 

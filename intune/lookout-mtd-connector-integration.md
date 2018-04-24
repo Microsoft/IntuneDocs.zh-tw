@@ -1,25 +1,25 @@
 ---
-title: "設定 Lookout 與 Microsoft Intune 的整合"
-titlesuffix: 
-description: "深入了解整合 Intune 與 Lookout Mobile Threat Defense 來控制行動裝置對公司資源的存取。"
-keywords: 
+title: 設定 Lookout 與 Microsoft Intune 的整合
+titlesuffix: ''
+description: 深入了解整合 Intune 與 Lookout Mobile Threat Defense 來控制行動裝置對公司資源的存取。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -54,32 +54,32 @@ ms.lasthandoff: 03/20/2018
 2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)以取得尋找訂用帳戶 ID 的提示。
 
 3. 尋找您的 Azure AD 群組識別碼。 Lookout 主控台支援 2 個存取層級：  
-  * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
-  * **限制存取**︰此群組中的使用者無法存取 Lookout 主控台的幾項設定及註冊相關模組，但可唯讀存取 Lookout 主控台的 [安全性原則] 模組。  
+   * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
+   * **限制存取**︰此群組中的使用者無法存取 Lookout 主控台的幾項設定及註冊相關模組，但可唯讀存取 Lookout 主控台的 [安全性原則] 模組。  
 
-    > [!TIP] 
-    > 如需權限的詳細資訊，請參閱 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
+     > [!TIP] 
+     > 如需權限的詳細資訊，請參閱 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
 
-    > [!NOTE] 
-    > 在 **Azure AD 管理入口網站**中，您可以在群組的 [屬性] 頁面上找到 [群組物件識別碼]。
+     > [!NOTE] 
+     > 在 **Azure AD 管理入口網站**中，您可以在群組的 [屬性] 頁面上找到 [群組物件識別碼]。
 
 4. 收集這項資訊之後，請連絡 Lookout 支援 (電子郵件︰enterprisesupport@lookout.com)。 Lookout 支援部門會與您的主要連絡人合作，一同登入您的訂用帳戶，並使用您收集的資訊來建立 Lookout 企業帳戶。
 
 ## <a name="configure-your-subscription"></a>設定訂閱
 
-1. 當 Lookout 支援建立了您的 Lookout Enterprise 帳戶後，Lookout 會傳送電子郵件給您的公司主要連絡人，並提供下列登入 URL 的連結：https://aad.lookout.com/les?action=consent。
+1. 當 Lookout 支援建立了您的 Lookout Enterprise 帳戶後，Lookout 會傳送電子郵件給您的公司主要連絡人，並提供下列登入 URL 的連結：<https://aad.lookout.com/les?action=consent>。
 
-2.  第一次登入 Lookout 主控台必須使用具有 Azure AD 全域管理員角色的使用者帳戶，才能註冊您的 Azure AD 租用戶。 以後的登入不需要此層級的 Azure AD 權限。 隨即顯示同意頁面。 選擇 [接受] 以完成註冊。 接受並同意之後，會將您重新導向至 Lookout 主控台。
+2. 第一次登入 Lookout 主控台必須使用具有 Azure AD 全域管理員角色的使用者帳戶，才能註冊您的 Azure AD 租用戶。 以後的登入不需要此層級的 Azure AD 權限。 隨即顯示同意頁面。 選擇 [接受] 以完成註冊。 接受並同意之後，會將您重新導向至 Lookout 主控台。
 
-    ![Lookout 主控台之第一次登入頁面的螢幕擷取畫面](./media/lookout_mtp_initial_login.png)
+   ![Lookout 主控台之第一次登入頁面的螢幕擷取畫面](./media/lookout_mtp_initial_login.png)
 
-3.  在 [Lookout 主控台](https://aad.lookout.com)中，從 [系統] 模組選擇 [連接器] 索引標籤，然後選取 [Intune]。
+3. 在 [Lookout 主控台](https://aad.lookout.com)中，從 [系統] 模組選擇 [連接器] 索引標籤，然後選取 [Intune]。
 
-    ![開啟 [連接器] 索引標籤並醒目提示 [Intune] 選項之 Lookout 主控台的螢幕擷取畫面](./media/lookout_mtp_setup-intune-connector.png)
+   ![開啟 [連接器] 索引標籤並醒目提示 [Intune] 選項之 Lookout 主控台的螢幕擷取畫面](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  移至 [連接器] > [連線設定]，設定 [Heartbeat Frequency]\(活動訊號頻率) (以分鐘為單位)。
+4. 移至 [連接器] > [連線設定]，設定 [Heartbeat Frequency]\(活動訊號頻率) (以分鐘為單位)。
 
-    ![顯示已設定 [活動訊號頻率] 之 [連線設定] 索引標籤的螢幕擷取畫面](./media/lookout-mtp-connection-settings.png)
+   ![顯示已設定 [活動訊號頻率] 之 [連線設定] 索引標籤的螢幕擷取畫面](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>設定註冊群組
 1. 最佳做法是在包含少數使用者的 [Azure AD 管理入口網站](https://manage.windowsazure.com)建立 Azure AD 安全性群組，以測試 Lookout 整合。

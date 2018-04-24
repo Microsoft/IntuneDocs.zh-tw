@@ -1,30 +1,30 @@
 ---
-title: "什麼是應用程式保護原則？"
+title: 什麼是應用程式保護原則？
 titleSuffix: Microsoft Intune
-description: "了解 Microsoft Intune 應用程式保護原則如何協助保護公司資料，避免資料遺失。"
-keywords: 
+description: 了解 Microsoft Intune 應用程式保護原則如何協助保護公司資料，避免資料遺失。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資料遺失。
 
@@ -37,12 +37,12 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 
 - **在 Microsoft Intune 中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
 
--   **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
+- **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
 
   > [!NOTE]
   > 行動裝置應用程式管理原則不應搭配使用協力廠商的行動裝置應用程式管理或安全容器解決方案。
 
--   **未註冊任何行動裝置管理解決方案︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
+- **未註冊任何行動裝置管理解決方案︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
 
 > [!IMPORTANT]
 > 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援應用程式保護原則。

@@ -1,32 +1,29 @@
 ---
-title: Microsoft Intune 裝置相容性原則
-titleSuffix: ''
-description: 了解 Microsoft Intune 中的裝置相容性
+title: Microsoft Intune 中的裝置合規性原則 - Azure | Microsoft Docs
+description: 使用裝置合規性原則的需求、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取、處理沒有已指派原則的裝置，以及 Azure 入口網站與傳統入口網站中的 Microsoft Intune 合規性差異
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>開始使用 Microsoft Intune 裝置相容性原則
+# <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Intune 裝置相容性原則會定義裝置必須符合才能被 Intune 視為相容的規則與設定。
-
-這些規則包括：
+合規性需求基本上就是一些規則，例如要求裝置 PIN 或要求加密。 裝置合規性原則會定義裝置必須符合才能被視為符合規範的規則和設定。 這些規則包括：
 
 - 使用密碼才能存取裝置
 
@@ -38,13 +35,9 @@ Intune 裝置相容性原則會定義裝置必須符合才能被 Intune 視為�
 
 - 允許的最高 OS 版本
 
-- 需要裝置層級不高於 Mobile Threat Defense
+- 要求裝置層級不得高於 Mobile Threat Defense 層級
 
 您也可以使用裝置合規性政策，來監視裝置的合規性狀態。
-
-## <a name="device-compliance-requirements"></a>裝置合規性需求
-
-合規性需求是一組基本規則，舉例來說，是否需要提供裝置 PIN 碼或加密就可以在合規性政策中指定。
 
 <!---### Actions for noncompliance
 
@@ -69,41 +62,34 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件
+若要使用裝置合規性原則，必須符合下列條件：
 
-您需要有下列訂閱才能使用 Intune 的裝置合規性政策：
+- 使用下列訂用帳戶：
 
-- Intune
+  - Intune
+  - Azure Active Directory (AD) Premium
 
-- Azure AD Premium
+- 使用支援的平台：
 
-###  <a name="supported-platforms"></a>支援的平台：
+  - Android
+  - iOS
+  - macOS (預覽)
+  - Windows 8.1
+  - Windows Phone 8.1
+  - Windows 10
 
--   Android
-
--   iOS
-
--   macOS (預覽)
-
--   Windows 8.1
-
--   Windows Phone 8.1
-
--   Windows 10
-
-> [!IMPORTANT]
-> 裝置必須在 Intune 註冊才能回報其合規性狀態。
+- 若要回報裝置的合規性狀態，裝置必須已在 Intune 註冊
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune 裝置合規性政策如何與 Azure AD 一起運作
 
-當裝置註冊到 Intune 時，Azure AD 註冊程序隨即開始，這會將裝置屬性及詳細資訊更新至 Azure AD。 裝置合規性狀態是重要的裝置資訊之一，條件式存取原則會用以禁止或允許存取電子郵件和其他公司資源。
+當裝置在 Intune 中註冊之後，Azure AD 註冊程序便會開始，並將裝置屬性更新至 Azure AD。 其中一項關鍵的資訊就是裝置合規性狀態。 條件式存取原則會使用此合規性狀態，來封鎖或允許對電子郵件及其他公司資源的存取。
 
-- 深入了解 [Azure AD 註冊程序](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)。
+[Azure AD 註冊程序](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)提供了更多資訊。
 
-### <a name="assigning-a-resulting-device-configuration-profile-status"></a>指派最終裝置組態設定檔狀態
+### <a name="assign-a-resulting-device-configuration-profile-status"></a>指派最終裝置組態設定檔狀態
 
-若裝置有多個組態設定檔指派，且二或多個指派的組態設定檔具有不同的合規性狀態，就必須指派單一最終合規性狀態。 此指派會以指派至各合規性狀態的概念嚴重性等級為準。 每個合規性狀態均具下列嚴重性等級：
-
+如果裝置有多個組態設定檔，且裝置的兩個或更多個已指派的組態設定檔具有不同的合規性狀態，系統就會指派單一的最終合規性狀態。 此指派會以指派至各合規性狀態的概念嚴重性等級為準。 每個合規性狀態均具下列嚴重性等級：
 
 |狀態  |嚴重性  |
 |---------|---------|
@@ -112,22 +98,21 @@ Remember that you need to implement conditional access policies in addition to c
 |Failed     |3|
 |錯誤     |4|
 
-為指派至裝置的所有設定檔選取最高嚴重性等級，即會指派二或多個組態設定檔的最終狀態。
+當裝置具有多個組態設定檔時，系統就會將所有設定檔的最高嚴重性等級指派給該裝置。
 
-舉例來說，假設裝置有三個設定檔指派，分別為：Pending 狀態 (嚴重性 = 1)、Succeeded 狀態 (嚴重性 = 2)、Error 狀態 (嚴重性 = 4)。 因為 Error 狀態的嚴重性等級最高，所以會指派為全部三個設定檔的最終合規性狀態。
+舉例來說，假設裝置有三個設定檔指派，分別為：Pending 狀態 (嚴重性 = 1)、Succeeded 狀態 (嚴重性 = 2)、Error 狀態 (嚴重性 = 4)。 由於 Error 狀態的嚴重性等級最高，因此全部三個設定檔的合規性狀態都會是 Error。
 
-### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>為指派的合規性政策指派 InGracePeriod 狀態
+### <a name="assign-an-ingraceperiod-status"></a>指派 InGracePeriod 狀態
 
-合規性政策 InGracePeriod 狀態值的判定，會綜合考量裝置的寬限期與裝置的實際狀態來得出指派的合規性政策。 
+合規性原則的 InGracePeriod 狀態是一個值。 此值會由裝置寬限期與裝置該合規性原則實際狀態的組合來決定。
 
 具體來說，若裝置的已指派合規性政策為 NonCompliant 狀態，且：
 
-- 裝置沒有指派的寬限期，則為合規性政策指派的值為 NonCompliant。
-- 裝置的寬限期已過，則為合規性政策指派的值為 NonCompliant。
-- 裝置的寬限期未到，則為合規性政策指派的值為 InGracePeriod。
+- 裝置沒有已指派的寬限期，則為合規性原則指派的值會是 NonCompliant
+- 裝置的寬限期已過，則為合規性原則指派的值會是 NonCompliant
+- 裝置的寬限期未到，則為合規性規則指派的值會是 InGracePeriod
 
-下表摘要了上述幾點：
-
+下表摘要說明這些選項：
 
 |實際合規性狀態|指派的寬限期值|有效合規性狀態|
 |---------|---------|---------|
@@ -137,9 +122,9 @@ Remember that you need to implement conditional access policies in addition to c
 
 如需有關監視裝置合規性政策的詳細資訊，請參閱[監視 Intune 裝置合規性政策](compliance-policy-monitor.md)。
 
-### <a name="assigning-a-resulting-compliance-policy-status"></a>指派最終合規性政策狀態
+### <a name="assign-a-resulting-compliance-policy-status"></a>指派最終合規性規則狀態
 
-若裝置有多個合規性政策指派，且二或多個指派的合規性政策具有不同的合規性狀態，就必須指派單一最終合規性狀態。 此指派會以指派至各合規性狀態的概念嚴重性等級為準。 每個合規性狀態均具下列嚴重性等級： 
+如果裝置有多個合規性原則，且裝置的兩個或更多個已指派的合規性原則具有不同的合規性狀態，系統就會指派單一的最終合規性狀態。 此指派會以指派至各合規性狀態的概念嚴重性等級為準。 每個合規性狀態均具下列嚴重性等級：
 
 |狀態  |嚴重性  |
 |---------|---------|
@@ -150,49 +135,73 @@ Remember that you need to implement conditional access policies in addition to c
 |NonCompliant|5|
 |錯誤|6|
 
-為指派至裝置的所有原則選取最高嚴重性等級，即會指派二或多個合規性政策的最終狀態。
- 
-舉例來說，假設裝置有三個合規性政策指派，分別為：Unknown 狀態 (嚴重性 = 1)、Compliant 狀態 (嚴重性 = 3)、InGracePeriod 狀態 (嚴重性 = 4)。 因為 InGracePeriod 狀態的嚴重性等級最高，所以會指派為全部三個設定檔的最終合規性狀態。  
+當裝置具有多個合規性原則時，系統就會將所有原則的最高嚴重性等級指派給該裝置。
 
-##  <a name="ways-to-use-device-compliance-policies"></a>使用裝置合規性政策的方式
+舉例來說，假設裝置有三個合規性政策指派，分別為：Unknown 狀態 (嚴重性 = 1)、Compliant 狀態 (嚴重性 = 3)、InGracePeriod 狀態 (嚴重性 = 4)。 由於 InGracePeriod 狀態的嚴重性等級最高，因此全部三個原則的合規性狀態都會是 InGracePeriod。
 
-### <a name="with-conditional-access"></a>使用條件式存取
-合規性政策可與條件式存取原則搭配使用，只讓符合一或多條合規性政策規則的裝置存取電子郵件和其他公司資源。
+## <a name="ways-to-use-device-compliance-policies"></a>使用裝置合規性政策的方式
 
-### <a name="without-conditional-access"></a>不使用條件式存取
-您也可以使用與條件式存取無關的裝置合規性政策。 單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 不過，單獨使用合規性原則時，對公司資源沒有存取限制。
+#### <a name="with-conditional-access"></a>使用條件式存取
+針對符合原則規則的裝置，您可以將電子郵件及其他公司資源的存取權提供給它們。 如果裝置不符合原則規則，它們便無法存取公司資源。 這就是條件式存取。
 
-您可以對使用者部署合規性政策。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。 若要深入了解行動裝置在部署原則之後需要多長的時間才能取得原則，請參閱[針對 Microsoft Intune 中的裝置設定檔問題進行疑難排解](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+#### <a name="without-conditional-access"></a>不使用條件式存取
+您也可以使用裝置合規性原則而不搭配任何條件式存取。 單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 當您使用合規性原則而不搭配條件式存取時，對公司資源不會有任何存取限制。
 
-#### <a name="actions-for-non-compliance"></a>處理不符合規範狀況的動作
+## <a name="ways-to-deploy-device-compliance-policies"></a>部署裝置合規性原則的方式
+您可以將合規性原則部署至使用者群組中的使用者，或是裝置群組中的裝置。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。
 
-不合規範狀況的動作可讓您設定一套依時間排序的動作，以套用至未達到合規性政策準則的裝置。 如需詳細資訊，請參閱[將不符合規範的動作自動化](actions-for-noncompliance.md)。
+針對裝置群組中的裝置，[合規性政策設定] (Azure 入口網站 > [裝置合規性]) 包括
 
-##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>使用 Intune 傳統入口網站中的裝置合規性政策與Azure 入口網站
+- **將未指派合規性原則的裝置標記為**此屬性有兩個值：
 
-請注意 Azure 入口網站中協助您轉換至新裝置合規性政策工作流程的主要差異。
+  - **符合規範**：關閉安全性功能
+  - **不符合規範** (預設值)：開啟安全性功能
 
-- 在 Azure 入口網站中，必須個別為各個支援平台建立合規性政策。
-- 在 Intune 傳統入口網站中，所有支援平台可以共用同一個合規性政策。
+  如果裝置沒有已指派的合規性原則，系統就會將此裝置視為不符合規範。 預設會將這些裝置標示為 [不符合規範]。 如果您使用條件式存取，建議您保留 [不符合規範] 預設設定。 如果使用者是因為沒有已指派的原則而不符合規範，公司入口網站就會列出 `No compliance policies have been assigned`。
+
+- **加強的越獄偵測**已啟用時，此設定會使 iOS 裝置更頻繁地簽入 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
+
+  啟用此設定會要求裝置：
+  - 啟用 OS 層級的位置服務
+  - 允許公司入口網站使用位置服務
+  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。
+
+- **合規性狀態有效期限 (天)**：輸入裝置針對所有收到的合規性原則回報狀態的期間。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
+
+所有裝置都有 [預設裝置合規性原則] (Azure 入口網站 > [裝置合規性] > [原則合規性])。 您可以使用此預設原則來監視這些設定。
+
+若要了解在部署原則之後，行動裝置需要多久才能取得原則，請參閱[針對裝置設定檔問題進行疑難排解](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+
+合規性報告是檢查裝置狀態的絕佳方式。 如需相關指引，請參閱[監視合規性原則](compliance-policy-monitor.md)。
+
+### <a name="actions-for-noncompliance"></a>不符合標準時所採取的動作
+您可以設定一系列依時間排序的動作，以套用至未符合合規性原則準則的裝置。 這些在不符合規範時執行的動作可以自動化，如[將不符合規範時執行的動作自動化](actions-for-noncompliance.md)所述。
+
+## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 傳統入口網站與Azure 入口網站之比較
+
+在 Azure 入口網站中使用裝置合規性原則時的主要差異：
+
+- 在 Azure 入口網站中，會針對每個支援的平台個別建立合規性原則
+- 在 Azure 傳統入口網站中，所有支援的平台會使用一個通用的合規性原則
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>將裝置合規性政策從 Intune 傳統入口網站移轉到 Azure 入口網站
+## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>傳統入口網站與 Azure 入口網站中的裝置合規性原則
 
-在 [Intune 傳統入口網站](https://manage.microsoft.com)中建立的裝置合規性政策不會出現在新的 [Intune Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者作為目標，並可透過 Intune 傳統入口網站管理。
+在[傳統入口網站](https://manage.microsoft.com)中建立的裝置合規性原則不會出現在 [Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者作為目標，並可透過傳統入口網站管理。
 
-如果您想要充分利用 Azure 入口網站中新的裝置合規性相關功能，您必須在 Azure 入口網站本身建立新的裝置合規性政策。 如果您在 Azure 入口網站中將新的裝置合規性政策指派給已從 Intune 傳統入口網站被指派裝置合規性政策的使用者，則 Intune Azure 入口網站的裝置合規性政策會優先於在 Intune 傳統入口網站中建立的裝置合規性政策。
+若要在 Azure 入口網站中使用裝置合規性相關功能，您必須在 Azure 入口網站中建立新的裝置合規性原則。 如果您在 Azure 入口網站中將某個裝置合規性原則指派給已從傳統入口網站獲指派裝置合規性原則的使用者，則來自 Azure 入口網站之裝置合規性原則的優先順序會高於在傳統入口網站中建立的原則。
 
-##  <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 為下列平台建立裝置合規性政策：
 
-   - [Android](compliance-policy-create-android.md)
-   - [Android for work](compliance-policy-create-android-for-work.md)
-   - [iOS](compliance-policy-create-ios.md)
-   - [macOS](compliance-policy-create-mac-os.md)
-   - [Windows](compliance-policy-create-windows.md)
+  - [Android](compliance-policy-create-android.md)
+  - [Android for work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
 - 如需有關 Intune 資料倉儲原則實體的詳細資訊，請參閱[原則實體的參考](reports-ref-policy.md)。

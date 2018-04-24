@@ -1,27 +1,27 @@
 ---
-title: "在 Intune 註冊 Windows 10 裝置 | Microsoft Docs"
-description: "描述在 Intune 註冊 Windows 10 行動裝置版或桌面版裝置的方法"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 註冊 Windows 10 裝置 | Microsoft Docs
+description: 描述在 Intune 註冊 Windows 10 行動裝置版或桌面版裝置的方法
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
@@ -35,13 +35,13 @@ ms.lasthandoff: 01/25/2018
 
 2. 在搜尋列輸入「關於您的電腦」一詞，然後選取 [關於您的電腦]。
 
- ![搜尋電腦的相關設定](media/searching_for_about_your_pc.png)
+   ![搜尋電腦的相關設定](media/searching_for_about_your_pc.png)
 
-3.  在您的 [設定] 中，會看到一份電腦上已安裝的 Windows 10 版本的資訊清單。 在此清單中，找出 [版本]。
+3. 在您的 [設定] 中，會看到一份電腦上已安裝的 Windows 10 版本的資訊清單。 在此清單中，找出 [版本]。
 
- ![Windows 10 Desktop 關於您的電腦](media/settings_about_pc.png)
+   ![Windows 10 Desktop 關於您的電腦](media/settings_about_pc.png)
 
-4.  如果您的版本是 __1607 或更新版本__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
+4. 如果您的版本是 __1607 或更新版本__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile 裝置        
 

@@ -1,28 +1,27 @@
 ---
-title: "Windows 10 的 Microsoft Intune 裝置限制設定"
-titlesuffix: 
-description: "了解執行 Windows 10 的裝置上可用以控制裝置設定與功能的 Microsoft Intune 設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune 中 Windows 10 的裝置限制設定 | Microsoft Docs
+description: 了解執行 Windows 10 的裝置上可用以控制裝置設定與功能的 Microsoft Intune 設定。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 和更新版本的裝置限制設定
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>一般
 - **螢幕擷取 (僅限行動裝置)** - 讓使用者可將裝置螢幕擷取為影像。
@@ -51,7 +50,6 @@ ms.lasthandoff: 03/12/2018
 - **Ink 工作區** - 禁止使用者存取 Ink 工作區。 未設定此設定時，會啟用 Ink 工作區 (功能已開啟)，並允許使用者在鎖定螢幕上使用它。
 - **自動重新部署** 允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
 
-
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。
     -   **必要的密碼類型** - 指定密碼必須為數字還是英數字元。
@@ -75,7 +73,6 @@ ms.lasthandoff: 03/12/2018
 -   **自動接受配對及隱私權使用者同意提示** – 允許 Windows 在執行應用程式時，自動接受配對及隱私權同意訊息。
 - **發佈使用者活動**：設定此項以**封鎖**防止共用體驗以及在工作切換器中探索最近使用的資源。
 - **僅限本機活動**：設定此項以**封鎖**防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
-
 
 您可以定義可供裝置上所有應用程式存取的資訊。 您可以使用**個別應用程式隱私權例外狀況**來定義以個別應用程式為基礎的例外。
 
@@ -137,8 +134,6 @@ ms.lasthandoff: 03/12/2018
 -   **鎖定畫面上的快顯通知** – 封鎖警示訊息，使其無法顯示在裝置鎖定畫面上。
 -   **畫面逾時 (僅限行動裝置)** - 指定畫面鎖定之後的時間 (以秒為單位)，在該段時間後將會關閉畫面。
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **App Store (僅限行動裝置)** - 啟用或封鎖在 Windows 10 行動裝置上使用 App Store。
@@ -152,8 +147,6 @@ ms.lasthandoff: 03/12/2018
 -   **將應用程式安裝在系統磁碟機** - 阻止應用程式將資料儲存在裝置的系統磁碟機上。
 -   **遊戲 DVR (僅限桌面版)** - 設定是否允許錄製和廣播遊戲。
 -   **僅限來自市集的應用程式** - 設定使用者是否可以從 App Store 以外的地方安裝應用程式。
-
-
 
 ## <a name="edge-browser"></a>Microsoft Edge 瀏覽器
 
@@ -192,6 +185,7 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="search"></a>搜尋
 - **安全搜尋 (僅限行動裝置)** - 控制 Cortana 在搜尋結果中篩選成人內容的方式。 您可以選取 [嚴格]、[普通]，或允許使用者自行選擇設定。
+- **在 [搜尋] 中顯示網頁搜尋結果** - 封鎖或允許網頁結果顯示在對裝置進行的搜尋中。
 
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 -   **Microsoft 帳戶** - 讓使用者建立 Microsoft 帳戶與裝置之間的關聯。
@@ -215,7 +209,6 @@ ms.lasthandoff: 03/12/2018
 -   **手動設定 Wi-Fi** - 控制使用者是否可設定自己的 Wi-Fi 連線，是或只能使用由 Wi-Fi 設定檔所設定的連線 (僅限 Windows 10 行動裝置版)。
 -   **Wi-Fi 掃描間隔** – 指定裝置掃描 Wi-Fi 網路的頻率。 指定 1 (最頻繁) 到 500 (最不頻繁) 的值。
 -   **藍牙允許的服務** – 以十六進位字串，指定允許的藍芽服務和設定檔的清單。
-
 
 ## <a name="control-panel-and-settings"></a>控制台和設定
 
@@ -258,41 +251,48 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="kiosk-preview"></a>Kiosk (預覽)
 
--   **iosk 模式** - 識別原則支援的 [kiosk 模式](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)類型。 這些選項包括：
+Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 使用者無法存取裝置上任何 kiosk 應用程式外的任何功能。
 
-      - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
-      - **單一應用程式 kiosk** - 啟用裝置為單一應用程式 kiosk 的設定檔。
-      - **多個應用程式 kiosk** - 啟用裝置為多個應用程式 kiosk 的設定檔。
+- **Kiosk 模式** - 識別原則所支援的 kiosk 模式類型。 這些選項包括：
 
-    單一應用程式 kiosk 需要下列設定：
+  - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
+  - **單一應用程式 kiosk** - 此設定檔可讓裝置只在單一應用程式上執行。 當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
+  - **多應用程式 kiosk** - 此設定檔可讓裝置在多個應用程式上執行。 只有您新增的應用程式才可供使用者使用。 多應用程式 kiosk (或固定用途裝置) 的好處是讓個人只存取所需的應用程式，而從其檢視中移除不需要的應用程式，來為個人提供一個簡單明瞭的體驗。
 
-      - **使用者帳戶** - 指定與 kiosk 應用程式建立關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。 若為加入 Azure AD 網域的帳戶，請以 `domain\\username@tenant.org` 的格式指定帳戶。
+#### <a name="single-app-kiosks"></a>單一應用程式 Kiosk
+輸入下列設定：
 
-         若裝置在公用環境，請使用權限最低的使用者帳戶以防止未授權的活動。  
+- **使用者帳戶** - 輸入與 kiosk 應用程式關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。 針對已加入 Azure AD 網域的帳戶，請使用 `domain\username@tenant.org` 格式來輸入帳戶。 
 
-      - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 指定 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
+    針對在面對大眾的環境中且已啟用自動登入功能的 kiosk，應該使用權限最低 (例如本機標準使用者帳戶) 的使用者類型。 若要設定 Azure Active Directory (AD) 帳戶以使用 kiosk 模式，請使用 `AzureAD\user@contoso.com` 格式。
 
-    [多個應用程式的 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) 需要 kiosk 設定。 使用 [新增] 按鈕來建立 kiosk 設定或選取現有的 kiosk。
+- **應用程式的應用程式使用者模型識別碼 (AUMID)** - 輸入 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
-    多個應用程式的 kiosk 設定包括下列設定：
+#### <a name="multi-app-kiosks"></a>多應用程式 kiosk
+[多應用程式 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) 使用會列出所允許應用程式及其他設定的 kiosk 設定。 
 
-    - **kiosk 設定名稱** - 用來識別指定設定的易記名稱。
+請使用 [新增] 按鈕來建立 kiosk 設定 (或選取現有的設定)。 接著，輸入下列設定：
 
-    - 一或多個 **kiosk 應用程式**由下列項目組成：
+- **Kiosk 設定名稱** - 輸入用來識別設定的易記名稱。
 
-        - 指定 kiosk 應用程式類型的**應用程式類型**。  支援的值包括：   
+- **Kiosk 應用程式** - 輸入 [開始] 功能表上可用的應用程式。 您新增的應用程式是使用者唯一能夠開啟的應用程式。
 
-            - **Win32 應用程式** - 傳統型應用程式。 (在裝置方面，您需要可執行檔的完整路徑名稱)。
+  - **應用程式類型** - 選擇 kiosk 應用程式的類型：
+    - **Win32 應用程式** - 傳統型應用程式。 在裝置方面，您需要可執行檔的完整路徑名稱。
+    - **UWP App** - 通用 Windows app。 您需要[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
-            - **UWP App** - 通用 Windows app。 您需要[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+  - **識別碼** - 輸入可執行檔 (Win32 應用程式) 的完整路徑名稱，或[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
 
-        - **應用程式識別碼** - 指定可執行檔的完整路徑名稱 (Win32 應用程式) 或[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP app)。
+- **工作列**：選擇是要 [啟用] (顯示) 工作列，還是要讓它在 kiosk 上保持 [未設定] (隱藏) 狀態。
 
-    - **工作列**指出工作列在 kiosk 上要顯示 (**已啟用**) 或隱藏 (**未設定**)。
+- **[開始] 功能表配置** - 輸入描述應用程式在 [開始] 功能表上如何顯示的 XML 檔案。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)提供一些指引和範例 XML。
 
-    - **開始 功能表配置** - 指定描述應用程式[在 [開始] 功能表上如何顯示](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)的 XML 檔案。
 
-    - **指派的使用者** - 指定一或多個與 kiosk 設定建立關聯的使用者帳戶。 帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。 以 `domain\\username@tenant.org` 的格式指定加入網域的帳戶。
+  [建立可執行多個應用程式的 Windows 10 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) 提供有關使用及建立 XML 檔案的更多詳細資料。
+
+- **指派的使用者** - 新增一或多個能夠使用您所新增應用程式的使用者帳戶。 當該帳戶登入時，只有設定中所定義的應用程式可供使用。 帳戶可以是與 kiosk 應用程式建立關聯的裝置本機帳戶或 Azure AD 帳戶登入。
+
+    針對在面對大眾的環境中且已啟用自動登入功能的 kiosk，應該使用權限最低 (例如本機標準使用者帳戶) 的使用者類型。 若要設定 Azure Active Directory (AD) 帳戶以使用 kiosk 模式，請使用 `domain\user@tenant.com` 格式。
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender 防毒軟體
 
@@ -328,14 +328,11 @@ ms.lasthandoff: 03/12/2018
     -   **使用者定義**
     -   **封鎖**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防毒軟體排除
 
 -   **不進行掃描和即時保護的檔案和資料夾** - 將一或多個 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe** 等檔案與資料夾，新增至排除清單。 任何即時或已排程的掃描都不會包含這些檔案和資料夾。
 -   **不進行掃描和即時保護的副檔名** - 新增一或多個檔案副檔名，像是 **jpg** 或 **txt** 至排除清單中。 任何即時掃描或排定的掃描，都不會包含有這些副檔名的任何檔案。
 -   **排除不進行掃描和即時保護的程序** - 新增一或多個類型為 **.exe**、**.com** 或 **.scr** 等處理序至排除清單中。 任何即時或已排程的掃描都不會包含這些處理序。
-
 
 ## <a name="network-proxy"></a>網路 Proxy
 
@@ -348,9 +345,7 @@ ms.lasthandoff: 03/12/2018
     -   **Proxy 例外狀況** - 輸入任何不得使用 Proxy 伺服器的 URL。 請使用分號來分隔每個項目。
     -   **為本機位址略過 Proxy 伺服器** - 如果您不想要針對內部網路上的本機位址使用 Proxy 伺服器，請啟用此選項。
 
-
 ## <a name="windows-spotlight"></a>Windows 焦點
-
 
 - **Windows 焦點** - 使用此設定可封鎖 Windows 10 裝置上的所有 Windows 焦點功能。 如果您封鎖這項設定，則無法使用下列設定。
     - **鎖定畫面上的 Windows 焦點** – 阻止 Windows 焦點在裝置鎖定畫面上顯示資訊。
@@ -360,7 +355,6 @@ ms.lasthandoff: 03/12/2018
     - **控制中心的 Windows 焦點** – 封鎖 Windows 焦點建議 (如新的應用程式或安全性內容)，使其不要出現在 Windows 控制中心。
     - **Windows 焦點個人化** – 阻止 Windows 焦點根據裝置的使用方式將結果個人化。
     - **Windows 歡迎使用體驗** – 封鎖 Windows 歡迎使用體驗，該體驗會顯示有關新功能或更新功能的使用者資訊。
-
 
 ## <a name="projection"></a>投影
 
@@ -394,15 +388,3 @@ ms.lasthandoff: 03/12/2018
 - **訊息同步 (僅限行動裝置)** - 停用訊息中心橋接和文字訊息備份及還原。
 - **多媒體訊息 (僅限行動裝置)** - 停用裝置上的多媒體訊息傳送/接收功能。
 - **RCS (僅限行動裝置)** - 停用裝置上的 Rich Communication Services 傳送/接收功能。
-
-
-
-
-
-
-
-
-
-
-
-

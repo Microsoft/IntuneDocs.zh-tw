@@ -1,30 +1,29 @@
 ---
-title: "如何將 iOS 市集應用程式新增至 Microsoft Intune"
-titlesuffix: 
-description: "了解如何將 iOS 市集應用程式新增至 Microsoft Intune。"
+title: 如何將 iOS 市集應用程式新增至 Microsoft Intune
+titlesuffix: ''
+description: 了解如何將 iOS 市集應用程式新增至 Microsoft Intune。
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bd10c4f05204d0e911a7538f5d5133e4a336320
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何將 iOS 市集應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用本文中的資訊，協助您將 iOS 市集應用程式新增至 Microsoft Intune。 iOS 市集應用程式就是 Intune 安裝於使用者裝置的應用程式。 使用者是您公司的員工。 會自動更新 iOS 市集應用程式。
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 03/12/2018
 >使用 Microsoft Intune 時，建議的瀏覽器是 Chrome 與 Edge。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
 4. 在 [Mobile Apps] 工作負載中，選擇 [管理] 區段下的 [應用程式]。
 5. 選擇 [應用程式] 窗格右側的 [新增]。

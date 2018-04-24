@@ -14,15 +14,15 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f1d4eb8ea128ba453e555836289fb7d1ce8b34c4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購買之軟體的授權合約資訊。 您也可以為透過其他方式購買的 Microsoft 或非 Microsoft 軟體執行此動作。 您可以將這項資訊組織成邏輯群組。
 
@@ -174,10 +174,12 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 ## <a name="manage-license-agreements"></a>管理授權合約
 軟體授權合約可以新增到授權群組中。 您可以使用授權群組，以對貴組織而言合理的單位來組織您的授權合約。 此外，您可以刪除先前建立的授權合約。
 
-|||
-|-|-|
-|工作|詳細資料|
-|建立授權群組|在 **[授權]** 工作區的 **[概觀]** 頁面上，從 **[工作]** 功能表選擇 **[建立授權群組]**。 **注意：**您可以建立總數高達 500 個的授權群組。|
-|重新命名授權群組|在 **[授權]** 工作區中，選擇授權群組，然後從 **[工作]** 功能表選擇 **[編輯授權群組]**。|
-|刪除授權群組|在 **[授權]** 工作區中，選擇授權群組，然後從 **[工作]** 功能表選擇 **[刪除授權群組]**。 **提示：**已刪除之群組中的所有授權都會移到 [未指派的合約] 授權群組中。|
-|刪除授權合約|在 **[授權]** 工作區中，選擇合約，然後選擇 **[刪除]**。 **提示：**在刪除大量授權合約之後，若要更新授權資訊，請在 **[授權概觀]** 頁面上或特定授權群組的 **[一般]** 索引標籤上，選擇 **[立即重新整理]**。|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            工作            |                                                                                                                                                                                 詳細資料                                                                                                                                                                                  |
+|   建立授權群組   |                                                            在 <strong>[授權]</strong> 工作區的 <strong>[概觀]</strong> 頁面上，從 <strong>[工作]</strong> 功能表選擇 <strong>[建立授權群組]</strong>。 <strong>注意：</strong>您可以建立總數高達 500 個的授權群組。                                                             |
+|   重新命名授權群組   |                                                                                                      在 <strong>[授權]</strong> 工作區中，選擇授權群組，然後從 <strong>[工作]</strong> 功能表選擇 <strong>[編輯授權群組]</strong>。                                                                                                       |
+|   刪除授權群組   |                                 在 <strong>[授權]</strong> 工作區中，選擇授權群組，然後從 <strong>[工作]</strong> 功能表選擇 <strong>[刪除授權群組]</strong>。 <strong>提示：</strong>已刪除之群組中的所有授權都會移到 [未指派的合約] 授權群組中。                                 |
+| 刪除授權合約 | 在 <strong>[授權]</strong> 工作區中，選擇合約，然後選擇 <strong>[刪除]</strong>。 <strong>提示：</strong>在刪除大量授權合約之後，若要更新授權資訊，請在 <strong>[授權概觀]</strong> 頁面上或特定授權群組的 <strong>[一般]</strong> 索引標籤上，選擇 <strong>[立即重新整理]</strong>。 |
+

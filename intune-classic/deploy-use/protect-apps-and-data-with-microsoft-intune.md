@@ -1,29 +1,29 @@
 ---
-title: "保護應用程式和資料"
-description: "本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。"
-keywords: 
+title: 保護應用程式和資料
+description: 本主題說明各種 Intune 功能和能力，可供您用來協助保護您的公司應用程式與資料。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>使用 Microsoft Intune 保護應用程式和資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 透過多重技術層級保護公司資料。 在身分識別層，條件式存取保護服務的存取，只允許從受管理和相容的裝置才能存取。 在用戶端應用程式層中，行動應用程式管理 (MAM) 可防止資料移到未受保護的應用程式或儲存體位置，並於裝置遺失或遭竊時清除資料，以此來防止資料遺失。 建議您一起使用這兩個保護層來協助保護資料安全，同時保留您的行動工作者的生產力。
 

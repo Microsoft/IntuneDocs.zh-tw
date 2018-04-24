@@ -1,25 +1,25 @@
 ---
-title: "新增群組來組織使用者和裝置"
+title: 新增群組來組織使用者和裝置
 titlesuffix: Microsoft Intune
-description: "依地理位置、部門或硬體特性新增群組來組織使用者和裝置。"
-keywords: 
+description: 依地理位置、部門或硬體特性新增群組來組織使用者和裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7d2b551832d8d0e467d079df673954318623e4c
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 613d64e396e969b8b6bde76ee6c4474a60be8ba9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -34,22 +34,22 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 
 使用下列步驟建立新的群組。
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [群組]，然後在 [所有群組] 窗格中選擇 [新增群組]。
-  ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add-new.png)
-2. 指定新群組的 [群組類型]、[名稱] 和 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
+   ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add-new.png)
+4. 指定新群組的 [群組類型]、[名稱] 和 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
 
-3. 選擇 [成員資格類型]：
-  - [已指派] 會建立以手動方式指派成員的群組。 深入了解 [Azure AD 指派的群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。
-  - [動態使用者] 會建立以 [動態查詢] 定義的使用者群組。
-  - [動態裝置] 會建立以 [動態查詢] 定義的裝置群組。
+5. 選擇 [成員資格類型]：
+   - [已指派] 會建立以手動方式指派成員的群組。 深入了解 [Azure AD 指派的群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。
+   - [動態使用者] 會建立以 [動態查詢] 定義的使用者群組。
+   - [動態裝置] 會建立以 [動態查詢] 定義的裝置群組。
 
-  ![Intune 群組屬性的螢幕擷取畫面](./media/groups-add-properties.png)
+   ![Intune 群組屬性的螢幕擷取畫面](./media/groups-add-properties.png)
 
-  Azure AD 讓您根據定義成員資格的規則，建立動態群組。 深入了解[建立以屬性為基礎的動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
+   Azure AD 讓您根據定義成員資格的規則，建立動態群組。 深入了解[建立以屬性為基礎的動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
-4. 您可以選取 [Enable Office features] (啟用 Office 功能) 讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
-5. 選擇 [建立] 新增新的群組。
+6. 您可以選取 [Enable Office features] (啟用 Office 功能) 讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+7. 選擇 [建立] 新增新的群組。
 
 ## <a name="see-also"></a>另請參閱
 - [利用 Azure Active Directory 群組管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

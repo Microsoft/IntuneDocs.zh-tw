@@ -1,26 +1,26 @@
 ---
-title: "Microsoft Intune MDM 生命週期概觀"
-description: "了解 Intune 如何協助您從註冊、設定至淘汰的裝置生命週期中管理裝置。"
-keywords: 
+title: Microsoft Intune MDM 生命週期概觀
+description: 了解 Intune 如何協助您從註冊、設定至淘汰的裝置生命週期中管理裝置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 1f1ac48340c09c57ed398b7fe6cb75fa68899c63
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 行動裝置管理 (MDM) 生命週期的概觀
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 您所管理的所有裝置都有「生命週期」。 Intune 可協助您管理這個生命週期：從註冊開始 (透過設定和保護)，一直到不再需要裝置時將其淘汰。
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/05/2018
 現今的行動裝置管理 (MDM) 策略可以處理各種行動電話、平板電腦和個人電腦 (iOS、Android、Windows 和 Mac OS X)。 如果您需要能夠管理裝置 (通常是屬公司擁有的裝置)，第一個步驟是[設定裝置註冊](device-enrollment.md) ([傳統入口網站](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune))。 您也可以向 Intune (MDM) 註冊 Windows 電腦或[安裝 Intune 用戶端軟體](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)，以管理電腦。
 
 ## <a name="configure"></a>設定
-註冊您的裝置是第一個步驟。 若要充分利用 Intune 提供的選項，並確定您的裝置安全且與公司標準相容，您可以從各種不同的原則中進行選擇。 這可讓您設定受控裝置操作上的大部分層面。 例如，使用者是否應該擁有內含公司資料之裝置的密碼？ 您可以擁有密碼。 您擁有公司的 Wi-Fi 嗎？ 您可以自動設定它。 以下是可供使用的設定選項類型︰
+註冊您的裝置是第一個步驟。 若要充分利用 Intune 提供的選項，並確定您的裝置安全且與公司標準相容，您可以從各種不同的原則中進行選擇。 這可讓您設定受管理裝置操作上的大部分層面。 例如，使用者是否應該擁有內含公司資料之裝置的密碼？ 您可以擁有密碼。 您擁有公司的 Wi-Fi 嗎？ 您可以自動設定它。 以下是可供使用的設定選項類型︰
 
 - [**裝置設定**](device-profiles.md) ([傳統入口網站](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies))。 這些原則可讓您設定您所管理裝置的特性和功能。 比方說，您可以在 Windows Phone 上要求使用密碼，或在 iPhone 上停用相機。
 - [**公司資源存取**](device-profiles.md) ([傳統入口網站](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune))。 讓使用者在其個人裝置上存取其工作時，這可能會形成挑戰。 例如，您如何確保已正確設定所有需要存取公司電子郵件的裝置？ 您如何確保使用者可以使用 VPN 連線來存取公司網路，而不需要了解複雜的設定？ 透過將您管理的裝置自動設定為可存取常用的公司資源，Intune 有助於減輕此項負擔。

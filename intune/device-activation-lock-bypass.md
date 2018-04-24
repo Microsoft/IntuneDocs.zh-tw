@@ -1,29 +1,29 @@
 ---
-title: "使用 Intune 略過 iOS 啟用鎖定"
+title: 使用 Intune 略過 iOS 啟用鎖定
 titlesuffix: Microsoft Intune
-description: "了解如何使用 Intune 略過 iOS 啟用鎖定，來存取鎖定的裝置。"
-keywords: 
+description: 了解如何使用 Intune 略過 iOS 啟用鎖定，來存取鎖定的裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/22/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受監督的 iOS 裝置上略過啟用鎖定
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 可以協助您管理 iOS 啟用鎖定，這是 iOS 8.0 和更新版本裝置之「尋找我的 iPhone」應用程式中的一項功能。 當使用者在裝置上開啟「尋找我的 iPhone」應用程式時，啟用鎖定會自動啟用。 啟用之後，就必須輸入使用者的 Apple ID 和密碼，才能夠讓所有人：
 
@@ -70,7 +70,7 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
 Intune 的**略過啟用鎖定**遠端裝置動作即使沒有使用者的 Apple ID 及密碼，也可以從 iOS 裝置移除啟用鎖定。 當您略過啟用鎖定之後，裝置會在 [尋找我的 iPhone] 應用程式會啟動再次開啟啟用鎖定。 僅當您能夠實際使用裝置時，才略過啟用鎖定。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
 4. 在 [裝置] 刀鋒視窗中，選擇 [所有裝置]。
 5. 從您管理的裝置清單中，依序選擇受監督的 iOS 裝置、[...其他]，然後選擇 [略過啟用鎖定] 裝置遠端動作。

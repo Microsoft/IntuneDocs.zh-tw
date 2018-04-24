@@ -1,25 +1,25 @@
 ---
-title: "您必須將 Symantec Endpoint Protection Mobile 安裝到 Android 裝置 | Microsoft Docs"
-description: "了解如何將 SEP Mobile 安裝到 Android 裝置。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 您必須將 Symantec Endpoint Protection Mobile 安裝到 Android 裝置 | Microsoft Docs
+description: 了解如何將 SEP Mobile 安裝到 Android 裝置。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>在 Android 裝置上安裝 Symantec Endpoint Protection Mobile
 
@@ -45,13 +45,13 @@ ms.lasthandoff: 01/25/2018
 
 8. SEP Mobile 會立即開始檢查裝置上是否有安全性威脅。
 
-  * 若 SEP Mobile 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
+   * 若 SEP Mobile 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
 
-  * 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
+   * 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
 
-    * 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
+     * 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
 
-    ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
+     ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 

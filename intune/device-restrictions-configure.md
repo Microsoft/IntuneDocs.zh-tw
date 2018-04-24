@@ -1,27 +1,26 @@
 ---
-title: "設定 Microsoft Intune 裝置限制設定"
-titleSuffix: 
-description: "了解如何使用 Microsoft Intune 設定您管理之裝置上的設定與功能。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: 在 Microsoft Intune 中設定裝置限制設定 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中新增裝置設定檔以限制 Android、macOS、iOS、Windows Phone 及 Windows 10 裝置上的功能
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定裝置限制設定
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 裝置限制可讓您控制各種類別中，您所管理的各種設定及功能，例如：
 - 安全性
@@ -36,11 +35,9 @@ ms.lasthandoff: 03/02/2018
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>建立內含裝置限制設定的裝置設定檔
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 頁面上，選擇 [裝置設定]。
-2. 在 [裝置設定] 頁面的 [管理] 區段下，選擇 [設定檔]。
-3. 在 [設定檔] 頁面上，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 頁面上，為裝置限制設定檔輸入 [名稱] 及 [描述]。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+4. 輸入裝置限制設定檔的 [名稱] 和 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
     - **Android**
     - **iOS**

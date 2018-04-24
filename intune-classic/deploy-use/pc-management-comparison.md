@@ -1,28 +1,28 @@
 ---
-title: "比較 Windows 電腦管理選項"
-description: "使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置"
-keywords: 
+title: 比較 Windows 電腦管理選項
+description: 使用 Apple 裝置註冊方案 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f6de91724db10ef64e2c1fd6eee6101c6eac79a
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c760f9c76e54c0b5f9eb037414870ab1c8943803
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織可以使用 Microsoft Intune 來管理 Windows 電腦，其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理，或使用 Intune 軟體用戶端作為電腦來管理。  Microsoft 建議客戶如有可能盡量使用 MDM 管理解決方案。 但是，為了協助您深入了解這些選項之間的差異，下圖對這兩個管理選項進行了比較。
 

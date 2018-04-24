@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 外掛程式
 
@@ -72,16 +72,16 @@ ms.lasthandoff: 03/16/2018
 
 1. 更新您的 ADAL 版本︰
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. 新增 Intune App SDK for Cordova 外掛程式：
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>將外掛程式建置到 iOS 應用程式中
 
@@ -131,7 +131,7 @@ Intune 目前不支援以 `build.json` 或透過參數提供的任意位置來�
 * MultiDex 支援不完整。
 * 應用程式的 `minSdkVersion` 必須為 14，且 `targetSdkVersion` 必須為 24 或以下。 Intune 目前不支援以 API 25 為目標的應用程式
 * Intune 無法重新簽署已使用 V2 簽署配置進行簽署的應用程式。 當 V2 簽署的應用程式由外掛程式包裝時，包裝的輸出 .apk 將會移除簽署。
-*
+  *
   * 您可以將下列內容新增至 `build-extras.gradle` 檔案，來停用 Cordova 的預設 V2 簽署：
 
   ```gradle

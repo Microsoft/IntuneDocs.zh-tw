@@ -1,5 +1,5 @@
 ---
-title: 幾個月前的 Microsoft Intune 新功能
+title: 前幾個月的 Microsoft Intune 新功能 - Azure | Microsoft Docs
 titlesuffix: ''
 description: 檢閱 Intune 新功能頁面中較舊的公告
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>2017 年 10 月
 
@@ -570,7 +570,7 @@ IT 技術支援使用者現在可以在 [疑難排解] 刀鋒視窗中查看使�
 我們已新增可控制數種功能 (例如無線顯示器、裝置探索、工作切換和 SIM 卡錯誤訊息) 的 [Windows 裝置限制設定](device-restrictions-windows-10.md)。
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>憑證設定的更新<!-- 918991 and 823198 -->
-建立 SCEP 憑證設定檔時，針對 [主體名稱格式]，iOS、Android 和 Windows 裝置可使用 [自訂] 選項。 在此更新之前，[自訂] 欄位僅適用於 iOS 裝置。 如需詳細資訊，請參閱[如何建立 SCEP 憑證設定檔] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile)。
+建立 SCEP 憑證設定檔時，針對 [主體名稱格式]，iOS、Android 和 Windows 裝置可使用 [自訂] 選項。 在此更新之前，[自訂] 欄位僅適用於 iOS 裝置。 如需詳細資訊，請參閱[建立 SCEP 憑證設定檔](certificates-scep-configure.md#create-a-scep-certificate-profile)。
 
 建立 PKCS 憑證設定檔時，針對 [主體別名]，可使用 [自訂 Azure AD 屬性]。 當您選取 [自訂 Azure AD 屬性] 時，可使用 [部門] 選項。 如需詳細資訊，請參閱[如何建立 PKCS 憑證設定檔](certficates-pfx-configure.md#create-a-device-configuration-profile)。
 

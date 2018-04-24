@@ -14,26 +14,26 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fd09126b8226828ccb60f30e0daa6135643303e2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b730aae4e3e8f576824ac61811018293cc07e080
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 下列一系列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**您會如何管理專用、公司擁有的裝置？**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[iOS 設定助理 >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[使用 IMEI 標記 >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [iOS 設定助理 >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [使用 IMEI 標記 >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   您可以透過下列方式，向專用的使用者註冊公司所擁有的裝置︰
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 03/22/2018
   - **以 IMEI 編號標記** - 匯入公司擁有之裝置的國際行動設備識別 (IMEI) 編號，以在 Intune 中將其標記為公司擁有的裝置。 這是將專用的 (「單一使用者」) Windows 和 Android 裝置識別為公司擁有的唯一方法。 不會使用 Apple 的裝置註冊方案或 Apple Configurator 註冊的 iOS 裝置也可以使用 IMEI 編號標記。 在預先宣告裝置使其標記為「公司」之後，您就可以分配給使用者。 使用者接著可以安裝公司入口網站，以將他們的裝置註冊為專用裝置來存取公司資源 (例如電子郵件、應用程式和資料)。
 
 > [!div class="button"]
-[< 返回](choose-how-to-enroll-devices3.md)
+> [< 返回](choose-how-to-enroll-devices3.md)

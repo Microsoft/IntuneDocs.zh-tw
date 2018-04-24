@@ -1,25 +1,25 @@
 ---
-title: "將 Jamf Pro 與 Microsoft Intune 整合以符合規範"
-titlesuffix: 
-description: "使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。"
-keywords: 
+title: 將 Jamf Pro 與 Microsoft Intune 整合以符合規範
+titlesuffix: ''
+description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -56,20 +56,20 @@ ms.lasthandoff: 03/08/2018
 6. 按一下 [建立應用程式]。
 7. 儲存新建立的 [應用程式識別碼]，然後開啟 [設定] 並巡覽至 [API 存取] > [金鑰] 以建立新的應用程式金鑰。 輸入 [描述]、[到期日] 前等待的時間，然後將儲存應用程式金鑰。
 
-  > [!IMPORTANT]
-  > 應用程式金鑰在此程序期間只會顯示一次。 請務必將它儲存在您可以輕鬆擷取的地方。
+   > [!IMPORTANT]
+   > 應用程式金鑰在此程序期間只會顯示一次。 請務必將它儲存在您可以輕鬆擷取的地方。
 
 8. 開啟 [設定] ，然後巡覽至 [API 存取] > [必要權限]，並刪除所有權限。
 
-  > [!NOTE]
-  > 新增必要權限。 應用程式只有在具有單一必要權限時才能正常運作。
+   > [!NOTE]
+   > 新增必要權限。 應用程式只有在具有單一必要權限時才能正常運作。
 
-9.  選取 [Microsoft Intune API]，然後按一下 [選取]。
+9. 選取 [Microsoft Intune API]，然後按一下 [選取]。
 10. 選擇 [傳送裝置屬性到 Microsoft Intune]，然後按一下 [選取]。
 11. 儲存應用程式的必要權限之後，請按一下 [授與權限] 按鈕。
 
-  > [!NOTE]
-  > 如果應用程式金鑰到期，您必須在 Microsoft Azure 中建立新的應用程式金鑰，然後更新 Jamf Pro 中的條件式存取資料。 Azure 允許您同時啟用舊金鑰與新金鑰，以避免服務中斷。
+    > [!NOTE]
+    > 如果應用程式金鑰到期，您必須在 Microsoft Azure 中建立新的應用程式金鑰，然後更新 Jamf Pro 中的條件式存取資料。 Azure 允許您同時啟用舊金鑰與新金鑰，以避免服務中斷。
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
 
@@ -122,7 +122,7 @@ Jamf Pro 會擷取有關受管理 macOS 裝置的清查資訊。 Jamf Pro 會將
 * NIC 速度
 * 核心數目
 * 處理器數目
-* 作業系統
+* OS
 * 平台
 * 處理器速度
 * 處理器類型

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>在 Microsoft Intune 使用裝置群組對應分類裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune [裝置群組對應] 根據您定義的類別將裝置自動新增至群組，以便讓您更輕鬆地管理這些裝置。 
 
@@ -67,10 +67,10 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>步驟 1 - 在 Intune 管理主控台中建立裝置類別
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
-3. 在 [管理] 工作區中，展開 [行動裝置管理]，然後選擇 [裝置類別]。
-4. 在 [裝置類別] 頁面上，您會看到可設定裝置類別的清單： 
-- 您可以輸入名稱，然後按一下 [新增] 以新增為新的裝置類別。
-- 此外，您可以選取一個類別，然後將它**刪除**。
+2. 在 [管理] 工作區中，展開 [行動裝置管理]，然後選擇 [裝置類別]。
+3. 在 [裝置類別] 頁面上，您會看到可設定裝置類別的清單： 
+4. 您可以輸入名稱，然後按一下 [新增] 以新增為新的裝置類別。
+5. 此外，您可以選取一個類別，然後將它**刪除**。
 
 當您在步驟 2 中建立 Azure Active Directory 安全性群組時，您將會使用裝置類別名稱。
 

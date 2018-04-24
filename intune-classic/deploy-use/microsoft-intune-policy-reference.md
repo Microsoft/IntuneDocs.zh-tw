@@ -1,29 +1,29 @@
 ---
-title: "設定原則參考"
-description: "您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。"
-keywords: 
+title: 設定原則參考
+description: 您可以使用本主題中的資訊，協助您決定您要用來管理裝置的 Microsoft Intune 原則。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune 設定原則參考
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以使用本主題中的資訊，協助您決定用來管理裝置時所需的 Microsoft Intune 設定原則。
 
@@ -102,12 +102,13 @@ ms.lasthandoff: 01/30/2018
 
 ## <a name="common-mobile-device-settings"></a>一般行動裝置設定
 
-|原則名稱|當您想要執行此作業時使用|
-|---------------|------------------------|
-|**Exchange ActiveSync 原則**|為 Exchange ActiveSync 所管理的裝置，設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Exchange ActiveSync 原則設定](exchange-activesync-policy-settings-in-microsoft-intune.md)。|
-|**行動裝置安全性原則**|<ul><li>設定行動裝置 (所有平台) 的設定，包括：<br /><br /><ul><li>安全性</li><li>加密</li><li>系統</li><li>電子郵件</li><li>應用程式</li></ul></li></ul>
+|                  原則名稱                   |                                                                                                                       當您想要執行此作業時使用                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync 原則</strong>   | 為 Exchange ActiveSync 所管理的裝置，設定行動裝置的安全性及功能設定。<br /><br />如需詳細資訊，請參閱 [Microsoft Intune 的 Exchange ActiveSync 原則設定](exchange-activesync-policy-settings-in-microsoft-intune.md)。 |
+| <strong>行動裝置安全性原則</strong> |                                  <ul><li>設定行動裝置 (所有平台) 的設定，包括：<br /><br /><ul><li>安全性</li><li>加密</li><li>系統</li><li>電子郵件</li><li>應用程式</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**，而這些原則全都包含可供您使用的最新設定。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作，但您應及早規劃改用新的設定原則。<br />如需詳細資訊，請參閱 [Microsoft Intune 的行動裝置安全性原則設定](mobile-device-security-policy-settings-in-microsoft-intune.md)。
+> Microsoft Intune 現已針對不同的裝置平台，設置個別的**原則**，而這些原則全都包含可供您使用的最新設定。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作，但您應及早規劃改用新的設定原則。<br />如需詳細資訊，請參閱 [Microsoft Intune 的行動裝置安全性原則設定](mobile-device-security-policy-settings-in-microsoft-intune.md)。
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>受 Intune 軟體用戶端管理的 Windows 電腦適用原則
 

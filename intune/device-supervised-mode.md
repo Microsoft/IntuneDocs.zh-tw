@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5304830c1706ff11bccdaedc9e9efa715e71904a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-on-ios-supervised-mode"></a>開啟 iOS 受監管模式
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Apple iOS 受監管模式讓管理員在管理 Apple 裝置時擁有更多選項，適合用於大規模部署的公司擁有裝置。 舉例來說，您可以限制 AirDrop 或防止使用者變更裝置名稱。 如需需要受監管模式的設定清單，請參閱 [Intune 中的 iOS 裝置限制設定](device-restrictions-ios.md)。
 

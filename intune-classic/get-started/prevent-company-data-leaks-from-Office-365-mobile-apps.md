@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>快速入門指南︰防止公司資料從 Office 365 行動應用程式外洩
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 使用行動應用程式管理 (MAM) 原則，避免公司資料從 Office 365 行動應用程式或企業營運 (LOB) 應用程式外洩，協助您保護組織的資料。 使用者不需要在 Intune 行動裝置管理 (MDM) 中註冊其裝置，就能使用 Intune MAM 原則。 因此，如果有使用者不想要將其 BYOD iOS 或 Android 行動裝註冊到 Microsoft MDM 解決方案 (Intune、Configuration Manager 或 EAS)，您想要在不管理使用者裝置的情況下，保護公司資料，或您已在使用非 Microsoft MDM 解決方案，Intune 都能協助您提高公司的資料安全性。   
 

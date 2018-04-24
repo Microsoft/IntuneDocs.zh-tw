@@ -1,29 +1,29 @@
 ---
-title: "如何在 Microsoft Intune 中將應用程式指派給群組"
-titlesuffix: 
-description: "將應用程式新增至 Microsoft Intune 之後，要將它指派給使用者或裝置的群組。"
-keywords: 
+title: 如何在 Microsoft Intune 中將應用程式指派給群組
+titlesuffix: ''
+description: 將應用程式新增至 Microsoft Intune 之後，要將它指派給使用者或裝置的群組。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 將應用程式指派給群組
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 應用程式一旦新增至 Microsoft Intune，您就可以將它指派給使用者和裝置。
 
@@ -49,28 +49,28 @@ ms.lasthandoff: 03/12/2018
 ## <a name="how-to-assign-an-app"></a>如何指派應用程式
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-1. [行動應用程式] 工作負載中 [管理] 區段下的 [應用程式]。
-2. 在應用程式刀鋒視窗清單中，按一下想要指派的應用程式。
-3. 在應用程式專屬的 [概觀] 刀鋒視窗中，選擇 [管理] 區段中的 [指派]。
-4. 選擇 [新增群組] 顯示與應用程式有關的 [新增群組] 刀鋒視窗。
-5. 為特定的應用程式，選擇應用程式的 [指派類型]︰
-    - **可透過已註冊裝置使用** - 使用者從公司入口網站應用程式或網站中安裝應用程式。
-    - **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。 請注意，**Android for Work 應用程式**類型不支援此選項。 
-    - **必要** - 此應用程式安裝所選群組中的裝置上。
-    - **解除安裝** - 此應用程式會從所選群組中的裝置上解除安裝。
+4. [行動應用程式] 工作負載中 [管理] 區段下的 [應用程式]。
+5. 在應用程式刀鋒視窗清單中，按一下想要指派的應用程式。
+6. 在應用程式專屬的 [概觀] 刀鋒視窗中，選擇 [管理] 區段中的 [指派]。
+7. 選擇 [新增群組] 顯示與應用程式有關的 [新增群組] 刀鋒視窗。
+8. 為特定的應用程式，選擇應用程式的 [指派類型]︰
+   - **可透過已註冊裝置使用** - 使用者從公司入口網站應用程式或網站中安裝應用程式。
+   - **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。 請注意，**Android for Work 應用程式**類型不支援此選項。 
+   - **必要** - 此應用程式安裝所選群組中的裝置上。
+   - **解除安裝** - 此應用程式會從所選群組中的裝置上解除安裝。
 
-    > [!NOTE]
-    > **僅限 iOS 應用程式** - 如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，您可以在 [VPN] 下加以選取。 應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
+     > [!NOTE]
+     > **僅限 iOS 應用程式** - 如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，您可以在 [VPN] 下加以選取。 應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
 
-6. 選取 [Included Groups] (包含的群組) 以選擇會受此應用程式指派影響的使用者群組。
-7. 選取要包含的一或多個群組後，請按一下 [選取]。
-8. 按一下 [指派] 刀鋒視窗的 [確定]，完成包含的群組選取項目。
-9. 如果您選擇要排除任何使用者群組不受此應用程式指派影響，請按一下 [Exclude Groups] (排除的群組)。
-10. 如已選擇要排除任何群組，請按一下 [選取群組] 刀鋒視窗的 [選取]。
-11. 按一下 [新增群組] 刀鋒視窗的 [確定]。
-12. 按一下應用程式 [指派] 刀鋒視窗的 [儲存]，以儲存您的指派。
+9. 選取 [Included Groups] (包含的群組) 以選擇會受此應用程式指派影響的使用者群組。
+10. 選取要包含的一或多個群組後，請按一下 [選取]。
+11. 按一下 [指派] 刀鋒視窗的 [確定]，完成包含的群組選取項目。
+12. 如果您選擇要排除任何使用者群組不受此應用程式指派影響，請按一下 [Exclude Groups] (排除的群組)。
+13. 如已選擇要排除任何群組，請按一下 [選取群組] 刀鋒視窗的 [選取]。
+14. 按一下 [新增群組] 刀鋒視窗的 [確定]。
+15. 按一下應用程式 [指派] 刀鋒視窗的 [儲存]，以儲存您的指派。
 
 應用程式現已指派給您所選取的群組。 如需包含和排除應用程式指派的詳細資訊，請參閱[包含與排除應用程式指派](apps-inc-exl-assignments.md)。
 

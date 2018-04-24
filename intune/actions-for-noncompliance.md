@@ -1,22 +1,22 @@
 ---
-title: "Microsoft Intune - Azure 中不符合規範的訊息與動作 | Microsoft Docs"
-description: "建立電子郵件通知，並傳送到不符合規範的裝置。 在裝置受標記為不符合規範之後新增動作，例如新增寬限期以讓其符合規範，或建立排程來禁止存取，直到裝置符合規範為止。 在 Azure 中使用 Microsoft Intune 來執行。"
-keywords: 
+title: Microsoft Intune - Azure 中不符合規範的訊息與動作 | Microsoft Docs
+description: 建立電子郵件通知，並傳送到不符合規範的裝置。 在裝置受標記為不符合規範之後新增動作，例如新增寬限期以讓其符合規範，或建立排程來禁止存取，直到裝置符合規範為止。 在 Azure 中使用 Microsoft Intune 來執行。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>將電子郵件自動化，並為不符合規範的裝置新增動作 - Intune
 
@@ -54,14 +54,14 @@ ms.lasthandoff: 03/09/2018
 3. 選取 [裝置合規性]，然後選取 [通知]。 
 4. 選取 [建立通知]，然後輸入下列資訊：
 
-  - 名稱
-  - 主體
-  - 訊息
-  - 電子郵件標題 – 包含公司標誌
-  - 電子郵件頁尾 – 包含公司名稱
-  - 電子郵件頁尾 – 包含連絡人資訊
+   - 名稱
+   - 主體
+   - 訊息
+   - 電子郵件標題 – 包含公司標誌
+   - 電子郵件頁尾 – 包含公司名稱
+   - 電子郵件頁尾 – 包含連絡人資訊
 
-  ![在 Intune 中符合規範的通知訊息範例](./media/actionsfornoncompliance-1.PNG)
+   ![在 Intune 中符合規範的通知訊息範例](./media/actionsfornoncompliance-1.PNG)
 
 一旦您完成新增資訊，請選擇 [建立]。 通知訊息範本便可供使用。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 03/09/2018
 1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Microsoft Intune]，然後選取 [裝置合規性]。
 2. 選取 [原則]，選擇您的原則，然後選取 [屬性]。 
 
-  尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。
+   尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。
 
 3. 選取 [不符合規範時所採取的動作]，然後選取 [新增] 輸入動作參數。 您可以選擇先前建立的訊息範本，新增其他收件者，並更新寬限期排程。 您可以輸入排程上的天數 (0 到 365)，然後強制執行條件式存取原則。 如果您輸入 **0** 天，則條件式存取會**立即**禁止對公司資源的存取。
 

@@ -1,27 +1,27 @@
 ---
-title: "為執行 iOS 的裝置設定 Microsoft Intune Wi-Fi 設定"
-titleSuffix: 
-description: "了解執行 iOS 之裝置上的 Intune Wi-Fi 組態設定。"
-keywords: 
+title: 為執行 iOS 的裝置設定 Microsoft Intune Wi-Fi 設定
+titleSuffix: ''
+description: 了解執行 iOS 之裝置上的 Intune Wi-Fi 組態設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fcb21657d8abe1c966aa924993f733b039302268
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9abba211216e13f303a82c7bf3fe028672040d94
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 Wi-Fi 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文將說明可在 Microsoft Intune 中，為執行 iOS 的裝置設定的 Wi-Fi 設定。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/08/2018
 - **Proxy 設定** - 選擇下列其中一項︰
     - **無** - 不設定任何 Proxy 設定。
     - **手動** - 輸入 **Proxy 伺服器位址** (IP 位址)，以及其所關聯的**連接埠號碼**。
-    - **自動** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+    - **自動** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 **http://proxy.contoso.com**)。
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>僅適用於基本設定檔的 Wi-Fi 設定
 
@@ -74,7 +74,8 @@ ms.lasthandoff: 03/08/2018
 #### <a name="client-authentication"></a>用戶端驗證
 
 
-|設定名稱|詳細資訊|使用時機|
-|--------------|-------------|----------|
-|**用戶端驗證時使用的用戶端憑證 (識別憑證)**|選擇 SCEP 或 PKCS 憑證設定檔，以驗證連線。|EAP 類型是 **EAP-TLS**|
-|**驗證方法**|選取連線的驗證方法：<br>- **憑證** - 選取 SCEP 或 PKCS 用戶端憑證作為提供給伺服器的身分識別憑證。<br><br>- **使用者名稱及密碼** - 指定不同的驗證方式。 <br><br>若選取 [使用者名稱及密碼]，請設定︰<br><br>-  **非 EAP 方法 (內部識別)**，然後選取驗證連線的方式︰<br>- **無**<br>- **未加密的密碼 (PAP)**<br>- **Challenge Handshake 驗證通訊協定 (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 第 2 版 (MS-CHAP v2)**<br>可用的選項取決於您所選取的 EAP 類型。<br><br>**及**<br><br>- **識別隱私權 (外部識別)** - 指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。|EAP 類型是 **EAP-TTLS**或 *。
+|                                     設定名稱                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       詳細資訊                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                  使用時機                  |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| <strong>用戶端驗證時使用的用戶端憑證 (識別憑證)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       選擇 SCEP 或 PKCS 憑證設定檔，以驗證連線。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |    EAP 類型是 <strong>EAP-TLS</strong>    |
+|                        <strong>驗證方法</strong>                        | 選取連線的驗證方法：<br>- <strong>憑證</strong> - 選取 SCEP 或 PKCS 用戶端憑證作為提供給伺服器的身分識別憑證。<br><br>- <strong>使用者名稱及密碼</strong> - 指定不同的驗證方式。 <br><br>若選取 [使用者名稱及密碼]，請設定︰<br><br>-  <strong>非 EAP 方法 (內部識別)</strong>，然後選取驗證連線的方式︰<br>- <strong>無</strong><br>- <strong>未加密的密碼 (PAP)</strong><br>- <strong>Challenge Handshake 驗證通訊協定 (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP 第 2 版 (MS-CHAP v2)</strong><br>可用的選項取決於您所選取的 EAP 類型。<br><br><strong>及</strong><br><br>- <strong>識別隱私權 (外部識別)</strong> - 指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。 | EAP 類型是 <strong>EAP-TTLS</strong>或 *。 |
+

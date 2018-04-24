@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 48b9650a8f0d6a79b3abab542148acf0a57c0e41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 的已註冊裝置管理功能
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些裝置。 您可以自行註冊某些裝置類型，或者使用者可以使用「公司入口網站」應用程式進行註冊。 這也可讓它們執行例如瀏覽及安裝應用程式等作業，確保他們的裝置與公司原則相容，並連絡其 IT 支援人員。
 
@@ -66,6 +66,7 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 ## <a name="inventory-and-reporting"></a>清查和報告
 
-|功能|詳細資料|詳細資訊|
-|--------------|-----------|--------------------|
-|清查和報告|尋找您管理的裝置及裝置所用軟體的相關資訊。|[在 Microsoft Intune 透過清查了解您的裝置](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       功能        |                                             詳細資料                                              |                                                                  詳細資訊                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 清查和報告 | 尋找您管理的裝置及裝置所用軟體的相關資訊。 | [在 Microsoft Intune 透過清查了解您的裝置](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

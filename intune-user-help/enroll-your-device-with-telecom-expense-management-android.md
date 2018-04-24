@@ -1,27 +1,27 @@
 ---
-title: "使用 Intune 在電信費用管理中註冊您的 Android 裝置"
-description: "了解如何將 Android 裝置註冊至電信費用管理。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用 Intune 在電信費用管理中註冊您的 Android 裝置
+description: 了解如何將 Android 裝置註冊至電信費用管理。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>在電信費用管理中註冊您的 Android 裝置
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 01/25/2018
 
 1. 選取 [使用 Microsoft 帳戶註冊]。
 
-  ![Datalert 應用程式設定畫面的螢幕擷取畫面，此畫面在上半部提供用以註冊裝置的電話號碼欄位，並在下半部提供 [使用 Microsoft 帳戶註冊]，以針對您有 Microsoft Office 365 帳戶和 Intune 訂閱的情況。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Datalert 應用程式設定畫面的螢幕擷取畫面，此畫面在上半部提供用以註冊裝置的電話號碼欄位，並在下半部提供 [使用 Microsoft 帳戶註冊]，以針對您有 Microsoft Office 365 帳戶和 Intune 訂閱的情況。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. 從可用帳戶中選取您的公司或學校帳戶。 如果沒有列出您的帳戶，您可以使用 [新增帳戶] 按鈕來登入它。
 
-  ![「選擇帳戶」畫面的螢幕擷取畫面，此畫面顯示範例帳戶和 [新增帳戶] 按鈕。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![「選擇帳戶」畫面的螢幕擷取畫面，此畫面顯示範例帳戶和 [新增帳戶] 按鈕。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. Datalert 安裝將會運作一段時間，然後應該就會完成。 當它完成時，請點選 [完成]。
 
@@ -51,15 +51,15 @@ ms.lasthandoff: 01/25/2018
 
 1. 提供您裝置的電話號碼。
 
-  ![Datalert 應用程式要求電話號碼的螢幕擷取畫面。](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Datalert 應用程式要求電話號碼的螢幕擷取畫面。](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. 您接著會透過 SMS 訊息收到驗證碼。 提供驗證碼，然後點選 [確定]。
 
-  ![Datalert 應用程式要求 SMS 驗證碼的螢幕擷取畫面。](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Datalert 應用程式要求 SMS 驗證碼的螢幕擷取畫面。](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. 提供驗證碼之後，就會完成 Datalert 安裝。 點選 [完成]，您就可以從 Datalert 應用程式監視您的資料。
 
-  ![Datalert 應用程式監視今天資料使用量的螢幕擷取畫面。](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Datalert 應用程式監視今天資料使用量的螢幕擷取畫面。](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 一旦註冊之後，您就可以開始在 Datalert 應用程式中查看您的資料使用量。
 

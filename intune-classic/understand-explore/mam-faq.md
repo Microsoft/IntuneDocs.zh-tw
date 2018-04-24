@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
 
@@ -61,23 +61,23 @@ ms.lasthandoff: 03/22/2018
 
 **使用 [Outlook 行動裝置應用程式 (英文)](https://www.microsoft.com/outlook-com/mobile/) 時有哪些其他需求？**
 
-  1. 使用者必須在其裝置上安裝 Outlook 行動裝置應用程式。
+1. 使用者必須在其裝置上安裝 Outlook 行動裝置應用程式。
 
-  2. 使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online (英文)](https://products.office.com/exchange/exchange-online) 信箱和授權。
+2. 使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online (英文)](https://products.office.com/exchange/exchange-online) 信箱和授權。
 
-  >[!NOTE]
-  > Outlook 行動裝置應用程式目前僅支援 Microsoft Exchange Online，而不支援 Exchange 內部部署或 Office 365 專用中的 Exchange。
+   >[!NOTE]
+   > Outlook 行動裝置應用程式目前僅支援 Microsoft Exchange Online，而不支援 Exchange 內部部署或 Office 365 專用中的 Exchange。
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 
-  1. 使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](http://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
+1. 使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](http://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
-  2. 使用者必須有受管理的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受管理的位置是 OneDrive，[OneDrive](https://onedrive.live.com/about/) 應用程式應該在使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
+2. 使用者必須有受管理的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受管理的位置是 OneDrive，[OneDrive](https://onedrive.live.com/about/) 應用程式應該在使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
 
-  3. 若受管理的位置是 OneDrive，應用程式必須是部署到使用者之應用程式保護原則的目標。
+3. 若受管理的位置是 OneDrive，應用程式必須是部署到使用者之應用程式保護原則的目標。
 
-  >[!NOTE]
-  > Office 行動裝置應用程式目前僅支援 SharePoint Online，不支援 SharePoint 內部部署。
+   >[!NOTE]
+   > Office 行動裝置應用程式目前僅支援 SharePoint Online，不支援 SharePoint 內部部署。
 
 **Office 為何需要受管理的位置 (例如 OneDrive)？** Intune 會將應用程式中所有資料標示為「公司」或「個人」。 當資料來自公司地點時，會將資料視為「公司」資料。 針對 Office 應用程式，Intune 會將下列位置視為公司地點：電子郵件 (Exchange) 或雲端儲存體 (包含商務用 OneDrive 帳戶的 OneDrive 應用程式)。
 
@@ -124,15 +124,15 @@ MAM (在 iOS 上) 目前允許應用程式層級 PIN 包含英數字元與特殊
 
 **Intune 如何從遠端抹除資料？** Intune 可以透過三種不同的方式抹除資料：完整的裝置抹除、MDM 選擇性抹除和 MAM 選擇性抹除。 如需 MDM 遠端抹除的詳細資訊，請參閱[使用 Microsoft Intune 的完整或選擇性抹除來協助保護您的資料](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。 如需使用 MAM 進行選擇性抹除的相關詳細資訊，請參閱[使用 Microsoft Intune 抹除受管理的公司應用程式資料](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **什麼是完整抹除？** [完整抹除](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)會移除**裝置**的所有使用者資料和設定，方法是將裝置還原為其原廠預設設定。 並從 Intune 移除裝置。
-  >[!NOTE]
-  > 完整抹除只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
+1. **什麼是完整抹除？** [完整抹除](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)會移除**裝置**的所有使用者資料和設定，方法是將裝置還原為其原廠預設設定。 並從 Intune 移除裝置。
+   >[!NOTE]
+   > 完整抹除只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
 
-  2. **什麼是 MDM 選擇性抹除？** 請參閱[使用 Microsoft Intune 的完整或選擇性抹除來協助保護您的資料](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以閱讀選擇性抹除相關資訊。
+2. **什麼是 MDM 選擇性抹除？** 請參閱[使用 Microsoft Intune 的完整或選擇性抹除來協助保護您的資料](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以閱讀選擇性抹除相關資訊。
 
-  3. **什麼是 MAM 選擇性抹除？** MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 要求是使用 Intune Azure 入口網站來起始。 若要了解如何起始抹除要求，請參閱[使用 Microsoft Intune 抹除受管理的公司應用程式資料](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **什麼是 MAM 選擇性抹除？** MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 要求是使用 Intune Azure 入口網站來起始。 若要了解如何起始抹除要求，請參閱[使用 Microsoft Intune 抹除受管理的公司應用程式資料](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **MAM 選擇性抹除發生的速度有多快？** 如果使用者在起始選擇性抹除時正在使用應用程式，Intune App SDK 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
+4. **MAM 選擇性抹除發生的速度有多快？** 如果使用者在起始選擇性抹除時正在使用應用程式，Intune App SDK 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
 
 **為什麼內部部署 (on-prem) 服務無法搭配受 Intune 保護的應用程式運作？** Intune 應用程式保護取決於使用者的身分識別在應用程式與 Intune App SDK 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不一致也不保證。
 

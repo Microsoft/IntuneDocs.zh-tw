@@ -1,29 +1,29 @@
 ---
-title: "使用 MAM 原則保護應用程式資料"
-description: "本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。"
-keywords: 
+title: 使用 MAM 原則保護應用程式資料
+description: 本主題說明行動應用程式管理原則如何協助您保護公司資料、避免資料遺失，以及區隔個人與工作的資訊。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的應用程式保護原則保護應用程式資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>如何保護應用程式資料
 您的員工使用行動裝置處理公私事務。 在您確保員工生產力的同時，也要防止故意和不小心的資料外洩。  此外，當員工使用並非由您管理的裝置來存取公司資料時，您會希望可以保護這些公司資料。
@@ -57,7 +57,7 @@ ms.lasthandoff: 02/19/2018
 - **應用程式保護原則可確保應用程式層保護完全就位**。 例如，您可以設定如下的原則：在工作環境中需要有 PIN 才能開啟應用程式、禁止資料在應用程式之間共用，以及禁止公司應用程式資料儲存到個人存放區位置。
 
 ## <a name="devices-that-support-mam"></a>支援 MAM 的裝置
-Intune 應用程式保護原則平台支援與 Office 應用程式平台支援一致。 如需詳細資料，請參閱 [Office 的系統需求](https://products.office.com/en-US/office-system-requirements)。
+Intune 應用程式保護原則平台支援與 Office 應用程式平台支援一致。 如需詳細資訊，請參閱 [Office 的系統需求](https://products.office.com/en-US/office-system-requirements)。
 
 >[!NOTE]
 >在沒有註冊的情況下，MAM 中不支援 Windows 裝置。 不過，當您將 Windows 10 裝置註冊 Intune 時，即可使用 Windows 資訊保護，以提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。

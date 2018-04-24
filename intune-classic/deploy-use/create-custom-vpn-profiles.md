@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Microsoft Intune VPN 設定檔的自訂設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>建立自訂設定
 您可以使用 Intune 自訂設定原則來建立下列各項的 VPN 設定檔：
@@ -39,13 +39,13 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="to-create-a-custom-configuration-policy"></a>建立自訂設定原則：
 
-   1. 在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則] > [擴充平台] > [自訂設定] > [建立原則]。
-   2. 輸入原則的名稱。
-   3. 針對您想要指定的每個 URI 設定選擇 [新增]，並提供要求的資訊。 範例如下：
+1. 在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] > [新增原則] > [擴充平台] > [自訂設定] > [建立原則]。
+2. 輸入原則的名稱。
+3. 針對您想要指定的每個 URI 設定選擇 [新增]，並提供要求的資訊。 範例如下：
 
    ![VPN 設定檔自訂設定對話方塊](./media/Intune_Add_VPN_URI.png)
 
-   4.  輸入所有 URI 設定後，請選擇 [儲存原則]，然後部署原則。
+4. 輸入所有 URI 設定後，請選擇 [儲存原則]，然後部署原則。
 
 然後，一如以往[部署原則](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)。
 

@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4bf478225c22597b1645fc7d18e4329560bb1f03
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android 裝置的相容性原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題所述的原則設定適用於執行 Android 4.0 及更新版本，或 Samsung KNOX 4.0 及更新版本的裝置。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
-- [Android for Work 裝置的合規性政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android for Work 裝置的合規性政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系統安全性設定
 ### <a name="password"></a>密碼

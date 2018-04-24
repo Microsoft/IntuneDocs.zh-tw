@@ -14,26 +14,26 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: c9744358afca288978e14b4ec9967a52100076f1
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c7e750d308c4167dd6e99f503ed52d3a96ea630b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>選擇如何註冊行動裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 下列一系列問題的回答可協助您判斷所管理裝置的最佳註冊方法。
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**您會如何管理共用的 iOS 裝置？**
 
 > [!div class="button"]
-[iOS DEP 註冊 >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [iOS DEP 註冊 >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 > [!div class="button"]
-[iOS 直接註冊 >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [iOS 直接註冊 >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[DEM 註冊 >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [DEM 註冊 >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Apple 的裝置註冊方案 (DEP)** - 使用註冊設定檔，可以將目標設為使用 DEP 所購買或管理的 iOS 裝置。 使用者第一次開啟裝置的電源時，裝置會下載 DEP 設定檔，並使用設定檔 DEP 進行註冊。
 
@@ -42,4 +42,4 @@ ms.lasthandoff: 03/22/2018
   - **裝置註冊管理員** - Intune 的裝置註冊管理員 (DEM) 可讓管理員或系統管理員以單一使用者帳戶註冊許多行動裝置。 這些裝置不能有使用者親和性 (也就是專用使用者)，而且必須透過安裝並登入公司入口網站應用程式進行註冊。
 
 > [!div class="button"]
-[< 返回](choose-how-to-enroll-devices3.md)
+> [< 返回](choose-how-to-enroll-devices3.md)

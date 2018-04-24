@@ -1,28 +1,28 @@
 ---
-title: "針對 Microsoft Intune - Azure 中的裝置設定檔問題進行疑難排解 | Microsoft Docs"
-description: "對於裝置設定檔的一般問題，包括設定檔變更無法套用至部分使用者或裝置、新的原則會花多少時間推送至裝置、存在多個原則時該套用哪些設定、刪除或移除設定檔時會發生什麼事，以及更多事項，請見 Azure 入口網站中的 Microsoft Intune"
-keywords: 
+title: 針對 Microsoft Intune - Azure 中的裝置設定檔問題進行疑難排解 | Microsoft Docs
+description: 對於裝置設定檔的一般問題，包括設定檔變更無法套用至部分使用者或裝置、新的原則會花多少時間推送至裝置、存在多個原則時該套用哪些設定、刪除或移除設定檔時會發生什麼事，以及更多事項，請見 Azure 入口網站中的 Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune 裝置設定檔的常見問題和解決方式
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 針對使用 Intune 裝置設定檔的一般問題進行疑難排解。
 

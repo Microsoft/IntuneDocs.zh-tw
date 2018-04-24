@@ -1,27 +1,27 @@
 ---
-title: "從公司入口網站移除裝置 | Microsoft Docs"
-description: "從公司入口網站移除裝置"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 從公司入口網站移除裝置 | Microsoft Docs
+description: 從公司入口網站移除裝置
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4064b18a9553c3818008c0641b9428a03733f7c2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>從公司入口網站移除裝置
 
@@ -29,17 +29,17 @@ ms.lasthandoff: 01/25/2018
 
 若要移除裝置︰
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+1. 在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
 
-  ![公司入口網站的影像，畫面左邊是展開的側邊功能表，有 [首頁]、[所有應用程式]、[我的裝置]、[技術支援] 和 [登出] 按鈕。](/media/iwp-expanded-sidebar.png)
+   ![公司入口網站的影像，畫面左邊是展開的側邊功能表，有 [首頁]、[所有應用程式]、[我的裝置]、[技術支援] 和 [登出] 按鈕。](/media/iwp-expanded-sidebar.png)
 
 2. 在 [我的裝置] 頁面上，選取您想要移除的裝置名稱。
 
     ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  裝置會在快顯視窗中開啟。 點選 [移除] 按鈕。
+3. 裝置會在快顯視窗中開啟。 點選 [移除] 按鈕。
 
-    ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+   ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
 
 4. 閱讀警告訊息，然後點選 [移除] 以從公司入口網站移除您的裝置。
 

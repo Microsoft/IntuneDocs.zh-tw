@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: a2c194e7741c8ce79d87ad68eb408508b2929167
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>建立 Skycure Mobile Threat Defense 合規性原則
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 具有 Skycure Mobile Threat Defense 的 Intune 可讓您偵測行動裝置上的威脅，以及評估那些裝置上的風險。 您可以建立評估風險的合規性原則規則，來判斷裝置是否符合規範。 接著，您即可使用條件式存取原則，根據裝置相容性來封鎖對服務的存取。
 

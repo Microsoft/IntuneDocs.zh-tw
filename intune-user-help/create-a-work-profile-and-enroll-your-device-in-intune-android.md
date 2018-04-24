@@ -1,27 +1,27 @@
 ---
-title: "使用工作設定檔註冊裝置 | Microsoft Docs"
-description: "使用工作設定檔讓 Android 裝置更安全的方法。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用工作設定檔註冊裝置 | Microsoft Docs
+description: 使用工作設定檔讓 Android 裝置更安全的方法。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ed269de2d08cb23caa7ade4a24ad40e5d0fd8b25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a7ab6efccf9fa00119bc2052d16b4ad8fd5b55d8
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
     ![公司支援人員在您的裝置上可查看和無法查看的項目](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  在 [What's next?] \(新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
+5.  在 [What's next?] (新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
 
     ![新功能畫面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

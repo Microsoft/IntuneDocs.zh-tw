@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>變更 MDM 授權單位
 自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 本主題提供步驟，讓您在無需將現有受管理裝置解除註冊並重新註冊的情況下，將從 Intune 設定且 MDM 授權單位設定為 [Microsoft Intune] \(獨立式) 的現有 Microsoft Intune 租用戶，設定為 [Configuration Manager] \(混合式 MDM)。
@@ -76,16 +76,16 @@ ms.lasthandoff: 03/22/2018
 
 1. **下載憑證簽署要求**
 
-    1. 在 Configuration Manager 主控台中，移至 [系統管理] &gt; [雲端服務] &gt; [Microsoft Intune 訂閱]，然後選取 [建立 APNs 憑證要求] 來開啟 [要求 Apple Push Notification Service 憑證簽署要求] 對話方塊。  
-    2. **瀏覽**至儲存新的憑證簽署要求 (.csr) 檔案的路徑。 在本機儲存憑證簽署要求 (.csr) 檔案。  
-    3. 按一下 [下載] 。 下載新的 Microsoft Intune .csr 檔案，並由 Configuration Manager 儲存。   
+   1. 在 Configuration Manager 主控台中，移至 [系統管理] &gt; [雲端服務] &gt; [Microsoft Intune 訂閱]，然後選取 [建立 APNs 憑證要求] 來開啟 [要求 Apple Push Notification Service 憑證簽署要求] 對話方塊。  
+   2. **瀏覽**至儲存新的憑證簽署要求 (.csr) 檔案的路徑。 在本機儲存憑證簽署要求 (.csr) 檔案。  
+   3. 按一下 [下載] 。 下載新的 Microsoft Intune .csr 檔案，並由 Configuration Manager 儲存。   
 
-    > [!IMPORTANT]
-    > 您必須下載新的憑證簽署要求。 請不要使用現有的檔案，否則會失敗。  
+      > [!IMPORTANT]
+      > 您必須下載新的憑證簽署要求。 請不要使用現有的檔案，否則會失敗。  
 
-2.  移至 [Apple Push Certificates 入口網站](http://go.microsoft.com/fwlink/?LinkId=269844) \(英文\)，然後以先前用來建立及更新用於 Intune 獨立部署之 APNs 憑證的「相同」Apple ID 進行登入。
+2. 移至 [Apple Push Certificates 入口網站](http://go.microsoft.com/fwlink/?LinkId=269844) \(英文\)，然後以先前用來建立及更新用於 Intune 獨立部署之 APNs 憑證的「相同」Apple ID 進行登入。
 
-    ![Apple Push Certificates 入口網站登入頁面](../media/mdm-change-apns-portal.png)
+   ![Apple Push Certificates 入口網站登入頁面](../media/mdm-change-apns-portal.png)
 
 3. 選取您用於 Intune 獨立部署的 APNs 憑證，然後按一下 [更新]。
 

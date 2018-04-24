@@ -1,30 +1,30 @@
 ---
-title: "在 Microsoft Intune 中管理 iOS 大量採購的應用程式"
-titlesuffix: 
-description: "針對從 iOS Store 大量採購的應用程式，了解如何將應用程式同步到 Microsoft Intune，然後管理及並追蹤其使用情況。"
-keywords: 
+title: 在 Microsoft Intune 中管理 iOS 大量採購的應用程式
+titlesuffix: ''
+description: 針對從 iOS Store 大量採購的應用程式，了解如何將應用程式同步到 Microsoft Intune，然後管理及並追蹤其使用情況。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 iOS App Store 可讓您購買多個想要在公司內執行的應用程式授權。 購買多個複本有助於您在公司中有效率地管理應用程式。
 
@@ -152,6 +152,17 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 ## <a name="further-information"></a>進一步資訊
 
 當具有合格裝置的使用者第一次嘗試將 VPP 應用程式安裝至裝置時，系統會要求他們加入 Apple 大量採購方案。 他們必須加入，應用程式安裝才會繼續執行。 對於加入 Apple 大量採購方案的邀請，需要使用者能夠在 iOS 裝置上使用 iTunes 應用程式。 如果您已經設定停用 iTunes Store 應用程式的原則，則 VPP 應用程式以使用者為基礎的授權將無法運作。 解決方法是移除原則以允許 iTunes 應用程式，或是使用以裝置為基礎的授權。
+
+## <a name="frequently-asked-questions"></a>常見問題集
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>在裝置上安裝或移除應用程式之後，入口網站需要多久的時間才能更新授權計數？
+在安裝或解除安裝應用程式之後的幾小時內，應該就會更新授權。 請注意，如果使用者從裝置移除應用程式，該授權仍然會指派給該使用者或裝置。
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>是否可以過度訂閱某個應用程式，如果可以，是在怎樣的情況下？
+是。 Intune 系統管理員可以過度訂閱應用程式。 例如，如果系統管理員購買 100 份 XYZ 應用程式的授權，然後將該應用程式的對象設為一個有 500 個成員的群組。 前 100 個成員 (使用者或裝置) 將會獲得授權指派，其餘成員的授權指派則會失敗。
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>就我所知，Intune 每天都會與 Apple 自動同步應用程式授權，對嗎？
+Intune 每 15 小時都會與 Apple 同步應用程式授權。
 
 ## <a name="next-steps"></a>接下來的步驟
 

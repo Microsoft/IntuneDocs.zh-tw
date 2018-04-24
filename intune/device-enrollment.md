@@ -1,27 +1,27 @@
 ---
-title: "什麼是 Microsoft Intune 裝置註冊"
+title: 什麼是 Microsoft Intune 裝置註冊
 titlesuffix: Microsoft Intune
-description: "了解 iOS、Android 及 Windows 裝置註冊。"
-keywords: 
+description: 了解 iOS、Android 及 Windows 裝置註冊。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司資料的方式。 若要使用這項行動裝置管理 (MDM)，裝置必須先在 Intune 服務中註冊。 裝置會在註冊時收到 MDM 憑證。 這項憑證會用來與 Intune 服務通訊。
 

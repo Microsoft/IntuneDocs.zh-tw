@@ -1,27 +1,27 @@
 ---
-title: "執行 Windows 8.1 之裝置的 Microsoft Intune 裝置限制設定"
-titleSuffix: 
-description: "了解執行 Windows 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。"
-keywords: 
+title: 執行 Windows 8.1 之裝置的 Microsoft Intune 裝置限制設定
+titleSuffix: ''
+description: 了解執行 Windows 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d0203a8bea8a058d71130b16706269cb9a462cb3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 和更新版本的裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 8.1 和更新版本的裝置進行設定。
 

@@ -1,28 +1,28 @@
 ---
-title: "淘汰 Windows 電腦"
-description: "如何淘汰受 Intune 管理的 Windows 電腦。"
-keywords: 
+title: 淘汰 Windows 電腦
+description: 如何淘汰受 Intune 管理的 Windows 電腦。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f842c983dd06c00574ec660a11bdaef6f41c5aa8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99dc86bf20a50710cf1661702d46a3124861a619
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-a-windows-pc"></a>淘汰 Windows 電腦
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用下列步驟，在電腦上執行 Intune 軟體用戶端，來淘汰您以電腦形式進行管理的桌面。 淘汰電腦後，即會將其從 Intune 管理中移除。 您無法透過 Intune 恢復電腦的出廠預設值，以將它設回其原始出廠設定。
 

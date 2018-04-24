@@ -1,25 +1,25 @@
 ---
-title: "新增並指派 MTD 應用程式到 Microsoft Intune"
-titleSuffix: 
-description: "在 Azure 入口網站上使用 Intune 來新增 Mobile Threat Defense (MTD) 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則。"
-keywords: 
+title: 新增並指派 MTD 應用程式到 Microsoft Intune
+titleSuffix: ''
+description: 在 Azure 入口網站上使用 Intune 來新增 Mobile Threat Defense (MTD) 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 03/08/2018
 執行下列動作，啟用 iOS 使用者的 Azure Active Directory 驗證：
 
 1. 移至 [Azure 入口網站](https://portal.azure.com)，使用您的認證登入，然後巡覽至應用程式頁面。
-  
+
 2. 新增 **Lookout for Work iOS 應用程式**作為**原生用戶端應用程式**。
 
 3. 以您簽署 IPA 時所選取的客戶配套識別碼取代 **com.lookout.enterprise.yourcompanyname**。
@@ -133,13 +133,13 @@ ms.lasthandoff: 03/08/2018
 
 -   您必須**下載** iOS 應用程式設定原則檔案： 
     -   前往 [Skycure Management 主控台](https://aad.skycure.com)，並以管理員認證登入。
-    
+
     -   移至 [設定] &gt; [裝置管理整合] &gt; [EMM 整合選項]、選擇 [Microsoft Intune]，然後儲存您的選項。
-    
+
     -   按一下 [整合安裝檔案] 連結，然後儲存所產生的 \*.zip 檔案。 此 .zip 檔案包含 **skycure\_configuration.plist** 檔案，這會用來在 Intune 中建立 iOS 應用程式設定原則。
-    
+
     -   請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Skycure iOS 應用程式設定原則。
-    
+
     - 在**步驟 8** 中，使用選項 [輸入 XML 資料]，從 **skycure_configuration.plist** 檔案複製內容，再將其貼到設定原則本文中。
 
 您也可以從此處複製 **skycure_configuration.plist** 內容：
@@ -151,7 +151,6 @@ ms.lasthandoff: 03/08/2018
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>適用於 Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ ms.lasthandoff: 03/08/2018
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>若為 Zimperium
@@ -179,7 +177,6 @@ ms.lasthandoff: 03/08/2018
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>指派應用程式 (所有 MTD 合作夥伴)

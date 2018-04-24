@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，您就可以從 Intune 主控台管理大量購買的應用程式。 例如：
 * 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
@@ -57,8 +57,8 @@ ms.lasthandoff: 03/22/2018
 1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[系統管理]**。
 2. 在 [管理] 工作區中，展開 [行動裝置管理] > [Windows]，然後選擇 [商務用市集]。
 3. 在 [商務用 Microsoft 網上商店] 頁面上，執行下列動作：
- * 如果您尚未這樣做，請按一下連結以註冊使用商務用 Microsoft 網上商店。
- * 一旦註冊完成，請選擇 **[設定同步處理]**。
+   * 如果您尚未這樣做，請按一下連結以註冊使用商務用 Microsoft 網上商店。
+   * 一旦註冊完成，請選擇 **[設定同步處理]**。
 4. 在 [設定商務用 Microsoft 網上商店應用程式同步] 對話方塊中，選取 [啟用商務用 Microsoft 網上商店同步]。
 5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店的應用程式將會在 Intune 主控台中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
 6. 按一下 [確定]。

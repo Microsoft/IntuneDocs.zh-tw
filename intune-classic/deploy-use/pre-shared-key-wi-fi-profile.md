@@ -1,61 +1,61 @@
 ---
-title: "使用 PSK 的Wi-Fi"
-description: "使用自訂組態建立包含預先共用金鑰的 Wi-Fi 設定檔。"
-keywords: 
+title: 使用 PSK 的Wi-Fi
+description: 使用自訂組態建立包含預先共用金鑰的 Wi-Fi 設定檔。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 以下是如何使用 Intune 的**自訂組態**來採用預先共用金鑰建立 Wi-Fi 設定檔。 此主題也包含如何建立 EAP 型 Wi-Fi 設定檔的範例。
 
 > [!NOTE]
--   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
-- 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
--  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
+> -   您可能會發現從連線到該網路的電腦複製程式碼較輕鬆，如下所述。
+> - 若是 Android，您也可以選擇使用 Johnathon Biersack 提供的這個 [Android PSK 產生器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
+> -   您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
+> -  若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者，使用 Johnathon Biersack 提供的這個 [iOS PSK 行動設定產生器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.  若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂設定]，而不是 Wi-Fi 設定檔。
+1. 若要使用預先共用金鑰為 Android 或 Windows 建立 Wi-Fi 設定檔，或建立 EAP 型 Wi-Fi 設定檔，當您建立原則時，請針對該裝置平台選擇 [自訂設定]，而不是 Wi-Fi 設定檔。
 
-2.  提供名稱和描述。
-3.  加入新的 OMA-URI 設定︰
+2. 提供名稱和描述。
+3. 加入新的 OMA-URI 設定︰
 
    a.   輸入此 Wi-Fi 網路設定的名稱。
 
-   b。   輸入 OMA-URI 設定的描述，或者保留空白。
+   b.   輸入 OMA-URI 設定的描述，或者保留空白。
 
    c.   **資料類型**︰設為「字串(XML)」
 
    d.   **OMA-URI**：
 
-    - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-開頭務必包含點號字元。
+   > [!NOTE]
+   > 開頭務必包含點號字元。
 
-    SSID 是您要建立原則的 SSID。 例如，`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   SSID 是您要建立原則的 SSID。 例如，`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **值欄位**是貼上 XML 程式碼的位置。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
+   e. **值欄位**是貼上 XML 程式碼的位置。 範例如下。 每個值應該適用於您的網路設定。 請參閱程式碼的註解區段，以取得一些指示。
 4. 選擇 [確定]，然後儲存並部署原則。
 
     > [!NOTE]
@@ -202,8 +202,8 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 1. 在連線到或最近已連線到無線網路的電腦上，開啟下列資料夾 ︰C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。
 
     最好使用未連線至許多無線網路的電腦，因為您必須搜尋每個設定檔才能找到正確檔案。
-3.     搜尋 XML 檔案，找出名稱正確的檔案。
-4.     找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
+2. 搜尋 XML 檔案，找出名稱正確的檔案。
+3. 找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
 
 ## <a name="deploy-the-policy"></a>部署原則
 
@@ -217,5 +217,5 @@ EAP 型 Wi-Fi 設定檔的 XML 程式碼範例如下︰
 
 當您選取某項已部署的原則時，您可以在原則清單下方檢視有關部署的進一步資訊。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [Microsoft Intune 中的 Wi-Fi 連線](wi-fi-connections-in-microsoft-intune.md)

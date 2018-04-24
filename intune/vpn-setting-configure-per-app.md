@@ -1,25 +1,25 @@
 ---
-title: "在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN"
-titleSuffix: 
-description: "指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。"
-keywords: 
+title: 在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN
+titleSuffix: ''
+description: 指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/08/2018
 建立或選擇 Azure Active Directory (Azure AD) 中的現有群組，以納入可存取個別應用程式 VPN 的成員。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選擇 [群組] 並按一下 [新增群組]。
 3. 為群組選取 [群組類型]。 
 3. 鍵入群組的 [群組名稱]。 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 將 CA 發行的 VPN 伺服器根憑證匯入在 Intune 中建立的設定檔。 受信任的憑證設定檔會指示 iOS 裝置自動信任 VPN 伺服器顯示的 CA。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -67,14 +67,14 @@ ms.lasthandoff: 03/08/2018
 4. 按一下資料夾圖示，並瀏覽至從您 VPN 管理主控台匯出的 VPN 憑證 (.cer 檔案)。 按一下 [確定]。
 5. 按一下 [建立]。
 
-    ![建立受信任的憑證設定檔](media\vpn-per-app-create-trusted-cert.png)
+    ![建立受信任的憑證設定檔](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>建立 SCEP 憑證設定檔
 
 受信任的根憑證設定檔可讓 iOS 自動信任 VPN 伺服器。 SCEP 憑證提供從 iOS VPN 用戶端連線到 VPN 伺服器的認證。 憑證可讓裝置以無訊息的方式進行驗證，不會提示 iOS 裝置使用者使用者名稱和密碼。 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -94,14 +94,14 @@ ms.lasthandoff: 03/08/2018
 14. 按一下 [確定]。
 15. 按一下 [建立]。
 
-    ![建立 SCEP 憑證設定檔](media\vpn-per-app-create-scep-cert.png)
+    ![建立 SCEP 憑證設定檔](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>建立個別應用程式 VPN 設定檔
 
 VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選擇 [裝置設定]，然後按一下 [設定檔]。
 3. 按一下 [建立設定檔]。 在 [建立設定檔] 中：
     1. 鍵入**名稱**。
@@ -123,7 +123,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 6. 按一下 [確定]。
 7. 按一下 [建立]。
 
-    ![建立個別應用程式 VPN 設定檔](media\vpn-per-app-create-vpn-profile.png)
+    ![建立個別應用程式 VPN 設定檔](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>建立應用程式與 VPN 設定檔的關聯
@@ -131,7 +131,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 在新增 VPN 設定檔之後，請對設定檔建立應用程式與 Azure AD 群組的關聯。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 2. 選擇 [Mobile Apps]。
 3. 按一下 [應用程式]。
 4. 從應用程式清單中選取應用程式。
@@ -146,7 +146,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 
 9. 按一下 [確定] ，然後按一下 [儲存]。
 
-    ![建立應用程式與 VPN 的關聯](media\vpn-per-app-app-to-vpn.png)
+    ![建立應用程式與 VPN 的關聯](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>驗證 iOS 裝置上的連線
 

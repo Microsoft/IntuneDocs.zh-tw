@@ -1,25 +1,25 @@
 ---
-title: "Intune App SDK 優點"
+title: Intune App SDK 優點
 titlesuffix: Microsoft Intune
-description: "Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。"
-keywords: 
+description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概觀
 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。
@@ -64,7 +64,7 @@ IT 系統管理員可以在終端使用者存取應用程式之前，檢查裝�
 ### <a name="app-protection-without-device-enrollment"></a>無裝置註冊的應用程式保護
 
 >[!IMPORTANT]
->Intune App Wrapping Tools、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin Component 和 SDK Cordova Plugin 提供無裝置註冊的 Intune 應用程式保護。
+>Intune App Wrapping Tools、Intune App SDK for Android、Intune App SDK for iOS、「Intune App SDK Xamarin 繫結」及「SDK Cordova 外掛程式」提供不需註冊裝置的 Intune 應用程式保護。
 
 許多個人裝置的使用者想要存取公司資料，但不想向行動裝置管理 (MDM) 提供者註冊其個人裝置。 因為 MDM 註冊需要裝置的通用控制權，所以使用者通常不太願意將其個人裝置的控制權提供給公司。
 

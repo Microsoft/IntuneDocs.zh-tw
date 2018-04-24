@@ -1,29 +1,29 @@
 ---
-title: "如何將 Web 應用程式新增至 Microsoft Intune"
-titleSuffix: 
-description: "了解如何將 Web 應用程式新增至 Microsoft Intune。"
-keywords: 
+title: 如何將 Web 應用程式新增至 Microsoft Intune
+titleSuffix: ''
+description: 了解如何將 Web 應用程式新增至 Microsoft Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecb44f8b98501f6c82f91994cd8a06b8177208d7
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 45253e061039198aee4aa49b2bf879a1b9929e35
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-web-apps-to-microsoft-intune"></a>如何將 Web 應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 應用程式是主從式應用程式。 伺服器提供了 Web 應用程式，其中包括 UI、內容和功能。 此外，現代的 Web 裝載平台通常會提供安全性、負載平衡和其他優勢。 Web 應用程式在網站上會分開維護。 您可以使用 Microsoft Intune 指向此應用程式類型。 您也可以指派哪些使用者群組可以存取這個應用程式。 
 

@@ -1,27 +1,27 @@
 ---
-title: "執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定"
-titleSuffix: 
-description: "了解您在 Microsoft Intune 中可用來在執行 iOS 之裝置上自訂主畫面和 Dock 的設定。"
-keywords: 
+title: 執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定
+titleSuffix: ''
+description: 了解您在 Microsoft Intune 中可用來在執行 iOS 之裝置上自訂主畫面和 Dock 的設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 主畫面配置設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用這些設定，在執行 iOS 之裝置上的 Dock 設定應用程式和資料夾配置，以及設定主畫面。
 

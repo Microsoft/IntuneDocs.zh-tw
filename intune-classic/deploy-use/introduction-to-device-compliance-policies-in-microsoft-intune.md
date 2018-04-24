@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c9c93d29ddee6d01e057c01a44c81950b857213
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Microsoft Intune 的裝置相容性原則
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="what-is-a-compliance-policy"></a>什麼是合規性政策？
 為協助保護公司資料，您必須確認用來存取公司應用程式及資料的裝置符合特定規則。 這些規則可能包括使用 PIN 來存取裝置，以及為裝置中儲存的資料加密。 這樣一組規則稱為合規性原則。

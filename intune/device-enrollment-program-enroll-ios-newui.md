@@ -15,15 +15,15 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 5532e00f90702b820ec5bed6bf2fdb3d5e9d37df
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
@@ -74,8 +74,12 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
     ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-ios/image01.png)
 
-2. 選擇 [下載您的公開金鑰]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
-  ![[Apple 憑證] 工作區中 [註冊計劃權杖] 窗格下載公開金鑰的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image02.png)
+2. 藉由選取 [我同意] 來將權限授與 Microsoft，以將使用者和裝置資訊傳送給 Apple。
+
+   ![[Apple 憑證] 工作區中 [註冊計劃權杖] 窗格下載公開金鑰的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
+
+3. 選擇 [下載您的公開金鑰]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
+
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>步驟 2： 使用您的金鑰，下載來自 Apple 的權杖。
 
@@ -135,12 +139,12 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
     有兩種方式可通知使用者其裝置收到監督：
 
-    - 鎖定畫面指出：「此 iPhone 受 Contoso 管理。」
-    - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
+   - 鎖定畫面指出：「此 iPhone 受 Contoso 管理。」
+   - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
 
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
-     
+
 7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
 8. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
@@ -151,21 +155,23 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
 11. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | 設定 | 說明 |
-    | --- | --- |
-    | **部門名稱** | 使用者在啟用期間點選 [關於設定] 時顯示。 |
-    | **部門電話** | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
-    | **設定助理選項** | 下列是選用設定，可稍後在 iOS [設定] 功能表中進行設定。 |
-    | **密碼** | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
-    | **位置服務** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **還原** | 啟用時，設定助理會在啟用期間提示 iCloud 備份。 |
-    | **iCloud 與 Apple ID** | 啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。 |
-    | **條款和條件** | 啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。 |
-    | **Touch ID** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **Apple Pay** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **縮放** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **Siri** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **診斷資料** | 啟用時，設定助理會在啟用期間提示此服務。 |
+
+    |                 設定                  |                                                                                               說明                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部門名稱</strong>     |                                                             使用者在啟用期間點選 [關於設定] 時顯示。                                                              |
+    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。                                                          |
+    | <strong>設定助理選項</strong> |                                                     下列是選用設定，可稍後在 iOS [設定] 功能表中進行設定。                                                      |
+    |        <strong>密碼</strong>         | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
+    |    <strong>位置服務</strong>    |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                  |
+    |         <strong>還原</strong>         |                                                                啟用時，設定助理會在啟用期間提示 iCloud 備份。                                                                 |
+    |   <strong>iCloud 與 Apple ID</strong>   |                         啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。                         |
+    |  <strong>條款和條件</strong>   |                                                   啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |          <strong>縮放</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |     <strong>診斷資料</strong>     |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+
 
 12. 選擇 [確定]。
 
@@ -175,11 +181,11 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖 > [裝置] > [同步處理]。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
-  
-  為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
-  - 完整同步處理每 7 天只能執行一次。 完整同步期間，每當 Apple 序號指派至 Intune 時，Intune 都會重新整理一次。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
-  - 任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
-  - Intune 每 24 小時會與 Apple 同步一次新增及移除的裝置。
+
+   為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
+   - 完整同步處理每 7 天只能執行一次。 完整同步期間，每當 Apple 序號指派至 Intune 時，Intune 都會重新整理一次。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
+   - 任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
+   - Intune 每 24 小時會與 Apple 同步一次新增及移除的裝置。
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>將註冊設定檔指派給裝置
 必須先將註冊計劃設定檔指派至裝置，裝置才能註冊。

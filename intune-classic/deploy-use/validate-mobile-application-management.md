@@ -1,28 +1,28 @@
 ---
-title: "驗證您的 MAM 設定"
-description: "本主題說明如何測試並驗證 MAM 原則是否已正確設定且正常運作。"
-keywords: 
+title: 驗證您的 MAM 設定
+description: 本主題說明如何測試並驗證 MAM 原則是否已正確設定且正常運作。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>驗證您的行動應用程式管理設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題提供設定行動應用程式管理 (MAM) 後，檢查是否有問題的相關資訊。 本指南適用於 Azure 入口網站中的 MAM 原則。
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/10/2017
 
 2. 從清單中選擇使用者，或是搜尋並選擇使用者，然後選擇 [選取使用者]。 在 [應用程式報告] 資料行頂端，您會看到使用者是否具有 MAM 授權。 您會在下方看到使用者是否具有 O365 授權，以及使用者所有裝置的應用程式狀態。
 
-![MAM 的應用程式狀態](..\media\ts-mam-user-apps.png)
+![MAM 的應用程式狀態](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>解決方式
 以下是要根據使用者狀態所採取的動作︰
@@ -53,7 +53,7 @@ ms.lasthandoff: 10/10/2017
 - 如果使用者的應用程式列為 [未簽入 (Not checked in)]，檢查是否已替該應用程式正確地設定 MAM 原則。
 - 請確保這些條件會套用至您想要套用 MAM 原則的所有使用者。
 
-### <a name="see-also"></a>請參閱
-[準備使用 Microsoft Intune 設定行動應用程式管理原則](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+### <a name="see-also"></a>另請參閱
+[準備使用 Microsoft Intune 設定行動應用程式管理原則](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[使用 Microsoft Intune 的行動應用程式管理原則保護應用程式資料](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[使用 Microsoft Intune 的行動應用程式管理原則保護應用程式資料](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

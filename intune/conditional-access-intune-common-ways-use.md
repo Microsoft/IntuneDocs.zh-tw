@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune 的條件式存取"
-titlesuffix: 
-description: "了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。"
-keywords: 
+title: Microsoft Intune 的條件式存取
+titlesuffix: ''
+description: 了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 條件式存取有兩種類型：裝置型條件式存取和應用程式型條件式存取。 您需要設定相關的相容性原則以在您的組織推動條件式存取相容性。 條件式存取通常用於執行以下作業：允許或封鎖存取 Exchange 內部部署、控制存取網路，或與 Mobile Threat Defense 解決方案整合等等。
 

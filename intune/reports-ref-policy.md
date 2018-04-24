@@ -1,24 +1,24 @@
 ---
-title: "原則"
+title: 原則
 titlesuffix: Microsoft Intune
-description: "Intune 資料倉儲 API 中 [原則] 類別實體集合的參考主題。"
-keywords: "Intune 資料倉儲"
+description: Intune 資料倉儲 API 中 [原則] 類別實體集合的參考主題。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>原則實體的參考
 
@@ -157,10 +157,12 @@ PolicyKey|原則索引鍵，可以與 [原則] 聯結以取得 policyName。|Win
 
 下表列出每日處於成功、擱置、失敗或錯誤狀態的使用者數目。 該數目反映每個原則類型設定檔的資料。 例如，如果使用者的所有其指派原則都處於成功狀態，則會將該天的成功計數器向上加一。 如果使用者獲指派兩個設定檔，一個處於成功狀態，另一個則處於錯誤狀態，會計算處於錯誤狀態的使用者。 PolicyUserActivity 實體會列出過去 30 天的某一天，有多少使用者處於哪種狀態。
 
-|屬性  |說明  |範例  |
-|---------|---------|---------|
-|DateKey|將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。|20160703|
-|Pending|處於擱置狀態的唯一裝置數目。|123|
-|已成功|處於成功狀態的唯一裝置數目。|12|
-PolicyKey|原則索引鍵，可以與 [原則] 聯結以取得 policyName。|Windows 10 基準|
-|錯誤|處於錯誤狀態的唯一裝置數目。|10|
+
+| 屬性  |                                         說明                                         |       範例       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | 將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |      20160703       |
+|  Pending  |                         處於擱置狀態的唯一裝置數目。                          |         123         |
+| 已成功 |                         處於成功狀態的唯一裝置數目。                          |         12          |
+| PolicyKey |                原則索引鍵，可以與 [原則] 聯結以取得 policyName。                 | Windows 10 基準 |
+|   錯誤   |                          處於錯誤狀態的唯一裝置數目。                           |         10          |
+

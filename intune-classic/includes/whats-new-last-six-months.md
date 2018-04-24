@@ -331,6 +331,6 @@ __Intune App SDK Xamarin 元件現在支援 MAM 而不需註冊__ 應用程式�
 
 __Symantec 簽署憑證不再需要已簽署的 Windows Phone 8 公司入口網站以進行上傳__ 上傳 Symantec 簽署憑證不再需要已簽署的 Windows Phone 8 公司入口網站應用程式。 可以獨立上傳憑證。
 
-###<a name="deprecations"></a>棄用功能
+### <a name="deprecations"></a>棄用功能
 
 __Windows Phone 8 公司入口網站的支援__ 對 Windows Phone 8 公司入口網站的支援現在將被取代。 對於 Windows Phone 8 和 WinRT 平台的支援已在 2016 年 10 月被取代。 對於 Windows 8 公司入口網站的支援也已在 2016 年 10 月被取代。

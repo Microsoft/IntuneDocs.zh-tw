@@ -1,36 +1,36 @@
 ---
 title: Intune Mobile Threat Defense
-description: "根據裝置風險，保護對公司資源的存取。"
-keywords: 
+description: 根據裝置風險，保護對公司資源的存取。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 08d87906-8158-4d5e-a49d-ad919efef3d1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff4595a96d34d30fee05c64fd7f88f564610902c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 97711301422dd86ed0a76375add54987809c07b7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense 連接器
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defense 廠商，作為合規性政策和條件式存取規則的資訊來源。 這可讓 IT 系統管理員對其公司資源 (例如 Exchange 和 Sharepoint) 新增一層保護，特別是來自受危害之行動裝置的資源。
 
-## <a name="what-problem-does-this-solve"></a>這會解決哪個問題？
+## <a name="what-problem-does-this-solve"></a>這麼做可以解決何種問題？
 
 公司必須保護機密資料免於遭受新興威脅 (包括實體、應用程式型和網路型威脅) 以及作業系統漏洞的攻擊。
-在過去，公司已經主動保護電腦免受攻擊，但行動裝置則不受監視且未受保護。 行動平台具有應用程式隔離和經審核的消費者 App Store 這類內建保護，但這些平台仍然容易受到複雜的攻擊。 現在，多位員工使用裝置進行工作，而且需要存取機密資訊。 裝置必須受到保護，以免受到更複雜的攻擊。
+在過去，公司已經主動保護電腦免受攻擊，但行動裝置則不受監視且未受保護。 雖然行動平台具有應用程式隔離，以及經審核的消費者應用程式商店等內建保護，但這些平台仍然容易受到複雜的攻擊。 現在，多位員工使用裝置進行工作，而且需要存取機密資訊。 裝置必須受到保護，以免受到更複雜的攻擊。
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 連接器如何運作？
 

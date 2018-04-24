@@ -1,29 +1,29 @@
 ---
-title: "保護電子郵件案例"
-description: "一些範例案例，以及透過條件式存取實作它們的方式。"
-keywords: 
+title: 保護電子郵件案例
+description: 一些範例案例，以及透過條件式存取實作它們的方式。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>使用 Microsoft Intune 限制存取電子郵件：範例案例
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>案例 1：禁止使用者使用不符合規範的裝置存取 Exchange Online
 ### <a name="scenario-requirements"></a>案例需求
@@ -49,13 +49,13 @@ ms.lasthandoff: 10/10/2017
 ## <a name="scenario-2-all-ios-devices-that-access-exchange-on-premises-must-be-managed-by-intune"></a>案例 2：存取 Exchange 內部部署的所有 iOS 裝置都必須由 Intune 管理
 ### <a name="scenario-requirements"></a>案例需求
 - 應該只允許執行 iOS 的裝置存取 Exchange 內部部署。
-- 裝置也必須在 Intune 中註冊，並符合相容性原則規則，才能用於存取 Exchange。
+- 裝置也必須在 Intune 中註冊，並符合合規性政策規則，才能用於存取 Exchange。
 
 若要達到此目的，請使用下列設定來設定 Exchange 內部部署的下列條件式存取原則：
 
--   選擇 [封鎖不符合規範或未向 Microsoft Intune 註冊之裝置的電子郵件應用程式存取 Exchange 內部部署] 選項。 選擇此選項會啟用條件式存取原則，要求所有裝置必須在 Microsoft Intune 中註冊且符合相容性原則規則，才能存取 Exchange。
+- 選擇 [封鎖不符合規範或未向 Microsoft Intune 註冊之裝置的電子郵件應用程式存取 Exchange 內部部署] 選項。 選擇此選項會啟用條件式存取原則，要求所有裝置必須在 Microsoft Intune 中註冊且符合相容性原則規則，才能存取 Exchange。
 
--   在進階 Exchange Active Sync 設定中，請建立：
+- 在進階 Exchange Active Sync 設定中，請建立：
 
   -   允許執行 iOS 之裝置存取 Exchange 的平台例外。   
 

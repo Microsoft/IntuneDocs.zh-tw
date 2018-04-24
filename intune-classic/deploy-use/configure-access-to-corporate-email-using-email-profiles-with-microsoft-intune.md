@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: caa6e57fbaeefbdcdbdf118f2f97985e26fc7724
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用電子郵件設定檔與 Microsoft Intune 來設定公司電子郵件存取權
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 許多行動平台包括隨附於作業系統的原生電子郵件用戶端。 其中部分用戶端可使用電子郵件設定檔加以設定，如本主題所述。
 

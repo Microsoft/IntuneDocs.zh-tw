@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入門指南：簡化行動裝置上的電子郵件設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可讓您將電子郵件 (以及 VPN 和 WiFi) 設定檔部署至由 Intune 服務管理的 Windows、iOS 及 Android 行動裝置，節省公司的時間和資源。 自動設定電子郵件設定檔可以大幅改善使用者體驗並增加滿意度，同時降低技術服務人員成本。
 

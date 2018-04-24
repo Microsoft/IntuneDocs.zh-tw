@@ -1,29 +1,29 @@
 ---
-title: "保護商務用 Skype Online"
-description: "使用條件式存取保護與控制商務用 Skype Online 的存取。"
-keywords: 
+title: 保護商務用 Skype Online
+description: 使用條件式存取保護與控制商務用 Skype Online 的存取。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制存取商務用 Skype Online
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以使用**商務用 Skype Online** 的條件式存取原則來控制對商務用 Skype Online 的存取。
 條件式存取有兩個元件：
@@ -72,7 +72,7 @@ ms.lasthandoff: 10/10/2017
 
 如果使用者隸屬於這兩個群組，他們將免套用原則。
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步驟 2：設定及部署相容性原則
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步驟 2：設定及部署合規性政策
 [建立](create-a-device-compliance-policy-in-microsoft-intune.md)相容性原則並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到將受此原則影響的所有裝置。 這些將是**目標群組**中的使用者所使用的所有裝置。
 
 > [!NOTE]
@@ -87,23 +87,23 @@ ms.lasthandoff: 10/10/2017
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>步驟 3：設定商務用 Skype Online 原則
 接著，設定原則來要求只有受管理和相容的裝置才可以存取商務用 Skype Online。 這項原則會儲存在 Azure Active Directory。
 
-1.  在 [[Microsoft Intune 管理主控台]](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
+1. 在 [[Microsoft Intune 管理主控台]](https://manage.microsoft.com)中，選擇 [原則]  >  [條件式存取]  >  [商務用 Skype Online 原則]。
 
-  ![商務用 Skype Online 條件式存取原則頁面的螢幕擷取畫面](./media/conditional_access_SFBPolicy.png)
+   ![商務用 Skype Online 條件式存取原則頁面的螢幕擷取畫面](./media/conditional_access_SFBPolicy.png)
 
-2.  選擇 [啟用條件式存取原則]。
+2. 選擇 [啟用條件式存取原則]。
 
-3.  在 [應用程存取] 下，您可以選擇將條件式存取原則套用至：
+3. 在 [應用程存取] 下，您可以選擇將條件式存取原則套用至：
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
+4. 選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
 
-5.  選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+5. 選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
 
-6.  完成後，選擇 [儲存]。
+6. 完成後，選擇 [儲存]。
 
 您現在已設定商務用 Skype Online 的條件式存取。 您不需部署條件式存取原則，它會立即生效。
 

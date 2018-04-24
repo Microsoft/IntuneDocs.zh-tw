@@ -1,27 +1,27 @@
 ---
-title: "執行 Windows 10 的裝置的 Microsoft Intune 自訂設定"
-titlesuffix: 
-description: "了解您可以在 Windows 10 自訂設定檔中設定的自訂設定。"
-keywords: 
+title: 執行 Windows 10 的裝置的 Microsoft Intune 自訂設定
+titlesuffix: ''
+description: 了解您可以在 Windows 10 自訂設定檔中設定的自訂設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c8e0d56c91b710a86949844d2fd455e4183488f5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>執行 Windows 10 的裝置的 Microsoft Intune 自訂裝置設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  使用適用於 Windows 10 和 Windows 10 行動裝置版的 Microsoft Intune **自訂**設定檔，部署 OMA-URI (開放行動聯盟的統一資源識別項) 設定，此設定可用來控制裝置上的功能。 Windows 10 讓許多設定服務提供者 (CSP) 設定可供使用，例如[原則設定服務提供者 (原則 CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)。
 如果您正在尋找特定的設定，請記住 [Windows 10 裝置限制設定檔](device-restrictions-windows-10.md)包含許多內建於 Intune 的設定，而且您不需要指定自訂值。

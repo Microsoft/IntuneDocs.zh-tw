@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用者可以從 Microsoft Intune 公司入口網站存取公司資料及執行一般工作，例如註冊裝置、安裝應用程式，以及尋找向 IT 部門尋求協助的資訊。        
 
@@ -36,14 +36,14 @@ ms.lasthandoff: 03/23/2018
 公司名稱顯示為公司入口網站標題。 連絡資訊及詳細資料會在公司入口網站的 [連絡 IT] 畫面中顯示給使用者。 當使用者按一下隱私權連結時，會顯示隱私權聲明。        
 
 
-|欄位名稱|長度上限|詳細資訊|        
-|-|-|-|     
-|**公司名稱**|40|這是顯示為公司入口網站標題的名稱。|        
-|**IT 部門連絡人姓名**|40|此姓名會顯示在 [連絡 IT] 頁面中。|      
-|**IT 部門電話號碼**|20|此連絡電話號碼會顯示在 [連絡 IT] 頁面中。|        
-|**IT 部門電子郵件地址**|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|     
-|**其他資訊**|120|顯示在 [連絡 IT] 頁面中。|      
-|**公司隱私權聲明 URL**|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須輸入格式為 **https://www.contoso.com** 的有效 URL。|        
+|                   欄位名稱                   | 長度上限 |                                                                                                 詳細資訊                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>公司名稱</strong>          |     40     |                                                                            這是顯示為公司入口網站標題的名稱。                                                                            |
+|  <strong>IT 部門連絡人姓名</strong>   |     40     |                                                                         此姓名會顯示在 [連絡 IT] 頁面中。                                                                          |
+|  <strong>IT 部門電話號碼</strong>   |     20     |                                                                    此連絡電話號碼會顯示在 [連絡 IT] 頁面中。                                                                     |
+|  <strong>IT 部門電子郵件地址</strong>  |     40     |                       此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 <strong>alias@domainname.com</strong>。                       |
+|    <strong>其他資訊</strong>     |    120     |                                                                                顯示在 [連絡 IT] 頁面中。                                                                                |
+| <strong>公司隱私權聲明 URL</strong> |     79     | 您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須輸入格式為 <strong><https://www.contoso.com></strong> 的有效 URL。 |
 
 ## <a name="support-contacts"></a>支援連絡人     
 支援網站將會顯示在公司入口網站中，讓使用者能夠存取線上支援。        
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/23/2018
 
 |欄位名稱|詳細資訊|       
 |-|-|       
-|**佈景主題色彩**|選取要套用到公司入口網站的佈景主題色彩。|      
+|**佈景主題色彩**|選取要套用到公司入口網站的佈景主題色彩。 您可以從色彩選擇器中選擇，或輸入特定的十六進位碼。|      
 |**顯示公司標誌**|啟用此選項時，您可以上傳公司標誌以顯示在公司入口網站中。 您可以上傳兩個標誌：一個會在公司入口網站背景是白色時顯示，另一個則會在公司入口網站背景使用您選取的佈景主題色彩時顯示。 每個標誌必須是 .png 或 .jpg 檔案類型，且最大解析度為 400 x 100 像素，大小則是 750 KB 以下。<br>您也可以在上傳的標誌旁顯示您輸入的公司名稱。|      
 
 儲存變更之後，可以選擇 [在 Intune Web 入口網路中預覽您的設定] 來查看您的設定。

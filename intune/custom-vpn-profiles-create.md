@@ -1,23 +1,23 @@
 ---
-title: "如何使用 Microsoft Intune 建立自訂 VPN 設定檔"
-titleSuffix: 
-description: "在 Intune 中使用自訂設定來建立 VPN 設定檔。"
-keywords: 
+title: 如何使用 Microsoft Intune 建立自訂 VPN 設定檔
+titleSuffix: ''
+description: 在 Intune 中使用自訂設定來建立 VPN 設定檔。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中建立自訂 VPN 設定檔
 

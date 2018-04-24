@@ -1,30 +1,30 @@
 ---
-title: "在 Microsoft Intune 中建立 Android 裝置相容性原則"
-titleSuffix: 
-description: "建立適用於 Android 裝置的 Microsoft Intune 的裝置相容性原則，以便您可以指定裝置必須符合的相容性需求。"
-keywords: 
+title: 在 Microsoft Intune 中建立 Android 裝置相容性原則
+titleSuffix: ''
+description: 建立適用於 Android 裝置的 Microsoft Intune 的裝置相容性原則，以便您可以指定裝置必須符合的相容性需求。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 適用於 Android 的 Intune 裝置相容性原則指定 Android 設備必須符合的規則和設置，才能視為相。 您可以使用這些原則與條件式存取來允許或封鎖存取公司資源，並取得裝置報告、針對不符合規範來採取動作。 在 Intune Azure 入口網站中，為每個平台建立裝置相容性原則。 若要更了解建立相容性原則之前必須滿足的先決條件，請參閱[開始使用 Microsoft Intune 裝置相容性原則](device-compliance-get-started.md)。
 

@@ -15,15 +15,15 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
@@ -76,11 +76,11 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 
-  ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格](./media/enrollment-program-token-add.png)
+   ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格](./media/enrollment-program-token-add.png)
 
 2. 選擇 [下載您的公開金鑰]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
 
-  ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格下載公開金鑰](./media/enrollment-program-token-download.png)
+   ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格下載公開金鑰](./media/enrollment-program-token-download.png)
 
 **步驟 2.建立並下載 Apple DEP 權杖。**<br>
 1. 選擇 [Create a token via Apple's Device Enrollment Program] (透過 Apple 裝置註冊計劃建立權杖) 開啟 Apple 的部署計劃入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
@@ -120,37 +120,37 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 2. 在 [Apple 的註冊計劃] 下，選擇 [註冊計劃設定檔] > [建立]。
 3. 或在 [建立註冊設定檔] 上，為設定檔輸入系統管理用的 [名稱] 以及 [描述]。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
-  為 [使用者親和性] 選擇具備此設定檔的裝置，在註冊時要或不要有指派的使用者。
+   為 [使用者親和性] 選擇具備此設定檔的裝置，在註冊時要或不要有指派的使用者。
 
- - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及需要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+   - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及需要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
- - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 用於執行工作而不需存取本機使用者資料的裝置。 公司入口網站應用程式之類的應用程式無法運作。
+   - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 用於執行工作而不需存取本機使用者資料的裝置。 公司入口網站應用程式之類的應用程式無法運作。
 
 4. 選擇 [裝置管理設定] 以對下列設定檔進行設定：
 
-  ![選擇管理模式](./media/enrollment-program-profile-mode.png)
-  - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。 Microsoft 建議使用 DEP 作為啟用受監督模式的機制，特別是針對將部署大量 iOS 裝置的組織。
+   ![選擇管理模式](./media/enrollment-program-profile-mode.png)
+   - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。 Microsoft 建議使用 DEP 作為啟用受監督模式的機制，特別是針對將部署大量 iOS 裝置的組織。
 
- > [!NOTE]
- > 註冊裝置之後，使用 Intune 無法針對受監督模式設定裝置。 註冊之後，啟用受監督模式的唯一方式是使用 USB 纜線將 iOS 裝置連接至 Mac，並使用 Apple Configurator。 這會重設裝置，並使用受監督模式進行設定。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。受監督裝置將在鎖定畫面上指出「此 iPhone 是由 Contoso 所管理。」， 以及「會監督此 iPhone。 Contoso 可以監視您的網際網路流量並找到此裝置。」 (在 [設定] > [一般] > [關於] 中)。
+   > [!NOTE]
+   > 註冊裝置之後，使用 Intune 無法針對受監督模式設定裝置。 註冊之後，啟用受監督模式的唯一方式是使用 USB 纜線將 iOS 裝置連接至 Mac，並使用 Apple Configurator。 這會重設裝置，並使用受監督模式進行設定。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。受監督裝置將在鎖定畫面上指出「此 iPhone 是由 Contoso 所管理。」， 以及「會監督此 iPhone。 Contoso 可以監視您的網際網路流量並找到此裝置。」 (在 [設定] > [一般] > [關於] 中)。
 
-  - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。
+   - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。
 
-  - **啟用共用 iPad** - Apple 的裝置註冊計劃不支援共用 iPad。
+   - **啟用共用 iPad** - Apple 的裝置註冊計劃不支援共用 iPad。
 
-  - **允許配對** - 指定 iOS 裝置是否可與電腦同步。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
+   - **允許配對** - 指定 iOS 裝置是否可與電腦同步。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
-  - **Apple Configurator 憑證** - 如果在 [允許配對] 下選擇了 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
+   - **Apple Configurator 憑證** - 如果在 [允許配對] 下選擇了 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
 
-  選擇 [儲存]。
+   選擇 [儲存]。
 
 5. 選擇 [設定助理設定]，對下列設定檔進行設定：
 
-  ![為新註冊計劃設定檔使用可用設定來選擇組態設定](./media/enrollment-program-profile-settings.png)
-  - **部門名稱** - 使用者於啟用期間點選 [About Configuration] \(關於設定) 時顯示。
+   ![為新註冊計劃設定檔使用可用設定來選擇組態設定](./media/enrollment-program-profile-settings.png)
+   - **部門名稱** - 使用者於啟用期間點選 [About Configuration] \(關於設定) 時顯示。
 
-  - **部門電話** - 在使用者於啟用期間按一下 [需要協助] 按鈕時顯示。
-    - **設定輔助程式選項** - 這些是選用設定，稍後可以在 iOS [設定] 功能表中進行設定。
+   - **部門電話** - 在使用者於啟用期間按一下 [需要協助] 按鈕時顯示。
+     - **設定輔助程式選項** - 這些是選用設定，稍後可以在 iOS [設定] 功能表中進行設定。
         - **密碼**
         - **位置服務**
         - **還原**
@@ -162,16 +162,19 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
         - **Siri**
         - **診斷資料**
 
-    選擇 [儲存]。
+     選擇 [儲存]。
 
-9. 若要儲存設定檔設定，請在 [建立註冊設定檔] 刀鋒視窗中，選擇 [建立]。 註冊設定檔會出現在 Apple 註冊計劃註冊設定檔清單。
+>[!NOTE]
+>從 iOS 11 開始，如果您想要允許從 iCloud 備份還原，在「設定助理選項」底下必須同時顯示 [還原] 和 [Apple ID]。
+
+6. 若要儲存設定檔設定，請在 [建立註冊設定檔] 刀鋒視窗中，選擇 [建立]。 註冊設定檔會出現在 Apple 註冊計劃註冊設定檔清單。
 
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
-  ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
+   ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
 
 2. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
@@ -193,15 +196,15 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊]，然後選擇 [註冊計劃設定檔]。
 2. 從 [註冊計劃設定檔] 清單中，選擇您想要指派給裝置的設定檔，然後選擇 [指派裝置]。
 
- ![已選取 [指派] 的裝置指派](./media/enrollment-program-device-assign.png)
+   ![已選取 [指派] 的裝置指派](./media/enrollment-program-device-assign.png)
 
 3. 選擇 [指派]，然後選擇您想要指派此設定檔的裝置。 您可以篩選以檢視可用的裝置︰
-  - **未指派**
-  - **任何**
-  - **&lt;設定檔名稱&gt;**
+   - **未指派**
+   - **任何**
+   - **&lt;設定檔名稱&gt;**
 4. 選擇您想要指派的裝置。 資料行上方的核取方塊最多可選取 1000 個列出的裝置，然後按一下 [指派]。 若要註冊 1000 部以上的裝置，請重複指派步驟，直到將註冊設定檔指派給所有的裝置為止。
 
-  ![在 Intune 中用來指派註冊計劃設定檔的 [指派] 按鈕](media/dep-profile-assignment.png)
+   ![在 Intune 中用來指派註冊計劃設定檔的 [指派] 按鈕](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>散發裝置
 您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。

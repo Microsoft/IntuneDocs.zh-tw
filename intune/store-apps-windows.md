@@ -1,34 +1,34 @@
 ---
-title: "如何將 Windows 市集應用程式新增至 Microsoft Intune"
-titleSuffix: 
-description: "了解如何將 Windows 市集應用程式新增至 Microsoft Intune。"
-keywords: 
+title: 如何將 Microsoft Store 應用程式新增至 Microsoft Intune
+titleSuffix: ''
+description: 了解如何將 Microsoft Store (Windows 市集) 應用程式新增至 Microsoft Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何將 Windows 市集應用程式新增至 Microsoft Intune
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>將 Microsoft Store 應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您必須先將應用程式新增至 Intune，才可以指派、監視、設定或保護它們。 下列步驟可讓您將 Windows 市集應用程式新增至 Microsoft Intune。
+您必須先將應用程式新增至 Intune，才可以指派、監視、設定或保護它們。 下列步驟可讓您將 Microsoft Store 應用程式新增至 Microsoft Intune。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
 4. 在**行動應用程式**工作負載中選擇 [管理]  >  [應用程式]。
 5. 從應用程式清單上方選擇 [新增]。
@@ -51,5 +51,4 @@ ms.lasthandoff: 03/12/2018
 您建立的應用程式將會顯示在應用程式清單中，而您可從中將應用程式指派給您選擇的群組。 
 
 ## <a name="next-steps"></a>接下來的步驟
-
 - [如何將應用程式指派到群組](apps-deploy.md)

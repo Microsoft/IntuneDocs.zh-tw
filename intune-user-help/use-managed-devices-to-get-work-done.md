@@ -1,27 +1,27 @@
 ---
-title: "使用受管理的裝置完成工作 | Microsoft Docs"
-description: "了解使用 Intune 註冊管理您的裝置代表的意義。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用受管理的裝置完成工作 | Microsoft Docs
+description: 了解使用 Intune 註冊管理您的裝置代表的意義。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。

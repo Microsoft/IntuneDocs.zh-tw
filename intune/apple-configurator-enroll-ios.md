@@ -1,29 +1,29 @@
 ---
-title: "使用 Apple Configurator 註冊 iOS 裝置"
+title: 使用 Apple Configurator 註冊 iOS 裝置
 titlesuffix: Microsoft Intune
-description: "了解如何使用 Apple Configurator 透過設定助理，來註冊公司擁有的 iOS 裝置。"
-keywords: 
+description: 了解如何使用 Apple Configurator 透過設定助理，來註冊公司擁有的 iOS 裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 註冊 iOS 裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
@@ -58,7 +58,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 裝置註冊設定檔會在註冊期間定義套用的設定。 這些設定只套用一次。 請遵循下列步驟建立註冊設定檔，使用 Apple Configurator 註冊 iOS 裝置。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 選擇 [裝置註冊] > [Apple 註冊]。
 4. 在 [管理 Apple Configurator 註冊設定] 下，選取 [AC 設定檔]。
 5. 在 [Apple Configurator 註冊設定檔] 下，選取 [建立]。
@@ -85,8 +85,8 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 1. 建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增序號，然後在右資料行中新增詳細資料。 清單目前最多可容納 5,000 個資料列。 在文字編輯器中，.csv 清單會像這樣：
 
-  F7TLWCLBX196,device details</br>
-  DLXQPCWVGHMJ,device details
+   F7TLWCLBX196,device details</br>
+   DLXQPCWVGHMJ,device details
 
    了解[如何尋找 iOS 裝置序號](https://support.apple.com/HT204073)。
 2. 在 [Azure 入口網站](https://portal.azure.com)的 Intune 中，選擇 [裝置註冊]，然後選擇 [Apple 註冊]。
@@ -119,23 +119,23 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 1. 在 [Azure 入口網站](https://portal.azure.com)的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [AC 設定檔]，然後選擇要匯出的設定檔。
 2. 在設定檔中，選取 [匯出設定檔]。
 
-  ![已反白顯示設定檔 URL 的設定助理註冊匯出設定檔](./media/ios-apple-configurator-expor-sat.png)
+   ![已反白顯示設定檔 URL 的設定助理註冊匯出設定檔](./media/ios-apple-configurator-expor-sat.png)
 3. 複製設定檔 URL。 稍後可以將它新增至 Apple Configurator，定義 iOS 裝置使用的 Intune 設定檔。
 
-  接著，以下列程序將此設定檔匯入 Apple Configurator，定義 iOS 裝置使用的 Intune 設定檔。
+   接著，以下列程序將此設定檔匯入 Apple Configurator，定義 iOS 裝置使用的 Intune 設定檔。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>使用設定助理註冊 iOS 裝置
 
-1.  在 Mac 電腦上，開啟 [Apple Configurator 2] 在功能表列中，選擇 [Apple Configurator 2]，然後選擇 [喜好設定]。
-  > [!WARNING]
-  > 在註冊過程中，裝置會重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您將裝置連線時，裝置應該會在 **Hello** 畫面。
+1. 在 Mac 電腦上，開啟 [Apple Configurator 2] 在功能表列中，選擇 [Apple Configurator 2]，然後選擇 [喜好設定]。
+   > [!WARNING]
+   > 在註冊過程中，裝置會重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您將裝置連線時，裝置應該會在 **Hello** 畫面。
 
 2. 在 [喜好設定] 窗格中，選取 [伺服器]，然後選擇加號 (+) 來啟動 [MDM 伺服器精靈]。 選擇 **[下一步]**。
 3. 透過 Microsoft Intune，在 iOS 裝置的 [設定助理] 註冊下輸入 MDM 伺服器的**主機名稱或 URL** 及**註冊 URL**。 對於 [註冊 URL]，輸入從 Intune 匯出的註冊設定檔 URL。 選擇 **[下一步]**。  
 
-  您可以放心地忽略指出「伺服器 URL 未經驗證」的警告。 請選擇 [下一步] 以繼續，直到精靈完成為止。
-4.  將 iOS 行動裝置連線到具有 USB 介面卡的 Mac 電腦。
-5.  選取您要管理的 iOS 裝置，然後選擇 [準備]。 在 [準備 iOS 裝置] 窗格上，選取 [手動]，然後選擇 [下一步]。
+   您可以放心地忽略指出「伺服器 URL 未經驗證」的警告。 請選擇 [下一步] 以繼續，直到精靈完成為止。
+4. 將 iOS 行動裝置連線到具有 USB 介面卡的 Mac 電腦。
+5. 選取您要管理的 iOS 裝置，然後選擇 [準備]。 在 [準備 iOS 裝置] 窗格上，選取 [手動]，然後選擇 [下一步]。
 6. 在 [Enroll in MDM Server]\(在 MDM 伺服器中註冊) 窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]。
 7. 在 [監督裝置]窗格上，選取監督層級，然後選擇 [下一步]。
 8. 在 [Create an Organization]\(建立組織) 窗格上，選擇 [組織] 或建立新的組織，然後選擇 [下一步]。
@@ -154,7 +154,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>將設定檔匯出為 iOS 裝置的 .mobileconfig
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [匯出設定檔] 下，選擇 [下載設定檔] 以下載註冊設定檔。
 
 
@@ -162,13 +162,14 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 2. 將檔案傳輸到執行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 電腦，以直接推送為 iOS 裝置的管理設定檔。
 3. 利用下列步驟，為裝置準備好 Apple Configurator。
-  1. 在 Mac 電腦上，開啟 [Apple Configurator 2.0]。
-  2. 將 iOS 裝置以 USB 線連接到 Mac 電腦。 關閉相片、iTunes 以及偵測到裝置時，為該裝置開啟的其他應用程式。
-  3. 在 Apple Configurator 中，依序選擇已連線的 iOS 裝置和 [新增] 按鈕。 可以新增至裝置的選項會出現在下拉式清單中。 選擇 [設定檔]。
+   1. 在 Mac 電腦上，開啟 [Apple Configurator 2.0]。
+   2. 將 iOS 裝置以 USB 線連接到 Mac 電腦。 關閉相片、iTunes 以及偵測到裝置時，為該裝置開啟的其他應用程式。
+   3. 在 Apple Configurator 中，依序選擇已連線的 iOS 裝置和 [新增] 按鈕。 可以新增至裝置的選項會出現在下拉式清單中。 選擇 [設定檔]。
 
-    ![已反白顯示設定檔 URL 的設定助理註冊匯出設定檔](./media/ios-apple-configurator-add-profile.png)
+      ![已反白顯示設定檔 URL 的設定助理註冊匯出設定檔](./media/ios-apple-configurator-add-profile.png)
 
-  4. 使用檔案選擇器選取您從 Intune 匯出的 .mobileconfig 檔案，然後選擇 [新增]。 設定檔會新增至裝置。 如果裝置「不受監督」，則需要在裝置上接受該安裝。
+   4. 使用檔案選擇器選取您從 Intune 匯出的 .mobileconfig 檔案，然後選擇 [新增]。 設定檔會新增至裝置。 如果裝置「不受監督」，則需要在裝置上接受該安裝。
+
 4. 使用下列步驟可在 iOS 裝置上安裝設定檔。 裝置必須已完成 [設定助理]，而且可供使用。 如果註冊需要應用程式部署，裝置應該要設定 Apple ID，因為應用程式部署需要您具備登入 App Store 的 Apple ID。
    1. 解除鎖定 iOS 裝置。
    2. 在 [管理設定檔] 的 [安裝設定檔]對話方塊中，選擇 [安裝]。

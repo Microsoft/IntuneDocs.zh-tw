@@ -15,15 +15,15 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99c69d08bb11ed097e2262938d254074169492c3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 身為 Intune 系統管理員，您可以建立和管理註冊限制，定義可以註冊使用 Intune 管理的裝置數目和類型。 您可以建立多項限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
 

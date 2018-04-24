@@ -1,33 +1,32 @@
 ---
-title: "搭配 Microsoft Intune 的網路存取控制整合"
-titlesuffix: 
-description: "搭配 Intune 的網路存取控制 (NAC) 整合"
-keywords: 
+title: 網路存取控制與 Microsoft Intune 的整合 - Azure | Microsoft Docs
+description: 網路存取控制 (NAC) 解決方案會向 Intune 確認裝置的註冊與合規性狀態。 NAC 包含特定的行為，並且會與條件式存取搭配運作。 請參閱步驟來開始上線，以及取得合作夥伴解決方案清單。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
+# <a name="network-access-control-nac-integration-with-intune"></a>網路存取控制 (NAC) 與 Intune 的整合
 
 Intune 會與網路存取控制夥伴整合，以協助組織在裝置嘗試存取內部資源時保護公司資料。
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 和 NAC 解決方案如何協助保護您的組織資源？
 
-NAC 解決方案負責檢查裝置註冊與合規性狀態，Intune 則進行存取控制決定。 如果裝置未註冊，或是已註冊但不符合 Intune 裝置合規性原則，裝置應該重新導向至 Intune 進行註冊及/或裝置合規性檢查。
+NAC 解決方案會向 Intune 確認裝置註冊與合規性狀態，以做出存取控制決定。 如果裝置未註冊，或是已註冊但不符合 Intune 裝置合規性原則，就應該將裝置重新導向至 Intune 來進行註冊和/或裝置合規性檢查。
 
 ### <a name="example"></a>範例
 
@@ -35,17 +34,17 @@ NAC 解決方案負責檢查裝置註冊與合規性狀態，Intune 則進行存
 
 ## <a name="feature-behaviors"></a>功能行為
 
-主動同步至 Intune 的裝置不能從 [符合規範] / [不符合規範] 移至 [未同步] (或 [未知])。 [未知] 狀態是保留給尚未針對合規性進行評估的新註冊裝置。
+主動同步至 Intune 的裝置不能從 [符合規範] / [不符合規範] 移至 [未同步] (或 [未知])。 [未知] 是保留給尚未針對合規性進行評估之新註冊裝置的狀態。
 
 針對被封鎖而無法存取資源的裝置，封鎖服務應該將所有使用者重新導向至[管理入口網站](https://portal.manage.microsoft.com)，以判斷該裝置被封鎖的原因。  若使用者造訪此頁面，其裝置將會同步地重新進行合規性評估。
 
 ## <a name="nac-and-conditional-access"></a>NAC 和條件式存取
 
-NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細資料，請參閱[透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
+NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細資料，請參閱[搭配 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
 
 ## <a name="how-the-nac-integration-works"></a>NAC 整合的運作方式
 
-以下概觀為當 NAC 整合與 Intune 整合時的運作方式。 前三個步驟 (1-3) 會說明上線程序。 一旦 NAC 解決方案與 Intune 整合之後，步驟 4 至 9 說明進行中的作業。
+以下清單概述與 Intune 整合時，NAC 整合的運作方式。 前三個步驟 (1-3) 會說明上線程序。 在 NAC 解決方案與 Intune 整合之後，步驟 4 到 9 則說明接下來的作業。
 
 ![NAC 搭配 Intune 的運作方式](./media/ca-intune-common-ways-2.png)
 
@@ -59,8 +58,9 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 8. 一旦裝置已註冊且符合規範，NCA 合作夥伴解決方案會從 Intune 取得狀態。
 9. 已成功建立連線，可讓裝置存取公司資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (整合 Cisco ISE 與 Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (整合 Citrix NetScaler 與 Intune)
 - [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757) (整合 HP Aruba Clear Pass 與 Intune)
+- [整合 Squadra security Removable Media Manager (secRMM) 與 Intune ](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf) \(英文\)

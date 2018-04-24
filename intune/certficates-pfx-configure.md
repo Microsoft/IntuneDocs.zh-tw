@@ -1,28 +1,28 @@
 ---
-title: "透過 Microsoft Intune - Azure 使用 PKCS 憑證 | Microsoft Docs"
-description: "使用 Microsoft Intune 新增或建立公用金鑰密碼編譯標準憑證，包括匯出根憑證、設定憑證範本、下載並安裝 Microsoft Intune Certificate Connector、建立裝置組態設定檔、在 Azure 與您的憑證授權單位建立 PKCS 憑證設定檔等步驟"
-keywords: 
+title: 透過 Microsoft Intune - Azure 使用 PKCS 憑證 | Microsoft Docs
+description: 使用 Microsoft Intune 新增或建立公用金鑰密碼編譯標準憑證，包括匯出根憑證、設定憑證範本、下載並安裝 Microsoft Intune Certificate Connector、建立裝置組態設定檔、在 Azure 與您的憑證授權單位建立 PKCS 憑證設定檔等步驟
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 憑證用來驗證並保護您的公司資源存取，例如 VPN 或 WiFi 網路。 本文將說明如何匯出 PKCS 憑證，然後將憑證新增至 Intune 設定檔。 
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 03/08/2018
 
    例如：
 
-4.  在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI] 。
+4. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI] 。
 
    `certutil -ca.cert certnew.cer`
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 03/08/2018
 
     a. 以滑鼠右鍵按一下憑證授權單位，選擇 [內容]。
 
-    b。 在 [安全性] 索引標籤上，新增您執行 Microsoft Intune 憑證連接器之伺服器的電腦帳戶。
+    b. 在 [安全性] 索引標籤上，新增您執行 Microsoft Intune 憑證連接器之伺服器的電腦帳戶。
       * 將 [發行及管理憑證] 和 [要求憑證] 的「允許」權限授與該電腦帳戶。
 15. 登出企業 CA。
 

@@ -2,8 +2,8 @@
 title: 舊版
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>舊版 Intune
 
 此頁面是 [Microsoft Intune 的新功能](whats-new-in-microsoft-intune.md)中公告的清單。
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>2016 年 7 月
 
@@ -94,12 +94,12 @@ Intune 的服務健全狀況資訊已與其他 Microsoft 服務一起移至中�
     * 必須是 Intune 管理的裝置。
     * 必須符合所部署的任何 Intune 相容性原則。
 
- 不符合規範裝置的使用者會收到提示，要求其註冊及修復任何合規性問題，才能獲得存取權。
+  不符合規範裝置的使用者會收到提示，要求其註冊及修復任何合規性問題，才能獲得存取權。
 - **瀏覽器的條件存取。** 您可以設定 [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 條件式存取原則，以便只從受管理和相容的 iOS 和 Android 裝置上受支援的網頁瀏覽器存取它們。 嘗試使用 iOS 和 Android 裝置登入 Outlook Web Access (OWA) 和 SharePoint 網站的使用者將會收到提示，以其裝置向 Intune 註冊，以及在完成登入之前修正任何不相容的問題。
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online 支援條件式存取。** 您可以設定 [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) 的條件式存取原則，以便只有受管理和相容的 iOS 和 Android 裝置可以存取它。 嘗試在 iOS 和 Android 上登入 Dynamics CRM 行動應用程式的使用者將會收到提示，在登入完成之前向 Intune 註冊並補救任何不相容問題。
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Intune 公司入口網站更新
 
@@ -180,19 +180,19 @@ Intune 通知規則會定義要從 Intune 傳送電子郵件警示給誰。 目�
 
 ### <a name="app-management"></a>應用程式管理
 - **MAM 使用者相容性。**
-您現在可以檢視 Azure Active Directory (AAD) 租用戶中任一使用者的應用程式管理原則[狀態](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)。 這包括：
-   - 裝置
-   - 裝置上的應用程式
+  您現在可以檢視 Azure Active Directory (AAD) 租用戶中任一使用者的應用程式管理原則[狀態](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)。 這包括：
+  - 裝置
+  - 裝置上的應用程式
 
-   狀態值：
+    狀態值：
 
-   **已存回**︰表示原則已部署至使用者，且已使用工作內容中的應用程式，並成功接收原則。
+    **已存回**︰表示原則已部署至使用者，且已使用工作內容中的應用程式，並成功接收原則。
 
     **未存回**︰表示原則已部署至使用者，但是應用程式從那時起並未在工作內容中使用。
 
 
 - **避免 Outlook 連絡人同步處理的 MAM 控制項 (Android)。**
-[行動應用程式管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)提供一項新設定，將移除已儲存到原生通訊錄的連絡人。 在 Android 裝置上的 Outlook 應用程式一開始支援這個新的設定。
+  [行動應用程式管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)提供一項新設定，將移除已儲存到原生通訊錄的連絡人。 在 Android 裝置上的 Outlook 應用程式一開始支援這個新的設定。
 
 ### <a name="device-management"></a>裝置管理
 - **公司擁有裝置的電話號碼識別。** 分類為「公司」的電話現在會在 (舉例而言) 您執行行動裝置清查報表時利用其完整電話號碼加以識別。 BYOD 電話號碼會持續以 **** 遮罩，僅顯示最後 4 位數。
@@ -212,6 +212,6 @@ Intune 通知規則會定義要從 Intune 傳送電子郵件警示給誰。 目�
 
 新增這些狀態之前，如果應用程式安裝花了較長的時間，會讓使用者混淆，因為他們只看到「正在安裝」狀態，可能會在螢幕上維持時小數。 新增狀態表示，使用者現在就可以點選 [正在等待裝置同步處理] 連結，並遵循指示以強制同步處理程序繼續執行，而不是呼叫支援。
 
->[!div class="step-by-step"]
-
->[&larr;**Intune 的新功能**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr;**Intune 的新功能**](whats-new-in-microsoft-intune.md)    

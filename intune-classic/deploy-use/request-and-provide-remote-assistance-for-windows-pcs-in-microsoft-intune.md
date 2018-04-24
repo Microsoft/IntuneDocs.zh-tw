@@ -1,29 +1,28 @@
 ---
-title: "對 Windows 電腦要求及提供遠端協助"
-description: "描述針對作為電腦管理的 Windows 電腦提供遠端協助以及遠端啟動電腦的終端使用者和 IT 系統管理員步驟。"
-keywords: 
+title: 對 Windows 電腦要求及提供遠端協助
+description: 描述針對作為電腦管理的 Windows 電腦提供遠端協助以及遠端啟動電腦的終端使用者和 IT 系統管理員步驟。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。
 
@@ -60,7 +59,7 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 ## <a name="respond-to-a-remote-assistance-request"></a>回應遠端協助要求
 
 1. 使用者提交遠端協助要求時，您可以在 **[警示]** 工作區的 **[監視]** > **[遠端協助]** 下進行檢視。 例如：
-> ![遠端協助要求的螢幕擷取畫面](./media/team-viewer.png)
+   > ![遠端協助要求的螢幕擷取畫面](./media/team-viewer.png)
 
 <br>如果超過 4 小時未回應要求，便會將它移除。
 2. 若要接受要求，請選擇 **[核准要求並啟動遠端協助]**。
@@ -84,6 +83,6 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 
 4.  在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

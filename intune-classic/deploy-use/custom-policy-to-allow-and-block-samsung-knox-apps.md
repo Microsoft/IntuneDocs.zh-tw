@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用本主題中的程序，建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一項項目︰
 
@@ -39,21 +39,21 @@ ms.lasthandoff: 03/22/2018
 3. 提供原則的名稱和選擇性描述，然後在 [OMA-URI 設定] 區段中，選擇 [新增]。
 4. 在 [新增或編輯 OMA-URI 設定] 對話方塊中，指定下列各項︰在裝置上遭封鎖而無法執行的應用程式清單︰
     
-    - **設定名稱。** 輸入 **PreventStartPackages**。
-    - **設定描述。** 輸入選擇性描述，例如 「被封鎖而無法執行的應用程式清單」。
-    -   **資料類型。** 在下拉式清單中選擇 [字串]。
-    -   **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **值。** 輸入您想要封鎖的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+   - **設定名稱。** 輸入 **PreventStartPackages**。
+   - **設定描述。** 輸入選擇性描述，例如 「被封鎖而無法執行的應用程式清單」。
+   - **資料類型。** 在下拉式清單中選擇 [字串]。
+   - **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **值。** 輸入您想要封鎖的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
-    針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
+     針對使用者在排除所有其他應用程式時，可從 Google Play 商店安裝的應用程式清單：
 
-    - **設定名稱。** 輸入 **AllowInstallPackages**。
-    - **設定描述。** 輸入選擇性描述，例如「使用者可以從 Google Play 安裝的應用程式清單」。
-    - **資料類型。** 在下拉式清單中選擇 [字串]。
-    - **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-    - **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
+   - **設定名稱。** 輸入 **AllowInstallPackages**。
+   - **設定描述。** 輸入選擇性描述，例如「使用者可以從 Google Play 安裝的應用程式清單」。
+   - **資料類型。** 在下拉式清單中選擇 [字串]。
+   - **OMA-URI。** 輸入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **值。** 輸入您想要允許的應用程式套件名稱清單。 您可以使用 **; : ,** 或 **|** 作為分隔符號。 (範例︰package1;package2;)
 
-4. 按一下 [確定]，然後按一下 [儲存原則]。 
+5. 按一下 [確定]，然後按一下 [儲存原則]。 
 
 >[!TIP]
 > 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。

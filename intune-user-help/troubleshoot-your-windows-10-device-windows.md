@@ -1,27 +1,27 @@
 ---
-title: "針對您的 Windows 10 裝置註冊進行疑難排解 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 針對您的 Windows 10 裝置註冊進行疑難排解 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 936a336019c37fb5ae5f7ef8f5b1201faee553fc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。
@@ -38,15 +38,15 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>看見 [存取公司或學校資源] 時所需遵循的疑難排解步驟
 
-1.  如果您已遵循上述步驟，但仍然無法存取自己的工作或學校電子郵件及檔案，請回到 [存取公司或學校資源]。
+1. 如果您已遵循上述步驟，但仍然無法存取自己的工作或學校電子郵件及檔案，請回到 [存取公司或學校資源]。
 
 2. 請執行下列其中一項動作：
 
-    - 如果您看見類似於下列影像的連線，請點選它，然後檢查是否有看到 [管理]、[資訊] 及 [中斷連線] 選項。 如果您看見這些選項，表示您現在已經註冊並連線。
+   - 如果您看見類似於下列影像的連線，請點選它，然後檢查是否有看到 [管理]、[資訊] 及 [中斷連線] 選項。 如果您看見這些選項，表示您現在已經註冊並連線。
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - 如果您並未看到以上所示的連線資訊，或您有看到，但遺漏了部分選項，請點選 [連線]，然後使用您的工作或學校認證登入。 現在您應已連線。
+   - 如果您並未看到以上所示的連線資訊，或您有看到，但遺漏了部分選項，請點選 [連線]，然後使用您的工作或學校認證登入。 現在您應已連線。
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>看見 [您的帳戶] 時所需遵循的疑難排解步驟
 
@@ -58,6 +58,6 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看見 [設定公司或學校帳戶] 時所需遵循的疑難排解步驟
 
-如果您看到訊息，指出__無法自動探索符合所輸入使用者名稱的管理端點。請檢查您的使用者名稱，然後再試一次。若您知道管理端點的 URL，請輸入它__，然後您應該嘗試重新輸入使用者名稱和密碼。 如果仍然無法運作，則應該洽詢您公司的支援人員，以取得您需要在 [管理端點] 文字方塊中提供的網站。 此網站看起來可能類似 **www.yourcompany.onmicrosoft.com**。
+如果您看到訊息，指出<strong>無法自動探索符合所輸入使用者名稱的管理端點。請檢查您的使用者名稱，然後再試一次。若您知道管理端點的 URL，請輸入它</strong>，然後您應該嘗試重新輸入使用者名稱和密碼。 如果仍然無法運作，則應該洽詢您公司的支援人員，以取得您需要在 [管理端點] 文字方塊中提供的網站。 此網站看起來可能類似 <strong>www.yourcompany.onmicrosoft.com</strong>。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a18136a6b7aa26391a38aa071699dc60dc024c21
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9b91d3740ead5815974d7ffee67c15b7769b0210
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 在建立 Windows 10 應用程式保護原則之前，您必須在 Azure AD 中設定 MAM 提供者，以啟用適用於 Windows 10 的行動應用程式管理 (MAM)。 此設定可讓您在使用 Intune 建立新的 Windows 資訊保護 (WIP) 原則時，定義註冊狀態。
 

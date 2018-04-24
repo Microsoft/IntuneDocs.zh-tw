@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>管理 iOS 應用程式
 保護公司資料包括確定檔案傳輸僅限於您所管理的應用程式。  您可以使用下列方式管理 iOS 應用程式：
@@ -51,17 +51,17 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 協力廠商 EMM 解決方案所管理的裝置**需要**設定使用者 UPN 設定。 下面程序描述設定 UPN 設定之方式和所產生使用者體驗的一般流程︰
 
 
-1.  在 Azure 入口網站中，[設定 iOS 平台的應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 根據公司需求設定原則設定，然後選取應該具有此原則的應用程式。
+1. 在 Azure 入口網站中，[設定 iOS 平台的應用程式保護原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 根據公司需求設定原則設定，然後選取應該具有此原則的應用程式。
 
-2.  使用下面的一般化步驟，**透過協力廠商 MDM 解決方案**來部署應用程式和您要受管理的電子郵件設定檔。 範例 1 也涵蓋這個體驗。
+2. 使用下面的一般化步驟，**透過協力廠商 MDM 解決方案**來部署應用程式和您要受管理的電子郵件設定檔。 範例 1 也涵蓋這個體驗。
 
-  1.  使用下列應用程式組態設定來部署應用程式：
+   1. 使用下列應用程式組態設定來部署應用程式：
 
       **金鑰**= IntuneMAMUPN，**值** = <username@company.com>
 
       範例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  使用協力廠商 MDM 提供者，將「開啟位置管理」原則部署到已註冊的裝置。
+   2. 使用協力廠商 MDM 提供者，將「開啟位置管理」原則部署到已註冊的裝置。
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>範例 1︰協力廠商 MDM 主控台中的管理體驗
@@ -70,9 +70,9 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 2. 在 [應用程式設定] 區段中，輸入下列設定：
 
-  **金鑰**= IntuneMAMUPN，**值** = <username@company.com>
+   **金鑰**= IntuneMAMUPN，**值** = <username@company.com>
 
-  根據您的協力廠商 MDM 提供者，金鑰/值配對的確切語法可能會不同。 下表顯示協力廠商 MDM 提供者範例，以及應該輸入的金鑰/值配對確切值。
+   根據您的協力廠商 MDM 提供者，金鑰/值配對的確切語法可能會不同。 下表顯示協力廠商 MDM 提供者範例，以及應該輸入的金鑰/值配對確切值。
 
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |

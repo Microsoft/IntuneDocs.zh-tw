@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: da4197a41798f4e47ff35d2dfab36c5317f92e21
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>在 Intune 中啟用 Skycure Mobile Threat Defense
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-若要啟用 Skycure Mobile Threat Defense，您應該已設定 [Skycure 主控台中的 Intune 連接器] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
+若要啟用 Skycure Mobile Threat Defense，您應該已[在 Skycure 主控台中設定 Intune 連接器](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>在 Intune 中啟用 Skycure MTD 連線
 

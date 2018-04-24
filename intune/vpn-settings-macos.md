@@ -1,27 +1,27 @@
 ---
-title: "macOS 裝置的 Microsoft Intune VPN 設定"
-titlesuffix: 
-description: "了解可用於設定 macOS 裝置上 VPN 連線的 Intune 設定。"
-keywords: 
+title: macOS 裝置的 Microsoft Intune VPN 設定
+titlesuffix: ''
+description: 了解可用於設定 macOS 裝置上 VPN 連線的 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a59d17c9497d5f7d0fbc3bcdf5f1e232115f643a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>設定 Microsoft Intune 中執行 macOS 之裝置的 VPN 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文說明可用於設定執行 macOS 之裝置上 VPN 連線的 Intune 設定。
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
-**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
-- **IP 位或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線清單時，使用者會看到此名稱。
+- **IP 位址或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
 - **驗證方法** - 從下列方式中選擇裝置對 VPN 伺服器的驗證方式︰
     - **憑證** - 從 [驗證憑證] 下選擇先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資訊，請參閱[如何設定憑證](certificates-configure.md)。
     - **使用者名稱與密碼** - 使用者必須提供使用者名稱及密碼才能登入 VPN 伺服器。
@@ -55,6 +55,6 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="proxy-settings"></a>Proxy 設定
 
-- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 **http://proxy.contoso.com**)。
 - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
 - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。

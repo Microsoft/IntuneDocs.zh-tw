@@ -15,15 +15,15 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
@@ -59,7 +59,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > [新增]。
 
-  ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-ios/image01.png)
+   ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. 在 [註冊計劃權杖] 刀鋒視窗中，選擇 [下載您的公開金鑰憑證]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple School Manager 入口網站要求信任關係憑證。
      ![註冊計劃權杖刀鋒視窗。](./media/device-enrollment-program-enroll-ios/image02.png)
@@ -94,7 +94,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
 3. 在 [建立設定檔] 下，為設定檔輸入系統管理用的**名稱**以及**描述**。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
     ![設定檔名稱與描述。](./media/device-enrollment-program-enroll-ios/image05.png)
-    
+
 4. 針對 [使用者親和性]，為具備此設定檔的裝置選擇需要或不需要由指派的使用者來進行註冊。
     - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 此選項也可讓使用者使用公司入口網站來驗證其裝置。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。   Apple School Manager 的「共用的 iPad」模式需要使用者不搭配使用者親和性進行註冊。
 
@@ -112,8 +112,8 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
     有兩種方式可通知使用者其裝置收到監督：
 
-    - 鎖定畫面指出：「此 iPhone 受 Contoso 管理。」
-    - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
+   - 鎖定畫面指出：「此 iPhone 受 Contoso 管理。」
+   - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
 
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
@@ -124,31 +124,33 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 9. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
-9. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
+10. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
 
-10. 選擇 [確定]。
+11. 選擇 [確定]。
 
-11. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+12. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | 設定 | 說明 |
-    | --- | --- |
-    | **部門名稱** | 使用者在啟用期間點選 [關於設定] 時顯示。 |
-    | **部門電話** | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
-    | **設定助理選項** | 下列是選用設定，可稍後在 iOS [設定] 功能表中進行設定。 |
-    | **密碼** | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
-    | **位置服務** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **還原** | 啟用時，設定助理會在啟用期間提示 iCloud 備份。 |
-    | **iCloud 與 Apple ID** | 啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。 |
-    | **條款和條件** | 啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。 |
-    | **Touch ID** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **Apple Pay** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **縮放** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **Siri** | 啟用時，設定助理會在啟用期間提示此服務。 |
-    | **診斷資料** | 啟用時，設定助理會在啟用期間提示此服務。 |
 
-12. 選擇 [確定]。
+    |                 設定                  |                                                                                               說明                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部門名稱</strong>     |                                                             使用者在啟用期間點選 [關於設定] 時顯示。                                                              |
+    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。                                                          |
+    | <strong>設定助理選項</strong> |                                                     下列是選用設定，可稍後在 iOS [設定] 功能表中進行設定。                                                      |
+    |        <strong>密碼</strong>         | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
+    |    <strong>位置服務</strong>    |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                  |
+    |         <strong>還原</strong>         |                                                                啟用時，設定助理會在啟用期間提示 iCloud 備份。                                                                 |
+    |   <strong>iCloud 與 Apple ID</strong>   |                         啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。                         |
+    |  <strong>條款和條件</strong>   |                                                   啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |          <strong>縮放</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    |     <strong>診斷資料</strong>     |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
 
-13. 若要儲存該設定檔，請選擇 [建立]。
+
+13. 選擇 [確定]。
+
+14. 若要儲存該設定檔，請選擇 [建立]。
 
 ## <a name="connect-school-data-sync"></a>連線 School Data Sync
 (選用) Apple School Manager 支援使用 Microsoft School Data Sync (SDS) 將類別名冊資料同步處理到 Azure Active Directory (AD)。 您僅可透過 SDS 同步處理一個權杖。 如果您透過 School Data Sync 設定另一個權杖，SDS 將會從之前擁有它的權杖中移除。 新的連線將取代目前的權杖。 請完成下列步驟以使用 SDS 同步學校資料。
@@ -164,7 +166,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 由於 Intune 已被指派管理您 Apple School Manager 裝置的權限，您可以同步處理 Intune 與 Apple 服務，以在 Intune 中查看受管理裝置。
 
 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖 > [裝置] > [同步處理]。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
-  
+
   為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
   - 完整同步處理每 7 天只能執行一次。 完整同步期間，每當 Apple 序號指派至 Intune 時，Intune 都會重新整理一次。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
   - 任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。

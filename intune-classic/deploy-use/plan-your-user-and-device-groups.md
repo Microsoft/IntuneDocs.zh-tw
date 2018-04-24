@@ -1,28 +1,28 @@
 ---
-title: "規劃您的使用者和裝置群組"
-description: "規劃群組以符合組織的需求。"
-keywords: 
+title: 規劃您的使用者和裝置群組
+description: 規劃群組以符合組織的需求。
+keywords: ''
 author: sanchusa
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c1f06cc59ff81483d9e54b23435af720d919155
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 679399f306f3837a010cc01799c7567c1e5b5b39
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-your-user-and-device-groups"></a>規劃您的使用者和裝置群組
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 中的群組讓您在管理裝置和使用者時有絕佳的彈性。 您可以根據下列各項來設定群組以符合組織需求：
 
@@ -214,5 +214,5 @@ Intune 具有九個內建群組，您無法加以編輯或刪除：<!--maybe a s
 
 ![Intune 原則清單](../media/Intune_planning_policy_view_small.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [建立群組](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

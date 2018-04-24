@@ -15,27 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b4e91fd61bb79c2a3a6d86d5a79c39b320cc5e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8af8d79d6f8ea9037c6bef532ad45185830c358d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>設定 Intune 服務為 Exchange Online 的連接器提供服務
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以使用此資訊連線到 Microsoft Intune 及 Exchange Online 或新版 Exchange Online Dedicated 服務。 若要判斷您的 Exchange Online Dedicated 環境為**新版**或**舊版**，請連絡您的帳戶管理員。 Intune 僅支援每個訂用帳戶一個任一種類的 Exchange Connector 連線。
 
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector 的需求
 **Service to Service Connector** 僅支援 Exchange Online 或新版 Exchange Online Dedicated，其對於內部部署基礎結構沒有任何需求。
 
-|需求|詳細資訊|
-|---------------|--------------------|
-|已設定並執行 Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange 版本|Exchange Online 或新版 Exchange Online Dedicated 服務|/intune/users-permissions-add
-|Active Directory 同步處理|使用 Intune Connector 之前，必須先[設定 Active Directory 同步處理](/intune/users-permissions-add)，如此本機使用者及安全性群組才能與您的 Azure Active Directory 進行同步處理。|
+
+|              需求               |                                                                                                            詳細資訊                                                                                                            |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 已設定並執行 Exchange Online |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
+|   行動裝置管理授權單位   |                                                       [將行動裝置管理授權單位設定為 Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)                                                       |
+|       Microsoft Exchange 版本       |                                                                                      Exchange Online 或新版 Exchange Online Dedicated 服務                                                                                      |
+|    Active Directory 同步    | 使用 Intune Connector 之前，必須先[設定 Active Directory 同步處理](/intune/users-permissions-add)，如此本機使用者及安全性群組才能與您的 Azure Active Directory 進行同步處理。 |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange Cmdlet 需求
 

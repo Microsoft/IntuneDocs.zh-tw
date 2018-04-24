@@ -14,15 +14,15 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a550595f18dac8f74cafc1c3ac118c39198c568f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25b2548a831e14427fc4dcaded4b222c56eb2284
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題列出您可以執行的工作，以安裝 Intune 軟體用戶端來管理作為電腦管理的桌上型電腦。 本主題未涵蓋將電腦作為行動裝置管理。 如果您尚未在電腦上安裝用戶端，請參閱[安裝 Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。
 

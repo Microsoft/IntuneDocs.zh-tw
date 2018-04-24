@@ -1,29 +1,29 @@
 ---
-title: "使用 SDK 讓應用程式進行 MAM"
-description: "本主題可讓您快速瀏覽為什麼應該使用 Intune App SDK。"
-keywords: 
+title: 使用 SDK 讓應用程式進行 MAM
+description: 本主題可讓您快速瀏覽為什麼應該使用 Intune App SDK。
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e435b57a85364f56f2a307ce7113102e8b6df254
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: ed6bdddf063d64ec907755e64be047a231c47f44
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>使用 SDK 讓應用程式進行行動應用程式管理
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune App SDK，讓 Intune 管理 iOS 或 Android 應用程式的特定功能。 啟用應用程式之後，即可將原則部署至應用程式。 這些原則會使用這些功能來協助保護公司資料。 您可以使用 SDK 實作的保護類型範例如下︰
 
@@ -39,5 +39,5 @@ ms.lasthandoff: 10/11/2017
 
 如需 SDK 的概觀，請參閱[概觀](/intune/app-sdk-get-started)。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [決定如何準備應用程式，以使用 Microsoft Intune 管理行動裝置應用程式](/intune/apps-prepare-mobile-application-management)

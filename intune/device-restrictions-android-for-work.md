@@ -2,8 +2,8 @@
 title: Microsoft Intune 中的 Android for Work 裝置限制 - Azure | Microsoft Docs
 description: 在執行 Android for Work 的裝置上，您可以限制裝置的某些設定，包括複製和貼上、顯示通知、應用程式權限、資料共用、密碼長度、登入失敗、使用指紋解除鎖定、重複使用密碼，以及啟用藍牙共用工作連絡人。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 的工作裝置限制設定
 
 本文會列出您可以為執行 Android for Work 之裝置設定的 Microsoft Intune 裝置限制設定。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作設定檔設定
 
@@ -48,6 +48,8 @@ ms.lasthandoff: 03/23/2018
    防止終端使用者在工作設定檔中手動新增或移除帳戶。
 
    例如，當您將 Gmail 應用程式部署到 Android for Work 設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
+
+- **透過藍牙分享連絡人**：允許存取來自使用藍芽配對之另一部裝置 (例如汽車) 的工作連絡人。 預設並未進行這項設定，因此不會顯示工作設定檔連絡人。 請選取 [啟用] 以允許此共用及顯示工作設定檔連絡人。 此設定適用於 Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。
 
 ### <a name="work-profile-password"></a>工作設定檔密碼
 

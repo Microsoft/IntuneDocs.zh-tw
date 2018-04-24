@@ -3,8 +3,8 @@ title: iOS Classroom 應用程式的 Intune 共用裝置設定
 titleSuffix: Microsoft Intune
 description: 了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4924d01c6f5d423b7c553d11eea065534179fe5f
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何設定共用 iPad 裝置的 Intune 教育設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 支援 iOS Classroom 應用程式，可協助老師在課堂中引導學習，並控制學生的裝置。 此外，對於 Classroom 應用程式，Apple 支援設定學生 iPad 裝置的功能，可讓多位學生共用單一裝置。 本文件將引導您使用 Intune 達成這個目標。
 

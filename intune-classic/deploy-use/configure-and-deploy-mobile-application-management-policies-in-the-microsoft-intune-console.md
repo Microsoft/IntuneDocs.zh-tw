@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>在 Microsoft Intune 主控台中設定及部署行動應用程式管理原則
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 中的行動應用程式管理原則 (MAM) 可讓您修改所部署應用程式的功能，以使它能符合公司的相容性和安全性原則。 例如，您可以限制受管理應用程式中的剪下、複製及貼上作業，或將應用程式設定成只能在受管理瀏覽器中開啟所有的網頁連結。
 

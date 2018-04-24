@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 您可以從 Intune 移除不再需要、重新設定用途或遺失的裝置。 您可以使用 [移除公司資料] 或 [原廠重設] 動作來執行這項作業。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
 
@@ -71,8 +71,8 @@ ms.lasthandoff: 03/22/2018
 |Wi-Fi 及 VPN 設定檔設定|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|
 |管理代理程式|已移除管理設定檔。|
-|電子郵件|經由 Intune 佈建的電子郵件設定檔已移除。 已刪除裝置上的快取電子郵件。|
-|Outlook|已移除 iOS 版 Microsoft Outlook 應用程式收到的電子郵件。|
+|電子郵件|已移除經由 Intune 佈建的電子郵件設定檔。 已刪除裝置上的快取電子郵件。|
+|Outlook|已移除 iOS 版 Microsoft Outlook 應用程式收到的電子郵件。 先決條件是要將 Outlook 行動應用程式部署為 iOS 使用者的「必要」應用程式。|
 |Azure AD 退出|已移除 Azure AD 記錄。|
 |連絡人 |已移除直接從應用程式同步到原生通訊錄的連絡人。 無法移除從原生通訊錄同步到其他外部來源的任何連絡人。 <br /> <br />目前只支援 Outlook 應用程式。
 

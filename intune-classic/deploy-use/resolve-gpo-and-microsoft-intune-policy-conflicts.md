@@ -1,28 +1,28 @@
 ---
-title: "解決 GPO 和 Intune 原則衝突"
-description: "了解如何解決群組原則和 Intune 設定原則之間的衝突。"
-keywords: 
+title: 解決 GPO 和 Intune 原則衝突
+description: 了解如何解決群組原則和 Intune 設定原則之間的衝突。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9764a1fec44ff5aae7ebcf63b3ebde252bb687f9
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 使用原則協助您在的 Windows 電腦上管理設定。 例如，您可以使用原則來控制電腦上的 Windows 防火牆設定。 許多 Intune 設定與您透過 Windows 群組原則所做的設定很類似。 不過，有時候這兩種方法可能彼此衝突。
 
@@ -116,5 +116,5 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 必須隨著 Intune 服務中的註冊情形變化來維護新的安全性群組。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)

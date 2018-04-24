@@ -1,29 +1,29 @@
 ---
-title: "淘汰裝置"
-description: "Intune 同時支援選擇性抹除和完整抹除，可藉由移除原則與公司入口網站，從 Intune 管理中移除裝置。"
-keywords: 
+title: 淘汰裝置
+description: Intune 同時支援選擇性抹除和完整抹除，可藉由移除原則與公司入口網站，從 Intune 管理中移除裝置。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>從 Intune 管理中淘汰裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 無論是公司擁有的或個人擁有的裝置，最後都需要從 Intune 管理中移除受管理裝置。
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
 
-1.  使用您組織的認證登入 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或 [https://portal.office.com](https://portal.office.com)，然後選擇 [Admin centers] \(系統管理員中心) &gt; [Azure AD]。
+1.  使用您組織的認證來登入 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或 [https://portal.office.com](https://portal.office.com)，然後選擇 [Admin centers] \(系統管理員中心\) &gt; [Azure AD]。
 
 2.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，這應該不需要信用卡或付款。 選擇 [Register your free Azure Active Directory]\(註冊免費的 Azure Active Directory) 訂閱連結。
 
@@ -75,5 +75,5 @@ ms.lasthandoff: 10/10/2017
 ## <a name="retire-hardware"></a>報廢硬體
 有時候是裝置本身的使用壽命到期。 在這種情況下，[重設為原廠設定](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)加上完整抹除，就會移除所有資料並從 Intune 中移除裝置。 然後您可以根據公司原則來移除硬體。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用完整抹除或選擇性抹除來協助保護資料](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)

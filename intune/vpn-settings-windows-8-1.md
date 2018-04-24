@@ -1,27 +1,27 @@
 ---
-title: "Windows 8.1 裝置的 Microsoft Intune VPN 設定"
-titleSuffix: 
-description: "了解可用於設定執行 Windows 8.1 之裝置上 VPN 連線的 Intune 設定。"
-keywords: 
+title: Windows 8.1 裝置的 Microsoft Intune VPN 設定
+titleSuffix: ''
+description: 了解可用於設定執行 Windows 8.1 之裝置上 VPN 連線的 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>設定 Microsoft Intune 中執行 Windows 8.1 之裝置的 VPN 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文說明可用於設定執行 Windows 8.1 之裝置上 VPN 連線的 Intune 設定。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/12/2018
 - **伺服器** - 新增裝置要連線的一或多部 VPN 伺服器。
     - **新增** - 開啟 [新增資料列] 頁面指定下列資訊︰
         - **描述** - 為伺服器指定描述性名稱，例如 **Contoso VPN 伺服器**。
-        - **IP 位或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+        - **IP 位址或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
         - **預設伺服器** - 啟用此伺服器作為裝置所要連線的預設伺服器。 您只可設定一部預設伺服器。
     - **匯入** - 瀏覽至內含以逗點分隔之伺服器清單 (格式為：描述、IP 位址或 FQDN、預設伺服器) 的檔案。 選擇 [確定]，以匯入這些項目成為**伺服器**清單。
     - **匯出** - 將伺服器清單匯出成逗點分隔值 (csv) 檔案。
@@ -61,26 +61,22 @@ ms.lasthandoff: 03/12/2018
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **CheckPoint Mobile VPN 的範例：**
 ```
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-
 ```
 
 **SonicWall Mobile Connect 的範例：**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **F5 Edge 用戶端的範例︰**
 
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 如需詳細資訊，請參閱相關製造商關於如何撰寫自訂 XML 命令的 VPN 文件。
@@ -89,7 +85,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="proxy-settings"></a>Proxy 設定
 
 - **自動偵測 Proxy 設定** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，請指定您的裝置是否需要自動偵測連線設定。 如需詳細資訊，請參閱 Windows Server 文件。
-- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 **http://proxy.contoso.com**)。
 - **使用 proxy 伺服器** - 若要手動輸入 Proxy 伺服器設定，可啟用此選項。
     - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
     - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。

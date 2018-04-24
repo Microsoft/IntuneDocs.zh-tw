@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題描述在 **Azure 入口網站**中建立應用程式保護原則的程序 。 Azure 入口網站是用於建立應用程式保護原則的新管理主控台，並建議您使用這個入口網站建立應用程式保護原則。 Azure 入口網站支援下列 MAM 案例：
 
@@ -31,23 +31,23 @@ ms.lasthandoff: 03/22/2018
 - 協力廠商 MDM 解決方案管理的裝置。
 - 未受任何 MDM 解決方案 (BYOD) 管理的裝置。
 
->[!IMPORTANT]
-以下是使用 **Intune 管理主控台**來管理裝置時的一些考量：
-
+> [!IMPORTANT]
+> 以下是使用 **Intune 管理主控台**來管理裝置時的一些考量：
+> 
 > * 您可以建立應用程式保護原則，該原則使用 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)支援 Intune 中註冊之裝置的應用程式。
 > * 在 Intune 管理主控台中建立的應用程式保護原則無法匯入到 Azure 入口網站。  您必須在 Azure 入口網站中重新建立應用程式保護原則。
-
+> 
 > * 您在 Intune 管理主控台中可能看不到所有應用程式保護原則設定。 Azure 入口網站是建立應用程式保護原則的新管理主控台。
-
+> 
 > * 若要部署受管理應用程式，您必須在 Intune 管理主控台中建立應用程式保護原則。 在此情況下，您可能想要在 Intune 管理主控台和 Azure 入口網站中建立應用程式保護原則︰在 Intune 管理主控台中建立應用程式保護原則，可確定您能夠部署受管理的應用程式，而在 Azure 入口網站中建立應用程式保護原則，則是由於它是具有所有應用程式保護原則設定的新管理主控台。
-
+> 
 > * 如果您在 Intune 管理主控台和 Azure 入口網站上建立應用程式保護原則，則會將在 Azure 入口網站中建立的原則套用至應用程式。
 
 若要查看為 Android 和 iOS 平台支援的原則設定清單，請選取下列其中一項︰
 
 > [!div class="op_single_selector"]
-- [iOS 原則](ios-mam-policy-settings.md)
-- [Android 原則](android-mam-policy-settings.md)
+> - [iOS 原則](ios-mam-policy-settings.md)
+> - [Android 原則](android-mam-policy-settings.md)
 
 - 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[使用應用程式保護原則來保護應用程式和資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
@@ -129,13 +129,13 @@ ms.lasthandoff: 03/22/2018
 > [!IMPORTANT]
 > 當您建立新的應用程式保護原則時，您必須從 [平台] 下拉式清單選取 [Windows 10]。
 
-1.  在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗。
+1. 在 [新增原則] 刀鋒視窗中，選擇 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式)，以開啟 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗。
 
-    > [!NOTE]
-    >
-    - **允許的應用程式**︰這些應用程式是必須遵守此原則的應用程式。
-    - **豁免應用程式**︰這些應用程式不會套用此原則，而且可以存取公司資料，而沒有任何限制。
-<br></br>
+   > [!NOTE]
+   > 
+   > - **允許的應用程式**︰這些應用程式是必須遵守此原則的應用程式。
+   > - **豁免應用程式**︰這些應用程式不會套用此原則，而且可以存取公司資料，而沒有任何限制。
+   > <br></br>
 2. 在 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗中，按一下 [新增應用程式]。 您可以新增建議的 Microsoft 應用程式、市集應用程式或傳統型應用程式。
 
     a.  **建議的應用程式︰**可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
@@ -210,8 +210,8 @@ ms.lasthandoff: 03/22/2018
 若要查看 iOS 和 Android 的原則設定的完整清單，請選取下列其中一項︰
 
 > [!div class="op_single_selector"]
-- [iOS 原則](ios-mam-policy-settings.md)
-- [Android 原則](android-mam-policy-settings.md)
+> - [iOS 原則](ios-mam-policy-settings.md)
+> - [Android 原則](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>接下來的步驟
 [監視合規性和使用者狀態](monitor-mobile-app-management-policies-with-microsoft-intune.md)

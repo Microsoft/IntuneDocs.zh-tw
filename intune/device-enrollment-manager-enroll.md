@@ -1,29 +1,29 @@
 ---
-title: "使用裝置註冊管理員帳戶註冊裝置"
+title: 使用裝置註冊管理員帳戶註冊裝置
 titlesuffix: Microsoft Intune
-description: "使用裝置註冊管理員帳戶，在 Intune 中註冊裝置。 \""
-keywords: 
+description: 使用裝置註冊管理員帳戶，在 Intune 中註冊裝置。 "
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 *裝置註冊管理員* (DEM) 帳戶是特殊的使用者帳戶，最多可以註冊 1,000 部裝置。 將現有的使用者加入 DEM 帳戶，能夠賦予他們特殊的 DEM 功能。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。  
 
@@ -49,12 +49,12 @@ DEM 使用者可以︰
 使用裝置註冊管理員帳戶所註冊的裝置具有下列限制︰
 
   - 不具每位使用者的存取權。 因為裝置並未指派使用者，所以裝置沒有任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
-  - 因為這些案例均屬每位使用者，所以沒有條件式存取。
   - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以取消註冊。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
-  - 因為進行應用程式管理需要每位使用者的 Apple ID，因此使用者無法使用 Apple 大量採購計劃 (VPP) 應用程式。
+  - 使用者無法將 Apple「大量採購方案」(VPP) 應用程式與使用者授權搭配使用，因為進行應用程式管理需要個別使用者的 Apple ID。
   - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。
   - (僅限 Android) 可以單一 DEM 帳戶註冊的 Android for Work 裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 這項限制不適用於舊版的 Android 註冊。
+  - 裝置如果具有裝置授權，便可以安裝 VPP 應用程式。
   - 每部裝置都需要裝置授權。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 

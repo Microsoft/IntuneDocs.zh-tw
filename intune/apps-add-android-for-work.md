@@ -1,29 +1,29 @@
 ---
-title: "將應用程式指派給 Android for Work 裝置"
+title: 將應用程式指派給 Android for Work 裝置
 titlesuffix: Microsoft Intune
-description: "了解如何同步處理，並將應用程式從 Google Play for Work 商店指派給 Android for Work 裝置。"
-keywords: 
+description: 了解如何同步處理，並將應用程式從 Google Play for Work 商店指派給 Android for Work 裝置。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 將應用程式指派至 Android for Work 裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work 是適用於 Android 裝置的計劃。 您在 Android for Work 裝置上安裝的所有應用程式都是來自 Google Play for Work 商店。 將應用程式指派至 Android for Work 裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您可以登入商店、瀏覽所需的應用程式並核准這些應用程式。 應用程式接著會出現在 Azure 入口網站的 [授權的應用程式] 節點中。 您可以在這裡管理應用程式的指派，方式與指派任何其他應用程式相同。
 
@@ -43,7 +43,7 @@ Android for Work 是適用於 Android 裝置的計劃。 您在 Android for Work
 
     ![範例 - 在 Google Play for Work 商店中核准應用程式](media/approve.png)</br>
     
-  應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 
+   應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。 
 
 4. 選取 [核准] 接受應用程式權限，並繼續作業。</br>
 
@@ -60,7 +60,7 @@ Android for Work 是適用於 Android 裝置的計劃。 您在 Android for Work
 如果您已核准商店中的某個應用程式，但未在 [行動應用程式] 工作負載的 [授權的應用程式] 節點中看到它，請以如下方式強制立即同步：
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
 4. 在 [行動應用程式] 工作負載中，選擇 [安裝] 區段的 [Android for Work]。
 5. 在 [Android for Work] 窗格中選擇 [同步處理]。此頁面會更新上一次同步的時間和狀態。
@@ -79,7 +79,7 @@ Android for Work 會要求您在 Google 受管理的 Play Web 主控台核准應
 
 請定期造訪受管理的 Google Play 主控台來檢查新的權限。 您可以設定 Google Play 在需要新權限以使用核准的應用程式時，寄送電子郵件給您或其他使用者。 如果您指派了應用程式，並發現它並未安裝在裝置上，請依下列步驟檢查是否有新的權限：
 
-1. 造訪 http://play.google.com/work
+1. 請瀏覽 http://play.google.com/work
 2. 使用您用來發行及核准應用程式的 Google 帳戶登入。
 3. 瀏覽 [更新] 索引標籤以查看是否有任何應用程式需要更新。  任何列出的應用程式都需要新的權限，而且在套用新權限之前將不會指派。  
 

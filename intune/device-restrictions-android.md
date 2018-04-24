@@ -1,28 +1,28 @@
 ---
-title: "Android 的 Microsoft Intune 裝置限制設定"
-titlesuffix: 
-description: "了解執行 Android 的裝置上可用以控制裝置設定與功能之 Intune 設定。"
-keywords: 
+title: Android 的 Microsoft Intune 裝置限制設定
+titlesuffix: ''
+description: 了解執行 Android 的裝置上可用以控制裝置設定與功能之 Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 與 Samsung Knox Standard 裝置限制設定 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Android 的裝置進行設定。
 

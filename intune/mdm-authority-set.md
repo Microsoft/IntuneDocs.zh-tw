@@ -15,15 +15,15 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 行動裝置管理 (MDM) 授權單位設定會決定您管理裝置的方式。 身為 IT 系統管理員，您必須在使用者可以註冊裝置以進行管理之前，設定 MDM 授權單位。
 
@@ -35,26 +35,26 @@ ms.lasthandoff: 03/17/2018
 
 - **Office 365 的行動裝置管理** - Office 365 與 Intune 雲端解決方案的整合版。 您可以從 Office 365 系統管理中心設定 Intune。 包含 Intune 獨立版提供的功能子集。 在 Office 365 系統管理中心中設定 MDM 授權單位。
 
->[!IMPORTANT]    
-在 Configuration Manager 1610 版或更新版本及 Microsoft Intune 1705 版中，您可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資訊，請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
+> [!IMPORTANT]
+> 在 Configuration Manager 1610 版或更新版本及 Microsoft Intune 1705 版中，您可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 如需詳細資訊，請參閱[選擇錯誤的 MDM 授權單位設定時該怎麼辦](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 ## <a name="set-mdm-authority-to-intune"></a>將 MDM 授權單位設為 Intune
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-2. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。
-3. 在 [行動裝置管理授權單位] 下，從下列選項中選擇您的 MDM 授權單位：
-  - **Intune MDM 授權單位**
-  - **Configuration Manager MDM 授權單位**
-  - **無**
+3. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。
+4. 在 [行動裝置管理授權單位] 下，從下列選項中選擇您的 MDM 授權單位：
+   - **Intune MDM 授權單位**
+   - **Configuration Manager MDM 授權單位**
+   - **無**
 
-  ![Intune 設定行動裝置管理授權單位畫面的螢幕擷取畫面](media/set-mdm-auth.png)
+   ![Intune 設定行動裝置管理授權單位畫面的螢幕擷取畫面](media/set-mdm-auth.png)
 
-  接著會顯示一則訊息指出您已成功將 Intune 設定為 MDM 授權單位。
+   接著會顯示一則訊息指出您已成功將 Intune 設定為 MDM 授權單位。
 
 ## <a name="enable-device-enrollment"></a>啟用裝置註冊
 
-將 Intune 設定為 MDM 授權單位時，使用者可以註冊個人擁有的裝置，以及使用下列方式來存取電子郵件這類資源，方法是安裝公司入口網站 (iOS 和 Android)、新增工作認證 (Windows)，或存取公司入口網站 (iOS、Android、macOS)。
+將 Intune 設定為 MDM 授權單位時，使用者可以藉由下列方式註冊個人擁有的裝置並取得資源 (例如電子郵件) 存取權：安裝公司入口網站 (iOS、macOS 及 Android)、新增工作認證 (Windows) 或存取公司入口網站 (iOS、Android、macOS)。
 
 不同的平台具有下列需求，才能啟用或簡化註冊：
 - **iOS** - (必要) [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)，然後[啟用公司擁有之 iOS 裝置的註冊](ios-enroll.md) (選擇性)。

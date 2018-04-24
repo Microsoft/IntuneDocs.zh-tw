@@ -1,26 +1,26 @@
 ---
-title: "在 Microsoft Intune - Azure 中使用自訂裝置設定 | Microsoft Docs"
-description: "新增或建立設定檔，以 Microsoft Intune 來使用 Windows、Android 和 iOS 裝置的自訂設定"
-keywords: 
+title: 在 Microsoft Intune - Azure 中使用自訂裝置設定 | Microsoft Docs
+description: 新增或建立設定檔，以 Microsoft Intune 來使用 Windows、Android 和 iOS 裝置的自訂設定
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>在 Intune 中使用自訂設定建立設定檔
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 可能不具備您需要或想要的所有內建設定。 或者，您可能想要使用其他裝置設定檔中可用的設定。 若要新增這些設定，請建立裝置設定檔，然後使用自訂裝置設定來設定設定檔。
 

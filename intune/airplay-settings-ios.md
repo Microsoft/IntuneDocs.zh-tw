@@ -15,15 +15,15 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f941d6c6d3e1aec9e53b97ad0700d3ad3070d56
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 94252815f0da8042a97aed7d807f022d9c166983
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>適用於 iOS 裝置的 Intune AirPlay 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用這些設定來協助將您管理的 iOS 裝置連線到網路中相容 AirPlay 的裝置 (例如 Apple TV)。
 有了這項功能，您可以：

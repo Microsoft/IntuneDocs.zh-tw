@@ -15,15 +15,15 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Managed Browser 是網頁瀏覽應用程式，您可從公共應用程式市集下載，提供您的組織使用。 使用 Intune 設定時，Managed Browser 可以：
 - 透過 MyApps 服務搭配單一登入用來存取公司網站和 SaaS 應用程式，同時還能保護網頁資料。
@@ -91,6 +91,8 @@ Managed Browser 現在是進行條件式存取的經過核准用戶端應用程�
 9. 在 [指派] 區段中，選取 [雲端應用程式] 選擇要使用此原則保護的應用程式。
 
 設定上述原則之後，會強制使用者使用 Intune Managed Browser 存取您使用此原則保護的 Azure AD 已連線 Web 應用程式。 在此情況下，如果使用者嘗試使用非受控瀏覽器，則會注意到必須改為使用 Intune Managed Browser。
+
+Managed Browser 不支援傳統「條件式存取」原則。 如需詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。
 
 ##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Intune Managed Browser 中 Azure AD 已連線 Web 應用程式的單一登入
 
@@ -164,11 +166,11 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 此設定可讓您設定使用者啟動 Managed Browser 或建立新索引標籤時看到的首頁。使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-|||
-|-|-|
-|金鑰|值|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>範例：**https://www.bing.com**|
 
+|                                                                   |                                                                                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|                                金鑰                                |                                                           值                                                            |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>範例：<strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何設定 Managed Browser 書籤
 
@@ -180,19 +182,21 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-|||
-|-|-|
-|金鑰|值|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|此設定值是一份書籤。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 **&#124;** 字元分隔標題和 URL。<br><br>範例：**Microsoft Bing&#124;https://www.bing.com**<br><br>若要設定多個書籤，請以雙引號字元 **&#124;&#124;** 分隔每組配對。<br><br>範例：**Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                金鑰                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此設定值是一份書籤。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 <strong>&#124;</strong> 字元分隔標題和 URL。<br><br>範例：<strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>若要設定多個書籤，請以雙引號字元 <strong>&#124;&#124;</strong> 分隔每組配對。<br><br>範例：<strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何為 Managed Browser 指定允許和封鎖的 URL
 
 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-|||
-|-|-|
-|金鑰|值|
-|從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 **&#124;** 字元分隔。<br><br>範例：<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+
+|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                               金鑰                                                                                                                                                                |                                                                                                                                                                                    值                                                                                                                                                                                    |
+| 從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：<strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | 金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 <strong>&#124;</strong> 字元分隔。<br><br>範例：<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
 
 >[!IMPORTANT]
 >請勿同時指定這兩個金鑰。 如果兩個金鑰都以同一使用者為目標，會使用允許金鑰，因為它是最嚴格的選項。
@@ -201,52 +205,52 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>適用於允許和封鎖 URL 的 URL 格式
 使用下列資訊，來了解您在允許和封鎖清單中指定 URL 時可使用的允許格式與萬用字元：
 
--   您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (**&#42;**)：
+- 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (**&#42;**)：
 
--   確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
+- 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
 
--   您可以在位址中指定連接埠號碼。 如不指定連接埠號碼，會使用下列值：
+- 您可以在位址中指定連接埠號碼。 如不指定連接埠號碼，會使用下列值：
 
-    -   針對 http 使用連接埠 80
+  -   針對 http 使用連接埠 80
 
-    -   針對 https 使用連接埠 443
+  -   針對 https 使用連接埠 443
 
-    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;** 與 **http&colon;//www&period;contoso&period;com: /*;**。
+  不支援對連接埠號碼使用萬用字元。 例如，不支援 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 和 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>。
 
--   使用下表來了解您在指定 URL 時可使用的允許模式：
+- 使用下表來了解您在指定 URL 時可使用的允許模式：
 
-|URL|詳細資料|相符項|不符合|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|比對單一頁面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|比對單一頁面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|比對所有以 www.contoso.com 開頭的 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|比對 contoso.com 下的所有子網域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|比對單一資料夾|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|使用連接埠號碼來比對單一頁面|http://www.contoso.com:80|
-|https://www.contoso.com|比對單一且安全的頁面|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|符合單一資料夾及所有子資料夾|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     詳細資料                      |                                                相符項                                                |                                不符合                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              比對單一頁面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              比對單一頁面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | 比對所有以 www.contoso.com 開頭的 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     比對 contoso.com 下的所有子網域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             比對單一資料夾              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  使用連接埠號碼來比對單一頁面   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          比對單一且安全的頁面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    符合單一資料夾及所有子資料夾    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   以下是一些您無法指定的輸入範例：
+- 以下是一些您無法指定的輸入範例：
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP 位址
+  - IP 位址
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用受管理的瀏覽器存取受管理應用程式的記錄檔
 

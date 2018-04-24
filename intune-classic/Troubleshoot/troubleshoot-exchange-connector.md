@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>為 Exchange Connector 進行疑難排解
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題描述如何針對可能與 Intune Exchange Connector 相關的問題進行疑難排解。
 
@@ -36,8 +36,8 @@ ms.lasthandoff: 03/22/2018
 - 設定 Exchange Connector 時，指定的用戶端存取伺服器 (CAS) 要儘可能靠近裝載 Exchange Connector 的伺服器。 CAS 與 Exchange Connector 之間的通訊延遲，可能會導致裝置探索延遲，尤其是在使用 O365 專用時。
 - 請注意 Exchange Connector 同步處理與 Exchange CAS 之間，在時間上會有延遲。 完整同步處理會一天執行一次，而差異 (快速) 同步處理則是每兩小時執行一次。 使用新註冊裝置的使用者進行存取時，很可能會遇到延遲。
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>無法從 Exchange 探索 Exchange ActiveSync 裝置
-檢查 Exchange Connector 是否正在與 Exchange Server 進行同步處理。 若要這樣做，請找出完整同步處理或差異同步處理的記錄檔。請參閱＜Exchange Connector 記錄檔＞。 如果自裝置加入之後已順利完成完整同步處理或差異同步處理，這就不會是問題來源。 如果尚未進行任何同步處理，請收集同步處理記錄檔，並附加到您的支援要求中。
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>無法從 Exchange 探索 Exchange ActiveSync 裝置
+  檢查 Exchange Connector 是否正在與 Exchange Server 進行同步處理。 若要這樣做，請找出完整同步處理或差異同步處理的記錄檔。請參閱＜Exchange Connector 記錄檔＞。 如果自裝置加入之後已順利完成完整同步處理或差異同步處理，這就不會是問題來源。 如果尚未進行任何同步處理，請收集同步處理記錄檔，並附加到您的支援要求中。
 
 - 如果使用者沒有 Intune 授權，Exchange Connector 將不會探索他們的裝置。
 - 如果使用者的主要 SMTP 位址和他們在 AAD 中的 UPN 不同，Exchange Connector 將無法探索該 Intune/AAD 使用者的任何裝置。 修正主要 SMTP 位址。

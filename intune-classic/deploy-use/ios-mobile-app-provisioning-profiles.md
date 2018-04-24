@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cadd7070e8e3c7c0c5aca42324635af627f91e14
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8d55531dab4b6904fc9552f2be3ac7444073d0d7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 部署至 iPhone 與 iPad 的 Apple iOS 企業營運應用程式，是使用包含的佈建設定檔與透過憑證簽署的程式碼所建置。 當該應用程式執行時，iOS 會確認該 iOS 應用程式的完整性，並強制執行由佈建設定檔定義的原則。 發生下列驗證︰
 

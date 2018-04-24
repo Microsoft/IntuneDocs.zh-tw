@@ -1,27 +1,27 @@
 ---
-title: "執行 Windows 10 之裝置的 Microsoft Intune 電子郵件設定"
-titleSuffix: 
-description: "深入了解可用於設定執行 Windows 10 之裝置上電子郵件設定的 Microsoft Intune 設定。"
-keywords: 
+title: 執行 Windows 10 之裝置的 Microsoft Intune 電子郵件設定
+titleSuffix: ''
+description: 深入了解可用於設定執行 Windows 10 之裝置上電子郵件設定的 Microsoft Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4a0c3eaf0643ede02b8c084d172b7a51d251b3a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>在執行 Windows 10 之裝置上的 Microsoft Intune 電子郵件設定檔設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文展示您可為執行 Windows 10 之裝置設定的電子郵件設定檔設定。
 
@@ -29,18 +29,18 @@ ms.lasthandoff: 03/08/2018
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
 - **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
-- **來自 AAD 的電子郵件地址屬性** - 選取每個裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
+- **AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
 
 
 ## <a name="security-settings"></a>安全性設定
 
-- **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL)。
 
 
 
 ## <a name="synchronization-settings"></a>同步處理設定
 
-- **從要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
+- **要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
 - **同步排程** - 選取裝置用來同步處理 Exchange Server 資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或 [手動 (使用此方式，裝置使用者必須啟動同步處理)]。
 
 ## <a name="content-sync-settings"></a>內容同步設定

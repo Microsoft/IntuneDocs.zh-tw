@@ -1,29 +1,29 @@
 ---
-title: "Windows 原則設定"
-description: "使用 Intune Windows 一般設定原則 (Windows 8.1 和更新版本) 來設定已註冊之 Windows 8 和 Windows 8.1 裝置的設定。"
-keywords: 
+title: Windows 原則設定
+description: 使用 Intune Windows 一般設定原則 (Windows 8.1 和更新版本) 來設定已註冊之 Windows 8 和 Windows 8.1 裝置的設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Windows 原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune **Windows 一般設定原則 (Windows 8.1 和更新版本)** 來設定已註冊之 Windows 8、Windows 8.1 和 Windows RT 8.1 裝置的下列設定：
 
@@ -49,9 +49,10 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="encryption-settings"></a>加密設定
 
-|設定名稱|詳細資料|
-|----------------|-----|
-|**行動裝置上需進行加密**<sup>1</sup>|裝置上的檔案需要加密。|
+|                           設定名稱                           |                     詳細資料                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>行動裝置上需進行加密</strong><sup>1</sup> | 裝置上的檔案需要加密。 |
+
 <sup>1</sup> 執行 Windows 8.1 之裝置的其他資訊
 
 -   若要在執行 Windows 8.1 的裝置上強制加密，您必須在每個裝置上安裝 [2014 年 12 月適用於 Windows 的 MDM 用戶端更新](http://support.microsoft.com/kb/3013816) 。

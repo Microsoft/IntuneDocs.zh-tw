@@ -1,24 +1,24 @@
 ---
-title: "開始使用 Microsoft Intune App SDK"
-description: "使用 Microsoft Intune 快速為行動應用程式啟用行動應用程式管理 (MAM)。"
-keywords: 
+title: 開始使用 Microsoft Intune App SDK
+description: 使用 Microsoft Intune 快速為行動應用程式啟用行動應用程式管理 (MAM)。
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果您的應用程式將會發行到公開應用程式商店 (例如 Apple App Store 或 Google Play)：
 
-您_**必須**_先向 Microsoft Intune 註冊應用程式，並同意註冊條款。 然後 IT 系統管理員就可以將應用程式保護原則套用至受控應用程式，該應用程式將被列為 Intune 應用程式合作夥伴。
+您_**必須**_ 先向 Microsoft Intune 註冊應用程式，並同意註冊條款。 然後 IT 系統管理員就可以將應用程式保護原則套用至受控應用程式，該應用程式將被列為 Intune 應用程式合作夥伴。
 
 等到註冊已完成且 Microsoft Intune 小組確認之後，Intune 系統管理員就不會有將應用程式保護原則套用至應用程式深層連結的選項。 Microsoft 也會將您的應用程式加到其 [Microsoft Intune Partner 頁面](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 應用程式的圖示將會在那裡顯示，以表示該應用程式支援 Intune 應用程式保護原則。
 
@@ -69,7 +69,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 如果您的應用程式是 Xamarin 或 Cordova 應用程式，請使用這些 SDK 變異：
 
-* [Intune App SDK Xamarin 元件](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune App SDK Cordova 外掛程式](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 建議您註冊一個 GitHub 帳戶，以用來從我們的存放庫執行分支作業及提取作業。 GitHub 可讓開發人員與我們的產品小組進行溝通、開啟問題並接收快速回應、檢視版本資訊，以及將意見提供給 Microsoft。 如有 Intune App SDK GitHub 問題，請連絡 msintuneappsdk@microsoft.com。
@@ -84,7 +84,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 * **[Intune App SDK Cordova 外掛程式指南](app-sdk-cordova.md)**︰本文件將協助您使用 Cordova for Intune 應用程式保護原則建置 iOS 和 Android 應用程式。
 
-* **[Intune App SDK Xamarin 元件指南](app-sdk-xamarin.md)**︰本文件將協助您使用 Cordova for Intune 應用程式保護原則建置 iOS 和 Android 應用程式。
+* **[Intune App SDK Xamarin 繫結指南](app-sdk-xamarin.md)**︰本文件將協助您使用 Xamarin for Intune 應用程式保護原則來建置 iOS 和 Android 應用程式。
 
 
 
@@ -142,7 +142,7 @@ Intune|iOS|Android|說明|
 
 - **CFBundleShortVersionString**  
     指定配套的版本號碼。 此數字可識別應用程式的發行版本。 此數字可供使用者用來參考應用程式。
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     配套的組建版本，可識別配套的反覆項目。 此數字可識別發行或未發行的配套。 此數字用於偵測應用程式。
 
 #### <a name="android"></a>Android

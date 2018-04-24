@@ -1,29 +1,28 @@
 ---
-title: "適用於 Windows 10 的 Microsoft Intune Endpoint Protection 設定"
-titlesuffix: 
-description: "了解 Windows 10 裝置上可用以控制 BitLocker 等 Endpoint Protection 設定的 Intune 設定。"
-keywords: 
+title: 在 Microsoft Intune 中於 Windows 10 上新增 Endpoint Protection - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中，於 Windows 10 裝置上，使用或設定 Endpoint Protection 設定以啟用 Windows Defender 功能，包括「應用程式防護」、「防火牆」、SmartScreen、加密和 Bitlocker、「惡意探索防護」、「應用程式控制」、「資訊安全中心」，以及本機裝置上的安全性。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>在 Microsoft Intune 中建立適用於 Windows 10 和更新版本的 Endpoint Protection 設定
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune 中適用於 Windows 10 (和更新版本) 的 Endpoint Protection 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker 和 Windows Defender 等安全性功能。
 
@@ -31,21 +30,6 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 
 > [!Note]
 > Home 和 Professional 版本的 Windows 10 不支援這些設定。
-
-## <a name="create-an-endpoint-protection-profile"></a>建立 Endpoint Protection 設定檔
-
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗的 [管理] 區段下，選擇 [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗上，為裝置功能設定檔輸入 [名稱] 及 [描述]。
-5. 從 [平台] 下拉式清單中，選取 [Windows 10 及更新版本]。
-6. 從 [設定檔類型] 下拉式清單中，選擇 [Endpoint Protection]。
-7. 設定您想要的設定。 使用本文中的詳細資料有助您了解每個設定的用途。 完成之後，請選擇 [確定]。
-8. 返回 [建立設定檔] 刀鋒視窗，然後選擇 [建立]。
-
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender 應用程式防護
 
@@ -56,9 +40,9 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 - **企業網站上的外部內容** - 封鎖自未經核准的網站載入內容。
 - **從虛擬瀏覽器列印** - 允許 PDF、XPS、本機及/或網路印表機，列印虛擬瀏覽器的內容。
 - **收集記錄檔** - 收集應用程式防護瀏覽工作階段內發生的事件記錄檔。
-- **保留使用者產生的瀏覽器資料** - 允許儲存於應用程式防護虛擬瀏覽工作階段期間內建立的使用者資料 (例如密碼、我的最愛和 Cookie)。
-- **圖形加速** - 透過啟用對虛擬圖形處理單位的存取，在應用程式防護虛擬瀏覽工作階段中作業時，加快載入高圖形效能需求網站的速度。
-
+- **保留使用者產生的瀏覽器資料** - 儲存在「應用程式防護」虛擬瀏覽工作階段期間建立的使用者資料 (例如密碼、我的最愛及 Cookie)。
+- **圖形加速** - 在「應用程式防護」虛擬瀏覽工作階段內運作時，可讓需要載入大量圖形的網站以更快的速度載入。 藉由啟用存取虛擬圖形處理單元的功能，網站可以更快速載入。
+- **將檔案下載到主機檔案系統** - 可讓使用者將檔案從虛擬化瀏覽器下載到主機作業系統。
 
 ## <a name="windows-defender-firewall"></a>Windows Defender 防火牆
 
@@ -72,7 +56,7 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 - **IPsec 豁免** - 設定自 IPsec 豁免特定的流量，包括**鄰居探索 IPv6 的 ICMP 類型代碼**、**ICMP**、**路由器探索 IPv6 的 ICMP 類型代碼**，和 **IPv4 和 IPv6 的 DHCP 網路流量**。
 - **憑證撤銷清單驗證** - 設定憑證撤銷清單驗證強制執行方式的值，包括 [Disable CRL verification] (停用 CRL 驗證)、[Fail CRL verification on revoked certificate only] (僅撤銷憑證上的 CRL 驗證會失敗)，以及 [Fail CRL verification on any error encountered] (發生任何錯誤 CRL 驗證都會失敗)。
 - **每個金鑰處理模組都伺機比對驗證組** - 如果金鑰處理模組不支援驗證集中所有的驗證套件，設定金鑰處理模組以忽略整個驗證集。
-- **封包佇列** - 指定如何啟用接收端軟體的縮放比例，處理 IPsec 通道閘道案例中轉接接收和清除的加密文字。 這可確定保留封包順序。
+- **封包佇列** - 指定如何啟用接收端軟體的縮放比例，處理 IPsec 通道閘道案例中轉接接收和清除的加密文字。 此設定可確保保留封包順序。
 
 ### <a name="network-settings"></a>網路設定
 
@@ -81,8 +65,8 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 #### <a name="general-settings"></a>一般設定
 
 - **Windows Defender 防火牆** - 啟用此設定可封鎖網路流量。
-- **隱形模式** - 封鎖防火牆在隱形模式下運作。 封鎖此項目也可讓您封鎖 **IPsec 安全封包豁免**。
-- **受防護** - 啟用此功能則防火牆設定會封鎖所有的連入流量。
+- **隱形模式** - 封鎖防火牆在隱形模式下運作。 封鎖隱形模式可讓您也封鎖 **IPsec 安全封包豁免**。
+- **受防護** - 啟用此設定和防火牆設定會封鎖所有連入流量。
 - **多點傳送廣播的單點傳播回應** - 封鎖多點傳送廣播的單點傳播回應。 一般不希望收到多點傳送或廣播訊息的單點傳播回應，因為這類回應表示阻斷服務攻擊或攻擊者嘗試探查已知的即時電腦。
 - **輸入通知** - 從連接埠的接聽封鎖應用程式時，封鎖通知不向使用者顯示。
 - **輸入連線的預設動作** - 封鎖防火牆對輸入連線執行的預設動作。
@@ -115,53 +99,52 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 
 - **其他磁碟加密警告** - 停用使用者電腦上的其他磁碟加密警告提示。
 - **設定加密方法** - 啟用此設定可設定作業系統、資料和抽取式磁碟機的加密演算法。
-    - **作業系統磁碟機的加密** - 選擇作業系統磁碟機的加密方法。 建議您使用 XTS-AES 演算法。
-    - **固定式資料磁碟機的加密** - 選擇固定式 (內建) 資料磁碟機的加密方法。 建議您使用 XTS-AES 演算法。
-    - **抽取式資料磁碟機的加密** - 選擇抽取式資料磁碟機的加密方法。 如果抽取式磁碟機與不是執行 Windows 10 的裝置搭配使用，建議您使用 AES-CBC 演算法。
+  - **作業系統磁碟機的加密** - 選擇作業系統磁碟機的加密方法。 建議您使用 XTS-AES 演算法。
+  - **固定式資料磁碟機的加密** - 選擇固定式 (內建) 資料磁碟機的加密方法。 建議您使用 XTS-AES 演算法。
+  - **抽取式資料磁碟機的加密** - 選擇抽取式資料磁碟機的加密方法。 如果抽取式磁碟機與不是執行 Windows 10 的裝置搭配使用，建議您使用 AES-CBC 演算法。
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker 作業系統磁碟機設定
 
 這些設定只套用在作業系統資料磁碟機。
 
 - **啟動時的其他驗證** - 設定電腦啟動時的驗證需求，包括使用信賴平台模組 (TPM)。
-    - **具有不相容 TPM 晶片的 BitLocker**
-    - **相容的 TPM 啟動** - 設定 TPM 晶片是已允許、不允許還是必要。
-    - **相容的 TPM 啟動 PIN** - 設定搭配 TPM 晶片使用啟動 PIN 是已允許、不允許還是必要。
-    - **相容的 TPM 啟動金鑰** - 設定搭配 TPM 晶片使用啟動金鑰是已允許、不允許還是必要。
-    - **相容的 TPM 啟動金鑰及 PIN** - 設定搭配 TPM 晶片使用啟動金鑰及 PIN 是已允許、不允許還是必要。
+  - **具有不相容 TPM 晶片的 BitLocker**
+  - **相容的 TPM 啟動** - 設定 TPM 晶片是已允許、不允許還是必要。
+  - **相容的 TPM 啟動 PIN** - 設定搭配 TPM 晶片使用啟動 PIN 是已允許、不允許還是必要。
+  - **相容的 TPM 啟動金鑰** - 設定搭配 TPM 晶片使用啟動金鑰是已允許、不允許還是必要。
+  - **相容的 TPM 啟動金鑰及 PIN** - 設定搭配 TPM 晶片使用啟動金鑰及 PIN 是已允許、不允許還是必要。
 - **最小 PIN 長度** - 啟用此設定可設定 TPM 啟動 PIN 的最小長度。
-    - **字元數下限** - 輸入啟動 PIN 所需的字元數 (**4**-**20**)。
+  - **字元數下限** - 輸入啟動 PIN 所需的字元數 (**4**-**20**)。
 - **OS 磁碟機修復** - 啟用此設定可控制在未提供必要的啟動資訊時，如何復原受 BitLocker 保護的作業系統磁碟機。
-    - **以憑證為基礎的資料修復代理程式** - 如果您希望資料修復代理程式能夠與受 BitLocker 保護的作業系統磁碟機搭配使用，請啟用此設定。
-    - **使用者的修復密碼建立** - 設定使用者是允許、需要還是不允許產生 48 位數的修復密碼。
-    - **使用者的修復金鑰建立** - 設定使用者是允許、需要還是不允許產生 256 位元的修復金鑰。
-    - **BitLocker 安裝精靈中的修復選項** - 啟用此設定可防止使用者在開啟 BitLocker 時看到或變更修復選項。
-    - **將 BitLocker 修復資訊儲存到 AD DS** - 啟用在 Active Directory 中儲存 BitLocker 修復資訊的功能。
-    - **儲存在 AD DS 的 BitLocker 修復資訊** - 設定 BitLocker 修復資訊的哪些部分會儲存在 Active Directory 中。 從下列選項進行選擇：
-        - **備份修復密碼和金鑰封裝**
-        - **只備份修復密碼**
-    - **先將修復資訊儲存在 AD DS 再啟用 BitLocker** - 啟用此設定可阻止使用者開啟 BitLocker，除非裝置已加入網域，且 BitLocker 修復資訊成功儲存在 Active Directory 中。
+  - **以憑證為基礎的資料修復代理程式** - 如果您希望資料修復代理程式能夠與受 BitLocker 保護的作業系統磁碟機搭配使用，請啟用此設定。
+  - **使用者的修復密碼建立** - 設定使用者是允許、需要還是不允許產生 48 位數的修復密碼。
+  - **使用者的修復金鑰建立** - 設定使用者是允許、需要還是不允許產生 256 位元的修復金鑰。
+  - **BitLocker 安裝精靈中的修復選項** - 啟用此設定可防止使用者在開啟 BitLocker 時看到或變更修復選項。
+  - **將 BitLocker 修復資訊儲存到 AD DS** - 啟用在 Active Directory 中儲存 BitLocker 修復資訊的功能。
+  - **儲存在 AD DS 的 BitLocker 修復資訊** - 設定 BitLocker 修復資訊的哪些部分會儲存在 Active Directory 中。 從下列選項進行選擇：
+    - **備份修復密碼和金鑰封裝**
+    - **只備份修復密碼**
+  - **先將修復資訊儲存在 AD DS 再啟用 BitLocker** - 啟用此設定可阻止使用者開啟 BitLocker，除非裝置已加入網域，且 BitLocker 修復資訊成功儲存在 Active Directory 中。
 - **開機前修復訊息及 URL** - 啟用此設定可設定開機前金鑰修復畫面顯示的訊息及 URL。
-    - **開機前修復訊息** - 設定開機前修復訊息會向使用者顯示。 從下列選項進行選擇：
-        - **使用預設修復訊息及 URL**
-        - **使用空白修復訊息及 URL**
-        - **使用自訂修復訊息**
-        - **使用自訂修復 URL**
-
+  - **開機前修復訊息** - 設定開機前修復訊息會向使用者顯示。 從下列選項進行選擇：
+    - **使用預設修復訊息及 URL**
+    - **使用空白修復訊息及 URL**
+    - **使用自訂修復訊息**
+    - **使用自訂修復 URL**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>BitLocker 固定式資料磁碟機設定
 
 - **不受 BitLocker 保護的固定式資料磁碟機的寫入權限** - 啟用時，必須在所有固定式或內建的資料磁碟機中啟用 BitLocker 保護，才能進行寫入。
 - **固定式磁碟機修復** - 啟用此設定可控制在未提供必要的啟動資訊時，如何復原受 BitLocker 保護的固定式磁碟機。
-    - **資料修復代理程式** - 如果您希望資料修復代理程式能夠與受 BitLocker 保護的固定式磁碟機搭配使用，請啟用此設定。
-    - **使用者的修復密碼建立** - 設定使用者是允許、需要還是不允許產生 48 位數的修復密碼。  
-    - **使用者的修復金鑰建立** - 設定使用者是允許、需要還是不允許產生 256 位元的修復金鑰。
-    - **BitLocker 安裝精靈中的修復選項** - 啟用此設定可防止使用者在開啟 BitLocker 時看到或變更修復選項。
-    - **將 BitLocker 修復資訊儲存到 AD DS** - 啟用在 Active Directory 中儲存 BitLocker 修復資訊的功能。
-    - **AD DS 的 BitLocker 修復資訊** - 設定 BitLocker 修復資訊的哪些部分會儲存在 Active Directory 中。 從下列選項進行選擇：
-        - **備份修復密碼和金鑰封裝**
-        - **只備份修復密碼**
-    - **先將修復資訊儲存在 AD DS 再啟用 BitLocker** - 啟用此設定可阻止使用者開啟 BitLocker，除非裝置已加入網域，且 BitLocker 修復資訊已成功儲存在 Active Directory 中。
+  - **資料修復代理程式** - 如果您希望資料修復代理程式能夠與受 BitLocker 保護的固定式磁碟機搭配使用，請啟用此設定。
+  - **使用者的修復密碼建立** - 設定使用者是允許、需要還是不允許產生 48 位數的修復密碼。  
+  - **使用者的修復金鑰建立** - 設定使用者是允許、需要還是不允許產生 256 位元的修復金鑰。
+  - **BitLocker 安裝精靈中的修復選項** - 啟用此設定可防止使用者在開啟 BitLocker 時看到或變更修復選項。
+  - **將 BitLocker 修復資訊儲存到 AD DS** - 啟用在 Active Directory 中儲存 BitLocker 修復資訊的功能。
+  - **AD DS 的 BitLocker 修復資訊** - 設定 BitLocker 修復資訊的哪些部分會儲存在 Active Directory 中。 從下列選項進行選擇：
+    - **備份修復密碼和金鑰封裝**
+    - **只備份修復密碼**
+  - **先將修復資訊儲存在 AD DS 再啟用 BitLocker** - 啟用此設定可阻止使用者開啟 BitLocker，除非裝置已加入網域，且 BitLocker 修復資訊已成功儲存在 Active Directory 中。
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>BitLocker 抽取式資料磁碟機設定
 
@@ -173,6 +156,8 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 使用 [Windows Defender 惡意探索防護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)來管理員工所用應用程式並減少受攻擊面。
 
 ### <a name="attack-surface-reduction"></a>攻擊表面縮減
+
+- **標記對 Windows 本機安全性授權子系統進行的認證竊取**
 
 [協助預防搜尋惡意探索程式碼一般感染電腦所使用的動作和應用程式](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)。
 
@@ -187,16 +172,25 @@ Endpoint Protection 設定檔可讓您控制 Windows 10 裝置上的 BitLocker �
 
 #### <a name="rules-to-prevent-script-threats"></a>預防指令碼威脅的規則
 
-封鎖這些以利預防指令碼威脅：
+請封鎖下列項目以協助防止指令碼威脅：
 
 - **混淆的 js/vbs/ps/巨集程式碼**
 - **js/vbs 從網際網路執行裝載下載 (無例外狀況)**
+- **從 PSExec 與 WMI 命令建立的程序**
+- **從 USB 執行的未受信任及未簽署程序**
+- **未符合普遍性、年齡或受信任清單準則的可執行檔**
 
 #### <a name="rules-to-prevent-email-threats"></a>預防電子郵件威脅的規則
 
-封鎖此項目以利預防電子郵件威脅：
+請封鎖下列項目以協助防止電子郵件威脅：
 
 - **執行自電子郵件 (webmail/郵件用戶端) 卸除的可執行檔內容 (exe、dll、ps、js、vbs 等) (沒有例外狀況)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>可預防勒索軟體的規則
+- **進階勒索軟體保護**
+
+> [!TIP]
+> [使用 Windows Defender 惡意探索防護來減少受攻擊面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) \(英文\) 提供有關這些規則的更多詳細資料。
 
 #### <a name="attack-surface-reduction-exceptions"></a>攻擊表面縮減例外狀況
 
@@ -236,7 +230,7 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 #### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender 資訊安全中心應用程式和通知
 
-封鎖使用者存取 Windows Defender 資訊安全中心應用程式的不同區域。 隱藏區段也會封鎖相關通知。
+封鎖使用者對「Windows Defender 資訊安全中心」應用程式之各種區域的存取。 隱藏區段也會封鎖相關通知。
 
 - **病毒與威脅防護**
 - **裝置效能與健全狀況**
@@ -247,7 +241,7 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 #### <a name="it-contact-information"></a>IT 連絡人資訊
 
-提供 IT 連絡人資訊，顯示在 Windows Defender 資訊安全中心應用程式和應用程式通知中。 您可以選擇 [Display in app and in notifications] (在應用程式和通知中顯示)、[Display only in app] (只在應用程式中顯示)、[Display only in notifications] (只在通知中顯示) 或 [Don't display] (不顯示)。 您必須定義 **IT 組織名稱**以及至少一個下列連絡選項：
+提供要顯示在「Windows Defender 資訊安全中心」應用程式和應用程式通知中的 IT 連絡人資訊。 您可以選擇 [Display in app and in notifications] \(在應用程式和通知中顯示)、[Display only in app] \(只在應用程式中顯示)、[Display only in notifications] \(只在通知中顯示) 或 [Don't display] \(不顯示)。 您必須定義 **IT 組織名稱**，以及至少下列其中一個連絡選項：
 
 - **IT 部門電話號碼或 Skype 識別碼**
 - **IT 部門電子郵件地址**
@@ -255,4 +249,4 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 ## <a name="next-steps"></a>接下來的步驟
 
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+若要將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。

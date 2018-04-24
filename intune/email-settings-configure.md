@@ -1,27 +1,27 @@
 ---
-title: "如何設定 Microsoft Intune 電子郵件設定"
-titleSuffix: 
-description: "了解如何設定 Microsoft Intune，以建立您管理的裝置上與公司電子郵件的連線。"
-keywords: 
+title: 如何設定 Microsoft Intune 電子郵件設定
+titleSuffix: ''
+description: 了解如何設定 Microsoft Intune，以建立您管理的裝置上與公司電子郵件的連線。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定電子郵件設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 電子郵件設定檔可以用來為您管理的裝置設定連線所需的設定，並與公司電子郵件同步。 如此有助於確保所有裝置之間皆有標準的設定，且有助於減少不知道正確的電子郵件設定的使用者，致電支援電話。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-device-profile-containing-email-settings"></a>建立內含電子郵件設定的裝置設定檔
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [裝置設定]。
 2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
 3. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
