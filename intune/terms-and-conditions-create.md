@@ -1,29 +1,29 @@
 ---
-title: "設定 Microsoft Intune 中的條款及條件"
-titlesuffix: 
-description: "設定使用者會在 Intune 公司入口網站中看到的條款及條件。"
-keywords: 
+title: 設定 Microsoft Intune 中的條款及條件
+titlesuffix: ''
+description: 設定使用者會在 Intune 公司入口網站中看到的條款及條件。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 550d9c457335f212f0b60c16249e45f22f5baaf5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>管理貴公司的使用者存取條款及條件
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 身為 Intune 系統管理員，您可以要求使用者必須先接受公司的條款及條件，然後才能使用公司入口網站來註冊他們的裝置並存取資源 (例如公司應用程式和電子郵件)。 條款及條件的設定是選擇性的。
 

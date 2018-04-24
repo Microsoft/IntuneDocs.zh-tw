@@ -1,30 +1,29 @@
 ---
-title: "驗證您的應用程式保護原則設定"
+title: 驗證您的應用程式保護原則設定
 titleSuffix: Microsoft Intune
-description: "了解如何測試您的應用程式保護原則已正確設定和運作。"
-keywords: 
+description: 了解如何測試您的應用程式保護原則已正確設定和運作。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 980773eb59553c492ac338808476cfb55f2ddfb8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ddafe6037cce73c1eca82f2bc78c6197aff9acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何驗證您的應用程式保護原則設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 驗證應用程式保護原則已正確設定和運作。 本指南適用於 Azure 入口網站的應用程式保護原則。
 
@@ -38,7 +37,7 @@ ms.lasthandoff: 03/05/2018
 
 - 這些使用者具備應用程式保護的授權嗎？
 - 使用者具備 O365 授權嗎？
-- 每個使用者之應用程式保護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入 (Not checked in)]。
+- 每個使用者之應用程式保護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。
 
 #### <a name="user-app-protection-status"></a>使用者應用程式保護的狀態
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
@@ -52,7 +51,7 @@ ms.lasthandoff: 03/05/2018
 ### <a name="what-to-do"></a>解決方式
 以下是要根據使用者狀態所採取的動作︰
 
-- 如果使用者未獲應用程式保護授權，請指派 Intune 授權給使用者。
+- 若使用者未獲應用程式保護授權，請指派 Intune 授權給使用者。
 - 如果使用者不具有 O365 授權，替使用者取得授權。
 - 如果使用者的應用程式列為 [未簽入]，請確定您為該應用程式設定的應用程式保護原則正確。
 - 請確認這些條件會套用到所有需要套用應用程式保原則的使用者。

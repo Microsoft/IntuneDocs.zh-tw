@@ -1,28 +1,28 @@
 ---
-title: "在 Microsoft Intune - Azure 中建立憑證設定檔 | Microsoft Docs"
-description: "針對您的裝置，設定 SCEP 或 PKCS 憑證環境來新增或建立憑證設定檔、匯出公開憑證、在 Azure 入口網站中建立設定檔，然後將 SCEP 或 PKCS 指派給 Azure 入口網站之 Microsoft Intune 中憑證設定檔"
-keywords: 
+title: 在 Microsoft Intune - Azure 中建立憑證設定檔 | Microsoft Docs
+description: 針對您的裝置，設定 SCEP 或 PKCS 憑證環境來新增或建立憑證設定檔、匯出公開憑證、在 Azure 入口網站中建立設定檔，然後將 SCEP 或 PKCS 指派給 Azure 入口網站之 Microsoft Intune 中憑證設定檔
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 當您授與使用者透過 VPN、Wi-Fi 或電子郵件設定檔存取公司資源的權限時，您可以使用憑證來驗證這些連線。 當您使用憑證時，不需要輸入使用者名稱和密碼來驗證連線
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 03/08/2018
 先建立受信任的憑證設定檔，才能建立 SCEP 或 PKCS 憑證設定檔。 每個裝置平台都需要一個受信任的憑證設定檔以及 SCEP 或 PKCS 設定檔。 針對每個裝置平台，建立受信任憑證的步驟皆相似。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [裝置設定]。
 2. 在 [裝置設定] 窗格中，選擇 [管理] >  [設定檔]。
 3. 在 [設定檔] 窗格中，選擇 [建立設定檔]。

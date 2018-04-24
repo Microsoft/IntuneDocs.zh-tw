@@ -1,25 +1,25 @@
 ---
-title: "將條件式存取移轉至 Azure 入口網站"
+title: 將條件式存取移轉至 Azure 入口網站
 titlesuffix: Microsoft Intune
-description: "將您先前在 Intune 傳統入口網站中建立的條件式存取原則重新指派到 Azure 入口網站。"
-keywords: 
+description: 將您先前在 Intune 傳統入口網站中建立的條件式存取原則重新指派到 Azure 入口網站。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -183,8 +183,8 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 
 在 Azure 入口網站中重新指派條件式存取原則之後，請務必逐漸停用先前在 Intune 傳統入口網站中建立的條件式存取原則。 此外，您可能也需要使用相同的安全性群組，以套用在 Azure 入口網站中建立的條件式存取原則。
 
-> [!NOTE] 
-    > 請先參閱本主題開頭的[開始之前](#before-you-begin)一節，再停用 Intune 傳統入口網站中的條件式存取原則。
+> [!NOTE]
+> 請先參閱本主題開頭的[開始之前](#before-you-begin)一節，再停用 Intune 傳統入口網站中的條件式存取原則。
 
 ### <a name="to-disable-the-conditional-access-policies"></a>停用條件式存取原則
 

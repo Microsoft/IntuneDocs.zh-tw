@@ -1,29 +1,29 @@
 ---
-title: "從備份還原受 Intune 管理的 iOS 裝置"
-description: "提供指引給使用者，說明從備份還原後如何重新註冊其裝置。"
-keywords: "還原, 受管理, iOS"
-author: barlanmsft
-ms.author: barlan
+title: 從備份還原受 Intune 管理的 iOS 裝置
+description: 提供指引給使用者，說明從備份還原後如何重新註冊其裝置。
+keywords: 還原, 受管理, iOS
+author: lenewsad
+ms.author: lanewsad
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2270e19ab2f45d7f3636226709b8a0fbea075ed0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2c2a35a7faa022ab2b9b095d4a08075e1c338c70
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>從備份還原受 Intune 管理的 iOS 裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您或您的使用者有時必須從備份還原 iOS 裝置，例如當使用者取得新裝置時。 本主題說明為了在還原裝置後設定 Intune 管理所可能必須採取的其他步驟。
 

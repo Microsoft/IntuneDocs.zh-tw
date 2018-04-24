@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Managed Browser 是一個網頁瀏覽應用程式，您可以在組織中使用 Microsoft Intune 來部署此應用程式。 受管理的瀏覽器原則會設定允許清單或封鎖清單，以限制受管理瀏覽器的使用者可瀏覽的網站。
 
@@ -99,52 +99,52 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>適用於允許和封鎖 URL 的 URL 格式
 使用下列資訊，來了解您在允許和封鎖清單中指定 URL 時可使用的允許格式與萬用字元：
 
--   您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (**&#42;**)。
+- 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (**&#42;**)。
 
--   確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
+- 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
 
--   您可以在位址中指定連接埠號碼。 如果未指定連接埠號碼，將使用下列值：
+- 您可以在位址中指定連接埠號碼。 如果未指定連接埠號碼，將使用下列值：
 
-    -   針對 http 使用連接埠 80
+  -   針對 http 使用連接埠 80
 
-    -   針對 https 使用連接埠 443
+  -   針對 https 使用連接埠 443
 
-    不支援對連接埠號碼使用萬用字元。 例如，不支援 **http&colon;//www&period;contoso&period;com:*;** 與 **http&colon;//www&period;contoso&period;com: /*;**。
+  不支援對連接埠號碼使用萬用字元。 例如，不支援 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 和 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>。
 
--   使用下表來了解您在指定 URL 時可使用的允許模式：
+- 使用下表來了解您在指定 URL 時可使用的允許模式：
 
-|URL|詳細資料|相符項|不符合|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|比對單一頁面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|比對單一頁面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|比對所有以 www.contoso.com 開頭的 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|比對 contoso.com 下的所有子網域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|比對單一資料夾|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|使用連接埠號碼來比對單一頁面|http://www.contoso.com:80||
-    |https://www.contoso.com|比對單一且安全的頁面|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|符合單一資料夾及所有子資料夾|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     詳細資料                      |                                                相符項                                                |                                不符合                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              比對單一頁面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              比對單一頁面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | 比對所有以 www.contoso.com 開頭的 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     比對 contoso.com 下的所有子網域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             比對單一資料夾              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  使用連接埠號碼來比對單一頁面   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          比對單一且安全的頁面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    符合單一資料夾及所有子資料夾    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   以下是一些您無法指定的輸入範例：
+- 以下是一些您無法指定的輸入範例：
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP 位址
+  - IP 位址
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>如何解決允許和封鎖清單間的衝突
 如果將多個受管理的瀏覽器原則部署到裝置且設定發生衝突，則會針對衝突評估這兩種模式 (允許或封鎖) 和 URL 清單。 一旦發生衝突，會採用下列行為：

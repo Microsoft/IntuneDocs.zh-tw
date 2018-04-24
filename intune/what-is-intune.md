@@ -1,36 +1,36 @@
 ---
-title: "Azure 入口網站中的 Intune 簡介"
-titlesuffix: 
-description: "在 Azure 入口網站中，現在已可使用 Microsoft Intune。 在 Azure 入口網站中取得 Intune 的基本概念。"
-keywords: 
+title: Azure 入口網站中的 Intune 簡介
+titlesuffix: ''
+description: 在 Azure 入口網站中，現在已可使用 Microsoft Intune。 在 Azure 入口網站中取得 Intune 的基本概念。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 入口網站之 Microsoft Intune 的簡介
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 現在就如同其他 Azure 服務，已可在 Azure 入口網站中使用。 選取 Azure 入口網站內的 [Intune]，您就能管理組織的行動裝置、電腦及應用程式。
 
->[!NOTE] 
+> [!NOTE]
 > 如果您使用過舊版的 Microsoft Intune，以下資訊會對您有幫助：
-    * [我的功能在 Azure 的什麼位置？](ui-changes.md)此參考會向您顯示因為移至 Azure 而變更的特定工作流程與 UI。
-    * [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)說明移至 Azure Active Directory 安全性群組對群組管理的含意。
+>     * [我的功能在 Azure 的什麼位置？](ui-changes.md)此參考會向您顯示因為移至 Azure 而變更的特定工作流程與 UI。
+>     * [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)說明移至 Azure Active Directory 安全性群組對群組管理的含意。
 
 Azure 入口網站中的 Microsoft Intune 體驗重點包括：
 

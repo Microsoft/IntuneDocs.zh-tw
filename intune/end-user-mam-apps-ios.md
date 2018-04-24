@@ -1,28 +1,28 @@
 ---
-title: "使用應用程式保護原則的 iOS 應用程式"
-description: "本主題說明當 iOS 應用程式交由應用程式保護原則管理時的行為。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用應用程式保護原則的 iOS 應用程式
+description: 本主題說明當 iOS 應用程式交由應用程式保護原則管理時的行為。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0a9d17f8066ddd16c06322cf9cc64457daff87f1
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 955120228289da3bac7cf013955effeee0cd7579
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
  針對已套用應用程式保護原則的應用程式，本主題說明使用者的使用體驗。 只有在工作環境中使用應用程式時，才會套用應用程式保護原則；例如，當使用者使用工作帳戶來存取應用程式的情況，或是存取公司商務用 OneDrive 地點中所儲存檔案的情況。
 
@@ -64,4 +64,4 @@ ms.lasthandoff: 02/19/2018
 如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 帳戶隨即顯示，接著您可以選擇想要移除的帳戶。
 
 ## <a name="next-steps"></a>接下來的步驟
-[當 Android 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-android.md)
+[當 Android 應用程式交由應用程式防護原則管理時的行為](end-user-mam-apps-android.md)

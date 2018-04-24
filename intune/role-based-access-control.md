@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
 
@@ -26,7 +26,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 - **角色定義**：角色的名稱、其所管理的資源，以及針對每個資源授與的權限。
 - **成員**：授與權限的使用者群組。
-- **範圍**：成員可以管理的使用者或裝置群組。
+- **範圍**：成員可將其設為應用程式或原則部署目標或執行遠端工作的使用者或裝置群組。
 - **指派**：當定義、成員及範圍設定完成之後，便完成了指派。
 
 ![Intune RBAC 範例](./media/intune-rbac-1.PNG)

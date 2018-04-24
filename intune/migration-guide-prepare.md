@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
@@ -55,23 +55,23 @@ ms.lasthandoff: 03/16/2018
 
 ### <a name="what-is-your-device-security-policy"></a>您的行動裝置安全性原則是什麼？
 
--   您需要裝置層級加密嗎？
+- 您需要裝置層級加密嗎？
 
--   您目前的裝置密碼/PIN 碼長度是多少？
+- 您目前的裝置密碼/PIN 碼長度是多少？
 
--   您需要停用裝置功能，或限制特定裝置行為嗎？ 您可以使用裝置組態設定檔控制各種平台特定的設定，例如：
-      - 停用數位相機
-      - 鎖定在單一應用程式模式<br/>
+- 您需要停用裝置功能，或限制特定裝置行為嗎？ 您可以使用裝置組態設定檔控制各種平台特定的設定，例如：
+    - 停用數位相機
+    - 鎖定在單一應用程式模式<br/>
 
--   您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
+- 您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
   - Intune 可使用資源存取設定檔為已註冊的裝置佈建憑證。
-    -   您需要支援何種公開金鑰基礎結構 (PKI)？
-<br></br>
--   您需要在裝置或應用程式層級支援虛擬私人網路 (VPN) 嗎？
+  -   您需要支援何種公開金鑰基礎結構 (PKI)？
+  <br></br>
+- 您需要在裝置或應用程式層級支援虛擬私人網路 (VPN) 嗎？
 
-    -   Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
-<br/><br/>
--   可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
+  -   Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
+  <br/><br/>
+- 可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
 
 ## <a name="next-steps"></a>接下來的步驟
 閱讀這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。

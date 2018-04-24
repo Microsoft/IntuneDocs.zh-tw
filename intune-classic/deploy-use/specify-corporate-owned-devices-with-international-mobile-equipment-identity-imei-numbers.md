@@ -1,54 +1,56 @@
 ---
-title: "指定 IMEI 編號"
-description: "Microsoft Intune 允許系統管理員匯入行動裝置平台的 IMEI 編號，從而找出公司所擁有的行動裝置"
-keywords: 
+title: 指定 IMEI 編號
+description: Microsoft Intune 允許系統管理員匯入行動裝置平台的 IMEI 編號，從而找出公司所擁有的行動裝置
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9038670a4c0b4bf52868ba739336dd35366eed2f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cdc1e1ac6147903ec6ada30e7a3b42189a228c78
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>使用國際行動設備識別碼 (IMEI) 編碼來指定公司擁有的裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 允許系統管理員使用 IMEI 編號匯入行動裝置平台的 IMEI 編號的國際行動設備識別碼 (IMEI) 編號，從而找出公司擁有的行動裝置。 當裝置在 Intune 中註冊之後，您可以在 [群組]  >  [概觀]  >  [所有裝置] 下檢視 IMEI 編號已經匯入的裝置。 [裝置群組] 會在列出 IMEI 編號已經匯入的裝置時，會在 [擁有權] 資料行中將其標示為**公司**。
 
 1. 在 [Microsoft Intune](https://manage.microsoft.com) 管理主控台中，選擇 [群組] &gt; [所有裝置] &gt; [所有公司預先註冊的裝置] &gt;[依 IMEI (所有平台)]，然後選擇 [新增裝置]。 您可以使用下列兩種方式新增裝置：
 
-    -   **上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。 詳細資料欄位的長度限制為 128 個字元。 
+   - **上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。 詳細資料欄位的長度限制為 128 個字元。 
 
-        |||
-        |-|-|
-        |&lt;IMEI #1&gt;|&lt;裝置 #1 詳細資料&gt;|
-        |&lt;IMEI #2&gt;|&lt;裝置 #2 詳細資料&gt;|
-        在文字編輯器中檢視此 .csv 檔案時，其外觀大致如下：
 
-        ```
-        01234567890123,device details
-        02234567890123,device details
-        ```
+     |                 |                           |
+     |-----------------|---------------------------|
+     | &lt;IMEI #1&gt; | &lt;裝置 #1 詳細資料&gt; |
+     | &lt;IMEI #2&gt; | &lt;裝置 #2 詳細資料&gt; |
 
-    -   **手動新增裝置的詳細資料** - 輸入 IMEI 編號與裝置詳細資料，最多不得超過 15 部裝置。
+     在文字編輯器中檢視此 .csv 檔案時，其外觀大致如下：
+
+     ```
+     01234567890123,device details
+     02234567890123,device details
+     ```
+
+   - **手動新增裝置的詳細資料** - 輸入 IMEI 編號與裝置詳細資料，最多不得超過 15 部裝置。
 
    [詳細資料] 欄位供系統管理之用。 您可以指定詳細資料，以協助識別屬公司擁有的裝置清單中依硬體識別碼列出的裝置。 這項資訊不會傳送到裝置，但會出現在 Intune 主控台中。
 
-2.   選擇 **[下一步]**。
-3.  在 [檢閱裝置] 窗格上，確認匯入之裝置的 IMEI 編碼。 您也可以決定是否要覆寫要重新匯入之 IMEI 編號的**詳細資料**。 您可以取消核取 [覆寫] 核取方塊，以保留目前的詳細資料。 選擇 **[完成]** 匯入 IMEI 編碼。
-4.  匯入的 IMEI 編號與描述會新增到 [依 IMEI (所有平台)] 清單中。
+2. 選擇 **[下一步]**。
+3. 在 [檢閱裝置] 窗格上，確認匯入之裝置的 IMEI 編碼。 您也可以決定是否要覆寫要重新匯入之 IMEI 編號的**詳細資料**。 您可以取消核取 [覆寫] 核取方塊，以保留目前的詳細資料。 選擇 **[完成]** 匯入 IMEI 編碼。
+4. 匯入的 IMEI 編號與描述會新增到 [依 IMEI (所有平台)] 清單中。
 
 > [!IMPORTANT]
 > 如果您要匯入 Android 裝置的 IMEI 編號，請注意有些 Android 裝置可以有多個 IMEI 編號。 如果您匯入的 IMEI 編號不是裝置向 Intune 回報的 IMEI，則會將該裝置分類為個人裝置，而不是公司擁有的裝置。

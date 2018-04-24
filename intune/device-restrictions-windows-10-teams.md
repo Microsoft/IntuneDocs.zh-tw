@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 團隊版的 Windows Intune 裝置限制"
-titlesuffix: 
-description: "了解執行適用於 Windows 10 團隊版之裝置的裝置限制。"
-keywords: 
+title: Windows 10 團隊版的 Windows Intune 裝置限制
+titlesuffix: ''
+description: 了解執行適用於 Windows 10 團隊版之裝置的裝置限制。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5d1198e8332645297ab0739bb0346c573877f0c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 團隊版裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 團隊版的裝置進行設定。
 

@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 原則設定"
-description: "使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。"
-keywords: 
+title: Windows 10 原則設定
+description: 使用本主題中所列的原則設定，以協助您設定已註冊之 Windows 10 桌上型和 Windows 10 行動裝置版裝置的內建與自訂設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題包含的資訊可協助您了解可用來管理 Windows 10 裝置的 Intune 原則設定。 請搭配閱讀本主題以及[透過 Microsoft Intune 原則管理裝置上的設定和功能](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)中的程序。
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 12/12/2017
 |設定名稱|其他資訊 (如有需要)|
 |----------------|----------------------|
 |**需要密碼才可解除鎖定裝置**|-|
-|**所需的密碼類型**|指定密碼必須為英數字元，還是只能是數字|
+|**必要的密碼類型**|指定密碼必須為英數字元，還是只能是數字|
 |**需要的密碼類型** - **最小字元集數**| 指定密碼中必須包含多少字元集 (小寫字母、大寫字母、數字與符號)|
 |**密碼長度下限**|僅適用於 Windows 10 行動裝置版|
 |**抹除裝置前允許的重複登入失敗次數**。|若為執行 Windows 10 的裝置︰如果裝置已啟用 BitLocker，將會在登入失敗達您所指定的次數時置於 BitLocker 復原模式。 如果裝置未啟用 BitLocker，便不會套用此設定。<br>若為執行 Windows 10 行動裝置版的裝置︰登入失敗達您所指定的次數時，就會抹除裝置。|
@@ -156,7 +156,7 @@ ms.lasthandoff: 12/12/2017
 |**允許自動連線到免費的 Wi-Fi 熱點**|讓裝置自動連線到免費 Wi-Fi 熱點並自動接受任何連線條款和條件|
 |**允許地理位置**|指定裝置是否可以使用定位服務資訊|
 |**允許 NFC**|允許裝置使用它的近距離無線通訊功能|
-|**允許藍牙**|-|
+|**允許藍芽**|-|
 |**允許可透過藍牙搜尋的模式**|讓其他藍芽啟用的裝置探索此裝置|
 |**允許藍牙通知**|允許裝置透過藍牙接收廣告|
 |**允許重設手機**|控制使用者是否可以將裝置重設成出廠預設值|
@@ -192,7 +192,7 @@ ms.lasthandoff: 12/12/2017
 |**掃描封存檔**|允許 Defender 掃描封存的檔案，例如 .zip 或 .cab 檔案。|
 |**掃描電子郵件訊息**|允許 Defender 在電子郵件訊息到達裝置時加以掃描|
 |**掃描卸除式磁碟機**|讓 Defender 掃描 USB 隨身碟等卸除式磁碟機|
-|**掃描對應的網路磁碟機**|讓 Defender 在對應的網路磁碟機上掃描檔案。<br>如果磁碟機上的檔案是唯讀，Defender 將無法移除在其中發現的任何惡意程式碼。|
+|**掃描對應的網路磁碟機**|讓 Defender 在對應的網路磁碟機上掃描檔案。<br>如果磁碟機上的檔案是唯讀檔案，Defender 將無法移除在那些檔案中找到的任何惡意程式碼。|
 |**掃描從網路共用資料夾開啟的檔案**|讓 Defender 在共用網路磁碟機上掃描檔案 (例如，從 UNC 路徑存取者)。<br>如果磁碟機上的檔案是唯讀，Defender 將無法移除在其中發現的任何惡意程式碼。|
 |**簽章更新間隔**|指定 Defender 檢查新簽章檔案的間隔。|
 |**允許雲端保護**|允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 此資訊未來可用於改善本服務。|
@@ -210,5 +210,5 @@ ms.lasthandoff: 12/12/2017
 |**允許自動更新**|允許自動更新。 設定下列其中一項設定來控制更新行為：<br />**通知下載**<br />**在維護時間自動安裝**<br />**在維護時間自動安裝並重新開機**<br />**在排程時間自動安裝並重新開機**︰請注意，選取這個選項時，您也可以進行下列設定：[對使用者隱藏通知] 和 [定義排程更新的安裝日]。<br>(僅限 Windows 10 Desktop)|
 |**允許發行前版本功能**|可讓 Microsoft 將發行前版本設定和功能部署至 Windows 10 裝置。 您可以選取只允許設定，或安裝所有預先發行的設定與功能。|
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ed6f66747364debd89661d78bcf3b002b1c8a9b6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置合規性政策
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題概述您可用來建立裝置必須遵循的相容性原則步驟，以便視為相容。
 
@@ -56,6 +56,7 @@ ms.lasthandoff: 03/22/2018
 下表列出相容性原則設定及其支援的平台。
 
 -------------
+
 |設定|iOS|Android|Windows|
 |-----|----|-----|-----|
 |需要密碼來解除鎖定行動裝置|iOS 6 和更新版本|Android 4.0 及更新版本 <br>Samsung KNOX 標準 4.0 及更新版本|Windows Phone 8.1 和更新版本|
@@ -79,9 +80,9 @@ ms.lasthandoff: 03/22/2018
 
 選取下列其中一項以深入了解每個平台上支援的相容性設定︰
 > [!div class="op_single_selector"]
-- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows 和 Windows Phone 的合規性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows 和 Windows Phone 的合規性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>接下來的步驟

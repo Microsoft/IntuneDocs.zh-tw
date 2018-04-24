@@ -1,29 +1,29 @@
 ---
-title: "手動新增 Windows 10 公司入口網站應用程式"
+title: 手動新增 Windows 10 公司入口網站應用程式
 titleSuffix: Microsoft Intune
-description: "了解如何手動新增 Windows 10 公司入口網站應用程式。"
-keywords: 
+description: 了解如何手動新增 Windows 10 公司入口網站應用程式。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06ed9395d06e2d64edcedcaadfe819ad03f1d495
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f2c7e449e9931bccd5e736bd09c33e0b42c623e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 終端使用者可以從 Microsoft 網上商店安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果因企業需求而必須指派公司入口網站應用程式，即使尚未整合 Intune 與商務用 Microsoft 網上商店，您仍然可直接從 Intune 手動指派 Windows 10 公司入口網站應用程式。
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 03/12/2018
 
 7. 下載「必要架構」底下的所有套件。 x86、x64 及 ARM 架構都要執行這個步驟，共 12 個套件。
 8. 將公司入口網站應用程式上傳至 Intune 之前，先建立資料夾 (例如：C:&#92;Company Portal)，並以如下結構放置套件︰
-  - 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 Dependencies 子資料夾。  
+   - 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 Dependencies 子資料夾。  
 
-    ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](./media/Win10CP-Dependencies-save.png)
+     ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](./media/Win10CP-Dependencies-save.png)
 
-  - 將相依性套件放在 *Dependencies* 資料夾中。 
+   - 將相依性套件放在 *Dependencies* 資料夾中。 
 
      > [!NOTE]
      > 如果相依性套件未依正確方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並顯示錯誤。
@@ -81,18 +81,19 @@ ms.lasthandoff: 03/12/2018
 
 以下是以這種方式簽署和指派應用程式的方法：
 
-1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載 Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請前往 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
+1. 從 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下載「Microsoft Intune Windows 10 公司入口網站應用程式簽署指令碼」。  此指令碼需要在主機電腦上安裝適用於 Windows 10 的 Windows SDK。 若要下載適用於 Windows 10 的 Windows SDK，請瀏覽 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
 2. 從商務用 Microsoft 網上商店下載 Windows 10 公司入口網站應用程式，詳如前述。  
 3. 搭配輸入參數執行詳載於指令碼標頭內的指令碼，簽署 Windows 10 公司入口網站應用程式 (摘錄於下)。 相依性不需要傳遞至指令碼。 這些只有在將應用程式上傳至 Intune 管理主控台時才需要。
 
-|參數 | 說明|
-| ------------- | ------------- |
-|InputWin10AppxBundle |來源 appxbundle 檔案所在路徑。 |
-|OutputWin10AppxBundle |已簽署之 appxbundle 檔案的輸出路徑。  Win81Appx Windows 8.1 或 Windows Phone 8.1 公司入口網站 (.APPX) 檔案所在路徑。|
-|PfxFilePath |Symantec 企業行動程式碼簽署憑證 (.PFX) 的路徑。 |
-|PfxPassword| Symantec 企業行動程式碼簽署憑證的密碼。 |
-|PublisherId |企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。|
-|SdkPath | 適用於 Windows 10 之 Windows SDK 的根資料夾路徑。 這個引數是選擇性，且預設值為 ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       參數       |                                                                        說明                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  來源 appxbundle 檔案所在路徑。                                                  |
+| OutputWin10AppxBundle | 已簽署之 appxbundle 檔案的輸出路徑。  Win81Appx Windows 8.1 或 Windows Phone 8.1 公司入口網站 (.APPX) 檔案所在路徑。 |
+|      PfxFilePath      |                                       Symantec 企業行動程式碼簽署憑證 (.PFX) 的路徑。                                        |
+|      PfxPassword      |                                         Symantec 企業行動程式碼簽署憑證的密碼。                                          |
+|      PublisherId      |          企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。           |
+|        SdkPath        |     適用於 Windows 10 之 Windows SDK 的根資料夾路徑。 這個引數是選擇性，且預設值為 ${env:ProgramFiles(x86)}\Windows Kits\10     |
+
 指令碼執行完成時，會輸出簽署版的 Windows 10 公司入口網站應用程式。 然後，您可以透過 Intune 將應用程式經過簽署的版本指派為 LOB 應用程式，這會將目前指派的版本升級至此新應用程式。  
 
 ## <a name="next-steps"></a>接下來的步驟

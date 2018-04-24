@@ -1,29 +1,29 @@
 ---
-title: "保護 Dynamics CRM Online"
-description: "使用條件式存取保護與控制對 Dynamics CRM Online 的存取。"
-keywords: 
+title: 保護 Dynamics CRM Online
+description: 使用條件式存取保護與控制對 Dynamics CRM Online 的存取。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 限制對 Dynamics CRM Online 的存取
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以從 iOS 和 Android 裝置使用 Microsoft Intune 條件存取，以控制對 Microsoft Dynamics CRM Online 的存取。  Intune 條件式存取有兩個元件：
 * [裝置合規性原則](introduction-to-device-compliance-policies-in-microsoft-intune.md)，裝置必須遵循此原則才算符合規範。
@@ -60,30 +60,30 @@ ms.lasthandoff: 10/10/2017
 
 如果使用者同時隸屬於這兩個群組，則將免套用原則。
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步驟 2：設定及部署相容性原則
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步驟 2：設定及部署合規性政策
 [建立](create-a-device-compliance-policy-in-microsoft-intune.md)合規性原則並[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到將受此原則影響的所有裝置。 這些是目標群組中的使用者所使用的所有裝置。
 
 > [!NOTE]
 > 雖然合規性原則會部署到 Intune 群組，但條件式存取原則以 Azure Active Directory 安全性群組為目標。
 
 > [!IMPORTANT]
-> 如果您尚未部署相容性原則，則會將裝置視為相容。
+> 如果您尚未部署合規性政策，則會將裝置視為符合規範。
 
 當您就緒時，請繼續執行步驟 3。
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>步驟 3︰設定 Dynamics CRM 原則
 接著，設定原則要求只有受管理和相容的裝置才可以存取 Dynamics CRM。 這項原則會儲存在 Azure Active Directory。
 
-1.  在 Intune 管理主控台中，選擇 [原則] > [條件式存取] > [Dynamics CRM Online 原則]。
+1. 在 Intune 管理主控台中，選擇 [原則] > [條件式存取] > [Dynamics CRM Online 原則]。
 
-  ![Dynamics CRM Online 條件式存取原則頁面的螢幕擷取畫面](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Dynamics CRM Online 條件式存取原則頁面的螢幕擷取畫面](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  選擇 [啟用條件式存取] 原則。
-3.  在 [應用程存取] 下，您可以選擇將條件式存取原則套用至：
-  * **iOS**
-  * **Android**
-4.  選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
-5.  選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
-6.  完成之後，請選擇 [儲存]。
+2. 選擇 [啟用條件式存取] 原則。
+3. 在 [應用程存取] 下，您可以選擇將條件式存取原則套用至：
+   * **iOS**
+   * **Android**
+4. 選擇 [目標群組] 下方的 [修改]，選取要套用原則的 Azure Active Directory 安全性群組。 您可以選擇以所有使用者或僅一群特定的使用者為目標。
+5. 選擇性地選擇 [免套用的群組] 下方的 [修改]，選取免套用此原則的 Azure Active Directory 安全性群組。
+6. 完成之後，請選擇 [儲存]。
 
 您現在已設定 Dynamics CRM 的條件式存取。 您不需部署條件式存取原則，它會立即生效。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>監視相容性及條件式存取原則
@@ -95,7 +95,7 @@ ms.lasthandoff: 10/10/2017
 * **不符合規範的裝置**。 這些裝置受到封鎖而無法存取 Dynamics CRM。
 * **已登錄了 AAD 並符合規範的裝置**。 這些裝置可以存取 Dynamics CRM。
 
-##  <a name="next-steps"></a>後續步驟
+##  <a name="next-steps"></a>接下來的步驟
 * [限制 Exchange Online 的存取](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
 * [限制 Exchange 內部部署 的存取](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題提供裝置註冊問題的疑難排解建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)，以尋找更多方法來取得協助。
 
@@ -87,9 +87,9 @@ ms.lasthandoff: 03/22/2018
 8.  視需要移除裝置，例如不再使用的裝置，或具有不正確定義的裝置。
 
 > [!NOTE]
-
+> 
 > 您可以如[使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述，使用裝置註冊管理員帳戶來避免達到裝置註冊上限。
->
+> 
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至裝置註冊管理員帳戶的使用者帳戶將無法完成註冊。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
@@ -154,7 +154,7 @@ ms.lasthandoff: 03/22/2018
 **問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
-**解決方式︰**透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個頂層網域以提供使用者 UPN 尾碼 (例如 @contoso.com 或 @fabrikam.com) 的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體。 現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 **SupportMultipleDomain** 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+<strong>解決方式︰</strong>透過 AD FS 2.0 利用單一登入 (SSO)，而且在其組織中有多個頂層網域以提供使用者 UPN 尾碼 (例如 @contoso.com 或 @fabrikam.com) 的 Microsoft Office 365 客戶，必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體。 現在有 [AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 <strong>SupportMultipleDomain</strong> 切換運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的問題
@@ -195,27 +195,27 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 1. 在裝置上啟動 Smart Manager 應用程式。
 
-  ![選取裝置上的 Smart Manager 圖示](./media/smart-manager-app-icon.png)
+   ![選取裝置上的 Smart Manager 圖示](./media/smart-manager-app-icon.png)
 
 2. 選擇 [電池] 磚。
 
-  ![選取 [電池] 磚](./media/smart-manager-battery-tile.png)
+   ![選取 [電池] 磚](./media/smart-manager-battery-tile.png)
 
 3. 在 [應用程式省電] 或 [應用程式最佳化] 下方，選取 [詳細資料]。
 
-  ![在 [應用程式省電] 或 [應用程式最佳化] 下方選取 [詳細資料]](./media/smart-manager-app-power-saving-detail.png)
+   ![在 [應用程式省電] 或 [應用程式最佳化] 下方選取 [詳細資料]](./media/smart-manager-app-power-saving-detail.png)
 
 4. 從應用程式清單中選擇 [公司入口網站]。
 
-  ![從應用程式清單中選取 [公司入口網站]](./media/smart-manager-company-portal.png)
+   ![從應用程式清單中選取 [公司入口網站]](./media/smart-manager-company-portal.png)
 
 5. 選擇 [關閉]。
 
-  ![從 [應用程式最佳化] 對話方塊中選取 [關閉]](./media/smart-manager-app-optimization-turned-off.png)
+   ![從 [應用程式最佳化] 對話方塊中選取 [關閉]](./media/smart-manager-app-optimization-turned-off.png)
 
 6. 在 [應用程式省電] 或 [應用程式最佳化] 下方，確認公司入口網站已關閉。
 
-  ![確認公司入口網站已關閉](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![確認公司入口網站已關閉](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗

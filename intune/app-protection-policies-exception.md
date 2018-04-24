@@ -1,29 +1,29 @@
 ---
-title: "應用程式的資料傳輸原則例外狀況"
+title: 應用程式的資料傳輸原則例外狀況
 titleSuffix: Microsoft Intune
-description: "建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。"
-keywords: 
+description: 建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 身為系統管理員，您可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。 例外狀況可讓您明確選擇哪些未受管理的應用程式可以與受管理應用程式互相傳輸資料。 IT 必須信任您包含在例外狀況清單中的未受管理應用程式。 
 
@@ -39,6 +39,10 @@ ms.lasthandoff: 03/17/2018
 
 ## <a name="android-data-transfer-exceptions"></a>Android 資料傳輸例外狀況
 對於以 Android 為目標的原則，您可以依應用程式套件名稱設定資料傳輸例外狀況。 您可以檢查 **Google Play** 商店頁面，尋找您想要新增例外狀況的應用程式，以尋找應用程式套件名稱。 如需 Android 資料傳輸例外狀況的其他資訊，請參閱 [Android 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。
+
+
+>[!TIP]
+> 您可以藉由瀏覽至 Google Play 商店上的應用程式，找到應用程式的套件識別碼。 套件識別碼被包含在應用程式頁面的 URL 中。 例如，Microsoft Word 應用程式的套件識別碼為 **com.microsoft.office.word**。
 
 ### <a name="example"></a>範例
 藉由新增 **Webex** 套件作為 MAM 資料傳輸原則的例外狀況，會允許受管理 Outlook 電子郵件訊息內的 Webex 連結直接在 Webex 應用程式中開啟。 其他未受管理應用程式中的資料傳輸仍會受到限制。

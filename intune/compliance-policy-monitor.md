@@ -1,27 +1,30 @@
 ---
-title: "監視 Microsoft Intune 裝置相容性原則"
-titlesuffix: 
-description: "使用裝置相容性儀表板來監視整體裝置相容性、檢視報表，以及逐條原則與逐項設定地檢視裝置相容性。"
-keywords: 
+title: 監視 Microsoft Intune 裝置相容性原則
+titlesuffix: ''
+description: 使用裝置相容性儀表板來監視整體裝置相容性、檢視報表，以及逐條原則與逐項設定地檢視裝置相容性。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
 相容性報表可協助管理員分析其組織內裝置的相容性狀態，並針對組織內使用者遇到的相容性相關問題快速進行疑難排解。 您可以檢視裝置的整體合規性狀態、個別設定的合規性狀態、個別政策的合規性狀態，向下切入個別裝置，檢視會影響裝置的特定設定和政策。
+
+> [!NOTE]
+> 我們正於三月的 Intune 服務中，根據您的意見反應導入一些安全性增強功能。 視您的合規性原則設定方式而定，您可能需要採取行動來避免使用者失去電子郵件存取權。 如需詳細資料，請參閱[即將推出的安全性增強功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) \(英文\)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -29,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 
 1.  移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。
 
-2.  選擇左功能表中的 [所有服務]，然後在文字方塊篩選中鍵入 **Intune**。
+2.  選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
 3.  選擇 [Intune] &gt; [裝置合規性] &gt; [概觀]，然後 [裝置合規性儀表板] 隨即開啟。
 
@@ -124,6 +127,19 @@ ms.lasthandoff: 03/08/2018
 在裝置上按一下，開啟所選裝置的 [裝置] 窗格，這會提供該裝置所套用的裝置相容性原則設定詳細資訊。
 
 當您按一下裝置政策設定本身，可以看到裝置合規性政策的名稱，這個名稱源自管理員鎖定目標的裝置合規性設定。
+
+### <a name="devices-without-compliance-policy"></a>沒有合規性政策的裝置
+此報告會識別未獲指派任何合規性原則的裝置。 在導入可將所有無合規性原則之裝置標示為「不符合規範」的安全性設定之後，能夠識別這些裝置便相當重要。 接著，您可以將至少一個合規性原則指派給這些裝置。
+
+> [!NOTE]
+> 您可以在 Intune 入口網站中設定新的安全性設定。 選取 [裝置合規性]，然後在 [設定] 底下，選擇 [合規性政策設定]。 接著，使用切換將 [將未指派合規性原則的裝置標記為] 設定為 [符合規範] 或 [不符合規範]。 深入了解 [Intune 服務中的安全性增強功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) \(英文\)。
+
+![顯示 [沒有合規性政策的裝置] 報告的圖像](./media/idc-12.png)
+
+從 [裝置合規性] 儀表板可以找到 [沒有合規性政策的裝置] 圖格，它會顯示所有無合規性原則的裝置、裝置的使用者、合規性狀態，以及裝置模型。
+
+> [!NOTE]
+> 使用者如果已獲指派任何類型的合規性原則，便不會出現在此報告中，不論是使用哪一種裝置平台。 例如，如果您不小心將 Windows 合規性原則指派給具有 Android 裝置的使用者，該裝置便不會出現在此報告中。 不過，Intune 會將該 Android 裝置視為不符合規範。 為了避免發生問題，建議您針對每個裝置平台建立原則，然後將它們部署至所有使用者。
 
 ### <a name="per-policy-device-compliance-report"></a>每一政策的裝置合規性報告
 

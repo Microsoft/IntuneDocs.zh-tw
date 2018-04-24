@@ -14,15 +14,15 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 72a4e977f88a7f397d4f37f723ca1f13c4bc689c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的安全，它可針對惡意程式碼威脅提供即時保護、讓惡意程式碼定義保持在最新狀態，並能自動掃描電腦。 Endpoint Protection 也提供工具，協助您管理和監視惡意程式碼攻擊。
 
@@ -33,11 +33,13 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 ## <a name="choose-when-to-use-endpoint-protection"></a>選擇何時使用 Endpoint Protection
 身為 IT 系統管理員，您的優先要務之一是保護您管理的電腦不受惡意程式碼和病毒威脅。 將 Intune 部署到組織中的 Windows 電腦之前，您應選取下列其中一個選項並設定其相關原則設定，決定如何保護您的電腦：
 
-|若要：|Endpoint Protection 原則設定|詳細資訊|
-|--------------|---------------------------------------|--------------------|
-|只有在未安裝任何協力廠商 Endpoint Protection 應用程式時，才能使用 Microsoft Intune Endpoint Protection。<br /><br />您可以在未安裝協力廠商 Endpoint Protection 應用程式的所有電腦上使用 Microsoft Intune Endpoint Protection。|安裝 Endpoint Protection = **是**<br /><br />啟用 Endpoint Protection = **是**<br /><br />即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection = **否**。|如果偵測到協力廠商 Endpoint Protection 應用程式，將不會安裝 Microsoft Intune Endpoint Protection，而且在先前已安裝的情況下會解除安裝。|
-|即使已安裝協力廠商 Endpoint Protection 應用程式，仍使用 Microsoft Intune Endpoint Protection。<br /><br />透過這種方式，您會同時執行 Microsoft Intune Endpoint Protection 和協力廠商 Endpoint Protection 應用程式。 因為可能發生效能問題，所以不建議使用這項設定。 |安裝 Endpoint Protection = **是**<br /><br />啟用 Endpoint Protection = **是**<br /><br />即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection = **是**|使用時機：<br /><br />-   您想要切換成使用 Microsoft Intune Endpoint Protection。<br />-   您部署將使用 Microsoft Intune Endpoint Protection 的新用戶端。<br />-   您升級將使用 Microsoft Intune Endpoint Protection 的任何用戶端。|
-|使用沒有 Microsoft Intune Endpoint Protection 的 Intune。 相反地，您將依賴協力廠商 Endpoint Protection 應用程式。|安裝 Endpoint Protection = **否**|如果您不使用協力廠商 Endpoint Protection 應用程式，則不建議此設定，因為這可能會讓您的組織電腦暴露於惡意程式碼或其他攻擊之下。<br /><br />Microsoft Intune Endpoint Protection 未安裝，而且在先前已安裝的情況下會解除安裝。|
+
+|                                                                                                                                                                       若要：                                                                                                                                                                        |                                                                                                       Endpoint Protection 原則設定                                                                                                        |                                                                                                                                                  詳細資訊                                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                             只有在未安裝任何協力廠商 Endpoint Protection 應用程式時，才能使用 Microsoft Intune Endpoint Protection。<br /><br />您可以在未安裝協力廠商 Endpoint Protection 應用程式的所有電腦上使用 Microsoft Intune Endpoint Protection。                                              | 安裝 Endpoint Protection = <strong>是</strong><br /><br />啟用 Endpoint Protection = <strong>是</strong><br /><br />即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection = <strong>否</strong>。  |                                                                      如果偵測到協力廠商 Endpoint Protection 應用程式，將不會安裝 Microsoft Intune Endpoint Protection，而且在先前已安裝的情況下會解除安裝。                                                                       |
+| 即使已安裝協力廠商 Endpoint Protection 應用程式，仍使用 Microsoft Intune Endpoint Protection。<br /><br />透過這種方式，您會同時執行 Microsoft Intune Endpoint Protection 和協力廠商 Endpoint Protection 應用程式。 因為可能發生效能問題，所以不建議使用這項設定。 | 安裝 Endpoint Protection = <strong>是</strong><br /><br />啟用 Endpoint Protection = <strong>是</strong><br /><br />即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection = <strong>是</strong> |                        使用時機：<br /><br />-   您想要切換成使用 Microsoft Intune Endpoint Protection。<br />-   您部署將使用 Microsoft Intune Endpoint Protection 的新用戶端。<br />-   您升級將使用 Microsoft Intune Endpoint Protection 的任何用戶端。                         |
+|                                                                                                             使用沒有 Microsoft Intune Endpoint Protection 的 Intune。 相反地，您將依賴協力廠商 Endpoint Protection 應用程式。                                                                                                             |                                                                                                安裝 Endpoint Protection = <strong>否</strong>                                                                                                 | 如果您不使用協力廠商 Endpoint Protection 應用程式，則不建議此設定，因為這可能會讓您的組織電腦暴露於惡意程式碼或其他攻擊之下。<br /><br />Microsoft Intune Endpoint Protection 未安裝，而且在先前已安裝的情況下會解除安裝。 |
+
 若要從目前 Endpoint Protection 應用程式切換到 Microsoft Intune Endpoint Protection，請執行下列動作：
 
 1.  請在將 Intune 用戶端軟體部署到這些電腦的同時，讓目前的 Endpoint Protection 應用程式繼續執行。
@@ -68,15 +70,16 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 
 ## <a name="specify-endpoint-protection-service-settings"></a>指定 Endpoint Protection 服務設定
 
-|原則設定|詳細資料|
-|------------------|--------------------|
-|**安裝 Endpoint Protection**|設定為 [是]，將 Endpoint Protection 安裝在受管理的電腦上。 如果安裝過程中偵測到協力廠商 Endpoint Protection 應用程式，除非將設定 [即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection] 設定為 [是]，否則不會安裝 Endpoint Protection。 **注意：** Intune Endpoint Protection 預設安裝在受管理的電腦上。 如果您不想將 Endpoint Protection 安裝在受管理的電腦上，則必須將此原則明確設定為 [否]。 如果先前已安裝 Endpoint Protection，且此原則已更新為 [否]，則將會解除安裝 Endpoint Protection 用戶端。<br />建議值： **是**|
-|**即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection**|設定為 [是]，則即使偵測到協力廠商 Endpoint Protection 應用程式，仍會安裝 Microsoft Intune Endpoint Protection。<br /><br />建議值： **是**|
-|**啟用 Endpoint Protection**|設定為 [是]，在具有 Endpoint Protection 用戶端的電腦上啟用 Microsoft Intune Endpoint Protection。<br /><br />如果設定為 [否] 並已安裝 Microsoft Intune Endpoint Protection，Endpoint Protection 用戶端使用者介面不會對使用者顯示，而且所有保護功能都會處於非作用中狀態。<br /><br />建議值： **是**|
-|**停用用戶端 UI**|設定為 [是]，可隱藏 Microsoft Intune Endpoint Protection 用戶端使用者介面，不讓使用者看到 (需要重新啟動用戶端電腦才會生效)。<br /><br />建議值： **否**|
-|**即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection**|設定為 [是]，則即使偵測到協力廠商 Endpoint Protection 應用程式，仍會強制安裝 Microsoft Intune Endpoint Protection。<br /><br />建議值： **否**|
-|**在對惡意程式碼進行補救之前先建立系統還原點**|設定為 [是]  可在開始進行任何惡意程式碼補救程序之前，先建立 Windows 系統還原點。<br /><br />建議值： **是**|
-|**追蹤已解決的惡意程式碼 (天數)**|讓 Endpoint Protection 追蹤已解決的惡意程式碼一段指定的時間，以手動檢查先前感染過病毒的電腦。<br /><br />您可以指定 0 到 30 天的值。<br /><br />建議值： **7 天**|
+|                                                 原則設定                                                  |                                                                                                                                                                                                                                                                                                                                                                                                             詳細資料                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                  <strong>安裝 Endpoint Protection</strong>                                   | 設定為 [是]，將 Endpoint Protection 安裝在受管理的電腦上。 如果安裝過程中偵測到協力廠商 Endpoint Protection 應用程式，除非將設定 [即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection] 設定為 [是]，否則不會安裝 Endpoint Protection。 <strong>注意：</strong> Intune Endpoint Protection 預設安裝在受管理的電腦上。 如果您不想將 Endpoint Protection 安裝在受管理的電腦上，則必須將此原則明確設定為 [否]。 如果先前已安裝 Endpoint Protection，且此原則已更新為 [否]，則將會解除安裝 Endpoint Protection 用戶端。<br />建議值： <strong>是</strong> |
+| <strong>即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection</strong> |                                                                                                                                                                                                                                                                                                                設定為 [是]，則即使偵測到協力廠商 Endpoint Protection 應用程式，仍會安裝 Microsoft Intune Endpoint Protection。<br /><br />建議值： <strong>是</strong>                                                                                                                                                                                                                                                                                                                |
+|                                   <strong>啟用 Endpoint Protection</strong>                                   |                                                                                                                                                                                                            設定為 [是]，在具有 Endpoint Protection 用戶端的電腦上啟用 Microsoft Intune Endpoint Protection。<br /><br />如果設定為 [否] 並已安裝 Microsoft Intune Endpoint Protection，Endpoint Protection 用戶端使用者介面不會對使用者顯示，而且所有保護功能都會處於非作用中狀態。<br /><br />建議值： <strong>是</strong>                                                                                                                                                                                                             |
+|                                       <strong>停用用戶端 UI</strong>                                        |                                                                                                                                                                                                                                                                                                      設定為 [是]，可隱藏 Microsoft Intune Endpoint Protection 用戶端使用者介面，不讓使用者看到 (需要重新啟動用戶端電腦才會生效)。<br /><br />建議值： <strong>否</strong>                                                                                                                                                                                                                                                                                                       |
+| <strong>即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection</strong> |                                                                                                                                                                                                                                                                                                       設定為 [是]，則即使偵測到協力廠商 Endpoint Protection 應用程式，仍會強制安裝 Microsoft Intune Endpoint Protection。<br /><br />建議值： <strong>否</strong>                                                                                                                                                                                                                                                                                                       |
+|                    <strong>在對惡意程式碼進行補救之前先建立系統還原點</strong>                    |                                                                                                                                                                                                                                                                                                                                 設定為 [是]  可在開始進行任何惡意程式碼補救程序之前，先建立 Windows 系統還原點。<br /><br />建議值： <strong>是</strong>                                                                                                                                                                                                                                                                                                                                  |
+|                                 <strong>追蹤已解決的惡意程式碼 (天數)</strong>                                  |                                                                                                                                                                                                                                                                                      讓 Endpoint Protection 追蹤已解決的惡意程式碼一段指定的時間，以手動檢查先前感染過病毒的電腦。<br /><br />您可以指定 0 到 30 天的值。<br /><br />建議值： <strong>7 天</strong>                                                                                                                                                                                                                                                                                       |
+
 如果您已將 [安裝 Endpoint Protection] 和 [啟用 Endpoint Protection] 設定的原則值設定為 [是]，並將 [即使已安裝協力廠商 Endpoint Protection 應用程式，仍安裝 Endpoint Protection] 的原則值設定為 [否]，Microsoft Intune Endpoint Protection 將偵測到已安裝其他 Endpoint Protection 應用程式。 這表示將不會安裝 Endpoint Protection，或將在已存在的情況下解除安裝。 不過，Microsoft Intune Endpoint Protection 會報告 Intune 中其他 Endpoint Protection 應用程式的健全狀況。
 
   Microsoft Security Essentials 會在潛在威脅 (例如病毒和間諜軟體) 嘗試在電腦上自行安裝或執行時，對您發出即時保護警示。 一旦發生這種情況，您就會在工作列右邊的通知區域中看到一則訊息。
@@ -145,10 +148,10 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 
 ## <a name="choose-management-tasks-for-endpoint-protection"></a>選擇 Endpoint Protection 的管理工作
 下列工作可協助您在執行 Endpoint Protection 的受管理電腦上執行各項管理工作：
- - 更新惡意程式碼定義
+- 更新惡意程式碼定義
   - Intune 主控台 - 從 [群組] 工作區，選取您要更新的電腦。 選擇 [遠端工作] &gt; [更新惡意程式碼定義]。
   - 受管理電腦 - 從 Windows 通知區域啟動 Endpoint Protection 用戶端軟體。 選擇 [更新] 索引標籤，然後選擇 [更新]。
- - 執行惡意程式碼掃描：
+- 執行惡意程式碼掃描：
   - Intune 主控台 - 從 [群組] 工作區，選取您要掃描的電腦。 選擇 [執行完整惡意程式碼掃描] 或 [執行快速惡意程式碼掃描]。
   - 受管理電腦 - 從 Windows 通知區域啟動 Endpoint Protection 用戶端軟體。 選取 [快速]、[完整]或 [自訂]，然後選擇 [立即掃描]。
 
@@ -156,12 +159,12 @@ Microsoft Active Protection Service 是一個線上社群，能協助您決定�
 
 ## <a name="monitor-endpoint-protection"></a>監視 Endpoint Protection
 您可以使用 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 的 **[保護]** 工作區，監視電腦上惡意程式碼的狀態。 此工作區包含兩個頁面：
- - **保護概觀** - 以連結方式顯示重要問題，您可以選擇連結來取得詳細資訊。 可能顯示的問題包括：
+- **保護概觀** - 以連結方式顯示重要問題，您可以選擇連結來取得詳細資訊。 可能顯示的問題包括：
   - **需要後續追蹤的惡意程式碼執行個體** - 按一下連結可檢視惡意程式碼問題的清單，包括需要採取來解決問題的後續追蹤動作。 您可以進一步瀏覽此清單，查看哪些電腦受到影響。
   - **包含需要後續追蹤之惡意程式碼的電腦** - 按一下連結可檢視包含未解決之惡意程式碼問題的所有電腦，以及需要採取來解決問題的後續追蹤動作。
   - **N 部裝置未受到保護** – 按一下連結，查看因為沒有安裝軟體，或是因為發生錯誤，而未受到任何 Endpoint Protection 軟體保護的電腦。 請選取電腦以檢視更多詳細資料。
   - **N 部裝置正在執行其他 Endpoint Protection 應用程式** – 按一下此連結，查看正在執行協力廠商 Endpoint Protection 應用程式的電腦。
- - **所有惡意程式碼** - 顯示在您的電腦上找到的所有作用中惡意程式碼的清單。 您可以瀏覽此清單，查看受特定惡意程式碼影響的所有電腦，或者您也可以選取下列其中一項工作：
+- **所有惡意程式碼** - 顯示在您的電腦上找到的所有作用中惡意程式碼的清單。 您可以瀏覽此清單，查看受特定惡意程式碼影響的所有電腦，或者您也可以選取下列其中一項工作：
   - **檢視內容** – 開啟頁面，顯示所選惡意程式碼的詳細資訊。
   - **了解此惡意程式碼** – 從 Microsoft 惡意程式碼防護中心開啟主題，取得關於惡意程式碼的詳細資訊。
 

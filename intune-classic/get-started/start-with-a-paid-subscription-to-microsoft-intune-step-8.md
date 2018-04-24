@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b09545e99f18815e690ad224e11e772e8911c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>啟用行動裝置的註冊
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題描述 Intune 系統管理員如何啟用行動裝置註冊。 如需在手機上使用 Intune 的協助，請參閱 [Using managed devices to get work done](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。
 
@@ -66,4 +66,4 @@ Intune 可根據貴公司的需求，使用各種不同方式來管理裝置。 
 恭喜！ 您剛完成 *Intune 快速入門指南*的最後一個步驟。 在您完成初始設定之後，您可以考慮啟用其他 MDM 功能。
 
 >[!div class="step-by-step"]
->[&larr; **註冊裝置**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**設定後的工作** &rarr;](.\post-configuration-tasks.md)  
+>[&larr; **註冊裝置**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**設定後的工作** &rarr;](./post-configuration-tasks.md)  

@@ -14,15 +14,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>建立設定檔
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
@@ -31,33 +31,33 @@ ms.lasthandoff: 03/20/2018
 
 3. 輸入下列內容：
 
-    - **名稱**：為新的設定檔輸入描述性名稱。
-    - **描述**：輸入設定檔的描述。 (這是選用項目，但建議使用。)
-    - **平台**：選取平台類型：  
+   - **名稱**：為新的設定檔輸入描述性名稱。
+   - **描述**：輸入設定檔的描述。 (這是選用項目，但建議使用。)
+   - **平台**：選取平台類型：  
 
-        - **Android**
-        - **Android for Work**
-        - **iOS**
-        - **macOS**
-        - **Windows Phone 8.1**
-        - **Windows 8.1 及更新版本**
-        - **Windows 10 及更新版本**
+       - **Android**
+       - **Android for Work**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 及更新版本**
+       - **Windows 10 及更新版本**
 
-    - **設定檔類型**：選取您想要建立的類型。 清單取決於您選擇的平台。
-    - **設定**：下列主題描述每個設定檔類型的設定︰
+   - **設定檔類型**：選取您想要建立的類型。 清單取決於您選擇的平台。
+   - **設定**：下列主題描述每個設定檔類型的設定︰
 
-        -  [裝置功能設定](device-features-configure.md)
-        -  [裝置限制設定](device-restrictions-configure.md)
-        -  [電子郵件設定](email-settings-configure.md)
-        -  [VPN 設定](vpn-settings-configure.md)
-        -  [Wi-Fi 設定](wi-fi-settings-configure.md)
-        -  [Windows 10 版本升級設定](edition-upgrade-configure-windows-10.md)
-        -  [憑證設定](certificates-configure.md)
-        -  [Windows 資訊保護設定](windows-information-protection-configure.md)
-        -  [教育設定](education-settings-configure.md)
-        -  [自訂設定](custom-settings-configure.md)
+       -  [裝置功能設定](device-features-configure.md)
+       -  [裝置限制設定](device-restrictions-configure.md)
+       -  [電子郵件設定](email-settings-configure.md)
+       -  [VPN 設定](vpn-settings-configure.md)
+       -  [Wi-Fi 設定](wi-fi-settings-configure.md)
+       -  [Windows 10 版本升級設定](edition-upgrade-configure-windows-10.md)
+       -  [憑證設定](certificates-configure.md)
+       -  [Windows 資訊保護設定](windows-information-protection-configure.md)
+       -  [教育設定](education-settings-configure.md)
+       -  [自訂設定](custom-settings-configure.md)
 
-    ![建立設定檔的螢幕擷取畫面](./media/create-device-profile.png)
+     ![建立設定檔的螢幕擷取畫面](./media/create-device-profile.png)
 
 4. 完成時選取 [建立]。
 

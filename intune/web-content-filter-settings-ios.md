@@ -1,28 +1,28 @@
 ---
-title: "適用於 iOS 裝置的 Microsoft Intune 網路內容篩選器設定"
-titlesuffix: 
-description: "了解您可以用來允許及禁止從執行 iOS 的裝置上存取網站的 Microsoft Intune 設定。"
-keywords: 
+title: 適用於 iOS 裝置的 Microsoft Intune 網路內容篩選器設定
+titlesuffix: ''
+description: 了解您可以用來允許及禁止從執行 iOS 的裝置上存取網站的 Microsoft Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文將說明可用來控制從執行 iOS 之裝置的瀏覽器 URL 存取的 Microsoft Intune 設定。
 
@@ -57,13 +57,13 @@ ms.lasthandoff: 03/08/2018
 ## <a name="specific-websites-only"></a>僅限特定網站
 
 1. 在 [網路內容篩選器] 窗格中，針對您要允許的每個網站設定下列設定：
-    - **URL**：輸入您要允許之網站的 URL，例如 **http://www.contoso.com**。
+    - **URL**輸入您要允許之網站的 URL，例如 **http://www.contoso.com**。
     - **書籤路徑**：輸入您要儲存書籤的位置路徑，例如 **/Contoso/Business Apps**。 如果您不新增路徑，書籤就會新增到裝置的預設書籤資料夾。
     - **標題**：輸入書籤的描述性標題。
 2. 輸入每個網站的資訊後，按一下 [新增]。
 3. 完成後，請按一下 [確定] 。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Intune 會自動允許下列 URL。
 > - www.microsoft.com
 > - www.microsoft.net

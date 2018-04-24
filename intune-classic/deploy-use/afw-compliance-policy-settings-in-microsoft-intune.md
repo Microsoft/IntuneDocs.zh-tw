@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab1e43d1cb66bdc6e0fc02324ffd1d8923e61174
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 085cca57365da0df9dd739c3a1b2b0c6dd6fded6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 裝置的相容性原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題所述的原則設定適用於 Android for Work 裝置。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [Android 的相容性原則設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android 的相容性原則設定](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows 裝置的相容性原則設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系統安全性設定
 ### <a name="password"></a>密碼

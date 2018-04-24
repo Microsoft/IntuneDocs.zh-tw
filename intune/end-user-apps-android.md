@@ -1,28 +1,28 @@
 ---
-title: "Android 使用者如何取得其應用程式"
-description: "讓終端使用者可以使用 Android 應用程式的方法"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Android 使用者如何取得其應用程式
+description: 讓終端使用者可以使用 Android 應用程式的方法
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c37fedd23606b51182ada561ae467ebe52c829d6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 878e4d0854722d82eab0545cf3a1ba743f2c52db
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 該資訊可能會因裝置類型 (原生 Android 裝置或 Samsung Knox Standard 裝置) 而有所不同。
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/25/2018
 您的終端使用者必須允許來自未知來源的安裝，才能安裝 [LOB 應用程式](lob-apps-android.md)。 這些通常可以在兩個不同的位置找到：
 
 * **Android 7.1.2 和以下版本**：[設定] > [安全性] > [未知來源]
-* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] \(特殊應用程式存取) > [Install unknown apps] \(安裝未知應用程式) > [公司入口網站] > [Allow from this source] \(允許來自此來源)
+* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] (特殊應用程式存取) > [Install unknown apps] (安裝未知應用程式) > [公司入口網站] > [Allow from this source] (允許來自此來源)
 
 如果發生這種情況，公司入口網站應用程式將會通知，並直接引導終端使用者進行適當的設定。 
 

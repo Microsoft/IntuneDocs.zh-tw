@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29e1ad3f41c5b8dc7dd58e04f6ecbda067bd4a1f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 084da36e9b417e4faee87f33bbd42e0e5f5fa7e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>快速入門指南：使用資料加密保護公司資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可協助您從 Office 行動應用程式，透過各種不同方式來防止資料遺失，包含：
 - 使用 iOS 和 Android 所提供的最高階裝置加密來加密公司資料。

@@ -1,29 +1,29 @@
 ---
-title: "保護未註冊裝置上的 LOB 應用程式"
-description: "本主題說明如何準備您自訂的企業營運應用程式，以便您可以套用有助於防止資料遺失的行動裝置應用程式管理原則。"
-keywords: 
+title: 保護未註冊裝置上的 LOB 應用程式
+description: 本主題說明如何準備您自訂的企業營運應用程式，以便您可以套用有助於防止資料遺失的行動裝置應用程式管理原則。
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 行動應用程式管理 (MAM) 原則可協助保護公司資料，方法是限制可能會遺漏公司資料的動作，以及強制執行資料存取需求 (例如應用程式 PIN)。 若要將 MAM 原則套用至 iOS 和 Android 企業營運應用程式，您必須先使用 Microsoft Intune App Wrapping Tool 來包裝應用程式。 應用程式包裝處理程序會將管理層套用到行動應用程式，而不需要對基礎應用程式進行任何變更，然後散發給您的使用者。  
 
@@ -42,16 +42,16 @@ ms.lasthandoff: 10/11/2017
 
 1. 在 [Azure 入口網站](https://portal.azure.com/)中，移至 [Intune 行動應用程式管理] > [設定]，然後選擇 [企業營運應用程式]。
 
-  ![含企業營運選項之 [設定] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-lob-on-settings.png)
+   ![含企業營運選項之 [設定] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-lob-on-settings.png)
 
 2. 在 [企業營運應用程式] 刀鋒視窗中，選擇 [加入自訂應用程式]。
 
-  ![頂端有 [加入自訂應用程式] 按鈕之 [企業營運應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-add-lob-app-action.png)
-3.  提供應用程式的名稱、[應用程式識別碼] 欄位中的配套識別碼，以及平台 (iOS 或 Android)。
+   ![頂端有 [加入自訂應用程式] 按鈕之 [企業營運應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-add-lob-app-action.png)
+3. 提供應用程式的名稱、[應用程式識別碼] 欄位中的配套識別碼，以及平台 (iOS 或 Android)。
 
-  ![[加入自訂應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-add-app-details.png)
+   ![[加入自訂應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-add-app-details.png)
 
-  此步驟可協助您建立應用程式的唯一列示清單。 應用程式也會顯示在租用戶之 MAM 原則的目標應用程式清單中 (如下一步中所述)。
+   此步驟可協助您建立應用程式的唯一列示清單。 應用程式也會顯示在租用戶之 MAM 原則的目標應用程式清單中 (如下一步中所述)。
 
 ## <a name="step-3-apply-mam-policies"></a>步驟 3︰套用 MAM 原則
 應用程式中繼資料上傳至服務之後，應用程式會顯示在應用程式清單中。 您現在可以[建立新原則或使用現有原則](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)，並將它套用至您在步驟 2 新增的企業營運應用程式。
@@ -72,12 +72,12 @@ ms.lasthandoff: 10/11/2017
 ##  <a name="remove-apps"></a>移除應用程式
 您可以從應用程式清單中移除企業營運應用程式。 這會從清單中移除應用程式，並移除與 MAM 原則的關聯，但不會從使用者裝置中移除或解除安裝應用程式。  
 
-1.  在 [Azure 入口網站](https://portal.azure.com/)上，移至 [Intune 行動應用程式管理] > [設定]。 在 **[設定]** 刀鋒視窗上，選擇 **[企業營運]** 開啟現有應用程式清單。  
-2.  選取您想要移除的應用程式，然後選擇 [(…) 內容] 功能表。
+1. 在 [Azure 入口網站](https://portal.azure.com/)上，移至 [Intune 行動應用程式管理] > [設定]。 在 **[設定]** 刀鋒視窗上，選擇 **[企業營運]** 開啟現有應用程式清單。  
+2. 選取您想要移除的應用程式，然後選擇 [(…) 內容] 功能表。
 
-  ![含省略符號之 [企業營運應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-lob-context-menu.png)
-3.  選擇 **[刪除應用程式]** 刪除應用程式。
+   ![含省略符號之 [企業營運應用程式] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-lob-context-menu.png)
+3. 選擇 **[刪除應用程式]** 刪除應用程式。
 
-  ![含 [刪除應用程式] 選項之 [企業營運] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-delete-app.png)
+   ![含 [刪除應用程式] 選項之 [企業營運] 刀鋒視窗的螢幕擷取畫面](../media/mam-azure-portal-delete-app.png)
 
-  這會從企業營運應用程式清單以及 MAM 原則的目標應用程式清單中移除應用程式。
+   這會從企業營運應用程式清單以及 MAM 原則的目標應用程式清單中移除應用程式。

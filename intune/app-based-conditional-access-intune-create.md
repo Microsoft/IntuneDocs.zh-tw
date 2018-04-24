@@ -1,28 +1,28 @@
 ---
-title: "使用 Intune 設定以應用程式為基礎的條件式存取原則"
-description: "了解如何使用 Intune 建立以應用程式為基礎的條件式存取原則。"
-keywords: 
+title: 使用 Intune 設定以應用程式為基礎的條件式存取原則
+description: 了解如何使用 Intune 建立以應用程式為基礎的條件式存取原則。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89ee7c0df2fde740c18b84f1d9f028d59ba5d81d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b7e3654021935495189b62da5257793383586137
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 設定以應用程式為基礎的條件式存取原則
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文描述如何為屬於已核准應用程式清單一部分的應用程式，設定以應用程式為基礎的條件式存取原則。 已核准應用程式清單包含 Microsoft 已測試的應用程式。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 03/05/2018
 
 5. 依序選擇 [需要經過核准的用戶端應用程式]、[選取] 和 [建立] 儲存新的原則。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>另請參閱

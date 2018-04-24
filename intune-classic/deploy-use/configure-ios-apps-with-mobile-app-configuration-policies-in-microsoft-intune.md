@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用行動裝置應用程式組態原則設定 iOS 應用程式
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以在 Microsoft Intune 中使用行動裝置應用程式組態原則，來提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定：
 
@@ -77,14 +77,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="information-about-the-xml-file-format"></a>XML 檔案格式的相關資訊
 
 Intune 支援屬性清單中的下列資料類型：
-    
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; 或 &lt;false /&gt;
-     
+
 如需資料類型的詳細資訊，請參閱 iOS Developer Library 中的 [關於屬性清單](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) 。
 
 此外，Intune 支援屬性清單中的下列權杖類型︰
@@ -97,7 +97,7 @@ Intune 支援屬性清單中的下列資料類型：
 - \{\{username\}\} - (範例：**John Doe**)
 - \{\{serialnumber\}\} - 適用於 iOS 裝置 (範例：**F4KN99ZUG5V2**)
 - \{\{serialnumberlast4digits\}\} - 適用於 iOS 裝置 (範例：**G5V2**)
-    
+
 \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>建立行動裝置應用程式組態原則與應用程式的關聯
@@ -139,5 +139,4 @@ Intune 支援屬性清單中的下列資料類型：
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

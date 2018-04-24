@@ -1,29 +1,29 @@
 ---
-title: "如何取得 Microsoft Intune 支援"
+title: 如何取得 Microsoft Intune 支援
 titlesuffix: Microsoft Intune
-description: "取得 Microsoft Intune 付費和試用訂閱的線上和電話支援。"
-keywords: 
+description: 取得 Microsoft Intune 付費和試用訂閱的線上和電話支援。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱支援。 付費及試用訂閱可透過網路和電話兩種途徑取得支援服務。 線上技術支援提供英文與日文。 電話支援與線上帳單支援另提供其他語言。
 
@@ -34,7 +34,7 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 
 身為 IT 系統管理員，您可以透過下列步驟，從 Azure 入口網站提出支援票證：
 
-1. 使用 Intune 管理員認證登入 Azure 入口網站 (https://portal.azure.com)，在入口網站的右上角選擇 **?** 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank)頁面。
+1. 使用您的 Intune 系統管理員認證來登入 Azure 入口網站 (<https://portal.azure.com>)，然後選擇 [?] 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)頁面。
 
     ![反白顯示 [說明 + 支援] 連結的 Azure 入口網站說明及支援問號連結螢幕擷取畫面](./media/azure-get-support.png)
 
@@ -43,34 +43,34 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
     ![反白顯示 [新增支援要求] 連結的 Azure 入口網站 [說明及支援] 頁面螢幕擷取畫面](./media/azure-support-ticket-link.png)
 
 3. 在 [基本概念] 刀鋒視窗中，針對大部分的 Intune 技術支援問題選擇下列選項：
-    - **問題類型**：**技術**
-    - **服務**：**Microsoft Intune**
-    - **支援方案**：**技術支援 - 包含** (對於 Intune 技術問題，支援是免費) 或 **Premier**
+   - **問題類型**：**技術**
+   - **服務**：**Microsoft Intune**
+   - **支援方案**：**技術支援 - 包含** (對於 Intune 技術問題，支援是免費) 或 **Premier**
     
-    >[!IMPORTANT]
-    >- 如果您是 **Premier 客戶**，而且看不到**支援計劃：Premier**，請連絡技術帳戶管理員，以協助連結合約和租用戶。
-    >- Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 若要檢閱頂級支援供應項目的詳細資訊，請參閱[服務的描述](https://enterprise.microsoft.com/en-us/services/services-list/)文件的 5.3.3＜諮詢服務＞一節。
+     >[!IMPORTANT]
+     >- 如果您是 **Premier 客戶**，而且看不到**支援計劃：Premier**，請連絡技術帳戶管理員，以協助連結合約和租用戶。
+     >- Intune 支援與 Intune 搭配 Configuration Manager 的支援為免費。 若要檢閱頂級支援供應項目的詳細資訊，請參閱[服務的描述](https://enterprise.microsoft.com/en-us/services/services-list/)文件的 5.3.3＜諮詢服務＞一節。
 
-    選擇 [下一步] 以繼續。
+     選擇 [下一步] 以繼續。
 
 4. 在 [問題] 刀鋒視窗上，若要確保您的要求是由合適的主題專家解決，請選取下列選項：
 
-    - **嚴重性**
-    - **問題類型**
-    - **類別**
+   - **嚴重性**
+   - **問題類型**
+   - **類別**
 
-    這些詳細資料也可讓我們提供**相關說明**，這可能會解決您的問題，而無需提出票證。
+     這些詳細資料也可讓我們提供**相關說明**，這可能會解決您的問題，而無需提出票證。
 
-    ![已填寫 [問題] 項目，並根據您的問題顯示解決方案的 Azure 入口網站 [說明及支援] 頁面螢幕擷取畫面](./media/support-need-solutions.png)
+     ![已填寫 [問題] 項目，並根據您的問題顯示解決方案的 Azure 入口網站 [說明及支援] 頁面螢幕擷取畫面](./media/support-need-solutions.png)
 
-    為了協助支援小組調查並解決您的問題，請輸入下列資訊：
+     為了協助支援小組調查並解決您的問題，請輸入下列資訊：
     
-    - **詳細資料**
-    - **日期**
-    - **時間**
-    - **補充資料**
+   - **詳細資料**
+   - **日期**
+   - **時間**
+   - **補充資料**
 
-    選擇 [下一步]。
+     選擇 **[下一步]**。
 
 5. 為此支援要求提供**連絡資訊**。 Microsoft 支援服務會使用此資訊來連絡您。
 6. 選擇 [建立] 來提交支援要求。

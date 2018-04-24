@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 一般而言，使用者嘗試存取電子郵件或 SharePoint，並收到註冊的提示。 該提示會將使用者引導至公司入口網站。
 
@@ -49,20 +49,20 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="compliance-issues"></a>相容性問題
 
- -  裝置不符合 Intune 原則。 常見的問題是加密與密碼的需求。 使用者會被重新導向到公司入口網站，在這裡他們可以設定其裝置，讓它相容。
- -  可能需要一些時間，來註冊裝置的合規性資訊。 請稍候幾分鐘，然後再試一次。
- -  對於 iOS 裝置：
-     -   使用者建立的現有電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者，他們因為手動設定電子郵件設定檔而不相容，並且會提示使用者移除該設定檔。使用者應該移除其電子郵件設定檔，以便可以部署 Intune 設定檔。 若要避免問題，請指示使用者進行註冊，而不要安裝電子郵件設定檔，並允許 Intune 部署設定檔。
-     -   iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
+- 裝置不符合 Intune 原則。 常見的問題是加密與密碼的需求。 使用者會被重新導向到公司入口網站，在這裡他們可以設定其裝置，讓它相容。
+- 可能需要一些時間，來註冊裝置的合規性資訊。 請稍候幾分鐘，然後再試一次。
+- 對於 iOS 裝置：
+  - 使用者建立的現有電子郵件設定檔會封鎖 Intune 系統管理員所建立設定檔的部署作業。 這是常見的問題，因為 iOS 使用者通常會建立電子郵件設定檔，然後註冊。 公司入口網站會通知使用者，他們因為手動設定電子郵件設定檔而不相容，並且會提示使用者移除該設定檔。使用者應該移除其電子郵件設定檔，以便可以部署 Intune 設定檔。 若要避免問題，請指示使用者進行註冊，而不要安裝電子郵件設定檔，並允許 Intune 部署設定檔。
+  - iOS 裝置可能會卡在檢查相容性狀態，造成使用者無法起始另一個簽入。 重新啟動公司入口網站可能會解決這個問題，而相容性狀態會反映出 Intune 中的裝置狀態。 從裝置同步作業中收集所有資料之後，相容性檢查會快速完成，平均不用半秒的時間。
 
-        一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路設定 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，遵循[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡 Microsoft 支援服務。
+    一般而言，裝置一直處於此狀態的原因，是因為裝置無法連線到服務，或是同步處理花費很長的時間。  如果問題在不同的網路設定 (行動數據，Wi-Fi、VPN) 持續發生，請將裝置重新啟動，並在確認裝置上的 SSP 處於最新狀態之後，遵循[如何取得 Microsoft Intune 支援](how-to-get-support-for-microsoft-intune.md)中所述來連絡 Microsoft 支援服務。
 
- - Android 裝置：
-    - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
+- Android 裝置：
+   - 某些 Android 裝置可能加密，但公司入口網站應用程式會將這些裝置辨識為未加密。 
     
-        -   這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up]\(安全啟動) 畫面中選擇 [Require PIN to start device]\(需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
+       -   這種狀態的裝置需要使用者設定安全啟動密碼。 使用者會在公司入口網站應用程式中看到裝置通知，要求為裝置設定啟動密碼。 點選裝置通知並確認現有的 PIN 或密碼之後，請在 [Secure start-up]\(安全啟動) 畫面中選擇 [Require PIN to start device]\(需要 PIN 碼才能啟動裝置) 選項。 然後從公司入口網站應用程式點選裝置的 [檢查相容性] 按鈕。 現在裝置應該偵測為已加密。
     
-        -   有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
+       -   有些裝置製造商會使用預設的 PIN 碼來加密裝置，不使用使用者設定的 PIN 碼。 Intune 會將使用預設 PIN 碼的加密辨識為不安全，因為當惡意使用者實際接觸到裝置時，這種加密方法會讓裝置中的資料暴露在風險中。 如果這對您是個問題，請考慮使用[應用程式保護原則](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>原則問題
 
@@ -118,22 +118,22 @@ ms.lasthandoff: 03/22/2018
 ### <a name="exchange-connector-logs"></a>Exchange Connector 記錄檔
 
 #### <a name="general-log-information"></a>一般記錄檔資訊
-若要檢視 Exchange Connector 記錄檔，請使用 [伺服器追蹤檢視器工具] (伺服器追蹤檢視器工具https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')。 這個工具需要您下載 Windows Server SDK。
+若要檢視 Exchange Connector 記錄檔，請使用 [伺服器追蹤檢視器工具] (伺服器追蹤檢視器工具<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>')。 這個工具需要您下載 Windows Server SDK。
 
 >[!NOTE]
 >記錄檔位於 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 一系列共包含 30 個檔案的記錄檔是以 *Connector0.log* 開始並在 *Connector29.log* 停止。 記錄檔會在累積 10MB 的資料後，換用另一個檔案。 一旦記錄檔達到 Connector29，將會覆寫先前的記錄檔，再次從 Connector0 開始。
 
 #### <a name="locating-sync-logs"></a>尋找同步記錄檔
 
--    搜尋 **full sync**，在記錄檔中尋找完整同步處理。完整同步處理的開頭會標有此段文字︰
+- 搜尋 **full sync**，在記錄檔中尋找完整同步處理。完整同步處理的開頭會標有此段文字︰
 
-    「處理命令：為 <number> 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)」
+  「處理命令：為 <number> 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)」
 
-    完整同步處理的記錄檔結尾看起來像這樣︰
+  完整同步處理的記錄檔結尾看起來像這樣︰
 
-    順利完成為 4 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)。 詳細資料: 清查命令結果 - 同步的裝置: 0 命令識別碼: commandIDGUID' Exchange 健全狀況: '伺服器健全狀況' 名稱: 'PowerShellExchangeServer: <Name=mymailservername>' 狀態: ’已連線','
+  順利完成為 4 個使用者取得行動裝置清單，但不含時間篩選器 (完整同步處理)。 詳細資料: 清查命令結果 - 同步的裝置: 0 命令識別碼: commandIDGUID' Exchange 健全狀況: '伺服器健全狀況' 名稱: 'PowerShellExchangeServer: <Name=mymailservername>' 狀態: ’已連線','
 
--   搜尋 **quick sync**，在記錄檔中尋找快速 (差異) 同步處理。
+- 搜尋 **quick sync**，在記錄檔中尋找快速 (差異) 同步處理。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next 命令中的例外狀況
 檢查 Exchange Connector 記錄檔中 **Get next 命令**的例外狀況，並將這些資訊提供給 Microsoft 支援服務。

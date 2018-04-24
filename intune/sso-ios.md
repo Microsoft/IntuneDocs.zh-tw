@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: b9afd14fd3ba4e464f0bf09c228290ef2f19eac3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>設定 Microsoft Intune 以進行 iOS 裝置單一登入
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 大部分的企業營運 (LOB) 應用程式需要某種程度的使用者驗證才會支援安全性。 在許多情況下這需要使用者多次鍵入相同的認證，這很令使用者沮喪。 為改善使用者體驗，開發人員可以建立使用單一登入的應用程式，減少使用者必須提供認證的次數。
 

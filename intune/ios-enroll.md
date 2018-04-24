@@ -1,25 +1,25 @@
 ---
-title: "選擇 iOS 裝置在 Intune 中的註冊方式"
+title: 選擇 iOS 裝置在 Intune 中的註冊方式
 titlesuffix: Microsoft Intune
-description: "在 Microsoft Intune 中設定 iOS 裝置註冊。"
-keywords: 
+description: 在 Microsoft Intune 中設定 iOS 裝置註冊。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 602c4c1da553215ad222a7e593531fdd879c996c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
@@ -79,11 +79,11 @@ Apple School Manager 是針對學校提供的裝置採購暨註冊方案。 就�
 
 5. 登入之後，系統會提示使用者註冊其裝置。 第一個步驟是識別裝置。 App 會在清單中顯示已經過公司註冊並指派給使用者 Intune 帳戶的 iOS 裝置。 使用者應該要選擇相符的裝置。
 
-  如果此裝置尚未經過公司註冊，使用者應該選擇 [新裝置] 來繼續標準註冊流程。
+   如果此裝置尚未經過公司註冊，使用者應該選擇 [新裝置] 來繼續標準註冊流程。
 
 6. 在下一個畫面中，使用者必須確認新裝置的序號。 使用者可以點選 [確認序號] 連結，隨即啟動使用「設定」App 來驗證序號的指示。 使用者必須在公司入口網站 App 中輸入序號的最後四個字元。
 
-  此步驟會確認裝置是公司在 Intune 中註冊的裝置。 如果裝置上的序號不符，則可能選取了錯誤的裝置。 使用者應該返回上一個畫面，並選取不同的裝置。
+   此步驟會確認裝置是公司在 Intune 中註冊的裝置。 如果裝置上的序號不符，則可能選取了錯誤的裝置。 使用者應該返回上一個畫面，並選取不同的裝置。
 
 7. 序號通過驗證後，公司入口網站 App 會重新導向至「公司入口網站」網站，以完成註冊。 該網站接著將會提示使用者返回 App。
 

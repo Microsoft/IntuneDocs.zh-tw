@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 383309944bd185ea2abc79b3bcc3488ad3377b50
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>註冊屬公司擁有的裝置註冊方案 iOS 裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊透過裝置註冊方案 (DEP) 購買的 iOS 裝置。 註冊套件可以包括裝置的設定助理選項。
 
@@ -56,13 +56,13 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
 1. 前往[裝置註冊方案入口網站](https://deploy.apple.com) (https://deploy.apple.com))，並使用公司的 Apple 識別碼登入。 稍後，您必須使用這個 Apple ID 來更新 DEP 權杖。
 
-2.  在裝置註冊方案入口網站中，移至 [裝置註冊方案]&gt; [管理伺服器]，然後選擇 [新增 MDM 伺服器]。
+2. 在裝置註冊方案入口網站中，移至 [裝置註冊方案]&gt; [管理伺服器]，然後選擇 [新增 MDM 伺服器]。
 
-3.  輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
+3. 輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
 
-4.  [新增 &lt;伺服器名稱&gt;] 對話方塊隨即開啟。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
+4. [新增 &lt;伺服器名稱&gt;] 對話方塊隨即開啟。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
 
-5.  [新增 &lt;伺服器名稱&gt;] 對話方塊會顯示 [您的伺服器權杖] 連結。 將伺服器權杖 (.p7m) 檔案下載到您的電腦，然後選擇 [完成]。
+5. [新增 &lt;伺服器名稱&gt;] 對話方塊會顯示 [您的伺服器權杖] 連結。 將伺服器權杖 (.p7m) 檔案下載到您的電腦，然後選擇 [完成]。
 
    此憑證 (.p7m) 檔案會用於建立 Intune 與 Apple 裝置註冊程式伺服器之間的信任關係。
 
@@ -80,8 +80,8 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
 
    - **使用者親和性的提示**：裝置必須在初始設定期間與使用者建立關聯，之後才能以該使用者身分存取公司資料與電子郵件。 如果受 DEP 管理的裝置是屬於使用者，且裝置會使用公司入口網站 (以安裝應用程式)，則必須為此裝置設定**使用者親和性**。 在具有使用者親和性的 DEP 裝置註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 當第一次登入時必須變更密碼的新使用者，在 DEP 裝置上進行註冊期間無法收到提示。 此外，密碼已過期的使用者也不會在 DEP 註冊期間收到提示要重設其密碼，且必須從不同的裝置重設密碼。
 
-    >[!NOTE]
-    >具有使用者親和性的 DEP 必須啟用 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)，才能要求使用者權杖。 [深入了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+     >[!NOTE]
+     >具有使用者親和性的 DEP 必須啟用 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)，才能要求使用者權杖。 [深入了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
    - **無使用者親和性**：該裝置不會與使用者建立關聯。 如果裝置只會用來執行工作而不存取本機使用者資料，請使用這種關聯。 在這種情況下，需要使用者關聯的應用程式將無法運作 (包括用於安裝企業營運應用程式的公司入口網站應用程式)。
 
@@ -105,7 +105,7 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
        - **停用** - 允許從 **[設定]** 功能表中移除管理設定檔
        - **啟用** - (需要**準備模式** = **受監督**) 停用可移除管理設定檔的 [iOS 設定] 功能表選項
    - **設定輔助程式選項** - 這些是選用設定，稍後可以在 iOS [設定] 功能表中進行設定。
-        - **密碼** - 在啟用期間提示輸入密碼。 除非裝置將受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼
+     - **密碼** - 在啟用期間提示輸入密碼。 除非裝置將受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼
        - **定位服務** - 啟用時，設定助理會在啟用期間提示服務
        - **還原** - 啟用時，設定助理會在啟用期間提示 iCloud 備份
        - **Apple ID** - 啟用時，如果 Intune 嘗試不使用 Apple ID 來安裝應用程式，iOS 會提示使用者輸入 Apple ID。 若要下載 iOS App Store 應用程式 (包含 Intune 所安裝的應用程式)，您必須提供 Apple ID。
@@ -115,10 +115,10 @@ Microsoft Intune 可以部署註冊設定檔，以藉由「無線」方式註冊
        - **縮放** - 啟用時，設定助理會在啟用期間提示此服務
        - **Siri** - 啟用時，設定輔助程式會在啟用期間提示此服務。
        - **傳送診斷資料給 Apple** - 啟用時，設定助理會在啟用期間提示此服務
-   -  **啟用其他 Apple Configurator 管理功能** - 設為 **[不允許]** 防止使用 iTunes 同步處理檔案或透過 Apple Configurator 進行管理。 建議您選擇 [不允許]，並從 Apple Configurator 匯出任何進一步設定，然後透過 Intune 將其部署為自訂 iOS 組態設定檔，而不是使用此設定來允許是否透過憑證進行手動部署。
-       - **不允許** - 防止裝置透過 USB 進行通訊 (停用配對)
-       - **允許** - 允許裝置透過任何電腦或 Mac 的 USB 連線進行通訊
-       - **需要憑證** - 允許使用匯入至註冊設定檔的憑證與 Mac 配對
+   - **啟用其他 Apple Configurator 管理功能** - 設為 **[不允許]** 防止使用 iTunes 同步處理檔案或透過 Apple Configurator 進行管理。 建議您選擇 [不允許]，並從 Apple Configurator 匯出任何進一步設定，然後透過 Intune 將其部署為自訂 iOS 組態設定檔，而不是使用此設定來允許是否透過憑證進行手動部署。
+      - **不允許** - 防止裝置透過 USB 進行通訊 (停用配對)
+      - **允許** - 允許裝置透過任何電腦或 Mac 的 USB 連線進行通訊
+      - **需要憑證** - 允許使用匯入至註冊設定檔的憑證與 Mac 配對
 
 ### <a name="assign-the-profile-to-devices"></a>將設定檔指派給裝置
 

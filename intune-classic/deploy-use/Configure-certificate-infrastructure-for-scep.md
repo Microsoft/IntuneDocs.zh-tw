@@ -15,36 +15,36 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5e7b266bcc47ae229a200f0b690429f505a59603
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>設定 SCEP 的憑證基礎結構
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題說明建立及部署 SCEP 憑證設定檔所需的基礎結構。
 
 ### <a name="on-premises-infrastructure"></a>內部部署基礎結構
 
--    **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
+- **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
 
--  **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需如何設定憑證授權單位的指示，請參閱 [安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。
-    如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
-I
--  **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
+- **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需如何設定憑證授權單位的指示，請參閱 [安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。
+   如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
+  I
+- **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
--  **Microsoft Intune Certificate Connector**：您可使用 Intune 管理主控台來下載 **Certificate Connector** 安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。
--  **Web 應用程式 Proxy 伺服器** (選用)︰您可以將執行 Windows Server 2012 R2 或更新版本的伺服器用作 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
-    -  允許裝置使用網際網路連線接收憑證。
-    -  是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
+- **Microsoft Intune Certificate Connector**：您可使用 Intune 管理主控台來下載 **Certificate Connector** 安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在要安裝 Certificate Connector 的電腦上執行 **ndesconnectorssetup.exe** 。
+- **Web 應用程式 Proxy 伺服器** (選用)︰您可以將執行 Windows Server 2012 R2 或更新版本的伺服器用作 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
+   -  允許裝置使用網際網路連線接收憑證。
+   -  是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
 
- > [!NOTE]           
-> -    裝載 WAP 伺服器 [必須安裝更新](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](https://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](https://support.microsoft.com/kb/3011135)。
->-  此外，主控 WAP 的伺服器必須有 SSL 憑證，該憑證必須符合發佈給外部用戶端，以及信任 NDES 伺服器上使用的 SSL 憑證的名稱。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 伺服器的新 SSL 連線。
-    如需 WAP 憑證的相關資訊，請參閱[計劃使用 Web 應用程式 Proxy 發行應用程式](https://technet.microsoft.com/library/dn383650.aspx)的**規劃憑證**小節。 如需 WAP 伺服器的一般資訊，請參閱[使用 Web 應用程式 Proxy](http://technet.microsoft.com/library/dn584113.aspx)。|
+  > [!NOTE]           
+  > -    裝載 WAP 伺服器 [必須安裝更新](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](https://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](https://support.microsoft.com/kb/3011135)。
+  >-  此外，主控 WAP 的伺服器必須有 SSL 憑證，該憑證必須符合發佈給外部用戶端，以及信任 NDES 伺服器上使用的 SSL 憑證的名稱。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 伺服器的新 SSL 連線。
+   如需 WAP 憑證的相關資訊，請參閱[計劃使用 Web 應用程式 Proxy 發行應用程式](https://technet.microsoft.com/library/dn383650.aspx)的**規劃憑證**小節。 如需 WAP 伺服器的一般資訊，請參閱[使用 Web 應用程式 Proxy](http://technet.microsoft.com/library/dn584113.aspx)。|
 
 ### <a name="network-requirements"></a>網路需求
 
@@ -126,18 +126,18 @@ I
 
 以下是範例範本設定的螢幕擷取畫面。
 
-![範本, 處理要求索引標籤](..\media\scep_ndes_request_handling.png)
+![範本, 處理要求索引標籤](../media/scep_ndes_request_handling.png)
 
-![範本, 主體名稱索引標籤](..\media\scep_ndes_subject_name.jpg)
+![範本, 主體名稱索引標籤](../media/scep_ndes_subject_name.jpg)
 
-![範本, 安全性索引標籤](..\media\scep_ndes_security.jpg)
+![範本, 安全性索引標籤](../media/scep_ndes_security.jpg)
 
-![範本, 延伸索引標籤](..\media\scep_ndes_extensions.jpg)
+![範本, 延伸索引標籤](../media/scep_ndes_extensions.jpg)
 
-![範本, 發行需求索引標籤](..\media\scep_ndes_issuance_reqs.jpg)
+![範本, 發行需求索引標籤](../media/scep_ndes_issuance_reqs.jpg)
 
->   [!IMPORTANT]
-    > 對於應用程式原則 (在第 4 個螢幕擷取畫面)，只能新增所需的應用程式原則。 向您的安全性系統管理員確認您的選擇。
+> [!IMPORTANT]
+> 對於應用程式原則 (在第 4 個螢幕擷取畫面)，只能新增所需的應用程式原則。 向您的安全性系統管理員確認您的選擇。
 
 
 
@@ -167,28 +167,28 @@ I
 
 
 
-   1.  在將裝載 NDES 的伺服器上，您必須以 **企業系統管理員**的身分登入，然後使用 [新增角色及功能精靈](https://technet.microsoft.com/library/hh831809.aspx) 安裝 NDES：
+1. 在將裝載 NDES 的伺服器上，您必須以 **企業系統管理員**的身分登入，然後使用 [新增角色及功能精靈](https://technet.microsoft.com/library/hh831809.aspx) 安裝 NDES：
 
-    1.  在精靈中，選取 [Active Directory 憑證服務]  以存取 AD CS 角色服務。 選取 [網路裝置註冊服務] ，取消核取 [憑證授權單位] ，然後完成精靈。
+   1. 在精靈中，選取 [Active Directory 憑證服務]  以存取 AD CS 角色服務。 選取 [網路裝置註冊服務] ，取消核取 [憑證授權單位] ，然後完成精靈。
 
-        > [!TIP]
-        > 在精靈的 [安裝進度]  頁面，請不要按一下 [關閉] 。 相反地，請按一下 [設定目的地伺服器上的 Active Directory 憑證服務] 的連結。 這會開啟 [AD CS 設定精靈]  ，讓您用於下一個工作。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
+      > [!TIP]
+      > 在精靈的 [安裝進度]  頁面，請不要按一下 [關閉] 。 相反地，請按一下 [設定目的地伺服器上的 Active Directory 憑證服務] 的連結。 這會開啟 [AD CS 設定精靈]  ，讓您用於下一個工作。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
 
-    2.  當 NDES 加入至伺服器時，精靈也會安裝 IIS。 請確定 IIS 具有下列組態：
+   2. 當 NDES 加入至伺服器時，精靈也會安裝 IIS。 請確定 IIS 具有下列組態：
 
-        -   [Web 伺服器] &gt; [安全性] &gt; [要求篩選]
+      -   [Web 伺服器] &gt; [安全性] &gt; [要求篩選]
 
-        -   [Web 伺服器] &gt; [應用程式部署] &gt; [ASP.NET 3.5]。 安裝 ASP.NET 3.5 時，將會安裝 .NET Framework 3.5。 安裝 .NET Framework 3.5 時，請安裝核心 [.NET Framework 3.5]  功能和 [HTTP 啟動] 。
+      -   [Web 伺服器] &gt; [應用程式部署] &gt; [ASP.NET 3.5]。 安裝 ASP.NET 3.5 時，將會安裝 .NET Framework 3.5。 安裝 .NET Framework 3.5 時，請安裝核心 [.NET Framework 3.5]  功能和 [HTTP 啟動] 。
 
-        -   [Web 伺服器] &gt; [應用程式部署] &gt; [ASP.NET 4.5]。 安裝 ASP.NET 4.5 時，將會安裝 .NET Framework 4.5。 安裝 .NET Framework 4.5 時，請安裝核心 [.NET Framework 4.5] 功能、[ASP.NET 4.5] 以及 [WCF 服務] &gt; [HTTP 啟動] 功能。
+      -   [Web 伺服器] &gt; [應用程式部署] &gt; [ASP.NET 4.5]。 安裝 ASP.NET 4.5 時，將會安裝 .NET Framework 4.5。 安裝 .NET Framework 4.5 時，請安裝核心 [.NET Framework 4.5] 功能、[ASP.NET 4.5] 以及 [WCF 服務] &gt; [HTTP 啟動] 功能。
 
-        -   [管理工具] &gt; [IIS 6 管理相容性] &gt; [IIS 6 Metabase 相容性]
+      -   [管理工具] &gt; [IIS 6 管理相容性] &gt; [IIS 6 Metabase 相容性]
 
-        -   [管理工具] &gt; [IIS 6 管理相容性] &gt; [IIS 6 WMI 相容性]
+      -   [管理工具] &gt; [IIS 6 管理相容性] &gt; [IIS 6 WMI 相容性]
 
-  2.  在伺服器上，新增 NDES 服務帳戶成為 **IIS_IUSR** 群組的成員身分。
+   3. 在伺服器上，新增 NDES 服務帳戶成為 **IIS_IUSR** 群組的成員身分。
 
-   3.  在提升權限的命令提示字元中，執行下列命令來設定 NDES 服務帳戶的 SPN：
+2. 在提升權限的命令提示字元中，執行下列命令來設定 NDES 服務帳戶的 SPN：
 
 `**setspn -s http/&lt;DNS name of NDES Server&gt; &lt;Domain name&gt;\&lt;NDES Service account name&gt;**`
 
@@ -207,33 +207,35 @@ I
 
 ##### <a name="to-configure-ndes-for-use-with-intune"></a>設定 NDES 以便搭配 Intune
 
-1.  在 NDES 伺服器上，開啟 [AD CS 設定精靈]，然後進行下列組態設定。
+1. 在 NDES 伺服器上，開啟 [AD CS 設定精靈]，然後進行下列組態設定。
 
-    > [!TIP]
-    > 如果您按一下前個工作中的連結，此精靈已經開啟。 否則，開啟 [伺服器管理員] 來存取 Active Directory 憑證服務的部署後組態。
+   > [!TIP]
+   > 如果您按一下前個工作中的連結，此精靈已經開啟。 否則，開啟 [伺服器管理員] 來存取 Active Directory 憑證服務的部署後組態。
 
-    -   在 [角色服務]  頁面上，選取 [網路裝置註冊服務] 。
+   -   在 [角色服務]  頁面上，選取 [網路裝置註冊服務] 。
 
-    -   在 [NDES 的服務帳戶]  頁面上，指定 NDES 服務帳戶。
+   -   在 [NDES 的服務帳戶]  頁面上，指定 NDES 服務帳戶。
 
-    -   在 [NDES 的 CA]  頁面上，按一下 [選取] ，然後選取您設定憑證範本的發行 CA。
+   -   在 [NDES 的 CA]  頁面上，按一下 [選取] ，然後選取您設定憑證範本的發行 CA。
 
-    -   在 [NDES 的密碼編譯]  頁面上，設定符合您公司需求的金鑰長度。
+   -   在 [NDES 的密碼編譯]  頁面上，設定符合您公司需求的金鑰長度。
 
-    在 [確認]  頁面上，按一下 [設定]  來完成精靈。
+   在 [確認]  頁面上，按一下 [設定]  來完成精靈。
 
-2.  在精靈完成之後，在 NDES 伺服器上編輯下列登錄機碼：
+2. 在精靈完成之後，在 NDES 伺服器上編輯下列登錄機碼：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\</strong>
 
-    若要編輯這個機碼，請識別憑證範本的 [目的 (可在其 [要求處理] 索引標籤上找到)]，然後使用您在工作 1 中指定的憑證範本名稱 (而不是範本顯示名稱) 來取代現有的資料，以編輯登錄中的對應項目。 下表會將憑證範本目的對應到登錄中的值：
+   若要編輯這個機碼，請識別憑證範本的 [目的 (可在其 [要求處理] 索引標籤上找到)]，然後使用您在工作 1 中指定的憑證範本名稱 (而不是範本顯示名稱) 來取代現有的資料，以編輯登錄中的對應項目。 下表會將憑證範本目的對應到登錄中的值：
 
-    |憑證範本目的 (在 [處理要求] 索引標籤上)|要編輯的登錄值|SCEP 設定檔的 Intune 管理主控台中看到的值|
-    |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
-    |簽章|SignatureTemplate|數位簽章|
-    |加密|EncryptionTemplate|金鑰加密|
-    |簽章和加密|GeneralPurposeTemplate|金鑰加密<br /><br />數位簽章|
-    例如，如果您的憑證範本目的是 [加密] ，則請將 **EncryptionTemplate** 值編輯為憑證範本的名稱。
+
+   | 憑證範本目的 (在 [處理要求] 索引標籤上) | 要編輯的登錄值 | SCEP 設定檔的 Intune 管理主控台中看到的值 |
+   |------------------------------------------------------------|------------------------|-------------------------------------------------------------|
+   |                         簽章                          |   SignatureTemplate    |                      數位簽章                      |
+   |                         加密                         |   EncryptionTemplate   |                      金鑰加密                       |
+   |                  簽章和加密                  | GeneralPurposeTemplate |        金鑰加密<br /><br />數位簽章        |
+
+   例如，如果您的憑證範本目的是 [加密] ，則請將 **EncryptionTemplate** 值編輯為憑證範本的名稱。
 
 3. NDES 伺服器將會收到很長的 URL (查詢)，而這需要您新增兩個登錄項目︰
 
@@ -245,12 +247,12 @@ I
 
 4. 在 IIS 管理員中，選擇 [預設的網站] -> [要求篩選] -> [編輯功能設定]，然後將 [URL 長度上限] 和 [查詢字串上限] 變更為 *65534* (如所顯示)。
 
-    ![IIS URL 和查詢長度上限](..\media\SCEP_IIS_max_URL.png)
+    ![IIS URL 和查詢長度上限](../media/SCEP_IIS_max_URL.png)
 
-5.  重新啟動伺服器。 在伺服器上執行 **iisreset** 並無法完成這些變更。
-6. 瀏覽至 http://*FQDN*/certsrv/mscep/mscep.dll。 您應該會看到與下面類似的 NDES 頁面︰
+5. 重新啟動伺服器。 在伺服器上執行 **iisreset** 並無法完成這些變更。
+6. 瀏覽至 http://<em>FQDN</em>/certsrv/mscep/mscep.dll。 您應該會看到與下面類似的 NDES 頁面︰
 
-    ![測試 NDES](..\media\SCEP_NDES_URL.png)
+    ![測試 NDES](../media/SCEP_NDES_URL.png)
 
     如果您收到「503 服務無法使用」，請檢查 eventviewer。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 工作 1 會說明這些權限。
 

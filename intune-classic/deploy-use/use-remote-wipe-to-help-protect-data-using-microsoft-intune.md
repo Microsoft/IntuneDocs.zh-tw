@@ -1,29 +1,29 @@
 ---
-title: "使用遠端抹除以協助保護資料"
-description: "Intune 提供選擇性抹除和完整抹除功能，以移除公司機密資料，以及移除許多公司資源的存取權。"
-keywords: 
+title: 使用遠端抹除以協助保護資料
+description: Intune 提供選擇性抹除和完整抹除功能，以移除公司機密資料，以及移除許多公司資源的存取權。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>協助透過使用 Microsoft Intune 的完整或選擇性抹除來保護您的資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 當 Intune 管理的裝置不再被需要、重新設定用途，或是已經遺失時，您可以抹除其中的應用程式和資料。 若要這樣做，Intune 會提供選擇性抹除和完整抹除功能。 使用者也可以在已於 Intune 中註冊的私人擁有裝置上，從 Intune 公司入口網站應用程式發出遠端裝置抹除命令。
 
@@ -40,37 +40,37 @@ ms.lasthandoff: 01/30/2018
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>從 Intune 管理主控台遠端抹除裝置
 
-1.  選取要抹除的裝置。 您可以依使用者或依裝置來尋找裝置。
+1. 選取要抹除的裝置。 您可以依使用者或依裝置來尋找裝置。
 
-    -   **依使用者：**
+   - **依使用者：**
 
-        1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 **[群組]** &gt; **[所有使用者]**。
+     1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 **[群組]** &gt; **[所有使用者]**。
 
-        2.  選擇您要抹除其行動裝置的使用者名稱。 選擇 **[檢視內容]**。
+     2.  選擇您要抹除其行動裝置的使用者名稱。 選擇 **[檢視內容]**。
 
-        3.  在使用者的 [內容] 頁面上，選擇 [裝置]，然後選擇您要抹除之行動裝置的名稱。 若要選取多個裝置，請使用 Ctrl 並按一下滑鼠左鍵。
+     3.  在使用者的 [內容] 頁面上，選擇 [裝置]，然後選擇您要抹除之行動裝置的名稱。 若要選取多個裝置，請使用 Ctrl 並按一下滑鼠左鍵。
 
-    -   **依裝置：**
+   - **依裝置：**
 
-        1.  在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 **[群組]** &gt; **[所有行動裝置]**。
+     1. 在 [Intune 系統管理員主控台](https://manage.microsoft.com/)中，選擇 **[群組]** &gt; **[所有行動裝置]**。
 
-         ![啟動淘汰或抹除作業](../media/dev-sa-wipe.png)
+        ![啟動淘汰或抹除作業](../media/dev-sa-wipe.png)
 
-        2.  選擇 [裝置]，然後選擇您要抹除之行動裝置的名稱。 若要選取多個裝置，請使用 Ctrl 並按一下滑鼠左鍵。
+     2. 選擇 [裝置]，然後選擇您要抹除之行動裝置的名稱。 若要選取多個裝置，請使用 Ctrl 並按一下滑鼠左鍵。
 
-2.  選擇 **[淘汰/抹除]**。
+2. 選擇 **[淘汰/抹除]**。
 
-3.  此時會顯示一則確認訊息，詢問您是否要淘汰裝置。
+3. 此時會顯示一則確認訊息，詢問您是否要淘汰裝置。
 
-    -   若要執行 [選擇性抹除] 僅移除公司應用程式和資料，請選擇 [是]。
+   -   若要執行 [選擇性抹除] 僅移除公司應用程式和資料，請選擇 [是]。
 
-    -   若要執行 [完整抹除] 以清除所有應用程式和資料，並將裝置還原成原廠預設值，請選擇 [淘汰之前抹除裝置]。 這個動作適用於 Windows 8.1 以外的所有平台 **您無法復原完整抹除所移除的資料**。
+   -   若要執行 [完整抹除] 以清除所有應用程式和資料，並將裝置還原成原廠預設值，請選擇 [淘汰之前抹除裝置]。 這個動作適用於 Windows 8.1 以外的所有平台 **您無法復原完整抹除所移除的資料**。
 
 如果裝置已開啟且連線，這過程將花費不到 15 分鐘的時間，以將抹除命令傳播到所有裝置類型。
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>若要在 Azure Active Directory 入口網站中刪除裝置：
 
-1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [系統管理] &gt; [Azure AD]。
+1.  瀏覽至 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或從 [https://portal.office.com](https://portal.office.com) 中選擇 [Admin] &gt; [Azure AD]。
 
 2.  利用頁面左側連結，以您的組織識別碼登入。
 

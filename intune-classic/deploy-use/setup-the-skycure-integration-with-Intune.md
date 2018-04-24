@@ -1,29 +1,29 @@
 ---
-title: "設定 Skycure 與 Intune 整合"
-description: "設定 Skycure 與 Microsoft Intune 整合。"
-keywords: 
+title: 設定 Skycure 與 Intune 整合
+description: 設定 Skycure 與 Microsoft Intune 整合。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 93722f66-7641-4a3f-b1fb-3a0a58a36675
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c981d6fb927d29f0d450c5c7571933626897b4f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 63713cd46da1d1222ec5766a55a7e7344a0a0d26
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>設定 Skycure 與 Intune 整合
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您必須將 Skycure 應用程式新增至 Azure AD，才能使用單一登入功能。
 
@@ -101,7 +101,7 @@ Skycure 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 安
 
     a.  向 Intune 報告裝置的健全狀況和風險
 
-    b。  也向 Intune 報告安全性事件
+    b.  也向 Intune 報告安全性事件
 
 5.  按一下 [套用變更]。
 

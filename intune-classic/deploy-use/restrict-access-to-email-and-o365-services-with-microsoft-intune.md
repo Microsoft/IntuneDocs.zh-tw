@@ -1,33 +1,33 @@
 ---
-title: "保護電子郵件和 Office 365"
-description: "本主題說明如何使用條件式存取，僅允許符合規範的裝置存取 SharePoint Online 與其他服務上的公司電子郵件和公司資料。"
-keywords: 
+title: 保護電子郵件和 Office 365
+description: 本主題說明如何使用條件式存取，僅允許符合規範的裝置存取 SharePoint Online 與其他服務上的公司電子郵件和公司資料。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以使用 Enterprise Mobility + Security (EMS) 的條件式存取，保護公司電子郵件、Office 365 服務 (例如 **Exchange 內部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online**、**商務用 Skype Online**) 以及其他服務的存取。 這項功能可確保只有當裝置符合您透過 Intune 管理主控台或 Azure 傳統入口網站所設定的條件式存取規則時，才能存取公司電子郵件和 Office 365 服務。
 ## <a name="how-does-conditional-access-work"></a>條件式存取的運作方式
-您可以使用合規性原則設定來評估裝置的合規性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 當您使用條件式存取原則搭配裝置相容性原則時，只有符合規範的裝置才能存取服務。 相容性原則和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
+您可以使用合規性原則設定來評估裝置的合規性。 條件式存取原則使用評估來限制或允許對特定服務的存取。 當您使用條件式存取原則搭配裝置相容性原則時，只有符合規範的裝置才能存取服務。 合規性政策和條件式存取原則會部署至使用者。 使用者用來存取服務的所有裝置都會受到檢查是否符合原則。
 
 > [!IMPORTANT]
 > 請記住，必須將合規性原則部署至使用裝置的使用者，才能評估裝置的合規性。
@@ -60,24 +60,24 @@ Microsoft Intune 和 Azure Active Directory (Azure AD) Premium 可完美合作�
 ### <a name="conditional-access-policy"></a>條件式存取原則
 
 您可以根據下列資訊，設定條件式存取原則來限制存取︰
-- 裝置相容性狀態。
+- 裝置合規性狀態。
 - 在裝置上執行的平台。
 - 用來存取服務的應用程式類型。
 
 不同於其他 Intune 原則，您不用部署條件式存取原則。 反之，在您設定原則並選取應該有此原則的使用者之後，此原則就會套用至所有目標使用者。 當使用者成為原則的目標時，他們使用的每個裝置都必須符合規範，才能存取資源。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 
 2. [建立裝置相容性原則](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
-2.  針對下列 Microsoft 雲端服務/產品建立條件式存取原則：
+3. 針對下列 Microsoft 雲端服務/產品建立條件式存取原則：
 
-  - [建立 Exchange Online 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [建立 Exchange 內部部署的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [建立 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [建立舊版 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [建立 SharePoint Online 的條件式存取原則](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [建立商務用 Skype Online 的條件式存取原則](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [建立 Dynamics CRM Online 的條件式存取原則](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [建立 Exchange Online 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [建立 Exchange 內部部署的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [建立 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [建立舊版 Exchange Online Dedicated 的條件存取原則](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [建立 SharePoint Online 的條件式存取原則](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [建立商務用 Skype Online 的條件式存取原則](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [建立 Dynamics CRM Online 的條件式存取原則](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

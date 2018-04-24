@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3da91a23a3aaa7da4f914bb04eda9a2f640db733
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5283d040c7b4c39c495a13a71643b6569eed09bd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>建立原則和發行應用程式
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題將告訴 Intune 系統管理員如何建立原則、發佈應用程式，接著將它們部署到受管理裝置。
 
@@ -63,12 +63,12 @@ ms.lasthandoff: 03/22/2018
 應用程式現在已可在 Intune 中取得，您可將它部署到受管理的裝置：
 - [將應用程式部署到裝置](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - 部署大量採購應用程式：
-    - [iOS - 大量採購方案](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [商務用 Microsoft 網上商店](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS - 大量採購方案](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [商務用 Microsoft 網上商店](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     為部署設定好應用程式後，您就可以[設定應用程式](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)。
 
->[!div class="step-by-step"]
-
->[&larr; **組織使用者和裝置**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自訂公司入口網站** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr; **組織使用者和裝置**](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自訂公司入口網站** &rarr;](/intune/company-portal-customize)  

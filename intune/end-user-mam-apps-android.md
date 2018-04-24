@@ -1,28 +1,28 @@
 ---
-title: "使用應用程式保護原則的 Android 應用程式"
-description: "本主題說明當應用程式交由應用程式保護原則管理時的行為。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用應用程式保護原則的 Android 應用程式
+description: 本主題說明當應用程式交由應用程式保護原則管理時的行為。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本文說明具有應用程式保護原則的應用程式使用者體驗。 應用程式保護原則只適用於工作環境中使用的應用程式：例如，當使用者使用公司帳戶來存取應用程式，或存取儲存於商務用 OneDrive 位置的檔案。
 
@@ -76,4 +76,4 @@ ms.lasthandoff: 02/19/2018
 |Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 Azure 資訊保護授權。 它可用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等等可以在 App 中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰.txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
 
 ## <a name="next-steps"></a>接下來的步驟
-[當 iOS 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-ios.md)
+[當 iOS 應用程式交由應用程式防護原則管理時的行為](end-user-mam-apps-ios.md)

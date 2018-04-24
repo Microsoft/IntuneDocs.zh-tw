@@ -128,7 +128,7 @@
 ### [重設裝置](reset-erase-your-device-cpwebsite.md)
 ### [加密您的裝置](encrypt-your-device-windows.md)
 ### [設定或變更密碼](set-or-change-your-password-windows.md)
-### [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-windows.md)
+### [從 Intune 移除裝置](unenroll-your-device-from-intune-windows.md)
 ### [如果將裝置取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [如果重設裝置，會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)

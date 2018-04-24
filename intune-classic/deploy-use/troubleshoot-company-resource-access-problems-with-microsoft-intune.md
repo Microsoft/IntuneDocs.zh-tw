@@ -1,29 +1,29 @@
 ---
-title: "公司資源存取問題的疑難排解"
-description: "本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。"
-keywords: 
+title: 公司資源存取問題的疑難排解
+description: 本主題中的錯誤和狀態碼可協助您針對資源存取問題進行疑難排解。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a01124eb531de0b1303541d3b5d0717983106ef5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 當 Microsoft Intune 動作傳回錯誤碼時，請使用本主題中的錯誤碼和狀態碼來協助您為問題進行疑難排解。
 

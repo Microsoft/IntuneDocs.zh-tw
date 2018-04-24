@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 更新原則
 
@@ -54,4 +54,5 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="monitor-ios-device-installation-failures"></a>監視 iOS 裝置安裝的錯誤
 <!-- 1352223 -->
-[軟體更新] 窗格提供 [iOS 裝置安裝錯誤] 報表。 在此報表中，您可以檢視受監督的 iOS 裝置清單，這些是 iOS 更新原則之前鎖定、嘗試更新但無法更新的裝置。 針對每部裝置，您可以檢視狀態，以了解為何尚未自動更新裝置。 此清單中不會顯示狀況良好的最新裝置。 我們將最新定義為裝置本身可支援的最新更新。
+[軟體更新] 窗格會提供 [iOS 裝置的安裝失敗] 報告。 在此報表中，您可以檢視受監督的 iOS 裝置清單，這些是 iOS 更新原則之前鎖定、嘗試更新但無法更新的裝置。 針對每部裝置，您可以檢視狀態，以了解為何尚未自動更新裝置。 此清單中不會顯示狀況良好的最新裝置。 我們將最新定義為裝置本身可支援的最新更新。
+

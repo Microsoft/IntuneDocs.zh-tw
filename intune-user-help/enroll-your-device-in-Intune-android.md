@@ -1,27 +1,27 @@
 ---
-title: "在 Intune 註冊 Android 裝置 | Microsoft Docs"
-description: "描述在 Intune 註冊 Android 裝置的方式"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 註冊 Android 裝置 | Microsoft Docs
+description: 描述在 Intune 註冊 Android 裝置的方式
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
@@ -35,57 +35,57 @@ ms.lasthandoff: 01/25/2018
 
 **註冊 Android 裝置：**
 
-1.  從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式。
+1. 從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式。
 
-2.  開啟公司入口網站應用程式。
+2. 開啟公司入口網站應用程式。
 
-3.  在公司入口網站的 [歡迎使用] 畫面上，點選 [登入]，然後使用您的公司或學校帳戶進行登入。
+3. 在公司入口網站的 [歡迎使用] 畫面上，點選 [登入]，然後使用您的公司或學校帳戶進行登入。
 
-    ![Android 版的「公司入口網站」應用程式歡迎畫面，會要求使用者使用其所需的工作或學校帳戶登入。 它也會提醒您不接受 Microsoft 帳戶和其他個人帳戶。](./media/and-enroll-0-welcome-screen.png)   
+   ![Android 版的「公司入口網站」應用程式歡迎畫面，會要求使用者使用其所需的工作或學校帳戶登入。 它也會提醒您不接受 Microsoft 帳戶和其他個人帳戶。](./media/and-enroll-0-welcome-screen.png)   
 
-4.  若公司的支援人員已設定公司條款及條件，請點選 [接受] 以接受條款。 視您目前使用的 Android 版本而定，這個畫面可能與下圖稍有不同。
+4. 若公司的支援人員已設定公司條款及條件，請點選 [接受] 以接受條款。 視您目前使用的 Android 版本而定，這個畫面可能與下圖稍有不同。
 
-    ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
+   ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  使用您的公司或學校帳戶和密碼登入公司入口網站應用程式，然後點選 [登入]。
+5. 使用您的公司或學校帳戶和密碼登入公司入口網站應用程式，然後點選 [登入]。
 
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+   ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  在 [公司存取設定] 畫面上，點選 [繼續]。
+6. 在 [公司存取設定] 畫面上，點選 [繼續]。
 
-    ![公司存取設定畫面](/intune/media/android_cp_enroll_01_1709_new.png)
+   ![公司存取設定畫面](/intune/media/android_cp_enroll_01_1709_new.png)
 
-    > [!NOTE]
-    > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
+   > [!NOTE]
+   > 黃色三角形並不代表您遇到錯誤。 這些圖示表示註冊程序仍有步驟要完成。
 
-7.  檢閱公司支援人員在您的裝置上可查看及無法查看的項目清單，然後點選 [繼續]。
+7. 檢閱公司支援人員在您的裝置上可查看及無法查看的項目清單，然後點選 [繼續]。
 
-    ![隱私權設定](/intune/media/android_cp_enroll_02_after_1710.png)
+   ![隱私權設定](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  在 [What's next?] \(新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
+8. 在 [What's next?] \(新功能) 畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]。
 
-    ![接下來要做什麼畫面](/intune/media/android_cp_enroll_03_after_1710.png)
+   ![接下來要做什麼畫面](/intune/media/android_cp_enroll_03_after_1710.png)
 
-10.  如果您是使用 Android 6.0 或更新版本，請執行此步驟。 否則請移到下一個步驟。
+9. 如果您是使用 Android 6.0 或更新版本，請執行此步驟。 否則請移到下一個步驟。
 
-    如果公司的支援人員已設定特定原則，您可能會看到下列訊息：
-    -   **是否允許公司入口網站進行和管理通話？**
+   如果公司的支援人員已設定特定原則，您可能會看到下列訊息：
+   - **是否允許公司入口網站進行和管理通話？**
 
-        ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其實是允許您的裝置將裝置的國際移動站設備識別 (IMEI) 編號傳送至 Intune。 IMEI 編號類似於序號，可唯一識別行動裝置。
+   如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會撥打或管理您的電話**！ Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其實是允許您的裝置將裝置的國際移動站設備識別 (IMEI) 編號傳送至 Intune。 IMEI 編號類似於序號，可唯一識別行動裝置。
 
-    如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
+   如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
-    -   **是否允許公司入口網站存取您的連絡人？**
+   - **是否允許公司入口網站存取您的連絡人？**
 
-        ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-        如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人！** Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只可讓公司入口網站應用程式建立、使用和管理您的工作帳戶。
+     如果您看到此訊息，請點選 [允許]。 您可以放心地點選 [允許]，因為 **Microsoft 絕不會存取您的連絡人！** Google 控制訊息文字，而且 Microsoft 無法變更它。 當您允許存取時，其只可讓公司入口網站應用程式建立、使用和管理您的工作帳戶。
 
-        如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
+     如果您拒絕存取，則下次登入公司入口網站時會再次出現此訊息，但點選 [不要再詢問] 方塊，即可關閉未來訊息。 如果您稍後決定允許存取，請移至 [設定] &gt; [應用程式] &gt; [公司入口網站] &gt; [權限] &gt; [電話]，然後開啟權限。
 
-11.  在 [啟用裝置管理員] 畫面上，點選 [啟用]。
+10. 在 [啟用裝置管理員] 畫面上，點選 [啟用]。
 
     ![啟用裝置管理員畫面](./media/and-enroll-5-activate.png)
 
@@ -95,11 +95,11 @@ ms.lasthandoff: 01/25/2018
 
     Microsoft 不會控制此訊息，而且我們了解其措辭可能顯得有點極端。 公司入口網站無法只顯示與您組織相關聯的限制和存取。 它們全部都會同時顯示於此畫面上。 如果您針對個別組織的使用方式有疑問，請使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中的連絡資訊，連絡您公司的支援人員以取得詳細資訊。
 
-12.  遵循提示以輸入 PIN 或密碼。 如果您在這部裝置上已設定 PIN 或密碼，您將不會看到這個畫面，或需要輸入新的 PIN 或密碼。
+11. 遵循提示以輸入 PIN 或密碼。 如果您在這部裝置上已設定 PIN 或密碼，您將不會看到這個畫面，或需要輸入新的 PIN 或密碼。
 
     ![輸入 PIN 或密碼](./media/and-enroll-6-PIN-native.png)
 
-13.  如果您使用 Samsung Knox 裝置，請點選 **[確認]**，然後您會看到一個訊息，指出您的裝置已註冊。 如果您使用原生 Android 裝置，則請注意下方畫面，該畫面顯示您的裝置已註冊。
+12. 如果您使用 Samsung Knox 裝置，請點選 **[確認]**，然後您會看到一個訊息，指出您的裝置已註冊。 如果您使用原生 Android 裝置，則請注意下方畫面，該畫面顯示您的裝置已註冊。
 
     ![Samsung Knox 隱私權原則](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 01/25/2018
 
     ![註冊裝置畫面](./media/and-enroll-8-device-enrolling.png)
 
-14. 出現 [公司存取設定] 畫面時，點選 [繼續]。 如果訊息指出您的裝置不相容，請遵循指示來修正問題，然後點選 [繼續]。
+13. 出現 [公司存取設定] 畫面時，點選 [繼續]。 如果訊息指出您的裝置不相容，請遵循指示來修正問題，然後點選 [繼續]。
 
     ![裝置不符合規範但已註冊](/intune/media/android_cp_enroll_05_post_1709.png)
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/25/2018
 
     ![公司存取設定畫面](./media/and-enroll-9d-comp-access-setup.png)  
 
-15. 在 [公司存取設定完成] 畫面上，點選 [完成]。 您的裝置現在已經註冊。
+14. 在 [公司存取設定完成] 畫面上，點選 [完成]。 您的裝置現在已經註冊。
 
     ![公司存取設定完成畫面](./media/and-enroll-10-comp-access-setup-complete.png)
 

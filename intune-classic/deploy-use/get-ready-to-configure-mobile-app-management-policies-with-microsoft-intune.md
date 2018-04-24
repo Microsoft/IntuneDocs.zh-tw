@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>準備好在 Azure 入口網站中設定應用程式保護原則
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題描述您在 Azure 入口網站中建立應用程式保護原則**之前**，必須完成的必要條件與步驟。
 
@@ -74,18 +74,18 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 
 ## <a name="prerequisites"></a>必要條件
 
--   **Microsoft Intune 訂閱**。 使用者需要 Intune 授權，才能取得具有應用程式保護原則的應用程式。
-如果您目前使用 Intune 來管理裝置，則代表您已經有 Intune 訂閱。 如果您已經購買 Enterprise Mobility Suite (EMS) 授權，則也會擁有 Intune 訂閱。 如果您正在嘗試 Intune 以查看 MAM 功能，可以在 [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) 頁面上取得試用帳戶。
+- **Microsoft Intune 訂閱**。 使用者需要 Intune 授權，才能取得具有應用程式保護原則的應用程式。
+  如果您目前使用 Intune 來管理裝置，則代表您已經有 Intune 訂閱。 如果您已經購買 Enterprise Mobility Suite (EMS) 授權，則也會擁有 Intune 訂閱。 如果您正在嘗試 Intune 以查看 MAM 功能，可以在 [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) 頁面上取得試用帳戶。
 
-    若要檢查您是否擁有 Intune 訂閱，請移至 Office 入口網站的 [帳單] 頁面。  如果您有訂閱，在訂閱中應該會看到 Intune 為 [作用中]。
+  若要檢查您是否擁有 Intune 訂閱，請移至 Office 入口網站的 [帳單] 頁面。  如果您有訂閱，在訂閱中應該會看到 Intune 為 [作用中]。
 
--   下列作業需要 **Office 365 訂閱**：
+- 下列作業需要 **Office 365 訂閱**：
 
   - 將應用程式保護原則套用至具有多重身分識別支援的應用程式。
 
   - 建立 SharePoint Online 和 Exchange Online 工作帳戶。 不支援 Exchange 內部部署和 SharePoint 內部部署。
 
--   **針對新式驗證的商務用 Skype Online 設定**。 如需詳細資訊，請參閱[啟用新式驗證](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
+- **針對新式驗證的商務用 Skype Online 設定**。 如需詳細資訊，請參閱[啟用新式驗證](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
 
 
 - Azure Active Directory (Azure AD) 以建立使用者。 當使用者開啟應用程式並輸入公司認證時，Azure AD 便會驗證使用者。

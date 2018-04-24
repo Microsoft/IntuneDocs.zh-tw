@@ -1,35 +1,35 @@
 ---
-title: "Wi-Fi 連線"
-description: "使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路。"
-keywords: 
+title: Wi-Fi 連線
+description: 使用 Wi-Fi 設定檔協助使用者連線至您的 Wi-Fi 網路。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>將裝置設為連接至您的公司 Wi-Fi 網路
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune Wi-Fi 設定檔，將無線網路設定部署給您組織中的使用者與裝置。 當您部署 Wi-Fi 設定檔時，您的使用者不需要自行設定即可存取公司的 Wi-Fi。
 
 例如，您安裝名為 **Contoso Wi-fi** 的新 Wi-fi 網路，而且想要將所有 iOS 裝置都設定為連線至此網路。 程序如下︰
 
-![Wi-Fi 設定檔程序摘要](..\media\wi-fi-process-diagram.png)
+![Wi-Fi 設定檔程序摘要](../media/wi-fi-process-diagram.png)
 
 1.   建立 Wi-Fi 設定檔，內含連線到 **Contoso Wi-Fi** 無線網路所需的設定。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/12/2017
 
 針對執行 Windows 8.1 或是 Windows 10 Desktop 或行動裝置版作業系統的裝置，您可以匯入先前匯出至檔案的 Wi-Fi 組態設定檔。 如需詳細資料，請參閱[匯出或匯入 Windows 裝置的 Wi-Fi 設定檔](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices)。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則]** &gt; **[新增原則]**。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com) 中，選擇 [原則] &gt; [新增原則]。
 
 2.  選取下列其中一個原則類型，然後選擇 [建立原則]：
 
@@ -67,23 +67,25 @@ ms.lasthandoff: 12/12/2017
 
 沒有針對此原則類型的建議設定。 您必須建立自訂原則。
 
-3.  提供設定檔的名稱和說明。
+3. 提供設定檔的名稱和說明。
 
 4. 指定 [網路連線]  值。
- - **SSID (服務組識別元)**︰如果您想讓使用者看到網路名稱而不是 SSID，請選取此選項。
- - **在網路未廣播其名稱 (SSID) 時進行連線**：選取此選項，使裝置能在網路未列於網路清單時 (因為網路已隱藏且未廣播其名稱) 仍可連線到該網路。
+   - **SSID (服務組識別元)**︰如果您想讓使用者看到網路名稱而不是 SSID，請選取此選項。
+   - **在網路未廣播其名稱 (SSID) 時進行連線**：選取此選項，使裝置能在網路未列於網路清單時 (因為網路已隱藏且未廣播其名稱) 仍可連線到該網路。
 
 5. 設定所選平台的 [安全性設定]  。 可用的設定取決於您選取的安全性類型。 相關說明請參閱[安全性設定](#security-settings)。
 
 6. 設定 「Proxy 設定」 (僅限 iOS 和 MAC OS X)。
 
-    |設定名稱|詳細資訊|使用時機|
-    |----------------|-------------------|-------------|
-    |**此 Wi-Fi 連線的 Proxy 設定**|選擇 Proxy 設定類型：<br /><br />-   **無** (預設)<br />-   **手動** - 手動指定 Proxy 伺服器的 URL 及連接埠號碼。<br />-   **自動** - 使用組態檔來設定 Proxy 伺服器。|永遠|
-    |[Proxy 伺服器位址] 和 [連接埠號碼]|指定 Proxy 伺服器的 URL 和連接埠編號。|如果將 [此 Wi-Fi 連線的 Proxy 設定] 設為 [手動]|
-    |**Proxy 伺服器 URL**|指定包含 Proxy 伺服器設定之檔案的 URL。|如果將 [此 Wi-Fi 連線的 Proxy 設定] 設為 [自動]|
 
-7.  儲存 Wi-Fi 設定檔
+   |                              設定名稱                              |                                                                                                                                詳細資訊                                                                                                                                 |                                            使用時機                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>此 Wi-Fi 連線的 Proxy 設定</strong>        | 選擇 Proxy 設定類型：<br /><br />-   <strong>無</strong> (預設)<br />-   <strong>手動</strong> - 手動指定 Proxy 伺服器的 URL 及連接埠號碼。<br />-   <strong>自動</strong> - 使用組態檔來設定 Proxy 伺服器。 |                                              永遠                                               |
+   | [Proxy 伺服器位址] 和 [連接埠號碼] |                                                                                                              指定 Proxy 伺服器的 URL 和連接埠編號。                                                                                                               |  如果將 [此 Wi-Fi 連線的 Proxy 設定] 設為 [手動]   |
+   |                   <strong>Proxy 伺服器 URL</strong>                    |                                                                                                      指定包含 Proxy 伺服器設定之檔案的 URL。                                                                                                       | 如果將 [此 Wi-Fi 連線的 Proxy 設定] 設為 [自動] |
+
+
+7. 儲存 Wi-Fi 設定檔
 
 新的原則會顯示在 [原則] 工作區的 [設定原則] 節點中。 如需部署設定檔的資訊，請參閱**後續步驟**。
 
@@ -118,8 +120,8 @@ ms.lasthandoff: 12/12/2017
 
     |設定名稱|詳細資訊|
     |----------------|--------------------|
-    |**Name**|輸入 Wi-Fi 設定檔的唯一名稱，協助您在 Intune 主控台中識別該 Wi-Fi 設定檔。|
-    |**說明**|提供 Wi-Fi 設定檔的描述以及協助您找到它的其他相關資訊。|
+    |**名稱**|輸入 Wi-Fi 設定檔的唯一名稱，協助您在 Intune 主控台中識別該 Wi-Fi 設定檔。|
+    |**描述**|提供 Wi-Fi 設定檔的描述以及協助您找到它的其他相關資訊。|
 
 4.  指定下列的 [自訂 Wi-Fi 設定檔] 標題值：
 
@@ -177,5 +179,5 @@ ms.lasthandoff: 12/12/2017
 |**啟用識別隱私權 (外部識別)**|指定在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。<br /><br />在驗證期間，最初會傳送此匿名身分識別。 然後在安全通道中傳送真實的身分識別。|如果 [EAP 類型] 設為 [PEAP]、[EAP-TTLS] 或 [EAP-FAST]。|
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 在[預先共用金鑰 Wi-Fi 設定檔](pre-shared-key-wi-fi-profile.md)中，了解如何使用預先共用的金鑰來建立 Wi-Fi 設定檔。

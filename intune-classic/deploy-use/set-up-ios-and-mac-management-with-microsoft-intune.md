@@ -1,29 +1,29 @@
 ---
 title: Set up iOS and Mac management
-description: "使用 Microsoft Intune 來支援 iOS 裝置 (包括 iPad、iPhone 及 Mac OS X 裝置) 的行動裝置管理 (MDM)。"
-keywords: 
+description: 使用 Microsoft Intune 來支援 iOS 裝置 (包括 iPad、iPhone 及 Mac OS X 裝置) 的行動裝置管理 (MDM)。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3dccbc4bc4e300aa5d2e804e2bf500826c0bdb8e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 280efe7e7a5a1616ebab9abce7b7a5d78e321e7c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-and-mac-device-management"></a>設定 iOS 和 Mac 裝置管理
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 可啟用 iPad、iPhone 和 macOS 裝置的行動裝置管理 (MDM)，且可提供使用者對公司電子郵件和應用程式的存取。 Intune 需要 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 和 Mac 裝置。 將憑證新增到 Intune 之後，使用者就可以安裝公司入口網站應用程式來註冊其裝置，或者系統管理員可以設定[公司擁有的 iOS 裝置管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 

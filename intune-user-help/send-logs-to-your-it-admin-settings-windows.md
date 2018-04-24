@@ -1,37 +1,37 @@
 ---
-title: "針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs"
-description: "在 Intune 中註冊 Windows 10 1511 裝置"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs
+description: 在 Intune 中註冊 Windows 10 1511 裝置
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a0f0b566b33d09ba09aee0d479b21f58dedf489
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>針對 Windows 10 將記錄從設定應用程式傳送給公司支援人員
 
 如果您在使用公司所管理的 Windows 10 裝置時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
 
-1.  開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
-2.  移至 [帳戶] > [存取公司或學校資源]。
-3.  選取 [匯出您的管理記錄檔]。
+1. 開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
+2. 移至 [帳戶] > [存取公司或學校資源]。
+3. 選取 [匯出您的管理記錄檔]。
 
-  ![「存取公司或學校資源畫面」，其中 [相關設定] 標題下顯示 [匯出] 選項。](./media/w10-export-logs.png)
+   ![「存取公司或學校資源畫面」，其中 [相關設定] 標題下顯示 [匯出] 選項。](./media/w10-export-logs.png)
 
 4. 記錄檔會儲存在 **C:\Users\Public\Public Documents\MDMDiagnostics**。 將建立兩個檔案：一個是記錄檔本身，另一個是可讓您的系統管理員在不同程式 (例如 Microsoft Excel) 中檢閱記錄檔的特殊文件。 將這兩個檔案附加到電子郵件並將該電子郵件傳送給您的系統管理員。如果您要執行此動作多次，只需從您建立記錄檔的日期選擇檔案即可。 
 

@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中為 Windows 裝置建立裝置合規性政策
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 適用於 Windows 的 Intune 裝置合規性政策，會指定 Windows 裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則與條件式存取來允許或禁止存取公司資源，並針對不符合規範的裝置取得裝置報告及採取動作。 您可於 Azure 入口網站中為每個平台建立裝置合規性政策。 若要深入了解建立合規性政策前必須滿足的合規性政策與必要條件，請參閱[裝置合規性入門](device-compliance-get-started.md)。
 
@@ -74,24 +74,27 @@ ms.lasthandoff: 03/22/2018
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>系統安全性設定
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone 裝置的相容性原則設定
 
-### <a name="password"></a>密碼
+Windows Phone 8.1 及更新版本支援這一節所列的設定。
+### <a name="system-security-settings"></a>系統安全性設定
+
+#### <a name="password"></a>密碼
 
 - **需要密碼來解除鎖定行動裝置︰**將此設定為 [是]，以要求使用者在存取他們的裝置前輸入密碼。
 - **允許簡單密碼**︰將此項目設定為 [是] 可允許使用者建立簡單密碼，例如 '**1234**' 或 '**1111**'。
 - **密碼長度下限：**指定使用者密碼至少必須包含的數字或字元數。
+
+  對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
 - **必要的密碼類型：**指定使用者是否必須建立**英數**或**數值**密碼。
-
-對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
-
+  
 - **字元集數目下限**：若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數。 四個字元集為：
   - 小寫字母
   - 大寫字母
   - 符號
   - 數字
 
-若要將此設定設為較高的數目，使用者必須建立更複雜的密碼。 對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
+  若要將此設定設為較高的數目，使用者必須建立更複雜的密碼。 對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
 
 - **停止活動幾分鐘後需要輸入密碼**：指定閒置多久後使用者必須重新輸入密碼。
 - **密碼到期日 (天數)：**選取使用者的密碼到期，而必須建立新密碼前的天數。
@@ -99,15 +102,16 @@ ms.lasthandoff: 03/22/2018
 - **不得重複使用以前用過的密碼：**如果已選取 [記住密碼歷程記錄]，請指定不得重複使用的舊密碼數目。
 - **當裝置從閒置狀態返回時，需要密碼：**這項設定應該與 [在非使用狀態幾分鐘後需要輸入密碼] 設定一起使用。 系統會提示使用者輸入密碼，來存取 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定時間未作用的裝置。
 
-**這項設定只適用於 Windows 10 行動裝置版裝置。**
+> [!NOTE]
+> 這項設定只適用於 Windows 10 Mobile 裝置。
 
-### <a name="encryption"></a>加密
+#### <a name="encryption"></a>加密
 
 - **行動裝置需要加密︰將此**設為 [是]，以要求裝置加密才能連線到資源。
 
 
 
-## <a name="device-health-settings"></a>裝置健全狀況設定
+### <a name="device-health-settings"></a>裝置健全狀況設定
 
 - **需要裝置回報為狀況良好：**您可以設定規則，要求在新的或現有的合規性政策中，**Windows 10 Mobile** 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
   - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
@@ -116,53 +120,56 @@ ms.lasthandoff: 03/22/2018
 
 如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
 
-## <a name="device-property-settings"></a>裝置屬性設定
+### <a name="device-property-settings"></a>裝置屬性設定
 
 - **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 - **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## <a name="system-security-settings"></a>系統安全性設定
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows 電腦的相容性原則設定
 
-### <a name="password"></a>密碼
+Windows 電腦支援這一節所列的設定。
+### <a name="system-security-settings"></a>系統安全性設定
+
+#### <a name="password"></a>密碼
 
 - **密碼長度下限︰** - Windows 8.1 上支援。
 
-指定使用者密碼中至少必須包含的數字或字元數。
+  指定使用者密碼中至少必須包含的數字或字元數。
 
-對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
+  對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
 
 - **需要的密碼類型**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定
 
-指定使用者必須建立**英數字元**或**數字**密碼。
+  指定使用者必須建立**英數字元**或**數字**密碼。
 
 - **字元集數目下限**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。 若將 [必要的密碼類型] 設為 [英數字元]，此設定即會指定密碼至少須包含的字元集數下限。 四個字元集為：
   - 小寫字母
   - 大寫字母
   - 符號
-  - 數字：若要將此設定設為較高的數目，使用者必須建立更複雜的密碼。
+  - 數字 
 
-對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
+    若要將此設定設為較大的數目，使用者必須建立更複雜的密碼。 對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
 
 - **要求密碼前的閒置分鐘數︰** - Windows RT、Windows RT 8.1 和 Windows 8.1 上支援
 
-指定使用者必須重新輸入密碼之前的閒置時間。
+  指定使用者必須重新輸入密碼之前的閒置時間。
 
 - **密碼到期 (天數)**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。
 
-選取使用者密碼到期，而必須建立新密碼前的天數。
+  選取使用者密碼到期，而必須建立新密碼前的天數。
 
 - **所需的密碼歷程記錄︰** - Windows RT、Windows RT 和 Windows 8.1 上支援。
 
-共同使用此設定與 [不得重複使用以前用過的密碼] 可限制建立先前使用過的密碼。
+  共同使用此設定與 [不得重複使用以前用過的密碼] 可限制建立先前使用過的密碼。
 
 - **不得重複使用以前用過的密碼︰** - Windows RT、Windows RT 8.1 和 Windows 8.1 上支援
 
-若選取 [記住密碼歷程記錄]，必須指定不得重複使用的舊密碼數。
+  若選取 [記住密碼歷程記錄]，必須指定不得重複使用的舊密碼數。
 
 
-## <a name="device-health-settings"></a>裝置健全狀況設定
+### <a name="device-health-settings"></a>裝置健全狀況設定
 
 - **需要裝置回報為狀況良好︰** - Windows 10 裝置上支援。 您可以設定規則，要求在新的或現有的合規性政策中，Windows 10 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
   - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
@@ -172,17 +179,17 @@ ms.lasthandoff: 03/22/2018
 
 如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
 
-## <a name="device-property-settings"></a>裝置屬性設定
+### <a name="device-property-settings"></a>裝置屬性設定
 
 - **所需的 OS 下限︰** - Windows 8.1 和 Windows 10 上支援。
 
-在此指定 major.minor.build.CU 數目。 此版本號碼與 ```winver``` 命令傳回的版本必須一致。
+  在此指定 major.minor.build.CU 數目。 build.CU 號碼必須與 ```winver``` 命令所傳回的版本對應。
 
-若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
+  若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
 - **允許的最高 OS 版本︰** - Windows 8.1 和 Windows 10 上支援。
 
-當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
 若要尋找要用於**所需的 OS 下限**和**允許的最高 OS 版本**設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 Winver 命令會傳回 OS 的回報版本。
 

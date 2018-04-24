@@ -1,27 +1,27 @@
 ---
-title: "安裝電腦用戶端軟體"
-description: "使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。"
-keywords: 
+title: 安裝電腦用戶端軟體
+description: 使用本指南可協助您透過 Microsoft Intune 用戶端軟體管理 Windows 電腦。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用戶端軟體可以使用下列方式安裝：
 
@@ -39,13 +39,13 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 除了使用者自行安裝 Intune 用戶端軟體以外的所有方法，都必須由 IT 管理員先下載軟體，然後才能部署至使用者。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [系統管理] &gt; [用戶端軟體下載]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [系統管理] &gt; [用戶端軟體下載]。
 
-  ![下載 Intune 電腦用戶端](../media/pc-sa-client-download.png)
+   ![下載 Intune 電腦用戶端](../media/pc-sa-client-download.png)
 
 2. 在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
 
-  Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
+   Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
 
 3. 將安裝套件的內容解壓縮到您的網路上安全的位置。
 
@@ -174,7 +174,7 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [報表] &gt; [電腦清查報表]。
 
-2.  在 建立新報表 頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下檢視報表。
+2.  在 [建立新報表] 頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下 [檢視報表]。
 
 3.  [電腦清查報表] 頁面會隨即在新視窗中開啟，顯示已在 Intune 中註冊成功的所有電腦。
 
@@ -253,6 +253,6 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>接下來的步驟
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
 [為用戶端安裝進行疑難排解](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

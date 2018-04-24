@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune 的包含與排除應用程式指派"
-titlesuffix: 
-description: "了解如何使用 Microsoft Intune 來包含與排除應用程式指派。"
-keywords: 
+title: Microsoft Intune 的包含與排除應用程式指派
+titlesuffix: ''
+description: 了解如何使用 Microsoft Intune 來包含與排除應用程式指派。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -33,11 +33,13 @@ ms.lasthandoff: 03/12/2018
 >設定應用程式的群組指派時，**不適用**類型已被排除群組功能所取代。 
 >
 >Intune 會在主控台中提供預先建立的**所有使用者**和**所有裝置**群組，附有內建的最佳化方便您使用。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。  
+>
+>Android Enterprise (先前稱為 Android for Work) 支援包含及排除群組，但不支援預先建立的 [所有使用者] 和 [所有裝置] 內建群組。
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>指派應用程式時包含與排除群組 
 使用包含與排除指派將應用程式指派給群組：
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Microsoft Intune] 刀鋒視窗上選取 [Mobile Apps]。
 4. 在 [Mobile Apps] 刀鋒視窗上選取 [應用程式]。 已新增應用程式清單隨即出現。
 5. 選取您要指派的應用程式。 隨即顯示與應用程式相關的儀表板。 

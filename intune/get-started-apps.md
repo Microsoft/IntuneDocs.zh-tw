@@ -1,25 +1,25 @@
 ---
-title: "開始在 Microsoft Intune 中使用應用程式"
-titlesuffix: 
-description: "找到應用程式，並將其新增至裝置，讓您的員工可以完成工作。"
-keywords: 
+title: 開始在 Microsoft Intune 中使用應用程式
+titlesuffix: ''
+description: 找到應用程式，並將其新增至裝置，讓您的員工可以完成工作。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>開始在 Microsoft Intune 中新增應用程式
 
@@ -34,7 +34,7 @@ Intune 可讓您將下列應用程式類型新增和指派至公司裝置：
 ## <a name="how-do-i-assign-a-public-store-app"></a>如何指派公用市集應用程式？
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 選取 [行動應用程式]，然後選取 [應用程式]。
 4. 選取 [新增]，然後選取 [iOS] 作為 [應用程式類型]。
 5. 選擇 [選取應用程式] 顯示 [Search the App Store] (搜尋應用程式市集) 窗格。

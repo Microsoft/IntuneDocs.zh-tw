@@ -1,27 +1,27 @@
 ---
-title: "使用 Microsoft Intune - Azure 升級 Windows 10 裝置 | Microsoft Docs"
-description: "在 Microsoft Intune 中建立裝置設定檔，將 Windows 10 裝置升級至較新版本。 另請參閱 Windows 10 專業版、N 版本、教育版、雲端版、企業版、核心版、全像攝影版和行動裝置版的支援升級路徑。"
-keywords: 
+title: 使用 Microsoft Intune - Azure 升級 Windows 10 裝置 | Microsoft Docs
+description: 在 Microsoft Intune 中建立裝置設定檔，將 Windows 10 裝置升級至較新版本。 另請參閱 Windows 10 專業版、N 版本、教育版、雲端版、企業版、核心版、全像攝影版和行動裝置版的支援升級路徑。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>在 Intune 中設定 Windows 10 版本升級設定檔
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 在 Intune 中設定升級設定檔以將執行 Windows 10 版本的裝置自動升級為不同的版本。 另請參閱支援的升級路徑。
 
@@ -128,10 +128,10 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 5. 從 [平台] 下拉式清單中，選擇 [Windows 10 及更新版本]。
 6. 從 [設定檔類型] 下拉式清單中，選擇 [版本升級]。
 7. 在 [版本升級] 內容中，輸入下列設定：
-  - **要升級的目標版本** - 從下拉式清單中，選取要升級的目標裝置之 Windows 10 桌面版、Windows 10 全像攝影版或 Windows 10 行動裝置版的版本。
-  - **產品金鑰** - 輸入您從 Microsoft 收到的產品金鑰，可用來升級所有 Windows 10 Desktop 目標裝置。 
+   - **要升級的目標版本** - 從下拉式清單中，選取要升級的目標裝置之 Windows 10 桌面版、Windows 10 全像攝影版或 Windows 10 行動裝置版的版本。
+   - **產品金鑰** - 輸入您從 Microsoft 收到的產品金鑰，可用來升級所有 Windows 10 Desktop 目標裝置。 
     建立包含產品金鑰的原則之後，即無法更新金鑰，且會基於安全性考量而隱藏。 若要變更產品金鑰，請再次輸入完整金鑰。
-  - **授權檔** - 選擇 [瀏覽] 以選取您從 Microsoft 收到的授權檔。 這個授權檔包含您要將目標裝置升級的 Windows 全像攝影版或 Windows 10 行動裝置版的授權資訊。
+   - **授權檔** - 選擇 [瀏覽] 以選取您從 Microsoft 收到的授權檔。 這個授權檔包含您要將目標裝置升級的 Windows 全像攝影版或 Windows 10 行動裝置版的授權資訊。
 8. 完成時，請選取 [建立] 以儲存變更。
 
 設定檔隨即建立，並列在設定檔中。

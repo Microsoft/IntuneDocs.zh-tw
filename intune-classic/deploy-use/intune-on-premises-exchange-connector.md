@@ -15,32 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f5976b76f839a973355ed2c0b157f8c72733bf64
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安裝 Intune On-Premises Exchange Connector
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要設定連線，讓 Microsoft Intune 能夠與主控行動裝置信箱的 Exchange Server 通訊，您必須從 Intune 管理主控台下載並設定 On-Premises Exchange Connector。 Intune 僅支援每個訂用帳戶一個任一類型的 Exchange Connector 連線。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>On-Premises Exchange Connector 需求
 下表列出安裝 On-Premises Exchange Connector 之電腦的需求。
 
-|需求|詳細資訊|
-|---------------|--------------------|
-|作業系統|在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此 Connector。|
-|Microsoft Exchange|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為**新**或**舊版**設定，請連絡您的帳戶管理員。|
-|行動裝置管理授權單位| [將行動裝置管理授權單位設定為 Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)。|
-|硬體|安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。|/intune/users-permissions-add
-|Active Directory 同步處理|您必須[設定 Active Directory 同步處理](/intune/users-permissions-add)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。|
-|其他軟體|託管連接器的電腦必須安裝 Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完整安裝。|
-|Network (網路)|安裝連接器的電腦所在的網域，必須與託管 Exchange Server 的網域有信任關係。<br /><br />電腦需要設定，使其能夠在連接埠 80 和 443 上，透過防火牆和 Proxy 伺服器來存取 Intune 服務。 Intune 使用的網域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
+|            需求             |                                                                                                                                                                                                        詳細資訊                                                                                                                                                                                                        |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         作業系統          |                                                                          在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的電腦上，Intune 支援 On-Premises Exchange Connector。<br /><br />任何 Server Core 安裝都不支援此 Connector。                                                                          |
+|         Microsoft Exchange         |                                                                           On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為<strong>新</strong>或<strong>舊版</strong>設定，請連絡您的帳戶管理員。                                                                           |
+| 行動裝置管理授權單位 |                                                                                                                                                       [將行動裝置管理授權單位設定為 Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)。                                                                                                                                                        |
+|              硬體              |                                                                                                                                                     安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。                                                                                                                                                      |
+|  Active Directory 同步處理  |                                                                             您必須[設定 Active Directory 同步處理](/intune/users-permissions-add)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用 Connector 將 Intune 連線到您的 Exchange Server。                                                                              |
+|        其他軟體         |                                                                                                                                           託管連接器的電腦必須安裝 Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完整安裝。                                                                                                                                           |
+|              Network (網路)               | 安裝連接器的電腦所在的網域，必須與託管 Exchange Server 的網域有信任關係。<br /><br />電腦需要設定，使其能夠在連接埠 80 和 443 上，透過防火牆和 Proxy 伺服器來存取 Intune 服務。 Intune 使用的網域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。 |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange Cmdlet 需求
 
@@ -77,45 +76,45 @@ ms.lasthandoff: 03/22/2018
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安裝和設定 Intune On-Premises Exchange Connector
 請執行下列步驟來安裝 Intune On-Premises Exchange Connector。 每個 Intune 訂閱只可安裝 On-Premises Exchange Connector 一次，而且只可安裝在一部電腦上。 如果您嘗試設定另一個 On-Premises Exchange Connector，則新連線會取代原始連線。
 
-1.  在 On-Premises Connector 支援的作業系統上，將 **Exchange_Connector_Setup.zip** 中的檔案解壓縮到安全位置。
+1. 在 On-Premises Connector 支援的作業系統上，將 **Exchange_Connector_Setup.zip** 中的檔案解壓縮到安全位置。
 
-2.  在檔案解壓縮之後，請開啟解壓縮的資料夾，然後按兩下 **Exchange_Connector_Setup.exe** 安裝 On-Premises Exchange Connector。
+2. 在檔案解壓縮之後，請開啟解壓縮的資料夾，然後按兩下 **Exchange_Connector_Setup.exe** 安裝 On-Premises Exchange Connector。
 
-    > [!IMPORTANT]
-    > 如果目的地資料夾不是安全的位置，您應該在安裝 On-Premises Connector 之後刪除 **WindowsIntune.accountcert** 憑證檔案。
+   > [!IMPORTANT]
+   > 如果目的地資料夾不是安全的位置，您應該在安裝 On-Premises Connector 之後刪除 **WindowsIntune.accountcert** 憑證檔案。
 
-3.  在 [Microsoft Intune Exchange Connector] 對話方塊中，選取 [內部部署 Microsoft Exchange Server] 或 [託管 Microsoft Exchange Server]。
+3. 在 [Microsoft Intune Exchange Connector] 對話方塊中，選取 [內部部署 Microsoft Exchange Server] 或 [託管 Microsoft Exchange Server]。
 
-  ![選擇 Exchange Server 類型](../media/IntuneSA1dconfigureExchConnector.png)
+   ![選擇 Exchange Server 類型](../media/IntuneSA1dconfigureExchConnector.png)
 
-  如果是內部部署 Exchange Server，請提供主控 **Client Access Server** 角色之 Exchange Server 的伺服器名稱或完整網域名稱。
+   如果是內部部署 Exchange Server，請提供主控 **Client Access Server** 角色之 Exchange Server 的伺服器名稱或完整網域名稱。
 
-  如果是託管 Exchange 伺服器，請提供 Exchange 伺服器位址。 若要尋找託管 Exchange 伺服器 URL：
+   如果是託管 Exchange 伺服器，請提供 Exchange 伺服器位址。 若要尋找託管 Exchange 伺服器 URL：
 
-    1. 開啟適用於 Office 365 的 Outlook Web App。
+   1. 開啟適用於 Office 365 的 Outlook Web App。
 
-    2. 選擇左上方的 **？** 圖示，然後選取 [關於]。
+   2. 選擇左上方的 **？** 圖示，然後選取 [關於]。
 
-    3. 找到 [POP 外部伺服器]  值。
+   3. 找到 [POP 外部伺服器]  值。
 
-    4. 選擇 [Proxy 伺服器]，以便指定託管 Exchange 伺服器的 Proxy 伺服器設定。
-        1. 選取 [同步處理行動裝置資訊時使用 Proxy 伺服器] 。
+   4. 選擇 [Proxy 伺服器]，以便指定託管 Exchange 伺服器的 Proxy 伺服器設定。
+       1. 選取 [同步處理行動裝置資訊時使用 Proxy 伺服器] 。
 
-        2. 輸入用來存取伺服器的 [Proxy 伺服器名稱]  和 [連接埠號碼]  。
+       2. 輸入用來存取伺服器的 [Proxy 伺服器名稱]  和 [連接埠號碼]  。
 
-        3. 如果需要提供使用者認證才能存取 Proxy 伺服器，請選取 [使用認證來連線至 Proxy 伺服器]。 然後輸入 [網域\使用者] 和 [密碼]。
+       3. 如果需要提供使用者認證才能存取 Proxy 伺服器，請選取 [使用認證來連線至 Proxy 伺服器]。 然後輸入 [網域\使用者] 和 [密碼]。
 
-        4. 選擇 [確定]。
+       4. 選擇 [確定]。
 
-    5. 在 [使用者 (網域\使用者)] 和 [密碼] 欄位中，輸入連線至 Exchange Server 所需的認證。
+   5. 在 [使用者 (網域\使用者)] 和 [密碼] 欄位中，輸入連線至 Exchange Server 所需的認證。
 
-    6.  提供傳送通知給使用者 Exchange Server 信箱所需的系統管理認證。 您可以在 Intune 中使用條件式存取原則來設定這些通知。
+   6.  提供傳送通知給使用者 Exchange Server 信箱所需的系統管理認證。 您可以在 Intune 中使用條件式存取原則來設定這些通知。
 
-        請確定自動探索服務和 Exchange Web 服務是在 Exchange Client Access Server 上設定。 如需詳細資訊，請參閱 [Client Access Server](https://technet.microsoft.com/library/dd298114.aspx)。
+       請確定自動探索服務和 Exchange Web 服務是在 Exchange Client Access Server 上設定。 如需詳細資訊，請參閱 [Client Access Server](https://technet.microsoft.com/library/dd298114.aspx)。
 
-    7.  在 [密碼] 欄位中提供此帳戶的密碼，以便 Intune 能夠存取 Exchange Server。
+   7.  在 [密碼] 欄位中提供此帳戶的密碼，以便 Intune 能夠存取 Exchange Server。
 
-    8. 選擇 [連線]。
+   8. 選擇 [連線]。
 
 設定連線可能需要幾分鐘的時間。
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 *裝置註冊管理員* (DEM) 帳戶是特殊的使用者帳戶，最多可以註冊 1,000 部裝置。 將現有的使用者加入 DEM 帳戶，能夠賦予他們特殊的 DEM 功能。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置作為共用裝置使用 (即無使用者親和性)，而不是作為個人 ("BYOD") 裝置使用。  
 
@@ -67,22 +67,22 @@ DEM 使用者可以︰
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
 
-1.  請確定您要新增至 DEM 帳戶的使用者已經存在。 如果需要新增使用者，請登入 [Office 365 入口網站](https://go.microsoft.com/fwlink/p/?LinkId=698854)，並遵循[個別或大量將使用者新增至 Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 中的步驟。
+1. 請確定您要新增至 DEM 帳戶的使用者已經存在。 如果需要新增使用者，請登入 [Office 365 入口網站](https://go.microsoft.com/fwlink/p/?LinkId=698854)，並遵循[個別或大量將使用者新增至 Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 中的步驟。
 
-2.  使用您的系統管理員認證登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)。
+2. 使用您的系統管理員認證登入 [Microsoft Intune 管理主控台](https://manage.microsoft.com)。
 
-3.  在瀏覽窗格中選擇 [系統管理]，並移至 [系統管理員管理]，然後選取 [裝置註冊管理員]。 [裝置註冊管理員] 頁面隨即開啟。
+3. 在瀏覽窗格中選擇 [系統管理]，並移至 [系統管理員管理]，然後選取 [裝置註冊管理員]。 [裝置註冊管理員] 頁面隨即開啟。
 
-4.  選擇 [Add… (新增...)]。 [新增裝置註冊管理員]  對話方塊隨即開啟。
+4. 選擇 [Add… (新增...)]。 [新增裝置註冊管理員]  對話方塊隨即開啟。
 
-5.  輸入 Intune 帳戶的 [使用者識別碼]，然後選擇 [確定]。
+5. 輸入 Intune 帳戶的 [使用者識別碼]，然後選擇 [確定]。
 
-    DEM 使用者現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序來註冊行動裝置。 管理員使用者可以在最多 1000 部裝置上安裝公司入口網站應用程式，並使用其 DEM 認證註冊裝置。 如需每個平台的使用者註冊步驟，請參閱︰
+   DEM 使用者現在可以在公司入口網站中，運用使用者用於 BYOD 案例中的同一程序來註冊行動裝置。 管理員使用者可以在最多 1000 部裝置上安裝公司入口網站應用程式，並使用其 DEM 認證註冊裝置。 如需每個平台的使用者註冊步驟，請參閱︰
 
-  - [在 Intune 註冊 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [將您的 Android 裝置註冊到 Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [在 Intune 註冊 iOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [將您的 Android 裝置註冊到 Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [在 Intune 註冊 Windows 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員
 

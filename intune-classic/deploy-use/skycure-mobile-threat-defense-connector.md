@@ -1,29 +1,29 @@
 ---
-title: "Skycure Mobile Threat Defense 連接器"
-description: "使用 Skycure Mobile Threat Defense 連接器與 Intune，根據裝置、網路和應用程式風險，保護對公司資源的存取。"
-keywords: 
+title: Skycure Mobile Threat Defense 連接器
+description: 使用 Skycure Mobile Threat Defense 連接器與 Intune，根據裝置、網路和應用程式風險，保護對公司資源的存取。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f79e793ec6931d6497c6b66eee98aea39786e962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense 連接器
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以根據由 Skycure (一個與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評估，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估以收集自執行 Skycure 裝置的遙測作為基礎，包括︰
 

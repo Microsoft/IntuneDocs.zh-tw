@@ -1,29 +1,29 @@
 ---
-title: "抹除受管理的公司應用程式資料"
-description: "深入了解如何以遠端方式，選擇性地從裝置移除公司資料。"
-keywords: 
+title: 抹除受管理的公司應用程式資料
+description: 深入了解如何以遠端方式，選擇性地從裝置移除公司資料。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7f89d79edcc52892e2988e4b2f152cb68d80070
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 8d946b551118441b737335f6bd8c4603a49e0dd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wipe-company-app-data-with-intune-mam"></a>使用 Intune MAM 抹除公司應用程式資料
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 當裝置遺失或遭竊，或者如果員工離職，您會想要確定公司應用程式資料已從裝置移除。 不過，您可能不想要移除裝置上的個人資料，特別是當該裝置為員工擁有的裝置時。
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 10/10/2017
 4.  當收到確認刪除的提示時，請選擇 [是] 或 [否]，然後按一下 [確定]。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用行動應用程式管理原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Azure 入口網站](azure-portal-for-microsoft-intune-mam-policies.md)

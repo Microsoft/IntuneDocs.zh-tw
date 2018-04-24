@@ -1,28 +1,28 @@
 ---
-title: "服務台疑難排解入口網站"
+title: 服務台疑難排解入口網站
 titlesuffix: Microsoft Intune
-description: "服務台人員使用疑難排解入口網站來解決使用者的技術問題。"
-keywords: 
+description: 服務台人員使用疑難排解入口網站來解決使用者的技術問題。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9ff0d6f662fca4cb223496d342de5d6378c05ceb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 疑難排解入口網站可協助技術服務人員和 Intune 系統管理員檢視使用者資訊，以解決使用者協助要求。 包含技術服務人員的組織，可以指派**技術支援中心操作員**給使用者群組。 技術支援中心操作員角色現在可以使用 [疑難排解] 窗格。
 
@@ -44,13 +44,13 @@ ms.lasthandoff: 03/08/2018
 在 [疑難排解] 窗格中，選擇 [選取使用者] 來檢視使用者資訊。 使用者資訊可協助您了解使用者與其裝置的目前狀態。  
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格上，選擇 [疑難排解]。
 4. 按一下 [選取] 選取使用者進行疑難排解。
 5. 鍵入名稱或電子郵件地址來選取使用者。 按一下 [選取]。 在 [疑難排解] 窗格中，會顯示使用者的疑難排解資訊。 下表說明該資訊。
 
 > [!Note]  
-> 您也可以將瀏覽器指向：[https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)，以存取 [疑難排解] 窗格。
+> 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解] 窗格。
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>疑難排解儀表板的區域
 

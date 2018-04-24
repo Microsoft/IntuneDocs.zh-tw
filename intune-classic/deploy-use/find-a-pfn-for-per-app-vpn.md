@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>尋找每個應用程式 VPN 設定的套件系列名稱 (PFN)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 有兩種方式可找到 PFN，以讓您設定每個應用程式 VPN。
 
@@ -37,7 +37,7 @@ Get-AppxPackage 的語法如下︰
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-您可能必須以系統管理員身分執行 PowerShell，才能擷取 PFN。
+> 您可能必須以系統管理員身分執行 PowerShell，才能擷取 PFN。
 
 例如，若要取得電腦上安裝之所有通用應用程式的資訊，請使用 `Get-AppxPackage`。
 

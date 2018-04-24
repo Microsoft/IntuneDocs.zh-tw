@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune 的網路需求與頻寬詳細資料"
-titlesuffix: 
-description: "檢閱 Intune 的網路設定需求與頻寬詳細資料。"
-keywords: 
+title: Microsoft Intune 的網路需求與頻寬詳細資料
+titlesuffix: ''
+description: 檢閱 Intune 的網路設定需求與頻寬詳細資料。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本指南可協助 Intune 系統管理員了解 Intune 服務的網路需求。 您可以使用這項資訊來了解頻寬需求，以及 Proxy 設定所需的 IP 位址和連接埠設定。
 
@@ -58,11 +58,13 @@ Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網�
 
 下列一般設定適用於快取 Intune 用戶端內容的 Proxy 伺服器。
 
-|Setting|建議值|詳細資料|
-|-----------|---------------------|-----------|
-|快取大小|5 GB 至 30 GB|這個值會根據網路中的用戶端電腦數目以及您使用的設定而不同。 為了避免系統太快刪除檔案，請根據您的環境調整快取的大小。|
-|個別快取檔案大小|950 MB|某些快取 Proxy 伺服器可能沒有提供這項設定。|
-|要快取的物件類型|HTTP<br /><br />HTTPS<br /><br />BITS|Intune 封裝是背景智慧型傳送服務 (BITS) 下載作業透過 HTTP 擷取的 CAB 檔。|
+
+|          設定           |           建議值           |                                                                                                  詳細資料                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         快取大小         |             5 GB 至 30 GB             | 這個值會根據網路中的用戶端電腦數目以及您使用的設定而不同。 為了避免系統太快刪除檔案，請根據您的環境調整快取的大小。 |
+| 個別快取檔案大小 |                950 MB                 |                                                                     某些快取 Proxy 伺服器可能沒有提供這項設定。                                                                     |
+|   要快取的物件類型    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune 封裝是背景智慧型傳送服務 (BITS) 下載作業透過 HTTP 擷取的 CAB 檔。                                               |
+
 如需有關如何使用 Proxy 伺服器快取內容的詳細資訊，請參閱您的 Proxy 伺服器解決方案的文件。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>在電腦上使用背景智慧型傳送服務
@@ -93,7 +95,7 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 若要管理位於防火牆和 Proxy 伺服器後方的電腦，您必須啟用 Intune 的通訊。
 
 -   Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)**，因為 Intune 用戶端會使用這兩種通訊協定
--   Intune 需要存取 manage.microsoft.com 的未驗證 Proxy 伺服器，才能進行某些工作，例如下載軟體和更新
+-   Intune 需要存取 manage.microsoft.com 的未驗證 Proxy 伺服器，才能進行某些工作，例如下載軟體和更新。
 
 您可以修改個別用戶端電腦上的 Proxy 伺服器設定，也可以使用群組原則設定來變更所有位於指定之 Proxy 伺服器後方的用戶端電腦設定。
 
@@ -159,14 +161,16 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
-| 主機名稱  | URL (IP 位址/子網路) | 通訊協定 | Port | Device |
-| --- | --- | --- | --- | --- |
-|  管理員主控台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
-| 管理員主控台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |
-| 管理主控台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
-| PI 伺服器  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | 適用於 Apple iOS 和 macOS 雲端傳訊。 |
-| 裝置服務  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| 裝置服務  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| 裝置服務  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| 裝置 (網際網路/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 和 443 | 僅限 Apple。 &#39;#&#39; 是 0 到 200 之間的亂數。 |
-| 裝置 (網際網路/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 或 443 | 僅限 Apple |
+
+|         主機名稱         |                                        URL (IP 位址/子網路)                                        |  通訊協定  |     Port     |                          Device                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      管理主控台       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 和 macOS                    |
+|      管理主控台       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 和 macOS                    |
+|      管理主控台       | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS 和 macOS                    |
+|        PI 伺服器         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         適用於 Apple iOS 和 macOS 雲端傳訊。          |
+|     裝置服務      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     裝置服務      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     裝置服務      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| 裝置 (網際網路/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 和 443 | 僅限 Apple。 &#39;#&#39; 是 0 到 200 之間的亂數。 |
+| 裝置 (網際網路/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 或 443   |                        僅限 Apple                         |
+

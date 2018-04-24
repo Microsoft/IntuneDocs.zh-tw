@@ -1,29 +1,29 @@
 ---
-title: "保護 Exchange 內部部署的電子郵件"
-description: "使用條件式存取保護與控制 Exchange 內部部署上的公司電子郵件存取。"
-keywords: 
+title: 保護 Exchange 內部部署的電子郵件
+description: 使用條件式存取保護與控制 Exchange 內部部署上的公司電子郵件存取。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 限制 Exchange 內部部署和舊版 Exchange Online Dedicated 的電子郵件存取
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以使用 Microsoft Intune 設定條件式存取，控制 Exchange 內部部署或舊版 Exchange Online Dedicated 的電子郵件存取。
 若要深入了解條件式存取如何運作，請參閱[限制電子郵件和 O365 服務的存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
@@ -53,13 +53,13 @@ ms.lasthandoff: 10/10/2017
 
 在您設定好條件式存取原則及目標使用者之後，使用者所用的**裝置**必須符合下列條件，才能連接至電子郵件：
 
--  電腦應已加入網域或已向 Intune **註冊**。
+- 電腦應已加入網域或已向 Intune **註冊**。
 
--  已在 **Azure Active Directory** 中註冊。 此外，必須向 Azure Active Directory 註冊用戶端 Exchange ActiveSync 識別碼。
+- 已在 **Azure Active Directory** 中註冊。 此外，必須向 Azure Active Directory 註冊用戶端 Exchange ActiveSync 識別碼。
 
   若是 Intune 和 Office 365 客戶，系統會自動啟用 Azure Active Directory 裝置註冊服務。 已部署 ADFS 裝置註冊服務的客戶將不會在內部部署 Active Directory 中看到已註冊的裝置。 **這不適用於 Windows 電腦和 Windows Phone 裝置**。
 
--   裝置必須**符合**所部署的 Intune 合規性原則。
+- 裝置必須**符合**所部署的 Intune 合規性原則。
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Exchange 內部部署之條件式存取的運作方式
 
@@ -91,35 +91,35 @@ ms.lasthandoff: 10/10/2017
 
 ##  <a name="configure-a-conditional-access-policy"></a>設定條件式存取原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則]** > **[條件式存取]** > **[Exchange 內部部署原則]**。
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com)中，選擇 **[原則]** > **[條件式存取]** > **[Exchange 內部部署原則]**。
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  使用所需的設定來設定原則：![Exchange 內部部署原則頁面的螢幕擷取畫面](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. 使用所需的設定來設定原則：![Exchange 內部部署原則頁面的螢幕擷取畫面](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **如果裝置不相容或未註冊 Microsoft Intune，封鎖電子郵件應用程式存取 Exchange 內部部署**：當您選取此選項時，將封鎖未受 Intune 管理或不符合合規性政策的裝置存取 Exchange 服務。
+   - **如果裝置不相容或未註冊 Microsoft Intune，封鎖電子郵件應用程式存取 Exchange 內部部署**：當您選取此選項時，將封鎖未受 Intune 管理或不符合合規性政策的裝置存取 Exchange 服務。
 
-  - **預設規則覆寫 - 一律允許已註冊且相容的裝置存取 Exchange**：當您選取此選項時，將允許已在 Intune 中註冊且符合合規性政策的裝置存取 Exchange。
-  此規則會覆寫 [預設規則]，這表示即使您將 [預設規則] 設為隔離或封鎖存取，已註冊且符合規範的裝置仍能夠存取 Exchange。
+   - **預設規則覆寫 - 一律允許已註冊且相容的裝置存取 Exchange**：當您選取此選項時，將允許已在 Intune 中註冊且符合合規性政策的裝置存取 Exchange。
+     此規則會覆寫 [預設規則]，這表示即使您將 [預設規則] 設為隔離或封鎖存取，已註冊且符合規範的裝置仍能夠存取 Exchange。
 
-  - **目標群組**：選取必須向 Intune 註冊裝置才能存取 Exchange 的 Intune 使用者群組。
+   - **目標群組**：選取必須向 Intune 註冊裝置才能存取 Exchange 的 Intune 使用者群組。
 
-  - **免套用的群組**：選取免套用條件式存取原則的 Intune 使用者群組。 此清單中的使用者即使也在 [目標群組] 清單中，仍免套用原則。
+   - **免套用的群組**：選取免套用條件式存取原則的 Intune 使用者群組。 此清單中的使用者即使也在 [目標群組] 清單中，仍免套用原則。
 
-  - **平台例外狀況**：選擇 [新增規則] 設定規則，以針對指定的行動裝置系列和機型來定義存取層級。 由於這些裝置可以是任何類型，因此您也可以設定 Intune 不支援的裝置類型。
+   - **平台例外狀況**：選擇 [新增規則] 設定規則，以針對指定的行動裝置系列和機型來定義存取層級。 由於這些裝置可以是任何類型，因此您也可以設定 Intune 不支援的裝置類型。
 
-  - **預設規則**：針對任何其他規則未涵蓋的裝置，您可以選擇允許它存取 Exchange、封鎖它或隔離它。 當您設定規則以允許存取時，對於已註冊且相容的裝置而言，將自動授與 iOS、Windows 和 Samsung KNOX 裝置的電子郵件存取。 使用者不必經過任何程序即可取得電子郵件。
-      - 如果 Android 裝置不是執行 Samsung KNOX，使用者會收到隔離電子郵件，其中包含驗證註冊和相容性的引導式逐步解說，之後才可存取電子郵件。 如果您將規則設為封鎖存取或隔離裝置，則所有裝置都將遭封鎖而無法存取 Exchange，不論是否已在 Intune 註冊皆同。 若要避免已註冊且符合規範的裝置受到此規則的影響，請核取 [預設規則覆寫] 方塊。
->[!TIP]
->如果您想先封鎖所有裝置之後再授與電子郵件存取權，請選擇 [封鎖存取] 規則或 [隔離] 規則。 預設規則將套用到所有裝置類型，因此您設定為平台例外且不受 Intune 支援的裝置類型也會受到影響。
+   - **預設規則**：針對任何其他規則未涵蓋的裝置，您可以選擇允許它存取 Exchange、封鎖它或隔離它。 當您設定規則以允許存取時，對於已註冊且相容的裝置而言，將自動授與 iOS、Windows 和 Samsung KNOX 裝置的電子郵件存取。 使用者不必經過任何程序即可取得電子郵件。
+     - 如果 Android 裝置不是執行 Samsung KNOX，使用者會收到隔離電子郵件，其中包含驗證註冊和相容性的引導式逐步解說，之後才可存取電子郵件。 如果您將規則設為封鎖存取或隔離裝置，則所有裝置都將遭封鎖而無法存取 Exchange，不論是否已在 Intune 註冊皆同。 若要避免已註冊且符合規範的裝置受到此規則的影響，請核取 [預設規則覆寫] 方塊。
+       >[!TIP]
+       >如果您想先封鎖所有裝置之後再授與電子郵件存取權，請選擇 [封鎖存取] 規則或 [隔離] 規則。 預設規則將套用到所有裝置類型，因此您設定為平台例外且不受 Intune 支援的裝置類型也會受到影響。
 
-  - **使用者通知**：除了 Exchange 傳送的通知電子郵件，Intune 也會傳送包含裝置解除封鎖步驟的電子郵件。 您可以編輯預設訊息，依照您的需求來自訂。 萬一使用者在收到 Intune 通知電子郵件之前 (這封包含修復指示的電子郵件會傳遞到使用者的 Exchange 信箱)，裝置就遭到封鎖，他們可以使用未封鎖的裝置或其他方法來存取 Exchange 並檢視該訊息。
-      - 這在 [預設規則] 已設為封鎖或隔離時特別有用。 在此情況下，使用者必須前往應用程式市集，下載「Microsoft 公司入口網站」應用程式並註冊其裝置。 這適用於 iOS、Windows 和 Samsung KNOX 裝置。 對於不執行 Samsung KNOX 的裝置，您需要傳送隔離電子郵件至備用電子郵件帳戶。 使用者必須將電子郵件複製到其封鎖的裝置以完成註冊與合規性程序。
-  > [!NOTE]
-  > 為了讓 Exchange 能夠傳送通知電子郵件，您必須指定應該用來傳送通知電子郵件的帳戶。
-  >
-  > 如需詳細資訊，請參閱[設定適用於內部部署或託管 Exchange 的內部部署 Exchange Connector](intune-on-premises-exchange-connector.md)。
+   - **使用者通知**：除了 Exchange 傳送的通知電子郵件，Intune 也會傳送包含裝置解除封鎖步驟的電子郵件。 您可以編輯預設訊息，依照您的需求來自訂。 萬一使用者在收到 Intune 通知電子郵件之前 (這封包含修復指示的電子郵件會傳遞到使用者的 Exchange 信箱)，裝置就遭到封鎖，他們可以使用未封鎖的裝置或其他方法來存取 Exchange 並檢視該訊息。
+     - 這在 [預設規則] 已設為封鎖或隔離時特別有用。 在此情況下，使用者必須前往應用程式市集，下載「Microsoft 公司入口網站」應用程式並註冊其裝置。 這適用於 iOS、Windows 和 Samsung KNOX 裝置。 對於不執行 Samsung KNOX 的裝置，您需要傳送隔離電子郵件至備用電子郵件帳戶。 使用者必須將電子郵件複製到其封鎖的裝置以完成註冊與合規性程序。
+       > [!NOTE]
+       > 為了讓 Exchange 能夠傳送通知電子郵件，您必須指定應該用來傳送通知電子郵件的帳戶。
+       >
+       > 如需詳細資訊，請參閱[設定適用於內部部署或託管 Exchange 的內部部署 Exchange Connector](intune-on-premises-exchange-connector.md)。
 
-3.  完成後，選擇 [儲存]。
+3. 完成後，選擇 [儲存]。
 
 -   您不需部署條件式存取原則，它會立即生效。
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 10/10/2017
 
 **若要查看如何設定條件式存取原則以限制裝置存取的範例案例，請參閱[限制存取電子郵件的範例案例](restrict-email-access-example-scenarios.md)。**
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 -   [限制 SharePoint Online 的存取](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [限制商務用 Skype Online 的存取](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)

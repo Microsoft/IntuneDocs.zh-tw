@@ -1,28 +1,28 @@
 ---
-title: "保護 Windows 電腦的原則"
-description: "使用這些原則協助您確保 Windows 電腦受 Intune 用戶端軟體管理時的安全性。"
-keywords: 
+title: 保護 Windows 電腦的原則
+description: 使用這些原則協助您確保 Windows 電腦受 Intune 用戶端軟體管理時的安全性。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf12d6c96371cc1f9b79c83586879ab25dbe98ff
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 8f372d2e8b770e536da08c7b89a760c78ea38fb4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 提供三個原則供您使用，以協助確保 [Intune 用戶端軟體](manage-windows-pcs-with-microsoft-intune.md)管理之 Windows 電腦的安全性。
 
@@ -41,5 +41,5 @@ Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windo
 
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,29 +1,29 @@
 ---
-title: "行動裝置註冊的必要條件"
-description: "設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。"
-keywords: 
+title: 行動裝置註冊的必要條件
+description: 設定行動裝置管理 (MDM) 先決條件，並準備好註冊不同的作業系統。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中的行動裝置管理先決條件
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可讓員工向 Intune 註冊其行動裝置需要下列步驟。 需要這些相同的步驟才能管理公司擁有的裝置。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
 要搭配使用 Intune 和 Configuration Manager 嗎？
 > [!div class="button"]
-[檢視 SCCM 文件 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [檢視 SCCM 文件 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>步驟 1：啟用連線
 
@@ -80,21 +80,22 @@ Intune 公司入口網站是使用者存取公司資料並可以執行一般工�
 
 公司名稱顯示為公司入口網站標題。 連絡資訊和詳細資料會在公司入口網站的 [連絡 IT] 畫面中向使用者顯示。 當使用者按一下隱私權連結時，會顯示隱私權聲明。
 
-|欄位名稱|長度上限|詳細資訊|
-    |----------|------------------------|----------------|
-    |公司名稱|40|這是顯示為公司入口網站標題的名稱。 **注意**︰僅可使用英數字元。 此欄位不支援特殊字元。|
-    |IT 部門連絡人姓名|40|此姓名會顯示在 [連絡 IT] 頁面中。|
-    |IT 部門電話號碼|20|此連絡電話號碼會顯示在 [連絡 IT] 頁面中。|
-    |IT 部門電子郵件地址|40|此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 **alias@domainname.com**。|
-    |其他資訊|120|此資訊會顯示在 [連絡 IT] 頁面上。|
-    |公司隱私權聲明 URL|79|您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須使用 https://www.contoso.com 格式輸入有效的 URL。|
+
+|          欄位名稱           | 長度上限 |                                                                                       詳細資訊                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         公司名稱          |     40     |                這是顯示為公司入口網站標題的名稱。 <strong>注意</strong>︰僅可使用英數字元。 此欄位不支援特殊字元。                |
+|  IT 部門連絡人姓名   |     40     |                                                                此姓名會顯示在 [連絡 IT] 頁面中。                                                                |
+|  IT 部門電話號碼   |     20     |                                                           此連絡電話號碼會顯示在 [連絡 IT] 頁面中。                                                           |
+|  IT 部門電子郵件地址  |     40     |             此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 <strong>alias@domainname.com</strong>。              |
+|    其他資訊     |    120     |                                                            此資訊會顯示在 [連絡 IT] 頁面上。                                                             |
+| 公司隱私權聲明 URL |     79     | 您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須以 https://www.contoso.com 格式輸入有效的 URL。 |
 
 ### <a name="support-contacts"></a>支援連絡人
 支援網站將會顯示在公司入口網站中，讓使用者能夠存取線上支援。
 
 |欄位名稱|長度上限|詳細資訊|
     |----------|------------------------|----------------|
-    |支援網站 URL|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 這個 URL 必須使用 https://www.contoso.com 的格式。如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|
+    |支援網站 URL|150|如果想讓使用者參考您的支援網站，請在這裡指定 URL。 URL 的格式必須為 https://www.contoso.com。如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。|
     |網站名稱|40|這是支援網站的 URL 所顯示的易記名稱。 如果您指定支援網站 URL，但沒有指定易記名稱，則公司入口網站的 [連絡 IT] 頁面上將會顯示 [移到 IT 網站]。|
 
 

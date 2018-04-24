@@ -1,27 +1,27 @@
 ---
-title: "執行 Android 和 Android for Work 之裝置的 Microsoft Intune 電子郵件設定"
-titleSuffix: 
-description: "了解有關可用於執行 Android 和 Android for Work 之裝置上設定電子郵件的 Microsoft Intune 設定。"
-keywords: 
+title: 執行 Android 和 Android for Work 之裝置的 Microsoft Intune 電子郵件設定
+titleSuffix: ''
+description: 了解有關可用於執行 Android 和 Android for Work 之裝置上設定電子郵件的 Microsoft Intune 設定。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f989f9fafa4766ab71843c9dddef2bf3e18c5134
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 10bea7ace3fe03db66fa6f8a83a94679dfdc071c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>執行 Android 和 Android for Work 之裝置的 Microsoft Intune 電子郵件設定檔設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文展示您可為執行 Android 之裝置設定的電子郵件設定檔設定。
 

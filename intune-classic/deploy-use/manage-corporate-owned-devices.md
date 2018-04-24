@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23ae8afbf6c200f983ebee8a94fff42f65ec2486
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4d224ceb819b6b0b4be0596c46d7bb20a98ddd97
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 註冊屬公司擁有的裝置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 您可以根據裝置的類型、裝置的購買方式和組織的需求，透過各種不同的方式註冊屬組織擁有或屬公司擁有的裝置，以使用 Intune 進行管理。 您也可以安裝公司入口網站應用程式，來註冊及管理屬公司擁有的裝置，例如在「攜帶您自己的裝置」(BYOD) 的情況下。
 

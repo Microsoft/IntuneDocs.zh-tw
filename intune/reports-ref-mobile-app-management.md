@@ -15,11 +15,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 317e884cd54b57f4892c4e101e206089ef335f0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>行動應用程式管理 (MAM) 實體的參考
 
@@ -51,23 +51,24 @@ ms.lasthandoff: 03/16/2018
 
 **MamApplicationInstance** 實體會將受管理行動應用程式管理 (MAM) 應用程式列出每個裝置每位使用者的單一執行個體。 實體中列出的所有使用者和裝置都會受到保護，如下所示，他們至少獲指派一個 MAM 原則。
 
-| 屬性 | 說明 | 範例 |
-|---------|------------|--------|
-| ApplicationInstanceKey |資料倉儲中 MAM 應用程式執行個體的唯一識別碼 - Surrogate 索引鍵。 |123 |
-| UserId |已安裝此 MAM 應用程式之使用者的使用者識別碼。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |MAM 應用程式執行個體的唯一識別碼 - 與 ApplicationInstanceKey 類似，但識別碼是自然索引鍵。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |此 MAM 應用程式的應用程式識別碼 |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |此 MAM 應用程式的應用程式版本。 |2 |
-| CreatedDate |此 MAM 應用程式執行個體記錄的建立日期。 值可以是 Null。 |11/23/2016 12:00:00 AM |
-| 平台 |此 MAM 應用程式安裝所在裝置的平台。 |2 |
-| PlatformVersion |此 MAM 應用程式安裝所在裝置的平台版本。 |2.2 |
-| SdkVersion |與此 MAM 應用程式包裝在一起的 MAM SDK 版本。 |3.2 |
-| DeviceId |此 MAM 應用程式安裝所在裝置的裝置識別碼。 |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |此 MAM 應用程式安裝所在裝置的裝置名稱。 |"MyDevice" |
-| IsDeleted |指出是否已更新此 MAM 應用程式執行個體記錄。 <br>True - 此 MAM 應用程式執行個體具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式執行個體的最新記錄。 |True/False |
-| StartDateInclusiveUtc |在資料倉儲中建立此 MAM 應用程式執行個體的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
-| DeletedDateUtc |IsDeleted 變更為 True 的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUtc |前次在資料倉儲中修改此 MAM 應用程式執行個體的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+
+|          屬性          |                                                                                                  說明                                                                                                  |               範例                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               資料倉儲中 MAM 應用程式執行個體的唯一識別碼 - Surrogate 索引鍵。                                                                |                 123                  |
+|           UserId           |                                                                              已安裝此 MAM 應用程式之使用者的使用者識別碼。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM 應用程式執行個體的唯一識別碼 - 與 ApplicationInstanceKey 類似，但識別碼是自然索引鍵。                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        此 MAM 應用程式的應用程式識別碼                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     此 MAM 應用程式的應用程式版本。                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 此 MAM 應用程式執行個體記錄的建立日期。 值可以是 Null。                                                                 |        11/23/2016 12:00:00 AM        |
+|          平台          |                                                                          此 MAM 應用程式安裝所在裝置的平台。                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      此 MAM 應用程式安裝所在裝置的平台版本。                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            與此 MAM 應用程式包裝在一起的 MAM SDK 版本。                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          此 MAM 應用程式安裝所在裝置的裝置識別碼。                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         此 MAM 應用程式安裝所在裝置的裝置名稱。                                                                         |              "MyDevice"              |
+|         IsDeleted          | 指出是否已更新此 MAM 應用程式執行個體記錄。 <br>True - 此 MAM 應用程式執行個體具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式執行個體的最新記錄。 |              True/False              |
+|   StartDateInclusiveUtc    |                                                              在資料倉儲中建立此 MAM 應用程式執行個體的 UTC 日期和時間。                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             IsDeleted 變更為 True 的 UTC 日期和時間。                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           前次在資料倉儲中修改此 MAM 應用程式執行個體的 UTC 日期和時間。                                                            |        11/23/2016 12:00:00 AM        |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -112,20 +113,23 @@ ms.lasthandoff: 03/16/2018
 
 **MamGlobalApplication** 實體列出透過行動應用程式管理 (MAM) 所管理的市集應用程式，而不需要在企業中註冊。
 
-| 屬性 | 說明 | 範例 |
-|---------|------------|--------|
-| ApplicationKey |資料倉儲中市集應用程式的唯一識別碼，稱為 Surrogate 索引鍵。 |123 |
-| ApplicationId |市集應用程式的唯一識別碼。 此識別碼與 ApplicationKey 類似，但為自然索引鍵。 |com.microsoft.skydrive.<ios> |
-| ApplicationName |MAM 全域應用程式名稱。 |Skydrive |
-| RowLastModifiedDateTimeUtc |前次在資料倉儲中修改此特定 MAM 全域應用程式的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+
+|          屬性          |                                               說明                                               |           範例            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          資料倉儲中市集應用程式的唯一識別碼，稱為 Surrogate 索引鍵。          |             123              |
+|       ApplicationId        | 市集應用程式的唯一識別碼。 此識別碼與 ApplicationKey 類似，但為自然索引鍵。  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      MAM 全域應用程式名稱。                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | 前次在資料倉儲中修改此特定 MAM 全域應用程式的 UTC 日期和時間。 |    11/23/2016 12:00:00 AM    |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 **MamPlatform** 實體列出已安裝行動應用程式管理 (MAM) 應用程式的平台名稱和類型。
 
-| 屬性 | 說明 | 範例 |
-|---------|------------|--------|
-| PlatformKey |資料倉儲中平台的唯一識別碼 - Surrogate 索引鍵。 |123 |
-| 平台 |平台的唯一識別碼 - 與 PlatformKey 類似，但為自然索引鍵。 |123 |
-| PlatformName |平台名稱 |無法使用 <br>無 <br>Windows <br>IOS <br>Android。 |
-| RowLastModifiedDateTimeUtc |前次在資料倉儲中修改此平台的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+
+|          屬性          |                                    說明                                    |                         範例                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     資料倉儲中平台的唯一識別碼 - Surrogate 索引鍵。      |                           123                           |
+|          平台          | 平台的唯一識別碼 - 與 PlatformKey 類似，但為自然索引鍵。 |                           123                           |
+|        PlatformName        |                                   平台名稱                                   | 無法使用 <br>無 <br>Windows <br>IOS <br>Android。 |
+| RowLastModifiedDateTimeUtc | 前次在資料倉儲中修改此平台的 UTC 日期和時間。  |                 11/23/2016 12:00:00 AM                  |
+

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune 的一般疑難排解提示
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 部署 Microsoft Intune 之後，您的設定或用戶端裝置可能會發生問題。 請使用下列資源協助您找出問題的原因，以便您解決問題。
 
@@ -50,13 +50,13 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="collect-available-data"></a>收集可用資料
 
--   下列資源可協助您了解如何收集裝置記錄：
+- 下列資源可協助您了解如何收集裝置記錄：
   - [使用 USB 纜線將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   例如，利用原則實作問題的管理主控台資料，檢查預期的原則及該原則的狀態，如[在 Microsoft Intune 中使用群組管理使用者和裝置](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)中所述。
+- 例如，利用原則實作問題的管理主控台資料，檢查預期的原則及該原則的狀態，如[在 Microsoft Intune 中使用群組管理使用者和裝置](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)中所述。
 
 ## <a name="research-the-solution"></a>研究解決方案
 

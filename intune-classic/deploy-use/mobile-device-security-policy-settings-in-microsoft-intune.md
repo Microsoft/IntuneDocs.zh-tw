@@ -1,29 +1,29 @@
 ---
-title: "行動裝置安全性原則設定"
-description: "使用 Intune 來設定各種不同的設定，您可以部署到組織中受管理的裝置。"
-keywords: 
+title: 行動裝置安全性原則設定
+description: 使用 Intune 來設定各種不同的設定，您可以部署到組織中受管理的裝置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的行動裝置安全性原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Microsoft Intune 現在具有區隔每個裝置平台之設定原則的功能。 這些原則包含您可以使用的最新設定。 您可以繼續使用行動裝置安全性原則，現有的部署也還能運作。 然而，因為行動裝置安全性原則未來將予移除，所以您應及早規劃改用新的設定原則。
@@ -48,32 +48,34 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="security-settings"></a>安全性設定
 
-|設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**需要密碼才可解除鎖定行動裝置**|否|否|是|是|是|
-|**所需的密碼類型**<br /><br />此設定指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。|是|是|是|是|否|
-|**需要的密碼類型 – 最小字元集數**<br /><br />總共分為四種字元集：小寫字母、大寫字母、數字與符號。 此設定指定密碼中必須包含幾種不同的字元集。 然而，但對於 iOS 裝置，這會指定密碼中必須包含的符號字元數。|是|是|是|是|否|
-|**最小密碼長度**|是|是|是|是|是|
-|**允許簡單密碼**<br /><br />簡單密碼包括 '0000' 與 '1234'。|否|否|是|是|否|
-|**抹除裝置前允許的重複登入失敗次數**|是|是|是|是|是|
-|**在非使用狀態幾分鐘後會關閉螢幕**<sup>1</sup>|是|是|是|是|是|
-|**密碼到期 (天數)**|是|是|是|是|是|
-|**記住密碼歷程記錄**|是|是|是|是|是|
-|**記住密碼歷程記錄** - **不得重複使用以前用過的密碼**|是|是|是|是|是|
-|**密碼品質**|否|否|否|否|是|
-|**允許圖片密碼和 PIN**|是|是|否|否|否|
-|**在非使用狀態幾分鐘後需要輸入密碼**|否|否|否|是|否|
-|**允許指紋解除鎖定**|否|否|否|iOS 7 及更新版本|否|
+|                                                                                                                                                                                        設定名稱                                                                                                                                                                                         | Windows 8.1 和 Windows RT 8.1 | Windows RT | Windows Phone 8 和 Windows Phone 8.1 |       iOS       | Android 和 Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>需要密碼才可解除鎖定行動裝置</strong>                                                                                                                                                                 |               否               |     否     |                  是                  |       是       |                是                |
+|                                                                                                                 <strong>必要的密碼類型</strong><br /><br />此設定指定必要密碼的類型，例如只可包含數字，或必須是英數字元等等。                                                                                                                 |              是               |    是     |                  是                  |       是       |                否                 |
+| <strong>需要的密碼類型 – 最小字元集數</strong><br /><br />總共分為四種字元集：小寫字母、大寫字母、數字與符號。 此設定指定密碼中必須包含幾種不同的字元集。 然而，但對於 iOS 裝置，這會指定密碼中必須包含的符號字元數。 |              是               |    是     |                  是                  |       是       |                否                 |
+|                                                                                                                                                                          <strong>密碼長度下限</strong>                                                                                                                                                                           |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                               <strong>允許簡單密碼</strong><br /><br />簡單密碼包括 '0000' 與 '1234'。                                                                                                                                                |               否               |     否     |                  是                  |       是       |                否                 |
+|                                                                                                                                                  <strong>重複登入失敗多少次之後抹除該裝置</strong>                                                                                                                                                   |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                         <strong>在非使用狀態幾分鐘後會關閉螢幕</strong><sup>1</sup>                                                                                                                                                          |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                         <strong>密碼到期 (天數)</strong>                                                                                                                                                                         |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                         <strong>記住密碼歷程記錄</strong>                                                                                                                                                                          |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                              <strong>記住密碼歷程記錄</strong> - <strong>不得重複使用以前用過的密碼</strong>                                                                                                                                              |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                              <strong>密碼品質</strong>                                                                                                                                                                              |               否               |     否     |                  否                   |       否        |                是                |
+|                                                                                                                                                                       <strong>允許圖片密碼和 PIN</strong>                                                                                                                                                                       |              是               |    是     |                  否                   |       否        |                否                 |
+|                                                                                                                                                             <strong>在非使用狀態幾分鐘後需要輸入密碼</strong>                                                                                                                                                              |               否               |     否     |                  否                   |       是       |                否                 |
+|                                                                                                                                                                          <strong>允許指紋解除鎖定</strong>                                                                                                                                                                          |               否               |     否     |                  否                   | iOS 7 及更新版本 |                否                 |
+
 <sup>1</sup>針對 iOS 裝置，在您設定 [在非使用狀態幾分鐘後會關閉螢幕] 和 [在非使用狀態幾分鐘後需要輸入密碼] 設定時，將會依序套用這兩項設定。 例如，若您設定將兩項全都設定為 **5** 分鐘，螢幕將會自動在 5 分鐘後關閉，裝置將會在另一個 5 分鐘之後鎖定。 但使用者若是手動關閉螢幕，便會立即套用第二項設定。 在同一範例中，當使用者關閉螢幕之後，裝置將會在 5 分鐘後鎖定。
 
 當您將密碼長度原則部署到執行 Windows RT 的裝置時，將會強制使用者重設其密碼—即使其目前的密碼符合原則需求也是一樣。
 
 ## <a name="encryption-settings"></a>加密設定
 
-|設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**行動裝置需要加密**<sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。|是|否|是|否|是|
-|**儲存卡需要加密**<br /><br />此設定同時也適用於 Exchange ActiveSync 管理的裝置。|n/a|n/a|n/a <br />應用程式及相關聯的資料會自動加密。|n/a|是|
+|                                                                                                                                     設定名稱                                                                                                                                     | Windows 8.1 和 Windows RT 8.1 | Windows RT |              Windows Phone 8 和 Windows Phone 8.1              | iOS | Android 和 Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>行動裝置需要加密</strong><sup>1</sup><br /><br />對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 [需要密碼來解除鎖定行動裝置] 設定。 |              是               |     否     |                               是                               | 否  |                是                |
+|                                                                    <strong>儲存卡需要加密</strong><br /><br />此設定同時也適用於 Exchange ActiveSync 管理的裝置。                                                                     |              n/a               |    n/a     | n/a <br />應用程式及相關聯的資料會自動加密。 | n/a |                是                |
+
 <sup>1</sup>以下是執行 Windows 8.1 之裝置的其他資訊：
 
 -   若要在執行 Windows 8.1 的裝置上強制加密，您必須在每個裝置上安裝 [2014 年 12 月適用於 Windows 的 MDM 用戶端更新](http://support.microsoft.com/kb/3013816) 。
@@ -182,7 +184,7 @@ ms.lasthandoff: 12/12/2017
 |設定名稱|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允許相機**|否|否|僅限 Windows Phone 8.1|是|是|
-|**允許卸除式存放裝置**|否|否|是|否|是 (僅限 Samsung KNOX Standard)|
+|**允許抽取式存放裝置**|否|否|是|否|是 (僅限 Samsung KNOX Standard)|
 |**允許 Wi-Fi**|否|否|僅限 Windows Phone 8.1|否|是 (僅限 Samsung KNOX Standard)|
 |**允許 Wi-Fi 網際網路共用功能**|否|否|僅限 Windows Phone 8.1|否|是 (僅限 Samsung KNOX Standard)|
 |**允許自動連線到免費的 Wi-Fi 熱點**|否|否|僅限 Windows Phone 8.1|否|否|
@@ -212,5 +214,5 @@ ms.lasthandoff: 12/12/2017
 |**允許應用程式之間的剪貼簿共用**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 |**允許 YouTube**|否|否|否|否|是 (僅限 Samsung KNOX Standard)|
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

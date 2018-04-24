@@ -1,27 +1,27 @@
 ---
-title: "使用公司入口網站在 Intune 註冊 macOS 裝置 | Microsoft Docs"
-description: "描述如何使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置"
+title: 使用公司入口網站在 Intune 註冊 macOS 裝置 | Microsoft Docs
+description: 描述如何使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -30,11 +30,12 @@ ms.lasthandoff: 01/30/2018
 > [!NOTE]
 > 您可以在[這裡](enroll-your-device-in-intune-macos-legacy.md)找到在舊版 macOS 上註冊 macOS 裝置的指示。
 
-1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com)。
 
 2. 使用您的工作或學校帳戶登入公司入口網站。
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+
 
 3. 登入之後，按一下頁面左上角的 [功能表]，然後選取 [我的裝置]。
 
@@ -52,10 +53,10 @@ ms.lasthandoff: 01/30/2018
 
 7. 安裝程式完成後，開啟 [應用程式] 資料夾或 [啟動控制板]，然後開啟 [公司入口網站]。
 
-8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？** 按一下 [開啟]。
+8. Mac 將顯示一則訊息，指出：**"CompanyPortal" 是從網際網路下載的應用程式。您確定要繼續嗎？ 按一下 [開啟]。
 
-  > [!NOTE]
-  > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請嘗試[關閉閘道管理員](https://support.apple.com/HT202491)，然後開啟應用程式。
+   > [!NOTE]
+   > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請嘗試[關閉閘道管理員](https://support.apple.com/HT202491)，然後開啟應用程式。
 
 9. 您在公司入口網站應用程式中看到的第一個畫面，會提示您使用用來登入公司入口網站的相同公司或學校帳戶進行 [登入]。
 

@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/22/2018
 - 終端使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 信箱和授權。
 
   >[!NOTE]
-  > Outlook 行動裝置應用程式目前僅支援 Microsoft Exchange Online，而不支援 Exchange 內部部署或 Office 365 專用中的 Exchange。
+  > Outlook 行動應用程式目前僅針對 Microsoft Exchange Online 和[具有混合式新式驗證的 Exchange Server](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) 支援「Intune 應用程式防護」，而不支援「Office 365 專用」中的 Exchange。
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 

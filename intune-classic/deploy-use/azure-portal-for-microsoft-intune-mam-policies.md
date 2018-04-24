@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>用於 Intune 應用程式保護原則的 Azure 入口網站
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 針對下列，您可以使用 Azure 入口網站來建立和管理應用程式保護原則：
 
@@ -32,9 +32,9 @@ ms.lasthandoff: 03/22/2018
 - **非**由任何 MDM 解決方案註冊之裝置上執行的應用程式。
 - **在協力廠商 MDM 解決方案中註冊**之裝置上執行的應用程式。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure 入口網站是建立應用程式保護原則的新管理員主控台，但您也可以使用 MDM 案例的 [Intune 管理主控台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)來建立應用程式保護原則，其支援向 Intune 註冊的裝置應用程式。
-
+> 
 > Intune 管理主控台可能不會顯示所有可用的應用程式保護原則設定。 此外，如果您在 Intune 管理主控台和 Azure 入口網站上都建立應用程式保護原則，則在 Azure 入口網站中建立的原則會覆寫在 Intune 管理主控台上建立的原則。 在此情況中，Azure 入口網站的應用程式保護原則會套用至應用程式並部署至使用者。
 
 

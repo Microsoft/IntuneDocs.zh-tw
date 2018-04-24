@@ -1,55 +1,91 @@
 ---
-title: 使用 Microsoft Intune 管理 Windows Holographic
-titleSuffix: ''
-description: 了解 Microsoft Intune 支援執行 Windows Holographic for Business 的裝置。
+title: 使用 Microsoft Intune 來管理 Windows 全像攝影版裝置 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 時，您可以在執行 Windows Holographic for Business 的裝置上完成各種不同的工作，包括設定公司入口網站、建立合規性原則、自訂 OMA-URI 設定、部署應用程式、將裝置分類成群組、建立設定檔、限制裝置、啟用軟體更新、設定條款和條件、設定 VPN 和 Wi-Fi 設定，以及使用「Hello 企業版」。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/1/2018
+ms.date: 4/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd39b0a9a03d77a54ac71c47c5df67e9beacd9d
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="manage-devices-running-windows-holographic-with-microsoft-intune"></a>使用 Microsoft Intune 管理執行 Windows Holographic 的裝置
-
+# <a name="customize-devices-running-windows-holographic-with-intune"></a>使用 Intune 來自訂執行 Windows 全像攝影版的裝置
 
 Microsoft Intune 支援執行 Windows Holographic for Business 的裝置，例如 [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/)。
 
-若要使用 Microsoft Intune 管理執行 Windows Holographic 的裝置，您必須建立版本升級設定檔，將裝置從 Windows Holographic 升級到 Windows Holographic for Business。 您可為 Microsoft HoloLens 購買商業套件，以取得升級所需的授權。
+若要使用 Microsoft Intune 來管理執行「Windows 全像攝影版」的裝置，您必須建立「版本升級」設定檔。 此升級設定檔會將裝置從「Windows 全像攝影版」升級至 Windows Holographic for Business。 至於 Microsoft HoloLens，您則可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[將執行 Windows Holographic 的裝置升級到 Windows Holographic for Business](holographic-upgrade.md)。
 
-如需詳細資訊，請參閱[將執行 Windows Holographic 的裝置升級到 Windows Holographic for Business](holographic-upgrade.md)。
+若要協助管理和自訂執行 Windows Holographic for Business 的裝置，您可以使用本文中的工作。 例如，您可以管理軟體更新、設定 VPN 設定等。
 
-如需 Microsoft Intune 支援 Windows Holographic for Business 的資訊，請參閱下列主題：
+## <a name="company-portal"></a>公司入口網站
+**[設定公司入口網站應用程式](company-portal-app.md)**
 
-## <a name="device-restrictions"></a>裝置限制
-- [Microsoft Intune 中的 Windows Holographic for Business 裝置限制設定](device-restrictions-windows-holographic.md)
-
-## <a name="custom-settings"></a>自訂設定
-- [在 Microsoft Intune 中為 Windows Holographic for Business 裝置自訂裝置設定](custom-settings-windows-holographic.md)
+Intune 包括公司入口網站，使用者會在此網站存取公司資料、註冊裝置、安裝應用程式、連絡您的 IT 部門等。 您可以針對執行 Windows Holographic for Business 的裝置自訂公司入口網站應用程式。
 
 ## <a name="compliance-policy"></a>相容性原則
-- [如何在 Intune 中為 Windows 裝置建立裝置相容性原則](compliance-policy-create-windows.md)
+**[建立裝置合規性原則](compliance-policy-create-windows.md)**
+
+合規性原則係指裝置必須符合才能符合規範的規則和設定。 您可以使用這些原則搭配條件式存取，讓不符合規範的裝置無法存取公司資源。 在 Intune 中，您可以建立合規性原則來允許或封鎖執行 Windows Holographic for Business 之裝置的存取權。 例如，您可以建立要求啟用 Bitlocker 的原則。
+
+另請參閱**[開始使用合規性原則](device-compliance-get-started.md)**。
+
+## <a name="deploy-apps"></a>部署 App
+**[將應用程式新增至 Intune](apps-add.md)**
+
+使用 Intune 時，您可以將應用程式新增至執行 Windows Holographic for Business 的裝置。 有許多方式可以部署應用程式，包括：
+
+- [新增 Microsoft Store 應用程式](store-apps-windows.md)
+- [新增您建立的應用程式](lob-apps-windows.md)
+- [將應用程式指派給群組](apps-deploy.md)
+
+## <a name="device-categories-and-groups"></a>裝置類別和群組
+**[將裝置分類成群組](device-group-mapping.md)**
+
+使用 Intune 時，您可以建立裝置類別，以根據您建立的類別 (例如「銷售」、「會計」、「人力資源」等) 自動將裝置新增至群組。 用意是讓您可以更輕鬆地管理執行 Windows Holographic for Business 的裝置。
+
+## <a name="device-configuration-profiles"></a>裝置組態設定檔 
+**[開始使用組態設定檔](device-profiles.md)和[建立您自己的設定檔](device-profile-create.md)**
+
+Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功能。 可使用設定檔來管理這些設定和功能。 例如，您可以建立在執行 Windows Holographic for Business 的裝置上啟用 Cortana 或使用 Windows Defender Smart Screen 的設定檔。
+
+在您的設定檔中，您可以使用 OMA-URI 來自訂一些設定、建立裝置限制，以及設定虛擬私人網路 (VPN) 和 Wi-Fi。
+
+#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[自訂裝置設定](custom-settings-windows-holographic.md)
+
+若要設定 OMA-URI (開放行動通訊聯盟統一資源識別項) 設定，您可以在 Intune 中建立自訂設定檔。 請使用 OMA-URI 設定來控制您 Windows Holographic for Business 裝置上的各種不同功能，例如啟用 VPN 或檢查 Microsoft Update 上是否有更新。
+
+#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[裝置限制](device-restrictions-windows-holographic.md)
+
+裝置限制可讓您控制裝置上的各種不同設定和功能，包括要求密碼、從 [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) 安裝應用程式、啟用藍芽等。 這些限制會建立在 Intune 設定檔中。 您可以將此設定檔套用至多個執行 Windows Holographic for Business 的裝置。
+
+#### <a name="configure-vpnvpn-settings-configuremd"></a>[設定 VPN](vpn-settings-configure.md)
+
+虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 在 Intune 中，您可以建立 VPN 設定檔來包含執行 Windows Holographic for Business 之裝置的特定設定。 例如，您可以建立 VPN 設定檔，讓所有 Windows Holographic for Business 裝置都能使用 Citrix VPN 作為連線類型。
+
+#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[設定 Wi-Fi](wi-fi-settings-configure.md)
+
+您也可以在 Intune 中建立 Wi-Fi 設定檔，以將無線網路設定指派給 Windows Holographic for Business 裝置。 當您指派 Wi-Fi 設定檔時，使用者無須進行任何網路設定，即可取得公司網路存取權。 例如，您可以建立 Windows Holographic for Business 裝置專用的 Wi-Fi 網路。
 
 ## <a name="software-updates"></a>軟體更新
-- [管理軟體更新](windows-update-for-business-configure.md)
+**[管理軟體更新](windows-update-for-business-configure.md)**
+
+Intune 包含一項適用於 Windows 10 裝置的功能，稱為更新通道。 這些更新通道包含一組決定了更新安裝方式的設定。 例如，您可以建立一個維護期間來安裝更新，或選擇在安裝更新後重新啟動。 您可以將更新通道套用至多個執行 Windows Holographic for Business 的裝置。
+
+## <a name="terms-and-conditions"></a>條款及條件
+**[設定公司的使用者存取條款及條件](terms-and-conditions-create.md)**
+
+您可以要求使用者必須先接受公司的條款及條件，才能註冊裝置及存取公司應用程式 (包括電子郵件)。 在 Intune 中，您可以定義如何在公司入口網站中顯示條款及條件，也可以將這些條款及條件指派給執行 Windows Holographic for Business 的裝置。
 
 ## <a name="windows-hello-for-business"></a>Windows Hello 企業版
-- [使用 Windows Hello 企業版](windows-hello.md)
+**[使用 Windows Hello 企業版](windows-hello.md)**
 
-## <a name="vpn-settings"></a>VPN 設定
-- [如何在 Microsoft Intune 中設定 VPN 設定](vpn-settings-configure.md)
-
-## <a name="wi-fi-settings"></a>Wi-Fi 設定
-- [如何在 Microsoft Intune 中設定 Wi-Fi 設定](wi-fi-settings-configure.md) 
- 
-
-
+「Hello 企業版」是一種替代的登入方法，可使用 Azure Active Directory 帳戶來取代密碼、智慧卡或虛擬智慧卡。 使用「Hello 企業版」時，您的 Windows Holographic for Business 裝置可以使用 PIN (由您設定長度下限) 來登入。

@@ -1,29 +1,29 @@
 ---
-title: "將公司識別碼新增至 Intune"
+title: 將公司識別碼新增至 Intune
 titlesuffix: Microsoft Intune
-description: "了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。"
-keywords: 
+description: 了解如何將公司識別碼 (註冊方法、IMEI 和序號) 新增至 Microsoft Intune。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 身為 Intune 系統管理員，您可以識別公司擁有的裝置，以縮小管理及識別的範圍。 Intune 可執行其他管理工作，以及從公司擁有的裝置收集其他資訊，像是完整電話號碼和應用程式的清查。 您也可以設定裝置限制，以禁止非公司擁有的裝置進行註冊。
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 03/08/2018
 
 1. 在 [Azure 入口網站的 Intune](https://portal.azure.com) 中，選擇 [裝置註冊] > [公司裝置識別碼]，然後按一下 [新增]。
 
- ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區](./media/add-corp-id.png)
+   ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區](./media/add-corp-id.png)
 
 2. 在 [新增識別碼] 刀鋒視窗中，指定識別碼類型：[IMEI] 或 [序號]。 您可以指定先前匯入的數字是否應該「覆寫現有識別碼的詳細資料」。
 
@@ -97,7 +97,7 @@ ms.lasthandoff: 03/08/2018
 
 **變更裝置擁有權：**
 1. 在 [Azure 入口網站的 Intune](https://portal.azure.com) 中，移至 [裝置]，然後選擇裝置。
-3. 選擇 [內容]。
-4. 將 [裝置擁有權] 指定為 [個人] 或 [公司]。
+2. 選擇 [內容]。
+3. 將 [裝置擁有權] 指定為 [個人] 或 [公司]。
 
-  ![顯示裝置類別及裝置擁有權選項的裝置內容](./media/device-properties.png)
+   ![顯示裝置類別及裝置擁有權選項的裝置內容](./media/device-properties.png)

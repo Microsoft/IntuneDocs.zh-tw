@@ -1,25 +1,25 @@
 ---
-title: "應用程式"
+title: 應用程式
 titlesuffix: Microsoft Intune
-description: "Intune 資料倉儲 API 中的實體集合應用程式類別的參考主題。"
-keywords: "Intune 資料倉儲"
+description: Intune 資料倉儲 API 中的實體集合應用程式類別的參考主題。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -128,11 +128,13 @@ ms.lasthandoff: 03/16/2018
 
 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
 
-| 屬性 | 說明 |
-|---|---|
-| DateKey | 記錄應用程式安裝狀態之日期的索引鍵。 |
-| AppKey | 用來識別 AppRevision 執行個體之行動應用程式的索引鍵。 |
-| DeviceKey | 用來識別 Device 執行個體之目標裝置的索引鍵。 |
-| UserKey | 用來識別 User 執行個體之目標使用者的索引鍵。 |
-|AppInstallStateKey | 用來識別 MobileAppInstallState 執行個體之應用程式安裝狀態的索引鍵。 |
-| ErrorCode | 由與應用程式之安裝相關的應用程式安裝程式、行動平台或服務所傳回的錯誤碼。 |
+
+|      屬性      |                                                         說明                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  記錄應用程式安裝狀態之日期的索引鍵。                                  |
+|       AppKey       |                             用來識別 AppRevision 執行個體之行動應用程式的索引鍵。                              |
+|     DeviceKey      |                              用來識別 Device 執行個體之目標裝置的索引鍵。                               |
+|      UserKey       |                                用來識別 User 執行個體之目標使用者的索引鍵。                                 |
+| AppInstallStateKey |                     用來識別 MobileAppInstallState 執行個體之應用程式安裝狀態的索引鍵。                     |
+|     ErrorCode      | 由與應用程式之安裝相關的應用程式安裝程式、行動平台或服務所傳回的錯誤碼。 |
+

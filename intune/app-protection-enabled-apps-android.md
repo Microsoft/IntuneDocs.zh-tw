@@ -1,29 +1,29 @@
 ---
-title: "具備應用程式保護原則的 Android 應用程式"
+title: 使用應用程式保護原則的 Android 應用程式
 titlesuffix: Microsoft Intune
-description: "了解對具有保護原則之 Android 應用程式的期望。"
-keywords: 
+description: 了解對具有保護原則之 Android 應用程式的期望。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式由應用程式保護原則管理時的作業情況如何 
+# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 了解對具有應用程式保護原則之 Android 應用程式的期望。 只有在應用程式用於工作內容時，才會套用應用程式防護原則。 例如，當您以公司帳戶存取應用程式，或存取儲存在公司 OneDrive 位置的檔案時。
 ##  <a name="accessing-apps"></a>存取應用程式
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/05/2018
 您可透過公司入口網站應用程式，共用位於安全位置中的資料。 因此，即使是未註冊的裝置，仍需要該應用程式。
 
 
-##  <a name="using-apps-with-multi-identity-support"></a>使用有多重身分識別支援的應用程式
+##  <a name="using-apps-with-multi-identity-support"></a>使用多重身分識別支援的應用程式
 
 只有當使用者嘗試存取與工作相關的資料時，才會運用應用程式防護原則。  如果使用者存取供個人使用的應用程式，可能會出現不同的行為。
 
@@ -75,12 +75,14 @@ Intune 允許將應用程式防護原則部署到每部裝置上的一個使用�
 * **文件：**PDF、PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|Pfile 是受保護檔案的一般「包裝函式」格式。 其會封裝經過加密的內容以及 Azure 資訊保護授權。 它可用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等可以在應用程式中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pfile 是受保護檔案的一般「包裝函式」格式。 其會封裝經過加密的內容以及 Azure 資訊保護授權。 它可用來保護任何檔案類型。 | 文字檔案，包括 XML、CSV 等可以在應用程式中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰txt、ptxt、csv、pcsv、log、plog、xml、pxml。 |
+
 ---------------
 ## <a name="next-steps"></a>後續步驟
-[當 iOS 應用程式交由應用程式保護原則管理時的行為](app-protection-enabled-apps-ios.md)
+[當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)
 
 ### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 建立及部署應用程式保護原則](app-protection-policies.md)

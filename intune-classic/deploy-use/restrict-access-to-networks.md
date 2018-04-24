@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>使用 Cisco ISE 與 Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 與 Cisco Identity Services Engine (ISE) 整合可讓您在 ISE 環境中使用 Intune 裝置註冊與相容性狀態來撰寫網路原則。 您可以使用這些原則來確保您公司網路的存取權僅限於受 Intune 管理且符合 Intune 原則的裝置。
 
@@ -70,13 +70,13 @@ b. 選擇鎖定圖示 &gt; [更多資訊]。
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>從 ISE 取得自我簽署憑證 
 
-1.  在 ISE 主控台中，請移至 [管理] > [憑證] > [系統憑證] > [產生自我簽署憑證]。  
-2.       匯出自我簽署憑證。
+1. 在 ISE 主控台中，請移至 [管理] > [憑證] > [系統憑證] > [產生自我簽署憑證]。  
+2. 匯出自我簽署憑證。
 3. 在文字編輯器中，編輯匯出的憑證︰
 
- - 刪除 **-----BEGIN CERTIFICATE-----**
- - 刪除 **-----END CERTIFICATE-----**
- 
+   - 刪除 **-----BEGIN CERTIFICATE-----**
+   - 刪除 **-----END CERTIFICATE-----**
+
 請確定所有的文字在同一行
 
 
@@ -88,13 +88,13 @@ b. 選擇鎖定圖示 &gt; [更多資訊]。
 5. 儲存檔案，而不變更其名稱。
 6. 提供應用程式對於 Microsoft Graph 和 Microsoft Intune API 的權限。
 
- a. 針對 Microsoft Graph，選擇下列各項：
+   a. 針對 Microsoft Graph，選擇下列各項：
     - **應用程式權限**︰讀取目錄資料
     - **已委派的權限**：
         - 隨時存取使用者的資料
         - 登入使用者
 
- b. 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
+   b. 針對 Microsoft Intune API，在 **[應用程式權限]** 中選擇 **[Get device state and compliance from Intune]** (從 Intune 取得裝置狀態和相容性)。
 
 7. 選擇 [檢視端點]，並複製下列值以便用於進行 ISE 設定︰
 
@@ -105,23 +105,40 @@ b. 選擇鎖定圖示 &gt; [更多資訊]。
 |使用用戶端識別碼更新您的程式碼|用戶端識別碼|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步驟 4︰將自我簽署憑證從 ISE 上傳至您在 Azure AD 中建立的 ISE 應用程式
-1.     從 .cer X509 公開憑證檔取得 Base64 編碼的憑證值和指紋。 這個範例使用 PowerShell：
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    儲存 $base64Thumbprint、$base64Value 和 $keyid 的值，以用於下一個步驟。
-2.       透過資訊清單檔上傳憑證。 登入 [Azure 管理入口網站](https://manage.windowsazure.com)
-2.      在 Azure AD 嵌入式管理單元中，尋找您要使用 X.509 憑證設定的應用程式。
-3.      下載應用程式資訊清單檔。 
-5.      以下列 JSON 取代空的 “KeyCredentials”: [], 屬性。  KeyCredentials 複雜類型記載於 [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (實體和複雜類型參考) 中。
+1. 從 .cer X509 公開憑證檔取得 Base64 編碼的憑證值和指紋。 這個範例使用 PowerShell：
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. 透過資訊清單檔上傳憑證。 登入 [Azure 管理入口網站](https://manage.windowsazure.com)
+3. 在 Azure AD 嵌入式管理單元中，尋找您要使用 X.509 憑證設定的應用程式。
+4. 下載應用程式資訊清單檔。 
+5. 以下列 JSON 取代空的 “KeyCredentials”: [], 屬性。  KeyCredentials 複雜類型記載於 [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (實體和複雜類型參考) 中。
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 例如：
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ b. 選擇鎖定圖示 &gt; [更多資訊]。
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      將變更儲存至應用程式資訊清單檔。
-7.      透過 Azure 管理入口網站上傳已編輯的應用程式資訊清單檔。
-8.      選擇性︰再次下載資訊清單，以檢查應用程式中是否有您的 X.509 憑證。
+
+6. 將變更儲存至應用程式資訊清單檔。
+7. 透過 Azure 管理入口網站上傳已編輯的應用程式資訊清單檔。
+8. 選擇性︰再次下載資訊清單，以檢查應用程式中是否有您的 X.509 憑證。
 
 >[!NOTE]
 >

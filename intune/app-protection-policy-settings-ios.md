@@ -1,28 +1,28 @@
 ---
-title: "iOS 應用程式保護原則設定"
+title: iOS 應用程式保護原則設定
 titlesuffix: Microsoft Intune
-description: "本主題描述 iOS 裝置的應用程式保護原則設定。"
-keywords: 
+description: 本主題描述 iOS 裝置的應用程式保護原則設定。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fcdcc7c91791713ef784fbcebd23aa4b96c732dc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4a4339a4e0491ada9e03731a5636df37209e16e0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 您可以為 Azure 入口網站的 [新增原則] > [設定] 刀鋒視窗上的應用程式保護原則，[設定](app-protection-policies.md)本主題中所述的原則設定。
 

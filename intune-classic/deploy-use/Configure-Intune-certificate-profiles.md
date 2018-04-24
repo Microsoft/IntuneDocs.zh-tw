@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>設定 Intune 憑證設定檔
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 依[設定 SCEP 的憑證設定檔](configure-certificate-infrastructure-for-scep.md)或[設定 PFX 的憑證基礎結構](configure-certificate-infrastructure-for-pfx.md)所述設定基礎結構和憑證之後，您就可以建立憑證設定檔。 程序如下︰
 
@@ -92,39 +92,39 @@ ms.lasthandoff: 03/22/2018
 
 -  Windows Phone 8.1 和更新版本
 
-2.  新增 [SCEP 憑證設定檔] 原則
+2. 新增 [SCEP 憑證設定檔] 原則
 
-    深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+   深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  遵循設定檔設定頁面的指示來設定 SCEP 憑證設定檔設定。
-    > [!NOTE]
-    >
-    > 在 **[主體名稱格式]** 下，選取 **[自訂]** 以輸入自訂主體名稱格式 (僅在 iOS 設定檔中)。
-    >
-    > 自訂格式目前支援的兩個變數為 `Common Name (CN)` 和 `Email (E)`。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式如下︰
+3. 遵循設定檔設定頁面的指示來設定 SCEP 憑證設定檔設定。
+   > [!NOTE]
+   > 
+   > 在 **[主體名稱格式]** 下，選取 **[自訂]** 以輸入自訂主體名稱格式 (僅在 iOS 設定檔中)。
+   > 
+   > 自訂格式目前支援的兩個變數為 `Common Name (CN)` 和 `Email (E)`。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式如下︰
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > 在本範例中，管理員建立的主體名稱格式除了有 `CN` 與 `E` 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了支援的字串。
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > 在本範例中，管理員建立的主體名稱格式除了有 `CN` 與 `E` 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了支援的字串。
-
-4.  選擇 [儲存原則]。
+4. 選擇 [儲存原則]。
 
 新的原則即會顯示在 [原則] 工作區中。 您現在可加以部署。
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>建立 .PFX 憑證設定檔
 
-1.  在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]，然後選擇裝置平台。 下列平台支援 .PFX 憑證：
-  - Android 4 及更新版本
-  - Android for Work
-  - Windows 10 及更新版本
-  - Windows Phone 10 及更新版本
-  - iOS 8.0 及更新版本)    
+1. 在 [Intune 管理主控台](https://manage.microsoft.com)中，選擇 [原則] &gt; [新增原則]，然後選擇裝置平台。 下列平台支援 .PFX 憑證：
+   - Android 4 及更新版本
+   - Android for Work
+   - Windows 10 及更新版本
+   - Windows Phone 10 及更新版本
+   - iOS 8.0 及更新版本)    
 
 
-2.  新增 [PFX 憑證設定檔] 原則。
-      深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
-3.  輸入原則表單上所要求的資訊。
-4.  選擇 [儲存原則]。
+2. 新增 [PFX 憑證設定檔] 原則。
+     深入了解：[透過 Microsoft Intune 原則管理裝置上的設定和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+3. 輸入原則表單上所要求的資訊。
+4. 選擇 [儲存原則]。
 
 新的原則即會顯示在 [原則] 工作區中。 您現在可加以部署。
 

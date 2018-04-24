@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>您的使用者將如何體驗 Microsoft Intune 中受控 Office 365 應用程式的基本保護
 
@@ -50,13 +50,13 @@ ms.lasthandoff: 03/16/2018
 2. 輸入您的工作帳戶使用者名稱。 您會被重新導向至 Office 365 驗證 頁面輸入您的工作認證。 
 3. 當您的認證成功通過 Azure Active Directory 驗證之後，會套用應用程式保護原則，而且會要求您重新啟動商務用 OneDrive 應用程式。 
 
-  > [!NOTE]
-  > 只有未向 Intune 註冊的裝置上才會顯示 [需要重新啟動] 訊息。
+   > [!NOTE]
+   > 只有未向 Intune 註冊的裝置上才會顯示 [需要重新啟動] 訊息。
 
 4. 重新啟動商務用 OneDrive 應用程式。 應用程式啟動時，應用程式保護原則會隨即開啟，並會提示您設定裝置的 PIN 碼 (若裝置還未設定 PIN 碼)。  
 
-  > [!NOTE]
-  > 大部分使用者都不會看到此提示。 只有 iOS 裝置還未啟用 PIN 碼的使用者會看到此提示。
+   > [!NOTE]
+   > 大部分使用者都不會看到此提示。 只有 iOS 裝置還未啟用 PIN 碼的使用者會看到此提示。
 
 5. 當您設定並確認 PIN 碼之後，請回到商務用 OneDrive。 您會看到一則通知指出您的 IT 系統管理員已在保護 OneDrive 中的工作資料；此通知只會顯示一次。 
 6. 按一下略過此通知之後，即可開始存取您商務用 OneDrive 上的檔案。 
@@ -70,8 +70,8 @@ ms.lasthandoff: 03/16/2018
 2. 輸入您的工作帳戶使用者名稱。 您會被重新導向至 Office 365 驗證 頁面輸入您的工作認證。 <br/> ![Android 上的 O365 登入影像](./media/o365-sign-in-android.png)
 3. 當您的認證成功通過 Azure AD 驗證之後，若裝置上還未安裝公司入口網站應用程式，將會顯示一則訊息指示您加以安裝。 點選 [移至市集] 以繼續。 <br/> ![取得公司入口網站應用程式訊息的影像](./media/get-company-portal-android.png) <br/>若您的手機上已有安裝公司入口網站應用程式，商務用 OneDrive 將會自動啟動，您可以跳到結尾的注意事項。   
 
-  > [!IMPORTANT]
-  > 在 Android 上，當您將 Office 應用程式設定成交由應用程式保護原則管理之後，裝置使用者**必須**安裝公司入口網站應用程式，才能存取工作電子郵件及文件，不過終端使用者不需要開啟或登入應用程式來實際讀取電子郵件或文件。
+   > [!IMPORTANT]
+   > 在 Android 上，當您將 Office 應用程式設定成交由應用程式保護原則管理之後，裝置使用者**必須**安裝公司入口網站應用程式，才能存取工作電子郵件及文件，不過終端使用者不需要開啟或登入應用程式來實際讀取電子郵件或文件。
 
 4. 您現在進入了 Google Play 商店，可從中下載及安裝公司入口網站應用程式。 此應用程式可協助您持續保護資料的安全。 <br/> ![Google Play 商店中應用程式的影像](./media/google-play-get-app-android.png)
 5. 完成應用程式安裝之後，請選擇 [接受] 接受條款。 商務用 OneDrive 會自動啟動。
@@ -86,6 +86,7 @@ ms.lasthandoff: 03/16/2018
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>此精靈設定哪些原則？
+
 |     |       | |
 |----|--------|-|
 |**名稱**|管理 Office 365 應用程式| |

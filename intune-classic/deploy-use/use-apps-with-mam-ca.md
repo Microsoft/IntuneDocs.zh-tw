@@ -1,29 +1,29 @@
 ---
-title: "搭配 MAM CA 使用應用程式"
-description: "了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。"
-keywords: 
+title: 搭配 MAM CA 使用應用程式
+description: 了解 MAM CA 如何協助控制哪些應用程式可存取 O365 服務的概念。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>搭配使用應用程式與應用程式 CA 時的預期狀況
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 應用程式 CA 會透過裝置上必須有的 Broker 應用程式，來驗證核准的應用程式身分識別：
 *  在 **iOS** 上，**Azure Authenticator 應用程式**是 Broker 應用程式。
@@ -40,8 +40,8 @@ ms.lasthandoff: 10/10/2017
 
 > [!NOTE]
 > 在 Android 裝置上：
-  * 裝置上必須安裝公司入口網站應用程式，但使用者不需登入應用程式。
-  * 裝置註冊必須透過 OneDrive 或 Outlook 應用程式完成。
+>   * 裝置上必須安裝公司入口網站應用程式，但使用者不需登入應用程式。
+>   * 裝置註冊必須透過 OneDrive 或 Outlook 應用程式完成。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>移除 Azure AD 註冊的裝置。
 您可以透過 Azure AD 管理主控台移除裝置註冊，IT 系統管理員通常這麼做。也可以讓使用者在裝置上進行。
@@ -52,18 +52,18 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="app-based-ca-with-device-based-ca"></a>以應用程式為基礎的 CA 與以裝置為基礎的 CA  
 
-您可以在 [Intune 系統管理員主控台](https://manage.microsoft.com)或 [Azure AD Premium 管理主控台] (https://manage.windowsazure.com) 上設定[以裝置相容性為基礎的條件式存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**裝置 CA**)。 裝置 CA 要求使用者只透過符合 Intune 裝置相容性原則之受 Intune 管理的裝置或加入網域的電腦，來連線到 Exchange Online。  如果使用者屬於同時以應用程式 CA 和裝置 CA 原則為目標的一或多個安全性群組，使用者必須符合下列兩個需求之一：
+您可以在 [Intune 系統管理員主控台](https://manage.microsoft.com)或 [Azure AD Premium 管理主控台](https://manage.windowsazure.com)上設定[以裝置合規性為基礎的條件式存取](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>裝置 CA</strong>)。 裝置 CA 要求使用者只透過符合 Intune 裝置相容性原則之受 Intune 管理的裝置或加入網域的電腦，來連線到 Exchange Online。  如果使用者屬於同時以應用程式 CA 和裝置 CA 原則為目標的一或多個安全性群組，使用者必須符合下列兩個需求之一：
 * 用來存取服務的應用程式是下者所支援的行動裝置應用程式 
 * ，且應用程式執行所在的裝置已安裝 **iOS Authenticator (適用於 iOS 裝置)** 或**公司入口網站應用程式 (適用於 Android 裝置)**。
 * 用來存取服務的裝置**受 Intune 管理且符合** Intune 裝置相容性原則，或是**加入網域的電腦**。  以下是協助說明的一些範例：
   * 如果使用者嘗試從**原生 iOS 電子郵件應用程式**進行連線，因為應用程式 CA 不支援原生郵件應用程式，所以該使用者必須在**受管理和符合規範的裝置**上。
   * 如果使用者嘗試從 **Windows 家用電腦**進行連線，則會套用**裝置 CA 原則**，要求使用者必須使用加入網域的電腦。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 [建立 MAM 應用程式的 Exchange Online 原則](mam-ca-for-exchange-online.md)
 
 [封鎖沒有新式驗證的應用程式](block-apps-with-no-modern-authentication.md)
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用應用程式保護原則保護應用程式資料](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

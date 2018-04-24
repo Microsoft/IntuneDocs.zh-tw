@@ -1,29 +1,33 @@
 ---
-title: "建立包含預先共用金鑰的 Wi-Fi 設定檔 - Microsoft Intune - Azure | Micrososft Docs"
-description: "使用自訂設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔，在 Microsoft Intune 中取得 Android、Windows 和 EAP 型 Wi-Fi 設定檔的範例 XML 程式碼"
-keywords: 
+title: 建立包含預先共用金鑰的 Wi-Fi 設定檔 - Microsoft Intune - Azure | Micrososft Docs
+description: 使用自訂設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔，在 Microsoft Intune 中取得 Android、Windows 和 EAP 型 Wi-Fi 設定檔的範例 XML 程式碼
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 預先共用的金鑰 (PSK) 通常用來驗證 WiFi 網路或無線區域網路的使用者。 使用 Intune，您可以建立使用預先共用金鑰的 WiFi 設定檔。 若要建立設定檔，請使用 Intune 中的**自訂裝置設定檔**功能。 本文也包含如何建立 EAP 型 Wi-Fi 設定檔的一些範例。
+
+> [!IMPORTANT]
+>- 搭配 Windows 10 使用預先共用金鑰會導致在 Intune 中出現補救錯誤。 發生這種情況時，系統會將 Wi-Fi 設定檔適當地指派給裝置，而該設定檔將如預期般運作。
+>- 如果您要匯出包含預先共用金鑰的 Wi-Fi 設定檔，請確定該檔案受到保護。 該金鑰會採用存文字格式，因此您需負責保護該金鑰。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -40,21 +44,21 @@ ms.lasthandoff: 03/08/2018
 
    a. 輸入此 Wi-Fi 網路設定的名稱
 
-   b。 (選擇性) 輸入 OMA-URI 設定的描述，或者保留空白
+   b. (選擇性) 輸入 OMA-URI 設定的描述，或者保留空白
 
    c. 將 [資料類型] 設定為 **String**
 
    d. **OMA-URI**：
 
-    - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > 開頭務必包含點號字元。
+     > [!NOTE]
+     > 開頭務必包含點號字元。
 
-    SSID 是您要建立原則的 SSID。 例如，輸入 `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`。
+     SSID 是您要建立原則的 SSID。 例如，輸入 `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`。
 
-  e. **值欄位**是貼上 XML 程式碼的位置。 請參閱本文中的範例。 更新每個值使符合您的網路設定。 程式碼的註解區段包含一些指標。
+   e. **值欄位**是貼上 XML 程式碼的位置。 請參閱本文中的範例。 更新每個值使符合您的網路設定。 程式碼的註解區段包含一些指標。
 3. 選取 [確定] 並儲存，然後指派原則。
 
     > [!NOTE]
@@ -203,7 +207,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 
 1. 在已連線到或最近已連線到無線網路的電腦上，開啟 `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` 資料夾。
 
-  最好使用未連線至太多無線網路的電腦。 否則，您可能必須搜尋每個設定檔才能找到正確的設定檔。
+   最好使用未連線至太多無線網路的電腦。 否則，您可能必須搜尋每個設定檔才能找到正確的設定檔。
 
 2. 搜尋 XML 檔案，找出有名稱正確的檔案。
 3. 找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。

@@ -1,29 +1,29 @@
 ---
-title: "在 Microsoft Intune 中建立 macOS 裝置相容性原則"
-titleSuffix: 
-description: "建立適用於 macOS 裝置的 Microsoft Intune 裝置相容性原則，以便您可以指定裝置必須符合的需求。"
-keywords: 
+title: 在 Microsoft Intune 中建立 macOS 裝置相容性原則
+titleSuffix: ''
+description: 建立適用於 macOS 裝置的 Microsoft Intune 裝置相容性原則，以便您可以指定裝置必須符合的需求。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置建立裝置合規性政策
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 適用於 macOS 的 Intune 裝置相容性原則指定 macOS 設備必須符合的規則和設置，才能視為相容。 您可以使用這些原則與條件式存取來允許或封鎖存取公司資源，並取得裝置報告、針對不相容來採取動作。 在 Intune Azure 入口網站中，為每個平台建立裝置相容性原則。
 

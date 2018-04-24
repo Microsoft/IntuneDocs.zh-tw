@@ -15,15 +15,15 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0297cb0b399d487f548bf6fdd9fb74946bbcb7b1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 Android 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 企業營運 (LOB) 應用程式是您從應用程式安裝檔案新增的應用程式。 這些類型的應用程式通常都是內部撰寫的。 Intune 將 LOB 應用程式安裝在使用者的裝置上。 
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="step-5---update-a-line-of-business-app"></a>步驟 5 - 更新企業營運應用程式
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!Note]
 > 若要讓 Intune 服務成功地將新的 APK 檔案部署到裝置，您必須對 APK 套件中 AndroidManifest.xml 檔案內的 android:versionCode 字串進行遞增處理。

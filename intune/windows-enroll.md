@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本主題將協助 IT 系統管理員為其使用者簡化 Windows 註冊。 一旦您[設定 Intune](setup-steps.md)，使用者以其工作或學校帳戶[登入](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)即可註冊 Windows 裝置。  
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/15/2018
 **多重使用者的支援**<br>
 Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加入 Azure Active Directory 網域的裝置。 當標準使用者使用他們的 Azure AD 認證登入時，他們會收到指派給他們的使用者名稱的應用程式和原則。 針對安裝應用程式等自助式案例，使用者目前無法使用公司入口網站來進行。
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>簡化 Windows 註冊，而不使用 Azure AD Premium
 您可以建立網域名稱伺服器 (DNS) 別名 (CNAME 記錄類型)，自動將註冊要求重新導向至 Intune 伺服器，以簡化使用者的註冊。 如果您不建立 DNS CNAME 資源記錄，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。

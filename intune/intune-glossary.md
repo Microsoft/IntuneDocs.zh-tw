@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 字彙
 了解在 Microsoft Intune 中使用之通用字詞的定義。
@@ -39,11 +39,13 @@ ms.lasthandoff: 03/22/2018
 |Azure 入口網站|[閱讀更多](/intune/what-is-intune) Intune 全新主控台。|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[攜帶您自己的裝置](/intune/device-enrollment)。 使用者可以在裝置上安裝 Intune 公司入口網站應用程式，然後進行註冊，以存取公司資源 (例如電子郵件、公司應用程式、公司資料和支援)。|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |憑證設定檔|當您使用 Wi-Fi、電子郵件或 VPN 設定檔時，可以使用這個原則類型，透過憑證[安全存取公司資源](/intune/certificates-configure)。|
@@ -55,6 +57,7 @@ ms.lasthandoff: 03/22/2018
 |自訂原則|一般組態原則未包含符合您需求的內建設定時，請[使用這些原則](/intune/custom-settings-configure)。 您可以使用自訂原則，透過其他方式 (例如 Apple Configurator 或 OMA-URI) 建立設定。|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |部署|將應用程式或原則傳送至所管理裝置或使用者的動作。 這個動作現在又稱為*指派*。|
@@ -62,6 +65,7 @@ ms.lasthandoff: 03/22/2018
 |裝置設定檔|[這些設定檔](/intune/device-profile-create)可讓您在所管理的裝置上設定各種不同的安全性、功能和存取設定。|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |電子郵件設定檔|這個原則可以用來設定行動裝置上的[電子郵件存取設定](/intune/email-settings-configure)，以將使用者必須執行的設定量減到最少。|
@@ -70,21 +74,25 @@ ms.lasthandoff: 03/22/2018
 |註冊|Microsoft Intune 使用[註冊](/intune/device-enrollment)來管理裝置，並允許其存取資源。|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|適用於合格方案中具有 150 個授權之 Intune 使用者的 [Microsoft 服務](https://technet.microsoft.com/library/mt228265.aspx)。 Microsoft 專家可使用這項服務與您合作，來啟動並執行 Intune。|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |中|群組可讓您[邏輯收集使用者或裝置](/intune/groups-get-started)。 例如，您可以建立所有 Windows 電腦的群組。 然後，您可以將應用程式和設定檔指派給這些群組。|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |混合式|可以透過 System Center Configuration Manager 主控台管理使用 Intune 所註冊之裝置的設定。|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure 入口網站|用於大部分 Intune 管理作業的 Azure 入口網站。|
@@ -93,11 +101,13 @@ ms.lasthandoff: 03/22/2018
 |清查|用來檢視所管理裝置上[安裝的硬體和軟體](/intune/device-inventory)。|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |資訊站模式|設定為[裝置限制設定檔](/intune/device-restrictions-configure)的一 部分，這個模式可讓您鎖定裝置。 例如，您可以設定零售裝置只允許執行一些應用程式。|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |受管理的瀏覽器|一個[網頁瀏覽應用程式](/intune/app-configuration-managed-browser)，您可以在組織中使用 Intune 來指派此應用程式。 受管理的瀏覽器原則會設定允許清單或封鎖清單，以限制受管理瀏覽器的使用者可瀏覽的網站。|
@@ -110,17 +120,20 @@ ms.lasthandoff: 03/22/2018
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|開放行動裝置聯盟裝置管理。 一種業界標準裝置管理通訊協定，許多硬體製造商可用來控制行動裝置和電腦的功能。|
 |OMA-URI|開放行動裝置聯盟統一資源識別碼。 這些項目可識別符合 OMA-DM 標準的個別裝置設定。 沒有內建設定符合需求時，這些設定可以用於 [Intune 自訂設定檔](/intune/custom-settings-configure)。|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |密碼重設|一種 Intune 功能，可讓您強制使用者在支援的裝置上[重設密碼](/intune/device-passcode-reset)。|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |遠端鎖定|這是一種 Intune 功能，讓您即使未擁有裝置，也能[鎖定支援的裝置](/intune/device-remote-lock)。|
@@ -128,6 +141,7 @@ ms.lasthandoff: 03/22/2018
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |選擇性抹除|[選擇性抹除](/intune/device-company-data-remove)只會從裝置移除由應用程式保護原則所保護的公司資料，包括設定和電子郵件設定檔。 選擇性抹除會將使用者的個人資料保留在裝置上。|
@@ -135,6 +149,7 @@ ms.lasthandoff: 03/22/2018
 |訂用帳戶|您為了存取 Intune 租用戶所簽訂的合約。|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|一個協力廠商應用程式，可搭配 Intune 來為您使用 Intune 管理的 Android 裝置提供[遠端協助功能](/intune/device-profile-android-teamviewer)。|
@@ -142,12 +157,15 @@ ms.lasthandoff: 03/22/2018
 |條款及條件|一種指派給使用者的原則類型，包含使用者必須[閱讀並接受](/intune/terms-and-conditions-create)的資訊，才能使用公司入口網站來註冊和存取其工作。|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |大量採購應用程式與書籍|針對您想要在公司內使用的應用程式或書籍，某些應用程式市集可讓您購買多個授權。 Intune 可協助您管理[透過此類方案所購買](/intune/vpp-apps)的應用程式與書籍。 您可以從應用程式市集匯入授權資訊、追蹤已經使用的授權數，並避免您所安裝的應用程式超過您所擁有的授權數。|
 |VPN 設定檔|一種原則，可將 [VPN 設定](/intune/vpn-settings-configure)指派給所管理的裝置，以將使用者所需的任何設定減到最少。|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi 設定檔|一種原則，可將[無線網路設定](/intune/wi-fi-settings-configure)指派給裝置，讓使用者連接至公司網路，而不需要知道或進行任何設定。
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi 設定檔 | 一種原則，可將[無線網路設定](/intune/wi-fi-settings-configure)指派給裝置，讓使用者連接至公司網路，而不需要知道或進行任何設定。 |
+

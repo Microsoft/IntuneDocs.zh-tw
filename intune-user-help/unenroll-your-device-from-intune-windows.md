@@ -1,39 +1,33 @@
 ---
-title: "從 Intune 取消註冊 Windows 裝置 | Microsoft Docs"
-description: "描述從 Intune 取消註冊 Windows 裝置的方式"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 從 Intune 移除 Windows 裝置 | Microsoft Docs
+description: 描述如何從 Intune 移除 Windows 裝置
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - User help
-ROBOTS: 
-ms.reviewer: priyar
+ROBOTS: ''
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 898501d2cf87f73243a97b8c1e99633d30bab982
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-windows-device-from-intune"></a>從 Intune 取消註冊 Windows 裝置
+# <a name="remove-your-windows-device-from-intune"></a>從 Intune 移除 Windows 裝置
 
-如果您已註冊 Intune，但不想再為工作或學校使用您的 Windows 裝置，而且也不需要存取工作或學校電子郵件、App 或其他資源，就需要取消註冊該裝置。 從 Intune 取消註冊您的裝置後，將再也無法存取這些資源。 如需取消註冊裝置時所發生情況的詳細資訊，請參閱[如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+如果您的裝置已向 Intune 註冊，但您已不想再使用 Windows 裝置來存取工作或學校電子郵件、應用程式或其他資源，就必須將該裝置自管理中移除。 從 Intune 移除您的裝置之後，您將不再能夠存取這些資源。 如需有關將裝置自管理中移除時所發生情況的詳細資訊，請參閱[如果將裝置從 Intune 取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)。
 
-若要取消註冊您的裝置，請使用符合您所使用之裝置類型的連結 (如上述＜在本文中＞一節所示)：
-
--   [取消註冊您的 Windows 10 裝置](#unenroll-your-windows-10-device)
--   [取消註冊您的 Windows 8.1 電腦](#unenroll-your-windows-81-computer)
--   [取消註冊您的 Windows Phone 8.1 裝置](#unenroll-your-windows-phone-81-device)
-
-## <a name="unenroll-your-windows-10-device"></a>取消註冊您的 Windows 10 裝置
+## <a name="remove-your-windows-10-device"></a>移除 Windows 10 裝置
 
 1.  如需取得 App 清單，請點選 [公司入口網站]  App。
 
@@ -43,7 +37,7 @@ ms.lasthandoff: 01/25/2018
 
 4.  點選 [移除] &gt; [移除]。
 
-## <a name="unenroll-your-windows-81-computer"></a>取消註冊您的 Windows 8.1 電腦
+## <a name="remove-your-windows-81-computer"></a>移除 Windows 8.1 電腦
 
 1.  移至 [電腦設定] &gt; [網路] &gt; [工作場所]。
 
@@ -53,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
 4.  在開啟的快顯視窗上，選取 [關閉]。
 
-## <a name="unenroll-your-windows-phone-81-device"></a>取消註冊您的 Windows Phone 8.1 裝置
+## <a name="remove-your-windows-phone-81-mobile-device"></a>移除 Windows Phone 8.1 行動裝置
 
 1.  移至 [設定] &gt; [工作場所]。
 
@@ -62,5 +56,22 @@ ms.lasthandoff: 01/25/2018
 3.  點選畫面底部的 [刪除]。
 
 4.  在 [刪除帳戶] 對話方塊上，點選 [刪除]。
+
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>在移除公司入口網站之後移除您的個人資訊
+
+公司入口網站會將兩種資料儲存在您的 Windows 裝置上：
+
+-   **診斷記錄**：當您從公司入口網站移除裝置時，會自動清除 Microsoft 所收集的標準應用程式活動資料，例如應用程式已開啟多久或是否當機。
+-   **應用程式快取**：儲存應用程式運作所需的特定支援檔案，例如圖示和設定。
+
+以下是一些您必須執行才能完全刪除此資訊的步驟。
+
+### <a name="uninstall-the-company-portal"></a>將公司入口網站解除安裝  
+
+[將公司入口網站應用程式解除安裝](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs)會將儲存在您裝置上的一些應用程式資料移除。  
+
+### <a name="reset-the-company-portal"></a>重設公司入口網站
+
+您可以透過在 [設定] 中重設公司入口網站應用程式，來重設此入口網站的其餘應用程式資料。 請開啟 [設定] > [應用程式與功能] > [公司入口網站] > [進階選項] > [重設]。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

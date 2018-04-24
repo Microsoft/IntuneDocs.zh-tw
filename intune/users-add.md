@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 身為系統管理員，您可以直接新增使用者，或同步內部部署 Active Directory 中的使用者。 新增之後，使用者便可以註冊裝置，並存取公司資源。 您也可以授與使用者其他權限，包括「全域管理員」和「服務管理員」權限。
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 03/22/2018
 2. 在 Office 365 功能表中，選取 [系統管理員]。
 3. 在系統管理中心，選取 [新增使用者]。
 
-  ![[新增原則] 區段的螢幕擷取畫面](media/office-add-user.png)
+   ![[新增原則] 區段的螢幕擷取畫面](media/office-add-user.png)
 
 4. 指定下列使用者詳細資訊：
-  - **名字**
-  - **姓氏**
-  - **顯示名稱**
-  - **使用者名稱** - 儲存在 Azure Active Directory 中用來存取服務的通用主體名稱 (UPN)
-  - **位置**
-  - **連絡資訊** (選用)
-  - **密碼** - 自動產生或指定
+   - **名字**
+   - **姓氏**
+   - **顯示名稱**
+   - **使用者名稱** - 儲存在 Azure Active Directory 中用來存取服務的通用主體名稱 (UPN)
+   - **位置**
+   - **連絡資訊** (選用)
+   - **密碼** - 自動產生或指定
 
      ![[新增使用者] 區段的螢幕擷取畫面](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ ms.lasthandoff: 03/22/2018
 1. 登入 [Azure 入口網站](https://portal.azure.com)，然後移至 [All services] (所有服務) > [Monitoring + Management] (監視 + 管理) > [Intune]。 您也可以「搜尋 **Intune** 資源」。
 2. 選取 [使用者] > [所有使用者]。
 3. 在系統管理中心，選取 [新增使用者]。
-  ![[新增使用者] 的螢幕擷取畫面](media/intune-add-user.png)
+   ![[新增使用者] 的螢幕擷取畫面](media/intune-add-user.png)
 4. 指定下列使用者詳細資訊：
-  - **名稱**
-  - **使用者名稱** - Azure Active Directory 入口網站中的新名稱 ![新增名稱和使用者名稱的螢幕擷取畫面](media/intune-add-user-info.png) 選擇 [確定] 繼續。
+   - **名稱**
+   - **使用者名稱** - Azure Active Directory 入口網站中的新名稱 ![新增名稱和使用者名稱的螢幕擷取畫面](media/intune-add-user-info.png) 選擇 [確定] 繼續。
 5. 或者，您也可以指定下列使用者內容：
-  - **設定檔** - 工作資訊，包括 [職稱]和 [部門]
-  -  **群組** - 選取要為使用者新增的群組
-  - **目錄角色** - 授與使用者系統管理權限，包括 Intune 服務管理員角色。
+   - **設定檔** - 工作資訊，包括 [職稱]和 [部門]
+   -  **群組** - 選取要為使用者新增的群組
+   - **目錄角色** - 授與使用者系統管理權限，包括 Intune 服務管理員角色。
 
-  選取 [建立]，將新的使用者新增至 Intune。
+   選取 [建立]，將新的使用者新增至 Intune。
 6. 選取 [設定檔]，然後為新使用者選擇 [使用位置]。 在為新的使用者指派 Intune 授權之前，需要使用位置。 選擇 [儲存] 繼續。
     ![使用位置的螢幕擷取畫面](media/intune-add-user-loc.png)
 7. 選取 [授權]，然後選擇 [指派]，為這位使用者指派 Intune 授權。 需要有 Intune 授權，才能註冊裝置或存取公司資源。 選取 [產品]，依序選擇授權類型和 [選取]，然後選擇 [指派]。
@@ -112,7 +112,7 @@ ms.lasthandoff: 03/22/2018
 您可以設定目錄同步處理，將使用者帳戶從內部部署 Active Directory 匯入到其中包括 Intune 使用者的 Microsoft Azure Active Directory (Azure AD)。 讓內部部署的 Active Directory 與所有 Azure Active Directory 服務連線，可更易於管理使用者身分識別。 您也可以設定單一登入功能，讓使用者的驗證體驗親切又簡單。 透過連結同一個 [Azure AD 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)與多個服務，您之前已經同步的使用者帳戶就可用於所有雲端服務。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>如何將內部部署使用者與 Azure AD 同步
-同步處理使用者帳戶與 Azure AD 唯一需要的工具是 [Azure AD Connect 精靈](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 精靈提供簡單和引導式的體驗，將內部部署身分識別基礎結構連線至雲端。  選擇您的拓撲和需求 (單一或多個目錄、密碼同步或同盟)。 此精靈會部署並設定啟動及執行連線所需之所有元件。 包括︰同步處理服務、Active Directory 同盟服務 (AD FS)，以及 Azure AD PowerShell 模組。
+同步處理使用者帳戶與 Azure AD 唯一需要的工具是 [Azure AD Connect 精靈](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 精靈提供簡單和引導式的體驗，將內部部署身分識別基礎結構連線至雲端。 選擇您的拓撲和需求 (單一或多個目錄、密碼雜湊同步處理、傳遞驗證或同盟)。 此精靈會部署並設定啟動及執行連線所需之所有元件。 包括︰同步處理服務、Active Directory 同盟服務 (AD FS)，以及 Azure AD PowerShell 模組。
 
 > [!TIP]
 > Azure AD Connect 包含先前發行為 Dirsync 和 Azure AD Sync 的功能。深入了解[目錄整合](http://technet.microsoft.com/library/jj573653.aspx)。 若要了解將本機目錄的使用者帳戶同步至 Azure AD，請參閱 [Active Directory 與 Azure AD 的相似性](http://technet.microsoft.com/library/dn518177.aspx)。

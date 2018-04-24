@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Exchange ActiveSync 原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune **Exchange ActiveSync** 原則進行設定，進而控制 Exchange ActiveSync 所管理之裝置上的各種特性與功能。
 
@@ -44,10 +44,11 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="encryption-settings"></a>加密設定
 
-|設定名稱|詳細資料|
-|----------------|---|
-|**行動裝置需要加密**<sup>1</sup>|要求在受支援時加密裝置上的資料。<br><br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 **[需要密碼才可將行動裝置解除鎖定]** 設定。|
-|**儲存卡需要加密**|需要加密外部儲存體 (例如 SD 記憶卡) 上所儲存的資料 (在支援的裝置上)。
+|                           設定名稱                           |                                                                                                                                    詳細資料                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>行動裝置需要加密</strong><sup>1</sup> | 要求在受支援時加密裝置上的資料。<br><br>對於 Windows Phone 8 裝置，您必須將此項目設定為 [是] 。<br /><br />若要在 iOS 裝置上啟用加密，可啟用 <strong>[需要密碼才可將行動裝置解除鎖定]</strong> 設定。 |
+|       <strong>儲存卡需要加密</strong>       |                                                                                  需要加密外部儲存體 (例如 SD 記憶卡) 上所儲存的資料 (在支援的裝置上)。                                                                                  |
+
 <sup>1</sup> 執行 Windows 8.1 之裝置的其他資訊
 
 -   若要在執行 Windows 8.1 的裝置上強制加密，您必須在每個裝置上安裝 [2014 年 12 月適用於 Windows 的 MDM 用戶端更新](https://support.microsoft.com/kb/3013816)。

@@ -1,37 +1,37 @@
 ---
-title: "Windows 裝置的相容性原則設定"
-description: "本主題說明您能為 Windows 裝置之相容性原則設定的規則與設定。"
-keywords: 
+title: Windows 裝置的相容性原則設定
+description: 本主題說明您能為 Windows 裝置之合規性政策設定的規則與設定。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows 裝置的相容性原則設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主題中所述的原則設定適用於執行 Windows 作業系統的裝置。 下列各節說明支援的 Windows 版本。
 
 如果您正在尋找其他平台的相關資訊，請選取下列其中一項︰
 > [!div class="op_single_selector"]
-- [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Android for Work 的法務遵循政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS 裝置的法務遵循政策設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android 裝置的法務遵循政策設定](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android for Work 的法務遵循政策設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone 裝置的相容性原則設定
 Windows Phone 8.1 及更新版本支援這一節所列的設定。
@@ -80,7 +80,7 @@ Windows Phone 8.1 及更新版本支援這一節所列的設定。
   > Windows 裝置並不支援安裝為部分裝置健全狀況證明的協力廠商**初期啟動的反惡意程式碼** (ELAM) 軟體。
 
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)(健康情況證明 CSP)。
-###  <a name="device-property-settings"></a>裝置屬性設定
+  ###  <a name="device-property-settings"></a>裝置屬性設定
 - **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容。
     會顯示如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
@@ -153,4 +153,4 @@ Windows 電腦支援這一節所列的設定。
 - Windows 8.1 電腦會傳回 **6.3** 版。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 
 - 執行 Windows 10 的電腦，其版本應該設為 **10.0** 加上 **winver** 命令所傳回的作業系統組建編號。 例如，可能類似於 10.0.10586。
-> ![[關於 Windows] 對話方塊會反白顯示作業系統組建版本](./media/ca_win10-os-version.png)
+  > ![[關於 Windows] 對話方塊會反白顯示作業系統組建版本](./media/ca_win10-os-version.png)

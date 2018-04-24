@@ -1,27 +1,27 @@
 ---
-title: "使用 USB 纜線將記錄傳送給公司支援人員 | Microsoft Docs"
-description: "使用 USB 纜線傳送資料記錄"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 使用 USB 纜線將記錄傳送給公司支援人員 | Microsoft Docs
+description: 使用 USB 纜線傳送資料記錄
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9fd4ce3548a16837e3f68c81ae08a1e22541e62b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 纜線將記錄傳送給公司支援人員
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 01/25/2018
 > [!Note]
 > 開始之前，請確定您有公司支援人員的電子郵件地址。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)或您的公司入口網站應用程式中找到此資訊。
 
-1.  在錯誤畫面上，點選 [傳送資訊]。 當您看到訊息詢問要用哪一種方法傳送記錄檔時，請選擇會將檔案儲存至裝置的選項。
+1. 在錯誤畫面上，點選 [傳送資訊]。 當您看到訊息詢問要用哪一種方法傳送記錄檔時，請選擇會將檔案儲存至裝置的選項。
 
-2.  使用 USB 纜線將裝置連接到您的電腦。 這通常與您用來在牆上電源插座為裝置充電的線是同一條纜線。
+2. 使用 USB 纜線將裝置連接到您的電腦。 這通常與您用來在牆上電源插座為裝置充電的線是同一條纜線。
 
-3.  在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 **Android 裝置\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\**。
+3. 在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>。
 
-4.  選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給公司支援人員。
+4. 選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給公司支援人員。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -1,27 +1,27 @@
 ---
-title: "允許/封鎖 Samsung Knox 之應用程式的 Microsoft Intune 原則"
-titlesuffix: 
-description: "建立自訂設定檔以允許及封鎖 Samsung Knox Standard 裝置的應用程式。"
-keywords: 
+title: 允許/封鎖 Samsung Knox 之應用程式的 Microsoft Intune 原則
+titlesuffix: ''
+description: 建立自訂設定檔以允許及封鎖 Samsung Knox Standard 裝置的應用程式。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 61a4d059eb771e22075796def5e1a273b02d932e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>在 Microsoft Intune 中使用自訂原則來允許和封鎖 Samsung Knox Standard 裝置的應用程式 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用本文中的程序，可建立 Microsoft Intune 的自訂原則，該原則會建立下列其中一個項目︰
 

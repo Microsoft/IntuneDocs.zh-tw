@@ -1,29 +1,29 @@
 ---
-title: "設定 Apple School Manager 註冊計劃註冊 iOS 裝置"
+title: 設定 Apple School Manager 註冊計劃註冊 iOS 裝置
 titlesuffix: Microsoft Intune
-description: "了解如何設定 Apple School Manager 註冊計劃向 Intune 註冊公司擁有的 iOS 裝置。"
-keywords: 
+description: 了解如何設定 Apple School Manager 註冊計劃向 Intune 註冊公司擁有的 iOS 裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 設定 iOS 裝置註冊
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>暫時的使用者介面差異
@@ -61,7 +61,7 @@ ms.lasthandoff: 03/08/2018
 **步驟 1.下載建立 Apple 權杖所需的 Intune 公開金鑰憑證。**<br>
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]，然後選擇 [註冊計劃權杖]。
 
-  ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格下載公開金鑰](./media/enrollment-program-token-download.png)
+   ![[Apple 憑證] 工作區中的 [註冊計劃權杖] 窗格下載公開金鑰](./media/enrollment-program-token-download.png)
 
 2. 在 [註冊計劃權杖] 刀鋒視窗中，選擇 [下載您的公開金鑰憑證]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple School Manager 入口網站要求信任關係憑證。
 
@@ -95,20 +95,20 @@ ms.lasthandoff: 03/08/2018
 4. 在 [建立註冊設定檔] 刀鋒視窗中，為 Intune 顯示的設定檔輸入 [名稱] 和 [描述]。
 5. 為 [使用者親和性] 選擇具備此設定檔的裝置，在註冊時要或不要有使用者親和性。
 
- - **搭配使用者親和性進行註冊** - 在安裝期間建立裝置與使用者的關聯。
+   - **搭配使用者親和性進行註冊** - 在安裝期間建立裝置與使用者的關聯。
 
-  Apple School Manager 的「共用的 iPad」模式需要使用者不搭配使用者親和性進行註冊。
+   Apple School Manager 的「共用的 iPad」模式需要使用者不搭配使用者親和性進行註冊。
 
- - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項，如共用裝置。 用於執行工作而不需存取本機使用者資料的裝置。 公司入口網站應用程式之類的應用程式無法運作。
+   - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項，如共用裝置。 用於執行工作而不需存取本機使用者資料的裝置。 公司入口網站應用程式之類的應用程式無法運作。
 
 6. 選擇 [裝置管理設定]。 這些項目是在啟用期間設定，且需要重設為原廠設定才能進行變更。 設定下列設定檔設定，然後選擇 [儲存]：
 
-  ![選擇管理模式](./media/enrollment-program-profile-mode.png)
+   ![選擇管理模式](./media/enrollment-program-profile-mode.png)
 
-    - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
+   - **受監督** - 啟用更多管理選項，且預設會停用 [啟用鎖定] 的管理模式。 若將核取方塊留為空白，則管理功能有限。
 
      - **鎖定的註冊** - (需要管理模式 = 受監督) 停用允許移除管理設定檔的 iOS 設定。 若將核取方塊留為空白，表示允許從 [設定] 功能表移除管理設定檔。
-   - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與受監督模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
+     - **共用的 iPad** - (需要 [不搭配使用者親和性進行註冊] 與受監督模式)。允許多位使用者使用受管理 Apple ID 登入註冊的 iPad。 受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
 
    >[!NOTE]
    >如果將 [使用者親和性] 設定為 [搭配使用者親和性]，或將 [受監督] 模式設定為 [關閉]，就會停用註冊設定檔的「共用的 iPad」模式。
@@ -151,12 +151,12 @@ ms.lasthandoff: 03/08/2018
 
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃裝置] > [同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
-  ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
+   ![選取 [註冊計劃裝置] 節點並選擇 [同步處理] 連結](./media/enrollment-program-device-sync.png)
 2. 在 [同步] 刀鋒視窗中，選擇 [要求同步]。進度列會顯示再次要求進行同步之前，必須要等待的總時間。
 
-  ![選擇 [要求同步] 連結的 [同步] 刀鋒視窗](./media/enrollment-program-device-request-sync.png)
+   ![選擇 [要求同步] 連結的 [同步] 刀鋒視窗](./media/enrollment-program-device-request-sync.png)
 
-  為了符合 Apple 規定的可接受流量，Intune 具有下列限制：
+   為了符合 Apple 規定的可接受流量，Intune 具有下列限制：
    -    完整同步處理每 7 天只能執行一次。 在完整同步處理期間，Intune 會重新整理 Apple 已指派給 Intune 的每個序號，不論先前是否已同步處理序號。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
    -    任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
 
@@ -169,15 +169,15 @@ ms.lasthandoff: 03/08/2018
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊]，然後選擇 [註冊計劃設定檔]。
 2. 從 [註冊計劃設定檔] 清單中，選擇您想要指派給裝置的設定檔，然後選擇 [Device Assignments] (裝置指派)。
 
- ![已選取 [指派] 的裝置指派。](./media/enrollment-program-device-assign.png)
+   ![已選取 [指派] 的裝置指派。](./media/enrollment-program-device-assign.png)
 
 3. 選擇 [指派]，然後選擇您想要指派此設定檔的 Apple School Manager 裝置。 您可以篩選以檢視可用的裝置︰
-  - **未指派**
-  - **任何**
-  - **&lt;設定檔名稱&gt;**
+   - **未指派**
+   - **任何**
+   - **&lt;設定檔名稱&gt;**
 4. 選擇您想要指派的裝置。 資料行上方的核取方塊可選取最多 1000 個列出的裝置。 按一下 [指派]。 若要註冊 1000 部以上的裝置，請重複指派步驟，直到將註冊設定檔指派給所有的裝置為止。
 
-  ![在 Intune 中用來指派註冊計劃設定檔的 [指派] 按鈕](media/dep-profile-assignment.png)
+   ![在 Intune 中用來指派註冊計劃設定檔的 [指派] 按鈕](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>將裝置散發給使用者
 

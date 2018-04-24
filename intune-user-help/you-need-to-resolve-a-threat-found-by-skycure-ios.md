@@ -1,31 +1,29 @@
 ---
-title: "解決 Symantec Endpoint Protection Mobile for iOS 找到的威脅 | Microsoft Docs"
-description: "了解如何修正 iOS 裝置上找到的威脅。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 解決 Symantec Endpoint Protection Mobile for iOS 找到的威脅 | Microsoft Docs
+description: 了解如何修正 iOS 裝置上找到的威脅。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解決 Symantec Endpoint Protection Mobile 找到的威脅
 
-Symantec Endpoint Protection Mobile 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式和檔案。 您可能會看到類似下列這則訊息：
-
-![來自 Symantec Endpoint Protection Mobile 的不符合規範訊息](./media/ios-skycure-noncompliant-in-ssp.png)
+Symantec Endpoint Protection Mobile 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式和檔案。 
 
 若要解決此問題，請開啟 Symantec Endpoint Protection Mobile 應用程式，並遵循應用程式中顯示的指示。
 
