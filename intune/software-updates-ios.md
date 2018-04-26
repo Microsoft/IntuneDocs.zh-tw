@@ -3,19 +3,19 @@ title: 在 Microsoft Intune 中設定 iOS 軟體更新原則
 titlesuffix: ''
 description: 設定 iOS 更新原則，強制受監督的 iOS 裝置自動安裝最新可用的軟體更新。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 更新原則
 

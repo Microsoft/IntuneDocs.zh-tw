@@ -17,18 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
 取得組織應用程式、資料及資源的存取權，讓您更輕鬆地執行工作。 您的組織使用 Intune [管理這些資源的存取權](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)，而這需要您下載 macOS 的公司入口網站應用程式。 這些指示適用於 OS X El Capitan 10.11+ 上的 macOS 裝置。
 
-> [!NOTE]
-> 您可以在[這裡](enroll-your-device-in-intune-macos-legacy.md)找到在舊版 macOS 上註冊 macOS 裝置的指示。
 
 1. 在您的 __Dock__ 上，尋找 __Safari__ 並開啟新視窗，然後開啟[公司入口網站](https://portal.manage.microsoft.com)。
 

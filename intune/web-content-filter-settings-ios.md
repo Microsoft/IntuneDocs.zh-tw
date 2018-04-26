@@ -3,8 +3,8 @@ title: 適用於 iOS 裝置的 Microsoft Intune 網路內容篩選器設定
 titlesuffix: ''
 description: 了解您可以用來允許及禁止從執行 iOS 的裝置上存取網站的 Microsoft Intune 設定。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9ea7a9219c69326dcefc71a35339ebb10a3c5ed1
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 

@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 啟動 iOS 遺失模式 - Azure | Microsoft Docs
 description: 開啟或啟動遺失模式，使用 Microsoft Intune 自訂顯示在遺失或遭竊之 iOS 裝置鎖定畫面中的訊息。 此外，在使用遺失模式動作時，取得安全性和隱私權資訊的詳細資料。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 070256ce5267189731c3565f4332a3bd57c326f5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4601f1ec4b50ee13d21b419066ed741f52c7c275
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 在 iOS 裝置上啟用遺失模式
 

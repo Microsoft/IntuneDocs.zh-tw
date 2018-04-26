@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 移除裝置上的公司資料 - Azure | Microsoft Docs
 description: 移除裝置上的公司資料，或在使用 Microsoft Intune 的 Android、Android For Work、iOS、macOS 或 Windows 裝置上執行原廠重設。 也從 Azure Active Directory 中刪除裝置。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 

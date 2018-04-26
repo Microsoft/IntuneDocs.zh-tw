@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune - Azure 在 Windows 裝置上重設密碼 | Microsoft Docs"
-description: "若要重設 Windows 裝置上的密碼，請安裝 Microsoft PIN 重設服務和 Microsoft PIN 重設用戶端、使用您 Azure Active Directory 目錄識別碼來建立裝置原則，然後使用 Microsoft Intune 在 Azure 入口網站中重設密碼。"
-keywords: 
-author: MandiOhlinger
-ms.author: mandia
+title: 使用 Microsoft Intune - Azure 在 Windows 裝置上重設密碼 | Microsoft Docs
+description: 若要重設 Windows 裝置上的密碼，請安裝 Microsoft PIN 重設服務和 Microsoft PIN 重設用戶端、使用您 Azure Active Directory 目錄識別碼來建立裝置原則，然後使用 Microsoft Intune 在 Azure 入口網站中重設密碼。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 重設 Windows 裝置的密碼
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 03/09/2018
 ## <a name="reset-the-passcode"></a>重設密碼
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。 
-2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置]，然後選取 [所有裝置]。
 4. 選取您要重設密碼的裝置。 在裝置屬性中，選取 [新密碼]。
 5. 選取 [是] 確認。 密碼即產生，而且會在入口網站中顯示七天。

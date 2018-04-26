@@ -3,8 +3,8 @@ title: 監視 Microsoft Intune 裝置相容性原則
 titlesuffix: ''
 description: 使用裝置相容性儀表板來監視整體裝置相容性、檢視報表，以及逐條原則與逐項設定地檢視裝置相容性。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: c4c3c3a2d73c6390ef5761f1bd0b12fe55855c6e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 

@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 同步處理裝置 - Azure | Micrososft Docs
 description: 同步處理使用 Microsoft Intune 註冊或管理的裝置，以取得最新的原則和動作。 使用 Azure 入口網站包含要同步處理的步驟，並列出可重試的錯誤碼。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c098c3d7f71a45830f45877f5ce794d9e112b5e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 

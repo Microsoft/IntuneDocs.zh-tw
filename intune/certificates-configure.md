@@ -14,11 +14,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 2. 在每部裝置上安裝根憑證或中繼憑證授權單位 (CA) 憑證，讓裝置可以辨識 CA 的合法性。 若要執行此作業，請建立並指派**信任的憑證設定檔**。 當您指派此設定檔時，您以 Intune 管理的裝置就會要求並收到根憑證。 您必須為每個平台分別建立設定檔。 提供下列平台可用的受信任憑證設定檔︰
 
     - iOS 8.0 和更新版本
-    - macOS 10.9 及更新版本
+    - macOS 10.11 及更新版本
     - Android 4.0 及更新版本
     - Android for Work
     - Windows 8.1 及更新版本

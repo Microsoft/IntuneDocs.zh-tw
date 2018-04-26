@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>以 Microsoft Intune 管理使用 Managed Browser 原則的網際網路存取
 
@@ -155,10 +155,9 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>步驟 2：指派為 Managed Browser 指派的應用程式設定原則。
 此程序會設定 Managed Browser 應用程式使用應用程式 Proxy 重新導向。 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-|||
-|-|-|
-|金鑰|值|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| 金鑰                                                             | 值    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 如需如何前後使用 Managed Browser 和 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (搭配使用最好：Intune 和 Azure Active Directory 合作以改善使用者存取)。
 
@@ -166,10 +165,8 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 此設定可讓您設定使用者啟動 Managed Browser 或建立新索引標籤時看到的首頁。使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                金鑰                                |                                                           值                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>範例：<strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何設定 Managed Browser 書籤
@@ -182,21 +179,17 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                金鑰                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此設定值是一份書籤。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 <strong>&#124;</strong> 字元分隔標題和 URL。<br><br>範例：<strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>若要設定多個書籤，請以雙引號字元 <strong>&#124;&#124;</strong> 分隔每組配對。<br><br>範例：<strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何為 Managed Browser 指定允許和封鎖的 URL
 
 使用程序來建立 Managed Browser 應用程式設定，提供以下金鑰和值組：
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               金鑰                                                                                                                                                                |                                                                                                                                                                                    值                                                                                                                                                                                    |
-| 從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：<strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | 金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 <strong>&#124;</strong> 字元分隔。<br><br>範例：<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|金鑰|值|
+|-|-|
+|從下列選項進行選擇：<br><br>- 指定允許的 URL (只允許這些 URL；無法存取其他網站)：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定封鎖的 URL (可以存取所有其他網站)： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 **&#124;** 字元分隔。<br><br>範例：<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >請勿同時指定這兩個金鑰。 如果兩個金鑰都以同一使用者為目標，會使用允許金鑰，因為它是最嚴格的選項。

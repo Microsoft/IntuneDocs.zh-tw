@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 0941db852674d1ee775fc05edb92ff479d856d0c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
+ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -40,7 +40,7 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 
 若要在註冊裝置時要求 MFA，請遵循下列步驟︰
 
-[!Important]
+>[!Important]
 >您必須將 Azure Active Directory Premium P1 (或以上) 指派給使用者以實施此原則。
 
 >[!Important]

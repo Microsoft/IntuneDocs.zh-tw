@@ -3,8 +3,8 @@ title: 執行 Windows 10 之裝置的 Microsoft Intune 電子郵件設定
 titleSuffix: ''
 description: 深入了解可用於設定執行 Windows 10 之裝置上電子郵件設定的 Microsoft Intune 設定。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a0c3eaf0643ede02b8c084d172b7a51d251b3a3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>在執行 Windows 10 之裝置上的 Microsoft Intune 電子郵件設定檔設定
 

@@ -3,8 +3,8 @@ title: 執行 macOS 之裝置的 Microsoft Intune Wi-Fi 設定
 titleSuffix: ''
 description: 了解您可用來在執行 macOS 的裝置上設定 Wi-Fi 連線的 Intune 設定。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0feb00949375cf65428d061af81813cfcd5249
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 81bd3cb54a1490732083b52a1fe242146183eebc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的 Wi-Fi 設定
 

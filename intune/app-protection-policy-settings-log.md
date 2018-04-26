@@ -1,25 +1,25 @@
 ---
-title: "檢閱應用程式防護原則記錄"
+title: 檢閱應用程式防護原則記錄
 titlesuffix: Microsoft Intune
-description: "深入了解應用程式防護記錄中您可以檢閱的設定。"
-keywords: 
-author: erikre
-ms.author: erikre
+description: 深入了解應用程式防護記錄中您可以檢閱的設定。
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3a3d0686eca435ff8caf914afecef08c73318c3
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/05/2018
 | AccessRecheckOfflineTimeout | x 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 離線寬限期<br>注意：這是在裝置已離線的情況下，重新檢查應用程式存取需求之前的時間間隔。             |
 | AccessRecheckOnlineTimeout  | _x_ 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 逾時。<br>注意：這是在裝置已離線的情況下，於應用程式啟動後重新檢查應用程式存取需求之前的時間間隔。 |
 | AppPinDisabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 於裝置 PIN 受到管理時停用應用程式 PIN。                                                                                                                                     |
-| AppSharingFromLevel         | 0 = 沒有應用程式<br>1 = 受管理的應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式接收來自其他應用程式的資料。                                                                                                                        |
+| AppSharingFromLevel         | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式接收來自其他應用程式的資料。                                                                                                                        |
 | AppSharingToLevel           | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式將資料傳輸至其他應用程式。                                                                                                                         |
 | AuthenticationEnabled       | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 要求公司認證 (而不是 PIN) 以進行存取。                                                                                                                      |
 | ClipboardSharingLevel       | 0 = 已封鎖<br>1 = 受管理的應用程式。<br>2 = 可貼上的受管理應用程式。<br>3 = 任何應用程式                                                                                                                                                                                                                            | [資料重新配置] 限制與其他應用程式的剪下、複製和貼上。                                                                                                                         |
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/05/2018
 | SimplePINAllowed            | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許簡單的 PIN                                                                                                                                                               |
 | TouchIDEnabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許指紋而非 PIN (iOS 8+)。                                                                                                                                      |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 若要深入了解應用程式保護原則，請參閱[什麼是應用程式保護原則？](app-protection-policy.md)
  - Intune 有提供數種工具來協助您對環境中的問題進行疑難排解。 如需詳細資訊，請參閱[使用疑難排解入口網站協助使用者](help-desk-operators.md)。

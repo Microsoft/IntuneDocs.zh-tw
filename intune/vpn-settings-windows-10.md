@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>閱讀在 Intune 中的 VPN 設定
 
@@ -93,6 +93,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="apps-and-traffic-rules"></a>應用程式與流量規則
 
 **限制這些應用程式的 VPN 連線**：若您只希望某些應用程式使用 VPN 連線，可啟用此設定。
+
 **相關聯的應用程式**：輸入會自動使用 VPN 連線的應用程式清單。 應用程式類型會決定應用程式識別碼。 若為通用 app，請輸入套件系列名稱。 若為傳統型應用程式，請輸入應用程式的檔案路徑。
 
 >[!IMPORTANT]

@@ -3,8 +3,8 @@ title: 透過 Microsoft Intune 核發 Symantec PKCS 憑證
 titlesuffix: ''
 description: 安裝並設定 Intune 憑證連接器，以從 Symantec PKI Manager Web 服務向受 Intune 管理的裝置核發 PKCS 憑證。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff642c7d8d836979fadebc799e2e7373cd299f4e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>針對 Symantec PKI Manager Web 服務設定 Intune 憑證連接器
 

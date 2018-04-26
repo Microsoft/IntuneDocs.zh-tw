@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 來管理裝置 - Azure | Micrososft Docs
 description: 檢閱您使用 Microsoft Intune 來管理的裝置，包括將裝置清單匯出成 CSV 格式、檢視已加入 Azure Active Directory 的裝置、檢閱裝置上的動作變更記錄、使用「TeamViewer 連接器」以允許 IT 系統管理員從遠端對 Android 裝置進行疑難排解，以及檢視您可在裝置上執行的所有動作。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: get-started-article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
