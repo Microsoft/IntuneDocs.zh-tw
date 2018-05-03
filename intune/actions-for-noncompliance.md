@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>將電子郵件自動化，並為不符合規範的裝置新增動作 - Intune
 
@@ -77,7 +77,10 @@ ms.lasthandoff: 04/16/2018
 1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Microsoft Intune]，然後選取 [裝置合規性]。
 2. 選取 [原則]，選擇您的原則，然後選取 [屬性]。 
 
-   尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。
+  尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。
+  
+  > [!NOTE]
+  > JAMF 裝置和裝置群組目標的裝置目前無法接收合規性動作。
 
 3. 選取 [不符合規範時所採取的動作]，然後選取 [新增] 輸入動作參數。 您可以選擇先前建立的訊息範本，新增其他收件者，並更新寬限期排程。 您可以輸入排程上的天數 (0 到 365)，然後強制執行條件式存取原則。 如果您輸入 **0** 天，則條件式存取會**立即**禁止對公司資源的存取。
 

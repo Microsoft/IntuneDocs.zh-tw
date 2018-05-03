@@ -15,17 +15,25 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11585adf570ba9155861f89688c33ac6cecbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1a44ac33542675457864eead5915a3150e592b1b
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 保持 Intune 資料倉儲更新的最新狀態。
+
+## <a name="1805"></a>1805
+_2018 年 5 月發行_
+
+### <a name="correction-to-device-count-in-devices-collection"></a>更正**裝置**集合中的裝置計數 
+
+已經針對**裝置**集合做出一個修正，它有可能會降低屬性 `isDeleted` 篩選的裝置總計數。 此下拉式清單是在更正錯誤的結果，這並不是錯誤。 如需有關**裝置**集合的詳細資訊，請參閱[裝置實體的參考](reports-ref-devices.md)。 
+
 
 ## <a name="1801"></a>1801
 _發行日期：2018 年 1 月_

@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/26/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b349a61d61288f700294e04d029d825afba13445
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d1825d99243654c9fecac7729153a95234d435ff
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>在 Intune 中為執行 Windows Holographic for Business 的裝置自訂裝置設定
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/16/2018
 ---
 |OMA-URI|資料類型  |
 |---------|---------|
-|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**重要**<br>您必須閱讀並代表您的使用者接受更新 EULA。 若不這樣做將違反法律或契約義務。|更新核准以及代表終端使用者接受 UELA 的節點。|
+|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br><br>**重要**<br>您必須閱讀並代表您的使用者接受更新 EULA。 若不這樣做將違反法律或契約義務。|更新核准以及代表終端使用者接受 UELA 的節點。<br/><br/>如需詳細資訊，請參閱[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 

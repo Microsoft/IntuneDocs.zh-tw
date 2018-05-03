@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -80,6 +80,8 @@ Remember that you need to implement conditional access policies in addition to c
   - Windows 10
 
 - 若要回報裝置的合規性狀態，裝置必須已在 Intune 註冊
+
+- 不支援註冊至一位使用者的裝置或者沒有主要使用者的裝置。 不支援多個使用者內容。
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune 裝置合規性政策如何與 Azure AD 一起運作
 
@@ -148,9 +150,9 @@ Remember that you need to implement conditional access policies in addition to c
 您也可以使用裝置合規性原則而不搭配任何條件式存取。 單獨使用合規性政策時，將會評估目標裝置，並回報其合規狀態。 例如，您可以取得報告，列出未加密的裝置數，或是列出已遭越獄或取得根權限破解的裝置。 當您使用合規性原則而不搭配條件式存取時，對公司資源不會有任何存取限制。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署裝置合規性原則的方式
-您可以將合規性原則部署至使用者群組中的使用者，或是裝置群組中的裝置。 將合規性政策部署到使用者時，即會檢查使用者裝置的相容性。
+您可以將合規性政策部署至使用者群組中的使用者，或是裝置群組中的裝置。 將合規性政策部署到使用者時，即會檢查使用者所有裝置的相容性。
 
-針對裝置群組中的裝置，[合規性政策設定] (Azure 入口網站 > [裝置合規性]) 包括
+[合規性政策設定] (Azure 入口網站 > [裝置合規性]) 包括：
 
 - **將未指派合規性原則的裝置標記為**此屬性有兩個值：
 
@@ -177,7 +179,7 @@ Remember that you need to implement conditional access policies in addition to c
 ### <a name="actions-for-noncompliance"></a>不符合標準時所採取的動作
 您可以設定一系列依時間排序的動作，以套用至未符合合規性原則準則的裝置。 這些在不符合規範時執行的動作可以自動化，如[將不符合規範時執行的動作自動化](actions-for-noncompliance.md)所述。
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 傳統入口網站與Azure 入口網站之比較
+## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 傳統入口網站與Azure 入口網站
 
 在 Azure 入口網站中使用裝置合規性原則時的主要差異：
 
