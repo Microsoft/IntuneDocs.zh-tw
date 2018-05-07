@@ -3,8 +3,8 @@ title: 在 Microsoft Intune 中管理適用於 Windows 10 裝置的 PowerShell �
 titlesuffix: ''
 description: 了解如何在 Microsoft Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -33,8 +33,8 @@ Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以�
 
 ## <a name="prerequisites"></a>必要條件
 Intune 管理延伸模組具有下列必要條件：
-- 裝置必須加入至 Azure AD
-- 裝置必須執行 Windows 10 版本 1607 或更新版本
+- 裝置必須加入 Azure AD。 這不包括混合式 AD 已加入的裝置。
+- 裝置必須執行 Windows 10 版本 1607 或更新版本。
 
 ## <a name="create-a-powershell-script-policy"></a>建立 PowerShell 指令碼原則 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
@@ -43,7 +43,7 @@ Intune 管理延伸模組具有下列必要條件：
 4. 在 [裝置設定] 窗格中，選擇 [管理] > [PowerShell 指令碼]。
 5. 在 [PowerShell 指令碼] 窗格中，選擇 [新增]。
 6. 在 [新增 PowerShell 指令碼] 窗格中，輸入 PowerShell 指令碼的 [名稱] 和 [描述]。
-7. 對於 [指令碼位置]，瀏覽 PowerShell 指令碼。 指令碼必須小於 10 KB (ASCII) 或 5 KB (Unicode)。
+7. 對於 [指令碼位置]，瀏覽 PowerShell 指令碼。 指令碼的大小必須是小於 200 KB。
 8. 選擇 [設定]，然後選擇是要在裝置上 (**是**) 還是系統內容 (**否**) 上執行包含使用者認證的指令碼。 根據預設，會在系統內容中執行指令碼。 除非需要在系統內容中執行指令碼，否則請選取 [是]。 
   ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-add-script.png)
 9. 選擇指令碼是否必須由信任的發行者簽署 (**是**)。 根據預設，指令碼不需要簽署。 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 
 > [!NOTE]
 > 如果您的應用程式將發行到 App Store，`MAMPolicyRequired` 必須設為 [否]，這是根據 App Store 的標準。
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>透過 UIActivityViewController 共用資料 
+從 8.0.2+ 版開始，Intune APP SDK 將可篩選 UIActivityViewController 動作，因此將不能選取非 Intune 共用位置。 此行為將由應用程式資料傳輸原則和即將推出的應用程式功能所控制。 即將推出的功能將在大多數 Microsoft 第一方應用程式 (也就是 Word、Excel、Powerpoint) 進行必要變更，以透過 UIActivityViewController 支援共用資料後啟用。 
+ 
+### <a name="copy-to-actions"></a>「複製到」動作 
+當透過 UIActivityViewController 和 UIDocumentInteractionController 共用文件時，iOS 會針對支援開啟已共用文件的每個應用程式，顯示「複製到」動作。 應用程式會透過其 Info.plist 中的 CFBundleDocumentTypes 設定，宣告它們支援的文件類型。 如果原則不允許共用到未受管理的應用程式，那麼此類型的共用將無法再使用。 替代方案是，應用程式必須將非 UI 動作延伸模組新增到其應用程式，並將它連結到適用於 iOS 的 Intune APP SDK。 動作延伸模組就像是虛設常式。 SDK 會實作所有的檔案共用行為。 請遵循上述 SDK 整合步驟以及下列事項： 
+ 
+1. 您的應用程式必須在其 Info.plist CFBundleURLTypes 下至少定義一個 schemeURL。 
+2. 您應用程式和動作延伸模組至少必須共用一個應用程式群組，而且應用程式群組必須列在應用程式和延伸模組 IntuneMAMSettings 字典下的 AppGroupIdentifiers 陣列下。 
+3. 將動作延伸模組命名為「以 ... 開啟」，其中 ... 是應用程式名稱。 視需要將 Info.plist 當地語系化。 
+4. 為延伸模組設計範本圖示，如同 [Apple 開發人員文件](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)所述。 或者，可使用 IntuneMAMConfigurator 工具，從應用程式的 .app 目錄中產生這些影像。 執行「IntuneMAMConfigurator-generateOpenInIcons /path/to/app.app-o /path/to/output/directory」 
+5. 在延伸模組的 Info.plist 中的 IntuneMAMSettings 下，新增名為 OpenInActionExtension 的布林值設定，且其值為 YES。 
+6. 從應用程式的 CFBundleDocumentTypes 加上「com.microsoft.intune.mam」為開頭，設定 NSExtensionActivationRule 以支援單一檔案和所有類型。 例如，如果應用程式支援 public.text 和 public.image，則啟用規則將會是： 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>更新現有的共用和動作延伸模組 
+如果您的應用程式中已包含共用或動作延伸模組，那麼必須修改其 NSExtensionActivationRule 以允許 Intune 類型。 針對延伸模組支援的每個類型，額外類型的開頭加上「com.microsoft.intune.mam」。 例如，如果現有的啟用規則是：  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+則必須變更為： 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] IntuneMAMConfigurator 工具可用來將 Intune 類型新增至啟用規則。 如果您現有的啟用規則使用預先定義的字串常數 (例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等)，那麼述詞語法可能變得相當複雜。 IntuneMAMConfigurator 工具也可用來在新增 Intune 類型時，將啟用規則從字串常數轉換成述詞字串。 IntuneMAMConfigurator 可在我們的 GitHub 儲存機制中找到。 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>啟用 iOS 應用程式的 MAM 目標設定
 MAM 目標設定可讓應用程式透過 Intune App SDK 接收設定資料。 應用程式擁有者/開發人員必須定義此資料的格式和變化，並向 Intune 客戶溝通。 Intune 系統管理員可以透過 Intune Azure 入口網站為設定資料設定目標並進行部署。 從 Intune App SDK for iOS 7.0.1 版開始，可以透過 MAM 服務提供 MAM 目標設定資料給參與 MAM 目標設定的應用程式。 應用程式設定資料是透過我們的 MAM 服務 (而非透過 MDM 通道) 直接向應用程式發佈。 Intune App SDK 會提供類別來存取從這些主控台擷取的資料。 請將下列各項視為必要條件： <br>

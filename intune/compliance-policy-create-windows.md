@@ -1,29 +1,28 @@
 ---
 title: 在 Microsoft Intune 中建立 Windows 裝置相容性原則 - Azure | Microsoft Docs
-description: 建立適用於 Windows 裝置的 Microsoft Intune 裝置合規性政策，以便您可指定裝置為符合規範必須滿足的需求。
+description: 建立或設定適用於 Windows Phone 8.1、Windows 8.1 和更新版本，以及 Windows 10 和更新版本裝置的 Microsoft Intune 裝置合規性原則。 檢查最低和最高作業系統上的合規性、設定密碼限制和長度、要求 bitlocker、設定可接受的威脅層級，以及啟用資料存放區上的加密，包括 Surface Hub 和 Windows Holographic for Business。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中為 Windows 裝置建立裝置合規性政策
-
+# <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-適用於 Windows 的 Intune 裝置合規性政策，會指定 Windows 裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則與條件式存取來允許或禁止存取公司資源，並針對不符合規範的裝置取得裝置報告及採取動作。 您可於 Azure 入口網站中為每個平台建立裝置合規性政策。 若要深入了解建立合規性政策前必須滿足的合規性政策與必要條件，請參閱[裝置合規性入門](device-compliance-get-started.md)。
+適用於 Windows 的 Intune 裝置合規性政策，會指定 Windows 裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則搭配條件式存取，以允許或封鎖存取公司資源。 您也可以取得裝置報表，並針對不相容採取動作。 在 Intune Azure 入口網站中，為每個平台建立裝置相容性原則。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
 下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
 
@@ -48,13 +47,11 @@ ms.lasthandoff: 04/16/2018
 - 如果對使用者套用了條件式存取原則，裝置會遭到封鎖。
 - 公司入口網站會通知使用者任何合規性問題的相關事項。
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 入口網站中建立合規性政策
+## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-1. 從 [Intune] 頁面中，選擇 [裝置相容性]。 在 [管理] 下選擇 [原則]，然後選擇 [建立原則]。
-2. 輸入名稱及描述，然後選擇要套用此原則的平台。
-3. 在此處選擇 [組態設定] 來指定 [系統安全性]、[裝置健康情況] 及 [裝置屬性] 設定。 完成後，請選擇 [確定]。
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. 針對 [平台]，選取 [Windows Phone 8.1]、[Windows 8.1 及更新版本] 或 [Windows 10 及更新版本]。
+6. 選擇 [組態設定]，並輸入 [裝置健全狀況]、[裝置屬性]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -63,151 +60,132 @@ ms.lasthandoff: 04/16/2018
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>指派使用者群組
+## <a name="windows-81-devices-policy-settings"></a>Windows 8.1 裝置原則設定
 
-若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 – 原則] 窗格中找到。
+這些原則設定會套用到執行下列平台的裝置：
 
-1. 選擇您想要指派給使用者的原則，然後選擇 [指派]。 這會開啟窗格讓您選取 **Azure Active Directory 安全性群組**，並將其指派給原則。
-2. 選擇 [選取群組] 以開啟顯示 Azure AD 安全性群組的窗格。  選擇 [儲存] 會將原則部署給使用者。
+- Windows Phone 8.1
+- Windows 8.1 及更新版本
 
-您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受合規性評估。
+### <a name="device-properties"></a>裝置內容
 
-<!---## Compliance policy settings--->
+- **所需的最低 OS**︰當裝置不符合最低 OS 版本需求時，它會回報為不符合規範。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，然後便可存取公司資源。
+- **允許的最高 OS 版本**：當裝置使用的 OS 版本高於規則所指定的版本時，系統會封鎖對公司資源的存取。 系統會要求使用者連絡其 IT 管理員。在規則變更為允許該作業系統版本之前，此裝置將無法存取公司資源。
 
-## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone 裝置的相容性原則設定
+Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 
-Windows Phone 8.1 及更新版本支援這一節所列的設定。
-### <a name="system-security-settings"></a>系統安全性設定
+### <a name="system-security"></a>系統安全性
 
 #### <a name="password"></a>密碼
 
-- **需要密碼來解除鎖定行動裝置︰**將此設定為 [是]，以要求使用者在存取他們的裝置前輸入密碼。
-- **允許簡單密碼**︰將此項目設定為 [是] 可允許使用者建立簡單密碼，例如 '**1234**' 或 '**1111**'。
-- **密碼長度下限：**指定使用者密碼至少必須包含的數字或字元數。
+- **需要密碼才可解除鎖定行動裝置**：**要求**使用者必須輸入密碼以存取其裝置。
+- **簡單密碼**：設定為 [封鎖] 時，使用者將無法建立 **1234** 或 **1111** 之類的簡單密碼。 設定為 [未設定] 時，使用者可以建立 **1234** 或 **1111** 之類的密碼。
+- **最小密碼長度**：輸入密碼至少須包含的位數或字元數。
 
-  對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
-- **必要的密碼類型：**指定使用者是否必須建立**英數**或**數值**密碼。
+  對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，合規性原則在下列情況下將無法正確評估：
+  - 如果最小密碼長度超過八個字元
+  - 或者，如果字元集數目下限超過兩個
+
+- **密碼類型**：選擇密碼是否應該只包含**數值**字元，或是應該混合數字和其他字元 (**英數字元**)。
   
-- **字元集數目下限**：若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數。 四個字元集為：
-  - 小寫字母
-  - 大寫字母
-  - 符號
-  - 數字
+  - **密碼中的非英數字元數目**：若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數目。 四個字元集為：
+    - 小寫字母
+    - 大寫字母
+    - 符號
+    - 數字
 
-  若要將此設定設為較高的數目，使用者必須建立更複雜的密碼。 對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
+    若設定較高的數目，使用者就必須建立較複雜的密碼。 對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，若密碼長度下限超過八個字元，或字元集數目下限大於二，合規性政策將無法正確進行評估。
 
-- **停止活動幾分鐘後需要輸入密碼**：指定閒置多久後使用者必須重新輸入密碼。
-- **密碼到期日 (天數)：**選取使用者的密碼到期，而必須建立新密碼前的天數。
-- **記住密碼歷程記錄：**此設定請與 [不得重複使用以前用過的密碼] 一起使用，以限制使用者建立以前用過的密碼。
-- **不得重複使用以前用過的密碼：**如果已選取 [記住密碼歷程記錄]，請指定不得重複使用的舊密碼數目。
-- **當裝置從閒置狀態返回時，需要密碼：**這項設定應該與 [在非使用狀態幾分鐘後需要輸入密碼] 設定一起使用。 系統會提示使用者輸入密碼，來存取 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定時間未作用的裝置。
-
-> [!NOTE]
-> 這項設定只適用於 Windows 10 Mobile 裝置。
+- **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。
+- **密碼到期 (天數)**：選取密碼到期且必須建立新密碼前的天數。
+- **避免重複使用前幾個密碼**：輸入不可使用先前所使用的多少個密碼。
 
 #### <a name="encryption"></a>加密
 
-- **行動裝置需要加密︰將此**設為 [是]，以要求裝置加密才能連線到資源。
+- **在行動裝置上要求加密**：**要求**裝置必須加密以連線至資料存放區資源。
 
+## <a name="windows-10-and-later-policy-settings"></a>Windows 10 及更新版本的原則設定
 
+### <a name="device-health"></a>Device health
 
-### <a name="device-health-settings"></a>裝置健全狀況設定
+- **需要 BitLocker**：開啟 BitLocker 時，裝置能夠在系統已關閉或進入休眠狀態的情況下，保護存放在磁碟機中的資料不受未經授權的存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 協助保護 Windows 作業系統和使用者資料。 它也能協助確保電腦不受竄改，即使該電腦是處於無人看管、遺失或遭竊的情況。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰。
+- **要求在裝置上啟用安全開機**：啟用安全開機時，會強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
+- **要求程式碼完整性**：程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測核心是否正在載入未簽署的驅動程式或系統檔案。 或者是否有具系統管理員權限的使用者帳戶執行惡意軟體以修改系統檔案。
+- **要求裝置不高於裝置威脅層級**：使用此設定進行來自您防禦威脅服務的風險評估，以作為合規性的條件。 選擇允許的最高威脅層級：
+  - **安全**：此選項最安全，因為裝置不能有任何威脅。 如果在裝置上偵測到任何等級的威脅，即評估為不符合規範。
+  - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
+  - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
-- **需要裝置回報為狀況良好：**您可以設定規則，要求在新的或現有的合規性政策中，**Windows 10 Mobile** 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
-  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
-  - **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測是否將未簽署的驅動程式或系統檔案載入到核心；或者，以具有系統管理員權限的使用者帳戶所執行的惡意軟體是否已修改系統檔案。
-  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
+如需 HAS 服務如何運作的詳細資料，請參閱[健康情況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) \(英文\)。
 
-如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
+### <a name="device-properties"></a>裝置內容
 
-### <a name="device-property-settings"></a>裝置屬性設定
+- **所需的最低 OS**：輸入 major.minor.build.CU 號碼。 build.CU 號碼必須與 `ver` 或 `winver` 命令所傳回的版本對應。
 
-- **最低作業系統版本需求︰**當裝置不符合最低作業系統版本需求時，它會回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
-- **允許的最高作業系統版本：**當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+  若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
-<!---## Compliance policy settings for Windows PCs--->
+- **允許的最高 OS 版本**：輸入 major.minor.build.CU 號碼。 build.CU 號碼必須與 `ver` 或 `winver` 命令所傳回的版本對應。
 
-## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows 電腦的相容性原則設定
+  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
-Windows 電腦支援這一節所列的設定。
+- **針對行動裝置所需的最低 OS**：輸入 major.minor.build 號碼。
+
+  若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
+
+- **針對行動裝置所需的最高 OS**：輸入 major.minor.build 號碼。
+
+  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
+
+- **有效的作業系統組建**：輸入可接受的作業系統版本範圍，包括最低和最高。
+
 ### <a name="system-security-settings"></a>系統安全性設定
 
 #### <a name="password"></a>密碼
 
-- **密碼長度下限︰** - Windows 8.1 上支援。
+- **需要密碼才可解除鎖定行動裝置**：**要求**使用者必須輸入密碼以存取其裝置。
+- **簡單密碼**：設定為 [封鎖] 時，使用者將無法建立 **1234** 或 **1111** 之類的簡單密碼。 設定為 [未設定] 時，使用者可以建立 **1234** 或 **1111** 之類的密碼。
+- **密碼類型**：選擇密碼是否應該只包含**數值**字元，或是應該混合數字和其他字元 (**英數字元**)。
 
-  指定使用者密碼中至少必須包含的數字或字元數。
+  - **密碼中的非英數字元數目**：若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數目。 四個字元集為：
+    - 小寫字母
+    - 大寫字母
+    - 符號
+    - 數字
 
-  對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
+    若設定較高的數目，使用者就必須建立較複雜的密碼。
 
-- **需要的密碼類型**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定
+- **最小密碼長度**：輸入密碼至少須包含的位數或字元數。
+- **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。
+- **密碼到期 (天數)**：選取密碼到期且必須建立新密碼前的天數。
+- **避免重複使用前幾個密碼**：輸入不可使用先前所使用的多少個密碼。
+- **於裝置從閒置狀態回復時要求密碼 (行動裝置版和 Holographic)**：強制使用者於每次裝置從閒置狀態回復時輸入密碼。
 
-  指定使用者必須建立**英數字元**或**數字**密碼。
+### <a name="encryption"></a>加密
 
-- **字元集數目下限**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。 若將 [必要的密碼類型] 設為 [英數字元]，此設定即會指定密碼至少須包含的字元集數下限。 四個字元集為：
-  - 小寫字母
-  - 大寫字母
-  - 符號
-  - 數字 
+- **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
 
-    若要將此設定設為較大的數目，使用者必須建立更複雜的密碼。 對於使用 Microsoft 帳戶存取的裝置，若 [密碼長度下限] 超過八個字元，或 [字元集數目下限] 大於兩個字元，相容性原則將無法正確進行評估。
+## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
-- **要求密碼前的閒置分鐘數︰** - Windows RT、Windows RT 8.1 和 Windows 8.1 上支援
+Windows Holographic for Business 使用 **Windows 10 及更新版本**平台。 Windows Holographic for Business 支援下列設定：
 
-  指定使用者必須重新輸入密碼之前的閒置時間。
-
-- **密碼到期 (天數)**︰Windows RT、Windows RT 8.1 及 Windows 8.1 支援此設定。
-
-  選取使用者密碼到期，而必須建立新密碼前的天數。
-
-- **所需的密碼歷程記錄︰** - Windows RT、Windows RT 和 Windows 8.1 上支援。
-
-  共同使用此設定與 [不得重複使用以前用過的密碼] 可限制建立先前使用過的密碼。
-
-- **不得重複使用以前用過的密碼︰** - Windows RT、Windows RT 8.1 和 Windows 8.1 上支援
-
-  若選取 [記住密碼歷程記錄]，必須指定不得重複使用的舊密碼數。
-
-
-### <a name="device-health-settings"></a>裝置健全狀況設定
-
-- **需要裝置回報為狀況良好︰** - Windows 10 裝置上支援。 您可以設定規則，要求在新的或現有的合規性政策中，Windows 10 裝置必須回報為狀況良好。 如有啟用此設定，將會透過健全情況證明服務 (HAS) 在下列資料點時評估 Windows 10 裝置︰
-  - **啟用 BitLocker：**如果開啟 BitLocker，則系統已關閉或進入休眠時，裝置可以保護磁碟機上所儲存的資料不受未經授權地存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 來協助保護 Windows 作業系統和使用者資料，並可協助確保電腦即使無人看管、遺失或遭竊，也不會遭到竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰
-  - **啟用程式碼完整性：**程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測是否將未簽署的驅動程式或系統檔案載入到核心；或者，以具有系統管理員權限的使用者帳戶所執行的惡意軟體是否已修改系統檔案。
-  - **啟用安全開機：**啟用安全開機時，強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
-  - **啟用早期啟動反惡意程式碼：**早期啟動反惡意程式碼 (ELAM) 可在啟動電腦時，以及協力廠商驅動程式初始化之前，保護網路中的電腦。
-
-如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP (健全情況證明 CSP)](https://msdn.microsoft.com/library/dn934876.aspx)。
-
-### <a name="device-property-settings"></a>裝置屬性設定
-
-- **所需的 OS 下限︰** - Windows 8.1 和 Windows 10 上支援。
-
-  在此指定 major.minor.build.CU 數目。 build.CU 號碼必須與 ```winver``` 命令所傳回的版本對應。
-
-  若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
-
-- **允許的最高 OS 版本︰** - Windows 8.1 和 Windows 10 上支援。
-
-  當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
-
-若要尋找要用於**所需的 OS 下限**和**允許的最高 OS 版本**設定的 OS 版本，請從命令提示字元執行 **winver** 命令。 Winver 命令會傳回 OS 的回報版本。
-
-- Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
-- 執行 Windows 10 的電腦，其版本應該設定為 "10.0"+ winver 命令所傳回的 OS 組建編號。
-
-## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
-
-Windows Holographic for Business 支援下列設定：
-
-- 系統安全性/加密
-
-  **裝置上資料儲存的加密**。
+- [系統安全性] > [加密] > [對裝置上的資料存放區加密]。
 
 若要在 Microsoft HoloLens 上驗證裝置加密，請參閱[驗證裝置加密](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption)。
 
+## <a name="surface-hub"></a>Surface Hub
+Surface Hub 使用 **Windows 10 及更新版本**平台。 Surface Hub 支援合規性和條件式存取。 若要在 Surface Hub 上啟用這些功能，建議您在 Intune 中[啟用 Windows 10 自動註冊](windows-enroll.md) (也需要 Azure Active Directory (AAD))，並將 Surface Hub 裝置以裝置群組的形式設定為目標。 Surface Hub 需要加入 Azure Active Directory，合規性和條件式存取才能運作。
+
+請參閱[設定 Windows 裝置的註冊](windows-enroll.md)以取得指引。
+
+## <a name="assign-user-or-device-groups"></a>指派使用者或裝置群組
+
+1. 選擇您已設定的原則。 現有的原則位於 [裝置合規性] > [原則]。
+2. 選擇原則，然後選擇 [指派]。 您可以包含或排除 Azure AD 安全性群組。
+3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用這項原則的使用者或裝置群組，然後選擇 [儲存] 以部署原則。
+
+您已套用此原則。 要套用原則之使用者的裝置將會接受相容性評估。
+
 ## <a name="next-steps"></a>接下來的步驟
-
-請參閱下列主題來了解如何監視裝置合規性：
-
-- [如何監視裝置合規性](device-compliance-monitor.md)
+[將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
+[監視 Intune 裝置合規性原則](compliance-policy-monitor.md)

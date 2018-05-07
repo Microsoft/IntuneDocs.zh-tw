@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>使用 Intune 來自訂執行 Windows 全像攝影版的裝置
 
@@ -38,7 +38,7 @@ Intune 包括公司入口網站，使用者會在此網站存取公司資料、�
 
 另請參閱**[開始使用合規性原則](device-compliance-get-started.md)**。
 
-## <a name="deploy-apps"></a>部署 App
+## <a name="deploy-and-manage-apps"></a>部署和管理 App
 **[將應用程式新增至 Intune](apps-add.md)**
 
 使用 Intune 時，您可以將應用程式新增至執行 Windows Holographic for Business 的裝置。 有許多方式可以部署應用程式，包括：
@@ -46,6 +46,16 @@ Intune 包括公司入口網站，使用者會在此網站存取公司資料、�
 - [新增 Microsoft Store 應用程式](store-apps-windows.md)
 - [新增您建立的應用程式](lob-apps-windows.md)
 - [將應用程式指派給群組](apps-deploy.md)
+
+Microsoft Intune 可以將通用 Windows 應用程式部署到執行 Windows Holographic for Business 的 Microsoft HoloLens 裝置。 您可以在 Intune Azure 入口網站直接上傳應用程式，或從 Microsoft Store for Business 部署它們。 如需相關領域的詳細資訊，請參閱下列各節：
+- 若要使用 Intune Azure 入口網站來部署企業營運應用程式 (LOB) 應用程式，請參閱[如何將 Windows 企業營運應用程式新增至 Microsoft Intune](lob-apps-windows.md)。
+- 若要使用 Microsoft Store for Business 來部署應用程式，請參閱[利用 Microsoft Intune 來管理您從 Microsoft Store for Business 購買的應用程式](windows-store-for-business.md)。 
+- 若要了解如何使用 Microsoft Intune 來管理應用程式，請參閱[什麼是利用 Microsoft Intune 管理應用程式](app-management.md)。
+- 若要深入了解開發 Microsoft HoloLens 的應用程式，請參閱 [Microsoft HoloLens 的混合現實應用程式](https://www.microsoft.com/hololens/apps)。 
+
+> [!NOTE]
+> 執行 Windows 10 Holographic for Business 1607 的 HoloLens 裝置不支援 Microsoft Store for Business 線上授權的應用程式。 若要進一步了解，請參閱[將應用程式安裝到 HoloLens 上](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)。
+
 
 ## <a name="device-categories-and-groups"></a>裝置類別和群組
 **[將裝置分類成群組](device-group-mapping.md)**

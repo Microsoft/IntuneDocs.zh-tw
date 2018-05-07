@@ -3,10 +3,10 @@ title: 應用程式的資料傳輸原則例外狀況
 titleSuffix: Microsoft Intune
 description: 建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況
 
@@ -47,9 +47,18 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>範例
 藉由新增 **Webex** 套件作為 MAM 資料傳輸原則的例外狀況，會允許受管理 Outlook 電子郵件訊息內的 Webex 連結直接在 Webex 應用程式中開啟。 其他未受管理應用程式中的資料傳輸仍會受到限制。
 
-- iOS **Webex** 範例：若要豁免 **Webex** 應用程式，以允許它由 Intune 受管理應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>wbx</code>。
+- iOS **Webex** 範例：若要豁免 **Webex** 應用程式，以允許它由 Intune 管理的應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>wbx</code>
+    
+ - iOS **地圖**範例：若要豁免 **地圖**應用程式，以允許它由 Intune 管理的應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>maps</code>
 
-- Android **Webex** 範例：若要豁免 **Webex** 應用程式，以允許它由 Intune 受管理應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>com.cisco.webex.meetings</code>。 
+- Android **Webex** 範例：若要豁免 **Webex** 應用程式，以允許它由 Intune 管理的應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>com.cisco.webex.meetings</code>
+    
+- Android **SMS** 範例： 若要豁免 **SMS** 應用程式，以允許它由 Intune 管理的應用程式跨越不同傳訊應用程式和 Android 裝置來叫用，您必須新增下列字串的資料傳輸例外狀況： 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## <a name="next-steps"></a>接下來的步驟
 

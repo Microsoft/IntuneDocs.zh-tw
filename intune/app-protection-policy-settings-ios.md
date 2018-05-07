@@ -3,8 +3,8 @@ title: iOS 應用程式保護原則設定
 titlesuffix: Microsoft Intune
 description: 本主題描述 iOS 裝置的應用程式保護原則設定。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a4339a4e0491ada9e03731a5636df37209e16e0
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 20e253262f9c22d6ff65a1558ea114ecca0bd8c0
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
-| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 線上或離線工作時都會套用 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> **注意：**若要設定密碼類型，應用程式需要有 Intune SDK 版本 7.1.12 或更新版本。 數值類型沒有 Intune SDK 版本限制。 允許的特殊字元包括 iOS 英文鍵盤上的特殊字元和符號。 預設值 = **數值**。</li><br><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 此原則設定格式支援正整數。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列，例如 1234、1111、abcd 或 aaaa。 選擇 [否]，防止其使用簡單的序號。 <br><br>**注意**：在 iOS 上，如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，則需要至少 1 個字母**或**至少 1 個特殊字元。 如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，您至少需要 1 個數字**和** 1 個字母**及**至少 1 個特殊字元。  預設值 = [是]。 </li><br><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (iOS 8.0+)**：選擇 [是]，讓使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。 預設值 = [是]。</li><li> **允許臉部辨識而非 PIN (iOS 11+)**：選擇 [是]，以允許使用者使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 存取應用程式。 預設值 = [是]。 當使用者透過其公司帳戶存取應用程式時，系統會提示使用者提供臉部識別碼。</li><li> **在裝置 PIN 受控時，停用應用程式 PIN**：選擇 [是] 以在於註冊的裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br><br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。 預設值 = 否</li></ul> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109)而非 PIN 來證明其身分識別。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 來驗證使用 Touch ID 和 Face ID 的使用者。 若要深入了解 Touch ID 和 Face ID，請參閱 [iOS 安全性指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 使用者嘗試透過其公司或學校帳戶使用此應用程式時，系統會提示他們提供自己的指紋識別或臉部識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 存取需要 PIN 碼：是 <br><br> 選取類型：數值 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 <br><br> 允許臉部辨識：是 <br><br> 停用應用程式 PIN：否 |
+| **需要 PIN 碼才可存取** | 選擇 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 線上或離線工作時都會套用 PIN。 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> **注意：**若要設定密碼類型，應用程式需要有 Intune SDK 版本 7.1.12 或更新版本。 數值類型沒有 Intune SDK 版本限制。 允許的特殊字元包括 iOS 英文鍵盤上的特殊字元和符號。 預設值 = **數值**。</li><br><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 此原則設定格式支援正整數。 預設值 = **5**。</li><li> **允許簡單的 PIN**：選擇 [是]，允許使用者使用簡單的 PIN 序列，例如 1234、1111、abcd 或 aaaa。 選擇 [否]，防止其使用簡單的序號。 <br><br>**注意**：如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，那麼使用者的 PIN 中需要至少 1 個字母**或**至少 1 個特殊字元。 如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，那麼使用者的 PIN 中需要至少 1 個數字**和** 1 個字母**以及**至少 1 個特殊字元。 預設值 = [是]。 </li><li> **PIN 長度**：指定 PIN 序列的最小位數。 預設值 = **4**。 </li><li> **允許指紋而非 PIN (iOS 8.0+)**：選擇 [是]，讓使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。 預設值 = [是]。</li><li> **允許臉部辨識而非 PIN (iOS 11+)**：選擇 [是]，以允許使用者使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 存取應用程式。 預設值 = [是]。 當使用者透過其公司帳戶存取應用程式時，系統會提示使用者提供臉部識別碼。</li><li> **在裝置 PIN 受控時，停用應用程式 PIN**：選擇 [是] 以在於註冊的裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br><br> **注意：**應用程式需要 Intune SDK 7.0.1 版或更新版本。 預設值 = [否]。</li></ul> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109)而非 PIN 來證明其身分識別。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 來驗證使用 Touch ID 和 Face ID 的使用者。 若要深入了解 Touch ID 和 Face ID，請參閱 [iOS 安全性指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 使用者嘗試透過其公司或學校帳戶使用此應用程式時，系統會提示他們提供自己的指紋識別或臉部識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 存取需要 PIN 碼：是 <br><br> 選取類型：數值 <br><br> PIN 碼重設嘗試次數：5 <br><br> 允許簡單的 PIN：是 <br><br> PIN 長度：4 <br><br> 允許指紋：是 <br><br> 允許臉部辨識：是 <br><br> 停用應用程式 PIN：否 |
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 如果您設定為 [是]，則會覆寫 PIN 或 Touch ID 的需求。  | 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |  選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。 | 是 |
 | **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟「PIN」及「封鎖已 Root 破解的裝置」，當使用者開啟受控於 Intune 的裝置時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 如果使用這項設定，使用者在另外 **30 分鐘** (預設值) 內都不需要在任何受控於 Intune 的應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br>**注意：**在 iOS 上，**相同發行者**的所有受 Intune 管理的應用程式會共用一組 PIN。 當裝置上的應用程式離開前景時，特定 PIN 的 PIN 計時器就會重設。 在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並受 Intune 管理的應用程式上輸入 PIN。 此原則設定格式支援正整數。<br></li><br><li>**離線寬限期**：這是 MAM 應用程式可離線執行的分鐘數，指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 預設值 = **720** 分鐘 (12 小時)。 到期後，應用程式將會要求使用者驗證至 AAD，以便應用程式可以繼續執行。 此原則設定格式支援正整數。<br></li></ul>| 逾時：30 <br><br> 離線：720 |

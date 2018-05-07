@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -63,9 +63,11 @@ iOS 大量採購應用程式只能針對與您的 Intune 帳戶相同的國碼/�
 對於沒有在 Intune 註冊的裝置，您只能在「Windows 資訊保護」原則設定的 [公司識別] 欄位中指定一個主要網域。
 如果您新增了其他網域 (使用 [進階設定] > [網路周圍] > [新增受保護網域])，則將無法儲存原則。 您看到的錯誤訊息很快就會變得更為準確。
 
-### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN 用戶端支援
-Cisco AnyConnect VPN 用戶端的最新版本 (4.0.07072) 目前無法與 Intune 相容。 未來的 Intune 更新將會包含與這個 VPN 用戶端版本的相容性。 在此之前，建議您不要更新 Cisco AnyConnect VPN 用戶端，並繼續使用現有的版本。
+### <a name="cisco-anyconnect-and-cisco-legacy-anyconnect-vpn-client-support---ios"></a>Cisco AnyConnect 和 Cisco Legacy AnyConnect VPN 用戶端支援 - iOS
 
+在 iOS 裝置上，網路存取控制 (NAC) 整合不適用於新的 Cisco AnyConnect 用戶端。 我們正與 Cisco 合作來提供 NAC 整合。
+
+[在 Intune 中建立 VPN 設定檔](vpn-settings-ios.md)提供 Cisco AnyConnect 和 Cisco Legacy AnyConnect 用戶端更詳細的資訊。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>搭配 macOS Sierra 裝置使用數值密碼類型
 

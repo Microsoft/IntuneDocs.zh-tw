@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 的工作裝置限制設定
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 
    例如，當您將 Gmail 應用程式部署到 Android for Work 設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
 
-- **透過藍牙分享連絡人**：允許存取來自使用藍芽配對之另一部裝置 (例如汽車) 的工作連絡人。 預設並未進行這項設定，因此不會顯示工作設定檔連絡人。 請選取 [啟用] 以允許此共用及顯示工作設定檔連絡人。 此設定適用於 Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。
+- **透過藍牙分享連絡人**：允許存取來自使用藍芽配對之另一部裝置 (例如汽車) 的工作連絡人。 預設並未進行這項設定，因此不會顯示工作設定檔連絡人。 請選取 [啟用] 以允許此共用及顯示工作設定檔連絡人。 此設定適用於 Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。 啟用此選項可能會允許某些藍芽裝置在第一次連接時，快取工作連絡人。 初次配對/同步處理後停用此政策，可能不會從藍芽裝置移除工作連絡人。
 
 ### <a name="work-profile-password"></a>工作設定檔密碼
 

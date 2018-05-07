@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b003fde011fd3a727c7c7a163fedb1dae6779425
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---april-2018"></a>Microsoft Intune 的舊版 - 2018 年 4 月
 
@@ -39,6 +39,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
 
 <!-- 1804 start -->
+
+### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>在個人的設定檔中顯示呼叫者識別碼 - Android for Work <!--1098984 -->
+在裝置上使用個人設定檔時，使用者可能無法從工作連絡人看到呼叫者識別碼詳細資料。 
+
+在此更新中，[Android for Work] > [裝置限制] > [工作設定檔設定] 會有一個新的設定：
+- 在個人設定檔中顯示工作連絡人呼叫者識別碼
+
+啟用 (未設定) 時，工作連絡呼叫者詳細資料會顯示在個人設定檔中。 封鎖時，工作連絡呼叫者詳細資料不會顯示在個人設定檔中。 
+
+適用於：Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>在 Endpoint Protection 設定中新增新的 Windows Defender Credential Guard 設定 <!--1102252 --><!--from 1802-->
 
@@ -112,6 +122,9 @@ Intune 系統管理員將能夠刪除 AutoPilot 裝置。
 
 ### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>在處於遺失模式時於 iOS 上播放音效 <!-- 1629303 -->
 當受監督的 iOS 裝置處於「行動裝置管理」(MDM) [遺失模式](device-lost-mode.md)時，您可以播放音效 ([裝置] > [所有裝置] > 選取 iOS 裝置 > [概觀] > [更多])。 此音效會持續播放，直該裝置已自遺失模式中移除，或使用者將該裝置上的音效停用為止。 適用於 iOS 裝置 9.3 和更新版本。
+
+### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune 會重新安裝被使用者解除安裝的必要應用程式 <!-- 1947010 -->
+如果使用者解除安裝必要的應用程式，Intune 會在 24 小時內自動重新安裝，而不是等候 7 天的重新評估週期。
 
 ### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>在 SCEP 憑證上使用自訂主體名稱 <!-- 2064190 -->
 您將能夠在 SCEP 憑證設定檔上的自訂主體中，使用 **OnPremisesSamAccountName** 一般名稱。 例如，您可以使用 `CN={OnPremisesSamAccountName})`。

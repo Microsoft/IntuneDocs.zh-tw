@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
@@ -370,6 +370,11 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 - **列印服務資源 URI** - 列印服務的 OAuth 資源 URI，如 Azure 入口網站中所設定。
 - **要查詢的印表機上限 (僅限行動裝置)**  - 應該從探索端點查詢的印表機數目上限。
 - **印表機探索服務資源 URI** - 印表機探索服務的 OAuth 資源 URI，如 Azure 入口網站中所設定。
+
+## <a name="local-printer"></a>本機印表機
+- **印表機** - 已新增的本機印表機清單。
+- **預設印表機** - 設定預設印表機。
+- **使用者存取新增新印表機** - 允許或封鎖使用本機印表機。
 
 ## <a name="reporting-and-telemetry"></a>報告和遙測
 

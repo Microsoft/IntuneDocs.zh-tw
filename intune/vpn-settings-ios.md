@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>設定 Microsoft Intune 中執行 iOS 之裝置的 VPN 設定
 
@@ -36,12 +36,17 @@ ms.lasthandoff: 04/16/2018
 - **連線類型**：從下列廠商清單中選取 VPN 連線類型︰
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
+  - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**
   - **自訂 VPN**
+
+    > [!NOTE]
+    > - **Cisco Legacy AnyConnect VPN** 設定檔適用於 [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 應用程式版本 4.0.5x 及更舊版本
+    > - **Cisco AnyConnect VPN** 設定檔適用於 [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 應用程式版本 4.0.7x 及更新版本
 
 - **分割通道**：**啟用**或**停用**以讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
 
@@ -75,3 +80,6 @@ ms.lasthandoff: 04/16/2018
 - **自動設定指令碼**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 **http://proxy.contoso.com**)。
 - **位址**：輸入 Proxy 伺服器的完整主機名稱 IP 位址。
 - **連接埠號碼**：輸入與 Proxy 伺服器相關聯的連接埠號碼。
+
+## <a name="next-step"></a>後續步驟
+[在 Intune 中建立 VPN 設定檔](vpn-settings-configure.md)

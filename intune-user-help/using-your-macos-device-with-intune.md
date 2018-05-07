@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2017
+ms.date: 4/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bbb51300867f273da033b38d05d857034012a24e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="using-your-macos-device-with-intune"></a>使用具有 Intune 的 macOS 裝置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/04/2018
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 macOS 10.9 Mavericks 及更新版本。
+Intune 目前支援 macOS 裝置的 OS X El Capitan 10.11 和更新版本。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 

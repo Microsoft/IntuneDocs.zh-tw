@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>簡介
-[Classroom](https://itunes.apple.com/app/id1085319084) 應用程式可協助老師在課堂中引導學習，並控制學生的裝置。 例如，老師使用應用程式可以︰
+[Classroom](https://itunes.apple.com/app/id1085319084) 應用程式可協助老師在課堂中引導學習，並控制學生的裝置。 例如，應用程式可讓老師：
 
 - 開啟學生裝置上的應用程式
 - 鎖定和解除鎖定 iPad 螢幕
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - 將學生的 iPad 導覽至一本書的書籤或章節
 - 將學生的 iPad 螢幕顯示到 Apple 電視上
 
-使用 Intune iOS **教育**裝置設定檔，以及本主題中的資訊，可協助您設定 Classroom 應用程式，以及在其中使用此應用程式的裝置。
+若要在裝置上設定教室，您必須建立及設定 Intune iOS 教育版裝置設定檔。
 
 ## <a name="before-you-start"></a>開始之前
 
 開始進行這些設定之前，請先考慮下列事項：
 
-- 老師和學生都必須在 Intune 中註冊 iPad
+- 老師和學生的 iPad 都必須在 Intune 中註冊。
 - 確認您已在老師的裝置上安裝 [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 應用程式。 您可以手動或使用 [Intune 應用程式管理](app-management.md)安裝此應用程式。
-- 您必須設定憑證來驗證老師裝置和學生裝置之間的連線 (請參閱步驟 2)
-- 老師和學生的 iPad 必須位於相同的 Wi-Fi 網路，而且也都啟用藍牙
-- Classroom 應用程式是在執行 iOS 9.3 或更新版本之受監督的 iPad 上執行
-- 在此版本中，Intune 支援管理每個學生都有自己專用 iPad 的 1 對 1 案例
+- 您必須設定憑證來驗證老師和學生所有裝置之間的連線 (請參閱步驟 2，在 Intune 中建立以及指派一個 iOS 教育版設計檔)。
+- 老師和學生的 iPad 必須連接相同的 Wi-Fi 網路，而且藍牙功能都開啟了。
+- Classroom 應用程式是在 iOS 9.3 或更新版本之受監督的 iPad 上執行。
+- 在此版本中，Intune 支援管理每個學生都有自己專用 iPad 的 1 對 1 案例。
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>步驟 1 - 將學校資料匯入至 Azure Active Directory
@@ -82,14 +82,14 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 9.  選擇 [設定]  >  [設定]。
 
 
-接下來，您需要憑證才能建立老師和學生 iPad 之間的信任關係。 憑證是用來順暢且無訊息地驗證裝置之間的連線，而不需要輸入使用者名稱和密碼。
+在下一個章節中，您需要建立憑證，這樣才能在老師和學生的 iPad 之間建立一種信任關係。 憑證是用來順暢且無訊息地驗證裝置之間的連線，而不需要輸入使用者名稱和密碼。
 
 >[!IMPORTANT]
 >您使用的老師和學生憑證必須由不同的憑證授權單位 (CA) 發行。 您必須建立兩個新的次級 CA，連線到現有的憑證基礎結構。一個供老師使用，一個供學生使用。
 
 iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
-您建立的憑證除了支援使用者驗證，還必須支援伺服器驗證。
+您建立的憑證必須支援伺服器驗證和使用者驗證。
 
 ### <a name="configure-teacher-certificates"></a>設定老師憑證
 
@@ -97,13 +97,15 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 #### <a name="configure-teacher-root-certificate"></a>設定老師根憑證
 
-在 [老師根憑證] 下，選擇瀏覽按鈕以選取副檔名為 .cer (DER 或 Base64 編碼) 或 .P7B (不論有無完整鏈結) 的老師根憑證。
+在 [老師根憑證] 底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
+- 副檔名 .cer (DER 或 Base64 編碼) 
+- 副檔名 .P7B (包含或不包含完整的鏈結)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>設定老師 PKCS#12 憑證
 
 在 [老師 PKCS #12 憑證] 下，設定下列值︰
 
-- **主體名稱格式** - Intune 會自動為老師憑證的憑證一般名稱前面加上 **leader**，然後為學生憑證的憑證一般名稱前面加上 **member**。
+- **主體名稱格式** - Intune 會自動在老師憑證的一般名稱前面加上 **leader**。 學生憑證的一般名稱前面會加上 **member**。
 - **憑證授權單位**：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 
 - **憑證授權單位名稱**：輸入您的憑證授權單位名稱。
 - **憑證範本名稱** - 輸入已新增至發行 CA 的憑證範本名稱。 
@@ -111,7 +113,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 - **憑證有效期間** - 指定憑證到期之前的剩餘時間。
 您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 此值也必須低於發行 CA 憑證的剩餘有效期間。
 
-當您完成設定憑證時，請選擇 [確定]。
+設定好憑證時，請選擇 [確定]。
 
 ### <a name="configure-student-certificates"></a>設定學生憑證
 
@@ -120,13 +122,15 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 #### <a name="configure-student-root-certificate"></a>設定學生根憑證
 
-在 [學生根憑證] 下，選擇瀏覽按鈕以選取副檔名為 .cer (DER 或 Base64 編碼) 或 .P7B (不論有無完整鏈結) 的學生根憑證。
+在 [學生根憑證] 底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
+- 副檔名 .cer (DER 或 Base64 編碼) 
+- 副檔名 .P7B (包含或不包含完整的鏈結)
 
 #### <a name="configure-student-pkcs12-certificate"></a>設定學生 PKCS#12 憑證
 
 在 [學生 PKCS #12 憑證] 下，設定下列值︰
 
-- **主體名稱格式** - Intune 會自動為老師憑證的憑證一般名稱前面加上 **leader**，然後為學生憑證的憑證一般名稱前面加上 **member**。
+- **主體名稱格式** -  Intune 會自動在老師憑證的一般名稱前面加上 **leader**。 學生憑證的一般名稱前面會加上 **member**。
 - **憑證授權單位**：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 
 - **憑證授權單位名稱**：輸入您的憑證授權單位名稱。
 - **憑證範本名稱** - 輸入已新增至發行 CA 的憑證範本名稱。 
@@ -134,7 +138,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 - **憑證有效期間** - 指定憑證到期之前的剩餘時間。
 您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 此值也必須低於發行 CA 憑證的剩餘有效期間。
 
-當您完成設定憑證時，請選擇 [確定]。
+設定好憑證時，請選擇 [確定]。
 
 ## <a name="finish-up"></a>完成
 
@@ -147,7 +151,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ## <a name="next-steps"></a>接下來的步驟
 
-現在，當老師使用 Classroom 應用程式時，就可以完整控制學生裝置。
+現在，當老師使用 Classroom 應用程式時，就可以完全控制學生裝置。
 
 如需 Classroom 應用程式的詳細資訊，請參閱 Apple 網站上的[課堂輔助說明](https://help.apple.com/classroom/ipad/2.0/)。
 

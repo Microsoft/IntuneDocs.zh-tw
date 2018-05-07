@@ -3,8 +3,8 @@ title: 在 Microsoft Intune 中設定 iOS 裝置的個別應用程式 VPN
 titleSuffix: ''
 description: 指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
 您可以指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。 您在 Intune 中建立個別應用程式 VPN 後，使用者存取公司文件時，就會自動透過您的 VPN 連線。
+
+下列提供者目前推出個別應用程式 VPN： 
+
+ - Pulse 連線安全
+ - 檢查點遠端存取 VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>個別應用程式 VPN 的必要條件
 
@@ -37,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 4. 將簽發驗證憑證的 CA 名稱新增至 VPN 伺服器。
     如果裝置顯示的 CA 符合 VPN 伺服器上受信任 CA 清單的其中一個 CA，VPN 伺服器就可成功驗證裝置。
 
-## <a name="create-a--group-for-your-vpn-users"></a>建立 VPN 使用者的群組
+## <a name="create-a-group-for-your-vpn-users"></a>為您的 VPN 使用者建立一個群組
 
 建立或選擇 Azure Active Directory (Azure AD) 中的現有群組，以納入可存取個別應用程式 VPN 的成員。
 
