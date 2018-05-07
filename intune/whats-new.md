@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune 的新功能
+title: Microsoft Intune 的新功能 - Azure | Microsoft Docs
 titlesuffix: ''
 description: 了解 Intune Azure 入口網站中的新功能
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ ms.lasthandoff: 04/16/2018
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>進階威脅防護 (ATP) 和 Intune 已完全整合<!-- EEready 1629303 -->
+
+在 Windows Defender 資訊安全中心 (ATP 入口網站)，您可以建立與 Microsoft Intune 的連線。 一旦建立之後，Intune 合規性原則會用來判斷可接受的威脅層級。 如果超過威脅層級時，那麼 Azure Active Directory (AD) 條件存取原則可封鎖存取組織內的不同應用程式。
+
+這項功能可讓 ATP 掃描檔案、偵測威脅，以及報告 Windows 10 裝置上的任何風險。
+
+請參閱[在 Intune 中啟用具有條件存取的 ATP](advanced-threat-protection.md)。
+
+## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日當週
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>使用適用於 iOS 的 Cisco AnyConnect 用戶端 <!-- EEready 1333708 -->
+
+當您建立適用於 iOS 的新 VPN 設定檔時，現在有兩個選項：[Cisco AnyConnect] 和 [Cisco Legacy AnyConnect]。 Cisco AnyConnect 設定檔支援 4.0.7x 和較新版本。 現有的 iOS Cisco AnyConnect VPN 設定檔會標記為 **Cisco Legacy AnyConnect**，但仍會繼續以目前的方式搭配 Cisco AnyConnect 4.0.5x 和較舊版本運作。
+
+> [!NOTE]
+> 這項變更只適用於 iOS。 Android、Android for Work 及 macOS 平台仍然只有一個 Cisco AnyConnect 選項。
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>現在可以使用 Intune 註冊 Jamf 註冊的 macOS 裝置 <!-- 2370684 -->
+
+版本 1.3 和 1.4 的 macOS 公司入口網站並未使用 Intune 成功註冊 Jamf 裝置。 版本 1.4.2 的 macOS 入口網站已修正此問題。
+
 
 ## <a name="week-of-april-9-2018"></a>2018 年 4 月 9 日當週
 
@@ -119,7 +143,7 @@ Android Enterprise (先前稱為 Android for Work) 支援包含及排除群組�
 
 **其他資訊**：[https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
 
-#### <a name="enhanced-jailbreak-detection----846515---"></a>加強的越獄偵測 <!-- 846515 -->
+#### <a name="enhanced-jailbreak-detection----846515---"></a>增強的越獄偵測 <!-- 846515 -->
 
 加強的越獄偵測是一項新的合規性設定，可改進 Intune 評估已越獄裝置的方式。 此設定會使裝置更頻繁地簽入 Intune ，這會使用裝置的位置服務並影響電池使用量。
 
@@ -139,8 +163,6 @@ Android Enterprise (先前稱為 Android for Work) 支援包含及排除群組�
 
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>每 15 分鐘都會提示 iOS 裝置輸入PIN <!--1550837 -->
 將合規性或設定原則套用至 iOS 裝置之後，系統會每隔 15 分鐘提示使用者設定 PIN。 系統會持續提示使用者，直到設定 PIN 為止。
-
-
 
 #### <a name="schedule-your-automatic-updates---1805514---"></a>排程自動更新 <!--1805514 -->
 Intune 可讓您使用 [Windows Update Ring 設定](windows-update-for-business-configure.md)來控制自動更新安裝。 在此更新中，您可以排定重複發生的更新，包括週、日及時間。
@@ -180,6 +202,10 @@ Intune 系統管理員可以設定這些設定，以啟用共用。 將裝置與
 
    您可以允許或封鎖特定的應用程式，使其無法接收連入連線。 您也可以啟用隱形模式，以避免回應探查要求。
 
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>詳細的錯誤碼和訊息<!-- 1376342 -->
+
+在您的 [裝置設定] 中，可以檢視更詳細的錯誤碼和錯誤訊息。 這項改良的報告功能會顯示設定、這些設定的狀態，以及有關疑難排解的詳細資料。
+
 ##### <a name="more-information"></a>詳細資訊
 
 - 封鎖所有連入連線
@@ -212,7 +238,7 @@ Intune 可提供您控制權來[管理軟體更新](windows-update-for-business-
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>改善的公司入口網站註冊 <!-- 1874230 eeready-->
 使用者如果是在 Windows 10 1703 組建或更新版本上使用公司入口網站來註冊裝置，現在將能夠在不離開應用程式的情況下，完成第一個註冊步驟。
 
-#### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens 和 Surface Hub 現在會出現在裝置清單中 <!--1725868 -->
+#### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens 和 Surface Hub 現在會出現在裝置清單 <!--1725868 --> 中
 我們已新增支援，可向 Android 版公司入口網站應用程式顯示已在 Intune 註冊的 HoloLens 和 Surface Hub 裝置。
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>為大量採購方案 (VPP) 電子書自訂書籍類別 <!-- 1488911 -->
@@ -935,12 +961,6 @@ Intune 資料倉儲資料模型的第一個版本只包含最新的歷程 Intune
 
 
 ## <a name="notices"></a>通知
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-
-您完全不需要對這項變更做任何準備，因為這些是次要的工作流程使用者介面更新。
-如需 Microsoft 的 GDPR 相容性詳細資訊，請參閱可從 [其他資訊] 連結存取的＜信任中心＞。
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>為變更做規劃：適用於 Intune 中 Kiosk 設定的新 Windows 10 設定 <!-- 1560072 -->
 我們正在變更您在 Intune Azure 入口網站中設定 Windows 10 1709 和更新版本 (RS3 和更新版本) 桌面的方式和位置。

@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -27,13 +27,13 @@ ms.lasthandoff: 04/26/2018
 
 下列提供者目前推出個別應用程式 VPN： 
 
- - Pulse 連線安全
  - 檢查點遠端存取 VPN
  - F5
+ - Pulse 連線安全
  - SonicWall
 
 
-## <a name="prerequisites-for-the-per-app-vpn"></a>個別應用程式 VPN 的必要條件
+## <a name="prerequisites-for-per-app-vpn"></a>個別應用程式 VPN 的必要條件
 
 為證明身分識別，VPN 伺服器會出示必須接受的憑證，而且裝置不會提示。 為確保自動核准憑證，請建立內含憑證授權單位 (CA) 核發之 VPN 伺服器根憑證的受信任憑證設定檔。 
 

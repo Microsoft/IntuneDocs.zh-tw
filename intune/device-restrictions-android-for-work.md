@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 的工作裝置限制設定
 
@@ -50,6 +50,12 @@ ms.lasthandoff: 04/26/2018
    例如，當您將 Gmail 應用程式部署到 Android for Work 設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
 
 - **透過藍牙分享連絡人**：允許存取來自使用藍芽配對之另一部裝置 (例如汽車) 的工作連絡人。 預設並未進行這項設定，因此不會顯示工作設定檔連絡人。 請選取 [啟用] 以允許此共用及顯示工作設定檔連絡人。 此設定適用於 Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。 啟用此選項可能會允許某些藍芽裝置在第一次連接時，快取工作連絡人。 初次配對/同步處理後停用此政策，可能不會從藍芽裝置移除工作連絡人。
+
+- **螢幕擷取**：封鎖工作設定檔中裝置上的螢幕擷取功能。 這同時會也防止在沒有安全視訊輸出的顯示裝置上顯示內容。
+
+- **在個人設定檔中顯示工作連絡人的本機號碼** ：啟用 (未設定) 時，工作連絡人的詳細資料會顯示在個人設定檔中。 封鎖時，工作連絡呼叫者詳細資料不會顯示在個人設定檔中。 適用於 Android OS v6.0 和更新版本。
+
+- **相機**：封鎖工作設定檔中裝置上的相機。 個人端上的相機不受此設定影響。
 
 ### <a name="work-profile-password"></a>工作設定檔密碼
 
