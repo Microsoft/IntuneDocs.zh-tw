@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -70,8 +70,8 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|是 - 使用 [Intune App SDK Cordova 外掛程式](app-sdk-cordova.md)。|
-|**Android**| 是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|是 - 使用 [Intune App SDK Cordova 外掛程式](app-sdk-cordova.md)。|
+|**iOS**|是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|否|
+|**Android**| 是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|否|
 
 ## <a name="feature-comparison"></a>功能比較
 此表格列出您可以用於 App SDK 和 App Wrapping Tool 的設定。
