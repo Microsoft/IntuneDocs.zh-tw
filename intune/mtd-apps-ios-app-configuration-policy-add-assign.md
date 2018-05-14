@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="microsoft-authenticator-app-for-ios"></a>適用於 iOS 的 Microsoft Authenticator 應用程式
 
-- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Microsoft Authenticator 應用程式市集 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在＜設定應用程式資訊＞一節下的**步驟 12** 中，使用這個 [Microsoft Authenticator 應用程式市集 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
 ### <a name="lookout"></a>Lookout
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Lookout for Work iOS 應用程式市集 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在＜設定應用程式資訊＞一節下的**步驟 12** 中，使用這個 [Lookout for Work iOS 應用程式市集 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
 
 #### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple 市集之外的 Lookout for Work 應用程式
 
@@ -91,15 +91,15 @@ ms.lasthandoff: 04/16/2018
 
 - 上傳重新簽署的 .ipa 檔案，如[使用 Intune 新增 iOS LOB 應用程式](lob-apps-ios.md)主題中所述。 您也必須將最低作業系統版本設定為 iOS 8.0 或更新版本。
 
-### <a name="skycure"></a>Skycure
+### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
 
 #### <a name="android"></a>Android
 
-- 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用這個 [Skycure 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。
+- 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用此 [SEP Mobile 應用程式商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  對於 [最基本的作業系統]，選取 [Android 4.0 (Ice Cream Sandwich)]。
 
 #### <a name="ios"></a>iOS
 
-- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Skycure 應用程式市集 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在＜設定應用程式資訊＞一節下的**步驟 12** 中，使用這個 [SEP Mobile 應用程式市集 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 請連絡 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以取得該 iOS 應用程式。 請參閱[將 iOS 商店應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示，然後使用**設定應用程式資訊**一節下，**步驟 5** 的 Apple 商店 URL。
+- 請連絡 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以取得該 iOS 應用程式。 請參閱[將 iOS 商店應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示，然後使用＜設定應用程式資訊＞一節下，**步驟 12** 中的 Apple 商店 URL。
 
 ### <a name="zimperium"></a>Zimperium
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在**設定應用程式資訊**一節下的**步驟 5** 中，使用這個 [Zimperium 應用程式市集 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
+- 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在＜設定應用程式資訊＞一節下的**步驟 12** 中，使用這個 [Zimperium 應用程式市集 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>建立 MTD 應用程式與 iOS 應用程式設定原則的關聯性
 
@@ -127,31 +127,24 @@ ms.lasthandoff: 04/16/2018
 
 - 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)主題中所述。
 
-### <a name="for-skycure"></a>若為 Skycure
+### <a name="for-sep-mobile"></a>對於 SEP Mobile
 
--   使用先前在 [Skycure 管理主控台](https://aad.skycure.com)中設定的同一個 Azure AD 帳戶，此帳戶應與用於登入 Intune 傳統入口網站的帳戶相同。
+-   請使用先前在 [Symantec Endpoint Protection Management 主控台](https://aad.skycure.com) \(英文\) 中設定的 Azure AD，此帳戶應該與用於登入 Intune 傳統入口網站的帳戶是同一個。
 
 -   您必須**下載** iOS 應用程式設定原則檔案： 
-    -   前往 [Skycure Management 主控台](https://aad.skycure.com)，並以管理員認證登入。
+    -   移至 [Symantec Endpoint Protection Management 主控台](https://aad.skycure.com) \(英文\) 並使用您的系統管理員認證登入。
 
-    -   移至 [設定] &gt; [裝置管理整合] &gt; [EMM 整合選項]、選擇 [Microsoft Intune]，然後儲存您的選項。
+    -   移至 [設定]，然後在 [整合]，選擇 [Intune]。 選擇 [EMM 整合選取]。 選擇 [Microsoft]，然後儲存您的選取項目。
 
-    -   按一下 [整合安裝檔案] 連結，然後儲存所產生的 \*.zip 檔案。 此 .zip 檔案包含 **skycure\_configuration.plist** 檔案，這會用來在 Intune 中建立 iOS 應用程式設定原則。
+    -   按一下 [整合安裝檔案] 連結，然後儲存所產生的 \*.zip 檔案。 .zip 檔案包含 ***.plist** 檔案，會用來在 Intune 中建立 iOS 應用程式設定原則。
 
-    -   請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Skycure iOS 應用程式設定原則。
+    -   請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 SEP Mobile iOS 應用程式設定原則。
 
-    - 在**步驟 8** 中，使用選項 [輸入 XML 資料]，從 **skycure_configuration.plist** 檔案複製內容，再將其貼到設定原則本文中。
+    - 在**步驟 8** 中，使用 [輸入 XML 資料] 選項，再從 ***.plist** 檔案複製內容，然後將內容貼上到設定原則本文。
 
-您也可以從此處複製 **skycure_configuration.plist** 內容：
+> [!NOTE]
+> 如果您無法擷取檔案，請連絡 [Symantec Endpoint Protection Mobile Enterprise 支援](https://support.symantec.com/en_US/contact-support.html)。
 
-```
-<dict>
-    <key>MdmType</key>
-    <string>Intune</string>
-    <key>UserEmail</key>
-    <string>{{userprincipalname}}</string>
-</dict>
-```
 ### <a name="for-check-point-sandblast-mobile"></a>適用於 Check Point SandBlast Mobile
 
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)指示，新增 Check Point SandBlast Mobile iOS 應用程式設定原則。

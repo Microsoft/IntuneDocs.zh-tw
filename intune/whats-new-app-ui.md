@@ -15,20 +15,27 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: da85b0087709a719cafaaf893c3188a3bf3148d8
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
+#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
+Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics) \(英文\)。 沿著應用程式的測邊，您會發現有一個所有最上層頁面的靜態垂直清單。 按一下任何連結以快速檢視並來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
+
+![顯示 Fluent Design 瀏覽檢視之公司入口網站應用程式儀表板的螢幕擷取畫面](./media/1804_WindowsCP_Fluent_01.png)
+
+
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日當週
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!--1412866 -->
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!-- 1412866 -->
 我們已經發行 iOS 版 公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
 
 此外還包括：

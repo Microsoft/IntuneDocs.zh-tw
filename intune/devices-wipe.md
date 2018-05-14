@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
@@ -58,7 +58,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="remove-company-data"></a>移除公司資料
 
-[移除公司資料] 動作會移除使用 Intune 所指派的受控應用程式資料 (適用時)、設定和電子郵件設定檔。 [移除公司資料] 會將使用者的個人資料保留在裝置上。 並從 Intune 管理項目移除裝置。 
+[移除公司資料] 動作會移除使用 Intune 所指派的受控應用程式資料 (適用時)、設定和電子郵件設定檔。 並從 Intune 管理項目移除裝置。 當裝置下一次簽入並收到遠端 [移除公司資料] 動作時，便會發生。
+
+[移除公司資料] 會將使用者的個人資料保留在裝置上。  
 
 下表描述將移除哪些資料，以及移除公司資料後，[移除公司資料] 動作對保留在裝置上的資料有何影響。
 
@@ -123,13 +125,19 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="remove-company-data"></a>移除公司資料
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [裝置] 窗格中，選取 [所有裝置]。
-4. 選取您要從中移除公司資料之裝置的名稱。
-5. 在顯示裝置名稱的窗格中，選取 [移除公司資料]。 選取 [是] 確認。
+1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+2. 在 [裝置] 窗格中，選取 [所有裝置]。
+3. 選取您要從中移除公司資料之裝置的名稱。
+4. 在顯示裝置名稱的窗格中，選取 [移除公司資料]。 選取 [是] 確認。
 
 如果裝置已開啟且連線，則 [移除公司資料] 動作過程會在 15 分鐘內傳播到所有的裝置類型。
+
+## <a name="delete-devices-from-the-intune-portal"></a>從 Intune 入口網站中刪除裝置
+
+如果您想要從 Intune 入口網站移除裝置，則可以從特定的裝置窗格來刪除裝置。 下一次裝置簽入時，會移除裝置上所有的公司資料。
+
+1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+2. 選擇 [裝置] > [所有裝置] > 選擇您要刪除的裝置 > [刪除]。
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>從 Azure Active Directory 入口網站刪除裝置
 

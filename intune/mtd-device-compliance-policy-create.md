@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 建立 MTD 裝置相容性原則"
-titlesuffix: 
-description: "建立使用您 MTD 夥伴威脅層級的 Intune 裝置相容性原則，判斷行動裝置是否可以存取公司資源。"
-keywords: 
+title: 使用 Microsoft Intune 建立 MTD 裝置相容性原則
+titlesuffix: ''
+description: 建立使用您 MTD 夥伴威脅層級的 Intune 裝置相容性原則，判斷行動裝置是否可以存取公司資源。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense (MTD) 裝置合規性原則
 
@@ -36,11 +36,11 @@ ms.lasthandoff: 03/08/2018
 
 -   設定 MTD 與 Intune 整合
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>建立 MTD 裝置合規性原則
+## <a name="to-create-an-mtd-device-compliance-policy"></a>建立 MTD 裝置合規性原則
 
 1.  移至 [Azure 入口網站](https://portal.azure.com/)，並使用您的 Intune 認證登入。
 
-2.  在 [Azure 儀表板] 中，選擇左功能表中的 [所有服務]，然後在文字方塊篩選中鍵入 **Intune**。
+2.  在 [Azure 儀表板] 中，選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
 3.  選擇 [Intune]，即會開啟 [Intune 儀表板]。
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/08/2018
 
     a.  **受保護**︰這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
 
-    b。  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+    b.  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
 
     c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 03/08/2018
 > [!IMPORTANT]
 > 如果您建立 Office 365 或其他服務的條件式存取原則，則會評估裝置相容性評估，並封鎖不相容的裝置，使其無法存取公司資源，直到裝置中的威脅獲得解決為止。
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>指派 MTD 裝置合規性原則
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>指派 MTD 裝置合規性原則
 
 若要將裝置合規性原則指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 - 政策] 窗格中找到。
 

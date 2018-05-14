@@ -125,6 +125,7 @@
 #### [經由「存取公司或學校資源」來註冊您的 Windows 10 裝置](enroll-your-w10-device-access-work-or-school.md)
 #### [註冊 Windows 8.1 或 Windows RT 8.1 裝置](enroll-your-w81-or-rt81-windows.md)
 #### [註冊 Windows Phone 8.1 裝置](enroll-your-wp81-windows.md)
+### [從 Windows 公司入口網站應用程式來安裝應用程式](install-apps-cpapp-windows.md)
 ### [重設裝置](reset-erase-your-device-cpwebsite.md)
 ### [加密您的裝置](encrypt-your-device-windows.md)
 ### [設定或變更密碼](set-or-change-your-password-windows.md)
