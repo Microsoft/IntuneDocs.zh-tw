@@ -1,36 +1,49 @@
 ---
-title: "使用 Windows AutoPilot Deployment 方案註冊裝置"
+title: 使用 Windows AutoPilot Deployment 方案註冊裝置
 titleSuffix: Microsoft Intune
-description: "了解如何使用 Windows AutoPilot Deployment 方案註冊 Windows 10 裝置。"
-keywords: 
+description: 了解如何使用 Windows AutoPilot Deployment 方案註冊 Windows 10 裝置。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 方案註冊 Windows 裝置
 Windows AutoPilot Deployment 方案可簡化裝置佈建。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 AutoPilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 AutoPilot 裝置時，可以在它們註冊之後管理裝置上的原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Windows AutoPilot 概觀)。
 
 ## <a name="prerequisites"></a>必要條件
-- [裝置必須註冊到您的組織](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [已啟用 Windows 自動註冊](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>新增裝置
+
+您可以藉由匯入含 Windows AutoPilot 裝置資訊的 CSV 檔案來新增它們。
+
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [裝置] > [匯入]。
+
+    ![AutoPilot Windows 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. 在 [新增 Windows AutoPilot 裝置] 下，瀏覽至包含所要新增裝置的序號、Windows 產品識別碼，及硬體雜湊的 CSV 檔案。
+
+    ![新增 AutoPilot Windows 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. 選擇 [匯入] 開始匯入裝置資訊。 這可能需要幾分鐘的時間。
 
 ## <a name="synchronize-devices"></a>同步處理的裝置
 將您的已註冊裝置同步到 Intune，以便設定它們。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 之下，選擇 [裝置註冊]。
 4. 選擇 [Windows 註冊]，然後在 [Windows AutoPilot 部署方案] 區段中，選擇 [裝置]。
 5. 按一下 [同步處理] 匯入已註冊的裝置。 訊息會顯示正在進行同步處理。
@@ -39,7 +52,7 @@ Windows AutoPilot Deployment 方案可簡化裝置佈建。 建置和維護自�
 ## <a name="create-an-autopilot-deployment-profile"></a>建立 AutoPilot 部署設定檔
 AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 之下，選擇 [裝置註冊]。
 4. 選擇 [Windows 註冊]，然後在 [Windows AutoPilot 部署方案] 區段中，選擇 [Deployment Profiles] (部署設定檔)。
 5. 選取 [建立設定檔]，然後選擇名稱和選擇性描述。
@@ -66,7 +79,7 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 建立 AutoPilot 部署設定檔之後，可以將它們指派給選取的裝置。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 之下，選擇 [裝置註冊]。
 4. 選擇 [Windows 註冊]，然後在 [Windows AutoPilot 部署方案] 區段中，選擇 [裝置]。
 5. 選取您要指派部署設定檔的目標裝置。 您可以篩選 [設定檔狀態] 資料行以輕鬆找出沒有指派設定檔的裝置。
@@ -83,7 +96,7 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 建立 AutoPilot 部署設定檔之後，您可以編輯部署設定檔的某些部分。   
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 之下，選擇 [裝置註冊]。
 4. 在 [Windows 註冊] 之下，於 [Windows AutoPilot Deployment 方案] 區段中，選擇 [部署設定檔]。
 5. 選取您想要編輯的設定檔。
@@ -105,9 +118,19 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 您可以檢視 Windows AutoPilot 未指派裝置的警示，查看有多少來自 AutoPilot 程式的裝置未指派 AutoPilot 部署設定檔。 您可以使用警示中的資訊來建立設定檔，並加以指派至未指派的裝置。 當您按一下警示時，會看到 Windows AutoPilot 裝置的完整清單，以及這些裝置的詳細資訊。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 之下，選擇 [裝置註冊]。
 4. 若要查看警示，請選擇 [概觀]。 按一下警示查看 AutoPilot 裝置的清單。  
+
+## <a name="delete-autopilot-devices"></a>刪除 AutoPilot 裝置
+
+您可以刪除未註冊的 Windows AutoPilot 裝置。 您可以註冊裝置然後將它們刪除。
+
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [裝置]。
+
+2. 在 [Windows AutoPilot 裝置] 下，選擇您要刪除的裝置，然後選擇 [刪除]。
+
+3. 選擇 [是] 以確認刪除。 可能需要幾分鐘才能刪除。
 
 
 ## <a name="next-steps"></a>接下來的步驟
