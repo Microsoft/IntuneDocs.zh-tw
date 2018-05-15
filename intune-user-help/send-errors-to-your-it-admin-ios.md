@@ -17,19 +17,22 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b9bbd44fcace579803fc4e5c24324d70b8831645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>針對 iOS 裝置問題將錯誤傳送給公司支援人員
+有時您可能會在於 iOS 裝置上使用公司入口網站應用程式時遇到錯誤。 當發生這種情況時，您可以透過電子郵件將錯誤相關詳細資料傳送給公司的支援人員。 這些詳細資料將提供為您進行問題疑難排解所需的內容。
+
+當您將記錄上傳到公司入口網站應用程式時，系統會先將它們傳送給處理該應用程式的 Microsoft 開發人員。 他們會使用這些記錄來改進應用程式的功能，以及防止未來的錯誤。 接著，會針對您的特定錯誤提供您事件識別碼，以便與公司的支援人員共用並用於 Microsoft 支援案例中。
 
 當您使用公司入口網站應用程式時，如果 iOS 裝置上出現錯誤，您可以傳送資訊，以協助公司支援人員對問題進行疑難排解。 您可以透過下列不同方式來傳送錯誤資訊：
 
 -   在錯誤警示訊息上，點選 [報告]。
 
--   在公司入口網站應用程式的 [關於] 畫面上：點選 [傳送診斷報告]。
+-   在公司入口網站應用程式的 [更多] 索引標籤中，點選 [取得說明]。
 
 -   在公司入口網站應用程式中，搖晃裝置，然後在診斷警示出現時，點選 [傳送診斷報告]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] > [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
 

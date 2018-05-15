@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -67,10 +67,9 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 * [iOS 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-如果您的應用程式是 Xamarin 或 Cordova 應用程式，請使用這些 SDK 變異：
+如果您的應用程式是 Xamarin 應用程式，請使用這項 SDK 變數：
 
 * [Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune App SDK Cordova 外掛程式](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 建議您註冊一個 GitHub 帳戶，以用來從我們的存放庫執行分支作業及提取作業。 GitHub 可讓開發人員與我們的產品小組進行溝通、開啟問題並接收快速回應、檢視版本資訊，以及將意見提供給 Microsoft。 如有 Intune App SDK GitHub 問題，請連絡 msintuneappsdk@microsoft.com。
 
@@ -81,8 +80,6 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 * **[Intune App SDK for iOS 開發人員指南](app-sdk-ios.md)**：本文件將逐步引導您使用 Intune App SDK 啟用原生 iOS 應用程式。
 
 * **[Intune App SDK for Android 開發人員指南](app-sdk-android.md)**：本文件將逐步引導您使用 Intune App SDK 來啟用原生 Android 應用程式。
-
-* **[Intune App SDK Cordova 外掛程式指南](app-sdk-cordova.md)**︰本文件將協助您使用 Cordova for Intune 應用程式保護原則建置 iOS 和 Android 應用程式。
 
 * **[Intune App SDK Xamarin 繫結指南](app-sdk-xamarin.md)**︰本文件將協助您使用 Xamarin for Intune 應用程式保護原則來建置 iOS 和 Android 應用程式。
 

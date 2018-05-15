@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -62,6 +62,19 @@ ms.lasthandoff: 04/16/2018
 - **Windows** - (選擇性) 啟用[自動註冊](windows-enroll.md)或[大量註冊](windows-bulk-enroll.md)
 - **macOS** - (必要) [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。
 
+### <a name="workflow-of-intune-administration-ui"></a>Intune 系統管理使用者介面的工作流程
+啟用 Android 或 Apple 裝置管理時，Intune 會傳送裝置與使用者資訊，以便與第三方服務整合來管理其各自的裝置。
+
+下列案例會另外詢問是否同意共用資料：
+- 啟用 Android for Work 時。
+- 啟用並上傳 Apple MDM Push Certificate 時。
+- 啟用任何 Apple 服務時，例如裝置註冊計劃、School Manager 或大量採購方案。
+
+在每個案例中，同意會與執行行動裝置管理服務嚴格相關，例如確認 IT 系統管理員已授權 Google 或 Apple 裝置註冊。 當下列位置推出新的工作流程時，會提供文件說明哪些資訊為共用：
+- [Intune 傳送至 Google 的資料](https://aka.ms/Data-intune-sends-to-google)
+- [Intune 傳送至 Apple 的資料](https://aka.ms/data-intune-sends-to-apple)
+
+如需 Microsoft 的 GDPR 合規性詳細資訊，請參閱[信任中心 - 評估您的 GDPR 合規性](https://aka.ms/trust_center_info)。
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 憑證到期後的行動裝置清除
 

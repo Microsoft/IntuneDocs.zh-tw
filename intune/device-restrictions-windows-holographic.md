@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中適用於 Windows Holographic for Business 的裝置限制
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 04/16/2018
 
 - **修改系統時間** - 防止使用者變更裝置日期和時間。
 
-## <a name="kiosk-preview"></a>Kiosk (預覽)
+## <a name="kiosk"></a>Kiosk
 
 Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置上 kiosk 應用程式外的任何功能。
 
@@ -76,6 +76,9 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
 
   - **未設定** (預設) - 不啟用 kiosk 模式的原則。 
   - **單一應用程式 kiosk** - 此設定檔可讓裝置只在單一應用程式上執行。 當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
+  - **多應用程式 kiosk** - 此設定檔可讓裝置在多個應用程式上執行。 只有您新增的應用程式才可供使用者使用。 多應用程式 kiosk (或固定用途裝置) 的好處是讓個人只存取所需的應用程式，來為個人提供一個簡單明瞭的體驗。 此外，還可從其檢視中移除不需要的應用程式。 
+  
+    當您為多應用程式 kiosk 體驗新增應用程式時，也會新增 [開始] 功能表配置檔案。 [[開始] 功能表配置檔案](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune)包含可用於 Intune 中的範例 XML。 
 
 #### <a name="single-app-kiosks"></a>單一應用程式 Kiosk
 輸入下列設定：

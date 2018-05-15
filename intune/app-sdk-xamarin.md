@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f9cc117925f59c9fb7c55d0ff10aedf09d26f93
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -74,35 +74,35 @@ ms.lasthandoff: 04/06/2018
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用應用程式保護原則
-將 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。
+## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用 Intune 應用程式保護原則
 
-針對 Xamarin.Android 應用程式，您必須完整閱讀並依照 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)進行操作，包括根據該指南中所含的[表格](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)，將類別、方法及活動取代成其 MAM 對等項目。 
+### <a name="xamarinandroid-integration"></a>Xamarin.Android 整合
 
-> [!NOTE]
-> 如果您的應用程式未定義 `android.app.Application` 類別，則需要建立一個，並確定繼承自 `MAMApplication`。
+1. 將最新版的 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。 這會提供您 Intune 的必要參考來啟用應用程式。
+
+2. 徹底閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)，並特別注意：
+    1. [完整類別和方法取代](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)一節。 
+    2. [MAMApplication ](app-sdk-android.md#mamapplication)。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
+    3. [ADAL 整合](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)一節 (如果您的應用程式向 AAD 執行驗證)。
+    4. [MAM-WE 註冊](app-sdk-android.md#app-protection-policy-without-device-enrollment)一節 (如果您想從應用程式中的 MAM 服務取得原則)。
 
 > [!NOTE]
 > 嘗試從 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)尋找 `Microsoft.Intune.MAM.Xamarin.Android` 繫結中的對等 API，或從該指南轉換程式碼片段時，請注意 Xamarin 的繫結產生器會以下列顯著的方式修改 Android API：
-> * 所有識別碼都會轉換成 Pascal 命名法的大小寫 (com.microsoft.foo -> Com.Microsoft.Foo)
+> * 所有識別碼都會轉換成 Pascal 命名法的大小寫 (com.foo.bar -> Com.Foo.Bar)
 > * 所有 get/set 作業都會轉換成屬性作業 (例如 Foo.getBar() -> Foo.Bar、Foo.setBar("zap") -> Foo.Bar = "zap")
 > * 所有介面的名稱前面都會加上 'I' 字元 (FooInterface -> IFooInterface)
 
-針對使用 Xamarin.Forms 或其他 UI 架構的應用程式，我們已提供一個稱為 `Microsoft.Intune.MAM.Remapper` 的工具。 此工具會為您完成類別取代。 若要使用它，請執行下列操作：
+### <a name="xamarinforms-integration"></a>Xamarin.Forms 整合
 
-1.  將 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 套件新增至您的專案。
+**除了執行所有上述步驟之外**，我們還針對 `Xamarin.Forms` 應用程式提供 `Microsoft.Intune.MAM.Remapper` 套件。 此套件會將 `MAM` 類別插入常用 `Xamarin.Forms` 類別 (例如 `FormsAppCompatActivity` 和 `FormsApplicationActivity`) 的類別階層中，為您完成類別取代，讓您可以透過提供 MAM 對等功能 (例如 `OnMAMCreate` 和 `OnMAMResume`) 的覆寫來繼續使用這些類別。 若要使用它，請執行下列操作：
 
-2.  將 NuGet 套件所隨附 `remapping-config.json` 檔案的建置動作設定為 **RemappingConfigFile**。 包含的 `remapping-config.json` 僅適用於 Xamarin.Forms。 若為其他 UI 架構，請參閱 Remapper NuGet 套件所包含的讀我檔案。
+1.  將 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 套件新增至您的專案。 如果您尚未包含 Intune APP SDK Xamarin 繫結，則會自動新增繫結。
 
-3.  在 MAMApplication 的 OnMAMCreate 函式中，新增對 Xamarin.Forms.Forms.Init(Context, Bundle) 的呼叫，因為使用 Intune 管理時，應用程式可以在處於背景時啟動。
-
-4.  執行 [Intune App SDK for Android 開發人員指南](app-sdk-android.md) 中適用於您應用程式的其餘步驟。
+2.  在您於上述步驟 2.2 中建立之 `MAMApplication` 類別的 `OnMAMCreate` 函式中，新增對 `Xamarin.Forms.Forms.Init(Context, Bundle)` 的呼叫。 因為使用 Intune 管理時，應用程式可以在位於背景時啟動，所以需要這樣做。
 
 > [!NOTE]
-> remapping-config.json 的建置動作有時可能會在更新 Microsoft.Intune.MAM.Remapper.Tasks 套件時重設，這會導致您的建置失敗。
+> 由於此作業會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性，因此您可能需要在第一次執行 Remapper 之後重新啟動 Visual Studio，IntelliSense 才能正確辨識變更。 
 
-## <a name="next-steps"></a>接下來的步驟
-
-您已完成設定應用程式來進行 Intune 管理的基本步驟。 現在，您可以依照以上所列每個平台整合指南中所含的步驟進行操作。
+## <a name="support"></a>支援
 
 如果組織是現有的 Intune 客戶，請與您的 Microsoft 支援代表合作，[在 Github 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上開啟支援票證並建立問題，我們將會儘快提供協助。 

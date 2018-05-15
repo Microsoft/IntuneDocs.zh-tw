@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -121,11 +121,11 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 
 ### <a name="device-properties"></a>裝置內容
 
-- **最低 OS 版本**：輸入允許的最低版本 (格式為 major.minor.build.CU 編號格式)。 build.CU 號碼必須與 `ver` 或 `winver` 命令所傳回的版本對應。
+- **最低 OS 版本**：輸入允許的最低版本 (格式為 major.minor.build.revision number)。 build.revision number 必須與 `ver` 或 `winver` 命令所傳回的版本對應。
 
   若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
-- **最高 OS 版本**：輸入允許的最高版本 (格式為 major.minor.build.CU 編號格式)。 build.CU 號碼必須與 `ver` 或 `winver` 命令所傳回的版本對應。
+- **最高 OS 版本**：輸入允許的最高版本 (格式為 major.minor.build.revision number)。 build.revision number 必須與 `ver` 或 `winver` 命令所傳回的版本對應。
 
   當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 

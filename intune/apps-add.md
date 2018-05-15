@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -155,6 +155,16 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune 自動新增的應用程式
 
 原本，Intune 包含許多您可以快速指派的內建應用程式。 根據 Intune 客戶的意見反應，我們移除了此清單，而且也不再顯示內建應用程式。 不過，如果您已指派任何內建應用程式，那些應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
+
+## <a name="installing-updating-or-removing-required-apps"></a>安裝、更新或移除必要的應用程式
+
+Intune 會在 24 小時內自動重新安裝、更新或移除必要的應用程式，而不是等候 7 天的重新評估週期。
+
+Intune 會根據下列條件，自動重新安裝、更新或移除必要的應用程式：
+- 如果使用者解除安裝的應用程式是您要求必須在裝置上安裝的應用程式，則 Intune 會在過了此排程之後自動重新安裝應用程式。
+- 如果必要的應用程式安裝失敗，或因任何原因導致裝置上沒有該應用程式，則 Intune 會在此經過排程之後評估合規性，並重新安裝應用程式。  
+- 系統管理員可將應用程式設為可供使用者群組使用的目標，使用者即可透過裝置上的公司入口網站來安裝應用程式。 之後，系統管理員可將應用程式從 v1 更新為 v2。 如果裝置上仍有任何舊版的應用程式，Intune 會在此經過排程之後更新應用程式。
+- 如果系統管理員部署解除安裝的意圖，但裝置上的應用程式無法解除安裝，則 Intune 會在此經過排程之後評估合規性，並解除安裝應用程式。   
 
 ## <a name="next-steps"></a>接下來的步驟
 

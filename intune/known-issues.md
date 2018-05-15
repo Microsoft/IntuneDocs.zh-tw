@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -46,6 +46,14 @@ Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows
 您無法在 Azure 入口網站中，檢視從 Azure 傳統入口網站移轉之原則的狀態資訊。 但是，您可以在傳統入口網站中繼續檢視這些原則的報表。 若要檢視移轉之設定原則的狀態資訊，請在 Azure 入口網站中重新建立它們。
 
 ## <a name="apps"></a>應用程式
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>特定 VPP 應用程式的多個應用程式安裝提示
+您可能會看到終端使用者裝置上已安裝之特定 VPP 應用程式的多個應用程式安裝提示。 如果您將已上傳至 Intune Azure 入口網站之 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項設定為 [開啟]，就會發生此問題。    
+
+若要解決此問題，您可以停用 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項。 若要執行這項作業，請在 Azure 入口網站中，開啟 Microsoft Intune。 從 Intune 選取 [Mobile Apps] > [iOS VPP tokens] \(iOS VPP 權杖\)。 接下來，選取已部署受影響應用程式的 VPP 權杖，然後選取 [編輯] > [Automatic app updates] \(自動應用程式更新\) > [關閉] > [儲存]。 或者，您可以停止將受影響的應用程式部署為 VPP 應用程式，這將會停止提示。    
+
+這是目前版本中的已知問題。 我們將在未來推出修正程式來解決此問題。 實作修正程式之後，您的使用者就不會再看到多個應用程式安裝提示。
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS 大量採購應用程式僅適用於預設的 Intune 租用戶語言
 iOS 大量採購應用程式只能針對與您的 Intune 帳戶相同的國碼/地區碼顯示，並且予以指派。 Intune 只會同步其 iTunes 地區設定與 Intune 租用戶帳戶國碼/地區碼相同的應用程式。 例如，如果您購買僅於美國市集中提供的應用程式，但您的 Intune 帳戶是德文，Intune 就不會顯示該應用程式。
