@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -46,6 +46,16 @@ ms.lasthandoff: 04/26/2018
    - [裝置設定]會顯示已指派給裝置的所有裝置設定原則，以及原則是否成功。
 
 Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個人裝置上的應用程式。 若為 Windows 10 電腦，只會列出公司擁有裝置上的新式應用程式。 Intune 不會收集裝置上的 Win32 應用程式相關資訊。 視裝置使用的電訊廠商而定，不會收集所有的應用程式。
+
+|平台|屬個人擁有的裝置|屬公司擁有的裝置|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (不含 Configuration Manager 用戶端)|僅限受管理的應用程式|僅限受管理的應用程式|
+|Windows 8.1 (不含 Configuration Manager 用戶端)|僅限受管理的應用程式|僅限受管理的應用程式|  
+|Windows Phone 8|僅限受管理的應用程式|僅限受管理的應用程式|  
+|Windows RT|僅限受管理的應用程式|僅限受管理的應用程式|  
+|iOS|僅限受管理的應用程式|安裝在裝置上的所有應用程式|
+|macOS|安裝在裝置上的所有應用程式|安裝在裝置上的所有應用程式|  
+|Android|僅限受管理的應用程式|安裝在裝置上的所有應用程式|  
 
 ## <a name="next-steps"></a>接下來的步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。

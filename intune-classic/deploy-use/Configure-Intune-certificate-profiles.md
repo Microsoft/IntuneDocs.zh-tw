@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>設定 Intune 憑證設定檔
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 04/16/2018
    > 
    > 自訂格式目前支援的兩個變數為 `Common Name (CN)` 和 `Email (E)`。 您可以結合使用這些變數和靜態字串，建立自訂的主體名稱格式如下︰
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > 在本範例中，管理員建立的主體名稱格式除了有 `CN` 與 `E` 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了支援的字串。
 

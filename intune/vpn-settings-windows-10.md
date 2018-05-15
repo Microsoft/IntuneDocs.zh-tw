@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 設定
 
@@ -99,17 +99,10 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="apps-and-traffic-rules"></a>應用程式與流量規則
 
-<<<<<<< HEAD
 - **將 WIP 或應用程式與此 VPN 建立關聯**：若您只希望某些應用程式使用 VPN 連線，可啟用此設定。 選項包括：
 
   - **將 WIP 與此連線建立關聯**：輸入**此連線的 WIP 網域**
   - **將應用程式與此連線建立關聯**：您可以**限制這些應用程式的 VPN 連線**，然後新增**相關聯的應用程式**。 您輸入的應用程式會自動使用 VPN 連線。 應用程式類型會決定應用程式識別碼。 若為通用 app，請輸入套件系列名稱。 若為傳統型應用程式，請輸入應用程式的檔案路徑。
-=======
-**限制這些應用程式的 VPN 連線**：若您只希望某些應用程式使用 VPN 連線，可啟用此設定。
-
-**相關聯的應用程式**：輸入會自動使用 VPN 連線的應用程式清單。 應用程式類型會決定應用程式識別碼。 若為通用 app，請輸入套件系列名稱。 若為傳統型應用程式，請輸入應用程式的檔案路徑。
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >我們建議您為所建立的每個應用程式 VPN 保護所有的應用程式清單。 如果未經授權的使用者變更這個清單，而您將其匯入到個別應用程式的 VPN 應用程式清單中，則您可能會將 VPN 存取權授權給不應該存取的應用程式。 保護應用程式清單的方法之一是使用存取控制清單 (ACL)。
 
