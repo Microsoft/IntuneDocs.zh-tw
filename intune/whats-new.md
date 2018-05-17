@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ ms.lasthandoff: 05/07/2018
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>2018 年 5 月 7 日當週
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Samsung Knox Mobile Enrollment 支援 <!--1112863-->
+
+當 Intune 與 Samsung Knox Mobile Enrollment (KME) 搭配使用時，您可以註冊大量公司擁有的 Android 裝置。 使用 WiFi 或行動電話通訊網路的使用者第一次開啟其裝置時，只需輕點幾下即可註冊。 使用 Knox 部署應用程式時，可以使用藍牙或 NFC 註冊裝置。 如需詳細資訊，請參閱[使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置](android-samsung-knox-mobile-enroll.md)。
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>要求 Windows 10 版公司入口網站中的說明 <!-- 1874137 -->
+
+當使用者啟動工作流程以取得有關問題的說明時，Windows 10 版公司入口網站現在會將應用程式記錄檔直接傳送給 Microsoft。 這樣可以更輕鬆地進行疑難排解並解決向 Microsoft 提出的問題。
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
 
@@ -173,9 +185,9 @@ Intune 系統管理員可以[刪除 Autopilot 裝置](enrollment-autopilot.md#de
 這些磚在更新之後將更方便視障使用者使用，而且可以為螢幕閱讀工具提供更好的效能。
 
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>在 macOS 版公司入口網站應用程式中傳送診斷報告 <!-- 2216677 -->
-macOS 裝置版的公司入口網站應用程式在更新之後，改進了使用者回報 Intune 相關錯誤的方式。 您的員工可以從公司入口網站應用程式：
+macOS 裝置版的公司入口網站應用程式在更新之後，改進了使用者回報 Intune 相關錯誤的方式。 您的員工可以透過公司入口網站應用程式，進行下列作業：
 
-- 將診斷報告直接上傳至 Microsoft 開發人員小組。
+- 將診斷報告直接上傳給 Microsoft 開發人員小組。
 - 透過電子郵件將事件識別碼傳送給 IT 支援小組。
 
 如需詳細資訊，請參閱[傳送 macOS 的錯誤](/intune-user-help/send-errors-macos)。
@@ -369,12 +381,21 @@ Intune 可提供您控制權來[管理軟體更新](windows-update-for-business-
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>改善的公司入口網站註冊 <!-- 1874230 eeready-->
 使用者如果是在 Windows 10 1703 組建或更新版本上使用公司入口網站來註冊裝置，現在將能夠在不離開應用程式的情況下，完成第一個註冊步驟。
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens 和 Surface Hub 現在會出現在裝置清單 <!--1725868 --> 中
 我們已新增支援，可向 Android 版公司入口網站應用程式顯示已在 Intune 註冊的 HoloLens 和 Surface Hub 裝置。
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>為大量採購方案 (VPP) 電子書自訂書籍類別 <!-- 1488911 -->
-您可以建立自訂電子書類別，然後將 VPP 電子書指派給這些自訂電子書類別。 終端使用者便可以看見新建立的電子書類別，以及指派給這些類別的書籍。 如需詳細資訊，請參閱[使用 Microsoft Intune 管理大量採購的應用程式與書籍](vpp-apps.md)。
+您可以建立自訂電子書類別，然後將 VPP 電子書指派給這些自訂電子書類別。 終端使用者便可以看見新建立的電子書類別，以及指派給這些類別的書籍。 如需詳細資訊，請參閱[使用 Microsoft Intune 管理大量採購的應用程式與書籍](vpp-apps.md)。  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>針對 Windows 版公司入口網站應用程式傳送意見反應選項的支援已變更 <!-- 2070166 -->
+從 2018 年 4 月 30 日起，Windows 版公司入口網站應用程式中的 [傳送意見反應] 選項僅可在執行 Windows 10 年度更新 (1607) 及更新版本的裝置上執行。 搭配下列版本使用 Windows 版公司入口網站應用程式時，不再支援傳送意見反應的選項：  
+- Windows 10，1507 版本  
+- Windows 10，1511 版本  
+- Windows Phone 8.1 
+
+如果您的裝置執行的是 Windows 10 RS1 或更新版本，請從市集下載最新的 Windows 版公司入口網站應用程式。 如果您執行的是不支援的版本，請繼續透過下列通道傳送意見反應： 
+- Windows 10 上的 [意見反應中樞] 應用程式
+- 電子郵件 WinCPfeedback@microsoft.com  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>新的 Windows Defender 應用程式防護設定 <!-- 1631890 -->
 
@@ -1110,23 +1131,6 @@ Intune 資料倉儲資料模型的第一個版本只包含最新的歷程 Intune
 請將 Intune 標記為我的最愛，而不是 [Intune 應用程式防護] 服務刀鋒視窗，並確定您熟悉 Intune 的 [行動應用程式] 刀鋒視窗中的應用程式保護原則工作流程。 我們會短時間內重新導向，然後移除 [應用程式保護] 刀鋒視窗。 請記住，所有應用程式保護原則都已在 Intune 中，而且您可以遵循這裡的文件來修改任何條件式存取原則：[https://aka.ms/azuread_ca](https://aka.ms/azuread_ca)。
 
 **其他資訊**：[https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>為變更做規劃：Windows 公司入口網站的 [傳送意見反應] 選項可能無法繼續運作  
-Windows 公司入口網站應用程式具有 [傳送意見反應] 選項，可讓使用者將對應用程式的相關意見反應傳送給 Microsoft。 自 2018 年 4 月 30 日起，只有在 Windows 10 1607 (年度更新版) 和更新版本上執行的 Windows 10 公司入口網站應用程式，才會繼續支援此選項。  
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？  
-如果您沒有為使用者安裝 Windows 公司入口網站應用程式，請忽略此訊息。 如果您有任何使用者擁有公司入口網站應用程式，請注意，自 4 月 30 日起，下列案例中應用程式的 [傳送意見反應] 按鈕將不再有作用：  
-- Windows 10 1507 版與 1511 版上所使用的 Windows 10 公司入口網站應用程式  
-- Windows Phone 8.1 公司入口網站應用程式  
-
-對於受影響的裝置而言，[傳送意見反應] 選項將會失敗，且即使重試也無法成功。 若要在這些平台上將有關體驗的意見反應傳送給 Microsoft，請參見以下進一步列出的替代意見反應管道。  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？  
-請告知使用者這項變更，並視需要更新任何使用者指引。 告知在 Windows Phone 8.1、Windows 10 1507 版及 Windows 10 1511 版上使用公司入口網站的使用者，有兩個替代的意見反應管道可供使用。 他們可以：  
-- 使用 Windows 10 上的 [意見反應中樞] 應用程式
-- 傳送電子郵件給 WinCPfeedback@microsoft.com  
-
-要求 Windows 10 RS1 或更新版本的使用者更新至市集中最新的 Windows 公司入口網站版本。
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>變更計劃：變更適用於 Cordova 外掛程式的 Microsoft Intune App SDK 支援
 Intune 即將在 2018 年 5 月 1 日結束 [Microsoft Intune App SDK Cordova 外掛程式](app-sdk-cordova.md)的支援。 建議您改用 Intune App Wrapping Tool，以讓您的 Cordova 應用程式可在 Intune 中管理及運作。 當此變更生效時，適用於 Cordova 外掛程式的 Microsoft Intune APP SDK 將不再保留或接收更新。 應用程式開發人員將無法使用此外掛程式。 Intune 計劃繼續支援以 Cordova 建置的應用程式。 但是，以適用於 Cordova 外掛程式之 Microsoft Intune APP SDK 建置的任何應用程式在 Intune 中的功能會減少。 使用 Intune App Wrapping Tool 包裝後，應用程式就能以其一般狀態部署至終端使用者。 對於發行至 Google Play 商店之 Cordova 的 Android 應用程式：
