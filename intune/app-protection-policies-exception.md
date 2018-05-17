@@ -15,24 +15,22 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-身為系統管理員，您可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。 例外狀況可讓您明確選擇哪些未受管理的應用程式可以與受管理應用程式互相傳輸資料。 IT 必須信任您包含在例外狀況清單中的未受管理應用程式。 
+身為系統管理員，您可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。 例外狀況可讓您明確選擇哪些未受管理的應用程式可以與受管理應用程式互相傳輸資料。 IT 必須信任您包含在例外狀況清單中的非受控應用程式。 
 
 >[!WARNING] 
 > 您必須負責變更資料傳輸例外狀況原則。 新增項目到此原則允許未受管理的應用程式 (不由 Intune 管理的應用程式) 存取由受管理應用程式保護的資料。 對受保護資料的這種存取可能會導致資料安全性外洩。 請您只為您的組織必須使用但不支援 Intune 應用程式 (應用程式保護原則) 的應用程式新增資料傳輸例外狀況。 此外，也請只為您不認為是資料洩漏風險的應用程式新增例外狀況。
 
-此功能適用的情況是您建立 Intune 應用程式保護原則，並將資料傳輸設定為**僅限受管理應用程式**。 當資料傳輸原則設為**僅限受管理應用程式**時，除您建立的例外狀況，資料傳輸仍僅限於受 Intune 管理的應用程式。 您可以使用通訊協定 (iOS) 或套件 (Android) 來建立限制。
-
-您可以設定這項功能，以讓 Intune MAM 應用程式保護原則的例外狀況能**限制資料傳輸**。 此原則只有在您想要允許資料傳輸至不支援 Intune APP 的應用程式時才需要。 此原則可讓 Intune 管理的應用程式 (且將資料傳輸設定設為**僅限受管理應用程式**，以根據 URL 通訊協定 (iOS) 或套件名稱 (Android) 叫用未受管理的應用程式。 Intune 會將重要的原生應用程式新增到例外狀況的預設清單。 
+在 Intune 應用程式保護原則中，將 [允許應用程式將資料傳送至其他應用程式] 設定為 [受原則管理的 App] 表示應用程式只能將資料傳送至由 Intune 管理的應用程式。 如果您需要允許將資料傳送到不支援 Intune 應用程式的特定應用程式，則可以使用 [選取排除的應用程式] 來為此原則建立例外狀況。 豁免允許由 Intune 管理的應用程式根據 URL 通訊協定 (iOS) 或套件名稱 (Android) 叫用非受控應用程式。 根據預設，Intune 會將重要的原生應用程式新增到此例外狀況的清單。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 資料傳輸例外狀況
 對於以 iOS 為目標的原則，您可以依 URL 通訊協定設定資料傳輸例外狀況。 若要新增例外狀況，請檢查應用程式開發人員提供的文件，尋找支援的 URL 通訊協定的相關資訊。 如需 iOS 資料傳輸例外狀況的其他資訊，請參閱 [iOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。

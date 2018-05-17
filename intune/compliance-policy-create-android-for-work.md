@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>在 Intune 中為 Android for Work 裝置新增裝置合規性政策
 
@@ -91,7 +91,7 @@ ms.lasthandoff: 04/18/2018
 
 - **需要密碼才可解除鎖定行動裝置**：**要求**使用者必須輸入密碼以存取其裝置。
 - **最小密碼長度**：輸入使用者密碼至少須包含的位數或字元數。
-- **所需的密碼類型**：選擇密碼是否應該只有數值字元，或是否應該混合數字和其他字元。 從下列選項進行選擇：
+- **所需的密碼類型**：選擇密碼是否應該只有數值字元，或者混合數字和其他字元。 從下列選項進行選擇：
   - **裝置預設**
   - **低安全性生物識別**
   - **至少包含數字**

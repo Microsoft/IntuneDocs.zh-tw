@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中 iOS 裝置的 VPN 設定- Azure | Microsoft Docs
-description: 檢視 Microsoft Intune 中執行 iOS 之裝置上的可用虛擬私人網路 (VPN) 組態設定，包括基底設定中的連線詳細資料、驗證方法和分割通道；含有識別碼和機碼值組的自訂 VPN 設定；包含 Safari URL 的個別應用程式 VPN 設定和含 SSID 或 DNS 搜尋網域的隨選 VPN；以及要包含設定指令碼、IP 或 FQDN 位址和 TCP 連接埠的 Proxy 設定。
+description: 在執行 iOS 裝置上的 Microsoft Intune 中，檢視可用虛擬私人網路 (VPN) 組態設定，包括基底設定中的連線詳細資料、驗證方法和分割通道；含有識別碼的自訂 VPN 設定，以及和機碼和值組；包含 Safari URL 的依應用程式 VPN 設定，與含 SSID 或 DNS 搜尋網域的隨選 VPN；以及要包含設定指令碼、IP 或 FQDN 位址和 TCP 連接埠的 Proxy 設定。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>設定 Microsoft Intune 中執行 iOS 之裝置的 VPN 設定
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 04/18/2018
 - **連線名稱**：輸入此連線的名稱。 使用者會在瀏覽其裝置是否有可用的 VPN 連線清單時，看到此名稱。
 - **IP 位址或 FQDN**輸入裝置所連線 VPN 伺服器的 IP 位址或完整網域名稱 (FQDN)。 例如，輸入 **192.168.1.1** 或 **vpn.contoso.com**。
 - **驗證方法**從下列方式中選擇裝置向 VPN 伺服器進行驗證的方式︰
-  - **憑證**：在 [驗證憑證] 底下，選擇現有的 SCEP 或 PKCS 憑證設定檔來驗證連線。 [設定憑證](certificates-configure.md)提供了一些有關憑證設定檔的指引。
+  - **憑證**：在 [驗證憑證] 底下，選取現有的 SCEP 或 PKCS 憑證設定檔來驗證連線。 [設定憑證](certificates-configure.md)提供了一些有關憑證設定檔的指引。
   - **使用者名稱及密碼**：使用者必須輸入使用者名稱及密碼，才能登入 VPN 伺服器。
+
+    > [!NOTE]
+    > 如果使用者名稱和密碼用來作為 Cisco IPsec VPN 的驗證方法，它們必須透過自訂的 Apple Configurator 設定檔傳遞 SharedSecret。
+  
 - **連線類型**：從下列廠商清單中選取 VPN 連線類型︰
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -304,6 +304,9 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 6. 當提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在工作 3 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
 
     選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然未顯示您選取的憑證，請選取 [下一步] 以檢視該憑證的屬性。 選取 [下一步] [安裝]。
+    
+    > [!IMPORTANT]
+    > 啟用 Internet Explorer 增強式安全性設定的裝置上無法註冊 Intune 憑證連接器。 若要使用 Intune 憑證連接器，請[停用 IE 增強式安全性設定](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
 7. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI]。
 

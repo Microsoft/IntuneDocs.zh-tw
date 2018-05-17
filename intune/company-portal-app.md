@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a7213608a8147178633ccd8129ab40eef5d4a15
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f5d7a825f70694e9888cf80d96eff12b9169e9ae
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -30,7 +30,10 @@ ms.lasthandoff: 04/26/2018
 > [!Tip]        
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。       
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [行動應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。      
+自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [行動應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
+
+> [!Note]       
+> 當使用者啟動工作流程以取得有關問題的說明時，Windows 10 版公司入口網站現在會將應用程式記錄檔直接傳送給 Microsoft。 這樣可以更輕鬆地進行疑難排解並解決向 Microsoft 提出的問題。  
 
 ## <a name="company-contact-information-and-privacy-statement"></a>公司連絡人資訊和隱私權聲明        
 公司名稱顯示為公司入口網站標題。 連絡資訊及詳細資料會在公司入口網站的 [連絡 IT] 畫面中顯示給使用者。 當使用者按一下隱私權連結時，會顯示隱私權聲明。

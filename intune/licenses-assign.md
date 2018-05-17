@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
@@ -42,6 +42,10 @@ ms.lasthandoff: 04/16/2018
 
 > [!NOTE]
 > 使用者必須先註冊裝置，才會顯示在管理主控台中。 此外，您可以一次選取一組使用者來編輯，可以選取以新增或取代所有選取使用者的授權。
+
+## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>使用 Azure Active Directory 指派 Intune 授權
+
+您也可以使用 Azure Active Directory，將 Intune 授權指派給使用者。 如需詳細資訊，請參閱 [Azure Active Directory 中的授權使用者](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)一文。 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>使用「學校資料同步處理」將授權指派給 Intune 教育版中的使用者
 如果您是教育組織，則可以使用「學校資料同步處理」(SDS) 將 Intune 教育版授權指派給同步的使用者。 只要在設定 SDS 設定檔時，選取 [Intune 教育版] 核取方塊即可。  

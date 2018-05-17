@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>使用恢復出廠預設值或移除公司資料來移除裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您可以從 Intune 移除不再需要、重新設定用途或遺失的裝置。 您可以使用 [移除公司資料] 或 [原廠重設] 動作來執行這項作業。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
+透過使用 [移除公司資料] 或 [重設成出廠預設值] 動作，您可以從 Intune 移除不再需要、重新設定用途或者遺失的裝置。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
 
 > [!NOTE]
 > 在您從 Azure Active Directory (Azure AD) 移除使用者之前，請對與該使用者建立關聯的所有裝置發出 [原廠重設] 或 [移除公司資料] 動作。 如果您從 Azure AD 移除有受控裝置的使用者，Intune 不會再對這些裝置發出原廠重設或移除公司資料的命令。
 
 ## <a name="factory-reset"></a>原廠重設
 
-[原廠重設] 動作會將裝置還原成其出廠的預設設定。 原廠重設會還原所有公司和使用者資料和設定。 並從 Intune 管理項目移除裝置。 在您將裝置給予新使用者之前重設裝置，或當裝置遺失或遭竊的情況，原廠重設十分有用。 請小心選取 [原廠重設]。 裝置上的資料無法復原。
+[原廠重設] 動作會將裝置還原成其出廠的預設設定。 根據您是否選擇 [保留註冊狀態和使用者帳戶] 核取方塊來保留或抹除使用者資料。
+
+|重設成出廠預設值動作|**保留註冊狀態和使用者帳戶**|從 Intune 管理移除|說明|
+|:-------------:|:------------:|:------------:|------------|
+|**重設成出廠預設值**| 未勾選 | 是 | 清除所有的使用者帳戶、資料、MDM 原則及設定。 將作業系統重設為其預設狀態和設定。|
+|**重設成出廠預設值**| 勾選 | 否 | 清除所有的 MDM 原則。 保留使用者帳戶和資料。 將使用者設定重設為預設值。 將作業系統重設為其預設狀態和設定。|
+
+[保留註冊狀態和使用者帳戶] 選項僅適用於 Windows 10 版本 1709 或更新版本。
+
+下次連線到 Intune 時，MDM 原則將會重新套用。
+
+在您將裝置給予新使用者之前重設裝置，或當裝置遺失或遭竊的情況，原廠重設十分有用。 請小心選取 [原廠重設]。 裝置上的資料無法復原。
 
 ### <a name="factory-reset-a-device"></a>對裝置執行原廠重設
 
