@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b03de8b2c5fca0f41a792e5004d74fe82e4a861d
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -106,8 +106,11 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
+
     ![建立設定檔螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image04.png)
+
 3. 在 [建立設定檔] 下，為設定檔輸入系統管理用的**名稱**以及**描述**。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
+
     ![設定檔名稱與描述。](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. 針對 [使用者親和性]，為具備此設定檔的裝置選擇需要或不需要由指派的使用者來進行註冊。
@@ -123,6 +126,9 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
     > 如果您將設定檔屬性設定為 [使用使用者親和性註冊] ，多重要素驗證 (MFA) 在 DEP 註冊期間將無法運作。 註冊後，MFA 會如預期地在這些裝置上運作。 第一次登入時必須變更密碼的使用者不會收到裝置提示。 此外，密碼已過期的使用者也不會在註冊期間收到提示要重設其密碼。 使用者必須使用不同的裝置來重設密碼。
 
 6. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
+
+    ![裝置管理設定螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+
     **受監督**裝置可提供您更多管理選項，並且預設會停用 [啟用鎖定]。 Microsoft 建議使用 DEP 作為啟用受監督模式的機制，特別是針對將部署大量 iOS 裝置的組織。
 
     有兩種方式可通知使用者其裝置收到監督：
@@ -171,9 +177,9 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖 > [裝置] > [同步處理]。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
-   - 完整同步處理每 7 天只能執行一次。 完整同步期間，每當 Apple 序號指派至 Intune 時，Intune 都會重新整理一次。 如果在上一次完整同步處理過後的 7 天內嘗試進行完整同步處理，Intune 只會重新整理尚未列在 Intune 中的序號。
-   - 任何同步處理要求都會在 15 分鐘內完成。 在此期間或直到要求成功，會停用 [同步處理] 按鈕。
-   - Intune 每 24 小時會與 Apple 同步一次新增及移除的裝置。
+   - 完整同步處理每 7 天只能執行一次。 在完整同步期間，Intune 會擷取指派至已連線 Intune 之 Apple MDM 伺服器的序號完整更新清單。 註冊計劃從 Intune 入口網站刪除之後，在完整同步執行之前都無法重新匯入。   
+   - 同步會每 24 小時自動執行一次。 您也可以按一下 [同步] 按鈕來進行同步 (請勿在 15 分鐘內重複點選)。 所有同步要求都必須在 15 分鐘內完成。 [同步] 按鈕在同步完成前都會處於停用狀態。 此同步會重新整理現有的裝置狀態，以及匯入指派至 Apple MDM 伺服器的新裝置。   
+
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>將註冊設定檔指派給裝置
 必須先將註冊計劃設定檔指派至裝置，裝置才能註冊。
@@ -196,5 +202,17 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。
 
 請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。
+
+## <a name="renew-a-dep-token"></a>更新 DEP 權杖  
+1. 前往 deploy.apple.com。  
+2. 在 [管理伺服器] 下，選擇與您所欲更新之權杖檔案相關的 MDM 伺服器。
+3. 選擇 [產生新權杖]。  
+4. 選擇 [您的伺服器權杖]。  
+5. 在 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal) 內，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。  
+6. 依序選擇權杖和 [更新權杖]。  
+7. 輸入用於建立原始權杖的 Apple ID。  
+8. 上傳新下載的權杖。  
+9. 選擇 [更新權杖]。 您會看到權杖已更新的確認。   
+
 
 
