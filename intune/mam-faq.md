@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3c28f7cea87a58f7a01ef2fc427dd3c6d2176f8c
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -97,8 +97,8 @@ ms.lasthandoff: 04/16/2018
 - **使用者收到 Intune PIN 提示的頻率為何？**
   IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式保護原則設定「重新檢查存取需求前的剩餘時間 (分鐘)」。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率： 
 
-    - **PIN 會在相同發行者的多個應用程式間共用，以提升可用性：**在 iOS，一組應用程式 PIN 會在**相同發行者**的所有應用程式間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
-    - **與 PIN 相關的計時器過時性質：**在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。 
+    - **PIN 會在相同發行者的多個應用程式間共用，以提升可用性：** 在 iOS，一組應用程式 PIN 會在**相同發行者**的所有應用程式間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
+    - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。 
 
       >[!NOTE] 
       > 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前的剩餘時間 (分鐘)」設定的值。 

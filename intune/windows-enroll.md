@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -31,7 +31,6 @@ ms.lasthandoff: 04/16/2018
 - [啟用自動註冊](#enable-windows-10-automatic-enrollment) (需要 Azure AD Premium)
 - [CNAME 註冊](#simplify-windows-enrollment-without-azure-ad-premium)
 - [啟用大量註冊](windows-bulk-enroll.md) (需要 Azure AD Premium 與 Windows 設定設計工具)
-- 當您的使用者註冊及檢視套用的原則設定進度時，[新增自訂訊息](windows-enrollment-status.md)來歡迎他們
 
 有兩個因素會決定如何簡化 Windows 裝置註冊：
 

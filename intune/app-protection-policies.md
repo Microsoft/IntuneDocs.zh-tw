@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 04/26/2018
 若要建立這些原則，請在 Intune 主控台中瀏覽至 [行動應用程式] > [應用程式保護原則]，然後按一下 [新增原則]。 您也可以編輯現有的應用程式保護原則。 如果您想要將應用程式保護原則同時套用至受控和非受控裝置，請確認將 [以所有應用程式類型為目標] 設定為 [是] (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [以所有應用程式類型為目標] 選項設定為 [否]。 
 
 > [!NOTE]
-> 針對以裝置管理狀態為基礎的應用程式保護原則，如需特定 iOS 的支援資訊，請參閱[根據管理狀態來設定目標的 MAM 保護原則](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---)。
+> 針對以裝置管理狀態為基礎的應用程式保護原則，如需特定 iOS 的支援資訊，請參閱[根據管理狀態來設定目標的 MAM 保護原則](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)。
 
 ## <a name="policy-settings"></a>原則設定
 若要查看 iOS 和 Android 的原則設定的完整清單，請選取下列其中一個連結︰

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9fd647add814d9cb188c90ef2d2b85ce89a0459b
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
@@ -40,11 +40,11 @@ ms.lasthandoff: 04/27/2018
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [所有服務] > [監視 + 管理] > [Intune]。
 3. 在 [Intune] 窗格中，選取 [行動裝置應用程式]。
-4. 在 [行動裝置應用程式] 工作負載窗格中的 [管理] 底下，選取 [應用程式]。 
+4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。 
 5. 選取 [新增]。
 6. 在 [應用程式類型] 清單的 [Office 365 套件] 群組中，選取 [macOS]。
 7. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]。  
-    這項資訊可協助您在 Intune 中識別應用程式套件，而且能幫助使用者在公司入口網站中尋找應用程式套件。
+    這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
 8. 輸入下列資訊：
     - **套件名稱**：輸入應用程式套件在公司入口網站中顯示的名稱。 請確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述**：輸入應用程式套件的描述。

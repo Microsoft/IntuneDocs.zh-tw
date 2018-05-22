@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > 下表中有一些是選擇性參數。
 
-**範例：**下列範例命令會在名為 MyApp.ipa 的應用程式上執行 App Wrapping Tool。 佈建設定檔和簽署憑證的 SHA-1 雜湊均已指定並可用來簽署已包裝的應用程式。 輸出應用程式 (MyApp_Wrapped.ipa) 會建立並儲存在您的桌面資料夾中。
+**範例：** 下列範例命令會在名為 MyApp.ipa 的應用程式上執行 App Wrapping Tool。 佈建設定檔和簽署憑證的 SHA-1 雜湊均已指定並可用來簽署已包裝的應用程式。 輸出應用程式 (MyApp_Wrapped.ipa) 會建立並儲存在您的桌面資料夾中。
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true

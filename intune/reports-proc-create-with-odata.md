@@ -1,25 +1,25 @@
 ---
-title: "利用 Power BI 的 OData 摘要建立報表"
+title: 利用 Power BI 的 OData 摘要建立報表
 titlesuffix: Microsoft Intune
-description: "使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配來自 Intune 資料倉儲 API 的互動式篩選。"
-keywords: "Intune 資料倉儲"
+description: 使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配來自 Intune 資料倉儲 API 的互動式篩選。
+keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 12725f567cf84d1d7e9110da747470984bc28c01
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 03/08/2018
 > 您需要對 Intune 中 [報表] 的權限。 如需詳細資訊，請參閱[授權](reports-api-url.md)。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [所有服務] > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
+2. 選擇 [All services] (所有服務) > [Intune]。 [Intune] 位於 [監視 + 管理] 區段。
 3. 開啟 [Intune 資料倉儲] 窗格。
 4. 複製自訂摘要 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. 開啟 Power BI Desktop。

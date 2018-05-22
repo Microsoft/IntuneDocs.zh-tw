@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 685ddf806bff865930de70b2d1925fb9b463b173
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f62cb3a99a9cfd328cc041f095b0980eacc99852
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>將 Android 市集應用程式新增至 Microsoft Intune
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/03/2018
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 1. 在 [Intune] 窗格中，選取 [行動應用程式]。
-2. 在 [行動裝置應用程式] 工作負載窗格中的 [管理] 底下，選取 [應用程式]。
+2. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
 3. 選取 [新增]。
 4. 在 [新增應用程式] 窗格中，選取可用 [市集應用程式] 類型下的 [Android]。
 5. 若要設定應用程式資訊，請選取 [設定]，然後提供下列資訊。  

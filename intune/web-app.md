@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58d04de3c4f77a5599bc5a13f2fe1e382654bd73
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -39,12 +39,12 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選取 [行動應用程式]。
-4. 在 [行動裝置應用程式] 工作負載窗格中的 [管理] 底下，選取 [應用程式]。
+4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
 5. 在 [應用程式] 窗格中，選取 [新增]。
 6. 在 [新增應用程式] 窗格的 [應用程式類型] 下拉式清單中，選取 [Web 連結] 類型。
 7. 選取 [設定]。
 8. 在 [應用程式資訊] 窗格中，新增下列資訊：
-    - **名稱**：輸入要在公司入口網站中顯示的應用程式名稱。
+    - **名稱**：輸入要顯示在公司入口網站中的應用程式名稱。
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
     - **發行者**：輸入應用程式的發行者名稱。
     - **應用程式 URL**：輸入裝載您要指派之應用程式的網站 URL。
