@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
@@ -73,7 +73,7 @@ DEM 使用者可以︰
 
 ## <a name="permissions-for-dem"></a>DEM 的權限
 
-需要具備全域或 Intune 服務管理員 Azure AD 角色，才能執行 DEM 註冊工作。 儘管 RBAC 權限列於且適用於自訂使用者角色之下，但也需要有這些角色才能查看所有 DEM 使用者。 未指派全域管理員或 Intune 服務管理員角色，但具備裝置註冊管理員角色之讀取權限的使用者，只能看到他們所建立的 DEM 使用者。 支援這些功能的 RBAC 角色將會在未來宣布。
+需要具備全域或 Intune 服務管理員 Azure AD 角色，才能在管理入口網站中執行與 DEM 註冊相關的工作。 儘管 RBAC 權限列於且適用於自訂使用者角色之下，但也需要有這些角色才能查看所有 DEM 使用者。 未指派全域管理員或 Intune 服務管理員角色，但具備裝置註冊管理員角色之讀取權限的使用者，只能看到他們所建立的 DEM 使用者。 支援這些功能的 RBAC 角色將會在未來宣布。
 
 若未針對使用者指派全域管理員或 Intune 服務管理員角色，但他們具備已針對所指派之裝置註冊管理員角色啟用的讀取權限，則將只能看到他們所建立的 DEM 使用者。
 

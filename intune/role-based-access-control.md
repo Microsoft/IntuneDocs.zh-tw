@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
 
@@ -33,11 +33,11 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 從新的 Azure 入口網站開始，**Azure Active Directory (Azure AD)** 提供兩個可與 Intune 搭配使用的目錄角色。 這些角色會獲得完整的權限，以在 Intune 中執行所有活動：
 
-- **全域管理員：**具有此角色的使用者可存取 Azure AD 中的所有管理功能，以及與 Azure AD 同盟的服務，例如 Exchange Online、SharePoint Online 及商務用 Skype Online。 註冊 Azure AD 租用戶的人員會變成全域管理員。 只有全域管理員可以指派其他 Azure AD 系統管理員角色。 您的組織可以擁有多個全域管理員。 全域管理員可為任何使用者及其他所有系統管理員重設密碼。
+- **全域管理員：** 具有此角色的使用者可存取 Azure AD 中的所有管理功能，以及與 Azure AD 同盟的服務，例如 Exchange Online、SharePoint Online 及商務用 Skype Online。 註冊 Azure AD 租用戶的人員會變成全域管理員。 只有全域管理員可以指派其他 Azure AD 系統管理員角色。 您的組織可以擁有多個全域管理員。 全域管理員可為任何使用者及其他所有系統管理員重設密碼。
 
-- **Intune 服務管理員：**存在服務時，具有此角色的使用者在 Intune 內具有全域權限。 此外，除任何取代 Azure 限制以外，此角色提供管理使用者、裝置的能力，並且建立和管理 Intune 群組。
+- **Intune 服務管理員：** 存在服務時，具有此角色的使用者在 Intune 內具有全域權限。 此外，除任何取代 Azure 限制以外，此角色提供管理使用者、裝置的能力，並且建立和管理 Intune 群組。
 
-- **條件式存取系統管理員：**具有此角色的使用者，只擁有檢視、建立、修改和刪除條件式存取原則的權限。
+- **條件式存取系統管理員：** 具有此角色的使用者，只擁有檢視、建立、修改和刪除條件式存取原則的權限。
 
     > [!IMPORTANT]
     > Intune 服務管理員角色不提供管理 Azure AD 條件式存取設定的能力。
@@ -78,20 +78,18 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [Intune 角色]，然後選取 [所有角色]。
-1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的內建角色。
+4. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的內建角色。
 
-2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。
+5. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [指派] > [指派]。
 
     > [!NOTE]
     > 您無法刪除或編輯內建角色
 
-3. 在自訂角色窗格中，選擇 [指派]。
-
-4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
+6. 在 [角色指派] 窗格中，輸入 [指派名稱] 以及選用的 [指派描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
-    - **範圍** - 選取包含上列成員可以管理的使用者群組。
+    - **範圍** - 選取包含上列成員可以管理的使用者群組。 您也可以選擇將範圍設定為 [所有使用者]、[所有裝置] 或 [所有使用者和裝置]。
 <br></br>
-5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
+7. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
 ### <a name="intune-rbac-table"></a>Intune RBAC 表格
 
@@ -128,13 +126,13 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的自訂角色。
 
-2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。 您也可以在此窗格中編輯或刪除現有的角色。
+2. 在 [<角色名稱> - 概觀] 窗格中，選擇 [指派]。 您也可以在此窗格中編輯或刪除現有的角色。
 
 3. 在自訂角色窗格中，選擇 [指派]。
 
 4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
-    - **範圍** - 選取包含上列成員可以管理的使用者群組。
+    - **範圍** - 選取包含上列成員可以管理的使用者群組。 您也可以選擇將範圍設定為 [所有使用者]、[所有裝置] 或 [所有使用者和裝置]。
 <br></br>
 5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
@@ -145,3 +143,5 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 ## <a name="see-also"></a>另請參閱
 
 [使用 Azure AD 指派角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+

@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>從 Intune 管理移除您的 Windows 裝置
 
@@ -72,13 +72,13 @@ ms.lasthandoff: 05/09/2018
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>在移除公司入口網站之後移除您的個人資訊
 公司入口網站會將兩種資料儲存在您的 Windows 裝置上：
 
--   **診斷記錄**：當您從公司入口網站移除裝置時，會自動清除 Microsoft 所收集的標準應用程式活動資料。 例如，應用程式活動資料是關於應用程式開啟或應用程式當機時間長度的資料。
+-   **診斷記錄檔**：Microsoft 收集的標準應用程式活動資料。 這會在您解除安裝公司入口網站應用程式時自動清除。 例如，應用程式活動資料是關於應用程式開啟或應用程式當機時間長度的資料。
 -   **應用程式快取**：應用程式運作所需的特定支援檔案，例如圖示和設定。
 
-以下是一些您必須執行才能完全刪除此資訊的步驟。
+若要刪除已儲存的記錄檔和快取，請完成下列其中一個步驟：
 
-1. 將公司入口網站解除安裝。 [將公司入口網站應用程式解除安裝](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs)會將儲存在您裝置上的一些應用程式資料移除。  
+* [解除安裝公司入口網站應用程式](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. 重設公司入口網站以重設預存的應用程式資料。 開啟 [設定] 應用程式，然後選取 > [應用程式] > [公司入口網站] > [進階選項] > [重設]。 
+* 重設公司入口網站應用程式。 開啟 [設定] 應用程式，然後選取 > [應用程式] > [公司入口網站] > [進階選項] > [重設]。 
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。

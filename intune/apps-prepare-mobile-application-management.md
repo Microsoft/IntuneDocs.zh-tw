@@ -1,12 +1,11 @@
 ---
-title: 準備應用程式防護原則的企業營運應用程式
-titlesuffix: Microsoft Intune
-description: 您可以使用 App Wrapping Tool 與 App SDK 來啟用自訂的企業營運應用程式，以在 Microsoft Intune 中使用應用程式防護原則。
+title: 決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理
+description: 本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理原則。
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用這項資訊可了解這兩種方法和其使用時機。
 
@@ -34,7 +33,6 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 
 應用程式包裝工具**不**支援 Apple App Store 或 Google Play 商店中的應用程式。 它也不支援某些需要開發人員整合的功能 (請參閱下列的功能比較表)。
 
-
 如需 Intune 中未註冊裝置上應用程式保護原則之 App Wrapping Tool 的詳細資訊，請參閱[保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用 App Wrapping Tool 的原因
@@ -44,7 +42,6 @@ App Wrapping Tool 主要用於內部企業營運 (LOB) 應用程式。 此工具
 * 您沒有 App 原始程式碼的存取權限
 * 您未開發應用程式
 * 您的應用程式具有最低的使用者驗證體驗
-
 
 ### <a name="supported-app-development-platforms"></a>支援的應用程式開發平台
 
@@ -79,35 +76,43 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 > [!NOTE]
 > 只有在使用 Intune 獨立版或 Intune (含 Configuration Manager) 時，才能使用 App Wrapping Tool。
 
-|                                                         功能                                                          | App SDK | App Wrapping Tool |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              限制要在公司管理的瀏覽器中顯示網頁內容                              |    X    |         X         |
-|                                        禁止 Android、iTunes 或 iCloud 備份                                        |    X    |         X         |
-|                                         允許應用程式將資料傳送到其他應用程式                                         |    X    |         X         |
-|                                        允許應用程式接收來自其他應用程式的資料                                         |    X    |         X         |
-|                                      限制利用其他應用程式剪下、複製及貼上                                       |    X    |         X         |
-|                                              需要簡單的 PIN 碼才能存取                                               |    X    |         X         |
-|                                         將內建應用程式 PIN 取代為 Intune PIN                                         |    X    |                   |
-|                                     指定 PIN 重設之前的嘗試次數                                      |    X    |         X         |
-|                                             允許指紋而非 PIN                                             |    X    |         X         |
-|                                         需要公司認證才能存取                                         |    X    |         X         |
-|                             封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行                              |    X    |         X         |
-|                                                     加密應用程式資料                                                     |    X    |         X         |
-|                           在指定的分鐘數之後重新檢查存取需求                            |    X    |         X         |
-|                                             指定離線寬限期                                             |    X    |         X         |
-|                                           封鎖螢幕擷取 (僅限 Android)                                            |    X    |         X         |
-|                                        不註冊裝置的 MAM 支援                                         |    X    |         X         |
-|                                                        完整抹除                                                         |    X    |         X         |
-| 選擇性抹除 <br></br><strong>注意：</strong>對於 iOS，移除管理設定檔時，也會移除應用程式。 |    X    |                   |
-|                                                    避免「另存新檔」                                                     |    X    |                   |
-|                                            目標應用程式組態                                            |    X    |                   |
-|                                                支援多重身分識別                                                |    X    |                   |
-|                                                    可自訂樣式                                                    |    X    |                   |
+|功能|App SDK|App Wrapping Tool|
+|-----------|---------------------|-----------|
+|限制要在公司管理的瀏覽器中顯示網頁內容|X|X|
+|禁止 Android、iTunes 或 iCloud 備份|X|X|
+|允許應用程式將資料傳送到其他應用程式|X|X|
+|允許應用程式接收來自其他應用程式的資料|X|X|
+|限制利用其他應用程式剪下、複製及貼上|X|X|
+|需要簡單的 PIN 碼才能存取|X|X|
+|將內建應用程式 PIN 取代為 Intune PIN|X||
+|指定 PIN 重設之前的嘗試次數|X|X|
+|允許指紋而非 PIN|X|X|
+|允許臉部辨識而非 PIN (僅限 iOS)|X|X|
+|需要公司認證才能存取|X|X|
+|封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行|X|X|
+|加密應用程式資料|X|X|
+|在指定的分鐘數之後重新檢查存取需求|X|X|
+|指定離線寬限期|X|X|
+|封鎖螢幕擷取 (僅限 Android)|X|X|
+|不註冊裝置的 MAM 支援|X|X|
+|完整抹除|X|X|
+|選擇性抹除 <br></br>**注意：** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|避免「另存新檔」|X||
+|目標應用程式組態|X||
+|支援多重身分識別|X||
+|可自訂樣式 |X|||
+|使用 Citrix mVPN 的隨選應用程式 VPN 連線|X|X| 
+|停用連絡人同步|X|X|
+|停用列印|X|X|
+|需要最低的應用程式版本|X|X|
+|需要最低的作業系統 (iOS 和 Android)|X|X|
+|需要最低的 Android 安全性修補程式版本 (僅 Android)|X|X|
+|需要最低的 Intune SDK for iOS (僅限 iOS)|X|X|
 
 ## <a name="next-steps"></a>接下來的步驟
 
 若要深入了解應用程式保護原則和 Intune，請參閱下列主題：
 
-  -  [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
+  - [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
   - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
   - [使用 SDK 讓應用程式進行行動應用程式管理](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

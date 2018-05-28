@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ ms.lasthandoff: 04/26/2018
 - 若是 Android，您也可以使用 [Android PSK 產生器](http://intunepskgenerator.johnathonb.com/)。
 - 您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
 - 若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者使用 [iOS PSK 行動設定產生器](http://intunepskgenerator.johnathonb.com/)。
+- PSK 需要 64 個十六進位數字的字串，或是 8 到 63 個可列印 ASCII 字元的複雜密碼。 不支援某些字元，例如星號 (*)。
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔
 您可以為 Android、Windows 或 EAP 型 Wi-Fi 設定檔建立包含預先共用金鑰的自訂設定檔。 若要使用 Azure 入口網站建立設定檔，請參閱[建立自訂裝置設定](custom-settings-configure.md)。 當您建立裝置設定檔時，請選擇 [自訂] 您的裝置平台。 請勿選取 Wi-Fi 設定檔。 當您選擇自訂時，請務必： 
@@ -42,16 +43,16 @@ ms.lasthandoff: 04/26/2018
 1. 輸入設定檔的名稱和描述。
 2. 新增具有下列屬性的新 OMA-URI 設定： 
 
-   a. 輸入此 Wi-Fi 網路設定的名稱
+   a. 輸入此 Wi-Fi 網路設定的名稱。
 
-   b. (選擇性) 輸入 OMA-URI 設定的描述，或者保留空白
+   b. (選擇性) 輸入 OMA-URI 設定的描述，或者保留空白。
 
-   c. 將 [資料類型] 設定為 **String**
+   c. 將 [資料類型] 設定為 **String**。
 
    d. **OMA-URI**：
 
-   - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > 開頭務必包含點號字元。

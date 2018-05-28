@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 與 Samsung Knox Standard 裝置限制設定 
 
@@ -47,6 +47,10 @@ ms.lasthandoff: 04/26/2018
 ## <a name="password"></a>密碼
 
 - **密碼** - 需要終端使用者輸入密碼才可存取該裝置。|是|是|
+
+    > [!NOTE]
+    > Samsung Knox 裝置在 MDM 註冊期間會自動要求 4 位數的 PIN。 原生 Android 裝置可能會自動要求 PIN，以符合條件式存取。
+
 - **密碼長度下限** - 輸入使用者必須設定的密碼長度下限 (介於 4 到 16 個字元)。
 - **沒有活動最久幾分鐘後鎖定螢幕** - 指定沒有任何活動幾分鐘之後，自動鎖定裝置。
 - **登入失敗幾次後即抹除裝置** - 指定抹除裝置前允許的登入失敗次數。
@@ -55,7 +59,7 @@ ms.lasthandoff: 04/26/2018
     - **裝置預設**
     - **低安全性生物識別**
     - **至少包含數字**
-    - **複雜數字** - 不允許重複或連續的數字，例如 '1111' 或 '1234'<sup>1</sup>
+    - **複雜數字**不允許重複或連續的數字 (例如 '1111' 或 '1234')。<sup>1</sup>
     - **至少包含字母**
     - **至少包含英數字元**
     - **至少包含英數字元和符號**
@@ -63,6 +67,9 @@ ms.lasthandoff: 04/26/2018
 - **指紋解除鎖定 (僅限 Samsung Knox)** - 允許使用指紋將支援的裝置解除鎖定。
 - **Smart Lock 與其他信任代理程式** - 可讓您控制相容 Android 裝置 (Samsung Knox Standard 5.0 及更新版本) 上的 Smart Lock 功能。 此電話功能 (有時稱為信任代理程式) 可讓您在裝置位於受信任的位置時，停用或略過裝置鎖定畫面密碼。 例如，當裝置連線到特定的藍牙裝置或靠近 NFC 標記時，就能使用此功能。 您可以使用此設定來防止使用者設定 Smart Lock。
 - **加密** - 需要加密裝置上的檔案。
+
+    > [!NOTE]
+    > 如果實施加密原則，Samsung Knox 裝置會要求使用者設定一個六個字元的複雜密碼來作為裝置密碼。
 
 <sup>1</sup> 在您將此設定指派至裝置之前，請確定會將這些裝置上的公司入口網站應用程式更新至最新版本。
 

@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -58,7 +58,8 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
 如果尚未這麼做，請將[行動裝置管理授權單位](mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
 2. **設定 Android for Work 繫結**<br>
     
-   a. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)，選取 [裝置註冊] > [Android 註冊] > [受控的 Google Play]。
+   a. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)，選取 [裝置註冊] > [Android 註冊] > [受控的 Google Play]。  如果您使用自訂的 Intune 管理員角色，則存取這個會需要組織讀取和更新的權限。
+   
    ![Android for Work 註冊畫面](./media/android-work-bind.png)
 
    b. 選取 [我同意] 來將權限授與 Microsoft，以[將使用者和裝置資訊傳送給 Google](data-intune-sends-to-google.md)。 

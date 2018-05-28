@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -159,7 +159,7 @@ Remember that you need to implement conditional access policies in addition to c
   - **符合規範**：關閉安全性功能
   - **不符合規範** (預設值)：開啟安全性功能
 
-  如果裝置沒有已指派的合規性原則，系統就會將此裝置視為不符合規範。 預設會將這些裝置標示為 [不符合規範]。 如果您使用條件式存取，建議您保留 [不符合規範] 預設設定。 如果使用者是因為沒有已指派的原則而不符合規範，公司入口網站就會列出 `No compliance policies have been assigned`。
+  如果裝置沒有已指派的合規性原則，系統就會將此裝置視為不符合規範。 預設會將這些裝置標示為 [符合規範]。 如果您使用條件式存取，建議您將設定變更為 [不符合規範]。 如果使用者是因為沒有已指派的原則而不符合規範，公司入口網站就會列出 `No compliance policies have been assigned`。
 
 - **加強的越獄偵測**已啟用時，此設定會使 iOS 裝置更頻繁地簽入 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
 

@@ -1,11 +1,11 @@
 ---
-title: 初期版本
+title: 舊版
 description: ''
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/09/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f3cbfad85e4a7a97d9bbf98e2ad239fda7cc29e4
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 62028232e4d6c9ab20a05480811978234ed0a3c1
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---may-2018"></a>Microsoft Intune 的初期版本 - 2018 年 5 月
 
-**初期版本**提供 Microsoft Intune 即將發行版本要推出的功能清單。 此資訊以有限的基礎提供，並可能有所變更。 請不要在貴公司以外的地方分享此資訊。 這裡列出的一些功能可能有截止日期，而且可能會延遲到未來的版本。 其他功能正在實驗 (測試) 中進行測試，以確保它們可供客戶使用。 如果您有任何問題或疑慮，請洽詢您的 Microsoft 產品群組連絡人。
+**舊版**提供 Microsoft Intune 即將發行版本要推出的功能清單。 此資訊以有限的基礎提供，並可能有所變更。 請不要在貴公司以外的地方分享此資訊。 這裡列出的一些功能可能有截止日期，而且可能會延遲到未來的版本。 其他功能正在實驗 (測試) 中進行測試，以確保它們可供客戶使用。 如果您有任何問題或疑慮，請洽詢您的 Microsoft 產品群組連絡人。
 
 此頁面會定期更新。 請回來查看其他更新。
 
@@ -40,8 +40,17 @@ ms.lasthandoff: 05/10/2018
 
 <!-- 1805 start -->
 
+### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680-eeready----"></a>Palo Alto Networks GLOBalProtect VPN 設定檔的支援 <!-- 1333680 eeready ! -->
+
+透過這項更新，您可以選擇 Palo Alto Networks GLOBalProtect 作為在 Intune 中 VPN 設定檔的 VPN 連線類型 ([裝置設定] > [設定檔] > [建立設定檔] > [設定檔類型] > [VPN])。 在此版本中，支援下列平台： 
+
+- iOS
+- Windows 10
+
 ### <a name="set-compliance-by-device-location----851881----"></a>依裝置位置設定合規性 <!-- 851881 ! -->
 在某些情況下，您可能會想要依網路連線將公司資源的存取限制於特定的位置。 您於未來將能依據裝置的 IP 位址建立合規性原則 ([裝置合規性] > [位置])。 如果裝置移出該 IP 範圍，則該裝置將會無法存取公司資源。
+
+適用對象：公司入口網站應用程式已更新的 6.0 和更新版本的 Android 裝置
 
 ### <a name="improved-troubleshooting-for-app-installation----928990---"></a>改善的應用程式安裝疑難排解 <!-- 928990 -->
 在受 Microsoft Intune MDM 管理的裝置上，應用程式安裝有時可能會失敗。 當這些應用程式安裝失敗時，使用者可能無法輕易地了解失敗的原因，或是對問題進行疑難排解。 我們正在推出應用程式疑難排解功能的公開預覽。 您將會在每個個別裝置的底下看到名為 [受控應用程式] 的新節點。 這會列出透過 Intune MDM 傳遞的應用程式。 在該節點中，您將會看到應用程式安裝狀態的清單。 如果您選取個別的應用程式，將會看到針對該特定應用程式的疑難排解檢視。 在疑難排解檢視中，您將會看到應用程式的端對端生命週期，例如針對該應用程式進行建立、修改、設為目標，以及傳遞至裝置的時間。 此外，如果應用程式安裝沒有成功，系統將會針對導致該錯誤的原因為您顯示錯誤碼及協助訊息。 
@@ -163,10 +172,6 @@ Intune 將能夠擷取商務用 Microsoft Store (WSfB) 應用程式的應用程�
 Intune 應用程式防護原則能提供建立全域預設原則的能力，以針對整個租用戶中的所有使用者快速啟用保護。
 
 <!-- the following are present prior to 1711 -->
-
-### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Azure Active Directory 網站可以要求使用 Intune Managed Browser 應用程式，並支援 Managed Browser (公開預覽) 的單一登入 <!-- 710595 -->   
-使用 Azure Active Directory (Azure AD) 時，您能夠限制行動裝置使用 Intune Managed Browser 應用程式存取網站。 在 Managed Browser 中，網站資料的安全受到保護，並會與使用者的個人資料區隔開來。 此外，針對受 Azure AD 保護的網站，Managed Browser 也支援單一登入功能。 當使用者登入 Managed Browser，或在裝置上搭配使用 Managed Browser 與受 Intune 管理的其他應用程式時，即可在不需輸入認證的情況下，讓 Managed Browser 存取受 Azure AD 保護的公司網站。 這項功能適用於 Outlook Web Access (OWA) 和 SharePoint Online 等網站，以及透過 Azure App Proxy 存取的內部網路資源等其他公司網站。
-
 
 ## <a name="notices"></a>通知
 

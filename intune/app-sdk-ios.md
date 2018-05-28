@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
 > [!NOTE]
-> 您可能想要先閱讀 [Intune App SDK 快速入門指南](app-sdk-get-started.md)一文，其中說明如何在每個支援的平台上進行整合準備。
+> 請考慮閱讀 [Intune App SDK 快速入門指南](app-sdk-get-started.md)一文，其中說明如何在每個支援的平台上進行整合準備。
 
 Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 **APP** 或 **MAM** 原則) 併入原生 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式。 IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
@@ -81,8 +81,8 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 1. **選項 1 (建議)**：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [內嵌的二進位檔案] 清單。
 
-    > [!NOTE]
-    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store) 以取得詳細資料。
+   > [!NOTE]
+   > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store) 以取得詳細資料。
 
 2. **選項 2**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
 
@@ -179,7 +179,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>與其他使用相同佈建設定檔簽署的應用程式共用 ADAL 權杖快取？**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>要與其他使用相同佈建設定檔簽署的應用程式共用 ADAL 權杖快取？
 
 如果您想要在使用相同佈建設定檔簽署的應用程式之間共用 ADAL 權杖，請遵循下列指示：
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] IntuneMAMConfigurator 工具可用來將 Intune 類型新增至啟用規則。 如果您現有的啟用規則使用預先定義的字串常數 (例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等)，那麼述詞語法可能變得相當複雜。 IntuneMAMConfigurator 工具也可用來在新增 Intune 類型時，將啟用規則從字串常數轉換成述詞字串。 IntuneMAMConfigurator 可在我們的 GitHub 儲存機制中找到。 
+> [!NOTE]
+> IntuneMAMConfigurator 工具可用來將 Intune 類型新增至啟用規則。 如果您現有的啟用規則使用預先定義的字串常數 (例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等)，那麼述詞語法可能變得相當複雜。 IntuneMAMConfigurator 工具也可用來在新增 Intune 類型時，將啟用規則從字串常數轉換成述詞字串。 IntuneMAMConfigurator 可在我們的 GitHub 儲存機制中找到。 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>啟用 iOS 應用程式的 MAM 目標設定

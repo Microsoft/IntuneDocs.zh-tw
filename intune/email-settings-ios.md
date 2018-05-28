@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>在執行 iOS 之裝置上的 Microsoft Intune 電子郵件設定檔設定 
 
@@ -35,8 +35,7 @@ ms.lasthandoff: 04/26/2018
     - 若選取了 [憑證]，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
 - **SSL** - 傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL)。
 - **S/MIME** - 使用 S/MIME 簽署傳送外寄電子郵件。
-    - 若選取了 [憑證]，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
-    - 如果您選擇 SCEP 憑證，請務必在裝置上安裝有效的個人資訊交換 (PFX) 憑證。
+    - 若選取 [憑證]，請選取先前建立用來驗證 Exchange 連線的 PKCS 憑證設定檔。
 - **要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
 - **允許將訊息移至其他電子郵件帳戶** - 其可讓使用者在其裝置上設定的不同帳戶之間，移動電子郵件訊息。
 - **允許從協力廠商應用程式傳送電子郵件** - 允許使用者選取此設定檔作為傳送電子郵件的預設帳戶，以及允許協力廠商的應用程式在原生電子郵件應用程式中開啟開啟電子郵件，例如，將檔案附加至電子郵件。

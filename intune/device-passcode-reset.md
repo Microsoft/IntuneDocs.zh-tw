@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="resetting-android-for-work-passcodes"></a>重設 Android for Work 密碼
 
-支援的 Android for Work 裝置會收到新的裝置解除鎖定密碼，或使用者的受控設定檔查問。 針對具有工作設定檔的 Android 7.0 或更新版本裝置，使用者會在完成註冊後立即收到啟用其重設密碼權杖的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
+支援的 Android for Work 裝置會收到新的受控設定檔解除鎖定密碼，或使用者的受控設定檔查問。 針對具有工作設定檔的 Android 7.0 或更新版本裝置，使用者會在完成註冊後立即收到啟用其重設密碼權杖的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
 
 ## <a name="resetting-ios-passcodes"></a>重設 iOS 密碼
 
