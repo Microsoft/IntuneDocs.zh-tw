@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456362"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取
 
@@ -62,7 +63,7 @@ Intune Managed Browser 支援從 [Microsoft Intune 應用程式合作夥伴](htt
     - **啟用允許清單或封鎖清單來限制 Managed Browser 可開啟的 URL**。 選取下列其中一個選項：
         - **允許 Managed Browser 只開啟下列 URL**。 指定 Managed Browser 可開啟的 URL 清單。
         - **禁止 Managed Browser 開啟下列 URL**。 指定 Managed Browser 無法開啟的 URL 清單。
-**注意：**您不能在同一個受管理的瀏覽器原則中同時包含允許和封鎖的 URL。
+**注意：** 您不能在同一個受管理的瀏覽器原則中同時包含允許和封鎖的 URL。
 如需您可指定的 URL 格式詳細資訊，請參閱本主題中的**適用於允許和封鎖 URL 的 URL 格式**。
 
 4.  完成之後，請選擇 [儲存原則]。
@@ -115,14 +116,14 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
 |                  URL                  |                     詳細資料                      |                                                相符項                                                |                                不符合                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              比對單一頁面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              比對單一頁面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | 比對所有以 www.contoso.com 開頭的 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              比對單一頁面               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              比對單一頁面               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | 比對所有以 www.contoso.com 開頭的 URL  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     比對 contoso.com 下的所有子網域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             比對單一資料夾              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             比對單一資料夾              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  使用連接埠號碼來比對單一頁面   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          比對單一且安全的頁面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    符合單一資料夾及所有子資料夾    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    符合單一資料夾及所有子資料夾    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - 以下是一些您無法指定的輸入範例：
 
@@ -130,11 +131,11 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - IP 位址
 

@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470792"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Lookout 與 Intune 整合疑難排解
 
@@ -36,7 +37,7 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 
 * 電子郵件：enterprisesupport@lookout.com
 * 登入 [MTP 主控台](http://aad.lookout.com)，並瀏覽至 [支援] 模組。
-* 移至：https://enterprise.support.lookout.com/hc/requests 並提出支援要求。
+* 移至：<https://enterprise.support.lookout.com/hc/requests> 並提出支援要求。
 
 ## <a name="unable-to-sign-in"></a>無法登入
 當 Azure AD 全域系統管理員使用者尚未接受 Lookout 的初始設定時，您會看到下列錯誤。
@@ -81,7 +82,7 @@ Lookout MTP 只允許已設定 Azure AD 群組的使用者存取服務。 若要
 如果新使用者屬於 Lookout MTP 註冊群組，則當 Azure AD 建立裝置與新使用者的關聯後，就會顯示該裝置。
 
 ## <a name="compliance-remediation-workflows"></a>合規性補救工作流程
-- [系統提示您在 Android 裝置上安裝 Lookout for Work]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [系統提示您在 Android 裝置上安裝 Lookout for Work](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [您必須解決 Lookout for Work 在 iOS 裝置上找到的威脅](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
