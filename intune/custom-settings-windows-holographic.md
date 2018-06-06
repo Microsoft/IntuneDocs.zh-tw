@@ -13,10 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 7272e8e088ae2c2ecad1756233281c42a80a279b
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32328073"
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>在 Intune 中為執行 Windows Holographic for Business 的裝置自訂裝置設定
 

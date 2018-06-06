@@ -7,7 +7,7 @@
 
 # [開始使用](get-started/get-started.md)
 ## [設定 Intune](/intune/setup-steps?toc=/intune-classic/toc.json)
-### 必要條件
+### 先決條件
 #### [支援的裝置](/intune/supported-devices-browsers?toc=/intune-classic/toc.json)
 #### [網路使用量](/intune/network-bandwidth-use?toc=/intune-classic/toc.json)
 ### [登入 Intune](/intune/account-sign-up?toc=/intune-classic/toc.json)
@@ -17,9 +17,8 @@
 ### [組織使用者與裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [部署原則和應用程式](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [自訂公司入口網站](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [註冊裝置](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [設定後工作](get-started/post-configuration-tasks.md)
-## 接下來的步驟
+## 後續步驟
 ### [防止公司資料從 Office 365 行動應用程式外洩](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [使用資料加密保護公司資料](get-started/protect-data-encryption.md)
 ### [將行動應用程式發佈給您的使用者](get-started/publish-mobile-apps-to-users.md)
@@ -102,7 +101,6 @@
 #### [還原受管理 iOS 裝置](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android 和 Samsung KNOX 設定](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [使用自訂原則建立包含預先共用金鑰的 Wi-Fi 設定檔](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [使用自訂原則來建立 Android 裝置的個別應用程式 VPN 設定檔](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work 設定](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1 設定](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [淘汰裝置](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [新增應用程式](deploy-use/add-apps.md)
-### [為已註冊的裝置新增應用程式](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [側載 Windows 應用程式](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [部署應用程式](deploy-use/deploy-apps.md)
-### [將應用程式部署到裝置和電腦](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [將應用程式部署至 Android for Work 裝置](deploy-use/android-for-work-apps.md)
-### [監視應用程式](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [管理大量採購應用程式](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [管理大量採購的 iOS 應用程式](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [管理大量採購的 Windows 應用程式](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## 設定應用程式
 ### [更新應用程式](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [搭配以應用程式為基礎的 CA 使用應用程式](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [封鎖沒有 ADAL 的應用程式](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保護網路存取權 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [根據裝置、網路和應用程式風險保護存取](deploy-use/mobile-threat-defense.md)
 #### [Lookout Mobile Threat Defense 連接器](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [驗證應用程式保護原則](deploy-use/validate-mobile-application-management.md)
 #### [監視應用程式保護原則的合規性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [管理 iOS 應用程式之間的資料傳輸](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [MAM 原則的 Intune 管理主控台](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [準備 MAM 的企業營運應用程式](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## 淘汰應用程式與資料
 ### [使用完整或選擇性抹除](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [淘汰應用程式](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [抹除受管理的公司應用程式資料](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [變更 MDM 授權單位](deploy-use/change-mdm-authority.md)

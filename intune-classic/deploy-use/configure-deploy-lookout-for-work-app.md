@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569386"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>設定及部署 Lookout for Work 應用程式
 
@@ -45,21 +46,21 @@ ms.lasthandoff: 04/16/2018
 
 5. 若要將應用程式部署給使用者，請選取 Lookout for Work 應用程式，然後選擇 [管理部署]。
 
-   您必須選取加入 Lookout MTP 主控台中 「Enrollment Management」 (註冊管理) 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout MTP](configure-deploy-lookout-for-work-app.md) 一節中的步驟 3。
+   您必須選取新增至 Lookout MTP 主控台中 [註冊管理] 選項的相同使用者。  如需將使用者群組新增至 Lookout MTP 的資訊，請參閱[設定訂用帳戶使用 Lookout MTP](configure-deploy-lookout-for-work-app.md) 一節中的步驟 3。
 
    >[!IMPORTANT]
    > Intune 應用程式部署精靈未發現 Azure AD 使用者群組，並會改用 Intune 使用者群組。 因此您必須建立以 Lookout MTP 主控台中註冊之 Azure AD 使用者群組為基礎的 Intune 使用者群組，如[這個主題](plan-your-user-and-device-groups.md)中所述。
 
-6. 選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
+6. 選擇 [必要安裝] 選項，要求必須在使用者的裝置上安裝 Lookout 應用程式。
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (Lookout 應用程式的企業簽章版本)
 
 1. 確定您的裝置上已設定 **iOS 管理**。 如需如何設定裝置以進行 iOS 管理的指示，請參閱[設定 iOS 和 Mac 裝置管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
-2. **重新簽署** Lookout for Work iOS 應用程式。 Lookout 會將其 Lookout for Work iOS 應用程式散發到 iOS App Store 之外。 **發佈應用程式之前**，您必須使用 iOS 企業開發人員憑證重新簽署應用程式。 如需重新簽署 Lookout for Work iOS 應用程式的詳細指示，請參閱 Lookout 網站上的 [Lookout for Work iOS App Re-Signing Process](https://personal.support.lookout.com/hc/articles/114094038714)。
+2. **重新簽署** Lookout for Work iOS 應用程式。 Lookout 會在 iOS App Store 外部發佈其 Lookout for Work iOS 應用程式。 **發佈應用程式之前**，您必須使用 iOS 企業開發人員憑證重新簽署應用程式。 如需重新簽署 Lookout for Work iOS 應用程式的詳細指示，請參閱 Lookout 網站上的 [Lookout for Work iOS App Re-Signing Process](https://personal.support.lookout.com/hc/articles/114094038714)。
 
 3. 執行下列動作，啟用 iOS 使用者的 Azure Active Directory 驗證：
-   1.  登入 [Azure Active Directory 管理入口網站](https://manage.windowsazure.com)，然後巡覽至應用程式頁面。
+   1.  登入 [Azure Active Directory 管理入口網站](https://manage.windowsazure.com)，並瀏覽至應用程式頁面。
    2.  新增 **Lookout for Work iOS 應用程式**作為**原生用戶端應用程式**。
    ![顯示 [原生用戶端應用程式] 選項的 [新增應用程式] 對話方塊螢幕擷取畫面](../media/mtp/aad-add-app.png)
    3. 以您簽署 IPA 時所選取的客戶配套識別碼取代 **com.lookout.enterprise.yourcompanyname**。
@@ -83,14 +84,14 @@ ms.lasthandoff: 04/16/2018
    >[!IMPORTANT]
    > Intune 應用程式部署精靈無法察覺 Azure AD 使用者群組，而會改用 Intune 使用者群組，因此您必須依據 Lookout 主控台中已註冊的 Azure AD 使用者群組，來建立一個 Intune 使用者群組 (如[本主題](plan-your-user-and-device-groups.md)中所述)。
 
-   選擇 [必要安裝] 選項，要求必須在使用者裝置上安裝 Lookout 應用程式。
+   選擇 [必要安裝] 選項，要求必須在使用者的裝置上安裝 Lookout 應用程式。
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在裝置上開啟已部署的應用程式時，會發生什麼事
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟用應用程式，並選擇 [使用 Azure Active Directory 登入] 選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在裝置上開啟已部署的應用程式時，會發生什麼事 
+當使用者在裝置上開啟 Lookout for Work 時，系統會提示他們啟用應用程式，並選擇 [使用 Azure Active Directory 登入] 選項。 您可以在下列主題中找到使用者流程的詳細逐步解說：
 
 * [系統提示您在 Android 裝置上安裝 Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [您必須解決 Lookout for Work 在 Android 裝置上找到的威脅](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 * [在 Intune 中建立 Lookout 裝置合規性原則](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
