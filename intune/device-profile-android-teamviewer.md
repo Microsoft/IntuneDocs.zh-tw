@@ -1,23 +1,24 @@
 ---
-title: "在 Microsoft Intune - Azure 中遠端管理裝置 | Microsoft Docs"
-description: "檢視所需的角色以使用 TeamViewer、如何安裝 TeamViewer 連接器、在 Azure 入口網站使用 Microsoft Intune 來遠端管理裝置的逐步指示"
-keywords: 
+title: 在 Microsoft Intune - Azure 中遠端管理裝置 | Microsoft Docs
+description: 檢視所需的角色以使用 TeamViewer、如何安裝 TeamViewer 連接器、在 Azure 入口網站使用 Microsoft Intune 來遠端管理裝置的逐步指示
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744630"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 來遠端管理 Intune 裝置
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-- 使用支援的裝置。 Intune 管理的 Android 和 Windows 裝置支援遠端管理。 TeamViewer 可能不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。針對其支援性，請參閱 [TeamViewer](https://www.teamviewer.com) 以取得更新。
+- 使用支援的裝置。 Intune 受控的 Android、Windows、iOS 和 macOS 裝置支援遠端管理。 TeamViewer 可能不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。針對其支援性，請參閱 [TeamViewer](https://www.teamviewer.com) 以取得更新。
 
 - Azure 入口網站中的 Intune 系統管理員必須有下列 [Intune 角色](role-based-access-control.md)：  
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 03/05/2018
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
 2. 在 [Microsoft Intune] 中，選取 [裝置]，然後選取 [所有裝置]。
 3. 從清單中，選取您想要遠端管理的裝置。 在裝置屬性中，選取 [新的遠端協助工作階段]。
-4. 當 Intune 連線至 TeamViewer 服務之後，您將會看到裝置的一些相關資訊。 [連線] 以啟動遠端工作階段。
+4. 當 Intune 連線至 TeamViewer 服務之後，您將會看到一些裝置的相關資訊。 [連線] 以啟動遠端工作階段。
 
 ![使用 TeamViewer 從遠端管理 Android 裝置：範例](./media/android-teamviewer.png)
 

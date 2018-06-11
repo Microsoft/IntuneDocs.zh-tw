@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703310"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 05/17/2018
 
 如果您需要側載應用程式，但您已指派 Windows 8.1 公司入口網站，而未使用 Symantec 憑證來簽署，請遵循本文上述幾節的步驟完成升級。
 
-如果您需要側載應用程式，但您已使用 Symantec 程式碼簽署憑證來簽署及指派 Windows 8.1 公司入口網站，請遵循下一節的步驟。  
+如果您需要側載應用程式，但您已使用 Symantec 程式碼簽署憑證來簽署及指派 Windows 8.1 公司入口網站應用程式，請遵循下一節中的步驟。
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我已簽署及側載的 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式，升級至 Windows 10 公司入口網站應用程式？
 我們建議的移轉路徑是將指派動作設為 [解除安裝]，以刪除 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式的現有指派。 選取此設定之後，您即可正常指派 Windows 10 公司入口網站應用程式。  

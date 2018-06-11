@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744664"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取啟用 Windows Defender ATP
 
@@ -51,19 +52,19 @@ Windows Defender ATP 可以解決這類的安全性事件。 Windows Defender �
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置合規性] > [Windows Defender ATP] > [開啟 Windows Defender 進階威脅防護管理員主控台]。
+3. 選取 [裝置合規性] > [Windows Defender ATP] > [開啟 Windows Defender 資訊安全中心]。
 
-    ![替代文字](./media/atp-device-compliance-open-windows-defender.png)
+    ![選取以開啟 [Windows Defender 資訊安全中心]](./media/atp-device-compliance-open-windows-defender.png)
 
 4. 在 [Windows Defender 資訊安全中心] 中：
     1. 選取 [設定] > [進階功能]。
     2. 針對 [Microsoft Intune 連線]，選擇 [開啟]：
 
-        ![替代文字](./media/atp-security-center-intune-toggle.png)
+        ![啟用 Intune 的連線](./media/atp-security-center-intune-toggle.png)
 
     3. 選取 [儲存喜好設定]。
 
-5. 返回 Intune，[裝置合規性] > [Windows Defender ATP]。 將 [將 Windows 10.0.15063+ 裝置連線至 Windows Defender 緊接威脅防護] 設定為 [開啟]。
+5. 返回 Intune，[裝置合規性] > [Windows Defender ATP]。 將 [將 Windows 裝置 10.0.15063 版和更高版本連線至 Windows Defender ATP] 設定為 [開啟]。
 6. 選取 [儲存]。
 
 通常您只需執行此工作一次即可。 因此，如果您的 Intune 資源中已啟用 ATP，便無需再次執行它。
@@ -115,9 +116,9 @@ Windows Defender 包含安裝在裝置上的上線設定套件。 安裝之後�
 2. 選取 [裝置合規性] > [原則] > [建立原則]。
 3. 輸入 [名稱] 和 [描述]。
 4. 在 [平台] 中，選取 [Windows 10 及更新版本]。
-5. 在 [裝置健康情況] 設定中，將 [要求裝置不高於裝置威脅層級] 設定為您偏好的層級：
+5. 在 [Windows Defender ATP] 設定中，將 [要求裝置不高於電腦風險分數] 設定為您偏好的層級：
 
-  - **受保護**︰這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
+  - **清除**︰這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
   - **低**︰裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅層級的裝置，將會不符合規範。
   - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
   - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置，都會被評估為符合規範。

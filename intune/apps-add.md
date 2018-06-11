@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744987"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -153,6 +154,9 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune 自動新增的應用程式
 
 原本，Intune 包含許多您可以快速指派的內建應用程式。 根據 Intune 客戶的意見反應，我們移除了此清單，而且也不再顯示內建應用程式。 不過，如果您已指派任何內建應用程式，那些應用程式仍會顯示在應用程式清單中。 若有需要，您可以繼續指派這些應用程式。
+
+> [!NOTE]
+> 對於安裝所需的非企業營運應用程式，假設未偵測到應用程式且應用程式的安裝狀態為「安裝擱置中」，Intune 將嘗試在裝置簽入時傳送安裝命令來安裝應用程式。
 
 ## <a name="installing-updating-or-removing-required-apps"></a>安裝、更新或移除必要的應用程式
 

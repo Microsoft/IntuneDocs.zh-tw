@@ -1,11 +1,11 @@
 ---
 title: 搭配 Microsoft Intune 使用 SCEP 憑證 - Azure | Microsoft Docs
-description: 若要在 Microsoft Intune 中使用 SCEP 憑證，請設定您的內部部署 AD 網域、建立憑證授權單位、設定 NDES 伺服器，並安裝 Intune 憑證連接器。 接著，建立 SCEP 憑證設定檔，然後將此設定檔指派給群組。
+description: 若要在 Microsoft Intune 中使用 SCEP 憑證，請設定您的內部部署 AD 網域、建立憑證授權單位、設定 NDES 伺服器，並安裝 Intune 憑證連接器。 接著，建立 SCEP 憑證設定檔，然後將此設定檔指派給群組。 此外，請參閱不同的事件識別碼與其描述，以及 Intune 連接器服務的診斷碼。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745021"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -407,3 +408,54 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     > 針對 iOS，如果您部署多個使用相同憑證設定檔的資源設定檔，就應該會在管理設定檔中看到多個憑證複本。
     
 如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+
+## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune 連接器事件和診斷碼
+
+從 6.1803.x.x 版開始，Intune 連接器服務會在 [事件檢視器] ([應用程式及服務記錄檔] > [Microsoft Intune 連接器]) 中記錄事件。 您可以使用這些事件來協助對 Intune 連接器設定中的潛在問題進行疑難排解。 這些事件會記錄作業的成功與失敗，還會包含診斷碼及訊息，以協助 IT 系統管理員進行疑難排解。
+
+### <a name="event-ids-and-descriptions"></a>事件識別碼和描述
+
+> [!NOTE]
+> 如需每個事件相關診斷碼的詳細資料，請使用**診斷碼**資料表 (在本文中)。
+
+| 事件識別碼      | 事件名稱    | 事件描述 | 相關的診斷碼 |
+| ------------- | ------------- | -------------     | -------------            |
+| 10010 | StartedConnectorService  | 已啟動連接器服務 | 0x00000000、0x0FFFFFFF |
+| 10020 | StoppedConnectorService  | 已停止連接器服務 | 0x00000000、0x0FFFFFFF |
+| 10100 | CertificateRenewal_Success  | 已成功更新連接器註冊憑證 | 0x00000000、0x0FFFFFFF |
+| 10102 | CertificateRenewal_Failure  | 連接器註冊憑證無法更新。 請重新安裝連接器。 | 0x00000000、0x00000405、0x0FFFFFFF |
+| 10302 | RetrieveCertificate_Error  | 無法從登錄中擷取連接器註冊憑證。 請檢閱與此事件相關之憑證指紋的事件詳細資料。 | 0x00000000、0x00000404、0x0FFFFFFF |
+| 10301 | RetrieveCertificate_Warning  | 檢查事件詳細資料中的診斷資訊。 | 0x00000000、0x00000403、0x0FFFFFFF |
+| 20100 | PkcsCertIssue_Success  | 已成功發行 PKCS 憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證範本名稱和憑證指紋的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
+| 20102 | PkcsCertIssue_Failure  | 無法發行 PKCS 憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證範本名稱和憑證指紋的事件詳細資料。 | 0x00000000、0x00000400、0x00000401、0x0FFFFFFF |
+| 20200 | RevokeCert_Success  | 已成功撤銷憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證序號的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
+| 20202 | RevokeCert_Failure | 無法撤銷憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證序號的事件詳細資料。 如需額外資訊，請參閱 NDES SVC 記錄檔。   | 0x00000000、0x00000402、0x0FFFFFFF |
+| 20300 | Download_Success | 已成功下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。  | 0x00000000、0x0FFFFFFF |
+| 20302 | Download_Failure | 無法下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
+| 20400 | Upload_Success | 已成功上傳憑證的要求或撤銷資料。 請檢閱上傳詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
+| 20402 | Upload_Failure | 無法上傳憑證的要求或撤銷資料。 請檢閱事件詳細資料 > 上傳狀態，以判斷失敗點。| 0x00000000、0x0FFFFFFF |
+| 20500 | CRPVerifyMetric_Success  | 憑證登錄點已成功驗證用戶端挑戰 | 0x00000000、0x0FFFFFFF |
+| 20501 | CRPVerifyMetric_Warning  | 憑證登錄點已完成，但拒絕要求。 請參閱診斷碼和訊息，以取得詳細資料。 | 0x00000000、0x00000411、0x0FFFFFFF |
+| 20502 | CRPVerifyMetric_Failure  | 憑證登錄點無法驗證用戶端挑戰。 請參閱診斷碼和訊息，以取得詳細資料。 請參閱對應至挑戰之裝置識別碼的事件訊息詳細資料。 | 0x00000000、0x00000408、0x00000409、0x00000410、0x0FFFFFFF |
+| 20600 | CRPNotifyMetric_Success  | 憑證登錄點已成功完成通知程序，並已將憑證傳送到用戶端裝置。 | 0x00000000、0x0FFFFFFF |
+| 20602 | CRPNotifyMetric_Failure  | 憑證登錄點無法完成通知程序。 請參閱事件訊息詳細資料，以取得要求的相關資訊。 請驗證 NDES 伺服器與 CA 之間的連線。 | 0x00000000、0x0FFFFFFF |
+
+### <a name="diagnostic-codes"></a>診斷碼
+
+| 診斷碼 | 診斷名稱 | 診斷訊息 |
+| -------------   | -------------   | -------------      |
+| 0x00000000 | 成功  | 成功 |
+| 0x00000400 | PKCS_Issue_CA_Unavailable  | 憑證授權單位無效或無法連線。 請確認憑證授權單位可用，且您的伺服器可以與其通訊。 |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
+| 0x00000402 | RevokeCert_AccessDenied  | 指定的帳戶無權撤銷來自 CA 的憑證。 請參閱事件訊息詳細資料中的 CA 名稱欄位，以判斷發行的 CA。  |
+| 0x00000403 | CertThumbprint_NotFound  | 找不到符合您輸入的憑證。 請註冊憑證連接器，然後再試一次。 |
+| 0x00000404 | Certificate_NotFound  | 找不到符合所提供輸入的憑證。 請重新註冊憑證連接器，然後再試一次。 |
+| 0x00000405 | Certificate_Expired  | 憑證已過期。 請重新註冊憑證連接器以更新憑證，然後再試一次。 |
+| 0x00000408 | CRPSCEPCert_NotFound  | 找不到 CRP 加密憑證。 請確認 NDES 和 Intune 連接器已正確設定。 |
+| 0x00000409 | CRPSCEPSigningCert_NotFound  | 無法擷取簽署憑證。 請確認 Intune 連接器服務已設定正確，且 Intune 連接器服務正在執行。 另請確認憑證下載事件已成功。 |
+| 0x00000410 | CRPSCEPDeserialize_Failed  | 無法還原序列化 SCEP 挑戰要求。 請確認 NDES 和 Intune 連接器已正確設定。 |
+| 0x00000411 | CRPSCEPChallenge_Expired  | 由於憑證挑戰過期，已拒絕要求。 用戶端裝置可以在從管理伺服器取得新挑戰之後重試。 |
+| 0x0FFFFFFFF | Unknown_Error  | 我們無法完成您的要求，因為發生伺服器端錯誤。 請再試一次。 |
+
+## <a name="next-steps"></a>接下來的步驟
+[使用 PKCS 憑證](certficates-pfx-configure.md)，或[從 Symantec PKI Manager Web 服務發行 PKCS 憑證](certificates-symantec-configure.md)。

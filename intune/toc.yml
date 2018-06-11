@@ -126,7 +126,7 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路設定
+            - name: 網路組態
               href: network-bandwidth-use.md
         - name: 登入 Intune
           href: account-sign-up.md
@@ -148,7 +148,7 @@
         - name: 註冊選項
           href: enrollment-options.md
           items:
-            - name: 條款及條件
+            - name: Terms and conditions
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: 設定 Kiosk 設定
+          href: kiosk-settings.md
         - name: 設定電子郵件設定
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 和 Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Education
+          items:
+            - name: iOS 共用裝置
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: 設定 Windows 10 版本升級設定
           href: edition-upgrade-configure-windows-10.md
-        - name: 設定 Windows 10 教育版設定
-          href: education-settings-configure.md
-        - name: 設定 iOS 教育共用裝置
-          href: education-settings-configure-ios-shared.md
         - name: 設定 iOS 更新原則
           href: software-updates-ios.md
         - name: 設定憑證
@@ -455,9 +459,11 @@
           href: compliance-policy-create-mac-os.md
         - name: 建立 Windows 原則
           href: compliance-policy-create-windows.md
+        - name: 依據位置的原則
+          href: use-network-locations.md
         - name: 評估原則
           href: policy-evaluate.md
-        - name: 不符合標準時所採取的動作
+        - name: 處理不相容狀況的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -739,5 +745,5 @@
           href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: 資源
   items:
-    - name: 字彙
+    - name: 詞彙
       href: intune-glossary.md

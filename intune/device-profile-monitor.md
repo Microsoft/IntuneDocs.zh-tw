@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744783"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視裝置設定檔
 
@@ -41,19 +42,27 @@ Intune 在 Azure 入口網站中包含了一些功能，以協助監視及管理
 1. 選取現有的設定檔。 例如，選取 macOS 設定檔。
 2. 選取 [概觀] 索引標籤。
 
-    圖形化圖表顯示指派給特定裝置設定檔的裝置數量。 例如，如果組態裝置設定檔套用到 macOS 裝置，圖表就會列出 macOS 裝置的計數。
+    頂端的圖形化圖表顯示指派給特定裝置設定檔的裝置數量。 例如，如果組態裝置設定檔套用到 macOS 裝置，圖表就會列出 macOS 裝置的計數。
 
     它也會顯示指派相同設定檔之其他平台的裝置數目。 例如，它會顯示非 macOS 裝置的計數。
 
     ![檢視指派給裝置設定檔的裝置數目](./media/device-configuration-profile-graphical-chart.png)
 
-3. 選取圖形化圖表中的圓形。 隨即開啟 [裝置狀態]。
+    底端的圖形化圖表顯示指派給特定裝置設定檔的使用者數目。 例如，如果設定裝置設定檔套用到 macOS 使用者，圖表就會列出 macOS 使用者的計數。
+
+3. 選取頂端圖形化圖表中的圓形。 隨即開啟 [裝置狀態]。
 
     其中列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 另請注意，它只會列出特定平台的裝置 (例如 macOS)。
 
-    關閉裝置狀態詳細資料。
+    關閉 [裝置狀態] 詳細資料。
 
-4. 在設定檔的內容中 ([設定檔] > 選取特定的設定檔)，您也可以變更現有的內容：
+4. 選取底端圖形化圖表中的圓形。 隨即開啟 [使用者狀態]。 
+
+    其中列出指派給設定檔的使用者，而且它會顯示設定檔是否已成功部署。 另請注意，它只會列出特定平台 (例如 macOS) 的使用者。
+
+    關閉 [使用者狀態] 詳細資料。
+
+5. 回到 [設定檔] 清單中，選取一個特定的設定檔。 您也可以變更現有的屬性：
   - **內容**：變更名稱或更新現有設定。
   - **指派**：包含或排除應該套用原則的裝置。 選擇 [選取的群組] 來選擇特定群組。
   - **裝置狀態**：列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 您可以選取特定的裝置以取得更多詳細資料，包括安裝的應用程式。

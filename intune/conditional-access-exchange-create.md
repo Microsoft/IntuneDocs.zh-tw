@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744766"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -37,9 +38,9 @@ ms.lasthandoff: 04/16/2018
 - 您必須使用 [Exchange Active Sync 內部部署 Exchange Connector](exchange-connector-install.md)，將 Intune 連線至內部部署 Exchange。
 
     >[!IMPORTANT]
-    >內部部署 Exchange Connector 僅適用於您的 Intune 租用戶，無法搭配任何其他租用戶使用。 您也應該確定適用於租用戶的 Exchange 連接器**只安裝在一部電腦上**。
+    >內部部署 Exchange Connector 僅適用於您的 Intune 租用戶，無法搭配任何其他租用戶使用。 Intune 現在支援每個訂閱有多個內部部署 Exchange 連接器。 如果您有多個內部部署 Exchange 組織，則可以為每個 Exchange 組織設定個別的連接器。
 
-- 連接器可以安裝在任何電腦上，只要該電腦能與 Exchange 伺服器通訊。
+- 內部部署 Exchange 組織的連接器可以安裝在任何電腦上，只要該電腦能與 Exchange 伺服器通訊。
 
 - 此連接器支援 **Exchange CAS 環境**。 想要的話，在技術上您可以將連接器直接安裝在 Exchange CAS 伺服器上，但不建議這麼做，因為這會增加伺服器負載。 設定連接器時，您必須將它設定成可以與其中一部 Exchange CAS 伺服器通訊。
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
     - 已向 Intune **註冊**，或為加入網域的電腦。
     - 已在 **Azure Active Directory** 中註冊。 此外，必須向 Azure Active Directory 註冊用戶端 Exchange ActiveSync 識別碼。
 <br></br>
-- Intune 和 Office 365 客戶將會自動啟用 AAD DRS。 已部署 ADFS 裝置註冊服務的客戶不會在其內部部署 Active Directory 中看到已註冊的裝置。 **這不適用於 Windows 電腦和 Windows Phone 裝置**。
+- Intune 和 Office 365 客戶會自動啟用 Azure AD 裝置註冊服務 (DRS)。 已部署 ADFS 裝置註冊服務的客戶不會在其內部部署 Active Directory 中看到已註冊的裝置。 **這不適用於 Windows 電腦和 Windows Phone 裝置**。
 
 - 「符合」部署到該裝置的合規性原則。
 
@@ -89,7 +90,7 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 1. 在 [Exchange 內部部署存取] 窗格中選擇 [是]，以啟用 Exchange 內部部署存取控制。
 
     > [!NOTE]
-    > 若未設定 Exchange Active Sync 內部部署連接器，則會停用此選項。  您必須先安裝及設定此連接器，才能為 Exchange 內部部署啟用條件式存取。 如需詳細資訊，請參閱[安裝 Intune 內部部署 Exchange 連接器](exchange-connector-install.md)
+    > 若未設定 Exchange Active Sync 內部部署連接器，則會停用此選項。  您必須至少先安裝及設定一個連接器，才能為 Exchange 內部部署啟用條件式存取。 如需詳細資訊，請參閱[安裝 Intune 內部部署 Exchange 連接器](exchange-connector-install.md)
 
 1. 從 [指派] 下選擇 [包含的群組]。  請使用應套用條件式存取的安全性使用者群組。 此動作會需要使用者向 Intune 註冊其裝置，而且必須符合相容性設定檔的規範。
 

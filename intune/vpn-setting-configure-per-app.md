@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753887"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
 您可以指定哪些受控應用程式可以在受 Intune 管理的 iOS 裝置上使用您的虛擬私人網路 (VPN)。 您在 Intune 中建立個別應用程式 VPN 後，使用者存取公司文件時，就會自動透過您的 VPN 連線。
 
-下列提供者目前推出個別應用程式 VPN： 
+下列提供者目前推出個別應用程式 VPN：
 
- - 檢查點遠端存取 VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse 連線安全
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>個別應用程式 VPN 的必要條件
+
+> [!IMPORTANT]
+> 您的 VPN 廠商對於個別應用程式 VPN 可能會有其他特定需求，例如特定硬體或授權。 請務必查閱其文件，並在 Intune 中設定個別應用程式 VPN 之前符合這些必要條件。
 
 為證明身分識別，VPN 伺服器會出示必須接受的憑證，而且裝置不會提示。 為確保自動核准憑證，請建立內含憑證授權單位 (CA) 核發之 VPN 伺服器根憑證的受信任憑證設定檔。 
 
@@ -162,14 +167,15 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 
 ### <a name="before-you-attempt-to-connect"></a>嘗試連線前
 
- - 請先確定您執行 iOS 7 或更新版本。
+ - 請先確定您正在執行 iOS 9 或更新版本。
  - 請確定您將上述提到的「所有」原則部署都到相同的使用者群組。 若未如實執行，個別應用程式 VPN 體驗一定會中斷。  
  - 請確定您已安裝支援的協力廠商 VPN 應用程式。 支援下列 VPN 應用程式：
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用個別應用程式 VPN 來連線
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,18 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b31c9d2028bcde6926f1bf1169de85d2f09efd82
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717973"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-當您已經將應用程式新增到 Microsoft Intune 之後，就可以將該應用程式指派給使用者和裝置。
-
-不論裝置是否由 Intune 管理，您都可以將應用程式指派給該裝置。 
+當您已[新增應用程式](apps-add.md)到 Microsoft Intune 之後，就可以將該應用程式指派給使用者和裝置。 請務必注意不論裝置是否由 Intune 管理，您都可以將應用程式指派給該裝置。 
 
 下表列出指派應用程式給使用者和裝置的各種選項：
 
@@ -117,7 +116,8 @@ ms.lasthandoff: 05/17/2018
 |使用者可用而無需註冊|裝置解除安裝|解除安裝且可用而無需註冊。<br><br>如果使用者未從公司入口網站安裝應用程式，會接受解除安裝。<br><br>如果使用者從公司入口網站安裝應用程式，則安裝將優先於解除安裝。|
 
 > [!NOTE]
-> 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。
+> 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。<br><br>
+> 以必要用途為目標的 iOS 市集應用程式 (不是 iOS VPP 應用程式) 會在裝置簽入時於裝置上強制執行，而且也會顯示在公司入口網站應用程式中。
 
 ## <a name="next-steps"></a>接下來的步驟
 

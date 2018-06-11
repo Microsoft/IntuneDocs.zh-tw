@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 356997859942443ace0749ece8954bf609f9d91e
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703293"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 重設 Windows 裝置的密碼
 
@@ -25,10 +26,10 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- Windows 10 Creators Update 和更新版本 (已聯結 Azure AD)
+- 執行 Creators Update 和更新版本 (已聯結 Azure AD) 的 Windows 10 行動裝置版。
 
 以下是**不支援**的平台：
-- Windows Phone
+- Windows
 - iOS
 - macOS
 - Android

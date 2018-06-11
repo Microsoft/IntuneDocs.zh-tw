@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744936"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune 中適用於 Windows 10 (和更新版本) 的 Endpoint Protection 設定
 
@@ -300,15 +301,21 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 - **鎖定畫面閒置，直到螢幕保護裝置啟動的分鐘數**：定義互動式桌面登入畫面閒置，直到螢幕保護裝置啟動的最長分鐘數。
 - **需要 CTRL+ALT+DEL 才能登入**：在使用者登入之前需要按下 CTRL+ALT+DEL。
-- **智慧卡移除行為**：判斷從智慧卡讀卡機中移除登入使用者的智慧卡時會發生的情況。
-[LocalPoliciesSecurity 選項](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)提供更多詳細資料。
+- **智慧卡移除行為**：判斷從智慧卡讀卡機中移除登入使用者的智慧卡時會發生的情況。 選項包括：
+
+  - **鎖定工作站**：移除智慧卡時鎖定工作站。 此選項可讓使用者離開該區域、攜帶智慧卡，並且仍然維持受保護的工作階段。
+  - **強制登出**：移除智慧卡時，使用者會自動登出。
+  - **在遠端桌面服務工作階段時中斷連線**：移除智慧卡會中斷工作階段的連線，但無需登出使用者。 此選項可讓使用者插入智慧卡並在稍後繼續工作階段，或在另一部配備智慧卡讀取器的電腦上，而不需要再次登入。 如果工作階段是本機，則此原則的功能與鎖定工作站相同。
+
+    [LocalPoliciesSecurity 選項](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)提供更多詳細資料。
 
 #### <a name="display"></a>顯示
 
 - **鎖定螢幕上的使用者資訊**：設定在工作階段鎖定時顯示的使用者資訊。 如果未設定，則會顯示使用者顯示名稱、網域及使用者名稱。
+  - **未設定**：使用者顯示名稱、網域及使用者名稱
+  - **使用者顯示名稱、網域及使用者名稱**
   - **僅使用者顯示名稱**
   - **不顯示使用者資訊**
-  - **未設定**：使用者顯示名稱、網域及使用者名稱
 - **隱藏上次登入的使用者**：不顯示在此裝置上登入的最後一個人員名稱。
 - **在登入時隱藏使用者名稱**：在輸入認證之後且顯示裝置的桌面之前，不要顯示登入此裝置之人員的使用者名稱。
 - **登入訊息標題**：設定給嘗試登入之使用者的訊息標題。
@@ -316,13 +323,13 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 ### <a name="network-access-and-security"></a>網路存取與安全性
 
-- **具名管道和共用的匿名存取**：限制共用和具名管道設定的匿名存取。 適用於可以匿名存取的設定。
-- **SAM 帳戶的匿名列舉**：允許匿名使用者列舉 SAM 帳戶。 Windows 允許匿名使用者列舉網域帳戶和網路共用的名稱。
-- **SAM 帳戶和共用的匿名列舉**：可以封鎖匿名 SAM 帳戶和共用的匿名列舉。 Windows 允許匿名使用者列舉網域帳戶和網路共用的名稱。
-- **密碼變更時儲存的 LAN Manager 雜湊值**：在下次密碼變更時，選擇是否要儲存新密碼的 LAN Manager (LM) 雜湊值。 預設不會儲存。
-- **PKU2U 驗證要求**：封鎖此裝置的 PKU2U 驗證要求以使用線上身分識別。
-- **限制 SAM 的遠端 RPC 連線**：編輯預設安全性描述元定義語言字串，以允許或拒絕使用者和群組進行 SAM 的遠端呼叫。
-- **安全性描述元**
+- **具名管道和共用的匿名存取**：[未設定] (預設) 會限制共用和具名管道設定的匿名存取。 適用於可以匿名存取的設定。
+- **SAM 帳戶的匿名列舉**：[允許] 匿名使用者列舉 SAM 帳戶。 Windows 允許匿名使用者列舉網域帳戶和網路共用的名稱。
+- **SAM 帳戶和共用的匿名列舉**：[未設定] (預設) 表示匿名使用者可以列舉網域帳戶和網路共用的名稱。 若要防止 SAM 帳戶和共用的匿名列舉，請設定為 [封鎖]。
+- **密碼變更時儲存的 LAN Manager 雜湊值**：在下次密碼變更時，選擇 [允許] LAN Manager (LM) 儲存新密碼的雜湊值。 當設定為 [未設定] (預設) 時，不會儲存雜湊值。
+- **PKU2U 驗證要求**：[封鎖] 此裝置的 PKU2U 驗證要求以使用線上身分識別。 [未設定] (預設) 可允許這些要求。
+- **限制 SAM 的遠端 RPC 連線**：[允許] 預設安全性描述元定義語言字串，以拒絕使用者和群組進行 SAM 的遠端呼叫。 [未設定] (預設) 預設安全性描述元定義語言字串，以允許使用者和群組進行 SAM 的遠端呼叫。
+  - **安全性描述元**
 
 ### <a name="recovery-console-and-shutdown"></a>修復主控台和關閉
 
@@ -359,13 +366,13 @@ Windows Defender 資訊安全中心應用程式是以個別的應用程式或各
 
 ### <a name="microsoft-network-client"></a>Microsoft 網路用戶端
 
-- **數位簽章通訊 (如果伺服器同意)**：判斷 SMB 用戶端是否會嘗試交涉 SMB 封包簽署。 啟用 (預設值) 時，Microsoft 網路用戶端會要求伺服器在工作階段設定期間執行 SMB 封包簽署。 如果伺服器上已啟用封包簽署，則會交涉封包簽署。 如果停用此原則，則 SMB 用戶端永遠不會交涉 SMB 封包簽署。
+- **數位簽章通訊 (如果伺服器同意)**：判斷 SMB 用戶端是否會嘗試交涉 SMB 封包簽署。 啟用 (未設定) 時，Microsoft 網路用戶端會要求伺服器在工作階段設定期間執行 SMB 封包簽署。 如果在伺服器上啟用封包簽署，則會交涉封包簽署。 如果停用此原則，則 SMB 用戶端永遠不會交涉 SMB 封包簽署。
 - **將未加密的密碼傳送到協力廠商 SMB 伺服器**：啟用時，允許伺服器訊息區塊 (SMB) 重新導向程式將純文字密碼傳送給驗證期間不支援密碼加密的非 Microsoft SMB 伺服器。
 
 ### <a name="microsoft-network-server"></a>Microsoft 網路伺服器
 
-- **數位簽章通訊 (如果用戶端同意)**：判斷 SMB 伺服器是否會與要求 SMB 封包簽署的用戶端協商 SMB 封包簽署。 啟用時，Microsoft 網路伺服器會根據用戶端要求的交涉 SMB 封包簽署。 就是說，如果用戶端已啟用封包簽署，則會交涉封包簽署。 停用 (預設值) 時，SMB 用戶端永遠不會交涉 SMB 封包簽署。
-- **數位簽章通訊 (自動)**：判斷 SMB 伺服器元件是否需要封包簽署。 啟用後，Microsoft 網路伺服器不會與 Microsoft 網路用戶端通訊，除非該用戶端同意執行 SMB 封包簽署。 停用 (預設值) 時，用戶端和伺服器之間會交涉 SMB 封包簽署。
+- **數位簽章通訊 (如果用戶端同意)**：判斷 SMB 伺服器是否會與要求 SMB 封包簽署的用戶端協商 SMB 封包簽署。 啟用時，Microsoft 網路伺服器會根據用戶端要求的交涉 SMB 封包簽署。 就是說，如果用戶端已啟用封包簽署，則會交涉封包簽署。 [未設定] 或停用 (預設) 時，SMB 用戶端永遠不會交涉 SMB 封包簽署。
+- **數位簽章通訊 (自動)**：判斷 SMB 伺服器元件是否需要封包簽署。 啟用後，Microsoft 網路伺服器不會與 Microsoft 網路用戶端通訊，除非該用戶端同意執行 SMB 封包簽署。 停用 [未設定] (預設) 時，用戶端和伺服器之間會交涉 SMB 封包簽署。
 
 ## <a name="next-steps"></a>接下來的步驟
 

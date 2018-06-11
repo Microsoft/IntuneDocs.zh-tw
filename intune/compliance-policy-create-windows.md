@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744902"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -111,21 +112,20 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 - **需要 BitLocker**：開啟 BitLocker 時，裝置能夠在系統已關閉或進入休眠狀態的情況下，保護存放在磁碟機中的資料不受未經授權的存取。 Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用 TPM 協助保護 Windows 作業系統和使用者資料。 它也能協助確保電腦不受竄改，即使該電腦是處於無人看管、遺失或遭竊的情況。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，除非 TPM 驗證電腦的狀態，否則無法存取金鑰。
 - **要求在裝置上啟用安全開機**：啟用安全開機時，會強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
 - **要求程式碼完整性**：程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測核心是否正在載入未簽署的驅動程式或系統檔案。 或者是否有具系統管理員權限的使用者帳戶執行惡意軟體以修改系統檔案。
-- **要求裝置不高於裝置威脅層級**：使用此設定進行來自您防禦威脅服務的風險評估，以作為合規性的條件。 選擇允許的最高威脅層級：
-  - **安全**：此選項最安全，因為裝置不能有任何威脅。 如果在裝置上偵測到任何等級的威脅，即評估為不符合規範。
-  - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
-  - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
-  - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
 如需 HAS 服務如何運作的詳細資料，請參閱[健康情況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) \(英文\)。
 
 ### <a name="device-properties"></a>裝置內容
 
-- **最低 OS 版本**：輸入允許的最低版本 (格式為 major.minor.build.revision number)。 build.revision number 必須與 `ver` 或 `winver` 命令所傳回的版本對應。
+- **最低 OS 版本**：輸入允許的最低版本 (格式為 **major.minor.build.CU 編號**)。 若要取得正確值，請開啟命令提示字元，然後鍵入 `ver`。 `ver` 命令會傳回格式如下的版本：
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   若裝置上的 OS 版本較指定版本舊，會將其回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，之後便可以存取公司資源。
 
-- **最高 OS 版本**：輸入允許的最高版本 (格式為 major.minor.build.revision number)。 build.revision number 必須與 `ver` 或 `winver` 命令所傳回的版本對應。
+- **最高 OS 版本**：輸入允許的最高版本 (格式為 **major.minor.build.revision 編號**)。 若要取得正確值，請開啟命令提示字元，然後鍵入 `ver`。 `ver` 命令會傳回格式如下的版本：
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   當裝置使用的 OS 版本晚於規則中所指定的版本時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
@@ -161,9 +161,17 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 - **避免重複使用前幾個密碼**：輸入不可使用先前所使用的多少個密碼。
 - **於裝置從閒置狀態回復時要求密碼 (行動裝置版和 Holographic)**：強制使用者於每次裝置從閒置狀態回復時輸入密碼。
 
-### <a name="encryption"></a>加密
+#### <a name="encryption"></a>加密
 
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- **要求裝置不高於電腦風險分數**：使用此設定進行來自您防禦威脅服務的風險評估，以作為合規性的條件。 選擇允許的最高威脅層級：
+  - **清除**：此選項最安全，因為裝置不能有任何威脅。 如果在裝置上偵測到任何等級的威脅，即評估為不符合規範。
+  - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
+  - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

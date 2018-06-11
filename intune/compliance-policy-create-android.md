@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744698"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中為 Android 裝置建立裝置合規性原則
 
@@ -122,6 +123,17 @@ ms.lasthandoff: 05/10/2018
 - **公司入口網站應用程式執行階段完整性**：檢查公司入口網站應用程式是否已安裝預設執行階段環境、是否已適當地簽署、是否不處於偵錯模式，以及是否是從已知來源安裝。
 - **封鎖裝置上的 USB 偵錯** (Android 4.2 或更新版本)：選擇以防止裝置使用 USB 偵錯功能。
 - **安全性修補程式等級下限** (Android 6.0 或更新版本)：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不合規範。 日期必須以 `YYYY-MM-DD` 格式輸入。
+
+## <a name="locations"></a>位置
+
+在您的原則中，從現有的位置進行選擇。 還沒有位置？ [使用 Intune 中的位置 (網路範圍)](use-network-locations.md)可提供一些指引。
+
+1. 選擇 [選取位置]。
+2. 從清單中檢查您的位置，然後選擇 [選取]。
+3. [儲存] 原則。
+4. 選取 [不符合規範時所採取的動作]。 預設動作會立即將裝置標示為不符合規範。 這個動作適用於至少選取一個位置，而且裝置未連線到所選取位置的狀況。
+
+  您可以變更此動作，在裝置標示為不符合規範時 (例如一天之後) 更新排程。 您也可以設定第二個動作，在裝置不再符合您的位置時，傳送電子郵件給使用者。
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 

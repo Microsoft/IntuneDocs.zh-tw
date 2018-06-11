@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744596"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>在 Intune 中建立 VPN 設定檔
 
@@ -41,18 +42,19 @@ ms.lasthandoff: 04/16/2018
 
 |連線類型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|是|是|是|是|是|是|
-|Cisco (IPSec)|否|是|否|否|否|否|
-|Citrix|是|是|否|否|否|是|
-|F5 Edge Client|是|是|是|是|是|是|
-|SonicWall Mobile Connect|是|是|是|是|是|是|
+|自動|否|否|否|否|否|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
 |Cisco AnyConnect|是|是|是|否|否|否|
-|自動|否|否|否|否|否|是|
+|SonicWall Mobile Connect|是|是|是|是|是|是|
+|F5 Edge Client|是|是|是|是|是|是|
+|Palo Alto Networks GlobalProtect|否|是|否|否|否|是|
+|Pulse Secure|是|是|是|是|是|是|
+|Cisco (IPSec)|否|是|否|否|否|否|
+|Citrix|是 (僅 Android)|是|否|否|否|是|
 |IKEv2|否|否|否|否|否|是|
 |L2TP|否|否|否|否|否|是|
 |PPTP|否|否|否|否|否|是|
-|自訂|否|是|是|否|否|否|
+|自訂 VPN|否|是|是|否|否|否|
 
 > [!IMPORTANT]
 > 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用指派至裝置的 VPN 設定檔。 您可以使用[什麼是 Microsoft Intune 應用程式管理？](app-management.md)一中的資訊，協助您使用 Intune 指派應用程式。  
