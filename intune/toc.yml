@@ -126,7 +126,7 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路組態
+            - name: 網路設定
               href: network-bandwidth-use.md
         - name: 登入 Intune
           href: account-sign-up.md
@@ -148,7 +148,7 @@
         - name: 註冊選項
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: 條款及條件
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -270,6 +270,8 @@
           items:
             - name: 包含與排除應用程式
               href: apps-inc-exl-assignments.md
+            - name: 部署 Windows 10 應用程式
+              href: apps-windows-10-app-deploy.md
         - name: 監視 App
           href: apps-monitor.md
         - name: 設定應用程式
@@ -413,7 +415,7 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 和 Windows 10
               href: wi-fi-settings-import-windows-8-1.md
-        - name: Education
+        - name: 教育
           items:
             - name: iOS 共用裝置
               href: education-settings-configure-ios-shared.md
@@ -463,7 +465,7 @@
           href: use-network-locations.md
         - name: 評估原則
           href: policy-evaluate.md
-        - name: 處理不相容狀況的動作
+        - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -644,6 +646,8 @@
       items:
         - name: 協助使用者疑難排解問題
           href: help-desk-operators.md
+        - name: 公司資源存取問題的疑難排解
+          href: troubleshoot-company-resource-access-problems.md
         - name: Intune 活動的稽核記錄
           href: monitor-audit-logs.md
         - name: 檢閱應用程式保護記錄
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: 適用於 Android 的 Intune App SDK
           href: app-sdk-android.md
-        - name: Intune App SDK Xamarin 元件
+        - name: Intune App SDK Cordova 外掛程式
+          href: app-sdk-cordova.md
+        - name: Intune App SDK Xamarin 繫結
           href: app-sdk-xamarin.md
     - name: 使用 Intune 資料倉儲
       href: reports-nav-create-intune-reports.md
@@ -745,5 +751,5 @@
           href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: 資源
   items:
-    - name: 詞彙
+    - name: 字彙
       href: intune-glossary.md

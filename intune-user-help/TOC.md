@@ -137,6 +137,7 @@
 ### [手動同步您的裝置](sync-your-device-manually-windows.md)
 
 ### [修正 Windows 的常見問題](troubleshoot-your-device-windows.md)
+### [解決存取點限制](resolve-access-point-restrictions.md)
 #### [我的 Windows 10 裝置無法註冊](troubleshoot-your-windows-10-device-windows.md)
 #### [更新 Windows 裝置](you-need-to-update-your-windows-device.md)
 #### [從公司入口網站應用程式傳送記錄檔](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [移除裝置](remove-your-device-cpwebsite.md)
 ### [重設裝置密碼](reset-your-passcode-cpwebsite.md)
 ### [重設及清除您的裝置](reset-erase-your-device-cpwebsite.md)
-### [手動同步您的裝置](sync-your-device-manually-cpwebsite.md)
