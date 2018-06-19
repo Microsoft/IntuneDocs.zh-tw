@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Intune 與 Lookout MTD 連接器"
-titlesuffix: 
-description: "深入了解整合 Intune 與 Lookout Mobile Threat Defense (MTD) 來控制行動裝置對公司資源的存取。"
-keywords: 
+title: Microsoft Intune 與 Lookout MTD 連接器
+titlesuffix: ''
+description: 深入了解整合 Intune 與 Lookout Mobile Threat Defense (MTD) 來控制行動裝置對公司資源的存取。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29775778"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense 連接器與 Intune
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34308852"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>從公司入口網站移除裝置
 

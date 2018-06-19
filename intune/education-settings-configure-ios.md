@@ -20,6 +20,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927435"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 

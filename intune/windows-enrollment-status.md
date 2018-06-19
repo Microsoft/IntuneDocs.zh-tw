@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6bd5867c41fb5288fde114dbfcc127dd206f7148
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34235609"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014821"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作
 

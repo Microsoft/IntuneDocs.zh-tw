@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926349"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>移轉至 Microsoft Intune 時設定裝置合規性和應用程式管理原則
 
@@ -57,9 +58,9 @@ ms.lasthandoff: 03/16/2018
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>直接匯入 iOS 組態設定檔 (選用)
 
--   **Apple Configurator iOS 設定檔 (iOS 7.1 及更新版本)：**如果您現有的 MDM 解決方案使用 Apple Configurator 設定檔 (.mobileconfig 檔案)，Intune 可直接將它們匯入為自訂組態原則。
+-   **Apple Configurator iOS 設定檔 (iOS 7.1 及更新版本)：** 如果您現有的 MDM 解決方案使用 Apple Configurator 設定檔 (.mobileconfig 檔案)，Intune 可直接將它們匯入為自訂組態原則。
 
--   **iOS 行動應用程式組態原則︰**如果您現有的 MDM 解決方案使用 iOS 行動應用程式組態原則，只要它們符合 Apple 指定之屬性清單的 XML 格式，Intune 即可直接匯入它們。
+-   **iOS 行動應用程式組態原則︰** 如果您現有的 MDM 解決方案使用 iOS 行動應用程式組態原則，只要它們符合 Apple 指定之屬性清單的 XML 格式，Intune 即可直接匯入它們。
 
 - 了解如何新增 [iOS](custom-settings-ios.md) 的自訂原則。
 

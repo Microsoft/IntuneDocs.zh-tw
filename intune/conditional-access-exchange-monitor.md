@@ -1,16 +1,16 @@
 ---
-title: "監視 Microsoft Intune 中的 Exchange 條件式存取"
-titlesuffix: 
-description: "透過 Intune Azure 入口網站監視內部部署 Exchange 和 Exchange Online 的條件式存取相容性。"
-keywords: 
+title: 監視 Microsoft Intune 中的 Exchange 條件式存取
+titlesuffix: ''
+description: 透過 Intune Azure 入口網站監視內部部署 Exchange 和 Exchange Online 的條件式存取相容性。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29775353"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性
 
@@ -54,16 +55,16 @@ ms.lasthandoff: 03/08/2018
 
 在 [裝置詳細資料] 窗格中，您可以檢視更多資訊︰
 
--   **概觀︰**您可以查看下列裝置屬性：OS 版本、裝置型號、擁有權、序號、裝置製造商、電話號碼，以及裝置最後一次簽入的時間。
+-   **概觀︰** 您可以查看下列裝置屬性：OS 版本、裝置型號、擁有權、序號、裝置製造商、電話號碼，以及裝置最後一次簽入的時間。
 
--   **屬性︰**您可以設定裝置擁有權 (個人或公司)。
+-   **屬性︰** 您可以設定裝置擁有權 (個人或公司)。
 
--   **硬體︰**提供您在 [概觀] 上看到的資訊，以及儲存體詳細資料 (總空間和可用空間)、系統機箱、網路詳細資料、網路服務，以及更多的條件式存取封鎖詳細資料。
+-   **硬體︰** 提供您在 [概觀] 上看到的資訊，以及儲存體詳細資料 (總空間和可用空間)、系統機箱、網路詳細資料、網路服務，以及更多的條件式存取封鎖詳細資料。
 
--   **探索到的應用程式：**顯示您裝置上所安裝的所有應用程式。 您也可以將已安裝應用程式的清單以 .CSV 格式匯出。
+-   **探索到的應用程式：** 顯示您裝置上所安裝的所有應用程式。 您也可以將已安裝應用程式的清單以 .CSV 格式匯出。
 
--   **合規性︰**顯示所有裝置合規性原則詳細資料。
+-   **合規性︰** 顯示所有裝置合規性原則詳細資料。
 
--   **裝置設定︰**顯示所有裝置設定詳細資料。
+-   **裝置設定︰** 顯示所有裝置設定詳細資料。
 
--   **Exchange 存取：**您可以在這裡深入了解套用條件式存取原則之後的裝置狀態。
+-   **Exchange 存取：** 您可以在這裡深入了解套用條件式存取原則之後的裝置狀態。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33842266"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 

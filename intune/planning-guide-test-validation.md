@@ -1,16 +1,16 @@
 ---
-title: "Intune 測試與驗證"
+title: Intune 測試與驗證
 titlesuffix: Microsoft Intune
-description: "如何在您的環境中測試及驗證 Intune 僅雲端解決方案。"
-keywords: 
+description: 如何在您的環境中測試及驗證 Intune 僅雲端解決方案。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29720676"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -30,17 +31,17 @@ ms.lasthandoff: 03/02/2018
 
 建議您記錄下列各項：
 
--   **測試準則：**找出測量的測試基準。
+-   **測試準則：** 找出測量的測試基準。
 
--   **設計元件：**至少必須存在於一項測試準則中。
+-   **設計元件：** 至少必須存在於一項測試準則中。
 
 如果設計元件不存在於至少符合需求或案例的一項測試準則中，請考慮設計元件是否為必要。 此外，請確定擁有下列項目︰
 
--   **帳戶：**有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
+-   **帳戶：** 有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
 
--   **裝置：**可以抹除或重設為原廠預設值的測試裝置。
+-   **裝置：** 可以抹除或重設為原廠預設值的測試裝置。
 
--   **整合元件：**如有需要，應該安裝並設定所有的整合元件 (憑證連接器、適用於託管 Exchange 的 Intune 服務至服務連接器以及 Intune 內部部署 Exchange 連接器)。
+-   **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器、適用於託管 Exchange 的 Intune 服務至服務連接器以及 Intune 內部部署 Exchange 連接器)。
 
 您可能需要設計變更，以備處理無法預見的問題。 此外，所有的設計變更都應該詳細記錄每項變更的原因。 下例示範可能的變更︰
 

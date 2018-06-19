@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34047980"
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>在 Intune 中為 Android for Work 裝置新增裝置合規性政策
 

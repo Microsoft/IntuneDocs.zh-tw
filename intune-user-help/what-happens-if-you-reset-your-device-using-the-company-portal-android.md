@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015399"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司入口網站重設 Android 裝置會發生什麼情況？
 

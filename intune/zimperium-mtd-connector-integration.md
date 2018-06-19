@@ -1,16 +1,16 @@
 ---
-title: "整合 Zimperium MTD 與 Microsoft Intune"
-titleSuffix: 
-description: "如何使用 Microsoft Intune 設定 Zimperium Mobile Threat Defense (MTD) 解決方案，來控制行動裝置對公司資源的存取。"
-keywords: 
+title: 整合 Zimperium MTD 與 Microsoft Intune
+titleSuffix: ''
+description: 如何使用 Microsoft Intune 設定 Zimperium Mobile Threat Defense (MTD) 解決方案，來控制行動裝置對公司資源的存取。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29777614"
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 

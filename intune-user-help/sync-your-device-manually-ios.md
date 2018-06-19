@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30756006"
 ---
 # <a name="sync-your-ios-device-manually"></a>手動同步處理您的 iOS 裝置
 

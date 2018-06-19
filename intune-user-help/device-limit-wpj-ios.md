@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30750858"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>您可註冊的裝置數已達到上限
 

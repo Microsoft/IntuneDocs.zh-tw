@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755227"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。

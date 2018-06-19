@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018170"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。

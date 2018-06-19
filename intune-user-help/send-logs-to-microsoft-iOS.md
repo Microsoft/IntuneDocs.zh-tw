@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754615"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>將 iOS 裝置的記錄傳送給公司入口網站開發人員
 

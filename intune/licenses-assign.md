@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34051635"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 

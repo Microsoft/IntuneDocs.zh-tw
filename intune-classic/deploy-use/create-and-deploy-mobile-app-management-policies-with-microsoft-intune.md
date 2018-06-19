@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026409"
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 建立及部署應用程式保護原則
 
@@ -138,11 +139,11 @@ ms.lasthandoff: 04/16/2018
    > <br></br>
 2. 在 [允許的應用程式] 或 [Exempt apps]\ (豁免應用程式) 刀鋒視窗中，按一下 [新增應用程式]。 您可以新增建議的 Microsoft 應用程式、市集應用程式或傳統型應用程式。
 
-    a.  **建議的應用程式︰**可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
+    a.  **建議的應用程式︰** 可讓系統管理員輕鬆匯入原則之預先填入的應用程式清單 (大部分是 Office 應用程式)。
 
-    b.  **市集應用程式︰**系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
+    b.  **市集應用程式︰** 系統管理員可以將 Windows 市集中的任何應用程式新增至原則。
 
-    c.  **Windows 傳統型應用程式︰**系統管理員可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 exe、dll 等)。
+    c.  **Windows 傳統型應用程式︰** 系統管理員可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 exe、dll 等)。
 
 ## <a name="deploy-a-policy-to-users"></a>將原則部署給使用者
 

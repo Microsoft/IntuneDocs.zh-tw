@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30753918"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/04/2018
 
     您會暫時看到「註冊您的裝置」訊息。
 
-11. 當**已全部完成！**畫面 顯示所有項目都已正確設定時，請點選 [完成]。
+11. 當**已全部完成！** 畫面 顯示所有項目都已正確設定時，請點選 [完成]。
 
     ![公司存取設定顯示工作設定檔和註冊已完成](/intune/media/android_work_cp_enroll_04_after_1710.png)
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073813"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>在您的裝置上啟用安全性威脅掃描 
 如果您在不知情的情況下安裝了不安全的應用程式，您的裝置資料可能會有風險。 若要保護您的裝置上的資料，建議您： 

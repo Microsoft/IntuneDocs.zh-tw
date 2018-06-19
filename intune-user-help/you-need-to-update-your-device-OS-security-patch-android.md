@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073781"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>您必須更新 Android 裝置的作業系統
 

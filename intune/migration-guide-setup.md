@@ -18,6 +18,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926982"
 ---
 # <a name="basic-setup"></a>基本設定
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190634"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

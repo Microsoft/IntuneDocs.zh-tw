@@ -19,6 +19,7 @@ ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/20/2018
+ms.locfileid: "29999061"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
 

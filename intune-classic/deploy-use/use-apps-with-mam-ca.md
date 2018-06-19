@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018476"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>搭配使用應用程式與應用程式 CA 時的預期狀況
 

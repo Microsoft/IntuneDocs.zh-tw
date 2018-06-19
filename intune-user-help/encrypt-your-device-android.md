@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754989"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何使用加密保護您的 Android 裝置
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/04/2018
     
     4. 在 [安全啟動] 畫面上，依序點選 [Require PIN to start device] \(需要 PIN 才能啟動裝置) 和 [繼續]。
 
-    5. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選**「Confirm your PIN」 (確認您的 PIN)**。
+    5. 選擇 PIN (您可以輸入和先前輸入相同的 PIN)，然後點選 **「Confirm your PIN」 (確認您的 PIN)**。
 
     6. 開啟公司入口網站應用程式，選取您的裝置，然後點選 **[檢查相容性]**。
 

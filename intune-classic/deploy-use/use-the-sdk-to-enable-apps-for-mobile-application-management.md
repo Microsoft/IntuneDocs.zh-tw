@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015297"
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>使用 SDK 讓應用程式進行行動應用程式管理
 

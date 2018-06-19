@@ -1,20 +1,25 @@
 ---
-title: "文章標題 | 服務名稱"
-description: 
-keywords: 
-author: GITHUB USERNAME
-manager: ALIAS
+title:
+- 文章標題 | 服務名稱
+description: ''
+keywords: ''
+author:
+- GITHUB USERNAME
+manager:
+- ALIAS
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
-ms.assetid: GET ONE FROM guidgenerator.com
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
+ms.assetid:
+- GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
 ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/01/2017
+ms.locfileid: "20283564"
 ---
 # <a name="metadata-and-markdown-template"></a>中繼資料和 Markdown 範本
 

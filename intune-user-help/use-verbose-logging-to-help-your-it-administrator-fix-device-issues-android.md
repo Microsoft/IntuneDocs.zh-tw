@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016759"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>使用詳細資訊記錄來協助公司支援人員修正裝置問題
 

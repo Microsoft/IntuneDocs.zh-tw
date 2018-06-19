@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30752949"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>從 Intune 取消註冊 macOS 裝置
 

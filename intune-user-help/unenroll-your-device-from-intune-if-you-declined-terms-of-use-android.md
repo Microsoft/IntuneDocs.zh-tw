@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017609"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請從 Intune 移除您的裝置
 
