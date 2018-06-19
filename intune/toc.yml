@@ -11,6 +11,8 @@
       items:
         - name: 對群組所做的變更
           href: groups-get-started.md
+        - name: 舊版 Intune 電腦用戶端
+          href: intune-legacy-pc-client.md
     - name: 註冊免費試用版
       href: free-trial-sign-up.md
     - name: 新功能
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: MAM 常見問題集
       href: mam-faq.md
+    - name: 原則與設定檔的常見問題集
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 規劃部署
   items:
     - name: 規劃指南
@@ -176,6 +180,8 @@
           items:
             - name: 設定 Android 註冊
               href: android-enroll.md
+            - name: 管理 Android for Work 裝置
+              href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
         - name: 設定 iOS 註冊
@@ -196,6 +202,8 @@
     - name: 管理裝置
       href: device-management.md
       items:
+        - name: 裝置管理功能
+          href: device-management-capabilities.md
         - name: 略過啟用鎖定
           href: device-activation-lock-bypass.md
         - name: 管理 Windows「重新開始」
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: 檢閱應用程式保護記錄
           href: app-protection-policy-settings-log.md
+        - name: 電子郵件設定檔疑難排解
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: 軟體更新疑難排解
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Endpoint Protection 疑難排解
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: 疑難排解原則
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: 自動化和自訂
       items:
         - name: 設定自訂裝置設定
