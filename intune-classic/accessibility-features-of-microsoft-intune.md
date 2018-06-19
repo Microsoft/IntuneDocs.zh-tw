@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013053"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune 的協助工具功能
 除了 Microsoft Windows 的協助功能和協助工具之外，下列功能也可使 Microsoft Intune 更方便殘障人士使用：使用鍵盤快速鍵

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017796"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>您的密碼不符合公司支援人員需求
 

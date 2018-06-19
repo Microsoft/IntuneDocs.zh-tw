@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831295"
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 自訂裝置設定
 

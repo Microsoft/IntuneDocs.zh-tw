@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915823"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>透過 Windows 版公司入口網站應用程式重新命名裝置
 重新命名裝置，以使其更容易從其他裝置辨識。 Windows 版公司入口網站應用程式可讓您重新命名已連線的 Windows、iOS 和 Android 裝置。 

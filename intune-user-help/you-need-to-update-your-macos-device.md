@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017405"
 ---
 # <a name="your-macos-device-doesnt-have-the-required-minimum-operating-system-version"></a>您的 macOS 裝置沒有基本必要的作業系統版本
 

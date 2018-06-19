@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030555"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/16/2018
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至裝置註冊管理員帳戶的使用者帳戶將無法完成註冊。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
-**問題：**使用者在裝置上收到**公司入口網站暫時無法使用**錯誤。
+**問題：** 使用者在裝置上收到**公司入口網站暫時無法使用**錯誤。
 
 **解決方法：**
 
@@ -146,9 +147,9 @@ ms.lasthandoff: 04/16/2018
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
-**問題︰**您無法建立原則或註冊裝置。
+**問題︰** 您無法建立原則或註冊裝置。
 
-**解決方式︰**在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
+**解決方式︰** 在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
 
 ### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果您有多個以驗證的網域，您無法登入或註冊裝置
 **問題**︰當您將第二個已驗證的網域新增至您的 ADFS，擁有第二個網域之使用者主要名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
@@ -170,7 +171,7 @@ ms.lasthandoff: 04/16/2018
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」
-**問題：**一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
+**問題：** 一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
@@ -285,13 +286,13 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 |MdmAuthorityNotDefined|尚未定義行動裝置管理授權單位。<br /><br />|尚未在 Intune 中指定行動裝置管理授權單位。<br /><br />檢閱[開始使用 Microsoft Intune 30 天試用版](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中＜步驟 6：註冊行動裝置並安裝應用程式＞一節中的項目 #1。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>裝置處於非使用狀態或管理員主控台無法與它們通訊
-**問題︰**iOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護受保護公司資源的存取權。 如果裝置未簽入：
+**問題︰** iOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護受保護公司資源的存取權。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
 - 受條件式存取原則所保護的使用者可能會遺失對公司資源的存取權。
 
-**解決方式︰**與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
+**解決方式︰** 與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
 
 當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步處理以重新連線，使用者會看到**正在嘗試同步...** 內嵌的通知。
 
@@ -337,14 +338,14 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 4.  確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
-**問題︰**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理員主控台。 裝置並未指出它已註冊。 可能的原因：
+**問題︰** 使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理員主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
 - 資料探索管理員 (ddm) 元件或狀態管理員 (statmgr) 元件沒有處理來自 Intune 服務的訊息。
 - 您可能已從一個帳戶下載 MDM 憑證，然後將其用於另一個帳戶。
 
 
-**解決方法：**檢閱下列記錄檔以尋找可能的錯誤：
+**解決方法：** 檢閱下列記錄檔以尋找可能的錯誤：
 
 - dmpdownloader.log
 - ddm.log
@@ -389,7 +390,7 @@ Samsung 已確認 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置�
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
-**問題 ︰**註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
+**問題 ︰** 註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 這可能是因為電腦先前已註冊，或具有已註冊之電腦的複製映像。 上一個帳戶的帳戶憑證仍存在於電腦上。
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014634"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>如何重新連接遭盜用的 iOS 裝置
 

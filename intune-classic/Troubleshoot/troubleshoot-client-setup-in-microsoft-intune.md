@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028073"
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune 的用戶端設定疑難排解
 
@@ -54,11 +55,11 @@ ms.lasthandoff: 04/16/2018
     -   **嚴重性** – 這代表警示的嚴重性
 
 ## <a name="computer-enrollment-package-doesnt-download"></a>電腦註冊套件未下載
-**問題︰**嘗試註冊電腦時，您遇到下列情況︰
+**問題︰** 嘗試註冊電腦時，您遇到下列情況︰
 -  無法下載註冊套件
 -  出現 [下載] 對話方塊，但逾時
 
-**解決方式︰**在您用於下載的瀏覽器上，下載進行時，請確保下載已啟用，而且加密的檔案可以儲存至您的本機光碟。
+**解決方式︰** 在您用於下載的瀏覽器上，下載進行時，請確保下載已啟用，而且加密的檔案可以儲存至您的本機光碟。
 
 ## <a name="client-installation-hangs-with-error-code-0x80040154"></a>用戶端安裝停止並顯示錯誤碼 0x80040154
 **問題**
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
 
 原因可能是電腦上的重大軟體更新不存在。
 
-**解決方式：**請確定您的軟體更新原則已啟用重大更新的安裝 (如[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述)
+**解決方式：** 請確定您的軟體更新原則已啟用重大更新的安裝 (如[在 Microsoft Intune 中使用軟體更新讓 Windows 電腦維持最新狀態](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述)
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Microsoft Intune policyplatform.log 中的原則相關錯誤

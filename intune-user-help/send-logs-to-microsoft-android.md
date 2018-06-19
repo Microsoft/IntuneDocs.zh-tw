@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020005"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>將記錄傳送給公司入口網站 Android 裝置開發人員
 

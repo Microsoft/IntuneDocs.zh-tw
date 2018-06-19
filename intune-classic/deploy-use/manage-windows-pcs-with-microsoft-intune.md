@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028402"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -36,7 +37,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Intune 電腦用戶端管理的需求
 
-**硬體：**以下列出安裝 Intune 用戶端軟體的最低硬體需求：
+**硬體：** 以下列出安裝 Intune 用戶端軟體的最低硬體需求：
 
 |需求|詳細資訊|
 |---------------|--------------------|

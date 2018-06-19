@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046412"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
@@ -39,19 +40,19 @@ ms.lasthandoff: 04/28/2018
 
 SEP Mobile 支援兩種與 Intune 整合的模式：
 
--   **唯讀整合 (基本設定)：**僅清查來自 Azure Active Directory 的裝置，並將它們填入 Symantec Endpoint Protection Mobile 管理主控台。
+-   **唯讀整合 (基本設定)：** 僅清查來自 Azure Active Directory 的裝置，並將它們填入 Symantec Endpoint Protection Mobile 管理主控台。
 <br>
     -   如果未在 Symantec Endpoint Protection Mobile 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險] 和 [也向 Intune 報告安全性事件] 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
 <br></br>
--   **完整整合：**允許 SEP Mobile 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
+-   **完整整合：** 允許 SEP Mobile 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 應用程式如何與 Azure AD 和 Intune 搭配使用？
 
--   **iOS 應用程式︰**允許使用者使用 iOS 應用程式登入 Azure AD。
+-   **iOS 應用程式︰** 允許使用者使用 iOS 應用程式登入 Azure AD。
 
--   **Android 應用程式︰**允許使用者使用 Android 應用程式登入 Azure AD。
+-   **Android 應用程式︰** 允許使用者使用 Android 應用程式登入 Azure AD。
 
--   **管理應用程式︰**這是 SEP Mobile Azure AD 多租用戶應用程式，可啟用與 Intune 的服務對服務通訊。
+-   **管理應用程式︰** 這是 SEP Mobile Azure AD 多租用戶應用程式，可啟用與 Intune 的服務對服務通訊。
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>設定 Intune 和 SEP Mobile 之間的唯讀整合
 

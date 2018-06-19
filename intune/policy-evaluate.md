@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018442"
 ---
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>評估原則設定為目標的使用者人數
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

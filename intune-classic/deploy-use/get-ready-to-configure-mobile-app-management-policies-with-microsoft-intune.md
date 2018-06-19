@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024068"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>準備好在 Azure 入口網站中設定應用程式保護原則
 
@@ -63,7 +64,7 @@ Azure 入口網站是建立應用程式保護原則的新管理主控台。 它�
 >從 1703 版開始，可在不含註冊案例的 MAM 中定義 Windows 10 裝置的應用程式保護原則。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>支援的應用程式
-* **Microsoft 應用程式︰**這些應用程式已內建 Intune App SDK，而在您套用應用程式保護原則之前將不需要進一步處理。
+* **Microsoft 應用程式︰** 這些應用程式已內建 Intune App SDK，而在您套用應用程式保護原則之前將不需要進一步處理。
 若要查看受支援的 Microsoft 應用程式完整清單，請移至 Microsoft Intune 應用程式合作夥伴頁面上的 [Microsoft Intune mobile application gallery](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) (Microsoft Intune 行動應用程式庫)。 按一下應用程式來查看支援的案例和平台，並查看該應用程式是否支援多重身分識別。
 
 * **您組織的企業營運應用程式**：您必須先準備這些應用程式來包含 Intune App SDK，才能套用應用程式保護原則。

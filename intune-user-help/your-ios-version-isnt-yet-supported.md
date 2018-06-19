@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015841"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>尚不支援您的 iOS 裝置作業系統版本
 

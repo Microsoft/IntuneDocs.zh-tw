@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028056"
 ---
 # <a name="change-the-mdm-authority"></a>變更 MDM 授權單位
 自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 本主題提供步驟，讓您在無需將現有受管理裝置解除註冊並重新註冊的情況下，將從 Intune 設定且 MDM 授權單位設定為 [Microsoft Intune] \(獨立式) 的現有 Microsoft Intune 租用戶，設定為 [Configuration Manager] \(混合式 MDM)。

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030504"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>您的 iOS 裝置沒有基本必備的作業系統版本
 

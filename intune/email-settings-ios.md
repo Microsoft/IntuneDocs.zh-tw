@@ -18,6 +18,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190480"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>在執行 iOS 之裝置上的 Microsoft Intune 電子郵件設定檔設定 
 

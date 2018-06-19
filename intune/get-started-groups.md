@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021008"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>建立群組來管理您的使用者和資料存取
 

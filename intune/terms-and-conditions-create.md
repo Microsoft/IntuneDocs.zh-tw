@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31033295"
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>管理貴公司的使用者存取條款及條件
 

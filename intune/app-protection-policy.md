@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834273"
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -35,14 +36,14 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 
 裝置上執行可以設定應用程式保護原則的應用程式包括：
 
-- **在 Microsoft Intune 中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
+- **在 Microsoft Intune 中註冊︰** 此類別中的裝置通常是公司所擁有的裝置。
 
-- **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰**此類別中的裝置通常是公司所擁有的裝置。
+- **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰** 此類別中的裝置通常是公司所擁有的裝置。
 
   > [!NOTE]
   > 行動裝置應用程式管理原則不應搭配使用協力廠商的行動裝置應用程式管理或安全容器解決方案。
 
-- **未註冊任何行動裝置管理解決方案︰**此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
+- **未註冊任何行動裝置管理解決方案︰** 此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
 
 > [!IMPORTANT]
 > 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援應用程式保護原則。

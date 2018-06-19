@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018102"
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune 的原則疑難排解
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="general-issues"></a>一般問題
 
 ### <a name="was-a-deployed-policy-applied-to-the-device"></a>部署原則是否已套用到裝置？
-**問題：**您不確定原則是否已正確套用。
+**問題：** 您不確定原則是否已正確套用。
 
 在 Intune 管理主控台中，每部裝置在 [裝置內容] 下會有一個 [原則] 索引標籤。 每個原則都具有 [預定的值]  和 [狀態] 。 預定的值是您在指派原則時想要達到的值。 狀態則是在一併考慮要套用到裝置的所有原則，以及硬體和作業系統的限制與需求時，所實際達成的情況。 可能的狀態包括：
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="issues-with-enrolled-devices"></a>已註冊裝置的問題
 
 ### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>警示：將存取規則儲存到 Exchange 失敗
-**問題：**您在管理主控台中收到警示「將存取規則儲存到 Exchange 失敗」   。
+**問題：** 您在管理主控台中收到警示「將存取規則儲存到 Exchange 失敗」   。
 
 如果您在管理主控台下的 [Exchange 內部部署原則] 工作區中建立原則，但使用 O365，Intune 將不會強制執行已設定的原則設定。 記下警示中的原則來源。  刪除 [Exchange 內部部署原則] 工作區下的舊版規則，因為這些規則是適用於內部部署 Exchange 的 Intune 中的通用 Exchange 規則，與 O365 無關。 接著，建立適用於 O365 的新原則。
 

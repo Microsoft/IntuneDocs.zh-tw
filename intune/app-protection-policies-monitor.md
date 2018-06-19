@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833149"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -96,9 +97,9 @@ ms.lasthandoff: 04/26/2018
 
 ![反白顯示 [設定] 窗格中可用之 2 份報表的螢幕擷取畫面](./media/MAM-reporting-7.png)
 
--   **應用程式保護使用者報表︰**列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
+-   **應用程式保護使用者報表︰** 列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
 
--   **應用程式保護應用程式報表︰**提供兩種不同的應用程式保護狀態，供管理員在產生報表之前選取。 狀態可以受保護或不受保護。
+-   **應用程式保護應用程式報表︰** 提供兩種不同的應用程式保護狀態，供管理員在產生報表之前選取。 狀態可以受保護或不受保護。
 
     -   受管理 MAM 活動的使用者狀態 (受保護)︰這份報表會依每個使用者列出每個受管理 MAM 應用程式的活動。
 

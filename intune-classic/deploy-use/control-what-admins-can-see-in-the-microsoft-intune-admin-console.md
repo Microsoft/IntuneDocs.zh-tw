@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013631"
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>根據系統管理員角色自訂 Intune 主控台檢視
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031646"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 裝置上使用受管理的應用程式
 

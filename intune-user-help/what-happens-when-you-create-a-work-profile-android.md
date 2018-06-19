@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016674"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>當您建立工作設定檔時，會發生什麼事
 

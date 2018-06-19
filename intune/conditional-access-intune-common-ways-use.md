@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025907"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -121,11 +122,11 @@ Intune 與 Mobile Threat Defense 整合在以裝置風險為依據的條件式�
 
 #### <a name="corporate-owned"></a>屬公司擁有
 
--   **已加入內部部署 AD 網域：**對組織而言，這是最常見的條件式存取部署選項，原因在於他們已經透過 AD 群組原則和/或使用 System Center Configuration Manager 管理其電腦。
+-   **已加入內部部署 AD 網域：** 對組織而言，這是最常見的條件式存取部署選項，原因在於他們已經透過 AD 群組原則和/或使用 System Center Configuration Manager 管理其電腦。
 
--   **已加入 Azure AD 網域和 Intune 管理：**這種情況通常適用於「選擇您自己的裝置」(CYOD)，以及使用膝上型電腦漫遊的情況，而其中的這些裝置很少會連線到公司網路。 裝置會加入 Azure AD 並向 Intune 註冊，以移除內部部署 AD 與網域控制站上的任何相依性。 這可在存取公司資源時，用來做為條件式存取準則。
+-   **已加入 Azure AD 網域和 Intune 管理：** 這種情況通常適用於「選擇您自己的裝置」(CYOD)，以及使用膝上型電腦漫遊的情況，而其中的這些裝置很少會連線到公司網路。 裝置會加入 Azure AD 並向 Intune 註冊，以移除內部部署 AD 與網域控制站上的任何相依性。 這可在存取公司資源時，用來做為條件式存取準則。
 
--   **已加入 AD 網域和 System Center Configuration Manager：**截至最新分支，除了作為加入網域的電腦之外，System Center Configuration Manager 還提供可評估特定合規性準則的條件式存取功能：
+-   **已加入 AD 網域和 System Center Configuration Manager：** 截至最新分支，除了作為加入網域的電腦之外，System Center Configuration Manager 還提供可評估特定合規性準則的條件式存取功能：
 
     -   電腦是否加密？
 
@@ -135,7 +136,7 @@ Intune 與 Mobile Threat Defense 整合在以裝置風險為依據的條件式�
 
 #### <a name="bring-your-own-device-byod"></a>攜帶您自己的裝置 (BYOD)
 
--   **Workplace Join 和 Intune 管理：**使用者可以在這裡加入其個人裝置來存取公司資源和服務。 您可以使用 Workplace Join，並向 Intune 註冊裝置，以接收裝置層級原則，這也是評估條件式存取準則的另一個選項。
+-   **Workplace Join 和 Intune 管理：** 使用者可以在這裡加入其個人裝置來存取公司資源和服務。 您可以使用 Workplace Join，並向 Intune 註冊裝置，以接收裝置層級原則，這也是評估條件式存取準則的另一個選項。
 
 ## <a name="app-based-conditional-access"></a>以應用程式為基礎的條件式存取
 

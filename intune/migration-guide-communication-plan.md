@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022810"
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -28,19 +29,19 @@ ms.lasthandoff: 04/16/2018
 
 建議您使用下列電子郵件溝通計劃。 我們已提供範本供您用來調整溝通計劃：
 
--   **電子郵件 \#1：**說明優點、期望和排程。 藉由這個機會展示將在 Intune 管理的裝置上提供的所有其他新服務。<br/><br/>
+-   **電子郵件 \#1：** 說明優點、期望和排程。 藉由這個機會展示將在 Intune 管理的裝置上提供的所有其他新服務。<br/><br/>
 
 
     -   [下載電子郵件 \#1 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **電子郵件 \#2：**宣布服務現在已可透過 Intune 存取。 告知使用者立即註冊。 提醒使用者移轉的優點和策略原因。<br/><br/>
+-   **電子郵件 \#2：** 宣布服務現在已可透過 Intune 存取。 告知使用者立即註冊。 提醒使用者移轉的優點和策略原因。<br/><br/>
 
 
     -   [下載電子郵件 \#2 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **電子郵件 \#3：**在其存取權受到影響之前，提供使用者時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合您的階段。 例如，在 6 月份，傳送電子郵件 \#1 給階段 1 使用者，傳送電子郵件 \#2 給階段 2 使用者，並傳送電子郵件 \#3 給階段 3 使用者。<br/><br/>
+-   **電子郵件 \#3：** 在其存取權受到影響之前，提供使用者時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合您的階段。 例如，在 6 月份，傳送電子郵件 \#1 給階段 1 使用者，傳送電子郵件 \#2 給階段 2 使用者，並傳送電子郵件 \#3 給階段 3 使用者。<br/><br/>
 
     -   [下載電子郵件 \#3 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 

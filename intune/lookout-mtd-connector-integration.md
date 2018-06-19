@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31029860"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
     >![Azure 入口網站中 Azure Active Directory 服務的屬性頁面螢幕擷取畫面](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >針對檢查新裝置的時間遞增量，最佳做法是使用預設的 5 分鐘。 目前的限制：**Lookout 無法驗證群組顯示名稱：**請確定 Azure 入口網站的 [顯示名稱] 欄位與 Azure AD 安全性群組完全一致。 **不支援建立巢狀群組：**Lookout 使用的 Azure AD 安全性群組必須只包含使用者。 不能包含其他群組。
+    >針對檢查新裝置的時間遞增量，最佳做法是使用預設的 5 分鐘。 目前的限制：**Lookout 無法驗證群組顯示名稱：** 請確定 Azure 入口網站的 [顯示名稱] 欄位與 Azure AD 安全性群組完全一致。 **不支援建立巢狀群組：** Lookout 使用的 Azure AD 安全性群組必須只包含使用者。 不能包含其他群組。
 
 3.  一旦加入群組，下次使用者在其支援的裝置上開啟 Lookout for Work 應用程式時，裝置會在 Lookout 中啟用。
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833012"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為 
 
@@ -69,10 +70,10 @@ Intune 允許將應用程式防護原則部署到每部裝置上的一個使用�
 
 以下是支援的檔案類型：
 
-* **音訊︰**AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
-* **視訊︰**H.263、H.264 AVC、MPEG-4 SP、VP8。
-* **影像︰**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
-* **文件：**PDF、PPDF
+* **音訊︰** AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
+* **視訊︰** H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **影像︰** jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
+* **文件：** PDF、PPDF
 
 ------------
 
