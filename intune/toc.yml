@@ -672,8 +672,12 @@
           href: troubleshoot-software-updates-in-microsoft-intune.md
         - name: Endpoint Protection 疑難排解
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: 疑難排解原則
+        - name: 原則疑難排解
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 條件式存取的疑難排解
+          href: troubleshoot-conditional-access.md
+        - name: Exchange Connector 疑難排解
+          href: troubleshoot-exchange-connector.md
     - name: 自動化和自訂
       items:
         - name: 設定自訂裝置設定
