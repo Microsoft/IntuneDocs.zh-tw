@@ -135,6 +135,7 @@
 ### [如果重設裝置，會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)
 ### [手動同步您的裝置](sync-your-device-manually-windows.md)
+### [在遠端從 Windows 10 裝置鎖定裝置](remote-lock-your-device-cp-app.md) 
 
 ### [修正 Windows 的常見問題](troubleshoot-your-device-windows.md)
 ### [解決存取點限制](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [我需要啟用 UAC](you-need-to-enable-uac-windows.md)
 #### [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
 #### [我需要開啟 Windows Defender](turn-on-defender-windows.md)
-## [從 Windows 公司入口網站應用程式遠端鎖定裝置](remote-lock-your-device-cp-app.md) 
+
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 ### [從遠端鎖定裝置](remote-lock-your-device-cpwebsite.md)
 ### [重新命名裝置](rename-your-device-cpwebsite.md)
