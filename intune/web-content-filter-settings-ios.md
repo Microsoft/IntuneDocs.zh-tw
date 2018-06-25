@@ -58,7 +58,7 @@ ms.locfileid: "34456345"
 ## <a name="specific-websites-only"></a>僅限特定網站
 
 1. 在 [網路內容篩選器] 窗格中，針對您要允許的每個網站設定下列設定：
-    - **URL**輸入您要允許之網站的 URL，例如 **http://www.contoso.com**。
+    - **URL**輸入您要允許之網站的 URL，例如 **http://www.contoso.com**。 
     - **書籤路徑**：輸入您要儲存書籤的位置路徑，例如 **/Contoso/Business Apps**。 如果您不新增路徑，書籤就會新增到裝置的預設書籤資料夾。
     - **標題**：輸入書籤的描述性標題。
 2. 輸入每個網站的資訊後，按一下 [新增]。
