@@ -9,7 +9,7 @@
 
 ### <a name="configure-automatic-mdm-enrollment"></a>設定自動 MDM 註冊
 
-1. 登入 [Azure 管理入口網站](https://portal.azure.com) (https://manage.windowsazure.com)，然後選取 [Azure Active Directory]。
+1. 登入 [Azure 管理入口網站 ](https://portal.azure.com) (https://manage.windowsazure.com) ，然後選取 **Azure Active Directory**。
 
    ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-azure-main.png)
 
