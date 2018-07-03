@@ -557,6 +557,11 @@
               items:
                 - name: Zimperium 與 Intune 整合
                   href: zimperium-mtd-connector-integration.md
+            - name: 設定 Pradeo
+              href: pradeo-mobile-threat-defense-connector.md
+              items:
+                - name: Pradeo 與 Intune 整合
+                  href: pradeo-mtd-connector-integration.md
             - name: 為 MTD 設定 Intune
               items:
                 - name: 新增 MTD 應用程式
