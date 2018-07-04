@@ -101,7 +101,7 @@ ms.locfileid: "34190651"
 
 開啟應用程式的安裝頁面，然後將 URL 複製到剪貼簿。 您現在可以在符合規範或不符合規範的應用程式清單中使用此 URL。
 
-範例：在 [Google Play 的 [應用程式] 區段](https://play.google.com/store/apps)搜尋 **Microsoft Planner**。 使用 URL：**https://play.google.com/store/apps/details?id=com.microsoft.planner**。
+範例：在 [Google Play 的 [應用程式] 區段](https://play.google.com/store/apps)搜尋 **Microsoft Planner**。 使用 URL：**https://play.google.com/store/apps/details?id=com.microsoft.planner** 。
 
 ### <a name="additional-options"></a>其他選項
 
