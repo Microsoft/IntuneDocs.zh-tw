@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744579"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844975"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -56,7 +56,7 @@ ms.locfileid: "34744579"
 |**電話號碼** | 20 | 此連絡電話號碼會顯示在 [連絡 IT] 頁面，讓員工能夠連絡您以尋求支援。 |
 |**電子郵件地址**| 40 | 此連絡地址會顯示在 [連絡 IT] 頁面中。 您必須輸入有效的電子郵件地址，格式為 `alias@domainname.com`。 |
 |**網站名稱**| 40 | 這是支援網站的 URL 所顯示的易記名稱。 若只指定支援網站 URL 而未指定易記名稱，將會在公司入口網站的 [連絡 IT] 頁面上顯示 [移至 IT 部門網站]。 |
-|**網站 URL**| 150 | 如果想讓使用者參考您的支援網站，請在這裡指定 URL。 URL 的格式必須為 **https://www.contoso.com**。 如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。 |
+|**網站 URL**| 150 | 如果想讓使用者參考您的支援網站，請在這裡指定 URL。 URL 的格式必須為 `https://www.contoso.com`。 如果您沒有指定 URL，公司入口網站的 [連絡 IT] 頁面上將不會顯示支援網站的任何內容。 |
 | **其他資訊**| 120 | 顯示在 [連絡 IT] 頁面中。 |
 
 

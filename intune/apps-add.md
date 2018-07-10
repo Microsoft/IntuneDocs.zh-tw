@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744987"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263399"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -56,8 +56,8 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | 適用於 macOS 的 Office 365 應用程式 | 市集應用程式 (Office 365) | 選取 [Office 365 套件] 下的 [macOS] 為 [應用程式類型]，然後選取 Office 365 應用程式套件。 |
 | Android 企業營運 (LOB) 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.apk** 的 Android 安裝檔。  |
 | iOS LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.ipa** 的 iOS 安裝檔。  |
-| Windows Phone LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.xap** 的 iOS 安裝檔。  |
-| Windows LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為應用程式類型，選取 [應用程式套件檔案]，然後輸入副檔名為 **.msi**、**.appx** 或 **.appxbundle** 的 iOS 安裝檔。 |
+| Windows Phone LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.xap** 的 Windows Phone 安裝檔。  |
+| Windows LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為應用程式類型、選取 [應用程式套件檔案]，然後輸入副檔名為 **.msi**、**.appx** 或 **.appxbundle** 的 Windows 安裝檔。 |
 | 內建 iOS 應用程式  | 內建應用程式 | 選取 [內建應用程式] 為 [應用程式類型]，然後在提供的應用程式清單中選取內建應用程式。  |
 | 內建 Android 應用程式  | 內建應用程式 | 選取 [內建應用程式] 為 [應用程式類型]，然後在提供的應用程式清單中選取內建應用程式。  |
 | Web 應用程式  | Web 應用程式  | 選取 [Web 連結] 為 [應用程式類型]，然後輸入指向 Web 應用程式的有效 URL。  |

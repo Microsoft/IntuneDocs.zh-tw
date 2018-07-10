@@ -3,10 +3,10 @@ title: 為受管理的 Android 裝置新增應用程式設定原則
 titlesuffix: Microsoft Intune
 description: 在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android for Work 應用程式時的設定。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470860"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
@@ -35,15 +36,12 @@ ms.lasthandoff: 04/16/2018
 3. 選擇 [Mobile Apps] 工作負載。
 4. 選擇 [管理] 群組中的 [應用程式設定原則]，然後選擇 [新增]。
 5. 使用下列詳細資料：
-    - **名稱**  
-      將在 Azure 入口網站中顯示的設定檔名稱。
-    - **描述**  
-      將在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型**  
-      選擇 [受管理裝置]。
+    - **名稱** - 將在 Azure 入口網站中顯示的設定檔名稱。
+    - **描述** - 將在 Azure 入口網站中顯示的設定檔描述。
+    - **裝置註冊類型** - 選擇 [受控應用程式]。
 6. 為 [平台] 選取 [Android for Work]。
 7. 選取 [相關聯的應用程式] 來選擇您要定義應用程式設定原則的應用程式。 從 Android for Work 應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
-8. 選取 [組態設定]。 您可以透過下列方式設定組態：
+8. 選取 [權限]。 您可以透過下列方式設定組態：
     - [設定設計工具](#Use-the-configuration-designer)
     - [JSON 編輯器](#Enter-the-JSON-editor)
 9. 選擇 [確定]，然後選擇 [新增]。
