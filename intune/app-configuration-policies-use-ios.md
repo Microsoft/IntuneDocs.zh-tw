@@ -3,10 +3,10 @@ title: 為受控的 iOS 裝置新增應用程式設定原則
 titlesuffix: Microsoft Intune
 description: 了解如何使用應用程式設定原則在 iOS 應用程式執行時，將設定資料提供給該應用程式。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232228"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受管理的 iOS 裝置新增應用程式設定原則
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 iOS 應用程式時的設定。 您不會直接將這些原則部署給使用者與裝置。 而是建立原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
+使用 Microsoft Intune 中的應用程式設定原則，提供 iOS 應用程式的自訂組態設定。 這些組態設定可讓您根據供應商指示來自訂應用程式。 您必須從應用程式的供應商取得這些組態設定 (金鑰和值)。 若要設定應用程式，請以金鑰和值的形式，或以包含金鑰和值的 XML 形式來指定設定。 此外，您不會直接將這些設定原則指派給使用者與裝置。 而是建立設定原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是第一次執行時)，便會使用這些設定。
 
-您可以使用包含與排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。 
+新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。 
 
 >[!NOTE]
 >Intune 會在主控台中提供預先建立的 [所有使用者] 和 [所有裝置] 群組，附有內建的最佳化方便您使用。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。
 
-選取應用程式設定原則包含的群組後，您也可以選擇要排除的特定群組。
+選取應用程式設定原則包含的群組後，您也可以選擇要排除的特定群組。 如需詳細資訊，請參閱 [Microsoft Intune 的包含與排除應用程式指派](apps-inc-exl-assignments.md)。
 
 > [!TIP]
 > 此原則類型目前僅針對執行 iOS 8.0 和更新版本的裝置提供。 它支援下列應用程式安裝類型︰
@@ -49,18 +50,16 @@ ms.lasthandoff: 04/16/2018
 3. 選擇 [Mobile Apps] 工作負載。
 4. 選擇 [管理] 群組中的 [應用程式設定原則]，然後選擇 [新增]。
 5. 使用下列詳細資料：
-    - **名稱**<br>
-      在 Azure 入口網站中顯示的設定檔名稱。
-    - **描述**<br>
-      在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型**<br>
-      選擇 [受管理裝置]。
+    - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
+    - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
+    - **裝置註冊類型** - 選擇 [受控裝置]。
 6. 為 [平台] 選取 [iOS]。
 7.  選擇 [相關聯的應用程式]。 然後，在 [相關聯的應用程式] 窗格上，選擇要套用設定的受控應用程式，然後選取 [確定]。
 8.  在 [新增設定原則] 窗格上，選擇 [組態設定]。
-9. 選取 [組態設定格式]。 選取下列其中一項：
-    - **[使用設定設計工具](#use-configuration-designer)**
-    - **[輸入 XML 資料](#enter-xml-data)**
+9. 選取 [組態設定格式]。 選取下列其中一項以新增 XML 資訊：
+    - **使用設定設計工具**
+    - **輸入 XML 資料**<br></br>
+    如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 XML 資料](#enter-xml-data)。 
 10. 新增 XML 資訊之後，請選擇 [確定]，然後選擇 [新增] 新增設定原則。 即會顯示設定原則的概觀窗格。
 11. 選取 [指派] 來顯示包含與排除選項。 
 
@@ -80,17 +79,14 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="use-configuration-designer"></a>使用設定設計工具
 
-您可以在 Intune 中已註冊或未註冊的裝置上，針對應用程式使用設定設計工具。 設計工具可讓您設定特定的設定金鑰和值。 您也必須指定每個值的資料類型。 安裝應用程式時，會自動將設定值提供給應用程式。
+Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft Intune 中已註冊或未註冊的裝置上，針對應用程式使用設定設計工具。 設計工具可讓您設定特定的設定金鑰和值，以協助您建立基礎 XML。 您也必須指定每個值的資料類型。 安裝應用程式時，會自動將這些設定提供給應用程式。
 
 ### <a name="add-a-setting"></a>新增設定
 
 1. 對於設定中的每個金鑰和值，請設定：
-   - **設定金鑰**<br>
-     唯一識別特定設定組態的金鑰。
-   - **實值型別**<br>
-     設定值的資料類型。 類型包括整數、實數、字串或布林值。
-   - **設定值**<br>
-     設定的值。
+   - **設定金鑰** - 唯一識別特定設定組態的金鑰。
+   - **實值型別** - 設定值的資料類型。 類型包括整數、實數、字串或布林值。
+   - **設定值** - 設定的值。
 2. 選擇 [確定] 來設定您的組態設定。
 
 ### <a name="delete-a-setting"></a>刪除設定
@@ -165,4 +161,4 @@ Intune 支援屬性清單中的下列資料類型：
 
 ## <a name="next-steps"></a>接下來的步驟
 
-一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
+繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。

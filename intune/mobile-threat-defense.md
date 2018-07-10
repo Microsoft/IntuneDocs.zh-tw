@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046259"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123396"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合是什麼？
 
@@ -41,10 +41,12 @@ Intune Mobile Threat Defense 連接器可讓您以所選的 Mobile Threat Defens
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 會收集哪些 Mobile Threat Defense 資料？
 
-Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 Mobile Threat Defense (MTD) 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 11+ 裝置使用者的應用程式清查。
+如果啟用，Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 Mobile Threat Defense (MTD) 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 裝置使用者的應用程式清查。
+
+此服務為選擇性；預設不會共用應用程式清查資訊。 Intune 系統管理員必須在服務設定中啟用 iOS 裝置的應用程式同步，才能共用任何應用程式清查資訊。
 
 **應用程式清查**  
-個人擁有和公司擁有的 iOS 11+ 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
+如果您啟用 iOS 裝置的應用程式同步，公司和個人擁有的 iOS 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
 
  - 應用程式識別碼
  - 應用程式版本
@@ -53,7 +55,7 @@ Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 
  - 應用程式套件組合大小
  - 應用程式動態大小
  - 應用程式是否已驗證
- - 應用程式是否受管理
+ - 應用程式是否受控
 
 ## <a name="sample-scenarios"></a>範例案例
 
@@ -76,3 +78,4 @@ Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

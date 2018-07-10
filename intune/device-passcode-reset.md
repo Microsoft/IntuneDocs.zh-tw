@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216304"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964720"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -28,13 +28,13 @@ ms.locfileid: "34216304"
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- 以工作設定檔、7.0 版及更新版本註冊的 Android 裝置
+- 以工作設定檔、8.0 版及更新版本註冊的 Android 裝置
 - 版本為 6.0 或更舊版本的 Android 裝置
 - iOS 
      
 ## <a name="unsupported-platforms"></a>不支援的平台
 
-- 以工作設定檔、6.0 版及更舊版本註冊的 Android 裝置
+- 以工作設定檔、7.0 版及更舊版本註冊的 Android 裝置
 - 版本為 7.0 或更新版本的 Android 裝置
 - macOS
 - Windows
@@ -48,7 +48,7 @@ ms.locfileid: "34216304"
 
 ## <a name="resetting-android-for-work-passcodes"></a>重設 Android for Work 密碼
 
-支援的 Android for Work 裝置會收到新的受控設定檔解除鎖定密碼，或使用者的受控設定檔查問。 針對具有工作設定檔的 Android 7.0 或更新版本裝置，使用者會在完成註冊後立即收到啟用其重設密碼權杖的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
+支援的 Android for Work 裝置會收到新的受控設定檔解除鎖定密碼，或使用者的受控設定檔查問。 針對具有工作設定檔的 Android 8.0 或更新版本裝置，終端使用者會在完成註冊後立即收到啟用其重設密碼權杖的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
 
 ## <a name="resetting-ios-passcodes"></a>重設 iOS 密碼
 

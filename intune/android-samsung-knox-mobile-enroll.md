@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915806"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964703"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -60,8 +60,8 @@ ms.locfileid: "33915806"
 | MDM 設定檔欄位| 必要？ | 值 |
 |-------------------|-----------|-------|
 |MDM Server URI \(MDM 伺服器 URI\)     | 否        |將此留白。
-|Profile Name \(設定檔名稱\)       | 是       |輸入您選擇的設定檔名稱。
-|Description \(描述\)        | 否        |輸入描述設定檔的文字。
+|設定檔名稱       | 是       |輸入您選擇的設定檔名稱。
+|描述        | 否        |輸入描述設定檔的文字。
 |MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme
 |Skip Setup wizard \(略過設定精靈\)  | 否        |選擇此選項以代表使用者略過標準裝置設定提示。
 |Allow End User to Cancel Enrollment \(允許使用者取消註冊\) | 否 | 選擇此選項以允許使用者取消 KME。
@@ -120,6 +120,8 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 - **Google 裝置擁有者模式：** 本預覽並不支援在 Google 裝置擁有者模式下使用 KME 進行註冊。 我們目前正在調查此案例。
 
 - **「密碼」欄位會被忽略：** 若 Knox 入口網站 [Device details] \(裝置詳細資料\) 中的 [password] \(密碼\) 欄位已被填入，Intune 公司入口網站應用程式會忽略它。 使用者必須在裝置上輸入密碼以完成裝置註冊。
+
+- **Android Enterprise 註冊：** KME 不支援 Android Enterprise 註冊。
 
 ## <a name="getting-support"></a>取得支援
 深入了解[如何取得 Samsung KME 的支援](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm) \(英文\)。

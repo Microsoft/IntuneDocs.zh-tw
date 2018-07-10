@@ -2,10 +2,10 @@
 title: RBAC 搭配 Microsoft Intune
 description: 了解角色型存取控制 (RBAC) 如何讓您控制誰可以執行動作，並在 Microsoft Intune 中進行變更。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474559"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
 
@@ -26,7 +27,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 - **角色定義**：角色的名稱、其所管理的資源，以及針對每個資源授與的權限。
 - **成員**：授與權限的使用者群組。
-- **範圍**：成員可將其設為應用程式或原則部署目標或執行遠端工作的使用者或裝置群組。
+- **範圍**：成員可以管理的使用者或裝置群組。
 - **指派**：當定義、成員及範圍設定完成之後，便完成了指派。
 
 ![Intune RBAC 範例](./media/intune-rbac-1.PNG)
@@ -59,7 +60,8 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 - **技術支援人員**：對使用者和裝置執行遠端工作，並可將應用程式或原則指派給使用者或裝置。
 - **原則和設定檔管理員**：管理合規性原則、組態設定檔、Apple 註冊和公司裝置識別碼。
 - **唯讀操作員**：檢視使用者、裝置、註冊、設定和應用程式資訊， 但無法對 Intune 進行變更。
-- **應用程式管理員**：管理行動裝置及受管理的應用程式，並可讀取裝置資訊。
+- **應用程式管理員**：管理行動裝置及受控應用程式、可讀取裝置資訊，以及可檢視裝置組態設定檔。
+- **Intune 角色系統管理員**： 管理自訂的 Intune 角色，並新增內建的 Intune 角色指派。 它是可以為系統管理員指派權限的唯一 Intune 角色。
 - **學校管理員**：管理 [Intune 教育版](introduction-intune-education.md)的 Windows 10 裝置，可以採取下列動作： 
 
 |權限|操作|
@@ -78,18 +80,20 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格中，選擇 [Intune 角色]，然後選取 [所有角色]。
-4. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的內建角色。
+1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的內建角色。
 
-5. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [指派] > [指派]。
+2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。
 
     > [!NOTE]
     > 您無法刪除或編輯內建角色
 
-6. 在 [角色指派] 窗格中，輸入 [指派名稱] 以及選用的 [指派描述]，然後選擇下列項目︰
+3. 在自訂角色窗格中，選擇 [指派]。
+
+4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
-    - **範圍** - 選取包含上列成員可以管理的使用者群組。 您也可以選擇將範圍設定為 [所有使用者]、[所有裝置] 或 [所有使用者和裝置]。
+    - **範圍** - 選取包含上列成員可以管理的使用者群組。
 <br></br>
-7. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
+5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
 ### <a name="intune-rbac-table"></a>Intune RBAC 表格
 
@@ -126,13 +130,13 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
 1. 在 [Intune 角色 - 所有角色] 窗格中，選擇您想要指派的自訂角色。
 
-2. 在 [<角色名稱> - 概觀] 窗格中，選擇 [指派]。 您也可以在此窗格中編輯或刪除現有的角色。
+2. 在 [<角色名稱> - 概觀] 窗格中，依序選擇 [管理] 和 [指派]。 您也可以在此窗格中編輯或刪除現有的角色。
 
 3. 在自訂角色窗格中，選擇 [指派]。
 
 4. 在 [角色指派] 窗格中，輸入指派的 [名稱] 以及選用的 [描述]，然後選擇下列項目︰
     - **成員** - 選取包含您要授與權限之使用者的群組。
-    - **範圍** - 選取包含上列成員可以管理的使用者群組。 您也可以選擇將範圍設定為 [所有使用者]、[所有裝置] 或 [所有使用者和裝置]。
+    - **範圍** - 選取包含上列成員可以管理的使用者群組。
 <br></br>
 5. 完成之後，請按一下 [確定] 。 新指派會隨即顯示在指派清單中。
 
@@ -143,5 +147,3 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 ## <a name="see-also"></a>另請參閱
 
 [使用 Azure AD 指派角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
-
-

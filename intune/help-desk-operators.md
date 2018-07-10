@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833343"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329870"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -234,6 +234,15 @@ ms.locfileid: "31833343"
 | 裝置類型 | 裝置類型的名稱。                                                       |
 | 原則    | 裝置擁有權類型。 這可以是 [公司]、[個人] 和 [不明]。 |
 | 上次同步處理   | 裝置最後一次與 Intune 同步處理的時間戳記。                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>從行動裝置收集可用的資料
+
+針對使用者的裝置問題進行疑難排解時，使用下列資源來協助收集裝置資料：
+  - [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [使用詳細資訊記錄來協助公司支援人員修正裝置問題](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [使用 USB 纜線將 Android 記錄傳送給公司支援人員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>接下來的步驟
 

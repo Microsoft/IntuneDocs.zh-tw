@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745111"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843118"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置 (網路範圍)
 
@@ -35,7 +35,7 @@ ms.locfileid: "34745111"
 2. 建立需要將這些裝置連線至公司網路的合規性原則，並指派此原則。
 3. 如果裝置離開製造工廠，裝置即視為不符合規範，因此沒有公司資源的存取權。
 
-使用 Intune 原則，您可以傳送不符合規範的通知，也可以鎖定裝置。 當裝置回到內部部署且位於網路位置時，裝置即可解除鎖定，並重新取得公司資源的存取權。
+此外，您可以新增[不符合規範時所採取的動作](#configure-the-actions-for-noncompliance)。 當裝置回到內部部署且位於網路位置時，它會重新取得公司資源的存取權。
 
 ## <a name="prerequisites"></a>必要條件
 

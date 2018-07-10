@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803834"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
@@ -249,7 +250,9 @@ ms.lasthandoff: 04/26/2018
 
   GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成個別監視器 DPI 感知。 請指定會開啟 GDI DPI 縮放比例的舊版應用程式。 應用程式上的 GDI DPI 縮放比例若同時設為開啟和關閉，該應用程式的縮放比例功能就會關閉。
 
-## <a name="kiosk-preview"></a>Kiosk (預覽)
+## <a name="kiosk-preview---obsolete"></a>Kiosk (預覽) - 已淘汰
+
+這些設定正在移動，而且會在即將推出的版本中移除。 若要使用新設定，請參閱 [Windows 10 及更新版本中的 Kiosk 設定](kiosk-settings.md)。
 
 Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 使用者無法存取裝置上任何 kiosk 應用程式外的任何功能。
 
@@ -262,9 +265,12 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 #### <a name="single-app-kiosks"></a>單一應用程式 Kiosk
 輸入下列設定：
 
-- **使用者帳戶** - 輸入與 kiosk 應用程式關聯的本機 (對裝置而言) 使用者帳戶或 Azure AD 帳戶登入。 針對已加入 Azure AD 網域的帳戶，請使用 `domain\username@tenant.org` 格式來輸入帳戶。 
+- **使用者帳戶** - 輸入與 Kiosk 應用程式關聯的本機 (對裝置而言) 使用者帳戶、AD 網域帳戶或 Azure AD 帳戶登入。
+  - 本機帳戶：以 `devicename\accountname`、`.\accountname` 或 `accountname` 形式輸入
+  - 網域帳戶：以 `domain\accountname` 形式輸入
+  - Azure AD 帳戶：以 `AzureAD\emailaddress` 形式輸入。 請務必輸入 "AzureAD"，因為這是固定網域名稱。 後面接著 Azure AD 電子郵件地址。 例如，輸入 `AzureAD\user@contoso.onmicrosoft.com`。
 
-    針對在面對大眾的環境中且已啟用自動登入功能的 kiosk，應該使用權限最低 (例如本機標準使用者帳戶) 的使用者類型。 若要設定 Azure Active Directory (AD) 帳戶以使用 kiosk 模式，請使用 `AzureAD\user@contoso.com` 格式。
+    針對在面對大眾的環境中且已啟用自動登入功能的 kiosk，應該使用權限最低 (例如本機標準使用者帳戶) 的使用者類型。 如果針對 Kiosk 模式使用 Azure AD 帳戶，請務必輸入 `AzureAD\user@yourorganization.com`。
 
 - **應用程式的應用程式使用者模型識別碼 (AUMID)** - 輸入 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 

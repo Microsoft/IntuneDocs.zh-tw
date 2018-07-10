@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178157"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305428"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -126,6 +126,8 @@ ms.locfileid: "34178157"
 因為 Intune 應用程式保護原則會以使用者的身分識別為目標，所以傳統上，使用者的保護設定會同時套用至已註冊 (MDM 受控) 和未註冊的裝置 (非 MDM)。 因此，您可以讓 Intune 應用程式保護原則以 Intune 已註冊或未註冊 iOS 及 Android 裝置為目標。 您可以有一個用於非受控裝置的保護原則，其中會提供適當的嚴格資料外洩防護 (DLP) 控制措施，並有另一個用於 MDM 受控裝置的保護原則，其中可能提供較寬鬆的 DLP 控制措施。 
 
 若要建立這些原則，請在 Intune 主控台中瀏覽至 [行動應用程式] > [應用程式保護原則]，然後按一下 [新增原則]。 您也可以編輯現有的應用程式保護原則。 如果您想要將應用程式保護原則同時套用至受控和非受控裝置，請確認將 [以所有應用程式類型為目標] 設定為 [是] (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [以所有應用程式類型為目標] 選項設定為 [否]。 
+
+針對視為「受控」的 iOS 應用程式，需要為每個應用程式部署 **IntuneMAMUPN** 設定原則設定。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
 
 > [!NOTE]
 > 針對以裝置管理狀態為基礎的應用程式保護原則，如需特定 iOS 的支援資訊，請參閱[根據管理狀態來設定目標的 MAM 保護原則](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)。

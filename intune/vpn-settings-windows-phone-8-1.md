@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291439"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>設定 Microsoft Intune 中執行 Windows Phone 8.1 之裝置的 VPN 設定
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 - **角色** 僅限 Pulse Secure - 指定有權存取此連線之使用者角色的名稱。 使用者角色定義個人設定和選項，以及啟用或停用某些存取功能。
 - **領域** (僅限 Pulse Secure) - 指定您要使用的驗證領域名稱。 驗證領域就是 Pulse Secure 連線類型使用的驗證資源群組。
 
-- **DNS 尾碼搜尋清單**  -  **新增**一或多個 DNS 尾碼。 使用簡短名稱連線到網站時，會搜尋您指定的每個 DNS 尾碼。 例如，指定 DNS 尾碼 **domain1.contoso.com** 和 **domain2.contoso.com**，然後瀏覽 URL **http://mywebsite**，就會搜尋 URL **http://mywebsite.domain1.contoso.com** 和 **http://mywebsite.domain2.contoso.com**。
+- **DNS 尾碼搜尋清單**  -  **新增**一或多個 DNS 尾碼。 使用簡短名稱連線到網站時，會搜尋您指定的每個 DNS 尾碼。 例如，指定 DNS 尾碼 **domain1.contoso.com** 和 **domain2.contoso.com**，然後瀏覽 URL `http://mywebsite`，就會搜尋 URL `http://mywebsite.domain1.contoso.com` 和 `http://mywebsite.domain2.contoso.com`。
 
 - **自訂 XML** - 指定任何可用於設定 VPN 連線的自訂 XML 命令。
 

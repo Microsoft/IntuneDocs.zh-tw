@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032586"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232931"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
-當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對已經十分熟悉傳統入口網站中 Intune 的使用者，但是想知道 Azure 入口網站中 Intune 的操作步驟，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
+當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
 
 |功能 |傳統入口網站中的路徑|Azure 入口網站中 Intune 的路徑|
@@ -45,27 +45,37 @@ ms.locfileid: "31032586"
 Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 來管理群組。
 
 ## <a name="where-did-enrollment-rules-go"></a>註冊規則在哪裡？
-在傳統入口網站中，您可以設定規則來控管行動裝置以及新式 Windows 和 macOS 裝置的 MDM 註冊：
+在傳統入口網站中，您可以設定規則來控管行動裝置以及新式 Windows 和 macOS 裝置的 MDM 註冊。
 
 ![傳統行動裝置註冊規則的影像](./media/01-classic-rules.png)
 
-這些規則會套用到您的 Intune 帳戶中的所有使用者，無一例外。 在 Azure 入口網站中，這些規則現在會顯示在兩種不同的原則類型中：[裝置類型限制] 和 [裝置限制]：
+這些規則會套用到您的 Intune 帳戶中的所有使用者，無一例外。 在 Azure 入口網站中，這些規則現在會顯示在兩種不同的原則類型中：[裝置類型限制] 和 [裝置限制]。
 
 ![Azure 行動裝置註冊限制的影像](./media/02-azure-enroll-restrictions.png)
 
-預設的 [裝置限制的限制] 對應至傳統入口網站中的 [裝置註冊限制]：
+預設的 [裝置限制] 對應至傳統入口網站中的 [裝置註冊限制]。
 
 ![Azure 裝置限制的影像](./media/03-azure-device-limit.png)
 
-預設的 [裝置類型限制] 對應至傳統入口網站中的 [平台限制]：
+預設的 [裝置類型限制] 對應至傳統入口網站中的 [平台限制]。
 
 ![Azure 裝置類型限制的影像](./media/04-azure-platform-restrictions.png)
 
-允許或封鎖個人擁有之裝置的功能現在是在 [裝置類型限制] 的 [平台設定] 下進行管理：
+允許或封鎖個人擁有之裝置的功能現在是在 [裝置類型限制] 的 [平台設定] 下進行管理。
 
 ![Azure 個人裝置封鎖設定的影像](./media/05-azure-personal-block.png)
 
 新的限制功能只會新增至 Azure 入口網站。
+
+## <a name="where-did-my-conditional-access-policies-go"></a>我的條件式存取原則移到哪個位置？
+當您的租用戶移轉至 Azure 入口網站之後，租用戶的條件式存取原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
+
+如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)。 
+
+## <a name="where-did-my-compliance-policies-go"></a>我的合規性原則移到哪個位置？
+當您的租用戶移轉至 Azure 入口網站之後，租用戶的合規性原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
+
+如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/en-us/intune/known-issues#compliance)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
 在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：

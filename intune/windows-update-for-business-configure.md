@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744885"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822716"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -157,7 +157,7 @@ ms.locfileid: "34744885"
 > 如需有關 MS DM 伺服器的詳細資訊，請參閱 [DMClient 設定服務提供者 (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp)。
 
 ## <a name="pause-updates"></a>暫停更新
-您可以讓裝置暫停接收功能更新或品質更新一段期間，自您暫停更新起最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 進行此掃描之後，您可以再次暫停更新。
+您可以讓裝置暫停接收功能更新或品質更新一段期間，自您暫停更新起最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
@@ -169,10 +169,13 @@ ms.locfileid: "34744885"
 > 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>解除安裝 Windows 10 軟體更新的最新版本 
-如果您發現 Windows 10 電腦上發生重大問題，可以選擇解除安裝 (復原) 最新的功能更新或最新的品質更新。 解除安裝功能或品質更新只適用於裝置所在的維護通道。 解除安裝將會觸發原則，以在 Windows 10 電腦上還原先前的更新。 特別對於功能更新，您可以將能夠套用解除安裝最新版本的時間限制為 2-60 天。 若要設定軟體更新解除安裝選項，請從 Azure 入口網站內的 **Microsoft Intune** 刀鋒視窗中選取 [軟體更新]。 然後，從 [軟體更新] 刀鋒視窗中，選取 [Windows 10 更新通道]。 接著可以選擇 [概觀] 區段中的 [解除安裝] 選項。
+如果您發現 Windows 10 電腦上發生重大問題，可以選擇解除安裝 (復原) 最新的功能更新或最新的品質更新。 解除安裝功能或品質更新只適用於裝置所在的維護通道。 解除安裝將會觸發原則，以在 Windows 10 電腦上還原先前的更新。 特別是對於功能更新，您可以將能夠套用解除安裝最新版本的時間限制為 2-60 天。 若要設定軟體更新解除安裝選項：
+
+1. 在 Intue 中，選取 [軟體更新]。
+2. 選取 [Windows 10 更新通道] > 選取現有的更新通道 > [解除安裝]。
 
 > [!NOTE]
-> 在 Windows 10 電腦上成功復原品質更新之後，終端使用者仍然可以藉由選取 [Windows 設定] > [更新] > [更新記錄] 來查看成功回復的更新。
+> 在 Windows 10 電腦上成功復原品質更新之後，終端使用者會繼續在 [Windows 設定] > [更新] > [更新記錄] 中看到列出的更新。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
 

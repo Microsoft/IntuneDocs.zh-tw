@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803817"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -97,7 +98,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
     -   **必要的密碼類型** - 指定需要的密碼類型，例如只可包含數字或英數字元。
     -   **密碼中的非英數字元數目** - 指定密碼中必須包含的符號字元數 (例如 **#** 或 **@**)。
     -   **密碼長度下限** - 指定密碼的字元數下限。
-    -   **登入失敗幾次後即抹除裝置** - 指定失敗的登入嘗試次數，之後這個設定即抹除裝置。
+    -   **登入失敗幾次後即抹除裝置** - 指定唯一密碼嘗試失敗次數，之後這個設定即抹除裝置。
     -   **在螢幕鎖定最少幾分鐘後必須輸入密碼**<sup>1</sup> - 指定裝置可閒置多久之後，使用者必須重新輸入密碼。
     -   **沒有活動最久幾分鐘後鎖定螢幕**<sup>1</sup> - 指定裝置顯示畫面關閉之前維持開啟狀態的分鐘數。
     -   **密碼到期 (天數)** - 指定多少天後必須變更裝置密碼。
@@ -125,7 +126,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 -   **應用程式內購買** - 允許從執行中的應用程式進行市集購買。
 -   **明確的 iTunes 音樂、播客或新聞內容 (僅限監督)** - 允許裝置可從市集存取標記為成人內容的內容。
 -   **從 iBook Store 下載標記為 [成人作品] 的內容** - 允許使用者下載分類為「成人作品」的書籍。
--   **在未受管理應用程式中檢視公司文件** - 允許在任何應用程式中檢視公司文件。<br>**範例︰**您想要防止使用者將檔案從 OneDrive 應用程式儲存至 Dropbox。 將此設定設定為否。 裝置收到原則後 (例如重新啟動後)，即不再允許儲存。
+-   **在未受管理應用程式中檢視公司文件** - 允許在任何應用程式中檢視公司文件。<br>**範例︰** 您想要防止使用者將檔案從 OneDrive 應用程式儲存至 Dropbox。 將此設定設定為否。 裝置收到原則後 (例如重新啟動後)，即不再允許儲存。
 -   **在公司應用程式中檢視非公司文件** - 允許在公司的受管理應用程式中檢視任何文件。
 -   **將 AirDrop 視為未受管理的目的地** - 停止透過從受管理應用程式傳送資料。 從 Airdrop 傳送資料。
 -   **正在新增 Game Center 的朋友 (僅限監督)** - 允許使用者在 Game Center 新增朋友。

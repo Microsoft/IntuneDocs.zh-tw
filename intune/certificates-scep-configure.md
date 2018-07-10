@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745021"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297900"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -36,12 +36,16 @@ ms.locfileid: "34745021"
 - **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。
 NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
-- **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載「憑證連接器」安裝程式 (**ndesconnectorssetup.exe**)。 然後您可以在裝載網路裝置註冊服務 (NDES) 角色，在要安裝憑證連接器的伺服器上執行 **ndesconnectorssetup.exe**。 
+- **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載**憑證連接器**安裝程式 (**NDESConnectorSetup.exe**)。 然後您可在裝載網路裝置註冊服務 (NDES) 角色，且要安裝憑證連接器的伺服器上執行 **NDESConnectorSetup.exe**。
+
+  - NDES 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時，可發出及撤銷憑證。
+
 - **Web 應用程式 Proxy 伺服器** (選用)︰使用執行 Windows Server 2012 R2 或更新版本的伺服器做為 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
-  -  允許裝置使用網際網路連線接收憑證。
-  -  是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
+  - 允許裝置使用網際網路連線接收憑證。
+  - 是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
 
 #### <a name="additional"></a>Additional
+
 - 裝載 WAP 伺服器 [必須安裝更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](http://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](http://support.microsoft.com/kb/3011135)。
 - WAP 的伺服器必須有 SSL 憑證，該憑證符合發佈給外部用戶端的名稱，並且信任 NDES 伺服器上使用的 SSL 憑證。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 伺服器的新 SSL 連線。
 
@@ -71,17 +75,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 |**NDES 服務帳戶**|輸入網域使用者帳戶以做為 NDES 服務帳戶。|
 
 ## <a name="configure-your-infrastructure"></a>設定基礎結構
-在您設定憑證設定檔前，必須先完成下列工作。 執行這些工作需要對 Windows Server 2012 R2 及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
-
-**步驟 1**：建立 NDES 服務帳戶
-
-**步驟 2**：設定憑證授權單位上的憑證範本
-
-**步驟 3**：設定 NDES 伺服器上的必要條件
-
-**步驟 4**：設定 NDES 以搭配 Intune 使用
-
-**步驟 5**：啟用、安裝及設定 Intune 憑證連接器
+在您設定憑證設定檔前，必須先完成下列步驟。 執行這些步驟需要對 Windows Server 2012 R2 和更新版本以及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
 
 #### <a name="step-1---create-an-ndes-service-account"></a>步驟 1：建立 NDES 服務帳戶
 
@@ -226,7 +220,6 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (十進位) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (十進位) |
 
-
 4. 在 IIS 管理員中，選取 [預設的網站] > [要求篩選] > [編輯功能設定]。 將 [URL 長度上限] 與 [查詢字串上限] 變更為 *65534*，如下所示：
 
     ![IIS URL 和查詢長度上限](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 - 在您環境中裝載網路裝置註冊服務 (NDES) 角色的伺服器上，下載、安裝及設定憑證連接器。 若要增加您組織的 NDES 實作規模，您可以在每部 NDES 伺服器上，搭配 Microsoft Intune 憑證連接器安裝多部 NDES 伺服器。
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置設定] [憑證授權單位]。
 4. 選取 [新增] 並選取 [下載連接器檔案]。 將下載項目儲存到要安裝下載項目的伺服器所能存取的位置。
-5. 下載完成之後，在裝載網路裝置註冊服務 (NDES) 角色的伺服器上執行下載的安裝程式 (**ndesconnectorssetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 (CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。)
+5. 下載完成之後，前往裝載網路裝置註冊服務 (NDES) 角色的伺服器。 然後：
+
+    1. 確定已安裝 .NET 4.5 Framework，這對 NDES 憑證連接器是必要的。 Windows Server 2012 R2 及更新版本會自動隨附 .NET 4.5 Framework。
+    2. 執行安裝程式 (**NDESConnectorSetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。
 
     > [!NOTE]
     > 當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。 當您使用 Intune 搭配 Configuration Manager 時，將憑證註冊點安裝為個別的網站系統角色。
@@ -305,7 +302,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 6. 當提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在工作 3 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
 
     選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然未顯示您選取的憑證，請選取 [下一步] 以檢視該憑證的屬性。 選取 [下一步] [安裝]。
-    
+
     > [!IMPORTANT]
     > 啟用 Internet Explorer 增強式安全性設定的裝置上無法註冊 Intune 憑證連接器。 若要使用 Intune 憑證連接器，請[停用 IE 增強式安全性設定](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
@@ -335,10 +332,13 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> NDES 憑證連接器隨附 TLS 1.2 支援。 因此，如果安裝 NDES 憑證連接器的伺服器支援 TLS 1.2，則會使用 TLS 1.2。 如果伺服器不支援 TLS 1.2，則會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
+
 ## <a name="create-a-scep-certificate-profile"></a>建立 SCEP 憑證設定檔
 
 1. 在 Azure 入口網站中，開啟 Microsoft Intune。
-2. 依序選取 [裝置設定] 及 [設定檔]，然後選取 [建立設定檔]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 3. 輸入 SCEP 憑證設定檔的 [名稱] 與 [描述]。
 4. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選取下列平台之一，進行裝置限制設定︰
    - **Android**
@@ -406,12 +406,16 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
     > [!NOTE]
     > 針對 iOS，如果您部署多個使用相同憑證設定檔的資源設定檔，就應該會在管理設定檔中看到多個憑證複本。
-    
-如需如何指派設定檔的相關資訊，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+
+如需如何指派設定檔的資訊，請參閱[指派裝置設定檔](device-profile-assign.md)。
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune 連接器設定驗證和疑難排解
+
+若要針對問題進行疑難排解及驗證 Intune 連接器設定，請參閱 [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript) (憑證授權單位指令碼範例)
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune 連接器事件和診斷碼
 
-從 6.1803.x.x 版開始，Intune 連接器服務會在 [事件檢視器] ([應用程式及服務記錄檔] > [Microsoft Intune 連接器]) 中記錄事件。 您可以使用這些事件來協助對 Intune 連接器設定中的潛在問題進行疑難排解。 這些事件會記錄作業的成功與失敗，還會包含診斷碼及訊息，以協助 IT 系統管理員進行疑難排解。
+從 6.1806.x.x 版開始，Intune 連接器服務會在 [事件檢視器] ([應用程式及服務記錄檔] > [Microsoft Intune 連接器]) 中記錄事件。 您可以使用這些事件來協助對 Intune 連接器設定中的潛在問題進行疑難排解。 這些事件會記錄作業的成功與失敗，還會包含診斷碼及訊息，以協助 IT 系統管理員進行疑難排解。
 
 ### <a name="event-ids-and-descriptions"></a>事件識別碼和描述
 
@@ -430,10 +434,10 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 | 20102 | PkcsCertIssue_Failure  | 無法發行 PKCS 憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證範本名稱和憑證指紋的事件詳細資料。 | 0x00000000、0x00000400、0x00000401、0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | 已成功撤銷憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證序號的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | 無法撤銷憑證。 請檢閱與此事件相關之裝置識別碼、使用者識別碼、CA 名稱、憑證序號的事件詳細資料。 如需額外資訊，請參閱 NDES SVC 記錄檔。   | 0x00000000、0x00000402、0x0FFFFFFF |
-| 20300 | Download_Success | 已成功下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。  | 0x00000000、0x0FFFFFFF |
-| 20302 | Download_Failure | 無法下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
-| 20400 | Upload_Success | 已成功上傳憑證的要求或撤銷資料。 請檢閱上傳詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
-| 20402 | Upload_Failure | 無法上傳憑證的要求或撤銷資料。 請檢閱事件詳細資料 > 上傳狀態，以判斷失敗點。| 0x00000000、0x0FFFFFFF |
+| 20300 | Upload_Success | 已成功上傳憑證的要求或撤銷資料。 請檢閱上傳詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
+| 20302 | Upload_Failure | 無法上傳憑證的要求或撤銷資料。 請檢閱事件詳細資料 > 上傳狀態，以判斷失敗點。| 0x00000000、0x0FFFFFFF |
+| 20400 | Download_Success | 已成功下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。  | 0x00000000、0x0FFFFFFF |
+| 20402 | Download_Failure | 無法下載簽署憑證、下載用戶端憑證或撤銷憑證的要求。 請檢閱下載詳細資料的事件詳細資料。 | 0x00000000、0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | 憑證登錄點已成功驗證用戶端挑戰 | 0x00000000、0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | 憑證登錄點已完成，但拒絕要求。 請參閱診斷碼和訊息，以取得詳細資料。 | 0x00000000、0x00000411、0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | 憑證登錄點無法驗證用戶端挑戰。 請參閱診斷碼和訊息，以取得詳細資料。 請參閱對應至挑戰之裝置識別碼的事件訊息詳細資料。 | 0x00000000、0x00000408、0x00000409、0x00000410、0x0FFFFFFF |

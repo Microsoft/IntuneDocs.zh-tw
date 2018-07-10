@@ -1,64 +1,67 @@
 ---
-title: "Intune 的應用程式設定原則"
-titlesuffix: Microsoft Intune
-description: "了解在 Intune 中如何於 iOS 或 Android 裝置上使用應用程式設定原則。"
-keywords: 
-author: erikre
+title: Microsoft Intune 的應用程式設定原則
+titlesuffix: ''
+description: 了解在 Microsoft Intune 中如何於 iOS 或 Android 裝置上使用應用程式設定原則。
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 06/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52e0906b58680fa0b5628b2b5fc7445f8135658a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 6c04d2d8fa2e302c4d11760d3660a0a67e8b3695
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291541"
 ---
-# <a name="app-configuration-policies-for-intune"></a>Intune 的應用程式設定原則
+# <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
-使用 Microsoft Intune 中的應用程式設定原則，提供使用者執行 iOS 或 Android 應用程式時的設定。 例如，應用程式可能需要使用者指定：
+使用 Microsoft Intune 中的應用程式設定原則，提供 iOS 或 Android 應用程式的組態設定。 這些組態設定可讓您自訂應用程式。 您不會直接將這些設定原則指派給使用者與裝置。 而是建立設定原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是第一次執行時)，便會使用這些設定。
 
-- 自訂連接埠號碼。
-- 語言設定。
-- 安全性設定。
-- 公司標誌等品牌設定。
+您可以使用包含與排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。
+
+例如，應用程式可能需要您指定下列任何詳細資料：
+
+- 自訂連接埠號碼
+- 語言設定
+- 安全性設定
+- 公司標誌等品牌設定
 
 若使用者未正確輸入這些設定，可能會增加技術支援中心的負擔，使得採用新應用程式的速度變慢。
 
 應用程式組態原則可讓您在使用者執行應用程式之前，將這些設定指派給使用者來避開這些問題。 這些設定會自動提供，使用者無須採取任何動作。
 
-您不會直接將這些原則部署給使用者與裝置。 而是將原則與應用程式關聯，然後再指派應用程式。 每當應用程式檢查是否有原則設定時 (通常於初次執行時)，都會加以使用。
+每當應用程式檢查是否有組態設定時，便會使用這些設定。 一般而言，應用程式會在使用者第一次執行應用程式時檢查是否有組態設定。
 
 對於如何使用 Intune 的應用程式設定，您有兩個選項：
- - **受控裝置**  
-   Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
- - **受控應用程式**  
-   在不註冊裝置的情況下管理應用程式。
+ - **受控裝置** - Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
+ - **受控應用程式** - 在不註冊裝置的情況下管理應用程式。
 
 ## <a name="apps-that-support-app-configuration"></a>支援應用程式設定的應用程式
 
 您可以針對支援應用程式設定的應用程式，使用應用程式設定原則。 為了在 Intune 中支援應用程式設定，　必須撰寫應用程式，才能支援使用應用程式設定。 如需詳細資料，請洽詢您的應用程式廠商。
 
-將 Intune App SDK 併入應用程式，或在開發應用程式之後包裝應用程式，就可以準備好企業營運應用程式。 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 如需詳細資訊，請參閱 [Intune App SDK 概觀](app-sdk.md)。
+將 Intune App SDK 併入應用程式，或在開發應用程式之後包裝應用程式，就可以準備好企業營運應用程式。 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式設定原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 如需詳細資訊，請參閱 [Intune App SDK 概觀](app-sdk.md)。
 
 ## <a name="graph-api-support-for-app-configuration"></a>應用程式設定的圖形 API 支援
 
 此外，您也可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (以圖形 API 參考 MAM 為目標的設定)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-### <a name="managed-devices"></a>受控裝置
+### <a name="managed-devices"></a>受管理的裝置
 
- - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
- - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受控的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
+ - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受管理的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+ - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
 
-### <a name="managed-apps"></a>受控應用程式
+### <a name="managed-apps"></a>受管理的應用程式
 
- - 了解如何在受控應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受控應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。
+ - 了解如何在受管理的應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。

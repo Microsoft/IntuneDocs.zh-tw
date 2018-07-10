@@ -1,25 +1,26 @@
 ---
-title: "Jamf 裝置的裝置相容性原則"
+title: Jamf 裝置的裝置相容性原則
 titlesuffix: Microsoft Intune
-description: "使用 Microsoft Intune 相容性原則搭配 Azure Active Directory 條件式存取，來協助保護受 Jamf 管理的裝置。"
-keywords: 
+description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482330"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -34,6 +35,9 @@ ms.lasthandoff: 03/08/2018
 
 1. 開啟 Microsoft Azure，然後瀏覽至 [Intune] > [裝置合規性] > [原則]。 您可以建立 macOS 的原則，包括針對不符合規範的使用者及群組選擇一系列的動作 (例如，傳送警告電子郵件)。
 2. 搜尋想要的群組，然後對它們套用原則。
+
+> [!Note]
+> Intune 需要完整磁碟加密符合規範。
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>在 Jamf Pro 中部署 macOS 的公司入口網站應用程式
 

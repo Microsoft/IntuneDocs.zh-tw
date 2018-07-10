@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843135"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -33,7 +34,8 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 ## <a name="create-an-online-support-ticket"></a>建立線上支援票證
 
 身為 IT 系統管理員，您可以透過下列步驟，從 Azure 入口網站提出支援票證：
-
+>[!NOTE]
+>您必須是 Intune 服務管理員或全域管理員才能建立線上支援票證。 如需詳細資料，請參閱 [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) (指派系統管理員角色)。
 1. 使用您的 Intune 系統管理員認證來登入 Azure 入口網站 (<https://portal.azure.com>)，然後選擇 [?] 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)頁面。
 
     ![反白顯示 [說明 + 支援] 連結的 Azure 入口網站說明及支援問號連結螢幕擷取畫面](./media/azure-get-support.png)

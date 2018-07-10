@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474441"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -206,13 +207,17 @@ Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置�
 ## <a name="renew-a-dep-token"></a>更新 DEP 權杖  
 1. 前往 deploy.apple.com。  
 2. 在 [管理伺服器] 下，選擇與您所欲更新之權杖檔案相關的 MDM 伺服器。
-3. 選擇 [產生新權杖]。  
+3. 選擇 [產生新權杖]。
+
+    ![產生新權杖的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. 選擇 [您的伺服器權杖]。  
-5. 在 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal) 內，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。  
-6. 依序選擇權杖和 [更新權杖]。  
-7. 輸入用於建立原始權杖的 Apple ID。  
+5. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇權杖。
+    ![註冊計劃權杖的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. 選擇 [更新權杖]**Renew token**，然後輸入用於建立原始權杖的 Apple ID。  
+    ![產生新權杖的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. 上傳新下載的權杖。  
 9. 選擇 [更新權杖]。 您會看到權杖已更新的確認。   
-
-
-
+    ![確認的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/confirmation.png)

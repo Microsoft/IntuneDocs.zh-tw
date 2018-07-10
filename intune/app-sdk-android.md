@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449865"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -462,7 +463,7 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 可以視需要指定 Authority 和 NonBrokerRedirectURI。
 
-Intune SDK 小組需要您應用程式的應用程式識別碼 (用戶端識別碼)。 此項目位在 [Azure 入口網站](https://portal.azure.com/)，[All Applications] \(所有應用程式\) 下的 [應用程式識別碼] 資料行中。 請參閱[這裡](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 AAD 註冊應用程式的相關資訊。 要聯繫 Intune SDK 小組，請使用 msintuneappsdk@microsoft.com。
+Intune SDK 小組需要您應用程式的應用程式識別碼 (用戶端識別碼)。 此項目位在 [Azure 入口網站](https://portal.azure.com/)中 [應用程式識別碼] 資料行的 [所有應用程式] 下。 請參閱[這裡](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 Azure AD 註冊應用程式的相關資訊。 要聯繫 Intune SDK 小組，請使用 msintuneappsdk@microsoft.com。
 
 另請參閱以下的[條件式存取](#conditional-access)需求。
 
@@ -472,22 +473,30 @@ Intune SDK 小組需要您應用程式的應用程式識別碼 (用戶端識別�
     |--|--|
     | ClientID | 應用程式的 ClientID (由 Azure AD 於應用程式註冊時產生) |
     | SkipBroker | **True** |
+    
+    可以視需要指定 Authority 和 NonBrokerRedirectURI。
 
-可以視需要指定 Authority 和 NonBrokerRedirectURI。
 
 ### <a name="conditional-access"></a>條件式存取
-條件式存取 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)，可用來控制 AAD 資源的存取權。  [Intune 系統管理員可以定義 CA 規則](https://docs.microsoft.com/en-us/intune/conditional-access)，允許只能從由 Intune 管理的裝置或應用程式存取資源。 為確保您的應用程式能夠在適當時存取資源，必須遵循下列步驟。 如果您的應用程式不會取得任何 AAD 存取權杖，或是只會存取無法受 CA 保護的資源，您可以略過這些步驟。
+
+條件式存取 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，可用來控制 AAD 資源的存取權。 [Intune 系統管理員可以定義 CA 規則](https://docs.microsoft.com/intune/conditional-access)，允許只能從由 Intune 管理的裝置或應用程式存取資源。 為確保您的應用程式能夠在適當時存取資源，必須遵循下列步驟。 如果您的應用程式不會取得任何 AAD 存取權杖，或是只會存取無法受 CA 保護的資源，您可以略過這些步驟。
 
 1. 請遵循 [ADAL 整合指導方針](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)。 
-   請特別參閱 訊息代理程式使用的步驟 11
-2. [向 Azure Active Directory 註冊應用程式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration)。 
-   重新導向 URI 位於上述的 ADAL 整合指導方針。
+   請特別參閱訊息代理程式使用方式的步驟 11。
+
+2. [向 Azure Active Directory 註冊應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 重新導向 URI 位於上述的 ADAL 整合指導方針。
+
 3. 設定每個[常見 ADAL 設定](#common-adal-configurations)的資訊清單中繼資料參數，上面的項目 2。
-4. 藉由從 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)啟用[以裝置為基礎的 CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use)並確認下列各項，測試所有項目都已正確設定
-    - 登入您的應用程式會提示進行安裝和註冊 Intune 公司入口網站
-    - 註冊之後，登入應用程式能順利完成。
-5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com 以便新增至已核准應用程式的清單，進行[以應用程式為基礎的條件式存取](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
-6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
+
+4. 藉由從 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)啟用[以裝置為基礎的 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)並確認下列各項，測試所有項目都已正確設定
+* 登入您的應用程式會提示進行安裝和註冊 Intune 公司入口網站
+* 註冊之後，登入應用程式能順利完成。
+
+5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com 以便新增至已核准應用程式清單，進行[以應用程式為基礎的條件式存取](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)。
+
+6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
 
 ### <a name="overview"></a>概觀
@@ -1371,7 +1380,6 @@ public interface MAMAppConfig {
 
 ### <a name="how-to-customize"></a>如何自訂
 若要將樣式變更套用至 Intune MAM 檢視，您必須先建立樣式覆寫 XML 檔案。 此檔案必須置於應用程式的 "/res/xml" 目錄，您可以任意命名檔案。 下列為此檔案必須遵循之格式的範例。
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ public interface MAMAppConfig {
 | 輔色 | 反白顯示時的 PIN 方塊邊界 <br> 超連結 |accent_color | Color |
 | 應用程式標誌 | 顯示在 Intune 應用程式 PIN 畫面的大型標誌 | logo_image | Drawable |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>使用 APP-WE 服務註冊、SDK 整合式 Android LOB 應用程式及 ADAL SSO (選用)
+## <a name="default-enrollment-optional"></a>預設註冊 (選用)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 以下是針對自動 APP-WE 服務註冊在應用程式啟動時需要有使用者提示的指導方針 (在這一節中稱之為**預設註冊**)，需要有 Intune 應用程式保護原則，才能只允許受 Intune 保護的使用者使用 SDK 整合的 Android LOB 應用程式。 也包含如何啟用 SDK 整合之 Android LOB 應用程式的 SSO 相關內容。 非 Intune 使用者可使用的市集應用程式**不**支援此功能。
@@ -1413,7 +1421,7 @@ public interface MAMAppConfig {
 * Intune SDK 小組需要您應用程式的應用程式識別碼。 此項目位在 [Azure 入口網站](https://portal.azure.com/)，[All Applications] (所有應用程式) 下的 [應用程式識別碼] 資料行中。 也可以透過電子郵件 msintuneappsdk@microsoft.com 與 Intune SDK 小組連絡。
 
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
-這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
+這些指示專門針對所有想要在終端使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式開發人員。
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
    > [!NOTE] 

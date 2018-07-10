@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308869"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232801"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的公司可以看到哪些資訊？
 
-當您註冊裝置以供管理時，會賦予公司檢視裝置上特定資訊的權限，以協助保護裝置上的公司資料。
+當您向 Microsoft Intune 註冊裝置時，您的公司看不到您的個人資訊。 當您註冊裝置時，會賦予公司檢視裝置上特定資訊的權限，例如裝置型號和序號。 您的公司會使用這項資訊來協助保護裝置上的公司資料。
 
-**公司絕對不會看到的資訊**
+**公司絕對不會看到的資訊：**
 
 - 電話和 Web 瀏覽歷程記錄
 - 電子郵件和簡訊
@@ -36,7 +36,7 @@ ms.locfileid: "34308869"
 -   密碼
 - 圖片，包括相片應用程式或手機相簿的內容
 
-**公司一定會看到的資訊**
+**公司一定會看到的資訊：**
 
 - 裝置型號，例如 Google Pixel
 - 製造商，像是 Microsoft
@@ -46,7 +46,7 @@ ms.locfileid: "34308869"
 - 裝置名稱
 - 序號
 
-**公司可能會看到的資訊**
+**公司可能會看到的資訊：**
 
 -  電話號碼：如果是**公司**所擁有的裝置，公司便能看到完整的電話號碼。 如果是**個人**所擁有的裝置，公司便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料] 頁面，便可查看每個裝置的 [擁有權類型]。
 -  位置：您的公司絕對不會看到裝置的位置，除非是受監督但遺失的 iOS 裝置。 [如何得知？](https://go.microsoft.com/fwlink/?linkid=853816)
