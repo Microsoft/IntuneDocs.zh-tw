@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232931"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905371"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
@@ -36,7 +36,7 @@ ms.locfileid: "36232931"
 |依 IMEI 分組 (所有平台)| [群組] > [所有裝置] > [公司預先註冊的裝置] > [依 IMEI (所有平台)] | [[裝置註冊] > [公司裝置識別碼]](#by-imei-all-platforms)|
 | 公司裝置註冊設定檔| [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [註冊計劃設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
 | 公司裝置註冊設定檔 | [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [AC 設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | [管理] > [行動裝置管理] > [Android for Work] | [裝置註冊] > [Android for Work 註冊] |
+| Android for Work | [管理] > [行動裝置管理] > [Android for Work] | [裝置註冊] > [Android 註冊] |
 | 條款及條件 | [原則] > [條款及條件] | [裝置註冊] > [條款及條件] |
 公司入口網站設定|管理 > 公司入口網站|**管理** > Mobile 應用程式<br> **設定** > 公司入口網站商標
 

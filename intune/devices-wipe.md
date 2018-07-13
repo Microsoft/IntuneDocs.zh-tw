@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 移除裝置上的公司資料 - Azure | Microsoft Docs
-description: 移除裝置上的公司資料，或在使用 Microsoft Intune 的 Android、Android For Work、iOS、macOS 或 Windows 裝置上執行原廠重設。 也從 Azure Active Directory 中刪除裝置。
+description: 移除裝置上的公司資料，或在使用 Microsoft Intune 的 Android、Android 工作設定檔、iOS、macOS 或 Windows 裝置上執行原廠重設。 也從 Azure Active Directory 中刪除裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091722"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906051"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>使用恢復出廠預設值、移除公司資料或手動取消註冊裝置來移除裝置
 
@@ -31,7 +31,7 @@ ms.locfileid: "37091722"
 
 ## <a name="factory-reset"></a>原廠重設
 
-[原廠重設] 動作會將裝置還原成其出廠的預設設定。 根據您是否選擇 [保留註冊狀態和使用者帳戶] 核取方塊來保留或抹除使用者資料。
+[原廠重設] 動作會將裝置還原成其出廠的預設設定。 如果您選擇 [保留註冊狀態和使用者帳戶] 核取方塊，則會保留使用者資料。 否則，會安全地清除磁碟機。
 
 |重設成出廠預設值動作|**保留註冊狀態和使用者帳戶**|從 Intune 管理移除|說明|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ ms.locfileid: "37091722"
 |Azure AD 退出|已移除 Azure AD 記錄。|已移除 Azure AD 記錄。|
 |連絡人 |已移除直接從應用程式同步到原生通訊錄的連絡人。 無法移除從原生通訊錄同步到其他外部來源的任何連絡人。 <br /> <br />目前只支援 Outlook 應用程式。|已移除直接從應用程式同步到原生通訊錄的連絡人。 無法移除從原生通訊錄同步到其他外部來源的任何連絡人。 <br /> <br />目前只支援 Outlook 應用程式。
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android 工作設定檔
 
-從 Android for Work 裝置移除公司資料會移除該裝置上工作設定檔中的所有資料、應用程式和設定。 Intune 管理已淘汰該裝置。 Android for Work 不支援恢復出廠預設值。
+從 Android 工作設定檔裝置移除公司資料會移除該裝置上工作設定檔中的所有資料、應用程式和設定。 Intune 管理已淘汰該裝置。 Android 工作設定檔不支援恢復出廠預設值。
+
+### <a name="android-enterprise-kiosk-devices"></a>Android 企業 Kiosk 裝置
+
+您只可以將 Android Kiosk 裝置恢復為出廠預設值。 您無法從 Android Kiosk 裝置移除公司資料。
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ ms.locfileid: "37091722"
 
 1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
 2. 選擇 [裝置] > [所有裝置] > 選擇您要刪除的裝置 > [刪除]。
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>使用清除規則自動刪除裝置
+您可以將 Intune 設定為自動刪除看似非作用中、過時、或是沒有回應的裝置。 這些清除規則會持續監視您的裝置清查，以便您的裝置記錄保持最新狀態。 以這種方法刪除的裝置會從 Intune 管理移除。
+1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+2. 選擇 [裝置] > [裝置清除規則] > [確定]。
+3. 在 [刪除已多日未簽入的裝置] 方塊中，輸入 90 到 270 之間的數字。
+4. 選擇 [儲存]。
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>從 Azure Active Directory 入口網站刪除裝置
 

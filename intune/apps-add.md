@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263399"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905983"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -51,7 +51,7 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | iOS 市集應用程式  | 市集應用程式  | 選取 [iOS] 為 [應用程式類型]，搜尋應用程式，然後在 Intune 中選取該應用程式。 |
 | Windows Phone 8.1 市集應用程式  | 市集應用程式  | 選取 [Windows Phone 8.1] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。 |
 | Microsoft Store 應用程式  | 市集應用程式  | 選取 [Windows] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。 |
-| Android for Work 應用程式 | 市集應用程式  | 從 Google Play for Work 商店尋找並核准 Android for Work 應用程式。  |
+| Android 工作應用程式 | 市集應用程式  | 從受控的 Google Play 商店尋找並核准 Android 工作設定檔應用程式。  |
 | 適用於 Windows 10 的 Office 365 應用程式  | 市集應用程式 (Office 365) | 選取 [Office 365 套件] 下的 [Windows 10] 為 [應用程式類型]，然後選取想要安裝的 Office 365 應用程式。  |
 | 適用於 macOS 的 Office 365 應用程式 | 市集應用程式 (Office 365) | 選取 [Office 365 套件] 下的 [macOS] 為 [應用程式類型]，然後選取 Office 365 應用程式套件。 |
 | Android 企業營運 (LOB) 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.apk** 的 Android 安裝檔。  |
@@ -117,7 +117,7 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 ### <a name="understanding-licensed-apps"></a>了解授權應用程式
 除了了解 Web 應用程式、市集應用程式和 LOB 應用程式之外，您也應了解大量採購方案應用程式和授權應用程式的目的地，例如： 
 - **Apple 商務大量採購方案 (iOS 和 MacOS)**：iOS App Store 可讓您針對想在公司中執行的應用程式採購多個授權。 購買多個複本有助於您在公司中有效率地管理應用程式。 如需詳細資訊，請參閱[管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
-- **Android for Work (Android)**：將應用程式指派至 Android for Work 裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您針對 Android for Work 安裝的所有應用程式都是來自 Google Play for Work 商店。 您需要登入商店、瀏覽所需的應用程式，並核准這些應用程式。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式] 節點中，而且您可以管理該應用程式的指派，如同其他應用程式一樣。
+- **Android 工作設定檔**：將應用程式指派至 Android 工作設定檔裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您針對 Android 工作設定檔安裝的所有應用程式都是來自受控的 Google Play 商店。 您需要登入商店、瀏覽所需的應用程式，並核准這些應用程式。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式] 節點中，而且您可以管理該應用程式的指派，如同其他應用程式一樣。
 - **商務用 Microsoft Store (Windows 10)**：商務用 Microsoft Store 可讓您為組織尋找應用程式，並進行個別或大量採購。 透過將市集連線至 Microsoft Intune，就可以在 Azure 入口網站中管理大量採購的應用程式。 如需詳細資訊，請參閱[從商務用 Microsoft Store 管理應用程式](windows-store-for-business.md)。
 
 ## <a name="before-you-add-apps"></a>在您新增應用程式之前
