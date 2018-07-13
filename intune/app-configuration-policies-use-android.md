@@ -1,7 +1,7 @@
 ---
 title: 為受管理的 Android 裝置新增應用程式設定原則
 titlesuffix: Microsoft Intune
-description: 在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android for Work 應用程式時的設定。
+description: 在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android 工作設定檔應用程式時的設定。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,18 +15,18 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34470860"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905745"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您可以在 Microsoft Intune 中使用應用程式設定原則，來為 Android for Work 應用程式提供設定。 應用程式開發人員必須公開 Android 受控應用程式組態設定，才能為該應用程式指定組態設定。 請將應用程式設定原則指派給您想要套用設定的使用者群組。  每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
+在 Microsoft Intune 中使用應用程式設定原則，以提供 Android 工作設定檔應用程式的設定。 應用程式開發人員必須公開 Android 受控應用程式組態設定，才能為該應用程式指定組態設定。 請將應用程式設定原則指派給您想要套用設定的使用者群組。  每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
 
 > [!Note]  
 > 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們建置的應用程式是否支援應用程式設定原則。
@@ -38,9 +38,9 @@ ms.locfileid: "34470860"
 5. 使用下列詳細資料：
     - **名稱** - 將在 Azure 入口網站中顯示的設定檔名稱。
     - **描述** - 將在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型** - 選擇 [受控應用程式]。
-6. 為 [平台] 選取 [Android for Work]。
-7. 選取 [相關聯的應用程式] 來選擇您要定義應用程式設定原則的應用程式。 從 Android for Work 應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
+    - **裝置註冊類型** - 選擇 [受控裝置]。
+6. 為 [平台] 選取 [Android]。
+7. 選取 [相關聯的應用程式] 選擇您要定義應用程式設定原則的應用程式。 從 Android 工作設定檔應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 8. 選取 [權限]。 您可以透過下列方式設定組態：
     - [設定設計工具](#Use-the-configuration-designer)
     - [JSON 編輯器](#Enter-the-JSON-editor)
@@ -94,8 +94,8 @@ ms.locfileid: "34470860"
     - **名稱**。 將在 Azure 入口網站中顯示的設定檔名稱。
     - **描述**。 將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**。 選取 **受控裝置**。
-    - **平台**。 選取 **Android for Work**。
-5. 選取 [相關聯的應用程式] 來選擇您要定義設定原則的應用程式。 從 Android for Work 應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
+    - **平台**。 選取 [Android]。
+5. 選取 [相關聯的應用程式] 來選擇您要定義設定原則的應用程式。 從 Android 工作設定檔應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 6. 選取 [權限]，然後選擇 [新增]。
 7. 從可用應用程式權限的清單選取權限，然後選擇 [確定]。
 8. 為每個權限選取要使用此原則授與的選項：

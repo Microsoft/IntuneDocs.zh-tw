@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232913"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906034"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -41,9 +41,11 @@ ms.locfileid: "36232913"
 
 ## <a name="set-mdm-authority-to-intune"></a>將 MDM 授權單位設為 Intune
 
+如果您尚未設定 MDM 授權單位，請遵循下列步驟。 若要從某個 MDM 授權單位變更為另一個，請參閱下面的[變更 MDM 授權單位](#prepare-to-change-the-mdm-authority-to-configuration-manager)一節。
+
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。
+3. 選取橙色橫幅，以開啟 [行動裝置管理授權單位] 設定。 只有在您尚未設定 MDM 授權單位時，才會顯示橙色橫幅。
 4. 在 [行動裝置管理授權單位] 下，從下列選項中選擇您的 MDM 授權單位：
    - **Intune MDM 授權單位**
    - **Configuration Manager MDM 授權單位**
@@ -57,7 +59,7 @@ ms.locfileid: "36232913"
 啟用 Android 或 Apple 裝置管理時，Intune 會傳送裝置與使用者資訊，以便與這些協力廠商服務整合來管理其各自的裝置。
 
 下列案例會另外詢問是否同意共用資料：
-- 啟用 Android for Work 時。
+- 啟用 Android 工作設定檔。
 - 啟用並上傳 Apple MDM Push Certificate 時。
 - 啟用任何 Apple 服務時，例如裝置註冊計劃、School Manager 或大量採購方案。
 
