@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771800"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905201"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
@@ -43,7 +43,7 @@ ms.locfileid: "31771800"
     - iOS 8.0 和更新版本
     - macOS 10.11 及更新版本
     - Android 4.0 及更新版本
-    - Android for Work
+    - Android 工作設定檔
     - Windows 8.1 及更新版本
     - Windows Phone 8.1 和更新版本
     - Windows 10 及更新版本
@@ -52,7 +52,7 @@ ms.locfileid: "31771800"
 
    - iOS 8.0 和更新版本
    - Android 4.0 及更新版本
-   - Android for Work
+   - Android 工作設定檔
    - Windows 10 (桌面版和行動裝置版) 和更新版本
 
    針對執行下列平台的裝置，您只能使用 **SCEP 憑證設定檔**：
@@ -95,7 +95,7 @@ ms.locfileid: "31771800"
 5. 從 [平台] 下拉式清單中，選取此受信任憑證的裝置平台。 您目前可為憑證設定選擇下列其中一個平台︰
 
     - **Android**
-    - **Android for Work**
+    - **Android 企業**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da85b0087709a719cafaaf893c3188a3bf3148d8
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046276"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906068"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
@@ -29,7 +29,7 @@ ms.locfileid: "32046276"
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
-Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics) \(英文\)。 沿著應用程式的測邊，您會發現有一個所有最上層頁面的靜態垂直清單。 按一下任何連結以快速檢視並來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
+Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics) \(英文\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
 
 ![顯示 Fluent Design 瀏覽檢視之公司入口網站應用程式儀表板的螢幕擷取畫面](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -86,7 +86,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 
 ## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日當週
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 版公司入口網站 2.9.0 版中裝置設定工作流程的改善 <!---1417174--->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 版公司入口網站 2.9.0 版中裝置設定工作流程的改善 <!-- 1417174 -->
 
 我們已改善 iOS 版公司入口網站應用程式中的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
 
@@ -145,7 +145,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-已改善 Android for Work 裝置上的額外步驟。
+已改善 Android 工作設定檔裝置上的額外步驟。
 
 |之前|在|
 |---|---|

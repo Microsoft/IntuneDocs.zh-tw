@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce8791eaf72f5fda969401c19e72c6cc8b538d6
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291456"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869537"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -49,7 +49,7 @@ ms.locfileid: "35291456"
 
 Intune 可以產生特定的權杖，並將它們傳送給受管理的應用程式。 例如，如果您的應用程式設定可以使用電子郵件設定，則可以使用權杖新增動態電子郵件。 在 [名稱] 欄位中輸入應用程式所預期的名稱，然後在 [值] 欄位中輸入 `\{\{mail\}\}`。
 
-Intune 支援組態設定中的下列權杖類型：
+Intune 支援組態設定中的下列權杖類型。 不支援其他自訂的索引鍵/值組。
 
 - \{\{userprincipalname\}\}—例如，**John@contoso.com**
 - \{\{mail\}\}—例如，**John@contoso.com**

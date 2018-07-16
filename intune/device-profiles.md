@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744749"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905184"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
@@ -157,3 +157,7 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 - iOS
 - macOS
 - Windows Phone 8.1
+
+## <a name="manage-and-troubleshoot"></a>管理及疑難排解
+
+[管理您的設定檔](device-profile-monitor.md)來檢查裝置的狀態，以及指派的設定檔。 也可藉由查看導致衝突的設定，以及包含這些設定的設定檔，來協助解決衝突。 [常見問題和解決方法](device-profile-troubleshoot.md)提供問與答清單以協助處理設定檔，包括刪除設定檔時發生什麼情況、什麼情況導致通知傳送至裝置等等。

@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Intune 中建立 Android for Work 合規性原則 - Azure | Microsoft Docs
-description: 建立或設定適用於 Android for Work 裝置的 Microsoft Intune 裝置合規性原則。 選擇允許越獄的裝置、設定可接受的威脅層級、檢查 Google Play、輸入最低和最高作業系統版本、選擇您的密碼需求，以及允許側載應用程式。
+title: 在 Microsoft Intune 中建立 Android 工作設定檔合規性原則 - Azure | Microsoft Docs
+description: 建立或設定適用於 Android 工作設定檔裝置的 Microsoft Intune 裝置合規性原則。 選擇允許越獄的裝置、設定可接受的威脅層級、檢查 Google Play、輸入最低和最高作業系統版本、選擇您的密碼需求，以及允許側載應用程式。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047980"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905082"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>在 Intune 中為 Android for Work 裝置新增裝置合規性政策
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>在 Intune 中為 Android 工作設定檔裝置新增裝置合規性原則
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-適用於 Android for Work 的 Intune 裝置合規性政策，會指定這些裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則搭配條件式存取，以允許或封鎖存取公司資源。 您也可以取得裝置報表，並針對不合規範的裝置採取動作。 在 Intune Azure 入口網站中，為不同平台建立裝置合規性原則。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+適用於 Android 工作設定檔裝置的 Intune 裝置合規性原則，會指定這些裝置為被視為符合規範必須滿足的規則與設定。 您可以使用這些原則搭配條件式存取，以允許或封鎖存取公司資源。 您也可以取得裝置報表，並針對不合規範的裝置採取動作。 在 Intune Azure 入口網站中，為不同平台建立裝置合規性原則。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
 下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
 
 --------------------------
 
-|**原則設定**| **Android for Work** |
+|**原則設定**| **Android 工作設定檔** |
 | --- | --- |
 | **PIN 或密碼設定** |  已隔離 |
 | **裝置加密** |  已隔離 |
@@ -51,7 +51,7 @@ ms.locfileid: "34047980"
 ## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 針對 [平台]，選取 [Android for Work]。 選擇 [組態設定]，並輸入 [裝置健全狀況]、[裝置屬性]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
+5. 針對 [平台]，選取 [Android 企業]。 選擇 [組態設定]，並輸入 [裝置健全狀況]、[裝置屬性]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ ms.locfileid: "34047980"
 
 #### <a name="threat-scan-on-apps"></a>對應用程式進行威脅掃描
 
-在具有工作設定檔的裝置上 (Android for Work)，[對應用程式進行威脅掃描] 設定可在組態原則設定中找到。 系統管理員可以啟用裝置的設定。
+在具有 Android 工作設定檔的裝置上，[對應用程式進行威脅掃描] 設定可在設定原則設定中找到。 系統管理員可以啟用裝置的設定。
 
-如果您的企業使用 Android 工作設定檔，則您可以在已註冊的裝置上啟用 [對應用程式進行威脅掃描]。 建立裝置設定檔，並要求系統安全性設定。 如需詳細資訊，請參閱 [Intune 中的 Android for Work 裝置限制設定](device-restrictions-android-for-work.md)。
+如果您的企業使用 Android 工作設定檔，則您可以在已註冊的裝置上啟用 [對應用程式進行威脅掃描]。 建立裝置設定檔，並要求系統安全性設定。 如需詳細資訊，請參閱 [Intune 中的工作裝置限制設定](device-restrictions-android-for-work.md)。
 
 ## <a name="device-property-settings"></a>裝置屬性設定
 
@@ -106,13 +106,13 @@ ms.locfileid: "34047980"
 
 ### <a name="encryption"></a>加密
 
-- **行動裝置需要加密**︰您不需要進行此設定，因為 Android for Work 裝置會強制執行加密。
+- **行動裝置需要加密**︰您不需要進行此設定，因為 Android 工具設定檔裝置會強制執行加密。
 
 ### <a name="device-security"></a>裝置安全性
 
-- **封鎖來自不明來源的應用程式**：您不需要進行此設定，因為 Android for Work 裝置一律會限制來自不明來源的安裝。
+- **封鎖來自不明來源的應用程式**：您不需要進行此設定，因為 Android 工作設定檔裝置一律會限制來自不明來源的安裝。
 - **公司入口網站應用程式執行階段完整性**：檢查公司入口網站應用程式是否已安裝預設執行階段環境、是否已適當地簽署、是否不處於偵錯模式，以及是否是從已知來源安裝。
-- **封鎖裝置上的 USB 偵錯**：您不需要進行此設定，因為 Android for Work 裝置上已停用 USB 偵錯。
+- **封鎖裝置上的 USB 偵錯**：您不需要進行此設定，因為 Android 工具設定檔裝置上已停用 USB 偵錯。
 - **安全性修補程式等級下限**：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不合規範。 日期必須以 `YYYY-MM-DD` 格式輸入。
 
 ## <a name="assign-user-groups"></a>指派使用者群組

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829311"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904943"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -31,12 +31,13 @@ ms.locfileid: "31829311"
 
 - Windows - 支援 Windows 8.1 和更新版本
 - Windows Phone - 支援 Windows Phone 8.1 和更新版本
+- Android kiosk 裝置 - 支援
 - iOS - 支援
 
     > [!Note]  
     > 此命令需要受監督的裝置和**裝置鎖定**存取權限。 裝置隨即重新啟動。 以密碼鎖定的 iOS 裝置在重新啟動之後，不會重新加入 Wi-Fi 網路。 重新啟動之後，裝置可能無法與伺服器通訊。
 - macOS - 不支援
-- Android - 不支援
+- Android 和 Android 工作設定檔裝置 - 不支援
 
 ## <a name="restart-a-device"></a>重新啟動裝置
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 Android for Work 裝置限制 - Azure | Microsoft Docs
-description: 在執行 Android for Work 的裝置上，您可以限制裝置的某些設定，包括複製和貼上、顯示通知、應用程式權限、資料共用、密碼長度、登入失敗、使用指紋解除鎖定、重複使用密碼，以及啟用藍牙共用工作連絡人。
+title: Microsoft Intune 中的 Android 工作設定檔裝置限制 - Azure | Microsoft Docs
+description: 在 Android 工作設定檔裝置上，您可以限制裝置的某些設定，包括複製和貼上、顯示通知、應用程式權限、資料共用、密碼長度、登入失敗、使用指紋解除鎖定、重複使用密碼，以及啟用藍牙共用工作連絡人。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046310"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905932"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 的工作裝置限制設定
 
-本文會列出您可以為執行 Android for Work 之裝置設定的 Microsoft Intune 裝置限制設定。
+本文會列出您可以為 Android 工作設定檔裝置設定的 Microsoft Intune 裝置限制設定。
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "32046310"
 ### <a name="general-settings"></a>一般設定
 
 - **在工作與個人設定檔之間複製和貼上**：控制工作和個人應用程式之間的複製和貼上。 選擇 [封鎖] 啟用封鎖。 選擇 [未設定] 停用封鎖。
-- **工作設定檔與個人設定檔之間的資料共用**：控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定會從 Intune 入口網站加以管理，並使用 Android for Work 工作設定檔分割區來隔離受控的應用程式。 從下列選項進行選擇：
+- **工作設定檔與個人設定檔之間的資料共用**：控制工作設定檔中的應用程式是否可以和個人設定檔中的應用程式共用。 此設定可控制應用程式內的共用動作 (例如，Chrome 瀏覽器應用程式中的 [共用...] 選項)，但不適用於複製/貼上剪貼簿行為。 不同於[應用程式保護原則設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)，裝置限制設定會從 Intune 入口網站加以管理，並使用 Android 工作設定檔分割區來隔離受控應用程式。 從下列選項進行選擇：
   - **預設共用限制**：這是裝置的預設共用行為，隨 Android 版本而異。 預設允許從個人設定檔共用至工作設定檔。 預設也會封鎖從工作設定檔共用至個人設定檔。 此設定是為了防止資料從工作設定檔共用至個人設定檔。 Google 並未針對執行版本 6.0 和更新版本的裝置提供任何方式來封鎖從個人設定檔共用至工作設定檔。
   - **工作設定檔中的應用程式可以處理來自個人設定檔的共用要求**：啟用允許從個人設定檔共用至工作設定檔的內建 Android 功能。 啟用時，來自個人設定檔中應用程式的共用要求，可以與工作設定檔中的應用程式共用。 此設定是執行早於 6.0 版本之 Android 裝置的預設行為。
   - **允許跨界限進行共用**：跨工作設定檔界限啟用雙向共用。 當您選取此設定時，工作設定檔中的應用程式可以和個人設定檔中不具徽章的應用程式共用資料。 請小心使用此設定，因為它可讓工作設定檔中受控的應用程式與裝置未受控端上的應用程式共用。
@@ -48,7 +48,7 @@ ms.locfileid: "32046310"
 
    防止終端使用者在工作設定檔中手動新增或移除帳戶。
 
-   例如，當您將 Gmail 應用程式部署到 Android for Work 設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
+   例如，當您將 Gmail 應用程式部署到 Android 工作設定檔時，可以防止終端使用者新增或移除此工作設定檔中的帳戶。
 
 - **透過藍牙分享連絡人**：允許存取來自使用藍芽配對之另一部裝置 (例如汽車) 的工作連絡人。 預設並未進行這項設定，因此不會顯示工作設定檔連絡人。 請選取 [啟用] 以允許此共用及顯示工作設定檔連絡人。 此設定適用於 Android OS 6.0 版和更新版本上的 Android 工作設定檔裝置。 啟用此選項可能會允許某些藍芽裝置在第一次連接時，快取工作連絡人。 初次配對/同步處理後停用此政策，可能不會從藍芽裝置移除工作連絡人。
 

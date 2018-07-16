@@ -15,12 +15,12 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 346e69b56d9ee690e2bc3f3970e47d6d25ddcff7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835362"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905167"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>如何建立可啟用「Google Play 安全防護」的裝置合規性原則
 
@@ -49,9 +49,9 @@ ms.locfileid: "31835362"
  - **對應用程式進行威脅掃描**  
    需要啟用 Android **驗證應用程式** 功能。
     > [!Note]  
-    > 在舊版的 Android 平台上，此功能為合規性設定。 Intune 只能在裝置層級檢查是否已啟用此設定。 在具有工作設定檔的裝置上 (之前稱為 Android for Work)，此設定為組態原則設定。 如此可讓系統管理員啟用裝置的設定。
+    > 在舊版的 Android 平台上，此功能為合規性設定。 Intune 只能在裝置層級檢查是否已啟用此設定。 在具有 Android 工作設定檔的裝置上，此設定可作為設定原則設定。 如此可讓系統管理員啟用裝置的設定。
 
-    如果您的企業使用 Android 工作設定檔，您可以在已註冊的裝置上啟用 [對應用程式進行威脅掃描]。 建立裝置設定檔，並要求系統安全性設定。 如需詳細資訊，請參閱 [Microsoft Intune 中的 Android for Work 裝置限制設定](device-restrictions-android-for-work.md)。
+    如果您的企業使用 Android 工作設定檔，則您可以在已註冊的裝置上啟用 [對應用程式進行威脅掃描]。 建立裝置設定檔，並要求系統安全性設定。 如需詳細資訊，請參閱 [Microsoft Intune 中的 Android 工作設定檔裝置限制設定](device-restrictions-android-for-work.md)。
 
  - **SafetyNet 裝置證明**  
    設定必須符合的 SafetyNet 裝置證明完整性層級。 層級包括了 [未設定]、[檢查基本完整性]，以及 [檢查基本完整性與經過認證的裝置]。

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216321"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905218"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "34216321"
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
 
-餐廳想要提供 50 部銷售點平板電腦給其服務生，和訂單監視器給廚房員工。 那些員工永遠不會需要存取公司資料或以使用者身分登入。 Intune 管理員會建立裝置註冊管理員帳戶，並將餐廳管理者新增至 DEM 帳戶。 管理者現在擁有 DEM 功能。 管理者現在可以使用 DEM 認證來註冊 50 部平板電腦裝置。
+餐廳想要提供 50 部銷售點平板電腦給其服務生，和訂單監視器給廚房員工。 那些員工永遠不會需要存取公司資料或以使用者身分登入。 Intune 管理員會針對餐廳管理者建立新的裝置註冊管理員帳戶。  此帳戶有別於管理者的主要帳戶，僅用於向 Intune 註冊共用裝置之用。 管理者現在可以使用 DEM 認證來註冊 50 部平板電腦裝置。
 
 只有 [Azure 入口網站](https://portal.azure.com)中的使用者才能是裝置註冊管理員。 裝置註冊管理員使用者不能是 Intune 系統管理員。
 
@@ -54,7 +54,7 @@ DEM 使用者可以︰
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
   - 使用者無法將 Apple「大量採購方案」(VPP) 應用程式與使用者授權搭配使用，因為進行應用程式管理需要個別使用者的 Apple ID。
   - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。
-  - (僅限 Android) 可以單一 DEM 帳戶註冊的 Android for Work 裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 這項限制不適用於舊版的 Android 註冊。
+  - (僅限 Android) 可以單一 DEM 帳戶註冊的 Android 工作設定檔裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 這項限制不適用於舊版的 Android 註冊。
   - 裝置如果具有裝置授權，便可以安裝 VPP 應用程式。
   - 每部裝置都需要裝置授權。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 

@@ -1,27 +1,20 @@
----
-title: Intune App SDK 優點
-titlesuffix: Microsoft Intune
-description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>必要的中繼資料
+
+title: Intune App SDK 優點 titlesuffix: Microsoft Intune description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>選擇性中繼資料
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223572"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概觀
 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。
 
@@ -70,3 +63,8 @@ IT 系統管理員可以在終端使用者存取應用程式之前，檢查裝�
 許多個人裝置的使用者想要存取公司資料，但不想向行動裝置管理 (MDM) 提供者註冊其個人裝置。 因為 MDM 註冊需要裝置的通用控制權，所以使用者通常不太願意將其個人裝置的控制權提供給公司。
 
 無裝置註冊的應用程式保護可讓 Microsoft Intune 服務將應用程式保護原則直接部署到應用程式，而不需要裝置管理通道來部署原則。
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>使用 Citrix mVPN 的隨選應用程式 VPN 連線 
+您可以搭配使用 Citrix XenMobile MDX 和 Microsoft Intune 來管理裝置和應用程式。 這個組合表示您可以使用 Citrix 的 mVPN 技術，透過 Intune 應用程式防護原則來管理應用程式。 與 Citrix 的整合可供適用於 iOS 和 Android 的 Intune App SDK 使用，並可與適用於 iOS 和 Android 的 Intune App Wrapping Tool 搭配使用 (使用 -citrix 旗標)。
+ 
+若要深入了解 Citrix MDX，請參閱[關於 MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)、[適用於 iOS 的 Citrix MDX 應用程式包裝函式](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)，以及[適用於 Android 的 Citrix MDX 應用程式包裝函式](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)。

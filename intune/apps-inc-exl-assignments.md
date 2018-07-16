@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224658"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905405"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -37,7 +37,7 @@ Intune 在排除群組時，不考慮使用者對裝置的關聯。 包含使用
 >
 > Intune 在主控台中提供預先建立的 [所有使用者] 和 [所有裝置] 群組。 群組提供您便利的最佳化選項。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。  
 >
-> Android 企業 (先前稱為 Android For Work) 現在支援包含和排除群組。 您可以利用內建的 [所有使用者] 和 [所有裝置] 群組來進行 Android 企業應用程式指派。 
+> Android 企業支援包含和排除群組。 您可以利用內建的 [所有使用者] 和 [所有裝置] 群組來進行 Android 企業應用程式指派。 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>在指派應用程式時排除和包含群組 

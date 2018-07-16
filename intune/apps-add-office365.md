@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223402"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869367"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -47,7 +47,7 @@ ms.locfileid: "34223402"
 3. 在 [Intune] 窗格中，選取 [行動應用程式]。
 4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
 5. 選取 [新增]。
-6. 在 [新增應用程式] 窗格的 [應用程式類型] 清單中，於 [Office 365 Office] 下，選取 [Windows 10]。
+6. 在 [新增應用程式] 窗格的 [應用程式類型] 清單中，於 [Office 365 Suite] 下，選取 [Windows 10]。
 
 您現在可以設定應用程式套件。
 
@@ -71,15 +71,15 @@ ms.locfileid: "34223402"
 2. 在 [應用程式套件資訊] 窗格中，執行以下動作：
     - **套件名稱**：輸入應用程式套件在公司入口網站中顯示的名稱。 請確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述**：輸入應用程式套件的描述。 例如，您可以列出已選取包含的應用程式。
-    - **發行者**：輸入應用程式的發行者名稱。
+    - **發行者**：Microsoft 會顯示為發行者。
     - **類別**：選擇是否要選取一或多個內建應用程式類別，或選取您建立的類別。 此設定可讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式套件。
     - **將此顯示為公司入口網站中的精選應用程式**：若選取此選項，當使用者瀏覽應用程式時，應用程式套件會醒目地顯示在公司入口網站的主頁面上。
     - **資訊 URL**：選擇是否要輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **隱私權 URL**：選擇是否要輸入包含此應用程式隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
-    - **開發人員**：選擇是否要輸入應用程式開發人員的姓名。
-    - **擁有者**：選擇是否要輸入此應用程式的擁有者名稱，例如「人力資源部門」。
+    - **開發人員**：Microsoft 會顯示為開發人員。
+    - **擁有者**；Microsoft 會顯示為擁有者。
     - **附註**：輸入要與此應用程式相關聯的任何附註。
-    - **標誌**：上傳當使用者瀏覽公司入口網站時，隨應用程式一起顯示的圖示。
+    - **標誌**：使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
 3. 選取 [確定]。
 
 ## <a name="configure-app-settings"></a>設定應用程式設定

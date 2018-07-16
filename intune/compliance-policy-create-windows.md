@@ -1,23 +1,23 @@
 ---
 title: 在 Microsoft Intune 中建立 Windows 裝置相容性原則 - Azure | Microsoft Docs
-description: 建立或設定適用於 Windows Phone 8.1、Windows 8.1 和更新版本，以及 Windows 10 和更新版本裝置的 Microsoft Intune 裝置合規性原則。 檢查最低和最高作業系統上的合規性、設定密碼限制和長度、要求 bitlocker、設定可接受的威脅層級，以及啟用資料存放區上的加密，包括 Surface Hub 和 Windows Holographic for Business。
+description: 建立或設定適用於 Windows Phone 8.1、Windows 8.1 和更新版本，以及 Windows 10 和更新版本裝置的 Microsoft Intune 裝置合規性原則。 檢查最低和最高作業系統上的合規性、設定密碼限制和長度、要求 BitLocker、檢查是否有協力廠商 AV 解決方案、設定可接受的威脅層級，以及啟用資料存放區上的加密，包括 Surface Hub 和 Windows Holographic for Business。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744902"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909332"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -113,7 +113,9 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 - **要求在裝置上啟用安全開機**：啟用安全開機時，會強迫系統開機到原廠信任狀態。 此外，啟用安全開機時，用來啟動電腦的核心元件必須具有製造裝置之組織所信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證簽章。 如果有任何檔案已遭竄改 (即中斷其簽章)，則無法啟動系統。
 - **要求程式碼完整性**：程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測核心是否正在載入未簽署的驅動程式或系統檔案。 或者是否有具系統管理員權限的使用者帳戶執行惡意軟體以修改系統檔案。
 
-如需 HAS 服務如何運作的詳細資料，請參閱[健康情況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) \(英文\)。
+如需 HAS 服務如何運作的詳細資料，請參閱[健全狀況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
+
+若要將 Windows Defender ATP (進階威脅防護) 設定為防禦威脅服務，請參閱[使用條件式存取啟用 Windows Defender ATP](advanced-threat-protection.md)。
 
 ### <a name="device-properties"></a>裝置內容
 
@@ -164,6 +166,11 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 #### <a name="encryption"></a>加密
 
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
+
+#### <a name="device-security"></a>裝置安全性
+
+- **防毒**：當設定為 [必要] 時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 **未設定**時，Intune 不會檢查裝置上是否有任何安裝的 AV 解決方案。
+- **反間諜功能**：當設定為 [必要] 時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 **未設定**時，Intune 不會檢查裝置上是否有任何安裝的反間諜軟體解決方案。
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

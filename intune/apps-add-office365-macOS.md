@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223606"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869488"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
-[市集應用程式] 類型可讓您輕鬆地將 Office 365 應用程式指派給 macOS 裝置。 這個應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 與 OneNote。 為了讓您保有最安全以及最新版的應用程式，這些應用程式也自帶 Microsoft AutoUpdate (MAU)。 您所要的多個應用程式在 Intune 主控台的應用程式清單中會顯示為一個應用程式。
+此應用程式類型可讓您輕鬆地將 Office 365 2016 應用程式指派給 macOS 裝置。 這個應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 與 OneNote。 為了讓您保有最安全以及最新版的應用程式，這些應用程式也自帶 Microsoft AutoUpdate (MAU)。 您所要的多個應用程式在 Intune 主控台的應用程式清單中會顯示為一個應用程式。
 
 
 ## <a name="before-you-start"></a>開始之前
@@ -70,7 +70,7 @@ ms.locfileid: "34223606"
 2. 在 [Office 365] 窗格中選取 [指派]。
 3. 若要新增群組來使用該應用程式套件，請選取 [新增群組]。  
     [新增群組] 窗格隨即顯示。
-4. 將 [指派類型] 設定為 [必要]。
+4. 將 [指派類型] 設定為 [必要] 或 [可用]。
 5. 將套件指派到您選取的群組。 如需詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 
     >[!Note]

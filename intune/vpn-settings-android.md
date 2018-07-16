@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831940"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905116"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>設定 Microsoft Intune 中執行 Android 之裝置的 VPN 設定 
 
@@ -30,7 +30,7 @@ ms.locfileid: "31831940"
 您可以為下列平台進行 VPN 設定：
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android 工作設定檔裝置](#android-for-work-vpn-settings)
 
 根據您選擇的設定，下列所有值並非全部都是可設定的。
 
@@ -51,7 +51,7 @@ ms.locfileid: "31831940"
 - **指紋** (僅限 Check Point Capsule) - 指定用以確認 VPN 伺服器可受信任的字串 (例如 "Contoso Fingerprint Code")。 指紋可以傳送至用戶端，如此用戶端才知道連線時可以信任有相同指紋的任何伺服器。 如果裝置還未設定指紋，則會在顯示指紋 (使用者手動驗證指紋，並選擇信任以進行連線) 時，提示使用者信任所要連線的 VPN 伺服器。
 - **為 Citrix VPN 屬性輸入索引鍵/值組** (僅限 Citrix) - 輸入 Citrix 提供的索引鍵/值組，以設定 VPN 連線的內容。
 
-## <a name="android-for-work-vpn-settings"></a>Android for Work VPN 設定
+## <a name="android-work-profile-device-vpn-settings"></a>Android 工作設定檔裝置 VPN 設定
 
 **連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線清單時，使用者會看到此名稱。
 - **IP 位址或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0304d90384bb2f6a5a78dd14bcf289fc8eb03bd1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224359"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906000"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 macOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
@@ -31,7 +31,9 @@ ms.locfileid: "34224359"
 >[!NOTE]
 >雖然 macOS 裝置的使用者可以移除部分內建的 macOS 應用程式 (如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，他們必須移至應用程式市集，並手動重新進行安裝。
 >
->只能使用 *.pkg* 檔案將 macOS LOB 應用程式上傳到 Microsoft Intune。 
+>只能使用 *.pkg* 檔案將 macOS LOB 應用程式上傳到 Microsoft Intune。 不支援轉換其他格式，例如將 *.dmg* 轉換為 *.pkg*。
+
+Microsoft Intune 可讓 macOS LOB 應用程式部署為**必要**或**註冊可用**。 終端使用者可以使用適用於 macOS 的公司入口網站或[公司入口網站](https://portal.manage.microsoft.com)，來取得部署為**可用**的應用程式。
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>步驟 1 - 預先處理您的軟體安裝檔
 

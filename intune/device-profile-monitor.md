@@ -1,11 +1,11 @@
 ---
 title: 使用 Microsoft Intune 查看裝置設定檔 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中檢視和管理裝置組態設定檔，並查看受指派某個設定檔的裝置數目的圖形化圖表，以及查看已指派或部署設定檔的裝置。
+description: 在 Microsoft Intune 中檢視和管理裝置組態設定檔、查看獲指派某個設定檔之裝置數目的圖形化圖表，以及查看已指派或部署設定檔的裝置。 也可以針對具有衝突設定的設定檔進行疑難排解。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744783"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905915"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視裝置設定檔
 
@@ -33,7 +33,7 @@ Intune 在 Azure 入口網站中包含了一些功能，以協助監視及管理
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置設定] > [設定檔]。
 
-所有您現有的設定檔都會列出，且包含詳細資訊，例如平台，以及該設定檔是否已指派給任何裝置。
+所有您現有的設定檔都會列出，包含平台之類的詳細資料，並顯示該設定檔是否已指派給任何裝置。
 
 ## <a name="view-details-on-a-profile"></a>檢視設定檔的詳細資料
 
@@ -68,6 +68,16 @@ Intune 在 Azure 入口網站中包含了一些功能，以協助監視及管理
   - **裝置狀態**：列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 您可以選取特定的裝置以取得更多詳細資料，包括安裝的應用程式。
   - **使用者狀態**：列出受這個設定檔影響的使用者名稱及裝置，以及設定檔是否已成功部署。 您可以選取特定的使用者以取得更多詳細資料。
   - **每個設定的狀態**：藉由顯示設定檔內的個別設定來篩選輸出，並顯示是否已成功套用設定。
+
+## <a name="view-conflicts"></a>檢視衝突
+
+在 [裝置] > [所有裝置] 中，您可以查看任何會造成衝突的設定。 發生衝突時，也會顯示所有包含這項設定的組態設定檔。 系統管理員可以使用此功能來協助進行疑難排解，並修正任何與設定檔不一致的地方。
+
+1. 在 Intune 中，選取 [裝置] > [所有裝置] > 選取清單中現有的裝置。 終端使用者可以從他們的公司入口網站應用程式中取得裝置名稱。
+2. 選取 [裝置設定]。 隨即列出所有套用至裝置的設定原則。
+3. 選取原則。 它會顯示該原則中套用至裝置的所有設定。 若裝置具有**衝突**狀態，請選取該資料列。 在新視窗中，您會看到所有的設定檔，以及所含設定造成衝突的設定檔名稱。
+
+既然您已經知道發生衝突的設定，以及包含該設定的原則，應該可以輕鬆地解決該衝突。 
 
 ## <a name="next-steps"></a>接下來的步驟
 [指派使用者和裝置設定檔](device-profile-assign.md)  

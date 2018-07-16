@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026324"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905813"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -39,14 +39,14 @@ ms.locfileid: "31026324"
 - 已註冊裝置的數目上限。
 - 可以註冊的裝置平台：
   - Android。
-  - Android for Work。
+  - Android 工作設定檔。
   - iOS。
   - macOS。
   - 。
-- iOS、Android、Android for Work 和 Windows 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
+- iOS、Android、Android 工作設定檔和 Windows 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
   - 最低版本。
   - 最高版本。
-- 限制個人擁有的裝置 (僅限 iOS、Android、Android for Work、macOS)。
+- 限制個人擁有的裝置 (僅限 iOS、Android、Android 工作設定檔、macOS)。
 
 ## <a name="default-restrictions"></a>預設限制
 
@@ -78,7 +78,7 @@ ms.locfileid: "31026324"
 5. 在限制名稱下 (預設限制為 [所有使用者])，選取 [平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
 6. 選取 [儲存]。
 7. 在限制名稱下 (預設限制為 [所有使用者])，選取 [平台設定]。 然後選取所列平台的最低和最高**版本**。 支援的版本包括：
-    - Android 和 Android for Work 支援 major.minor.rev.build。
+    - Android 工作設定檔支援 major.minor.rev.build。
     - iOS 支援 major.minor.rev。
     - Windows 支援 major.minor.rev.build，僅限 Windows 10。
   作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
@@ -88,9 +88,9 @@ ms.locfileid: "31026324"
 
 
 >[!NOTE]
->- 如果您從註冊封鎖個人擁有的 Android 裝置，則個人擁有的 Android for Work 裝置仍可以註冊。
->- 根據預設，Android for Work 裝置設定與您的 Android 裝置設定相同。 變更 Android for Work 設定後，就不再是那麼回事了。
->- 如果您封鎖個人的 Android for Work 註冊，只有公司的 Android 裝置可以註冊為 Android for Work。
+>- 若您從註冊封鎖個人擁有的 Android 裝置，則個人擁有的 Android 工作設定檔裝置仍可以註冊。
+>- 根據預設，Android 工作設定檔裝置設定與您的 Android 裝置設定相同。 變更 Android 工作設定檔設定後，就不再是那麼回事了。
+>- 若您封鎖個人的 Android 工作設定檔註冊，則只有公司的 Android 裝置可以註冊為 Android 工作設定檔。
 
 ## <a name="set-device-limit-restrictions"></a>設定裝置限制
 

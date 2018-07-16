@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717973"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905881"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -59,7 +59,7 @@ ms.locfileid: "34717973"
 7. 選取 [新增群組]，以開啟和應用程式相關的 [新增群組] 窗格。
 8. 針對特定的應用程式，選取 [指派類型]：
    - **可透過已註冊裝置使用**：使用者從公司入口網站應用程式或網站中安裝應用程式。
-   - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 **Android for Work 應用程式**類型不支援此選項。 
+   - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 來自受控 Google Play 的應用程式和 macOS LOB 應用程式不支援此選項。 
    - **必要**：此應用程式會安裝在所選群組中的裝置上。
    - **解除安裝**：此應用程式會從所選群組中的裝置上解除安裝。
 

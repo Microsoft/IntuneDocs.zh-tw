@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32017952"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905728"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>將電子郵件自動化，並為不符合規範的裝置新增動作 - Intune
 
@@ -39,7 +39,7 @@ ms.locfileid: "32017952"
 - 若要為不符合規範的狀況設定動作，您至少需要一項裝置合規性政策。 若要建立裝置合規性政策，請參考以下平台的說明：
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android 工作設定檔](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

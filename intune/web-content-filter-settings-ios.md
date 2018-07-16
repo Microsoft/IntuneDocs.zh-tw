@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456345"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921343"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>適用於 iOS 裝置的網路內容篩選器
 
@@ -58,7 +58,7 @@ ms.locfileid: "34456345"
 ## <a name="specific-websites-only"></a>僅限特定網站
 
 1. 在 [網路內容篩選器] 窗格中，針對您要允許的每個網站設定下列設定：
-    - **URL**輸入您要允許之網站的 URL，例如 **http://www.contoso.com**。 
+    - **URL** - 輸入您要允許之網站的 URL，例如 `https://www.contoso.com`。
     - **書籤路徑**：輸入您要儲存書籤的位置路徑，例如 **/Contoso/Business Apps**。 如果您不新增路徑，書籤就會新增到裝置的預設書籤資料夾。
     - **標題**：輸入書籤的描述性標題。
 2. 輸入每個網站的資訊後，按一下 [新增]。

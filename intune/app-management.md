@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223776"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906102"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -114,8 +114,8 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 - **公司入口網站品牌**：自訂公司入口網站以顯示您公司的品牌。 如需詳細資訊，請參閱：
     - [公司入口網站設定](company-portal-app.md)。
 - **應用程式類別**：新增、釘選及刪除應用程式類別名稱。
-- **Android for Work**：核准並同步處理您已經為企業核准的應用程式。 如需詳細資訊，請參閱：
-    - [Android for Work 應用程式](apps-add-android-for-work.md)。
+- **Android 工作設定檔**：核准並同步處理您已經為企業核准的應用程式。 如需詳細資訊，請參閱：
+    - [Android 工作設定檔應用程式](apps-add-android-for-work.md)。
 
 ### <a name="help-and-support"></a>說明及支援
 - **說明及支援**：進行疑難排解、要求支援，或者檢視 Intune 狀態。 如需詳細資訊，請參閱：

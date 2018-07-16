@@ -1,42 +1,47 @@
 ---
 title: 為執行 Android 的裝置設定 Microsoft Intune Wi-Fi 設定
 titleSuffix: ''
-description: 了解執行 Android 和 Android for Work 之裝置上的 Intune Wi-Fi 組態設定。
+description: 了解執行 Android 之裝置上的 Intune Wi-Fi 組態設定。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831056"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905660"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>在 Microsoft Intune 中設定執行 Android 和 Android for Work 之裝置的 Wi-Fi 設定  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>在 Microsoft Intune 中為執行 Android、Android 工作設定檔及 Android kiosk 裝置的裝置設定 Wi-Fi 設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文將說明可在 Microsoft Intune 中，為執行 Android 和 Android for Work 的裝置設定的 Wi-Fi 設定。
+本文說明可在 Microsoft Intune 中，為執行 Android 和 Android 工作設定檔之裝置設定的 Wi-Fi 設定。
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>適用於基本設定檔與企業設定檔的 Wi-Fi 設定
 
-下列 Wi-Fi 設定適用於 Android 和 Android for Work 裝置：
+下列 Wi-Fi 設定適用於 Android 和 Android 工作設定檔裝置：
 
 - **網路名稱** - 輸入此 Wi-Fi 連線的名稱。 這是使用者瀏覽裝置上的可用連線清單時所見到的名稱。
 - **SSID** - 簡短的服務組識別元。 這是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的網路名稱。
 - **自動連線** - 當裝置進入此網路的範圍內時自動連線。
 - **隱藏的網路** - 禁止此網路顯示在裝置的可用網路清單中。
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>適用於企業 kiosk 設定檔的 Wi-Fi 設定
+- **Wi-Fi 類型**：只有當您選擇 [設定檔類型] > [僅限裝置擁有者] > [Wi-Fi] 時，這些 Wi-Fi 類型設定才可供使用。
+    - **開放 (不驗證)**
+    - **WEP 預先共用金鑰**：您必須在 [預先共用金鑰] 方塊中提供密碼。
+    - **WPA 預先共用金鑰**：您必須在 [預先共用金鑰] 方塊中提供密碼
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>僅適用於企業設定檔的 Wi-Fi 設定
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>僅適用於 Android 舊版和 Android 工作設定檔的 Wi-Fi 設定
 
 - **EAP 類型** - 選擇可延伸驗證通訊協定 (EAP) 類型，以驗證下列類型的安全無線連線：
     - **EAP-TLS**

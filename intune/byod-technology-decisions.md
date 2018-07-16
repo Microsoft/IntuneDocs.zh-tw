@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832762"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844958"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策
 
@@ -39,7 +39,7 @@ ms.locfileid: "31832762"
 **合規性** – 某些組織必須遵守法規或其他原則，以呼叫特定的 MDM 控制項。 例如，您需要 MDM 加密整部裝置，或產生裝置上所有應用程式的報表。
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>只管理應用程式的常見原因 (MAM)
-沒有 MDM 的 MAM 在支援 BYOD 的組織中很普遍。 您可以在 Exchange Online 上部署條件式存取原則，讓使用者從 Outlook Mobile 存取電子郵件 (它支援 MAM 保護)。 以下是您只想管理個人裝置之應用程式的可能原因：
+沒有 MDM 的 MAM 在支援 BYOD 的組織中很普遍。 您可以在 Exchange Online 上部署條件式存取原則，讓使用者從 Outlook Mobile (它支援 MAM 保護) 存取電子郵件。 以下是您只想管理個人裝置之應用程式的可能原因：
 
 **使用者體驗** – MDM 註冊包含許多警告提示 (由平台強制執行)，通常會造成使用者決定完全不在個人裝置上存取電子郵件。 MAM 對使用者的警告力度較弱，因為它們只會快顯一次，讓使用者知道 MAM 保護已就位。
 

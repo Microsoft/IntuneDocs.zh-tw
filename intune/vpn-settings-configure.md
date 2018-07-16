@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744596"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905099"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>在 Intune 中建立 VPN 設定檔
 
@@ -40,7 +40,7 @@ ms.locfileid: "34744596"
 
 您可使用下列連線類型，建立 VPN 設定檔︰
 
-|連線類型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|連線類型|Android<br>Android 工作設定檔|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |自動|否|否|否|否|否|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
@@ -68,21 +68,21 @@ ms.locfileid: "34744596"
 3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 4. 輸入 VPN 設定檔的 [名稱] 和 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 VPN 設定的裝置平台。 您目前可為 VPN 裝置設定，選擇下列平台之一︰
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 及更新版本**
-  - **Windows 10 及更新版本**
+   - **Android**
+   - **Android 企業**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 及更新版本**
+   - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [VPN]。
 7. 您可設定的設定會視您選擇的平台而不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-  - [Android 和 Android for Work 設定](vpn-settings-android.md)
-  - [iOS 設定](vpn-settings-ios.md)
-  - [macOS 設定](vpn-settings-macos.md)
-  - [Windows Phone 8.1 設定](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 設定](vpn-settings-windows-8-1.md)
-  - [Windows 10 設定](vpn-settings-windows-10.md) (包括 Windows Holographic for Business)
+   - [Android 和 Android 工作設定檔設定](vpn-settings-android.md)
+   - [iOS 設定](vpn-settings-ios.md)
+   - [macOS 設定](vpn-settings-macos.md)
+   - [Windows Phone 8.1 設定](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 設定](vpn-settings-windows-8-1.md)
+   - [Windows 10 設定](vpn-settings-windows-10.md) (包括 Windows Holographic for Business)
 8. 完成時，[建立] 您的設定檔
 
 設定檔隨即建立，並出現在設定檔清單上。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。

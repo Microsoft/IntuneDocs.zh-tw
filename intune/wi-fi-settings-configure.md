@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832301"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905322"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
 
@@ -37,7 +37,7 @@ ms.locfileid: "31832301"
 Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
-- Android for Work
+- Android 工作設定檔
 - iOS 8.0 和更新版本
 - macOS (Mac OS X 10.11 及更新版本)
 
@@ -55,7 +55,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 4. 在 [建立設定檔] 窗格中，為 Wi-Fi 設定檔輸入 [名稱] 及 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 您目前可為 Wi-Fi 裝置設定，選擇下列平台之一︰
     - **Android**
-    - **Android for Work**
+    - **Android 企業**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -69,7 +69,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 
    **Wi-Fi 匯入**設定檔 (適用於 Windows 8.1 與更新版本) 可讓您將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
 1. 您可設定的設定值隨您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android 和 Android for Work 設定](wi-fi-settings-android.md)
+    - [Android 和 Android 工作設定檔設定](wi-fi-settings-android.md)
     - [iOS 設定](wi-fi-settings-ios.md)
     - [macOS 設定](wi-fi-settings-macos.md)
     - [Windows 8.1 和更新版本設定](wi-fi-settings-import-windows-8-1.md) (包括 Windows Holographic for Business)

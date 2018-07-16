@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829759"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905133"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>使用 Intune 從遠端鎖定裝置
 
@@ -31,12 +31,14 @@ ms.locfileid: "31829759"
 下列平台支援 [遠端鎖定]：
 
 - Android
+- Android 企業 kiosk 裝置
+- Android 企業工作設定檔裝置
 - iOS
 - macOS
 - Windows 10 Mobile
 - Windows Phone 8.1 和更新版本
 
-「不」支援 [遠端鎖定] 的裝置：
+不支援**遠端鎖定**的裝置：
 - Windows 10 Desktop
 
 > [!NOTE]

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a063d43ff242a00ff89fd16cc05fd0eaa1af3484
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224999"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905269"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
@@ -31,7 +31,7 @@ ms.locfileid: "34224999"
 >[!NOTE]
 > iOS 和 Android 平台是目前支援的兩個平台，可從 Intune 管理的應用程式抹除公司資料。
 
-若要選擇性地移除公司應用程式資料，請使用本主題中的步驟建立抹除要求。 完成抹除要求之後，當裝置下一次執行應用程式時，即會從應用程式中移除公司資料。
+若要選擇性地移除公司應用程式資料，請使用本主題中的步驟建立抹除要求。 完成抹除要求之後，當裝置下一次執行應用程式時，即會從應用程式中移除公司資料。 不符合應用程式保護原則 (APP) 存取設定的條件時，除了建立抹除要求之外，您還可以設定選擇性抹除組識資料作為新的動作。 這項功能可協助您依據預先設定的準則，自動保護並移除應用程式中的機密組織資料。
 
 >[!IMPORTANT]
 > 移除直接從應用程式同步到原生通訊錄的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前只有 Microsoft Outlook 應用程式可使用此功能。

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190753"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905065"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -140,7 +140,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 當裝置具有多個合規性原則時，系統就會將所有原則的最高嚴重性等級指派給該裝置。
 
-舉例來說，假設裝置有三個合規性政策指派，分別為：Unknown 狀態 (嚴重性 = 1)、Compliant 狀態 (嚴重性 = 3)、InGracePeriod 狀態 (嚴重性 = 4)。 由於 InGracePeriod 狀態的嚴重性等級最高，因此全部三個原則的合規性狀態都會是 InGracePeriod。
+例如，假設裝置有三個合規性原則指派，分別為：Unknown 狀態 (嚴重性 = 1)、Compliant 狀態 (嚴重性 = 3)、InGracePeriod 狀態 (嚴重性 = 4)。 由於 InGracePeriod 狀態的嚴重性等級最高，因此全部三個原則的合規性狀態都會是 InGracePeriod。
 
 ## <a name="ways-to-use-device-compliance-policies"></a>使用裝置合規性政策的方式
 
@@ -195,14 +195,14 @@ Remember that you need to implement conditional access policies in addition to c
 
 在[傳統入口網站](https://manage.microsoft.com)中建立的裝置合規性原則不會出現在 [Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者作為目標，並可透過傳統入口網站管理。
 
-若要在 Azure 入口網站中使用裝置合規性相關功能，您必須在 Azure 入口網站中建立新的裝置合規性原則。 如果您在 Azure 入口網站中將某個裝置合規性原則指派給已從傳統入口網站獲指派裝置合規性原則的使用者，則來自 Azure 入口網站之裝置合規性原則的優先順序會高於在傳統入口網站中建立的原則。
+若要在 Azure 入口網站中使用裝置合規性相關功能，您必須在 Azure 入口網站中建立新的裝置合規性原則。 若您在 Azure 入口網站中將某個裝置合規性原則指派給已從傳統入口網站獲指派裝置合規性原則的使用者，則來自 Azure 入口網站之裝置合規性原則的優先順序會高於在傳統入口網站中建立的原則。
 
 ## <a name="next-steps"></a>接下來的步驟
 
 - 為下列平台建立裝置合規性政策：
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for work](compliance-policy-create-android-for-work.md)
+  - [Android 工作設定檔](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

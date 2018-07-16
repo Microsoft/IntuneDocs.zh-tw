@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d0725240840e93522fe80668fdb96cbe4de1236
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224376"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906119"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -65,7 +65,7 @@ ms.locfileid: "34224376"
 | 14 |MacMDM |使用內建的 MDM 代理程式管理的 Mac OS X 裝置 |
 | 15 |HoloLens |Holo Lens 裝置 |
 | 16 |SurfaceHub |Surface Hub 裝置 |
-| 17 |AndroidForWork |使用 Android for Work 設定檔擁有者的受管理 Android 裝置 |
+| 17 |AndroidForWork |使用 Android 設定檔擁有者的受控 Android 裝置 |
 | 100 |Blackberry |Blackberry 裝置 |
 | 101 |Palm |掌上型裝置 |
 | 255 |Unknown |未知的裝置類型 |

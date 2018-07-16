@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744766"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905524"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -54,7 +54,7 @@ ms.locfileid: "34744766"
 
 - 「符合」部署到該裝置的合規性原則。
 
-- 若裝置不符合條件式存取設定，將會在使用者登入時，對其顯示下列訊息之一︰
+- 若裝置不符合條件式存取設定，將會在使用者登入時，對其顯示下列其中一則訊息：
     - 若裝置未向 Intune 註冊，或未在 Azure Active Directory 中註冊，將會顯示一則訊息，指示使用者如何安裝公司入口網站應用程式、如何註冊裝置，以及如何啟用電子郵件。 此程序也會將裝置的 Exchange ActiveSync 識別碼與 Azure Active Directory 中的裝置記錄相關聯。
     - 若裝置不合規，將會顯示一則訊息，將使用者導向 Intune 公司入口網站或公司入口網站應用程式，讓使用者能夠從中尋找到問題及其修復方法的相關資訊。
 
@@ -63,7 +63,7 @@ ms.locfileid: "34744766"
 - Windows Phone 8.1 和更新版本
 - iOS 上的原生電子郵件應用程式。
 - EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
-- EAS 郵件用戶端 **Android for Work 裝置**：Android for Work 裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 Android for Work 若要使用條件式存取，除了必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
+- EAS 郵件用戶端 **Android 工作設定檔裝置**：Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 Android 工作設定檔若要使用條件式存取，除了必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
 
 > [!NOTE]
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。 
