@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34285087"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225183"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 

@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905983"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028723"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -51,7 +51,7 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | iOS 市集應用程式  | 市集應用程式  | 選取 [iOS] 為 [應用程式類型]，搜尋應用程式，然後在 Intune 中選取該應用程式。 |
 | Windows Phone 8.1 市集應用程式  | 市集應用程式  | 選取 [Windows Phone 8.1] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。 |
 | Microsoft Store 應用程式  | 市集應用程式  | 選取 [Windows] 為 [應用程式類型]，並輸入應用程式的 Microsoft Store URL。 |
-| Android 工作應用程式 | 市集應用程式  | 從受控的 Google Play 商店尋找並核准 Android 工作設定檔應用程式。  |
+| Android 工作設定檔應用程式 | 市集應用程式  | 從受控的 Google Play 商店尋找並核准 Android 工作設定檔應用程式。  |
 | 適用於 Windows 10 的 Office 365 應用程式  | 市集應用程式 (Office 365) | 選取 [Office 365 套件] 下的 [Windows 10] 為 [應用程式類型]，然後選取想要安裝的 Office 365 應用程式。  |
 | 適用於 macOS 的 Office 365 應用程式 | 市集應用程式 (Office 365) | 選取 [Office 365 套件] 下的 [macOS] 為 [應用程式類型]，然後選取 Office 365 應用程式套件。 |
 | Android 企業營運 (LOB) 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.apk** 的 Android 安裝檔。  |

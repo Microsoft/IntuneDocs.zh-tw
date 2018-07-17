@@ -2,8 +2,8 @@
 title: Microsoft Intune 中 Android 的 kiosk 設定 - Azure | Microsoft Docs
 description: 將您的 Android kiosk 裝置設定為單一應用程式和多應用程式 kiosk。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9158893b3ae2c2f70b08682a61cbba4d55b43710
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909145"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949538"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中 Android 裝置的 kiosk 設定
 

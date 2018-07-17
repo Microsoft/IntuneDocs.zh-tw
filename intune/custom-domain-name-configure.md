@@ -16,11 +16,11 @@ ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 9b9f81049e7bdfdfe2861d617dceb6036a55cecf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023524"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225250"
 ---
 # <a name="configure-a-custom-domain-name"></a>設定自訂網域名稱
 
@@ -28,7 +28,7 @@ ms.locfileid: "31023524"
 
 本主題將告訴系統管理員如何使用 Microsoft Intune 來建立 DNS CNAME，以簡化和自訂其登入體驗。
 
-當貴組織註冊諸如 Intune 的 Microsoft 雲端式服務時，您會取得裝載在 Azure Active Directory (AD) 中的初始網域名稱，像 **yourdomain.onmicrosoft.com**。在本例中，**your-domain** 是您註冊時選擇的網域名稱。 **onmicrosoft.com** 是指派給新增至訂閱之帳戶的尾碼。 您可以設定貴組織的自訂網域存取 Intune，而不使用訂閱提供的網域名稱。
+當貴組織註冊諸如 Intune 的 Microsoft 雲端式服務時，您會取得裝載在 Azure Active Directory (AD) 中的初始網域名稱，像 **yourdomain.onmicrosoft.com**。 在本例中，**your-domain** 是您註冊時選擇的網域名稱。 **onmicrosoft.com** 是指派給新增至訂閱之帳戶的尾碼。 您可以設定貴組織的自訂網域存取 Intune，而不使用訂閱提供的網域名稱。
 
 建立使用者帳戶或同步處理內部部署 Active Directory 之前，強烈建議您先決定只要使用 .onmicrosoft.com 網域，還是要新增一或多個自訂網域名稱。 先設定自訂網域再新增使用者，可簡化使用者管理。 這會讓使用者用他們存取其他網域資源的認證登入。
 

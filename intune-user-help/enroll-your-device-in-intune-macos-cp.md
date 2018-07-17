@@ -18,11 +18,11 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831792"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224751"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 

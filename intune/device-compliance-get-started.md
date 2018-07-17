@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905065"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225437"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -88,7 +88,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 當裝置在 Intune 中註冊之後，Azure AD 註冊程序便會開始，並將裝置屬性更新至 Azure AD。 其中一項關鍵的資訊就是裝置合規性狀態。 條件式存取原則會使用此合規性狀態，來封鎖或允許對電子郵件及其他公司資源的存取。
 
-[Azure AD 註冊程序](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)提供了更多資訊。
+[Azure AD 註冊程序](https://docs.microsoft.com/azure/active-directory/device-management-introduction)提供了更多資訊。
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>指派最終裝置組態設定檔狀態
 

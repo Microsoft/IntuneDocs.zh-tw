@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830428"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224756"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>將執行 Windows Holographic 的裝置升級至 Windows Holographic for Business
 
 
-若要使用 Microsoft Intune 管理執行 Windows Holographic 的裝置，您必須將裝置從 Windows Holographic 升級至 Windows Holographic for Business。 您可以建立版本升級設定檔來進行升級。 至於 Microsoft HoloLens，您則可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise)。
+若要使用 Microsoft Intune 管理執行 Windows Holographic 的裝置，您必須將裝置從 Windows Holographic 升級至 Windows Holographic for Business。 您可以建立版本升級設定檔來進行升級。 至於 Microsoft HoloLens，您則可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)。
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>設定版本升級裝置組態設定檔
 
