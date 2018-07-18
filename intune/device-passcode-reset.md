@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905150"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039296"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-若要建立新的裝置密碼，請使用 [移除密碼] 動作。
+若要建立新的裝置密碼，請使用 [移除密碼] 動作。 此動作會提示您僅針對工作設定檔重設 PIN。 Android 工作設定檔不支援裝置 PIN 重設。
 
-## <a name="supported-platforms"></a>支援的平台
+## <a name="work-profile-pin-reset-supported-platforms"></a>支援工作設定檔 PIN 重設的平台
 
-- 以工作設定檔、8.0 版及更新版本註冊的 Android 裝置
+- 以工作設定檔、8.0 版及更新版本註冊的 Android 裝置 
 - 版本為 6.0 或更舊版本的 Android 裝置
-- Android 企業 Kiosk 裝置
+- Android 企業 kiosk 裝置
 - iOS 
      
 ## <a name="unsupported-platforms"></a>不支援的平台
@@ -49,7 +49,9 @@ ms.locfileid: "37905150"
 
 ## <a name="resetting-android-work-profile-passcodes"></a>重設 Android 工作設定檔密碼
 
-支援的 Android 工作設定檔裝置會收到新的受控設定檔解除鎖定密碼，或使用者的受控設定檔查問。 針對 Android 8.0 工作設定檔裝置，終端使用者在完成註冊之後，會立即收到啟用重設密碼的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
+支援的 Android 工作設定檔裝置會收到新的受控設定檔解除鎖定密碼，或使用者的受控設定檔查問。 
+
+針對 Android 8.0 工作設定檔裝置，終端使用者在完成註冊之後，會立即收到啟用重設密碼的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
 
 ## <a name="resetting-ios-passcodes"></a>重設 iOS 密碼
 

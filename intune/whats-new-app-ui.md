@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906068"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039381"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
@@ -29,7 +29,7 @@ ms.locfileid: "37906068"
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
-Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics) \(英文\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
+Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(英文\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
 
 ![顯示 Fluent Design 瀏覽檢視之公司入口網站應用程式儀表板的螢幕擷取畫面](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -429,7 +429,7 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 ### <a name="ui-iwp"></a>公司入口網站的新使用者體驗更新 <!--2000968-->
 
-我們將在四月引進新的公司入口網站體驗，以及 UI 更新、簡化的工作流程和協助工具改善。 這將包含客戶驅動的增強功能，例如應用程式共用和改善的整體效能，讓您擁有更方便使用的體驗。
+我們將在八月開始引進新的公司入口網站體驗，以及 UI 更新、簡化的工作流程和協助工具改善。 這將包含客戶驅動的增強功能，例如應用程式共用和改善的整體效能，讓您擁有更方便使用的體驗。
 
 我們已根據客戶的意見反應來新增一些新功能，這將大幅改善現有功能和可用性：
 

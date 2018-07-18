@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909111"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993729"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -50,6 +50,7 @@ ms.locfileid: "37909111"
 
 應用程式防護原則設定資料表包含 [設定]、[值] 和 [動作] 資料行。
 
+### <a name="ios-policy-settings"></a>iOS 原則設定
 針對 iOS，您能夠使用 [設定] 下拉式清單設定下列設定的動作：
 -  PIN 碼嘗試次數上限
 -  離線寬限期
@@ -58,6 +59,19 @@ ms.locfileid: "37909111"
 -  最低應用程式版本
 -  最低 SDK 版本
 -  裝置型號
+
+若要使用 [裝置型號] 設定，請輸入以分號分隔的 iOS 型號識別碼清單。 您可以在 [HockeyApp 支援文件](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的 [裝置類型] 欄下方找到 iOS 機型識別碼。<br>
+範例輸入：*iPhone5,2; iPhone5,3*
+
+在使用者裝置上，Intune 用戶端將會根據應用程式防護原則在 Intune 中指定的裝置型號字串來進行簡單比對，藉以採取動作。 比對完全取決於裝置所報告的型號。 建議您 (即 IT 系統管理員) 根據各種不同的裝置製造商和型號，並以少數的使用者群組為目標測試此設定，以確保會出現預期的行為。 預設值是**未設定**。<br>
+設定下列其中一個動作： 
+- 允許指定 (封鎖非指定)
+- 允許指定 (抹除非指定)
+
+**針對相同 Intune 使用者的相同應用程式，如果 IT 系統管理員在多個原則之間輸入不同的 iOS 型號識別碼清單，會發生什麼事？**<br>
+當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 iOS 型號識別碼的交集。 例如，*原則 A* 指定 "iPhone5,2; iPhone5,3"，而*原則 B* 指定 "iPhone5,3"，則由 Intune 使用者以*原則 A* 和*原則 B* 設為目標的結果原則會是 "iPhone5,3"。 
+
+### <a name="android-policy-settings"></a>Android 原則設定
 
 針對 Android，您能夠使用 [設定] 下拉式清單設定下列設定的動作：
 -  PIN 碼嘗試次數上限
@@ -68,6 +82,19 @@ ms.locfileid: "37909111"
 -  最低修補程式版本
 -  裝置製造商
 
+若要使用 [裝置製造商] 設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
+範例輸入：*Manufacturer A; Manufacturer B; Google* 
+
+在使用者裝置上，Intune 用戶端將會根據應用程式防護原則在 Intune 中指定的裝置型號字串來進行簡單比對，藉以採取動作。 比對完全取決於裝置所報告的型號。 建議您 (即 IT 系統管理員) 根據各種不同的裝置製造商和型號，並以少數的使用者群組為目標測試此設定，以確保會出現預期的行為。 預設值是**未設定**。<br>
+設定下列其中一個動作： 
+- 允許指定 (封鎖非指定)
+- 允許指定 (抹除非指定)
+
+**針對相同 Intune 使用者的相同應用程式，如果 IT 系統管理員在多個原則之間輸入不同的 Android 製造商清單，會發生什麼事？**<br>
+當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 Android 製造商的交集。 例如，*原則 A* 指定 "Google, Samsung"，而*原則 B* 指定 "Google"，則由 Intune 使用者以*原則 A* 和*原則 B* 設為目標的結果原則會是 "Google"。 
+
+### <a name="additional-settings-and-actions"></a>額外的設定和動作 
+
 若 [需要 PIN 碼才可存取] 設定設為 [是]，則根據預設，資料表將包含填入的資料列作為針對 [離線寬限期] 和 [PIN 碼嘗試次數上限] 設定的設定。
  
 若要進行設定，請從 [設定] 資料行底下的下拉式清單中選取某個設定。 選取設定之後，如果必須設定值，可編輯的文字方塊就會在相同資料列的 [值] 資料行底下變成啟用狀態。 此外，下拉式清單會在 [動作] 資料行底下變成啟用狀態，其中包含一組適用於該設定的條件式啟動動作。 
@@ -76,8 +103,6 @@ ms.locfileid: "37909111"
 -  **封鎖存取** – 封鎖終端使用者存取公司應用程式。
 -  **抹除資料** – 從終端使用者的裝置抹除公司資料。
 -  **警告** – 提供對話方塊向終端使用者顯示警告訊息。
-
-### <a name="additional-settings-and-actions"></a>額外的設定和動作 
 
 在某些情況下，例如 [最低 OS 版本] 設定，您可以進行此設定，根據不同的版本號碼來執行所有適用的動作。 
 

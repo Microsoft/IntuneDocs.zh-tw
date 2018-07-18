@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906017"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949487"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune 的舊版 - 2018 年 7 月
 
@@ -40,6 +40,9 @@ ms.locfileid: "37906017"
 ## <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>適用於 Windows 之公司入口網站應用程式中的更多同步處理機會 <!-- 2683177 -->
+適用於 Windows 之公司入口網站應用程式正在向 Windows 工作列和開始功能表捷徑清單新增裝置同步處理動作。 按一下任一位置以快速同步處理您的裝置，並取得公司資源的存取權。  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>從 Windows 10 的公司入口網站應用程式重設裝置密碼 <!-- 2101282 --> 
 您的員工很快可以直接從 Windows 10 的公司入口網站應用程式重設其裝置的 PIN 或密碼。 此功能將用於支援密碼重設的遠端及本機 Intune 受控裝置。 根據裝置類型，針對遠端裝置所提出的要求將會移除裝置的目前密碼，或建立暫時密碼。 要求重設本機裝置的使用者，將會重新導向至裝置的 [設定] 應用程式。  

@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 41f4a724a8450584a62629194e1a179372ec4b8e
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
+ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310550"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966913"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -53,7 +53,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 
 |需求|詳細資訊|
 |---------------|--------------------|
-|作業系統 | 執行 Windows Vista 或更新版本的 Windows 裝置。 </br></br>**不支援家用版本。**|
+|作業系統 | 執行 Windows 7 SP1 或更新版本的 Windows 裝置。 </br></br>**不支援家用版本。**|
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|
 |Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
 |移除不相容的用戶端軟體|安裝 Intune 用戶端軟體之前，請從該電腦解除安裝任何 Configuration Manager、Operations Manager、Operations Management Suite 和 Service Manager 用戶端軟體。|

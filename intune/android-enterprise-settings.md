@@ -2,8 +2,8 @@
 title: Microsoft Intune 中的 Android kiosk 設定 - Azure | Microsoft Docs
 description: 設定 Android 企業 kiosk 裝置。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28eca6fa3738519602ee5b2a778bc75bde487156
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909094"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039330"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune 中的 Android 企業 kiosk 設定
 
@@ -51,7 +51,7 @@ Android kiosk 設定檔支援下列組態設定。 建立設定檔時，這些�
 
 ## <a name="kiosk-settings"></a>Kiosk 設定
 
-- **kiosk 模式**：定義裝置只能執行單一應用程式，或是可以執行多個應用程式。 如需詳細資訊，請參閱[適用於 Android 裝置的 kiosk 設定](android-kiosk-settings.md)。
+- **kiosk 模式**：定義裝置只能執行單一應用程式，或是可以執行多個應用程式。 如需詳細資訊，請參閱[適用於 Android 裝置的 Kiosk 設定](android-kiosk-settings.md)。
     - **單一應用程式 kiosk**：使用者只能存取單一應用程式。
     - **多應用程式 kiosk**：使用者可以存取一組有限的應用程式。
 

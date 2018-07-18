@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882523"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028757"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "36882523"
 | **需要最低的 Intune 應用程式保護原則 SDK 版本** | 選擇 [是] 以要求在應用程式上使用的最低 Intune 應用程式保護原則 SDK 版本。 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](app-sdk.md)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br> **注意：** 應用程式需要 Intune SDK 7.0.1 版或更新版本。 | 否 |
 
 > [!NOTE]
-> 若要深入了解在同一應用程式和使用者集合的 [存取] 區段中設定的多個 Intune 應用程式保護設定如何在 iOS 上運作，請參閱 [Intune MAM 常見問題集](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)。
+> 若要深入了解在同一應用程式和使用者集合的 [存取] 區段中設定的多個 Intune 應用程式保護設定如何在 iOS 上運作，請參閱 [Intune MAM 常見問題集](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)與[在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料](app-protection-policies-access-actions.md)。
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 應用程式增益集
 

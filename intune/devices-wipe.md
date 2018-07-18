@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906051"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028740"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>使用恢復出廠預設值、移除公司資料或手動取消註冊裝置來移除裝置
 
@@ -175,3 +175,24 @@ ms.locfileid: "37906051"
 5. 選取您想要刪除之與裝置建立關聯的使用者。
 6.  選取 [裝置]。
 7.  視狀況移除裝置。 例如，您可能需要移除不再使用的裝置，或定義不正確的裝置。
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>從 Intune 淘汰 Apple DEP 裝置
+
+如果您想要完全移除由 Intune 管理的 Apple DEP 裝置，請遵循下列步驟：
+
+1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+2. 選擇 [裝置] > [所有裝置] > 選擇您要刪除的裝置 > [移除公司資料]。
+![移除公司資料的螢幕擷取畫面](./media/devices-wipe/remove-company-data.png)
+3. 選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇權杖 > [裝置] > 選擇該裝置的核取方塊 > [刪除] > [是]。
+![刪除裝置的螢幕擷取畫面](./media/devices-wipe/delete-device.png)
+4. 請瀏覽 [deploy.apple.com](http://deploy.apple.com) 並依序號搜尋裝置。
+5. 在 [指派至] 功能表上，選擇 [未指派]。
+
+6. 選擇 [重新指派]。
+
+    ![Apple 重新指派的螢幕擷取畫面](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>接下來的步驟
+
+如果您想要重新註冊已刪除的裝置，請參閱[註冊選項](enrollment-options.md)。
+
