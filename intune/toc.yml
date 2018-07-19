@@ -724,8 +724,6 @@
           href: app-wrapper-prepare-android.md
         - name: 適用於 Android 的 Intune App SDK
           href: app-sdk-android.md
-        - name: Intune App SDK Cordova 外掛程式
-          href: app-sdk-cordova.md
         - name: Intune App SDK Xamarin 繫結
           href: app-sdk-xamarin.md
     - name: 使用 Intune 資料倉儲
