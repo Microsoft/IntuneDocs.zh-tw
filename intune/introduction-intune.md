@@ -36,8 +36,7 @@ Intune 是企業行動管理 (EMM) 空間中的雲端式服務，可協助讓您
 * [保護內部部署電子郵件和資料，以透過行動裝置存取](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [保護 Office 365 電子郵件和資料，以透過行動裝置安全存取](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [向工作人員核發公司擁有的電話](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* 
-  [將「攜帶您自己的裝置」(BYOD) 或個人裝置計劃提供給所有員工](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+* [將「攜帶您自己的裝置」(BYOD) 或個人裝置計劃提供給所有員工](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [讓您的員工從未受管理的公用 kiosk 中安全存取 Office 365](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [將有使用限制的共用平板電腦核發給工作人員](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
