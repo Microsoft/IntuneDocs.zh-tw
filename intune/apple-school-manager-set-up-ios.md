@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225147"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164547"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本主題將協助您針對透過 [Apple School Manager](https://school.apple.com/) 計劃購買的裝置啟用 iOS 裝置註冊。 使用 Intune 與 Apple School Manager，您甚至不用碰到它們即可註冊大量的 iOS 裝置。 當學生或老師啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
+本文將協助您針對透過 [Apple School Manager](https://school.apple.com/) 計劃購買的裝置來啟用 iOS 裝置註冊。 使用 Intune 與 Apple School Manager，您甚至不用碰到它們即可註冊大量的 iOS 裝置。 當學生或老師啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
 若要啟用 Apple School Manager 註冊，您可以使用 Intune 和 Apple School Manager 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
 
@@ -36,7 +36,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - [MDM 授權單位](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
-- 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+- 若使用 ADFS，則使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 - 從 [Apple School Management](http://school.apple.com) 方案購買的裝置
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>取得 Apple 權杖並指派裝置
@@ -80,11 +80,13 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
+
 3. 在 [建立設定檔] 下，為設定檔輸入系統管理用的**名稱**以及**描述**。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
+
     ![設定檔名稱與描述。](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. 針對 [使用者親和性]，為具備此設定檔的裝置選擇需要或不需要由指派的使用者來進行註冊。
-    - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 此選項也可讓使用者使用公司入口網站來驗證其裝置。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。   Apple School Manager 的「共用的 iPad」模式需要使用者不搭配使用者親和性進行註冊。
+    - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 此選項也可讓使用者使用公司入口網站來驗證其裝置。 若使用 ADFS，則使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。   Apple School Manager 的「共用的 iPad」模式需要使用者不搭配使用者親和性進行註冊。
 
     - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項，例如共用的裝置。 針對執行工作而不需存取本機使用者資料的裝置使用此選項。 公司入口網站應用程式之類的應用程式無法運作。
 
@@ -108,7 +110,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
-8. 如果您想要讓多個使用者使用受控 Apple ID 登入已註冊的 iPad，請選擇 [共用的 iPad] 下的 [是]。 這需要 [不搭配使用者親和性進行註冊] 與**受監督**模式設定為 [是]。受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md)。 您也應檢閱 [Apple 的共用 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
+8. 若要使用受控 Apple Id 來讓多個使用者登入已註冊的 iPad，請在 [共用的 iPad] (需要將 [不搭配使用者親和性進行註冊] 與 [受監督] 模式設為 [是]，才會有此選項) 之下選擇 [是]。受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md) 與 [Apple 共用的 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) \(英文\)。
 
 9. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
@@ -151,7 +153,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 
-由於 Intune 已被指派管理您 Apple School Manager 裝置的權限，您可以同步處理 Intune 與 Apple 服務，以在 Intune 中查看受管理裝置。
+指派 Intune 權限以管理您的 Apple School Manager 裝置之後，就可以同步處理 Intune 與 Apple 服務，以便在 Intune 中查看受控裝置。
 
 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖 > [裝置] > [同步處理]。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
 

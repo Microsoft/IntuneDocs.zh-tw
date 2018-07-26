@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905354"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132454"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -167,11 +167,11 @@ ms.locfileid: "37905354"
 1. 選取 [裝置合規性] > [原則]。 會顯示原則清單，包括平台 (如果已指派原則) 以及更多詳細資料。
 2. 選取一個原則 > [概觀]： 在此檢視中，原則指派會包含下列狀態：
 
-  - 已成功
-  - 錯誤
-  - 衝突
-  - Pending
-  - 不適用
+  - 成功：已套用原則
+  - 錯誤：原則無法套用。 這通常會顯示一個用來連結至說明的錯誤碼。 
+  - 衝突：兩個設定會套用至相同的裝置，且 Intune 無法解決衝突。 系統管理員應該檢閱。
+  - 擱置中：裝置尚未使用 Intune 簽入以接收原則。 
+  - 不適用：裝置無法接收原則。 例如，該原則更新了 iOS 11.1 的特定設定，但該裝置使用的是 iOS 10。 
 
 3. 若要在使用此原則的裝置上查看詳細資料，請選取其中一個狀態。 例如，選取 [成功]。 在下一個視窗中會列出特定裝置詳細資料，包括裝置名稱與部署狀態。
 
@@ -181,4 +181,3 @@ ms.locfileid: "37905354"
 - 若衝突的設定來自 Intune 設定原則與合規性原則，合規性原則中的設定仍優先於設定原則中的設定。 即使設定原則中的設定更為安全亦然。
 
 - 若您已部署多項合規性原則，Intune 會使用其中最安全的原則。
-

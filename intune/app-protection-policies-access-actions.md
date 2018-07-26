@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993729"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138691"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -91,7 +91,7 @@ ms.locfileid: "38993729"
 - 允許指定 (抹除非指定)
 
 **針對相同 Intune 使用者的相同應用程式，如果 IT 系統管理員在多個原則之間輸入不同的 Android 製造商清單，會發生什麼事？**<br>
-當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 Android 製造商的交集。 例如，*原則 A* 指定 "Google, Samsung"，而*原則 B* 指定 "Google"，則由 Intune 使用者以*原則 A* 和*原則 B* 設為目標的結果原則會是 "Google"。 
+當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 Android 製造商的交集。 例如，*原則 A* 指定 "Google, Samsung"，而*原則 B* 指定 "Google"，則當*原則 A* 和*原則 B* 以 Intune 使用者為目標時，結合的原則會是 "Google"。 
 
 ### <a name="additional-settings-and-actions"></a>額外的設定和動作 
 
