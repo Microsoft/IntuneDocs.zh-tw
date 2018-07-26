@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833360"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117866"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
@@ -43,6 +43,7 @@ ms.locfileid: "31833360"
 4. 在您管理的裝置清單中，依序選取裝置、[其他]，然後選取 [同步處理]。
 5. 選取 [是] 確認。
 
+若要查看同步動作的狀態，請選擇 [裝置] > [裝置動作]。
 
 ## <a name="retryable-error-codes"></a>可重試的錯誤碼
 
@@ -65,4 +66,5 @@ ms.locfileid: "31833360"
 
 ## <a name="next-steps"></a>接下來的步驟
 
-- 選取 [裝置動作] 以查看同步處理動作的狀態。 
+您可以[查看裝置的詳細資料](device-inventory.md)。
+ 

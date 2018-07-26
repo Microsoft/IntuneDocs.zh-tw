@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051601"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117917"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -34,7 +34,7 @@ ms.locfileid: "34051601"
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置] > [所有裝置] > 選取其中一個列出的裝置以開啟其詳細資料：
 
-   - [概觀] 會在裝置簽入後，顯示裝置名稱並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置等。 選取 [更多] 以一併執行下列操作：
+   - [概觀] 會在裝置簽入後，顯示裝置名稱並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置等。 選取 [更多] 以：
      - 移除公司資料
      - 刪除裝置
      - 從遠端鎖定裝置
@@ -57,6 +57,49 @@ Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個
 |iOS|僅限受管理的應用程式|安裝在裝置上的所有應用程式|
 |macOS|安裝在裝置上的所有應用程式|安裝在裝置上的所有應用程式|  
 |Android|僅限受管理的應用程式|安裝在裝置上的所有應用程式|  
+
+## <a name="hardware-device-details"></a>硬體裝置詳細資料
+
+### <a name="windows-and-ios-device-details"></a>Windows 和 iOS 裝置詳細資料：
+|詳細資料|說明|  
+|--------------|----------------------|  
+|名稱|裝置的名稱。|
+|管理名稱|裝置名稱只會用於主控台中。 變更此名稱不會變更裝置上的名稱。|
+|UDID|裝置的唯一裝置識別碼。|
+|Intune 裝置識別碼|可唯一識別裝置的 GUID。|
+|序號|由製造商提供的裝置序號。|
+|共用裝置|若為 [是]，則會有多名使用者共用裝置。|
+|通過使用者核准的註冊|若為 [是]，則裝置會有通過使用者核准的註冊，使管理遠能在裝置上管理特定安全性設定。|
+|作業系統|在裝置上使用的作業系統。|
+|作業系統版本|裝置上的作業系統版本。|
+|作業系統語言|為裝置上作業系統設定的語言。|
+|儲存空間總計|裝置上的儲存空間總計 (GB)。|
+|可用儲存空間|裝置上的未使用儲存空間總計 (GB)。|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Windows、iOS 和 macOS 裝置詳細資料
+|詳細資料|說明|  
+|--------------|----------------------|  
+|IMEI|裝置的國際行動設備識別碼。|
+|MEID|裝置的行動設備識別碼。|
+|製造商|裝置的製造商。|
+|型號|裝置的型號。|
+|電話號碼|指派給裝置的手機號碼。|
+|訂閱電訊廠商|裝置的無線電訊廠商。|
+|行動電話通訊技術|裝置使用的無線電話系統。|
+|Wi-Fi MAC|裝置的媒體存取控制位址。|
+|ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|
+|註冊日期|裝置在 Intune 中註冊的日期與時間。|
+|上次連絡時間|裝置最後連線至 Intune 的日期與時間。|
+|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|
+|已註冊 Azure AD|若為 [是]，表示裝置已向 Azure Directory 註冊。|
+|合規性|裝置的合規性狀態。|
+|EAS 已啟用|若為 [是]，裝置便會與 Exchange 信箱同步處理。|
+|EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|
+|受監督|若為 [是]，表示系統管理員對裝置有加強的控制力。|
+|已加密|若為 [是]，表示會加密儲存在裝置上的資料。|
+
+
 
 ## <a name="next-steps"></a>接下來的步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015603"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117849"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 纜線將記錄傳送給公司支援人員
 
@@ -35,7 +35,7 @@ ms.locfileid: "31015603"
 
 2. 使用 USB 纜線將裝置連接到您的電腦。 這通常與您用來在牆上電源插座為裝置充電的線是同一條纜線。
 
-3. 在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>。
+3. 在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 <strong>Android 裝置\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\\</strong>。
 
 4. 選取檔案，並將它們附加到電子郵件。 將這封電子郵件傳送給公司支援人員。
 

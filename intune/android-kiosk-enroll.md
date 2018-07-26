@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909128"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212030"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 支援 kiosk 樣式的裝置，其已設定公司所擁有的單次使用 (COSU) 解決方案。 這類裝置用於單一用途，例如數位招牌、票證列印或庫存管理等等。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
+Android 支援 kiosk 樣式的裝置，其已設定公司所擁有的單次使用解決方案。 這類裝置用於單一用途，例如數位招牌、票證列印或庫存管理等等。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
 
 Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如需 Android 企業的特定詳細資料，請參閱 [Android 企業需求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)。
 
