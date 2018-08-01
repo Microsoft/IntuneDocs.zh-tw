@@ -443,6 +443,8 @@
               href: wi-fi-settings-windows.md
             - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
+        - name: 設定 eSIM 行動數據設定檔
+          href: esim-device-configuration.md
         - name: 教育
           items:
             - name: iOS 共用裝置
