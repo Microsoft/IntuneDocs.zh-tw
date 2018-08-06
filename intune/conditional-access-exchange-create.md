@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905524"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323237"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -63,7 +63,7 @@ ms.locfileid: "37905524"
 - Windows Phone 8.1 和更新版本
 - iOS 上的原生電子郵件應用程式。
 - EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
-- EAS 郵件用戶端 **Android 工作設定檔裝置**：Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work** 應用程式。 Android 工作設定檔若要使用條件式存取，除了必須部署 Gmail 或 Nine Work 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
+- EAS 郵件用戶端 **Android 工作設定檔裝置**：Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work for Android Enterprise**。 Android 工作設定檔若要使用條件式存取，除了必須部署 Gmail 或 Nine Work for Android Enterprise 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
 
 > [!NOTE]
 > 不支援適用於 Android 和 iOS 的 Microsoft Outlook 應用程式。 

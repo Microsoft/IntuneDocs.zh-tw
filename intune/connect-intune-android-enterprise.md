@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909077"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279418"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>將 Intune 帳戶連線至 Android 企業帳戶
 
@@ -51,7 +51,7 @@ ms.locfileid: "37909077"
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>中斷與 Android 企業系統管理帳戶的連線
 
-您可以關閉 Android 企業註冊和管理。 在 Intune 管理主控台選擇 [中斷連線]，會移除所有已註冊之 Android 工作設定檔裝置和 kiosk 裝置的註冊。 它也會移除 Android 企業帳戶與 Intune 之間的關聯性。
+您可以關閉 Android 企業註冊和管理。 若要這樣做，您必須先淘汰任何已註冊的 Android 工作設定檔裝置。 然後，在 Intune 管理主控台中選擇 [中斷連線]，移除所有已註冊之 Android 工作設定檔裝置和 Kiosk 裝置的註冊。 這也會移除 Android 企業帳戶與 Intune 之間的關聯性。
 
 1. 以 Intune 系統管理員的身分，在 [Azure 入口網站](https://portal.azure.com)中選擇 [所有服務] > [監視 + 管理] > [Intune]。
 2. 選擇 [裝置註冊] > [Android 註冊] > [受控 Google Play] > [中斷連線]。

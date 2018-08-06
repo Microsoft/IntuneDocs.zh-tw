@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138691"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254479"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -44,7 +44,7 @@ ms.locfileid: "39138691"
 8. 選取使用者不符合您的需求時要採取的 [動作]。 在某些情況下，您可以針對單一設定指定多個動作。 如需詳細資料，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
 
 >[!NOTE]
-> 若要使用 [裝置型號] 設定，請輸入以分號分隔的型號識別碼清單。 
+> 若要使用 [裝置型號] 或 [裝置製造商] 設定，請輸入以分號分隔的型號識別碼清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 
 
 ## <a name="policy-settings"></a>原則設定 
 
@@ -83,7 +83,10 @@ ms.locfileid: "39138691"
 -  裝置製造商
 
 若要使用 [裝置製造商] 設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
-範例輸入：*Manufacturer A; Manufacturer B; Google* 
+範例輸入：*Manufacturer A; Manufacturer B* 
+
+>[!NOTE]
+> 以下是使用 Intune 從裝置回報的一些常見製造商，可作為輸入：Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 在使用者裝置上，Intune 用戶端將會根據應用程式防護原則在 Intune 中指定的裝置型號字串來進行簡單比對，藉以採取動作。 比對完全取決於裝置所報告的型號。 建議您 (即 IT 系統管理員) 根據各種不同的裝置製造商和型號，並以少數的使用者群組為目標測試此設定，以確保會出現預期的行為。 預設值是**未設定**。<br>
 設定下列其中一個動作： 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803834"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321215"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
@@ -252,7 +252,7 @@ ms.locfileid: "34803834"
 
 ## <a name="kiosk-preview---obsolete"></a>Kiosk (預覽) - 已淘汰
 
-這些設定正在移動，而且會在即將推出的版本中移除。 若要使用新設定，請參閱 [Windows 10 及更新版本中的 Kiosk 設定](kiosk-settings.md)。
+這些設定為唯讀且無法變更。 若要設定 Kiosk 模式，請參閱 [Windows 10 和更新版本的 Kiosk 設定](kiosk-settings.md)。
 
 Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 使用者無法存取裝置上任何 kiosk 應用程式外的任何功能。
 

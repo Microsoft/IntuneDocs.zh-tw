@@ -6,8 +6,8 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
+ms.date: 07/25/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f99ce2ae7937fe0b90353037e72f453a703dd8c
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 05251e3aeb0c290a51c378f8c67f3d55149b63dc
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34224223"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254496"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -39,7 +39,10 @@ Azure Active Directory (Azure AD) 採用 OAuth 2.0，可讓您授予 Azure AD �
 資料倉儲 API 端點會讀取每個集合的實體。 API 支援 **GET** HTTP 動詞，以及查詢選項子集。
 
 Intune URL 使用下列格式：  
-`https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}`
+`https://fef.{location}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity-collection}?api-version={api-version}`
+
+> [!NOTE]
+> 在上述 URL 中，根據下表中所提供的詳細資料取代 `{location}`、`{entity-collection}` 和 `{api-version}`。
 
 URL 包含下列元素：
 
@@ -48,7 +51,7 @@ URL 包含下列元素：
 | 位置 | msua06 | 在 Azure 入口網站中檢視資料倉儲 API 刀鋒視窗，即可找到基底 URL。 |
 | entity-collection | dates | OData 實體集合的名稱。 如需資料模型中集合和實體的詳細資訊，請參閱[資料模型](reports-ref-data-model.md)。 |
 | api-version | beta | 版本是要存取之 API 的版本。 如需詳細資訊，請參閱[版本](#API-version-information)。 |
-
+| maxhistorydays | 7 | (選擇性) 記錄取出天數的上限。 此參數可以提供給任何集合，但只會針對包含 `dateKey` 為其索引鍵屬性之一部分的集合生效。 如需詳細資訊，請參閱 [DateKey 範圍篩選條件](reports-api-url.md#datekey-range-filters)。 |
 
 ## <a name="api-version-information"></a>API 版本資訊
 
@@ -57,3 +60,26 @@ API 的目前版本為：`beta`。
 ## <a name="odata-query-options"></a>OData 查詢選項
 
 目前版本支援下列 OData 查詢參數：`$filter, $orderby, $select, $skip,` 和 `$top`。
+
+## <a name="datekey-range-filters"></a>DateKey 範圍篩選條件
+
+`DateKey` 範圍篩選條件可用來針對具有 `dateKey` 作為索引鍵屬性的部分集合，限制要下載的資料量。 `DateKey` 篩選條件可用來藉由提供下列 `$filter` 查詢參數，將服務效能最佳化：
+
+1.  在 `$filter` 中的單獨 `DateKey`，支援 `lt/le/eq/ge/gt` 運算子和使用邏輯運算子 `and` 聯結，可以對應到開始日期和/或結束日期。
+2.  `maxhistorydays` 提供作為自訂查詢選項。<br>
+
+## <a name="filter-examples"></a>篩選條件範例
+
+> [!NOTE]
+> 篩選條件範例假設今天是 2018 年 2 月 21 日。
+
+|                             篩選                             |           效能最佳化           |                                          說明                                          |
+|:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
+|    `maxhistorydays=7`                                            |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180221 之間的資料。                                     |
+|    `$filter=DateKey eq 20180214`                                 |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180220 之間的資料。                                     |
+|    `maxhistorydays=7&$filter=Id gt 1`                            |    部分，大於 1 的識別碼將不會最佳化    |    傳回 `DateKey` 在 20180214 和 20180221 之間，且識別碼大於 1 的資料。             |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。 `maxhistorydays` 會被忽略。                            |
+|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。                              |
+|    `$filter=DateKey ne 20180214`                                 |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。                              |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。 `maxhistorydays` 會被忽略。    |

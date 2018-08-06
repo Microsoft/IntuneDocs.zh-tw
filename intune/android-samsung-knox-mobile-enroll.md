@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964703"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321181"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -32,9 +32,8 @@ ms.locfileid: "36964703"
     1. [建立 MDM 設定檔](#create-mdm-profile)
     2. [新增裝置](#add-devices)
     3. [將 MDM 設定檔指派至裝置](#assign-an-mdm-profile-to-devices)
-2. 在 Azure 入口網站中，[將裝置識別為公司所擁有](#identify-devices-as-corporate-owned)。
-3. 在 Knox 入口網站中，[設定使用者登入](#configure-how-end-users-sign-in)。
-4. [散發裝置](#distribute-devices)。
+2. 在 Knox 入口網站中，[設定使用者登入](#configure-how-end-users-sign-in)。
+3. [散發裝置](#distribute-devices)。
 
 
 從參與 Knox 部署計畫的授權轉銷商處購買裝置時，包含這些裝置的裝置識別碼 (序號和 IMEI) 清單將會自動新增至 Knox 入口網站。
@@ -79,22 +78,6 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 ## <a name="assign-an-mdm-profile-to-devices"></a>將 MDM 設定檔指派給裝置
 您必須先將 MDM 設定檔指派給 Knox 入口網站中的已新增裝置，才能註冊那些裝置。 [請造訪 Samsung Knox 註冊使用者指南以了解裝置設定](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm) \(英文\)。
 
-## <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
-您可以將使用 KME 註冊的裝置識別為公司所擁有的裝置。 這必須在註冊該裝置之前完成。 這可讓您執行其他管理工作並收集其他資訊，像是完整電話號碼和應用程式的清查。
-
-遵循以下步驟來將裝置識別為公司所擁有的裝置：
-
-1. 從 Knox 入口網站將裝置清單匯出為 CSV 檔案。
-
-2. 使用 IMEI 或序號來格式化該 CSV 檔案，如[這裡](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number)所示。
-
-3. 在 Azure 入口網站中，將該 CSV 檔案上傳至 [裝置註冊] > [公司裝置識別碼] > [新增]。
-
-現在，已識別裝置在註冊時將會被標記為公司所擁有的裝置。
-
-> [!NOTE]
->Intune 會自動將公司擁有的狀態指派給使用[裝置註冊管理員](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)帳戶註冊的裝置。
-
 ## <a name="configure-how-end-users-sign-in"></a>設定使用者登入的方式
 
 針對使用 KME 註冊至 Intune 的裝置，您可以透過下列方法設定使用者登入的方式：
@@ -121,7 +104,7 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 
 - **「密碼」欄位會被忽略：** 若 Knox 入口網站 [Device details] \(裝置詳細資料\) 中的 [password] \(密碼\) 欄位已被填入，Intune 公司入口網站應用程式會忽略它。 使用者必須在裝置上輸入密碼以完成裝置註冊。
 
-- **Android Enterprise 註冊：** KME 不支援 Android Enterprise 註冊。
+- **Android Enterprise 註冊：** KME 不支援 Android 企業註冊。
 
 ## <a name="getting-support"></a>取得支援
 深入了解[如何取得 Samsung KME 的支援](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm) \(英文\)。

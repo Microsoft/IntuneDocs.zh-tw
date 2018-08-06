@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905326"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321164"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>iOS 裝置的電子郵件設定檔設定 - Intune
 
@@ -44,13 +44,13 @@ ms.locfileid: "37905326"
 - **AAD 中的電子郵件地址屬性**：選擇使用者電子郵件地址的產生方式。 選取 [使用者主體名稱] (`user1@contoso.com` 或 `user1`)，使用完整主體名稱作為電子郵件地址，或選取 [主要 SMTP 位址] (`user1@contoso.com`)，使用主要 SMTP 位址以登入 Exchange。
 - **驗證方法**：選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。 不支援 Azure Multi-Factor Authentication。
   - 若選取了 [憑證]，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
-- **S/MIME**：使用 S/MIME 簽署傳送外寄電子郵件。
-  - 若選取 [憑證]，請選取先前建立用來驗證 Exchange 連線的 PKCS 憑證設定檔。
+- **SSL**：[啟用] 以在傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，使用安全通訊端層 (SSL) 通訊。
+- **S/MIME**：[啟用 S/MIME] 以使用 S/MIME 字串傳送外寄電子郵件。 啟用時，您也可以將能夠接收加密電子郵件之收件者的電子郵件加密，並解密從寄件者收到電子郵件。
+  - 若選取 [憑證]，請選取先前建立用來驗證 Exchange 連線的 PKCS 憑證設定檔，和/或加密電子郵件交換。
 - **要同步處理的電子郵件數量**：選擇想要同步處理的電子郵件天數。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
-- **允許將訊息移至其他電子郵件帳戶**：可讓使用者在其裝置上設定的不同帳戶之間移動電子郵件訊息。
-- **允許從協力廠商應用程式傳送電子郵件**：允許使用者選取此設定檔作為傳送電子郵件的預設帳戶，以及允許協力廠商的應用程式在原生電子郵件應用程式中開啟電子郵件；例如，將檔案附加至電子郵件。
-- **同步最近使用過的電子郵件地址**：可讓使用者將最近使用過的電子郵件地址清單與伺服器同步。
+- **允許將訊息移至其他電子郵件帳戶**：[啟用] 可讓使用者在其裝置上設定的不同帳戶之間移動電子郵件訊息。
+- **允許從協力廠商應用程式傳送電子郵件**：[啟用] 以允許使用者選取此設定檔作為傳送電子郵件的預設帳戶，以及允許協力廠商的應用程式在原生電子郵件應用程式中開啟電子郵件；例如，將檔案附加至電子郵件。
+- **同步最近使用的電子郵件地址**：[啟用] 可讓使用者將裝置上最近使用的電子郵件地址清單與伺服器同步。
 
 ## <a name="next-steps"></a>接下來的步驟
 [設定 Intune 中的電子郵件設定](email-settings-configure.md)

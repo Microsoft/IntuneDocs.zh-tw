@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803817"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321487"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -182,8 +182,8 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 在顯示或隱藏的應用程式清單中，可以設定下列清單之一 (需要執行 iOS 9.3 或更新版本的受監督裝置)。
 
-**隱藏的應用程式**清單 - 指定對使用者隱藏的應用程式清單。 使用者無法檢視或啟動這些應用程式。
-**顯示的應用程式**清單 - 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
+- **隱藏的應用程式**清單 - 指定對使用者隱藏的應用程式清單。 使用者無法檢視或啟動這些應用程式。
+- **顯示的應用程式**清單 - 指定使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
 
 若要設定清單，請按一下 [新增]，然後在應用程式市集中，指定您所選的名稱 (也可指定選用的應用程式發行者) 以及應用程式的 URL。
 
@@ -259,54 +259,8 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 - **匯入**：匯入包含應用程式名稱及其相關聯套件組合識別碼清單的逗點分隔值 (.csv) 檔案。
 - **匯出**：將您所設定的應用程式名稱及相關聯的套件組合識別碼匯出為逗點分隔值 (.csv) 檔案。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>內建 iOS 應用程式的套件組合識別碼參考
-
-此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Kiosk (僅限受監督)
--   **kiosk 模式下執行的應用程式** - 選擇 [受管理的應用程式] 可選取已新增至 Intune 的應用程式，而選擇 [市集應用程式] 則可指定市集中應用程式的 URL。 不允許在裝置上執行其他應用程式。 如需詳細說明，請參閱本主題稍後的＜如何將 URL 指定給應用程式市集＞。
+-   **Kiosk 模式下執行的應用程式** - 選擇 [受控的應用程式] 可選取已新增至 Intune 的應用程式，選擇 [市集應用程式] 可指定市集中應用程式的 URL，或是選擇 [內建的應用程式] 可指定內建應用程式的套件組合識別碼。 如需詳細資訊，請參閱[內建 iOS 應用程式的套件組合識別碼參考](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps)和[如何在市集中指定應用程式的 URL](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1)。
     -   **輔助觸控** - 啟用或停用 [輔助觸控] 協助工具設定，協助使用者執行可能很難執行的螢幕手勢。
     -   **色彩對換** - 啟用或停用 [色彩對換] 協助工具設定，以調整顯示畫面來協助視力受損的使用者。
     -   **單聲道音訊** - 啟用或停用協助工具設定 [單聲道音訊]。
@@ -327,6 +281,51 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 >[!NOTE]
 > 您必須先使用 Apple Configurator 工具或 Apple 裝置註冊方案，將裝置設為受監督模式，才可為 iOS 裝置設定 kiosk 模式。 如需 Apple Configurator 工具的詳細資訊，請參閱您的 Apple 文件。
 >如果指定的 iOS 應用程式在您指派設定檔之後安裝，則裝置在重新啟動之前，不會進入 Kiosk 模式。
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>內建 iOS 應用程式的套件組合識別碼參考
+
+此清單顯示一些常見內建 iOS 應用程式的套件組合識別碼。 若要尋找其他應用程式的套件組合識別碼，請連絡軟體廠商。
+
+| 套件組合識別碼                   | 應用程式名稱     | 發佈者 |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | 計算機   | Apple     |
+| com.apple.mobilecal         | 行事曆     | Apple     |
+| com.apple.camera            | 相機       | Apple     |
+| com.apple.mobiletimer       | 時鐘        | Apple     |
+| com.apple.compass           | 指南針      | Apple     |
+| com.apple.MobileAddressBook | 連絡人     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | 尋找朋友 | Apple     |
+| com.apple.mobileme.fmip1    | 尋找 iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | 健全狀況       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | 訊息     | Apple     |
+| com.apple.Music             | 音樂        | Apple     |
+| com.apple.news              | 新聞         | Apple     |
+| com.apple.mobilenotes       | 附註        | Apple     |
+| com.apple.Numbers           | 數字      | Apple     |
+| com.apple.Pages             | 頁面        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | 相片       | Apple     |
+| com.apple.podcasts          | Podcast     | Apple     |
+| com.apple.reminders         | 提醒事項    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | 設定     | Apple     |
+| com.apple.stocks            | 股市       | Apple     |
+| com.apple.tips              | 秘訣         | Apple     |
+| com.apple.videos            | 影片       | Apple     |
+| com.apple.VoiceMemos        | 語音備忘錄   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | 觀看        | Apple     |
+| com.apple.weather           | 天氣      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (僅限受監督)** - 指定是否可以在裝置上使用 Safari 瀏覽器。

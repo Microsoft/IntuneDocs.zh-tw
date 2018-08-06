@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869367"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321470"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -60,9 +60,6 @@ ms.locfileid: "37869367"
     此外，若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的授權，您可以安裝其應用程式。
 3. 選取 [確定]。
 
->[!IMPORTANT]
-> 建立應用程式套件之後，即無法編輯其屬性。 若要設定不同的屬性，請刪除應用程式套件，另外新建一個。
-
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
 在此步驟中，您要提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
@@ -95,11 +92,8 @@ ms.locfileid: "37869367"
         - **每半年**
         - **每半年 (目標)**
     - **自動接受應用程式的使用者授權合約**：如果您不需要使用者接受授權合約，請選取此選項。 Intune 會自動接受合約。
-    - **使用共用的電腦啟用**：當多個使用者共用一部電腦時，請選取此選項。 如需詳細資訊，請參閱 ＜Office 365 的共用電腦啟用概觀＞。
+    - **使用共用的電腦啟用**：當多個使用者共用一部電腦時，請選取此選項。 如需詳細資訊，請參閱 [Office 365 的共用電腦啟用概觀](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **語言**：Office 會自動以使用者裝置上與 Windows 一起安裝的任何受支援語言來安裝。 如果想要使用其他語言安裝應用程式套件，請選取此選項。
-
->[!IMPORTANT]
-> 建立應用程式套件之後，即無法編輯其屬性。 若要設定不同的屬性，請刪除應用程式套件，另外新建一個。
 
 ## <a name="finish-up"></a>完成
 
@@ -137,7 +131,7 @@ ms.locfileid: "37869367"
 |嘗試安裝未知的 SKU (Office CSP 的不合法使用案例，因為我們應該只傳遞有效的 SKU)|17004|-|隨選即用|
 |空間不足|17002|-|隨選即用|
 |隨選即用用戶端無法啟動 (非預期)|17000|-|隨選即用|
-|隨選即用用戶端無法佇列案例 (非預期)|17001|-|隨選即用|
+|隨選即用用戶端無法將案例排入佇列 (非預期)|17001|-|隨選即用|
 
 ## <a name="next-steps"></a>接下來的步驟
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442571"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321436"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置新增裝置合規性政策
 
@@ -83,6 +83,13 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 ### <a name="encryption"></a>加密
 
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
+
+### <a name="device-security"></a>裝置安全性
+防火牆會保護裝置免於遭受未經授權的網路存取。 您可以使用防火牆來控制以每個應用程式為基礎的連線。 
+
+- **防火牆**：[啟用] 以協助保護裝置免於未經授權的存取。 啟用此功能可讓您處理連入網際網路連線，並使用隱形模式。 [未設定] (預設值) 會保持關閉防火牆，而且允許網路流量 (不封鎖)。
+- **連入連線**：除了基本網際網路服務所需的連線 (例如 DHCP、Bonjour 及 IPSec) 之外，[封鎖] 所有連入網際網路連線。 此設定也會封鎖所有共用服務，包括螢幕共用、遠端存取、iTunes 音樂分享等等。 [未設定] (預設值) 允許連入連線和共用服務。 
+- **隱形模式**：[啟用] 隱形模式以防止電腦回應探查要求，這可能會成為我的惡意使用者。 啟用時，裝置會繼續回應已授權應用程式的連入要求。 [未設定] (預設值) 會保持關閉隱形模式。
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 

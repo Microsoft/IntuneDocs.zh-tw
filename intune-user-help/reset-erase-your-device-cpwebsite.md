@@ -1,11 +1,11 @@
 ---
 title: 從公司入口網站重設裝置 | Microsoft Docs
-description: ''
+description: 了解如何從公司入口網站將裝置重設為原廠設定。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,32 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016980"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321572"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>從公司入口網站重設裝置
 
-如果裝置遺失或遭竊，您可以將它重設為原廠預設值，以避免未經授權存取您的資料。 您可以使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)遠端重設裝置。 公司入口網站是您可用來管理已在 Intune 註冊之電腦和裝置的網頁。 您可以使用此網站，來執行使用公司入口網站應用程式時可執行的大部分相同工作。
+了解如何從公司入口網站將已使用、遺失或遭竊的裝置重設為原廠預設值。  
 
-如果重設裝置，公司入口網站將不再列出此裝置，裝置將重設為出廠預設值。
+重設裝置之後，它不會再出現在公司入口網站中。 會清除先前已存在的應用程式及檔案，而且裝置會還原為原廠預設值。
 
 > [!Note]
-> 您也可以從另一個已註冊的裝置執行下列步驟，方法是在該裝置上開啟公司入口網站應用程式，然後進行類似的步驟，以完成重設。 
+> 您也可以從另一部已註冊的裝置執行下列步驟。 開啟該裝置上的公司入口網站應用程式，進行類似的步驟來完成重設。  
 
-若要重設裝置：
+1. 開啟[公司入口網站](https://portal.manage.microsoft.com/#helpdeskDeskDialog)，並選取 [功能表] 按鈕 > [我的裝置]。
 
-1. 在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕，然後選取 [我的裝置]。
+2. 選取您要重設的裝置。
 
-2. 在 [我的裝置] 頁面上，選取您想要重新命名的裝置名稱。
+    ![[我的裝置] 頁面的螢幕擷取畫面，含有 2 個圖格顯示無法辨識且以一般方式命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 裝置會在快顯視窗中開啟。 選取 [重設]。  
 
-3. 裝置會在快顯視窗中開啟。 點選 [重設] 按鈕。
+ ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+4. 將會出現訊息，警告您即將清除裝置上的所有內容。 點選 [重設] 確認。  
 
-4. 會出現警告訊息，讓您知道您正要藉由將裝置重設為原廠預設設定來清除裝置上的所有內容。 點選 [重設] 確認這是您要做的事。
-
-現在已重設您的裝置。
-
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com/#helpdeskDeskDialog)。

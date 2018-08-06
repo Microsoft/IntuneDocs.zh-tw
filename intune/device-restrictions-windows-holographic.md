@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321629"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中適用於 Windows Holographic for Business 的裝置限制
 
@@ -68,7 +69,9 @@ ms.lasthandoff: 05/03/2018
 
 - **修改系統時間** - 防止使用者變更裝置日期和時間。
 
-## <a name="kiosk"></a>Kiosk
+## <a name="kiosk---obsolete"></a>Kiosk - 已淘汰
+
+這些設定為唯讀且無法變更。 若要設定 kiosk 模式，請參閱 [Kiosk 設定](kiosk-settings.md#windows-holographic-for-business)。
 
 Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置上 kiosk 應用程式外的任何功能。
 

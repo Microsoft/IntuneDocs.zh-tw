@@ -15,20 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039381"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279486"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日當週  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會   
+Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 [同步此裝置]。 公司入口網站會開啟至 [設定] 頁面並起始您的同步。  
+
+![裝置桌面上之 Windows 工作列的螢幕擷取畫面。 已按一下公司入口網站應用程式的程式圖示，以顯示含有 [釘選到工作列]、[關閉視窗] 和 [同步此裝置] 動作等選項的功能表。](./media/sync-device-from-start-menu-1807.png)  
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
+
+現在，在 Windows 版公司入口網站應用程式中瀏覽或搜尋應用程式時，您可以切換現有的 [磚] 檢視和新增的 [詳細資料] 檢視。 新的檢視會列出應用程式詳細資料，例如名稱、發佈者、發佈日期，以及安裝狀態。  
+
+[應用程式] 頁面的 [已安裝] 檢視可讓您查看有關已完成和進行中之應用程式安裝的詳細資料。  
+
+顯示 [磚] 檢視的範例螢幕擷取畫面：  
+ 
+![在 [磚] 檢視中顯示已安裝應用程式的 Windows 版 Intune 公司入口網站應用程式的螢幕擷取畫面。](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+顯示 [詳細資料] 檢視的範例螢幕擷取畫面：  
+
+![在 [詳細資料] 檢視中顯示已安裝應用程式的 Windows 版 Intune 公司入口網站應用程式的螢幕擷取畫面。](/intune/media/details-installed-view-cpapp-1807.png) 
+
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
-#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
 Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(英文\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
 
 ![顯示 Fluent Design 瀏覽檢視之公司入口網站應用程式儀表板的螢幕擷取畫面](./media/1804_WindowsCP_Fluent_01.png)
@@ -36,7 +57,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日當週
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!-- 1412866 -->
 我們已經發行 iOS 版 公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
 
 此外還包括：
@@ -51,7 +72,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 |*與上一個步驟合併*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>改進 Windows 版公司入口網站應用程式中的語言 <!---1683758--->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>改進 Windows 版公司入口網站應用程式中的語言 <!-- 1683758 -->
 我們已改進 Windows 10 版公司入口網站中的語言，不僅對使用者來說更簡單明瞭，也更專屬於您的公司。
 
 |之前|在|
@@ -61,7 +82,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 
 ## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日當週
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Android 視覺效果更新的公司入口網站 <!--976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Android 視覺效果更新的公司入口網站 <!-- 976944 -->
 
 我們已更新 Android 版公司入口網站應用程式，以遵循 Android 的 [Material Design](https://material.io/) 指導方針。
 
@@ -78,7 +99,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日當週
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>在引導式安裝 Windows 10 公司入口網站應用程式中新增「裝置類別」步驟 <!---1335292--->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>在引導式安裝 Windows 10 公司入口網站應用程式中新增「裝置類別」步驟 <!-- 1335292 -->
 
 如已啟用 [裝置群組對應](device-group-mapping.md)，則 Windows 10 的公司入口網站應用程式現在會在使用者註冊其裝置後，逐步引導使用者完成選取裝置類別。
 
@@ -114,14 +135,14 @@ Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更�
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>公司入口網站應用程式與網站的搜尋改善<!--1418189-->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>公司入口網站應用程式與網站的搜尋改善<!-- 1418189 -->
 公司入口網站應用程式現在會在應用程式類別、名稱及描述之間進行搜尋。 結果會依相關性的遞減順序進行排序。 [公司入口網站](https://portal.manage.microsoft.com)也會得到這些更新。
 
 我們仍然會微調相關性的追蹤方式；因此，請使用公司入口網站底端的 [意見反應] 連結，讓我們知道其運作方式。
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日當週
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>公司入口網站的搜尋改善<!--1331697-->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司入口網站的搜尋改善<!-- 1331697 -->
 我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
 
 iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
@@ -135,7 +156,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
-#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>對公司入口網站之裝置安裝工作流程的改善 <!--1490692-->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>對公司入口網站之裝置安裝工作流程的改善 <!-- 1490692 -->
 我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
 
 |之前|在|
@@ -164,7 +185,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日當週
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司入口網站應用程式中更易了解的措辭 <!---1396349--->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司入口網站應用程式中更易了解的措辭 <!-- 1396349 -->  
 
 Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓終端使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
@@ -179,7 +200,7 @@ Android 公司入口網站應用程式的註冊程序已經使用新的文字來
 
 ## <a name="august-2017"></a>2017 年 8 月
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!---1196951--->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!-- 1196951 -->
 
 Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
 
@@ -212,7 +233,7 @@ Intune 行動應用程式管理 (MAM) 對話方塊將更新為新式外觀和操
 ![新式介面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新 <!---1287448--->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新 <!-- 1287448 -->
 
 Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下方移至 [裝置詳細資料] 頁面上的屬性。
 

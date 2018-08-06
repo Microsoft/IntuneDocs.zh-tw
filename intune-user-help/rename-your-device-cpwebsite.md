@@ -1,11 +1,11 @@
 ---
-title: 從公司入口網站重新命名裝置 | Microsoft Docs
-description: ''
+title: 從公司入口網站重新命名裝置
+description: 了解如何從公司入口網站重新命名您的裝置。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,29 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017133"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321368"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>從公司入口網站重新命名裝置
 
-您可以決定要重新命名裝置，以利識別。 您可以從[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)執行此工作。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。
+了解如何從公司入口網站重新命名您已註冊的受控裝置。 將裝置的一般或預設模型名稱重新命名為可協助您快速識別它的名稱。  
 
-若要重新命名裝置：
+1. 在[公司入口網站](https://portal.manage.microsoft.com/HelpDeskDialog)上，選取 [功能表] 按鈕 > [我的裝置]。
 
-1. 在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+2. 選取您要重新命名的裝置。
 
-2. 在 [我的裝置] 頁面上，選取您想要重新命名的裝置名稱。
+![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)  
 
-   ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 選取 [重新命名]。  
 
-3. 裝置會在快顯視窗中開啟。 點選 [重新命名] 按鈕。
+   ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)  
+    
 
-   ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+4. 在裝置名稱出現的方塊中，鍵入裝置的新名稱。 然後，點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
 
-4. 在裝置名稱出現的方塊中，鍵入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
-
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com/HelpDeskDialog)。

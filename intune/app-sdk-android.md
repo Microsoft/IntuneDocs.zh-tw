@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449865"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254394"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -463,7 +463,20 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 可以視需要指定 Authority 和 NonBrokerRedirectURI。
 
-Intune SDK 小組需要您應用程式的應用程式識別碼 (用戶端識別碼)。 此項目位在 [Azure 入口網站](https://portal.azure.com/)中 [應用程式識別碼] 資料行的 [所有應用程式] 下。 請參閱[這裡](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 Azure AD 註冊應用程式的相關資訊。 要聯繫 Intune SDK 小組，請使用 msintuneappsdk@microsoft.com。
+使用下列步驟向 Azure AD 註冊您的應用程式。
+
+在 Azure 入口網站中：
+1.  移至 [Azure Active Directory] 刀鋒視窗。
+2.  選取為應用程式設定的 [應用程式註冊]。
+3.  在 [設定] 的 [API 存取] 標題下，選取 [必要權限]。 
+4.  按一下 [+ 新增]。
+5.  按一下 [選取 API]。 
+6.  在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
+7.  在 API 清單中選取 [Microsoft 行動應用程式管理]，然後按一下 [選取]。
+8.  選取 [Read and Write the User’s App Management Data] \(讀取及寫入使用者的應用程式管理資料\)。
+9.  按一下 [完成]。
+
+請參閱[這裡](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 Azure AD 註冊應用程式的相關資訊。 
 
 另請參閱以下的[條件式存取](#conditional-access)需求。
 
@@ -1418,7 +1431,7 @@ public interface MAMAppConfig {
 > **預設註冊**的優點包括從 APP-WE 服務為裝置上的應用程式取得原則的簡化方法。
 
 ### <a name="general-requirements"></a>一般需求
-* Intune SDK 小組需要您應用程式的應用程式識別碼。 此項目位在 [Azure 入口網站](https://portal.azure.com/)，[All Applications] (所有應用程式) 下的 [應用程式識別碼] 資料行中。 也可以透過電子郵件 msintuneappsdk@microsoft.com 與 Intune SDK 小組連絡。
+* 請務必依照 [ADAL 的常見設定第 2 點](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)的步驟進行，向 Intune 行動應用程式管理服務註冊您的應用程式。
 
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 這些指示專門針對所有想要在終端使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式開發人員。

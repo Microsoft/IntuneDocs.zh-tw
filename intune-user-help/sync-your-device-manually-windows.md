@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048014"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236050"
 ---
 # <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
 
@@ -40,7 +40,7 @@ Intune 支援從公司入口網站和從裝置的「設定」應用程式進行�
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>從 Windows 版公司入口網站應用程式進行同步處理
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>直接從 Windows 版公司入口網站應用程式進行同步
 完成這些步驟以手動同步處理執行 Creators Update (1703 版) 或更新版本的任何 Windows 10 裝置。
 
 1.  在您的裝置上開啟「公司入口網站」應用程式。
@@ -49,7 +49,7 @@ Intune 支援從公司入口網站和從裝置的「設定」應用程式進行�
 
     ![公司入口網站應用程式的首頁螢幕擷取畫面，已反白顯示 [設定]](./media/RS1_homePage_settings_04.png)  
     
-    ![公司入口網站應用程式的設定頁面螢幕擷取畫面，已反白顯示 [同步處理] 按鈕](./media/RS1_settingspage_sync05.png)    
+    ![公司入口網站應用程式的設定頁面螢幕擷取畫面，已反白顯示 [同步處理] 按鈕](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>從「設定」應用程式進行同步處理 
 完成這些步驟以手動從「設定」應用程式同步處理 Microsoft HoloLens、Windows 10 Desktop、Windows 10 行動裝置版或 Windows Phone 8.1 裝置。

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69ea07e8d0a5d4a54abe7d1e592b3930d4e82354
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830211"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321385"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 裝置限制設定
 
@@ -50,5 +50,5 @@ ms.locfileid: "31830211"
 
 ### <a name="unmarked-email-domains"></a>未標記的電子郵件網域
 
-在 [電子郵件網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 iOS 郵件應用程式中標記為不受信任。
+在 [電子郵件網域 URL] 欄位中，將一或多個 URL 新增到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 MacOS 郵件應用程式中標記為不受信任。
 

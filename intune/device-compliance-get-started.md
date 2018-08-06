@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225437"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268901"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -167,7 +167,7 @@ Remember that you need to implement conditional access policies in addition to c
   啟用此設定會要求裝置：
   - 啟用 OS 層級的位置服務
   - 允許公司入口網站使用位置服務
-  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。
+  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或實際將裝置移動 500 公尺以上來觸發評估。
 
 - **合規性狀態有效期限 (天)**：輸入裝置針對所有收到的合規性原則回報狀態的期間。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
 

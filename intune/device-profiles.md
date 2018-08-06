@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905184"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335821"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
@@ -113,6 +113,13 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 - iOS
 - macOS
 - Windows 8.1 (僅匯入)
+
+## <a name="esim-cellular---public-preview"></a>eSIM 行動數據 - 公開預覽
+
+[eSIM 行動數據設定檔](esim-device-configuration.md)可讓您在受控裝置上設定行動數據方案來進行網際網路和資料存取。  向您的電信業者取得啟用代碼之後，您可以使用 Intune 匯入這些啟用代碼，然後指派給支援 eSIM 的裝置。
+
+這項功能支援：
+- Windows 10 Fall Creators Update 和更新版本
 
 ## <a name="education"></a>教育
 [教育設定 - Windows 10](education-settings-configure.md) 設定 [Windows「進行測驗」應用程式](https://education.microsoft.com/gettrained/win10takeatest)的選項。 當您設定這些選項時，裝置將無法執行其他應用程式，直到測驗結束為止。
