@@ -35,7 +35,7 @@ ms.locfileid: "31024663"
 
 ![帳戶資訊的影像](./media/2-end-of-sign-up-process.png) <br/>
 
-此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>不過，如果您要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
+此時，若您按一下 [您可以開始使用]，您就能進入 Office 365 系統管理中心將使用者新增到您的測試環境。 <br/><br/>不過，如果您要直接前往 Intune Azure 入口網站，請開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 您將會被導向至 Azure 登入頁面，讓您使用提供給您的認證登入。 請在每次登入您的 Intune 試用版時使用此位址。 <br/> ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
 第一次登入 Intune [Azure 入口網站](https://portal.azure.com)時，Intune 可能不會出現在 Azure 儀表板上。 將 Intune 服務新增至 Azure 儀表板︰
 1. 請從儀表板左側的 Azure 服務清單中選擇 [All services] (所有服務)，然後在搜尋方塊中輸入 **Intune**。
