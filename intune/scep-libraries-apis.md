@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321625"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575044"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 以針對 SCEP 將協力廠商 CA 新增至 Intune
 
@@ -41,11 +41,18 @@ ms.locfileid: "39321625"
 - 憑證授權單位的受信任根憑證
 - 憑證屬性和更多功能
 
-簽入 Intune 的裝置會被指派 SCEP 設定檔，並且會使用這些參數設定。 動態產生的 SCEP 密碼是由 Intune 所建立，然後指派給裝置。
+簽入 Intune 的裝置會被指派 SCEP 設定檔，並且會使用這些參數設定。 動態產生的 SCEP 挑戰密碼是由 Intune 所建立，然後指派給裝置。
 
-此密碼包含裝置核發給 SCEP 伺服器之憑證簽署要求 (CSR) 中預期參數的詳細資料。 密碼也會包含挑戰到期時間。 Intune 會將資訊加密、簽署加密的 blob，然後將這些詳細資料封裝成 SCEP 密碼。
+這項挑戰包含：
 
-連絡 SCEP 伺服器以要求憑證的裝置，然後提供此 SCEP 密碼。 此密碼必須通過 SCEP 伺服器的驗證，才能核發憑證給裝置。 驗證 SCEP 密碼時，會發生下列檢查：
+- 動態產生的挑戰密碼
+- 裝置核發給 SCEP 伺服器之憑證簽署要求 (CSR) 中預期參數的詳細資料
+- 挑戰到期時間
+
+Intune 會將這項資訊加密，並簽署加密 Blob，然後將這些詳細資料封裝至 SCEP 挑戰密碼。
+
+連絡 SCEP 伺服器以要求憑證後提供此 SCEP 挑戰密碼的裝置。 SCEP 伺服器會將 CSR 和加密 SCEP 挑戰密碼傳送給 Intune，以供驗證。  此挑戰密碼和 CSR 必須通過 SCEP 伺服器的驗證，才能將憑證核發給裝置。 驗證 SCEP 挑戰時，會發生下列檢查：
+
 
 - 驗證加密 blob 的簽章
 - 驗證挑戰尚未過期

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321555"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362053"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -127,7 +127,7 @@ Intune 目前支援[使用 Active Directory 憑證服務的 SCEP 要求](certifi
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日當週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會  
-Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源的存取權是您唯一的工作，這項功能會特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 [Sync this device] \(同步此裝置\)。 公司入口網站會開啟至 [設定] 頁面並起始您的同步。若要查看新功能，請參閱 ](whats-new-app-ui.md)UI 的新功能[。   
+Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 **[同步此裝置]**。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。若要查看新功能，請參閱 [UI 的新功能](whats-new-app-ui.md)。   
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
 
@@ -692,7 +692,7 @@ Intune 系統管理員可以設定這些設定，以啟用共用。 將裝置與
    啟用此模式來防止電腦回應探查要求。 電腦仍然會回應已授權應用程式的連入要求。 ICMP (ping) 等未預期的要求都會予以忽略。
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>停用裝置重新啟動的檢查 <!--1805490 -->
-Intune 可提供您控制權來[管理軟體更新]](windows-update-for-business-configure.md)。 在此更新中，預設會提供並啟用 <strong>[重新啟動檢查]</strong> 屬性。 若要跳過重新啟動裝置時進行的典型檢查 (如作用中使用者、電池電量等等) 時，請選取 [跳過]。
+Intune 可提供您控制權來[管理軟體更新](windows-update-for-business-configure.md)。 在此更新中，預設會提供並啟用 <strong>[重新啟動檢查]</strong> 屬性。 若要跳過重新啟動裝置時進行的典型檢查 (如作用中使用者、電池電量等等) 時，請選取 [跳過]。
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>可供部署通道使用的新 Windows 10 Insider Preview 通道 <!-- 1746293 -->
 現在，當您建立 Windows 10 部署通道時，可以選擇選取下列 Windows 10 Insider Preview 維護通道：
@@ -1123,6 +1123,16 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
 
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>規劃變更：Intune 已新增 [Change Password at Next Auth] \(在下次驗證時變更密碼\) <!-- 1873216 -->
+在 9 月服務版本中，Intune 想要針對執行 macOS 10.13 版和更新版本的裝置整合 Apple 的新發行 [Change Password at Next Auth] \(在下次驗證時變更密碼\) 設定。 在此設定之前，MDM 提供者無法驗證裝置密碼是否已變更為符合規範。 Intune 的設定和合規性原則只會驗證下次變更裝置密碼時，會將裝置密碼標示為符合規範。 新增這個新的 Apple 功能時，您的 macOS 使用者將會收到更新密碼的要求，即使他們的密碼符合規範也是一樣。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+這會影響具有使用 Intune 或混合式 MDM 之 macOS 裝置原則的環境。 現在，Apple 已有這個 [Change Password at Next Auth] \(在下次驗證時變更密碼\) 設定，Intune 即可強制使用者在推入密碼原則時更新其密碼。 如果您在將裝置標示為符合規範之前封鎖公司資源，則可能會封鎖您的終端使用者，使其在重設其密碼之前都無法存取公司資源 (例如電子郵件或 SharePoint 網站)。 在未來，對設定和合規性密碼原則的所有更新都會強制目標使用者更新其密碼。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+讓您的技術服務人員知道。 如果您不想要強制執行此 macOS 裝置原則，建議您取消指派或刪除現有的 macOS 原則。 客戶研究建議大部分客戶不會受到這項變更的影響。 大部分的終端使用者都會在收到使用者密碼註冊的要求之後更新其密碼，或重設其密碼以符合規範。
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>為變更做計劃 ：Intune 將於 9 月開始支援 iOS 10 和更新版本 <!-- 2454656 -->
 預期 Apple 將在 9 月發行 iOS 12。 在此版本發行之後不久，我們將使 Intune 註冊、公司入口網站及受控瀏覽器可支援 iOS 10 和更新版本。  

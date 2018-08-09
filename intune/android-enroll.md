@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909179"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400346"
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -38,7 +38,7 @@ Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這�
 
 ## <a name="set-up-android-enrollment"></a>設定 Android 註冊
 
-根據預設，Intune 允許註冊 Android 和 Samsung Knox Standard 裝置。 滿足必要條件之後，系統管理員只需要[告訴他們的使用者如何註冊其裝置](/intune-user-help/enroll-your-device-in-intune-android.md)。
+根據預設，Intune 允許註冊 Android 和 Samsung Knox Standard 裝置。 滿足必要條件之後，系統管理員只需要[告訴他們的使用者如何註冊其裝置](/intune-user-help/enroll-your-device-in-intune-android)。
 
 使用者註冊之後，您就可以開始管理其在 Intune 中的裝置，包括[指派合規性原則](compliance-policy-create-android.md)、[管理應用程式](app-management.md)等等。
 

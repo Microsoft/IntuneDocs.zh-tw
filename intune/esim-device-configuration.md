@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336025"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400278"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336025"
 
 ## <a name="introduction"></a>簡介
 
-eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)) 上的行動數據連線來連線到網際網路。 有了 eSIM，您就不需要向電信業者取得 SIM 卡，而且可以在電信業者與行動數據方案之間快速切換。
+eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)) 上的行動數據連線來連線到網際網路。 使用 eSIM，您不需要從您的電信業者取得 SIM 卡。 身為全球旅行者，您也可以切換電信業者與數據方案，一律保持連線。
 
 例如，您有工作用行動數據方案，以及另一個不同電信業者的個人用行動數據方案。 出差旅遊時，您可以尋找當地提供行動數據方案的電信業者來取得網際網路存取。
 
