@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575078"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001905"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune 的舊版 - 2018 年 8 月
 
@@ -99,22 +99,21 @@ ms.locfileid: "39575078"
 開啟這項限制不會影響已註冊的裝置。
 開啟限制之後，Intune 會檢查以確定每個新的 Windows 註冊要求都已獲授權為公司註冊。 下列方法限定成授權為公司註冊：
 - 註冊使用者會使用[裝置註冊管理員帳戶]( device-enrollment-manager-enroll.md)。
-
-- 裝置透過 [Windows AutoPilot](enrollment-autopilot.md) 註冊。
+- 裝置透過 [Windows Autopilot](enrollment-autopilot.md) 註冊。
 - 裝置的 IMEI 編號列在 [裝置註冊] > [[公司裝置識別碼]( corporate-identifiers-add.md)])。
 - 裝置透過[大量佈建套件](windows-bulk-enroll.md)註冊。
 - 裝置透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management)註冊。
-將會封鎖未經授權的註冊。
-Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
+
+將會封鎖未經授權的註冊。 Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
 - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
 - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
+
 也會封鎖下列個人註冊方法：
 - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup)。
-
 - [僅限 MDM 註冊]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)選項，來自 Windows 設定。
 
 ### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 AutoPIlot 設定檔中指定電腦名稱模式 <!--1849855-->
-您可以指定電腦名稱範本，以在 AutoPilot 註冊期間產生和設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 您需要在 AutoPilot 設定檔中指定此項目，而此檔案位於 [裝置註冊] > [Windows 註冊] > [Windows Autopilot Deployment service] \(Windows Autopilot Deployment 服務\) > [設定檔]。 只能使用英數和連字號字元。
+您可以指定電腦名稱範本，以在 AutoPilot 註冊期間產生並設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 您將必須在 AutoPilot 設定檔 (位於 [裝置註冊] > [Windows 註冊] > [Windows Autopilot Deployment 服務] > [設定檔]) 中指定此項目。 只能使用英數和連字號字元。
 適用於：Windows Insider 1809 或更新版本的組建 (同時為預覽版本)。
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>會顯示 iOS 版本號碼和組建編號 <!-- 1892471 -->
@@ -122,7 +121,7 @@ Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制�
 發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 顯示組建編號，即可輕鬆地檢查是否已安裝弱點更新。
 
 ### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>針對 Windows AutoPilot 設定檔，隱藏公司登入頁面和網域錯誤頁面上的變更帳戶選項 <!--1901669 -->
-公開預覽會包含新的 Windows AutoPilot 設定檔選項，讓系統管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：Windows Insider 1809 或更新版本的組建 (同時為預覽版本)。
+公開預覽版將會包含新的 Windows AutoPilot 設定檔選項，讓系統管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：Windows Insider 1809 或更新版本的組建 (同時為預覽版本)。
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>在裝置上顯示 iOS 軟體更新時延遲 <!-- 1949583 -->
 在 [Intune] > [軟體更新] > [Update policies for iOS] \(更新 iOS 的原則\) 中，您可以設定不想要裝置安裝任何更新的日期和時間。 在未來的更新中，您可以在裝置上以可見的方式顯示軟體更新時延遲 (從 1-90 天)。 
@@ -167,6 +166,13 @@ Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制�
 將會取代在 Azure 傳統入口網站中建立的合規性原則。  發生這種情況時，您可以檢閱和刪除任何現有原則，但無法更新它們。 您可以將原則匯出為逗號分隔檔案 (.csv 檔案)。 然後，使用檔案中的詳細資料，在 Intune Azure 入口網站中中重新建立這些原則。
 > [!IMPORTANT]
 > 淘汰 Azure 傳統入口網站時，您就無法存取您的原則，包括看不到它們。 因此，請務必匯出它們，並先在 Azure 入口網站中重新建立它們，再淘汰 Azure 傳統入口網站。
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>將術語變更為「淘汰」和「抹除」 <!-- 2175759 -->
+為了與圖形 API 保持一致，Intune 使用者介面和文件將變更下列詞彙：
+- 「移除公司資料」將變更為「淘汰」
+- 「原廠重設」將變更為「抹除」
+
+
 
 <!-- 1807 start -->
 

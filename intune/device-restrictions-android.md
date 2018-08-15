@@ -1,12 +1,11 @@
 ---
-title: Android 的 Microsoft Intune 裝置限制設定
-titlesuffix: ''
-description: 了解執行 Android 的裝置上可用以控制裝置設定與功能之 Intune 設定。
+title: Microsoft Intune 中 Android 的裝置限制設定 | Microsoft Docs
+description: 查看您可以在 Microsoft Intune 中控制及限制之所有 Android 裝置設定的清單。 使用這些設定來控制密碼、存取 Google Play、允許或禁止應用程式、控制瀏覽器設定、封鎖應用程式、備份至 Google 雲端，以及控制訊息、語音、數據漫遊、Wi-Fi 及藍牙連線選項。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190651"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587018"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 與 Samsung Knox Standard 裝置限制設定 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 與 Samsung Knox Standard 裝置限制設定 - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ ms.locfileid: "34190651"
     > Samsung Knox 裝置在 MDM 註冊期間會自動要求 4 位數的 PIN。 原生 Android 裝置可能會自動要求 PIN，以符合條件式存取。
 
 - **密碼長度下限** - 輸入使用者必須設定的密碼長度下限 (介於 4 到 16 個字元)。
-- **沒有活動最久幾分鐘後鎖定螢幕** - 指定沒有任何活動幾分鐘之後，自動鎖定裝置。
+- **在停止活動最少幾分鐘後鎖定螢幕**  - 輸入裝置上沒有任何活動最久幾分鐘後鎖定螢幕。 在裝置上，使用者無法在設定檔中設定大於已設定時間的時間值。 使用者可以設定較低的時間值。 例如，如果設定檔設定為 15 分鐘，則使用者可以將值設定為 5 分鐘。 使用者無法將值設定為 30 分鐘。 
 - **登入失敗幾次後即抹除裝置** - 指定抹除裝置前允許的登入失敗次數。
 - **密碼到期 (天數)** - 指定多少天後必須變更裝置密碼。
 -  **必要的密碼類型** - 指定所需的密碼複雜度等級，以及是否可以使用生物識別裝置。 從下列選項進行選擇：
