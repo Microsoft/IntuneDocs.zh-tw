@@ -4,8 +4,6 @@
 
 ## [我的公司可以從 Intune 查看哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [重設我的裝置](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [更新我的密碼](password-does-not-meet-it-administrator-requirements.md)
 
 ## [登入公司入口網站](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [使用您的 macOS 裝置](using-your-macos-device-with-intune.md)
 ### [註冊 macOS 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [註冊 macOS 裝置](enroll-your-device-in-intune-macos-cp.md)
-### [取消註冊 macOS 裝置](unenroll-your-device-from-intune-macos.md)
-
+### [註冊公司提供的 macOS 裝置](enroll-company-device-macos.md)  
+### [取消註冊 macOS 裝置](unenroll-your-device-from-intune-macos.md)  
 ### [修正 macOS 的常見問題](troubleshoot-your-device-macos.md)
 #### [尚不支援我的 macOS 版本](your-macos-version-isnt-yet-supported.md)
 #### [更新 macOS 裝置](you-need-to-update-your-macos-device.md)
