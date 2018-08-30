@@ -175,7 +175,7 @@ ms.locfileid: "39321215"
 -   **預設搜尋引擎** - 指定要使用的預設搜尋引擎。 使用者可以隨時變更此值。
 -   **在結束時清除瀏覽資料** – 當使用者結束 Edge 時，清除歷程記錄和瀏覽資料。
 -   **動態磚資料收集** – 當使用者從 Edge 釘選網站到 [開始] 功能表時，阻止 Windows 從動態磚收集資訊。
--  **我的最愛清單** - 定義我的最愛檔案的路徑。 例如，http://contoso.com/favorites.html。
+-  **我的最愛清單** - 定義我的最愛檔案的路徑。 例如， http://contoso.com/favorites.html 。
 -  **限制我的最愛變更** - 將此項目設定為 [封鎖]，防止使用者新增、匯入、排序或編輯我的最愛清單。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
