@@ -15,21 +15,18 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d0956f56da4fd0e93bdcd26e06c7d48aa252f9b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0f8e5c6319e01404500f5a31fabd1baeb3520067
+ms.sourcegitcommit: 0f8d46d644f78609fae8bf91197ae77c7af45d23
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831204"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251925"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 透過在 Azure AD 中設定 MAM 提供者，針對 Windows 10 啟用行動應用程式管理 (MAM)。 在 Azure AD 中設定 MAM 提供者可讓您在使用 Intune 建立新的 Windows 資訊保護 (WIP) 原則時定義註冊狀態。 註冊狀態可以是 MAM 或行動裝置管理 (MDM)。
-
-> [!NOTE]
-> 需要具有 MAM 註冊狀態的裝置才能加入 Azure AD。
 
 ## <a name="to-configure-the-mam-provider"></a>設定 MAM 提供者
 

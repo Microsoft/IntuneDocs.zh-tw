@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909060"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255084"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>設定 Android 工作設定檔裝置的註冊
 
@@ -34,7 +34,7 @@ Intune 可協助您將應用程式和設定部署到 Android 工作設定檔裝�
 2. 指定 Android 工作設定檔註冊設定。 [只有特定 Android 裝置才支援](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22) Android 工作設定檔。 支援 Android 工作設定檔的所有裝置也會支援傳統 Android 管理。 Intune 可讓您指定應如何從[註冊限制](enrollment-restrictions-set.md)管理支援 Android 工作設定檔的裝置。
     - **封鎖 (預設設定)**：所有 Android 裝置 (包括支援 Android 工作設定檔的裝置) 都會註冊為傳統 Android 裝置。
     - **允許**：所有支援 Android 工作設定檔的裝置都會註冊為 Android 工作設定檔裝置。 不支援 Android 工作設定檔的任何 Android 裝置會註冊為傳統 Android 裝置。
-3. [請告知使用者如何註冊其裝置](/intune-user-help/enroll-your-device-in-intune-android.md)。
+3. [請告知使用者如何註冊其裝置](/intune-user-help/enroll-your-device-in-intune-android)。
 
 
 若要在 Android 工作設定檔中註冊裝置，但先前已將那些裝置註冊為一般 Android 裝置，則必須先取消註冊那些裝置，再予以重新註冊。

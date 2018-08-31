@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501144"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251805"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -30,9 +30,6 @@ ms.locfileid: "39501144"
 
 >[!NOTE]
 >註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。
-
->[!NOTE]
->正陸續針對所有 Intune 客戶推出本文所述的群組指派註冊限制和優先權功能。 完成推出前，您可能無法存取群組，也沒有優先順序功能。
 
 您可以建立的特定註冊限制包括：
 

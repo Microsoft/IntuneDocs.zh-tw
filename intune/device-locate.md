@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
+ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444909"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912146"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 尋找遺失或遭竊的 iOS 裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用 [尋找裝置] 動作在地圖上顯示遺失或遭竊的 iOS 裝置位置。 該裝置必須是透過裝置註冊計劃註冊的公司擁有的 iOS 裝置，且處於受監督模式。 使用此動作之前，請先確定該裝置處於[遺失模式](device-lost-mode.md)。
+使用 [尋找裝置] 動作在地圖上顯示遺失或遭竊的 iOS 裝置位置。 裝置必須在受監督模式。 使用此動作之前，請先確定該裝置處於[遺失模式](device-lost-mode.md)。
 
 ## <a name="supported-platforms"></a>支援的平台
 

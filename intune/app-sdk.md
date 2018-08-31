@@ -1,20 +1,27 @@
---
-# <a name="required-metadata"></a>必要的中繼資料
-
-title: Intune App SDK 優點 titlesuffix: Microsoft Intune description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
-keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# <a name="optional-metadata"></a>選擇性中繼資料
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: aanavath ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-classic
-
 ---
-
+title: Intune App SDK 優點
+titlesuffix: Microsoft Intune
+description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 05/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+ms.reviewer: aanavath
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: 19a550b9ecdee55f29b9ac9424c009bf68c25ed1
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251890"
+---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概觀
 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。
 

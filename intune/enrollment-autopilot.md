@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138709"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903070"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows AutoPilot 來註冊 Windows 裝置
 Windows AutoPilot 可簡化裝置佈建。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 AutoPilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 AutoPilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Windows AutoPilot 概觀)。
@@ -72,8 +72,8 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
     - **自我部署 (預覽)**：(Windows 10 Insider Preview 組建 17672 或更新版本) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不須有使用者認證，就能佈建裝置。
 4. 在 [加入Azure AD] 方塊中，選擇 [已加入 Azure AD]。
 5. 選擇 [全新體驗 (OOBE)]、設定下列選項，然後選擇 [儲存]：
-    - **語言 (地區)***：選擇要用於裝置的語言。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
-    - **自動設定鍵盤***：如果選取了 [語言 (地區)]，請略過鍵盤選取頁面。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
+    - **語言 (區域)**\*：選擇要用於裝置的語言。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
+    - **自動設定鍵盤**\*：如果選取了 [語言 (區域)]，請跳過鍵盤選取頁面。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
     - **使用者授權合約 (EULA)**：(Windows 10，版本 1709 或更新版本) 選擇是否向使用者顯示 EULA。
     - **隱私權設定**：選擇是否向使用者顯示隱私權設定。
     - **使用者帳戶類型**：選擇使用者的帳戶類型為 [系統管理員] 或 [標準] 使用者。 

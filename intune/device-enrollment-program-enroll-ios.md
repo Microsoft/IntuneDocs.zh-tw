@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001922"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092272"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -80,7 +80,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 3. 在 [管理伺服器] 頁面上，選擇 [新增 MDM 伺服器]。
 4. 輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
 
-5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案] 以上傳 .pem 檔案，然後選擇 [下一步]。
+5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
 
 6. 移至 [部署計劃] &gt; [裝置註冊計劃] &gt; [管理裝置]。
 7. 在 [選擇裝置依據] 下，指定識別裝置的方式：
@@ -110,7 +110,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
 
-    ![建立設定檔螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![[建立設定檔] 螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. 在 [建立設定檔] 下，為設定檔輸入系統管理用的**名稱**以及**描述**。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
@@ -129,9 +129,17 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
     > 如果您要執行以下任何操作，請將 [不向 Apple 設定輔助程式驗證，而向公司入口網站驗證] 設定為 [是]。
     >    - 使用多重要素驗證
     >    - 提示第一次登入時必須變更密碼的使用者
-    >    - 提示使用者在註冊期間重設其過期的密碼 使用 Apple 設定輔助程式進行驗證時，不支援這些密碼。
+    >    - 提示使用者在註冊期間重設其過期密碼
+    >
+    > 使用 Apple 設定助理進行驗證時，不支援這些功能。
 
-6. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
+
+6. 如果您針對 [使用公司入口網站進行驗證，而不使用 Apple 設定助理] 選擇 [是]，您可以選擇使用大量採購方案 (VPP) 權杖在裝置上自動安裝公司入口網站，而不需要使用者提供 Apple ID。 若要使用 VPP 安裝公司入口網站，請在 [使用 VPP 安裝公司入口網站] 下選擇權杖。 請確定權杖未過期，而且您有足夠的公司入口網站應用程式裝置授權。 如果權杖過期或授權不足，則 Intune會改為安裝 App Store 公司入口網站，並提示您輸入 Apple ID。
+
+    ![[使用 VPP 安裝公司入口網站] 的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
+
+
+7. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
 
     ![裝置管理設定螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -145,37 +153,42 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
 
-7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
+8. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
-8. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
+9. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
-9. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
+10. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
 
-10. 選擇 [確定]。
+11. 選擇 [確定]。
 
-11. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+12. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-
-    |                 設定                  |                                                                                               說明                                                                                               |
+    | 部門設定 | 說明 |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>部門名稱</strong>     |                                                             使用者在啟用期間點選 [關於設定] 時顯示。                                                              |
-    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。                                                          |
-    | <strong>設定助理選項</strong> |                                                     下列是選用設定，可稍後在 iOS [設定] 功能表中進行設定。                                                      |
-    |        <strong>密碼</strong>         | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
-    |    <strong>位置服務</strong>    |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                  |
-    |         <strong>還原</strong>         |                                                                啟用時，設定助理會在啟用期間提示 iCloud 備份。                                                                 |
-    |   <strong>iCloud 與 Apple ID</strong>   |                         啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。                         |
-    |  <strong>條款和條件</strong>   |                                                   啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |          <strong>縮放</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |          <strong>Siri</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |     <strong>診斷資料</strong>     |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
+    | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
+    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
+
+  您可以選擇當使用者設定裝置時，要在裝置上顯示或隱藏各種不同的設定助理畫面。
+  - 如果您選擇 [隱藏]，則不會在設定期間顯示畫面。 設定好裝置之後，使用者仍然可以進入 [設定] 功能表來設定此功能。
+  - 如果您選擇 [顯示]，將會在設定期間顯示畫面。 使用者有時可以跳過畫面而不採取動作。 但是他們隨後可以進入裝置的 [設定] 功能表來設定此功能。 
+
+| 設定助理畫面設定 | 如果您選擇 [顯示]，裝置會在設定期間... |
+    |------------------------------------------|------------------------------------------|
+    | <strong>密碼</strong> | 提示使用者輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
+    | <strong>位置服務</strong> | 提示使用者輸入其位置。 |
+    | <strong>還原</strong> | 顯示 [應用程式與資料] 畫面。 此畫面可讓使用者選擇在設定裝置時，要從 iCloud 備份還原或傳送資料。 |
+    | <strong>iCloud 與 Apple ID</strong> | 可讓使用者選擇使用其 **Apple ID** 登入並使用 **iCloud**。                         |
+    | <strong>條款和條件</strong> | 需要使用者接受 Apple 的條款及條件。 |
+    | <strong>Touch ID</strong> | 可讓使用者選擇設定裝置的指紋識別。 |
+    | <strong>Apple Pay</strong> | 可讓使用者選擇在裝置上設定 Apple Pay。 |
+    | <strong>縮放</strong> | 可讓使用者選擇在設定裝置時縮放顯示畫面。 |
+    | <strong>Siri</strong> | 可讓使用者選擇設定 Siri。 |
+    | <strong>診斷資料</strong> | 向使用者顯示 [診斷] 畫面。 此畫面可讓使用者選擇將診斷資料傳送給 Apple。 |
 
 
-12. 選擇 [確定]。
+13. 選擇 [確定]。
 
-13. 若要儲存該設定檔，請選擇 [建立]。
+14. 若要儲存該設定檔，請選擇 [建立]。
 
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
@@ -195,7 +208,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖。
 2. 選擇 [裝置] > 選擇清單中的裝置 > [指派設定檔]。
-3. 在 [指派設定檔] 下，選擇裝置的設定檔，然後選擇 [指派]。
+3. 在 [指派設定檔] 下，選擇裝置的設定檔 > [指派]。
 
 ### <a name="assign-a-default-profile"></a>指派預設設定檔
 

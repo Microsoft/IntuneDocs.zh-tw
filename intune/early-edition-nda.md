@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001905"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093192"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune 的舊版 - 2018 年 8 月
 
@@ -172,7 +172,8 @@ ms.locfileid: "40001905"
 - 「移除公司資料」將變更為「淘汰」
 - 「原廠重設」將變更為「抹除」
 
-
+### <a name="delete-jamf-devices----2653306---"></a>刪除 Jamf 裝置 <!-- 2653306 -->
+您能夠刪除受控於 JAMF 的裝置，方法是移至 [裝置] > [選擇 Jamf 裝置] > [刪除]。
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ ms.locfileid: "40001905"
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>已改善裝置註冊管理員使用者的公司入口網站應用程式體驗 <!-- 675800 -->
 當裝置註冊管理員 (DEM) 登入適用於 Windows 的公司入口網站應用程式時，應用程式只會列出 DEM 目前執行中的裝置。 這項改善會減少之前應用程式在嘗試載入所有 DEM 註冊裝置時所發生的逾時。  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 註冊期間，使用 VPP 裝置授權預先佈建公司入口網站 <!-- 1608345 -->
-您將可以在裝置註冊計劃 (DEP) 註冊期間，使用大量採購方案 (VPP) 裝置授權預先佈建公司入口網站。 若要這麼做，當您建立或編輯註冊設定檔時，請指定您要用來安裝公司入口網站的 VPP 權杖。 請確定您的權杖未過期，而且您有足夠的公司入口網站應用程式權限。 如果權杖過期或授權不足，則 Intune會改為推送 App Store 公司入口網站 (這會提示您輸入 Apple 識別碼)。
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows 企業營運 (LOB) 應用程式副檔名 <!-- 1884873 -->
-Windows LOB 應用程式的附檔名現在包含 *.msi*、*.appx*、*.appxbundle*、*.msix* 和 *.msixbundle*。 您可以依序選取 [Mobile Apps] > [應用程式] > [新增] 在 Microsoft Intune 中新增應用程式。 隨即顯示 [新增應用程式] 窗格，讓您可以選取 [應用程式類型]。 針對 Windows LOB 應用程式，選取 [企業營運] 應用程式作為應用程式類型，並選取 [應用程式套件檔案]，然後輸入具有適當副檔名的安裝檔。
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 設定套件會自動新增至組態設定檔 <!-- 2144658 -->
 在 Intune 中使用[進階威脅保護和上線](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile)裝置時，您目前會下載設定套件，並將它新增至組態設定檔。 在未來更新中，Intune 會從 Windows Defender 資訊安全中心自動取得套件，並將它新增至設定檔。

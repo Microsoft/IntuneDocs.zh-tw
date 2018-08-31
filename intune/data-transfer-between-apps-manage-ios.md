@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926990"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252442"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 ## <a name="manage-ios-apps"></a>管理 iOS 應用程式
@@ -70,7 +70,7 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 
 |協力廠商 MDM 提供者| 設定機碼 | 數值類型 | 設定值|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | 字串 | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | 字串 | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | 字串 | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | 字串 | ${userUPN} **或** ${userEmailAddress} |
 |ManageEngine Mobile Device Manager | IntuneMAMUPN | 字串 | %upn% |

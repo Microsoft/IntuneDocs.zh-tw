@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212030"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903138"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的註冊
 
@@ -56,7 +56,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [裝置註冊] > [Android 註冊] > [Kiosk 及工作裝置註冊]。
 2. 選擇 [建立] 並填寫必要的欄位。
     - **名稱**：鍵入將設定檔指派給動態裝置群組時，您要使用的名稱。
-    - **權杖到期日**：權杖到期的日期。 Google 最多可強制執行 30 天。
+    - **權杖到期日**：權杖到期的日期。 Google 最多可強制執行 90 天。
 3. 選擇 [建立] 以儲存該設定檔。
 
 ### <a name="create-a-device-group"></a>建立裝置群組
@@ -110,7 +110,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 
 ### <a name="enroll-by-using-a-token"></a>使用權杖註冊
 
-針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。
+針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **aft#setup** 註冊方法時，利用 QR 代碼掃描。
 
 1. 開啟恢復出廠預設值的裝置。
 2. 在 [歡迎使用] 畫面上選取您的語言。
@@ -125,6 +125,9 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 ### <a name="enroll-by-using-a-qr-code"></a>使用 QR 代碼註冊
 
 在 Android 7 和更新版本的裝置上，您可以從註冊設定檔掃描 QR 代碼來註冊裝置。
+
+> [!Note]
+> 瀏覽器縮放可能會導致裝置無法掃描 QR 代碼。 增加瀏覽器縮放比例可解決此問題。
 
 1. 若要在 Android 裝置上啟動 QR 讀取，請在恢復出廠預設值之後看到的第一個畫面上點選多次。
 2. 若為 Android 7 和 8 的裝置，系統會提示您安裝 QR 讀取器。 Android 9 和更新版本的裝置已安裝 QR 讀取器。
