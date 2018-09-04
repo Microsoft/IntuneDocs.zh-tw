@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481184"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148773"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>從 Intune 管理移除您的 Windows 裝置
 
@@ -82,4 +82,4 @@ ms.locfileid: "39481184"
 
 * 重設公司入口網站應用程式。 開啟 [設定] 應用程式，然後選取 > [應用程式] > [公司入口網站] > [進階選項] > [重設]。 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eb62b7fb16b14fd723d71d2e7044fc9603f86ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f4cec690431ded00e7645e7ca76bd156453fb62
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020175"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148196"
 ---
 # <a name="your-device-is-noncompliant"></a>您的裝置不符合標準
 
@@ -30,4 +30,4 @@ ms.locfileid: "31020175"
 
 在公司入口網站應用程式中，點選 [檢查相容性]。 公司入口網站應用程式即會告訴您導致裝置不符合標準的原因。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

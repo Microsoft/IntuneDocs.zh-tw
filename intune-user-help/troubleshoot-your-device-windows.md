@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751674"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149641"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>修正 Windows 裝置常見的問題
 
-有時候 Windows 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 Windows 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上的連絡資訊，與您公司的支援人員連絡。
 
 - [我的 Windows 10 裝置無法註冊](troubleshoot-your-windows-10-device-windows.md)
 - [我需要更新 Windows 裝置](you-need-to-update-your-windows-device.md)

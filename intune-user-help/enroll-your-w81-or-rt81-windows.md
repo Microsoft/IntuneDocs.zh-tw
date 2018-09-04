@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1f2c81803af12d99bae44c21118c4d94221f78fa
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 425c3a829975e8a4a42b7f9e0302701666124aee
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017983"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146551"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置
 
@@ -65,4 +65,4 @@ ms.locfileid: "31017983"
 
 4.  點選 [安裝] 或 [免費]。 顯示的選項取決於您的公司設定應用程式的方式。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

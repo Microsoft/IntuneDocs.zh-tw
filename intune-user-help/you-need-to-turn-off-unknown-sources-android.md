@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016130"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150356"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>您必須關閉不明來源
 
@@ -30,4 +30,4 @@ ms.locfileid: "31016130"
 
 關閉 [未知來源] 之後，可能需要過幾分鐘，您才能繼續使用 Android 裝置來存取公司或學校的資料。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

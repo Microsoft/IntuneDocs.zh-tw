@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547483"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148792"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>從 Intune 移除 iOS 裝置
 
@@ -74,4 +74,4 @@ ms.locfileid: "34547483"
 -   **金鑰鏈結**：裝置會將密碼及其他用來登入的資訊儲存在金鑰鏈結中。 Microsoft 應用程式會在您裝置上 Microsoft 所開發的任何應用程式 (包括 Microsoft Outlook 和 Microsoft Authenticator) 之間共用您的登入資訊。 與 Apple 分析一樣，只有將裝置重設回出廠設定，才能移除此資訊。 這會清除您裝置上的所有個人資訊。 若要這樣做，請開啟 [設定] > [一般] > [重設] > [清除所有內容及設定]。
 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

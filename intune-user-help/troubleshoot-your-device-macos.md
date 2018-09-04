@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38804de876a4856d4e4b6e39d16233608cf9857f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755397"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146773"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>修正 macOS 裝置常見的問題
 
-有時候 macOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 macOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上的連絡資訊，與您公司的支援人員連絡。
 
 - [尚不支援我的 macOS 版本](your-macos-version-isnt-yet-supported.md)
 - [更新 macOS 裝置](you-need-to-update-your-macos-device.md)

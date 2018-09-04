@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018493"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147976"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>開啟 Windows Defender 來存取公司資源
 
@@ -50,4 +50,4 @@ ms.locfileid: "31018493"
 
 請前往 [開始] 並搜尋 [Windows Defender 資訊安全中心]，檢查並確定防毒定義為最新狀態。 選取 [防護更新] 和 [檢查更新] 來確定您的裝置有最新的病毒防護。 如果這個選項沒有出現，請遵循[開啟即時保護](turn-on-defender-windows.md#turn-on-real-time-protection)中的步驟
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

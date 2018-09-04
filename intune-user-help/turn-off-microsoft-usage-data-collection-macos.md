@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64a3a4710b8841dcc80c159d0622735fdd862e7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 604c08e771548b9cd071ae87ba9cdcb3f9bb2d3a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031663"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147463"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>如何關閉 Microsoft 資料收集
 
@@ -30,4 +30,4 @@ Microsoft 會自動收集有關產品和服務的特定資料。 我們這樣做
 
 若您希望關閉 macOS 裝置的資料收集，請開啟公司入口網站應用程式，然後選取 [公司入口網站] 功能表。 開啟 [喜好設定]並取消核取 [Send usage data to Microsoft] \(傳送使用資料給 Microsoft) 下方的 [Allow Microsoft to collect data] \(允許 Microsoft 收集資料) 方塊。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

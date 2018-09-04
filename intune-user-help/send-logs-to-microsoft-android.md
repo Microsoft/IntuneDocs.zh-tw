@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020005"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149391"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>將記錄傳送給公司入口網站 Android 裝置開發人員
 
@@ -46,4 +46,4 @@ ms.locfileid: "31020005"
 
 若要直接連絡 Android 的公司入口網站小組，請傳送電子郵件給<a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>。 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

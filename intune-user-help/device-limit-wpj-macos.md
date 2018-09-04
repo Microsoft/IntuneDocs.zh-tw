@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: da965c9309e7140b5ce0cd95960ee7a9d4ac804f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db5e2e19f746e3916f5edf7719fb71e4fb7d37d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754309"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146601"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>您可註冊的裝置數已達到上限
 
@@ -33,4 +33,4 @@ ms.locfileid: "30754309"
 2. 從 [MyApps 入口網站](https://myapps.microsoft.com)移除其中一部裝置，並選取頁面右上角的 [設定檔]。 
 3. 連絡您公司的支援人員，看看是否能為您增加允許註冊的裝置數。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

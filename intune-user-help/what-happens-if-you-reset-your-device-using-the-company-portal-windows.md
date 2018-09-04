@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755482"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149118"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司入口網站重設您的 Windows 裝置會發生什麼情況？
 
@@ -34,4 +34,4 @@ ms.locfileid: "30755482"
 |您的裝置只能存取公司電子郵件|**Windows Phone 8.1**<br />您的裝置將不再顯示於公司入口網站中，而且將會刪除您的公司電子郵件帳戶和尚未儲存的電子郵件。<br /><br />**Windows 7 或 Windows Vista**<br />您不能重設執行 Windows 7 (含) 以前版本且僅供電子郵件用途的電腦。<br /><br />**Windows 8.1 及 Windows 8**<br />您的裝置將不再顯示於公司入口網站中，而且將會刪除您的公司電子郵件帳戶和尚未儲存的電子郵件。|
 |個人電腦和筆記型電腦|**Windows 8.1 及 Windows 8**<br />您不能重設執行 Windows 8 或 Windows 8.1 的電腦，除非該電腦僅供電子郵件用途。<br /><br />**Windows 7 或 Windows Vista**<br />您不能重設執行 Windows 7 (含) 以前版本的電腦。|
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

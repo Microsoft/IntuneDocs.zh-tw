@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b1d655993643665879b67c47d7c579ddb58b42a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 24064cb3cf02f0ac5c0ef94107d047435dec3ba0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030504"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146917"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>您的 iOS 裝置沒有基本必備的作業系統版本
 
@@ -30,4 +30,4 @@ ms.locfileid: "31030504"
 
 依序點選 [設定] > [一般] > [軟體更新]，以更新 iOS 裝置。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

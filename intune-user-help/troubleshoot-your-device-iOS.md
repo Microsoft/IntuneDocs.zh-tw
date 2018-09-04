@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755261"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146394"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>修正 iOS 裝置常見的問題
 
-有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上的連絡資訊，與您公司的支援人員連絡。
 
 - [我需要重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
 - [我需要將錯誤傳送給我的公司支援人員](send-errors-to-your-it-admin-ios.md)

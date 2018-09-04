@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 94a6dff4a6dac357fcbdf475ada9894f4bc039bd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755431"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149293"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>在 iOS 裝置上安裝 Lookout for Work
 
@@ -56,5 +56,5 @@ ms.locfileid: "30755431"
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/lookout-for-work/id997193468)安裝 Lookout for Work。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 

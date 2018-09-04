@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013971"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150458"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>您需要更新 Android 裝置才能安裝 Outlook 應用程式
 
@@ -36,4 +36,4 @@ Outlook 應用程式可協助數百萬名使用者在 [Android](https://play.goo
 
 移至 [設定]，然後使用 [更新] 或 [系統更新] 選項。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

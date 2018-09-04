@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327682"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149595"
 ---
 # <a name="email-logs-to-your-company-support"></a>使用電子郵件將記錄傳送給公司支援人員
 
@@ -45,4 +45,4 @@ ms.locfileid: "32327682"
 3.  點選 [傳送電子郵件並上傳記錄]。
 4.  上傳完成之後，點選您的電子郵件應用程式。 這會開啟一封主旨欄位中已預先填入事件識別碼的電子郵件訊息。 請在電子郵件的本文中，描述您所遇到的問題。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

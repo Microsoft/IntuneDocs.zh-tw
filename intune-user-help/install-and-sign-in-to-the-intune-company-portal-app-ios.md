@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 071ed6ca2889788c607625478f4f9d3d20e19662
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015144"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146370"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安裝並登入公司入口網站應用程式
 
@@ -38,4 +38,4 @@ ms.locfileid: "31015144"
 
     如果是第一次登入公司入口網站應用程式，且貴公司或學校使用 Intune，則會出現提示要求您在 Intune 註冊裝置。 若要註冊，請遵循[在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)中的步驟。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

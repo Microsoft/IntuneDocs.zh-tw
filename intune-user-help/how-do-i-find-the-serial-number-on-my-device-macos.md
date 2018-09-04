@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 33e06cbd1ad47ee9af34c660157a5dacc3db2e80
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 14dedc8a690abe17da7e846957737f6059014859
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014328"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146717"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>如何在我的裝置上尋找序號？
 
 裝置序號可唯一識別該裝置，並可協助公司支援人員執行特定工作，例如將您的裝置取代為新的裝置。 若要尋找序號，請移至 **Apple 功能表** > [About This Mac] \(關於此 Mac)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

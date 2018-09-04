@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f667564443115ba350cf244009d3509fe8d760d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327801"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148353"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>您需要在 Android 裝置上安裝 SandBlast Mobile Protect
 
@@ -58,4 +58,4 @@ ms.locfileid: "32327801"
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 Play Store 手動](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)安裝 SandBlast Mobile Protect。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

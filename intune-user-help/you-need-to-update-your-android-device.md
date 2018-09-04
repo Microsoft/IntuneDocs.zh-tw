@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e5653d436dd8306ba828fd5c4244e88b4c58272
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 95c13bc48ef0b524de43b5e0944e10bd20c36bd9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030817"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149135"
 ---
 # <a name="you-need-to-update-your-android-device"></a>您必須更新 Android 裝置
 
@@ -30,4 +30,4 @@ ms.locfileid: "31030817"
 
 依序點選 [設定] > [關於電話]，以更新 Android 裝置。 在 [設定] 區段中，點選 [檢查更新] 並安裝可用的更新。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

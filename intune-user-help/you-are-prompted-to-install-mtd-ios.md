@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755329"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148756"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 裝置上安裝 Mobile Threat Defense
 
@@ -46,4 +46,4 @@ Mobile Threat Defense 是公司確定您的裝置能安全避開可能嘗試竊�
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 
-有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

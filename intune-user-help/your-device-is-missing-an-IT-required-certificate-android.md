@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019852"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149776"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>您的 Android 裝置遺失公司支援人員所要求的憑證
 
@@ -37,9 +37,9 @@ ms.locfileid: "31019852"
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>透過公司或學校電腦上尋找以識別遺失的憑證
 
-1. 在電腦上開啟 Internet Explorer。 如果您沒有可用於此用途的電腦，請連絡公司支援人員。 如需公司支援人員的連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+1. 在電腦上開啟 Internet Explorer。 如果您沒有可用於此用途的電腦，請連絡公司支援人員。 如需公司支援人員的連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
-2. 請移至[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)，並使用您的公司或學校認證登入。
+2. 請移至[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)，並使用您的公司或學校認證登入。
 
 3. 在瀏覽器的網址列最右側，選擇看似掛鎖的符號，如下方螢幕擷取畫面所示。
 
@@ -71,4 +71,4 @@ ms.locfileid: "31019852"
 
 7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您公司的支援人員。
 
-如果您已經遵循相關步驟，卻仍顯示上述相同的「遺失憑證」訊息，可能表示您需要公司支援人員協助安裝其他憑證。 請使用可在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)取得的連絡資訊來連絡您公司的支援人員以取得協助。
+如果您已經遵循相關步驟，卻仍顯示上述相同的「遺失憑證」訊息，可能表示您需要公司支援人員協助安裝其他憑證。 請使用可在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)取得的連絡資訊來連絡您公司的支援人員以取得協助。

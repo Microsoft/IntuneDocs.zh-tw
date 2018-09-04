@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016300"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146734"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>針對 Windows 10 將記錄從設定應用程式傳送給公司支援人員
 
@@ -38,4 +38,4 @@ ms.locfileid: "31016300"
 
 您可能也需要傳送[公司入口網站應用程式中的記錄](send-logs-to-your-it-admin-cp-windows.md)，更進一步地協助公司支援人員嘗試將他們可能發現的任何問題進行疑難排解。 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

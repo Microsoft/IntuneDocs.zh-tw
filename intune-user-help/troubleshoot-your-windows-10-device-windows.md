@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018170"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150691"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。
@@ -61,4 +61,4 @@ ms.locfileid: "31018170"
 
 如果您看到訊息，指出<strong>無法自動探索符合所輸入使用者名稱的管理端點。請檢查您的使用者名稱，然後再試一次。若您知道管理端點的 URL，請輸入它</strong>，然後您應該嘗試重新輸入使用者名稱和密碼。 如果仍然無法運作，則應該洽詢您公司的支援人員，以取得您需要在 [管理端點] 文字方塊中提供的網站。 此網站看起來可能類似 <strong>www.yourcompany.onmicrosoft.com</strong>。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 47cb816f0a032d8e01fcdd7ff025d36ba1354f3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: cab09c0a127c8d3bab2a135e1bf46f6beb478d22
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754972"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150764"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>在 iOS 裝置上安裝 Zimperium zIPS
 
@@ -46,4 +46,4 @@ ms.locfileid: "30754972"
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/zimperium-zips/id1030924459)安裝 Zimperium zIPS。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

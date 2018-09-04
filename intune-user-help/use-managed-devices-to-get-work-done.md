@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755227"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150661"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用受管理的裝置完成工作
 Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機、平板電腦及個人電腦) 及其他公司資源，例如電子郵件。 不僅員工可以隨時隨地從幾乎任何一種裝置存取他們的工作資訊，也可保護公司資訊的安全。
@@ -36,7 +36,7 @@ Microsoft Intune 這套軟體可協助組織管理裝置 (例如智慧型手機�
 您可以使用兩種不同的方式來取得公司入口網站︰
 
 - 在您的裝置上安裝公司入口網站應用程式。 移至您裝置上的 App Store，通常即可取得公司入口網站應用程式，但您公司的支援人員也可以為您安裝公司入口網站應用程式。
-- 前往您公司支援人員設定的[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+- 前往您公司支援人員設定的[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>應用程式與網站之間的差異為何？
 公司入口網站應用程式與公司入口網站有一些次要差異，但您可以對兩者執行的大部分工作都相同。 您可以執行的工作：
@@ -102,4 +102,4 @@ Microsoft 建議您先嘗試看看是否可以自行修正問題。 我們提供
 - [修正 macOS 裝置常見的問題](troubleshoot-your-device-macos.md)
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您公司的支援人員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)中找到他們的連絡資訊。
+您可以在底下張貼評語以尋求協助，但每個組織有不同的需求，因此我們不一定能夠為您解答。 連絡您公司的支援人員以尋求協助，可能有助於您得到最快速且最相關的回應。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。

@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4003d27bd3cbd8e0bef835df7895f7388cbd7dcd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ff7f076cf779c867ba730d8f048dd6a8a8f6d1af
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014498"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147004"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>您需要更新 iOS 裝置才能安裝 Outlook 應用程式
 
@@ -36,4 +36,4 @@ Outlook 應用程式可協助數百萬名使用者在 [iOS](https://itunes.apple
 
 若要更新，請點選 [設定] > [一般] > [軟體更新]。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017949"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149682"
 ---
 # <a name="update-your-windows-10-device"></a>更新您的 Windows 10 裝置
 
@@ -34,4 +34,4 @@ ms.locfileid: "31017949"
 
 如果您的 Windows 版本比貴公司的支援新，您必須[嘗試一些不同的步驟來修正問題](your-windows-version-isnt-yet-supported.md)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

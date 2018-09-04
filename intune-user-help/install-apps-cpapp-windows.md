@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 085d6c9e21cff3ef79097ac0cc2e3a2151c5b391
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 5d77a4c2b5d55a3cd6086af61de0804afc3e5245
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927316"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149613"
 ---
 # <a name="install-apps-on-your-device"></a>在裝置上安裝應用程式
 透過 Windows 版公司入口網站應用程式，在您的裝置上安裝應用程式。
@@ -41,4 +41,4 @@ ms.locfileid: "33927316"
 
  取決於您公司的規模，公司入口網站可能提供多種 Office 版本以供下載。 如需有關適用於 Windows 裝置的 Office 套件特定資訊，請參閱[在 Windows 裝置上安裝 Office 365](./install-office-windows.md)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

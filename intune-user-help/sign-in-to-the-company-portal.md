@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84f8e70d8321ca27d689d13472b69007a1d6c186
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56f19d0722841e801a0aca0009f2f629a8b90949
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019223"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148809"
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登入公司入口網站應用程式？ <!--User Story 1132123-->
 
@@ -91,4 +91,4 @@ ms.locfileid: "31019223"
 
    ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出其進度。](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

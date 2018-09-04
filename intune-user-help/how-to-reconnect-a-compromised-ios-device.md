@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 434ed86a92956944a2c432f9f9d9c8822f043559
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d33cadab2c9ae7b44c72eff66f761c842105fc6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014634"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148534"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>如何重新連接遭盜用的 iOS 裝置
 
 公司支援人員偵測到您正在使用「已進行 JB 破解」的裝置。 「JB 破解」表示裝置已變更成啟用特定重要檔案的無限制存取，這可能危及安全性並對公司資源造成威脅。 
 
-發生這種情況時，您的裝置將無法再存取公司資源，且您可能必須將裝置重設為原廠設定。 建議您連絡公司支援人員以尋求協助。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+發生這種情況時，您的裝置將無法再存取公司資源，且您可能必須將裝置重設為原廠設定。 建議您連絡公司支援人員以尋求協助。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

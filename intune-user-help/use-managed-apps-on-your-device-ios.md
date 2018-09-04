@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 506b2e50333be9f284b7709fc2a57693330ff7a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031646"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147497"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 裝置上使用受管理的應用程式
 
@@ -64,4 +64,4 @@ ms.locfileid: "31031646"
 
 -   資料加密需求
 
-如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56682656ce9b935bbde595663e4feb0cdc725cb3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017371"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147879"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>在電信費用管理中註冊您的 Android 裝置
 
@@ -64,4 +64,4 @@ ms.locfileid: "31017371"
 
 一旦註冊之後，您就可以開始在 Datalert 應用程式中查看您的資料使用量。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

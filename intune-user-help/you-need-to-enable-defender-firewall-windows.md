@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57342767b83c965c2d22ec68cd74132362b5b40e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c918b192d49c12735701382418e594b3ee4386f6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016606"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150594"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>開啟 Windows Defender 防火牆
 
@@ -32,4 +32,4 @@ ms.locfileid: "31016606"
 2. 開啟 [系統及安全性] > [Windows Defender 防火牆]。
 3. 選擇網域、私用和公用網路的 [自訂設定] > [開啟或關閉 Windows 防火牆]。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

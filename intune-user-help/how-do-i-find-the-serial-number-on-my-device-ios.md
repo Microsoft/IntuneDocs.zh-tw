@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c81600b3a01017d18cd0ac9d17e1e03cca0ca783
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: af19ff602322dc74d16608c2a01620e2dbfaa414
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014889"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149507"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>如何在我的裝置上尋找序號？
 
@@ -32,4 +32,4 @@ ms.locfileid: "31014889"
 2. 點選 [設定] 應用程式，然後點選 [一般]。
 3. 點選 [關於]，然後捲動至 [序號]。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

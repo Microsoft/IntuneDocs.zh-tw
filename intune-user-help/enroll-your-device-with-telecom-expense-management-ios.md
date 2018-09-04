@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a17196ce30b014f0fd5e615918398c4436dba4f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031799"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149363"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>在電信費用管理中註冊您的 iOS 裝置
 
@@ -65,4 +65,4 @@ ms.locfileid: "31031799"
 
 一旦註冊之後，您就可以開始在 Datalert 應用程式中查看您的資料使用量。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

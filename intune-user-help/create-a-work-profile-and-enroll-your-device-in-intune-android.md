@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7ab6efccf9fa00119bc2052d16b4ad8fd5b55d8
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: accbab7acd4638958e6c05a5d5e969eea12cf355
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753918"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148157"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
@@ -82,4 +82,4 @@ ms.locfileid: "30753918"
 
     ![Play Store for Work 應用程式頁面](./media/andr-afw-tap-work-play-store-icon.png)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

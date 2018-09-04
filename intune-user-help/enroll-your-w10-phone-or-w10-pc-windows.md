@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017286"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147107"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>在 Intune 註冊 Windows 10 裝置
 
@@ -51,4 +51,4 @@ ms.locfileid: "31017286"
 3.  在 [裝置資訊] 下，點選 [其他資訊]。 您會看到裝置的資訊清單。 在此清單中，找出 [版本]。        
 4.  如果您的版本是 __1607 或更新版本__，請繼續進行[這些步驟](enroll-your-w10-device-access-work-or-school.md)。 如果您的版本是 __1511 或較舊版本__，請繼續進行[這些步驟](enroll-your-w10-device-your-account.md)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

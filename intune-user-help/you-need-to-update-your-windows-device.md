@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016198"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147313"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>您必須更新 Windows 裝置
 
@@ -37,4 +37,4 @@ ms.locfileid: "31016198"
 
 若是 Windows 10 和 Windows 8.1，請在__搜尋列__中輸入 __Windows 版本__。 在 [Can I help?]\(需要協助?) 下方，選取 [Windows 版本]。 即會出現版本號碼。 這個號碼看起來應該類似於 __10.0.14393.447__。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

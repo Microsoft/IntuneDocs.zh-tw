@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147851"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>您的 Windows 公司入口網站應用程式已過期
 
 您必須更新公司入口網站應用程式才能繼續存取公司電子郵件、連絡人和文件等項目。 若要修正此問題，請開啟 **Microsoft 網上商店**，然後安裝新版本的**公司入口網站**應用程式。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

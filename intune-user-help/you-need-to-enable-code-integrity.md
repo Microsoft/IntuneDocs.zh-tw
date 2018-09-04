@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7e63a8578779d6930c2691066cd784a18126b4a2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014940"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150179"
 ---
 # <a name="you-need-to-enable-code-integrity"></a>您必須啟用程式碼完整性
 
@@ -35,4 +35,4 @@ ms.locfileid: "31014940"
 
 如果您認為可以繼續，請參閱[停用安全開機](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)頁面上的＜重新啟用安全開機＞一節，嘗試自行啟用安全開機。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b55faeae5b68da04f1f9e75c984ebb0af2b9deb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 04811c4ced1734b4cb10ea624b71cf659857bdd7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020821"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150217"
 ---
 # <a name="install-lookout-for-work"></a>安裝 Lookout for Work
 
@@ -77,5 +77,5 @@ ms.locfileid: "31020821"
 有時安裝會因為您無法控制的技術問題而失敗。 如果發生這種情況，請嘗試從 [Play 商店](https://play.google.com/store/apps/details?id=com.lookout.enterprise)手動安裝 Lookout for Work。
 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 

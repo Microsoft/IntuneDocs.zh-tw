@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190514"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150841"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>向正確的受控 macOS 裝置人員提交錯誤
 
@@ -48,4 +48,4 @@ ms.locfileid: "34190514"
 2.  按一下 [說明] 功能表 > [傳送診斷報告]。  上傳記錄檔之後，您會收到事件識別碼。 複製並儲存識別碼。
 3.  使用<a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">此範本</a>向 Microsoft 傳送電子郵件。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e5e44f563e0ebfc3685c07fc7792df72dcf32a5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7d7c6b4f0634fdb2d4c28b897dc5782111ebdec9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015416"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148235"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>找到現有的公司電子郵件帳戶
 
@@ -36,4 +36,4 @@ ms.locfileid: "31015416"
 
 3.  等候一段時間讓新的電子郵件設定，會自動套用到您的裝置。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

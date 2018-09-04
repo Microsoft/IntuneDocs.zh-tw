@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016759"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149866"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>使用詳細資訊記錄來協助公司支援人員修正裝置問題
 
@@ -30,4 +30,4 @@ ms.locfileid: "31016759"
 
 若要開啟或關閉 [詳細資訊記錄]，請使用公司或學校認證登入公司入口網站應用程式，點選 [設定]，然後點選 [詳細資訊記錄] 旁的開啟/關閉按鈕。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ebb79bc3405e9ea0dd38c24b86a4c9020760c895
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442470"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146648"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 
@@ -70,4 +70,4 @@ ms.locfileid: "31442470"
 
 -   Microsoft Word、Excel 和 PowerPoint
 
-如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

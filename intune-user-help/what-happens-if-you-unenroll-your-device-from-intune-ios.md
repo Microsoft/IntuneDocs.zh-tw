@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8afec4c83e52693aa5789ba3e0ed89cb4d0eea38
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 4174844d3507ebd2c37034a1a4e7f54464f099e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308886"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148465"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>如果從 Intune 取消註冊 iOS 或 macOS 裝置，會發生什麼情況？
 
@@ -44,4 +44,4 @@ ms.locfileid: "34308886"
 
 如需如何取消註冊的指示，請參閱[從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

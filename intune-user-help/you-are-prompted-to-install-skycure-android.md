@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40e022fceecff0c12be9e7112af77b5d830ff94a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019648"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148179"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>在 Android 裝置上安裝 Symantec Endpoint Protection Mobile
 
@@ -58,4 +58,4 @@ ms.locfileid: "31019648"
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 Play 商店手動](https://play.google.com/store/apps/details?id=com.skycure.skycure)安裝 SEP Mobile。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
