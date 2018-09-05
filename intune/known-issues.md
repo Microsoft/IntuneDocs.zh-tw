@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073830"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347792"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -33,6 +33,13 @@ ms.locfileid: "34073830"
 如果您想要要求在 Intune 中新增功能，請考慮在 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)網站上提出報告。
 
 ## <a name="migration"></a>移轉
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>匯出 Azure 傳統入口網站合規性政策，在 Intune Azure 入口網站中重新建立這些原則
+
+將會取代在 Azure 傳統入口網站中建立的合規性政策。 您可檢閱及刪除任何現有的合規性政策，但無法加以更新。 若需要將任一合規性政策移轉至目前的 Intune Azure 入口網站，可以用逗號分隔的檔案 (.csv 檔案) 匯出政策。 然後，使用檔案中的詳細資料，在 Intune Azure 入口網站中，重新建立這些政策。
+
+> [!IMPORTANT]
+> Azure 傳統入口網站淘汰之後，您將無法再存取或檢視合規性政策。 因此，請務必在淘汰 Azure 傳統入口網站之前，先匯出您的政策，然後於 Azure 入口網站中重新建立它們。
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 舊版電腦用戶端功能只在 Silverlight 主控台提供
 
@@ -52,7 +59,7 @@ Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>特定 VPP 應用程式的多個應用程式安裝提示
 您可能會看到終端使用者裝置上已安裝之特定 VPP 應用程式的多個應用程式安裝提示。 如果您將已上傳至 Intune Azure 入口網站之 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項設定為 [開啟]，就會發生此問題。    
 
-若要解決此問題，您可以停用 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項。 若要執行這項作業，請在 Azure 入口網站中，開啟 Microsoft Intune。 從 Intune 選取 [Mobile Apps] > [iOS VPP tokens] \(iOS VPP 權杖\)。 接下來，選取已部署受影響應用程式的 VPP 權杖，然後選取 [編輯] > [Automatic app updates] \(自動應用程式更新\) > [關閉] > [儲存]。 或者，您可以停止將受影響的應用程式部署為 VPP 應用程式，這將會停止提示。    
+若要解決此問題，您可以停用 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項。 若要執行這項作業，請在 Azure 入口網站中，開啟 Microsoft Intune。 從 Intune 選取 [用戶端應用程式] >  [iOS VPP 權杖]。 接下來，選取已部署受影響應用程式的 VPP 權杖，然後選取 [編輯] > [Automatic app updates] \(自動應用程式更新\) > [關閉] > [儲存]。 或者，您可以停止將受影響的應用程式部署為 VPP 應用程式，這將會停止提示。    
 
 這是目前版本中的已知問題。 我們將在未來推出修正程式來解決此問題。 實作修正程式之後，您的使用者就不會再看到多個應用程式安裝提示。
 

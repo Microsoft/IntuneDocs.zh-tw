@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224948"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347911"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -47,7 +47,7 @@ ms.locfileid: "34224948"
 - 裝置必須加入 Active Directory Domain Services 或工作場所，才能使用此功能。
 - 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
 
-此外，從商務用 Microsoft 市集同步處理的相關集合和離線授權應用程式，現在將合併成 UI 中的單一應用程式項目。 來自個別套件的任何部署詳細資料都會移轉到單一項目。 若要在 Azure 入口網站中檢視相關的集合，請選取 [Mobile Apps] 刀鋒視窗中的 [應用程式授權]。
+此外，從商務用 Microsoft 市集同步處理的相關集合和離線授權應用程式，現在將合併成 UI 中的單一應用程式項目。 來自個別套件的任何部署詳細資料都會移轉到單一項目。 若要在 Azure 入口網站中檢視相關的集合，請從 [用戶端應用程式] 刀鋒視窗中，選取 [應用程式授權]。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>建立您的商務用 Microsoft 網上商店帳戶與 Intune 的關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
@@ -64,8 +64,8 @@ ms.locfileid: "34224948"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選擇 [行動應用程式]。
-1. 在 [行動應用程式] 窗格中選擇 [安裝] > [商務用 Microsoft 網上商店]。
+3. 在 [Intune] 窗格中，選擇 [用戶端應用程式]。
+1. 在 [用戶端應用程式] 窗格中，選擇 [安裝] >  [商務用 Microsoft Store]。
 2. 按一下 [啟用]。
 3. 若還未執行此動作，請遵循前文所述按一下連結來註冊商務用 Microsoft 網上商店並關聯您的帳戶。
 5. 從 [語言] 下拉式清單中，選擇來自商務用 Microsoft 網上商店應用程式在 Azure 入口網站中顯示的語言。 無論顯示的語言為何，可用時將以使用者的語言安裝。
@@ -73,7 +73,7 @@ ms.locfileid: "34224948"
 
 ## <a name="synchronize-apps"></a>同步處理應用程式
 
-1. 在 [Mobile Apps] 工作負載中，選擇 [安裝] > [商務用 Microsoft 網上商店]。
+1. 在 [用戶端應用程式] 工作負載中，選擇 [安裝] >  [商務用 Microsoft Store]。
 2. 按一下 [同步]，以取得您從 Microsoft 網上商店購買的應用程式，將其同步到 Intune。
 
 ## <a name="assign-apps"></a>指派應用程式
