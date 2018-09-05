@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164547"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751797"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -94,8 +94,13 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
     ![使用公司入口網站進行驗證。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >如果您將設定檔屬性設定為 [搭配使用者親和性使用] 且您不是使用公司入口網站，則在 Apple School Manager 裝置註冊期間，多重要素驗證 (MFA) 無法運作。 註冊後，MFA 會如預期地在這些裝置上運作。 第一次登入時必須變更密碼的使用者不會收到裝置提示。 此外，密碼已過期的使用者也不會在註冊期間收到提示要重設其密碼。 使用者必須使用不同的裝置來重設密碼。
+    > [!NOTE]
+    > 如果您要執行以下任何操作，請將 [不向 Apple 設定輔助程式驗證，而向公司入口網站驗證] 設定為 [是]。
+    >    - 使用多重要素驗證
+    >    - 提示第一次登入時必須變更密碼的使用者
+    >    - 提示使用者在註冊期間重設其過期密碼
+    >
+    > 使用 Apple 設定助理進行驗證時，不支援這些功能。
 
 6. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
     **受監督**裝置可提供您更多管理選項，並且預設會停用 [啟用鎖定]。 Microsoft 建議使用 DEP 作為啟用受監督模式的機制，特別是針對將部署大量 iOS 裝置的組織。
@@ -106,7 +111,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
    - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
 
      > [!NOTE]
-     > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
+     > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解此作業。
 
 7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905235"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251889"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -45,8 +45,12 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
 6. 在 [新增應用程式] 窗格的 [應用程式類型] 下拉式清單中，選取 [Web 連結] 類型。
 7. 選取 [設定]。
 8. 在 [應用程式資訊] 窗格中，新增下列資訊：
-    - **名稱**：輸入要顯示在公司入口網站中的應用程式名稱。
-    - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
+    - **名稱**：輸入要顯示在公司入口網站中的應用程式名稱。 
+    
+        > [!NOTE]
+        > 若您在部署並安裝應用程式之後透過 Intune Azure 入口網站變更應用程式名稱，將無法再使用命令定位應用程式。
+    
+    - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到此描述。
     - **發行者**：輸入應用程式的發行者名稱。
     - **應用程式 URL**：輸入裝載您要指派之應用程式的網站 URL。
     - **類別**：您可以選取一或多個內建的應用程式類別，或您自己建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。

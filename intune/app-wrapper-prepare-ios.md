@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254530"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251804"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -172,19 +172,14 @@ ms.locfileid: "39254530"
 
 3. 選擇 [同意] 接受 EULA，將封裝掛接到您的電腦。
 
-4.  開啟 **IntuneMAMPackager** 資料夾，並將其內容儲存到 macOS 電腦。 您現在已可開始執行 App Wrapping Tool。
-
-> [!NOTE]
-> Intune MAM Packager 可以分別裝載到 macOS 電腦上，且在執行包裝命令時，可能會導致「找不到檔案」的錯誤。 因此，移動 IntuneMAMPackager 資料夾的內容可在換行時找到封裝程式的路徑。
-
 ## <a name="run-the-app-wrapping-tool"></a>執行應用程式包裝工具
 
 ### <a name="use-terminal"></a>使用終端機
 
-開啟 macOS 終端機程式，並瀏覽至您儲存 App Wrapping Tool 檔案的資料夾。 可執行檔工具的名稱為 IntuneMAMPackager，位於 IntuneMAMPackager/Contents/MacOS 中。 執行命令如下︰
+開啟 macOS 終端機並執行下列命令：
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 -   包含檔案上傳對話方塊的 iOS 應用程式，可以讓使用者規避應用程式適用的剪下、複製及貼上限制。 例如，使用者可以使用檔案上傳對話方塊，來上傳應用程式資料的螢幕擷取畫面。
 
 -   當您從經過包裝的應用程式內監視裝置上的文件資料夾時，可能會出現一個名為 .msftintuneapplauncher 的資料夾。 若您變更或刪除此檔案，可能會影響受限應用程式正常運作。
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>適用於 iOS 的 Intune App Wrapping Tool 含 Citrix MDX mVPN
+此功能是與適用於 iOS 之 Citrix MDX 應用程式封裝工具的整合。 此整合只是 Intune App Wrapping Tools 的額外選擇性命令列旗標 `-citrix`。
+
+### <a name="requirements"></a>需求
+
+若要使用 `-citrix` 旗標，您將必須在相同的 macOS 電腦上安裝[適用於 iOS 的 Citrix MDX 應用程式封裝工具](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)。 下載檔案可以在 [Citrix XenMobile 下載](https://www.citrix.com/downloads/xenmobile/)上找到，且登入後僅限於 Citrix 客戶。 確定這是安裝在預設位置：`/Applications/Citrix/MDXToolkit`。 
+
+> [!NOTE] 
+> 對 Intune 與 Citrix 整合的支援僅限 iOS 10+ 裝置。
+
+### <a name="use-the--citrix-flag"></a>使用 `-citrix` 旗標
+只要執行您的一般應用程式封裝命令並附加 `-citrix` 旗標。 `-citrix` 旗標目前不接受任何引數。
+
+**使用方式格式**：
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**範例命令**：
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>取得已包裝應用程式的記錄檔
 使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022334"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251728"
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 
@@ -38,7 +38,7 @@ Enterprise Mobility + Security (EMS) 的條件式存取不是一項獨立產品�
 
 ## <a name="conditional-access-with-intune"></a>利用 Intune 的條件式存取
 
-Intune 會新增行動裝置合規性和應用程式管理原則，以支援 EMS 條件式存取方案。
+條件式存取是 Azure Active Directory Premium 授權中包含的 Azure Active Directory 功能。 Intune 透過新增行動裝置合規姓與行動應用程式管理到解決方案以加強其功能。 
 
 ![使用 EMS 時的 Intune 和條件式存取](./media/intune-with-ca-1.png)
 

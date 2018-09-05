@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2d27e90655e54051d73989202d2bc849a66208f5
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321164"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910797"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>iOS 裝置的電子郵件設定檔設定 - Intune
 
 請使用電子郵件設定檔設定來設定執行 iOS 的裝置。
+
+> [!IMPORTANT]
+> 我們已改進此文章中所述的一些 S/MIME 功能。 因此，S/MIME 功能已暫時從 Intune 移除。 當此功能推出時，我們將會移除此備註。
 
 ## <a name="email-settings"></a>電子郵件設定
 

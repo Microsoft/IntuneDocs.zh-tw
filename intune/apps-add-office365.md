@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321470"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252745"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -29,8 +29,8 @@ ms.locfileid: "39321470"
 
 ## <a name="before-you-start"></a>開始之前
 
->[!IMPORTANT]
->這種安裝 Office 的方法，只有在裝置上未安裝其他版本的 Microsoft Office 時才支援。
+> [!IMPORTANT]
+> 若使用者裝置上有 .msi Office 應用程式，您必須使用**移除 MSI** 功能來安全地解除安裝這些應用程式。 否則，Intune 提供的 Office 365 應用程式將無法安裝。
 
 - 部署這些應用程式的裝置必須執行 Windows 10 Creators Update 或更新版本。
 - Intune 僅支援從 Office 365 套件新增 Office 應用程式。
@@ -62,7 +62,7 @@ ms.locfileid: "39321470"
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
-在此步驟中，您要提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
+在此步驟中，您要提供應用程式套件的相關資訊。 此資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
 
 1. 在 [新增應用程式] 窗格中，選取 [應用程式套件資訊]。
 2. 在 [應用程式套件資訊] 窗格中，執行以下動作：
@@ -91,6 +91,7 @@ ms.locfileid: "39321470"
         - **每月 (目標)**
         - **每半年**
         - **每半年 (目標)**
+    - **從使用者裝置移除其他版本的 Office (MSI)**：此功能將能讓您從使用者電腦移除所有預先存在的 Office (MSI)。 這不限於在**設定應用程式套件**中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從使用者裝置移除。
     - **自動接受應用程式的使用者授權合約**：如果您不需要使用者接受授權合約，請選取此選項。 Intune 會自動接受合約。
     - **使用共用的電腦啟用**：當多個使用者共用一部電腦時，請選取此選項。 如需詳細資訊，請參閱 [Office 365 的共用電腦啟用概觀](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **語言**：Office 會自動以使用者裝置上與 Windows 一起安裝的任何受支援語言來安裝。 如果想要使用其他語言安裝應用程式套件，請選取此選項。

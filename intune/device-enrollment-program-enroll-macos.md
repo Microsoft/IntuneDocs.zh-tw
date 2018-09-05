@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40090101"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751729"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 macOS 裝置
 
@@ -127,25 +127,30 @@ ms.locfileid: "40090101"
 
 8. 選擇 [設定助理設定] 以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
 
-
-    |                 設定                  |                                                                                               說明                                                                                               |
+    | 部門設定 | 說明 |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>部門名稱</strong>     |                                                             使用者在啟用期間點選 [關於設定] 時顯示。                                                              |
-    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。                                                          |
-    | <strong>設定助理選項</strong> |                                                     下列是選擇性設定，可稍後在 macOS [設定] 功能表中進行設定。                                                      |
-    |        <strong>密碼</strong>         | 在啟用期間提示輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
-    |    <strong>位置服務</strong>    |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                  |
-    |         <strong>還原</strong>         |                                                                啟用時，設定助理會在啟用期間提示 iCloud 備份。                                                                 |
-    |   <strong>iCloud 與 Apple ID</strong>   |                         啟用時，設定助理會提示使用者登入 Apple ID，且 [應用程式與資料] 畫面可允許從 iCloud 備份還原裝置。                         |
-    |  <strong>條款和條件</strong>   |                                                   啟用時，設定助理會在啟用期間提示使用者接受 Apple 的條款及條件。                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |          <strong>縮放</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |          <strong>Siri</strong>           |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |     <strong>診斷資料</strong>     |                                                                 啟用時，設定助理會在啟用期間提示此服務。                                                                 |
-    |     <strong>FileVault</strong>           |  |
-    |     <strong>iCloud 診斷</strong>  |  |
-    |     <strong>註冊</strong>        |  |
+    | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
+    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
+
+    您可以選擇當使用者設定裝置時，要在裝置上顯示或隱藏各種不同的設定助理畫面。
+    - 如果您選擇 [隱藏]，則不會在設定期間顯示畫面。 設定好裝置之後，使用者仍然可以進入 [設定] 功能表來設定此功能。
+    - 如果您選擇 [顯示]，將會在設定期間顯示畫面。 使用者有時可以跳過畫面而不採取動作。 但是他們隨後可以進入裝置的 [設定] 功能表來設定此功能。 
+
+    | 設定助理畫面設定 | 如果您選擇 [顯示]，裝置會在設定期間... |
+    |------------------------------------------|------------------------------------------|
+    | <strong>密碼</strong> | 提示使用者輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
+    | <strong>位置服務</strong> | 提示使用者輸入其位置。 |
+    | <strong>還原</strong> | 顯示 [應用程式與資料] 畫面。 此畫面可讓使用者選擇在設定裝置時，要從 iCloud 備份還原或傳送資料。 |
+    | <strong>iCloud 與 Apple ID</strong> | 可讓使用者選擇使用其 **Apple ID** 登入並使用 **iCloud**。                         |
+    | <strong>條款和條件</strong> | 需要使用者接受 Apple 的條款及條件。 |
+    | <strong>Touch ID</strong> | 可讓使用者選擇設定裝置的指紋識別。 |
+    | <strong>Apple Pay</strong> | 可讓使用者選擇在裝置上設定 Apple Pay。 |
+    | <strong>縮放</strong> | 可讓使用者選擇在設定裝置時縮放顯示畫面。 |
+    | <strong>Siri</strong> | 可讓使用者選擇設定 Siri。 |
+    | <strong>診斷資料</strong> | 向使用者顯示 [診斷] 畫面。 此畫面可讓使用者選擇將診斷資料傳送給 Apple。 |
+    | <strong>FileVault</strong> | 可讓使用者選擇設定 FileVault 加密。 |
+    | <strong>iCloud 診斷</strong> | 可讓使用者選擇將 iCloud 診斷資料傳送給 Apple。 |
+    | <strong>註冊</strong>| 要求使用者註冊裝置。 |
 
 
 10. 選擇 [確定]。

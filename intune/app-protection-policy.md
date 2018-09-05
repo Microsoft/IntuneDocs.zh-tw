@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834273"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251683"
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -46,7 +46,7 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 - **未註冊任何行動裝置管理解決方案︰** 此類別中的裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受到管理或註冊。
 
 > [!IMPORTANT]
-> 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 連線到內部部署 Exchange 或 SharePoint 服務的應用程式不支援應用程式保護原則。
+> 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 您也可以透過建立適用於 iOS 版 Outlook 以及已啟用混合式新式驗證的 Android 的 Intune 應用程式保護原則，來保護對 Exchange 內部部署信箱的存取。 開始使用此功能之前，請確定您符合 [iOS 版和 Android 版 Outlook 的需求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 連線到內部部署 Exchange 或 SharePoint 服務的其他應用程式不支援應用程式保護原則。
 
 **使用應用程式保護原則的重要優點包括：**
 

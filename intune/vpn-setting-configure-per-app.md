@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753887"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251542"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -111,7 +111,7 @@ ms.locfileid: "34753887"
 
 ## <a name="create-a-per-app-vpn-profile"></a>建立個別應用程式 VPN 設定檔
 
-VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
+VPN 設定檔包含附有用戶端認證、VPN 連線資訊與個別應用程式 VPN 旗標的 SCEP 憑證，讓 iOS 應用程式得以使用個別應用程式 VPN 功能。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
@@ -145,25 +145,36 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選擇 [Mobile Apps]。
-3. 按一下 [應用程式]。
-4. 從應用程式清單中選取應用程式。
-5. 按一下 [指派]。
-6. 按一下 [新增群組]。
-7. 在 [新增群組] 窗格的 [指派類型]，選取 [必要]。
-6. 選取您之前定義的群組，並選取 [Make this app required] (讓此應用程式成為必要)。
-8. 為 [VPN] 選取您的 VPN 定義。
+3. 選擇 [Mobile Apps]。
+4. 按一下 [應用程式]。
+5. 從應用程式清單中選取應用程式。
+6. 按一下 [指派]。
+7. 按一下 [新增群組]。
+8. 在 [新增群組] 窗格的 [指派類型]，選取 [必要]。
+9. 選取您之前定義的群組，並選取 [Make this app required] (讓此應用程式成為必要)。
+10. 為 [VPN] 選取您的 VPN 定義。
  
     > [!NOTE]  
     > 有時，VPN 定義最多會花費一分鐘的時間來擷取值。 請先稍候 3 到 5 分鐘再按一下 [儲存]。
 
-9. 按一下 [確定] ，然後按一下 [儲存]。
+11. 按一下 [確定] ，然後按一下 [儲存]。
 
     ![建立應用程式與 VPN 的關聯](./media/vpn-per-app-app-to-vpn.png)
 
+在下次裝置簽入期間，當下列條件存在時，將會移除應用程式與設定檔之間的關聯：
+- 應用程式以必要安裝意圖為目標。
+- 設定檔與應用程式都以相同的群組為目標。
+- 您將個別應用程式 VPN 設定從應用程式指派移除。
+
+使用者要求從公司入口網站重新安裝之前，當下列條件存在時，應用程式與設定檔之間的關聯仍會存在：
+- 應用程式以可用安裝意圖為目標。
+- 設定檔與應用程式都以相同的群組為目標。
+- 使用者要求從公司入口網站安裝應用程式，這導致裝置上同時安裝應用程式與設定檔。
+- 您將個別應用程式 VPN 設定從應用程式指派移除。
+
 ## <a name="verify-the-connection-on-the-ios-device"></a>驗證 iOS 裝置上的連線
 
-完成個別應用程式 VPN 設定，並建立其與您應用程式的關聯後，請驗證能夠與裝置連線。
+完成個別應用程式 VPN 設定，並建立其與您應用程式的關聯後，請從裝置驗證連線是否可運作。
 
 ### <a name="before-you-attempt-to-connect"></a>嘗試連線前
 
@@ -191,7 +202,7 @@ VPN 設定檔包含附有用戶端認證、VPN 的連線資訊及個別應用程
 2. 點選 [連線]。  
 VPN 成功連線，而且沒有其他任何提示。
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

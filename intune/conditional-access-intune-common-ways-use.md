@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025907"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252582"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025907"
 Intune 條件式存取有兩種類型：裝置型條件式存取和應用程式型條件式存取。 您需要設定相關的相容性原則以在您的組織推動條件式存取相容性。 條件式存取通常用於執行以下作業：允許或封鎖存取 Exchange 內部部署、控制存取網路，或與 Mobile Threat Defense 解決方案整合等等。
 
 下列資訊可協助您了解如何使用 Intune 行動裝置性功能和 Intune 行動應用程式管理 (MAM) 功能。 
+
+> [!NOTE]
+> 條件式存取是 Azure Active Directory Premium 授權中包含的 Azure Active Directory 功能。 Intune 透過新增行動裝置合規姓與行動應用程式管理到解決方案以加強其功能。
 
 ## <a name="device-based-conditional-access"></a>裝置型條件式存取
 
@@ -87,7 +90,7 @@ Intune Exchange Connector 會提取 Exchange Server 中現有的所有 Exchange 
 
 #### <a name="whats-the-intune-role"></a>Intune 扮演何種角色？
 
-Intune 會評估和管理裝置狀態。
+Intune 會評估及管理裝置狀態。
 
 #### <a name="whats-the-exchange-server-role"></a>Exchange Server 扮演何種角色？
 
@@ -106,7 +109,7 @@ Intune 已與夥伴 (例如 Cisco ISE、Aruba Clear Pass 及 Citrix NetScaler) �
 
 ### <a name="conditional-access-based-on-device-risk"></a>以裝置風險為依據的條件式存取
 
-Intune 已與 Mobile Threat Defense 廠商建立夥伴關係，可提供安全性解決方案來偵測行動裝置上的惡意程式碼、特洛伊程式和其他威脅。
+Intune 已與 Mobile Threat Defense 廠商建立合作夥伴關係，可提供安全性解決方案來偵測行動裝置上的惡意程式碼、特洛伊木馬程式與其他威脅。
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Intune 與 Mobile Threat Defense 整合的運作方式
 
@@ -122,7 +125,7 @@ Intune 與 Mobile Threat Defense 整合在以裝置風險為依據的條件式�
 
 #### <a name="corporate-owned"></a>屬公司擁有
 
--   **已加入內部部署 AD 網域：** 對組織而言，這是最常見的條件式存取部署選項，原因在於他們已經透過 AD 群組原則和/或使用 System Center Configuration Manager 管理其電腦。
+-   **已加入內部部署 AD 網域：** 此選項通常由已以合理方式透過 AD 群組原則和/或 System Center Configuration Manager 管理其電腦的組織使用。
 
 -   **已加入 Azure AD 網域和 Intune 管理：** 這種情況通常適用於「選擇您自己的裝置」(CYOD)，以及使用膝上型電腦漫遊的情況，而其中的這些裝置很少會連線到公司網路。 裝置會加入 Azure AD 並向 Intune 註冊，以移除內部部署 AD 與網域控制站上的任何相依性。 這可在存取公司資源時，用來做為條件式存取準則。
 

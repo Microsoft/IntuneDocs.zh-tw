@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225403"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751645"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
@@ -61,7 +61,7 @@ ms.locfileid: "38225403"
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>使用者和裝置授權如何影響對服務的存取
 * 您指派軟體授權的每個**使用者**，都可以存取及使用線上服務和相關軟體 (包括 System Center 軟體)，以管理應用程式和最多 15 個裝置。
-* 您指派裝置軟體授權的每個**裝置**，都可以存取及使用線上服務和相關軟體 (包括 System Center 軟體)，以供任何數目的使用者使用。
+* 您可以單獨從使用者授權購買任何裝置的授權。 裝置授權不需要指派給裝置。 每部存取及使用線上服務與相關軟體 (包括 System Center 軟體) 的裝置都必須有裝置授權。
 * 如果裝置是由多個使用者使用，每個使用者都需要一個裝置軟體授權，或者所有使用者需要一個使用者軟體授權。
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>了解您已購買的授權類型

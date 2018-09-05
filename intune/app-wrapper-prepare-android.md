@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679439"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251492"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -50,6 +50,9 @@ ms.locfileid: "35679439"
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 您最好安裝 64 位元版本。
 
 - Android 要求所有應用程式套件 (.apk) 均已簽署。 若要**重複使用**現有憑證和整個簽署憑證指引，請參閱[重複使用簽署憑證和包裝應用程式](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 使用 Java 可執行檔 keytool.exe 產生簽署包裝輸出應用程式所需的**新**認證。 任何設定的密碼都必須安全，但請記下密碼，因為執行 App Wrapping Tool 時會需要這些密碼。
+
+> [!NOTE]
+> Intune App Wrapping Tool d不支援 Google 的 v2 與即將推出的 v3 應用程式簽署配置。 使用 Intune App Wrapping Tool 封裝 .apk 檔案之後，建議使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 這將可確保一旦您的應用程式到達使用者裝置，就可由 Android 標準適當地啟動。 
 
 - (選擇性) 在輸入應用程式內啟用 Multidex。 應用程式有時可能會達到 Dalvik 可執行檔 (DEX) 大小限制，因為包裝期間新增 Intune MAM SDK 類別。 DEX 檔案是 Android 應用程式編譯的一部分。 在此情況下，最佳做法是在應用程式本身內啟用 Multidex。 在某些組織中，這可能需要與編譯應用程式的人員合作 (即應用程式建置小組)。 
 

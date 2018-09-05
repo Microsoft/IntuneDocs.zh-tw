@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822716"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255229"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -112,14 +112,13 @@ ms.locfileid: "34822716"
 
 1. 若要指派更新響鈴，在更新響鈴清單中，選取響鈴，在 [<響鈴名稱>] 索引標籤中選擇 [指派]。
 2. 在下一個索引標籤中，選擇 [Select groups to include] (選取要包含的群組)，然後選擇要指派此響鈴的群組。
-3. 完成之後，選擇 [選取] 來完成這項指派。
+3. 完成之後，選擇 [選取] 來完成指派。
 
 ## <a name="update-compliance-reporting"></a>更新合規性報告
-您可以在 Intune 中檢視更新合規性，或使用 Operations Management Suite (OMS) 中稱為 Update Compliance 的免費解決方案。
+您可以在 Intune 中檢視更新合規性，或使用稱為「更新合規性」的免費解決方案。
 
 ### <a name="review-update-compliance-in-intune"></a>在 Intune 中檢視更新合規性 
-<!-- 1352223 -->
-檢視原則報告，以檢視您已設定之 Windows 10 更新通道的部署狀態。
+<!-- 1352223 -->檢閱原則報告，以檢視您已設定之 Windows 10 更新通道的部署狀態。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
@@ -137,7 +136,7 @@ ms.locfileid: "34822716"
       - **使用者狀態**
 
 ### <a name="review-update-compliance-using-oms"></a>使用 OMS 檢視更新合規性
-您可以使用 Operations Management Suite (OMS) 中的免費解決方案 Update Compliance 來監視 Windows 10 更新的首度發行。 如需詳細資訊，請參閱[使用Update Compliance 來監視 Windows Updates](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 當您使用此解決方案時，可以將商業識別碼部署至任何您用 Intune 管理、且要報告更新合規性的 Windows 10 裝置。
+您可以使用稱為「更新合規性」的免費解決方案來監視 Windows 10 更新的首度發行。 如需詳細資訊，請參閱[使用Update Compliance 來監視 Windows Updates](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 當您使用此解決方案時，可以將商業識別碼部署至任何您用 Intune 管理、且要報告更新合規性的 Windows 10 裝置。
 
 在 Intune 主控台中，您可以使用自訂原則的 OMA-URI 設定來設定商業識別碼。 如需詳細資訊，請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。   
 

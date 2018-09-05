@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906102"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255369"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的行動應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
+身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的行動應用程式。 此功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
 - 裝置平台及應用程式類型有千百種。
 - 您可能需要同時管理公司裝置和使用者個人裝置上的應用程式。
 - 您必須確保網路和資料的安全。
@@ -38,23 +38,22 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 
 ## <a name="app-management-capabilities-by-platform"></a>各種平台的應用程式管理功能
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|新增應用程式並指派給裝置與使用者|是|是|是|是|
-|指派應用程式給未向 Intune 註冊的裝置|是|是|否|否|
-|使用應用程式設定原則控制應用程式的啟動行為|否|是|否|否|
-|使用行動裝置應用程式佈建原則更新過期的應用程式|否|是|否|否|
-|使用應用程式保護原則保護應用程式中的公司資料|是|是|否|否<sup>1</sup>|
-|只移除已安裝應用程式中的公司資料 (應用程式選擇性抹除)|是|是|是|是|
-|監視應用程式指派|是|是|是|是|
-|指派及追蹤從應用程式市集中大量採購的應用程式|否|否|否|是|
-|強制安裝在裝置上的應用程式 (必要)<sup>2</sup>|是|是|是|是|
-|可從公司入口網站安裝在裝置上的選擇 (可用安裝)|是|是|是|是|
-|安裝網路應用程式的捷徑 (網路連結)|是|是|是|是|
-|內部 (企業營運) 應用程式|是|是|否|是|
-|市集應用程式|是|是|是|是|
-|更新應用程式|是|是|是|是|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| 新增應用程式並指派給裝置與使用者 | 是 | 是 | 是 | 是 | 是 |
+| 指派應用程式給未向 Intune 註冊的裝置 | 是 | 是 | 否 | 否 | 否 |
+| 使用應用程式設定原則控制應用程式的啟動行為 | 否 | 是 | 否 | 否 | 否 |
+| 使用行動裝置應用程式佈建原則更新過期的應用程式 | 否 | 是 | 否 | 否 | 否 |
+| 使用應用程式保護原則保護應用程式中的公司資料 | 是 | 是 | 否 | 否 | 否 |
+| 只移除已安裝應用程式中的公司資料 (應用程式選擇性抹除) | 是 | 是 | 否 | 是 | 是 |
+| 監視應用程式指派 | 是 | 是 | 是 | 是 | 是 |
+| 指派及追蹤從應用程式市集中大量採購的應用程式 | 否 | 否 | 否 | 是 | 否 |
+| 強制安裝在裝置上的應用程式 (必要)2 | 是 | 是 | 是 | 是 | 是 |
+| 可從公司入口網站安裝在裝置上的選擇 (可用安裝) | 是 | 是 | 是 | 是 | 是 |
+| 安裝 Web 應用程式的捷徑 (Web 連結) | 是 | 是 | 是 | 是 | 是 |
+| 內部 (企業營運) 應用程式 | 是 | 是 | 是 | 是 | 否 |
+| 市集應用程式 | 是 | 是 | 否 | 是 | 是 |
+| 更新應用程式 | 是 | 是 | 否 | 是 | 是 |
 
 <sup>1</sup>您可以考慮使用 [Windows 資訊保護](windows-information-protection-configure.md)來保護 Windows 10 裝置上的應用程式。
 
@@ -95,8 +94,8 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 - **應用程式授權**：檢視、指派及監視從應用程式市集大量採購的應用程式。 如需詳細資訊，請參閱：
     - [iOS 大量採購方案 (VPP) 應用程式](vpp-apps-ios.md)。
     - [商務用 Microsoft Store 大量採購應用程式](windows-store-for-business.md)。
-- **探索到的應用程式**：檢視 Intune 指派並安裝在裝置上的所有應用程式。
-- **應用程式安裝狀態**：檢視您所建立應用程式指派的狀態。
+- **探索到的應用程式**：檢視 Intune 指派並安裝在裝置上的所有應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md#device-and-user-status-graphs)。
+- **應用程式安裝狀態**：檢視您所建立應用程式指派的狀態。 如需詳細資訊，請參閱[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md#device-and-user-status-graphs)。
 - **應用程式保護狀態**：檢視您所選取使用者的應用程式保護原則狀態。
 - **稽核記錄檔**：檢視所有 IT 系統管理員所進行的 Intune 應用程式相關活動。
 

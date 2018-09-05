@@ -5,21 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0eac3c1d6739ca70e485b0327e3257ba8d32d2b
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 3a31a43cfe45060891c30a7f159123a30b43173d
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321620"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910661"
 ---
 # <a name="smime-email-signing-and-encryption-in-intune"></a>Intune 中的 S/MIME 電子郵件簽署和加密
+
+> [!IMPORTANT]
+> 我們已改進此文章中所述的一些 S/MIME 功能。 因此，S/MIME 功能已暫時從 Intune 移除。 當此功能推出時，我們將會移除此備註。
 
 S/MIME 透過使用加密和解密，為您的電子郵件通訊提供額外一層安全性。 Microsoft Intune 可以在執行 iOS、Windows、Windows Phone、Android 和 macOS 的行動裝置上，使用 S/MIME 來簽署及加密電子郵件。
 

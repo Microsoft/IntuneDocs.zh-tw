@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305428"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251491"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -30,11 +30,11 @@ ms.locfileid: "36305428"
 
 ## <a name="before-you-begin"></a>開始之前
 
-如果您正在 Intune 傳統入口網站中尋找指示，請參閱[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
-
-無論裝置是否交由 Intune 管理，都能對裝置上執行的應用程式套用應用程式保護原則。 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[什麼是 Microsoft Intune 應用程式保護原則](app-protection-policy.md)。
+無論裝置是否交由 Intune 管理，都能對裝置上執行的應用程式套用應用程式保護原則。 如需應用程式保護原則的運作方式，以及 Intune 應用程式保護原則支援案例詳細說明，請參閱[什麼是 Microsoft Intune 應用程式保護原則？](app-protection-policy.md)。
 
 如果您正在尋找 MAM 支援之應用程式的清單，請參閱 [MAM 應用程式清單](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
+
+如需有關將您組織的企業營運 (LOB) 應用程式新增到 Microsoft Intune 以準備應用程式保護原則的資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。
 
 ##  <a name="create-an-app-protection-policy"></a>建立應用程式保護原則
 1. 在 [行動應用程式] 工作負載中，從 [管理] 區段中選取 [應用程式防護原則]。 此選取項目會開啟 [應用程式原則] 的詳細資料，讓您從中建立新的原則及編輯現有的原則。
@@ -58,8 +58,8 @@ ms.locfileid: "36305428"
    > [!TIP]
    > 只有在工作內容中使用應用程式時，才會強制執行這些原則設定。 當終端使用者使用應用程式來執行個人工作時，不會受到這些原則的影響。
 
-7. 選擇 [確定] 儲存這項設定。 現在您已回到 [新增原則]  窗格。 選擇 [建立] 建立原則並儲存您的設定。
-8. 選擇 [確定] 儲存這項設定。 現在您已回到 [新增原則]  刀鋒視窗。
+7. 選擇 [確定] 儲存此設定。 現在您已回到 [新增原則]  窗格。 選擇 [建立] 建立原則並儲存您的設定。
+8. 選擇 [確定] 儲存此設定。 現在您已回到 [新增原則]  刀鋒視窗。
 9. 選擇 [建立] 建立原則並儲存您的設定。
 
 當您如先前程序中所述完成建立原則時，該原則不會部署給任何使用者。 若要部署原則，請參閱[＜將原則部署給使用者＞](app-protection-policies.md#deploy-a-policy-to-users)。
@@ -73,7 +73,7 @@ ms.locfileid: "36305428"
 
    ![將 [選取要包含的群組] 功能表選項反白之指派窗格的螢幕擷取畫面](./media/app-protection-policy-add-users.png)
 
-2.  [新增使用者群組]  窗格中會顯示使用者群組清單。 此清單會顯示 **Azure Active Directory**中的所有安全性群組。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
+2.  [新增使用者群組]  窗格中會顯示使用者群組清單。 此清單會顯示 **Azure Active Directory**中的所有安全性群組。 請選取要套用此原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
 
     ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 窗格的螢幕擷取畫面](./media/azure-ad-user-group-list.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "36305428"
 
 1.  在 [應用程式防護原則] 窗格中，選擇您想要變更的原則，以開啟特定於您選取之原則的窗格。
 
-2.  在 [原則] 窗格中，選擇 [指派] 來開啟 [Intune 應用程式防護 - 指派]窗格，該窗格會顯示具有這項原則的目前使用者群組清單。
+2.  在 [原則] 窗格中，選擇 [指派] 來開啟 [Intune 應用程式防護 - 指派]窗格，該窗格會顯示具有此原則的目前使用者群組清單。
 
 3.  若要將新的使用者群組新增至原則，在 [包含] 索引標籤選擇 [選取要包含的群組]，並選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
 

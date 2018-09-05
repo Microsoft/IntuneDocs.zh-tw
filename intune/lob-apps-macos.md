@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993712"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255496"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 macOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993712"
 
 使用本文中的資訊，協助您將 macOS 企業營運應用程式新增至 Microsoft Intune。 您必須下載外部工具來預先處理 *.pkg* 檔案，然後才能將企業營運應用程式上傳到 Microsoft Intune。 必須在 macOS 裝置上對您的 *.pkg* 檔案進行預先處理。
 
->[!NOTE]
->雖然 macOS 裝置的使用者可以移除部分內建的 macOS 應用程式 (如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，他們必須移至應用程式市集，並手動重新進行安裝。
->
->只能使用 *.pkg* 檔案將 macOS LOB 應用程式上傳到 Microsoft Intune。 不支援轉換其他格式，例如將 *.dmg* 轉換為 *.pkg*。
+> [!NOTE]
+> 雖然 macOS 裝置的使用者可以移除部分內建的 macOS 應用程式 (如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，他們必須移至應用程式市集，並手動重新進行安裝。
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>步驟 1 - 預先處理您的軟體安裝檔
+## <a name="before-your-start"></a>開始之前
 
-使用 [Mac 版 Intune App Wrapping Tool]，讓 Mac 應用程式能受 Microsoft Intune 管理。
+您必須下載外部工具來預先處理 *.pkg* 檔案，然後才能將企業營運應用程式上傳到 Microsoft Intune。 必須在 macOS 裝置上對您的 *.pkg* 檔案進行預先處理。 使用 [Mac 版 Intune App Wrapping Tool]，讓 Mac 應用程式能受 Microsoft Intune 管理。
+
+> [!IMPORTANT]
+> 只能使用 *.pkg* 檔案將 macOS LOB 應用程式上傳到 Microsoft Intune。 不支援轉換其他格式，例如將 *.dmg* 轉換為 *.pkg*。
 
 1. 下載並執行 [Mac 版 Intune App Wrapping Tool](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac) \(英文\)。
 
@@ -55,7 +56,7 @@ ms.locfileid: "38993712"
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     此命令會擷取在所建立 *.intunemac* 檔案偵測到的參數和版本。
 
-## <a name="step-2---specify-the-software-setup-file"></a>步驟 2 - 指定軟體安裝檔
+## <a name="step-1---specify-the-software-setup-file"></a>步驟 1 - 指定軟體安裝檔
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
@@ -64,14 +65,14 @@ ms.locfileid: "38993712"
 5. 從應用程式清單上方選擇 [新增]。
 6. 在 [新增應用程式] 窗格中，選擇 [企業營運應用程式]。
 
-## <a name="step-3---configure-the-app-package-file"></a>步驟 3 - 設定應用程式套件檔案
+## <a name="step-2---configure-the-app-package-file"></a>步驟 2：設定應用程式套件檔案
 
 1. 在 [新增應用程式] 窗格中，選擇 [應用程式套件檔案]。
 2. 在 [應用程式套件檔案] 窗格中，選擇瀏覽按鈕，然後選取副檔名為 *.intunemac* 的 macOS 安裝檔。
 3. 完成之後，請選擇 [確定]。
 
 
-## <a name="step-4---configure-app-information"></a>步驟 4 - 設定應用程式資訊
+## <a name="step-3---configure-app-information"></a>步驟 3：設定應用程式資訊
 
 1. 在 [新增應用程式] 窗格中選擇 [應用程式資訊]。
 2. 在 [應用程式資訊] 窗格中，新增您應用程式的詳細資料。 窗格中某些值會隨所選的應用程式自動填入︰
@@ -89,7 +90,7 @@ ms.locfileid: "38993712"
     - **標誌** - 上傳將與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 3. 完成之後，請選擇 [確定]。
 
-## <a name="step-5---finish-up"></a>步驟 5 - 完成
+## <a name="step-4---finish-up"></a>步驟 4：完成
 
 1. 在 [新增應用程式] 窗格中，驗證您應用程式的詳細資料正確。
 2. 選擇 [新增]，將應用程式上傳至 Intune。
@@ -99,7 +100,7 @@ ms.locfileid: "38993712"
 > [!NOTE]
 > 如果 *.pkg* 檔案包含多個應用程式或應用程式安裝程式，則 Microsoft Intune 只會在裝置上偵測到所有安裝的應用程式時，報告已成功安裝該*應用程式*。
 
-## <a name="step-6---update-a-line-of-business-app"></a>步驟 6 - 更新企業營運應用程式
+## <a name="step-5---update-a-line-of-business-app"></a>步驟 5 - 更新企業營運應用程式
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

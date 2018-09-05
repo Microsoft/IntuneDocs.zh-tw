@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212115"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751712"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 註冊 iOS 裝置
 
@@ -57,12 +57,18 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
     - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 裝置必須使用設定助理與使用者建立關聯，然後才能存取公司資料與電子郵件。 僅設定助理註冊提供支援。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
-   > [!NOTE]
-   > 在設定使用者親和性的註冊期間，無法使用多重要素驗證 (MFA)。 註冊後，MFA 會如預期地在這些裝置上運作。 第一次登入時必須變更密碼的使用者不會收到裝置提示。 此外，密碼已過期的使用者也不會在註冊期間收到提示要重設其密碼。 使用者必須使用不同的裝置來重設密碼。
-
     - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對執行工作而不需存取本機使用者資料的裝置使用此選項。 需要使用者關聯的應用程式 (包含用於安裝企業營運應用程式的公司入口網站應用程式) 將無法運作。 直接註冊的必要項。
 
 4. 如果您選擇 [搭配使用者親和性進行註冊]，則可以選擇讓使用者使用公司入口網站進行驗證，而不是 Apple 設定助理。
+
+    > [!NOTE]
+    > 如果您要執行以下任何操作，請將 [不向 Apple 設定輔助程式驗證，而向公司入口網站驗證] 設定為 [是]。
+    >    - 使用多重要素驗證
+    >    - 提示第一次登入時必須變更密碼的使用者
+    >    - 提示使用者在註冊期間重設其過期密碼
+    >
+    > 使用 Apple 設定助理進行驗證時，不支援這些功能。
+
 
 6. 選擇 [建立] 以儲存該設定檔。
 

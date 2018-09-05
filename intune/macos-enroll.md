@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046242"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251802"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用者必須前往[公司入口網站](http://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 管理 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](custom-settings-macos.md)。 即將推出更多功能。
+Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與應用程式的存取權。
+
+身為 Intune 系統管理員，您可以設定公司擁有 macOS 裝置與個人擁有 macOS 裝置 (「攜帶您自己的裝置」或 BYOD) 的註冊。 
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -39,27 +41,25 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 - 指派 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中的使用者授權
 - [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>使用者擁有的 macOS 裝置 (BYOD)
 
-您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 macOS 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。
-
-## <a name="company-owned-ios-devices"></a>公司擁有的 iOS 裝置
-針對為使用者購買裝置的組織來說，Intune 可支援使用[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶來註冊公司擁有裝置 macOS 裝置。
-
-## <a name="set-up-macos-enrollment"></a>設定 macOS 註冊
-
-根據預設，Intune 已允許註冊 macOS 裝置。
-
-若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](enrollment-restrictions-set.md) (設定裝置類型限制)。
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告知使用者如何註冊其裝置才可存取公司資源
-
-告訴使用者前往[公司入口網站](https://portal.manage.microsoft.com)，並遵循提示以註冊其裝置。 您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+您可以讓使用者註冊其個人裝置以便使用 Intune 來管理，這稱為「攜帶您自己的裝置」或 BYOD。 完成必要條件並指派使用者授權之後，您的使用者就可以透過執行下列動作來註冊其裝置：
+- 移至[公司入口網站](https://portal.manage.microsoft.com)或
+- 下載「公司入口網站」應用程式。
+您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 
 - [使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)
 - [使用具有 Intune 的 macOS 裝置](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>公司擁有的 macOS 裝置
+針對為使用者購買裝置的組織來說，Intune 可支援下列 macOS 公司擁有裝置的註冊方法：
+- [Apple 的裝置註冊計劃 (DEP)](device-enrollment-program-enroll-macos.md)：組織可以透過 Apple 的裝置註冊計劃 (DEP) 購買 macOS 裝置。 DEP 可以讓您在「線上」部署註冊設定檔，將裝置納入管理。
+- [裝置註冊管理員 (DEM)](device-enrollment-manager-enroll.md)：您可以使用 DEM 帳戶來註冊最多 1,000 部裝置。
+
+## <a name="block-macos-enrollment"></a>封鎖 macOS 註冊
+根據預設，Intune 會讓 macOS 裝置註冊。 若要封鎖註冊 macOS 裝置，請參閱 [Set device type restrictions](enrollment-restrictions-set.md) (設定裝置類型限制)。
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>註冊虛擬 macOS 機器進行測試
 
@@ -79,3 +79,7 @@ Intune 可讓您管理 macOS 裝置。 若要啟用裝置管理，您的使用�
 若要成為使用者核准，使用者必須在使用 [macOS 公司入口網站] 註冊之後，使用 [系統偏好設定] 手動提供核准。 針對 macOS 10.13.2 和更新版本的使用者，[macOS 公司入口網站] 提供進行此操作的指示。
 
 若要了解裝置是否為「使用者核准」，請移至 Intune 入口網站並選取 [裝置] > [所有裝置] > 選擇裝置 > [硬體]。 檢查 [使用者核准] 欄位。
+
+## <a name="next-steps"></a>接下來的步驟
+
+註冊 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](custom-settings-macos.md)。

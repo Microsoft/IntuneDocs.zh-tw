@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905966"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823064"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -55,7 +55,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援 Apple 大量採購方案大量採購的應用程式
 
-請透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
+請透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 此程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援企業對企業大量採購的應用程式
 
@@ -148,6 +148,10 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 <!-- 820870 -->  
 若要撤銷指定 VPP 權杖的所有 VPP 應用程式的授權，您必須先撤銷與權杖建立關聯的所有應用程式授權，然後刪除權杖。
+
+## <a name="renewing-app-licenses"></a>更新應用程式授權
+
+您可以透過從 Apple 大量採購方案入口網站下載新的權杖並在 Intune 中更新現有權杖，來更新 Apple VPP 權杖。
 
 ## <a name="further-information"></a>進一步資訊
 

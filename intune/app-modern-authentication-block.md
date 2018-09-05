@@ -15,12 +15,12 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcdc7628f75221228d788c2cb1995189ea8f81f0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 354109cc4d84e34eebd5df6df86919f386e143f6
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223096"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40252574"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>封鎖未使用新式驗證 (ADAL) 的應用程式
 
@@ -31,11 +31,7 @@ ms.locfileid: "34223096"
 若要封鎖這些應用程式的存取，建議執行下列動作：
 
 * 設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 案例 3 提供詳細指示 - [除使用瀏覽器架構的應用程式外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)。
-* 針對 **SharePoint Online**，使用 PowerShell 命令 [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) 來停用 SharePoint Online 服務中的非新式驗證，以便將舊式驗證通訊協定屬性設為 False：
-
-```
- Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-```
+* 針對 **Exchange 與 SharePoint Online**，請使用 Azure Active Directory 條件式存取並為 SharePoint Online 使用 PowerShell Cmdlet Set-SPOTenant。 如需詳細指示，請參閱[為 Azure Active Directory 條件式存取設定 SharePoint Online 與 Exchange Online](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols)。
 
 
 >[!IMPORTANT]

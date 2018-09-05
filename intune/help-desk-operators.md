@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329870"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251633"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -65,7 +65,7 @@ ms.locfileid: "36329870"
 | 2.   | 使用者選取  | 目前所選使用者的名稱。 按一下 [變更使用者] 選擇新的使用者。       |
 | 3.   | 使用者狀態  | 顯示使用者的 Intune 授權狀態、裝置數目、每部裝置的合規性、應用程式數目，以及應用程式合規性。       |
 | 4.   | 使用者資訊  | 使用清單來選取要在窗格中檢閱的詳細資料。 <br>您可以選取： <ul><li>行動裝置應用程式<li>應用程式防護原則<li>合規性政策<li> 設定原則</ul>      |
-| 5.   | 群組成員資格  | Yadda       |
+| 5.   | 群組成員資格  | 顯示所選使用者所屬的目前群組。       |
 
 ## <a name="mobile-apps-reference"></a>行動裝置應用程式參考
 
