@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823064"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347513"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -55,7 +55,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援 Apple 大量採購方案大量採購的應用程式
 
-請透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 此程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
+請透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 應用程式授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS 裝置支援企業對企業大量採購的應用程式
 
@@ -83,9 +83,9 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-1.  在 [Intune] 窗格上，選擇 [設定] 下的 [行動應用程式] > [iOS VPP 權杖]。
-2.  在 VPP 權杖清單窗格上，選取 [建立]。
-4. 在 [建立 VPP 權杖] 窗格上，指定下列資訊：
+3.  在 [Intune] 窗格上，選擇 [設定] 下的 [用戶端應用程式] > [iOS VPP 權杖]。
+4.  在 VPP 權杖清單窗格上，選取 [建立]。
+5. 在 [建立 VPP 權杖] 窗格上，指定下列資訊：
     - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
     - **國家/地區** - 選取 VPP 國家/地區市集。  Intune 會從指定的 VPP 國家/地區市集同步處理所有地區設定的 VPP 應用程式。
@@ -93,9 +93,10 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
         > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步時的存放區 URL 。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
-    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 啟用時，在裝置簽入時，Intune 會透過 Intune 服務更新針對所指定權杖購買的所有應用程式。
-會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
-4. 完成之後，請選取 [建立]。
+    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
+        > [!NOTE]
+        > 自動應用程式更新適用於 iOS 11.0 版和更新版本的裝置和使用者授權應用程式。
+6. 完成之後，請選取 [建立]。
 
 該權杖會顯示在權杖清單窗格內。
 
@@ -103,7 +104,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
-1.  在 [Intune] 窗格上，選擇 [管理] 下的 [行動應用程式] > [應用程式]。
+1.  在 [Intune] 窗格上，選擇 [管理] 下的 [用戶端應用程式] > [應用程式]。
 2.  在應用程式窗格清單上，選擇您要指派的應用程式，然後選擇 [指派]。
 3.  在 [應用程式名稱] - [指派] 窗格上，選擇 [新增群組]，然後在 [新增群組] 窗格中選擇 [指派類型]，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
 5.  針對您選取的每個群組，選擇下列設定：
@@ -153,9 +154,17 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 您可以透過從 Apple 大量採購方案入口網站下載新的權杖並在 Intune 中更新現有權杖，來更新 Apple VPP 權杖。
 
-## <a name="further-information"></a>進一步資訊
+## <a name="deleting-an-ios-vpp-app"></a>刪除 iOS VPP 應用程式
+
+目前，您無法從 Microsoft Intune 刪除 iOS VPP 應用程式。
+
+## <a name="additional-information"></a>其他資訊
 
 當具有合格裝置的使用者第一次嘗試將 VPP 應用程式安裝至裝置時，系統會要求他們加入 Apple 大量採購方案。 他們必須加入，應用程式安裝才會繼續執行。 對於加入 Apple 大量採購方案的邀請，需要使用者能夠在 iOS 裝置上使用 iTunes 應用程式。 如果您已經設定停用 iTunes Store 應用程式的原則，則 VPP 應用程式以使用者為基礎的授權將無法運作。 解決方法是移除原則以允許 iTunes 應用程式，或是使用以裝置為基礎的授權。
+
+Apple 提供建立和更新 VPP 權杖的直接協助。 如需詳細資訊，請參閱 Apple 文件中的 [ Distribute content to your users with the Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) (使用大量採購計劃 (VPP) 發佈內容給使用者)。 
+
+如果 Intune 入口網站中指出**已指派給外部 MDM**，您 (系統管理員) 必須先從協力廠商 MDM 移除 VPP 權杖，才能在 Intune 中使用 VPP 權杖。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

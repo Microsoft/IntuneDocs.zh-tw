@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251598"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347768"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>將 iOS 企業營運應用程式新增至 Microsoft Intune
 
@@ -35,8 +35,8 @@ ms.locfileid: "40251598"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 窗格中，選取 [行動應用程式]。
-4. 在 [行動應用程式] 工作負載中，選擇 [管理]  >  [應用程式]。
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 工作負載中，選取 [管理] > [應用程式]。
 5. 從應用程式清單上方，選取 [新增]。
 6. 在 [新增應用程式] 窗格中，選取 [企業營運應用程式]。
 

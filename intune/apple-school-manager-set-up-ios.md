@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751797"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313404"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
 
@@ -111,9 +111,9 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
    - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
 
      > [!NOTE]
-     > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解此作業。
+     > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
 
-7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
+7. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須抹除裝置才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
 8. 若要使用受控 Apple Id 來讓多個使用者登入已註冊的 iPad，請在 [共用的 iPad] (需要將 [不搭配使用者親和性進行註冊] 與 [受監督] 模式設為 [是]，才會有此選項) 之下選擇 [是]。受管理 Apple ID 是在 Apple School Manager 入口網站中建立的。 深入了解[共用的 iPad](education-settings-configure-ios-shared.md) 與 [Apple 共用的 iPad 需求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) \(英文\)。
 
@@ -179,4 +179,4 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 ## <a name="distribute-devices-to-users"></a>將裝置散發給使用者
 
-您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 Apple School 裝置註冊。 您現在可以將裝置散發給使用者。 當 iOS Apple School Manager 裝置開機時，就會加以註冊交由 Intune 管理。 如果裝置已啟動且正在使用中，則在該裝置重設為原廠設定之前，將無法套用設定檔。
+您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 Apple School 裝置註冊。 您現在可以將裝置散發給使用者。 當 iOS Apple School Manager 裝置開機時，就會加以註冊交由 Intune 管理。 如果裝置已啟動且正在使用中，則在抹除該裝置前，都無法套用設定檔。

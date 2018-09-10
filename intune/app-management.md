@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255369"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330138"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的行動應用程式。 此功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
+身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的行動應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
 - 裝置平台及應用程式類型有千百種。
 - 您可能需要同時管理公司裝置和使用者個人裝置上的應用程式。
 - 您必須確保網路和資料的安全。
@@ -61,16 +61,16 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 
 ## <a name="get-started"></a>開始使用
 
-您可以按照以下步驟，在**行動應用程式**工作負載中，找到與應用程式最密切相關的資訊：
+您可以按照下列步驟，在 [用戶端應用程式] 工作負載中，找到與應用程式最相關的資訊：
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Microsoft Intune] 窗格中，選取 [行動應用程式]。
+3. 在 [Microsoft Intune] 窗格中，選取 [用戶端應用程式]。
 
     ![[行動應用程式] 工作負載窗格](./media/apps-workload.png)
 
-接下來四個小節會描述 [行動應用程式] 窗格中可用的選項。
+接下來四節會描述 [用戶端應用程式] 窗格中的可用選項。
 
 ### <a name="manage"></a>管理
 - **應用程式**：選取此選項可新增、檢視、指派和監視您工作人員使用的應用程式。 如需詳細資訊，請參閱：

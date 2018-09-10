@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751729"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313421"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 macOS 裝置
 
@@ -106,7 +106,7 @@ ms.locfileid: "42751729"
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
 
-    ![建立設定檔螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![[建立設定檔] 螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. 在 [建立設定檔] 下，為設定檔輸入系統管理用的**名稱**以及**描述**。 使用者看不到這些詳細資料。 您可以使用此 [名稱] 欄位，在 Azure Active Directory 中建立動態群組。 設定檔名稱可用來定義 enrollmentProfileName 參數，以註冊具備此註冊設定檔的裝置。 深入了解 [Azure Active Directory 動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "42751729"
 
     - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對執行工作而不需存取本機使用者資料的裝置使用此選項。 公司入口網站應用程式之類的應用程式無法運作。
 
-6. 選擇 [裝置管理設定]，並選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [系統喜好設定] 功能表中或透過 [終端機] 移除的 macOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。
+6. 選擇 [裝置管理設定]，並選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [系統喜好設定] 功能表中或透過 [終端機] 移除的 macOS 設定。 註冊裝置之後，必須抹除裝置才能變更此設定。
 
     ![裝置管理設定螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -128,13 +128,14 @@ ms.locfileid: "42751729"
 8. 選擇 [設定助理設定] 以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
 
     | 部門設定 | 說明 |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
-    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
+    | <strong>部門電話</strong> | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
 
-    您可以選擇當使用者設定裝置時，要在裝置上顯示或隱藏各種不同的設定助理畫面。
-    - 如果您選擇 [隱藏]，則不會在設定期間顯示畫面。 設定好裝置之後，使用者仍然可以進入 [設定] 功能表來設定此功能。
-    - 如果您選擇 [顯示]，將會在設定期間顯示畫面。 使用者有時可以跳過畫面而不採取動作。 但是他們隨後可以進入裝置的 [設定] 功能表來設定此功能。 
+  您可以選擇當使用者設定裝置時，要在裝置上顯示或隱藏各種不同的設定助理畫面。
+  - 如果您選擇 [隱藏]，則不會在設定期間顯示畫面。 設定好裝置之後，使用者仍然可以進入 [設定] 功能表來設定此功能。
+  - 如果您選擇 [顯示]，將會在設定期間顯示畫面。 使用者有時可以跳過畫面而不採取動作。 但是他們隨後可以進入裝置的 [設定] 功能表來設定此功能。 
+
 
     | 設定助理畫面設定 | 如果您選擇 [顯示]，裝置會在設定期間... |
     |------------------------------------------|------------------------------------------|
@@ -152,6 +153,7 @@ ms.locfileid: "42751729"
     | <strong>iCloud 診斷</strong> | 可讓使用者選擇將 iCloud 診斷資料傳送給 Apple。 |
     | <strong>註冊</strong>| 要求使用者註冊裝置。 |
 
+   
 
 10. 選擇 [確定]。
 
@@ -172,7 +174,7 @@ ms.locfileid: "42751729"
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇清單中的權杖。
 2. 選擇 [裝置] > 選擇清單中的裝置 > [指派設定檔]。
-3. 在 [指派設定檔] 下，選擇裝置的設定檔，然後選擇 [指派]。
+3. 在 [指派設定檔] 下，選擇裝置的設定檔 > [指派]。
 
 ### <a name="assign-a-default-profile"></a>指派預設設定檔
 
@@ -182,7 +184,7 @@ ms.locfileid: "42751729"
 2. 選擇 [設定預設設定檔]、在下拉式清單中選擇設定檔，然後選擇 [儲存]。 此設定檔將套用到使用該權杖註冊的所有裝置。
 
 ## <a name="distribute-devices"></a>散發裝置
-您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。
+您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 在抹除裝置前，已啟動的裝置無法套用註冊設定檔。
 
 ## <a name="renew-a-dep-token"></a>更新 DEP 權杖  
 1. 前往 deploy.apple.com。  
@@ -204,4 +206,4 @@ ms.locfileid: "42751729"
 
 ## <a name="next-steps"></a>接下來的步驟
 
-註冊 macOS 裝置之後，您可以開始[管理它們](device-management.md)。
+註冊 macOS 裝置後，您可以開始[管理它們](device-management.md)。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251567"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313786"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取啟用 Windows Defender ATP
 
@@ -71,27 +71,15 @@ Windows Defender ATP 可以解決這類的安全性事件。 Windows Defender �
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>使用組態設定檔將裝置上線
 
-Windows Defender 包含安裝在裝置上的上線設定套件。 安裝之後，該套件會與 [Windows Defender ATP 服務](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)通訊，以掃描檔案、偵測威脅，以及向 Windows Defender ATP 報告威脅。 使用 Intune，您可以建立使用此設定套件的組態設定檔。 然後，將此設定檔指派給首次上線的裝置。
+當終端使用者在 Intune 中註冊時，您可以使用組態設定檔將不同設定推送到裝置。 這也適用於 Windows Defender ATP。
 
-當您使用設定套件將裝置上線之後，就不需要再次執行它。 這通常是一次性工作。
+Windows Defender 包含上架設定套件，該套件會與 [Windows Defender ATP 服務](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)通訊，以掃描檔案、偵測威脅，以及向 Windows Defender ATP 報告風險。
 
-您也可以使用[群組原則或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) 來將裝置上線。
+當您上架時，Intune 會從 Windows Defender ATP 取得自動產生的設定套件。 當將設定檔推送或部署到裝置時，也會將此設定套件推送至裝置。 這可讓 Windows Defender ATP 為裝置監視威脅。
 
-接下來的步驟會顯示如何使用 Intune 來進行上線。
+當您使用設定套件將裝置上線之後，就不需要再次執行它。 您也可以使用[群組原則或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) 來將裝置上線。
 
-#### <a name="download-configuration-package"></a>下載設定套件
-
-1. 在 [Windows Defender 資訊安全中心](https://securitycenter.windows.com) \(英文\) 中，選取 [設定] > [上線]。
-2. 輸入下列設定：
-  - **作業系統**：Windows 10
-  - **將電腦上線** > **部署方法**：行動裝置管理 / Microsoft Intune
-3. 選取 [下載套件]，並儲存 **WindowsDefenderATPOnboardingPackage.zip** 檔案。 將該檔案解壓縮。
-
-此 zip 檔案包含 **WindowsDefenderATP.onboarding**，您需要在下一個步驟使用它。
-
-#### <a name="create-the-atp-configuration-profile"></a>建立 ATP 組態設定檔
-
-此設定檔會使用您在上一個步驟下載的上線套件。
+### <a name="create-the-configuration-profile"></a>建立組態設定檔
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
 2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
@@ -100,10 +88,9 @@ Windows Defender 包含安裝在裝置上的上線設定套件。 安裝之後�
 5. 針對 [設定檔類型]，選取 [Windows Defender ATP (Windows 10 Desktop)]。
 6. 設定這些設定：
 
-  - **將設定套件上線**：瀏覽並選取您所下載的 **WindowsDefenderATP.onboarding** 檔案。 此檔案會啟用設定，讓裝置可以向 Windows Defender ATP 服務報告。
-  - **所有檔案的範例共用**：允許收集範例並與 Windows Defender ATP 共用。 例如，如果您看到可疑檔案，可將它提交至 Windows Defender ATP 以進行深入分析。
-  - **加快遙測回報頻率**：針對高風險的裝置啟用此設定，以便更頻繁地將遙測回報給 Windows Defender ATP 服務。
-  - **將設定套件離線**：如果您想要將 Windows Defender ATP 監視移除或「離線」，可以在 [Windows Defender 資訊安全中心](https://securitycenter.windows.com) \(英文\) 中下載離線套件並新增它。 否則，請略過這個屬性。
+  - **Windows Defender ATP 用戶端設定套件類型**：選取 [上架] 可將設定套件新增至設定檔。 選取 [下架] 可從設定檔移除設定套件。
+  - **所有檔案的範例共用**：[啟用] 可收集範例並與 Windows Defender ATP 共用。 例如，如果您看到可疑檔案，可將它提交至 Windows Defender ATP 以進行深入分析。 **未設定**不與 Windows Defender ATP 共用任何範例。
+  - **加快遙測回報頻率**：針對高風險的裝置 [啟用] 此設定，以便更頻繁地將遙測回報給 Windows Defender ATP 服務。
 
     [使用 System Center Configuration Manager 將 Windows 10 電腦上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)中有這些 Windows Defender ATP 設定的更多詳細資料。
 

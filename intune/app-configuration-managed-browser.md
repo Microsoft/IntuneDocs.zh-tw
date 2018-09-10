@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40252447"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329747"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>透過 Microsoft Intune 使用受保護的瀏覽器原則管理網際網路存取
 
@@ -64,7 +64,7 @@ Microsoft Edge 與 Intune Managed Browser 支援從 [Microsoft Intune 應用程�
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保護瀏覽器的條件式存取
 
-Managed Browser 現在是進行條件式存取的經過核准用戶端應用程式。 這表示您可以限制行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取，而在這些 Web 應用程式中，使用者只能使用 Managed Browser，並封鎖存取任何其他未受保護的瀏覽器 (如 Safari 或 Chrome)。 此保護可以套用至 Azure 資源 (如 Exchange Online 和 SharePoint Online)、Office 入口網站，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)公開到外部使用者的內部部署網站。 
+Managed Browser 現在是進行條件式存取的經過核准用戶端應用程式。 這表示您可以限制行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取，而在這些 Web 應用程式中，使用者只能使用 Managed Browser，並封鎖存取任何其他未受保護的瀏覽器 (如 Safari 或 Chrome)。 這項保護可以套用至 Azure 資源 (如 Exchange Online 和 SharePoint Online)、Office 入口網站，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)公開到外部使用者的內部部署網站。 
 
 若要限制 Azure AD 已連線 Web 應用程式在行動平台上使用 Intune Managed Browser，您可以建立需要經過核准之用戶端應用程式的 Azure AD 條件式存取原則。 
 
@@ -108,7 +108,7 @@ Intune Managed Browser 中的 SSO 需要 iOS 上的 Microsoft Authenticator 應�
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3.  在 [管理] 清單的 [Mobile Apps] 刀鋒視窗中，選擇 [應用程式設定原則]。
+3.  在 [管理] 清單的 [用戶端應用程式] 刀鋒視窗上，選擇 [應用程式設定原則]。
 4.  在 [應用程式設定原則] 刀鋒視窗上，選擇 [新增]。
 5.  在 [新增設定原則] 刀鋒視窗上，輸入應用程式組態設定的 [名稱] 和選擇性 [描述]。
 6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
@@ -126,7 +126,7 @@ Intune Managed Browser 中的 SSO 需要 iOS 上的 Microsoft Authenticator 應�
 
 您可以將設定指派給使用者的 Azure AD 群組。 如果該使用者已經安裝目標受保護的瀏覽器應用程式，則此應用程式是由您指定的設定管理。
 
-1. 在 Intune 行動應用程式管理儀表板的 [行動應用程式] 刀鋒視窗上，選擇 [應用程式設定原則]。
+1. 在 Intune 行動應用程式管理儀表板的 [用戶端應用程式] 刀鋒視窗上，選擇 [應用程式設定原則]。
 2. 從應用程式設定清單，選取您要指派的設定。
 3. 在下一個刀鋒視窗上，選擇 [指派]。
 4. 在 [指派] 刀鋒視窗上，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]。
@@ -278,7 +278,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 -   若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 **&#42;.microsoft.com**。 一律允許。
 
 ### <a name="turn-off-usage-data"></a>關閉使用量資料
-Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制此資料的收集。
+Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
 
 -   在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
@@ -291,7 +291,7 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 -   若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 **&#42;.microsoft.com**。 一律允許。
 
 ### <a name="turn-off-usage-data"></a>關閉使用量資料
-Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制此資料的收集。
+Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
 ## <a name="next-steps"></a>接下來的步驟
 
