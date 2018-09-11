@@ -7,17 +7,18 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.custom: get-started
+ms.openlocfilehash: becd0c62d57517a8c1566657b5278a46d68b9c17
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29748713"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254015"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune 所管理裝置的註冊選項
 
@@ -43,7 +44,7 @@ ms.locfileid: "29748713"
 ## <a name="corporate-identifiers"></a>公司識別碼
 
 您可以列出國際行動設備識別碼 (IMEI) 編號及序號，以識別公司擁有的裝置。 深入了解[公司識別碼](corporate-identifiers-add.md)。
-## <a name="multi-factor-authentication"></a>Multi-factor authentication
+## <a name="multi-factor-authentication"></a>[Multi-Factor Authentication]
 
 您可以要求使用者在註冊裝置時使用其他驗證方法，例如電話、PIN 或生物特徵辨識資料。 深入了解[多重要素驗證](multi-factor-authentication.md)。
 
