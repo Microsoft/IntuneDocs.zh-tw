@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146691"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313287"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
@@ -55,8 +55,8 @@ Apple School Manager 是針對學校提供的裝置採購暨註冊方案。 就�
 
 ## <a name="apple-configurator"></a>Apple Configurator
 您可以使用 Apple Configurator 在 Mac 電腦上註冊 iOS 裝置。 若要準備裝置，請以 USB 連接它們並安裝註冊設定檔。 使用 Apple Configurator 註冊裝置的方法共有兩種：
-- 設定助理註冊 - 將裝置重設為原廠設定，並將裝置備妥可執行設定助理，以及為裝置的新使用者安裝公司原則。
-- 直接註冊 - 不會將裝置重設為原廠設定，並使用預先定義的原則來註冊裝置。 這個方法適用於無使用者親和性的裝置。
+- 設定助理註冊 - 抹除裝置，並將裝置備妥可執行設定助理，以及為裝置的新使用者安裝公司原則。
+- 直接註冊 - 不會抹除裝置，並使用預先定義的原則來註冊裝置。 這個方法適用於無使用者親和性的裝置。
 
 深入了解 [Apple Configurator 註冊](apple-configurator-setup-assistant-enroll-ios.md)。
 

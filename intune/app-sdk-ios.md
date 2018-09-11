@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249721"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241876"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -241,7 +241,7 @@ AccentColor | 字串| 指定 PIN 畫面的輔色，例如按鈕文字色彩和�
 MAMTelemetryDisabled| 布林值| 指定 SDK 是否不會將任何遙測資料傳送至其後端。| 選擇性。 預設為 [否]。 |
 MAMTelemetryUsePPE | 布林值 | 指定 MAM SDK 是否會將資料傳送至 PPE 遙測後端。 如果使用 Intune 原則測試應用程式，讓測試遙測資料與客戶資料不混合使用，請使用此選項。 | 選擇性。 預設為 [否]。 |
 MaxFileProtectionLevel | 字串 | 選擇性。 允許應用程式指定其可支援的最大 `NSFileProtectionType`。 如果層級高於應用程式可支援的層級，此值會覆寫服務所傳送的原則。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|
-OpenInActionExtension | 布林值 | 設為 [是] 可取得 Open-In Action 延伸模組。 如需詳細資訊，請參閱透過＜透過 UIActivityViewController 共用資料＞一節。 |
+OpenInActionExtension | 布林值 | 設為 [是] 可取得 Open in Action 延伸模組。 如需詳細資訊，請參閱透過＜透過 UIActivityViewController 共用資料＞一節。 |
 WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所處理的 URL 配置。 | 如果您的應用程式使用透過連結及 (或) JavaScript 處理 URL 的 WebView，則為必要項。 |
 
 ## <a name="receive-app-protection-policy"></a>接收應用程式保護原則
@@ -465,7 +465,7 @@ Intune 可讓 IT 系統管理員選取受管理的應用程式可儲存資料的
 
 ### <a name="copy-to-actions"></a>「複製到」動作
 
-當透過 `UIActivityViewController` 和 `UIDocumentInteractionController` 共用文件時，iOS 會針對支援開啟已共用文件的每個應用程式，顯示「複製到」動作。 應用程式會透過其 Info.plist 中的 `CFBundleDocumentTypes` 設定，宣告它們支援的文件類型。 如果原則不允許共用到未受控的應用程式，則此類型的共用將無法再使用。 替代方案是，應用程式必須將非 UI 動作延伸模組新增至其應用程式，並將它連結到 Intune App SDK。 動作延伸模組只是虛設常式。 SDK 會實作檔案共用行為。 遵循下列步驟：
+當透過 `UIActivityViewController` 和 `UIDocumentInteractionController` 共用文件時，iOS 會針對支援開啟已共用文件的每個應用程式，顯示「複製到」動作。 應用程式會透過其 Info.plist 中的 `CFBundleDocumentTypes` 設定，宣告它們支援的文件類型。 如果原則不允許共用到未受控的應用程式，則此類型的共用將無法再使用。 替代方案是，使用者必須將非 UI 動作延伸模組新增至其應用程式，並連結到 Intune App SDK。 動作延伸模組只是虛設常式。 SDK 會實作檔案共用行為。 遵循下列步驟：
 
 1. 您的應用程式必須在其 Info.plist `CFBundleURLTypes` 下至少定義一個 schemeURL。
 

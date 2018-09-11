@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949538"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329378"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中 Android 裝置的 kiosk 設定
 
@@ -55,7 +55,7 @@ ms.locfileid: "37949538"
 
 1. 瀏覽至 [Google Play 上的受控主畫面頁面](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)，並使用您用於其他受控 Google Play 應用程式的相同帳戶登入。
 2. 選擇 [核准]。
-3. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [行動裝置應用程式] > [受控 Google Play] > [同步]。
+3. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [用戶端應用程式] > [受控 Google Play] > [同步]。
 4. 選擇 [應用程式] > [管理主畫面] > [指派] > [新增群組]。
 5. 在 [指派類型] 底下選擇 [必要]。
 6. 選擇 [包含的群組] > [選取要包含的群組] > 選擇您為 kiosk 裝置建立的裝置群組 > [選取] > [確定] > [確定] > [儲存]。
@@ -65,13 +65,13 @@ ms.locfileid: "37949538"
 針對您想要在 kiosk 裝置上提供的每個應用程式，請遵循下列步驟：
 
 1. [將應用程式新增至 Intune](store-apps-android.md)。
-2. 選擇 [行動裝置應用程式] > [應用程式] > 選擇應用程式 > [指派] > [新增群組]。
+2. 選擇 [用戶端應用程式] > [應用程式] > 選擇應用程式 > [指派] > [新增群組]。
 3. 在 [指派類型] 底下選擇 [必要]。
 4. 選擇 [包含的群組] > [選取要包含的群組] > 選擇您為 kiosk 裝置建立的裝置群組 > [選取] > [確定] > [確定] > [儲存]。
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>新增可用於 kiosk 模式的 Web 連結
 
-1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [行動裝置應用程式] > [應用程式] > [新增]。
+1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [用戶端應用程式] > [應用程式] > [新增]。
 2. 在 [應用程式類型] 底下選擇 [Web 連結]。
 3. 選擇 [設定]，並提供所需的資訊。 您不需要新增標誌影像，因為它會自動從網站的 favicon.ico 擷取。
 4. 選擇 [確定] > [新增]。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762224"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149490"
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司入口網站
-[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)是使用者可用來管理已在 Intune 註冊之電腦和裝置的網頁。
+使用[公司入口網站](https://portal.manage.microsoft.com)檢視、新增及移除您的受控裝置。
 
-使用者可以從公司入口網站執行下列工作：
+您可以從公司入口網站採取下列任何動作：
 
 -   [重新命名裝置](rename-your-device-cpwebsite.md)
 
 -   [移除裝置](remove-your-device-cpwebsite.md)
 
--   [重設 (清除) 裝置](reset-erase-your-device-cpwebsite.md)
+-   [重設裝置](reset-erase-your-device-cpwebsite.md)
 
 -   [重設裝置密碼](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ ms.locfileid: "34762224"
 
 -   尋找公司支援人員的連絡資訊 (如果您已設定)
 
--   查看其裝置的詳細資料，包括其是否符合貴公司或學校的原則
+-   檢查合規性狀態
 
--   從遠端管理其電腦 (僅適用於電腦)
+-   遠端管理電腦
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

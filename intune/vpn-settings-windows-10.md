@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744732"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312845"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 設定
 
@@ -42,6 +42,8 @@ ms.locfileid: "34744732"
   - **預設伺服器**：啟用此伺服器作為裝置所要連線的預設伺服器。 只設定一部伺服器為預設。
   - **匯入**：瀏覽至內含伺服器清單、以逗點分隔 (格式為：描述、IP 位址或 FQDN、預設伺服器) 的檔案。 選擇 [確定]，以將這些伺服器匯入**伺服器**清單。
   - **匯出**：將伺服器清單匯出成逗點分隔值 (csv) 檔案
+
+- **將 IP 位址註冊到內部 DNS**：選取 [啟用] 將 Windows 10 VPN 設定檔設定為動態註冊 IP 位址 (指派給具有內部 DNS 的 VPN 介面)，或選取 [停用] 不要動態註冊 IP 位址。
 
 - **連線類型**：從下列廠商清單中選取 VPN 連線類型︰
 

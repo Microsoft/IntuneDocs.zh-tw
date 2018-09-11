@@ -1,11 +1,11 @@
 ---
 title: 解決 SandBlast Mobile Protect 在 iOS 上找到的威脅 | Microsoft Docs
-description: 了解如何修正 Mobile Protect 在 iOS 上找到的威脅。
+description: 了解如何修正適用於 iOS 的 SandBlast Mobile Protect 找到的威脅。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755962"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148026"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>您需要解決 SandBlast Mobile Protect 所找到的威脅
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解決 SandBlast Mobile Protect 找到的威脅
 
-SandBlast Mobile Protect 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式和檔案。 您會看到的訊息取決於 SandBlast Mobile Protect 在您裝置上找到的問題。
+SandBlast Mobile Protect 是 Mobile Threat Defender 服務，可在您的 iOS 裝置上找到並評估潛在威脅。 接著會回報威脅，讓您可以從公司入口網站應用程式檢視。 您在應用程式中會看到這些威脅顯示為尚未解決、不符合要求的問題。 只要這些威脅存在，您可能無法：   
 
-若要修正此問題，請開啟 SandBlast Mobile Protect 應用程式，並遵循應用程式中所顯示的指示。
+* 連線到公司電子郵件
+* 連線到公司 Wi-Fi
+* 連線到 SharePoint Online
+* 使用 OneDrive 同步公司檔案
+* 存取公司應用程式
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>在已註冊裝置受到封鎖而無法存取電子郵件或檔案時可能會看見的畫面
+本文說明如何辨識 Sandblast Mobile Protect 威脅警示及其解決方式。  
 
-如果您的已註冊裝置具有病毒或其他安全性威脅，並且嘗試存取公司電子郵件或檔案，則來自 SandBlast Mobile Protect 的訊息會警告您採取動作。
+## <a name="troubleshoot-virus-or-security-threat"></a>針對病毒或安全性威脅進行疑難排解  
+偵測到病毒或安全性威脅時，SandBlast Mobile Protect 應用程式會根據您組織的存取原則採取動作。 存取原則可能會防止您存取公司網路、應用程式和電子郵件。  
 
-點選 [裝置管理入口網站] 連結以移至[公司入口網站](http://portal.manage.microsoft.com)，您可以在其中遵循如何修正問題的指示。
+SandBlast Mobile Protect 會提示您採取動作，以重新取得失去的存取權。 選取威脅，然後遵循應用程式中的指示予以解決。  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>SandBlast Mobile Protect 視為威脅的應用程式範例
+## <a name="troubleshoot-an-app-threat"></a>針對應用程式威脅進行疑難排解  
 
-如果您已安裝 SandBlast Mobile Protect 視為威脅的應用程式，應用程式會提醒您裝置上已安裝不可信賴的應用程式。
+如果您安裝的應用程式經判斷會對您的裝置造成威脅，您會在 SandBlast Mobile Protect 中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
 
-發生此情況時，請解除安裝應用程式，以立即重新存取公司電子郵件和資料。 如果未解除安裝應用程式，在解除安裝應用程式之前，您將會失去電子郵件和資料的存取權。
+為解決此問題，請從 SandBlast Mobile Protect 的威脅清單中選取應用程式。 接著遵循指示移除並解除安裝應用程式。  
 
-是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](http://portal.manage.microsoft.com)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)

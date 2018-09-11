@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268833"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313491"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中設定 iOS 更新原則
 
@@ -32,7 +32,7 @@ ms.locfileid: "39268833"
 4. 為原則輸入名稱和描述。
 5. 選取 [設定]。 
 
-    輸入不強制 iOS 裝置安裝最新更新時的詳細資料。 這些設定會建立受限制的時間範圍。 您可以設定每星期幾、時區、開始時間和結束時間。
+    輸入不強制 iOS 裝置安裝最新更新時的詳細資料。 這些設定會建立受限制的時間範圍。 您可以設定 [星期幾]、[時區]、[開始時間] 和 [結束時間]，以及是否要使用 [軟體更新的延遲可見度 (天)] 來輸入使用者。 您可以選取 1 到 90 天的軟體更新延遲範圍。 若要退出設定軟體更新延遲，請輸入 0。 這些更新設定只會套用至受監督的 iOS 裝置。
 
 6. 按一下 [確定] 以儲存您的變更。 選取 [建立] 來建立原則。
 

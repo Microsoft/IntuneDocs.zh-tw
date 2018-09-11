@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400278"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314018"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
 
@@ -179,7 +179,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 2. 移至 Azure AD 群組，並從群組中移除裝置。
 3. 當已移除的裝置連絡 Intune 時，會評估已更新的原則，並移除 eSIM 設定檔。
 
-當使用者取消註冊裝置時，或是當[移除公司資料](devices-wipe.md#remove-company-data)或[重設裝置遠端動作](devices-wipe.md#factory-reset)在裝置上執行時，也會移除 eSIM 設定檔。
+當使用者[淘汰](devices-wipe.md#retire)或取消註冊裝置時，或是當[重設裝置遠端動作](devices-wipe.md#wipe)在裝置上執行時，也會移除 eSIM 設定檔。
 
 > [!NOTE]
 > 移除設定檔可能會停止計費。 連絡您的電信業者以檢查您裝置的計費狀態。

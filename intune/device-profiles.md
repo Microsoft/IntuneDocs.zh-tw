@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335821"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313967"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什麼是 Microsoft Intune 裝置設定檔？
 
@@ -54,6 +54,7 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>裝置限制
 [裝置限制](device-restrictions-configure.md)控制安全性、硬體、資料共用，以及裝置上的更多設定。 例如，建立裝置限制設定檔以禁止 iOS 裝置的使用者使用裝置相機 。 
 
@@ -72,6 +73,13 @@ Microsoft Intune 包含讓您可以在組織內不同的裝置上啟用或停用
 
 這項功能支援：
 - Windows 10 及更新版本
+
+## <a name="identity-protection"></a>身分識別保護
+[Identity Protection](identity-protection-configure.md) 控制 Windows 10 和 Windows 10 行動裝置版裝置上的 Windows Hello 企業版體驗。 設定這些設定，將 Windows Hello 企業版提供給使用者和裝置，並指定裝置 PIN 和筆勢的需求。  
+
+這項功能支援：  
+- Windows 10 及更新版本
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Kiosk
 

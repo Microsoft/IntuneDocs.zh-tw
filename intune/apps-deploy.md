@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164564"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329473"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -52,7 +52,7 @@ ms.locfileid: "39164564"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 功能表中，選取 [行動應用程式]。
+3. 在 [Intune] 功能表中，選取 [用戶端應用程式]。
 4. 在功能表的 [管理] 區段，選取 [應用程式]。
 5. 在 [應用程式] 窗格中，選取您想要指派的應用程式。
 6. 在功能表的 [管理] 區段中，選取 [指派]。

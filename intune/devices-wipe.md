@@ -1,11 +1,11 @@
 ---
-title: 使用 Microsoft Intune 移除裝置上的公司資料 - Azure | Microsoft Docs
-description: 移除裝置上的公司資料，或在使用 Microsoft Intune 的 Android、Android 工作設定檔、iOS、macOS 或 Windows 裝置上執行原廠重設。 也從 Azure Active Directory 中刪除裝置。
+title: 使用 Microsoft Intune 淘汰或抹除裝置 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 淘汰或抹除 Android、Android 工作設定檔、iOS、macOS 或 Windows 裝置。 也從 Azure Active Directory 中刪除裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,47 +13,47 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028740"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312812"
 ---
-# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>使用恢復出廠預設值、移除公司資料或手動取消註冊裝置來移除裝置
+# <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-透過使用 [移除公司資料] 或 [重設成出廠預設值] 動作，您可以從 Intune 移除不再需要、重新設定用途或者遺失的裝置。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
+透過使用 [淘汰] 或 [抹除] 動作，您可以從 Intune 移除不再需要、重新設定用途或遺失的裝置。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
 
 > [!NOTE]
-> 在您從 Azure Active Directory (Azure AD) 移除使用者之前，請對與該使用者建立關聯的所有裝置發出 [原廠重設] 或 [移除公司資料] 動作。 如果您從 Azure AD 移除有受控裝置的使用者，Intune 不會再對這些裝置發出原廠重設或移除公司資料的命令。
+> 在您從 Azure Active Directory (Azure AD) 移除使用者之前，請對與該使用者建立關聯的所有裝置使用 [抹除] 或 [淘汰] 動作。 如果您從 Azure AD 移除有受控裝置的使用者，Intune 不會再抹除或淘汰這些裝置。
 
-## <a name="factory-reset"></a>原廠重設
+## <a name="wipe"></a>抹除
 
-[原廠重設] 動作會將裝置還原成其出廠的預設設定。 如果您選擇 [保留註冊狀態和使用者帳戶] 核取方塊，則會保留使用者資料。 否則，會安全地清除磁碟機。
+[抹除] 動作會將裝置還原成其出廠的預設設定。 如果您選擇 [保留註冊狀態和使用者帳戶] 核取方塊，則會保留使用者資料。 否則，會安全地清除磁碟機。
 
-|重設成出廠預設值動作|**保留註冊狀態和使用者帳戶**|從 Intune 管理移除|說明|
+|抹除動作|**保留註冊狀態和使用者帳戶**|從 Intune 管理移除|說明|
 |:-------------:|:------------:|:------------:|------------|
-|**重設成出廠預設值**| 未勾選 | 是 | 清除所有的使用者帳戶、資料、MDM 原則及設定。 將作業系統重設為其預設狀態和設定。|
-|**重設成出廠預設值**| 勾選 | 否 | 清除所有的 MDM 原則。 保留使用者帳戶和資料。 將使用者設定重設為預設值。 將作業系統重設為其預設狀態和設定。|
+|**抹除**| 未勾選 | 是 | 清除所有的使用者帳戶、資料、MDM 原則及設定。 將作業系統重設為其預設狀態和設定。|
+|**抹除**| 勾選 | 否 | 清除所有的 MDM 原則。 保留使用者帳戶和資料。 將使用者設定重設為預設值。 將作業系統重設為其預設狀態和設定。|
 
 [保留註冊狀態和使用者帳戶] 選項僅適用於 Windows 10 版本 1709 或更新版本。
 
 下次連線到 Intune 時，MDM 原則將會重新套用。
 
-在您將裝置給予新使用者之前重設裝置，或當裝置遺失或遭竊的情況，原廠重設十分有用。 請小心選取 [原廠重設]。 裝置上的資料無法復原。
+在您將裝置給予新使用者之前重設裝置，或在置遺失或遭竊的情況下，抹除會十分有用。 請謹慎選取 [抹除]。 裝置上的資料無法復原。
 
-### <a name="factory-reset-a-device"></a>對裝置執行原廠重設
+### <a name="wiping-a-device"></a>抹除裝置
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置] > [所有裝置]。
-4. 選擇您要執行原廠重設的裝置名稱。
-5. 在顯示裝置名稱的窗格中，選取 [原廠重設]。
+4. 選取您要抹除的裝置名稱。
+5. 在顯示裝置名稱的窗格中，選取 [抹除]。
 6. 在 Windows 10 的 1709 版或更新版本中，您也可以有 [Retain enrollment state and user account] (保留註冊狀態和使用者帳戶) 選項。 
     
-    |重設為原廠設定時保留不變|不保留|
+    |抹除期間保留 |不保留|
     | -------------|------------|
     |與裝置建立關聯的使用者帳戶|使用者檔案|
     |機器狀態 \(網域加入、已加入 Azure AD)| 使用者安裝的應用程式 \(市集和 Win32 應用程式)|
@@ -64,17 +64,17 @@ ms.locfileid: "39028740"
     |使用者自動登入|| 
     
          
-7. 選取 [是] 確認執行原廠重設。
+7. 若要確認抹除，請選取 [是]。
 
-如果裝置已開啟且連線，則 [原廠重設] 動作過程會在 15 分鐘內傳播到所有的裝置類型。
+如果裝置已開啟且連線，則 [抹除] 動作會在 15 分鐘內傳播到所有的裝置類型。
 
-## <a name="remove-company-data"></a>移除公司資料
+## <a name="retire"></a>淘汰
 
-[移除公司資料] 動作會移除使用 Intune 所指派的受控應用程式資料 (適用時)、設定和電子郵件設定檔。 並從 Intune 管理項目移除裝置。 當裝置下一次簽入並收到遠端 [移除公司資料] 動作時，便會發生。
+[淘汰] 動作會移除使用 Intune 所指派的受控應用程式資料 (適用時)、設定和電子郵件設定檔。 並從 Intune 管理項目移除裝置。 當裝置下一次簽入並收到遠端 [淘汰] 動作時，便會發生。
 
-[移除公司資料] 會將使用者的個人資料保留在裝置上。  
+[淘汰] 會將使用者的個人資料保留在裝置上。  
 
-下表描述將移除哪些資料，以及移除公司資料後，[移除公司資料] 動作對保留在裝置上的資料有何影響。
+下表描述將移除哪些資料，以及移除公司資料後，[淘汰] 動作對保留在裝置上的資料有何影響。
 
 ### <a name="ios"></a>iOS
 
@@ -110,11 +110,11 @@ ms.locfileid: "39028740"
 
 ### <a name="android-work-profile"></a>Android 工作設定檔
 
-從 Android 工作設定檔裝置移除公司資料會移除該裝置上工作設定檔中的所有資料、應用程式和設定。 Intune 管理已淘汰該裝置。 Android 工作設定檔不支援恢復出廠預設值。
+從 Android 工作設定檔裝置移除公司資料會移除該裝置上工作設定檔中的所有資料、應用程式和設定。 Intune 管理已淘汰該裝置。 Android 工作設定檔不支援抹除。
 
-### <a name="android-enterprise-kiosk-devices"></a>Android 企業 Kiosk 裝置
+### <a name="android-enterprise-kiosk-devices"></a>Android 企業 kiosk 裝置
 
-您只可以將 Android Kiosk 裝置恢復為出廠預設值。 您無法從 Android Kiosk 裝置移除公司資料。
+您只能抹除 kiosk 裝置。 您無法淘汰 Android kiosk 裝置。
 
 
 ### <a name="macos"></a>macOS
@@ -137,16 +137,16 @@ ms.locfileid: "39028740"
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|不支援。|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|憑證會予以移除及撤銷。|不支援。|憑證會予以移除及撤銷。|
 |電子郵件|移除已啟用 EFS 的電子郵件。 這包括 Windows 郵件應用程式中的電子郵件和附件。|不支援。|已移除經由 Intune 佈建的電子郵件設定檔。 已刪除裝置上的快取電子郵件。|移除已啟用 EFS 的電子郵件。 這包括 Windows 郵件應用程式中的電子郵件和附件。 移除 Intune 佈建的郵件帳戶。|
-|Azure AD 退出|否。|否。|已移除 Azure AD 記錄。|不適用。 在 Windows 10 中，您無法移除已加入 Azure AD 裝置中的公司資料。|
+|Azure AD 退出|否。|否。|已移除 Azure AD 記錄。|不適用。 在 Windows 10 中，您無法淘汰已加入 Azure AD 的裝置。|
 
-### <a name="remove-company-data"></a>移除公司資料
+### <a name="retire"></a>淘汰
 
 1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
 2. 在 [裝置] 窗格中，選取 [所有裝置]。
-3. 選取您要從中移除公司資料之裝置的名稱。
-4. 在顯示裝置名稱的窗格中，選取 [移除公司資料]。 選取 [是] 確認。
+3. 選取您要淘汰的裝置名稱。
+4. 在顯示裝置名稱的窗格中，選取 [淘汰]。 選取 [是] 確認。
 
-如果裝置已開啟且連線，則 [移除公司資料] 動作過程會在 15 分鐘內傳播到所有的裝置類型。
+如果裝置已開啟且連線，則 [淘汰] 動作會在 15 分鐘內傳播到所有的裝置類型。
 
 ## <a name="delete-devices-from-the-intune-portal"></a>從 Intune 入口網站中刪除裝置
 
@@ -181,8 +181,8 @@ ms.locfileid: "39028740"
 如果您想要完全移除由 Intune 管理的 Apple DEP 裝置，請遵循下列步驟：
 
 1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
-2. 選擇 [裝置] > [所有裝置] > 選擇您要刪除的裝置 > [移除公司資料]。
-![移除公司資料的螢幕擷取畫面](./media/devices-wipe/remove-company-data.png)
+2. 選擇 [裝置] > [所有裝置] > 選擇裝置 > [淘汰]。
+![淘汰的螢幕擷取畫面](./media/devices-wipe/retire.png)
 3. 選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇權杖 > [裝置] > 選擇該裝置的核取方塊 > [刪除] > [是]。
 ![刪除裝置的螢幕擷取畫面](./media/devices-wipe/delete-device.png)
 4. 請瀏覽 [deploy.apple.com](http://deploy.apple.com) 並依序號搜尋裝置。

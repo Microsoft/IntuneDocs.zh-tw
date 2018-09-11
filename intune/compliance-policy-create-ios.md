@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442639"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313080"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置新增裝置相容性原則
 
@@ -106,6 +106,11 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 - **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。
 - **密碼到期 (天數)**：選取密碼到期且必須建立新密碼前的天數。
 - **避免重複使用前幾個密碼**：輸入不可使用先前所使用的多少個密碼。
+
+### <a name="restricted-applications"></a>受限制的應用程式 
+您可以透過將應用程式的套件組合識別碼新增至原則，來限制應用程式。 然後，如果裝置安裝該應用程式，就會標示為不相容。 
+- **應用程式名稱**：輸入使用者易記的名稱來協助您識別套件組合識別碼。 
+- **應用程式套件組合識別碼**：輸入應用程式提供者指派的唯一套件組合識別碼。 若要尋找套件組合識別碼，請參閱 [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (如何尋找 iOS 應用程式的套件組合識別碼)。  
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 

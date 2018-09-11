@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
+ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844975"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329968"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -31,7 +31,7 @@ ms.locfileid: "37844975"
 > [!Tip]        
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。       
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [行動應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
+自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [用戶端應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
 
 > [!Note]       
 > 當使用者啟動工作流程以取得有關問題的說明時，Windows 10 版公司入口網站現在會將應用程式記錄檔直接傳送給 Microsoft。 這樣可以更輕鬆地進行疑難排解並解決向 Microsoft 提出的問題。  

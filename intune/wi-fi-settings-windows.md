@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321624"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329642"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune 中適用於 Windows 10 和更新版本之裝置的 Wi-Fi 設定
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune 中適用於 Windows 10 和更新版本之裝置的 Wi-Fi 設定
 
 Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Windows 10 和更新版本的裝置。 選項包含：
 
@@ -54,10 +55,10 @@ Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Wind
 
 ## <a name="settings-for-enterprise-profiles-only"></a>僅適用於企業設定檔的設定
 
-- **單一登入 (SSO)**：可讓您設定單一登入 (SSO)，其中認證會共用以進行電腦和 Wi-Fi 網路登入。 選項包括：
+- **單一登入 (SSO)**：可讓您設定單一登入 (SSO)，會共用認證以便電腦和 Wi-Fi 網路登入。 選項包括：
   - **停用**：停用 SSO 行為。 使用者必須分別向網路進行驗證。
-  - **在使用者登入裝置之前啟用**：在使用者登入處理序之前，使用 SSO 向網路進行驗證。
-  - **在使用者登入裝置之後啟用**：在使用者登入處理序完成之後，使用 SSO 立即向網路進行驗證。
+  - **在使用者登入裝置之前啟用**：在使用者登入程序之前，使用 SSO 向網路進行驗證。
+  - **在使用者登入裝置之後啟用**：在使用者登入程序完成之後，使用 SSO 立即向網路進行驗證。
   - **要在逾時之前驗證的時間上限**：輸入在向網路進行驗證之前要等待的秒數上限 (從 1 到 120 秒)。
   - **允許 Windows 提示使用者提供其他的驗證認證**：選擇 [是] 可讓 Windows 系統提示使用者提供驗證方法需要的其他認證。 選擇 [否] 即會隱藏這些提示。
 
@@ -77,25 +78,36 @@ Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Wind
   - **EAP-TTLS**
   - **受保護的 PEAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>選擇 EAP 類型時的其他選項
+    **EAP-TLS、EAP-TTLS 及 PEAP 其他設定**：
+    
+    > [!NOTE]
+    > 目前，使用 EAP 類型時只支援 SCEP 憑證設定檔。 不支援 PKCS 憑證設定檔。 每當要求使用者輸入憑證時，請務必選擇 SCEP 憑證。
 
-> [!NOTE]
-> 目前，使用 EAP 類型時只支援 SCEP 憑證設定檔。 不支援 PKCS 憑證設定檔。 每當要求使用者輸入憑證時，請務必選擇 SCEP 憑證。
+      - **伺服器信任**  
 
-#### <a name="server-trust"></a>伺服器信任
+        **憑證伺服器名稱**：搭配 **EAP-TLS**、**EAP-TTLS** 或 **PEAP** EAP 類型使用。 輸入您信任之憑證授權單位 (CA) 核發的憑證中所使用的一或多個通用名稱。 如有輸入此資訊，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任對話方塊。  
 
-|設定名稱|詳細資訊|使用時機|
-|--------------|-------------|----------|
-|**憑證伺服器名稱**|輸入您信任之憑證授權單位 (CA) 核發的憑證中所使用的一或多個通用名稱。 如有輸入此資訊，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任對話方塊。|EAP 類型是 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
-|**伺服器驗證時使用的根憑證**|選擇信任的根憑證設定檔來驗證連線。 |EAP 類型是 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
-|**識別隱私權 (外部識別)**|輸入在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。|EAP 類型是 **PEAP**|
+        **伺服器驗證的根憑證**：搭配 **EAP-TLS**、**EAP-TTLS** 或 **PEAP** EAP 類型使用。 選擇信任的根憑證設定檔來驗證連線。  
 
-#### <a name="client-authentication"></a>用戶端驗證
+        **識別隱私權 (外部識別)**：搭配 **PEAP** EAP 類型使用。 輸入在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。  
 
-| 設定名稱 | 詳細資訊 | 使用時機 |
-|---|---|---|
-| **用戶端驗證時使用的用戶端憑證 (識別憑證)** |  選擇用來驗證連線的 SCEP 憑證設定檔。 | EAP 類型是 **EAP-TLS** |
-| **驗證方法** | 選取連線的驗證方法：<br><br>- **憑證**：選取 SCEP 用戶端憑證作為提供給伺服器的識別憑證。<br><br>- **使用者名稱和密碼**：輸入**非 EAP 方法 (內部識別)** 方法進行驗證。 選項包括：<br><br>- **未加密的密碼 (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 第 2 版 (MS-CHAP v2)**<br><br>- **識別隱私權 (外部識別)**：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。 | EAP 類型是 **EAP-TTLS** |
+      - **用戶端驗證**
+
+        **用戶端驗證時使用的用戶端憑證 (身分識別憑證)**：搭配 **EAP-TLS** EAP 類型使用。 選擇用來驗證連線的憑證設定檔。
+
+        **驗證方法**：搭配 **EAP-TTLS** EAP 類型使用。 選取連線的驗證方法：  
+
+          - **憑證**：選取用戶端憑證作為提供給伺服器的識別憑證。
+          - **使用者名稱和密碼**：輸入 [非 EAP 方法 (內部識別)] 方法進行驗證。 選項包括：
+
+            - **未加密的密碼 (PAP)**
+            - **Challenge Handshake (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP 第 2 版 (MS-CHAP v2)**
+
+        **識別隱私權 (外部識別)**：搭配 **EAP-TTLS** EAP 類型使用。 輸入在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
+
+- **強制讓 Wi-Fi 設定檔符合聯邦資訊處理標準 (FIPS) 的規範**：根據 FIPS 140-2 進行驗證時，選擇 [是]。 所有使用加密型安全性系統的美國聯邦政府機構都需要此標準，以保護數位形式儲存的敏感但並非機密資訊。 選擇 [否] 表示不符合 FIPS 規範。
 
 ## <a name="use-an-imported-settings-file"></a>使用匯入的設定檔
 

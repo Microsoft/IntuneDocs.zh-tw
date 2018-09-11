@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903138"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313456"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的註冊
 
@@ -112,7 +112,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 
 針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **aft#setup** 註冊方法時，利用 QR 代碼掃描。
 
-1. 開啟恢復出廠預設值的裝置。
+1. 開啟已抹除的裝置。
 2. 在 [歡迎使用] 畫面上選取您的語言。
 3. 連線至您的 [Wifi]，然後選擇 [下一步]。
 4. 接受 Google 的條款和條件，然後選擇 [下一步]。
@@ -129,7 +129,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 > [!Note]
 > 瀏覽器縮放可能會導致裝置無法掃描 QR 代碼。 增加瀏覽器縮放比例可解決此問題。
 
-1. 若要在 Android 裝置上啟動 QR 讀取，請在恢復出廠預設值之後看到的第一個畫面上點選多次。
+1. 若要在 Android 裝置上啟動 QR 讀取，請在抹除之後看到的第一個畫面上點選多次。
 2. 若為 Android 7 和 8 的裝置，系統會提示您安裝 QR 讀取器。 Android 9 和更新版本的裝置已安裝 QR 讀取器。
 3. 使用 QR 讀取器來掃描註冊設定檔的 QR 代碼，然後遵循螢幕上的提示進行註冊。
 

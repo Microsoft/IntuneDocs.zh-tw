@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca0c0151bd90051d287c76f5d264030112b85cfd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834079"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347809"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -109,9 +109,9 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 請遵循下列步驟，以在 Intune 中建立每個平台的 Datalert 應用程式。 iOS 是作為這些步驟中的範例。
 
-1. 在 [Azure 入口網站](https://portal.azure.com)的 [Intune] 窗格上，選擇 [Mobile Apps]。
+1. 在 [Azure 入口網站](https://portal.azure.com)的 [Intune] 窗格上，選擇 [用戶端應用程式]。
 
-2. 在 [Mobile Apps] 窗格上，選擇 [管理] > [應用程式]。
+2. 在 [用戶端應用程式] 窗格上，選擇 [管理] > [應用程式]。
 
 3. 選取 [新增] 來新增應用程式。
 

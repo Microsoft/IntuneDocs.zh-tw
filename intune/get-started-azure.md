@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836331"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329949"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>開始在 Azure 入口網站中使用 Microsoft Intune
 
@@ -53,7 +53,7 @@ Azure 入口網站左側的__資訊看板__會顯示所有可用 Azure 服務清
 
 ## <a name="using-services"></a>使用服務
 
-只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**窗格**中。 您在 Intune 中使用的第一個工作負載有一些 (例如 [使用者]、[群組] 和 [行動應用程式]) 會出現在全螢幕窗格中。 當您選取工作負載時，它會以完整頁面開啟該窗格。 其他窗格會在開啟時從窗格右側滑出，並摺疊在其來源主要窗格下方。
+只要在 Azure 中開啟 Intune 或任何其他服務，該服務就會顯示在**窗格**中。 您在 Intune 中使用的第一個工作負載，有一些像是 [使用者]、[群組] 和 [用戶端應用程式]，皆會出現在全螢幕窗格中。 當您選取工作負載時，它會以完整頁面開啟該窗格。 其他窗格會在開啟時從窗格右側滑出，並摺疊在其來源主要窗格下方。
 
 ## <a name="next-steps"></a>接下來的步驟
 

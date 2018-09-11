@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254479"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329405"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "39254479"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選取 [行動裝置應用程式] > [應用程式防護原則]。
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式] > [應用程式保護原則]。
 4. 按一下 [新增原則] (您也可以編輯現有的原則)。 
 5. 按一下 [設定必要設定]，以查看可針對原則設定的設定清單。 
 6. 藉由在 [設定] 窗格中向下捲動，您會看到標題為 [存取動作] 的區段與可編輯的資料表。

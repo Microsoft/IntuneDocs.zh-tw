@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905269"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329540"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
@@ -40,7 +40,7 @@ ms.locfileid: "37905269"
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
-2.  選擇 [所有服務]，接著在 [篩選] 文字方塊中鍵入 **Intune**，然後選取 [Intune]。 當 [Intune] 窗格開啟時，選擇 [行動應用程式] 窗格。
+2.  選擇 [所有服務]，接著在 [篩選] 文字方塊中鍵入 **Intune**，然後選取 [Intune]。 當 [Intune] 窗格開啟時，選擇 [用戶端應用程式] 窗格。
 
     ![Microsoft Intune 窗格的螢幕擷取畫面](./media/apps-selective-wipe01.png)
 

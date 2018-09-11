@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251805"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313712"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -35,15 +35,15 @@ ms.locfileid: "40251805"
 
 - 已註冊裝置的數目上限。
 - 可以註冊的裝置平台：
-  - Android。
-  - Android 工作設定檔。
-  - iOS。
-  - macOS。
-  - 。
+  - Android
+  - Android 工作設定檔
+  - iOS
+  - macOS
+  - Windows
 - iOS、Android、Android 工作設定檔和 Windows 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
   - 最低版本。
   - 最高版本。
-- 限制個人擁有的裝置 (僅限 iOS、Android、Android 工作設定檔、macOS)。
+- 限制個人擁有的裝置 (僅限 iOS、Android、Android 工作設定檔、macOS、Windows)。
 
 ## <a name="default-restrictions"></a>預設限制
 
@@ -66,28 +66,46 @@ ms.locfileid: "40251805"
 
 ## <a name="set-device-type-restrictions"></a>設定裝置類型限制
 
-您可以遵循下列步驟變更裝置類型限制的設定：
+您可以遵循下列步驟，變更裝置類型限制的設定。 這些限制不會影響已註冊的裝置。 使用此功能無法封鎖使用 [Intune PC 代理程式](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。
 
 1. 登入 Azure 入口網站。
 2. 選取 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
 3. 選取 [裝置註冊] > [註冊限制]。
-4. 在 [裝置類型限制] 下選擇您想要設定的限制。
-5. 在限制名稱下 (預設限制為 [所有使用者])，選取 [平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
-6. 選取 [儲存]。
-7. 在限制名稱下 (預設限制為 [所有使用者])，選取 [平台設定]。 然後選取所列平台的最低和最高**版本**。 支援的版本格式包含：
+4. 在 [裝置類型限制] 下 > 選擇您想要設定的限制 > [屬性] > [選取平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
+    ![允許或封鎖平台的螢幕擷取畫面](media/enrollment-restrictions-set/platform-allow-block.png)
+5. 選擇 [確定]。
+6. 選擇 [設定平台]。
+    ![設定平台的螢幕擷取畫面](media/enrollment-restrictions-set/configure-platforms.png)
+7. 選擇所列平台的最低和最高**版本**。 支援的版本格式包含：
     - Android 工作設定檔支援 major.minor.rev.build。
-    - iOS 支援 major.minor.rev。
+    - iOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
     - Windows 支援 major.minor.rev.build，僅限 Windows 10。
-  作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
-8. 指定要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
-    ![顯示設定個人所擁有設定之預設裝置平台設定的裝置限制工作區](media/device-restrictions-platform-configurations.png)
-9. 選取 [儲存]。
+8. 選擇要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
+9. 選擇 [確定]。
 
+### <a name="android-device-type-restrictions"></a>Android 裝置類型限制
+- 若您從註冊封鎖個人擁有的 Android 裝置，則個人擁有的 Android 工作設定檔裝置仍可以註冊。
+- 根據預設，Android 工作設定檔裝置設定與您的 Android 裝置設定相同。 變更 Android 工作設定檔設定後，就不再是那麼回事了。
+- 若您封鎖個人的 Android 工作設定檔註冊，則只有公司的 Android 裝置可以註冊為 Android 工作設定檔。
 
->[!NOTE]
->- 若您從註冊封鎖個人擁有的 Android 裝置，則個人擁有的 Android 工作設定檔裝置仍可以註冊。
->- 根據預設，Android 工作設定檔裝置設定與您的 Android 裝置設定相同。 變更 Android 工作設定檔設定後，就不再是那麼回事了。
->- 若您封鎖個人的 Android 工作設定檔註冊，則只有公司的 Android 裝置可以註冊為 Android 工作設定檔。
+### <a name="windows-device-type-restrictions"></a>Windows 裝置類型限制
+將 Windows 平台裝置類型限制設定為 [封鎖] 之後，Intune 會檢查以確定每個新的 Windows 註冊要求都已獲授權為公司註冊。 將會封鎖未經授權的註冊。
+
+下列方法限定成授權為 Windows 公司註冊：
+ - 註冊使用者會使用[裝置註冊管理員帳戶]( device-enrollment-manager-enroll.md)。
+- 裝置透過 [Windows AutoPilot](enrollment-autopilot.md) 註冊。
+- 裝置的 IMEI 編號列在 [裝置註冊] > [[公司裝置識別碼](corporate-identifiers-add.md)] (不支援 Windows Phone 8.1)。
+- 裝置透過[大量佈建套件](windows-bulk-enroll.md)註冊。
+- 裝置透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)註冊。
+ 
+Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
+ - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)。
+ 
+也會封鎖下列個人註冊方法：
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)。
+- [僅限 MDM 註冊]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)選項，來自 Windows 設定。
+
 
 ## <a name="set-device-limit-restrictions"></a>設定裝置限制
 

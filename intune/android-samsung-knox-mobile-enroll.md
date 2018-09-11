@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321181"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313059"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -88,7 +88,7 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 
 > [!NOTE]
 >
->在定義使用者關聯的情況下，只有已關聯的使用者可以使用 KME 註冊裝置。 就算是對裝置進行原廠重設也是如此。 在 Knox 入口網站中沒有定義任何使用者關聯的情況下，任何具備有效 Intune 授權的使用者都可以使用 KME 註冊裝置。
+>在定義使用者關聯的情況下，只有已關聯的使用者可以使用 KME 註冊裝置。 就算是對裝置進行抹除重設也是如此。 在 Knox 入口網站中沒有定義任何使用者關聯的情況下，任何具備有效 Intune 授權的使用者都可以使用 KME 註冊裝置。
 >
 
 ## <a name="distribute-devices"></a>散發裝置

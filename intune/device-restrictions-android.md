@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587018"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313694"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 與 Samsung Knox Standard 裝置限制設定 - Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "39587018"
 - **複製並貼上 (僅限 Samsung Knox)** - 允許裝置上的複製及貼上功能。
 - **應用程式之間的剪貼簿共用 (僅限 Samsung Knox)** - 允許使用剪貼簿在應用程式之間複製並貼上。
 - **診斷資料提交 (僅限 Samsung Knox)** - 讓使用者無法從裝置提交診斷資料。
-- **恢復出廠預設值 (僅限 Samsung Knox)** - 可讓使用者在裝置上執行原廠重設。
+- **抹除 (僅限 Samsung Knox)** - 可讓使用者在裝置上執行[抹除](devices-wipe.md)。
 - **地理位置 (僅限 Samsung Knox)** - 允許裝置使用位置資訊。
 - **關閉電源 (僅限 Samsung Knox)** - 可讓使用者關閉裝置電源。<br>如果停用，就無法設定**登入失敗幾次後即抹除裝置**。
 - **螢幕擷取 (僅限 Samsung Knox)** - 讓使用者將螢幕內容擷取成影像。

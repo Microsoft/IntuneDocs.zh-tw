@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869333"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330053"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>開始在 Microsoft Intune 中新增應用程式
 
@@ -39,7 +39,7 @@ Intune 可讓您將下列應用程式類型新增和指派至公司裝置：
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 選取 [行動應用程式]，然後選取 [應用程式]。
+3. 選取 [用戶端應用程式]，然後選取 [應用程式]。
 4. 選取 [新增]，然後選取 [iOS] 作為 [應用程式類型]。
 5. 選擇 [選取應用程式] 顯示 [Search the App Store] (搜尋應用程式市集) 窗格。
 6. 在文字方塊中，搜尋要指派給裝置的應用程式。 選擇應用程式，然後按一下 [選取]。

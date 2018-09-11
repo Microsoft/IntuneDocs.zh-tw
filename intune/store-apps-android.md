@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 2677009921a9c498f988bdc674db6342613a05d6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869489"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347724"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>將 Android 市集應用程式新增至 Microsoft Intune
 
@@ -31,8 +31,8 @@ ms.locfileid: "37869489"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選取 [行動應用程式]。
-4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
 5. 選取 [新增]。
 6. 在 [新增應用程式] 窗格中，選取可用 [市集應用程式] 類型下的 [Android]。
 7. 若要設定應用程式資訊，請選取 [設定]，然後提供下列資訊。 針對 Android 應用程式，巡覽至 [Google Play 商店](https://play.google.com/store)，並搜尋您想要部署的應用程式。 選取應用程式，並記下應用程式詳細資料。 根據您選擇的應用程式，某些值可能已自動填入。

@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223657"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330291"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移動您的 Intune 資料倉儲帳戶資料 
 
@@ -45,7 +45,7 @@ Azure 入口網站檢視中的某些趨勢圖表會重設。 您可以在 **Grap
 3. 將報表儲存在本機。
  
 ### <a name="app-protection-reports"></a>應用程式保護報表  
-1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [行動應用程式] -> [應用程式保護狀態]。
+1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [用戶端應用程式] -> [應用程式保護狀態]。
 2. 按一下下載圖示 （⤓） 來儲存每個報表。
 
 ### <a name="device-configuration-charts"></a>裝置設定圖表 

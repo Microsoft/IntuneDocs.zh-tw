@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905405"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330240"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -44,8 +44,8 @@ Intune 在排除群組時，不考慮使用者對裝置的關聯。 包含使用
 若要使用包含和排除指派將應用程式指派給群組：
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 功能表中，選取 [行動應用程式]。
-4. 在 [行動應用程式] 窗格中，選取 [應用程式]。 已新增應用程式清單隨即顯示。
+3. 在 [Intune] 功能表中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 窗格中，選取 [應用程式]。 已新增應用程式清單隨即顯示。
 5. 選取您要指派的應用程式。 儀表板會顯示應用程式的相關資訊。 
 6. 在功能表的 [管理] 區段中，選取 [指派]。 
 

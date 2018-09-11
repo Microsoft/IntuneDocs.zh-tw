@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 00b5c1ededa0b5dbc3df5786e583738fb2c2008e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147729"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>從公司入口網站重設裝置
 
@@ -33,16 +33,18 @@ ms.locfileid: "39321572"
 > [!Note]
 > 您也可以從另一部已註冊的裝置執行下列步驟。 開啟該裝置上的公司入口網站應用程式，進行類似的步驟來完成重設。  
 
-1. 開啟[公司入口網站](https://portal.manage.microsoft.com/#helpdeskDeskDialog)，並選取 [功能表] 按鈕 > [我的裝置]。
+1. 開啟公司入口網站，然後選取 [功能表] 按鈕 > [裝置]。  
 
 2. 選取您要重設的裝置。
 
-    ![[我的裝置] 頁面的螢幕擷取畫面，含有 2 個圖格顯示無法辨識且以一般方式命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+    ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png)  
 
-3. 裝置會在快顯視窗中開啟。 選取 [重設]。  
+3. 選取 [重設]。 如果頁面頂端未顯示重設選項，請選取 [其他 (...)] > [重設]。  
 
- ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+     ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)  
+
+    ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)  
 
 4. 將會出現訊息，警告您即將清除裝置上的所有內容。 點選 [重設] 確認。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com/#helpdeskDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

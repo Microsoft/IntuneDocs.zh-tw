@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444875"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313233"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -85,10 +85,10 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>針對 Windows 大量註冊進行疑難排解
 
 ### <a name="provisioning-issues"></a>佈建問題
-佈建是要用於新的 Windows 裝置上。 佈建如果失敗，可能需要進行裝置原廠重設，或使用開機映像進行裝置還原。 下列例子說明佈建失敗的某些原因：
+佈建是要用於新的 Windows 裝置上。 佈建如果失敗，可能需要進行裝置抹除，或使用開機映像進行裝置復原。 下列例子說明佈建失敗的某些原因：
 
 - 嘗試加入 Active Directory 網域或 Azure Active Directory 租用戶的佈建套件，如果未建立本機帳戶，當沒有網路連線而造成網域加入程序失敗時，會使得裝置無法使用。
-- 由佈建套件執行的指令碼是在系統環境中執行。 指令碼可以任意對裝置檔案系統與設定進行變更。 惡意或不良的指令碼可能會使裝置處於某種狀態，而只能透過重新安裝映像或進行原廠重設才能還原裝置。
+- 由佈建套件執行的指令碼是在系統環境中執行。 指令碼可以任意對裝置檔案系統與設定進行變更。 惡意或不良的指令碼可能會使裝置處於某種狀態，而只能透過重新安裝映像或進行抹除才能復原裝置。
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>大量註冊和公司入口網站的問題
 如果使用者使用公司入口網站嘗試註冊先前的大量註冊裝置，就會收到警告，指出其裝置需要進一步的動作 (設定或註冊)。 裝置已註冊，但公司入口網站應用程式或網站無法辨識註冊。

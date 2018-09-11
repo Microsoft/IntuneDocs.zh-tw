@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321215"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313848"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
@@ -37,7 +37,7 @@ ms.locfileid: "39321215"
 - **抽取式存放裝置** - 指定是否可以與裝置搭配使用 SD 卡等外部存放裝置。
 - **地理位置** - 指定裝置是否可以使用定位服務資訊。
 - **網際網路共用** - 允許在裝置上使用網際網路連線共用。
-- **重設手機** - 控制使用者是否可以將裝置重設成出廠預設值。
+- **重設手機** - 控制使用者是否可以抹除其裝置。
 - **USB 連線 (僅限行動裝置)** - 控制裝置是否可以透過 USB 連接來存取外接式存放裝置。
 - **防竊模式 (僅限行動裝置)** - 設定是否啟用 Windows 防竊模式。
 - **Cortana** - 啟用或停用 Cortana 語音助理。
@@ -50,6 +50,7 @@ ms.locfileid: "39321215"
 - **SIM 卡錯誤對話方塊 (僅限行動裝置)** - 封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
 - **Ink 工作區** - 禁止使用者存取 Ink 工作區。 未設定此設定時，會啟用 Ink 工作區 (功能已開啟)，並允許使用者在鎖定螢幕上使用它。
 - **自動重新部署** 允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
+- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)** - 選擇 [需要] 要求裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用這項設定。
 
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。

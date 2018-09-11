@@ -15,12 +15,12 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: f8b76de6e9b3a584be7ad324391c1c071140488e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869488"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329439"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
@@ -40,8 +40,8 @@ ms.locfileid: "37869488"
 從**應用程式**窗格新增 Office 365。
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [所有服務] > [監視 + 管理] > [Intune]。
-3. 在 [Intune] 窗格中，選取 [行動裝置應用程式]。
-4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。 
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。 
 5. 選取 [新增]。
 6. 在 [應用程式類型] 清單的 [Office 365 套件] 群組中，選取 [macOS]。
 7. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]。  

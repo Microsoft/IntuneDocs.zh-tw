@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909196"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313156"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 
 | **方法** |  **需要重設** |    [**使用者親和性**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-| | 裝置會在註冊期間恢復出廠預設值。 |  建立每部裝置與使用者的關聯。| 使用者無法取消註冊裝置。  | |
+| | 裝置會在註冊期間抹除。 |  建立每部裝置與使用者的關聯。| 使用者無法取消註冊裝置。  | |
 |**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [詳細資訊](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| 否 |否 |否  | [詳細資訊](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   是 |   選用 |  選用|[詳細資訊](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ IT 管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公�
 - [使用 Configurator 及設定助理註冊 iOS 裝置](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-若是 Direct Enrollment，系統管理員必須建立註冊原則並將其匯出至 Apple Configurator，以手動註冊每部裝置。 公司擁有的 USB 連接裝置可直接註冊，而不需重設成出廠預設值。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。
+若是 Direct Enrollment，系統管理員必須建立註冊原則並將其匯出至 Apple Configurator，以手動註冊每部裝置。 公司擁有的 USB 連接裝置可直接註冊，而不需抹除。 裝置會以無使用者裝置形式進行管理。 這些裝置不會受到鎖定或監管，亦不支援條件式存取、破解偵測和行動應用程式管理。
 
 若要深入了解 iOS 註冊，請參閱︰
 

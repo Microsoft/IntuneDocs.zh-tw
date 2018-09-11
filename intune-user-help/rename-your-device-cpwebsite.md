@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,29 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 4afa12cffbf199d271df912bfcfc1aedb4d8b23c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321368"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150483"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>從公司入口網站重新命名裝置
 
-了解如何從公司入口網站重新命名您已註冊的受控裝置。 將裝置的一般或預設模型名稱重新命名為可協助您快速識別它的名稱。  
+從公司入口網站重新命名已註冊的受控裝置。 將裝置的通用或預設模型名稱變更為您可以快速識別的名稱。
 
-1. 在[公司入口網站](https://portal.manage.microsoft.com/HelpDeskDialog)上，選取 [功能表] 按鈕 > [我的裝置]。
+1. 開啟[公司入口網站](https://portal.manage.microsoft.com)，然後選取 [功能表] 按鈕 > [裝置]。  
 
 2. 選取您要重新命名的裝置。
 
-![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)  
+    ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png)   
 
-3. 選取 [重新命名]。  
+3. 選取 [重新命名]。 如果頁面頂端未顯示重新命名選項，請選取 [其他 (...)] > [重新命名]。   
 
-   ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)  
-    
+   ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)   
 
-4. 在裝置名稱出現的方塊中，鍵入裝置的新名稱。 然後，點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
+    ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com/HelpDeskDialog)。
+4. 在裝置名稱出現的方塊中，鍵入裝置的新名稱。 然後，點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。  
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

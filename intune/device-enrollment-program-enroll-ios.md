@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43092272"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312639"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -133,13 +133,13 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
     >
     > 使用 Apple 設定助理進行驗證時，不支援這些功能。
 
-
 6. 如果您針對 [使用公司入口網站進行驗證，而不使用 Apple 設定助理] 選擇 [是]，您可以選擇使用大量採購方案 (VPP) 權杖在裝置上自動安裝公司入口網站，而不需要使用者提供 Apple ID。 若要使用 VPP 安裝公司入口網站，請在 [使用 VPP 安裝公司入口網站] 下選擇權杖。 請確定權杖未過期，而且您有足夠的公司入口網站應用程式裝置授權。 如果權杖過期或授權不足，則 Intune會改為安裝 App Store 公司入口網站，並提示您輸入 Apple ID。
 
     ![[使用 VPP 安裝公司入口網站] 的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
+7. 如果您為 [使用 VPP 安裝公司入口網站] 選擇權杖，您可以選擇在設定助理完成之後，立即以單一應用程式模式 (具體來說就是公司入口網站應用程式) 鎖定裝置。 在 [Run Company Portal in Single App Mode until authentication] \(驗證前以單一應用程式模式執行公司入口網站\) 選擇 [是]，設定此選項。 若要使用裝置，使用者必須先使用公司入口網站登入進行驗證。
 
-7. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
+8. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
 
     ![裝置管理設定螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -153,26 +153,28 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
 
-8. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將裝置恢復出廠預設值才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
+9. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將抹除裝置才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
-9. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
+10. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
-10. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
+11. 若您在前一個步驟中選擇 [依據憑證允許 Apple Configurator]，則請選擇要匯入的 Apple Configurator 憑證。
 
-11. 選擇 [確定]。
+12. 選擇 [確定]。
 
-12. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+13. 選擇 [設定助理自訂] 以設定下列設定檔的設定：![設定助理自訂](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+
 
     | 部門設定 | 說明 |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
-    |    <strong>部門電話</strong>     |                                                          在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
+    |    <strong>部門電話</strong>     | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
 
   您可以選擇當使用者設定裝置時，要在裝置上顯示或隱藏各種不同的設定助理畫面。
   - 如果您選擇 [隱藏]，則不會在設定期間顯示畫面。 設定好裝置之後，使用者仍然可以進入 [設定] 功能表來設定此功能。
   - 如果您選擇 [顯示]，將會在設定期間顯示畫面。 使用者有時可以跳過畫面而不採取動作。 但是他們隨後可以進入裝置的 [設定] 功能表來設定此功能。 
 
-| 設定助理畫面設定 | 如果您選擇 [顯示]，裝置會在設定期間... |
+
+    | 設定助理畫面設定 | 如果您選擇 [顯示]，裝置會在設定期間... |
     |------------------------------------------|------------------------------------------|
     | <strong>密碼</strong> | 提示使用者輸入密碼。 除非裝置受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。 |
     | <strong>位置服務</strong> | 提示使用者輸入其位置。 |
@@ -186,9 +188,9 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
     | <strong>診斷資料</strong> | 向使用者顯示 [診斷] 畫面。 此畫面可讓使用者選擇將診斷資料傳送給 Apple。 |
 
 
-13. 選擇 [確定]。
+14. 選擇 [確定]。
 
-14. 若要儲存該設定檔，請選擇 [建立]。
+15. 若要儲存該設定檔，請選擇 [建立]。
 
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
@@ -218,7 +220,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 2. 選擇 [設定預設設定檔]、在下拉式清單中選擇設定檔，然後選擇 [儲存]。 此設定檔將套用到使用該權杖註冊的所有裝置。
 
 ## <a name="distribute-devices"></a>散發裝置
-您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 裝置恢復出廠預設值之前，已啟動的裝置無法套用註冊設定檔。
+您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 抹除裝置之前，已啟動的裝置無法套用註冊設定檔。
 
 請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。
 

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329921"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312793"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -112,10 +112,12 @@ Intune 會將應用程式中所有資料標示為「公司」或「個人」。 
 
     - **PIN 會在相同發行者的多個應用程式間共用，以提升可用性：** 在 iOS，一組應用程式 PIN 會在**相同應用程式發行者**的所有應用程式間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
     - **裝置重新開機之後的「重新檢查存取需求前的剩餘時間 (分鐘)」行為：**「PIN 計時器」會追蹤閒置分鐘數，以判斷何時顯示下一個 Intune 應用程式 PIN。 在 iOS 上，PIN 計時器不會受到裝置重新開機的影響。 因此，裝置重新啟動不會影響使用者在使用 Intune PIN 原則的 iOS 應用程式中閒置的分鐘數。 在 Android 上，PIN 計時器會在裝置重新開機時重設。 因此，使用 Intune PIN 原則的 Android 應用程式可能會提示輸入應用程式 PIN，而不論**裝置重新開機之後**的「重新檢查存取需求前的剩餘時間 (分鐘)」設定值。  
-    - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。 
+    - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。
+
+若為 iOS 裝置，即使在不同發行者的應用程式之間共用 PIN，當非主要輸入焦點之應用程式的 [重新檢查存取需求前等候時間 (分鐘)] 值再次達到時，就會再度顯示提示。 例如，使用者有發行者 _X_ 的應用程式 _A_ 和發行者 _Y_ 的應用程式 _B_，而且這兩個應用程式共用相同的 PIN。 使用者將焦點放在應用程式 _A_ (前景)，並將應用程式 _B_ 最小化。 達到 [重新檢查存取需求前等候時間 (分鐘)] 值，而且使用者切換至應用程式 _B_ 之後，則需要 PIN。
 
       >[!NOTE] 
-      > 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前的剩餘時間 (分鐘)」設定的值。 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Intune PIN 如何搭配使用 Outlook 和 OneDrive 的內建應用程式 PIN ？**<br></br>
 Intune PIN 會根據以閒置為基礎的計時器 (又稱為「重新檢查存取需求前的剩餘時間 (分鐘)」值) 運作。 因此，Intune PIN 提示會與 Outlook 和 OneDrive 的內建應用程式 PIN 提示分開顯示，後者預設通常與應用程式啟動相關。 如果使用者同時收到兩個 PIN 提示，預期的行為應該是優先使用 Intune PIN。 
@@ -137,13 +139,13 @@ IT 系統管理員可以部署要求將應用程式資料加密的應用程式�
 - **哪些項目會加密？**<br></br> 僅有標示為「公司」的資料會根據 IT 系統管理員的應用程式保護原則加密。 當資料來自公司地點時，會將資料視為「公司」資料。 針對 Office 應用程式，Intune 會將下列位置視為公司地點：電子郵件 (Exchange) 或雲端儲存體 (包含商務用 OneDrive 帳戶的 OneDrive 應用程式)。 針對 Intune App Wrapping Tool 管理的企業營運應用程式，所有的應用程式資料都將視為「公司」資料。
 
 **Intune 如何從遠端抹除資料？**<br></br>
-Intune 可以透過三種不同的方式抹除資料：完整的裝置抹除、MDM 選擇性抹除和 MAM 選擇性抹除。 如需 MDM 遠端抹除的詳細資訊，請參閱[使用重設成出廠預設值或移除公司資料來移除裝置](devices-wipe.md#factory-reset)。 如需使用 MAM 選擇性抹除的詳細資訊，請參閱[移除公司資料](devices-wipe.md#remove-company-data)和[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
+Intune 可以透過三種不同的方式抹除資料：完整的裝置抹除、MDM 選擇性抹除和 MAM 選擇性抹除。 如需 MDM 遠端抹除的詳細資訊，請參閱[使用抹除或淘汰來移除裝置](devices-wipe.md)。 如需使用 MAM 選擇性抹除的詳細資訊，請參閱[淘汰動作](devices-wipe.md#retire)和[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
 
-- **什麼是重設成出廠預設值？**<br></br> [重設成出廠預設值](devices-wipe.md)會將裝置還原為其出廠預設設定，進而從**裝置**上移除所有的使用者資料和設定。 並從 Intune 移除裝置。
+- **什麼是抹除？**<br></br> [抹除](devices-wipe.md)會移除**裝置**的所有使用者資料和設定，方法是將裝置還原為其原廠預設設定。 並從 Intune 移除裝置。
   >[!NOTE]
-  > 「重設成出廠預設值」只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
+  > 抹除只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
 
-- **什麼是 MDM 選擇性抹除？**<br></br> 請參閱[移除裝置 - 移除公司資料](devices-wipe.md#remove-company-data)，以閱讀移除公司資料的相關資訊。
+- **什麼是 MDM 選擇性抹除？**<br></br> 請參閱[移除裝置 - 淘汰](devices-wipe.md#retire)，以閱讀移除公司資料的相關資訊。
 
 - **什麼是 MAM 選擇性抹除？**<br></br> MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 要求是使用 Intune Azure 入口網站來起始。 若要了解如何起始抹除要求，請參閱[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
 

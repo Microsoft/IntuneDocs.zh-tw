@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834765"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313729"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>整合 Windows Hello 企業版與 Microsoft Intune
 
@@ -31,7 +31,10 @@ ms.locfileid: "31834765"
 
 Intune 以兩種方式與 Hello 企業版整合：
 
--   您可以使用 Intune 原則，控制使用者可以和無法用以登入的筆勢。
+-   您可以在 [裝置註冊] 下建立 Intune 原則。 此原則以整個組織 (整個租用戶) 為目標。 它支援 Windows AutoPilot 全新體驗 (OOBE)，並會在裝置註冊時套用。 
+-  您可以在 [裝置設定] 下建立 Identity Protection 設定檔。 此設定檔以指派的使用者和裝置為目標，並會在簽入期間套用。 
+
+本文可用來建立以您整個組織為目標的預設 Windows Hello 企業版原則。 若要建立套用至所選使用者和裝置群組的 Identity Protection 設定檔，請參閱[設定 Identity Protection 設定檔](identity-protection-configure.md)。  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 4. 在 [所有使用者] 窗格上，按一下 [內容]，然後為 Windows Hello 企業版輸入 [名稱] 及選用的 [描述]。
 
-5. 在 [所有使用者] 窗格上，按一下 [設定]，然後為 [設定 Windows Hello 企業版] 選擇下列項目：
+5. 在 [所有使用者] 窗格上，按一下 [設定]，然後為 [設定 Windows Hello 企業版] 選擇下列選項：
 
     - **Disabled**。 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法停用。
     - **Enabled**。 如果您想要設定 Windows Hello 企業版設定，請選取此設定。

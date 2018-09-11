@@ -15,18 +15,18 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: c3b0ba5fc46ad489dcb004554abfee4044a74195
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 95525e66cce1e9691c60799df3da184954d6bf4b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310431"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312656"
 ---
 # <a name="retire-a-windows-pc"></a>淘汰 Windows 電腦
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-使用下列步驟，在電腦上執行 Intune 軟體用戶端，來淘汰您以電腦形式進行管理的桌面。 淘汰電腦後，即會將其從 Intune 管理中移除。 您無法透過 Intune 恢復電腦的出廠預設值，以將它設回其原始出廠設定。
+使用下列步驟，在電腦上執行 Intune 軟體用戶端，來淘汰您以電腦形式進行管理的桌面。 淘汰電腦後，即會將其從 Intune 管理中移除。 您無法透過 Intune 抹除電腦的方式，將其設回原始出廠設定。
 
 1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\(或包含您想要淘汰之電腦的其他群組)。
 

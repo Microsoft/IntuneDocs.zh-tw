@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321487"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329813"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -81,7 +81,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 - 與 Apple Watch 配對 
 
 > [!NOTE]
-> Apple 確認在 2018 年，特定設定將會移至僅受監督。 建議您在使用這些設定時考慮這點，而不是等待 Apple 將它們移轉至僅受監督：
+> Apple 確認在 2019 年，特定設定將會移至僅受監督。 建議您在使用這些設定時考慮這點，而不是等待 Apple 將它們移轉至僅受監督：
 > - 由使用者安裝應用程式
 > - 應用程式移除
 > - FaceTime
@@ -91,6 +91,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 > - iCloud 文件和資料
 > - 多人遊戲
 > - 新增 Game Center 朋友
+> - Siri
 
 ## <a name="password"></a>密碼
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。

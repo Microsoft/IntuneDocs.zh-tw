@@ -15,12 +15,12 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8b3e34e72775061dcc3b40f60e75243972cedd2
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ae7723e29d23575314fc632c75af01eb9e59f72
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223589"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347655"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>將 Windows Phone 8.1 市集應用程式新增至 Microsoft Intune
 
@@ -34,8 +34,8 @@ ms.locfileid: "34223589"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。  
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選取 [行動應用程式]。
-4. 在 [行動應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
 5. 在 [應用程式] 窗格中，選取 [新增]。
 6. 在 [新增應用程式] 窗格的 [應用程式類型] 中，選取 [Windows Phone 8.1]，然後選取 [應用程式資訊]。
 7. 在 [應用程式資訊] 窗格中，新增應用程式資訊。 窗格中某些值會隨所選的應用程式自動填入︰

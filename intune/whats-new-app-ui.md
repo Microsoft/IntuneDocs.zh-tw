@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,44 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279486"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347689"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日當週  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司入口網站的新使用者體驗更新 <!--2000968 -->  
+我們已依據客戶的意見反應，新增功能至公司入口網站。 您將能於裝置上體驗現有功能和可用性等方面的重大改善。 網站的各個區域 (例如裝置詳細資料、意見反應和支援，以及裝置概觀) 已獲得全新的現代化回應式設計。 已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。   
+
+您會看到的更新包括：  
+
+- 簡化所有裝置平台中的工作流程
+- 改善裝置識別和註冊流程
+- 更有用的錯誤訊息
+- 更容易使用的語言，較少的技術專業術語
+- 可以共用應用程式的直接連結
+- 改善大型應用程式目錄的效能
+- 增加所有使用者的協助工具  
+
+|已更新|上一頁|
+|---|---|
+|![更新過的裝置頁面會在裝置資訊正上方顯示裝置，不再跳出在完整清單上方。](./media/iwp-device-after-1803.png)|![舊版的裝置頁面。](./media/iwp-device-before-1803.png)|
+|![更新過的應用程式安裝頁面會顯示描述正上方的應用程式和各種安裝資訊，包含應用程式的發佈日期、版本和類型。](./media/iwp-app-install-after-1803.png)|![舊版的應用程式安裝頁面。](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日當週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會   
-Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 [同步此裝置]。 公司入口網站會開啟至 [設定] 頁面並起始您的同步。  
+Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 [同步此裝置]。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。  
 
-![裝置桌面上之 Windows 工作列的螢幕擷取畫面。 已按一下公司入口網站應用程式的程式圖示，以顯示含有 [釘選到工作列]、[關閉視窗] 和 [同步此裝置] 動作等選項的功能表。](./media/sync-device-from-start-menu-1807.png)  
+![裝置桌面上 Windows 工作列的螢幕擷取畫面。 按一下公司入口網站應用程式的程式圖示之後，顯示含有 [釘選到工作列]、[關閉視窗] 和 [同步此裝置] 動作等選項的功能表。](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
 
@@ -112,7 +132,7 @@ Windows 10 版 Intune 公司入口網站應用程式已更新為使用 [Fluent D
 我們已改善 iOS 版公司入口網站應用程式中的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
 
 > [!NOTE]
-> 我們會使用您在 Azure 入口網站 中 [Microsoft Intune] > [Mobile Apps] > [公司入口網站品牌] > [公司名稱] 中設定的公司名稱。 如果您沒有設定此值，我們將使用在 [Azure Active Directory] > [屬性] > [名稱] 中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
+> 我們會將您在 Azure 入口網站中設定的公司名稱用於 [Microsoft Intune] > [用戶端應用程式] > [公司入口網站品牌] > [公司名稱]。 如果您沒有設定此值，我們將使用在 [Azure Active Directory] > [屬性] > [名稱] 中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
 
 |之前|在|
 |---|---|
@@ -458,12 +478,7 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 -   可以共用應用程式的直接連結
 - 改善大型應用程式目錄的效能
 
-您不需要為此變更進行任何準備動作。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最後可能需要使用更新過的螢幕擷取畫面來更新終端使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。
-
-|已更新|上一頁|
-|---|---|
-|![更新過的裝置頁面會在裝置資訊正上方顯示裝置，不再跳出在完整清單上方。](./media/iwp-device-after-1803.png)|![舊版的裝置頁面。](./media/iwp-device-before-1803.png)|
-|![更新過的應用程式安裝頁面會顯示描述正上方的應用程式和各種安裝資訊，包含應用程式的發佈日期、版本和類型。](./media/iwp-app-install-after-1803.png)|![舊版的應用程式安裝頁面。](./media/iwp-app-install-before-1803.png)|
+您不需要為此變更進行任何準備動作。 我們會讓您知道更新過的公司入口網站何時可供使用。 不過，您最後可能需要使用更新過的螢幕擷取畫面來更新終端使用者文件。 請注意，您也可能需要更新 iOS 上公司入口網站應用程式的文件，因為網站具有 iOS 應用程式的 [應用程式] 區段。  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>公司入口網站的 UI 更新 <!--1313244 part 2-->
 

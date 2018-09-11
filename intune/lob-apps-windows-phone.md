@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ccc1f25d137675ba8e5f984a16324f4b0771dc9c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: a7d7554cad04dcca0d7f56986aef4c4b30193c18
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224982"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347602"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 
@@ -32,8 +32,8 @@ ms.locfileid: "34224982"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
-3. 在 [Intune] 窗格中，選取 [行動應用程式]。
-4. 在 [行動應用程式] 工作負載中，選擇 [管理]  >  [應用程式]。
+3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
+4. 在 [用戶端應用程式] 工作負載中，選取 [管理] > [應用程式]。
 5. 從應用程式清單上方，選取 [新增]。
 6. 在 [新增應用程式] 窗格中，選取 [企業營運應用程式]。
 
