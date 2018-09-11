@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117917"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313173"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -34,11 +34,14 @@ ms.locfileid: "39117917"
 2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置] > [所有裝置] > 選取其中一個列出的裝置以開啟其詳細資料：
 
-   - [概觀] 會在裝置簽入後，顯示裝置名稱並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置等。 選取 [更多] 以：
-     - 移除公司資料
-     - 刪除裝置
-     - 從遠端鎖定裝置
-     - 清除
+   - [概觀] 會在裝置簽入後，顯示裝置名稱並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置等。 您可以在裝置上執行下列動作：
+      - [淘汰](devices-wipe.md#retire)
+        - [抹除](devices-wipe.md#wipe)
+        - [遠端鎖定](device-remote-lock.md)
+        - [同步裝置](device-sync.md)
+        - [重設密碼](device-passcode-reset.md)
+        - [重新啟動](device-restart.md) (僅限 Windows)
+        - [全新開始](device-fresh-start.md) (僅限 Windows)
      - 啟動遠端協助工作階段
    - 使用 [內容] 來指派[您所建立的類別](device-group-mapping.md)，以及將裝置的擁有權變更為個人裝置或公司裝置。
    - [硬體] 包含裝置的許多相關詳細資料，包括裝置識別碼、作業系統和版本、儲存空間、型號和製造商、條件式存取設定等詳細資料。
