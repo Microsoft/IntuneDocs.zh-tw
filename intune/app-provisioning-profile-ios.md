@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329559"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058909"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 應用程式佈建設定檔以避免應用程式過期
 
@@ -43,7 +43,7 @@ ms.locfileid: "43329559"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選擇 [用戶端應用程式]。
+3. 在 [Intune] 窗格上，選擇 [用戶端應用程式]。
 1.  在 [用戶端應用程式] 工作負載中，選擇 [管理] > [iOS 應用程式佈建設定檔]。
 2.  在設定檔清單窗格中，選擇 [建立設定檔]。
 3. 在 [建立設定檔] 窗格中，設定下列值︰
