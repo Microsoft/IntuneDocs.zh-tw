@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a640e6d914da6fead7a64d5235c1cdeac164ac9e
+ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313133"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44096532"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows AutoPilot 來註冊 Windows 裝置
 Windows AutoPilot 可簡化裝置佈建。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 AutoPilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 AutoPilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Windows AutoPilot 概觀)。
@@ -69,7 +69,7 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 2. 輸入**名稱**和選擇性的**描述**。
 3. 針對 [部署模式]，請選擇下列兩個選項的其中一個：
     - **使用者驅動**：具有此設定檔的裝置會與註冊裝置的使用者相關聯。 須要有使用者認證，才能佈建裝置。
-    - **自我部署 (預覽)**：(Windows 10 Insider Preview 組建 17672 或更新版本) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不須有使用者認證，就能佈建裝置。
+    - **自我部署 (預覽)**：(需要最新的 [Windows 10 Insider Preview 組建](https://docs.microsoft.com/windows-insider/at-work-pro/)) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不須有使用者認證，就能佈建裝置。
 4. 在 [加入Azure AD] 方塊中，選擇 [已加入 Azure AD]。
 5. 選擇 [全新體驗 (OOBE)]、設定下列選項，然後選擇 [儲存]：
     - **語言 (地區)***：選擇要用於裝置的語言。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
@@ -82,7 +82,7 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 
 6. 選擇 [建立] 以建立設定檔。 現在可以指派 AutoPilot 部署設定檔給裝置。
 
-*僅在您針對 [部署模式] 選擇 [自我部署 (預覽)] 時，才能使用 [語言 (地區)] 和 [自動設定鍵盤] (Windows 10 Insider Preview 組建 17672 或更新版本)。
+*僅在您針對 [部署模式] 選擇 [自我部署 (預覽)] 時，才能使用 [語言 (地區)] 和 [自動設定鍵盤] \(需要最新的 [Windows 10 Insider Preview 組建](https://docs.microsoft.com/windows-insider/at-work-pro/)\)。
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>指派 AutoPilot 部署設定檔至裝置群組
@@ -113,7 +113,7 @@ AutoPilot 部署設定檔用來設定 AutoPilot 裝置。
 
 您可以將使用者指派給特定 Autopilot 裝置。 此指派會在 Windows 安裝期間的[設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)登入頁面上，預先填入 Azure Active Directory 中的使用者。 它也可讓您設定自訂問候語名稱。 這不會預先填入或修改 Windows 登入。 只有具授權的 Intune 使用者可以透過此方式指派。
 
-必要條件：已設定 Azure Active Directory 公司入口網站。
+必要條件：已設定 Azure Active Directory 公司入口網站與最新的 [Windows 10 Insider Preview 組建](https://docs.microsoft.com/windows-insider/at-work-pro/)。
 
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [裝置]> 選擇裝置 > [指派使用者]。
     ![指派使用者的螢幕擷取畫面](media/enrollment-autopilot/assign-user.png)

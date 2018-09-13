@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347282"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254083"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "43347282"
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>macOS 公司入口網站安裝程式現在會在安裝程式檔案名稱中包含版本號碼 <!--2652728-->
 
 #### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS 自動應用程式更新 <!-- 2729759 wnready -->
-自動應用程式更新適用於具裝置和使用者授權之 iOS 11.0 版和更新版本的應用程式。
+自動應用程式更新適用於 iOS 11.0 版和更新版本的裝置和使用者授權應用程式。
 
 
 
@@ -90,7 +90,8 @@ ms.locfileid: "43347282"
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 及更新版本之裝置上的控制 S 模式 - 公開預覽 <!-- 1958649 -->
 透過此功能更新，您可以建立裝置組態設定檔以將 Windows 10 裝置切換出 S 模式，或防止使用者將裝置切換出 S 模式。 此功能位於 Intune > [裝置設定] > [設定檔] >  [Windows 10 and later] \(Windows 10 及更新版本\) > [Edition upgrade and mode switch] \(版本升級和模式切換\) 中。
 [引進 Windows 10 S 模式](https://www.microsoft.com/windows/s-mode)提供 S 模式的詳細資訊。
-適用於：Windows 10 及更新版本 (1809 及更新版本)
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 設定套件會自動新增至組態設定檔 <!-- 2144658 -->
 在 Intune 中使用[進階威脅防護和上線](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile)裝置時，您必須先下載設定套件，並將之新增至組態設定檔。 透過此更新，Intune 會從 Windows Defender 資訊安全中心自動取得套件，並將之新增至設定檔。
@@ -98,6 +99,8 @@ ms.locfileid: "43347282"
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>要求使用者在裝置設定期間連線 <!--2311457-->
 您現在可以設定裝置設定檔，要求裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用這項設定。
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>限制應用程式，並封鎖存取 iOS 和 Android Enterprise 裝置上的公司資源 <!-- 2451462 -->
 在 [裝置合規性] > [原則] > [建立原則] > [iOS] > [系統安全性] 中，會有新的 [Restricted applications] \(受限制的應用程式\) 設定。 如果在裝置上安裝特定應用程式，則這個新的設定會使用合規性原則來封鎖對公司資源的存取。 除非從裝置中移除受限制應用程式，否則會將裝置視為不符合規範。
@@ -129,19 +132,24 @@ ms.locfileid: "43347282"
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>將使用者和易記名稱指派給 AutoPilot 裝置 <!--1346521 -->
 您現在可以[將使用者指派給單一 Autopilot 裝置](enrollment-autopilot.md)。 系統管理員也可以提供易記名稱，以在使用 Autopilot 設定其裝置時歡迎使用者。
-適用於：Windows Insider 1809 或更新版本的組建 (同時為預覽版本)。
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 註冊期間，使用 VPP 裝置授權預先佈建公司入口網站 <!-- 1608345 -->
 您現在可以於裝置註冊計劃 (DEP) 註冊期間，使用大量採購方案 (VPP) 裝置授權預先佈建公司入口網站。 若要這麼做，當您[建立或編輯註冊設定檔時](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)，請指定您要用來安裝公司入口網站的 VPP 權杖。 請確定您的權杖未過期，而且您有足夠的公司入口網站應用程式權限。 如果權杖過期或授權不足，則 Intune會改為推送 App Store 公司入口網站 (這會提示您輸入 Apple 識別碼)。
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>需要確認刪除將用於預先佈建公司入口網站的 VPP 權杖 <!-- 2237634 -->
+如果在 DEP 註冊期間將使用大量採購方案 (VPP) 權杖來預先佈建公司入口網站，則需要確認刪除該權杖。
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>封鎖 Windows 個人裝置註冊 <!-- 1849498 -->
-您可以在 Intune 中[封鎖 Windows 個人裝置](enrollment-restrictions-set.md#set-device-type-restrictions)註冊[行動裝置管理](windows-enroll.md)。 使用此功能無法封鎖使用 [Intune PC 代理程式](manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。
+您可以在 Intune 中[封鎖 Windows 個人裝置](enrollment-restrictions-set.md#set-device-type-restrictions)註冊[行動裝置管理](windows-enroll.md)。 使用此功能無法封鎖使用 [Intune PC 代理程式](manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。 此功能會在未來幾週推出，因此您在使用者介面中可能不會立即看到它。
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 AutoPIlot 設定檔中指定電腦名稱模式 <!--1849855-->
-您可以[指定電腦名稱範本](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，以在 AutoPilot 註冊期間產生並設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。
+您可以[指定電腦名稱範本](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，以在 AutoPilot 註冊期間產生並設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>針對 Windows AutoPilot 設定檔，隱藏公司登入頁面和網域錯誤頁面上的變更帳戶選項 <!--1901669 -->
-[新增 Windows AutoPilot 設定檔選項](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，讓管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：Windows Insider 1809 或更新版本的組建 (同時為預覽版本)。
+[新增 Windows AutoPilot 設定檔選項](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，讓管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 註冊期間，使用 VPP 裝置授權預先佈建公司入口網站 <!-- 1608345 -->
 您現在可以於裝置註冊計劃 (DEP) 註冊期間，使用大量採購方案 (VPP) 裝置授權預先佈建公司入口網站。 若要這麼做，當您[建立或編輯註冊設定檔時](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)，請指定您要用來安裝公司入口網站的 VPP 權杖。 請確定您的權杖未過期，而且您有足夠的公司入口網站應用程式權限。 如果權杖過期或授權不足，則 Intune會改為推送 App Store 公司入口網站 (這會提示您輸入 Apple 識別碼)。
@@ -168,9 +176,9 @@ ms.locfileid: "43347282"
 - 簡化所有裝置平台中的工作流程
 - 改善裝置識別和註冊流程
 - 更有用的錯誤訊息
-- 更容易使用的語言，較少的技術專業術語
-- 可以共用應用程式的直接連結
-- 改善大型應用程式目錄的效能
+- 讓語言更容易使用，讓技術專業術語更少
+- 能夠共用應用程式的直接連結
+- 已改進大型應用程式目錄的效能
 - 增加所有使用者的協助工具  
 
 已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。 若要檢視應用程式增強功能的範例，請參閱 [Intune 終端使用者應用程式的 UI 更新](whats-new-app-ui.md)。  
@@ -1273,6 +1281,25 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
 
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>為變更做計劃：適用於頂級客戶的新 Intune 支援體驗 
+身為 Microsoft 頂級客戶，您目前可以使用 Microsoft 線上頂級支援 (MPO) 入口網站 (premier.microsoft.com) 與 Azure (portal.azure.com) 上的 Intune 來建立 Intune 的支援要求。 從 2018 年 12 月 3 日開始，若要繼續加強頂級支援體驗，您將只能在 Azure 上的 Intune 中建立支援要求。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+在 12 月 3 日之後，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專屬 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 在 MPO 入口網站中建立的支援要求無法在 Azure 入口網站中檢視，因此您應該停止在 MPO 中建立支援要求。  
+
+若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM 已過時，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱＜從混合式行動裝置管理移轉到 Azure 上的 Intune＞(英文)。
+
+請注意，只有全域管理員、Intune 服務管理員與服務支援管理員角色可以在 Azure 入口網站中建立支援票證。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+- 停止使用 MPO 並使用 Azure 上的 Intune 來建立及管理您的所有 Intune 支援要求。  
+- 通知您的技術服務人員並視需要更新文件。
+- 若您有使用者目前正於 MPO 中建立支援要求，但他們並沒有全域管理員或 Intune 服務管理員角色，請將 Azure Active Directory 中的服務支援管理員角色指派給他們，以便他們可以繼續在 Azure 入口網站中建立支援票證。
+- 按一下 [其他資訊] 以取得詳細資訊與實用連結。
+
+#### <a name="additional-information"></a>其他資訊
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>採取動作：請在 Intune 中更新 Android 裝置限制或合規性原則的密碼設定
 Intune 將針對 Android 4.4 和更新版本的裝置移除「裝置預設」這個可用密碼類型。 由於 Android 平台和裝置的預設差異，裝置通常會將該原則視為選擇性原則。 若要清除在 Android 上強制執行這項設定所產生的混淆，我們將會在即將推出的版本中從 UI 移除這項設定。 
