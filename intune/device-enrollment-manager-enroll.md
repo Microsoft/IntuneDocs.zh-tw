@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255540"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141604"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
@@ -53,7 +53,7 @@ DEM 使用者可以︰
   - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以取消註冊。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
   - 使用者無法將 Apple「大量採購方案」(VPP) 應用程式與使用者授權搭配使用，因為進行應用程式管理需要個別使用者的 Apple ID。
-  - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。
+  - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。 這表示您無法讓裝置處於受監督模式，因此將無法存取某些設定選項。
   - (僅限 Android) 能以單一 DEM 帳戶註冊的 Android 工作設定檔裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 此限制不適用於舊版的 Android 註冊。
   - 裝置如果具有裝置授權，便可以安裝 VPP 應用程式。
   - 不需要 Intune 裝置授權也可以使用 DEM。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。

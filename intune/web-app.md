@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347452"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340264"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -50,7 +50,7 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
         > [!NOTE]
         > 若您在部署並安裝應用程式之後透過 Intune Azure 入口網站變更應用程式名稱，將無法再使用命令定位應用程式。
     
-    - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
+    - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到此描述。
     - **發行者**：輸入應用程式的發行者名稱。
     - **應用程式 URL**：輸入裝載您要指派之應用程式的網站 URL。
     - **類別**：您可以選取一或多個內建的應用程式類別，或您自己建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
@@ -62,6 +62,8 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
 
 > [!Note]
 > 使用者必須將 Intune Widget 新增至主畫面，才能顯示已指派給 Android 裝置的 Web 應用程式。
+>
+> 目前，將 Intune Web 應用程式部署到 iOS 裝置會與管理設定檔相關聯，因而無法手動移除。 您可以在 Intune 入口網站中將部署類型變更為 [解除安裝]，此時系統便可以自動移除 Web 應用程式。 不過，如果在將應用程式指派意圖變更為 [解除安裝] 之前移除部署，Web 應用程式將會永久保留在裝置上，直到從 Intune 取消註冊該裝置為止。
 
 ## <a name="next-steps"></a>接下來的步驟
 

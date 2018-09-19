@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330155"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141672"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -106,7 +106,7 @@ Intune 支援也能存取需要安全存取內部部署資料的行動應用程�
 如需組織所需應用程式類型的詳細資訊，請參閱[建立設計](planning-guide-design.md#feature-requirements)＜功能需求＞一節中的＜應用程式＞小節。
 
 ### <a name="understanding-app-management-and-protection-policies"></a>了解應用程式管理和保護原則
-Intune 讓您修改部署的應用程式功能，幫助這些應用程式符合公司的規範及安全性原則。 這項控制能讓您決定保護公司資料的方式。 Intune 受控應用程式使用一組豐富的行動應用程式保護原則，例如：
+Intune 讓您修改部署的應用程式功能，幫助這些應用程式符合公司的規範及安全性原則。 此控制措施能讓您決定保護公司資料的方式。 Intune 受控應用程式使用一組豐富的行動應用程式保護原則，例如：
 
 - 限制複製和貼上及另存新檔功能。
 - 設定網頁連結以在 Intune Managed Browser 應用程式內開啟。
@@ -116,7 +116,7 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 
 ### <a name="understanding-licensed-apps"></a>了解授權應用程式
 除了了解 Web 應用程式、市集應用程式和 LOB 應用程式之外，您也應了解大量採購方案應用程式和授權應用程式的目的地，例如： 
-- **Apple 商務大量採購方案 (iOS 和 MacOS)**：iOS App Store 可讓您針對想在公司中執行的應用程式採購多個授權。 購買多個複本有助於您在公司中有效率地管理應用程式。 如需詳細資訊，請參閱[管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
+- **Apple 商務大量採購方案 (iOS)**：iOS App Store 可讓您針對想在公司中執行的應用程式採購多個授權。 購買多個複本有助於您在公司中有效率地管理應用程式。 如需詳細資訊，請參閱[管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
 - **Android 工作設定檔**：將應用程式指派至 Android 工作設定檔裝置的方式，與您將應用程式指派至標準 Android 裝置的方式不同。 您針對 Android 工作設定檔安裝的所有應用程式都是來自受控的 Google Play 商店。 您需要登入商店、瀏覽所需的應用程式，並核准這些應用程式。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式] 節點中，而且您可以管理該應用程式的指派，如同其他應用程式一樣。
 - **商務用 Microsoft Store (Windows 10)**：商務用 Microsoft Store 可讓您為組織尋找應用程式，並進行個別或大量採購。 透過將市集連線至 Microsoft Intune，就可以在 Azure 入口網站中管理大量採購的應用程式。 如需詳細資訊，請參閱[從商務用 Microsoft Store 管理應用程式](windows-store-for-business.md)。
 
