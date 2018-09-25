@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474627"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028574"
 ---
 # <a name="view-and-correct-personal-data"></a>檢視及更正個人資料
 
@@ -33,7 +33,7 @@ Intune 系統管理員可以根據其存取權限檢視某些個人資料，但�
 系統管理員可以看到 Intune UI 各種刀鋒視窗中的終端使用者個人資訊。 下列文章說明系統管理員執行但沒有存取權的資訊：
 - 在 Intune 中[查看裝置詳細資料](device-inventory.md)說明如何檢閱終端使用者裝置的詳細資料。
 - [監視應用程式資訊和指派](apps-monitor.md)說明如何查看終端使用者裝置上所安裝之應用程式的詳細資料。
-- [當我註冊裝置時，我的公司可以看到哪些資訊？](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)一文為終端使用者提供公司可以和無法看到的資料清單。 最好清楚告訴使用者要收集的資料種類，以及要收集的原因。 本文可以是該透明度的第一個步驟。
+- [當我註冊裝置時，我的公司可以看到哪些資訊？](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)一文為終端使用者提供公司可以和無法看到的資料清單。 最好清楚告訴使用者要收集的資料種類，以及要收集的原因。 本文可以是該透明度的第一個步驟。
 
 ### <a name="who-can-view-the-data"></a>誰可以檢視資料？
 

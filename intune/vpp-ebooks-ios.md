@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 3d7e016f7ce797ba1873d3fe3e7dcd9065300844
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347347"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494093"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
@@ -55,7 +55,7 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選擇 [用戶端應用程式]。
+3. 在 [Intune] 窗格上，選擇 [用戶端應用程式]。
 1.  在 [用戶端應用程式] 工作負載中，選擇 [安裝] > [iOS VPP 權杖]。
 2.  在 VPP 權杖清單窗格中，按一下 [建立]。
 3.  在 [新的 VPP 權杖] 窗格中，指定下列資訊：

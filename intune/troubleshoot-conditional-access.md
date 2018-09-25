@@ -14,12 +14,12 @@ ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ef3b442c5d2cdb731fc906bb865d280729b163a
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: f92cc2e7b6f538c0555355476c688d866a1ccda7
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238146"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028676"
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
@@ -116,7 +116,7 @@ ms.locfileid: "36238146"
 ### <a name="exchange-connector-logs"></a>Exchange Connector 記錄檔
 
 #### <a name="general-log-information"></a>一般記錄檔資訊
-若要檢視 Exchange Connector 記錄檔，請使用[服務追蹤檢視器工具](https://docs.microsoft.com/en-us/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)。 這個工具需要您下載 Windows Server SDK。
+若要檢視 Exchange Connector 記錄檔，請使用[服務追蹤檢視器工具](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)。 這個工具需要您下載 Windows Server SDK。
 
 >[!NOTE]
 >記錄檔位於 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 一系列共包含 30 個檔案的記錄檔是以 *Connector0.log* 開始並在 *Connector29.log* 停止。 記錄檔會在累積 10MB 的資料後，換用另一個檔案。 一旦記錄檔達到 Connector29，將會覆寫先前的記錄檔，再次從 Connector0 開始。
@@ -144,7 +144,10 @@ ms.locfileid: "36238146"
 2.  使用下列機碼來尋找 TraceSourceLine：OnPremisesExchangeConnectorService
 3.  將 **SourceLevel** 節點值從 **警告 ActivityTracing** (預設值) 變更為 **Verbose ActivityTracing**，如下所示。
 
-    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
+          <Value xsi:type="TraceSource">
+            <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners>
+          </Value>
     </TraceSourceLine>
 
 

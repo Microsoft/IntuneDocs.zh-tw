@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905371"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028625"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
@@ -70,12 +70,12 @@ Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://doc
 ## <a name="where-did-my-conditional-access-policies-go"></a>我的條件式存取原則移到哪個位置？
 當您的租用戶移轉至 Azure 入口網站之後，租用戶的條件式存取原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
 
-如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)。 
+如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
 
 ## <a name="where-did-my-compliance-policies-go"></a>我的合規性原則移到哪個位置？
 當您的租用戶移轉至 Azure 入口網站之後，租用戶的合規性原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
 
-如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/en-us/intune/known-issues#compliance)。 
+如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/intune/known-issues#compliance)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
 在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：
