@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347860"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602226"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>將 Android 企業營運應用程式新增至 Microsoft Intune
 
@@ -36,7 +36,7 @@ ms.locfileid: "43347860"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
-4. 在 [用戶端應用程式] 工作負載中，選取 [管理] >  [應用程式]。
+4. 在 [用戶端應用程式] 工作負載中，選取 [管理] > [應用程式]。
 5. 從應用程式清單上方，選取 [新增]。
 6. 在 [新增應用程式] 窗格中，選取 [企業營運應用程式]。
 

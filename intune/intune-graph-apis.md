@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca5b09d415466d2ab6ce2f70a53f7fd8444d28f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835545"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562930"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -162,7 +162,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 - **啟用存取**設定：__讀取 Microsoft Intune 應用程式__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 行動裝置應用程式
+    - 用戶端應用程式
     - 行動裝置應用程式類別
     - 應用程式保護原則
     - 應用程式設定
@@ -175,7 +175,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 
 - 也可允許變更下列實體：
 
-    - 行動裝置應用程式
+    - 用戶端應用程式
     - 行動裝置應用程式類別
     - 應用程式保護原則
     - 應用程式設定
