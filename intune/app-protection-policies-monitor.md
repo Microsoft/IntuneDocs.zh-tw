@@ -3,8 +3,8 @@ title: 如何監視應用程式保護原則
 titleSuffix: Microsoft Intune
 description: 監視 Intune 中行動應用程式管理原則的合規性狀態。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330036"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231435"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "43330036"
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選擇 [用戶端應用程式]。
+3. 在 [Intune] 窗格上，選擇 [用戶端應用程式]。
 4. 在 [用戶端應用程式] 工作負載中，選擇 [監視] > [應用程式保護狀態]，查看摘要檢視：
 
 ![[Intune 行動應用程式管理] 窗格上的 [摘要] 磚](./media/app-protection-user-status-summary.png)

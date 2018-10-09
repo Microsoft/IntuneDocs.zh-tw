@@ -3,8 +3,8 @@ title: 搭配 Intune 使用的 Better Mobile Threat Defense 連接器
 titleSuffix: Intune on Azure
 description: 設定搭配 Intune 使用的 Better Mobile Threat Defense 連接器。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 7/25/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 25a6c892284b6014fc3090b3e673c6385ccbad13
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: ae1c45d6449f7ad3661c89cb514524fb13c9a3fb
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823286"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231554"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Better Mobile Threat Defense 連接器
 

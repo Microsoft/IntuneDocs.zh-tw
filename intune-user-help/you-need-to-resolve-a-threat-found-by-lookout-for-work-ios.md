@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150196"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828018"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解決 Lookout for Work 應用程式找到的威脅  
 
@@ -42,7 +42,9 @@ Lookout for Work 應用程式是 Mobile Threat Defender 服務，可在您的 iO
     ![Lookout for Work 錯誤訊息的範例螢幕擷取畫面，含有公司入口網站連結和藍色 [確定] 按鈕。](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. 選取您的裝置。  
-3. 閱讀出現在您裝置下方的警告。 警告會指示您開啟 Lookout for Work，以修正病毒或安全性威脅。   
+3. 閱讀出現在您裝置下方的警告。 警告會指示您開啟 Lookout for Work，以修正病毒或安全性威脅。     
+
+    ![公司入口網站裝置頁面顯示 Lookout for Work 警告的範例螢幕擷取畫面。](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>針對應用程式威脅進行疑難排解   
 如果您安裝的應用程式經 Lookout for Work 判斷會造成威脅，您會收到類似下面螢幕擷取畫面中所示的訊息。  
@@ -50,5 +52,5 @@ Lookout for Work 應用程式是 Mobile Threat Defender 服務，可在您的 iO
 ![顯示 Lookout for Work 偵測到之作用中及已解決應用程式威脅清單的範例螢幕擷取畫面。](./media/ios-lfw-threat-example.png)    
 選取畫面頂端顯示的應用程式名稱。 接著遵循指示移除並解除安裝應用程式。 只要應用程式在您的裝置上，您將無法存取公司資源。    
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。    
 

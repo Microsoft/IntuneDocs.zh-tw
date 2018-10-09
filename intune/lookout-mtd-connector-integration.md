@@ -3,8 +3,8 @@ title: 設定 Lookout 與 Microsoft Intune 的整合
 titlesuffix: ''
 description: 深入了解整合 Intune 與 Lookout Mobile Threat Defense 來控制行動裝置對公司資源的存取。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029860"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232169"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -88,12 +88,12 @@ ms.locfileid: "31029860"
     > [!NOTE] 
     > Azure AD 註冊群組中所識別及支援的所有使用者支援 Lookout、註冊 Intune 的裝置，都已註冊且有資格在 Lookout MTD 主控台中啟用。
 
-2. 在 [Lookout 主控台](https://aad.lookout.com)中，選擇 [系統] 模組的 [連接器] 索引標籤，然後選取 [Enrollment Management]\(註冊管理) 定義裝置應該註冊 Lookout 的一組使用者。 新增 Azure AD 安全性群組 [顯示名稱] 以進行註冊。
+2. 在 [[Lookout 主控台]](https://aad.lookout.com) 中，從 [系統] 模組中選擇 [連接器] 索引標籤，然後選取 [註冊管理] 來定義一組應該以 Lookout 註冊其裝置的使用者。 新增 Azure AD 安全性群組 [顯示名稱] 以進行註冊。
 
     ![Intune 連接器註冊頁面的螢幕擷取畫面](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > [顯示名稱] 區分大小寫，如 Azure 入口網站安全性群組的 [內容] 所示。 如下圖所示，當標題全部小寫時，安全性群組的 [顯示名稱] 使用駝峰式命名法。 在 Lookout 主控台中比對安全性群組 [顯示名稱] 的大小寫。
+    > [顯示名稱] 區分大小寫，如 Azure 入口網站安全性群組的 [內容] 所示。 如下列影像所示，安全性群組的 [顯示名稱] 為駝峰式大小寫，而標題全都是小寫。 在 Lookout 主控台中比對安全性群組 [顯示名稱] 的大小寫。
     >![Azure 入口網站中 Azure Active Directory 服務的屬性頁面螢幕擷取畫面](./media/aad-group-display-name.png)
 
     >[!NOTE] 

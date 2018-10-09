@@ -3,8 +3,8 @@ title: 應用程式的資料傳輸原則例外狀況
 titleSuffix: Microsoft Intune
 description: 建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/28/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 5f50ad61634363ea1bc1ab8af139033a114f8b86
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039149"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231486"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況
 

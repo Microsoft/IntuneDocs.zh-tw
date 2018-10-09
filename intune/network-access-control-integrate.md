@@ -2,8 +2,8 @@
 title: 網路存取控制與 Microsoft Intune 的整合 - Azure | Microsoft Docs
 description: 網路存取控制 (NAC) 解決方案會向 Intune 確認裝置的註冊與合規性狀態。 NAC 包含特定的行為，並且會與條件式存取搭配運作。 請參閱步驟來開始上線，以及取得合作夥伴解決方案清單。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf796afcfc42f2cdf778713f4dceadb2597a12e2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: edac1701de22fd94eac3990949d18389841a5444
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834062"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231515"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
