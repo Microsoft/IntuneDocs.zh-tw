@@ -55,7 +55,7 @@ Intune 提供的公司入口網站應用程式，可讓使用者存取公司資�
 
 合規性原則係指裝置必須符合才能符合規範的規則和設定。 使用這些原則搭配條件式存取，讓不符合規範的裝置無法存取公司資源。 在 Intune 中，建立合規性政策來允許或封鎖執行 Windows Holographic for Business 的裝置存取權。 例如，您可以建立要求啟用 Bitlocker 的原則。
 
-另請參閱**[開始使用合規性原則](device-compliance-get-started.md)**。
+另請參閱 **[開始使用合規性原則](device-compliance-get-started.md)** 。
 
 ## <a name="deploy-and-manage-apps"></a>部署和管理 App
 **[將應用程式新增至 Intune](apps-add.md)**
