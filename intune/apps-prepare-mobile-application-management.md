@@ -2,10 +2,10 @@
 title: 決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理
 description: 本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理原則。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 8ee6001711ea283e06f990d9321362663be970de
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251749"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903443"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用此資訊可了解這兩種方法和其使用時機。
+您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用這項資訊可了解這兩種方法和其使用時機。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
 App Wrapping Tool 主要用於**內部**企業營運 (LOB) 應用程式。 此工具是可建立應用程式包裝函式的命令列應用程式，因而可讓 Intune 應用程式保護原則管理應用程式。 保護由獨立軟體廠商 (ISV) 所提供的應用程式時，不需要釐清該 ISV 是否仍會支援封裝的應用程式。

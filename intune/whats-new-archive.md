@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49a7d83e543855ca9f68426adc979079bbcfc17
-ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
+ms.openlocfilehash: 8b76ad64395fc8a0ffa5248a6131df2ee287630a
+ms.sourcegitcommit: a78c64ea755ef9e261d3b07390493300977b724b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45533722"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324789"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
 
@@ -1110,9 +1110,9 @@ Windows 10 公司入口網站應用程式已經更新，以支援 Windows 資訊
 <!--1459533 -->    
 在此版本中，我們已對 BitLocker 設定在 Windows 10 端點保護裝置設定檔中的運作方式進行下列改善：
  
-在 [BitLocker OS 磁碟機設定] 下，針對 [具有不相容 TPM 晶片的 BitLocker] 設定，當您選取 [封鎖] 時，以前這會導致實際允許 BitLocker。 我們現在已修正這個問題，以在選取 BitLocker 時進行封鎖。
-在 [BitLocker OS 磁碟機設定] 下，針對 [以憑證為基礎的資料修復代理程式] 設定，您現在可以明確地封鎖以憑證為基礎的資料修復代理程式。 不過，預設會允許代理程式。
-在 [BitLocker 固定式資料磁碟機設定] 下，針對 [資料修復代理程式] 設定，您現在可以明確地封鎖資料修復代理程式。
+-   在 [BitLocker OS 磁碟機設定] 下，針對 [具有不相容 TPM 晶片的 BitLocker] 設定，當您選取 [封鎖] 時，以前這會導致實際允許 BitLocker。 我們現在已修正這個問題，以在選取 BitLocker 時進行封鎖。
+-   在 [BitLocker OS 磁碟機設定] 下，針對 [以憑證為基礎的資料修復代理程式] 設定，您現在可以明確地封鎖以憑證為基礎的資料修復代理程式。 不過，預設會允許代理程式。
+-   在 [BitLocker 固定式資料磁碟機設定] 下，針對 [資料修復代理程式] 設定，您現在可以明確地封鎖資料修復代理程式。
 如需詳細資訊，請參閱 [Windows 10 和更新版本的 Endpoint Protection 設定](endpoint-protection-windows-10.md)。
 
 
