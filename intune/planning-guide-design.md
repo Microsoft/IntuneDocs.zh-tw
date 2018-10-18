@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: fd6c80c022f13b892d396768439e2c503d5425d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29962525"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864586"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -199,8 +199,8 @@ Intune 管理行動裝置以保護公司資料，讓終端使用者能夠從更�
 
 | **裝置平台** | **作業系統版本** |
 |:---:|:---:|
-| iOS - iPhone | 9.0+ |                
-| iOS - iPad | 8.0+ |               
+| iOS - iPhone | 10.0 + |                
+| iOS - iPad | 10.0 + |               
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10 平板電腦 | 10+ |
 

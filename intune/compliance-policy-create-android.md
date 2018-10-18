@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
+ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906187"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891024"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中為 Android 裝置建立裝置合規性原則
 
@@ -77,7 +77,7 @@ ms.locfileid: "37906187"
 - **對應用程式進行威脅掃描**：需要啟用 Android **驗證應用程式**功能。
 
   > [!NOTE]
-  > 在舊版的 Android 平台上，此功能為合規性設定。 Intune 只能在裝置層級檢查是否已啟用此設定。 在具有 Android 工作設定檔的裝置上，此設定可作為組態原則設定。 如此可讓系統管理員啟用裝置的設定。
+  > 在舊版的 Android 平台上，此功能為合規性設定。 Intune 只能在裝置層級檢查是否已啟用此設定。 在具有 Android 工作設定檔的裝置上，此設定可作為設定原則設定。 如此可讓系統管理員啟用裝置的設定。
 
   如果您的企業使用 Android 工作設定檔，則您可以在已註冊的裝置上啟用 [對應用程式進行威脅掃描]。 建立裝置設定檔，並要求系統安全性設定。 如需詳細資訊，請參閱 [Intune 中的 Android 工作設定檔裝置限制設定](device-restrictions-android-for-work.md)。
 

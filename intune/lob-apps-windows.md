@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347893"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828171"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "43347893"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
-4. 在 [用戶端應用程式] 工作負載中，選取 [管理] >  [應用程式]。
+4. 在 [用戶端應用程式] 工作負載中，選取 [管理] > [應用程式]。
 5. 從應用程式清單上方，選取 [新增]。
 6. 在 [新增應用程式] 窗格中，選取 [企業營運應用程式]。
 
@@ -41,7 +41,11 @@ ms.locfileid: "43347893"
 
 1. 在 [新增應用程式] 窗格中，選取 [應用程式套件檔案]。
 2. 在 [應用程式套件檔案] 窗格中，選取 [瀏覽] 按鈕。 然後選取副檔名為 **.msi**、**.appx** 或 **.appxbundle** 的 Windows 安裝檔案。
-3. 完成後，按一下 [確定]。
+
+    > [!NOTE]
+    > Windows 應用程式的副檔名包含 **.msi**、**.appx**、**.appxbundle**、**.msix**、 和 **.msixbundle**。  
+
+1. 完成後，按一下 [確定]。
 
 
 ## <a name="step-3-configure-app-information"></a>步驟 3：設定應用程式資訊
