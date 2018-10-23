@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347689"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425082"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
@@ -30,16 +30,16 @@ ms.locfileid: "43347689"
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日當週  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司入口網站的新使用者體驗更新 <!--2000968 -->  
-我們已依據客戶的意見反應，新增功能至公司入口網站。 您將能於裝置上體驗現有功能和可用性等方面的重大改善。 網站的各個區域 (例如裝置詳細資料、意見反應和支援，以及裝置概觀) 已獲得全新的現代化回應式設計。 已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。   
+我們已依據客戶的意見反應，新增功能至公司入口網站。 您將能於裝置上體驗現有功能和可用性等方面的重大改善。 網站的各個區域 (例如裝置詳細資料、意見反應和支援，以及裝置概觀) 已獲得全新的現代化回應式設計。 已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。   
 
 您會看到的更新包括：  
 
 - 簡化所有裝置平台中的工作流程
 - 改善裝置識別和註冊流程
 - 更有用的錯誤訊息
-- 更容易使用的語言，較少的技術專業術語
-- 可以共用應用程式的直接連結
-- 改善大型應用程式目錄的效能
+- 讓語言更容易使用，讓技術專業術語更少
+- 能夠共用應用程式的直接連結
+- 已改進大型應用程式目錄的效能
 - 增加所有使用者的協助工具  
 
 |已更新|上一頁|

@@ -15,19 +15,16 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 516e2f935225b7142c75b01967977fe97297c8e2
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 0b4af0a638d86d32b244c3a34f8039e466394736
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232168"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424929"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
-|適用對象：Azure 入口網站的 Intune |
-|--|
-|您需要傳統入口網站的 Intune 相關文件嗎？ [請移至這裡](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
+適用對象：Azure 入口網站的 Intune
 
 如果您的組織使用 [Jamf Pro](https://www.jamf.com) 來管理使用者的 Mac，您可以使用 Microsoft Intune 合規性原則搭配 Azure Active Directory 條件式存取，來確保您組織中的裝置能符合規範。
 

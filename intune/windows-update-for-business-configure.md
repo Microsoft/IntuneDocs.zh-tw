@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255229"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425150"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "40255229"
   - Windows 測試人員 - 慢
   - 發行 Windows 測試人員 
       
-  如需有關可用維護通道的詳細資料，請參閱 [Windows 即服務概觀](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)。
+  如需有關可用維護通道的詳細資料，請參閱 [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)。
 - **延遲設定**︰設定更新延遲設定，以延遲裝置群組的更新安裝。 請使用這些設定來分階段進行更新首度發行，以便全程檢閱進度。
 - **暫停**︰如果您在更新首度發行期間發現問題，延後更新的安裝。
 - **維護期間**︰設定可以安裝更新的時數。
@@ -112,7 +112,7 @@ ms.locfileid: "40255229"
 
 1. 若要指派更新響鈴，在更新響鈴清單中，選取響鈴，在 [<響鈴名稱>] 索引標籤中選擇 [指派]。
 2. 在下一個索引標籤中，選擇 [Select groups to include] (選取要包含的群組)，然後選擇要指派此響鈴的群組。
-3. 完成之後，選擇 [選取] 來完成指派。
+3. 完成之後，選擇 [選取] 來完成這項指派。
 
 ## <a name="update-compliance-reporting"></a>更新合規性報告
 您可以在 Intune 中檢視更新合規性，或使用稱為「更新合規性」的免費解決方案。
