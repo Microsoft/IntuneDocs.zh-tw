@@ -627,41 +627,6 @@ items:
     href: manage-os-versions.md
   - name: 管理軟體更新
     href: windows-update-for-business-configure.md
-  - name: 使用軟體代理程式來管理電腦
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: 比較電腦管理
-      href: pc-management-comparison.md
-    - name: 安裝電腦用戶端
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: 一般電腦管理工作
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: 電腦原則
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: 檢視清查
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: 淘汰電腦
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: 將電腦連結至使用者
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: 遠端協助
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: 保護 Windows 電腦的原則
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: 軟體更新
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Windows 防火牆
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Endpoint Protection
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: 為 Intune 用戶端電腦新增 App
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: 管理授權合約
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: 解決原則衝突
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: 管理 Windows 全像攝影版
     href: windows-holographic-for-business.md
     items:
@@ -704,18 +669,18 @@ items:
           href: android-pulse-secure-per-app-vpn.md
         - name: 允許/封鎖 Samsung Knox Standard 的應用程式
           href: samsung-knox-apps-allow-block.md
+      - name: Android 企業
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android 企業
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: 開發人員指引
   items:
   - name: 新增第三方憑證授權單位的 API
@@ -831,11 +796,46 @@ items:
       href: groups-get-started.md
     - name: 舊版 Intune 電腦用戶端
       href: intune-legacy-pc-client.md
+    - name: 使用軟體代理程式來管理電腦
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: 比較電腦管理
+        href: pc-management-comparison.md
+      - name: 安裝電腦用戶端
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: 一般電腦管理工作
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: 電腦原則
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: 檢視清查
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: 淘汰電腦
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: 將電腦連結至使用者
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: 遠端協助
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: 保護 Windows 電腦的原則
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: 軟體更新
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Windows 防火牆
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Endpoint Protection
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: 為 Intune 用戶端電腦新增 App
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: 管理授權合約
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: 解決原則衝突
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: 字彙
     href: intune-glossary.md
-ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 809323f7e55e5c1fc010528744e4d0c57273f622
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643071"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983222"
