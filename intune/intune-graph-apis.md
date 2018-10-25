@@ -587,7 +587,7 @@ catch {
 
 此外：
 
-- 您可以使用 https://portal.office.com，將 Intune 授權指派給您的使用者帳戶。
+- 您可以使用 https://portal.office.com ，將 Intune 授權指派給您的使用者帳戶。
 
 - 更新應用程式碼以驗證用戶端的 Azure AD 租用戶網域，而不只是您自己的網域。
 
