@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058943"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425031"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -161,9 +161,9 @@ Intune|iOS|Android|說明|
 
     * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
 
-* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](/intune-classic/deploy-use/ios-mam-policy-settings)和 [Android 應用程式保護原則](/intune-classic/deploy-use/android-mam-policy-settings)的描述。
+* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。
 
-* **疑難排解**︰如果您在手動測試應用程式的使用者體驗時遇到任何問題，請參閱[針對 MAM 進行疑難排解](/intune-classic/troubleshoot/troubleshoot-mam)。 本文提供 Intune 受控應用程式中可能會遇到的常見問題、對話方塊和錯誤訊息的協助。 
+* **疑難排解**︰如果您在手動測試應用程式的安裝使用者體驗時遇到任何問題，請參閱[針對應用程式安裝問題進行疑難排解](troubleshoot-app-install.md)。 
 
 ### <a name="badge-your-app-optional"></a>為應用程式加上徽章 (選擇性)
 

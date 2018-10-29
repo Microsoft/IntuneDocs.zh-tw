@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
+ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312827"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410358"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -140,6 +140,9 @@ ms.locfileid: "43312827"
 ![查看不同政策中的所有設定清單](./media/compliance-policy-monitor/idc-10.png)
 
 當您選取特定設定時，您可以查看該設定之每部目標裝置的 [合規性狀態]、[使用者的電子郵件別名]、[裝置型號] 及 [位置]。
+
+> [!NOTE]
+> 已加入 Azure AD 的 Windows 10 裝置可能會將系統帳戶顯示為不符合規範的使用者。 這是預期的行為，而且不會影響整體裝置合規性。 
 
 ## <a name="view-status-of-device-policies"></a>檢視裝置原則狀態
 

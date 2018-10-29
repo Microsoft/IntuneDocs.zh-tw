@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,20 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6be3694a18cd0df09b52b535a0fcd2050bf7a98
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231239"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642968"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>設定 Intune 和 Exchange Online 的 Exchange 服務連接器
-
 本文將為您說明如何將 Microsoft Intune 服務連線到 Exchange Online 或新版 Exchange Online Dedicated 服務。 若要判斷您的 Exchange Online Dedicated 環境為**新版**或**舊版**，請連絡您的帳戶管理員。
 
+您可以使用 [服務對服務連接器]，從單一管理主控台管理 Exchange ActiveSync (EAS) 和 Intune 受控裝置。  啟用 Exchange Online 的條件式存取時不需要連接器。
+
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector 的需求
-**Service to Service Connector** 僅支援 Exchange Online 或新版 Exchange Online Dedicated，其對於內部部署基礎結構沒有任何需求。
+**Service to Service Connector** 僅支援 Exchange Online 或新版 Exchange Online Dedicated，其對於內部部署基礎結構沒有任何需求。 
 
 
 |              需求               |                                                                                                            詳細資訊                                                                                                            |
@@ -68,5 +69,4 @@ Service to Service Connector 會自動設定及同步您的 Exchange Online 或�
 
 您也可以查看上次嘗試同步作業成功的**連線狀態**與時間和日期。
 
-## <a name="next-steps"></a>接下來的步驟
-[監視 Microsoft Intune 中的 Exchange 條件式存取](conditional-access-exchange-monitor.md)
+ 

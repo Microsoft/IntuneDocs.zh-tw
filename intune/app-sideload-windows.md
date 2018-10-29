@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058892"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425218"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
@@ -77,7 +77,7 @@ ms.locfileid: "44058892"
 
     -   WinPhoneCompanyPortal.ps1 - PowerShell 指令碼，您可用來簽署公司入口網站應用程式檔案，因此可將它部署到 Windows Phone 8.1 裝置
 
-    或者，您可以從[商務用 Microsoft 網上商店](http://businessstore.microsoft.com/)下載 Windows Phone 8.1 公司入口網站 (離線授權套件) 或 Windows 10 公司入口網站 (離線授權套件)。 您必須使用離線授權及下載來供離線使用的適當封裝，來取得公司入口網站應用程式。 選項中的 Windows 8 和 Windows Phone 8 平台清單會參考其 8.1 對應項。 如需如何使用 Intune 執行此作業的詳細資訊，請參閱[管理購自商務用 Microsoft 網上商店的應用程式](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)。
+    或者，您可以從[商務用 Microsoft 網上商店](http://businessstore.microsoft.com/)下載 Windows Phone 8.1 公司入口網站 (離線授權套件) 或 Windows 10 公司入口網站 (離線授權套件)。 您必須使用離線授權及下載來供離線使用的適當封裝，來取得公司入口網站應用程式。 選項中的 Windows 8 和 Windows Phone 8 平台清單會參考其 8.1 對應項。 如需如何使用 Intune 執行此作業的詳細資訊，請參閱[管理購自商務用 Microsoft 網上商店的應用程式](windows-store-for-business.md)。
 
 2.  **下載 Windows Phone SDK** 下載 Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)，並將 SDK 安裝到您的電腦。 您需要有這個 SDK，才能產生應用程式註冊權杖。
 
@@ -119,7 +119,7 @@ ms.locfileid: "44058892"
 
     -   `-EnterpriseId` - 企業識別碼。 您必須提供這個引數或 'AetxPath'。 如果未提供這個引數，則會從 AETX 檔案讀取企業識別碼。 例如，1000000001
 
-6.  部署 Windows Phone 8.1 公司入口網站 (SSP.appx) 應用程式。 如需指導方針，請參閱[如何新增 Windows Phone 企業營運 (LOB) 應用程式](lob-apps-windows-phone.md) ([傳統入口網站](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune))。
+6.  部署 Windows Phone 8.1 公司入口網站 (SSP.appx) 應用程式。 如需指導方針，請參閱[如何新增 Windows Phone 企業營運 (LOB) 應用程式](lob-apps-windows-phone.md)。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>如何更新 Symantec 企業程式碼簽署憑證
 

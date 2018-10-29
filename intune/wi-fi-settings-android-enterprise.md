@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft Intune 中設定 Android 裝置的 Wi-Fi 設定 - Azure | Microsoft Docs
+title: 設定 Android 企業和 kioisk 裝置的 Wi-Fi 設定 - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: 建立或新增適用於 Android 的 WiFi 裝置組態設定檔。 請查看不同的設定，包括在 Microsoft Intune 中新增憑證、選擇 EAP 類型，以及選取驗證方法。
+description: 建立或新增適用於 Android 企業和 Android Kiosk 的 WiFi 裝置組態設定檔。 請查看不同的設定，包括在 Microsoft Intune 中新增憑證、選擇 EAP 類型，以及選取驗證方法。 針對 Kiosk 裝置，也請輸入您網路的預先共用金鑰。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424980"
+ms.locfileid: "49431914"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>在 Microsoft Intune 中為執行 Android 的裝置設定新增 Wi-Fi 設定
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於執行 Android 企業和 Android kiosk 之裝置的 Wi-Fi 設定
 
-您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Android 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKS 或 SCEP 憑證等等。
-
-這些 Wi-Fi 設定分為兩種類別：基本設定和企業層級設定。
+您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Android 企業與 Android kiosk 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、使用預先共用金鑰等等。
 
 本文說明了這些設定。
 
@@ -32,7 +30,25 @@ ms.locfileid: "49424980"
 
 [建立裝置設定檔](device-profile-create.md)。
 
-## <a name="basic-profile"></a>基本設定檔
+## <a name="device-owner-only---kiosk"></a>僅限裝置擁有者 - kiosk
+
+如果使用 Android 企業裝置作為 kiosk，請選取此選項。
+
+- **網路名稱**：輸入此 Wi-Fi 連線的名稱。 此值是使用者瀏覽裝置上的可用連線清單時所見到的名稱。
+- **SSID**：[服務組識別元] (service set identifier) 的縮寫。 此設定是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的 [網路名稱]。
+- **自動連線**：選擇 [啟用] 可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用] 可防止裝置自動連線。
+- **隱藏的網路**：選擇 [啟用] 可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用] 可在裝置的可用網路清單中顯示此網路。
+- **Wi-Fi 類型**：選取向 Wi-Fi 網路驗證時要使用的安全性通訊協定。 選項包括：
+
+  - **開放 (無驗證)**：只有在網路不安全時才使用此選項。
+  - **WEP 預先共用金鑰**：在 [預先共用金鑰] 中輸入密碼。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。
+  - **WEP 預先共用金鑰**：在 [預先共用金鑰] 中輸入密碼。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。
+
+按一下 [確定] 以儲存您的變更。
+
+## <a name="work-profile-only"></a>僅限工作設定檔
+
+### <a name="basic-settings"></a>基本設定
 
 - **Wi-Fi 類型**：選擇 [基本]。
 - **SSID**：[服務組識別元] (service set identifier) 的縮寫。 此設定是裝置要連線之無線網路的實際名稱。
@@ -103,6 +119,5 @@ ms.locfileid: "49424980"
 
 ## <a name="more-resources"></a>其他資源
 
+- 請參閱[W執行 Android 之裝置的 Wi-Fi 設定](wi-fi-settings-android.md)，以了解可供 Android 裝置使用的設定。
 - [Wi-Fi 設定概觀](wi-fi-settings-configure.md)，包括其他平台。
-
-- 使用 Android 企業或 Android Kiosk 裝置嗎？ 如果是，請參閱[適用於執行 Android 企業和 Android kiosk 之裝置的 Wi-Fi 設定](wi-fi-settings-android-enterprise.md)。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a86b53e34cc4fa24ec683657a646f8545396166e
-ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
+ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910831"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391598"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -103,92 +103,91 @@ ms.locfileid: "41910831"
     > 若為 iOS 憑證範本，請移至 [延伸模組] 索引標籤、更新 [金鑰使用方法]，並確認未選取 [簽章是原件證明]。
 
 10. 在 [安全性] 中，新增您安裝 Microsoft Intune 憑證連接器之伺服器的電腦帳戶。 允許此帳戶的 [讀取] 和 [註冊] 權限。
-11. 依序選取 [套用]和 [確定]，儲存憑證範本。
-12. 關閉 [憑證範本主控台] 。
-13. 從 [憑證授權單位] 主控台，以滑鼠右鍵按一下 [憑證範本]，[新增]，[要發出的憑證範本]。 選擇您在前述步驟中建立的範本，然後選取 [確定]。
-14. 若要讓伺服器代表已在 Intune 註冊的裝置及使用者來管理憑證，請使用下列步驟：
+11. 選取 [套用] > [確定]，儲存憑證範本。 關閉 [憑證範本主控台] 。
+12. 在 [憑證授權單位] 主控台中，以滑鼠右鍵按一下 [憑證範本] > [新增] > [要發出的憑證範本]。 選擇您在前述步驟中建立的範本。 選取 [確定]。
+13. 若要讓伺服器代表已在 Intune 註冊的裝置及使用者來管理憑證，請使用下列步驟：
 
     1. 以滑鼠右鍵按一下憑證授權單位，選擇 [內容]。
     2. 在 [安全性] 索引標籤上，新增您執行連接器 (**Microsoft Intune 憑證連接器**或**適用於 Microsoft Intune 的 PFX 憑證連接器**) 之伺服器的電腦帳戶。 將 [發行及管理憑證] 和 [要求憑證] 的「允許」權限授與該電腦帳戶。
 
-15. 登出企業 CA。
+14. 登出企業 CA。
 
 ## <a name="download-install-and-configure-the-certificate-connectors"></a>下載、安裝和設定憑證連接器
 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connec設為 [https]r
 
-![ConnectorDownload][ConnectorDownload]
+> [!IMPORTANT] 
+> Microsoft Intune Certificate Connector **必須**安裝在個別的 Windows 伺服器中。 它不能安裝在發行的授權憑證單位 (CA) 上。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] [憑證授權單位]。
-4. 選取 [新增]，然後下載 Microsoft Intune 憑證連接器。 將下載項目儲存到要安裝下載項目的伺服器所能存取的位置。
-5. 下載完成後，請登入伺服器。 然後：
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [憑證授權單位] > [新增]。
+3. 下載並儲存連接器檔案。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
+
+    ![ConnectorDownload][ConnectorDownload]
+
+4. 下載完成後，請登入伺服器。 然後：
 
     1. 確定已安裝 .NET 4.5 Framework 或更高版本，這是 NDES 憑證連接器的必要項目。 Windows Server 2012 R2 及更新版本會自動隨附 .NET 4.5 Framework。
     2. 執行安裝程式 (NDESConnectorSetup.exe)，並接受預設位置。 它會將連接器安裝到 `\Program Files\Microsoft Intune\NDESConnectorUI`。 在 [安裝程式選項] 中，選取 [PFX 發佈]。 繼續並完成安裝。
     3. 連接器服務預設會以本機系統帳戶執行。 如果需要有 Proxy 才能存取網際網路，請確認本機服務帳戶可以存取伺服器上的 Proxy 設定。
 
-6. [NDES 連接器] 會開啟 [註冊] 索引標籤。若要連線到 Intune，請**登入**並輸入具有全域系統管理權限的帳戶。
-7. 在 [進階] 索引標籤上，建議您保持選取 [使用此電腦的 SYSTEM 帳戶 (預設)]。
-8. 按一下 [套用]，然後按一下 [關閉]。
-9. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
+5. [NDES 連接器] 會開啟 [註冊] 索引標籤。若要連線到 Intune，請**登入**並輸入具有全域系統管理權限的帳戶。
+6. 在 [進階] 索引標籤上，建議保持選取 [使用此電腦的 SYSTEM 帳戶 (預設)]。
+7. [套用] > [關閉]
+8. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
 
 > [!NOTE]
 > Microsoft Intune 憑證連接器隨附 TLS 1.2 支援。 因此，如果安裝 Microsoft Intune 憑證連接器的伺服器支援 TLS 1.2，則會使用 TLS 1.2。 如果伺服器不支援 TLS 1.2，則會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>適用於 Microsoft Intune 的 PFX 憑證連接器
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] [憑證授權單位]。
-4. 選取 [新增]，然後下載適用於 Microsoft Intune 的 PFX 憑證連接器。 將下載項目儲存到要安裝下載項目的伺服器所能存取的位置。
-5. 下載完成後，請登入伺服器。 然後：
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [憑證授權單位] > [新增]
+3. 下載並儲存適用於 Microsoft Intune 的 PFX 憑證連接器。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
+4. 下載完成後，請登入伺服器。 然後：
 
     1. 確定已安裝 .NET 4.6 Framework 或更高版本，這是適用於 Microsoft Intune 之 PFX 憑證連接器的必要項目。 如果未安裝 .NET 4.6 Framework，安裝程式就會自動安裝它。
     2. 執行安裝程式 (PfxCertificateConnectorBootstrapper.exe)，並接受預設位置。 它會將連接器安裝到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
     3. 連接器服務會以本機系統帳戶執行。 如果網際網路存取需要 Proxy，則請確認本機服務帳戶可以存取伺服器上的 Proxy 設定。
 
-6. 適用於 Microsoft Intune 的 PFX 憑證連接器隨即會在安裝之後開啟 [註冊] 索引標籤。 若要啟用 Intune 的連線，請 [登入]，並輸入具有 Azure 全域管理員或 Intune 系統管理員權限的帳戶。
-7. 關閉視窗。
-8. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
+5. 適用於 Microsoft Intune 的 PFX 憑證連接器隨即會在安裝之後開啟 [註冊] 索引標籤。 若要啟用 Intune 的連線，請 [登入]，並輸入具有 Azure 全域管理員或 Intune 系統管理員權限的帳戶。
+6. 關閉視窗。
+7. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
 
 ## <a name="create-a-trusted-certificate-profile"></a>建立受信任的憑證設定檔
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
+1. 在 [Azure 入口網站](https://portal.azure.com)，移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
 
    ![NavigateIntune][NavigateIntune]
 
-3. 輸入下列內容：
+2. 輸入下列內容：
 
     - 設定檔的 [名稱]
     - 可選擇性地設定說明
     - 要部署設定檔的目標 [平台]
     - 將 [設定檔類型] 設為 [信任的憑證]
 
-4. 移至 [設定]，並輸入先前匯出的根 CA 憑證 .cer 檔案。
+3. 移至 [設定]，並輸入先前匯出的根 CA 憑證 .cer 檔案。
 
    > [!NOTE]
    > 視您在**步驟 3** 中選擇的平台而定，您可能會有選擇憑證 [目的地存放區] 的選項。
 
    ![ProfileSettings][ProfileSettings]
 
-5. 選取 [確定]，然後選取 [建立] 以儲存您的設定檔。
-6. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
+4. 選取 [確定] > [建立] 儲存您的設定檔。
+5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
 
 ## <a name="create-a-pkcs-certificate-profile"></a>建立 PKCS 憑證設定檔
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
-3. 輸入下列內容：
+1. 在 [Azure 入口網站](https://portal.azure.com)，移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
+2. 輸入下列內容：
 
     - 設定檔的 [名稱]
     - 可選擇性地設定說明
     - 要部署設定檔的目標 [平台]
     - 將 [設定檔類型] 設為 [PKCS 憑證]
 
-4. 移至 [設定] 索引標籤，然後輸入下列內容：
+3. 移至 [設定] 索引標籤，然後輸入下列內容：
 
     - **更新閾值 (%)**：建議為 20%。
     - **憑證有效期間**：如果您沒有變更憑證範本，此選項可設定為一年。
@@ -199,8 +198,8 @@ ms.locfileid: "41910831"
     - **主體名稱格式**：除非另有需要，否則請將此選項設為 [一般名稱]。
     - **主體別名**：除非另有需要，否則請將此選項設為 [使用者主體名稱 (UPN)]。
 
-5. 選取 [確定]，然後選取 [建立] 以儲存您的設定檔。
-6. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
+4. 選取 [確定] > [建立] 儲存您的設定檔。
+5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>建立 PKCS 匯入憑證設定檔
 
@@ -210,23 +209,22 @@ ms.locfileid: "41910831"
 
 將憑證匯入至 Intune 之後，請建立 **PKCS 匯入憑證**設定檔，並將它指派給 Azure Active Directory 群組。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
-3. 輸入下列內容：
+1. 在 [Azure 入口網站](https://portal.azure.com)，移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
+2. 輸入下列內容：
 
     - 設定檔的 [名稱]
     - 可選擇性地設定說明
     - 要部署設定檔的目標 [平台]
     - 將 [設定檔類型] 設定為 [PKCS 匯入憑證]
 
-4. 移至 [設定] 索引標籤，然後輸入下列內容：
+3. 移至 [設定] 索引標籤，然後輸入下列內容：
 
     - **使用目的**：針對此設定檔匯入之憑證的使用目的。 系統管理員可能已匯入使用目的不同 (例如驗證、S/MIME 簽署或 S/MIME 加密) 的憑證。 憑證設定檔中選取的使用目的符合含有正確匯入憑證的憑證設定檔。
     - **憑證有效期間**：如果您沒有變更憑證範本，此選項可設定為一年。
     - **金鑰儲存提供者 (KSP)**：針對 Windows，選取要在裝置上儲存金鑰的位置。
 
-5. 選取 [確定]，然後選取 [建立] 以儲存您的設定檔。
-6. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
+4. 選取 [確定] > [建立] 儲存您的設定檔。
+5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
 
 ## <a name="next-steps"></a>接下來的步驟
 [使用 SCEP 憑證](certificates-scep-configure.md)，或[從 Symantec PKI Manager Web 服務發行 PKCS 憑證](certificates-symantec-configure.md)。

@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231435"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424878"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-**若您不是在 Azure 入口網站中**，本主題會說明在 Intune 傳統入口網站中[如何建立應用程式保護原則](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
-
 
 在 [Azure 入口網站](https://portal.azure.com)的 Intune 應用程式保護窗格中，監視已套用至使用者的行動應用程式管理 (MAM) 原則的合規性狀態。 找到受 MAM 原則影響的使用者相關資訊、其合規性狀態，以及您的使用者可能發生的任何問題。
 
@@ -37,6 +34,9 @@ ms.locfileid: "48231435"
 -   詳細檢視
 
 -   報告檢視
+
+> [!NOTE]
+> 如需建立應用程式防護原則的相關詳細資訊，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
 
 ## <a name="summary-view"></a>摘要檢視
 
