@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: f807bd479ddbbc4ca6e83072c352bb8bd60cf5a9
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425031"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225415"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -140,7 +140,7 @@ Intune|iOS|Android|說明|
 
 - **CFBundleShortVersionString**  
     指定配套的版本號碼。 此數字可識別應用程式的發行版本。 此數字可供使用者用來參考應用程式。
-  - **CFBundleVersion**  
+- **CFBundleVersion**  
     配套的組建版本，可識別配套的反覆項目。 此數字可識別發行或未發行的配套。 此數字用於偵測應用程式。
 
 #### <a name="android"></a>Android
