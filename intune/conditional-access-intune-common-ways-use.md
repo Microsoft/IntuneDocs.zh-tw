@@ -3,10 +3,10 @@ title: Microsoft Intune 的條件式存取
 titlesuffix: ''
 description: 了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: db63d79a81de03a459a910a23fb9f999f33f0251
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253602"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231644"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -45,6 +45,13 @@ Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合
 -   深入了解 [Intune 裝置相容性](device-compliance.md)。
 
 -   深入了解[透過 Intune 使用條件式存取來保護電子郵件、Office 365 和其他服務](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+
+> [!NOTE]
+> 在 Android 裝置上，當您針對 Sharepoint Online 啟用以裝置為準的存取時，使用者必須啟用註冊裝置上的 [啟用瀏覽器存取] 選項，如下所示：
+> 1. 啟動公司入口網站應用程式。
+> 2. 透過三個點 (...) 或硬體功能表按鈕，移至 [設定] 頁面。
+> 3. 按下 **[啟用瀏覽器存取]** 按鈕。 
+> 4. 在 Chrome 瀏覽器中，登出 Office 365 並重新啟動 Chrome。
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange 內部部署的條件式存取
 

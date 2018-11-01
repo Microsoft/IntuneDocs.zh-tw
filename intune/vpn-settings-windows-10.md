@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312845"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827848"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 設定
 
@@ -40,10 +40,10 @@ ms.locfileid: "43312845"
   - **描述**：為伺服器輸入描述性名稱，例如 **Contoso VPN 伺服器**
   - **IP 位址或 FQDN**：輸入裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱，例如 **192.168.1.1** 或 **vpn.contoso.com**
   - **預設伺服器**：啟用此伺服器作為裝置所要連線的預設伺服器。 只設定一部伺服器為預設。
-  - **匯入**：瀏覽至內含伺服器清單、以逗點分隔 (格式為：描述、IP 位址或 FQDN、預設伺服器) 的檔案。 選擇 [確定]，以將這些伺服器匯入**伺服器**清單。
+  - **匯入**：瀏覽至內含伺服器清單並以逗點分隔 (格式為：描述, IP 位址或 FQDN, 預設伺服器) 的檔案。 選擇 [確定]，以將這些伺服器匯入**伺服器**清單。
   - **匯出**：將伺服器清單匯出成逗點分隔值 (csv) 檔案
 
-- **將 IP 位址註冊到內部 DNS**：選取 [啟用] 將 Windows 10 VPN 設定檔設定為動態註冊 IP 位址 (指派給具有內部 DNS 的 VPN 介面)，或選取 [停用] 不要動態註冊 IP 位址。
+- **將 IP 位址註冊到內部 DNS**：選取 [啟用] 將 Windows 10 VPN 設定檔設定為動態註冊 IP 位址 (指派給具有內部 DNS 的 VPN 介面)。 選取 [停用]，不要動態註冊 IP 位址。
 
 - **連線類型**：從下列廠商清單中選取 VPN 連線類型︰
 
@@ -59,12 +59,12 @@ ms.locfileid: "43312845"
   - **PPTP**
 
   當您選擇 VPN 連線類型時，可能也會要求您進行下列設定：  
-    - **Always On**：啟用以在下列狀況發生時自動連線到 VPN 連線： 
+    - **Always On**：**啟用**，以在發生下列事件時自動連線至 VPN 連線： 
       - 使用者登入其裝置
       - 裝置上的網路發生變更
       - 裝置上的螢幕在關閉後恢復開啟 
 
-    - **驗證方法**：選取您要讓 VPN 伺服器驗證使用者的方法。 使用 [憑證] 可提供增強的功能，例如零觸控體驗、隨選 VPN，和個別應用程式的 VPN。
+    - **驗證方法**：選取您要讓 VPN 伺服器驗證使用者的方法。 使用 [憑證] 可提供增強的功能，例如零觸控體驗、隨選 VPN 和個別應用程式 VPN。
     - **在每次登入時記住認證**：選擇此選項以快取驗證認證。
     - **自訂 XML**：輸入可設定 VPN 連線的任何自訂 XML 命令。
     - **EAP Xml**：輸入可設定 VPN 連線的任何 EAP XML 命令
@@ -114,7 +114,7 @@ ms.locfileid: "43312845"
 
 ## <a name="conditional-access"></a>條件式存取
 
-- **此 VPN 連線的條件式存取**：從用戶端啟用裝置合規性流程。 啟用時，VPN 用戶端會嘗試與 Azure Active Directory (AD) 通訊，以取得要用於驗證的憑證。 VPN 應該設定成使用憑證驗證，而且 VPN 伺服器必須信任 Azure AD 所傳回的伺服器。
+- **此 VPN 連線的條件式存取**：從用戶端啟用裝置合規性流程。 啟用時，VPN 用戶端會與 Azure Active Directory (AD) 通訊，以取得要用於驗證的憑證。 VPN 應該設定成使用憑證驗證，而且 VPN 伺服器必須信任 Azure AD 所傳回的伺服器。
 
 - **使用其他憑證的單一登入 (SSO)**：針對裝置合規性，使用與 VPN 驗證憑證不同的憑證來進行 Kerberos 驗證。 輸入具有下列設定的憑證：
 
@@ -124,14 +124,24 @@ ms.locfileid: "43312845"
 
 ## <a name="dns-settings"></a>DNS 設定
 
-**此 VPN 連線的網域和伺服器**：新增要使用之 VPN 的網域和 DNS 伺服器。 您可以選擇連線建立之後，VPN 連線要使用的 DNS 伺服器。 為每部伺服器輸入：
+- **DNS 尾碼搜尋清單**：在 [DNS 尾碼] 中，輸入 DNS 尾碼並按一下 [新增]。 您可以新增多個尾碼。
+
+  使用 DNS 尾碼時，您可以使用其簡短名稱來搜尋網路資源，而不需使用完整網域名稱 (FQDN)。 使用簡短名稱搜尋時，由 DNS 伺服器自動決定尾碼。 例如，`utah.contoso.com` 位在 DNS 尾碼清單中。 您對 `DEV-comp` 執行 ping。 在此案例中，它會解析為 `DEV-comp.utah.contoso.com`。
+
+  DNS 尾碼會以下列順序解析，而且可以變更順序。 例如，`colorado.contoso.com` 和 `utah.contoso.com` 位在 DNS 尾碼清單中，而且兩者都有稱為 `DEV-comp` 的資源。 因為 `colorado.contoso.com` 是清單中的第一個項目，所以解析為 `DEV-comp.colorado.contoso.com`。
+  
+  若要變更順序，請按一下 DNS 尾碼左邊的點，然後將尾碼拖曳至頂端：
+
+  ![選取三個點，然後按一下並拖曳以移動 DNS 尾碼](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **此 VPN 連線的網域和伺服器**：新增要使用之 VPN 的網域和 DNS 伺服器。 您可以選擇連線建立之後，VPN 連線要使用的 DNS 伺服器。 為每部伺服器輸入：
 - **網域**
 - **DNS 伺服器**
 - **Proxy**
 
 ## <a name="proxy-settings"></a>Proxy 設定
 
-- **自動設定指令碼**：使用檔案設定 Proxy 伺服器。 輸入 **Proxy 伺服器 URL**，例如 `http://proxy.contoso.com`，其中包含設定檔。
+- **自動設定指令碼**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如 `http://proxy.contoso.com`)。
 - **位址**：輸入 Proxy 伺服器位址 (例如 IP 位址或 `vpn.contoso.com`)
 - **連接埠號碼**：輸入 Proxy 伺服器使用的 TCP 連接埠號碼
 - **本機位址不使用 Proxy 伺服器**：如果您不想針對本機位址使用 Proxy 伺服器，則選擇 [啟用]。 這項設定適用於您的 VPN 伺服器需要 Proxy 伺服器進行連線時。

@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0b35ed6e32feb29748e023371ed1b2628f2da0d
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075794"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357082"
 ---
 # <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
 
@@ -287,18 +287,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 ### <a name="turn-off-usage-data"></a>關閉使用量資料
 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
-
 -   在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
--   Managed Browser 不會使用使用者在其裝置上針對內建瀏覽器所做的設定。 Managed Browser 無法存取這些設定。
-
--   如果您已在與 Managed Browser 建立關聯的應用程式防護原則中設定 [需要簡單的 PIN 以進行存取] 或 [需要公司認證以進行存取] 選項，而且使用者選取了驗證頁面上的說明連結，他們就可以瀏覽任何的網際網路網站，而不論其是否已加入原則的封鎖清單中。
-
--   Managed Browser 只有在它們直接存取網站時，才能封鎖對網站的存取。 使用中繼服務 (例如翻譯服務) 存取網站時，不封鎖存取。
-
--   若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 **&#42;.microsoft.com**。 一律允許。
-
-### <a name="turn-off-usage-data"></a>關閉使用量資料
-Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
 ## <a name="next-steps"></a>接下來的步驟
 

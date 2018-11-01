@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313712"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602141"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -83,29 +83,31 @@ ms.locfileid: "43313712"
 8. 選擇要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
 9. 選擇 [確定]。
 
-### <a name="android-device-type-restrictions"></a>Android 裝置類型限制
+### <a name="blocking-personal-android-devices"></a>封鎖個人 Android 裝置
 - 若您從註冊封鎖個人擁有的 Android 裝置，則個人擁有的 Android 工作設定檔裝置仍可以註冊。
 - 根據預設，Android 工作設定檔裝置設定與您的 Android 裝置設定相同。 變更 Android 工作設定檔設定後，就不再是那麼回事了。
 - 若您封鎖個人的 Android 工作設定檔註冊，則只有公司的 Android 裝置可以註冊為 Android 工作設定檔。
 
-### <a name="windows-device-type-restrictions"></a>Windows 裝置類型限制
-將 Windows 平台裝置類型限制設定為 [封鎖] 之後，Intune 會檢查以確定每個新的 Windows 註冊要求都已獲授權為公司註冊。 將會封鎖未經授權的註冊。
+### <a name="blocking-personal-windows-devices"></a>封鎖個人 Windows 裝置
+如果您從註冊封鎖個人擁有的 Windows 裝置，Intune 會檢查以確定每個新的 Windows 註冊要求都已獲授權為公司註冊。 將會封鎖未經授權的註冊。
 
 下列方法限定成授權為 Windows 公司註冊：
  - 註冊使用者會使用[裝置註冊管理員帳戶]( device-enrollment-manager-enroll.md)。
 - 裝置透過 [Windows AutoPilot](enrollment-autopilot.md) 註冊。
+- 裝置已透過 Windows Autopilot 註冊，但不是 Windows 設定中的 [僅限 MDM 註冊] 選項。
 - 裝置的 IMEI 編號列在 [裝置註冊] > [[公司裝置識別碼](corporate-identifiers-add.md)] (不支援 Windows Phone 8.1)。
 - 裝置透過[大量佈建套件](windows-bulk-enroll.md)註冊。
 - 裝置透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)註冊。
  
 Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
- - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
-- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)。
+ - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*。
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*。
  
 也會封鎖下列個人註冊方法：
-- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)。
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*。
 - [僅限 MDM 註冊]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)選項，來自 Windows 設定。
 
+\* 如果透過 Autopilot 註冊，這些裝置將不會遭到封鎖。
 
 ## <a name="set-device-limit-restrictions"></a>設定裝置限制
 

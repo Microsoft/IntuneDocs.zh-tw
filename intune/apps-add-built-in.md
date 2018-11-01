@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058740"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562709"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>將內建應用程式新增至 Microsoft Intune
 
@@ -48,7 +48,7 @@ ms.locfileid: "44058740"
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
 您可修改內建應用程式的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
-1. 在 [行動應用程式 - 應用程式] 窗格中，選取您想要修改的內建應用程式。  
+1. 在 [用戶端應用程式 - 應用程式] 窗格中，選取您想要修改的內建應用程式。  
     即會顯示內建應用程式的窗格。
 2. 在 [管理] 底下，選取 [屬性] 選項。
 3. 若要修改內建應用程式資訊，請選取 [設定] 選項。

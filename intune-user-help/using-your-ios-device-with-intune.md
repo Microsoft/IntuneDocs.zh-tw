@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031578"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864553"
 ---
-# <a name="using-your-ios-device-with-intune"></a>使用具有 Intune 的 iOS 裝置
-
-您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+# <a name="using-your-ios-device-with-intune-company-portal"></a>搭配使用 iOS 裝置與 Intune 公司入口網站
+本文列出 iOS 版公司入口網站特有的工作和資訊。 請利用它來協助您針對 iOS 裝置進行疑難排解和管理。 按一下任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 iOS 9.0 和更新版本。
+iOS 版公司入口網站目前支援 iOS 10.0 和更新版本。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 

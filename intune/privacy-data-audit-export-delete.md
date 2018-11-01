@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313593"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028608"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中稽核、匯出或刪除個人資料
 
@@ -56,16 +56,16 @@ Intune 管理員可以使用稽核記錄來追蹤與個人資料相關的活動�
 
 ### <a name="delete-a-user-from-intune"></a>從 Intune 中刪除使用者
 
-若要從 Intune 中刪除終端使用者的個人資料，管理員必須[從 Azure Active Directory (AAD) 中刪除使用者](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)。 從 AAD 中刪除 (實刪除) 使用者時，Intune 會從 AAD 收到刪除訊號，然後自動開始從 Intune 服務中清除該使用者的所有個人資料。 使用者的資訊會在移除動作的 30 天內，從 Intune 服務中刪除。
+若要從 Intune 中刪除終端使用者的個人資料，管理員必須[從 Azure Active Directory (AAD) 中刪除使用者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)。 從 AAD 中刪除 (實刪除) 使用者時，Intune 會從 AAD 收到刪除訊號，然後自動開始從 Intune 服務中清除該使用者的所有個人資料。 使用者的資訊會在移除動作的 30 天內，從 Intune 服務中刪除。
 
 ### <a name="reset-device-to-factory-settings"></a>將裝置重設為原廠設定
 重設為原廠設定會將所有的公司和個人資料與設定還原為原廠設定。 這有助於提供裝置給下一個員工。 使用者檔案、使用者安裝的應用程式和非預設設定都會遭到移除，而且此資料會在移除動作的 30 天內，從 Intune 服務中刪除。
 
 ### <a name="user-self-removal-from-intune-management"></a>使用者自行從 Intune 管理中移除
-使用者可在沒有管理員協助的情況下，從 Intune 管理中移除其 [Android、Apple 或 Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) 個人裝置。   
+使用者可在沒有管理員協助的情況下，從 Intune 管理中移除其 [Android、Apple 或 Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) 個人裝置。   
 
 ### <a name="retire"></a>淘汰
-[淘汰] 動作會移除 Intune 佈建的資料 (例如公司應用程式)、Intune 正在管理的應用程式相關資料、原則設定，以及透過 Intune 佈建的電子郵件設定檔。 此動作會將使用者的個人資料保留在裝置上。
+**淘汰**動作會移除 Intune 佈建的資料 (例如公司應用程式)、Intune 正在管理的應用程式相關資料、原則設定，以及透過 Intune 佈建的電子郵件設定檔。 此動作會將使用者的個人資料保留在裝置上。
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>從 Microsoft Intune 刪除租用戶
 

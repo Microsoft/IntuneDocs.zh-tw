@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329378"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602175"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中 Android 裝置的 kiosk 設定
 
@@ -25,7 +25,7 @@ ms.locfileid: "43329378"
 
 ## <a name="restrict-an-android-kiosk-device-to-a-single-app"></a>將 Android kiosk 裝置限制為單一應用程式
 
-若 kiosk 裝置的限制設定檔設定為 **kiosk 模式** = **單一應用程式 kiosk**，使用者只能存取單一應用程式。 啟動此模式中設定的裝置時，就會啟動特定的應用程式。 也會限制使用者無法開啟新的應用程式或變更執行中的應用程式。
+若 kiosk 裝置的限制設定檔設定為 **kiosk 模式** = **單一應用程式 kiosk**，使用者只能存取單一應用程式。 啟動此模式中設定的裝置時，就會啟動特定的應用程式。 也會限制使用者無法開啟新應用程式或變更執行中應用程式。
 
 1. 確定您要用於 kiosk 裝置的應用程式已[部署到裝置](apps-deploy.md)，且您已將應用程式指派給您為 kiosk 裝置所建立的裝置群組。
 2. 前往 [Intune 入口網站](https://portal.azure.com)，然後選擇 [裝置設定] > [設定檔] > [建立設定檔]。
@@ -51,7 +51,7 @@ ms.locfileid: "43329378"
 2. [新增和指派可用於 kiosk 模式的應用程式](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (選擇性) [新增可用於 kiosk 模式的 Web 連結](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>匯入和部署受控主畫面應用程式
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>匯入和部署受控主畫面應用程式
 
 1. 瀏覽至 [Google Play 上的受控主畫面頁面](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)，並使用您用於其他受控 Google Play 應用程式的相同帳戶登入。
 2. 選擇 [核准]。
@@ -59,6 +59,9 @@ ms.locfileid: "43329378"
 4. 選擇 [應用程式] > [管理主畫面] > [指派] > [新增群組]。
 5. 在 [指派類型] 底下選擇 [必要]。
 6. 選擇 [包含的群組] > [選取要包含的群組] > 選擇您為 kiosk 裝置建立的裝置群組 > [選取] > [確定] > [確定] > [儲存]。
+
+> [!NOTE]
+> 當您將受控主畫面應用程式新增至多應用程式 kiosk 設定檔時，會新增一個圖示。 但選取該圖示時卻沒有任何作用。 因此，您不需要將受控主畫面應用程式新增至多應用程式 kiosk 設定檔。
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>新增和指派可用於 kiosk 模式的應用程式
 
@@ -76,7 +79,7 @@ ms.locfileid: "43329378"
 3. 選擇 [設定]，並提供所需的資訊。 您不需要新增標誌影像，因為它會自動從網站的 favicon.ico 擷取。
 4. 選擇 [確定] > [新增]。
 
-請確定您已使用[行動應用程式](apps-add.md)將網頁瀏覽器應用程式部署到 Kiosk 裝置。
+請確定您已將 Web 應用程式部署到 kiosk 裝置。 如需詳細資訊，請參閱[將 Web 應用程式新增至 Microsoft Intune](web-app.md)。
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>建立多應用程式 kiosk 設定檔
 

@@ -3,10 +3,10 @@ title: 將條件式存取移轉至 Azure 入口網站
 titlesuffix: Microsoft Intune
 description: 將您先前在 Intune 傳統入口網站中建立的條件式存取原則重新指派到 Azure 入口網站。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 00c657700cd8c27e4758b9cc94292ba83b2db3cd
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027463"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231707"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -179,6 +179,9 @@ Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，可讓系統
 12. 在 [新增] 條件式存取原則刀鋒視窗中，開啟 [啟用原則] 切換，然後按一下 [建立]。
 
     ![顯示 Intune 與 Azure 入口網站之間的啟用條件式存取原則 UI 比較的影像](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> 如果您設定 [裝置平台]，則儲存原則將會失敗，並出現「不支援原則設定」錯誤。 Exchange ActiveSync 無法識別連接裝置所使用的平台。 因此，建立 Exchange ActiveSync 裝置的原則時，不支援設定特定裝置平台。
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>停用 Intune 傳統入口網站的條件式存取原則
 

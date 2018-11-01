@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
+ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313421"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45533654"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 macOS 裝置
 
@@ -30,7 +30,7 @@ ms.locfileid: "43313421"
 
 若要設定 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
 
-此外，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)一起使用。
+DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)或 [Apple School Manager](apple-school-manager-set-up-ios.md) 搭配使用。
 
 <!--
 **Steps to enable enrollment programs from Apple**

@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329405"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863173"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -69,7 +69,7 @@ ms.locfileid: "43329405"
 - 允許指定 (抹除非指定)
 
 **針對相同 Intune 使用者的相同應用程式，如果 IT 系統管理員在多個原則之間輸入不同的 iOS 型號識別碼清單，會發生什麼事？**<br>
-當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 iOS 型號識別碼的交集。 例如，*原則 A* 指定 "iPhone5,2; iPhone5,3"，而*原則 B* 指定 "iPhone5,3"，則由 Intune 使用者以*原則 A* 和*原則 B* 設為目標的結果原則會是 "iPhone5,3"。 
+當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 iOS 型號識別碼的交集。 例如，*原則 A* 指定 "iPhone5,2;iPhone5,3"，而*原則 B* 指定 "iPhone5,3"，則*原則 A* 和*原則 B* 的目標 Intune 使用者結果原則會是 "iPhone5,3"。 
 
 ### <a name="android-policy-settings"></a>Android 原則設定
 
@@ -83,10 +83,10 @@ ms.locfileid: "43329405"
 -  裝置製造商
 
 若要使用 [裝置製造商] 設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
-範例輸入：*Manufacturer A; Manufacturer B* 
+範例輸入：*Manufacturer A;Manufacturer B* 
 
 >[!NOTE]
-> 以下是使用 Intune 從裝置回報的一些常見製造商，可作為輸入：Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> 以下是來自使用 Intune 裝置回報的一些常見製造商，均可作為輸入：Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 在使用者裝置上，Intune 用戶端將會根據應用程式防護原則在 Intune 中指定的裝置型號字串來進行簡單比對，藉以採取動作。 比對完全取決於裝置所報告的型號。 建議您 (即 IT 系統管理員) 根據各種不同的裝置製造商和型號，並以少數的使用者群組為目標測試此設定，以確保會出現預期的行為。 預設值是**未設定**。<br>
 設定下列其中一個動作： 
@@ -94,7 +94,7 @@ ms.locfileid: "43329405"
 - 允許指定 (抹除非指定)
 
 **針對相同 Intune 使用者的相同應用程式，如果 IT 系統管理員在多個原則之間輸入不同的 Android 製造商清單，會發生什麼事？**<br>
-當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 Android 製造商的交集。 例如，*原則 A* 指定 "Google, Samsung"，而*原則 B* 指定 "Google"，則當*原則 A* 和*原則 B* 以 Intune 使用者為目標時，結合的原則會是 "Google"。 
+當設定值的兩個應用程式保護原則之間發生衝突時，Intune 通常會採用最嚴格的方法。 因此，傳送給目標 Intune 使用者所開啟目標應用程式的結果原則，將是以相同應用程式/使用者組合為目標之*原則 A* 和*原則 B* 中所列出的 Android 製造商的交集。 例如，*原則 A* 指定 "Google;Samsung"，而*原則 B* 指定 "Google"，則*原則 A* 和*原則 B* 的目標 Intune 使用者結果原則會是 "Google"。 
 
 ### <a name="additional-settings-and-actions"></a>額外的設定和動作 
 
@@ -119,5 +119,3 @@ ms.locfileid: "43329405"
 - [如何建立及部署應用程式保護原則](app-protection-policies.md)
 - [iOS 應用程式防護原則設定](app-protection-policy-settings-ios.md)
 - [Microsoft Intune 的 Android 應用程式防護原則設定](app-protection-policy-settings-android.md) 
-
-

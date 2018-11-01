@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347792"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187847"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -36,10 +36,10 @@ ms.locfileid: "43347792"
 
 ### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>匯出 Azure 傳統入口網站合規性政策，在 Intune Azure 入口網站中重新建立這些原則
 
-將會取代在 Azure 傳統入口網站中建立的合規性政策。 您可檢閱及刪除任何現有的合規性政策，但無法加以更新。 若需要將任一合規性政策移轉至目前的 Intune Azure 入口網站，可以用逗號分隔的檔案 (.csv 檔案) 匯出政策。 然後，使用檔案中的詳細資料，在 Intune Azure 入口網站中，重新建立這些政策。
+將會取代在 Azure 傳統入口網站中建立的合規性原則。 您可檢閱及刪除任何現有的合規性政策，但無法加以更新。 若需要將任一合規性政策移轉至目前的 Intune Azure 入口網站，可以用逗號分隔的檔案 (.csv 檔案) 匯出政策。 然後，使用檔案中的詳細資料，在 Intune Azure 入口網站中，重新建立這些政策。
 
 > [!IMPORTANT]
-> Azure 傳統入口網站淘汰之後，您將無法再存取或檢視合規性政策。 因此，請務必在淘汰 Azure 傳統入口網站之前，先匯出您的政策，然後於 Azure 入口網站中重新建立它們。
+> Azure 傳統入口網站淘汰之後，您將無法再存取或檢視合規性政策。 因此，請務必在淘汰 Azure 傳統入口網站之前，先匯出您的政策，然後於 Azure 入口網站中重新建立。
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 舊版電腦用戶端功能只在 Silverlight 主控台提供
 
@@ -106,6 +106,15 @@ Managed Browser 和應用程式 Proxy 整合存在一個已知問題，即某些
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>條件式存取
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Intune 的條件式存取設定不會顯示於新的主控台中
+
+當您的租用戶移轉至 Azure 入口網站之後，您的條件式存取設定會繼續套用；不過，這些設定不會出現在 Azure Intune 入口網站中。 
+
+如果您想要在 Azure 入口網站中檢視及管理這些設定，您需要從傳統入口網站移除舊設定，並在 Azure 入口網站中重新建立這些設定。 
+
+如需詳細資訊，請參閱 [Azure Active Directory 中條件式存取的最佳做法](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
 
 ## <a name="data-protection"></a>資料保護
 

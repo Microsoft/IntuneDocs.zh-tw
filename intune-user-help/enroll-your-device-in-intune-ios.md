@@ -1,11 +1,11 @@
 ---
-title: 設定對您公司資源的存取 | Microsoft Docs
+title: 設定 iOS 裝置對您公司資源的存取 | Microsoft Docs
 description: 描述如何讓 Intune 管理您的 iOS 裝置
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,43 +17,43 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51492c1a8d7e32ab7dbdd5d896e7726c877d62d5
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149578"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827882"
 ---
-# <a name="set-up-access-to-your-company-resources"></a>設定對您公司資源的存取
+# <a name="set-up-ios-device-access-to-your-company-resources"></a>設定 iOS 裝置對公司資源的存取
 
 使用 Intune 公司入口網站應用程式註冊您的 iOS 裝置，以安全地存取您組織的電子郵件、檔案和應用程式。
 
-組織通常需要您讓裝置成為受控，才能存取其中的專屬資料。 裝置成為受控之後，組織可以透過其行動裝置管理提供者將原則和應用程式推送至裝置。 
+您需要先管理裝置，才能從公司或個人裝置存取專有資料。 裝置成為受控之後，組織可以透過其行動裝置管理 (MDM) 提供者將原則和應用程式指派給裝置。 
 
-若要從您的裝置持續存取公司或學校資訊，您必須設定裝置以符合原則設定。 本文說明適用於 iOS 的 Intune 公司入口網站應用程式如何協助您註冊、設定及維護裝置，以符合組織需求。
+若要維護從您的裝置存取公司或學校資訊，您必須設定裝置以符合組織的偏好設定。 本文描述公司入口網站如何協助您註冊、設定和維護裝置，以符合這些需求。
 
 > [!NOTE]
-> 若您嘗試在「郵件」應用程式中存取公司的電子郵件，可能會出現提示要管理您的裝置以確保安全。 請遵循以下指示，在 iOS 裝置上存取電子郵件以及其他公司資源。
+> 如果您已嘗試在郵件應用程式中存取公司電子郵件，並且收到提示讓您管理裝置，則您位於正確位置。 請遵循以下指示，在 iOS 裝置上存取電子郵件以及其他公司資源。
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>公司入口網站應用程式的預期行為
 
 ### <a name="security"></a>安全性
-在初始設定期間，應用程式需要您向組織自我驗證。 應用程式接著會通知您必須進行的任何裝置設定。 例如，組織通常會設定您必須符合的密碼字元數下限或上限需求。    
+在初始設定期間，應用程式需要您向組織自我驗證。 應用程式接著會通知您必須更新的任何裝置設定。 例如，組織通常會設定您必須符合的密碼字元數下限或上限需求。    
 
 ### <a name="protection"></a>保護
-註冊裝置之後，公司入口網站應用程式會繼續確保您的裝置受到保護。 例如，如果您從未受信任的來源安裝應用程式，應用程式會提醒您有時會撤銷公司資料的存取權。 這類應用程式防護原則在組織中很常見，而且通常需要您解除安裝未受信任的應用程式，才能重新取得存取權。
+註冊裝置之後，公司入口網站應用程式會繼續確保您的裝置受到保護。 例如，如果您從未受信任的來源安裝應用程式，應用程式會提醒您有時會撤銷公司資料的存取權。 這類應用程式保護原則在組織中十分常見。 它們通常需要您先解除安裝未受信任的應用程式，才能重新取得存取。
 
 ### <a name="setting-notifications"></a>設定通知
 如果在註冊之後，您的組織強制執行新的安全性需求 (例如多重要素驗證)，公司入口網站應用程式會通知您。 您將有機會調整設定，以便繼續在裝置上工作。  
 
-若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) 
+若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios) 
 
 ## <a name="before-you-start"></a>開始之前
 
-- 開始之後，請務必完成整個程序。 如果您暫停超過幾分鐘，設定可能會結束，並要求您重新開始。  
-    - 如果此程序失敗，請返回公司入口網站應用程式並再試一次。  
+- 開始註冊之後，請務必完成整個程序。 如果您暫停超過幾分鐘，設定可能會結束，並要求您重新開始。  
+- 如果此程序失敗，請返回公司入口網站應用程式並再試一次。  
 - 請檢查您的 Wi-Fi 運作正常，而且您裝置上的 Safari 運作正常。
-- 下載並安裝 [Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。
+- 下載並安裝 [Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。  
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>使用公司入口網站應用程式設定公司資源的存取權
@@ -67,11 +67,11 @@ ms.locfileid: "43149578"
 |![條款及條件頁面。](./media/ios-05-cp-enroll-1802.png)|閱讀並接受所有條款及條件。|
 |![設定公司存取畫面。 管理和設定目前都需要解決。](./media/ios-06-cp-enroll-1802.png)|點選 [開始] 以開始執行讓您的裝置能夠存取公司資源的程序。 如果您無法立刻執行此作業，則可以**延遲**程序，但這表示您將無法取得電子郵件、文件等。|
 |![我的公司能看到什麼畫面。](./media/ios-07-cp-enroll-1802.png)|您可以透過點選底部的連結來**深入了解**您的公司能看到什麼相關資訊。 否則，請點選 [繼續]。|
-|![下一步是什麼畫面。](./media/ios-08-cp-enroll-1802.png)|此畫面會引導您了解安裝程式中的情況。 您將花費時間在 Safari、[設定] 應用程式與 [公司入口網站] 應用程式來完成此程序。 點選 [繼續]。|
+|![下一步是什麼畫面。](./media/ios-08-cp-enroll-1802.png)|此畫面會引導您了解安裝程式中的情況。 您將花費時間在 Safari、[設定] 應用程式和公司入口網站應用程式。 點選 [繼續]。|
 |![點選 [下一步是什麼] 上的 [下一步] 之後正在載入畫面。](./media/ios-09-cp-enroll-1802.png)|等候此畫面載入。|
-|![切換到 Safari 進行註冊。](./media/ios-7-cp-enroll-1711.png)|您會被傳送到 Safari 以取得您的裝置的管理資訊。|
+|![切換到 Safari 進行註冊。](./media/ios-cp-sent-to-safari-1808.png)|您會被傳送到 Safari 以取得您的裝置的管理資訊。|
 |![系統提示要求開啟 [設定] 應用程式。](./media/ios-8-cp-enroll-1711.png)|點選 [允許] 開啟 [設定] 應用程式以下載組態設定檔。 安裝組態設定檔，讓您的公司管理您裝置上的公司資訊。|
-|![設定檔會開啟裝置設定。](./media/ios-9-cp-enroll-1711.png)|點選 [安裝]。|
+|![裝置設定中 [安裝設定檔] 畫面的螢幕擷取畫面。](./media/ios-9-cp-enroll-1711.png)|點選 [安裝]。|
 |![畫面底部的安裝設定檔強制回應對話方塊。](./media/ios-10-cp-enroll-1711.png)|點選 [安裝]。|
 |![設定檔正在安裝載入畫面。](./media/ios-11-cp-enroll-1711.png)|等候此畫面載入。|
 |![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.png)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
@@ -92,4 +92,4 @@ ms.locfileid: "43149578"
 > [!Note]
 > 在完全管理您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。  

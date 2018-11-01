@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141672"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863139"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -57,10 +57,11 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | Android 企業營運 (LOB) 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.apk** 的 Android 安裝檔。  |
 | iOS LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.ipa** 的 iOS 安裝檔。  |
 | Windows Phone LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為 [應用程式類型]，選取 [應用程式套件檔案]，然後輸入副檔名為 **.xap** 的 Windows Phone 安裝檔。  |
-| Windows LOB 應用程式 | LOB 應用程式 | 選取 [企業營運] 應用程式為應用程式類型、選取 [應用程式套件檔案]，然後輸入副檔名為 **.msi**、**.appx**、**.appxbundle**、**.msix** 和 **.msixbundle** 的 Windows 安裝檔案。 |
+| Windows LOB 應用程式 | LOB 應用程式 | 選取**企業營運**應用程式作為應用程式類型、選取 [應用程式套件檔案]，然後輸入副檔名為 **.msi**、**.appx**、**.appxbundle**、**.msix** 和 **.msixbundle** 的 Windows 安裝檔案。 |
 | 內建 iOS 應用程式  | 內建應用程式 | 選取 [內建應用程式] 為 [應用程式類型]，然後在提供的應用程式清單中選取內建應用程式。  |
 | 內建 Android 應用程式  | 內建應用程式 | 選取 [內建應用程式] 為 [應用程式類型]，然後在提供的應用程式清單中選取內建應用程式。  |
 | Web 應用程式  | Web 應用程式  | 選取 [Web 連結] 為 [應用程式類型]，然後輸入指向 Web 應用程式的有效 URL。  |
+| Windows 應用程式 (Win32)  | LOB 應用程式  | 選取 **Windows 應用程式 (Win32)** 應用程式作為 [應用程式類型]，選取 [應用程式套件檔案]，然後選取副檔名為 **.intunewin** 的安裝檔。  |
 
 您可以依序選取 [用戶端應用程式] > [應用程式] > [新增]，在 Microsoft Intune 中新增應用程式。 接著會顯示 [新增應用程式] 窗格，並可讓您選取 [應用程式類型]。 
 
@@ -90,7 +91,7 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 
 首先，您必須根據應用程式所包含資料的敏感度，決定有哪些群組可以存取該應用程式。 您可能需要包含或排除組織內特定的角色類型。 例如，銷售群組可能只需要特定的 LOB 應用程式，而著重在工程、財務、人力資源或法律的使用者可能不需要使用 LOB 應用程式。 此外，您的銷售群組可能需要額外的資料保護，以及從行動裝置存取內部的公司服務的能力。 您必須決定這個群組如何使用應用程式連線到資源。 應用程式所存取的資料是存在於雲端或內部部署之中？ 以及，使用者使用應用程式時，會以何種方式連線到資源？ 
 
-Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。 這種存取通常是使用 [Intune 受控憑證](certificates-configure.md)來提供，並搭配使用位於周邊的標準 VPN 閘道或 Proxy，例如 Azure Active Directory 應用程式 Proxy。 Intune 的 [App Wrapping Tool 與 App SDK](apps-prepare-mobile-application-management.md) 可協助將存取的資料限制在企業營運應用程式內，讓它無法將公司資料傳遞至取用者應用程式或服務。
+Intune 也支援存取需要安全存取內部部署資料的用戶端應用程式，例如企業營運應用程式伺服器。 這種存取通常是使用 [Intune 受控憑證](certificates-configure.md)來提供，並搭配使用位於周邊的標準 VPN 閘道或 Proxy，例如 Azure Active Directory 應用程式 Proxy。 Intune 的 [App Wrapping Tool 與 App SDK](apps-prepare-mobile-application-management.md) 可協助將存取的資料限制在企業營運應用程式內，讓它無法將公司資料傳遞至取用者應用程式或服務。
 
 使用 [Intune 部署規劃、設計和實作指南](planning-guide.md)來協助判斷如何識別與每個使用案例和子使用案例應用程式狀況建立關聯的組織群組。 如需將應用程式指派給群組的詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 
@@ -106,7 +107,7 @@ Intune 支援也能存取需要安全存取內部部署資料的行動應用程�
 如需組織所需應用程式類型的詳細資訊，請參閱[建立設計](planning-guide-design.md#feature-requirements)＜功能需求＞一節中的＜應用程式＞小節。
 
 ### <a name="understanding-app-management-and-protection-policies"></a>了解應用程式管理和保護原則
-Intune 讓您修改部署的應用程式功能，幫助這些應用程式符合公司的規範及安全性原則。 此控制措施能讓您決定保護公司資料的方式。 Intune 受控應用程式使用一組豐富的行動應用程式保護原則，例如：
+Intune 讓您修改部署的應用程式功能，幫助這些應用程式符合公司的規範及安全性原則。 這項控制能讓您決定保護公司資料的方式。 Intune 受控應用程式使用一組豐富的行動應用程式保護原則，例如：
 
 - 限制複製和貼上及另存新檔功能。
 - 設定網頁連結以在 Intune Managed Browser 應用程式內開啟。
@@ -194,3 +195,4 @@ Intune 會根據下列條件，自動重新安裝、更新或移除必要的應�
 - [適用於 Windows 10 的 Office 365 應用程式](apps-add-office365.md)
 - [適用於 macOS 的 Office 365 應用程式](apps-add-office365-macos.md)
 - [內建應用程式](apps-add-built-in.md)
+- [Win32 應用程式](apps-win32-app-management.md) 

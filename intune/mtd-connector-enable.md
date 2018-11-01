@@ -3,8 +3,8 @@ title: 在 Microsoft Intune 中啟用 Mobile Threat Defense 連接器
 titleSuffix: ''
 description: 啟用 Mobile Threat Defense (MTD) 合作夥伴與 Microsoft Intune 之間的連接器。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: e2172c1cd066e99f3634dd856538671207cf1ed0
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569352"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232234"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
@@ -33,11 +33,11 @@ ms.locfileid: "34569352"
 
 1. 移至 [Azure 入口網站](https://portal.azure.com)，並使用您的 Intune 認證登入。 成功登入之後，您會看到 [Azure 儀表板]。
 
-2. 在 [Azure 儀表板] 中，選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
+2. 在 [Azure 儀表板] 上，選擇左功能表中的 [所有服務]，然後在文字方塊篩選中鍵入 **Intune**。
 
-3. 選擇 [Intune]，即會開啟 [Intune 儀表板]。
+3. 選擇 [Intune]；隨即會開啟 [Intune 儀表板]。
 
-4. 在 [Intune 儀表板] 上，選擇 [裝置合規性]，然後選擇 [設定] 區段下的 [Mobile Threat Defense]。
+4. 在 [Intune 儀表板] 上，選擇 [裝置合規性]，然後選擇 [安裝] 區段底下的 [行動裝置威脅防護]。
 
 5. 在 [Mobile Threat Defense] 窗格中，選擇 [新增]。
 
@@ -45,11 +45,11 @@ ms.locfileid: "34569352"
 
     ![Intune Azure 入口網站中的 MTD 設定](./media/enable-mtd-connector-1.png)
 
-7. 根據組織的需求來啟用切換選項。
+7. 根據組織的需求來啟用切換選項。 可見的切換選項會根據 MTD 夥伴而不同。
 
 ## <a name="mtd-toggle-options"></a>MTD 切換選項
 
-您可以根據組織的需求決定需要啟用哪些 MTD 切換選項。 以下是更多詳細資料：
+您可以決定根據組織的需求必須啟用哪些 MTD 切換選項。 以下是更多詳細資料：
 
 - **將 Android 4.1+ 裝置連線至 [MTD 夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 Android 4.1+ 裝置將安全性風險回報給 Intune。
     - **如果收不到任何資料，標記為不相容**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不相容。

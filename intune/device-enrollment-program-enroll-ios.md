@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312639"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799654"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "43312639"
 ## <a name="what-is-supervised-mode"></a>何謂受監督模式？
 Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置可以透過更多控制進行管理。 因此，特別適用於屬公司擁有的裝置。 Intune 支援針對受監督模式設定裝置，以作為 Apple 裝置註冊方案 (DEP) 的一部分。 
 
-iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更新版本中，應一律監督 DEP 設定裝置。 在未來的 iOS 版本中，將會忽略 DEP is_supervised 旗標。
+iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新版本中，應一律監督 DEP 設定裝置。 在未來的 iOS 版本中，將會忽略 DEP is_supervised 旗標。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -61,7 +61,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步驟 1： 下載建立權杖所需的 Intune 公開金鑰憑證。
 
-1. 在 [Azure 入口網站的 Intune ](https://aka.ms/intuneportal)中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > [新增]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊方案權杖] > [新增]。
 
     ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -138,6 +138,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
     ![[使用 VPP 安裝公司入口網站] 的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. 如果您為 [使用 VPP 安裝公司入口網站] 選擇權杖，您可以選擇在設定助理完成之後，立即以單一應用程式模式 (具體來說就是公司入口網站應用程式) 鎖定裝置。 在 [Run Company Portal in Single App Mode until authentication] \(驗證前以單一應用程式模式執行公司入口網站\) 選擇 [是]，設定此選項。 若要使用裝置，使用者必須先使用公司入口網站登入進行驗證。
+    在 iOS 11.3.1 和更新版本中，此功能的執行效果最佳。 使用舊版可能需要很長的時間安裝。
 
 8. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
 
@@ -153,7 +154,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
 
-9. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須將抹除裝置才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
+9. 選擇您是否想要針對使用此設定檔的裝置鎖定註冊。 **鎖定的註冊**會停用可將管理設定檔從 [設定] 功能表中移除的 iOS 設定。 註冊裝置之後，必須抹除裝置才能變更此設定。 這類裝置必須將**受監督**管理模式設為 [是]。 
 
 10. 選擇您是否想要讓使用此設定檔的裝置**與電腦同步處理**。 若選擇 [依據憑證允許 Apple Configurator]，則必須在 [Apple Configurator 憑證] 下選擇憑證。
 
@@ -220,7 +221,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已被取代。 在 iOS 11 與更�
 2. 選擇 [設定預設設定檔]、在下拉式清單中選擇設定檔，然後選擇 [儲存]。 此設定檔將套用到使用該權杖註冊的所有裝置。
 
 ## <a name="distribute-devices"></a>散發裝置
-您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 抹除裝置之前，已啟動的裝置無法套用註冊設定檔。
+您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 在抹除裝置前，已啟動的裝置無法套用註冊設定檔。
 
 請參閱[以裝置註冊計劃在 Intune 註冊 iOS 裝置](/intune-user-help/enroll-your-device-dep-ios)。
 

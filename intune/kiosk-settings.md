@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481116"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562862"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中適用於 Windows 10 (和更新版本) 的 Kiosk 設定
 
@@ -45,7 +45,7 @@ Kiosk 設定檔可用來設定 Windows 10 裝置，以執行一個應用程式�
 #### <a name="single-full-screen-app-kiosks"></a>單一全螢幕應用程式 Kiosk
 輸入下列設定：
 
-- **通用 Windows 平台 (UWP) 應用程式識別碼**：輸入 Kiosk 應用程式的 [應用程式使用者模型識別碼 (AUMID)]。 或選取使用[行動應用程式](apps-add.md)新增的現有受控應用程式。
+- **通用 Windows 平台 (UWP) 應用程式識別碼**：輸入 Kiosk 應用程式的 [應用程式使用者模型識別碼 (AUMID)]。 或選取使用[用戶端應用程式](apps-add.md)新增的現有受控應用程式。
 
     請參閱[尋找已安裝應用程式的應用程式使用者模型識別碼](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
@@ -62,7 +62,7 @@ Kiosk 設定檔可用來設定 Windows 10 裝置，以執行一個應用程式�
 輸入下列設定：
 
 - **新增 Win32 應用程式**：Win32 應用程式是傳統型應用程式。 輸入 [應用程式名稱] 以及 [識別碼]。 在裝置方面，[識別碼] 是可執行檔的完整路徑名稱。
-- **新增受控應用程式**：選取使用 [Intune 中的行動應用程式](apps-add.md)新增的現有受控應用程式。
+- **新增受控應用程式**：選取使用 [Intune 中用戶端應用程式](apps-add.md)新增的現有受控應用程式。
 - **依 AUMID 新增應用程式**：輸入[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP 應用程式)。
 - **工作列**：選擇是要 [啟用] (顯示) 工作列，還是要讓它在 kiosk 上保持 [未設定] (隱藏) 狀態。
 - **[開始] 功能表配置**：輸入描述應用程式在 [開始] 功能表上如何顯示 (包括應用程式的順序) 的 XML 檔案。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)提供一些指引和範例 XML。
@@ -75,7 +75,7 @@ Kiosk 設定檔可用來設定 Windows 10 裝置，以執行一個應用程式�
 
 ## <a name="kiosk-web-browser-settings"></a>Kiosk 網頁瀏覽器設定
 
-這些設定會控制 Kiosk 上的網頁瀏覽器應用程式。 請確定您已使用[行動應用程式](apps-add.md)將網頁瀏覽器應用程式部署到 Kiosk 裝置。
+這些設定會控制 Kiosk 上的網頁瀏覽器應用程式。 請確定您已使用[用戶端應用程式](apps-add.md)將網頁瀏覽器應用程式部署到 kiosk 裝置。
 
 1. 輸入下列設定：
 
@@ -115,7 +115,7 @@ Kiosk 設定檔可用來設定 Windows 10 裝置，以執行一個應用程式�
 
 輸入下列設定：
 
-- **新增受控應用程式**：選取使用 [Intune 中的行動應用程式](apps-add.md)新增的現有受控應用程式。
+- **新增受控應用程式**：選取使用 [Intune 中用戶端應用程式](apps-add.md)新增的現有受控應用程式。
 - **依 AUMID 新增應用程式**：輸入[應用程式的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP 應用程式)。
 - **[開始] 功能表配置**：輸入描述應用程式在 [開始] 功能表上如何顯示 (包括應用程式的順序) 的 XML 檔案。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)提供一些指引，並包含 Windows Holographic for Business 裝置的特定 XML 檔案。
 - **使用者帳戶類型**：新增一或多個能夠使用您新增之應用程式的使用者帳戶。 支援的選項包括： 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 86cd3f37215ec42cc89c865136e6ecd5dc3b9c11
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148427"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863003"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解決 Symantec Endpoint Protection Mobile 找到的威脅
 
@@ -32,9 +32,9 @@ Symantec Endpoint Protection (SEP) Mobile 是 Mobile Threat Defender 服務，�
 * 使用 OneDrive 同步公司檔案
 * 存取公司應用程式
 
-本文說明如何辨識 SEP Mobile 威脅警示及其解決方式。 
+本文描述如何在 SEP Mobile 偵測到安全性或應用程式威脅時，重新取得您公司資源的存取權。  
 
-## <a name="resolve-virus-or-security-threat"></a>解決病毒或安全性威脅  
+## <a name="troubleshoot-a-virus-or-security-threat"></a>針對病毒或安全性威脅進行疑難排解
 
 1. 當您嘗試存取公司電子郵件或網站時，您會收到類似下面螢幕擷取畫面中所示的訊息。 點選**裝置管理入口網站**連結，開啟[公司入口網站](https://portal.manage.microsoft.com/devices)。
 
@@ -43,11 +43,13 @@ Symantec Endpoint Protection (SEP) Mobile 是 Mobile Threat Defender 服務，�
 2. 選取您的裝置。  
 3. 閱讀出現在您裝置下方的警告。 警告會指示您開啟 SEP Mobile，以修正病毒或安全性威脅。    
 
-## <a name="resolve-an-app-threat"></a>解決應用程式威脅  
+    ![顯示 SEP Mobile 警告之公司入口網站裝置頁面的範例螢幕擷取畫面。](./media/CP-lookout-virus-banner-1808.png)
+
+## <a name="troubleshoot-an-app-threat"></a>針對應用程式威脅進行疑難排解
 
 如果您安裝的應用程式經判斷會對您的裝置造成威脅，您會在 SEP Mobile 應用程式中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
 
 若要解決此問題，請從 SEP Mobile 的威脅清單中選取應用程式。 然後遵循畫面上的指示移除並解除安裝應用程式。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。 
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。   
 

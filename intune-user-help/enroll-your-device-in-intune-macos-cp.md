@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147712"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260244"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -80,8 +80,17 @@ ms.locfileid: "43147712"
 
 9. 您在公司入口網站應用程式中看到的第一個畫面，會提示您 [登入]。 請使用您用來登入公司入口網站的相同公司或學校帳戶。
 
-10. 公司入口網站會確認您的帳戶資訊，然後顯示您的 [裝置註冊] 和 [裝置合規性] 狀態。 黃色三角形醒目提示您需要採取以保護學校或公司用 macOS 裝置的動作。 按一下 [開始] 開始註冊。 了解當您註冊裝置時，[您的組織可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+10. 公司入口網站會確認您的帳戶資訊，並顯示您的 [裝置註冊] 和 [裝置合規性] 狀態。 黃色三角形醒目提示您需要採取以保護學校或公司用 macOS 裝置的動作。 按一下 [開始] 開始註冊。 
 
-11. 系統可能會提示您提供電腦的登入資訊。 註冊裝置管理可能需要幾分鐘的時間。 在此期間，您可以在裝置上執行其他事項。 完成公司存取設定之後，您會收到一則訊息，讓您知道已完成。  
+11. 如果出現提示，請鍵入您電腦的登入資訊。  
+
+註冊裝置管理可能需要幾分鐘的時間。 在此期間，您可以在裝置上執行其他事項。 完成公司存取設定之後，您會收到一則訊息，讓您知道已完成。  
+
+## <a name="unverified-profiles"></a>未驗證的設定檔
+當您檢視 macOS 裝置的已安裝行動裝置管理 (MDM) 設定檔時，有些設定檔可能會顯示 [未驗證] 狀態。 只要 [管理設定檔] 顯示 [已驗證] 狀態，您就不需要擔心。  
+
+管理設定檔定義 MDM 通道連線。 只要管理設定檔經過驗證，透過該通道遞送至電腦的任何其他設定檔就會繼承管理設定檔的安全性特性。
+
+此外，因為這些其他設定檔不需要個別驗證，所以可以更快速地產生和遞送至裝置。 
 
 是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。  

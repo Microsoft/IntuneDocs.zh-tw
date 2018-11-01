@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347469"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505762"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -167,11 +167,11 @@ VPN 設定檔包含附有用戶端認證、VPN 連線資訊與個別應用程式
 - 設定檔與應用程式都以相同的群組為目標。
 - 您將個別應用程式 VPN 設定從應用程式指派移除。
 
-使用者要求從公司入口網站重新安裝之前，當下列條件存在時，應用程式與設定檔之間的關聯仍會存在：
+當下列條件成立時，應用程式與設定檔之間的關聯會保存到終端使用者要求從公司入口網站重新安裝為止：
 - 應用程式以可用安裝意圖為目標。
 - 設定檔與應用程式都以相同的群組為目標。
 - 使用者要求從公司入口網站安裝應用程式，這導致裝置上同時安裝應用程式與設定檔。
-- 您將個別應用程式 VPN 設定從應用程式指派移除。
+- 您將個別應用程式 VPN 設定從應用程式指派移除或變更。
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>驗證 iOS 裝置上的連線
 

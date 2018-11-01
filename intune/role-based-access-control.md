@@ -2,8 +2,8 @@
 title: RBAC 搭配 Microsoft Intune
 description: 了解角色型存取控制 (RBAC) 如何讓您控制誰可以執行動作，並在 Microsoft Intune 中進行變更。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253692"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028693"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
 
@@ -42,6 +42,7 @@ RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及�
 
     > [!IMPORTANT]
     > Intune 服務管理員角色不提供管理 Azure AD 條件式存取設定的能力。
+    > Intune 角色成員需要 Intune 授權。
 
     > [!TIP]
     > Intune 也會顯示三個使用 Azure AD RBAC 控制的 Azure AD 延伸模組：**使用者**、**群組**和**條件式存取**。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資料，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。

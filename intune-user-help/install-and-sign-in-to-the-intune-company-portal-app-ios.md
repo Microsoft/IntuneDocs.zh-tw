@@ -1,11 +1,11 @@
 ---
-title: 安裝並登入公司入口網站應用程式 | Microsoft Docs
+title: 安裝並登入 iOS 的公司入口網站應用程式 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146370"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260193"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安裝並登入公司入口網站應用程式
 
-公司入口網站是安裝在您的 iOS 裝置上，以便您存取公司或學校應用程式、電子郵件和網路的應用程式。 您必須先安裝公司入口網站應用程式，然後使用此應用程式在 Microsoft Intune 註冊您的裝置，才能進行存取。 如需詳細資訊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+在您的 iOS 裝置上安裝公司入口網站應用程式，以存取您的公司和學校應用程式、電子郵件和網路。 使用應用程式在 Microsoft Intune 註冊裝置，並保護其對您公司或學校資源的存取。 如需詳細資訊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
 1.  開啟 **App Store**，搜尋 **intune 公司入口網站**。
 

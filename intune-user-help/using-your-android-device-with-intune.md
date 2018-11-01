@@ -1,11 +1,11 @@
 ---
 title: 搭配 Intune 使用 Android 裝置 | Microsoft Docs
-description: 使用者可以在已註冊至 Intune 的 Android 行動裝置上執行之工作的連結清單
+description: 列出 Intune 所註冊 Android 裝置疑難排解和管理的連結
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018663"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168942"
 ---
-# <a name="using-your-android-device-with-intune"></a>透過 Intune 使用 Android 裝置
+# <a name="using-your-android-device-with-intune-company-portal"></a>搭配使用 Android 裝置與 Intune 公司入口網站
 
-您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+本文列出 Android 版公司入口網站特有的工作和資訊。 請利用它來協助您針對 Android 裝置進行疑難排解和管理。 按一下任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。 
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 Android 4.4 和更新版本。 這包括 Samsung Knox 4.4 和更新版本的裝置。
+公司入口網站目前支援 Android 4.4 和更新版本。 此外，也包括 Samsung Knox 4.4 和更新版本裝置的支援。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 

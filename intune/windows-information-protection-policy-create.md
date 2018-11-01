@@ -3,10 +3,10 @@ title: 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 titlesuffix: Microsoft Intune
 description: 使用 Microsoft Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347302"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799620"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -46,19 +46,27 @@ ms.locfileid: "43347302"
 
 ## <a name="prerequisites"></a>必要條件
 
-您必須先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](app-protection-policies-configure-windows-10.md)。
+您必須先設定 MAM 提供者，才能建立 WIP 應用程式保護原則。 深入了解[如何設定搭配 Intune 的 MAM 提供者 (英文)](app-protection-policies-configure-windows-10.md)。  
+
+> [!IMPORTANT]
+> WIP 不支援多重身分識別，一次只能存在一個受管理的身分識別。
 
 此外，您也需要下列授權和更新：
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 授權
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP 不支援多重身分識別，一次只能存在一個受管理的身分識別。
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>新增 WIP 應用程式保護原則
 
 當您在組織中設定 Intune 之後，就可以建立 WIP 特定原則。
+
+> [!TIP]  
+> 如需建立 Intune 的 WIP 原則相關資訊 (包含可用設定和其設定方式)，請參閱 Windows Security 文件庫中的[使用 Microsoft Intune 的 Azure 入口網站建立附帶 MAM 的 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)。 
+
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [所有服務] > [Intune]。
@@ -92,7 +100,7 @@ ms.locfileid: "43347302"
 4. 從 [Intune 應用程式防護] 刀鋒視窗中選擇 [受保護的應用程式]。 [受保護的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
 5. 選取 [新增應用程式]。 [新增應用程式] 資訊會向您顯示應用程式的篩選清單。 刀鋒視窗頂端的清單允許您變更清單篩選條件。
 6. 從清單中，選取 [市集應用程式]。
-7. 輸入 [名稱]、[Pubisher] (發行者)、[產品名稱] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
+7. 輸入 [名稱]、[發行者]、[產品名稱] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
 9. 按一下 [確定]。 [受保護的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
 10. 按一下 **[儲存]**。
 
@@ -105,7 +113,7 @@ ms.locfileid: "43347302"
 4. 從 [Intune 應用程式防護] 刀鋒視窗中選擇 [受保護的應用程式]。 [受保護的應用程式] 刀鋒視窗隨即開啟，顯示此應用程式保護原則清單中已包含的所有應用程式。
 5. 選取 [新增應用程式]。 [新增應用程式] 資訊會向您顯示應用程式的篩選清單。 刀鋒視窗頂端的清單允許您變更清單篩選條件。
 6. 從清單中，選取 [桌面應用程式]。
-7. 輸入 [名稱]、[Pubisher] (發行者)、[產品名稱]、[檔案]、[最小版本]、[最大版本] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
+7. 輸入 [名稱]、[發行者]、[產品名稱]、[檔案]、[最小版本]、[最大版本] 和 [動作] 的值。 請務必將 [動作] 的值設定為 [允許]，以便應用程式可以存取您的公司資料。
 9. 按一下 [確定]。 [受保護的應用程式] 刀鋒視窗隨即更新，顯示所有選取的應用程式。
 10. 按一下 **[儲存]**。
 
@@ -123,7 +131,7 @@ WIP 學習是一種報表，可讓您監視啟用 WIP 的應用程式與 WIP 未
 ### <a name="what-are-the-protection-modes"></a>什麼是保護模式？
 
 #### <a name="block"></a>封鎖
-WIP 會尋找不適當的資料共用做法，並阻止使用者完成動作。 這可能包括與未受公司保護的應用程式共用資料，以及與組織以外的人員或裝置共用公司資料。
+WIP 會尋找不適當的資料共用做法，並阻止使用者完成動作。 已封鎖動作可以包括與未受公司保護的應用程式共用資料，以及與組織以外的人員和裝置共用公司資料。
 
 #### <a name="allow-overrides"></a>允許覆寫
 WIP 會尋找不適當的資料共用，並在使用者執行某些可能不安全的動作時警告使用者。 不過，此模式可讓使用者覆寫原則並共用資料，但是會將動作記錄到稽核記錄中。

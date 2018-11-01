@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 085b6a3a68964a200a5d6c462b3710b9744ac99f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
+ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474610"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453539"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的資料安全性與共用
 
@@ -66,7 +66,7 @@ Intune 也會使用 RBAC 和 JiT 安全性等技術來支援事件，以確保�
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager 資料共用
 
-Microsoft Intune 不會與 System Center Configuration Manager 共用任何資料。 Microsoft Intune 是直接由客戶部署、管理和操作的內部部署產品。 Configuration Manager 收集的診斷和使用方式資料僅用來改善未來版本的安裝體驗、品質及安全性。
+Microsoft Intune 不會與 System Center Configuration Manager 共用任何資料。 System Center Configuration Manager 是客戶直接部署、管理和操作的內部部署產品。 Configuration Manager 收集的診斷和使用方式資料僅用來改善未來版本的安裝體驗、品質及安全性。
 
 若要進一步了解，請參閱 [SCCM 的診斷和使用方式資料](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)。 
 

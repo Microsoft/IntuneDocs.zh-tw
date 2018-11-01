@@ -3,8 +3,8 @@ title: Jamf 裝置的裝置相容性原則
 titlesuffix: Microsoft Intune
 description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482330"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812816"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -73,9 +73,9 @@ ms.locfileid: "34482330"
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>從 Intune 移除受控於 Jamf 的裝置
 
-您無法從 Intune 移除受控於 Jamf 的裝置。 您只能從 Jamf Pro 移除受 Jamf 管理的裝置，裝置接著就會從 Intune 中移除。 
+您可以在 [所有裝置] 檢視中選取 [刪除]，以從 Intune 主控台移除 Jamf 受控裝置。 選取多個裝置，並按一下 [刪除]，即可啟用刪除大量裝置。
 
-在 Jamf Pro 文件中了解如何[移除受控於 Jamf 的裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
+在 Jamf Pro 文件中取得如何[移除 Jamf 受控裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的相關資訊。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 
 ## <a name="next-steps"></a>接下來的步驟
 

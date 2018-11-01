@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223487"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403556"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本主題將協助 IT 系統管理員為其使用者簡化 Windows 註冊。 一旦您[設定 Intune](setup-steps.md)，使用者以其工作或學校帳戶[登入](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)即可註冊 Windows 裝置。  
+本文將協助 IT 管理員為其使用者簡化 Windows 註冊。 一旦您[設定 Intune](setup-steps.md)，使用者以其工作或學校帳戶[登入](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)即可註冊 Windows 裝置。  
 
 身為 Intune 系統管理員，您可以用下列方式來簡化註冊：
 - [啟用自動註冊](#enable-windows-10-automatic-enrollment) (需要 Azure AD Premium)
@@ -45,13 +45,14 @@ ms.locfileid: "34223487"
 
 可以使用自動註冊的組織，也可以使用 Windows 設定設計工具應用程式來設定[大量註冊裝置](windows-bulk-enroll.md)。
 
-**多重使用者的支援**<br>
-Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加入 Azure Active Directory 網域的裝置。 當標準使用者使用他們的 Azure AD 認證登入時，他們會收到指派給他們的使用者名稱的應用程式和原則。 針對安裝應用程式等自助式案例，使用者目前無法使用公司入口網站來進行。
+## <a name="multi-user-support"></a>多重使用者的支援
+
+針對執行 Windows 10 Creators Update 並已加入 Azure Active Directory 網域的裝置，Intune 支援多重管理。 當標準使用者使用其 Azure AD 認證登入時，他們會收到指派給其使用者名稱的應用程式和原則。 針對安裝應用程式等自助式案例，使用者目前無法使用公司入口網站來進行。
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>簡化 Windows 註冊，而不使用 Azure AD Premium
-您可以建立網域名稱伺服器 (DNS) 別名 (CNAME 記錄類型)，自動將註冊要求重新導向至 Intune 伺服器，以簡化使用者的註冊。 如果您不建立 DNS CNAME 資源記錄，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。
+若要簡化註冊，請建立網域名稱伺服器 (DNS) 別名 (CNAME 記錄類型)，將註冊要求重新導向至 Intune 伺服器。 否則，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。
 
 **步驟 1：建立 CNAME** (選用)<br>
 建立公司網域的 CNAME DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
@@ -63,7 +64,13 @@ Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 小時|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小時|
 
-如果您有多個 UPN 尾碼，您需要為每個網域名稱建立一個 CNAME，並將其一一指向至 EnterpriseEnrollment-s.manage.microsoft.com。如果 Contoso 上的使用者使用 name@contoso.com，但也使用 name@us.contoso.com 和 name@eu.constoso.com 作為他們的電子郵件/UPN，Contoso DNS 系統管理員應該建立下列 CNAME：
+如果公司使用多個 UPN 尾碼，您需要為每個網域名稱建立一個 CNAME，並將其一一指向至 EnterpriseEnrollment-s.manage.microsoft.com。 例如，Contoso 上的使用者使用下列格式作為其電子郵件/UPN：
+
+- name@contoso.com
+- name@us.contoso.com
+- name@eu.constoso.com\
+
+Contoso DNS 系統管理員應該建立下列 CNAME：
 
 |類型|主機名稱|指向|TTL|  
 |----------|---------------|---------------|---|
@@ -76,7 +83,8 @@ Intune 的多使用者管理現在支援執行 Windows 10 Creators Update 並加
 DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播完成之前，您無法在 Intune 中驗證 DNS 變更。
 
 **步驟 2：驗證 CNAME** (選用)<br>
-在 Azure 入口網站中，選擇 [更多服務] > [監視 + 管理] > [Intune]。 在 [Intune] 刀鋒視窗中，選擇 [註冊裝置]  >  [Windows 註冊]。 在 [指定已驗證的網域名稱] 方塊中輸入公司網站 URL，然後選擇 [測試自動偵測]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [CNAME 驗證]。
+2. 在 [網域] 方塊中輸入公司網站，然後選擇 [測試]。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告訴使用者如何註冊 Windows 裝置
 告訴使用者如何註冊其 Windows 裝置，以及開始管理之後會發生的情況。

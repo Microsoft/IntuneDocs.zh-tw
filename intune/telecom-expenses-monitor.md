@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347809"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562896"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -129,7 +129,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>將 Datalert 應用程式指派給公司裝置群組
 
-1. 從 [Mobile Apps] 窗格，選取您在前一個步驟中建立的 iOS Datalert 應用程式。
+1. 從 [用戶端應用程式 - 應用程式] 窗格，選取您在前一個步驟中建立的 iOS Datalert 應用程式。
 
 2. 在 [應用程式] 窗格上，選擇 [管理] > [指派]。
 

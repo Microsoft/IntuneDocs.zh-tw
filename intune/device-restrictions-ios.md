@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329813"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329992"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -114,7 +114,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 
 -   **在鎖定裝置時存取控制中心** - 允許使用者在裝置鎖定時存取控制中心應用程式。
 -   **鎖定裝置時通知** - 允許使用者在未解除鎖定裝置的情況下，存取通知檢視。
--   **在鎖定裝置時使用 Passbook** - 允許使用者在鎖定裝置時存取 Passbook 應用程式。
+-   **在鎖定裝置時使用電子錢包通知** - 允許使用者在鎖定裝置時存取電子錢包應用程式。
 -   **在鎖定裝置時使用今日檢視** - 允許使用者在鎖定裝置時可以看到今日檢視。
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store、文件檢視、遊戲

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/4/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,46 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9060c2e573003e480319dba6715cb14a2a13e906
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: ce673ab5206d5024da1cb6822beb523aa155325f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150001"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863020"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>透過 Windows 版公司入口網站應用程式重新命名裝置
-重新命名裝置，以使其更容易從其他裝置辨識。 Windows 版公司入口網站應用程式可讓您重新命名已連線的 Windows、iOS 和 Android 裝置。 
+重新命名裝置，以使其更容易從其他裝置辨識。 Windows 版公司入口網站應用程式可讓您重新命名下列類型的已連線裝置：  
+* Windows 10
+* iOS
+* Android  
 
-若要重新命名裝置：
-1. 開啟公司入口網站應用程式。
-2. 在 [我的裝置] 區段中，選取您想要重新命名的裝置。
-3. 在頁面的右上角，選取 [重新命名] 圖示。 
-4. 輸入新名稱，然後按一下 [重新命名]。 您會立即在應用程式中看到裝置名稱更新。 
+## <a name="rename-device-from-device-details-page"></a>從 [裝置詳細資料] 頁面重新命名裝置  
+完成下列步驟，以從公司入口網站的 [裝置詳細資料] 頁面移除裝置。 
+
+1. 開啟公司入口網站應用程式，並移至 [我的裝置]。  
+
+    ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，其中醒目提示 [首頁] 頁面的 [我的裝置] 區段。](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. 選取您要重新命名的裝置。
+3. 在 [裝置詳細資料] 頁面上，移至右上角並選取**重新命名**鉛筆圖示。  
+
+     ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，其中醒目提示 [裝置詳細資料] 頁面的重新命名鉛筆圖示。](./media/1809_Rename_CPapp_Windows_icon.png) 
+4. 輸入新名稱，然後按一下 [重新命名]。 應用程式中的裝置名稱會立即更新。  
+
+     ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，其中顯示 [裝置詳細資料] 頁面的 [重新命名] 快顯欄位。](./media/1808_RenameApp_Popup.png)  
+
+## <a name="rename-device-from-device-context-menu"></a>從裝置的操作功能表重新命名裝置  
+完成下列步驟，透過[操作功能表](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus)的動作來移除裝置。  
+
+1. 在公司入口網站應用程式的 [首頁]頁面，移至 [我的裝置]。
+
+    ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，其中醒目提示 [首頁] 頁面的 [我的裝置] 區段。](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. 以滑鼠右鍵按一下或按住選取裝置，開啟其操作功能表。  
+
+    ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，首頁。 裝置操作功能表會顯示頁面的 [我的裝置] 區段，並顯示 [重新命名]、[移除] 和 [檢查存取權] 等動作。](./media/1809_DeviceContextMenu_Windows_CP.png)    
+3. 選取 [重新命名]。  
+4. 鍵入新名稱，然後選取 [重新命名]。 應用程式中的裝置名稱會立即更新。  
+
+     ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，首頁。 [重新命名] 快顯欄位會出現在裝置上，使用者可以在其中鍵入新名稱，然後按一下 [重新命名] 或 [取消]。](./media/1808_RenameApp_Popup.png)  
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+

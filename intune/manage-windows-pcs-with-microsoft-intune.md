@@ -1,12 +1,11 @@
 ---
-title: 使用用戶端軟體管理電腦
-titlesuffix: Microsoft Intune
+title: 在 Microsoft Intune 中使用用戶端軟體管理電腦 - Azure | Microsoft Docs
 description: 安裝 Intune 用戶端軟體管理 Windows 電腦。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910655"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978241"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -57,6 +56,9 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|
 |Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
 |移除不相容的用戶端軟體|安裝 Intune 用戶端軟體之前，請從該電腦解除安裝任何 Configuration Manager、Operations Manager 與 Service Manager 用戶端軟體。|
+
+> [!WARNING]
+> Microsoft 宣告 [Windows 7 支援將於 2020 年 1 月 14 日結束](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。 Microsoft 強烈建議您移至 Windows 10，以防止任何服務或支援中斷。 
 
 ## <a name="deploying-the-intune-software-client"></a>部署 Intune 軟體用戶端
 身為 Intune 系統管理員，您可以使用各種方式，讓使用者能夠使用 Intune 軟體用戶端。 如需指引，請參閱[在 Windows 電腦上安裝 Intune 軟體用戶端](install-the-windows-pc-client-with-microsoft-intune.md)。

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313173"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187796"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -63,44 +63,38 @@ Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個
 
 ## <a name="hardware-device-details"></a>硬體裝置詳細資料
 
-### <a name="windows-and-ios-device-details"></a>Windows 和 iOS 裝置詳細資料：
-|詳細資料|說明|  
-|--------------|----------------------|  
-|名稱|裝置的名稱。|
-|管理名稱|裝置名稱只會用於主控台中。 變更此名稱不會變更裝置上的名稱。|
-|UDID|裝置的唯一裝置識別碼。|
-|Intune 裝置識別碼|可唯一識別裝置的 GUID。|
-|序號|由製造商提供的裝置序號。|
-|共用裝置|若為 [是]，則會有多名使用者共用裝置。|
-|通過使用者核准的註冊|若為 [是]，則裝置會有通過使用者核准的註冊，使管理遠能在裝置上管理特定安全性設定。|
-|作業系統|在裝置上使用的作業系統。|
-|作業系統版本|裝置上的作業系統版本。|
-|作業系統語言|為裝置上作業系統設定的語言。|
-|儲存空間總計|裝置上的儲存空間總計 (GB)。|
-|可用儲存空間|裝置上的未使用儲存空間總計 (GB)。|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows、iOS 和 macOS 裝置詳細資料
-|詳細資料|說明|  
-|--------------|----------------------|  
-|IMEI|裝置的國際行動設備識別碼。|
-|MEID|裝置的行動設備識別碼。|
-|製造商|裝置的製造商。|
-|型號|裝置的型號。|
-|電話號碼|指派給裝置的手機號碼。|
-|訂閱電訊廠商|裝置的無線電訊廠商。|
-|行動電話通訊技術|裝置使用的無線電話系統。|
-|Wi-Fi MAC|裝置的媒體存取控制位址。|
-|ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|
-|註冊日期|裝置在 Intune 中註冊的日期與時間。|
-|上次連絡時間|裝置最後連線至 Intune 的日期與時間。|
-|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|
-|已註冊 Azure AD|若為 [是]，表示裝置已向 Azure Directory 註冊。|
-|合規性|裝置的合規性狀態。|
-|EAS 已啟用|若為 [是]，裝置便會與 Exchange 信箱同步處理。|
-|EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|
-|受監督|若為 [是]，表示系統管理員對裝置有加強的控制力。|
-|已加密|若為 [是]，表示會加密儲存在裝置上的資料。|
+|詳細資料|說明|平台| 
+|--------------|----------------------|----|  
+|名稱|裝置的名稱。|Windows、iOS|
+|管理名稱|裝置名稱只會用於主控台中。 變更此名稱不會變更裝置上的名稱。|Windows、iOS|
+|UDID|裝置的唯一裝置識別碼。|Windows、iOS|
+|Intune 裝置識別碼|可唯一識別裝置的 GUID。|Windows、iOS|
+|序號|由製造商提供的裝置序號。|Windows、iOS|
+|共用裝置|若為 [是]，則會有多名使用者共用裝置。|Windows、iOS|
+|通過使用者核准的註冊|若為 [是]，則裝置會有通過使用者核准的註冊，使管理遠能在裝置上管理特定安全性設定。|Windows、iOS|
+|作業系統|在裝置上使用的作業系統。|Windows、iOS|
+|作業系統版本|裝置上的作業系統版本。|Windows、iOS|
+|作業系統語言|為裝置上作業系統設定的語言。|Windows、iOS|
+|儲存空間總計|裝置上的儲存空間總計 (GB)。|Windows、iOS|
+|可用儲存空間|裝置上的未使用儲存空間總計 (GB)。|Windows、iOS|
+|IMEI|裝置的國際行動設備識別碼。|Windows、iOS、Android|
+|MEID|裝置的行動設備識別碼。|Windows、iOS、Android|
+|製造商|裝置的製造商。|Windows、iOS、Android|
+|型號|裝置的型號。|Windows、iOS、Android|
+|電話號碼|指派給裝置的手機號碼。|Windows、iOS、Android|
+|訂閱電訊廠商|裝置的無線電訊廠商。|Windows、iOS、Android|
+|行動電話通訊技術|裝置使用的無線電話系統。|Windows、iOS、Android|
+|Wi-Fi MAC|裝置的媒體存取控制位址。|Windows、iOS、Android|
+|ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS、Android|
+|註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS、Android|
+|上次連絡時間|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
+|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|Windows、iOS、Android|
+|已註冊 Azure AD|若為 [是]，表示裝置已向 Azure Directory 註冊。|Windows、iOS、Android|
+|合規性|裝置的合規性狀態。|Windows、iOS、Android|
+|EAS 已啟用|若為 [是]，裝置便會與 Exchange 信箱同步處理。|Windows、iOS、Android|
+|EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|Windows、iOS、Android|
+|受監督|若為 [是]，表示系統管理員對裝置有加強的控制力。|Windows、iOS、Android|
+|已加密|若為 [是]，表示會加密儲存在裝置上的資料。|Windows、iOS、Android|
 
 
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119098"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune 中的 Android 企業 kiosk 設定
 
@@ -45,9 +45,9 @@ Android kiosk 設定檔支援下列組態設定。 建立設定檔時，這些�
 - **允許從不明來源安裝**：選擇 [允許] 讓使用者從不明來源安裝。
 - **系統更新**：選擇此選項以定義裝置如何處理無線更新：
     - **裝置預設**：使用裝置的預設值。
-    - **自動**：自動安裝更新。
-    - **延後**：更新會延後到較晚的日期。
-    - **維護期間**：維護期間會提示使用者核准更新。
+    - **自動**：自動安裝更新，而不需使用者互動。 設定此原則會立即安裝任何擱置更新。
+    - **延後**：更新會延後 30 天。 在 30 天結束時，Android 會提示使用者安裝更新。 裝置製造商或電訊廠商可能會防止 (豁免) 重要安全性更新被延後。 豁免的更新會向裝置上的使用者顯示系統通知。 
+    - **維護視窗**：在您於 Intune 中設定的每日維護視窗期間自動安裝更新。 系統會在 30 天內每天嘗試安裝，並可能因為沒有足夠的空間或電池電量而失敗。 30 天後，Android 會提示使用者進行安裝。 此視窗也可用來安裝 Play 應用程式的更新。 建議針對 kiosk 等專用裝置使用此選項，因為可以更新單一應用程式 kiosk 前景應用程式。 
 
 ## <a name="kiosk-settings"></a>Kiosk 設定
 

@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216253"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864603"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>設定 Microsoft Intune 以進行 iOS 裝置單一登入
 
@@ -66,7 +66,7 @@ ms.locfileid: "34216253"
 
    您也可以選擇以 [領域] 文字方塊中鍵入的文字覆寫領域。
 
-   例如，Contoso 可能有歐洲、亞洲和北美洲等數個子地區。 他們可能希望亞洲的使用者使用 SSO 承載，而應用程式要求的 UPN 格式為 *username@asia.contoso.com*。在此情況下，如果您選取 [使用者主體名稱]，預設會從 AAD 取得每位使用者的領域，可能是 *contoso.com*。因此，您可專門針對亞洲使用者，建立此承載並以值 *asia.contoso.com* 覆寫領域。現在使用者的 UPN 會變成 *username@asia.contoso.com*，而非 *username@contoso.com*。
+   例如，Contoso 可能有歐洲、亞洲和北美洲等數個子地區。 他們可能希望亞洲的使用者使用 SSO 承載，而應用程式要求的 UPN 格式為 *username@asia.contoso.com*。 在此情況下，如果您選取 [使用者主體名稱]，預設會從 AAD 取得每位使用者的領域，可能是 *contoso.com*。 因此，您可專門針對亞洲使用者，建立此承載並以值 *asia.contoso.com* 覆寫領域。 現在使用者的 UPN 會變成 *username@asia.contoso.com*，而非 *username@contoso.com*。
 
 - 如果您選取 [裝置識別碼]，Intune 會自動選取 Intune 裝置識別碼。
 
@@ -84,7 +84,7 @@ ms.locfileid: "34216253"
 > [!NOTE]
 > 這些 URL 必須是格式正確的 FQDN。 Apple 要求它們的格式為 `http://<yourURL.domain>`
 
-URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單的字串比對，所以 URL 首碼 `http://www.contoso.com/` 與 `http://www.contoso.com:80/` 不符。 但使用 iOS 9.0 或更新版本，可使用單一萬用字元 \* 指定所有相符的值。 例如，`http://*.contoso.com/` 符合 `http://store.contoso.com/` 和 `http://www.contoso.com`。
+URL 的比對模式開頭必須是 `http://` 或 `https://`。 已執行簡單的字串比對，所以 URL 首碼 `http://www.contoso.com/` 與 `http://www.contoso.com:80/` 不符。 但使用 iOS 10.0 或更新版本，可使用單一萬用字元 \* 指定所有相符的值。 例如，`http://*.contoso.com/` 符合 `http://store.contoso.com/` 和 `http://www.contoso.com`。
 模式 `http://.com` 和 `https://.com` 分別符合所有的 HTTP 和 HTTPS URL。
 
 ### <a name="apps-that-will-use-single-sign-on"></a>使用單一登入的應用程式

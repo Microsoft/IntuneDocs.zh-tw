@@ -1,11 +1,11 @@
 ---
-title: 搭配 Intune 使用 Windows 裝置 | Microsoft Docs
-description: 使用者可以在已註冊至 Intune 的 Windows 裝置上執行之工作的連結清單
+title: 搭配使用 Windows 裝置與 Intune 公司入口網站 | Microsoft Docs
+description: 尋找連結以從公司入口網站針對 Windows 裝置進行疑難排解或管理
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,41 +17,61 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 645e87ef731cf911824ab16673c01e962c91fb70
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017252"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866332"
 ---
-# <a name="using-your-windows-device-with-intune"></a>使用具有 Intune 的 Windows 裝置
+# <a name="using-your-windows-device-with-intune-company-portal"></a>搭配使用 Windows 裝置與 Intune 公司入口網站
 
-您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+本節描述 Windows 版公司入口網站特定的工作和資訊。 您可以使用本節以協助您從公司入口網站針對 Windows 裝置進行疑難排解與管理。 按一下下方所列的任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。  
+
+## <a name="how-to-get-company-portal"></a>如何取得公司入口網站
+公司入口網站提供網站版本，也提供應用程式的下載版本。 若要[存取公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)，請使用您的工作或學校認證登入。  
+
+如需詳細步驟和螢幕擷取畫面，請參閱[登入公司入口網站](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal)。
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援以下 Windows 的版本。
+公司入口網站目前支援執行下列 Windows 版本的裝置：
 
-* Windows 10 (家用版、專業版、教育版、S 和企業版)
+* Windows 10 (家用版、專業版、教育版、S 模式和企業版)
 * Windows Phone 8.1 和更新版本
 * Windows 8.1 RT
 * Windows 8.1
 
-Intune 也支援某些其他版本的 Windows，例如 [Windows 10 全像攝影版 (英文)](https://www.microsoft.com/hololens)。 此處未列出這些版本，因為這些版本是針對特殊目的使用。
+公司入口網站也支援其他版本的 Windows，例如 [Windows 10 全像攝影版](https://www.microsoft.com/hololens)。 不過，本文未涵蓋這些版本，因為這些版本是針對特殊目的使用。
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
+## <a name="set-up-your-device-in-the-company-portal"></a>在公司入口網站中設定裝置
+- [在公司入口網站中管理我的 Windows 裝置](enroll-your-device-in-intune-windows.md)
+- [為何我的裝置要「受控」？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [公司可以看到裝置上的哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [加密我的裝置](encrypt-your-device-windows.md)
+- [設定或變更裝置密碼](set-or-change-your-password-windows.md)
 
-- [在 Intune 註冊 Windows 裝置](enroll-your-device-in-intune-windows.md)
-- [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [當您在 Intune 註冊您的裝置時，貴公司會看到什麼內容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [重設 (清除) 您遺失或遭竊的裝置](reset-erase-your-device-cpwebsite.md)
-
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>在 Intune 註冊您的裝置時可執行的工作
-
-- [加密您的裝置](encrypt-your-device-windows.md)
-- [設定或變更密碼](set-or-change-your-password-windows.md)
-- [從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-windows.md)
-- [如果從 Intune 取消註冊裝置，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-- [使用公司入口網站重設您的裝置會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>當裝置已註冊管理之後可執行的工作
+- [手動同步我的裝置](sync-your-device-manually-windows.md)
 - [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)
-- [手動同步您的裝置](sync-your-device-manually-windows.md)
+- [清除遺失或遭竊裝置的資料](reset-erase-your-device-cpwebsite.md)
+- [公司入口網站重設我的裝置之後，會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [從管理移除我的裝置](unenroll-your-device-from-intune-windows.md)
+- [從公司入口網站移除裝置時，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+
+## <a name="troubleshoot-and-maintain-your-device"></a>疑難排解和維護您的裝置
+* [解決存取點限制](resolve-access-point-restrictions.md)
+* [我的 Windows 10 裝置無法註冊](troubleshoot-your-windows-10-device-windows.md)
+* [我的 Windows 版本不受支援](your-windows-version-isnt-yet-supported.md)
+* [更新我的 Windows 裝置](you-need-to-update-your-windows-device.md)
+* [從公司入口網站應用程式傳送記錄](send-logs-to-your-it-admin-cp-windows.md)
+* [從裝置設定應用程式傳送記錄](send-logs-to-your-it-admin-settings-windows.md)
+* [在我的 Windows 10 裝置上安裝 Office 365](install-office-windows.md)
+* [我的裝置需要加密](you-need-to-enable-windows-encryption.md)
+* [取得反惡意程式碼軟體](your-device-needs-antimalware-software.md)
+* [啟用安全開機](you-need-to-enable-secure-boot-windows.md)
+* [啟用程式碼完整性](you-need-to-enable-code-integrity.md)
+* [開啟 Windows 防火牆](you-need-to-enable-defender-firewall-windows.md)
+* [啟用使用者存取控制](you-need-to-enable-uac-windows.md)
+* [更新 OS 組建版本](you-need-to-update-os-build-version-windows.md)
+* [開啟 Windows Defender](turn-on-defender-windows.md)

@@ -2,10 +2,10 @@
 title: 在 Microsoft Intune 中建立 Android 工作設定檔合規性原則 - Azure | Microsoft Docs
 description: 建立或設定適用於 Android 工作設定檔裝置的 Microsoft Intune 裝置合規性原則。 選擇允許越獄的裝置、設定可接受的威脅層級、檢查 Google Play、輸入最低和最高作業系統版本、選擇您的密碼需求，以及允許側載應用程式。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905082"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828154"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>在 Intune 中為 Android 工作設定檔裝置新增裝置合規性原則
 
@@ -113,7 +113,11 @@ ms.locfileid: "37905082"
 - **封鎖來自不明來源的應用程式**：您不需要進行此設定，因為 Android 工作設定檔裝置一律會限制來自不明來源的安裝。
 - **公司入口網站應用程式執行階段完整性**：檢查公司入口網站應用程式是否已安裝預設執行階段環境、是否已適當地簽署、是否不處於偵錯模式，以及是否是從已知來源安裝。
 - **封鎖裝置上的 USB 偵錯**：您不需要進行此設定，因為 Android 工具設定檔裝置上已停用 USB 偵錯。
-- **安全性修補程式等級下限**：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不合規範。 日期必須以 `YYYY-MM-DD` 格式輸入。
+- **安全性修補程式等級下限**：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不合規範。 日期必須以 *YYYY-MM-DD* 格式輸入。
+- **受限應用程式**：您可以將應用程式的套件組合識別碼新增至原則，來限制應用程式。 然後，如果裝置安裝該應用程式，就會標示為不相容。 
+   - **應用程式名稱**：輸入使用者易記的名稱來協助您識別套件組合識別碼。 
+   - **應用程式套件組合識別碼**：輸入應用程式提供者的唯一套件組合識別碼。 在 Android 中，應用程式套件組合識別碼取自應用程式的存放區 URL。 例如，如果存放區中的應用程式 URL 是 *https://play.google.com/store/apps/details?id=com.Slack*，則應用程式套件組合識別碼 = *com.Slack*。
+
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 

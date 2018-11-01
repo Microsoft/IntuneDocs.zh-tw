@@ -2,8 +2,8 @@
 title: 搭配 Intune 使用應用程式型條件式存取
 description: 了解應用程式型條件式存取如何搭配 Intune 運作。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 95458642f60dfb8c7ba18078ef4bd238c53502aa
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561968"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231299"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>搭配 Intune 使用應用程式型條件式存取
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561968"
 
 [Intune 應用程式保護原則](app-protection-policy.md)可協助保護您已在 Intune 中註冊之裝置上的公司資料。 您也可以在未向 Intune 註冊管理之員工擁有的裝置上，使用應用程式保護原則。 在此情況下，即使您的公司未管理裝置，仍然需要確定公司資料和資源受到保護。
 
-以應用程式為基礎的條件式存取和行動應用程式管理，可增添一個安全性層級，方法是透過確定只有支援 Intune 應用程式保護原則的行動應用程式，才可以存取 Exchange Online 和其他 Office 365 服務。
+應用程式型條件式存取和用戶端應用程式管理會新增一個安全性層級，方法是確定只有支援 Intune 應用程式保護原則的用戶端應用程式才能存取 Exchange Online 和其他 Office 365 服務。
 
 > [!NOTE]
 > 受管理應用程式是已套用應用程式保護原則的應用程式，而且可由 Intune 管理。

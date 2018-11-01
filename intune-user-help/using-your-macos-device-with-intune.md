@@ -1,11 +1,11 @@
 ---
-title: 搭配 Intune 使用 iOS 或 macOS 裝置 | Microsoft Docs
-description: 可以在已註冊至 Intune 的 iOS 或 macOS 行動裝置上執行之工作的連結清單
+title: 搭配 Intune 使用 macOS 裝置 | Microsoft Docs
+description: 尋找連結以從公司入口網站應用程式針對 macOS 行動裝置進行疑難排解或管理
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771851"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168908"
 ---
-# <a name="using-your-macos-device-with-intune"></a>使用具有 Intune 的 macOS 裝置
+# <a name="using-your-macos-device-with-intune-company-portal"></a>透過 Intune 公司入口網站使用 macOS 裝置
 
-您可以使用 Intune 來完成一些事以減輕您的工作負擔。 以下是貴公司可能要求您達成的最常見作業清單。
+本文列出 macOS 版公司入口網站特定的工作和資訊。 請使用它來協助您針對 macOS 裝置進行疑難排解和管理。 按一下任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。 
 
 ## <a name="supported-versions"></a>支援的版本
 
-Intune 目前支援 macOS 裝置的 OS X El Capitan 10.11 和更新版本。
+macOS 版公司入口網站目前支援 macOS 裝置的 OS X El Capitan 10.11 和更新版本。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 

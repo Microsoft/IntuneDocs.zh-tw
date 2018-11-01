@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
-ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
+ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49065759"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425286"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>搭配 Intune 管理及使用 Windows Holographic 和 HoloLens 裝置
 
@@ -73,7 +73,7 @@ Microsoft Intune 可以將通用 Windows 應用程式部署到執行 Windows Hol
 - 若要深入了解開發 Microsoft HoloLens 的應用程式，請參閱 [Microsoft HoloLens 的混合現實應用程式](https://www.microsoft.com/hololens/apps)。 
 
 > [!NOTE]
-> 執行 Windows 10 Holographic for Business 1607 的 HoloLens 裝置不支援 Microsoft Store for Business 線上授權的應用程式。 若要進一步了解，請參閱[將應用程式安裝到 HoloLens 上](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)。
+> 執行 Windows 10 Holographic for Business 1607 的 HoloLens 裝置不支援 Microsoft Store for Business 線上授權的應用程式。 若要進一步了解，請參閱[將應用程式安裝到 HoloLens 上](https://docs.microsoft.com/hololens/hololens-install-apps)。
 
 ## <a name="device-actions"></a>裝置動作
 Intune 具有一些內建動作，可讓 IT 系統管理員執行不同的工作，不論是在本機裝置上進行，或在 Azure 入口網站中使用 Intune 遠端進行均可。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。

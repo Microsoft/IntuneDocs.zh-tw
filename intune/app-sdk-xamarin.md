@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079b27c73a466ae19dad950564ba0d56d8e20f8d
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: c3ccd2db88df4e5b7a51e0aa2446a99f33256432
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031264"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028710"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -52,6 +52,8 @@ ms.locfileid: "44031264"
 ## <a name="prerequisites"></a>必要條件
 
 檢閱[授權條款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 列印並保留一份授權條款供您備查。 下載並使用「Intune App SDK Xamarin 繫結」即表示您同意這些授權條款。 若貴用戶不同意這些授權條款，請不要使用「軟體」。
+
+SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 進行[驗證](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和條件式啟動案例，其中需要應用程式針對 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)進行設定。 設定值會透過 AndroidManifest 中繼資料傳送給 SDK。 請參閱[設定應用程式的 ADAL](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) 相關文件。
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>在 iOS 行動應用程式中啟用 Intune 應用程式保護原則
 1. 將 [Microsoft.Intune.MAM.Xamarin.iOS NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS)新增至 Xamarin.iOS 專案。
@@ -117,12 +119,22 @@ ms.locfileid: "44031264"
 下列是確保以 Xamarin 為基礎的 Android LOB 應用程式僅供受 Intune 保護之使用者在其裝置上使用的指南。 
 
 ### <a name="general-requirements"></a>一般需求
-* Intune SDK 小組需要您應用程式的應用程式識別碼。 其位於 [Azure 入口網站](https://portal.azure.com/)中 [應用程式識別碼] 資料行的 [所有應用程式] 下。 也可以透過電子郵件 msintuneappsdk@microsoft.com 與 Intune SDK 小組連絡。
-     
+* 註冊您應用程式的應用程式識別碼。 其位於 [Azure 入口網站](https://portal.azure.com/)中 [應用程式識別碼] 資料行的 [所有應用程式] 下。 在 Azure 入口網站中：
+1.  移至 [Azure Active Directory] 刀鋒視窗。
+2.  選取為應用程式設定的 [應用程式註冊]。
+3.  在 [設定] 的 [API 存取] 標題下，選取 [必要權限]。 
+4.  按一下 [+ 新增]。
+5.  按一下 [選取 API]。 
+6.  在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
+7.  在 API 清單中選取 [Microsoft 行動應用程式管理]，然後按一下 [選取]。
+8.  選取 [Read and Write the User’s App Management Data] \(讀取及寫入使用者的應用程式管理資料\)。
+9.  按一下 [完成]。
+10. 按一下 [授與權限]，然後按一下 [是]。 
+    
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
 
-1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
 > [!NOTE] 
 > 「用戶端識別碼」一詞，和繫結於您應用程式之 Azure 入口網站中的「應用程式識別碼」一詞相同。 
 * 若要啟用 SSO，需要「一般 ADAL 設定」#2。

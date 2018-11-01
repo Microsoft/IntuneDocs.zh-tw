@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313456"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187813"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的註冊
 
@@ -74,6 +74,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
     - **新增裝置，其中**：enrollmentProfileName
     - 在中間方塊中，選擇 [比對]。
     - 在最後一個欄位中，輸入您稍早建立的註冊設定檔名稱。
+    如需動態成員資格規則的詳細資訊，請參閱 [AAD 中群組的動態成員資格規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 
 5. 選擇 [新增查詢] > [建立]。
 
 ### <a name="replace-or-remove-tokens"></a>取代或移除權杖
