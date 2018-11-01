@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330257"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101984"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -31,7 +31,8 @@ ms.locfileid: "43330257"
 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。 
 
 >[!NOTE]
->Intune 會在主控台中提供預先建立的 [所有使用者] 和 [所有裝置] 群組，附有內建的最佳化方便您使用。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。
+>Intune 會在主控台中提供預先建立的 [所有使用者] 和 [所有裝置] 群組，附有內建的最佳化方便您使用。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。<p></p>
+>身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增到 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。
 
 選取應用程式設定原則包含的群組後，您也可以選擇要排除的特定群組。 如需詳細資訊，請參閱 [Microsoft Intune 的包含與排除應用程式指派](apps-inc-exl-assignments.md)。
 
@@ -58,7 +59,7 @@ ms.locfileid: "43330257"
 8.  在 [新增設定原則] 窗格上，選擇 [組態設定]。
 9. 選取 [組態設定格式]。 選取下列其中一項以新增 XML 資訊：
     - **使用設定設計工具**
-    - **輸入 XML 資料**<br></br>
+    - **輸入 XML 資料**<br><br>
     如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 XML 資料](#enter-xml-data)。 
 10. 新增 XML 資訊之後，請選擇 [確定]，然後選擇 [新增] 新增設定原則。 即會顯示設定原則的概觀窗格。
 11. 選取 [指派] 來顯示包含與排除選項。 
@@ -95,6 +96,17 @@ Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft 
 2. 選取 [刪除]。
 
 \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>在多重身分識別應用程式中只允許設定的組織帳戶 
+
+若為 Android 裝置，請使用下列索引鍵/值組：
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **值** | <ul><li>**Enabled**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 索引鍵所定義的受控使用者帳戶。</li><li>**Disable** (或與 **Enabled** 不區分大小寫不相符項目的任何值)：允許任何帳戶。</li></ul> |
+
+   > [!NOTE]
+   > 使用多重身分識別只允許設定的組織帳戶時，您必須使用 OneDrive for iOS 10.34 或更新版本和 Outlook for iOS 2.99.0 或更新版本。
 
 ## <a name="enter-xml-data"></a>輸入 XML 資料
 

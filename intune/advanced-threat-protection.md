@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313786"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102118"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取啟用 Windows Defender ATP
 
@@ -89,6 +89,10 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 6. 設定這些設定：
 
   - **Windows Defender ATP 用戶端設定套件類型**：選取 [上架] 可將設定套件新增至設定檔。 選取 [下架] 可從設定檔移除設定套件。
+  
+    > [!NOTE] 
+    > 如果您已經與 Windows Defender ATP 正確建立連線，則 Intune 會自動將您的組態設定檔**上架**。
+  
   - **所有檔案的範例共用**：[啟用] 可收集範例並與 Windows Defender ATP 共用。 例如，如果您看到可疑檔案，可將它提交至 Windows Defender ATP 以進行深入分析。 **未設定**不與 Windows Defender ATP 共用任何範例。
   - **加快遙測回報頻率**：針對高風險的裝置 [啟用] 此設定，以便更頻繁地將遙測回報給 Windows Defender ATP 服務。
 

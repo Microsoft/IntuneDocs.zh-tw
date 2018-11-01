@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 7881e117893ec01098c13f79e00a2b5388652155
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329540"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903551"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
@@ -44,7 +44,7 @@ ms.locfileid: "43329540"
 
     ![Microsoft Intune 窗格的螢幕擷取畫面](./media/apps-selective-wipe01.png)
 
-3.  在 [行動應用程式] 窗格中選擇 [應用程式選擇性抹除]。
+3.  在 [用戶端應用程式] 窗格上選擇 [應用程式選擇性抹除]。
 
 4.  選擇 [新增抹除要求]。 [新增抹除要求] 窗格會隨即開啟。
 
@@ -62,7 +62,7 @@ ms.locfileid: "43329540"
 
 您可有摘要報表顯示抹除要求的整體狀態，以及暫止的要求數與失敗數。 若要取得更多詳細資訊，請遵循下列步驟︰
 
-1.  [行動應用程式 - 應用程式選擇性抹除] 窗格中會依使用者分組列出您的要求清單。 由於系統會針對裝置上執行的每個受保護應用程式建立抹除要求，因此您可能會看到一名使用者具有多個要求的情況。 狀態指出抹除要求為**擱置**、**失敗**或**成功**。
+1.  [用戶端應用程式 - 應用程式選擇性抹除] 窗格上會依使用者分組列出您的要求清單。 由於系統會針對裝置上執行的每個受保護應用程式建立抹除要求，因此您可能會看到一名使用者具有多個要求的情況。 狀態指出抹除要求為**擱置**、**失敗**或**成功**。
 
     ![[應用程式選擇性抹除] 窗格中抹除要求狀態的螢幕擷取畫面](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "43329540"
 
 處於擱置狀態的抹除將會顯示，直到您手動將其刪除為止。 若要手動刪除抹除要求：
 
-1.  在 [行動應用程式 - 應用程式選擇性抹除] 窗格中。
+1.  在 [用戶端應用程式 - 應用程式選擇性抹除] 窗格上。
 
 2.  在清單中，以滑鼠右鍵按一下要刪除的抹除要求，然後選擇 [刪除抹除要求]。
 

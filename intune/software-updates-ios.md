@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313491"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101948"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中設定 iOS 更新原則
 
@@ -23,7 +23,7 @@ ms.locfileid: "43313491"
 
 裝置大約每隔 8 小時簽入 Intune 一次。 如果有更新可用，而且不在限制期間內，則裝置會下載並安裝最新的 OS 更新。 更新裝置不需要任何使用者互動。 原則不會阻止使用者手動更新 OS。
 
-這項功能支援執行 iOS 10.3 和更新版本的裝置。
+這項功能支援執行 iOS 10.3 和更新版本的裝置。 iOS 11.3 和更新版本提供延遲設定。
 
 ## <a name="configure-the-policy"></a>設定原則
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
@@ -32,7 +32,7 @@ ms.locfileid: "43313491"
 4. 為原則輸入名稱和描述。
 5. 選取 [設定]。 
 
-    輸入不強制 iOS 裝置安裝最新更新時的詳細資料。 這些設定會建立受限制的時間範圍。 您可以設定 [星期幾]、[時區]、[開始時間] 和 [結束時間]，以及是否要使用 [軟體更新的延遲可見度 (天)] 來輸入使用者。 您可以選取 1 到 90 天的軟體更新延遲範圍。 若要退出設定軟體更新延遲，請輸入 0。 這些更新設定只會套用至受監督的 iOS 裝置。
+    輸入不強制 iOS 裝置安裝最新更新時的詳細資料。 這些設定會建立受限制的時間範圍。 您可以設定 [星期幾]、[時區]、[開始時間] 和 [結束時間]，以及是否要使用 [軟體更新的延遲可見度 (天)] 來輸入使用者。 您可以選取 1 到 90 天的軟體更新延遲範圍。 若要退出設定軟體更新延遲，請輸入 0。 這些更新設定只會套用到受監督的 iOS 裝置。
 
 6. 按一下 [確定] 以儲存您的變更。 選取 [建立] 來建立原則。
 

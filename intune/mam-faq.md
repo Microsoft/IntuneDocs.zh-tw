@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307418"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -88,9 +88,7 @@ Intune MAM 支援兩個組態︰
 Intune 會將應用程式中所有資料標示為「公司」或「個人」。 當資料來自公司地點時，會將資料視為「公司」資料。 針對 Office 應用程式，Intune 會將下列位置視為公司地點：電子郵件 (Exchange) 或雲端儲存體 (包含商務用 OneDrive 帳戶的 OneDrive 應用程式)。
 
 **使用商務用 Skype 有哪些其他需求？**<br></br>
-請參閱[商務用 Skyp](https://products.office.com/skype-for-business/it-pros) 授權需求。
-  >[!NOTE]
-  > 商務用 Skyp 行動裝置應用程式目前僅支援商務用 Skype Online。
+請參閱[商務用 Skyp](https://products.office.com/skype-for-business/it-pros) 授權需求。 如需商務用 Skype (SfB) 的混合式和內部部署設定，請分別參閱 [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (正式推出適用於 SfB 和 Exchange 的混合式新式驗證) 和 [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (使用 AAD 啟用適用於 SfB 內部部署的新式驗證)。
 
 ## <a name="app-protection-features"></a>應用程式保護功能
 
@@ -116,8 +114,8 @@ Intune 會將應用程式中所有資料標示為「公司」或「個人」。 
 
 若為 iOS 裝置，即使在不同發行者的應用程式之間共用 PIN，當非主要輸入焦點之應用程式的 [重新檢查存取需求前等候時間 (分鐘)] 值再次達到時，就會再度顯示提示。 例如，使用者有發行者 _X_ 的應用程式 _A_ 和發行者 _Y_ 的應用程式 _B_，而且這兩個應用程式共用相同的 PIN。 使用者將焦點放在應用程式 _A_ (前景)，並將應用程式 _B_ 最小化。 達到 [重新檢查存取需求前等候時間 (分鐘)] 值，而且使用者切換至應用程式 _B_ 之後，則需要 PIN。
 
-      >[!NOTE] 
-      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+  >[!NOTE] 
+  > 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前的剩餘時間 (分鐘)」設定的值。 
       
 - **Intune PIN 如何搭配使用 Outlook 和 OneDrive 的內建應用程式 PIN ？**<br></br>
 Intune PIN 會根據以閒置為基礎的計時器 (又稱為「重新檢查存取需求前的剩餘時間 (分鐘)」值) 運作。 因此，Intune PIN 提示會與 Outlook 和 OneDrive 的內建應用程式 PIN 提示分開顯示，後者預設通常與應用程式啟動相關。 如果使用者同時收到兩個 PIN 提示，預期的行為應該是優先使用 Intune PIN。 

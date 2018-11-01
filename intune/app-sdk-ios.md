@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 06ede788575c3995f7e9fd0b0dd92a32aa8e7809
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031315"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169527"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -32,7 +32,7 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (�
 
 * 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，並且該電腦已安裝 Xcode 9 或更新版本。
 
-* 您的應用程式必須以 iOS 9.3.5 或更新版本為目標。
+* 您的應用程式必須以 iOS 10 或更新版本為目標。
 
 * 檢閱[適用於 iOS 的 Intune App SDK 授權條款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 列印並保留一份授權條款供您備查。 下載並使用 Intune App SDK for iOS 即表示您同意這些授權條款。  如果您不接受這些條款，請不要使用此軟體。
 
@@ -40,13 +40,13 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (�
 
 ## <a name="whats-in-the-sdk"></a>SDK 的功能
 
-Intune App SDK for iOS 包含靜態程式庫、資源檔、API 標頭、偵錯設定 .plist 檔案及設定程式工具。 若要強制執行大部分原則，行動應用程式只需要包含資源檔並以靜態方式連結至程式庫。 進階 Intune 應用程式功能則是透過 API 來強制執行。
+Intune App SDK for iOS 包含靜態程式庫、資源檔、API 標頭、偵錯設定 .plist 檔案及設定程式工具。 若要施行大部分原則，用戶端應用程式只需要包含資源檔並以靜態方式連結至程式庫。 進階 Intune 應用程式功能則是透過 API 來強制執行。
 
 本指南涵蓋如何使用 Intune App SDK for iOS 的下列元件：
 
-* **libIntuneMAM.a**：Intune App SDK 靜態程式庫。 如果您的應用程式未使用擴充功能，請將這個程式庫連結至專案，讓應用程式進行 Intune 行動應用程式管理。
+* **libIntuneMAM.a**：Intune App SDK 靜態程式庫。 如果您的應用程式未使用擴充功能，請將這個程式庫連結至專案，讓應用程式進行 Intune 用戶端應用程式管理。
 
-* **IntuneMAM.framework**：Intune App SDK 架構。 請將這個架構連結至專案，讓應用程式進行 Intune 行動應用程式管理。 如果您的應用程式使用延伸模組，讓您的專案不會建立靜態程式庫的多個複本，請使用架構而不是靜態程式庫。
+* **IntuneMAM.framework**：Intune App SDK 架構。 請將這個架構連結至專案，讓應用程式進行 Intune 用戶端應用程式管理。 如果您的應用程式使用擴充功能，讓您的專案不會建立靜態程式庫的多個複本，請使用架構而不是靜態程式庫。
 
 * **IntuneMAMResources.bundle**：包含 SDK 相依資源的資源配套。
 
@@ -144,7 +144,9 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 5. 請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 繼續進行下一個步驟支援，請務必儲存您的變更。
 
-6. 使用 [SDK 存放庫](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中包含的 IntuneMAMConfigurator 工具來設定您應用程式的 Info.plist。 此工具有 3 個參數：
+6. 如果您的應用程式尚未使用 FaceID，請務必設定 [NSFaceIDUsageDescription Info.plist 索引鍵](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)的預設訊息。 iOS 需要此設定，才能讓使用者知道應用程式預計如何使用 FaceID。 Intune 應用程式防護原則設定在 IT 系統管理員的設定下，可使用 FaceID 作為應用程式存取方法。
+
+7. 使用 [SDK 存放庫](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中包含的 IntuneMAMConfigurator 工具來設定您應用程式的 Info.plist。 此工具有三個參數：
 
    |屬性|用法|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
    |- o |  (選擇性) `<Path to the output plist>` |
 
 若未指定 '-o' 參數，將就地修改輸入檔案。 此工具是理想的，且應該在應用程式的 Info.plist 或權利變更時重新執行。 更新 Intune SDK 時，您也應該下載並執行此工具的最新版本，以免 Info.plist 設定需求在最新版本中有變更。
-
-> [!NOTE]
-> 如果您的應用程式尚未使用 FaceID，請務必設定 `NSFaceIDUsageDescription` info.plist 索引鍵的預設訊息。 iOS 需要此設定，才能讓使用者知道應用程式預計如何使用 FaceID。 Intune 應用程式防護原則設定在 IT 系統管理員的設定下，可使用 FaceID 作為應用程式存取方法。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>設定 Azure Active Directory Authentication Library (ADAL)
 
@@ -207,7 +206,7 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 ### <a name="if-your-app-does-not-use-adal"></a>如果您的應用程式未使用 ADAL
 
-如果您的應用程式未使用 ADAL，Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。 您不需要為上面所列的 ADAL 設定指定任何值。
+如上所述，Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Directory 驗證程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)。 它也會依賴 ADAL 向 MAM 服務註冊使用者身分識別來進行沒有裝置註冊案例的管理。 如果**您的應用程式未使用 ADAL 作為其本身的驗證機制**，Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。 您不需要為上面所列的 ADAL 設定指定任何值。 應用程式所使用的任何驗證機制 (若有的話) 將會顯示在 ADAL 提示的頂端。 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的設定
 

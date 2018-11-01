@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347513"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903500"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -93,7 +93,8 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
         > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步時的存放區 URL 。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
-    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。
+    - **自動更新應用程式** - 從 [開啟] 選擇為 [關閉]，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝用途部署的應用程式，自動更新會自動為您 (系統管理員) 產生通知，通知您已有可用的新版本應用程式。 使用者必須按一下 [安裝] 才能安裝應用程式的更新版本。 此外，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以重新安裝應用程式。
+    
         > [!NOTE]
         > 自動應用程式更新適用於 iOS 11.0 版和更新版本的裝置和使用者授權應用程式。
 6. 完成之後，請選取 [建立]。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347427"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075605"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
 Microsoft Intune 目前支援 Windows 10 裝置上的各種應用程式類型和部署案例。 將應用程式新增至 Intune 之後，您可以將應用程式指派給使用者和裝置。 下列資訊提供與支援的 Windows 10 案例相關的更多詳細資料。 此外，下列資訊提供將應用程式部署到 Windows 時要注意的重要詳細資料。 
 
-企業營運 (LOB) 應用程式和商務用 Microsoft Store 應用程式是 Windows 10 裝置上支援的應用程式類型。
+企業營運 (LOB) 應用程式和商務用 Microsoft Store 應用程式是 Windows 10 裝置上支援的應用程式類型。 Windows 應用程式的副檔名包括 **.msi**、**.appx**，以及 **.appxbundle**。  
 
 > [!Note]
-> 若要在裝置內容中部署應用程式，您至少需要下列 Windows 10 更新：[2018 年 5 月 23 日 - KB4100403 (作業系統組建 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403)。
+> 部署現代化應用程式所需的最低 Windows 10 更新如下：
+> - 針對 Windows 10 1803，[2018 年 5 月 23 日—KB4100403 (OS 組建 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)。
+> - 針對 Windows 10 1709，[2018 年 6 月 21 日—KB4284822 (OS 組建 16299.522)](https://support.microsoft.com/help/4284822)。
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 企業營運應用程式
 
@@ -44,11 +46,13 @@ Windows 10 LOB 應用程式會簽署及上傳至 Intune 管理主控台，並可
 
 - **使用者內容**：當應用程式部署在使用者內容時，若使用者登入裝置，就會為裝置上的該使用者安裝受控應用程式。 請注意，在使用者登入裝置之前，應用程式安裝不會成功。 
     - 現代化企業營運應用程式和商務用 Microsoft Store 應用程式 (線上和離線) 可部署在使用者內容中，而且會支援「必要」和「可用」意圖。
+    - 建置為 [使用者模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且會同時支援 [必要] 及 [可用] 意圖。 
 - **裝置內容**：當應用程式部署在裝置內容時，Intune　會將受控應用程式直接安裝在裝置上。
     - 只有現代化企業營運應用程式和線上授權的商務用 Microsoft Store 應用程式可部署在裝置內容中，而且只會支援「必要」意圖。
+    - 建置為 [機器模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且僅支援 [必要] 意圖。
 
-> [!Note]
-> Windows 10 裝置目前不支援在裝置內容中透過 MDM 部署 MSI。
+> [!NOTE]
+> 針對建置為 [雙螢幕模式] 的 Win32 應用程式，您 (系統管理員) 將需要挑選應用程式是否會針對所有與該執行個體建立關聯的指派作為 [使用者模式] 或 [機器模式] 運作。 部署內容無法根據每個指派進行變更。  
 
 當應用程式部署在裝置內容時，只有以支援裝置內容的裝置為目標的安裝才會成功。 此外，在裝置內容中部署支援下列情況：
 - 如果應用程式部署在裝置內容中，並以使用者為目標，安裝會失敗，並在管理主控台中顯示下列狀態和錯誤：

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253752"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075841"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的行動應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
+身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
 - 裝置平台及應用程式類型有千百種。
 - 您可能需要同時管理公司裝置和使用者個人裝置上的應用程式。
 - 您必須確保網路和資料的安全。
@@ -68,7 +68,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
     Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Microsoft Intune] 窗格中，選取 [用戶端應用程式]。
 
-    ![[行動應用程式] 工作負載窗格](./media/apps-workload.png)
+    ![[用戶端應用程式] 工作負載窗格](./media/apps-workload.png)
 
 接下來四節會描述 [用戶端應用程式] 窗格中的可用選項。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 838ed3a932d6ff495b9a433d3cabedfa6227ad32
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169510"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 此文章說明如何搭配 Intune 設定基礎結構，並建立及指派簡單憑證註冊通訊協定 (SCEP) 憑證設定檔。
 
@@ -40,9 +38,11 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
   - NDES 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
-- **Web 應用程式 Proxy 伺服器** (選用)︰使用執行 Windows Server 2012 R2 或更新版本的伺服器做為 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
+- **Web 應用程式 Proxy 伺服器** (選擇性)︰使用執行 Windows Server 2012 R2 或更新版本的伺服器作為 Web 應用程式 Proxy (WAP) 伺服器。 此組態：
   - 允許裝置使用網際網路連線接收憑證。
   - 是裝置連線透過網際網路來接收和更新憑證時的安全性建議。
+  
+- **Azure AD 應用程式 Proxy** (選擇性)：可使用 Azure AD 應用程式 Proxy 將 NDES 伺服器發佈至網際網路，而不是使用專用的 Web 應用程式 Proxy (WAP) 伺服器來發佈。 如需詳細資訊，請參閱[如何為內部部署應用程式提供安全的遠端存取](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 
 #### <a name="additional"></a>Additional
 
@@ -82,7 +82,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 建立網域使用者帳戶以做為 NDES 服務帳戶。 在您安裝及設定 NDES 之前，會在發行 CA 上設定範本時輸入此帳戶。 請確定使用者具有預設權限：[本機登入]、[以服務方式登入] 和 [以批次工作登入] 權限。 某些組織擁有停用這些權限的強化原則。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步驟 2：設定憑證授權單位上的憑證範本
-在此工作中，您要：
+在此步驟中，您將：
 
 - 設定 NDES 的憑證範本
 - 發行 NDES 的憑證範本
@@ -145,7 +145,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 3. 檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的必要條件
-在此工作中，您要：
+在此步驟中，您將：
 
 - 將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
 - 將 NDES 服務帳戶加入至 IIS_IUSR 群組
@@ -156,7 +156,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
    1. 在精靈中，選取 [Active Directory 憑證服務]  以存取 AD CS 角色服務。 選取 [網路裝置註冊服務] ，取消核取 [憑證授權單位] ，然後完成精靈。
 
       > [!TIP]
-      > 在 [安裝進度] 中，不要選取 [關閉]。 相反地，請選取 [設定目的地伺服器上的 Active Directory 憑證服務] 連結。 [AD CS 設定] 精靈隨即開啟，讓您用於下一個工作。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
+      > 在 [安裝進度] 中，不要選取 [關閉]。 相反地，請選取 [設定目的地伺服器上的 Active Directory 憑證服務] 連結。 [AD CS 設定精靈] 隨即開啟，讓您用於下一個步驟。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
 
    2. 當 NDES 加入至伺服器時，精靈也會安裝 IIS。 請確定 IIS 具有下列組態：
 
@@ -181,7 +181,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步驟 4：設定 NDES 以搭配 Intune 使用
-在此工作中，您要：
+在此步驟中，您將：
 
 - 設定 NDES 以便用於發行 CA
 - 在 IIS 中繫結伺服器驗證 (SSL) 憑證
@@ -190,7 +190,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 1. 在 NDES 伺服器上，開啟 [AD CS 設定] 精靈，然後進行下列設定：
 
     > [!TIP]
-    > 如果您按一下前個工作中的連結，此精靈已經開啟。 否則，開啟 [伺服器管理員] 來存取 Active Directory 憑證服務的部署後組態。
+    > 如果您按一下上一個步驟中的連結，此精靈已經開啟。 否則，開啟 [伺服器管理員] 來存取 Active Directory 憑證服務的部署後組態。
 
    - 在 [角色服務]  中，選取 [網路裝置註冊服務] 
    - 在 [NDES 的服務帳戶] 中，輸入 NDES 服務帳戶
@@ -202,7 +202,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    若要更新此機碼，請指出憑證範本的 [目的] (可以在其 [要求處理] 索引標籤上找到)。 接著，透過使用您在工作 1 中指定的憑證範本名稱 (而非範本的顯示名稱) 來取代現有資料，以更新對應的登錄項目。 下表會將憑證範本目的對應到登錄中的值：
+    若要更新此機碼，請指出憑證範本的 [目的] (可以在其 [要求處理] 索引標籤上找到)。 接著，透過使用您在步驟 2 中指定的憑證範本名稱 (而非範本的顯示名稱) 來取代現有資料，以更新對應的登錄項目。 下表會將憑證範本目的對應到登錄中的值：
 
     |憑證範本目的 (在 [處理要求] 索引標籤上)|要編輯的登錄值|SCEP 設定檔的 Intune 管理主控台中看到的值|
     |---|---|---|
@@ -225,11 +225,11 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     ![IIS URL 和查詢長度上限](./media/SCEP_IIS_max_URL.png)
 
 5. 重新啟動伺服器。 在伺服器上執行 **iisreset** 不足以完成這些變更。
-6. 瀏覽至 `http://*FQDN*/certsrv/mscep/mscep.dll`。 您應該會看到與下面類似的 NDES 頁面︰
+6. 瀏覽至 `http://*FQDN*/certsrv/mscep/mscep.dll` 。 您應該會看到與下面類似的 NDES 頁面︰
 
     ![測試 NDES](./media/SCEP_NDES_URL.png)
 
-    如果您收到「503 服務無法使用」，請檢查事件檢視器。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 工作 1 會說明這些權限。
+    如果您收到「503 服務無法使用」，請檢查事件檢視器。 因為遺失 NDES 使用者的權限，所以可能已停止應用程式集區。 步驟 1 會說明這些權限。
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>在 NDES 伺服器上安裝並繫結憑證
 
@@ -278,7 +278,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 4. 重新啟動 NDES 伺服器。 伺服器現在已準備好支援 Certificate Connector。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步驟 5：啟用、安裝及設定 Intune 憑證連接器
-在此工作中，您要：
+在此步驟中，您將：
 
 - 啟用 Intune 中的 NDES 支援。
 - 在您環境中裝載網路裝置註冊服務 (NDES) 角色的伺服器上，下載、安裝及設定憑證連接器。 若要增加您組織的 NDES 實作規模，您可以在每部 NDES 伺服器上，搭配 Microsoft Intune 憑證連接器安裝多部 NDES 伺服器。
@@ -299,7 +299,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     > [!NOTE]
     > 當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。 當您使用 Intune 搭配 Configuration Manager 時，將憑證註冊點安裝為個別的網站系統角色。
 
-6. 當提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在工作 3 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
+6. 當系統提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在步驟 4 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
 
     選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然未顯示您選取的憑證，請選取 [下一步] 以檢視該憑證的屬性。 選取 [下一步] [安裝]。
 
@@ -350,6 +350,113 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 5. 從 [設定檔類型] 下拉式清單中，選取 [SCEP 憑證]。
 6. 在 [SCEP 憑證] 窗格中，進行以下設定：
 
+   - **憑證類型**：選擇 [使用者] 表示使用者憑證。 選擇 [裝置] 表示無使用者裝置，例如 kiosk。 提供下列平台可用的 [裝置] 憑證：  
+     - iOS
+     - Windows 8.1 及更新版本
+     - Windows 10 及更新版本
+
+   - **主體名稱格式**：選取 Intune 如何自動在憑證要求中建立主體名稱。 如果您選擇 [使用者] 憑證類型或 [裝置] 憑證類型，則選項會變更。 
+
+        **使用者憑證類型**  
+
+        您可以在主體名稱中包含使用者的電子郵件地址。 從下列選項進行選擇：
+
+        - **未設定**
+        - **一般名稱**
+        - **包括電子郵件的一般名稱**
+        - **一般名稱及電子郵件地址**
+        - **IMEI (國際行動設備識別)**
+        - **序號**
+        - **自訂**：當您選取此選項時，也會顯示 [自訂] 文字方塊。 您可以使用此欄位來輸入自訂主體名稱格式，包括變數。 自訂格式支援兩個變數： **(CN)** 與**電子郵件 (E)**。 **一般名稱 (CN)** 可以設定為下列任何變數：
+
+            - **CN={{UserName}}** 使用者的使用者主體名稱，例如 janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}** 當您在 Azure Active Directory (AD) 中註冊裝置時指派的識別碼。 此識別碼通常用於向 Azure AD 驗證。
+            - **CN={{SERIALNUMBER}}**：通常由製造商用於識別裝置的唯一序號 (SN)
+            - **CN={{IMEINumber}}**：用於識別行動電話的國際行動設備識別碼 (IMEI)
+            - **CN={{OnPrem_Distinguished_Name}}** 由逗號分隔的相對辨別名稱序列，例如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                若要使用 `{{OnPrem_Distinguished_Name}}` 變數，請務必將使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onpremisesdistingishedname` 使用者屬性與 Azure AD 同步。
+
+            - **CN={{onPremisesSamAccountName}}**：系統管理員可使用 Azure AD 連線到稱為 `onPremisesSamAccountName` 的屬性，將 Active Directory 的 samAccountName 屬性與 Azure AD 同步。 Intune 可將該變數替換為 SCEP 憑證主體中憑證發行要求的一部分。  samAccountName 屬性是使用者登入名稱，用於支援舊版 Windows 客戶端和伺服器 (Windows 2000 以前的版本)。 使用者登入名稱的格式為：`DomainName\testUser`，或僅 `testUser`。
+
+                若要使用 `{{onPremisesSamAccountName}}` 變數，請務必將使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onPremisesSamAccountName` 使用者屬性與 Azure AD 同步。
+
+            您可以結合使用一或多個這些變數和靜態字串，建立自訂的主體名稱格式，如下：  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            在此範例中，您建立的主體名稱格式除了有 CN 與 E 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) 說明此函式和它支援的字串。
+
+        **裝置憑證類型**  
+
+        當您使用 [裝置] 憑證類型時，也可以使用下列裝置憑證變數作為值：  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        您可以在自訂值文字方塊中以靜態文字新增這些變數。 例如，一般名稱可以新增為 `CN = {{DeviceName}}text`。
+
+        > [!IMPORTANT]
+        >  - 在主體的靜態文字中，未含括變數的大括弧 **{ }** 會解析為錯誤。 
+        >  - 當您使用裝置憑證變數時，請用大括弧 **{ }** 將變數括住。
+        >  - `{{FullyQualifiedDomainName}}` 只適用於 Windows 和已加入網域的裝置。 
+        >  -  在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
+        >  - 如果不支援指定的裝置變數，則設定檔不會安裝在裝置上。 例如，如果 SCEP 設定檔的主體名稱中使用 {{IMEI}}，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。 
+
+
+   - **主體別名**：輸入 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 如果您選擇 [使用者] 憑證類型或 [裝置] 憑證類型，則選項會變更。 
+
+        **使用者憑證類型**  
+
+        可以使用下列屬性：
+
+        - 電子郵件地址
+        - 使用者主體名稱 (UPN)
+
+            例如，如果您選取使用者憑證類型，就可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證是用來驗證網路原則伺服器，您必須將主體別名設定為 UPN。 
+
+        **裝置憑證類型**  
+
+        您可以自訂的資料表格式文字方塊。 可以使用下列屬性：
+
+        - DNS
+
+        透過 [裝置] 憑證類型，您可以使用下列裝置憑證變數作為值：  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        您可以在自訂值文字方塊中以靜態文字新增這些變數。 例如，DNS 屬性可以新增為 `DNS name = {{AzureADDeviceId}}.domain.com`。
+
+        > [!IMPORTANT]
+        >  - 在 SAN 的靜態文字中，大括弧 **{ }**、直立線符號 **|** 和分號 **;** 沒有作用。 
+        >  - 當您使用裝置憑證變數時，請用大括弧 **{ }** 將變數括住。
+        >  - `{{FullyQualifiedDomainName}}` 只適用於 Windows 和已加入網域的裝置。 
+        >  -  在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
+        >  - 如果不支援指定的裝置變數，則設定檔不會安裝在裝置上。 例如，如果 SCEP 設定檔的主體別名中使用 {{IMEI}}，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。  
+
    - **憑證有效期間**：如果您已在發行 CA 上執行 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 命令以允許自訂有效期間，就可以輸入憑證到期之前的剩餘時間長度。<br>您可以輸入一個比憑證範本中指定的有效期間更低，而不是更高的值。 例如，如果憑證範本中的憑證有效期間為兩年，您可以輸入一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。 
    - **金鑰儲存提供者 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10)：輸入儲存憑證金鑰的位置。 選擇下列其中一個值：
      - **註冊至受信任平台模組 (TPM) KSP (如果存在)，否則註冊至軟體 KSP**
@@ -357,40 +464,17 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
      - **註冊至 Passport，否則失敗 (Windows 10 及更新版本)**
      - **註冊至軟體 KSP**
 
-   - **主體名稱格式**：從清單中選取 Intune 如何自動在憑證要求中建立主體名稱。 如果憑證是針對使用者，您也可以在主體名稱中包含使用者的電子郵件地址。 從下列選項進行選擇：
-     - **未設定**
-     - **一般名稱**
-     - **包括電子郵件的一般名稱**
-     - **一般名稱及電子郵件地址**
-     - **IMEI (國際行動設備識別)**
-     - **序號**
-     - **自訂**：當您選取此選項時，會顯示另一個下拉式欄位。 您可以使用此欄位輸入自訂主體名稱格式。 自訂格式支援兩個變數： **(CN)** 與**電子郵件 (E)**。 **一般名稱 (CN)** 可以設定為下列任何變數：
-       - **CN={{UserName}}** 使用者的使用者主體名稱，例如 janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}** 當您在 Azure Active Directory (AD) 中註冊裝置時指派的識別碼。 此識別碼通常用於向 Azure AD 驗證。
-       - **CN={{SERIALNUMBER}}**：通常由製造商用於識別裝置的唯一序號 (SN)
-       - **CN={{IMEINumber}}**：用於識別行動電話的國際行動設備識別碼 (IMEI)
-       - **CN={{OnPrem_Distinguished_Name}}** 由逗號分隔的相對辨別名稱序列，例如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          若要使用 `{{OnPrem_Distinguished_Name}}` 變數，請務必將使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onpremisesdistingishedname` 使用者屬性與 Azure AD 同步。
-
-       - **CN={{onPremisesSamAccountName}}**：系統管理員可使用 Azure AD 連線到稱為 `onPremisesSamAccountName` 的屬性，將 Active Directory 的 samAccountName 屬性與 Azure AD 同步。 Intune 可將該變數替換為 SCEP 憑證主體中憑證發行要求的一部分。  samAccountName 屬性是使用者登入名稱，用於支援舊版 Windows 客戶端和伺服器 (Windows 2000 以前的版本)。 使用者登入名稱的格式為：`DomainName\testUser`，或僅 `testUser`。
-
-          若要使用 `{{onPremisesSamAccountName}}` 變數，請務必將使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onPremisesSamAccountName` 使用者屬性與 Azure AD 同步。
-
-       透過使用一或多個這些變數與靜態字串的組合，您可以建立自訂主體名稱格式，例如：**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**。 <br/> 在此範例中，您建立的主體名稱格式除了有 CN 與 E 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) 說明此函式和它支援的字串。
-
-- **主體別名**：輸入 Intune 如何在憑證要求中，自動建立主體別名 (SAN) 的值。 例如，如果您選取使用者憑證類型，就可以在主體別名中包含使用者主體名稱 (UPN)。 如果用戶端憑證將用來驗證網路原則伺服器，您必須將主體別名設定成 UPN。
-- **金鑰使用方法**：輸入憑證的金鑰使用方法選項。 選項包括：
-  - **金鑰編密**：只允許在金鑰加密後交換金鑰
-  - **數位簽章**：只允許在以數位簽章協助保護金鑰後交換金鑰
-- **金鑰大小 (位元)**：選取金鑰中要包含的位元數
-- **雜湊演算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：選取其中一種可用的雜湊演算法類型，搭配此憑證使用。 選取連線中裝置所支援的最強安全性層級。
-- **根憑證**：選擇您先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。
-- **擴充金鑰使用方法**：選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。
-- **註冊設定**
-  - **更新閾值 (%)**：輸入裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
-  - **SCEP 伺服器 URL**：輸入 一或多個將透過 SCEP 發行憑證的 NDES 伺服器 URL。
-  - 選取 [確定]然後選取 [建立] 以建立您的設定檔。
+   - **金鑰使用方法**：輸入憑證的金鑰使用方法選項。 選項包括：
+     - **金鑰編密**：只允許在金鑰加密後交換金鑰
+     - **數位簽章**：只允許在以數位簽章協助保護金鑰後交換金鑰
+   - **金鑰大小 (位元)**：選取金鑰中要包含的位元數
+   - **雜湊演算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：選取其中一種可用的雜湊演算法類型，搭配此憑證使用。 選取連線中裝置所支援的最強安全性層級。
+   - **根憑證**：選擇您先前所設定並指派到使用者或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。
+   - **擴充金鑰使用方法**：選擇 [新增] 以新增憑證使用目的值。 在大部分情況下，憑證需要 [用戶端驗證]，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。
+   - **註冊設定**
+     - **更新閾值 (%)**：輸入裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
+     - **SCEP 伺服器 URL**：輸入 一或多個將透過 SCEP 發行憑證的 NDES 伺服器 URL。
+     - 選取 [確定]然後選取 [建立] 以建立您的設定檔。
 
 設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 
@@ -450,7 +534,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 憑證授權單位無效或無法連線。 請確認憑證授權單位可用，且您的伺服器可以與其通訊。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帳戶無權撤銷來自 CA 的憑證。 請參閱事件訊息詳細資料中的 CA 名稱欄位，以判斷發行的 CA。  |
 | 0x00000403 | CertThumbprint_NotFound  | 找不到符合您輸入的憑證。 請註冊憑證連接器，然後再試一次。 |
 | 0x00000404 | Certificate_NotFound  | 找不到符合所提供輸入的憑證。 請重新註冊憑證連接器，然後再試一次。 |

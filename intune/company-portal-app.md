@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307401"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -34,7 +34,7 @@ ms.locfileid: "43329968"
 自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [用戶端應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
 
 > [!Note]       
-> 當使用者啟動工作流程以取得有關問題的說明時，Windows 10 版公司入口網站現在會將應用程式記錄檔直接傳送給 Microsoft。 這樣可以更輕鬆地進行疑難排解並解決向 Microsoft 提出的問題。  
+> 如果您使用 Azure Government，應用程式記錄檔會提供給終端使用者，用來決定當他們在起始程序取得問題說明時如何進行共用。 不過，如果您未使用 Azure Government，當使用者在起始程序取得問題說明時，Windows 10 版公司入口網站會將應用程式記錄檔直接傳送給 Microsoft。 應用程式記錄檔傳送給 Microsoft 可以更輕鬆地進行疑難排解並解決問題。 
 
 ## <a name="company-information-and-privacy-statement"></a>公司資訊和隱私權聲明        
 公司名稱顯示為公司入口網站標題。 當使用者按一下隱私權連結時，會顯示隱私權聲明。
@@ -61,7 +61,7 @@ ms.locfileid: "43329968"
 
 
 ## <a name="company-branding-customization"></a>公司商標自訂       
-您可以使用公司標誌、公司名稱、佈景主題色彩和背景自訂您的公司入口網站。     
+您可以使用公司標誌、公司名稱、佈景主題色彩和背景自訂您的公司入口網站。 若要在沒有測試裝置的情況下快速預覽商標設定，您可以前往 [portal.manage.microsoft.com](https://portal.manage.microsoft.com)。 請注意您上傳的標誌將會用於電子郵件範本。      
 
 ### <a name="theme-color"></a>佈景主題色彩
 將佈景主題色彩套用到公司入口網站。 選取標準色彩，或針對自訂色彩輸入六位數的十六進位碼。
@@ -82,3 +82,30 @@ ms.locfileid: "43329968"
 |**在標誌旁顯示公司名稱**| 選取此選項可在上傳的標誌旁顯示您輸入的公司名稱。 |
 
 儲存變更之後，可以選擇刀鋒視窗頂端的 [在 Intune Web 入口網路中預覽您的設定] 來查看您的設定。
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司入口網站鍵盤快速鍵
+
+終端使用者可以在 Windows 公司入口網站中使用鍵盤快速鍵觸發導覽、應用程式和裝置動作。
+
+您可以在 Windows 公司入口網站應用程式中使用下列鍵盤快速鍵。
+
+| 區域 | 說明 | 鍵盤快速鍵 |
+|:------------------:|:--------------:|:-----------------:|
+| 導覽功能表 | 導覽 | Alt+M |
+|  | 首頁 | Alt+H |
+|  | 所有應用程式 | Alt+A |
+|  | 已安裝的應用程式 | Alt+I |
+|  | 傳送意見反應 | Alt+F |
+|  | 我的設定檔 | Alt+U |
+|  | 設定 | Alt+T |
+| 首頁 - 裝置磚 | 重新命名 | F2 |
+|  | 移除 | Ctrl+D 或 Delete |
+|  | 檢查存取權 | Ctrl+M 或 F9 |
+| 裝置詳細資訊 | 重新命名 | F2 |
+|  | 移除 | Ctrl+D 或 Delete |
+|  | 檢查存取權 | Ctrl+M 或 F9 |
+| 應用程式詳細資料 | 安裝 | Ctrl+I |
+
+## <a name="next-steps"></a>接下來的步驟
+
+- [使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](store-apps-company-portal-app.md)

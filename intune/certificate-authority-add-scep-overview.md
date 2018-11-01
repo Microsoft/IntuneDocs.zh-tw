@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e088dbf4080cb6092ff506519b81438a0d5ce64c
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321621"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102101"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -123,6 +123,8 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 下列協力廠商憑證授權單位支援 Intune：
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub 開放原始碼版本](https://github.com/agerbergt/intune-ejbca-connector)
+- [EverTrust](https://evertrust.fr/en/products/)
 
 如果您是有興趣將產品與 Intune 整合的協力廠商 CA，請檢閱 API 指引：
 
