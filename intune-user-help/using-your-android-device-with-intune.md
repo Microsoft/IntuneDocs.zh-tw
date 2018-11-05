@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168942"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001553"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>搭配使用 Android 裝置與 Intune 公司入口網站
 
@@ -30,9 +30,9 @@ ms.locfileid: "47168942"
 
 ## <a name="supported-versions"></a>支援的版本
 
-公司入口網站目前支援 Android 4.4 和更新版本。 此外，也包括 Samsung Knox 4.4 和更新版本裝置的支援。
+公司入口網站目前支援 Android 4.4 和更新版本。 這包括執行 Android 4.4 和更新版本的 Samsung Knox 裝置。
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
+## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
 - [在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)
 - [建立工作設定檔並在 Intune 註冊您的裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
