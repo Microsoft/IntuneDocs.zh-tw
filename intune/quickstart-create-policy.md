@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581538"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391547"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>快速入門：為 Windows 10 裝置新增裝置合規性原則
 適用於 Windows 的 Intune 裝置合規性政策，會指定 Windows 裝置為被視為符合規範必須滿足的規則與設定。 您可以將這些原則與[條件式存取](https://docs.microsoft.com/intune/conditional-access)搭配使用，來允許或封鎖存取公司資源。 您也可以取得裝置報表，並針對不相容採取動作。
@@ -53,4 +53,4 @@ ms.locfileid: "46581538"
 在此快速入門中，您已建立並指派簡單的裝置合規性原則。 若要註冊將會接收原則的 Windows 10 裝置，請繼續進行快速入門來設定自動註冊。 
  
 > [!div class="nextstepaction"]
-> [設定自動註冊](quickstart-setup-auto-enrollment.md)
+> [設定裝置密碼長度](quickstart-set-password-length-android.md)

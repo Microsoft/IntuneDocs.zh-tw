@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3ccd2db88df4e5b7a51e0aa2446a99f33256432
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.custom: intune
+ms.openlocfilehash: 68cc4bb576f567787e702ccd88026579b6ed5b12
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028710"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425303"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -27,7 +27,7 @@ ms.locfileid: "47028710"
 > 您可能想要先閱讀 [Intune App SDK 快速入門](app-sdk-get-started.md)文章，其中說明如何在每個支援的平台上進行整合準備。
 
 ## <a name="overview"></a>概觀
-[Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)可讓您在以 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 繫結可讓開發人員輕鬆將 Intune 應用程式內的保護功能建置到以 Xamarin 為基礎的應用程式中。
+[Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)可讓您在以 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](app-protection-policy.md)。 繫結可讓開發人員輕鬆將 Intune 應用程式內的保護功能建置到以 Xamarin 為基礎的應用程式中。
 
 「Microsoft Intune App SDK Xamarin 繫結」可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 合併至以 Xamarin 開發的應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
@@ -80,14 +80,14 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用 Intune 應用程式保護原則
 
-若為未使用 UI 架構且以 Xamarin 為基礎的 Android 應用程式，您必須閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 針對您以 Xamarin 為基礎的 Android 應用程式，您必須根據指南中包含的[資料表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)，將類別、方法和活動取代為其 MAM 對等項目。 如果您的應用程式未定義 `android.app.Application` 類別，則需要建立一個，並確定繼承自 `MAMApplication`。
+若為未使用 UI 架構且以 Xamarin 為基礎的 Android 應用程式，您必須閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 針對您以 Xamarin 為基礎的 Android 應用程式，您必須根據指南中包含的[資料表](app-sdk-android.md#class-and-method-replacements)，將類別、方法和活動取代為其 MAM 對等項目。 如果您的應用程式未定義 `android.app.Application` 類別，則需要建立一個，並確定繼承自 `MAMApplication`。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 整合
 
 1. 將最新版的 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。 這會提供您 Intune 的必要參考來啟用應用程式。
 
 2. 徹底閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)，並特別注意：
-    1. [完整類別和方法取代](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)一節。 
+    1. [完整類別和方法取代](app-sdk-android.md#class-and-method-replacements)一節。 
     2. [MAMApplication ](app-sdk-android.md#mamapplication)。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
     3. [ADAL 整合](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)一節 (如果您的應用程式向 AAD 執行驗證)。
     4. [MAM-WE 註冊](app-sdk-android.md#app-protection-policy-without-device-enrollment)一節 (如果您想從應用程式中的 MAM 服務取得原則)。

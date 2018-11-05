@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f0680f601d59695828355496ef7b817335dc0d4
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ac8b70cd370d0c22a615d0d0bdc215cb3a332520
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827967"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425167"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "48827967"
 | **需要 PIN 碼才可存取** | 選取 [是]，需要 PIN 才能使用此應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 線上或離線工作時都會套用 PIN。  <br><br> 預設值 = [是]。 <br><br> 進行下列 PIN 強度設定： <br><br> <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。  <br><br> ***注意：** 若要設定密碼類型，應用程式需要有 Intune SDK 版本 7.1.12 或更新版本。數值類型沒有 Intune SDK 版本限制。所允許特殊字元包括 iOS 英文鍵盤上的特殊字元和符號。*  <br><br> 預設值 = **數值**。  </li></ul> <br> <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 此原則設定格式支援正整數。  <br><br> 預設值 = **5**。 </li></ul> <br> <ul><li>**允許簡單的 PIN**：選取 [是]，允許使用者使用簡單的 PIN 序列 (例如 1234、1111、abcd 或 aaaa)。 選取 [否]，防止其使用簡單的序列。 <br><br>**注意：***如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，則使用者的 PIN 需要至少 1 個字母**或**至少 1 個特殊字元。如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，則使用者的 PIN 需要至少 1 個數字**和** 1 個字母**以及**至少 1 個特殊字元。*  <br><br> 預設值 = [是]。  </li></ul> <br> <ul><li>**PIN 長度**：指定 PIN 序列的最小位數。 <br><br>預設值 = **4**。</li></ul> </li></ul> <br> <ul><li>**允許指紋而非 PIN (iOS 8.0+)**：選取 [是]，允許使用者對應用程式存取使用 [Touch ID](https://support.apple.com/HT201371)，而非 PIN。  <br><br> 預設值 = [是]。 </li></ul> </li></ul> <br> <ul><li> **允許臉部辨識而非 PIN (iOS 11+)**：選取 [是]，允許使用者對應用程式存取使用 [Face ID](https://support.apple.com/HT208109)，而非 PIN。     <br><br>***注意：** 若要設定臉部辨識，應用程式需要有 Intune SDK 7.1.19 版或更新版本。* <br><br>預設值 = [是]。 當使用者透過其公司帳戶存取應用程式時，系統會提示使用者提供臉部識別碼。</li></ul>  </li></ul> <br> <ul><li>**在裝置 PIN 受控時，停用應用程式 PIN**：選取 [是]，在設定公司入口網站的已註冊裝置上偵測到裝置鎖定時，停用應用程式 PIN。<br><br> ***注意：** 應用程式需要 Intune SDK 7.0.1 版或更新版本。*  <br><br> 預設值 = [否]。 </li></ul> <br> 在 iOS 裝置上，您可以讓使用者使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109)而非 PIN 來證明其身分識別。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 來驗證使用 Touch ID 和 Face ID 的使用者。 若要深入了解 Touch ID 和 Face ID，請參閱 [iOS 安全性指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。  <br><br> 使用者嘗試透過其公司或學校帳戶使用此應用程式時，系統會提示他們提供自己的指紋識別或臉部識別，而不是輸入 PIN。 啟用此設定時，App 切換預覽影像會在使用工作或學校帳戶時變得很模糊。  |  
 | **需要公司認證才能存取** | 選取 [是]，需要使用者以公司或學校帳戶登入來存取應用程式，而不是輸入 PIN。 如果您將此設定為 [是]，並且已開啟 PIN 或生物識別登入提示 ，則將會顯示公司認證以及 PIN 或生物識別登入提示 。 <br><br> 預設值 = 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |  選取 [是]，防止在已進行 JB 或 Root 破解的裝置上執行此應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的工作或學校資料。  <br><br> 預設值 = **是** |
-| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <br><br><ul><li>**逾時**︰重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟 PIN 及「封鎖已 Root 破解的裝置」，當使用者開啟受控於 Intune 的應用程式時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 如果使用此設定，使用者在等於設定值的時段內都不需要在任何受控於 Intune 的應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br> 預設值 = **30 分鐘**  <br><br>***注意：** 在 iOS 上，**相同發行者**的所有受控於 Intune 的應用程式都會共用 PIN。當裝置上的應用程式離開前景時，特定 PIN 的 PIN 計時器就會重設。在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並受 Intune 管理的應用程式上輸入 PIN。此原則設定格式支援正整數。*    <br><br></li><li>**離線寬限期**：MAM 應用程式可以離線執行的分鐘數。 指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 在設定的期間過後，該應用程式會封鎖對公司或學校資料的存取要求，直到有可用的網路連線為止。 此原則設定格式支援正整數。<br><br>預設值 = **720** 分鐘 (12 小時) 
+| **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <br><br><ul><li>**逾時**︰重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟 PIN 及「封鎖已 Root 破解的裝置」，當使用者開啟受控於 Intune 的應用程式時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 如果使用這項設定，使用者在等於設定值的時段內都不需要在任何 Intune 受控應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br> 預設值 = **30 分鐘**  <br><br>***注意：** 在 iOS 上，**相同發行者**的所有受控於 Intune 的應用程式都會共用 PIN。當裝置上的應用程式離開前景時，特定 PIN 的 PIN 計時器就會重設。在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 並受 Intune 管理的應用程式上輸入 PIN。此原則設定格式支援正整數。*    <br><br></li><li>**離線寬限期**：MAM 應用程式可以離線執行的分鐘數。 指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 在設定的期間過後，該應用程式會封鎖對公司或學校資料的存取要求，直到有可用的網路連線為止。 此原則設定格式支援正整數。<br><br>預設值 = **720** 分鐘 (12 小時) 
 | **離線間隔幾天後抹除 App 資料** | 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式需要使用者連線到網路並重新驗證。 如果使用者成功驗證，就可以繼續存取其資料，而且會重設離線間隔。  如果使用者無法驗證，應用程式會執行使用者帳戶和資料的選擇性抹除。  如需使用選擇性抹除會移除哪些資料的詳細資訊，請參閱[如何只抹除 Intune 管理之應用程式中的公司資料](https://docs.microsoft.com/intune/apps-selective-wipe)。 此原則設定格式支援正整數。 <br><br>  預設值 = **90 天** |
 | **需要最低的 iOS 作業系統** | 選取 [是]，要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，將會封鎖使用者進行存取。 <br><br> ***注意：** 應用程式需要 Intune SDK 7.0.1 版或更新版本。*<br><br>  預設值 = 否 |
 | **需要最低的 iOS 作業系統 (僅警告)** | 選取 [是]，要求使用此應用程式的最低 iOS 作業系統。 如果裝置上的 iOS 版本不符合需求，使用者將會看見通知。 此通知可以關閉。 <br><br> ***注意：** 應用程式需要 Intune SDK 7.0.1 版或更新版本。* <br><br>  預設值 = 否 |
@@ -78,7 +78,7 @@ ms.locfileid: "48827967"
 | **需要最低的 Intune 應用程式保護原則 SDK 版本** | 選取 [是]，要求在應用程式上使用的最低 Intune 應用程式保護原則 SDK 版本。 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](app-sdk.md)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br> ***注意：** 應用程式需要 Intune SDK 7.0.1 版或更新版本。* <br><br>  預設值 = 否 |
 
 > [!NOTE]
-> 若要深入了解在同一應用程式和使用者集合的 [存取] 區段中設定的多個 Intune 應用程式保護設定如何在 iOS 上運作，請參閱 [Intune MAM 常見問題集](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)與[在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料](app-protection-policies-access-actions.md)。
+> 若要深入了解在同一應用程式和使用者集合的 [存取] 區段中設定的多個 Intune 應用程式保護設定如何在 iOS 上運作，請參閱 [Intune MAM 常見問題集](https://docs.microsoft.com/intune/mam-faq#app-experience-on-ios)與[在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料](app-protection-policies-access-actions.md)。
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 應用程式增益集
 
@@ -117,9 +117,9 @@ Intune SDK 和 Intune 應用程式保護原則不包含管理 LinkedIn 帳戶連
 
 |Microsoft Graph 權限  |說明  |
 |---------|---------|
-|[人員](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions)的讀取權限     |可讓應用程式讀取與登入與使用者相關的人員評分清單。 清單可以包括本機連絡人、來自社交網路或貴組織目錄的連絡人，以及最近連絡過 (例如電子郵件與 Skype) 的人員。         |
-|[行事曆](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0)的讀取權限     |允許應用程式讀取使用者行事曆中的事件。 包含登入使用者行事曆中的會議、其時間、位置及出席者。         |
-|[使用者設定檔](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0)的讀取權限     |允許使用者登入應用程式，以及允許應用程式讀取登入之使用者的設定檔。 它也允許應用程式讀取登入之使用者的基本公司資訊。         |
+|[人員](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)的讀取權限     |可讓應用程式讀取與登入與使用者相關的人員評分清單。 清單可以包括本機連絡人、來自社交網路或貴組織目錄的連絡人，以及最近連絡過 (例如電子郵件與 Skype) 的人員。         |
+|[行事曆](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)的讀取權限     |允許應用程式讀取使用者行事曆中的事件。 包含登入使用者行事曆中的會議、其時間、位置及出席者。         |
+|[使用者設定檔](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)的讀取權限     |允許使用者登入應用程式，以及允許應用程式讀取登入之使用者的設定檔。 它也允許應用程式讀取登入之使用者的基本公司資訊。         |
 |Subscriptions     |未提供此範圍且尚未使用。 它包含使用者組織提供給 Microsoft 應用程式和服務 (例如 Office 365) 的訂閱。         |
 |深入資訊     |未提供此範圍且尚未使用。 它包含根據 Microsoft 服務的使用，與登入的使用者帳戶建立關聯的興趣。         |
 
@@ -127,6 +127,6 @@ Intune SDK 和 Intune 應用程式保護原則不包含管理 LinkedIn 帳戶連
 
 - 深入了解 [LinkedIn information and features in your Microsoft apps](https://go.microsoft.com/fwlink/?linkid=850740) (Microsoft 應用程式中的 LinkedIn 資訊與功能)。
 - 在 [Office 365 藍圖頁面](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)上深入了解 LinkedIn 帳戶連線版本。 
-- 深入了解 [Microsoft 應用程式和服務的 LinkedIn 帳戶連線](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration)。
+- 深入了解 [Microsoft 應用程式和服務的 LinkedIn 帳戶連線](https://docs.microsoft.com/azure/active-directory/linkedin-integration)。
 - 如需在使用者的 LinkedIn 與 Microsoft 工作或學校帳戶之間共用之資料的詳細資訊，請參閱 [LinkedIn in Microsoft applications at your work or school](https://www.linkedin.com/help/linkedin/answer/84077) (工作或學校之 Microsoft 應用程式中的 LinkedIn)。
 

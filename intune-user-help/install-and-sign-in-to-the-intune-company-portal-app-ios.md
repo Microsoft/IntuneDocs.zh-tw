@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: 870590df70474db02dc4b3e4ba5a8251aeeb2f26
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260193"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959463"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安裝並登入公司入口網站應用程式
 
@@ -32,7 +32,7 @@ ms.locfileid: "48260193"
 
 2.  下載 [Intune 公司入口網站] 應用程式。
 
-    ![Intune 公司入口網站應用程式在 App Store 中之外觀的螢幕擷取畫面。](./media/cp_iosredesign_after_1803_04.png)
+    ![Intune 公司入口網站應用程式在 App Store 中之外觀的螢幕擷取畫面。](./media/CP_iosRedesign_after_1803_04.PNG)
 
 3.  開啟公司入口網站應用程式，輸入您的公司或學校電子郵件地址和密碼，然後點選 [登入]。
 

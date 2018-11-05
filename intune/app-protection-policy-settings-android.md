@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ae031f601792251f1dcf7b93fb914a740bc36300
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828324"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136976"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -61,6 +61,7 @@ ms.locfileid: "48828324"
   | com.android.webview |[WebView](https://developer.android.com/reference/android/webkit/WebView.html)，這是許多應用程式 (包括 Outlook) 的必要項目。|
   | com.google.android.tts | Google 文字轉換語音 |
   | com.android.providers.settings | Android 系統設定 |
+  | com.android.settings | Android 系統設定 |
   | com.azure.authenticator | Azure Authenticator 應用程式，這是許多情況下成功驗證的必要項目。 |
   | com.microsoft.windowsintune.companyportal | Intune 公司入口網站|
 
@@ -80,7 +81,7 @@ ms.locfileid: "48828324"
 
 | 設定 | 如何使用 |  
 |------|------| 
-| **需要 PIN 碼才可存取** | 選取 [是]，需要 PIN 才能使用這個應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 <br><br> 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <br> <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> 預設值 = **數值**<br><br> ***注意：** 允許的特殊字元包括 Android 英文鍵盤上的特殊字元和符號。*</li></ul>  <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 <br><br> 預設值 = **5** </li> <br> <li> **允許簡單的 PIN**：選取 [是]，允許使用者使用簡單的 PIN 序列，例如 *1234*、*1111*、*abcd* 或 *aaaa*。 選取 [否]，防止其使用簡單的序號。 <br><br>預設值 = [是] <br><br>***注意**：如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，那麼使用者的 PIN 中需要至少 1 個字母**或**至少 1 個特殊字元。如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，那麼使用者的 PIN 中需要至少一個數字**和**一個字母**和**至少一個特殊字元。*</li> <br> <li>  **PIN 長度**：指定 PIN 序列的最小位數。<br><br>預設值 = **4** </li> <br> <li> **允許指紋而非 PIN (Android 6.0+)**：選取 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。<br><br>預設值 = **是** <br><br>***注意**：此功能支援 Android 設備上的生物識別通用控制項。 「不支援」OEM 特定的生物特徵辨識設定，例如 * Samsung。*。* <br><br>在 Android 上，您可以讓使用者使用 [Android 指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 來證明其身分識別。 使用者嘗試使用自己的公司或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 <br><br> Android 工作設定檔必須註冊個別指紋，才能強制執行**允許指紋而非 PIN** 原則。 此原則僅針對 Android 工作設定檔中安裝的原則管理應用程式生效。 藉著在公司入口網站中註冊而建立 Android 工作設定檔之後，個別指紋必須在裝置上註冊。 如需使用 Android 工作設定檔的工作設定檔指紋詳細資訊，請參閱[鎖定您的工作資料夾](https://support.google.com/work/android/answer/7029958)。| 
+| **需要 PIN 碼才可存取** | 選取 [是]，需要 PIN 才能使用此應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 <br><br> 預設值 = [是]。<br><br> 進行下列 PIN 強度設定： <br> <ul><li>**選取類型**：先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> 預設值 = **數值**<br><br> ***注意：** 允許的特殊字元包括 Android 英文鍵盤上的特殊字元和符號。*</li></ul>  <ul><li>**PIN 碼重設前的嘗試次數**：指定使用者必須嘗試順利輸入幾次其 PIN 後才能重設 PIN。 <br><br> 預設值 = **5** </li> <br> <li> **允許簡單的 PIN**：選取 [是]，允許使用者使用簡單的 PIN 序列，例如 *1234*、*1111*、*abcd* 或 *aaaa*。 選取 [否]，防止其使用簡單的序列。 <br><br>預設值 = [是] <br><br>***注意**：如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [是]，那麼使用者的 PIN 中需要至少 1 個字母**或**至少 1 個特殊字元。如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 設定為 [否]，那麼使用者的 PIN 中需要至少一個數字**和**一個字母**和**至少一個特殊字元。*</li> <br> <li>  **PIN 長度**：指定 PIN 序列的最小位數。<br><br>預設值 = **4** </li> <br> <li> **允許指紋而非 PIN (Android 6.0+)**：選取 [是]，讓使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)，而非 PIN。<br><br>預設值 = **是** <br><br>***注意**：此功能支援 Android 設備上的生物識別通用控制項。 「不支援」OEM 特定的生物特徵辨識設定，例如 * Samsung。*。* <br><br>在 Android 上，您可以讓使用者使用 [Android 指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 來證明其身分識別。 使用者嘗試使用自己的公司或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 <br><br> Android 工作設定檔必須註冊個別指紋，才能強制執行**允許指紋而非 PIN** 原則。 此原則僅針對 Android 工作設定檔中安裝的原則管理應用程式生效。 藉著在公司入口網站中註冊而建立 Android 工作設定檔之後，個別指紋必須在裝置上註冊。 如需使用 Android 工作設定檔的工作設定檔指紋詳細資訊，請參閱[鎖定您的工作資料夾](https://support.google.com/work/android/answer/7029958)。| 
 | **需要公司認證才能存取** | 選擇 [是]，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 設定為 [是]，並且已開啟 PIN 或生物識別登入提示時，則將會顯示公司認證以及 PIN 或生物識別登入提示。 <br><br>預設值 = 否 |
 | **封鎖在已進行 JB 或 Root 破解的裝置上執行受管理的應用程式** |選擇 [是]，防止在已進行 JB 或 Root 破解的裝置上執行這個應用程式。 使用者可以繼續使用這個應用程式來執行個人工作，但必須使用不同的裝置來存取這個應用程式中的公司或學校資料。 <br><br>預設值 = [是] |
 | **重新檢查存取需求前等候時間 (分鐘)** | 進行以下設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟 PIN 及「封鎖已 Root 破解的裝置」，則當使用者開啟 Intune 受控應用程式時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 如果使用這項設定，使用者在等於設定值的時段內都不需要在任何 Intune 受控應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br>此原則設定格式支援正整數。 <br><br> 預設值 = **30 分鐘** <br><br> ***注意：** 在 Android 上，PIN 會在所有 Intune 受控應用程式間共用。當裝置上的應用程式離開前景時，PIN 計時器就會重設。在此設定中定義的逾時持續時間內，使用者不需要在任何共用 PIN 和 Intune 受控應用程式上輸入 PIN。* <br><br></li><li>**離線寬限期**：這是 MAM 應用程式可以離線執行的分鐘數。 指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 在這段期間過後，應用程式必須進行 Azure Active Directory (Azure AD) 的使用者驗證，如此應用程式才能繼續執行。 <br><br>此原則設定格式支援正整數。 <br><br>預設值 = **720** 分鐘 (12 小時)</li></ul>|
@@ -89,8 +90,8 @@ ms.locfileid: "48828324"
 | **當裝置 PIN 受到管理時，停用應用程式 PIN** | 選取 [是] 以在已註冊裝置上偵測到裝置鎖定時停用應用程式 PIN。 <br><br>***注意：** Intune 無法偵測 Android 上使用協力廠商 EMM 解決方案的裝置註冊。* <br><br>預設值 = 否 |
 | **需要最低的 Android 作業系統** | 選取 [是] 以要求使用此應用程式的最低 Android 作業系統。 如果裝置上的 Android 版本不符合需求，將會禁止使用者存取。 <br><br>此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
 | **需要最低的 Android 作業系統 (僅警告)** | 選取 [是] 以要求使用此應用程式的最低 Android 作業系統。 如果裝置上的 Android 版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
-| **需要最低的應用程式版本** | 選取 [是] 以要求使用應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，將會封鎖使用者進行存取。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
-| **需要最低的應用程式版本 (僅警告)** | 選取 [是] 以建議使用此應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
+| **需要最低的應用程式版本** | 選取 [是]，要求使用應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，將會封鎖使用者進行存取。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
+| **需要最低的應用程式版本 (僅警告)** | 選取 [是]，建議使用此應用程式的最低應用程式版本。 如果裝置上的應用程式版本不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br>因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」)。 <br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 <br><br>預設值 = 否 |
 | **至少需要 Android 修補程式版本** | 選取 [是] 要求 Google 發行的最低 Android 安全性修補程式。 如果裝置上的 Android 安全性修補程式不符合需求，將會禁止使用者進行存取。<br><br> 此原則設定格式支援 *YYYY-MM-DD* 的日期格式。  <br><br>預設值 = 否 |
 | **至少需要 Android 修補程式版本 (僅限警告)** | 選取 [是] 要求 Google 發行的最低 Android 安全性修補程式。 如果裝置上的 Android 安全性修補程式不符合需求，使用者將會看見通知。 此通知可以關閉。<br><br> 此原則設定格式支援 *YYYY-MM-DD* 的日期格式。  <br><br>預設值 = 否|
 

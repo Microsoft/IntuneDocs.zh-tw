@@ -1,12 +1,12 @@
 ---
 title: 將 Win32 應用程式新增至 Microsoft Intune
 titlesuffix: ''
-description: 了解如何將 Win32 應用程式新增至 Microsoft Intune 並進行管理。
+description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9513673b68522c6838a2f2090c597343d65d7004
-ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
+ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890990"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959582"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
-Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本文提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
+Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
 
 ## <a name="prerequisites-for-public-preview"></a>公開預覽的必要條件
 
@@ -51,7 +51,7 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 |    `-h`     |    [說明]    |
 |    `-c <setup_folder>`     |    所有安裝程式檔案的安裝程式資料夾。    |
 |   ` -s <setup_file>`     |    安裝程式檔案 (例如 *setup.exe* 或 *setup.msi*)。    |
-|    `-o <output_file>`     |    產生 *.intunewin* 檔案的輸出資料夾。    |
+|    `-o <output_folder>`     |    產生 *.intunewin* 檔案的輸出資料夾。    |
 |    `-q`       |    安靜模式    |
 
 ### <a name="example-commands"></a>範例命令

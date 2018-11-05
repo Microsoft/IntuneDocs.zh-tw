@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102033"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149099"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
@@ -29,9 +29,7 @@ ms.locfileid: "49102033"
 在 Microsoft Intune 中使用應用程式設定原則，以提供 Android 工作設定檔應用程式的設定。 應用程式開發人員必須公開 Android 受控應用程式組態設定，才能為該應用程式指定組態設定。 請將應用程式設定原則指派給您想要套用設定的使用者群組。  每當應用程式檢查是否有原則設定時 (通常是第一次執行時)，便會使用這些原則設定。
 
 > [!Note]  
-> 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們建置的應用程式是否支援應用程式設定原則。<p></p>
-> 身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增到 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。<p></p>
-> 如果是 Microsoft Word、Microsoft Excel、Microsoft PowerPoint，您必須使用 Android 16.0.9327.1000 和更新版本。
+> 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們建置的應用程式是否支援應用程式設定原則。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
@@ -80,7 +78,9 @@ ms.locfileid: "49102033"
 | **值** | <ul><li>一或多個以 <code>;</code> 分隔的 UPN。</li><li>只有允許的帳戶才是這個索引鍵所定義受控使用者帳戶。</li><li> 若為 Intune 註冊的裝置，<code>{{userprincipalname}}</code> 權杖可用來代表註冊的使用者帳戶。</li></ul> |
 
    > [!NOTE]
-   > 使用多重身分識別只允許設定的組織帳戶時，您必須使用 Outlook for Android 2.2.222 或更新版本。 
+   > 使用多重身分識別只允許設定的組織帳戶時，您必須使用 Outlook for Android 2.2.222 或更新版本。<p></p>
+   > 身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增至 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。<p></p>
+   > 如果是 Microsoft Word、Microsoft Excel、Microsoft PowerPoint，則您必須使用應用程式 16.0.9327.1000 版和更新版本。 
 
 ## <a name="enter-the-json-editor"></a>進入 JSON 編輯器
 
@@ -96,7 +96,7 @@ ms.locfileid: "49102033"
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>預先設定應用程式的權限授與狀態
 
-您也可以預先設定應用程式的權限，以存取 Android 裝置功能。 根據預設，需要裝置權限 (例如存取位置或裝置相機) 的 Android 應用程式會提示使用者接受或拒絕授與權限。 例如，若應用程式會使用裝置的麥克風，則系統會提示使用者授與應用程式使用麥克風的權限。
+您也可以預先設定應用程式的權限，以存取 Android 裝置功能。 根據預設，需要裝置權限 (例如存取位置或裝置相機) 的 Android 應用程式會提示使用者接受或拒絕授與權限。 例如，若應用程式會使用裝置的麥克風，則系統會提示使用者授與應用程式使用麥克風的權限。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。

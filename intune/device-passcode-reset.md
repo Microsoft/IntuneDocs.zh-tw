@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300454"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424912"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -49,7 +49,6 @@ ms.locfileid: "46300454"
 | 執行 7.x 版及更舊版本的 Android 裝置 | 否 |
 | iOS | 否 |
 | macOS | 否 |
-| iOS | 否 |
 
 若要建立新的工作設定檔密碼，請使用 [重設密碼] 動作。 此動作會提示密碼重設，並僅針對工作設定檔建立新的暫時密碼。 
 

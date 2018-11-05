@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329992"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001604"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 裝置限制設定
 
@@ -215,8 +215,8 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 -   **僅使用組態設定檔加入 Wi-Fi 網路 (僅限受監督)** - 僅允許裝置加入已設定 Intune Wi-Fi 設定檔的 Wi-Fi 網路。
 
 - **行動數據使用規則 (僅限受管理的應用程式)** - 讓您定義受管理的應用程式可在行動電話通訊網路上使用的資料類型。 從下列選項進行選擇：
-    - **封鎖使用行動數據** - 您可以封鎖使用 [All managed apps] (所有受控應用程式)**** 的行動數據，或 [Choose specific apps] (選擇特定的應用程式)。
-    - **漫遊時封鎖使用行動數據** - 您可以封鎖漫遊時使用 [All managed apps] (所有受控應用程式)**** 的行動數據，或 [Choose specific apps] (選擇特定的應用程式)。
+    - **封鎖使用行動數據** - 您可以封鎖使用 [所有受控應用程式] 的行動數據，或 [選擇特定應用程式]。
+    - **漫遊時封鎖使用行動數據** - 您可以在漫遊時封鎖使用 [所有受控應用程式] 的行動數據，或 [選擇特定應用程式]。
 
 ## <a name="connected-devices"></a>已連線的裝置
 

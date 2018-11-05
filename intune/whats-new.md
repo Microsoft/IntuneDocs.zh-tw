@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 89264dbd2024b976d7c57278b188223679b33836
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
+ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169561"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149116"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,7 +40,25 @@ ms.locfileid: "49169561"
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->   
+-->     
+## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日當週
+
+### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>從裝置移除電子郵件設定檔，即使只有一個電子郵件設定檔也一樣 <!-- 1818139 -->
+之前，「如果」這是唯一的電子郵件設定檔，則無法從裝置移除電子郵件設定檔。 在此更新中，此行為會有所變更。 現在，您可以移除電子郵件設定檔，即使裝置上只有一個電子郵件設定檔也一樣。 如需詳細資訊，請參閱[使用 Intune 將電子郵件設定新增至裝置](email-settings-configure.md)。
+
+### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>從您的裝置移除 PKCS 和 SCEP 憑證 <!-- 3218390 -->
+在某些案例中，PKCS 和 SCEP 憑證會保留在裝置上，即使從群組中移除原則、刪除設定或合規性部署，或是系統管理員更新現有的 SCEP 或 PKCS 設定檔也一樣。 此更新會變更該行為。 在某些案例中，PKCS 和 SCEP 憑證會從裝置移除；在某些案例中，這些憑證會保留在裝置上。 請參閱[在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證](remove-certificates.md)以了解這些案例。
+
+### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>適用於 Intune 的 PowerShell 模組 - 現供預覽 <!-- wnready 951068 -->
+新的 PowerShell 模組透過 Microsoft Graph 支援 Intune API，現在於 [GitHub]( https://aka.ms/intunepowershell) 上提供預覽。 如需如何使用此模組的詳細資料，請參閱該位置的讀我檔案。 
+
+## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日當週
+
+### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>當您變更 iOS 裝置上的指紋或 Face ID 時會收到提示必須輸入 PIN <!-- 2637704  -->
+現在，當使用者在其 iOS 裝置上進行生物特徵辨識變更之後，會收到輸入 PIN 的提示。 這包括變更已註冊的指紋或 Face ID。 提示時間取決於 [重新檢查存取需求前的剩餘時間 (分鐘)] 逾時的設定方式。  若未設定任何 PIN，則系統會提示使用者設定一個。 
+ 
+此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 此整合會以輪流的方式發生，並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
+
 
 ## <a name="week-of-october-1-2018"></a>2018 年 10 月 1 日當週
 
@@ -238,7 +256,7 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 及更新版本之裝置上的控制 S 模式 - 公開預覽 <!-- 1958649 -->
 透過此功能更新，您可以建立裝置組態設定檔以將 Windows 10 裝置切換出 S 模式，或防止使用者將裝置切換出 S 模式。 此功能位於 Intune > [裝置設定] > [設定檔] >  [Windows 10 and later] \(Windows 10 及更新版本\) > [Edition upgrade and mode switch] \(版本升級和模式切換\) 中。
 [引進 Windows 10 S 模式](https://www.microsoft.com/windows/s-mode)提供 S 模式的詳細資訊。
-適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 設定套件會自動新增至組態設定檔 <!-- 2144658 -->
@@ -247,7 +265,7 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>要求使用者在裝置設定期間連線 <!--2311457-->
 您現在可以設定裝置設定檔，要求裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用這項設定。
-適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>限制應用程式，並封鎖存取 iOS 和 Android Enterprise 裝置上的公司資源 <!-- 2451462 -->
@@ -280,7 +298,7 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>將使用者和易記名稱指派給 AutoPilot 裝置 <!--1346521 -->
 您現在可以[將使用者指派給單一 Autopilot 裝置](enrollment-autopilot.md)。 系統管理員也可以提供易記名稱，以在使用 Autopilot 設定其裝置時歡迎使用者。
-適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 註冊期間，使用 VPP 裝置授權預先佈建公司入口網站 <!-- 1608345 -->
 您現在可以於裝置註冊計劃 (DEP) 註冊期間，使用大量採購方案 (VPP) 裝置授權預先佈建公司入口網站。 若要這麼做，當您[建立或編輯註冊設定檔時](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)，請指定您要用來安裝公司入口網站的 VPP 權杖。 請確定您的權杖未過期，而且您有足夠的公司入口網站應用程式權限。 如果權杖過期或授權不足，則 Intune會改為推送 App Store 公司入口網站 (這會提示您輸入 Apple 識別碼)。
@@ -292,11 +310,11 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 您可以在 Intune 中[封鎖 Windows 個人裝置](enrollment-restrictions-set.md#set-device-type-restrictions)註冊[行動裝置管理](windows-enroll.md)。 使用此功能無法封鎖使用 [Intune PC 代理程式](manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。 此功能會在未來幾週推出，因此您在使用者介面中可能不會立即看到它。
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 AutoPIlot 設定檔中指定電腦名稱模式 <!--1849855-->
-您可以[指定電腦名稱範本](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，以在 AutoPilot 註冊期間產生並設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+您可以[指定電腦名稱範本](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，以在 AutoPilot 註冊期間產生並設定[電腦名稱](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>針對 Windows AutoPilot 設定檔，隱藏公司登入頁面和網域錯誤頁面上的變更帳戶選項 <!--1901669 -->
-[新增 Windows AutoPilot 設定檔選項](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，讓管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)組建 (目前為預覽版)。
+[新增 Windows AutoPilot 設定檔選項](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，讓管理員隱藏公司登入和網域錯誤頁面上的變更帳戶選項。 隱藏這些選項需要在 Azure Active Directory 中設定公司商標。 適用於：最新的 [Windows 測試人員](https://docs.microsoft.com/windows-insider/at-work-pro/)組建 (目前為預覽版)。
 
 
 
@@ -327,7 +345,7 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 - 已改進大型應用程式目錄的效能
 - 增加所有使用者的協助工具  
 
-已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。 若要檢視應用程式增強功能的範例，請參閱 [Intune 終端使用者應用程式的 UI 更新](whats-new-app-ui.md)。  
+已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。 若要檢視應用程式增強功能的範例，請參閱 [Intune 終端使用者應用程式的 UI 更新](whats-new-app-ui.md)。  
 
 ### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
 
@@ -486,7 +504,7 @@ Intune IT 系統管理員可以透過 Intune 應用程式防護原則，強制�
 ### <a name="device-configuration"></a>裝置設定
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>使用 [存取公司或學校資源] 設定來選取裝置類別 <!-- 1058963 eenotready --> 
-如果您已啟用[裝置群組對應](https://docs.microsoft.com/en-us/intune/device-group-mapping)，現在將在 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕註冊之後，提示他們選取裝置類別。 
+如果您已啟用[裝置群組對應](https://docs.microsoft.com/intune/device-group-mapping)，現在將在 Windows 10 上的使用者透過 [設定] > [帳戶] > [存取公司或學校資源] 中的 [連線] 按鈕註冊之後，提示他們選取裝置類別。 
 
 #### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>使用 sAMAccountName 作為電子郵件設定檔的帳戶使用者名稱 <!-- 1500307 -->
 您可以使用內部部署 **sAMAccountName**，作為 Android、iOS 和 Windows 10 電子郵件設定檔的帳戶使用者名稱。 也可以從Azure Active Directory (Azure AD) 中的 `domain` 或 `ntdomain` 屬性取得網域。 或者，輸入自訂靜態網域。
@@ -695,8 +713,8 @@ Intune 系統管理員可以將應用程式的啟動要求設定為使用密碼�
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>macOS 的企業營運 (LOB) 應用程式支援 <!-- 1473977 -->
 Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式。 您將能夠在以 GitHub 中提供的工具對 macOS LOB 應用程式進行前處理之後，將其新增至 Intune。 在 Azure 入口網站中，從 [Intune] 刀鋒視窗選擇 [用戶端應用程式]。 在 [用戶端應用程式] 刀鋒視窗上，選擇 [應用程式] > [新增]。 在 [新增應用程式] 刀鋒視窗上，選取 [企業營運應用程式]。 
 
-#### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>適用於 Android for Work (AFW) 應用程式指派的內建所有使用者和所有裝置群組 <!-- 1813073 -->
-您可以使用內建的 [所有使用者] 與 [所有裝置] 群組指派 AFW 應用程式。 如需詳細資訊，請參閱 [Microsoft Intune 的包含與排除應用程式指派](apps-inc-exl-assignments.md)。
+#### <a name="built-in-all-users-and-all-devices-group-for-android-enterprise-work-profile-app-assignment----1813073---"></a>適用於 Android Enterprise 工作設定檔應用程式指派的內建所有使用者和所有裝置群組 <!-- 1813073 -->
+您可以利用內建的 [所有使用者] 和 [所有裝置] 群組來進行 Android Enterprise 工作設定檔應用程式指派。 如需詳細資訊，請參閱 [Microsoft Intune 的包含與排除應用程式指派](apps-inc-exl-assignments.md)。
 
 #### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune 會重新安裝被使用者解除安裝的必要應用程式 <!-- 1947010 -->
 如果終端使用者解除安裝必要的應用程式，Intune 會在 24 小時內自動重新安裝應用程式，而不會等待 7 天的重新評估週期。
@@ -724,10 +742,10 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 
 教育版設定檔的新設定位於 [印表機] 類別下：[印表機]、[預設印表機]、[Add new printers] (新增印表機)。
 
-#### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>在個人的設定檔中顯示呼叫者識別碼 - Android for Work <!--1098984 -->
+#### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>在個人的設定檔中顯示呼叫者識別碼 - Android Enterprise 工作設定檔 <!--1098984 -->
 在裝置上使用個人設定檔時，終端使用者可能無法從工作連絡人看到呼叫者識別碼詳細資料。 
 
-在此更新中，[Android for Work] > [裝置限制] > [工作設定檔設定] 會有一個新的設定：
+在此更新中，[Android Enterprise] > [裝置限制] > [工作設定檔設定] 中會有一個新的設定：
 - 在個人設定檔中顯示工作連絡人呼叫者識別碼
 
 啟用 (未設定) 時，工作連絡呼叫者詳細資料會顯示在個人設定檔中。 封鎖時，工作連絡呼叫者詳細資料不會顯示在個人設定檔中。 
@@ -753,12 +771,12 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>在 SCEP 憑證上使用自訂主體名稱 <!-- 2064190 -->
 您可以使用在 SCEP 憑證設定檔中，使用自訂主體常見的名稱 **OnPremisesSamAccountName**。 例如，您可以使用 `CN={OnPremisesSamAccountName})`。
 
-####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977---"></a>在 Android for Work 上封鎖相機和螢幕擷取 <!-- 1098977 -->
+####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>在 Android Enterprise 工作設定檔上封鎖相機和螢幕擷取 <!-- 1098977 -->
 當您為 Android 裝置設定裝置限制時，有兩個新屬性可用於封鎖： 
 - 相機：封鎖對裝置上所有相機的存取
 - 螢幕擷取：封鎖螢幕擷取，同時也防止在沒有安全視訊輸出的顯示裝置上顯示內容
 
-適用於 Android for Work。
+適用於 Android Enterprise 工作設定檔。
 
 
 ### <a name="device-enrollment"></a>裝置註冊
@@ -824,7 +842,7 @@ macOS 裝置版的公司入口網站應用程式在更新之後，改進了使�
 如需詳細資訊，請參閱[傳送 macOS 的錯誤](/intune-user-help/send-errors-macos)。
 
 #### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune 在 Windows 10 版的公司入口網站中，採用了 Fluent Design System <!-- 1195010 WNready -->
-Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics) \(Fluent Design System 的瀏覽檢視\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 我們仍持續努力為 Intune 建立適應性更好、更彈性、更直觀及更加容易上手的體驗，而這只是好幾個更新中的第一個。 若要查看更新後的外觀，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
+Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(Fluent Design System 的瀏覽檢視\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 我們仍持續努力為 Intune 建立適應性更好、更彈性、更直觀及更加容易上手的體驗，而這只是好幾個更新中的第一個。 若要查看更新後的外觀，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
 
 ## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日當週
 
@@ -833,7 +851,7 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 當您建立適用於 iOS 的新 VPN 設定檔時，現在有兩個選項：[Cisco AnyConnect] 和 [Cisco Legacy AnyConnect]。 Cisco AnyConnect 設定檔支援 4.0.7x 和較新版本。 現有的 iOS Cisco AnyConnect VPN 設定檔會標記為 **Cisco Legacy AnyConnect**，但仍會繼續以目前的方式搭配 Cisco AnyConnect 4.0.5x 和較舊版本運作。
 
 > [!NOTE]
-> 這項變更只適用於 iOS。 Android、Android for Work 及 macOS 平台仍然只有一個 Cisco AnyConnect 選項。
+> 這項變更只適用於 iOS。 Android、Android Enterprise 工作設定檔及 macOS 平台仍然只有一個 Cisco AnyConnect 選項。
 
 #### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>現在可以使用 Intune 註冊 Jamf 註冊的 macOS 裝置 <!-- 2370684 -->
 

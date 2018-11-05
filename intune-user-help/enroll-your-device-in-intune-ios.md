@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827882"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959531"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>設定 iOS 裝置對公司資源的存取
 
@@ -60,34 +60,34 @@ ms.locfileid: "48827882"
 
 |您所看到的內容|說明|
 |---|---|
-|![公司入口網站登入畫面，底部有 [登入] 按鈕。](./media/ios-01-cp-enroll-1802.png)|開啟公司入口網站應用程式，然後點選 [登入]。|
-|![Azure AD 登入提示。](./media/ios-02-cp-enroll-1802.png)|輸入您的公司電子郵件地址，然後點選 [下一步]。|
-|![Azure AD 密碼提示。](./media/ios-03-cp-enroll-1802.png)|輸入您的密碼，然後點選 [登入]。|
-|![正在載入公司資源啟動顯示畫面。](./media/ios-04-cp-enroll-1802.png)|等候此畫面載入。|
-|![條款及條件頁面。](./media/ios-05-cp-enroll-1802.png)|閱讀並接受所有條款及條件。|
-|![設定公司存取畫面。 管理和設定目前都需要解決。](./media/ios-06-cp-enroll-1802.png)|點選 [開始] 以開始執行讓您的裝置能夠存取公司資源的程序。 如果您無法立刻執行此作業，則可以**延遲**程序，但這表示您將無法取得電子郵件、文件等。|
-|![我的公司能看到什麼畫面。](./media/ios-07-cp-enroll-1802.png)|您可以透過點選底部的連結來**深入了解**您的公司能看到什麼相關資訊。 否則，請點選 [繼續]。|
-|![下一步是什麼畫面。](./media/ios-08-cp-enroll-1802.png)|此畫面會引導您了解安裝程式中的情況。 您將花費時間在 Safari、[設定] 應用程式和公司入口網站應用程式。 點選 [繼續]。|
-|![點選 [下一步是什麼] 上的 [下一步] 之後正在載入畫面。](./media/ios-09-cp-enroll-1802.png)|等候此畫面載入。|
+|![公司入口網站登入畫面，底部有 [登入] 按鈕。](./media/ios-01-cp-enroll-1802.PNG)|開啟公司入口網站應用程式，然後點選 [登入]。|
+|![Azure AD 登入提示。](./media/ios-02-cp-enroll-1802.PNG)|輸入您的公司電子郵件地址，然後點選 [下一步]。|
+|![Azure AD 密碼提示。](./media/ios-03-cp-enroll-1802.PNG)|輸入您的密碼，然後點選 [登入]。|
+|![正在載入公司資源啟動顯示畫面。](./media/ios-04-cp-enroll-1802.PNG)|等候此畫面載入。|
+|![條款及條件頁面。](./media/ios-05-cp-enroll-1802.PNG)|閱讀並接受所有條款及條件。|
+|![設定公司存取畫面。 管理和設定目前都需要解決。](./media/ios-06-cp-enroll-1802.PNG)|點選 [開始] 以開始執行讓您的裝置能夠存取公司資源的程序。 如果您無法立刻執行此作業，則可以**延遲**程序，但這表示您將無法取得電子郵件、文件等。|
+|![我的公司能看到什麼畫面。](./media/ios-07-cp-enroll-1802.PNG)|您可以透過點選底部的連結來**深入了解**您的公司能看到什麼相關資訊。 否則，請點選 [繼續]。|
+|![下一步是什麼畫面。](./media/ios-08-cp-enroll-1802.PNG)|此畫面會引導您了解安裝程式中的情況。 您將花費時間在 Safari、[設定] 應用程式和公司入口網站應用程式。 點選 [繼續]。|
+|![點選 [下一步是什麼] 上的 [下一步] 之後正在載入畫面。](./media/ios-09-cp-enroll-1802.PNG)|等候此畫面載入。|
 |![切換到 Safari 進行註冊。](./media/ios-cp-sent-to-safari-1808.png)|您會被傳送到 Safari 以取得您的裝置的管理資訊。|
-|![系統提示要求開啟 [設定] 應用程式。](./media/ios-8-cp-enroll-1711.png)|點選 [允許] 開啟 [設定] 應用程式以下載組態設定檔。 安裝組態設定檔，讓您的公司管理您裝置上的公司資訊。|
-|![裝置設定中 [安裝設定檔] 畫面的螢幕擷取畫面。](./media/ios-9-cp-enroll-1711.png)|點選 [安裝]。|
-|![畫面底部的安裝設定檔強制回應對話方塊。](./media/ios-10-cp-enroll-1711.png)|點選 [安裝]。|
-|![設定檔正在安裝載入畫面。](./media/ios-11-cp-enroll-1711.png)|等候此畫面載入。|
-|![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.png)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
-|![系統提示詢問對遠端管理的信任。](./media/ios-13-cp-enroll-1711.png)|點選 [信任]，讓您的公司管理您裝置上的公司資訊和設定。|
-|![設定檔完成安裝載入畫面。](./media/ios-14-cp-enroll-1711.png)|等候此畫面載入。|
-|![已安裝設定檔畫面。](./media/ios-15-cp-enroll-1711.png)|您的設定檔已安裝，且您的裝置的公司資訊和設定離受管理更近一步。|
-|![切換到 Safari 進行註冊。](./media/ios-16-cp-enroll-1711.png)|您會被傳送回 Safari 以完成取得您裝置的管理資訊。 |
-|![系統提示開啟公司入口網站。](./media/ios-17-cp-enroll-1711.png)|點選 [開啟]。|
-|![正在載入公司資源畫面。](./media/ios-21-cp-enroll-1802.png)|等候此畫面載入。|
-|![在公司入口網站應用程式中選取裝置類別。](./media/ios-22-cp-enroll-1802.png)|為您的裝置選取最適合的類別。 這通常與誰擁有該裝置，或大部分時間裝置位於何處有關。|
-|![已選取類別。](./media/ios-23-cp-enroll-1802.png)||
-|![裝置管理成功；現在需要更新設定。](./media/ios-24-cp-enroll-1802.png)|您已成功讓您的裝置受到管理。 您的公司可能還有需要您更新的設定，例如密碼的長度。 按一下 [繼續] 以繼續執行。|
-|![確認裝置設定。](./media/ios-25-cp-enroll-1802.png)|「公司入口網站」將檢查是否有任何設定需要更新。|
-|![設定檢查完成，具有不正確的 OS 版本](./media/ios-26-cp-enroll-1802.png)|「公司入口網站」將提供有關如何修正設定問題的指示。 修復問題後，點選 [檢查設定]。|
-|![確認裝置設定載入畫面](./media/ios-27-cp-enroll-1802.png)|您的裝置將檢查您的設定是否足夠安全地存取公司資源。|
-|![已成功註冊和更新設定](./media/ios-28-cp-enroll-1802.png)|恭喜！ 您的裝置現在已在 Intune 註冊。|
+|![系統提示要求開啟 [設定] 應用程式。](./media/ios-8-cp-enroll-1711.PNG)|點選 [允許] 開啟 [設定] 應用程式以下載組態設定檔。 安裝組態設定檔，讓您的公司管理您裝置上的公司資訊。|
+|![裝置設定中 [安裝設定檔] 畫面的螢幕擷取畫面。](./media/ios-9-cp-enroll-1711.PNG)|點選 [安裝]。|
+|![畫面底部的安裝設定檔強制回應對話方塊。](./media/ios-10-cp-enroll-1711.PNG)|點選 [安裝]。|
+|![設定檔正在安裝載入畫面。](./media/ios-11-cp-enroll-1711.PNG)|等候此畫面載入。|
+|![設定檔管理警告畫面。](./media/ios-12-cp-enroll-1711.PNG)|這個由 Apple 撰寫的警告，讓您可以深入了解在受管理的裝置上，可以採取哪些類型的動作。 深入了解[貴公司可以看到哪些資訊](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
+|![系統提示詢問對遠端管理的信任。](./media/ios-13-cp-enroll-1711.PNG)|點選 [信任]，讓您的公司管理您裝置上的公司資訊和設定。|
+|![設定檔完成安裝載入畫面。](./media/ios-14-cp-enroll-1711.PNG)|等候此畫面載入。|
+|![已安裝設定檔畫面。](./media/ios-15-cp-enroll-1711.PNG)|您的設定檔已安裝，且您的裝置的公司資訊和設定離受管理更近一步。|
+|![切換到 Safari 進行註冊。](./media/ios-16-cp-enroll-1711.PNG)|您會被傳送回 Safari 以完成取得您裝置的管理資訊。 |
+|![系統提示開啟公司入口網站。](./media/ios-17-cp-enroll-1711.PNG)|點選 [開啟]。|
+|![正在載入公司資源畫面。](./media/ios-21-cp-enroll-1802.PNG)|等候此畫面載入。|
+|![在公司入口網站應用程式中選取裝置類別。](./media/ios-22-cp-enroll-1802.PNG)|為您的裝置選取最適合的類別。 這通常與誰擁有該裝置，或大部分時間裝置位於何處有關。|
+|![已選取類別。](./media/ios-23-cp-enroll-1802.PNG)||
+|![裝置管理成功；現在需要更新設定。](./media/ios-24-cp-enroll-1802.PNG)|您已成功讓您的裝置受到管理。 您的公司可能還有需要您更新的設定，例如密碼的長度。 按一下 [繼續] 以繼續執行。|
+|![確認裝置設定。](./media/ios-25-cp-enroll-1802.PNG)|「公司入口網站」將檢查是否有任何設定需要更新。|
+|![設定檢查完成，具有不正確的 OS 版本](./media/ios-26-cp-enroll-1802.PNG)|「公司入口網站」將提供有關如何修正設定問題的指示。 修復問題後，點選 [檢查設定]。|
+|![確認裝置設定載入畫面](./media/ios-27-cp-enroll-1802.PNG)|您的裝置將檢查您的設定是否足夠安全地存取公司資源。|
+|![已成功註冊和更新設定](./media/ios-28-cp-enroll-1802.PNG)|恭喜！ 您的裝置現在已在 Intune 註冊。|
 
 > [!Note]
 > 在完全管理您的裝置之前，還有幾個步驟需要完成。 請深入了解[使用電信費用管理註冊您的裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織使用 Apple 裝置註冊方案，請在[這裡](enroll-your-device-dep-ios.md)取得詳細資訊。

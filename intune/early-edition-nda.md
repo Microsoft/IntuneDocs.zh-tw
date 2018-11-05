@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 606005c3d8abafe989b35841cebf8c11e1f6b04e
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: a13d9b6ee37dc42e90d7c99538c9fd2e5e0d1b7b
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075875"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001587"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 的舊版 - 2018 年 10 月
 
@@ -44,9 +44,6 @@ ms.locfileid: "49075875"
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>使用針對安全性基準 <!-- 2055484 --> 的 Microsoft 建議設定
 Intune 會和其他著重安全性的服務整合，包含 Windows Defender ATP 和 Office 365 ATP。 客戶持續不斷要求一種常見策略，以及橫跨 Microsoft 365 服務，極具凝聚力的一組端點對端點安全性工作流程。 我們的目標是調整策略，建置能擔任安全性作業和常見系統管理工作間橋樑的解決方案。 在 Intune 中，我們試圖透過發佈一組 Microsoft 建議的「安全性基準」(**Intune** > **安全性基準**)，來達到此目標。  系統管理員將能夠直接從這些基準建立安全性政策，並將它們部署到其使用者。 他們也可以自訂最佳做法建議項目，以符合其組織的需求。 Intune 會確保裝置符合這些基準的規範，並會通知系統管理員不合規的使用者或裝置。
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>移除系統管理員抹除個人裝置及重設密碼的能力 <!-- 2934699 -->
-為了減輕使用者針對公司系統管理員具備抹除其個人裝置能力的恐懼，[抹除](devices-wipe.md#wipe)和[重設密碼](device-passcode-reset.md)遠端動作已不再適用於個人裝置。 使用者可透過使用公司入口網站，從任何裝置重設其密碼及抹除其裝置。
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>混合式 Azure Active Directory 聯結裝置的 Autopilot 支援 <!-- 1048100 -->
 您將可以透過使用 Autopilot，來設定混合式 Azure Active Directory 聯結裝置。 裝置必須聯結到您組織的網路，才能使用混合式 Autopilot 功能。
 
@@ -56,7 +53,7 @@ Intune 會和其他著重安全性的服務整合，包含 Windows Defender ATP 
 若要將範圍標籤新增至角色指派，請選擇 [Intune roles] \(Intune 角色\) > [All roles] \(所有角色\) > [Policy and Profile Manager] \(原則和設定檔管理員\) > [作業] > [Scope (Tags)] \(範圍 (標籤)\)。
 若要將範圍標籤新增至設定檔，請選擇 [裝置設定] > [設定檔] > 選擇設定檔 > [屬性] > [Scope (Tags)] \(範圍 (標籤)\)。
 
-## <a name="tenant-health-dashboard----1124854---"></a>租用戶健康狀態儀表板 <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>租用戶健康狀態儀表板 <!-- 1124854 -->
 Intune 中的 [租用戶健康狀態] 頁面可在單一位置提供您租用戶的狀態資訊。 頁面分為 4 個區段：  
 - **租用戶詳細資料**：包含資訊，例如您的 MDM 授權單位、您租用戶中的總註冊裝置數，以及您的授權計數。 此區段也會提供您租用戶目前的服務版本。
 - **連接器狀態**：包含設定連接器的資訊，例如 Apple VPP、商務用 Microsoft Store，以及憑證連接器。 根據其目前狀態，連接器會標記為 [良好]、[警告]，或 [不良]。
@@ -121,8 +118,9 @@ Autopilot 裝置將會每 12 小時同步一次，而不是每 24 小時。
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一個 MDM 所使用的 Apple VPP 權杖 <!-- 1488946 -->
 如果 Intune 和另一個 MDM 都正在使用 Apple 大量採購方案 (VPP) 權杖，則 Intune 會偵測並顯示詳細資料。
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>會顯示 iOS 版本號碼和組建編號 <!-- 1892471 -->
-在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 作業系統版本。 在未來的更新中，也會顯示組建編號。
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>顯示 iOS 和 macOS 版本號碼和組建編號 <!-- 1892471 -->
+在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 和 macOS 作業系統版本。 在未來的更新中，也會顯示這兩個平台的組建編號。
+
 發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 顯示組建編號，即可輕鬆地檢查是否已安裝弱點更新。
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>[裝置合規性] 儀表板中的已淘汰裝置 <!-- 1981119 -->

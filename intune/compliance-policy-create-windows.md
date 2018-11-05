@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602311"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642867"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -119,8 +119,6 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 
 如需 HAS 服務如何運作的詳細資料，請參閱[健全狀況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
 
-若要將 Windows Defender ATP (進階威脅防護) 設定為防禦威脅服務，請參閱[使用條件式存取啟用 Windows Defender ATP](advanced-threat-protection.md)。
-
 ### <a name="device-properties"></a>裝置內容
 
 - **最低 OS 版本**：輸入允許的最低版本 (格式為 **major.minor.build.CU 編號**)。 若要取得正確值，請開啟命令提示字元，然後鍵入 `ver`。 `ver` 命令會傳回格式如下的版本：
@@ -183,6 +181,8 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
   - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
   - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
   - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
+  
+  若要將 Windows Defender ATP (進階威脅防護) 設定為防禦威脅服務，請參閱[使用條件式存取啟用 Windows Defender ATP](advanced-threat-protection.md)。
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

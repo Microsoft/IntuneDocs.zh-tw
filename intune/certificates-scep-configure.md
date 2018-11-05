@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/1/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 838ed3a932d6ff495b9a433d3cabedfa6227ad32
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
+ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169510"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391683"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -66,7 +66,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 |**憑證範本**|在發行 CA 上設定此範本。|
 |**用戶端驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會將它安裝於 NDES 伺服器上。|
 |**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。|
-|**可信任的根 CA 憑證**|您會從根 CA (或任何信任根 CA 的裝置) 將此憑證匯出為 **.cer** 檔案，並使用受信任的 CA 憑證設定檔將它指派給裝置。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用信任的 CA 憑證設定檔將它指派給裝置。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 ### <a name="accounts"></a>帳戶
 
@@ -98,7 +98,10 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
    範本必須要有下列組態：
 
-   - 輸入範本的易記「範本顯示名稱」  。
+   - 在 [一般] 中：
+   
+       - 確認**未**核取 [將憑證發佈到 Active Directory] 屬性。
+       - 輸入範本的易記「範本顯示名稱」  。
 
    - 在 [主體名稱] 中，選取 [在要求中提供] (安全性由 NDES 的 Intune 原則模組加強)。
 
@@ -112,7 +115,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
      > [!NOTE]
      > 若要撤銷憑證，NDES 服務帳戶需要憑證設定檔所使用每個憑證範本的*發行及管理憑證*權限。
 
-3. 檢閱範本 [一般]  索引標籤上的 [有效期間]  。 根據預設，Intune 使用範本中所設定的值。 不過，您可以選擇設定 CA 以允許要求者輸入不同的值，然後就可以從 Intune 系統管理員主控台內設定該值。 如果您想要一律使用範本中的值，請略過此步驟中的其餘部分。
+3. 檢閱範本 [一般]  索引標籤上的 [有效期間]  。 根據預設，Intune 使用範本中所設定的值。 不過，您可以設定 CA 以允許要求者輸入不同的值，然後就可以從 Intune 系統管理員主控台內設定該值。 如果您想要一律使用範本中的值，請略過此步驟中的其餘部分。
 
    > [!IMPORTANT]
    > iOS 和 macOS 一律會使用範本中的值，而不管您所做的其他組態設定。
@@ -156,21 +159,25 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
    1. 在精靈中，選取 [Active Directory 憑證服務]  以存取 AD CS 角色服務。 選取 [網路裝置註冊服務] ，取消核取 [憑證授權單位] ，然後完成精靈。
 
       > [!TIP]
-      > 在 [安裝進度] 中，不要選取 [關閉]。 相反地，請選取 [設定目的地伺服器上的 Active Directory 憑證服務] 連結。 [AD CS 設定精靈] 隨即開啟，讓您用於下一個步驟。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
+      > 在 [安裝進度] 中，不要核取 [關閉]。 相反地，請選取 [設定目的地伺服器上的 Active Directory 憑證服務] 連結。 [AD CS 設定精靈] 隨即開啟，讓您用於下一個步驟。 [AD CS 設定] 開啟之後，您可以關閉 [新增角色及功能精靈]。
 
-   2. 當 NDES 加入至伺服器時，精靈也會安裝 IIS。 請確定 IIS 具有下列組態：
+   2. 當 NDES 加入至伺服器時，精靈也會安裝 IIS。 請確認 IIS 具有下列設定：
 
-   3. [Web 伺服器] > [安全性] > [要求篩選]
+       - [Web 伺服器] > [安全性] > [要求篩選]
 
-   4. [Web 伺服器] > [應用程式開發] > [ASP.NET 3.5]。 安裝 ASP.NET 3.5 時會安裝 .NET Framework 3.5。 安裝 .NET Framework 3.5 時，請安裝核心 [.NET Framework 3.5]  功能和 [HTTP 啟動] 。
+       - [網頁伺服器] > [應用程式開發] > [ASP.NET 3.5] 
 
-   5. [Web 伺服器] > [應用程式開發] > [ASP.NET 4.5]。 安裝 ASP.NET 4.5 時會安裝 .NET Framework 4.5。 安裝 .NET Framework 4.5 時，請安裝核心 [.NET Framework 4.5] 功能、[ASP.NET 4.5] 與 [WCF 服務] > [HTTP 啟動] 功能。
+            安裝 ASP.NET 3.5 時會安裝 .NET Framework 3.5。 安裝 .NET Framework 3.5 時，請安裝核心 [.NET Framework 3.5]  功能和 [HTTP 啟動] 。
 
-   6. [管理工具] > [IIS 6 管理相容性] > [IIS 6 Metabase 相容性]
+       - [網頁伺服器] > [應用程式開發] > [ASP.NET 4.5] 
 
-   7. [管理工具] > [IIS 6 管理相容性] > [IIS 6 WMI 相容性]
+            安裝 ASP.NET 4.5 時會安裝 .NET Framework 4.5。 安裝 .NET Framework 4.5 時，請安裝核心 [.NET Framework 4.5] 功能、[ASP.NET 4.5] 與 [WCF 服務] > [HTTP 啟動] 功能。
 
-   8. 在伺服器上，新增 NDES 服務帳戶成為 **IIS_IUSR** 群組的成員身分。
+       - [管理工具] > [IIS 6 管理相容性] > [IIS 6 Metabase 相容性]
+
+       - [管理工具] > [IIS 6 管理相容性] > [IIS 6 WMI 相容性]
+
+       - 在伺服器上，新增 NDES 服務帳戶成為 **IIS_IUSR** 群組的成員身分。
 
 2. 在提升權限的命令提示字元中，執行下列命令來設定 NDES 服務帳戶的 SPN：
 
@@ -224,7 +231,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
     ![IIS URL 和查詢長度上限](./media/SCEP_IIS_max_URL.png)
 
-5. 重新啟動伺服器。 在伺服器上執行 **iisreset** 不足以完成這些變更。
+5. 重新啟動伺服器。 請勿使用 **iisreset**；它無法完成這些變更。
 6. 瀏覽至 `http://*FQDN*/certsrv/mscep/mscep.dll` 。 您應該會看到與下面類似的 NDES 頁面︰
 
     ![測試 NDES](./media/SCEP_NDES_URL.png)
@@ -249,13 +256,13 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
       > - 具有外部公開伺服器名稱的**主體名稱**
       > - 包含內部伺服器名稱的**主體別名**
 
-2. 在 NDES 伺服器上，從內部 CA 或公開憑證授權單位，要求並安裝 **用戶端驗證** 憑證。 這可以是與伺服器驗證憑證相同的憑證，如果該憑證具備兩種功能。
+2. 在 NDES 伺服器上，從內部 CA 或公開憑證授權單位，要求並安裝 **用戶端驗證** 憑證。 如果伺服器驗證憑證具備兩種功能，則此憑證可以是與該憑證相同的憑證。
 
     用戶端驗證憑證必須具有下列屬性：
 
     - **增強金鑰使用方法**：這必須包括 [用戶端驗證]
 
-    - **主體名稱**：這必須等於您要在其上安裝憑證之伺服器 (NDES 伺服器) 的 DNS 名稱
+    - **主體名稱**：此值必須等於您要在其上安裝憑證之伺服器 (NDES 伺服器) 的 DNS 名稱
 
 ##### <a name="configure-iis-request-filtering"></a>設定 IIS 要求篩選
 
@@ -285,13 +292,16 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>下載、安裝及設定憑證連接器
 
-![ConnectorDownload](./media/certificates-download-connector.png)
+> [!IMPORTANT] 
+> Microsoft Intune Certificate Connector **必須**安裝在個別的 Windows 伺服器中。 它不能安裝在發行的授權憑證單位 (CA) 上。 它也**必須**安裝在與網路裝置註冊服務 (NDES) 角色相同的伺服器上。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] [憑證授權單位]。
-4. 選取 [新增] 並選取 [下載連接器檔案]。 將下載項目儲存到要安裝下載項目的伺服器所能存取的位置。
-5. 下載完成之後，前往裝載網路裝置註冊服務 (NDES) 角色的伺服器。 然後：
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [憑證授權單位] > [新增]
+3. 下載並儲存連接器檔案。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
+
+    ![ConnectorDownload](./media/certificates-download-connector.png)
+
+4. 下載完成之後，前往裝載網路裝置註冊服務 (NDES) 角色的伺服器。 然後：
 
     1. 確定已安裝 .NET 4.5 Framework，這對 NDES 憑證連接器是必要的。 Windows Server 2012 R2 及更新版本會自動隨附 .NET 4.5 Framework。
     2. 執行安裝程式 (**NDESConnectorSetup.exe**)。 安裝程式也會安裝 NDES 和 CRP Web 服務的原則模組。 CRP Web 服務 CertificateRegistrationSvc 會以 IIS 中的應用程式方式執行。
@@ -299,34 +309,34 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     > [!NOTE]
     > 當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。 當您使用 Intune 搭配 Configuration Manager 時，將憑證註冊點安裝為個別的網站系統角色。
 
-6. 當系統提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在步驟 4 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
+5. 當系統提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]，然後選取您在步驟 4 中，於 NDES 伺服器上安裝的**用戶端驗證**憑證。
 
     選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然未顯示您選取的憑證，請選取 [下一步] 以檢視該憑證的屬性。 選取 [下一步] [安裝]。
 
     > [!IMPORTANT]
     > 啟用 Internet Explorer 增強式安全性設定的裝置上無法註冊 Intune 憑證連接器。 若要使用 Intune 憑證連接器，請[停用 IE 增強式安全性設定](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
-7. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI]。
+6. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI]。
 
     > [!TIP]
     > 如果您在啟動 Certificate Connector UI 之前關閉精靈，您可以藉由執行下列命令重新加以開啟：
     >
     > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
-8. 在 **Certificate Connector** UI 中：
+7. 在 **Certificate Connector** UI 中：
 
     選取 [登入] 並輸入您的 Intune 服務系統管理員認證，或擁有全域系統管理權限的租用戶管理員認證。
 
     > [!IMPORTANT]
     > 使用者帳戶必須指派有效的 Intune 授權。 如果使用者帳戶沒有有效的 Intune 授權，則 NDESConnectorUI.exe 就會失敗。
 
-    如果您的組織使用 Proxy 伺服器，而且 NDES 伺服器需要該 Proxy 以存取網際網路，請選取 [使用 Proxy 伺服器]，然後輸入 Proxy 伺服器名稱、連接埠，以及用以連線的帳戶認證。
+    如果您的組織使用 Proxy 伺服器，而且 NDES 伺服器需要該 Proxy 以存取網際網路，請選取 [使用 Proxy 伺服器]。 然後輸入 Proxy 伺服器名稱、連接埠，以及用以連線的帳戶認證。
 
     選取 [進階] 索引標籤，然後輸入對您的發行憑證授權單位具有 [發行及管理憑證] 權限的帳戶認證。 **套用**您的變更。
 
     您現在可以關閉 Certificate Connector UI。
 
-9. 開啟命令提示字元，輸入 **services.msc** **Enter**。 以滑鼠右鍵按一下 [Intune 連接器服務] [重新啟動]。
+8. 開啟命令提示字元，輸入 **services.msc** **Enter**。 以滑鼠右鍵按一下 [Intune 連接器服務] > [重新啟動]。
 
 若要驗證服務正在執行，請開啟瀏覽器並輸入下列 URL。 這應該會傳回 **403** 錯誤：
 
@@ -337,18 +347,19 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 ## <a name="create-a-scep-certificate-profile"></a>建立 SCEP 憑證設定檔
 
-1. 在 Azure 入口網站中，開啟 Microsoft Intune。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
 2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 3. 輸入 SCEP 憑證設定檔的 [名稱] 與 [描述]。
 4. 從 [平台] 下拉式清單中，選取此 SCEP 憑證的裝置平台。 您目前可選取下列平台之一，進行裝置限制設定︰
    - **Android**
+   - **Android Enterprise**
    - **iOS**
    - **macOS**
    - **Windows Phone 8.1**
    - **Windows 8.1 及更新版本**
    - **Windows 10 及更新版本**
 5. 從 [設定檔類型] 下拉式清單中，選取 [SCEP 憑證]。
-6. 在 [SCEP 憑證] 窗格中，進行以下設定：
+6. 輸入下列設定：
 
    - **憑證類型**：選擇 [使用者] 表示使用者憑證。 選擇 [裝置] 表示無使用者裝置，例如 kiosk。 提供下列平台可用的 [裝置] 憑證：  
      - iOS
@@ -373,7 +384,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
             - **CN={{AAD_Device_ID}}** 當您在 Azure Active Directory (AD) 中註冊裝置時指派的識別碼。 此識別碼通常用於向 Azure AD 驗證。
             - **CN={{SERIALNUMBER}}**：通常由製造商用於識別裝置的唯一序號 (SN)
             - **CN={{IMEINumber}}**：用於識別行動電話的國際行動設備識別碼 (IMEI)
-            - **CN={{OnPrem_Distinguished_Name}}** 由逗號分隔的相對辨別名稱序列，例如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{OnPrem_Distinguished_Name}}**：由逗號分隔的相對辨別名稱序列，例如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 若要使用 `{{OnPrem_Distinguished_Name}}` 變數，請務必將使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 的 `onpremisesdistingishedname` 使用者屬性與 Azure AD 同步。
 

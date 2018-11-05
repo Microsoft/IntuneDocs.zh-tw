@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6a633b73856b5f9f50ffe0b9993713b888b969b
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652099"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 的工作裝置限制設定
 
@@ -124,6 +124,7 @@ ms.locfileid: "48828137"
     > [!IMPORTANT]
     >  - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
     >  - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
+    >  - 搭配 F5 Access for Android 3.0.3 使用個別應用程式 VPN 已知有問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.3 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android)。
 
 - **鎖定模式**：**啟用**以強制所有網路流量使用 VPN 通道。 如果未建立 VPN 連線，裝置將不會有網路存取。
 

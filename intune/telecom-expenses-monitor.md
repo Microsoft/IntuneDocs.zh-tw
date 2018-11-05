@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562896"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959548"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune 可讓您管理公司擁有之行動裝置上的資料使用量所造成的電信費用。 為了啟用此功能，Intune 已整合協力廠商軟體開發人員 Saaswedo 的 Datalert 電信費用管理解決方案。 Datalert 是即時的電信費用管理軟體，可讓您管理電信資料使用量。 這能夠協助您受 Intune 管理的裝置避免高額與預期外的資料和漫遊超額用量。
+Intune 可讓您管理公司擁有之行動裝置上的資料使用量所造成的電信費用。 為了啟用此功能，Intune 已整合協力廠商軟體開發人員 Saaswedo 的 [Datalert 電信費用管理](http://datalert.biz/get-started)解決方案。 Datalert 是即時的電信費用管理軟體，可讓您管理電信資料使用量。 這能夠協助您受 Intune 管理的裝置避免高額與預期外的資料和漫遊超額用量。
 
 Intune 與 Datalert 整合可讓您集中設定、監視及強制限制漫遊與國內數據使用量。 當限制超過定義的閾值時，會觸發自動化警示。 您可以設定服務對個人或終端使用者群組套用不同的動作 (像是停用漫遊或超出閾值)。 Datalert 管理主控台也提供有關數據使用量與監視資訊的報表。
 
@@ -61,19 +61,31 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 2. 在 Datalert 管理主控台上，移至 [設定] 索引標籤，然後移至 [MDM 設定]。
 
-3. 選取 [解除鎖定]，讓您可以在該頁面上輸入設定。
+3. 選取頁面底部的 [Unblock] \(解除鎖定\)，這可讓您在該頁面上修改設定。
 
-4. 為 [Server MDM] (伺服器的 MDM) 選擇 [ Microsoft Intune]。
+4. 在 [Intune / Datalert Connection] \(Intune / Datalert 連線\) 中，針對 [Server MDM] \(伺服器 MDM\) 選擇 [ Microsoft Intune]。    
 
-5. 在 [Azure AD 網域] 中輸入您的 Azure 租用戶識別碼，然後選取 [連線] 按鈕。
+5. 針對 [Azure AD domain] \(Azure AD 網域\)，輸入您的 Azure 租用戶識別碼，然後選取 [Connection] \(連線\)。
 
-    選取 [連線] 會指定 Datalert 簽入 Intune，確保 Datalert 之前與 Intune 之間沒有任何連線。 Microsoft [登入] 頁面會在幾秒後出現，然後是 Datalert Azure 驗證。
+    當您選取 [Connection] \(連線\) 時，Datalert 服務會簽入 Intune，以確保 Datalert 之前與 Intune 之間沒有任何連線。 Microsoft 登入頁面會在幾秒後出現，然後是 Datalert Azure 驗證。
 
-6. 在 Microsoft 驗證頁面上選取 [接受]。 您會被重新導向至 Datalert 的 [Thank you] 頁面，並於幾秒之後關閉。 Datalert 會驗證連線，並在驗證過的項目清單旁顯示綠色核取記號。 如果驗證失敗，您會看到一則紅色的訊息，並應連絡 Datalert 支援以取得協助。
+6. 在 Microsoft 驗證頁面上選取 [接受]。 您會被重新導向至 Datalert 的 [thank you] \(感謝您\) 頁面，並於幾秒之後關閉。 Datalert 會驗證連線，並在驗證過的項目清單旁顯示綠色核取記號。 如果驗證失敗，您會看到一則紅色的訊息，並應連絡 Datalert 支援以取得協助。
 
     下列螢幕擷取畫面會顯示您可預期在連線成功後看到的綠色核取記號。
 
-   ![顯示成功連線的 Datalert 頁面](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![顯示成功連線的 Datalert 頁面](./media/tem-datalert-connection.png)
+
+7. 在 [Datalert App / ADAL Consent] \(Datalert 應用程式 / ADAL 同意\) 區段中，將開關設定為 [On] \(開啟\)。 在 Microsoft 驗證頁面上選取 [接受]。 您會被重新導向至 Datalert 的 [thank you] \(感謝您\) 頁面，並於幾秒之後關閉。 Datalert 會驗證連線，並在驗證過的項目清單旁顯示綠色核取記號。 如果驗證失敗，您會看到一則紅色的訊息，並應連絡 Datalert 支援以取得協助。    
+
+    下列螢幕擷取畫面會顯示您可預期在連線成功後看到的綠色核取記號。
+
+   ![顯示成功連線的 Datalert 頁面](./media/tem-datalert-adal-consent.png)
+
+8. 在 [MDM Profiles management (optional)] \(MDM 設定檔管理 (選擇性)\) 區段中，將開關設定為 [On] \(開啟\) 以允許 Datalert 讀取 Intune 中可用的設定檔，來協助您設定原則。 在 Microsoft 驗證頁面上選取 [接受]。 您會被重新導向至 Datalert 的 [thank you] \(感謝您\) 頁面，並於幾秒之後關閉。 Datalert 會驗證連線，並在驗證過的項目清單旁顯示綠色核取記號。 如果驗證失敗，您會看到一則紅色的訊息，並應連絡 Datalert 支援以取得協助。    
+
+    下列螢幕擷取畫面會顯示您可預期在連線成功後看到的綠色核取記號。
+
+   ![顯示成功連線的 Datalert 頁面](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>步驟 2︰檢查 Intune 中已啟用電信費用管理功能
 
