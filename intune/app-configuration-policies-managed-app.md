@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799518"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136959"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -39,7 +39,7 @@ ms.locfileid: "48799518"
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**  
       選擇 [管理應用程式]。
-6. 選取 [相關聯的應用程式] 來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
+6. 選取 [相關聯的應用程式] **** ，選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 7. 對於應用程式支援的每個組態設定，請鍵入 [名稱] 和 [值]，然後選擇省略符號 (**...**)。  
     若要刪除設定，請選擇省略符號 (**...**)，然後選取 [刪除]。  
     
@@ -51,13 +51,13 @@ Intune 可以產生特定的權杖，並將它們傳送給受管理的應用程�
 
 Intune 支援組態設定中的下列權杖類型。 不支援其他自訂的索引鍵/值組。
 
-- \{\{userprincipalname\}\}—例如，**John@contoso.com**
-- \{\{mail\}\}—例如，**John@contoso.com**
-- \{\{partialupn\}\}—例如，**John**
-- \{\{accountid\}\}—例如，**fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\}—例如，**3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}—例如，**John Doe**
-- \{\{PrimarySMTPAddress\}\}—例如，**testuser@ad.domain.com** 
+- \{\{userprincipalname\}\} - 例如，John@contoso.com
+- \{\{mail\}\} - 例如，John@contoso.com
+- \{\{partialupn\}\} - 例如，John
+- \{\{accountid\}\} - 例如，fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\} - 例如，3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\} - 例如，John Doe
+- \{\{PrimarySMTPAddress\}\} - 例如，testuser@ad.domain.com
 
 
 > [!Note]  

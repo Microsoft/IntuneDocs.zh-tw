@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/23/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,42 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150339"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959480"
 ---
-# <a name="how-to-remove-your-android-device-from-intune"></a>如何從 Intune 移除 Android 裝置
+# <a name="unenroll-your-android-device-from-management"></a>將您的 Android 裝置取消註冊管理  
 
-當您從 Intune 移除 Android 裝置時，該裝置即無法再存取公司資源。  如需有關將裝置自管理中移除時所發生情況的詳細資訊，請參閱[如果將裝置從 Intune 取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+移除已註冊的 Android 裝置，使其不再受您組織管理。 本文說明如何從公司入口網站應用程式移除裝置。 移除裝置之後：  
 
-## <a name="removing-the-device-from-the-company-portal-app"></a>從公司入口網站應用程式移除裝置
+* 裝置將無法存取您組織的受保護資料和資源。
+* 裝置不會再出現於公司入口網站中。
+* 您無法從公司入口網站安裝應用程式。
+* 您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。  
 
-若要從 Intune 和公司入口網站應用程式移除裝置，請依照下列步驟：
+1. 在公司入口網站中，移至右上角並點選三個垂直點。 動作功能表隨即開啟。
 
-1. 點選公司入口網站應用程式右上角的三個垂直點，開啟 [動作功能表]。
+   ![Android 版公司入口網站應用程式的影像，右上角是開啟的動作功能表。 新的 [移除公司入口網站] 選項是第三個選項，位於 [我的設定檔] 和 [設定] 底下，在 [條款及條件]、[說明與意見反應] 和 [關於] 之上。](./media/android_remove_cp_menu_action_after_1705.png)
 
-   ![Android 公司入口網站應用程式的影像，右上角是開啟的動作功能表。 新的 [移除公司入口網站] 選項是第三個選項，位於 [我的設定檔] 和 [設定] 底下，在 [條款及條件]、[說明與意見反應] 和 [關於] 之上。](./media/android_remove_cp_menu_action_after_1705.png)
+2. 點選 [移除公司入口網站]。  
 
-2. 點選 [移除公司入口網站]。
-
-3. 確認將會出現，詢問您是否確定要移除公司入口網站。 它會提供有關當您取消註冊裝置時，會發生什麼情況的一些資訊。 閱讀此訊息後，點選 [確定] 來移除應用程式。
+3. 隨即顯示一則訊息，其中包含取消註冊裝置之後續情況的資訊。 點選 [確定]  確認您要從公司入口網站移除裝置。
 
    ![確認對話方塊的影像，從動作功能表選取新的 [移除公司入口網站] 選項後就會顯示。 此對話方塊會告知使用者「若移除公司入口網站，您的裝置將不再受公司支援人員，並可能移除對公司資料、公司應用程式及公司電子郵件的存取權。」 然後，它會要求使用者選取 [是] 以確認要移除公司入口網站應用程式。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-## <a name="removing-data-collected-by-the-company-portal-app"></a>移除公司入口網站應用程式所收集的資料
+## <a name="removing-data-collected-by-the-company-portal-app"></a>移除公司入口網站應用程式所收集的資料  
 
 移除 Android 版公司入口網站應用程式在您裝置上安裝的所有資料：
 
 -   清除應用程式資料，方法是在 [應用程式] 中 -> 按一下應用程式 -> 按一下 [清除資料] 按鈕
 -   刪除 '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal' 資料夾
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+## <a name="uninstall-the-company-portal-app"></a>解除安裝公司入口網站應用程式  
+公司入口網站是裝置管理應用程式，因此您必須先[將裝置取消註冊管理](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management)，才能解除安裝。 完成後，請點選並按住公司入口網站應用程式圖示，直到您看到 [解除安裝]。 點選 [解除安裝] 以從您的裝置移除應用程式。  
+
+或者，點選 [設定] > [應用程式] > [公司入口網站] > [解除安裝]。  
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)

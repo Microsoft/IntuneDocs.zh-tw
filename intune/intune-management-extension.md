@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289018"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959565"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -33,7 +33,7 @@ Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以�
 
 ## <a name="prerequisites"></a>必要條件
 Intune 管理延伸模組具有下列必要條件：
-- 裝置必須加入 Azure AD。 這不包括混合式 AD 已加入的裝置。
+- 裝置必須加入 Azure AD。 Intune 管理延伸模組支援加入 Azure Active Directory、加入混合網域及註冊共同管理的 Windows 裝置。
 - 裝置必須執行 Windows 10 版本 1607 或更新版本。
 - 必須[在 Azure AD 中啟用](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)自動 MDM 註冊，而且裝置必須向 Intune 自動註冊。
 

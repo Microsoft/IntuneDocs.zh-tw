@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 9aac9d7523673d6907bf75bf91e1e9802a381ec2
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905303"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149048"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定電子郵件設定
 
@@ -67,9 +67,13 @@ ms.locfileid: "37905303"
 
 ## <a name="further-information"></a>進一步資訊
 
-### <a name="remove-an-email-profile"></a>移除電子郵件設定檔
+## <a name="remove-an-email-profile"></a>移除電子郵件設定檔
 
-若想要從裝置移除電子郵件設定檔，請編輯指派，然後再移除裝置所屬的任一群組。 如果電子郵件設定檔是裝置上唯一的電子郵件設定檔，則無法以此方式移除。
+電子郵件設定檔會指派給裝置群組，而不是使用者群組。 您可以透過不同的方式從裝置移除電子郵件設定檔，即使裝置上只有一個電子郵件設定檔也一樣：
+
+- **選項 1**：開啟電子郵件設定檔 ([裝置設定] > [設定檔])，然後選擇 [指派]。 [包含] 索引標籤顯示獲指派設定檔的群組。 以滑鼠右鍵按一下群組 > [移除]。 請務必**儲存**您的變更。
+
+- **選項 2**：[抹除或淘汰裝置](devices-wipe.md)。 您可以使用這些動作選擇性或完全移除資料和設定。
 
 ### <a name="securing-email-access"></a>保護電子郵件存取
 

@@ -1,39 +1,72 @@
 ---
-title: 執行 iOS 之裝置的 Microsoft Intune 自訂設定
+title: 在 Microsoft Intune 中將自訂設定新增至 iOS 裝置 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 了解 Microsoft Intune 中可用於 iOS 自訂設定檔的設定。
+description: 從 Apple Configurator 或 Apple Profile Manager 工具匯出 iOS 設定，然後將這些設定匯入 Microsoft Intune。 這些設定可以建立、使用及控制 iOS 裝置上的自訂設定和功能。 此自訂設定檔可接著指派或散發到您組織中的 iOS 裝置，以建立基準或標準。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0ae4e757264465043ee6992033710c5a81d7157
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 348a1dbf7b969956bc1ddcfb0f32a994a84e29d4
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831295"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983103"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>執行 iOS 之裝置的 Microsoft Intune 自訂裝置設定
+# <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 iOS 裝置的自訂設定
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+透過 Microsoft Intune，您可以使用「自訂設定檔」新增或建立 iOS 裝置的自訂設定。 自訂設定檔是 Intune 中的功能。 其設計目的是為了新增未內建在 Intune 的裝置設定和功能。
 
-使用 Microsoft Intune iOS 自訂設定檔，將使用 [Apple Configurator 工具](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)所建立的設定指派給 iOS 裝置。 此工具讓您能夠建立許多設定來控制這些裝置的操作，並將它們匯出到組態設定檔。 接著可將此組態設定檔匯入 Intune iOS 自訂設定檔，並將設定指派到組織中的使用者與裝置。
+使用 iOS 裝置時，您可以透過兩種方式將自訂設定匯入 Intune：
 
-此功能可讓您指派無法使用其他 Intune 設定檔類型設定的 iOS 設定。
+- [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
+- [Apple Profile Manager](https://support.apple.com/profile-manager)
 
+您可以使用這些工具，將設定匯出至組態設定檔。 在 Intune 中，您可以匯入此檔案，然後將設定檔指派給您的 iOS 使用者和裝置。 一旦指派，將會散發這些設定，並同時為您組織中的 iOS 建立基準或標準。
 
-1. 請使用[如何在 Microsoft Intune 中設定自訂裝置設定](custom-settings-configure.md)中的指示，即可開始使用。
-2. 在 [自訂組態設定檔] 窗格中，設定下列每個設定：
+本文示範如何建立 iOS 裝置的自訂設定檔。 其中也會提供有關使用 Apple Configurator 和 Apple Profile Manager 的一些指引。
 
-- **自訂組態設定檔名稱** - 提供原則的名稱，其會顯示在裝置以及 Intune 狀態中。
-- **組態設定檔** - 瀏覽至使用 Apple Configurator 所建立的組態設定檔。
-針對您所指派 iOS 自訂原則之裝置上的 iOS 版本，確認從 Apple Configurator 工具匯出的設定與其相容。 如需如何解決不相容設定的相關資訊，請在 [Apple Developer](https://developer.apple.com/) 網站上搜尋 **組態設定檔參考**和**行動裝置管理通訊協定參考**。
+## <a name="before-you-begin"></a>開始之前
 
-您匯入的檔案會顯示在窗格的 [檔案內容] 區域中。
+- 使用 **Apple Configurator** 建立組態設定檔時，請確定您所匯出的設定與所使用裝置上的 iOS 版本相容。 如需解決不相容設定的資訊，請在 [Apple Developer](https://developer.apple.com/) (Apple 開發人員) 網站上搜尋 **Configuration Profile Reference** (組態設定檔參考) 和 **Mobile Device Management Protocol Reference** (行動裝置管理通訊協定參考)。
+
+- 使用 **Apple Profile Manager** 時，請確定：
+
+  - 在 Profile Manager 中啟用[行動裝置管理](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C)。
+  - 在 Profile Manager 中新增 [iOS 裝置](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984)。
+  - 在 Profile Manager 中新增裝置之後，請移至 [Under the Library] \(在程式庫下\) > [Devices] \(裝置\) > 選取您的裝置 > [Settings] \(設定\)。 輸入裝置的一般設定。
+
+    下載並儲存此檔案。 您將在 Intune 設定檔中輸入此檔案。
+
+  - 確定您從 Apple Profile Manager 匯出的設定與所使用裝置上的 iOS 版本相容。 如需解決不相容設定的資訊，請在 [Apple Developer](https://developer.apple.com/) (Apple 開發人員) 網站上搜尋 **Configuration Profile Reference** (組態設定檔參考) 和 **Mobile Device Management Protocol Reference** (行動裝置管理通訊協定參考)。
+
+## <a name="create-the-profile"></a>建立設定檔
+
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入下列設定：
+
+    - **名稱**：輸入設定檔的名稱，例如 `ios custom profile`。
+    - **描述**：輸入設定檔的描述。
+    - [平台]：選擇 [iOS]。
+    - **設定檔類型**：選擇 [自訂]。
+
+4. 在 [自訂設定] 中，輸入下列設定：
+
+    - **自訂組態設定檔名稱**：輸入原則的名稱。 此名稱會在裝置上和 Intune 狀態中顯示。
+    - **組態設定檔**：瀏覽至使用 Apple Configurator 或 Apple Profile Manager 所建立的組態設定檔。 您匯入的檔案會顯示在 [檔案內容] 區域中。
+
+5. 選取 [確定] > [建立] 以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置設定 - 設定檔] 清單中。
+
+## <a name="next-steps"></a>接下來的步驟
+
+設定檔已建立，但還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+
+了解如何[在 macOS 裝置上建立設定檔](custom-settings-macos.md)。 
