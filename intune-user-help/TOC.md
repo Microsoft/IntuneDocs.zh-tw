@@ -107,11 +107,13 @@
 #### [尚不支援我的 macOS 版本](your-macos-version-isnt-yet-supported.md)
 #### [更新 macOS 裝置](you-need-to-update-your-macos-device.md)
 #### [提交公司入口網站錯誤](send-errors-macos.md)
+#### [裝置已指派給他人](unable-to-get-macOS-device-managed.md)
 #### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-macos.md)
 #### [此裝置稍有不同](device-little-different-jamf.md)
 #### [尋找序號](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [識別裝置](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [已達裝置限制](device-limit-wpj-macos.md)
+#### [嘗試管理 macOS VM 時發生問題](unable-to-get-macOS-device-managed.md) 
 
 ## [使用您的 Windows 裝置](using-your-windows-device-with-intune.md)
 ### [註冊 Windows 10 裝置時會發生什麼事？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
