@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313694"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915728"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 與 Samsung Knox Standard 裝置限制設定 - Intune
 
@@ -39,7 +39,7 @@ ms.locfileid: "43313694"
 - **地理位置 (僅限 Samsung Knox)** - 允許裝置使用位置資訊。
 - **關閉電源 (僅限 Samsung Knox)** - 可讓使用者關閉裝置電源。<br>如果停用，就無法設定**登入失敗幾次後即抹除裝置**。
 - **螢幕擷取 (僅限 Samsung Knox)** - 讓使用者將螢幕內容擷取成影像。
-- **語音助理 (僅限 Samsung Knox)** - 允許在裝置上使用語音助理軟體。
+- **語音助理 (僅限 Samsung Knox)** - 允許在裝置上使用 S 語音服務和應用程式。 其不適用於 Bixby 或用於大聲讀取螢幕內容的語音助理。
 - **YouTube (僅限 Samsung Knox)** - 允許在裝置上使用 YouTube 應用程式。
 - **共用的裝置 (僅限 Samsung Knox)** - 將受控 Samsung Knox Standard 裝置設定為共用。 在此模式中，使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都會維持受管理狀態。<br>搭配 SCEP 憑證設定檔使用時，此功能可讓使用者共用具有所有使用者應用程式集的裝置，但他們要使用自己的 SCEP 使用者憑證。當使用者登出時，會清除所有應用程式資料。  此功能僅限於 LOB 應用程式。
 - **封鎖日期和時間變更 (Samsung Knox)** - 防止使用者在裝置上變更日期和時間設定。 

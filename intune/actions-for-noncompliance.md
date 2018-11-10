@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828103"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236436"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>將電子郵件自動化，並為不符合規範的裝置新增動作 - Intune
 
@@ -71,7 +71,7 @@ ms.locfileid: "48828103"
 
    ![在 Intune 中符合規範的通知訊息範例](./media/actionsfornoncompliance-1.PNG)
 
-4. 一旦您完成新增資訊，請選擇 [建立]。 通知訊息範本便可供使用。
+4. 一旦您完成新增資訊，請選擇 [建立]。 通知訊息範本便可供使用。 請注意，您當作公司入口網站商標一部分上傳的標誌將會用於電子郵件範本。 如需公司入口網站商標的詳細資訊，請參閱[公司識別商標自訂](company-portal-app.md#company-identity-branding-customization)。  
 
 > [!NOTE]
 > 您也可以編輯先前建立的 [通知] 範本。

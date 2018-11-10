@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959565"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236334"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -56,7 +56,8 @@ Intune 管理延伸模組具有下列必要條件：
 
 > [!NOTE]
 > - 無法將 PowerShell 指令碼套用至電腦群組。
-> - 只有當 Azure Active Directory (AD) 使用者登入裝置時，才會在裝置上執行 PowerShell 指令碼。
+> - 終端使用者不需要登入裝置來執行 PowerShell 指令碼。 
+> - Intune 中的 PowerShell 指令碼可以鎖定至 AAD 裝置安全性群組。
 
 Intune 管理延伸模組每小時會與 Intune 進行同步處理一次。 將原則指派給 Azure AD 群組之後，即會執行 PowerShell 指令碼，並報告執行結果。 
  

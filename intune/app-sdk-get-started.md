@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: f807bd479ddbbc4ca6e83072c352bb8bd60cf5a9
-ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
+ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50225415"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915711"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -39,7 +39,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 等到註冊已完成且 Microsoft Intune 小組確認之後，Intune 系統管理員就不會有將應用程式保護原則套用至應用程式深層連結的選項。 Microsoft 也會將您的應用程式加到其 [Microsoft Intune Partner 頁面](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 應用程式的圖示將會在那裡顯示，以表示該應用程式支援 Intune 應用程式保護原則。
 
-若要開始註冊程序，請填寫 [Microsoft Intune App Partner Questionnaire (Microsoft Intune 應用程式合作夥伴問卷)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)。
+若要開始註冊程序，且如果您尚未使用 Microsoft 連絡人，請填寫 [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u) (Microsoft Intune 應用程式合作夥伴問卷)。
 
 我們將會使用問卷回應中列出的電子郵件地址與您連絡，並繼續註冊程序。 此外，如果有任何疑慮，我們也會使用您註冊的電子郵件地址與您連絡。
 

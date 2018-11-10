@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494042"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025146"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>將 Microsoft Store 應用程式新增至 Microsoft Intune
 
@@ -54,7 +54,7 @@ ms.locfileid: "46494042"
 8. 選取 [確定]。
 9. 選取 [新增]。
 
-您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 
+您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 Microsoft Store 應用程式只能指派給指派類型為**可用於已註冊裝置**的群組 (使用者從公司入口網站應用程式或網站安裝應用程式)。
 
 ## <a name="next-steps"></a>接下來的步驟
 - [將應用程式指派給群組](apps-deploy.md)

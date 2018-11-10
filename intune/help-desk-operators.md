@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229070"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236657"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -96,13 +96,14 @@ ms.locfileid: "47229070"
 | 擁有權          | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
 | 符合 Intune 規範   | 裝置類型的名稱。                                                                                                     |
 | 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
+| 應用程式安裝 | 表示個別裝置上的應用程式安裝失敗或成功。 |
 | OS                 | 裝置上安裝的作業系統。                                                                                       |
 | OS 版本         | 裝置的作業系統版本號碼。                                                                                  |
 | 上次簽入      | 裝置類型的名稱。                                                                                                     |
 
 ### <a name="app-protection-status"></a>應用程式保護狀態
 
-應用程式保護原則適用於與 Enterprise Mobility Solution (EMS) 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+應用程式保護原則適用於與 Enterprise Mobility Solution (EMS) 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
 
 | 屬性    | 描述                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ ms.locfileid: "47229070"
 
 ## <a name="app-protection-policies-reference"></a>應用程式保護原則參考
 
-應用程式保護原則適用於與 EMS 技術整合的行動應用程式。這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+應用程式保護原則適用於與 EMS 技術整合的行動應用程式。這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
 
 ### <a name="properties"></a>屬性
 
@@ -180,7 +181,7 @@ ms.locfileid: "47229070"
 
 ### <a name="app-protection-policies"></a>應用程式防護原則
 
-應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
 
 | 屬性    | 描述                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ ms.locfileid: "47229070"
 
 ## <a name="configuration-policies-reference"></a>設定原則參考
 
-應用程式設定原則適用於具有廠商特定設定的行動應用程式。 
+應用程式設定原則適用於具有廠商特定設定的行動應用程式。 
 
 ### <a name="properties"></a>屬性
 
@@ -226,7 +227,7 @@ ms.locfileid: "47229070"
 
 ### <a name="app-protection-policies"></a>應用程式防護原則
 
-應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
 
 | 屬性    | 描述                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

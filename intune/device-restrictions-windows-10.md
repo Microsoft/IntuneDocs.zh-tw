@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652150"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679384"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。
@@ -405,4 +405,4 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 - **RCS (僅限行動裝置)** - 停用裝置上的 Rich Communication Services 傳送/接收功能。
 
 ## <a name="more-information"></a>更多資訊
-如需每項設定的其他技術詳細資料，以及支援哪些 Windows 版本，請參閱 [Windows 10 原則 CSP 參照](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) \(英文\)
+如需每項設定的其他技術詳細資料，以及支援哪些 Windows 版本，請參閱 [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) (Windows 10 原則 CSP 參考)

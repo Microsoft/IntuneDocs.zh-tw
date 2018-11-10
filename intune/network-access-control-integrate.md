@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959514"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236147"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -27,7 +27,7 @@ Intune 會與網路存取控制夥伴整合，以協助組織在裝置嘗試存�
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 和 NAC 解決方案如何協助保護您的組織資源？
 
-NAC 解決方案會向 Intune 確認裝置註冊與合規性狀態，以做出存取控制決定。 如果裝置未註冊，或是已註冊但不符合 Intune 裝置合規性原則，就應該將裝置重新導向至 Intune 來進行註冊和/或裝置合規性檢查。
+NAC 解決方案會向 Intune 確認裝置註冊與合規性狀態，以做出存取控制決定。 如果裝置未註冊，或是已註冊但不符合 Intune 裝置合規性政策，就應該將裝置重新導向至 Intune 來進行註冊，或進行裝置合規性檢查。
 
 ### <a name="example"></a>範例
 
@@ -37,7 +37,7 @@ NAC 解決方案會向 Intune 確認裝置註冊與合規性狀態，以做出�
 
 主動同步至 Intune 的裝置不能從 [符合規範] / [不符合規範] 移至 [未同步] (或 [未知])。 [未知] 是保留給尚未針對合規性進行評估之新註冊裝置的狀態。
 
-針對被封鎖而無法存取資源的裝置，封鎖服務應該將所有使用者重新導向至[管理入口網站](https://portal.manage.microsoft.com)，以判斷該裝置被封鎖的原因。  若使用者造訪此頁面，其裝置將會同步地重新進行合規性評估。
+針對被封鎖而無法存取資源的裝置，封鎖服務應該將所有使用者重新導向至[管理入口網站](https://portal.manage.microsoft.com)，以判斷該裝置被封鎖的原因。  若使用者造訪此頁面，其裝置將會同步地重新進行合規性評估。
 
 ## <a name="nac-and-conditional-access"></a>NAC 和條件式存取
 
@@ -55,13 +55,23 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 4. 使用者連線到公司 Wi-Fi 存取點或進行 VPN 連線要求。
 5. NAC 合作夥伴解決方案將裝置資訊轉送至 Intune，並詢問 Intune 裝置註冊與合規性狀態。
 6. 如果裝置不符合規範或未註冊，NAC 合作夥伴解決方案會指示使用者註冊或修正裝置合規性。
-7. 裝置會嘗試重新確認其合規性和/或註冊狀態。
+7. 裝置會嘗試重新確認其合規性和註冊狀態 (若適用)。
 8. 一旦裝置已註冊且符合規範，NCA 合作夥伴解決方案會從 Intune 取得狀態。
 9. 已成功建立連線，可讓裝置存取公司資源。
+
+## <a name="use-nac-on-your-ios-devices"></a>在 iOS 裝置上使用 NAC
+
+iOS 上的下列 VPN 用戶端目前不支援網路存取控制：
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案就緒時，我們將會更新本文並提供其他詳細資料。 
+
 
 ## <a name="next-steps"></a>接下來的步驟
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (整合 Cisco ISE 與 Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (整合 Citrix NetScaler 與 Intune)
 - [Integrate HP Aruba ClearPass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271) (整合 HP Aruba ClearPass 與 Intune)
-- [Integrate Squadra security Removable Media Manager (secRMM) with Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf) (整合 Squadra security Removable Media Manager (secRMM) 與 Intune)
+- [整合 Squadra security Removable Media Manager (secRMM) 與 Intune ](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf) \(英文\)

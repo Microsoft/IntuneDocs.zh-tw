@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149116"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025231"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,23 +41,131 @@ ms.locfileid: "50149116"
 ### Role-based access control
 
 -->     
-## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日當週
+## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日當週
 
-### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>從裝置移除電子郵件設定檔，即使只有一個電子郵件設定檔也一樣 <!-- 1818139 -->
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>在指定的逾時之後要求非生物特徵辨識 PIN <!-- 1506985 -->
+透過在系統管理員指定的逾時之後要求非生物特徵辨識 PIN，Intune 可藉由限制使用生物特徵辨識身分識別來存取公司資料，為啟用行動應用程式管理 (MAM) 的應用程式增強安全性。 這些設定會影響依賴 Touch ID (iOS)、Face ID (iOS)、 Android 生物特徵辨識或其他未來的生物特徵辨識驗證方法，來存取其啟用 APP/MAM 之應用程式的使用者。 這些設定可讓 Intune 系統管理員能夠更細微地控制使用者存取，並排除具有多個指紋或其他生物特徵辨識存取方法的裝置，可能會向不正確使用者顯示公司資料的情況。 在 Azure 入口網站中，開啟 [Microsoft Intune]。 選取 [用戶端應用程式] > [應用程式保護原則] > [新增原則] > [設定]。 找出特定設定的 [存取] 區段。 如需存取設定的資訊，請參閱 [iOS 設定](app-protection-policy-settings-ios.md#access-settings)和 [Android 設定](app-protection-policy-settings-android.md#access-settings)。
+
+#### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>已註冊 MDM 之 iOS 裝置上的 Intune 應用程式資料轉送設定 <!-- 2244713 -->
+您可以將已註冊 iOS MDM 裝置上 Intune 應用程式資料轉送設定的控制，與指定已註冊使用者的身分識別 (也稱為使用者主體名稱 (UPN)) 區分開來。 不使用 IntuneMAMUPN 的系統管理員將不會發現行為變更。 當此功能可用時，使用 IntuneMAMUPN 來控制已註冊裝置上資料轉送行為的系統管理員，應檢閱新的設定並視需要更新其應用程式設定。
+
+#### <a name="windows-10-win32-apps----2617325---"></a>Windows 10 Win32 應用程式 <!-- 2617325 -->
+您可以設定 Win32 應用程式在個別 使用者的使用者內容中安裝，而不是為裝置的所有使用者安裝應用程式。
+
+#### <a name="windows-win32-apps-and-powershell-scripts----2617330---"></a>Windows Win32 應用程式和 PowerShell 指令碼 <!-- 2617330 -->
+終端使用者已不再需要登入裝置來安裝 Win32 應用程式或執行 PowerShell 指令碼。 
+
+#### <a name="troubleshooting-client-app-installation----1363711---"></a>針對用戶端應用程式安裝進行疑難排解 <!-- 1363711 -->
+您可以藉由檢閱 [疑難排解] 刀鋒視窗中標示為 [應用程式安裝] 的資料行，來為用戶端應用程式的安裝成功問題進行疑難排解。 若要檢視 [疑難排解] 刀鋒視窗，請在 Intune 入口網站中的 [說明及支援] 下選取 [疑難排解]。
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN 用戶端上的網路存取控制支援 <!-- 1333693 wnready -->
+透過此更新，您可以在為 Cisco AnyConnect、F5 Access 和 Citrix SSO for iOS 建立 VPN 設定檔時啟用網路存取控制 (NAC)。 此設定可讓裝置的 NAC 識別碼包含在 VPN 設定檔中。 目前尚沒有任何支援此新 NAC 識別碼的 VPN 用戶端或 NAC 合作夥伴解決方案；當提供支援時，我們將透過[支援部落格文章](ttps://aka.ms/iOS12_and_vpn)通知您。
+
+若要使用 NAC，您將需要：
+1. 選擇允許 Intune 在 VPN 設定檔中包含裝置識別碼
+2. 更新您的 NAC 提供者軟體/韌體，直接從您的 NAC 提供者使用指導方針
+
+如需 iOS VPN 設定檔中此設定的相關資訊，請參閱[在 Microsoft Intune 中的 iOS 裝置上新增 VPN 設定](vpn-settings-ios.md)。 如需網路存取控制的詳細資訊，請參閱[搭配 Intune 的網路存取控制 (NAC) 整合](network-access-control-integrate.md)。 
+
+適用於：iOS
+
+#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>從裝置移除電子郵件設定檔，即使只有一個電子郵件設定檔也一樣 <!-- 1818139 -->
 之前，「如果」這是唯一的電子郵件設定檔，則無法從裝置移除電子郵件設定檔。 在此更新中，此行為會有所變更。 現在，您可以移除電子郵件設定檔，即使裝置上只有一個電子郵件設定檔也一樣。 如需詳細資訊，請參閱[使用 Intune 將電子郵件設定新增至裝置](email-settings-configure.md)。
 
-### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>從您的裝置移除 PKCS 和 SCEP 憑證 <!-- 3218390 -->
+#### <a name="powershell-scripts-and-aad----2309469---"></a>PowerShell 指令碼和 AAD <!-- 2309469 -->
+Intune 中的 PowerShell 指令碼可以鎖定至 AAD 裝置安全性群組。
+
+#### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>適用於 Android、Android Enterprise 的新「必要密碼類型」預設設定 <!-- 2649963 -->
+當您建立新的合規性原則 (針對 [平台] > [系統安全性]，選擇 [Intune] > [裝置合規性] > [原則] > [建立原則] > [Android] 或 [Android Enterprise]) 時，[必要密碼類型] 的預設值會變更：
+
+從裝置預設變更為至少包含數字
+
+套用至：Android、Android Enterprise
+
+若要查看這些設定，請瀏覽 [Android](compliance-policy-create-android.md) 和 [Android Enterprise](compliance-policy-create-android-for-work.md)。
+
+#### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>在 Windows 10 Wi-Fi 設定檔中使用預先共用金鑰 <!-- 2662938 -->
+透過此更新，您可以搭配 WPA/WPA2-Personal 安全性通訊協定使用預先共用金鑰 (PSK)，來驗證適用於 Windows 10 的 Wi-Fi 組態設定檔。 您也可以在Windows 10 2018 年 10 月更新中，為裝置指定計量付費網路的成本設定。
+
+目前您必須匯入 Wi-Fi 設定檔或是建立自訂的設定檔，才能使用預先共用金鑰。 [適用於 Windows 10 的 Wi-Fi 設定](wi-fi-settings-windows.md)列出目前的設定。 
+
+#### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>從您的裝置移除 PKCS 和 SCEP 憑證 <!-- 3218390 -->
 在某些案例中，PKCS 和 SCEP 憑證會保留在裝置上，即使從群組中移除原則、刪除設定或合規性部署，或是系統管理員更新現有的 SCEP 或 PKCS 設定檔也一樣。 此更新會變更該行為。 在某些案例中，PKCS 和 SCEP 憑證會從裝置移除；在某些案例中，這些憑證會保留在裝置上。 請參閱[在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證](remove-certificates.md)以了解這些案例。
+
+#### <a name="use-gatekeeper-on-macos-devices-for-compliance----2504381---"></a>在 macOS 裝置上使用閘道管理員以遵循合規性 <!-- 2504381 -->
+此更新包括 macOS 閘道管理員，用於評估裝置合規性。 若要設定閘道管理員屬性，請[為 macOS 裝置新增裝置合規性政策](compliance-policy-create-mac-os.md)。
+
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="enrollment-abandonment-report----1382924---"></a>註冊放棄報表 <!-- 1382924 -->
+您可以在 [裝置註冊] > [監視] 下取得新報表，提供已放棄註冊的詳細資料。 如需詳細資訊，請參閱[公司入口網站放棄報表](enrollment-report-company-portal-abandon.md)。
+
+#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>將 Autopilot 設定檔指派給所有裝置虛擬群組 <!--2715522 -->
+您將可以將 Autopilot 設定檔指派給所有裝置虛擬群組。 若要進行此動作，請選擇 [裝置註冊] > [Windows 註冊] > [部署設定檔]> 選擇設定檔 > [指派] > 在 [指派對象] 下方，選擇 [所有裝置]。 如需 Autopilot 設定檔的詳細資訊，請參閱[使用 Windows AutoPilot 註冊 Windows 裝置](enrollment-autopilot.md)。
+
+#### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用條款功能 <!-- 2870393 -->
+Azure Active Directory 具備您可以改使用的條款功能，而無須使用現有 Intune 條款及條件。 Azure AD 使用條款功能可提供更多彈性，讓您決定要顯示哪些條款以及顯示的時機、具備更佳的當地語系化支援、對轉譯條款的方式擁有更大控制能力，以及改善回報。 Azure AD 使用條款需要 Azure Active Directory Premium P1，該項目也是 Enterprise Mobility + Security E3 套件的一部分。 若要深入了解，請參閱[管理公司的使用者存取條款及條件](terms-and-conditions-create.md)一文。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>混合式 Azure Active Directory 聯結裝置的 Autopilot 支援 (預覽) <!-- 1048100-->
+您現在可以透過使用 Autopilot，來設定混合式 Azure Active Directory 聯結裝置。 裝置必須聯結到您組織的網路，才能使用混合式 Autopilot 功能。 如需詳細資訊，請參閱[使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置](windows-autopilot-hybrid.md)。
+此功能將在未來幾天內在整個使用者群中推出。 因此，在推出至您的帳戶之前，您可能無法執行這些步驟。
+
+### <a name="android-device-owner-mode-support---3188762--"></a>Android 裝置擁有者模式支援 <!--3188762-->
+針對 Samsung Knox 行動裝置註冊，Intune 現在支援將裝置註冊於 Android 裝置擁有者管理模式。 使用 WiFi 或行動電話通訊網路的使用者第一次開啟其裝置時，只需輕點幾下即可註冊。 如需詳細資訊，請參閱[使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置](android-samsung-knox-mobile-enroll.md)。
+
+### <a name="device-management"></a>裝置管理
+
+### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>透過交互識別碼群組 Windows Autopilot 註冊裝置 <!-- 2075110 -->
+Intune 現在支援在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來為 Windows 裝置分組。 交互識別碼是 Autopilot 設定檔的參數。 Intune 會自動將 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 設為相等的 "OfflineAutopilotprofile-<correlator ID>"。 這會允許透過離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。 如需詳細資訊，請參閱[現有裝置的 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
+
+### <a name="intune-app-protection-policies----2984657---"></a>Inunte 應用程式保護原則 <!-- 2984657 -->
+Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Microsoft Outlook 和 Microsoft Word) 設定各種資料保護設定。 我們已變更這些設定的外觀與風格 ([iOS](app-protection-policy-settings-ios.md) 和 [Android](app-protection-policy-settings-android.md))，以便輕鬆找到個別設定。 原則設定有三個類別：
+- **資料重新配置** - 此群組包含資料外洩防護 (DLP) 控制項，例如剪下、複製、貼上以及另存新檔的限制。 這些設定會決定使用者如何與應用程式中的資料互動。
+- **存取需求** - 此群組包含每個應用程式的 PIN 選項，用於決定終端使用者如何在工作環境中存取應用程式。  
+- **條件式啟動** - 此群組包含最低作業系統設定、越獄和 Root 裝置偵測以及離線寬限期等設定。  
+  
+設定的功能不會變更，但可讓您在處理原則編寫流程時更容易找到。 
+
+### <a name="intune-apps"></a>Intune 應用程式
+
+#### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>針對 LOB 應用程式，Intune 將支援最大 8 GB 套件大小 <!-- 1727158 -->
+Intune 會將企業營運 (LOB) 應用程式的最大套件大小增加為 8 GB。 如需詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。
+
+#### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>新增公司入口網站應用程式的自訂品牌形象 <!-- 1916266 -->
+作為 Microsoft Intune 系統管理員，您可以上傳自訂品牌影像，該影像會在 iOS 公司入口網站應用程式中的使用者設定檔頁面上，作為背景影像顯示。 如需設定公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
+
+#### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>Intune 會在更新終端使用者電腦上的 Office 時保留 Office 當地語系化語言 <!-- 2971030 -->
+當 Intune 在您終端使用者的電腦上安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。 如需詳細資訊，請參閱[使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](apps-add-office365.md)。
+
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Microsoft 365 裝置管理入口網站中的新 Intune 支援體驗 <!-- 3076965 -->
+我們正於 [Microsoft 365 裝置管理入口網站]( http://devicemanagement.microsoft.com)中，為 Intune 推出新的說明及支援體驗。 新體驗可讓您用自己的文字描述問題，並收到疑難排解深入解析和網站型修復內容。 這些解決方案透過規則型的機器學習演算法提供，由使用者查詢所驅動。  
+
+除了特定問題的指導之外，您也可以使用新的案例建立工作流程，透過電子郵件或電話來開啟支援案例。  
+
+針對參與推出的客戶，此新體驗會取代一組靜態預先選取選項的目前說明和支援體驗，這些選項會基於您開啟說明及支援時所在控制台的區域。  
+
+*這個新的說明及支援體驗正在推出至部分 (並非全部) 租用戶，並且可在 [裝置管理] 入口網站中找到。從可用的 Intune 租用戶中隨機選取這個新體驗的參與者。在我們擴展推出時，將會新增新租用戶。*  
+
+如需詳細資訊，請參閱＜如何取得 Microsoft Intune 支援＞中的[新說明及支援體驗](get-support.md#new-help-and-support-experience)。  
 
 ### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>適用於 Intune 的 PowerShell 模組 - 現供預覽 <!-- wnready 951068 -->
 新的 PowerShell 模組透過 Microsoft Graph 支援 Intune API，現在於 [GitHub]( https://aka.ms/intunepowershell) 上提供預覽。 如需如何使用此模組的詳細資料，請參閱該位置的讀我檔案。 
+
 
 ## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日當週
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>當您變更 iOS 裝置上的指紋或 Face ID 時會收到提示必須輸入 PIN <!-- 2637704  -->
 現在，當使用者在其 iOS 裝置上進行生物特徵辨識變更之後，會收到輸入 PIN 的提示。 這包括變更已註冊的指紋或 Face ID。 提示時間取決於 [重新檢查存取需求前的剩餘時間 (分鐘)] 逾時的設定方式。  若未設定任何 PIN，則系統會提示使用者設定一個。 
  
-此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 此整合會以輪流的方式發生，並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
+此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 這項整合會輪流發生並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
 
 
 ## <a name="week-of-october-1-2018"></a>2018 年 10 月 1 日當週
@@ -937,9 +1045,9 @@ Apple 剛剛發行 macOS 10.14。 Intune 隨後會在 2018 年 12 月轉為支�
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 在 12 月 3 日之後，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專屬 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 在 MPO 入口網站中建立的支援要求無法在 Azure 入口網站中檢視，因此您應該停止在 MPO 中建立支援要求。  
 
-若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM 已過時，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (從混合式行動裝置管理移到 Azure 上的 Intune)。
+若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM 已過時，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (從混合式行動裝置管理移至 Azure 上的 Intune)。
 
-請注意，只有全域管理員、Intune 服務管理員與服務支援管理員角色可以在 Azure 入口網站中建立支援票證。
+請注意，只有具備全域管理員、Intune 服務管理員和服務支援管理員角色的使用者可以在 Azure 入口網站中建立支援票證。
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
 - 停止使用 MPO 並使用 Azure 上的 Intune 來建立及管理您的所有 Intune 支援要求。  

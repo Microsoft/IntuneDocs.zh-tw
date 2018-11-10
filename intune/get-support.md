@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410832"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -96,6 +96,64 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 1. 使用您的 Intune 系統管理員認證來登入 Azure (<https://portal.azure.com>)，然後選取 <strong>?</strong> 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)頁面。
 
 2. 在 [說明 + 支援] 頁面上，您可以檢視 [最近的支援要求] 清單，然後選取要求來檢視其他詳細資料。
+
+
+## <a name="new-help-and-support-experience"></a>新的說明及支援體驗 
+*下列資訊僅在您使用裝置管理入口網站時適用，且為新推出的部分說明及支援體驗。從可用的 Intune 租用戶中隨機選取此推出的參與者。*  
+
+Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](http://devicemanagement.microsoft.com)中的新體驗，可用於某些但並非所有租用戶。 這個新體驗與 [Microsoft 365 系統管理中心](https://portal.office.com/AdminPortal/Home)中的體驗類似，且在從裝置管理主控台的某些位置存取時，取代了先前的說明及支援體驗。  
+
+在裝置管理入口網站中，當您從 [所有服務] > [裝置管理] 下方的任何刀鋒視窗 (除了 [疑難排解] 刀鋒視窗外) 選取 [說明及支援] 時，您將可存取新體驗。 當您從 [疑難排解] 等其他位置存取說明和支援時，使用主控台橫幅右上角的 **？** 選項， 或從左側窗格的服務清單選取 [說明 + 支援]，您即可以存取原始體驗。  
+
+在新體驗中，您可以存取 [需要協助嗎?] 檢視，如下圖所示：  
+![裝置管理儀表板和 [需要協助嗎?] 頁面](./media/get-support/help-support-dashboard.png)
+
+在此檢視中，您可以執行下列動作：
+
+1. [指定詳細資料](#specify-details-about-an-issue)可指定您需要協助的特定問題詳細資料  
+2. [檢視即時線上說明](#view-context-sensitive-help)和根據您指定之詳細資料的相關解決方案  
+3. [取得支援](#get-support)，使用電子郵件或電話  
+4. [檢視支援案例](#view-support-cases)可檢視您之前使用此新工作流程開啟的案例  
+
+### <a name="specify-details-about-an-issue"></a>指定問題的相關詳細資料
+當您從新體驗支援的位置開啟 [說明及支援] 時，會開啟 [需要協助嗎?]   頁面。 在此頁面上，您可以指定問題的相關詳細資料。 當您輸入詳細資料，主控台會根據您所使用的關鍵字提供常用查詢。 您可以選擇提供的選項，或完成您自己的問題描述。 如果您輸入您自己的描述，請選取 [取得說明] 進行提交。 提交查詢後，主控台會傳回可協助解決此問題的內容相關性資訊。
+
+下列是您可能會提交的查詢範例：
+  
+- *無法還原 iOS 裝置*  
+- *無法建立條件式存取原則*  
+
+![在 [需要協助嗎?] 頁面上指定問題](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>檢視即時線上說明
+在您選取提供的選項，或提交您自己的查詢後，內容相關性結果將顯示在**檢視解決方案**下方。 這些結果包含 Intune 特定的自助指導，以及基於查詢條件的 Web 搜尋所傳回其他結果。  
+![檢視結果](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>取得支援  
+如果自助或 Web 型的指導無法協助您解決問題，您可以使用主控台開啟電子郵件或電話支援問題。  
+在 [需要協助嗎?] 頁面上選取您想要使用的選項。  
+
+- 針對電子郵件要求，請提供您的電子郵件地址，也可以選擇在提交中新增附件。 選取 [傳送] 以開啟要求。  
+
+  ![電子郵件要求](./media/get-support/email-support.png)
+  
+- 針對電話要求，請提供您的電話號碼。 或者您也可以提供電子郵件地址，並在提交中新增附件。 選取 [撥號給我] 以遞交要求。  
+
+   ![電話要求](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>檢視支援案例
+選取 [歷程記錄] 按鈕以檢視您已建立的支援事件。  
+
+![檢視支援案例](./media/get-support/view-support-tickets.png)
+
+- 在此工作流程中，只能看見您使用新工作流程開啟的支援案例。 若要檢視這些支援案例，請使用裝置管理主控台中的 [說明及支援] 檢視，該檢視是新體驗的一部分。 這些案例有八位數長的編號。 您也可以從 Microsoft 365 系統管理中心檢視這些案例。  
+
+- 在您帳戶新增至新說明及支援體驗之前開啟的案例，將維持不變。 若要檢視這些案例，您必須使用不屬於新推出體驗的說明及支援檢視。 這些案例的編號以 **117** 或 **118** 開頭，長度為 15 位數。  若要檢視在您新增至新體驗前已開啟的支援案例，請使用 Azure 入口網站。 操作方法：
+
+    1. 使用您的 Intune 系統管理員認證來登入 Azure (<https://portal.azure.com>)，然後選取 *?* 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)頁面。
+
+    2. 在 [說明 + 支援] 頁面上，您可以檢視 [最近的支援要求] 清單，然後選取要求來檢視其他詳細資料。
 
 ## <a name="additional-resources"></a>其他資源
 - [Microsoft Intune 的連絡電話協助支援](phone-support-contact.md)

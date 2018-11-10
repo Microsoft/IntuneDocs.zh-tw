@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 491d2884f73d9178f54b6b2861bfe6f248c41c63
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231643"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236555"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 ## <a name="manage-ios-apps"></a>管理 iOS 應用程式
@@ -37,7 +37,7 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 
 -   **員工擁有但未交由任何 MDM 解決方案管理的裝置**：您可以將應用程式保護原則設定設為 [Allow app to transfer data to only Policy Managed apps] \(只允許應用程式將資料傳送至受原則管理的應用程式\)。 受原則管理應用程式中的「開啟於」行為只會將其他受原則管理的應用程式呈現為共用選項。 如果使用者嘗試在原生郵件中將來自 OneDrive 之受原則保護的檔案當作附件傳送，則該檔案將會無法讀取。
 
--   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要允許設有應用程式保護原則之應用程式間的資料傳輸，請啟用 [Allow app to transfer data to only managed apps]\(只允許應用程式將資料傳送至受管理的應用程式) 設定。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。   
+-   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要指定您要如何允許將資料傳送至其他應用程式，請啟用 [允許應用程式將資料傳送至其他應用程式] 設定，然後選擇您偏好的共用層級。 若要指定您要如何允許應用程式接收其他應用程式的資料，請啟用 [允許應用程式接收其他應用程式的資料] 設定，然後選擇您偏好的接收資料層級。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。 如需接收和共用應用程式資料的詳細資訊，請參閱[資料重新配置設定](app-protection-policy-settings-ios.md#data-relocation-settings)。   
 
 -   **第三方 MDM 解決方案管理的裝置：** 您可以使用 iOS 的**開啟位置管理**功能，將資料傳輸在限制僅限受管理的應用程式。
 若要確定您使用第三方 MDM 解決方案部署的應用程式也關聯了您在 Intune 中設定的應用程式保護原則，您必須依照[設定使用者 UPN 設定](#configure-user-upn-setting-for-third-party-emm)逐步解說所述，設定使用者 UPN 設定。  應用程式若是透過使用者 UPN 設定部署，便會在使用者使用其工作帳戶登入時，將應用程式保護原則套用到應用程式。

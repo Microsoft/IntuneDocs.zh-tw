@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,28 +13,66 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329642"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236470"
 ---
-# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune 中適用於 Windows 10 和更新版本之裝置的 Wi-Fi 設定
+# <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中為 Windows 10 和更新版本裝置新增 Wi-Fi 設定
 
-Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Windows 10 和更新版本的裝置。 選項包含：
+您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Windows 10 和更新版本裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、使用預先共用金鑰等等。
 
-- 基本
-- 企業
+本文說明了這些設定。
 
 ## <a name="before-you-begin"></a>開始之前
 
 [建立裝置設定檔](device-profile-create.md)。
 
-## <a name="settings-for-basic-and-enterprise-profiles"></a>適用於基本設定檔與企業設定檔的設定
+## <a name="basic-profile"></a>基本設定檔
+
+- **Wi-Fi 類型**：選擇 [基本]。 
 
 - **Wi-Fi 名稱 (SSID)**：服務組識別元的簡稱。 此值是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的**連線名稱**。
+
 - **連線名稱**：輸入此 Wi-Fi 連線的使用者易記名稱。 您輸入的文字是使用者瀏覽其裝置上可用連線時所見到的名稱。
+
+- **在範圍內時自動連線**：如果為 [是]，裝置會於位在此網路範圍內時自動連線。 如果為 [否]，裝置不會自動連線。
+
+  - **可用時連線到更慣用的網路**：如果裝置位在更慣用的網路範圍內，則選擇 [是] 以使用慣用的網路。 選擇 [否] 即會在此組態設定檔中使用 Wi-Fi 網路。
+
+    例如，您可以建立 **ContosoCorp** Wi-Fi 網路，並在此組態設定檔內使用 **ContosoCorp**。 您也可以在範圍內包含 **ContosoGuest** Wi-Fi 網路。 當您的公司裝置位在範圍內時，您希望它們自動連線到 **ContosoCorp**。 在此案例中，請將 [可用時連線到更慣用的網路] 屬性設定為 [否]。
+
+  - **即使未廣播其 SSID 也連線到此網路**：選擇 [是] ，即使網路是隱藏的 (亦即，未公開廣播其 SSID)，也讓組態設定檔自動連線到您的網路。 如果不想要這個組態設定檔連線到隱藏的網路，請選擇 [否]。
+
+- **計量付費連線限制**：系統管理員可以選擇網路流量的計量方式。 應用程式可接著根據此設定調整其網路流量行為。 選項包括：
+
+  - **不受限制**：預設值。 連線不會計量，而且流量沒有限制。
+  - **固定**：如果網路設定為沒有固定的網路流量限制，請使用此選項。 達到此限制之後，就會禁止存取網路。
+  - **可變**：如果網路流量是按位元組計費 (每位元組的費用)，請使用此選項。
+
+- **無線安全性類型**：輸入用來驗證網路上裝置的安全性通訊協定。 選項包括：
+  - **開放 (無驗證)**：只有在網路不安全時才使用此選項。
+  - **WPA/WPA2-Personal**：更安全的選項，常用於 Wi-Fi 連線。 如需提高安全性，您也可以輸入預先共用金鑰密碼或網路金鑰。 
+
+    - **預先共用金鑰** (PSK)：選擇性。 當您選擇 [WPA/WPA2-Personal] 作為安全性類型時，即會顯示。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。 輸入介於 8-64 個字元的字串。 如果您的密碼或網路金鑰為 64 個字元，請輸入十六進位字元。
+
+- **公司 Proxy 設定**：選擇使用您組織內的 Proxy 設定。 選項包括：
+  - **無**：不設定任何 Proxy 設定。
+  - **手動設定**：輸入 [Proxy 伺服器 IP 位址] 及其 [連接埠號碼]。
+  - **自動設定**：輸入指向 Proxy 自動設定 (PAC) 指令碼的 URL。 例如，輸入 `http://proxy.contoso.com/proxy.pac`。
+
+選取 [確定] > [建立] 儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
+
+## <a name="enterprise-profile"></a>企業設定檔
+
+- **Wi-Fi 類型**：選擇 [企業]。 
+
+- **Wi-Fi 名稱 (SSID)**：服務組識別元的簡稱。 此值是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的**連線名稱**。
+
+- **連線名稱**：輸入此 Wi-Fi 連線的使用者易記名稱。 您輸入的文字是使用者瀏覽其裝置上可用連線時所見到的名稱。
+
 - **在範圍內時自動連線**：如果為 [是]，裝置會於位在此網路範圍內時自動連線。 如果為 [否]，裝置不會自動連線。
   - **可用時連線到更慣用的網路**：如果裝置位在更慣用的網路範圍內，則選擇 [是] 以使用慣用的網路。 選擇 [否] 即會在此組態設定檔中使用 Wi-Fi 網路。
 
@@ -42,18 +80,11 @@ Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Wind
 
   - **即使未廣播其 SSID 也連線到此網路**：選擇 [是] ，即使網路是隱藏的 (亦即，未公開廣播其 SSID)，也讓組態設定檔自動連線到您的網路。 如果不想要這個組態設定檔連線到隱藏的網路，請選擇 [否]。
 
-- **公司 Proxy 設定**：選擇使用您組織內的 Proxy 設定。 選項包括：
-  - **無**：不設定任何 Proxy 設定。
-  - **手動設定**：輸入 [Proxy 伺服器 IP 位址] 及其 [連接埠號碼]。
-  - **自動設定**：輸入指向 Proxy 自動設定 (PAC) 指令碼的 URL。 例如，輸入 `http://proxy.contoso.com/proxy.pac`。
+- **計量付費連線限制**：系統管理員可以選擇網路流量的計量方式。 應用程式可接著根據此設定調整其網路流量行為。 選項包括：
 
-## <a name="settings-for-basic-profiles-only"></a>僅適用於基本設定檔的設定
-
-- **無線安全性類型**：輸入用來驗證網路上裝置的安全性通訊協定。 選項包括：
-  - **開放 (無驗證)**：只有在網路不安全時才使用此選項。
-  - **WPA/WPA2-Personal**
-
-## <a name="settings-for-enterprise-profiles-only"></a>僅適用於企業設定檔的設定
+  - **不受限制**：預設值。 連線不會計量，而且流量沒有限制。
+  - **固定**：如果網路設定為沒有固定的網路流量限制，請使用此選項。 達到此限制之後，就會禁止存取網路。
+  - **可變**：如果網路流量是按位元組計費，請使用此選項。
 
 - **單一登入 (SSO)**：可讓您設定單一登入 (SSO)，會共用認證以便電腦和 Wi-Fi 網路登入。 選項包括：
   - **停用**：停用 SSO 行為。 使用者必須分別向網路進行驗證。
@@ -107,11 +138,24 @@ Wi-Fi 設定用於組態設定檔，而組態設定檔則會套用至執行 Wind
 
         **識別隱私權 (外部識別)**：搭配 **EAP-TTLS** EAP 類型使用。 輸入在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
+- **公司 Proxy 設定**：選擇使用您組織內的 Proxy 設定。 選項包括：
+  - **無**：不設定任何 Proxy 設定。
+  - **手動設定**：輸入 [Proxy 伺服器 IP 位址] 及其 [連接埠號碼]。
+  - **自動設定**：輸入指向 Proxy 自動設定 (PAC) 指令碼的 URL。 例如，輸入 `http://proxy.contoso.com/proxy.pac`。
+
 - **強制讓 Wi-Fi 設定檔符合聯邦資訊處理標準 (FIPS) 的規範**：根據 FIPS 140-2 進行驗證時，選擇 [是]。 所有使用加密型安全性系統的美國聯邦政府機構都需要此標準，以保護數位形式儲存的敏感但並非機密資訊。 選擇 [否] 表示不符合 FIPS 規範。
+
+選取 [確定] > [建立] 儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
 
 ## <a name="use-an-imported-settings-file"></a>使用匯入的設定檔
 
 針對 Intune 中無法使用的任何設定，您可以從另一部 Windows 裝置匯出 Wi-Fi 設定。 這項匯出會建立具有所有設定的 XML 檔案。 然後，將此檔案匯入至 Intune，並使用它作為 Wi-Fi 設定檔。 請參閱[匯出和匯入 Windows 裝置的 Wi-Fi 設定](wi-fi-settings-import-windows-8-1.md)。
 
 ## <a name="next-steps"></a>接下來的步驟
-[在 Intune 中設定 Wi-Fi 設定](wi-fi-settings-configure.md)
+
+設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+
+## <a name="more-resources"></a>其他資源
+
+- 請參閱適用於 [Windows 8.1](wi-fi-settings-import-windows-8-1.md) 的設定。
+- [Wi-Fi 設定概觀](wi-fi-settings-configure.md)，包括其他平台

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494008"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915745"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -89,4 +89,15 @@ ms.locfileid: "46494008"
 * 將目前指派的範圍減少，僅以您擁有足夠授權的使用者為目標。
 * 從商務用 Microsoft 網上商店購買更多份應用程式。
 
+## <a name="remove-apps"></a>移除應用程式
 
+若要移除從商務用 Microsoft Store 同步的應用程式，您需要登入商務用 Microsoft Store 並退還應用程式。
+
+![移除應用程式詳細資料的螢幕擷取畫面](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> 移除應用程式在私人市集中的可見性，並不會防止 Intune 將其同步。 您必須退還應用程式。
+
+## <a name="next-steps"></a>接下來的步驟
+
+- [使用 Microsoft Intune 管理大量採購的應用程式與書籍](vpp-apps.md)

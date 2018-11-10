@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391564"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915694"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署裝置合規性原則的方式
 您可以將合規性政策部署至使用者群組中的使用者，或是裝置群組中的裝置。 將合規性政策部署到使用者時，即會檢查使用者所有裝置的相容性。 在 Windows 10 1803 版和更新版本的裝置上，「如果」主要使用者未註冊裝置，則建議部署到裝置群組。 在此案例中使用裝置群組可協助進行合規性報告。
 
-預設的 [合規性政策設定] (Azure 入口網站 > [裝置合規性]) 包括：
+會在所有的 Intune 註冊裝置上評估一組內建**合規性政策設定** (Azure 入口網站 > 裝置合規性)。 這些地方包括：
 
 - **將未指派合規性原則的裝置標記為**此屬性有兩個值：
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 - **合規性狀態有效期限 (天)**：輸入裝置針對所有收到的合規性原則回報狀態的期間。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
 
-所有裝置都有 [預設裝置合規性原則] (Azure 入口網站 > [裝置合規性] > [原則合規性])。 您可以使用此預設原則來監視這些設定。
+所有裝置都有**內建裝置合規性政策** (Azure 入口網站 > [裝置合規性] > [原則合規性])。 您可以使用此內建原則來監視這些設定。
 
 若要了解在部署原則之後，行動裝置需要多久才能取得原則，請參閱[針對裝置設定檔問題進行疑難排解](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
 

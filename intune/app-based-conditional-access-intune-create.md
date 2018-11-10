@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,25 +14,25 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d6d67454409cf8a8749d28cba6ac76f591da9e3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
+ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50253465"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 設定以應用程式為基礎的條件式存取原則
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文描述如何為屬於已核准應用程式清單一部分的應用程式，設定以應用程式為基礎的條件式存取原則。 已核准應用程式清單包含 Microsoft 已測試的應用程式。
+為屬於已核准應用程式清單一部分的應用程式，設定以應用程式為基礎的條件式存取原則。 已核准應用程式清單包含 Microsoft 已測試的應用程式。
 
 > [!IMPORTANT]
-> 本文逐步解說新增應用程式為基礎的條件式存取原則的步驟。 請注意，從核准的應用程式清單中新增應用程式，例如 SharePoint Online、Microsoft Teams 和 Microsoft Exchange Online 時，您可以使用相同的步驟。
+> 本文逐步解說新增應用程式為基礎的條件式存取原則的步驟。 從核准的應用程式清單中新增應用程式 (例如 SharePoint Online、Microsoft Teams 和 Microsoft Exchange Online) 時，您可以使用相同的步驟。
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>在 Azure AD 工作負載中建立以應用程式為基礎的條件式存取原則
 
-IT 系統管理員可以從 Azure AD 工作負載建立以應用程式為基礎的條件式存取原則。 這提供方便性，因此您不需要切換 Azure 與 Intune 工作負載。
+IT 系統管理員可以從 Azure AD 工作負載建立以應用程式為基礎的條件式存取原則。 此存取表示您不需要在 Azure 與 Intune 工作負載之間切換。
 
 > [!IMPORTANT]
 > 您必須要有 Azure AD Premium 授權，才能從 Intune Azure 入口網站建立 Azure AD 條件式存取原則。

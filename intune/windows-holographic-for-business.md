@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425286"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236385"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>搭配 Intune 管理及使用 Windows Holographic 和 HoloLens 裝置
 
@@ -68,6 +68,10 @@ Intune 提供的公司入口網站應用程式，可讓使用者存取公司資�
 
 Microsoft Intune 可以將通用 Windows 應用程式部署到執行 Windows Holographic for Business 的 Microsoft HoloLens 裝置。 您可以在 Intune Azure 入口網站直接上傳應用程式套件，或從商務用 Microsoft Store 部署它們。 如需相關領域的詳細資訊，請參閱下列文章：
 - 若要使用 Intune Azure 入口網站來部署企業營運應用程式 (LOB) 應用程式，請參閱[如何將 Windows 企業營運應用程式新增至 Microsoft Intune](lob-apps-windows.md)。
+
+    > [!NOTE]
+    > Intune 支援最大 8 GB 的套件大小。 此套件大小僅適用於上傳至 Intune 的 LOB 應用程式。
+
 - 若要使用 Microsoft Store for Business 來部署應用程式，請參閱[利用 Microsoft Intune 來管理您從 Microsoft Store for Business 購買的應用程式](windows-store-for-business.md)。 
 - 若要了解如何使用 Microsoft Intune 來管理應用程式，請參閱[什麼是利用 Microsoft Intune 管理應用程式](app-management.md)。
 - 若要深入了解開發 Microsoft HoloLens 的應用程式，請參閱 [Microsoft HoloLens 的混合現實應用程式](https://www.microsoft.com/hololens/apps)。 

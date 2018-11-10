@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321436"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236402"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置新增裝置合規性政策
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設定，才能視為符合規範。 當您使用裝置相容性原則搭配條件式存取時，可以允許或封鎖公司資源的存取。 您也可以取得裝置報表，並針對不相容採取動作。 在 Intune Azure 入口網站中，可以為每個平台建立裝置相容性原則。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
@@ -90,6 +88,17 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 - **防火牆**：[啟用] 以協助保護裝置免於未經授權的存取。 啟用此功能可讓您處理連入網際網路連線，並使用隱形模式。 [未設定] (預設值) 會保持關閉防火牆，而且允許網路流量 (不封鎖)。
 - **連入連線**：除了基本網際網路服務所需的連線 (例如 DHCP、Bonjour 及 IPSec) 之外，[封鎖] 所有連入網際網路連線。 此設定也會封鎖所有共用服務，包括螢幕共用、遠端存取、iTunes 音樂分享等等。 [未設定] (預設值) 允許連入連線和共用服務。 
 - **隱形模式**：[啟用] 隱形模式以防止電腦回應探查要求，這可能會成為我的惡意使用者。 啟用時，裝置會繼續回應已授權應用程式的連入要求。 [未設定] (預設值) 會保持關閉隱形模式。
+
+### <a name="gatekeeper"></a>閘道管理員
+
+**允許從這些位置下載的應用程式**：允許從不同的位置將所支援應用程式安裝到您的裝置。 您的位置選項：
+
+- **未設定**：預設值。 閘道管理員選項對是否符合規範沒有任何影響。 
+- **Mac App Store**：僅安裝 Mac App Store 的應用程式。 無法安裝來自協力廠商或已識別開發人員的應用程式。 如果使用者選取閘道管理員來安裝 Mac App Store 以外的應用程式，裝置即視為不符合規範。
+- **Mac App Store 和已識別的開發人員**：安裝 Mac App Store 及來自已識別開發人員的應用程式。 macOS 會檢查開發人員的身分識別，並執行一些其他檢查來驗證應用程式完整性。 如果使用者選取閘道管理員來安裝這些選項以外的應用程式，裝置即視為不符合規範。
+- **任何位置**：應用程式可以從任何位置並由任何開發人員安裝。 此選項最不安全。
+
+如需 Apple 文件中的詳細資料，請參閱 [macOS 上的閘道管理員](https://support.apple.com/HT202491)。
 
 ## <a name="assign-user-groups"></a>指派使用者群組
 

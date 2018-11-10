@@ -15,53 +15,26 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410781"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶註冊裝置
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 *裝置註冊管理員* (DEM) 帳戶是特殊的使用者帳戶，最多可以註冊 1,000 部裝置。 將現有的使用者加入 DEM 帳戶，能夠賦予他們特殊的 DEM 選項。 每個已註冊的裝置會使用單一授權。 建議您將透過此帳戶註冊的裝置做為共用裝置使用，而不是做為個人 ("BYOD") 裝置使用。  
-
-使用者必須存在於 [Azure 入口網站](https://portal.azure.com)才能新增為裝置註冊管理員。 為了取得最佳安全性，DEM 使用者不應該同時為 Intune 系統管理員。
-
->[!NOTE]
->DEM 註冊方法不可與其他這些註冊方法一併使用︰[Apple Configurator 搭配設定助理](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator 搭配直接註冊](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) 或[裝置註冊計劃 (DEP)](device-enrollment-program-enroll-ios.md)。
-
-## <a name="example-of-a-device-enrollment-manager-scenario"></a>裝置註冊管理員案例範例
-
-餐廳想要提供 50 部銷售點平板電腦給其服務生，和訂單監視器給廚房員工。 那些員工永遠不會需要存取公司資料或以使用者身分登入。 Intune 管理員會針對餐廳管理者建立新的裝置註冊管理員帳戶。  此帳戶有別於管理者的主要帳戶，而且僅用於向 Intune 註冊共用裝置之用。 管理者現在可以使用 DEM 認證來註冊 50 部平板電腦裝置。
-
-只有 [Azure 入口網站](https://portal.azure.com)中的使用者才能是裝置註冊管理員。 裝置註冊管理員使用者不能是 Intune 系統管理員。
-
-DEM 使用者可以︰
-
--   在 Intune 中最多註冊 1000 部裝置
--   登入公司入口網站以取得公司應用程式
--   藉由將特定角色的應用程式部署到平板電腦來設定公司資料的存取權
+您可以使用裝置註冊管理員 (DEM) 帳戶，向單一 Azure Active Directory 帳戶註冊多達 1,000 部行動裝置。 DEM 是 Intune 權限，可套用至 AAD 使用者帳戶，並讓使用者註冊多達 1,000 部裝置。 如果裝置在交給裝置使用者之前就已註冊並備妥，則 DEM 帳戶會很有用。
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>以 DEM 帳戶註冊裝置的限制
 
-使用裝置註冊管理員帳戶所註冊的裝置具有下列限制︰
+DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制：
 
-  - 不具每位使用者的存取權。 因為裝置並未指派使用者，所以裝置沒有任何電子郵件或公司資料存取權。 但仍可使用 VPN 設定等來為裝置應用程式提供資料的存取權。
-  - DEM 使用者無法使用公司入口網站在裝置本身取消註冊 DEM 註冊的裝置。 Intune 管理員可以取消註冊。
+  - 無法從公司入口網站進行抹除。 您可以從 Azure 入口網站中的 Intune，對 DEM 使用者帳戶註冊的裝置進行抹除。
   - 只有本機裝置會出現在公司入口網站應用程式或網站中。
-  - 使用者無法將 Apple「大量採購方案」(VPP) 應用程式與使用者授權搭配使用，因為進行應用程式管理需要個別使用者的 Apple ID。
-  - (僅限 iOS) 如果您使用 DEM 註冊 iOS 裝置，就無法使用 Apple Configurator、Apple 裝置註冊計劃 (DEP) 或 Apple School Manager (ASM) 來註冊裝置。 這表示您無法讓裝置處於受監督模式，因此將無法存取某些設定選項。
-  - (僅限 Android) 能以單一 DEM 帳戶註冊的 Android 工作設定檔裝置有數量限制。 每個 DEM 帳戶最多可以註冊 10 部 Android 工作設定檔裝置。 此限制不適用於舊版的 Android 註冊。
-  - 裝置如果具有裝置授權，便可以安裝 VPP 應用程式。
-  - 不需要 Intune 裝置授權也可以使用 DEM。 深入了解[使用者和裝置授權](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
-
-
-> [!NOTE]
-> 您可以將公司應用程式部署到裝置註冊管理員管理的裝置。 請將公司入口網站應用程式以**必要安裝**部署到裝置註冊管理員的使用者帳戶。
-> 為了改善效能，在 DEM 裝置上檢視公司入口網站應用程式只會顯示本機裝置。 只能從 Intune 管理主控台遠端管理其他 DEM 裝置。
+  - DEM 使用者帳戶無法將 Apple 大量採購方案 (VPP) 應用程式與 Apple VPP 使用者授權搭配使用，因為應用程式管理需要個別使用者的 Apple ID。
+  - 裝置如果具有 Apple VPP 裝置授權，即可以安裝 VPP 應用程式。
+  
 
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
@@ -74,21 +47,16 @@ DEM 使用者可以︰
 
 ## <a name="permissions-for-dem"></a>DEM 的權限
 
-需要具備全域或 Intune 服務管理員 Azure AD 角色以
-- 在系統管理入口網站中完成與 DEM 註冊相關的工作
-- 查看所有 DEM 使用者 (儘管 RBAC 權限列於且適用於自訂使用者角色之下)。
+需要具備全域管理員或 Intune 服務管理員 Azure AD 角色以
+- 將 DEM 權限指派給 Azure AD 使用者帳戶
+- 查看所有 DEM 使用者
 
-未指派全域管理員或 Intune 服務管理員角色，但具備裝置註冊管理員角色之讀取權限的使用者，只能看到他們所建立的 DEM 使用者。 支援這些功能的 RBAC 角色將會在未來宣布。
+若未針對使用者指派全域管理員或 Intune 服務管理員角色，但他們具備已針對所指派裝置註冊管理員角色啟用的讀取權限，則只能看到他們所建立的 DEM 使用者。
 
 
-## <a name="remove-a-device-enrollment-manager"></a>移除裝置註冊管理員
+## <a name="remove-device-enrollment-manager-permissions"></a>移除裝置註冊管理員權限
 
-移除裝置註冊管理員時：
-
--   已註冊的裝置不會受到影響，仍可全面管理。
--   已移除的 DEM 帳戶認證仍有效。
--   已移除的 DEM 仍無法抹除或淘汰裝置。
--   已移除的 DEM 可註冊的裝置數目，不得超過 Intune 系統管理員所設定的每個使用者限制。
+移除裝置註冊管理員並不會影響已註冊的裝置。
 
 **移除裝置註冊管理員**
 

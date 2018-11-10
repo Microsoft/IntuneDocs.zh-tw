@@ -15,17 +15,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425082"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236640"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日當週
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>新增公司入口網站應用程式的自訂品牌形象 <!-- 1916266 -->
+作為 Microsoft Intune 系統管理員，您可以上傳自訂品牌影像，該影像會在 iOS 公司入口網站應用程式的使用者設定檔頁面上，作為背景影像顯示。 如需設定公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
+
+
 
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日當週  
 
@@ -163,7 +170,7 @@ Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更�
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日當週
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司入口網站的搜尋改善<!-- 1331697 -->
-我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
+我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
 
 iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
 
@@ -177,7 +184,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>對公司入口網站之裝置安裝工作流程的改善 <!-- 1490692 -->
-我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
+我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
 
 |之前|在|
 |---|---|
@@ -205,7 +212,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日當週
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司入口網站應用程式中更易了解的措辭 <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司入口網站應用程式中更易了解的措辭 <!-- 1396349 -->  
 
 Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓終端使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
@@ -222,7 +229,7 @@ Android 公司入口網站應用程式的註冊程序已經使用新的文字來
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11「郵件」應用程式將會支援 OAuth <!-- 1196951 -->
 
-Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
+Intune 條件式存取支援在 iOS 裝置上進行更安全的 OAuth 驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
 
 ![在原生郵件應用程式中選取帳戶類型。](./media/ios-11-ca-email-after-1708-01.png)
 

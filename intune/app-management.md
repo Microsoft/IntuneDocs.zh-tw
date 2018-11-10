@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075841"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025163"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -94,7 +94,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 - **應用程式授權**：檢視、指派及監視從應用程式市集大量採購的應用程式。 如需詳細資訊，請參閱：
     - [iOS 大量採購方案 (VPP) 應用程式](vpp-apps-ios.md)。
     - [商務用 Microsoft Store 大量採購應用程式](windows-store-for-business.md)。
-- **探索到的應用程式**：檢視 Intune 指派並安裝在裝置上的所有應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md#device-and-user-status-graphs)。
+- **探索到的應用程式**：檢視 Intune 所指派或安裝在裝置上的應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 檢視裝置詳細資料](device-inventory.md)。
 - **應用程式安裝狀態**：檢視您所建立應用程式指派的狀態。 如需詳細資訊，請參閱[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md#device-and-user-status-graphs)。
 - **應用程式保護狀態**：檢視您所選取使用者的應用程式保護原則狀態。
 - **稽核記錄檔**：檢視所有 IT 系統管理員所進行的 Intune 應用程式相關活動。

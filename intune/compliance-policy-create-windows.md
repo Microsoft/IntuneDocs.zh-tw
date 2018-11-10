@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 359f423e7b1bd098136670db1d43b2ddec6031a3
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679316"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -168,6 +168,9 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 #### <a name="encryption"></a>加密
 
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
+
+  > [!NOTE]
+  > [裝置上的資料儲存區加密] 設定通常會檢查裝置上是否有加密。 如需更強固的加密設定，請考慮使用 [要求 Bitlocker]，這會利用 Windows 運作狀況證明在 TPM 層級驗證 Bitlocker 狀態。
 
 #### <a name="device-security"></a>裝置安全性
 

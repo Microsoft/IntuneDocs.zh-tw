@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679299"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune 裝置設定檔的常見問題和解決方式
 
@@ -130,9 +130,9 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>我變更了裝置限制設定檔，但變更一直沒有作用
 當您使用 MDM 或 EAS 設定安全性原則之後，Windows Phone 裝置不允許降低這些原則的安全性。 例如，您將 [字元密碼字元數下限]  設定為 8 個，然後嘗試減少為 4 個。 裝置已套用較嚴格的設定檔。
 
-視裝置平台而定，如果您要將設定檔變更為較不安全的值，則請重設安全性原則。 例如，在 Windows 的桌面上從右向內撥動，然後按一下 [設定] > [控制台]。 選取 [使用者帳戶]  小程式。
+如果您要將設定檔變更為較不安全的值，請重設安全性原則。 例如，在 Windows 8.1 的桌面上從右向內撥動，然後選取 [設定] > [控制台]。 選取 [使用者帳戶]  小程式。 左導覽功能表底部有一個 [重設安全性原則] 連結。 請加以選取，然後選擇 [重設原則]。
 
-左導覽功能表底部有一個 [重設安全性原則] 連結。 請加以選取，然後選擇 [重設原則]。 您可能需要停用 Android、Windows Phone 8.1 與更新版本及 iOS 等其他 MDM 裝置，再重新註冊到服務中，以套用較不嚴格的設定檔。
+您可能需要淘汰 Android、Windows Phone 8.1 和更新版本、iOS 以及 Windows 10 等其他 MDM 裝置，再重新註冊到服務中，以套用較不嚴格的設定檔。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 需要額外說明嗎？ 請參閱[如何取得 Microsoft Intune 支援](get-support.md)。

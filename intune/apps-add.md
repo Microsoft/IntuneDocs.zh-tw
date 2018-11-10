@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: e0039223176afb3bed3a9ac2d2ada76b82096c26
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863139"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236623"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune
 
@@ -139,7 +139,7 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 雲端儲存空間需求如下：
 
 - 所有應用程式安裝檔案必須位於相同的資料夾。
-- 您上傳的任何檔案其檔案大小上限都是 2 GB。
+- 您上傳的任何檔案其大小上限都是 8 GB。
 
 ## <a name="create-and-edit-categories-for-apps"></a>建立及編輯應用程式的類別
 

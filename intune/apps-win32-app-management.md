@@ -1,27 +1,10 @@
 ---
-title: 將 Win32 應用程式新增至 Microsoft Intune
-titlesuffix: ''
-description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959582"
+title: 將 Win32 應用程式新增至 Microsoft Intune titlesuffix: description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
 Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
@@ -32,7 +15,7 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 - Windows 10 用戶端必須： 
     - 加入 Azure Active Directory (AAD) 或混合式 Azure Active Directory，並
     - 在 Intune (MDM 受控) 中註冊
-- 公開預覽中，Windows 應用程式的大小上限為每個應用程式 2 GB 
+- 在公開預覽中，Windows 應用程式的大小上限為每個應用程式 8 GB 
 
 > [!NOTE]
 > 我們目前正在測試 Windows 10 版本 1607 專業版和教育版，並且樂於聆聽您的意見反應。
@@ -109,6 +92,11 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 3.  新增完整解除安裝命令，來根據應用程式的 GUID 解除安裝應用程式。 
 
     例如：`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > 您可以設定在 [使用者] 或 [系統] 內容中安裝 Win32 應用程式。 [使用者] 內容是指唯一的指定使用者。 [系統] 內容是指 Windows 10 裝置的所有使用者。
+    >
+    > 終端使用者不需要登入裝置來安裝 Win32 應用程式。
 
 4.  完成後，按一下 [確定]。
 
@@ -233,7 +221,6 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 ### <a name="troubleshooting-areas-to-consider"></a>應考慮的疑難排解區域
 - 檢查目標，確認代理程式已安裝在裝置上 - 目標為群組的 Win32 應用程式，或是目標為群組的 PowerShell 指令碼會建立安全性群組的代理程式安裝原則。
 - 檢查 OS 版本 – Windows 10 1607 或更新版本。  
-- AAD 使用者是否已登入用戶端電腦？
 - 檢查 Windows 10 SKU - Windows 10 S 或在啟用 S 模式的情況下執行的 Windows 版本不支援 MSI 安裝。
 
 ## <a name="next-steps"></a>接下來的步驟

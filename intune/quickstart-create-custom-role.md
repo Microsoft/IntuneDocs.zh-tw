@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410764"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入門：建立並指派自訂角色
 
@@ -47,7 +47,7 @@ ms.locfileid: "46581543"
 
 您必須將角色指派給包含安全性使用者的群組，安全性操作員才能使用新的權限。
 
-1. 在 Intune 中，選擇 [角色] > [所有角色] > [Remote device helpdesk] \(遠端桌面技術服務人員\)。
+1. 在 Intune 中，選擇 [角色] > [所有角色] > [Security operations] \(安全性作業\)。
 2. 在 [Intune 角色] 下，選擇 [作業] > [指派]。
 3. 在 [作業名稱] 方塊中，輸入「安全性作業」。
 4. 選擇 [成員 (群組)] > [新增]。
