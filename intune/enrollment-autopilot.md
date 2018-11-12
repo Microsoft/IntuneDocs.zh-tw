@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075892"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025180"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 註冊 Windows 裝置  
 Windows Autopilot 簡化了註冊裝置的過程。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -26,6 +26,12 @@ Windows Autopilot 簡化了註冊裝置的過程。 建置和維護自訂的作�
 ## <a name="prerequisites"></a>必要條件
 - [已啟用 Windows 自動註冊](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何在 Intune 中取得 CSV 以進行匯入
+
+請參閱了解 powershell cmdlet 以取得使用方法的詳細資訊。
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>新增裝置
 
@@ -153,15 +159,14 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 - 同步處理在另一個入口網站中進行的設定檔指派
 - 顯示在另一個入口網站中完成的裝置清單變更
 
-## <a name="redeploying-windows-autopilot"></a>重新部署 Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>現有裝置的 Windows Autopilot
 
-您可以在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來群組 Windows 裝置。 交互識別碼是 Autopilot 設定檔的參數。 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 會自動設為相等的 "OfflineAutopilotprofile-<correlator ID>correlator ID"。 這會允許使用離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。
+您可以在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來群組 Windows 裝置。 交互識別碼是 Autopilot 設定檔的參數。 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 會自動設為相等的 "OfflineAutopilotprofile-\<correlator ID\>"。 這會允許使用 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。
 
-若您要升級不支援 Autopilot 註冊的舊版 Windows，即可使用離線 Autopilot 設定檔。 Autopilot 可在 Windows 10 1809 或更新版本的全新安裝期間協助您。 作為離線設定檔的一部分，您可以指定交互識別碼。 
-
-警告：因為交互識別碼並未在 Intune 中預先列出，使用者可以選擇在任何其希望的交互識別碼下註冊。 若使用者建立與 Autopilot 或 Apple DEP 設定檔名稱相符的交互識別碼，則裝置會新增至任何根據 enrollmentProfileName 屬性的動態 Azure AD 裝置群組。 若要避免此衝突：
-- 一律建立與「整個」enrollmentProfileName 值比對的動態群組規則
-- 永遠不要將 Autopilot 或 Apple DEP 設定檔命名為開頭是 "OfflineAutopilotprofile-" 的名稱。
+>[!WARNING] 
+> 因為交互識別碼並未在 Intune 中預先列出，裝置可能會回報任何其希望的交互識別碼。 若使用者建立與 Autopilot 或 Apple DEP 設定檔名稱相符的交互識別碼，則裝置會新增至任何根據 enrollmentProfileName 屬性的動態 Azure AD 裝置群組。 若要避免此衝突：
+> - 一律建立與「整個」enrollmentProfileName 值比對的動態群組規則
+> - 永遠不要將 Autopilot 或 Apple DEP 設定檔命名為開頭是 "OfflineAutopilotprofile-" 的名稱。
 
 ## <a name="next-steps"></a>接下來的步驟
 您為已註冊的 Windows 10 裝置設定 Windows Autopilot 之後，請了解如何管理這些裝置。 如需詳細資訊，請參閱[什麼是 Microsoft Intune 裝置管理？](https://docs.microsoft.com/intune/device-management)

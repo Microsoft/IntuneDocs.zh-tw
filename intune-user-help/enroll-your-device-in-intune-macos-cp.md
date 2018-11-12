@@ -46,7 +46,7 @@ ms.locfileid: "48260244"
 請使用下列步驟以註冊執行 OS X El Capitan 10.11 和更新版本的 macOS 裝置。   
 
 
-1. 若要存取公司入口網站，請在 __Safari__ 中開啟新視窗，然後前往 https://portal.manage.microsoft.com。  
+1. 若要存取公司入口網站，請在 __Safari__ 中開啟新視窗，然後前往 https://portal.manage.microsoft.com 。  
 
 2. 使用您的公司或學校帳戶登入公司入口網站。
 
