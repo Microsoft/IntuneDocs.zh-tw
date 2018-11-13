@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: a57ae54787069f85798519a3a6bc051842db6c2b
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602226"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212320"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>將 Android 企業營運應用程式新增至 Microsoft Intune
 
@@ -55,7 +55,6 @@ ms.locfileid: "45602226"
     - **描述**：輸入應用程式的描述。 此描述會出現在公司入口網站上。
     - **發行者**：輸入應用程式的發行者名稱。
     - **最低作業系統**：從清單中選擇能夠安裝應用程式的最低作業系統版本。 若將應用程式指派給安裝舊版作業系統的裝置，就不會進行安裝。
-    - **忽略應用程式版本**：如果應用程式開發人員會自動更新應用程式，則設為 [是]。
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
     - **資訊 URL**：選擇是否要輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。

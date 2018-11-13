@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971477"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225946"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 資料倉儲集合
 
@@ -165,7 +165,7 @@ ms.locfileid: "50971477"
 | Failed    | 處於失敗狀態的唯一裝置數目。                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
- **DeviceConfigurationProfileUserActivity**  實體會列出每日處於成功、暫止、失敗或錯誤狀態的使用者數目。 此數目會反映指派給實體的裝置組態設定檔。 例如，如果使用者的所有其指派原則都處於成功狀態，則會將該天的成功計數器向上加一。 如果使用者獲指派兩個設定檔，一個處於成功狀態，另一個則處於錯誤狀態，會計算處於錯誤狀態的使用者。  **DeviceConfigurationProfileUserActivity**  實體會列出過去 30 天的任何一天內有多少使用者處於哪種狀態。 
+**DeviceConfigurationProfileUserActivity** 實體列出每日處於成功、暫止、失敗或錯誤狀態的使用者數目。 此數目會反映指派給實體的裝置組態設定檔。 例如，如果使用者的所有其指派原則都處於成功狀態，則會將該天的成功計數器向上加一。 如果使用者獲指派兩個設定檔，一個處於成功狀態，另一個則處於錯誤狀態，會計算處於錯誤狀態的使用者。 **DeviceConfigurationProfileUserActivity** 實體列出過去 30 天內的某一天，有多少使用者處於哪種狀態。 
 
 | 屬性  | 說明  | 範例  |
 |------------|----------------------------------------------------------------------------------------------|-----------|

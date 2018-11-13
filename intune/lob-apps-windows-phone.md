@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e86db15fb4c69b57a1dc572d5a7e4f06eee3b760
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: ff63e3cdf670156c66c156e3defe6d67e7c04044
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602107"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212354"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 
@@ -51,7 +51,6 @@ ms.locfileid: "45602107"
     - **名稱**：輸入會在公司入口網站中顯示的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，只有一個應用程式會出現在公司入口網站中。
     - **描述**：輸入應用程式的描述。 此描述會出現在公司入口網站上。
     - **發行者**：輸入應用程式的發行者名稱。
-    - **忽略應用程式版本**：如果應用程式開發人員會自動更新應用程式，則設為 [是]。
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
     - **資訊 URL**：選擇是否要輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。

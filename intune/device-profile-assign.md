@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024799"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298066"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -49,8 +49,5 @@ Intune 裝置組態設定檔可讓您從原則指派排除群組。 例如，您
 
 如果您包含**所有裝置**，並排除**所有使用者**，則所有裝置都會收到原則。 在此情況下，目的是要排除此原則中有相關聯使用者的裝置。 不過，它不會排除裝置，因為排除只會比對直屬群組成員。
 
->[!TIP]
->合規性原則或應用程式指派無法使用排除。 若要從指派排除成員，您可以使用**可用**和**不適用**指派。 例如，您將應用程式指派給具有**可用**目的的**所有公司使用者**，並將應用程式指派給具有**不適用**目的的**資深管理層**。 應用程式會指派給所有使用者，但**資深管理層**群組的使用者「除外」。 如果您將應用程式指派給具有**必要**目的的**所有公司使用者**，則也會包含**資深管理層**群組的使用者。
-
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 請參閱[如何監視裝置設定檔](device-profile-monitor.md)以取得監視裝置設定檔指派的指示。
