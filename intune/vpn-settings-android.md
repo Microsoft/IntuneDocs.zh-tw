@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中設定 Android 裝置的 VPN 設定 | Microsoft Docs
-description: 為 Android 和 Android for Work 裝置建立 VPN 組態設定檔時，請輸入連線名稱、VPN 伺服器的 IP 位址或 FQDN，選擇使用者向 VPN 伺服器進行驗證的方式，然後選擇 Citrix、SonicWall、Check Point Capsule、Pulse Secure 和 Edge 等連線類型。
+description: 為 Android 和 Android for Work 裝置建立 VPN 設定檔時，請輸入連線名稱、VPN 伺服器的 IP 位址或 FQDN，選擇使用者向 VPN 伺服器進行驗證的方式，然後選擇 Citrix、SonicWall、Check Point Capsule、Pulse Secure 和 Microsoft Edge 連線類型。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279316"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576812"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>在 Intune 中設定執行 Android 之裝置的 VPN 設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "39279316"
 
 ## <a name="android-vpn-settings"></a>Android VPN 設定
 
-- **連線名稱**：輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線時，使用者會看到此名稱。
+- **連線名稱**：輸入此連線的名稱。 終端使用者查看其裝置的可用 VPN 連線時，使用者會看到此名稱。
 - **IP 位址或 FQDN**輸入裝置所連線 VPN 伺服器的 IP 位址或完整網域名稱 (FQDN)。 例如，輸入 **192.168.1.1** 或 **vpn.contoso.com**。
 
   - **驗證方法**：選擇裝置向 VPN 伺服器進行驗證的方式。 選項包括：

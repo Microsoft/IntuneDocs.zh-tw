@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236470"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298151"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中為 Windows 10 和更新版本裝置新增 Wi-Fi 設定
 
@@ -57,6 +57,9 @@ ms.locfileid: "50236470"
   - **WPA/WPA2-Personal**：更安全的選項，常用於 Wi-Fi 連線。 如需提高安全性，您也可以輸入預先共用金鑰密碼或網路金鑰。 
 
     - **預先共用金鑰** (PSK)：選擇性。 當您選擇 [WPA/WPA2-Personal] 作為安全性類型時，即會顯示。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。 輸入介於 8-64 個字元的字串。 如果您的密碼或網路金鑰為 64 個字元，請輸入十六進位字元。
+    
+      > [!NOTE]
+      > 當您儲存 Wi-Fi 設定檔時，基於安全性考量，不會顯示您所輸入的 PSK 值。 預先共用金鑰的水位線仍會顯示　[未設定]，即使 PSK 儲存在設定檔中也一樣。 若要變更 PSK，請輸入新的金鑰，並儲存設定檔。 如果您儲存 PSK、編輯政策，並將 PSK 保留空白，則仍會使用現有的 PSK。
 
 - **公司 Proxy 設定**：選擇使用您組織內的 Proxy 設定。 選項包括：
   - **無**：不設定任何 Proxy 設定。

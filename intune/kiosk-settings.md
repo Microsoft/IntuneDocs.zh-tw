@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751638"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298134"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中適用於 Windows 10 (和更新版本) 的 Kiosk 設定
 
@@ -77,8 +77,15 @@ Intune 針對每部裝置支援一個 kiosk 設定檔。 如果您需要在單�
   - **在閒置時間後重新整理瀏覽器**：輸入閒置時間量 (1-1440 分鐘)，在該時間之後 kiosk 瀏覽器會以全新狀態重新啟動。 閒置時間是自使用者上次互動之後所經過的分鐘數。 根據預設，此值是空的或空白，這表示沒有任何閒置逾時。
 
   - **允許的網站**：使用此設定可允許開啟特定網站。 換句話說，使用此功能可在裝置上限制或防止網站。 例如，您可以允許開啟位於 `http://contoso.com*` 的所有網站。 預設會允許所有網站。
+ 
+      若要允許特定網站，請上傳包含不同行上所允許網站清單的檔案。 如果您未新增檔案，則會允許所有網站。 Intune 支援以 * (星號) 作為萬用字元。
 
-    若要允許特定網站，請上傳包含允許網站清單的 .csv 檔案。 如果您未新增 .csv 檔案，則會允許所有網站。 Intune 支援以 * (星號) 作為萬用字元。
+      範例檔案應類以下列清單：
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   按一下 [確定] 以儲存您的變更。
 

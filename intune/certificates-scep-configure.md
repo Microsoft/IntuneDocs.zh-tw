@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391683"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212524"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -28,13 +28,13 @@ ms.locfileid: "49391683"
 
 - **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
 
-- **憑證授權單位** (CA)：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 如需詳細資料，請參閱[安裝憑證授權單位 (機器翻譯)](http://technet.microsoft.com/library/jj125375.aspx)。
+- **憑證授權單位** (CA)：必須是在企業版 Windows Server 2008 R2 或更新版本上執行的 Microsoft 企業憑證授權單位 (CA)。 不支援獨立 CA。 如需詳細資料，請參閱[安裝憑證授權單位 (機器翻譯)](http://technet.microsoft.com/library/jj125375.aspx)。
     如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
 
-- **NDES 伺服器**：在執行 Windows Server 2012 R2 或更新版本的伺服器上，您必須設定網路裝置註冊服務 (NDES)。 在同時執行企業 CA 的伺服器上執行 NDES 時，Intune 便無法支援 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)以取得有關如何設定 Windows Server 2012 R2 來裝載網路裝置註冊服務的指示。
-NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服器上。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
+- **NDES 伺服器**：在 Windows Server 2012 R2 或更新版本上，設定網路裝置註冊服務 (NDES) 伺服器角色。 Intune 不支援在同時執行企業 CA 的伺服器上使用 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)，以取得有關如何設定 Windows Server 2012 R2 來裝載 NDES 的指示。
+NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。
 
-- **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載**憑證連接器**安裝程式 (**NDESConnectorSetup.exe**)。 然後您可在裝載網路裝置註冊服務 (NDES) 角色，且要安裝憑證連接器的伺服器上執行 **NDESConnectorSetup.exe**。
+- **Microsoft Intune 憑證連接器**：從 Intune 管理主控台下載**憑證連接器** 安裝程式 (**NDESConnectorSetup.exe**)。 您將以 NDES 角色在伺服器上執行此安裝程式。  
 
   - NDES 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
@@ -53,29 +53,29 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 ### <a name="network-requirements"></a>網路需求
 
-從網際網路到周邊網路，允許網際網路上所有主機/IP 位址的連接埠 443 都能連線到 NDES 伺服器。
+如果您未使用反向 Proxy (例如 WAP 或 Azure AD App Proxy)，則允許連接埠 443 上從網際網路之所有主機 /IP 位址到 NDES 伺服器的 TCP 流量。
 
-從周邊網路到受信任網路，允許在加入網域的 NDES 伺服器上進行網域存取所需的所有連接埠和通訊協定。 NDES 伺服器需要存取憑證伺服器、DNS 伺服器、Configuration Manager 伺服器和網域控制站。
+允許 NDES 伺服器與任何支援基礎結構之間所需的所有連接埠和通訊協定。 例如，NDES 伺服器必須與 CA、DNS 伺服器、Configuration Manager 伺服器、網域控制站，以及環境內可能存在的其他服務進行通訊。
 
-建議您透過 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx)，或是協力廠商 Proxy。
+強烈建議您透過反向 Proxy 發佈 NDES 伺服器，例如 [Azure AD 應用程式 Proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web 存取 Proxy](https://technet.microsoft.com/library/dn584107.aspx)，或是協力廠商 Proxy。
 
-### <a name="certificates-and-templates"></a>憑證和範本
+### <a name="certificates-and-templates"></a>憑證和範本  
 
 |物件|詳細資料|
 |----------|-----------|
 |**憑證範本**|在發行 CA 上設定此範本。|
 |**用戶端驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會將它安裝於 NDES 伺服器上。|
-|**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。|
+|**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。 如果憑證具有用戶端和伺服器的驗證金鑰使用方式集合 (**增強金鑰使用方法**)，則您可以使用相同的憑證。|
 |**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用信任的 CA 憑證設定檔將它指派給裝置。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 ### <a name="accounts"></a>帳戶
 
 |名稱|詳細資料|
 |--------|-----------|
-|**NDES 服務帳戶**|輸入網域使用者帳戶以做為 NDES 服務帳戶。|
+|**NDES 服務帳戶**|輸入網域使用者帳戶以做為 NDES 服務帳戶。 |
 
 ## <a name="configure-your-infrastructure"></a>設定基礎結構
-在您設定憑證設定檔前，必須先完成下列步驟。 執行這些步驟需要對 Windows Server 2012 R2 和更新版本以及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
+在您設定憑證設定檔前，必須先完成下列步驟。 執行這些步驟需要對 Windows Server 2012 R2 或更新版本以及 Active Directory 憑證服務 (ADCS) 有一定程度的了解：
 
 #### <a name="step-1---create-an-ndes-service-account"></a>步驟 1：建立 NDES 服務帳戶
 
@@ -152,7 +152,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 - 將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
 - 將 NDES 服務帳戶加入至 IIS_IUSR 群組
-- 設定 NDES 服務帳戶的 SPN
+- 設定 NDES 服務帳戶的服務主體名稱 (SPN)
 
 1. 在裝載 NDES 的伺服器上，以**企業系統管理員**的身分登入，然後使用[新增角色及功能精靈](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))來安裝 NDES：
 
@@ -177,7 +177,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
        - [管理工具] > [IIS 6 管理相容性] > [IIS 6 WMI 相容性]
 
-       - 在伺服器上，新增 NDES 服務帳戶成為 **IIS_IUSR** 群組的成員身分。
+       - 在伺服器上，新增 NDES 服務帳戶作為本機 **IIS_IUSR** 群組的成員。
 
 2. 在提升權限的命令提示字元中，執行下列命令來設定 NDES 服務帳戶的 SPN：
 
@@ -243,7 +243,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 1. 在 NDES 伺服器上，要求並安裝來自內部 CA 或公用 CA 的 **伺服器驗證** 憑證。 然後將此 SSL 憑證繫結在 IIS 中。
 
     > [!TIP]
-    > 在 IIS 中繫結 SSL 憑證之後，安裝用戶端驗證憑證。 此憑證可以由 NDES 伺服器所信任的任何 CA 發出。 雖然不是最佳做法，但您可以使用相同的憑證，進行伺服器和用戶端驗證，只要憑證中同時有雙方的增強金鑰使用方法 (EKU) 即可。 請檢閱以下的步驟，以取得這些驗證憑證的相關資訊。
+    > 在 IIS 中繫結 SSL 憑證之後，安裝用戶端驗證憑證。 此憑證可以由 NDES 伺服器所信任的任何 CA 發出。 如果憑證具有用戶端和伺服器的驗證金鑰使用方式集合 (**增強金鑰使用方法**)，就可以使用相同的憑證。 請檢閱以下的步驟，以取得這些驗證憑證的相關資訊。
 
    1. 取得伺服器驗證憑證之後，請開啟 [IIS 管理員] 並選取 [預設的網站]。 在 [動作] 窗格中，選取 [繫結]。
 
@@ -314,7 +314,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
     選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然未顯示您選取的憑證，請選取 [下一步] 以檢視該憑證的屬性。 選取 [下一步] [安裝]。
 
     > [!IMPORTANT]
-    > 啟用 Internet Explorer 增強式安全性設定的裝置上無法註冊 Intune 憑證連接器。 若要使用 Intune 憑證連接器，請[停用 IE 增強式安全性設定](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
+    > 在裝載 Intune 憑證連接器的 [NDES 伺服器上必須停用](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) Internet Explorer 增強式安全性設定。
 
 6. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI]。
 
@@ -325,7 +325,7 @@ NDES 伺服器必須加入裝載 CA 的網域，但不在與 CA 相同的伺服�
 
 7. 在 **Certificate Connector** UI 中：
 
-    選取 [登入] 並輸入您的 Intune 服務系統管理員認證，或擁有全域系統管理權限的租用戶管理員認證。
+    選取 [登入] 並輸入您的 Intune 服務系統管理員認證，或擁有全域系統管理權限的租用戶管理員認證。 在您登入之後，Intune 憑證連接器會從 Intune 下載憑證。 此憑證用於連接器與 Intune 之間的驗證。
 
     > [!IMPORTANT]
     > 使用者帳戶必須指派有效的 Intune 授權。 如果使用者帳戶沒有有效的 Intune 授權，則 NDESConnectorUI.exe 就會失敗。

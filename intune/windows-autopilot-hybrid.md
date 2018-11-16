@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972769"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298083"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您將可以透過使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory 聯結裝置。 若要執行此作業，請遵循以下步驟。
@@ -30,7 +30,7 @@ ms.locfileid: "50972769"
 
 ## <a name="prerequisites"></a>必要條件
 
-- 成功設定[混合式 Azure Active Directory 聯結裝置](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains)。
+- 成功設定[混合式 Azure Active Directory 聯結裝置](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。
     - 確認[使用 Get-msoldevice cmdlet 來驗證註冊]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)。
 
 要註冊的裝置，必須：
@@ -65,7 +65,7 @@ ms.locfileid: "50972769"
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>增加組織單位中的電腦帳戶限制
 
-適用於 Active Directory 的 Intune 會建立連接器，在內部部署 Active Directory 網域中註冊電腦。 裝載 Intune 連接器的電腦，必須在網域中具有建立電腦物件的權限。 
+適用於 Active Directory 的 Intune 連接器，會在內部部署 Active Directory 網域中建立已註冊 Autopilot 的電腦。 裝載 Intune 連接器的電腦，必須在網域中具有建立電腦物件的權限。 
 
 在某些網域中，電腦不具備建立電腦的權限。 或者系統管理員可能不希望增加網域範圍的電腦帳戶限制。 在這些情況下，可以將權限委派給建立 Hybrid Azure AD 聯結裝置的組織單位。
 
@@ -110,7 +110,7 @@ ms.locfileid: "50972769"
 
 需要在執行 Windows Server 2016 的電腦上安裝適用於 Active Directory 的Intune 連接器，該電腦需要能夠存取網際網路和 Active Directory。 若要增加規模和可用性，或支援多個 Active Directory 網域，您可以在您的環境中安裝多個連接器。 建議您在未執行任何其他 Intune 連接器的伺服器上安裝連接器。
 
-1. 在 Intune Azure 入口網站中，選擇 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] > [新增連接器]。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] > [新增連接器]。 
 2. 遵循指示下載連接器。
 3. 開啟下載的連接器安裝程式檔案以安裝連接器 (ODJConnectorBootstrapper.exe)。
 4. 在安裝結束時，選擇 [設定]。
@@ -124,7 +124,7 @@ ms.locfileid: "50972769"
 
 
 ## <a name="create-a-device-group"></a>建立裝置群組
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [群組] > [新增群組]。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [群組] > [新增群組]。
 2. 在 [群組] 刀鋒視窗中：
     1. 針對 [群組類型]，請選擇 [安全性]。
     2. 輸入**群組名稱**與**群組描述**。
@@ -175,7 +175,7 @@ ms.locfileid: "50972769"
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>建立並指派 AutoPilot 部署設定檔
 Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [部署設定檔] > [建立設定檔]。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [部署設定檔] > [建立設定檔]。
 2. 輸入**名稱**和選擇性的**描述**。
 3. 針對 [部署模式] 選擇 [使用者驅動]。
 4. 在 [聯結 Azure AD 為] 方塊中，選擇 [混合式 Azure AD 聯結 (預覽)]。
@@ -188,21 +188,21 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>開啟註冊狀態頁面 (選擇性)
 
-1.  在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [註冊狀態頁面 (預覽)]。
-2.  在 [註冊狀態頁面] 刀鋒視窗中，選擇 [預設] > [設定]。
-3.  針對 [顯示應用程式和設定檔安裝進度]，選擇 [是]。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [註冊狀態頁面 (預覽)]。
+2. 在 [註冊狀態頁面] 刀鋒視窗中，選擇 [預設] > [設定]。
+3. 針對 [顯示應用程式和設定檔安裝進度]，選擇 [是]。
 4. 視需要設定其他選項。
-5.  選擇 [儲存]。
+5. 選擇 [儲存]。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>建立並指派網域加入設定檔
 
-1. 在 **Microsoft Intune** 中，選擇 [裝置設定] > [設定檔] > [建立設定檔]。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置設定] > [設定檔] > [建立設定檔]。
 2. 輸入下列內容：
    - **名稱**：為新的設定檔輸入描述性名稱。
    - **描述**：輸入設定檔的描述。
    - **平台**：選擇 [Windows 10 及更新版本]。
    - **設定檔類型**：選擇 [網域加入 (預覽)]。
-3.  選擇 [設定]，並提供 [電腦名稱前置詞]、[網域名稱] 以及 [組織單位] (選擇性)。 
+3. 選擇 [設定]，並提供 [電腦名稱前置詞]、[網域名稱] 以及 [組織單位] (選擇性)。 
 4. 選擇 [確定] > [建立]。 會建立設定檔，而且會出現在清單中。
 5. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟。 
 

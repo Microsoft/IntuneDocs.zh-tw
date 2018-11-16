@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150096"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561936"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證
 
@@ -131,7 +131,7 @@ ms.locfileid: "50150096"
   - 系統管理員從 Azure AD 移除使用者或群組
   - 系統管理員變更或更新 PKCS 設定檔
 
-## <a name="android--android-enterprise-devices"></a>Android 與 Android Enterprise 裝置
+## <a name="android-knox-devices"></a>Android KNOX 裝置
 
 #### <a name="scep-certificates"></a>SCEP 憑證
 
@@ -177,6 +177,10 @@ ms.locfileid: "50150096"
   - 系統管理員變更或更新 PKCS 設定檔
   - 從群組指派中移除組態設定檔
   - 從群組指派中移除合規性原則 
+  
+  
+> [!NOTE]
+> 上述案例不會驗證 Android for Work 裝置。 Android 舊版裝置 (任何非 Samsung、非工作設定檔裝置) 不會啟用憑證移除。 
 
 ## <a name="macos-certificates"></a>macOS 憑證
 

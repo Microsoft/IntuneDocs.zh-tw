@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410358"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576897"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -88,9 +88,7 @@ ms.locfileid: "49410358"
 
 ![儀表板影像顯示該特定狀態之裝置的更多詳細資料](./media/compliance-policy-monitor/drill-down-details.png)
 
-如果您想要查看特定使用者擁有的所有裝置，您可以鍵入使用者的電子郵件來篩選圖表報告：
-
-![篩選電子郵件地址以顯示該特定使用者的所有裝置](./media/compliance-policy-monitor/idc-3.png)
+如果您想要查看特定使用者擁有的所有裝置，您也可以鍵入使用者的電子郵件來篩選圖表報告。
 
 #### <a name="filter-and-columns"></a>篩選和資料行
 

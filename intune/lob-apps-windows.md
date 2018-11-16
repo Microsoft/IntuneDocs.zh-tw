@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 04c9c6b184fac2082649e8be8e60e6ac3f5a5669
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828171"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212422"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -55,7 +55,7 @@ ms.locfileid: "48828171"
     - **名稱**：輸入會在公司入口網站中顯示的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，只有一個應用程式會出現在公司入口網站中。
     - **描述**：輸入應用程式的描述。 此描述會出現在公司入口網站上。
     - **發行者**：輸入應用程式的發行者名稱。
-    - **忽略應用程式版本**：如果應用程式開發人員會自動更新應用程式，則設為 [是]。
+    - **忽略應用程式版本**：如果應用程式開發人員會自動更新應用程式，則設為 [是]。 此選項只適用於行動裝置的 .msi 應用程式。
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
     - **資訊 URL**：選擇是否輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。

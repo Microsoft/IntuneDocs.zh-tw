@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617204"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225659"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -48,24 +48,18 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 >請不要針對 Microsoft Intune 註冊設定 [以裝置為準的存取規則]。
 
 1. 使用您的認證登入您的 [Microsoft Azure 入口網站](https://portal.azure.com)。
-2. 在入口網站中，選擇 [Azure Active Directory]。
-2. 在 [Azure Active Directory] 中，選擇 [管理] > [企業應用程式]。
-3. 在 [企業應用程式] 中，選擇 [管理] > [所有應用程式]。 您會看到一份您所管理的所有 Azure 應用程式清單。
-3. 從清單中，選擇 [Microsoft Intune 註冊]。
-4. 在 [Microsoft Intune 註冊] 中，選擇 [安全性] > [條件式存取]。
-5. 選擇 [新增原則]。
-6. 在 [新增] 原則中，鍵入原則的描述性名稱。
-7. 在 [指派] 區段中，選擇 [使用者和群組]。
-8. 在 [使用者和群組] 中，選擇將接收這個原則的使用者或群組，然後選擇 [完成]。
-9. 在 [指派] 區段中，選擇 [雲端應用程式]。
-10. 在 [雲端應用程式] 的 [包含] 索引標籤上，選擇 [選取應用程式]，並選擇 [選取] > [Microsoft Intune 註冊]，然後選擇 [完成]。
-11. 在 [指派] 區段中，選擇 [條件]。
-12. 在 [條件] 中，您不需要設定 MFA 的任何設定。
-13. 在 [存取控制] 區段中，選擇 [授與]。
-14. 在 [授與] 中，選擇 [授與存取權]，然後選取 [需要多重要素驗證]。
-    請不要選取 [裝置需要標記為合規]，因為在註冊之前無法評估裝置的合規性。
-15. 選擇 [選取]。
-16. 在 [新增原則] 中，選擇 [啟用原則] > [開啟]，然後選擇 [建立]。
+2. 在入口網站中，移至 [[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)]。
+3. 在 [Azure Active Directory] 的 [安全性] 下，選擇 [[條件式存取](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)]。
+4. 選擇 [新增原則]。
+5. 在 [新增] 原則中，鍵入原則的描述性名稱。
+6. 在 [指派] 區段中，選擇 [使用者和群組]。
+7. 在 [使用者和群組] 中，選擇 [選取使用者或群組]，並核取 [使用者和群組]。 接著，選取將接收這個政策的使用者和/或群組，然後選擇 [完成]。
+8. 在 [指派] 區段中，選擇 [雲端應用程式]。
+9. 在 [雲端應用程式] 的 [包含] 索引標籤上，選擇 [選取應用程式]，並選擇 [選取] > [Microsoft Intune 註冊]，然後選擇 [完成]。
+10. 在 [指派] 區段的 [條件] 中，您不需要設定 MFA 的任何設定。
+11. 在 [存取控制] 區段中，選擇 [授與]。
+12. 在 [授與] 中，選擇 [授與存取權]，然後選取 [需要多重要素驗證]。 請不要選取 [裝置需要標記為合規]，因為在註冊之前無法評估裝置的合規性。 然後選擇 [選取]。
+13. 在 [新增原則] 中，選擇 [啟用原則] > [開啟]，然後選擇 [建立]。
 
 
 

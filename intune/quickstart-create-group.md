@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410815"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511004"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
 
@@ -57,7 +57,9 @@ ms.locfileid: "50410815"
 
 ## <a name="next-steps"></a>接下來的步驟
 
-在此快速入門中，您已使用 Intune 根據現有的使用者建立群組。
+在此快速入門中，您已使用 Intune 根據現有的使用者建立群組。 如需將群組新增至 Intune 的詳細資訊，請參閱[新增群組來組織使用者和裝置](groups-add.md)。
+
+若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
 
 > [!div class="nextstepaction"]
-> [建立裝置相容性原則](quickstart-create-policy.md)
+> [快速入門：設定 Windows 10 裝置的自動註冊](quickstart-setup-auto-enrollment.md)

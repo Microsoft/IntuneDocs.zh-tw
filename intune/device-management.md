@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8ae7a15f623b82cabed5314c4770c2edef902414
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253556"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576716"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -37,7 +37,7 @@ ms.locfileid: "44253556"
    - [概觀] 會顯示已註冊裝置的視覺化快照集，也會顯示有多少裝置使用不同的平台，包括 Android、iOS 等。
    - [所有裝置] 會顯示您所管理的已註冊裝置清單。
 
-     使用 [匯出] 功能來建立所有裝置的 .csv 清單，增量單位為 10,000 (Internet Explorer) 或 30,000 (Edge、Chrome)。
+     使用 [匯出] 功能來建立所有裝置的 .csv 清單，增量單位為 10,000 (Internet Explorer) 或 30,000 (Microsoft Edge、Chrome)。
 
      選取任何裝置來[檢視有關該裝置的其他詳細資料](device-inventory.md)，包括硬體詳細資料、已安裝的應用程式、其合規性原則狀態等。
 

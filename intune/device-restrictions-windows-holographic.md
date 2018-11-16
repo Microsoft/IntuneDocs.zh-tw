@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中適用於 Windows Holographic for Business 的裝置限制 - Azure | Microsoft Docs
-description: 了解及設定 Microsoft Intune 中適用於 Windows Holographic for Business 的裝置限制設定，包括取消註冊、地理位置、密碼、從 App Store 安裝應用程式、Edge 中的 Cookie 和快顯、Windows Defender、搜尋、雲端與儲存體、藍牙連線能力、系統時間，以及 Azure 中的使用情況資料。
+description: 了解及設定 Microsoft Intune 中適用於 Windows Holographic for Business 的裝置限制設定，包括取消註冊、地理位置、密碼、從 App Store 安裝應用程式、Microsoft Edge 中的 Cookie 和快顯、Windows Defender、搜尋、雲端與儲存體、藍牙連線能力、系統時間，以及 Azure 中的使用情況資料。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321629"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576795"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中適用於 Windows Holographic for Business 的裝置限制
 
@@ -41,17 +41,17 @@ ms.locfileid: "39321629"
 -   **安裝信任的應用程式** - 允許側載使用受信任憑證簽署的應用程式。
 -   **開發人員解除鎖定** - 允許 Windows 開發人員設定，例如允許使用者修改側載應用程式。
 
-## <a name="edge-browser"></a>Microsoft Edge 瀏覽器
+## <a name="microsoft-edge-browser"></a>Microsoft Edge 瀏覽器
 
 -   **Cookie** - 讓瀏覽器儲存網際網路 Cookie 到裝置上。
 -   **快顯視窗** - 封鎖瀏覽器中的快顯視窗 (僅適用於 Windows 10 Desktop)。
 -   **搜尋建議** - 讓您的搜尋引擎在您輸入搜尋片語時建議網站。
--   **密碼管理員** - 啟用或停用 Microsoft Edge 密碼管理員功能。
-- **傳送不追蹤標頭** - 設定 Microsoft Edge 瀏覽器以傳送「不追蹤」標頭給使用者瀏覽的網站。
+-   **密碼管理員** - 啟用或停用 Microsoft Edge [密碼管理員] 功能。
+- **傳送不追蹤標頭** - 設定 Microsoft Edge 瀏覽器以傳送不追蹤標頭給使用者瀏覽的網站。
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
 
-- **適用於 Microsoft Edge 的 SmartScreen 篩選工具** - 啟用 Edge SmartScreen 以存取網站和檔案下載。
+- **適用於 Microsoft Edge 的 SmartScreen 篩選工具** - 啟用 Microsoft Edge SmartScreen 以存取網站和檔案下載。
 
 ## <a name="search"></a>搜尋
 - **搜尋位置** - 指定搜尋是否可使用位置資訊。 資訊

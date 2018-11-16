@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231945"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225742"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入門：建立 iOS 的電子郵件裝置設定檔
 
@@ -69,7 +69,7 @@ ms.locfileid: "48231945"
 
 ## <a name="next-steps"></a>接下來的步驟
 
-在本快速入門中，您已建立 iOS 裝置的電子郵件設定檔。 現在，您可以使用此設定檔來判斷 iOS 裝置是否符合規範，方法是建立將任何不符合該設定檔的 iOS 裝置標記為不符合規範的合規性政策。 如需進一步保護，您可以建立條件式存取原則，以封鎖不符合規範的 iOS 裝置存取電子郵件。
+在本快速入門中，您已建立 iOS 裝置的電子郵件設定檔。 現在，您可以使用此設定檔來判斷 iOS 裝置是否符合規範，方法是建立將任何不符合該設定檔的 iOS 裝置標記為不符合規範的合規性政策。 如需進一步保護，您可以建立條件式存取原則，以封鎖不符合規範的 iOS 裝置存取電子郵件。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](device-compliance-get-started.md)。
 
 > [!div class="nextstepaction"]
-> [Intune 中的裝置合規性政策入門](device-compliance-get-started.md)
+> [教學課程：保護受控裝置上的 Exchange Online 電子郵件](tutorial-protect-email-on-enrolled-devices.md)

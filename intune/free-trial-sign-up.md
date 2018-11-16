@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915677"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510987"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune 
 
@@ -124,7 +124,9 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 ## <a name="next-steps"></a>接下來的步驟
 
-在此快速入門中，您已建立免費訂用帳戶，以在測試環境中試用 Intune，並已選擇性地設定自訂網域名稱。 若要深入了解 Microsoft Intune，請繼續前往下一個快速入門以新增使用者並指派授權。
+在此快速入門中，您已建立免費訂用帳戶，以在測試環境中試用 Intune。 如需設定 Intune 的詳細資訊，請參閱[設定 Intune](setup-steps.md)。
+
+若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
 
 > [!div class="nextstepaction"]
-> [建立使用者](quickstart-create-user.md)
+> [快速入門：建立使用者並為其指派授權](quickstart-create-user.md)

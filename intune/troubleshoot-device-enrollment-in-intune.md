@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237658"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511023"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -391,6 +391,28 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>通知使用者重新開始註冊程序
 抹除已封鎖的裝置之後，您可以通知使用者重新開始註冊程序。
+
+## <a name="macos-issues"></a>macOS 問題
+
+### <a name="macos-enrollment-errors"></a>macOS 註冊錯誤
+**錯誤訊息 1：***您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*  
+
+**錯誤訊息 2：***我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。*
+
+**問題：** 此訊息可能是由於下列任何原因所造成：  
+* 未正確設定 macOS 虛擬機器 (VM)  
+* 您已啟用裝置限制，要求裝置必須屬公司擁有或已在 Intune 中註冊裝置序號  
+* 裝置已註冊並仍指派給 Intune 中的其他人  
+
+**解決方式：** 首先，洽詢您的使用者，以判斷哪些問題會影響其裝置。 然後，完成下列最相關的解決方案：
+* 如果使用者要註冊 VM 進行測試，請確認已完整設定，讓 Intune 能夠辨識其序號及硬體型號。 深入了解如何在 Intune 中[設定 VM](macos-enroll.md#enroll-virtual-macos-machines-for-testing)。  
+* 如果您的組織開啟封鎖個人 macOS 裝置的註冊限制，您必須手動[新增個人裝置的序號](corporate-identifiers-add.md#manually-enter-corporate-identifiers)至 Intune。  
+* 如果裝置仍指派給 Intune 中的其他使用者，其先前的擁有者並未使用公司入口網站應用程式將它移除或重設。 若要從 Intune 清除過時的裝置記錄：  
+
+    1. 移至 [Azure 入口網站中的 Intune](https://portal.manage.microsoft.com)，並使用您的系統管理認證登入。
+    2. 移至 Intune > [裝置] > [所有裝置]。  
+    3. 找到有註冊問題的裝置。 依裝置名稱或 MAC/硬體位址進行搜尋，以縮小結果的範圍。
+    4. 選取裝置 > [刪除]。 刪除與裝置建立關聯的所有其他項目。  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
 ### <a name="mobile-devices-disappear"></a>行動裝置消失

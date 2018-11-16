@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025197"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576761"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune 的舊版 - 2018 年 11 月
 
@@ -44,11 +44,6 @@ ms.locfileid: "51025197"
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>在公司擁有的受監督 iOS 裝置上解除安裝應用程式 <!-- 1281677 -->
 您可以移除公司所擁有受監督 iOS 裝置上的任何應用程式。 您可以透過針對具有**解除安裝**指派類型的使用者或裝置群組，來移除任何應用程式。 針對個人或不受監督的 iOS 裝置，您仍可以僅移除使用 Intune 安裝的應用程式。
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>在 iOS 電子郵件設定檔中支援 iOS 12 OAuth <!--2155106 -->
-Intune 的 iOS 電子郵件設定檔將支援 iOS 12 OAuth。 若要查看這項功能，請選擇 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。 在建立設定檔刀鋒視窗中，您可以啟用或停用 [OAuth]。 若開啟此設定，則會發生兩件事：
-1. 會向已瞄準的裝置發出新的設定檔。
-2. 終端使用者將接收到提示，要求他們再次提供認證。
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>追蹤 Office 專業增強版的安裝 <!--2620217-->
 您可以使用[註冊狀態頁面](windows-enrollment-status.md)，來追蹤 [Office 專業增強版](apps-add-office365.md)安裝進度。
 
@@ -69,7 +64,7 @@ Intune 將支持在 Apple School Manager 帳戶的 macOS 裝置上使用裝置�
 您將可以更有效控制應用程式保護原則指派。 透過儲存並套用應用程式保護原則指派，只有特定使用者會受到應用程式保護原則指派的直接影響。
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>適用於 Windows 10 及更新版本的新 Microsoft Edge 瀏覽器設定 <!-- 3174639 -->
-我們將新增一個新設定，以協助您控制和管理裝置上的 Microsoft Edge 瀏覽器。 如需目前設定的清單，請參閱[適用於 Windows 10 (及更新版本) 的裝置限制](device-restrictions-windows-10.md#edge-browser)。
+我們將新增一個新設定，以協助您控制和管理裝置上的 Microsoft Edge 瀏覽器。 如需目前設定的清單，請參閱[適用於 Windows 10 (及更新版本) 的裝置限制](device-restrictions-windows-10.md#microsoft-edge-browser)。
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>選取註冊狀態頁面上追蹤的應用程式<!-- 2531007 -->
 您可以在註冊狀態頁面上選擇追蹤哪些應用程式。
@@ -113,10 +108,10 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一個 MDM 所使用的 Apple VPP 權杖 <!-- 1488946 -->
 如果 Intune 和另一個 MDM 都正在使用 Apple 大量採購方案 (VPP) 權杖，則 Intune 會偵測並顯示詳細資料。
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>顯示 iOS 和 macOS 版本號碼和組建編號 <!-- 1892471 -->
-在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 和 macOS 作業系統版本。 在未來的更新中，也會顯示這兩個平台的組建編號。
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>iOS 和 macOS 版本號碼和組建編號可用於合規性政策 <!-- 1892471 -->
+在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 和 macOS 作業系統版本，並可用於合規性政策。 在未來的更新中，您也可以設定這兩個平台的組建編號。
 
-發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 顯示組建編號，即可輕鬆地檢查是否已安裝弱點更新。
+發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 藉由在合規性政策中使用組建編號，即可輕鬆地檢查是否已安裝弱點更新。
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>[裝置合規性] 儀表板中的已淘汰裝置 <!-- 1981119 -->
 在未來的更新中，將會從 [裝置合規性] 儀表板中移除已淘汰裝置。 這會變更您的合規性數字。

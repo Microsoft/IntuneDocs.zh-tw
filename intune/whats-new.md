@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025231"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576965"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-了解每週的 Microsoft Intune 新功能 您也可以了解[即將推出的變更](#whats-coming)、關於服務的[重要通知](#notices)，以及[過去版本](whats-new-archive.md)的相關資訊。 某些功能在首度發行時可能會花費數週的時間，而可能無法在第一週就提供給所有客戶。
+了解每週的 Microsoft Intune 新功能 您也可以找到即將推出的變更、[重要通知](#notices)，以及[過去版本](whats-new-archive.md)的相關資訊。 某些功能在首度發行時可能會花費數週的時間，而可能無法在第一週就提供給所有客戶。
 
 > [!Note]
 > 如需混合式行動裝置管理 (MDM) 的新功能資訊，請參閱[混合式新功能頁面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
@@ -41,6 +41,21 @@ ms.locfileid: "51025231"
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>2018 年 11 月 5 日當週
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>在 iOS 電子郵件設定檔中支援 iOS 12 OAuth <!--2155106 -->
+
+Intune 的 iOS 電子郵件設定檔支援 iOS 12 Open Authorization (OAuth)。 若要查看此功能，請建立新的設定檔 ([裝置設定] > [設定檔] > [建立設定檔] > [iOS] 作為平台 > [電子郵件] 作為設定檔類型)，或更新現有的 iOS 電子郵件設定檔。 如果您在已部署給使用者的設定檔中啟用 OAuth，則會提示使用者重新驗證，並再次下載其電子郵件。
+
+[iOS 電子郵件設定檔](email-settings-ios.md)會包含有關在電子郵件設定檔中使用 OAuth 的詳細資訊。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>混合式 Azure Active Directory 聯結裝置的 Autopilot 支援 (預覽) <!-- 1048100-->
+您現在可以透過使用 Autopilot，來設定混合式 Azure Active Directory 聯結裝置。 裝置必須聯結到您組織的網路，才能使用混合式 Autopilot 功能。 如需詳細資訊，請參閱[使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置](windows-autopilot-hybrid.md)。
+此功能將在未來幾天內在整個使用者群中推出。 因此，在推出至您的帳戶之前，您可能無法執行這些步驟。
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>適用於 Web 資料的應用程式防護原則 (APP) 設定 <!-- 2662995  -->
+Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定已進行更新，其提升處理 HTTP 和 HTTPS Web 連結的能力，以及透過 iOS 通用連結和 Android 應用程式連結進行資料轉送的能力。  
+
 ## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日當週
 
 
@@ -112,10 +127,6 @@ Intune 中的 PowerShell 指令碼可以鎖定至 AAD 裝置安全性群組。
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用條款功能 <!-- 2870393 -->
 Azure Active Directory 具備您可以改使用的條款功能，而無須使用現有 Intune 條款及條件。 Azure AD 使用條款功能可提供更多彈性，讓您決定要顯示哪些條款以及顯示的時機、具備更佳的當地語系化支援、對轉譯條款的方式擁有更大控制能力，以及改善回報。 Azure AD 使用條款需要 Azure Active Directory Premium P1，該項目也是 Enterprise Mobility + Security E3 套件的一部分。 若要深入了解，請參閱[管理公司的使用者存取條款及條件](terms-and-conditions-create.md)一文。
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>混合式 Azure Active Directory 聯結裝置的 Autopilot 支援 (預覽) <!-- 1048100-->
-您現在可以透過使用 Autopilot，來設定混合式 Azure Active Directory 聯結裝置。 裝置必須聯結到您組織的網路，才能使用混合式 Autopilot 功能。 如需詳細資訊，請參閱[使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置](windows-autopilot-hybrid.md)。
-此功能將在未來幾天內在整個使用者群中推出。 因此，在推出至您的帳戶之前，您可能無法執行這些步驟。
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Android 裝置擁有者模式支援 <!--3188762-->
 針對 Samsung Knox 行動裝置註冊，Intune 現在支援將裝置註冊於 Android 裝置擁有者管理模式。 使用 WiFi 或行動電話通訊網路的使用者第一次開啟其裝置時，只需輕點幾下即可註冊。 如需詳細資訊，請參閱[使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置](android-samsung-knox-mobile-enroll.md)。
 
@@ -130,7 +141,10 @@ Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Mi
 - **存取需求** - 此群組包含每個應用程式的 PIN 選項，用於決定終端使用者如何在工作環境中存取應用程式。  
 - **條件式啟動** - 此群組包含最低作業系統設定、越獄和 Root 裝置偵測以及離線寬限期等設定。  
   
-設定的功能不會變更，但可讓您在處理原則編寫流程時更容易找到。 
+設定的功能不會變更，但可讓您在處理原則編寫流程時更容易找到。
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Microsoft Intune 裝置訂閱 SKU！--3312071-->
+為了協助降低企業中的裝置管理裝置成本，現在提供新的裝置型訂閱 SKU。 此 Intune 裝置 SKU 是依每月每部裝置來授權。 價格會因授權方案而有所不同。 直接通路、Enterprise 合約 (EA)、Microsoft 產品和服務計畫 (MPSA)，以及開放式和雲端解決方案提供者 (CSP) 都有提供。
 
 ### <a name="intune-apps"></a>Intune 應用程式
 
@@ -138,7 +152,7 @@ Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Mi
 Intune 會將企業營運 (LOB) 應用程式的最大套件大小增加為 8 GB。 如需詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。
 
 #### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>新增公司入口網站應用程式的自訂品牌形象 <!-- 1916266 -->
-作為 Microsoft Intune 系統管理員，您可以上傳自訂品牌影像，該影像會在 iOS 公司入口網站應用程式中的使用者設定檔頁面上，作為背景影像顯示。 如需設定公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
+作為 Microsoft Intune 系統管理員，您可以上傳自訂品牌影像，該影像會在 iOS 公司入口網站應用程式的使用者設定檔頁面上，作為背景影像顯示。 如需設定公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
 
 #### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>Intune 會在更新終端使用者電腦上的 Office 時保留 Office 當地語系化語言 <!-- 2971030 -->
 當 Intune 在您終端使用者的電腦上安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。 如需詳細資訊，請參閱[使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](apps-add-office365.md)。
@@ -675,7 +689,7 @@ Intune 現在支援高度受控、鎖定、Kiosk 樣式的 Android 裝置。 這
 
 ## <a name="week-of-june-18-2018"></a>2018年 6 月 18 日當週
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 應用程式防護原則的 Edge 行動支援 <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 應用程式防護原則的 Microsoft Edge 行動支援 <!-- 1817882 -->
 
 行動裝置的 Microsoft Edge 瀏覽器現在支援 Intune 中所定義的應用程式防護原則。
 
@@ -784,7 +798,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 在受 Microsoft Intune MDM 管理的裝置上，應用程式安裝有時可能會失敗。 當這些應用程式安裝失敗時，使用者可能無法輕易地了解失敗的原因，或是對問題進行疑難排解。 我們正在推出應用程式疑難排解功能的公開預覽。 您將會在每個個別裝置的底下看到名為 [受控應用程式] 的新節點。 這會列出透過 Intune MDM 傳遞的應用程式。 在該節點中，您將會看到應用程式安裝狀態的清單。 如果您選取個別的應用程式，將會看到針對該特定應用程式的疑難排解檢視。 在疑難排解檢視中，您將會看到應用程式的端對端生命週期，例如針對該應用程式進行建立、修改、設為目標，以及傳遞至裝置的時間。 此外，如果應用程式安裝沒有成功，系統將會針對導致該錯誤的原因為您顯示錯誤碼及協助訊息。 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Inunte 應用程式保護原則和 Microsoft Edge <!-- 1818968 -->
-適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器現在支援 Microsoft Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Edge 應用程式的 iOS 和 Android 裝置使用者，將會受到 Intune 的保護。 在 iOS 裝置上，[要求受控瀏覽器的 Web 內容] 原則可讓使用者開啟受控 Edge 中的連結。
+適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器現在支援 Microsoft Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Edge 應用程式的 iOS 和 Android 裝置使用者，將會受到 Intune 的保護。 在 iOS 裝置上，[要求受控瀏覽器的 Web 內容] 原則可讓使用者開啟受控 Microsoft Edge 中的連結。
 
 ## <a name="week-of-may-14-2018"></a>2018 年 5 月 14 日當週
 
@@ -1010,6 +1024,21 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 您現在可以搭配 Outlook Mobile 使用 Intune「應用程式原則保護」(APP) 和「條件式存取」(CA) 來保護對內部部署 Exchange 資料的存取。 若要在 Azure 入口網站內新增或修改應用程式保護原則，請選取 [Microsoft Intune] > [用戶端應用程式] > [應用程式保護原則]。 開始使用此功能之前，請確定您符合 [iOS 版和 Android 版 Outlook 的需求](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)。
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>規劃變更：Intune 教育版的效能更新 <!--1750215-->
+我們將為 Intune 教育版新增一些更新，以提高您指派設定給使用者或裝置時的速度和可靠性。 在此變更過程中，您的原則或設定指派將於 11 月底前移至新群組。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+
+身為 Intune 教育版客戶，您有兩個動態 Azure Active Directory (Azure AD) 群組：[所有使用者] 和 [所有裝置]。 透過這些更新，Azure AD 群組 [所有使用者] 和 [所有裝置] 將不會顯示在 Intune 教育版主控台中。 不過，它們仍會顯示在 Azure 上的 Intune 主控台中，並將重新命名為 [所有使用者 (已淘汰，請勿使用)] 和 [所有裝置 (已淘汰，請勿使用)]。
+
+當更新推出時，您將不再需要使用 Azure AD 群組來指派 Intune 中的應用程式和設定。 相反地，您的「設定」指派將會移至 Intune 教育版主控台中我們將為您建立的新群組，這些新群組仍會和以前一樣顯示為 [所有使用者] 和 [所有裝置]。 這些變更是在後端進行，因此您不會注意到 Intune 教育版主控台有何不同。 預期不會影響您的終端使用者或已註冊的裝置。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+您無須採取任何動作，我們將為您移動原則指派。 如果您目前在 Intune 教育版主控台中指派原則，請繼續這麼做。
+
+如果您目前將原則指派給 Azure 上 Intune 中的 Azure AD 群組 (如上所述)，請開始改為將這些原則指派給 Intune 教育版主控台中的 [所有使用者] 和 [所有裝置] 群組。 當您看到 Azure AD 群組在主控台中重新命名為已淘汰時，請停止在 Azure AD 中指派原則。 如果您目前基於任何其他目的使用重新命名的群組，則應加以刪除。
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>規劃變更：Intune 將在 12 月轉為支援 macOS 10.12 和更高版本 <!--2970975--> 
 

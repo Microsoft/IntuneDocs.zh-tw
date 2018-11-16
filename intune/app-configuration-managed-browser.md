@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357082"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576863"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Microsoft Edge 和 Intune Managed Browser 是網頁瀏覽器應用程式，您�
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>受保護瀏覽器的應用程式保護原則
 
-因為 Edge 與 Managed Browser 已經和 Intune SDK 整合，所以您也可以將應用程式保護原則套用至這些應用程式，包括：
+因為 Microsoft Edge 與 Managed Browser 已經和 Intune SDK 整合，所以您也可以將應用程式防護原則套用至這些應用程式，包括：
 - 控制剪下、複製和貼上的運用。
 - 防止擷取螢幕畫面。
 - 確保只能在受控應用程式和瀏覽器中開啟公司連結。
@@ -65,7 +65,7 @@ Microsoft Edge 和 Intune Managed Browser 是網頁瀏覽器應用程式，您�
 
 >[!NOTE]
 >如果使用者從應用程式市集安裝 Managed Browser，且 Intune 並沒有管理它，可以將它作為基本網頁瀏覽器使用，並透過 Microsoft MyApps 網站支援單一登入。 系統會將使用者直接帶往 MyApps 網站，他們可以在該網站看到其所有已佈建的 SaaS 應用程式。
-由於 Managed Browser 或 Edge 未受 Intune 管理，所以無法存取來自其他受 Intune 管理的應用程式資料。 
+由於 Managed Browser 或 Microsoft Edge 未受 Intune 管理，所以無法存取來自其他 Intune 受控的應用程式資料。 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保護瀏覽器的條件式存取
@@ -83,7 +83,7 @@ Managed Browser 現在是進行條件式存取的經過核准用戶端應用程�
 
 5. 在 [指派] 區段中，選取 [條件] > [用戶端應用程式]。 即會顯示 [用戶端應用程式] 刀鋒視窗。
 6. 按一下 [設定] 下的 [是]，將原則套用至特定用戶端應用程式。
-7. 驗證將 [瀏覽器] 選取為用戶端應用程式。
+7. 確認已選取 **Browser** 作為用戶端應用程式。
 
     ![Azure AD - Managed Browser - 選取用戶端應用程式](./media/managed-browser-conditional-access-02.png)
 
@@ -151,30 +151,30 @@ Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( htt
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
     - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
-- Managed Browser 或 Edge 應用程式的使用者已將 [Intune 應用程式保護原則]( app-protection-policy.md)指派給應用程式。
+- Managed Browser 或 Microsoft Edge 應用程式的使用者已將 [Intune 應用程式防護原則]( app-protection-policy.md)指派給應用程式。
 
     > [!NOTE]
-    > 更新的應用程式 Proxy 重新導向資料，最多可能需要 24 小時才會在 Managed Browser 或 Edge 中生效。
+    > 更新的應用程式 Proxy 重新導向資料，最多可能需要 24 小時才會在 Managed Browser 和 Microsoft Edge 中生效。
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>步驟 1：從 Outlook 啟用自動重新導向到受保護的瀏覽器
 Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web 內容只在 Managed Browser 中顯示**。
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步驟 2：為受保護的瀏覽器指派應用程式設定原則。
-此程序會設定 Managed Browser 或 Edge 應用程式使用應用程式 Proxy 重新導向。 使用程序來建立 Managed Browser 或 Edge 應用程式設定，提供以下金鑰和值組：
+此程序會設定 Managed Browser 或 Microsoft Edge 應用程式來使用應用程式 Proxy 重新導向。 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
 | 金鑰                                                             | 值    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-如需如何前後使用 Managed Browser、Edge 與 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[搭配使用最好：Intune 和 Azure Active Directory 合作以改善使用者存取](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) \(英文\)。
+如需如何前後使用 Managed Browser、Microsoft Edge 與 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (建議搭配使用：Intune 和 Azure Active Directory 合作以改善使用者存取)。
 
 > [!NOTE]
-> Edge 使用與 Managed Browser 相同的金鑰和值組。 
+> Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>如何未受保護的瀏覽器設定首頁
 
-此設定可讓您設定使用者啟動受保護的瀏覽器或建立新索引標時會看到的首頁。使用程序來建立 Managed Browser 或 Edge 應用程式設定，提供以下金鑰和值組：
+此設定可讓您設定使用者啟動受保護的瀏覽器或建立新索引標時會看到的首頁。使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
 |                                金鑰                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -182,13 +182,13 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>如何設定受保護瀏覽器的書籤
 
-此設定可讓您設定一組書籤，供 Edge 或 Managed Browser 的使用者使用。
+此設定可讓您設定一組書籤，供 Microsoft Edge 或 Managed Browser 的使用者使用。
 
 - 使用者無法刪除或修改這些書籤
 - 這些書籤會顯示在清單頂端。 使用者建立的所有書籤都會顯示在這些書籤下方。
 - 如果您已啟用 App Proxy 重新導向，即可使用 App Proxy Web 應用程式的內部或外部 URL 來新增這些 Web 應用程式。
 
-使用程序來建立 Managed Browser 或 Edge 應用程式設定，提供以下金鑰和值組：
+使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
 |                                金鑰                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>如何為受保護的瀏覽器指定允許與封鎖的 URL
 
-使用程序來建立 Managed Browser 或 Edge 應用程式設定，提供以下金鑰和值組：
+使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
 |金鑰|值|
 |-|-|

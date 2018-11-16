@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231826"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298100"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange 連接器
 
@@ -43,7 +43,7 @@ ms.locfileid: "48231826"
 |            需求             |                                                                                                                                                                                                        詳細資訊                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         作業系統          |                                                               在執行任何版本的 Windows Server 2008 SP2 64 位元、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的電腦上，Intune 皆支援內部部署 Exchange 連接器。<br /><br />任何 Server Core 安裝都不支援此連接器。                                                                |
-|         Microsoft Exchange         |                                                                           內部部署連接器需要 Microsoft Exchange 2010 SP1 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為<strong>新</strong>或<strong>舊版</strong>設定，請連絡您的帳戶管理員。                                                                           |
+|         Microsoft Exchange         |                                                                           內部部署連接器需要 Microsoft Exchange 2010 SP3 或更新版本，或是舊版 Exchange Online Dedicated。 若要判斷您的 Exchange Online Dedicated 環境為<strong>新</strong>或<strong>舊版</strong>設定，請連絡您的帳戶管理員。                                                                           |
 | 行動裝置管理授權單位 |                                                                                                                              [將行動裝置管理授權單位設定為 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。                                                                                                                               |
 |              硬體              |                                                                                                                                                     安裝連接器的電腦需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁碟空間。                                                                                                                                                      |
 |  Active Directory 同步處理  |                                                                                      您必須[設定 Active Directory 同步處理](users-add.md)，以便將本機使用者和安全性群組與您的 Azure Active Directory 執行個體同步處理，才能使用連接器將 Intune 連線到您的 Exchange Server。                                                                                      |

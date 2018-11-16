@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679248"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276110"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的公司可以看到哪些資訊？
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的組織可以看到哪些資訊？
 
-當您向 Microsoft Intune 註冊裝置時，您的公司看不到您的個人資訊。 當您註冊裝置時，會賦予公司檢視裝置上特定資訊的權限，例如裝置型號和序號。 您的公司會使用這項資訊來協助保護裝置上的公司資料。
+當您向 Microsoft Intune 註冊裝置時，組織不會看到您的個人資訊。 當您註冊裝置時，會授與組織檢視裝置上特定資訊的權限，例如裝置型號和序號。 組織會使用這項資訊來協助保護裝置上的公司資料。
 
-**公司絕對不會看到的資訊：**
+**組織絕對不會看到的資訊：**
 
 - 電話和 Web 瀏覽歷程記錄
 - 電子郵件和簡訊
@@ -35,20 +35,23 @@ ms.locfileid: "50679248"
 - 行事曆
 -   密碼
 - 圖片，包括相片應用程式或手機相簿的內容
+- 檔案
 
-**公司一定會看到的資訊：**
+**組織一律會看到的資訊：**
 
 - 裝置型號，例如 Google Pixel
-- 製造商，像是 Microsoft
-- 作業系統，像是 iOS
-- 應用程式名稱，像是 Microsoft Word
+- 裝置製造商，例如 Microsoft
+- 作業系統和版本，例如 iOS 12.0.1
+- 應用程式名稱，例如 Microsoft Word：在個人裝置上，組織只能看到您的受控應用程式清查。 在公司擁有的裝置上，組織可以看到所有的應用程式清查。
 - 裝置擁有者
 - 裝置名稱
-- 序號
+- 裝置序號
+- IMEI
 
-**公司可能會看到的資訊：**
+**組織可能會看到的資訊：**
 
--  電話號碼：如果是**公司**所擁有的裝置，公司便能看到完整的電話號碼。 如果是**個人**所擁有的裝置，公司便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料] 頁面，便可查看每個裝置的 [擁有權類型]。
--  位置：您的公司絕對不會看到裝置的位置，除非是受監督但遺失的 iOS 裝置。 [如何得知？](https://go.microsoft.com/fwlink/?linkid=853816)
-- 應用程式清查：如果貴公司使用 Mobile Threat Defense，他們將能夠檢視您 iOS 裝置上應用程式的相關詳細資料。 深入了解 [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)。
-- 網路資訊：有關 Android 裝置的網路連線的一些資訊，可能可以提供給您的公司支援人員。 例如，如果您的公司要求裝置保留在某個建築物內，則您的裝置會識別連線網路的位置。 
+-  電話號碼：如果是**公司**所擁有的裝置，組織能看到完整的電話號碼。 如果是**個人**所擁有的裝置，組織便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料] 頁面，便可查看每個裝置的 [擁有權類型]。
+- 裝置儲存空間：如果您無法安裝必要的應用程式，您的組織可以查看裝置儲存空間，以確定空間是否不足。  
+-  位置：組織絕對不會看到裝置的位置，除非是受監督但遺失的 iOS 裝置。 [如何得知？](https://go.microsoft.com/fwlink/?linkid=853816)
+- 應用程式清查：如果您的組織使用 Mobile Threat Defense，他們將能夠檢視您 iOS 裝置上應用程式的哪些相關詳細資料。 深入了解 [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)。
+- 網路資訊：有關 Android 裝置網路連線的一些資訊，可能可以提供給您組織的支援人員。 例如，如果您的組織要求裝置保留在某個建築物內，則您的裝置會識別網路連線位置。 
