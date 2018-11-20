@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602141"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610051"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -66,7 +66,7 @@ ms.locfileid: "45602141"
 
 ## <a name="set-device-type-restrictions"></a>設定裝置類型限制
 
-您可以遵循下列步驟，變更裝置類型限制的設定。 這些限制不會影響已註冊的裝置。 使用此功能無法封鎖使用 [Intune PC 代理程式](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。
+您可以遵循下列步驟，變更裝置類型限制的設定。 這些限制不會影響已註冊的裝置。 使用此功能無法封鎖使用 [Intune PC 代理程式](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)所註冊的裝置。
 
 1. 登入 Azure 入口網站。
 2. 選取 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
@@ -100,11 +100,11 @@ ms.locfileid: "45602141"
 - 裝置透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)註冊。
  
 Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
- - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*。
-- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*。
+ - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*。
  
 也會封鎖下列個人註冊方法：
-- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*。
+- [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定新增公司帳戶](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*。
 - [僅限 MDM 註冊]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)選項，來自 Windows 設定。
 
 \* 如果透過 Autopilot 註冊，這些裝置將不會遭到封鎖。

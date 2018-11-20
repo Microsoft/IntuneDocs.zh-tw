@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255084"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618985"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>設定 Android 工作設定檔裝置的註冊
 
@@ -56,5 +56,5 @@ Intune 可協助您將應用程式和設定部署到 Android 工作設定檔裝�
 5.  選取 [Keep approved when app requests new permissions] (當應用程式要求新權限時，保留已核准的權限)，然後按一下 [儲存]。
 
 ## <a name="next-steps-for-android-work-profiles"></a>Android 工作設定檔的後續步驟
-- [部署 Android 工作設定檔應用程式](store-apps-android.md)
+- [部署 Android 工作設定檔應用程式](apps-add-android-for-work.md)
 - [新增 Android 工作設定檔設定原則](device-profiles.md)

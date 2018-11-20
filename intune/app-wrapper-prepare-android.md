@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 32ce1a71911c7a902f2790fef584ab1c3b86a293
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642965"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167445"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -128,7 +128,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>重複使用簽署憑證和包裝應用程式
 Android 要求所有的應用程式都必須以有效的憑證簽署，才能安裝在 Android 裝置上。
 
-已包裝的應用程式可簽署為包裝程序的一部分，或在包裝「之後」使用現有的簽署工具簽署 (應用程式在包裝前的任何簽署資訊皆予以捨棄)。 可能的話，包裝期間應該使用建置程序期間所用的簽署資訊。 在某些組織中，這可能需要與擁有金鑰存放區資訊的人合作 (即應用程式建置小組)。 
+已包裝的應用程式可簽署為包裝程序的一部分，或在包裝「之後」使用現有的簽署工具簽署 (應用程式在包裝前的任何簽署資訊皆予以捨棄)。 可能的話，包裝期間應該使用建置程序期間所用的簽署資訊。 在某些組織中，這可能需要與擁有金鑰存放區資訊的人合作 (即應用程式建置小組)。 
 
 如果無法使用先前的簽署憑證，或者之前並未部署應用程式，您可以遵循 [Android 開發人員指南](https://developer.android.com/studio/publish/app-signing.html#signing-manually)中的指示建立新的簽署憑證。
 
