@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915711"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167428"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -106,9 +106,6 @@ Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
     * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
-
- 顯示 iOS 和 Android 的企業營運應用程式版本號碼<!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>企業營運應用程式版本號碼
 
 Intune 的企業營運應用程式現在會顯示 iOS 和 Android 應用程式的版本號碼。 此號碼會顯示在 Azure 入口網站的應用程式清單及 [應用程式概觀] 刀鋒視窗中。 使用者可以在公司入口網站應用程式及入口網站中看到應用程式號碼。
@@ -164,6 +161,23 @@ Intune|iOS|Android|說明|
 * **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。
 
 * **疑難排解**︰如果您在手動測試應用程式的安裝使用者體驗時遇到任何問題，請參閱[針對應用程式安裝問題進行疑難排解](troubleshoot-app-install.md)。 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>將您應用程式存取權授與 Intune 應用程式保護服務 (選擇性)
+
+若您的應用程式使用自己的自訂 Azure Active Directory (AAD) 設定來進行驗證，則您應該針對兩個公用市集應用程式與內部 LOB 應用程式執行下列步驟。 **若您的應用程式使用 Intune SDK 預設用戶端識別碼**，則不要執行步驟。 
+
+一旦在 Azure 租用戶內註冊您的應用程式，且它出現在 [所有應用程式] 下，您就必須將您的應用程式存取權授與 Intune 應用程式保護服務 (先前稱為 MAM 服務). 在 Azure 入口網站中：
+
+1.  移至 [Azure Active Directory] 刀鋒視窗。
+2.  選取為應用程式設定的 [應用程式註冊]。
+3.  在 [設定] 的 [API 存取] 標題下，選取 [必要權限]。 
+4.  按一下 [+ 新增]。
+5.  按一下 [選取 API]。 
+6.  在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
+7.  在 API 清單中選取 [Microsoft 行動應用程式管理]，然後按一下 [選取]。
+8.  選取 [Read and Write the User’s App Management Data] \(讀取及寫入使用者的應用程式管理資料\)。
+9.  按一下 [完成]。
+10. 按一下 [授與權限]，然後按一下 [是]。 
 
 ### <a name="badge-your-app-optional"></a>為應用程式加上徽章 (選擇性)
 

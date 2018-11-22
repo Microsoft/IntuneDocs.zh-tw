@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298083"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654903"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您將可以透過使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory 聯結裝置。 若要執行此作業，請遵循以下步驟。
@@ -110,12 +110,13 @@ ms.locfileid: "51298083"
 
 需要在執行 Windows Server 2016 的電腦上安裝適用於 Active Directory 的Intune 連接器，該電腦需要能夠存取網際網路和 Active Directory。 若要增加規模和可用性，或支援多個 Active Directory 網域，您可以在您的環境中安裝多個連接器。 建議您在未執行任何其他 Intune 連接器的伺服器上安裝連接器。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] > [新增連接器]。 
-2. 遵循指示下載連接器。
-3. 開啟下載的連接器安裝程式檔案以安裝連接器 (ODJConnectorBootstrapper.exe)。
-4. 在安裝結束時，選擇 [設定]。
-5. 選擇 [登入]。
-6. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。
+1. 確定您已安裝語言套件並設定，如 [Intune Connector (預覽版) 語言需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector) \(機器翻譯\) 所述。
+2. 在 [Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] > [新增連接器]。 
+3. 遵循指示下載連接器。
+4. 開啟下載的連接器安裝程式檔案以安裝連接器 (ODJConnectorBootstrapper.exe)。
+5. 在安裝結束時，選擇 [設定]。
+6. 選擇 [登入]。
+7. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。
 8. 前往 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] 並確認連接狀態為 [使用中]。
 
 ### <a name="configure-web-proxy-settings"></a>設定 Web Proxy 設定
@@ -130,9 +131,9 @@ ms.locfileid: "51298083"
     2. 輸入**群組名稱**與**群組描述**。
     3. 選擇 [成員資格類型]。
 3. 如果針對上述的 [成員資格類型] 選擇 [動態裝置]，則在 [群組] 刀鋒視窗中，請選擇 [動態裝置成員]，然後在 [進階規則] 方塊中輸入下列任意一項代碼。
-    - 若要建立包含所有 Autopilot 裝置的群組，請鍵入 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - 若建立的群組要包含具有特定訂單識別碼的所有 Autopilot 裝置，請鍵入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
-    - 若建立的群組要包含具有特定採購單識別碼的所有 Autopilot 裝置，請鍵入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+    - 若要建立包含所有 Autopilot 裝置的群組，請輸入 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - 若建立的群組要包含具有特定訂單識別碼的所有 Autopilot 裝置，請輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - 若建立的群組要包含具有特定採購單識別碼的所有 Autopilot 裝置，請輸入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     新增 [進階規則] 代碼後，選擇 [儲存]。
 5. 選擇 **[建立]**。  
@@ -206,6 +207,6 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 4. 選擇 [確定] > [建立]。 會建立設定檔，而且會出現在清單中。
 5. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在您設定 Windows Autopilot 之後，請了解如何管理這些裝置。 如需詳細資訊，請參閱[什麼是 Microsoft Intune 裝置管理？](device-management.md)

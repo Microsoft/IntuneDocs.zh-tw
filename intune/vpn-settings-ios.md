@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236504"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947304"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
 
 Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這些設定可用來建立及設定您組織網路的 VPN 連線。 本文說明了這些設定。 其中一些設定僅適用於特定 VPN 用戶端，例如 Citrix、Zscaler 等。
+
+## <a name="connection-type"></a>連線類型
+
+從下列廠商清單中選取 VPN 連線類型︰
+
+- **Check Point Capsule VPN**
+- **Cisco Legacy AnyConnect**：適用於 [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 應用程式 4.0.5x 版及更舊版本。
+- **Cisco AnyConnect**：適用於 [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 應用程式 4.0.7x 版及更新版本。
+- **SonicWall Mobile Connect**
+- **F5 Access Legacy**：適用於 F5 Access 應用程式 2.1 版及更舊版本。
+- **F5 Access**：適用於 F5 Access 應用程式 3.0 版及更新版本。
+- **Palo Alto Networks GlobalProtect (Legacy)**：適用於 Palo Alto Networks GlobalProtect 應用程式 4.1 版及更舊版本。
+- **Palo Alto Networks GlobalProtect**：適用於 Palo Alto Networks GlobalProtect 應用程式 5.0 版及更新版本。
+- **Pulse Secure**
+- **Cisco (IPSec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **Zscaler**：需要您整合 Zscaler Private Access (ZPA) 與您的 Azure AD 帳戶。 如需詳細步驟，請參閱 [Zscaler 文件](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)。 
+- **自訂 VPN**
+
+> [!NOTE]
+> Cisco、Citrix、F5 和 Palo Alto 已宣告其舊版用戶端在 iOS 12 上無法運作。 您應該盡快移轉到新的應用程式。 如需詳細資訊，請參閱 [Microsoft Intune 支援小組部落格](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
@@ -37,44 +59,28 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 
     > [!NOTE]
     > 如果使用者名稱和密碼用來作為 Cisco IPsec VPN 的驗證方法，它們必須透過自訂的 Apple Configurator 設定檔傳遞 SharedSecret。
-  
-- **連線類型**：從下列廠商清單中選取 VPN 連線類型︰
-  - **Check Point Capsule VPN**
-  - **Cisco Legacy AnyConnect**：適用於 [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 應用程式 4.0.5x 版及更舊版本。
-  - **Cisco AnyConnect**：適用於 [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 應用程式 4.0.7x 版及更新版本。
-  - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**：適用於 F5 Access 應用程式 2.1 版及更舊版本。
-  - **F5 Access**：適用於 F5 Access 應用程式 3.0 版及更新版本。
-  - **Palo Alto Networks GlobalProtect (Legacy)**：適用於 Palo Alto Networks GlobalProtect 應用程式 4.1 版及更舊版本。
-  - **Palo Alto Networks GlobalProtect**：適用於 Palo Alto Networks GlobalProtect 應用程式 5.0 版及更新版本。
-  - **Pulse Secure**
-  - **Cisco (IPSec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **Zscaler**：需要您整合 Zscaler Private Access (ZPA) 與您的 Azure AD 帳戶。 如需詳細步驟，請參閱 [Zscaler 文件](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)。 
-  - **自訂 VPN**    
 
-    > [!NOTE]
-    > Cisco、Citrix、F5 和 Palo Alto 已宣告其舊版用戶端在 iOS 12 上無法運作。 您應該盡快移轉到新的應用程式。 如需詳細資訊，請參閱 [Microsoft Intune 支援小組部落格](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)。
-
-* **排除的 URL** (僅限 Zscaler)：連線到 Zscaler VPN 時，所列出的 URL 可從 Zscaler 雲端外部存取。 
+- **排除的 URL** (僅限 Zscaler)：連線到 Zscaler VPN 時，所列出的 URL 可從 Zscaler 雲端外部存取。 
 
 - **分割通道**：[啟用] 或 [停用]，讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
 
-- **啟用網路存取控制 (NAC)**：此設定是 VPN 用戶端 (例如 Citrix) 的預留位置，可將裝置識別碼加入 VPN 設定檔，以便與網路存取控制 (NAC) 搭配使用。 當您選擇 [我同意] 時，此裝置識別碼會包含在 VPN 設定檔中。 目前，沒有支援此新識別碼的任何 VPN 用戶端或 NAC 合作夥伴解決方案，因此不論合規性狀態為何，都會允許裝置連線到 VPN。 當我們的合作夥伴新增該識別碼的支援時，我們將會更新此文件。
+- **VPN 識別碼** (自訂 VPN、Zscaler 與 Citrix)：您要使用之 VPN 應用程式的識別碼，由您的 VPN 提供者所提供。
+  - **輸入您組織之自訂 VPN 屬性的機碼值組**：新增或匯入 [機碼] 和 [值] 來自訂您的 VPN 連線。 請記住，這些值通常由 VPN 提供者提供。
+
+- **啟用網路存取控制 (NAC)** (僅限 Citrix SSO)：當您選擇 [我同意] 時，裝置識別碼會包含在 VPN 設定檔中。 此識別碼可用來向 VPN 驗證以允許或防止網路存取。
+
+  **搭配 Gateway 使用 Citrix SSO 時**，請務必：
+
+  - 確認您是使用 Citrix Gateway 12.0.59 或更高版本。
+  - 確認您的使用者也在其裝置上安裝 Citrix SSO 1.1.6 或更新版本。
+  - 針對 NAC 將 Citrix Gateway 與 Intune 整合，如[將 Microsoft Intune/Enterprise Mobility Suite 與 NetScaler 整合 (LDAP+OTP 案例)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix 部署指南 \(英文\) 中所述。
+  - 在 VPN 設定檔中啟用 NAC。
 
   重要詳細資訊：  
 
-  - 啟用此設定時，會每隔 24 小時中斷 VPN 連線。
-  - 裝置識別碼是設定檔的一部分，但它不會顯示在 Intune 或設定檔中。 Microsoft 不會將此識別碼儲存在任何位置，也不會將它共用。 一旦受到 VPN 合作夥伴的支援，VPN 用戶端 (例如 Citrix SSO) 可以取得識別碼，並查詢 Intune 來確認裝置已註冊，以及 VPN 設定檔是否符合規範。
+  - 啟用 NAC 時，VPN 連線每隔 24 小時會中斷一次。
+  - 裝置識別碼是設定檔的一部分，但它不會顯示在 Intune 中。 Microsoft 不會將此識別碼儲存在任何位置，也不會將它共用。 一旦受到 VPN 合作夥伴的支援，VPN 用戶端 (例如 Citrix SSO) 可以取得識別碼，並查詢 Intune 來確認裝置已註冊，以及 VPN 設定檔是否符合規範。
   - 若要移除此設定，請重新建立設定檔，但不要選取 [我同意]。 然後，重新指派設定檔。
-
-## <a name="custom-vpn-settings"></a>自訂 VPN 設定
-
-如果您已選取 [自訂 VPN] 作為連線類型，請設定下列設定。 Zscaler 和 Citrix 連線也會顯示這些設定。
-
-- **VPN 識別碼**：您要使用之 VPN 應用程式的識別碼，由您的 VPN 提供者所提供。
-- **輸入您組織之自訂 VPN 屬性的機碼值組**：新增或匯入 [機碼] 和 [值] 來自訂您的 VPN 連線。 請記住，這些值通常由 VPN 提供者提供。
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 

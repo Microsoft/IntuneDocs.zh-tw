@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236283"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811507"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236283"
 使用者可以從 Microsoft Intune 公司入口網站存取公司資料及執行一般工作，例如註冊裝置、安裝應用程式，以及尋找向 IT 部門尋求協助的資訊。        
 
 > [!Tip]        
-> 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。       
+> 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。 請注意，使用者必須或指派 Intune 授權，才能存取「公司入口網站」網站。
 
 自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [用戶端應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
 
@@ -48,7 +48,7 @@ ms.locfileid: "50236283"
 | **隱私權聲明 URL** |     79     | 您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須以 `<https://www.contoso.com>` 格式輸入有效的 URL。 |
 
 ## <a name="support-information"></a>支援資訊      
-輸入貴公司的支援資訊，為您的員工提供 Intune 相關問題的連絡人。       
+輸入貴公司的支援資訊，為您的員工提供 Intune 相關問題的連絡人。          
 
 |欄位名稱|長度上限|詳細資訊|
 |---|---|---|
@@ -84,28 +84,37 @@ ms.locfileid: "50236283"
 
 ### <a name="brand-image-for-company-portal"></a>公司入口網站的品牌影像
 
-顯示反映您公司品牌的品牌影像。 支援將品牌影像新增至公司入口網站應用程式，但可能不會在所有平台上顯示。
+顯示反映您公司品牌的品牌影像。 儲存變更之後，可以選擇刀鋒視窗頂端的 [在 Intune Web 入口網路中預覽您的設定] 來查看您的設定。 請注意，您只能在 iOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
 
 |欄位名稱|詳細資訊|
 |---|---|
-|**上傳您的品牌影像**| 此選項可讓您在公司入口網站應用程式中的使用者設定檔頁面上顯示背景影像。<p><ul><li>建議的影像寬度：大於 1125 像素，但不得小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
+|**上傳您的品牌影像**| 此選項可讓您在公司入口網站應用程式中的使用者設定檔頁面上顯示背景影像。<p>*注意*：影像在不同的平台上的顯示可能會不同。<p><ul><li>建議的影像寬度：大於 1125 像素，但不得小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
 
 正確的品牌影像可讓公司品牌留下強烈印象，因而加強使用者對公司入口網站的信任。 以下是您擷取、選擇及最佳化公司入口網站影像時可能想要考慮的一些祕訣。 
 
-- 連絡您的行銷或美術部門。 他們可能已有一組經核准品牌化的品牌影像。 他們也可協助您視需要最佳化影像。 
+- 連絡您的行銷或美術部門。 他們可能已有一組經核准的品牌影像。 他們也可協助您視需要最佳化影像。 
 
-- 請同時考慮橫向和直向構圖。 影像在焦點周圍應該有足夠的背景。 影像可能會因裝置大小和方向而有不同的裁剪方式。 
+- 請同時考慮橫向和直向構圖。 影像在焦點周圍應該有足夠的背景。 影像可能會因裝置大小、方向與平台而有不同的裁剪方式。 
 
 - 避免使用一般內建影像。 影像應該反映您公司的品牌，而且對您的使用者並不陌生。 如果您沒有影像，與其使用對使用者不具任何意義的一般影像，不如不要使用影像。 
 
 - 移除不必要的中繼資料。 影像檔可能隨附中繼資料，例如相機設定檔、地理位置、標題、字幕等。 請使用影像最佳化工具去除這項資訊來維護品質，同時符合檔案大小限制。 
 
-儲存變更之後，可以選擇刀鋒視窗頂端的 [在 Intune Web 入口網路中預覽您的設定] 來查看您的設定。 請注意，您只能在 iOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
+當 Intune 中的品牌影像新增或變更時，使用者可能不會在 iOS 裝置上看到變更，直到「公司入口網站」已在啟動時發現變更，然後重新啟動以顯示品牌影像。 
 
+### <a name="brand-image-examples"></a>品牌影像範例
+
+下列影像顯示範例 iPad 品牌影像：
+
+![範例 iPhone 品牌影像的螢幕擷取畫面](media/company-portal-app/company-portal-app-03.png)
+
+下列影像顯示範例 iPhone 品牌影像：
+
+![範例 iPad 品牌影像的螢幕擷取畫面](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司入口網站鍵盤快速鍵
 
-終端使用者可以在 Windows 公司入口網站中使用鍵盤快速鍵觸發導覽、應用程式和裝置動作。
+終端使用者可以在 Windows 公司入口網站中使用鍵盤快速鍵觸發導覽、應用程式與裝置動作。
 
 您可以在 Windows 公司入口網站應用程式中使用下列鍵盤快速鍵。
 
@@ -126,6 +135,10 @@ ms.locfileid: "50236283"
 |  | 檢查存取權 | Ctrl+M 或 F9 |
 | 應用程式詳細資料 | 安裝 | Ctrl+I |
 
-## <a name="next-steps"></a>接下來的步驟
+使用者也能夠在 Windows「公司入口網站」應用程式中看到可用的捷徑。
+
+![Windows 公司入口網站應用程式中可用捷徑的螢幕擷取畫面](media/company-portal-app/company-portal-app-01.png)
+
+## <a name="next-steps"></a>後續步驟
 
 - [使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](store-apps-company-portal-app.md)

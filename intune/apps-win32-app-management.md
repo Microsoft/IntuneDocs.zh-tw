@@ -1,10 +1,27 @@
 ---
-title: 將 Win32 應用程式新增至 Microsoft Intune titlesuffix: description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: 將 Win32 應用程式新增至 Microsoft Intune
+titlesuffix: ''
+description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830112"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
 Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
@@ -43,6 +60,13 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    此命令會顯示工具的使用方式資訊。    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    此命令會從指定來源資料夾和安裝程式檔案產生 `.intunewin` 檔案。 針對 MSI 安裝程式檔案，此工具會擷取 Intune 的必要資訊。 若指定 `-q`，則命令會在安靜模式中執行，並且若已存在輸出檔案，則該檔案將會遭到覆寫。 此外，若輸出資料夾不存在，則會自動建立資料夾。    |
+
+當產生 *.intunewin* 檔案時，將您需要參考的任何檔案放到安裝程式資料夾的子資料夾中。 接著，使用相對路徑來參考您需要的特定檔案。 例如：
+
+**安裝程式來源資料夾：***c:\testapp\v1.0*<br>
+**授權檔案：***c:\testapp\v1.0\licenses\license.txt*
+
+使用相對路徑 *licenses\license.txt* 來參考 *license.txt* 檔案。
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>建立、指派和監視 Win32 應用程式
 
@@ -223,6 +247,6 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 - 檢查 OS 版本 – Windows 10 1607 或更新版本。  
 - 檢查 Windows 10 SKU - Windows 10 S 或在啟用 S 模式的情況下執行的 Windows 版本不支援 MSI 安裝。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 如需將應用程式新增至 Intune 的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。

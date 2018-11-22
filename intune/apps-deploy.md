@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903415"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610102"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -58,7 +58,7 @@ ms.locfileid: "48903415"
 6. 在功能表的 [管理] 區段中，選取 [指派]。
 7. 選取 [新增群組]，以開啟和應用程式相關的 [新增群組] 窗格。
 8. 針對特定的應用程式，選取 [指派類型]：
-   - **可透過已註冊裝置使用**：使用者從公司入口網站應用程式或網站中安裝應用程式。
+   - **適用於已註冊的裝置**將應用程式指派給可從「公司入口網站」應用程式或網站安裝應用程式的使用者。
    - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 來自受控 Google Play 的應用程式不支援此選項。 
    - **必要**：此應用程式會安裝在所選群組中的裝置上。
    - **解除安裝**：此應用程式會從所選群組中的裝置上解除安裝。
@@ -119,6 +119,6 @@ ms.locfileid: "48903415"
 > 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。<br><br>
 > 以必要用途為目標的 iOS 市集應用程式 (不是 iOS VPP 應用程式) 會在裝置簽入時於裝置上強制執行，而且也會顯示在公司入口網站應用程式中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解監視應用程式指派，請參閱[如何監視應用程式](apps-monitor.md)。

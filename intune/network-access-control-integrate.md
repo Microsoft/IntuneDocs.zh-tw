@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236147"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947321"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -59,17 +59,26 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 8. 一旦裝置已註冊且符合規範，NCA 合作夥伴解決方案會從 Intune 取得狀態。
 9. 已成功建立連線，可讓裝置存取公司資源。
 
-## <a name="use-nac-on-your-ios-devices"></a>在 iOS 裝置上使用 NAC
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>在您的 iOS 裝置上針對 VPN 使用 NAC  
+支援適用於 Cisco Legacy AnyConnect、F5 Access Legacy 與 Citrix VPN 的 NAC，而不需要在 VPN 設定檔中啟用 NAC。
 
-iOS 上的下列 VPN 用戶端目前不支援網路存取控制：
+也支援適用於 Citrix SSO 的 NAC。 若要為 iOS 的 Citrix SSO 啟用 NAC：
+- 使用 Citrix Gateway 12.0.59 或更高版本。  
+- 使用者必須已安裝 Citrix SSO 1.1.6 或更新版本。
+- [針對 NAC 將 NetScaler 與 Intune 整合](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (如 Citrix 產品文件中所述)。
+- 在基底 VPN 設定組態上，針對 [啟用網路存取控制 (NAC)]，選取 [我同意] 核取方塊。
+
+當您為 iOS 使用 Citrix SSO 時，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
+
+
+**iOS 上的下列 VPN 用戶端目前不支援網路存取控制**：
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
 我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案就緒時，我們將會更新本文並提供其他詳細資料。 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (整合 Cisco ISE 與 Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (整合 Citrix NetScaler 與 Intune)

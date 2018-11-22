@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187796"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610085"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "47187796"
      - 啟動遠端協助工作階段
    - 使用 [內容] 來指派[您所建立的類別](device-group-mapping.md)，以及將裝置的擁有權變更為個人裝置或公司裝置。
    - [硬體] 包含裝置的許多相關詳細資料，包括裝置識別碼、作業系統和版本、儲存空間、型號和製造商、條件式存取設定等詳細資料。
-   - [探索到的應用程式] 會列出 Intune 找到已安裝在裝置上的所有應用程式，以及應用程式版本。 您也可以將應用程式清單 [匯出] 成 .csv 檔案。
+   - [探索到的應用程式] 會列出 Intune 找到已安裝在裝置上的所有應用程式，以及應用程式版本。 您也可以將應用程式清單 [匯出] 成 .csv 檔案。 此清單每 7 天會更新一次。
    - [裝置合規性] 會列出所有已指派的合規性原則，以及裝置是否符合規範。
    - [裝置設定]會顯示已指派給裝置的所有裝置設定原則，以及原則是否成功。
 
@@ -60,8 +60,10 @@ Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個
 |iOS|僅限受管理的應用程式|安裝在裝置上的所有應用程式|
 |macOS|安裝在裝置上的所有應用程式|安裝在裝置上的所有應用程式|  
 |Android|僅限受管理的應用程式|安裝在裝置上的所有應用程式|  
+|Android 企業|僅限受管理的應用程式|僅限在工作設定檔中安裝的應用程式|  
 
 ## <a name="hardware-device-details"></a>硬體裝置詳細資料
+視裝置使用的電訊廠商而定，可能不會收集所有詳細資料
 
 |詳細資料|說明|平台| 
 |--------------|----------------------|----|  
@@ -98,5 +100,5 @@ Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個
 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。
