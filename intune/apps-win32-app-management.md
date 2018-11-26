@@ -63,8 +63,8 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 
 當產生 *.intunewin* 檔案時，將您需要參考的任何檔案放到安裝程式資料夾的子資料夾中。 接著，使用相對路徑來參考您需要的特定檔案。 例如：
 
-**安裝程式來源資料夾：***c:\testapp\v1.0*<br>
-**授權檔案：***c:\testapp\v1.0\licenses\license.txt*
+**安裝程式來源資料夾：** *c:\testapp\v1.0*<br>
+**授權檔案：** *c:\testapp\v1.0\licenses\license.txt*
 
 使用相對路徑 *licenses\license.txt* 來參考 *license.txt* 檔案。
 
