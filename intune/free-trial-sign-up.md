@@ -59,7 +59,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 ## <a name="sign-in-to-the-azure-portal"></a>登入 Azure 入口網站
 
-1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 
+1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 
 2. 使用上述步驟中提供給您的認證登入。
 
     ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
@@ -79,7 +79,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 若要將 MDM 授權單位設定為 Intune，請執行下列步驟。
 
-1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com**。 
+1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 
 2. 選擇 [所有服務] > [Microsoft Intune]。
 3. 選取指出您尚未啟用裝置管理的橫幅，或如果您沒有立即看到橫幅，請選取 [裝置註冊]。 如果您尚未啟用裝置管理，會顯示 [選擇 MDM 授權單位] 刀鋒視窗。
 
