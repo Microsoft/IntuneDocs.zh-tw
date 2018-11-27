@@ -13,12 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.openlocfilehash: a90f53bfc5841cc0f773751e7df917d8fc8b6cf8
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431911"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187730"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程 - 使用 AutoPilot 在 Intune 中註冊 Windows 裝置
 Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intune 和 AutoPilot，將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像。 
@@ -55,7 +59,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 3. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [裝置] > [匯入]。
 
-    ![Windows AutoPilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device.png)
+    ![Windows Autopilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device.png)
 
 4. 在 [新增 Windows AutoPilot 裝置] 底下，瀏覽至您儲存的 CSV 檔案。
 
@@ -67,7 +71,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 5. 重新整理檢視可查看新的裝置。
 
-## <a name="create-an-autopilot-device-group"></a>建立 AutoPilot 裝置群組
+## <a name="create-an-autopilot-device-group"></a>建立 Autopilot 裝置群組
 
 接下來，您會建立裝置群組，並將您剛載入的 Autopilot 裝置放到群組中。
 
@@ -79,7 +83,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 3. 在 [群組] 刀鋒視窗中，選擇 [成員] 並將 Autopilot 裝置加到群組中。 尚未註冊的 Autopilot 裝置為裝置名稱與序號相同的裝置。
 4. 選擇 **[建立]**。  
 
-## <a name="create-an-autopilot-deployment-profile"></a>建立 AutoPilot 部署設定檔
+## <a name="create-an-autopilot-deployment-profile"></a>建立 Autopilot 部署設定檔
 
 建立裝置群組之後，必須建立部署設定檔，才能設定 Autopilot 裝置。
 
@@ -93,7 +97,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
     - **隱私權設定**：[顯示]
     - **使用者帳戶類型**：[標準]
 
-6. 選擇 [建立] 以建立設定檔。 現在可以指派 AutoPilot 部署設定檔給裝置。
+6. 選擇 [建立] 以建立設定檔。 現在可以指派 Autopilot 部署設定檔給裝置。
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>指派 AutoPilot 部署設定檔至裝置群組
 
@@ -114,7 +118,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 2. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [裝置]。
 
-3. 在 [Windows AutoPilot 裝置] 下，選擇您要刪除的裝置，然後選擇 [刪除]。
+3. 在 [Windows Autopilot 裝置] 下，選擇您要刪除的裝置，然後選擇 [刪除]。
 
 4. 選擇 [是] 以確認刪除。 可能需要幾分鐘才能刪除。
 
