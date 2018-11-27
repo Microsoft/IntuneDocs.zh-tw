@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610085"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180267"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -100,5 +101,5 @@ Intune 只會在公司擁有的裝置上收集應用程式清單。 不檢查個
 
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。

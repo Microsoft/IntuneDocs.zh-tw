@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
-ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
+ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51709133"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186082"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -96,7 +97,7 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 若要排除特定的使用者群組，可以選擇 [排除的群組]，然後選取要免套用裝置註冊與合規需求的使用者群組。
 
-1. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊輸入訊息時，會一邊顯示訊息的預覽。
+1. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
     > [!TIP]
     > 若要深入了解標記語言，請參閱 Wikipedia 上的這篇[文章](https://en.wikipedia.org/wiki/Markup_language)。
 

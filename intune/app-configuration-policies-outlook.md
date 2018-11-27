@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24ed1a895dd3e4cad6111b40913b43fa9c6a3cec
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903517"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180318"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 組態設定 
 
@@ -35,7 +36,7 @@ ms.locfileid: "48903517"
 
 - **電子郵件伺服器**：輸入您內部部署 Exchange 伺服器的主機名稱 (例如：mail.contoso.com)。
 - **電子郵件帳戶名稱**：輸入電子郵件帳戶的顯示名稱。 此名稱會在其裝置上向使用者顯示。
-- **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (AAD) 取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包含：
+- **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (Azure AD) 取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包含：
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **主要 SMTP 位址**：取得電子郵件地址格式的名稱，例如 `user1@contoso.com`
 - **AAD 中的電子郵件地址屬性**：選擇使用者電子郵件地址的產生方式。 選取 [使用者主體名稱] (`user1@contoso.com` 或 `user1`)，使用完整主體名稱作為電子郵件地址，或選取 [主要 SMTP 位址] (`user1@contoso.com`)，使用主要 SMTP 位址以登入 Exchange。 建議項目是選取 [主要 SMTP 地址]。

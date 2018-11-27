@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983086"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184670"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>在 Intune 中使用 Windows Phone 8.1 裝置的自訂設定
 
@@ -63,6 +64,6 @@ Windows Phone 8.1 自訂設定檔會使用開放行動聯盟的統一資源識�
 
 ## <a name="next-steps"></a>接下來的步驟
 
-設定檔已建立，但它還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
 
 了解如何在 [Windows 10 裝置](custom-settings-windows-10.md)上建立自訂設定檔。

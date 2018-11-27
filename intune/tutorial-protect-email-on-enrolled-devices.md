@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652116"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181865"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程 - 保護受控裝置上的 Exchange Online 電子郵件
 了解有關如何搭配條件式存取使用裝置合規性原則，確保 iOS 裝置只能在由 Intune 管理並使用核准的電子郵件應用程式時，才能存取 Exchange Online 電子郵件。 

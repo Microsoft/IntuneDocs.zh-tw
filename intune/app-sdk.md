@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425099"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180675"
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概觀
 Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。

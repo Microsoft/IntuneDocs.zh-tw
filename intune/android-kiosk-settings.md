@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602175"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185231"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中 Android 裝置的 kiosk 設定
 
@@ -47,7 +48,7 @@ ms.locfileid: "45602175"
 
 若要為多個應用程式設定 Android kiosk 裝置，請遵循下列主要步驟：
 
-1. [從受控 Google Play 匯入和部署受控主畫面應用程式](#import-and -deploy-the-managed-home-screen-app)
+1. [從受控 Google Play 匯入和部署受控主畫面應用程式](#import-and-deploy-the-managed-home-screen-app)
 2. [新增和指派可用於 kiosk 模式的應用程式](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (選擇性) [新增可用於 kiosk 模式的 Web 連結](#add-web-links-that-can-be-used-in-kiosk-mode)
 

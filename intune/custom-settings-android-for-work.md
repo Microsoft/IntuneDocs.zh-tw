@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 73075ed06e98ca987e87a7cfda70c546127bf881
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983137"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179587"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Android Enterprise 裝置的自訂設定
 
@@ -93,6 +94,6 @@ Intune 支援有限數目的 Android 自訂設定檔。
 
 ## <a name="next-steps"></a>接下來的步驟
 
-設定檔已建立，但它還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
 
 了解如何[在 Android 裝置上建立設定檔](custom-settings-android.md)。

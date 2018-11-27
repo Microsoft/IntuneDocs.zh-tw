@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 74d23c8433c741927f28bb1d6b9f55393e38f7db
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983120"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182970"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Android 裝置的自訂設定
 
@@ -73,6 +74,6 @@ Android 自訂設定檔會使用開放行動聯盟的統一資源識別項 (OMA 
 
 ## <a name="next-steps"></a>接下來的步驟
 
-設定檔已建立，但它還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
 
 了解如何[在 Android Enterprise 裝置上建立設定檔](custom-settings-android-for-work.md)。

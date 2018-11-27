@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400346"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190110"
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -30,7 +31,7 @@ ms.locfileid: "39400346"
 - Android 裝置，包括 Samsung Knox Standard 裝置。
 - Android 企業裝置，包括 [Android 工作設定檔裝置](#enable-enrollment-of-android-for-work-devices)和 Android kiosk 裝置。
 
-Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這表示使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都是集中管理。 當使用者登入時，他們可以存取應用程式，此外也可以將任何原則套用到這些應用程式。 當使用者登出時，會清除所有應用程式資料。
+Intune 的多使用者管理支援執行 Samsung Knox Standard 的裝置。 這表示使用者可以利用他們的 Azure AD 認證登入和登出裝置。 裝置不論是否處於使用狀態，都是集中管理。 當使用者登入時，他們可以存取應用程式，此外也可以將任何原則套用到這些應用程式。 當使用者登出時，會清除所有應用程式資料。
 
 ## <a name="prerequisite"></a>必要條件
 

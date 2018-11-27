@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9749f9b623c418b51b5c3292e72b699ff5cdd75c
-ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51654920"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190025"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解已針對您的終端使用者在這版 Microsoft Intune 中看到的應用程式 UI 做了哪些更新。 了解這些更新可協助您進行使用者通訊以及您已建立來支援您部署的任何更新中自訂文件。 它也可協助您了解如何進一步對下列問題進行疑難排解：他們尋求有關公司入口網站使用支援的技術服務時所面臨的問題。

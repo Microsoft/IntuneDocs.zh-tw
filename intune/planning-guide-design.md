@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864586"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186489"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -34,11 +35,11 @@ ms.locfileid: "47864586"
 
 -   裝置平台考量
 
--   要傳遞的需求  
+-   要傳遞的需求  
 
 雖然有基本的內部部署基礎結構需求，但設計計劃仍有助於確定您獲得符合目的、目標和需求的正確行動裝置管理解決方案。
 
-讓我們詳細檢閱各個區域。 
+讓我們詳細檢閱各個區域。 
 
 ## <a name="record-your-current-environment"></a>記錄目前的環境
 此外，在實作和測試階段期間經常會有設計變更。 請在發生變更時，使用您的設計計劃來記錄這些變更及其背後的原理。

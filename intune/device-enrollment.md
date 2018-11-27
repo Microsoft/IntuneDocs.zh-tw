@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610119"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190212"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

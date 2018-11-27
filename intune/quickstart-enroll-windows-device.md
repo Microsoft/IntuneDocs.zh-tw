@@ -11,12 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.openlocfilehash: 18e724d83514bf0df7fcc4f4085f6204669a468f
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510937"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183463"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入門：註冊您的 Windows 10 裝置
 
@@ -75,7 +79,7 @@ ms.locfileid: "51510937"
 
     您會看到一則訊息，指出您的公司或學校正在註冊您的裝置。
 
-4. 當您看到 [已全部完成] 畫面時，請選取 [完成]。 大功告成。
+4. 當您看到 [已全部完成] 時 畫面時，請選取 [完成]。 大功告成。
 
 5. 您現在會在 Windows Desktop 的 [存取公司或學校資源] 設定中看到新增的帳戶。
 

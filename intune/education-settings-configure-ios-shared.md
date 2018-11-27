@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029803"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181219"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何設定共用 iPad 裝置的 Intune 教育設定
 
@@ -183,7 +184,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 5. 在 [設定檔] 窗格中，選擇 [建立設定檔]。
 6. 在 [建立關聯] 窗格中，輸入 [名稱] 和 [描述]。
 7. 選擇 [選取類別] > [設定]，將群組關聯至購物車設定檔。
-8. 選擇要納入購物車設定檔的類別，然後選擇 [選取]。 
+8. 選擇要納入購物車設定檔的類別，然後選擇 [選取]。 
 9. 選擇 [選取購物車] > [設定]，將群組關聯至購物車設定檔。
 10. 選擇要納入購物車設定檔的群組，然後選擇 [選取]。
 11. 在 [建立關聯] 窗格中，選擇 [儲存] 來儲存購物車設定檔。
@@ -198,7 +199,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 4. 在 [裝置設定] 窗格中，選擇 [監視]  > [指派狀態]。
 5. 在 [指派狀態] 窗格中，選取您所建立的 [購物車設定檔]。
 6. 在 [購物車設定檔] 窗格中，選擇 [指派]，然後在 [Include] 下，選擇 [Select groups to include] (選取要包含的群組)。
-7. 選擇您希望購物車設定檔設為目標的類別 (不要選取群組)，然後選擇 [選取]。 
+7. 選擇您希望購物車設定檔設為目標的類別 (不要選取群組)，然後選擇 [選取]。 
 8. 完成之後，請選擇 **[儲存]**。
 
 指派完成時，Intune 會根據教室指派，將教室設定檔部署到目標裝置上。

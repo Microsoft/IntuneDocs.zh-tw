@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961457"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189345"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>判斷部署目的、目標和挑戰
 
@@ -78,7 +79,7 @@ ms.locfileid: "29961457"
 
 部署挑戰是組織最關切的問題，甚至可能對其部署有負面影響。 有時候，這些挑戰與您在上一個專案遇到的先前問題有關 (因此您會希望能避免這類問題)，也可能與目前部署投入的新問題有關。 下列為一些 Intune 部署挑戰以及避免方法的範例。
 
--   初始專案範圍未包含整備和終端使用者體驗支援。 這會導致造成不良的使用者採用及支援組織的挑戰。
+-   初始專案範圍未包含整備和終端使用者體驗支援。 這會導致造成不良的使用者採用及支援組織的挑戰。
 
     -   **風險降低：** 併入支援訓練。 透過部署計劃中的成功計量驗證使用者體驗。
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0d9a4ab46aa8f4086c30fc7d93d7d1335b3d9ba
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102067"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179978"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -46,7 +47,7 @@ ms.locfileid: "49102067"
  - **受控應用程式** - 在不註冊裝置的情況下管理應用程式。
 
 > [!NOTE]
-> 身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增到 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。
+> 身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增至 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。
 
 ## <a name="apps-that-support-app-configuration"></a>支援應用程式設定的應用程式
 

@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117866"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179495"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[同步] 裝置動作會強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
+[同步] 裝置動作會強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
 
 ## <a name="supported-platforms"></a>支援的平台
 

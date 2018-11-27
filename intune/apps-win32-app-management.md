@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
-ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51830112"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187288"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
@@ -247,6 +248,6 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 - 檢查 OS 版本 – Windows 10 1607 或更新版本。  
 - 檢查 Windows 10 SKU - Windows 10 S 或在啟用 S 模式的情況下執行的 Windows 版本不支援 MSI 安裝。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 如需將應用程式新增至 Intune 的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。

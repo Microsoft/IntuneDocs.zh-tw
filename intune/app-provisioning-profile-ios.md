@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 5b7758d8ee09f450435c6646d43b676a4e3b9dc9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167383"
+ms.locfileid: "52179497"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 應用程式佈建設定檔以避免應用程式過期
 
@@ -52,6 +53,6 @@ ms.locfileid: "52167383"
     - **上傳設定檔** - 選擇 [匯入]，然後選擇您從 Apple 開發人員網站下載的 Apple 行動組態設定檔檔案 (副檔名為 `.mobileprovision`)。
 4. 完成之後，請選擇 [建立]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 將設定檔指派給所需的 iOS 裝置。 如需詳細資訊，請使用[如何指派裝置設定檔](device-profile-assign.md)中的步驟。

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232169"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181030"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>設定 Lookout Mobile Threat Defense 與 Intune 的整合
 
@@ -50,11 +51,11 @@ ms.locfileid: "48232169"
 
 請使用下列步驟收集您需要提供給 Lookout 支援小組的資訊。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取您的訂閱。 
+1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取您的訂閱。 
 
-2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)以取得尋找訂用帳戶 ID 的提示。
+2. 當您選擇訂閱名稱時，產生的 URL 會包含訂閱識別碼。  如果您在尋找訂用帳戶 ID 時發生任何問題，可參閱這篇 [Microsoft 支援文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)以取得尋找訂用帳戶 ID 的提示。
 
-3. 尋找您的 Azure AD 群組識別碼。 Lookout 主控台支援 2 個存取層級：  
+3. 尋找您的 Azure AD 群組識別碼。 Lookout 主控台支援 2 個存取層級：  
    * **完整存取**︰Azure AD 系統管理員可以建立擁有「完整存取」權限的使用者群組，並選擇性建立擁有「限制存取」權限的使用者群組。  只有這些群組中的使用者才能夠登入 **Lookout 主控台**。
    * **限制存取**︰此群組中的使用者無法存取 Lookout 主控台的幾項設定及註冊相關模組，但可唯讀存取 Lookout 主控台的 [安全性原則] 模組。  
 

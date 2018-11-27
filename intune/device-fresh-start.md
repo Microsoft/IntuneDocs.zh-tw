@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
-ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
+ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40252573"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188733"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>透過 Intune 使用「重新開始」重設 Windows 10 裝置
 

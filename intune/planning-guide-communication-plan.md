@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b985b92b4ea68fedba3c0d04e53c1e6116a64015
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961556"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179811"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>開發推出通訊計畫
 
@@ -42,7 +43,7 @@ ms.locfileid: "29961556"
 
 **啟動階段** <br/>引入 Intune 專案本身的廣泛通訊。 它應該回答一些問題，例如什麼是 Intune、為什麼組織採用 Intune (對組織和使用者的好處)，以及提供高層級的部署和推出計劃。
 
-**註冊前階段**<br/> 廣泛通訊，其中包含下列其他資訊：Intune 和配套產品 (例如 Office、Outlook、OneDrive)、使用者資源以及排定組織群組和使用者接收 Intune 的特定時間表等。
+**註冊前階段**<br/> 廣泛通訊，其中包含下列其他資訊：Intune 和配套供應項目 (例如 Office、Outlook、OneDrive)、使用者資源以及排定組織群組和使用者接收 Intune 的特定時間表等。
 
 **註冊階段**<br/> 通訊是以排定接收 Intune 的組織群組和使用者為目標。 這些通訊應該通知使用者他們可以接收 Intune，並提供註冊指示以及取得協助或詢問問題所需的連絡資訊。
 

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
-ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811524"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189804"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>適用於 Windows 裝置的功能 (依註冊方法列出)
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -50,7 +51,7 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 |支援在混合式 Azure AD 加入之後自動註冊|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![核取記號](media/checkmark.png)|
 |支援在 Azure AD 加入之後自動註冊       |![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![X](media/xmark.png)|
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [設定 Windows 的註冊](windows-enroll.md)
 

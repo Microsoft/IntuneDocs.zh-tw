@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971409"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189736"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -64,7 +65,7 @@ ms.locfileid: "50971409"
 |設定檔名稱       | 是       |輸入您選擇的設定檔名稱。 
 |說明        | 否        |輸入描述設定檔的文字。 
 |MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme_deviceowner 
-|為 Google 裝置擁有者啟用此應用程式 | 是 | 選擇此選項以註冊於 Android Enterprise。 
+|以 Google 裝置擁有者來啟用此應用程式 | 是 | 選擇此選項以註冊於 Android Enterprise。 
 |支援的 MDM      | 是       |Microsoft Intune 
 |保留所有系統應用程式為啟用 | 否 | 選擇這個選項以確保所有應用程式可啟用，並可供設定檔使用。 如果未選擇此選項，則裝置的應用程式中系統匣僅會顯示一組非常有限的系統應用程式。 例如電子郵件應用程式等應用程式仍會保持隱藏。 
 |Custom JSON \(自訂 JSON\)        | 否        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN"：「輸入 Intune 註冊權杖字串」}。 了解[如何建立註冊設定檔](android-kiosk-enroll.md)。 

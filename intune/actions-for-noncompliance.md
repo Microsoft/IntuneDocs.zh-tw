@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236436"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187764"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>將電子郵件自動化，並為不符合規範的裝置新增動作 - Intune
 

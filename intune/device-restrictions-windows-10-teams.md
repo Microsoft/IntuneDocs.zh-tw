@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c251a45f8c319bdebbc6904c10fbf423bb1c1128
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: be0d80828327550e248d1ed5417b373c273a7a56
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34562155"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184857"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 團隊版裝置限制設定
 
@@ -33,7 +34,7 @@ ms.locfileid: "34562155"
 - **歡迎使用畫面上所顯示的會議資訊** - 啟用此選項可選擇顯示在 [歡迎使用] 畫面之 [會議]磚上的資訊。 您可以：
     - **僅顯示召集人和時間**
     - **顯示召集人、時間和主旨 (不會顯示私人會議的主旨)**
-- **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://** 。
+- **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://**。
 
 ## <a name="azure-operational-insights"></a>Azure Operational Insights
 

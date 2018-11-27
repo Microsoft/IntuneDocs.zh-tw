@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
-ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
+ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50225449"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181185"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -172,7 +173,7 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 **如果我將指紋或臉部新增至我的裝置，或是從中移除，會發生什麼情況？**
 Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使用者。 控制應用程式存取的其中一種方式，就是在支援裝置上要求 Apple 的 Touch ID 或 Face ID。 如果裝置的生物特徵辨識資料庫有任何變更，Intune 會實作一項行為，那就是 Intune 會在達到下次非使用狀態逾時值時，提示使用者輸入 PIN。 對生物特徵辨識資料所做的變更包括新增或移除指紋或臉部。 如果 Intune 使用者未設定 PIN，則會引導他們設定一個 Intune PIN。
  
-這樣做的用意是為了持續確保應用程式中的組織資料安全，並在應用程式層級受到保護。 此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 此整合會以輪流的方式發生，並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。 
+這樣做的用意是為了持續確保應用程式中的組織資料安全，並在應用程式層級受到保護。 此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 這項整合會輪流發生並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。 
   
 **我可以使用 iOS 共用延伸模組在不受管理的應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設為 [僅限受管理的應用程式] 或 [沒有應用程式]。這樣不會流失資料嗎？**<br></br>
 Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，Intune _**會先加密「公司」資料，才會在應用程式之外共用**_。 您可以嘗試在受管理的應用程式外開啟「公司」檔案來加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。

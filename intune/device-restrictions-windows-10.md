@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c49da9c323e1c4124ad76ae64e63a177edfcaa71
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576880"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189974"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中 Windows 10 (和更新版本) 的裝置限制設定
 本文將告訴您所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 的裝置進行設定。

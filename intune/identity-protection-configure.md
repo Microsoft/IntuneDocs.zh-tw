@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7012479023ece83ef475431c5cefe150ab2ef342
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317911"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188621"
 ---
 # <a name="configure-identity-protection-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定 Identity Protection 設定
 
@@ -45,8 +46,8 @@ Identity Protection 設定檔控制如何在 Windows 10 受控裝置上佈建及
 5. 從 [平台] 下拉式清單中，選取 [Windows 10 及更新版本]。 只有執行 Windows 10 和更新版本的裝置支援 Windows Hello 企業版。
 6. 從 [設定檔類型] 下拉式清單中，選擇 [Identity Protection]。
 7. 在 [Windows Hello 企業版] 窗格上，從 [設定 Windows Hello 企業版] 的下列選項中選擇：
-    * 停用。 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法使用。
-    * 啟用。 如果您想要設定 Windows Hello 企業版設定，請選取此設定。  
+    * 停用。 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法停用。
+    * 已啟用。 如果您想要設定 Windows Hello 企業版設定，請選取此設定。  
 
 8. 如果在前一步驟選取了 [啟用]，請設定將套用到已註冊之 Windows 10 與 Windows 10 行動裝置版目標裝置和使用者所需的設定。
 
