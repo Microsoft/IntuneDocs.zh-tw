@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5020b1653dd92587805e471e80808e34f3007a84
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494025"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187339"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
@@ -53,7 +54,7 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 > [!Important]  
 > 每個 Power BI 檔案 (pbix) 可能會根據租用戶位置而有所不同。 如果您要管理多個 Intune 租用戶，請務必使用登入該租用戶時從 Azure 入口網站下載的檔案。  
 
-1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
+1.  登入 Azure 入口網站並選擇 [監視 + 管理] >[Intune] ****。 您也可以搜尋  **Intune** 的資源。  
 2.  開啟 [Microsoft Intune 資料倉儲 API (預覽)] 刀鋒視窗。
 3.  選取 [Download PowerBI file] (下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
 4.  使用 Power BI 開啟檔案。 「Intune 資料倉儲報表」 即會載入，但可能需要一秒才能取得租用戶資料。
@@ -64,7 +65,7 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 使用向 Azure AD 驗證的用戶端，OData URL 會連線至資料倉儲 API 中向報告用戶端公開資料模型的 RESTful 端點。 請遵循這些指示，使用 Power BI Desktop 連線並建立您自己的報表。 您不是只能使用 Power BI Desktop，但可以搭配使用最愛的分析工具與 OData URL，但前提是用戶端支援 OAUTH2.0 驗證和 OData 4.0 版標準。
 
-1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
+1.  登入 Azure 入口網站並選擇 [監視 + 管理] >[Intune] ****。 您也可以搜尋  **Intune** 的資源。  
 2.  開啟 [Microsoft Intune 資料倉儲 API (預覽)] 刀鋒視窗。
 3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`。
 4. 開啟 [Power BI Desktop]。

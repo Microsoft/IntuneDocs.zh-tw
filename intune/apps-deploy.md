@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610102"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267249"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -65,6 +66,8 @@ ms.locfileid: "51610102"
 
      > [!NOTE]
      > **僅限 iOS 應用程式**：如果您已建立包含個別應用程式 VPN 設定的 iOS VPN 設定檔，便可以在 [VPN] 下選取該 VPN 設定檔。 應用程式執行時，即會開啟 VPN 連線。 如需詳細資訊，請參閱 [iOS 裝置的 VPN 設定](vpn-settings-ios.md)。
+     >
+     > **僅限 Android 應用程式**：如果您將 Android 應用程式部署為 [無論是否已註冊皆可使用]，則只有已註冊的裝置可提供報告狀態。
 
 9. 若要選取受此應用程式指派影響的使用者群組，請選取 [包含的群組]。
 10. 當您選取要包含的一個或多個群組之後，選取 [選取]。
@@ -119,6 +122,6 @@ ms.locfileid: "51610102"
 > 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。<br><br>
 > 以必要用途為目標的 iOS 市集應用程式 (不是 iOS VPP 應用程式) 會在裝置簽入時於裝置上強制執行，而且也會顯示在公司入口網站應用程式中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 若要深入了解監視應用程式指派，請參閱[如何監視應用程式](apps-monitor.md)。

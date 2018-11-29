@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2b6ae135f298f4632d35db756f6f2d7e7e6a1730
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 69f347b3e59ca9dfe3f05c9a60dd44c257d485fb
+ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679231"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281117"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>設定 Microsoft Intune 中執行 Windows 8.1 之裝置的 VPN 設定
 
@@ -86,7 +87,7 @@ ms.locfileid: "50679231"
 ## <a name="proxy-settings"></a>Proxy 設定
 
 - **自動偵測 Proxy 設定** - 若您的 VPN 伺服器需要 Proxy 伺服器才能連線，請指定您的裝置是否需要自動偵測連線設定。 如需詳細資訊，請參閱 Windows Server 文件。
-- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含組態設定檔的 [Proxy 伺服器 URL] (例如 `** http://proxy.contoso.com**`)。
+- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL]。 例如，輸入 `http://proxy.contoso.com`。
 - **使用 proxy 伺服器** - 若要手動輸入 Proxy 伺服器設定，可啟用此選項。
     - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
     - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。

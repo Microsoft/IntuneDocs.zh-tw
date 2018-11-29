@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425014"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179063"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -117,9 +118,9 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 如果使用者尚未獲指派 Intune 授權，或者組織的 MDM 授權單位尚未設定為 Intune，則使用者看不到任何註冊選項。
 
-如果使用者已獲指派 Intune 授權，而且組織的 MDM 授權單位已設定為 Intune：
+如果使用者已獲指派 Intune 授權，組織的 MDM 授權單位即已設定為 Intune：
 
-- Windows 7 或 Windows 8 電腦使用者下載並安裝組織特有的電腦用戶端軟體，才會看到註冊 Intune 選項。
+- Windows 7 或 Windows 8 電腦使用者看到的 Intune 註冊選項只有下載並安裝組織特有的電腦用戶端軟體。
 
 - 會向 Windows 10 或 Windows 8.1 電腦使用者顯示兩個註冊選項︰
 
@@ -256,7 +257,7 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 取消註冊程序不會移除 [OnlineManagement] 資料夾。 解除安裝之後請等候 30 分鐘，然後執行此命令。 如果太早執行，解除安裝程序可能會停留在未知狀態。 若要移除資料夾，請啟動已提高權限的命令提示字元並執行：
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>接下來的步驟
 [使用 Microsoft Intune 管理裝置](device-management.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310567"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181117"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
@@ -38,7 +39,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 > [!NOTE]
 > 如果設定以 Microsoft Intune 原則及群組原則管理同一台電腦的相同設定，群組原則設定會覆寫 Microsoft Intune 原則設定。 如需如何避免 Intune 原則與群組原則產生衝突的詳細資訊，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果您想要將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800)。
+> 如果您想將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800)。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火牆，請確定您所管理的電腦上已啟用下列兩項服務：
@@ -79,7 +80,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 所有這些設定的預設值都是 [是]，亦即最安全的值。
 
 > [!IMPORTANT]
-> 如果您環境中所包含的受管理電腦，執行未安裝 Service Pack 的 Windows Vista ，則您必須安裝與 Microsoft 知識庫[文章編號 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相關聯的更新，或者停用部署至那些電腦之原則中的 **[阻擋所有連入連線]** 原則設定。
+> 如果您環境中包含執行 Window Vista 但未安裝 Service Pack 的電腦，則您必須安裝與 Miscrosoft 知識庫中[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 的相關更新，或是停用部署到該電腦之原則中的 [封鎖所有連入連線] 原則設定。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>當 Windows 防火牆阻擋新程式時通知使用者
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231392"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180140"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
@@ -83,7 +84,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 您需要新增包含所有執行 SEP Mobile 之裝置的 Azure AD 安全性群組。
 
--  輸入並選取所有執行 SEP Mobile 之裝置的安全性群組，然後儲存變更。
+-  請輸入並選取所有執行 SEP Mobile 之裝置的安全性群組，然後儲存變更。
 
     ![顯示 SEP Mobile 應用程式使用者群組的影像](./media/symantec-portal-basic-groups.png)   
 

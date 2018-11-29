@@ -13,17 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231350"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180573"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中監視內部部署 Exchange 和 Exchange Online 的條件式存取合規性
 
-從 Intune 1704 版本開始，系統管理員可以透過內部部署 Exchange Connector 或 Intune Service to Service Connector (Exchange Online Connector)，查看與 Intune 同步處理的 Exchange ActiveSync 裝置記錄相關的報告資訊。 條件式存取合規性報告提供包含不同同步處理狀態的裝置摘要：
+從 Intune 1704 版本開始，系統管理員可透過內部部署 Exchange Connector 或 Intune 服務與服務連接器 (Exchange Online 連接器)，查看與 Intune 同步的 Exchange ActiveSync 裝置記錄相關報告資訊。 條件式存取合規性報告會提供包含不同同步狀態的裝置摘要：
 
 -   **允許**
 
@@ -37,9 +38,9 @@ ms.locfileid: "48231350"
 
 2.  成功登入之後，您會看到 [Azure 儀表板]。
 
-3.  選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
+3.  選擇左功能表中的 [所有服務] **** ，然後在文字方塊篩選中輸入  **Intune** 。
 
-4.  選擇 [Intune]，您會看到 [Intune 儀表板]。
+4.  選擇 [Intune] ****，您會看到 [Intune 儀表板]。
 
 5.  選擇 [條件式存取]，然後選擇 [概觀]。
 
@@ -49,7 +50,7 @@ ms.locfileid: "48231350"
 
 一旦您選擇三個區域的其中一個，就可以查看有關已允許、封鎖或隔離之裝置的更多詳細資料。
 
-您也可以針對特定裝置向下鑽研，以查看更多詳細資料。 例如，下列影像上所選擇的裝置已被封鎖。 Intune 提供您從 [條件式存取相容性報告] 窗格移除公司資料的選項。
+您也可以深入鑽研特定裝置，以查看更多詳細資料。 例如，下列影像上所選擇的裝置已被封鎖。 Intune 提供您從 [條件式存取相容性報告] 窗格移除公司資料的選項。
 
 ![條件式存取裝置詳細資料報告的影像](./media/CA-reporting-intune-3.png)
 

@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744630"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186169"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 來遠端管理 Intune 裝置
 
@@ -58,7 +59,10 @@ ms.locfileid: "34744630"
 
 ![使用 TeamViewer 從遠端管理 Android 裝置：範例](./media/android-teamviewer.png)
 
-當您開始遠端工作階段，終端使用者會在其裝置的公司入口網站應用程式圖示上看到通知旗標。 當應用程式開啟時，也會顯示通知。 接著，使用者就能接受遠端協助要求。
+當您開始遠端工作階段時，使用者會在其裝置上的公司入口網站應用程式圖示上看到通知旗標。 當應用程式開啟時也會出現通知。 然後使用者就能接受遠端協助要求。
+
+> [!NOTE]
+> 使用「無使用者」方法 (例如 DEM 及 WCD) 註冊的 Windows 裝置不會在公司入口網站應用程式中顯示 TeamViewer 通知。 在這些情況下，建議使用 TeamViewer 入口網站來產生工作階段。
 
 在 TeamViewer 中，您可以在裝置上完成一系列動作，包括控制裝置。 對於您可以執行的作業之完整詳細資料，請參閱 [TeamViewer guidance](https://www.teamviewer.com/support/documents/) (TeamViewer 指導)。
 

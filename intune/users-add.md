@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 643f118414862e1644e6bb15d56a8e903d958d0c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 76721710f266ff5f25dca763d7b6cca561050610
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254168"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184568"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -110,7 +111,7 @@ ms.locfileid: "44254168"
 若要存取 Office 365 入口網站，您的帳戶必須已設定 [允許登入]。 在 Azure 入口網站的 [設定檔] 下，將 [封鎖登入] 設定為 [否] 以允許存取。 此狀態與獲得訂閱的授權有所區別。 根據預設，所有使用者帳戶的狀態均為 [已允許]。 沒有系統管理員權限的使用者可以使用 Office 365 入口網站來重設 Intune 密碼。
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>同步處理 Active Directory 並將使用者新增至 Intune
-您可以設定目錄同步處理，將使用者帳戶從內部部署 Active Directory 匯入到其中包括 Intune 使用者的 Microsoft Azure Active Directory (Azure AD)。 讓內部部署的 Active Directory 與所有 Azure Active Directory 服務連線，可更易於管理使用者身分識別。 您也可以設定單一登入功能，讓使用者的驗證體驗親切又簡單。 透過連結同一個 [Azure AD 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)與多個服務，您之前已經同步的使用者帳戶就可用於所有雲端服務。
+您可設定目錄同步作業，將使用者帳戶從內部部屬 Active Directory 匯入 Microsoft Azure Active Directory (Azure AD) ，包括 Intune 使用者。 讓內部部署的 Active Directory 與所有 Azure Active Directory 服務連線，可更易於管理使用者身分識別。 您也可以設定單一登入功能，讓使用者的驗證體驗親切又簡單。 透過連結同一個 [Azure AD 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)與多個服務，您之前已經同步的使用者帳戶就可用於所有雲端服務。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>如何將內部部署使用者與 Azure AD 同步
 同步處理使用者帳戶與 Azure AD 唯一需要的工具是 [Azure AD Connect 精靈](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 精靈提供簡單和引導式的體驗，將內部部署身分識別基礎結構連線至雲端。 選擇您的拓撲和需求 (單一或多個目錄、密碼雜湊同步處理、傳遞驗證或同盟)。 此精靈會部署並設定啟動及執行連線所需之所有元件。 包括︰同步處理服務、Active Directory 同盟服務 (AD FS)，以及 Azure AD PowerShell 模組。

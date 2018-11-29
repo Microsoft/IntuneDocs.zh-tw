@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9772e802be0fef75d60a6ae01835d18376b1eb22
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 68896a363cab37aabe9a597872da0fe75c44c473
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231368"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267232"
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 
@@ -29,7 +30,7 @@ ms.locfileid: "48231368"
 ## <a name="before-you-begin"></a>開始之前
 
 > [!NOTE]
-> 下列步驟必須在 [Zimperium MTD 主控台](https://staging2-console.zimperium.com)中完成。
+> 下列步驟必須在  [Zimperium MTD 主控台](https://sso.zimperium.com/signon/aad/)中完成。
 
 開始將 Zimperium 與 Intune 整合之前，請確定您有下列訂閱和認證：
 
@@ -61,7 +62,7 @@ Zimperium 應用程式授權程序如下：
 
 ## <a name="to-set-up-zimperium-integration"></a>設定 Zimperium 整合
 
-1.  請前往 [Zimperium MTD 主控台](https://staging2-console.zimperium.com)，並使用您的認證登入。
+1.  請前往  [Zimperium MTD 主控台](https://sso.zimperium.com/signon/aad/) ，並使用您的認證登入。
 
 2.  從左側功能表中選擇 [管理]。
 
@@ -69,16 +70,16 @@ Zimperium 應用程式授權程序如下：
 
 4.  選擇 [新增 MDM]，然後從 [MDM 提供者] 清單中選取 [Microsoft Intune]。
 
-5.  當您將 Microsoft Intune 設定為 MDM 服務後，[Microsoft Intune 設定] 視窗隨即快顯，請為以下各選項選擇 [新增 Azure Active Directory]：**Zimperium zConsole**、**zIPS iOS 和 Android 應用程式**，以授權 Zimperium 與 Intune 和 Azure AD 透過 Azure AD 單一登入進行通訊。
+5.  當您將 Microsoft Intune 設定為 MDM 服務後，會彈出 [Microsoft Intune 設定] ****  視窗，請為下列各選項選擇 [新增 Azure Active Directory] **** ：**Zimperium zConsole**、**zIPS iOS 及 Android 應用程式**，以授權 Zimperium 透過 Azure AD 單一登入與 Intune 及 Azure AD 通訊。
 
     > [!IMPORTANT]
     > 您必須新增 Zimperium zConsole、zIPS iOS 和 Android 應用程式以完成與 Intune 整合的程序。
 
-6.  選擇 [接受] 以授權 Zimperium 應用程式與 Intune 和 Azure Active Directory 進行通訊。
+6.  選擇 [接受] ****  以授權 Zimperium 應用程式與 Intune 及 Azure Active Directory 通訊。
 
 7.  將 **Zimperium zConsole** 與 **zIPS iOS 和 Android** 應用程式新增至 Azure AD 後，請新增 Azure AD 安全性群組。 此新增可讓 Zimperium 與服務同步處理 Azure AD 安全性群組。
 
-8.  選擇 [完成] 以儲存設定並啟動第一次 Azure AD 安全性群組同步處理。
+8.  選擇 [完成] **** 以儲存設定，並啟動第一次 Azure AD 安全性群組同步。
 
 ## <a name="next-steps"></a>接下來的步驟
 

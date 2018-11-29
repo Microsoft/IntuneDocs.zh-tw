@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254066"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181491"
 ---
 # <a name="configure-a-custom-domain-name"></a>設定自訂網域名稱
 
@@ -32,7 +33,7 @@ ms.locfileid: "44254066"
 
 建立使用者帳戶或同步處理內部部署 Active Directory 之前，強烈建議您先決定只要使用 .onmicrosoft.com 網域，還是要新增一或多個自訂網域名稱。 先設定自訂網域再新增使用者，可簡化使用者管理。 這會讓使用者用他們存取其他網域資源的認證登入。
 
-當您向 Microsoft 訂閱雲端式服務時，該服務的執行個體會變成 Microsoft [Azure AD 租用戶](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)，這為您的雲端式服務提供身分識別和目錄服務。 此外，由於將 Intune 設定為使用組織自訂網域名稱的工作，與處理其他 Azure AD 租用戶的工作相同，您可以使用[新增您的網域](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)中的資訊和程序。
+當您向 Microsoft 訂閱雲端式服務時，該服務的執行個體會變成 Microsoft [Azure AD 租用戶](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)，這為您的雲端式服務提供身分識別和目錄服務。 此外，由於將 Intune 設定為使用組織自訂網域名稱的工作與其他 Azure AD 租用戶相同，因此您可使用在[新增您的網域](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) 中找到的資訊和程序。
 
 > [!TIP]
 > 若要深入了解自訂網域，請參閱 [Azure Active Directory 中的自訂網域名稱的概念式概觀](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)。

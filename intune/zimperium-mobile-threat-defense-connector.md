@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231469"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187450"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Zimperium Mobile Threat Defense 連接器
 
@@ -58,7 +59,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 
-偵測網路中的「攔截式攻擊」等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
+偵測網路中 **中間人攻擊** 等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
 
 **封鎖透過 Wi-Fi 的網路存取︰**
 
@@ -70,7 +71,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
 
-偵測網路中的「攔截式攻擊」等威脅，並根據裝置風險防止對公司檔案進行同步處理。
+偵測網路中 **中間人攻擊** 等威脅，並根據裝置風險防止同步公司檔案。
 
 **偵測到網路威脅時封鎖 SharePoint Online：**
 
@@ -94,7 +95,7 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 -   Zimperium Mobile Threat Defense 訂用帳戶
 
-    -   如需詳細資訊，請參閱 [Zimperium 網站](https://www.zimperium.com/zips-mobile-ips)。
+    -   如需詳細資訊，請參閱  [Zimperium 網站](https://www.zimperium.com/zips-mobile-ips) 。
 
 ## <a name="next-steps"></a>接下來的步驟
 
