@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186319"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618181"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ ms.locfileid: "52186319"
 ## <a name="before-you-begin"></a>開始之前
 
 - 從連線到該網路的電腦複製程式碼可能比較容易，如本文稍後所述。
-- 若是 Android，您也可以使用 [Android PSK 產生器](http://intunepskgenerator.johnathonb.com/)。
 - 您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
-- 若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。 或者使用 [iOS PSK 行動設定產生器](http://intunepskgenerator.johnathonb.com/)。
+- 若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。
 - PSK 需要 64 個十六進位數字的字串，或是 8 到 63 個可列印 ASCII 字元的複雜密碼。 不支援某些字元，例如星號 (*)。
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔
