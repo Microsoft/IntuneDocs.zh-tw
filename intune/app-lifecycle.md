@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: a23f5fb9e05cf9a7fe46456b642aef76b6a79b70
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
+ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183106"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52887044"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的應用程式生命週期概觀
 
@@ -54,6 +54,6 @@ Intune 提供您許多方法來協助保護您的應用程式中的資料。 主
 
 最後，您部署的應用程式很可能會過時，因此必須移除。 Intune 可讓您輕鬆地[從服務淘汰應用程式](device-management.md)。
 
-## <a name="next-steps"></a>後續步驟：
+## <a name="next-steps"></a>接下來的步驟
 
 - 深入了解 [Microsoft Intune 應用程式管理](app-management.md)

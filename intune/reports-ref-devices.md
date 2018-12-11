@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181441"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112920"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -316,7 +316,7 @@ ms.locfileid: "52181441"
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-**MdmDeviceInventoryHistories** 實體包含過去 90 天內 MDM 管理裝置的清查資料每日快照集。 DateKey 資料行指出資料列是哪一天。 部分屬性可能不適合或無法填入所有裝置，詳細資料請參閱此頁面。 如需詳細資訊，請參閱[在 Microsoft Intune 透過清查了解您的裝置](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)。
+**MdmDeviceInventoryHistories** 實體包含過去 90 天內 MDM 管理裝置的清查資料每日快照集。 DateKey 資料行指出資料列是哪一天。 部分屬性可能不適合或無法填入所有裝置，詳細資料請參閱此頁面。 如需詳細資訊，請參閱[在 Microsoft Intune 透過清查了解您的裝置](device-inventory.md)。
 
 | 屬性  | 說明 |
 |---------|------------|
