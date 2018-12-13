@@ -1,12 +1,12 @@
 ---
 title: 將 Win32 應用程式新增至 Microsoft Intune
 titlesuffix: ''
-description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
+description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 此主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,28 +16,24 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187288"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829142"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
-Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
+Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 此主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
 
 ## <a name="prerequisites-for-public-preview"></a>公開預覽的必要條件
 
-- Windows 10 版本 1607 或更新版本 (企業版)
+- Windows 10 1607 版或更新版本 (企業、專業與評估版)
 - Windows 10 用戶端必須： 
     - 加入 Azure Active Directory (AAD) 或混合式 Azure Active Directory，並
     - 在 Intune (MDM 受控) 中註冊
 - 在公開預覽中，Windows 應用程式的大小上限為每個應用程式 8 GB 
-
-> [!NOTE]
-> 我們目前正在測試 Windows 10 版本 1607 專業版和教育版，並且樂於聆聽您的意見反應。
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>準備要上傳的 Win32 應用程式內容
 
@@ -186,7 +182,7 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
     - **使用自訂偵測指令碼** – 指定要用於偵測應用程式的 PowerShell 指令碼。 
     
         1.  **指令碼檔案** – 選取將偵測用戶端上是否存在應用程式的 PowerShell 指令碼。 當指令碼傳回 0 值結束代碼，並將字串值寫入 STDOUT 時，便會偵測到應用程式。
-        2.  **在 64 位元用戶端上作為 32 位元處理序執行** – 選取 [是] 來使用登入終端使用者的認證執行指令碼。 選取 [否] 來在系統內容中執行指令碼 (預設值)。
+        2.  **在 64 位元用戶端上作為 32 位元處理序執行** - 選取 [是] 來使用登入終端使用者的認證執行指令碼。 選取 [否] 來在系統內容中執行指令碼 (預設值)。
         3.  [Enforce script signature check]**強制指令碼簽章檢查** – 選取 [是] 來驗證指令碼是否是由信任的發佈者簽署，允許指令碼在不顯示警告或提示的情況下執行指令碼。 指令碼會在解除封鎖的情況下執行。 選取 [否] 來在不進行簽章驗證的情況下，透過終端使用者確認來執行指令碼 (預設值)。
     
         Intune Sidecar 會檢查指令碼的結果。 它會讀取指令碼寫入到標準輸出 (STDOUT) 串流、標準錯誤 (STDERR) 串流及結束代碼的值。 如果指令碼以非零值結束，代表指令碼執行失敗，且應用程式偵測狀態為未安裝。 如果結束代碼為零而 STDOUT 含有資料，表示應用程式偵測狀態是「已安裝」。 
@@ -227,6 +223,10 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 8.  在應用程式 [指派] 窗格中，選取 [儲存]。
 
 此時，您已完成將 Win32 應用程式新增至 Intune 的步驟。 如需應用程式指派和監視的資訊，請參閱[使用 Microsoft Intune 指派應用程式給群組](https://docs.microsoft.com/intune/apps-deploy)和[使用 Microsoft Intune 監視應用程式資訊和指派](https://docs.microsoft.com/intune/apps-monitor)。
+
+## <a name="delivery-optimization"></a>傳遞最佳化
+
+Windows 10 RS3 與更新版本的用戶端將會使用 Windows 10 用戶端上的傳遞最佳化元件來下載 Intune Win32 應用程式內容。 傳遞最佳化提供預設開啟的同儕節點對同儕節點功能。 傳遞最佳化可以由群組原則進行設定，在未來也將能透過 Intune MDM 進行設定。 如需詳細資訊，請參閱[適用於 Windows 10 的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) \(部分機器翻譯\)。 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>在裝置上安裝必要和可用應用程式
 
