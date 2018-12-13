@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180981"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579161"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證
 
@@ -43,8 +43,7 @@ ms.locfileid: "52180981"
   - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
   - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 從群組指派中移除合規性原則
-  - 從群組指派中移除組態設定檔
+  - 已從群組指派中移除憑證設定檔
 
 - 在下列情況中，系統會撤銷 SCEP 憑證：
   - 系統管理員變更或更新 SCEP 設定檔
@@ -53,7 +52,6 @@ ms.locfileid: "52180981"
   - 終端使用者取消註冊
   - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從群組指派中移除合規性原則
 
 - 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
   - 終端使用者遺失 Intune 授權
@@ -78,8 +76,7 @@ ms.locfileid: "52180981"
   - 系統管理員撤銷 Intune 授權
   - 系統管理員從 Azure AD 移除使用者或群組
   - 系統管理員變更或更新 PKCS 設定檔
-  - 從群組指派中移除組態設定檔
-  - 從群組指派中移除合規性原則 
+  - 已從群組指派中移除憑證設定檔
 
 
 ## <a name="ios-devices"></a>iOS 裝置
@@ -92,8 +89,7 @@ ms.locfileid: "52180981"
   - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
   - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 從群組指派中移除合規性原則
-  - 從群組指派中移除組態設定檔
+  - 已從群組指派中移除憑證設定檔
 
 - 在下列情況中，系統會撤銷 SCEP 憑證：
   - 系統管理員變更或更新 SCEP 設定檔
@@ -102,7 +98,6 @@ ms.locfileid: "52180981"
   - 終端使用者取消註冊
   - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從群組指派中移除合規性原則
 
 - 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
   - 終端使用者遺失 Intune 授權
@@ -118,8 +113,7 @@ ms.locfileid: "52180981"
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
 
 - 在下列情況中，系統會移除 PKCS 憑證：
-  - 從群組指派中移除合規性原則
-  - 從群組指派中移除組態設定檔
+  - 已從群組指派中移除憑證設定檔
   
 - 在下列情況中，系統會移除根憑證：
   - 終端使用者取消註冊
@@ -143,8 +137,7 @@ ms.locfileid: "52180981"
 - 在下列情況中，系統會撤銷 SCEP 憑證：
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
   - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 從群組指派中移除合規性原則
-  - 從群組指派中移除組態設定檔
+  - 已從群組指派中移除憑證設定檔
   - 系統管理員從 Azure Active Directory (AD) 移除使用者或群組
   - 系統管理員變更或更新 SCEP 設定檔
 
@@ -176,8 +169,7 @@ ms.locfileid: "52180981"
   - 系統管理員撤銷 Intune 授權
   - 系統管理員從 Azure AD 移除使用者或群組
   - 系統管理員變更或更新 PKCS 設定檔
-  - 從群組指派中移除組態設定檔
-  - 從群組指派中移除合規性原則 
+  - 已從群組指派中移除憑證設定檔
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ ms.locfileid: "52180981"
   - 終端使用者取消註冊
   - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
   - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 從群組指派中移除合規性原則
-  - 從群組指派中移除組態設定檔
+  - 已從群組指派中移除憑證設定檔
 
 - 在下列情況中，系統會撤銷 SCEP 憑證：
   - 系統管理員變更或更新 SCEP 設定檔

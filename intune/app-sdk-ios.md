@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181330"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630046"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -199,8 +199,9 @@ Intune App SDK 針對其驗證和條件式啟動案例使用 [Azure Active Direc
 
 3. 另外在 **IntuneMAMSettings** 字典下的索引鍵名稱 `ADALRedirectUri` 處，指定要用於呼叫 ADAL 的重新導向 URI。 此外，若應用程式的重新導向 URI 格式為 `scheme://bundle_id`，您也可以改為指定 `ADALRedirectScheme`。
 
-
 此外，應用程式可以在執行階段覆寫這些 Azure AD 設定。 若要這樣做，請設定 `IntuneMAMPolicyManager` 執行個體上的 `aadAuthorityUriOverride`、`aadClientIdOverride` 與 `aadRedirectUriOverride` 屬性。
+
+4. 請務必遵循將您的 iOS 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中＜將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)＞中的指示。  
 
 > [!NOTE]
 > 建議您為靜態且不需要在執行階段決定的所有設定使用 Info.plist 方法。 指派給 `IntuneMAMPolicyManager` 屬性之值的優先順序高於在 Info.plist 中指定的對應值，而且在應用程式重新啟動之後仍然存在。 SDK 將會繼續為原則簽入使用它們，直到使用者取消註冊或值被清除或變更。

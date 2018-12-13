@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186067"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729036"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  
@@ -61,6 +61,16 @@ ms.locfileid: "52186067"
 2. 將滑鼠移到清單中的設定檔上方。
 3. 使用三個垂直點，將設定檔拖曳到所要的清單位置。
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>封鎖對裝置的存取，直到已安裝特定應用程式
+
+您可以指定需要先安裝哪些應用程式，使用者才能存取桌面。
+
+1. 在 Intune 中，選擇 [裝置註冊] > [Windows 註冊] > [註冊狀態頁面 (預覽)]。
+2. 選擇定檔 > [設定]。
+3. 對於 [顯示應用程式與設定檔的安裝進度]，選擇 [是]。
+4. 對於 [所有應用程式與設定檔未完成安裝之前，禁止使用裝置]，選擇 [是]。
+5. 對於 [若這些必要的應用程式已指派給使用者/裝置，請在安裝這些應用程式之前，封鎖裝置使用它們]，選擇 [已選取]。
+ 6. 選擇 [選取應用程式] > 選擇應用程式 > [選取] > [儲存]。
 
 ## <a name="enrollment-status-page-tracking-information"></a>註冊狀態頁面追蹤資訊
 

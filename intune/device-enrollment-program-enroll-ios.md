@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 650a358281f89c511bbd56f3807f2ef4a6ba582c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94e7bc3e3b936489ea34170616d1ab0ad49bafd3
+ms.sourcegitcommit: 8ddd3b0d4636a4516b2a05fa83c60ec111903c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190348"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52546035"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -139,7 +139,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
     ![[使用 VPP 安裝公司入口網站] 的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. 如果您為 [使用 VPP 安裝公司入口網站] 選擇權杖，您可以選擇在設定助理完成之後，立即以單一應用程式模式 (具體來說就是公司入口網站應用程式) 鎖定裝置。 在 [Run Company Portal in Single App Mode until authentication] \(驗證前以單一應用程式模式執行公司入口網站\) 選擇 [是]，設定此選項。 若要使用裝置，使用者必須先使用公司入口網站登入進行驗證。
-    在 iOS 11.3.1 和更新版本中，此功能的執行效果最佳。 使用舊版可能需要很長的時間安裝。
+    此功能僅針對 iOS 11.3.1 和更新版本支援。
 
 8. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
 

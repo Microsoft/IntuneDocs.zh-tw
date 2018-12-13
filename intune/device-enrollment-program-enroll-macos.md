@@ -1,12 +1,12 @@
 ---
-title: 註冊 macOS 裝置 - 裝置註冊計劃
+title: 註冊 macOS 裝置 - 裝置註冊計劃或 Apple School Manager
 titleSuffix: Microsoft Intune
 description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 macOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180760"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728747"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 macOS 裝置
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-此文章將協助您針對透過 Apple 的[裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的裝置設定 macOS 裝置註冊。 您可以在完全不需要接觸的情況下，設定大量裝置的 DEP 註冊。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
+本文將協助您針對透過 Apple 的[裝置註冊計劃 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 購買的裝置設定 macOS 裝置註冊。 針對大量裝置，這兩種註冊您都可以使用，且不需要實際取得裝置。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
 
-若要設定 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
+若要設定註冊，您要使用 Intune 與 Apple DEP 入口網站。 您可以建立註冊設定檔，其中包含在註冊期間套用至裝置的設定。
 
-DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)或 [Apple School Manager](apple-school-manager-set-up-ios.md) 搭配使用。
+DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-enrollment-manager-enroll.md)搭配使用。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)�
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>必要條件
-- [Apple 的裝置註冊計劃](http://deploy.apple.com)中所購買的裝置
+- 在 [Apple School Manager](https://school.apple.com/) 或 [Apple 的裝置註冊計劃](http://deploy.apple.com)中購買的裝置
 - 序號或採購單號碼的清單。 
 - [MDM 授權單位](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>取得 Apple DEP 權杖
 
-您必須先從 Apple 取得 DEP 權杖 (.p7m) 檔案，才能為 macOS 裝置註冊 DEP。 此權杖可讓 Intune 同步貴公司所擁有的 DEP 裝置資訊。 它也讓 Intune 得以將註冊設定檔上傳至 Apple，並將這些設定檔指定給裝置。
+您需要來自 Apple 的 DEP 權杖 (.p7m) 檔案，才能使用 DEP 或 Apple School Manager 註冊 macOS 裝置。 此權杖可讓 Intune 同步處理您組織所擁有的裝置相關資訊。 它也讓 Intune 得以將註冊設定檔上傳至 Apple，並將這些設定檔指定給裝置。
 
-您可以使用 Apple DEP 入口網站建立 DEP 權杖。 您也可以使用 DEP 入口網站將裝置指派給 Intune 以便管理。
+您會使用 Apple 入口網站來建立權杖。 您也可以使用 Apple 入口網站將裝置指派給 Intune 進行管理。
 
 > [!NOTE]
-> 若在移轉至 Azure 之前從 Intune 傳統入口網站刪除了權杖，Intune 可能會還原已刪除的 Apple DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。
+> 若在移轉至 Azure 之前從 Intune 傳統入口網站刪除了權杖，Intune 可能會還原已刪除的 Apple 權杖。 您可以從 Azure 入口網站再次刪除該權杖。
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步驟 1： 下載建立權杖所需的 Intune 公開金鑰憑證。
 
@@ -66,15 +66,14 @@ DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)�
 
    ![[Apple 憑證] 工作區中 [註冊計劃權杖] 窗格下載公開金鑰的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. 選擇 [下載您的公開金鑰]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 裝置註冊程式入口網站要求信任關係憑證。
+3. 選擇 [下載您的公開金鑰]，在本機下載並儲存加密金鑰 (.pem) 檔案。 這個 .pem 檔案會用於向 Apple 入口網站要求信任關係憑證。
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>步驟 2： 使用您的金鑰，下載來自 Apple 的權杖。
 
-1. 選擇 [建立 Apple 裝置註冊計劃的權杖] 以開啟 Apple 的部署計劃入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
-2.  在 Apple 的[部署計劃入口網站](https://deploy.apple.com)，針對 [裝置註冊計劃] 選擇 [開始使用]。
-
-3. 在 [管理伺服器] 頁面上，選擇 [新增 MDM 伺服器]。
+1. 選擇 [建立 Apple 的裝置註冊計畫的權杖] 或 [透過 Apple School Manager 建立權杖] 來開啟適當的 Apple 入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新您的權杖。
+2.  對於 DEP，在 Apple 入口網站中，對於 [裝置註冊計劃] 選擇 [開始使用] > [管理伺服器] > [新增 MDM 伺服器]。
+3.  對於 Apple School Manage，在 Apple 入口網站中，選擇 [MDM 伺服器] > [新增 MDM 伺服器]。
 4. 輸入 [MDM 伺服器名稱]，然後選擇 [下一步] 。 您可參考這個伺服器名稱，以識別行動裝置管理 (MDM) 伺服器， 但它不是 Microsoft Intune 伺服器的名稱或 URL。
 
 5. [新增 &lt;服器名稱&gt;] 對話方塊隨即開啟，指出**上傳您的公用金鑰**。 選擇 [選擇檔案...] 以上傳 .pem 檔案，然後選擇 [下一步]。
@@ -89,9 +88,7 @@ DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)�
 
 8. 針對 [選擇動作] 選擇 [Assign to Server] (指派給伺服器))，然後選擇指定給 Microsoft Intune 的 &lt;伺服器名稱&gt;，再選擇 [確定]。 Apple 入口網站會將指定的裝置指派給 Intune 伺服器以便管理 ，然後顯示 [指派完成]。
 
-   在 Apple 入口網站中，移至 [部署計劃] &gt; [裝置註冊計劃] &gt; [檢視指派歷程記錄] 查看裝置及其 MDM 伺服器指派的清單。
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步驟 3： 儲存用以建立此權杖的 Apple ID。
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步驟 3： 儲存用以建立此權杖的 Apple ID
 
 在 Azure 入口網站的 Intune 中，提供 Apple ID 供日後參考。
 
@@ -102,7 +99,7 @@ DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)�
 
 ## <a name="create-an-apple-enrollment-profile"></a>建立 Apple 註冊設定檔
 
-安裝權杖之後，您可以為 DEP 裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
+安裝權杖之後，您可以為裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
 
 1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]。
 2. 選取權杖，選擇 [設定檔]，然後選擇 [建立設定檔]。
@@ -185,7 +182,7 @@ DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)�
 2. 選擇 [設定預設設定檔]、在下拉式清單中選擇設定檔，然後選擇 [儲存]。 此設定檔將套用到使用該權杖註冊的所有裝置。
 
 ## <a name="distribute-devices"></a>散發裝置
-您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的 DEP 裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 在抹除裝置前，已啟動的裝置無法套用註冊設定檔。
+您已啟用 Apple 與 Intune 之間的管理和同步，並指派設定檔以供您的裝置註冊。 您現在可以將裝置散發給使用者。 具有使用者親和性的裝置會需要為每個使用者指派 Intune 授權。 沒有使用者親和性的裝置需要裝置授權。 在抹除裝置前，已啟動的裝置無法套用註冊設定檔。
 
 ## <a name="renew-a-dep-token"></a>更新 DEP 權杖  
 1. 前往 deploy.apple.com。  

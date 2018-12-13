@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182001"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829091"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -40,7 +40,7 @@ ms.locfileid: "52182001"
       將在 Azure 入口網站中顯示的設定檔描述。
     - **裝置註冊類型**  
       選擇 [管理應用程式]。
-6. 選取 [相關聯的應用程式] **** ，選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
+6. 選取 [相關聯的應用程式]  來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 7. 對於應用程式支援的每個組態設定，請鍵入 [名稱] 和 [值]，然後選擇省略符號 (**...**)。  
     若要刪除設定，請選擇省略符號 (**...**)，然後選取 [刪除]。  
     

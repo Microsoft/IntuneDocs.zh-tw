@@ -13,18 +13,18 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185945"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728832"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中適用於 Windows 10 (和更新版本) 的 Kiosk 設定
 
 在 Windows 10 裝置上，您可以使用 Intune 來執行這些裝置作為 kiosk。 Kiosk 可以執行一或多個應用程式。 您也可以顯示和自訂 [開始] 功能表、新增不同的應用程式 (包括 Win32 應用程式)、將特定首頁新增至網頁瀏覽器，以及執行更多作業。 
 
-請使用本文中的步驟，在 Intune 中建立單一應用程式 kiosk 或多應用程式 kiosk。
+請使用此文章中的步驟，在 Intune 中建立單一應用程式 kiosk 或多應用程式 kiosk。
 
 Intune 針對每部裝置支援一個 kiosk 設定檔。 如果您需要在單一裝置上有多個 kiosk 設定檔，則可以使用[自訂 OMA-URI](custom-settings-windows-10.md)。
 
@@ -52,7 +52,7 @@ Intune 針對每部裝置支援一個 kiosk 設定檔。 如果您需要在單�
 
 - **使用者登入類型**：您新增的應用程式會以您所輸入使用者帳戶身分執行。 選項包括：
 
-  - **自動登入 (Windows 10 1803 版和更新版本)**：對外環境中的 kiosk 不需要使用者登入，其與來賓帳戶類似。 這項設定使用 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。
+  - **自動登入 (Windows 10 1803 版和更新版本)**：對外環境中的 kiosk 不需要使用者登入，其與來賓帳戶類似。 此設定使用 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。
   - **本機使用者帳戶**：輸入本機 (對裝置而言) 使用者帳戶。 您輸入的帳戶可用來登入 kiosk。
 
 - **應用程式類型**：選取 [市集應用程式]。
@@ -100,7 +100,7 @@ Intune 針對每部裝置支援一個 kiosk 設定檔。 如果您需要在單�
 
 - **使用者登入類型**：您新增的應用程式會以您所輸入使用者帳戶身分執行。 選項包括：
 
-  - **自動登入 (Windows 10 1803 版和更新版本)**：對外環境中的 kiosk 不需要使用者登入，其與來賓帳戶類似。 這項設定使用 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。
+  - **自動登入 (Windows 10 1803 版和更新版本)**：對外環境中的 kiosk 不需要使用者登入，其與來賓帳戶類似。 此設定使用 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。
   - **本機使用者帳戶**：[新增] 本機 (對裝置而言) 使用者帳戶。 您輸入的帳戶可用來登入 kiosk。
   - **Azure AD 使用者或群組 (Windows 10 1803 版和更新版本)**：選取 [新增] 以從清單中選擇 Azure AD 使用者或群組。 您可以選取多個使用者和群組。 選擇 [選取] 以儲存您的變更。
   - **HoloLens 訪客**：訪客帳戶是來賓帳戶，不需要任何使用者認證或驗證，如 [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) (共用電腦模式概念) 中所述。
@@ -200,3 +200,5 @@ Intune 針對每部裝置支援一個 kiosk 設定檔。 如果您需要在單�
 
 ## <a name="next-steps"></a>接下來的步驟
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+
+您也可以為 [Android](device-restrictions-android.md#kiosk) 與 [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 裝置建立 kiosk 設定檔。

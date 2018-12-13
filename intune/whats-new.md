@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190416"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829193"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,89 @@ ms.locfileid: "52190416"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日當週
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>在公司擁有的受監督 iOS 裝置上解除安裝應用程式 <!-- 1281677 -->
+
+您可以移除公司所擁有之受監督 iOS 裝置上的任何應用程式。 您可以透過針對具有**解除安裝**指派類型的使用者或裝置群組，來移除任何應用程式。 針對個人或不受監督的 iOS 裝置，您仍可以僅移除使用 Intune 安裝的應用程式。
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>下載 Intune Win32 應用程式內容 <!-- 2617320 -->
+Windows 10 RS3 和更新版本的用戶端，將會使用 Windows 10 用戶端上的「傳遞最佳化」元件來下載 Intune Win32 應用程式內容。 傳遞最佳化能提供預設開啟的點對點功能。 傳遞最佳化可以由群組原則進行設定，在未來也將能透過 Intune MDM 進行設定。 如需詳細資訊，請參閱[適用於 Windows 10 的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) \(部分機器翻譯\)。 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>終端使用者裝置和應用程式操作功能表 <!-- 2771453 -->
+終端使用者現在可以在裝置和應用程式上使用操作功能表，以觸發重新命名裝置或檢查合規性等常見動作。
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>在受控主畫面應用程式中設定自訂背景 <!-- 3041945 -->
+我們將新增一項設定，可讓您在 Android Enterprise、多應用程式、kiosk 模式裝置上自訂受控主畫面應用程式的背景外觀。  若要設定**自訂 URL 背景**，請前往 Azure 入口網站 > [裝置設定] 中的 Intune。 選取目前或建立一個新的裝置組態設定檔，來編輯其 kiosk 設定。
+若要查看 kiosk 設定，請參閱 [Android Enterprise 裝置限制](device-restrictions-android-for-work.md)。
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>會儲存並套用應用程式保護原則指派 <!-- 3104570 -->
+您將可以更有效控制[應用程式保護原則指派](app-protection-policies.md#deploy-a-policy-to-users)。 當您選取 [指派] 以設定或編輯某個原則的指派時，您必須先 [儲存] 設定，系統才會套用變更。 使用 [捨棄] 來清除您所做的所有變更，而不將任何變更儲存到包含或排除清單。  透過要求使用者進行 [儲存] 或 [捨棄]，將能確保系統只會將應用程式保護原則指派給您想要的使用者。
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>適用於 Windows 10 及更新版本的新 Microsoft Edge 瀏覽器設定 <!-- 3174639 -->
+此更新將會包含新的設定，以協助您控制和管理裝置上的 Microsoft Edge 瀏覽器。 如需這些設定的清單，請參閱[適用於 Windows 10 (及更新版本) 的裝置限制](device-restrictions-windows-10.md#microsoft-edge-browser)。
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>搭配應用程式保護原則的新應用程式支援 <!-- 3330037 -->
+您現在可以搭配 [Intune 應用程式保護原則](app-protection-policies.md)管理下列應用程式：
+- Stream (iOS)
+- To DO (Android、iOS)
+- PowerApps (Android、iOS)
+- Flow (Android、iOS)
+
+使用應用程式保護原則來保護公司資料，並以和其他 Intune 原則受管理的應用程式相同的方式控制這些應用程式的資料傳輸。 注意：如果 Flow 在主控台中尚不可見，您會在建立或編輯應用程式保護原則時新增 Flow。 若要這麼做，請使用 [+ 更多應用程式] 選項，然後在輸入欄位中指定 Flow 的 [應用程式識別碼]。 針對 Android，請使用 *com.microsoft.flow*，而針對 iOS 則請使用 *com.microsoft.procsimo*。
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 應用程式保護原則 UI 更新 <!-- 3251427 -->
+我們已變更 Intune 應用程式保護的設定和按鈕標籤，以使它們更容易理解。 部分變更包括：  
+
+- 控制項從 [是] / [否] 的控制項，變更成主要為 [封鎖] / [允許]****，以及 [停用] / [啟用] 的控制項。 標籤也一併更新。  
+- 設定已重新格式化，因此設定和其標籤會在控制項中並排顯示，提供更好的瀏覽。   
+
+預設設定和設定數量會保持相同，但這項變更可讓使用者更輕鬆了解、瀏覽和利用這些設定，以套用所選的應用程式保護原則。
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>顯示 iOS 和 macOS 版本號碼和組建編號 <!-- 1892471 -->
+在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 和 macOS 作業系統版本，並可用於合規性政策。 此更新包含可同時針對兩個平台設定的組建編號。
+發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 藉由在合規性政策中使用組建編號，即可輕鬆地檢查是否已安裝弱點更新。
+若要使用此功能，請參閱 [iOS](compliance-policy-create-ios.md#device-health) 和 [macOS](compliance-policy-create-mac-os.md#device-properties) 合規性原則。
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>針對 Windows 10 和更新版本，更新通道將由傳遞最佳化設定取代 <!-- 2753807 -->
+傳遞最佳化是適用於 Windows 10 和更新版本的新組態設定檔。 此功能可提供更加流暢的使用體驗，以將軟體更新傳遞到您組織中的裝置。 此更新也能協助您使用組態設定檔，在新的與現有的更新通道中傳遞設定。
+若要設定傳遞最佳化組態設定檔，請參閱 [Windows 10 (和更新版本) 的傳遞最佳化設定](delivery-optimization-windows.md)。
+
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>選取註冊狀態頁面上追蹤的應用程式<!-- 2531007 -->
+您可以選擇要在註冊狀態頁面上追蹤哪些應用程式。 在安裝這些應用程式之前，使用者將無法使用該裝置。 如需詳細資訊，請參閱[設定註冊狀態頁面](windows-enrollment-status.md)。
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>依序號搜尋 Autopilot 裝置 <!--2595788 -->
+您現在可以依序號搜尋 Autopilot 裝置。 若要這麼做，請選擇 [裝置註冊] > [Windows 註冊] > [裝置] > 在 [依序號搜尋] 方塊中輸入序號 > 按 Enter。
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>追蹤 Office 專業增強版的安裝 <!--2620217 -->
+使用者可以使用[註冊狀態頁面](windows-enrollment-status.md)來追蹤 [Office 專業增強版](apps-add-office365.md)的安裝進度。 如需詳細資訊，請參閱[設定註冊狀態頁面](windows-enrollment-status.md)。
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP 權杖將過期或公司入口網站授權將不足的警示<!-- 2237572 -->
+如果您在 DEP 註冊期間使用大量採購方案 (VPP) 預先佈建公司入口網站，則 Intune 會在 VPP 權杖即將過期以及公司入口網站授權即將不足時提醒您。
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>Apple School Manager 帳戶的 macOS 裝置註冊計劃 <!--3006133 -->
+Intune 現已支援在適用於 Apple School Manager 帳戶的 macOS 裝置上使用裝置註冊計劃。  如需詳細資訊，請參閱[使用 Apple School Manager 或裝置註冊計劃來自動註冊 macOS 裝置](device-enrollment-program-enroll-macos.md)。
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>新的 Intune 裝置訂閱 SKU <!--3312071-->
+為了協助降低企業中的裝置管理裝置成本，現在提供新的裝置型訂閱 SKU。 此 Intune 裝置 SKU 是依每月每部裝置來授權。 價格會因授權方案而有所不同。 直接通路、Enterprise 合約 (EA)、Microsoft 產品和服務計畫 (MPSA)，以及開放式和雲端解決方案提供者 (CSP) 都有提供。
+
+### <a name="device-management"></a>裝置管理
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>暫時暫停 Android 裝置上的 kiosk 模式以進行變更 <!-- 3041935 -->
+在多應用程式 kiosk 模式下使用 Android 裝置時，IT 系統管理員可能需要對裝置進行變更。 此更新包含新的多應用程式 kiosk 設定，允許 IT 系統管理員使用 PIN 暫時暫停 kiosk 模式，並存取整個裝置。
+若要查看 kiosk 設定，請參閱 [Android Enterprise 裝置限制](device-restrictions-android-for-work.md)。
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>啟用 Android Enterprise kiosk 裝置上的虛擬首頁按鈕 <!-- 3042021 -->
+新設定可讓使用者點選其裝置上的螢幕按鍵按鈕，以在其多應用程式 kiok 裝置上的受控主畫面應用程式和其他已指派應用程式之間切換。 在使用者的 kiosk 應用程式未對「返回」按鈕做出適當回應情況下，此設定特別有用。 您將能夠為公司擁有的一次性 Android 裝置設定此設定。 若要啟用或停用**虛擬首頁按鈕**，請前往 Azure 入口網站 > 裝置設定中的 Intune。 選取目前或建立一個新的裝置組態設定檔，來編輯其 kiosk 設定。
+若要查看 kiosk 設定，請參閱 [Android Enterprise 裝置限制](device-restrictions-android-for-work.md)。
 
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日當週
 
@@ -84,7 +167,7 @@ Intune 的 iOS 電子郵件設定檔支援 iOS 12 Open Authorization (OAuth)。 
 
 ### <a name="device-configuration"></a>裝置設定
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN 用戶端上的網路存取控制支援 <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>iOS VPN 用戶端上的網路存取控制支援 <!-- 1333693 -->
 透過此更新，您可以在為 Cisco AnyConnect、F5 Access 和 Citrix SSO for iOS 建立 VPN 設定檔時啟用網路存取控制 (NAC)。 此設定可讓裝置的 NAC 識別碼包含在 VPN 設定檔中。 目前尚沒有任何支援此新 NAC 識別碼的 VPN 用戶端或 NAC 合作夥伴解決方案；當提供支援時，我們將透過[支援部落格文章](ttps://aka.ms/iOS12_and_vpn)通知您。
 
 若要使用 NAC，您將需要：
@@ -146,9 +229,6 @@ Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Mi
   
 設定的功能不會變更，但可讓您在處理原則編寫流程時更容易找到。
 
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Microsoft Intune 裝置訂閱 SKU！--3312071-->
-為了協助降低企業中的裝置管理裝置成本，現在提供新的裝置型訂閱 SKU。 此 Intune 裝置 SKU 是依每月每部裝置來授權。 價格會因授權方案而有所不同。 直接通路、Enterprise 合約 (EA)、Microsoft 產品和服務計畫 (MPSA)，以及開放式和雲端解決方案提供者 (CSP) 都有提供。
-
 ### <a name="intune-apps"></a>Intune 應用程式
 
 #### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>針對 LOB 應用程式，Intune 將支援最大 8 GB 套件大小 <!-- 1727158 -->
@@ -173,7 +253,7 @@ Intune 會將企業營運 (LOB) 應用程式的最大套件大小增加為 8 GB�
 
 如需詳細資訊，請參閱＜如何取得 Microsoft Intune 支援＞中的[新說明及支援體驗](get-support.md#new-help-and-support-experience)。  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>適用於 Intune 的 PowerShell 模組 - 現供預覽 <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>適用於 Intune 的 PowerShell 模組 - 現供預覽 <!-- 951068 -->
 新的 PowerShell 模組透過 Microsoft Graph 支援 Intune API，現在於 [GitHub]( https://aka.ms/intunepowershell) 上提供預覽。 如需如何使用此模組的詳細資料，請參閱該位置的讀我檔案。 
 
 
@@ -355,7 +435,7 @@ Intune 註冊、公司入口網站及受控瀏覽器現在只支援執行 iOS 10
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>macOS 公司入口網站安裝程式現在會在安裝程式檔案名稱中包含版本號碼 <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS 自動應用程式更新 <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>iOS 自動應用程式更新 <!-- 2729759 -->
 自動應用程式更新適用於 iOS 11.0 版和更新版本的裝置和使用者授權應用程式。
 
 
@@ -733,7 +813,7 @@ Intune 目前可以擷取商務用 Microsoft Store (WSfB) 應用程式的應用�
 
 ### <a name="device-enrollment"></a>裝置註冊
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>支援 Windows Autopilot 註冊而不需要使用者驗證 <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>支援 Windows Autopilot 註冊而不需要使用者驗證 <!-- 1165118 -->
 Intune 現在支援 Windows Autopilot 註冊，而不需要使用者驗證。 這是 Windows Autopilot 部署設定檔中 [Autopilot 部署模式] 設為 [自我部署] 的新選項。  裝置必須執行 Windows 10 Insider Preview 組建 17672 或更新版本，並擁有 TPM 2.0 晶片才能成功完成此類型的註冊。 由於不需要任何使用者驗證，您只應將此選項指派給您擁有實體控制權的裝置。
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>針對 Autopilot 設定 OOBE 時的新語言/地區設定 <!-- 1821766 -->
@@ -781,7 +861,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>將所有使用者和所有裝置指派為範圍群組 <!-- 2196803 -->
 您現在能以範圍群組的形式指派所有使用者、所有裝置，以及所有使用者和所有裝置。 若要這樣做，請選擇 [Intune 角色] > [所有角色] > [原則和設定檔管理員] > [指派] > 選擇指派 > [範圍 (群組)]。
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>iOS 和 macOS 裝置現在包含 UDID 資訊 <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>iOS 和 macOS 裝置現在包含 UDID 資訊 <!-- 2219806 -->
 若要查看 iOS 和 macOS 裝置的唯一裝置識別碼 (UDID)，請移至 [裝置] > [所有裝置] > 選擇裝置 > [硬體]。 UDID 只適用於公司裝置 (如 [裝置] > [所有裝置] > 選擇裝置 > [屬性] > [裝置擁有權] 下的設定)。
 
 ### <a name="intune-apps"></a>Intune 應用程式
@@ -955,7 +1035,7 @@ macOS 裝置版的公司入口網站應用程式在更新之後，改進了使�
 
 如需詳細資訊，請參閱[傳送 macOS 的錯誤](/intune-user-help/send-errors-macos)。
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune 在 Windows 10 版的公司入口網站中，採用了 Fluent Design System <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Intune 在 Windows 10 版的公司入口網站中，採用了 Fluent Design System <!-- 1195010 -->
 Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(Fluent Design System 的瀏覽檢視\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 我們仍持續努力為 Intune 建立適應性更好、更彈性、更直觀及更加容易上手的體驗，而這只是好幾個更新中的第一個。 若要查看更新後的外觀，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
 
 ## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日當週
@@ -1016,6 +1096,27 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 您現在可以搭配 Outlook Mobile 使用 Intune「應用程式原則保護」(APP) 和「條件式存取」(CA) 來保護對內部部署 Exchange 資料的存取。 若要在 Azure 入口網站內新增或修改應用程式保護原則，請選取 [Microsoft Intune] > [用戶端應用程式] > [應用程式保護原則]。 開始使用此功能之前，請確定您符合 [iOS 版和 Android 版 Outlook 的需求](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)。
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>變更的計劃：Exchange Online 至 Intune 連接器將不會在 Intune 中提供 <!-- 3105122 -->
+為了簡化 Exchange Online 和條件式存取的使用體驗，我們將會停用 Exchange Online 至 Intune「服務對服務」連接器。 此變更將會從 12 月服務更新開始，並在 2019 年 2 月服務更新完成。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+您之所以接收到此訊息的原因，是因為我們的記錄顯示您可能正在您的環境中使用「服務對服務」連接器功能。 「服務對服務」連接器支援針對適用於 Exchange Online 之 Exchange Active Sync Only 裝置的 Intune 管理，且不支援內部部署基礎結構。 此連接器在主控台上的顯示方式，會讓人認為它是條件式存取 (CA) 的必要項目，但事實上 CA 並不需要它。 為了在主控台中釐清此情況，我們將會在針對 Intune 服務的 12 月更新中停用設定新連接器的按鈕。 接著，在 2019 年 2 月，所有現有的 Exchange Online 至 Intune 連接器都會被停用。
+
+如果您在您的環境中使用這些連接器，在我們於 2 月停用連接器之後，您將無法在 Intune 中監視或抹除 Exchange Active Sync Only 裝置。 此變更期間預期不會對您的使用者造成任何影響。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+
+如果您已設定服務對服務連接器，並具有 Exchange Active Sync Only 裝置，請切換成其他方法以管理您的裝置。 下列選項可供您選擇：
+
+- 在行動裝置管理 (MDM) 中註冊裝置
+- 使用 Intune 應用程式防護原則來管理裝置
+- 使用在這裡的文件中所概述的 Exchange 控制項。 
+
+#### <a name="additional-information"></a>其他資訊
+[設定 Intune 和 Exchange Online 的 Exchange 服務連接器](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>規劃變更：Intune 教育版的效能更新 <!--1750215-->
 我們將為 Intune 教育版新增一些更新，以提高您指派設定給使用者或裝置時的速度和可靠性。 在此變更過程中，您的原則或設定指派將於 11 月底前移至新群組。
@@ -1090,14 +1191,8 @@ Intune 將針對 Android 4.4 和更新版本的裝置移除「裝置預設」這
 #### <a name="additional-information"></a>其他資訊
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>規劃變更：Intune 已新增 [Change Password at Next Auth] \(在下次驗證時變更密碼\) <!-- 1873216 -->
-在 9 月服務版本中，Intune 想要針對執行 macOS 10.13 版和更新版本的裝置整合 Apple 的新發行 [Change Password at Next Auth] \(在下次驗證時變更密碼\) 設定。 在此設定之前，MDM 提供者無法驗證裝置密碼是否已變更為符合規範。 Intune 的設定和合規性原則只會驗證下次變更裝置密碼時，會將裝置密碼標示為符合規範。 新增這個新的 Apple 功能時，您的 macOS 使用者將會收到更新密碼的要求，即使他們的密碼符合規範也是一樣。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-這會影響具有使用 Intune 或混合式 MDM 之 macOS 裝置原則的環境。 現在，Apple 已有這個 [Change Password at Next Auth] \(在下次驗證時變更密碼\) 設定，Intune 即可強制使用者在推入密碼原則時更新其密碼。 如果您在將裝置標示為符合規範之前封鎖公司資源，則可能會封鎖您的終端使用者，使其在重設其密碼之前都無法存取公司資源 (例如電子郵件或 SharePoint 網站)。 在未來，對設定和合規性密碼原則的所有更新都會強制目標使用者更新其密碼。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-讓您的技術服務人員知道。 如果您不想要強制執行此 macOS 裝置原則，建議您取消指派或刪除現有的 macOS 原則。 客戶研究建議大部分客戶不會受到這項變更的影響。 大部分的終端使用者都會在收到使用者密碼註冊的要求之後更新其密碼，或重設其密碼以符合規範。
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
+Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 此變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。 我們會在 [Intune 支援部落格](https://aka.ms/compportalats)上持續提供詳細資料。
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>規劃變更：Intune 移至 TLS 1.2
 從 2018 年 10 月 31 日開始，Intune 將會支援傳輸層安全性 (TLS) 通訊協定 1.2 版，以提供最佳的加密、確保我們的服務預設更安全，並符合 Microsoft Office 365 等其他 Microsoft 服務。 Office 已在 MC128929 中傳達此變更。
@@ -1113,13 +1208,6 @@ https://aka.ms/PasswordSettings
 建議您主動移除環境中的 TLS 1.0 和 1.1 相依性，並盡可能在作業系統層級停用 TLS 1.0 和 1.1。 請立即開始規劃移轉至 TLS 1.2。 請查看下面的支援部落格文章，以取得 Intune 目前不支援但可能仍會接收原則，以及無法使用 TLS 1.2 版通訊的裝置清單。 您可能需要通知這些終端使用者，他們即將失去對公司資源的存取權。
 
 **其他資訊**：[Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/) (Intune 移至 TLS 1.2 進行加密)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>規劃變更：立即在 Azure 上使用 Intune 進行 MDM 管理 <!-- 1227338 -->
-一年多前，我們公佈了 [Azure 上的 Intune 公開預覽版 ](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六個月前追加了 Intune 的[新管理員體驗正式運作](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 8 月 31 日起，使用 Intune 獨立版的客戶將無法繼續在傳統 Silverlight 主控台中使用行動裝置管理 (MDM)。 但您可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 處理 MDM 需求。 如果仍在使用 MDM 的傳統主控台，請停止使用並熟悉 Azure 上的 Intune。 我們不希望這項變更影響任何使用者。 Silverlight 仍提供傳統的電腦管理。 您可以在[這裡](https://aka.ms/Intune_on_Azure_mdm)深入了解這項變更，以及它對您的影響。
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
-Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 此變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。 我們會在 [Intune 支援部落格](https://aka.ms/compportalats)上持續提供詳細資料。
 
 
 

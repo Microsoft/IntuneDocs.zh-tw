@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/5/2018
+ms.date: 12/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fbe8cc0fc3e835ee5807dfbe56ea1aa3c728547e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184721"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829125"
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune 的舊版 - 2018 年 11 月
+# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的舊版 - 2018 年 12 月
 
 > [!Note]
 > NDA 通知：下列變更正在 Intune 的開發過程中。 這項資訊會在極有限的基礎下根據 NDA 共用。 請不要在社交媒體或公用網站上張貼任何這項資訊，例如 Twitter、UserVoice、Reddit 等等。 
@@ -40,40 +40,105 @@ ms.locfileid: "52184721"
  
 ## <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
 
-<!-- 1811 start -->
+<!-- 1812 start -->
 
-### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>在公司擁有的受監督 iOS 裝置上解除安裝應用程式 <!-- 1281677 -->
-您可以移除公司所擁有受監督 iOS 裝置上的任何應用程式。 您可以透過針對具有**解除安裝**指派類型的使用者或裝置群組，來移除任何應用程式。 針對個人或不受監督的 iOS 裝置，您仍可以僅移除使用 Intune 安裝的應用程式。
+### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android 企業 APP-WE 應用程式部署 <!-- 1171203 -->
+針對未註冊的無註冊應用程式保護原則 (APP-WE) 部署案例中的 Android 裝置，您就能使用受控的 Google Play，將市集應用程式和 LOB 應用程式部署給使用者。 具體來說，IT 可以為終端使用者提供應用程式目錄和安裝體驗，藉由允許從不明來源進行安裝，就不再需要終端使用者放寬其裝置的安全性狀態。 此外，此部署案例將提供已改善的使用者體驗。
 
-### <a name="track-installation-of-office-proplus---2620217--"></a>追蹤 Office 專業增強版的安裝 <!--2620217-->
-您可以使用[註冊狀態頁面](windows-enrollment-status.md)，來追蹤 [Office 專業增強版](apps-add-office365.md)安裝進度。
+### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>在 Windows 10 及更新版裝置上使用 DNS 設定時自動連線且持續規則的新選項 <!-- 1333665, 2999078 -->
+在 Windows 10 及更新版裝置上，您將能建立 VPN 組態設定檔，其中包含可用以解析網域 (例如 contoso.com) 的 DNS 伺服器清單。 這將包含可用於名稱解析的新設定 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [VPN] > [DNS 設定] >[新增])： 
 
-### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>Apple School Manager 帳戶的 macOS 裝置註冊計劃 <!--3006133-->
-Intune 將支持在 Apple School Manager 帳戶的 macOS 裝置上使用裝置註冊計劃。
+- **自動連線**：若**已啟用**，裝置就會在連絡您輸入的網域 (例如 contoso.com) 時，自動連線至 VPN。
+- **永續性**：根據預設，只要裝置會使用此 VPN 設定檔進行連線，所有的名稱解析原則表格 (NRPT) 規則都會處於作用中狀態。 已在 NRPT 規則上**啟用**此設定時，此規則就會在裝置上維持作用中狀態，即使在 VPN 中斷連線或移除 VPN 設定檔時也一樣。 此規則在手動移除之前會保持作用中狀態，而您可以使用 PowerShell 加以移除。
 
-### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>暫時暫停 Android 裝置上的 kiosk 模式以進行變更 <!-- 3041935 -->
-在多應用程式 kiosk 模式下使用 Android 裝置時，IT 系統管理員可能需要對裝置進行變更。 一種新的多應用程式 kiosk 設定，允許 IT 系統管理員使用 PIN 暫時暫停 kiosk 模式，並可存取整個裝置。
-若要查看目前的 kiosk 設定，請參閱 [Android kiosk 設定](android-kiosk-settings.md)。
+[Windows 10 VPN 設定](vpn-settings-windows-10.md)會說明目前的設定清單。 
 
-### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>在受控主畫面應用程式中設定自訂背景 <!-- 3041945 -->
-我們將新增一項設定，可讓您在 Android Enterprise、多應用程式、kiosk 模式裝置上自訂受控主畫面應用程式的背景外觀。  若要設定**自訂 URL 背景**，請前往 Azure 入口網站 > [裝置設定] 中的 Intune。 選取目前或建立一個新的裝置組態設定檔，來編輯其 kiosk 設定。
+### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Windows 公司入口網站應用程式中的 [說明及支援] 頁面 <!-- 1488939 -->
+系統將在 Windows 公司入口網站應用程式中新增頁面。 [說明及支援] 頁面將提供技術服務人員的連絡資訊。 此外，終端使用者將能在遇到問題時傳送公司入口網站記錄。 此網頁也會提供 [常見問題集] 區段來協助終端使用者。
 
-### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>啟用 Android Enterprise kiosk 裝置上的虛擬首頁按鈕 <!-- 3042021 -->
-新設定可讓使用者點選其裝置上的螢幕按鍵按鈕，以在其多應用程式 kiok 裝置上的受控主畫面應用程式和其他已指派應用程式之間切換。 在使用者的 kiosk 應用程式未對「返回」按鈕做出適當回應情況下，此設定特別有用。 您將能夠為公司擁有的一次性 Android 裝置設定此設定。 若要啟用或停用**虛擬首頁按鈕**，請前往 Azure 入口網站 > 裝置設定中的 Intune。 選取目前或建立一個新的裝置組態設定檔，來編輯其 kiosk 設定。
+### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>針對 Windows 10 裝置上的 VPN 設定檔使用受信任的網路偵測 <!-- 1500165 -->
+使用受信任的網路偵測時，若使用者已經位於受信任的網路上，您將能防止 VPN 設定檔自動建立 VPN 連線。 您將能新增 DNS 尾碼，在執行 Windows 10 及更新版本的裝置上啟用受信任的網路偵測 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [VPN])。
+[Windows 10 VPN 設定](vpn-settings-windows-10.md)會列出目前的 VPN 設定。
 
-### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>會儲存並套用應用程式保護原則指派 <!-- 3104570 -->
-您將可以更有效控制應用程式保護原則指派。 透過儲存並套用應用程式保護原則指派，只有特定使用者會受到應用程式保護原則指派的直接影響。
+### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>支援公司擁有、完全受控的 Android 裝置 <!-- 574342 -->
+Intune 將支援完全受控的 Android 裝置，此為公司擁有的「裝置擁有者」案例，其中的裝置會受到 IT 嚴格管理並隸屬於個別使用者。 這讓系統管理員能夠管理整個裝置、強制設定無法用於工作設定檔之原則控制項的延伸範圍，並限制使用者只能從受控的 Google Play 安裝應用程式。 若要設定完全受控的 Android 裝置，請前往 [裝置註冊] > [Android 註冊] > [公司擁有、完全受控的使用者裝置]。
 
-### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>適用於 Windows 10 及更新版本的新 Microsoft Edge 瀏覽器設定 <!-- 3174639 -->
-我們將新增一個新設定，以協助您控制和管理裝置上的 Microsoft Edge 瀏覽器。 如需目前設定的清單，請參閱[適用於 Windows 10 (及更新版本) 的裝置限制](device-restrictions-windows-10.md#microsoft-edge-browser)。
+### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 將支援 256 位元的加密金鑰 <!-- 1832174 -->
+適用於 iOS 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
 
-### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>選取註冊狀態頁面上追蹤的應用程式<!-- 2531007 -->
-您可以在註冊狀態頁面上選擇追蹤哪些應用程式。
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>已在 Intune 設定檔中啟用共用的 PC 設定 <!-- 1907917 -->
+您目前可以使用自訂的 OMA-URI 設定，在 Windows 10 電腦裝置上設定共用的 PC 設定。 新的設定檔將會新增來設定共用的 PC 設定 ([裝置設定] > [設定檔] > [建立設定檔] > [Windows 10 及更新版本] > [共用的多使用者裝置])。
+適用對象：Windows 10 及更新版本、Windows Holographic for Business
 
-### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 應用程式保護原則 UI 更新 <!-- 3251427 -->
+### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 原則會更新驗證方法與公司入口網站應用程式安裝  <!-- 1927359 -->
+Intune 將不再支援特定裝置上從 App Store 安裝的公司入口網站應用程式。 只有當您在註冊期間使用 Apple 設定助理進行驗證時，此變更才有意義。 此變更也只會影響透過下列各項註冊的 iOS 裝置：  
+* Apple Configurator
+* Apple Business Manager
+* Apple School Manager
+* Apple 裝置註冊方案 (DEP)
 
-Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Microsoft Outlook 和 Word) 設定各種資料保護設定。 我們正在變更設定和按鈕標籤，以便更容易理解。 控制項將從 [是]/[否] 控制項主要變更為 [封鎖]/[允許] 和 [停用]/[啟用]，同時控制項標籤也會更新，以便清晰顯示。 設定也將重新格式化，以便設定和其標籤在控制項中並排顯示，提供更好的瀏覽。 預設設定和多項設定數量會保持相同，但這項變更可讓使用者更輕鬆了解、巡覽和利用設定以套用所選的應用程式保護原則。
+如果使用者從 App Store 安裝公司入口網站應用程式，接著嘗試透過它註冊這些裝置，則它們將會收到錯誤。 這些裝置只有在註冊期間透過 Intune 自動推送時，才會使用公司入口網站。 位於 Azure 入口網站上 Intune 中的註冊設定檔將會更新，如此您就能指定裝置的驗證方式，以及它們是否會收到公司入口網站應用程式。 如果您想讓 DEP 裝置使用者擁有公司入口網站，將必須在註冊設定檔中指定喜好設定。 此外，公司入口網站應用程式中的 [識別您的裝置] 畫面很快就會變成過時。  
+若要在已經註冊的 DEP 裝置上安裝公司入口網站，您將必須移至 [Intune] > [用戶端應用程式]，然後使用應用程式設定原則來將它推送為受控應用程式。 有關如何執行這些步驟的詳細資料，將在未來的文件中加以概述。
 
+### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>非系統管理員可以在已加入 Azure AD 的 Windows 10 裝置上啟用 BitLocker<!-- 2147379 -->
+當您在 Windows 10 裝置上啟用 BitLocker 設定 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [Endpoint Protection] > [Windows 加密]) 時，您會新增 BitLocker 設定。 此更新包含新的 BitLocker 設定，可允許標準使用者 (非系統管理員) 啟用加密。 若要查看目前的設定，請參閱[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
+
+### <a name="intune-app-pin----2298397---"></a>Intune 應用程式 PIN <!-- 2298397 -->
+身為 IT 系統管理員，您將能設定終端使用者可在其 Intune 應用程式 PIN 必須變更之前等候的天數。 您可以藉由選取 [Intune] > [用戶端應用程式] > [應用程式保護原則] > [建立原則] > [設定] > [存取需求]，在 Azure 入口網站中提供新設定。 此功能將會在 iOS 和 Android 裝置上提供。 此設定支援正整數值。
+
+### <a name="new-windows-10-update-settings----2626030-2512994---"></a>新的 Windows 10 更新設定 <!-- 2626030 2512994 -->
+針對 Windows 10 更新通道，您將能夠：
+- 在位於執行「2018 年 10 月更新」之機器的 Windows 10 機器上還原原始的自動更新設定。
+- 設定新的軟體更新設定，可讓您封鎖或允許使用者從其機器的 [設定] 暫停更新安裝。 
+
+
+
+### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS 電子郵件設定檔可以使用 S/MIME 簽署和加密 <!-- 2662949 -->
+您將能建立包含不同設定的電子郵件設定檔。 這包括可在 iOS 裝置上用來簽署與加密電子郵件通訊的 S/MIME 設定 ([裝置設定] > [設定檔] > [建立設定檔]> 針對平台選擇 [iOS] > 針對設定檔類型選擇 [電子郵件])。
+
+[iOS 電子郵件組態設定](email-settings-ios.md)會列出目前的設定。
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>在 iOS DEP 裝置上略過更多設定助理畫面 <!-- 2687509 -->
+除了您目前可以略過的畫面，您還能設定 iOS DEP 裝置，在使用者註冊裝置時略過設定助理中的下列畫面：顯示色調、隱私權、Android 移轉、主畫面按鈕、iMessage & FaceTime、上線、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
+若要選擇要略過的畫面，請前往 [裝置註冊] > [Apple 註冊] > [註冊方案權杖]> 選擇權杖 > [設定檔] > 選擇設定檔 > [屬性] > [設定助理自訂] > 針對任何您想要略過的畫面選擇 [隱藏] > [確定]。
+
+### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>部分 BitLocker 設定支援 Windows 10 專業版<!-- 2727036 -->
+您將能建立組態設定檔，在 Windows 10 裝置上設定 Endpoint Protection 設定，包括 BitLocker。 這會針對部分 BitLocker 設定新增對 Windows 10 專業版的支援。 若要查看目前的 Windows 10 版本設定，請參閱[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
+Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
+
+### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>共用裝置設定已在 Azure 入口網站中針對 iOS 裝置重新命名為鎖定畫面訊息 <!-- 2809362 -->
+當您建立適用於 iOS 裝置的組態設定檔時，您將能新增 [共用裝置設定] 設定，以便在鎖定畫面上顯示特定的文字。 這包含下列變更： 
+
+- Azure 入口網站中的 [共用裝置設定] 已重新命名為「鎖定畫面訊息 (僅限受監督)」([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [iOS] > 針對設定檔類型選擇 [裝置功能] > [鎖定畫面訊息])。
+- 新增鎖定畫面訊息時，您可以在 [資產標籤資訊] 中插入序號、裝置名稱或另一個裝置特定的值以作為變數。 例如，您可以使用大括號來輸入 `Device name: {{device name}}` 或 `Serial number is {{serial number}}`。 [iOS 權杖](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)會列出可使用的可用權杖。
+
+[在鎖定畫面上顯示訊息的設定](shared-device-settings-ios.md)會列出目前的設定。
+
+### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564--"></a>更詳細的註冊限制失敗訊息 <!-- 3111564-->
+不符合註冊限制時，將提供更詳細的錯誤訊息。 若要查看這些訊息，請前往 [Intune] > [疑難排解] > 然後檢查 [註冊失敗] 表格。
+
+### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>將通知、提示和 Keyguard 設定新增至 Android 企業裝置擁有者裝置 <!-- 3201839 3201843 -->
+以裝置擁有者身分執行時，此更新會包括 Android 企業裝置上的多個新功能。 若要使用這些功能，請前往 [裝置設定] > [設定檔] > [建立設定檔] > 在 [平台] 中選擇 [Android 企業] > 在 [設定檔類型] 中選擇 [僅限裝置擁有者] > [裝置限制]。
+新功能包括： 
+- 停用系統通知顯示，包括來電、系統警示、系統錯誤及更多功能
+- 建議針對第一次開啟的應用程式略過開始教學課程和提示
+- 停用進階的 Keyguard 設定，例如相機、通知、指紋解除鎖定及更多功能
+
+若要查看目前的設定，請前往 [Android 企業裝置限制設定](device-restrictions-android-for-work.md)。
+
+### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android 企業裝置擁有者裝置可以使用 Always On VPN 連線 <!-- 3202194 -->
+在此更新中，您可以在 Android 企業裝置擁有者裝置上使用 Always-On VPN 連線。 在使用者將裝置解除鎖定、裝置重新啟動，或是變更無線網路時，Always-On VPN 連線將會保持連線或立即重新連線。 您也可以將連線設定成「鎖定」模式，這會封鎖所有流量，直到 VPN 連線開始作用為止。
+您可以在 [裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Android 企業] > 針對 [僅限裝置擁有者] 選擇 [裝置限制] > [連線能力] 設定中啟用 Always-On VPN。 若要查看目前的設定，請前往 [Android 企業裝置限制設定](device-restrictions-android-for-work.md)。
+
+### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Windows 10 裝置上的工作管理員中用來結束處理序的新設定 <!-- 3285177 --> 
+此更新包含使用 Windows 10 裝置上的工作管理員來結束處理序的新設定。 您可以使用裝置組態設定檔 ([裝置設定] > [設定檔] > [建立設定檔] > 在 [平台] 中選擇 [Windows 10] > 在 [設定檔類型] 中選擇 [裝置限制] > [一般] 設定)，來選擇允許或阻止此設定。
+若要查看目前的設定，請前往 [Windows 10 裝置限制設定](device-restrictions-windows-10.md)。
+適用對象：Windows 10 和更新版本
+
+### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>系統管理範本目前處於公開預覽狀態且已移至它們自己的組態設定檔 <!-- 3322847 -->
+Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前為個人預覽版。 使用此更新：系統管理範本包含約 300 個可在 Intune 中管理的設定。 這些設定先前只存在於群組原則編輯器中。
+系統管理範本會在公開預覽版中提供。系統管理範本正從 [裝置設定] > [系統管理範本] 移至 [裝置設定] > [設定檔] >[建立設定檔] > 在 [平台] 中選擇 [Windows 10 及更新版本]、在 [設定檔類型] 中選擇 [系統管理範本]。
+已啟用報告。適用對象：Windows 10 及更新版本
 
 
 <!-- 1810 start -->
@@ -109,11 +174,6 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一個 MDM 所使用的 Apple VPP 權杖 <!-- 1488946 -->
 如果 Intune 和另一個 MDM 都正在使用 Apple 大量採購方案 (VPP) 權杖，則 Intune 會偵測並顯示詳細資料。
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>iOS 和 macOS 版本號碼和組建編號可用於合規性政策 <!-- 1892471 -->
-在 [裝置合規性] > [裝置合規性] 中，會顯示 iOS 和 macOS 作業系統版本，並可用於合規性政策。 在未來的更新中，您也可以設定這兩個平台的組建編號。
-
-發行安全性更新時，Apple 通常會保留版本號碼，但更新組建編號。 藉由在合規性政策中使用組建編號，即可輕鬆地檢查是否已安裝弱點更新。
-
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>[裝置合規性] 儀表板中的已淘汰裝置 <!-- 1981119 -->
 在未來的更新中，將會從 [裝置合規性] 儀表板中移除已淘汰裝置。 這會變更您的合規性數字。
 
@@ -130,12 +190,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 
 適用於 Windows 10 和更新版本
 
-### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>VPP 權杖將過期或公司入口網站授權將不足的警示<!-- 2237572 -->
-如果您在 DEP 註冊期間使用大量採購方案 (VPP) 預先佈建公司入口網站，則 Intune 會在 VPP 權杖即將過期以及公司入口網站授權即將不足時提醒您。
 
-
-
-<!-- the following are present prior to 1711 -->
 
 ## <a name="notices"></a>通知
 

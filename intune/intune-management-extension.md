@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179400"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579178"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 Intune 管理延伸模組可讓您在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可補充 Windows 10 的行動裝置管理 (MDM) 功能，讓您更輕鬆地轉移至新式管理。
@@ -67,6 +67,12 @@ Intune 管理延伸模組每小時會與 Intune 進行同步處理一次。 將�
 在 [PowerShell 指令碼] 中，選取要監視的指令碼，然後選擇 [監視]，再選擇下列其中一種報表：
    - **裝置狀態**
    - **使用者狀態**
+
+## <a name="troubleshoot-powershell-scripts"></a>對 PowerShell 指令碼進行疑難排解
+
+用戶端電腦上的代理程式記錄通常位於 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以使用 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) 來檢視這些記錄檔。 
+
+![代理程式記錄的螢幕擷取畫面](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>刪除 PowerShell 指令碼
 在 [PowerShell 指令碼] 中，以滑鼠右鍵按一下指令碼，然後選取 [刪除]。

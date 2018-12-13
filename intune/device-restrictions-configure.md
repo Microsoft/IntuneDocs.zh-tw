@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9b84877d37d26dababda2987801fc7267cb3c2e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181202"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728781"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定裝置限制設定
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 裝置限制可讓您控制各種類別中，您所管理的各種設定及功能，例如：
 - 安全性
@@ -36,20 +34,24 @@ ms.locfileid: "52181202"
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>建立內含裝置限制設定的裝置設定檔
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
-4. 輸入裝置限制設定檔的 [名稱] 和 [描述]。
-5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 **Intune**> 選取 [Intune]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入裝置限制設定檔的 [名稱] 和 [描述]。
+4. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
+
     - **Android**
+    - **Android 企業**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
-6. 從 [設定檔類型] 下拉式清單中，選擇 [裝置限制]。 若想要建立像是 Surface Hub 等 Windows 10 團隊版裝置之裝置限制設定檔，選擇 [裝置限制 (Windows 10 團隊版)]。
-7. 您可設定的設定會視您選擇的平台而不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+
+5. 從 [設定檔類型] 下拉式清單中，選擇 [裝置限制]。 若想要建立像是 Surface Hub 等 Windows 10 團隊版裝置的裝置限制設定檔，選擇 [裝置限制 (Windows 10 團隊版)]。
+6. 您可設定的設定會視您選擇的平台而不同。 選擇您平台的詳細設定：
+
     - [Android 設定](device-restrictions-android.md)
+    - [Android 企業設定](device-restrictions-android-for-work.md)
     - [iOS 設定](device-restrictions-ios.md)
     - [macOS 設定](device-restrictions-macos.md)
     - [Windows Phone 8.1 設定](device-restrictions-windows-phone-8-1.md)
@@ -57,11 +59,14 @@ ms.locfileid: "52181202"
     - [Windows 10 設定](device-restrictions-windows-10.md)
     - [Windows 10 團隊版設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business 設定](device-restrictions-windows-holographic.md)
-    - [Android 工作設定檔設定](device-restrictions-android-for-work.md)
-8. 當您完成時，請返回 [建立設定檔] 頁面，然後按一下 [建立]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 頁面上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+7. 當您完成時，請返回 [建立設定檔] 頁面，然後選取 [建立]。
+
+設定檔隨即建立，並出現在 [設定檔清單] 頁面上。 
+
+## <a name="next-step"></a>後續步驟
+
+建立設定檔之後，就可以指派它。 如需步驟，請參閱[指派裝置設定檔](device-profile-assign.md)。 
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

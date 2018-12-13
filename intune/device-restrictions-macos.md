@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,41 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 51b1df246c23f2e1571b3bccc3f4f26ae91e26dd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0a2a096bfb4b5fafd895425a775abc13afc643e2
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178347"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728531"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 裝置限制設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文將說明可以為執行 macOS 之裝置設定的 Microsoft Intune 裝置限制設定。
+此文章將說明可以為執行 macOS 之裝置設定的 Microsoft Intune 裝置限制設定。
 
 ## <a name="password"></a>密碼
--   **密碼** - 需要使用者輸入密碼才可存取該裝置。
-    -   **必要的密碼類型** - 指定密碼是否只能是數字，或者是否必須為英數字元 (包含字母和數字)。 只有 Mac OS X 10.10.3 版與更新版本才支援這項設定。
-    -   **密碼中的非英數字元數目** - 指定密碼中所需的複雜字元數 (**0** 到 **4**)。<br>複雜字元是一種符號，例如 "**?**"。
-    -   **密碼長度下限** - 輸入使用者必須設定的密碼長度下限 (介於 **4** 到 **16** 個字元之間)。
-    -   **簡單密碼** - 允許使用簡單密碼，例如 **0000** 或 **1234**。
-    -   **在螢幕鎖定最少幾分鐘後必須輸入密碼**- 指定電腦多長時間沒有活動後，即需要密碼才可解除鎖定。
-    -   **沒有活動最久幾分鐘後鎖定螢幕** - 指定電腦必須閒置多長時間，螢幕才會鎖住。
-    -   **密碼到期 (天)** - 指定使用者經過多少天後必須變更密碼 (**1** 到 **255** 天)。
-    -   **避免重複使用以前用過的密碼** - 指定不可重複使用先前用過之密碼的次數 (**1** 到 **24**)。
+- **密碼** - 需要使用者輸入密碼才可存取該裝置。
+  - **必要的密碼類型** - 指定密碼是否只能是數字，或者是否必須為英數字元 (包含字母和數字)。 只有 Mac OS X 10.10.3 版與更新版本才支援此設定。
+  - **密碼中的非英數字元數目** - 指定密碼中所需的複雜字元數 (**0** 到 **4**)。<br>複雜字元是一種符號，例如 "**?**"。
+  - **密碼長度下限** - 輸入使用者必須設定的密碼長度下限 (介於 **4** 到 **16** 個字元之間)。
+  - **簡單密碼** - 允許使用簡單密碼，例如 **0000** 或 **1234**。
+  - **在螢幕鎖定最少幾分鐘後必須輸入密碼**- 指定電腦多長時間沒有活動後，即需要密碼才可解除鎖定。
+  - **沒有活動最久幾分鐘後鎖定螢幕** - 指定電腦必須閒置多長時間，螢幕才會鎖住。
+  - **密碼到期 (天)** - 指定使用者經過多少天後必須變更密碼 (**1** 到 **255** 天)。
+  - **避免重複使用以前用過的密碼** - 指定不可重複使用先前用過之密碼的次數 (**1** 到 **24**)。
+
+- **防止自動填滿密碼** ：選擇 [封鎖] 來防止使用 macOS 上的自動填滿密碼功能。 選擇 [封鎖] 也會執行下列作業：
+
+  - 系統不會提示使用者使用 Safari 或任何應用程式中的已儲存密碼。
+  - 系統會停用 [自動高強度密碼]，且不會向使用者建議高強度密碼。
+
+  [未設定] 會允許這些功能。
+
+- **防止近接要求密碼**：選擇 [封鎖] 來讓使用者的裝置不會向鄰近的裝置要求密碼。 [未設定] 會允許這些密碼要求。
+
+- **防止共用密碼**：[封鎖] 會防止裝置使用 AirDrop 與彼此共用密碼。 [未設定] 會允許共用密碼。
+
 
 ## <a name="restricted-apps"></a>受限應用程式
 
@@ -47,7 +59,7 @@ ms.locfileid: "52178347"
 
 若要設定清單，請按一下 [新增]，然後指定您所選的名稱，也可指定應用程式發行者以及應用程式的套件組合識別碼 (例如 *com.apple.calculator*)。
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>網域
 
 ### <a name="unmarked-email-domains"></a>未標記的電子郵件網域
 

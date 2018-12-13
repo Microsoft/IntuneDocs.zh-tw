@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184177"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828989"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置新增裝置合規性政策
 
@@ -49,7 +49,8 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 ## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 針對 [平台]，選取 [macOS]。 選擇 [組態設定]，並輸入 [裝置健全狀況]、[裝置屬性]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
+4. 針對 [平台]，選取 [macOS]。 
+5. 選擇 [設定組態]，並輸入此文章中所述的 [裝置健康情況]、[裝置內容]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
 
 ## <a name="device-health"></a>裝置健全狀況
 
@@ -59,6 +60,8 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 
 - **最低作業系統版本**︰當裝置不符合最低作業系統版本需求時，它會回報為不符合規範。 並顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，然後便可存取公司資源。
 - **最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取。 系統會要求使用者連絡其 IT 管理員。在規則變更為允許該作業系統版本之前，此裝置將無法存取公司資源。
+- **最低 OS 組建版本**：當 Apple 發佈安全性更新時，通常是更新組建編號，而不是 OS 版本。 使用此功能來輸入在裝置上允許的最低組建編號。
+- **最高 OS 組建版本**：當 Apple 發佈安全性更新時，通常是更新組建編號，而不是 OS 版本。 使用此功能來輸入在裝置上允許的最高組建編號。
 
 ## <a name="system-security-settings"></a>系統安全性設定
 
@@ -105,7 +108,7 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 
 1. 選擇您已設定的原則。 現有的原則位於 [裝置合規性] > [原則]。
 2. 選擇原則，然後選擇 [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
+3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用此原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
 
 > [!TIP]
 > 根據預設，裝置每 8 小時會檢查合規性。 但是，使用者可以透過 Intune 公司入口網站應用程式強制執行此程序。

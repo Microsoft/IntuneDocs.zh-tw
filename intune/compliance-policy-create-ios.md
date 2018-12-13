@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182259"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728866"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置新增裝置相容性原則
 
@@ -54,7 +54,8 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 ## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 針對 [平台]，選取 [iOS]。 選擇 [進行設定]輸入 [電子郵件]、[裝置健全狀況]、[裝置屬性]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
+4. 針對 [平台]，選取 [iOS]。 
+5. 選擇 [設定組態]，並輸入本主題中所述的 [電子郵件]、[裝置健康情況]、[裝置內容]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 
 - **最低作業系統版本需求**︰當裝置不符合最低作業系統版本需求時，它會回報為不相容， 您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置， 之後即可存取公司資源。
 - **允許的最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取。 然後要求使用者連絡其 IT 管理員。在將規則變更為允許該 OS 版本之前，此裝置無法存取公司資源。
+- **最低 OS 組件版本**：當 Apple 發佈安全性更新時，通常是更新組件編號，而不是 OS 版本。 使用此功能來輸入在裝置上允許的最低組建編號。 此合規性檢查支援執行 iOS 8.0 和更新版本的裝置。 
+- **最高 OS 組件版本**：當 Apple 發佈安全性更新時，通常是更新組件編號，而不是 OS 版本。 使用此功能來輸入在裝置上允許的最高組建編號。 此合規性檢查支援執行 iOS 8.0 和更新版本的裝置。
 
 ## <a name="system-security"></a>系統安全性
 

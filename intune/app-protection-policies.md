@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185951"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728815"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -74,10 +74,14 @@ ms.locfileid: "52185951"
 
    ![將 [選取要包含的群組] 功能表選項反白之指派窗格的螢幕擷取畫面](./media/app-protection-policy-add-users.png)
 
-3.  會顯示 **Azure Active Directory** 中的所有安全性群組清單。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 可將原則部署給使用者。
+3.  會顯示 **Azure Active Directory** 中的所有安全性群組清單。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 
 
     ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 窗格的螢幕擷取畫面](./media/azure-ad-user-group-list.png)
 
+4.  您將群組包含及排除之後，請選取 [儲存] 以儲存設定，並將原則部署至使用者。 如果您在儲存設定之前選取 [捨棄]，您將會捨棄您對 [包含] 和 [排除] 索引標籤所做的所有變更。   
+ 
+     ![顯示儲存和捨棄選項的螢幕擷取畫面](./media/save-assignment.png)
+  
 您現在已建立原則並將其部署給使用者。
 
 只有獲指派 Microsoft Intune 授權的使用者才會受此原則影響。 已選取安全性群組中的使用者若無指派的 Intune 授權，則不會受到影響。
@@ -109,9 +113,13 @@ ms.locfileid: "52185951"
 
 2.  在 [Intune 應用程式防護] 窗格中，選取 [指派] 來開啟 [Intune 應用程式防護 - 指派] 窗格，該窗格會顯示具有這項原則的目前使用者群組清單。
 
-3.  若要將新的使用者群組新增至原則，在 [包含] 索引標籤選擇 [選取要包含的群組]，並選取使用者群組。 選擇 [選取] 將原則部署到您選取的群組。
+3.  若要將新的使用者群組新增至原則，在 [包含] 索引標籤選擇 [選取要包含的群組]，並選取使用者群組。 選擇 [選取] 來新增群組。 
 
-4.  若要刪除使用者群組新增，在 [排除] 索引標籤選擇 [選取群組以排除]，並選取使用者群組。 選擇 [選取]以移除使用者群組。
+4.  若要排除使用者群組，在 [排除] 索引標籤上，選取 [選取要排除的群組]，並選取使用者群組。 選擇 [選取]以移除使用者群組。  
+
+5.  若要刪除先前新增的群組，請在 [包含] 或 [排除] 索引標籤上，選取省略符號 (...)，然後選取 [刪除]。 
+
+5.  完成對指派的變更之後，選取 [儲存] 來儲存設定，並將原則部署到新的一組使用者。 如果您在儲存設定之前選取 [捨棄]，您將會捨棄您對 [包含] 和 [排除] 索引標籤所做的所有變更。
 
 ### <a name="to-change-policy-settings"></a>變更原則設定
 

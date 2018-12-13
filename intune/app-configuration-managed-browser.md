@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180930"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630012"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
 
@@ -175,7 +175,12 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>如何未受保護的瀏覽器設定首頁
 
-此設定可讓您設定使用者啟動受保護的瀏覽器或建立新索引標時會看到的首頁。使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
+此設定可讓您設定使用者啟動受保護的瀏覽器或建立新索引標時會看到的首頁。 
+- 此設定會在 Managed Browser 中顯示該網頁。  Edge 會改為顯示首頁捷徑。
+- 首頁捷徑圖示會顯示為搜尋控制項下方的圖示。  無法編輯或刪除它。
+- 首頁捷徑會顯示您組織的名稱，以區分該捷徑。  它一律會顯示為第一個圖示。
+
+使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
 |                                金鑰                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179162"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389864"
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -66,9 +66,9 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>支援應用程式保護原則的平台
-Intune 應用程式保護原則平台支援與 Office 行動應用程式平台支援一致。 如需詳細資料，請參閱 [Office 系統需求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的**行動應用程式**一節。
+Intune 應用程式保護原則平台支援與 Office 行動應用程式平台支援，在針對 Android 和 iOS 上是一致的。 如需詳細資料，請參閱 [Office 系統需求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的**行動應用程式**一節。
 
-目前不支援 Windows 裝置。 不過，當您將 Windows 10 裝置註冊 Intune 時，即可使用 Windows 資訊保護，以提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+目前不支援 Windows 裝置。 不過，您可以使用 Windows 資訊保護，其能提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>應用程式保護原則如何保護應用程式資料
@@ -146,7 +146,9 @@ MDM 解決方案：
 
 如果應用程式保護原則只有在工作環境中使用應用程式時才適用，支援多重身分識別的應用程式可讓您使用不同帳戶 (工作和個人) 來存取相同應用程式。
 
-例如，請考慮使用其工作帳戶來啟動 OneDrive 應用程式的使用者。 在工作環境中，他們無法將檔案移至個人儲存位置。 之後，當使用者以個人帳戶使用 OneDrive 時，他們可以從個人 OneDrive 複製並移動資料，而沒有任何限制。
+舉一個個人內容的範例，想像有一個使用者在 Word 中開始一個新文件，這會被系統視為個人內容，因此不會套用 Intune 應用程式防護原則。 當該使用者把文件儲存到公司 OneDrive 帳戶上時，系統便會把該文件視為公司內容，並套用 Intune 應用程式防護原則。
+
+舉一個工作內容的範例，想像有一個使用其工作帳戶來啟動 OneDrive 應用程式的使用者。 在工作環境中，他們無法將檔案移至個人儲存位置。 之後，當使用者以個人帳戶使用 OneDrive 時，他們可以從個人 OneDrive 複製並移動資料，而沒有任何限制。
 
 - 深入了解支援 Intune 的 [MAM 和多重身分識別](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的應用程式。
 
