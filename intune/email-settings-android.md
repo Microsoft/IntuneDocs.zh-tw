@@ -1,33 +1,37 @@
 ---
-title: Microsoft Intune 中 Android 和 Android 工作設定檔裝置的電子郵件設定 - Azure | Microsoft Docs
-description: 建立使用 Exchange Server 的裝置設定電子郵件設定檔，並從 Azure Active Directory 中擷取屬性。 您也可以在 Android 和 Android 工作設定檔裝置上使用 Microsoft Intune 來啟用 SSL 或 SMIME、使用憑證或使用者名稱/密碼驗證使用者，以及同步處理電子郵件。
+title: 在 Microsoft Intune 中設定 Android 與 Android Enterprise 電子郵件設定 - Azure | Microsoft Docs
+description: 建立使用 Exchange Server 的裝置設定電子郵件設定檔，並從 Azure Active Directory 中擷取屬性。 在 Android 和 Android 工作設定檔裝置上使用 Microsoft Intune 來啟用 SSL 或 SMIME、使用憑證或使用者名稱/密碼驗證使用者，以及同步處理電子郵件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b8ab8dfadb113d81922119a54aefcac43d15b5a1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032022"
 ---
-# <a name="email-profile-settings-for-devices-running-android-and-android-enterprise---intune"></a>執行 Android 和 Android 企業之裝置的電子郵件設定檔設定 - Intune
+# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android 和 Android Enterprise 裝置設定，用於在 Intune 中設定電子郵件、驗證和同步處理
 
-請使用電子郵件設定檔設定來設定執行 Android 的裝置。
+這篇文章列出並描述您可以在 Android 和 Android Enterprise 裝置上控制的不同電子郵件設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來設定電子郵件伺服器，使用 SSL 來加密電子郵件。
 
 身為 Intune 系統管理員，您可以建立電子郵件設定並將其指派給下列 Android 裝置：
 
 - Android Samsung Knox Standard
 - Android 企業
+
+## <a name="before-you-begin"></a>開始之前
+
+[建立裝置組態設定檔](email-settings-configure.md)。
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
@@ -36,7 +40,7 @@ ms.locfileid: "52187424"
 - **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (AAD) 中取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包括：
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **使用者名稱**：只取得名稱，例如 `user1`
-  - **SAM 帳戶名稱**：需要網域，例如 `domain\user1`。 SAM 帳戶名稱只能與 Android 裝置搭配使用。 不支援 Android 企業。
+  - **sAM 帳戶名稱**：需要網域，例如 `domain\user1`。 SAM 帳戶名稱只能與 Android 裝置搭配使用。 不支援 Android 企業。
 
     另請輸入：  
     - **使用者網域名稱來源**：選擇 [AAD] (Azure Active Directory) 或 [自訂]。
@@ -54,7 +58,7 @@ ms.locfileid: "52187424"
 
 ### <a name="security-settings"></a>安全性設定
 
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
 - **S/MIME**：使用 S/MIME 加密傳送外寄電子郵件。
   - 若要選取 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
@@ -65,7 +69,7 @@ ms.locfileid: "52187424"
 
 ### <a name="content-sync-settings"></a>內容同步設定
 
-- **要同步處理的內容類型**：選取想要同步至裝置的內容類型來源：
+- **要同步處理的內容類型**：選取您想要與裝置同步處理的內容類型：
   - **連絡人**
   - **行事曆**
   - **工作**
@@ -74,13 +78,13 @@ ms.locfileid: "52187424"
 
 - **電子郵件應用程式**：選取 **Gmail** 或 **Nine Work**
 - **電子郵件伺服器**：Exchange Server 的主機名稱。
-- **AAD 中的使用者名稱屬性**：此名稱是 Active Directory (AD) 或 Azure AD 中的屬性，用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，像是 user1 或 user1@contoso.com。
-- **AAD 中的電子郵件地址屬性**：每部裝置上使用者電子郵件地址的產生方式。 選取 [使用者主體名稱]，使用完整主體名稱作為電子郵件地址或**使用者名稱**。
+- **AAD 中的使用者名稱屬性**：這個名稱是 Active Directory (AD) 或 Azure AD 中的屬性，用來產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 user1@contoso.com 或 [使用者主體名稱]，像是 user1 或 user1@contoso.com。
+- **AAD 中的電子郵件地址屬性**：每個裝置上使用者的電子郵件地址的產生方式。 選取 [使用者主體名稱]，使用完整主體名稱作為電子郵件地址或**使用者名稱**。
 - **驗證方法**：選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。
   - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
 - **要同步處理的電子郵件數量**：選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
-- **要同步處理的內容類型** (僅限 Nine Work)：選取想要同步至裝置的內容類型來源：
+- **要同步處理的內容類型** (僅限 Nine Work)：選取您想要與裝置同步處理的內容類型：
   - **連絡人**
   - **行事曆**
   - **工作**

@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184619"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977281"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
@@ -48,8 +48,8 @@ Windows 10 LOB 應用程式會簽署及上傳至 Intune 管理主控台，並可
 - **使用者內容**：當應用程式部署在使用者內容時，若使用者登入裝置，就會為裝置上的該使用者安裝受控應用程式。 請注意，在使用者登入裝置之前，應用程式安裝不會成功。 
     - 現代化企業營運應用程式和商務用 Microsoft Store 應用程式 (線上和離線) 可部署在使用者內容中，而且會支援「必要」和「可用」意圖。
     - 建置為 [使用者模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且會同時支援 [必要] 及 [可用] 意圖。 
-- **裝置內容**：當應用程式部署在裝置內容時，Intune　會將受控應用程式直接安裝在裝置上。
-    - 只有現代化企業營運應用程式和線上授權的商務用 Microsoft Store 應用程式可部署在裝置內容中，而且只會支援「必要」意圖。
+- **裝置內容**：當應用程式部署在裝置內容時，Intune 會將受控應用程式直接安裝在裝置上。
+    - 只有現代化企業營運應用程式和離線授權的商務用 Microsoft Store 應用程式可部署在裝置內容中，而且只會支援「必要」意圖。
     - 建置為 [機器模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且僅支援 [必要] 意圖。
 
 > [!NOTE]

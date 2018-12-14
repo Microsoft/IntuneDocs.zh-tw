@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186999"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112403"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
@@ -37,7 +37,7 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 
 - [設定網域](custom-domain-name-configure.md)
 - [設定 MDM 授權單位](mdm-authority-set.md)
-- [建立群組](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [建立群組](groups-add.md)
 - [設定公司入口網站](company-portal-app.md)
 - 指派 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)中的使用者授權
 - [取得 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 您可以讓使用者註冊其個人裝置以便使用 Intune 來管理，這稱為「攜帶您自己的裝置」或 BYOD。 完成必要條件並指派使用者授權之後，您的使用者就可以透過執行下列動作來註冊其裝置：
 - 移至[公司入口網站](https://portal.manage.microsoft.com)或
 - 下載「公司入口網站」應用程式。
-您也可以將線上註冊步驟的連結傳送給他們︰[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+您也可以將線上註冊步驟的連結傳送給他們：[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 

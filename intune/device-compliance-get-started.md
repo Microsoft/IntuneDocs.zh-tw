@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185982"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977349"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -40,6 +40,9 @@ ms.locfileid: "52185982"
 - 要求裝置層級不得高於 Mobile Threat Defense 層級
 
 您也可以使用裝置合規性政策，來監視裝置的合規性狀態。
+
+> [!IMPORTANT]
+> Intune 會遵循裝置簽入排程，以符合裝置上的所有合規性評估。 [深入了解裝置簽入排程](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
 
 <!---### Actions for noncompliance
 
@@ -156,21 +159,21 @@ Remember that you need to implement conditional access policies in addition to c
 
 會在所有的 Intune 註冊裝置上評估一組內建**合規性政策設定** (Azure 入口網站 > 裝置合規性)。 這些地方包括：
 
-- **將未指派合規性原則的裝置標記為**此屬性有兩個值：
+- **將未指派合規性原則的裝置標記為**：此屬性有兩個值：
 
   - **符合規範**：關閉安全性功能
   - **不符合規範** (預設值)：開啟安全性功能
 
   如果裝置沒有已指派的合規性原則，系統就會將此裝置視為不符合規範。 預設會將這些裝置標示為 [符合規範]。 如果您使用條件式存取，建議您將設定變更為 [不符合規範]。 如果使用者是因為沒有已指派的原則而不符合規範，公司入口網站就會列出 `No compliance policies have been assigned`。
 
-- **加強的越獄偵測**已啟用時，此設定會使 iOS 裝置更頻繁地簽入 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
+- **加強的越獄偵測**：在啟用時，此設定會使 iOS 裝置更頻繁地簽入 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
 
   啟用此設定會要求裝置：
   - 啟用 OS 層級的位置服務
   - 允許公司入口網站使用位置服務
   - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或實際將裝置移動 500 公尺以上來觸發評估。
 
-- **合規性狀態有效期限 (天)**：輸入裝置針對所有收到的合規性原則回報狀態的期間。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
+- **合規性狀態有效期限 (天)**：輸入一段期間，裝置要在期間內回報所有收到的合規性政策狀態。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
 
 所有裝置都有**內建裝置合規性政策** (Azure 入口網站 > [裝置合規性] > [原則合規性])。 您可以使用此內建原則來監視這些設定。
 

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182103"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112850"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182103"
 
 使用 Microsoft Intune App Wrapping Tool for iOS 啟用內部 iOS 應用程式的 Intune 應用程式保護原則，而不需要變更應用程式本身的程式碼。
 
-此工具為 Mac OS 命令列應用程式，可會建立應用程式的包裝函式。 處理應用程式之後，將[應用程式保護原則](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)部署給它，即可變更應用程式的功能。
+此工具為 Mac OS 命令列應用程式，可會建立應用程式的包裝函式。 處理應用程式之後，將[應用程式保護原則](app-protection-policies.md)部署給它，即可變更應用程式的功能。
 
 若要下載此工具，請參閱 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
 
@@ -439,5 +439,5 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 ### <a name="see-also"></a>另請參閱
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)</br>
-- [使用 Microsoft Intune 原則管理裝置的設定及功能](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [使用 SDK 讓應用程式能夠管理行動裝置應用程式](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [使用 SDK 讓應用程式能夠管理行動裝置應用程式](app-sdk.md)

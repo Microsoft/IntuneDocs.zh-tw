@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187832"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112947"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -67,7 +67,7 @@ ms.locfileid: "52187832"
 
 ## <a name="set-device-type-restrictions"></a>設定裝置類型限制
 
-您可以遵循下列步驟，變更裝置類型限制的設定。 這些限制不會影響已註冊的裝置。 使用此功能無法封鎖使用 [Intune PC 代理程式](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)所註冊的裝置。
+您可以遵循下列步驟，變更裝置類型限制的設定。 這些限制不會影響已註冊的裝置。 使用此功能無法封鎖使用 [Intune PC 代理程式](manage-windows-pcs-with-microsoft-intune.md)所註冊的裝置。
 
 1. 登入 Azure 入口網站。
 2. 選取 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
@@ -123,7 +123,7 @@ Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制�
 6. 選取 [儲存]。
 
 
-使用者會看到通知，告訴他們何時符合其已註冊裝置的限制。 例如，在 iOS 上，它看起來會像這樣：
+在 BYOD 註冊期間，當使用者達到已註冊裝置的限制時，他們會看到通知。 例如，在 iOS 上，它看起來會像這樣：
 
 ![iOS 裝置限制通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

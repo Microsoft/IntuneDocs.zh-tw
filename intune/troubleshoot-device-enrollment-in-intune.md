@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189719"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112914"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -53,7 +53,7 @@ ms.locfileid: "52189719"
 所有的裝置平台都可能發生這些問題。
 
 ### <a name="device-cap-reached"></a>已到達裝置上限
-**問題：** 使用者於註冊期間收到錯誤 (例如**公司入口網站暫時無法使用**)，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
+**問題**使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」)，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
 
 **解決方法：**
 
@@ -73,12 +73,12 @@ ms.locfileid: "52189719"
 
 > [!NOTE]
 > 
-> 您可以如[使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述，使用裝置註冊管理員帳戶來避免達到裝置註冊上限。
+> 您可以如[使用 Microsoft Intune 中的裝置註冊管理員註冊公司所擁有的裝置](device-enrollment-manager-enroll.md)中所述，使用裝置註冊管理員帳戶來避免達到裝置註冊上限。
 > 
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至裝置註冊管理員帳戶的使用者帳戶將無法完成註冊。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
-**問題：** 使用者在裝置上收到**公司入口網站暫時無法使用**錯誤。
+**問題**使用者在裝置上收到「公司入口網站暫時無法使用」錯誤。
 
 **解決方法：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "52189719"
 5.  如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
-**問題**：使用者收到 [MDM 授權單位未定義] 錯誤。
+**問題**使用者收到「MDM 授權單位未定義」錯誤。
 
 **解決方法：**
 
@@ -128,15 +128,15 @@ ms.locfileid: "52189719"
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
-**問題︰** 您無法建立原則或註冊裝置。
+**問題**您無法建立原則或註冊裝置。
 
-**解決方式︰** 在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
+**解決方法：** 在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>當您有多個已驗證的網域時，無法登入或註冊裝置
-**問題：** 當您將第二個已驗證的網域新增至您的 ADFS 時，可能會發生這個問題。 擁有第二個網域使用者主體名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
+**問題**當您將第二個已驗證的網域新增至您的 ADFS 時，可能會發生這個問題。 擁有第二個網域使用者主體名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
-<strong>解決方式︰</strong>在下列情況下，Microsoft Office 365 客戶必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體：
+<strong>解決方法：</strong>在下列情況下，Microsoft Office 365 客戶必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體：
 - 透過 AD FS 2.0 使用單一登入 (SSO)，以及
 - 在其組織中有多個提供使用者 UPN 尾碼的頂層網域 (例如 @contoso.com 或 @fabrikam.com)。
 
@@ -157,7 +157,7 @@ ms.locfileid: "52189719"
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」
-**問題：** 一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
+**問題**一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
@@ -206,7 +206,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**：使用者的 Android 裝置收到「設定檔安裝失敗」錯誤。
+**問題**使用者的 Android 裝置收到「設定檔安裝失敗」錯誤。
 
 **解決方法：**
 
@@ -220,7 +220,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 ### <a name="android-certificate-issues"></a>Android 憑證問題
 
-**問題**：使用者在裝置上收到下列訊息：「您無法登入，因為您的裝置缺少必要的憑證」。
+**問題**：使用者在其裝置上收到下列訊息：*您無法登入，因為您的裝置遺漏必要的憑證。*
 
 **解決方法 1**：
 
@@ -266,7 +266,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |錯誤訊息|問題|解決方案|
 |-------------|-----|----------|
 |NoEnrollmentPolicy|找不到註冊原則|請檢查所有註冊必要條件 (例如 APNs 憑證)，並確認已設定並啟用 [iOS as a platform]\(iOS 即平台)。 如需指示，請參閱[設定 iOS 和 Mac 裝置管理](ios-enroll.md)。|
-|DeviceCapReached|已經註冊過多行動裝置。|使用者註冊其他行動裝置之前，必須先從公司入口網站移除其目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示︰[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
+|DeviceCapReached|已經註冊過多行動裝置。|使用者註冊其他行動裝置之前，必須先從公司入口網站移除其目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
 |APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](users-add.md) 和[組織使用者和裝置](groups-add.md)。|
 |AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](ios-enroll.md)。|
 |DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS 8.0 版或更新版本。<br /><br />|確定您的使用者裝置正在執行 iOS 8.0 版或更新版本。|
@@ -280,7 +280,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
 - 受條件式存取原則所保護的使用者可能會遺失對公司資源的存取權。
 
-**解決方式︰** 與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
+**解決方法：** 與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
 
 當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步以重新連線 (使用者會看到**正在嘗試同步...** 訊息)。
 
@@ -315,7 +315,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**：使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。
+**問題**使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
@@ -330,7 +330,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 5.  確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
-**問題︰** 使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
+**問題**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
 - 資料探索管理員 (ddm) 元件或狀態管理員 (statmgr) 元件沒有處理來自 Intune 服務的訊息。
@@ -364,7 +364,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 | 使用 VPP 安裝公司入口網站 | 使用權杖：權杖位址 |
 | 驗證前以單一應用程式模式執行公司入口網站 | 是 |
 
-**解決方式**：若要修正此問題，您必須：
+**解決方案**：若要修正此問題，您必須：
 1. 判斷 VPP 權杖是否有問題並加以修正。
 2. 識別被封鎖的裝置。
 3. 抹除受影響的裝置。
@@ -396,16 +396,16 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 ## <a name="macos-issues"></a>macOS 問題
 
 ### <a name="macos-enrollment-errors"></a>macOS 註冊錯誤
-**錯誤訊息 1：** *您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*  
+**錯誤訊息 1：***您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*  
 
-**錯誤訊息 2：** *我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。*
+**錯誤訊息 2：***我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。*
 
-**問題：** 此訊息可能是由於下列任何原因所造成：  
+**問題**此訊息可能是由於下列任何原因所造成：  
 * 未正確設定 macOS 虛擬機器 (VM)  
 * 您已啟用裝置限制，要求裝置必須屬公司擁有或已在 Intune 中註冊裝置序號  
 * 裝置已註冊並仍指派給 Intune 中的其他人  
 
-**解決方式：** 首先，洽詢您的使用者，以判斷哪些問題會影響其裝置。 然後，完成下列最相關的解決方案：
+**解決方法：** 首先，洽詢您的使用者，以判斷哪些問題會影響其裝置。 然後，完成下列最相關的解決方案：
 * 如果使用者要註冊 VM 進行測試，請確認已完整設定，讓 Intune 能夠辨識其序號及硬體型號。 深入了解如何在 Intune 中[設定 VM](macos-enroll.md#enroll-virtual-macos-machines-for-testing)。  
 * 如果您的組織開啟封鎖個人 macOS 裝置的註冊限制，您必須手動[新增個人裝置的序號](corporate-identifiers-add.md#manually-enter-corporate-identifiers)至 Intune。  
 * 如果裝置仍指派給 Intune 中的其他使用者，其先前的擁有者並未使用公司入口網站應用程式將它移除或重設。 若要從 Intune 清除過時的裝置記錄：  
@@ -417,9 +417,9 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
 ### <a name="mobile-devices-disappear"></a>行動裝置消失
-**問題：** 成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失。 不過，裝置仍有管理設定檔並列於 CSS 閘道中。
+**問題**成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失。 不過，裝置仍有管理設定檔並列於 CSS 閘道中。
 
-**解決方式：** 發生這個問題的原因可能是：
+**解決方法：** 發生這個問題的原因可能是：
 - 您具有移除非加入網域裝置的自訂處理序，或是 
 - 使用者嘗試從訂用帳戶淘汰裝置。
 若要驗證及查看哪個處理序或使用者帳戶從 Configuration Manager 主控台移除裝置，請執行下列步驟。
@@ -450,7 +450,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
-**問題 ︰** 註冊失敗，並顯示**電腦已註冊**錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
+**問題**註冊失敗，並顯示「電腦已註冊」錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 發生這個失敗的原因可能是電腦：
 - 先前已註冊，或是
@@ -464,9 +464,9 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 1. 按兩下 [憑證]，並選擇 [電腦帳戶] > [下一步]，然後選取 [本機電腦]。
 1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。
 1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時刪除。
-1. 如果下列登錄機碼存在，請刪除它︰**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
+1. 如果下列登錄機碼存在，請將它刪除：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
 1. 嘗試重新註冊。
-1. 如果仍然無法註冊電腦，請尋找並刪除此機碼 (如果它存在)︰**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
+1. 如果仍然無法註冊電腦，請尋找並刪除此機碼 (如果存在)：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
 1. 嘗試重新註冊。
 
     > [!IMPORTANT]
@@ -491,7 +491,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |0x80043008、0x80CF3008|無法啟動 Microsoft Online Management Updates 服務。|連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](get-support.md)所述)。|
 |0x80043009、0x80CF3009|用戶端電腦已註冊到服務中。|您必須先淘汰用戶端電腦，才能重新將它註冊到服務中。|
 |0x8004300B、0x80CF300B|用戶端軟體安裝套件無法執行，因為不支援用戶端上執行的 Windows 版本。|Intune 不支援用戶端電腦上執行的 Windows 版本。|
-|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 在為 DLL 疑難排解時，您可能必須使用 [Microsoft 支援服務 KB198038：實用的封裝與部署工具](https://support.microsoft.com/kb/198038)中所述的工具。|
+|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 進行 DLL 的疑難排解時，可能必須使用 [Microsoft 技術支援 KB198038：實用的封裝與部署工具](https://support.microsoft.com/kb/198038)中所描述的工具。|
 |0x80cf0440|與服務端點的連線已終止。|試用或付費帳戶已暫止。 建立新的試用或付費帳戶，然後重新註冊。|
 
 

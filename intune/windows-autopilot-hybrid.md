@@ -1,12 +1,12 @@
 ---
-title: 使用 Windows Autopilot 為混合式 Active Directory 聯結裝置設定 Intune 註冊
-titleSuffix: Microsoft Intune
-description: 使用 Windows Autopilot 在 Intune 中註冊混合式 Active Directory 聯結裝置。
+title: 為混合式 Active Directory 聯結裝置設定註冊 - Windows Autopilot
+titleSuffix: ''
+description: 使用 Windows Autopilot 在 Microsoft Intune 中註冊混合式 Active Directory 聯結裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189957"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112437"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您將可以透過使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory 聯結裝置。 若要執行此作業，請遵循以下步驟。
@@ -68,7 +68,7 @@ ms.locfileid: "52189957"
 
 適用於 Active Directory 的 Intune 連接器，會在內部部署 Active Directory 網域中建立已註冊 Autopilot 的電腦。 裝載 Intune 連接器的電腦，必須在網域中具有建立電腦物件的權限。 
 
-在某些網域中，電腦不具備建立電腦的權限。 或者系統管理員可能不希望增加網域範圍的電腦帳戶限制。 在這些情況下，可以將權限委派給建立 Hybrid Azure AD 聯結裝置的組織單位。
+在某些網域中，電腦不具備建立電腦的權限。 此外，網域有套用至所有使用者和電腦的內建限制 (預設值為 10)，它們無法被委派權限來建立電腦物件。 因此，權限必須委派給在組織單位上裝載 Intune 連接器的電腦 (該組織單位即為建立混合式 Azure AD 聯結裝置的位置)。
 
 授與建立電腦權限的組織單位必須符合：
 - 在網域加入設定檔中輸入的組織單位

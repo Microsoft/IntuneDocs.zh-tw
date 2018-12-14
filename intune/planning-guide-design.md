@@ -1,5 +1,5 @@
 ---
-title: 建立設計
+title: 建立 Microsoft Intune 設計
 titlesuffix: Microsoft Intune
 description: 本文可協助您建立 Microsoft Intune 僅限雲端設計及實作的設計。
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186489"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112981"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -211,7 +211,7 @@ Intune 管理行動裝置以保護公司資料，讓終端使用者能夠從更�
 
 Intune 支援公司擁有的裝置和個人裝置。 如果您透過裝置註冊管理員或裝置註冊計劃註冊裝置，該裝置即視為公司擁有的。 例如，裝置透過 Apple 裝置註冊計劃 (DEP) 註冊，標記為公司，然後放在會接收目標公司原則和應用程式的裝置群組中。
 
-如需公司與 BYOD 使用案例的詳細資訊，請參閱[第 3 節︰決定使用案例的需求](planning-guide-requirements.md)。
+請參閱[第 3 節：決定使用案例的需求](planning-guide-requirements.md)以了解公司與 BYOD 使用案例的詳細資訊。
 
 ### <a name="bulk-enrollment"></a>大量註冊
 
@@ -402,7 +402,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 為線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange Online 或 Exchange 內部部署安裝或設定 Intune 服務對服務連接器。 深入了解如何安裝及設定 Intune 服務對服務連接器︰<!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange 內部部署](exchange-connector-install.md)
 

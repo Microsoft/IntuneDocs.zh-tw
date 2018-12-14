@@ -1,5 +1,5 @@
 ---
-title: 如何在 Intune 中將裝置分組為群組
+title: 在 Intune 中將裝置分組為群組
 titleSuffix: Microsoft Intune
 description: 了解如何將裝置分類成群組，以便管理。
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189513"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031750"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>將裝置分類成群組以便管理
+# <a name="categorize-devices-into-groups"></a>將裝置分類成群組
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您可以使用 Microsoft Intune 裝置類別，以自動根據您定義的類別將裝置新增至群組。 這將可讓您更輕鬆地管理這些裝置。
+若要讓管理裝置變得更輕鬆，您可以使用 Microsoft Intune 裝置類別，以自動根據您定義的類別將裝置新增至群組。
 
 裝置類別使用下列工作流程︰
 1. 建立使用者註冊其裝置時可從中選擇的類別。

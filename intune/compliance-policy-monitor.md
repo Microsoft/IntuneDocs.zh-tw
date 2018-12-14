@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178364"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977298"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -58,23 +58,26 @@ ms.locfileid: "52178364"
 
 此圖表顯示所有 Intune 已註冊裝置的合規性狀態。 裝置合規性狀態會保留在兩個不同的資料庫中：Intune 和 Azure Active Directory。 
 
+> [!IMPORTANT]
+> Intune 會遵循裝置簽入排程，以符合裝置上的所有合規性評估。 [深入了解裝置簽入排程](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+
 不同裝置合規性政策狀態的說明如下：
 
-- **符合規範**︰裝置已成功套用一或多個裝置合規性政策設定。
+- **符合規範**：裝置已成功套用一或多個裝置合規性政策設定。
 
-- **在寬限期內**︰裝置是以一或多個裝置合規性政策設定為目標。 但使用者尚未套用政策。 這表示裝置不符合規範，但仍在管理員定義的寬限期內。
+- **在寬限期內︰** 裝置是以一或多個裝置合規性政策設定為目標。 但使用者尚未套用政策。 這表示裝置不符合規範，但仍在管理員定義的寬限期內。
 
   - 深入了解[對不符合規範之裝置所要採取的動作](actions-for-noncompliance.md)。
 
 - **未評估**：新註冊之裝置的初始狀態。 或者，未獲指派合規性政策且沒有可檢查合規性之觸發程序的裝置。
 
-- **不符合規範**︰裝置無法套用一或多個裝置合規性政策設定。 或者，使用者尚未遵守政策。
+- **不符合規範︰** 裝置無法套用一或多個裝置合規性政策設定。 或者，使用者尚未遵守政策。
 
-- **裝置未同步處理︰** 裝置無法報告其裝置合規性政策狀態，原因為下列其中之一︰
+- **裝置未同步處理︰** 裝置無法報告其裝置合規性政策狀態，原因為下列其中之一：
 
-  - **不明**︰裝置已離線或因為其他原因無法與 Azure AD 或 Intune 通訊。
+  - **不明**：裝置已離線或因為其他原因無法與 Intune 或 Azure AD 通訊。
 
-  - **錯誤**︰裝置無法與 Intune 和 Azure AD 通訊，並收到錯誤訊息和原因。
+  - **錯誤**：裝置無法與 Intune 和 Azure AD 通訊，並收到錯誤訊息和原因。
 
 > [!IMPORTANT]
 > 已在 Intune 註冊但未鎖定任何裝置相容性原則目標的裝置，會納入此報表中的 [相容] 值區之下。

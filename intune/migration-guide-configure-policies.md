@@ -1,5 +1,5 @@
 ---
-title: 在 Intune 移轉期間設定裝置合規性與應用程式管理原則
+title: 在 Intune 移轉期間設定裝置與應用程式合規性
 titlesuffix: Microsoft Intune
 description: 本文提供 Microsoft Intune 移轉期間設定裝置合規性和應用程式管理原則的必要步驟。
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183786"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031818"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>移轉至 Microsoft Intune 時設定裝置合規性和應用程式管理原則
 
@@ -49,7 +50,7 @@ ms.locfileid: "52183786"
 
 在裝置註冊前先設定裝置群組，就能在註冊時使用裝置類別將裝置自動加入群組。 接著它們會自動接收其群組的裝置原則。 [開始使用群組](groups-get-started.md)。
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>工作 2︰使用資源存取設定檔 (Wi-Fi、VPN 和電子郵件憑證)
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>工作 2：使用資源存取設定檔 (Wi-Fi、VPN 和電子郵件憑證)
 
 資源存取設定檔會將憑證和存取設定提供給註冊的裝置。 如果您使用憑證式驗證，請[設定憑證](certificates-configure.md)。
 
@@ -59,7 +60,7 @@ ms.locfileid: "52183786"
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>直接匯入 iOS 組態設定檔 (選用)
 
--   **Apple Configurator iOS 設定檔 (iOS 7.1 及更新版本)：** 如果您現有的 MDM 解決方案使用 Apple Configurator 設定檔 (.mobileconfig 檔案)，Intune 可直接將它們匯入為自訂組態原則。
+-   **Apple Configurator iOS 設定檔 (iOS 7.1 和更新版本)：** 如果您現有的 MDM 解決方案使用 Apple Configurator 設定檔 (.mobileconfig 檔案)，Intune 可直接將它們匯入為自訂組態原則。
 
 -   **iOS 行動應用程式組態原則︰** 如果您現有的 MDM 解決方案使用 iOS 行動應用程式組態原則，只要它們符合 Apple 指定之屬性清單的 XML 格式，Intune 即可直接匯入它們。
 
@@ -81,7 +82,7 @@ ms.locfileid: "52183786"
 
 -   了解[如何建立裝置合規性原則](device-compliance-get-started.md)。
 
-### <a name="task-5-publish-and-deploy-apps"></a>工作 5︰發佈和部署應用程式
+### <a name="task-5-publish-and-deploy-apps"></a>工作 5：發佈和部署應用程式
 
 使用 Intune MDM 時，您可以透過要求應用程式自動安裝或以在公司入口網站提供的方式來提供應用程式。
 

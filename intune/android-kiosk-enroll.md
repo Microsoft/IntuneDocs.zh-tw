@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184823"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031988"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的註冊
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的 Intune 註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,7 +56,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 
 1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [裝置註冊] > [Android 註冊] > [Kiosk 及工作裝置註冊]。
 2. 選擇 [建立] 並填寫必要的欄位。
-    - **名稱**：鍵入將設定檔指派給動態裝置群組時，您要使用的名稱。
+    - **名稱**：輸入將設定檔指派給動態裝置群組時，您要使用的名稱。
     - **權杖到期日**：權杖到期的日期。 Google 最多可強制執行 90 天。
 3. 選擇 [建立] 以儲存該設定檔。
 
@@ -67,11 +67,11 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [群組] > [所有群組] > [新增群組]。
 2. 在 [群組] 刀鋒視窗中填寫必要的欄位，如下所示：
     - **群組類型**：安全性
-    - **群組名稱**：鍵入直覺式名稱 (例如 Factory 1 裝置)
+    - **群組名稱**：輸入直覺式名稱 (例如 Factory 1 裝置)
     - **成員資格類型**：動態裝置
 3. 選擇 [新增動態查詢]。
 4. 在 [動態成員資格規則] 刀鋒視窗中填寫欄位，如下所示：
-    - **新增動態成員資格規則**：簡單規則
+    - **新增動態成員資格規則**：簡易規則
     - **新增裝置，其中**：enrollmentProfileName
     - 在中間方塊中，選擇 [比對]。
     - 在最後一個欄位中，輸入您稍早建立的註冊設定檔名稱。

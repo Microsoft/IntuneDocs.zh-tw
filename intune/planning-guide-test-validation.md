@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179927"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112454"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -52,7 +52,7 @@ ms.locfileid: "52179927"
 
 -   [如何取得 Microsoft Intune 的管理支援](get-support.md)
 
--   [Microsoft Intune 的連絡電話協助支援](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Microsoft Intune 的連絡電話協助支援](get-support.md)
 
 ## <a name="functional-validation-testing"></a>功能驗證測試
 

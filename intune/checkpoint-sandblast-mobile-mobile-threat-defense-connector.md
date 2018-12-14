@@ -1,6 +1,6 @@
 ---
-title: Check Point SandBlast MTD 與 Microsoft Intune
-titlesuffix: ''
+title: 設定 Check Point SandBlast MTD
+titlesuffix: Microsoft Intune
 description: 深入了解整合 Intune 與 Check Point SandBlast Mobile Threat Defense 來控制行動裝置對公司資源的存取。
 keywords: ''
 author: brenduns
@@ -15,13 +15,13 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: f60cd89992eb459849d849aca4b9265d393c29f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180420"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112522"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense 連接器與 Intune
 
@@ -72,7 +72,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
 
-偵測網路中的 **中間人攻擊** 等威脅，並根據裝置風險防止同步公司檔案。
+偵測網路中 **中間人攻擊** 等威脅，並根據裝置風險防止同步公司檔案。
 
 **偵測到網路威脅時封鎖 SharePoint Online：**
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 的條件式存取
-titlesuffix: ''
+title: 條件式存取案例
+titlesuffix: Microsoft Intune
 description: 了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187662"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112471"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -45,7 +45,7 @@ Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合
 
 -   深入了解 [Intune 裝置相容性](device-compliance.md)。
 
--   深入了解[透過 Intune 使用條件式存取來保護電子郵件、Office 365 和其他服務](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+-   深入了解[透過 Intune 使用條件式存取來保護電子郵件、Office 365 和其他服務](app-based-conditional-access-intune.md)。
 
 > [!NOTE]
 > 在 Android 裝置上，當您針對 Sharepoint Online 啟用以裝置為準的存取時，使用者必須啟用註冊裝置上的 [啟用瀏覽器存取] 選項，如下所示：
@@ -125,7 +125,7 @@ Intune 已與 Mobile Threat Defense 廠商建立合作夥伴關係，可提供�
 
 Intune 與 Mobile Threat Defense 整合在以裝置風險為依據的條件式存取決策中扮演一個重要因素。
 
--   深入了解 [Intune Mobile Threat Defense](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense)。
+-   深入了解 [Intune Mobile Threat Defense](mobile-threat-defense.md)。
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows 電腦的條件式存取
 

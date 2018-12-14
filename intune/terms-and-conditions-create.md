@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181355"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032294"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>管理貴公司的使用者存取條款及條件
+# <a name="terms-and-conditions-for-user-access"></a>使用者存取的條款及條件
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,15 +50,15 @@ ms.locfileid: "52181355"
 
    - **顯示名稱**：Azure 入口網站中條款的名稱。 使用者不會看見此名稱。
 
-   - **描述**︰可協助您在 Azure 入口網站中識別這組條款的選擇性詳細資料。
+   - **描述**：可協助您在 Azure 入口網站中識別這組條款的選擇性詳細資料。
 
 4. 選擇 [定義使用條款] 旁的箭頭，以開啟 [條款及條件] 窗格，然後輸入下列資訊：
 
    ![終端使用者接受條款及條件畫面的螢幕擷取畫面，其中包含條款的摘要](./media/terms-summary-create.png)
 
    - **標題**：使用者在公司入口網站 [摘要] 上方所看見的條款名稱。
-   - **條款摘要**︰當使用者接受條款時說明其意義的文字。 例如，「一旦註冊您的裝置，即表示您同意 Contoso 所訂的使用條款。 在繼續進行之前，請先仔細閱讀條款」。
-   - **條款及條件**︰使用者會看到且必須接受或拒絕的條款及條件。
+   - **條款摘要**：使用者在接受條款時，說明其意義的文字。 例如，「一旦註冊您的裝置，即表示您同意 Contoso 所訂的使用條款。 在繼續進行之前，請先仔細閱讀條款」。
+   - **條款及條件**：使用者看到的條款及條件，他們必須接受或拒絕。
 
 5. 選擇 [確定] > [建立]。
 

@@ -1,11 +1,11 @@
 ---
-title: 決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理
+title: 使用 Microsoft Intune 針對行動應用程式管理準備應用程式
 description: 本主題中的資訊可協助您決定使用 App Wrapping Tool 和 App SDK 時機，以讓您的自訂企業營運應用程式得以使用行動應用程式管理原則。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181967"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112420"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -35,7 +35,7 @@ App Wrapping Tool 主要用於**內部**企業營運 (LOB) 應用程式。 此�
 
 應用程式包裝工具**不**支援 Apple App Store 或 Google Play 商店中的應用程式。 它也不支援某些需要開發人員整合的功能 (請參閱下列的功能比較表)。
 
-如需 Intune 中未註冊裝置上應用程式保護原則之 App Wrapping Tool 的詳細資訊，請參閱[保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
+如需 Intune 中未註冊裝置上應用程式保護原則之 App Wrapping Tool 的詳細資訊，請參閱[保護未在 Microsoft Intune 註冊之裝置上的企業營運應用程式和資料](apps-add.md)。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用 App Wrapping Tool 的原因
 * 您的應用程式沒有內建資料保護功能
@@ -98,7 +98,7 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
 |完整抹除|X|X|
-|選擇性抹除 <br></br>**注意：** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|選擇性抹除 <br></br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
 |目標應用程式組態|X||
 |支援多重身分識別|X||
@@ -117,4 +117,4 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
   - [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
   - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
-  - [使用 SDK 讓應用程式進行行動應用程式管理](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [使用 SDK 讓應用程式進行行動應用程式管理](app-sdk.md)

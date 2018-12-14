@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183038"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112369"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 的已知問題
 
@@ -31,7 +31,7 @@ ms.locfileid: "52183038"
 
 若要回報此處未列的 Bug，可[提出支援要求](get-support.md)。
 
-如果您想要要求在 Intune 中新增功能，請考慮在 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)網站上提出報告。
+如果您想要提出 Intune 新功能的要求，您可以填寫 [Microsoft Intune 意見反應](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) \(英文\) 報表。
 
 ## <a name="migration"></a>移轉
 
@@ -44,13 +44,13 @@ ms.locfileid: "52183038"
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 舊版電腦用戶端功能只在 Silverlight 主控台提供
 
-Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows 10 的能力。 如需詳細資訊，請參閱 [Azure 主控台上的 Intune 和電腦用戶端上的舊版 Intune](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure)。
+Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows 10 的能力。 如需詳細資訊，請參閱 [Azure 主控台上的 Intune 和電腦用戶端上的舊版 Intune](intune-legacy-pc-client.md)。
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>由 Intune 在移轉期間所建立的群組，可能會影響其他 Microsoft 產品的功能
 
 當您從 Intune 移轉到 Azure 入口網站時，可能會看到名為 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新群組。 此群組包含 Azure Active Directory 中的所有使用者，而非只有 Intune 授權的使用者。 如果您預期有某些不屬於任何群組的現有或新使用者，此使用方式可能會對其他 Microsoft 產品造成問題。
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>用於移轉原則的「狀態」刀鋒視窗無法運作
+### <a name="status-blades-for-migrated-policies-dont-work"></a>已移轉之原則的 [狀態] 刀鋒視窗無法運作
 
 您無法在 Azure 入口網站中，檢視從 Azure 傳統入口網站移轉之原則的狀態資訊。 但是，您可以在傳統入口網站中繼續檢視這些原則的報表。 若要檢視移轉之設定原則的狀態資訊，請在 Azure 入口網站中重新建立它們。
 
@@ -60,7 +60,7 @@ Azure 入口網站上的 Intune 提供了使用 Windows MDM 註冊管理 Windows
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>特定 VPP 應用程式的多個應用程式安裝提示
 您可能會看到終端使用者裝置上已安裝之特定 VPP 應用程式的多個應用程式安裝提示。 如果您將已上傳至 Intune Azure 入口網站之 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項設定為 [開啟]，就會發生此問題。    
 
-若要解決此問題，您可以停用 VPP 權杖的 [Automatic app updates] \(自動應用程式更新\) 選項。 若要執行這項作業，請在 Azure 入口網站中，開啟 Microsoft Intune。 從 Intune 選取 [用戶端應用程式] >  [iOS VPP 權杖]。 接下來，選取已部署受影響應用程式的 VPP 權杖，然後選取 [編輯] > [Automatic app updates] \(自動應用程式更新\) > [關閉] > [儲存]。 或者，您可以停止將受影響的應用程式部署為 VPP 應用程式，這將會停止提示。    
+若要解決此問題，您可以停用 VPP 權杖的 [自動應用程式更新] 選項。 若要執行這項作業，請在 Azure 入口網站中，開啟 Microsoft Intune。 從 Intune 選取 [用戶端應用程式] >  [iOS VPP 權杖]。 接下來，選取已部署受影響應用程式的 VPP 權杖，然後選取 [編輯] > [Automatic app updates] \(自動應用程式更新\) > [關閉] > [儲存]。 或者，您可以停止將受影響的應用程式部署為 VPP 應用程式，這將會停止提示。    
 
 這是目前版本中的已知問題。 我們將在未來推出修正程式來解決此問題。 實作修正程式之後，您的使用者就不會再看到多個應用程式安裝提示。
 

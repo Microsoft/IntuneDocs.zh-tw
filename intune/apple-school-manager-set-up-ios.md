@@ -1,12 +1,12 @@
 ---
-title: 設定 Apple School Manager 註冊計劃註冊 iOS 裝置
+title: 適用於 iOS 裝置的 Apple School Manager 計劃註冊
 titleSuffix: Microsoft Intune
 description: 了解如何設定 Apple School Manager 註冊計劃向 Intune 註冊公司擁有的 iOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190331"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032413"
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 啟用 iOS 裝置註冊
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>使用 Apple School Manager 設定 iOS 裝置註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文將協助您針對透過 [Apple School Manager](https://school.apple.com/) 計劃購買的裝置來啟用 iOS 裝置註冊。 使用 Intune 與 Apple School Manager，您甚至不用碰到它們即可註冊大量的 iOS 裝置。 當學生或老師啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
+您可以將 Intune 設定為可註冊透過 [Apple School Manager](https://school.apple.com/) 計畫所購買的 iOS 裝置。 使用 Intune 與 Apple School Manager，您甚至不用碰到它們即可註冊大量的 iOS 裝置。 當學生或老師啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
 若要啟用 Apple School Manager 註冊，您可以使用 Intune 和 Apple School Manager 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
 
@@ -108,8 +108,8 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
     有兩種方式可通知使用者其裝置收到監督：
 
-   - 鎖定畫面指出：「此 iPhone 受 Contoso 管理。」
-   - [設定] > [一般] > [關於] 畫面指出：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
+   - 鎖定畫面顯示：「此 iPhone 受 Contoso 管理。」
+   - [設定] > [一般] > [關於] 畫面顯示：「此 iPhone 受監督。 Contoso 可以監視您的網際網路流量並找到此裝置。」
 
      > [!NOTE]
      > 註冊為不受監督的裝置，僅可透過使用 Apple Configurator 重設為受監督。 以這種方式將裝置重設，需要使用 USB 纜線將 iOS 裝置連接至 Mac。 在 [Apple Configurator 文件](http://help.apple.com/configurator/mac/2.3)上，深入了解這項作業。
@@ -124,7 +124,7 @@ Apple School Manager 註冊無法搭配 [Apple 的裝置註冊計劃](device-enr
 
 11. 選擇 [確定]。
 
-12. 選擇 [設定助理設定]，以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+12. 選擇 [設定助理設定]，對下列設定檔進行設定：![設定輔助程式自訂。](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 設定                  |                                                                                               說明                                                                                               |

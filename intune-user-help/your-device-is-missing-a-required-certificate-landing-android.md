@@ -1,11 +1,12 @@
 ---
 title: 您的裝置遺失必要的憑證 | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: 您的裝置遺失公司支援人員所要求的憑證。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150747"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032209"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>您的裝置遺漏必要的憑證
 
@@ -38,6 +39,6 @@ ms.locfileid: "43150747"
 
 您應該先查看裝置是否[遺失通常已預先安裝的憑證](your-device-is-missing-a-preinstalled-certificate-android.md)。
 
-如果仍然有問題，您公司的支援人員可能會[要求您安裝第二個憑證以獲得額外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
+如果仍然無法解決憑證問題，您公司的支援人員可能會[要求您安裝第二個憑證以獲得額外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

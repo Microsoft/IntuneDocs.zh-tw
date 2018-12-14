@@ -1,7 +1,7 @@
 ---
-title: 適用於 Windows 裝置的 Intune 功能 (依註冊方法列出)
+title: 適用於 Windows 裝置的 Intune 註冊方法的功能
 titlesuffix: Microsoft Intune
-description: 了解每種註冊方法針對 Windows 裝置所支援的功能。
+description: 適用於 Windows 裝置的每個註冊方法的功能。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189804"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032124"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>適用於 Windows 裝置的功能 (依註冊方法列出)
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法的功能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司資料的方式。 裝置必須先在 Intune 服務中註冊。 有數種方法可以註冊員工裝置。 每種方法都有不同的最佳做法和功能，如下表所示。
+有數種方法可以在 Intune 中註冊員工裝置。 每種方法都有不同的最佳做法和功能，如下表所示。
 
 ## <a name="best-practices-by-enrollment-method"></a>最佳做法 (依註冊方法列出)
 | **最佳做法** | **[Azure AD 加入](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 加入 (使用 Autopilot)](enrollment-autopilot.md)** |**[大量](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

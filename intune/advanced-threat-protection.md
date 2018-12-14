@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180229"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167989"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取啟用 Windows Defender ATP
 
 Windows Defender 進階威脅防護 (ATP) 和 Microsoft Intune 能夠一起運作以協助防止安全性缺口，並協助限制因缺口而在組織內所造成的影響。
 
-此功能適用於：Windows 10 裝置
+本功能適用於：Windows 10 裝置
 
 例如，有人傳送內嵌惡意程式碼的 Word 附件給組織內的使用者。 使用者開啟該附件並啟用內容。 權限提升的攻擊將會展開，而來自遠端電腦的攻擊者將會擁有受害者裝置的系統管理員權限。 攻擊者接著會從遠端存取該使用者的其他裝置。
 
@@ -89,10 +89,10 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 5. 針對 [設定檔類型]，選取 [Windows Defender ATP (Windows 10 Desktop)]。
 6. 設定這些設定：
 
-  - **Windows Defender ATP 用戶端設定套件類型**：選取 [上架] 可將設定套件新增至設定檔。 選取 [下架] 可從設定檔移除設定套件。
+  - **Windows Defender ATP 用戶端設定套件類型**：選取 [上架] 以將新的設定套件新增至設定檔。 選取 [下架] 可從設定檔移除設定套件。
   
     > [!NOTE] 
-    > 如果您已經與 Windows Defender ATP 正確建立連線，則 Intune 會自動將您的組態設定檔**上架**。
+    > 如果您已經正確建立與 Windows Defender ATP 的連線，Intune 會自動為您**上架**組態設定檔，且 [Windows Defender ATP 用戶端設定套件類型] 設定將無法使用。
   
   - **所有檔案的範例共用**：[啟用] 可收集範例並與 Windows Defender ATP 共用。 例如，如果您看到可疑檔案，可將它提交至 Windows Defender ATP 以進行深入分析。 **未設定**不與 Windows Defender ATP 共用任何範例。
   - **加快遙測回報頻率**：針對高風險的裝置 [啟用] 此設定，以便更頻繁地將遙測回報給 Windows Defender ATP 服務。
@@ -110,9 +110,9 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 4. 在 [平台] 中，選取 [Windows 10 及更新版本]。
 5. 在 [Windows Defender ATP] 設定中，將 [要求裝置不高於電腦風險分數] 設定為您偏好的層級：
 
-  - **清除**︰這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
-  - **低**︰裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅層級的裝置，將會不符合規範。
-  - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
+  - **清除**：這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
+  - **低**：裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅層級的裝置，將會不符合規範。
+  - **中**：如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
   - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置，都會被評估為符合規範。
 
 6. 選取 [確定]，然後選取 [建立] 以儲存您的變更 (並建立原則)。

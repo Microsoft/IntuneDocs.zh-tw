@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188050"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112539"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -102,4 +102,4 @@ DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播
 
 ## <a name="next-steps"></a>接下來的步驟
 
-- [在 Azure 上使用 Intune 管理 Windows 裝置時的考量](/intune-classic/deploy-use/intune-on-azure)。
+- [在 Azure 上使用 Intune 管理 Windows 裝置時的考量](intune-legacy-pc-client.md)。

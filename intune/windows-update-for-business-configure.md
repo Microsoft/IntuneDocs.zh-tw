@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189252"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112760"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -28,7 +28,7 @@ ms.locfileid: "52189252"
 
 藉由使用「商務用 Windows Update」，您將可以簡化更新管理體驗。 您無須針對多組裝置核准個別的更新。 您可以藉由設定更新首度發行策略，對您的環境進行風險管理。 而 Windows Update 則會確保在適當的時間安裝更新。 Microsoft Intune 可讓您在裝置上設定更新設定，並可讓您將更新安裝延後。 Intune 不會儲存更新，只會儲存更新原則指派。 裝置會直接存取 Windows Update 以取得更新。 使用 Intune 來設定及管理 **Windows 10 更新通道**。 更新通道是一組設定，用來設定安裝 Windows 10 更新的時機和方式。 例如，您可以進行下列設定：
 
-- **Windows 10 維護通道**：選擇您希望裝置群組從中收到更新的維護通道。 下列是可用的通道： 
+- **Windows 10 維護通道**：選擇您要讓裝置群組接收更新的維護通道。 下列是可用的通道： 
   - 半年通道
   - 半年通道 (已設定目標)
   - Windows 測試人員 - 快
@@ -36,12 +36,12 @@ ms.locfileid: "52189252"
   - 發行 Windows 測試人員 
       
   如需有關可用維護通道的詳細資料，請參閱 [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)。
-- **延遲設定**︰設定更新延遲設定，以延遲裝置群組的更新安裝。 請使用這些設定來分階段進行更新首度發行，以便全程檢閱進度。
-- **暫停**︰更新推出期間發生問題，您可以延後安裝更新。 
-- **維護期間**︰設定可以安裝更新的時數。
-- **更新類型**︰選擇要安裝的更新類型。 例如，高品質更新、功能更新或驅動程式。
-- **安裝行為**︰設定安裝更新的方式。 例如，裝置會在安裝後自動重新啟動嗎？
-- **對等下載**︰您可以選擇設定對等下載。 如有設定，當裝置完成下載更新時，其他裝置可以從該裝置下載更新。 此設定可加速下載程序。
+- **延遲設定**：設定更新延遲設定，以延遲裝置群組的更新安裝。 請使用這些設定來分階段進行更新首度發行，以便全程檢閱進度。
+- **暫停**︰如果更新推出期間發生問題，您可以延後安裝更新。 
+- **維護時間範圍**：設定可以安裝更新的時間。
+- **更新類型**：選擇要安裝的更新類型。 例如，高品質更新、功能更新或驅動程式。
+- **安裝行為**：設定安裝更新的方式。 例如，裝置會在安裝後自動重新啟動嗎？
+- **對等下載**：您選擇要設定對等下載。 如有設定，當裝置完成下載更新時，其他裝置可以從該裝置下載更新。 此設定可加速下載程序。
 
 建立更新響鈴之後，將它們指派給裝置群組。 藉由使用更新響鈴，您可以建立可反映您業務需求的更新策略。 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
@@ -78,27 +78,27 @@ ms.locfileid: "52189252"
 3. 輸入名稱、描述 (選擇性)，然後選擇 [設定]。
 4. 在 [設定] 中，輸入下列資訊：
 
-   - **維護通道**：設定裝置從中接收 Windows 更新的通道。
-   - **Microsoft 產品更新**︰選擇是否要從 Microsoft Update 掃描應用程式更新。
-   - **Windows 驅動程式**︰選擇是否要在更新期間排除 Windows Update 驅動程式。
-   - **自動更新行為**：選擇如何安裝自動更新、何時重新啟動或重新開機。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)。
-     - **自動行為頻率**如果您針對更新行為選取 [在排定的時間自動安裝並重新啟動]，就會顯示此設定。 請使用此設定來排定何時安裝更新，包括週、日及時間。
+   - **維護通道**：設定裝置接收 Windows 更新的通道。
+   - **Microsoft 產品更新**：選擇要從 Microsoft Update 掃描應用程式更新。
+   - **Windows 驅動程式**：選擇要在更新期間排除 Windows Update 驅動程式。
+   - **自動更新行為**：選擇要如何安裝自動更新、何時重新啟動或重新開機。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)。
+     - **自動行為頻率**：如果您針對更新行為選取 [在排定的時間自動安裝並重新啟動]，就會顯示此設定。 請使用此設定來排定何時安裝更新，包括週、日及時間。
 
    - **重新啟動檢查**：預設為啟用。 當您重新啟動裝置時，會進行一些檢查，包括檢查作用中的使用者、電池電量、執行中的遊戲等。 若要在重新啟動裝置時略過這些檢查，請選取 [略過]。
 
-   - **品質更新延遲期間 (天)**：輸入品質更新延遲的天數。 最多可以延遲接收這些「品質更新」至其發行後 30 天。
+   - **品質更新延遲期間 (天)**：輸入品質更新的延遲天數。 最多可以延遲接收這些「品質更新」至其發行後 30 天。
 
      「品質更新」通常會修正和改善現有的 Windows 功能，而且會在每個月的第二個星期二發佈。 透過商務用 Windows Update 的「品質更新」只會接收這些更新 (「搶鮮版」)，但 Microsoft 可能會隨時發行其他更新。 您可以定義在 Windows Update 提供「品質更新」之後，是否要延遲接收「品質更新」，以及要延遲多久。 如需詳細資訊，請參閱[使用商務用 Windows Update 來部署更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)。
 
-   - **功能更新延遲期間 (天)**：輸入功能更新延遲的天數。 最多可以延遲接收「功能更新」至其發行後 180 天。
+   - **功能更新延遲期間 (天)**：輸入功能更新的延遲天數。 最多可以延遲接收「功能更新」至其發行後 180 天。
 
      「功能更新」通常是 Windows 的新功能。 在您設定 [維護通道] 設定之後，便可以定義在 Windows Update 提供「功能更新」之後，是否要延遲接收「功能更新」，以及要延遲多久。
 
-     例如：**若 [維護通道] 已設定為 [半年通道 (已設定目標)] 且延遲期間為 30 天**：假設 Windows Update 在 1 月以 [半年通道 (已設定目標)] 的形式首次公開提供「功能更新 X」。 裝置要等到 2 月 (30 天後) 才會接收更新。
+     例如：**如果 [維護通道] 設定為 [半年通道 (已設定目標)]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 裝置要等到 2 月 (30 天後) 才會接收更新。
 
-     **若 [維護通道] 已設定為 [半年通道] 且延遲期間為 30 天**：假設 Windows Update 在 1 月以 [半年通道 (已設定目標)] 的形式首次公開提供「功能更新 X」。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置會在此「半年通道」發行的 30 天後收到「功能更新」，而在 5 月進行更新。
+     **如果 [維護通道] 設定為 [半年通道]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置會在此「半年通道」發行的 30 天後收到「功能更新」，而在 5 月進行更新。
 
-   - **傳遞最佳化下載模式**選擇裝置下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+   - **傳遞最佳化下載模式**：選擇裝置下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
 
 5. 完成時，選取 [確定]。 在 [建立更新通道] 中，選取 [建立]。
 
@@ -131,14 +131,14 @@ ms.locfileid: "52189252"
 ### <a name="review-update-compliance-using-oms"></a>使用 OMS 檢視更新合規性
 您可以使用稱為「更新合規性」的免費解決方案來監視 Windows 10 更新的首度發行。 如需詳細資訊，請參閱[使用Update Compliance 來監視 Windows Updates](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 當您使用此解決方案時，可以將商業識別碼部署至任何您用 Intune 管理、且要報告更新合規性的 Windows 10 裝置。
 
-在 Intune 中，您可以使用自訂原則的 OMA-URI 設定來設定商業識別碼。 如需詳細資訊，請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。   
+在 Intune 中，您可以使用自訂原則的 OMA-URI 設定來設定商業識別碼。 如需詳細資訊，請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](custom-settings-windows-10.md)。   
 
 用於設定商業識別碼的 OMA-URI (區分大小寫) 路徑是：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 例如，您可以在 [新增或編輯 OMA-URI 設定] 中使用下列值：
 
 - **設定名稱**：Windows Analytics 商業識別碼
-- **設定描述**︰設定 Windows Analytics 解決方案的商業識別碼
+- **設定描述**：設定 Windows Analytics 解決方案的商業識別碼
 - **OMA-URI** (區分大小寫)：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **資料類型**：字串
 - **值**：<使用 OMS 工作區中的 [Windows 遙測] 索引標籤上顯示的 GUID>
@@ -174,4 +174,4 @@ Windows Holographic for Business 支援下列設定：
 
 - **自動更新行為**
 - **Microsoft 產品更新**
-- **服務通道**：支援 [半年通道] 和 [半年通道 (已設定目標)] 選項
+- **維護通道**：支援 [半年通道] 和 [半年通道 (已設定目標)] 選項

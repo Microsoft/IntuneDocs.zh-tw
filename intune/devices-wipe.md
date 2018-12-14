@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189192"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861008"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -81,7 +81,7 @@ ms.locfileid: "52189192"
 
 |資料類型|iOS|
 |-------------|-------|
-|Intune 安裝的公司應用程式和相關資料|已將應用程式解除安裝。 將會移除公司應用程式資料。<br /><br />使用行動裝置應用程式管理之 Microsoft 應用程式的應用程式資料會予以移除。 應用程式不會移除。|
+|Intune 安裝的公司應用程式和相關資料|**使用公司入口網站安裝的應用程式**：會移除所有應用程式資料和應用程式。 這些應用程式包括原本從 App Store 安裝，以及之後以公司應用程式受控的應用程式。 <br /><br /> **使用行動裝置應用程式管理及從 App Store 安裝的 Microsoft 應用程式：** 會移除個人應用程式資料。 不會移除公司應用程式資料和應用程式。|
 |設定|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|

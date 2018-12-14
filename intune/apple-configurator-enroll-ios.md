@@ -1,5 +1,5 @@
 ---
-title: 註冊 iOS 裝置 - Apple Configurator 與設定助理
+title: iOS 裝置註冊 - Apple Configurator 與設定助理
 titleSuffix: Microsoft Intune
 description: 了解如何使用 Apple Configurator 透過設定助理，來註冊公司擁有的 iOS 裝置。
 keywords: ''
@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: c36a87f6b0bd3e869275f5ac8089cc4fa4926698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 6a49ee917540c9378f69dc6a025fbe5f8429767c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180360"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112811"
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 註冊 iOS 裝置
+# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>使用 Apple Configurator 設定 iOS 裝置註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
