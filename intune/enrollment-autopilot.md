@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829099"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112849"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 註冊 Windows 裝置  
-Windows Autopilot 簡化了註冊裝置的過程。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
+Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
 
-## <a name="prerequisites"></a>必要條件
-- [已啟用 Windows 自動註冊](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+## <a name="prerequisites"></a>先決條件
+- [已啟用 Windows 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何在 Intune 中取得 CSV 以進行匯入
@@ -82,9 +82,9 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
     - **自我部署 (預覽)**：(需要最新的 [Windows 10 Insider Preview 組建](https://docs.microsoft.com/windows-insider/at-work-pro/)) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不需要使用者認證，也能註冊裝置。
 5. 在 [加入Azure AD] 方塊中，選擇 [已加入 Azure AD]。
 6. 選擇 [全新體驗 (OOBE)]、設定下列選項，然後選擇 [儲存]：
-    - **語言 (區域)**\*：選擇要用於裝置的語言。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
+    - **語言 (地區)**\*：選擇要為裝置使用的語言。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
     - **自動設定鍵盤**\*：如果選取了 [語言 (區域)]，請選擇 [是] 跳過鍵盤選取頁面。 僅當您針對 [部署模式] 選擇 [自我部署] 時，此選項才可使用。
-    - **授權合約**：(Windows 10，版本 1709 或更新版本) 選擇是否要向使用者顯示授權合約。
+    - **使用者授權合約 (EULA)**：(Windows 10，版本 1709 或更新版本) 選擇是否要向使用者顯示授權合約。
     - **隱私權設定**：選擇是否要向使用者顯示隱私權設定。
     - **隱藏變更帳戶選項 (僅限 Windows 測試人員)**：選擇 [隱藏] 以防止在公司登入和網域錯誤頁面上顯示變更帳戶選項。 此選項需要[在 Azure Active Directory 中設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **使用者帳戶類型**：選擇使用者的帳戶類型 ([系統管理員] 或 [標準] 使用者)。
@@ -172,5 +172,5 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 > - 一律建立與「整個」enrollmentProfileName 值比對的動態群組規則
 > - 永遠不要將 Autopilot 或 Apple DEP 設定檔命名為開頭是 "OfflineAutopilotprofile-" 的名稱。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 您為已註冊的 Windows 10 裝置設定 Windows Autopilot 之後，請了解如何管理這些裝置。 如需詳細資訊，請參閱[什麼是 Microsoft Intune 裝置管理？](https://docs.microsoft.com/intune/device-management)
