@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829176"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168023"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -35,14 +35,14 @@ Microsoft Intune App SDK for Android 可讓您將 Intune 應用程式保護原�
 Intune App SDK 包含下列檔案：
 
 * **Microsoft.Intune.MAM.SDK.aar**：SDK 元件 (支援程式庫 JAR 檔案除外)。
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**：必要的類別，可在使用 Android v4 支援程式庫的應用程式中啟用 MAM。
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**：必要的類別，可在使用 Android v7 支援程式庫的應用程式中啟用 MAM。
-* **Microsoft.Intune.MAM.SDK.Support.v17.jar**：必要的類別，可在使用 Android v17 支援程式庫的應用程式中啟用 MAM。 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：必要的類別，可在使用 `android.support.text` 套件 Android 支援程式庫類別的應用程式中啟用 MAM。
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在運用 Android v4 支援程式庫的應用程式中啟用 MAM 所需的類別。
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在運用 Android v7 支援程式庫的應用程式中啟用 MAM 所需的類別。
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**：在運用 Android v17 支援程式庫的應用程式中啟用 MAM 所需的類別。 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：在 `android.support.text` 套件中運用 Android 支援程式庫之應用程式中啟用 MAM 所需的類別。
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**：這個 jar 包含 Android 系統類別的虛設常式，它們只出現在較新的裝置上，但可由 MAMActivity 中的方法參考。 較新的裝置會忽略這些虛設常式類別。 只有當應用程式對衍生自 MAMActivity 的類別執行反映時，才需要這個 jar，大部分的應用程式並不需要包含它。 如果使用這個 jar，必須仔細排除它所有來自 ProGuard 的類別。 它們全都位在 "android" 根套件下
-* **com.microsoft.intune.mam.build.jar**：Gradle 外掛程式，可[輔助整合 SDK](#build-tooling)。
+* **com.microsoft.intune.mam.build.jar**：Gradle 外掛程式，[有助於整合 SDK](#build-tooling)。
 * **CHANGELOG.txt**：提供每個 SDK 版本中的變更記錄。
-* **THIRDPARTYNOTICES.TXT**：確認將會編譯至應用程式中的協力廠商及/或 OSS 程式碼的屬性通知。
+* **THIRDPARTYNOTICES.TXT**：確認會編譯至應用程式中的協力廠商及/或 OSS 程式碼的屬性通知。
 
 ## <a name="requirements"></a>需求
 
@@ -185,7 +185,7 @@ Gradle 外掛程式具有 [Javassist](http://jboss-javassist.github.io/javassist
 您可以使用位於 `BuildTool\bin` 目錄的協助程式指令碼來叫用命令列工具。
 
 工具必須要有下列的參數。
-| 參數 | 說明 |
+| 參數 | 描述 |
 | -- | -- |
 | `--input` | 以分號分隔的 jar 檔案與類別檔案目錄清單，以供修改。 這應該包括所有您想要重寫的 jar/目錄。 |
 | `--output` | 以分號分隔的 jar 檔案與目錄清單，以儲存修改過的類別。 每個輸入項目都應該要有一個輸出項目，且必須按照順序提列。 |
@@ -571,11 +571,11 @@ public interface MAMNotificationReceiver {
 
 下列通知會傳送至應用程式，且其中部分通知可能需要應用程式參與：
 
-* **WIPE_USER_DATA**︰這個通知是在 `MAMUserNotification` 類別中傳送。 收到這項通知時，應用程式應該刪除與 `MAMUserNotification` 一起傳遞之「公司」身分識別相關聯的所有資料。 這項通知目前會在 APP-WE 服務取消註冊期間傳送。 使用者主要名稱通常會在註冊程序期間指定。 如果您註冊這項通知，您的應用程式必須確定所有使用者資料都已刪除。 如果您未註冊，就會執行預設的選擇性抹除行為。
+* **WIPE_USER_DATA**：這項通知是在 `MAMUserNotification` 類別中傳送。 收到這項通知時，應用程式應該刪除與 `MAMUserNotification` 一起傳遞之「公司」身分識別相關聯的所有資料。 這項通知目前會在 APP-WE 服務取消註冊期間傳送。 使用者主要名稱通常會在註冊程序期間指定。 如果您註冊這項通知，您的應用程式必須確定所有使用者資料都已刪除。 如果您未註冊，就會執行預設的選擇性抹除行為。
 
 * **WIPE_USER_AUXILIARY_DATA**：如果應用程式要 Intune App SDK 執行預設選擇性抹除行為，但仍想要在抹除發生時移除部分輔助資料，則可註冊這項通知。 此通知不適用於單一身分識別應用程式，它只會傳送至多重身分識別應用程式。
 
-* **REFRESH_POLICY**︰這項通知是在 `MAMUserNotification` 中傳送。 收到這項通知時，所有快取的 Intune 原則都必須處於失效狀態並加以更新。 SDK 會處理此作業，不過如果原則是以任何持續性的方式使用，則應該由應用程式來處理。
+* **REFRESH_POLICY**：這項通知是在 `MAMUserNotification` 中傳送。 收到這項通知時，所有快取的 Intune 原則都必須處於失效狀態並加以更新。 SDK 會處理此作業，不過如果原則是以任何持續性的方式使用，則應該由應用程式來處理。
 
 * **MANAGEMENT_REMOVED**：這項通知是在 `MAMUserNotification` 中傳送，並會通知應用程式它即將成為未受管理。 應用程式成為未受管理之後，它將無法讀取加密的檔案、讀取以 MAMDataProtectionManager 加密的檔案、與加密的剪貼簿互動，或參與受管理應用程式的生態系統。
 
@@ -673,7 +673,7 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
 
 
-## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
+## <a name="app-protection-policy-without-device-enrollment"></a>沒有裝置註冊的應用程式保護原則
 
 ### <a name="overview"></a>概觀
 無裝置註冊的 Intune 應用程式保護原則 (也稱為 APP-WE 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune MDM 註冊裝置。 APP-WE 無論是否搭配裝置註冊皆可以運作。 公司入口網站仍然需要安裝於裝置上，但使用者並不需要登入公司入口網站並註冊該裝置。
@@ -844,7 +844,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * 支援主權雲端需要提供授權單位。
 #### <a name="registration"></a>註冊
 
-* 為了方便起見，註冊方法將會是等冪，例如 `registerAccountForMAM()` 只會在帳戶尚未註冊的情況下註冊該帳戶並嘗試註冊應用程式，而 `unregisterAccountForMAM()` 只會在帳戶已註冊的情況下將帳戶取消註冊。 後續的呼叫將不會運作，因此多次呼叫這些方法並不會有壞處。 此外，系統並無法保證針對這些方法的呼叫及結果通知之間的對應，也就是說，若針對已註冊的身分識別呼叫 `registerAccountForMAM`，便可能不會針對該身分識別再次傳送通知。 已傳送的通知有可能不會與針對這些方法的任何呼叫對應，因為 SDK 可能會定期嘗試在背景進行註冊，且從 Intune 服務接收的抹除要求可能會觸發取消註冊。
+* 為了方便起見，註冊方法將會是等冪，例如 `registerAccountForMAM()` 只會在帳戶尚未註冊的情況下註冊該帳戶並嘗試註冊應用程式，而 `unregisterAccountForMAM()` 只會在帳戶已註冊的情況下將帳戶取消註冊。 後續的呼叫將不會運作，因此多次呼叫這些方法並不會有壞處。 此外，無法保證呼叫這些方法與結果通知之間的對應關係：也就是說，如果針對已經註冊的身分識別呼叫 `registerAccountForMAM`，則可能不會再次針對該身分識別傳送通知。 已傳送的通知有可能不會與針對這些方法的任何呼叫對應，因為 SDK 可能會定期嘗試在背景進行註冊，且從 Intune 服務接收的抹除要求可能會觸發取消註冊。
 
 * 註冊方法可以針對任何數目的個別身分識別進行呼叫，但目前只能有一個使用者帳戶可以成功註冊。 若有多個已針對 Intune 取得授權，並為應用程式保護原則之目標的使用者帳戶，在相同或相近的時間進行註冊，將無法保證哪一個帳戶會註冊成功。
 
@@ -932,7 +932,7 @@ Intune 可讓您利用 Android 中可用的所有[自動備份功能](https://de
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **範例 3**︰如果您想要讓應用程式根據定義於 XML 檔案中的自訂規則進行完整備份，請將屬性和 Metadata 標記設定為相同的 XML 資源：
+    **範例 3**：如果您想要讓應用程式根據定義於 XML 檔案中的自訂規則進行完整備份，請將屬性和 Metadata 標記設定為相同的 XML 資源：
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1585,8 +1585,8 @@ public interface MAMAppConfig {
 
 |樣式屬性 | 受影響的 UI 元素 | 屬性項目名稱 | 預期的資源類型 |
 | -- | -- | -- | -- |
-| 背景色彩 | PIN 畫面背景色彩 <Br>PIN 方塊填滿色彩 | background_color | Color |
-| 前景色彩 | 前景文字色彩 <br> 預設狀態的 PIN 方塊邊界 <br> 使用者輸入 PIN 時的 PIN 方塊字元 (包含模糊字元)| foreground_color | Color|
+| 背景色彩 | PIN 畫面背景色彩 <Br>PIN 方塊填滿色彩 | background_color | 色彩 |
+| 前景色彩 | 前景文字色彩 <br> 預設狀態的 PIN 方塊邊界 <br> 使用者輸入 PIN 時的 PIN 方塊字元 (包含模糊字元)| foreground_color | 色彩|
 | 輔色 | 反白顯示時的 PIN 方塊邊界 <br> 超連結 |accent_color | Color |
 | 應用程式標誌 | 顯示在 Intune 應用程式 PIN 畫面的大型標誌 | logo_image | Drawable |
 
@@ -1616,9 +1616,8 @@ public interface MAMAppConfig {
 4. 將下列值放在資訊清單中以啟用所需的 MAM：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > 這會強制使用者將公司入口網站下載到裝置上，在使用前完成預設註冊流程。
-
-> [!NOTE]
-    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
+   >
+   > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
 
 3. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
 ```xml

@@ -1,12 +1,12 @@
 ---
 title: 註冊 macOS 裝置 - 裝置註冊計劃或 Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 macOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728747"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032345"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文將協助您針對透過 Apple 的[裝置註冊計劃 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 購買的裝置設定 macOS 裝置註冊。 針對大量裝置，這兩種註冊您都可以使用，且不需要實際取得裝置。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
+您可以針對透過 Apple 的[裝置註冊計劃 (DEP) ](https://deploy.apple.com)或 [Apple School Manager](https://school.apple.com/) 購買的 macOS 裝置設定 Intune 註冊。 針對大量裝置，這兩種註冊您都可以使用，且不需要實際取得裝置。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
 
 若要設定註冊，您要使用 Intune 與 Apple DEP 入口網站。 您可以建立註冊設定檔，其中包含在註冊期間套用至裝置的設定。
 
@@ -41,7 +41,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - 在 [Apple School Manager](https://school.apple.com/) 或 [Apple 的裝置註冊計劃](http://deploy.apple.com)中購買的裝置
 - 序號或採購單號碼的清單。 
 - [MDM 授權單位](mdm-authority-set.md)
@@ -123,9 +123,9 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
  
 7. 選擇 [確定]。
 
-8. 選擇 [設定助理設定] 以設定下列設定檔的設定：![自訂設定助理](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
+8. 選擇 [設定助理設定]，對下列設定檔進行設定：![設定助理自訂。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
-    | 部門設定 | 說明 |
+    | 部門設定 | 描述 |
     |---|---|
     | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
     | <strong>部門電話</strong> | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
@@ -202,6 +202,6 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 9. 選擇 [更新權杖]。 您會看到權杖已更新的確認。   
     ![確認的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/confirmation.png)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 註冊 macOS 裝置後，您可以開始[管理它們](device-management.md)。

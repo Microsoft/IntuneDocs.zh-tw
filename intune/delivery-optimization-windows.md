@@ -5,32 +5,34 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730396"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977264"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 (和更新版本) 的傳遞最佳化設定
 
-本文列出並描述您可以針對 Windows 10 裝置設定的所有傳遞最佳化設定。 這些設定會新增至裝置組態設定檔中，然後使用 Microsoft Intune 指派或部署到您的裝置。
+本文列出並描述您可以針對 Windows 10 裝置設定的所有傳遞最佳化設定。 這些設定會新增至裝置組態設定檔中，然後使用 Microsoft Intune 指派或部署到您的裝置。 
+
+[傳遞最佳化更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)是深入了解有關 Windows 10 傳遞最佳化的絕佳資源。
 
 ## <a name="settings"></a>設定
 
 **傳遞最佳化下載模式**：選擇如何將更新傳遞到您的裝置。 選項包括：
 
-- **未設定**：使用者以自己的方法更新其裝置，可以使用 OS 提供的 [Windows Updates] 或 [傳遞最佳化] 設定。
+- **未設定**：終端使用者以自己的方法更新其裝置，可以使用 OS 提供的 [Windows Updates] 或 [傳遞最佳化] 設定。
 - **只有 HTTP，沒有任何對等**：只從網際網路取得更新。 不從您網路上的其他電腦 (稱為對等互連或對等) 取得更新。
-- **混合跨相同 NAT HTTP 後對等和私人群組對等的 HTTP**：從網際網路且從您網路上的其他電腦取得更新。 對等互連會發生於在相同 Active Directory 站台 (如果存在) 中或在相同網域中的裝置上。 選取此選項時，會在您的網路位址轉譯 (NAT) IP 位址之間對等互連。
-- **混合網際網路對等的 HTTP**：從網際網路且從您網路上的其他電腦取得更新。
+- **混合跨相同 NAT HTTP 後對等和私人群組對等的 HTTP**：從網際網路和從您網路上的其他電腦取得更新。 對等互連會發生於在相同 Active Directory 站台 (如果存在) 中或在相同網域中的裝置上。 選取此選項時，會在您的網路位址轉譯 (NAT) IP 位址之間對等互連。
+- **混合網際網路對等的 HTTP**：從網際網路和從您網路上的其他電腦取得更新。
 - **無對等的簡式下載模式**：從網際網路直接從更新擁有者 (如 Microsoft) 取得更新。 它不會連絡傳遞最佳化雲端服務。
 - **略過模式**：使用背景智慧型傳送服務 (BITS) 來取得更新。 不使用傳遞最佳化。
 
@@ -59,6 +61,6 @@ ms.locfileid: "52730396"
     3. 在設定中，將 [傳遞最佳化下載模式] 設定成 [未設定]。
     4. 按一下 [確定] > [儲存] 來儲存您的變更。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

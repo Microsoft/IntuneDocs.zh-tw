@@ -1,7 +1,7 @@
 ---
 title: 設定註冊狀態頁面
 titleSuffix: Microsoft Intune
-description: 歡迎註冊 Windows 10 裝置的使用者。
+description: 針對註冊 Windows 10 裝置的使用者設定問候語頁面。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729036"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032090"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-在裝置設定期間，註冊狀態頁面會顯示裝置上的安裝資訊。 某些應用程式、設定檔及憑證在使用者完成裝置的全新註冊登入時可能無法安裝。 註冊狀態頁面可協助使用者了解其裝置在裝置設定期間的狀態。 您可以建立多個註冊狀態頁面設定檔，並將其套用至不同的群組。 設定檔可設定為：
+在使用 Intune 進行裝置設定期間，[註冊狀態] 頁面會顯示裝置上的安裝資訊。 某些應用程式、設定檔及憑證在使用者完成裝置的全新註冊登入時可能無法安裝。 註冊狀態頁面可協助使用者了解其裝置在裝置設定期間的狀態。 您可以建立多個註冊狀態頁面設定檔，並將其套用至不同的群組。 設定檔可設定為：
 - 顯示安裝進度。
 - 封鎖使用直到安裝完成。
 - 指定裝置設定失敗時使用者可採取的動作。
@@ -111,5 +111,5 @@ ms.locfileid: "52729036"
 - 憑證
     - 指派給所有使用者，或是註冊裝置的使用者為其成員之使用者群組的憑證設定檔。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 設定 Windows 註冊頁面之後，了解如何管理 Windows 裝置。 如需詳細資訊，請參閱[什麼是 Microsoft Intune 裝置管理？](https://docs.microsoft.com/intune/device-management)

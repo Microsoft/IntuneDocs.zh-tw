@@ -1,6 +1,7 @@
 ---
-title: 舊版
-description: ''
+title: 舊版 - Microsoft Intune
+titlesuffix: ''
+description: Microsoft Intune 舊版
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +16,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829125"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112828"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的舊版 - 2018 年 12 月
 
@@ -53,6 +54,17 @@ ms.locfileid: "52829125"
 
 [Windows 10 VPN 設定](vpn-settings-windows-10.md)會說明目前的設定清單。 
 
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>使用 S/MIME 加密和簽署使用者的多個裝置 <!-- 1333642 eeready -->
+將支援使用新匯入之憑證設定檔的 S/MIME 電子郵件加密 ([裝置設定] > [設定檔] > [建立設定檔] > 選取平台 > [PKCS 匯入的憑證] 設定檔類型)。 在 Intune 中，您可以匯入 PFX 格式的憑證。 Intune 接著可以將這些相同的憑證提供給單一使用者所註冊的多個裝置。 這也包括：
+
+- 原生 iOS 電子郵件設定檔支援啟用 PFX 格式之已匯入憑證的 S/MIME 加密。
+- Windows Phone 10 裝置上的原生郵件應用程式會自動使用 S/MIME 憑證。
+- 私人憑證可以跨多個平台提供。 但並非所有電子郵件應用程式都支援 S/MIME。
+- 在其他平台上，您可能需要手動設定郵件應用程式來啟用 S/MIME。  
+- 支援 S/MIME 加密的電子郵件應用程式可能會以 MDM 無法支援的方式來處理 S/MIME 電子郵件加密的憑證擷取 (例如從其發行者的憑證存放區中讀取)。
+
+支援於：Windows、Windows Phone 10、macOS、iOS、Android
+
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Windows 公司入口網站應用程式中的 [說明及支援] 頁面 <!-- 1488939 -->
 系統將在 Windows 公司入口網站應用程式中新增頁面。 [說明及支援] 頁面將提供技術服務人員的連絡資訊。 此外，終端使用者將能在遇到問題時傳送公司入口網站記錄。 此網頁也會提供 [常見問題集] 區段來協助終端使用者。
 
@@ -60,15 +72,12 @@ ms.locfileid: "52829125"
 使用受信任的網路偵測時，若使用者已經位於受信任的網路上，您將能防止 VPN 設定檔自動建立 VPN 連線。 您將能新增 DNS 尾碼，在執行 Windows 10 及更新版本的裝置上啟用受信任的網路偵測 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [VPN])。
 [Windows 10 VPN 設定](vpn-settings-windows-10.md)會列出目前的 VPN 設定。
 
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>支援公司擁有、完全受控的 Android 裝置 <!-- 574342 -->
-Intune 將支援完全受控的 Android 裝置，此為公司擁有的「裝置擁有者」案例，其中的裝置會受到 IT 嚴格管理並隸屬於個別使用者。 這讓系統管理員能夠管理整個裝置、強制設定無法用於工作設定檔之原則控制項的延伸範圍，並限制使用者只能從受控的 Google Play 安裝應用程式。 若要設定完全受控的 Android 裝置，請前往 [裝置註冊] > [Android 註冊] > [公司擁有、完全受控的使用者裝置]。
-
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 將支援 256 位元的加密金鑰 <!-- 1832174 -->
 適用於 iOS 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>已在 Intune 設定檔中啟用共用的 PC 設定 <!-- 1907917 -->
 您目前可以使用自訂的 OMA-URI 設定，在 Windows 10 電腦裝置上設定共用的 PC 設定。 新的設定檔將會新增來設定共用的 PC 設定 ([裝置設定] > [設定檔] > [建立設定檔] > [Windows 10 及更新版本] > [共用的多使用者裝置])。
-適用對象：Windows 10 及更新版本、Windows Holographic for Business
+適用於：Windows 10 及更新版本、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 原則會更新驗證方法與公司入口網站應用程式安裝  <!-- 1927359 -->
 Intune 將不再支援特定裝置上從 App Store 安裝的公司入口網站應用程式。 只有當您在註冊期間使用 Apple 設定助理進行驗證時，此變更才有意義。 此變更也只會影響透過下列各項註冊的 iOS 裝置：  
@@ -99,11 +108,14 @@ Intune 將不再支援特定裝置上從 App Store 安裝的公司入口網站�
 [iOS 電子郵件組態設定](email-settings-ios.md)會列出目前的設定。
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>在 iOS DEP 裝置上略過更多設定助理畫面 <!-- 2687509 -->
-除了您目前可以略過的畫面，您還能設定 iOS DEP 裝置，在使用者註冊裝置時略過設定助理中的下列畫面：顯示色調、隱私權、Android 移轉、主畫面按鈕、iMessage & FaceTime、上線、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
+除了您目前可以略過的畫面之外，當使用者註冊裝置時，您還可以將 iOS DEP 裝置設定為略過 [設定助理] 中的下列畫面：顯示色調、隱私權、Android 移轉、首頁按鈕、iMessage 和 FaceTime、上架、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
 若要選擇要略過的畫面，請前往 [裝置註冊] > [Apple 註冊] > [註冊方案權杖]> 選擇權杖 > [設定檔] > 選擇設定檔 > [屬性] > [設定助理自訂] > 針對任何您想要略過的畫面選擇 [隱藏] > [確定]。
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>部分 BitLocker 設定支援 Windows 10 專業版<!-- 2727036 -->
 您將能建立組態設定檔，在 Windows 10 裝置上設定 Endpoint Protection 設定，包括 BitLocker。 這會針對部分 BitLocker 設定新增對 Windows 10 專業版的支援。 若要查看目前的 Windows 10 版本設定，請參閱[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
+Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune 裝置報告欄位 <!-- 2748738 -->
 Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>共用裝置設定已在 Azure 入口網站中針對 iOS 裝置重新命名為鎖定畫面訊息 <!-- 2809362 -->
@@ -133,7 +145,7 @@ Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和�
 ### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Windows 10 裝置上的工作管理員中用來結束處理序的新設定 <!-- 3285177 --> 
 此更新包含使用 Windows 10 裝置上的工作管理員來結束處理序的新設定。 您可以使用裝置組態設定檔 ([裝置設定] > [設定檔] > [建立設定檔] > 在 [平台] 中選擇 [Windows 10] > 在 [設定檔類型] 中選擇 [裝置限制] > [一般] 設定)，來選擇允許或阻止此設定。
 若要查看目前的設定，請前往 [Windows 10 裝置限制設定](device-restrictions-windows-10.md)。
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>系統管理範本目前處於公開預覽狀態且已移至它們自己的組態設定檔 <!-- 3322847 -->
 Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前為個人預覽版。 使用此更新：系統管理範本包含約 300 個可在 Intune 中管理的設定。 這些設定先前只存在於群組原則編輯器中。
@@ -196,7 +208,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 
 目前沒有任何作用中的通知。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 如需近期發展的詳細資料，請參閱 [Microsoft Intune 的新功能](whats-new.md)。
 
 
