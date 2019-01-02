@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180131"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305925"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>使用 Intune 將應用程式指派給 Android 工作設定檔裝置
 
@@ -56,7 +56,7 @@ Android 企業是適用於 Android 工作設定檔裝置和 kiosk 裝置的方�
 
     ![用來處理新應用程式權限要求的選項](media/approve-app-settings.png)
 
-    應用程式已通過核准並顯示在您的 IT 管理主控台中。 接下來，您可以[使用 Intune 同步處理 Android 工作設定檔應用程式](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)。 
+    應用程式已通過核准並顯示在您的 IT 管理主控台中。 接下來，您可以[使用 Intune 同步處理 Android 工作設定檔應用程式](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)。 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>使用 Intune 同步處理受控 Google Play 應用程式
 
@@ -84,7 +84,7 @@ Android 企業會要求您在受控 Google Play Web 主控台核准應用程式�
 
 請定期造訪受管理的 Google Play 主控台來檢查新的權限。 您可以設定 Google Play 在需要新權限以使用核准的應用程式時，寄送電子郵件給您或其他使用者。 若您指派了應用程式，並發現它並未安裝在裝置上，請遵循下列步驟來檢查是否有新的權限：
 
-1. 前往 [Google Play](http://play.google.com/work)。
+1. 前往 [Google Play](https://play.google.com/work)。
 2. 使用您用來發行及核准應用程式的 Google 帳戶登入。
 3. 選取 [更新] 索引標籤，然後檢查任何應用程式是否需要更新。  
     任何列出的應用程式都需要新的權限，而且在套用新權限之前將不會指派。
