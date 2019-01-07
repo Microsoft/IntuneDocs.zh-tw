@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182987"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429707"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
-本文說明如何使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配互動式篩選。 例如，您的財務長可能想要知道公司所擁有的裝置與個人裝置相比較的裝置整體分佈。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
+此文章說明如何使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配互動式篩選。 例如，您的財務長可能想要知道公司所擁有的裝置與個人裝置相比較的裝置整體分佈。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
 
 ### <a name="overview-of-creating-the-chart"></a>建立圖表的概觀
 
@@ -45,7 +45,7 @@ ms.locfileid: "52182987"
 
 ## <a name="install-power-bi-desktop"></a>安裝 Power BI Desktop
 
-安裝最新版本的 Power BI Desktop。 您可以從 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) 下載 Power BI Desktop。
+安裝最新版本的 Power BI Desktop。 您可以從下列位置下載 Power BI Desktop：[PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>連接到您租用戶之 Intune 資料倉儲的 OData 摘要
 
@@ -106,7 +106,7 @@ ms.locfileid: "52182987"
 您可以將篩選新增到矩形式樹狀結構圖，以便可以使用您的應用程式回答其他問題。
 
 
-1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果] 下的**交叉分析篩選器圖示** (![具有資料的矩形式樹狀結構圖](media/reports-create-slicer.png))。
+1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果] 底下的**交叉分析篩選器圖示** (![具有資料模型和所支援關聯性的矩形式樹狀結構圖](media/reports-create-slicer.png))。
 2. 尋找 **ownerTypes** 資料表，並拖曳 [視覺效果] 面板的 [篩選] 區段下的 **ownerTypeName** 資料欄位。  
 
    在 devices 資料表下，有一個稱為 **OwnerTypeKey** 的資料欄位，它包含裝置是公司擁有還是個人擁有的代碼。 因為您想要在此篩選中顯示易記名稱，所以請尋找 **ownerTypes** 資料表，並拖曳 **ownerTypeName**。 此範例說明資料模型支援資料表之間的關聯性。

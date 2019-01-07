@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181882"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325172"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>使用 Microsoft Intune 監視應用程式資訊和指派
 
@@ -36,7 +36,7 @@ Intune 提供數種方式，可讓您監視您所管理應用程式的內容，�
 5. 在應用程式清單中，選取要監視的應用程式。 您接著會看到內含裝置狀態和使用者狀態概觀的應用程式窗格。
 
 > [!NOTE]
-> 部署為**可用**的 Android 市集應用程式不會報告其安裝狀態。
+> Android 市集應用程式如果部署成 [可用] 的應用程式，以及 Android LOB 應用程式如果部署成 [無論註冊與否均可使用] 的應用程式，便不會回報其安裝狀態。
 
 ## <a name="app-overview-pane"></a>應用程式概觀窗格
 

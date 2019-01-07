@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179063"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553634"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 您可以使用 Microsoft Intune 來管理 Windows 電腦，[其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理](windows-enroll.md)，或使用 Intune 軟體用戶端作為電腦來管理，如下所述。 不過，Microsoft 建議客戶如有可能盡量[使用 MDM 管理解決方案](windows-enroll.md)。
+> 您可以使用 Microsoft Intune 來管理 Windows 電腦，[其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理](windows-enroll.md)，或使用 Intune 軟體用戶端作為電腦來管理，如下所述。 不過，Microsoft 建議客戶如有可能盡量[使用 MDM 管理解決方案](windows-enroll.md)。 如需詳細資訊，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md) 
 
 
 Windows 電腦可藉由安裝 Intune 用戶端軟體進行註冊。 Intune 用戶端軟體可以使用下列方式安裝：
@@ -260,4 +260,4 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>接下來的步驟
-[使用 Microsoft Intune 管理裝置](device-management.md)
+[使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

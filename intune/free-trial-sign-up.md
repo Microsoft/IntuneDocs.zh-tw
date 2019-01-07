@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189175"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737911"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>快速啟動：免費試用 Microsoft Intune 
 
 Microsoft Intune 透過管理裝置和應用程式來協助您保護員工的公司資料。 在此快速入門中，您將建立免費訂用帳戶，以在測試環境中試用 Intune。
 
@@ -50,9 +50,9 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 2. 使用您的公司名稱後面接著 **.onmicrosoft.com** 來建立帳戶。 
 
-    ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/account-sign-up-site-user-id.png)
+    ![Microsoft Intune 試用版帳戶新增認證程序的螢幕擷取畫面](./media/account-sign-up-site-user-id.png)
 
-    如果您組織本身有您想要使用但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Office 365 管理入口網站中進行變更，如本文稍後所述。
+    如果您組織本身有您想要使用但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Office 365 管理入口網站中進行變更，如此文章稍後所述。
 
 3. 在註冊程序結束時，檢視您的新帳戶資訊。
 
@@ -106,13 +106,13 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 3. 鍵入您的自訂網域名稱。 然後，選取 [下一步]。
 
-   ![Office 365 系統管理中心的螢幕擷取畫面，其中已選取 [設定] > [網域] 並新增新的網域名稱](./media/domain-custom-add.png)
+   ![Office 365 系統管理中心 - [新增網域] 的螢幕擷取畫面](./media/domain-custom-add.png)
 
 4. 確認您是如上所輸入的網域擁有者。 
     
     選取 [透過電子郵件傳送驗證碼] 會傳送電子郵件給您網域中已註冊的連絡人。 收到電子郵件之後，請複製驗證碼，並在標示為 [在這裡輸入您的驗證碼]  的欄位中輸入。 如果驗證碼符合，則會將網域新增至您的租用戶。 顯示的電子郵件看起來可能很陌生。 某些註冊機構會隱藏註冊網域時所提供的實際電子郵件地址。
 
-   ![Office 365 系統管理中心的螢幕擷取畫面 - 確認已新增網域名稱](./media/domain-custom-verify.png)
+   ![Office 365 系統管理中心 - [驗證網域] 的螢幕擷取畫面](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > 如需 TXT 記錄驗證詳細資料，請參閱[在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166)。

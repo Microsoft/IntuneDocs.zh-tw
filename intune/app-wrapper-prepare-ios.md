@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112850"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738047"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -100,7 +100,7 @@ ms.locfileid: "53112850"
 
 4. 按一下 [Certificates, IDs & Profiles]\(憑證、識別碼和設定檔)。
 
-   ![Apple Developer 入口網站](./media/iOS-signing-cert-1.png)
+   ![Apple 開發人員入口網站 - 憑證、識別碼與設定檔](./media/iOS-signing-cert-1.png)
 
 5. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
 
@@ -125,7 +125,7 @@ ms.locfileid: "53112850"
 
 11. 遵循上面的 Apple Developer 網站中如何建立 CSR 檔案的指示。 將 CSR 檔案儲存到 macOS 電腦。
 
-    ![在金鑰鏈存取中向憑證授權單位要求憑證](./media/iOS-signing-cert-6.png)
+    ![輸入您所要求的憑證資訊](./media/iOS-signing-cert-6.png)
 
 12. 返回 Apple Developer 站台。 按一下 [繼續] 。 然後上傳 CSR 檔案。
 
@@ -141,7 +141,7 @@ ms.locfileid: "53112850"
 
 16. 隨即出現參考視窗。 捲動到底部，並查看 [指紋] 標籤下方。 複製 **SHA1** 字串 (模糊化)，作為 App Wrapping Tool 之 "-c" 的引數。
 
-    ![將憑證新增至金鑰鏈](./media/iOS-signing-cert-9.png)
+    ![iPhone 資訊 - SHA1 指紋字串](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ ms.locfileid: "53112850"
 
 開啟 macOS 終端機並執行下列命令：
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ ms.locfileid: "53112850"
 
 **範例：** 下列範例命令會在名為 MyApp.ipa 的應用程式上執行 App Wrapping Tool。 佈建設定檔和簽署憑證的 SHA-1 雜湊均已指定並可用來簽署已包裝的應用程式。 輸出應用程式 (MyApp_Wrapped.ipa) 會建立並儲存在您的桌面資料夾中。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ ms.locfileid: "53112850"
 
 3.  在主控台輸入下列指令碼，篩選應用程式限制輸出的已儲存記錄：
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     您可以將篩選過的記錄檔提交給 Microsoft。
@@ -368,20 +368,20 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 3.  使用 codesign 工具檢查 .app 套件的權利，其中 `YourApp.app` 是 .app 套件的實際名稱:
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  使用安全性工具檢查應用程式之內嵌佈建設定檔的權利，其中 `YourApp.app` 是 .app 套件的實際名稱。
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>使用 –e 參數移除應用程式的權利
 這個命令會移除應用程式中任何已啟用但不在權利檔案中的功能。 如果您移除的是應用程式正在使用的功能，可能會中斷您的應用程式。 例如若廠商生產的應用程式預設應具備所有功能，您可能會移除缺少的功能。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 只要執行您的一般應用程式封裝命令並附加 `-citrix` 旗標。 `-citrix` 旗標目前不接受任何引數。
 
 **使用方式格式**：
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **範例命令**：
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

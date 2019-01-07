@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112851"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324900"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -45,7 +45,7 @@ ms.locfileid: "53112851"
 
 -   該應用程式必須是由貴公司所開發，或針對貴公司所開發。 您無法在下載自 Google Play 商店的應用程式使用這個工具。
 
--   若要執行 App Wrapping Tool，您必須安裝最新版的 [Java Runtime Environment](http://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 C:\ProgramData\Oracle\Java\javapath。 如需詳細說明，請參閱 [Java 文件](http://java.com/download/help/)。
+-   若要執行 App Wrapping Tool，您必須安裝最新版的 [Java Runtime Environment](https://java.com/download/)，然後確定已在您的 Windows 環境變數中將 Java 路徑變數設為 C:\ProgramData\Oracle\Java\javapath。 如需詳細說明，請參閱 [Java 文件](https://java.com/download/help/)。
 
     > [!NOTE]
     > 在某些情況下，Java 32 位元版本可能會導致記憶體問題。 您最好安裝 64 位元版本。
@@ -71,12 +71,12 @@ ms.locfileid: "53112851"
 
 2. 從安裝此工具的資料夾，匯入 App Wrapping Tool PowerShell 模組：
 
-   ```
+   ```PowerShell
    Import-Module .\IntuneAppWrappingTool.psm1
    ```
 
 3. 使用 **invoke-AppWrappingTool** 命令執行工具，其使用語法如下：
-   ```
+   ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
    ```
@@ -99,18 +99,18 @@ ms.locfileid: "53112851"
 
 - 若要查看工具的詳細使用方式資訊，請輸入命令：
 
-    ```
+    ```PowerShell
     Help Invoke-AppWrappingTool
     ```
 
 **範例：**
 
 匯入 PowerShell 模組。
-```
+```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
 在原生應用程式 HelloWorld.apk 執行 App Wrapping Tool。
-```
+```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
 
@@ -142,7 +142,7 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 
 -   在執行工具所在的同一部電腦上，將輸出應用程式匯入 Intune。 如需 Java keytool 的詳細資訊，請參閱 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
 
--   如果輸出應用程式和工具位於通用命名慣例 (UNC) 路徑上，而您未在同一部電腦上執行工具和輸入檔案，請使用 [網際網路通訊協定安全性 (IPsec)](http://wikipedia.org/wiki/IPsec) 或[伺服器訊息區 (SMB) 簽署](https://support.microsoft.com/kb/887429)，將環境設定為安全的。
+-   如果輸出應用程式和工具位於通用命名慣例 (UNC) 路徑上，而您未在同一部電腦上執行工具和輸入檔案，請使用 [網際網路通訊協定安全性 (IPsec)](https://wikipedia.org/wiki/IPsec) 或[伺服器訊息區 (SMB) 簽署](https://support.microsoft.com/kb/887429)，將環境設定為安全的。
 
 -   確認應用程式來自信任的來源。
 
@@ -167,11 +167,17 @@ Android 要求所有的應用程式都必須以有效的憑證簽署，才能安
 > 與您應用程式繫結的「用戶端識別碼」一詞，和與您應用程式繫結的 Azure 入口網站「應用程式識別碼」一詞是相同的。 
 > * 若要啟用 SSO，需要「一般 ADAL 設定」#2。
 
-2. 將下列值放在資訊清單中以啟用預設註冊：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+2. 將下列值放在資訊清單中以啟用預設註冊：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，可能會發生衝突。
 
-3. 將下列值放在資訊清單中以啟用所需的 MAM：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+3. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > 這會強制使用者將公司入口網站下載到裝置上，在使用前完成預設註冊流程。
 

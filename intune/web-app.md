@@ -1,12 +1,12 @@
 ---
 title: 將 Web 應用程式新增至 Microsoft Intune
 titleSuffix: ''
-description: 了解如何將 Web 應用程式新增至 Microsoft Intune。
+description: 深入了解將 Web 應用程式 (主從式應用程式) 新增至 Microsoft Intune。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4f0c5d79c17c3cc2ada275337d266c134eed7e91
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187628"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642535"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -52,12 +52,12 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
         > 若您在部署並安裝應用程式之後透過 Intune Azure 入口網站變更應用程式名稱，將無法再使用命令定位應用程式。
     
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
-    - **發行者**：輸入應用程式的發行者名稱。
+    - **發行者**：輸入此應用程式發行者的名稱。
     - **應用程式 URL**：輸入裝載您要指派之應用程式的網站 URL。
-    - **類別**：您可以選取一或多個內建的應用程式類別，或您自己建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
-    - **將此顯示為公司入口網站中的精選應用程式**：若選取此選項，當使用者瀏覽應用程式時，應用程式套件會醒目地顯示在公司入口網站的主頁面上。
-    - **必須是受控瀏覽器，才可開啟此連結**：選取此選項時，可將網站或 Web 應用程式的連結指派給使用者，以讓他們在 Intune Managed Browser 中開啟連結。 他們的裝置上必須安裝此瀏覽器。
-    - **標誌**：上傳要與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
+    - **類別**：您可以選擇性地選取一或多個內建應用程式類別，或您自己建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
+    - **將此顯示為公司入口網站中的精選應用程式**：選取此選項，當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式套件。
+    - **需要受管理瀏覽器以開啟此連結**：選取此選項時，可將網站或 Web 應用程式的連結指派給使用者，以讓他們在 Intune Managed Browser 中開啟連結。 他們的裝置上必須安裝此瀏覽器。
+    - **標誌**：上傳要與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 9. 選取 [確定]。
 10. 在 [新增應用程式] 窗格中，選取 [新增]。
 

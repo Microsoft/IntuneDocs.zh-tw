@@ -1,12 +1,12 @@
 ---
 title: 什麼是 Microsoft Intune 應用程式管理？
 titlesuffix: ''
-description: 了解 Microsoft Intune 管理應用程式的基本概念。
+description: 了解各平台適用於 Microsoft Intune 的用戶端應用程式管理功能。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179179"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642824"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -106,15 +106,15 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 - **iOS VPP 權杖**：套用並檢視您的 iOS 大量採購方案 (VPP) 授權。 如需詳細資訊，請參閱：
     - [iOS 大量採購應用程式](vpp-apps-ios.md)
 - **Windows 企業憑證**：套用或檢視程式碼簽署憑證的狀態，此憑證可用來將企業營運應用程式發佈到您的受控 Windows 裝置。
-- **Windows Symantec 憑證**：套用或檢視 Symantec 程式碼簽署憑證的狀態，將 XAP 和 WP8.x appx 檔案發佈至 Windows 10 行動裝置時需要此憑證。
-- **商務用 Microsoft Store** ：設定對商務用 Microsoft Store 的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。 如需詳細資訊，請參閱：
+- **Windows Symantec 憑證**：套用或檢視 Symantec 程式碼簽署憑證的狀態，將 XAP 和 WP8.x appx 檔案發佈至 Windows 10 行動裝置版裝置時需要此憑證。
+- **商務用 Microsoft 網上商店**：設定對商務用 Microsoft Store 的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。 如需詳細資訊，請參閱：
     - [商務用 Microsoft Store 大量採購應用程式](windows-store-for-business.md)。
-- **Windows 側載金鑰**：新增 Windows 側載金鑰，以便用來將應用程式直接安裝到裝置，而非發行應用程式並從 Windows 市集下載。 如需詳細資訊，請參閱：
+- **Windows 側載金鑰**：新增 Windows 側載金鑰，以用來將應用程式直接安裝到裝置，而非發行應用程式並從 Windows 市集下載。 如需詳細資訊，請參閱：
     - [側載 Windows 應用程式](app-sideload-windows.md)。
 - **公司入口網站品牌**：自訂公司入口網站以顯示您公司的品牌。 如需詳細資訊，請參閱：
     - [公司入口網站設定](company-portal-app.md)。
 - **應用程式類別**：新增、釘選及刪除應用程式類別名稱。
-- **Android 工作設定檔**：核准並同步處理您已經為企業核准的應用程式。 如需詳細資訊，請參閱：
+- **Android 公司設定檔**：核准並同步處理您已經為企業核准的應用程式。 如需詳細資訊，請參閱：
     - [Android 工作設定檔應用程式](apps-add-android-for-work.md)。
 
 ### <a name="help-and-support"></a>說明及支援

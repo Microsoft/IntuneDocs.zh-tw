@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 55d624f63c8563cc3dde561b98cd0894d5a9b65d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 521f33b0c4cfa0f1f4ba534acc2f3fec9a53f151
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189150"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429622"
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
 [日期] 類別包含用來定義資料模型中日期參考的 **Date** 實體。
 
-**日期**
+## <a name="date"></a>日期
 
 **Date** 實體代表跨多個資料倉儲實體所參考的日期。
 
@@ -53,3 +53,6 @@ ms.locfileid: "52189150"
 | CalendarQuarter |                    日曆季度                    |          3           |
 |  CalendarYear   |                     日曆年度                      |         2016         |
 
+## <a name="next-steps"></a>接下來的步驟
+
+- 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。

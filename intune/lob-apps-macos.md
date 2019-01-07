@@ -1,12 +1,12 @@
 ---
 title: 如何將 macOS 企業營運應用程式新增至 Microsoft Intune
 titlesuffix: ''
-description: 了解如何將 macOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune。
+description: 深入了解如何將 macOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b60610be892afd10ace568694b57cc18190eec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 356f21067f0e0d625882822fd8747661d72005e8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179990"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642654"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何將 macOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用本文中的資訊，協助您將 macOS 企業營運應用程式新增至 Microsoft Intune。 您必須下載外部工具來預先處理 *.pkg* 檔案，然後才能將企業營運應用程式上傳到 Microsoft Intune。 必須在 macOS 裝置上對您的 *.pkg* 檔案進行預先處理。
+使用此文章中的資訊，協助您將 macOS 企業營運應用程式新增至 Microsoft Intune。 您必須下載外部工具來預先處理 *.pkg* 檔案，然後才能將企業營運應用程式上傳到 Microsoft Intune。 必須在 macOS 裝置上對您的 *.pkg* 檔案進行預先處理。
 
 > [!NOTE]
 > 雖然 macOS 裝置的使用者可以移除部分內建的 macOS 應用程式 (如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，他們必須移至應用程式市集，並手動重新進行安裝。

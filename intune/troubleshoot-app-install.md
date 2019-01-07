@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188121"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267000"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -84,6 +84,19 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 |    使用者已拒絕所提供的應用程式更新項目。 (0x87D13B63)    |    終端使用者在更新程序期間已按下 [取消]。     |
 |    未知的錯誤 (0x87D103E8)    |    發生未知的應用程式安裝錯誤。 這是未發生其他錯誤時所產生的錯誤。    |
 
+### <a name="other-installation-errors"></a>其他安裝錯誤
+
+|    錯誤訊息/錯誤碼    |    說明    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF,   0x80CF201C (用戶端錯誤)    |    若要安裝此應用程式，您必須具有已啟用側載功能的系統。 確定應用程式套件已經由信任的簽章簽署，而且已經安裝在已加入網域並啟用 **AllowAllTrustedApps** 原則的裝置上，或已經安裝在具有已啟用 **AllowAllTrustedApps** 原則之 Windows 側載授權的裝置上。 如需詳細資訊，請參閱[對封裝、部署及查詢 Windows 市集應用程式進行疑難排解](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) \(英文\)。     |
+|    0x80073CF0    |    無法開啟套件。 可能的原因：<ul><li> 套件未經簽署。</li><li> 發行者名稱與簽署憑證主體不符。</li></ul> 查看 **AppxPackagingOM** 事件記錄檔以取得詳細資訊。 如需詳細資訊，請參閱[對封裝、部署及查詢 Windows 市集應用程式進行疑難排解](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) \(英文\)。    |
+|    0x80073CF3    |    套件無法通過更新、相依性或衝突的驗證。 可能的原因：<ul><li> 傳入的套件與安裝的套件衝突。</li><li> 找不到指定的套件相依項目。</li><li> 套件不支援正確的處理器架構。</li></ul> 查看 **AppXDeployment-Server** 事件記錄檔以取得詳細資訊。 如需詳細資訊，請參閱[對封裝、部署及查詢 Windows 市集應用程式進行疑難排解](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) \(英文\)。    |
+|    0x80073CFB    |    已安裝所提供的套件，因此無法重新安裝該套件。 如果您要安裝的套件與已經安裝的套件不同，可能就會收到此錯誤。 請確認數位簽章也包含在套件中。 重建或重新簽署套件後，該套件之位元就不再與先前安裝的套件相同。 此錯誤有下列兩種可能的修正選項：<ul><li> 遞增應用程式的版本號碼，然後再重建及重新簽署應用程式。</li><li> 在安裝新套件之前，針對系統上的每個使用者移除舊套件。</li></ul> 如需詳細資訊，請參閱[對封裝、部署及查詢 Windows 市集應用程式進行疑難排解](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) \(英文\)。    |
+|    0x87D1041C    |    應用程式安裝成功，但未偵測到應用程式。 應用程式已由 Intune 成功部署，然後被解除安裝。 應用程式被解除安裝的原因包括：<ul><li> 使用者將應用程式解除安裝。</li><li> 套件中的身分識別資訊與裝置針對不良應用程式所報告的不相符。</li><li>對於自行更新 MSI，在 Intune 外更新產品之後，產品版本與應用程式的資訊不相符。</li></ul> 指示使用者從公司入口網站重新安裝應用程式。 請注意，需要的應用程式會在裝置下次簽入時自動重新安裝。    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>針對來自 Microsoft 網上商店的應用程式進行疑難排解
+
+[Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (針對封裝、部署及查詢 Microsoft 網上商店應用程式進行疑難排解) 主題中的資訊可協助您使用 Intune 或任何其他方法，為從 Microsoft 網上商店安裝應用程式時可能發生的常見問題進行疑難排解。
 
 ## <a name="next-steps"></a>接下來的步驟
 

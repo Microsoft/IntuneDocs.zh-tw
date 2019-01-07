@@ -1,12 +1,12 @@
 ---
 title: 將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 titlesuffix: ''
-description: 了解如何將 Windows Phone 企業營運應用程式新增至 Intune。
+description: 了解如何使用 Microsoft Intune 來新增 Windows Phone 企業營運 (LOB) 應用程式。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9bce677f21967a79214a5cafbab4ce40b754b333
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9fa39f212c9979a9986bba5537f0c9a2b5e01c8c
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183021"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642637"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用本文中的資訊，將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune。 LOB 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 Intune 會將 LOB 應用程式安裝在使用者的裝置上。 
+使用此文章中的資訊，將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune。 LOB 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 Intune 會將 LOB 應用程式安裝在使用者的裝置上。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 
@@ -49,17 +49,17 @@ ms.locfileid: "52183021"
 
 1. 在 [新增應用程式] 窗格中，選取 [應用程式資訊]。
 2. 在 [應用程式資訊] 窗格中，設定應用程式資訊。 窗格中某些值會隨著所選的應用程式自動填入。
-    - **名稱**：輸入會在公司入口網站中顯示的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，只有一個應用程式會出現在公司入口網站中。
+    - **名稱**：輸入在公司入口網站中顯示的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，只有一個應用程式會出現在公司入口網站中。
     - **描述**：輸入應用程式的描述。 此描述會出現在公司入口網站上。
-    - **發行者**：輸入應用程式的發行者名稱。
-    - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
-    - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，以醒目方式在公司入口網站的主頁面上顯示此應用程式。
-    - **資訊 URL**：選擇是否要輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **隱私權 URL**：選擇是否要輸入包含此應用程式隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **開發人員**：選擇是否要輸入應用程式開發人員的姓名。
-    - **擁有者**：選擇是否要輸入此應用程式的擁有者名稱。 **人力資源部門**就是一個例子。
-    - **附註**：輸入要與此應用程式相關聯的任何附註。
-    - **標誌**：上傳將與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
+    - **發行者**：輸入應用程式發行者的名稱。
+    - **類別**：選取一或多個內建的應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
+    - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
+    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
+    - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
+    - **附註**：輸入要與此應用程式建立關聯的任何附註。
+    - **標誌**：上傳與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 3. 完成後，按一下 [確定]。
 
 ## <a name="step-4-finish-up"></a>步驟 4：完成

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 中的 Office 365 應用程式資料管理
 titlesuffix: ''
-description: 了解 Microsoft Intune 中的 Office 365 應用程式資料管理。
+description: 了解 Microsoft Intune 中的 Office 365 應用程式資料管理和保護。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180066"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642468"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>您的使用者將如何體驗 Microsoft Intune 中受控 Office 365 應用程式的基本保護
 
@@ -40,7 +40,7 @@ ms.locfileid: "52180066"
 這些原則確保您可以管理 Office 365 應用程式，並讓您在必要時，能夠從 Office 應用程式抹除工作資料。 藉由確定工作資料已經加密，以及必須輸入 PIN 碼才能檢視 Office 365 應用程式中之資料等方式，這些原則也可在裝置遺失或遭竊時，確保裝置的基本保護。
 
 
-本文使用商務用 OneDrive 作為範例，示範使用在 Intune 管理之應用程式上的體驗。
+此文章使用商務用 OneDrive 作為範例，示範使用在 Intune 管理之應用程式上的體驗。
 
 
 >[!NOTE]

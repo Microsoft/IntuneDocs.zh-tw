@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168023"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53378278"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -86,7 +86,7 @@ Intune App SDK 是一種 Android 程式庫，可讓您的應用程式支援並�
 ### <a name="gradle-build-plugin"></a>Gradle 建置外掛程式
 如果您的應用程式並非使用 Gradle 建置，請跳至[使用命令列工具整合](#command-line-build-tool)。 
 
-App SDK 外掛程式是與 SDK 一起散發，如同 **GradlePlugin/com.microsoft.intune.mam.build.jar**。 若要讓 Gradle 找得到外掛程式，您必須將它新增至 buildscript classpath。 外掛程式相依於 [Javassist](http://jboss-javassist.github.io/javassist/)，因此也必須新增。 若要將它們新增至 classpath，請將下列內容新增至您的根 `build.gradle`
+App SDK 外掛程式是與 SDK 一起散發，如同 **GradlePlugin/com.microsoft.intune.mam.build.jar**。 若要讓 Gradle 找得到外掛程式，您必須將它新增至 buildscript classpath。 外掛程式相依於 [Javassist](https://jboss-javassist.github.io/javassist/)，因此也必須新增。 若要將它們新增至 classpath，請將下列內容新增至您的根 `build.gradle`
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ intunemam {
 
 #### <a name="dependencies"></a>相依性
 
-Gradle 外掛程式具有 [Javassist](http://jboss-javassist.github.io/javassist/) 相依性，其必須可供用於 Gradle 的相依性解析 (如上面所述)。 Javassist 僅用於外掛程式執行時的建置時間。 系統不會將任何 Javassist 程式碼新增至您的應用程式。
+Gradle 外掛程式具有 [Javassist](https://jboss-javassist.github.io/javassist/) 相依性，其必須可供用於 Gradle 的相依性解析 (如上面所述)。 Javassist 僅用於外掛程式執行時的建置時間。 系統不會將任何 Javassist 程式碼新增至您的應用程式。
 
 > [!NOTE]
 > 您必須使用版本 3.0 或更新版本的 Android Gradle 外掛程式和 Gradle 4.1 或更新版本。
@@ -185,7 +185,7 @@ Gradle 外掛程式具有 [Javassist](http://jboss-javassist.github.io/javassist
 您可以使用位於 `BuildTool\bin` 目錄的協助程式指令碼來叫用命令列工具。
 
 工具必須要有下列的參數。
-| 參數 | 描述 |
+| 參數 | 說明 |
 | -- | -- |
 | `--input` | 以分號分隔的 jar 檔案與類別檔案目錄清單，以供修改。 這應該包括所有您想要重寫的 jar/目錄。 |
 | `--output` | 以分號分隔的 jar 檔案與目錄清單，以儲存修改過的類別。 每個輸入項目都應該要有一個輸出項目，且必須按照順序提列。 |
@@ -338,7 +338,7 @@ Azure Active Directory 驗證程式庫 ([ADAL](https://azure.microsoft.com/docum
 
 記錄應該要盡早初始化，以取得最豐富的記錄資料。 `Application.onMAMCreate()` 通常是初始化記錄的最佳位置。
 
-若要在應用程式中接收 MAM 記錄，請建立 [Java 處理常式 (英文)](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) 並將它新增至 `MAMLogHandlerWrapper`。 這將會針對每個記錄訊息在應用程式處理常式上叫用 `publish()`。
+若要在應用程式中接收 MAM 記錄，請建立 [Java 處理常式 (英文)](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) 並將它新增至 `MAMLogHandlerWrapper`。 這將會針對每個記錄訊息在應用程式處理常式上叫用 `publish()`。
 
 ```java
 /**
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-其中 `service` 為下列其中一個 SaveLocations：
+`service` 參數必須為下列其中一個 `SaveLocation` 值：
 
 
-    * SaveLocation.ONEDRIVE_FOR_BUSINESS
-    * SaveLocation.LOCAL
-    * SaveLocation.SHAREPOINT
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 在此之前，能用來判斷使用者的原則是否允許他們將資料儲存至各種位置的方法，為位於相同 **AppPolicy** 類別中的 `getIsSaveToPersonalAllowed()`。 此函數目前已「被取代」，且不應該使用。下列的引動過程等同於 `getIsSaveToPersonalAllowed()`：
 
@@ -673,7 +673,7 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
 
 
-## <a name="app-protection-policy-without-device-enrollment"></a>沒有裝置註冊的應用程式保護原則
+## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
 
 ### <a name="overview"></a>概觀
 無裝置註冊的 Intune 應用程式保護原則 (也稱為 APP-WE 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune MDM 註冊裝置。 APP-WE 無論是否搭配裝置註冊皆可以運作。 公司入口網站仍然需要安裝於裝置上，但使用者並不需要登入公司入口網站並註冊該裝置。
@@ -798,7 +798,7 @@ Result getRegisteredAccountStatus(String upn);
 
 [感知主權雲端](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud)的應用程式**必須**提供 `authority` 給 `registerAccountForMAM()`。  這可以藉由 ADAL 的 [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters 所提供 `instance_aware=true`，後面接著對 AuthenticationCallback AuthenticationResult 叫用 `getAuthority()` 而取得。
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > 請不要設定 AndroidManifest.xml 中繼資料授權。
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 ## <a name="protecting-backup-data"></a>保護備份資料
 
-截至 Android Marshmallow (API 23) 止，Android 提供兩種可讓應用程式備份資料的方法。 您可在應用程式中使用這些選項，但需要不同的步驟以確保正確實作 Intune 資料保護。 您可以檢閱下表，以了解正確資料保護行為所需的相對應動作。  您可以在 [Android API 指南](http://developer.android.com/guide/topics/data/backup.html)中深入了解備份方法。
+截至 Android Marshmallow (API 23) 止，Android 提供兩種可讓應用程式備份資料的方法。 您可在應用程式中使用這些選項，但需要不同的步驟以確保正確實作 Intune 資料保護。 您可以檢閱下表，以了解正確資料保護行為所需的相對應動作。  您可以在 [Android API 指南](https://developer.android.com/guide/topics/data/backup.html)中深入了解備份方法。
 
 ### <a name="auto-backup-for-apps"></a>應用程式的自動備份
 
@@ -1413,7 +1414,7 @@ public final class MAMDataProtectionManager {
 您可在 Intune 主控台中設定應用程式特定的機碼值組。 Intune 完全不解譯這些機碼值組，僅傳遞給應用程式。 想要接收這類設定的應用程式可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 類別來執行作業。 如有多個原則以相同的應用程式為目標，相同的機碼可能會有多個衝突值。
 
 ### <a name="example"></a>範例
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>MAMAppConfig 參考
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1585,8 +1586,8 @@ public interface MAMAppConfig {
 
 |樣式屬性 | 受影響的 UI 元素 | 屬性項目名稱 | 預期的資源類型 |
 | -- | -- | -- | -- |
-| 背景色彩 | PIN 畫面背景色彩 <Br>PIN 方塊填滿色彩 | background_color | 色彩 |
-| 前景色彩 | 前景文字色彩 <br> 預設狀態的 PIN 方塊邊界 <br> 使用者輸入 PIN 時的 PIN 方塊字元 (包含模糊字元)| foreground_color | 色彩|
+| 背景色彩 | PIN 畫面背景色彩 <Br>PIN 方塊填滿色彩 | background_color | Color |
+| 前景色彩 | 前景文字色彩 <br> 預設狀態的 PIN 方塊邊界 <br> 使用者輸入 PIN 時的 PIN 方塊字元 (包含模糊字元)| foreground_color | Color|
 | 輔色 | 反白顯示時的 PIN 方塊邊界 <br> 超連結 |accent_color | Color |
 | 應用程式標誌 | 顯示在 Intune 應用程式 PIN 畫面的大型標誌 | logo_image | Drawable |
 
@@ -1609,20 +1610,27 @@ public interface MAMAppConfig {
    > 與您應用程式繫結的「用戶端識別碼」一詞，和 Azure 入口網站的「應用程式識別碼」一詞是相同的。 
 2. 若要啟用 SSO，需要「一般 ADAL 設定」#2。
 
-3. 將下列值放在資訊清單中以啟用預設註冊：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. 將下列值放在資訊清單中以啟用預設註冊：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，可能會發生衝突。
 
-4. 將下列值放在資訊清單中以啟用所需的 MAM：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > 這會強制使用者將公司入口網站下載到裝置上，在使用前完成預設註冊流程。
    >
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
 
 3. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > 這會強制使用者將公司入口網站下載到裝置上，在使用前完成預設註冊流程。

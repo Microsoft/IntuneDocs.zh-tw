@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181508"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737928"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -50,7 +50,7 @@ Intune 在排除群組時，不考慮使用者對裝置的關聯。 包含使用
 5. 選取您要指派的應用程式。 儀表板會顯示應用程式的相關資訊。 
 6. 在功能表的 [管理] 區段中，選取 [指派]。 
 
-    ![Intune 應用程式指派](./media/apps-inc-exl-01.png)
+    ![在指派應用程式時包含應用程式指派](./media/apps-inc-exl-01.png)
 7. 選取 [新增群組] 新增獲指派應用程式的使用者群組。 
 8. 從 [新增群組] 窗格中，從可用的指派類型中選取 [指派類型]。
 9. 選取 [無論註冊與否均可使用] 為指派類型。

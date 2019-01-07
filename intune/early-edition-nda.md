@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112828"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642892"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的舊版 - 2018 年 12 月
 
@@ -50,11 +50,11 @@ ms.locfileid: "53112828"
 在 Windows 10 及更新版裝置上，您將能建立 VPN 組態設定檔，其中包含可用以解析網域 (例如 contoso.com) 的 DNS 伺服器清單。 這將包含可用於名稱解析的新設定 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [VPN] > [DNS 設定] >[新增])： 
 
 - **自動連線**：若**已啟用**，裝置就會在連絡您輸入的網域 (例如 contoso.com) 時，自動連線至 VPN。
-- **永續性**：根據預設，只要裝置會使用此 VPN 設定檔進行連線，所有的名稱解析原則表格 (NRPT) 規則都會處於作用中狀態。 已在 NRPT 規則上**啟用**此設定時，此規則就會在裝置上維持作用中狀態，即使在 VPN 中斷連線或移除 VPN 設定檔時也一樣。 此規則在手動移除之前會保持作用中狀態，而您可以使用 PowerShell 加以移除。
+- **永續性**：根據預設，只要裝置會使用此 VPN 設定檔進行連線，所有的名稱解析原則表格 (NRPT) 規則都會處於作用中狀態。 已在 NRPT 規則上**啟用**此設定時，此規則就會在裝置上維持作用中狀態，即使在 VPN 中斷連線時也一樣。 規則將一直保留，直到移除 VPN 設定檔，或以手動方式移除規則，這可以透過使用 PowerShell 完成。
 
 [Windows 10 VPN 設定](vpn-settings-windows-10.md)會說明目前的設定清單。 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>使用 S/MIME 加密和簽署使用者的多個裝置 <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>使用 S/MIME 加密和簽署使用者的多個裝置 <!-- 1333642 eeready -->
 將支援使用新匯入之憑證設定檔的 S/MIME 電子郵件加密 ([裝置設定] > [設定檔] > [建立設定檔] > 選取平台 > [PKCS 匯入的憑證] 設定檔類型)。 在 Intune 中，您可以匯入 PFX 格式的憑證。 Intune 接著可以將這些相同的憑證提供給單一使用者所註冊的多個裝置。 這也包括：
 
 - 原生 iOS 電子郵件設定檔支援啟用 PFX 格式之已匯入憑證的 S/MIME 加密。
@@ -73,14 +73,14 @@ ms.locfileid: "53112828"
 [Windows 10 VPN 設定](vpn-settings-windows-10.md)會列出目前的 VPN 設定。
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 將支援 256 位元的加密金鑰 <!-- 1832174 -->
-適用於 iOS 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
+適用於 Android 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>已在 Intune 設定檔中啟用共用的 PC 設定 <!-- 1907917 -->
 您目前可以使用自訂的 OMA-URI 設定，在 Windows 10 電腦裝置上設定共用的 PC 設定。 新的設定檔將會新增來設定共用的 PC 設定 ([裝置設定] > [設定檔] > [建立設定檔] > [Windows 10 及更新版本] > [共用的多使用者裝置])。
 適用於：Windows 10 及更新版本、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 原則會更新驗證方法與公司入口網站應用程式安裝  <!-- 1927359 -->
-Intune 將不再支援特定裝置上從 App Store 安裝的公司入口網站應用程式。 只有當您在註冊期間使用 Apple 設定助理進行驗證時，此變更才有意義。 此變更也只會影響透過下列各項註冊的 iOS 裝置：  
+在已透過 [設定助理] 註冊的裝置上 (透過 Apple 的公司裝置註冊方法之一)，Intune 將不再支援公司入口網站 (當使用者從 App Store 手動安裝時)。 只有當您在註冊期間使用 Apple 設定助理進行驗證時，此變更才有意義。 此變更也只會影響透過下列各項註冊的 iOS 裝置：  
 * Apple Configurator
 * Apple Business Manager
 * Apple School Manager
@@ -113,6 +113,9 @@ Intune 將不再支援特定裝置上從 App Store 安裝的公司入口網站�
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>部分 BitLocker 設定支援 Windows 10 專業版<!-- 2727036 -->
 您將能建立組態設定檔，在 Windows 10 裝置上設定 Endpoint Protection 設定，包括 BitLocker。 這會針對部分 BitLocker 設定新增對 Windows 10 專業版的支援。 若要查看目前的 Windows 10 版本設定，請參閱[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune 裝置報告欄位 <!-- 2748738 -->
 Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune 裝置報告欄位 <!-- 2748738 -->
@@ -208,7 +211,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 
 目前沒有任何作用中的通知。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 如需近期發展的詳細資料，請參閱 [Microsoft Intune 的新功能](whats-new.md)。
 
 

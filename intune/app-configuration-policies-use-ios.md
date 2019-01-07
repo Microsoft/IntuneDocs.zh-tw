@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184602"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324934"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -100,14 +100,14 @@ Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft 
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>在多重身分識別應用程式中只允許設定的組織帳戶 
 
-針對 Android 裝置，請使用下列索引鍵/值組：
+針對 iOS 裝置，請使用下列機碼/值組：
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
+| **機碼** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **值** | <ul><li>**Enabled**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 索引鍵所定義的受控使用者帳戶。</li><li>**Disable** (或與 **Enabled** 不區分大小寫不相符項目的任何值)：允許任何帳戶。</li></ul> |
+| **值** | <ul><li>**Enabled**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |。
 
    > [!NOTE]
-   > 使用多重身分識別只允許設定的組織帳戶時，您必須使用 OneDrive for iOS 10.34 或更新版本和 Outlook for iOS 2.99.0 或更新版本。
+   > 只允許已設定的組織帳戶具有多重身分識別時，您必須使用 iOS 版 OneDrive 10.34 或更新版本和 iOS 版 Outlook 2.99.0 或更新版本，且必須使用 [Intune 應用程式保護原則](app-protection-policy.md)將應用程式設為目標。
 
 ## <a name="enter-xml-data"></a>輸入 XML 資料
 
@@ -123,7 +123,7 @@ Intune 會驗證 XML 格式。 但 Intune 不會檢查 XML 屬性清單 (PList) 
 
 當您建立應用程式設定檔時，可以使用下列格式指定下列一或多個值︰
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

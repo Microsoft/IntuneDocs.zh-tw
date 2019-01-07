@@ -1,11 +1,11 @@
 ---
 title: 針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs
-description: 在 Intune 中註冊 Windows 10 1511+ 裝置
+description: 傳送診斷記錄以協助公司支援人員修正應用程式問題
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,35 @@ ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146514"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626062"
 ---
-# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>針對 Windows 10 將記錄從公司入口網站應用程式傳送給公司支援人員
+# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>針對 Windows 從公司入口網站傳送診斷記錄給公司支援人員
 
-如果您在 Windows 10 裝置上使用公司入口網站應用程式時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+在 [公司入口網站] 應用程式中針對 Windows 10 進行應用程式問題疑難排解。 如果您在 Windows 10 裝置上使用應用程式時遇到問題，可以傳送電子郵件給支援小組來尋求協助。 發生在 [公司入口網站] 應用程式中的事件和錯誤會儲存在您裝置上名為「診斷記錄」的特殊文件中。 當您要求協助時，此應用程式會為您開啟含有診斷識別碼且已預先填入內容的電子郵件，以便讓您能夠快速取得所需的協助。
 
 > [!Note]       
-> 當使用者啟動工作流程以取得有關問題的說明時，Windows 10 版公司入口網站會將應用程式記錄檔直接傳送給 Microsoft。 這樣可以更輕鬆地進行疑難排解並解決向 Microsoft 提出的問題。
+> 在您按一下 [取得協助] 之後，「公司入口網站」會自動將您的記錄傳送給 Microsoft 支援小組。 這是一個主動式步驟，可讓您更容易解決 Microsoft 的相關問題。  
 
 1. 開啟**公司入口網站**應用程式。
-2. 選取 [設定] 齒輪，然後 [傳送記錄檔]。
-3. [共用] 隨即開啟。 選取 [郵件]。 這將會建立附加公司入口網站記錄的電子郵件訊息，可讓您傳送給公司支援人員。
+2. 選取 [設定] > [取得協助]。  
 
-   ![公司入口網站應用程式 [設定] 頁面中的 [傳送記錄檔] 對話方塊。 要按一下的連結會顯示 [傳送記錄 - 將診斷記錄傳送給您公司的支援人員，協助其解決與公司入口網站相關的問題]。](./media/w10-share-logs-after-1711.png)
+   ![醒目提示 [設定] 和 [取得協助] 區段與按鈕的 [設定] 頁面螢幕擷取畫面。](./media/1811_Get_Help_Windows_Cpapp.png)    
 
-您可能也需要傳送[設定應用程式中的記錄](send-logs-to-your-it-admin-settings-windows.md)，更進一步地協助公司支援人員嘗試將他們可能發現的任何問題進行疑難排解。
+3. 顯示 [共用] 畫面時，選取 [郵件]。 [郵件] 應用程式將會為您建立電子郵件訊息。 請輸入您所遇到問題的描述，以便讓支援小組知道要在記錄中尋找哪些資訊。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+   ![醒目提示 [郵件] 應用程式圖示的 [共用] 畫面螢幕擷取畫面。](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![在 [郵件] 應用程式中開啟之已預先填入內容的電子郵件螢幕擷取畫面。](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+如果您公司需要應用程式或裝置活動的額外相關資訊，則您可能也需要[從 [設定] 應用程式傳送記錄](send-logs-to-your-it-admin-settings-windows.md)。  
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

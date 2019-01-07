@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977349"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531323"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的裝置合規性原則入門
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
   啟用此設定會要求裝置：
   - 啟用 OS 層級的位置服務
   - 允許公司入口網站使用位置服務
-  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或實際將裝置移動 500 公尺以上來觸發評估。
+  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或實際將裝置移動 500 公尺以上來觸發評估。 如果裝置未在 72 小時內移動 500 公尺，使用者就必須開啟 [公司入口網站] 應用程式來進行加強的越獄評估。
 
 - **合規性狀態有效期限 (天)**：輸入一段期間，裝置要在期間內回報所有收到的合規性政策狀態。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
 

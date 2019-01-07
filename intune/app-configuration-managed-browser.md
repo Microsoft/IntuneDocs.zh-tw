@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630012"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324968"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
 
@@ -124,7 +124,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
 7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Android 或兩者的 **Managed Browser** 或 **Edge**。
 8.  選擇 [確定] 返回 [新增設定原則] 刀鋒視窗。
-9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
+9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用此文章稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 10. 完成後，請選擇 [確定]。
 11. 在 [新增設定原則] 刀鋒視窗上，選擇 [新增]。
 12. 就會建立新設定，然後在 [應用程式設定] 刀鋒視窗上顯示。
@@ -150,7 +150,7 @@ Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( htt
 ### <a name="before-you-start"></a>開始之前
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
-    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
+    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)。 
 - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
 - Managed Browser 或 Microsoft Edge 應用程式的使用者已將 [Intune 應用程式防護原則]( app-protection-policy.md)指派給應用程式。
 
@@ -168,7 +168,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-如需如何前後使用 Managed Browser、Microsoft Edge 與 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (建議搭配使用：Intune 和 Azure Active Directory 合作以改善使用者存取)。
+如需如何前後使用 Managed Browser、Microsoft Edge 與 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[建議搭配使用：Intune 和 Azure Active Directory 合作以改善使用者存取](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) \(英文\)。
 
 > [!NOTE]
 > Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 
@@ -261,6 +261,19 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>在下列瀏覽器中開啟連結：Intune Managed Browser 與Microsoft Edge 
+
+Intune Managed Browser 和 Microsoft Edge 現在已被視為受原則管理/保護的瀏覽器。 現在，現有應用程式保護原則會導致 Intune 受控應用程式的網頁連結，根據您的案例和平台在特定瀏覽器中開啟。 
+
+在 Android 上： 
+* 如果裝置上有 MB 和 Edge，除非具有原則受控瀏覽器需求的 Intune 受控應用程式將應用程式組態設定 “com.microsoft.intune.useEdge” 設為 “true”，否則將為 Managed Browser。  
+* 如果裝置上只有 Microsoft Edge 且使用原則設為目標，則為 Microsoft Edge。
+* 如果裝置上只有 Managed Browser 且使用原則設為目標，則為 Managed Browser。 
+
+在 iOS 上，針對已整合 Intune SDK for iOS v. 9.0.9+ 的應用程式： 
+* 如果裝置上有 MB 和 Edge，除非具有原則受控瀏覽器需求的 Intune 受控應用程式將應用程式組態設定 “com.microsoft.intune.useEdge” 設為 “true”，否則將為 Managed Browser，**或**如果已安裝 Microsoft Edge 且已接收原則，則為 Microsoft Edge。 
+* 如果裝置上只有 Microsoft Edge，且已接收並使用原則設為目標，則為 Microsoft Edge。 
+* 如果裝置上只有 Managed Browser，且已接收並使用原則設為目標，則為 Managed Browser。
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用受管理的瀏覽器存取受管理應用程式的記錄檔
 

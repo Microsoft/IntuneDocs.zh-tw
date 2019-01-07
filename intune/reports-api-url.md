@@ -1,7 +1,7 @@
 ---
 title: Intune 資料倉儲 API 端點
 titlesuffix: Microsoft Intune
-description: 參考主題描述 Intune Data Warehouse API URL 結構。
+description: 本參考主題描述 Microsoft Intune 資料倉儲 API URL 結構。 提供篩選條件範例。
 keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180590"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642739"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187849"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657775"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -79,11 +79,11 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 您需要下列其中一個開發人員指南，協助您將 Intune App SDK 整合到應用程式：
 
-* **[Intune App SDK for iOS 開發人員指南](app-sdk-ios.md)**：本文件將逐步引導您使用 Intune App SDK 啟用原生 iOS 應用程式。
+* **[Intune App SDK for iOS 開發人員指南](app-sdk-ios.md)**：此文件將逐步引導您使用 Intune App SDK 來啟用原生 iOS 應用程式。
 
-* **[Intune App SDK for Android 開發人員指南](app-sdk-android.md)**：本文件將逐步引導您使用 Intune App SDK 來啟用原生 Android 應用程式。
+* **[Intune App SDK for Android 開發人員指南](app-sdk-android.md)**：此文件將逐步引導您使用 Intune App SDK 來啟用原生 Android 應用程式。
 
-* **[Intune App SDK Xamarin 繫結指南](app-sdk-xamarin.md)**︰本文件將協助您使用 Xamarin for Intune 應用程式保護原則來建置 iOS 和 Android 應用程式。
+* **[Intune App SDK Xamarin 繫結指南](app-sdk-xamarin.md)**：此文件將協助您使用 Xamarin for Intune 應用程式保護原則來建置 iOS 與 Android 應用程式。
 
 
 
@@ -99,11 +99,11 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
-* **iOS 的 Intune App SDK**：SDK 預設會記錄使用事件的相關 SDK 遙測資料。 這些資料會傳送到 Microsoft Intune。
+* **iOS 版 Intune App SDK**：此 SDK 預設會記錄使用事件的相關 SDK 遙測資料。 這些資料會傳送到 Microsoft Intune。
 
     * 如果您選擇不要將 SDK 遙測資料從應用程式傳送至 Microsoft Intune，則必須停用遙測傳輸，方法是在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 "YES"。
 
-* **Intune App SDK for Android**：Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。 
+* **Android 版 Intune App SDK**：Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。 
 
     * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
@@ -153,15 +153,15 @@ Intune|iOS|Android|說明|
 ### <a name="test-your-app"></a>測試應用程式
 在您完成整合 iOS 或 Android 應用程式與 Intune App SDK 的必要步驟之後，需要確定使用者和 IT 系統管理員的所有應用程式保護原則皆已啟用且正常運作。若要測試整合式應用程式，您需要下列項目：
 
-* **Microsoft Intune 測試帳戶**：若要對啟用 Intune 的應用程式測試 Intune 的受控應用程式保護功能，您必須具備 Microsoft Intune 帳戶。
+* **Microsoft Intune 測試帳戶**：若要對 Intune 受控應用程式測試 Intune 應用程式保護功能，您將需要一個 Microsoft Intune 帳戶。
 
     * 如果您是為 iOS 或 Android 市集應用程式啟用 Intune 應用程式保護原則的 ISV，完成註冊步驟中所述的 Microsoft Intune 註冊後，即會收到促銷代碼。 促銷代碼將可讓您註冊 Microsoft Intune 試用版，以獲得 1 年的延長使用時間。
 
     * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
 
-* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。
+* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該要知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。
 
-* **疑難排解**︰如果您在手動測試應用程式的安裝使用者體驗時遇到任何問題，請參閱[針對應用程式安裝問題進行疑難排解](troubleshoot-app-install.md)。 
+* **疑難排解**：如果您在手動測試應用程式的安裝使用者體驗時遇到任何問題，請參閱[針對應用程式安裝問題進行疑難排解](troubleshoot-app-install.md)。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>將您應用程式存取權授與 Intune 應用程式保護服務 (選擇性)
 
@@ -188,7 +188,7 @@ Intune|iOS|Android|說明|
 
 徽章是一個公事包圖示，可以在下面的範例中看到︰
 
-![徽章範例 1](./media/badge-example-1.png) ![徽章範例 2](./media/badge-example-2.png)
+![Intune 應用程式保護原 - 徽章範例 1](./media/badge-example-1.png) ![Intune 應用程式保護原 - 徽章範例 2](./media/badge-example-2.png)
 
 **為應用程式加上徽章的必要步驟**：
 

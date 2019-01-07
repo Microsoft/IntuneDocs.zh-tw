@@ -1,6 +1,6 @@
 ---
 title: MAM 和應用程式保護的相關常見問題
-description: 本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+description: 此文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,16 +15,16 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181185"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306010"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
-本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+此文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
 
 ## <a name="mam-basics"></a>MAM 基本概念
 
@@ -37,9 +37,9 @@ MAM 可保護應用程式內組織的資料。 透過不需註冊的 MAM (MAM-WE
 
 **MAM 支援哪些裝置組態？**<br></br>
 Intune MAM 支援兩個組態︰
-- **Intune MDM + MAM**：IT 系統管理員只能針對已在 Intune 行動裝置管理 (MDM) 註冊的裝置，使用 MAM 與應用程式保護原則來管理應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 https://portal.azure.com。
+- **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 https://portal.azure.com。
 
-- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 http://portal.azure.com。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
+- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 https://portal.azure.com。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
 
 
 ## <a name="app-protection-policies"></a>應用程式防護原則
@@ -61,7 +61,7 @@ Intune MAM 支援兩個組態︰
 
 - 終端使用者必須擁有指派給其 Azure Active Directory 帳戶的 Microsoft Intune 授權。 請參閱[管理 Intune 授權](/intune/licenses-assign)，以了解如何將 Intune 授權指派給終端使用者。
 
-- 終端使用者必須隸屬於由應用程式保護原則設為目標的安全性群組。 相同的應用程式保護原則必須將已使用的特定應用程式設為目標。 應用程式保護原則可在 [Azure 入口網站](http://portal.azure.com)中的 Intune 主控台中建立與部署。 安全群組目前可以在 [Office 入口網站](http://portal.office.com)中建立。
+- 終端使用者必須隸屬於由應用程式保護原則設為目標的安全性群組。 相同的應用程式保護原則必須將已使用的特定應用程式設為目標。 應用程式保護原則可在 [Azure 入口網站](https://portal.azure.com)中的 Intune 主控台中建立與部署。 安全群組目前可以在 [Office 入口網站](https://portal.office.com)中建立。
 
 - 終端使用者必須使用其 AAD 帳戶來登入應用程式。
 
@@ -76,7 +76,7 @@ Intune MAM 支援兩個組態︰
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 
-- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](http://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
+- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](https://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
 - 終端使用者必須有受控的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受控位置是 OneDrive，則 [OneDrive](https://onedrive.live.com/about/) 應用程式應該在終端使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
 
@@ -109,8 +109,8 @@ Intune 會將應用程式中所有資料標示為「公司」或「個人」。 
 
 - **使用者收到 Intune PIN 提示的頻率為何？**<br></br> IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式保護原則設定「重新檢查存取需求前的剩餘時間 (分鐘)」。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率： 
 
-    - **PIN 會在相同發行者的多個應用程式間共用，以提升可用性：** 在 iOS，一組應用程式 PIN 會在**相同應用程式發行者**的所有應用程式間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
-    - **裝置重新開機之後的「重新檢查存取需求前的剩餘時間 (分鐘)」行為：**「PIN 計時器」會追蹤閒置分鐘數，以判斷何時顯示下一個 Intune 應用程式 PIN。 在 iOS 上，PIN 計時器不會受到裝置重新開機的影響。 因此，裝置重新啟動不會影響使用者在使用 Intune PIN 原則的 iOS 應用程式中閒置的分鐘數。 在 Android 上，PIN 計時器會在裝置重新開機時重設。 因此，使用 Intune PIN 原則的 Android 應用程式可能會提示輸入應用程式 PIN，而不論**裝置重新開機之後**的「重新檢查存取需求前的剩餘時間 (分鐘)」設定值。  
+    - **PIN會在相同發行者的應用程式間共用，以改進可用性：** 在 iOS 上，應用程式個人識別碼會在**相同應用程式發行者**的所有應用程式之間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
+    - **裝置重新開機後「重新檢查存取需求前等候時間 (分鐘)」行為：**[PIN 計時器] 會追蹤非使用狀態的分鐘數，可判斷何時顯示下一個 Intune 應用程式個人識別碼。 在 iOS 上，PIN 計時器不會受到裝置重新開機的影響。 因此，裝置重新啟動不會影響使用者在使用 Intune PIN 原則的 iOS 應用程式中閒置的分鐘數。 在 Android 上，PIN 計時器會在裝置重新開機時重設。 因此，使用 Intune PIN 原則的 Android 應用程式可能會提示輸入應用程式 PIN，而不論**裝置重新開機之後**的「重新檢查存取需求前的剩餘時間 (分鐘)」設定值。  
     - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。
 
 若為 iOS 裝置，即使在不同發行者的應用程式之間共用 PIN，當非主要輸入焦點之應用程式的 [重新檢查存取需求前等候時間 (分鐘)] 值再次達到時，就會再度顯示提示。 例如，使用者有發行者 _X_ 的應用程式 _A_ 和發行者 _Y_ 的應用程式 _B_，而且這兩個應用程式共用相同的 PIN。 使用者將焦點放在應用程式 _A_ (前景)，並將應用程式 _B_ 最小化。 達到 [重新檢查存取需求前等候時間 (分鐘)] 值，而且使用者切換至應用程式 _B_ 之後，則需要 PIN。

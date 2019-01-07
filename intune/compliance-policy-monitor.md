@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977298"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642807"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -69,7 +69,12 @@ ms.locfileid: "52977298"
 
   - 深入了解[對不符合規範之裝置所要採取的動作](actions-for-noncompliance.md)。
 
-- **未評估**：新註冊之裝置的初始狀態。 或者，未獲指派合規性政策且沒有可檢查合規性之觸發程序的裝置。
+- **未評估**：新註冊之裝置的初始狀態。 此狀態的其他可能原因包括：
+
+  - 裝置未獲指派合規性政策，且沒有可檢查合規性之觸發程序
+  - 裝置自上次更新合規性政策後就未曾簽入
+  - 裝置未與特定使用者建立關聯
+  - 裝置使用裝置註冊管理員 (DEM) 帳戶註冊
 
 - **不符合規範︰** 裝置無法套用一或多個裝置合規性政策設定。 或者，使用者尚未遵守政策。
 

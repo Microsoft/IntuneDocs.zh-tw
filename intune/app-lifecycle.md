@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887044"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734216"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的應用程式生命週期概觀
 
@@ -28,7 +28,7 @@ ms.locfileid: "52887044"
 
 新增應用程式並進行其他階段時即開始 Microsoft Intune 應用程式生命週期，直到您將應用程式移除。 了解這些階段，您將具有在 Intune 中開始使用應用程式管理所需的詳細資料。
 
-![應用程式生命週期](./media/app-lifecycle.png "Intune 應用程式生命週期")
+![應用程式生命週期 - 新增、部署、設定、保護和淘汰。](./media/app-lifecycle.png "Intune 應用程式生命週期")
 
 ## <a name="add"></a>新增
 

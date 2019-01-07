@@ -1,7 +1,7 @@
 ---
 title: Intune 資料倉儲變更記錄檔
 titlesuffix: Microsoft Intune
-description: Intune 資料倉儲 API 中的變更清單。
+description: 本主題提供 Microsoft Intune 資料倉儲 API 的變更清單。
 keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189940"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642756"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
@@ -95,4 +95,4 @@ _發行日期：2017 年 10 月_
 
 ## <a name="next-steps"></a>接下來的步驟
  - 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
- - 閱讀 [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)。
+ - 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。

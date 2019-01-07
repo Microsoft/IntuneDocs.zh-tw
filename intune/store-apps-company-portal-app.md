@@ -1,12 +1,12 @@
 ---
 title: 手動新增 Windows 10 公司入口網站應用程式
 titleSuffix: Microsoft Intune
-description: 了解如何手動新增 Windows 10 公司入口網站應用程式。
+description: 了解您的員工如何手動從 Microsoft Store 將 Windows 10 公司入口網站應用程式新增到他們的電腦上。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190263"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642586"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
@@ -30,7 +30,7 @@ ms.locfileid: "52190263"
 使用者可以透過 Microsoft Store 自行安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果企業需要由您指派公司入口網站應用程式給使用者，您也可以直接透過 Intune 手動指派 Windows 10 公司入口網站應用程式。 即使尚未整合 Intune 與商務用 Microsoft Store，您仍可以進行上述作業。
 
  > [!NOTE]
- > 本文中所述的選項需要您在每次應用程式更新發行之後指派手動更新。
+ > 此文章中所述的選項需要您在每次應用程式更新發行之後指派手動更新。
 
 ## <a name="configure-settings-to-show-offline-apps"></a>組態設定以顯示離線應用程式
 1. 使用您的系統管理員帳戶，登入[商務用 Microsoft Store](https://www.microsoft.com/business-store)。
@@ -51,7 +51,7 @@ ms.locfileid: "52190263"
 
 7. 選取 [下載]，即可下載「必要架構」底下的所有套件。  
     您必須針對 x86、x64 及 ARM 架構完成這個步驟；總共 12 個套件。
-8. 將公司入口網站應用程式上傳至 Intune 之前，請先建立資料夾 (例如 C:\Company Portal)，並以如下結構放置套件︰
+8. 將公司入口網站應用程式上傳至 Intune 之前，請先建立資料夾 (例如：C:\Company Portal)，並以如下結構放置套件：
    - 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 *Dependencies* 子資料夾。  
 
      ![存有 APPXBUN 檔案的 Dependencies 資料夾](./media/Win10CP-Dependencies-save.png)
@@ -73,7 +73,7 @@ ms.locfileid: "52190263"
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我側載的 Windows 8.1 公司入口網站應用程式升級至 Windows 10 公司入口網站應用程式？
 我們建議的移轉路徑是將指派動作設為 [解除安裝]，以刪除 Windows 8.1 公司入口網站應用程式的指派。 選取此設定之後，您即可使用先前說明過的任何選項，來指派 Windows 10 公司入口網站應用程式。  
 
-如果您需要側載應用程式，但您已指派 Windows 8.1 公司入口網站，而未使用 Symantec 憑證來簽署，請遵循本文上述幾節的步驟完成升級。
+如果您需要側載應用程式，但您已指派 Windows 8.1 公司入口網站，而未使用 Symantec 憑證來簽署，請遵循此文章上述幾節的步驟完成升級。
 
 如果您需要側載應用程式，但您已使用 Symantec 程式碼簽署憑證來簽署及指派 Windows 8.1 公司入口網站應用程式，請遵循下一節中的步驟。
 

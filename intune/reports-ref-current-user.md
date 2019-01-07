@@ -1,12 +1,12 @@
 ---
 title: 目前使用者 - Intune 資料倉儲
 titlesuffix: Microsoft Intune
-description: Intune 資料倉儲 API 中 [使用者] 類別實體集合的參考主題。
+description: Intune 資料倉儲 API 中「目前使用者」類別實體集合的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189770"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266897"
 ---
 # <a name="reference-for-current-user-entity"></a>Current User 實體的參考
 

@@ -1,5 +1,5 @@
 ---
-title: 註冊 iOS 裝置 - 裝置註冊方案
+title: 註冊 iOS 裝置 - 裝置註冊計劃
 titleSuffix: Microsoft Intune
 description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。
 keywords: ''
@@ -16,18 +16,18 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f27d8b2334ff38146949c28898040da6a714e0a
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032464"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642841"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您現在可以透過 Apple [裝置註冊程式 (DEP)](https://deploy.apple.com) 設定 Intune 來註冊 iOS 裝置。 您可以在完全不需要接觸的情況下，啟用大量裝置的 DEP 註冊。 您可以將 iPhone 和 iPad 等裝置直接交付給使用者。 當使用者啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
+您可以設定 Intune 來註冊透過 Apple [裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的 iOS 裝置。 您可以在完全不需要接觸的情況下，啟用大量裝置的 DEP 註冊。 您可以將 iPhone 和 iPad 等裝置直接交付給使用者。 當使用者啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
 若要啟用 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
 
@@ -46,7 +46,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 - [Apple 的裝置註冊計劃](http://deploy.apple.com)中所購買的裝置
 - [MDM 授權單位](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -170,7 +170,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 13. 選擇 [設定助理自訂]，對下列設定檔設定進行設定：![設定助理自訂。](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | 部門設定 | 描述 |
+    | 部門設定 | 說明 |
     |---|---|
     | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
     |    <strong>部門電話</strong>     | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
