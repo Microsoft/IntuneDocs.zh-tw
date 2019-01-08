@@ -1,5 +1,6 @@
 ---
 title: 使用 Intune 設定以應用程式為基礎的條件式存取原則
+titlesuffix: Microsoft Intune
 description: 了解如何使用 Intune 建立以應用程式為基礎的條件式存取原則。
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 079671064c09c22d151ea71f8b3fb385652aef0f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816917"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 設定以應用程式為基礎的條件式存取原則
 
@@ -51,10 +52,10 @@ IT 系統管理員可以從 Azure AD 工作負載建立以應用程式為基礎�
 
 5. 依序選擇 [需要經過核准的用戶端應用程式]、[選取] 和 [建立] 儲存新的原則。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用應用程式保護原則保護應用程式資料](app-protection-policies.md)
 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

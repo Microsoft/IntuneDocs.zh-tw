@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816951"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何驗證您的應用程式保護原則設定
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247062"
 
 驗證應用程式保護原則已正確設定和運作。 本指南適用於 Azure 入口網站的應用程式保護原則。
 
-### <a name="checking-for-symptoms"></a>檢查是否有徵兆
+## <a name="checking-for-symptoms"></a>檢查是否有徵兆
 因為 MAM 是資料保護工具，所以無法讓使用者回報問題。 如果應用程式保護設定發生問題，則因為缺少應用程式保護，所以使用者存取將不會受到限制，而且不會知道發生問題。 因此，建議您先對一小群可以協助仔細測試這些應用程式保護限制的使用者試驗您的應用程式保護原則，以驗證您的應用程式保護設定。
 
 
-### <a name="what-to-check"></a>要檢查的項目
+## <a name="what-to-check"></a>要檢查的項目
 
 如果測試顯示您的應用程式保護原則行為不如預期，請檢查這些項目︰
 
@@ -41,7 +41,7 @@ ms.locfileid: "53247062"
 - 使用者具備 O365 授權嗎？
 - 每個使用者之應用程式保護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。
 
-#### <a name="user-app-protection-status"></a>使用者應用程式保護的狀態
+### <a name="user-app-protection-status"></a>使用者應用程式保護的狀態
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 選取 [用戶端應用程式] > [監視器] >  [應用程式保護狀態]，然後選取 [指派的使用者] 圖格。 
@@ -50,7 +50,7 @@ ms.locfileid: "53247062"
 
 
 
-### <a name="what-to-do"></a>解決方式
+## <a name="what-to-do"></a>解決方式
 以下是要根據使用者狀態所採取的動作︰
 
 - 若使用者未獲應用程式保護授權，請指派 Intune 授權給使用者。
@@ -58,6 +58,6 @@ ms.locfileid: "53247062"
 - 如果使用者的應用程式列為 [未簽入]，請確定您為該應用程式設定的應用程式保護原則正確。
 - 請確認這些條件會套用到所有需要套用應用程式保原則的使用者。
 
-### <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [什麼是 Intune 應用程式保護原則？](app-protection-policies.md)

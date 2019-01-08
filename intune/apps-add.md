@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429775"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067477"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -29,7 +29,7 @@ ms.locfileid: "53429775"
 
 您必須先將應用程式新增至 Microsoft Intune，才可以進行指派、監視、設定或保護。
 
-您公司中的應用程式與裝置使用者 (也就是您公司的員工) 可能會有數種不同的應用程式需求。 將應用程式新增至 Intune 並向員工開放使用前，您必須評估並了解幾項應用程式基本概念。 您必須了解可供 Intune 使用的各種應用程式類型。 您必須評估應用程式需求，例如員工所需的平台與功能。 您必須決定是否要使用 Intune 來管理裝置 (包含應用程式)，或僅管理應用程式而不管理裝置。 最後，您必須判斷員工所需的應用程式和功能，以及有哪些人需要它們。 此文章中的資訊可協助您開始進行。
+您公司中的應用程式與裝置使用者 (也就是您公司的員工) 可能會有數種不同的應用程式需求。 將應用程式新增至 Intune 並向員工開放使用前，您必須評估並了解幾項應用程式基本概念。 您必須了解可供 Intune 使用的各種應用程式類型。 您必須評估應用程式需求，例如員工所需的平台與功能。 您必須決定是否要使用 Intune 來管理裝置 (包含應用程式)，或僅管理應用程式而不管理裝置。 最後，您必須判斷員工所需的應用程式和功能，以及有哪些人需要它們。 本文中的資訊可協助您開始進行。
 
 ## <a name="app-types-in-microsoft-intune"></a>Microsoft Intune 中的應用程式類型
 
@@ -180,7 +180,7 @@ Intune 會根據下列條件，自動重新安裝、更新或移除必要的應�
 
 如需有關 Intune 應用程式安裝錯誤的詳細資料，請參閱[應用程式安裝錯誤](troubleshoot-app-install.md#app-installation-errors)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要了解如何針對每個平台將應用程式新增至 Intune，請參閱：
 

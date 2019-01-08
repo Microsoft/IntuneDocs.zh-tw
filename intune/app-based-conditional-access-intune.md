@@ -1,5 +1,6 @@
 ---
 title: 搭配 Intune 使用應用程式型條件式存取
+titlesuffix: Microsoft Intune
 description: 了解應用程式型條件式存取如何搭配 Intune 運作。
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4f52d9dc39245a374fa7a6a9705a43c7cea95a35
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30f5b902619c84e6d1d193c252e76475d2e54e82
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816730"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>搭配 Intune 使用應用程式型條件式存取
 
@@ -82,7 +83,7 @@ ms.locfileid: "52182069"
 
 11. 公司電子郵件就會傳遞到使用者的信箱。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [建立以應用程式為基礎的條件式存取原則](app-based-conditional-access-intune-create.md)
 
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)
