@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553685"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996026"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,13 +93,6 @@ Windows 10 RS3 和更新版本的用戶端，將會使用 Windows 10 用戶端�
 
 使用應用程式保護原則來保護公司資料，並以和其他 Intune 原則受管理的應用程式相同的方式控制這些應用程式的資料傳輸。 注意：如果 Flow 在主控台中尚不可見，您可在建立或編輯應用程式保護原則時新增 Flow。 若要這麼做，請使用 [+ 更多應用程式] 選項，然後在輸入欄位中指定 Flow 的 [應用程式識別碼]。 針對 Android，請使用 *com.microsoft.flow*，而針對 iOS 則請使用 *com.microsoft.procsimo*。
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 應用程式保護原則 UI 更新 <!-- 3251427 -->
-我們已變更 Intune 應用程式保護的設定和按鈕標籤，以使它們更容易理解。 部分變更包括：  
-
-- 控制項從 [是] / [否] 的控制項，變更成主要為 [封鎖] / [允許]****，以及 [停用] / [啟用] 的控制項。 標籤也一併更新。  
-- 設定已重新格式化，因此設定和其標籤會在控制項中並排顯示，提供更好的瀏覽。   
-
-預設設定和設定數量會保持相同，但這項變更可讓使用者更輕鬆了解、瀏覽和利用這些設定，以套用所選的應用程式保護原則。
 
 ### <a name="device-configuration"></a>裝置設定
 
@@ -727,7 +720,7 @@ Intune IT 系統管理員可以透過 Intune 應用程式防護原則，強制�
 我們已修訂裝置使用者在裝置不相容時看到的訊息。 訊息保留其原始意義，但已透過更友善的語言和技術性較低的術語更新。 我們也已重新整理文件和補救步驟的連結，將其保持為最新。
 下列前後文字是您將看到之傳訊中的一個改善範例：
 - **之前**：*這部裝置未在 IT 管理員要求的指定期間內連絡 Intune 服務。若要解決此問題，請在您的裝置上開啟公司入口網站應用程式，然後按一下 [檢查相容性] 按鈕。
-- **之後**：*您的裝置已有一段未向組織簽到。若要重新建立連線，請在裝置上開啟公司入口網站應用程式，然後針對您的裝置點選 [檢查設定]。
+- **之後**：*您的裝置已有一段未向組織簽到。* 若要重新建立連線，請在裝置上開啟公司入口網站應用程式，然後點選 [檢查裝置設定]。
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>撤銷 iOS VPP 應用程式授權 <!-- 1863797 -->
 身為系統管理員，您可以回收指派給使用者或裝置的 iOS VPP 應用程式授權。 解除安裝 iOS VPP 應用程式也可讓您回收應用程式授權。 在解除安裝應用程式之前，需要先從目標應用程式群組中刪除使用者或裝置。 從群組移除使用者或裝置，可避免重新安裝應用程式。 完成這些步驟後，您可以選擇將應用程式授權指派給其他使用者或裝置。 如需 iOS VPP 應用程式授權的詳細資訊，請參閱[在 Microsoft Intune 中管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
