@@ -1,6 +1,6 @@
 ---
 title: 針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs
-description: 傳送診斷記錄以協助公司支援人員修正應用程式問題
+description: 傳送錯誤詳細資料以協助公司支援人員修正您的應用程式問題
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626062"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006313"
 ---
 # <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>針對 Windows 從公司入口網站傳送診斷記錄給公司支援人員
 

@@ -1,5 +1,5 @@
 ---
-title: 檢閱應用程式防護原則記錄
+title: 檢閱應用程式防護原則記錄 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 深入了解應用程式防護記錄中您可以檢閱的設定。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817206"
 ---
 # <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
@@ -68,7 +68,7 @@ ms.locfileid: "52189838"
 | SimplePINAllowed            | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許簡單的 PIN                                                                                                                                                               |
 | TouchIDEnabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 允許指紋而非 PIN (iOS 8+)。                                                                                                                                      |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
  - 若要深入了解應用程式保護原則，請參閱[什麼是應用程式保護原則？](app-protection-policy.md)
  - Intune 有提供數種工具來協助您對環境中的問題進行疑難排解。 如需詳細資訊，請參閱[使用疑難排解入口網站協助使用者](help-desk-operators.md)。

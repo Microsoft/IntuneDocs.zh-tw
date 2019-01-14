@@ -1,12 +1,12 @@
 ---
-title: Jamf 裝置的裝置相容性原則
+title: Jamf 裝置的裝置合規性政策 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817223"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
-適用對象：Azure 入口網站的 Intune
+適用於：Azure 入口網站中的 Intune
 
 您可以使用 Azure Active Directory 和 Microsoft Intune 的條件式存取原則，確定您的使用者符合組織需求的規範。 您可以將這些原則套用至[使用 Jamf Pro 管理的](conditional-access-integrate-jamf.md) Mac 上。 這需要 Intune 和 Jamf Pro 主控台的存取權。
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中設定裝置合規性原則
 
-1. 開啟 Microsoft Azure，然後瀏覽至 [Intune] > [裝置合規性] > [原則]。 您可以建立 macOS 的原則，包括針對不符合規範的使用者及群組選擇一系列的動作 (例如，傳送警告電子郵件)。
+1. 開啟 Microsoft Azure，然後瀏覽至 [Intune] > [裝置合規性] > [原則]。 您可以建立 macOS 的原則，包括針對不符合規範的使用者及群組選擇一系列的動作 (例如傳送警告電子郵件)。
 2. 搜尋想要的群組，然後對它們套用原則。
 
 > [!Note]
@@ -57,7 +57,7 @@ ms.locfileid: "52182018"
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中建立原則讓使用者使用 Azure Active Directory 註冊其裝置
 
 > [!NOTE]
-> 您需要[部署 macOS 版公司入口網站](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos)，才能繼續進行下一個步驟。  
+> 您需要[部署 macOS 版公司入口網站](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)，才能繼續進行下一個步驟。  
 
 使用者必須透過 Jamf 自助服務啟動公司入口網站應用程式，以向 Azure AD 將裝置註冊為由 Jamf Pro 管理的裝置。 這會需要使用者採取行動。 我們建議您透過電子郵件、Jamf Pro 通知[連絡您的使用者](end-user-educate.md)，或使用任何其他方法通知您的使用者，按一下 Jamf 自助服務中的按鈕。
 
@@ -75,7 +75,7 @@ ms.locfileid: "52182018"
 
 在 Jamf Pro 文件中取得如何[移除 Jamf 受控裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的相關資訊。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 - [開始使用 Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

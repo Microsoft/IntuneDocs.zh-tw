@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune 的條件式存取
-titlesuffix: ''
+title: 條件式存取與 Microsoft Intune | Microsoft Intune
 description: 了解如何在 Microsoft Intune 中定義使用者、裝置和應用程式在存取公司資源之前必須符合的條件。
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1e9e8db76978f9547d10fd4709d74ea809f2c281
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f25fe74c9506d2179c683156821ef9afb218128a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816560"
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 
@@ -61,6 +60,6 @@ Enterprise Mobility + Security (EMS) 的條件式存取不是一項獨立產品�
 
 -   **以應用程式為基礎的條件式存取**
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)

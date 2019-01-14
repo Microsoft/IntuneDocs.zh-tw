@@ -1,6 +1,5 @@
 ---
-title: 將 Jamf Pro 與 Microsoft Intune 整合以符合規範
-titlesuffix: ''
+title: 將 Jamf Pro 與 Microsoft Intune 整合以符合規範 | Microsoft Intune
 description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
 keywords: ''
 author: brenduns
@@ -16,16 +15,16 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816815"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
-適用對象：Azure 入口網站的 Intune
+適用於：Azure 入口網站中的 Intune
 
 如果您的組織使用 [Jamf Pro](https://www.jamf.com) 來管理使用者的 Mac，您可以使用 Microsoft Intune 合規性原則搭配 Azure Active Directory 條件式存取，來確保您組織中的裝置能符合規範。
 
@@ -132,6 +131,6 @@ Jamf Pro 會擷取有關受管理 macOS 裝置的清查資訊。 Jamf Pro 會將
 * UDID
 * 使用者電子郵件
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [將合規性原則套用至受 Jamf 管理的裝置](conditional-access-assign-jamf.md)

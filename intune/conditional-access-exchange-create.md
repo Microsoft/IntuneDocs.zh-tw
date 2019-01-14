@@ -1,5 +1,5 @@
 ---
-title: 建立 Exchange 條件式存取原則
+title: 建立 Exchange 條件式存取原則 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 在 Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 設定條件式存取。
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817053"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -64,7 +64,7 @@ ms.locfileid: "52186082"
 - Windows Phone 8.1 和更新版本
 - iOS 上的原生電子郵件應用程式。
 - EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
-- EAS 郵件用戶端 **Android 工作設定檔裝置**：Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work for Android Enterprise**。 Android 工作設定檔若要使用條件式存取，除了必須部署 Gmail 或 Nine Work for Android Enterprise 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
+- EAS 郵件用戶端 **Android 工作設定檔裝置：** Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work for Android Enterprise**。 Android 工作設定檔若要使用條件式存取，除了必須部署 Gmail 或 Nine Work for Android Enterprise 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。
 
 > [!NOTE]
 > Android 與 iOS 版 Microsoft Outlook 不透過 Exchange 內部部署連接器支援。 若要利用 Azure Active Directory 條件式存取原則與 Intune 應用程式防護原則來保護您內部部署信箱的 iOS 與 Android 版 Outlook，請參閱[搭配 iOS 與 Android 版 Outlook 使用混合式現代化驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) \(機器翻譯\)。 
@@ -80,9 +80,9 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 成功登入之後，您會看到 [Azure 儀表板]。
 
-1. 選擇左功能表中的 [所有服務] **** ，然後在文字方塊篩選中輸入  **Intune** 。
+1. 選擇左功能表中的 [所有服務]，然後在文字方塊篩選中輸入  **Intune** 。  **** 
 
-1. 選擇 [Intune] ****，您會看到 [Intune 儀表板]。
+1. 選擇 [Intune]，您會看到 [Intune 儀表板]。  ****
 
 1. 選擇 [內部部署存取]。 [內部部署] 窗格會顯示條件式存取原則與受該原則影響之裝置的狀態。
 
@@ -125,6 +125,6 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 2. 在 [原則] 窗格中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

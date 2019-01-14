@@ -1,6 +1,5 @@
 ---
-title: Mobile Threat Defense 與 Microsoft Intune
-titleSuffix: ''
+title: Mobile Threat Defense 與 Microsoft Intune | Microsoft Intune
 description: 使用 Intune Mobile Threat Defense (MTD)，與您的 Mobile Threat Defense 夥伴根據裝置的風險來保護公司資源的存取權。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65bbc207f96ae2b1670fa2ddc45cad56466580df
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816594"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合是什麼？
 

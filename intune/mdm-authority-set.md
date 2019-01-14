@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 889e298d3d04429c1b9be2ee70519d68063953ab
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112573"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006296"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -36,7 +36,7 @@ ms.locfileid: "53112573"
 - **Intune 混合版** - Intune 雲端解決方案與 System Center Configuration Manager 的整合版。 您可以使用 Configuration Manager 主控台設定 Intune。 [在 Configuration Manager 中設定 MDM 授權單位](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription)。 
 
     > [!Important]
-    >即將推出的版本中將會關閉新混合式 MDM 客戶的上架功能。 如需詳細資訊，請參閱 [MC146431 計畫變更部落格](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/) \(英文\)。
+    >即將推出的版本中將會關閉新混合式 MDM 客戶的上架功能。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
 
 - **Office 365 的行動裝置管理** - Office 365 與 Intune 雲端解決方案的整合版。 您可以從 Office 365 系統管理中心設定 Intune。 包含 Intune 獨立版提供的功能子集。 在 Office 365 系統管理中心中設定 MDM 授權單位。
 
@@ -155,6 +155,6 @@ MDM 授權單位無法變更回「未知」。 Microsoft 伺服器使用 MDM 授
     - 從管理主控台對裝置執行某個動作 (例如遠端鎖定)。 如果成功，便代表該裝置已由新的 MDM 授權單位管理。
 - 如果您在特定裝置上遇到問題，可以將該裝置解除註冊並重新註冊，來盡快使它們連線至新的授權單位並受到管理。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 設定 MDM 授權單位之後，您可以開始[註冊裝置](device-enrollment.md)。

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817359"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -72,11 +72,11 @@ ms.locfileid: "52728815"
 
 2. 在 *[Intune 應用程式防護] 窗格中，選取 [指派] 以開啟 [Intune 應用程式防護 - 指派] 窗格。 在 [包含] 索引標籤上，選取 [選取要包含的群組]。 
 
-   ![將 [選取要包含的群組] 功能表選項反白之指派窗格的螢幕擷取畫面](./media/app-protection-policy-add-users.png)
+   ![顯示 [選取要包含的群組] 功能表的 [指派] 窗格螢幕擷取畫面](./media/app-protection-policy-add-users.png)
 
 3.  會顯示 **Azure Active Directory** 中的所有安全性群組清單。 請選取要套用這項原則的使用者群組，然後選擇 [選取]。 
 
-    ![顯示 Azure Active Directory 使用者清單的 [新增使用者群組] 窗格的螢幕擷取畫面](./media/azure-ad-user-group-list.png)
+    ![顯示 Azure AD 使用者清單的 [新增使用者群組] 窗格螢幕擷取畫面](./media/azure-ad-user-group-list.png)
 
 4.  您將群組包含及排除之後，請選取 [儲存] 以儲存設定，並將原則部署至使用者。 如果您在儲存設定之前選取 [捨棄]，您將會捨棄您對 [包含] 和 [排除] 索引標籤所做的所有變更。   
  
@@ -138,7 +138,7 @@ ms.locfileid: "52728815"
 
 若要建立這些原則，請在 Intune 主控台中瀏覽至 [用戶端應用程式] > [應用程式防護]，然後選取 [新增原則]。 您也可以編輯現有的應用程式保護原則。 若要將應用程式保護原則同時套用至受控和非受控裝置，請確認將 [目標為所有應用程式類型] 設定為 [是] (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [目標為所有應用程式類型] 設定為 [否]。 
 
-![[新增原則] 刀鋒視窗的螢幕擷取畫面，其中已選取 [目標為所有應用程式類型]](./media/app-protection-policies-target-all.png)
+![顯示 [目標為所有應用程式類型] 的 [新增原則] 刀鋒視窗螢幕擷取畫面](./media/app-protection-policies-target-all.png)
 
 針對 iOS，需要額外的應用程式組態設定，才能將應用程式設定瞄準 Intune 已註冊裝置上的應用程式：
 - **IntuneMAMUPN** 必須針對所有 MDM 受控應用程式進行設定。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
@@ -154,9 +154,9 @@ ms.locfileid: "52728815"
 - [iOS 原則](app-protection-policy-settings-ios.md)
 - [Android 原則](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [監視合規性和使用者狀態](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 * [當 Android 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-android.md)
 * [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)

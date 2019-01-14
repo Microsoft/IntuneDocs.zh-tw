@@ -1,12 +1,11 @@
 ---
-title: 新增並指派 MTD 應用程式到 Microsoft Intune
-titleSuffix: ''
+title: 新增並指派 MTD 應用程式到 Microsoft Intune | Microsoft Intune
 description: 在 Azure 入口網站上使用 Intune 來新增 Mobile Threat Defense (MTD) 應用程式、Microsoft Authenticator 應用程式和 iOS 設定原則。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181168"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995992"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式
 
 > [!NOTE] 
 > 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
-您可以使用 Intune 來新增及部署 MTD 應用程式，讓終端使用者可在其行動裝置上識別出威脅時收到通知，以及收到修復威脅的指引。
+您可以使用 Intune 來新增及部署 Mobile Threat Defense (MTD) 應用程式，讓終端使用者可在其行動裝置上識別出威脅時收到通知，以及收到修復威脅的指引。
 
 
 ## <a name="before-you-begin"></a>開始之前
@@ -38,13 +37,12 @@ ms.locfileid: "52181168"
   -   [將應用程式新增至 Intune](apps-add.md)。
   -   [將 iOS 應用程式設定原則新增至 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
   -   [使用 Intune 指派應用程式](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
-  -   [新增 iOS 應用程式設定原則](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 > [!TIP]
 > Intune 公司入口網站可作為 Android 裝置上的代理程式，讓使用者可以透過 Azure AD 檢查其身分識別。
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>設定適用於 iOS 的 Microsoft Authenticator
-針對 iOS 裝置，您需要有 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，讓使用者可以透過 Azure AD 檢查其身分識別。 此外，您需要發出訊號給 MTD iOS 應用程式，以搭配使用 Intune 的 iOS 應用程式組態原則。
+針對 iOS 裝置，您需要有 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，讓使用者可以透過 Azure AD 檢查其身分識別。 此外，您需要 iOS 應用程式設定原則來設定要搭配 Intune 使用的 MTD iOS 應用程式。
 
 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在＜設定應用程式資訊＞一節下的**步驟 12** 中，使用這個 [Microsoft Authenticator 應用程式市集 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
@@ -145,11 +143,11 @@ ms.locfileid: "52181168"
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 應用程式設定原則
 
-- 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)主題中所述。
+- 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)一文中所述。
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP Mobile 應用程式設定原則
 
--   請使用先前在 [Symantec Endpoint Protection Management 主控台](https://aad.skycure.com) \(英文\) 中設定的 Azure AD，此帳戶應該與用於登入 Intune 傳統入口網站的帳戶是同一個。
+-   請使用先前在 [Symantec Endpoint Protection 管理主控台](https://aad.skycure.com)中設定的 Azure AD，此帳戶應該與用於登入 Intune 傳統入口網站的帳戶是同一個。
 
 -   您必須**下載** iOS 應用程式設定原則檔案： 
     -   移至 [Symantec Endpoint Protection Management 主控台](https://aad.skycure.com) \(英文\) 並使用您的系統管理員認證登入。
@@ -212,6 +210,6 @@ ms.locfileid: "52181168"
 
 - 這個步驟適用於所有 MTD 合作夥伴。 請參閱[利用 Intune 將應用程式指派給群組](apps-deploy.md)的指示。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [設定 MTD 的裝置合規性原則](mtd-device-compliance-policy-create.md)

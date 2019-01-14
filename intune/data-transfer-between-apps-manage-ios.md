@@ -1,6 +1,5 @@
 ---
-title: 管理 iOS 應用程式之間的資料傳輸
-titlesuffix: Microsoft Intune
+title: 管理 iOS 應用程式之間的資料傳輸 | Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用行動裝置應用程式管理原則來管理應用程式之間的資料傳輸。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816968"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -36,11 +35,11 @@ iOS 裝置適用的**開啟位置管理**功能可以限制透過 **MDM 通道**
 ##  <a name="use-app-protection-with-ios-apps"></a>對 iOS 應用程式施以應用程式保護
 搭配 iOS [在管理中開啟] 功能使用應用程式保護原則，可以透過下列方式保護公司資料︰
 
--   **員工擁有但未交由任何 MDM 解決方案管理的裝置**：您可以將應用程式保護原則設定設為 [Allow app to transfer data to only Policy Managed apps] \(只允許應用程式將資料傳送至受原則管理的應用程式\)。 受原則管理應用程式中的「開啟於」行為只會將其他受原則管理的應用程式呈現為共用選項。 如果使用者嘗試在原生郵件應用程式中從 OneDrive 將受原則保護的檔案作為附件傳送，該檔案將無法讀取。
+-   **員工擁有但未交由任何 MDM 解決方案管理的裝置：** 您可以將應用程式防護原則設定設為 [Allow app to transfer data to only Policy Managed apps] \(只允許應用程式將資料傳送至受原則管理的應用程式\)。 受原則管理應用程式中的「開啟於」行為只會將其他受原則管理的應用程式呈現為共用選項。 如果使用者嘗試在原生郵件應用程式中從 OneDrive 將受原則保護的檔案作為附件傳送，該檔案將無法讀取。
 
--   **Intune 管理的裝置**：對於已向 Intune 註冊的裝置，會自動允許設有應用程式保護原則之應用程式與透過 Intune 部署之其他受管理 iOS 應用程式間的資料傳輸。 若要指定您想如何允許資料傳輸至其他應用程式，請啟用 [允許應用程式將資料傳輸至其他應用程式]，然後選擇您偏好的共用層級。 若要指定您想如何允許應用程式接收其他應用程式傳送的資料，請啟用 [允許應用程式接收其他應用程式傳送的資料]，然後選擇您偏好的接收資料層級。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。 如需接收和共用應用程式資料的詳細資訊，請參閱[資料重新配置設定](app-protection-policy-settings-ios.md#data-protection-settings)。   
+-   **Intune 管理的裝置：** 對於已向 Intune 註冊的裝置，會自動允許設有應用程式防護原則之應用程式與透過 Intune 部署之其他受控 iOS 應用程式間的資料傳輸。 若要指定您想如何允許資料傳輸至其他應用程式，請啟用 [允許應用程式將資料傳輸至其他應用程式]，然後選擇您偏好的共用層級。 若要指定您想如何允許應用程式接收其他應用程式傳送的資料，請啟用 [允許應用程式接收其他應用程式傳送的資料]，然後選擇您偏好的接收資料層級。 您可以使用**開啟位置**功能來控制透過 Intune 部署的應用程式之間的資料傳輸。 如需接收和共用應用程式資料的詳細資訊，請參閱[資料重新配置設定](app-protection-policy-settings-ios.md#data-protection-settings)。   
 
--   **受協力廠商 MDM 解決方案管理的裝置：** 您可以使用 iOS [在管理中開啟] 功能，限制資料只能傳輸至受管理的應用程式。
+-   **協力廠商 MDM 解決方案管理的裝置：** 您可以使用 iOS 的**開啟位置管理**功能，限制資料只能傳輸至受控應用程式。
 若要確認您使用協力廠商 MDM 解決方案部署的應用程式也與您的 Intune 應用程式保護原則建立關聯，請依下一節[進行使用者 UPN 設定](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)的說明，來進行使用者 UPN 設定。 當應用程式以使用者 UPN 設定部署時，就會在使用者使用其公司帳戶登入時，將應用程式保護原則套用至應用程式。
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>設定 Microsoft Intune 或協力廠商 EMM 的使用者 UPN 設定
@@ -59,7 +58,7 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 4.  使用 Intune 或協力廠商 MDM 提供者，將**開啟位置管理**原則部署到已註冊的裝置。
 
 
-### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>範例 1︰Intune 或協力廠商 MDM 主控台中的管理體驗
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>範例 1：Intune 或協力廠商 MDM 主控台中的管理體驗
 
 1. 移至 Intune 或協力廠商 MDM 提供者的管理主控台。 移至主控台區段，您可以在其中將應用程式組態設定部署到已註冊的 iOS 裝置。
 
@@ -103,5 +102,5 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 首先，[建立和指派應用程式保護原則](app-protection-policies.md)到 iOS 應用程式。 如需如何測試應用程式保護原則的詳細資訊，請參閱[驗證應用程式保護原則](app-protection-policies-validate.md)。
 
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [什麼是 Intune 應用程式保護原則](app-protection-policy.md)

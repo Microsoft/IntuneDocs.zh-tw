@@ -1,6 +1,5 @@
 ---
-title: 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
-titlesuffix: Microsoft Intune
+title: 建立及部署 Windows 資訊保護 (WIP) 應用程式防護原則 | Microsoft Intune
 description: 使用 Microsoft Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817308"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -35,15 +34,15 @@ ms.locfileid: "52181321"
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>允許和豁免應用程式的清單
 
--   **受保護的應用程式︰** 這些應用程式是必須遵守此原則的應用程式。
+-   **受保護的應用程式：** 這些應用程式是必須遵守此原則的應用程式。
 
--   **豁免應用程式︰** 這些應用程式不會套用此原則，且可以不受限制地存取公司資料。
+-   **豁免應用程式：** 這些應用程式不會套用此原則，且可以不受限制地存取公司資料。
 
 ### <a name="types-of-apps"></a>應用程式類型
 
--   **建議的應用程式︰** 此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓您輕鬆匯入原則。
--   **市集應用程式︰** 您可以將 Windows 市集中的任何應用程式新增至原則。
--   **Windows 傳統型應用程式︰** 您可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 .exe、.dll)。
+-   **建議的應用程式：** 此為預先填入的應用程式清單 (大部分是 Microsoft Office 應用程式)，可讓您輕鬆匯入原則。
+-   **市集應用程式：** 您可以將 Windows 市集中的任何應用程式新增至原則。
+-   **Windows 傳統型應用程式：** 您可以將任何傳統的 Windows 傳統型應用程式新增至原則 (例如 .exe、.dll)
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -75,10 +74,10 @@ ms.locfileid: "52181321"
 4. 在 [用戶端應用程式] 刀鋒視窗中選取 [應用程式保護原則]。
 5. 選取 [新增原則]，即可顯示 [新增原則] 刀鋒視窗。
 6. 新增下列值：
-    - **名稱：** 輸入新原則的名稱 (必要)。
+    - **名稱：** 鍵入新原則的名稱 (必要)。
     - **描述：**(選擇性) 鍵入描述。
-    - **平台：** 選擇 [Windows 10] 做為應用程式保護原則的支援平台。
-    - **註冊狀態：** 選擇 [沒有註冊] 做為原則的註冊狀態。
+    - **平台：** 選擇 [Windows 10] 作為應用程式防護原則的支援平台。
+    - **註冊狀態：** 選擇 [沒有註冊] 作為原則的註冊狀態。
 7.  選擇 **[建立]**。 原則會建立並顯示在 [應用程式防護原則] 刀鋒視窗的表格中。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>將建議的應用程式新增到受保護的應用程式清單
@@ -149,7 +148,7 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
 1.  從 [應用程式原則] 刀鋒視窗，選擇您的原則名稱，然後選擇 [Required settings] (必要設定)。
 
-    ![學習模式的螢幕擷取畫面](./media/learning-mode-sc1.png)
+    ![學習模式窗格螢幕擷取畫面](./media/learning-mode-sc1.png)
 
 1.  選取設定，然後選擇 [儲存]。
 
@@ -191,6 +190,6 @@ WIP 會以無訊息方式執行，記錄不適當的資料共用，而不會封�
 
 2.  選擇您要套用原則的群組，然後選擇 [選取] 來部署原則。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 深入了解 Windows 資訊保護，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)。

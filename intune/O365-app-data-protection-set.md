@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642468"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067460"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>您的使用者將如何體驗 Microsoft Intune 中受控 Office 365 應用程式的基本保護
 
@@ -40,7 +40,7 @@ ms.locfileid: "53642468"
 這些原則確保您可以管理 Office 365 應用程式，並讓您在必要時，能夠從 Office 應用程式抹除工作資料。 藉由確定工作資料已經加密，以及必須輸入 PIN 碼才能檢視 Office 365 應用程式中之資料等方式，這些原則也可在裝置遺失或遭竊時，確保裝置的基本保護。
 
 
-此文章使用商務用 OneDrive 作為範例，示範使用在 Intune 管理之應用程式上的體驗。
+本文使用商務用 OneDrive 作為範例，示範使用在 Intune 管理之應用程式上的體驗。
 
 
 >[!NOTE]
@@ -82,7 +82,7 @@ ms.locfileid: "53642468"
 >[!NOTE]
 >您的 IT 如有要求您設定 PIN 碼，可能會您下次開啟商務用 OneDrive 時，要求您設定 PIN 碼。 設定並確認 PIN 碼之後，便能繼續使用商務用 OneDrive。
 
-![提示輸入 PIN 碼的影像](./media/pin-prompt-android.png)
+![提示設定和確認 PIN 的影像](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
@@ -130,5 +130,5 @@ iOS 與 Android 的加密運作方式不相同。
 若要查看或更新這些原則，或任何您在 Intune Azure 入口網站中建立的原則，請從儀表板中選擇 [管理應用程式] > [應用程式保護原則]。 原則清單會在右側開啟。 選擇您要檢視的原則來查看及編輯其設定。 <br/>
 ![檢視原則的使用者介面路徑影像](./media/image-for-faq.png)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 - 深入了解[應用程式保護原則](app-protection-policy.md)。

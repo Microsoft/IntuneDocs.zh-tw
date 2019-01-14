@@ -1,12 +1,11 @@
 ---
-title: 使用 Microsoft Intune 建立 MTD 裝置相容性原則
-titlesuffix: ''
+title: 使用 Microsoft Intune 建立 MTD 裝置合規性政策 | Microsoft Intune
 description: 建立使用您 MTD 夥伴威脅層級的 Intune 裝置相容性原則，判斷行動裝置是否可以存取公司資源。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aaa02c397ca17011dd231c98018ca86c190f49ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5962ff96b9c92bcf69a75221f1b7c5a5ab2f2634
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186167"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995975"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense (MTD) 裝置合規性原則
 
 > [!NOTE] 
 > 此資訊適用於所有 Mobile Threat Defense 合作夥伴。
 
-搭配 MTD 的 Intune 可協助您偵測行動裝置上的威脅及評估其風險。 您可以建立評估風險的 Intune 裝置合規性原則規則，來判斷裝置是否符合規範。 接著，您即可使用條件式存取原則，根據裝置合規性來封鎖對服務的存取。
+搭配 MTD 的 Intune 可協助您偵測行動裝置上的威脅及評估其風險。 您可以建立評估風險的 Intune 裝置合規性原則規則，來判斷裝置是否符合規範。 接著，您即可使用[條件式存取原則](create-conditional-access-intune.md)，根據裝置合規性來封鎖對服務的存取。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -54,11 +53,11 @@ ms.locfileid: "52186167"
 
 7.  在 [裝置健全狀況] 窗格中，從 [Require the device to be at or under the Device Threat Level] (需要裝置層級不高於裝置威脅等級) 下方的下拉式清單中選擇行動威脅等級。
 
-    a.  **受保護**︰這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
+    a.  **安全**：這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
 
-    b.  **低**︰如果只有低層級的威脅，則裝置相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+    b.  **低**︰如果只有低層級的威脅，則會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
 
-    c.  **中**︰如果發現裝置有低層級或中層級的威脅，則裝置相容。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
+    c.  **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
 
     d.  **高**：這個層級最不安全。 這會允許所有威脅等級，並只將 Mobile Threat Defense 用於回報用途。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
 
@@ -78,6 +77,6 @@ ms.locfileid: "52186167"
     > [!NOTE] 
     > 您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受相容性評估。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [使用 Intune 來啟用 MTD](mtd-connector-enable.md)

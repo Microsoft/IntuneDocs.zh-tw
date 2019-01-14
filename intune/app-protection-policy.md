@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389864"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006279"
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -37,14 +37,14 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 
 可為裝置上執行的應用程式所設定應用程式保護原則，包括下列：
 
-- **在 Microsoft Intune 中註冊︰** 這些裝置通常是公司所擁有的裝置。
+- **在 Microsoft Intune 中註冊：** 這些裝置通常是公司所擁有的裝置。
 
-- **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊︰** 這些裝置通常是公司所擁有的裝置。
+- **在協力廠商的行動裝置管理 (MDM) 解決方案中註冊：** 這些裝置通常是公司所擁有的裝置。
 
   > [!NOTE]
   > 行動應用程式管理原則不應搭配使用協力廠商的行動應用程式管理或安全容器解決方案。
 
-- **未在任何行動裝置管理解決方案中註冊︰** 這些裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受控或註冊。
+- **未在任何行動裝置管理解決方案中註冊：** 這些裝置通常是員工所擁有的裝置，且沒有在 Intune 或其他 MDM 解決方案中受控或註冊。
 
 > [!IMPORTANT]
 > 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 您也可以透過建立適用於 iOS 版 Outlook 以及已啟用混合式新式驗證的 Android 的 Intune 應用程式保護原則，來保護對 Exchange 內部部署信箱的存取。 開始使用此功能之前，請確定您符合 [iOS 版和 Android 版 Outlook 的需求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 連線到內部部署 Exchange 或 SharePoint 服務的其他應用程式不支援應用程式保護原則。
@@ -75,14 +75,14 @@ Intune 應用程式保護原則平台支援與 Office 行動應用程式平台�
 
 #### <a name="apps-without-app-protection-policies"></a>沒有應用程式保護原則的應用程式
 
-![此圖顯示在沒有設定應用程式保護原則的情況下，資料可以在應用程式之間自由移動](./media/apps-without-protection-policies.png)
+![沒有原則時在應用程式之間移動資料的概念影像](./media/apps-without-protection-policies.png)
 
 在沒有條件限制下使用應用程式時，公司和個人資料會互相混合。 公司資料最終會放在個人儲存空間等位置或傳送到範圍外的應用程式，進而導致資料外洩。 上圖中的箭號顯示資料在公司與個人應用程式之間無限制地移動和移至儲存位置。
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>使用應用程式保護原則保護資料
 
-![此圖顯示套用應用程式保護原則時如何保護公司資料 ](./media/apps-with-protection-policies.png)
+![顯示公司資料正受原則保護的概念影像](./media/apps-with-protection-policies.png)
 
 
 您可以使用應用程式保護原則來防止公司資料儲存到裝置的本機儲存體。 您也可以限制將資料移到其他未受應用程式保護原則保護的應用程式。 應用程式保護原則設定包括︰
@@ -152,9 +152,9 @@ MDM 解決方案：
 
 - 深入了解支援 Intune 的 [MAM 和多重身分識別](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的應用程式。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [如何使用 Microsoft Intune 建立及部署應用程式保護原則](app-protection-policies.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 協力廠商應用程式 (例如 Salesforce 行動應用程式) 可以特定方式與 Intune 搭配使用來保護公司資料。 若要深入了解 Salesforce 應用程式與 Intune 搭配使用的特定方式 (包括 MDM 應用程式組態設定)，請參閱 [Salesforce 應用程式和 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) \(英文\)。

@@ -1,12 +1,11 @@
 ---
-title: 設定 Microsoft Intune 內部部署 Exchange 連接器
-titleSuffix: ''
+title: 設定 Microsoft Intune 內部部署 Exchange Connector | Microsoft Intune
 description: 使用內部部署 Exchange 連接器，根據 Intune 註冊狀況和 Exchange Active Sync (EAS) 來管理裝置對 Exchange 信箱的存取。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817257"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中設定 Intune 內部部署 Exchange 連接器
 
@@ -71,7 +70,7 @@ ms.locfileid: "53112556"
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下載內部部署 Exchange 連接器軟體安裝套件
 
-1. 在內部部署 Exchange 連接器支援的 Windows Server 作業系統上，開啟 [Azure 入口網站](http://portal.azure.com)，並使用在內部部署 Exchange Server 中為系統管理員且有權使用 Exchange Server 的使用者帳戶登入。
+1. 在內部部署 Exchange 連接器支援的 Windows Server 作業系統上，開啟 [Azure 入口網站](https://portal.azure.com)，並使用在內部部署 Exchange Server 中為系統管理員且有權使用 Exchange Server 的使用者帳戶登入。
 
 2. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
@@ -175,5 +174,5 @@ Intune 支援每個訂閱有多個內部部署 Exchange 連接器。 對於具�
    2. 在 [安裝] 下，選擇 [Exchange Active Sync 連接器]。
    3. 選取您想要同步處理的連接器，然後選擇 [快速同步處理] 或 [完整同步處理]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [建立 Exchange 內部部署的條件存取原則](conditional-access-exchange-create.md)

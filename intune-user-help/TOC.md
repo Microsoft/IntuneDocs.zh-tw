@@ -130,6 +130,7 @@
 ### [如果重設裝置，會發生什麼情況？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [關閉 Microsoft 使用狀況資料收集](turn-off-microsoft-usage-data-collection-windows.md)
 ### [手動同步您的裝置](sync-your-device-manually-windows.md)
+### [取得說明及支援](help-support-windows-cpapp.md)
 
 ### [針對 Windows 常見問題進行疑難排解](troubleshoot-your-device-windows.md)
 #### [解決存取點限制](resolve-access-point-restrictions.md)

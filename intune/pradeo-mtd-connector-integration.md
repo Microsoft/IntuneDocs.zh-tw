@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816798"
 ---
 # <a name="integrate-pradeo-with-intune"></a>整合 Pradeo 與 Intune
 
@@ -67,7 +67,7 @@ Pradeo 應用程式授權程序如下：
 
 4.  在 [EMM (Enterprise mobility management) - Intune] \(EMM (Enterprise Mobility 管理) - Intune\) 視窗中的 [Step 1] \(步驟 1\) 下，選擇 [Pradeo Connector] \(Pradeo 連接器\) 按鈕。 
 
-    ![Pradeo EMM Intune 視窗](./media/pradeo_setup.png)
+    ![Pradeo EMM Intune 視窗螢幕擷取畫面](./media/pradeo_setup.png)
 
 5. 在 Microsoft Intune 連線視窗中，輸入您的 Intune 認證。
 
@@ -83,6 +83,6 @@ Pradeo 應用程式授權程序如下：
 
 11. 出現 [Successful Integration] \(成功整合\) 訊息時，整合即完成。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 -   [設定 Pradeo 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)

@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 761605a74e6aeda65d9c6361b18b51e255873ac1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816526"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>整合 Better Mobile 與 Intune
 
@@ -62,7 +62,7 @@ Better Mobile 應用程式授權程序如下：
 1. 移至 [Better Mobile 管理主控台](https://aad.bmobi.net)，並使用您的認證登入。
 2. 選擇 [整合] > [EMM/MDM] > [新增帳戶]。
 
-     ![Better Mobile 管理主控台](media/better_mobile_console.png)
+     ![Better Mobile 管理主控台影像](media/better_mobile_console.png)
  
 3. 選擇 [Intune]。
 4. 在 [帳戶名稱] 旁，輸入描述。 
@@ -72,6 +72,6 @@ Better Mobile 應用程式授權程序如下：
 8. 選取 [完成]。
 9. [新增帳戶] 頁面隨即出現。 關閉頁面。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 -   [設定較佳的用戶端應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)

@@ -168,7 +168,7 @@ items:
         href: apple-mdm-push-certificate-get.md
       - name: 公司識別碼
         href: corporate-identifiers-add.md
-      - name: Multi-Factor Authentication
+      - name: '[Multi-Factor Authentication]'
         href: multi-factor-authentication.md
       - name: 裝置註冊管理員
         href: device-enrollment-manager-enroll.md
@@ -374,9 +374,11 @@ items:
   - name: 設定裝置
     href: device-profiles.md
     items:
-    - name: 設定裝置設定檔
+    - name: 裝置設定檔
       href: device-profile-create.md
-    - name: 設定裝置功能
+    - name: 系統管理範本
+      href: administrative-templates-windows.md
+    - name: iOS 及 macOS 的裝置功能
       href: device-features-configure.md
       items:
       - name: iOS 和 MacOS 的 AirPrint
@@ -387,13 +389,13 @@ items:
         href: home-screen-settings-ios.md
       - name: iOS 的應用程式通知
         href: app-notification-settings-ios.md
-      - name: iOS 的共用裝置
+      - name: iOS 的鎖定畫面訊息
         href: shared-device-settings-ios.md
       - name: 設定 Intune 以進行 iOS 裝置單一登入
         href: sso-ios.md
       - name: iOS 的網站篩選設定
         href: web-content-filter-settings-ios.md
-    - name: 設定裝置限制
+    - name: 裝置限制
       href: device-restrictions-configure.md
       items:
       - name: Android
@@ -416,18 +418,18 @@ items:
         href: device-restrictions-windows-holographic.md
     - name: 傳遞最佳化
       href: delivery-optimization-windows.md
-    - name: 設定端點保護
+    - name: Endpoint Protection
       href: endpoint-protection-configure.md
       items:
       - name: macOS
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: 設定身分識別保護
+    - name: 身分識別保護
       href: identity-protection-configure.md
     - name: Windows 10 Kiosk 設定
       href: kiosk-settings.md
-    - name: 設定電子郵件設定
+    - name: 電子郵件設定
       href: email-settings-configure.md
       items:
       - name: Android
@@ -438,7 +440,7 @@ items:
         href: email-settings-windows-phone-8-1.md
       - name: Windows 10
         href: email-settings-windows-10.md
-    - name: 設定 VPN 設定
+    - name: VPN 設定
       href: vpn-settings-configure.md
       items:
       - name: Android
@@ -455,7 +457,7 @@ items:
         href: vpn-settings-windows-phone-8-1.md
       - name: Windows 10
         href: vpn-settings-windows-10.md
-    - name: 設定 Wi-Fi 設定
+    - name: Wi-Fi 設定
       href: wi-fi-settings-configure.md
       items:
       - name: Android
@@ -470,7 +472,7 @@ items:
         href: wi-fi-settings-windows.md
       - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
-    - name: 設定 eSIM 行動數據設定檔
+    - name: eSIM 行動數據設定檔
       href: esim-device-configuration.md
     - name: 教育
       items:
@@ -478,27 +480,34 @@ items:
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
         href: education-settings-configure.md
-    - name: 設定 Windows 10 版本升級設定
+    - name: Windows 10 版本升級設定
       href: edition-upgrade-configure-windows-10.md
-    - name: 設定 iOS 更新原則
+    - name: iOS 更新原則
       href: software-updates-ios.md
-    - name: 設定憑證
+    - name: 憑證
       href: certificates-configure.md
       items:
       - name: SCEP
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: 使用 S/MIME 來加密電子郵件
+      - name: 使用 S/MIME 為電子郵件加密
         href: certificates-s-mime-encryption-sign.md
-      - name: 透過 SCEP 使用第三方憑證授權單位
+      - name: 使用 SCEP 的第三方 CA
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web 服務
         href: certificates-symantec-configure.md
       - name: 移除 SCEP 或 PKCS 憑證
         href: remove-certificates.md
-    - name: 設定 Windows 資訊保護設定
+    - name: Windows 資訊保護設定
       href: windows-information-protection-configure.md
+    - name: 共用的多重使用者裝置
+      href: shared-user-device-settings.md
+      items:
+      - name: Windows 10
+        href: shared-user-device-settings-windows.md
+      - name: Windows Holographic for Business
+        href: shared-user-device-settings-windows-holographic.md
     - name: 管理 PowerShell 指令碼
       href: intune-management-extension.md
     - name: 監視電信費用
@@ -512,17 +521,17 @@ items:
   - name: 設定裝置合規性
     href: device-compliance-get-started.md
     items:
-    - name: 建立 Android 原則
+    - name: Android 原則
       href: compliance-policy-create-android.md
-    - name: 建立 Android Enterprise 設定檔原則
+    - name: Android Enterprise 設定檔原則
       href: compliance-policy-create-android-for-work.md
-    - name: 建立原則以啟用 Google Play Protect
+    - name: 啟用 Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: 建立 iOS 原則
+    - name: iOS 原則
       href: compliance-policy-create-ios.md
-    - name: 建立 macOS 原則
+    - name: macOS 原則
       href: compliance-policy-create-mac-os.md
-    - name: 建立 Windows 原則
+    - name: Windows 原則
       href: compliance-policy-create-windows.md
     - name: 依據位置的原則
       href: use-network-locations.md
@@ -693,6 +702,10 @@ items:
         href: custom-settings-windows-holographic.md
       - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
+- name: 說明及支援
+  items:
+  - name: 租用戶狀態
+    href: tenant-status.md
 - name: 開發人員指引
   items:
   - name: 新增第三方憑證授權單位的 API
@@ -841,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: 解決原則衝突
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: ada41d711516760e9d928c78968b0a24d719d783
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325043"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203581"

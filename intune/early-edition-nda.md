@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/3/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
+ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642892"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54069348"
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的舊版 - 2018 年 12 月
+# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 的舊版 - 2019 年 1 月
 
 > [!Note]
 > NDA 通知：下列變更正在 Intune 的開發過程中。 這項資訊會在極有限的基礎下根據 NDA 共用。 請不要在社交媒體或公用網站上張貼任何這項資訊，例如 Twitter、UserVoice、Reddit 等等。 
@@ -40,6 +40,45 @@ ms.locfileid: "53642892"
 -->
  
 ## <a name="intune-in-the-azure-portal"></a>Azure 入口網站中的 Intune
+
+<!-- 1901 start -->
+
+### <a name="android-enterprise-apps----1352553----"></a>Android Enterprise 應用程式 <!-- 1352553  -->
+您將能夠從 Microsoft Intune 刪除受控 Google Play 應用程式。 若要刪除受控 Google Play 應用程式，請在 Azure 入口網站中開啟 Microsoft Intune，然後選取 [用戶端應用程式] > [應用程式]。 從應用程式清單，選取受控 Google Play 應用程式右側的省略符號 (...)，然後從顯示的清單選取 [刪除]。 當您從應用程式清單刪除受控 Google Play 應用程式時，會自動取消核准受控 Google Play 應用程式。
+
+### <a name="managed-google-play-app-type----1352580---"></a>受控的 Google Play 應用程式類型 <!-- 1352580 -->
+[受控的 Google Play] 應用程式類型可讓您將[受控 Google Play 應用程式](https://play.google.com/work/search?q=microsoft&c=apps)明確新增至 Intune。 身為 Intune 系統管理員，您現在能夠在 Intune 中瀏覽、搜尋、核准、同步及指派已核准的受控 Google Play 應用程式。 您不再需要另外瀏覽至受控的 Google Play 主控台，而且您不再需要重新驗證。 在 Intune 中，選取 [用戶端應用程式] > [應用程式] > [新增]。 在 [應用程式類型] 清單中，選取 [受控的 Google Play] 作為應用程式類型。
+
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>公司擁有、完全受控的 Android 裝置支援預覽 <!-- 1574342  -->
+Intune 將支援完全受控的 Android 裝置，此為公司擁有的「裝置擁有者」案例，其中的裝置會受到 IT 嚴格管理並隸屬於個別使用者。 這讓系統管理員能夠管理整個裝置、強制設定無法用於工作設定檔之原則控制項的延伸範圍，並限制使用者只能從受控的 Google Play 安裝應用程式。 若要設定完全受控的 Android 裝置，請移至 [裝置註冊] > [Android 註冊] > [公司擁有、完全受控的使用者裝置]。 請注意，此功能處於預覽狀態。 完全受控的 Android 使用者裝置目前不提供某些 Intune 功能，例如憑證、合規性和條件式存取。
+
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>線上授權商務用 Microsoft Store 應用程式的部署 <!-- 16726660  -->
+您將能夠在裝置內容中指派必要的線上授權商務用 Microsoft Store 應用程式。 以此方式部署商務用 Microsoft Store 應用程式，即可在裝置上為所有使用者安裝應用程式。 這僅適用於 Windows 10 RS4+ 電腦裝置。 您可以從 MSFB 線上授權應用程式的用戶端應用程式指派頁面，存取在裝置內容中安裝的選項。
+
+### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>設定設定檔，以在設定助理期間略過一些畫面 <!-- 2276470  -->
+當您建立 macOS 註冊設定檔時，可以將它設定成在使用者完成設定助理時略過下列任何畫面：
+- Android 移轉
+- 顯示色調
+- 隱私權
+- iCloudStorage
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>將 Autopilot 設定檔指派給所有裝置虛擬群組 <!--2715522  -->
+您將可以將 Autopilot 設定檔指派給所有裝置虛擬群組。 若要進行此動作，請選擇 [裝置註冊] > [Windows 註冊] > [部署設定檔]> 選擇設定檔 > [指派] > 在 [指派對象] 下方，選擇 [所有裝置]。 如需 Autopilot 設定檔的詳細資訊，請參閱[使用 Windows AutoPilot 註冊 Windows 裝置](enrollment-autopilot.md)。
+
+### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>使用裝置組態設定檔自訂受監督 iOS 裝置上的背景圖案 <!-- 2809324  -->
+當您建立 iOS 裝置的裝置組態設定檔時，您將能夠在 [裝置設定] > [設定檔] > [建立設定檔] > [iOS] 平台 > [裝置限制] 設定檔類型中，允許和限制一些設定。 此更新包含新的 [底色圖案] 設定，可讓系統管理員使用 .png、.jpg 或 .jpeg 影像作為底色圖案；預覽影像；以及防止使用者變更底色圖案。 底色圖案設定只會套用至受監督的裝置。 如需目前的設定清單，請參閱 [iOS 裝置限制設定](device-restrictions-ios.md)。
+
+### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 應用程式的快顯通知 <!-- 3136566   -->
+您將能夠隱藏而不顯示每個應用程式指派的終端使用者快顯通知。 從 Intune 選取 [用戶端應用程式] > [應用程式] > 選取應用程式 > [指派] > [包含群組]。 
+
+### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>[透過藍牙分享連絡人] 已從 Android Enterprise 的 [裝置限制] > [裝置擁有者] 中移除 <!-- 3598396 -->
+當您建立 Android Enterprise 裝置的裝置限制設定檔時，有一項 [透過藍牙分享連絡人] 設定。 在此更新中，[透過藍牙分享連絡人] 設定將會被移除 ([裝置設定] > [設定檔] > 建立設定檔] > [Android Enterprise] 平台 > [裝置限制] > [裝置擁有者] 設定檔類型 > [一般])。 
+
+Android Enterprise 裝置擁有者管理不支援 [透過藍牙分享連絡人] 設定。 因此，移除此設定之後，並不會影響任何裝置或租用戶，即使您已在環境中啟用和設定此設定亦然。
+
+若要查看目前的設定清單，請前往[允許或限制功能的 Android Enterprise 裝置設定](device-restrictions-android-for-work.md)。
+
+適用於：Android Enterprise 裝置擁有者
 
 <!-- 1812 start -->
 
@@ -75,8 +114,9 @@ ms.locfileid: "53642892"
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 將支援 256 位元的加密金鑰 <!-- 1832174 -->
 適用於 Android 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>已在 Intune 設定檔中啟用共用的 PC 設定 <!-- 1907917 -->
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>已在 Intune 設定檔中啟用共用的 PC 設定 <!-- 1907917, 1063203 -->
 您目前可以使用自訂的 OMA-URI 設定，在 Windows 10 電腦裝置上設定共用的 PC 設定。 新的設定檔將會新增來設定共用的 PC 設定 ([裝置設定] > [設定檔] > [建立設定檔] > [Windows 10 及更新版本] > [共用的多使用者裝置])。
+
 適用於：Windows 10 及更新版本、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 原則會更新驗證方法與公司入口網站應用程式安裝  <!-- 1927359 -->
@@ -113,10 +153,6 @@ ms.locfileid: "53642892"
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>部分 BitLocker 設定支援 Windows 10 專業版<!-- 2727036 -->
 您將能建立組態設定檔，在 Windows 10 裝置上設定 Endpoint Protection 設定，包括 BitLocker。 這會針對部分 BitLocker 設定新增對 Windows 10 專業版的支援。 若要查看目前的 Windows 10 版本設定，請參閱[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
-
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Intune 裝置報告欄位 <!-- 2748738 -->
-Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune 裝置報告欄位 <!-- 2748738 -->
 Intune 將提供其他裝置報告欄位，包括 Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您將可藉由選取 [用戶端應用程式] > [應用程式保護狀態]，然後選擇 [應用程式保護報表：iOS、Android]，來提供這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
@@ -155,6 +191,8 @@ Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前�
 系統管理範本會在公開預覽版中提供。系統管理範本正從 [裝置設定] > [系統管理範本] 移至 [裝置設定] > [設定檔] >[建立設定檔] > 在 [平台] 中選擇 [Windows 10 及更新版本]、在 [設定檔類型] 中選擇 [系統管理範本]。
 已啟用報告。適用對象：Windows 10 及更新版本
 
+### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Intune macOS 公司入口網站深色模式 <!-- 3300524 -->
+Intune macOS 公司入口網站現在支援 macOS 的深色模式。 當您在 macOS 10.14+ 裝置上啟用 [深色模式] 時，公司入口網站會將其外觀調整為反映該模式的色彩。
 
 <!-- 1810 start -->
 
@@ -211,7 +249,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 
 目前沒有任何作用中的通知。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 如需近期發展的詳細資料，請參閱 [Microsoft Intune 的新功能](whats-new.md)。
 
 

@@ -1,6 +1,5 @@
 ---
-title: 條件式存取案例
-titlesuffix: Microsoft Intune
+title: 條件式存取案例 | Microsoft Intune
 description: 了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817155"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -155,7 +154,7 @@ Intune 與 Azure Active Directory 會共同運作，以確保只有受管理的�
 
 -   深入了解[搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [如何在 Azure Active Directory 中設定條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 

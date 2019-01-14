@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bda8512bd28351c384bfe53b46db62e5a86fe9bd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817274"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -48,7 +48,7 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 
 以下清單概述與 Intune 整合時，NAC 整合的運作方式。 前三個步驟 (1-3) 會說明上線程序。 在 NAC 解決方案與 Intune 整合之後，步驟 4 到 9 則說明接下來的作業。
 
-![NAC 搭配 Intune 的運作方式](./media/ca-intune-common-ways-2.png)
+![NAC 搭配 Intune 的運作方式概念影像](./media/ca-intune-common-ways-2.png)
 
 1. 向 Azure Active Directory (AAD) 註冊 NAC 合作夥伴解決方案，並授權委派權限給 Intune NAC 應用程式開發介面。
 2. 為 NAC 合作夥伴解決方案設定適當的設定，包括 Intune 探索 URL。
@@ -79,7 +79,7 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案就緒時，我們將會更新本文並提供其他詳細資料。 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (整合 Cisco ISE 與 Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (整合 Citrix NetScaler 與 Intune)

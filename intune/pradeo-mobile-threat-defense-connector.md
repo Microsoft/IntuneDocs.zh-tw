@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816883"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器
 
@@ -48,7 +48,7 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 **於偵測到惡意應用程式時進行封鎖：**
 
-![偵測到惡意應用程式](./media/pradeo_maliciousapps_blocked.png)
+![偵測到惡意應用程式的概念影像](./media/pradeo_maliciousapps_blocked.png)
 
 **修復後允許存取：**
 
@@ -64,7 +64,7 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 **修復後允許存取：**
 
-![補救後授與存取](./media/pradeo_network_wifi_unblocked.png)
+![修復後授與存取權的概念影像](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
 
@@ -76,7 +76,7 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 **修復後允許存取：**
 
-![Sharepoint 的補救後授與存取範例](./media/pradeo_network_spo_unblocked.png)
+![修復後授與存取權的概念影像 (SharePoint 範例)](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -94,7 +94,7 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
     -   如需詳細資訊，請參閱 [Pradeo 網站](https://www.pradeo.com/en-US/mobile-threat-protection)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [整合 Pradeo 與 Intune](pradeo-mtd-connector-integration.md)
 

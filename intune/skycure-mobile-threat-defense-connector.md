@@ -1,6 +1,5 @@
 ---
-title: Symantec 連接器與 Microsoft Intune
-titlesuffix: ''
+title: Symantec 連接器與 Microsoft Intune | Microsoft Intune
 description: 深入了解整合 Intune 與 Symantec Endpoint Protection Mobile 來控制行動裝置對公司資源的存取。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817110"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 連接器
 
@@ -67,11 +66,11 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 **於偵測到惡意應用程式時進行封鎖：**
 
-![偵測到惡意應用程式](./media/symantec-arch-1.png)
+![偵測到惡意應用程式的概念影像](./media/symantec-arch-1.png)
 
 **修復後允許存取：**
 
-![偵測到惡意應用程式之後的補救後授與存取](./media/symantec-arch-2.png)
+![偵測到惡意應用程式並修復後授與存取權的影像](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 
@@ -113,7 +112,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 如需詳細資訊，請參閱 [Symantec 網站](https://www.skycure.com/skycure-microsoft-integration/) \(英文\)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 以下是整合 Intune 與 SEP Mobile 所需完成的步驟：
 

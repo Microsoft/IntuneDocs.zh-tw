@@ -1,12 +1,11 @@
 ---
-title: 適用於 Exchange Online 的 Intune Exchange Connector
-titleSuffix: ''
+title: 適用於 Exchange Online 的 Intune Exchange Connector | Microsoft Intune
 description: 將 Intune 連接到 Office 365 Exchange 服務以支援 Exchange ActiveSync 行動裝置管理 (MDM)。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816696"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>設定 Intune 和 Exchange Online 的 Exchange 服務連接器
 本文將為您說明如何將 Microsoft Intune 服務連線到 Exchange Online 或新版 Exchange Online Dedicated 服務。 若要判斷您的 Exchange Online Dedicated 環境為**新版**或**舊版**，請連絡您的帳戶管理員。
@@ -52,7 +51,7 @@ ms.locfileid: "52184202"
 
 ## <a name="set-up-the-service-to-service-connector"></a>設定 Service to Service Connector
 
-1. 使用具備[前文所述](#exchange-cmdlet-requirements) Exchange 管理權限、Cmdlet 權限、有效 Intune 授權與全域系統管理員角色的使用者帳戶來登入 [Azure 入口網站](http://portal.azure.com)。 Microsoft Intune 會使用目前登入之使用者的電子郵件地址來設定連線。
+1. 使用具備[前文所述](#exchange-cmdlet-requirements) Exchange 管理權限、Cmdlet 權限、有效 Intune 授權與全域系統管理員角色的使用者帳戶來登入 [Azure 入口網站](https://portal.azure.com)。 Microsoft Intune 會使用目前登入之使用者的電子郵件地址來設定連線。
 
 2. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 

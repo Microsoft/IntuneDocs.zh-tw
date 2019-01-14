@@ -1,5 +1,5 @@
 ---
-title: Android 應用程式防護原則設定
+title: Android 應用程式防護原則設定 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 本主題說明 Android 裝置的應用程式防護原則設定。
 keywords: ''
@@ -16,16 +16,16 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 99c72eeb587c7718b076183170436b29dd7dccac
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: 8505560527a8ea1b5d75eef5f7c3423d6a2d6a7d
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817393"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
-此文章描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
-原則設定有兩個類別：「資料保護設定」和「存取設定」。 在此文章中，「受原則管理的應用程式」一詞是指設有應用程式保護原則的應用程式。
+本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定] 刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
+原則設定有兩個類別：「資料保護設定」和「存取設定」。 在本文中「受原則管理的應用程式」一詞是指設有應用程式保護原則的應用程式。
 
 ##  <a name="data-protection-settings"></a>資料保護設定
 

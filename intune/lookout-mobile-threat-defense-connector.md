@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune 與 Lookout MTD 連接器
-titlesuffix: ''
+title: Lookout MTD 連接器與 Microsoft Intune | Microsoft Intune
 description: 深入了解整合 Intune 與 Lookout Mobile Threat Defense (MTD) 來控制行動裝置對公司資源的存取。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817070"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense 連接器與 Intune
 
@@ -63,36 +62,36 @@ Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile 
 
 **於偵測到惡意應用程式時進行封鎖：**
 
-![此圖表顯示，當裝置因為其中的惡意應用程式導致判定為不相容時，條件式存取原則會封鎖存取](./media/malicious-apps-blocked.png)
+![因惡意應用程式而封鎖存取的原則概念影像](./media/malicious-apps-blocked.png)
 
 **修復後允許存取：**
 
-![圖中顯示條件式存取原則在補救後判斷裝置為相容時授與存取權](./media/malicious-apps-unblocked.png)
+![顯示修復後授與裝置存取權的概念影像](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 偵測到攔截式攻擊等網路威脅，並根據裝置風險保護 Wi-Fi 網路的存取。
 
 **封鎖透過 Wi-Fi 的網路存取：**
 
-![此圖表顯示，條件式存取依據網路威脅來封鎖 WiFi 的存取](./media/network-wifi-blocked.png)
+![顯示依據網路威脅來封鎖 WiFi 存取的影像](./media/network-wifi-blocked.png)
 
 **修復後允許存取：**
 
-![圖中顯示條件式存取在補救威脅之後允許存取](./media/network-wifi-unblocked.png)
+![修復後允許存取的條件式存取概念影像](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
 
 偵測到攔截式攻擊等網路威脅，並根據裝置風險防止同步處理公司檔案。
 
 **偵測到網路威脅時封鎖 SharePoint Online：**
 
-![圖中顯示條件式存取根據威脅偵測封鎖對 SharePoint Online 的裝置存取](./media/network-spo-blocked.png)
+![封鎖存取 SharePoint Online 的概念影像](./media/network-spo-blocked.png)
 
 
 **修復後允許存取：**
 
-![圖中顯示條件式存取在補救網路威脅之後允許存取](./media/network-spo-unblocked.png)
+![修復網路威脅後允許存取的概念影像](./media/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 以下是為了實作此解決方案所必須執行的主要步驟：
 1.  [設定 Lookout 整合](lookout-mtd-connector-integration.md)
 2.  [在 Intune 中啟用 Lookout Mobile Threat Defense](mtd-connector-enable.md)

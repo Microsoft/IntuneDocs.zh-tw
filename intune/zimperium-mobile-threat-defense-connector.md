@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817240"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Zimperium Mobile Threat Defense 連接器
 
 您可以根據由 Zimperium (與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評定，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Zimperium 應用程式之裝置所收集的遙測來評定的。
 
-您可以根據透過 Intune 裝置相容性政策啟用的 Zimperium 風險評定來設定條件式存取原則。透過該原則，您可以根據偵測到的威脅來允許或封鎖不相容的裝置存取公司資源。
+您可以根據透過 Intune 裝置合規性政策所啟用的 Zimperium 風險評估，來設定條件式存取原則。 風險評估原則可讓您根據偵測到的威脅，允許或封鎖不符合規範的裝置存取公司資源。
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune 和 Zimperium 如何協助您保護您的公司資源？
 
@@ -51,11 +51,11 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 **於偵測到惡意應用程式時進行封鎖：**
 
-![偵測到惡意應用程式](./media/Maliciousapps_blocked_Zimperium.png)
+![偵測到惡意應用程式的概念影像](./media/Maliciousapps_blocked_Zimperium.png)
 
 **修復後允許存取：**
 
-![偵測到惡意應用程式後授與存取](./media/maliciousapps_unblocked_Zimperium.png)
+![修復後授與存取權的概念影像](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 
@@ -95,9 +95,9 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 
 -   Zimperium Mobile Threat Defense 訂用帳戶
 
-    -   如需詳細資訊，請參閱  [Zimperium 網站](https://www.zimperium.com/zips-mobile-ips) 。
+    -   如需詳細資訊，請參閱 [Zimperium 網站](https://www.zimperium.com/zips-mobile-ips)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [將 Zimperium 與 Intune 整合](zimperium-mtd-connector-integration.md)
 

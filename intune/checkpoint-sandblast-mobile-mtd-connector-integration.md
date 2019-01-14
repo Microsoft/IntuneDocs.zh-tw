@@ -1,5 +1,5 @@
 ---
-title: 整合 Check Point SandBlast MTD
+title: 整合 Check Point SandBlast MTD | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 如何使用 Intune 設定 Check Point SandBlast Mobile Threat Defense (MTD) 解決方案，來控制行動裝置對公司資源的存取。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: c0774ed0fbc354750ad53eedc5df03536520bde8
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 494edf17b67e841aa661877c6545adab1ce9a6f2
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817106"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>整合 Check Point SandBlast Mobile 與 Intune
 
@@ -81,6 +81,6 @@ Check Point SandBlast 應用程式授權程序是由下列項目所組成：
 
 8.  選擇 [驗證]，一旦成功驗證 Azure AD 安全性群組，即選擇 [儲存]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [設定 Check Point SandBlast Mobile 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)

@@ -1,12 +1,11 @@
 ---
-title: 如何取得 Microsoft Intune 支援
-titlesuffix: Microsoft Intune
+title: 如何取得 Microsoft Intune 支援 | Microsoft Intune
 description: 取得 Microsoft Intune 付費和試用訂閱的線上和電話支援。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817291"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -49,11 +48,11 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 
 1. 使用您的 Intune 系統管理員認證來登入 Azure 入口網站 (<https://portal.azure.com>)，然後選取 **?** 圖示，然後選取 [說明 + 支援] 以移至 [Azure 說明 + 支援](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)頁面。
 
-   ![反白顯示 [說明 + 支援] 連結的 Azure 入口網站說明及支援問號連結螢幕擷取畫面](./media/azure-get-support.png)
+   ![醒目提示 [說明 + 支援] 連結的問號連結影像](./media/azure-get-support.png)
 
 2. 在 Azure [說明 + 支援] 頁面上，選取 [新增支援要求]。
 
-   ![反白顯示 [新增支援要求] 連結的 Azure 入口網站 [說明及支援] 頁面螢幕擷取畫面](media/azure-support-ticket-link.png)
+   ![[說明及支援] 頁面上醒目提示 [新增支援要求] 連結的影像](media/azure-support-ticket-link.png)
 
 3. 在 [基本] 索引標籤上，針對大多數 Intune 技術支援問題選擇下列選項：
    - **問題類型**：**技術**
@@ -63,18 +62,18 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
    - **問題子類型**：從下拉式功能表中選擇問題子類型。
    - **主旨**：簡要描述您的問題。
 
-   ![[說明 + 支援] - [新增支援要求] 頁面上 [基本] 索引標籤的螢幕擷取畫面](./media/get-support/help-new-support-case-basics.png)
+   ![[說明 + 支援] - [新增支援要求] 頁面上的 [基本] 索引標籤影像](./media/get-support/help-new-support-case-basics.png)
 
    選擇 [下一步:解決方案] 以繼續操作。
 4. 在 [解決方案] 索引標籤上，檢閱或許能協助您無須提出票證即可解決問題的建議步驟。 如果在瀏覽過這些步驟之後，您仍然想要建立支援要求，請按 [下一步:詳細資料]。
 
-   ![[說明 + 支援] - [新增支援要求] 頁面上 [解決方案] 索引標籤的螢幕擷取畫面](./media/get-support/help-new-support-case-solutions.png)
+   ![[說明 + 支援] - [新增支援要求] 頁面上的 [解決方案] 索引標籤影像](./media/get-support/help-new-support-case-solutions.png)
 5. 在 [詳細資料] 索引標籤上，填寫問題的詳細資料、支援方法、您的連絡資訊，然後按 [下一步:檢閱 + 建立]。
 
-   ![[說明 + 支援] - [新增支援要求] 頁面上 [詳細資料] 索引標籤的螢幕擷取畫面](./media/get-support/help-new-support-case-details.png)
+   ![[說明 + 支援] - [新增支援要求] 頁面上的 [詳細資料] 索引標籤影像](./media/get-support/help-new-support-case-details.png)
 6. 檢閱資訊、確認資訊正確，然後選擇 [建立] 以提交支援要求。
 
-   ![[說明 + 支援] - [新增支援要求] 頁面上 [檢閱 + 建立] 索引標籤的螢幕擷取畫面](./media/get-support/help-new-support-case-create.png)
+   ![[新增支援要求] 頁面上的 [檢閱 + 建立] 索引標籤影像](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 ## <a name="new-help-and-support-experience"></a>新的說明及支援體驗
 *下列資訊僅在您使用裝置管理入口網站時適用，且為新推出的部分說明及支援體驗。從可用的 Intune 租用戶中隨機選取此推出的參與者。*  
 
-Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](http://devicemanagement.microsoft.com)中的新體驗，可用於某些但並非所有租用戶。 這個新體驗與 [Microsoft 365 系統管理中心](https://portal.office.com/AdminPortal/Home)中的體驗類似，且在從裝置管理主控台的某些位置存取時，取代了先前的說明及支援體驗。  
+Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](https://devicemanagement.microsoft.com)中的新體驗，可用於某些但並非所有租用戶。 這個新體驗與 [Microsoft 365 系統管理中心](https://portal.office.com/AdminPortal/Home)中的體驗類似，且在從裝置管理主控台的某些位置存取時，取代了先前的說明及支援體驗。  
 
 在裝置管理入口網站中，當您從 [所有服務] > [裝置管理] 下方的任何刀鋒視窗 (除了 [疑難排解] 刀鋒視窗外) 選取 [說明及支援] 時，您將可存取新體驗。 當您從 [疑難排解] 等其他位置存取說明和支援時，使用主控台橫幅右上角的 **？** 選項， 或從左側窗格的服務清單選取 [說明 + 支援]，您即可以存取原始體驗。  
 
@@ -143,7 +142,7 @@ Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](
 
 ### <a name="view-context-sensitive-help"></a>檢視即時線上說明
 在您選取提供的選項，或提交您自己的查詢後，內容相關性結果將顯示在**檢視解決方案**下方。 這些結果包含 Intune 特定的自助指導，以及基於查詢條件的 Web 搜尋所傳回其他結果。  
-![檢視結果](./media/get-support/view-results.png)
+![檢視結果窗格影像](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>取得支援
 如果自助或 Web 型的指導無法協助您解決問題，您可以使用主控台開啟電子郵件或電話支援問題。  
@@ -151,16 +150,16 @@ Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](
 
 - 針對電子郵件要求，請提供您的電子郵件地址，也可以選擇在提交中新增附件。 選取 [傳送] 以開啟要求。  
 
-  ![電子郵件要求](./media/get-support/email-support.png)
+  ![電子郵件要求窗格影像](./media/get-support/email-support.png)
   
 - 針對電話要求，請提供您的電話號碼。 或者您也可以提供電子郵件地址，並在提交中新增附件。 選取 [撥號給我] 以遞交要求。  
 
-   ![電話要求](./media/get-support/phone-support.png)
+   ![電話要求窗格影像](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>檢視支援案例
 選取 [歷程記錄] 按鈕以檢視您已建立的支援事件。  
 
-![檢視支援案例](./media/get-support/view-support-tickets.png)
+![檢視支援案例窗格影像](./media/get-support/view-support-tickets.png)
 
 - 在此工作流程中，只能看見您使用新工作流程開啟的支援案例。 若要檢視這些支援案例，請使用裝置管理主控台中的 [說明及支援] 檢視，該檢視是新體驗的一部分。 這些案例有八位數長的編號。 您也可以從 Microsoft 365 系統管理中心檢視這些案例。  
 
@@ -173,5 +172,5 @@ Intune 的說明及支援更新，是 [ Microsoft 365 裝置管理入口網站](
 ## <a name="additional-resources"></a>其他資源
 - [Microsoft Intune 的連絡電話協助支援](phone-support-contact.md)
 - [帳單和訂閱管理支援](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [大量授權](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [大量授權](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [針對 Intune 問題進行疑難排解](help-desk-operators.md)

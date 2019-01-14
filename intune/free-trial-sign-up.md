@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737911"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067426"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速啟動：免費試用 Microsoft Intune 
 
@@ -50,9 +50,9 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 2. 使用您的公司名稱後面接著 **.onmicrosoft.com** 來建立帳戶。 
 
-    ![Microsoft Intune 試用版帳戶新增認證程序的螢幕擷取畫面](./media/account-sign-up-site-user-id.png)
+    ![Intune 試用版帳戶新增認證程序的螢幕擷取畫面](./media/account-sign-up-site-user-id.png)
 
-    如果您組織本身有您想要使用但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Office 365 管理入口網站中進行變更，如此文章稍後所述。
+    如果您組織本身有您想要使用但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Office 365 管理入口網站中進行變更，如本文稍後所述。
 
 3. 在註冊程序結束時，檢視您的新帳戶資訊。
 
@@ -123,7 +123,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 - Azure ([portal.azure.com](https://portal.azure.com)) 中的 Intune 儀表板是您可以瀏覽 [Intune 功能](what-is-intune.md)的位置。 一般是在 Intune 儀表板中執行工作。
 - Office 365 系統管理中心 ([portal.office.com](https://portal.office.com)) 是您可以新增及管理使用者的位置 (若未使用 Azure Active Directory)。 您也可以管理您帳戶的其他事宜，包括計費及支援。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已建立免費訂用帳戶，以在測試環境中試用 Intune。 如需設定 Intune 的詳細資訊，請參閱[設定 Intune](setup-steps.md)。
 

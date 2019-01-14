@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817376"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -89,7 +89,7 @@ ms.locfileid: "53738013"
 
 |欄位名稱|詳細資訊|
 |---|---|
-|**上傳您的品牌影像**| 此選項可讓您在公司入口網站應用程式中的使用者設定檔頁面上顯示背景影像。<p>*注意*：影像在不同的平台上的顯示可能會不同。<p><ul><li>建議影像寬度：大於 1125 像素，但不小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
+|**上傳您的品牌影像**| 此選項可讓您在公司入口網站應用程式中的使用者設定檔頁面上顯示背景影像。<p>*注意*：影像在不同的平台上的顯示可能會不同。<p><ul><li>建議影像寬度：小於 1125 像素，但不小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
 
 正確的品牌影像可讓公司品牌留下強烈印象，因而加強使用者對公司入口網站的信任。 以下是您擷取、選擇及最佳化公司入口網站影像時可能想要考慮的一些祕訣。 
 
@@ -140,6 +140,6 @@ ms.locfileid: "53738013"
 
 ![Windows 公司入口網站中可用捷徑的螢幕擷取畫面](media/company-portal-app/company-portal-app-01.png)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](store-apps-company-portal-app.md)

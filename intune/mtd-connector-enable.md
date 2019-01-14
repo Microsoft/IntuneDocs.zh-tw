@@ -1,6 +1,5 @@
 ---
-title: 在 Microsoft Intune 中啟用 Mobile Threat Defense 連接器
-titleSuffix: ''
+title: 在 Microsoft Intune 中啟用 Mobile Threat Defense 連接器 | Microsoft Intune
 description: 啟用 Mobile Threat Defense (MTD) 合作夥伴與 Microsoft Intune 之間的連接器。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2937814ae5ceb6c7d8b3def4e954c8eec9337126
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cfd6f222533728c754f55a76b78698eac5e4031b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816679"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
@@ -52,17 +51,17 @@ ms.locfileid: "52180471"
 
 您可以決定根據組織的需求必須啟用哪些 MTD 切換選項。 以下是更多詳細資料：
 
-- **將 Android 4.1+ 裝置連線至 [MTD 夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 Android 4.1+ 裝置將安全性風險回報給 Intune。
-    - **如果收不到任何資料，標記為不相容**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不相容。
+- **將 Android 4.1+ 裝置連線至 [MTD 合作夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 Android 4.1+ 裝置將安全性風險回報給 Intune。
+    - **如果收不到任何資料，標記為不符合規範**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不符合規範。
 <br></br>
-- **將 iOS 8.0+ 裝置連線至 [MTD 夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 iOS 8.0+ 裝置將安全性風險回報給 Intune。
-    - **如果收不到任何資料，標記為不相容**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不相容。
+- **將 iOS 8.0+ 裝置連線至 [MTD 合作夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 iOS 8.0+ 裝置將安全性風險回報給 Intune。
+    - **如果收不到任何資料，標記為不符合規範**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不符合規範。
 <br></br>
 - **啟用 iOS 裝置的應用程式同步**：允許此 Mobile Threat Defense 合作夥伴向 Intune 要求 iOS 應用程式的中繼資料，以針對威脅分析用途使用。
 
-- **封鎖不支援的作業系統版本**：如果裝置所執行的作業系統低於支援的最低版本，則將其封鎖。
+- **封鎖不支援的 OS 版本**：如果裝置所執行的作業系統低於支援的最低版本，則將其封鎖。
 
-- **夥伴無回應前的天數**：Intune 將夥伴視為因連線中斷而無回應之前的閒置天數。 針對沒有回應的 MTD 合作夥伴，Intune 會忽略其合規性狀態。
+- **合作夥伴無回應前的天數**：Intune 將合作夥伴視為因連線中斷而無回應之前的閒置天數。 針對沒有回應的 MTD 合作夥伴，Intune 會忽略其合規性狀態。
 
 > [!IMPORTANT] 
 > 您必須新增並指派 MTD 應用程式，再建立裝置相容性和條件式存取原則規則。 這樣做可確保 MTD 應用程式已準備好供使用者進行安裝，安裝後使用者才能存取電子郵件或其他公司資源。
