@@ -2,8 +2,8 @@
 title: 建立及部署 Windows 資訊保護 (WIP) 應用程式防護原則 | Microsoft Intune
 description: 使用 Microsoft Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/04/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 9f91f5b9779c3067a3120864eaf265346efd8a02
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817308"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297429"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -74,7 +74,7 @@ ms.locfileid: "53817308"
 4. 在 [用戶端應用程式] 刀鋒視窗中選取 [應用程式保護原則]。
 5. 選取 [新增原則]，即可顯示 [新增原則] 刀鋒視窗。
 6. 新增下列值：
-    - **名稱：** 鍵入新原則的名稱 (必要)。
+    - **名稱**：鍵入新原則的名稱 (必要)。
     - **描述：**(選擇性) 鍵入描述。
     - **平台：** 選擇 [Windows 10] 作為應用程式防護原則的支援平台。
     - **註冊狀態：** 選擇 [沒有註冊] 作為原則的註冊狀態。

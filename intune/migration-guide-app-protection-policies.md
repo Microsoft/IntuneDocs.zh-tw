@@ -3,8 +3,8 @@ title: 在 Intune 移轉期間設定應用程式保護原則
 titlesuffix: Microsoft Intune
 description: 本文提供 Microsoft Intune 移轉期間設定應用程式防護原則的必要步驟。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 7f108af829cd24e3aeff7f6a8210e0be3669b82f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 92485c4d479e1cb96e23f01c129fa2639657cd27
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183549"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297310"
 ---
 # <a name="configure-app-protection-policies-optional"></a>設定應用程式保護原則 (選用)
 
@@ -54,6 +54,6 @@ Intune 可以在移轉期間提供公司資料保護，所以在沒有裝置層�
 2. [部署原則](app-protection-policies.md#deploy-a-policy-to-users)
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [特殊移轉考量](migration-guide-considerations.md)

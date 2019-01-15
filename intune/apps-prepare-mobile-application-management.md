@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210749"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -98,7 +98,7 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
 |完整抹除|X|X|
-|選擇性抹除 <br></br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|選擇性抹除 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
 |目標應用程式組態|X||
 |支援多重身分識別|X||
@@ -111,10 +111,10 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |需要最低的 Android 安全性修補程式版本 (僅 Android)|X|X|
 |需要最低的 Intune SDK for iOS (僅限 iOS)|X|X|
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解應用程式保護原則和 Intune，請參閱下列主題：
 
-  - [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
-  - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
+  - [Android App Wrapping Tool](app-wrapper-prepare-android.md)<br>
+  - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)<br>
   - [使用 SDK 讓應用程式進行行動應用程式管理](app-sdk.md)
