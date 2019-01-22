@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626079"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098312"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>設定 Android 企業 kiosk 裝置的 Intune 註冊
 
@@ -112,7 +112,7 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 
 ### <a name="enroll-by-using-a-token"></a>使用權杖註冊
 
-針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **aft#setup** 註冊方法時，利用 QR 代碼掃描。
+針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **afw#setup** 註冊方法時，利用 QR 代碼掃描。
 
 1. 開啟已抹除的裝置。
 2. 在 [歡迎使用] 畫面上選取您的語言。
@@ -170,6 +170,6 @@ Intune 可協助您將應用程式和設定部署到 Android kiosk 裝置。 如
 -   建立應用程式的解除安裝部署。
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 - [部署 Android kiosk 應用程式](apps-deploy.md)
 - [新增 Android kiosk 設定原則](device-profiles.md)

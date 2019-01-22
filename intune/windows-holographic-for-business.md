@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032260"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203377"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 在 Windows 全像攝影版和 HoloLens 上管理及使用不同的裝置管理功能
 
@@ -123,6 +123,11 @@ Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功�
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[設定 Wi-Fi](wi-fi-settings-configure.md)
 
 您也可以在 Intune 中建立 Wi-Fi 設定檔，以將無線網路設定指派給 Windows Holographic for Business 裝置。 當您指派 Wi-Fi 設定檔時，使用者無須進行任何網路設定，即可取得公司網路存取權。 例如，您可以建立 Windows Holographic for Business 裝置專用的 Wi-Fi 網路。
+
+## <a name="shared-multi-user-devices"></a>共用的多重使用者裝置
+[共用的裝置](shared-user-device-settings-windows-holographic.md)
+
+執行 Windows Holographic for Business 的裝置 (例如 Microsoft HoloLens) 可以有多位使用者。 Intune 中包含的設定，可控制這些共用裝置上的不同功能，例如電源管理、使用本機存放區和帳戶管理。 您也可以將組態設定檔套用至具有不同作業系統的裝置。 例如，裝置群組可以在同一個群組中有執行 RS2 和 RS3 的裝置。
 
 ## <a name="software-updates"></a>軟體更新
 **[管理軟體更新](windows-update-for-business-configure.md)**

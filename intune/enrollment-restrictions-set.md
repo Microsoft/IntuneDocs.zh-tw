@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112947"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122533"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -81,6 +81,8 @@ ms.locfileid: "53112947"
     - Android 工作設定檔支援 major.minor.rev.build。
     - iOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
     - Windows 支援 major.minor.rev.build，僅限 Windows 10。
+> [!Note]
+> Windows 10 不會在註冊期間提供組建編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
 8. 選擇要 [允許] 還是 [封鎖] 每個平台列出的**個人所有**裝置。
 9. 選擇 [確定]。
 

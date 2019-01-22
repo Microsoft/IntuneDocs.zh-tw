@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,184 +14,184 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
-ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
+ms.openlocfilehash: f653cd8c7eb0181581d9c21b7f9bc35a008c6df6
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52579161"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122534"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證
 
-在 Microsoft Intune 中，您可以將 SCEP 和 PKCS 憑證新增至裝置。 您也可以在[抹除](devices-wipe.md#wipe)或[淘汰](devices-wipe.md#retire)裝置時移除這些憑證。 在其他情況下，系統會自動移除憑證；還有某些情況是憑證會保留在裝置上。
+在 Microsoft Intune 中，您可以將簡單憑證註冊通訊協定 (SCEP) 和公開金鑰加密標準 (PKCS) 憑證新增至裝置。 您也可以在[抹除](devices-wipe.md#wipe)或[淘汰](devices-wipe.md#retire)裝置時移除這些憑證。 
 
-本文列出一些常見的案例，以及對 PKCS 和 SCEP 憑證的影響。
+在其他情況下，系統會自動移除憑證；還有某些情況是憑證會保留在裝置上。 本文列出一些常見的案例，以及對 PKCS 和 SCEP 憑證的影響。
 
 > [!NOTE]
-> 若要為正在從 Active Directory (AD) 或 Azure AD 中移除的使用者移除並撤銷憑證，請務必依序執行下列步驟：
+> 若要為正在從內部部署 Active Directory 或 Azure Active Directory (Azure AD) 中移除的使用者移除並撤銷憑證，請依序執行下列步驟：
 >
->    1. 抹除或淘汰使用者的裝置
->    2. 從 AD 或 Azure AD 中移除使用者
+> 1. 抹除或淘汰使用者的裝置。
+> 2. 從內部部署 Active Directory 或 Azure AD 中移除使用者。
 
 ## <a name="windows-devices"></a>Windows 裝置
 
 #### <a name="scep-certificates"></a>SCEP 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
+在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
 
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 已從群組指派中移除憑證設定檔
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
+- 從 Azure AD 群組中移除裝置。
+- 從群組指派中移除憑證設定檔。
 
-- 在下列情況中，系統會撤銷 SCEP 憑證：
-  - 系統管理員變更或更新 SCEP 設定檔
+在下列情況中，系統會撤銷 SCEP 憑證：
+- 系統管理員變更或更新 SCEP 設定檔。
 
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
+在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
 
 #### <a name="pkcs-certificates"></a>PKCS 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
+在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
 
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，PKCS 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
-  - 系統管理員變更或更新 PKCS 設定檔
-  - 已從群組指派中移除憑證設定檔
+在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
+- 系統管理員變更或更新 PKCS 設定檔。
+- 從群組指派中移除憑證設定檔。
 
 
 ## <a name="ios-devices"></a>iOS 裝置
 
 #### <a name="scep-certificates"></a>SCEP 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
+在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
 
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 已從群組指派中移除憑證設定檔
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
+- 從 Azure AD 群組中移除裝置。
+- 從群組指派中移除憑證設定檔。
 
-- 在下列情況中，系統會撤銷 SCEP 憑證：
-  - 系統管理員變更或更新 SCEP 設定檔
+在下列情況中，系統會撤銷 SCEP 憑證：
+- 系統管理員變更或更新 SCEP 設定檔。
 
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
+在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
 
 #### <a name="pkcs-certificates"></a>PKCS 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
+在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
 
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，系統會移除 PKCS 憑證：
-  - 已從群組指派中移除憑證設定檔
+在下列情況中，系統會移除 PKCS 憑證：
+- 從群組指派中移除憑證設定檔。
   
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，PKCS 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
-  - 系統管理員變更或更新 PKCS 設定檔
+在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
+- 系統管理員變更或更新 PKCS 設定檔。
 
 ## <a name="android-knox-devices"></a>Android KNOX 裝置
 
 #### <a name="scep-certificates"></a>SCEP 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
+在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
 
-- 在下列情況中，系統會撤銷 SCEP 憑證：
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 已從群組指派中移除憑證設定檔
-  - 系統管理員從 Azure Active Directory (AD) 移除使用者或群組
-  - 系統管理員變更或更新 SCEP 設定檔
+在下列情況中，系統會撤銷 SCEP 憑證：
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
+- 從 Azure AD 群組中移除裝置。
+- 從群組指派中移除憑證設定檔。
+- 系統管理員從 Azure AD 移除使用者或群組。
+- 系統管理員變更或更新 SCEP 設定檔。
 
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
+在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
 
 #### <a name="pkcs-certificates"></a>PKCS 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
+在下列情況中，系統會撤銷「並」移除 PKCS 憑證：
 
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，系統會移除根憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[抹除](devices-wipe.md#wipe)動作
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
+在下列情況中，系統會移除根憑證：
+- 使用者取消註冊。
+- 系統管理員執行[抹除](devices-wipe.md#wipe)動作。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
 
-- 在下列情況中，PKCS 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
-  - 系統管理員變更或更新 PKCS 設定檔
-  - 已從群組指派中移除憑證設定檔
+在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
+- 系統管理員變更或更新 PKCS 設定檔。
+- 從群組指派中移除憑證設定檔。
   
   
 > [!NOTE]
-> 上述案例不會驗證 Android for Work 裝置。 Android 舊版裝置 (任何非 Samsung、非工作設定檔裝置) 不會啟用憑證移除。 
+> 上述案例不會驗證 Android for Work 裝置。 Android 舊版裝置 (任何非 Samsung、非工作設定檔裝置) 不會啟用憑證移除功能。 
 
 ## <a name="macos-certificates"></a>macOS 憑證
 
 #### <a name="scep-certificates"></a>SCEP 憑證
 
-- 在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
-  - 終端使用者取消註冊
-  - 系統管理員執行[淘汰](devices-wipe.md#retire)動作
-  - 從 Azure Active Directory (AD) 群組中移除裝置
-  - 已從群組指派中移除憑證設定檔
+在下列情況中，系統會撤銷「並」移除 SCEP 憑證：
+- 使用者取消註冊。
+- 系統管理員執行[淘汰](devices-wipe.md#retire)動作。
+- 從 Azure AD 群組中移除裝置。
+- 從群組指派中移除憑證設定檔。
 
-- 在下列情況中，系統會撤銷 SCEP 憑證：
-  - 系統管理員變更或更新 SCEP 設定檔
+在下列情況中，系統會撤銷 SCEP 憑證：
+- 系統管理員變更或更新 SCEP 設定檔。
 
-- 在下列情況中，SCEP 憑證會**保留**在裝置上 (未撤銷或移除憑證)：
-  - 終端使用者遺失 Intune 授權
-  - 系統管理員撤銷 Intune 授權
-  - 系統管理員從 Azure AD 移除使用者或群組
+在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+- 使用者遺失 Intune 授權。
+- 系統管理員撤銷 Intune 授權。
+- 系統管理員從 Azure AD 移除使用者或群組。
 
 > [!NOTE]
 > 不支援使用[抹除](devices-wipe.md#wipe)動作將 macOS 裝置恢復為出廠預設值。

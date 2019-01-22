@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b12cec7a01d809eb5a6b6523a73dd224c10c972e
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3f19425fad2cd5d8d2d832eac42c84f4a0f827b0
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817189"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122616"
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 
@@ -64,7 +64,7 @@ Zimperium 應用程式授權程序如下：
 
 ## <a name="to-set-up-zimperium-integration"></a>設定 Zimperium 整合
 
-1.  請前往  [Zimperium MTD 主控台](https://sso.zimperium.com/signon/aad/) ，並使用您的認證登入。 若要執行 Zimperium 整合安裝程序，您必須使用具有全域管理員角色的 Azure Active Directory 使用者登入。 這項一次性的安裝作業會使用全域管理員權限授與組織中 Zimperium 應用程式與 Intune 通訊的權限。 
+1.  請前往 [Zimperium MTD 主控台](https://sso.zimperium.com/signon/aad/)，並使用您的認證登入。 若要執行 Zimperium 整合安裝程序，您必須使用具有全域管理員角色的 Azure Active Directory 使用者登入。 這項一次性的安裝作業會使用全域管理員權限授與組織中 Zimperium 應用程式與 Intune 通訊的權限。 
 
 2.  從左側功能表中選擇 [管理]。
 
@@ -72,16 +72,16 @@ Zimperium 應用程式授權程序如下：
 
 4.  選擇 [新增 MDM]，然後從 [MDM 提供者] 清單中選取 [Microsoft Intune] 。
 
-5.  您將 Microsoft Intune 設定為 MDM 服務後，隨即快顯 [ **Microsoft Intune 設定**] 視窗， 請針對每個選項選擇 [ **新增 Azure Active Directory**]： **Zimperium zConsole**、**zIPS iOS 和 Android 應用程式**授權 Zimperium 透過 Azure AD 單一登入與 Intune 和 Azure AD 進行通訊。
+5.  您將 Microsoft Intune 設定為 MDM 服務後，隨即快顯 [Microsoft Intune 設定] 視窗，請針對每個選項選擇 [新增 Azure Active Directory]：**Zimperium zConsole**、**zIPS iOS 和 Android 應用程式**授權 Zimperium 透過 Azure AD 單一登入與 Intune 和 Azure AD 進行通訊。
 
     > [!IMPORTANT]  
     > 您必須新增 Zimperium zConsole、zIPS iOS 和 Android 應用程式以完成與 Intune 整合的程序。
 
-6.  選擇 [ **接受**] 以授權 Zimperium 應用程式與 Intune 及 Azure Active Directory 通訊。 
+6.  選擇 [接受] 以授權 Zimperium 應用程式與 Intune 和 Azure Active Directory 進行通訊。
 
 7.  將 **Zimperium zConsole** 與 **zIPS iOS 和 Android** 應用程式新增至 Azure AD 後，請新增 Azure AD 安全性群組。 此新增可讓 Zimperium 與服務同步處理 Azure AD 安全性群組。
 
-8.  選擇 [ **完成**] 以儲存設定，並啟動第一次 Azure AD 安全性群組同步。 
+8.  選擇 [完成] 以儲存設定並啟動第一次 Azure AD 安全性群組同步處理。
 
 9.  登出 Zimperium MTD 主控台。
 

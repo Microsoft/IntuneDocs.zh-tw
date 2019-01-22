@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959497"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203496"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 將受管理的應用程式設定成符合您組織的安全性需求，以及保護工作和學校資料。 這些應用程式會在您的裝置上提供給您自動安裝或使用。 
@@ -56,7 +56,15 @@ ms.locfileid: "49959497"
 * 您的組織讓您得以在公司入口網站使用受管理的應用程式。 前往公司入口網站應用程式或網站，可搜尋、檢視及安裝這些應用程式。 
 * 您從 Google Play 商店安裝應用程式，然後使用您的公司或學校帳戶登入應用程式。  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？
+ ## <a name="available-apps"></a>可用的應用程式   
+ 貴組織可以選取適合並對您在公司或學校有幫助的應用程式。 您只會在公司入口網站中找到這些應用程式。   
+
+ 這些應用程式也可依您的裝置類型提供給您。 例如，如果您使用 Android 公司入口網站應用程式，您將可存取 Android 應用程式，但無法存取 iOS 應用程式。   
+
+ ## <a name="request-an-app-for-work-or-school"></a>要求公司或學校用的應用程式   
+ 如需某個應用程式，但在公司入口網站中看不到，您可以要求該應用程式。 在公司入口網站應用程式的 [連絡 IT] 索引標籤中，尋找**技術服務人員**的連絡人詳細資料。您將會在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上找到相同的連絡人資訊。   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？  
 下列清單描述您公司的支援人員可於應用程式管理的設定。 這些設定會影響您在裝置上檢視、存取及使用工作或學校資料的方式：
 
 * 特定網站的存取  

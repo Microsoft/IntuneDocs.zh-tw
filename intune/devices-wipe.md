@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553651"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122633"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -37,7 +37,7 @@ ms.locfileid: "53553651"
 |抹除動作|**保留註冊狀態和使用者帳戶**|從 Intune 管理移除|說明|
 |:-------------:|:------------:|:------------:|------------|
 |**抹除**| 未勾選 | 是 | 清除所有的使用者帳戶、資料、MDM 原則及設定。 將作業系統重設為其預設狀態和設定。|
-|**抹除**| 勾選 | 否 | 清除所有的 MDM 原則。 保留使用者帳戶和資料。 將使用者設定重設為預設值。 將作業系統重設為其預設狀態和設定。|
+|**抹除**| 已核取 | 否 | 清除所有的 MDM 原則。 保留使用者帳戶和資料。 將使用者設定重設為預設值。 將作業系統重設為其預設狀態和設定。|
 
 [保留註冊狀態和使用者帳戶] 選項僅適用於 Windows 10 版本 1709 或更新版本。
 
@@ -193,7 +193,11 @@ ms.locfileid: "53553651"
 
     ![Apple 重新指派的螢幕擷取畫面](./media/devices-wipe/apple-reassign.png)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="fresh-start"></a>重新開始
+
+適用於 Windows 10 裝置。 請深入了解[重新開始](https://docs.microsoft.com/intune/device-fresh-start)。
+
+## <a name="next-steps"></a>後續步驟
 
 如果您想要重新註冊已刪除的裝置，請參閱[註冊選項](enrollment-options.md)。
 

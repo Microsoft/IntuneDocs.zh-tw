@@ -2,10 +2,10 @@
 title: 在 Microsoft Intune 中設定商務用 Windows Update - Azure | Microsoft Docs
 description: 在 Windows 10 裝置上使用 Microsoft Intune 來更新設定檔中的 [軟體更新] 設定，以在 [商務用 Windows Update] 設定中建立更新通道、檢閱合規性及暫停更新。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112760"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297378"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -76,16 +76,12 @@ ms.locfileid: "53112760"
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
 2. 選取 [軟體更新] > [Windows 10 更新通道] > 建立。
 3. 輸入名稱、描述 (選擇性)，然後選擇 [設定]。
-4. 在 [設定] 中，輸入下列資訊：
+4. 在 [設定] 中，輸入下列資訊：  
 
+   **更新設定**  
    - **維護通道**：設定裝置接收 Windows 更新的通道。
    - **Microsoft 產品更新**：選擇要從 Microsoft Update 掃描應用程式更新。
    - **Windows 驅動程式**：選擇要在更新期間排除 Windows Update 驅動程式。
-   - **自動更新行為**：選擇要如何安裝自動更新、何時重新啟動或重新開機。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)。
-     - **自動行為頻率**：如果您針對更新行為選取 [在排定的時間自動安裝並重新啟動]，就會顯示此設定。 請使用此設定來排定何時安裝更新，包括週、日及時間。
-
-   - **重新啟動檢查**：預設為啟用。 當您重新啟動裝置時，會進行一些檢查，包括檢查作用中的使用者、電池電量、執行中的遊戲等。 若要在重新啟動裝置時略過這些檢查，請選取 [略過]。
-
    - **品質更新延遲期間 (天)**：輸入品質更新的延遲天數。 最多可以延遲接收這些「品質更新」至其發行後 30 天。
 
      「品質更新」通常會修正和改善現有的 Windows 功能，而且會在每個月的第二個星期二發佈。 透過商務用 Windows Update 的「品質更新」只會接收這些更新 (「搶鮮版」)，但 Microsoft 可能會隨時發行其他更新。 您可以定義在 Windows Update 提供「品質更新」之後，是否要延遲接收「品質更新」，以及要延遲多久。 如需詳細資訊，請參閱[使用商務用 Windows Update 來部署更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)。
@@ -96,9 +92,21 @@ ms.locfileid: "53112760"
 
      例如：**如果 [維護通道] 設定為 [半年通道 (已設定目標)]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 裝置要等到 2 月 (30 天後) 才會接收更新。
 
-     **如果 [維護通道] 設定為 [半年通道]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置會在此「半年通道」發行的 30 天後收到「功能更新」，而在 5 月進行更新。
+     **如果 [維護通道] 設定為 [半年通道]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置會在此「半年通道」發行的 30 天後收到「功能更新」，而在 5 月進行更新。  
 
-   - **傳遞最佳化下載模式**：選擇裝置下載 Windows 更新的方法。 如需詳細資訊，請參閱 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+   **使用者體驗設定**
+   
+   - **自動更新行為**：選擇要如何安裝自動更新、何時重新啟動或重新開機。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)。
+
+     [重設為預設] 設定會在執行「2018 年 10 月更新」或更新版本的 Windows 10 電腦上還原原始的自動更新設定。  
+
+     - **自動行為頻率**：如果您針對更新行為選取 [在排定的時間自動安裝並重新啟動]，就會顯示此設定。 請使用此設定來排定何時安裝更新，包括週、日及時間。
+
+   - **重新啟動檢查**：預設為啟用。 當您重新啟動裝置時，會進行一些檢查，包括檢查作用中的使用者、電池電量、執行中的遊戲等。 若要在重新啟動裝置時略過這些檢查，請選取 [略過]。
+
+   - **防止使用者暫停 Windows 更新**：預設為允許。 使用此設定來封鎖或允許使用者從其電腦的 [設定] 暫停更新安裝。 
+      
+   - **傳遞最佳化下載模式**：[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。 
 
 5. 完成時，選取 [確定]。 在 [建立更新通道] 中，選取 [建立]。
 

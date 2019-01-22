@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185673"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203088"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS 或 macOS 裝置功能設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "52185673"
 - AirPrint 和 AirPlay 設定
 - 主畫面配置
 - 應用程式的通知
-- 共用裝置設定
+- 鎖定畫面訊息
 - 設定單一登入
 - 篩選 web 內容
 
@@ -44,7 +44,7 @@ ms.locfileid: "52185673"
 4. 輸入下列內容：
 
    - **名稱**：為新的設定檔輸入描述性名稱。
-   - **描述**：輸入設定檔的描述。 (這是選用項目，但建議使用。)
+   - **描述**：輸入設定檔的描述。 (這是選擇性設定，但建議執行。)
    - **平台**：選取您的平台類型：
      - **iOS**
      - **macOS**
@@ -55,7 +55,7 @@ ms.locfileid: "52185673"
      - [適用於 iOS 裝置的 AirPlay 設定](airplay-settings-ios.md)
      - [適用於 iOS 的主畫面配置設定](home-screen-settings-ios.md)
      - [適用於 iOS 的應用程式通知設定](app-notification-settings-ios.md)
-     - [適用於 iOS 的共用裝置組態設定](shared-device-settings-ios.md)
+     - [適用於 iOS 的鎖定畫面訊息設定](shared-device-settings-ios.md)
      - [設定 Intune 以進行 iOS 裝置單一登入](sso-ios.md)
      - [適用於 iOS 的網路內容篩選器](web-content-filter-settings-ios.md)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147497"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203258"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 裝置上使用受管理的應用程式
 
@@ -34,7 +34,7 @@ ms.locfileid: "43147497"
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？
+## <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？  
 您可利用數個不同方是取得受管理的應用程式︰
 
 -   當您在 Microsoft Intune 中註冊您的裝置，可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您公司的支援人員可能會將它安裝在您的裝置上。 若要了解註冊，請參閱[在 Intune 中註冊您的 iOS 裝置](enroll-your-device-in-intune-ios.md)或[在 Intune 中註冊您的 macOS 裝置](enroll-your-device-in-intune-macos.md)。
@@ -43,7 +43,16 @@ ms.locfileid: "43147497"
 
 您公司的支援人員有時可能會購買某個安裝之應用程式的多個授權。 如果您看到要求您接受 Apple 大量採購方案授權合約的訊息，這是正常的，您可以接受它。 如果不接受，即無法安裝應用程式。
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？
+## <a name="available-apps"></a>可用的應用程式   
+ 貴組織可以選取適合並對您在公司或學校有幫助的應用程式。 您只會在公司入口網站中找到這些應用程式。   
+
+ 這些應用程式也可依據您的裝置類型提供給您。 例如，如果您使用適用於 iOS 的公司入口網站應用程式，即可存取 iOS 應用程式，但無法存取 Android 應用程式。   
+
+## <a name="request-an-app-for-work-or-school"></a>要求公司或學校用的應用程式   
+ 如需某個應用程式，但在公司入口網站中看不到，您可以要求該應用程式。 在公司入口網站應用程式的 [支援] 索引標籤中，尋找 [技術服務人員] 的連絡人詳細資料。您將會在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上找到相同的連絡人資訊。   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？  
 以下是您公司的支援人員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
 
 -   特定網站的存取

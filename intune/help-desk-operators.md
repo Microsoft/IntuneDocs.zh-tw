@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190297"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203547"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -271,6 +271,15 @@ ms.locfileid: "52190297"
 | 註冊授權失敗 | 嘗試使用舊版的公司入口網站註冊。 |
 | 不支援裝置 | 裝置不符合 Intune 註冊的最低需求。 |
 | 不符合註冊限制 | 此註冊因為管理員所設定的註冊限制而被封鎖。 |
+| 裝置版本太低 | 系統管理員設定了需要較高裝置版本的註冊限制。 |
+| 裝置版本太高 | 系統管理員設定了需要較低裝置版本的註冊限制。 |
+| 無法將裝置註冊為個人 | 系統管理員設定了封鎖個人註冊的註冊限制，且失敗的裝置未預先定義為公司。 |
+| 已封鎖裝置平台 | 系統管理員設定了封鎖此裝置平台的註冊限制。 |
+| 大量權杖已過期 | 佈建套件中的大量權杖已過期。 |
+| 找不到 Autopilot 裝置或詳細資料 | 嘗試註冊時，找不到 Autopilot 裝置。 |
+| 找不到或未指派 Autopilot 設定檔 | 裝置沒有使用中的 Autopilot 設定檔。 |
+| 未預期的 Autopilot 註冊方法 | 裝置嘗試使用不允許的方法進行註冊。 |
+| 已移除 Autopilot 裝置 | 已從此帳戶的 Autopilot 中移除嘗試註冊的裝置。 |
 | 已到達裝置上限 | 此註冊因為管理員所設定的裝置限制而被封鎖。 |
 | Apple 啟用 | 所有 iOS 裝置目前都無法註冊，因為 Intune 中缺少 Apple MDM Push Certificate 或該憑證已過期。 |
 | 裝置未預先註冊 | 裝置未預先註冊為公司，而且管理員已封鎖所有個人註冊項目。 |
@@ -285,7 +294,7 @@ ms.locfileid: "52190297"
   - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
   - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以進一步了解以角色為基礎的系統管理控制 (RBAC)，來定義組織裝置中的角色、行動應用程式管理、資料保護工作。 如需詳細資訊，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Intune](/intune/role-based-access-control)。
 

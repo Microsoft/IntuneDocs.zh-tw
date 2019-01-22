@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067443"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210715"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
@@ -89,7 +89,7 @@ ms.locfileid: "54067443"
 
 矩形式樹狀結構圖會將階層式資料顯示為方塊中的方塊。 階層的每個分支都是一個方塊，包含顯示子分支的較小方塊。 您可以使用 Power BI Desktop 來建立 Intune 資料的矩形式樹狀結構圖。
 
-![視覺效果 > 矩形式樹狀結構圖](media/reports-create-03-treemap.png)
+![Power BI 矩形式樹狀結構圖視覺效果](media/reports-create-03-treemap.png)
 
 1. 選取圖表類型。 選取 [矩形式樹狀結構圖]。
 2. 在資料模型中，尋找 **devices** 資料表。

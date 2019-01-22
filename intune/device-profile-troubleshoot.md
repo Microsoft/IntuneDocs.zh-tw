@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210783"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune 裝置設定檔的常見問題和解決方式
 
@@ -72,11 +72,11 @@ ms.locfileid: "52181474"
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>如果有多個原則指派到同一個使用者或同一部裝置，如何得知會套用哪些設定？
 如有兩個或多個原則指派到同一個使用者或同一部裝置時，哪些設定會套用於個別設定層級：
 
--   相容性原則設定一律優先於組態原則設定
+- 相容性原則設定一律優先於組態原則設定
 
--   如果合規性政策中與不同合規性政策中的相同設定一起評估，則會套用限制最嚴格的合規性政策設定。
+- 如果合規性政策中與不同合規性政策中的相同設定一起評估，則會套用限制最嚴格的合規性政策設定。
 
--   如果設定原則的設定與不同設定原則中的設定衝突，這項衝突會顯示在 Azure 入口網站中。 在此狀況中，請手動解決這些衝突。
+- 如果設定原則的設定與不同設定原則中的設定衝突，這項衝突會顯示在 Azure 入口網站中。 在此狀況中，請手動解決這些衝突。
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>應用程式保護原則互相衝突時，會發生什麼情況？ 哪一項原則會套用至應用程式？
 除了數字輸入欄位 (例如重設前的 PIN 嘗試次數) 之外，衝突值是應用程式保護原則中限制最嚴格的設定。 數字輸入欄位會設定為相同的值，如同您在主控台中使用建議的設定選項建立 MAM 原則一樣。
@@ -95,38 +95,41 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 - Wi-Fi、VPN、憑證及電子郵件設定檔：這些設定檔會從所有支援的已註冊裝置中移除。
 - 所有其他設定檔類型：  
-    - [Windows 和 Android 裝置]：設定不會從裝置中移除
-    - [Windows Phone 8.1 裝置]：會移除下列設定：  
-        - 需要密碼來解除鎖定行動裝置
-        - 允許簡單密碼
-        - 密碼長度下限
-        - 所需的密碼類型
-        - 密碼到期 (天數)
-        - 記住密碼歷程記錄
-        - 抹除裝置前允許的重複登入失敗次數
-        - 要求密碼前的閒置分鐘數
-        - 需要的密碼類型 – 最小字元集數
-        - 允許相機
-        - 在行動裝置上要求加密
-        - 允許卸除式存放裝置
-        - 允許網頁瀏覽器
-        - 允許應用程式市集
-        - 允許螢幕擷取
-        - 允許地理位置
-        - 允許 Microsoft 帳戶
-        - 允許複製並貼上
-        - 允許 Wi-Fi 網際網路共用功能
-        - 允許自動連線到免費的 Wi-Fi 熱點
-        - 允許 Wi-Fi 熱點回報
-        - 允許抹除
-        - 允許藍芽
-        - 允許 NFC
-        - 允許 Wi-Fi
 
-    - [iOS]：移除所有設定，除了︰
-        - 允許語音漫遊
-        - 允許數據漫遊
-        - 允許漫遊時自動同步處理
+  - **Windows 和 Android 裝置**：設定不會從裝置中移除
+  - **Windows Phone 8.1 裝置**：下列設定會予以移除：  
+  
+    - 需要密碼來解除鎖定行動裝置
+    - 允許簡單密碼
+    - 密碼長度下限
+    - 所需的密碼類型
+    - 密碼到期 (天數)
+    - 記住密碼歷程記錄
+    - 抹除裝置前允許的重複登入失敗次數
+    - 要求密碼前的閒置分鐘數
+    - 需要的密碼類型 – 最小字元集數
+    - 允許相機
+    - 在行動裝置上要求加密
+    - 允許卸除式存放裝置
+    - 允許網頁瀏覽器
+    - 允許應用程式市集
+    - 允許螢幕擷取
+    - 允許地理位置
+    - 允許 Microsoft 帳戶
+    - 允許複製並貼上
+    - 允許 Wi-Fi 網際網路共用功能
+    - 允許自動連線到免費的 Wi-Fi 熱點
+    - 允許 Wi-Fi 熱點回報
+    - 允許抹除
+    - 允許藍芽
+    - 允許 NFC
+    - 允許 Wi-Fi
+
+  - **iOS**：移除所有設定，除了：
+  
+    - 允許語音漫遊
+    - 允許數據漫遊
+    - 允許漫遊時自動同步處理
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>我變更了裝置限制設定檔，但變更一直沒有作用
 當您使用 MDM 或 EAS 設定安全性原則之後，Windows Phone 裝置不允許降低這些原則的安全性。 例如，您將 [字元密碼字元數下限]  設定為 8 個，然後嘗試減少為 4 個。 裝置已套用較嚴格的設定檔。
@@ -135,5 +138,13 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 您可能需要淘汰 Android、Windows Phone 8.1 和更新版本、iOS 以及 Windows 10 等其他 MDM 裝置，再重新註冊到服務中，以套用較不嚴格的設定檔。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 設定檔中的某些設定會傳回「不適用」
+Windows 10 裝置上的某些設定可能會顯示為「不適用」。 當發生這種情況時，表示在裝置上執行的 Windows 版本或版次不支援該特定設定。 發生此訊息的原因可能如下：
+
+- 此設定僅適用於新版 Windows，並不適用於裝置上的目前作業系統 (OS) 版本。
+- 此設定僅適用於特定 Windows 版本或特定 SKU，例如家用版、專業版、企業版和教育版。
+
+若要深入了解不同設定的版本和 SKU 需求，請參閱 [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (設定服務提供者 (CSP) 參考)。
+
+## <a name="next-steps"></a>後續步驟
 需要額外說明嗎？ 請參閱[如何取得 Microsoft Intune 支援](get-support.md)。

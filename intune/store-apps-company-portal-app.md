@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210732"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
@@ -30,7 +30,7 @@ ms.locfileid: "53642586"
 使用者可以透過 Microsoft Store 自行安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果企業需要由您指派公司入口網站應用程式給使用者，您也可以直接透過 Intune 手動指派 Windows 10 公司入口網站應用程式。 即使尚未整合 Intune 與商務用 Microsoft Store，您仍可以進行上述作業。
 
  > [!NOTE]
- > 此文章中所述的選項需要您在每次應用程式更新發行之後指派手動更新。
+ > 本文中所述的選項需要您在每次應用程式更新發行之後指派手動更新。
 
 ## <a name="configure-settings-to-show-offline-apps"></a>組態設定以顯示離線應用程式
 1. 使用您的系統管理員帳戶，登入[商務用 Microsoft Store](https://www.microsoft.com/business-store)。
@@ -47,7 +47,7 @@ ms.locfileid: "53642586"
 5. 針對 [平台]，選取 [Windows 10 所有裝置]，然後選取適當的 [最低版本]、[架構]，以及 [下載應用程式中繼資料] 值。 
 6. 選取 [下載]，將檔案儲存至本機電腦。
 
-    ![[Windows 10 所有裝置] 和選取要下載的 X86 架構套件詳細資料](./media/Win10CP-all-devices.png)
+    ![選取架構等於 X86 的 Windows 10 裝置](./media/Win10CP-all-devices.png)
 
 7. 選取 [下載]，即可下載「必要架構」底下的所有套件。  
     您必須針對 x86、x64 及 ARM 架構完成這個步驟；總共 12 個套件。
@@ -73,7 +73,7 @@ ms.locfileid: "53642586"
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我側載的 Windows 8.1 公司入口網站應用程式升級至 Windows 10 公司入口網站應用程式？
 我們建議的移轉路徑是將指派動作設為 [解除安裝]，以刪除 Windows 8.1 公司入口網站應用程式的指派。 選取此設定之後，您即可使用先前說明過的任何選項，來指派 Windows 10 公司入口網站應用程式。  
 
-如果您需要側載應用程式，但您已指派 Windows 8.1 公司入口網站，而未使用 Symantec 憑證來簽署，請遵循此文章上述幾節的步驟完成升級。
+如果您需要側載應用程式，但您已指派 Windows 8.1 公司入口網站，而未使用 Symantec 憑證來簽署，請遵循本文上述幾節的步驟完成升級。
 
 如果您需要側載應用程式，但您已使用 Symantec 程式碼簽署憑證來簽署及指派 Windows 8.1 公司入口網站應用程式，請遵循下一節中的步驟。
 
@@ -104,7 +104,7 @@ ms.locfileid: "53642586"
 
 指令碼執行完成時，會輸出簽署版的 Windows 10 公司入口網站應用程式。 然後，您可以透過 Intune 將簽署版的應用程式指派為企業營運 (LOB) 應用程式，以將目前指派的版本升級至這個新的應用程式。  
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [將應用程式指派給群組](apps-deploy.md)
 

@@ -1,12 +1,12 @@
 ---
-title: 將應用程式指派給 Android 工作設定檔裝置
+title: 將受控 Google Play 應用程式指派給 Android Enterprise 裝置
 titlesuffix: Microsoft Intune
-description: 了解如何同步處理，並將應用程式從受控 Google Play 商店指派給 Android 工作設定檔裝置。
+description: 了解如何同步處理，並將應用程式從受控 Google Play 商店指派給 Android Enterprise 裝置。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305925"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239569"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>使用 Intune 將應用程式指派給 Android 工作設定檔裝置
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 將受控 Google Play 應用程式指派給 Android Enterprise 裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 企業是適用於 Android 工作設定檔裝置和 kiosk 裝置的方案。 對於 Android 工作設定檔裝置來說，Android 企業是一組功能與服務，可將個人應用程式與資料和公司應用程式與資料分隔開來。 使用者以 Android 裝置進行工作時，Android 企業可提供額外的管理選項與隱私權。 Intune 可協助您將應用程式和設定部署到 Android 工作設定檔裝置，以確定公司及個人資訊各自分開。 您在 Android 工作設定檔裝置上安裝的所有應用程式都是來自受控 Google Play 商店。 將應用程式指派給 Android 工作設定檔裝置的方式，與您將應用程式指派給標準 Android 裝置的方式不同。 您需要登入商店、瀏覽所需的應用程式，並核准這些應用程式。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式] 節點中，而且您可以管理應用程式的指派，如同其他應用程式一樣。
+Android Enterprise 是適用於 Android 工作設定檔裝置、專用/kiosk 裝置及完全受控裝置的方案。 對於 Android 工作設定檔裝置來說，Android 企業是一組功能與服務，可將個人應用程式與資料和公司應用程式與資料分隔開來。 使用者以 Android 裝置進行工作時，Android 企業可提供額外的管理選項與隱私權。 Intune 可協助您將應用程式和設定部署到 Android 工作設定檔裝置，以確定公司及個人資訊各自分開。 您在 Android 工作設定檔裝置上安裝的所有應用程式都是來自受控 Google Play 商店。 將應用程式指派給 Android 工作設定檔裝置的方式，與您將應用程式指派給標準 Android 裝置的方式不同。 您需要登入商店、瀏覽所需的應用程式，並核准這些應用程式。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式] 節點中，而且您可以管理應用程式的指派，如同其他應用程式一樣。
 
 此外，如果您已建立自己的企業營運 (LOB) 應用程式，則可以依照以下方式指派這些應用程式：
 - 註冊一個 Google 開發人員帳戶，您就能夠在 Google Play 商店的私人區域發佈應用程式。
@@ -107,7 +107,7 @@ Android 企業會要求您在受控 Google Play Web 主控台核准應用程式�
 5. 在商店的 [應用程式] 節點中，確認您可以看見自已發行的應用程式。  
     應用程式會自動通過核准，以與 Intune 同步處理。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [將應用程式指派給群組](apps-deploy.md) 
 

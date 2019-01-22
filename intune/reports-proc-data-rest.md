@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210868"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -47,7 +47,7 @@ ms.locfileid: "53642875"
     3.  在 [登入 URL] 中，鍵入 URL。 [登入 URL] 將取決於特定案例；不過，如果您計劃使用 Postman，請鍵入 `https://www.getpostman.com/oauth2/callback`。 向 Azure AD 進行驗證時，您將使用回呼進行用戶端驗證步驟。
 4.  選取 [建立]。
 
-     ![Intune 資料倉儲 API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune 資料倉儲用戶端應用程式](./media/reports-get_rest_data_client_overview.png)
 
 5. 記下此應用程式的 [應用程式識別碼]。 您將在下節中使用此識別碼。
 
@@ -82,7 +82,7 @@ ms.locfileid: "53642875"
 | 屬性        | 說明                                                                                                                                                                          | 範例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回呼 URL     | 在應用程式設定頁面中，將此項目設定為回呼 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
-| 權杖名稱       | 用來將認證傳遞給 Azure 應用程式的字串。 此程序會產生您的權杖，以針對資料倉儲 API 進行呼叫。                          | Bearer                                                                                        |
+| 權杖名稱       | 用來將認證傳遞給 Azure 應用程式的字串。 此程序會產生您的權杖，以針對資料倉儲 API 進行呼叫。                          | 持有人                                                                                        |
 | 驗證 URL         | 這是用來驗證的 URL。 | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
 | 存取權杖 URL | 這是用來授與權杖的 URL。                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | 用戶端識別碼        | 您已在 Azure 中建立原生應用程式時建立並記下此項目。                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
@@ -134,7 +134,7 @@ ms.locfileid: "53642875"
 
 12. 選取 [要求權杖]。
 
-    ![權杖的資訊](./media/reports-postman_getnewtoken.png)
+    ![存取權杖的資訊](./media/reports-postman_getnewtoken.png)
 
 13. 在 Active AD 授權頁面中，鍵入認證。 Postman 的權杖清單現在包含名為 `Bearer` 的權杖。
 14. 選取 [使用權杖]。 標頭清單包含授權的新金鑰值以及值 `Bearer <your-authorization-token>`。
@@ -144,7 +144,7 @@ ms.locfileid: "53642875"
 1.  選取 [傳送]。
 2.  傳回的資料會出現在 Postman 回應主體中。
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman 用戶端狀態等於 [200 確定]](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>從 Intune 資料倉儲建立 REST 用戶端 (C#) 以取得資料
 
@@ -161,7 +161,7 @@ ms.locfileid: "53642875"
 6. 選取 [我接受]，以接受 NuGet 套件授權。
 7. 從方案總管中，開啟 `Program.cs`。
 
-    ![Visual Studio 中的專案](./media/reports-get_rest_data_in.png)
+    ![Visual Studio 中的 Progam.cs 和方案總管](./media/reports-get_rest_data_in.png)
 
 8. 將 Program.cs 中的程式碼取代為下列程式碼：  
    ```csharp
@@ -225,7 +225,7 @@ ms.locfileid: "53642875"
 
 11. 檢閱主控台輸出。 此輸出包含從 Intune 租用戶的 **dates** 實體中提取的資料，且格式為 JSON。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以在[使用 Intune 資料倉儲 API](reports-api-url.md) 中找到授權、API URL 結構和 OData 端點的詳細資料。
 

@@ -3,10 +3,10 @@ title: 如何監視應用程式保護原則
 titleSuffix: Microsoft Intune
 description: 監視 Intune 中行動應用程式管理原則的合規性狀態。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816835"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297293"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ ms.locfileid: "53816835"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [Intune] 窗格上，選擇 [用戶端應用程式]。
-4. 在 [用戶端應用程式] 工作負載中，選擇 [監視] > [應用程式保護狀態]，查看摘要檢視：
+4. 在 [用戶端應用程式] 工作負載中，從 [監視] 區段選擇 [應用程式防護狀態]，以查看摘要檢視：
 
 ![[Intune 行動應用程式管理] 窗格上的 [摘要] 磚](./media/app-protection-user-status-summary.png)
 
--   **使用者**：公司中使用與工作內容中原則建立關聯之應用程式的使用者總數。
+-   **指派的使用者**：您公司中使用與工作內容原則建立關聯之應用程式的指派使用者當中，受到保護且授權的總數，以及未受保護且未授權的總數。
+-   **已標幟的使用者**：遇到問題的使用者數目。 [已標幟的使用者] 下會報告已進行 JB 破解的裝置。
+-   **iOS 使用者狀態**和 **Android 使用者狀態**：已使用應用程式並在相關平台工作內容中獲派原則的使用者數目。 此資訊顯示由原則管理的使用者數目，以及使用工作內容中任何原則未設為目標之應用程式的使用者數目。 您可以考慮將這些使用者新增至原則。
 
--   **由原則管理**：已使用應用程式並在工作內容中獲派原則的使用者數目。
-
--   **沒有原則**：使用工作內容中的任何原則未設為目標之應用程式的使用者數目。 您可以考慮將這些使用者新增至原則。
     > [!NOTE]
     > 如果一個平台有多個原則，當至少指派一個原則給使用者時，使用者會視為由原則管理。
-
-- **已標幟的使用者**：遇到問題的使用者數目。 目前只有使用已進行 JB 破解之裝置的使用者，會被報告為**已標記的使用者**。
-
 
 ## <a name="detailed-view"></a>詳細檢視
 選擇 [使用者狀態] 磚 (依裝置作業系統平台而定) 和 [已標記的使用者] 磚，即可進入摘要的 [詳細檢視]。
@@ -79,7 +75,7 @@ ms.locfileid: "53816835"
 
 若要查看使用者的報告，請遵循下列步驟︰
 
-1.  若要選取使用者，請選擇 [摘要] 磚。
+1.  若要選取使用者，請選擇 [使用者狀態] 摘要磚。
 
     ![[Intune 行動應用程式管理] 的 [摘要] 磚螢幕擷取畫面](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ ms.locfileid: "53816835"
 
 ## <a name="reporting-view"></a>報告檢視
 
-您可以在 [詳細檢視] 中找到相同的報表，以及協助您處理 MAM 原則合規性狀態的其他報表︰
+您可以從 [應用程式防護狀態] 刀鋒視窗找到相同的報表。
 
-![反白顯示 [設定] 窗格中可用之 2 份報表的螢幕擷取畫面](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您可以藉由選取 [用戶端應用程式] > [應用程式防護狀態]，然後選擇 [應用程式防護報表：iOS、Android] 來使用這些欄位。 此外，這些參數將協助您設定適用於裝置製造商 (Android) 的 [允許] 清單、適用於裝置型號 (Android 和 iOS) 的 [允許] 清單，以及最低的 Android 安全性修補程式版本設定。 
 
--   **應用程式防護使用者報表：** 列出的資訊與您在上述 [詳細檢視] 區段下找到的**使用者狀態**報表資訊相同。
+還提供其他報表以協助您處理 MAM 原則合規性狀態。 若要檢視這些報表，請選取 [用戶端應用程式] > [應用程式防護狀態] > [報表]。 
 
--   **應用程式防護應用程式報表：** 提供兩種不同的應用程式防護狀態，供系統管理員在產生報表之前選取。 狀態可以受保護或不受保護。
+[報表] 刀鋒視窗提供數個以使用者和應用程式為基礎的報表，包括：
+
+
+-   **使用者報表**：此報表列出的資訊與您在上述 [詳細檢視] 區段下 [使用者狀態] 報表中所找到資訊相同。
+
+-   **應用程式報表**：此報表提供兩種不同的應用程式防護狀態，供系統管理員在產生報表之前選取。 狀態可以受保護或不受保護。
 
     -   受控 MAM 活動的使用者狀態 (受保護)：這份報表會依每個使用者列出每個受控 MAM 應用程式的活動。
 
         -   它會顯示每個使用者的所有 MAM 原則目標應用程式，並將每個應用程式的狀態細分為使用 MAM 原則簽入，或由 MAM 原則鎖定但永遠不會簽入應用程式。
-<br></br>
+<br><br>
     -   非受控 MAM 活動的使用者狀態 (不受保護)：這份報表會依每個使用者列出目前非受控之啟用 MAM 的應用程式活動。 可能的發生原因如下︰
 
         -   使用者或目前不是由 MAM 原則鎖定的應用程式正在使用這些應用程式。

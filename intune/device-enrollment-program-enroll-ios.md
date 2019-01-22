@@ -1,5 +1,5 @@
 ---
-title: 註冊 iOS 裝置 - 裝置註冊計劃
+title: 註冊 iOS 裝置 - 裝置註冊方案
 titleSuffix: Microsoft Intune
 description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 iOS 裝置。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642841"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203411"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -192,7 +192,15 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
     | <strong>縮放</strong> | 可讓使用者選擇在設定裝置時縮放顯示畫面。 |
     | <strong>Siri</strong> | 可讓使用者選擇設定 Siri。 |
     | <strong>診斷資料</strong> | 向使用者顯示 [診斷] 畫面。 此畫面可讓使用者選擇將診斷資料傳送給 Apple。 |
-
+    | <strong>顯示色調</strong> | 可讓使用者選擇開啟 [顯示色調]。 |
+    | <strong>隱私權</strong> | 向使用者顯示 [隱私權] 畫面。 |
+    | <strong>Android 移轉</strong> | 可讓使用者選擇從 Android 裝置移轉日期。 |
+    | <strong>iMessage 和 FaceTime</strong> | 可讓使用者選擇設定 iMessage 和 FaceTime。 |
+    | <strong>入門訓練</strong> | 顯示用於使用者教育的入門訓練資訊畫面，例如封面頁及多工和控制中心。 |
+    | <strong>Watch 移轉</strong> | 可讓使用者選擇從監看式裝置移轉資料。 |
+    | <strong>螢幕使用時間</strong> | 顯示 [螢幕使用時間] 畫面。 |
+    | <strong>軟體更新</strong> | 顯示強制軟體更新畫面。 |
+    | <strong>SIM 卡設定</strong> | 可讓使用者選擇新增行動電話通訊方案。 |
 
 14. 選擇 [確定]。
 

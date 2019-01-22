@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d290fadf92ee112a1f663c6894861b393b81f74d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190314"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297497"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 資料倉儲集合
 
@@ -312,6 +312,92 @@ ms.locfileid: "52190314"
 | 9                | WindowsCoManagement                | 由 AutoPilot 或群組原則所觸發的 Windows 10 共同管理。                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | 使用裝置驗證的 Windows 10 Azure AD Join。                                            |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+**EnrollmentActivity** 實體表示裝置註冊的活動。
+
+| 屬性                      | 說明                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | 記錄此註冊活動的日期索引鍵。               |
+| deviceEnrollmentTypeKey       | 註冊類型的索引鍵。                                        |
+| deviceTypeKey                 | 裝置類型的索引鍵。                                                |
+| enrollmentEventStatusKey      | 指出註冊成功或失敗的狀態索引鍵。    |
+| enrollmentFailureCategoryKey  | 註冊失敗類別的索引鍵 (如果註冊失敗的話)。        |
+| enrollmentFailureReasonKey    | 註冊失敗原因的索引鍵 (如果註冊失敗的話)。          |
+| osVersion                     | 裝置的作業系統版本。                               |
+| count                         | 符合上述分類的註冊活動總計數。  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+**EnrollmentEventStatus** 實體表示裝置註冊的結果。
+
+| 屬性                   | 說明                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | 資料倉儲中註冊狀態的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentEventStatusName  | 註冊狀態的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentEventStatusName  | 說明                            |
+|----------------------------|----------------------------------------|
+| 成功                    | 裝置註冊成功         |
+| Failed                     | 裝置註冊失敗             |
+| 無法使用              | 註冊狀態為無法使用。  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+**EnrollmentFailureCategory** 實體表示裝置註冊失敗的原因。 
+
+| 屬性                       | 說明                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | 資料倉儲中註冊失敗類別的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentFailureCategoryName  | 註冊失敗類別的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentFailureCategoryName   | 說明                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 不適用                  | 註冊失敗類別為不適用。                                                            |
+| 無法使用                   | 註冊失敗類別為無法使用。                                                             |
+| Unknown                         | 未知的錯誤。                                                                                                |
+| 驗證                  | 驗證失敗。                                                                                        |
+| 授權                   | 呼叫已驗證，但未授權註冊。                                                         |
+| AccountValidation               | 無法驗證用於註冊的帳戶 (帳戶已封鎖、未啟用註冊)。                      |
+| UserValidation                  | 無法驗證使用者 (使用者不存在、遺失授權)。                                           |
+| DeviceNotSupported              | 裝置不受行動裝置管理的支援。                                                         |
+| InMaintenance                   | 帳戶維護中。                                                                                    |
+| BadRequest                      | 用戶端傳送了服務不了解/支援的要求。                                        |
+| FeatureNotSupported             | 此註冊所使用的功能不支援此帳戶。                                        |
+| EnrollmentRestrictionsEnforced  | 系統管理員所設定的註冊限制封鎖了此註冊。                                          |
+| ClientDisconnected              | 用戶端逾時，或 enduser 已中止註冊。                                                        |
+| UserAbandonment                 | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+**EnrollmentFailureReason** 實體表示在指定的失敗類別中裝置註冊失敗的更詳細原因。  
+
+| 屬性                     | 說明                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | 資料倉儲中註冊失敗原因的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentFailureReasonName  | 註冊失敗原因的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentFailureReasonName      | 說明                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 不適用                   | 註冊失敗原因為不適用。                                                                                                                                                       |
+| 無法使用                    | 註冊失敗原因為無法使用。                                                                                                                                                        |
+| Unknown                          | 未知的錯誤。                                                                                                                                                                                         |
+| UserNotLicensed                  | Intune 中找不到使用者，或使用者沒有有效的授權。                                                                                                                                     |
+| UserUnknown                      | Intune 無法識別使用者。                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | 只有一位使用者可註冊裝置。 此裝置先前已由另一位使用者註冊。                                                                                                                |
+| EnrollmentOnboardingIssue        | 尚未設定 Intune 行動裝置管理 (MDM) 授權單位。                                                                                                                                 |
+| AppleChallengeIssue              | iOS 管理設定檔安裝已延遲或失敗。                                                                                                                                         |
+| AppleOnboardingIssue             | 需要 Apple MDM Push Certificate 才能在 Intune 中註冊。                                                                                                                                       |
+| DeviceCap                        | 使用者嘗試註冊超過允許上限的裝置。                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune 註冊服務無法授權此要求。                                                                                                                                            |
+| UnsupportedDeviceType            | 此裝置不符合 Intune 註冊的最低需求。                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | 此裝置因為已設定的註冊限制規則而無法註冊。                                                                                                                          |
+| BulkDeviceNotPreregistered       | 找不到此裝置的國際行動設備識別碼 (IMEI) 或序號。  若無此識別碼，即會將裝置識別為目前封鎖的個人擁有裝置。  |
+| FeatureNotSupported              | 使用者嘗試存取尚未對所有客戶發行，或與您的 Intune 設定不相容的功能。                                                            |
+| UserAbandonment                  | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。                                                                                           |
+| APNSCertificateExpired           | 無法使用過期的 Apple MDM Push Certificate 來管理 Apple 裝置。                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 **intuneManagementExtension** 會列出每部 Windows 10 裝置每日的 **intuneManagementExtension** 健康情況。 保留最近 60 天的資料。
@@ -419,7 +505,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 擁有者類型的唯一識別碼。                                                                                                                                               |                            |
 | ownerTypeKey  | 資料倉儲中擁有者類型的唯一識別碼 - Surrogate 索引鍵。                                                                                                       |                            |
-| ownerTypeName | 表示裝置的擁有者類型：Company - 裝置為企業所有。  Personal - 裝置為個人所有 (BYOD)。   Unknown - 無此裝置的相關資訊。 | Company   Personal Unknown |
+| ownerTypeName | 表示裝置的擁有者類型：公司 - 裝置為企業所有。  Personal - 裝置為個人所有 (BYOD)。   Unknown - 無此裝置的相關資訊。 | Company   Personal Unknown |
 
 ## <a name="policies"></a>原則
 **Policy** 實體列出裝置組態設定檔、應用程式組態設定檔和合規性原則。 您可以將具有行動裝置管理 (MDM) 的原則指派給企業中的群組。
@@ -560,7 +646,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 | 00000000-0000-0000-0000-000000000000 | 尚未提供 | 預設值，無 VPP。   |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple               | Apple 的 VPP 方案。     |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需 Intune 資料倉儲的詳細資訊，請參閱[資料倉儲資料模型](https://docs.microsoft.com/intune/reports-ref-data-model)。
 

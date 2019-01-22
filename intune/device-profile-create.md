@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303850"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203207"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>建立設定檔
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
 
-2. 在 **Microsoft Intune** 中，選取 [裝置設定]，然後選取 [設定檔]。 然後選取 [建立設定檔]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
+
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 
 3. 輸入下列內容：
 
    - **名稱**：為新的設定檔輸入描述性名稱。
-   - **描述**：輸入設定檔的描述。 (這是選用項目，但建議使用。)
+   - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
    - **平台**：選取平台類型：  
 
        - **Android**
@@ -46,7 +47,7 @@ ms.locfileid: "52303850"
        - **Windows 10 及更新版本**
 
    - **設定檔類型**：選取您想要建立的類型。 清單取決於您選擇的平台。
-   - **設定**：下列主題描述每個設定檔類型的設定︰
+   - **設定**：下列文章會描述每個設定檔類型的設定︰
 
        -  [裝置功能](device-features-configure.md)
        -  [裝置限制](device-restrictions-configure.md)
@@ -69,5 +70,5 @@ ms.locfileid: "52303850"
 
 會建立設定檔，而且會出現在清單中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

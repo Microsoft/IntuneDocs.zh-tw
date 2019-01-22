@@ -16,18 +16,15 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642552"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149656"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您將可以透過使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory 聯結裝置。 若要執行此作業，請遵循以下步驟。
-
-> [!NOTE]
-> 此功能將在未來幾天內在整個使用者群中推出。 因此，在推出至您的帳戶之前，您可能無法執行這些步驟。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -204,10 +201,10 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
    - **描述**：輸入設定檔的描述。
    - **平台**：選擇 [Windows 10 及更新版本]。
    - **設定檔類型**：選擇 [網域加入 (預覽)]。
-3. 選擇 [設定]，並提供 [電腦名稱前置詞]、[網域名稱] 以及 DN 格式的 [組織單位] (選擇性)。 
+3. 選擇 [設定]，並提供 [電腦名稱前置詞]、[網域名稱] 以及 (選擇性) [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的 [組織單位]。 
 4. 選擇 [確定] > [建立]。 會建立設定檔，而且會出現在清單中。
 5. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在您設定 Windows Autopilot 之後，請了解如何管理這些裝置。 如需詳細資訊，請參閱[什麼是 Microsoft Intune 裝置管理？](device-management.md)

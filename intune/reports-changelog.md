@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642756"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297225"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 保持 Intune 資料倉儲更新的最新狀態。
+
+## <a name="1812"></a>1812 
+_發行日期：2018 年 12 月_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Enrollment Activities 集合已發行為 v1.0 
+
+v1.0 現在提供 Enrollment Activities 集合。 您可以使用此集合來了解環境中的註冊失敗數量和趨勢。 如需詳細資訊，請參閱 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities)、[enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses)、[enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) 和 [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons)。
 
 ## <a name="1808"></a>1808
 _發行日期：2018 年 8 月_
@@ -36,9 +43,9 @@ _發行日期：2018 年 8 月_
 
 您現在可以藉由設定查詢參數 `api-version=v1.0` 來使用 Intune 資料倉儲 v1.0 版。 資料倉儲中對集合所進行的更新為附加性質，因此不會破壞現有的案例。
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Enrollment Failure 集合已發行為搶鮮版 (Beta)
+### <a name="enrollment-activities-collection-released-to-beta"></a>Enrollment Activities 集合已發行為搶鮮版 (Beta)
 
-新的 `Enrollment Failure` 集合已發行為搶鮮版 (Beta)。 您可以使用此集合檢視最常見的失敗，來了解您註冊目前進行的狀況。 
+新的 `Enrollment Activities` 集合已發行為搶鮮版 (Beta)。 您可以使用此集合檢視最常見的失敗，來了解您註冊目前進行的狀況。 
 
 
 ## <a name="1805"></a>1805
@@ -93,6 +100,6 @@ _發行日期：2017 年 10 月_
  - 已新增 [**UserDeviceAssociation**](reports-ref-user-device.md) 實體。 **UserDeviceAssociation** 包含您組織中的使用者裝置關聯。 您現在可以使用使用者裝置關聯資訊 (關聯使用者和裝置實體集合) 來建立報表和資料視覺效果。  
  - 已新增實體 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)。 **IntuneManagementExtension** 包含的行動裝置實體，會追蹤版本和安裝狀態等資訊。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
  - 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
  - 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。

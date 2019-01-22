@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210800"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>您的使用者將如何體驗 Microsoft Intune 中受控 Office 365 應用程式的基本保護
 
@@ -89,33 +89,32 @@ ms.locfileid: "54067460"
 
 ## <a name="what-policies-does-this-wizard-set"></a>此精靈設定哪些原則？
 
-|     |       | |
-|----|--------|-|
-|**名稱**|管理 Office 365 應用程式| |
-| **描述**|由 [管理 Office 365 應用程式精靈] 所建立| |
-| |  | |
-| **設定名稱** |**iOS 原則值** | **Android 原則值** |
-|禁止 iTunes 與 iCloud 備份| 否 | N/A |
-|禁止 Android 備份 |N/A | 否|
-|允許應用程式將資料傳送到其他應用程式 | 所有應用程式 | 所有應用程式|
-|允許應用程式接收來自其他應用程式的資料| 所有應用程式 | 所有應用程式|
-|禁止執行 [另存新檔] | 否 | 否|
-|限制利用其他應用程式剪下、複製及貼上 | 任何應用程式 | 任何應用程式 |
-|限制要在公司管理的瀏覽器中顯示網頁內容 | 否| 否|
-|加密應用程式資料 | 當裝置鎖住時 | 是|
-|停用聯絡人同步 | 否| 否|
-|停用列印 | 否 | 否|
-|需要 PIN 碼才可存取 | 否 | 是|
-|PIN 重設之前的嘗試次數 | N/A |5|
-|允許簡單的 PIN | N/A |是|
-|PIN 長度 | N/A | 4|
-|允許指紋而非 PIN | N/A | 是 |
-|需要公司認證才能存取 | 否 | 否|
-|封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行 | 否 | 否|
-|多少分鐘後重新檢查存取需求 (分鐘) - 逾時 | 30 | 30|
-|多少分鐘後重新檢查存取需求 (分鐘) - 離線寬限期 | 720 |720|
-|離線間隔幾天後抹除 App 資料 | 90 | 90|
-|封鎖螢幕擷取 (僅限 Android 裝置) | N/A | 否 |
+**名稱**：管理 Office 365 應用程式<br>
+**描述**：由 [管理 Office 365 應用程式精靈] 所建立
+
+| 設定名稱 | iOS 原則值 | Android 原則值 |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| 禁止 iTunes 與 iCloud 備份 | 否 | N/A |
+| 禁止 Android 備份 | N/A | 否 |
+| 允許應用程式將資料傳送到其他應用程式 | 所有應用程式 | 所有應用程式 |
+| 允許應用程式接收來自其他應用程式的資料 | 所有應用程式 | 所有應用程式 |
+| 禁止執行 [另存新檔] | 否 | 否 |
+| 限制利用其他應用程式剪下、複製及貼上 | 任何應用程式 | 任何應用程式 |
+| 限制要在公司管理的瀏覽器中顯示網頁內容 | 否 | 否 |
+| 加密應用程式資料 | 當裝置鎖住時 | 是 |
+| 停用聯絡人同步 | 否 | 否 |
+| 停用列印 | 否 | 否 |
+| 需要 PIN 碼才可存取 | 否 | 是 |
+| PIN 重設之前的嘗試次數 | N/A | 5 |
+| 允許簡單的 PIN | N/A | 是 |
+| PIN 長度 | N/A | 4 |
+| 允許指紋而非 PIN | N/A | 是 |
+| 需要公司認證才能存取 | 否 | 否 |
+| 封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行 | 否 | 否 |
+| 多少分鐘後重新檢查存取需求 (分鐘) - 逾時 | 30 | 30 |
+| 多少分鐘後重新檢查存取需求 (分鐘) - 離線寬限期 | 720 | 720 |
+| 離線間隔幾天後抹除 App 資料 | 90 | 90 |
+| 封鎖螢幕擷取 (僅限 Android 裝置) | N/A | 否 |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>為什麼只有 Android 裝置才需要設定應用程式 PIN 碼原則？
 iOS 與 Android 的加密運作方式不相同。

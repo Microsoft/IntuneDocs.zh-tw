@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186642"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149622"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 電腦的使用者裝置連結
 
@@ -43,13 +43,13 @@ ms.locfileid: "52186642"
 
    - 若要讓電腦與目前的使用者保持連結 (如有)，請選擇 [取消]。
 
-   - 若要移除與目前使用者的連結 (如果有的話)，請選擇 [移除連結]<strong>**&gt; [確定]**</strong>。
+   - 若要移除與目前使用者的連結 (如果有的話)，請選擇 [移除連結]&gt;[確定]。
 
    - 若要將電腦連結到新的使用者，請在 [所有使用者] 清單中選取使用者。 請確認使用者資料是否正確，然後選擇 [確定]。
 
 > [!TIP]
 > 如果您想要限制終端使用者將自己連結到電腦的能力，請啟用 [Microsoft Intune 代理程式設定] 原則中的 [限制使用者將自己連結到電腦的能力] 選項。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

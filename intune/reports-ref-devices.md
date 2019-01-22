@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738064"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297514"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -46,7 +46,7 @@ ms.locfileid: "53738064"
 | DeviceTypeKey |資料倉儲中裝置類型的唯一識別碼 - surrogate 索引鍵 |
 | DeviceTypeName |裝置類型 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | deviceTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ ms.locfileid: "53738064"
 | clientRegisterationStateKey |資料倉儲中註冊狀態的唯一識別碼 - surrogate 索引鍵 |
 | clientRegisterationStateName |註冊狀態 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | ClientRegisterationStateID  | 名稱 | 說明 |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ ms.locfileid: "53738064"
 | 7 |NotRegisteredPendingEnrollment |未註冊、擱置註冊 |
 | 8 |Unknown |未知的狀態 |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+**EnrollmentActivity** 實體表示裝置註冊的活動。
+
+| 屬性                      | 說明                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | 記錄此註冊活動的日期索引鍵。               |
+| deviceEnrollmentTypeKey       | 註冊類型的索引鍵。                                        |
+| deviceTypeKey                 | 裝置類型的索引鍵。                                                |
+| enrollmentEventStatusKey      | 指出註冊成功或失敗的狀態索引鍵。    |
+| enrollmentFailureCategoryKey  | 註冊失敗類別的索引鍵 (如果註冊失敗的話)。        |
+| enrollmentFailureReasonKey    | 註冊失敗原因的索引鍵 (如果註冊失敗的話)。          |
+| osVersion                     | 裝置的作業系統版本。                               |
+| count                         | 符合上述分類的註冊活動總計數。  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+**EnrollmentEventStatus** 實體表示裝置註冊的結果。
+
+| 屬性                   | 說明                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | 資料倉儲中註冊狀態的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentEventStatusName  | 註冊狀態的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentEventStatusName  | 說明                            |
+|----------------------------|----------------------------------------|
+| 成功                    | 裝置註冊成功         |
+| Failed                     | 裝置註冊失敗             |
+| 無法使用              | 註冊狀態為無法使用。  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+**EnrollmentFailureCategory** 實體表示裝置註冊失敗的原因。 
+
+| 屬性                       | 說明                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | 資料倉儲中註冊失敗類別的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentFailureCategoryName  | 註冊失敗類別的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentFailureCategoryName   | 說明                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 不適用                  | 註冊失敗類別不適用。                                                            |
+| 無法使用                   | 註冊失敗類別無法使用。                                                             |
+| Unknown                         | 未知的錯誤。                                                                                                |
+| 驗證                  | 驗證失敗。                                                                                        |
+| 授權                   | 呼叫已驗證，但未授權註冊。                                                         |
+| AccountValidation               | 無法驗證用於註冊的帳戶 (帳戶已封鎖、未啟用註冊)。                      |
+| UserValidation                  | 無法驗證使用者 (使用者不存在、遺失授權)。                                           |
+| DeviceNotSupported              | 裝置不受行動裝置管理的支援。                                                         |
+| InMaintenance                   | 帳戶維護中。                                                                                    |
+| BadRequest                      | 用戶端傳送了服務不了解/支援的要求。                                        |
+| FeatureNotSupported             | 此註冊所使用的功能不支援此帳戶。                                        |
+| EnrollmentRestrictionsEnforced  | 系統管理員所設定的註冊限制封鎖了此註冊。                                          |
+| ClientDisconnected              | 用戶端逾時，或 enduser 已中止註冊。                                                        |
+| UserAbandonment                 | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+**EnrollmentFailureReason** 實體表示在所指定失敗類別中裝置註冊失敗的更詳細原因。  
+
+| 屬性                     | 說明                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | 資料倉儲中註冊失敗原因的唯一識別碼 (surrogate 索引鍵)  |
+| enrollmentFailureReasonName  | 註冊失敗原因的名稱。 請參閱下列範例。                            |
+
+### <a name="example"></a>範例
+
+| enrollmentFailureReasonName      | 說明                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 不適用                   | 註冊失敗原因不適用。                                                                                                                                                       |
+| 無法使用                    | 註冊失敗原因無法使用。                                                                                                                                                        |
+| Unknown                          | 未知的錯誤。                                                                                                                                                                                         |
+| UserNotLicensed                  | Intune 中找不到使用者，或使用者沒有有效的授權。                                                                                                                                     |
+| UserUnknown                      | Intune 無法識別使用者。                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | 只有一位使用者可註冊裝置。 此裝置先前已由另一位使用者註冊。                                                                                                                |
+| EnrollmentOnboardingIssue        | 尚未設定 Intune 行動裝置管理 (MDM) 授權單位。                                                                                                                                 |
+| AppleChallengeIssue              | iOS 管理設定檔安裝已延遲或失敗。                                                                                                                                         |
+| AppleOnboardingIssue             | 需要 Apple MDM Push Certificate 才能在 Intune 中註冊。                                                                                                                                       |
+| DeviceCap                        | 使用者嘗試註冊超過允許上限的裝置。                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune 註冊服務無法授權此要求。                                                                                                                                            |
+| UnsupportedDeviceType            | 此裝置不符合 Intune 註冊的最低需求。                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | 此裝置因為已設定的註冊限制規則而無法註冊。                                                                                                                          |
+| BulkDeviceNotPreregistered       | 找不到此裝置的國際行動設備識別碼 (IMEI) 或序號。  若無此識別碼，即會將裝置識別為目前封鎖的個人擁有裝置。  |
+| FeatureNotSupported              | 使用者嘗試存取尚未對所有客戶發行，或與您的 Intune 設定不相容的功能。                                                            |
+| UserAbandonment                  | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。                                                                                           |
+| APNSCertificateExpired           | 無法使用過期的 Apple MDM Push Certificate 來管理 Apple 裝置。                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 **EnrollmentTypes** 實體會指出裝置的註冊方式。 註冊類型會擷取註冊的方法。 範例會列出不同的註冊類型及其代表的意義。
@@ -105,7 +192,7 @@ ms.locfileid: "53738064"
 | managementStateKey |資料倉儲中管理狀態的唯一識別碼 - surrogate 索引鍵 |
 | managementStateName |指出套用到此裝置的遠端動作狀態。 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | enrollmentTypeID  | 名稱 | 說明 |
 |---------|------------|--------|
@@ -140,7 +227,7 @@ ms.locfileid: "53738064"
 | ComplianceStatus |裝置的合規性狀態，必須具有來自下表的其中一個值 | 
 
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | MdmStatusID  | ComplianceStatus | 說明 |
 |---------|------------|--------|
@@ -161,7 +248,7 @@ ms.locfileid: "53738064"
 | managementStateKey | 資料倉儲中管理狀態的唯一識別碼 - surrogate 索引鍵 |
 | managementStateName | 指出套用到此裝置的遠端動作狀態。 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | managementStateID  | 名稱 | 說明 |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ ms.locfileid: "53738064"
 | WorkPlaceJoinStateKey | 資料倉儲中工作場所加入狀態的唯一識別碼 - surrogate 索引鍵 |
 | WorkPlaceJoinStateName | 工作場所加入狀態 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | workPlaceJoinStateID  | 名稱 | 說明 |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ ms.locfileid: "53738064"
 | ManagementAgentTypeKey | 資料倉儲中管理代理程式類型的唯一識別碼 - Surrogate 索引鍵。 |
 | ManagementAgentTypeName |指出使用何種代理程式管理裝置。 |
 
-## <a name="example"></a>範例
+### <a name="example"></a>範例
 
 | ManagementAgentTypeID  | 名稱 | 說明 |
 |---------|------------|--------|

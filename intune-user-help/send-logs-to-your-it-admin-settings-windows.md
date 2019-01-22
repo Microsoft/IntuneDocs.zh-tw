@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146734"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203309"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>針對 Windows 10 將記錄從設定應用程式傳送給公司支援人員
 
-如果您在使用公司所管理的 Windows 10 裝置時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+使用 [設定] 應用程式為 Windows 10 公司入口網站進行疑難排解。 如果您在 Windows 10 裝置上使用應用程式時遇到問題，可以傳送電子郵件給支援小組來尋求協助。 發生在 [公司入口網站] 應用程式中的事件和錯誤會儲存在您裝置上名為「診斷記錄」的特殊文件中。 其中可能包含關於錯誤的其他見解，匯出時會對支援小組很有用。
 
-1. 開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
+1. 若要開啟 [設定] 應用程式，請移至 [開始] 功能表 > [設定]。 您也可以在搜尋列中搜尋「設定」。
 2. 移至 [帳戶] > [存取公司或學校資源]。
 3. 選取 [匯出您的管理記錄檔]。
 

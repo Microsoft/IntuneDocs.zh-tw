@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178368"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270566"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
 
@@ -38,7 +38,7 @@ ms.locfileid: "52178368"
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 
-請以[全域管理員或 Intune 服務管理員](users-add.md#types-of-administrators)身分登入 [Intune](https://aka.ms/intuneportal)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
+請以[全域管理員或 Intune 服務管理員](users-add.md#types-of-administrators)身分登入 [Intune 入口網站](https://aka.ms/intuneportal)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
 
 ## <a name="create-a-group"></a>建立群組
 
@@ -56,7 +56,7 @@ ms.locfileid: "52178368"
 
 一旦您已成功建立群組，它會出現在 [所有群組] 清單中。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已使用 Intune 根據現有的使用者建立群組。 如需將群組新增至 Intune 的詳細資訊，請參閱[新增群組來組織使用者和裝置](groups-add.md)。
 

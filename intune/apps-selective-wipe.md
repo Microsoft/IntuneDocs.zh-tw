@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210698"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何只抹除 Intune 管理之應用程式中的公司資料
 
@@ -30,7 +30,7 @@ ms.locfileid: "53642569"
 當裝置遺失或遭竊，或者如果員工離職，您會想要確定公司應用程式資料已從裝置移除。 不過，您可能不想要移除裝置上的個人資料，特別是當該裝置為員工擁有的裝置時。
 
 >[!NOTE]
-> iOS 和 Android 平台是目前支援的兩個平台，可從 Intune 管理的應用程式抹除公司資料。
+> iOS 和 Android 平台是目前支援的兩個平台，可從 Intune 管理的應用程式抹除公司資料。 Intune 受控應用程式是包含 Intune APP SDK 並具有您組織所授權使用者帳戶的應用程式。 您不需要部署應用程式保護原則，即可啟用應用程式選擇性抹除。
 
 若要選擇性地移除公司應用程式資料，請使用本主題中的步驟建立抹除要求。 完成抹除要求之後，當裝置下一次執行應用程式時，即會從應用程式中移除公司資料。 不符合應用程式保護原則 (APP) 存取設定的條件時，除了建立抹除要求之外，您還可以設定選擇性抹除組識資料作為新的動作。 這項功能可協助您依據預先設定的準則，自動保護並移除應用程式中的機密組織資料。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53642569"
 
 3.  當收到確認刪除的提示時，請選擇 [是] 或 [否]，然後按一下 [確定]。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [什麼是應用程式保護原則](app-protection-policy.md)
 
 [什麼是應用程式管理](app-management.md)

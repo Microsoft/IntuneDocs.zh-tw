@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817155"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122582"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -39,15 +39,14 @@ Intune 與 Azure Active Directory 會共同運作，以確保只有受管理且�
 Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合規性狀態會回報給 Azure Active Directory，在使用者嘗試存取公司資源時，使用它來強制執行 Azure Active Directory 中所建立的條件式存取原則。
 
 適用於 Exchange Online 和其他 Office 365 產品的裝置型條件式存取原則均透過 [Azure 入口網站](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)來設定。
-
--   深入了解 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。
+-   深入了解[使用 Azure Active Directory 的條件式存取來要求受控裝置](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices)。
 
 -   深入了解 [Intune 裝置相容性](device-compliance.md)。
 
--   深入了解[透過 Intune 使用條件式存取來保護電子郵件、Office 365 和其他服務](app-based-conditional-access-intune.md)。
+-   深入了解 [Azure Active Directory 條件式存取支援的瀏覽器](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers)。
 
 > [!NOTE]
-> 在 Android 裝置上，當您針對 Sharepoint Online 啟用以裝置為準的存取時，使用者必須啟用註冊裝置上的 [啟用瀏覽器存取] 選項，如下所示：
+> 在 Android 裝置上，當您針對 Sharepoint Online 啟用以裝置為基礎的存取，或是對 Exchange Online 啟用以瀏覽器為基礎的存取時，使用者必須啟用註冊裝置上的 [啟用瀏覽器存取] 選項，如下所示：
 > 1. 啟動公司入口網站應用程式。
 > 2. 透過三個點 (...) 或硬體功能表按鈕，移至 [設定] 頁面。
 > 3. 按下 **[啟用瀏覽器存取]** 按鈕。 
@@ -146,7 +145,9 @@ Intune 與 Mobile Threat Defense 整合在以裝置風險為依據的條件式�
 
 #### <a name="bring-your-own-device-byod"></a>攜帶您自己的裝置 (BYOD)
 
--   **Workplace Join 和 Intune 管理：** 使用者可以在這裡加入其個人裝置來存取公司資源和服務。 您可以使用 Workplace Join，並向 Intune 註冊裝置，以接收裝置層級原則，這也是評估條件式存取準則的另一個選項。
+-   **Workplace Join 和 Intune 管理：** 使用者可以在這裡加入其個人裝置來存取公司資源和服務。 您可以使用 Workplace Join，並向 Intune MDM 註冊裝置，以接收裝置層級原則，這也是評估條件式存取準則的另一個選項。
+
+深入了解 [Azure Active Directory 中的裝置管理](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)。
 
 ## <a name="app-based-conditional-access"></a>以應用程式為基礎的條件式存取
 

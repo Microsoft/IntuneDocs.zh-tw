@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210817"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>將 Android 企業營運應用程式新增至 Microsoft Intune
 
@@ -31,6 +31,9 @@ ms.locfileid: "53642773"
 
 > [!Note]
 > 如需受控 Google Play 商店中 LOB 應用程式的詳細資訊，請參閱[從受控 Google Play 商店中使用企業營運 (LOB) 應用程式](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store)。 
+
+> [!Note]
+> 針對 Android for Work 裝置，請遵循[這篇文章](https://docs.microsoft.com/intune/apps-add-android-for-work)。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 
@@ -58,7 +61,7 @@ ms.locfileid: "53642773"
     - **最基本的作業系統**：從清單中，選擇能夠安裝應用程式的最基本作業系統版本。 若將應用程式指派給安裝舊版作業系統的裝置，就不會進行安裝。
     - **類別**：選取一或多個內建的應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
-    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
@@ -80,7 +83,7 @@ ms.locfileid: "53642773"
 > [!Note]
 > 若要讓 Intune 服務成功地將新的 APK 檔案部署到裝置，您必須對 APK 套件中 AndroidManifest.xml 檔案內的 `android:versionCode` 字串進行遞增處理。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 您所建立的應用程式會出現在應用程式清單中。 您現在可以將它指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 
