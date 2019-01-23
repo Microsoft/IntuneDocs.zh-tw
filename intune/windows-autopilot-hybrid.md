@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149656"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380477"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您將可以透過使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory 聯結裝置。 若要執行此作業，請遵循以下步驟。
@@ -116,6 +116,9 @@ ms.locfileid: "54149656"
 6. 選擇 [登入]。
 7. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。
 8. 前往 [裝置註冊] > [Windows 註冊] > [適用於 Active Directory 的 Intune 連接器 (預覽)] 並確認連接狀態為 [使用中]。
+
+ > [!NOTE]
+ > 當您在連接器中**登入**之後，它可能需要數分鐘的時間才會顯示在 [Intune](https://aka.ms/intuneportal) 中。 請注意，只有當連接器能夠成功地與 Intune 服務通訊時，才會顯示連接器。
 
 ### <a name="configure-web-proxy-settings"></a>設定 Web Proxy 設定
 

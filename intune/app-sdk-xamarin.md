@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210766"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316894"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -113,12 +113,10 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
 
 1.  將 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 套件新增至您的專案。 如果您尚未包含 Intune APP SDK Xamarin 繫結，則會自動新增繫結。
 
-2.  在您於上述步驟 2.2 中建立之 `MAMApplication` 類別的 `OnMAMCreate` 函式中，新增對 `Xamarin.Forms.Forms.Init(Context, Bundle)` 的呼叫。 因為使用 Intune 管理時，應用程式可以在位於背景時啟動，所以需要這樣做。
+2.  在您於上述步驟 2.2 中建立之 `MAMApplication` 類別的 `OnMAMActivity` 函式中，新增對 `Xamarin.Forms.Forms.Init(Context, Bundle)` 的呼叫。 因為使用 Intune 管理時，應用程式可以在位於背景時啟動，所以需要這樣做。
 
 > [!NOTE]
 > 由於此作業會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性，因此您可能需要在第一次執行 Remapper 之後重新啟動 Visual Studio，IntelliSense 才能正確辨識變更。 
-
-您已完成將元件建置成應用程式的基本步驟。 現在您可以依照 Xamarin Android 範例應用程式中的步驟。 我們提供了兩個範例，一個用於 Xamarin.Forms，另一個適用於 Android。
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>需要 Intune 應用程式保護原則才能使用以 Xamarin 為基礎的 Android LOB 應用程式 (選擇性) 
 
@@ -144,8 +142,14 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
 這些指示是 .NET/Xamarin 應用程式的需求，這些應用程式希望在終端使用者裝置上使用 Intune 應用程式保護原則。
 
 1. 請遵循[Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) (適用於 Android 的代理驗證) 下 ADAL 文件中定義的所有步驟。
-> [!NOTE] 
-> .NET ADAL 將釋出的下一個版本 (3.17.4) 預期會包含使其運作所需的修正。
+
+## <a name="potential-compilation-errors"></a>潛在編譯錯誤
+這些是開發 Xamarin 型應用程式時的常見編譯錯誤。
+
+* [編譯器錯誤 CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239)：此錯誤通常是這種形式 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``。
+當重新對應程式修改 Xamarin 類別的繼承時，某些函式將被設定為 `sealed` 且會改為新增 MAM 變化以覆寫。 只要重新命名您的覆寫，如[這裡](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods)所述。 例如，應將 `MainActivity.OnCreate()` 重新命名為 `MainActivity.OnMAMCreate()`
+
+* [編譯器錯誤 CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507)：此錯誤通常是這種形式 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``。 當重新對應程式工具變更一些 Xamarin 類別的繼承時，一些成員函式將會變更為 `public`。 若您覆寫這些函式中的任何函式，您可能也必須將那些覆寫變更為 `public`。
 
 ## <a name="support"></a>支援
 如果組織是現有的 Intune 客戶，請與您的 Microsoft 支援代表合作，[在 Github 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上開啟支援票證並建立問題，我們將會儘快提供協助。 

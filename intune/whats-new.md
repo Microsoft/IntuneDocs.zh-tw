@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210902"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418205"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ ms.locfileid: "54210902"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>2019 年 1 月 14 日當週
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>公司擁有、完全受控的 Android 裝置支援預覽 <!-- 1574342  -->
+Intune 現在支援完全受控的 Android 裝置，此為公司擁有的「裝置擁有者」案例，其中的裝置會受到 IT 嚴格管理並隸屬於個別使用者。 這讓系統管理員能夠管理整個裝置、強制設定無法用於工作設定檔之原則控制項的延伸範圍，並限制使用者只能從受控的 Google Play 安裝應用程式。 如需詳細資訊，請參閱[設定 Android 完全受控裝置的 Intune 註冊](android-fully-managed-enroll.md)與[註冊您的專用裝置或完全受控裝置](android-dedicated-devices-fully-managed-enroll.md)。  請注意，此功能處於預覽狀態。 完全受控的 Android 使用者裝置目前不提供某些 Intune 功能，例如憑證、合規性和條件式存取。
 
 ## <a name="week-of-january-7-2019"></a>2019 年 1 月 7 日當週
 
@@ -115,7 +118,7 @@ Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前�
 [在鎖定畫面上顯示訊息的設定](shared-device-settings-ios.md)會列出這些設定。
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>新增至 iOS 裝置的新 App Store、文件檢視、遊戲裝置限制設定 <!-- 2827760-->
-在 [裝置設定] > [設定檔] > [建立設定檔] > [iOS] 平台 > [裝置限制] 設定檔類型 > [App Store、文件檢視、遊戲] 中，新增下列設定：[允許受控應用程式將連絡人寫入非受控連絡人帳戶 (僅限受監督)]、[允許非受控應用程式從受控連絡人帳戶讀取 (僅限受監督)]。若要查看這些設定，請前往 [iOS 裝置限制](device-restrictions-ios.md#app-store-doc-viewing-gaming)。
+在 [裝置設定] > [設定檔] > [建立設定檔] > [iOS] 平台 > [裝置限制] 設定檔類型 > [App Store、文件檢視、遊戲] 中，新增下列設定：[允許受控應用程式將連絡人寫入非受控連絡人帳戶]、[允許非受控應用程式從受控連絡人帳戶讀取]。若要查看這些設定，請前往 [iOS 裝置限制](device-restrictions-ios.md#app-store-doc-viewing-gaming)。
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>將通知、提示和 Keyguard 設定新增至 Android 企業裝置擁有者裝置 <!-- 3201839 3201843 -->
 以裝置擁有者身分執行時，此更新會包括 Android 企業裝置上的多個新功能。 若要使用這些功能，請前往 [裝置設定] > [設定檔] > [建立設定檔] > 在 [平台] 中選擇 [Android 企業] > 在 [設定檔類型] 中選擇 [僅限裝置擁有者] > [裝置限制]。
@@ -139,9 +142,6 @@ Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前�
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>更詳細的註冊限制失敗訊息 <!-- 3111564 -->
 不符合註冊限制時，會提供更詳細的錯誤訊息。 若要查看這些訊息，請前往 [Intune] > [疑難排解] > 然後檢查 [註冊失敗] 表格。 如需詳細資訊，請參閱[註冊失敗清單](help-desk-operators.md#configuration-policies-reference)。
 
-#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>在 iOS DEP 裝置上略過更多設定助理畫面 <!-- 2687509 -->
-除了您目前可以略過的畫面之外，當使用者註冊裝置時，您還可以將 iOS DEP 裝置設定為略過 [設定助理] 中的下列畫面：顯示色調、隱私權、Android 移轉、首頁按鈕、iMessage 和 FaceTime、上架、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
-若要選擇要略過的畫面，請前往 [裝置註冊] > [Apple 註冊] > [註冊方案權杖]> 選擇權杖 > [設定檔] > 選擇設定檔 > [屬性] > [設定助理自訂] > 針對任何您想要略過的畫面選擇 [隱藏] > [確定]。
 
 
 ### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
@@ -164,7 +164,7 @@ Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前�
 ### <a name="role-based-access-control"></a>以角色為基礎的存取控制
 
 #### <a name="scope-tags-for-apps----1081941---"></a>應用程式的範圍標籤 <!-- 1081941 -->
-您可以建立範圍標籤，限制對角色和應用程式的存取。 您可以將範圍標籤新增至應用程式，僅限具有角色並同時獲派該範圍標籤的人員才能存取應用程式。 如需詳細資訊，請參閱[使用範圍標籤篩選原則](scope-tags.md)。
+您可以建立範圍標籤，限制對角色和應用程式的存取。 您可以將範圍標籤新增至應用程式，僅限具有角色並同時獲派該範圍標籤的人員才能存取應用程式。 無法為使用 Apple 大量採購方案 (VPP) 購買的應用程式指派範圍標籤。  如需詳細資訊，請參閱[使用範圍標籤篩選原則](scope-tags.md)。
 
 
 
@@ -1252,6 +1252,54 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 
 ## <a name="notices"></a>通知
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Intune 中 macOS 10.14.2 即將發生的密碼強制變更 <!--1873216-->
+我們在七月的 MC145129 中分享了 Intune 打算整合 Apple 最近推出的「在下次驗證時變更密碼」設定 (針對執行 macOS 10.13 與更新版本的裝置)。 我們最近打算在二月針對 macOS 10.14.2 與更新版本推出此設定。 
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+若您擁有或即將擁有執行 macOS 10.14.2 與更新版本的裝置，這會對您造成影響。 既然 Apple 已推出「在下次驗證時變更密碼」設定，Intune 可以強制使用者在系統推播密碼原則時將其密碼更新為符合規範的密碼。 當我們整合這個新的 Apple 功能後，即使您 macOS 使用者的密碼已符合規範，仍會收到更新密碼的要求。 請注意，若密碼已符合規範且您沒有不得使用重複之密碼的需求，則終端使用者將能更新為其現有密碼。 當終端使用者嘗試驗證或登入其裝置時，他們只會看到要求更新其密碼的要求。 如果您在裝置標示為符合規範前都一直封鎖公司資源，則執行 macOS 10.14.2 之裝置上的使用者可能會被封鎖而無法存取公司資源，例如電子郵件或 SharePoint 網站，直到他們重設密碼為止。 在未來，設定和合規性密碼原則的所有更新，都會強制目標使用者更新密碼。 我們在實作此變更之前的客戶研究指出大部分的客戶都不會受此變更影響，因為終端使用者通常會在收到以密碼註冊或重設其密碼以符合規範的要求時更新其密碼
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+建議通知您的技術支援中心。 當此變更推出時，我們將會更新這個 [新功能] 頁面。如果您不想讓系統強制套用此 macOS 裝置密碼原則，建議您取消指派或刪除您現有的 macOS 原則。
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>提醒：頂級客戶的 Intune 支援體驗現在位於 Azure instead 中，而非 MPO 中 <!--2828727-->
+我們在九月於 MC147649 中分享我們會在十二月移除從 Microsoft 線上頂級支援 (MPO) 入口網站 (premier.microsoft.com) 建立 Intune 支援要求的功能。 現在，在些許的延遲之後，在一月底，系統會將您重新導向以僅在 Azure 上於 Intune 中建立支援要求。 
+
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+在一月底之後，為繼續加強頂級支援體驗，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您將會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專用 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 請注意，無法在 Azure 入口網站中檢視在 MPO 入口網站中建立的支援要求。 
+
+Azure 入口網站有新的支援體驗，就像我們最近在 MC171941 中所公告一樣。 您可以在 [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) 與「額外資訊」連結找到詳細資訊。
+
+若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM [已過時](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱[從混合式行動裝置管理移到 Azure 上的 Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) \(英文\)。
+
+請注意，只有全域管理員、Intune 服務管理員與服務支援管理員角色可以在 Azure 入口網站中建立支援票證。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+- 停止使用 MPO 並使用 Azure 上的 Intune 來建立及管理您的所有 Intune 支援要求。  
+- 通知您的技術服務人員並視需要更新文件。
+- 若您有使用者目前正於 MPO 中建立支援要求，但他們並沒有全域管理員或 Intune 服務管理員角色，請將 Azure Active Directory 中的服務支援管理員角色指派給他們，以便他們可以繼續在 Azure 入口網站中建立支援票證。
+
+#### <a name="additional-information"></a>其他資訊
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>規劃變更：iOS 版 Intune 公司入口網站應用程式的使用者體驗更新
+很高興宣布 Intune 很快就會發佈主要使用者體驗更新到 iOS 公司入口網站應用程式。 該更新包括重新設計的首頁視覺呈現，以及進階篩選和更快的應用程式與書籍存取速度。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+這個使用者體驗更新 (維持了目前的 iOS 公司入口網站功能) 包含：
+- 具有原生 iOS 外觀和感覺的首頁 
+- 內容清單篩選功能，以及搜尋功能，包括依內容類型 (應用程式或電子書) 篩選的功能，以及可用性 (必要裝置管理或不需註冊的可用性)
+- 搜尋電子書的功能
+- 應用程式與電子書搜尋記錄 若您已加入 Apple TestFlight 計畫，當發行前版本的 Intune 已更新 iOS 公司入口網站應用程式推出時，您將會收到通知。 若您未加入 Apple TestFlight 計畫，現在註冊不會太晚。 註冊可讓您在使用者可使用已更新的公司入口網站應用程式之前先行使用。 您也有機會直接提供意見反應給 Intune 小組。  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+您不需要採取任何動作，這些變更將會在即將推出的 iOS CP 應用程式版本中發行。 
+
+#### <a name="additional-information"></a>其他資訊
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>規劃變更：Exchange Online 至 Intune 連接器將不會在 Intune 中提供 <!-- 3105122 -->
 為了簡化 Exchange Online 和條件式存取的使用體驗，我們將會停用 Exchange Online 至 Intune「服務對服務」連接器。 此變更將會從 12 月服務更新開始，並在 2019 年 2 月服務更新完成。
 
@@ -1286,27 +1334,6 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 您無須採取任何動作，我們將為您移動原則指派。 如果您目前在 Intune 教育版主控台中指派原則，請繼續這麼做。
 
 如果您目前將原則指派給 Azure 上 Intune 中的 Azure AD 群組 (如上所述)，請開始改為將這些原則指派給 Intune 教育版主控台中的 [所有使用者] 和 [所有裝置] 群組。 當您看到 Azure AD 群組在主控台中重新命名為已淘汰時，請停止在 Azure AD 中指派原則。 如果您目前基於任何其他目的使用重新命名的群組，則應加以刪除。
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>規劃變更：為頂級客戶新增 Intune 支援體驗 
-2018 年 12 月 4 日更新：我們正在嘗試為您提供更好的流程，因此 MPO 中的支援要求建立將不會在 12 月 3 日停用，而是在較晚的日期停用。 我們會透過訊息中心讓您知道，並儘快更新這篇文章，以分享這項變更的時間表。
-
-身為 Microsoft 頂級客戶，您目前可以使用 Microsoft 線上頂級支援 (MPO) 入口網站 (premier.microsoft.com) 與 Azure (portal.azure.com) 上的 Intune 來建立 Intune 的支援要求。 從 2018 年 12 月 3 日開始，若要繼續加強頂級支援體驗，您將只能在 Azure 上的 Intune 中建立支援要求。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-在 12 月 3 日之後，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專屬 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 在 MPO 入口網站中建立的支援要求無法在 Azure 入口網站中檢視，因此您應該停止在 MPO 中建立支援要求。  
-
-若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM 已過時，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (從混合式行動裝置管理移至 Azure 上的 Intune)。
-
-請注意，只有具備全域管理員、Intune 服務管理員和服務支援管理員角色的使用者可以在 Azure 入口網站中建立支援票證。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-- 停止使用 MPO 並使用 Azure 上的 Intune 來建立及管理您的所有 Intune 支援要求。  
-- 通知您的技術服務人員並視需要更新文件。
-- 若您有使用者目前正於 MPO 中建立支援要求，但他們並沒有全域管理員或 Intune 服務管理員角色，請將 Azure Active Directory 中的服務支援管理員角色指派給他們，以便他們可以繼續在 Azure 入口網站中建立支援票證。
-- 按一下 [其他資訊] 以取得詳細資訊與實用連結。
-
-#### <a name="additional-information"></a>其他資訊
-如需詳細資訊，請參閱 [Microsoft Intune 支援小組部落格文章](https://aka.ms/IntuneSupport_MPO_to_Azure)。
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>採取動作：請在 Intune 中更新 Android 裝置限制或合規性原則的密碼設定

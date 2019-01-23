@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203598"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387021"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -87,7 +87,7 @@ ms.locfileid: "54203598"
 
 ### <a name="kiosk-settings"></a>Kiosk 設定
 
-您可以設定要執行一個應用程式或許多應用程式的裝置。 裝置處於 kiosk 模式時，只能使用您新增的應用程式。
+您可以設定要執行一個應用程式或許多應用程式的裝置。 裝置處於 kiosk 模式時，只能使用您新增的應用程式。 這些設定適用於 Android 專用裝置，而不適用於 Android 完全受控專用裝置。
 
 **Kiosk 模式**：選擇裝置將執行一個應用程式還是多個應用程式。
 
