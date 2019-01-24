@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184109"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325027"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的資料安全性與共用
 
@@ -63,7 +63,7 @@ Intune 也會使用 RBAC 和 JiT 安全性等技術來支援事件，以確保�
 - [Intune 傳送至 Google 的資料](data-intune-sends-to-google.md)
 - [Apple 傳送至 Intune 的資料](data-apple-sends-to-intune.md)
 - [Google 傳送至 Intune 的資料](data-google-sends-to-intune.md)
-- [從 Jamf Pro 共用至 Intune 的資訊](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Jamf Pro 傳送至 Intune 的資料](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager 資料共用
 
@@ -72,6 +72,6 @@ Microsoft Intune 不會與 System Center Configuration Manager 共用任何資�
 若要進一步了解，請參閱 [SCCM 的診斷和使用方式資料](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)。 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 了解如何[檢視及更正](privacy-data-view-correct.md) Intune.中的個人資料。

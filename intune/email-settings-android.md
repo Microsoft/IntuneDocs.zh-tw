@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032022"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316877"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android 和 Android Enterprise 裝置設定，用於在 Intune 中設定電子郵件、驗證和同步處理
 
@@ -69,7 +69,9 @@ ms.locfileid: "53032022"
 
 ### <a name="content-sync-settings"></a>內容同步設定
 
-- **要同步處理的內容類型**：選取您想要與裝置同步處理的內容類型：
+- **要同步處理的內容類型**：選取您想要在裝置上同步處理的內容類型。 [未設定] 會停用此設定。 設為 [未設定] 時，如果終端使用者在裝置上啟用同步處理，則會在裝置與 Intune 同步時再次停用同步處理，因為此原則已經過強化。 
+
+  您可以同步處理下列內容： 
   - **連絡人**
   - **行事曆**
   - **工作**
@@ -84,10 +86,12 @@ ms.locfileid: "53032022"
   - 若選取了 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 - **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
 - **要同步處理的電子郵件數量**：選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
-- **要同步處理的內容類型** (僅限 Nine Work)：選取您想要與裝置同步處理的內容類型：
+- **要同步處理的內容類型** (僅限 Nine Work)：選取您想要在裝置上同步處理的內容類型。 [未設定] 會停用此設定。 設為 [未設定] 時，如果終端使用者在裝置上啟用同步處理，則會在裝置與 Intune 同步時再次停用同步處理，因為此原則已經過強化。 
+
+  您可以同步處理下列內容： 
   - **連絡人**
   - **行事曆**
   - **工作**
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [設定 Intune 中的電子郵件設定](email-settings-configure.md)

@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179944"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386955"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
@@ -62,13 +62,17 @@ ms.locfileid: "52179944"
 ### <a name="supported-variables-for-configuration-values"></a>支援的設定值變數
 
 如果您選擇變數作為值類型，將可以選擇下列選項：
-- 使用者主體名稱 — 例如 **John@contoso.com**
-- 郵件 — 例如 **John@contoso.com**
-- 部分 UPN — 例如 **John**
-- 帳戶識別碼 — 例如 **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- 裝置識別碼 — 例如 **b9841cd9-9843-405f-be28-b2265c59ef97**
-- 使用者識別碼 — 例如 **3ec2c00f-b125-4519-acf0-302ac3761822**
-- 使用者名稱 — 例如 **John Doe**
+
+| 選項 | 範例 |
+|----|----|
+| Mail | john@contoso.com |
+| 使用者主體名稱 | john@contoso.com |
+| 部分 UPN | john |
+| Domain | contoso.com |
+| 使用者名稱 | John Doe |
+| 帳戶識別碼 | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| 使用者識別碼 | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| 裝置識別碼 | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>在多重身分識別應用程式中只允許設定的組織帳戶 
 
@@ -119,7 +123,7 @@ ms.locfileid: "52179944"
 10. 選取要指派的使用者群組，然後選擇 [選取]。
 11. 選擇 [儲存] 來指派原則。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。
 

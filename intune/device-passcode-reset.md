@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182393"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418171"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -55,7 +55,8 @@ ms.locfileid: "52182393"
 
 ## <a name="reset-a-passcode"></a>重設密碼
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
+
+1. 使用下列任一角色登入 [Azure 入口網站](https://portal.azure.com)：Azure Active Directory 全域管理員、Azure Active Directory Intune 服務管理員、技術服務人員或角色管理員。 如需完整的角色和權限清單，請參閱 [Intune RBAC 資料表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)。
 2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
 3. 選取 [裝置]，然後選取 [所有裝置]。
 4. 從您管理的裝置清單中選取裝置，再選擇 [...More] (...其他)。 然後選擇 [Remove passcode] (移除密碼) 裝置遠端動作。
@@ -71,6 +72,6 @@ ms.locfileid: "52182393"
 
 請不要重設密碼，而是將它從 iOS 裝置中移除。 如果已設定密碼合規性政策，裝置會提示使用者在 [設定] 中設定新密碼。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要查看您剛採取的動作狀態，請在 [裝置] 中選擇 [裝置動作]。
