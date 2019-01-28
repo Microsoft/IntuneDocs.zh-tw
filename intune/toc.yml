@@ -389,6 +389,11 @@ items:
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md
+      - name: 安全性基準
+        href: security-baselines.md
+        items:
+        - name: 監視您的基準
+          href: security-baselines-monitor.md
       - name: Endpoint Protection
         href: endpoint-protection-configure.md
     - name: 網路存取控制
@@ -442,7 +447,7 @@ items:
           items:
           - name: 手動新增公司入口網站應用程式
             href: store-apps-company-portal-app.md
-        - name: Android 工作設定檔應用程式
+        - name: 受管理的 Google Play 應用程式
           href: apps-add-android-for-work.md
         - name: 適用於 Windows 10 的 Office 365 應用程式
           href: apps-add-office365.md
@@ -569,6 +574,8 @@ items:
         href: troubleshoot-app-install.md
       - name: Intune 活動的稽核記錄
         href: monitor-audit-logs.md
+      - name: 透過 Azure 監視器檢閱記錄
+        href: review-logs-using-azure-monitor.md
       - name: 檢閱應用程式保護記錄
         href: app-protection-policy-settings-log.md
       - name: 電子郵件設定檔疑難排解
@@ -938,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: 防止資料在未受管理的裝置上外洩
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899122"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072485"
