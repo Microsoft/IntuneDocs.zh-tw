@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831491"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 允許或限制功能的 Windows Holographic for Business 裝置設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "53032005"
 
 ## <a name="before-you-begin"></a>開始之前
 
-[建立裝置組態設定檔](device-restrictions-configure.md)。
+[建立裝置組態設定檔](device-restrictions-configure.md#create-the-profile)。
 
 ## <a name="general"></a>一般
 
@@ -79,7 +79,7 @@ ms.locfileid: "53032005"
 
 ## <a name="kiosk---obsolete"></a>Kiosk - 已淘汰
 
-這些設定為唯讀且無法變更。 若要設定 kiosk 模式，請參閱 [Kiosk 設定](kiosk-settings.md#windows-holographic-for-business)。
+這些設定為唯讀且無法變更。 若要設定 kiosk 模式，請參閱 [Kiosk 設定](kiosk-settings-holographic.md)。
 
 Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置上 kiosk 應用程式外的任何功能。
 
@@ -104,3 +104,7 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
 ## <a name="reporting-and-telemetry"></a>報告和遙測
 
 - **共用使用方式資料**：選取診斷資料提交層級。
+
+## <a name="next-steps"></a>後續步驟
+
+[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

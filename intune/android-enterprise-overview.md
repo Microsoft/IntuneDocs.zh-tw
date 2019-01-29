@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751173"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作設定檔裝置
 
@@ -67,7 +67,7 @@ Intune 會在將 Gmail 及 Nine Work 應用程式當成工作應用程式管理�
 
 VPN 支援類似於 Android VPN 設定檔， Android 企業管理可用的相同 VPN 提供者與基本設定選項，有兩個不同之處：
 
--  **設定檔範圍內的 VPN** – VPN 連線受限在只有部署到公司設定檔的應用程式。 只有受 Android 企業管理的應用程式才可使用此 VPN 連線。 裝置上的個人應用程式無法使用受管理的 VPN 連線。 如需詳細資訊，請參閱 [Android 企業 VPN 設定](vpn-settings-android.md#android-for-work-vpn-settings)。
+-  **設定檔範圍內的 VPN** – VPN 連線受限在只有部署到公司設定檔的應用程式。 只有受 Android 企業管理的應用程式才可使用此 VPN 連線。 裝置上的個人應用程式無法使用受管理的 VPN 連線。 如需詳細資訊，請參閱 [Android 企業 VPN 設定](vpn-settings-android.md#android-enterprise-vpn-settings)。
 
 -  **應用程式專屬 VPN** – 若 VPN 提供者支援下列項目，就能在 Intune 中設定應用程式特定的 VPN：
     - 應用程式特定 VPN 的組態
@@ -88,6 +88,6 @@ Android 管理可使用的相同憑證設定檔設定選項，Android 工作設�
 
 當裝置從 Intune 淘汰並刪除公司設定檔之後，會移除 Android 企業所管理的 Wi-Fi 設定檔。 如需詳細資訊，請參閱[如何在 Microsoft Intune 中設定 Wi-Fi 設定](wi-fi-settings-configure.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 - [註冊 Android 裝置](android-enroll.md)
 - [使用 Intune 將應用程式指派給 Android 工作設定檔裝置](apps-add-android-for-work.md)

@@ -16,18 +16,19 @@ ms.reviewer: derriw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd71af5d52f81d05ce424212e029f01c59a33a8d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831576"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->Classroom 應用程式的 Intune 設定在 Intune 中可能已過時。 本文僅適用於在 Intune 中具有現有教育設定檔的使用者。
+
+> [!NOTE]
+> 適用於 Classroom 應用程式的 Intune 設定已在 Intune 中淘汰。 本文僅適用於在 Intune 中具有現有教育設定檔的使用者。
 
 ## <a name="introduction"></a>簡介
 [Classroom](https://itunes.apple.com/app/id1085319084) 應用程式可協助老師在課堂中引導學習，並控制學生的裝置。 例如，應用程式可讓老師：
@@ -153,7 +154,7 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 針對當您將學校資料與 Azure AD 同步時所建立的課堂群組，將設定檔指派給群組中的學生裝置。請參閱[如何指派裝置設定檔](device-profile-assign.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 現在，當老師使用 Classroom 應用程式時，就可以完全控制學生裝置。
 

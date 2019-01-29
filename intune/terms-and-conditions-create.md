@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831508"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>使用者存取的條款及條件
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032294"
 
 身為 Intune 系統管理員，您可以要求使用者必須先接受公司的條款及條件，然後才能使用公司入口網站來執行下列作業：
 - 註冊裝置
-- 存取公司應用程式和電子郵件等資源。
+- 存取公司應用程式和電子郵件等資源。    
 條款及條件的設定是選擇性的。
 
 您可以建立多組條款，並將它們指派給不同的群組，以達成支援不同語言等目的。

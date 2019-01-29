@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570803"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199450"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -81,7 +81,7 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 ### <a name="device-enrollment-manager"></a>裝置註冊管理員
 裝置註冊管理員 (DEM) 是特殊的使用者帳戶，可用於註冊及管理公司擁有的多部裝置。 管理員可以安裝公司入口網站，並註冊許多無使用者裝置。 比方說，這些類型的裝置適合銷售點或公用程式應用程式，但對於需要存取電子郵件或公司資源的使用者而言則不適合。 深入了解 [DEM](./device-enrollment-manager-enroll.md)。 
 
-### <a name="apple-device-enrollment-program"></a>Apple 裝置註冊計劃
+### <a name="apple-device-enrollment-program"></a>Apple 裝置註冊方案
 Apple 裝置註冊計劃 (DEP) 管理功能可讓您「以無線方式」建立原則，並將原則部署至透過 DEP 購買及管理的 iOS 和 macOS 裝置。 當使用者第一次開啟裝置並執行「設定輔助程式」時，即會註冊裝置。 這種方法支援 iOS 受監督模式，接著會使用持定功能來設定裝置。
 
 深入了解 iOS DEP 註冊：
@@ -106,9 +106,6 @@ IT 管理員會透過 USB 使用 Apple Configurator，手動準備每部屬公�
 
 - [決定 iOS 裝置的註方式](enrollment-method-choose-ios.md)
 - [使用 Configurator 及直接註冊來註冊 iOS 裝置](apple-configurator-direct-enroll-ios.md)
-
-## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 的行動裝置管理
-針對未註冊但已連接 Exchange ActiveSync (EAS) 的行動裝置，Intune 可以使用 EAS MDM 原則進行管理。 Intune 會使用 Exchange Connector 與內部部署或雲端託管的 EAS 通訊。 更多資訊即將推出。
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 憑證到期後的行動裝置清除
 

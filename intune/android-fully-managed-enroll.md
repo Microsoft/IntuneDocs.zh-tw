@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387201"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146905"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>設定 Android 完全受控裝置的 Intune 註冊 (預覽)
 
@@ -38,7 +38,7 @@ Intune 可協助您將應用程式及設定部署至 Android 企業裝置，包�
 
 裝置必須符合下列需求，才能作為 Android 完全受控裝置管理：
 
-- Android OS 6.0 版和更高版本。
+- Android OS 5.1 版和更新版本。
 - 裝置必須執行具有 Google 行動服務 (GMS) 連線的 Android 組建。 裝置必須有可用的 GMS ，而且必須能夠連線至 GMS。
 
 若符合以上需求，則不限裝置製造商/OEM。

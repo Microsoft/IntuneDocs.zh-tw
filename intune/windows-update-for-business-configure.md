@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831559"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -106,7 +106,7 @@ ms.locfileid: "54297378"
 
    - **防止使用者暫停 Windows 更新**：預設為允許。 使用此設定來封鎖或允許使用者從其電腦的 [設定] 暫停更新安裝。 
       
-   - **傳遞最佳化下載模式**：[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。 
+   - **傳遞最佳化下載模式**：[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。 
 
 5. 完成時，選取 [確定]。 在 [建立更新通道] 中，選取 [建立]。
 

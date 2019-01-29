@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387021"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072553"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -48,7 +48,6 @@ ms.locfileid: "54387021"
 - **Wi-Fi 設定變更**：選擇 [封鎖] 以防止使用者變更裝置擁有者所建立的 Wi-Fi 設定。 使用者可以建立自己的 Wi-Fi 設定。 [未設定] 會允許使用者在裝置上變更 Wi-Fi 設定。
 - **Wi-Fi 存取點設定**：選擇 [封鎖] 以防止使用者建立或變更任何 Wi-Fi 設定。 [未設定] 會允許使用者在裝置上變更 Wi-Fi 設定。
 - **藍牙設定**：選擇 [封鎖] 以防止使用者設定裝置上的藍牙。 [未設定] 會允許在裝置上使用藍牙。
-- **透過藍牙分享連絡人**：選擇 [封鎖] 以防止從另一部裝置存取工作連絡人 (例如當 Android 裝置透過藍牙與汽車系統配對時)。 [未設定] 會允許配對至 Android 裝置的另一部藍牙裝置存取工作連絡人。
 - **網際網路共用和存取熱點**：選擇 [封鎖] 以防止網際網路共用及存取可攜式熱點。 [未設定] 會允許網際網路共用及存取可攜式熱點。
 - **USB 儲存裝置**：選擇 [允許] 以存取裝置上的 USB 儲存裝置。 [未設定] 會禁止存取 USB 儲存裝置。
 - **USB 檔案傳輸**：選擇 [封鎖] 以防止透過 USB 傳輸檔案。 [未設定] 會允許傳輸檔案。

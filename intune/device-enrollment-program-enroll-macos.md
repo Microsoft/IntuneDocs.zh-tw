@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068283"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
 
@@ -41,7 +41,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 - 在 [Apple School Manager](https://school.apple.com/) 或 [Apple 的裝置註冊計劃](http://deploy.apple.com)中購買的裝置
 - 序號或採購單號碼的清單。 
 - [MDM 授權單位](mdm-authority-set.md)
@@ -125,7 +125,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 8. 選擇 [設定助理設定]，對下列設定檔進行設定：![設定助理自訂。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
-    | 部門設定 | 描述 |
+    | 部門設定 | 說明 |
     |---|---|
     | <strong>部門名稱</strong> | 使用者在啟用期間點選 [關於設定] 時顯示。 |
     | <strong>部門電話</strong> | 在使用者在啟用期間按一下 [需要協助] 按鈕時顯示。 |
@@ -150,7 +150,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
     | <strong>FileVault</strong> | 可讓使用者選擇設定 FileVault 加密。 |
     | <strong>iCloud 診斷</strong> | 可讓使用者選擇將 iCloud 診斷資料傳送給 Apple。 |
     | <strong>註冊</strong>| 要求使用者註冊裝置。 |
-
+    
    
 
 10. 選擇 [確定]。
