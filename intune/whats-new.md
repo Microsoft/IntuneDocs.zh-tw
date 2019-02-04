@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418205"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199484"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ ms.locfileid: "54418205"
 > [!Note]
 > 如需混合式行動裝置管理 (MDM) 的新功能資訊，請參閱[混合式新功能頁面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
+**RSS 摘要**：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -42,6 +43,102 @@ ms.locfileid: "54418205"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>2019 年 1 月 21 日當週
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 應用程式的快顯通知 <!-- 3136566   -->
+您可以隱藏而不顯示每個應用程式指派的終端使用者快顯通知。 從 Intune 選取 [用戶端應用程式] > [應用程式] > 選取應用程式 > [指派] > [包含群組]。 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune 應用程式保護原則 UI 更新 <!-- 3251427  -->
+我們已變更 Intune 應用程式保護的設定和按鈕標籤，以使它們更容易理解。 部分變更包括：  
+- 控制項從 [是] / [否] 的控制項，變更成主要為 [封鎖] / [允許]****，以及 [停用] / [啟用] 的控制項。 標籤也一併更新。  
+- 設定已重新格式化，因此設定和其標籤會在控制項中並排顯示，提供更好的瀏覽。   
+
+預設設定和設定數量會保持相同，但這項變更可讓使用者更輕鬆了解、瀏覽和利用這些設定，以套用所選的應用程式保護原則。 如需詳細資訊，請參閱 [iOS 設定](app-protection-policy-settings-ios.md)和 [Android 設定](app-protection-policy-settings-android.md)。
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook 的其他設定 <!-- 3301182  -->
+您現在可以使用 Intune 來設定 iOS 和 Android 版 Outlook 的其他設定。  這些設定包括：只允許在 iOS 和 Android 版 Outlook 中使用公司或學校帳戶。為 Office 365 和混合式新式驗證內部部署帳戶部署新式驗證。選取基本驗證時，針對電子郵件設定檔中的使用者名稱欄位使用 `SAMAccountName`。允許儲存連絡人。設定外部收件者 MailTips。設定 [焦點收件匣]。需要生物特徵識別技術才能存取 iOS 版 Outlook。封鎖外部影像
+> [!NOTE]
+> 如果您使用 Intune 應用程式防護原則來管理公司身分識別的存取權，您應該考慮不啟用 [require biometrics] \(需要生物識別技術\)。 如需詳細資訊，請參閱 [iOS 存取設定](app-protection-policy-settings-ios.md#access-settings)和 [Android 存取設定](app-protection-policy-settings-android.md#access-settings)中的＜需要公司認證才能存取＞。
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>刪除 Android Enterprise 應用程式 <!-- 1352553 -->
+您可以從 Microsoft Intune 刪除受控的 Google Play 應用程式。 若要刪除受控的 Google Play 應用程式，請在 Azure 入口網站中開啟 Microsoft Intune，然後選取 [用戶端應用程式] > [應用程式]。 從應用程式清單，選取受控的 Google Play 應用程式右側的省略符號 (...)，然後從顯示的清單選取 [刪除]。 當您從應用程式清單刪除受控 Google Play 應用程式時，會自動取消核准受控 Google Play 應用程式。
+
+#### <a name="managed-google-play-app-type----1352580---"></a>受控的 Google Play 應用程式類型 <!-- 1352580 -->
+[受控的 Google Play] 應用程式類型可讓您將[受控 Google Play 應用程式](https://play.google.com/work/search?q=microsoft&c=apps)明確新增至 Intune。 身為 Intune 系統管理員，您現在可以在 Intune 中瀏覽、搜尋、核准、同步及指派已核准之受控的 Google Play 應用程式。  您不再需要另外瀏覽至受控的 Google Play 主控台，而且您不再需要重新驗證。  在 Intune 中，選取 [用戶端應用程式] > [應用程式] > [新增]。 在 [應用程式類型] 清單中，選取 [受控的 Google Play] 作為應用程式類型。
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>使用針對安全性基準 (公開預覽) <!-- 2055484   --> 的 Microsoft 建議設定
+注意：此功能仍在推出，近期內將提供。
+
+Intune 會和其他著重安全性的服務整合，包含 Windows Defender ATP 和 Office 365 ATP。 客戶持續不斷要求一種常見策略，以及橫跨 Microsoft 365 服務，極具凝聚力的一組端點對端點安全性工作流程。 我們的目標是調整策略，建置能擔任安全性作業和常見系統管理工作間橋樑的解決方案。 在 Intune 中，我們試圖透過發佈一組 Microsoft 建議的「安全性基準」(**Intune** > **安全性基準**)，來達到此目標。  系統管理員可以直接從這些基準建立安全性政策，並將它們部署到其使用者。 您也可以自訂最佳做法建議項目，以符合您組織的需求。 Intune 會確保裝置符合這些基準的規範，並會通知系統管理員不合規的使用者或裝置。
+
+若要深入了解安全性基準，請參閱[在 Intune 中建立 Windows 10 安全性基準](security-baselines-monitor.md)。
+
+本功能適用於：Windows 10 及更新版本
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>非系統管理員可以在已加入 Azure AD 的 Windows 10 裝置上啟用 BitLocker<!-- 2147379   -->
+當您在 Windows 10 裝置上啟用 BitLocker 設定 ([裝置設定] > [設定檔] > [建立設定檔] > 針對平台選擇 [Windows 10 及更新版本] > 針對設定檔類型選擇 [Endpoint Protection] > [Windows 加密]) 時，您會新增 BitLocker 設定。 
+
+此更新包含新的 BitLocker 設定，可允許標準使用者 (非系統管理員) 啟用加密。 
+
+若要查看設定，請前往[適用於 Windows 10 的 Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)。
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>檢查 Configuration Manager 合規性 <!-- 2192052  eepublished  -->
+此更新會包括新的 System Center Configuration Manager 合規性設定 ([裝置相容性] > [原則] > [建立原則] > [Windows 10 及更新版本] > [Configuration Manager 合規性])。 Configuration Manager 會將訊號傳送至 Intune 合規性。 您可以使用此設定來要求所有傳回的 Configuration Manager 訊號都需是「符合規範」。
+
+例如，您需要在裝置上安裝所有軟體更新。 在 Configuration Manager 中，此要求將會對應「已安裝」狀態。 如果裝置上的任何程式處於未知狀態，則裝置在 Intune 中就不會符合規範。
+
+[Configuration Manager 合規性](compliance-policy-create-windows.md#configuration-manager-compliance)描述了這項設定。
+
+適用於：Windows 10 及更新版本
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>使用裝置組態設定檔自訂受監督 iOS 裝置上的背景圖案 <!-- 2809324   -->
+當您建立 iOS 裝置的裝置組態設定檔時，您可以自訂某些功能 ([裝置設定] > [設定檔] > [建立設定檔] > [iOS] 平台 > [裝置功能] 設定檔類型)。 此更新包括新的**桌布**設定，可讓系統管理員在主畫面或鎖定畫面上使用 .png、.jpg 或 .jpeg 影像。 這些桌布設定只會套用至受監督的裝置。 
+
+如需這些設定的清單，請參閱 [iOS 裝置功能設定](ios-device-features-settings.md)。
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10 kiosk 公開上市 <!-- 3594661  -->
+在此更新中，在 Windows 10 和更新版本的裝置上的 [Kiosk] 功能是正式推出 (GA)。 若要查看您可以新增和設定的所有設定，請參閱[適用於 Windows 10 (和更新版本) 的 Kiosk 設定](kiosk-settings.md)。
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>[透過藍牙分享連絡人] 已從 Android Enterprise 的 [裝置限制] > [裝置擁有者] 中移除 <!-- 3598396   -->
+當您建立 Android Enterprise 裝置的裝置限制設定檔時，有一項 [透過藍牙分享連絡人] 設定。 在此更新中，[透過藍牙分享連絡人] 設定會被移除 ([裝置設定] > [設定檔] > [建立設定檔] > [Android 企業] 平台 > [裝置限制] > [裝置擁有者] 設定檔類型 > [一般])。 
+
+Android Enterprise 裝置擁有者管理不支援 [透過藍牙分享連絡人] 設定。 因此，移除此設定之後，並不會影響任何裝置或租用戶，即使您已在環境中啟用和設定此設定亦然。
+
+若要查看目前的設定清單，請前往[允許或限制功能的 Android Enterprise 裝置設定](device-restrictions-android-for-work.md)。
+
+適用於：Android Enterprise 裝置擁有者
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 應用程式保護原則 UI 更新 <!-- 3251427 -->
+我們已變更 Intune 應用程式保護的設定和按鈕標籤，以使它們更容易理解。 部分變更包括：  
+- 控制項從 [是] / [否] 的控制項，變更成主要為 [封鎖] / [允許]****，以及 [停用] / [啟用] 的控制項。 標籤也一併更新。  
+- 設定已重新格式化，因此設定和其標籤會在控制項中並排顯示，提供更好的瀏覽。   
+
+預設設定和設定數量會保持相同，但這項變更可讓使用者更輕鬆了解、瀏覽和利用這些設定，以套用所選的應用程式保護原則。 如需詳細資訊，請參閱 [iOS 設定](app-protection-policy-settings-ios.md)和 [Android 設定](app-protection-policy-settings-android.md)。
+
+### <a name="device-management"></a>裝置管理
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>WIP (不含註冊) 裝置的選擇性抹除支援 <!-- 1434452 -->
+Windows 資訊保護 (不含註冊) (WIP-WE) 允許客戶保護其 Windows 10 裝置上的公司資料，而不需要完整的 MDM 註冊。 一旦文件受 WIP-WE 原則保護，受保護的資料就可以由 Intune 系統管理員選擇性抹除。 透過選取使用者與裝置並傳送抹除要求，透過 WIP-WE 原則保護的所有資料都會變成無法使用。 從 Azure 入口網站中的 Intune，選取 [行動應用程式] > [應用程式選擇性抹除]。
+
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>新的作業記錄，以及將記錄傳送至 Azure 監視器服務的能力 <!-- 3762211  -->
+Intune 具有內建稽核記錄，可在進行變更時追蹤事件。 此更新包含新的記錄功能，包括： 
+- 作業記錄 (預覽)，顯示已註冊的使用者和裝置的詳細資料，包括成功和失敗的嘗試。
+- 稽核記錄和作業記錄也可傳送到 Azure 監視器，包括儲存體帳戶、事件中樞和 Log Analytics。 這些服務可讓您儲存、使用 Splunk 和 QRadar 等分析，並取得記錄資料的視覺效果。
+
+[將記錄資料傳送至 Intune 中的儲存體、事件中樞或記錄分析](review-logs-using-azure-monitor.md)提供這項功能的詳細資訊。
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>在 iOS DEP 裝置上略過更多設定助理畫面 <!-- 2687509  -->
+除了您目前可以略過的畫面之外，當使用者註冊裝置時，您還可以將 iOS DEP 裝置設定為略過 [設定助理] 中的下列畫面：顯示色調、隱私權、Android 移轉、首頁按鈕、iMessage 和 FaceTime、上架、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
+若要選擇要略過的畫面，請前往 [裝置註冊] > [Apple 註冊] > [註冊方案權杖]> 選擇權杖 > [設定檔] > 選擇設定檔 > [屬性] > [設定助理自訂] > 針對任何您想要略過的畫面選擇 [隱藏] > [確定]。
+如果您建立新的設定檔或編輯設定檔，則所選略過畫面需要與 Apple MDM 伺服器同步處理。 使用者可以發出裝置的手動同步處理，這樣在取得設定檔變更時才不會有延遲。
+此功能即將推出，但需要幾天時間才可供所有客戶使用。
+
 ## <a name="week-of-january-14-2019"></a>2019 年 1 月 14 日當週
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>公司擁有、完全受控的 Android 裝置支援預覽 <!-- 1574342  -->
@@ -1256,7 +1353,7 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 我們在七月的 MC145129 中分享了 Intune 打算整合 Apple 最近推出的「在下次驗證時變更密碼」設定 (針對執行 macOS 10.13 與更新版本的裝置)。 我們最近打算在二月針對 macOS 10.14.2 與更新版本推出此設定。 
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-若您擁有或即將擁有執行 macOS 10.14.2 與更新版本的裝置，這會對您造成影響。 既然 Apple 已推出「在下次驗證時變更密碼」設定，Intune 可以強制使用者在系統推播密碼原則時將其密碼更新為符合規範的密碼。 當我們整合這個新的 Apple 功能後，即使您 macOS 使用者的密碼已符合規範，仍會收到更新密碼的要求。 請注意，若密碼已符合規範且您沒有不得使用重複之密碼的需求，則終端使用者將能更新為其現有密碼。 當終端使用者嘗試驗證或登入其裝置時，他們只會看到要求更新其密碼的要求。 如果您在裝置標示為符合規範前都一直封鎖公司資源，則執行 macOS 10.14.2 之裝置上的使用者可能會被封鎖而無法存取公司資源，例如電子郵件或 SharePoint 網站，直到他們重設密碼為止。 在未來，設定和合規性密碼原則的所有更新，都會強制目標使用者更新密碼。 我們在實作此變更之前的客戶研究指出大部分的客戶都不會受此變更影響，因為終端使用者通常會在收到以密碼註冊或重設其密碼以符合規範的要求時更新其密碼
+若您擁有或即將擁有執行 macOS 10.14.2 與更新版本的裝置，這會對您造成影響。 既然 Apple 已推出「在下次驗證時變更密碼」設定，Intune 可以強制使用者在系統推播密碼原則時將其密碼更新為符合規範的密碼。 當我們整合此新的 Apple 功能後，即使您 macOS 使用者的密碼已符合規範，仍會收到更新密碼的要求。 請注意，若密碼已符合規範且您沒有不得使用重複之密碼的需求，則終端使用者將能更新為其現有密碼。 當終端使用者嘗試驗證或登入其裝置時，他們只會看到要求更新其密碼的要求。 如果您在裝置標示為符合規範前都一直封鎖公司資源，則執行 macOS 10.14.2 之裝置上的使用者可能會被封鎖而無法存取公司資源，例如電子郵件或 SharePoint 網站，直到他們重設密碼為止。 在未來，設定和合規性密碼原則的所有更新，都會強制目標使用者更新密碼。 我們在實作此變更之前的客戶研究指出大部分的客戶都不會受此變更影響，因為終端使用者通常會在收到以密碼註冊或重設其密碼以符合規範的要求時更新其密碼
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
 建議通知您的技術支援中心。 當此變更推出時，我們將會更新這個 [新功能] 頁面。如果您不想讓系統強制套用此 macOS 裝置密碼原則，建議您取消指派或刪除您現有的 macOS 原則。
@@ -1267,11 +1364,11 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-在一月底之後，為繼續加強頂級支援體驗，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您將會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專用 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 請注意，無法在 Azure 入口網站中檢視在 MPO 入口網站中建立的支援要求。 
+在一月底之後，為繼續加強頂級支援體驗，您將無法在 MPO 中建立支援要求。  當您嘗試這樣做時，您將會看到一個將無法關閉的提示，說明您將被重新導向到 Azure 上的 Intune。 在這裡，您可以建立將轉送到 Intune 專屬 Microsoft 支援服務的支援票證，以及時診斷及解決您的問題。 請注意，無法在 Azure 入口網站中檢視在 MPO 入口網站中建立的支援要求。 
 
 Azure 入口網站有新的支援體驗，就像我們最近在 MC171941 中所公告一樣。 您可以在 [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) 與「額外資訊」連結找到詳細資訊。
 
-若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM [已過時](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱[從混合式行動裝置管理移到 Azure 上的 Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) \(英文\)。
+若您使用混合式行動裝置管理 (混合式 MDM) 或使用共同管理，您可以繼續使用 MPO 來建立 ConfigMgr 的支援要求，但應該使用 Azure 入口網站來建立 Intune 的支援要求。 提醒您，混合式 MDM [已過時](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)，您應該計劃儘快移轉到 Azure 上的 Intune。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune)。
 
 請注意，只有全域管理員、Intune 服務管理員與服務支援管理員角色可以在 Azure 入口網站中建立支援票證。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068317"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
 
@@ -97,11 +97,11 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
     - **資訊 URL**：(選擇性) 輸入包含應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **隱私權 URL**：(選擇性) 輸入包含應用程式之隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **隱私權 URL**：(選擇性) 輸入包含應用程式隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
-    - **附註**：輸入要與此應用程式相關聯的任何附註。
-    - **標誌**：上傳將與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
+    - **附註**：輸入要與此應用程式建立關聯的任何附註。
+    - **標誌**：上傳與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
 3.  完成後，按一下 [確定]。
 
 ### <a name="step-4-configure-app-installation-details"></a>步驟 4：設定應用程式安裝詳細資料
@@ -240,6 +240,9 @@ Windows 10 RS3 與更新版本的用戶端將會使用 Windows 10 用戶端上�
 
 ![通知使用者已進行應用程式變更的螢幕擷取畫面](./media/apps-win32-app-09.png)    
 
+## <a name="toast-notifications-for-win32-apps"></a>Win32 應用程式的快顯通知 
+如有需要，您可以隱藏而不顯示每個應用程式指派的終端使用者快顯通知。 從 Intune 選取 [用戶端應用程式] > [應用程式] > 選取應用程式 > [指派] > [包含群組]。 
+
 ## <a name="troubleshoot-win32-app-issues"></a>針對 Win32 應用程式問題進行疑難排解
 用戶端電腦上的代理程式記錄通常位於 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以利用 `CMTrace.exe` 檢視這些記錄檔。 *CMTrace.exe* 可從 [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools) (SCCM 用戶端工具) 下載。 
 
@@ -250,6 +253,6 @@ Windows 10 RS3 與更新版本的用戶端將會使用 Windows 10 用戶端上�
 - 檢查 OS 版本 – Windows 10 1607 或更新版本。  
 - 檢查 Windows 10 SKU - Windows 10 S 或在啟用 S 模式的情況下執行的 Windows 版本不支援 MSI 安裝。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 如需將應用程式新增至 Intune 的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。

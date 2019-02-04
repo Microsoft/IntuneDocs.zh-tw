@@ -1,12 +1,12 @@
 ---
-title: 開始使用 Microsoft Intune
+title: Microsoft Intune 對我的公司有何作用
 titleSuffix: ''
-description: 逐步進行一系列的簡短實際操作快速入門，以了解 Intune。
+description: Microsoft Intune 可協助解決的常見商務問題。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831423"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 對我的公司有何作用？
 Microsoft Intune 是雲端式企業行動管理 (EMM) 服務，可協助提高您員工的生產力，同時保護公司資料。
@@ -72,7 +72,7 @@ Intune 是管理行動裝置和應用程式的 Enterprise Mobility + Security (E
 
 ![Microsoft Intune 的高階架構圖](/intune/media/intunearchitecture.svg)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [開始使用 Azure](get-started-azure.md) - 了解 Azure 入口網站的結構以及如何變更您看到的頁面。
 

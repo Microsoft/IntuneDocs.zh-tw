@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324853"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199433"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -41,7 +41,7 @@ ms.locfileid: "53324853"
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>使用 IMEI 或序號識別公司擁有的裝置
 
-身為 Intune 管理員，您可以建立和匯入逗點分隔值 (.csv) 檔案，其會列出 IMEI 編號或序號。 在裝置註冊期間，Intune 會使用這些識別碼，將裝置擁有權指定為公司所擁有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS、macOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
+身為 Intune 系統管理員，您可以建立和匯入逗點分隔值 (.csv) 檔案，其會列出 14 位數 IMEI 編號或序號。 在裝置註冊期間，Intune 會使用這些識別碼，將裝置擁有權指定為公司所擁有。 您可以為所有支援的平台宣告 IMEI 編號。 您只能宣告適用於 iOS、macOS 和 Android 裝置的序號。 基於管理目的，每個 IMEI 或序號均可含有清單中指定的詳細資料。
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -49,7 +49,7 @@ ms.locfileid: "53324853"
 [了解如何尋找您的 Android 裝置序號](https://support.google.com/store/answer/3333000)。
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>使用 .csv 檔案新增公司識別碼
-建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 IMEI 或序號，然後在右資料行中新增詳細資料。 單一 .csv 檔案只能匯入某一類型的識別碼、IMEI 或序號。 詳細資料限制為 128 個字元，且僅能供系統管理使用。 詳細資料不會顯示在裝置上。 目前限制是每個 .csv 檔案 5,000 列。
+建立此清單時，請建立內含兩個資料行，但不含標題的逗點分隔值 (.csv) 清單。 在左資料行中新增 14 位數 IMEI 或序號，然後在右資料行中新增詳細資料。 單一 .csv 檔案只能匯入某一類型的識別碼、IMEI 或序號。 詳細資料限制為 128 個字元，且僅能供系統管理使用。 詳細資料不會顯示在裝置上。 目前限制是每個 .csv 檔案 5,000 列。
 
 **上傳內含序號的 .csv 檔案** - 建立只有兩個資料行而沒有標題的逗點分隔值 (.csv) 清單，並限制清單只可包含 5000 部裝置，或每個.csv 檔案不得超過 5 MB。
 

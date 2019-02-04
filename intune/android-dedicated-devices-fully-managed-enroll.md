@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387214"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146888"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>註冊 Android 專用裝置或完全受控裝置 (預覽)
 
 在 Intune 中設定 [Android 專用裝置](android-kiosk-enroll.md)或[完全受控裝置](android-fully-managed-enroll.md)後，即可註冊裝置。 註冊 Android 裝置的方式需視作業系統而定。
 
-| 註冊方法 | 專用裝置的最低 Android OS 版本 | 完全受控裝置的最低 Android OS 版本 |
-| ----- | ----- | ----- |
-| 近距離無線通訊 | 5.1 | 6.0 |
-| 權杖項目 | 6.0 | 6.0 |
-| QR 代碼 | 7.0 | 7.0 |
-| 零接觸 (Zero Touch)  | 8.0\* | 8.0\* |
+| 註冊方法 | 專用且完全受控裝置的最低 Android OS 版本 |
+| ----- | ----- |
+| 近距離無線通訊 | 5.1 |
+| 權杖項目 | 6.0 |
+| QR 代碼 | 7.0 |
+| 零接觸 (Zero Touch)  | 8.0\* |
 
 \* 僅限參與的製造商。
 
@@ -42,7 +42,7 @@ ms.locfileid: "54387214"
 
 ### <a name="enroll-by-using-a-token"></a>使用權杖註冊
 
-針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **aft#setup** 註冊方法時，利用 QR 代碼掃描。
+針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **afw#setup** 註冊方法時，利用 QR 代碼掃描。
 
 1. 開啟已抹除的裝置。
 2. 在 [歡迎使用] 畫面上選取您的語言。

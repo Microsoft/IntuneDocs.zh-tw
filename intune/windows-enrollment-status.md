@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032090"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105182"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  
@@ -32,7 +32,7 @@ ms.locfileid: "53032090"
 - 封鎖使用直到安裝完成。
 - 指定裝置設定失敗時使用者可採取的動作。
 
-您也可以設定每個設定檔的優先順序，來解決設定檔指派給相同使用者或裝置時的衝突。
+您也可以設定每個設定檔的優先順序，來解決將設定檔指派給相同使用者或裝置時所發生的衝突。
 
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>為所有使用者開啟預設註冊狀態頁面

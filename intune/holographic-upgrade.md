@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,50 +14,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831287"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>將執行 Windows Holographic 的裝置升級至 Windows Holographic for Business
 
+Microsoft Intune 包含許多設定，可協助管理和保護您的裝置。 本文列出並描述可將 Windows 全像攝影版裝置升級至 Windows Holographic for Business 的設定。 這些設定會在 Intune 中推送或部署到裝置的升級組態設定檔中加以建立。
 
-若要使用 Microsoft Intune 管理執行 Windows Holographic 的裝置，您必須將裝置從 Windows Holographic 升級至 Windows Holographic for Business。 您可以建立版本升級設定檔來進行升級。 至於 Microsoft HoloLens，您則可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)。
+作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來升級您的 Windows 全像攝影版裝置。 至於 Microsoft HoloLens，您可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)。
 
-## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>設定版本升級裝置組態設定檔
+如需此功能的詳細資訊，請參閱[升級 Windows 10 版本或啟用 S 模式](edition-upgrade-configure-windows-10.md)。
 
-1. 使用系統管理員帳戶登入 [Azure 入口網站](https://portal.azure.com)。
+## <a name="before-you-begin"></a>開始之前
 
+[建立裝置組態設定檔](edition-upgrade-configure-windows-10.md#create-the-profile)。
 
-2.  按一下 [裝置設定]、[設定檔]，然後按一下 [+ 建立設定檔]。
+## <a name="edition-upgrade"></a>版本升級
 
-    ![建立設定檔](media/Holographic-create-profile.png)
+- **要升級的目標版本**：選取 [Windows 10 Holographic for Business]。
+- **授權檔案**：瀏覽至提供給您的 XML 授權檔案並加以選取。
 
-3.  在 [建立設定檔] 頁面中，鍵入設定檔的名稱，將平台選取為 [Windows 10 和更新版]，然後將設定檔類型選取為 [版本升級]。 按一下 [進行設定]。
-
-5. 在 [版本升級] 頁面中，在 [要升級到的版本] 上，選取 [Windows 10 Holographic for Business]。 在 [授權檔案] 上，瀏覽至提供給您的 XML 授權檔案並加以選取。
-
-    ![輸入 XML 檔案名稱](media/Holographic-edition-upgrade.png)
+  ![輸入包含 Holographic for Business 授權資訊的 XML 檔案名稱](media/Holographic-edition-upgrade.png)
  
-5.  按一下 [確定]，然後按一下 [建立] 來建立設定檔。
+## <a name="next-steps"></a>後續步驟
 
+設定檔已建立，但可能還不會執行任何動作。 請務必[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-## <a name="deploy-the-edition-upgrade-policy"></a>部署版本升級原則
-
-接下來，將版本升級設定檔指派給選取的群組或裝置。
-
-1. 在您上一步建立的設定檔上，按一下 [指派]。
-
-2. 在 [指派] 頁面中，選取您想要包含與排除原則的使用者群組與裝置。
-
-![包含與排除群組](media/Holographic-groups.PNG)
-
-當這些使用者或裝置在 Intune 中註冊時，會套用版本升級設定檔。 
-
-## <a name="next-steps"></a>接下來的步驟
-
-如需詳細資訊，請參閱[開始使用群組](get-started-groups.md)。
-
-
+您也可以針對 [Windows 10 及更新版本](edition-upgrade-windows-settings.md)裝置建立版本升級設定檔。

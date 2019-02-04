@@ -1,12 +1,11 @@
 ---
-title: 適用於 Android Enterprise 和 Kiosk 裝置的 Wi-Fi 設定
-titleSuffix: Microsoft Intune
+title: 適用於 Android 企業和 Kiosk 裝置的 Wi-Fi 設定 - Microsoft Intune | Microsoft Docs
 description: 建立或新增適用於 Android 企業和 Android Kiosk 的 WiFi 裝置組態設定檔。 請查看不同的設定，包括在 Microsoft Intune 中新增憑證、選擇 EAP 類型，以及選取驗證方法。 針對 Kiosk 裝置，也請輸入您網路的預先共用金鑰。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831474"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於執行 Android 企業和 Android kiosk 之裝置的 Wi-Fi 設定
 
 您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Android 企業與 Android kiosk 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、使用預先共用金鑰等等。
 
-本文說明了這些設定。
+本文說明了這些設定。 [在您的裝置上使用 Wi-Fi](wi-fi-settings-configure.md) 包含 Microsoft Intune 中 Wi-Fi 功能的詳細資訊。
 
 ## <a name="before-you-begin"></a>開始之前
 
-[建立裝置設定檔](device-profile-create.md)。
+[建立裝置設定檔](wi-fi-settings-configure.md#create-a-device-profile)。
 
 ## <a name="device-owner-only---kiosk"></a>僅限裝置擁有者 - kiosk
 
@@ -66,7 +65,7 @@ ms.locfileid: "53112352"
 
   - **EAP-TLS**：另請輸入：
 
-    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
+    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，系統會向伺服器出示此憑證，並用來驗證連線。
 
       按一下 [確定] 以儲存您的變更。
 
@@ -76,7 +75,7 @@ ms.locfileid: "53112352"
 
   - **EAP-TTLS**：另請輸入：
 
-    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
+    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，系統會向伺服器出示此憑證，並用來驗證連線。
 
       按一下 [確定] 以儲存您的變更。
 
@@ -95,7 +94,7 @@ ms.locfileid: "53112352"
 
   - **PEAP**：另請輸入：
 
-    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
+    - **伺服器信任** - **用於伺服器驗證的根憑證**：選擇現有之受信任的根憑證設定檔。 當用戶端連線到網路時，系統會向伺服器出示此憑證，並用來驗證連線。
 
       按一下 [確定] 以儲存您的變更。
 
@@ -114,11 +113,8 @@ ms.locfileid: "53112352"
 
 選取 [確定] > [建立] 儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-## <a name="more-resources"></a>其他資源
-
-- 請參閱[W執行 Android 之裝置的 Wi-Fi 設定](wi-fi-settings-android.md)，以了解可供 Android 裝置使用的設定。
-- [Wi-Fi 設定概觀](wi-fi-settings-configure.md)，包括其他平台。
+您也可以為 [Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md)、[macOS](wi-fi-settings-macos.md)、[Windows 10](wi-fi-settings-windows.md) 及 [Windows 8.1](wi-fi-settings-import-windows-8-1.md) 裝置建立 Wi-Fi 設定檔。

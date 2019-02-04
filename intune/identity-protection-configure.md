@@ -1,11 +1,11 @@
 ---
-title: 在 Microsoft Intune 中設定 Identity Protection 設定 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中新增裝置設定檔，設定 Windows 10 裝置上的 Windows Hello 企業版設定
+title: 使用 Microsoft Intune 利用 PIN 登入 Windows 10 裝置 - Azure | Microsoft Docs
+description: 使用 Windows Hello 企業版來允許使用者利用 PIN、指紋等方式登入裝置。 在 Intune 中使用這些設定為 Windows 10 裝置建立身分識別保護組態設定檔，然後將設定檔指派給使用者群組和裝置群組。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/29/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,83 +13,54 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831374"
 ---
-# <a name="configure-identity-protection-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定 Identity Protection 設定
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>搭配 Microsoft Intune 在 Windows 10 裝置上使用 Windows Hello 企業版
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Identity Protection 設定檔控制如何在 Windows 10 受控裝置上佈建及設定 Windows Hello 企業版。 建立此設定檔可設定：  
-* 裝置和使用者的 Windows Hello 企業版可用性。
-* 裝置 PIN 需求。
-* 使用者可以與無法登入裝置的筆勢。  
+Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 裝置的方法。 Intune 包含內建設定，因此系統管理員可以設定及使用 Windows Hello 企業版。 例如，您可以使用這些設定來：
 
- 您可以將此設定檔指派給選取的使用者和裝置群組，或所有使用者和所有裝置。 當群組簽入 Intune 時，他們會收到 Identity Protection 設定檔。    
+- 為裝置和使用者啟用 Windows Hello 企業版
+- 設定裝置 PIN 需求，包括 PIN 長度下限或上限
+- 允許使用者可以 (或不可以) 用來登入裝置的手勢 (例如指紋)
 
-請使用本文中的資訊，建立 Identity Protection 設定檔。 然後[指派您的設定檔](device-profile-assign.md)給使用者和裝置群組。
+此功能適用於執行下列版本的裝置：
 
-此功能適用於執行下列版本的裝置：  
 - Windows 10 及更新版本
-- Windows Holographic for Business  
+- Windows 10 Mobile
+- Windows Holographic for Business
 
-## <a name="create-a-device-profile-with-identity-protection-settings"></a>建立包含 Identity Protection 設定的裝置設定檔
+Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂這些設定。 在您於設定檔中新增這些功能之後，請將這些設定推送或部署至貴組織中的使用者和裝置群組。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
-4. 輸入 Identity Protection 設定檔的 [名稱] 和 [描述]。
-5. 從 [平台] 下拉式清單中，選取 [Windows 10 及更新版本]。 只有執行 Windows 10 和更新版本的裝置支援 Windows Hello 企業版。
-6. 從 [設定檔類型] 下拉式清單中，選擇 [Identity Protection]。
-7. 在 [Windows Hello 企業版] 窗格上，從 [設定 Windows Hello 企業版] 的下列選項中選擇：
-    * 停用。 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法停用。
-    * 已啟用。 如果您想要設定 Windows Hello 企業版設定，請選取此設定。  
+本文會示範如何建立裝置組態設定檔。 如需所有設定的清單及其用途，請參閱[用以啟用 Windows Hello 企業版的 Windows 10 裝置設定](identity-protection-windows-settings.md)。
 
-8. 如果在前一步驟選取了 [啟用]，請設定將套用到已註冊之 Windows 10 與 Windows 10 行動裝置版目標裝置和使用者所需的設定。
+## <a name="create-the-device-profile"></a>建立裝置設定檔
 
-> [!NOTE]
-> 只將 Identity Protection 設定檔指派給使用者時，裝置內容預設為 [未設定]。  
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入下列內容：
 
-   - **最小 PIN 長度**/**最大 PIN 長度**。 設定裝置以使用您指定的最小和最大 PIN 長度，協助確保安全的登入。 預設的 PIN 長度為 6 個字元，但您可以強制執行最小長度 (4 個字元)。 PIN 長度上限為 127 個字元。  
+    - **名稱**：為新的設定檔輸入描述性名稱。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選取 [Windows 10 及更新版本]。 只有執行 Windows 10 和更新版本的裝置支援 Windows Hello 企業版。
+    - **設定檔類型**：選取 [Identity Protection]。
+    - **設定 Windows Hello 企業版**：選擇您想要如何設定 Windows Hello 企業版。 選項包括：
 
-   - **PIN 的小寫字母**/**PIN 的大寫字母**/**PIN 的特殊字元**。 您可以要求在 PIN 中使用大寫字母、小寫字母及特殊字元，以強制使用強度更高的 PIN。 從下列選項進行選擇：
+        - **未設定**：在裝置上[佈建 Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) \(英文\)。 只將 Identity Protection 設定檔指派給使用者時，裝置內容預設為 [未設定]。
+        - **已停用**：如果您不想要使用 Windows Hello 企業版，請選取此選項。 此選項會針對所有使用者停用 Windows Hello 企業版。
+        - **啟用**：選擇此選項以在 Intune 中[佈建]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning))及設定 Windows Hello 企業版設定。 輸入您要設定的設定。 如需所有設定的清單及其用途，請參閱：
 
-     - **允許**。 使用者可在其 PIN 中使用字元類型，但不是強制性。
+            - [用以啟用 Windows Hello 企業版的 Windows 10 裝置設定](identity-protection-windows-settings.md)
 
-     - **必要**。 使用者必須在其 PIN 中包含至少一個字元類型。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
+4. 當您完成時，請選取 [確定] > [建立] 儲存變更。
 
-     - **不允許** (預設)。 使用者不得在其 PIN 中使用這些字元  (即使未進行設定，也會發生此行為)。<br>特殊字元包含：**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
-
-   - **PIN 到期 (天數)**。 建議為 PIN 指定到期時間，使用者必須在該時間後變更 PIN。 預設為 41 天。
-
-   - **記住 PIN 記錄**。 限制重複使用先前用過的 PIN。 預設為不能重複使用最後 5 個 PIN。  
-   - **啟用 PIN 復原**：允許使用者使用 Windows Hello 企業版 PIN 復原服務來變更其 PIN。 
-       - **啟用**。 雲端服務會加密 PIN 復原祕密以儲存在裝置上。 如有需要，使用者可以變更 PIN。  
-       - **未設定** (預設)。 不會建立或儲存 PIN 復原祕密。 如果忘記使用者的 PIN，取得新 PIN 的唯一方法為刪除現有的 PIN，然後建立新的 PIN。 使用者必須向提供舊 PIN 存取權的任何服務重新註冊。  
-   
-   - **使用信賴平台模組 (TPM)**。 TPM 晶片提供額外一層資料安全性。 選擇下列其中一個值：  
-     - **啟用**。 只有能存取 TPM 的裝置可以佈建 Windows Hello 企業版。
-     - **未設定**。 所有裝置都可以佈建 Windows Hello 企業版，即使沒有可使用的 TPM。 裝置會先嘗試使用 TPM，但如果沒有 TPM，則裝置可以使用軟體加密。  
-
-   - **允許生物識別驗證**。 啟用生物識別驗證 (例如臉部辨識或指紋) 以替代 Windows Hello 企業版的 PIN。 使用者仍然必須設定公司 PIN 以免生物識別驗證失敗。 從下列選項進行選擇：
-
-     - **啟用**。 Windows Hello 企業版允許生物識別驗證。
-     - **未設定** (預設)。 Windows Hello 企業版防止生物識別驗證 (針對所有帳戶類型)。
-
-   - **使用增強的防詐騙功能 (如其可用)**。 設定是否在支援 Windows Hello 反詐騙功能的裝置上使用該功能 (例如，偵測臉正面相片而非真正的臉孔)。
-       - **啟用**。 Windows 要求所有使用者在功能支援的情況下，使用臉部特徵防詐騙。  
-       - **未設定** (預設)。 Windows 會接受裝置上的防詐騙設定。
-
-   - **內部部署資源的憑證**。 
-       - **啟用**。 允許 Windows Hello 企業版使用憑證來驗證內部部署資源。
-       - **未設定** (預設)。 防止 Windows Hello 企業版使用憑證來驗證內部部署資源。  
-9. 按一下 [確定]，儲存您的設定檔。  
-
-設定檔隨即建立，並出現在 [裝置設定 - 設定檔] 清單中。 若想繼續將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。  
+設定檔隨即建立，並出現在設定檔清單中。 接著，請將此設定檔[指派](device-profile-assign.md)給群組。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -100,3 +71,8 @@ In this high-level example, you'll create a device restriction policy that block
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
 -->
+
+## <a name="next-steps"></a>後續步驟
+
+- 查看所有[設定的清單及其用途](identity-protection-windows-settings.md)。
+- [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

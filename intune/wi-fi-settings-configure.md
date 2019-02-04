@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831355"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
-使用 Microsoft Intune Wi-Fi 設定檔，將無線網路設定指派給您組織中的使用者與裝置。 當您指派 Wi-Fi 設定檔時，使用者不需要自行設定，即可存取您組織的 Wi-Fi 網路。
+Wi-Fi 是許多行動裝置用來存取網路的無線網路。 Microsoft Intune 包含內建的 Wi-Fi 設定，可被部署到貴組織中的使用者和裝置。 這組設定稱為「設定檔」，其可被指派給不同的使用者和群組。 指派之後，您的使用者即可在無須自行設定的情況下存取貴組織的 Wi-Fi 網路。
 
 例如，您安裝了名為 Contoso Wi-Fi 的新 Wi-Fi 網路。 然後您要將所有 iOS 裝置都設定為連線到此網路。 程序如下︰
 
-1. 建立 Wi-Fi 設定檔，內含連線到 Contoso Wi-Fi 無線網路的設定。
+1. 建立包含可連線到 Contoso Wi-Fi 無線網路之設定的 Wi-Fi 設定檔。
 2. 將設定檔指派給包含所有 iOS 裝置使用者的群組。
 3. 使用者即可在其裝置上的無線網路清單中找到此新的 Contoso Wi-Fi 網路。 然後他們可以使用您選擇的驗證方法連線到網路。
 
-請使用這篇文章中的步驟建立 Wi-Fi 設定檔。 然後檢閱平台特定設定中的主題和詳細資料。
+本文列出建立 Wi-Fi 設定檔的步驟。 它也包含說明每個平台之不同設定的連結。
 
 ## <a name="supported-device-platforms"></a>支援的裝置平台
 
@@ -45,7 +45,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 > [!NOTE]
 > 對於執行 Windows 8.1 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。
 
-## <a name="create-a-wi-fi-device-profile"></a>建立 Wi-Fi 裝置設定檔
+## <a name="create-a-device-profile"></a>建立裝置設定檔
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune]，然後選取 [Microsoft Intune]。 
 2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
@@ -56,7 +56,6 @@ Wi-Fi 設定檔支援下列裝置平台：
     - **Android 企業**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
 
@@ -78,6 +77,6 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 7. 完成新增您的 Wi-Fi 設定時，請選取 [建立設定檔] > [建立] 以新增組態設定檔。 此時會建立設定檔，並顯示在設定檔清單 ([裝置設定] > [設定檔]) 中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

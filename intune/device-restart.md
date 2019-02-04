@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068266"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -30,9 +30,9 @@ ms.locfileid: "52184298"
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- Windows - 支援 Windows 8.1 和更新版本
-- Windows Phone - 支援 Windows Phone 8.1 和更新版本
-- Android kiosk 裝置 - 支援
+- Windows - Windows 8.1 和更新版本上可支援
+- Windows Phone - Windows Phone 8.1 和更新版本上可支援
+- Android Kiosk 裝置 - Android 7.0 和更新版本上可支援
 - iOS - 支援
 
     > [!Note]  
@@ -47,6 +47,6 @@ ms.locfileid: "52184298"
 3. 選取 [裝置] > [所有裝置]。
 4. 在您管理的裝置清單中，依序選取裝置、[其他]，然後選取 [重新啟動] 裝置遠端動作。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 若要查看 [重新啟動] 裝置動作的狀態，請選取 [裝置] > [裝置動作]。

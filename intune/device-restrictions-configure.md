@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831406"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定裝置限制設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "52728781"
 
 了解裝置限制設定檔基本概念，並進一步閱讀每個平台的文章以了解裝置特性。
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>建立內含裝置限制設定的裝置設定檔
+## <a name="create-the-profile"></a>建立設定檔
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 **Intune**> 選取 [Intune]。
 2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
@@ -48,7 +48,7 @@ ms.locfileid: "52728781"
     - **Windows 10 及更新版本**
 
 5. 從 [設定檔類型] 下拉式清單中，選擇 [裝置限制]。 若想要建立像是 Surface Hub 等 Windows 10 團隊版裝置的裝置限制設定檔，選擇 [裝置限制 (Windows 10 團隊版)]。
-6. 您可設定的設定會視您選擇的平台而不同。 選擇您平台的詳細設定：
+6. 您可設定的設定會視您選擇的平台而不同。 選擇您平台來進行詳細設定：
 
     - [Android 設定](device-restrictions-android.md)
     - [Android 企業設定](device-restrictions-android-for-work.md)
@@ -60,13 +60,13 @@ ms.locfileid: "52728781"
     - [Windows 10 團隊版設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business 設定](device-restrictions-windows-holographic.md)
 
-7. 當您完成時，請返回 [建立設定檔] 頁面，然後選取 [建立]。
+7. 當您完成時，請選取 [確定] > [建立] 儲存變更。
 
-設定檔隨即建立，並出現在 [設定檔清單] 頁面上。 
+設定檔隨即建立，並顯示在設定檔清單上。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-steps"></a>後續步驟
 
-建立設定檔之後，就可以指派它。 如需步驟，請參閱[指派裝置設定檔](device-profile-assign.md)。 
+建立設定檔之後，就可以指派它。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

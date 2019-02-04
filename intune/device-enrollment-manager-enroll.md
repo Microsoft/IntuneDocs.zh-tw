@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: be348840df2e1d7864b0c1c57efbb7abcb698392
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031835"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199382"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
@@ -36,6 +36,7 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
   - DEM 使用者帳戶無法將 Apple 大量採購方案 (VPP) 應用程式與 Apple VPP 使用者授權搭配使用，因為應用程式管理需要個別使用者的 Apple ID。
   - 裝置如果具有 Apple VPP 裝置授權，即可以安裝 VPP 應用程式。
   - 裝置已針對條件式存取封鎖，但 indows 10 1803+ 除外
+  - 每個以 DEM 帳戶註冊的裝置都必須有自己的 Intune 裝置授權。
 
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203530"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072570"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定
 
@@ -152,6 +152,9 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 基底設定是適用於所有資料磁碟機類型的通用 BitLocker 設定。 這些設定會管理終端使用者在所有資料磁碟機類型上可以修改的磁碟機加密工作或設定選項。
 
 - **其他磁碟加密警告**：選取 [封鎖] 可在裝置上有其他磁碟加密服務時，停用警告提示。 [未設定] (預設) 允許顯示警告。
+    - **允許標準使用者在 Azure AD Join 時啟用加密**：選擇 [允許] 時，標準使用者/非系統管理員可以在使用者登入時啟用 BitLocker 加密。 此設定僅適用於已加入 Azure Active Directory (Azure ADJ) 的裝置。 [未設定] 會只允許系統管理員在裝置上啟用 BitLocker 加密。
+      
+      此設定僅適用於已加入 Azure Active Directory (Azure ADJ) 的裝置。 它也會要求將 [其他磁碟加密的警告] 設定設為 [封鎖]。
 - **設定加密方法**：[啟用] 此設定可設定作業系統、資料和抽取式磁碟機的加密演算法。 [未設定] (預設) 時，BitLocker 會使用 XTS-AES 128 位元作為預設加密方法，或使用任何安裝指令碼指定的加密方法。
   - **作業系統磁碟機的加密**：選擇作業系統磁碟機的加密方法。 建議您使用 XTS-AES 演算法。
   - **固定式資料磁碟機的加密**：選擇固定式 (內建) 資料磁碟機的加密方法。 建議您使用 XTS-AES 演算法。

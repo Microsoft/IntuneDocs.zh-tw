@@ -3,7 +3,7 @@ title: Windows 10 的大量註冊
 titlesuffix: Microsoft Intune
 description: 建立 Microsoft Intune 的大量註冊套件
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184806"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751190"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -48,8 +48,7 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
    - **Project folder (專案資料夾)** - 專案的儲存位置
    - **Description (描述)** - 專案的選擇性描述 ![在 Windows Configuration Designer 應用程式中指定名稱、專案資料夾和描述的螢幕擷取畫面](media/bulk-enroll-name.png)
 
-4. 輸入您裝置的唯一名稱。 名稱可以包含序號 (%%SERIAL%%) 或一組隨機字元。 您也可以選擇輸入產品金鑰 (如果您正在升級 Windows 的版本)、將裝置設定為共用，以及移除預先安裝的軟體。
-
+4. 輸入您裝置的唯一名稱。 名稱可以包含序號 (%SERIAL%) 或一組隨機字元。 您也可以選擇輸入產品金鑰 (如果您正在升級 Windows 的版本)、將裝置設定為共用，以及移除預先安裝的軟體。
    ![在 Windows 設定設計工具應用程式中指定名稱和產品金鑰的螢幕擷取畫面](media/bulk-enroll-device.png)
 
 5. 您可以選擇設定裝置第一次啟動時要連線的 Wi-Fi 網路。  如果未設定網路裝置，則裝置第一次啟動時需要有線網路連線。

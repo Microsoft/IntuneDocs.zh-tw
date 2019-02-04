@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460050"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
 
@@ -52,12 +52,12 @@ ms.locfileid: "52187907"
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>建立您的商務用 Microsoft 網上商店帳戶與 Intune 的關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰
-1. 請確定使用您用來登入 Intune 的相同租用戶帳戶來登入商務用市集。
-2. 在商務用市集中，選擇 **[設定]** > **[管理工具]**。
-3. 在 [管理工具] 頁面上，選擇 **[Add a management tool (新增管理工具)]**，然後選擇 **[Microsoft Intune]**。
+1. 確定您登入[商務用 Microsoft Store](https://www.microsoft.com/business-store) 的租用戶帳戶，與您用來登入 Intune 的帳戶相同。
+2. 在商務用市集中，選擇 [管理] 索引標籤，選取 [設定]，然後選擇 [散發] 索引標籤。
+3. 如果您未特別將 **Microsoft Intune** 設定為行動裝置管理工具，請選擇 [新增管理工具] 以新增 **Microsoft Intune**。 如果您未啟用 **Microsoft Intune** 作為行動裝置管理工具，請按一下 [Microsoft Intune] 旁邊的 [啟用]。 請注意，您應該啟用 [Microsoft Intune]，而不是 [Microsoft Intune 註冊]。
 
 > [!NOTE]
-> 您先前可能只建立了某個用來指派應用程式的管理工具與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。
+> 您先前可能只建立了某個用來指派應用程式的管理工具與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 
 
 您現在可以繼續進行，並在 Intune 主控台中設定同步處理。
 
@@ -92,13 +92,13 @@ ms.locfileid: "52187907"
 
 ## <a name="remove-apps"></a>移除應用程式
 
-若要移除從商務用 Microsoft Store 同步的應用程式，您需要登入商務用 Microsoft Store 並退還應用程式。
+若要移除從商務用 Microsoft Store 同步的應用程式，您需要登入商務用 Microsoft Store 並退還應用程式。 不論應用程式是否免費，程序都相同。 針對免費應用程式，市集會退款 $0 美元。 以下範例顯示免費應用程式的退款。 
 
 ![移除應用程式詳細資料的螢幕擷取畫面](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> 移除應用程式在私人市集中的可見性，並不會防止 Intune 將其同步。 您必須退還應用程式。
+> 移除應用程式在私人市集中的可見性，並不會防止 Intune 對該應用程式進行同步。 您必須對應用程式進行退款，才能將其完全移除。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [使用 Microsoft Intune 管理大量採購的應用程式與書籍](vpp-apps.md)

@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831627"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -42,7 +42,7 @@ Microsoft 為 Microsoft Intune 提供全球的技術、售前、帳單及訂閱�
 
 ## <a name="help-and-support-experience"></a>說明及支援體驗
 > [!TIP]   
-> 在 2019 年 1 月，向所有租用戶推出了新的說明及支援體驗。 如果您的租用戶還沒有這項新體驗，您可以在本文的 [Azure 說明 + 支援體驗](#azure-help-+-support-experience)中找到先前體驗的相關資訊。  
+> 新的說明及支援體驗適用於所有租用戶。 如果您在租用戶中看不到這個新體驗，請清除瀏覽器的快取並重新載入頁面。
 
 Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站](http://devicemanagement.microsoft.com)，以及從 Azure 入口網站中 Intune 下的所有刀鋒視窗 (或頁面) 進行存取。 
 
@@ -59,7 +59,7 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
 - **在 Azure 入口網站中：**
    - 從任何 Intune 刀鋒視窗或頁面選取 [說明及支援]
 
-   在 Azure 入口網站的任何位置從右上角選取 **?** 圖示 ，或從左側瀏覽窗格選取 [說明 + 支援]，即可開啟 Azure 的 [說明 + 支援]。 為獲得最佳體驗，請從 Intune 刀鋒視窗使用 [說明及支援]。  
+   在 Azure 入口網站的任何位置從右上角選取 **?** 圖示，或從左側瀏覽窗格選取 [說明 + 支援]，即可開啟 Azure 的 [說明 + 支援]。 為獲得最佳體驗，請從 Intune 刀鋒視窗使用 [說明及支援]。  
 
 透過新體驗，您可以存取 [需要協助嗎?] 檢視，如裝置管理儀表板中的下列影像所示：  
 ![裝置管理儀表板和 [需要協助嗎?] 頁面](./media/get-support/help-support-dashboard.png)
@@ -112,7 +112,7 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
 
 
 ## <a name="azure-help--support-experience"></a>Azure 說明 + 支援體驗
-下列資訊描述當您使用左側瀏覽窗格 [說明 + 支援]，或使用 Azure 入口網站右上角的 **?** 時 ，仍可從 Azure 入口網站存取的 Azure 說明 + 支援體驗。 從 2019 年 1 月開始，您無法從 Intune 刀鋒視窗上的 [說明及支援] 存取 Azure [說明 + 支援] 體驗。  
+下列資訊描述當您使用左側瀏覽窗格 [說明 + 支援] 或使用 Azure 入口網站右上角的 **?** 選項時，仍可從 Azure 入口網站存取的 Azure [說明 + 支援] 體驗。 從 2019 年 1 月開始，您無法從 Intune 刀鋒視窗上的 [說明及支援] 存取 Azure [說明 + 支援] 體驗。  
 
 ### <a name="create-an-online-support-ticket"></a>建立線上支援票證
 
