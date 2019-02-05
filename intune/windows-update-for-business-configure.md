@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831559"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737480"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -167,7 +167,7 @@ ms.locfileid: "54831559"
 > 在您發出暫停命令後，裝置會在下次簽入服務時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。
 > 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
 
-### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>解除安裝 Windows 10 軟體更新的最新版本 
+## <a name="uninstall-the-latest-from-windows-10-software-updates"></a>解除安裝 Windows 10 軟體更新的最新版本 
 如果您的 Windows 10 電腦上發生重大問題，可以選擇解除安裝 (復原) 最新功能更新或最新品質更新。 解除安裝功能或品質更新只適用於裝置所在的維護通道。 解除安裝將會觸發原則，以在 Windows 10 電腦上還原先前的更新。 特別是對於功能更新，您可以將能夠套用解除安裝最新版本的時間限制為 2-60 天。 若要設定軟體更新解除安裝選項：
 
 1. 在 Intune 中，選取 [軟體更新]。

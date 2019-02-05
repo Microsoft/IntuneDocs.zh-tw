@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203513"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229979"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能設定套用至您的裝置
 
@@ -123,7 +123,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 - Android Enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 及更新版本
 - Windows 10 團隊版
 
 ## <a name="delivery-optimization"></a>傳遞最佳化
@@ -174,7 +174,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 及更新版本
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 及更新版本
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 - iOS
 - macOS
 - Windows 8.1 (僅匯入)
+- Windows 10 及更新版本
 
 ## <a name="esim-cellular---public-preview"></a>eSIM 行動數據 - 公開預覽
 
@@ -241,7 +242,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 及更新版本
 
 ## <a name="windows-information-protection-profile"></a>Windows 資訊保護設定檔
 
