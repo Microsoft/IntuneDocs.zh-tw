@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: 設定裝置合規性
     items:
-    - name: 裝置合規性概觀
+    - name: 合規性概觀
       href: device-compliance-get-started.md
-    - name: 建立 Android 原則
+    - name: Android 合規性
       href: compliance-policy-create-android.md
-    - name: 建立 Android Enterprise 設定檔原則
+    - name: Android 企業合規性
       href: compliance-policy-create-android-for-work.md
-    - name: 建立原則以啟用 Google Play Protect
+    - name: 啟用 Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: 建立 iOS 原則
+    - name: iOS 合規性
       href: compliance-policy-create-ios.md
-    - name: 建立 Windows 原則
+    - name: Windows 合規性
       href: compliance-policy-create-windows.md
-    - name: 依據位置的原則
+    - name: 依據位置的合規性
       href: use-network-locations.md
     - name: 評估原則
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: 監視裝置合規性
       href: compliance-policy-monitor.md
-  - name: 設定裝置
+  - name: 設定裝置設定
     items:
-    - name: 使用設定檔以設定裝置
+    - name: 裝置設定概觀
       href: device-profiles.md
     - name: 裝置設定檔
       href: device-profile-create.md
     - name: 系統管理範本
       href: administrative-templates-windows.md
-    - name: 裝置功能 (iOS 及 MacOS)
+    - name: 裝置功能
       href: device-features-configure.md
-    - name: 裝置限制
+    - name: 限制裝置設定與功能
       href: device-restrictions-configure.md
-    - name: 傳遞最佳化
+    - name: 傳遞更新
       href: delivery-optimization-windows.md
-    - name: 版本升級及模式切換
+    - name: 升級版本和 S 模式
       href: edition-upgrade-configure-windows-10.md
-    - name: 電子郵件設定
+    - name: 設定電子郵件
       href: email-settings-configure.md
-    - name: Kiosk 設定
+    - name: 啟用 kiosk 模式
       href: kiosk-settings.md
-    - name: VPN 設定
+    - name: 新增 VPN
       href: vpn-settings-configure.md
       items:
       - name: 適用於 Android 的個別應用程式 VPN
         href: android-pulse-secure-per-app-vpn.md
       - name: 適用於 iOS 的個別應用程式 VPN
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi 設定
+    - name: 新增無線的 Wi-Fi 網路
       href: wi-fi-settings-configure.md
       items:
       - name: 使用預先共用金鑰的 Wi-Fi
         href: wi-fi-profile-shared-key.md
-    - name: 教育設定
+    - name: 教育版使用測試應用程式
       href: education-settings-configure.md
     - name: 共用的多重使用者裝置
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: 監視設定檔
       href: device-profile-monitor.md
-    - name: 針對設定檔進行疑難排解
+    - name: 常見問題和解答
       href: device-profile-troubleshoot.md
   - name: 保護裝置資料
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API 參考
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: 用來設定裝置的圖形 API
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 資源
   items:
   - name: Microsoft Intune 文件指南
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: 防止資料在未受管理的裝置上外洩
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504539"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645184"
