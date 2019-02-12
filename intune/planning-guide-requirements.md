@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c01e1d955fd8442e9d1ba24ed27164bb3c6bc694
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd3fc85b0d5cf55407daca1dee5f4c20ba22f498
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179989"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843233"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>決定使用案例的需求
 
@@ -65,6 +66,6 @@ ms.locfileid: "52179989"
     - Office 365 與應用程式保護原則
     - 企業營運 (LOB) 與應用程式保護原則
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 下一節提供[如何開發 Intune 推出計畫](planning-guide-rollout-plan.md)的指引。

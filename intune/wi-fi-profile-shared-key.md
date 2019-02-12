@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618181"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836382"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -122,7 +123,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP 型 Wi-Fi 設定檔範例
-下列範例包含 EAP 型 Wi-Fi 設定檔的 XML 程式碼：提供此範例是為了顯示適當的格式，並提供更多的詳細資料。 它只是範例，不適合作為您環境的建議設定。
+下例包含 EAP 型 Wi-Fi 設定檔的 XML 程式碼：提供此範例是為了顯示適當的格式，並提供更多的詳細資料。 它只是範例，不適合作為您環境的建議設定。
 
 
 ```
@@ -215,7 +216,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 2. 搜尋 XML 檔案，找出有名稱正確的檔案。
 3. 找到正確的 XML 檔案後，將 XML 程式碼複製並貼入 OMA-URI 設定頁面的 [資料] 欄位。
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳作法
 - 以 PSK 部署 Wi-Fi 設定檔之前，請確認裝置可以直接連接至端點。
 
 - 當輪替金鑰 (密碼或複雜密碼) 時，預期據此停機和規劃您的部署。 請考慮在非工作時間推送新的 Wi-Fi 設定檔。 此外，警告使用者連線可能會受到影響。

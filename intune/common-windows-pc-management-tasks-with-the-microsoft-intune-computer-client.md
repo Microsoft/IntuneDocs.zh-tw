@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56084e43d10a5594b37f5335bc0d9f1897414466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35ebc9ff72d07fb699f1a1bb6a6426219ae2832a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184534"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837538"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作
 

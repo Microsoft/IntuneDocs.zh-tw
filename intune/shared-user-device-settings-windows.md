@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: fb51ba835491da284ddd304bc038d16862c6dfc1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 707bb84df55fa202e3dc5241e3d7212039b17b3b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54205099"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841737"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>使用 Intune 管理共用裝置的 Windows 10 及更新版本設定
 
@@ -43,7 +44,7 @@ Windows 10 及更新版本裝置 (例如 Microsoft Surface) 可供許多使用�
   - **來賓**：在本機裝置上建立來賓帳戶。
   - **網域**：在 Azure Active Directory (AD) 中建立來賓帳戶。
   - **來賓和網域**：在本機裝置和 Azure Active Directory (AD) 中建立來賓帳戶。
-- **帳戶管理**：設定為 [啟用] 可自動刪除來賓所建立的本機帳戶，以及 AD 和 Azure AD 中的帳戶。 當使用者登出裝置或系統維護執行時，就會刪除這些帳戶。 啟用時，也請設定：
+- **帳戶管理**：設定為 [啟用] 可自動刪除來賓所建立的本機帳戶，以及 AD 和 Azure AD 中的帳戶。 當使用者登出裝置或系統維護執行時，就會刪除這些帳戶。 啟用時，亦請設定：
   - **帳戶刪除**：選擇何時刪除帳戶：[At storage space threshold] \(達到儲存空間閾值\)、[At storage space threshold and inactive threshold] \(達到儲存空間閾值和非使用中閾值\) 或 [Immediately after log-out] \(登出後立即\)。另請輸入：
     - **開始刪除閾值 (%)**：輸入磁碟空間百分比 (0-100)。 當總磁碟/儲存空間低於您輸入的值時，則會刪除快取的帳戶。 它會繼續刪除帳戶以回收磁碟空間。 非使用中時間最長的帳戶會最先遭到刪除。
     - **停止刪除閾值 (%)**：輸入磁碟空間百分比 (0-100)。 當總磁碟/儲存空間達到您輸入的值時，則會停止刪除。

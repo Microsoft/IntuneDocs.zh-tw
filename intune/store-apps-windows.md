@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ddac5b9fc7d03e0ef3e719e7c1d46d7881d2ac
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98f25ec1dce7b07fdd6271cea965b9d44b137221
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737945"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845749"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>將 Microsoft Store 應用程式新增至 Microsoft Intune
 
@@ -46,7 +47,7 @@ ms.locfileid: "53737945"
     - **AppStore URL**：輸入您想要建立之應用程式的 App Store URL。
     - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
-    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」。
@@ -57,5 +58,5 @@ ms.locfileid: "53737945"
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 Microsoft Store 應用程式只能指派給指派類型為**可用於已註冊裝置**的群組 (使用者從公司入口網站應用程式或網站安裝應用程式)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 - [將應用程式指派給群組](apps-deploy.md)

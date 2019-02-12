@@ -16,12 +16,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324968"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086211"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
 
@@ -124,7 +125,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 6.  針對 [裝置註冊] 類型請選擇 [受管理的應用程式]。
 7.  選擇 [Select the required apps] (選取必要的應用程式)，然後在 [目標 App] 刀鋒視窗上，選擇適用於 iOS、Android 或兩者的 **Managed Browser** 或 **Edge**。
 8.  選擇 [確定] 返回 [新增設定原則] 刀鋒視窗。
-9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用此文章稍後的各個章節，來了解您可以定義的不同金鑰和值組。
+9.  選擇 [組態設定]。 在 [設定] 刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 10. 完成後，請選擇 [確定]。
 11. 在 [新增設定原則] 刀鋒視窗上，選擇 [新增]。
 12. 就會建立新設定，然後在 [應用程式設定] 刀鋒視窗上顯示。
@@ -150,9 +151,9 @@ Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( htt
 ### <a name="before-you-start"></a>開始之前
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
-    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)。 
+    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。 
 - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
-- Managed Browser 或 Microsoft Edge 應用程式的使用者已將 [Intune 應用程式防護原則]( app-protection-policy.md)指派給應用程式。
+- Managed Browser 或 Microsoft Edge 應用程式的使用者已將 [Intune 應用程式防護原則](app-protection-policy.md)指派給應用程式。
 
     > [!NOTE]
     > 更新的應用程式 Proxy 重新導向資料，最多可能需要 24 小時才會在 Managed Browser 和 Microsoft Edge 中生效。
@@ -308,6 +309,6 @@ Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料�
 
 -   在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [什麼是應用程式保護原則？](app-protection-policy.md) 

@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eee495e1294392e495a1f8f632fa33c37325a9dd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203122"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842536"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>在 Intune 中簽署和加密電子郵件的 S/MIME 概觀
 

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866332"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844542"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>搭配使用 Windows 裝置與 Intune 公司入口網站
 

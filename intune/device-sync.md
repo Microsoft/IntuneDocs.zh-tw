@@ -14,12 +14,13 @@ ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179495"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846123"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
@@ -65,7 +66,7 @@ ms.locfileid: "52179495"
 | 2016330889 | 安全連線失敗。 請重設您的連線。 | 是|
 | 2016330888 | 伺服器信任評估失敗。 | 否|
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以[查看裝置的詳細資料](device-inventory.md)。
  

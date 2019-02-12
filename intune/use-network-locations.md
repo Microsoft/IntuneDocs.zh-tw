@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183667"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848180"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置 (網路範圍)
 
@@ -81,6 +82,6 @@ ms.locfileid: "52183667"
 
 當裝置連線至您的位置時，裝置在公司入口網站應用程式中會顯示為符合規範。 當裝置未連線至您的其中一個位置時，裝置會顯示為不符合規範。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [監視裝置合規性原則](compliance-policy-monitor.md)  
 [開始使用合規性原則](device-compliance-get-started.md)

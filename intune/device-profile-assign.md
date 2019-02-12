@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2cd71eabf3efeb6b3eaa897745ed0441c456cd60
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f489f4d53fde988dd9ce8c7c4cc61cbded701fc4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182290"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841210"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -50,5 +51,5 @@ Intune 裝置組態設定檔可讓您從原則指派排除群組。 例如，您
 
 如果您包含**所有裝置**，並排除**所有使用者**，則所有裝置都會收到原則。 在此情況下，目的是要排除此原則中有相關聯使用者的裝置。 不過，它不會排除裝置，因為排除只會比對直屬群組成員。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 請參閱[如何監視裝置設定檔](device-profile-monitor.md)以取得監視裝置設定檔指派的指示。

@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9fdd1891f8a0e893d61ac3a0b40dac5a01f602c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266897"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851333"
 ---
 # <a name="reference-for-current-user-entity"></a>Current User 實體的參考
 
@@ -43,6 +44,6 @@ ms.locfileid: "53266897"
 | StartDateInclusiveUTC |在資料倉儲中建立此使用者的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |前次在資料倉儲中修改此使用者的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
  - 您可以使用 **User** 實體集合來將使用者資料擴展到目前非作用中的使用者。 如需詳細資訊，請參閱 [User 實體的參考](reports-ref-user.md)。
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。

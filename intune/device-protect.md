@@ -3,8 +3,8 @@ title: 使用 Microsoft Intune 保護裝置
 titleSuffix: Microsoft Intune
 description: 了解 Intune 可協助您針對未經授權存取和其他威脅保護您裝置的幾個方式。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5743e1d24e878a84413c23c8309cda2ab0dda90
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188257"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844474"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保護裝置
 
@@ -59,7 +60,7 @@ Intune 可讓您與 [Windows Hello 企業版](windows-hello.md)整合，這是�
 ## <a name="bypass-activation-lock-on-ios-devices"></a>在 iOS 裝置上略過啟用鎖定
 「啟用鎖定」是一項能協助保護使用者裝置的功能。 這項功能會要求使用者必須先輸入其 Apple ID 和密碼，才能清除或重新啟用裝置。 不過，這項功能也可能會產生問題，例如使用者離職卻未移除鎖定的狀況。 [iOS 啟用鎖定略過]( device-activation-lock-bypass.md)可以移除受監督的 iOS 裝置鎖定，幫助您重新配置或將它們清除。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 深入了解 [Mobile Threat Defense](mobile-threat-defense.md)
 

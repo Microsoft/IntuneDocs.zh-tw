@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032328"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842043"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 以針對 SCEP 將協力廠商 CA 新增至 Intune
 
@@ -298,7 +299,7 @@ void SetSslSocketFactory(
 12. 確認已安裝之憑證的屬性符合 SCEP 設定檔中設定的屬性。
 13. 確認已核發的憑證正確地列在 Intune 主控台中
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [新增協力廠商 CA 概觀](certificate-authority-add-scep-overview.md)
 - [安裝 Intune](setup-steps.md)

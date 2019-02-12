@@ -15,12 +15,13 @@ ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c69fa80fb1c1f539252b8e25eb839090b87c97f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9efa4cc1a0dabf21cfc6ff02a5454e6af5c7b8c8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190229"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842519"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>開啟 iOS 受監管模式
 
@@ -47,6 +48,6 @@ Intune 在 Apple [裝置註冊計劃 (DEP)](device-enrollment-program-enroll-ios
 - 裝置的鎖定畫面上會顯示**此 iPhone 是由「公司名稱」管理。**
 - 裝置的 [關於] 頁面上會顯示**此 iPhone 已被監管。「公司名稱」可以監控您的 Internet 流量並定位此裝置。**
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需其他裝置管理選項，請參閱[什麼是 Microsoft Intune 裝置管理？](device-management.md)

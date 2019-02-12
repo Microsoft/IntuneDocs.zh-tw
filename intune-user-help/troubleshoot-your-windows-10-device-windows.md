@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150691"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837572"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>針對您的 Windows 10 裝置註冊進行疑難排解
 如果您遵循[在 Intune 中註冊您的 Windows 10 行動裝置版或 Windows 10 桌面版裝置](enroll-your-w10-phone-or-w10-pc-windows.md)中的步驟，但仍然無法存取工作或學校電子郵件及檔案，請嘗試下列疑難排解步驟。

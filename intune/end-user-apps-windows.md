@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1fa409619d5c0fc0c0fc32573f9a7346350191e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 789477f8f29ea46ab8dd45944fee7d766d63940f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188716"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849545"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
 
@@ -36,6 +37,6 @@ ms.locfileid: "52188716"
 
 **未受管理的應用程式** - 可透過原則進行管理，以及未受 Intune 包裝或不包含 Intune App SDK。 應用程式保護原則不適用於這些應用程式。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)
 [iOS 使用者如何取得其應用程式](end-user-apps-android.md)

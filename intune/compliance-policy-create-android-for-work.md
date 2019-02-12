@@ -15,12 +15,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aab8208865fb072170a670d1da25e7f02448c38f
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1d29399b4aaecbee06118e2331c1f0911d7c8caa
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642858"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842468"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>在 Intune 中為 Android Enterprise 裝置新增裝置合規性政策
 
@@ -28,7 +29,7 @@ ms.locfileid: "53642858"
 
 您也可以取得裝置報表，並針對不符合規範的裝置採取動作，例如傳送通知電子郵件給使用者。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
-此文章列出您可以在執行 Android Enterprise 的裝置合規性政策中使用的設定。
+本文列出您可以在執行 Android Enterprise 的裝置合規性政策中使用的設定。
 
 ## <a name="non-compliance-and-conditional-access"></a>不符合規範和條件式存取
 
@@ -57,7 +58,7 @@ ms.locfileid: "53642858"
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
 4. 針對 [平台]，選取 [Android 企業]。 
-5. 選擇 [組態設定]。 輸入 [裝置健全狀況]、[裝置屬性] 和 [系統安全性] 設定，如此文章中所述。
+5. 選擇 [組態設定]。 輸入 [裝置健全狀況]、[裝置屬性] 和 [系統安全性] 設定，如本文中所述。
 
 ## <a name="device-health"></a>Device health
 
@@ -158,7 +159,7 @@ ms.locfileid: "53642858"
 
 您已將原則套用至使用者。 系統將會評估原則目標使用者所使用的裝置是否符合規範。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
 [監視 Intune 裝置合規性原則](compliance-policy-monitor.md)  
 [適用於 Android 的合規性政策設定](compliance-policy-create-android.md)

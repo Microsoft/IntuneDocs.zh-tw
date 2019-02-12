@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7f2ccccd76149c34f227ecc4d9eadec091ce93f1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c816cf46a85c602327c833104c94e6b90f66ea44
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189245"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838915"
 ---
 # <a name="view-and-correct-personal-data"></a>檢視及更正個人資料
 
@@ -49,6 +50,6 @@ Microsoft 使用嚴格的控制來管理客戶資料的存取，授與完成重�
 系統管理員無法更新裝置或應用程式的特定資訊。 如果使用者要更正任何個人資料 (例如裝置名稱)，他們必須在其裝置上直接這樣做。 這類變更會在下次連線至 Intune 時同步。
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 了解如何在 Intune 中[稽核、匯出或刪除](privacy-data-audit-export-delete.md)個人資料。

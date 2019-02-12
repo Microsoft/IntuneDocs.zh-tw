@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b7e187bb182db0491e055ce3af3833d82e578de
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186455"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842400"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>建立群組來管理您的使用者和資料存取
 
@@ -43,7 +44,7 @@ Microsoft Intune 使用 Azure Active Directory (Azure AD) 來管理公司資源�
 
 如果您已成功建立群組，它應該會出現在 [所有群組] 清單中。 如果未出現，請嘗試建立另一個群組。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [開始使用原則](get-started-policies.md) - 建立原則，以防止使用者透過其裝置執行未經授權的動作。
 

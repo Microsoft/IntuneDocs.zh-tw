@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bcf66037995c6b5cb2b0c5b3f090d3af2e42cd6a
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8339f91468abca548b3923df4d4380aabb88c5a8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53262880"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848707"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
@@ -181,5 +182,5 @@ ms.locfileid: "53262880"
 4. 選取 [條件式存取] > [原則]。
 5. 在 [原則名稱] 清單中，選取每個測試原則的操作功能表 ([...])，然後選取 [刪除]。 選取 [是] 確認。
 
- ## <a name="next-steps"></a>接下來的步驟 
+ ## <a name="next-steps"></a>後續步驟 
 在本教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式來執行的動作，並已建立條件式存取原則來要求使用 Outlook 應用程式，以及針對新式驗證用戶端要求使用 MFA。 若要了解如何使用 Intune 搭配條件式存取來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。

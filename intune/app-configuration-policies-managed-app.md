@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4b15200ad5fc4f8fb272618925ee758100ebde72
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829091"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851520"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -64,6 +65,6 @@ Intune 支援組態設定中的下列權杖類型。 不支援其他自訂的索
 > [!Note]  
 > \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 一如往常般地繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。

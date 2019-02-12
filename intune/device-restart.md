@@ -14,12 +14,13 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7e9ec9d309efb89badfc7b61f50d1b0e8a2c041
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068266"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842740"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -30,8 +31,8 @@ ms.locfileid: "55068266"
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- Windows - Windows 8.1 和更新版本上可支援
-- Windows Phone - Windows Phone 8.1 和更新版本上可支援
+- Windows - 支援 Windows 8.1 和更新版本
+- Windows Phone - 支援 Windows Phone 8.1 和更新版本
 - Android Kiosk 裝置 - Android 7.0 和更新版本上可支援
 - iOS - 支援
 

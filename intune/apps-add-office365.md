@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2e48df354750698203aae2586bee03075f0cee00
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266965"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848937"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -75,7 +76,7 @@ ms.locfileid: "53266965"
     - **發行者**：Microsoft 會顯示為發行者。
     - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 此設定可讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式套件。
     - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
-    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **開發人員**：Microsoft 會顯示為開發人員。
     - **擁有者**：Microsoft 會顯示為擁有者。
@@ -146,6 +147,6 @@ ms.locfileid: "53266965"
 | 隨選即用用戶端無法啟動 (非預期) | 17000 | - | 隨選即用 |
 | 隨選即用用戶端無法將案例排入佇列 (非預期) | 17001 | - | 隨選即用 |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 若要將應用程式指派給您選擇的群組，請參閱[將應用程式指派給群組](/intune-azure/manage-apps/deploy-apps)。

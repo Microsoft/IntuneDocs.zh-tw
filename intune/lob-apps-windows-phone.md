@@ -16,18 +16,19 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9fa39f212c9979a9986bba5537f0c9a2b5e01c8c
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0b0325e1c199d991ffd8eae93616c0ccb2da8ccd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642637"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846208"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用此文章中的資訊，將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune。 LOB 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 Intune 會將 LOB 應用程式安裝在使用者的裝置上。 
+使用本文中的資訊，將 Windows Phone 企業營運 (LOB) 應用程式新增至 Microsoft Intune。 LOB 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 Intune 會將 LOB 應用程式安裝在使用者的裝置上。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 
@@ -54,7 +55,7 @@ ms.locfileid: "53642637"
     - **發行者**：輸入應用程式發行者的名稱。
     - **類別**：選取一或多個內建的應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
-    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
@@ -67,7 +68,7 @@ ms.locfileid: "53642637"
 1. 在 [新增應用程式] 窗格中，確認您所設定的資訊正確無誤。
 2. 選取 [新增]，將應用程式上傳至 Intune。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 您所建立的應用程式會出現在應用程式清單中。 您現在可以將它指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 

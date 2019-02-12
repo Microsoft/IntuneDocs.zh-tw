@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4f0c5d79c17c3cc2ada275337d266c134eed7e91
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0698a6b3010ad2177d4f593bf4d75ea2ff6a31dc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642535"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839189"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -54,7 +55,7 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
     - **發行者**：輸入此應用程式發行者的名稱。
     - **應用程式 URL**：輸入裝載您要指派之應用程式的網站 URL。
-    - **類別**：您可以選擇性地選取一或多個內建應用程式類別，或您自己建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
+    - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：選取此選項，當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式套件。
     - **需要受管理瀏覽器以開啟此連結**：選取此選項時，可將網站或 Web 應用程式的連結指派給使用者，以讓他們在 Intune Managed Browser 中開啟連結。 他們的裝置上必須安裝此瀏覽器。
     - **標誌**：上傳要與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
@@ -66,6 +67,6 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
 >
 > 目前，將 Intune Web 應用程式部署到 iOS 裝置會與管理設定檔相關聯，因而無法手動移除。 您可以在 Intune 入口網站中將部署類型變更為 [解除安裝]，此時系統便可以自動移除 Web 應用程式。 不過，如果在將應用程式指派意圖變更為 [解除安裝] 之前移除部署，Web 應用程式將會永久保留在裝置上，直到從 Intune 取消註冊該裝置為止。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 如需相關說明，請參閱[將應用程式指派給群組](apps-deploy.md)。 

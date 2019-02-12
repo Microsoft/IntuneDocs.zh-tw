@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887129"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844610"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 行動裝置管理 (MDM) 生命週期的概觀
 
@@ -47,6 +48,6 @@ ms.locfileid: "52887129"
 ## <a name="retire"></a>淘汰
 當裝置遺失或遭竊而必須進行取代，或當使用者移至另一個位置時，通常是[淘汰或抹除](device-management.md)裝置的時候。 有數種方式可執行此動作，包含重設裝置、從管理中移除裝置，或抹除裝置上的公司資料。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 深入了解 [Microsoft Intune 裝置管理](device-management.md)

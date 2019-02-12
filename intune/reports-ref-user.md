@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 52201b68e946ec59b7c70ea5ff735c26728e27ce
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 61ec5fbe3504f972085af49e6860f4258cfc9484
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429724"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835260"
 ---
 # <a name="reference-for-user-entity"></a>使用者實體的參考
 
@@ -47,6 +48,6 @@ ms.locfileid: "53429724"
 | IsCurrent |指出此資料列是否代表該使用者的最新狀態。 針對單一使用者可能會有多個資料列存在，但只有其中一個代表目前的狀態。  |True/False |
 | RowLastModifiedDateTimeUTC |資料列最近一次在資料倉儲中被修改的 UTC 日期和時間  |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
  - 您可以使用 **Current User** 實體集合來將使用者資料限制於目前作用中的使用者。 如需詳細資訊，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。

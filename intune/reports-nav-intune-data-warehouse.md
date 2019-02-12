@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1c8808e21fd75a64a5074adb1507d6ed36fff47e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429639"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839306"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 資料倉儲 API
 
@@ -62,7 +63,7 @@ API 需要使用 Azure AD 進行授權。 Azure AD 使用 OAuth 2.0。 授權之
 
 OData 會定義抽象資料模型和通訊協定，可讓任何資料來源所公開的任何用戶端存取資訊。 資料模型文件主題包含 Intune 資料倉儲資料模型中命名空間、實體和傳回物件的說明。 如需詳細資訊，請參閱[資料倉儲資料模型](reports-ref-data-model.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 藉由閱讀 [Azure AD 的驗證案例](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)，深入了解使用 Azure AD。
 

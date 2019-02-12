@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 521f33b0c4cfa0f1f4ba534acc2f3fec9a53f151
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a785b903c937af27fc0dc14d75fb4865fa939b65
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429622"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834886"
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
@@ -53,6 +54,6 @@ ms.locfileid: "53429622"
 | CalendarQuarter |                    日曆季度                    |          3           |
 |  CalendarYear   |                     日曆年度                      |         2016         |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。

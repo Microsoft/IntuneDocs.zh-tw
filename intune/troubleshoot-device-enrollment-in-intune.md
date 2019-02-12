@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bc2ee6c8281e035cbbb6cf41b7f41c208d3c04c8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112914"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835192"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
 
@@ -396,7 +397,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 ## <a name="macos-issues"></a>macOS 問題
 
 ### <a name="macos-enrollment-errors"></a>macOS 註冊錯誤
-**錯誤訊息 1：** *您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*   
+**錯誤訊息 1：** *您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*  
 
 **錯誤訊息 2：** *我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。* 
 
@@ -497,5 +498,5 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 
-### <a name="next-steps"></a>接下來的步驟
+### <a name="next-steps"></a>後續步驟
 如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](get-support.md)中所述)。

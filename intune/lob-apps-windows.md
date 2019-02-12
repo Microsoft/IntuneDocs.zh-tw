@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 551fd188ef22b5bf9516e51604d20d43efca5608
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 96b1bc23189faaad8aa8dd279352ef74c0b36e4b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642671"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845426"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -85,7 +86,7 @@ ms.locfileid: "53642671"
 
 這項功能對於不陷入競爭狀況很有用。 例如，本應該由應用程式開發人員自動更新的應用程式，卻由 Intune 來進行更新，這時候就會發生競爭狀況。 二者或許想在 Windows 用戶端上強制執行某一版的應用程式，這樣就會發生衝突。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 您所建立的應用程式會出現在應用程式清單中。 您現在可以將它指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
 

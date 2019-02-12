@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 82d6ef4494ee85e86b42d0c500c6f5b26bb00d27
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d20d429922fb66b4dd28125eecf92c7e567d5ea5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179689"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836926"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中稽核、匯出或刪除個人資料
 
@@ -79,6 +80,6 @@ Intune 管理員可以使用稽核記錄來追蹤與個人資料相關的活動�
 2. 從 Configuration Manager 主控台中刪除使用者，以從 Configuration Manager 中移除使用者和相關聯資料。 在主控台中，移至 [Asset and Compliance] \(資產與合規性\) > [使用者]，以滑鼠右鍵按一下要刪除的使用者，然後按一下 [刪除]。
 3. [從 AAD 中刪除使用者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)，這會同時從 Azure Active Directory 和 Intune 中移除使用者和相關聯資料。 從 AAD 中刪除 (實刪除) 使用者時，Intune 會從 AAD 收到刪除訊號，然後自動開始從 Intune 服務中清除該使用者的所有個人資料。 使用者的資訊會在移除動作的 30 天內，從 Intune 服務中刪除。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 了解如何在 Intune 中[稽核、匯出或刪除](privacy-data-audit-export-delete.md)個人資料。

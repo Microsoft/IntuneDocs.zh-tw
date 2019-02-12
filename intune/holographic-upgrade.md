@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfca0cb5b02fdf77fa9a0bab42af05fd04b5c140
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831287"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838881"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>將執行 Windows Holographic 的裝置升級至 Windows Holographic for Business
 
@@ -42,6 +43,6 @@ Microsoft Intune 包含許多設定，可協助管理和保護您的裝置。 �
  
 ## <a name="next-steps"></a>後續步驟
 
-設定檔已建立，但可能還不會執行任何動作。 請務必[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+雖然設定檔已建立，但它可能還不會執行任何動作。 請務必[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 您也可以針對 [Windows 10 及更新版本](edition-upgrade-windows-settings.md)裝置建立版本升級設定檔。

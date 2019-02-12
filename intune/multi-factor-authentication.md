@@ -15,12 +15,13 @@ ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e48e782a3da5f7b367236218e8ec036a5c1b7f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179706"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834087"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -64,6 +65,6 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 終端使用者在註冊其裝置時，現在必須使用第兩種形式的識別進行驗證，例如 PIN、電話或生物特徵辨識。

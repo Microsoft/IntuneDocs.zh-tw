@@ -15,12 +15,13 @@ ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b80dfeece38d5cbedd09ca0f7a05d5d867f6cfaa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8fc349636dc9bccc64782dec2c8d54d6f179bfc3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185146"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837606"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受監督的 iOS 裝置上略過啟用鎖定
 
@@ -85,6 +86,6 @@ Intune 的**略過啟用鎖定**遠端裝置動作無需使用者的 Apple ID �
 8.  裝置重設之後，會提示您輸入 *Apple ID* 及*密碼*。 將 [識別碼] 欄位保留空白，然後在 [密碼] 中輸入**略過碼**。 這會從裝置移除帳戶。 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以在 [管理裝置] 工作負載中，於裝置的詳細資料頁面上，檢查解除鎖定要求的狀態。

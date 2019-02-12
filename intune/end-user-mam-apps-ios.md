@@ -15,12 +15,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bc4ceb6fe8c96a80310ceb58e13850c65b676d0c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8a89354608be835302a3c09c9c491e116f453fad
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182376"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834393"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
 
@@ -65,5 +66,5 @@ ms.locfileid: "52182376"
 
 如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 帳戶隨即顯示，接著您可以選擇想要移除的帳戶。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [當 Android 應用程式交由應用程式防護原則管理時的行為](end-user-mam-apps-android.md)

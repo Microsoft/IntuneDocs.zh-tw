@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7fbe3371d86d02247922c87680605c9ea3a1f4df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817036"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845834"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速啟動：建立 iOS 的電子郵件裝置設定檔
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入門：建立 iOS 的電子郵件裝置設定檔
 
 在本快速入門中，您會看到如何建立 iOS 裝置的電子郵件裝置設定檔。 此設定檔指定 iOS 裝置上內建電子郵件應用程式所需的設定來連線至公司電子郵件。 電子郵件裝置設定檔可協助將各個裝置的設定標準化，並讓終端使用者不需要任何設定，就能從其個人裝置存取公司電子郵件。 若要進一步保護您的電子郵件，您可以使用電子郵件設定檔判斷裝置是否符合規範，然後設定條件式存取僅允許符合規範的裝置存取電子郵件。 如需電子郵件設定檔的詳細資訊，請參閱[如何在 Microsoft Intune 中設定電子郵件設定](email-settings-configure.md)
 

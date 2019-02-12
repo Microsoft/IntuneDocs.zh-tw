@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 21d9ad0b21b151d0131977a01e9d359735be4187
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: af9098a814d102765df1b1a5316cfeeedd4fbc4f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181304"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838337"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
@@ -86,6 +87,6 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 
 4.  在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

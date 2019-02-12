@@ -16,18 +16,19 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f1423b0f2f216f65026d2b1a7bf52dda39c9f88
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd4562b001eaefc8e10512a42b08d49385f75808
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642501"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834104"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>將 iOS 市集應用程式新增至 Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用此文章中的資訊，協助您將 iOS 市集應用程式新增至 Microsoft Intune。 iOS 市集應用程式就是 Intune 安裝於使用者裝置的應用程式。 使用者是您公司的員工。 會自動更新 iOS 市集應用程式。
+使用本文中的資訊，協助您將 iOS 市集應用程式新增至 Microsoft Intune。 iOS 市集應用程式就是 Intune 安裝於使用者裝置的應用程式。 使用者是您公司的員工。 會自動更新 iOS 市集應用程式。
 
 >[!NOTE]
 >雖然 iOS 裝置的使用者可以移除部分內建的 iOS 應用程式 (例如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果您的使用者刪除這些應用程式，則必須移至應用程式商店，並手動重新安裝。
@@ -61,7 +62,7 @@ ms.locfileid: "53642501"
     - **適用的裝置類型**：從清單中，選取應用程式所使用的裝置。
     - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
-    - **資訊 URL**：(選擇性) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。 此欄位只有系統管理員可以看到，並不會對您的使用者顯示。
     - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」。 此欄位只有系統管理員可以看到，並不會對您的使用者顯示。
@@ -72,6 +73,6 @@ ms.locfileid: "53642501"
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [將應用程式指派給群組](apps-deploy.md)

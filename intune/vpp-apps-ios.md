@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e8af65738e51d7c1a5d0b1a0779c210b09bc044
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305959"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835430"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 應用程式
 
@@ -178,6 +179,6 @@ Apple 提供建立和更新 VPP 權杖的直接協助。 如需詳細資訊，�
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>就我所知，Intune 每天都會與 Apple 自動同步應用程式授權，對嗎？
 Intune 會每天兩次與 Apple 同步應用程式授權。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 請參閱[如何監視應用程式](apps-monitor.md)，以取得協助您監視應用程式指派的資訊。

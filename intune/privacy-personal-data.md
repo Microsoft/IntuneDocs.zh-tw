@@ -2,8 +2,8 @@
 title: Intune 中的隱私權與個人資料
 description: 了解將在 Intune 中收集及處理哪些個人資料。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: article
@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 98debd35941cacd3b83bd47805cc70ccc9afb5cc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58b34b7967aeceba8f34e23fbff090c5457fe66f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181019"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838898"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Intune 中的隱私權與個人資料
 
@@ -36,6 +37,6 @@ Microsoft Intune 不會使用提供服務時所收集的任何個人資料進行
 
 您可在 Intune 公司入口網站應用程式中顯示貴公司的條款和條件。 如此一來，使用者就可在 Intune 中註冊並存取公司資產和資料之前，檢閱這些條款和條件，包括隱私權聲明。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 深入了解 Intune 如何[收集](privacy-data-collect.md)、[儲存和處理](privacy-data-store-process.md)，以及[共用](privacy-data-secure-share.md)個人資料。 

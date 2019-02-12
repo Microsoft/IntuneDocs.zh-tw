@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738047"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849198"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -437,7 +438,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 > [!NOTE]
 > 已針對使用 Intune App Wrapping Tool 版本 7.1.13 或更新版本包裝的應用程式啟用記錄功能。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)</br>
 - [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [使用 SDK 讓應用程式能夠管理行動裝置應用程式](app-sdk.md)

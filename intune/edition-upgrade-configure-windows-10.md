@@ -15,12 +15,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3eea1d1f100515b29dfda3b2297005f61e05ea23
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b1539a1c373126df13ed3e951bb0d4ecae728fd3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831610"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851486"
 ---
 # <a name="upgrade-windows-10-editions-or-enable-s-mode-on-devices-using-microsoft-intune"></a>使用 Microsoft Intune 在裝置上升級 Windows 10 版本或啟用 S 模式
 
@@ -110,7 +111,7 @@ ms.locfileid: "54831610"
 
 4. 選取 [確定] > [建立] 儲存您的變更。 
 
-設定檔隨即建立，並顯示在清單中。 請務必[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+設定檔隨即建立，並顯示在清單中。 請確認會[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

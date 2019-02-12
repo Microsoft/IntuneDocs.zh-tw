@@ -16,12 +16,13 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 92416bf0b26855ef675fbb939eb2745e73003285
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642603"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834733"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
@@ -72,7 +73,7 @@ Windows 10 LOB 應用程式會簽署及上傳至 Intune 管理主控台，並可
 
 如需使用 Microsoft Intune 指派應用程式的詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)和 [Microsoft Intune 的包含與排除應用程式指派](apps-inc-exl-assignments.md)。 如需 Intune 應用程式類型的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 若要深入了解如何應用程式指派給群組，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 - 若要深入了解監視應用程式指派，請參閱[如何監視應用程式](apps-monitor.md)。

@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 64dc02be20ecc15574959d50f1cfc89542c484fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: daeda6918442b9a2fc8b344a73873258cd738a7b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181423"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836421"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>使用自助式密碼重設減少技術支援中心成本
 
@@ -34,7 +35,7 @@ ms.locfileid: "52181423"
 3. 為供日後參考，請將[如何重設或變更密碼](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)的指示提供給員工和學生。
 4. [啟用自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 深入了解下列文章：
 * [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 

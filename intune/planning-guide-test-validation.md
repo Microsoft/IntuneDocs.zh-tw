@@ -15,12 +15,13 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2a733eb92dba91c5e11d6ec463eb538df3845fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112454"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834308"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -76,7 +77,7 @@ ms.locfileid: "53112454"
 
 ![第 9 節表 3](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 現在您已測試並驗證您的 Intune 功能和使用案例，因此可以[推出 Intune 產品](planning-guide-rollout-plan.md)。
 

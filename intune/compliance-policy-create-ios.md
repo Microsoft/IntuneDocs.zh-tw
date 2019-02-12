@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28f6cfe3b97381cd60bf485b8110cfa602ea9133
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112505"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838592"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中為 iOS 裝置新增裝置相容性原則
 
@@ -34,9 +35,9 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 
 | **原則設定** | **iOS 8.0 及更新版本** |
 | --- | --- |
-| **PIN 碼或密碼設定** | 已修復 |
+| **PIN 或密碼設定** | 已修復 |
 | **裝置加密** | 已修復 (藉由設定 PIN 碼) |
-| **已進行 JB 或 Root 破解的裝置** | 隔離 (非設定)
+| **已越獄或 Root 的裝置** | 隔離 (非設定)
 | **電子郵件設定檔** | 已隔離 |
 |**最低 OS 版本** | 已隔離 |
 | **最高 OS 版本** | 已隔離 |
@@ -68,7 +69,7 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 
 - **需要行動裝置具有受管理的電子郵件設定檔**：如果您將此項設定為 [要求]，則裝置若沒有 Intune 管理的電子郵件設定檔，就會視為不合規範。 當裝置未正確設為目標時，或者如果使用者手動設定裝置上的電子郵件帳戶，則裝置可能沒有受控電子郵件設定檔。
 
-  在下列情況，裝置會被視為不相容︰
+  在下列情況下，裝置視為不相容︰
   - 電子郵件設定檔部署到合規性政策的目標使用者群組以外的使用者群組。
   - 使用者已經在裝置上設定符合部署到該裝置之 Intune 電子郵件設定檔的電子郵件帳戶。 Intune 無法覆寫使用者所佈建的設定檔，因此也無法加以管理。 若要確保相容，使用者必須移除現有電子郵件設定。 然後 Intune 可以安裝受管理的電子郵件設定檔。
 
@@ -76,7 +77,7 @@ Intune iOS 裝置相容性原則決定 iOS 設備必須符合的規則和設定�
 
 如需電子郵件設定檔的詳細資訊，請參閱[使用 Microsoft Intune 的電子郵件設定檔設定對公司電子郵件存取](email-settings-configure.md)。
 
-## <a name="device-health"></a>裝置健全狀況
+## <a name="device-health"></a>Device health
 
 - **破解的裝置**：如果您啟用此設定，已進行 JB 破解的裝置即不相容。
 - **裝置須等於或低於裝置威脅等級** (iOS 8.0 及更新版本)：選擇最高威脅層級以將裝置標記為不符合規範。 超過此威脅層級的裝置會標示為不合規範：

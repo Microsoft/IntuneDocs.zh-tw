@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b8694596851c231c4c7d1a8a5edd448a7506f829
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52adb8b21189e4c0cf39f1b18f95b7ba68ff97f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186302"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833730"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 使用者如何取得其應用程式
 
@@ -51,7 +52,7 @@ Apple 限制禁止公司入口網站應用程式中列出企業營運應用程�
 
 如需如何新增應用程式的資訊，請參閱[如何將應用程式新增至 Microsoft Intune](apps-add.md)。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)
 
 [Windows 使用者如何取得其應用程式](end-user-apps-windows.md)

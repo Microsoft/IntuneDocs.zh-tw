@@ -14,12 +14,13 @@ ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b708ed69817ca85dc6648242ceafbdfa25b91fc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2188a5a67111b666def107d5f38282adc9780323
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180692"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835570"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 在 iOS 裝置上啟用遺失模式
 
@@ -55,6 +56,6 @@ ms.locfileid: "52180692"
 - 位置資料在儲存和傳送時皆會加密。
 - 在您輸入的鎖定螢幕顯示訊息中，請務必包含特定的詳細資料以便歸還遺失的裝置。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要查看啟用中的遺失模式狀態，請開啟 [裝置]，然後選取 [裝置動作]。

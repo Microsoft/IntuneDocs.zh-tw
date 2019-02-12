@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203496"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841329"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 將受管理的應用程式設定成符合您組織的安全性需求，以及保護工作和學校資料。 這些應用程式會在您的裝置上提供給您自動安裝或使用。 

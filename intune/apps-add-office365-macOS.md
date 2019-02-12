@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185401"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844246"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
@@ -52,13 +53,13 @@ ms.locfileid: "52185401"
     - **套件描述**：輸入應用程式套件的描述。
     - **發行者**：Microsoft 會顯示為發行者。
     - **類別**：選取一或多個內建應用程式類別，或選取您建立的類別。 此設定可讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式套件。
-    - **將此顯示為公司入口網站中的精選應用程式**：若選取此選項，當使用者瀏覽應用程式時，應用程式套件會醒目地顯示在公司入口網站的主頁面上。
-    - **資訊 URL**：選擇是否要輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
-    - **隱私權 URL**：選擇是否要輸入包含此應用程式隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
     - **開發人員**：Microsoft 會顯示為開發人員。
-    - **擁有者**；Microsoft 會顯示為擁有者。
-    - **注意**：選擇是否要輸入與此應用程式相關聯的任何附註。
-    - **標誌**：使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
+    - **擁有者**：Microsoft 會顯示為擁有者。
+    - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
+    - **標誌**：當使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
 9. 選取 [確定]。
 10. 在 [新增應用程式] 窗格中，選取 [新增]。  
     套件會在應用程式清單中顯示為單一項目。
@@ -81,7 +82,7 @@ ms.locfileid: "52185401"
 6. 在 [新增群組] 窗格中，選取 [確定]。
 7. 若要認可您的指派，請選取 [儲存]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 若要了解如何將 Office 365 應用程式新增到 Windows 10 裝置，請參閱[使用 Microsoft Intune 將 Office 365 ProPlus 2016 應用程式指派給 Windows 10 裝置](apps-add-office365.md)。
 - 若要深入了解包含和排除使用者群組的應用程式指派，請參閱[包含與排除應用程式指派](apps-inc-exl-assignments.md)。

@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067426"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834172"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>快速啟動：免費試用 Microsoft Intune 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune 
 
 Microsoft Intune 透過管理裝置和應用程式來協助您保護員工的公司資料。 在此快速入門中，您將建立免費訂用帳戶，以在測試環境中試用 Intune。
 

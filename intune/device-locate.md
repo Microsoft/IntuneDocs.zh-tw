@@ -14,12 +14,13 @@ ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3f4d63a2e749e1070bd5969d6f8a3046f6bcc4e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 96d4143b5105a174ba47c8c7a713ae7bee9bcb94
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182171"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835726"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 尋找遺失或遭竊的 iOS 裝置
 
@@ -65,6 +66,6 @@ ms.locfileid: "52182171"
 - 位置資料在儲存和傳送時皆會加密。
 - 當您設定遺失模式時，您可以自訂在鎖定畫面中顯示的訊息。 在此訊息中，為協助尋找裝置的人員，請務必包含特定的詳細資料以便歸還遺失的裝置。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要查看啟用中的尋找裝置狀態，請開啟 [裝置]，然後選取 [裝置動作]。

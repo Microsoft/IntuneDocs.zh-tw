@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 4808c30b1d69191d9082ce42fe38b10110d74922
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f2bdb86913610f1d1317269a7778afc796db4fe8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188207"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835515"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>檢視 Windows 電腦的硬體和軟體清查
 
@@ -67,6 +68,6 @@ Intune 會收集您使用 Intune 軟體用戶端作為電腦管理之桌上型�
 
     [工作狀態]  對話方塊會顯示目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤，並提供疑難排解資訊的連結。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

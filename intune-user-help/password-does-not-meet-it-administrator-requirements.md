@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150916"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837011"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>您的密碼不符合公司支援人員需求
 
@@ -47,7 +48,7 @@ ms.locfileid: "43150916"
 | **您的密碼是最近使用過的密碼**。 | 公司支援人員不允許您使用之前用過的舊密碼。 請選擇您之前未曾使用過的密碼。 |
 | **密碼不夠複雜，無法符合需求**。 | 公司支援人員要求您必須在密碼中使用多個複雜字元。 請嘗試使用數字、大寫的字母和 $ %和 # 這類符號。 這也適用於您裝置上的其他帳戶，因此請務必檢查任何其他工作帳戶，確保您的密碼符合 IT 為您的裝置所設定的需求。 |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需設定 PIN 或密碼的必要步驟，請參閱與您擁有之裝置類型相符的連結：
 

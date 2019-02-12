@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 17d88b4e4da81f878e8bbdb5e4fde5ad2375dde7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179860"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845659"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦
 
@@ -44,5 +45,5 @@ Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windo
 
 
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 原則管理裝置的設定及功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

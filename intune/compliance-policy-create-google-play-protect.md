@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c3c0d511439d6b18c7f04e5a493e2851d7997f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5963cb7de2994feb41c4679e87970aec4f127de5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179441"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848822"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>如何建立可啟用「Google Play 安全防護」的裝置合規性原則
 
@@ -60,6 +61,6 @@ ms.locfileid: "52179441"
 
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解如何使用 Intune 裝置合規性原則，請參閱[開始使用 Intune 裝置合規性原則](device-compliance-get-started.md)。

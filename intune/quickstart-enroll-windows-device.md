@@ -15,14 +15,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977332"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841810"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>快速啟動：註冊您的 Windows 10 裝置
+# <a name="quickstart-enroll-your-windows-10-device"></a>快速入門：註冊您的 Windows 10 裝置
 
 在此快速入門中，您會先扮演 Intune 使用者角色並在 Microsoft Intune 中註冊您的 Windows 10 裝置。 然後，您會返回 Intune 並確認已註冊的裝置。
 
@@ -99,7 +100,7 @@ ms.locfileid: "52977332"
 
 若要解除註冊您的 Windows 裝置，請參閱[從管理移除您的 Windows 裝置](/intune-user-help/unenroll-your-device-from-intune-windows)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已了解如何在 Intune 中註冊 Windows 10 裝置。 您可以了解跨所有平台註冊裝置的其他方式。 如需透過 Intune 使用裝置的詳細資訊，請參閱[使用受控裝置完成工作](/intune-user-help/use-managed-devices-to-get-work-done)。
 

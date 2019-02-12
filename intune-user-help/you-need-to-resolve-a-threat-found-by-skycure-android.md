@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149802"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844185"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解決 Symantec Endpoint Protection Mobile 找到的威脅
 
@@ -47,7 +48,7 @@ Symantec Endpoint Protection (SEP) Mobile 是 Mobile Threat Defender 服務，�
 
 ## <a name="resolve-an-app-threat"></a>解決應用程式威脅  
 
-如果您安裝的應用程式經判斷會對您的裝置造成威脅，將於 SEP Mobile 應用程式中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
+如果您安裝的應用程式經判斷會對您的裝置造成威脅，您會在 SEP Mobile 應用程式中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
 
 若要解決此問題，請從 SEP Mobile 的威脅清單中選取應用程式。 然後遵循畫面上的指示移除並解除安裝應用程式。  
 

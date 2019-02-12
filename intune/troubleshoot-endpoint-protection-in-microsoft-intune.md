@@ -16,12 +16,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f828394c48b5b7d55d9180da875d9cb3062f23c6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1de1722aa635367dac4b586e1333aed163156a83
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181678"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836671"
 ---
 # <a name="troubleshoot-endpoint-protection-in-intune"></a>Intune 中的 Endpoint Protection 問題疑難排解
 
@@ -47,5 +48,5 @@ ms.locfileid: "52181678"
 |**快速掃描逾期**|已有 14 天完成未完成快速掃描。 原因可能是在快速掃描期間重新啟動。|若快速掃描已逾期，您可以執行一次性的快速掃描或排定週期性快速掃描。 請參閱 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)。|
 |**其他 Endpoint Protection 應用程式正在執行**|其他 Endpoint Protection 應用程式正在執行且電腦狀況良好。|根據預設，如果已安裝其他 Endpoint Protection 應用程式，且 Intune 偵測到該應用程式，裝置可能會變得不穩定。|
 
-### <a name="next-steps"></a>接下來的步驟
+### <a name="next-steps"></a>後續步驟
 如果這項資訊對您沒有幫助，您也可以[取得 Microsoft Intune 支援](get-support.md)。

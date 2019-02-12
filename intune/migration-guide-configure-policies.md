@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1880d580a8719dcf72f54f9c22306bea001bc3b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031818"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834560"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>移轉至 Microsoft Intune 時設定裝置合規性和應用程式管理原則
 
@@ -94,6 +95,6 @@ ms.locfileid: "53031818"
 
 您必須註冊裝置才能管理裝置。 了解[如何準備好註冊公司擁有和使用者個人的裝置](device-enrollment.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [設定應用程式保護原則 (選用)](migration-guide-app-protection-policies.md)。

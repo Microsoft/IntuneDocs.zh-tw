@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190246"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840938"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
@@ -165,7 +166,7 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 
 ### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
 
-|         主機名稱         |                                        URL (IP 位址/子網路)                                        |  通訊協定  |     Port     |                          Device                           |
+|         Hostname         |                                        URL (IP 位址/子網路)                                        |  通訊協定  |     Port     |                          Device                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      管理主控台       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 和 macOS                    |
 |      管理主控台       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 和 macOS                    |

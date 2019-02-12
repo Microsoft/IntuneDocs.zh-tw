@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 646a72eaa3837b48b4af718904064fddaeb98955
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182494"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840377"
 ---
 # <a name="get-started-managing-users"></a>開始管理使用者
 
@@ -53,6 +54,6 @@ ms.locfileid: "52182494"
 
 5. 選取 [儲存]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [開始使用群組](get-started-groups.md) - 將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。

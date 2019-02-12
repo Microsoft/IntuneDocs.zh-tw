@@ -15,12 +15,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 071fe12df19a86e29bb7a36e3a6634fe5adb9fcd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112318"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848435"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 上的 Intune 主控台及舊版 Intune 電腦用戶端
 
@@ -63,7 +64,7 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
   ![](media/intune-legacy-pc-client/image02.png)
 2. 使用 [MDM (和/或 Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) 重新註冊該裝置。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [註冊 Windows 裝置](https://docs.microsoft.com/intune/windows-enroll)
 
  

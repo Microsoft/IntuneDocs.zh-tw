@@ -15,16 +15,17 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 68808e4a9e29ec8d965a733dae79a9b32f3c5ecd
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c0357744619f3e1905b97b27b5dbd2ec3ea5e0dc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149659"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838371"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解決 Mobile Threat Defense 應用程式找到的威脅
 
-Mobile Threat Defense 應用程式會在您的裝置上偵測潛在威脅並向您發出警示。 有些組織會將 Mobile Threat Defense 服務與 MDM 提供者 (例如 Intune) 整合。 整合之後，Mobile Threat Defense 服務會回報威脅 (例如可疑的應用程式、網路和 OS 弱點)，並在公司入口網站應用程式中通知您。 然後，您可以在 Mobile Threat Defense 應用程式中找到威脅和補救步驟的詳細資料。
+Mobile Threat Defense 應用程式會在您的裝置上偵測潛在威脅並向您發出警示。 有些組織會將 Mobile Threat Defense 服務與 MDM 提供者 (例如 Intune) 整合。 整合之後，Mobile Threat Defense 服務會回報威脅 (例如可疑的應用程式、網路和 OS 弱點)，並於公司入口網站應用程式中通知您。 然後，您可以在 Mobile Threat Defense 應用程式中找到威脅和補救步驟的詳細資料。
 
 您在公司入口網站中會看到這些威脅顯示為尚未解決、不符合要求的問題。 如果威脅歸類相當具風險，您的公司會撤銷您對公司資源的存取權。 只要這些威脅存在於您的裝置上，您可能無法：  
 

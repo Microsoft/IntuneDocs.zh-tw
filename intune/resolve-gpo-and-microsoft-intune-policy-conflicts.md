@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 2aee866d06a31c0fe188dd8fb313609043f0092f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c36585b8482cc679de6b86f933abed4411c2dc4a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190048"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837349"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
@@ -119,5 +120,5 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 必須隨著 Intune 服務中的註冊情形變化來維護新的安全性群組。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)

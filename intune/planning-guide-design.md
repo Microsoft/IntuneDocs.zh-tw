@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 192e0ac0e67fb519f1dcd2ff9faf0d7748942997
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112981"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834529"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -415,6 +416,6 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別條件式存取原則需求。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 下一節提供有關 [Intune 實作程序](planning-guide-onboarding.md)的指引。

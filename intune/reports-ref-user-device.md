@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: 02c579a7371a59a46cfb0017e6aa1a17af92bd03
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 341895e1de718f1bebdf840c3eabf79b67db9cf6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429554"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833886"
 ---
 # <a name="reference-for-user-device-association-entity"></a>使用者裝置關聯實體的參考
 
@@ -38,6 +39,6 @@ ms.locfileid: "53429554"
 |     IsDeleted      | 指出使用者已取消註冊該裝置，且關聯不再是最新的。 |       True/False       |
 |  EndedDateTimeUTC  |              IsDeleted 變更為 <strong>True</strong> 的 UTC 日期和時間。               | 06/23/2017 12:00:00 AM |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。

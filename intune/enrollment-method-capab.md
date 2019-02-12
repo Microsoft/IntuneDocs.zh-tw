@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aa71461b136243262146502adc0f7b925b345a0b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032124"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839323"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法的功能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -51,7 +52,7 @@ ms.locfileid: "53032124"
 |支援在混合式 Azure AD 加入之後自動註冊|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![核取記號](media/checkmark.png)|
 |支援在 Azure AD 加入之後自動註冊       |![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![核取記號](media/checkmark.png)|![X](media/xmark.png)|
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [設定 Windows 的註冊](windows-enroll.md)
 

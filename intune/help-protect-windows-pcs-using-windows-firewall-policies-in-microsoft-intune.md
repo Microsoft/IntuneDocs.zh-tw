@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 30532c87fe8b6e9d96bf00d45a29f4da4a99b9da
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181117"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849779"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
@@ -136,5 +137,5 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 |**Windows Virtual PC**<br>(Windows 7 或更新版本)|可讓虛擬機器與其他電腦通訊。|
 |**無線可攜式裝置**|可允許使用媒體傳輸通訊協定 (MTP)，將媒體從支援網路存取的相機或媒體裝置傳送到受管理電腦。 這項設定使用 SSDP 和 UPnP 網路通訊協定。|
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)

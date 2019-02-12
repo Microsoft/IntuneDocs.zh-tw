@@ -15,12 +15,13 @@ ms.reviewer: pmay
 ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: ed87f9d2554972a0affd9c93eca1804c460e6144
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 021c2e1e86219310eb34c4bba54d903246dbf28e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860974"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835022"
 ---
 # <a name="what-is-microsoft-intune"></a>什麼是 Microsoft Intune？
 
@@ -147,7 +148,7 @@ Azure 入口網站可以在時下絕大多數的電腦、 Mac 與平板電腦上
 
 如需所支援瀏覽器的最新資訊，請參閱 [Azure 入口網站](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 * 請閱讀一些[常見的 Intune 使用方式](common-scenarios.md)。
 * [使用 Intune 的 30 天試用](free-trial-sign-up.md)來熟悉產品。
 * 深入了解 Intune 的[技術需求和功能](supported-devices-browsers.md)。

@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98b3180bc90c7b54213781ddf8b6668918b22dd3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8bdb74c19e6b996bafc9284bfedaf0608fdf8fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54205021"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834614"
 ---
 # <a name="intune-tenant-status-page"></a>Intune 租用戶狀態頁面
 使用 [租用戶狀態] 頁面作為集中式中樞，以隨時掌握最新的租用戶重要詳細資料、授權可用性和使用、連接器狀態，以及 Intune 服務的相關重要通訊。  

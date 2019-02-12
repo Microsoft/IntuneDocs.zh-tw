@@ -1,6 +1,6 @@
 ---
 title: MAM 和應用程式保護的相關常見問題
-description: 此文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+description: 本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,16 +15,17 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6844fc94755805e95b56d3d457ada6ce54807874
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53306010"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846446"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
-此文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
+本文章提供 Intune 行動應用程式管理 (MAM) 與 Intune 應用程式保護相關常見問題的解答。
 
 ## <a name="mam-basics"></a>MAM 基本概念
 
@@ -192,7 +193,7 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 - 如果未指派 Intune 授權，簽入會每隔 24 小時發生。
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [實作您的 Intune 計劃](planning-guide-onboarding.md)
 - [Intune 測試與驗證](planning-guide-test-validation.md)
 - [Microsoft Intune 中的 Android 行動應用程式管理原則設定](app-protection-policy-settings-android.md)

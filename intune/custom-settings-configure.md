@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 808d2036cb30c4d396da41f5fe33f4f196baa8c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9dd1ea3b6365cd93d7df78597a2e379ebaec7103
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182885"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836365"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>在 Intune 中使用自訂設定建立設定檔
 
@@ -44,7 +45,7 @@ Microsoft Intune 包含許多內建設定，可控制裝置上的不同功能。
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
 - [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 選擇您的平台，並開始使用：
 

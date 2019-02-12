@@ -16,12 +16,13 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc9318d46892eab21e81c7eb2992f3476720abd1
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a651f926f8e8cc5beab80a70649c82677e0b2487
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642450"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833047"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>封鎖未使用新式驗證 (ADAL) 的應用程式
 
@@ -40,6 +41,6 @@ ms.locfileid: "53642450"
 >[!IMPORTANT]
 >以應用程式為基礎的 CA 不能搭配 Azure Active Directory (Azure AD) 憑證式驗證使用。 您一次只能設定其中一個項目。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)

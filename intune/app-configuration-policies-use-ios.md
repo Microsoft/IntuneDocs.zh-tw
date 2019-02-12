@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b5e6e5eba067048db96164d11e64d7d790b8cfba
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324934"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847415"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -102,9 +103,9 @@ Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft 
 
 針對 iOS 裝置，請使用下列機碼/值組：
 
-| **機碼** | IntuneMAMAllowedAccountsOnly |
+| **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **值** | <ul><li>**Enabled**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |。
+| **值** | <ul><li>**啟用**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |。
 
    > [!NOTE]
    > 只允許已設定的組織帳戶具有多重身分識別時，您必須使用 iOS 版 OneDrive 10.34 或更新版本和 iOS 版 Outlook 2.99.0 或更新版本，且必須使用 [Intune 應用程式保護原則](app-protection-policy.md)將應用程式設為目標。
@@ -177,6 +178,6 @@ Intune 支援屬性清單中的下列資料類型：
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>監視每個裝置的 iOS 應用程式設定狀態 
 一旦指派設定原則，您可以監視每個受控裝置的 iOS 應用程式設定狀態。 從 Azure 入口網站的 [Microsoft Intune] 中，選取 [裝置] > [所有裝置]。 從受控裝置清單中，選取特定的裝置以顯示裝置的刀鋒視窗。 在裝置的刀鋒視窗中，選取 [應用程式設定]。  
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 繼續[指派](apps-deploy.md)及[監視](apps-monitor.md)應用程式。

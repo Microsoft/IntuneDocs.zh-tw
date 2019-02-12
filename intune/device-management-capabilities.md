@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 22e184530dc0ae0e2bb636d3df8d5b45d8c4d0c7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 39fd7256b9db7590a3a6b601b8884494062fe897
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189484"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845290"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 的已註冊裝置管理功能
 
@@ -66,6 +67,6 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |VPN 設定檔|將 VPN 設定部署至組織中的使用者及裝置。 透過部署這些設定，即可最小化連線到公司網路上資源所需的使用者工作。|[Microsoft Intune 中的 VPN 連線](device-profiles.md#vpn)|
 |條件式存取原則|管理自未受 Intune 管理之裝置對 Microsoft Exchange 電子郵件及 SharePoint Online 的存取。|[使用 Microsoft Intune 限制電子郵件和 SharePoint 的存取](app-based-conditional-access-intune.md)|
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [See a list of devices that you can manage](device-management.md) (查看您可管理的裝置清單)。

@@ -15,12 +15,13 @@ ms.reviewer: travisj
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 705149f3399c016879f4743065630f66ecefd263
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d786880c6f1ee77bfbd0bdeb3a8dbe80221dc954
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570769"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839153"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune 教育版與 Intune 完整裝置管理體驗的差異為何？
 
@@ -40,7 +41,7 @@ Intune 教育版本身可單獨使用，或搭配 [Intune 中可用的完整裝�
 * 藉由協助控制使用者存取並共用組織資訊的方式，保護組織資訊。
 * 確保裝置和應用程式都符合安全性需求。
 
-### <a name="next-steps"></a>接下來的步驟
+### <a name="next-steps"></a>後續步驟
 * [使用 Intune 的 90 天免費試用](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)來熟悉產品。 如果您已經有存取權，請移至 (https://intuneeducation.portal.azure.com) 來開始操作。
 * 閱讀[開始使用 Intune 教育版](/intune-education/what-is-express-configuration)最快速的方法。
 * 深入了解 Intune 的[技術需求和功能](/intune/supported-devices-browsers)。

@@ -15,12 +15,13 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267000"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839375"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -98,7 +99,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 
 [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (針對封裝、部署及查詢 Microsoft 網上商店應用程式進行疑難排解) 主題中的資訊可協助您使用 Intune 或任何其他方法，為從 Microsoft 網上商店安裝應用程式時可能發生的常見問題進行疑難排解。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 如需其他 Intune 疑難排解資訊，請參閱[使用疑難排解入口網站來協助公司的使用者](help-desk-operators.md)。 
 - 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊，請參閱 [Microsoft Intune 中的已知問題](known-issues.md)。
