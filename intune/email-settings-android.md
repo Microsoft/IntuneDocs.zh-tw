@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4336be8d24ac4a81ec6fca09f22d594000bbd9a5
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5611fb75ebf8106e70c1735458ee8b33fec16f7d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831375"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838388"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>在 Intune 中設定電子郵件、驗證及同步處理的 Android 裝置設定
 
@@ -73,9 +74,9 @@ ms.locfileid: "54831375"
 - **要同步處理的內容類型**：選取您想要在裝置上同步處理的內容類型。 [未設定] 會停用此設定。 設為 [未設定] 時，如果終端使用者在裝置上啟用同步處理，則會在裝置與 Intune 同步時再次停用同步處理，因為此原則已經過強化。 
 
   您可以同步處理下列內容：  
-  - **連絡人**：選擇 [啟用] 以允許終端使用者將連絡人同步處理至其裝置。
-  - **行事曆**：選擇 [啟用] 以允許終端使用者將行事曆同步處理至其裝置。
-  - **工作**：選擇 [啟用] 以允許終端使用者將所有工作同步處理至其裝置。
+  - **連絡人**：選擇 [啟用] 以允許使用者將連絡人同步至其裝置。
+  - **行事曆**：選擇 [啟用] 以允許使用者將行事曆同步至其裝置。
+  - **工作**：選擇 [啟用] 以允許使用者將工作同步至其裝置。
 
 ## <a name="next-steps"></a>後續步驟
 
