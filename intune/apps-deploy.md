@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290735"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838762"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 

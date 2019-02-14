@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690796"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834716"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -57,7 +58,7 @@ ms.locfileid: "55690796"
 
 4. [裝置] 頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
     * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\)
-    * 如果您沒有任何裝置，橫幅會顯示：**您沒有任何受控裝置。Add this one by tapping here. \(您沒有任何受控裝置。請點選這裡新增這部裝置。\) 按一下橫幅以新增您的裝置。  
+    * 如果您沒有任何裝置，橫幅會顯示：**您沒有任何受控裝置。Add this one by tapping here. \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
 
      ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成符合您目前在公司入口網站中看到訊息的下列步驟。  
