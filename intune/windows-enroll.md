@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9951c1e2be1824936d757bfa74f4c82eeaf5e498
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626030"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834444"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -83,6 +84,12 @@ Contoso DNS 系統管理員應該建立下列 CNAME：
 
 DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播完成之前，您無法在 Intune 中驗證 DNS 變更。
 
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>支援但不建議使用其他端點
+EnterpriseEnrollment-s.manage.microsoft.com 是註冊慣用的 FQDN；但在過去，客戶還會使用其他兩個支援的端點。 EnterpriseEnrollment.manage.microsoft.com (沒有 -s) 和 manage.microsoft.com 會作為自動探索伺服器的目標，但使用者必須在確認訊息上觸控 [確定]。 如果您指向 EnterpriseEnrollment-s.manage.microsoft.com，使用者就不必執行其他確認步驟，因此這是建議的設定
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>不支援重新導向的替代方法
+不支援使用 CNAME 設定以外的方法。 例如，不支援使用 Proxy 伺服器將 enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc 重新導向至 enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc 或 manage.microsoft.com/EnrollmentServer/Discovery.svc。
+
 **步驟 2：驗證 CNAME** (選用)<br>
 1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [Windows 註冊] > [CNAME 驗證]。
 2. 在 [網域] 方塊中輸入公司網站，然後選擇 [測試]。
@@ -100,6 +107,6 @@ DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播
 
 如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [在 Azure 上使用 Intune 管理 Windows 裝置時的考量](intune-legacy-pc-client.md)。

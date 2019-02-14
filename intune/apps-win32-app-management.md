@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068317"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290752"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone - Win32 應用程式管理 (公開預覽)
+# <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
 Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
 
-## <a name="prerequisites-for-public-preview"></a>公開預覽的必要條件
+## <a name="prerequisites"></a>必要條件
 
 - Windows 10 1607 版或更新版本 (企業、專業與評估版)
 - Windows 10 用戶端必須： 
     - 加入 Azure Active Directory (AAD) 或混合式 Azure Active Directory，並
     - 在 Intune (MDM 受控) 中註冊
-- 在公開預覽中，Windows 應用程式的大小上限為每個應用程式 8 GB 
+- Windows 應用程式的大小上限為每個應用程式 8 GB
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>準備要上傳的 Win32 應用程式內容
 
-使用 [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) (Microsoft Intune Win32 應用程式上傳準備工具) 來預先處理 Win32 應用程式。 封裝工具會將應用程式安裝檔案轉換成 *.intunewin* 格式。 封裝工具也會偵測一部分的 Intune 必要屬性，來判斷應用程式安裝狀態。 在您於應用程式安裝程式資料夾上使用此工具後，您便可以在 Intune 主控台中建立 Win32 應用程式。
+使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)來預先處理 Win32 應用程式。 此工具會將應用程式安裝檔案轉換成 *.intunewin* 格式。 此工具也會偵測一部分的 Intune 必要屬性，來判斷應用程式安裝狀態。 在您於應用程式安裝程式資料夾上使用此工具後，您便可以在 Intune 主控台中建立 Win32 應用程式。
 
-您可以從 GitHub 下載 [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) (Microsoft Intune Win32 應用程式上傳準備工具)。
+您可以從 GitHub 下載 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)。
 
 ### <a name="available-command-line-parameters"></a>可用命令列參數 
 
@@ -74,7 +74,7 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 1.  登入 [Azure 入口網站](https://portal.azure.com/)。
 2.  選取 [所有服務] > [Intune]。 Intune 位於 [監視 + 管理] 區段。
 3.  在 [Intune] 窗格中，選取 [用戶端應用程式]  > [應用程式]  > [新增]。
-4.  在 [新增] 應用程式窗格中，從提供的下拉式清單中選取 [Windows 應用程式 (Win32) - 公開預覽]。
+4.  在 [新增] 應用程式窗格中，從提供的下拉式清單中選取 [Windows 應用程式 (Win32)]。
 
     ![[新增應用程式] 刀鋒視窗 - [新增類型] 下拉式方塊的螢幕擷取畫面](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
     ![[應用程式套件檔案] 刀鋒視窗的螢幕擷取畫面](./media/apps-win32-app-02.png)
 
 2.  在 [應用程式套件檔案] 窗格中，選取 [瀏覽] 按鈕。 然後，選取副檔名為 *.intunewin* 的 Windows 安裝檔案。
+
+    > [!IMPORTANT]
+    > 請務必使用最新版本的 Microsoft Win32 內容準備工具。 如果您未使用最新版本，則會出現警告，指出應用程式是使用舊版 Microsoft Win32 內容準備工具所封裝。 
+
 3.  完成後，按一下 [確定]。
 
 ### <a name="step-3-configure-app-information"></a>步驟 3：設定應用程式資訊
@@ -171,7 +175,7 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
             
                 ![偵測規則窗格的螢幕擷取畫面 - 登錄機碼存在](./media/apps-win32-app-05.png)    
             
-            2.  檢查登錄值是否存在 (**公開預覽中無法使用**)。
+            2.  檢查登錄值是否存在。
         
                 ![偵測規則窗格的螢幕擷取畫面 - 登錄值存在](./media/apps-win32-app-06.png)    
         

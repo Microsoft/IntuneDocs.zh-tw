@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380510"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230081"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 裝置設定
 
@@ -322,12 +322,16 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 | com.apple.compass           | 指南針      | Apple     |
 | com.apple.MobileAddressBook | 連絡人     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | 檔案        | Apple     |
 | com.apple.mobileme.fmf1     | 尋找朋友 | Apple     |
 | com.apple.mobileme.fmip1    | 尋找 iPhone  | Apple     |
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 健全狀況       | Apple     |
+| com.apple.Home              | 首頁         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
@@ -345,8 +349,10 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 | com.apple.reminders         | 提醒事項    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | 設定     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 股市       | Apple     |
 | com.apple.tips              | 秘訣         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | 影片       | Apple     |
 | com.apple.VoiceMemos        | 語音備忘錄   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

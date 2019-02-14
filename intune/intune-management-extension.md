@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860957"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303390"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 
@@ -34,11 +34,11 @@ MDM 服務 (例如 Microsoft Intune) 可以管理執行 Windows 10 的行動裝�
 
 Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以建立要在 Windows 10 裝置上執行的 PowerShell 指令碼。 例如，您可以建立安裝傳統 Win32 應用程式的 PowerShell 指令碼、將指令碼上傳至 Intune、將指令碼指派給 Azure Active Directory (AD) 群組，並執行指令碼。 然後，您可以監視指令碼從開始到完成的執行狀態。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Intune 管理延伸模組具有下列必要條件：
 
-- 裝置必須加入 Azure AD 並[自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域及註冊共同管理的 Windows 裝置。 不支援已註冊 GPO 的裝置。
+- 裝置必須加入或註冊到 Azure AD，並設定 Azure AD [向 Intune 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域及註冊共同管理的 Windows 裝置。
 - 裝置必須執行 Windows 10 版本 1607 或更新版本。
 - 將 PowerShell 指令碼或 Win32 應用程式部署至使用者或裝置安全性群組時，將安裝 Intune 管理延伸模組代理程式。
 
@@ -62,9 +62,9 @@ Intune 管理延伸模組具有下列必要條件：
 3. 選取包含其裝置接收指令碼之使用者的一或多個群組。 [選取] 以將原則指派給選取的群組。
 
 > [!NOTE]
-> - 無法將 PowerShell 指令碼套用至電腦群組。
 > - 終端使用者不需要登入裝置來執行 PowerShell 指令碼。
 > - Intune 中的 PowerShell 指令碼可以鎖定至 Azure AD 裝置安全性群組。
+> - Intune 中的 PowerShell 指令碼可以鎖定至 Azure AD 使用者安全性群組。
 
 Intune 管理延伸模組用戶端每小時會檢查 Intune 一次。 將原則指派給 Azure AD 群組之後，即會執行 PowerShell 指令碼，並報告執行結果。
 

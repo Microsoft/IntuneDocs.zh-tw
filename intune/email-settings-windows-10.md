@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,23 +13,23 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bf9581fe81aea3d2671da0adb2d37bbc203875c8
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186132"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303526"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>執行 Windows 10 之裝置的電子郵件設定檔設定 - Intune
 
-請使用電子郵件設定檔設定，來設定執行 Windows 10 的裝置。
+您可以使用電子郵件設定檔設定，在執行 Windows 10 的裝置上設定 Mail 應用程式。
 
 - **電子郵件伺服器**：輸入 Exchange Server 的主機名稱。
 - **帳戶名稱**：輸入電子郵件帳戶的顯示名稱。 此名稱會在其裝置上向使用者顯示。
 - **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (AAD) 中取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包括：
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **主要 SMTP 位址**：取得電子郵件地址格式的名稱，例如 `user1@contoso.com`
-  - **SAM 帳戶名稱**：需要網域，例如 `domain\user1`。
+  - **sAM 帳戶名稱**：需要網域，例如 `domain\user1`。
 
     另請輸入：  
     - **使用者網域名稱來源**：選擇 [AAD] (Azure Active Directory) 或 [自訂]。
@@ -44,19 +44,19 @@ ms.locfileid: "52186132"
 
 ## <a name="security-settings"></a>安全性設定
 
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
 
 ## <a name="synchronization-settings"></a>同步處理設定
 
-- **要同步處理的電子郵件數量**：選擇想要同步處理的電子郵件天數。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
-- **同步排程**：選取裝置用來同步處理 Exchange Server 資料的排程。您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或選取 [手動] (使用此方式，裝置使用者必須啟動同步處理)。
+- **要同步處理的電子郵件數量**：選擇您要同步電子郵件的天數。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
+- **同步排程**：選取裝置用來同步 Exchange 伺服器資料的排程。您也可以選取 [郵件送達時] 以在資料到達時立即同步資料，或選取 [手動] (使用此方式，裝置使用者必須起始同步處理)。
 
 ## <a name="content-sync-settings"></a>內容同步設定
 
-- **要同步處理的內容類型**：選取想要同步至裝置的內容類型來源：
+- **要同步處理的內容類型**：選取您想要與裝置同步處理的內容類型：
   - **連絡人**
   - **行事曆**
   - **工作**
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [設定 Intune 中的電子郵件設定](email-settings-configure.md)

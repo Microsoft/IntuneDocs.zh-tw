@@ -2,24 +2,25 @@
 title: 搭配 Microsoft Intune 使用 SCEP 憑證 - Azure | Microsoft Docs
 description: 若要在 Microsoft Intune 中使用 SCEP 憑證，請設定您的內部部署 AD 網域、建立憑證授權單位、設定 NDES 伺服器，並安裝 Intune 憑證連接器。 接著，建立 SCEP 憑證設定檔，然後將此設定檔指派給群組。 此外，請參閱不同的事件識別碼與其描述，以及 Intune 連接器服務的診斷碼。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597370"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838119"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -67,7 +68,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 |**憑證範本**|在發行 CA 上設定此範本。|
 |**用戶端驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會將它安裝於 NDES 伺服器上。|
 |**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。 如果憑證具有用戶端和伺服器的驗證金鑰使用方式集合 (**增強金鑰使用方法**)，則您可以使用相同的憑證。|
-|**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用受信任的 CA 憑證將其指派至使用者、裝置或兩者。<br /><b>請注意：<b />當指派了 SCEP 憑證設定檔時，請務必將您的 SCEP 憑證設定檔中參考的受信任根憑證設定檔指派至相同的使用者或裝置群組。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用信任的 CA 憑證設定檔將其指派至使用者、裝置或兩者。<br /><b>請注意：<b />當指派了 SCEP 憑證設定檔時，請務必將您的 SCEP 憑證設定檔中參考的受信任根憑證設定檔指派至相同的使用者或裝置群組。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 ### <a name="accounts"></a>帳戶
 
@@ -362,7 +363,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 5. 從 [設定檔類型] 下拉式清單中，選取 [SCEP 憑證]。
 6. 輸入下列設定：
 
-   - **憑證類型**：針對使用者憑證，請選擇 [使用者]。 針對無使用者裝置 (例如 kiosk)，請選擇 [裝置]。 提供下列平台可用的 [裝置] 憑證：  
+   - **憑證類型**：針對使用者憑證，請選擇 [使用者]。 選擇 [裝置] 表示無使用者裝置，例如 kiosk。 提供下列平台可用的 [裝置] 憑證：  
      - iOS
      - Windows 8.1 及更新版本
      - Windows 10 及更新版本
@@ -517,7 +518,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 ### <a name="event-ids-and-descriptions"></a>事件識別碼和描述
 
 > [!NOTE]
-> 如需每個事件相關診斷碼的詳細資料，請使用**診斷碼**資料表 (在此文章中)。
+> 如需每個事件相關診斷碼的詳細資料，請使用**診斷碼**資料表 (在本文中)。
 
 | 事件識別碼      | 事件名稱    | 事件描述 | 相關的診斷碼 |
 | ------------- | ------------- | -------------     | -------------            |
@@ -558,7 +559,8 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 | 0x00000411 | CRPSCEPChallenge_Expired  | 由於憑證挑戰過期，已拒絕要求。 用戶端裝置可以在從管理伺服器取得新挑戰之後重試。 |
 | 0x0FFFFFFFF | Unknown_Error  | 我們無法完成您的要求，因為發生伺服器端錯誤。 請再試一次。 |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [使用 PKCS 憑證](certficates-pfx-configure.md)，或[從 Symantec PKI Manager Web 服務核發 PKCS 憑證](certificates-symantec-configure.md)
 - [新增協力廠商 CA 以搭配使用 SCEP 與 Intune](certificate-authority-add-scep-overview.md)
+- 如需其他協助，請使用[針對 Microsoft Intune 中的 SCEP 憑證設定檔部署進行疑難排解](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)指南。

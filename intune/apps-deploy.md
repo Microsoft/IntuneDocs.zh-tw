@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734267"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290735"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -51,7 +51,7 @@ ms.locfileid: "53734267"
 >
 > 若要在未向 Intune 註冊的裝置上接收應用程式更新，裝置使用者必須移至其組織的 [公司入口網站]，並手動安裝應用程式更新。
 
-## <a name="to-assign-an-app"></a>指派應用程式
+## <a name="assign-an-app"></a>指派應用程式
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
@@ -62,7 +62,7 @@ ms.locfileid: "53734267"
 7. 選取 [新增群組]，以開啟和應用程式相關的 [新增群組] 窗格。
 8. 針對特定的應用程式，選取 [指派類型]：
    - **適用於已註冊的裝置**：將應用程式指派給可從「公司入口網站」應用程式或網站安裝應用程式的使用者。
-   - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 來自受控 Google Play 的應用程式不支援此選項。 使用者必須獲得 Intune 授權的指派，請參閱 [Intune 授權](licenses.md)。
+   - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 使用者必須獲得 Intune 授權的指派，請參閱 [Intune 授權](licenses.md)。
    - **必要**：此應用程式會安裝在所選群組中的裝置上。 在應用程式開始安裝之前，某些平台可能會有額外的提示以通知使用者。
    - **解除安裝**：如果 Intune 先前已透過 [適用於已註冊的裝置] 或使用相同部署的 [必要] 指派將應用程式安裝到裝置上，所選群組內的裝置會將應用程式解除安裝。 網頁連結部署後就無法移除。
 
@@ -123,6 +123,9 @@ ms.locfileid: "53734267"
 > 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。<br><br>
 > 以必要用途為目標的 iOS 市集應用程式 (不是 iOS VPP 應用程式) 會在裝置簽入時於裝置上強制執行，而且也會顯示在公司入口網站應用程式中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE 應用程式部署
+針對未註冊之無註冊應用程式防護原則 (APP-WE) 部署案例中的 Android 裝置，您現在可以使用受控的 Google Play，將市集應用程式和 LOB 應用程式部署給使用者。 具體來說，您可以為終端使用者提供應用程式目錄和安裝體驗，藉由允許從不明來源進行安裝，就不再需要終端使用者放寬其裝置的安全性狀態。 此外，此部署案例將提供已改善的使用者體驗。 如需指派應用程式的步驟，請參閱[指派應用程式](apps-deploy.md#assign-an-app)。
+
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解監視應用程式指派，請參閱[如何監視應用程式](apps-monitor.md)。

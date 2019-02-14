@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203140"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838830"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>使用受控裝置來存取公司或學校資源
 Microsoft Intune 是一種裝置管理系統，可讓組織管理對裝置、應用程式及電子郵件的存取。 透過裝置管理，您與其他員工和學生幾乎可在任何裝置上隨時隨地存取工作資訊。 即使您是在遠端工作，您和貴組織的資訊仍然保持安全。
@@ -39,16 +40,9 @@ Microsoft Intune 是貴公司用來設定其安全性和裝置需求的軟體。
 - 前往您公司支援人員設定的[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>應用程式與網站之間的差異為何？
-公司入口網站應用程式與公司入口網站有一些次要差異，但您可以對兩者執行的大部分工作都相同。 您可以執行的工作：
+每個 Windows 10、iOS、macOS 和 Android 版公司入口網站應用程式都會與您裝置的個別平台順暢地整合。 網站可從任何裝置存取，不論您使用哪種裝置，都能提供您相同且通用的體驗。 
 
-- 註冊裝置進行管理
-- 查看您裝置的狀態
-- 為貴組織下載建議及必要的應用程式
-- 重新命名裝置
-- 重設您裝置的 PIN 碼或密碼
-- 請連絡您的 IT 部門以取得協助
-
-若要查看您可以在裝置上使用公司入口網站所能執行的工作與使用公司入口網站應用程式所能執行的工作，請選擇下列其中一個連結：
+您可以在下列連結找到裝置平台特定的公司入口網站指引，從註冊步驟開始：  
 
 - [使用您的 Android 裝置](using-your-android-device-with-intune.md)
 - [使用您的 iOS 裝置](using-your-ios-device-with-intune.md)

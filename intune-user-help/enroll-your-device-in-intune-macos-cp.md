@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260244"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690796"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -57,7 +57,7 @@ ms.locfileid: "48260244"
 
 4. [裝置] 頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
     * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\)
-    * 如果您沒有任何裝置，橫幅會顯示：[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\) 按一下橫幅以新增您的裝置。  
+    * 如果您沒有任何裝置，橫幅會顯示：**您沒有任何受控裝置。Add this one by tapping here. \(您沒有任何受控裝置。請點選這裡新增這部裝置。\) 按一下橫幅以新增您的裝置。  
 
      ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成符合您目前在公司入口網站中看到訊息的下列步驟。  
@@ -93,4 +93,11 @@ ms.locfileid: "48260244"
 
 此外，因為這些其他設定檔不需要個別驗證，所以可以更快速地產生和遞送至裝置。 
 
-是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。  
+## <a name="updating-the-company-portal-app"></a>更新公司入口網站應用程式
+
+更新公司入口網站應用程式的完成方式與任何其他 Office 應用程式一樣，都是透過 Microsoft AutoUpdate for Mac。 深入了解[更新 macOS 版的 Microsoft 應用程式](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)。  
+
+## <a name="next-steps"></a>後續步驟  
+需要其他協助嗎？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。  
+
+

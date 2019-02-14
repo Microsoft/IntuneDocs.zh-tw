@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203632"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230115"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -420,7 +420,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 
 - **[開始] 功能表配置**：若要自訂電腦裝置上的 [開始] 功能表，您可以上傳 XML 檔案，其中包含您的自訂項目 (包括列出應用程式的順序) 及其他內容。 使用者無法變更您輸入的 [開始] 功能表配置。
 - **將網站釘選為 [開始] 功能表中的磚**：從 Microsoft Edge 匯入影像，作為電腦裝置 Windows [開始] 功能表中的連結顯示。
-- **從工作列取消釘選應用程式**：選擇 [封鎖] 可阻止使用者從 [開始] 功能表取消釘選應用程式。
+- **從工作列取消釘選應用程式**：選擇 [封鎖] 可阻止使用者從工作列取消釘選應用程式。
 - **快速切換使用者**：選擇 [封鎖] 可避免同時登入的使用者未經登出就在使用者之間進行切換。
 - **最常使用的應用程式**：選擇 [封鎖] 可隱藏最常使用的應用程式，使其無法顯示在 [開始] 功能表中。 它也會停用「設定」應用程式中相對應的切換。
 - **最近新增的應用程式**：選擇 [封鎖] 可隱藏最近新增的應用程式，使其無法顯示在 [開始] 功能表中。 它也會停用「設定」應用程式中相對應的切換。

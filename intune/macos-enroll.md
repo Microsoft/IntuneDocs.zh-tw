@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32055e4370669de15342ab97dc71f91ee57426e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112403"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850993"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
@@ -69,7 +70,7 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 
 您可以使用 Parallels Desktop 或 VMware Fusion 註冊 macOS 虛擬機器進行測試。 
 
-針對 Parallels Desktop，您需要設定虛擬機器的硬體型號和序號，讓 Intune 可以進行辨識。 遵循 Parallels 的[設定硬體型號](http://kb.parallels.com/123594)和[序號](http://kb.parallels.com/123455)指示，設定必要的設定來進行測試。 建議您比對執行虛擬機器之裝置的硬體型號與您所建立之虛擬機器的硬體型號。 您可以在 **Apple 功能表** > [關於此 Mac][系統報表] >  > [模型識別碼] 中找到這個硬體型號。 
+針對 Parallels Desktop，您需要設定虛擬機器的硬體型號和序號，讓 Intune 可以進行辨識。 遵循 Parallels 的設定硬體類型和[序號](http://kb.parallels.com/123455)指示，設定必要的設定來進行測試。 建議您比對執行虛擬機器之裝置的硬體型號與您所建立之虛擬機器的硬體型號。 您可以在 **Apple 功能表** > [關於此 Mac][系統報表] >  > [模型識別碼] 中找到這個硬體型號。 
 
 針對 VMware Fusion，您需要[編輯 .vmx 檔案](https://kb.vmware.com/s/article/1014782)，設定虛擬機器的硬體型號和序號。 建議您比對執行虛擬機器之裝置的硬體型號與您所建立之虛擬機器的硬體型號。 您可以在 **Apple 功能表** > [關於此 Mac][系統報表] >  > [模型識別碼] 中找到這個硬體型號。 
 
@@ -81,6 +82,6 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 
 若要了解裝置是否為「使用者核准」，請移至 Intune 入口網站並選取 [裝置] > [所有裝置] > 選擇裝置 > [硬體]。 檢查 [使用者核准] 欄位。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 註冊 macOS 裝置之後，您可以[建立 macOS 裝置的自訂設定](custom-settings-macos.md)。

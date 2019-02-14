@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199416"
+ms.locfileid: "55229945"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -101,7 +101,7 @@ ms.locfileid: "55199416"
 
     - **應用程式名稱**：必要。 輸入應用程式的名稱。
     - **本機路徑**：必要。 輸入可執行檔的路徑，例如 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 或 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`。
-    - **應用程式使用者模型識別碼 (AUMID)**：輸入 Win32 應用程式的應用程式使用者模型識別碼 (AUMID)。 此設定可決定桌面上磚的開始畫面版面配置。 若要取得此識別碼，請參閱 [find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) (尋找已安裝應用程式的應用程式使用者模型識別碼)。
+    - **應用程式使用者模型識別碼 (AUMID)**：輸入 Win32 應用程式的應用程式使用者模型識別碼 (AUMID)。 此設定可決定桌面上磚的開始畫面版面配置。 若要取得此識別碼，請參閱 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)。
     - **磚大小**：必要。 針對應用程式磚大小，選擇 [小]、[中]、[寬] 或 [大]。
   
   - **依 AUMID 新增**：使用此選項可新增現成的 Windows 應用程式，例如 [記事本] 或 [小算盤]。 輸入下列內容： 

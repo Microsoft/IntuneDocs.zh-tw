@@ -2,10 +2,10 @@
 title: 使用 Microsoft Intune 利用 PIN 登入 Windows 10 裝置 - Azure | Microsoft Docs
 description: 使用 Windows Hello 企業版來允許使用者利用 PIN、指紋等方式登入裝置。 在 Intune 中使用這些設定為 Windows 10 裝置建立身分識別保護組態設定檔，然後將設定檔指派給使用者群組和裝置群組。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c917294ac11f8f0a19c0f8f361df8d2910cb461c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831374"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837998"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>搭配 Microsoft Intune 在 Windows 10 裝置上使用 Windows Hello 企業版
 
@@ -60,7 +61,7 @@ Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂�
 
 4. 當您完成時，請選取 [確定] > [建立] 儲存變更。
 
-設定檔隨即建立，並出現在設定檔清單中。 接著，請將此設定檔[指派](device-profile-assign.md)給群組。
+設定檔隨即建立，並出現在設定檔清單中。 接下來，將此設定檔[指派](device-profile-assign.md)給使用者和裝置群組以符合您的需求。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

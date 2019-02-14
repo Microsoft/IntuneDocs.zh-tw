@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190047"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834130"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
 
@@ -65,6 +66,9 @@ eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>步驟 1：新增行動數據啟用代碼
 
@@ -162,7 +166,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
   - **ICCID**：裝置上安裝之啟用代碼內由電信業者提供的唯一代碼
   - **啟用狀態**：裝置上啟用代碼的 Intune 傳遞和安裝狀態
   - **行動數據狀態**：由電信業者提供的狀態。 若要進行疑難排解，請連絡電信業者。
-  - **上次簽入**：裝置上次與 Intune 通訊的日期
+  - **上次簽入時間**：裝置上次與 Intune 通訊的日期
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>監視實際裝置上的 eSIM 設定檔詳細資料
 
@@ -190,8 +194,8 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 - 確定您的 csv 檔案格式正確。 確認檔案未包含重複的代碼、多個電信業者或不同的行動數據方案。 請記住，每個檔案必須專屬於電信業者和行動數據方案。
 - 建立靜態裝置 Azure AD 群組，其中只包含目標 eSIM 裝置。
 - 如果部署狀態有問題，請檢查下列項目：
-  - **檔案格式不正確**：請參閱**步驟 1：新增行動數據啟用代碼** (在本文中) 以了解如何正確格式化您的檔案。
+  - **檔案格式不正確**：請參閱本主題的**步驟 1：新增行動數據啟用代碼** (在本文中) 以了解如何正確格式化您的檔案。
   - **行動數據啟用失敗，請連絡電信業者**：啟用代碼可能未在其網路內啟用。 或者，設定檔下載和行動數據啟用失敗。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [設定裝置設定檔](device-profiles.md)

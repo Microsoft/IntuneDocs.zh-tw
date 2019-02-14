@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 重設 Windows 10 裝置 - Azure | Microsoft Docs
 description: 使用 [全新開始] 在 Windows 10 電腦上使用 Microsoft Intune 移除或解除安裝應用程式。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1eb1e671cc16196974cb15cdc785ba7d99fa8f46
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188733"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303407"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>透過 Intune 使用「重新開始」重設 Windows 10 裝置
 
@@ -33,10 +33,11 @@ ms.locfileid: "52188733"
 3. 按一下 [全新開始]。 
 4. 選取 [保留此裝置上的使用者資料] 到：
    * 維持裝置 Azure AD 加入網域的狀態
-    * 維持裝置註冊行動裝置管理的狀態 
+    * 當啟用 Azure Active Directory 的使用者登入裝置時，裝置會再次向行動裝置管理註冊。
     * 保留裝置使用者的主資料夾內容，並移除應用程式與設定。  
   > [!IMPORTANT]
- > 若您不保留使用者資料，裝置將還原為出廠預設值。 它將會從 Azure AD 與行動裝置管理取消註冊。 
+ > 若您不保留使用者資料，裝置將還原為出廠預設值。 BYOD 裝置將會從 Azure AD 與行動裝置管理取消註冊。
+ > 當啟用 Azure Active Directory 的使用者登入裝置時，Azure AD 聯結裝置會再次向行動裝置管理註冊。
  
 5. 按一下 [確定]。   
 6. 若要查看此動作的狀態，請返回 [裝置] 並按一下 [裝置動作]。  

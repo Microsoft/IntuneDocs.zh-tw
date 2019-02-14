@@ -2,8 +2,8 @@
 title: 在 Microsoft Intune 中使用私密和公開金鑰憑證 - Azure | Micrososft Docs
 description: 使用 Microsoft Intune 新增或建立公開金鑰加密標準 (PKCS) 憑證，包括匯出根憑證、設定憑證範本、下載並安裝 Microsoft Intune 憑證連接器 (NDES)、建立裝置組態設定檔、在 Azure 與您的憑證授權單位中建立 PKCS 憑證設定檔等步驟。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,17 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c2c649df23a84d8836a68fd0456da6ce8dda2c0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203615"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837272"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -136,6 +137,7 @@ ms.locfileid: "54203615"
 6. 在 [進階] 索引標籤上，建議保持選取 [使用此電腦的 SYSTEM 帳戶 (預設)]。
 7. [套用] > [關閉]
 8. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
+9. 如果在您的網路環境中有 Web Proxy，您可能需要其他設定才能讓連接器運作。 如需詳細資訊，請參閱 Azure Active Directory 文件中的[使用現有的內部部署 Proxy 伺服器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
 
 > [!NOTE]
 > Microsoft Intune 憑證連接器隨附 TLS 1.2 支援。 因此，如果安裝 Microsoft Intune 憑證連接器的伺服器支援 TLS 1.2，則會使用 TLS 1.2。 如果伺服器不支援 TLS 1.2，則會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
