@@ -372,7 +372,8 @@ items:
       - name: 安裝 Exchange 內部部署連接器
         href: exchange-connector-install.md
       - name: 建立並指派條件式存取原則
-        href: conditional-access-exchange-create.md
+      - name: 裝置型條件式存取原則
+        href: create-conditional-access-intune.md
       - name: 從 Intune 傳統入口網站重新指派條件式存取原則
         href: conditional-access-intune-reassign.md
       - name: 以應用程式為基礎的條件式存取
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: 防止資料在未受管理的裝置上外洩
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302195"
+ms.locfileid: "56307850"
