@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 299e76d55cd5fc61d96a81a49f721bc5c0c69a11
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690830"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905844"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -282,7 +283,7 @@ Intune 中的系統管理範本 ([裝置設定] > [系統管理範本]) 目前�
 ### <a name="role-based-access-control"></a>以角色為基礎的存取控制
 
 #### <a name="scope-tags-for-apps----1081941---"></a>應用程式的範圍標籤 <!-- 1081941 -->
-您可以建立範圍標籤，限制對角色和應用程式的存取。 您可以將範圍標籤新增至應用程式，僅限具有角色並同時獲派該範圍標籤的人員才能存取應用程式。 無法為使用 Apple 大量採購方案 (VPP) 購買的應用程式指派範圍標籤。  如需詳細資訊，請參閱[使用範圍標籤篩選原則](scope-tags.md)。
+您可以建立範圍標籤，限制對角色和應用程式的存取。 您可以將範圍標籤新增至應用程式，僅限具有角色並同時獲派該範圍標籤的人員才能存取應用程式。 目前，無法將從受控 Google Play 或應用程式 (使用 Apple 大量採購方案 (VPP) 購買) 新增至 Intune 的應用程式指派到範圍標籤 (往後將會提供支援)。 如需詳細資訊，請參閱[使用範圍標籤篩選原則](scope-tags.md)。
 
 
 

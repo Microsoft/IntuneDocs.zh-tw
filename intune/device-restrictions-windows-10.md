@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230115"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849838"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -70,6 +71,7 @@ ms.locfileid: "55230115"
 - **Microsoft 帳戶**：讓使用者建立 Microsoft 帳戶與裝置之間的關聯。
 - **非 Microsoft 帳戶**：讓使用者將電子郵件帳戶新增至未與 Microsoft 帳戶建立關聯的裝置。
 - **Microsoft 帳戶的設定同步**：允許與 Microsoft 帳戶建立關聯的裝置和應用程式設定在裝置之間同步。
+- **Microsoft 帳戶登入小幫手**：選擇 [停用] 即可防止終端使用者控制 Microsoft 登入小幫手服務 (wlidsvc)，像是手動停止或啟動服務。 設為 [未設定] 時，wlidsvc NT 服務會採用作業系統 (OS) 預設，其可能會讓終端使用者得以啟動或停止服務。 OS 會使用此服務來讓使用者登入他們的 Microsoft 帳戶。
 
 ## <a name="cloud-printer"></a>雲端印表機
 
@@ -192,7 +194,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
 - **控制中心通知 (僅限行動裝置版)**：可讓控制中心通知出現在裝置鎖定畫面上 (僅限 Windows 10 行動裝置版)。
-- **鎖定畫面圖片 URL (僅限桌面版)**：輸入 JPEG 格式圖片的 URL，這些圖片會作為 Windows 鎖定畫面桌布使用。 使用者無法變更此設定。
+- **鎖定畫面圖片 URL (僅限桌面版)**：輸入 JPEG 格式圖片的 URL，這些圖片會作為 Windows 鎖定畫面桌布使用。 此設定會鎖定影像。 且之後就無法再變更影像。
 - **使用者可設定的畫面逾時 (僅限行動裝置版)**：可讓使用者設定時間量 
 - **鎖定畫面上的 Cortana (僅限桌面版)**：不允許使用者在裝置位於鎖定畫面時與 Cortana 互動 (僅限 Windows 10 桌面版)。
 - **鎖定畫面上的快顯通知**：封鎖警示訊息，使其無法顯示在裝置鎖定畫面上。
@@ -313,7 +315,6 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
   - **避免重複使用以前用過的密碼**：指定裝置記憶的先前使用過密碼數目。
   - **裝置從閒置狀態回復時需要密碼 (僅限行動裝置版)**：指定使用者必須輸入密碼才能解除鎖定裝置 (限 Windows 10 行動裝置版)。
   - **簡單密碼**：可讓您使用 1111 和 1234 等簡單密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
-- **加密**：在目標裝置上啟用加密。
 
 ## <a name="per-app-privacy-exceptions"></a>個別應用程式的隱私權例外狀況
 

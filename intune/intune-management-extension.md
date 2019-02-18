@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303390"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986870"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 
@@ -46,7 +47,7 @@ Intune 管理延伸模組具有下列必要條件：
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Microsoft Intune]。
 2. 選取 [裝置設定] > [PowerShell 指令碼] > [新增]。
-3. 為 PowerShell 指令碼輸入 [名稱] 和 [描述]。 對於 [指令碼位置]，瀏覽至 PowerShell 指令碼。 指令碼必須小於 200 KB (ASCII) 或 100 KB (Unicode)。
+3. 為 PowerShell 指令碼輸入 [名稱] 和 [描述]。 對於 [指令碼位置]，瀏覽至 PowerShell 指令碼。 指令碼的大小不得大於 200 KB。
 4. 選擇 **[設定]**。 然後選擇要在裝置上 ([是]) 或系統內容 ([否]) 上執行包含使用者認證的指令碼。 根據預設，會在系統內容中執行指令碼。 除非需要在系統內容中執行指令碼，否則請選取 [是]。 
   ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-add-script.png)
 5. 選擇指令碼是否必須由信任的發行者簽署 ([是])。 根據預設，指令碼不需要簽署。 
