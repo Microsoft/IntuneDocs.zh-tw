@@ -2,7 +2,7 @@
 
 使用者可利用自動註冊，在 Intune 中註冊其 Windows 10 裝置。 若要註冊，使用者必須將其公司帳戶新增至個人擁有的裝置，或將公司擁有的裝置加入 Azure Active Directory。 裝置會於背景註冊及加入 Azure Active Directory。 註冊後，就會使用 Intune 管理裝置。
 
-**必要條件**
+**先決條件**
 - Azure Active Directory Premium 訂閱 ([試用訂閱](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 訂閱
 
@@ -31,6 +31,9 @@
       > 針對 BYOD 裝置，若已為所有使用者 (或相同的使用者群組) 同時啟用了 MAM 使用者範圍與 MDM 使用者範圍 (自動 MDM 註冊)，則會優先使用 MAM 使用者範圍。 裝置會使用 Windows 資訊保護 (WIP) 原則 (如已設定)，而不會註冊 MDM。
       >
       > 針對公司裝置，若已同時啟用這兩個範圍，則會優先使用 MDM 使用者範圍。 裝置會註冊 MDM。
+
+   > [!NOTE]
+   > MAM 使用者範圍必須設定至使用者群組或集合。
 
    ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
 

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838762"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240056"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-當您已[新增應用程式](apps-add.md)到 Microsoft Intune 之後，就可以將該應用程式指派給使用者和裝置。 請務必注意不論裝置是否由 Intune 管理，您都可以將應用程式指派給該裝置。 
+當您已[新增應用程式](apps-add.md)到 Microsoft Intune 之後，就可以將該應用程式指派給使用者和裝置。 請務必注意不論裝置是否由 Intune 管理，您都可以將應用程式指派給該裝置。
 
 > [!NOTE]
 > 可用的部署用途不支援裝置群組，僅支援使用者群組。
@@ -124,8 +124,19 @@ ms.locfileid: "55838762"
 > 僅針對受控 iOS 市集應用程式，當您將這些應用程式新增到 Microsoft Intune 並指派為**必要**時，系統會自動將它們建立成包含**必要**及**可用**用途。<br><br>
 > 以必要用途為目標的 iOS 市集應用程式 (不是 iOS VPP 應用程式) 會在裝置簽入時於裝置上強制執行，而且也會顯示在公司入口網站應用程式中。
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE 應用程式部署
-針對未註冊之無註冊應用程式防護原則 (APP-WE) 部署案例中的 Android 裝置，您現在可以使用受控的 Google Play，將市集應用程式和 LOB 應用程式部署給使用者。 具體來說，您可以為終端使用者提供應用程式目錄和安裝體驗，藉由允許從不明來源進行安裝，就不再需要終端使用者放寬其裝置的安全性狀態。 此外，此部署案例將提供已改善的使用者體驗。 如需指派應用程式的步驟，請參閱[指派應用程式](apps-deploy.md#assign-an-app)。
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>針對非受控裝置進行受控的 Google Play 應用程式部署
+針對未註冊之無註冊應用程式防護原則 (APP-WE) 部署案例中的 Android 裝置，您可以使用受控的 Google Play 將市集應用程式和企業營運 (LOB) 應用程式部署給使用者。 以 [無論註冊與否均可使用] 的方式設定目標的受控的 Google Play 應用程式將會出現在使用者裝置上的 Play Store 應用程式中，而非公司入口網站應用程式。 使用者將會從 Play 應用程式瀏覽及安裝以此種方式部署的應用程式。 由於應用程式是從受控的 Google Play 安裝，使用者將不需改變其裝置設定以允許安裝來自不明來源的應用程式，這代表裝置將會更加安全。 如果應用程式開發人員針對已安裝在使用者裝置上的應用程式將新版本發佈到 Play 上，該應用程式將會自動由 Play 進行更新。 
+
+將受控的 Google Play 應用程式指派到非受控裝置的步驟：
+
+1. 將 Intune 租用戶連線到受控的 Google Play。 如果您為了管理 Android 企業工作設定檔、專用或完全受控裝置，而已經完成此步驟，便不需要再次執行它。
+2. 將來自受控的 Google Play 的應用程式新增到 Intune 主控台。
+3. 以 [無論註冊與否均可使用] 的方式，將所需的使用者群組設為受控的 Google Play 應用程式的目標。 未註冊裝置不支援 [必要] 和 [解除安裝] 應用程式目標設定。
+4. 將應用程式保護原則指派到該使用者群組。
+5. 下次當使用者開啟公司入口網站應用程式時，他們將會看見訊息指出 Play Store 應用程式中有可供他們使用的應用程式。  使用者可以點選此通知，讓系統將他們直接帶至 Play 應用程式以查看公司應用程式；他們也可以自行瀏覽到 Play Store 應用程式。
+6. 使用者可以展開 Play Store 應用程式中的內容選單，並在其個人 Google 帳戶 (可讓使用者查看其個人應用程式) 及公司帳戶 (可讓使用者查看已提供給他們的市集和 LOB 應用程式) 之間切換。 使用者透過在 Play Store 應用程式中點選 [安裝] 來安裝應用程式。
+
+在 Intune 主控台中發出 APP 選擇性抹除時，系統會自動將公司帳戶從 Play Store 應用程式中移除，而使用者將無法繼續在 Play Store 應用程式目錄中看見公司應用程式。 從裝置移除公司帳戶之後，已從 Play Store 安裝的應用程式將會在裝置上保持安裝且不會解除安裝。 
 
 ## <a name="next-steps"></a>後續步驟
 

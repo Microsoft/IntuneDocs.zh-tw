@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849838"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307884"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
-本文列出並描述您可以在 Windows 10 和更新版本裝置上控制的所有不同設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來允許或停用功能、設定密碼規則、自訂鎖定畫面、使用 Windows Defender，以及執行其他作業。
+此文章列出並描述您可以在 Windows 10 和更新版本裝置上控制的所有不同設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來允許或停用功能、設定密碼規則、自訂鎖定畫面、使用 Windows Defender，以及執行其他作業。
 
 這些設定會新增至 Intune 裝置組態設定檔，然後指派或部署到您的 Windows 10 裝置。
 
@@ -137,7 +137,11 @@ ms.locfileid: "55849838"
 - **SIM 卡錯誤對話方塊 (僅限行動裝置版)**：封鎖在沒有偵測到 SIM 卡之情況下顯示於裝置上的錯誤訊息。
 - **Ink 工作區**：防止使用者存取 Ink 工作區。 [未設定] 會啟用 Ink 工作區，並允許使用者在鎖定畫面上使用它。
 - **自動重新部署**：允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
-- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)**：選擇 [需要] 讓裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用這項設定。
+- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)**：選擇 [需要] 讓裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用此設定。
+- **直接記憶體存取**：[封鎖] 會防止所有隨插即用 PCI 下游連接埠的直接記憶體存取 (DMA)，直到使用者登入 Windows 為止。 [啟用] (預設值) 會允許存取 DMA，就算使用者未登入也一樣。
+
+  CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) \(英文\)
+
 - **從 [工作管理員] 結束處理序**：此設定決定非系統管理員是否可以使用 [工作管理員] 來結束工作。 [封鎖] 可防止標準使用者 (非系統管理員) 使用 [工作管理員] 來結束裝置上的處理序或工作。 [未設定] (預設) 可讓標準使用者使用 [工作管理員] 結束處理序或工作。
 
 ## <a name="kiosk-preview---obsolete"></a>Kiosk (預覽) - 已淘汰
@@ -183,7 +187,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 
 - **工作列**：選擇是要 [啟用] (顯示) 工作列，還是要讓它在 kiosk 上保持 [未設定] (隱藏) 狀態。
 
-- **[開始] 功能表配置**：輸入描述應用程式在 [開始] 功能表上如何顯示的 XML 檔案。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)提供一些指引和範例 XML。
+- **[開始] 功能表配置**：輸入描述應用程式在 [開始] 功能表上如何顯示的 XML 檔案。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)提供一些指導方針和範例 XML。
 
   [建立可執行應用程式的 Windows 10 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) 提供有關使用及建立 XML 檔案的更多詳細資料。
 
@@ -224,7 +228,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
   - **自訂首頁按鈕 URL**：開啟您為 [首頁按鈕 URL] 設定選擇的選項
   - **隱藏首頁按鈕**：隱藏 [首頁] 按鈕
 - **使用者可以變更首頁按鈕**：[允許] 可讓使用者變更 [首頁] 按鈕。 使用者的變更覆寫任何的系統管理員設定，以 [首頁] 按鈕。 [未設定] 會使用裝置上的 OS 預設行為，這可能會禁止使用者變更系統管理員設定主畫面按鈕的方式。
-- **顯示首次執行體驗頁面**：[封鎖] 會阻止在您第一次執行 Microsoft Edge 時顯示簡介頁面。 這項功能可讓企業 (如註冊零輸出組態的企業) 封鎖這個頁面。 [未設定] 會顯示 [簡介] 頁面。
+- **顯示首次執行體驗頁面**：[封鎖] 會阻止在您第一次執行 Microsoft Edge 時顯示簡介頁面。 此功能可讓企業 (如註冊零輸出組態的企業) 封鎖這個頁面。 [未設定] 會顯示 [簡介] 頁面。
   - **首次執行體驗 URL**：輸入使用者第一次執行 Microsoft Edge 時要顯示的頁面 URL (僅限 Windows 10 行動裝置版)。
 - **快顯視窗**：選擇 [封鎖] 以停止瀏覽器中的快顯視窗。 僅適用於 Windows 10 Desktop。 [未設定] 允許網頁瀏覽器的快顯視窗。
 - **將內部網路流量傳送到 Internet Explorer**：[允許] 讓使用者可在 Internet Explorer 而不是 Microsoft Edge 中開啟內部網路網站 (僅限 Windows 10 桌面版)。 [未設定] 允許使用者使用 Microsoft Edge。
@@ -275,7 +279,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 - **自動填寫**：[封鎖] 會停用裝置上的 [自動填寫] 功能。 [未設定] 允許使用者變更瀏覽器中的自動完成設定 (僅限 Windows 10 桌面版)。
 - **傳送不追蹤標頭**：[未設定] 要求裝置向要求追蹤資訊的網站傳送不追蹤標頭 (建議選項)。 選擇 [封鎖] 以防止裝置傳送這些標頭，從而允許網站追蹤使用者。
 - **WebRtc localhost IP 位址**：[封鎖] 可防止於使用 Web RTC 通訊協定撥打電話時，顯示使用者的 localhost IP 位址。 [未設定] 可讓使用者在使用此通訊協定通話時顯示 localhost IP 位址。
-- **動態磚資料收集**：選擇 [封鎖] 可在網站從 Microsoft Edge 釘選到 [開始] 功能表時，阻止 Windows 從動態磚收集資訊。 [未設定] 允許收集這項資訊。
+- **動態磚資料收集**：選擇 [封鎖] 可在網站從 Microsoft Edge 釘選到 [開始] 功能表時，阻止 Windows 從動態磚收集資訊。 [未設定] 允許收集此資訊。
 - **使用者可以覆寫憑證錯誤**：[封鎖] 可防止使用者存取具有 SSL 或 TLS 錯誤的網站。 [未設定] 允許使用者存取這些網站。
 
 ### <a name="additional"></a>Additional
@@ -287,7 +291,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 - **開發人員工具**：[封鎖] 可防止終端使用者開啟 Microsoft Edge 開發人員工具。 [未設定] 允許使用者開啟開發人員工具。
 - **延伸模組**：[未設定] 允許終端使用者在裝置上安裝 Microsoft Edge 延伸模組。 [封鎖] 會防止安裝。
 - **側載開發人員延伸模組**：[封鎖] 可防止 Microsoft Edge 進行側載，側載會使用 [載入延伸模組] 功能安裝及執行未經驗證的延伸模組。 [未設定] 會使用 OS 預設值，這可能會允許側載。
-- **必要的延伸模組**：選擇 Microsoft Edge 中的終端使用者無法關閉哪些延伸模組。 輸入套件系列名稱，然後選取 [新增]。 [尋找套件系列名稱 (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) 清單會提供一些指引。
+- **必要的延伸模組**：選擇 Microsoft Edge 中的終端使用者無法關閉哪些延伸模組。 輸入套件系列名稱，然後選取 [新增]。 [尋找套件系列名稱 (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) 清單會提供一些指導方針。
 
   您也可以**匯入** CSV 檔案，其中包含套件系列名稱。
 
@@ -314,7 +318,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
   - **密碼到期 (天數)**：指定在多久之後必須變更該裝置的密碼。
   - **避免重複使用以前用過的密碼**：指定裝置記憶的先前使用過密碼數目。
   - **裝置從閒置狀態回復時需要密碼 (僅限行動裝置版)**：指定使用者必須輸入密碼才能解除鎖定裝置 (限 Windows 10 行動裝置版)。
-  - **簡單密碼**：可讓您使用 1111 和 1234 等簡單密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
+  - **簡單密碼**：可讓您使用 1111 和 1234 等簡單密碼。 此設定也會允許或封鎖使用 Windows 圖片密碼。
 
 ## <a name="per-app-privacy-exceptions"></a>個別應用程式的隱私權例外狀況
 
@@ -397,7 +401,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
   - Basic
   - 增強
   - 完整
-- **將 Microsoft Edge 瀏覽資料傳送到 Microsoft 365 Analytics** ：若要使用這項功能，請將 [共用使用方式資料] 設定為 [增強] 或 [完整]。 此功能控制 Microsoft Edge 針對具有設定商業識別碼的企業裝置傳送至 Microsoft 365 Analytics 的資料。 選項包括：
+- **將 Microsoft Edge 瀏覽資料傳送到 Microsoft 365 Analytics** ：若要使用此功能，請將 [共用使用方式資料] 設定為 [增強] 或 [完整]。 此功能控制 Microsoft Edge 針對具有設定商業識別碼的企業裝置傳送至 Microsoft 365 Analytics 的資料。 選項包括：
   - **未設定**：使用 OS 預設，這可能不會傳送任何瀏覽歷程記錄資料
   - **僅傳送內部網路資料**：允許系統管理員傳送內部網路資料歷程記錄
   - **僅傳送網際網路資料**：允許系統管理員傳送網際網路資料歷程記錄
@@ -459,7 +463,7 @@ Kiosk 裝置通常執行一個應用程式，或一組特定的應用程式。 �
 
 ## <a name="windows-spotlight"></a>Windows 焦點
 
-- **Windows 焦點**：使用此設定可封鎖 Windows 10 裝置上的所有 Windows 焦點功能。 如果您封鎖這項設定，則無法使用下列設定：
+- **Windows 焦點**：使用此設定可封鎖 Windows 10 裝置上的所有 Windows 焦點功能。 如果您封鎖此設定，則無法使用下列設定：
   - **鎖定畫面上的 Windows 焦點**：阻止 Windows 焦點在裝置鎖定畫面上顯示資訊。
   - **Windows 焦點中的第三方建議**：阻止 Windows 焦點建議不是由 Microsoft 發佈的內容。
   - **消費者功能**：讓您封鎖如 [開始] 功能表建議和成員資格通知等消費者功能。

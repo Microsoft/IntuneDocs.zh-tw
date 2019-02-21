@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986870"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302178"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
 
@@ -31,13 +31,13 @@ ms.locfileid: "55986870"
 
 終端使用者運算正在歷經數位轉型。 典型的傳統 IT 著重於單一裝置平台、公司擁有的裝置、在辦公室工作的使用者，以及各種手動且反動的 IT 程序。 新式工作場所可使用使用者和企業擁有的多種平台，允許使用者在任何地方工作，並提供自動且主動的 IT 程序。
 
-MDM 服務 (例如 Microsoft Intune) 可以管理執行 Windows 10 的行動裝置及桌面裝置。 內建的 Windows 10 管理用戶端可與 Intune 進行通訊，進而執行企業管理工作。 Windows 10 MDM 目前並未提供某些您可能需要的工作，例如進階裝置設定、疑難排解和傳統 Win32 應用程式管理。 如需這些功能，您可以在 Windows 10 裝置上執行 Intune 軟體用戶端。 [比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md)是絕佳的資源。
+MDM 服務 (例如 Microsoft Intune) 可以管理執行 Windows 10 的行動裝置及桌面裝置。 內建的 Windows 10 管理用戶端可與 Intune 進行通訊，進而執行企業管理工作。 有一些您可能需要的工作，例如進階裝置設定和疑難排解。 針對 Win32 應用程式管理，您可以使用 Windows 10 裝置上的 [Win32 應用程式管理](apps-win32-app-management.md)功能。
 
-Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以建立要在 Windows 10 裝置上執行的 PowerShell 指令碼。 例如，您可以建立安裝傳統 Win32 應用程式的 PowerShell 指令碼、將指令碼上傳至 Intune、將指令碼指派給 Azure Active Directory (AD) 群組，並執行指令碼。 然後，您可以監視指令碼從開始到完成的執行狀態。
+Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以建立要在 Windows 10 裝置上執行的 PowerShell 指令碼。 例如，您可以建立會執行進階裝置設定的 PowerShell 指令碼，將該指令碼上傳至 Intune，將該指令碼指派至 Azure Active Directory (AD) 群組，然後執行該指令碼。 然後，您可以監視指令碼從開始到完成的執行狀態。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-Intune 管理延伸模組具有下列必要條件：
+Intune 管理延伸模組具有下列先決條件：
 
 - 裝置必須加入或註冊到 Azure AD，並設定 Azure AD [向 Intune 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域及註冊共同管理的 Windows 裝置。
 - 裝置必須執行 Windows 10 版本 1607 或更新版本。

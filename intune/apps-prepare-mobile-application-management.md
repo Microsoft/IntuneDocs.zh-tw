@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834767"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325430"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用這項資訊可了解這兩種方法和其使用時機。
+您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用此資訊可了解這兩種方法和其使用時機。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
 App Wrapping Tool 主要用於**內部**企業營運 (LOB) 應用程式。 此工具是可建立應用程式包裝函式的命令列應用程式，因而可讓 Intune 應用程式保護原則管理應用程式。 保護由獨立軟體廠商 (ISV) 所提供的應用程式時，不需要釐清該 ISV 是否仍會支援封裝的應用程式。
@@ -87,7 +87,6 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |允許應用程式接收來自其他應用程式的資料|X|X|
 |限制利用其他應用程式剪下、複製及貼上|X|X|
 |需要簡單的 PIN 碼才能存取|X|X|
-|將內建應用程式 PIN 取代為 Intune PIN|X||
 |指定 PIN 重設之前的嘗試次數|X|X|
 |允許指紋而非 PIN|X|X|
 |允許臉部辨識而非 PIN (僅限 iOS)|X|X|
@@ -98,8 +97,8 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |指定離線寬限期|X|X|
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
-|完整抹除|X|X|
-|選擇性抹除 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|完整抹除應用程式資料|X|X|
+|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
 |目標應用程式組態|X||
 |支援多重身分識別|X||

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a730dbb702286f71534623b2c08da6b388c3e499
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
+ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835838"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156163"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>設定 Android 完全受控裝置的 Intune 註冊 (預覽)
 
@@ -64,7 +64,7 @@ Intune 可協助您將應用程式及設定部署至 Android 企業裝置，包�
 您現在可以[註冊您的完全受控裝置](android-dedicated-devices-fully-managed-enroll.md)。
 
 ## <a name="considerations-for-this-preview-feature"></a>此預覽功能的考量
-此公開預覽包含一套 Android 完全受管理解決方案組的核心功能。 我們想了解您使用這項預覽功能的體驗情形，您可使用目前與小組間的任何通訊通道與我們分享 (例如 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853))。
+此公開預覽包含一套 Android 完全受管理解決方案組的核心功能。 我們想了解您使用此預覽功能的體驗情形，您可使用目前與小組間的任何通訊通道與我們分享 (例如 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853))。
 
 此預覽支援以下 Android 完全受控裝置功能：
 - 使用 NFC、權杖項目、QR 代碼及零接觸來註冊裝置
