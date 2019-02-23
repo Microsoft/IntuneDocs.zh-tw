@@ -25,7 +25,6 @@
 
 ### [修正 Android 的常見問題](troubleshoot-your-device-android.md)
 #### [檢查裝置合規性](check-compliance-on-your-device-android.md)
-#### [在省電模式下同步 Outlook 電子郵件](power-saving-mode-android.md)
 #### [修正 Samsung Knox 的常見問題](samsung-knox-errors-android.md)
 #### [更新裝置以安裝 Outlook](update-device-outlook-android.md)
 
