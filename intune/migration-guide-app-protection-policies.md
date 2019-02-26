@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa9df81c363099cc487497fdd4503df8c91ea4a5
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d8850e008368f24d69aa4cb34d191c9389e1ec32
+ms.sourcegitcommit: a9bb967273e8df7e743c9826948582fda555c02d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837028"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56795676"
 ---
 # <a name="configure-app-protection-policies-optional"></a>設定應用程式保護原則 (選用)
 
@@ -55,6 +55,6 @@ Intune 可以在移轉期間提供公司資料保護，所以在沒有裝置層�
 2. [部署原則](app-protection-policies.md#deploy-a-policy-to-users)
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [特殊移轉考量](migration-guide-considerations.md)

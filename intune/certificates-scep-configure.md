@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838119"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742732"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -46,7 +46,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
   
 - **Azure AD 應用程式 Proxy** (選擇性)：可使用「Azure AD 應用程式 Proxy」將 NDES 伺服器發佈至網際網路，而不使用專用的「Web 應用程式 Proxy (WAP) 伺服器」來發佈。 如需詳細資訊，請參閱[如何為內部部署應用程式提供安全的遠端存取](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 
-#### <a name="additional"></a>Additional
+#### <a name="additional"></a>其他
 
 - 裝載 WAP 伺服器 [必須安裝更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](http://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](http://support.microsoft.com/kb/3011135)。
 - WAP 的伺服器必須有 SSL 憑證，該憑證符合發佈給外部用戶端的名稱，並且信任 NDES 伺服器上使用的 SSL 憑證。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 伺服器的新 SSL 連線。
@@ -216,7 +216,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
     |憑證範本目的 (在 [處理要求] 索引標籤上)|要編輯的登錄值|SCEP 設定檔的 Intune 管理主控台中看到的值|
     |---|---|---|
     |簽章|SignatureTemplate|數位簽章|
-    |加密|EncryptionTemplate|金鑰加密|
+    |Encryption|EncryptionTemplate|金鑰加密|
     |簽章和加密|GeneralPurposeTemplate|金鑰加密<br/>數位簽章|
 
     例如，如果您的憑證範本目的是 [加密] ，則請將 **EncryptionTemplate** 值編輯為憑證範本的名稱。
@@ -364,10 +364,12 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 6. 輸入下列設定：
 
    - **憑證類型**：針對使用者憑證，請選擇 [使用者]。 選擇 [裝置] 表示無使用者裝置，例如 kiosk。 提供下列平台可用的 [裝置] 憑證：  
+     - Android 企業
      - iOS
+     - macOS
      - Windows 8.1 及更新版本
      - Windows 10 及更新版本
-     - Android 企業
+
 
    - **主體名稱格式**：選取 Intune 在憑證要求中自動建立主體名稱的方式。 如果您選擇 [使用者] 憑證類型或 [裝置] 憑證類型，則選項會變更。 
 
@@ -546,7 +548,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
 | 診斷碼 | 診斷名稱 | 診斷訊息 |
 | -------------   | -------------   | -------------      |
-| 0x00000000 | 成功  | 成功 |
+| 0x00000000 | Success  | Success |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 憑證授權單位無效或無法連線。 請確認憑證授權單位可用，且您的伺服器可以與其通訊。 |
 | 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帳戶無權撤銷來自 CA 的憑證。 請參閱事件訊息詳細資料中的 CA 名稱欄位，以判斷發行的 CA。  |
@@ -559,7 +561,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 | 0x00000411 | CRPSCEPChallenge_Expired  | 由於憑證挑戰過期，已拒絕要求。 用戶端裝置可以在從管理伺服器取得新挑戰之後重試。 |
 | 0x0FFFFFFFF | Unknown_Error  | 我們無法完成您的要求，因為發生伺服器端錯誤。 請再試一次。 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [使用 PKCS 憑證](certficates-pfx-configure.md)，或[從 Symantec PKI Manager Web 服務核發 PKCS 憑證](certificates-symantec-configure.md)
 - [新增協力廠商 CA 以搭配使用 SCEP 與 Intune](certificate-authority-add-scep-overview.md)
