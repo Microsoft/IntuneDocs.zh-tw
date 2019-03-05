@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844661"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334947"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>建立工作設定檔並在 Intune 註冊您的裝置
 
@@ -33,7 +33,7 @@ ms.locfileid: "55844661"
 
 若要建立工作設定檔：
 
-1.  在 Android 公司入口網站的**歡迎**畫面上，點選 [登入]，然後使用您的工作或學校帳戶進行登入。 如果您尚未安裝免費的應用程式，請從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下載並進行安裝。
+1.  在 Android 公司入口網站的**歡迎**畫面上，點選 [登入]，然後使用您的工作或學校帳戶進行登入。 如果您尚未安裝免費的應用程式，請從 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下載並進行安裝。
 
     ![Android 公司入口網站應用程式的歡迎畫面](./media/and-enroll-0-welcome-screen.png)
 

@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: af7963bcfb16a619fa6cddd8285def30e4ef51dd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325430"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230701"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用此資訊可了解這兩種方法和其使用時機。
+您可以使用 Intune App Wrapping Tool 或 Intune App SDK，讓應用程式使用應用程式保護原則。 使用這項資訊可了解這兩種方法和其使用時機。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
 App Wrapping Tool 主要用於**內部**企業營運 (LOB) 應用程式。 此工具是可建立應用程式包裝函式的命令列應用程式，因而可讓 Intune 應用程式保護原則管理應用程式。 保護由獨立軟體廠商 (ISV) 所提供的應用程式時，不需要釐清該 ISV 是否仍會支援封裝的應用程式。

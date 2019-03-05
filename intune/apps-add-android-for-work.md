@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/25/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3e4ae88423183d5d0317dedb59715d2adb4e11
-ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
+ms.openlocfilehash: f203c48a37919ebc9da8915d7eece89f3a3a85c4
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56240022"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238569"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 將受控 Google Play 應用程式新增至 Android Enterprise 裝置
 
@@ -133,7 +133,7 @@ Android 企業會要求您在受控 Google Play Web 主控台核准應用程式�
 
     ![只將應用程式提供給您組織使用](media/restrict.png)
 
-    此作業只會將應用程式提供給您的組織使用。 在公用 Google Play 商店上則不提供該應用程式。
+    這項作業只會將應用程式提供給您的組織使用。 在公用 Google Play 商店上則不提供該應用程式。
 
     如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console 說明](https://support.google.com/googleplay/android-developer/answer/113469)。
 4. 發佈您的應用程式之後，使用您用來設定 Intune 與 Android 企業間連線的相同帳戶來登入[受控 Google Play 商店](https://play.google.com/work)。

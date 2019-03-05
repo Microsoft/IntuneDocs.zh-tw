@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848214"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335236"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中註冊組織提供的 macOS 裝置
 
@@ -64,7 +64,7 @@ ms.locfileid: "55848214"
     * 設定您的 Mac  
 ## <a name="get-the-company-portal-app"></a>取得公司入口網站應用程式      
 將 macOS 版 Intune 公司入口網站應用程式下載到您的裝置上。 此應用程式可讓您在管理中監視、同步處理、新增和移除裝置，以及安裝應用程式。 下列步驟也描述如何向公司入口網站註冊您的裝置。  
-1. 在您的 macOS 裝置上，前往 http://portal.manage.microsoft.com/EnrollmentRedirect.aspx。
+1. 在您的 macOS 裝置上，前往 https://portal.manage.microsoft.com/EnrollmentRedirect.aspx。
 2. 使用您的公司或學校帳戶登入公司入口網站。 
 3. 按一下 [取得應用程式] 以下載 macOS 版公司入口網站安裝程式。
 4. 出現提示時，請開啟 .pkg 檔案並完成安裝步驟。

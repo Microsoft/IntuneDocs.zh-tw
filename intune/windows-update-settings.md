@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325464"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334981"
 ---
 # <a name="windows-update-settings-for-intune"></a>適用於 Intune 的 Windows Update 設定  
 
@@ -234,8 +234,8 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 - **預設**：不適用
 - **Windows 參考文件**：*不適用*
 
-[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一個設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 
+[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 
 
-若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。
+若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。
 
 

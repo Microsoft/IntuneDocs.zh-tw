@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd6ba4c9c93bf41d0407f5fa0feead440d858507
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 5cab385b55022139b79ca4a749aba0fbe9e5ef3a
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742120"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236784"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>使用 Intune 以專用 Kiosk 執行的 Windows 10 和 Windows Holographic for Business 裝置設定
 
@@ -47,7 +47,7 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
    - **平台**：選取 [Windows 10 及更新版本]
    - **設定檔類型**：選取 [Kiosk]
 
-4. 在 [設定] 中，選取 **kiosk 模式**。 [Kiosk 模式] 可識別原則支援的 Kiosk 模式類型。 選項包括：
+4. 在 [設定] 中，選取 **kiosk 模式**。 [Kiosk 模式] 可識別原則支援的 Kiosk 模式類型。 這些選項包括：
 
     - **未設定** (預設)：不啟用 kiosk 模式的原則。
     - **單一應用程式、全螢幕 kiosk**：裝置以單一使用者帳戶執行，並將其鎖定到單一市集應用程式。 因此當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
@@ -63,7 +63,7 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
 
 設定檔隨即建立，並顯示在設定檔清單中。 接下來，請[指派](device-profile-assign.md)此設定檔。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

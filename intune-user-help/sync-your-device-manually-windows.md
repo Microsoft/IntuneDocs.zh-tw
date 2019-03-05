@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840207"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335066"
 ---
 # <a name="sync-your-windows-device-manually"></a>手動同步處理您的 Windows 裝置
 
 當應用程式安裝的速度小於理想速度時，您可以起始手動裝置同步處理。手動同步處理會強制您的裝置與 Intune 連線，以獲得最新的更新和通訊。 裝置同步處理完成之後，安裝速度可能會提升。
 
-Intune 支援從公司入口網站應用程式、桌面工作列或 [開始] 功能表以及從裝置的 [設定] 應用程式手動同步處理。 
-
-執行 Creators Update (1703) 或更新版本的 Windows 10 裝置支援公司入口網站應用程式功能。 
-* [從公司入口網站應用程式同步處理](#Sync-from-Company-Portal-app-for-Windows)  
+Intune 支援從公司入口網站應用程式、桌面工作列或 [開始] 功能表以及從裝置的 [設定] 應用程式手動同步處理。 執行 Creators Update (1703) 或更新版本的 Windows 10 裝置支援公司入口網站應用程式功能。 
 
 所有 Windows 裝置都可從裝置的「設定」應用程式進行同步處理，包括：
 
@@ -75,11 +72,11 @@ Intune 支援從公司入口網站應用程式、桌面工作列或 [開始] 功
 
 3. 適用於桌上型電腦的 Windows 10 有多個版本。 請比較您的畫面與下列螢幕擷取畫面，以判斷要遵循哪一組步驟。 
 
-    * 如果您的畫面顯示 [存取公司或學校資源]，請跳至 [[存取公司或學校資源]](#access-work-or-school) 中的步驟。
+    * 如果您的畫面顯示 [存取公司或學校資源]，請跳至 [[存取公司或學校資源]](#access-work-or-school-steps) 中的步驟。
 
     ![設定應用程式中的 [存取公司或學校資源] 選項](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * 如果您的畫面顯示 [公司存取]，請跳至 [[公司存取]](#work-access) 底下的步驟。  
+    * 如果您的畫面顯示 [公司存取]，請跳至 [[公司存取]](#work-access-steps) 底下的步驟。  
 
     ![選擇 [公司存取] 作為帳戶類型](./media/win10pc-sync-3-work-access.png)
 

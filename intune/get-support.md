@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ade3d833a82e717284c4abfe48b2c1b6d85add
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836501"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334964"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援
 
@@ -50,7 +50,7 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
 ![Intune 刀鋒視窗](./media/get-support/intune-blades.png)
 
 
-這項新體驗與 [Microsoft 365 系統管理中心](https://portal.office.com/AdminPortal/Home)的體驗類似，且取代了[先前的說明及支援體驗](#azure-help-+-and-support-experience)。 
+這項新體驗與 [Microsoft 365 系統管理中心](https://portal.office.com/AdminPortal/Home)的體驗類似，且取代了[先前的說明及支援體驗](#azure-help-+-support-experience)。 
 
 若要存取 [說明及支援]，請使用下列方法：  
 - **裝置管理儀表板：**
