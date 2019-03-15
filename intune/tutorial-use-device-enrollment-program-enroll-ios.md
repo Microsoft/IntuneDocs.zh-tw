@@ -10,16 +10,17 @@ ms.date: 1/30/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17258ce2bd671dba091fa7206e599858e5ec7a93
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841533"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400393"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>教學課程：使用裝置註冊計劃在 Intune 中註冊 iOS 裝置
 Apple 的裝置註冊計劃 (DEP) 可簡化裝置註冊。 使用 Microsoft Intune 和 DEP，當使用者第一次啟動裝置時，就會自動註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 
