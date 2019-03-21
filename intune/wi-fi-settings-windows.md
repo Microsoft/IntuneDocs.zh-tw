@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76d9efc969f68188d9752996267ff7a88363f76f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180811"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566262"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中為 Windows 10 和更新版本裝置新增 Wi-Fi 設定
 
@@ -155,7 +157,7 @@ ms.locfileid: "52180811"
 
 針對 Intune 中無法使用的任何設定，您可以從另一部 Windows 裝置匯出 Wi-Fi 設定。 這項匯出會建立具有所有設定的 XML 檔案。 然後，將此檔案匯入至 Intune，並使用它作為 Wi-Fi 設定檔。 請參閱[匯出和匯入 Windows 裝置的 Wi-Fi 設定](wi-fi-settings-import-windows-8-1.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
 

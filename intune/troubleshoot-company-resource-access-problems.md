@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/08/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77963d9d338fcd9d5d58e5efeffe06379714e8e3
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231497"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461493"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
 
@@ -306,7 +307,7 @@ ms.locfileid: "57231497"
 |-2016344008|0x87D10838|(1404)：拒絕存取憑證|
 |-2016344009|0x87D10837|(1403)：找不到憑證|
 |-2016344010|0x87D10836|DCMO(1402)：操作失敗|
-|-2016344011|0x87D10835|DCMO (1401)：使用者收到提示時選擇不接受操作|
+|-2016344011|0x87D10835|DCMO(1401)：使用者收到提示時選擇不接受操作|
 |-2016344012|0x87D10834|DCMO(1400)：用戶端錯誤|
 |-2016344108|0x87D107D4|DCMO(1204)：已停用裝置功能，但允許使用者重新啟用裝置功能|
 |-2016344109|0x87D107D3|DCMO(1203)：已停用裝置功能，且不允許使用者重新啟用裝置功能|
@@ -314,7 +315,7 @@ ms.locfileid: "57231497"
 |-2016344111|0xF3FB4D95|DCMO(1201)：已順利執行啟用操作，而且目前已連結裝置功能|
 |-2016344112|0x87D107D0|DCMO(1200)：已順利執行操作|
 |-2016345595|0x87D10205|Syncml(517)：Atomic 命令的回應太大，超出單一訊息的容量。|
-|-2016345596|0x87D10204|Syncml(516)： 命令在 Atomic 元素內，而且 Atomic 失敗。 未成功復原此命令。|
+|-2016345596|0x87D10204|Syncml(516)：命令在 Atomic 元素內，而且 Atomic 失敗。 未成功復原此命令。|
 |-2016345598|0x87D10202|Syncml(514)：SyncML 命令未順利完成，因為處理該命令前，已取消操作。|
 |-2016345599|0x87D10201|Syncml(513)：接收端不支援或拒絕支援要求 SyncML 訊息中使用的 SyncML 同步處理通訊協定指定版本。|
 |-2016345600|0x87D10200|Syncml(512)：同步處理工作階段期間發生應用程式錯誤。|
@@ -336,7 +337,7 @@ ms.locfileid: "57231497"
 |-2016345687|0x87D101A9|Syncml(425)：要求的命令失敗，因為傳送者對於接收端沒有足夠的存取控制權限 (ACL)。|
 |-2016345688|0x87D101A8|Syncml(424)：已收到區塊物件，但是收到的物件大小不符合第一個區塊中所宣告的大小。|
 |-2016345689|0x87D101A7|Syncml(423)：要求的命令失敗，因為「虛刪除」的項目先前已在伺服器「永久刪除」。|
-|-2016345690|0x87D101A6|Syncml(422)：要求的命令在伺服器上失敗，因為 LocURI 的 CGI 指令碼格式錯誤。|
+|-2016345690|0x87D101A6|Syncml(422)：要求的命令在伺服器上失敗，因為 LocURI 的 CGI 命令碼格式錯誤。|
 |-2016345691|0x87D101A5|Syncml(421)：要求的命令在伺服器上失敗，因為指定的搜尋文法不明。|
 |-2016345692|0x87D101A4|Syncml(420)：接收端已經沒有儲存空間可以儲存剩下的同步處理資料。|
 |-2016345693|0x87D101A3|Syncml(419)：用戶端要求形成衝突，該衝突已由伺服器命令 winning 解決。|
@@ -346,7 +347,7 @@ ms.locfileid: "57231497"
 |-2016345697|0x87D1019F|Syncml(415)：不支援的媒體類型或格式。|
 |-2016345698|0x87D1019E|Syncml(414)：要求的命令失敗，因為目標 URI 太長，超過接收端能夠或願意處理的長度。|
 |-2016345699|0x87D1019D|Syncml(413)：接收端拒絕執行要求的命令，因為要求的項目大於接收端能夠或願意處理的大小。|
-|-2016345700|0x87D1019C|Syncml(412)：要求的命令在接收端上失敗，因為命令不完整或格式不正確。  |
+|-2016345700|0x87D1019C|Syncml(412)：要求的命令在接收端上失敗，因為命令不完整或格式不正確。|
 |-2016345701|0x87D1019B|Syncml(411)：要求的命令必須在中繼元素類型中附上位元組大小或長度資訊。|
 |-2016345702|0x87D1019A|Syncml(410)：要求的目標已經不在接收端上，而且沒有任何已知的轉送 URI。|
 |-2016345703|0x87D10199|Syncml(409)：要求失敗，因為資料的用戶端與伺服器版本之間出現更新衝突。|
@@ -357,7 +358,7 @@ ms.locfileid: "57231497"
 |-2016345708|0x87D10194|Syncml(404)：找不到要求的目標。|
 |-2016345709|0x87D10193|Syncml(403)：要求的命令失敗，但是接收端已了解要求的命令。|
 |-2016345710|0x87D10192|Syncml(402)：要求的命令失敗，因為需要有適當的付款。|
-|-2016345711|0x87D10191|Syncml(401):要求的命令失敗，因為要求者必須提供適當的驗證。|
+|-2016345711|0x87D10191|Syncml(401)：要求的命令失敗，因為要求者必須提供適當的驗證。|
 |-2016345712|0x87D10190|Syncml(400)：無法執行要求的命令，因為命令的語法格式錯誤。|
 |-2016345807|0x87D10131|Syncml(305)：必須透過指定的 Proxy URI 存取要求的目標。|
 |-2016345808|0x87D10130|Syncml(304): 並未在目標上執行要求的 SyncML 命令。 |

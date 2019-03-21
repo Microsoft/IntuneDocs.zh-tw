@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc5ed233bf3368ae9b0ce21b8688966a1ffdef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232347"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566007"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune 中 Kiosk 執行模式的 Windows Holographic for Business 裝置設定
 
@@ -55,9 +56,9 @@ ms.locfileid: "57232347"
 
 - **以 S 模式的 Windows 10 裝置為目標**：選擇 [否]。 Windows Holographic for Business 不支援 S 模式。
 
-- **使用者登入類型**：新增一或多個能夠使用您所新增應用程式的使用者帳戶。 選項包括： 
+- **使用者登入類型**：新增一或多個可使用所新增應用程式的使用者帳戶。 選項包括： 
 
-  - **自動登入**：Windows Holographic for Business 不支援。
+  - **自動登入**：不支援 Windows Holographic for Business。
   - **本機使用者帳戶**：[新增] 本機 (對裝置而言) 使用者帳戶。 您輸入的帳戶可用來登入 kiosk。
   - **Azure AD 使用者或群組 (Windows 10 1803 版和更新版本)**：需要使用者認證才能登入裝置。 選取 [新增] 以從清單中選擇 Azure AD 使用者或群組。 您可以選取多個使用者和群組。 選擇 [選取] 以儲存您的變更。
   - **HoloLens 訪客**：訪客帳戶是來賓帳戶，不需要任何使用者認證或驗證，如 [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) (共用電腦模式概念) 中所述。
@@ -65,14 +66,14 @@ ms.locfileid: "57232347"
 - **應用程式**：新增要在 kiosk 裝置上執行的應用程式。 請記住，您可以新增數個應用程式。
 
   - **新增市集應用程式**：選取您使用[用戶端應用程式](apps-add.md)新增的現有應用程式。 如果目前未列出任何應用程式，則您可以取得應用程式，然後[將其新增至 Intune](store-apps-windows.md)。
-  - **新增 Win32 應用程式**：Windows Holographic for Business 不支援。
+  - **新增 Win32 應用程式**：不支援Windows Holographic for Business。
   - **依 AUMID 新增**：使用此選項可新增現成的 Windows 應用程式。 輸入下列內容： 
 
     - **應用程式名稱**：必要。 輸入應用程式的名稱。
     - **應用程式使用者模型識別碼 (AUMID)**：必要。 輸入 Windows 應用程式的應用程式使用者模型識別碼 (AUMID)。 若要取得此識別碼，請參閱 [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (尋找已安裝應用程式的應用程式使用者模型識別碼)。
     - **磚大小**：必要。 針對應用程式磚大小，選擇 [小]、[中]、[寬] 或 [大]。
 
-- **Kiosk 瀏覽器設定**：不支援 Windows Holographic for Business。
+- **Kiosk 瀏覽器設定**：不支援Windows Holographic for Business。
 
 - **使用其他開始畫面版面配置**：選擇 [是] 以輸入描述應用程式在 [開始] 功能表上如何顯示 (包括應用程式的順序) 的 XML 檔案。 如果您需要在 [開始] 功能表中有更多自訂項目，請使用此選項。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)提供一些指引，並包含 Windows Holographic for Business 裝置的特定 XML 檔案。
 

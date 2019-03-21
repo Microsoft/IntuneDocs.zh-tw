@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ROBOTS: ''
@@ -16,12 +17,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 480b453aa4f08f8d2a2460e26bfdb5f05466df6e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 02eac7eaa42f6f9c97426e0536e48a4bc399ed08
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190080"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461017"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 的電子郵件設定檔疑難排解
 
@@ -69,5 +71,5 @@ Samsung KNOX 不會使用主機名稱來識別設定檔。 建議您不要建立
 
 檢閱 Samsung KNOX 的 EAS 設定檔和來源原則的組態。 不再支援 Samsung Note 同步處理選項，因此不應該在您的設定檔中選取該選項。 請確認裝置有足夠的時間來處理原則，最多需要 24 小時。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 如果這項資訊對您沒有幫助，您也可以[取得 Microsoft Intune 支援](get-support.md)。

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149030"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335202"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 註冊 Android 裝置
 
@@ -36,7 +37,7 @@ ms.locfileid: "43149030"
 
 **註冊 Android 裝置：**
 
-1. 從 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式。
+1. 從 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安裝免費 Intune 公司入口網站應用程式。
 
 2. 開啟公司入口網站應用程式。
 

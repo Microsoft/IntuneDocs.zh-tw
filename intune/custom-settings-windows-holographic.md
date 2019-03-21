@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231684"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566160"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>在 Intune 中使用 Windows Holographic for Business 裝置的自訂設定
 

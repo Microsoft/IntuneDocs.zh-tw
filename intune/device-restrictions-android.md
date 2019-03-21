@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f546fc66f7c602705289493eb2f5c96555ab7603
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728934"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566347"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune 中的 Android 與 Samsung Knox Standard 裝置限制設定
 
@@ -89,7 +91,7 @@ ms.locfileid: "52728934"
 使用這些設定來允許或防止裝置上的特定應用程式。 Android 和 Samsung Knox Standard 裝置上支援此功能：
 
 - **禁止的應用程式**：由 Intune 管理，且您不希望在裝置上安裝的應用程式清單。 如果使用者安裝此清單中的應用程式，則 Intune 會通知您。
-- **核准的應用程式**：允許使用者安裝的應用程式清單。 為了持續符合規範，使用者絕不能安裝其他應用程式。 自動允許 Intune 所管理的應用程式。
+- **核准的應用程式**：允許使用者安裝的應用程式清單。 若要持續符合規範，使用者絕不能安裝其他應用程式。 自動允許 Intune 所管理的應用程式。
 
 若要將應用程式新增至這些清單中，您可以：
 
@@ -104,7 +106,7 @@ ms.locfileid: "52728934"
 - **網頁瀏覽器 (僅限 Samsung Knox)**：選擇 [封鎖] 以防止在裝置上使用預設網頁瀏覽器。 [未設定] 允許使用裝置的預設網頁瀏覽器。
 - **自動填入 (僅限 Samsung Knox)**：選擇 [封鎖] 以防止在瀏覽器中自動填寫文字。 [未設定] 允許使用網頁瀏覽器的自動填寫功能。
 - **Cookie (僅限 Samsung Knox)**：選擇您希望如何處理裝置上來自網站的 Cookie。 選項包括：
-  - 允許
+  - Allow
   - 封鎖所有 Cookie
   - 允許來自瀏覽網站的 Cookie
   - 允許來自目前網站的 Cookie
@@ -160,8 +162,8 @@ Kiosk 設定僅套用至 Samsung Knox Standard 裝置，且只套用至您使用
 - **螢幕睡眠按鈕**：選擇 [封鎖] 以防止或隱藏螢幕睡眠按鈕。 [未設定] 允許裝置上的喚醒螢幕睡眠按鈕。
 - **音量按鈕**：選擇 [封鎖] 以防止使用者藉由停用音量按鈕來調整音量。 [未設定] 允許在裝置上使用音量按鈕。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-您也可以為 [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 和 [Windows 10](kiosk-settings.md) 裝置建立 kiosk 設定檔。
+您也可以為 [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [Windows 10](kiosk-settings.md) 裝置建立 kiosk 設定檔。

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fbfff91d2993becc99e2132285bef78d245ff50e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "35289270"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>啟用 Windows 10 自動註冊
 
 自動註冊可讓使用者在將工作帳戶新增到其個人擁有的裝置，或是將其公司擁有的裝置加入 Azure Active Directory 時，在 Intune 中註冊他們的 Windows 10 裝置。 在背景中，使用者的裝置註冊並加入 Azure Active Directory。 註冊之後，會使用 Intune 來管理裝置。

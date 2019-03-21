@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af7963bcfb16a619fa6cddd8285def30e4ef51dd
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230701"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565465"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -98,7 +99,7 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
 |完整抹除應用程式資料|X|X|
-|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意：** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
 |目標應用程式組態|X||
 |支援多重身分識別|X||

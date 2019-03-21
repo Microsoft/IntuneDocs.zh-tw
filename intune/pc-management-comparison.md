@@ -7,9 +7,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94549f150b2c658ba422ea1d6f68c5b5df85e33
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238484"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461136"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
@@ -53,4 +54,5 @@ ms.locfileid: "57238484"
 使用最新行動裝置管理的 Windows 電腦管理具有下列優點：
 - **延展性** - MDM 管理可隨著 Intune 雲端管理而延展。 Intune 軟體用戶端的上限為 7000 部電腦。
 - **簡化** - 使用作業系統隨附的最新管理功能，而無需依賴於下載的軟體用戶端
-- **一致性** - 您的 Windows 電腦可以像組織中的其他所有行動裝置一樣管理 <!-- - **Cloud optimization** - -->
+- **一致性** - 您的 Windows 電腦可以像組織中的其他所有行動裝置一樣管理
+<!-- - **Cloud optimization** - -->

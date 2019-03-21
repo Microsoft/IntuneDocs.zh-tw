@@ -6,22 +6,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230018"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57787129"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -69,176 +70,180 @@ ms.locfileid: "57230018"
 | 4.   | 使用者資訊  | 使用清單來選取要在窗格中檢閱的詳細資料。 <br>您可以選取： <ul><li>用戶端應用程式<li>合規性政策<li> 設定原則<li>應用程式防護原則 <li>註冊限制</ul>      |
 | 5.   | 群組成員資格  | 顯示所選使用者所屬的目前群組。       |
 
-## <a name="client-apps-reference"></a>用戶端應用程式參考
+<!-- this section needs to be updated
 
-執行下列裝置的應用程式
-- 由 Intune 和 Azure Active Directory (AD) 管理 
-- 擁有者為 Intune 和 Azure Active Directory (AD) 所管理的使用者。
+## Client apps reference
 
-### <a name="properties"></a>屬性
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-用戶端應用程式的屬性。
+### Properties
 
-| 屬性      | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 名稱          | 應用程式的名稱。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| OS            | 裝置上安裝的作業系統。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 類型          | 您可以選擇每個應用程式的指派類型。  <br> **可用** - 使用者從公司入口網站應用程式或網站，安裝應用程式。  <br> **不適用** - 公司入口網站中未安裝或未顯示此應用程式。 <br> **解除安裝** - 此應用程式會從所選群組中的裝置上解除安裝。  <br> **是否有註冊皆可用** - 將此應用程式指派到其裝置未註冊有 Intune 的使用者群組。 |
-| 上次修改 | 裝置類型的名稱。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>裝置
+### Devices
 
-由 Intune 或 Intune 或 Azure AD 所管理之使用者管理的裝置。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 屬性           | 描述                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 裝置名稱        | 裝置類型的名稱。                                                                                                     |
-| 管理者         | 修改原則的時間戳記。                                                                                              |
-| Azure AD 聯結類型 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 擁有權          | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
-| 符合 Intune 規範   | 裝置類型的名稱。                                                                                                     |
-| 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 應用程式安裝 | 表示個別裝置上的應用程式安裝失敗或成功。 |
-| OS                 | 裝置上安裝的作業系統。                                                                                       |
-| OS 版本         | 裝置的作業系統版本號碼。                                                                                  |
-| 上次簽入      | 裝置類型的名稱。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>應用程式保護狀態
+### App protection status
 
-應用程式保護原則適用於與 Enterprise Mobility Solution (EMS) 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 屬性    | 描述                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 狀態      | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 應用程式名稱    | 應用程式的名稱                                                           |
-| 裝置名稱 | 裝置類型的名稱。                                                       |
-| 裝置類型 | 裝置類型的名稱。                                                       |
-| 原則    | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 上次同步處理   | 裝置最後一次與 Intune 同步處理的時間戳記。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>應用程式保護原則參考
+## App protection policies reference
 
-應用程式保護原則適用於與 EMS 技術整合的行動應用程式。這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>屬性
+### Properties
 
-下表摘要說明 Intune 所管理裝置的應用程式保護原則狀態。
+The table summarizes app protection policies status for devices managed by Intune.
 
-| 屬性    | 描述                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 名稱        | 應用程式的名稱。                                                                                                        |
-| 已部署    | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 平台    | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
-| 註冊  | 裝置類型的名稱。                                                                                                     |
-| 上次更新 | 修改原則的時間戳記。                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>裝置
+### Devices
 
-由 Intune 或 Intune 或 Azure AD 所管理之使用者管理的裝置。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 屬性           | 文字                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 裝置名稱        | 裝置類型的名稱。                                                                                                     |
-| 管理者         | 修改原則的時間戳記。                                                                                              |
-| Azure AD 聯結類型 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 擁有權          | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
-| 符合 Intune 規範   | 裝置類型的名稱。                                                                                                     |
-| 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| OS                 | 裝置上安裝的作業系統。                                                                                       |
-| OS 版本         | 裝置的作業系統版本號碼。                                                                                  |
-| 上次簽入      | 裝置類型的名稱。                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>合規性原則參考
+## Compliance policies reference
 
-請確定用來存取公司應用程式和資料的裝置符合特定規則 (例如使用 PIN 存取裝置)，以及裝置上所儲存資料的加密。
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>屬性
+### Properties
 
-合規性原則的屬性。
+The properties of the compliance policies.
 
-| 屬性      | 描述                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 指派    | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 名稱          | 應用程式的名稱。                                                                                                        |
-| OS            | 裝置上安裝的作業系統。                                                                                       |
-| 原則類型   | 裝置擁有權類型 ([公司]、[個人] 和 [未知])。                                               |
-| 上次修改 | 裝置類型的名稱。                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>裝置
+### Devices
 
-由 Intune 或 Intune 或 Azure AD 所管理之使用者管理的裝置。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 屬性           | 描述                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 裝置名稱        | 裝置類型的名稱。                                                                                                     |
-| 管理者         | 修改原則的時間戳記。                                                                                              |
-| Azure AD 聯結類型 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 擁有權          | 裝置擁有權類型 ([公司]、[個人] 和 [未知])。                                               |
-| 符合 Intune 規範   | 裝置類型的名稱。                                                                                                     |
-| 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| OS                 | 裝置上安裝的作業系統。                                                                                       |
-| OS 版本         | 裝置的作業系統版本號碼。                                                                                  |
-| 上次簽入      | 裝置類型的名稱。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>應用程式防護原則
+### App protection policies
 
-應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 屬性    | 描述                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 狀態      | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 應用程式名稱    | 應用程式的名稱                                                           |
-| 裝置名稱 | 裝置類型的名稱。                                                       |
-| 裝置類型 | 裝置類型的名稱。                                                       |
-| 原則    | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 上次同步處理   | 裝置最後一次與 Intune 同步處理的時間戳記。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>設定原則參考
+## Configuration policies reference
 
-應用程式設定原則適用於具有廠商特定設定的行動應用程式。 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>屬性
+### Properties
 
-設定原則的屬性。
+The properties of the configuration policies.
 
-| 屬性      | 描述                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 指派    | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 名稱          | 應用程式的名稱。                                                                                                        |
-| OS            | 裝置上安裝的作業系統。                                                                                       |
-| 原則類型   | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
-| 上次修改 | 裝置類型的名稱。                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>裝置
+### Devices
 
-由 Intune 或 Intune 或 Azure AD 所管理之使用者管理的裝置。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| 屬性           | 描述                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 裝置名稱        | 裝置類型的名稱。                                                                                                     |
-| 管理者         | 修改原則的時間戳記。                                                                                              |
-| Azure AD 聯結類型 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| 擁有權          | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。                                               |
-| 符合 Intune 規範   | 裝置類型的名稱。                                                                                                     |
-| 符合 Azure AD 規範 | 每個使用者之應用程式防護應用程式的狀態。 可能的應用程式狀態為 [已簽入] 和 [未簽入]。 |
-| OS                 | 裝置上安裝的作業系統。                                                                                       |
-| OS 版本         | 裝置的作業系統版本號碼。                                                                                  |
-| 上次簽入      | 裝置類型的名稱。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>應用程式防護原則
+### App protection policies
 
-應用程式防護原則適用於與 EMS 技術整合的行動應用程式。 這些原則會在您的公司資料下載到行動應用程式時，為其提供基本保護，這包括 Office 行動應用程式。 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| 屬性    | 描述                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 狀態      | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 應用程式名稱    | 應用程式的名稱                                                           |
-| 裝置名稱 | 裝置類型的名稱。                                                       |
-| 裝置類型 | 裝置類型的名稱。                                                       |
-| 原則    | 裝置擁有權類型 ([公司]、[個人] 或 [未知])。 |
-| 上次同步處理   | 裝置最後一次與 Intune 同步處理的時間戳記。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>註冊失敗參考
 

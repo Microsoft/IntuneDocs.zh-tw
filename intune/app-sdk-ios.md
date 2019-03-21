@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2b19b1c2bf2916b44ffa4ca4aa31a85fa6b3b9
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235781"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566772"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -50,7 +51,7 @@ Intune App SDK for iOS 包含靜態程式庫、資源檔、API 標頭、偵錯�
 
 * **IntuneMAM.framework**：Intune App SDK 架構。 請將這個架構連結至專案，讓應用程式進行 Intune 用戶端應用程式管理。 如果您的應用程式使用擴充功能，讓您的專案不會建立靜態程式庫的多個複本，請使用架構而不是靜態程式庫。
 
-* **IntuneMAMResources.bundle**：包含 SDK 相依資源的資源套件組合。
+* **IntuneMAMResources.bundle**：包含 SDK 相依資源的資源配套。
 
 * **標頭**：公開 Intune App SDK API。 如果您使用 API，您必須加入包含 API 的標頭檔。 下列標頭檔包含 API、資料類型及通訊協定，由 Intune App SDK 提供開發人員使用：
 
@@ -82,12 +83,12 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 若要啟用 Intune App SDK，請遵循下列步驟：
 
-1. **選項 1 (建議使用)**：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [內嵌的二進位檔案] 清單。
+1. **選項 1 (建議)**：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [內嵌的二進位檔案] 清單。
 
    > [!NOTE]
    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#Submit-your-app-to-the-App-Store) 以取得詳細資料。
 
-   **選項 2**：連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
+   **選項 2**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
 
     ![Intune App SDK iOS：連結的架構和程式庫](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -232,8 +233,8 @@ ContainingAppBundleId | 字串 | 指定含有應用程式之擴充功能的配�
 DebugSettingsEnabled| 布林值 | 如果設定為 [是]，則可以套用 [設定] 配套內的測試原則。 啟用這個設定時，*不*應該提供應用程式。 | 選擇性。 預設為 [否]。|
 MainNibFile <br> MainNibFile~ipad  | 字串  | 這項設定應該包含應用程式的主要 nib 檔案名稱。  | 如果應用程式在 Info.plist 中定義 MainNibFile，則為必要項。 |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | 字串  | 這項設定應該包含應用程式的主要腳本檔案名稱。 | 如果應用程式在 Info.plist 中定義 UIMainStoryboardFile，則為必要項。 |
-MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意：MAMPolicyRequired 設定為 YES 時，無法將應用程式提交至 App Store。 | 選擇性。 預設為 [否]。|
-MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式原則時，是否將在啟動期間警告使用者。 <br><br> 注意：在關閉警告之後，將仍允許使用者在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
+MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 | 選擇性。 預設為 [否]。|
+MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式原則時，是否將在啟動期間警告使用者。 <br><br> 注意事項︰使用者在關閉警告之後，仍可在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
 MultiIdentity | 布林值| 指定應用程式是否為多重身分識別感知。 | 選擇性。 預設為 [否]。 |
 SplashIconFile~ipad <br> IntuneMAMSettings | 字串  | 指定 Intune 啟動顯示 (啟動) 畫面的圖示檔。 | 選擇性。 |
 SplashDuration | 數字 | Intune 啟動畫面將於應用程式啟動時顯示的最短時間 (以秒為單位)。 預設為 1.5。 | 選擇性。 |
@@ -305,8 +306,8 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 
 設定  | 類型  | 定義 |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL 快取中沒有身分識別的有效權杖，則除非應用程式也將 MAMPolicyRequired 設為 YES，否則註冊嘗試會以無訊息方式失敗而不提示輸入認證。 |
-MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意：MAMPolicyRequired 設定為 YES 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 |
+AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控身分識別，或 ADAL 快取中沒有身分識別的有效權杖，除非應用程式也將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會以無訊息模式失敗而不提示輸入認證。 |
+MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 |
 
 如果您針對應用程式選擇此選項，則不需要在註冊後處理重新啟動您的應用程式。
 
@@ -572,11 +573,11 @@ Intune 系統管理員可以透過 Intune Azure 入口網站和 Intune Graph API
 
 根據預設，Intune App SDK for iOS 會收集下列事件類型的相關遙測：
 
-* **應用程式啟動**：協助 Microsoft Intune 依管理類型 (含 MDM 的 MAM、不含 MDM 註冊的 MAM 等) 了解啟用 MAM 功能的應用程式使用情況。
+* **應用程式啟動**：協助 Microsoft Intune 依管理類型了解啟用 MAM 的應用程式使用量 (含 MDM 的 MAM、不含 MDM 註冊的 MAM 等)。
 
-* **註冊呼叫**：協助 Microsoft Intune 了解從用戶端起始的註冊呼叫成功率和其他效能計量。
+* **註冊呼叫**：協助 Microsoft Intune 了解從用戶端起始的註冊呼叫成功率和其他效能標準。
 
-* **Intune 動作**：為了協助診斷問題並確保 Intune 功能，我們會收集 Intune SDK 動作的相關資訊。
+* **Intune 動作**：為了協助診斷問題並確定 Intune 功能，我們會收集 Intune SDK 動作的相關資訊。
 
 > [!NOTE]
 > 如果您選擇不要將 Intune App SDK 遙測資料從您的行動應用程式傳送至 Microsoft Intune，您必須停用 Intune App SDK 遙測擷取。 在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 [是]。
@@ -593,17 +594,17 @@ SDK 預設會將原則套用至應用程式整體。 多重身分識別是 MAM �
 
 身分識別就是帳戶的使用者名稱 (例如 user@contoso.com)。 開發人員可以設定應用程式在下列層級的身分識別：
 
-* **處理序身分識別**：設定全處理序的身分識別，並主要用於單一身分識別應用程式。 這個身分識別會影響所有工作、檔案和 UI。
+* **處理序身分識別**：設定整個處理序的身分識別，並且主要用於單一身分識別應用程式。 這個身分識別會影響所有工作、檔案和 UI。
 
-* **UI 身分識別**：決定在主要執行緒的 UI 工作 (例如剪下/複製/貼上、PIN、驗證和資料共用) 上套用的原則。 UI 身分識別不會影響檔案工作，例如加密和備份。
+* **UI 身分識別**：判斷在主要執行緒上將哪些原則套用至 UI 工作，例如剪下/複製/貼上、PIN、驗證和資料共用。 UI 身分識別不會影響檔案工作，例如加密和備份。
 
-* **執行緒身分識別**：影響在目前執行緒上套用的原則。 這個身分識別會影響所有工作、檔案和 UI。
+* **執行緒身分識別**：影響在目前執行緒上套用哪些原則。 這個身分識別會影響所有工作、檔案和 UI。
 
 不論使用者是否受管理，應用程式都必須負責適當地設定身分識別。
 
 在任何時間，每個執行緒都會有 UI 工作和檔案工作的有效身分識別。 這是用來確認應該套用哪些原則 (如果有的話) 的身分識別。 如果身分識別是 [沒有身分識別]，或使用者未受管理，則不會套用任何原則。 下列圖表顯示如何決定有效的身分識別。
 
-  ![Intune App SDK iOS：身分識別判斷流程](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS： 身分識別判斷處理程序](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>執行緒佇列
 

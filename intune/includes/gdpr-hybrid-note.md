@@ -1,7 +1,7 @@
 ---
  title: include file description: include file services: azure-policy author: eross-msft
  
-ms.service: azure-policy ms.topic: include ms.date: 05/01/2018 ms.author: lizross ms.custom: include file
+ms.service: azure 原則 ms.topic： 包含 ms.date: 2018 年 05 月 01 日 ms.author: lizross ms.custom： 包含檔案 ms.collection: M365 身分識別-裝置管理
 ---
 
 >[!Note]

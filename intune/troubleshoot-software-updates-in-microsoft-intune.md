@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ROBOTS: ''
@@ -16,12 +17,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188614"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461340"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune 的軟體更新疑難排解
 
@@ -263,5 +265,5 @@ ms.locfileid: "52188614"
 
 此外，如果您執行 Windows 7，請確定您已安裝下列更新︰[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月)。
 
-### <a name="next-steps"></a>接下來的步驟
+### <a name="next-steps"></a>後續步驟
 如果這項資訊對您沒有幫助，您也可以[取得 Microsoft Intune 支援](get-support.md)。

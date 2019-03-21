@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844542"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>搭配使用 Windows 裝置與 Intune 公司入口網站
@@ -46,7 +46,7 @@ ms.locfileid: "55844542"
 公司入口網站也支援其他版本的 Windows，例如 [Windows 10 全像攝影版](https://www.microsoft.com/hololens)。 不過，本文未涵蓋這些版本，因為這些版本是針對特殊目的使用。
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>在公司入口網站中設定裝置
-- [在公司入口網站中管理我的 Windows 裝置](enroll-your-device-in-intune-windows.md)
+- [在公司入口網站中管理我的 Windows 裝置](windows-enrollment-company-portal.md)  
 - [為何我的裝置要「受控」？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [公司可以看到裝置上的哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [加密我的裝置](encrypt-your-device-windows.md)

@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297514"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566364"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -214,7 +216,10 @@ ms.locfileid: "54297514"
 |---------|------------|--------|
 | ownerTypeID |擁有者類型的唯一識別碼。 | |
 | ownerTypeKey |資料倉儲中擁有者類型的唯一識別碼 - Surrogate 索引鍵。 | |
-| ownerTypeName |表示裝置的擁有者類型：  <br>公司 - 裝置為企業所有。 <br>個人 - 裝置為個人所有 (BYOD)。  <br>未知 - 無此裝置的相關資訊。 |公司個人未知 |
+| ownerTypeName |表示裝置的擁有者類型：  <br>公司-裝置為企業所有。 <br>個人 - 裝置為個人所有 (BYOD)。  <br>未知 - 無此裝置的相關資訊。 |公司個人未知 |
+
+> [!Note]  
+> 針對`ownerTypeName`在 azure Ad 的裝置建立動態群組時，您必須設定篩選值`deviceOwnership`做為`Company`。 如需詳細資訊，請參閱 <<c0> [ 裝置的規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 

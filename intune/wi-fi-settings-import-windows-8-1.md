@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/18/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3452eb832f31377ddc9c55c5008405cb2235569b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188138"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564834"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>在 Intune 中，為 Windows 裝置匯入 Wi-Fi 設定
 
@@ -61,7 +63,7 @@ ms.locfileid: "52188138"
     - **檔案內容**：顯示所選組態設定檔的 XML 程式碼。
 7. 當您完成時，請選取 [確定] > [建立] 儲存變更。 設定檔隨即建立，並顯示在設定檔清單中。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
 

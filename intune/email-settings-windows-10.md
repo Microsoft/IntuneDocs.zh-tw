@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9601e8b83a22bb57398afefadd16f3a0e944413
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b3708b6b0c75a1384a7cdbdb524dff3f0627d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238552"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565429"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>執行 Windows 10 之裝置的電子郵件設定檔設定 - Intune
 
@@ -30,7 +31,7 @@ ms.locfileid: "57238552"
 - **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (AAD) 中取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包括：
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **主要 SMTP 位址**：取得電子郵件地址格式的名稱，例如 `user1@contoso.com`
-  - **sAM 帳戶名稱**：需要網域，例如 `domain\user1`。
+  - **SAM 帳戶名稱**：需要網域，例如 `domain\user1`。
 
     另請輸入：  
     - **使用者網域名稱來源**：選擇 [AAD] (Azure Active Directory) 或 [自訂]。
@@ -45,16 +46,16 @@ ms.locfileid: "57238552"
 
 ## <a name="security-settings"></a>安全性設定
 
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
+- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
 
 ## <a name="synchronization-settings"></a>同步處理設定
 
-- **要同步處理的電子郵件數量**：選擇您要同步電子郵件的天數。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
-- **同步排程**：選取裝置用來同步 Exchange 伺服器資料的排程。您也可以選取 [郵件送達時] 以在資料到達時立即同步資料，或選取 [手動] (使用此方式，裝置使用者必須起始同步處理)。
+- **要同步處理的電子郵件數量**：選擇想要同步處理的電子郵件天數。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
+- **同步排程**：選取裝置用來同步處理 Exchange Server 資料的排程。您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或選取 [手動] (使用此方式，裝置使用者必須啟動同步處理)。
 
 ## <a name="content-sync-settings"></a>內容同步設定
 
-- **要同步處理的內容類型**：選取您想要與裝置同步處理的內容類型：
+- **要同步處理的內容類型**：選取想要同步至裝置的內容類型來源：
   - **連絡人**
   - **行事曆**
   - **工作**

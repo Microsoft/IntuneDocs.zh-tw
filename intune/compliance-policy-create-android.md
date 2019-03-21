@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/19/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb5fc7256e68b8ea10ba1b3ddd7cfe6ed44bd544
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180607"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069040"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中為 Android 裝置建立裝置合規性原則
 
@@ -165,7 +167,7 @@ ms.locfileid: "52180607"
 
 您已將原則套用至使用者。 系統將會評估原則目標使用者所使用的裝置是否符合規範。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
 [監視 Intune 裝置合規性原則](compliance-policy-monitor.md)  
 [Android Enterprise 的合規性政策設定](compliance-policy-create-android-for-work.md)

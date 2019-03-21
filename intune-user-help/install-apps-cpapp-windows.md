@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834648"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742528"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在裝置上安裝和共用應用程式
 透過 Windows 版公司入口網站應用程式，在您的裝置上安裝應用程式。
@@ -35,10 +35,11 @@ ms.locfileid: "55834648"
     ![Windows 10 版公司入口網站應用程式首頁。](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. 從公司入口網站應用程式的下列區段尋找並安裝應用程式：  
 
-    * **首頁**：從您組織的精選應用程式清單中選取。  
-    * **全部顯示**：從 [首頁] > [應用程式] 區段中，按一下 [全部顯示] 以檢視所有可用的應用程式。  
-    * **所有應用程式**：在瀏覽窗格中選取此頁面，以查看所有可用的應用程式，包括已安裝和精選應用程式。  
-    * **搜尋應用程式**：此靜態搜尋列位於應用程式的瀏覽窗格中。  若要尋找可用的應用程式，請搜尋應用程式名稱或發行者。  
+    * [首頁]：從您組織的精選應用程式清單中選取。  
+    * [全部顯示]：從 [首頁]  > [應用程式] 區段中，按一下 [全部顯示] 以檢視所有可用的應用程式。  
+    * [所有應用程式]：在瀏覽窗格中選取此頁面，以查看所有可用的應用程式，包括已安裝和精選應用程式。  
+    * **應用程式類別**： 選取此頁面選擇 依類型或函式應用程式瀏覽窗格中。 這類應用程式排序類別底下**精選**，**教育**，並**生產力**。  
+    * [搜尋應用程式]：此靜態搜尋列位於應用程式的瀏覽窗格中。  若要尋找可用的應用程式，請搜尋應用程式名稱或發行者。  
     * **所有應用程式**：檢視、排序和篩選所有可用的應用程式。 搜尋結果會依相關性自動排序。  
 
 3. 選取應用程式。   
