@@ -12,6 +12,8 @@ items:
     items:
     - name: 應用程式 UI 中的新功能
       href: whats-new-app-ui.md
+    - name: 正在開發的功能
+      href: in-development.md
   expanded: true
 - name: 快速入門
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM 常見問題集
     href: mam-faq.md
-  - name: 原則與設定檔的常見問題集
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 操作指南
   items:
   - name: 規劃部署
@@ -225,9 +225,7 @@ items:
       items:
       - name: 裝置註冊計劃或 Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: 在 Windows 電腦上安裝 Intune 軟體用戶端
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: 放棄報告
+    - name: 未完成的註冊報告
       href: enrollment-report-company-portal-abandon.md
     - name: 裝置註冊疑難排解
       href: troubleshoot-device-enrollment-in-intune.md
@@ -254,11 +252,11 @@ items:
       href: device-rename.md
     - name: 重新啟動裝置
       href: device-restart.md
-    - name: 登出目前的使用者
+    - name: 將目前使用者登出
       href: device-logout-user.md
     - name: 移除使用者
       href: device-remove-user.md
-    - name: 清除裝置
+    - name: 清除 macOS 裝置
       href: device-erase.md
     - name: 遠端控制行動裝置
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: 限制裝置設定與功能
       href: device-restrictions-configure.md
     - name: 傳遞更新
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: 升級版本和 S 模式
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Intune 傳送至 Google 的資料
           href: data-intune-sends-to-google.md
         - name: 從 Jamf Pro 共用至 Intune 的資訊
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: 檢視及更正個人資料
         href: privacy-data-view-correct.md
       - name: 稽核, 匯出, 刪除
@@ -376,6 +375,7 @@ items:
       - name: 安裝 Exchange 內部部署連接器
         href: exchange-connector-install.md
       - name: 建立並指派條件式存取原則
+        href: conditional-access-exchange-create.md
       - name: 裝置型條件式存取原則
         href: create-conditional-access-intune.md
       - name: 從 Intune 傳統入口網站重新指派條件式存取原則
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: 監視裝置加密
+      href: encryption-monitor.md
     - name: 憑證
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: 部署 Windows 10 應用程式
         href: apps-windows-10-app-deploy.md
+      - name: 將應用程式部署至政府環境
+        href: apps-deploy-gcc-dod.md
     - name: 監視 App
       href: apps-monitor.md
     - name: 設定應用程式
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: 取得說明及支援
     items:
+    - name: 租用戶狀態
+      href: tenant-status.md
     - name: 疑難排解
       items:
       - name: 協助使用者疑難排解問題
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: 針對應用程式安裝問題進行疑難排解
         href: troubleshoot-app-install.md
+      - name: 行動應用程式管理疑難排解
+        href: troubleshoot-mam.md
       - name: Intune 活動的稽核記錄
         href: monitor-audit-logs.md
       - name: 透過 Azure 監視器檢閱記錄
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint Protection 疑難排解
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: 原則疑難排解
+      - name: 針對原則及設定檔進行疑難排解
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: 條件式存取的疑難排解
         href: troubleshoot-conditional-access.md
       - name: Exchange Connector 疑難排解
         href: troubleshoot-exchange-connector.md
-    - name: 已知問題
-      href: known-issues.md
     - name: 取得支援
       href: get-support.md
 - name: 參考
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: 電子郵件
           href: email-settings-android.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 匯入憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: 電子郵件
           href: email-settings-android-enterprise.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 匯入憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: 自訂
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: 電子郵件
           href: email-settings-ios.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: 自訂
           href: custom-settings-macos.md
-    - name: 安全性基準
-      items:
-      - name: Windows 安全性基準設定
-        href: security-baseline-settings-windows.md
     - name: Windows 10 及更新版本
       items:
       - name: 相容性原則設定
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: 設定檔設定
         items:
+        - name: 傳遞最佳化設定
+          href: delivery-optimization-settings.md
         - name: 裝置限制
           href: device-restrictions-windows-10.md
         - name: 裝置限制 (Windows 10 團隊版)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Kiosk
           href: kiosk-settings-windows.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 憑證
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: 自訂
           href: custom-settings-windows-10.md
+      - name: 安全性基準設定
+        href: security-baseline-settings-windows.md
       - name: Windows 更新設定
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: 裝置限制
           href: device-restrictions-windows-8-1.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi 匯入
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: 電子郵件
           href: email-settings-windows-phone-8-1.md
-        - name: 信任的憑證
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 憑證
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: 自訂
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: 適用於 Android 的 Intune App SDK
         href: app-sdk-android.md
+        items:
+        - name: Intune App SDK for Android 測試指南
+          href: app-sdk-android-testing-guide.md
       - name: Intune App SDK Xamarin 繫結
         href: app-sdk-xamarin.md
     - name: 使用 Intune 資料倉儲
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 資源
   items:
-  - name: Microsoft Intune 文件指南
-    href: intune-documentation.md
-  - name: 疑難排解
-    items:
-    - name: 協助使用者疑難排解問題
-      href: help-desk-operators.md
-    - name: 公司資源存取問題的疑難排解
-      href: troubleshoot-company-resource-access-problems.md
-    - name: 針對應用程式安裝問題進行疑難排解
-      href: troubleshoot-app-install.md
-    - name: 行動應用程式管理疑難排解
-      href: troubleshoot-mam.md
-    - name: Intune 活動的稽核記錄
-      href: monitor-audit-logs.md
-    - name: 檢閱應用程式保護記錄
-      href: app-protection-policy-settings-log.md
-    - name: 電子郵件設定檔疑難排解
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: 軟體更新疑難排解
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Endpoint Protection 疑難排解
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: 原則疑難排解
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: 條件式存取的疑難排解
-      href: troubleshoot-conditional-access.md
-    - name: Exchange Connector 疑難排解
-      href: troubleshoot-exchange-connector.md
   - name: 封存
     items:
     - name: 新功能封存
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: 防止資料在未受管理的裝置上外洩
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742817"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306854"
