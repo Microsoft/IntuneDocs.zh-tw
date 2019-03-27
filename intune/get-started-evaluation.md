@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396216"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429728"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 對我的公司有何作用？
 Microsoft Intune 是雲端式企業行動管理 (EMM) 服務，可協助提高您員工的生產力，同時保護公司資料。
@@ -46,15 +46,15 @@ Microsoft Intune 是雲端式企業行動管理 (EMM) 服務，可協助提高�
 
 ## <a name="quickstarts"></a>快速入門
 
-我們了解開始管理行動裝置可能十分困難，因為您必須代表您的公司進行許多不同決策。 下列快速入門會在最短時間內，協助您開始使用 Intune，並完成一些常見的工作。
+我們了解，開始管理行動裝置可能很困難。 您需要代表公司做出許多不同的決定。 下列快速入門會在最短時間內，協助您開始使用 Intune，並完成一些常見的工作。
 
-您可以使用頁面左側的目錄，遵循想要的**快速入門**順序。
+您可以使用此頁面左側的目錄，遵循想要的**快速入門**順序。
 
 - [免費試用 Intune](free-trial-sign-up.md) - 建立免費訂用帳戶，以在測試環境中試用 Intune。    
 - [建立使用者](quickstart-create-user.md) - 將使用者新增至 Intune，以允許他們存取行動裝置上的公司資源。
 - [建立群組](quickstart-create-group.md) - 將使用者組織成群組，以更輕鬆地管理他們可存取的原則和應用程式。
-- [設定自動註冊](quickstart-setup-auto-enrollment.md) - 設定 Microsoft Intune 在特定使用者登入 Windows 10 裝置時，自動註冊裝置。
-- [註冊您的裝置](quickstart-enroll-windows-device.md) - 扮演 Intune 使用者角色並在 Microsoft Intune 中註冊您的裝置。 然後，返回 Intune 並確認已註冊的裝置。
+- [設定自動註冊](quickstart-setup-auto-enrollment.md) - 設定 Intune 在特定使用者登入 Windows 10 裝置時，自動註冊裝置。
+- [註冊您的裝置](quickstart-enroll-windows-device.md) - 扮演 Intune 使用者角色並在 Intune 中註冊您的裝置。 然後，返回 Intune 並確認已成功註冊裝置。
 - [建立裝置合規性政策](quickstart-set-password-length-android.md) - 建立裝置合規性政策，並將群組指派給政策。
 - [傳送通知到不符合規範的裝置](quickstart-send-notification.md) - 藉由建立並指派合規性政策，將電子郵件通知傳送給您員工中具有不符合規範裝置的成員。
 - [新增並指派應用程式](quickstart-add-assign-app.md) - 新增用戶端應用程式，並將其指派給您公司的員工。
@@ -64,7 +64,7 @@ Microsoft Intune 是雲端式企業行動管理 (EMM) 服務，可協助提高�
 
 ## <a name="prerequisites"></a>必要條件
 
-開始之前，您必須啟用 Intune 系統管理員和租用戶帳戶。 建立免費訂用帳戶，以在測試環境中[免費試用 Intune](free-trial-sign-up.md)。 目前的訂閱者也可以在您的即時租用戶中完成這些活動。 這些入門文章假設您正在使用測試裝置。
+開始之前，您必須啟用 Intune 系統管理員和租用戶帳戶。 建立免費訂用帳戶，以在測試環境中[免費試用 Intune](free-trial-sign-up.md)。 目前的訂閱者也可以在他們的即時租用戶中完成這些活動。 這些入門文章假設您正在使用測試裝置。
 
 您也需要確定您是組織的全域系統管理員，才能完成所有工作。
 
