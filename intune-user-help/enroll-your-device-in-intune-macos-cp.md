@@ -58,7 +58,7 @@ ms.locfileid: "55834716"
 
 4. [裝置] 頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
     * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\)
-    * 如果您沒有任何裝置，橫幅會顯示：[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
+    * 如果您沒有任何裝置，橫幅會顯示：**[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
 
      ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成符合您目前在公司入口網站中看到訊息的下列步驟。  
