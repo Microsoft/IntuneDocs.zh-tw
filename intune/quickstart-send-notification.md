@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186251"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991113"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入門：傳送通知到不符合規範的裝置
 
@@ -48,11 +50,11 @@ ms.locfileid: "52186251"
 2. 輸入下列資訊：
 
    - **名稱**：Contoso 系統管理員
-   - **主旨**：裝置合規性
-   - **訊息**：您的裝置目前不符合我們組織的合規性需求。
-   - **電子郵件標題 – 包含公司標誌**：設定為 [啟用] 來顯示您組織的標誌。
-   - **電子郵件頁尾 – 包含公司名稱**：設定為 [啟用] 來顯示您組織的名稱。
-   - **電子郵件頁尾 – 包含連絡人資訊**：設定為 [啟用] 來顯示您組織的連絡人資訊。
+   - **主旨**：*裝置合規性*
+   - [訊息]：您的裝置目前不符合我們組織的合規性需求。
+   - [電子郵件標頭 – 包含公司標誌]：設定為 [已啟用] 以顯示您組織的標誌。
+   - [電子郵件頁尾 – 包含公司名稱]：設定為 [已啟用] 以顯示您組織的名稱。
+   - [電子郵件頁尾 – 包含連絡人資訊]：設定為 [已啟用] 以顯示您組織的連絡人資訊。
 
    ![在 Intune 中符合規範的通知訊息範例](./media/quickstart-send-notification-01.png)
 
@@ -73,9 +75,9 @@ ms.locfileid: "52186251"
 2. 選取 [政策] > [建立政策]。
 3. 輸入下列資訊：
 
-   - [名稱]：Windows 10 合規性
-   - [描述]：Windows 10 合規性政策
-   - [平台]：Windows 10 及更新版本
+   - **名稱**：*Windows 10 合規性*
+   - **描述**：*Windows 10 合規性原則*
+   - **平台**：Windows 10 及更新版本
 
 4. 選取 [設定] > [系統安全性] 顯示與裝置安全性相關的設定。
 5. 將 [需要密碼才可解除鎖定行動裝置] 設定為 [必要]。 此設定指定使用者是否需要輸入密碼，才能獲得其行動裝置的資訊存取權。 
@@ -84,7 +86,7 @@ ms.locfileid: "52186251"
     ![新合規性政策的 [系統安全性] 設定](./media/quickstart-send-notification-02.png) 
 
 7. 依序按一下 [確定]、[確定] 及 [建立] 來建立合規性政策。
-8. 選取新政策的名稱：**Windows 10 合規性**。
+8. 選取您新原則的名稱：**Windows 10 合規性**。
 9. 選取 [內容] > [不符合規範時採取的動作] > [新增]。
 10. 在 [動作] 下拉式清單方塊中，確認已選取 [傳送電子郵件給終端使用者]。
 11. 選取 [郵件範本] > [Contoso 系統管理員] > [選取]，選取您稍早在本主題中建立的郵件範本。
@@ -105,7 +107,7 @@ ms.locfileid: "52186251"
 
 成功建立並儲存政策後，它會顯示在 [裝置合規性 - 政策] 清單中。 請注意，該清單中的 [已指派] 設定為 [是]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您已在本快速入門中，使用 Intune 為員工的 Windows 10 裝置建立及指派合規性政策，以要求長度至少為六個字元的密碼。 如需建立 Windows 裝置合規性政策的詳細資訊，請參閱[在 Intune 中為 Windows 裝置新增裝置合規性政策](compliance-policy-create-windows.md)。
 

@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87fb7091079086e5c455376cb5c4ae8e10f28ec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179247"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57397223"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>快速入門：建立 Android 裝置的密碼合規性政策
 
@@ -59,7 +61,7 @@ Intune 裝置合規性政策指定裝置必須符合的規則和設定，才能�
 
 不再需要時，請刪除原則。 若要這樣做，請選取合規性政策，然後按一下 [刪除]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以在本快速入門中，使用 Intune 為員工的 Android 裝置建立合規性政策，以要求長度至少為六個字元的密碼。 如需建立合規性政策的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性政策](device-compliance-get-started.md)。
 

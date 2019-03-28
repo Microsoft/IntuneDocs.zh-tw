@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184500"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391874"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
@@ -90,17 +92,17 @@ ms.locfileid: "52184500"
 4. 按一下您使用 Intune 新增的應用程式。 在此快速入門中，您已新增 **Microsoft Office 365 應用程式套件**應用程式。
 
     > [!NOTE]
-    > 如果您未成功指派任何應用程式給 Intune 使用者，您會看到下列訊息：您的 IT 系統管理員並未提供任何應用程式給您。
+    > 如果您未成功指派任何應用程式給 Intune 使用者，您將會看到下列訊息：「您的 IT 系統管理員並未提供任何應用程式給您。」
 
 5. 按一下 [安裝]。
 
 如果企業需要由您指派公司入口網站應用程式給員工，您也可以直接透過 Intune 手動指派 Windows 10 公司入口網站應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](store-apps-company-portal-app.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已將應用程式新增至 Intune、將應用程式指派給群組，並在已註冊的 Windows 10 Desktop 裝置上安裝應用程式。 如需在 Intune 中管理應用程式的詳細資訊，請參閱[什麼是 Microsoft Intune 應用程式管理？](app-management.md)
 
 若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
 
 > [!div class="nextstepaction"]
-> [快速入門：建立並指派應用程式防護原則](quickstart-create-assign-app-policy.md)
+> [快速入門：建立並指派應用程式保護原則](quickstart-create-assign-app-policy.md)

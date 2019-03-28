@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,14 +18,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187730"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395972"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程 - 使用 AutoPilot 在 Intune 中註冊 Windows 裝置
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程：使用 Autopilot 在 Intune 中註冊 Windows 裝置
 Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intune 和 AutoPilot，將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像。 
 
 您將在本教學課程中了解如何：
@@ -122,7 +124,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 4. 選擇 [是] 以確認刪除。 可能需要幾分鐘才能刪除。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以找到 Windows AutoPilot 其他可用選項的相關詳細資訊。
 

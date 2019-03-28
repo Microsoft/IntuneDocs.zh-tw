@@ -4,6 +4,7 @@ description: 快速入門 - 在 Intune 中建立使用者。
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189482"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991088"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>快速入門：建立使用者並為其指派授權
 
@@ -45,9 +47,9 @@ ms.locfileid: "52189482"
 
 ## <a name="assign-a-license-to-the-user"></a>指派授權給使用者
 
-建立使用者之後，您必須使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給該使用者。 若未指派授權，他們就無法將其裝置註冊到 Intune 中。 
+建立使用者之後，您必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給該使用者。 若未指派授權，他們就無法將其裝置註冊到 Intune 中。 
 
-1. 使用與您用來登入 Intune 相同的認證登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
+1. 使用與您用來登入 Intune 相同的認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
 2. 選擇 [使用者] > [作用中使用者] > 選擇您剛才建立的使用者。
 3. 在 [產品授權] 旁，選取 [編輯]。
 4. 在 [位置] 下，選擇使用者的位置。
@@ -61,9 +63,9 @@ ms.locfileid: "52189482"
 
 ## <a name="clean-up-resources"></a>清除資源
 
-如果您不再需要此使用者，您可以巡覽至 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者] > [作用中使用者] > 選擇清單中的使用者 > [刪除使用者] > [刪除使用者] > [確認變更] > [關閉] 來刪除使用者。
+如果您不再需要此使用者，您可以巡覽至 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者] > [作用中使用者] > 「選擇清單中的使用者」 > [刪除使用者] > [刪除使用者] > [確認變更] > [關閉] 來刪除使用者。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已建立使用者並為該使用者指派授權。 如需如何將使用者新增至 Intune 的詳細資訊，請參閱[新增使用者並授與 Intune 系統管理權限](users-add.md)。
 

@@ -3,27 +3,29 @@ title: 教學課程 - 保護 Intune 受控裝置上的 Exchange Online 電子郵
 titlesuffix: Microsoft Intune
 description: 了解如何使用 iOS Intune 合規性原則和 Azure AD 條件式存取要求受控裝置和 Outlook 應用程式以保護 Exchange Online。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181865"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57528202"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程 - 保護受控裝置上的 Exchange Online 電子郵件
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程：保護受控裝置上的 Exchange Online 電子郵件
 了解有關如何搭配條件式存取使用裝置合規性原則，確保 iOS 裝置只能在由 Intune 管理並使用核准的電子郵件應用程式時，才能存取 Exchange Online 電子郵件。 
 
 您將在本教學課程中了解如何： 
@@ -37,7 +39,7 @@ ms.locfileid: "52181865"
   - 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
     - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
-  - 在開始之前，請先依照[快速入門： 建立適用於 iOS 的電子郵件裝置設定檔](quickstart-email-profile.md)中的步驟，建立適用於 iOS 裝置的測試裝置設定檔。
+  - 在開始之前，請先依照下列內容中的步驟，建立適用於 iOS 裝置的測試裝置設定檔：[Quickstart:Create an email device profile for iOS](quickstart-email-profile.md) (快速入門：建立 iOS 的電子郵件裝置設定檔)
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 
@@ -136,5 +138,5 @@ ms.locfileid: "52181865"
 4. 選取 [條件式存取] > [原則]。
 5. 在 [原則名稱] 清單中，選取測試原則的操作功能表 (**...**)，然後選取 [刪除]。 選取 [是] 確認。
 
- ## <a name="next-steps"></a>接下來的步驟 
+ ## <a name="next-steps"></a>後續步驟 
 您已經在本教學課程中，建立要求 iOS 裝置在 Intune 中註冊，並使用 Outlook 應用程式存取 Exchange Online 電子郵件的原則。 若要了解如何搭配條件式存取使用 Intune 保護其他應用程式和服務 (包括 Office 365 Exchange Online 的 Exchange ActiveSync 用戶端)，請參閱[設定條件式存取](conditional-access.md)。

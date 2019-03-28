@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179064"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393353"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入門：建立並指派應用程式防護原則
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入門：建立並指派應用程式保護原則
 
 在此快速入門中，您將使用 Intune 建立應用程式防護原則，並將其指派給終端使用者裝置上的用戶端應用程式。 Intune 使用應用程式防護原則，以確認應用程式符合您組織的資料保護需求。
 
@@ -47,7 +49,7 @@ ms.locfileid: "52179064"
     - **名稱**：Windows 10 內容保護
     - **描述**：與此原則建立關聯的使用者將無法在已指派應用程式與裝置上其他非受控應用程式之間剪下、複製或貼上任何內容。
     - **平台**：*Windows 10*
-    - **註冊狀態**：使用註冊
+    - [註冊狀態]：已註冊
 
 3. 選取 [受保護的應用程式] 以選擇必須遵守此原則的應用程式。
 4. 按一下 [新增應用程式]。
@@ -77,7 +79,7 @@ ms.locfileid: "52179064"
 > [!NOTE]
 > 應用程式防護原則只能套用至包含使用者的群組，不能套用至包含裝置的群組。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已建立並指派應用程式防護原則。 已指派此原則的應用程式使用者將無法在已指派應用程式與裝置上其他非受控應用程式之間剪下、複製或貼上任何內容。 此保護類型將協助保護您組織的資料。 如需 Intune 應用程式防護原則的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 

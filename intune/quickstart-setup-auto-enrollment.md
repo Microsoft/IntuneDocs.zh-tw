@@ -4,6 +4,7 @@ description: 快速入門 - 在 Intune 中設定 Windows 10 裝置的自動註�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179641"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394320"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入門：設定 Windows 10 裝置的自動註冊
 
@@ -67,7 +69,7 @@ ms.locfileid: "52179641"
 
 若要重新設定 Intune 自動註冊，請參閱[設定 Windows 裝置的註冊](windows-enroll.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已了解如何設定 Windows 10 裝置的自動註冊。 如需裝置註冊的詳細資訊，請參閱[什麼是裝置註冊？](device-enrollment.md)
 

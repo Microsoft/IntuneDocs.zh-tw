@@ -4,6 +4,7 @@ description: 快速入門 - 為遠端裝置管理員建立並指派自訂角色�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189923"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400276"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入門：建立並指派自訂角色
 
@@ -66,7 +68,7 @@ ms.locfileid: "52189923"
 
 如果您不想再使用新的自訂角色，您可以將它刪除。 選擇 [角色] > [所有角色] > 選擇角色旁的省略符號 > [刪除]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在此快速入門中，您已建立自訂安全性作業角色，並將它指派給群組。 如需 Intune 中角色的詳細資訊，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune](role-based-access-control.md)
 
