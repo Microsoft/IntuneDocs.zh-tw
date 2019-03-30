@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565465"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394876"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -87,6 +87,7 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |允許應用程式將資料傳送到其他應用程式|X|X|
 |允許應用程式接收來自其他應用程式的資料|X|X|
 |限制利用其他應用程式剪下、複製及貼上|X|X|
+|指定可能會剪下或從受管理的應用程式複製的字元數目|X|X|
 |需要簡單的 PIN 碼才能存取|X|X|
 |指定 PIN 重設之前的嘗試次數|X|X|
 |允許指紋而非 PIN|X|X|

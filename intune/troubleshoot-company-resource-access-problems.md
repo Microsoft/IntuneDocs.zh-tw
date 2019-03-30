@@ -1,11 +1,11 @@
 ---
-title: 公司資源存取問題疑難排解 | Microsoft Docs
-description: 使用 Microsoft Intune 錯誤和狀態碼來協助您針對資源存取問題進行疑難排解。
+title: 錯誤和狀態碼，在 Microsoft Intune-Azure |Microsoft Docs
+description: 使用 MDM 受管理的裝置，在 Microsoft Intune 中開始存取公司資源、 在 iOS 裝置上的錯誤和 OMA 回應錯誤時，請查看錯誤、 狀態碼、 描述和解決方案的清單。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461493"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330473"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>使用 Microsoft Intune 的公司資源存取問題疑難排解
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>常見的錯誤碼和 Microsoft Intune 中的描述
 
-當 Microsoft Intune 動作傳回錯誤碼時，請使用本主題中的錯誤碼和狀態碼來協助您為問題進行疑難排解。
+存取公司資源時，本文會列出常見錯誤、 狀態碼、 描述和可能的解決方案。 您可以使用此資訊來協助疑難排解存取問題時使用 Microsoft Intune。
 
-如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](get-support.md)，以尋找更多方法來取得協助。
+如果您需要支援說明，請參閱[取得 Microsoft Intune 支援](get-support.md)。
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>受到 MDM 管理的 Windows 裝置的狀態碼
 
@@ -385,5 +385,6 @@ ms.locfileid: "57461493"
 |-2016345912|0x87D100C8|成功完成 SyncML 命令。|
 |-2016346011|0x87D10065|正在執行指定的 SyncML 命令，但是尚未完成。|
 
-### <a name="next-steps"></a>後續步驟
-如果此疑難排解資訊對您沒有幫助，請連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](get-support.md)中所述)。
+## <a name="next-steps"></a>後續步驟
+
+請連絡 Microsoft 支援服務[取得 Microsoft Intune 支援](get-support.md)。

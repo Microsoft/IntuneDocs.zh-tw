@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566024"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358182"
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -128,17 +128,5 @@ ms.locfileid: "57566024"
 | AppInstallState | 應用程式安裝狀態的列舉值。 |
 | AppInstallStateName | 應用程式安裝狀態的名稱。 |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-**MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
-
-
-|      屬性      |                                                         說明                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  記錄應用程式安裝狀態之日期的索引鍵。                                  |
-|       AppKey       |                             用來識別 AppRevision 執行個體之行動應用程式的索引鍵。                              |
-|     DeviceKey      |                              用來識別 Device 執行個體之目標裝置的索引鍵。                               |
-|      UserKey       |                                用來識別 User 執行個體之目標使用者的索引鍵。                                 |
-| AppInstallStateKey |                     用來識別 MobileAppInstallState 執行個體之應用程式安裝狀態的索引鍵。                     |
-|     ErrorCode      | 由與應用程式之安裝相關的應用程式安裝程式、行動平台或服務所傳回的錯誤碼。 |
 
