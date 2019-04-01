@@ -1,23 +1,30 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+title: 包含檔案
+description: 包含檔案
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736847"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675488"
 ---
-
 這些注意事項提供重要資訊，可協助您做好未來的 Intune 變更與功能。 
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>在註冊工作流程使用設定助理進行驗證的公司的 iOS 裝置上 Intune 公司入口網站中變更 <!-- 1927359 -->
 註冊 iOS 裝置，透過 Apple 的公司裝置註冊方法-Apple Configurator、 Apple 商務管理員 」、 Apple School Manager 或 Apple 裝置註冊方案 (DEP)，其中的工作流程中即將變更時則使用安裝程式適用於驗證的小幫手。 這項變更僅適用於具有使用者親和性註冊的裝置。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-當此變更在 ~~3 月~~ 4 月推出時，位於 Azure 入口網站上 Intune 中的註冊設定檔將會更新，如此您就能指定裝置的驗證方式，以及它們是否會收到公司入口網站應用程式。 將會有改進的工作流程來註冊 iOS 裝置，透過上面所列的方法。 注意：
+當此變更在 ~~3 月~~ 4 月推出時，位於 Azure 入口網站上 Intune 中的註冊設定檔將會更新，如此您就能指定裝置的驗證方式，以及它們是否會收到公司入口網站應用程式。 將會有改進的工作流程來註冊 iOS 裝置，透過上面所列的方法。 
 
 - 當註冊新的裝置，以及使用設定助理進行驗證，您可以選擇要自動部署公司入口網站應用程式。 使用者不會再看到 」 識別您的裝置 」 畫面與 [確認您的裝置] 畫面中註冊流程。  
 - 在裝置上已透過設定助理註冊，透過 Apple 的公司裝置註冊方法之一，您必須採取動作，如果您想要啟用條件式存取。 您必須使用特定的 xml，到推播到這些裝置的公司入口網站中設定應用程式設定原則。 若要執行這項操作的指示位於部落格文章的額外資訊連結。 如果您選擇將公司入口網站推送以這種方式，使用者將無法再看到 」 識別您的裝置 」 畫面與 [確認您的裝置] 畫面中註冊流程。 
-- 這項變更推出，如果您尚未部署公司入口網站之後，前面所提到的應用程式組態設定檔和使用者下載公司入口網站應用程式，從應用程式存放區，將登入，但它們將會收到錯誤訊息。 他們將無法使用條件式存取應用程式。 
+- 這項變更推出，如果您尚未部署公司入口網站之後，前面所提到的應用程式組態設定檔和使用者下載公司入口網站應用程式，從應用程式存放區，他們可以登入，但它們將會收到錯誤訊息。 他們將無法使用條件式存取應用程式。 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 如果您打算使用修改過的工作流程，您會想要更新您的終端使用者指南，以表示：
@@ -32,52 +39,6 @@ ms.locfileid: "57736847"
 #### <a name="additional-information"></a>其他資訊 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>在 Intune 中 iOS 12.2 註冊的公司入口網站變更
-根據我們在 MC172534 中的分享，Apple 已宣告與在行動裝置管理 (MDM) 服務中註冊 iOS 裝置相關的一些變更。 變更可能會看到在 2019 年 3 月中的 iOS 版本，以及所有未來的 iOS 版本。 我們將某些更新在公司入口網站中，以反映 Apple 的變更。 
- 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-如果您的終端使用者將裝置升級至 iOS 12.2 和更新版本，知道有修改過的工作流程，而且它們必須採取額外步驟要完成註冊到 Intune。 年 3 月更新之後到 Intune，以下是將執行的動作-  
-
-- 開始註冊程序，在公司入口網站應用程式中，若要下載管理設定檔
-- 移至 設定 > 一般 > 設定檔並尋找紅色徽章通知
-- 選取正確的設定檔，然後逐一點選以安裝
-- 回到 公司入口網站，以完成註冊
-
-如需註冊流程的詳細資訊，按一下 其他資訊。
-
-除非他們正在取消註冊，且需要最新的註冊，裝置已註冊並升級至 iOS 12.2 和更新版本應該不會受到影響。 Apple 將不會在此新版本中變更執行 iOS 12.1 或舊版裝置上的註冊體驗。 透過一或 Apple 的公司註冊方法 （裝置註冊計劃、 Apple School Manager 或 Apple 商務經理人） 註冊的裝置不會受到影響。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-您應該規劃升級文件和終端使用者指引。 您也可能需要讓技術服務人員知道這些變更。 我們會持續通知您認識我們新的頁面時，這項變更會即時收到通知。 
-
-如果您想要善用我們導入的公司入口網站變更，要求使用者之後 3 月更新至 Intune 服務時，就將其裝置更新為新的 iOS 版公司入口網站應用程式版本 3.9.0。 會被釋放。
-
-針對支援部落格文章中的公司入口網站變更預覽螢幕擷取畫面，按一下 其他資訊。
-
-其他資訊 [https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>為變更做規劃： 在 Intune 中 iOS 12 註冊的工作流程變更
-Apple 已宣告與在行動裝置管理 (MDM) 服務中註冊 iOS 裝置相關的一些變更。 該變更可能會出現在 iOS 的 2019 年春季版，以及所有未來的 iOS 版本。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-如果您的終端使用者在春季將其裝置升級為此新版 iOS 12，請注意工作流程會有所修改，因此使用者必須採取其他步驟來完成在 Intune 中註冊。 當 Apple 引進了下列變更時，使用者必須：
-
-- 開始註冊程序，在公司入口網站應用程式中，若要下載管理設定檔
-- 移至 設定 > 一般 > 設定檔
-- 選取正確的設定檔，然後逐一點選以安裝
-- 回到 公司入口網站，以完成註冊 
-
-已註冊並升級為新版 iOS 的裝置除非取消註冊，否則不應該會受到影響，且取消註冊後需要重新註冊。
-
-Apple 將不會在此新版本中變更執行 iOS 12.1 或舊版裝置上的註冊體驗。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-您應該規劃升級文件和終端使用者指引。 您也可能需要讓技術服務人員知道這些變更。 我們將透過訊息中心和「新功能」頁面，讓您隨時掌握這項變更何時生效。
-
-#### <a name="additional-information"></a>其他資訊
-[支援部落格文章中螢幕擷取畫面和影片的預期的註冊流程](https://aka.ms/iOS_enrollment_changes)。
-
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>規劃變更：iOS 版 Intune 公司入口網站應用程式的使用者體驗更新
 很高興宣布 Intune 很快就會發佈主要使用者體驗更新到 iOS 公司入口網站應用程式。 該更新包括重新設計的首頁視覺呈現，以及進階篩選和更快的應用程式與書籍存取速度。
 
@@ -88,35 +49,13 @@ Apple 將不會在此新版本中變更執行 iOS 12.1 或舊版裝置上的註�
 - 搜尋電子書的功能
 - 應用程式和電子書的搜尋歷程記錄
 
-若您已加入 Apple TestFlight 計畫，當發行前版本的 Intune 已更新 iOS 公司入口網站應用程式推出時，您將會收到通知。 若您未加入 Apple TestFlight 計畫，現在註冊不會太晚。 註冊可讓您在使用者可使用已更新的公司入口網站應用程式之前先行使用。 您將可以也提供直接與 Intune 小組的意見反應。  
+若您已加入 Apple TestFlight 計畫，當發行前版本的 Intune 已更新 iOS 公司入口網站應用程式推出時，您將會收到通知。 若您未加入 Apple TestFlight 計畫，現在註冊不會太晚。 註冊可讓您在使用者可使用已更新的公司入口網站應用程式之前先行使用。 您也可以提供直接與 Intune 小組的意見反應。  
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
 您不需要採取任何動作，這些變更將會在即將推出的 iOS CP 應用程式版本中發行。 
 
 #### <a name="additional-information"></a>其他資訊
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>提醒： 移除的 現有 Exchange Online Intune 連接器 <!-- 3105122 -->
-MC165575，在我們告訴大家，我們會移除 Exchange Online Intune '服務對服務' 連接器功能在未來更新中。 2 月版更新至 Intune 服務中，我們將停用按鈕，以設定新的連接器。 我們打算在 2019 年 3 月中移除所有現有 Exchange Online Intune 連接器。
- 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-您之所以接收到此訊息的原因，是因為我們的記錄顯示您可能正在您的環境中使用「服務對服務」連接器功能。 「服務對服務」連接器支援對適用於 Exchange Online 的 Exchange Active Sync Only 裝置進行 Intune 管理，但不支援內部部署基礎結構。 此連接器在主控台上的顯示方式，會讓人認為它是條件式存取 (CA) 的必要項目，但事實上 CA 並不需要它。 您可能已使用此連接器來了解使用 Exchange Online，再套用條件式存取。 Microsoft 365 系統管理中心已提供這項資訊。 您可以在這裡，找到正用於 7 到 180 天的 Exchange Online 包括應用程式類型，提供使用情況報告。 如需詳細資訊，請參閱[在系統管理中心-電子郵件應用程式使用 Office 365 報表](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide)。  
- 
-如果您在您的環境中使用此連接器，在我們於 2 月停用連接器之後，您將無法在 Intune 中監視或抹除 Exchange Active Sync Only 裝置。 此變更期間預期不會對您的終端使用者造成任何影響。
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-如果您已設定服務對服務連接器，並具有 Exchange Active Sync Only 裝置，請切換成其他方法以管理您的裝置。 下列選項可供您選擇：
-
-- 在行動裝置管理 (MDM) 中註冊裝置 
-- 使用 Intune 應用程式防護原則來管理裝置 
-- 使用在[這裡](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)的文件中所概述的 Exchange 控制項 
-
-#### <a name="additional-information"></a>其他資訊  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>請檢查您在 Intune 中的 「 延遲可視性的軟體更新 」 設定 
 
@@ -140,3 +79,38 @@ https://docs.microsoft.com/intune/exchange-service-connector-configure
 
 #### <a name="additional-information"></a>其他資訊 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>為變更做規劃： Windows 10 在 Intune 中的電子郵件設定檔的近期修正 <!--3904031-->
+我們正在更新 Intune 寫入至 Intune 服務，以修正 bug 以及，並確保您的電子郵件設定檔繼續努力在未來版本的 Windows 10 更新的適用於 Windows 10 年 4 月中的設定檔的電子郵件的方式。 沒有您需要在部署此修正程式之後所採取的動作。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+這項變更會影響您如果使用 Windows 10 使用的電子郵件設定檔
+- 在 Windows 10 桌上型電腦上的原生郵件用戶端或
+- 在 Windows 10 行動裝置上的 Outlook 電子郵件用戶端
+
+這會影響這兩個 Intune 獨立和混合式行動裝置管理 (MDM) 的客戶。
+
+4 月更新推出之後，您必須重新建立這些設定檔，在 Intune 主控台中 （在 Configuration Manager 系統管理員主控台中如果您使用混合式 MDM）。
+
+如果您未採取任何動作，以下是您會看到年 4 月更新之前建立的設定檔：
+
+- 現有的電子郵件設定檔會顯示在 Intune 主控台或 Configuration Manager 系統管理員主控台中的錯誤狀態，但使用者仍然可以存取電子郵件。 不過，後續的 Windows 更新的首度發行之後，這些設定檔將無法運作。 這些設定檔的目標裝置上的終端使用者將無法存取電子郵件。
+- 之後年 4 月將不會反映在對這些設定檔編輯目標裝置。
+- 選擇性抹除移除這些設定檔，即使在修正程式在 4 月推出後，將無法運作。
+
+如果您採取的動作，然後重新建立電子郵件設定檔，使用者必須進行類似的步驟，第一次部署電子郵件設定檔時。 其電子郵件將會封鎖，直到它們接受更新適用於新的設定檔同步處理。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+您需要在 4 月更新推出修正之後，才採取動作。 我們會連到您透過訊息中心時，即可開始來重新建立您在 Intune 中的設定檔，這項變更會上線。
+
+如果您在 Intune 中使用 Windows 10 的電子郵件設定檔，您必須採取下列步驟：
+
+1. 擷取現有的 Win 10 設定檔設定
+2. 取消指派及/或刪除現有的設定檔
+3. 建立新的設定檔使用擷取的設定，並將新的設定檔指派給相同的群組
+
+您可能需要通知使用者，並讓技術服務人員知道這項變更。 請參閱錯誤詳細資料和重新建立這些設定檔的指示的其他資訊的支援 」 的部落格文章。
+
+#### <a name="additional-information"></a>其他資訊
+https://aka.ms/Win10EmailProfiles
+

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565735"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429686"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -176,6 +176,7 @@ ms.locfileid: "57565735"
 
       按一下 [確定] 以儲存您的變更。
 
+    - **AutoLaunch**： 選擇性。 當使用者登入時，請選擇 AutoLaunch 應用程式。 單一應用程式可以是 AutoLaunched。
     - **磚大小**：必要。 針對應用程式磚大小，選擇 [小]、[中]、[寬] 或 [大]。
 
   > [!TIP]
@@ -184,6 +185,8 @@ ms.locfileid: "57565735"
 - **使用其他開始畫面版面配置**：選擇 [是] 以輸入描述應用程式在 [開始] 功能表上如何顯示 (包括應用程式的順序) 的 XML 檔案。 如果您需要在 [開始] 功能表中有更多自訂項目，請使用此選項。 [自訂與匯出 [開始] 配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)提供一些指引和範例 XML。
 
 - **Windows 工作列**：選擇 [顯示] 或 [隱藏] 工作列。 預設不會顯示此工作列。 圖示 (例如 Wi-Fi 圖示) 會顯示，但使用者無法變更設定。
+
+- **允許下載資料夾的存取權**： 選擇**是**以允許使用者存取 Windows 檔案總管中的 [下載] 資料夾。 根據預設，已停用 [下載] 資料夾的存取。 這項功能通常用於使用者存取從瀏覽器下載的項目。
 
 按一下 [確定] 以儲存您的變更。
 

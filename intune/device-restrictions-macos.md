@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565344"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330414"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 macOS 裝置設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "57565344"
   本功能適用於：  
   - macOS 10.13 及更新版本
 
-- **延遲 （僅限受監督） 的軟體更新**： 當設定為**未設定**（預設值），軟體更新會顯示在裝置上，Apple 會釋放它們。 比方說，如果 macOS 更新取得 Apple 發行時在特定日期，然後該更新自然會出現在周圍的發行日期的裝置。
+- **延遲軟體更新**： 當設定為**未設定**（預設值），軟體更新會顯示在裝置上，Apple 會釋放它們。 比方說，如果 macOS 更新取得 Apple 發行時在特定日期，然後該更新自然會出現在周圍的發行日期的裝置。 允許識別值種子組建更新不會有延遲。
 
   **啟用**可讓您時，會顯示在裝置上，從 0-90 天的軟體更新會延遲。 此設定不影響更新或可使用時並未安裝。 
 
