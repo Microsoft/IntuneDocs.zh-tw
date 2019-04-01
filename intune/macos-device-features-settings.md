@@ -6,21 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/05/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0707226412d314ac1d44ba339b4c9151b394919
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 4973dc5038ecfe9a8e909df1a1db3feceb30979b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233894"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565327"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
 
@@ -34,8 +35,8 @@ Intune 包含一些內建設定，讓 macOS 使用者能夠列印到您網路中
 
 1. 在 [設定] 中，選取 [AirPrint]。 輸入下列 AirPrint 伺服器屬性：
 
-    - **IP 位址**：輸入印表機的 IPv4 或 IPv6 位址。 如果您使用主機名稱來識別印表機，您可以透過在終端機應用程式中偵測該印表機來取得 IP 位址。 [取得 IP 位址和路徑](#get-the-ip-address-and-path) (在本文中) 會提供更多詳細資料。
-    - **路徑**：輸入印表機的路徑。 您網路上印表機的路徑通常是 `ipp/print`。 [取得 IP 位址和路徑](#get-the-ip-address-and-path) (在本文中) 會提供更多詳細資料。
+    - **IP 位址**：輸入印表機的 IPv4 或 IPv6 位址。 如果您使用主機名稱來識別印表機，您可以透過在終端機應用程式中偵測該印表機來取得 IP 位址。 本文中的[取得 IP 位址和路徑](#get-the-ip-address-and-path)會提供更多詳細資料。
+    - **路徑**：輸入印表機的路徑。 您網路上印表機的路徑通常是 `ipp/print`。 本文中的[取得 IP 位址和路徑](#get-the-ip-address-and-path)會提供更多詳細資料。
     - **連接埠**：輸入 AirPrint 目的地的接聽連接埠。 如果將此屬性留白，AirPrint 就會使用預設連接埠。 適用於 iOS 11.0 和更新版本。
     - **TLS**：選擇 [啟用] 以保護 AirPrint 與傳輸層安全性 (TLS) 的連線。 適用於 iOS 11.0 和更新版本。
 

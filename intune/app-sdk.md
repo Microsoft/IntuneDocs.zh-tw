@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837388"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566483"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概觀
-Intune App SDK (適用於 iOS 和 Android) 可啟用應用程式的 Intune 應用程式保護原則。 它會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強使用者和 IT 系統管理員體驗，您可以利用 API，針對需要應用程式參與的功能自訂您的應用程式行為。
+Intune App SDK (適用於 iOS 和 Android) 可啟用您的應用程式以支援 Intune [應用程式保護原則](app-protection-policy.md)。 當您的應用程式具有應用程式保護原則套用至它時，它可以由 Intune 管理，並做為受管理的應用程式的 Intune 所辨識。 SDK 會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強終端使用者和 IT 系統管理員體驗，您可以利用 SDK 的 API 來自訂應用程式行為，以支援需要應用程式參與的功能。
 
-啟用應用程式的應用程式保護原則之後，IT 系統管理員就可以部署這些原則，以保護他們在應用程式內的公司資料。
+啟用應用程式以支援 Intune 應用程式保護原則之後，IT 系統管理員就可以部署這些原則，以保護他們在應用程式內的公司資料。
 
 ## <a name="app-protection-features"></a>應用程式保護功能
 
@@ -51,13 +52,13 @@ IT 系統管理員可以強制使用 [Intune Managed Browser 應用程式](app-c
 ### <a name="enforce-a-pin-policy"></a>強制執行 PIN 原則
 IT 系統管理員可以要求終端使用者先輸入 PIN，才能存取應用程式中的公司資料。 這可確保使用應用程式的人員就是一開始使用其工作或學校帳戶登入的相同人員。 當終端使用者設定其 PIN 時，Intune App SDK 會使用 Azure Active Directory 依據已註冊的 Intune 帳戶來驗證終端使用者的認證。
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>要求使用者使用工作或學校帳戶登入來存取應用程式
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>需要使用者使用工作或學校帳戶登入來存取應用程式
 IT 系統管理員可以要求使用者使用其工作或學校帳戶登入來存取應用程式。 Intune App SDK 使用 Azure Active Directory 來提供單一登入體驗，其中認證一旦輸入，便可供後續登入重複使用。 我們也支援驗證與 Azure Active Directory 建立同盟的身分識別管理解決方案。
 
 ### <a name="check-device-health-and-compliance"></a>檢查裝置健全狀況和合規性
 IT 系統管理員可以在終端使用者存取應用程式之前，檢查裝置的健全狀況以及其是否符合 Intune 原則。 在 iOS 上，這項原則會檢查裝置是否已進行 JB 破解。 在 Android 上，這項原則會檢查裝置是否已進行 Root 破解。
 
-### <a name="multi-identity-support"></a>多重身分識別支援
+### <a name="support-multi-identity"></a>支援多重身分識別
 多重身分識別支援是一種 SDK 功能，允許單一應用程式中可以共存受原則管理的帳戶 (公司) 和未受管理的帳戶 (個人)。
 
 例如，許多使用者會在適用於 iOS 和 Android 的 Office 行動應用程式中，同時設定公司和個人電子郵件帳戶。 使用者使用其公司帳戶來存取資料時，IT 系統管理員必須確定將套用應用程式保護原則。 不過，當使用者存取個人電子郵件帳戶，該資料則不在 IT 系統管理員的控制範圍內。 Intune App SDK 藉由將應用程式保護原則的目標**僅**限於應用程式中的公司身分識別，來達成這項目的。
@@ -80,4 +81,4 @@ IT 系統管理員可以在終端使用者存取應用程式之前，檢查裝�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 了解[應用程式保護原則](app-protection-policy.md)。
+- [開始使用 Microsoft Intune App SDK](app-sdk-get-started.md)。

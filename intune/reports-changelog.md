@@ -6,10 +6,11 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834002"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565633"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 保持 Intune 資料倉儲更新的最新狀態。
+
+## <a name="1902"></a>1902 
+_發行日期：2019 年 2 月_
+
+### <a name="power-bi-compliance-app"></a>Power BI 合規性的應用程式 
+
+存取您在 Power BI Online 中使用的 Intune 資料倉儲[Intune 合規性 （資料倉儲）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)應用程式。 使用此 Power BI 應用程式中，您現在可以存取及共用預先建立的報表，不必進行任何設定，而不需離開您的 web 瀏覽器。 
+
+> [!NOTE]
+> 有兩個額外的篩選器，您可以套用到 Intune 合規性的應用程式。
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 合規性應用程式中新增其他篩選器
+1. 開啟[Intune 合規性 （資料倉儲）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web browers 中的應用程式。
+2. 按一下 **不符合規範的裝置**，然後選取**不符合規範**中**complianceStatus**篩選器。 
+3. 按一下 **未知裝置**，然後選取**尚無法使用**中**complianceStatus**篩選器。 
 
 ## <a name="1812"></a>1812 
 _發行日期：2018 年 12 月_
@@ -60,18 +76,18 @@ _2018 年 5 月發行_
 ## <a name="1801"></a>1801
 _發行日期：2018 年 1 月_
 
-### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>僅限 Intune 資料倉儲應用程式的驗證<!-- 1867540 -->
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>僅限 Intune 資料倉儲應用程式的驗證 <!-- 1867540 -->
 
 您可以使用 Azure Active Directory (Azure AD) 來設定應用程式並向 Intune 資料倉儲驗證。 如需詳細資訊，請參閱[僅限 Intune 資料倉儲應用程式的驗證](data-warehouse-app-only-auth.md)。
 
-### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 和 Intune 認證需求<!-- 2077525 -->
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 和 Intune 認證需求 <!-- 2077525 -->
 
 - 存取 Intune 資料倉儲 (包括 API) 時，不再需要指派 Intune 授權給使用者。
 - Intune 角色名稱已從**報表**變更為 **Intune 資料倉儲**。 
 
     如需詳細資訊，請參閱 [Azure AD 和 Intune 認證需求](reports-api-url.md#azure-ad-and-intune-credential-requirements)。
 
-### <a name="odata-query-options----2077711---"></a>OData 查詢選項<!-- 2077711 -->
+### <a name="odata-query-options----2077711---"></a>OData 查詢選項 <!-- 2077711 -->
 
 您可以使用 <code>$select</code> 作為 OData 查詢參數。 目前版本支援下列 OData 查詢參數：<code>$filter</code>、<code>$orderby</code>、<code>$select</code>、<code>$skip</code> 及 <code>$top</code>。 如需詳細資訊，請參閱 [OData 查詢選項](reports-api-url.md#odata-query-options)。
 
@@ -83,7 +99,7 @@ _發行日期：2018 年 1 月_
 ## <a name="1710"></a>1710
 _發行日期：2017 年 11 月_
 
-### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>名為 Current User 的新實體集合限於目前作用中的使用者資料 <!-- 1544273 -->
+### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>名為 Current User 之新實體集合限於目前作用中的使用者資料 <!-- 1544273 -->
 
 **User** 實體集合包含企業中具有所指派授權的所有 Azure Active Directory (Azure AD) 使用者。 這些資料列包含資料收集期間的使用者狀態，即使使用者已經被移除。 例如，某個使用者可能在上個月內被新增到 Intune 然後又被移除。 雖然在報告的時候這個使用者不會出現，但使用者和狀態會出現在資料中。 您可以建立一個報告，其中顯示使用者的歷程記錄在您資料中出現的期間。
 

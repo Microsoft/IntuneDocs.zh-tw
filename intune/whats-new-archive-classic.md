@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56dcf0bb9c35bb12198537e6fdd1d2f72e3cfbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 32bee8ea873c728741deac1ef2adfd57bd9bf612
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238858"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461272"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -51,13 +52,13 @@ Android 公司入口網站應用程式的更新會在使用者啟動或繼續執
 
 您現在可以建立以應用程式為基礎的條件式存取原則，來禁止沒有套用應用程式保護原則的應用程式存取 [SharePoint Online](app-based-conditional-access-intune-create.md)。 在以應用程式為基礎的條件式存取案例中，您可以使用 Azure 入口網站指定能存取 SharePoint Online 的應用程式。
 
-#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>從 iOS 版入口網站到 iOS 版 Outlook 的單一登入 <!--834012-->
+#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>從 iOS 版公司入口網站到 iOS 版 Outlook 的單一登入支援 <!--834012-->
 如果使用者在同一部裝置上使用相同的帳戶登入 iOS 公司入口網站應用程式，則不必再登入 Outlook 應用程式。 當使用者啟動 Outlook 應用程式時，將能夠選取其帳戶並自動登入。 我們也將努力為其他 Microsoft 應用程式新增這項功能。
 
-#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>改進 iOS 公司入口網站應用程式中的狀態訊息 <!--744866-->
+#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>已改善 iOS 版公司入口網站應用程式中的狀態訊息 <!--744866-->
 iOS 公司入口網站應用程式中現在會顯示更具體的新錯誤訊息，以提供有關裝置狀況之更容易存取的資訊。 這些錯誤狀況之前包含在標題為「公司入口網站暫時無法使用」的一般錯誤訊息中。 此外，如果使用者在沒有網際網路連線時啟動 iOS 上的公司入口網站，則會在首頁上看到持續性狀態列，指出「沒有網際網路連線」。
 
-#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改進 Windows 10 公司入口網站應用程式的應用程式安裝狀態 <!--676495-->
+#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>已改善 Windows 10 公司入口網站應用程式的應用程式安裝狀態 <!--676495-->
 
 在 Windows 10 公司入口網站應用程式中啟動的應用程式安裝，有下列新的改進項目：
 -   更快速地報告 MSI 套件的安裝進度
@@ -108,19 +109,19 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 ### <a name="whats-coming"></a>未來動態
 
-#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改善適用於所有平台的公司入口網站應用程式登入體驗 <!--User Story 1132123-->
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>已改善適用於所有平台公司入口網站應用程式的登入體驗 <!--User Story 1132123-->
 
 我們宣布將在幾個月內推出變更，以改進 Android、iOS 和 Windows 版 Intune 公司入口網站應用程式的登入體驗。 當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。
 
 您可在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面上找到舊版登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗的螢幕擷取畫面。
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>規劃變更：Intune 正在變更 Intune 合作夥伴入口網站體驗 <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>變更計畫：Intune 正在變更 Intune 合作夥伴入口網站體驗 <!-- 1050016 -->
 
 我們會在 2017 年 5 月中旬的服務更新將 Intune 合作夥伴頁面從 manage.microsoft.com 移除。  
 
 如果您是合作夥伴系統管理員，將無法再從 Intune 合作夥伴頁面代表客戶檢視或採取動作，但會需要登入在 Microsoft 的另外兩個合作夥伴入口網站的其中一個。
 
-[Microsoft 合作夥伴中心](https://partnercenter.microsoft.com/)和 [Microsoft Office 365 合作夥伴系統管理中心](https://portal.office.com/)都能讓您登入所管理客戶的帳戶。 合作夥伴在此後請使用這兩個網站來管理客戶。
+[Microsoft 合作夥伴中心](https://partnercenter.microsoft.com/)和 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)都能讓您登入所管理的客戶帳戶。 合作夥伴在此後請使用這兩個網站來管理客戶。
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
@@ -149,14 +150,14 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 Android 版公司入口網站應用程式將會更新其使用者介面，以提供更現代化的外觀和操作，以及更佳的使用者體驗。 值得注意的更新如下︰
 
 - 色彩：公司入口網站索引標籤標頭會以 IT 定義的品牌上色。
-- 應用程式：在 [應用程式] 索引標籤中，已更新 [精選應用程式] 和 [所有應用程式] 按鈕。
-- Search：在 [應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
-- 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別]，以更方便瀏覽。
+- 應用程式：在 [應用程式] 索引標籤中，已更新 [熱門應用程式] 和 [所有應用程式] 按鈕。
+- 搜尋：在 [應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
+- 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [熱門]、[所有] 與 [類別]，以更方便瀏覽。
 - 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤以提高可讀性。
 
 如需有關這些變更的詳細資訊，請參閱 [Intune 使用者應用程式的 UI 更新](whats-new-app-ui.md)。
 
-#### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>未受管理的裝置可以存取已指派的應用程式 <!--664691-->
+#### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>非受控裝置可以存取已指派的應用程式 <!--664691-->
 
 iOS 和 Android 使用者能夠在他們未受管理的裝置上，安裝指派給他們的「無須註冊即可使用」應用程式，這屬於公司入口網站的設計變更。 使用 Intune 認證，使用者能夠登入公司入口網站，並查看指派給他們的應用程式清單。 「無須註冊即可使用」應用程式的應用程式套件，可透過公司入口網站下載取得。 這項變更不會影響需要註冊才能安裝的應用程式，因為如果使用者想要安裝這些應用程式，系統會提示他們註冊裝置。
 
@@ -173,7 +174,7 @@ iOS 10.3 版在 2017 年 3 月 27 日開始向 iOS 使用者推出。 所有現�
 
 目前沒有任何已知問題可分享。 如果您在使用 iOS 10.3 時發生任何問題，歡迎連絡 [Intune 支援小組](get-support.md)。
 
-#### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改善對於中國 Android 使用者的支援 <!--720444-->
+#### <a name="improved-support-for-android-users-based-in-china---720444--"></a>已改善對中國 Android 使用者的支援 <!--720444-->
 
 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文市集取得應用程式。 公司入口網站將支援此工作流程，方法是將中國的 Android 使用者重新導向，以便從當地的應用程式市集下載公司入口網站及 Outlook 應用程式。 這將會在啟用條件式存取原則時，改善對於行動裝置管理及行動應用程式管理的使用者體驗。 Android 版公司入口網站和 Outlook 應用程式可在下列中文應用程式市集取得：
 
@@ -183,7 +184,7 @@ iOS 10.3 版在 2017 年 3 月 27 日開始向 iOS 使用者推出。 所有現�
 - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
 - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
 
-#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>最佳作法︰請確定您的公司入口網站應用程式是最新版本 <!--879465-->
+#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>最佳做法︰請確定您的公司入口網站應用程式是最新版本 <!--879465-->
 
 我們於 2016 年 12 月發行的更新，會針對成群使用者註冊 iOS、Android、Windows 8.1+ 或 Windows Phone 8.1+ 裝置時，強制使用 Multi-Factor Authentication (MFA)。 若公司入口網站應用程式低於特定基準版本 (Android 為 v5.0.3419.0+，iOS 為 v2.1.17+)，這個功能便無法運作。
 
@@ -201,7 +202,7 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 
 ### <a name="new-capabilities"></a>新功能
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>現代化公司入口網站 <!--753980-->
+### <a name="modernizing-the-company-portal-website---753980--"></a>將公司入口網站現代化 <!--753980-->
 公司入口網站會支援以沒有受管理裝置的使用者為目標的應用程式。 網站會使用新的對比色彩配置、動態圖例及「漢堡功能表」，與其他 Microsoft 產品和服務達成一致， ![公司入口網站左上角新增的漢堡功能表小型影像](./media/CP_hamburger_menu.png)。
 
 ### <a name="notices"></a>通知
@@ -217,9 +218,9 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 註冊 Windows 10 Desktop 的預設行為會變更。 新的註冊將會遵循一般 MDM 代理程式註冊流程，而不是透過電腦代理程式。 公司入口網站會提供 Windows 10 Desktop 使用者，有關引導他們新增 Windows 10 Desktop 電腦作為行動裝置之程序的註冊指示。 這不會影響目前已註冊的電腦，而且您的組織還是可以使用電腦代理程式來管理 Windows 10 Desktop，如[設定 Windows 裝置管理](manage-windows-pcs-with-microsoft-intune.md)中所述。
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>改善選擇性抹除的行動應用程式管理支援 <!--581242-->
-如果因 [離線間隔幾天後抹除 App 資料] 原則而自動移除工作或學校資料，則會將如何重新存取工作或學校資料的其他指引授與終端使用者。<!--, or the removal of the Intune Company Portal on Android.-->
+如果因 [抹除應用程式資料之前的離線間隔] 原則而自動移除公司或學校資料，則會將如何重新存取公司或學校資料的其他指引授與終端使用者。<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>適用於 iOS 的公司入口網站連結會在應用程式內開啟 <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS 版公司入口網站連結會在應用程式內開啟 <!--665954-->
 適用於 iOS 的公司入口網站應用程式連結 (包括文件和應用程式的連結) 會使用 Safari 的應用程式內檢視直接在公司入口網站應用程式中開啟。 這項更新將在 1 月與服務更新分開提供。
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 裝置的新 MDM 伺服器位址 <!--893007-->
@@ -229,13 +230,13 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 從 3 月起，Android 版公司入口網站應用程式會遵循[素材設計方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀與風格。 此改善的使用者體驗包括︰
 
 * __色彩__︰索引標籤標頭可根據您的自訂調色盤上色。
-* __介面__：已更新 [應用程式] 索引標籤中的 [精選 App] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
-* __瀏覽__：[所有應用程式] 會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以更方便瀏覽。
-* __服務__：[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
+* __介面__︰[應用程式] 索引標籤已更新 [精選 App] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
+* __瀏覽__︰所有應用程式都會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以方便瀏覽。
+* __服務__︰[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
 
 您可以在 [UI updates for Intune end user apps](whats-new-app-ui.md) (Intune 終端使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
 
-### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>商務用 Microsoft 網上商店的相關多重管理工具 <!--926135-->
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>建立多重管理工具與商務用 Microsoft Store 的關聯 <!--926135-->
 如果您使用多種管理工具來部署商務用 Microsoft 網上商店應用程式，以前只能建立與其中一種與商務用 Microsoft 網上商店的關聯。 現在可以建立多種管理工具與市集的關聯性，例如，Intune 和 Configuration Manager。 如需詳細資料，請參閱[以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式](windows-store-for-business.md)。
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure 入口網站中 Intune 公開預覽的新功能 <!--736542-->
@@ -252,7 +253,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 ### <a name="new-capabilities"></a>新功能
 
-#### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>無裝置註冊之 MAM 的主控台內報表 <!--677961-->
+#### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>無需註冊的 MAM 主控台內報表 <!--677961-->
 已註冊的裝置和未註冊的裝置已新增新的應用程式保護報表。 深入了解如何[使用 Intune 監視行動應用程式管理原則](app-protection-policies-monitor.md)。
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 支援 <!--694397-->
@@ -269,12 +270,12 @@ Intune 現在完全支援和管理 Android 7.1.1。
 公司入口網站會提供 Windows 10 Desktop 使用者，有關引導他們新增 Windows 10 Desktop 電腦作為行動裝置之程序的註冊指示。 這不會影響目前已註冊的電腦，而且您的組織還是可以使用電腦代理程式來管理 Windows 10 Desktop，如[設定 Windows 裝置管理](manage-windows-pcs-with-microsoft-intune.md)中所述。
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>改善選擇性抹除的行動應用程式管理支援 <!--581242-->
-如果因 [離線間隔幾天後抹除 App 資料] 原則而自動移除工作或學校資料，則會將如何重新存取工作或學校資料的其他指引授與終端使用者。<!--, or the removal of the Intune Company Portal on Android.-->
+如果因 [抹除應用程式資料之前的離線間隔] 原則而自動移除公司或學校資料，則會將如何重新存取公司或學校資料的其他指引授與終端使用者。<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>適用於 iOS 的公司入口網站連結會在應用程式內開啟 <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS 版公司入口網站連結會在應用程式內開啟 <!--665954-->
 適用於 iOS 的公司入口網站應用程式連結 (包括文件和應用程式的連結) 會使用 Safari 的應用程式內檢視直接在公司入口網站應用程式中開啟。 這項更新將在 1 月與服務更新分開提供。
 
-#### <a name="modernizing-the-company-portal-website---753980--"></a>現代化公司入口網站 <!--753980-->
+#### <a name="modernizing-the-company-portal-website---753980--"></a>將公司入口網站現代化 <!--753980-->
 從 2 月開始，公司入口網站將支援以沒有受管理裝置的使用者為目標的應用程式。 網站會使用新的對比色彩配置、動態圖例及「漢堡功能表」，與其他 Microsoft 產品和服務達成一致， ![公司入口網站漢堡功能表](./media/CP_hamburger_menu.png)。
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>應用程式保護原則的新文件 <!--583398-->
@@ -302,13 +303,16 @@ Intune 現在完全支援和管理 Android 7.1.1。
 
 Azure 入口網站中的管理體驗將使用已宣佈的新群組和目標設定功能；當您現有的租用戶移轉至新的群組體驗時，也會同時將您移轉，以預覽您租用戶的新管理體驗。 在此同時，請在我們的[新文件](/intune/what-is-intune)中深入了解我們在 Azure 入口網站中針對 Microsoft Intune 做了哪些準備。
 
-__Azure 入口網站的電信費用管理整合公開預覽__ <!--747605--> 我們現在將開始在 Azure 入口網站中預覽與第三方電信費用管理 (TEM) 服務的整合。 您可以使用 Intune 強制執行限制國內和漫遊資料使用量。 我們將開始與 [Saaswedo](http://www.saaswedo.com/) 進行這些整合。 若要在您的試用版租用戶中啟用此功能，請[連絡 Microsoft 支援服務](get-support.md)。
+__Azure 入口網站公開預覽中的電信費用管理整合__ <!--747605-->
+我們現在將開始在 Azure 入口網站中預覽與協力廠商電信費用管理 (Telecom Expense Management，TEM) 服務的整合。 您可以使用 Intune 強制執行限制國內和漫遊資料使用量。 我們將開始與 [Saaswedo](http://www.saaswedo.com/) 進行這些整合。 若要在您的試用版租用戶中啟用此功能，請[連絡 Microsoft 支援服務](get-support.md)。
 
 ### <a name="new-capabilities"></a>新功能
 
-__跨所有平台的 Multi-Factor Authentication__ <!--747590--> 您現在可以在一組選取的使用者從 Azure 管理入口網站註冊 iOS、Android、Windows 8.1+ 或 Windows Phone 8.1+ 裝置時，對這些使用者強制執行 Multi-Factor Authentication (MFA)，方法是在 Azure Active Directory 中設定 Microsoft Intune 註冊應用程式的相關 MFA。
+__跨所有平台的 Multi-Factor Authentication__ <!--747590-->
+您現在可以在一組選取的使用者從 Azure 管理入口網站註冊 iOS、Android、Windows 8.1+ 或 Windows Phone 8.1+ 裝置時，對這些使用者強制執行 Multi-Factor Authentication (MFA)，方法是在 Azure Active Directory 中設定 Microsoft Intune 註冊應用程式的相關 MFA。
 
-__限制行動裝置註冊的能力__ <!--747596--> Intune 正在新增新的註冊限制，以控制哪些行動裝置平台可以註冊。 Intune 將行動裝置平台分為 iOS、macOS、Android、Windows 和 Windows Mobile。
+__限制行動裝置註冊的能力__ <!--747596-->
+Intune 正在新增新的註冊限制，以控制哪些行動裝置平台可以註冊。 Intune 將行動裝置平台分為 iOS、macOS、Android、Windows 和 Windows Mobile。
 * 限制行動裝置註冊不會限制電腦用戶端註冊。
 * 有一個僅適用於之iOS 的額外選項可封鎖個人擁有的裝置註冊。
 
@@ -316,9 +320,11 @@ Intune 會將所有的新裝置標示為個人，除非 IT 系統管理員採取
 
 ### <a name="notices"></a>通知
 
-__移動到 Azure 入口網站之註冊上的 Multi-Factor Authentication__ <!--VSO 750545--> 先前，系統管理員會移至 Intune 主控台或 Configuration Manager (2016 年 10 月以前的版本) 主控台，以設定用於 Intune 註冊的 MFA。 透過這項更新的功能，您現在將會使用 Intune 認證登入 [Microsoft Azure 入口網站](https://manage.windowsazure.com)，並透過 Azure AD 進行 MFA 設定。 如需詳細資訊，請參閱[這裡](https://aka.ms/mfa_ad)。
+__移至 Azure 入口網站的註冊相關 Multi-Factor Authentication__ <!--VSO 750545-->
+之前，系統管理員會移至 Intune 主控台或 Configuration Manager (2016 年 10 月以前的版本) 主控台，以設定用於 Intune 註冊的 MFA。 透過這項更新的功能，您現在將會使用 Intune 認證登入 [Microsoft Azure 入口網站](https://manage.windowsazure.com)，並透過 Azure AD 進行 MFA 設定。 如需詳細資訊，請參閱[這裡](https://aka.ms/mfa_ad)。
 
-__適用於 Android 的 [公司入口網站] 應用程式現在可在中國使用__ <!--VSO 658093--> 我們將在中國發佈適用於 Android 的公司入口網站應用程式以供下載。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式市集取得應用程式。 適用於 Android 的公司入口網站應用程式可在下列市集下載：
+__中國現在提供 Android 版公司入口網站應用程式__ <!--VSO 658093-->
+我們將在中國發佈適用於 Android 的公司入口網站應用程式以供下載。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式市集取得應用程式。 適用於 Android 的公司入口網站應用程式可在下列市集下載：
 * [百度](https://go.microsoft.com/fwlink/?linkid=836946)
 * [華為](https://go.microsoft.com/fwlink/?linkid=836948)
 * [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -337,11 +343,14 @@ __適用於 Android 的 [公司入口網站] 應用程式現在可在中國使�
 
 ### <a name="deprecations"></a>棄用功能
 
-__Firefox 不再支援 Silverlight__ <!--VSO TBA--> Mozilla 將於 [Firefox 瀏覽器](https://www.mozilla.org/firefox)版本 52 中移除對 Silverlight 的支援，2017 年 3 月起生效。 如此一來，您將無法再使用 Firefox 51 版之後的版本登入現有的 Intune 主控台。 建議使用 Internet Explorer 10 或 11，或是 [Firefox 52 版之前的版本](https://ftp.mozilla.org/pub/firefox/releases/)來存取管理主控台。 Intune 轉換到 Azure 入口網站將可在不需要 Silverlight 相依性的情況下，支援數種[現代化瀏覽器](/azure/azure-preview-portal-supported-browsers-devices)。
+__Firefox 不再支援 Silverlight__ <!--VSO TBA-->
+Mozilla 正於 [Firefox 瀏覽器](https://www.mozilla.org/firefox)的 52 版中移除對 Silverlight 的支援，將於 2017 年 3 月生效。 如此一來，您將無法再使用 Firefox 51 版之後的版本登入現有的 Intune 主控台。 建議使用 Internet Explorer 10 或 11，或是 [Firefox 52 版之前的版本](https://ftp.mozilla.org/pub/firefox/releases/)來存取管理主控台。 Intune 轉換到 Azure 入口網站將可在不需要 Silverlight 相依性的情況下，支援數種[現代化瀏覽器](/azure/azure-preview-portal-supported-browsers-devices)。
 
-__移除 Exchange Online 行動信箱原則__ <!--770687--> 從 12 月開始，系統管理員將無法再於 Intune 主控台內檢視或設定 Exchange Online (EAS) 行動信箱原則。 這項變更會從 12 月到 1 月推出給所有 Intune 租用戶。 所有現有的原則將會保持設定狀態；若要設定新的原則，請使用 Exchange 管理命令介面。 如需詳細資訊，請參閱[這裡](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx)。
+__移除 Exchange Online 行動收件匣原則__ <!--770687-->
+從 12 月開始，系統管理員將無法再於 Intune 主控台內檢視或設定 Exchange Online (EAS) 行動信箱原則。 這項變更會從 12 月到 1 月推出給所有 Intune 租用戶。 所有現有的原則將會保持設定狀態；若要設定新的原則，請使用 Exchange 管理命令介面。 如需詳細資訊，請參閱[這裡](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx)。
 
-__Android 上不再支援 Intune AV Player、Image Viewer 和 PDF Viewer 應用程式__ <!--747553--> 從 2016 年 12 月中開始，使用者將無法再使用 Intune AV Player、Image Viewer 和 PDF Viewer 應用程式。 這些應用程式已取代成 Azure 資訊保護應用程式。 如需 Azure 資訊保護應用程式的詳細資訊，請參閱[這裡](/information-protection/rms-client/mobile-app-faq)。
+__Android 不再支援 Intune AV 播放程式、影像檢視器及 PDF 檢視器應用程式__ <!--747553-->
+從 2016 年 12 月中開始，使用者將無法再使用 Intune AV 播放程式、影像檢視器及 PDF 檢視器應用程式。 這些應用程式已取代成 Azure 資訊保護應用程式。 如需 Azure 資訊保護應用程式的詳細資訊，請參閱[這裡](/information-protection/rms-client/mobile-app-faq)。
 
 ## <a name="november-2016"></a>2016 年 11 月
 

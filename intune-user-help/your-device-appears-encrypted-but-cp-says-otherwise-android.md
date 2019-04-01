@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334998"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389472"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>您的 Android 裝置似乎已加密，但公司入口網站的說法不同
 
@@ -63,16 +63,15 @@ ms.locfileid: "57334998"
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>已知可更新以修正此問題的裝置
 
-如果您擁有下列其中一個裝置，而且未將該裝置更新至最新版的 Android，可能就會遇到此問題。 您可以前往 [設定] > [更新] 來安裝這些裝置的更新。 
+如果您未更新您的裝置為最新版的 Android，請移至您的裝置**設定**應用程式並選取**更新**。 這些裝置可能會出現為不符合規範，直到您更新：  
 
-- [華為榮耀 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [華為 P9](https://consumer.huawei.com/en/phones/p9/)
+- 華為榮耀 8
+- 華為 P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>已知目前無法透過更新來修正此問題的裝置
+下列裝置永遠會加密，並不能用來存取公司資源。 若要存取公司資源，您必須使用不同的裝置。  
 
-您無法解決下列裝置的此一問題。 您可能需要使用不同的裝置來存取公司資源。 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm) \(英文\)
-- [OPPO 裝置](https://www.oppo.com/en/smartphones)
-- [Vivo 裝置](https://www.vivo.co.in)
-- [小米 Mi 智慧型手機](https://xiaomi-mi.com/mi-smartphones/) \(英文\)
+- 華為 Mate 8
+- OPPO 裝置
+- Vivo 裝置
+- 小米 Mi 智慧型手機

@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187441"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566551"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -146,13 +148,13 @@ __在 Microsoft Intune 裝置上執行受使用者影響的遠端動作__ | [Dev
 __讀取和寫入 Microsoft Intune 裝置__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __讀取 Microsoft Intune 裝置__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __讀取和寫入 Microsoft Intune RBAC 設定__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__讀取 Microsoft Intune RBAC 設定__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__讀取 Microsoft Intune RBAC 設定__ | DeviceManagementRBAC.Read.All
 __讀取和寫入 Microsoft Intune 應用程式__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __讀取 Microsoft Intune 應用程式__ | [DeviceManagementApps.Read.All](#app-ro)
-__讀取和寫入 Microsoft Intune 裝置設定和原則__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__讀取和寫入 Microsoft Intune 裝置設定和原則__ | DeviceManagementConfiguration.ReadWrite.All
 __讀取 Microsoft Intune 裝置設定和原則__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __讀取和寫入 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 表格依照 Azure 入口網站中顯示的順序列出設定。 以下幾節依字母順序說明範圍。
 
@@ -588,7 +590,7 @@ catch {
 
 此外：
 
-- 您可以使用 https://portal.office.com ，將 Intune 授權指派給您的使用者帳戶。
+- 您可以使用 https://admin.microsoft.com ，將 Intune 授權指派給您的使用者帳戶。
 
 - 更新應用程式碼以驗證用戶端的 Azure AD 租用戶網域，而不只是您自己的網域。
 

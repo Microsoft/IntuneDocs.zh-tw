@@ -6,21 +6,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/16/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316894"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566194"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -88,68 +90,87 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用 Intune 應用程式保護原則
 
-若為未使用 UI 架構且以 Xamarin 為基礎的 Android 應用程式，您必須閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 針對您的 Xamarin 型 Android 應用程式，您必須根據指南中包含的[類別與方法取代表](app-sdk-android.md#class-and-method-replacements)，將類別、方法與活動取代為其 MAM 對等項目。 如果您的應用程式未定義 `android.app.Application` 類別，則需要建立一個，並確定繼承自 `MAMApplication`。 ADAL 設定值會透過 AndroidManifest 中繼資料傳送給 SDK。 請參閱[設定應用程式的 ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) 相關文件。
+1. 將 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。
+    1. Xamarin.Forms 應用程式中，新增[Microsoft.Intune.MAM.Remapper.Tasks NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)至以及 Xamarin.Android 專案。 
+2. 請依照下列所需的一般步驟[整合 Intune App SDK](app-sdk-android.md)到 Android 的行動應用程式，同時指的本文件的其他詳細資料。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 整合
 
-1. 將最新版的 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。 這會提供您 Intune 的必要參考來啟用應用程式。
+整合 Intune App SDK 的完整概觀位於[Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 當您閱讀本指南，並與您的 Xamarin 應用程式整合 Intune App SDK 下列各節是以原生 Android 應用程式開發以 Java 和 Xamarin 應用程式開發中，反白顯示實作之間的差異C#。 這些區段應該視為補充一樣，並無法做為取代閱讀整個指南。
 
-2. 徹底閱讀並遵循 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)，並特別注意：
+#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
+在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫且具有類似名稱的方法 (名稱具有 `MAM` 尾碼)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `OnCreate()` 然後呼叫 `base.OnCreate()` 時，`Activity` 必須覆寫 `OnMAMCreate()` 並呼叫 `base.OnMAMCreate()`。
 
-    1. [完整類別和方法取代](app-sdk-android.md#class-and-method-replacements)一節。 
-    2. [MAMApplication ](app-sdk-android.md#mamapplication)。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
-    3. [ADAL 整合](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)一節 (如果您的應用程式向 AAD 執行驗證)。 
-    4. [MAM-WE 註冊](app-sdk-android.md#app-protection-policy-without-device-enrollment)一節 (如果您想從應用程式中的 MAM 服務取得原則)。
+#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 應用程式](app-sdk-android.md#mamapplication)
+您的應用程式必須定義`Android.App.Application`類別繼承自`MAMApplication`。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
+```csharp
+    [Application]
+    class TaskrApp : MAMApplication
+    {
+    public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
+        : base(handle, transfer) { }
+```
 
-> [!NOTE]
-> 嘗試從 [Intune App SDK for Android 開發人員指南](app-sdk-android.md)尋找 `Microsoft.Intune.MAM.Xamarin.Android` 繫結中的對等 API，或從該指南轉換程式碼片段時，請注意 Xamarin 的繫結產生器會以下列顯著的方式修改 Android API：
-> * 所有識別碼都會轉換成 Pascal 命名法的大小寫 (com.foo.bar -> Com.Foo.Bar)
-> * 所有 get/set 作業都會轉換成屬性作業 (例如 Foo.getBar() -> Foo.Bar、Foo.setBar("zap") -> Foo.Bar = "zap")
-> * 所有介面的名稱前面都會加上 'I' 字元 (FooInterface -> IFooInterface)
+#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[啟用需要應用程式參與的功能](app-sdk-android.md#enable-features-that-require-app-participation)
+範例：判斷應用程式是否需要 PIN
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
+```
+範例：判斷主要 Intune 使用者
+```csharp
+IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
+return info?.PrimaryUser;
+```
+範例：判斷是否允許儲存至裝置或雲端儲存體
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
+```
+
+#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[從 SDK 註冊通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
+您的應用程式必須建立 `MAMNotificationReceiver`，並向 `MAMNotificationReceiverRegistry` 進行註冊，才能從 SDK 註冊通知。 這是藉由提供接收者以及想要在 `App.OnMAMCreate` 中接收的通知類型來完成，如下列範例所示：
+```csharp
+public override void OnMAMCreate()
+{
+    // Register the notification receivers
+    IMAMNotificationReceiverRegistry registry = MAMComponents.Get<IMAMNotificationReceiverRegistry>();
+    foreach (MAMNotificationType notification in MAMNotificationType.Values())
+    {
+    registry.RegisterReceiver(new ToastNotificationReceiver(this), notification);
+    }
+    ...
+```
+
+#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM 註冊管理員](app-sdk-android.md#mamenrollmentmanager)
+```csharp
+IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
+```
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms 整合
 
-**除了執行所有上述步驟之外**，我們還針對 `Xamarin.Forms` 應用程式提供 `Microsoft.Intune.MAM.Remapper` 套件。 此套件會將 `MAM` 類別插入常用 `Xamarin.Forms` 類別 (例如 `FormsAppCompatActivity` 和 `FormsApplicationActivity`) 的類別階層中，為您完成類別取代，讓您可以透過提供 MAM 對等功能 (例如 `OnMAMCreate` 和 `OnMAMResume`) 的覆寫來繼續使用這些類別。 若要使用它，請執行下列操作：
-
-1.  將 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 套件新增至您的專案。 如果您尚未包含 Intune APP SDK Xamarin 繫結，則會自動新增繫結。
-
-2.  在您於上述步驟 2.2 中建立之 `MAMApplication` 類別的 `OnMAMActivity` 函式中，新增對 `Xamarin.Forms.Forms.Init(Context, Bundle)` 的呼叫。 因為使用 Intune 管理時，應用程式可以在位於背景時啟動，所以需要這樣做。
+針對`Xamarin.Forms`我們提供的應用程式`Microsoft.Intune.MAM.Remapper`將，以便自動執行 MAM 類別取代封裝`MAM`類別的類別階層到常用的`Xamarin.Forms`類別。 
 
 > [!NOTE]
-> 由於此作業會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性，因此您可能需要在第一次執行 Remapper 之後重新啟動 Visual Studio，IntelliSense 才能正確辨識變更。 
+> Xamarin.Forms 整合是除了完成以上詳述的 Xamarin.Android 整合。
 
-## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>需要 Intune 應用程式保護原則才能使用以 Xamarin 為基礎的 Android LOB 應用程式 (選擇性) 
+一旦 Remapper 新增至您的專案，您必須執行 MAM 對等替代項目。 比方說，`FormsAppCompatActivity`並`FormsApplicationActivity`可以繼續使用在您提供的應用程式覆寫`OnCreate`並`OnResume`MAM 對等項目就會被取代`OnMAMCreate`和`OnMAMResume`分別。
 
-下列是確保以 Xamarin 為基礎的 Android LOB 應用程式僅供受 Intune 保護之使用者在其裝置上使用的指南。 
-    
-### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
-這些指示專門針對所有想要在使用者裝置上使用 Intune 應用程式保護原則的 Android 和 Xamarin 應用程式。
+```csharp
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
+        protected override void OnMAMCreate(Bundle savedInstanceState)
+        {
+            base.OnMAMCreate(savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+```
+如果不會取代您可能發生下列編譯錯誤之前進行取代：
+* [編譯器錯誤 CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239)。 此錯誤通常是這種形式 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``。
+預期出現這種狀況是因為當重新對應程式修改 Xamarin 類別的繼承時，某些函式將被設定為 `sealed` 且會改為新增 MAM 變數以覆寫。
+* [編譯器錯誤 CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507)： 這個錯誤通常出現在這種形式``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``。 當重新對應程式變更一些 Xamarin 類別的繼承時，特定成員函式將會變更為 `public`。 如果您覆寫任何這些函式，您必須變更這些存取修飾詞會覆寫為這些`public`以及。
 
-1. 使用 [Intune SDK for Android 指南](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)中定義的步驟設定 ADAL。
-> [!NOTE] 
-> 「用戶端識別碼」一詞，和繫結於您應用程式之 Azure 入口網站中的「應用程式識別碼」一詞相同。 
-* 若要啟用 SSO，需要「一般 ADAL 設定」#2。
-
-2. 將下列值放在資訊清單中以啟用預設註冊：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，可能會發生衝突。
-
-3. 將下列值放在資訊清單中以啟用所需的 MAM：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> 這會強制應用程式將公司入口網站下載到裝置上，在使用前完成預設註冊流程。
-
-### <a name="working-with-adal"></a>使用 ADAL
-這些指示是 .NET/Xamarin 應用程式的需求，這些應用程式希望在終端使用者裝置上使用 Intune 應用程式保護原則。
-
-1. 請遵循[Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) (適用於 Android 的代理驗證) 下 ADAL 文件中定義的所有步驟。
-
-## <a name="potential-compilation-errors"></a>潛在編譯錯誤
-這些是開發 Xamarin 型應用程式時的常見編譯錯誤。
-
-* [編譯器錯誤 CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239)：此錯誤通常是這種形式 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``。
-當重新對應程式修改 Xamarin 類別的繼承時，某些函式將被設定為 `sealed` 且會改為新增 MAM 變化以覆寫。 只要重新命名您的覆寫，如[這裡](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods)所述。 例如，應將 `MainActivity.OnCreate()` 重新命名為 `MainActivity.OnMAMCreate()`
-
-* [編譯器錯誤 CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507)：此錯誤通常是這種形式 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``。 當重新對應程式工具變更一些 Xamarin 類別的繼承時，一些成員函式將會變更為 `public`。 若您覆寫這些函式中的任何函式，您可能也必須將那些覆寫變更為 `public`。
+> [!NOTE]
+> Remapper 重寫 Visual Studio 會使用 IntelliSense 自動完成的相依性。 因此，您可能需要重新載入，並重建專案，才能正確識別變更的 intellisense 加入 Remapper 時。
 
 ## <a name="support"></a>支援
 如果組織是現有的 Intune 客戶，請與您的 Microsoft 支援代表合作，[在 Github 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上開啟支援票證並建立問題，我們將會儘快提供協助。 

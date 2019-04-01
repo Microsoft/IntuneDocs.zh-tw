@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52828989"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566602"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置新增裝置合規性政策
 
@@ -108,13 +110,13 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 
 1. 選擇您已設定的原則。 現有的原則位於 [裝置合規性] > [原則]。
 2. 選擇原則，然後選擇 [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用此原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
+3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
 
 > [!TIP]
 > 根據預設，裝置每 8 小時會檢查合規性。 但是，使用者可以透過 Intune 公司入口網站應用程式強制執行此程序。
 
 您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受相容性評估。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
 [監視 Intune 裝置合規性原則](compliance-policy-monitor.md)

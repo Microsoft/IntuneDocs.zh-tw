@@ -6,10 +6,11 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238756"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565684"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>行動應用程式管理 (MAM) 實體的參考
 
@@ -83,12 +84,12 @@ ms.locfileid: "57238756"
 | 屬性 | 說明 | 範例 |
 |---------|------------|--------|
 | DateKey |將 MAM 應用程式簽入記錄在資料倉儲中的日期索引鍵。 | 20160703 |
-| ApplicationInstanceKey |與此 MAM 應用程式簽入建立關聯之應用程式執行個體的索引鍵。 |5/2/1900 12:00:00 AM |
-| UserKey |與此 MAM 應用程式簽入建立關聯之使用者的索引鍵。 |1/12/1900 12:00:00 AM |
-| ApplicationKey |已簽入 MAM 應用程式的索引鍵。 |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |與此 MAM 應用程式簽入建立關聯之 DeviceHealth 的索引鍵。 |1/2/1900 12:00:00 AM |
-| PlatformKey |代表與此 MAM 應用程式簽入建立關聯之裝置的平台。 |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |代表與已簽入 MAM 應用程式建立關聯的有效已套用原則。 合併所有與特定應用程式和使用者相關原則的有效已套用原則結果。 |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |與此 MAM 應用程式簽入建立關聯之應用程式執行個體的索引鍵。 | 123 |
+| UserKey |與此 MAM 應用程式簽入建立關聯之使用者的索引鍵。 | 4323 |
+| ApplicationKey |已簽入 MAM 應用程式的索引鍵。 |234 |
+| DeviceHealthKey |與此 MAM 應用程式簽入建立關聯之 DeviceHealth 的索引鍵。 | 321 |
+| PlatformKey |代表與此 MAM 應用程式簽入建立關聯之裝置的平台。 |123 |
+| EffectiveAppliedPolicyKey |代表與已簽入 MAM 應用程式建立關聯的有效已套用原則。 合併所有與特定應用程式和使用者相關原則的有效已套用原則結果。 | 322 |
 | LastCheckInDate |前次簽入此 MAM 應用程式的日期和時間。 值可以是 Null。 |11/23/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ ms.locfileid: "57238756"
 
 | 屬性 | 說明 | 範例 |
 |---------|------------|--------|
-| DeviceHealthKey |資料倉儲中裝置和其關聯健康狀況的唯一識別碼 - Surrogate 索引鍵。 |1/1/1900 12:00:00 AM |
-| DeviceHealth |裝置的唯一識別碼和其關聯健康狀況 - 與 DeviceHealthKey 類似，但識別碼是自然索引鍵。 |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |資料倉儲中裝置和其關聯健康狀況的唯一識別碼 - Surrogate 索引鍵。 |123 |
+| DeviceHealth |裝置的唯一識別碼和其關聯健康狀況 - 與 DeviceHealthKey 類似，但識別碼是自然索引鍵。 |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |代表裝置的狀態。 <br>無法使用 - 無此裝置的相關資訊。 <br>狀況良好 - 裝置未進行 JB 破解。 <br>狀況不良 - 裝置已進行 JB 破解。 |無法使用 狀況良好 狀況不良 |
 | RowLastModifiedDateTimeUtc |前次在資料倉儲中修改此特定 MAM 裝置健康狀況的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 

@@ -6,9 +6,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32c15037bad21ca90f81ed239ac24a9bac8d7499
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228318"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564851"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>使用 Intune 在 Windows 10 裝置上設定「進行測驗」應用程式
 
@@ -37,11 +38,11 @@ ms.locfileid: "57228318"
 
 ## <a name="take-a-test-settings"></a>「進行測驗」設定
 
-- **帳戶類型**：選擇使用者登入測驗的方式。 選項包括：
+- **帳戶類型**： 選擇使用者如何登入至測試。 選項包括：
   - Azure AD 帳戶
   - 網域帳戶
   - 本機帳戶
-- **帳戶使用者名稱**：輸入要搭配「進行測驗」應用程式使用的帳戶使用者名稱。 您可以使用下列格式來輸入帳戶：
+- **帳戶使用者名稱**：輸入用於「進行測驗」應用程式之帳戶的使用者名稱。 您可以使用下列格式來輸入帳戶：
   - `user@contoso.com`
   - `domain\username`
   - `user@contoso.com`

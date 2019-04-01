@@ -6,10 +6,11 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851435"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396470"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -57,11 +58,13 @@ URL 包含下列元素：
 
 ## <a name="api-version-information"></a>API 版本資訊
 
-API 的目前版本為：`beta`。 
+您現在可以藉由設定查詢參數  `api-version=v1.0` 來使用 Intune 資料倉儲 v1.0 版。 資料倉儲中對集合所進行的更新為附加性質，因此不會破壞現有的案例。
+
+您可以使用搶鮮版 (Beta) 來試用最新資料倉儲功能。 若要使用搶鮮版 (Beta)，URL 必須包含查詢參數  `api-version=beta`。 搶鮮版 (Beta) 能在功能被正式推出為支援的服務之前預先提供它們。 Intune 新增功能時，搶鮮版 (Beta) 可能會變更行為和資料合約。 與搶鮮版 (Beta) 相依的任何自訂程式碼或報告工具都可能會中斷進行中更新。
 
 ## <a name="odata-query-options"></a>OData 查詢選項
 
-目前版本支援下列 OData 查詢參數：`$filter, $orderby, $select, $skip,` 和 `$top`。
+目前版本支援下列 OData 查詢參數：`$filter`、`$select`、`$skip,` 及 `$top`。 在  `$filter`，則僅`DateKey`或`RowLastModifiedDateTimeUTC`可能支援的資料行都適用，和其他屬性會觸發錯誤的要求時。
 
 ## <a name="datekey-range-filters"></a>DateKey 範圍篩選條件
 
@@ -73,15 +76,12 @@ API 的目前版本為：`beta`。
 ## <a name="filter-examples"></a>篩選條件範例
 
 > [!NOTE]
-> 篩選條件範例假設今天是 2018 年 2 月 21 日。
+> 篩選條件範例假設今天是 2019 年 2 月 21 日。
 
 |                             篩選                             |           效能最佳化           |                                          說明                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180221 之間的資料。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180220 之間的資料。                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    部分，大於 1 的識別碼將不會最佳化    |    傳回 `DateKey` 在 20180214 和 20180221 之間，且識別碼大於 1 的資料。             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。 `maxhistorydays` 會被忽略。                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。                              |
-|    `$filter=DateKey ne 20180214`                                 |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    無                                      |    不會被視為 `DateKey` 範圍篩選條件，因此沒有效能提升。 `maxhistorydays` 會被忽略。    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    傳回具有資料`RowLastModifiedDateTimeUTC`大於或等於 `2018-02-21T23:18:51.3277273Z`                             |
