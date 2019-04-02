@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400478"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358312"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 資料倉儲集合
 
@@ -281,7 +281,7 @@ ms.locfileid: "57400478"
 | 12           | ISocConsumer      | iSoc 消費者裝置                                |
 | 13           | Unix              | Unix 裝置                                         |
 | 14           | MacMDM            | 使用內建的 MDM 代理程式管理的 Mac OS X 裝置 |
-| 15           | HoloLens          | HoloLens 裝置                                    |
+| 15           | HoloLens          | HoloLens 裝置                                       |
 | 16           | SurfaceHub        | Surface Hub 裝置                                  |
 | 17           | AndroidForWork    | 使用 Android 設定檔擁有者管理的 Android 裝置  |
 | 18           | AndroidEnterprise | Android 企業裝置。                          |
@@ -368,8 +368,8 @@ ms.locfileid: "57400478"
 | BadRequest                      | 用戶端傳送了服務不了解/支援的要求。                                        |
 | FeatureNotSupported             | 此註冊所使用的功能不支援此帳戶。                                        |
 | EnrollmentRestrictionsEnforced  | 系統管理員所設定的註冊限制封鎖了此註冊。                                          |
-| ClientDisconnected              | 用戶端逾時，或 enduser 已中止註冊。                                                        |
-| UserAbandonment                 | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。  |
+| ClientDisconnected              | 用戶端逾時，或終端使用者已中止註冊。                                                        |
+| UserAbandonment                 | 終端使用者已放棄註冊。 (終端使用者已開始連線，但未能及時完成)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 **EnrollmentFailureReason** 實體表示在所指定失敗類別中裝置註冊失敗的更詳細原因。  
@@ -398,7 +398,7 @@ ms.locfileid: "57400478"
 | EnrollmentCriteriaNotMet         | 此裝置因為已設定的註冊限制規則而無法註冊。                                                                                                                          |
 | BulkDeviceNotPreregistered       | 找不到此裝置的國際行動設備識別碼 (IMEI) 或序號。  若無此識別碼，即會將裝置識別為目前封鎖的個人擁有裝置。  |
 | FeatureNotSupported              | 使用者嘗試存取尚未對所有客戶發行，或與您的 Intune 設定不相容的功能。                                                            |
-| UserAbandonment                  | enduser 已放棄註冊 (Enduser 已開始連線，但無法及時完成)。                                                                                           |
+| UserAbandonment                  | 終端使用者已放棄註冊。 (終端使用者已開始連線，但未能及時完成)                                                                                           |
 | APNSCertificateExpired           | 無法使用過期的 Apple MDM Push Certificate 來管理 Apple 裝置。                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ ms.locfileid: "57400478"
 | 5                     | EasIntuneClient                   | 由 Exchange Active Sync 與 Intune 電腦代理程式管理的裝置 |
 | 8                     | ConfigManagerClient               | 由 System Center Configuration Manager 代理程式管理的裝置     |
 | 10                    | ConfigurationManagerClientMdm     | 由 Configuration Manager 和 MDM 管理的裝置。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 由 Configuration Manager、MDM 和 Eas 管理的裝置。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Configuration Manager、 MDM 與 Exchange Active Sync 管理裝置。               |
 | 16                    | Unknown                           | 未知的管理代理程式類型                                              |
 | 32                    | Jamf                              | 裝置屬性是從 Jamf 擷取。                               |
 | 64                    | GoogleCloudDevicePolicyController |  由 Google CloudDPC 管理的裝置。                                 |
@@ -617,7 +617,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 | UserKey                    | 資料倉儲中使用者的唯一識別碼 - Surrogate 索引鍵。                                                                                                                                                         | 123                                  |
 | UserId                     | 使用者的唯一識別碼 - 與 UserKey 類似，但為自然索引鍵。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | 使用者的電子郵件地址。                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | 使用者的使用者主體名稱。                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | 使用者的使用者主體名稱。                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | 使用者的顯示名稱。                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | 指定這位使用者是否獲授權使用 Intune。                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | 指出所有使用者的授權是否都已經過期，以及使用者是否因此而自 Intune 中被移除。 針對單一記錄，此旗標不會變更。 相反地，系統會針對新的使用者狀態建立新的記錄。 | True/False                           |

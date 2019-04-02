@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838031"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163423"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何從公司入口網站重設裝置密碼
 
@@ -32,7 +32,7 @@ ms.locfileid: "55838031"
 如果您使用公司註冊的裝置，則可能不會看到重設裝置密碼的選項。 請連絡公司支援人員為您重設密碼。
 
    > [!NOTE]
-   > 您無法重設 Android 7.0 和更新版本裝置的密碼。 如果您忘記密碼，則必須將裝置重設為原廠設定。 
+   > 您無法重設執行 Android 7.0 和更新版本之裝置的密碼。 如果忘記密碼，您必須將此裝置重設為原廠設定。 
 
 ## <a name="reset-your-passcode"></a>重設密碼
 

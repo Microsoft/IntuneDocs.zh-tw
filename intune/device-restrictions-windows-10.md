@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中 Windows 10 的裝置限制設定 | Microsoft Docs
-description: 查看有關在 Windows 10 和更新版本的裝置上建立裝置限制的所有設定及其描述的清單。 使用組態設定檔中的這些設定，在 Microsoft Intune 中控制螢幕擷取畫面、密碼要求、kiosk 設定存放區，商店中的應用程式、Edge 瀏覽器、Windows Defender、雲端存取，開始功能表等等。
+description: 查看有關在 Windows 10 和更新版本的裝置上建立裝置限制的所有設定及其描述的清單。 使用組態設定檔中的這些設定，在 Microsoft Intune 中控制螢幕擷取畫面、密碼要求、kiosk 設定、商店中的應用程式、Microsoft Edge 瀏覽器、Windows Defender、雲端存取及開始功能表等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566739"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394995"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "57566739"
 這些設定會新增至 Intune 裝置組態設定檔，然後指派或部署到您的 Windows 10 裝置。
 
 > [!Note]
-> 並非所有版本的 Windows 都會提供所有選項
+> 並非所有版本的 Windows 都提供全部選項。 若要查看支援的版本，請參閱[原則 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) （開啟另一個 Microsoft 網站上）。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -59,13 +59,13 @@ ms.locfileid: "57566739"
 - **藍牙探索**：讓其他藍牙啟用的裝置探索此裝置。
 - **藍芽預先配對**：可讓您設定特定的藍芽裝置與主機裝置自動配對。
 - **藍牙廣告**：讓藍牙可透過藍牙裝置接收廣告。
-- **連線的裝置服務**：可讓您選擇是否要允許連線的裝置服務，這可探索其他藍芽裝置並連線到其中。
+- **連線的裝置服務**：讓您選擇允許連線的裝置服務，以便探索並連線到其他藍牙裝置。
 - **NFC**：讓使用者可在裝置上啟用及設定近距離無線通訊 (NFC) 功能。
 - **Wi-Fi**：讓使用者可在裝置上啟用及設定 Wi-Fi (僅限 Windows 10 行動裝置版)。
 - **自動連線至 Wi-Fi 熱點**：讓裝置能自動連線到免費 Wi-Fi 熱點並自動接受任何連線條款和條件。
 - **手動設定 Wi-Fi**：控制使用者是否可設定自己的 Wi-Fi 連線，是或只能使用由 Wi-Fi 設定檔所設定的連線 (僅限 Windows 10 行動裝置版)。
-- **Wi-Fi 掃描間隔**：指定裝置掃描 Wi-Fi 網路的頻率。 指定 1 (最頻繁) 到 500 (最不頻繁) 的值。
-- **藍牙允許的服務**：以十六進位字串，指定允許的藍芽服務和設定檔的清單。
+- **Wi-Fi 掃描間隔**：輸入裝置掃描 Wi-Fi 網路的頻率。 輸入 1 (最頻繁) 到 500 (最不頻繁) 的值。
+- **藍牙允許的服務**：輸入允許之藍牙服務和設定檔的十六進位字串清單。
 
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 
@@ -116,7 +116,7 @@ ms.locfileid: "57566739"
 - **螢幕擷取 (僅限行動裝置)**：讓使用者可將裝置螢幕擷取為影像。
 - **複製並貼上 (僅限行動裝置)**：允許在裝置上的應用程式之間，進行複製並貼上的動作。
 - **手動取消註冊**：讓使用者可從裝置手動刪除工作場所帳戶。
-  - 如果電腦已加入 Azure AD，並且啟用自動註冊，則不會套用此原則設定。 
+  - 如果電腦已加入 Azure AD，且啟用自動註冊，則不會套用此原則設定。 
   - 此原則設定不適用於執行 Windows 10 家用版的電腦。
 - **手動安裝根憑證 (僅限行動裝置)**：阻止使用者手動安裝根憑證及中繼 CAP 憑證。
 
@@ -145,7 +145,6 @@ ms.locfileid: "57566739"
 
 - **結束處理程序在 [工作管理員] 從**： 此設定會決定非系統管理員是否可以使用工作管理員來結束工作。 [封鎖] 可防止標準使用者 (非系統管理員) 使用 [工作管理員] 來結束裝置上的處理序或工作。 [未設定] (預設) 可讓標準使用者使用 [工作管理員] 結束處理序或工作。
 
-
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
 - **控制中心通知 (僅限行動裝置)**：可讓控制中心通知出現在裝置鎖定畫面上 (僅限 Windows 10 行動裝置版)。
@@ -157,7 +156,7 @@ ms.locfileid: "57566739"
 
 ## <a name="messaging"></a>訊息傳送
 
-- **訊息同步 (僅限行動裝置)**：停用訊息中心橋接和文字訊息備份及還原。
+- **訊息同步 (僅限行動裝置版)**：停用訊息中心橋接和文字訊息備份及還原。
 - **多媒體訊息 (僅限行動裝置)**：停用裝置上的多媒體訊息傳送/接收功能。
 - **RCS (僅限行動裝置)**：停用裝置上的 Rich Communication Services 傳送/接收功能。
 
@@ -168,25 +167,25 @@ ms.locfileid: "57566739"
 可用的設定，端視您選擇的項目而有所不同。 選項包括：
 
 - **否**（預設值）： Microsoft 邊緣不在 kiosk 模式中執行。 所有的 Microsoft Edge 設定可供您變更和設定。
-- **Digital/Interactive 告示板 (單一應用程式 kiosk)**： 適用於使用只在 Windows 10 單一應用程式的 kiosk 上的數位/Interactive 告示板 Edge Kiosk 模式的篩選器 Edge 設定。 選擇此設定，以開啟 URL 的全螢幕，並只顯示在該網站上的內容。 [設定數位簽署](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供這項功能的詳細資訊。
-- **公用 inprivate (單一應用程式 kiosk)**： 適用於 Windows 10 單一應用程式的 kiosk 上使用 InPrivate 公用的瀏覽 Edge Kiosk 模式的篩選條件的 Edge 設定。 在執行多重索引標籤版本的 Microsoft Edge。
-- **標準模式 (多應用程式 kiosk)**： 適用於一般 Edge Kiosk 模式的篩選條件的 Edge 設定。 執行完整版的 Microsoft Edge 瀏覽的所有功能。
-- **公用的瀏覽 (多應用程式 kiosk)**： 適用於 Windows 10 的多個應用程式 kiosk 上的公用瀏覽的篩選條件的 Edge 設定。  在執行多索引標籤上的 Microsoft Edge InPrivate 版本。
+- **Digital/Interactive 告示板 (單一應用程式 kiosk)**： 適用於使用只在 Windows 10 單一應用程式的 kiosk 上的數位/Interactive 告示板 Microsoft Edge Kiosk 模式的篩選 Microsoft Edge 設定。 選擇此設定，以開啟 URL 的全螢幕，並只顯示在該網站上的內容。 [設定數位簽署](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供這項功能的詳細資訊。
+- **公用 inprivate (單一應用程式 kiosk)**： 適用於 InPrivate 公用瀏覽 Microsoft Edge 的 Kiosk 模式在 Windows 10 單一應用程式的 kiosk 上使用的篩選 Microsoft Edge 設定。 在執行多重索引標籤版本的 Microsoft Edge。
+- **標準模式 (多應用程式 kiosk)**： 適用於一般 Microsoft Edge Kiosk 模式的篩選 Microsoft Edge 設定。 執行完整版的 Microsoft Edge 瀏覽的所有功能。
+- **公用的瀏覽 (多應用程式 kiosk)**： 適用於 Windows 10 的多個應用程式 kiosk 上的公用瀏覽篩選 Microsoft Edge 設定。  在執行多索引標籤上的 Microsoft Edge InPrivate 版本。
 
 > [!TIP]
 > 如需有關這些選項的作用的詳細資訊，請參閱 < [Microsoft Edge kiosk 模式的組態類型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
 
 此裝置限制設定檔會與直接相關的 kiosk 設定檔使用您所建立[Windows kiosk 設定](kiosk-settings-windows.md)。 總括來說：
 
-1. 建立[Windows kiosk 設定](kiosk-settings-windows.md)kiosk 模式中執行裝置的設定檔。 選取 Microsoft Edge 與應用程式並邊緣 Kiosk 模式中設定的 Kiosk 設定檔。
-2. 建立裝置限制設定檔，在本文中所述，並設定特定功能和允許 Microsoft Edge 中的設定。 請務必選擇與您的 kiosk 設定檔中已選取相同的邊緣 kiosk 模式類型 ([Windows kiosk 設定](kiosk-settings-windows.md))。 
+1. 建立[Windows kiosk 設定](kiosk-settings-windows.md)kiosk 模式中執行裝置的設定檔。 選取 Microsoft Edge 與應用程式並設定 Microsoft Edge 的 Kiosk 模式 Kiosk 設定檔中。
+2. 建立裝置限制設定檔，在本文中所述，並設定特定功能和允許 Microsoft Edge 中的設定。 請務必選擇與您的 kiosk 設定檔中已選取相同的 Microsoft Edge kiosk 模式類型 ([Windows kiosk 設定](kiosk-settings-windows.md))。 
 
     [支援的 kiosk 模式設定](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是絕佳的資源。
 
 > [!IMPORTANT] 
 > 請務必將此 Microsoft Edge 設定檔指派給相同的裝置為 kiosk 的設定檔 ([Windows kiosk 設定](kiosk-settings-windows.md))。
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>[開始] 體驗
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **自訂首頁按鈕 URL**：開啟您為 [首頁按鈕 URL] 設定選擇的選項
   - **隱藏首頁按鈕**：隱藏 [首頁] 按鈕
 - **使用者可變更首頁按鈕**：[允許] 可讓使用者變更首頁按鈕。 使用者的變更覆寫任何的系統管理員設定，以 [首頁] 按鈕。 [未設定] 會使用裝置上的 OS 預設行為，這可能會禁止使用者變更系統管理員設定主畫面按鈕的方式。
-- **顯示首次執行體驗頁面**：[封鎖] 會阻止您第一次執行 Microsoft Edge 時顯示簡介頁面。 這項功能可讓企業 (如註冊零輸出組態的企業) 封鎖這個頁面。 [未設定] 會顯示 [簡介] 頁面。
+- **顯示首次執行體驗頁面**：[封鎖] 會阻止您第一次執行 Microsoft Edge 時顯示簡介頁面。 這項功能可讓企業 (如註冊零輸出設定的組織) 封鎖這個頁面。 [未設定] 會顯示 [簡介] 頁面。
   - **首次執行體驗 URL**：輸入頁面 URL 以顯示使用者第一次執行 Microsoft Edge (僅限Windows 10 行動裝置版)。
 - **在閒置時間後重新整理瀏覽器**： 輸入的瀏覽器重新整理之前，從 0 到 1440年的閒置分鐘數分鐘的時間。 預設值是`5`分鐘的時間。 當設定為`0`（零），瀏覽器不在閒置之後會重新整理。
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **密碼**：需要使用者輸入密碼才可存取該裝置。
   - **必要的密碼類型**：指定密碼必須為數字還是英數字元。
   - **密碼長度下限**：僅適用於 Windows 10 行動裝置版。
-  - **登入失敗幾次後即抹除裝置**：若為執行 Windows 10 的裝置︰如果裝置已啟用 BitLocker，將會在登入失敗達您所指定的次數時置於 BitLocker 復原模式。 如果裝置未啟用 BitLocker，便不會套用此設定。 若為執行 Windows 10 行動裝置版的裝置︰登入失敗達您所指定的次數時，就會抹除裝置。
+  - **登入失敗幾次後即抹除裝置**：若為執行 Windows 10 的裝置︰如果裝置已啟用 BitLocker，將會在登入失敗達您所指定的次數時置於 BitLocker 復原模式。 如果裝置未啟用 BitLocker，便不會套用此設定。 若為執行 Windows 10 行動裝置版的裝置︰登入失敗達到您輸入的次數時，就會抹除裝置。
   - **沒有活動最久幾分鐘後鎖定螢幕**：指定裝置必須處於閒置狀態多久的時間，才會鎖住螢幕。
   - **密碼到期 (天)**：指定在多久之後必須變更該裝置的密碼。
   - **避免重複使用以前用過的密碼**：指定裝置記憶先前使用過的密碼數目。
@@ -331,7 +330,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **電話**：定義此應用程式能否存取手機。
 - **無線電**：有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
 - **工作**：定義此應用程式能否存取您的工作。
-- **信任的裝置**：選擇此應用程式是否可以使用信任的裝置，亦即您已連接的硬體，或隨裝置搭載的硬體。 例如，將電視、投影機等作為信任的裝置使用。
+- **受信任的裝置**： 選擇此應用程式是否可以使用受信任的裝置。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
 - **意見反應與診斷**：定義此應用程式能否存取診斷資訊。
 - **與裝置同步** - 選擇此應用程式是否自動與未和該裝置直接配對的無線裝置共用及同步資訊。
 
@@ -352,7 +351,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **發佈使用者活動**： [封鎖] 會防止共用體驗以及在工作切換器中探索最近使用的資源。
 - **僅限本機活動**： [封鎖] 會防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
 
-您可以設定可供裝置上所有應用程式存取的資訊。 您可以使用**個別應用程式隱私權例外狀況**來定義以個別應用程式為基礎的例外。
+您可以設定可供裝置上所有應用程式存取的資訊。 您也可以使用**個別應用程式隱私權例外狀況**，以個別應用程式為基礎來定義例外狀況。
 
 ### <a name="exceptions"></a>例外狀況
 
@@ -371,7 +370,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **電話**：定義此應用程式能否存取手機。
 - **無線電**：有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
 - **工作**：定義此應用程式能否存取您的工作。
-- **受信任的裝置**： 選擇此應用程式是否可以使用受信任的裝置。 信任的裝置是您已連線的硬體，或隨裝置搭載的硬體。 例如，將電視、投影機等作為受信任的裝置使用。
+- **受信任的裝置**： 選擇此應用程式是否可以使用受信任的裝置。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
 - **意見反應與診斷**：選擇此應用程式能否存取診斷資訊。
 - **與裝置同步** - 定義此應用程式能否自動與未和此電腦、平板電腦或手機直接配對的無線裝置共用及同步資訊。
 
@@ -381,11 +380,11 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **投影到此電腦**：阻止其他裝置尋找該電腦以進行投影。
 - **要求提供 PIN 以進行配對**：於連線至投影裝置時要求 PIN。
 
-## <a name="reporting-and-telemetry"></a>報告和遙測
+## <a name="reporting-and-telemetry"></a>報告與遙測
 
 - **共用使用方式資料**：選擇提交診斷資料的層級。 選項包括：
   - 安全性
-  - Basic
+  - 基本
   - 增強
   - 完整
 - **將Microsoft Edge瀏覽數據發送到Microsoft 365 Analytics** ：若要使用這項功能，請將 [共用使用方式資料] 設定為 [增強] 或是 [完整]。 此功能控制 Microsoft Edge 針對具有設定商業識別碼的企業裝置傳送至 Microsoft 365 Analytics 的資料。 選項包括：
@@ -393,7 +392,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **僅傳送內部網路資料**：允許系統管理員傳送內部網路資料歷程記錄
   - **僅傳送網際網路資料**：允許系統管理員傳送網際網路資料歷程記錄
   - **傳送內部網路與網際網路資料**：允許系統管理員傳送內部網路與網際網路資料歷程記錄
-- **遙測 Proxy 伺服器**：輸入要用來轉送「已連線使用者體驗與遙測」要求 (使用安全通訊端層 (SSL) 連線) 之 Proxy 伺服器的完整網域名稱 (FQDN) 或 IP 位址。 此設定的格式是*伺服器*:*連接埠*。 若具名 Proxy 失敗，或若啟用此原則時未輸入 Proxy，則「已連線使用者體驗與遙測」資料不會傳送且會留在本機裝置上。
+- **遙測 Proxy 伺服器**：輸入要用來轉送「已連線使用者體驗與遙測」要求 (使用安全通訊端層 (SSL) 連線) 之 Proxy 伺服器的完整網域名稱 (FQDN) 或 IP 位址。 此設定的格式是*伺服器*:*連接埠*。 若具名 Proxy 失敗，或若啟用此原則時未輸入 Proxy，則不傳送已連線使用者體驗與遙測資料，並將此資料留在本機裝置上。
 
   範例格式：
 
@@ -467,24 +466,46 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **掃描所有下載**：控制 Defender 是否掃描從網際網路下載的所有檔案。
 - **掃描 Microsoft Web 瀏覽器中所載入的指令碼**：讓 Defender 可掃描 Internet Explorer 中所使用的指令碼。
 - **Defender 的使用者存取**：控制是否對使用者隱藏 Windows Defender 使用者介面。 變更此設定後，要在使用者電腦下次重新啟動時才會生效。
-- **病毒碼更新間隔 (小時)**：指定 Defender 查看是否有新的病毒碼檔案的間隔。
+- **病毒碼更新間隔 (小時)**：輸入 Defender 查看是否有新病毒碼檔案的間隔。
 - **監視檔案與程式活動**：允許 Defender 監視裝置上的檔案和程式活動。
-- **多少天之後刪除隔離的惡意程式碼**：在您指定的天數內，讓 Defender 繼續追蹤已解決的惡意程式碼，讓您可以手動檢查先前受影響的裝置。 如果您將此天數設為 **0**，惡意程式碼會保留在「隔離」資料夾，而且不會自動移除。
-- **掃描期間的 CPU 使用率限制**：讓您限制掃描可以使用的 CPU 資源數量 (從 **1** 到 **100**)。
+- **多少天之後刪除隔離的惡意程式碼**： 繼續追蹤已解決的惡意程式碼的輸入，這讓您可以手動檢查先前受影響裝置的天數。 如果您將此天數設為 **0**，則惡意程式碼會保留在隔離資料夾中且不會自動移除。
+- **掃描期間的 CPU 使用率限制**：限制掃描可以使用的 CPU 數量 (從 **1** 到 **100**)。
 - **掃描封存檔**：允許 Defender 掃描封存的檔案，例如 .zip 或 .cab 檔案。
 - **掃描內送郵件訊息**：允許 Defender 在電子郵件訊息到達裝置時加以掃描。
 - **在完整掃描期間掃描抽取式磁碟機**：讓 Defender 可掃描像是 USB 隨身碟之類的抽取式磁碟機。
 - **在完整掃描期間掃描對應的網路磁碟機**：讓 Defender 可掃描對應網路磁碟機上的檔案。
   如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
 - **掃描從網路資料夾中開啟的檔案**：讓 Defender 在共用網路磁碟機上掃描檔案 (例如，從 UNC 路徑存取的檔案)。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
-- **雲端保護**：允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 此資訊未來可用於改善本服務。
+- **雲端保護**：允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 這項資訊可在未來改善服務。
 - **在提交範例之前提示使用者**：控制可能需要進一步分析的潛在惡意檔案，是否自動傳送給 Microsoft。
-- **執行每日快速掃描的時間**：讓您排程每天在您選取的時間進行快速掃描。
-- **要執行的系統掃描類型**：輸入當您排程系統掃描時執行的掃描層級。
+- **執行每日快速掃描時間**： 選擇要執行每日快速掃描。 **未設定**不會執行每日掃描。 如果您想要更多自訂，設定**要執行的系統掃描類型**設定。
+
+  [Defender ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **要執行的系統掃描類型**： 排程系統掃描，包括層級的掃描，以及日期和時間來執行掃描。 選項包括：
+  - **未設定**： 不排程系統掃描的裝置上。 使用者可以手動執行掃描為視需要或想在其裝置上。
+  - **停用**： 停用裝置上的掃描任何系統。 如果您將掃描裝置的協力廠商防毒解決方案，請選擇這個選項。
+  - **快速掃描**： 探討常見的位置，可能有惡意程式碼註冊，例如登錄機碼，且已知 Windows 啟動資料夾。
+    - **排定的日期**： 選擇要執行掃描的日期。
+    - **排定的時間**： 選擇要執行掃描。
+  - **完整掃描**： 探討常見的位置，可能有惡意程式碼已經註冊，並也會掃描每個檔案和裝置上的資料夾。
+    - **排定的日期**： 選擇要執行掃描的日期。
+    - **排定的時間**： 選擇要執行掃描。
+
+  這項設定可能會和衝突**執行每日快速掃描時間**設定。 一些建議：
+
+  - 若要執行每日快速掃描，設定**執行每日快速掃描時間**設定。
+  - 執行每日快速掃描和完整掃描每週，然後設定**時間來執行每日快速掃描**，並設定**要執行的系統掃描類型**以完整掃描的日期和時間。
+  - 未設定**時間來執行每日快速掃描**使用同時設定**要執行的系統掃描的型別**設定為**快速掃描**。 這些設定可能會發生衝突，並可能不會執行掃描。
+  - 若要執行快速掃描每個星期二，上午 6，設定**要執行的系統掃描類型**設定。
+
+  [Defender ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **偵測潛在的不必要應用程式**：選擇 Windows 用以偵測潛在的不必要應用程式的保護層級：
   - **封鎖**
   - **稽核**：如需更多潛在的垃圾應用程式的詳細資訊，請參閱[偵測和封鎖潛在的垃圾應用程式](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
-- **對偵測到的惡意程式碼威脅採取的動作**：使用此選項，可選擇您希望 Defender 針對它偵測到的每種威脅等級 (低、中、高及嚴重) 所採取的動作。 選項包括：
+- **對所偵測到惡意程式碼威脅採取的動作**：選擇您希望 Defender 針對它所偵測到每種威脅等級 (低、中、高及嚴重) 所採取的動作。 選項包括：
   - **清除**
   - **隔離**
   - **移除**

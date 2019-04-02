@@ -2,8 +2,8 @@
 title: Microsoft Intune 中 Windows 10 裝置的保護設定 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中，於 Windows 10 裝置上，使用或設定 Endpoint Protection 設定以啟用 Windows Defender 功能，包括「應用程式防護」、「防火牆」、SmartScreen、加密和 Bitlocker、「惡意探索防護」、「應用程式控制」、「資訊安全中心」，以及本機裝置上的安全性。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566687"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342992"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定
 
@@ -87,8 +87,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 這些設定適用於特定的網路類型，包括**網域 (工作場所) 網路**、**私人 (可探索) 網路**和**公用 (非可探索) 網路**。
 
-#### <a name="general-settings"></a>一般設定
-
+#### <a name="general-settings"></a>一般設定  
 - **Windows Defender 防火牆**：選擇 [啟用] 以開啟防火牆和進階安全性。 [未設定] (預設) 會允許所有網路流量，而不論任何其他原則設定為何。
 - **隱形模式**：[封鎖] 防火牆在隱形模式下運作。 封鎖隱形模式可讓您也封鎖 **IPsec 安全封包豁免**。 [未設定] (預設) 會在隱形模式下執行防火牆，這有助於避免回應探查要求。
 - **受防護**：[封鎖] 會關閉此功能。 [未設定] (預設) 會啟用此設定。 開啟此設定和 Windows Defender 防火牆時，則會封鎖所有連入流量，而不論任何其他原則設定為何。
@@ -299,7 +298,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 > *C:\windows\IMECache*
 >  
 > **在 X86 上的用戶端機器**:<br>
-> *C:\Program Files\Microsoft Intune 管理 Extension\Content*<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
 ### <a name="controlled-folder-access"></a>受控資料夾存取權

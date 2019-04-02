@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565633"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358253"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 保持 Intune 資料倉儲更新的最新狀態。
+
+## <a name="1903"></a>1903
+_發行日期：2019 年 3 月_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 變更反映至 beta 版
+當 V1.0 1808 引進時，它不一致的顯著區別從 beta 版的 API。 在 1903，這些變更將會反映回 beta 版的 API 版本。 如果您有使用 beta 版的 API 版本的重要報表，我們強烈建議以避免中斷性變更 V1.0 切換這些報表。 請參閱[API 版本資訊](reports-api-url.md)如需詳細資訊，在資料倉儲 API 版本及向後相容性。 
 
 ## <a name="1902"></a>1902 
 _發行日期：2019 年 2 月_
@@ -42,9 +48,9 @@ _發行日期：2019 年 2 月_
 > 有兩個額外的篩選器，您可以套用到 Intune 合規性的應用程式。
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 合規性應用程式中新增其他篩選器
-1. 開啟[Intune 合規性 （資料倉儲）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web browers 中的應用程式。
+1. 開啟[Intune 合規性 （資料倉儲）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)您網頁瀏覽器中的應用程式。
 2. 按一下 **不符合規範的裝置**，然後選取**不符合規範**中**complianceStatus**篩選器。 
-3. 按一下 **未知裝置**，然後選取**尚無法使用**中**complianceStatus**篩選器。 
+3. 按一下 **不明裝置**，然後選取**尚無法使用**中**complianceStatus**篩選器。 
 
 ## <a name="1812"></a>1812 
 _發行日期：2018 年 12 月_
@@ -93,7 +99,7 @@ _發行日期：2018 年 1 月_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>資料倉儲資料模型中的新實體 <!-- 2077804 -->
 
- - 已新增 [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) 實體。 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
+ - 已新增 [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) 實體。 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
  - 已新增 [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 實體。 **MobileAppInstallState** 實體代表行動應用程式在被指派至包含裝置或使用者 (或兩者) 的群組之後的安裝狀態。 
 
 ## <a name="1710"></a>1710

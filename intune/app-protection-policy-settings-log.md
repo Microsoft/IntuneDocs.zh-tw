@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460490"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394788"
 ---
 # <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
@@ -43,6 +43,7 @@ ms.locfileid: "57460490"
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 離線寬限期<br>注意：這是在裝置已離線的情況下，重新檢查應用程式存取需求之前的時間間隔。             |
 | AccessRecheckOnlineTimeout  | _x_ 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 逾時。<br>注意：這是在裝置已離線的情況下，於應用程式啟動後重新檢查應用程式存取需求之前的時間間隔。 |
+| AllowedOutboundClipboardSharingExceptionLength               | x 個字元                                                                                                                                                                                                                                                                                           | [存取]指定可能會剪下或從受管理的應用程式複製的字元數。  此設定會覆寫`AllowedOutboundClipboardSharingLevel`限制。 預設值為 '0' 表示允許任何例外狀況。 
 | AppPinDisabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 於裝置 PIN 受到管理時停用應用程式 PIN。                                                                                                                                     |
 | AppSharingFromLevel         | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式接收來自其他應用程式的資料。                                                                                                                        |
 | AppSharingToLevel           | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式將資料傳輸至其他應用程式。                                                                                                                         |

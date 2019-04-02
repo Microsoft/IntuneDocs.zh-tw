@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4610f99d9190ddad01ab604195e086e407e7161a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566313"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429749"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -108,7 +108,7 @@ ms.locfileid: "57566313"
   >   - 在 Intune 中[新增為用戶端應用程式](apps-add-android-for-work.md)
   >   - [指派給為專用裝置建立的裝置群組](apps-deploy.md)
   > 
-  > **Managed Home Screen** 應用程式不一定要在組態設定檔中，但必須新增為用戶端應用程式。 當 **Managed Home Screen** 應用程式新增為用戶端應用程式時，您在組態設定檔中新增的任何其他應用程式，都會在 **Managed Home Screen** 應用程式中以圖示顯示。 
+  > **Managed Home Screen** 應用程式不一定要在組態設定檔中，但必須新增為用戶端應用程式。 當 **Managed Home Screen** 應用程式新增為用戶端應用程式時，您在組態設定檔中新增的任何其他應用程式，都會在 **Managed Home Screen** 應用程式中顯示為圖示。 
 
   - 選擇 [新增]，並從清單中選取您的應用程式。
 

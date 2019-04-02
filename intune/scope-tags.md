@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756797"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658544"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>使用 RBAC 和範圍的標記，分散式 IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>使用角色型存取控制 (RBAC) 和範圍標籤分散式 IT
 
-您可以使用角色型存取控制 (RBAC) 和範圍標籤，以確定正確的系統管理員具有正確的存取權和權限的 Intune 物件的可見性。 角色判斷何種存取權系統管理員有哪些物件。 範圍標籤判斷系統管理員可以看到哪些物件。
+您可以使用角色型存取控制和範圍標記，以確定正確的系統管理員具有正確的存取權和權限的 Intune 物件的可見性。 角色判斷何種存取權系統管理員有哪些物件。 範圍標籤判斷系統管理員可以看到哪些物件。
 
 例如，假設西雅圖地區辦公室系統管理員，則會指派的原則和設定檔管理員角色。 您想要檢視及管理只設定檔和原則只會套用到西雅圖的裝置，此系統管理員。 若要這樣做，您需要：
 
@@ -83,6 +83,21 @@ ms.locfileid: "57756797"
 3. 底下**選取標記**，選擇您想要新增至設定檔的標記。
 4. 選擇**選取**  > **確定** > **儲存**。
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>若要將範圍標籤指派給應用程式設定原則
+針對具有裝置**裝置註冊類型**設為**受管理的裝置**:
+1. 選擇**用戶端應用程式** > **應用程式設定原則**> 選擇 應用程式設定原則。
+2. 選擇**屬性** > **範圍 （標籤）** > 選擇您想要指派給原則的標籤。
+
+針對具有裝置**裝置註冊類型**設為**受管理應用程式**:
+1. 選擇**用戶端應用程式** > **應用程式設定原則**> 選擇 應用程式設定原則。
+2. 選擇**範圍 （標籤）** > 選擇您想要指派給原則的標籤。
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>若要將範圍標籤指派給 iOS 應用程式佈建設定檔
+1. 在 Intune 中，選擇**用戶端應用程式** > **iOS 應用程式佈建設定檔**> 選擇的設定檔。
+2. 選擇**屬性** > **範圍 （標籤）** > 選擇您想要指派給設定檔的標記。
+3. 選擇**選取**  > **確定** > **儲存**。
+
 ## <a name="scope-tag-details"></a>範圍標記詳細資料
 當使用範圍標籤，請記住這些詳細資料：
 
@@ -96,20 +111,13 @@ ms.locfileid: "57756797"
     - 應用程式設定原則： 受管理的裝置
     - PowerShell 指令碼
     - DEP 權杖
+    - iOS 應用程式佈建設定檔
 - 當系統管理員在 Intune 中建立物件時，指派給該系統管理員的所有範圍標籤會自動都指派給新的物件。
 - Intune RBAC 不適用於 Azure Active Directory 角色。 因此，Intune 服務管理員和全域管理員角色有 Intune 的 「 完整的系統管理員 」 存取權，不論它們有何種範圍標籤。
 - 在角色指派範圍標籤使用的系統管理員也可以查看 Intune 沒有範圍標籤物件。
 - 您只能指派您在您的角色指派範圍標籤。
 - 您可以在您的角色指派範圍 （群組） 中所列目標群組。
 - 如果您有指派給您的角色的範圍標籤時，您無法刪除 Intune 物件上的所有範圍標籤。 需要至少一個範圍標籤。
-- 如果使用者有多個角色指派，在這些角色指派的權限延伸至不同的物件，如下所示：
-    - 指派權限只套用至該角色指派範圍 （群組） 中的物件 （例如原則或應用程式）。 指派權限不套用到其他角色指派中的物件，除非其他指派明確地授與它們。
-    - 其他權限 （例如建立和讀取），套用至相同的類型 （例如所有的原則或所有應用程式） 的所有物件中任何使用者的指派。
-    - （例如原則或應用程式） 的不同類型的物件權限不適用於彼此。 比方說，讀取權限的原則，並不提供應用程式中使用者的指派 [讀取] 權限。
-
-
-
-
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -4,7 +4,7 @@ description: Microsoft 365 企業版隨附 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231242"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646483"
 ---
 # <a name="what-is-device-management"></a>什麼是裝置管理？ 
 
-任何系統管理員的一項主要工作是保護組織的資源和資料安全。 這項工作稱為裝置管理。 使用者擁有許多裝置，可從中開啟及共用個人檔案、瀏覽網站，以及安裝應用程式和遊戲。 這些相同的使用者也是員工和學生，而想要使用其裝置來存取工作和學校資源，例如電子郵件和 OneNote。 「裝置管理」可讓組織保護其資源和資料安全。 
+任何系統管理員的一項主要工作是保護組織的資源和資料安全。 這項工作為「裝置管理」。 使用者擁有許多裝置，可從中開啟及共用個人檔案、瀏覽網站，以及安裝應用程式和遊戲。 這些相同的使用者也是員工和學生，而想要使用其裝置來存取工作和學校資源，例如電子郵件和 OneNote。 裝置管理可讓組織保護其資源和資料的安全。 
 
 透過裝置管理提供者，組織可以確保只有授權的人員和裝置才能存取專屬資訊。 同樣地，裝置使用者可以放心從其手機存取工作資料，因為他們知道其裝置符合組織的安全性需求。 作為組織，您可能會詢問：**應該使用哪項服務來保護資源？**
 

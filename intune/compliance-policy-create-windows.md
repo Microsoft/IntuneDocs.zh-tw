@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566806"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306837"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中為 Windows 裝置新增裝置合規性原則
 
@@ -125,7 +125,10 @@ Windows 8.1 電腦會傳回版本 **3**。 如果 Windows 的 OS 版本規則設
 
 - **要求程式碼完整性**：程式碼完整性是一種功能，可在每次將驅動程式或系統檔案載入記憶體時驗證其完整性。 程式碼完整性會偵測系統是否正在將未簽署的驅動程式或系統檔案載入至核心。 它也會偵測是否有透過具系統管理員權限之使用者帳戶執行的惡意軟體修改了系統檔案。
 
-如需 HAS 服務如何運作的詳細資料，請參閱[健全狀況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
+其他資源：
+
+- 如需 HAS 服務如何運作的詳細資料，請參閱 [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (健全狀況證明 CSP)。
+- [支援秘訣： 使用裝置健康情況證明設定的 Intune 合規性政策 ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>裝置內容
 
