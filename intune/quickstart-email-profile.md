@@ -1,12 +1,12 @@
 ---
 title: 快速入門 - 建立 iOS 的電子郵件裝置設定檔
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Microsoft Intune 建立電子郵件裝置設定檔，讓 iOS 裝置可以安全地連線至公司電子郵件。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b252c9d3d719847c8c0911b6cbce06c83bb4bf0e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390442"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799277"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入門：建立 iOS 的電子郵件裝置設定檔
 
@@ -33,7 +33,7 @@ ms.locfileid: "57390442"
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 
-請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://aka.ms/intuneportal)。 您可以透過選擇 [所有服務] > [Intune]，在 Azure 入口網站中找到 Intune。
+請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://aka.ms/intuneportal)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
 
 ## <a name="create-an-ios-email-profile"></a>建立 iOS 電子郵件設定檔
 1. 在 Intune 中，選取 [裝置設定]，然後選取 [設定檔]。
