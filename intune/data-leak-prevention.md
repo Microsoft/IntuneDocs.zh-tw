@@ -1,6 +1,6 @@
 ---
 title: 防止資料在未受管理的裝置上外洩
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 允許在裝置上存取公司資料，並使用 Microsoft Intune 防止資料外洩。
 keywords: 資料保護避免外洩裝置 O365 Office 365 的資料
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4bbb6a09d9f81c5e5309e3ef04a63c8165a1f23
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 324187db4951ffb6b80e9cc488a2a0fb59f40a9a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461187"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799367"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止資料在非受控裝置上外洩
 
@@ -35,7 +35,7 @@ ms.locfileid: "57461187"
 
 Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行動應用程式應用程式是同時在未受管理和受 Intune 管理裝置上，或是在非 Microsoft MDM 解決方案所管理的裝置上，您都能運用應用程式保護原則加以管理。 
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 當您符合下列需求時，可以使用下列行動計劃：
 * 您的公司已可安全地轉換到雲端。
@@ -64,6 +64,6 @@ Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行�
 * [當 iOS 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-ios.md)
 * [當 Android 應用程式交由應用程式防護原則管理時的行為](app-protection-enabled-apps-android.md) 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 需要啟用這個案例或其他 EMS 或 Office 365 案例的協助嗎？ 如果您至少有 Microsoft 365、Enterprise Mobility + Security 或 Azure Active Directory Premium 的 150 個授權，請使用 [FastTrack 權益](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)。 

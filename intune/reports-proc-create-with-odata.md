@@ -1,6 +1,6 @@
 ---
 title: 利用 Power BI 的 OData 摘要建立報表
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配來自 Intune 資料倉儲 API 的互動式篩選。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b9cfb464122018c6e77d5ea1395b699bafa81f33
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565616"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799031"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
@@ -120,7 +120,7 @@ ms.locfileid: "57565616"
 1. 選取 [公司] 查看公司所擁有的裝置分佈。
 2. 選取 [個人] 查看個人擁有的裝置。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 在 Power BI 文件中深入了解在 Power BI Desktop [建立和管理關聯性](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)。
  - 請參閱 [Intune 資料倉儲模型](https://docs.microsoft.com/intune/reports-ref-data-model)。

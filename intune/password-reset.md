@@ -1,6 +1,6 @@
 ---
 title: 減少技術支援中心成本
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用自助式密碼重設減少技術支援中心成本
 keywords: Azure Active Directory SSPR 密碼重設
 author: MandiOhlinger
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 621df273e7910e51cf7de869aa7858039d66549b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ce6ed4b57199f87fc014addf74a06e70a285044b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459963"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798921"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>使用自助式密碼重設減少技術支援中心成本
 
@@ -36,7 +36,7 @@ ms.locfileid: "57459963"
 3. 為供日後參考，請將[如何重設或變更密碼](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)的指示提供給員工和學生。
 4. [啟用自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 深入了解下列文章：
 * [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 

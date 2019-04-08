@@ -1,6 +1,6 @@
 ---
 title: 使用者裝置關聯 - Intune 資料倉儲
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: UserDeviceAssociation 實體包含您組織中的使用者裝置關聯。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d3473b04a1d015f88d27359864a84227215b62a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 466066faf03cbdf560697a04310eac844d4f1b87
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565293"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798255"
 ---
 # <a name="reference-for-user-device-association-entity"></a>使用者裝置關聯實體的參考
 
@@ -40,6 +40,6 @@ ms.locfileid: "57565293"
 |     IsDeleted      | 指出使用者已取消註冊該裝置，且關聯不再是最新的。 |       True/False       |
 |  EndedDateTimeUTC  |              IsDeleted 變更為 <strong>True</strong> 的 UTC 日期和時間。               | 06/23/2017 12:00:00 AM |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。

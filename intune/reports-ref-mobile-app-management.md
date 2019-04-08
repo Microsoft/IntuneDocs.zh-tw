@@ -1,6 +1,6 @@
 ---
 title: 行動應用程式管理 (MAM)
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 資料倉儲 API 中 [行動應用程式管理] 類別實體集合的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524a4f39ba6a319f42ca23c7d85e84ffd86fce0d
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
-ms.translationtype: HT
+ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358211"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799593"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>行動應用程式管理 (MAM) 實體的參考
 
 [行動應用程式管理] 類別包含行動應用程式的實體，例如：
 
-  -  應用程式
+  -  [App]
   -  執行個體
   -  簽入狀態
   -  健全狀況狀態

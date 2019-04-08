@@ -1,6 +1,6 @@
 ---
 title: 服務台疑難排解入口網站
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 服務台人員使用疑難排解入口網站來解決使用者的技術問題。
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57787129"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798393"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -252,7 +252,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | 表格欄位 | 說明 |
 |-------------|----------|
 | 註冊開始 | 使用者首次開始註冊時的開始時間。 |
-| OS | 裝置的作業系統。 |
+| 作業系統 | 裝置的作業系統。 |
 | OS 版本 | 裝置的作業系統版本。 |
 | 失敗 | 失敗的原因。 |
 
@@ -300,7 +300,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
   - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
   - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您可以進一步了解以角色為基礎的系統管理控制 (RBAC)，來定義組織裝置中的角色、行動應用程式管理、資料保護工作。 如需詳細資訊，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Intune](/intune/role-based-access-control)。
 

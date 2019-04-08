@@ -1,6 +1,6 @@
 ---
 title: 日期 - Intune 資料倉儲
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 資料倉儲 API 中 [日期] 類別實體集合的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565990"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798491"
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
@@ -55,6 +55,6 @@ ms.locfileid: "57565990"
 | CalendarQuarter |                    日曆季度                    |          3           |
 |  CalendarYear   |                     日曆年度                      |         2016         |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。

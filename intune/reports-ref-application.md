@@ -1,6 +1,6 @@
 ---
 title: 應用程式實體的參考
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 資料倉儲 API 中的實體集合應用程式類別的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 68eeb174b7cc2be09ea4b6da9f151695157ac819
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358182"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799243"
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -44,8 +44,8 @@ ms.locfileid: "58358182"
 | AppKey |應用程式的唯一識別碼。 |123 |
 | ApplicationId |應用程式的唯一識別碼 - 類似 AppKey，但此金鑰是自然的。 |b66bc706-ffff-7437-0340-032819502773 |
 | 修訂 |管理員在上傳二進位檔期間提及的版本。 |2 |
-| 標題 |應用程式的標題。 |Excel |
-| 發佈者 |應用程式的發行者。 |Microsoft |
+| Title |應用程式的標題。 |Excel |
+| 發行者 |應用程式的發行者。 |Microsoft |
 | UploadState |應用程式的上傳狀態。 |1 |
 | AppTypeKey |下節要說明的 AppType 參考。 | |
 | VppProgramTypeKey |後文要說明的 VppProgramType 參考。 | |

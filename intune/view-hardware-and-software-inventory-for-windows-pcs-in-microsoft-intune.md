@@ -1,6 +1,6 @@
 ---
 title: 檢視 Windows 電腦的硬體和軟體清查
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何檢視您使用 Intune 軟體用戶端作為電腦管理之 Windows 桌上型電腦的硬體和軟體資訊。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45cff8fced4683ca2850a06506a7ff154611d2b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1de4783d9d6e151f616406cc6a2f80406f58e408
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459997"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798560"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>檢視 Windows 電腦的硬體和軟體清查
 
@@ -69,6 +69,6 @@ Intune 會收集您使用 Intune 軟體用戶端作為電腦管理之桌上型�
 
     [工作狀態]  對話方塊會顯示目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤，並提供疑難排解資訊的連結。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

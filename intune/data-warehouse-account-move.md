@@ -1,6 +1,6 @@
 ---
 title: 移動您的 Intune 資料倉儲帳戶資料
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在移動您的帳戶時，備份 Intune 資料倉儲資料。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c83ed35ab9c9c607f6283f2d5b18cf129f53cfab
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514359"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798097"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移動您的 Intune 資料倉儲帳戶資料 
 
@@ -80,7 +80,7 @@ Azure 入口網站檢視中的某些趨勢圖表會重設。 您可以在 **Grap
 
 客戶 X 要求在 1/06/2018 開始移動帳戶。 在回應要求時，客戶會收到一個連結，按一下這個連結就會開啟一個文件，裡面詳細說明如果他們想備份以前的資料倉儲，此時應該採取的步驟。 在 1/06/2018，資料倉儲以及它支援的圖表將會重設，並開始將資料儲存到新的資料中心。 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
  - 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。

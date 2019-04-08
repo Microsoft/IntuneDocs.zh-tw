@@ -1,6 +1,6 @@
 ---
 title: 管理執行 Intune 軟體用戶端之電腦的軟體授權合約
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Intune 管理透過 Microsoft 大量授權合約購買的軟體，與透過其他方式購買之軟體的授權合約。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d79cf2e8d61de1737d3a47533fbf25976c32d7a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461204"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798796"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
 
@@ -32,7 +32,7 @@ ms.locfileid: "57461204"
 Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購買之軟體的授權合約資訊。 您也可以為透過其他方式購買的 Microsoft 或非 Microsoft 軟體執行此動作。 您可以將這項資訊組織成邏輯群組。
 
 > [!IMPORTANT]
-> 這項功能只是為了方便起見，並不保證其正確度。 因此不該完全仰賴它來確認是否符合 Microsoft 大量授權合約。 Microsoft 不會使用收集的任何資料來調查您可能與我們簽訂之授權合約的可能違約情事或履約狀況。
+> 這項功能只是為了方便起見，並不保證其正確度。 因此不該完全仰賴它來確認是否遵守 Microsoft 大量授權合約。 Microsoft 不會使用收集的任何資料來調查您可能與我們簽訂之授權合約的可能違約情事或履約狀況。
 >
 > 您新增至 Intune 的授權不會影響您的授權合約或軟體使用權利。 例如，如果您從 Intune 中刪除授權/合約組，並不會刪除您與 Microsoft 間存在的授權合約，或使合約失效。
 

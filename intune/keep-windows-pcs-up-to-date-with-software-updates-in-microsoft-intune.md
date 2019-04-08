@@ -1,6 +1,6 @@
 ---
 title: Windows 電腦的軟體更新
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 會確保盡快安裝最新的修補程式和軟體更新，協助您將受控的電腦保持在最新狀態。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381802de52f63cd4d7c836dbabe25167c0370ee5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 68f8b814084328fdc5aed954cb71b9ce8dcedc63
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460660"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798946"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>利用 Microsoft Intune 讓 Windows 電腦的軟體更新保持在最新狀態
 
@@ -258,5 +258,5 @@ Microsoft Intune 可協助您使用一些方式來保護受控的電腦，包括
 6.  您可以檢查 [所有更新]  頁面底部的詳細資料窗格，查看關於更新的提醒訊息。
 
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)

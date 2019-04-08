@@ -1,6 +1,6 @@
 ---
 title: 允許/封鎖 Samsung Knox 之應用程式的 Microsoft Intune 原則
-titlesuffix: ''
+titleSuffix: ''
 description: 建立自訂設定檔以允許及封鎖 Samsung Knox Standard 裝置的應用程式。
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad68fb3c0f692e837ae3a8cff01de8c77d3bb907
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565871"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798222"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>在 Microsoft Intune 中使用自訂原則來允許和封鎖 Samsung Knox Standard 裝置的應用程式 
 
@@ -43,7 +43,7 @@ ms.locfileid: "57565871"
 2. 在設定檔清單窗格中，選擇 [建立設定檔]。
 3. 在 [建立設定檔] 窗格中，輸入此裝置設定檔的 [名稱] 以及選用的 [描述]。
 2. 將 [平台] 選為 [Android]，且將 [設定檔類型] 選為 [自訂]。
-3. 按一下 [設定]。
+3. 按一下 [設定] 。
 3. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定) 窗格中，選擇 [新增]。
 4. 在 [Add or Edit OMA-URI Setting] (新增或編輯 OMA-URI 設定) 對話方塊中，指定下列設定：
 

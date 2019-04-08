@@ -1,12 +1,12 @@
 ---
 title: 使用 REST 用戶端從資料倉儲 API 取得資料
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本主題說明如何使用 RESTful API 從「Microsoft Intune 資料倉儲」擷取資料。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566568"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871445"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -98,11 +98,11 @@ ms.locfileid: "57566568"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
 3. 在 [其他工作] 之下選取 [設定 Intune 資料倉儲]。
-4. 複製 [使用協力廠商報表服務] 之下的自訂摘要 URL。 這應該看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. 複製 [使用協力廠商報表服務] 之下的自訂摘要 URL。 這應該看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 端點會遵循下列格式：`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
-例如，**日期**實體看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+例如，**日期**實體看起來像這樣：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 如需詳細資訊，請參閱 [Intune 資料倉儲 API 端點](reports-api-url.md)。
 
@@ -116,7 +116,7 @@ ms.locfileid: "57566568"
 2.  開啟 Postman。 選擇 HTTP 作業 **GET**。
 3.  將端點 URL 貼入位址中。 它應該看起來像這樣：  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  選擇 [授權] 索引標籤，然後從 [類型] 清單中選取 [OAuth 2.0]。
 5.  選取 [取得新存取權杖]。
 6.  確認您已經在 Azure 中將回呼 URL 新增至應用程式。 回呼 URL 是 `https://www.getpostman.com/oauth2/callback`。
@@ -197,7 +197,7 @@ ms.locfileid: "57566568"
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
@@ -227,7 +227,7 @@ ms.locfileid: "57566568"
 
 11. 檢閱主控台輸出。 此輸出包含從 Intune 租用戶的 **dates** 實體中提取的資料，且格式為 JSON。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 您可以在[使用 Intune 資料倉儲 API](reports-api-url.md) 中找到授權、API URL 結構和 OData 端點的詳細資料。
 

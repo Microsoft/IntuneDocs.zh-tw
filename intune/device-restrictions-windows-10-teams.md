@@ -1,6 +1,6 @@
 ---
 title: Windows 10 團隊版的 Microsoft Intune 裝置限制
-titlesuffix: ''
+titleSuffix: ''
 description: 了解執行適用於 Windows 10 團隊版之裝置的裝置限制。
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4630493c67a1b81402d5a92ca5e6979c1862485e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564868"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799306"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 團隊版裝置限制設定
 
@@ -54,6 +54,6 @@ ms.locfileid: "57564868"
 - **Miracast 無線投影通道** - 選擇用來建立連線的 Miracast 通道。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 使用[如何設定裝置限制設定](device-restrictions-configure.md)中的資訊進行儲存，並將設定檔指派給使用者和裝置。

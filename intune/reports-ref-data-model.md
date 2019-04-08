@@ -1,6 +1,6 @@
 ---
 title: 資料倉儲資料模型
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 資料倉儲會每日對資料進行抽樣，以提供持續變更中行動環境的歷程檢視。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565515"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798168"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 資料倉儲資料模型
 
@@ -62,7 +62,7 @@ Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持�
 
 倉儲是您 Intune 資料的下游。 Intune 於 UTC 的午夜擷取每日快照集並儲存在倉儲。 快照集的保留持續時間會隨著不同的事實資料表而異。 有些可能保留 7 天，有些可能保留 30 天，或甚至更長的期間。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。
  - 在[建立第一個資料倉儲](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) \(英文\) 中深入了解使用資料倉儲。

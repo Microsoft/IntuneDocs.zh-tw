@@ -1,6 +1,6 @@
 ---
 title: 淘汰 Windows 電腦
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何淘汰受 Intune 管理的 Windows 電腦。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bafdfd4d688ccbbd547c41e0495af19f0b691e4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3516f34d925b4055b99586de388f5384746cb810
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461102"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798205"
 ---
 # <a name="retire-a-windows-pc"></a>淘汰 Windows 電腦
 
@@ -60,6 +60,6 @@ ms.locfileid: "57461102"
 
     如果無法解除安裝 Endpoint Protection 用戶端，請參閱 [Endpoint Protection 疑難排解](/intune/troubleshoot-endpoint-protection-in-microsoft-intune)，以取得詳細說明。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

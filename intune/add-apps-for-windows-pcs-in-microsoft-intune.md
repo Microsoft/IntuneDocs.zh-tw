@@ -1,6 +1,6 @@
 ---
 title: 為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用本主題的資訊，了解如何在部署之前，將適用於 Windows 電腦的應用程式新增至 Intune。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aaeabeebc636e58eac2058b0f482efef34878f0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460924"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798888"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
 
@@ -100,7 +100,7 @@ ms.locfileid: "57460924"
 
 應用程式會顯示在 [應用程式] 工作區的 [應用程式] 節點上。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 完成建立應用程式後，下一個步驟是進行部署。 如需詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 

@@ -1,6 +1,6 @@
 ---
 title: 解決 GPO 和 Intune 原則衝突
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何解決群組原則和 Intune 設定原則之間的衝突。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7024d2c5f9e6b5ac3f844a2f974d2a1d5a0444b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 05941f35fe2a3501d6596e4d818027f7e1a57c79
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459929"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798410"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
@@ -121,5 +121,5 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 必須隨著 Intune 服務中的註冊情形變化來維護新的安全性群組。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)

@@ -1,6 +1,6 @@
 ---
 title: 對 Windows 電腦要求及提供遠端協助
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 描述針對作為電腦管理的 Windows 桌上型電腦提供遠端協助所需的終端使用者和 IT 系統管理員步驟，以及遠端啟動電腦的步驟。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b57bae0c0e7a734071be79318286714a97d0fbf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460592"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798526"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
@@ -88,6 +88,6 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 
 4.  在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

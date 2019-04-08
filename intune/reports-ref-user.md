@@ -1,6 +1,6 @@
 ---
 title: 使用者 - Intune 資料倉儲
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 資料倉儲 API 中 [使用者] 類別實體集合的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358165"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797852"
 ---
 # <a name="reference-for-user-entity"></a>使用者實體的參考
 
 **User** 類別包含定義資料模型中使用者屬性的 **User** 實體。
 
-## <a name="user"></a>User
+## <a name="user"></a>使用者
 
 **User** 實體列出企業中具有所指派授權的所有 Azure Active Directory (Azure AD) 使用者。
 
@@ -46,6 +46,6 @@ ms.locfileid: "58358165"
 | IsDeleted | 指出所有使用者的授權是否都已經過期，以及使用者是否因此從 Intune 移除。 對於單一資料列，此旗標不會變更。 反之，系統會針對新的使用者狀態建立新的資料列。 |True/False |
 | RowLastModifiedDateTimeUTC |資料列最近一次在資料倉儲中被修改的 UTC 日期和時間  |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
  - 您可以使用 **Current User** 實體集合來將使用者資料限制於目前作用中的使用者。 如需詳細資訊，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。

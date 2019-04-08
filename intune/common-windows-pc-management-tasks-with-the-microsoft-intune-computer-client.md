@@ -1,6 +1,6 @@
 ---
 title: 一般 Windows 電腦管理工作
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解可用來管理執行 Intune 軟體用戶端之 Windows 電腦的方式。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75b6d9eda926cab6c7b2b34e1c7beceee88266d6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fdb45c711e605da9a1d160593d37564ef846d32
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460405"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797945"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作
 
