@@ -1,12 +1,12 @@
 ---
 title: 教學課程 - 保護非受控裝置上的 Exchange Online 電子郵件
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Intune 應用程式保護原則和 Azure AD 條件式存取來保護 Office 365 Exchange Online。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528270"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798779"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
-了解如何即使在裝置未向裝置管理解決方案 (例如 Intune) 註冊的情況下，也能使用應用程式保護原則搭配條件式存取來保護 Exchange Online。 您將在本教學課程中了解如何： 
+了解如何即使在裝置未向裝置管理解決方案 (例如 Intune) 註冊的情況下，也能使用應用程式保護原則搭配條件式存取來保護 Exchange Online。 在此教學課程中，您將了解如何： 
 
 > [!div class="checklist"]
 > * 建立適用於 Outlook 應用程式的 Intune 應用程式保護原則。 您將透過禁止執行「另存新檔」及限制剪下、複製和貼上等動作，限制使用者能夠對應用程式資料執行的動作。 
 > * 建立只允許 Outlook 應用程式存取 Exchange Online 中公司電子郵件的 Azure Active Directory (Azure AD) 條件式存取原則。 此外，您也會針對新式驗證用戶端 (例如 iOS 版和 Android 版 Outlook) 要求使用多重要素驗證 (MFA)。
 
 ## <a name="prerequisites"></a>必要條件
-  - 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
+  - 您將需要在此教學課程中，使用以下訂用帳戶測試租用戶：
     - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Intune 訂用帳戶 ([免費試用](free-trial-sign-up.md))
     - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
@@ -43,14 +43,14 @@ ms.locfileid: "57528270"
 請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://aka.ms/intuneportal)。 您可以透過選擇 [所有服務] > [Intune]，在 Azure 入口網站中找到 Intune。
 
 ## <a name="create-the-app-protection-policy"></a>建立應用程式保護原則
-針對本教學課程，我們將設定適用於 Outlook 應用程式的 Intune 應用程式保護原則，以在應用程式層級設置適當的保護。 我們將需要有 PIN 碼才能在工作環境中開啟應用程式。 我們也會限制應用程式間的資料共用，以及防止公司資料被儲存到個人位置。
+針對此教學課程，我們將設定適用於 Outlook 應用程式的 Intune 應用程式保護原則，以在應用程式層級設置適當的保護。 我們將需要有 PIN 碼才能在工作環境中開啟應用程式。 我們也會限制應用程式間的資料共用，以及防止公司資料被儲存到個人位置。
 
 1.  在 Intune 中，選取 [用戶端應用程式] > [應用程式保護原則] > [新增原則]。
 2.  在 [名稱] 中，輸入 **Outlook 應用程式原則測試**。
 3.  在 [描述] 中，輸入 **Outlook 應用程式原則測試**。
 4.  選取 [應用程式]。 在應用程式清單中，選取 [Outlook]，然後選擇 [選取]。
 5.  選取 [設定]。 
-6.  在 [資料位置] 底下，針對本教學課程，請選取下列設定：
+6.  在 [資料位置] 底下，針對此教學課程，請選取下列設定：
 
     - 針對 [允許應用程式將資料傳送到其他應用程式]，選取 [無]。
     - 針對 [允許應用程式接收其他應用程式的資料]，選取 [無]。
@@ -59,7 +59,7 @@ ms.locfileid: "57528270"
    
      ![選取 Outlook 應用程式保護原則資料重新配置設定](media/tutorial-protect-email-on-unmanaged-devices/outlook-app-data-relocation.png)
     
-7.  在 [存取動作] 底下，針對本教學課程，請選取下列設定：
+7.  在 [存取動作] 底下，針對此教學課程，請選取下列設定：
 
     - 針對 [需要 PIN 碼才可存取]，選取 [是]。
     - 針對 [需要公司認證以進行存取]，選取 [是]。
@@ -91,8 +91,8 @@ ms.locfileid: "57528270"
 5.  在 [指派] 底下，選取 [條件] > [裝置平台]。
      
     1. 在 [設定] 底下，選取 [是]。
-    2. 在 [包含] 索引標籤上，選取 [所有平台 (包括未受支援的)]。 
-    3. 選取 [完成]。
+    2. 在 [包含] 索引標籤上，選取 [任何裝置]。
+    1. 選取 [完成]。
    
 6.  在 [條件] 窗格上，選取 [用戶端應用程式]。
      
@@ -136,7 +136,7 @@ ms.locfileid: "57528270"
 5.  在 [指派] 底下，選取 [條件] > [裝置平台]。
      
     1. 在 [設定] 底下，選取 [是]。
-    2. 在 [包含] 索引標籤中，選取 [所有平台 (包括未受支援的)]，然後選取 [完成]。 
+    2. 在 [包含] 索引標籤中，選取 [任何裝置]，然後選取 [完成]。 
     3. 再次選取 [完成]。
 
 6.  在 [條件] 窗格上，選取 [用戶端應用程式]。
@@ -184,4 +184,4 @@ ms.locfileid: "57528270"
 5. 在 [原則名稱] 清單中，選取每個測試原則的操作功能表 ([...])，然後選取 [刪除]。 選取 [是] 確認。
 
  ## <a name="next-steps"></a>後續步驟 
-在本教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式來執行的動作，並已建立條件式存取原則來要求使用 Outlook 應用程式，以及針對新式驗證用戶端要求使用 MFA。 若要了解如何使用 Intune 搭配條件式存取來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。
+在此教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式來執行的動作，並已建立條件式存取原則來要求使用 Outlook 應用程式，以及針對新式驗證用戶端要求使用 MFA。 若要了解如何使用 Intune 搭配條件式存取來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。

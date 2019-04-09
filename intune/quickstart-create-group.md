@@ -1,12 +1,12 @@
 ---
 title: 快速入門 - 建立群組來管理使用者
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 在此快速入門中，您將使用 Microsoft Intune 根據現有的使用者建立群組。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e22aecbeddeb03060ebd91f3b1d7109d01b8daad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391544"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871322"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
 
@@ -44,17 +44,18 @@ ms.locfileid: "57391544"
 
 ## <a name="create-a-group"></a>建立群組
 
-您將會建立稍後要用於此快速入門系列的群組。
+您將會建立稍後要用於此快速入門系列的群組。 建立群組：
 
 1. 開啟 [Microsoft Intune] 窗格之後，選取 [群組] > [新增群組]。
 2. 在 [群組類型] 下拉式方塊中，選取 [安全性]。
-3. 將 [名稱] 設定為 "Contoso Testers"，並新增群組的**描述**。
-4. 將 [成員資格類型] 設定為 [已指派]。 
-5. 按一下 [成員]，然後從現有清單中選取群組的一或多個成員。
+3. 在 [群組名稱] 欄位中，輸入新群組的名稱 (例如 **Contoso 測試人員**)。
+4. 新增群組的 [描述]。
+5. 將 [成員資格類型] 設定為 [已指派]。 
+6. 按一下 [成員]，然後從清單中選取群組的一或多個成員。
 
     ![在 Microsoft Intune 中建立群組的螢幕擷取畫面](./media/quickstart-use-groups-01.png)
 
-6. 按一下 [選取] > [建立]。
+7. 按一下 [選取] > [建立]。
 
 一旦您已成功建立群組，它會出現在 [所有群組] 清單中。 
 

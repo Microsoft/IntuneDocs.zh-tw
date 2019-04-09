@@ -1,12 +1,12 @@
 ---
 title: 快速入門 - 建立並指派應用程式防護原則
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 在此快速入門中，您將使用 Microsoft Intune 建立並指派應用程式防護原則。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393353"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871356"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入門：建立並指派應用程式保護原則
 
@@ -72,7 +72,7 @@ ms.locfileid: "57393353"
 3.  選取 [指派]。
 4.  在 [包含] 索引標籤中，按一下 [選取要包含的群組]。
 5.  選取 **Contoso Testers** 作為要包含的群組。
-6.  按一下 [選取]。 
+6.  按一下 [選取] > [儲存]。 
 
 您現在已指派應用程式防護原則。
 

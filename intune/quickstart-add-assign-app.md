@@ -1,12 +1,12 @@
 ---
 title: 快速入門 - 新增並指派用戶端應用程式
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 在此快速入門中，您將使用 Microsoft Intune 新增並指派用戶端應用程式。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391874"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798738"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
@@ -66,7 +66,7 @@ ms.locfileid: "57391874"
 將應用程式新增至 Microsoft Intune 之後，您可以將該應用程式指派給使用者或裝置群組。
 
 > [!NOTE]
-> 此快速入門是以此系列中的前幾個快速入門為基礎所建置。 如需詳細資料，請參閱此快速入門中的[必要條件](quickstart-add-assign-app.md#prerequisites)。
+> 此快速入門是以此系列中的前幾個快速入門為基礎所建置的。 如需詳細資料，請參閱此快速入門中的[必要條件](quickstart-add-assign-app.md#prerequisites)。
 
 使用下列步驟將應用程式指派給群組：
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式] > [應用程式]。 

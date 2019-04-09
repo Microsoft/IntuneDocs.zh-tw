@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389970"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871411"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入門：註冊您的 Windows 10 裝置
 
-在此快速入門中，您會先扮演 Intune 使用者角色並在 Microsoft Intune 中註冊您的 Windows 10 裝置。 然後，您會返回 Intune 並確認已註冊的裝置。
+在此快速入門中，您會先扮演 Intune 使用者角色並在 Microsoft Intune 中註冊您的 Windows 10 裝置。 然後，您會返回 Intune 並確認已註冊裝置。
 
 在 Microsoft Intune 中註冊您的裝置，可讓您的 Windows 10 裝置存取您組織的安全資料，包括電子郵件、檔案和其他資源。 這適用於 Windows 10 Desktop 和 Windows 10 Mobile 裝置。 註冊您的裝置能夠協助保護您和您的組織，並且協助保持區隔您的工作資料與個人資料。
 
@@ -72,7 +72,7 @@ ms.locfileid: "57389970"
 
     ![選取 [存取公司或學校帳戶]](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 使用您的工作或學校帳戶登入 Intune，然後選取 [下一步]。 如果您遵循 [建立使用者並指派授權] 快速入門，您可以使用已建立的使用者帳戶登入。
+3. 使用您的工作或學校帳戶登入 Intune，然後選取 [下一步]。 如果遵循 [建立使用者並指派授權](quickstart-create-user.md) 快速入門，就可以使用已建立的使用者帳戶登入。
 
     > [!NOTE]
     > 如果您要設定 ".onmicrosoft.com"，使用者帳戶將會以 **.onmicrosoft.com** 作為帳戶地址的一部分。 

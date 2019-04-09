@@ -6,23 +6,23 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991088"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514258"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>快速入門：建立使用者並為其指派授權
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入門：在 Intune 中建立使用者並為他們指派授權
 
-在此快速入門中，您將建立使用者，然後為該使用者指派授權。 使用 Intune 時，您要授與公司資料存取權的每個人都必須具有使用者帳戶。 Intune 系統管理員稍後可以設定這類使用者管理存取控制。
+在此快速入門中，您將建立使用者，然後指派 Intune 給他們。 使用 Intune 時，您要授與公司資料存取權的每個人都必須具備自己的使用者帳戶。 Intune 系統管理員稍後可以設定使用者以管理存取控制。
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "57991088"
 
 ## <a name="create-a-user"></a>建立使用者
 
-人員必須擁有使用者帳戶才能在 Intune 裝置管理中進行註冊。
+使用者必須擁有使用者帳戶才能在 Intune 裝置管理中進行註冊。 建立新的使用者：
 
 1. 在 Intune 中，選擇 [使用者] > [所有使用者] > [新增使用者]。
 ![瀏覽器](media/quickstart-create-user/create-user.png)
@@ -40,14 +40,16 @@ ms.locfileid: "57991088"
 3. 在 [使用者名稱] 方塊中輸入使用者識別碼，例如 Dewey@contoso.onmicrosoft.com。
 
     > [!NOTE]
-    > 如果您尚未設定客戶網域名稱，請使用您用來建立 Intune 訂閱 (或[免費試用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)) 的已驗證網域名稱。 
+    > 如果您尚未設定客戶網域名稱，請使用用來建立 Intune 訂閱 (或[免費試用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)) 的已驗證網域名稱。 
 
 4. 選擇 [顯示密碼] 並記下自動產生的密碼，以便您可以登入測試裝置。
 5. 選擇 **[建立]**。
 
 ## <a name="assign-a-license-to-the-user"></a>指派授權給使用者
 
-建立使用者之後，您必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給該使用者。 若未指派授權，他們就無法將其裝置註冊到 Intune 中。 
+建立使用者之後，必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給他們。 如果沒有指派授權給使用者，他們將無法在 Intune 中註冊裝置。 
+
+將 Intune 授權指派給使用者：
 
 1. 使用與您用來登入 Intune 相同的認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
 2. 選擇 [使用者] > [作用中使用者] > 選擇您剛才建立的使用者。
@@ -67,7 +69,7 @@ ms.locfileid: "57991088"
 
 ## <a name="next-steps"></a>後續步驟
 
-在此快速入門中，您已建立使用者並為該使用者指派授權。 如需如何將使用者新增至 Intune 的詳細資訊，請參閱[新增使用者並授與 Intune 系統管理權限](users-add.md)。
+您已在此快速入門中建立使用者並指 Intune 授權給他們。 如需如何將使用者新增至 Intune 的詳細資訊，請參閱[新增使用者並授與 Intune 系統管理權限](users-add.md)。
 
 若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
 

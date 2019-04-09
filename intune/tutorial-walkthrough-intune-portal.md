@@ -1,12 +1,12 @@
 ---
 title: 教學課程 - 逐步解說 Azure 入口網站中的 Intune
 titleSuffix: Microsoft Intune
-description: 在本教學課程中，您將導覽 Microsoft Intune，以深入了解如何完成工作。
+description: 在此教學課程中，您將導覽 Microsoft Intune，以深入了解如何完成工作。
 keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 03/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c733dbbf992ae10e14ba711b34e621d3f0fb3da8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
+ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395272"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567583"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>教學課程：逐步解說 Azure 入口網站中的 Microsoft Intune
 
 [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) 包含超過 100 項服務，可協助您解決各種雲端運算案例和可能情況。 Microsoft Intune 是 Azure 提供的數項服務之一。 Intune 可協助您確保公司的裝置、應用程式和資料符合公司的安全性需求。 您可以掌控並設定必須檢查哪些需求，以及當這些需求不符合時會發生什麼事。 您可以在 [Azure 入口網站](https://portal.azure.com)中找到 Microsoft Intune 服務。 了解 Intune 所提供的功能將有助您完成各種行動裝置管理 (MDM) 和行動應用程式管理 (MAM) 工作。
 
-在本教學課程中，您將：
+在此教學課程中，您將：
 > [!div class="checklist"]
 > * 導覽 Microsoft Intune
 > * 設定 Azure 入口網站
@@ -65,7 +65,7 @@ ms.locfileid: "57395272"
 
     ![[裝置註冊] 窗格的螢幕擷取畫面](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-02.png)
     
-    Intune 可讓您管理員工的裝置與應用程式，包括員工存取公司資料的方式。 若要使用這項行動裝置管理 (MDM) 服務，裝置必須先在 Intune 中註冊。 裝置會在註冊時收到 MDM 憑證。 這項憑證會用來與 Intune 服務通訊。 
+    Intune 可讓您管理員工的裝置與應用程式，包括員工存取公司資料的方式。 若要使用這此動裝置管理 (MDM) 服務，裝置必須先在 Intune 中註冊。 裝置會在註冊時收到 MDM 憑證。 此憑證會用來與 Intune 服務通訊。 
 
     有數種方法可以在 Intune 中註冊員工裝置。 每種方法皆會因裝置擁有權 (個人或公司)、裝置類型 (iOS、Windows、Android) 及管理需求 (重設、親和性、鎖定) 而有所不同。 不過，您必須先設定 Intune 基礎結構，才能啟用裝置註冊。 裝置註冊特別要求您[設定 MDM 授權單位](mdm-authority-set.md)。 如需準備您 Intune 環境 (租用戶) 的詳細資訊，請參閱[設定 Intune](setup-steps.md)。 準備好 Intune 租用戶之後，您可以註冊裝置。 如需裝置註冊的詳細資訊，請參閱[什麼是裝置註冊？](device-enrollment.md)
 
@@ -99,7 +99,7 @@ ms.locfileid: "57395272"
 
     ![[用戶端應用程式] 窗格的螢幕擷取畫面](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-06.png)
     
-    身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 此外，您也可能需要指派及管理未向 Intune 註冊之裝置上的應用程式。 Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式。 如需新增和指派應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md) 和[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
+    身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 此功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 此外，您也可能需要指派及管理未向 Intune 註冊之裝置上的應用程式。 Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式。 如需新增和指派應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md) 和[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 
 7. 從 [Intune](https://aka.ms/intuneportal)，選取 [條件式存取] 以顯示存取原則的詳細資料。
 
@@ -113,7 +113,7 @@ ms.locfileid: "57395272"
 
     您可以將使用者直接新增至 Intune，或同步內部部署 Active Directory 中的使用者。 新增之後，使用者便可以註冊裝置，並存取公司資源。 您也可以提供使用者其他權限來存取 Intune。 如需詳細資訊，請參閱[新增使用者並授與 Intune 系統管理權限](users-add.md)。
 
-9. 從 [Intune](https://aka.ms/intuneportal)，選取 [群組] 以顯示 Intune 中所包含 Azure Active Directory (Azure AD) 群組的詳細資料。 身為 Intune 系統管理員，您可以使用群組來管理裝置和使用者。 
+9. 從 [Intune](https://aka.ms/intuneportal)，選取 [群組] 以顯示 Intune 中所包含 Azure Active Directory (Azure AD) 群組的詳細資料。 身為 Intune 系統管理員，您可以使用群組來管理裝置與使用者。 
 
     ![[群組] 窗格的螢幕擷取畫面](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

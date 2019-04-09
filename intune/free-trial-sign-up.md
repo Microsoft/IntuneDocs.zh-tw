@@ -1,6 +1,6 @@
 ---
 title: 快速入門 - 免費試用 Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 在此快速入門中，您將建立免費試用訂用帳戶、了解支援的設定和網路需求，並選擇性地設定您的網域名稱。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756848"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871390"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune 
 
@@ -67,7 +67,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
     ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
-3. 若要在 Azure 入口網站中檢視 Microsoft Intune，請從頁面左側邊欄，選取 [所有服務]。
+3. 若要在 Azure 入口網站中檢視 Microsoft Intune，請從頁面左側邊欄選取 [所有服務]。
 4. 在篩選方塊中，搜尋並選取 **Microsoft Intune**。
 5. 選取**星狀**以將 Intune 新增至我的最愛服務清單底部，然後開啟 Intune 儀表板。
 
@@ -97,7 +97,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 ## <a name="configure-your-custom-domain-name-optional"></a>設定您的自訂網域名稱 (選擇性)
 
-如上所述，如果您的組織本身有您想要使用，但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Microsoft 365 系統管理中心進行變更。 您可以透過下列的步驟，新增、驗證及設定您的自訂網域名稱。  
+如上所述，如果您的組織本身有您想要使用，但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Microsoft 365 系統管理中心進行變更。 您可以透過下列步驟，新增、驗證及設定您的自訂網域名稱。  
 
 > [!IMPORTANT]
 > 您無法重新命名或移除網域名稱中「初始的」**onmicrosoft.com**。 但是，您可以新增、驗證或移除 Intune 使用的「自訂」網域名稱，以利企業識別。 如需詳細資訊，請參閱[設定自訂網域名稱](custom-domain-name-configure.md)。
@@ -110,7 +110,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
    ![Microsoft 365 系統管理中心 - [新增網域] 的螢幕擷取畫面](./media/domain-custom-add.png)
 
-4. 確認您是如上所輸入的網域擁有者。 
+4. 確認您是上一個步驟所輸入網域的擁有者。 
     
     選取 [透過電子郵件傳送驗證碼] 會傳送電子郵件給您網域中已註冊的連絡人。 收到電子郵件之後，請複製驗證碼，並在標示為 [在這裡輸入您的驗證碼]  的欄位中輸入。 如果驗證碼符合，則會將網域新增至您的租用戶。 顯示的電子郵件看起來可能很陌生。 有些註冊機構會隱藏實際電子郵件地址。 同時，電子郵件地址可能不同於註冊網域時所提供的電子郵件地址。
 
@@ -123,7 +123,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 您可能使用的有兩個入口網站：
 - Azure ([portal.azure.com](https://portal.azure.com)) 中的 Intune 儀表板是您可以瀏覽 [Intune 功能](what-is-intune.md)的位置。 一般是在 Intune 儀表板中執行工作。
-- Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 是您可以新增及管理使用者的位置，前提是您未使用 Azure Active Directory 進行這項工作。 您也可以管理您帳戶的其他事宜，包括計費及支援。
+- Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 是您可以新增及管理使用者的位置，前提是您未使用 Azure Active Directory 進行此工作。 您也可以管理您帳戶的其他事宜，包括計費及支援。
 
 ## <a name="next-steps"></a>後續步驟
 
