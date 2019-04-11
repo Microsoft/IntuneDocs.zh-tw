@@ -1,12 +1,12 @@
 ---
 title: 快速入門 - 傳送通知到不符合規範的裝置
 titleSuffix: Microsoft Intune
-description: 在本快速入門中，您將使用 Microsoft Intune 將電子郵件通知傳送到不符合規範的裝置。
+description: 您將在本快速入門中，使用 Microsoft Intune 將電子郵件通知傳送到不符合規範的裝置。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871428"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899006"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入門：傳送通知到不符合規範的裝置
 
-在本快速入門中，您將使用 Microsoft Intune 將電子郵件通知傳送給您具有不符合規範裝置的員工成員。
+您將在本快速入門中，使用 Microsoft Intune 將電子郵件通知傳送給您具有不符合規範裝置的員工成員。
 
 根據預設，當 Intune 偵測到不符合規範的裝置時，Intune 會立即將其標記為不符合規範。 Azure Active Directory (AAD) [條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)隨後會封鎖該裝置。 當裝置不符合規範時，Intune 允許您新增不符合規範時所採取的動作，這可讓您更靈活地決定該怎麼處置不符合規範的裝置。 例如，您可以為使用者提供寬限期，在封鎖不符合規範的裝置之前將其視為相容。
 
@@ -85,7 +85,7 @@ ms.locfileid: "58871428"
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. 依序按一下 [確定]、[確定] 及 [建立] 來建立合規性政策。
+7. 依序選取 [確定] > [確定] > [建立] 以建立您的合規性政策。
 8. 選取 [內容] > [不符合規範時採取的動作] > [新增]。
 9. 在 [動作] 下拉式清單方塊中，確認已選取 [傳送電子郵件給終端使用者]。
 10. 選取 [郵件範本] > [Contoso 系統管理員] > [選取]，選取您稍早在本主題中建立的郵件範本。
@@ -108,7 +108,7 @@ ms.locfileid: "58871428"
 
 ## <a name="next-steps"></a>後續步驟
 
-在此本快速入門中，您已使用 Intune 為員工的 Windows 10 裝置建立及指派合規性政策，以要求長度至少為六個字元的密碼。 如需建立 Windows 裝置合規性政策的詳細資訊，請參閱[在 Intune 中為 Windows 裝置新增裝置合規性政策](compliance-policy-create-windows.md)。
+您已在本快速入門中，使用 Intune 為員工的 Windows 10 裝置建立及指派合規性政策，以要求長度至少為六個字元的密碼。 如需建立 Windows 裝置合規性政策的詳細資訊，請參閱[在 Intune 中為 Windows 裝置新增裝置合規性政策](compliance-policy-create-windows.md)。
 
 若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
 
