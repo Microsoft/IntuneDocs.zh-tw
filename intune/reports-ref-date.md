@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: dc88aaca62868af2db024dcea90594161269fd86
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798491"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533587"
 ---
 # <a name="reference-for-date-entity"></a>Date 實體的參考
 
@@ -55,6 +55,6 @@ ms.locfileid: "58798491"
 | CalendarQuarter |                    日曆季度                    |          3           |
 |  CalendarYear   |                     日曆年度                      |         2016         |
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - 深入了解 [Intune 資料倉儲](reports-nav-create-intune-reports.md)。
