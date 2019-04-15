@@ -1,5 +1,6 @@
 ---
-title: 建立及部署 Windows 資訊保護 (WIP) 應用程式防護原則 | Microsoft Intune
+title: 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
+titleSuffix: Microsoft Intune
 description: 使用 Microsoft Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231565"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569762"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則
 
@@ -125,7 +127,8 @@ ms.locfileid: "57231565"
 
 WIP 學習是一種報表，可讓您監視啟用 WIP 的應用程式與 WIP 未知的應用程式。 未知的應用程式是不屬於組織 IT 部門所部署的應用程式。 在應用程式強制 WIP 使用「封鎖」模式之前，您可以從報告匯出這些應用程式，然後將它們新增到 WIP 原則，以避免造成生產力中斷。
 
-<!-- 1631908 --> 除了檢視啟用 WIP 之應用程式的資訊外，您也可檢視與網站共用工作資料之裝置的摘要。 您可以藉由這項資訊，決定哪些網站應該加入群組和使用者 WIP 原則。 摘要會顯示啟用 WIP 之應用程式所存取的網站 URL。
+<!-- 1631908 -->
+除了檢視啟用 WIP 之應用程式的資訊外，您也可檢視與網站共用工作資料之裝置的摘要。 您可以藉由這項資訊，決定哪些網站應該加入群組和使用者 WIP 原則。 摘要會顯示啟用 WIP 之應用程式所存取的網站 URL。
 
 在進行啟用 WIP 的應用程式和 WIP 未知的應用程式相關工作時，建議您先從 [無訊息] 或 [允許覆寫] 開始，同時透過少數幾名使用者確認受保護的應用程式清單上具有正確的應用程式。 完成之後，您就可以變更為最終強制原則**封鎖**。
 

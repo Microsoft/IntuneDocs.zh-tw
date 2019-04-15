@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 設定 Windows 裝置的註冊
-titlesuffix: ''
+titleSuffix: ''
 description: 設定 Windows 裝置的註冊。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234098"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567292"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -42,8 +43,8 @@ ms.locfileid: "57234098"
 
 ||**Azure AD Premium**|**其他 AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[自動註冊](#enable-windows-10-automatic-enrollment) |[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
-|**舊版 Windows**|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[自動註冊](#enable-windows-10-automatic-enrollment) |使用者註冊|
+|**舊版 Windows**|使用者註冊|使用者註冊|
 
 可以使用自動註冊的組織，也可以使用 Windows 設定設計工具應用程式來設定[大量註冊裝置](windows-bulk-enroll.md)。
 

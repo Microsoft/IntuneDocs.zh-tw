@@ -1,5 +1,6 @@
 ---
-title: 條件式存取與 Microsoft Intune | Microsoft Intune
+title: Microsoft Intune 的條件式存取
+titleSuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中定義使用者、裝置和應用程式在存取公司資源之前必須符合的條件。
 keywords: ''
 author: brenduns
@@ -9,18 +10,19 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a540d47d9b4418f7cf613fa401e92463d74a17fa
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838558"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569489"
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 

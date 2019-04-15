@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 管理大量採購的應用程式與書籍
-titlesuffix: ''
+titleSuffix: ''
 description: 了解如何使用 Microsoft Intune 管理和監視從市集大量採購之應用程式與書籍的使用狀況。
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70b80fcb9882703add39a2ca9bfba603ba77fdfd
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 26f7b3b11aaafd8aad5e99e2967bc8e13e8ca1a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234982"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567409"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>使用 Microsoft Intune 管理大量採購的應用程式與書籍
 
