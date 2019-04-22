@@ -177,7 +177,7 @@ items:
         href: apple-mdm-push-certificate-get.md
       - name: 公司識別碼
         href: corporate-identifiers-add.md
-      - name: 多重要素驗證
+      - name: '[Multi-Factor Authentication]'
         href: multi-factor-authentication.md
       - name: 裝置註冊管理員
         href: device-enrollment-manager-enroll.md
@@ -197,8 +197,10 @@ items:
         href: windows-enrollment-status.md
       - name: Windows AutoPilot Deployment 方案
         href: enrollment-autopilot.md
-      - name: 使用 Autopilot 的混合式 Active Directory
+      - name: 使用 Autopilot 的混合式 Azure AD
         href: windows-autopilot-hybrid.md
+      - name: 設定 Intune AD 連接器的 Proxy
+        href: autopilot-hybrid-connector-proxy.md
     - name: 設定 Android 註冊
       items:
       - name: 設定 Android 註冊
@@ -470,7 +472,7 @@ items:
       items:
       - name: 適用於商務設定的 Windows Update
         href: windows-update-for-business-configure.md
-      - name: Windows Update 合規性報告
+      - name: Windows Update 相容性報告
         href: windows-update-compliance-reports.md
       - name: iOS 更新原則
         href: software-updates-ios.md
@@ -655,7 +657,7 @@ items:
     items:
     - name: Android
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-android.md
       - name: 設定檔設定
         items:
@@ -674,7 +676,7 @@ items:
             href: samsung-knox-apps-allow-block.md
     - name: Android 企業
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-android-for-work.md
       - name: 設定檔設定
         items:
@@ -690,7 +692,7 @@ items:
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-ios.md
       - name: 設定檔設定
         items:
@@ -708,7 +710,7 @@ items:
           href: custom-settings-ios.md
     - name: macOS
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-mac-os.md
       - name: 設定檔設定
         items:
@@ -726,7 +728,7 @@ items:
           href: custom-settings-macos.md
     - name: Windows 10 及更新版本
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-windows.md
       - name: 設定檔設定
         items:
@@ -762,7 +764,7 @@ items:
         href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-windows.md#windows-holographic-for-business
       - name: 設定檔設定
         items:
@@ -778,7 +780,7 @@ items:
           href: custom-settings-windows-holographic.md
     - name: Windows 8.1
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-windows-8-1.md
       - name: 設定檔設定
         items:
@@ -790,7 +792,7 @@ items:
           href: wi-fi-settings-import-windows-8-1.md
     - name: Windows Phone 8.1
       items:
-      - name: 合規性原則設定
+      - name: 相容性原則設定
         href: compliance-policy-create-windows-8-1.md
       - name: 設定檔設定
         items:
@@ -945,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: 防止資料在未受管理的裝置上外洩
       href: data-leak-prevention.md
-ms.openlocfilehash: e120e5432fe68f479cc19fed5ea2263e7824245c
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: 5a1fbc1981c7a767edf19b651a4c5d167f48027c
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423834"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671912"
