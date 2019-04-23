@@ -76,7 +76,7 @@ sections:
             title: '[部落格] 為頂級客戶新增 Intune 支援體驗'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
-  - title: 影片
+  - title: 視訊
     items:
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/offk-KH7eIA]'
