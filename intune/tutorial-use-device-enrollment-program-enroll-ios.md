@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 使用裝置註冊計劃在 Intune 中註冊 iOS 裝置
 titleSuffix: Microsoft Intune
-description: 您將在此教學課程中設定 Apple 的 DEP，以在 Intune 中註冊 iOS 裝置。
+description: 您將在本教學課程中設定 Apple 的 DEP，以在 Intune 中註冊 iOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,16 +16,16 @@ ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
-ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515645"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>教學課程：使用裝置註冊計劃在 Intune 中註冊 iOS 裝置
 Apple 的裝置註冊計劃 (DEP) 可簡化裝置註冊。 使用 Microsoft Intune 和 DEP，當使用者第一次啟動裝置時，就會自動註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 
 
-在此教學課程中，您將了解如何：
+您將在本教學課程中了解如何：
 > [!div class="checklist"]
 > * 取得 Apple DEP 權杖
 > * 建立 Autopilot 裝置群組
@@ -89,7 +89,7 @@ Apple 的裝置註冊計劃 (DEP) 可簡化裝置註冊。 使用 Microsoft Intu
 
 5. 在 [不向 Apple 設定輔助程式驗證，而向公司入口網站驗證] 下，選擇 [否]。
 
-6. 選擇 [裝置管理設定]，然後在 [受監督] 下選擇 [否]。 受監督裝置可提供您更多管理選項，但您不會在此教學課程中用到。
+6. 選擇 [裝置管理設定]，然後在 [受監督] 下選擇 [否]。 受監督裝置可提供您更多管理選項，但您不會在本教學課程中用到。
 
 7. 選擇 [確定]。
 
@@ -97,7 +97,7 @@ Apple 的裝置註冊計劃 (DEP) 可簡化裝置註冊。 使用 Microsoft Intu
 
 9. 在 [部門電話] 下，輸入電話號碼。 當使用者在啟用期間點選 [需要協助] 按鈕時，就會顯示此號碼。
 
-10. 您可以 [顯示] 或 [隱藏] 裝置啟用期間的各種畫面。 基於此教學課程的目的，將 [密碼] 設定為 [顯示]，並將所有其他選項設定為 [隱藏]。
+10. 您可以 [顯示] 或 [隱藏] 裝置啟用期間的各種畫面。 基於本教學課程的目的，將 [密碼] 設定為 [顯示]，並將所有其他選項設定為 [隱藏]。
 
 11. 選擇 [確定] > [建立]。
 
