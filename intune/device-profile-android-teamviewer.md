@@ -2,24 +2,26 @@
 title: 在 Microsoft Intune - Azure 中遠端管理裝置 | Microsoft Docs
 description: 檢視所需的角色以使用 TeamViewer、如何安裝 TeamViewer 連接器、在 Azure 入口網站使用 Microsoft Intune 來遠端管理裝置的逐步指示
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509719"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 來遠端管理 Intune 裝置
 
@@ -34,7 +36,7 @@ ms.locfileid: "52186169"
     - **更新遠端協助**：可讓系統管理員修改 TeamViewer 連接器設定
     - **要求遠端協助**：可讓系統管理員為任何使用者啟動新的遠端協助工作階段。 此角色的使用者不會受到範圍內的任何 Intune 角色限制。 此外，在一個範圍內受指派為 Intune 角色的使用者或裝置群組，也可以要求遠端協助。 
 
-- 包含登入認證的 [TeamViewer](https://www.teamviewer.com) 帳戶
+- 包含登入認證的 [TeamViewer](https://www.teamviewer.com) 帳戶。 只有一些 TeamViewer 授權才支援與 Intune 整合。 如需特定的 TeamViewer 需求，請參閱 [TeamViewer Integration Partner:Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/) (TeamViewer 整合夥伴：Microsoft Intune)。
 
 藉由使用 TeamViewer，您允許適用於 Intune 連接器的 TeamViewer 建立 TeamViewer 工作階段、讀取 Active Directory 資料，以及儲存 TeamViewer 帳戶存取權杖。
 

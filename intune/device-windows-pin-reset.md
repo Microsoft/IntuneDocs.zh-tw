@@ -6,20 +6,22 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ed7a4dda91cfcc3cc4b97cc9ab8872b0a2c80e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b53ffbed93195b84544570e6a740fa614e219458
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513509"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 重設 Windows 裝置的密碼
 
@@ -40,7 +42,7 @@ ms.locfileid: "52189141"
 若要重設 Windows 裝置上的密碼，請將 PIN 重設服務導入您的 Intune 租用戶。
 
 1. 移至 [Microsoft PIN 重設服務生產](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent)，並使用租用戶系統管理員帳戶登入。
-2. **接受**以同意 PIN 重設服務存取您的帳戶：![接受 PIN 重設伺服器要求權限](./media/pin-reset-service-home-screen.png)
+2. **接受**以同意 PIN 重設服務存取您的帳戶：![接受 PIN 重設伺服器的權限要求](./media/pin-reset-service-home-screen.png)
 3. 移至 [Microsoft PIN 重設客戶端生產](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent)，並使用租用戶系統管理員帳戶登入。 **接受**以同意 PIN 重設用戶端存取您的帳戶。
 4. 在 [Azure 入口網站](https://portal.azure.com)中，確認 PIN 重設服務已列在企業應用程式 (所有應用程式) 中：![PIN 重設服務權限頁面](./media/pin-reset-service-application.png)
 

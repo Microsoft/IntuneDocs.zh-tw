@@ -1,33 +1,34 @@
 ---
 title: 使用 Intune 設定裝置型條件式存取
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何建立以 Microsoft Intune 裝置合規性和行動應用程式管理為基礎的裝置型條件式存取原則。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508609"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>建立裝置型條件式存取原則
 
-使用 Intune，您可以將行動裝置合規性新增到存取控制，來增強 Azure Active Directory 中的條件式存取。 一旦您建立定義裝置合規性需求的 Intune 合規性政策，您就可以使用裝置的合規性狀態，來允許或封鎖其對於您應用程式和服務的存取。 您可以建立使用設定 [裝置需要標記為合規] 的條件式存取原則來達成。 
+使用 Intune，您可以將行動裝置合規性新增到存取控制，來增強 Azure Active Directory 中的條件式存取。 一旦您建立定義裝置合規性需求的 Intune 合規性政策，您就可以使用裝置的合規性狀態，來允許或封鎖其對於您應用程式和服務的存取。 您可以建立使用設定 [裝置需要標記為合規] 的條件式存取原則來達成。  
 
-條件式存取原則會指定您要保護的應用程式或服務、可存取應用程式或服務的條件，以及套用原則的使用者。 條件式存取是 Azure AD Premium 功能，可在 Azure Active Directory 中設定，但您也可以在 Intune 入口網站中設定同樣的原則。 
+條件式存取原則會指定您要保護的應用程式或服務、可存取應用程式或服務的條件，以及套用原則的使用者。 條件式存取是 Azure AD Premium 功能，可在 Azure Active Directory 中設定，但您也可以在 Intune 入口網站中設定同樣的原則。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
 
 > [!IMPORTANT]
 > 在設定條件式存取之前，您必須設定 Intune 裝置合規性政策，根據裝置是否符合特定需求來評估裝置。 請參閱 [Intune 中的裝置合規性政策入門](device-compliance-get-started.md)。

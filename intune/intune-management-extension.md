@@ -1,14 +1,15 @@
 ---
-title: 在 Microsoft Intune 中新增適用於 Windows 10 裝置的 PowerShell 指令碼 - Azure | Microsoft Docs
-description: 新增 PowerShell 指令碼、將指令碼原則指派給 Azure Active Directory 群組、使用報告來監視指令碼，以及查看刪除您在 Microsoft Intune 的 Windows 10 裝置上所新增之指令碼的步驟。 另請參閱一些常見問題和解決方式。
+title: 在 Microsoft Intune 中將 PowerShell 指令碼新增至 Windows 10 裝置 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中建立和執行 PowerShell 指令碼、將指令碼原則指派給 Azure Active Directory 群組、使用報告來監視指令碼，以及查看用於刪除您在 Windows 10 裝置上所新增指令碼的步驟。 另請參閱一些常見問題和解決方式。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/03/2018
-ms.topic: article
+ms.date: 04/03/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
@@ -16,48 +17,65 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514115"
 ---
-# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理適用於 Windows 10 裝置的 PowerShell 指令碼
+# <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 
-使用 Intune 管理延伸模組在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可增強 Windows 10 的行動裝置管理 (MDM)，可更輕鬆地轉移至新式管理。
+使用 Microsoft Intune 管理延伸模組在 Intune 中上傳 PowerShell 指令碼，以便在 Windows 10 裝置上執行。 管理延伸模組可增強 Windows 10 的行動裝置管理 (MDM)，可更輕鬆地轉移至新式管理。
 
-## <a name="moving-to-modern-management"></a>轉移至新式管理
+本功能適用於：
 
-終端使用者運算正在歷經數位轉型。 典型的傳統 IT 著重於單一裝置平台、公司擁有的裝置、在辦公室工作的使用者，以及各種手動且反動的 IT 程序。 新式工作場所可使用使用者和企業擁有的多種平台，允許使用者在任何地方工作，並提供自動且主動的 IT 程序。
+- Windows 10 及更新版本
+
+## <a name="move-to-modern-management"></a>移至新式管理
+
+終端使用者運算正在歷經數位轉型。 典型的傳統 IT 著重於單一裝置平台、公司擁有的裝置、在辦公室工作的使用者，以及各種不同手動且反動的 IT 程序。 新式工作場所可使用使用者和企業擁有的多種平台，允許使用者在任何地方工作，並提供自動且主動的 IT 程序。
 
 MDM 服務 (例如 Microsoft Intune) 可以管理執行 Windows 10 的行動裝置及桌面裝置。 內建的 Windows 10 管理用戶端可與 Intune 進行通訊，進而執行企業管理工作。 有一些您可能需要的工作，例如進階裝置設定和疑難排解。 針對 Win32 應用程式管理，您可以使用 Windows 10 裝置上的 [Win32 應用程式管理](apps-win32-app-management.md)功能。
 
 Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以建立要在 Windows 10 裝置上執行的 PowerShell 指令碼。 例如，您可以建立會執行進階裝置設定的 PowerShell 指令碼，將該指令碼上傳至 Intune，將該指令碼指派至 Azure Active Directory (AD) 群組，然後執行該指令碼。 然後，您可以監視指令碼從開始到完成的執行狀態。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-Intune 管理延伸模組具有下列先決條件：
+Intune 管理延伸模組具有下列必要條件：
 
-- 裝置必須加入或註冊到 Azure AD，並設定 Azure AD [向 Intune 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域及註冊共同管理的 Windows 裝置。
+- 裝置必須加入或註冊到 Azure AD，並設定 Azure AD 和 Intune 進行[自動註冊](quickstart-setup-auto-enrollment.md)。 Intune 管理延伸模組支援加入 Azure AD、加入混合式 Azure AD 網域及註冊共同管理的 Windows 裝置。
 - 裝置必須執行 Windows 10 版本 1607 或更新版本。
 - 將 PowerShell 指令碼或 Win32 應用程式部署至使用者或裝置安全性群組時，將安裝 Intune 管理延伸模組代理程式。
 
-## <a name="create-a-powershell-script-policy"></a>建立 PowerShell 指令碼原則 
+## <a name="create-a-script-policy"></a>建立指令碼原則 
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Microsoft Intune]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
 2. 選取 [裝置設定] > [PowerShell 指令碼] > [新增]。
-3. 為 PowerShell 指令碼輸入 [名稱] 和 [描述]。 對於 [指令碼位置]，瀏覽至 PowerShell 指令碼。 指令碼的大小不得大於 200 KB。
-4. 選擇 **[設定]**。 然後選擇要在裝置上 ([是]) 或系統內容 ([否]) 上執行包含使用者認證的指令碼。 根據預設，會在系統內容中執行指令碼。 除非需要在系統內容中執行指令碼，否則請選取 [是]。 
-  ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-add-script.png)
-5. 選擇指令碼是否必須由信任的發行者簽署 ([是])。 根據預設，指令碼不需要簽署。 
-6. 選取 [確定]，然後選取 [建立] 以儲存您的指令碼。
+3. 輸入下列內容：
+    - **名稱**：輸入 PowerShell 指令碼的名稱。 
+    - **描述**：輸入 PowerShell 指令碼的描述。 這是選擇性設定，但建議執行。 
+    - **指令碼位置**：瀏覽至 PowerShell 指令碼。 指令碼必須小於 200 KB (ASCII)。
+4. 選擇 [設定]，然後輸入下列屬性：
+    - **使用登入認證執行此指令碼**：選取 [是] 以使用裝置上的使用者認證來執行指令碼。 選擇 [否] (預設) 以在系統內容中執行指令碼。 許多系統管理員會選擇 [是]。 如果需要在系統內容中執行指令碼，請選擇 [否]。
+    - **強制執行指令碼簽章檢查**：如果指令碼必須由信任的發行者簽章，請選取 [是]。 如果指令碼不需要簽章，請選取 [否] (預設)。 
+    - **在 64 位元的 PowerShell 主機中執行指令碼**：選取 [是] 以在 64 位元用戶端架構的 64 位元 PowerShell (PS) 主機中執行指令碼。 選取 [否] (預設) 以在 32 位元的 PowerShell 主機中執行指令碼。
 
-## <a name="assign-a-powershell-script-policy"></a>指派 PowerShell 指令碼原則
+      設定為 [是] 或 [否] 時，可使用下表來了解新的和現有原則行為：
+
+      | 在 64 位元的 PS 主機中執行指令碼 | 用戶端架構 | 新的 PS 指令碼 | 現有的 PS 指令碼原則 |
+      | --- | --- | --- | --- | 
+      | 否 | 32 位元  | 支援 32 位元的 PS 主機 | 僅在 32 位元的 PS 主機中執行，該主機可在 32 位元和 64 位元架構上運作。 |
+      | 是 | 64 位元 | 僅在 64 位元架構的 64 位元 PS 主機中執行。 在 32 位元上執行時，指令碼會在 32 位元的 PS 主機中執行。 | 在 32 位元的 PS 主機中執行指令碼。 如果此設定變更為 64 位元，指令碼會在 64 位元的 PS 主機中開啟 (但不會執行) 並報告結果。 在 32 位元上執行時，指令碼會在 32 位元的 PS 主機中執行。 |
+
+    ![在 Microsoft Intune 中新增和使用 PowerShell 指令碼](./media/mgmt-extension-add-script.png)
+5. 選取 [確定] > [建立] 以儲存指令碼。
+
+## <a name="assign-the-policy"></a>指派原則
 
 1. 在 [PowerShell 指令碼] 中，選取要指派的指令碼，然後選擇 [管理] > [指派]。
 
-    ![新增 PowerShell 指令碼窗格](./media/mgmt-extension-assignments.png)
+    ![在 Microsoft Intune 中將 PowerShell 指令碼指派或部署到裝置群組](./media/mgmt-extension-assignments.png)
 
 2. 選擇 [選取群組] 列出可用的 Azure AD 群組。 
 3. 選取包含其裝置接收指令碼之使用者的一或多個群組。 [選取] 以將原則指派給選取的群組。
@@ -67,9 +85,9 @@ Intune 管理延伸模組具有下列先決條件：
 > - Intune 中的 PowerShell 指令碼可以鎖定至 Azure AD 裝置安全性群組。
 > - Intune 中的 PowerShell 指令碼可以鎖定至 Azure AD 使用者安全性群組。
 
-Intune 管理延伸模組用戶端每小時會檢查 Intune 一次。 將原則指派給 Azure AD 群組之後，即會執行 PowerShell 指令碼，並報告執行結果。
+Intune 管理延伸模組用戶端會每小時及在每次重新啟動後檢查 Intune 一次，看看其中是否有任何新的指令碼或變更。 將原則指派給 Azure AD 群組之後，即會執行 PowerShell 指令碼，並報告執行結果。 指令碼執行之後，除非指令碼或原則中發生變更，否則不會再次執行。
 
-## <a name="monitor-run-status-for-powershell-scripts"></a>監視 PowerShell 指令碼的執行狀態
+## <a name="monitor-run-status"></a>監視執行狀態
 
 您可以在 Azure 入口網站中，監視使用者和裝置之 PowerShell 指令碼的執行狀態。
 
@@ -78,13 +96,13 @@ Intune 管理延伸模組用戶端每小時會檢查 Intune 一次。 將原則�
 - **裝置狀態**
 - **使用者狀態**
 
-## <a name="troubleshoot-powershell-scripts"></a>對 PowerShell 指令碼進行疑難排解
+## <a name="troubleshoot-scripts"></a>針對指令碼進行疑難排解
 
 用戶端電腦上的代理程式記錄通常位於 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以使用 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) 來檢視這些記錄檔。 
 
-![代理程式記錄的螢幕擷取畫面](./media/apps-win32-app-10.png)  
+![Microsoft Intune 中的 CMTrace 代理程式記錄螢幕擷取畫面或範例](./media/apps-win32-app-10.png)  
 
-## <a name="delete-a-powershell-script"></a>刪除 PowerShell 指令碼
+## <a name="delete-a-script"></a>刪除指令碼
 
 在 [PowerShell 指令碼] 中，以滑鼠右鍵按一下指令碼，然後選取 [刪除]。
 
@@ -106,7 +124,7 @@ PowerShell 指令碼不會在每次登入時執行。 它們僅在重新開機�
 
     [啟用 Windows 10 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)包含的步驟。
 
-#### <a name="issue-the-powershell-scripts-do-not-run"></a>問題：無法執行 PowerShell 指令碼
+#### <a name="issue-powershell-scripts-do-not-run"></a>問題：無法執行 PowerShell 指令碼
 
 **可能的解決方式**：
 

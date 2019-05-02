@@ -10,6 +10,7 @@ ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9b0cb07e6dcf192aa25c13e8637934c46d6799
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513082"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -102,6 +103,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 2. 在 [特定設定檔] 刀鋒視窗中，選擇 [指派]。 
 3. 選擇 [選取群組]，然後在 [選取群組] 刀鋒視窗中，選擇要指派該設定檔的群組，然後選擇 [選取]。
 
+
 > [!NOTE]
 > Intune 將會定期檢查指派的群組中是否有新裝置，然後開始將設定檔指派給這些裝置的程序。 此程序可能需要幾分鐘的時間才能完成。 部署裝置之前，請確定此程序已完成。  您可以在 [裝置註冊] > [Windows 註冊] > [裝置] 下檢查，此時應該會看到設定檔狀態從 [未指派] 變更為 [指派中]，最後變更為 [已指派]。
 
@@ -117,7 +119,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 > [!NOTE]
 > 設定檔的變更會套用至指派給該設定檔的裝置。 不過，更新的設定檔不會套用到已在 Intune 註冊的裝置，直到裝置已重設並重新註冊為止。
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot 未指派裝置的警示 <!-- 163236 -->  
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot 未指派裝置的警示  <!-- 163236 -->  
 
 警示會顯示有多少 Autopilot 程式裝置沒有 Autopilot 部署設定檔。 您可以使用警示中的資訊來建立設定檔，並加以指派至未指派的裝置。 當您按一下警示時，會看到 Windows Autopilot 裝置的完整清單，以及這些裝置的詳細資訊。
 

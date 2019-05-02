@@ -1,26 +1,28 @@
 ---
 title: 規劃移轉通訊
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文提供您要移轉至 Microsoft Intune 時的移轉通訊計劃和策略。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490138"
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -36,13 +38,13 @@ ms.locfileid: "52183724"
     -   [下載電子郵件 \#1 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **電子郵件 \#2：** 宣布服務現在已可透過 Intune 存取。 告知使用者立即註冊。 提醒使用者移轉的優點和策略原因。<br/><br/>
+-   **電子郵件 \#2：** 宣告服務現在已可透過 Intune 存取。 告知使用者立即註冊。 提醒使用者移轉的優點和策略原因。<br/><br/>
 
 
     -   [下載電子郵件 \#2 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **電子郵件 \#3：** 在其存取權受到影響之前，提供使用者時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合您的階段。 例如，在 6 月份，傳送電子郵件 \#1 給階段 1 使用者，傳送電子郵件 \#2 給階段 2 使用者，並傳送電子郵件 \#3 給階段 3 使用者。<br/><br/>
+-   **電子郵件 \#3：** 提供使用者在其存取權受到影響之前的時間軸。 再次提醒使用者移轉的優點和策略原因。 電子郵件的時間應具有滑動視窗以符合您的階段。 例如，在 6 月份，傳送電子郵件 \#1 給階段 1 使用者，傳送電子郵件 \#2 給階段 2 使用者，並傳送電子郵件 \#3 給階段 3 使用者。<br/><br/>
 
     -   [下載電子郵件 \#3 範本](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
@@ -58,6 +60,8 @@ Intune 提供可用來向使用者宣導註冊裝置的其他範本：
 
 -   [適用於 EMS 的 FastTrack 作法指南與電子郵件](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) \(英文\) 可讓您自訂為顯示您的公司標誌，以提高組織內的 Intune 與 EMS 採用率。
 
-## <a name="next-steps"></a>接下來的步驟
+-   與您的 Android、 iOS 和 Windows 使用者共用[公司入口網站應用程式 URL](http://go.microsoft.com/fwlink/?LinkID=396941)。 此 URL 會重新導向至 Android、iOS 和 Windows 裝置上列出的適當公司入口網站應用程式。
+
+## <a name="next-steps"></a>後續步驟
 
 [使用條件式存取引導使用者採用](migration-guide-drive-adoption.md).

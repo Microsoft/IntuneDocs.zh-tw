@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504268"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定群組原則設定的 Windows 10 範本
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
 當您管理組織中的裝置時，您想要建立一組設定來套用至不同的裝置群組。 例如，您有數個裝置群組。 針對群組 A，您想要指派一組特定設定。 針對群組 B，您想要指派另一組設定。 您也需要可進行之設定的簡單檢視。
 
-您可以在 Microsoft Intune 中使用 [系統管理範本] 來完成這項工作。 系統管理範本包含數百項設定，可控制 Internet Explorer 中的功能、Microsoft Office 程式、遠端桌面、對 OneDrive 的存取、使用圖片密碼或 PIN 進行登入，以及執行其他作業。 這些範本類似於 Active Directory (AD) 中的群組原則 (GPO) 設定，且是使用 XML 之 [ADMX 支援的設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)。 但 Intune 中的範本是 100% 雲端架構。 它們提供更簡單直接的方法來進行設定，以及尋找您想要的設定。
+您可以在 Microsoft Intune 中使用 [系統管理範本] 來完成這項工作。 系統管理範本包含數百項設定，可控制 Internet Explorer 中的功能、Microsoft Office 程式、遠端桌面、對 OneDrive 的存取、使用圖片密碼或 PIN 進行登入，以及執行其他作業。 這些範本類似於 Active Directory (AD) 中的群組原則 (GPO) 設定，且是使用 XML 之 [ADMX 支援的設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (開啟另一個 Docs 網站)。 但 Intune 中的範本是 100% 雲端架構。 它們提供更簡單直接的方法來進行設定，以及尋找您想要的設定。
 
 **系統管理範本**內建於 Intune 中，並不需要任何自訂項目，包括使用 OMA-URI。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些範本設定作為您一次管理 Windows 10 裝置的位置。
 
 本文列出建立 Windows 10 裝置範本的步驟，並示範如何篩選 Microsoft Intune 中的所有可用設定。 當您建立範本時，它會建立裝置組態設定檔。 您可以接著將此設定檔指派或部署到您組織中的 Windows 10 裝置。
-
-> [!NOTE]
-> 系統管理範本受到獨立裝置的支援。 System Center Configuration Manager (SCCM) 共同受控裝置目前不支援這些範本。
 
 ## <a name="create-a-template"></a>建立範本
 
@@ -75,6 +73,8 @@ ms.locfileid: "55833611"
   ![按一下 [路徑] 以依字母順序排序](./media/administrative-templates-windows/search-copy-settings.png)
 
   在另一個範例中，搜尋 `microsoft word`。 您會看到可為 Microsoft Word 程式設定的所有設定。 搜尋 `explorer` 來查看您可以新增至範本的所有 Internet Explorer 設定。
+
+這項功能會使用 [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (Windows 原則 CSP) (開啟另一個 Docs 網站)。 CSP 適用於不同版本的 Windows，例如 Home、Professional、Enterprise 等。 若要查看 CSP 是否適用於特定版本，請前往 [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (Windows 原則 CSP) (開啟另一個 Docs 網站)。
 
 ## <a name="next-steps"></a>後續步驟
 

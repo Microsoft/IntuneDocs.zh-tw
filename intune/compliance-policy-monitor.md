@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508990"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -122,7 +124,7 @@ ms.locfileid: "53642807"
 
 當您選取磚時，它會顯示沒有合規性政策的所有裝置。 它也會顯示裝置的使用者、政策部署狀態和裝置型號。
 
-#### <a name="what-you-need-to-know"></a>您必須知道的事
+#### <a name="what-you-need-to-know"></a>您必須知道的事項
 
 - 使用 [將未指派合規性政策的裝置標記為] 安全性設定，請務必識別沒有合規性政策的裝置。 接著，您可以將至少一個合規性原則指派給這些裝置。
 

@@ -1,32 +1,33 @@
 ---
-title: 使用 Microsoft Intune 將 Office 365 應用程式安裝到裝置
-titlesuffix: ''
-description: 了解如何使用 Microsoft Intune 以更容易在 Windows 10 裝置上安裝 Office 365 應用程式。
+title: 使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
+titleSuffix: ''
+description: 了解如何使用 Microsoft Intune 在 Windows 10 裝置上安裝 Office 365 應用程式。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507104"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
-此應用程式類型方便您將 Office 365 應用程式指派給由您管理且執行 Windows 10 的裝置。 若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的授權，則也可以安裝此兩者的應用程式。 您要的應用程式在 Intune 主控台上的應用程式清單中顯示為單一項目。
+您必須先將應用程式新增至 Intune，才可以指派、監視、設定或保護它們。 其中一種可用[應用程式類型](apps-add.md#app-types-in-microsoft-intune)是適用於 Windows 10 裝置的 Office 365 應用程式。 藉由在 Intune 中選取此應用程式類型，您可以指派 Office 365 應用程式，並將其安裝到您所管理且執行 Windows 10 的裝置。 若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Online 方案 2 的授權，則也可以指派並安裝這兩者的應用程式。 可用 Office 365 應用程式在 Azure 內 Intune 主控台上的應用程式清單中顯示為單一項目。
 
 > [!NOTE]
 > 您必須使用 Office 365 專業增強版授權來啟用透過 Microsoft Intune 部署的 Office 365 ProPlus 應用程式。 目前，Intune 不支援 Office 365 Business Edition。
@@ -54,18 +55,25 @@ ms.locfileid: "57229746"
 5. 選取 [新增]。
 6. 在 [新增應用程式] 窗格的 [應用程式類型] 清單中，於 [Office 365 Suite] 下，選取 [Windows 10]。
 
-您現在可以設定應用程式套件。
+## <a name="select-settings-format"></a>選取設定格式
 
-## <a name="configure-the-app-suite"></a>設定應用程式套件
+您可以選取 [設定格式] 來選擇設定應用程式的方法。 設定格式選項包括：
+- 設定設計工具
+- 輸入 XML 資料
 
-選取您想要指派給裝置的 Office 應用程式。
+當您選擇 [設定設計工具] 時，[新增應用程式] 刀鋒視窗將變更為提供兩個額外的設定選項：
+- 設定應用程式套件
+- 應用程式套件設定
 
-1. 在 [新增應用程式] 窗格中，選取 [設定應用程式套件]。
-2. 在 [設定應用程式套件] 窗格中，選取您想要指派給裝置的標準 Office 應用程式。  
-    此外，若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Pro for Office 365 的授權，您可以安裝其應用程式。
-3. 選取 [確定]。
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>設定應用程式資訊
+當您選擇 [輸入 XML 資料] 時，[新增應用程式] 刀鋒視窗中會顯示 [輸入 XML 資料] 選項。 選取此選項以顯示 [設定檔] 刀鋒視窗。 
+
+![新增 Office 365 設定設計工具](./media/apps-add-office365/apps-add-office365-01.png)
+    
+如需 [輸入 XML 資料] 選項的詳細資訊，請參閱下方的[輸入 XML 資料](apps-add-office365.md#enter-xml-format)。
+
+## <a name="configure-app-suite-information"></a>設定應用程式套件資訊
 
 在此步驟中，您要提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
 
@@ -84,9 +92,18 @@ ms.locfileid: "57229746"
     - **標誌**：當使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
 3. 選取 [確定]。
 
-## <a name="configure-app-settings"></a>設定應用程式設定
+## <a name="configure-app-suite"></a>設定應用程式套件
 
-在此步驟中，設定應用程式套件的安裝選項。 這些設定適用於您新增至套件的所有應用程式。
+如果您在 [設定格式] 下拉式方塊底下選取 [設定設計工具] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [設定應用程式套件] 選項。 選取您想要指派給裝置的 Office 應用程式。
+
+1. 在 [新增應用程式] 窗格中，選取 [設定應用程式套件]。
+2. 在 [設定應用程式套件] 窗格中，選取您想要指派給裝置的標準 Office 應用程式。  
+    此外，若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Online 方案 2 的授權，您可以安裝其適用的應用程式。
+3. 選取 [確定]。
+
+## <a name="configure-app-suite-settings"></a>設定應用程式套件設定
+
+如果您在 [設定格式] 下拉式方塊底下選取 [設定設計工具] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [應用程式套件設定] 選項。 在此步驟中，設定應用程式套件的安裝選項。 這些設定適用於您新增至套件的所有應用程式。
 
 1. 在 [新增應用程式] 窗格中，選取 [應用程式套件設定]。
 2. 在 [應用程式套件設定] 窗格中，執行以下動作：
@@ -110,6 +127,10 @@ ms.locfileid: "57229746"
     - **使用共用電腦啟用**：當多個使用者共用一部電腦時，請選取此選項。 如需詳細資訊，請參閱 [Office 365 的共用電腦啟用概觀](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **語言**：系統會自動以使用者裝置上與 Windows 一起安裝的任何受支援語言安裝 Office。 如果想要使用其他語言安裝應用程式套件，請選取此選項。 <p></p>
     您將可以為透過 Intune 管理的 Office 365 專業增強版應用程式來部署其他語言。 可用的語言清單包括語言套件的**類型** (核心、部分和校訂)。 在 Azure 入口網站中，選取 [Microsoft Intune] > [用戶端應用程式] > [應用程式] > [新增]。 在 [新增應用程式] 刀鋒視窗的 [應用程式類型] 清單中，選取 [Office 365 套件] 下的 [Windows 10]。 選取 [應用程式套件設定] 刀鋒視窗中的 [語言]。 如需詳細資訊，請參閱[在 Office 365 專業增強版中部署語言的概觀](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+
+## <a name="enter-xml-format"></a>輸入 XML 格式
+
+如果您在 [設定格式] 下拉式方塊底下選取 [輸入 XML 資料] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [輸入 XML 格式] 選項。 如需詳細資訊，請參閱 [Office 部署工具的設定選項](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 ## <a name="finish-up"></a>完成
 

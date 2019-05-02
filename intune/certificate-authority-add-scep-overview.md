@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508471"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -132,7 +134,7 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 - [Intune SCEP API GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [協力廠商 CA 的 Intune SCEP API 指引](scep-libraries-apis.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定憑證設定檔](certificates-scep-configure.md)
 - [Intune SCEP API GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

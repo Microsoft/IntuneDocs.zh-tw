@@ -1,27 +1,29 @@
 ---
 title: 開發推出通訊計畫
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可協助您開發 Microsoft Intune 部署的推出通訊計劃。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513285"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>開發推出通訊計畫
 
@@ -55,7 +57,7 @@ ms.locfileid: "52179811"
 
 您可以使用多種通訊傳遞方法，將 Intune 推出資訊傳達給您的目標組織群組和使用者。 下列清單顯示一些範例，以及您可以搭配使用方法的階段：
 
--   在啟動階段，親自或透過 Skype 會議對整個組織進行溝通
+-   在啟動階段，親自或透過 Microsoft Teams 會議對整個組織進行溝通
 
 -   在註冊前、註冊時和註冊後階段，使用電子郵件溝通
 

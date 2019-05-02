@@ -1,26 +1,29 @@
 ---
-title: 管理 iOS 應用程式之間的資料傳輸 | Microsoft Intune
+title: 管理 iOS 應用程式之間的資料傳輸
+titleSuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用行動裝置應用程式管理原則來管理應用程式之間的資料傳輸。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509502"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -49,11 +52,15 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 
 2.  使用下列通用步驟，來部署您要透過 Intune 或協力廠商 MDM 解決方案管理的應用程式及電子郵件設定檔。 *範例 1* 也涵蓋這個體驗。
 
-3.  使用下列應用程式組態設定來部署應用程式：
+3.  使用下列應用程式組態設定，將應用程式部署至受控裝置：
 
       **機碼** = IntuneMAMUPN, **值** = <username@company.com>
 
       範例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > 在 Intune 中，應用程式設定原則必須是「受控裝置」的註冊類型。
+       > 此外，應用程式還必須在設定為可用時，從 Intune 公司入口網站進行安裝，或視裝置的需求加以推送。 
 
 4.  使用 Intune 或協力廠商 MDM 提供者，將**開啟位置管理**原則部署到已註冊的裝置。
 

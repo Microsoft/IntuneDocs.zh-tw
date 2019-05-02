@@ -1,15 +1,16 @@
 ---
-title: 將 Win32 應用程式新增至 Microsoft Intune
-titlesuffix: ''
-description: 了解如何使用 Microsoft Intune 來新增、傳遞及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
+title: 新增 Win32 應用程式並指派給 Microsoft Intune
+titleSuffix: ''
+description: 了解如何使用 Microsoft Intune 來新增、指派及管理 Win32 應用程式。 本主題提供 Intune Win32 應用程式傳遞和管理功能的概觀，以及 Win32 應用程式疑難排解資訊。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
@@ -17,37 +18,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426148"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
-Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
+[Intune 獨立版](mdm-authority-set.md)現在可提供更強大的 Win32 應用程式管理功能。 雖然雲端連線使用者可以使用設定管理員進行 Win32 應用程式管理，僅使用 Intune 的客戶將可針對其 Win32 企業營運系統 (LOB) 應用程式取得更強大的管理功能。 本主題提供 Intune Win32 應用程式管理功能的概觀及疑難排解資訊。
+
+> [!NOTE]
+> 此應用程式管理功能支援 Windows 應用程式使用 32 位元和 64 位元作業系統架構。
 
 ## <a name="prerequisites"></a>必要條件
 
+若要使用 Win32 應用程式管理，請務必符合下列準則：
+
 - Windows 10 1607 版或更新版本 (企業、專業與評估版)
 - Windows 10 用戶端必須： 
-    - 加入 Azure Active Directory (AAD) 或混合式 Azure Active Directory，並
-    - 在 Intune (MDM 受控) 中註冊
-- Windows 應用程式的大小上限為每個應用程式 8 GB
+    - 裝置必須加入 Azure AD 並自動註冊。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域，並支援群組原則註冊裝置。 
+    > [!NOTE]
+    > 針對群組原則註冊案例 - 終端使用者會使用本機使用者帳戶，將其 Windows 10 裝置加入 AAD。 使用者必須使用其 AAD 使用者帳戶登入裝置，並註冊到 Intune。 如果對使用者或裝置指定 PowerShell 指令碼或 Win32 應用程式目標，Intune 會在裝置上安裝 Intune 管理延伸模組。
+- Windows 應用程式的大小上限為每個應用程式 8 GB。
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>準備要上傳的 Win32 應用程式內容
 
-使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)來預先處理 Win32 應用程式。 此工具會將應用程式安裝檔案轉換成 *.intunewin* 格式。 此工具也會偵測一部分的 Intune 必要屬性，來判斷應用程式安裝狀態。 在您於應用程式安裝程式資料夾上使用此工具後，您便可以在 Intune 主控台中建立 Win32 應用程式。
+使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)來預先處理 Windows 傳統 (Win32) 應用程式。 此工具會將應用程式安裝檔案轉換成 *.intunewin* 格式。 此工具也會偵測一部分的 Intune 必要屬性，來判斷應用程式安裝狀態。 在您於應用程式安裝程式資料夾上使用此工具後，您便可在 Intune 主控台中建立 Win32 應用程式。
 
-您可以從 GitHub 下載 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)。
+> [!IMPORTANT]
+> [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)會在建立 *.intunewin* 檔案時壓縮所有的檔案和子資料夾。 請務必將 Microsoft Win32 內容準備工具與安裝程式檔案和資料夾分開保留，才不會在 *.intunewin* 檔案中包含此工具或其他不必要的檔案和資料夾。
+
+您可以從 GitHub 以 ZIP 檔案形式下載 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)。 此 ZIP 壓縮檔案包含名為 **Microsoft-Win32-Content-Prep-Tool-master** 的資料夾。 此資料夾包含準備工具、授權、讀我檔案和版本資訊。 
+
+### <a name="process-flow-to-create-intunewin-file"></a>建立 .intunewin 檔案的程序流程
+
+   ![建立 .intunewin 檔案的程序流程](./media/prepare-win32-app.svg)
+
+### <a name="run-the-microsoft-win32-content-prep-tool"></a>執行 Microsoft Win32 內容準備工具
+
+如果您從命令視窗執行 `IntuneWinAppUtil.exe` 但未提供參數，此工具會引導您逐步輸入必要的參數。 或者，您可以根據下列可用命令列參數，將參數新增至命令。
 
 ### <a name="available-command-line-parameters"></a>可用命令列參數 
 
 |    **命令列參數**    |    **描述**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    [說明]    |
-|    `-c <setup_folder>`     |    所有安裝程式檔案的安裝程式資料夾。    |
+|    `-c <setup_folder>`     |    所有安裝程式檔案的資料夾。 此資料夾中的所有檔案都會壓縮成 *.intunewin* 檔案。    |
 |   ` -s <setup_file>`     |    安裝程式檔案 (例如 *setup.exe* 或 *setup.msi*)。    |
 |    `-o <output_folder>`     |    產生 *.intunewin* 檔案的輸出資料夾。    |
 |    `-q`       |    安靜模式    |
@@ -57,9 +75,9 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 |    **範例命令**    |    **描述**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    此命令會顯示工具的使用方式資訊。    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    此命令會從指定來源資料夾和安裝程式檔案產生 `.intunewin` 檔案。 針對 MSI 安裝程式檔案，此工具會擷取 Intune 的必要資訊。 若指定 `-q`，則命令會在安靜模式中執行，並且若已存在輸出檔案，則該檔案將會遭到覆寫。 此外，若輸出資料夾不存在，則會自動建立資料夾。    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    此命令會從指定來源資料夾和安裝程式檔案產生 `.intunewin` 檔案。 針對 MSI 安裝程式檔案，此工具會擷取 Intune 的必要資訊。 若指定 `-q`，則命令會在安靜模式中執行，並且若已存在輸出檔案，則該檔案將會遭到覆寫。 此外，若輸出資料夾不存在，則會自動建立資料夾。    |
 
-當產生 *.intunewin* 檔案時，將您需要參考的任何檔案放到安裝程式資料夾的子資料夾中。 接著，使用相對路徑來參考您需要的特定檔案。 例如：
+當產生 *.intunewin* 檔案時，將您需要參考之任何檔案放到安裝程式資料夾的子資料夾中。 接著，使用相對路徑來參考您需要的特定檔案。 例如：
 
 **安裝程式來源資料夾：** *c:\testapp\v1.0*<br>
 **授權檔案：** *c:\testapp\v1.0\licenses\license.txt*
@@ -68,7 +86,15 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>建立、指派和監視 Win32 應用程式
 
-與企業營運系統 (LOB) 應用程式相似，您可以將 Win32 應用程式新增至 Microsoft Intune。 此類型應用程式通常是在由內部編寫或由協力廠商編寫。 下列步驟可提供指導，協助您將 Windows 應用程式新增至 Intune。
+與企業營運系統 (LOB) 應用程式相似，您可以將 Win32 應用程式新增至 Microsoft Intune。 此類型應用程式通常是在由內部編寫或由協力廠商編寫。 
+
+### <a name="process-flow-to-add-a-win32-app-to-intune"></a>將 Win32 應用程式新增至 Intune 的程序流程
+
+   ![將 Win32 應用程式新增至 Intune 的程序流程](./media/add-win32-app.svg)
+
+### <a name="add-a-win32-app-to-intune"></a>將 Win32 應用程式新增至 Intune
+
+下列步驟可提供指導，協助您將 Windows 應用程式新增至 Intune。
 
 ### <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 
@@ -113,7 +139,11 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 1.  在 [新增應用程式] 窗格中，選取 [程式] 來設定應用程式安裝和應用程式的移除命令。
 2.  新增完整安裝命令來安裝應用程式。 
 
-    例如，若您的應用程式檔案名稱為 **MyApp123**，請新增下列內容：`msiexec /i “MyApp123.msi”`
+    例如，若您的應用程式檔案名稱為 **MyApp123**，請新增下列內容：<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    若應用程式是 `ApplicationName.exe`，則命令是應用程式名稱，後面接著套件支援的命令引數 (參數)。 <br>例如：<br>
+    `ApplicationName.exe /quite`<br>
+    在上述命令中，`ApplicaitonName.exe` 套件支援 `/quite` 命令引數。<p> 如需應用程式套件支援的特定引數，請連絡您的應用程式廠商。
 
 3.  新增完整解除安裝命令，來根據應用程式的 GUID 解除安裝應用程式。 
 
@@ -129,14 +159,32 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 ### <a name="step-5-configure-app-requirements"></a>步驟 5：設定應用程式需求
 
 1.  在 [新增應用程式] 窗格中，選取 [需求] 來設定裝置在安裝應用程式之前必須滿足的需求。
-2.  在 [需求] 窗格中，設定下列資訊。 窗格中某些值可能會自動填入。
+2.  在 [新增需求規則] 窗格中，設定下列資訊。 窗格中某些值可能會自動填入。
     - **作業系統架構**：選擇安裝應用程式所需要的架構。
     - **最低作業系統**：選取安裝應用程式所需要的最低作業系統。
     - **必要磁碟空間 (MB)**：(選擇性) 新增安裝應用程式時，系統磁碟上所需要的可用磁碟空間。
     - **必要實體記憶體 (MB)**：(選擇性) 新增安裝應用程式所需要的實體記憶體 (RAM)。
     - **必要最低邏輯處理器數**：(選擇性) 新增安裝應用程式所需要的最低邏輯處理器數目。
     - **必要最低 CPU 速度 (MHz)**：(選擇性) 新增安裝應用程式所需要的最低 CPU 速度。
-3.  完成後，按一下 [確定]。
+
+3. 按一下 [新增] 以顯示 [新增需求規則] 刀鋒視窗，並設定其他需求規則。 選取 [需求類型] 以選擇您要用於決定如何驗證需求的規則類型。 需求規則可能會以檔案系統資訊、登錄值或 PowerShell 指令碼為基礎。 
+    - **檔案**：當您選擇 [檔案] 作為 [需求類型] 時，需求規則必須偵測檔案或資料夾、日期、版本或大小。 
+        - **路徑**  – 包含要偵測檔案或資料夾的資料夾完整路徑。
+        - **檔案或資料夾** – 要偵測的檔案或資料夾。
+        - **屬性** - 選取用於驗證應用程式是否存在的規則類型。
+        - **在 64 位元用戶端上與 32 位元應用程式建立關聯** – 選取 [是] 來在 64 位元用戶端上展開 32 位元內容裡的任何路徑環境變數。 選取 [否] 來在 64 位元用戶端上展開 64 位元內容裡的任何路徑變數 (預設值)。 32 位元用戶端一律會使用 32 位元內容。
+    - **登錄**：當您選擇 [登錄] 作為 [需求類型] 時，需求規則必須偵測以值、字串、整數或版本為基礎的登錄設定。
+        - **機碼路徑** – 包含要偵測值的登錄項目完整路徑。
+        - [Value name]**值名稱** – 要偵測的登錄值名稱。 若此值空白，則會對機碼進行偵測。 若偵測方法是檔案或資料夾存在性以外的方法，則會使用機碼的 (預設) 值。
+        - **登錄機碼需求** - 選取用於決定如何驗證需求規則的登錄機碼比較類型。
+        - **在 64 位元用戶端上與 32 位元應用程式建立關聯** - 選取 [是] 來在 64 位元用戶端上搜尋 32 位元登錄。 選取 [否] 來在 64 位元用戶端上搜尋 64 位元登錄 (預設值)。 32 位元用戶端一律會搜尋 32 位元登錄。
+    - **指令碼**：當您無法在 Intune 主控台中建立以檔案、登錄或提供給您之任何其他方法為基礎的需求規則時，請選擇 [指令碼] 作為 [需求類型]。
+        - **指令檔** - 針對以 PowerShell 指令碼為基礎的需求規則，如果結束代碼為 0，我們將會偵測到更詳細的 STDOUT。 例如，我們可能會偵測到 STDOUT 以值 1 的整數表示。
+        - **在 64 位元用戶端上作為 32 位元處理序執行** - 選取 [是] 以在 64 位元用戶端上的 32 位元處理序中執行指令碼。 選取 [否] \(預設\) 以在 64 位元用戶端上的 64 位元處理序中執行指令碼。 32 位元用戶端會在 32 位元處理序中執行指令碼。
+        - **使用登入認證執行此指令碼**：選取 [是] 以使用登入的裝置認證來執行指令碼**。
+        - [Enforce script signature check]**強制指令碼簽章檢查** – 選取 [是] 來驗證指令碼是否是由信任的發佈者簽署，允許指令碼在不顯示警告或提示的情況下執行指令碼。 指令碼會在解除封鎖的情況下執行。 選取 [否] 來在不進行簽章驗證的情況下，透過終端使用者確認來執行指令碼 (預設值)。
+        - **選取輸出資料類型**：選取用於判斷需求規則是否相符的資料類型。
+4.  完成後，按一下 [確定]。
 
 ### <a name="step-6-configure-app-detection-rules"></a>步驟 6：設定應用程式偵測規則
 
@@ -231,9 +279,39 @@ Intune standalone 可提供更強大的 Win32 應用程式管理功能。 雖然
 
 此時，您已完成將 Win32 應用程式新增至 Intune 的步驟。 如需應用程式指派和監視的資訊，請參閱[使用 Microsoft Intune 指派應用程式給群組](https://docs.microsoft.com/intune/apps-deploy)和[使用 Microsoft Intune 監視應用程式資訊和指派](https://docs.microsoft.com/intune/apps-monitor)。
 
+## <a name="app-dependencies"></a>應用程式相依性
+
+應用程式相依性是必須先安裝才能安裝 Win32 應用程式的應用程式。 您可以要求將其他應用程式安裝為相依性。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 最多可以有 100 個相依性，其中包括任何內含相依性的相依性，以及應用程式本身。 只有在將 Win32 應用程式新增並上傳至 Intune 之後，才能新增 Win32 應用程式相依性。 一旦新增您的 Win32 應用程式之後，您會在 Win32 應用程式的刀鋒視窗上看到 [相依性] 選項。 
+
+> [!NOTE]
+> 只有在 Intune 管理代理程式已升級為 1904 版 (大於 1.18.120.0) 之後，才能使用應用程式相依性功能 (將服務升級為 1904 之後，可能另外需要一到兩週的時間才能使用此功能)。
+
+新增應用程式相依性時，您可以根據應用程式名稱和發行者進行搜尋。 此外，您可以根據應用程式名稱和發行者來排序新增的相依性。 無法在所新增應用程式相依性清單中選取先前新增的應用程式相依性。 
+
+您可以選擇是否要自動安裝每個相依的應用程式。 根據預設，每個相依性的 [自動安裝] 選項會設定為 [是]。 藉由自動安裝相依的應用程式，即使未對使用者或裝置指定相依的應用程式目標，Intune 也會在裝置上安裝應用程式來滿足相依性，再安裝您的 Win32 應用程式。 請注意，相依性可以有遞迴子相依性，在安裝主要相依性之前會先安裝每個子相依性。 此外，相依性安裝不會遵循指定相依性層級的安裝順序。
+
+若要將應用程式相依性新增至您的 Win32 應用程式，請使用下列步驟：
+
+1. 在 Intune 中，選取 [用戶端應用程式] > [應用程式] 以檢視您所新增的用戶端應用程式清單。 
+2. 選取新增的 **Windows 應用程式 (Win32)** 應用程式。 
+3. 選取 [相依性] 以新增必須先安裝才能安裝 Win32 應用程式的相依應用程式。 
+4. 按一下 [新增] 以新增應用程式相依性。
+5. 一旦您新增相依的應用程式之後，按一下 [選取]。
+6. 在 [自動安裝] 下選取 [是] 或 [否]，以選擇是否要自動安裝相依的應用程式。
+7. 按一下 **[儲存]**。
+
+終端使用者會看到 Windows 快顯通知，指出相依的應用程式即將下載並在 Win32 應用程式安裝過程中進行安裝。 此外，若未安裝相依的應用程式，終端使用者通常會看到下列其中一個通知：
+- 一或多個相依的應用程式無法安裝
+- 未符合一或多個相依應用程式的需求
+- 一或多個相依的應用程式仍在等待重新啟動裝置
+
+如果您選擇不要**自動安裝**相依性，則不會嘗試安裝 Win32 應用程式。 此外，應用程式報告會顯示相依性已標示為 `failed`，並同時提供失敗原因。 您可以按一下 Win 32 應用程式[安裝詳細資料](troubleshoot-app-install.md#win32-app-installation-troubleshooting)中所提供的失敗 (或警告)，來檢視相依性安裝失敗。 
+
+每個相依性會遵守 Intune Win32 應用程式重試邏輯 (等候 5 分鐘後嘗試安裝 3 次)，以及全域重新評估排程。 此外，相依性僅適用於在裝置上安裝 Win32 應用程式時。 相依性不適用於解除安裝 Win32 應用程式。 若要刪除相依性，您必須在相依性清單資料列結尾的相依應用程式左側，按一下省略符號 (三個點)。 
+
 ## <a name="delivery-optimization"></a>傳遞最佳化
 
-Windows 10 RS3 與更新版本的用戶端將會使用 Windows 10 用戶端上的傳遞最佳化元件來下載 Intune Win32 應用程式內容。 傳遞最佳化提供預設開啟的同儕節點對同儕節點功能。 傳遞最佳化可以由群組原則進行設定，在未來也將能透過 Intune MDM 進行設定。 如需詳細資訊，請參閱[適用於 Windows 10 的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) \(部分機器翻譯\)。 
+Windows 10 1709 與更新版本的用戶端將會使用 Windows 10 用戶端上的傳遞最佳化元件來下載 Intune Win32 應用程式內容。 傳遞最佳化提供預設開啟的同儕節點對同儕節點功能。 傳遞最佳化可以由群組原則及透過 Intune 裝置設定進行設定。 如需詳細資訊，請參閱[適用於 Windows 10 的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) \(部分機器翻譯\)。 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>在裝置上安裝必要和可用應用程式
 
@@ -248,10 +326,25 @@ Windows 10 RS3 與更新版本的用戶端將會使用 Windows 10 用戶端上�
 ## <a name="toast-notifications-for-win32-apps"></a>Win32 應用程式的快顯通知 
 如有需要，您可以隱藏而不顯示每個應用程式指派的終端使用者快顯通知。 從 Intune 選取 [用戶端應用程式] > [應用程式] > 選取應用程式 > [指派] > [包含群組]。 
 
+> [!NOTE]
+> Intune 管理延伸模組所安裝的 Win32 應用程式不會在未註冊裝置上解除安裝。 系統管理員可以利用指派排除，來確保不會對 BYOD 裝置提供 Win32 應用程式。
+
 ## <a name="troubleshoot-win32-app-issues"></a>針對 Win32 應用程式問題進行疑難排解
-用戶端電腦上的代理程式記錄通常位於 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以利用 `CMTrace.exe` 檢視這些記錄檔。 *CMTrace.exe* 可從 [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools) (SCCM 用戶端工具) 下載。 
+用戶端電腦上的代理程式記錄通常位於 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以利用 `CMTrace.exe` 檢視這些記錄檔。 *CMTrace.exe* 可從 [Configuration Manager 用戶端工具](https://docs.microsoft.com/sccm/core/support/tools)下載。 
 
 ![用戶端機器上代理程式記錄檔的螢幕擷取畫面](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> 為了允許正確安裝並執行 LOB Win32 應用程式，反惡意程式碼設定應該排除下列目錄不要進行掃描：<p>
+> **在 X64 用戶端電腦上**：<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **在 X86 用戶端電腦上**：<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+
+如需針對 Win32 應用程式進行疑難排解的詳細資訊，請參閱[針對 Win32 應用程式安裝進行疑難排解](troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
 
 ### <a name="troubleshooting-areas-to-consider"></a>應考慮的疑難排解區域
 - 檢查目標，確認代理程式已安裝在裝置上 - 目標為群組的 Win32 應用程式，或是目標為群組的 PowerShell 指令碼會建立安全性群組的代理程式安裝原則。

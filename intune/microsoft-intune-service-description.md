@@ -9,18 +9,20 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508213"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
 
@@ -35,7 +37,7 @@ Intune 和 Azure Active Directory (Azure AD) 緊密整合以進行身分識別�
 若要深入了解如何管理裝置、應用程式，並使用 Intune 保護公司資料，請參閱 [Intune 文件](https://docs.microsoft.com/intune/)。
 
 ## <a name="30-day-free-trial"></a>30 天免費試用
-您可以從包含 100 個使用者授權的 30 天免費試用版開始使用 Intune。 若要使用免費的試用版，[請前往 Intune 註冊頁面](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。 如果您的組織有 Enterprise 合約或對等的大量授權合約，請連絡您的 Microsoft 代表來設定您的免費試用版。
+您可以從包含 100 個使用者授權的 30 天免費試用版開始使用 Intune。 若要使用免費的試用版，[請前往 Intune 註冊頁面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。 如果您的組織有 Enterprise 合約或對等的大量授權合約，請連絡您的 Microsoft 代表來設定您的免費試用版。
 
 > [!NOTE]
 > 您的組織若已有 Microsoft Online Services 的工作或學校帳戶，而您在試用期結束後仍要繼續在生產環境中使用此 Intune 訂用帳戶，請在該頁面選擇 [登入] 選項，然後再以您組織的全域管理員帳戶進行驗證。 這個動作可確保您的 Intune 試用版連結至您現有的工作或學校帳戶。
@@ -57,7 +59,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 - [Microsoft Intune 的新功能](whats-new.md)。 此主題會隨著每月及每週服務更新，例如當發行公司入口網站應用程式之類的應用程式時。
 
-- 我們也將會透過 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)訊息中心，宣布重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。 深入了解如何使用 [Office 365 訊息中心](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)。
+- 我們也將會透過 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)訊息中心，宣告重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。 深入了解如何使用 [Office 365 訊息中心](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)。
 
     一些有用的提示：
 
@@ -76,7 +78,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
     - [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/) \(英文\)
 
 >[!Note]
->您可以在 [Office 365 管理入口網站](https://portal.office.com/Admin/Default.aspx)中監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]**。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
+>您可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]**。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft 提供之有關 Intune 服務的通知類型
 
@@ -101,7 +103,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>語言支援
-Intune 在 Azure 入口網站執行，並支援下列語言：簡體中文、繁體中文、捷克文、荷蘭文、英文、德文、匈牙利文、義大利文、日文、葡萄牙文 (巴西)、葡萄牙文 (葡萄牙)、俄文、西班牙文、英文、法文、韓文、波蘭文、瑞典文、土耳其文。
+Intune 會在支援下列語言的 Azure 入口網站中執行：簡體中文、繁體中文、捷克文、荷蘭文、英文、德文、匈牙利文、義大利文、日文、葡萄牙文 (巴西)、葡萄牙文 (葡萄牙)、俄文、西班牙文、英文、法文、韓文、波蘭文、瑞典文、土耳其文。
 
 Intune 管理主控台和使用者導向的行動體驗支援丹麥文、希臘文、芬蘭文、挪威文和羅馬尼亞文，以及 Azure 入口網站支援的所有語言。
 

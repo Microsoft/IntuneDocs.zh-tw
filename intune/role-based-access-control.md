@@ -1,14 +1,15 @@
 ---
-title: RBAC 搭配 Microsoft Intune
-description: 了解角色型存取控制 (RBAC) 如何讓您控制誰可以執行動作，並在 Microsoft Intune 中進行變更。
+title: 使用 Microsoft Intune 的角色型存取控制 (RBAC)
+description: 了解 RBAC 如何在 Microsoft Intune 中讓您控制誰可以執行動作及變更。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
@@ -16,129 +17,84 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507302"
 ---
-# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune
+# <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
-RBAC 可協助您控制誰可以在組織內執行各種 Intune 工作，以及這些工作適用於誰。 您可以利用涵蓋一些常見 Intune 案例的內建角色，或建立自己的角色。 角色的定義包括︰
+角色型存取控制 (RBAC) 可協助您管理誰可以存取貴組織的資源，以及他們可以使用這些資源執行的動作。  藉由[指派角色](assign-role.md)給您的 Intune 使用者，您可以限制他們能夠看到和變更的內容。 每個角色都有一組權限，用來決定具有該角色之使用者可在組織內存取及變更的內容。
 
-- **角色定義**：角色的名稱、其所管理的資源，以及針對每個資源授與的權限。
-- **成員**：獲授與權限的使用者群組。
-- **範圍 (群組)**：成員可以管理的使用者或裝置群組。
-- **[範圍 (標籤)](https://docs.microsoft.com/intune/scope-tags)**：套用角色指派的標記。
-- **指派**：當定義、成員及範圍設定完成之後，即已指派角色。
+若要建立、編輯或指派角色，您的帳戶必須具備下列其中一項 Azure AD 權限︰
+- **全域管理員**
+- **Intune 服務管理員** (也稱為**Intune 系統管理員**)
 
-![Intune RBAC 範例](./media/intune-rbac-1.PNG)
+## <a name="roles"></a>角色
+角色可定義一組權限，這些權限會授與給獲指派該角色的使用者。
+您可以同時使用內建角色和自訂角色。 內建角色涵蓋一些常見的 Intune 案例。 您可以使用所需的一組確切權限[建立自己的自訂角色](create-custom-role.md)。 有數個 Azure Active Directory 角色具備 Intune 的權限。
+若要查看角色，請選擇 [Intune] > [角色] > [所有角色] > 選擇角色。 您會看到下列頁面：
 
-從新的 Azure 入口網站開始，**Azure Active Directory (Azure AD)** 提供兩個可與 Intune 搭配使用的目錄角色。 這些角色會獲得完整的權限，以在 Intune 中執行所有活動：
+-   **屬性**：角色的名稱、描述、類型、指派和範圍標籤。 
+-   **權限**：列出定義角色具有哪些權限的完整切換集。
+-   **指派**：定義哪些使用者可以存取哪些使用者/裝置的[角色指派]( assign-role.md)清單。 一個角色可以有多個指派，而一個使用者可以位於多個指派中。
 
-- **全域管理員：** 具有此角色的使用者可存取 Azure AD 中及與 Azure AD 同盟之服務 (例如 Exchange Online、SharePoint Online 及商務用 Skype Online) 中的所有管理功能。 註冊 Azure AD 租用戶的人員會變成全域管理員。 只有全域管理員可以指派其他 Azure AD 系統管理員角色。 您的組織可以擁有多個全域管理員。 全域管理員可為任何使用者及其他所有系統管理員重設密碼。
-
-- **Intune 服務管理員：** 具有此角色的使用者在 Intune 服務存在時，於此服務內具有全域權限。 此外，除任何取代 Azure 限制以外，此角色提供管理使用者、裝置的能力，並且建立和管理 Intune 群組。
-
-- **條件式存取系統管理員：** 具有此角色的使用者只具備檢視、建立、修改及刪除條件式存取原則的權限。
-
-    > [!IMPORTANT]
-    > Intune 服務管理員角色不提供管理 Azure AD 條件式存取設定的能力。
-    > 使用者必須具備 Intune 授權，才能獲指派 Intune 角色。
-
-    > [!TIP]
-    > Intune 也會顯示三個 Azure AD 延伸模組：[使用者]、[群組]及 [條件式存取]，這些是使用 Azure AD RBAC 來控制的延伸模組。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資訊，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
-
-## <a name="roles-created-in-the-intune-classic-portal"></a>在 Intune 傳統入口網站中建立的角色
-
-只有具有「完整」權限的 Intune「服務管理員」使用者可從 Intune 傳統入口網站移轉至 Azure 入口網站上的 Intune。 您必須將具有「唯讀」或「技術服務人員」存取權的 Intune **服務管理員**使用者重新指派給 Azure 入口網站中的 Intune 角色，並將它們傳統入口網站中移除。
-
-> [!IMPORTANT]
-> 如果您的系統管理員仍需要一個能使用 Intune 來管理電腦的存取途徑，則您可能需要在傳統入口網站中保留「Intune 服務管理員」存取權。
-
-## <a name="built-in-roles"></a>內建角色
-
-您可以將內建角色指派給群組，而無須進行進一步的設定。 您無法刪除或編輯內建角色。
+### <a name="built-in-roles"></a>內建角色
+您可以將內建角色指派給群組，而無須進行進一步的設定。 您無法刪除或編輯內建角色的名稱、描述、類型或權限。 如需每個內建角色權限的完整清單，請參閱 [Intune RBAC 資料表]((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)。
 
 - **技術服務人員**：對使用者和裝置執行遠端工作，並可將應用程式或原則指派給使用者或裝置。
-- **Apple 設定檔管理員**：管理合規性原則、組態設定檔、Apple 註冊和公司裝置識別碼。
+- **Apple 設定檔管理員**：管理相容性原則、組態設定檔、Apple 註冊、公司裝置識別碼，以及安全性基準。
 - **唯讀操作員**：檢視使用者、裝置、註冊、設定和應用程式資訊。 無法對 Intune 進行變更。
 - **應用程式管理員**：管理行動及受控應用程式、可以讀取裝置資訊，並可檢視裝置組態設定檔。
 - **Intune 角色管理員**：管理自訂的 Intune 角色，以及為內建的 Intune 角色新增指派。 這是唯一可為系統管理員指派權限的 Intune 角色。
-- **學校管理員**：管理 [Intune 教育版](introduction-intune-education.md)的 Windows 10 裝置，並可以採取下列動作： 
+- **學校管理員**：管理 [Intune 教育版](introduction-intune-education.md)中的 Windows 10 裝置。
 
-    |權限|操作|
-    |---|---|
-    |稽核資料|讀取|
-    |DeviceConfigurations|指派、建立、刪除、讀取、更新|
-    |裝置註冊管理員|讀取、更新|
-    |受控裝置|讀取、更新<!--, Delete [To be added in 1803]-->|
-    |行動裝置應用程式|指派、建立、刪除、讀取、更新|
-    |報告|讀取|
-    |遠端動作|清除電腦、重新開機、遠端鎖定、淘汰、同步處理裝置、抹除|
-    |組織|讀取|
+### <a name="custom-roles"></a>自訂角色
+您可以使用自訂權限來建立自己的角色。 如需自訂角色的詳細資訊，請參閱[建立自訂角色](create-custom-role.md)。
 
-### <a name="to-assign-a-built-in-role"></a>指派內建角色
+### <a name="azure-active-directory-roles-with-intune-access"></a>具有 Intune 存取權的 Azure Active Directory 角色
+| Azure Active Directory 角色 | 所有 Intune 資料 | Intune 稽核資料 |
+| --- | :---: | :---: |
+| 全域管理員 | 讀取/寫入 | 讀取/寫入 |
+| Intune 服務管理員 | 讀取/寫入 | 讀取/寫入 |
+| 條件式存取管理員 | 無 | 無 |
+| 安全性系統管理員 | 唯讀 | 唯讀 |
+| 安全性操作員 | 唯讀 | 唯讀 |
+| 安全性讀取者 | 唯讀 | 唯讀 |
+| 合規性管理員 | 無 | 唯讀 |
+| 相容性資料管理員 | 無 | 唯讀 |
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 刀鋒視窗上，選擇 [角色] > [所有角色]。
-4. 在 [Intune 角色 - 所有角色] 刀鋒視窗上，選擇您想要指派的內建角色。
-
-5. 在 [<*角色名稱*> - 概觀] 刀鋒視窗上，選擇 [管理] > [指派]。
-
-6. 在自訂角色刀鋒視窗中，選擇 [指派]。
-
-7. 在 [角色指派] 刀鋒視窗上，針對該指派輸入 [指派名稱] 及選擇性的 [指派描述]。
-
-8. 針對 [成員 (群組)]，選擇包含您要授與權限之使用者的群組。
-
-9. 針對 [範圍 (群組)]，選擇包含上述成員將可管理之使用者的群組。
-
-10. 針對 [範圍 (標籤)]，選擇將套用此角色指派的標籤。
-
-11. 完成後，選擇 [確定]。 新指派會隨即顯示在指派清單中。
-
-### <a name="intune-rbac-table"></a>Intune RBAC 表格
-
-- 下載 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可查看每個角色可以執行之工作的更多詳細資料。
-
-## <a name="custom-roles"></a>自訂角色
-
-您可以建立自訂角色，其中包含特定工作功能所需的任何權限。 例如，如果 IT 部門群組管理應用程式、原則和組態設定檔，您可以將這裡的所有權限一起新增至一個自訂角色。
-
+> [!TIP]
+> Intune 也會顯示三個 Azure AD 延伸模組：[使用者]、[群組]及 [條件式存取]，這些是使用 Azure AD RBAC 來控制的延伸模組。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資訊，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+### <a name="roles-created-in-the-intune-classic-portal"></a>在 Intune 傳統入口網站中建立的角色
+只有具有「完整」權限的 Intune「服務管理員」使用者可從 Intune 傳統入口網站移轉至 Azure 入口網站上的 Intune。 您必須將具有「唯讀」或「技術服務人員」存取權的 Intune **服務管理員**使用者重新指派給 Azure 入口網站中的 Intune 角色，並將它們傳統入口網站中移除。
 > [!IMPORTANT]
-> 若要建立、編輯或指派角色，您的帳戶必須具備下列其中一個 Azure AD 權限︰
-> - **全域管理員**
-> - **Intune 服務管理員**
+> 如果您的系統管理員仍需要一個能使用 Intune 來管理電腦的存取途徑，則您可能需要在傳統入口網站中保留「Intune 服務管理員」存取權。
 
-### <a name="to-create-a-custom-role"></a>建立自訂角色
+## <a name="role-assignments"></a>角色指派
+角色指派定義：
 
-1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)。
+- 哪些使用者指派給角色
+- 他們可以看到哪些資源
+- 他們可以變更哪些資源。
 
-2. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
+您可以將自訂角色和內建角色指派給您的使用者。 使用者必須具備 Intune 授權，才能獲指派 Intune 角色。
+若要查看角色指派，請選擇 [Intune] > [角色] > [所有角色] > 選擇角色 > 選擇指派。 您會看到下列頁面：
 
-3. 選擇 [Intune] > [角色] > [所有角色] > [新增]。
+-   **屬性**：指派的名稱、描述、角色、成員、範圍和標籤。
+-   **成員**：已列出群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
+-   **範圍 (群組)**：這些群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
+-   **[範圍 (標籤)](scope-tags.md)**：[成員] 中使用者可以查看具有相同範圍標籤的資源。
 
-4. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。
+### <a name="multiple-role-assignments"></a>多個角色指派
+如果使用者有多個角色指派，則這些角色指派的權限會延伸到不同物件，如下所示：
 
-5. 在 [權限] 刀鋒視窗中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
-
-6. 在 [範圍 (標籤)] 刀鋒視窗上，選擇將套用此自訂角色的標籤。
-
-7. 完成後，選擇 [確定]。
-
-7. 在 [新增自訂角色] 刀鋒視窗中按一下 [建立]。 新角色會顯示在 [Intune 角色 - 所有角色] 刀鋒視窗上的清單中。
-
-### <a name="to-assign-a-custom-role"></a>指派自訂角色
-
-遵循與[指派內建角色](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role)相同的步驟，並選取自訂角色。
+- 指派權限只會套用到該角色指派 [範圍 (群組)] 中的物件 (例如原則或應用程式)。 指派權限不會套用到其他角色指派中的物件，除非其他指派明確地授與這些權限。
+- 其他權限 (例如建立和讀取)，會套用到任何使用者指派中類型相同的所有物件 (例如所有原則或所有應用程式)。
+- 不同類型物件 (例如原則或應用程式) 的權限不會彼此套用。 例如，原則之讀取權限不會為使用者指派中的應用程式提供讀取權限。
 
 ## <a name="next-steps"></a>後續步驟
-
-[使用 Intune 技術服務人員角色搭配疑難排解入口網站](help-desk-operators.md)
-
-## <a name="see-also"></a>請參閱
-
-[使用 Azure AD 指派角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [將角色指派給使用者](assign-role.md)
+- [建立自訂角色](create-custom-role.md)

@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490535"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性
 
@@ -109,12 +110,12 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 2. 選取 [裝置合規性] > [原則] > [建立原則]。
 3. 輸入 [名稱] 和 [描述]。
 4. 在 [平台] 中，選取 [Windows 10 及更新版本]。
-5. 在 [Windows Defender ATP] 設定中，將 [要求裝置不高於電腦風險分數] 設定為您偏好的層級：
+5. 在 [Windows Defender ATP] 設定中，將 [要求裝置不高於電腦風險分數] 設定為您偏好的層級。 威脅層級分類[取決於 Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
 
-  - **清除**：這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
-  - **低**：裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅層級的裝置，將會不符合規範。
-  - **中**：如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
-  - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置，都會被評估為符合規範。
+   - **清除**：這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。 (Windows Defender ATP 使用值「安全」。)
+   - **低**︰裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅層級的裝置，將會不符合規範。
+   - **中**：如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
+   - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置，都會被評估為符合規範。
 
 6. 選取 [確定]，然後選取 [建立] 以儲存您的變更 (並建立原則)。
 
@@ -126,10 +127,13 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 4. 包含或排除您的 Azure AD 群組，以將原則指派給它們。
 5. 若要將原則部署到群組中，請選取 [儲存]。 系統將會對原則的目標使用者裝置進行合規性評估。
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>建立 Azure AD 條件式存取原則
-*如果*裝置不符合規範，條件式存取原則會封鎖對資源的存取。 因此，如果裝置超過威脅層級，您可以封鎖該裝置對公司資源的存取，例如 SharePoint 或 Exchange Online。
+## <a name="create-a-conditional-access-policy"></a>建立條件式存取原則
+*如果*裝置不符合規範，條件式存取原則會封鎖對資源的存取。 因此，如果裝置超過威脅層級，您可以封鎖該裝置對公司資源的存取，例如 SharePoint 或 Exchange Online。  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Azure Active Directory] > [條件式存取] > [新增原則]。
+> [!TIP]  
+> 條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
+
+1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Intune] > [條件式存取] > [新增原則]。
 2. 輸入原則 [名稱]，然後選取 [使用者和群組]。 使用 [包含] 或 [排除] 選項來針對原則新增群組，並選取 [完成]。
 3. 選取 [雲端應用程式]，然後選擇要保護哪些應用程式。 例如，選擇 [選取應用程式]，然後選取 [Office 365 SharePoint Online] 和 [Office 365 Exchange Online]。
 

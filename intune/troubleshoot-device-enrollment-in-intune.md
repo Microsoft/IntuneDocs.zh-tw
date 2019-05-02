@@ -1,32 +1,34 @@
 ---
 title: 裝置註冊疑難排解
-description: 裝置註冊問題的疑難排解建議。
+titleSuffix: Microsoft Intune
+description: 針對 Microsoft Intune 中裝置註冊問題進行疑難排解的建議。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509147"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune 的裝置註冊疑難排解
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
-本文提供裝置註冊問題的疑難排解建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](get-support.md)，以尋找更多方法來取得協助。
+本文提供針對[裝置註冊](device-enrollment.md)問題進行疑難排解的建議。 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](get-support.md)，以尋找更多方法來取得協助。
 
 
 ## <a name="initial-troubleshooting-steps"></a>初始疑難排解步驟
@@ -100,7 +102,7 @@ ms.locfileid: "57238671"
 
 1.  確認已經[正確地設定](mdm-authority-set.md) MDM 授權單位。
     
-2.  確認使用者的認證已正確地與 Azure Active Directory 同步。 您可以確認使用者的 UPN 是否符合 Office 365 入口網站中的 Active Directory 資訊。
+2.  確認使用者的認證已正確地與 Azure Active Directory 同步。 您可以確認使用者的 UPN 是否符合 Microsoft 365 系統管理中心內的 Active Directory 資訊。
     如果 UPN 與 Active Directory 資訊不符：
 
     1.  關閉本機伺服器上的 DirSync。
@@ -131,7 +133,7 @@ ms.locfileid: "57238671"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
 **問題**您無法建立原則或註冊裝置。
 
-**解決方法：** 在 [Office 365 系統管理中心](https://portal.office.com/)中，移除公司名稱的特殊字元並儲存公司資訊。
+**解決方法：** 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)內，移除公司名稱中的特殊字元並儲存公司資訊。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>當您有多個已驗證的網域時，無法登入或註冊裝置
 **問題**當您將第二個已驗證的網域新增至您的 ADFS 時，可能會發生這個問題。 擁有第二個網域使用者主體名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
@@ -225,7 +227,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法 1**：
 
-使用者可能可以遵循[您的裝置遺漏必要的憑證](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)中的指示來擷取遺漏的憑證。 如果仍然發生錯誤，請嘗試＜解決方法 2＞。
+使用者可能可以遵循[您的裝置遺漏必要的憑證](/intune-user-help/your-device-is-missing-a-required-certificate-android)中的指示來擷取遺漏的憑證。 如果仍然發生錯誤，請嘗試＜解決方法 2＞。
 
 **解決方法 2**：
 
@@ -492,7 +494,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |0x80043008、0x80CF3008|無法啟動 Microsoft Online Management Updates 服務。|連絡 Microsoft 支援服務 (如[如何取得 Microsoft Intune 支援](get-support.md)所述)。|
 |0x80043009、0x80CF3009|用戶端電腦已註冊到服務中。|您必須先淘汰用戶端電腦，才能重新將它註冊到服務中。|
 |0x8004300B、0x80CF300B|用戶端軟體安裝套件無法執行，因為不支援用戶端上執行的 Windows 版本。|Intune 不支援用戶端電腦上執行的 Windows 版本。|
-|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 進行 DLL 的疑難排解時，可能必須使用 [Microsoft 技術支援 KB198038：實用的封裝與部署工具](https://support.microsoft.com/kb/198038)中所描述的工具。|
+|0xAB2|Windows Installer 無法存取自訂動作的 VBScript 執行階段。|這個錯誤是由以動態連結程式庫 (DLL) 為基礎的自訂動作所造成。 進行 DLL 的疑難排解時，可能必須使用 [Microsoft 技術支援 KB198038：封裝與部署問題的實用工具](https://support.microsoft.com/kb/198038)中所描述工具。|
 |0x80cf0440|與服務端點的連線已終止。|試用或付費帳戶已暫止。 建立新的試用或付費帳戶，然後重新註冊。|
 
 

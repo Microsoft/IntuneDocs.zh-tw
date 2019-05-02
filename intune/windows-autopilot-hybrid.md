@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515456"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
@@ -36,6 +37,7 @@ ms.locfileid: "57238178"
 - 可存取網際網路。
 - 可存取您的 Active Directory (不支援 VPN 連線)。
 - 完成全新體驗 (OOBE)。
+- 能夠 ping 您嘗試加入之網域的網域控制站。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>設定 Windows 10 自動註冊
 
@@ -119,7 +121,7 @@ ms.locfileid: "57238178"
 
 ### <a name="configure-web-proxy-settings"></a>設定 Web Proxy 設定
 
-如果在您的網路環境中有 Web Proxy，請參閱[使用現有的內部部署 Proxy 伺服器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)，確認適用於 Active Directory 的 Intune 連接器正常運作。
+如果在您的網路環境中有 Web Proxy，請參閱[使用現有的內部部署 Proxy 伺服器](autopilot-hybrid-connector-proxy.md)，確認適用於 Active Directory 的 Intune 連接器正常運作。
 
 
 ## <a name="create-a-device-group"></a>建立裝置群組
@@ -210,6 +212,9 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 1. 選取 [確定] > [建立]。  
     設定檔隨即建立，並顯示在清單中。
 1. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟。 
+
+> [!NOTE]
+> 適用於混合式 Azure AD Join 的 Windows Autopilot 命名功能不支援 %SERIAL% 等變數，僅支援電腦名稱的前置詞。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490417"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
 
@@ -82,6 +84,8 @@ ms.locfileid: "53734233"
 -  最低應用程式版本
 -  最低修補程式版本
 -  裝置製造商
+-  SafetyNet 裝置證明
+-  對應用程式進行威脅掃描
 
 若要使用 [裝置製造商] 設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
 範例輸入：*製造商 A;製造商 B* 
@@ -114,7 +118,7 @@ ms.locfileid: "53734233"
 
 進行完整設定之後，資料列就會顯示在唯讀檢視中，而且可以隨時加以編輯。 此外，該資料列在 [設定] 資料行中似乎有可供選擇的下拉式清單。 已設定但不允許多個動作的設定將無法在下拉式清單中選取。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 了解 Intune 應用程式防護原則的詳細資訊，請參閱：
 - [如何建立及部署應用程式保護原則](app-protection-policies.md)

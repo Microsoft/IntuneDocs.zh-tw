@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 180a4cad27082105aa41c2bd79e6f9c05a65d162
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490643"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中建立 Windows 10 安全性基準
 
@@ -46,6 +47,10 @@ ms.locfileid: "57238603"
 本文示範如何使用安全性基準來建立設定檔、指派設定檔，以及監視設定檔。
 
 [Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) \(部分機器翻譯\) 是深入了解此功能的絕佳資源。 [行動裝置管理](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) \(英文\) 是關於 MDM 以及您如何在 Windows 裝置上加以運用的絕佳資源。
+
+## <a name="prerequisites"></a>必要條件
+若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
+
 
 ## <a name="co-managed-devices"></a>共同管理的裝置
 
@@ -107,7 +112,7 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
 Microsoft 安全性小組擁有多年直接與 Windows 開發人員和安全性社群合作的體驗，從而提供了這些建議。 此基準中的設定均被視為最相關的安全性相關設定選項。 在每個新的 Windows 組建中，該小組都會根據新發行的功能來調整建議。
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>對於群組原則與 Intune 之 Windows 安全性基準的建議有任何差異嗎Intune 管理？
+#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>對於群組原則與 Intune 之 Windows 安全性基準的建議有任何差異嗎Intune？
 
 同一個 Microsoft 安全性小組已選擇並組織了每個基準的設定。 Intune 包含 Intune 安全性基準中的所有相關設定。 群組原則基準中有一些設定是內部部署網域控制站特有的。 這些設定都會從 Intune 的建議中排除。 所有的其他設定都一樣。
 

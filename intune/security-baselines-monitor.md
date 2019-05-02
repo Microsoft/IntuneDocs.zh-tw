@@ -1,71 +1,85 @@
 ---
 title: 在 Microsoft Intune 中檢查安全性基準的成功或失敗狀態 - Azure | Microsoft Docs
-description: 在 Microsoft Intune MDM 中，於將安全性基準部署至使用者和裝置時，檢查錯誤、衝突及成功狀態。 了解如何使用用戶端記錄和 Intune 中的報告功能來進行疑難排解。
+description: 在 Microsoft Intune MDM 中，將安全性基準部署至使用者和裝置時，檢查錯誤、衝突及成功狀態。 了解如何使用用戶端記錄和 Intune 中的報告功能來進行疑難排解。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506984"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔  
 
-使用安全性基準時，有各種不同的監視選項。 您可以監視適用於您使用者和裝置的安全性基準設定檔。 您也可以監視實際的基準，以及任何符合 (或不符合) 建議值的裝置。
+Intune 提供數個用來監視安全性基準的選項。 您可以監視適用於您使用者和裝置的安全性基準設定檔。 您也可以監視實際的基準，以及任何符合 (或不符合) 建議值的裝置。
 
 本文將逐步引導您進行這兩種監視選項。
 
 [Intune 中的安全性基準](security-baselines.md)提供有關 Microsoft Intune 安全性基準功能的更多詳細資料。
 
-## <a name="monitor-the-baseline-and-your-devices"></a>監視基準和您的裝置
+## <a name="monitor-the-baseline-and-your-devices"></a>監視基準和您的裝置  
 
-當您監視基準時，會根據 Microsoft 的建議獲得您裝置安全性狀態的深入解析。
+當您監視基準時，會根據 Microsoft 建議獲得您裝置安全性狀態的見解。 您可在 Intune 主控台中從安全性基準的 [概觀] 窗格內檢視這些見解。  在您第一次指派基準之後，最長需要 24 小時的時間才會顯示資料。 後續變更最長需要六個小時的時間才會出現。  
 
-> [!NOTE]
-> 在第一次指派基準之後，可能最多需要 24 小時來更新報告。 之後，可能最多需要 6 小時來更新報告。
+若要檢視基準和裝置的監視資料，請登入 [Intune 入口網站](https://aka.ms/intuneportal)。 接下來，選取 [安全性基準 (預覽)]，選取某個基準，然後檢視 [概觀] 窗格。
 
-1. 在 [Azure 入口網站](https://portal.azure.com/)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-2. 選取 [安全性基準 (預覽)] > 選取一個基準。
-3. 在 [概觀] 中，圖表會顯示有多少裝置受到您選擇的基準影響，以及各種不同狀態：
+[概觀] 窗格提供兩種方法來監視狀態：
+- **裝置檢視** - 基準的每一個狀態類別中有多少部裝置的摘要。  
+- **每個類別** - 此檢視顯示基準中的每個類別，並包含每個基準類別之每個狀態群組的裝置百分比。 
 
-    ![檢查裝置的狀態](./media/security-baselines-monitor/overview.png)
+每部裝置都下列列其中一個狀態表示，而這些狀態同時用於「裝置」檢視和「每個類別」檢視：  
+- **符合基準** - 基準中的所有設定都與所建議設定相符。
+- **不符合基準** - 基準中至少有一個設定與所建議設定不符。
+- **設定錯誤** - 至少有一個設定未正確設定。 此狀態意謂著設定處於衝突、錯誤或擱置狀態。
+- **不適用** - 至少有一個設定不適用，且不會套用。
 
-    可用的狀態如下：
 
-    - **符合基準**：基準中的所有設定都與建議的設定相符。
-    - **不符合基準**：基準中至少有一個設定與建議的設定不符。
-    - **設定錯誤**：至少有一個設定未正確設定。 此狀態意謂著設定處於衝突、錯誤或擱置狀態。
-    - **不適用**：至少有一個設定不適用，而不會套用。
+### <a name="device-view"></a>裝置檢視
+[概觀] 窗格會顯示多少部裝置具有基準特定狀態的圖表式摘要；**已指派 Windows 10 裝置的安全性基準狀態**。  
 
-4. 選取其中一個有裝置的狀態。 例如，選取 [設定錯誤] 狀態。
+![檢查裝置的狀態](./media/security-baselines-monitor/overview.png)
 
-5. 隨即會顯示具有該狀態的所有裝置清單。 請選取特定的裝置以取得更多詳細資料。 
+當裝置具有基準中來自不同類別的不同狀態時，該裝置會以單一狀態表示。 代表裝置的狀態是取自下列優先順序：[設定錯誤]、[不符合基準]、[不適用]、[符合基準]。  
 
-    在以下範例中，選取 [裝置設定] > 選取具有 [錯誤] 狀態的設定檔：
+例如，如果裝置具有分類為 [設定錯誤] 的設定，和一或多個分類為 [不符合基準] 的設定，則裝置會分類為 [設定錯誤]。  
 
-    ![檢查裝置的狀態](./media/security-baselines-monitor/device-configuration-profile-list.png)
+您可以按一下圖表，以鑽研及檢視具有各種狀態的裝置清單。 您接著可以從該清單選取個別裝置，以檢視有關個別裝置的詳細資料。 例如：
+- 選取 [裝置設定] > 選取具有 [錯誤] 狀態的設定檔：
 
-    選取 [錯誤] 設定檔。 隨即會顯示該設定檔中的所有設定及其狀態。 現在，您可以捲動來尋找造成錯誤的設定：
+  ![檢查裝置的狀態](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![查看造成錯誤的設定](./media/security-baselines-monitor/profile-with-error-status.png)
+- 選取 [錯誤] 設定檔。 隨即會顯示該設定檔中的所有設定及其狀態。 現在，您可以捲動來尋找造成錯誤的設定：
+
+  ![查看造成錯誤的設定](./media/security-baselines-monitor/profile-with-error-status.png)
 
 請使用此報告功能來查看設定檔中造成問題的所有設定。 此外，也取得已部署至裝置之原則和設定檔的更多詳細資料。
 
 > [!NOTE]
 > 當屬性在基準中設定為 [未設定] 時，系統會忽略該設定，而不會強制執行任何限制。 該屬性不會顯示在任何報告功能中。
+
+### <a name="per-category-view"></a>每個類別檢視
+[概觀] 窗格會顯示基準的每個類別圖表；**依類別排序的安全性基準狀態**。  此檢視會顯示基準中的每個類別，並識別落入每個類別狀態分類的裝置百分比。 
+ 
+![狀態的每個類別檢視](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+在 100% 的裝置針對類別報告 [符合基準] 狀態之後，才會顯示該狀態。   
+
+您可以依每個資料行排序依類別檢視，方法是選取資料行頂端的上下箭號圖示。  
+
 
 ## <a name="monitor-the-profile"></a>監視設定檔
 

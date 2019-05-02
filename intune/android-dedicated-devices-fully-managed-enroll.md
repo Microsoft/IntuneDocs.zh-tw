@@ -1,15 +1,16 @@
 ---
-title: 在 Intune 中註冊 Android 專用裝置或完全受控裝置
-titlesuffix: Microsoft Intune
-description: 了解如何在 Intune 中註冊 Android 企業專用裝置或完全受控裝置。
+title: 在 Intune 中註冊 Android Enterprise 專用裝置或完全受控裝置
+titleSuffix: Microsoft Intune
+description: 了解如何在 Intune 中註冊 Android Enterprise 專用裝置或完全受控裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503868"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>註冊 Android 專用裝置或完全受控裝置 (預覽)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>註冊 Android Enterprise 專用裝置或完全受控裝置 (預覽)
 
-在 Intune 中設定 [Android 專用裝置](android-kiosk-enroll.md)或[完全受控裝置](android-fully-managed-enroll.md)後，即可註冊裝置。 註冊 Android 裝置的方式需視作業系統而定。
+在 Intune 中設定 [Android Enterprise 專用裝置](android-kiosk-enroll.md)或[完全受控裝置](android-fully-managed-enroll.md)後，即可註冊裝置。 註冊 Android Enterprise 裝置的方式需視作業系統而定。
 
 | 註冊方法 | 專用且完全受控裝置的最低 Android OS 版本 |
 | ----- | ----- |

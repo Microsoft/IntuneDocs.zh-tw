@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510141"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 的已註冊裝置管理功能
 
@@ -30,7 +31,7 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 本文會完整列出您裝置註冊後所取得的功能。
 
-管理、清查、應用程式部署、佈建及淘汰皆透過 Intune 入口網站處理。
+管理、清查、應用程式部署、佈建及淘汰皆透過 Azure 入口網站中的 Intune 處理。
 
 使用者取得公司入口網站的存取權，以安裝應用程式、註冊及移除裝置，以及連絡其 IT 部門或技術服務人員。
 
@@ -42,7 +43,7 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |--------------|-----------|--------------------|
 |設定原則<br><br>自訂原則| 可讓您管理組織中行動裝置上的許多設定及功能。 例如，您可以要求密碼、限制嘗試失敗次數、限制螢幕鎖定之前的時間、設定密碼到期，以及禁止先前用過的密碼。 您也可以控制使用的硬體和軟體功能，例如裝置相機或網頁瀏覽器。<br><br>當設定原則未包含您需要的設定時，請使用自訂原則。 針對 iOS 裝置，您可以匯入您從 Apple 設定程式工具匯出的設定。 針對其他裝置，您可以使用開放行動聯盟的統一資源識別項 (OMA URI) 設定來設定裝置上的設定與功能。|[使用 Microsoft Intune 原則管理裝置的設定及功能](device-compliance-get-started.md)|
 |遠端抹除、遠端鎖定和密碼重設|當裝置遺失或遭竊時，可以清除機密資料。 例如，您可以遠端鎖定裝置、將它還原為原廠設定，或只抹除公司資料。<br><br>您可以在使用者失去裝置存取權的情況下重設密碼、鎖定遺失或遭竊的裝置，甚至抹除遺失或遭竊裝置上的資料。|透過[遠端鎖定](device-remote-lock.md)及[密碼重設](device-passcode-reset.md)來協助保護您的裝置|
-|資訊站模式|可讓您鎖定行動裝置的某些功能，例如螢幕擷取畫面及電源開關。 也可讓您限制裝置只能執行您指定的單一應用程式。|[Microsoft Intune 的 iOS 設定原則設定](device-restrictions-ios.md)|
+|資訊站模式|可讓您鎖定行動裝置的某些功能，例如螢幕擷取畫面及電源開關。 也可讓您限制裝置只能執行您指定的單一應用程式。 |[Microsoft Intune 的 iOS 設定原則設定](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>應用程式管理
 

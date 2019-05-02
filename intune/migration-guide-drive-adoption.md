@@ -1,26 +1,28 @@
 ---
 title: 使用條件式存取引導使用者採用
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用條件式存取來引導註冊。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 803bcda24b7d6fa1cf923ff28848b8d2b71cf62e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508152"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>在 Microsoft Intune 中使用條件式存取引導終端使用者採用
 
@@ -59,7 +61,7 @@ ms.locfileid: "52183789"
 
 [使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
 
-### <a name="task-2-set-up-intune-conditional-access"></a>工作 2︰設定 Intune 條件式存取
+### <a name="task-2-set-up-intune-conditional-access"></a>工作 2：設定 Intune 條件式存取
 
 選擇下列其中一個選項：
 
@@ -73,6 +75,6 @@ ms.locfileid: "52183789"
 
 -   [封鎖未使用新式驗證 (ADAL) 的應用程式](app-modern-authentication-block.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 了解[典型移轉週期](migration-guide-cycle.md)。

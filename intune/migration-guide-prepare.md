@@ -1,26 +1,28 @@
 ---
 title: 準備 Intune 以用於行動裝置管理
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 請先評估您的商務和技術需求，再移轉至 Microsoft Intune。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 1e21fef5102b22dfe698a9adb73736508452acfe
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508356"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
@@ -75,7 +77,7 @@ ms.locfileid: "52186370"
   <br/><br/>
 - 可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 閱讀這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。
 
 檢閱[基本 Intune 設定](migration-guide-setup.md)。

@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506809"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -62,7 +63,7 @@ Intune MAM 支援兩個組態︰
 
 - 終端使用者必須擁有指派給其 Azure Active Directory 帳戶的 Microsoft Intune 授權。 請參閱[管理 Intune 授權](/intune/licenses-assign)，以了解如何將 Intune 授權指派給終端使用者。
 
-- 終端使用者必須隸屬於由應用程式保護原則設為目標的安全性群組。 相同的應用程式保護原則必須將已使用的特定應用程式設為目標。 應用程式保護原則可在 [Azure 入口網站](https://portal.azure.com)中的 Intune 主控台中建立與部署。 安全群組目前可以在 [Office 入口網站](https://portal.office.com)中建立。
+- 終端使用者必須隸屬於由應用程式保護原則設為目標的安全性群組。 相同的應用程式保護原則必須將已使用的特定應用程式設為目標。 應用程式保護原則可在 [Azure 入口網站](https://portal.azure.com)中的 Intune 主控台中建立與部署。 安全群組目前可在 [Microsoft 365 糸統管理中心](https://admin.microsoft.com)內建立。
 
 - 終端使用者必須使用其 AAD 帳戶來登入應用程式。
 
@@ -77,7 +78,7 @@ Intune MAM 支援兩個組態︰
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 
-- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可以在 [Office 入口網站](https://portal.office.com)中依照下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
+- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內遵循下列[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
 - 終端使用者必須有受控的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受控位置是 OneDrive，則 [OneDrive](https://onedrive.live.com/about/) 應用程式應該在終端使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
 
@@ -170,6 +171,27 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 
 處理不同類型的設定時，應用程式版本需求會優先，然後是 Android 作業系統版本需求和 Android 修補程式版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。
 
+**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置通過 Google 適用於 Android 裝置的 SafetyNet 證明。將新 SafetyNet 證明結果傳送至服務的頻率為何？** <br><br> 新 Google Play 服務判斷將會依照 Intune 服務所決定的間隔報告給 IT 系統管理員。 進行服務呼叫的頻率已由於負載而節流處理，因此這個值會在內部維護，且無法設定。 將會根據條件式啟動時上次回報給 Intune 服務的結果，來採取任何 IT 系統管理員針對 Google SafetyNet 證明設定所設定的動作。 如果沒有任何資料，將會根據沒有其他的條件式啟動檢查失敗來允許存取，而 Google Play 服務用來判斷證明結果的「往返」動作將在後端開始，並在裝置未通過時以非同步方式提示使用者。 如果有過時的資料，將會根據上次回報的結果封鎖或允許存取，同樣地，Google Play 服務用來判斷證明結果的「往返」動作將會開始，並在裝置未通過時以非同步方式提示使用者。
+
+**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置透過 Google 適用於 Android 裝置的 Verify Apps API 傳送訊號。終端使用者如何開啟應用程式掃描，讓它們不會因此而被封鎖存取？**<br><br> 有關如何執行這項操作的指示會因裝置而稍有差異。 一般程序包含前往 Google Play 商店，然後按一下 [我的應用程式與遊戲]，再按一下上次應用程式掃描結果，其會將您引導至「Play 安全防護」功能表。 確定 [掃描裝置中的安全性威脅] 的切換開關已切換為開啟。
+
+**Google 的 SafetyNet Attestation API 實際上會在 Android 裝置上檢查什麼項目？[檢查基本完整性] 與 [檢查基本完整性與經過認證的裝置] 的可設定值之間有何差異？** <br><br>
+Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解偵測檢查中新增對已取消註冊裝置的檢查。 如果不想在 Root 破解的裝置上執行其應用程式，Google 已開發和維護這個 API 集合供 Android 應用程式採用。 例如，Android Pay 應用程式已併入此集合。 雖然 Google 不會公開共用所發生 Root 破解偵測檢查的全部內容，但我們預期這些 API 會偵測到其裝置遭到 Root 破解的使用者。 接著可防止這些使用者存取，或從其啟用原則的應用程式抹除其公司帳戶。 [檢查基本完整性] 會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [檢查基本完整性與經認證的裝置] 會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 將會失敗的裝置包括下列各項：
+* 無法通過基本完整性的裝置
+* 其開機載入器已解除鎖定的裝置
+* 具有自訂系統映像/ROM 的裝置
+* 製造商未為其申請或通過 Google 認證的裝置 
+* 直接從 Android Open Source Program 來源檔案建置系統映像的裝置
+* 具有搶鮮版 (Beta)/開發人員預覽系統映像的裝置
+
+如需技術詳細資料，請參閱 [Google 有關 SafetyNet 證明的文件](https://developer.android.com/training/safetynet/attestation)。
+
+**為 Android 裝置建立 Intune 應用程式防護原則時，[條件式啟動] 區段中有兩個類似的檢查。我應該需要 [SafetyNet 裝置證明] 設定或 [已越獄/Root 破解的裝置] 設定嗎？** <br><br>
+「Google Play 安全防護」的 SafetyNet API 檢查，需要終端使用者至少在判斷證明結果之「往返」動作執行的時間範圍內已連線。 如果終端使用者已離線，IT 系統管理員還是能夠預期從 [已越獄或 Root 破解的裝置] 設定強制執行結果。 話雖如此，如果終端使用者離線太久，[離線寬限期] 值就會起作用，一旦達到該計時器值，對公司或學校資料的存取便會遭到封鎖，直到可以存取網路為止。 開啟這兩個設定可允許採用分層方式來保持終端使用者裝置的良好狀況，這在終端使用者存取行動裝置上的公司或學校資料時非常重要。 
+
+**利用 Google Play Protect API 的應用程式保護原則設定需要 Google Play Services 正常運作。如果終端使用者所在位置中不允許使用 Google Play Services，該怎麼辦？**<br><br>
+[SafetyNet 裝置證明] 和 [對應用程式進行威脅掃描] 設定，需要 Google 決定的 Google Play Services 版本才能正確運作。 由於這些都是屬於安全性領域的設定，如果終端使用者是這些設定的目標，但不符合適當的 Google Play Services 版本或無法存取 Google Play 服務，則會封鎖這些使用者。 
+
 ## <a name="app-experience-on-ios"></a>iOS 上的應用程式體驗
 **如果我將指紋或臉部新增至我的裝置，或是從中移除，會發生什麼情況？**
 Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使用者。 控制應用程式存取的其中一種方式，就是在支援裝置上要求 Apple 的 Touch ID 或 Face ID。 如果裝置的生物特徵辨識資料庫有任何變更，Intune 會實作一項行為，那就是 Intune 會在達到下次非使用狀態逾時值時，提示使用者輸入 PIN。 對生物特徵辨識資料所做的變更包括新增或移除指紋或臉部。 如果 Intune 使用者未設定 PIN，則會引導他們設定一個 Intune PIN。
@@ -184,20 +206,13 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 
 處理不同類型的設定時，Intune 應用程式 SDK 版本需求會優先，然後是應用程式版本需求，再然後是 iOS 作業系統版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。 我們建議您只針對基本的封鎖情況，在 Intune 產品小組的指導下，設定 Intune App SDK 版本需求。
 
-## <a name="app-protection-policies---policy-refresh"></a>應用程式防護原則 - 原則重新整理
-- 應用程式會每隔 30 分鐘簽入 APP Service。
-- 此 30 分鐘閾值是以計時器為依據。
-    - 如果到了 30 分鐘，應用程式正在作用中，則會在 30 分鐘時簽入。
-    - 如果到了 30 分鐘，應用程式正在睡眠中，則會在下一個焦點時簽入。
-- 如果未指派原則給使用者，簽入會每隔八小時發生。
-- 如果未指派 Intune 授權，簽入會每隔 24 小時發生。
-
 
 ## <a name="see-also"></a>請參閱
 - [實作您的 Intune 計劃](planning-guide-onboarding.md)
 - [Intune 測試與驗證](planning-guide-test-validation.md)
 - [Microsoft Intune 中的 Android 行動應用程式管理原則設定](app-protection-policy-settings-android.md)
 - [iOS 行動應用程式管理原則設定](app-protection-policy-settings-ios.md)
-- [驗證應用程式保護原則](app-protection-policies-validate.md)
+- [應用程式防護原則的原則重新整理](app-protection-policy-delivery.md)
+- [驗證應用程式保護原則](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [在不註冊裝置的情況下新增受控應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)
 - [如何取得 Microsoft Intune 支援](get-support.md)

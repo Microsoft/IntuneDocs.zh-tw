@@ -1,6 +1,6 @@
 ---
 title: 新增群組來組織使用者和裝置
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 依地理位置、部門或硬體特性新增群組來組織使用者和裝置。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e7d45c4f1c990123e310c8910e9b7bd3cf0ce4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514064"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
@@ -39,7 +40,7 @@ Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 �
 3. 在 [Intune] 窗格中，選擇 [群組]，然後在 [所有群組] 窗格中選擇 [新增群組]。
    ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add-new.png)
 4. 針對 [群組類型]，請選擇下列其中一個選項：
-    - **安全性**：安全性群組是擴展使用者群組時可使用的良好資源。 由於安全性群組會定義誰可存取哪些資源，因此安全性群組可適當轉譯為 Intune 使用者群組。 從 Active Directory 同步處理至 Azure Active Directory 的安全性群組，或者透過 Office 365 系統管理中心或 Azure 入口網站直接在 Azure Active Directory 中建立的安全性群組，都可供您用來在 Intune 中建立使用者群組。
+    - **安全性**：安全性群組是擴展使用者群組時可使用的良好資源。 由於安全性群組會定義誰可存取哪些資源，因此安全性群組可適當轉譯為 Intune 使用者群組。 從 Active Directory 同步至 Azure Active Directory 的安全性群組，或透過 Microsoft 365 系統管理中心或 Azure 入口網站直接在 Azure Active Directory 中建立的安全性群組，都可供您用來在 Intune 中建立使用者群組。
     - **Office 365**
 
 5. 請鍵入新群組的 [名稱]及 [描述]。 這些屬性只會出現在管理入口網站，不會向使用者顯示。

@@ -1,27 +1,28 @@
 ---
 title: Intune 測試與驗證
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何在您的環境中測試及驗證 Intune 僅雲端解決方案。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512844"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -43,7 +44,7 @@ ms.locfileid: "57237549"
 
 -   **裝置：** 可以抹除或重設為原廠預設值的測試裝置。
 
--   **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器、適用於託管 Exchange 的 Intune 服務至服務連接器以及 Intune 內部部署 Exchange 連接器)。
+-   **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器及 Intune Exchange 內部部署連接器)。
 
 您可能需要設計變更，以備處理無法預見的問題。 此外，所有的設計變更都應該詳細記錄每項變更的原因。 下例示範可能的變更︰
 

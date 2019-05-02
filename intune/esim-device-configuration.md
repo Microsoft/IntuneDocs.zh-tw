@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513709"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
 
@@ -194,7 +195,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 - 確定您的 csv 檔案格式正確。 確認檔案未包含重複的代碼、多個電信業者或不同的行動數據方案。 請記住，每個檔案必須專屬於電信業者和行動數據方案。
 - 建立靜態裝置 Azure AD 群組，其中只包含目標 eSIM 裝置。
 - 如果部署狀態有問題，請檢查下列項目：
-  - **檔案格式不正確**：請參閱本主題的**步驟 1：新增行動數據啟用代碼** (在本文中) 以了解如何正確格式化您的檔案。
+  - **檔案格式不正確**：請參閱**步驟 1：新增行動數據啟用代碼** (在本文中) 以了解如何正確格式化您的檔案。
   - **行動數據啟用失敗，請連絡電信業者**：啟用代碼可能未在其網路內啟用。 或者，設定檔下載和行動數據啟用失敗。
 
 ## <a name="next-steps"></a>後續步驟

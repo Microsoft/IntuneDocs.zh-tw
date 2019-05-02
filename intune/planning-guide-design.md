@@ -1,15 +1,16 @@
 ---
 title: 建立 Microsoft Intune 設計
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可協助您建立 Microsoft Intune 僅限雲端設計及實作的設計。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512697"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -108,7 +109,11 @@ ms.locfileid: "57238977"
 
 ## <a name="choose-an-intune-deployment-option"></a>選擇 Intune 部署選項
 
-Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則整合 Intune 與 System Center Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則是指整合 Intune 與 System Center Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+
+> [!Important]
+>新混合式 MDM 客戶的上線功能已淘汰。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
+
 
 ## <a name="intune-tenant-location"></a>Intune 租用戶位置
 
@@ -133,7 +138,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服�
 
 -   公開金鑰基礎結構 (PKI)
 
-下面會更詳細地探索這些常見的外部相依性
+我們將在下面更詳細地探索這些常見的外部相依性。
 
 ### <a name="identity"></a>權杖服務 (STS)
 
@@ -399,11 +404,9 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別合規性政策需求。
 #### <a name="conditional-access-policies"></a>條件式存取原則
 
-條件式存取用於僅允許相容裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 您必須決定條件式存取是否必要，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
+條件式存取用於僅允許相容裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 決定您是否需要條件式存取，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 
-為線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange Online 或 Exchange 內部部署安裝或設定 Intune 服務對服務連接器。 深入了解如何安裝及設定 Intune 服務對服務連接器︰<!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+針對線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange 內部部署安裝或設定 Intune 連接器： 
 
 -   [Exchange 內部部署](exchange-connector-install.md)
 

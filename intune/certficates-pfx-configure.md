@@ -1,14 +1,15 @@
 ---
-title: 在 Microsoft Intune 中使用私密和公開金鑰憑證 - Azure | Micrososft Docs
-description: 使用 Microsoft Intune 新增或建立公開金鑰加密標準 (PKCS) 憑證，包括匯出根憑證、設定憑證範本、下載並安裝 Microsoft Intune 憑證連接器 (NDES)、建立裝置組態設定檔、在 Azure 與您的憑證授權單位中建立 PKCS 憑證設定檔等步驟。
+title: 在 Microsoft Intune 中使用私密和公開金鑰憑證 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 新增或建立公開金鑰加密標準 (PKCS) 憑證，包括匯出根憑證、設定憑證範本、下載並安裝 Intune 憑證連接器 (NDES)、建立裝置組態設定檔、以及在 Azure 與您的憑證授權單位中建立 PKCS 憑證設定檔等步驟。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 04/03/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: lacranda
@@ -16,65 +17,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7f7f77914b899b7173b8bfacb82cd0c50c6e7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508535"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
-憑證會驗證並保護您的公司資源存取，例如 VPN 或 Wi-Fi 網路。 使用私密和公開金鑰組的憑證也稱為 PKCS 憑證，這是許多組織所採用的憑證。 Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織資源進行存取和驗證。 這些設定使用 Intune 的裝置組態設定檔來推送 (或部署) 到裝置。
+Intune 支援使用私密和公開金鑰組 (PKCS) 憑證。 本文可協助您設定必要的基礎結構 (例如，內部部署憑證連接器)，匯出 PKCS 憑證，然後將憑證新增至 Intune 裝置組態設定檔。
 
-本文列出使用 PKCS 憑證的需求、示範如何匯出 PKCS 憑證，並將憑證新增至 Intune 裝置組態設定檔。
+Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織資源進行存取和驗證。 憑證會驗證並保護您的公司資源存取，例如 VPN 或 WiFi 網路。 您可以使用 Intune 中的裝置組態設定檔，將這些設定部署到裝置。
+
 
 ## <a name="requirements"></a>需求
 
-若要透過 Intune 使用 PKCS 憑證，您必須具備下列基礎結構：
+若要透過 Intune 使用 PKCS 憑證，您需要下列基礎結構：
 
-- **Active Directory 網域**：本節所列的所有伺服器均須加入 Active Directory 網域。
+- **Active Directory 網域**：  
+  本節所列的所有伺服器均須加入 Active Directory 網域。
 
-  如需安裝和設定 AD DS 的詳細資訊，請參閱 [AD DS 設計與規劃](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning)。
+  如需安裝及設定 Active Directory Domain Services (AD DS) 的詳細資訊，請參閱 [AD DS 設計與規劃](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning)。
 
-- **憑證授權單位** (CA)：企業憑證授權單位 (CA)
+- **憑證授權單位**：  
+   企業憑證授權單位 (CA)。
 
-  如需安裝和設定 Active Directory 憑證服務 (AD CS) 的詳細資訊，請參閱 [Active Directory 憑證服務逐步指南](https://technet.microsoft.com/library/cc772393)。
+  如需安裝及設定 Active Directory 憑證服務 (AD CS) 的資訊，請參閱 [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393) (Active Directory 憑證服務逐步指南)。
 
-  > [!WARNING]
+  > [!WARNING]  
   > Intune 需要您搭配企業憑證授權單位 (CA) 執行 AD CS，而非獨立 CA。
 
-- **用戶端**：連線到企業 CA
+- **用戶端**：  
+  連線到企業 CA。
 
-- **根憑證**：從您企業 CA 匯出的根憑證複本
+- **根憑證**：  
+  從您的企業 CA 匯出的根憑證複本。
 
-- **Microsoft Intune 憑證連接器**：使用 Azure 入口網站來下載**憑證連接器**安裝程式 (**NDESConnectorSetup.exe**)。 
+- **Intune 憑證連接器** (也稱為「NDES 憑證連接器」)：  
+  在 Intune 入口網站中，移至 [裝置設定] > [憑證連接器] > [新增]，並遵循「安裝 PKCS #12 連接器的步驟」。 使用入口網站中的下載連結，開始下載憑證連接器安裝程式 **NDESConnectorSetup.exe**。  
 
-  連接器會處理用於驗證或 S/MIME 電子郵件簽署的 PKCS 憑證要求。
+  此連接器會處理用於驗證或 S/MIME 電子郵件簽署的 PKCS 憑證要求。
 
   NDES 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
-- **適用於 Microsoft Intune 的 PFX 憑證連接器**：如果您計劃使用 S/MIME 電子郵件加密，請使用 Azure 入口網站來下載**適用於 Microsoft Intune 的 PFX 憑證連接器**安裝程式 (**PfxCertificateConnectorBootstrapper.exe**)。 連接器會處理對 Intune 中所匯入之 PFX 檔案的要求，為特定使用者進行 S/MIME 電子郵件加密。
+- **適用於 Microsoft Intune 的 PFX 憑證連接器**：  
+   如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載用於「匯入 PFX 憑證」的連接器。  移至 [裝置設定] > [憑證連接器] > [新增]，並遵循「安裝匯入 PFX 憑證連接器的步驟」。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
 
-- **Windows Server**：裝載：
+  此連接器會處理對 Intune 中所匯入之 PFX 檔案的要求，為特定使用者進行 S/MIME 電子郵件加密。  
 
-  - Microsoft Intune 憑證連接器 (NDESConnectorSetup.exe)，用於驗證和 S/MIME 電子郵件簽署情況
-  - 適用於 Microsoft Intune 的 PFX 憑證連接器 (PfxCertificateConnectorBootstrapper.exe)，用於 S/MIME 電子郵件加密情況。
+  當新版本可供使用時，此連接器會自動自行更新。 若要使用更新功能，您必須：
+  - 在伺服器上安裝適用於 Microsoft Intune 的匯入 PFX 憑證連接器。
+  - 若要自動接收重要更新，請確定防火牆已開啟，可讓連接器在連接埠 **443** 上連絡 **autoupdate.msappproxy.net**。  
 
-  您可以在相同的伺服器上執行這兩種連接器 (**Microsoft Intune 憑證連接器**和**適用於 Microsoft Intune 的 PFX 憑證連接器**)。
+
+- **Windows Server**：  
+  您可以使用 Windows Server 來裝載：
+
+  - Microsoft Intune 憑證連接器，用於驗證和 S/MIME 電子郵件簽署情況
+  - 適用於 Microsoft Intune 的 PFX 憑證連接器，用於 S/MIME 電子郵件加密情況。
+
+  您可在相同的伺服器上安裝這兩種連接器 (「Microsoft Intune 憑證連接器」和「PFX 憑證連接器」)。
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>從企業 CA 匯出根憑證
 
-若要向 VPN、Wi-Fi 和其他資源進行驗證，在每部裝置上都需要根憑證或中繼 CA 憑證。 下列步驟說明如何從您的企業 CA 取得所需的憑證。
+若要向 VPN、WiFi 或其他資源驗證裝置，裝置需要有根憑證或中繼 CA 憑證。 下列步驟說明如何從您的企業 CA 取得所需的憑證。
 
-1. 使用具有系統管理權限的帳戶登入您的企業 CA。
-2. 以系統管理員身分開啟命令提示字元。
-3. 將根 CA 憑證 (.cer) 匯出到您稍後可以加以存取的位置。
-4. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI] 。
+**使用命令列**：  
+1. 使用系統管理員帳戶登入根憑證授權單位伺服器。
+ 
+2. 移至 [開始] > [執行]，然後輸入 **Cmd** 來開啟命令提示字元。 
+    
+3. 指定 **certutil  -ca.cert ca_name.cer**，將根憑證匯出為名為 *ca_name.cer* 的檔案。
 
-   `certutil -ca.cert certnew.cer`
 
-   如需詳細資訊，請參閱[管理憑證的 Certutil 工作](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign)。
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>設定 CA 上的憑證範本
 
@@ -118,14 +134,15 @@ ms.locfileid: "57230035"
 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connec設為 [https]r
 
-> [!IMPORTANT] 
-> Microsoft Intune Certificate Connector **必須**安裝在個別的 Windows 伺服器中。 它不能安裝在發行的授權憑證單位 (CA) 上。
+> [!IMPORTANT]  
+> Microsoft Intune 憑證連接器無法安裝在發行憑證授權單位 (CA) 上，而必須安裝在不同的 Windows 伺服器上。  
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-2. 選取 [裝置設定] > [憑證授權單位] > [新增]。
-3. 下載並儲存連接器檔案。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
+2. 選取 [裝置設定] > [憑證連接器] > [新增]。
+3. 下載連接器檔案，並將其儲存到要安裝連接器之伺服器所能存取的位置。
 
-    ![ConnectorDownload][ConnectorDownload]
+    ![NDES 連接器下載](media/certificates-pfx-configure/download-ndes-connector.png)
+ 
 
 4. 下載完成後，請登入伺服器。 然後：
 
@@ -136,32 +153,31 @@ ms.locfileid: "57230035"
 5. [NDES 連接器] 會開啟 [註冊] 索引標籤。若要連線到 Intune，請**登入**並輸入具有全域系統管理權限的帳戶。
 6. 在 [進階] 索引標籤上，建議保持選取 [使用此電腦的 SYSTEM 帳戶 (預設)]。
 7. [套用] > [關閉]
-8. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
+8. 返回 Intune 入口網站 ([Intune] > [裝置設定] > [憑證連接器])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
 9. 如果在您的網路環境中有 Web Proxy，您可能需要其他設定才能讓連接器運作。 如需詳細資訊，請參閱 Azure Active Directory 文件中的[使用現有的內部部署 Proxy 伺服器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
 
-> [!NOTE]
-> Microsoft Intune 憑證連接器隨附 TLS 1.2 支援。 因此，如果安裝 Microsoft Intune 憑證連接器的伺服器支援 TLS 1.2，則會使用 TLS 1.2。 如果伺服器不支援 TLS 1.2，則會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
+> [!NOTE]  
+> Microsoft Intune 憑證連接器支援 TLS 1.2。 如果裝載連接器的伺服器上安裝了 TLS 1.2，連接器就會使用 TLS 1.2。 否則，會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>適用於 Microsoft Intune 的 PFX 憑證連接器
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [裝置設定] > [憑證授權單位] > [新增]
+2. 選取 [裝置設定] > [憑證連接器] > [新增]
 3. 下載並儲存適用於 Microsoft Intune 的 PFX 憑證連接器。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
 4. 下載完成後，請登入伺服器。 然後：
 
     1. 確定已安裝 .NET 4.6 Framework 或更高版本，這是適用於 Microsoft Intune 之 PFX 憑證連接器的必要項目。 如果未安裝 .NET 4.6 Framework，安裝程式就會自動安裝它。
-    2. 執行安裝程式 (PfxCertificateConnectorBootstrapper.exe)，並接受預設位置。 它會將連接器安裝到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
+    2. 執行安裝程式 (PfxCertificateConnectorBootstrapper.exe)，並接受預設位置，這會將連接器安裝到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
     3. 連接器服務會以本機系統帳戶執行。 如果網際網路存取需要 Proxy，則請確認本機服務帳戶可以存取伺服器上的 Proxy 設定。
 
 5. 適用於 Microsoft Intune 的 PFX 憑證連接器隨即會在安裝之後開啟 [註冊] 索引標籤。 若要啟用 Intune 的連線，請 [登入]，並輸入具有 Azure 全域管理員或 Intune 系統管理員權限的帳戶。
 6. 關閉視窗。
-7. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證授權單位])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
+7. 返回 Azure 入口網站 ([Intune] > [裝置設定] > [憑證連接器])。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態] 為 [使用中]。 連接器伺服器現在可以與 Intune 通訊。
 
 ## <a name="create-a-trusted-certificate-profile"></a>建立受信任的憑證設定檔
 
 1. 在 [Azure 入口網站](https://portal.azure.com)，移至 [Intune] > [裝置設定] > [設定檔] > [建立設定檔]。
-
-   ![NavigateIntune][NavigateIntune]
+    ![巡覽至 Intune 並建立受信任憑證的新設定檔](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. 輸入下列內容：
 
@@ -175,7 +191,7 @@ ms.locfileid: "57230035"
    > [!NOTE]
    > 視您在**步驟 3** 中選擇的平台而定，您可能會有選擇憑證 [目的地存放區] 的選項。
 
-   ![ProfileSettings][ProfileSettings]
+   ![建立設定檔並上傳受信任的憑證](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
 4. 選取 [確定] > [建立] 儲存您的設定檔。
 5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
@@ -228,6 +244,26 @@ ms.locfileid: "57230035"
 
 4. 選取 [確定] > [建立] 儲存您的設定檔。
 5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
+
+## <a name="whats-new-for-connectors"></a>連接器的新功能
+這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。 
+
+「PFX 憑證連接器」[支援自動更新](#requirements)，而 Intune 憑證連接器則以手動方式更新。
+ 
+### <a name="april-2-2019"></a>2019 年 4 月 2 日
+- **NDES 憑證連接器 - 6.1904.1.0 版**  
+  此版本的變更：  
+  - 修正了使用全域系統管理員帳戶登入連接器之後，連接器無法向 Intune 註冊的問題。  
+  - 包含憑證撤銷的可靠性修正。  
+  - 包含效能修正，用來提高處理 PKCS 憑證要求的速度。  
+
+- **PFX 憑證連接器 - 6.1904.0.401 版**
+  > [!NOTE]  
+  > 在 2019 年 4 月 11 日之前，不提供適用於這個 PFX 連接器版本的自動更新。  
+
+  此版本的變更：  
+  - 修正了使用全域系統管理員帳戶登入連接器之後，連接器無法向 Intune 註冊的問題。  
+
 
 ## <a name="next-steps"></a>後續步驟
 

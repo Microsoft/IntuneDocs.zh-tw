@@ -1,27 +1,29 @@
 ---
 title: Intune 上架流程
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可協助您在讓 Microsoft Intune 僅限雲端解決方案於環境中上線時，處理需要考量的所有細節。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513965"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
@@ -58,13 +60,13 @@ ms.locfileid: "52186387"
 
 -   深入了解[如何購買 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)。
 
-### <a name="task-2-add-office-365-subscription"></a>工作 2︰新增 Office 365 訂閱
+### <a name="task-2-add-office-365-subscription"></a>工作 2：新增 Office 365 訂閱
 
 這個參數是選擇性的。 如果您打算使用 Exchange Online，以及使用應用程式保護原則管理 Office 行動應用程式，您需要訂閱 Office 365。 貴組織若未訂閱 Office 365，請連絡 Microsoft 或 Microsoft 帳戶小組洽詢 Office 365 購買事宜。
 
 -   深入了解[如何購買 Office 365](https://products.office.com/business/compare-office-365-for-business-plans)。
 
-### <a name="task-3-add-users-groups-in-azure-ad"></a>工作 3︰在 Azure AD 中新增使用者群組
+### <a name="task-3-add-users-groups-in-azure-ad"></a>工作 3：在 Azure AD 中新增使用者群組
 
 您可能需要根據 Intune 部署使用案例和需求，在 Active Directory 或 Azure Active Directory 中新增使用者或安全性群組。 請檢閱 Active Directory 或 Azure Active Directory 目前的使用者和安全性群組，並判斷其是否完全符合您的需求。 在新增新的使用者和安全性群組時，建議您將它們新增至 Active Directory，使用 Azure AD Connect 與 Azure Active Directory 同步處理。
 
@@ -74,9 +76,9 @@ ms.locfileid: "52186387"
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>工作 4︰指派 Intune 和 Office 365 的使用者授權
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>工作 4：指派 Intune 和 Office 365 的使用者授權
 
-EMS/Intune 和 Office 365 新產品的所有目標使用者，都需要獲指派授權。 您可在 Office 365 系統管理中心入口網站中指派 EMS/Intune 和 Office 365 授權。
+EMS/Intune 和 Office 365 新產品的所有目標使用者，都需要獲指派授權。 您可在 Microsoft 365 系統管理中心指派 EMS/Intune 和 Office 365 授權。
 
 -   深入了解[管理 Intune 授權](licenses-assign.md)。
 
@@ -86,37 +88,37 @@ EMS/Intune 和 Office 365 新產品的所有目標使用者，都需要獲指派
 
 -   深入了解[如何設定裝置管理授權單位](mdm-authority-set.md)。
 
-### <a name="task-6-enable-device-platforms"></a>工作 6︰啟用裝置平台
+### <a name="task-6-enable-device-platforms"></a>工作 6：啟用裝置平台
 
 依預設，除了 Apple 裝置 (iOS 和 Mac) 之外，大部分的裝置平台都會啟用。 您必須先啟用裝置平台，才可以在 Intune 中註冊及管理 iOS 裝置。 若要這樣做，您需要建立 MDM Push Certificate，並將其新增至 Intune。
 
 -   深入了解[如何啟用 Apple 裝置註冊](apple-mdm-push-certificate-get.md)。
 
-### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>工作 7︰新增及部署條款及條件原則
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>工作 7：新增及部署條款及條件原則
 
 Intune 支援條款和條件原則。 適當新增條款及條件原則，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
 -   深入了解 [Microsoft Intune 的條款和條件原則設定](terms-and-conditions-create.md)。
 
-### <a name="task-8-add-and-deploy-configuration-policies"></a>工作 8︰新增及部署設定原則
+### <a name="task-8-add-and-deploy-configuration-policies"></a>工作 8：新增及部署設定原則
 
 Intune 支援兩種類型的設定原則：一般和自訂。 適當新增設定原則，根據您的 Intune 部署使用案例和需求將其部署至目標群組。
 
 -   深入了解[透過 Microsoft Intune 原則管理裝置上的設定和功能](device-profiles.md)。
 
-### <a name="task-9-add-and-deploy-resource-profiles"></a>工作 9︰新增及部署資源設定檔
+### <a name="task-9-add-and-deploy-resource-profiles"></a>工作 9：新增及部署資源設定檔
 
 Intune 支援電子郵件、Wi-Fi 和 VPN 設定檔。 適當新增這些設定檔，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
 -   深入了解[如何使用 Intune 存取公司資源](device-profiles.md)。
 
-### <a name="task-10-add-and-deploy-apps"></a>工作 10：新增及部署應用程式
+### <a name="task-10-add-and-deploy-apps"></a>工作 10：新增和部署應用程式
 
 Intune 支援部署 Web、企業營運和公用市集應用程式。 您也可以建立應用程式與應用程式保護原則的關聯性，來管理已與 Intune SDK 整合的應用程式。 適當新增應用程式，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
 -   深入了解[新增與部署應用程式](app-management.md)。
 
-### <a name="task-11-add-and-deploy-compliance-policies"></a>工作 11：新增及部署相容性原則
+### <a name="task-11-add-and-deploy-compliance-policies"></a>工作 11：新增及部署合規性政策
 
 Intune 支援合規性原則。 適當新增合規性原則，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
@@ -135,7 +137,7 @@ Intune 支援 iOS、Mac 作業系統、Android、Windows Desktop 和 Windows 行
 -   深入了解[註冊裝置以在 Intune 中管理](device-enrollment.md)。
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需 Intune 實作程序的詳細資訊，請參閱 [Microsoft Virtual Academy Intune 工作階段模組](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)。
 

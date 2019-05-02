@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501359"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
-使用 Microsoft Intune 中的應用程式設定原則，提供 iOS 或 Android 應用程式的組態設定。 這些組態設定可讓您自訂應用程式。 您不會直接將這些設定原則指派給使用者與裝置。 而是建立設定原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是第一次執行時)，便會使用這些設定。
+使用 Microsoft Intune 中的應用程式設定原則，提供 iOS 或 Android 應用程式的組態設定。 這些組態設定可讓您自訂應用程式。 您不會直接將這些設定原則指派給使用者或裝置。 而是建立設定原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是第一次執行時)，便會使用這些設定。
 
 您可以使用包含與排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。
 
-例如，應用程式可能需要您指定下列任何詳細資料：
+例如，應用程式組態設定可能需要您指定下列任何詳細資料：
 
 - 自訂連接埠號碼
 - 語言設定
 - 安全性設定
 - 公司標誌等品牌設定
 
-若使用者未正確輸入這些設定，可能會增加技術支援中心的負擔，使得採用新應用程式的速度變慢。
+如果使用者改為輸入這些設定，他們可能會做錯而增加技術支援中心的負擔，並拖慢新應用程式的採用速度。
 
-應用程式組態原則可讓您在使用者執行應用程式之前，將這些設定指派給使用者來避開這些問題。 這些設定會自動提供，使用者無須採取任何動作。
+應用程式設定原則可讓您在使用者執行應用程式之前，將組態設定指派給已指派給使用者的原則來去除應用程式設定問題。 這些設定會自動提供，使用者無須採取任何動作。
 
 每當應用程式檢查是否有組態設定時，便會使用這些設定。 一般而言，應用程式會在使用者第一次執行應用程式時檢查是否有組態設定。
 
