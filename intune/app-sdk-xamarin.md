@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566194"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292345"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -110,6 +110,8 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> 使用 MAM Xamarin 繫結的問題可能會導致損毀時在偵錯模式中部署應用程式。 因應措施，`Debuggable=false`屬性必須新增至`Application`類別和`android:debuggable="true"`必須從資訊清單移除旗標，如果以手動方式設定。
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[啟用需要應用程式參與的功能](app-sdk-android.md#enable-features-that-require-app-participation)
 範例：判斷應用程式是否需要 PIN

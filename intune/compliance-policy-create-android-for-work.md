@@ -1,65 +1,44 @@
 ---
-title: 在 Microsoft Intune 中建立 Android Enterprise 合規性政策 - Azure | Microsoft Docs
-description: 建立或設定適用於 Android Enterprise 或工作設定檔裝置的 Microsoft Intune 裝置合規性政策。 選擇允許越獄的裝置、設定可接受的威脅層級、檢查 Google Play、輸入最低和最高作業系統版本、選擇您的密碼需求，以及允許側載應用程式。
+title: Microsoft Intune 中的 Android Enterprise 裝置設定 - Azure | Microsoft Docs
+description: 請參閱 Microsoft Intune 中設定 Android 企業裝置的合規性時，您可以使用的所有設定的清單。 設定密碼規則，選擇最小值或最大作業系統版本、 限制特定的應用程式，避免重複使用密碼，以及更多。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566228"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423555"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>在 Intune 中為 Android Enterprise 裝置新增裝置合規性政策
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>將裝置標記為符合規範或不符合規範使用 Intune 的 android Enterprise 設定
 
-裝置合規性政策是使用 Intune 保護您組織資源時的一項重要功能。 在 Intune 中，您可以建立裝置必須符合才能視為符合規範的規則和設定，例如密碼長度。 如果裝置不符合規範，您可以接著使用[條件式存取](conditional-access.md)來封鎖對資料和資源的存取。 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您也可以取得裝置報表，並針對不符合規範的裝置採取動作，例如傳送通知電子郵件給使用者。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+這篇文章列出並描述您可以設定在 Intune 中 Android 企業裝置的不同的合規性設定。 您的行動裝置管理 (MDM) 解決方案的一部分，使用這些設定來 root 破解 （已進行 jb 破解） 將裝置標記為不符合規範、 設定允許的威脅層級，啟用 Google Play Protect，，和更多功能。
 
-本文列出您可以在執行 Android Enterprise 的裝置合規性政策中使用的設定。
+本功能適用於：
 
-## <a name="non-compliance-and-conditional-access"></a>不符合規範和條件式存取
+- Android 企業
 
-下表描述搭配使用合規性政策與條件式存取原則時，不相容設定的管理方式。
+身為 Intune 管理員，使用這些合規性設定來協助保護您組織的資源。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
---------------------------
+## <a name="before-you-begin"></a>開始之前
 
-|**原則設定**| **Android Enterprise 設定檔** |
-| --- | --- |
-| **PIN 或密碼設定** |  已隔離 |
-| **裝置加密** |  已隔離 |
-| **已越獄或 Root 的裝置** | 隔離 (非設定) |
-| **電子郵件設定檔** | 不適用 |
-| **最低 OS 版本** | 已隔離 |
-| **最高 OS 版本** | 已隔離 |
-| **Windows 健康情況證明** |不適用 |
-
-**已補救** = 裝置作業系統強制符合規範。 例如，強制使用者設定 PIN。
-
-**已隔離** = 裝置作業系統不強制符合規範。 例如，Android 裝置不強制使用者為裝置加密。 裝置不符合規範時，會採取下列動作：
-
-  - 如果對使用者套用了條件式存取原則，就會封鎖裝置。
-  - 公司入口網站會通知使用者任何合規性問題的相關事項。
-
-## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. 針對 [平台]，選取 [Android 企業]。 
-5. 選擇 [組態設定]。 輸入 [裝置健全狀況]、[裝置屬性] 和 [系統安全性] 設定，如本文中所述。
+[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [Android 企業]。
 
 ## <a name="device-health"></a>Device health
 
@@ -69,6 +48,9 @@ ms.locfileid: "57566228"
   - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
   - **中**︰如果裝置有低等級或中等級的威脅，則會將裝置評估為相容。 如果在裝置上偵測到高等級的威脅，即判斷為不符合規範。
   - **高**：此選項最不安全，因為它允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
+
+### <a name="google-play-protect"></a>Google Play 保護
+
 - **已設定 Google Play 服務**：**需要**安裝並啟用 Google Play 服務應用程式。 Google Play 服務可允許安全性更新，而且是 Google 認證裝置上許多安全性功能的基層相依服務。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 - **最新安全性提供者**：**需要**最新安全性提供者可保護裝置免於已知的弱點。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 - **SafetyNet 裝置證明**：輸入必須符合的 [SafetyNet 證明](https://developer.android.com/training/safetynet/attestation.html)層級。 選項包括：
@@ -76,9 +58,8 @@ ms.locfileid: "57566228"
   - **檢查基本完整性**
   - **檢查基本完整性與經過認證的裝置**
 
-#### <a name="threat-scan-on-apps"></a>對應用程式進行威脅掃描
-
-在 Android Enterprise 裝置上，[對應用程式進行威脅掃描] 設定為設定原則。 請參閱 [Android Enterprise 裝置限制設定](device-restrictions-android-for-work.md)。
+> [!NOTE]
+> Android 企業裝置上**對應用程式進行威脅掃描**是裝置設定原則。 使用設定原則，系統管理員可以啟用裝置上的設定。 請參閱 [Android Enterprise 裝置限制設定](device-restrictions-android-for-work.md)。
 
 ## <a name="device-properties-settings"></a>裝置內容設定
 
@@ -106,7 +87,7 @@ ms.locfileid: "57566228"
 
 ### <a name="encryption"></a>加密
 
-- **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。 當您選擇 [未設定] (預設值) 時，則不會評估此設定是否符合規範。 
+- **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。 
 
   您不需要進行此設定，因為 Android 工作設定檔裝置會強制執行加密。
 
@@ -136,31 +117,10 @@ ms.locfileid: "57566228"
 
 - **安全性修補程式等級下限**：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不符合規範。 日期必須以 *YYYY-MM-DD* 格式輸入。
 
-完成時，請選取 [確定] > [確定] 以儲存變更。
-
-## <a name="actions-for-noncompliance"></a>不符合標準時所採取的動作
-
-選取 [不符合規範時所採取的動作]。 預設動作會立即將裝置標示為不符合規範。
-
-您可以變更裝置標示為不符合規範的排程 (例如一天之後)。 您也可以設定第二個動作，在裝置不符合規範時傳送電子郵件給使用者。
-
-[為不符合規範的裝置新增動作](actions-for-noncompliance.md)提供詳細資訊，包括建立通知電子郵件給您的使用者。
-
-## <a name="scope-tags"></a>範圍標籤
-
-範圍標籤是將原則指派給特定群組 (例如銷售、工程、人力資源等) 的絕佳方式。 您可以將範圍標籤新增至合規性政策。 請參閱[使用範圍標籤篩選原則](scope-tags.md)。 
-
-## <a name="assign-user-groups"></a>指派使用者群組
-
-一旦原則建立完成，在您指派原則之前，它不會執行任何動作。 若要指派原則： 
-
-1. 選擇您已設定的原則。 現有的原則位於 [裝置合規性] > [原則]。
-2. 選擇原則，然後選擇 [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
-
-您已將原則套用至使用者。 系統將會評估原則目標使用者所使用的裝置是否符合規範。
+選取 [確定] > [建立] 儲存您的變更。
 
 ## <a name="next-steps"></a>後續步驟
-[將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
-[監視 Intune 裝置合規性原則](compliance-policy-monitor.md)  
-[適用於 Android 的合規性政策設定](compliance-policy-create-android.md)
+
+- [新增適用於不符合規範的裝置動作](actions-for-noncompliance.md)並[使用篩選器原則的範圍標籤](scope-tags.md)。
+- [監視合規性政策](compliance-policy-monitor.md)。
+- [Android 裝置的法務遵循政策設定](compliance-policy-create-android.md)

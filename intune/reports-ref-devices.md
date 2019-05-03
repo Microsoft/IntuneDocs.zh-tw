@@ -1,12 +1,12 @@
 ---
 title: 裝置 - Intune 資料倉儲
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 資料倉儲 API 中的實體集合裝置類別的參考主題。
 keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358228"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429177"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -80,6 +80,7 @@ ms.locfileid: "58358228"
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | 記錄此註冊活動的日期索引鍵。               |
 | deviceEnrollmentTypeKey       | 註冊類型的索引鍵。                                        |
+| deviceTypeKey                 | 裝置類型的索引鍵。                                                |
 | enrollmentEventStatusKey      | 指出註冊成功或失敗的狀態索引鍵。    |
 | enrollmentFailureCategoryKey  | 註冊失敗類別的索引鍵 (如果註冊失敗的話)。        |
 | enrollmentFailureReasonKey    | 註冊失敗原因的索引鍵 (如果註冊失敗的話)。          |
@@ -224,46 +225,61 @@ ms.locfileid: "58358228"
 
 **Devices** 實體會列出管理下的所有已註冊裝置及其對應的屬性。
 
-| 屬性  | 說明 |
-|---------|------------|
-| DeviceKey | 資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 |
-| DeviceId | 裝置的唯一識別碼。 |
-| DeviceName | 允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不能提供所有裝置使用。 |
-| DeviceTypeKey | 此裝置的裝置類型屬性索引鍵。 |
-| OwnerTypeKey | 此裝置的擁有者類型屬性索引鍵：公司、個人或未知。 |
-| objectSourceKey | 略過這個資料行。 |
-| ManagementAgentKey | 與此裝置相關聯的管理代理程式索引鍵。 |
-| ManagementStateKey | 與此裝置相關聯的管理狀態索引鍵，指出遠端動作的最新狀態，或是否已 JB 破解或刷機。 |
-| OSVersion | OS 版本 |
-| OSMajorVersion | 作業系統版本的主要版本元件 (major.minor.build.revision)。 |
-| OSMinorVersion | 作業系統版本的次要版本元件 (major.minor.build.revision)。 |
-| OSBuildNumber | 作業系統版本的組建版本元件 (major.minor.build.revision)。 |
-| OSRevisionNumber | 作業系統版本的修訂版本元件 (major.minor.build.revision)。 |
-| SerialNumber | 裝置的序號 (如有)。 |
-| RowLastModifiedDateTimeUTC | 上次修改此記錄的時間。 |
-| DeviceAction | 最後發出的裝置動作，現在略過。 |
-| 製造商 | 裝置製造商。 |
-| 型號 | 裝置的型號。 |
-| IsDeleted | 如果裝置不再繼續受 Intune 管理，即設為 True。 會保留最後的已知狀態。 |
-| AndroidSecurityPatchLevel |裝置的最新安全性修補程式的日期。 |
+|          屬性          |                                                                                       說明                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | 資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵。                                                                                                               |
+| DeviceId                   | 裝置的唯一識別碼。                                                                                                                                                     |
+| DeviceName                 | 允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不適用於所有裝置。 |
+| DeviceTypeKey              | 此裝置的裝置類型屬性索引鍵。                                                                                                                                    |
+| DeviceRegistrationState    | 此裝置的用戶端註冊狀態屬性索引鍵。                                                                                                                      |
+| OwnerTypeKey               | 此裝置的擁有者類型屬性索引鍵：公司、個人或未知。                                                                                                    |
+| EnrolledDateTime           | 裝置註冊的日期與時間。                                                                                                                                         |
+| LastSyncDateTime           | 使用 Intune 簽入的最後一部已知裝置。                                                                                                                                              |
+| ManagementAgentKey         | 與此裝置相關聯的管理代理程式索引鍵。                                                                                                                             |
+| ManagementStateKey         | 與此裝置相關聯的管理狀態索引鍵，指出遠端動作的最新狀態，或是否已 JB 破解/刷機。                                                |
+| AzureADDeviceId            | 此裝置的 Azure deviceID。                                                                                                                                                  |
+| AzureADRegistered          | 裝置是否已註冊至 Azure Active Directory。                                                                                                                             |
+| DeviceCategoryKey          | 與此裝置相關聯的類別索引鍵。                                                                                                                                     |
+| DeviceEnrollmentType       | 與此裝置相關聯的註冊類型索引鍵，指出註冊方法。                                                                                             |
+| ComplianceStateKey         | 與此裝置相關聯的合規性狀態索引鍵。                                                                                                                             |
+| OSVersion                  | 裝置的作業系統版本。                                                                                                                                                |
+| EasDeviceId                | 裝置的 Exchange ActiveSync 識別碼。                                                                                                                                                  |
+| SerialNumber               | SerialNumber                                                                                                                                                                           |
+| UserId                     | 與裝置相關聯之使用者的唯一識別碼。                                                                                                                           |
+| RowLastModifiedDateTimeUTC | 在資料倉儲中最後一次修改此裝置的 UTC 日期和時間。                                                                                                       |
+| 製造商               | 裝置製造商                                                                                                                                                             |
+| 型號                      | 裝置的型號                                                                                                                                                                    |
+| OperatingSystem            | 裝置的作業系統。 Windows、iOS 等。                                                                                                                                   |
+| IsDeleted                  | 顯示裝置是否已刪除的二進位檔。                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Android 安全性修補程式等級                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | 裝置的受監督狀態                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | 可用的儲存體 (以位元組為單位)。                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | 總儲存體 (以位元組為單位)。                                                                                                                                                                |
+| EncryptionState            | 裝置的加密狀態。                                                                                                                                                      |
+| SubscriberCarrier          | 裝置的用戶載波                                                                                                                                                       |
+| PhoneNumber                | 裝置的電話號碼                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | 裝置的行動電話通訊技術                                                                                                                                                    |
+| WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
 **DevicePropertyHistory** 實體與裝置資料表和每部裝置過去 90 天內每天記錄的每日快照集有相同的內容。 DateKey 資料行會指出每個資料列的日期。
 
-| 屬性  | 說明 |
-|---------|------------|
-| DateKey |指出當日的日期資料表參考。 |
-| DeviceKey |資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵 這是包含 Intune 裝置識別碼之裝置資料表的參考。 |
-| DeviceName |允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不能提供所有裝置使用。 |
-| OwnerTypeKey |此裝置的擁有者類型屬性索引鍵：公司、個人或未知。 |
-| objectSourceKey |略過這個資料行。 |
-| ManagementStateKey |與此裝置相關聯的管理狀態索引鍵，指出遠端動作的最新狀態，或是否已 JB 破解或刷機。 |
-| OSVersion |作業系統版本。 |
-| OSMajorVersion |作業系統版本的主要版本元件 (major.minor.build.revision)。 |
-| OSMinorVersion |作業系統版本的次要版本元件 (major.minor.build.revision)。 |
-| OSBuildNumber |作業系統版本的組建版本元件 (major.minor.build.revision)。 |
-| DeviceAction |最後發出的裝置動作，現在略過。 |
+|          屬性          |                                                                                      說明                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | 指出當日的日期資料表參考。                                                                                                                                          |
+| DeviceKey                  | 資料倉儲中裝置的唯一識別碼 - surrogate 索引鍵。 這是包含 Intune 裝置識別碼之裝置資料表的參考。                               |
+| DeviceName                 | 允許命名裝置之平台上的裝置名稱。 在其他平台上，Intune 會從其他屬性建立名稱。 此屬性不適用於所有裝置。 |
+| DeviceRegistrationStateKey | 此裝置的裝置註冊狀態屬性索引鍵。                                                                                                                    |
+| OwnerTypeKey               | 此裝置的擁有者類型屬性索引鍵：公司、個人或未知。                                                                                                  |
+| ManagementStateKey         | 與此裝置相關聯的管理狀態索引鍵，指出遠端動作的最新狀態，或是否已 JB 破解/刷機。                                                |
+| AzureADRegistered          | 裝置是否已註冊至 Azure Active Directory。                                                                                                                             |
+| ComplianceStateKey         | 針對 ComplianceState 的索引鍵。                                                                                                                                                            |
+| OSVersion                  | 作業系統版本。                                                                                                                                                                          |
+| JB 破解                 | 裝置是否已越獄或刷機。                                                                                                                                         |
+| DeviceCategoryKey          | 此裝置的裝置類別屬性索引鍵。 
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

@@ -1,6 +1,6 @@
 ---
 title: 保護 Windows 電腦的原則
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用這些原則協助您確保 Windows 電腦受 Intune 用戶端軟體管理時的安全性。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: eead854aed4015c6811441b00c633c58ad2fbc7c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798532"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用原則來協助保護執行 Intune 用戶端軟體的 Windows 電腦
 

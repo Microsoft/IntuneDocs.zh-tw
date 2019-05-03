@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394995"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423691"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -138,7 +138,10 @@ ms.locfileid: "58394995"
 - **SIM 卡錯誤對話方塊 (僅限行動裝置)**：封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
 - **Ink 工作區**：禁止使用者存取 Ink 工作區。 [未設定] 會啟用 Ink 工作區，並允許使用者在鎖定畫面上使用它。
 - **自動重新部署**：允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
-- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)**：選擇 [需要] 讓裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。 此功能尚在預覽階段，需要 Windows 測試人員組建 1809 或更新版本才能使用這項設定。
+- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)**：選擇 [需要] 讓裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。
+
+  此設定會在下次裝置抹除或重設生效。 像任何其他 Intune 設定裝置必須註冊並受 Intune 管理來接收組態設定。 但一次註冊，並接收原則，然後將裝置重設會強制執行的下一步 的 Windows 安裝期間設定。
+
 - **直接記憶體存取**：[封鎖] 會防止所有隨插即用 PCI 下游連接埠的直接記憶體存取 (DMA)，直到使用者登入 Windows 為止。 [啟用] (預設值) 會允許存取 DMA，就算使用者未登入也一樣。
 
   CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ ms.locfileid: "58394995"
   - **避免重複使用以前用過的密碼**：指定裝置記憶先前使用過的密碼數目。
   - **裝置從閒置狀態回復時需要密碼 (僅限行動裝置)**：指定使用者必須輸入密碼才能解除鎖定裝置 (僅限 Windows 10 行動裝置版)。
   - **簡單密碼**：可讓您使用 1111 和 1234 等簡單密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
+- **在 AADJ 期間的自動加密**:**區塊**時裝置已準備好進行第一次使用時，裝置已加入 Azure AD 時，可防止自動 BitLocker 裝置加密。 **未設定**（預設值） 會使用作業系統預設，這可能會讓加密。 更多[BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **聯邦資訊處理標準 (FIPS) 原則**:**允許**使用聯邦資訊處理標準 (FIPS) 原則，也就是美國政府標準加密、 雜湊和簽署。 **未設定**（預設值） 會使用作業系統預設值，不會使用 FIPS。
+
+  [密碼編譯/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello 裝置驗證**:**允許**使用 Windows Hello 小幫手裝置，例如電話、 適用性頻外或 IoT 裝置來登入的 Windows 10 電腦的使用者。 **未設定**（預設值） 會使用作業系統預設值，可能會導致 Windows Hello 小幫手裝置無法使用 Windows 驗證。
+
+  [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Web 登入**： 可讓 Windows 登入非 ADFS （Active Directory 同盟服務） 同盟提供者，例如安全性判斷提示標記語言 (SAML) 的支援。 SAML 會使用提供單一登入 (SSO) 的網頁瀏覽器體驗的安全權杖。 選項包括：
+
+  - **未設定**（預設值）： 在裝置上使用的作業系統預設值。
+  - **啟用**: Web 認證提供者都可使用登入。
+  - **停用**: Web 認證提供者已停用登入。
+
+  [驗證/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **慣用的 Azure AD 租用戶網域**： 輸入您的 Azure AD 組織中的現有的網域名稱。 在這個網域中的使用者登入時，他們不需要輸入網域名稱。 例如，輸入 `contoso.com`。 中的使用者`contoso.com`網域可以使用登入他們的使用者名稱，例如"abby"，而不是 「abby@contoso.com"。
+
+  [驗證/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>個別應用程式的隱私權例外狀況
 

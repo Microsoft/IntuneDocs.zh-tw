@@ -1,12 +1,12 @@
 ---
 title: Intune App SDK 優點
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune App SDK 適用於 iOS 和 Android 平台，並提供 Microsoft Intune 的行動應用程式管理功能。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 046c82a1b149f33e20a21adf931a30cc812e3f10
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566483"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292444"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概觀
 Intune App SDK (適用於 iOS 和 Android) 可啟用您的應用程式以支援 Intune [應用程式保護原則](app-protection-policy.md)。 當您的應用程式具有應用程式保護原則套用至它時，它可以由 Intune 管理，並做為受管理的應用程式的 Intune 所辨識。 SDK 會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 您會發現，您可以啟用大多數 SDK 功能，而不需要變更您的應用程式行為。 為了增強終端使用者和 IT 系統管理員體驗，您可以利用 SDK 的 API 來自訂應用程式行為，以支援需要應用程式參與的功能。

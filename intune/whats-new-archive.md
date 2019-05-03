@@ -1,6 +1,6 @@
 ---
 title: 前幾個月的 Microsoft Intune 新功能 - Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: 檢閱 Intune 新功能頁面中較舊的公告
 keywords: ''
 author: ErikjeMS
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceefcfbcdf48cf8d450f5a74274bc1beea951cc5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461544"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423708"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
 
@@ -312,11 +312,11 @@ Intune 目前支援[使用 Active Directory 憑證服務的 SCEP 要求](certifi
 - 成功
 - 錯誤
 - 衝突
-- 擱置
+- 暫止
 - 不適用。同時顯示了顯示不同平台裝置計數的影像。 例如，如果您要查看 iOS 設定檔，新的磚會顯示同時指派給此設定檔的非 iOS 裝置計數。 請參閱[裝置合規性原則](compliance-policy-monitor.md#view-status-of-device-policies)。
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>裝置相容性支援協力廠商防毒解決方案 <!-- 2325484 -->
-當您建立裝置合規性原則 ([裝置合規性] > [原則] > [建立原則] >  [平台：Windows 10 和更新版本] > [設定] > [系統安全性]) 時，有一些新的 [裝置安全性](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)選項： 
+當您建立裝置合規性原則 ([裝置合規性] > [原則] > [建立原則] >  [平台：Windows 10 和更新版本] > [設定] > [系統安全性]) 時，有一些新的 [裝置安全性](compliance-policy-create-windows.md)選項： 
 - **防毒**：當設定為 [必要] 時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 
 - **反間諜功能**：當設定為 [必要] 時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 
 
@@ -1264,7 +1264,7 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 在 Android Oreo 版本中，Google 引進名為 Google Play Protect 的安全性功能套件，可讓使用者和組織執行安全的應用程式和保護 Android 映像。 Intune 現在支援 Google Play Protect 功能，包括 SafetyNet 遠端證明。 系統管理員可以設定合規性原則需求，藉此要求設定 Google Play Protect 且其狀況良好。
 [SafetyNet 裝置證明] 設定可要求裝置連線至 Google 服務，以驗證裝置狀況良好且未遭入侵。 系統管理員也可以設定 Android for Work 的組態設定檔設定，以要求已安裝的應用程式必須經過 Google Play 服務驗證。 如果裝置不符合 Google Play Protect 需求的規範，條件式存取可能會禁止使用者存取公司資源。
 
-- 了解[如何建立可啟用「Google Play 安全防護」的裝置合規性原則](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect)。
+- 了解[如何建立可啟用「Google Play 安全防護」的裝置合規性原則](https://docs.microsoft.com/intune/compliance-policy-create-android)。
 
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>允許來自受控應用程式的文字通訊協定 <!-- 1414050  -->
 
@@ -1565,7 +1565,7 @@ Android 版公司入口網站應用程式會顯示使用者註冊其裝置時的
 ### <a name="windows-autopilot-deployment-program-support-in-microsoft-intune----747617---"></a>Microsoft Intune 中的 Windows AutoPilot Deployment 方案支援  <!-- 747617  -->
 您可以現在使用 Microsoft Intune Windows AutoPilot 部署計劃，讓您的使用者能夠佈建其公司裝置而不需要 IT 介入。 您可以自訂全新體驗 (OOBE)，並引導使用者將他們的裝置加入 Azure AD 且在 Intune 中註冊。 搭配使用時，Microsoft Intune 和 Windows AutoPilot 不須部署、維護及管理作業系統映像。 如需詳細資料，請參閱 [Enroll Windows devices using Windows AutoPilot Deployment Program](https://docs.microsoft.com/intune/enrollment-autopilot) (使用 Windows AutoPilot Deployment 方案註冊 Windows 裝置)。
 
-### <a name="quick-start-for-device-enrollment----1425655---"></a>裝置註冊的快速入門  <!-- 1425655 --> 
+### <a name="quickstart-for-device-enrollment----1425655---"></a>裝置註冊的快速入門  <!-- 1425655 --> 
 快速入門現在提供於 [裝置註冊]，並提供管理平台和設定註冊程序的參考表格。 每個項目的簡短描述，以及文件連結和逐步指示，提供實用的文件來簡化開始使用。
 
 ### <a name="device-categorization----1427491---"></a>裝置分類 <!-- 1427491 -->

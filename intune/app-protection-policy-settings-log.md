@@ -1,6 +1,6 @@
 ---
-title: 檢閱應用程式防護原則記錄 | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: 檢閱應用程式防護原則記錄
+titleSuffix: Microsoft Intune
 description: 本主題描述如何設定 Intune 應用程式保護原則 （應用程式） 記錄。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394788"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671861"
 ---
 # <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
@@ -31,7 +31,7 @@ ms.locfileid: "58394788"
 
 啟用及收集記錄的流程會因平台而有所不同：
 - **Android 裝置** - 使用「公司入口網站」。 請參閱[將記錄以電子郵件傳送給公司支援人員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
-- **iOS 裝置** - 使用 Managed Browser 或 *Microsoft Edge* 來收集記錄。 如需詳細資料，請參閱 Intune 支援小組部落格 [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser) (Intune Managed Browser 中用來提交記錄的全新 Intune 診斷主控台)。 
+- **iOS 裝置** - 使用 Managed Browser 或 *Microsoft Edge* 來收集記錄。 如需詳細資料，請參閱 Intune 支援小組部落格 [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Intune Managed Browser 中用來提交記錄的全新 Intune 診斷主控台)。 
 - **Windows 10 裝置** - 使用 *MDMDiag* 及事件記錄。 請參閱 Windows 用戶端管理內容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (診斷 Windows 10 中的 MDM 失敗)，以及部落格[Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (針對 Windows 10 Intune 原則失敗進行疑難排解)
 
 

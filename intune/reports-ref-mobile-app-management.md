@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MTE75
+ms.openlocfilehash: 456abbf849120675b6a7c108ca65c6f9967ae64a
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799593"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429194"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>行動應用程式管理 (MAM) 實體的參考
 
 [行動應用程式管理] 類別包含行動應用程式的實體，例如：
 
-  -  [App]
+  -  應用程式
   -  執行個體
   -  簽入狀態
   -  健全狀況狀態
@@ -43,10 +43,14 @@ ms.locfileid: "58799593"
 
 | 屬性 | 說明 | 範例 |
 |---------|------------|--------|
+| mamApplicationKey |MAM 應用程式的唯一識別碼。 | 432 |
+| mamApplicationName |MAM 應用程式名稱。 |MAM 應用程式範例的名稱 |
+| mamApplicationId |MAM 應用程式的應用程式識別碼。 | 123 |
 | IsDeleted |指出是否已更新此 MAM 應用程式記錄。 <br>True - MAM 應用程式具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式的最新記錄。 |True/False |
 | StartDateInclusiveUTC |在資料倉儲中建立此 MAM 應用程式的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted 變更為 True 的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |前次在資料倉儲中修改此 MAM 應用程式的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
+
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
@@ -58,15 +62,20 @@ ms.locfileid: "58799593"
 |   ApplicationInstanceKey   |                                                               資料倉儲中 MAM 應用程式執行個體的唯一識別碼 - Surrogate 索引鍵。                                                                |                 123                  |
 |           UserId           |                                                                              已安裝此 MAM 應用程式之使用者的使用者識別碼。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 應用程式執行個體的唯一識別碼 - 與 ApplicationInstanceKey 類似，但識別碼是自然索引鍵。                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | 為其建立此 Mam 應用程式執行個體的 Mam 應用程式的應用程式識別碼。   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     此 MAM 應用程式的應用程式版本。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 此 MAM 應用程式執行個體記錄的建立日期。 值可以是 Null。                                                                 |        11/23/2016 12:00:00 AM        |
 |          平台          |                                                                          此 MAM 應用程式安裝所在裝置的平台。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      此 MAM 應用程式安裝所在裝置的平台版本。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            與此 MAM 應用程式包裝在一起的 MAM SDK 版本。                                                                            |                 3.2                  |
+| mamDeviceId | 與 MAM 應用程式執行個體相關聯之裝置的裝置識別碼。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | 與 MAM 應用程式執行個體相關聯之裝置的裝置類型。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | 與 MAM 應用程式執行個體相關聯之裝置的裝置名稱。   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | 指出是否已更新此 MAM 應用程式執行個體記錄。 <br>True - 此 MAM 應用程式執行個體具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式執行個體的最新記錄。 |              True/False              |
 |   StartDateInclusiveUtc    |                                                              在資料倉儲中建立此 MAM 應用程式執行個體的 UTC 日期和時間。                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted 變更為 True 的 UTC 日期和時間。                                                                              |        11/23/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           前次在資料倉儲中修改此 MAM 應用程式執行個體的 UTC 日期和時間。                                                            |        11/23/2016 12:00:00 AM        |
+
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -80,10 +89,12 @@ ms.locfileid: "58799593"
 | DateKey |將 MAM 應用程式簽入記錄在資料倉儲中的日期索引鍵。 | 20160703 |
 | ApplicationInstanceKey |與此 MAM 應用程式簽入建立關聯之應用程式執行個體的索引鍵。 | 123 |
 | UserKey |與此 MAM 應用程式簽入建立關聯之使用者的索引鍵。 | 4323 |
+| mamApplicationKey |應用程式金鑰的應用程式與 MAM 應用程式簽入相關聯。 | 432 |
 | DeviceHealthKey |與此 MAM 應用程式簽入建立關聯之 DeviceHealth 的索引鍵。 | 321 |
 | PlatformKey |代表與此 MAM 應用程式簽入建立關聯之裝置的平台。 |123 |
 | EffectiveAppliedPolicyKey |代表與已簽入 MAM 應用程式建立關聯的有效已套用原則。 合併所有與特定應用程式和使用者相關原則的有效已套用原則結果。 | 322 |
 | LastCheckInDate |前次簽入此 MAM 應用程式的日期和時間。 值可以是 Null。 |11/23/2016 12:00:00 AM |
+
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 

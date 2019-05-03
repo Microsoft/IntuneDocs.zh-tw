@@ -1,12 +1,12 @@
 ---
 title: 在開發-Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 在開發過程中的 Microsoft Intune 功能
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675437"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587377"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>在開發 Microsoft Intune-2019 年 4 月
 
 若要可協助您的整備程度和計劃、 此頁面清單 Intune UI 更新及功能正在開發，但尚未發行。 此外：
 
-- 如果我們預期，您必須採取動作，在變更之前，我們將發佈免費的 Office 訊息中心 post。
+- 如果我們預期，您必須採取動作，在變更之前，我們將發佈互補的 Office 訊息中心 post。
 - 當為預覽功能啟動實際執行環境，或已正式推出，功能描述會移動關閉此頁面，並拖曳至[什麼是新的頁面](whats-new.md)。
 - 此頁面並[什麼是新的頁面](whats-new.md)會定期更新。 請回來查看其他更新。
 - 請參閱[M365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS)策略性的交付項目與時間軸。
@@ -60,18 +60,6 @@ ms.locfileid: "58675437"
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>需要應用程式保護條件式存取  <!--1634317 -->
 您將能夠使用*需要應用程式保護原則*，以確認原則會防止使用者存取您所保護的資料，使用條件式存取的登入完成之前套用至使用者的應用程式。 雖然原則保證可能會變慢的第一個的使用體驗，有助於防止網路問題、 系統管理的設定錯誤或刻意設計的工作，以阻止應用程式保護原則。 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>線上授權商務用 Microsoft Store 應用程式的部署 <!-- 16726660 -->
-您將能夠在裝置內容中指派必要的線上授權商務用 Microsoft Store 應用程式。 以此方式部署商務用 Microsoft Store 應用程式，即可在裝置上為所有使用者安裝應用程式。 這僅適用於 Windows 10 RS4+ 電腦裝置。 您可以從 MSFB 線上授權應用程式的用戶端應用程式指派頁面，存取在裝置內容中安裝的選項。
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>包含與排除混合的使用者群組和裝置群組指派原則和設定檔時 <!-- 1807547 -->
-指派合規性政策或組態設定檔時，您可以指派這些安全性群組與使用者或裝置。 目前，您可以在其中包含與排除只有使用者群組*或*include 和 exclude 只有裝置群組。 您不能包含和排除混合的群組，例如包含 使用者群組*和*排除裝置群組。
-
-您將能夠包含和排除使用者群組和裝置群組的混合。 您可以包含一群使用者，並排除裝置群組。 例如，您可以指派，或將裝置組態設定檔部署到一群使用者，但排除個人裝置。
-
-[指派裝置組態設定檔](device-profile-assign.md)包含更多有關將設定檔指派給使用者群組和裝置群組。
-
-適用於： 所有平台
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>淘汰不符合規範的裝置 <!-- 1827291 -->
 我們要新增新的合規性動作，以淘汰不符合規範的裝置。 淘汰不符合規範的裝置移除所有的公司資料，也會移除該裝置由 Intune 所管理。 當達到設定的值，以天為單位，就會執行此動作。 最小值為 30 天。 
@@ -142,7 +130,7 @@ Android 企業裝置，您可以建立允許或限制功能、 設定密碼規�
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Windows 10 裝置的合規性政策中的 TPM 晶片組的核取 <!-- 3617671 -->
 許多 Windows 10 和更新版本的裝置有受信任的平台模組 (TPM) 晶片。 新的合規性設定會檢查裝置上是否有 TPM。
 
-[Windows 10 和更新版本的合規性政策設定](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)列出目前的設定。
+[Windows 10 和更新版本的合規性政策設定](compliance-policy-create-windows.md)列出目前的設定。
 
 適用於： 
 - Windows 10 及更新版本
@@ -177,15 +165,6 @@ Android 企業裝置，您可以建立允許或限制功能、 設定密碼規�
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows 更新通知 <!-- 3316782 -->
 我們將新增支援 Windows Update ring 設定，因此您可以設定您的使用者看到的 Windows 更新通知。 此設定無法從入口網站中使用，但可以使用 Intune 圖形 API 來設定。
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>變更為適用於 iOS 的公司入口網站註冊 12 的裝置使用者 <!--3448635 --> 
-適用於 iOS 的公司入口網站將會更新，應用程式註冊畫面和步驟來配合在 Apple iOS 12.2 中發行的 MDM 註冊變更。 更新的工作流程現在會提示使用者：
-
-- 允許 Safari 以開啟公司入口網站 （透過 Safari)，並下載管理設定檔，然後再回到 公司入口網站應用程式。
-- 開啟 設定 應用程式在其裝置上安裝管理設定檔。
-- 返回公司入口網站應用程式，以完成註冊。
-
-如需有關如何準備這些變更的詳細資訊，請參閱 < [Microsoft 技術社群文章](https://aka.ms/CP_changes_iOS12)。 在此同時，若要支援新的 iOS 註冊在公司入口網站中，我們已更新中的步驟[在 Intune 中的註冊 iOS 裝置](https://docs.microsoft.com/en-us/intune/ios-enroll)。 Apple 發行 iOS 版 12.2 之後，這些文件變更會即時。 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>更容易存取的診斷設定 <!-- 3804627 -->
 我們將新增的新選項**稽核記錄檔**刀鋒視窗中每個稽核記錄檔工作負載，在 Intune 主控台中，您可以使用來直接開啟*診斷設定*頁面。

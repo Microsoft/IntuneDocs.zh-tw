@@ -1,6 +1,6 @@
 ---
 title: Intune 資料倉儲 API 端點
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本參考主題描述 Microsoft Intune 資料倉儲 API URL 結構。 提供篩選條件範例。
 keywords: Intune 資料倉儲
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396470"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798490"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -53,7 +53,7 @@ URL 包含下列元素：
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 在 Azure 入口網站中檢視資料倉儲 API 刀鋒視窗，即可找到基底 URL。 |
 | entity-collection | dates | OData 實體集合的名稱。 如需資料模型中集合和實體的詳細資訊，請參閱[資料模型](reports-ref-data-model.md)。 |
-| api-version | beta | 版本是要存取之 API 的版本。 如需詳細資訊，請參閱[版本](#API-version-information)。 |
+| api-version | beta | 版本是要存取之 API 的版本。 如需詳細資訊，請參閱[版本](reports-api-url.md#api-version-information)。 |
 | maxhistorydays | 7 | (選擇性) 記錄取出天數的上限。 此參數可以提供給任何集合，但只會針對包含 `dateKey` 為其索引鍵屬性之一部分的集合生效。 如需詳細資訊，請參閱 [DateKey 範圍篩選條件](reports-api-url.md#datekey-range-filters)。 |
 
 ## <a name="api-version-information"></a>API 版本資訊

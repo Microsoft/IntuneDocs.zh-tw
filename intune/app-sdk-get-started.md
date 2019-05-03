@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566381"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423589"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>如果應用程式是無法公開的組織內部應用程式：
 
-您**不需要**註冊應用程式。 針對內部[的營運 (LOB) 應用程式](apps-add.md#app-types-in-microsoft-intune)，撰寫或為您的公司，IT 系統管理員會在內部部署應用程式。 Intune 可偵測是否已使用 SDK 建置應用程式，並允許 IT 系統管理員對其套用應用程式保護原則。 您可以跳到[啟用 iOS 或 Android 應用程式的應用程式保護原則](#enable-your-iOS-or-Android-app-for-app-protection-policy)這一節。
+您**不需要**註冊應用程式。 針對內部[的營運 (LOB) 應用程式](apps-add.md#app-types-in-microsoft-intune)，撰寫或為您的公司，IT 系統管理員會在內部部署應用程式。 Intune 可偵測是否已使用 SDK 建置應用程式，並允許 IT 系統管理員對其套用應用程式保護原則。 您可以跳到[啟用 iOS 或 Android 應用程式的應用程式保護原則](#enable-your-ios-or-android-app-for-app-protection-policy)這一節。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果您的應用程式將會發行到公開應用程式商店 (例如 Apple App Store 或 Google Play)：
 
