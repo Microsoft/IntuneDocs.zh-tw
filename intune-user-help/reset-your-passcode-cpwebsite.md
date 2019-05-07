@@ -1,71 +1,85 @@
 ---
-title: "如何從公司入口網站重設密碼 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 06/23/2017
+title: 如何從公司入口網站重設密碼 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 43460cb18681c47e14c89c8dbeb70a4ae006eb7d
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163423"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何從公司入口網站重設裝置密碼
 
-如果您在 Intune 中註冊的裝置遺失裝置 PIN 或密碼，您可以使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)重設密碼。 您可以使用公司入口網站來管理已在 Intune 註冊的電腦和裝置，而且就像使用公司入口網站應用程式一樣，可讓您執行大部分同樣的工作。
+如果您遺失裝置 PIN 或密碼，您可以使用[公司入口網站](https://portal.manage.microsoft.com)重設。  
 
-> [!NOTE]
-> 如果使用公司註冊的裝置，您在公司入口網站上可能不會看到 [重設密碼] 按鈕。 如果沒有看到該按鈕，您必須連絡公司支援人員為您重設密碼。
+如果您使用公司註冊的裝置，則可能不會看到重設裝置密碼的選項。 請連絡公司支援人員為您重設密碼。
 
-若要重設密碼：
+   > [!NOTE]
+   > 您無法重設執行 Android 7.0 和更新版本之裝置的密碼。 如果忘記密碼，您必須將此裝置重設為原廠設定。 
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/intune/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+## <a name="reset-your-passcode"></a>重設密碼
 
-2. 在 [我的裝置] 頁面上，選取您想要重設密碼的裝置名稱。
+1.  開啟[公司入口網站](https://portal.manage.microsoft.com)，然後選取 [功能表] 按鈕 > [裝置]。  
 
-  ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+2. 選取需要重設密碼的裝置。  
 
-3.  裝置會在快顯視窗中開啟。 選取 [重設密碼] 按鈕。
+    ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png) 
 
-    ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+3. 選取 [重設密碼]。 如果頁面頂端未顯示密碼選項，請選取 [其他 (...)] > [重設密碼]。   
 
-4.  會出現橫幅，要求您確認您想要重設密碼，而且完成之後您的裝置會將您登出。 然後您必須等候 5 分鐘，才能再次登入。
+   ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)   
 
-  ![重設密碼橫幅，與重設裝置密碼和使用者將如何登出的警告。使用者輸入的按鈕為 [登出] 和 [取消]。](./media/iwp-reset-passcode-popup.png)
+    ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)  
 
-5.  選取 [登出]，就會收到最後一個訊息，告訴您密碼從裝置移除的相關資訊。 如果您的裝置不在手邊，請勿移除密碼，因為任何能夠實際存取裝置的人都將能夠存取其上的大部分個人或公司資訊。 
+4. 出現提示時，按一下 [登出]。於再次出現提示時，重新登入。 您必須在五分鐘內重新登入公司入口網站，否則公司入口網站不會重設裝置密碼。  
 
-  ![第二個重設密碼橫幅，與重設裝置密碼和將會如何從裝置移除密碼的警告。 它也會建議如何前往裝置設定來設定新的密碼。](./media/iwp-reset-passcode-2nd-popup.png)
+   > [!NOTE]
+   > 您必須重新登入來確認身分識別。 這可防止惡意嘗試重設您的裝置密碼。
 
-  不同的裝置具有不同類型的密碼。
+   ![顯示登出公司入口網站提示的範例螢幕擷取畫面。 使用者輸入的按鈕為 [登出] 和 [取消]。](./media/iwp-reset-passcode-popup-1808.png)
 
-  **Android**：移除現有的密碼，並建立包含字母和數字的暫時密碼 
-  
-  > [!NOTE]
-  > 您無法重設 Android 7.0 和更新版本裝置的密碼。 如果您忘記密碼，則必須將這些裝置重設為原廠設定。
+5. 訊息將隨後出現，警告您即將移除現有的裝置密碼。 按一下 [重設密碼] 確認。  
+    > [!WARNING]
+    > 重設密碼之後，任何能夠實際存取裝置的人員將能存取其上的多數個人和公司資訊。 如果您目前沒有裝置，請不要重設密碼。  
 
-  **iOS**：移除現有的密碼，但不建立暫時密碼。 如果您使用 Touch ID 指紋掃描器來開啟裝置或進行購買，您必須再次設定指紋。
+   ![顯示第二則重設密碼訊息的範例螢幕擷取畫面。 包含連結以在文件中深入了解有關設定新密碼的資訊，以及用來重設密碼和取消的個別按鈕。](./media/iwp-reset-passcode-popup2-1808.png) 
 
-  **Windows 10 行動裝置版**：移除現有的密碼，並建立包含字母和數字的暫時密碼。 如果您使用 Windows Hello 臉部辨識登入，系統將繼續支援它。
+6. 如果您重設 iOS 裝置的密碼，將會移除其現有的密碼。 若為 Windows 或 Android 裝置，您會收到暫時密碼來解除鎖定裝置並設定新密碼。 
+
+   > [!NOTE]
+   > 您可以在公司入口網站的裝置詳細資料頁面下，找到 Windows 和 Android 裝置的暫時密碼。 如需更多特定 OS 密碼說明，請參閱[設定新密碼](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode)一節。  
+   
+7. 在您的裝置上，移至 [設定] 並變更暫時密碼。 
+
+8. 公司入口網站右上方會出現一個旗標。 按一下以閱讀通知並確認已成功重設密碼。  
+
+## <a name="set-up-a-new-passcode"></a>設定新密碼  
+
+本節說明每個裝置平台的重設密碼及暫時密碼行為。  
+
+**Android**：移除現有的密碼，並建立由字母和數字組成的暫時密碼。
+
+**iOS**：移除現有的密碼，但不建立暫時密碼。 如果您使用 Touch ID 指紋掃描器來開啟裝置或進行購買，您必須再次設定指紋。  
+
+**Windows 10 行動裝置版**：移除現有的密碼，並建立由字母和數字組成的暫時密碼。 如果已設定 Windows Hello 臉部辨識，此功能仍可於裝置使用。
     
-  **Windows Phone 8.1**：移除現有的密碼，並建立包含數字的暫時密碼
+**Windows Phone 8.1**：移除現有的密碼，並建立由數字組成的暫時密碼。  
 
-  針對 Android 和 Windows 裝置，暫時密碼會顯示在 [裝置詳細資料] 中。 
-
-6.  解除鎖定裝置並設定新密碼，或移至裝置的 [設定] 變更暫時密碼。
-
-若要查看密碼重設成功的確認通知，請按一下公司入口網站右上方的的通知旗標。
-
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

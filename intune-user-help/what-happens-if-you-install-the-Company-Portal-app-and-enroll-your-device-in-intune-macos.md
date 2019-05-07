@@ -1,26 +1,29 @@
 ---
-title: "安裝 macOS 公司入口網站應用程式 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 安裝 macOS 公司入口網站應用程式 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1601bb7-5397-44af-a2e2-9c370f23976f
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e9331a4ea77aae289d647a801ce4ed9d1ecfcb7
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55833752"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 中註冊您的 macOS 裝置，會發生什麼情況？
 
@@ -62,4 +65,4 @@ ms.lasthandoff: 12/12/2017
 
 -   當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 若允許自動同步檔案，可能會產生漫遊費用。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

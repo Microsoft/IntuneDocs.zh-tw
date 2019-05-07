@@ -1,59 +1,75 @@
 ---
-title: "建立 Intune 裝置組態設定檔"
-titlesuffix: Azure portal
-description: "了解如何建立 Intune 裝置組態設定檔。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 05/16/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune - Azure 中建立裝置設定檔 | Microsoft Docs
+description: 在 Microsoft Intune 中新增或設定裝置設定檔 (包括選取平台類型) 並在 Azure 入口網站中設定。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 12/18/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ab7a2f905a7eec33204516e07f0a5d2cda4e1d95
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aaa8692a17e7e78378905e79b4046727d91c7c92
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238875"
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中建立裝置組態設定檔
+# <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中選擇 [設定裝置]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-2. 在顯示設定檔清單的刀鋒視窗上，選擇 [建立設定檔]。
-3. 在 [建立設定檔] 刀鋒視窗中，指定下列各項：
-    - **名稱** - 為新的設定檔輸入敘述性的名稱。
-    - **描述** - 為設定檔輸入選擇性的描述。
-    - **平台** - 選擇您想要建立的設定檔之平台類型。
-    - **設定檔類型** - 選取您想要建立的設定檔類型。 可用類型清單會因所選平台而有所不同。
-    - **設定** - 請參閱下列主題，以了解每個設定檔類型有關設定的相關資訊︰
-        -  [裝置功能設定](device-features-configure.md)
-        -  [裝置限制設定](device-restrictions-configure.md)
-        -  [電子郵件設定](email-settings-configure.md)
-        -  [VPN 設定](vpn-settings-configure.md)
-        -  [Wi-Fi 設定](wi-fi-settings-configure.md)
-        -  [Windows 10 版本升級設定](edition-upgrade-configure-windows-10.md)
-        -  [憑證設定](certificates-configure.md)
-        -  [Windows 資訊保護設定](windows-information-protection-configure.md)
-        -  [教育設定](education-settings-configure.md)
-        -  [自訂設定](custom-settings-configure.md)
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
 
-    ![建立裝置設定檔](./media/create-device-profile.png)
-4. 進行完設定之後，請在 [建立設定檔] 刀鋒視窗中，選擇 [建立]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 
-設定檔隨即建立，並出現在 [設定檔清單] 刀鋒視窗上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+3. 輸入下列內容：
 
+   - **名稱**：為新的設定檔輸入描述性名稱。
+   - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+   - **平台**：選取平台類型：  
 
-### <a name="next-steps"></a>後續步驟
-如需如何指派裝置設定檔的相關資訊，請參閱[How to assign device profiles with Microsoft Intune](device-profile-assign.md) (如何以 Microsoft Intune 指派裝置設定檔)。
+       - **Android**
+       - **Android 企業**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 及更新版本**
+       - **Windows 10 及更新版本**
+
+   - **設定檔類型**：選取您想要建立的類型。 清單取決於您選擇的平台。
+   - **設定**：下列文章會描述每個設定檔類型的設定︰
+
+       -  [裝置功能](device-features-configure.md)
+       -  [裝置限制](device-restrictions-configure.md)
+       -  [端點保護](endpoint-protection-configure.md)
+       -  [Identity Protection](identity-protection-configure.md)  
+       -  [Kiosk](kiosk-settings.md)
+       -  [電子郵件](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  [Windows 10](education-settings-configure.md) 和 [iOS](wi-fi-settings-ios.md) 的教育
+       -  [Windows 10 版本升級](edition-upgrade-configure-windows-10.md)
+       -  [iOS 更新原則](software-updates-ios.md)
+       -  [憑證](certificates-configure.md)
+       -  [Windows 資訊保護](windows-information-protection-configure.md)
+       -  [自訂](custom-settings-configure.md)
+
+     ![建立設定檔的螢幕擷取畫面](./media/create-device-profile.png)
+
+4. 完成時選取 [建立]。
+
+會建立設定檔，而且會出現在清單中。
+
+## <a name="next-steps"></a>後續步驟
+[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

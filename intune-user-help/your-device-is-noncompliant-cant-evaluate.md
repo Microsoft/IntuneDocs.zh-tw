@@ -1,26 +1,29 @@
 ---
-title: "您的裝置不符合標準 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您的裝置不符合標準 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 31e491384b4605f6a5e5ce9a04b258f3cef93671
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9aec5cedb4874a9eb96ce5694a49fb475239ba86
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55849980"
 ---
 # <a name="your-device-is-noncompliant"></a>您的裝置不符合標準
 
@@ -28,4 +31,4 @@ ms.lasthandoff: 12/12/2017
 
 在公司入口網站應用程式中，點選 [檢查相容性]。 公司入口網站應用程式即會告訴您導致裝置不符合標準的原因。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

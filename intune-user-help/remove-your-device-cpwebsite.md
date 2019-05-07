@@ -1,45 +1,49 @@
 ---
-title: "從公司入口網站移除裝置 | Microsoft Docs"
-description: "從公司入口網站移除裝置"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+title: 從公司入口網站移除裝置 | Microsoft Docs
+description: 從公司入口網站移除裝置
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 10/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: adfce4c7b62181f5874f44f62f4b820b061538b0
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d8127d10cee17dd445e1830a8e15a278adfa55ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55848013"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>從公司入口網站移除裝置
 
-如果決定不想再由公司或組織管理您的裝置，您可以使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)從公司入口網站移除它。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。 如果移除裝置，公司入口網站將不再列出此裝置，而且您還可能無法再存取公司或學校的資料、應用程式和電子郵件。
+如果決定不想再由公司或組織管理您的裝置，您可以透過[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)從公司入口網站移除它。 如果您移除裝置，它將不再列出在公司入口網站中。 您可能也會無法存取您的組織資料、應用程式和電子郵件。
 
 若要移除裝置︰
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+1. 在[公司入口網站](https://portal.manage.microsoft.com)上，選取 [功能表] 按鈕 > [裝置]。  
 
-  ![公司入口網站的影像，畫面左邊是展開的側邊功能表，有 [首頁]、[所有應用程式]、[我的裝置]、[技術支援] 和 [登出] 按鈕。](/media/iwp-expanded-sidebar.png)
+2. 選取您要移除的裝置。  
 
-2. 在 [我的裝置] 頁面上，選取您想要移除的裝置名稱。
+    ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png) 
 
-    ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 選取 [移除]。 如果頁面頂端未顯示移除選項，請選取 [其他 (...)] > [移除]。  
 
-3.  裝置會在快顯視窗中開啟。 點選 [移除] 按鈕。
+   ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)  
+  
 
-    ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+    ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)   
 
-4. 閱讀警告訊息，然後點選 [移除] 以從公司入口網站移除您的裝置。
+4. 訊息隨即出現，警告您即將移除裝置。 選取 [移除] 以確認。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

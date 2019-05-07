@@ -1,49 +1,53 @@
 ---
-title: "支援的裝置 - Microsoft Intune"
-description: "列出 Intune 裝置管理所支援的裝置平台及瀏覽器"
-keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 11/06/2017
-ms.topic: get-started-article
-ms.prod: 
+title: Microsoft Intune 支援的作業系統和瀏覽器
+titleSuffix: ''
+description: 列出 Intune 裝置管理所支援的裝置平台及瀏覽器
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/03/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+search.appverid: MET150
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842485"
 ---
-# <a name="supported-devices-and-browsers"></a>支援的裝置與瀏覽器
+# <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-本文適用於負責管理企業裝置的系統管理員。 如需在手機上安裝 Intune 方面的協助，請參閱 [Using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) (使用受管理的裝置完成工作)。
+設定 Microsoft Intune 之前，請先檢閱支援的作業系統和瀏覽器。
 
-開始設定 Microsoft Intune 之前，請先檢閱下列需求︰
+如需在裝置上安裝 Intune 方面的協助，請參閱[使用受控裝置完成工作](/intune-user-help/company-portal-frequently-asked-questions)和 [Intune 網路頻寬用量](network-bandwidth-use.md)。
 
-- [支援的裝置和電腦](#intune-supported-devices)
-- [支援使用 Intune 的網頁瀏覽器清單](#intune-supported-web-browsers)
+如需設定服務提供者支援的詳細資訊，請瀏覽[設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) \(英文\)。
 
-您也應該進一步熟悉 [Intune 網路頻寬用量](network-bandwidth-use.md) ([傳統入口網站](/intune-classic/get-started/network-bandwidth-use))。
+## <a name="intune-supported-operating-systems"></a>Intune 支援的作業系統
 
-## <a name="intune-supported-devices"></a>支援 Intune 的裝置
+您可以管理執行下列作業系統的裝置：
 
-您可以使用 Intune 行動裝置管理來管理下列裝置：
+[!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+### <a name="supported-samsung-knox-standard-devices"></a>支援的 Samsung Knox Standard 裝置
 
-### <a name="supported-samsung-knox-standard-devices"></a>支援的 Samsung KNOX Standard 裝置
+若要避免導致 MDM 註冊失敗的 Knox 啟用錯誤，公司入口網站應用程式僅會在 MDM 註冊期間嘗試啟用 Samsung Knox (若[支援的 Knox 裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace) 中包含該裝置的話)。 如果裝置不支援 Samsung Knox 啟用，則會註冊為標準 Android 裝置。 相同 Samsung 裝置的某些型號可能支援 Knox，而其他則不支援。 在您購買及部署 Samsung 裝置之前，請先跟裝置轉銷商確認 Knox 相容性。
 
-公司入口網站應用程式僅會在 MDM 註冊期間嘗試啟用 Samsung KNOX (如果[支援的 KNOX 裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中包含該裝置的話)。 這有助於避免 KNOX 啟用錯誤而導致 MDM 註冊失敗。 如果裝置不支援 Samsung KNOX 啟用，則會註冊為標準 Android 裝置。 有些 Samsung 裝置型號可能支援 KNOX，而有些不支援。 在您購買及部署 Samsung 裝置之前，請先跟裝置轉銷商確認 KNOX 相容性。
+> [!NOTE]
+> 註冊 Samsung Knox 裝置可能會需要[啟用針對 Samsung 伺服器的存取](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) \(英文\)。 
 
-下列清單中的 Samsung 裝置型號不支援 KNOX，因此 Android 版公司入口網站應用程式會將其註冊為原生 Android 裝置：
+下列 Samsung 裝置型號清單不支援 Knox。 適用於 Android 的公司入口網站應用程式會將它們註冊為原生 Android 裝置：
 
 | **裝置名稱** | **裝置型號** |
 | --- | --- |
@@ -82,15 +86,14 @@ ms.lasthandoff: 11/14/2017
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune 無法用於管理 Windows Server 作業系統。
 
 ### <a name="windows-pc-software-client"></a>Windows 電腦軟體用戶端
 
-[Intune 軟體用戶端](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
+[Intune 軟體用戶端](manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
 
 <!--  ### Exchange ActiveSync management
 
-You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
+You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-management-with-exchange-activesync-and-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
 
 ## <a name="intune-supported-web-browsers"></a>Intune 支援網頁瀏覽器
 
@@ -106,9 +109,12 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 - Chrome (最新版本)
 - Firefox (最新版本)
 
+
+
+
 ### <a name="intune-classic-portal"></a>Intune 傳統入口網站
 
-Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
+Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com)) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
 
 下列 Silverlight 瀏覽器支援 Intune 主控台：
 - Internet Explorer 10 或更新版本

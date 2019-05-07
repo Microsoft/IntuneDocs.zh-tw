@@ -1,24 +1,29 @@
 ---
-title: "開發支援計劃"
-description: "本文可協助您開發 Microsoft Intune 部署的 Intune 支援計劃。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 開發支援計劃
+titleSuffix: Microsoft Intune
+description: 本文可協助您開發 Microsoft Intune 部署的 Intune 支援計劃。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9ff8643e854f96f464a5a393bfd780f07ea74164
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46b01a4b45e76ff290038bef57ee6a2def8e82b8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512611"
 ---
 # <a name="develop-a-support-plan"></a>開發支援計劃
 
@@ -80,7 +85,7 @@ Intune 支援訓練的議程範例如下。
 
 -   問答集
 
-[Intune 文件](https://docs.microsoft.com/intune/)提供 Intune 概觀、詳細的功能描述，以及一些疑難排解的資訊。 [Intune 論壇](https://social.technet.microsoft.com/Forums/en-US/home)是社群資源，適合 Intune 文件未涵蓋的問題和主題。
+[Intune 文件](https://docs.microsoft.com/intune/)提供 Intune 概觀、詳細的功能描述，以及一些疑難排解的資訊。 [Intune 論壇](https://social.technet.microsoft.com/Forums/home)是社群資源，適合 Intune 文件未涵蓋的問題和主題。
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>支援小組參與初期階段的機率為何？
 

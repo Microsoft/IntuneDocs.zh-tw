@@ -1,75 +1,93 @@
 ---
-title: "在 Android 裝置上使用受管理的應用程式 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 10/24/2016
+title: 在 Android 裝置上使用受管理的應用程式 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 01/09/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-searchScope: User help
-ROBOTS: 
-ms.reviewer: maxles
+searchScope:
+- User help
+ROBOTS: ''
+ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5099e7e476477258267b2ae6c94f48693a6f0253
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55841329"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
+將受管理的應用程式設定成符合您組織的安全性需求，以及保護工作和學校資料。 這些應用程式會在您的裝置上提供給您自動安裝或使用。 
 
-受管理應用程式是公司支援人員可以設定來協助保護公司資料的應用程式，您可以在該應用程式中存取這些資料。 當您在 Android 裝置上存取受管理應用程式中的公司資料時，可能會注意到，應用程式的運作方式與您的預期有點不同。 例如，您可能無法複製並貼上受保護的公司資料，或可能無法將該資料儲存至特定位置。
+在接收和安裝受管理的應用程式之前，您的組織會設定其權限。 這些權限可能會限制應用程式功能或使用者互動，以防止未經授權人士分享或看到應用程式資料。 例如，組織可以封鎖在應用程式中使用複製和貼上功能。 或者，他們可以限制您將資料儲存至您裝置的本機儲存體。
 
-不同的受管理應用程式也可能在您的裝置上一同運作，讓您可以執行日常工作，同時持續保護公司資料。 例如，如果您在一個受管理的應用程式中開啟公司檔案，而另一個受管理的應用程式被要求檢視該檔案，可讓您檢視檔案的受管理應用程式會自動開啟。 如果可用的特定動作的不必要的應用程式，像是開啟文件或存取網頁連結從受管理的文件，可能無法使用。
+為了發揮資料保護的最大功效，您的組織可能會設定數個搭配運作的受管理應用程式。 例如：
+1. 您在 Managed Browser 應用程式 (例如 Microsoft Edge) 中，連線到您組織的網路。
+2. 您按一下連結，開啟同儕的簡報檔案。
+3. 適當的受管理應用程式 (例如 Microsoft PowerPoint) 會開啟檔案。
 
-當您在受管理應用程式中存取公司資料時，您會看到如下的訊息，它可讓您知道您開啟的應用程式受到管理。
+組織可能會要求您使用受管理的應用程式來執行一些動作，例如開啟工作檔案或存取網頁連結。 如果您還沒有應用程式，您可能無法繼續執行工作。 某些受管理的應用程式可供您安裝，但並非必要。
 
-![open-managed-apps-message](./media/managed-apps-message.png)
+## <a name="how-do-i-know-im-using-a-managed-app"></a>如何得知我正在使用受管理的應用程式？
+當您第一次在受管理的應用程式中存取工作或學校資料時，您會收到類似以下範例螢幕擷取畫面的訊息。 該訊息會提示您重新啟動應用程式以繼續。
 
-## <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？
-您可利用數個不同方是取得受管理的應用程式︰
+![使用者在其裝置上開啟受管理的應用程式時，所顯示的訊息螢幕擷取畫面。 訊息指出：「您的組織目前並未保護此應用程式中的資料。 您必須重新啟動應用程式，才能繼續進行」。後面接著 [確定] 按鈕。](./media/managed-apps-message.png)
 
--   當您在 Microsoft Intune 中註冊您的裝置，可從公司入口網站應用程式或公司入口網站安裝應用程式，或者您公司的支援人員可能會將它安裝在您的裝置上。 若要深入了解註冊，請參閱[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)。
+## <a name="commonly-managed-apps"></a>經常受管理的應用程式  
+學校或工作場所中經常需要或可用的受管理應用程式範例包括：
 
--   您從 Play Store 安裝應用程式，然後使用由 Intune 管理的公司使用者帳戶登入。
+-   Microsoft Edge
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？
-以下是您公司的支援人員可以在應用程式中管理，以及可能影響您在裝置上與公司資料互動的一些選項範例︰
-
--   特定網站的存取
-
--   應用程式之間傳送資料
-
--   儲存檔案
-
--   複製和貼上作業
-
--   PIN 存取需求
-
--   您的登入，使用公司認證
-
--   備份至雲端的功能
-
--   擷取螢幕擷取畫面的功能
-
--   資料加密需求
-
-可能用來管理您的 IT 部門的一些常見應用程式如下：
-
--   Intune Managed Browser
-
--   Intune Image Viewer
-
--   Intune PDF Viewer
-
--   Intune AV Player
+-   Microsoft Outlook
 
 -   Microsoft Word、Excel 和 PowerPoint
 
-如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+## <a name="how-do-i-get-managed-apps"></a>如何取得受管理的應用程式？
+首先，您必須安裝公司入口網站，並視需要取得裝置管理。 然後，您可以透過三種方法來取得受管理的應用程式。
+* 您的組織會在註冊時，自動將應用程式安裝到您的裝置。 若要了解註冊，請參閱[在 Intune 註冊您的裝置](enroll-your-device-in-Intune-android.md)。
+* 您的組織讓您得以在公司入口網站使用受管理的應用程式。 前往公司入口網站應用程式或網站，可搜尋、檢視及安裝這些應用程式。 
+* 您從 Google Play 商店安裝應用程式，然後使用您的公司或學校帳戶登入應用程式。  
+
+ ## <a name="available-apps"></a>可用的應用程式   
+ 貴組織可以選取適合並對您在公司或學校有幫助的應用程式。 您只會在公司入口網站中找到這些應用程式。   
+
+ 這些應用程式也可依您的裝置類型提供給您。 例如，如果您使用 Android 公司入口網站應用程式，您將可存取 Android 應用程式，但無法存取 iOS 應用程式。   
+
+ ## <a name="request-an-app-for-work-or-school"></a>要求公司或學校用的應用程式   
+ 如需某個應用程式，但在公司入口網站中看不到，您可以要求該應用程式。 在公司入口網站應用程式的 [連絡 IT] 索引標籤中，尋找**技術服務人員**的連絡人詳細資料。您將會在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上找到相同的連絡人資訊。   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>公司支援人員可以在應用程式中管理的項目為何？  
+下列清單描述您公司的支援人員可於應用程式管理的設定。 這些設定會影響您在裝置上檢視、存取及使用工作或學校資料的方式：
+
+* 特定網站的存取  
+
+* 使用 Edge 和 Azure Active Directory Proxy 存取內部公司網站  
+
+* 應用程式的最低版本、作業系統版本
+
+* 在應用程式之間共用和傳輸資料的功能  
+
+* 儲存檔案的方式和位置  
+
+* 複製和貼上功能  
+
+* PIN 存取需求  
+
+* 使用公司認證登入的方式  
+
+* 將資料備份至雲端的功能  
+
+* 擷取螢幕擷取畫面的功能  
+
+* 資料加密需求  
+
+如需您裝置上受管理應用程式的詳細資訊，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

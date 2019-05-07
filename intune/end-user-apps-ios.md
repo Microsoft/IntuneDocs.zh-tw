@@ -1,28 +1,32 @@
 ---
-title: "iOS 使用者如何取得其應用程式"
-description: "讓終端使用者可以使用 iOS 應用程式的方法"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: iOS 使用者如何取得其應用程式
+description: 讓終端使用者可以使用 iOS 應用程式的方法
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/28/2016
-ms.topic: article
-ms.prod: 
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 72291be81df5e0358c9477a2749fb7d9d7cb8fdc
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394252"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 使用者如何取得其應用程式
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -47,7 +51,7 @@ Apple 限制禁止公司入口網站應用程式中列出企業營運應用程�
 
 ![iOS 公司入口網站應用程式畫面](./media/ios-cp-app-main-apps-screen.png)
 
-如需如何新增應用程式及將其放入這些磚的詳細資訊，請參閱[將已註冊裝置的應用程式新增至 Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)。
+如需如何新增應用程式的資訊，請參閱[如何將應用程式新增至 Microsoft Intune](apps-add.md)。
 
 ### <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)

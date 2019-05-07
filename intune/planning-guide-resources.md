@@ -1,23 +1,28 @@
 ---
-title: "用來規劃和設計 Intune 部署的範本與資源"
-description: "Intune 部署規劃和實作程序期間可能有用之規劃範本和其他 Intune 資訊的連結。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 用來規劃和設計 Intune 部署的範本與資源
+titleSuffix: Microsoft Intune
+description: Microsoft Intune 部署規劃和實作程序期間可能有用之規劃範本和其他 Intune 資訊的連結。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 38830370d3bac63e1c32b12f481db5be39de971d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 14c1dcef4479cbbe6606cf4bb107514a21d7ab21
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512656"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
 
@@ -50,7 +55,7 @@ ms.lasthandoff: 11/01/2017
 
 -   [Intune 部落格](https://blogs.technet.microsoft.com/enterprisemobility/) - 協助您了解 Intune 如何融入大型企業行動力願景的文章。
 
--   [Microsoft 信任中心](http://www.microsoft.com/TrustCenter/default.aspx) - 了解 Microsoft 在所有 Microsoft 雲端產品和服務中促進安全性、隱私權、合規性和透明度的方法。
+-   [Microsoft 信任中心](http://www.microsoft.com/TrustCenter) - 了解 Microsoft 在所有 Microsoft 雲端產品和服務中促進安全性、隱私權、合規性和透明度的方法。
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) - 想要對某項功能提出要求，或與其他客戶一起對某些功能進行投票嗎？ 透過 User Voice 提供有關 Intune 的意見反應。 我們很重視您的意見。
 

@@ -1,29 +1,33 @@
 ---
-title: "使用 Intune 管理大量採購的應用程式與書籍"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 管理及監視從市集大量採購之應用程式與書籍的使用狀況。"
-keywords: 
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 07/03/2017
-ms.topic: article
-ms.prod: 
+title: 使用 Microsoft Intune 管理大量採購的應用程式與書籍
+titleSuffix: ''
+description: 了解如何使用 Microsoft Intune 管理和監視從市集大量採購之應用程式與書籍的使用狀況。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 12/20/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 358e98d3e0183e89b4083387350ee01447ba0fa9
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 26f7b3b11aaafd8aad5e99e2967bc8e13e8ca1a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567409"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>使用 Microsoft Intune 管理大量採購的應用程式與書籍
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>簡介
 

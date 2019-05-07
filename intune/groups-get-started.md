@@ -1,27 +1,31 @@
 ---
-title: "Azure 入口網站中的 Intune 傳統群組"
-titleSuffix: Azure portal
-description: "了解 Intune Azure 入口網站中群組的新功能"
-keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angerobe
-ms.date: 01/18/2017
-ms.topic: article
-ms.prod: 
+title: Azure 入口網站中的 Intune 傳統群組
+titleSuffix: Microsoft Intune
+description: 了解 Microsoft Intune Azure 入口網站中群組的新功能。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 03/31/2019
+ms.topic: archived
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e912c14418d54321b0998dad3081f297ae81114d
+ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867427"
 ---
-# <a name="intune-classic-groups-in-the-azure-portal"></a>Azure 入口網站中的 Intune 傳統群組
+# <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure 入口網站中的 Microsoft Intune 傳統群組
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 我們已收到您的意見反應，將會對如何在 Microsoft Intune 中使用群組進行一些變更。
 如果您從 Azure 入口網站使用 Intune，則您的 Intune 群組即已遷移至 Azure Active Directory 安全性群組。

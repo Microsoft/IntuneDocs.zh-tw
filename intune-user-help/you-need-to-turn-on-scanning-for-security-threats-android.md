@@ -1,29 +1,36 @@
 ---
-title: "您必須開啟安全性威脅掃描 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您必須開啟安全性威脅掃描
+description: 了解如何在您的裝置上啟用安全性威脅掃描
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2eaa2da79f8ce85cef8c258dd17828f6639bba71
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810e2175faef422eb0ccf9bd24ac8d9b43aee92d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55846905"
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>您必須讓您的裝置能夠掃描安全性威脅
+# <a name="enable-security-threat-scans-on-your-device"></a>在您的裝置上啟用安全性威脅掃描 
+如果您在不知情的情況下安裝了不安全的應用程式，您的裝置資料可能會有風險。 若要保護您的裝置上的資料，建議您： 
 
-您的 Android 裝置能夠下載及安裝可完成各種工作的 App。 但並非所有 App 都相同，有些可能會造成問題。 通常建議只從已驗證的來源下載 App，例如 Google Play 商店。 您公司的支援人員已決定讓 Google 掃描要安裝的應用程式以確保它們是安全的，藉此對裝置上的資料提供額外保護。
+* 僅從已驗證的來源下載應用程式，例如 Google Play 商店。  
+* 在您的裝置上啟用安全性威脅掃描。 這些掃描是由 Google 執行，並確認應用程式可安全地進行安裝。  
 
-若要開啟掃描功能，您可以移至 [設定] > [Google] > [安全性]，然後開啟 [掃描裝置中的安全性威脅]。
+若要在您的裝置上啟用掃描，請移至[設定] > [Google] > [安全性]。 開啟**安全性威脅掃描**。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+在某些 Samsung 裝置上，您可以在 [設定] > [Google] > [安全性] > [Google Play 保護] 中找到設定。
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。 

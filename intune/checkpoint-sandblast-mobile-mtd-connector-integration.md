@@ -1,25 +1,29 @@
 ---
-title: "設定和 Intune 整合的 Check Point SandBlast"
-titlesuffix: Azure portal
-description: "設定和 Intune 整合的 Check Point SandBlast"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
+title: 整合 Check Point SandBlast MTD
+titleSuffix: Microsoft Intune
+description: 如何使用 Intune 設定 Check Point SandBlast Mobile Threat Defense (MTD) 解決方案，來控制行動裝置對公司資源的存取。
+keywords: ''
+author: brenduns
+ms.author: brenduns
+manager: dougeby
 ms.date: 07/03/2017
-ms.topic: article
-ms.prod: 
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: a4560ab65ecd1d30492ae2a1a2f136511195c674
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+search.appverid: MET150
+ms.custom: intune-azure; seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28c2feb06e27dc87870ba81a180f46687571774e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508395"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>整合 Check Point SandBlast Mobile 與 Intune
 
@@ -66,9 +70,9 @@ Check Point SandBlast 應用程式授權程序是由下列項目所組成：
 
 4.  從 [MDM Service] (MDM 服務) 下拉式清單中選擇 [Microsoft Intune]。
 
-5.  一旦將 Microsoft Intune 設為 MDM 服務，[Microsoft Intune 設定] 視窗就會出現，選擇 [Add to my organization] (新增至我的組織) 接受每個裝置平台：iOS、 Android 和 Windows 授權 Check Point SandBlast Mobile 與 Intune 和 Azure AD 進行通訊。
+5.  一旦將 Microsoft Intune 設為 MDM 服務，[Microsoft Intune 設定] 視窗就會出現，選擇 [Add to my organization] \(新增至我的組織) 接受每個裝置平台：iOS、 Android 和 Windows 授權 Check Point SandBlast Mobile 與 Intune 和 Azure AD 進行通訊。
 
-    ![Check Point MTD Intune 設定](./media/checkpoint-MTD-1.PNG)
+    ![顯示 Check Point MTD Intune 設定的影像](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > 您必須新增所有裝置平台，才能繼續下一個步驟。

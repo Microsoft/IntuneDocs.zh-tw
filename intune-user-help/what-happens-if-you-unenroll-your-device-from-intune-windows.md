@@ -1,26 +1,29 @@
 ---
-title: "如果取消註冊 Windows 裝置，會發生什麼情況？ | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 如果取消註冊 Windows 裝置，會發生什麼情況？ | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 710f91f72d9cf97acd0ac117b003eeb542449515
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c28d5b122bda537d4707bc0fdc2bfc74bcb823a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55847279"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>如果從 Intune 取消註冊 Windows 裝置，會發生什麼情況？
 
@@ -85,4 +88,4 @@ ms.lasthandoff: 12/12/2017
 
 -   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

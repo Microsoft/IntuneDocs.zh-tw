@@ -1,81 +1,136 @@
 ---
-title: "iOS 裝置的 Intune Wi-Fi 設定"
-titleSuffix: Azure portal
-description: "了解您可用於設定 iOS 裝置上 Wi-Fi 連線的 Intune 設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 02/15/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune 中設定 iOS 裝置的 Wi-Fi 設定 - Azure | Microsoft Docs
+titleSuffix: ''
+description: 建立或新增適用於 iOS 裝置的 WiFi 裝置組態設定檔。 請查看不同的設定，包括在 Microsoft Intune 中新增憑證、選擇 EAP 類型，以及選取驗證方法。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 10/18/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
-ms.reviewer: heenamac
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 07e9a0ba825b76bf46791835e2d76a03c179f226
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 91e69fed37f9a6171ef72d3c01e2de9a31bbcaed
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566296"
 ---
-# <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中 iOS 裝置的 Wi-Fi 設定
+# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 iOS 裝置的 Wi-Fi 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 iOS 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKS 或 SCEP 憑證等等。
 
+這些 Wi-Fi 設定分為兩種類別：基本設定和企業層級設定。
 
+本文說明了這些設定。
 
-## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>適用於基本設定檔與企業設定檔的 Wi-Fi 設定
+## <a name="before-you-begin"></a>開始之前
 
-- **網路名稱** - 輸入此 Wi-Fi 連線的名稱。 這是使用者瀏覽裝置上的可用連線清單時所見到的名稱。
-- **SSID** - 簡短的服務組識別元。 這是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您所建立的上列網路名稱。
-- **自動連線** - 當裝置進入此網路的範圍內時自動連線。
-- **隱藏的網路** - 禁止此網路顯示在裝置的可用網路清單中。
-- **Proxy 設定** - 選擇下列其中一項︰
-    - **無** - 不設定任何 Proxy 設定。
-    - **手動** - 輸入 **Proxy 伺服器位址** (IP 位址)，以及其所關聯的**連接埠號碼**。
-    - **自動** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+[建立裝置設定檔](device-profile-create.md)。
 
-## <a name="wi-fi-settings-for-basic-profiles-only"></a>僅適用於基本設定檔的 Wi-Fi 設定
+## <a name="basic-profiles"></a>基本設定檔
 
-- **安全性類型** - 選取向 Wi-Fi 網路驗證時所要使用的安全性通訊協定︰
-    - **開放 (無驗證)** - 只在網路不安全時才使用此選項。
-    - **WPA/WPA2 - 個人**
-    - **4**
+- **Wi-Fi 類型**：選擇 [基本]。
+- **網路名稱**：輸入此 Wi-Fi 連線的名稱。 此值是使用者瀏覽裝置上的可用連線清單時所見到的名稱。
+- **SSID**：[服務組識別元] (service set identifier) 的縮寫。 此內容是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的網路名稱。
+- **自動連線**：選擇 [啟用] 可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用] 可防止裝置自動連線。
+- **隱藏的網路**：如果未廣播網路的 SSID，請選擇 [啟用]。 如果已廣播並顯示網路的 SSID，請選擇 [停用]。
+- **安全性類型**：選取向 Wi-Fi 網路驗證時要使用的安全性通訊協定。 選項包括：
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>僅適用於企業設定檔的 Wi-Fi 設定
+  - **開放 (無驗證)**：只有在網路不安全時才使用此選項。
+  - **WPA/WPA2 - Personal**：在 [預先共用金鑰] 中輸入密碼。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。
+  - **4**
 
-- **EAP 類型** - 選擇可延伸驗證通訊協定 (EAP) 類型，以驗證下列類型的安全無線連線：
-    - **EAP-FAST**
-    - **EAP-SIM**
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **LEAP**
-    - **PEAP**
+- **Proxy 設定**：選項包括：
+  - **無**：不設定任何 Proxy 設定。
+  - **手動**：輸入 **Proxy 伺服器位址**作為 IP 位址，以及其**連接埠號碼**。
+  - **自動**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 `http://proxy.contoso.com`)。
 
-### <a name="further-options-when-you-choose-an-eap-type"></a>當您選擇 EAP 類型的其他選項
+## <a name="enterprise-profiles"></a>企業設定檔
 
+- **Wi-Fi 類型**：選擇 [企業]。
+- **SSID**：[服務組識別元] (service set identifier) 的縮寫。 此內容是裝置要連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的網路名稱。
+- **自動連線**：選擇 [啟用] 可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用] 可防止裝置自動連線。
+- **隱藏的網路**：選擇 [啟用] 可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用] 可在裝置的可用網路清單中顯示此網路。
 
-|設定名稱|詳細資訊|使用時機|
-|--------------|-------------|----------|
-|**受保護的存取認證 (PAC) 設定**|請選取此項目，以使用受保護的存取認證，用來建立用戶端與驗證伺服器之間已驗證的通道。 選取下列其中一項︰<br>- **使用 PAC** - 若已有 PAC 檔案，即使用現有的 PAC 檔案。<br>- **使用及佈建 PAC** - 將 PAC 檔案佈建到您的裝置。<br>- **匿名使用及佈建 PAC** - 將 PAC 檔案佈建到您的裝置，並確定已佈建 PAC 檔案，所以無須驗證伺服器。|EAP 類型是 **EAP-FAST**|
+- **EAP 類型**：選擇用來驗證安全無線連線的可延伸驗證通訊協定 (EAP) 類型。 選項包括：
 
-#### <a name="server-trust"></a>伺服器信任
+  - **EAP-FAST**：輸入**受保護的存取認證 (PAC) 設定**。 此選項使用受保護的存取認證，用來建立用戶端與驗證伺服器之間已驗證的通道。 選項包括：
+    - **請勿使用 (PAC)**
+    - **使用 (PAC)**：如果現有的 PAC 檔案已存在，請使用它。
+    - **使用及佈建 PAC**：建立 PAC 檔案並新增到您的裝置。
+    - **使用及匿名佈建 PAC**：建立 PAC 檔案，並在未向伺服器驗證的情況下新增到您的裝置。
 
+  - **EAP-SIM**
 
-|設定名稱|詳細資訊|使用時機|
-|--------------|-------------|----------|
-|**憑證伺服器名稱**|指定您信任之憑證授權單位 (CA) 核發行的憑證中所用的一或多個通用名稱。 如有提供此資訊，可以略過連線到此 Wi-fi 網路時，使用者裝置上顯示的動態信任對話方塊。|EAP 類型是 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**。|
-|**伺服器驗證時使用的根憑證**|選擇信任的根憑證設定檔來驗證連線。 |EAP 類型是 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
-|**識別隱私權 (外部識別)**|指定在回應 EAP 識別要求時傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。|EAP 類型是 **PEAP**|
+  - **EAP-TLS**：另請輸入：
 
+    - **伺服器信任** - **憑證伺服器名稱**：[ 新增] 您信任之憑證授權單位 (CA) 核發的憑證中所使用的一或多個通用名稱。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
+    - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
 
-#### <a name="client-authentication"></a>用戶端驗證
+      按一下 [確定] 以儲存您的變更。
 
+    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)**：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
-|設定名稱|詳細資訊|使用時機|
-|--------------|-------------|----------|
-|**用戶端驗證時使用的用戶端憑證 (識別憑證)**|選擇 SCEP 或 PKCS 憑證設定檔，以驗證連線。|EAP 類型是 **EAP-TLS**|
-|**驗證方法**|選取連線的驗證方法：<br>- **憑證** - 選取 SCEP 或 PKCS 用戶端憑證作為提供給伺服器的身分識別憑證。<br><br>- **使用者名稱及密碼** - 指定不同的驗證方式。 <br><br>若選取 [使用者名稱及密碼]，請設定︰<br><br>-  **非 EAP 方法 (內部識別)**，然後再選取驗證連線的方式︰<br>- **無**<br>- **未加密的密碼 (PAP)**<br>- **Challenge Handshake 驗證通訊協定 (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 第 2 版 (MS-CHAP v2)**<br>可用的選項取決於您所選取的 EAP 類型。<br><br>**及**<br><br>- **識別隱私權 (外部識別)** - 指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。|EAP 類型是 **EAP-TTLS**或 *。
+      按一下 [確定] 以儲存您的變更。
+
+  - **EAP-TTLS**：另請輸入：
+
+    - **伺服器信任** - **憑證伺服器名稱**：[ 新增] 您信任之憑證授權單位 (CA) 核發的憑證中所使用的一或多個通用名稱。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
+    - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
+
+      按一下 [確定] 以儲存您的變更。
+
+    - **用戶端驗證** - 選擇 [驗證方法]。 選項包括：
+
+      - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 另請輸入：
+        - **非 EAP 方法 (內部識別)**：選擇驗證連線的方式。 請務必選擇與您的 Wi-Fi 網路設定相同的通訊協定。
+
+          選項包括：[未加密的密碼 (PAP)]、[Challenge Handshake 驗證通訊協定 (CHAP)]、[Microsoft CHAP (MS-CHAP)]，或 [Microsoft CHAP 第 2 版 (MS-CHAP v2)]
+
+      - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+
+        按一下 [確定] 以儲存您的變更。
+
+      - **識別隱私權 (外部識別)**：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
+
+  - **LEAP**
+
+  - **PEAP**：另請輸入：
+
+    - **伺服器信任** - **憑證伺服器名稱**：[ 新增] 您信任之憑證授權單位 (CA) 核發的憑證中所使用的一或多個通用名稱。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
+    - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 當用戶端連線到網路時，會向伺服器提供此憑證，並用來驗證連線。
+
+      按一下 [確定] 以儲存您的變更。
+
+    - **用戶端驗證** - 選擇 [驗證方法]。 選項包括：
+
+      - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 
+
+      - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+
+        按一下 [確定] 以儲存您的變更。
+
+      - **識別隱私權 (外部識別)**：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
+
+- **Proxy 設定**：選項包括：
+  - **無**：不設定任何 Proxy 設定。
+  - **手動**：輸入 **Proxy 伺服器位址**作為 IP 位址，以及其**連接埠號碼**。
+  - **自動**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL] (例如 `http://proxy.contoso.com`)。
+
+選取 [確定] > [建立] 儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
+
+## <a name="next-steps"></a>後續步驟
+
+設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+
+## <a name="more-resources"></a>其他資源
+
+[Wi-Fi 設定概觀](wi-fi-settings-configure.md)，包括其他可用平台。

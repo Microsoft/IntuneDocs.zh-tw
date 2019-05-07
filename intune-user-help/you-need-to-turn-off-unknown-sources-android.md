@@ -1,24 +1,28 @@
 ---
-title: "您必須關閉不明來源 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 01/11/2017
+title: 您必須關閉不明來源 | Microsoft Docs
+titlesuffix: Microsoft Intune
+description: 必須停用來自未知來源的安裝。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 12/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-searchScope: User help
-ROBOTS: 
-ms.custom: intune-enduser
-ms.openlocfilehash: e3177d6cd7684662d26e827aa8640abb0ed1317c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+searchScope:
+- User help
+ROBOTS: ''
+ms.custom: intune-enduser; seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7ccaa9d12c7a7b187f612edad2177882fff2420c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55846072"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>您必須關閉不明來源
 
@@ -28,4 +32,4 @@ ms.lasthandoff: 12/12/2017
 
 關閉 [未知來源] 之後，可能需要過幾分鐘，您才能繼續使用 Android 裝置來存取公司或學校的資料。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

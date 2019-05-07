@@ -1,56 +1,62 @@
 ---
-title: "設定 Windows 10 的 Intune 教育設定"
-titleSuffix: Azure portal
-description: "了解如何在管理的裝置上使用 Intune 來設定 Windows 10 教育設定。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/12/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune 中新增或設定教育設定 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中，於 Windows 10 和更新版本之裝置上的裝置組態設定檔中使用 [進行測驗] 應用程式。 使用 [教育] 設定建立組態設定檔，然後輸入測驗應用程式 URL、選擇使用者登入方式、在測驗期間監視畫面，以及在測驗期間允許或防止文字建議。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 01/10/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: efa990e12416c292d9446428165e4bff99c7eca2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393211"
 ---
-# <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 10 教育設定
+# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>在 Microsoft Intune 中，於 Windows 10 裝置上使用 [進行測驗] 應用程式
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-教育設定檔可讓您指定設定 Windows「進行測驗」應用程式的詳細資料，包括帳戶詳細資料和測驗 URL。 當您設定此項目時，「進行測驗」應用程式會以您指定的測驗開啟，且裝置將無法執行其他應用程式，直到測驗完成為止。
+Intune 中的教育設定檔是專為學生在裝置上進行測驗或考試而設計的。 此功能包括 [進行測驗] 應用程式，以及新增測驗 URL，選擇使用者登入測驗之方式的設定等。 此功能支援下列平台：
 
-如需進行測驗應用程式的詳細資料，請參閱[在 Windows 10 中進行測驗](https://docs.microsoft.com/education/windows/take-tests-in-windows-10)。
+- Windows 10 及更新版本
 
-## <a name="create-a-device-profile-containing-education-profile-settings"></a>建立包含教育設定檔設定的裝置設定檔
+當使用者登入時，[進行測驗] 應用程式會自動開啟您所輸入的測驗。 在測驗過程中，裝置上無法執行任何其他應用程式。 [在 Windows 10 中進行測驗](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) \(部分機器翻譯\) 提供了有關 [進行測驗] 應用程式的更多詳細資料。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為裝置限制設定檔輸入 [名稱] 及 [描述]。
-5. 從 [平台] 下拉式清單中，選取 [Windows 10 及更新版本]。
-6. 從 [設定檔類型] 下拉式清單中，選擇 [教育設定檔]。 
-7. 選擇 [設定] > [設定]，然後在 [進行測驗] 刀鋒視窗上，設定下列各項：
-    - **帳戶使用者名稱**：輸入用於「進行測驗」之帳戶的使用者名稱。 這可以是網域帳戶、Azure Active Directory (AAD) 帳戶，或是本機電腦帳戶。
-    - **評定 URL**：提供您要讓使用者進行之測驗的 URL。 如需詳細資訊，請參閱《進行測驗》文件。
-    - **畫面監視**：指定您是否要在使用者進行測驗時監視畫面活動。
-    - **文字建議**：允許或封鎖使用者進行測驗時的文字建議功能。
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+本文列出在 Microsoft Intune 中建立裝置組態設定檔的步驟。 它還包括用於閱讀和了解 Windows 10 裝置可用的教育設定的資訊。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
+## <a name="create-a-device-profile"></a>建立裝置設定檔
+
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入下列內容：
+
+    - **名稱**：為新的設定檔輸入描述性名稱。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選擇 [Windows 10 及更新版本]。
+    - **設定檔**：選擇**教育設定檔**。
+
+4. 輸入您要設定的設定：
+
+    - [Windows 10 及更新版本](education-settings-windows.md)
+
+5. 選取 [確定] > [建立] 儲存您的變更。
+
+輸入您的設定並建立設定檔之後，您的設定檔會顯示在 [設定檔] 清單中。 接下來，請[將此設定檔指派給一些群組](device-profile-assign.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+查看 [Windows 10 教育設定](education-settings-windows.md)的清單及其描述。
 
-
-
+[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

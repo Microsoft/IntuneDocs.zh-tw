@@ -1,24 +1,27 @@
 ---
-title: "您必須將 Symantec Endpoint Protection Mobile 安裝到您的 iOS 裝置 | Microsoft Docs"
-description: "了解如何將 SEP Mobile 安裝到 iOS 裝置。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您必須將 Symantec Endpoint Protection Mobile 安裝到您的 iOS 裝置 | Microsoft Docs
+description: 了解如何將 SEP Mobile 安裝到 iOS 裝置。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: b66871ce4fa968e61152ffc99741a78a454f6579
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55850551"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>在 iOS 裝置上安裝 Symantec Endpoint Protection Mobile
 
@@ -44,5 +47,5 @@ ms.lasthandoff: 12/12/2017
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/sep-mobile/id695620821)安裝 SEP Mobile。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 

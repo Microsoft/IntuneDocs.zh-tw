@@ -1,30 +1,34 @@
 ---
-title: "利用 Intune 的條件式存取"
-titlesuffix: Azure portal
-description: "了解如何在 Microsoft Intune 中定義使用者與裝置在存取公司資源之前必須符合的條件。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 05/23/2017
-ms.topic: get-started-article
-ms.prod: 
+title: Microsoft Intune 的條件式存取
+titleSuffix: Microsoft Intune
+description: 了解如何在 Microsoft Intune 中定義使用者、裝置和應用程式在存取公司資源之前必須符合的條件。
+keywords: ''
+author: brenduns
+ms.author: brenduns
+manager: dougeby
+ms.date: 03/06/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 1cd12a105142d5e537da487e3bd9297ef83ddcb3
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+search.appverid: MET150
+ms.custom: intune-azure; get-started
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569489"
 ---
 # <a name="whats-conditional-access"></a>什麼是條件式存取？
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本主題會先說明適用於 Enterprise Mobility + Security (EMS) 的條件式存取，接著說明使用 Intune 時的條件式存取常見案例。
+條件式存取是指您可以控制可連線到您電子郵件和公司資源的裝置與應用程式的方式。 在本主題中，深入了解以裝置和應用程式為基礎的條件式存取，並尋找搭配 Intune 使用條件式存取的常見案例。
 
 Enterprise Mobility + Security (EMS) 的條件式存取不是一項獨立產品，它是參與屬於 EMS 之所有服務與產品的解決方案。 它提供更細微的存取控制來保障您公司資料的安全，同時為使用者提供體驗，讓他們能夠從任何裝置及從任何位置完成最佳工作成果。
 
@@ -37,7 +41,7 @@ Enterprise Mobility + Security (EMS) 的條件式存取不是一項獨立產品�
 
 ## <a name="conditional-access-with-intune"></a>利用 Intune 的條件式存取
 
-Intune 會新增行動裝置合規性和應用程式管理原則，以支援 EMS 條件式存取方案。
+條件式存取是 Azure Active Directory Premium 授權中包含的 Azure Active Directory 功能。 Intune 透過新增行動裝置合規姓與行動應用程式管理到解決方案以加強其功能。 
 
 ![使用 EMS 時的 Intune 和條件式存取](./media/intune-with-ca-1.png)
 

@@ -1,27 +1,31 @@
 ---
-title: "Intune 基本設定"
-description: "本文提供設定 Microsoft Intune 的必要步驟。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/12/2017
-ms.topic: article
-ms.prod: 
+title: Microsoft Intune 基本設定
+description: 本文提供設定 Microsoft Intune 的必要步驟。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 03/04/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a9f16c563ff0416092abe3812b3505c2f6d92587
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512894"
 ---
 # <a name="basic-setup"></a>基本設定
 
-完成環境評估之後，即可開始設定 Intune。
+評估環境之後，即可開始設定 Microsoft Intune。
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a>Intune 部署的外部相依性
 
@@ -29,11 +33,11 @@ ms.lasthandoff: 07/12/2017
 
 Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組提供者。 深入了解：
 
--  [身分識別需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+-  [身分識別需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [目錄同步作業需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+-   [目錄同步作業需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [多因素驗證 (MFA) 需求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+-   [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 -   [規劃您的使用者和裝置群組](users-add.md)
 
@@ -56,7 +60,7 @@ Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組�
 
 移轉至 Intune 之前，您必須先訂閱 Intune。
 
--   您可以瀏覽[此頁面](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)，其中包含下列作業的指示︰
+-   您可以瀏覽[此頁面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)，其中包含下列作業的指示︰
 
     -   建立連結至新的 AAD 租用戶的全新 Intune 訂閱。
 

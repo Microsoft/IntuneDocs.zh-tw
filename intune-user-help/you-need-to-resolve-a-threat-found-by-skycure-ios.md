@@ -1,48 +1,56 @@
 ---
-title: "解決 Symantec Endpoint Protection Mobile for iOS 找到的威脅 | Microsoft Docs"
-description: "了解如何修正 iOS 裝置上找到的威脅。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/25/2017
+title: 解決 Symantec Endpoint Protection Mobile for iOS 找到的威脅 | Microsoft Docs
+description: 了解如何修正 iOS 裝置上找到的威脅安全性、病毒和應用程式威脅。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 10/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8353b704df7ebdc648e5b223b80e656ca05956a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55848673"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解決 Symantec Endpoint Protection Mobile 找到的威脅
 
-Symantec Endpoint Protection Mobile 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式和檔案。 您可能會看到類似下列這則訊息：
+Symantec Endpoint Protection (SEP) Mobile 是 Mobile Threat Defender 服務，可在您的 Android 裝置上找到潛在威脅。 這些威脅會回報給公司入口網站應用程式，並顯示為尚未解決、不符合要求的問題。 如果您的裝置識別為不符合要求，您可能無法：
 
-![來自 Symantec Endpoint Protection Mobile 的不符合規範訊息](./media/ios-skycure-noncompliant-in-ssp.png)
+* 連線到公司電子郵件
+* 連線到公司 Wi-Fi
+* 連線到 SharePoint Online
+* 使用 OneDrive 同步公司檔案
+* 存取公司應用程式
 
-若要解決此問題，請開啟 Symantec Endpoint Protection Mobile 應用程式，並遵循應用程式中顯示的指示。
+本文描述如何在 SEP Mobile 偵測到安全性或應用程式威脅時，重新取得您公司資源的存取權。  
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>在已註冊裝置受到封鎖而無法存取電子郵件或檔案時可能會看見的畫面
+## <a name="troubleshoot-a-virus-or-security-threat"></a>針對病毒或安全性威脅進行疑難排解
 
-如果您在已註冊裝置上具有病毒或其他安全性威脅的情況下，嘗試存取公司電子郵件或檔案，您可能會看到類似下列這則訊息：
+1. 當您嘗試存取公司電子郵件或網站時，您會收到類似下面螢幕擷取畫面中所示的訊息。 點選**裝置管理入口網站**連結，開啟[公司入口網站](https://portal.manage.microsoft.com/devices)。
 
-![具有「公司入口網站」網站連結的 Skycure 錯誤訊息](./media/mtd-go-to-device-management-portal-android.png)
+    ![Lookout for Work 錯誤訊息的範例螢幕擷取畫面，含有公司入口網站連結和藍色 [確定] 按鈕。](./media/mtd-go-to-device-management-portal-android.png)  
 
-點選 [裝置管理入口網站] 連結以移至[「公司入口網站」網站](https://portal.manage.microsoft.com#HelpDeskDialog)，您將能在那裡看見修正該問題的指示。
+2. 選取您的裝置。  
+3. 閱讀出現在您裝置下方的警告。 警告會指示您開啟 SEP Mobile，以修正病毒或安全性威脅。    
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile 視為威脅的應用程式範例
+    ![顯示 SEP Mobile 警告之公司入口網站裝置頁面的範例螢幕擷取畫面。](./media/CP-lookout-virus-banner-1808.png)
 
-如果您已安裝 Symantec Endpoint Protection Mobile 視為威脅的應用程式，則 Symantec Endpoint Protection Mobile 會在應用程式中通知您。
+## <a name="troubleshoot-an-app-threat"></a>針對應用程式威脅進行疑難排解
 
-點選畫面頂端顯示的應用程式名稱，然後遵循指示以移除威脅。
+如果您安裝的應用程式經判斷會對您的裝置造成威脅，您會在 SEP Mobile 應用程式中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
 
-當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
+若要解決此問題，請從 SEP Mobile 的威脅清單中選取應用程式。 然後遵循畫面上的指示移除並解除安裝應用程式。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。   
 

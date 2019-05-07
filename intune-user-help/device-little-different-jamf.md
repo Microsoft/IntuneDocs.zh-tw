@@ -1,26 +1,29 @@
 ---
-title: "此裝置稍有不同 | Microsoft Docs"
-description: "深入了解啟用 Intune 且由 Jamf 管理的 macOS 裝置。"
+title: 如果使用 Jamf 自助服務可能看到的錯誤 | Microsoft Docs
+description: 深入了解啟用 Intune 且由 Jamf 管理的 macOS 裝置。
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 10/13/2017
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 56771f9f-0583-4df8-b3e9-3f0d8edee172
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d1749d2b40a83ddbc8b869bc33329f6c891a97e4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55851537"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>在 Jamf 管理的 macOS 裝置上執行動作
 
@@ -28,4 +31,8 @@ ms.lasthandoff: 11/08/2017
 
 如果您的 macOS 裝置有合規性問題，請按一下 [解決] 按鈕，啟動 [自助]。
 
-是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://portal.manage.microsoft.com)中找到他們的連絡資訊。
+__如果看到 "AccountNotOnboarded" 或「已註冊裝置」該怎麼辦__
+
+如已開啟公司入口網站應用程式，並出現訊息指出 "AccountNotOnboarded"，您需要結束公司入口網站應用程式，並移至 [應用程式] > [自助]。 貴公司有您需要安裝的裝置註冊原則。 按一下原則安裝它，然後再次開啟公司入口網站。
+
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。

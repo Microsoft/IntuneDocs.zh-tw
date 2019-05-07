@@ -1,41 +1,53 @@
 ---
-title: "解決 Zimperium zIPS 在 iOS 上找到的威脅 | Microsoft Docs"
-description: "了解如何修正 iOS 裝置上找到的威脅。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/25/2017
+title: 解決 Zimperium zIPS 在 iOS 上找到的威脅 | Microsoft Docs
+description: 了解如何修正 iOS 裝置上找到的威脅。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 10/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaccd9c0-cd46-48e2-8675-4c022c74f672
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 32bd0436c6d883bb351a4e00bda181ab820a94d4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6affa9f3577d71ba8e0794454987860f183446ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55841152"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>您必須解決 Zimperium zIPS 找到的威脅
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>解決 Zimperium zIPS 找到的威脅
 
-Zimperium zIPS 在您的裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 您會看到的訊息取決於 Zimperium zIPS 在您裝置上找到的問題。
+Zimperium zIPS 是 Mobile Threat Defender 服務，可在您的 iOS 裝置上找到潛在威脅。 這些威脅會回報給公司入口網站應用程式，並顯示為尚未解決、不符合要求的問題。 如果您的裝置識別為不符合要求，您可能無法：
 
-若要修正此問題，請開啟 Zimperium zIPS 應用程式，並遵循其中顯示的指示。
+* 連線到公司電子郵件
+* 連線到公司 Wi-Fi
+* 連線到 SharePoint Online
+* 使用 OneDrive 同步公司檔案
+* 存取公司應用程式
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>在已註冊裝置受到封鎖而無法存取電子郵件或檔案時可能會看見的畫面
+本文說明如何辨識 Zimperium zIPS 威脅警示及其解決方式。 
 
-如果您的已註冊裝置具有病毒或其他安全性威脅，並且嘗試存取公司電子郵件或檔案，則來自 Zimperium zIPS 的訊息會警告您採取動作。
+## <a name="troubleshoot-virus-or-security-threat"></a>針對病毒或安全性威脅進行疑難排解  
+如果偵測到病毒或安全性威脅，Zimperium zIPS 會根據您組織的存取原則來強制執行限制。 您公司的存取原則可能讓您無法從裝置存取公司網路、應用程式和電子郵件。  
 
-點選 [裝置管理入口網站] 連結以移至[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)，您可以在其中遵循如何修正問題的指示。
+Zimperium zIPS 會提示您採取動作，重新取得失去的存取權。 選取威脅，然後遵循應用程式中的指示予以解決。
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Zimperium zIPS 視為威脅的應用程式範例
+由於應用程式與您公司的 MDM 提供者整合，因此您也會在公司入口網站應用程式中看到限制存取的相關警告。 該警告會指示您開啟 Zimperium zIPS，以修正病毒或安全性威脅。  
 
-如果您已安裝 Zimperium zIPS 視為威脅的應用程式，應用程式會提醒您裝置上已安裝不可信賴的應用程式。
+  ![公司入口網站裝置頁面顯示 Zimperium zIPS 警告的範例螢幕擷取畫面。](./media/CP-lookout-virus-banner-1808.png)  
+  
+## <a name="troubleshoot-an-app-threat"></a>針對應用程式威脅進行疑難排解
 
-發生此情況時，請解除安裝應用程式，以立即重新存取公司電子郵件和資料。 如果未解除安裝應用程式，在解除安裝應用程式之前，您將會失去電子郵件和資料的存取權。
+如果您安裝的應用程式經判斷會對您的裝置造成威脅，您會在 Zimperium zIPS 中收到通知。 如果受影響的應用程式保留在您的裝置上，您將無法存取公司資源。  
 
-是否仍需要協助？ 請連絡 IT 系統管理員。如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+為解決此問題，請從 Zimperium zIPS 的威脅清單中選取應用程式。 然後遵循畫面上的指示移除並解除安裝應用程式。  
+
+是否仍需要協助？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。   

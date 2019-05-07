@@ -1,26 +1,29 @@
 ---
-title: "如果取消註冊 Android 裝置，會發生什麼情況？ | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 如果取消註冊 Android 裝置，會發生什麼情況？ | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1df8203b48e87dc58874bd25f736b878cc5c4ce5
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55837421"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>如果從 Intune 取消註冊 Android 裝置，會發生什麼情況？
 
@@ -40,4 +43,4 @@ ms.lasthandoff: 12/12/2017
 
 如需如何取消註冊的指示，請參閱[使用公司入口網站應用程式從 Intune 取消註冊裝置](unenroll-your-device-from-intune-android.md)。
 
-需要協助嗎？ 請連絡公司支援人員 (可查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)以取得連絡資訊)，或是撰寫電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。
+需要協助嗎？ 請連絡公司支援人員 (可查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)以取得連絡資訊)，或是撰寫電子郵件給 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 小組</a>。

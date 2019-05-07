@@ -1,23 +1,29 @@
 ---
-title: "Intune 註冊選項"
-description: 
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Microsoft Intune 所管理裝置的註冊選項
+titleSuffix: ''
+description: 系統管理員可針對 Microsoft Intune 所管理裝置來設定的註冊選項清單。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
-ms.prod: 
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 22efa23e989ed949d22c3c25b2ea4d37559b0a25
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+search.appverid: MET150
+ms.custom: get-started
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 441ae9549ef6fda093a69268b5aa698b9c6855c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505704"
 ---
-# <a name="enrollment-options-for-intune"></a>Intune 註冊選項
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune 所管理裝置的註冊選項
 
 身為 Intune 管理員，您可以設定裝置註冊，協助使用者並啟用 Intune 的功能。  Intune 包含下列註冊選項：
 

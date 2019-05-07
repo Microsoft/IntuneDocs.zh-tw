@@ -1,24 +1,27 @@
 ---
-title: "您必須將 Symantec Endpoint Protection Mobile 安裝到 Android 裝置 | Microsoft Docs"
-description: "了解如何將 SEP Mobile 安裝到 Android 裝置。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您必須將 Symantec Endpoint Protection Mobile 安裝到 Android 裝置 | Microsoft Docs
+description: 了解如何將 SEP Mobile 安裝到 Android 裝置。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 50707eb19dc8dd876dea256094e5790d587d7087
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9c489e6bdfa2842f0939d7ee5cd43b258ef2b50
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55833985"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>在 Android 裝置上安裝 Symantec Endpoint Protection Mobile
 
@@ -44,16 +47,16 @@ ms.lasthandoff: 12/12/2017
 
 8. SEP Mobile 會立即開始檢查裝置上是否有安全性威脅。
 
-  * 若 SEP Mobile 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
+   * 若 SEP Mobile 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
 
-  * 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
+   * 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
 
-    * 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
+     * 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
 
-    ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
+     ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 Play 商店手動](https://play.google.com/store/apps/details?id=com.skycure.skycure)安裝 SEP Mobile。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

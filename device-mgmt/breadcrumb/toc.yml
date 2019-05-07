@@ -1,0 +1,17 @@
+- name: 裝置管理
+  tocHref: /intune/
+  topicHref: /intune/index
+  items:
+    - name: Intune
+      tocHref: /enterprise-mobility-security/intune/index
+      topicHref: /device-mgmt/index
+    - name: Intune 使用者說明
+      tocHref: /intune-user-help/
+      topicHref: /intune-user-help
+- name: 裝置管理
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+    - name: Azure Active Directory
+      tocHref: /azure/active-directory/
+      topicHref: /azure/active-directory/

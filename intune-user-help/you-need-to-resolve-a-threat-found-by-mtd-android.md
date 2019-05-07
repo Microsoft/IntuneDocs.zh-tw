@@ -1,41 +1,47 @@
 ---
-title: "解決行動威脅防禦應用程式在 Android 上找到的威脅 | Microsoft Docs"
-description: "了解如何使用適用於 Android 的 Mobile Threat Defense 應用程式來解決威脅。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/25/2017
+title: 解決適用於 Android 裝置的 Mobile Threat Defense 應用程式找到的安全性或應用程式威脅
+description: 了解如何使用適用於 Android 裝置的 Mobile Threat Defense 應用程式來解決威脅。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 1bff6a17a74de310833b9d19afd471afd0afc504
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c0357744619f3e1905b97b27b5dbd2ec3ea5e0dc
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068889"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解決 Mobile Threat Defense 應用程式找到的威脅
 
-行動威脅防禦在您的 Android 裝置上找到潛在威脅，您必須修正此問題，才能重新存取公司或學校電子郵件、應用程式及檔案。 根據您公司設定 Mobile Threat Defense 的方式，您將使用下列其中一個應用程式解決這類問題。
+Mobile Threat Defense 應用程式會在您的裝置上偵測潛在威脅並向您發出警示。 有些組織會將 Mobile Threat Defense 服務與 MDM 提供者 (例如 Intune) 整合。 整合之後，Mobile Threat Defense 服務會回報威脅 (例如可疑的應用程式、網路和 OS 弱點)，並於公司入口網站應用程式中通知您。 然後，您可以在 Mobile Threat Defense 應用程式中找到威脅和補救步驟的詳細資料。
+
+您在公司入口網站中會看到這些威脅顯示為尚未解決、不符合要求的問題。 如果威脅歸類相當具風險，您的公司會撤銷您對公司資源的存取權。 只要這些威脅存在於您的裝置上，您可能無法：  
+
+* 連線到公司電子郵件
+* 連線到公司 Wi-Fi
+* 連線到 SharePoint Online
+* 使用 OneDrive 同步公司檔案
+* 存取公司應用程式
+
+以下是您的組織可能已設定的 Android 特定 Mobile Threat Defense 服務。 選取應用程式以深入了解其行為。  
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-android.md)
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
-* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
+* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
-若要解決此問題，請開啟行動威脅防禦應用程式，並遵循應用程式中顯示的指示。
+  是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)  
 
-**Mobile Threat Defense 視為威脅的應用程式範例**
-
-如果您已安裝行動威脅防禦視為威脅的應用程式，您會看到畫面告知您具威脅性的應用程式。 如果您看到類似如下的畫面，請點選畫面頂端顯示的應用程式名稱，然後遵循指示以移除潛在威脅。
-
-當您將 App 解除安裝之後，您便能立即重新取得電子郵件和其他公司或學校資料的存取權限。 如果您忽略解除安裝應用程式的要求，則在解除安裝應用程式之前，您都不能存取電子郵件和資料。
-
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 

@@ -1,37 +1,49 @@
 ---
-title: "找到現有的公司電子郵件帳戶 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 01/03/2017
+title: 找到現有的公司電子郵件帳戶 | Microsoft Docs
+description: 描述如何將更新套用到您的裝置，讓您可以再次存取您的工作或學校電子郵件。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dc363dbf6f9153401c510594358b905643647869
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55834750"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>找到現有的公司電子郵件帳戶
 
-您已經有組織或公司的電子郵件帳戶，而您現在想要在您的行動裝置上存取該帳戶。 您公司的支援人員需要您的協助，保護電子郵件從寄件人到您裝置這一段的存取安全。 您可能已經處理過目前的電子郵件，但執行這些步驟會讓資訊更安全。
+您的行動裝置可能在受控「之前」，即已能夠存取您的工作或學校電子郵件帳戶。 如果您的裝置目前受控，建議您：
 
-1.  找到您裝置的 [設定]，移除您先前設定的公司電子郵件連線。
+* 將現有的工作電子郵件帳戶與您的裝置中斷連線。
+* 從 [公司入口網站] 應用程式重新同步裝置設定。  
 
-    例如，在 iOS 裝置上，點選 [設定] > [郵件] > [帳戶]。 選取您的工作電子郵件帳戶，然後點選 [刪除]。
+這些步驟將可確保您的裝置符合公司的安全性需求，並讓您的電子郵件保持安全。
 
-2.  結束 [設定]，並在裝置上開啟公司入口網站應用程式，然後點選 [檢查合規性]。
+1.  在您的裝置上，移至 [設定]，然後尋找已連線的帳戶。 例如，在 iOS 11+ 裝置上，請選取 [密碼與帳號]。
+ 
+2. 選取您的工作電子郵件帳戶並將其移除。
 
-3.  等候一段時間讓新的電子郵件設定，會自動套用到您的裝置。
+3. 在您的裝置上開啟「公司入口網站」應用程式。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+4. 在您的裝置清單底下，選取您想要更新的裝置。
+
+5. 選取 [檢查設定]。 幾分鐘之內，您的裝置便會同步新的電子郵件設定。
+
+6. 登入您的工作或學校電子郵件帳戶。
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -1,24 +1,29 @@
 ---
-title: "判斷推出計畫的目標群組和時間範圍"
-description: "這篇文章可協助您決定可推出至 Intune 的群組以及這些部署的時間範圍。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 判斷推出計畫的目標群組和時間範圍
+titleSuffix: Microsoft Intune
+description: 本文可協助您決定可推出至 Microsoft Intune 的群組以及這些部署的時間範圍。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 6edb71b7d97ac3c20b4207d2cac42669ac35c4c0
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e75900137ce1e590078a8baa5d00dbc617afc937
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512690"
 ---
 # <a name="develop-a-rollout-plan"></a>開發推出計劃
 

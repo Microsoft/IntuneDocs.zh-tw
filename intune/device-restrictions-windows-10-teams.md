@@ -1,29 +1,33 @@
 ---
-title: "Windows 10 團隊版的 Intune 裝置限制"
-titlesuffix: Azure portal
-description: "了解適用於 Windows 10 團隊版裝置的裝置限制。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
+title: Windows 10 團隊版的 Microsoft Intune 裝置限制
+titleSuffix: ''
+description: 了解執行適用於 Windows 10 團隊版之裝置的裝置限制。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 3/6/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 33142a4e7b95d8b689ab85ef6a25e56fd365aa82
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799306"
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 10 團隊版裝置限制設定
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 團隊版裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 10 團隊版的裝置進行設定。
 
 
 ## <a name="apps-and-experience"></a>應用程式及體驗
@@ -50,6 +54,6 @@ ms.lasthandoff: 12/12/2017
 - **Miracast 無線投影通道** - 選擇用來建立連線的 Miracast 通道。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 使用[如何設定裝置限制設定](device-restrictions-configure.md)中的資訊進行儲存，並將設定檔指派給使用者和裝置。

@@ -1,39 +1,52 @@
 ---
-title: "應用程式保護原則記錄"
-titlesuffix: Azure portal
-description: "本主題說明儲存在應用程式記錄中之應用程式保護原則設定的記錄。"
-keywords: 
-author: erikre
+title: 檢閱應用程式防護原則記錄
+titleSuffix: Microsoft Intune
+description: 本主題描述如何設定 Intune 應用程式保護原則 （應用程式） 記錄。
+keywords: ''
+author: Erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 11/15/2017
-ms.topic: article
-ms.prod: 
+manager: dougeby
+ms.date: 03/19/2019
+ms.topic: troubleshooting
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671861"
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>在 Managed Browser 中檢閱應用程式保護記錄
+# <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
-您可以透過針對行動用戶端上的應用程式啟用 Intune 診斷模式來存取記錄。 下表顯示記錄於記錄中之設定的名稱和說明。
+深入了解應用程式防護記錄中您可以檢閱的設定。 藉由在行動用戶端上啟用 Intune 診斷來存取記錄。 
+
+啟用及收集記錄的流程會因平台而有所不同：
+- **Android 裝置** - 使用「公司入口網站」。 請參閱[將記錄以電子郵件傳送給公司支援人員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
+- **iOS 裝置** - 使用 Managed Browser 或 *Microsoft Edge* 來收集記錄。 如需詳細資料，請參閱 Intune 支援小組部落格 [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Intune Managed Browser 中用來提交記錄的全新 Intune 診斷主控台)。 
+- **Windows 10 裝置** - 使用 *MDMDiag* 及事件記錄。 請參閱 Windows 用戶端管理內容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (診斷 Windows 10 中的 MDM 失敗)，以及部落格[Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (針對 Windows 10 Intune 原則失敗進行疑難排解)
+
+
+下表列出記錄中設定的名稱及說明。
 
 ## <a name="app-protection-policy-settings"></a>應用程式保護原則設定
 
-| Name                        | 可能的值                                                                                                                                                                                                                                                                                           | Azure Intune 行動應用程式管理入口網站中的設定                                                                                                                            |
+| 名稱                        | 可能的值                                                                                                                                                                                                                                                                                           | Azure Intune 行動應用程式管理入口網站中的設定                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 離線寬限期<br>注意：這是在裝置已離線的情況下，重新檢查應用程式存取需求之前的時間間隔。             |
 | AccessRecheckOnlineTimeout  | _x_ 分鐘                                                                                                                                                                                                                                                                                                   | [存取] 重新檢查存取需求 - 逾時。<br>注意：這是在裝置已離線的情況下，於應用程式啟動後重新檢查應用程式存取需求之前的時間間隔。 |
+| AllowedOutboundClipboardSharingExceptionLength               | x 個字元                                                                                                                                                                                                                                                                                           | [存取]指定可能會剪下或從受管理的應用程式複製的字元數。  此設定會覆寫`AllowedOutboundClipboardSharingLevel`限制。 預設值為 '0' 表示允許任何例外狀況。 
 | AppPinDisabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 於裝置 PIN 受到管理時停用應用程式 PIN。                                                                                                                                     |
-| AppSharingFromLevel         | 0 = 沒有應用程式<br>1 = 受管理的應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式接收來自其他應用程式的資料。                                                                                                                        |
-| AppSharingToLevel           | 0 = 沒有應用程式<br>1 = 受管理的應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式將資料傳輸至其他應用程式。                                                                                                                         |
+| AppSharingFromLevel         | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式接收來自其他應用程式的資料。                                                                                                                        |
+| AppSharingToLevel           | 0 = 沒有應用程式<br>1 = 受控應用程式<br>2 = 任何應用程式。                                                                                                                                                                                                                                                              | [資料重新配置] 允許此應用程式將資料傳輸至其他應用程式。                                                                                                                         |
 | AuthenticationEnabled       | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [存取] 要求公司認證 (而不是 PIN) 以進行存取。                                                                                                                      |
 | ClipboardSharingLevel       | 0 = 已封鎖<br>1 = 受管理的應用程式。<br>2 = 可貼上的受管理應用程式。<br>3 = 任何應用程式                                                                                                                                                                                                                            | [資料重新配置] 限制與其他應用程式的剪下、複製和貼上。                                                                                                                         |
 | ContactSyncDisabled         | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [資料重新配置] 停用連絡人同步。                                                                                                                                                 |

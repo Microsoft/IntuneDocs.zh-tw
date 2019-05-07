@@ -1,22 +1,29 @@
 ---
-title: "Microsoft Intune 的高階架構"
-description: 
-keywords: 
+title: Microsoft Intune 的高階架構
+description: 此參考架構會顯示用來整合 Azure 環境中 Microsoft Intune 與 Azure Active Directory 的選項。
+keywords: ''
+ms.author: dougeby
 author: dougeby
-manager: angrobe
-ms.date: 08/04/2017
-ms.topic: article
-ms.prod: 
+manager: dougeby
+ms.date: 03/11/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
-ms.openlocfilehash: 25bb0695c5f7ac3e8840f066cf3c70787ec08a2c
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 55f9d8a98235873dfcfa440a49226d7bc2e71081
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514540"
 ---
 # <a name="high-level-architecture-for-microsoft-intune"></a>Microsoft Intune 的高階架構
 此參考架構會顯示用來整合 Azure 環境中 Microsoft Intune 與 Azure Active Directory 的選項。  
- 
-![Microsoft Intune 的高階架構圖](/intune/media/intunearchitecture.svg)
+
+![Microsoft Intune 的高階架構圖](./media/intunearchitecture_wh.svg)
+
+[具有深色對比的影像](./media/intunearchitecture.svg)

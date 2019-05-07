@@ -1,23 +1,29 @@
 ---
-title: "保護 Office 365 Exchange Online 而不需要進行裝置管理"
-description: "讓員工存取其公司電子郵件。 不需要任何裝置管理。"
-keywords: "Office 365 Exchange 電子郵件存取"
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 沒有裝置管理功能的 Exchange
+titleSuffix: Microsoft Intune
+description: 使用 Microsoft Intune 讓員工存取其 Office 365 Exchange Online 電子郵件，而不必設定裝置管理系統。
+keywords: Office 365 Exchange 電子郵件存取
+author: brenduns
+ms.author: brenduns
+manager: dougeby
 ms.date: 10/31/2017
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.topic: archived
+ms.technology: ''
 ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5db7cd4781e85a0baa971fc989d916ccc9e924
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f61b7e755ea7bfe8d20c3db8c859f148dcf7704
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460422"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>保護 Office 365 Exchange Online 而不需要進行裝置管理
 

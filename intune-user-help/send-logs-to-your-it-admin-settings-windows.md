@@ -1,39 +1,42 @@
 ---
-title: "針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs"
-description: "在 Intune 中註冊 Windows 10 1511 裝置"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 05/25/2017
+title: 針對 Windows 10 裝置將記錄傳送給公司支援人員 | Microsoft Docs
+description: 在 Intune 中註冊 Windows 10 1511 裝置
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 01/09/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f36b623f78a640cfe1900dc0d1564cbf2fbfbf6f
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55849855"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>針對 Windows 10 將記錄從設定應用程式傳送給公司支援人員
 
-如果您在使用公司所管理的 Windows 10 裝置時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+使用 [設定] 應用程式為 Windows 10 公司入口網站進行疑難排解。 如果您在 Windows 10 裝置上使用應用程式時遇到問題，可以傳送電子郵件給支援小組來尋求協助。 發生在 [公司入口網站] 應用程式中的事件和錯誤會儲存在您裝置上名為「診斷記錄」的特殊文件中。 其中可能包含關於錯誤的其他見解，匯出時會對支援小組很有用。
 
-1.  開啟 Windows [設定] 應用程式，方法是前往 [開始] 功能表，然後選取 [設定] 按鈕。 您也可以在搜尋列中搜尋「設定」。
-2.  移至 [帳戶] > [存取公司或學校資源]。
-3.  選取 [匯出您的管理記錄檔]。
+1. 若要開啟 [設定] 應用程式，請移至 [開始] 功能表 > [設定]。 您也可以在搜尋列中搜尋「設定」。
+2. 移至 [帳戶] > [存取公司或學校資源]。
+3. 選取 [匯出您的管理記錄檔]。
 
-  ![「存取公司或學校資源畫面」，其中 [相關設定] 標題下顯示 [匯出] 選項。](./media/w10-export-logs.png)
+   ![「存取公司或學校資源畫面」，其中 [相關設定] 標題下顯示 [匯出] 選項。](./media/w10-export-logs.png)
 
 4. 記錄檔會儲存在 **C:\Users\Public\Public Documents\MDMDiagnostics**。 將建立兩個檔案：一個是記錄檔本身，另一個是可讓您的系統管理員在不同程式 (例如 Microsoft Excel) 中檢閱記錄檔的特殊文件。 將這兩個檔案附加到電子郵件並將該電子郵件傳送給您的系統管理員。如果您要執行此動作多次，只需從您建立記錄檔的日期選擇檔案即可。 
 
 您可能也需要傳送[公司入口網站應用程式中的記錄](send-logs-to-your-it-admin-cp-windows.md)，更進一步地協助公司支援人員嘗試將他們可能發現的任何問題進行疑難排解。 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

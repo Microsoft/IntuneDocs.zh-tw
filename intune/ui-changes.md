@@ -1,29 +1,34 @@
 ---
-title: "我的 Intune 功能移到 Azure 中的哪個位置？"
-titlesuffix: Azure portal
-description: "協助您在 Azure 入口網站中尋找 Intune 功能。"
-keywords: 
-author: dagerrit
-ms.author: dagerrit
-manager: angrobe
-ms.date: 03/31/2017
-ms.topic: article
-ms.prod: 
+title: 我的 Intune 功能移到 Azure 中的哪個位置？
+titleSuffix: Microsoft Intune
+description: 協助您在 Azure 入口網站中尋找 Microsoft Intune 功能。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 1/4/2018
+ms.topic: archived
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.localizationpriority: medium
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: def09c1782db5b888257b7283074a997abbfa625
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460779"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
-當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 因此，針對已經十分熟悉傳統入口網站中 Intune 的使用者，但是想知道 Azure 入口網站中 Intune 的操作步驟，我們建立了此參考指南。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
+當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
 ## <a name="quick-reference-guide"></a>快速參考指南
+
 |功能 |傳統入口網站中的路徑|Azure 入口網站中 Intune 的路徑|
 |------------|---------------|---------------|
 |裝置註冊計劃 (DEP) [僅限 iOS]|[管理] > [行動裝置管理] > [iOS] > [裝置註冊計劃]|[[裝置註冊] > [Apple 註冊] > [註冊計劃權杖]](#where-did-apple-dep-go) |
@@ -34,35 +39,46 @@ ms.lasthandoff: 09/13/2017
 |依 IMEI 分組 (所有平台)| [群組] > [所有裝置] > [公司預先註冊的裝置] > [依 IMEI (所有平台)] | [[裝置註冊] > [公司裝置識別碼]](#by-imei-all-platforms)|
 | 公司裝置註冊設定檔| [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [註冊計劃設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
 | 公司裝置註冊設定檔 | [原則] > [公司裝置註冊] | [[裝置註冊] > [Apple 註冊] > [AC 設定檔]](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | [管理] > [行動裝置管理] > [Android for Work] | [裝置註冊] > [Android for Work 註冊] |
+| Android for Work | [管理] > [行動裝置管理] > [Android for Work] | [裝置註冊] > [Android 註冊] |
 | 條款及條件 | [原則] > [條款及條件] | [裝置註冊] > [條款及條件] |
+公司入口網站設定|管理 > 公司入口網站|**管理** > Mobile 應用程式<br> **設定** > 公司入口網站商標
 
 
 ## <a name="where-do-i-manage-groups"></a>我在何處管理群組？
 Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 來管理群組。
 
 ## <a name="where-did-enrollment-rules-go"></a>註冊規則在哪裡？
-在傳統入口網站中，您可以設定規則來控管行動裝置以及新式 Windows 和 macOS 裝置的 MDM 註冊：
+在傳統入口網站中，您可以設定規則來控管行動裝置以及新式 Windows 和 macOS 裝置的 MDM 註冊。
 
 ![傳統行動裝置註冊規則的影像](./media/01-classic-rules.png)
 
-這些規則會套用到您的 Intune 帳戶中的所有使用者，無一例外。 在 Azure 入口網站中，這些規則現在會顯示在兩種不同的原則類型中：[裝置類型限制] 和 [裝置限制]：
+這些規則會套用到您的 Intune 帳戶中的所有使用者，無一例外。 在 Azure 入口網站中，這些規則現在會顯示在兩種不同的原則類型中：[裝置類型限制] 和 [裝置限制]。
 
 ![Azure 行動裝置註冊限制的影像](./media/02-azure-enroll-restrictions.png)
 
-預設的 [裝置限制的限制] 對應至傳統入口網站中的 [裝置註冊限制]：
+預設的 [裝置限制] 對應至傳統入口網站中的 [裝置註冊限制]。
 
 ![Azure 裝置限制的影像](./media/03-azure-device-limit.png)
 
-預設的 [裝置類型限制] 對應至傳統入口網站中的 [平台限制]：
+預設的 [裝置類型限制] 對應至傳統入口網站中的 [平台限制]。
 
 ![Azure 裝置類型限制的影像](./media/04-azure-platform-restrictions.png)
 
-允許或封鎖個人擁有之裝置的功能現在是在 [裝置類型限制] 的 [平台設定] 下進行管理：
+允許或封鎖個人擁有之裝置的功能現在是在 [裝置類型限制] 的 [平台設定] 下進行管理。
 
 ![Azure 個人裝置封鎖設定的影像](./media/05-azure-personal-block.png)
 
 新的限制功能只會新增至 Azure 入口網站。
+
+## <a name="where-did-my-conditional-access-policies-go"></a>我的條件式存取原則移到哪個位置？
+當您的租用戶移轉至 Azure 入口網站之後，租用戶的條件式存取原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
+
+如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
+
+## <a name="where-did-my-compliance-policies-go"></a>我的合規性原則移到哪個位置？
+當您的租用戶移轉至 Azure 入口網站之後，租用戶的合規性原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
+
+如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/intune/known-issues#compliance)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
 在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：

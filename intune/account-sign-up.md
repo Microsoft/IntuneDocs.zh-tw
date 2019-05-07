@@ -1,28 +1,31 @@
 ---
-title: "註冊或登入 Intune"
-description: "如何註冊 Intune 訂閱或如何登入以開始使用訂閱"
-keywords: 
-author: arob98
-ms.author: angrobe
-nmanager: angrobe
-ms.date: 10/30/2017
-ms.topic: get-started-article
-ms.prod: 
+title: 註冊或登入 Microsoft Intune
+description: 如何註冊 Microsoft Intune 訂用帳戶或如何登入以開始使用訂用帳戶。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9f85c5535444953cb46363dde54954e83fceea
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 97a1ab3327f8d76f1623d51fe80289a8f15d7ff1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57235220"
 ---
-# <a name="sign-up-or-sign-in-to-intune"></a>註冊或登入 Intune
+# <a name="sign-up-or-sign-in-to-microsoft-intune"></a>註冊或登入 Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本主題會告訴系統管理員如何註冊 Intune 帳戶。
 
@@ -35,11 +38,11 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>如何註冊或登入 Intune
 
-1.  請瀏覽 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)頁面。
+1. 請瀏覽 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)頁面。
 
-  ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/account-sign-up-site.png)
+   ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/account-sign-up-site.png)
 
-2.  在 [註冊] 頁面上，登入或註冊以管理 Intune 的新訂閱。
+2. 在 [註冊] 頁面上，登入或註冊以管理 Intune 的新訂閱。
 
 ## <a name="post-sign-up-considerations"></a>註冊後的考量
 註冊新的訂閱後，在您於註冊過程中提供的電子郵件位址上，您會收到包含帳戶資訊的電子郵件訊息。 本電子郵件可確認您的訂閱是使用中的狀態。

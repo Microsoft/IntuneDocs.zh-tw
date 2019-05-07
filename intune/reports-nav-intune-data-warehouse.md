@@ -1,26 +1,31 @@
 ---
-title: "Intune 資料倉儲 API | Microsoft Docs"
-description: "您可以使用 API 來建置報表，以深入了解您的企業行動環境。"
-keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 07/31/2017
-ms.topic: article
-ms.prod: 
+title: Intune 資料倉儲 API
+titleSuffix: Microsoft Intune
+description: 您可以使用 Intune 資料倉儲 API 來建置報表，以深入了解您的企業行動環境。
+keywords: Intune 資料倉儲
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 04/10/2019
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7211b5d8840ebc49dc838e8e6f80ec0c73b81a0c
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533536"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune 資料倉儲 API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 資料倉儲 API
 
 Intune 資料倉儲 API 可讓您存取電腦可讀格式的 Intune 資料，以用於您慣用的分析工具。 您可以使用 API 來建置報表，以深入了解您的企業行動環境。 API 使用 OData 通訊協定，其遵循下列項目的標準模式：
 
@@ -63,6 +68,6 @@ OData 會定義抽象資料模型和通訊協定，可讓任何資料來源所�
 
 藉由閱讀 [Azure AD 的驗證案例](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)，深入了解使用 Azure AD。
 
-在 [odata.org](http://www.odata.org) 尋找 OData 資源。
+在 [odata.org](https://www.odata.org) 尋找 OData 資源。
   
-在 [OData Version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) (OData 4.0 版) 檢閱 OData 4.0 版標準  
+檢閱 [OData 第 4.0 版] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) 的 OData 第 4.0 版標準  

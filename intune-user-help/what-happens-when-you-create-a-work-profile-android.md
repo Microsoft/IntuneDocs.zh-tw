@@ -1,26 +1,29 @@
 ---
-title: "當您建立 Work 設定檔時，會發生什麼事 | Microsoft Docs"
-description: "描述加密 Android 裝置的方式"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 當您建立 Work 設定檔時，會發生什麼事 | Microsoft Docs
+description: 描述加密 Android 裝置的方式
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe9a4d7f52c462efa4c926544129da565620f60c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2114161bfb13b02a217a0a209c11350b8f9944e9
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068892"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>當您建立工作設定檔時，會發生什麼事
 
@@ -43,4 +46,4 @@ ms.lasthandoff: 12/12/2017
 
 如需建立工作設定檔的步驟，請參閱[建立工作設定檔並註冊您的裝置](create-a-work-profile-and-enroll-your-device-in-intune-android.md)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

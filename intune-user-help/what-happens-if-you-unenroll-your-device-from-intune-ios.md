@@ -1,26 +1,29 @@
 ---
-title: "如果取消註冊 iOS 或 macOS 裝置，會發生什麼情況？ | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 02/03/2017
+title: 如果取消註冊 iOS 或 macOS 裝置，會發生什麼情況？
+description: 描述從 Intune 移除裝置之後會發生的事
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b7568a658a655b5c061ced64449d17ee6f6053ae
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55844236"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>如果從 Intune 取消註冊 iOS 或 macOS 裝置，會發生什麼情況？
 
@@ -42,4 +45,4 @@ ms.lasthandoff: 12/12/2017
 
 如需如何取消註冊的指示，請參閱[從 Intune 取消註冊您的裝置](unenroll-your-device-from-intune-ios.md)。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

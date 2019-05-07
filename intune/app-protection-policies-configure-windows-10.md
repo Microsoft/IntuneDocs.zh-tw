@@ -1,34 +1,34 @@
 ---
-title: "準備好設定適用於 Windows 10 的應用程式保護原則"
-titlesuffix: Azure portal
-description: "設定 Azure AD 中的行動應用程式管理 (MAM) 提供者"
-keywords: 
-author: erikre
+title: 設定適用於 Windows 10 的應用程式保護原則
+titleSuffix: Microsoft Intune
+description: 在 Azure AD 中設定行動應用程式管理 (MAM) 提供者。
+keywords: ''
+author: Erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 10/25/2017
+manager: dougeby
+ms.date: 12/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 91e26256d220ba70e5ad6daa3910d34eea8bb5ed
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+search.appverid: MET150
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d5626861f05e7c78f43715b3dc14773eb3adfa7b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55832805"
 ---
-# <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則
+# <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 透過在 Azure AD 中設定 MAM 提供者，針對 Windows 10 啟用行動應用程式管理 (MAM)。 在 Azure AD 中設定 MAM 提供者可讓您在使用 Intune 建立新的 Windows 資訊保護 (WIP) 原則時定義註冊狀態。 註冊狀態可以是 MAM 或行動裝置管理 (MDM)。
-
-> [!NOTE]
-> 需要具有 MAM 註冊狀態的裝置才能加入 Azure AD。
 
 ## <a name="to-configure-the-mam-provider"></a>設定 MAM 提供者
 
@@ -40,17 +40,17 @@ ms.lasthandoff: 12/08/2017
 
 4. 在 [設定] 刀鋒視窗上的 [還原預設的 MAM URL] 群組中進行設定。
 
-    **MAM 使用者範圍**  
-      使用 MAM 自動註冊來管理您員工之 Windows 裝置上的企業資料。 將會針對攜帶您自己的裝置案例設定 MAM 自動註冊。<ul><li>**無**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li><li>**部分**<br>選取包含將要在 MAM 中註冊之使用者的 Azure AD 群組。</li><li>**全部**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li></ul>
+   **MAM 使用者範圍**  
+   使用 MAM 自動註冊來管理您員工之 Windows 裝置上的企業資料。 將會針對攜帶您自己的裝置案例設定 MAM 自動註冊。<ul><li>**無**<br>若所有使用者都不能在 MAM 中註冊，請選取此選項。</li><li>**部分**<br>選取包含將要在 MAM 中註冊之使用者的 Azure AD 群組。</li><li>**全部**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li></ul>
 
-    **MDM 使用規定 URL**  
-     MAM 服務之使用規定端點的 URL。 使用規定端點是用來在使用者註冊其裝置以供管理之前顯示服務條款給使用者。 使用規定文字會通知使用者關於在行動裝置上強制執行的原則。
+   **MDM 使用規定 URL**  
+   Microsoft Intune 不支援 MAM 使用條款 URL。 此輸入方塊必須保留空白才能套用保護原則。
 
-    **MAM 探索 URL**  
-    MAM 服務註冊端點的 URL。 註冊端點用來註冊裝置，以使用 MAM 服務進行管理。
+   **MAM 探索 URL**  
+   MAM 服務註冊端點的 URL。 註冊端點用來註冊裝置，以使用 MAM 服務進行管理。
 
-    **MAM 合規性 URL**  
-      MAM 服務的合規性端點的 URL。 當使用者從不符合規範的裝置存取資源遭拒時，將會對該使用者顯示此合規性 URL。 使用者可以瀏覽至 MDM 服務主控的此 URL，了解他們的裝置被視為不符合規範的原因。 使用者也可起始自助式補救，讓裝置變為符合規範，以繼續存取資源。
+   **MAM 合規性 URL**  
+   Microsoft Intune 不支援 MAM 合規性 URL。 此輸入方塊必須保留空白才能套用保護原則。 
 
 5.  按一下 **[儲存]**。
 

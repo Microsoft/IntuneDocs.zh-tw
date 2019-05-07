@@ -1,30 +1,35 @@
 ---
-title: "資料倉儲資料模型 | Microsoft Docs"
-description: "Intune 資料倉儲會每日對資料進行抽樣，以提供持續變更中行動環境的歷程檢視。"
-keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 11/14/2017
-ms.topic: article
-ms.prod: 
+title: 資料倉儲資料模型
+titleSuffix: Microsoft Intune
+description: Microsoft Intune 資料倉儲會每日對資料進行抽樣，以提供持續變更中行動環境的歷程檢視。
+keywords: Intune 資料倉儲
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 04/10/2019
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5a56c06970e267d8ba604e9d4e53f4a3f315fbcb
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533554"
 ---
-# <a name="data-warehouse-data-model"></a>資料倉儲資料模型
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 資料倉儲資料模型
 
-Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持續變更中環境的歷程檢視。 檢視是由在時間上相關的項目所組成。
+Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持續變更中環境的歷程檢視。 檢視由在時間上的相關實體所組成。
 
-## <a name="things-entity-sets"></a>項目：實體集
+## <a name="entities-entity-sets"></a>實體：實體集
 
 倉儲會公開下列高階區域中的資料：
 
@@ -33,7 +38,7 @@ Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持�
   -  應用程式和軟體清查
   -  裝置組態和合規性原則
 
-這些區域包含對您的 Intune 環境有意義的實體或項目。 您可在下列主題中找到有關實體集的詳細資訊：
+這些區域包含對您 Intune 環境有意義的實體。 您可在下列主題中找到有關實體集的詳細資訊：
 
   -  [應用程式](reports-ref-application.md)
   -  [日期](reports-ref-date.md)

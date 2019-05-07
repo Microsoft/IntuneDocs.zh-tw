@@ -1,23 +1,28 @@
 ---
-title: "啟動 Intune 移轉活動"
-description: "本文提供如何啟動移轉活動的指引。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 07/12/2017
-ms.topic: article
-ms.prod: 
+title: 啟動 Intune 移轉活動
+titleSuffix: Microsoft Intune
+description: 本文提供如何啟動 Microsoft Intune 移轉活動的指引。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: db56bbc180a84e8b3972ffc6473126efd366faa8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508175"
 ---
 # <a name="phase-2-migration-campaign"></a>階段 2：移轉活動
 

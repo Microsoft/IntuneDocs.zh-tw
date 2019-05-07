@@ -1,60 +1,59 @@
 ---
-title: "如何設定 Intune 自訂裝置設定"
-titleSuffix: Azure portal
-description: "了解如何在管理的裝置上使用 Intune 設定自訂設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 06/03/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune - Azure 中使用自訂裝置設定 | Microsoft Docs
+description: 使用 Microsoft Intune 新增或建立設定檔，以使用 Windows Phone、Windows 8.1、Windows 10 及更新版本、Android、Anndroid Enterprise、macOS 和 iOS 裝置的自訂設定
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 10/23/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
+ms.localizationpriority: high
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7568a74256688271794b6baa752a23e24cf8d67
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 923570324dba89efdc9e314f18307ea7310bb252
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508101"
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定自訂裝置設定
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>在 Intune 中使用自訂設定建立設定檔
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+## <a name="what-are-custom-profiles"></a>什麼是自訂設定檔
 
-## <a name="when-to-use-custom-settings"></a>使用自訂設定的時機
+Microsoft Intune 包含許多內建設定，可控制裝置上的不同功能。 您也可以建立自訂設定檔。 當您想要使用未內建在 Intune 的裝置設定和功能時，自訂設定檔會很有用。 這些設定檔包含功能和設定，可讓您控制組織中的裝置。 例如，您可以建立自訂設定檔，為每部 iOS 裝置設定相同的功能。
 
-當 Intune 沒有您想要設定的內建設定時，自訂設定很實用，且可從其他裝置設定檔取得。
-為每個平台設定自訂設定的方式皆不同。 例如，對於 Android 與 Windows 裝置來說，您可指定開放行動裝置聯盟統一資源識別項 (OMA-URI) 值，控制裝置上的功能。 對於 Apple 裝置來說，您可匯入利用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 所建立的檔案。
+如需組態設定檔的詳細資訊，請參閱[什麼是 Microsoft Intune 裝置設定檔？](device-profiles.md)。 
 
-使用本主題中的資訊可深入了解使用自訂設定進行設定檔設定的基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
+本文包含相關連結，可建立 Android、Android Enterprise、iOS、macOS 和 Windows 的自訂設定檔。
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>建立內含自訂設定的裝置設定檔
+## <a name="available-platforms"></a>可用的平台
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為自訂檔輸入 [名稱] 及[描述]。
-5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可以為自訂裝置設定選擇下列平台之一︰
-    - **Android**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 及更新版本**
-6. 從 [設定檔] 類型下拉式清單中選擇 [自訂]。
-7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android 設定](custom-settings-android.md)
-    - [iOS 設定](custom-settings-ios.md)
-    - [macOS 設定](custom-settings-macos.md)
-    - [Windows Phone 8.1 設定](custom-settings-windows-phone-8-1.md)
-    - [Windows 10 設定](custom-settings-windows-10.md)
-    - [Android for Work 設定](custom-settings-android-for-work.md)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+為每個平台設定自訂設定的方式皆不同。 例如，若要控制 Android 與 Windows 裝置上的功能，您可輸入開放行動裝置聯盟統一資源識別項 (OMA-URI) 值。 若是 Apple 裝置，您可以使用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 或 [Apple Profile Manager](https://support.apple.com/profile-manager) 匯入所建立的檔案。
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+所建立的自訂設定檔與內建設定檔類似，可於下列平台使用：
+
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+
+## <a name="next-steps"></a>後續步驟
+
+選擇您的平台，並開始使用：
+
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)

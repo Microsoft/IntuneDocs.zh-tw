@@ -1,26 +1,29 @@
 ---
-title: "更新 Windows 10 裝置 | Microsoft Docs"
-description: "了解如何更新您的 Windows 10 裝置以存取公司資源。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 更新 Windows 10 裝置 | Microsoft Docs
+description: 了解如何更新您的 Windows 10 裝置以存取公司資源。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e36330927fa6ce8b4edfc1fce984250af44bb6dc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 59e33e75a38711e95631613e18ce1bd2fb459582
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068887"
 ---
 # <a name="update-your-windows-10-device"></a>更新您的 Windows 10 裝置
 
@@ -32,4 +35,4 @@ ms.lasthandoff: 12/12/2017
 
 如果您的 Windows 版本比貴公司的支援新，您必須[嘗試一些不同的步驟來修正問題](your-windows-version-isnt-yet-supported.md)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需其連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

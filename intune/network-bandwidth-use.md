@@ -1,28 +1,32 @@
 ---
-title: "Intune 網路頻寬用量"
-description: "Intune 網路頻寬用量"
-keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 06/07/2017
-ms.topic: get-started-article
-ms.prod: 
+title: Microsoft Intune 的網路需求與頻寬詳細資料
+titlesuffix: ''
+description: 檢閱 Intune 的網路設定需求與頻寬詳細資料。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/24/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: d68cbb05025e89e256a22dc88f5c4ee2afc3c536
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+search.appverid: MET150
+ms.custom: intune-classic; get-started
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840938"
 ---
-# <a name="intune-network-bandwidth-use"></a>Intune 網路頻寬用量
+# <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本指南可協助 Intune 系統管理員了解 Intune 服務的網路需求。 您可以使用這項資訊來了解頻寬需求，以及 Proxy 設定所需的 IP 位址和連接埠設定。
 
@@ -57,11 +61,13 @@ Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網�
 
 下列一般設定適用於快取 Intune 用戶端內容的 Proxy 伺服器。
 
-|設定|建議值|詳細資料|
-|-----------|---------------------|-----------|
-|快取大小|5 GB 至 30 GB|這個值會根據網路中的用戶端電腦數目以及您使用的設定而不同。 為了避免系統太快刪除檔案，請根據您的環境調整快取的大小。|
-|個別快取檔案大小|950 MB|某些快取 Proxy 伺服器可能沒有提供這項設定。|
-|要快取的物件類型|HTTP<br /><br />HTTPS<br /><br />BITS|Intune 封裝是背景智慧型傳送服務 (BITS) 下載作業透過 HTTP 擷取的 CAB 檔。|
+
+|          設定           |           建議值           |                                                                                                  詳細資料                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         快取大小         |             5 GB 至 30 GB             | 這個值會根據網路中的用戶端電腦數目以及您使用的設定而不同。 為了避免系統太快刪除檔案，請根據您的環境調整快取的大小。 |
+| 個別快取檔案大小 |                950 MB                 |                                                                     某些快取 Proxy 伺服器可能沒有提供這項設定。                                                                     |
+|   要快取的物件類型    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune 封裝是背景智慧型傳送服務 (BITS) 下載作業透過 HTTP 擷取的 CAB 檔。                                               |
+
 如需有關如何使用 Proxy 伺服器快取內容的詳細資訊，請參閱您的 Proxy 伺服器解決方案的文件。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>在電腦上使用背景智慧型傳送服務
@@ -106,9 +112,10 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 
 |**網域**|**IP 位址**|
 |---------------------|-----------|
+|login.microsoftonline.com | 更多資訊請參閱 [Office 365 URL 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |40.86.181.86<br>13.82.59.78<br>13.74.184.100<br>40.68.188.2<br>13.75.42.6<br>52.230.25.184 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
-|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 |
+|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 <br>52.234.146.75 |
 |portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com |13.64.196.170|
 |fei.msua01.manage.microsoft.com<br> portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com |40.71.34.120 |
 |fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com |13.64.198.190|
@@ -155,16 +162,19 @@ Intune 使用內部部署基礎結構 (例如，安裝 Intune 軟體的伺服器
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+|enterpriseregistration.windows.net|52.175.211.189|
 
 ### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
-| 主機名稱  | URL (IP 位址/子網路) | 通訊協定 | Port | Device |
-| --- | --- | --- | --- | --- |
-|  管理員主控台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
-| 管理員主控台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |
-| 管理員主控台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
-| PI 伺服器  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | 適用於 Apple iOS 和 macOS 雲端傳訊。 |
-| 裝置服務  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| 裝置服務  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| 裝置服務  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| 裝置 (網際網路/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 和 443 | 僅限 Apple。 &#39;#&#39; 是 0 到 200 之間的亂數。 |
-| 裝置 (網際網路/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 或 443 | 僅限 Apple |
+
+|         Hostname         |                                        URL (IP 位址/子網路)                                        |  通訊協定  |     Port     |                          Device                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      管理主控台       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 和 macOS                    |
+|      管理主控台       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 和 macOS                    |
+|      管理主控台       | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS 和 macOS                    |
+|        PI 伺服器         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         適用於 Apple iOS 和 macOS 雲端傳訊。          |
+|     裝置服務      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     裝置服務      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     裝置服務      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| 裝置 (網際網路/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 和 443 | 僅限 Apple。 &#39;#&#39; 是 0 到 200 之間的亂數。 |
+| 裝置 (網際網路/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 或 443   |                        僅限 Apple                         |
+

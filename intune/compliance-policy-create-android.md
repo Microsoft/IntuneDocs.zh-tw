@@ -1,133 +1,133 @@
 ---
-title: "如何建立 Android 的合規性政策"
-titleSuffix: Azure portal
-description: "了解如何為 Android 裝置建立合規性政策。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 12/07/2016
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune 中建立 Android 裝置合規性原則 - Azure | Microsoft Docs
+description: 請參閱 Microsoft Intune 中設定您的 Android 裝置的合規性時，您可以使用的所有設定的清單。 設定密碼規則，選擇最小值或最大作業系統版本、 限制特定的應用程式，避免重複使用密碼，以及更多。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 04/08/2019
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423572"
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中為 Android 裝置建立裝置合規性政策
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>將裝置標記為符合規範或不符合規範使用 Intune 的 android 設定
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+這篇文章列出並描述您可以在 Intune 中 Android 裝置設定的不同的合規性設定。 您的行動裝置管理 (MDM) 解決方案的一部分，使用這些設定來 root 破解 （已進行 jb 破解） 將裝置標記為不符合規範、 設定允許的威脅層級，啟用 Google Play Protect，，和更多功能。
 
-在 Intune Azure 入口網站中，為每個平台建立裝置合規性政策。 
+本功能適用於：
 
-- 如需深入了解什麼是合規性政策，請參閱[什麼是裝置合規性](device-compliance.md)主題。
-- 如需了解建立合規性政策之前必須滿足的先決條件，請參閱[裝置合規性入門](device-compliance-get-started.md)主題。
+- Android
 
-## <a name="to-create-a-device-compliance-policy"></a>建立裝置合規性政策
+身為 Intune 管理員，使用這些合規性設定來協助保護您組織的資源。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
-1. 從 **Intune** 刀鋒視窗中，選擇 [設定裝置合規性]。 在 [管理] 中選擇 [All device compliance policies]\(所有裝置合規性政策) 及 [建立]。
-2. 輸入名稱及描述，然後選擇要套用此原則的平台。
-3. 選擇 [合規性需求]，以指定 [安全性]、[裝置健全狀況] 及 [裝置屬性] 設定。 完成後，請選擇 [確定]。
+## <a name="before-you-begin"></a>開始之前
 
-<!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
-7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
-8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
+[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [Android]。
 
-## <a name="to-assign-user-groups"></a>指派使用者群組
+## <a name="device-health"></a>Device health
 
-若要將合規性政策指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [合規性 - 政策] 刀鋒視窗中找到。
+- **已 Root 破解的裝置**：選擇 [封鎖] 將已 Root (JB) 破解的裝置標示為不符合規範。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **裝置層級需要不高於裝置威脅層級**：使用此設定進行來自 Lookout MTP 解決方案的風險評估，以作為合規性的條件。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。 若要使用此設定，請選擇允許的威脅等級：
+  - **安全**：此選項最安全，因為裝置不能有任何威脅。 如果在裝置上偵測到任何等級的威脅，即評估為不符合規範。
+  - **低**︰如果只有低等級的威脅，則會將裝置評估為相容。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，即判斷為不符合規範。
+  - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
-1. 選擇原則，然後選擇 [指派]。 這會開啟刀鋒視窗讓您從中選取 [Azure Active Directory 安全性群組]，並將其指派給原則。
-2. 選擇 [選取群組] 會開啟刀鋒視窗顯示 Azure AD 安全性群組。 您可以從中尋找您 Azure Active Directory 中的安全性群組。  您可以選取要套用這項原則的使用者群組，然後選擇 [選取]。 選擇 [選取] 會將原則部署給使用者。
+### <a name="google-play-protect"></a>Google Play 保護
 
-您已對使用者套用此原則。  要套用原則之使用者的裝置將會接受合規性評估。
+- **已設定 Google Play 服務**：**需要**安裝並啟用 Google Play 服務應用程式。 Google Play 服務可允許安全性更新，而且是 Google 認證裝置上許多安全性功能的基層相依服務。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **最新安全性提供者**：**需要**最新安全性提供者可保護裝置免於已知的弱點。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **對應用程式進行威脅掃描**：**需要**啟用 Android 的 [驗證應用程式] 功能。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 
-<!---##  Compliance policy settings--->
+  > [!NOTE]
+  > 在舊版的 Android 平台上，此功能為合規性設定。 Intune 只能在裝置層級檢查是否已啟用此設定。
 
-## <a name="device-health-and-security-settings"></a>裝置健全狀況和安全性設定
+- **SafetyNet 裝置證明**：輸入必須符合的 [SafetyNet 證明](https://developer.android.com/training/safetynet/attestation.html)層級。 選項包括：
+  - **未設定** (預設值)：不會評估設定是否符合規範。
+  - **檢查基本完整性**
+  - **檢查基本完整性與經過認證的裝置**
 
-- **裝置不得經過越獄或 Root**：如有啟用此設定，會將越獄的裝置評估為不符合規範。
-- **裝置必須防止從不明來源安裝應用程式 (Android 4.0 或更新版本)**：若要封鎖啟用 [安全性] > [不明來源] 的裝置，請啟用此設定，並將其設為 [是]。
+> [!NOTE]
+> 若要設定 Google Play 安全防護 設定使用應用程式保護原則，請參閱[Intune 應用程式保護原則設定](app-protection-policy-settings-android.md#conditional-launch)在 Android 上。
 
-### <a name="important"></a>重要
+## <a name="device-property-settings"></a>裝置屬性設定
 
-側載應用程式時必須啟用 [不明來源] 設定。 只有當您不會在裝置上側載 Android 應用程式時，才應該強制執行這項合規性政策。
-
-- **USB 偵錯需為停用 (Android 4.2 或更新版本)**︰此設定指定是否要偵測已啟用 USB 偵錯選項的裝置。
-- **裝置必須已啟用 [掃描裝置的安全性威脅 (Android 4.2-4.4)]**︰此設定指定要在裝置上啟用 [驗證應用程式] 功能。
-- **Android 安全性修補程式等級下限 (Android 6.0 或更新版本)**︰使用此設定可指定 Android 的最低修補程式等級。 未至少達此修補程式等級的裝置將視為不相容。 日期的格式必須指定為 YYYY-MM-DD。
-- **必須啟用裝置威脅防護**：使用此設定作為合規性條件來評估 Lookout MTP 解決方案的風險。 選擇下列其中一項允許的最高威脅等級：
-  - **無 (受保護)**︰這是最安全的選項。 這表示裝置不能受到任何威脅。 如果在裝置上偵測到任何等級的威脅，則會評估為不相容。
-  - **低**︰若只有低等級的威脅，會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
-  - **中**︰若裝置有低等級或中等級的威脅，會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，則會判斷為不相容。
-  - **高**：這是最不安全的選項。 基本上，這會允許所有威脅等級， 若只將此解決方案用於報告，可能就還不錯。
-
-如需詳細資訊，請參閱[啟用合規性政策中的裝置威脅保護規則](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)。
+- **最低作業系統版本**︰當裝置不符合最低作業系統版本需求時，它會回報為不符合規範。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，然後便可存取公司資源。
+- **最高作業系統版本**：當裝置使用的作業系統版本高於規則指定的版本時，會封鎖對公司資源的存取。 系統會要求使用者連絡其 IT 管理員。在規則變更為允許該作業系統版本之前，此裝置將無法存取公司資源。
 
 ## <a name="system-security-settings"></a>系統安全性設定
 
 ### <a name="password"></a>密碼
 
-- **需要密碼才可解除鎖定行動裝置**：將此設定為 [是] 會要求使用者必須輸入密碼才能存取其裝置。
-- **最小密碼長度**：指定使用者密碼中至少須包含的數字位數或字元數。
-- **密碼品質**︰此設定會偵測裝置是否設有您所指定的密碼需求。 啟用此設定可要求使用者符合 Android 裝置的特定密碼需求。 從下列選項進行選擇：
-  - **低安全性摸生物特徵辨識**
-  - **必要**
-  - **至少包含數字**
-  - **至少包含字母**
+- **需要密碼才可解除鎖定行動裝置**：**要求**使用者必須輸入密碼以存取其裝置。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **最小密碼長度**：輸入使用者密碼至少須包含的位數或字元數。
+- **所需的密碼類型**：選擇密碼是否應該只有數值字元，或者混合數字和其他字元。 選項包括：
+  - **裝置預設**
+  - **低安全性生物識別**
+  - **至少包含數字** (預設值)
+  - **複雜數字**：不允許重複或連續的數字 (例如 `1111` 或 `1234`)。
+  - **至少包含字母** 
   - **至少包含英數字元**
-  - **英數字元 (含符號)**
-- **停止活動幾分鐘後需要輸入密碼**：指定閒置多久後使用者必須重新輸入密碼。
-- **密碼到期 (天數)**：選取密碼到期前，必須建立新密碼的天數。
-- **記住密碼歷程記錄**：此設定必須搭配 [不得重複使用以前用過的密碼] 一起使用，才能禁止使用者建立之前用過的密碼。
-- **不得重複使用以前用過的密碼**：如有選取 [記住密碼歷程記錄]，請指定不得重複使用的舊密碼數。
-- **裝置從閒置狀態恢復時必須輸入密碼**：此設定必須搭配 [停止活動幾分鐘後需要輸入密碼] 設定一起使用。 如果裝置達到 [在非使用狀態幾分鐘後需要輸入密碼] 設定所指定的閒置時間，系統會提示使用者輸入密碼，才能存取該裝置。
+  - **至少包含英數字元和符號**
+
+- **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **密碼到期日 (天數)**：選取使用者的密碼到期，而必須建立新密碼前的天數。
+- **避免重複使用前幾個密碼**：輸入不可使用最近的多少個密碼。 使用此設定以限制使用者建立先前使用過的密碼。
 
 ### <a name="encryption"></a>加密
 
-- **行動裝置需要加密**︰將此項目設為 [是] 時，會要求裝置必須加密才能連線到資源。 當您選擇 [需要密碼來將行動裝置解除鎖定] 的設定時，裝置會加密。
+- **裝置上的資料存放區加密** (Android 4.0 及更新版本，或 KNOX 4.0 及更新版本)：選擇 [需要] 以加密裝置上的資料存放區。 當您選擇 [需要密碼來將行動裝置解除鎖定] 設定時，裝置便會加密。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 
-## <a name="device-property-settings"></a>裝置屬性設定
+### <a name="device-security"></a>裝置安全性
 
-- **Minimum OS required** (需要的最低作業系統版本)：當裝置不符合最低作業系統版本需求時，會回報為不符合規範。 您會看到如何升級的資訊連結。 使用者可以選擇升級其裝置，之後便可以存取公司資源。
-- **Maximum OS version allowed** (允許的最高 OS 版本)：當裝置使用的作業系統版本高於規則指定的版本時，會禁止存取公司資源，並要求使用者連絡其 IT 系統管理員。除非將規則變更為允許該作業系統版本，否則此裝置無法用來存取公司資源。
+- **封鎖來自不明來源的應用程式**：選擇**封鎖**啟用了 [安全性 > 不明來源] 來源的裝置 (支援 Android 4.0 - Android 7.x ，不支援 Android 8.0 和更新版本)。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>如何將不合規設定用於條件式存取原則？
+  若要側載應用程式，則必須允許未知的來源。 如果您不會側載 Android 應用程式，則將此功能設定為 [封鎖] 可啟用這項合規性政策。 
 
-下表說明搭配使用合規性政策與條件式存取原則時，如何管理不合規設定。
+  > [!IMPORTANT]
+  > 側載應用程式必須啟用 [封鎖來自不明來源的應用程式] 設定。 只有當您不會在裝置上側載 Android 應用程式時，才應該施行這項合規性政策。
 
---------------------
+- **公司入口網站應用程式執行階段完整性**：選擇 [需要] 以確認公司入口網站應用程式符合下列所有需求：
 
-|**原則設定**| **Android 4.0 及更新版本、Samsung Knox Standard 4.0 及更新版本** |
-| --- | ----|
-| **PIN 或密碼設定** |  已隔離 |
-| **裝置加密** | 已隔離 |
-| **已越獄或 Root 的裝置** | 隔離 (非設定) |
-| **電子郵件設定檔** | 不適用 |
-| **最低 OS 版本** | 已隔離 |
-| **最高 OS 版本** |   已隔離 |
-| **Windows 健康情況證明** | 不適用 |
+  - 已安裝預設執行階段環境
+  - 已正確簽署
+  - 不在偵錯模式
+  - 從已知來源安裝
 
---------------------------
+  當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 
-**已補救** = 裝置作業系統強制符合規範。 (例如強制使用者設定 PIN 碼)。
+- **封鎖裝置上的 USB 偵錯** (Android 4.2 或更新版本)：選擇 [封鎖] 以防止裝置使用 USB 偵錯功能。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
+- **安全性修補程式等級下限** (Android 6.0 或更新版本)：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不符合規範。 日期必須以 `YYYY-MM-DD` 格式輸入。
+- **受限應用程式**：針對應限制的應用程式，輸入其 [應用程式名稱] 和 [應用程式套件組合識別碼]。 選擇 [新增]。 已安裝至少一個受限應用程式的裝置會標示為不符合規範。
 
-**已隔離** = 裝置作業系統不強制符合規範。 (例如，Android 裝置不強制使用者為裝置加密。)裝置不合規範時，會採取下列動作︰
+選取 [確定] > [建立] 儲存您的變更。
 
-- 如果對使用者套用了條件式存取原則，裝置會遭到封鎖。
-- 公司入口網站會通知使用者任何合規性問題的相關事項。
+## <a name="locations"></a>位置
 
-<!--- ## Next steps
+在原則中，您可以強制合規性由裝置的位置。 選擇此選項，從現有的位置。 還沒有位置？ [使用 Intune 中的位置 (網路範圍)](use-network-locations.md)可提供一些指引。
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+1. 選擇**位置** > **選取位置**。
+2. 從清單中，請檢查您的位置 >**選取**。
+3. [儲存] 原則。
+
+## <a name="next-steps"></a>後續步驟
+
+- [新增適用於不符合規範的裝置動作](actions-for-noncompliance.md)並[使用篩選器原則的範圍標籤](scope-tags.md)。
+- [監視合規性政策](compliance-policy-monitor.md)。
+- [Android Enterprise 的合規性政策設定](compliance-policy-create-android-for-work.md)

@@ -1,29 +1,34 @@
 ---
-title: "Windows 8.1 的 Intune 裝置限制設定"
-titleSuffix: Azure portal
-description: "了解 Windows 8.1 裝置上可用以控制裝置設定與功能的 Intune 設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
+title: 執行 Windows 8.1 之裝置的 Microsoft Intune 裝置限制設定
+titleSuffix: ''
+description: 了解執行 Windows 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 3/6/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e9b31f9d4e784358d5672b0b8de68d34532b72c8
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a2b1b9a41c86caa14683a86212bba7570e36d102
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566177"
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中 Windows 8.1 及更新版本的裝置限制設定
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 和更新版本的裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 8.1 和更新版本的裝置進行設定。
+
 
 ## <a name="general"></a>一般
 
@@ -52,7 +57,7 @@ ms.lasthandoff: 12/12/2017
 -   **SmartScreen** - 啟用或停用潛在詐騙網站的警告。
 -   **JavaScript** - 讓瀏覽器可執行指令碼，例如 Java 指令碼。
 -   **快顯** - 啟用或停用瀏覽器的快顯封鎖程式。
--   **傳送不追蹤標頭** - 在 Internet Explorer 中傳送「不追蹤」標頭給造訪的網站。
+-   **傳送不追蹤標頭** - 在 Internet Explorer 中傳送「不追蹤」標頭至瀏覽的網站。
 -   **外掛程式** - 讓使用者可將外掛程式加入 Internet Explorer 中。
 -   **內部網路網站中的單一文字** - 可以使用單一文字來將 Internet Explorer 導向某個網站，例如 Bing。
 -   **自動偵測內部網路網站**協助在 Internet Explorer 中設定內部網站的安全性。

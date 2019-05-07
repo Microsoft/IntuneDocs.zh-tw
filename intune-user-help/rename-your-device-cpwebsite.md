@@ -1,43 +1,46 @@
 ---
-title: "從公司入口網站重新命名裝置 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+title: 從公司入口網站重新命名裝置
+description: 了解如何從公司入口網站重新命名您的裝置。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 48b20381355c15c4f5df065382923789b94e8061
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55848839"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>從公司入口網站重新命名裝置
 
-您可以決定要重新命名裝置，以利識別。 您可以從[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)執行此工作。 公司入口網站是您可用來管理已向 IT 部門註冊管理之電腦和裝置的網頁。
+從公司入口網站重新命名已註冊的受控裝置。 將裝置的通用或預設模型名稱變更為您可以快速識別的名稱。
 
-若要重新命名裝置：
+1. 開啟[公司入口網站](https://portal.manage.microsoft.com)，然後選取 [功能表] 按鈕 > [裝置]。  
 
-1.  在[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上，點選 [功能表] 按鈕![功能表按鈕的小圖像，以平行方式堆疊的三個水平橫條](/Intune/whats-new/media/CP_hamburger_menu.png)，然後選取 [我的裝置]。
+2. 選取您要重新命名的裝置。
 
-2. 在 [我的裝置] 頁面上，選取您想要重新命名的裝置名稱。
+    ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png)   
 
-  ![[我的裝置] 頁面的螢幕擷取畫面，在橫幅提示上方有一些無法辨識的裝置，橫幅提示要註冊未列出的裝置，或找出無法辨識的裝置。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 選取 [重新命名]。 如果頁面頂端未顯示重新命名選項，請選取 [其他 (...)] > [重新命名]。   
 
-3.  裝置會在快顯視窗中開啟。 點選 [重新命名] 按鈕。
+   ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)   
 
-    ![公司入口網站上所選裝置的所有選項，包括重新命名、移除、重設裝置、重設密碼，以及遠端鎖定。 ](./media/iwp-screen-with-all-options.png)
+    ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)  
 
-4.  在裝置名稱出現的方塊中，鍵入裝置的新名稱，然後點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。
+4. 在裝置名稱出現的方塊中，鍵入裝置的新名稱。 然後，點選 [重新命名] 按鈕。 您的裝置現在以新的名稱出現。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

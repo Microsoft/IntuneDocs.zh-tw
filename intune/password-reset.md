@@ -1,22 +1,26 @@
 ---
-title: "減少技術支援中心成本"
-description: "使用自助式密碼重設減少技術支援中心成本"
-keywords: "Azure Active Directory SSPR 密碼重設"
-author: arob98
-manager: angrobe
-ms.date: 08/27/2017
-ms.topic: article
-ms.prod: 
+title: 減少技術支援中心成本
+titleSuffix: Microsoft Intune
+description: 使用自助式密碼重設減少技術支援中心成本
+keywords: Azure Active Directory SSPR 密碼重設
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 3/6/2018
+ms.topic: archived
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
-ms.reviewer: pchacon
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 87d294fd873c680e950552eae82747bd59c784ec
-ms.sourcegitcommit: 3242b627c83072beaf57878234a16f1a04ddc8b4
-ms.translationtype: HT
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ce6ed4b57199f87fc014addf74a06e70a285044b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798921"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>使用自助式密碼重設減少技術支援中心成本
 
@@ -32,10 +36,10 @@ ms.lasthandoff: 08/28/2017
 3. 為供日後參考，請將[如何重設或變更密碼](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)的指示提供給員工和學生。
 4. [啟用自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-深入了解下列主題：
-* [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+深入了解下列文章：
+* [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [授權自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 需要啟用這個案例或其他 EMS 或 Office 365 案例的協助嗎？ 如果您至少有 Microsoft 365、Enterprise Mobility + Security 或 Azure Active Directory Premium 的 150 個授權，請使用 [FastTrack 權益](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)。

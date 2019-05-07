@@ -1,29 +1,32 @@
 ---
-title: "設定 Windows 資訊保護 - Intune"
-titleSuffix: Azure portal
-description: "了解您可用於管理 Windows 資訊保護的相關 Intune 設定。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 04/14/2017
-ms.topic: article
-ms.prod: 
+title: Microsoft Intune 中的 Windows 資訊保護設定
+titleSuffix: Microsoft Intune
+description: 了解您可用於管理 Windows 資訊保護的相關 Microsoft Intune 設定。
+keywords: ''
+author: brenduns
+ms.author: brenduns
+manager: dougeby
+ms.date: 01/18/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
+ms.localizationpriority: high
+ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8719e778c7f6b146625b82a63c1ff93c7936d294
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570373"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 資訊保護
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 隨著企業中員工擁有的裝置增加，透過不受企業控制的應用程式與服務 (像是電子郵件、社交媒體和公用雲端) 意外外洩資料的風險也隨之提高。 例如，員工從個人電子郵件帳戶傳送最新的工程圖片、將產品資訊複製並貼到推文中，或將進行中的銷售報表儲存到公用雲端存放裝置。
 
@@ -34,5 +37,9 @@ Intune 原則會管理受 Windows 資訊保護、企業網路位置、保護等�
 >[!NOTE]
 > 若要搭配使用 Windows 10 公司入口網站應用程式和 Windows 資訊保護，則您必須在 Windows 資訊保護的「豁免」模式下新增公司入口網站應用程式。 
 
-### <a name="next-steps"></a>後續步驟
-如需詳細資訊，請參閱[使用「Windows 資訊保護」保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+## <a name="next-steps"></a>後續步驟
+如需詳細資訊，請參閱：
+-  [使用 Windows 資訊保護來保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+- [使用 Microsoft Intune 的傳統主控台建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
+- [使用 Microsoft Intune 的 Azure 入口網站建立附帶 MDM 的 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+- [使用 Microsoft Intune 的 Azure 入口網站建立附帶 MAM 的 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)

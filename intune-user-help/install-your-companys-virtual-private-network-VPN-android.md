@@ -1,26 +1,29 @@
 ---
-title: "安裝您公司的虛擬私人網路 (VPN) | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 安裝您公司的虛擬私人網路 (VPN) | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e4180a20fdbc3181fe631f1b57ec6758a9e16ee4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6f1d8befd1cd960fd70b7cc3fbd574609ce1fb0d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55845154"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>如何安裝您公司的虛擬私人網路 (VPN)
 
@@ -33,4 +36,4 @@ ms.lasthandoff: 12/12/2017
 3.  點選 [安裝公司 VPN 設定檔]，然後遵循提示進行。 安裝步驟視您公司使用的 VPN 提供者而可能稍有不同。
 
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

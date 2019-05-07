@@ -1,28 +1,32 @@
 ---
-title: "Windows 使用者如何取得其應用程式"
-description: "讓使用者可以使用 Windows 應用程式的方法"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: Windows 使用者如何取得其應用程式
+description: 讓使用者可以使用 Windows 應用程式的方法
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/05/2016
-ms.topic: article
-ms.prod: 
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1a1c853aa16b771eff47d1d179f8870d7c1036a8
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d9d4216026487541cbdd798f247dde3bf08e1ea
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388344"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 

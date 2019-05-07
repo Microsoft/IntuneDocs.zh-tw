@@ -1,24 +1,29 @@
 ---
-title: "開發推出通訊計畫"
-description: "本文可協助您開發 Intune 部署的推出通訊計劃。"
-keywords: 
-author: arob98
-ms.author: angrobe
-nmanager: angrobe
+title: 開發推出通訊計畫
+titleSuffix: Microsoft Intune
+description: 本文可協助您開發 Microsoft Intune 部署的推出通訊計劃。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
-ms.prod: 
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d690dc82da56836e4bc338e77b9744f0ab690e87
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513285"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>開發推出通訊計畫
 
@@ -40,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 
 **啟動階段** <br/>引入 Intune 專案本身的廣泛通訊。 它應該回答一些問題，例如什麼是 Intune、為什麼組織採用 Intune (對組織和使用者的好處)，以及提供高層級的部署和推出計劃。
 
-**註冊前階段**<br/> 廣泛通訊，其中包含下列其他資訊：Intune 和配套產品 (例如 Office、Outlook、OneDrive)、使用者資源以及排定組織群組和使用者接收 Intune 的特定時間表等。
+**註冊前階段**<br/> 廣泛通訊，其中包含下列其他資訊：Intune 和配套供應項目 (例如 Office、Outlook、OneDrive)、使用者資源以及排定組織群組和使用者接收 Intune 的特定時間表等。
 
 **註冊階段**<br/> 通訊是以排定接收 Intune 的組織群組和使用者為目標。 這些通訊應該通知使用者他們可以接收 Intune，並提供註冊指示以及取得協助或詢問問題所需的連絡資訊。
 
@@ -52,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 
 您可以使用多種通訊傳遞方法，將 Intune 推出資訊傳達給您的目標組織群組和使用者。 下列清單顯示一些範例，以及您可以搭配使用方法的階段：
 
--   在啟動階段，親自或透過 Skype 會議對整個組織進行溝通
+-   在啟動階段，親自或透過 Microsoft Teams 會議對整個組織進行溝通
 
 -   在註冊前、註冊時和註冊後階段，使用電子郵件溝通
 

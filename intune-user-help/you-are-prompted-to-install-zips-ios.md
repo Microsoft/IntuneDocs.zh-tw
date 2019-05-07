@@ -1,24 +1,27 @@
 ---
-title: "您需要在 iOS 裝置上安裝 Zimperium zIPS | Microsoft Docs"
-description: "了解如何在 iOS 裝置上安裝 Zimperium zIPS。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您需要在 iOS 裝置上安裝 Zimperium zIPS | Microsoft Docs
+description: 了解如何在 iOS 裝置上安裝 Zimperium zIPS。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3fcbd09f-9b96-40fb-96fe-9e5173dc6179
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 60c0c4b05899669a535e868992d15dcd36280333
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cb70d999cf43d568ad19f2ba83618f6ecfbaf7d7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55844275"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>在 iOS 裝置上安裝 Zimperium zIPS
 
@@ -44,4 +47,4 @@ ms.lasthandoff: 12/12/2017
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 App Store 手動](https://itunes.apple.com/app/zimperium-zips/id1030924459)安裝 Zimperium zIPS。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -1,24 +1,29 @@
 ---
-title: "識別使用案例"
-description: "本文可協助您識別 Intune 使用案例，以及適用於 Microsoft Intune 僅限雲端實作的次要使用案例。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 識別使用案例
+titleSuffix: Microsoft Intune
+description: 本文可協助您識別 Intune 使用案例，以及適用於 Microsoft Intune 僅限雲端實作的次要使用案例。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512606"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>識別行動裝置管理使用案例
 
@@ -74,7 +79,7 @@ ms.lasthandoff: 11/01/2017
 
 下一步是識別每個使用案例的相關聯行動裝置平台。 可能有多個平台。
 
-例如，公司的使用案例可能支援 iOS 和 Android Samsung KNOX 裝置平台。 您的 BYOD 原則可能包含對於其他行動裝置平台的支援，例如 Android (非 Samsung KNOX) 和 Windows 10 Mobile。 以前述範例為基礎，我們已建立行動裝置平台與每個使用案例的關聯性。
+例如，公司的使用案例可能支援 iOS 和 Android Samsung Knox 裝置平台。 您的 BYOD 原則可能包含對於其他行動裝置平台的支援，例如 Android (非 Samsung Knox) 和 Windows 10 行動裝置版。 以前述範例為基礎，我們已建立行動裝置平台與每個使用案例的關聯性。
 
 | **使用案例** | **次要使用案例** | **群組** | **裝置平台** |   
 |:---:|:---:|:---:|:---:|

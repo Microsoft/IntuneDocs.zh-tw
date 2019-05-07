@@ -1,70 +1,84 @@
 ---
-title: "如何設定 Intune Wi-Fi 設定"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 在您管理的裝置上設定 Wi-Fi 連線。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 06/03/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune 中建立裝置的 Wi-Fi 設定檔 - Azure | Microsoft Docs
+description: 請查看在 Microsoft Intune 中建立 Wi-Fi 裝置組態設定檔的步驟。 建立 Android、 Android 企業、Android kiosk、iOS、macOS、Windows 10 及更新版本，以及 Windows Holographic for Business 適用的設定檔。 您可以使用這些設定檔建立 WiFi 連線以使用憑證、選擇 EAP 類型、選取驗證方法、啟用 Proxy，以及執行更多作業。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 01/16/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
+ms.localizationpriority: high
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8093b1a915f50dbd14da9e4836640c3be1a6ea64
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 708c4d4572d84f17a711ac6deb16c02d82b9eea7
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514969"
 ---
-# <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Wi-Fi 設定
+# <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+Wi-Fi 是許多行動裝置用來存取網路的無線網路。 Microsoft Intune 包含內建的 Wi-Fi 設定，可被部署到貴組織中的使用者和裝置。 這組設定稱為「設定檔」，其可被指派給不同的使用者和群組。 指派之後，您的使用者即可在無須自行設定的情況下存取貴組織的 Wi-Fi 網路。
 
-使用 Microsoft Intune Wi-Fi 設定檔，將無線網路設定指派給您組織中的使用者與裝置。 當您指派 Wi-Fi 設定檔時，使用者不需要自行設定，即可存取您公司的 Wi-Fi 網路。
+例如，您安裝了名為 Contoso Wi-Fi 的新 Wi-Fi 網路。 然後您要將所有 iOS 裝置都設定為連線到此網路。 程序如下︰
 
-例如，您安裝了名為 Contoso Wi-Fi 的新 Wi-Fi 網路，且想要將所有 iOS 裝置都設定為連線至此網路。 程序如下︰
+1. 建立包含可連線到 Contoso Wi-Fi 無線網路之設定的 Wi-Fi 設定檔。
+2. 將設定檔指派給包含所有 iOS 裝置使用者的群組。
+3. 使用者即可在其裝置上的無線網路清單中找到此新的 Contoso Wi-Fi 網路。 然後他們可以使用您選擇的驗證方法連線到網路。
 
-1. 建立 Wi-Fi 設定檔，內含連線到 Contoso Wi-Fi 無線網路所需的設定。
-2. 將設定檔指派給此群組，包含所有 iOS 裝置的使用者。
-3. 使用者即可在其裝置上的無線網路清單中找到此新的 Contoso Wi-Fi 網路，且可輕鬆地連線到該網路。
+本文列出建立 Wi-Fi 設定檔的步驟。 它也包含說明每個平台之不同設定的連結。
+
+## <a name="supported-device-platforms"></a>支援的裝置平台
 
 Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
-- Android for Work
+- Android 企業與 kiosk
 - iOS 8.0 和更新版本
-- macOS (Mac OS X 10.9 及更新版本)
+- macOS (Mac OS X 10.11 及更新版本)
+- Windows 10 和更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
 
-對於執行 Windows 8.1、Windows 10 以及 Windows 10 行動裝置版的裝置，可以匯入先前從其他裝置所匯出的 Wi-fi 設定。
+> [!NOTE]
+> 對於執行 Windows 8.1 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。
 
-使用本主題中的資訊，可深入了解設定 Wi-Fi 設定檔的相關基本概念，然後可深入閱讀每個平台的主題，以了解裝置專屬內容。
+## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-## <a name="create-a-device-profile-containing-wi-fi-settings"></a>建立內含 Wi-Fi 設定的裝置設定檔
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune]，然後選取 [Microsoft Intune]。 
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入 Wi-Fi 設定檔的 [名稱] 和 [描述]。
+4. 在 [平台] 下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 選項包括：
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置設定]。
-2. 在 [裝置設定] 刀鋒視窗中，選擇 [管理]  >  [設定檔]。
-3. 在設定檔刀鋒視窗中，選擇 [建立設定檔]。
-4. 在 [建立設定檔] 刀鋒視窗中，為 Wi-Fi 設定檔輸入 [名稱] 及 [描述]。
-5. 從 [平台] 下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 您目前可為 Wi-Fi 裝置設定，選擇下列平台之一︰
     - **Android**
-    - **Android for Work**
+    - **Android 企業**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 及更新版本 (匯入設定檔)**
-6. 從 [設定檔類型] 下拉式清單中，選擇 [Wi-Fi Basic] 或 [Wi-Fi Enterprise]。 您可以使用 **Wi-Fi Basic** 提供基本功能，像是網路名稱以及 SSID。 您可利用 **Wi-Fi Enterprise** 提供更進階的資訊，像是「可延伸的驗證通訊協定 (EAP)」(如果您的 Wi-Fi 網路使用此)。 您可利用 **Wi-Fi 匯入** (適用於 Windows 8.1 與 Windows 10)，將 Wi-Fi 設定匯入為先前從不同裝置所匯出的 XML 檔案。
-7. 您可設定的設定值取決於您選擇的平台而有所不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
-    - [Android 和 Android for Work 設定](wi-fi-settings-android.md)
-    - [iOS 設定](wi-fi-settings-ios.md)
-    - [macOS 設定](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1 設定](wi-fi-settings-import-windows-8-1.md)
-8. 當您完成時，請返回 [建立設定檔] 刀鋒視窗，然後點擊 [建立]。
+    - **Windows 8.1 及更新版本**
+    - **Windows 10 及更新版本**
 
-隨即會建立設定檔，並會出現在 [設定檔清單] 刀鋒視窗上。
-若想繼續，並將此設定檔指派給群組，請參閱[如何指派裝置設定檔](device-profile-assign.md)。
+5. 在 [設定檔類型] 中，選擇 [Wi-Fi]。
+
+    - 針對執行為 kiosk 的 **Android 企業**裝置，您可以選擇 [僅限裝置擁有者] > [Wi-Fi]。
+    - 針對 **Windows 8.1 和更新版本**，您可以選擇 [Wi-Fi 匯入]。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
+
+6. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇：
+
+    - [Android](wi-fi-settings-android.md)
+    - [Android 企業與 kiosk](wi-fi-settings-android-enterprise.md)
+    - [iOS](wi-fi-settings-ios.md)
+    - [macOS](wi-fi-settings-macos.md)
+    - [Windows 10 及更新版本](wi-fi-settings-windows.md)
+    - [Windows 8.1 和更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
+
+    大部分平台都有 [基本] 和 [企業] 設定。 **基本** 包含像網路名稱和 SSID 這樣的功能。 **企業**可讓您提供更進階的資訊，像是可延伸的驗證通訊協定 (EAP)。
+
+7. 完成新增您的 Wi-Fi 設定時，請選取 [建立設定檔] > [建立] 以新增組態設定檔。 此時會建立設定檔，並顯示在設定檔清單 ([裝置設定] > [設定檔]) 中。
+
+## <a name="next-steps"></a>後續步驟
+
+設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

@@ -1,28 +1,30 @@
 ---
-title: "Android 使用者如何取得其應用程式"
-description: "讓終端使用者可以使用 Android 應用程式的方法"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: Android 使用者如何取得其應用程式
+description: 讓終端使用者可以使用 Android 應用程式的方法
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183395"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 使用這項資訊，了解您的 Android 使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。 該資訊可能會因裝置類型 (原生 Android 裝置或 Samsung Knox Standard 裝置) 而有所不同。
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 08/25/2017
 您的終端使用者必須允許來自未知來源的安裝，才能安裝 [LOB 應用程式](lob-apps-android.md)。 這些通常可以在兩個不同的位置找到：
 
 * **Android 7.1.2 和以下版本**：[設定] > [安全性] > [未知來源]
-* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] \(特殊應用程式存取) > [Install unknown apps] \(安裝未知應用程式) > [公司入口網站] > [Allow from this source] \(允許來自此來源)
+* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] (特殊應用程式存取) > [Install unknown apps] (安裝未知應用程式) > [公司入口網站] > [Allow from this source] (允許來自此來源)
 
 如果發生這種情況，公司入口網站應用程式將會通知，並直接引導終端使用者進行適當的設定。 
 
@@ -54,7 +56,7 @@ ms.lasthandoff: 08/25/2017
 
 **未受管理的應用程式** - 無法透過原則進行管理的應用程式。 它們未受 Intune 包裝或不包含 Intune App SDK。 應用程式原則不適用於這些應用程式。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 [使用 Microsoft Intune 新增應用程式](apps-add.md)
 
 [iOS 使用者如何取得其應用程式](end-user-apps-ios.md)

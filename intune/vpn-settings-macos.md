@@ -1,47 +1,51 @@
 ---
-title: "macOS 裝置的 Intune VPN 設定"
-titlesuffix: Azure portal
-description: "了解可用於設定 macOS 裝置上 VPN 連線的 Intune 設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 05/04/2017
-ms.topic: article
-ms.prod: 
+title: macOS 裝置的 Microsoft Intune VPN 設定
+titleSuffix: ''
+description: 了解可用於設定 macOS 裝置上 VPN 連線的 Intune 設定。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 3/6/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
-ms.reviewer: karanda
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4633d3935aa97b31b8fc5331f1ab50911f8bcbe2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f752ec33ca7a69d698ffe2c06c726f3881cc35ce
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798439"
 ---
-# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中 macOS 裝置的 VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>設定 Microsoft Intune 中執行 macOS 之裝置的 VPN 設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-下列清單中所列的值並非全部都能設定，須取決於您選擇的設定。
+本文說明可用於設定執行 macOS 之裝置上 VPN 連線的 Intune 設定。
 
-## <a name="base-vpn-settings"></a>**基本 VPN 設定**
+下列清單中的值並非全部都能設定，須取決於您選擇的設定。
 
-**連線名稱** - 輸入此連線的名稱。 當使用者瀏覽其裝置尋找可用 VPN 連線的清單時，使用者會看到此名稱。
-- **IP 位或 FQDN** - 提供裝置要連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
-- **驗證方法** - 從下列各方式中選擇裝置對 VPN 伺服器的驗證方式︰
+## <a name="base-vpn-settings"></a>基本 VPN 設定
+
+**連線名稱** - 輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線清單時，使用者會看到此名稱。
+- **IP 位址或 FQDN** - 提供裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱。 範例：**192.168.1.1**、**vpn.contoso.com**。
+- **驗證方法** - 從下列方式中選擇裝置對 VPN 伺服器的驗證方式︰
     - **憑證** - 從 [驗證憑證] 下選擇先前建立用於驗證連線的 SCEP 或 PKCS 憑證設定檔。 如需憑證設定檔的詳細資訊，請參閱[如何設定憑證](certificates-configure.md)。
     - **使用者名稱與密碼** - 使用者必須提供使用者名稱及密碼才能登入 VPN 伺服器。
 - **連線類型** - 從下列廠商清單中選取 VPN 連線類型︰
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **自訂 VPN**
-- **分割通道**  -  **啟用**或**停用**此選項可讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
+- **分割通道** - **啟用**或**停用**此選項可讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](apps-deploy.md). --->
 
@@ -55,6 +59,6 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="proxy-settings"></a>Proxy 設定
 
-- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如**http://proxy.contoso.com**)。
+- **自動設定指令碼** - 使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL]。 例如，輸入 `http://proxy.contoso.com`。
 - **位址** - 輸入 proxy 伺服器位址 (例如 IP 位址)。
 - **連接埠號碼** - 輸入與 Proxy 伺服器相關聯的連接埠號碼。

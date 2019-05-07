@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "36914905"
+---
 
 
 ### <a name="apple"></a>Apple
@@ -5,12 +13,12 @@
   - Mac OS X 10.9 及更新版本
 
 ### <a name="windows"></a>Windows
-  - 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦
-  - Windows 10 Mobile
-  - 執行 Windows 10 IoT 企業版 (x86、x64) 的裝置
-  - 執行 Windows 10 IoT 行動企業版的裝置
-  - Windows 全像攝影版 &amp; Windows 全像攝影企業版
-  - Windows Phone 8.1、Windows 8.1 RT 和執行 Windows 8.1 (基本維護模式) 的電腦
+- 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦
+- Windows 10 Mobile
+- 執行 Windows 10 IoT 企業版 (x86、x64) 的裝置
+- 執行 Windows 10 IoT 行動企業版的裝置
+- Windows 全像攝影版 &amp; Windows 全像攝影企業版
+- Windows Phone 8.1、Windows 8.1 RT 和執行 Windows 8.1 (基本維護模式) 的電腦
 
   使用 Enterprise Management + Security (EMS) 的客戶也可[使用 Azure Active Directory (AAD) 註冊 Windows 10 裝置](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)。
 

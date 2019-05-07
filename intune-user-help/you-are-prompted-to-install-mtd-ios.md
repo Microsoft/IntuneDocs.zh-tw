@@ -1,24 +1,27 @@
 ---
-title: "您需要在 iOS 裝置上安裝行動威脅防禦 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您需要在 iOS 裝置上安裝行動威脅防禦 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: be1dada5a33db5053c7a0ad783aa0827edd9295f
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55846242"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 裝置上安裝 Mobile Threat Defense
 
@@ -44,4 +47,4 @@ Mobile Threat Defense 是公司確定您的裝置能安全避開可能嘗試竊�
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 
-有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -1,29 +1,34 @@
 ---
-title: "Intune 行動裝置管理移轉指南"
-description: "本指南將逐步解說有關從協力廠商 MDM 提供者移轉到 Microsoft Intune 的各種詳細資料。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 07/11/2017
-ms.topic: article
-ms.prod: 
+title: Intune 行動裝置管理移轉指南
+titleSuffix: Microsoft Intune
+description: 本指南將逐步解說有關從協力廠商 MDM 提供者移轉到 Microsoft Intune 的各種詳細資料。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: d86260872230bb0a9274fa302acac5caeaa682a7
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512965"
 ---
 # <a name="intune-migration-guide"></a>Intune 移轉指南
 
-![Intune MDM 移轉指南圖案](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM 移轉指南圖案](./media/MDM-migration-guide-art.PNG)
 
-若要成功移轉至 Intune，首先需要有一個詳實的計劃，其中通盤考量了您目前的行動裝置管理 (MDM) 環境、業務目標和技術需求。 此外，您還需要將支援和協作移轉計劃的重要關係人。
+若要成功移轉至 Microsoft Intune，需要先有一個詳實的計劃，其中通盤考量您目前的行動裝置管理 (MDM) 環境、業務目標和技術需求。 此外，您還需要包含將支援和協作移轉計劃的重要關係人。
 
 本指南將逐步解說有關從協力廠商 MDM 提供者移轉到 Intune 的各種詳細資料。
 

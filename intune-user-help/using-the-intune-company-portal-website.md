@@ -1,48 +1,49 @@
 ---
-title: "使用 Intune 公司入口網站 | Microsoft Docs"
-description: "描述公司入口網站並提供使用者可以在網站上執行之工作步驟的連結"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 06/27/2017
+title: 使用 Intune 公司入口網站 | Microsoft Docs
+description: 描述公司入口網站並提供使用者可以在網站上執行之工作步驟的連結
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55837368"
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司入口網站
-[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)是使用者可用來管理已在 Intune 註冊之電腦和裝置的網頁。
+使用[公司入口網站](https://portal.manage.microsoft.com)檢視、新增及移除您的受控裝置。
 
-使用者可以從公司入口網站執行下列工作：
+您可以從公司入口網站採取下列任何動作：
 
 -   [重新命名裝置](rename-your-device-cpwebsite.md)
 
 -   [移除裝置](remove-your-device-cpwebsite.md)
 
--   [重設 (清除) 裝置](reset-erase-your-device-cpwebsite.md)
+-   [重設裝置](reset-erase-your-device-cpwebsite.md)
 
 -   [重設裝置密碼](reset-your-passcode-cpwebsite.md)
 
 -   [從遠端鎖定裝置](remote-lock-your-device-cpwebsite.md)
 
--   [手動同步您的裝置，以更快速安裝應用程式](sync-your-device-manually-cpwebsite.md)
-
 -   尋找公司支援人員的連絡資訊 (如果您已設定)
 
--   查看其裝置的詳細資料，包括其是否符合貴公司或學校的原則
+-   檢查合規性狀態
 
--   從遠端管理其電腦 (僅適用於電腦)
+-   遠端管理電腦
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

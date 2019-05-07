@@ -1,25 +1,30 @@
 ---
-title: "使用條件式存取引導使用者採用"
-description: "本文提供如何使用條件式存取引導使用者註冊 Intune 的見解。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/12/2017
-ms.topic: article
-ms.prod: 
+title: 使用條件式存取引導使用者採用
+titleSuffix: Microsoft Intune
+description: 了解如何在 Microsoft Intune 中使用條件式存取來引導註冊。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 803bcda24b7d6fa1cf923ff28848b8d2b71cf62e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508152"
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>使用條件式存取引導使用者採用
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>在 Microsoft Intune 中使用條件式存取引導終端使用者採用
 
 使用 Intune 啟用條件式存取功能 (例如封鎖來自未註冊裝置的電子郵件) 有助於推動註冊與合規性，但不是移轉成功的要件。 您的移轉採用目標和安全性需求才是決定成功的關鍵。
 
@@ -56,7 +61,7 @@ ms.lasthandoff: 07/12/2017
 
 [使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
 
-### <a name="task-2-set-up-intune-conditional-access"></a>工作 2︰設定 Intune 條件式存取
+### <a name="task-2-set-up-intune-conditional-access"></a>工作 2：設定 Intune 條件式存取
 
 選擇下列其中一個選項：
 

@@ -1,26 +1,29 @@
 ---
-title: "您在公司入口網站應用程式中收到錯誤 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您在公司入口網站應用程式中收到錯誤 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 55fd0e87545666220721c4e874bcf0cc6e9b5e88
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1d9ea064da17e5447c08c3a8370017dec34e30af
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55844397"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>您在使用公司入口網站應用程式時收到錯誤
 
@@ -32,4 +35,4 @@ ms.lasthandoff: 12/12/2017
 
 -   進入公司入口網站應用程式後，請搖晃裝置，然後在出現診斷警示時，點選 [電子郵件]。 如果在您搖晃裝置時未出現警示，請開啟 [設定] > [公司入口網站]，並確定開啟 [搖晃手勢] 選項。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

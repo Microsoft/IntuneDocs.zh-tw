@@ -1,32 +1,37 @@
 ---
-title: "如何使用 Azure AD 存取 Intune 圖形 API"
-description: "描述應用程式使用 Azure AD 存取 Intune 圖形 API 所需的步驟"
-keywords: "intune graphapi c# powershell 權限角色"
-author: vhorne
-manager: angrobe
-ms.author: victorh
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
+title: 如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
+titleSuffix: Microsoft Intune
+description: 描述應用程式使用 Azure AD 在 Microsoft Graph 中存取 Intune API 所需的步驟。
+keywords: intune graphapi c# powershell 權限角色
+author: dougeby
+manager: dougeby
+ms.author: dougeby
+ms.date: 03/08/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 26bdeaf2a5860d0c19feba2ec8b5864e95754b12
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798973"
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>如何使用 Azure AD 存取 Intune 圖形 API
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/) 現在支援具有特定 API 和權限角色的 Microsoft Intune。  圖形 API 使用 Azure Active Directory (Azure AD) 進行驗證和存取控制。  
-對於 Intune 圖形 API 的存取需要：
+[Microsoft Graph API](https://developer.microsoft.com/graph/) 現在支援具有特定 API 和權限角色的 Microsoft Intune。  Microsoft Graph API 使用 Azure Active Directory (Azure AD) 進行驗證和存取控制。  
+在 Microsoft Graph 中存取 Intune API 需要：
 
 - 具有以下項目的應用程式識別碼：
 
-    - 呼叫 Azure AD 和圖形 API 的權限。
+    - 呼叫 Azure AD 和 Microsoft Graph API 的權限。
     - 與特定應用程式工作相關的權限範圍。
 
 - 具有以下項目的使用者認證：
@@ -38,13 +43,13 @@ ms.lasthandoff: 12/12/2017
 
 這篇文章：
 
-- 示範如何使用圖形 API 和相關權限角色的存取權註冊應用程式。
+- 示範如何使用 Microsoft Graph API 和相關權限角色的存取權註冊應用程式。
 
-- 描述 Intune 圖形 API 權限角色。
+- 描述 Intune API 權限角色。
 
-- 提供 C# 和 PowerShell 的 Intune 圖形 API 驗證範例。
+- 提供 C# 和 PowerShell 的 Intune API 驗證範例。
 
-- 描述如何支援多個租用戶
+- 描述如何支援多個租用戶。
 
 如需詳細資訊，請參閱：
 
@@ -53,9 +58,9 @@ ms.lasthandoff: 12/12/2017
 - [整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [了解 OAuth 2.0](https://oauth.net/2/) \(英文\)
 
-## <a name="register-apps-to-use-graph-api"></a>註冊應用程式以使用圖形 API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>註冊應用程式以使用 Microsoft Graph API
 
-若要註冊應用程式以使用圖形 API：
+註冊應用程式以使用 Microsoft Graph API：
 
 1.  使用系統管理認證登入 [Azure 入口網站](https://portal.azure.com)。
 
@@ -97,7 +102,7 @@ ms.lasthandoff: 12/12/2017
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    在相關名稱左邊勾選核取記號，選擇應用程式所需的角色。  若要深入了解特定 Intune 權限範圍，請參閱 [Intune 權限範圍](#user-content-intune-permission-scopes)。  若要深入了解其他圖形 API 權限範圍，請參閱 [Microsoft Graph 權限參考](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) \(英文\)。
+    在相關名稱左邊勾選核取記號，選擇應用程式所需的角色。  若要深入了解特定 Intune 權限範圍，請參閱 [Intune 權限範圍](#intune-permission-scopes)。  若要深入了解其他圖形 API 權限範圍，請參閱 [Microsoft Graph 權限參考](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) \(英文\)。
 
     為獲得最佳結果，請選擇實作應用程式所需的最少角色。
 
@@ -115,52 +120,52 @@ ms.lasthandoff: 12/12/2017
 
 - 讓您租用戶以外的使用者能夠使用應用程式  (通常只有支援多個租用戶/組織的合作夥伴才需要這樣做)。  
 
-    操作方法：
+    若要這樣做：
 
-    1. 從應用程式刀鋒視窗中選擇 [資訊清單]，這樣可開啟 [編輯資訊清單] 刀鋒視窗。
+  1. 從應用程式刀鋒視窗中選擇 [資訊清單]，這樣可開啟 [編輯資訊清單] 刀鋒視窗。
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. 將 `availableToOtherTenants` 的值變更為 `true`。
+  2. 將 `availableToOtherTenants` 的值變更為 `true`。
 
-    3. 儲存您的變更。
+  3. 儲存您的變更。
 
 ## <a name="intune-permission-scopes"></a>Intune 權限範圍
 
-Azure AD 和圖形 API 使用權限範圍來控制公司資源的存取權。  
+Azure AD 和 Microsoft Graph 使用權限範圍來控制公司資源的存取權。  
 
-權限範圍 (也稱為 _OAuth 範圍_) 可控制特定 Intune 實體和其內容的存取權。 本節摘要說明 Intune 圖形 API 功能的權限範圍。
+權限範圍 (也稱為 _OAuth 範圍_) 可控制特定 Intune 實體和其內容的存取權。 本節摘要說明 Intune API 功能的權限範圍。
 
 若要深入了解：
 - [Azure AD 驗證](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [應用程式權限範圍](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-當您將權限授與圖形 API 時，可以指定下列範圍來控制 Intune 功能的存取權：下表摘要說明 Intune 圖形 API 權限範圍。  第一欄顯示了出現在 Azure 入口網站中的功能名稱，第二欄提供權限範圍名稱。
+當您將權限授與 Microsoft Graph 時，可以指定下列範圍來控制 Intune 功能的存取權：下表摘要說明 Intune API 權限範圍。  第一欄顯示了出現在 Azure 入口網站中的功能名稱，第二欄提供權限範圍名稱。
 
 _啟用存取_設定 | 領域名稱
 :--|:--
-__在 Microsoft Intune 裝置上執行受使用者影響的遠端動作__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__在 Microsoft Intune 裝置上執行受使用者影響的遠端動作__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __讀取和寫入 Microsoft Intune 裝置__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __讀取 Microsoft Intune 裝置__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __讀取和寫入 Microsoft Intune RBAC 設定__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__讀取 Microsoft Intune RBAC 設定__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__讀取 Microsoft Intune RBAC 設定__ | DeviceManagementRBAC.Read.All
 __讀取和寫入 Microsoft Intune 應用程式__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __讀取 Microsoft Intune 應用程式__ | [DeviceManagementApps.Read.All](#app-ro)
-__讀取和寫入 Microsoft Intune 裝置設定和原則__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__讀取和寫入 Microsoft Intune 裝置設定和原則__ | DeviceManagementConfiguration.ReadWrite.All
 __讀取 Microsoft Intune 裝置設定和原則__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __讀取和寫入 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 表格依照 Azure 入口網站中顯示的順序列出設定。 以下幾節依字母順序說明範圍。
 
-此時，所有 Intune 權限範圍都需要系統管理員存取權。  這表示執行存取 Intune 圖形 API 資源的應用程式或指令碼時，需要對應的認證。
+此時，所有 Intune 權限範圍都需要系統管理員存取權。  這表示執行存取 Intune API 資源的應用程式或指令碼時，需要對應的認證。
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
 - **啟用存取**設定：__讀取 Microsoft Intune 應用程式__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 行動裝置應用程式
+    - 用戶端應用程式
     - 行動裝置應用程式類別
     - 應用程式保護原則
     - 應用程式設定
@@ -173,7 +178,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 
 - 也可允許變更下列實體：
 
-    - 行動裝置應用程式
+    - 用戶端應用程式
     - 行動裝置應用程式類別
     - 應用程式保護原則
     - 應用程式設定
@@ -319,7 +324,7 @@ __讀取 Microsoft Intune 設定__ | [DeviceManagementServiceConfig.Read.All](#s
 
 如果發生這種情況，請確認：
 
-- 您已將應用程式識別碼更新為已獲授權可使用圖形 API 和 `DeviceManagementManagedDevices.Read.All` 權限範圍。
+- 您已將應用程式識別碼更新為已獲授權可使用 Microsoft Graph API 和 `DeviceManagementManagedDevices.Read.All` 權限範圍。
 
 - 您的租用戶認證支援系統管理功能。
 
@@ -434,7 +439,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>驗證 Azure AD (PowerShell)
 
-下列 PowerShell 指令碼使用 AzureAD PowerShell 模組來進行驗證。  若要深入了解，請參閱 [Azure Active Directory PowerShell 第 2 版](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) \(英文\) 和 [Intune PowerShell 範例](https://github.com/microsoftgraph/powershell-intune-samples) \(英文\)。
+下列 PowerShell 指令碼使用 AzureAD PowerShell 模組來進行驗證。  若要深入了解，請參閱 [Azure Active Directory PowerShell 第 2 版](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) \(英文\) 和 [Intune PowerShell 範例](https://github.com/microsoftgraph/powershell-intune-samples) \(英文\)。
 
 在此範例中，更新 `$clientID` 的值以符合有效的應用程式識別碼。
 
@@ -559,7 +564,7 @@ catch {
 
     a. 使用 [Microsoft 合作夥伴中心](https://partnercenter.microsoft.com/) 來定義與您的用戶端及其電子郵件地址之間的關聯性。
 
-    b。 邀請使用者成為您租用戶的來賓。
+    b. 邀請使用者成為您租用戶的來賓。
 
 若要邀請使用者成為您租用戶的來賓：
 
@@ -585,7 +590,7 @@ catch {
 
 此外：
 
-- 您可以使用 http://portal.office.com，將 Intune 授權指派給您的使用者帳戶。
+- 您可以使用 https://admin.microsoft.com ，將 Intune 授權指派給您的使用者帳戶。
 
 - 更新應用程式碼以驗證用戶端的 Azure AD 租用戶網域，而不只是您自己的網域。
 

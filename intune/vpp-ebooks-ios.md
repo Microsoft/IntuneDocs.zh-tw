@@ -1,30 +1,34 @@
 ---
-title: "管理大量採購的 iOS 電子書"
-titlesuffix: Azure portal
-description: "針對從 iOS Store 大量採購的電子書，了解如何將電子書同步到 Intune，然後管理及並追蹤其使用情況。"
-keywords: 
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 08/17/2017
-ms.topic: article
-ms.prod: 
+title: 管理大量採購的 iOS 電子書
+titleSuffix: Microsoft Intune
+description: 針對從 iOS Store 大量採購的電子書，了解如何將電子書同步到 Intune，然後管理並追蹤其使用情況。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 04/09/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 16f1e720e94ac8c6b35158477b41bfaeac9dc0a8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f31c623196abd4ffcdfc4f5ccded088c12d5d992
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570737"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 針對您想要散發給公司中多位使用者的書籍，Apple 大量採購方案 (VPP) 可讓您購買書籍的多份授權。 您可以從商務或教育市集散發書籍。
 
@@ -33,7 +37,7 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 管理書籍的程序與[管理 VPP 應用程式](vpp-apps-ios.md)的程序類似。
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>管理大量採購的 iOS 裝置書籍
-您可以透過[商務 Apple 大量採購方案](http://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](http://volume.itunes.apple.com/us/store)，購買多份 iOS 書籍授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將大量採購資訊與 Intune 同步處理，並追蹤大量採購的書籍使用情況。
+您可以透過[商務 Apple 大量採購方案](https://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](https://volume.itunes.apple.com/us/store)，購買多份 iOS 書籍授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將大量採購資訊與 Intune 同步處理，並追蹤大量採購的書籍使用情況。
 
 ## <a name="before-you-start"></a>開始之前
 在開始之前，請從 Apple 取得 VPP 權杖，並將它上傳至您的 Intune 帳戶。 此外：
@@ -52,28 +56,29 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>取得並上傳 Apple VPP 權杖
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗上，選擇 [行動應用程式]。
-1.  在 [行動應用程式] 工作負載中，選擇 [安裝] > [iOS VPP 權杖]。
-2.  在 [VPP 權杖清單] 刀鋒視窗中，按一下 [新增]。
-3.  在 [新的 VPP 權杖] 刀鋒視窗中，指定下列資訊：
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
+3. 在 [Intune] 窗格上，選擇 [用戶端應用程式]。
+1.  在 [用戶端應用程式] 工作負載中，選擇 [安裝] > [iOS VPP 權杖]。
+2.  在 VPP 權杖清單窗格中，按一下 [建立]。
+3.  在 [新的 VPP 權杖] 窗格中，指定下列資訊：
     - **VPP 權杖檔案** - 確認您已註冊商務大量採購方案或教育大量採購方案。 然後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
     - **VPP 帳戶類型** - 請選擇 [商務] 或 [教育]。
-4. 完成之後，請按一下 [上傳]。
+4. 完成時按一下 [建立]。
 
-該權杖會顯示在權杖清單刀鋒視窗內。
+該權杖會顯示在權杖清單窗格內。
 
 
 您可以隨時選擇 [立即同步處理]，使用 Intune 同步處理 Apple 所儲存的資料。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
+3. 在 [Intune] 窗格中，選擇 [電子書]。
 1. 在 [電子書] 工作負載中，選擇 [管理]  >  [所有電子書]。
-2. 在書籍清單刀鋒視窗上，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
-3. 在 <書籍名稱> - [指派的群組] 刀鋒視窗中，選擇 [管理] > [指派的群組]。
-4. 選擇 [指派群組]，然後，在 [選取群組] 刀鋒視窗中，選擇要指派該書籍的 Azure AD 使用者群組。 裝置群組目前尚未支援。
+2. 在書籍清單窗格中，選擇您要指派的書籍，然後選擇 [...] > [指派群組]。
+3. 在 <書籍名稱> - [指派的群組] 窗格中，選擇 [管理] > [指派的群組]。
+4. 選擇 [指派群組]，然後在 [選取群組] 窗格中，選擇要指派該書籍的 Azure AD 使用者群組。 裝置群組目前尚未支援。
 選擇指派動作：**可用**或**必要**。 
 5. 完成之後，請選擇 [儲存]。
 

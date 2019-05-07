@@ -1,26 +1,29 @@
 ---
-title: "如果重設 iOS 裝置，會發生什麼情況？ | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 如果重設 iOS 裝置，會發生什麼情況？ | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7275e740ff2eb23af268ad9b281f3268e1bb16a2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55840751"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>使用公司入口網站重設您的 iOS 裝置會發生什麼情況？
 
@@ -38,4 +41,4 @@ ms.lasthandoff: 12/12/2017
 
 -   將會刪除您的公司電子郵件帳戶和尚未儲存的電子郵件。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -1,34 +1,39 @@
 ---
-title: "資料倉儲使用者實體時間軸 | Microsoft Docs"
-description: "Intune 資料倉儲以時間軸的方式呈現使用者。"
-keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 11/14/2017
-ms.topic: article
-ms.prod: 
+title: 資料倉儲使用者實體時間軸
+titleSuffix: Microsoft Intune
+description: 了解「Microsoft Intune 資料倉儲」如何以時間軸的方式呈現使用者。
+keywords: Intune 資料倉儲
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 03/26/2019
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ce43234003da859b81dd499f22f7280db5bda41b
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cfa1df8053301b92c04d92f8c48d2c6c34e30129
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799746"
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune 資料倉儲中的使用者存留期表示法
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 資料倉儲中的使用者存留期表示法
 
 您可以使用資料快照集儲存到 Intune 資料倉儲中的日期，來回答有關以時間為基礎之趨勢的問題。 例如，您可以查看在一個月內開始新增的使用者數目。 您可能也會詢問已經從系統移除之使用者的數目。
 
-為了提供這樣的深入見解，資料倉儲會儲存歷史資訊。 這表示它可以追蹤某個實體的存留期。 當實體建立時、實體狀態變更時，及實體被刪除時，倉儲都會記錄。 利用以每日快照集這樣的量化度量所擷取的歷程記錄，您可以比較某一天與其前一天，依此類推。
+為了提供這種類型的深入見解，資料倉儲會儲存歷史資訊。 資料倉儲可以追蹤實體的存留期。 倉儲會記錄實體建立時間、實體狀態變更時間，以及刪除實體時間。 利用以每日快照集這樣的量化度量所擷取的歷程記錄，您可以比較某一天與其前一天，依此類推。
 
 因為實體的狀態會變更，所以處理實體存留期可能令人困惑。 也就是說，如果您查看第 30 天的快照集，使用者資料列可能未以作用中的狀態存在於資料中。 而在第 29 到 28 天，該實體資料列可能以作用中的狀態存在。 然後在第 28 天之前，該使用者完全不存在。
 
-我們來逐步檢視實體的存留期可能會更清楚。
+如果您逐步檢視實體的存留期，可能會更清楚這種情況。
 
 假設使用者 **John Smith**，在 2017/06/01 被指派授權，然後 **User** 資料表會有下列項目： 
  
@@ -73,7 +78,7 @@ John Smith 在 2017/07/25 放棄他的授權。 **User** 資料表有下列項�
  
 若只要查看目前存在的維度實體，可以套用 **IsDeleted = FALSE** 的篩選條件。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
  - 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。

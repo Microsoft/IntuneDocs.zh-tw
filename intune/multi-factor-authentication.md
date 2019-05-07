@@ -1,28 +1,31 @@
 ---
-title: "Intune 裝置註冊的多重要素驗證"
-titlesuffix: Azure portal
-description: "如何在 Azure AD 中針對裝置註冊要求多重要素驗證。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+title: 需要 Intune 裝置註冊的多重要素驗證
+titlesuffix: Microsoft Intune
+description: 如何在 Azure AD 中針對 Intune 裝置註冊要求多重要素驗證。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
-ROBOTS: 
+ROBOTS: ''
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3aabe77257fd7e6964dd7bd83035c8a491a58b4
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834087"
 ---
-# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune 裝置的註冊的多重要素驗證 | Microsoft Docs
+# <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 可以使用 Azure Active Directory (AD) 多重要素驗證 (MFA) 進行裝置註冊，以協助您保護公司資源的安全。
 
@@ -41,27 +44,24 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 若要在註冊裝置時要求 MFA，請遵循下列步驟︰
 
 >[!Important]
+>您必須將 Azure Active Directory Premium P1 (或以上) 指派給使用者以實施此原則。
+
+>[!Important]
 >請不要針對 Microsoft Intune 註冊設定 [以裝置為準的存取規則]。
 
 1. 使用您的認證登入您的 [Microsoft Azure 入口網站](https://portal.azure.com)。
-2. 在入口網站中，選擇 [Azure Active Directory]。
-2. 在 [Azure Active Directory] 中，選擇 [管理] > [企業應用程式]。
-3. 在 [企業應用程式] 中，選擇 [管理] > [所有應用程式]。 您會看到一份您所管理的所有 Azure 應用程式清單。
-3. 從清單中，選擇 [Microsoft Intune 註冊]。
-4. 在 [Microsoft Intune 註冊] 中，選擇 [安全性] > [條件式存取]。
-5. 選擇 [新增原則]。
-6. 在 [新增] 原則中，鍵入原則的描述性名稱。
-7. 在 [指派] 區段中，選擇 [使用者和群組]。
-8. 在 [使用者和群組] 中，選擇將接收這個原則的使用者或群組，然後選擇 [完成]。
-9. 在 [指派] 區段中，選擇 [雲端應用程式]。
-10. 在 [雲端應用程式] 的 [包含] 索引標籤上，選擇 [選取應用程式]，並選擇 [選取] > [Microsoft Intune 註冊]，然後選擇 [完成]。
-11. 在 [指派] 區段中，選擇 [條件]。
-12. 在 [條件] 中，您不需要設定 MFA 的任何設定。
-13. 在 [存取控制] 區段中，選擇 [授與]。
-14. 在 [授與] 中，選擇 [授與存取權]，然後選取 [需要多重要素驗證]。
-    請不要選取 [裝置需要標記為合規]，因為在註冊之前無法評估裝置的合規性。
-15. 選擇 [選取]。
-16. 在 [新增原則] 中，選擇 [啟用原則] > [開啟]，然後選擇 [建立]。
+2. 在入口網站中，移至 [[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)]。
+3. 在 [Azure Active Directory] 的 [安全性] 下，選擇 [[條件式存取](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)]。
+4. 選擇 [新增原則]。
+5. 在 [新增] 原則中，鍵入原則的描述性名稱。
+6. 在 [指派] 區段中，選擇 [使用者和群組]。
+7. 在 [使用者和群組] 中，選擇 [選取使用者或群組]，並核取 [使用者和群組]。 接著，選取將接收這個政策的使用者和/或群組，然後選擇 [完成]。
+8. 在 [指派] 區段中，選擇 [雲端應用程式]。
+9. 在 [雲端應用程式] 的 [包含] 索引標籤上，選擇 [選取應用程式]，並選擇 [選取] > [Microsoft Intune 註冊]，然後選擇 [完成]。
+10. 在 [指派] 區段的 [條件] 中，您不需要設定 MFA 的任何設定。
+11. 在 [存取控制] 區段中，選擇 [授與]。
+12. 在 [授與] 中，選擇 [授與存取權]，然後選取 [需要多重要素驗證]。 請不要選取 [裝置需要標記為合規]，因為在註冊之前無法評估裝置的合規性。 然後選擇 [選取]。
+13. 在 [新增原則] 中，選擇 [啟用原則] > [開啟]，然後選擇 [建立]。
 
 
 

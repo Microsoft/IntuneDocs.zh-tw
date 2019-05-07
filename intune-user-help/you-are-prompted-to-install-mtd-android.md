@@ -1,24 +1,27 @@
 ---
-title: "您需要在 iOS 裝置上安裝行動威脅防禦 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您需要在 iOS 裝置上安裝行動威脅防禦 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 902bb538-d30a-44e4-80e1-7ae34e6a605d
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 25415ae809572de6ded8947799e55764d427e169
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5e72922659c943c5f7748d589bf75560a1565598
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55847007"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>在 Android 裝置上安裝 Mobile Threat Defense
 
@@ -31,4 +34,4 @@ ms.lasthandoff: 12/12/2017
 
 **若安裝無法運作**
 
-有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請連絡公司支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

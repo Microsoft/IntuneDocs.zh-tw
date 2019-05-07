@@ -1,29 +1,32 @@
 ---
-title: "修正 Windows 裝置常見的問題 | Microsoft Docs"
-description: "了解如何解決 Windows 裝置常見的問題。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 11/06/2017
+title: 修正 Windows 裝置常見的問題 | Microsoft Docs
+description: 了解如何解決 Windows 裝置常見的問題。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48644443-ff50-4af1-9c23-443e6e5c3b47
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 17d8fd46e46586510bed2f95c502f89ae67c95be
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 00d927b396619e237986502e60efdc0f9d11bc0b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55845494"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>修正 Windows 裝置常見的問題
 
-有時候 Windows 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 Windows 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上的連絡資訊，與您公司的支援人員連絡。
 
 - [我的 Windows 10 裝置無法註冊](troubleshoot-your-windows-10-device-windows.md)
 - [我需要更新 Windows 裝置](you-need-to-update-your-windows-device.md)

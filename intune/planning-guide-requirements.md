@@ -1,24 +1,29 @@
 ---
-title: "決定使用案例的需求"
-description: "本文可協助您判斷 Intune 使用案例，以及適用於 Microsoft Intune 僅限雲端實作的次要使用案例需求。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 決定使用案例的需求
+titleSuffix: Microsoft Intune
+description: 本文可協助您判斷 Intune 使用案例，以及適用於 Microsoft Intune 僅限雲端實作的次要使用案例需求。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512639"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>決定使用案例的需求
 
@@ -30,7 +35,7 @@ ms.lasthandoff: 11/01/2017
 
 以下是一些組織使用案例需求的範例，其中說明每個使用案例與次要使用案例、組織群組和行動裝置平台的不同需求。 您也可以使用下表來輸入您的組織使用案例需求：
 
-| **使用案例** | **次要使用案例** | **群組** | **裝置平台** | **Requirements** |
+| **使用案例** | **次要使用案例** | **群組** | **裝置平台** | **需求** |
 |:---:|:---:|:---:|:---:|:---:|
 | 公司 | 資訊工作者 | 人力資源、財務 | iOS | 安全電子郵件、裝置設定、設定檔、應用程式 |                                                          
 | 公司 | 主管 | 人力資源、財務 | iOS | 安全電子郵件、裝置設定、設定檔、應用程式 |                                                         

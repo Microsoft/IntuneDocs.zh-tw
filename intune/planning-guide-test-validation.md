@@ -1,27 +1,32 @@
 ---
-title: "Intune 測試與驗證"
-description: "以下是當您在環境中測試和驗證 Intune 僅限雲端解決方案時必須考慮的詳細資料。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: Intune 測試與驗證
+titleSuffix: Microsoft Intune
+description: 如何在您的環境中測試及驗證 Intune 僅雲端解決方案。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 3/22/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: f10b4b0e7c48e921eb92392edf95bfcfaa83db9f
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512844"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
-在實作階段期間和之後，都需要執行測試階段。 您需要測試帳戶、群組和裝置，以測試先前所識別的所有必要 IT (管理員) 和使用者 (使用案例) 案例。
+在測試 Microsoft Intune 的實作時，請考慮功能驗證及使用案例驗證。 功能驗證包含測試每個元件和設定，以判斷是否正確運作。 使用案例驗證包含測試以驗證涉及一系列工作的案例會如預期般運作。 
 
 建議您在測試階段納入 IT 支援和技術服務人員，以便建立支援文件，讓 IT 支援和技術服務人員熟悉支援產品。 如果元件或案例無法根據使用案例運作，請務必記錄必要的變更，並包含進行變更的原因。
 
@@ -29,17 +34,17 @@ ms.lasthandoff: 11/01/2017
 
 建議您記錄下列各項：
 
--   **測試準則：**找出測量的測試基準。
+-   **測試準則：** 找出測量的測試基準。
 
--   **設計元件：**至少必須存在於一項測試準則中。
+-   **設計元件：** 至少必須存在於一項測試準則中。
 
 如果設計元件不存在於至少符合需求或案例的一項測試準則中，請考慮設計元件是否為必要。 此外，請確定擁有下列項目︰
 
--   **帳戶：**有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
+-   **帳戶：** 有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
 
--   **裝置：**可以抹除或重設為原廠預設值的測試裝置。
+-   **裝置：** 可以抹除或重設為原廠預設值的測試裝置。
 
--   **整合元件：**如有需要，應該安裝並設定所有的整合元件 (憑證連接器、適用於託管 Exchange 的 Intune 服務至服務連接器以及 Intune 內部部署 Exchange 連接器)。
+-   **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器及 Intune Exchange 內部部署連接器)。
 
 您可能需要設計變更，以備處理無法預見的問題。 此外，所有的設計變更都應該詳細記錄每項變更的原因。 下例示範可能的變更︰
 
@@ -49,7 +54,7 @@ ms.lasthandoff: 11/01/2017
 
 -   [如何取得 Microsoft Intune 的管理支援](get-support.md)
 
--   [Microsoft Intune 的連絡電話協助支援](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Microsoft Intune 的連絡電話協助支援](get-support.md)
 
 ## <a name="functional-validation-testing"></a>功能驗證測試
 

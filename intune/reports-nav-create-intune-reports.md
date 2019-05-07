@@ -1,33 +1,40 @@
 ---
-title: "使用 Intune 資料倉儲 | Microsoft Docs"
-description: "使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。"
-keywords: "Intune 資料倉儲"
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
-ms.date: 10/18/2017
-ms.topic: article
-ms.prod: 
+title: 使用 Intune 資料倉儲
+titleSuffix: Microsoft Intune
+description: 使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。
+keywords: Intune 資料倉儲
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 12/14/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: medium
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798114"
 ---
-# <a name="use-the-intune-data-warehouse"></a>使用 Intune 資料倉儲
+# <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 資料倉儲
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。 例如，某些報表包含：
 -   Intune 中使用者註冊趨勢，以最佳化授權採購
 -   應用程式和 OS 版本分解，以檢閱行動裝置的狀態
 -   註冊和裝置合規性趨勢，以順暢地轉出原則更新
+
+## <a name="data-warehouse-benefits"></a>資料倉儲的優點
 
 資料倉儲可讓您存取 Azure 入口網站以外之行動環境的詳細資訊。 您可以使用 Intune 資料倉儲存取：
 
@@ -36,13 +43,13 @@ ms.lasthandoff: 11/02/2017
   -  使用 OData 標準的資料模型
 
 > [!Note]
-> 如果使用混合式行動裝置管理 (MDM) 搭配 System Center Configuration Manager 與 Microsoft Intune，您想要從 SCCM 擷取資料。 Intune 資料倉儲只包含 Intune 資料。 您可以針對自訂報表使用 SCCM Power BI 儀表板。 如需詳細資訊，請參閱 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (宣佈適用於 System Center Configuration Manager 的 Power BI 解決方案範本) 和[建立 Power BI 報表和儀表板](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)。
-
+> 如果使用共同管理的行動裝置管理 (MDM) 搭配 System Center Configuration Manager 與 Microsoft Intune，您需要從 Configuration Manager 擷取資料。 Intune 資料倉儲只包含 Intune 資料。 您可以使用 Configuration Manager 的 Power BI 儀表板，針對自訂報表。 如需詳細資訊，請參閱 "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (宣告適用於 System Center Configuration Manager 的 Power BI 解決方案範本) 和 [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Dynamics 365 的 Power BI 內容)。
 
 > [!Important]  
-> 您可以使用搶鮮版 (Beta) 來試用最新資料倉儲功能。 若要使用搶鮮版 (Beta)，URL 必須包含查詢參數 `api-version=beta`。 搶鮮版 (Beta) 會先提供功能，再將它們正式推出為支援的服務。 Intune 新增功能時，搶鮮版 (Beta) 可能會變更行為和資料合約。 與搶鮮版 (Beta) 相依的任何自訂程式碼或報告工具都可能會中斷進行中更新。
+> 您現在可以藉由設定查詢參數  `api-version=v1.0` 來使用 Intune 資料倉儲 v1.0 版。 資料倉儲中對集合所進行的更新為附加性質，因此不會破壞現有的案例。<br><br>
+> 您可以使用搶鮮版 (Beta) 來試用最新資料倉儲功能。 若要使用搶鮮版 (Beta)，URL 必須包含查詢參數  `api-version=beta`。 搶鮮版 (Beta) 能在功能被正式推出為支援的服務之前預先提供它們。 Intune 新增功能時，搶鮮版 (Beta) 可能會變更行為和資料合約。 與搶鮮版 (Beta) 相依的任何自訂程式碼或報告工具都可能會中斷進行中更新。
 
-**後續步驟**
+## <a name="next-steps"></a>後續步驟
 
 - 取得連結，並使用 Power BI 深入了解。 如需指示，請參閱[使用 Power BI 連線至 Intune 資料倉儲](reports-proc-get-a-link-powerbi.md)。
 - 使用您的連結，以 Power BI 建立自訂報表。 如需指示，請參閱[利用 Power BI 的 OData 摘要建立報表](reports-proc-create-with-odata.md)。

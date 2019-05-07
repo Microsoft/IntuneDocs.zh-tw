@@ -1,20 +1,25 @@
 ---
-title: "文章標題 | 服務名稱"
-description: 
-keywords: 
-author: GITHUB USERNAME
-manager: ALIAS
+title:
+- 文章標題 | 服務名稱
+description: ''
+keywords: ''
+author:
+- GITHUB USERNAME
+manager:
+- ALIAS
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
-ms.assetid: GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
+ms.assetid:
+- GET ONE FROM guidgenerator.com
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "20283564"
 ---
 # <a name="metadata-and-markdown-template"></a>中繼資料和 Markdown 範本
 
@@ -55,7 +60,7 @@ ms.lasthandoff: 07/01/2017
 ##### <a name="fifth-level-heading"></a>第五個層級的標題
 ###### <a name="sixth-level-heading"></a>第六個層級的標題
 
-## <a name="text-styling"></a>文字樣式
+## <a name="text-styling"></a>文字樣式設定
 
 *斜體* 
 
@@ -85,7 +90,7 @@ ms.lasthandoff: 07/01/2017
 
 如果 URL 出現在 Markdown 檔案中，則會將它轉換成可點按的連結。
 
-- 範例︰http://www.github.com
+- 範例： http://www.github.com
 
 ## <a name="lists"></a>清單
 
@@ -162,7 +167,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+> 桃之夭夭，灼灼其華，之子于歸，宜其室家。 Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ## <a name="images"></a>映像
 

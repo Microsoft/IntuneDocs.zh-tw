@@ -1,30 +1,33 @@
 ---
-title: "修正 iOS 裝置常見的問題 | Microsoft Docs"
-description: "了解如何解決 iOS 裝置常見的問題。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 修正 iOS 裝置常見的問題 | Microsoft Docs
+description: 了解如何解決 iOS 裝置常見的問題。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 06/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 66436fd8-1582-41f5-9c3b-abd914365f2d
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 656c2891a0f3c1b54d419f9d5dc3138126f7dc96
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 54ea19ab95bbb7056281dcc8e67a706415964a75
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55833885"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>修正 iOS 裝置常見的問題
 
-有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)上的連絡資訊，與您公司的支援人員連絡。
+有時候 iOS 裝置發生的問題，可能可以透過疑難排解予以修正。 下列常見問題我們認為您可以先嘗試自行修正。 對於更為複雜的問題，我們建議您參考[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)上的連絡資訊，與您公司的支援人員連絡。
 
 - [我需要重新連接遭盜用的 iOS 裝置](how-to-reconnect-a-compromised-ios-device.md)
 - [我需要將錯誤傳送給我的公司支援人員](send-errors-to-your-it-admin-ios.md)

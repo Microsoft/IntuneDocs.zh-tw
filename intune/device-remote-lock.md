@@ -1,51 +1,60 @@
 ---
-title: "使用 Intune 從遠端鎖定受管理的裝置"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune，從遠端鎖定您管理的裝置。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 11/21/2017
-ms.topic: get-started-article
-ms.prod: 
+title: 使用 Microsoft Intune 鎖定裝置 - Azure | Micrososft Docs
+description: 使用 Microsoft Intune 的遠端鎖定動作，鎖定受 PIN 或密碼保護的裝置。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 03/07/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8905b97a5912010a2516788a8da66441fc6f89ae
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e4d0443b100a4a973161ddcbf5e445c4b6136e6f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394235"
 ---
-# <a name="remotely-lock-managed-devices-with-intune"></a>使用 Intune 從遠端鎖定受管理的裝置
+# <a name="remotely-lock-devices-with-intune"></a>使用 Intune 從遠端鎖定裝置
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-**遠端鎖定**裝置會鎖定選取的裝置。 裝置擁有者必須使用其密碼才能解除裝置鎖定。 您只可從遠端鎖定具有 PIN 碼或密碼設定的裝置。
+[遠端鎖定] 裝置動作會鎖定裝置。 裝置擁有者輸入密碼才能解除鎖定裝置。 您可以從遠端鎖定已設定 PIN 或密碼的裝置。 沒有 PIN 或密碼的裝置無法從遠端鎖定。
 
 ## <a name="supported-platforms"></a>支援的平台
 
-- Windows - 不支援
-- Windows Phone - 支援 Windows Phone 8.1 和更新版本
-- iOS - 支援
-- macOS - 支援
+下列平台支援 [遠端鎖定]：
 
-    > [!Note]  
-    > 設定 6 位數的修復 PIN。 鎖定時，[裝置概觀] 刀鋒視窗會顯示 PIN，直到傳送另一個裝置動作為止。
-- Android - 支援
+- Android
+- Android 企業 kiosk 裝置
+- Android 企業工作設定檔裝置
+- iOS
+- macOS
+- Windows 10 Mobile
+- Windows Phone 8.1 和更新版本
 
-## <a name="how-to-remote-lock-a-device"></a>如何從遠端鎖定裝置
+不支援**遠端鎖定**的裝置：
+- Windows 10 Desktop
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置和群組] 刀鋒視窗中選擇 [所有裝置]。
-5. 從您管理的裝置清單中，選擇裝置，然後選擇 [遠端鎖定] 裝置遠端動作。
+> [!NOTE]
+> macOS 裝置要設定 6 位數的修復 PIN。 裝置鎖定時，[裝置概觀] 會顯示 PIN，直到傳送另一個裝置動作為止。
+
+## <a name="remote-lock-a-device"></a>遠端鎖定裝置
+
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [裝置] > [所有裝置]。
+4. 在裝置清單中選取裝置，然後選取 [遠端鎖定] 動作。
 
 ## <a name="next-steps"></a>後續步驟
 
-若要查看您剛採取的動作狀態，請在 [裝置和群組] 刀鋒視窗中，選擇 [裝置動作]。
+- 若要查看此動作的狀態，請選取 [Microsoft Intune] > [裝置] > [裝置動作]。 
+- 如需協助您管理裝置的更多動作，請參閱[可用動作](device-management.md)。

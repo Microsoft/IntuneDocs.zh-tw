@@ -1,30 +1,33 @@
 ---
-title: "使用應用程式保護原則的 Android 應用程式"
-description: "本主題說明當應用程式交由應用程式保護原則管理時的行為。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 03/06/2017
+title: 使用應用程式保護原則的 Android 應用程式
+description: 本主題說明當應用程式交由應用程式保護原則管理時的行為。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
-ms.reviewer: andcerat
+ms.reviewer: tisilver
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 030e17a9f28a9476c82e89d4dd26151a2d3cb953
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 06115170300909d1683f44e565161d189f345ab8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188024"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>當 Android 應用程式交由應用程式保護原則管理時的行為
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-本主題說明應用程式保護原則所管理應用程式的使用者體驗。 應用程式保護原則只適用於工作環境中使用的應用程式：例如，當使用者使用工作帳戶來存取應用程式，或存取公司商務用 OneDrive 地點中所儲存的檔案。
+本文說明具有應用程式保護原則的應用程式使用者體驗。 應用程式保護原則只適用於工作環境中使用的應用程式：例如，當使用者使用公司帳戶來存取應用程式，或存取儲存於商務用 OneDrive 位置的檔案。
+
 ##  <a name="access-apps"></a>存取應用程式
 
 所有與 Android 裝置上應用程式保護原則關聯的應用程式，都需要公司入口網站應用程式。
@@ -42,21 +45,15 @@ ms.lasthandoff: 07/13/2017
 
 ##  <a name="manage-user-accounts-on-the-device"></a>管理裝置上的使用者帳戶
 
-Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用者帳戶。
+多重身分識別應用程式可讓使用者新增多個帳戶。  Intune 應用程式僅支援一個受控帳戶。  Intune 應用程式不會限制非受控帳戶的數目。
 
-* 根據您所使用的應用程式，可能會封鎖裝置上的第二個使用者。 在所有情況下，只有套用應用程式保護原則的第一位使用者會受原則影響。
-
-  * **Microsoft Word**、**Excel** 及 **PowerPoint** 不會封鎖第二個使用者帳戶，但第二個使用者帳戶不會受應用程式保護原則影響。
-
-  * 若為 **OneDrive** 和 **Outlook 應用程式**，您只能使用一個工作帳戶。  您無法針對這些應用程式新增多個工作帳戶。  不過，您可以在裝置上移除使用者並新增不同的使用者。
-
-
-* 若裝置在應用程式保護原則部署之前已有多個使用者帳戶，則應用程式保護原則所部署的第一個帳戶將由 Intune 應用程式保護原則管理。
-
+當應用程式中有受控帳戶時：
+*   若使用者嘗試新增第二個受控帳戶，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
+*   若 IT 系統管理員對第二個現有帳戶新增原則，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
 
 閱讀下列案例範例以深入了解如何處理多個使用者帳戶。
 
-使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在這兩家公司各有一個工作帳戶，且兩者全都使用 Intune 部署應用程式保護原則。 **X 公司**部署**先於** **Y 公司**部署應用程式保護原則。**X 公司**關聯的帳戶將得到應用程式保護原則，Y 公司關聯的帳戶則否。如果您希望 Y 公司關聯的使用者帳戶受應用程式保護原則管理，您必須移除與 X 公司關聯的使用者帳戶。
+使用者 A 為兩家公司服務 - **X 公司**和 **Y 公司**。使用者 A 在這兩家公司各有一個工作帳戶，且兩者全都使用 Intune 部署應用程式保護原則。 **X 公司**部署**先於** **Y 公司**部署應用程式保護原則。與**X 公司**建立關聯的帳戶會得到應用程式保護原則，與 Y 公司建立關聯的帳戶則否。如果您希望與 Y 公司建立關聯的使用者帳戶受控於應用程式保護原則，您必須移除與 X 公司建立關聯的使用者帳戶，然後新增與 Y 公司建立關聯的帳戶。
 ### <a name="add-a-second-account"></a>新增第二個帳戶
 ####  <a name="android"></a>Android
 如果您使用 Android 裝置，則可能會看到封鎖訊息，其中包含有關如何移除現有帳戶並新增帳戶的指示。  若要移除現有帳戶，請移至 [設定] &gt; [一般] &gt; [應用程式管理員] &gt; [公司入口網站]。 然後選擇 [清除資料]。
@@ -70,15 +67,15 @@ Intune 僅支援將應用程式保護原則部署到每個裝置的一個使用�
 
 支援下列檔案類型：
 
-* **音訊︰**AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE
-* **視訊︰**H.263、H.264 AVC、MPEG-4 SP、VP8
+* **音訊︰** AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (增強 AAC+)、AAC ELD (增強低延遲 AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE
+* **視訊︰** H.263、H.264 AVC、MPEG-4 SP、VP8
 * **影像︰**.jpg、.pjpg、.png、.ppng、.bmp、.pbmp、.gif、.pgif、.jpeg、.pjpeg
-* **文件：**PDF、PPDF
+* **文件：** PDF、PPDF
 
 
-|**pfile**|**text**|
-|----|----|
-|Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 Azure 資訊保護授權。 它可用來保護任何檔案類型。|文字檔案，包括 XML、CSV 等等可以在 App 中開啟以便進行檢視，即使它們受保護也一樣。 檔案類型︰.txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
+|**pfile**|
+|----|
+|Pfile 是適用於受保護檔案的泛型「包裝函式」格式，它會封裝已加密的內容和 Azure 資訊保護授權。 它可用來保護任何檔案類型。|
 
-## <a name="next-steps"></a>後續步驟
-[當 iOS 應用程式交由應用程式保護原則管理時的行為](end-user-mam-apps-ios.md)
+## <a name="next-steps"></a>接下來的步驟
+[當 iOS 應用程式交由應用程式防護原則管理時的行為](end-user-mam-apps-ios.md)

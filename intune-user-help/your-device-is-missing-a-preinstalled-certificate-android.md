@@ -1,26 +1,29 @@
 ---
-title: "您的裝置遺失憑證 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您的裝置遺失憑證 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d6bd59800b13539558fbf56afab9fe5293f3e5bd
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e21fa0285c769f98eada3fd4cb31f3fe82fb8bb9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55841806"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>您的 Android 裝置遺失通常已預先安裝於手機上的憑證
 
@@ -42,9 +45,9 @@ ms.lasthandoff: 12/12/2017
 
 5. 關閉瀏覽器和公司入口網站應用程式。
 
-6. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您還是無法使用公司入口網站應用程式，請使用[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)提供的資訊來連絡您公司的支援人員以取得進一步指示。
+6. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您還是無法使用公司入口網站應用程式，請使用[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)提供的資訊來連絡您公司的支援人員以取得進一步指示。
 
 >[!NOTE]
 > 如果安裝憑證無法解決問題，且您看到不同的「遺失憑證」訊息，您將需要採取額外的步驟以[安裝遺失的憑證](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

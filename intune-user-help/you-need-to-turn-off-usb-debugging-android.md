@@ -1,24 +1,28 @@
 ---
-title: "您必須關閉 USB 偵錯 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 01/11/2017
+title: 您必須關閉 USB 偵錯 | Microsoft Docs
+titlesuffix: Microsoft Intune
+description: 您必須關閉裝置上的 USB 偵錯。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 12/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
-searchScope: User help
-ROBOTS: 
-ms.custom: intune-enduser
-ms.openlocfilehash: 72f187bed4524e344cf19e68cadfc8a5fc739c56
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+searchScope:
+- User help
+ROBOTS: ''
+ms.custom: intune-enduser; seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fc95e1223815a961b354b4977b6650472a3a3eb2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55847194"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>您必須關閉 USB 偵錯
 
@@ -28,4 +32,4 @@ ms.lasthandoff: 12/12/2017
 
 關閉 [USB 偵錯] 之後，請稍等幾分鐘，然後應該就能正常使用您的 Android 裝置存取公司或學校資料。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

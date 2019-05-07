@@ -1,24 +1,27 @@
 ---
-title: "您需要在 Android 裝置上安裝 SandBlast Mobile Protect | Microsoft Docs"
-description: "了解如何在 Android 裝置上安裝 SandBlast Mobile Protect。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 您需要在 Android 裝置上安裝 SandBlast Mobile Protect | Microsoft Docs
+description: 了解如何在 Android 裝置上安裝 SandBlast Mobile Protect。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55843760"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>您需要在 Android 裝置上安裝 SandBlast Mobile Protect
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 
 **您必須執行的作業：**
 
-1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store]\(必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
+1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application - Install SandBlast Mobile Protect from Play Store] \(必要應用程式 - 從 Play 商店安裝 SandBlast Mobile Protect\)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
 
 2. 系統會帶您前往 Play Store 中的 SandBlast Mobile Protect 安裝頁面。 安裝 SandBlast Mobile Protect，然後點選 [接受]，讓 SandBlast Mobile Protect 存取您的裝置。
 
@@ -56,4 +59,4 @@ ms.lasthandoff: 12/12/2017
 
 有時安裝會因為您無法控制的技術問題而失敗。 若發生此情況，請嘗試[從 Play Store 手動](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)安裝 SandBlast Mobile Protect。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

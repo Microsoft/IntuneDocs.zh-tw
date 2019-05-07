@@ -1,23 +1,28 @@
 ---
-title: "在 Intune 移轉期間設定應用程式保護原則"
-description: "本文提供 Intune 移轉期間設定應用程式保護原則的必要步驟。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 07/12/2017
-ms.topic: article
-ms.prod: 
+title: 在移轉期間設定應用程式保護原則
+titleSuffix: Microsoft Intune
+description: 本文提供 Microsoft Intune 移轉期間設定應用程式防護原則的必要步驟。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 01/02/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: c58ce51731b476cfca71851430297aff3edc5cd6
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c516c53c38eb033aa2a9688c40b301bedcc7a034
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508339"
 ---
 # <a name="configure-app-protection-policies-optional"></a>設定應用程式保護原則 (選用)
 
@@ -33,7 +38,7 @@ ms.lasthandoff: 07/12/2017
 
 ## <a name="app-protection-policies-with-lob-apps"></a>應用程式保護原則搭配 LOB 應用程式
 
-您也可以使用 [Microsoft Intune App SDK](app-sdk-get-started.md) 或 [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) 和[Android](https://www.microsoft.com/download/details.aspx?id=47267) 平台適用的 Microsoft Intune App Wrapping Tool，將行動裝置應用程式保護原則擴充到您的商務營運 (LOB) 應用程式。
+您也可以使用 [Microsoft Intune App SDK](app-sdk-get-started.md) 或 iOS 和 Android 平台適用的 Microsoft Intune App Wrapping Tool，將行動裝置應用程式保護原則擴充到您的企業營運 (LOB) 應用程式。 如需詳細資訊，請參閱[適用於 iOS 的 App Wrapping Tool](app-wrapper-prepare-ios.md) 和[適用於 Android 的 App Wrapping Tool](app-wrapper-prepare-android.md)。 此外，請參閱[規劃 LOB 應用程式以進行應用程式保護](apps-prepare-mobile-application-management.md)。
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>應用程式保護原則在移轉期間如何提供協助？
 

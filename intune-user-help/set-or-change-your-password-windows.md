@@ -1,24 +1,27 @@
 ---
-title: "設定或變更您的密碼 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 03/13/2017
+title: 設定或變更裝置密碼 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 852d960e39e35d9399a6a47d550cf97fc5581818
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da3a864e492506845432b2106e0ecce4fb2e331a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55838105"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>使用良好的密碼讓您的裝置更安全
 
@@ -44,4 +47,4 @@ ms.lasthandoff: 12/12/2017
 3. 在 [新密碼] 方塊中輸入新密碼，然後在 [確認密碼] 方塊中重新輸入密碼。
 4. 選擇 [完成]。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

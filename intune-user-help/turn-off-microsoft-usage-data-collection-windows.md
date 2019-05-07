@@ -1,26 +1,29 @@
 ---
-title: "如何針對 Windows 關閉 Microsoft 資料收集 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 如何針對 Windows 關閉 Microsoft 資料收集 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 989d6ee7a40a06c4df6a5837539a3fc4d9bb7f08
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cb548fd9a541dc4efdac5f88a82ffe91d16513ac
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55847041"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>如何關閉 Microsoft 資料收集
 
@@ -28,4 +31,4 @@ Microsoft 會自動收集有關產品和服務的特定資料。 我們這樣做
 
 如果您希望關閉 Windows 裝置上對使用方式資料的收集，請尋找公司入口網站應用程式的 [使用方式資料] 設定。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

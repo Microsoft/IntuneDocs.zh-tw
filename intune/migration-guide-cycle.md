@@ -1,23 +1,28 @@
 ---
-title: "典型的 Intune 移轉週期運作方式"
-description: "本文說明 Intune 移轉週期如何運作，並提供您可以如何處理移轉週期的範例。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 07/12/2017
-ms.topic: article
-ms.prod: 
+title: 典型的 Intune 移轉週期運作方式
+titleSuffix: Microsoft Intune
+description: 本文說明 Microsoft Intune 移轉週期如何運作，並提供您可以如何處理移轉週期的範例。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 34e748e16449a99bad4c1f3e96c22dda6d8f3018
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3919ae461fbbd5c5c69c1fbe4983cc8468f576c6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490071"
 ---
 # <a name="typical-migration-cycle"></a>典型的移轉週期
 

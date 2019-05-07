@@ -1,24 +1,29 @@
 ---
-title: "建立設計"
-description: "本文可協助您建立 Microsoft Intune 僅限雲端設計及實作的設計。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
+title: 建立 Microsoft Intune 設計
+titleSuffix: Microsoft Intune
+description: 本文可協助您建立 Microsoft Intune 僅限雲端設計及實作的設計。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 3/22/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+search.appverid: MET150
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512697"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -32,11 +37,11 @@ ms.lasthandoff: 11/01/2017
 
 -   裝置平台考量
 
--   要傳遞的需求  
+-   要傳遞的需求  
 
 雖然有基本的內部部署基礎結構需求，但設計計劃仍有助於確定您獲得符合目的、目標和需求的正確行動裝置管理解決方案。
 
-讓我們詳細檢閱各個區域。 
+讓我們詳細檢閱各個區域。 
 
 ## <a name="record-your-current-environment"></a>記錄目前的環境
 此外，在實作和測試階段期間經常會有設計變更。 請在發生變更時，使用您的設計計劃來記錄這些變更及其背後的原理。
@@ -104,7 +109,11 @@ ms.lasthandoff: 11/01/2017
 
 ## <a name="choose-an-intune-deployment-option"></a>選擇 Intune 部署選項
 
-Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則整合 Intune 與 System Center Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則是指整合 Intune 與 System Center Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+
+> [!Important]
+>新混合式 MDM 客戶的上線功能已淘汰。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
+
 
 ## <a name="intune-tenant-location"></a>Intune 租用戶位置
 
@@ -129,7 +138,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服�
 
 -   公開金鑰基礎結構 (PKI)
 
-下面會更詳細地探索這些常見的外部相依性
+我們將在下面更詳細地探索這些常見的外部相依性。
 
 ### <a name="identity"></a>權杖服務 (STS)
 
@@ -137,11 +146,11 @@ Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服�
 
 深入了解下列 Intune 身分識別需求：
 
-- [身分識別需求](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions)。
+- [身分識別需求](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions)。
 
-- [目錄同步作業需求](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)。
+- [目錄同步作業需求](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
-- [Multi-Factor Authentication 需求](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+- [Multi-Factor Authentication 需求](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
 ### <a name="user-and-device-groups"></a>使用者和裝置群組
 
@@ -197,8 +206,8 @@ Intune 管理行動裝置以保護公司資料，讓終端使用者能夠從更�
 
 | **裝置平台** | **作業系統版本** |
 |:---:|:---:|
-| iOS - iPhone | 9.0+ |                
-| iOS - iPad | 8.0+ |               
+| iOS - iPhone | 10.0 + |                
+| iOS - iPad | 10.0 + |               
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10 平板電腦 | 10+ |
 
@@ -208,7 +217,7 @@ Intune 管理行動裝置以保護公司資料，讓終端使用者能夠從更�
 
 Intune 支援公司擁有的裝置和個人裝置。 如果您透過裝置註冊管理員或裝置註冊計劃註冊裝置，該裝置即視為公司擁有的。 例如，裝置透過 Apple 裝置註冊計劃 (DEP) 註冊，標記為公司，然後放在會接收目標公司原則和應用程式的裝置群組中。
 
-如需公司與 BYOD 使用案例的詳細資訊，請參閱[第 3 節︰決定使用案例的需求](planning-guide-requirements.md)。
+請參閱[第 3 節：決定使用案例的需求](planning-guide-requirements.md)以了解公司與 BYOD 使用案例的詳細資訊。
 
 ### <a name="bulk-enrollment"></a>大量註冊
 
@@ -349,7 +358,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 -   [商務用 iOS 大量採購方案 (VPP)](vpp-apps-ios.md)
 
--   [商務用 Windows 市集應用程式](windows-store-for-business.md)
+-   [商務用 Microsoft 網上商店應用程式](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>應用程式類型需求
 
@@ -379,7 +388,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別應用程式保護原則需求。
-#### <a name="compliance-policies"></a>相容性原則
+#### <a name="compliance-policies"></a>合規性政策
 
 相容性原則決定裝置是否符合特定需求。 Intune 使用相容性原則判斷裝置視為相容或不相容。 相容性狀態也可用來限制或允許存取公司資源。 如果需要條件式存取，建議您設計[裝置相容性原則](device-compliance.md)。
 
@@ -395,11 +404,9 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別合規性政策需求。
 #### <a name="conditional-access-policies"></a>條件式存取原則
 
-條件式存取用於僅允許相容裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 您必須決定條件式存取是否必要，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
+條件式存取用於僅允許相容裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 決定您是否需要條件式存取，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 
-為線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange Online 或 Exchange 內部部署安裝或設定 Intune 服務對服務連接器。 深入了解如何安裝及設定 Intune 服務對服務連接器︰<!---these links are correct--->
-
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+針對線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange 內部部署安裝或設定 Intune 連接器： 
 
 -   [Exchange 內部部署](exchange-connector-install.md)
 

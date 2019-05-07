@@ -1,29 +1,34 @@
 ---
-title: "Windows Phone 8.1 的 Intune 裝置限制設定"
-titleSuffix: Azure portal
-description: "了解 Windows Phone 8.1 裝置上可用以控制裝置設定與功能的 Intune 設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
+title: Windows Phone 8.1 的 Microsoft Intune 裝置限制設定
+titleSuffix: ''
+description: 了解執行 Windows Phone 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 3/6/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 96cb8c8f45724109a0cd3414edad3720804356f6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565276"
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 裝置限制設定
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 裝置限制設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows Phone 8.1 的裝置進行設定。
+
 
 ## <a name="general"></a>一般
 
@@ -39,7 +44,7 @@ ms.lasthandoff: 12/12/2017
 ## <a name="password"></a>密碼
 
 -   **密碼** - 需要使用者輸入密碼才可存取該裝置。
-    -   **必要的密碼類型** - 指定必要密碼的類型，例如只可是英數字元或數字等等。
+    -   **必要的密碼類型** - 指定必要密碼的類型，例如只可為英數字元或數字等等。
     -   **密碼長度下限** - 指定密碼所需的字元數下限。
     -   **簡單密碼** - 指定是否能使用 ’0000’ 和 ‘1234’ 等簡單密碼。
     -   **登入失敗幾次後即抹除裝置** - 指定抹除裝置前可輸入錯誤密碼的次數。
@@ -69,13 +74,13 @@ ms.lasthandoff: 12/12/2017
 
 開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
 
-範例：在市集中搜尋 Skype 應用程式。 您要使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
+範例：在市集中搜尋 Skype 應用程式。 您使用的 URL 是 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`。
 
 
 
 ### <a name="additional-options"></a>其他選項
 
-您也可以按一下 [匯入]填入格式如一下的 csv 檔案清單：<*應用程式 URL*>，<*應用程式名稱*>，<*應用程式發行者*>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的受限應用程式清單內容。
+您也可以按一下 [匯入] 填入格式如下的 csv 檔案清單：<應用程式 URL>, <應用程式名稱>, <app publisher>，或按一下 [匯出]，建立 csv 檔案，其中包含格式相同的受限應用程式清單內容。
 
 
 ## <a name="browser"></a>瀏覽器

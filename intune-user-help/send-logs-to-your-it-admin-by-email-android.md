@@ -1,43 +1,49 @@
 ---
-title: "使用電子郵件將記錄傳送給公司支援人員 | Microsoft Docs"
-description: "在 Android 裝置上使用電子郵件傳送資料記錄"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 03/16/2017
+title: 使用電子郵件將記錄傳送給公司支援人員 | Microsoft Docs
+description: 在 Android 裝置上使用電子郵件傳送資料記錄
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9886fdf682b08707d4a5292f8c34aca20b828028
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b709ec1cf900645fd53fe47329a3d0833e1cf87d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55850419"
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>使用電子郵件將記錄傳送給公司支援人員
+# <a name="email-logs-to-your-company-support"></a>使用電子郵件將記錄傳送給公司支援人員
 
-如果您在 Android 裝置上使用公司入口網站應用程式時出現錯誤，則可以使用電子郵件將資訊傳送給公司支援人員，以協助他們針對問題進行疑難排解。 這項資訊會保留在裝置中名為 _diagnostic log_ 的特殊文件中。
+有時您可能會在於 Android 裝置上使用公司入口網站應用程式時遇到錯誤。 當發生這種情況時，您可以透過電子郵件將錯誤相關詳細資料傳送給公司的支援人員。 這些詳細資料將提供為您進行問題疑難排解所需的內容。  
+
+錯誤詳細資料會保留在您裝置上名為「診斷記錄」的特殊文件中。 當您將記錄上傳到公司入口網站應用程式時，系統會先將它們傳送給處理該應用程式的 Microsoft 開發人員。 他們會使用這些記錄來改進應用程式的功能，以及防止未來的錯誤。 接著，會針對您的特定錯誤提供您事件識別碼，以便與公司的支援人員共用並用於 Microsoft 支援案例中。
 
 > [!Note]
-> 為方便公司支援人員更容易找出問題，您應該開啟 [詳細資訊記錄]。 [詳細資訊記錄] 包含報表中所有相關的詳細資訊。 了解如何[開啟 [詳細資訊記錄]](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
+> 為了讓公司支援人員更容易找出問題的原因，請開啟「詳細資訊記錄」。 詳細資訊記錄會記錄與錯誤相關的所有詳細資料，並將這些詳細資料包含在報告中。 了解如何[開啟 [詳細資訊記錄]](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。  
 
 使用電子郵件將記錄傳送給公司支援人員：
 
 1.  開啟公司入口網站應用程式。
 
-2.  點選 [功能表] >  [說明與意見反應]。
+2.  點選 [功能表] > [說明] > [傳送電子郵件給支援小組]。
 
     > [!NOTE]
     > [功能表] 可能是軟體按鈕或硬體按鈕，視您擁有的 Android 裝置而定。
 
-3.  在 [說明] 底下，點選 [取得說明]。
+3.  點選 [傳送電子郵件並上傳記錄]。
+4.  上傳完成之後，點選您的電子郵件應用程式。 這會開啟一封主旨欄位中已預先填入事件識別碼的電子郵件訊息。 請在電子郵件的本文中，描述您所遇到的問題。  
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -1,43 +1,71 @@
 ---
-title: "Windows Phone 8.1 裝置的 Intune 自訂設定"
-titleSuffix: Azure portal
-description: "了解可用於 Windows Phone 8.1 自訂設定檔中的設定。"
-keywords: 
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 05/04/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune 中將自訂設定新增至 Windows Phone 8.1 裝置 - Azure | Microsoft Docs
+titleSuffix: ''
+description: 在 Microsoft Intune 中新增或建立自訂設定檔，將 OMA-URI 設定用於執行 Windows Phone 8.1 的裝置。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 10/24/2018
+ms.topic: reference
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
+ms.localizationpriority: medium
+ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 88de53924e15d1d7934a6c19283f5a1cee053569
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487115938ad334d1cefb2a6ecfc8d64ac6688a45
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565888"
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中 Windows Phone 8.1 裝置的自訂設定
+# <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>在 Intune 中使用 Windows Phone 8.1 裝置的自訂設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+透過 Microsoft Intune，您可以使用「自訂設定檔」新增或建立 Windows Phone 8.1 裝置的自訂設定。 自訂設定檔是 Intune 中的功能。 其設計目的是為了新增 Intune 中未內建的裝置設定和功能。
 
-使用 Microsoft Intune Windows Phone 8.1 **自訂**設定檔來指派 OMA-URI 設定，以用於控制 Windows Phone 8.1 裝置上的功能。 這些是許多行動裝置製造商用來控制裝置功能的標準設定。
+Windows Phone 8.1 自訂設定檔會使用開放行動聯盟的統一資源識別項 (OMA-URI) 設定來進行各種功能設定。 行動裝置製造商通常會使用這些設定來控制裝置上的功能。
 
-此功能之目的是讓您指派無法使用 Intune 原則設定的設定。
+本文示範如何建立 Windows Phone 8.1 裝置的自訂設定檔。 
 
-## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Windows Phone 8.1 裝置的自訂原則設定
+## <a name="create-the-profile"></a>建立設定檔
 
-1. 請使用[如何在 Microsoft Intune 中設定自訂裝置設定](custom-settings-configure.md)中的指示，即可開始使用。
-2. 在 [建立設定檔] 刀鋒視窗中選擇 [設定]，可新增一或多個 OMA URI 設定。
-3. 在 [新增資料列] 刀鋒視窗中，設定每個設定的下列值︰
-    - **名稱** - 輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。
-    - **描述** - 提供描述概述設定及其他可協助您找到設定的相關資訊。
-    - **OMA-URI** - 指定您想要為其提供設定的 OMA-URI。
-    - **資料類型** - 選取要指定此 OMA-URI 設定的資料類型。 請從 [字串]、[日期和時間]、[整數]、[浮點數]，或 [布林] 之間選擇。
-    - **值** - 輸入要與您所輸入之 OMA-URI 相關聯的值。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+3. 輸入下列設定：
 
-4. 完成設定之後，請按一下 [確定]，然後再視需要新增更多設定。
+    - **名稱**：輸入設定檔的名稱，例如 `windows phone custom profile`。
+    - **描述**：輸入設定檔的描述。
+    - **平台**：選擇 [Windows Phone 8.1]。
+    - **設定檔類型**：選擇 [自訂]。
+
+4. 在 [自訂 OMA-URI 設定] 中，選取 [新增]。 輸入下列設定：
+
+    - **名稱**：輸入 OMA-URI 設定的唯一名稱，協助您在設定清單中識別該設定。
+    - **描述**：輸入描述來概述設定及其他可協助您找到設定檔的相關資訊。
+    - **OMA-URI** (區分大小寫)：輸入您要用作設定的 OMA-URI。
+    - **資料類型**：選擇您要用於這個 OMA-URI 設定的資料類型。 選項包括：
+
+        - 字串
+        - 字串 (XML 檔案)
+        - 日期和時間
+        - 整數
+        - 浮點數
+        - 布林值
+        - Base64 (檔案)
+
+    - **值**：輸入要與您輸入之 OMA-URI 相關聯的資料值。 該值取決於您選取的資料類型。 例如，如果您選擇 [日期和時間]，請從日期選擇器選取值。
+
+    新增一些設定之後，您可以選取 [匯出]。 [匯出] 會以逗號分隔值 (.csv) 檔案格式，為您新增的所有值建立一份清單。
+
+5. 按一下 [確定] 以儲存您的變更。 視需要繼續新增更多設定。
+6. 完成時，選擇 [確定] > [建立] 以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置設定 - 設定檔] 清單中。
+
+## <a name="next-steps"></a>後續步驟
+
+設定檔已建立，但還不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+
+了解如何在 [Windows 10 裝置](custom-settings-windows-10.md)上建立自訂設定檔。

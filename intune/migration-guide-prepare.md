@@ -1,25 +1,30 @@
 ---
-title: "準備 Intune 以用於行動裝置管理"
-description: "請評估您的商務和技術需求，然後再移轉至 Intune。"
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/12/2017
-ms.topic: article
-ms.prod: 
+title: 準備 Intune 以用於行動裝置管理
+titleSuffix: Microsoft Intune
+description: 請先評估您的商務和技術需求，再移轉至 Microsoft Intune。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508356"
 ---
-# <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Intune 以用於行動裝置管理 (MDM)
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
 在探究設定 Intune 的詳細資訊之前，讓我們先檢閱您組織的行動裝置管理需求。 它可能有助於在目前的 MDM 提供者中執行作用中使用者的報告，以識別重要的使用者群組。 然後，您就可以開始處理[評估 MDM 需求](migration-guide-prepare.md#assess-mdm-requirements)一節中的問題。
 
@@ -54,23 +59,23 @@ ms.lasthandoff: 07/12/2017
 
 ### <a name="what-is-your-device-security-policy"></a>您的行動裝置安全性原則是什麼？
 
--   您需要裝置層級加密嗎？
+- 您需要裝置層級加密嗎？
 
--   您目前的裝置密碼/PIN 碼長度是多少？
+- 您目前的裝置密碼/PIN 碼長度是多少？
 
--   您需要停用裝置功能，或限制特定裝置行為嗎？ 您可以使用裝置組態設定檔控制各種平台特定的設定，例如：
-      - 停用數位相機
-      - 鎖定在單一應用程式模式<br/>
+- 您需要停用裝置功能，或限制特定裝置行為嗎？ 您可以使用裝置組態設定檔控制各種平台特定的設定，例如：
+    - 停用數位相機
+    - 鎖定在單一應用程式模式<br/>
 
--   您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
+- 您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
   - Intune 可使用資源存取設定檔為已註冊的裝置佈建憑證。
-    -   您需要支援何種公開金鑰基礎結構 (PKI)？
-<br></br>
--   您需要在裝置或應用程式層級支援虛擬私人網路 (VPN) 嗎？
+  -   您需要支援何種公開金鑰基礎結構 (PKI)？
+  <br></br>
+- 您需要在裝置或應用程式層級支援虛擬私人網路 (VPN) 嗎？
 
-    -   Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
-<br/><br/>
--   可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
+  -   Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
+  <br/><br/>
+- 可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
 
 ## <a name="next-steps"></a>後續步驟
 閱讀這些來自不同產業面的[個案研究 (英文)](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，觀察組織如何評估其行動裝置管理的需求。

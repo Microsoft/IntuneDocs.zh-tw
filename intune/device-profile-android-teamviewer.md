@@ -1,80 +1,71 @@
 ---
-title: "如何使用 TeamViewer 從遠端管理裝置"
-titlesuffix: Azure portal
-description: "了解如何使用 TeamViewer 從遠端管理裝置。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 11/06/2017
-ms.topic: article
-ms.prod: 
+title: 在 Microsoft Intune - Azure 中遠端管理裝置 | Microsoft Docs
+description: 檢視所需的角色以使用 TeamViewer、如何安裝 TeamViewer 連接器、在 Azure 入口網站使用 Microsoft Intune 來遠端管理裝置的逐步指示
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 02/05/2019
+ms.topic: conceptual
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.localizationpriority: high
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509719"
 ---
-# <a name="provide-remote-assistance-for-intune-managed-devices"></a>對 Intune 管理的裝置提供遠端協助
+# <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 來遠端管理 Intune 裝置
 
-Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓您為您所管理裝置的使用者提供遠端協助。 使用本主題中的資訊以開始使用。
+由 Intune 管理的裝置可以從遠端使用 [TeamViewer](https://www.teamviewer.com) 來管理。 TeamViewer 是可分開購買的第三方廠商程式。 本主題說明如何設定 TeamViewer 搭配 Intune，以及從遠端管理裝置。 
 
-## <a name="before-you-start"></a>開始之前
+## <a name="prerequisites"></a>必要條件
 
-### <a name="supported-devices"></a>支援的裝置
+- 使用支援的裝置。 Intune 受控的 Android、Windows、iOS 和 macOS 裝置支援遠端管理。 TeamViewer 可能不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。針對其支援性，請參閱 [TeamViewer](https://www.teamviewer.com) 以取得更新。
 
-Intune 管理的 Android 和 Windows 裝置支援遠端管理。
+- Azure 入口網站中的 Intune 系統管理員必須有下列 [Intune 角色](role-based-access-control.md)：  
 
->[!NOTE]
->TeamViewer 軟體不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 和 Windows 10 S。 
+    - **更新遠端協助**：可讓系統管理員修改 TeamViewer 連接器設定
+    - **要求遠端協助**：可讓系統管理員為任何使用者啟動新的遠端協助工作階段。 此角色的使用者不會受到範圍內的任何 Intune 角色限制。 此外，在一個範圍內受指派為 Intune 角色的使用者或裝置群組，也可以要求遠端協助。 
 
+- 包含登入認證的 [TeamViewer](https://www.teamviewer.com) 帳戶。 只有一些 TeamViewer 授權才支援與 Intune 整合。 如需特定的 TeamViewer 需求，請參閱 [TeamViewer Integration Partner:Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/) (TeamViewer 整合夥伴：Microsoft Intune)。
 
+藉由使用 TeamViewer，您允許適用於 Intune 連接器的 TeamViewer 建立 TeamViewer 工作階段、讀取 Active Directory 資料，以及儲存 TeamViewer 帳戶存取權杖。
 
-### <a name="required-permissions"></a>必要權限
+## <a name="configure-the-teamviewer-connector"></a>設定 TeamViewer 連接器
 
-確認 Azure 入口網站的使用者具有下列指派給他們作為 [Intune 角色](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control)的權限：
-- 若要讓管理員能夠修改 TeamViewer 連接器設定，請授與**更新遠端協助**權限。
-- 若要讓系統管理員能夠起始新的遠端協助要求，請授與**要求遠端協助**權限。 具有**要求遠端協助**權限的使用者可以要求起始任何使用者的工作階段， 而不會受到任何 Intune 角色指派範圍所限制。 Intune 角色指派範圍不會限制可以對其起始遠端協助要求的裝置或使用者。
+若要為裝置提供遠端協助，請使用下列步驟來設定 Intune TeamViewer 連接器：
 
->[!NOTE]
->藉由啟用 TeamViewer，您允許適用於 Intune 連接器的 TeamViewer 建立 TeamViewer 工作階段、讀取 Active Directory 資料，以及儲存 TeamViewer 帳戶存取權杖。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
+2. 在 [Microsoft Intune] 中，選取 [裝置]，然後選取 [TeamViewer 連接器]。
+3. 選取 [連線] 並接受授權合約。
+4. 選取 [登入 TeamViewer 進行授權]。
+5. 隨即開啟一個網頁來顯示 TeamViewer 網站。 輸入您的 TeamViewer 授權認證，然後 [登入]。
 
-### <a name="configure-the-intune-teamviewer-connector"></a>設定 Intune TeamViewer 連接器
+## <a name="remotely-administer-a-device"></a>遠端管理裝置
 
-您必須先使用下列步驟來設定 Intune TeamViewer 連接器，然後才能為裝置提供遠端協助：
+設定連接器後，您可以從遠端管理裝置。 請使用下列步驟： 
 
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，並搜尋 **Microsoft Intune**。
+2. 在 [Microsoft Intune] 中，選取 [裝置]，然後選取 [所有裝置]。
+3. 從清單中，選取您想要遠端管理的裝置。 在裝置屬性中，選取 [新的遠端協助工作階段]。
+4. 當 Intune 連線至 TeamViewer 服務之後，您將會看到一些裝置的相關資訊。 [連線] 以啟動遠端工作階段。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置和群組] 刀鋒視窗中，選擇 [設定] > [TeamViewer 連接器]。
-5. 在 [TeamViewer 連接器] 刀鋒視窗中，按一下 [啟用]，然後檢視並接受 TeamViewer 服務授權合約。
-6. 選擇 [登入 TeamViewer 進行授權]。
-7. 隨即開啟一個網頁來顯示 TeamViewer 網站。 輸入您的 TeamViewer 授權認證，然後按一下 [登入]。
+![使用 TeamViewer 從遠端管理 Android 裝置：範例](./media/android-teamviewer.png)
 
+當您開始遠端工作階段時，使用者會在其裝置上的公司入口網站應用程式圖示上看到通知旗標。 當應用程式開啟時也會出現通知。 然後使用者就能接受遠端協助要求。
 
-## <a name="how-to-remotely-administer-a-device"></a>如何從遠端管理裝置
+> [!NOTE]
+> 使用「無使用者」方法 (例如 DEM 及 WCD) 註冊的 Windows 裝置不會在公司入口網站應用程式中顯示 TeamViewer 通知。 在這些情況下，建議使用 TeamViewer 入口網站來產生工作階段。
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]  >  [監視 + 管理]  >  [Intune]。
-3. 在 [Intune] 刀鋒視窗中，選擇 [裝置]。
-4. 在 [裝置] 刀鋒視窗中，選擇 [管理] > [所有裝置]。
-5. 選取您想要從遠端管理的裝置，然後在 [裝置內容] 刀鋒視窗中，選擇 [更多] > [新的遠端協助工作階段]。
-6. 當 Intune 連線至 TeamViewer 服務之後，您將會看到一些裝置的相關資訊。 選擇 [連線] 以啟動遠端工作階段。
-
-![Android TeamViewer 範例](./media/android-teamviewer.png)
-
-在 TeamViewer 視窗中，您可以在裝置上執行一連串的遠端動作，包括裝置的遠端控制。 如需您可執行之動作的完整詳細資料，請參閱 [TeamViewer 文件](https://www.teamviewer.com/support/documents/) \(英文\)。
+在 TeamViewer 中，您可以在裝置上完成一系列動作，包括控制裝置。 對於您可以執行的作業之完整詳細資料，請參閱 [TeamViewer guidance](https://www.teamviewer.com/support/documents/) (TeamViewer 指導)。
 
 完成後，請關閉 TeamViewer 視窗。
-
-## <a name="next-steps"></a>後續步驟
-
-終端使用者會在其裝置的公司入口網站應用程式圖示上看到通知旗標，也會在其開啟應用程式時看到通知。 接著，他們就能接受遠端協助要求。
-

@@ -1,44 +1,46 @@
 ---
-title: "在 Intune 上封鎖沒有新式驗證的應用程式"
-description: 
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+title: 在 Intune 上封鎖沒有新式驗證的應用程式
+titleSuffix: Microsoft Intune
+description: 了解如何使用 Microsoft Intune 來封鎖未使用新式驗證 (ADAL) 的應用程式。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a6a7cf3b73f4be195b4e07c8c72edeae9fbc9073
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a651f926f8e8cc5beab80a70649c82677e0b2487
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833047"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>封鎖未使用新式驗證 (ADAL) 的應用程式
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用應用程式保護原則之以應用程式為基礎的條件式存取依賴使用[新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) (即 OAuth2 實作) 的應用程式。 最新的 Office Mobile 和桌面應用程式使用新式驗證，不過還有使用其他驗證方法 (例如基本驗證和表單型驗證) 的協力廠商應用程式和舊版 Office 應用程式。
+使用應用程式保護原則的應用程式型條件式存取依賴使用[新式驗證](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) (即 OAuth2 實作) 的應用程式。 大部分的最新 Office 行動裝置與傳統型應用程式都使用新式驗證。 不過，還有使用其他驗證方法 (例如基本驗證與表單型驗證) 的協力廠商應用程式與舊版 Office 應用程式。
 
-若要封鎖這些應用程式的存取，建議執行下列動作：
+## <a name="block-apps"></a>封鎖應用程式
 
-* 設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 案例 3 提供詳細指示 - [除使用瀏覽器架構的應用程式外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)。
-* 針對 **SharePoint Online**，使用 PowerShell 命令 [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) 來停用 SharePoint Online 服務中的非新式驗證，以便將舊式驗證通訊協定屬性設為 False：
+若要封鎖對未使用新式驗證之應用程式的存取，建議使用下列方法：
 
-```
- Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-
-```
+- 設定 ADFS 宣告規則來封鎖非新式驗證通訊協定。 案例 3 提供詳細指示 - [除使用瀏覽器架構的應用程式外，封鎖所有對 O365 的存取](https://technet.microsoft.com/library/dn592182.aspx)。
+- 針對 **Exchange 與 SharePoint Online**，請使用 Azure Active Directory 條件式存取並為 SharePoint Online 使用 PowerShell Cmdlet Set-SPOTenant。 如需詳細指示，請參閱[為 Azure Active Directory 條件式存取設定 SharePoint Online 與 Exchange Online](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols)。
 
 
 >[!IMPORTANT]
 >以應用程式為基礎的 CA 不能搭配 Azure Active Directory (Azure AD) 憑證式驗證使用。 您一次只能設定其中一個項目。
 
-### <a name="see-also"></a>請參閱
-[搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)
+## <a name="next-steps"></a>後續步驟
+
+- [搭配 Intune 使用以應用程式為基礎的條件式存取](app-based-conditional-access-intune.md)

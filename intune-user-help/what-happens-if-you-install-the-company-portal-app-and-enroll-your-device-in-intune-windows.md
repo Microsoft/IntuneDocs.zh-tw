@@ -1,30 +1,33 @@
 ---
-title: "安裝 Windows 的公司入口網站應用程式 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 安裝 Windows 的公司入口網站應用程式 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7b66a8ef0981f45d57125778fbf06ecdfe927724
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55846837"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 Windows 裝置，會發生什麼情況？
 
-當您安裝公司入口網站應用程式，然後使用其註冊 Windows 或 Windows Phone 裝置時，即授權您公司的支援人員可以管理您的裝置來協助保護公司或學校資料的安全。 本主題說明 Windows 10 之前的裝置行為。 若為 Windows 10 裝置，請參閱[相關主題](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
+當您安裝公司入口網站應用程式，然後使用其註冊 Windows 或 Windows Phone 裝置時，即授權您公司的支援人員可以管理您的裝置來協助保護公司或學校資料的安全。 本主題說明 Windows 10 之前的裝置行為。 若為 Windows 10 裝置，請參閱[相關主題](about-cp-app-for-windows-10.md)。  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>所有 Windows 裝置在註冊後會發生的事
 在 Intune 註冊 Windows 或 Windows Phone 裝置可讓您：
@@ -73,4 +76,4 @@ ms.lasthandoff: 12/12/2017
 
 -   傳送任何公司應用程式清查更新。
 
-如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

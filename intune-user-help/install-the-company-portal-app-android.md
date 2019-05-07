@@ -1,30 +1,33 @@
 ---
-title: "安裝公司入口網站應用程式 | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 安裝公司入口網站應用程式 | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 23006c88f5653a73ec3dbf1a8a59ba840bd7014a
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55837843"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安裝 Android 版公司入口網站應用程式
 
-「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全，例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 公司入口網站應用程式可協助您[在 Microsoft Intune 中註冊裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)而達到此目標。
+「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 公司入口網站應用程式可協助您[在 Microsoft Intune 中註冊裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)而達到此目標。
 
 1.  點選 [首頁] > [Play Store]。
 
@@ -44,4 +47,4 @@ ms.lasthandoff: 12/12/2017
 
 在您下載公司入口網站應用程式之後，建議您[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)以取得公司資訊的完整存取權限。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

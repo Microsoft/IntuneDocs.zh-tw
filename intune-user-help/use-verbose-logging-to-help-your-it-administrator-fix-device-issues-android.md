@@ -1,26 +1,29 @@
 ---
-title: "使用詳細資訊記錄來協助公司支援人員修正裝置問題 | Microsoft Docs"
-description: "使用詳細資訊記錄來協助公司支援人員修正裝置問題"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+title: 使用詳細資訊記錄來協助公司支援人員修正裝置問題 | Microsoft Docs
+description: 使用詳細資訊記錄來協助公司支援人員修正裝置問題
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
-searchScope: User help
-ROBOTS: 
+searchScope:
+- User help
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068914"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>使用詳細資訊記錄來協助公司支援人員修正裝置問題
 
@@ -28,4 +31,4 @@ ms.lasthandoff: 12/12/2017
 
 若要開啟或關閉 [詳細資訊記錄]，請使用公司或學校認證登入公司入口網站應用程式，點選 [設定]，然後點選 [詳細資訊記錄] 旁的開啟/關閉按鈕。
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
