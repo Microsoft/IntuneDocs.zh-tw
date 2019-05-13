@@ -90,8 +90,8 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用 Intune 應用程式保護原則
 
-1. 將 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) 安裝至 Xamarin.Android 專案。
-    1. 若 App 是採用 Xamarin.Forms 技術開發，請再安裝 [Microsoft.Intune.MAM.Remapper.Tasks NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) 至 Xamarin.Android 的專案中。 
+1. 將 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。
+   1. 針對 Xamarin.Forms 應用程式，也新增 [Microsoft.Intune.MAM.Remapper.Tasks NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)至您的 Xamarin.Android 專案。 
 2. 請依照下列所需的一般步驟[整合 Intune App SDK](app-sdk-android.md)到 Android 的行動應用程式，同時指的本文件的其他詳細資料。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 整合
