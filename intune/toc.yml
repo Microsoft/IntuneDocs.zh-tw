@@ -62,7 +62,7 @@
       href: device-lifecycle.md
     - name: 應用程式生命週期
       href: app-lifecycle.md
-    - name: 常見的案例
+    - name: 常見案例
       href: common-scenarios.md
     - name: 使用 EMS 的 BYOD 技術決策
       href: byod-technology-decisions.md
@@ -133,13 +133,13 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路設定
+            - name: 網路組態
               href: network-bandwidth-use.md
         - name: 登入 Intune
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 新增使用者
+        - name: 加入使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -151,7 +151,7 @@
           href: mdm-authority-set.md
         - name: 管理角色
           items:
-            - name: 角色型存取控制
+            - name: 以角色為基礎的存取控制
               href: role-based-access-control.md
             - name: 將角色指派給使用者
               href: assign-role.md
@@ -397,36 +397,6 @@
             - name: Mobile Threat Defense
               href: mobile-threat-defense.md
               items:
-                - name: 設定 Lookout
-                  href: lookout-mobile-threat-defense-connector.md
-                  items:
-                    - name: Lookout 與 Intune 整合
-                      href: lookout-mtd-connector-integration.md
-                - name: 設定 Symantec
-                  href: skycure-mobile-threat-defense-connector.md
-                  items:
-                    - name: Symantec 與 Intune 整合
-                      href: skycure-mtd-connector-integration.md
-                - name: 設定 Check Point
-                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                  items:
-                    - name: Check Point 與 Intune 整合
-                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                - name: 設定 Zimperium
-                  href: zimperium-mobile-threat-defense-connector.md
-                  items:
-                    - name: Zimperium 與 Intune 整合
-                      href: zimperium-mtd-connector-integration.md
-                - name: 設定 Pradeo
-                  href: pradeo-mobile-threat-defense-connector.md
-                  items:
-                    - name: Pradeo 與 Intune 整合
-                      href: pradeo-mtd-connector-integration.md
-                - name: 設定更好行動環境
-                  href: better-mobile-threat-defense-connector.md
-                  items:
-                    - name: 更好的行動環境與 Intune 整合
-                      href: better-mobile-mtd-connector-integration.md
                 - name: 為 MTD 設定 Intune
                   items:
                     - name: 新增 MTD 應用程式
@@ -435,6 +405,43 @@
                       href: mtd-device-compliance-policy-create.md
                     - name: 在 Intune 中啟用 MTD
                       href: mtd-connector-enable.md
+                - name: MTD 應用程式
+                  items:
+                    - name: 設定 Lookout
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout 與 Intune 整合
+                          href: lookout-mtd-connector-integration.md
+                    - name: 設定 Symantec
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec 與 Intune 整合
+                          href: skycure-mtd-connector-integration.md
+                    - name: 設定 Check Point
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point 與 Intune 整合
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: 設定 Zimperium
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium 與 Intune 整合
+                          href: zimperium-mtd-connector-integration.md
+                    - name: 設定 Pradeo
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo 與 Intune 整合
+                          href: pradeo-mtd-connector-integration.md
+                    - name: 設定更好行動環境
+                      href: better-mobile-threat-defense-connector.md
+                      items:
+                        - name: 更好的行動環境與 Intune 整合
+                          href: better-mobile-mtd-connector-integration.md
+                    - name: 設定 Sophos Mobile
+                      href: sophos-mtd-connector.md
+                      items:
+                        - name: 更好的行動環境與 Intune 整合
+                          href: sophos-mtd-connector-integration.md
             - name: Windows Defender ATP
               href: advanced-threat-protection.md
             - name: 安全性基準
@@ -536,7 +543,7 @@
               href: apps-windows-10-app-deploy.md
             - name: 將應用程式部署至政府環境
               href: apps-deploy-gcc-dod.md
-        - name: 監視應用程式
+        - name: 監視 App
           href: apps-monitor.md
         - name: 設定應用程式
           href: app-configuration-policies-overview.md
@@ -652,7 +659,7 @@
               href: troubleshoot-exchange-connector.md
         - name: 取得支援
           href: get-support.md
-- name: 參考資料
+- name: 參考
   items:
     - name: 設定清單
       items:
@@ -709,6 +716,8 @@
                   href: wi-fi-settings-ios.md
                 - name: 自訂
                   href: custom-settings-ios.md
+                - name: 內建 iOS 應用程式的套件組合識別碼
+                  href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
             - name: 相容性原則設定
@@ -753,7 +762,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: 教育
+                - name: Education
                   href: education-settings-windows.md
                 - name: 共用的多重使用者裝置
                   href: shared-user-device-settings-windows.md
@@ -883,7 +892,7 @@
           href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 資源
   items:
-    - name: Archive
+    - name: 封存
       items:
         - name: 新功能封存
           items:
