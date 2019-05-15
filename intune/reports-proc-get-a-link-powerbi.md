@@ -1,12 +1,12 @@
 ---
 title: 使用 Power BI 連線至資料倉儲
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 您可以下載與 Microsoft Power BI 搭配使用的檔案，以載入 Microsoft Intune 租用戶動態產生的互動式報表。
 keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
-ms.translationtype: MTE75
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618496"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871373"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您可以下載與 Microsoft Power BI 搭配使用的檔案，以載入 Intune 租用戶的互動式、動態產生的報表。 資料倉儲 Power BI 檔案 (pbix) 包含您租用戶的連線設定，以及下列範例報表和圖表：  
+您可以使用 Power BI 相容性應用程式來為您的 Intune 租用戶載入動態產生的互動報表。 此外，您可以使用 OData 連結，在 Power BI 中載入您的租用戶資料。 Intune 會將連線設定提供給您的租用戶，讓您可以檢視與下列內容相關的下列範例報表及圖表：  
 
   -  裝置
   -  註冊
@@ -47,29 +47,36 @@ ms.locfileid: "58618496"
 
 ## <a name="install-power-bi"></a>安裝 Power BI
 
-安裝最新版本的 Power BI Desktop。 您可以從 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) 下載 Power BI Desktop。
+安裝最新版本的 [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi)。 如需詳細資訊，請參閱 [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>使用 Power BI 檔案 (pbix) 載入資料和報表
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>使用 Power BI Intune 相容性資料倉儲應用程式載入資料及報表
 
-Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料倉儲資料模型的預先建置報表。 在 Power BI Desktop 中開啟檔案，並登入 Azure AD。 報表會從 Intune 租用戶載入資料。
+Power BI [Intune 相容性資料倉儲應用程式](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)包含您租用戶的資訊，以及一組根據資料倉儲資料模型預先建置的報表。
 
-> [!Important]  
-> 每個 Power BI 檔案 (pbix) 可能會根據租用戶位置而有所不同。 如果您要管理多個 Intune 租用戶，請務必使用登入該租用戶時從 Azure 入口網站下載的檔案。  
+1.  請巡覽至 [Intune 相容性資料倉儲應用程式](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)來開始安裝程序。
+2.  當收到提示，要求您從信任的來源安裝 Power BI 應用程式時，請按一下 [安裝]。
+3.  按一下 [Intune 相容性資料倉儲應用程式] 磚。
+4.  按一下 [連線資料] 按鈕。 
+    [連接到 Intune 相容性資料倉儲應用程式] 對話方塊隨即顯示。
+5.  按一下 [登入] 按鈕。
+6.  使用使用者帳戶登入，該使用者帳戶應具備擁有您欲檢視其報表租用戶的 Intune 資料倉儲存取權限。 
+7.  按一下 [報表] 索引標籤，然後按一下 [相容性 V1.0]報表。
+8.  若要在稍後輕鬆巡覽至這些報表，請按一下 [相容性 V1.0] 報表旁邊的星號。 這會將報表新增到您 Power BI 我的最愛。
 
-1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
-2.  開啟**設定 Intune 資料倉儲**刀鋒視窗。
-3.  選取 [Download PowerBI file] (下載 PowerBI 檔案)。 副檔名為 (pbix) 的檔案會下載至您指定的位置。
-4.  使用 Power BI 開啟檔案。 「Intune 資料倉儲報表」 即會載入，但可能需要一秒才能取得租用戶資料。
-5.  選取 [重新整理] 載入您的租用戶資料以及檢閱報表。
-6.  如果尚未使用 Azure Active Directory 認證來驗證 Power BI，Power BI 會提示您提供認證。 選取您的認證時，請選擇 [組織帳戶] 作為驗證方法。
+或者，您也可以從 Intune 入口網站安裝應用程式：
+
+1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 Intune 的資源。
+2.  請開啟 [設定 Intune 資料倉儲] 刀鋒視窗。
+3.  選取 [取得 Power BI 應用程式] 以在瀏覽器中存取及共用為您租用戶預先建置的 Power BI 報表。
+4.  遵循上述的步驟 2 至 8。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>使用 OData 連結在 Power BI 中載入資料
 
 使用向 Azure AD 驗證的用戶端，OData URL 會連線至資料倉儲 API 中向報告用戶端公開資料模型的 RESTful 端點。 請遵循這些指示，使用 Power BI Desktop 連線並建立您自己的報表。 您不是只能使用 Power BI Desktop，但可以搭配使用最愛的分析工具與 OData URL，但前提是用戶端支援 OAUTH2.0 驗證和 OData 4.0 版標準。
 
 1.  登入 Azure 入口網站，並選擇 [監視 + 管理] > [Intune]。 您也可以搜尋 **Intune** 的資源。  
-2.  開啟**設定 Intune 資料倉儲**刀鋒視窗。
-3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`。
+2.  請開啟 [設定 Intune 資料倉儲] 刀鋒視窗。
+3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`。
 4. 開啟 [Power BI Desktop]。
 5. 選擇 [首頁] > [取得資料]。 選取 [OData 摘要]。
 6. 選擇 [基本]。
@@ -84,7 +91,7 @@ Power BI 檔案 (pbix) 包含您租用戶的連線資訊以及一組根據資料
 
 ## <a name="next-steps"></a>後續步驟
 
-您可以找到環境問題的答案，例如上週每日註冊的裝置數目。 您可以深入了解使用報表的 Intune 租用戶和用戶端母群體，而報表使用 Azure 中刀鋒視窗所擷取的 Intune 資料倉儲 Power BI 檔案 (pbix)。 不過，Intune 會提供許多其他的方式，來延伸或重複使用資料。 還有更多方式可以使用 Power BI 和 Intune 資料倉儲 API，例如：
+您可以找到環境問題的答案，例如上週每日註冊的裝置數目。 您也可以在 Azure 中，使用從刀鋒視窗擷取的 Intune 資料倉儲 Power BI 報表，取得您 Intune 租用戶和用戶端母體的見解。 不過，Intune 會提供許多其他的方式，來延伸或重複使用資料。 Power BI 和 Intune 資料倉儲 API 提供額外的功能，例如：
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  已組織您的租用戶資料，協助您從資料中提取深入解析。 如需資料組織方式的詳細資訊，請參閱[資料倉儲資料模型](reports-ref-data-model.md)。

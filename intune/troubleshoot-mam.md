@@ -1,6 +1,6 @@
 ---
 title: 行動應用程式管理疑難排解
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本主題描述一些針對條件式存取部署進行疑難排解的秘訣。
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461170"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798622"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>行動應用程式管理疑難排解
 
@@ -38,7 +38,7 @@ ms.locfileid: "57461170"
 | -- | -- | -- |
 | 原則未套用至商務用 Skype | 在 Azure 入口網站中設定的無裝置註冊應用程式保護原則，未套用至 iOS 和 Android 裝置上的商務用 Skype。 | 商務用 Skype 必須設定使用新式驗證。  請依照 [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (啟用租用戶的新式驗證) 中的指示，設定 Skype 的新式驗證。 |
 | 未套用 office 應用程式原則 | 應用程式保護原則不適用於任何使用者的任何[支援的 Office 應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 確認使用者已獲得 Intune 授權，且部署的應用程式保護原則已將 Office 應用程式設為目標。 新部署的應用程式保護原則可能需要最多 8 小時才會套用。 |
-| 管理員無法在 Azure 入口網站中設定應用程式保護原則 | IT 管理員使用者無法在 Azure 入口網站中設定應用程式保護原則。 | 下列使用者角色可以存取 Azure 入口網站： <ul><li>全域管理員，您可以在設定[Microsoft 365 系統管理中心](https://admin.microsoft.com/)</li><li>擁有者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li><li>參與者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li></ul> 如需設定這些角色的說明，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune](role-based-access-control.md)。|
+| 管理員無法在 Azure 入口網站中設定應用程式保護原則 | IT 管理員使用者無法在 Azure 入口網站中設定應用程式保護原則。 | 下列使用者角色可以存取 Azure 入口網站： <ul><li>全域管理員，您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)設定</li><li>擁有者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li><li>參與者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li></ul> 如需設定這些角色的說明，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune](role-based-access-control.md)。|
 |應用程式保護原則報表中遺漏使用者帳戶 | 管理員主控台報表沒有顯示最近部署應用程式保護原則的使用者帳戶。 | 如果使用者是應用程式保護原則的新目標，則可能需要最多 24 小時該使用者才會以目標使用者的狀態顯示在報表中。 |
 | 原則變更不作用 | 套用應用程式保護原則的變更與更新最多需時 8 個小時。 | 如適用，終端使用者可以登出應用程式並重新登入，來強制與服務同步。 |
 | 應用程式保護原則不適合 DEP | 應用程式保護原則不適用 Apple DEP 裝置。 | 請確認 Apple「裝置登記方案」(DEP) 與「使用者親和性」搭配使用。 需要在 DEP 下進行使用者驗證的任何應用程式都需要有使用者親和性。 <br><br>如需 iOS DEP 註冊的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](device-enrollment-program-enroll-ios.md)。|

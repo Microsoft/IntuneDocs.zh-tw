@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 Android Enterprise 裝置設定 - Azure | Microsoft Docs
-description: 請參閱 Microsoft Intune 中設定 Android 企業裝置的合規性時，您可以使用的所有設定的清單。 設定密碼規則，選擇最小值或最大作業系統版本、 限制特定的應用程式，避免重複使用密碼，以及更多。
+title: Microsoft Intune 中的 Android Enterprise 相容性設定 - Azure | Microsoft Docs
+description: 查看您在 Microsoft Intune 中為您 Android Enterprise 裝置設定相容性時可使用的所有設定清單。 設定密碼規則、選擇最低或最高作業系統版本、限制特定應用程式，防止重複使用密碼等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,21 +24,21 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423555"
 ---
-# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>將裝置標記為符合規範或不符合規範使用 Intune 的 android Enterprise 設定
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Android Enterprise 設定將裝置標示為相容或不相容
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-這篇文章列出並描述您可以設定在 Intune 中 Android 企業裝置的不同的合規性設定。 您的行動裝置管理 (MDM) 解決方案的一部分，使用這些設定來 root 破解 （已進行 jb 破解） 將裝置標記為不符合規範、 設定允許的威脅層級，啟用 Google Play Protect，，和更多功能。
+本文列出及描述您可在 Intune 中 Android Enterprise 裝置上設定的不同相容性設定。 作為您行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來將經破解 (越獄) 的裝置標示為不相容、設定允許的威脅等級、啟用 Google Play Protect 等。
 
 本功能適用於：
 
 - Android 企業
 
-身為 Intune 管理員，使用這些合規性設定來協助保護您組織的資源。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+身為 Intune 管理員，請使用這些相容性設定來協助保護您的組織資源。 若要深入了解相容性原則及其執行的操作，請參閱[開始使用裝置相容性](device-compliance-get-started.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 
-[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [Android 企業]。
+[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [Android Enterprise]。
 
 ## <a name="device-health"></a>Device health
 
@@ -49,7 +49,7 @@ ms.locfileid: "59423555"
   - **中**︰如果裝置有低等級或中等級的威脅，則會將裝置評估為相容。 如果在裝置上偵測到高等級的威脅，即判斷為不符合規範。
   - **高**：此選項最不安全，因為它允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
-### <a name="google-play-protect"></a>Google Play 保護
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **已設定 Google Play 服務**：**需要**安裝並啟用 Google Play 服務應用程式。 Google Play 服務可允許安全性更新，而且是 Google 認證裝置上許多安全性功能的基層相依服務。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 - **最新安全性提供者**：**需要**最新安全性提供者可保護裝置免於已知的弱點。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
@@ -59,7 +59,7 @@ ms.locfileid: "59423555"
   - **檢查基本完整性與經過認證的裝置**
 
 > [!NOTE]
-> Android 企業裝置上**對應用程式進行威脅掃描**是裝置設定原則。 使用設定原則，系統管理員可以啟用裝置上的設定。 請參閱 [Android Enterprise 裝置限制設定](device-restrictions-android-for-work.md)。
+> 在 Android Enterprise 裝置上，[對應用程式進行威脅掃描] 是一項裝置設定原則。 使用設定原則，管理員可啟用裝置上的設定。 請參閱 [Android Enterprise 裝置限制設定](device-restrictions-android-for-work.md)。
 
 ## <a name="device-properties-settings"></a>裝置內容設定
 
@@ -89,7 +89,7 @@ ms.locfileid: "59423555"
 
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。 
 
-  您不需要進行此設定，因為 Android 工作設定檔裝置會強制執行加密。
+  您不需要進行此設定，因為 Android Enterprise 裝置會強制執行加密。
 
 ### <a name="device-security"></a>裝置安全性
 
@@ -100,7 +100,7 @@ ms.locfileid: "59423555"
   > [!IMPORTANT]
   > 側載應用程式必須啟用 [封鎖來自不明來源的應用程式] 設定。 只有當您不會在裝置上側載 Android 應用程式時，才應該施行這項合規性政策。
 
-  您不需要進行此設定，因為 Android 工作設定檔裝置一律會限制來自不明來源的安裝。
+  您不需要進行此設定，因為 Android Enterprise 裝置一律會限制來自不明來源的安裝。
 
 - **公司入口網站應用程式執行階段完整性**：選擇 [需要] 以確認公司入口網站應用程式符合下列所有需求：
 
@@ -113,7 +113,7 @@ ms.locfileid: "59423555"
 
 - **封鎖裝置上的 USB 偵錯**：選擇 [封鎖] 以防止裝置使用 USB 偵錯功能。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 
-  您不需要進行此設定，因為 Android 工作設定檔裝置上已停用 USB 偵錯。
+  您不需要進行此設定，因為 Android Enterprise 裝置上已停用 USB 偵錯。
 
 - **安全性修補程式等級下限**：選取裝置可擁有的安全性修補程式等級下限。 未至少達此修補程式等級的裝置將視為不符合規範。 日期必須以 *YYYY-MM-DD* 格式輸入。
 
@@ -121,6 +121,6 @@ ms.locfileid: "59423555"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [新增適用於不符合規範的裝置動作](actions-for-noncompliance.md)並[使用篩選器原則的範圍標籤](scope-tags.md)。
-- [監視合規性政策](compliance-policy-monitor.md)。
-- [Android 裝置的法務遵循政策設定](compliance-policy-create-android.md)
+- [為不相容的裝置新增動作](actions-for-noncompliance.md)及[使用範圍標籤篩選原則](scope-tags.md)。
+- [監視您的相容性原則](compliance-policy-monitor.md)。
+- [Android 裝置的相容性原則設定](compliance-policy-create-android.md)。

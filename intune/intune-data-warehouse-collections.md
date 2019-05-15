@@ -435,7 +435,7 @@ ms.locfileid: "59429219"
 | 屬性 | 說明 | 範例 |
 |---------|------------|--------|
 | mamApplicationKey |MAM 應用程式的唯一識別碼。 | 432 |
-| mamApplicationName |MAM 應用程式名稱。 |MAM 應用程式範例的名稱 |
+| mamApplicationName |MAM 應用程式的名稱。 |MAM 應用程式範例名稱 |
 | mamApplicationId |MAM 應用程式的應用程式識別碼。 | 123 |
 | IsDeleted |指出是否已更新此 MAM 應用程式記錄。 <br>True - MAM 應用程式具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式的最新記錄。 |True/False |
 | StartDateInclusiveUTC |在資料倉儲中建立此 MAM 應用程式的 UTC 日期和時間。 |11/23/2016 12:00:00 AM |
@@ -453,15 +453,15 @@ ms.locfileid: "59429219"
 |   ApplicationInstanceKey   |                                                               資料倉儲中 MAM 應用程式執行個體的唯一識別碼 - Surrogate 索引鍵。                                                                |                 123                  |
 |           UserId           |                                                                              已安裝此 MAM 應用程式之使用者的使用者識別碼。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 應用程式執行個體的唯一識別碼 - 與 ApplicationInstanceKey 類似，但識別碼是自然索引鍵。                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | 為其建立此 Mam 應用程式執行個體的 Mam 應用程式的應用程式識別碼。   | 11/23/2016 12:00:00 AM   |
+| mamApplicationId | 為其建立此 Mam 應用程式執行個體之 Mam 應用程式的應用程式識別碼。   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     此 MAM 應用程式的應用程式版本。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 此 MAM 應用程式執行個體記錄的建立日期。 值可以是 Null。                                                                 |        11/23/2016 12:00:00 AM        |
 |          平台          |                                                                          此 MAM 應用程式安裝所在裝置的平台。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      此 MAM 應用程式安裝所在裝置的平台版本。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            與此 MAM 應用程式包裝在一起的 MAM SDK 版本。                                                                            |                 3.2                  |
-| mamDeviceId | 與 MAM 應用程式執行個體相關聯之裝置的裝置識別碼。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceType | 與 MAM 應用程式執行個體相關聯之裝置的裝置類型。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceName | 與 MAM 應用程式執行個體相關聯之裝置的裝置名稱。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | 與 MAM 應用程式執行個體建立關聯之裝置的裝置識別碼。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | 與 MAM 應用程式執行個體建立關聯之裝置的裝置類型。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | 與 MAM 應用程式執行個體建立關聯之裝置的裝置名稱。   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | 指出是否已更新此 MAM 應用程式執行個體記錄。 <br>True - 此 MAM 應用程式執行個體具有包含此資料表中已更新欄位的新記錄。 <br>False - 此 MAM 應用程式執行個體的最新記錄。 |              True/False              |
 |   StartDateInclusiveUtc    |                                                              在資料倉儲中建立此 MAM 應用程式執行個體的 UTC 日期和時間。                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted 變更為 True 的 UTC 日期和時間。                                                                              |        11/23/2016 12:00:00 AM        |
@@ -479,7 +479,7 @@ ms.locfileid: "59429219"
 | DateKey |將 MAM 應用程式簽入記錄在資料倉儲中的日期索引鍵。 | 20160703 |
 | ApplicationInstanceKey |與此 MAM 應用程式簽入建立關聯之應用程式執行個體的索引鍵。 | 123 |
 | UserKey |與此 MAM 應用程式簽入建立關聯之使用者的索引鍵。 | 4323 |
-| mamApplicationKey |應用程式金鑰的應用程式與 MAM 應用程式簽入相關聯。 | 432 |
+| mamApplicationKey |與 MAM 應用程式簽入建立關聯之應用程式的應用程式金鑰。 | 432 |
 | DeviceHealthKey |與此 MAM 應用程式簽入建立關聯之 DeviceHealth 的索引鍵。 | 321 |
 | PlatformKey |代表與此 MAM 應用程式簽入建立關聯之裝置的平台。 |123 |
 | LastCheckInDate |前次簽入此 MAM 應用程式的日期和時間。 值可以是 Null。 |11/23/2016 12:00:00 AM |
@@ -527,7 +527,7 @@ ms.locfileid: "59429219"
 | 5                     | EasIntuneClient                   | 由 Exchange Active Sync 與 Intune 電腦代理程式管理的裝置 |
 | 8                     | ConfigManagerClient               | 由 System Center Configuration Manager 代理程式管理的裝置     |
 | 10                    | ConfigurationManagerClientMdm     | 由 Configuration Manager 和 MDM 管理的裝置。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Configuration Manager、 MDM 與 Exchange Active Sync 管理裝置。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | 裝置是由 Configuration Manager、MDM 及 Exchange Active Sync 管理。               |
 | 16                    | Unknown                           | 未知的管理代理程式類型                                              |
 | 32                    | Jamf                              | 裝置屬性是從 Jamf 擷取。                               |
 | 64                    | GoogleCloudDevicePolicyController |  由 Google CloudDPC 管理的裝置。                                 |
@@ -586,10 +586,10 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 擁有者類型的唯一識別碼。                                                                                                                                               |                            |
 | ownerTypeKey  | 資料倉儲中擁有者類型的唯一識別碼 - Surrogate 索引鍵。                                                                                                       |                            |
-| ownerTypeName | 表示裝置的擁有者類型：Corporate - 裝置為企業所有。  Personal - 裝置為個人所有 (BYOD)。   Unknown - 無此裝置的相關資訊。 | 公司個人未知 |
+| ownerTypeName | 表示裝置的擁有者類型：Corporate - 裝置為企業所有。  Personal - 裝置為個人所有 (BYOD)。   Unknown - 無此裝置的相關資訊。 | 公司 - 個人未知 |
 
 > [!Note]  
-> 針對`ownerTypeName`篩選器在 azure Ad 的裝置建立動態群組時，您需要設定的值`deviceOwnership`做為`Company`。 如需詳細資訊，請參閱 <<c0> [ 裝置的規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
+> 針對建立裝置動態群組時 Azure AD 中的 `ownerTypeName` 篩選，您需要將值 `deviceOwnership` 設為 `Company`。 如需詳細資訊，請參閱[裝置規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="policies"></a>原則
 **Policy** 實體列出裝置組態設定檔、應用程式組態設定檔和合規性原則。 您可以將具有行動裝置管理 (MDM) 的原則指派給企業中的群組。

@@ -1,11 +1,11 @@
 ---
-title: 在 Microsoft Intune 中建立 macOS 裝置合規性原則 - Azure | Microsoft Docs
-description: 建立或設定適用於 macOS裝置的 Microsoft Intune 裝置合規性原則以使用系統完整性保護、設定最低和最高作業系統版本、選擇您的密碼需求，以及加密資料存放區。
+title: Microsoft Intune 中的 macOS 裝置相容性設定 - Azure | Microsoft Docs
+description: 查看您在 Microsoft Intune 中為 macOS 裝置設定相容性時可使用的所有設定清單。 要求 Apple 的系統完整保護、設定密碼限制、要求防火牆、允許門禁等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566602"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423640"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 為 macOS 裝置新增裝置合規性政策
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 macOS 設定將裝置標示為相容或不相容
 
-Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設定，才能視為符合規範。 當您使用裝置相容性原則搭配條件式存取時，可以允許或封鎖公司資源的存取。 您也可以取得裝置報表，並針對不相容採取動作。 在 Intune Azure 入口網站中，可以為每個平台建立裝置相容性原則。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-下表說明搭配使用合規性政策與條件式存取原則時，不合規設定的管理方式：
+本文列出及描述您可在 Intune 中 macOS 裝置上設定的不同相容性設定。 作為您行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來設定最低或最高 OS 版本、設定要過期的密碼等。
 
----------------------------
+本功能適用於：
 
-| 原則設定 | macOS 10.11 及更新版本 |
-| --- | --- |
-| **PIN 或密碼設定** | 已修復 |   
-| **裝置加密** | 已修復 (藉由設定 PIN 碼) |
-| **電子郵件設定檔** | 已隔離 |
-|**最低 OS 版本** | 已隔離 |
-| **最高 OS 版本** | 已隔離 |
+- macOS
 
----------------------------
+身為 Intune 管理員，請使用這些相容性設定來協助保護您的組織資源。 若要深入了解相容性原則及其執行的操作，請參閱[開始使用裝置相容性](device-compliance-get-started.md)。
 
-**已補救** = 裝置作業系統強制符合規範。 例如，強制使用者設定 PIN。
+## <a name="before-you-begin"></a>開始之前
 
-**已隔離** = 裝置作業系統不強制符合規範。 (例如，Android 裝置不強制使用者為裝置加密。)裝置不相容時，會採取下列動作︰
-
-- 如果對使用者套用了條件式存取原則，裝置會遭到封鎖。
-- 公司入口網站會通知使用者任何合規性問題的相關事項。
-
-## <a name="create-a-device-compliance-policy"></a>建立裝置合規性政策
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. 針對 [平台]，選取 [macOS]。 
-5. 選擇 [設定組態]，並輸入此文章中所述的 [裝置健康情況]、[裝置內容]，以及 [系統安全性] 設定。 完成後，請選取 [確定] 和 [建立]。
+[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [macOS]。
 
 ## <a name="device-health"></a>裝置健全狀況
 
-- **需要系統完整性保護**：**需要**您的 macOS 裝置擁有[系統完整性保護](https://support.apple.com/HT204899)。
+- [要求系統完整保護]：[要求] 您的 macOS 裝置啟用[系統完整保護](https://support.apple.com/HT204899) (開啟 Apple 的網站)。 當設為 [未設定] (預設) 時，便不會針對相容性或非相容性評估此設定。
 
 ## <a name="device-properties"></a>裝置內容
 
@@ -73,7 +58,7 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 - **簡單密碼**：設定為 [封鎖] 時，使用者將無法建立 **1234** 或 **1111** 之類的簡單密碼。 設定為 [未設定] 時，使用者可以建立 **1234** 或 **1111** 之類的密碼。
 - **最小密碼長度**：輸入密碼至少須包含的位數或字元數。
 - **密碼類型**：選擇密碼是否應該只包含**數值**字元，或是應該混合數字和其他字元 (**英數字元**)。
-- **密碼中的非英數字元數目**：輸入密碼中必須包含的特殊字元 (&、#、%、! 等等) 數目下限。
+- [密碼中的非英數字元數]：輸入特殊字元的數量下限，例如 `&`、`#`、`%`、`!` 等，其要求密碼中必須包含這些字元。
 
     若設定較高的數目，使用者就必須建立較複雜的密碼。
 
@@ -89,13 +74,16 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 - **對裝置上的資料存放區加密**：選擇 [需要] 來將裝置上的資料存放區加密。
 
 ### <a name="device-security"></a>裝置安全性
+
 防火牆會保護裝置免於遭受未經授權的網路存取。 您可以使用防火牆來控制以每個應用程式為基礎的連線。 
 
-- **防火牆**：[啟用] 以協助保護裝置免於未經授權的存取。 啟用此功能可讓您處理連入網際網路連線，並使用隱形模式。 [未設定] (預設值) 會保持關閉防火牆，而且允許網路流量 (不封鎖)。
-- **連入連線**：除了基本網際網路服務所需的連線 (例如 DHCP、Bonjour 及 IPSec) 之外，[封鎖] 所有連入網際網路連線。 此設定也會封鎖所有共用服務，包括螢幕共用、遠端存取、iTunes 音樂分享等等。 [未設定] (預設值) 允許連入連線和共用服務。 
-- **隱形模式**：[啟用] 隱形模式以防止電腦回應探查要求，這可能會成為我的惡意使用者。 啟用時，裝置會繼續回應已授權應用程式的連入要求。 [未設定] (預設值) 會保持關閉隱形模式。
+- [防火牆]：選取 [啟用] 以協助保護裝置不受未經授權的存取。 啟用此功能可讓您處理連入網際網路連線，並使用隱形模式。 [未設定] (預設值) 會保持關閉防火牆，而且允許網路流量 (不封鎖)。
+- [傳入連線]：除了基本網際網路服務 (例如 DHCP、Bonjour 和 IPSec) 所需要的連線外，[封鎖] 所有傳入網路連線。 此設定也會封鎖所有共用服務，包括螢幕共用、遠端存取、iTunes 音樂共用等。 [未設定] (預設值) 允許連入連線和共用服務。
+- [隱形模式]：[啟用] 隱形模式來防止裝置回應探查要求，因為這些要求可能是由惡意使用者所發出。 啟用時，裝置會繼續回應已授權應用程式的連入要求。 [未設定] (預設值) 會保持關閉隱形模式。
 
 ### <a name="gatekeeper"></a>閘道管理員
+
+如需詳細資訊，請參閱 [macOS 上的門禁](https://support.apple.com/HT202491) (開啟 Apple 網站)。
 
 **允許從這些位置下載的應用程式**：允許從不同的位置將所支援應用程式安裝到您的裝置。 您的位置選項：
 
@@ -104,19 +92,10 @@ Intune macOS 裝置合規性原則決定 macOS 設備必須符合的規則和設
 - **Mac App Store 和已識別的開發人員**：安裝 Mac App Store 及來自已識別開發人員的應用程式。 macOS 會檢查開發人員的身分識別，並執行一些其他檢查來驗證應用程式完整性。 如果使用者選取閘道管理員來安裝這些選項以外的應用程式，裝置即視為不符合規範。
 - **任何位置**：應用程式可以從任何位置並由任何開發人員安裝。 此選項最不安全。
 
-如需 Apple 文件中的詳細資料，請參閱 [macOS 上的閘道管理員](https://support.apple.com/HT202491)。
-
-## <a name="assign-user-groups"></a>指派使用者群組
-
-1. 選擇您已設定的原則。 現有的原則位於 [裝置合規性] > [原則]。
-2. 選擇原則，然後選擇 [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取要套用這項原則的使用者群組，然後選擇 [儲存] 將原則部署給使用者。
-
-> [!TIP]
-> 根據預設，裝置每 8 小時會檢查合規性。 但是，使用者可以透過 Intune 公司入口網站應用程式強制執行此程序。
-
-您已對使用者套用此原則。 要套用原則之使用者的裝置將會接受相容性評估。
+選取 [確定] > [建立] 儲存您的變更。
 
 ## <a name="next-steps"></a>後續步驟
-[將電子郵件自動化，並為不符合規範的裝置新增動作](actions-for-noncompliance.md)  
-[監視 Intune 裝置合規性原則](compliance-policy-monitor.md)
+
+- [為不相容的裝置新增動作](actions-for-noncompliance.md)及[使用範圍標籤篩選原則](scope-tags.md)。
+- [監視您的相容性原則](compliance-policy-monitor.md)。
+- 請參閱 [iOS 裝置的相容性原則設定](compliance-policy-create-ios.md)。

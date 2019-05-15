@@ -64,7 +64,7 @@ URL 包含下列元素：
 
 ## <a name="odata-query-options"></a>OData 查詢選項
 
-目前版本支援下列 OData 查詢參數：`$filter`、`$select`、`$skip,` 及 `$top`。 在  `$filter`，則僅`DateKey`或`RowLastModifiedDateTimeUTC`可能支援的資料行都適用，和其他屬性會觸發錯誤的要求時。
+目前版本支援下列 OData 查詢參數：`$filter`、`$select`、`$skip,` 及 `$top`。 在 `$filter` 中，當資料行適用時只支援 `DateKey` 和 `RowLastModifiedDateTimeUTC`，其他屬性會觸發錯誤的要求。
 
 ## <a name="datekey-range-filters"></a>DateKey 範圍篩選條件
 
@@ -84,4 +84,4 @@ URL 包含下列元素：
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180220 之間的資料。                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。 `maxhistorydays` 會被忽略。                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    傳回具有資料`RowLastModifiedDateTimeUTC`大於或等於 `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    傳回 `RowLastModifiedDateTimeUTC` 大於或等於 `2018-02-21T23:18:51.3277273Z` 的資料                             |

@@ -29,7 +29,7 @@ ms.locfileid: "59423691"
 這些設定會新增至 Intune 裝置組態設定檔，然後指派或部署到您的 Windows 10 裝置。
 
 > [!Note]
-> 並非所有版本的 Windows 都提供全部選項。 若要查看支援的版本，請參閱[原則 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) （開啟另一個 Microsoft 網站上）。
+> 並非所有版本的 Windows 都提供全部選項。 若要查看支援的版本，請參閱 [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (原則 CSP) (開啟另一個 Microsoft 網站)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -138,15 +138,15 @@ ms.locfileid: "59423691"
 - **SIM 卡錯誤對話方塊 (僅限行動裝置)**：封鎖在沒有偵測到 SIM 卡的情況下會顯示於裝置上的錯誤訊息。
 - **Ink 工作區**：禁止使用者存取 Ink 工作區。 [未設定] 會啟用 Ink 工作區，並允許使用者在鎖定畫面上使用它。
 - **自動重新部署**：允許具有系統管理權限的使用者，在裝置鎖定畫面上使用 **CTRL + Win + R** 來刪除所有使用者資料和設定。 裝置會自動重新設定並重新註冊以納入管理。
-- **要求使用者在裝置設定期間連線到網路 (僅限 Windows 測試人員)**：選擇 [需要] 讓裝置連線到網路，再繼續進行 Windows 10 安裝期間的 [網路] 頁面。
+- [要求使用者在裝置設定期間連線到網路]：選擇 [要求]，以讓裝置在 Windows 10 設定期間先連線到網路，再通過 [網路] 頁面。
 
-  此設定會在下次裝置抹除或重設生效。 像任何其他 Intune 設定裝置必須註冊並受 Intune 管理來接收組態設定。 但一次註冊，並接收原則，然後將裝置重設會強制執行的下一步 的 Windows 安裝期間設定。
+  此設定會在下一次抹除或重設裝置時生效。 和任何其他 Intune 設定相似，裝置必須向 Intune 註冊並由 Intune 管理才能接收組態設定。 然而一旦註冊並接收原則，然後重設裝置後，便會在下一次 Windows 設定期間時實行設定。
 
 - **直接記憶體存取**：[封鎖] 會防止所有隨插即用 PCI 下游連接埠的直接記憶體存取 (DMA)，直到使用者登入 Windows 為止。 [啟用] (預設值) 會允許存取 DMA，就算使用者未登入也一樣。
 
   CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **結束處理程序在 [工作管理員] 從**： 此設定會決定非系統管理員是否可以使用工作管理員來結束工作。 [封鎖] 可防止標準使用者 (非系統管理員) 使用 [工作管理員] 來結束裝置上的處理序或工作。 [未設定] (預設) 可讓標準使用者使用 [工作管理員] 結束處理序或工作。
+- [結束來自工作管理員的處理序]：此設定會決定非系統管理員是否可以使用工作管理員結束工作。 [封鎖] 可防止標準使用者 (非系統管理員) 使用 [工作管理員] 來結束裝置上的處理序或工作。 [未設定] (預設) 可讓標準使用者使用 [工作管理員] 結束處理序或工作。
 
 ## <a name="locked-screen-experience"></a>鎖定畫面體驗
 
@@ -165,28 +165,28 @@ ms.locfileid: "59423691"
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge 瀏覽器
 
-### <a name="use-microsoft-edge-kiosk-mode"></a>使用 Microsoft Edge 的 kiosk 模式
+### <a name="use-microsoft-edge-kiosk-mode"></a>使用 Microsoft Edge kiosk 模式
 
-可用的設定，端視您選擇的項目而有所不同。 選項包括：
+可用設定會因您選擇的項目而變更。 選項包括：
 
-- **否**（預設值）： Microsoft 邊緣不在 kiosk 模式中執行。 所有的 Microsoft Edge 設定可供您變更和設定。
-- **Digital/Interactive 告示板 (單一應用程式 kiosk)**： 適用於使用只在 Windows 10 單一應用程式的 kiosk 上的數位/Interactive 告示板 Microsoft Edge Kiosk 模式的篩選 Microsoft Edge 設定。 選擇此設定，以開啟 URL 的全螢幕，並只顯示在該網站上的內容。 [設定數位簽署](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供這項功能的詳細資訊。
-- **公用 inprivate (單一應用程式 kiosk)**： 適用於 InPrivate 公用瀏覽 Microsoft Edge 的 Kiosk 模式在 Windows 10 單一應用程式的 kiosk 上使用的篩選 Microsoft Edge 設定。 在執行多重索引標籤版本的 Microsoft Edge。
-- **標準模式 (多應用程式 kiosk)**： 適用於一般 Microsoft Edge Kiosk 模式的篩選 Microsoft Edge 設定。 執行完整版的 Microsoft Edge 瀏覽的所有功能。
-- **公用的瀏覽 (多應用程式 kiosk)**： 適用於 Windows 10 的多個應用程式 kiosk 上的公用瀏覽篩選 Microsoft Edge 設定。  在執行多索引標籤上的 Microsoft Edge InPrivate 版本。
+- [否] (預設)：Microsoft Edge 並非正在 Kiosk 模式中執行。 您可以使用所有 Microsoft Edge 設定，且可進行變更和設定。
+- [數位/互動告示板 (單一應用程式 Kiosk)]：篩選 Microsoft Edge 設定，只提供適用於數位/互動告示板 Microsoft Edge Kiosk 模式的設定，用於 Windows 10 單一應用程式 Kiosk。 選擇此設定，以全螢幕方式開啟 URL，並只顯示網站的內容。 [設定數位告示板](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供此功能的詳細資訊。
+- [InPrivate 公開瀏覽 (單一應用程式 Kiosk)]：篩選 Microsoft Edge 設定，只提供適用於 InPrivate 公開瀏覽 Microsoft Edge Kiosk 模式的設定，用於 Windows 10 單一應用程式 Kiosk。 執行 Microsoft Edge 的多分頁版本。
+- [標準模式 (多應用程式 Kiosk)]：篩選 Microsoft Edge 設定，只提供適用於標準 Microsoft Edge Kiosk 模式的設定。 執行具備所有瀏覽功能的 Microsoft Edge 完整版本。
+- [公開瀏覽 (多應用程式 Kiosk)]：篩選 Microsoft Edge 設定，只提供適用於在 Windows 10 多應用程式 Kiosk 上公開瀏覽的設定。  執行 Microsoft Edge InPrivate 的多分頁版本。
 
 > [!TIP]
-> 如需有關這些選項的作用的詳細資訊，請參閱 < [Microsoft Edge kiosk 模式的組態類型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
+> 如需這些選項作用的詳細資訊，請參閱 [Microsoft Edge Kiosk 模式設定類型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
 
-此裝置限制設定檔會與直接相關的 kiosk 設定檔使用您所建立[Windows kiosk 設定](kiosk-settings-windows.md)。 總括來說：
+此裝置限制設定檔直接與您使用 [Windows Kiosk 設定](kiosk-settings-windows.md)建立的 Kiosk 設定檔相關。 總括來說：
 
-1. 建立[Windows kiosk 設定](kiosk-settings-windows.md)kiosk 模式中執行裝置的設定檔。 選取 Microsoft Edge 與應用程式並設定 Microsoft Edge 的 Kiosk 模式 Kiosk 設定檔中。
-2. 建立裝置限制設定檔，在本文中所述，並設定特定功能和允許 Microsoft Edge 中的設定。 請務必選擇與您的 kiosk 設定檔中已選取相同的 Microsoft Edge kiosk 模式類型 ([Windows kiosk 設定](kiosk-settings-windows.md))。 
+1. 建立 [Windows Kiosk 設定](kiosk-settings-windows.md)設定檔，來在 Kiosk 模式下執行裝置。 選取 Microsoft Edge 作為應用程式，並在 Kiosk 設定檔中設定 Microsoft Edge Kiosk 模式。
+2. 建立本文中描述的裝置限制設定檔，並設定 Microsoft Edge 中允許的特定功能及設定。 請務必選擇和您在 Kiosk 設定檔 ([Windows Kiosk 設定](kiosk-settings-windows.md)) 中所選取項目相同的 Microsoft Edge Kiosk 模式類型。 
 
-    [支援的 kiosk 模式設定](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是絕佳的資源。
+    [支援的 Kiosk 模式設定](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是良好資源。
 
 > [!IMPORTANT] 
-> 請務必將此 Microsoft Edge 設定檔指派給相同的裝置為 kiosk 的設定檔 ([Windows kiosk 設定](kiosk-settings-windows.md))。
+> 請務必將此 Microsoft Edge 設定檔指派給與您 Kiosk 設定檔 ([Windows Kiosk 設定](kiosk-settings-windows.md)) 相同的裝置。
 
 [ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
@@ -208,11 +208,11 @@ ms.locfileid: "59423691"
 - **使用者可變更首頁按鈕**：[允許] 可讓使用者變更首頁按鈕。 使用者的變更覆寫任何的系統管理員設定，以 [首頁] 按鈕。 [未設定] 會使用裝置上的 OS 預設行為，這可能會禁止使用者變更系統管理員設定主畫面按鈕的方式。
 - **顯示首次執行體驗頁面**：[封鎖] 會阻止您第一次執行 Microsoft Edge 時顯示簡介頁面。 這項功能可讓企業 (如註冊零輸出設定的組織) 封鎖這個頁面。 [未設定] 會顯示 [簡介] 頁面。
   - **首次執行體驗 URL**：輸入頁面 URL 以顯示使用者第一次執行 Microsoft Edge (僅限Windows 10 行動裝置版)。
-- **在閒置時間後重新整理瀏覽器**： 輸入的瀏覽器重新整理之前，從 0 到 1440年的閒置分鐘數分鐘的時間。 預設值是`5`分鐘的時間。 當設定為`0`（零），瀏覽器不在閒置之後會重新整理。
+- [在閒置時間後重新整理瀏覽器]：輸入閒置時間數 (分鐘)，在經過此時時間後便會重新整理瀏覽器，範圍介於 0 到 1440 分鐘。 預設為 `5` 分鐘。 當設為 `0` (零) 時，瀏覽器便不會在閒置後重新整理。
 
-  執行時，才可以使用這項設定[公開 InPrivate 瀏覽 (單一應用程式 kiosk)](#use-microsoft-edge-kiosk-mode)。
+  此設定只有在於 [InPrivate 公開瀏覽 (單一應用程式 Kiosk)](#use-microsoft-edge-kiosk-mode) 中執行時才可使用。
 
-  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+  CSP：[ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
 - **快顯視窗**：選擇 [封鎖] 以停止瀏覽器中的快顯視窗。 僅適用於 Windows 10 Desktop。 [未設定] 允許網頁瀏覽器的快顯視窗。
 - **將內部網路流量傳送到 Internet Explorer**：[允許] 讓使用者可在 Internet Explorer 而不是 Microsoft Edge 中開啟內部網路網站 (僅限 Windows 10 桌面版)。 [未設定] 允許使用者使用 Microsoft Edge。
@@ -245,11 +245,11 @@ ms.locfileid: "59423691"
   - Yahoo
   - 自訂值
 - **搜尋建議**：[未設定] 可讓您的搜尋引擎在您於網址列中輸入搜尋片語時建議網站。 [封鎖] 會防止此功能。
-- **允許變更的搜尋引擎**:**是**（預設值） 可讓使用者加入新的搜尋引擎，或變更預設的搜尋引擎在 Microsoft Edge 中。 選擇**No**以防止使用者自訂的搜尋引擎。
+- [允許變更搜尋引擎]：[是] (預設) 可讓使用者在 Microsoft Edge 中新增新的搜尋引擎，或是變更預設搜尋引擎。 選擇 [否] 以防止使用者自訂搜尋引擎。
 
-  執行時，才可以使用這項設定[正常模式 (多應用程式 kiosk)](#use-microsoft-edge-kiosk-mode)。
+  此設定只有在於[標準模式 (多應用程式 Kiosk)](#use-microsoft-edge-kiosk-mode) 中執行時才可使用。
 
-  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
+  CSP：[AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### <a name="privacy-and-security"></a>隱私權和安全性
 
@@ -308,29 +308,29 @@ ms.locfileid: "59423691"
   - **避免重複使用以前用過的密碼**：指定裝置記憶先前使用過的密碼數目。
   - **裝置從閒置狀態回復時需要密碼 (僅限行動裝置)**：指定使用者必須輸入密碼才能解除鎖定裝置 (僅限 Windows 10 行動裝置版)。
   - **簡單密碼**：可讓您使用 1111 和 1234 等簡單密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
-- **在 AADJ 期間的自動加密**:**區塊**時裝置已準備好進行第一次使用時，裝置已加入 Azure AD 時，可防止自動 BitLocker 裝置加密。 **未設定**（預設值） 會使用作業系統預設，這可能會讓加密。 更多[BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+- [在 AADJ 期間自動加密]：[封鎖] 可防止當裝置加入 Azure AD，並準備裝置進行初次使用時啟動自動 BitLocker 裝置加密。 [未設定] (預設) 會使用作業系統預設，該預設可能會啟用加密。 請參閱 [BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **聯邦資訊處理標準 (FIPS) 原則**:**允許**使用聯邦資訊處理標準 (FIPS) 原則，也就是美國政府標準加密、 雜湊和簽署。 **未設定**（預設值） 會使用作業系統預設值，不會使用 FIPS。
+- [聯邦資訊處理標準 (FIPS) 原則]：[允許] 會使用聯邦資訊處理標準 (FIPS) 原則，該標準是美國政府針對加密、雜湊和簽署提出的標準。 [未設定] (預設) 會使用作業系統預設值，而不使用 FIPS。
 
-  [密碼編譯/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+  [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello 裝置驗證**:**允許**使用 Windows Hello 小幫手裝置，例如電話、 適用性頻外或 IoT 裝置來登入的 Windows 10 電腦的使用者。 **未設定**（預設值） 會使用作業系統預設值，可能會導致 Windows Hello 小幫手裝置無法使用 Windows 驗證。
+- [Windows Hello 裝置驗證]：[允許] 使用者使用 Windows Hello 隨附裝置，例如手機、健身手環或 IoT 裝置登入 Windows 10 電腦。 [未設定] (預設) 會使用作業系統預設，該預設可能會防止 Windows Hello 隨附裝置向 Windows 驗證。
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Web 登入**： 可讓 Windows 登入非 ADFS （Active Directory 同盟服務） 同盟提供者，例如安全性判斷提示標記語言 (SAML) 的支援。 SAML 會使用提供單一登入 (SSO) 的網頁瀏覽器體驗的安全權杖。 選項包括：
+- [Web 登入]：啟用非 ADFS (Active Directory 同盟服務) 同盟提供者的 Windows 登入支援，例如安全性聲明標記語言 (SAML)。 SAML 使用安全權杖，提供網頁瀏覽器單一登入 (SSO) 體驗。 選項包括：
 
-  - **未設定**（預設值）： 在裝置上使用的作業系統預設值。
-  - **啟用**: Web 認證提供者都可使用登入。
-  - **停用**: Web 認證提供者已停用登入。
+  - [未設定] (預設)：使用裝置上的作業系統預設。
+  - [啟用]：啟用 Web 認證提供者進行登入。
+  - [停用]：停用 Web 認證提供者進行登入。
 
-  [驗證/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **慣用的 Azure AD 租用戶網域**： 輸入您的 Azure AD 組織中的現有的網域名稱。 在這個網域中的使用者登入時，他們不需要輸入網域名稱。 例如，輸入 `contoso.com`。 中的使用者`contoso.com`網域可以使用登入他們的使用者名稱，例如"abby"，而不是 「abby@contoso.com"。
+- [慣用的 Azure AD 租用戶網域]：輸入您 Azure AD 組織中現有的網域名稱。 當使用者在此網域登入時，他們便不需要鍵入網域名稱。 例如，輸入 `contoso.com`。 `contoso.com` 網域中的使用者可以使用其使用者名稱登入，例如 "abby"，而非 "abby@contoso.com"。
 
-  [驗證/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>個別應用程式的隱私權例外狀況
 
@@ -356,7 +356,7 @@ ms.locfileid: "59423691"
 - **電話**：定義此應用程式能否存取手機。
 - **無線電**：有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
 - **工作**：定義此應用程式能否存取您的工作。
-- **受信任的裝置**： 選擇此應用程式是否可以使用受信任的裝置。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
+- [受信任的裝置]：若此應用程式可使用受信任的裝置，請選擇此選項。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
 - **意見反應與診斷**：定義此應用程式能否存取診斷資訊。
 - **與裝置同步** - 選擇此應用程式是否自動與未和該裝置直接配對的無線裝置共用及同步資訊。
 
@@ -396,7 +396,7 @@ ms.locfileid: "59423691"
 - **電話**：定義此應用程式能否存取手機。
 - **無線電**：有些應用程式會在您的裝置上使用無線電波 (例如，藍牙) 來傳送及接收資料，因此必須開啟或關閉這些無線電波。 定義此應用程式能否控制這些無線電波。
 - **工作**：定義此應用程式能否存取您的工作。
-- **受信任的裝置**： 選擇此應用程式是否可以使用受信任的裝置。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
+- [受信任的裝置]：若此應用程式可使用受信任的裝置，請選擇此選項。 受信任裝置是您已連線的硬體，或隨附於裝置的硬體。 例如，將電視、投影機等作為信任的裝置使用。
 - **意見反應與診斷**：選擇此應用程式能否存取診斷資訊。
 - **與裝置同步** - 定義此應用程式能否自動與未和此電腦、平板電腦或手機直接配對的無線裝置共用及同步資訊。
 
@@ -494,7 +494,7 @@ ms.locfileid: "59423691"
 - **Defender 的使用者存取**：控制是否對使用者隱藏 Windows Defender 使用者介面。 變更此設定後，要在使用者電腦下次重新啟動時才會生效。
 - **病毒碼更新間隔 (小時)**：輸入 Defender 查看是否有新病毒碼檔案的間隔。
 - **監視檔案與程式活動**：允許 Defender 監視裝置上的檔案和程式活動。
-- **多少天之後刪除隔離的惡意程式碼**： 繼續追蹤已解決的惡意程式碼的輸入，這讓您可以手動檢查先前受影響裝置的天數。 如果您將此天數設為 **0**，則惡意程式碼會保留在隔離資料夾中且不會自動移除。
+- [刪除受隔離惡意程式碼前的天數]：在您輸入天數內繼續追蹤解析的惡意程式碼，讓您可以手動檢查先前受影響的裝置。 如果您將此天數設為 **0**，則惡意程式碼會保留在隔離資料夾中且不會自動移除。
 - **掃描期間的 CPU 使用率限制**：限制掃描可以使用的 CPU 數量 (從 **1** 到 **100**)。
 - **掃描封存檔**：允許 Defender 掃描封存的檔案，例如 .zip 或 .cab 檔案。
 - **掃描內送郵件訊息**：允許 Defender 在電子郵件訊息到達裝置時加以掃描。
@@ -502,31 +502,31 @@ ms.locfileid: "59423691"
 - **在完整掃描期間掃描對應的網路磁碟機**：讓 Defender 可掃描對應網路磁碟機上的檔案。
   如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
 - **掃描從網路資料夾中開啟的檔案**：讓 Defender 在共用網路磁碟機上掃描檔案 (例如，從 UNC 路徑存取的檔案)。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
-- **雲端保護**：允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 這項資訊可在未來改善服務。
+- **雲端保護**：允許或封鎖 Microsoft Active Protection Service 從您管理的裝置接收惡意程式碼活動的相關資訊。 此資訊可在未來改善服務。
 - **在提交範例之前提示使用者**：控制可能需要進一步分析的潛在惡意檔案，是否自動傳送給 Microsoft。
-- **執行每日快速掃描時間**： 選擇要執行每日快速掃描。 **未設定**不會執行每日掃描。 如果您想要更多自訂，設定**要執行的系統掃描類型**設定。
+- [執行每日快速掃描的時間]：選擇要執行每日快速掃描的小時。 [未設定] 不執行每日掃描。 若您需要更多自訂，請設定 [要執行的系統掃描類型] 設定。
 
-  [Defender ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **要執行的系統掃描類型**： 排程系統掃描，包括層級的掃描，以及日期和時間來執行掃描。 選項包括：
-  - **未設定**： 不排程系統掃描的裝置上。 使用者可以手動執行掃描為視需要或想在其裝置上。
-  - **停用**： 停用裝置上的掃描任何系統。 如果您將掃描裝置的協力廠商防毒解決方案，請選擇這個選項。
-  - **快速掃描**： 探討常見的位置，可能有惡意程式碼註冊，例如登錄機碼，且已知 Windows 啟動資料夾。
-    - **排定的日期**： 選擇要執行掃描的日期。
-    - **排定的時間**： 選擇要執行掃描。
-  - **完整掃描**： 探討常見的位置，可能有惡意程式碼已經註冊，並也會掃描每個檔案和裝置上的資料夾。
-    - **排定的日期**： 選擇要執行掃描的日期。
-    - **排定的時間**： 選擇要執行掃描。
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- [要執行的系統掃描類型]：排程系統掃描，包含掃描層級，以及要執行掃描的日期和時間。 選項包括：
+  - [未設定]：不在裝置上排程系統掃描。 終端使用者可以視需要在裝置上手動執行掃描。
+  - [停用]：停用裝置上的任何系統掃描。 若您使用會掃描裝置的合作夥伴防毒軟體解決方案，請選擇此選項。
+  - [快速掃描]：查看惡意程式碼最可能註冊的常見位置，例如登錄機碼和已知的 Windows 啟動資料夾。
+    - [排程日]：選擇要執行掃描的天。
+    - [排程時間]：選擇要執行掃描的小時。
+  - [完整掃描]：查看惡意程式碼可能註冊的常見位置，同時掃描裝置上的每個檔案和資料夾。
+    - [排程日]：選擇要執行掃描的天。
+    - [排程時間]：選擇要執行掃描的小時。
 
-  這項設定可能會和衝突**執行每日快速掃描時間**設定。 一些建議：
+  這項設定可能會和 [執行每日快速掃描的時間] 設定衝突。 一些建議：
 
-  - 若要執行每日快速掃描，設定**執行每日快速掃描時間**設定。
-  - 執行每日快速掃描和完整掃描每週，然後設定**時間來執行每日快速掃描**，並設定**要執行的系統掃描類型**以完整掃描的日期和時間。
-  - 未設定**時間來執行每日快速掃描**使用同時設定**要執行的系統掃描的型別**設定為**快速掃描**。 這些設定可能會發生衝突，並可能不會執行掃描。
-  - 若要執行快速掃描每個星期二，上午 6，設定**要執行的系統掃描類型**設定。
+  - 若要執行每日快速掃描，請設定 [執行每日快速掃描的時間] 設定。
+  - 若要執行每日快速掃描，且每週執行一次完整掃描，請設定 [執行每日快速掃描的時間]，然後將 [要執行的系統掃描類型] 設為完整掃描，並附上日期和時間。
+  - 請不要同時設定 [執行每日快速掃描的時間] 並將 [要執行的系統掃描類型] 設為 [快速掃描]。 這些設定可能會衝突，導致掃描無法執行。
+  - 若要在每個星期二早上 6 點執行快速掃描，請設定 [要執行的系統掃描類型] 設定。
 
-  [Defender ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
-  [Defender ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
-  [Defender ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **偵測潛在的不必要應用程式**：選擇 Windows 用以偵測潛在的不必要應用程式的保護層級：
   - **封鎖**

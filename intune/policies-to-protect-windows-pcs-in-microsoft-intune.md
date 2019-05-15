@@ -46,4 +46,4 @@ Windows 防火牆有助於讓駭客、惡意程式碼和其他威脅遠離 Windo
 
 ## <a name="see-also"></a>請參閱
 
-[常見的問題、 問題和解決方式裝置原則和設定檔](device-profile-troubleshoot.md)
+[常見的疑問、問題和解決方式與裝置原則和設定檔](device-profile-troubleshoot.md)

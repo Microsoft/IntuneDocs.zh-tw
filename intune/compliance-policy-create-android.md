@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Intune 中建立 Android 裝置合規性原則 - Azure | Microsoft Docs
-description: 請參閱 Microsoft Intune 中設定您的 Android 裝置的合規性時，您可以使用的所有設定的清單。 設定密碼規則，選擇最小值或最大作業系統版本、 限制特定的應用程式，避免重複使用密碼，以及更多。
+title: Microsoft Intune 中的 Android 裝置相容性設定 - Azure | Microsoft Docs
+description: 查看您在 Microsoft Intune 中為 Android 裝置設定相容性時可使用的所有設定清單。 設定密碼規則、選擇最低或最高作業系統版本、限制特定應用程式，防止重複使用密碼等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423572"
 ---
-# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>將裝置標記為符合規範或不符合規範使用 Intune 的 android 設定
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Android 設定將裝置標示為相容或不相容
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-這篇文章列出並描述您可以在 Intune 中 Android 裝置設定的不同的合規性設定。 您的行動裝置管理 (MDM) 解決方案的一部分，使用這些設定來 root 破解 （已進行 jb 破解） 將裝置標記為不符合規範、 設定允許的威脅層級，啟用 Google Play Protect，，和更多功能。
+本文列出及描述您可在 Intune 中 Android 裝置上設定的不同相容性設定。 作為您行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來將經破解 (越獄) 的裝置標示為不相容、設定允許的威脅等級、啟用 Google Play Protect 等。
 
 本功能適用於：
 
 - Android
 
-身為 Intune 管理員，使用這些合規性設定來協助保護您組織的資源。 若要深入了解合規性原則，以及任何必要條件，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+身為 Intune 管理員，請使用這些相容性設定來協助保護您的組織資源。 若要深入了解相容性原則及其執行的操作，請參閱[開始使用裝置相容性](device-compliance-get-started.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -49,7 +49,7 @@ ms.locfileid: "59423572"
   - **中**︰如果裝置上的現有威脅是低等級或中等級，則會將裝置評估為符合規範。 如果在裝置上偵測到高等級的威脅，即判斷為不符合規範。
   - **高**：此選項最不安全，且允許所有威脅層級。 如果此解決方案只用於報告用途，則此設定可能很實用。
 
-### <a name="google-play-protect"></a>Google Play 保護
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **已設定 Google Play 服務**：**需要**安裝並啟用 Google Play 服務應用程式。 Google Play 服務可允許安全性更新，而且是 Google 認證裝置上許多安全性功能的基層相依服務。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
 - **最新安全性提供者**：**需要**最新安全性提供者可保護裝置免於已知的弱點。 當您選擇 [未設定]  (預設值) 時，則不會評估此設定是否符合規範。
@@ -64,7 +64,7 @@ ms.locfileid: "59423572"
   - **檢查基本完整性與經過認證的裝置**
 
 > [!NOTE]
-> 若要設定 Google Play 安全防護 設定使用應用程式保護原則，請參閱[Intune 應用程式保護原則設定](app-protection-policy-settings-android.md#conditional-launch)在 Android 上。
+> 若要使用應用程式防護原則設定 Google Play Protect 設定，請參閱 Android 的 [Intune 應用程式防護原則設定](app-protection-policy-settings-android.md#conditional-launch)。
 
 ## <a name="device-property-settings"></a>裝置屬性設定
 
@@ -120,14 +120,14 @@ ms.locfileid: "59423572"
 
 ## <a name="locations"></a>位置
 
-在原則中，您可以強制合規性由裝置的位置。 選擇此選項，從現有的位置。 還沒有位置？ [使用 Intune 中的位置 (網路範圍)](use-network-locations.md)可提供一些指引。
+在您的原則中，您可以透過裝置的位置強制實行相容性。 從現有的位置中選擇。 還沒有位置？ 在 Intune 中[使用位置 (網路柵欄)](use-network-locations.md) 可提供一些指導。
 
-1. 選擇**位置** > **選取位置**。
-2. 從清單中，請檢查您的位置 >**選取**。
+1. 選擇 [位置] > [選取位置]。
+2. 從清單中，檢查您的位置 > [選取]。
 3. [儲存] 原則。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [新增適用於不符合規範的裝置動作](actions-for-noncompliance.md)並[使用篩選器原則的範圍標籤](scope-tags.md)。
-- [監視合規性政策](compliance-policy-monitor.md)。
-- [Android Enterprise 的合規性政策設定](compliance-policy-create-android-for-work.md)
+- [為不相容的裝置新增動作](actions-for-noncompliance.md)及[使用範圍標籤篩選原則](scope-tags.md)。
+- [監視您的相容性原則](compliance-policy-monitor.md)。
+- 請參閱 [Android Enterprise 裝置的相容性原則設定](compliance-policy-create-android-for-work.md)。

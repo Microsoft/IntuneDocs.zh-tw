@@ -604,7 +604,7 @@ SDK 預設會將原則套用至應用程式整體。 多重身分識別是 MAM �
 
 在任何時間，每個執行緒都會有 UI 工作和檔案工作的有效身分識別。 這是用來確認應該套用哪些原則 (如果有的話) 的身分識別。 如果身分識別是 [沒有身分識別]，或使用者未受管理，則不會套用任何原則。 下列圖表顯示如何決定有效的身分識別。
 
-  ![Intune App SDK iOS： 身分識別判斷處理程序](./media/ios-thread-identities.png)
+  ![Intune 應用程式 SDK iOS：身分識別判斷流程](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>執行緒佇列
 

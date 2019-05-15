@@ -34,7 +34,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>如果應用程式是無法公開的組織內部應用程式：
 
-您**不需要**註冊應用程式。 針對內部[的營運 (LOB) 應用程式](apps-add.md#app-types-in-microsoft-intune)，撰寫或為您的公司，IT 系統管理員會在內部部署應用程式。 Intune 可偵測是否已使用 SDK 建置應用程式，並允許 IT 系統管理員對其套用應用程式保護原則。 您可以跳到[啟用 iOS 或 Android 應用程式的應用程式保護原則](#enable-your-ios-or-android-app-for-app-protection-policy)這一節。
+您**不需要**註冊應用程式。 針對由您公司或為了您公司撰寫的內部[企業營運 (LOB) 應用程式](apps-add.md#app-types-in-microsoft-intune)，IT 管理員將會在內部部署應用程式。 Intune 可偵測是否已使用 SDK 建置應用程式，並允許 IT 系統管理員對其套用應用程式保護原則。 您可以跳到[啟用 iOS 或 Android 應用程式的應用程式保護原則](#enable-your-ios-or-android-app-for-app-protection-policy)這一節。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果您的應用程式將會發行到公開應用程式商店 (例如 Apple App Store 或 Google Play)：
 

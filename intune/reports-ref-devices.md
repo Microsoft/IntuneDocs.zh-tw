@@ -167,10 +167,10 @@ ms.locfileid: "59429177"
 |---------|------------|--------|
 | ownerTypeID |擁有者類型的唯一識別碼。 | |
 | ownerTypeKey |資料倉儲中擁有者類型的唯一識別碼 - Surrogate 索引鍵。 | |
-| ownerTypeName |表示裝置的擁有者類型：  <br>公司-裝置為企業所有。 <br>個人 - 裝置為個人所有 (BYOD)。  <br>未知 - 無此裝置的相關資訊。 |公司個人未知 |
+| ownerTypeName |表示裝置的擁有者類型：  <br>公司 - 裝置為企業所有。 <br>個人 - 裝置為個人所有 (BYOD)。  <br>未知 - 無此裝置的相關資訊。 |公司個人未知 |
 
 > [!Note]  
-> 針對`ownerTypeName`在 azure Ad 的裝置建立動態群組時，您必須設定篩選值`deviceOwnership`做為`Company`。 如需詳細資訊，請參閱 <<c0> [ 裝置的規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
+> 針對建立裝置動態群組時 Azure AD 中的 `ownerTypeName`，您需要將篩選值 `deviceOwnership` 設為 `Company`。 如需詳細資訊，請參閱[裝置規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="managementstates"></a>ManagementStates
 
