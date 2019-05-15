@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504194"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135230"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
@@ -103,9 +103,6 @@ ms.locfileid: "61504194"
          - 選取群組來輸入任何 [其他收件者]
     
     - **遠端鎖定不符合規範的裝置**：裝置不符合規範時，鎖定裝置。 此動作會強制使用者輸入 PIN 或密碼來解除鎖定裝置。 
-
-    - **淘汰不符合規範的裝置**：裝置不符合規範時，從裝置移除所有公司資料，然後從 Intune 管理移除裝置。 為了防止意外抹除裝置，此動作支援的最小排程為 **30** 天。  
-
     
 5. 設定 [排程]：輸入不符合規範之後在使用者裝置觸發動作的天數 (0 到 365)。 在此寬限期間之後，您可以強制執行條件式存取原則。 如果您輸入 **0** (零) 天，則條件式存取會**立即**生效。 比方說，如果裝置不符合規範，您可以立即封鎖對公司資源的存取權。
 

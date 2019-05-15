@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426148"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135129"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -142,8 +142,8 @@ ms.locfileid: "62426148"
     例如，若您的應用程式檔案名稱為 **MyApp123**，請新增下列內容：<br>
     `msiexec /p “MyApp123.msp”`<p>
     若應用程式是 `ApplicationName.exe`，則命令是應用程式名稱，後面接著套件支援的命令引數 (參數)。 <br>例如：<br>
-    `ApplicationName.exe /quite`<br>
-    在上述命令中，`ApplicaitonName.exe` 套件支援 `/quite` 命令引數。<p> 如需應用程式套件支援的特定引數，請連絡您的應用程式廠商。
+    `ApplicationName.exe /quiet`<br>
+    在上述命令中，`ApplicationName.exe` 套件支援 `/quiet` 命令引數。<p> 如需應用程式套件支援的特定引數，請連絡您的應用程式廠商。
 
 3.  新增完整解除安裝命令，來根據應用程式的 GUID 解除安裝應用程式。 
 
@@ -282,9 +282,6 @@ ms.locfileid: "62426148"
 ## <a name="app-dependencies"></a>應用程式相依性
 
 應用程式相依性是必須先安裝才能安裝 Win32 應用程式的應用程式。 您可以要求將其他應用程式安裝為相依性。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 最多可以有 100 個相依性，其中包括任何內含相依性的相依性，以及應用程式本身。 只有在將 Win32 應用程式新增並上傳至 Intune 之後，才能新增 Win32 應用程式相依性。 一旦新增您的 Win32 應用程式之後，您會在 Win32 應用程式的刀鋒視窗上看到 [相依性] 選項。 
-
-> [!NOTE]
-> 只有在 Intune 管理代理程式已升級為 1904 版 (大於 1.18.120.0) 之後，才能使用應用程式相依性功能 (將服務升級為 1904 之後，可能另外需要一到兩週的時間才能使用此功能)。
 
 新增應用程式相依性時，您可以根據應用程式名稱和發行者進行搜尋。 此外，您可以根據應用程式名稱和發行者來排序新增的相依性。 無法在所新增應用程式相依性清單中選取先前新增的應用程式相依性。 
 
