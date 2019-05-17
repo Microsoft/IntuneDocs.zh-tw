@@ -1,27 +1,29 @@
 ---
 title: 搭配 Intune 使用應用程式型條件式存取
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解應用程式型條件式存取如何搭配 Intune 運作。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
-ms.topic: article
+ms.date: 02/11/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30f5b902619c84e6d1d193c252e76475d2e54e82
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816730"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567370"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>搭配 Intune 使用應用程式型條件式存取
 
@@ -67,13 +69,13 @@ ms.locfileid: "53816730"
 
 3. 會在裝置上安裝訊息代理程式應用程式。
 
-4. 訊息代理程式應用程式會啟動 Azure AD 註冊程序，這會在 Azure AD 中建立一筆裝置記錄。 這和行動裝置管理 (MDM) 註冊程序並不相同，但這筆記錄是必要的，因為這樣才能在裝置上強制套用條件式存取原則。
+4. 訊息代理程式應用程式會啟動 Azure AD 註冊程序，這會在 Azure AD 中建立裝置記錄。 這和行動裝置管理 (MDM) 註冊程序不同，但必須有此記錄，才能在裝置上強制實行條件式存取原則。
 
-5. 訊息代理程式應用程式會確認應用程式的身分。 這裡有一個安全性階層，讓訊息代理程式應用程式能夠驗證應用程式是否已經取得授權，以供使用者使用。
+5. 訊息代理程式應用程式會確認應用程式的身分。 系統中有一個安全性層級，所以訊息代理程式應用程式才能驗證應用程式是否已獲使用者授權使用。
 
 6. 訊息代理程式應用程式會在使用者驗證程序中，將應用程式用戶端識別碼傳送至 Azure AD，以檢查該應用程式是否在原則核准的清單中。
 
-7. Azure AD 可允許使用者依據原則核准的清單驗證及使用應用程式。 如果應用程式不在清單中，Azure AD 會拒絕存取應用程式。
+7. Azure AD 可允許使用者依據原則核准的清單驗證及使用應用程式。 如果應用程式不在清單中，Azure AD 會拒絕對應用程式的存取。
 
 8. Outlook 應用程式會與 Outlook 雲端服務通訊，以起始和 Exchange Online 的通訊。
 

@@ -1,27 +1,28 @@
 ---
 title: 需要 Intune 裝置註冊的多重要素驗證
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何在 Azure AD 中針對 Intune 裝置註冊要求多重要素驗證。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834087"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568787"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -50,11 +51,10 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 >請不要針對 Microsoft Intune 註冊設定 [以裝置為準的存取規則]。
 
 1. 使用您的認證登入您的 [Microsoft Azure 入口網站](https://portal.azure.com)。
-2. 在入口網站中，移至 [[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)]。
-3. 在 [Azure Active Directory] 的 [安全性] 下，選擇 [[條件式存取](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)]。
+2. 在入口網站中，移至 [Intune]，然後選擇 [條件式存取]。 從 *Intune* 存取的條件式存取節點與從 *Azure AD* 存取的節點相同。
 4. 選擇 [新增原則]。
 5. 在 [新增] 原則中，鍵入原則的描述性名稱。
-6. 在 [指派] 區段中，選擇 [使用者和群組]。
+6. 在 [指派] 區段中，選擇 [使用者和群組]。 
 7. 在 [使用者和群組] 中，選擇 [選取使用者或群組]，並核取 [使用者和群組]。 接著，選取將接收這個政策的使用者和/或群組，然後選擇 [完成]。
 8. 在 [指派] 區段中，選擇 [雲端應用程式]。
 9. 在 [雲端應用程式] 的 [包含] 索引標籤上，選擇 [選取應用程式]，並選擇 [選取] > [Microsoft Intune 註冊]，然後選擇 [完成]。

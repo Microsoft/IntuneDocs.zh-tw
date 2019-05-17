@@ -1,40 +1,52 @@
 ---
-title: 使用受原則保護的瀏覽器管理 Web 存取
-titlesuffix: Microsoft Intune
-description: 使用受原則保護的瀏覽器限制網頁瀏覽及 Web 資料傳輸。
+title: 使用受原則保護的瀏覽器管理公司 Web 存取
+titleSuffix: Microsoft Intune
+description: 使用由 Intune 指派、受原則保護的瀏覽器管理企業網頁瀏覽與 Web 資料傳輸。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086211"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569723"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理網際網路存取
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用受 Intune 原則保護的瀏覽器 (Microsoft Edge 或 Intune Managed Browser)，您可以確保存取公司網站的過程中隨時受到保護。  使用 Intune 設定時，受保護的瀏覽器可利用下列優勢：
 
-- 應用程式保護原則。
-- 條件式存取。
-- 單一登入。
-- 應用程式組態設定。
-- Azure 應用程式 Proxy 整合。
+- 應用程式保護原則
+- 條件式存取
+- 單一登入
+- 應用程式組態設定
+- Azure 應用程式 Proxy 整合
+
+## <a name="microsoft-edge-support"></a>Microsoft Edge 支援
+
+您可以針對企業案例，在 iOS 和 Android 裝置上使用 Microsoft Edge。 Microsoft Edge 支援與 Intune Managed Browser 相同的所有管理案例，並在終端使用者體驗中新增增強功能。 提供以下依據 Intune 原則啟用的 Microsoft Edge 企業功能。 這些企業功能包括：
+
+1. **雙重識別** - 使用者可以新增工作帳戶與個人帳戶以進行瀏覽。 系統會完整區隔兩個身分識別，類似於 Office 365 和 Outlook 中的架構與體驗。 Intune 系統管理員可以在工作帳戶內，針對受保護的瀏覽體驗設定所需原則。 
+2. **Intune 應用程式保護原則整合** - 系統管理員現在可以將應用程式保護原則的目標設為 Microsoft Edge，藉此控制下列功能：剪下、複製及貼上、防止擷取螢幕畫面，以及確保使用者選取的連結只會在其他受控應用程式中開啟。
+3. **Azure 應用程式 Proxy 整合** - 系統管理員可以控制對 SaaS 應用程式和 Web 應用程式的存取，協助確保無論使用者是從公司網路連線或從網際網路連線，瀏覽器型應用程式都只會在安全的 Microsoft Edge 瀏覽器中執行。 
+4. **受控我的最愛和首頁捷徑** - 為了方便存取，系統管理員可以設定 URL，以在終端使用者進入公司內容中時，顯示在 [我的最愛] 底下。 系統管理員可以設定首頁捷徑，就會在公司的使用者於 Microsoft Edge 中開啟新的頁面或新的索引標籤時，顯示為主要捷徑。
+
+適用於 Microsoft Edge 的 Microsoft Intune 保護原則可協助保護您的組織資料和資源。 受 Intune 保護的 Microsoft Edge 能確保公司的資源無論是在原生安裝的應用程式內，或透過網頁瀏覽器存取時，都會受到保護。
 
 ## <a name="getting-started"></a>開始使用
 
@@ -72,11 +84,15 @@ Microsoft Edge 和 Intune Managed Browser 是網頁瀏覽器應用程式，您�
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保護瀏覽器的條件式存取
 
-Managed Browser 現在是進行條件式存取的經過核准用戶端應用程式。 這表示您可以限制行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取，而在這些 Web 應用程式中，使用者只能使用 Managed Browser，並封鎖存取任何其他未受保護的瀏覽器 (如 Safari 或 Chrome)。 這項保護可以套用至 Azure 資源 (如 Exchange Online 和 SharePoint Online)、Office 入口網站，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)公開到外部使用者的內部部署網站。 
+Managed Browser 現在是進行條件式存取的經過核准用戶端應用程式。 這表示您可以限制行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取，而在這些 Web 應用程式中，使用者只能使用 Managed Browser，並封鎖存取任何其他未受保護的瀏覽器 (如 Safari 或 Chrome)。 這項保護可以套用至 Azure 資源，例如 Exchange Online 和 SharePoint Online、Microsoft 365 系統管理中心，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) 對外部使用者公開的內部部署網站。 
 
-若要限制 Azure AD 已連線 Web 應用程式在行動平台上使用 Intune Managed Browser，您可以建立需要經過核准之用戶端應用程式的 Azure AD 條件式存取原則。 
+若要限制 Azure AD 已連線 Web 應用程式在行動平台上使用 Intune Managed Browser，您可以建立條件式存取原則要求使用經過核准的用戶端應用程式。 
 
-1. 在 Azure 入口網站中，選取 [Azure Active Directory] > [企業應用程式][條件式存取] >  > [新增原則]。 
+> [!TIP]  
+> 條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
+
+
+1. 在 Intune 入口網站中，選取 [條件式存取] > [新原則]。 
 2. 接下來，選取刀鋒視窗之 [存取控制] 區段中的 [授與]。 
 3. 按一下 [需要經過核准的用戶端應用程式]。 
 4. 按一下 [授與] 刀鋒視窗上的 [選取]。 此原則必須指派給您只想要讓 Intune Managed Browser 應用程式存取的雲端應用程式。
@@ -267,14 +283,14 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 Intune Managed Browser 和 Microsoft Edge 現在已被視為受原則管理/保護的瀏覽器。 現在，現有應用程式保護原則會導致 Intune 受控應用程式的網頁連結，根據您的案例和平台在特定瀏覽器中開啟。 
 
 在 Android 上： 
-* 如果裝置上有 MB 和 Edge，除非具有原則受控瀏覽器需求的 Intune 受控應用程式將應用程式組態設定 “com.microsoft.intune.useEdge” 設為 “true”，否則將為 Managed Browser。  
-* 如果裝置上只有 Microsoft Edge 且使用原則設為目標，則為 Microsoft Edge。
-* 如果裝置上只有 Managed Browser 且使用原則設為目標，則為 Managed Browser。 
+* 如果使用者已在其裝置中下載 Managed Browser 和 Microsoft Edge，將會開啟前者。 若要確保不開啟 Managed Browser，改為開啟 Microsoft Edge，請針對需要使用受原則管理的瀏覽器的所有受 Intune 管理的應用程式，將應用程式組態設定項目 “com.microsoft.intune.useEdge” 設為 “true”。  
+* 如果裝置上只有 Microsoft Edge 且已經透過原則設定為目標應用程式，就會開啟它。
+* 如果裝置上只有 Managed Browser 且已經透過原則設定為目標應用程式，就會開啟它。 
 
 在 iOS 上，針對已整合 Intune SDK for iOS v. 9.0.9+ 的應用程式： 
-* 如果裝置上有 MB 和 Edge，除非具有原則受控瀏覽器需求的 Intune 受控應用程式將應用程式組態設定 “com.microsoft.intune.useEdge” 設為 “true”，否則將為 Managed Browser，**或**如果已安裝 Microsoft Edge 且已接收原則，則為 Microsoft Edge。 
-* 如果裝置上只有 Microsoft Edge，且已接收並使用原則設為目標，則為 Microsoft Edge。 
-* 如果裝置上只有 Managed Browser，且已接收並使用原則設為目標，則為 Managed Browser。
+* 如果裝置上同時有 MB 和 Edge，會開啟 Managed Browser，除非針對需要使用受原則管理的瀏覽器的所有受 Intune 管理的應用程式，將應用程式組態設定項目 “com.microsoft.intune.useEdge” 設為 “true”，**或者**如果已安裝 Microsoft Edge 且已收到原則，則會開啟 Microsoft Edge。 
+* 如果裝置上只有 Microsoft Edge 且已經設定為目標應用程式，而且已收到原則，就會開啟它。 
+* 如果裝置上只有 Managed Browser 且已經設定為目標應用程式，而且已收到原則，就會開啟它。
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用受管理的瀏覽器存取受管理應用程式的記錄檔
 

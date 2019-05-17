@@ -1,27 +1,29 @@
 ---
 title: 自訂 Android 的個別應用程式 VPN 設定檔
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何針對 Microsoft Intune 所管理的 Android 裝置建立個別應用程式 VPN 設定檔。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186013"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568462"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔
 
@@ -36,7 +38,7 @@ ms.locfileid: "52186013"
 > 此設定檔僅支援 Pulse Secure 和 Citrix 連線類型。
 
 
-## <a name="step-1-create-a-vpn-profile"></a>步驟 1︰建立 VPN 設定檔
+## <a name="step-1-create-a-vpn-profile"></a>步驟 1：建立 VPN 設定檔
 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
@@ -81,6 +83,6 @@ ms.locfileid: "52186013"
 
 
 
-## <a name="step-3-assign-both-policies"></a>步驟 3︰指派這兩項原則
+## <a name="step-3-assign-both-policies"></a>步驟 3：指派這兩項原則
 
 使用[如何指派裝置設定檔](device-profile-assign.md)中的指示，將兩個設定檔指派給必要的使用者或裝置。

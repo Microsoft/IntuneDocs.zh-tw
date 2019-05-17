@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune 中的 iOS 應用程式佈建設定檔
-titlesuffix: ''
+titleSuffix: ''
 description: Intune 提供您一些工具，可讓您主動將新的佈建設定檔指派給具有即將到期應用程式的裝置。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233843"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569554"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 應用程式佈建設定檔以避免應用程式過期
 
@@ -51,7 +52,7 @@ ms.locfileid: "57233843"
 3. 在 [建立設定檔] 窗格中，設定下列值︰
     - **名稱** - 提供此行動佈建設定檔的名稱。
     - [描述] - 提供原則的描述 (選擇性)。
-    - **上傳設定檔** - 選擇 [匯入]，然後選擇您從 Apple 開發人員網站下載的 Apple 行動組態設定檔檔案 (副檔名為 `.mobileprovision`)。
+    - **上傳設定檔** - 選擇 [開啟] 圖示，然後選擇您從 [Apple 開發人員網站](https://developer.apple.com/) \(英文\) 下載的 Apple 行動組態設定檔檔案 (副檔名為 `.mobileprovision`)。
 4. 完成之後，請選擇 [建立]。
 
 ## <a name="next-steps"></a>後續步驟

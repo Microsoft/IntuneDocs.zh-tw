@@ -10,6 +10,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842485"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460609"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -99,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 執行不同的系統管理工作時，您必須使用下列其中一個系統管理網站。
 
-- [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure 入口網站](https://portal.azure.com/)
 
 以下是這些入口網站支援的瀏覽器：

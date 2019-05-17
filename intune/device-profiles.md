@@ -1,14 +1,15 @@
 ---
 title: Microsoft Intune 中的裝置功能和設定 - Azure | Microsoft Docs
-description: 不同 Microsoft Intune 裝置設定檔的概觀，包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Windows Defender、Windows 資訊保護、系統管理範本，以及 Azure 入口網站的自訂裝置組態設定。 使用這些設定檔來管理及保護公司的資料和裝置。
+description: 各種 Microsoft Intune 裝置設定檔的概觀。 取得包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Windows Defender、Windows 資訊保護、系統管理範本，以及 Azure 入口網站的自訂裝置組態設定等項目的資訊。 使用這些設定檔來管理及保護公司的資料和裝置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845086"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570347"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能設定套用至您的裝置
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能和設定套用至您的裝置
 
-Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS、Android 和 Windows) 建立設定檔，然後使用 Intune 將設定檔套用至您組織中的裝置。
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-一些設定檔範例包括：
+Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS、Android 和 Windows) 建立設定檔。 然後，使用 Intune 套用或「指派」設定檔至裝置。
+
+作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些組態設定檔完成不同的工作。 一些設定檔範例包括：
 
 - 在 Windows 10 裝置上，使用設定檔範本來封鎖 Internet Explorer 中的 ActiveX 控制項。
 - 在 iOS 和 macOS 裝置上，允許使用者在您的組織中使用 AirPrint 印表機。
 - 允許或防止對裝置上藍牙的存取。
 - 建立 Wi-Fi 或 VPN 設定檔，讓不同裝置存取您的公司網路。
-- 管理軟體更新，包括何時進行安裝。
+- 管理軟體更新，包括它們的安裝時間。
 - 執行 Android 裝置作為專用 kiosk 裝置，該裝置可以執行一或多個應用程式。
 
-本文列出建立設定檔的步驟，並概述您可以建立的各種不同設定檔類型。 使用這些設定檔以允許或防止裝置上的某些功能。
-
-## <a name="create-the-profile"></a>建立設定檔
-
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-
-2. 選取 [裝置設定]。 下列選項可供您選擇：
-
-    - **概觀**：列出您的設定檔狀態，並在您指派給使用者和裝置的設定檔中提供其他詳細資料。
-    - **管理**：建立裝置設定檔，上傳自訂 [PowerShell 指令碼](intune-management-extension.md)以在設定檔中執行，並使用 [eSIM](esim-device-configuration.md) 將行動數據方案新增至裝置。
-    - **監視**：檢查設定檔的狀態為成功或失敗，另檢視您設定檔中的記錄。
-    - **安裝**：新增 SCEP 或 PFX 憑證授權單位，或是在設定檔中啟用[電信費用管理](telecom-expenses-monitor.md)。
-
-3. 選取 [設定檔] > [建立設定檔]。 輸入下列內容：
-
-   - **名稱**：為設定檔輸入描述性名稱。
-   - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-   - **平台**：選擇您的裝置平台。 選項包括：  
-
-       - **Android**
-       - **Android 企業**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 及更新版本**
-       - **Windows 10 及更新版本**
-
-   - **設定檔類型**：選取您要建立的設定類型。 所顯示的清單取決於您選擇的**平台**：
-
-       - [系統管理範本](administrative-templates-windows.md)
-       - [自訂](custom-settings-configure.md)
-       - [傳遞最佳化](delivery-optimization-windows.md)
-       - [裝置功能](device-features-configure.md)
-       - [裝置限制](device-restrictions-configure.md)
-       - [版本升級和模式切換](edition-upgrade-configure-windows-10.md)
-       - [教育](education-settings-configure.md)
-       - [電子郵件](email-settings-configure.md)
-       - [端點保護](endpoint-protection-configure.md)
-       - [Identity Protection](identity-protection-configure.md)  
-       - [Kiosk](kiosk-settings.md)
-       - [PKCS 憑證](certficates-pfx-configure.md)
-       - [SCEP 憑證](certificates-scep-configure.md)
-       - [信任的憑證](certificates-configure.md)
-       - [更新原則](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows 資訊保護](windows-information-protection-configure.md)
-
-     例如，如果您針對平台選取 [iOS]，則您的設定檔類型選項看起來會類似如下：
-
-     ![在 Intune 中建立 iOS 設定檔](./media/create-device-profile.png)
-
-4. 選取 [設定]。 這些設定會依類別組織。 選取一個類別以查看您可以設定的所有設定清單。
-
-5. 完成後，請選取 [確定] > [建立] 以儲存變更。
-
-若要深入了解不同的設定檔類型，請閱讀本文的後續章節。
+本文提供您可以建立的各種類型設定檔的概觀。 使用這些設定檔以允許或防止裝置上的某些功能。
 
 ## <a name="administrative-templates-preview"></a>系統管理範本 (預覽)
 
-[系統管理範本](administrative-templates-windows.md)包含您可以為 Internet Explorer、OneDrive、遠端桌面、Word、Excel 和其他 Office 程式等設定的數百項設定。
+[系統管理範本](administrative-templates-windows.md)包含您可以為 Internet Explorer、OneDrive、遠端桌面、Word、Excel 和其他 Office 程式進行的數百項設定。
 
-這些範本提供系統管理員一個方便且經過簡化的設定檢視，其類似於群組原則，但 100% 雲端架構。 
+這些範本提供系統管理員一個簡化過的設定檢視，類似於群組原則，但為 100% 雲端架構。
 
 這項功能支援：
 
@@ -164,7 +110,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 - Windows 10 及更新版本
 
-Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 與 [ios](device-restrictions-ios.md#kiosk-supervised-only) 裝置限制的形式提供。
+Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 與 [ios](device-restrictions-ios.md#kiosk-supervised-only) 裝置限制的形式提供。
 
 ## <a name="email"></a>電子郵件
 
@@ -173,6 +119,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 這項功能支援： 
 
 - Android
+- Android 企業
 - iOS
 - Windows Phone 8.1
 - Windows 10 及更新版本
@@ -186,6 +133,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 這項功能支援： 
 
 - Android
+- Android 企業
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 這項功能支援： 
 
 - Android
+- Android 企業
 - iOS
 - macOS
 - Windows 8.1 (僅匯入)
@@ -211,7 +160,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 這項功能支援：
 - Windows 10 Fall Creators Update 和更新版本
 
-## <a name="education"></a>教育
+## <a name="education"></a>Education
 
 [教育設定 - Windows 10](education-settings-configure.md) 設定 [Windows「進行測驗」應用程式](https://education.microsoft.com/gettrained/win10takeatest)的選項。 當您設定這些選項時，裝置將無法執行其他應用程式，直到測驗結束為止。
 
@@ -235,12 +184,14 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 
 ## <a name="certificates"></a>憑證
 
-[憑證](certificates-configure.md)設定信任的憑證、SCEP 憑證及 PKCS 憑證指派給裝置，而且用於驗證 Wi-Fi、VPN 與電子郵件設定檔。
+[憑證](certificates-configure.md)可設定指派給裝置的信任的憑證、SCEP 憑證及 PKCS 憑證。 而這些憑證可驗證 Wi-fi、VPN 和電子郵件設定檔。
 
 這項功能支援： 
 
 - Android
+- Android 企業
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 及更新版本
@@ -255,7 +206,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 
 ## <a name="shared-multi-user-device"></a>共用的多重使用者裝置
 
-[Windows 10](shared-user-device-settings-windows.md) 和 [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) 包含可與多位使用者共同管理裝置的設定，也稱為共用的裝置或共用的電腦。 當使用者登入裝置時，您可以選擇使用者能否變更睡眠選項，或將檔案儲存在裝置上。 在另一個範例中，您可以建立一項原則，從 Windows HoloLens 裝置刪除非使用中認證以節省空間。
+[Windows 10](shared-user-device-settings-windows.md) 和 [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) 包含可與多位使用者共同管理裝置的設定，也稱為共用的裝置或共用的電腦。 當使用者登入裝置時，您可以選擇使用者能否變更睡眠選項，或將檔案儲存在裝置上。 在另一個範例中，您可以建立一個會從 Windows HoloLens 裝置刪除非使用中認證的設定檔，以節省空間。
 
 這些共用的多重使用者裝置設定可讓系統管理員控制某些裝置功能，並使用 Intune 管理這些共用的裝置。
 
@@ -264,21 +215,30 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 - Windows 10 及更新版本
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>自訂設定檔
+## <a name="zebra-mobility-extensions-mx"></a>Zebra 行動性延伸模組 (MX)
 
-[自訂設定](custom-settings-configure.md)可讓系統管理員指派不屬於 Intune 內建設定的裝置設定。 例如，您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。 
+[Zebra 行動性延伸模組 (MX)](android-zebra-mx-overview.md) 可讓系統管理員使用及管理 Intune 中的 Zebra 裝置。 您可以建立包含設定的 StageNow 設定檔，然後使用 Intune 將這些設定檔指派及部署到您的 Zebra 裝置。 [StageNow 記錄及常見問題](android-zebra-mx-logs-troubleshoot.md)是針對設定檔進行疑難排解，以及在使用 StageNow 時查看一些潛在問題的絕佳資源。
 
 這項功能支援：
 
 - Android
+
+## <a name="custom-profile"></a>自訂設定檔
+
+[自訂設定](custom-settings-configure.md)可讓系統管理員指派非 Intune 中內建的裝置設定。 您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
+
+這項功能支援：
+
+- Android
+- Android 企業
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>管理及疑難排解
 
-[管理您的設定檔](device-profile-monitor.md)來檢查裝置的狀態，以及指派的設定檔。 也可藉由查看導致衝突的設定，以及包含這些設定的設定檔，來協助解決衝突。 [常見問題和解決方法](device-profile-troubleshoot.md)提供問與答以協助處理設定檔，包括刪除設定檔時發生什麼情況、什麼情況導致通知傳送至裝置等等。
+[管理您的設定檔](device-profile-monitor.md)來檢查裝置的狀態，以及指派的設定檔。 也可藉由查看導致衝突的設定，以及包含這些設定的設定檔，以協助解決衝突。 [常見問題和解決方式](device-profile-troubleshoot.md)可協助系統管理員使用設定檔。 它會描述刪除設定檔時會發生什麼情況，哪些狀況會導致傳送通知至裝置，以及更多事項。
 
 ## <a name="next-steps"></a>後續步驟
-選擇您的平台，並開始使用：
 
+選擇您的平台，並開始使用。

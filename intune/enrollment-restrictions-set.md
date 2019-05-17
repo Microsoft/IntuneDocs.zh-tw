@@ -1,15 +1,16 @@
 ---
 title: 在 Microsoft Intune 中設定註冊限制
-titlesuffix: ''
+titleSuffix: ''
 description: 在 Intune 中限制不同平台的註冊以及設定裝置註冊限制。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839658"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569112"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -42,10 +43,11 @@ ms.locfileid: "55839658"
   - iOS
   - macOS
   - Windows
-- iOS、Android、Android 工作設定檔和 Windows 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
+  - Windows Mobile
+- iOS、Android、Android 工作設定檔、Windows 和 Windows Mobile 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
   - 最低版本。
   - 最高版本。
-- 限制個人擁有的裝置 (僅限 iOS、Android、Android 工作設定檔、macOS、Windows)。
+- 限制個人擁有的裝置 (僅限 iOS、Android、Android 工作設定檔、macOS、Windows 和 Windows Mobile)。
 
 ## <a name="default-restrictions"></a>預設限制
 
@@ -73,7 +75,7 @@ ms.locfileid: "55839658"
 1. 登入 Azure 入口網站。
 2. 選取 [更多服務] 並搜尋 **Intune**，然後選擇 [Intune]。
 3. 選取 [裝置註冊] > [註冊限制]。
-4. 在 [裝置類型限制] 下 > 選擇您想要設定的限制 > [屬性] > [選取平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
+4. 在 [裝置類型限制] 下，選擇您想要設定的限制 > [屬性] > [選取平台]。 為每個列出的平台選擇 [允許] 或 [封鎖]。
     ![允許或封鎖平台的螢幕擷取畫面](media/enrollment-restrictions-set/platform-allow-block.png)
 5. 選擇 [確定]。
 6. 選擇 [設定平台]。
@@ -98,12 +100,12 @@ ms.locfileid: "55839658"
 下列方法限定成授權為 Windows 公司註冊：
  - 註冊使用者會使用[裝置註冊管理員帳戶]( device-enrollment-manager-enroll.md)。
 - 裝置透過 [Windows AutoPilot](enrollment-autopilot.md) 註冊。
-- 裝置已透過 Windows Autopilot 註冊，但不是 Windows 設定中的 [僅限 MDM 註冊] 選項。
+- 裝置已向 Windows Autopilot 註冊，但不是 Windows 設定中的 [僅限 MDM 註冊] 選項。
 - 裝置的 IMEI 編號列在 [裝置註冊] > [[公司裝置識別碼](corporate-identifiers-add.md)] (不支援 Windows Phone 8.1)。
 - 裝置透過[大量佈建套件](windows-bulk-enroll.md)註冊。
 - 裝置透過 GPO 註冊，或透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)方式註冊。
  
-Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制提供給 Intune 系統管理員，因此將會予以封鎖：
+Intune 會將下列註冊標示為公司。 但是，因為它們不會為 Intune 系統管理員提供每個裝置的控制，因此會遭到封鎖：
  - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。
 - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[從 Windows 設定的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*。
  
@@ -126,9 +128,20 @@ Intune 將下列註冊標示為公司，但因為它們未將每個裝置控制�
 6. 選取 [儲存]。
 
 
-在 BYOD 註冊期間，當使用者達到已註冊裝置的限制時，他們會看到通知。 例如，在 iOS 上，它看起來會像這樣：
+在 BYOD 註冊期間，當使用者達到已註冊裝置的限制時，他們會看到通知。 例如，在 iOS 上：
 
 ![iOS 裝置限制通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> 裝置限制不適用於下列 Windows 註冊類型：
+> - 共同受控註冊
+> - GPO 註冊
+> - 加入 Azure Active Directory 的註冊
+> - 加入大量 Azure Active Directory 的註冊
+> - Autopilot 註冊
+>
+> 這些註冊類型不會強制執行裝置限制，因為它們會被視為共用裝置案例。
+> 您可以[在 Azure Active Directory 中](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings)，設定這些註冊類型的固定限制。
 
 ## <a name="change-enrollment-restriction-priority"></a>變更註冊限制優先順序
 

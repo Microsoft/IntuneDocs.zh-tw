@@ -1,15 +1,16 @@
 ---
 title: 在 Intune 中註冊 Android 裝置
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在 Intune 中註冊 Android 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846752"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568670"
 ---
 # <a name="enroll-android-devices"></a>註冊 Android 裝置
 
@@ -30,10 +31,10 @@ ms.locfileid: "55846752"
 
 您身為 Intune 系統管理員，可管理下列 Android 裝置：
 - Android 裝置，包括 Samsung Knox Standard 裝置。
-- Android 企業裝置，包括：
-    - **Android 工作設定檔裝置**：個人裝置獲授與存取公司資料的權限。 系統管理員可以管理公司帳戶、應用程式和資料。 裝置上的個人資料會與公司資料分開保存，系統管理員不會控制個人設定或資料。 
-    - **Android 專用裝置**：屬公司擁有的單一使用裝置，例如數位招牌，票證列印或庫存管理。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
-    - **Android 完全受控裝置**：公司擁有的單一使用者裝置，專門用於公司和非個人用途。 系統管理員可以管理整部裝置，並強制讓工作設定檔無法使用原則控制項。 
+- Android Enterprise 裝置，包括：
+    - **Android Enterprise 工作設定檔裝置**：個人裝置獲授與存取公司資料的權限。 系統管理員可以管理公司帳戶、應用程式和資料。 裝置上的個人資料會與公司資料分開保存，系統管理員不會控制個人設定或資料。 
+    - **Android Enterprise 專用裝置**：屬公司擁有的單一使用裝置，例如數位招牌，票證列印或庫存管理。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
+    - **Android Enterprise 完全受控裝置**：公司擁有的單一使用者裝置，專門用於公司和非個人用途。 系統管理員可以管理整部裝置，並強制讓工作設定檔無法使用原則控制項。 
 
 ## <a name="prerequisite"></a>必要條件
 
@@ -52,13 +53,13 @@ ms.locfileid: "55846752"
 
 若要封鎖 Android 裝置，或者僅封鎖註冊個人擁有的 Android 裝置，請參閱[Set device type restrictions](enrollment-restrictions-set.md) (設定裝置類型限制)。
 
-## <a name="set-up-android-enterprise-enrollment"></a>設定 Android 企業註冊
+## <a name="set-up-android-enterprise-enrollment"></a>設定 Android Enterprise 註冊
 
-Android 企業是一組 Android 裝置功能與服務，可將個人應用程式與資料和包含公司應用程式與資料的公司設定檔分隔開來。 Android 企業裝置，包括工作設定檔裝置和完全受控裝置，以及專用裝置。 
+Android Enterprise 提供一組註冊選項，為使用者提供最新且最安全的功能。 Android Enterprise 註冊選項包括工作設定檔裝置、完全受控裝置，以及專用裝置。
 
-- [設定 Android 工作設定檔註冊](android-work-profile-enroll.md)
-- [設定 Android 專用裝置註冊](android-kiosk-enroll.md)
-- [設定 Android 完全受控註冊](android-fully-managed-enroll.md)
+- [設定 Android Enterprise 工作設定檔註冊](android-work-profile-enroll.md)
+- [設定 Android Enterprise 專用裝置註冊](android-kiosk-enroll.md)
+- [設定 Android Enterprise 完全受控註冊](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>註冊 Samsung Knox 裝置時的使用者體驗
 
@@ -76,6 +77,6 @@ Intune 支援 Samsung Knox Standard 裝置進行多使用者管理。 這表示�
 
 ## <a name="next-steps"></a>後續步驟
 
-- [設定 Android 工作設定檔註冊](android-work-profile-enroll.md)
-- [設定 Android 專用裝置註冊](android-kiosk-enroll.md)
-- [設定 Android 完全受控註冊](android-fully-managed-enroll.md)
+- [設定 Android Enterprise 工作設定檔註冊](android-work-profile-enroll.md)
+- [設定 Android Enterprise 專用裝置註冊](android-kiosk-enroll.md)
+- [設定 Android Enterprise 完全受控註冊](android-fully-managed-enroll.md)

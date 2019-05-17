@@ -1,35 +1,36 @@
 ---
-title: 管理來自商務用 Microsoft 網上商店的應用程式
-titlesuffix: Microsoft Intune
-description: 了解如何將應用程式從商務用 Microsoft 網上商店同步到 Intune，然後指派及追蹤這些應用程式。
+title: 從商務用 Microsoft Store 管理大量購買或免費的應用程式
+titleSuffix: Microsoft Intune
+description: 了解如何將購買 (或免費) 的應用程式從商務用 Microsoft Store 同步處理到 Intune。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234919"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587496"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>以 Microsoft Intune 管理購自商務用 Microsoft 網上商店的應用程式
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune，從商務用 Microsoft Store 管理大量購買 (或免費) 的應用程式
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)可讓您為組織個別或大量尋找及購買應用程式。 將市集連接到 Microsoft Intune，就可以從 Azure 入口網站管理大量採購的應用程式。 例如：
-* 您可以同步處理您使用 Intune 從市集購買的應用程式的清單。
+* 您可以使用 Intune，同步處理您已經從商店購買 (或免費) 的應用程式的清單。
 * 經過同步的應用程式會出現在 Intune 系統管理主控台；一如其他應用程式，您也可以指派這些應用程式。
 * 您可以追蹤有多少可用的授權，以及 Intune 管理主控台中正使用多少授權。
 * 如果可用授權數目不足，Intune 會禁止指派及安裝應用程式。
@@ -80,7 +81,7 @@ ms.locfileid: "57234919"
 
 ## <a name="assign-apps"></a>指派應用程式
 
-您可以使用指派任何其他 Intune 應用程式的方式來指派市集應用程式。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。 但您也可以不從 [所有應用程式] 頁面而改從 [授權的應用程式] 頁面指派應用程式。
+您可以使用指派任何其他 Intune 應用程式的方式來指派市集應用程式。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。 
 
 離線應用程式可以將目標設為使用者群組、 裝置群組或包含使用者和裝置的群組。
 離線應用程式可以針對裝置上的特定使用者或裝置上的所有使用者進行安裝。 

@@ -1,27 +1,28 @@
 ---
-title: 建立 Exchange 條件式存取原則 | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: 建立 Exchange 條件式存取原則
+titleSuffix: Microsoft Intune
 description: 在 Intune 中為 Exchange 內部部署及舊版的 Exchange Online Dedicated 設定條件式存取。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840394"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571734"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版的 Exchange Online Dedicated 建立條件式存取原則。
 
@@ -79,52 +80,54 @@ Windows 8.1 及更新版本上的原生「郵件」應用程式 (必須已向 In
 
 1. 移至 [Azure 入口網站](https://portal.azure.com/)，並使用您的 Intune 認證登入。
 
-1. 成功登入之後，您會看到 [Azure 儀表板]。
+2. 移至 [Intune] > [Exchange 存取]，然後選取 [Exchange 內部部署存取]。 
 
-1. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
+3. 在 [Exchange 內部部署存取] 窗格中選擇 [是]，以 [啟用 Exchange 內部部署存取控制]。
 
-1. 選擇 [Intune]，您會看到 [Intune 儀表板]。
+4. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
 
-1. 選擇 [內部部署存取]。 [內部部署] 窗格會顯示條件式存取原則與受該原則影響之裝置的狀態。
+5. 選擇 [Intune]，您會看到 [Intune 儀表板]。
 
-1. 從 [管理] 下選擇 [Exchange 內部部署存取]。
+6. 選擇 [內部部署存取]。 [內部部署] 窗格會顯示條件式存取原則與受該原則影響之裝置的狀態。
 
-1. 在 [Exchange 內部部署存取] 窗格中選擇 [是]，以啟用 Exchange 內部部署存取控制。
+7. 從 [管理] 下選擇 [Exchange 內部部署存取]。
+
+8. 在 [Exchange 內部部署存取] 窗格中選擇 [是]，以啟用 Exchange 內部部署存取控制。
 
     > [!NOTE]
     > 若未設定 Exchange Active Sync 內部部署連接器，則會停用此選項。  您必須至少先安裝及設定一個連接器，才能為 Exchange 內部部署啟用條件式存取。 如需詳細資訊，請參閱[安裝 Intune 內部部署 Exchange 連接器](exchange-connector-install.md)
 
-1. 從 [指派] 下選擇 [包含的群組]。  請使用應套用條件式存取的安全性使用者群組。 此動作會需要使用者向 Intune 註冊其裝置，而且必須符合相容性設定檔的規範。
+9. 從 [指派] 下選擇 [包含的群組]。  請使用應套用條件式存取的安全性使用者群組。 此動作會需要使用者向 Intune 註冊其裝置，而且必須符合相容性設定檔的規範。
 
-1. 若要排除特定的使用者群組，可以選擇 [排除的群組]，然後選取要免套用裝置註冊與合規需求的使用者群組。
+10. 若要排除特定的使用者群組，可以選擇 [排除的群組]，然後選取要免套用裝置註冊與合規需求的使用者群組。
 
-1. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
+11. 從 [設定] 下選擇 [使用者通知]，可修改預設的電子郵件訊息。 當使用者裝置不合規範，卻又要存取 Exchange 內部部署時，即會將此訊息會傳送給使用者。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
     > [!TIP]
     > 若要深入了解標記語言，請參閱 Wikipedia 上的這篇[文章](https://en.wikipedia.org/wiki/Markup_language)。
 
-1. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings] (進階 Exchange Activesync 存取設定) 窗格中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。
+12. 依據接下來的兩個步驟所述，在 [Advanced Exchange Active Sync access settings] (進階 Exchange Activesync 存取設定) 窗格中，為從不是由 Intune 管理的裝置存取設定全域預設規則及平台層級規則。 若要移至進階設定窗格，請在 [Exchange 存取 - Exchange 內部部署存取] 檢視中，選取 [Exchange ActiveSync - 內部部署連接器]。
 
-1. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
+13. 對於不受條件式存取影響的裝置或其他規則，您可以選擇允許它們存取 Exchange 或加以封鎖。
 
    - 當您設定成允許存取時，所有裝置即可立即存取 Exchange 內部部署。  若**包含的群組**中之使用者的裝置稍後被評估為不符合合規性政策，或未向 Intune 註冊，將會予以封鎖。
    - 當您設定為禁止存取時，會立即禁止所有裝置存取 Exchange 內部部署。  **包含的群組**中之使用者的裝置若已向 Intune 註冊，並經評估為相容，即可存取 Exchange 內部部署。 因為非執行 Samsung Knox Standard 的 Android 裝置不支援此設定，所以一律會被封鎖。
 
-1. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受控的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且相容的裝置進行存取。 選擇 [確定]，以儲存設定。
+14. 從 [裝置平台例外狀況] 下選擇 [新增]，以指定平台。 若將 [未受控的裝置存取] 設定設定為 [封鎖]，即使已在平台例外狀況中指定要禁止的平台，仍會允許已經註冊且相容的裝置進行存取。 選擇 [確定]，以儲存設定。
 
-1. 在 [內部部署] 窗格中，按一下 [儲存]，以儲存條件式存取原則。
+15. 在 [內部部署] 窗格中，按一下 [儲存]，以儲存條件式存取原則。
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>在 Intune 中建立 Azure AD 條件式存取原則
 
-從 Intune 1704 版開始，管理員可以從 Intune Azure 入口網站建立 Azure AD 條件式存取原則，如此您就不需要在 Azure 和 Intune 工作負載之間切換。
+條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
 
 > [!IMPORTANT]
 > 您必須要有 Azure AD Premium 授權，才能從 Intune Azure 入口網站建立 Azure AD 條件式存取原則。
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>建立 Azure AD條件式存取原則
+### <a name="to-create-a-conditional-access-policy"></a>若要建立條件式存取原則
 
-1. 在 [Intune 儀表板] 中，選擇 [條件式存取]。
+1. 在 [Intune 儀表板] 中，選取 [條件式存取]。
 
-2. 在 [原則] 窗格中，選擇 [新增原則] 來建立新的 Azure AD 條件式存取原則。
+2. 在 [原則] 窗格中，選取 [新增原則] 來建立新的 Azure AD 條件式存取原則。
 
 ## <a name="see-also"></a>請參閱
 

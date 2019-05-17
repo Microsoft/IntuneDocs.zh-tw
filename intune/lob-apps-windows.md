@@ -1,15 +1,16 @@
 ---
 title: 將 Windows 企業營運應用程式新增至 Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 了解如何使用 Microsoft Intune 來新增 Windows 企業營運 (LOB) 應用程式。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238773"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764716"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -62,7 +63,7 @@ ms.locfileid: "57238773"
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
     - **資訊 URL**：(選擇性) 輸入包含應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **隱私權 URL**：(選擇性) 輸入包含應用程式隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **命令列引數**：(選擇性) 輸入任何您想要在 .msi 檔案執行時套用的命令列引數。 **/q** 就是一個例子。
+    - **命令列引數**：(選擇性) 輸入任何您想要在 .msi 檔案執行時套用的命令列引數。  **/q** 就是一個例子。 因為系統會自動使用 msiexec 命令或引數，例如 **/i** 或 **/x**，所以請不藥包含在內。 如需詳細資訊，請參閱[命令列選項](https://docs.microsoft.com/windows/desktop/Msi/command-line-options)。 
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
     - **附註**：輸入要與此應用程式建立關聯的任何附註。
@@ -92,4 +93,4 @@ ms.locfileid: "57238773"
 
 - 深入了解您可用來監視應用程式屬性和指派的方式。 請參閱[如何監視應用程式資訊和指派](apps-monitor.md)。
 
-- 深入了解您應用程式在 Intune 中的內容。 請參閱[裝置和應用程式生命週期的概觀](introduction-device-app-lifecycles.md)。
+- 深入了解您應用程式在 Intune 中的內容。 請參閱 [Microsoft Intune 中的應用程式生命週期概觀](app-lifecycle.md)。

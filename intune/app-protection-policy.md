@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836348"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569411"
 ---
 # <a name="what-are-app-protection-policies"></a>什麼是應用程式保護原則？
 
@@ -50,7 +51,7 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 > [!IMPORTANT]
 > 您可以為連接至 Office 365 服務的 Office 行動應用程式建立行動應用程式管理原則。 您也可以透過建立適用於 iOS 版 Outlook 以及已啟用混合式新式驗證的 Android 的 Intune 應用程式保護原則，來保護對 Exchange 內部部署信箱的存取。 開始使用此功能之前，請確定您符合 [iOS 版和 Android 版 Outlook 的需求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 連線到內部部署 Exchange 或 SharePoint 服務的其他應用程式不支援應用程式保護原則。
 
-**使用應用程式保護原則的重要優點包括：**
+**使用應用程式保護原則的重要優點包括**：
 
 -   在應用程式層級保護公司資料。 因為行動應用程式管理不需要裝置管理，您可以同時在受控與非受控的裝置上保護公司資料。 管理的重心是使用者身分識別，不需要管理裝置。
 
@@ -69,8 +70,8 @@ Microsoft Intune 應用程式保護原則可協助保護公司資料，避免資
 ### <a name="supported-platforms-for-app-protection-policies"></a>支援應用程式保護原則的平台
 Intune 應用程式保護原則平台支援與 Office 行動應用程式平台支援，在針對 Android 和 iOS 上是一致的。 如需詳細資料，請參閱 [Office 系統需求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的**行動應用程式**一節。
 
-目前不支援 Windows 裝置。 不過，您可以使用 Windows 資訊保護，其能提供類似的功能。 如需詳細資訊，請參閱[使用 Windows 資訊保護 (WIP) 保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
-
+> [!IMPORTANT]
+> 裝置上需要有 Intune 公司入口網站，才能在 Android 上接收 [應用程式保護原則]。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](end-user-mam-apps-android.md#access-apps)。
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>應用程式保護原則如何保護應用程式資料
 

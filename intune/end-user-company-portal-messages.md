@@ -1,6 +1,6 @@
 ---
 title: 使用者可能在裝置上看見的公司入口網站訊息
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解使用者可能會在公司入口網站中看到的不同訊息。
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233148"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569125"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>幫助使用者了解公司入口網站應用程式訊息
 
@@ -110,6 +111,34 @@ ms.locfileid: "57233148"
 ### <a name="what-it-means"></a>代表的意義
 
 將公司入口網站新增至 Windows 資訊保護 (WIP) 應用程式防護原則中**允許的應用程式**或**豁免應用程式**清單。 如需詳細資訊，請參閱[使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則](windows-information-protection-policy-create.md)。
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>核准您的 iOS 裝置上的 iOS 公司應用程式 (企業營運應用程式) 
+
+### <a name="where-it-appears"></a>出現的位置
+您的組織所開發，但 App Store 中未提供的 iOS 應用程式預設不受您的裝置信任。 當您使用公司入口網站安裝這類應用程式並啟動應用程式時，將會顯示下列訊息：
+
+![iOS 應用程式訊息 - 不受信任的企業開發人員](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>代表的意義
+此訊息表示您需要修改 iOS 裝置設定，以核准並安裝您公司針對 iOS 裝置所開發的應用程式。
+
+當您使用公司入口網站安裝這類應用程式並啟動應用程式時，請在下載應用程式後，依照下列步驟來核准該應用程式：
+
+1. 在啟動已安裝的公司應用程式 (企業營運應用程式) 時，您將會看到「不受信任的企業開發人員」訊息。 <br>
+   按下 [取消]。
+2. 瀏覽至 [設定] > [一般] > [裝置管理]。
+
+   ![iOS 裝置 UI - 裝置管理](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. 選取 [管理設定檔] > [企業應用程式]。
+4. 選取開發人員名稱。
+5. 按下 [信任 _開發人員名稱_]。
+6. 在應用程式安裝快顯訊息上選取 [信任] 以確認應用程式。
+
+   ![iOS 裝置 UI - 信任應用程式訊息](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    您應該能夠啟動並使用公司應用程式。
+
 
 ### <a name="see-also"></a>請參閱
 [告知使用者有關使用 Intune 的事項](end-user-educate.md)

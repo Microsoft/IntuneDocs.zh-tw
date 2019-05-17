@@ -1,6 +1,6 @@
 ---
 title: Windows 10 的大量註冊
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 建立 Microsoft Intune 的大量註冊套件
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236801"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568163"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236801"
 
 身為系統管理員，您可以將大量的新 Windows 裝置加入 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶大量註冊裝置，請使用 Windows Configuration Designer (WCD) 應用程式來建立佈建套件。 將佈建套件套用到公司擁有的裝置，就會將裝置加入您的 Azure AD 租用戶，並加以註冊以供 Intune 管理。 套用套件之後，Azure AD 使用者即可登入。
 
-Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的 Intune 原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
+Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的 Intune 原則和必要應用程式。 使用 Windows 大量註冊在 Intune 中註冊的 Windows 裝置，可以使用公司入口網站應用程式安裝可用的應用程式。 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows 裝置大量註冊的先決條件
 

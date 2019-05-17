@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846820"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570542"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-透過使用 [淘汰] 或 [抹除] 動作，您可以從 Intune 移除不再需要、重新設定用途或遺失的裝置。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的個人擁有裝置發出遠端命令。
+透過使用 [淘汰] 或 [抹除] 動作，您可以從 Intune 移除不再需要、重新設定用途或遺失的裝置。 使用者也可以從 Intune 公司入口網站，對使用 Intune 註冊的裝置發出遠端命令。
 
 > [!NOTE]
 > 在您從 Azure Active Directory (Azure AD) 移除使用者之前，請對與該使用者建立關聯的所有裝置使用 [抹除] 或 [淘汰] 動作。 如果您從 Azure AD 移除有受控裝置的使用者，Intune 不會再抹除或淘汰這些裝置。
@@ -128,9 +129,9 @@ ms.locfileid: "55846820"
 
 ### <a name="windows"></a>Windows
 
-|資料類型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 及 Windows Phone 8|Windows 10|
+|資料類型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 及 Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune 安裝的公司應用程式和相關資料|會撤銷受 EFS 保護之檔案的索引鍵。 使用者無法開啟檔案。|不會移除公司應用程式。|原本透過公司入口網站安裝的應用程式將會解除安裝。 將會移除公司應用程式資料。|已將應用程式解除安裝。 已移除側載金鑰。<br>針對 Windows 10 版本 1703 (Creators Update) 和更新版本，不會移除 Office 365 ProPlus 應用程式。|
+|Intune 安裝的公司應用程式和相關資料|會撤銷受 EFS 保護之檔案的索引鍵。 使用者無法開啟檔案。|不會移除公司應用程式。|原本透過公司入口網站安裝的應用程式將會解除安裝。 將會移除公司應用程式資料。|已將應用程式解除安裝。 已移除側載金鑰。<br>針對 Windows 10 版本 1703 (Creators Update) 和更新版本，不會移除 Office 365 ProPlus 應用程式。 Intune 管理延伸模組所安裝的 Win32 應用程式不會在未註冊裝置上解除安裝。 系統管理員可以利用指派排除，來確保不會對 BYOD 裝置提供 Win32 應用程式。|
 |設定|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|不支援。|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|憑證會予以移除及撤銷。|不支援。|憑證會予以移除及撤銷。|
@@ -166,7 +167,7 @@ ms.locfileid: "55846820"
 
 由於通訊問題或遺失裝置，您可能需要從 Azure AD 刪除裝置。 您可以使用 [刪除] 動作來移除 Azure 入口網站中已知無法連線且不太可能與 Azure 再次通訊的裝置記錄。 [刪除] 動作不會從管理移除裝置。
 
-1.  使用您的管理員認證登入 [Azure 入口網站中的 Azure Active Directory](http://aka.ms/accessaad)。 您也可以登入 [Office 365 入口網站](https://portal.office.com)。 從功能表中，選取 [系統管理中心] > [Azure AD]。
+1.  使用您的管理員認證登入 [Azure 入口網站中的 Azure Active Directory](http://aka.ms/accessaad)。 您也可以登入至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 從功能表中，選取 [系統管理中心] > [Azure AD]。
 2.  如果您沒有 Azure 訂用帳戶，請建立帳戶。 如果您有付費帳戶，應該不需要信用卡或付款 (請選取 [註冊免費的 Azure Active Directory]  訂閱連結)。
 3.  選取 [Azure Active Directory]，然後選取您的組織。
 4.  選取 [使用者]  索引標籤。

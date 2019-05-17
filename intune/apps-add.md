@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dfd2442d737b91d5722f26313ac1d0200a341a7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 58fea39d7461f4ce6b1838b0df78434f6bc53372
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568371"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571785"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -143,6 +143,9 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 
 - 所有應用程式安裝檔案必須位於相同的資料夾。
 - 您上傳的任何檔案其大小上限都是 8 GB。
+
+  > [!NOTE]
+  > Windows 企業營運 (LOB) 應用程式對每個應用程式有 8 GB 的大小上限。 iOS LOB 應用程式對每個應用程式有 4 GB 的大小上限。
 
 ## <a name="create-and-edit-categories-for-apps"></a>建立及編輯應用程式的類別
 

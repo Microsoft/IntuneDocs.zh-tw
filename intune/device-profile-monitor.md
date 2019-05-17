@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186591"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391716"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視裝置設定檔
 
@@ -64,9 +66,9 @@ Intune 在 Azure 入口網站中包含了一些功能，以協助監視及管理
     關閉 [使用者狀態] 詳細資料。
 
 5. 回到 [設定檔] 清單中，選取一個特定的設定檔。 您也可以變更現有的屬性：
-  - **內容**：變更名稱或更新現有設定。
+  - **屬性**：變更名稱或更新現有設定。
   - **指派**：包含或排除應該套用原則的裝置。 選擇 [選取的群組] 來選擇特定群組。
-  - **裝置狀態**：列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 您可以選取特定的裝置以取得更多詳細資料，包括安裝的應用程式。
+  - **裝置狀態**：其中列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 您可以選取特定的裝置以取得更多詳細資料，包括安裝的應用程式。
   - **使用者狀態**：列出受這個設定檔影響的使用者名稱及裝置，以及設定檔是否已成功部署。 您可以選取特定的使用者以取得更多詳細資料。
   - **每個設定的狀態**：藉由顯示設定檔內的個別設定來篩選輸出，並顯示是否已成功套用設定。
 
@@ -80,6 +82,6 @@ Intune 在 Azure 入口網站中包含了一些功能，以協助監視及管理
 
 既然您已經知道發生衝突的設定，以及包含該設定的原則，應該可以輕鬆地解決該衝突。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 [指派使用者和裝置設定檔](device-profile-assign.md)  
 [裝置設定檔的常見問題和解決方法](device-profile-troubleshoot.md)

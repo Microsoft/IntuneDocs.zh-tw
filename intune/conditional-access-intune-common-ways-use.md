@@ -1,26 +1,28 @@
 ---
-title: 條件式存取案例 | Microsoft Intune
+title: 條件式存取案例
+titleSuffix: Microsoft Intune
 description: 了解裝置型和應用程式型條件式存取平常如何使用 Intune 條件式存取。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842757"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569372"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>常見的 Intune 條件式存取使用方式為何？
 
@@ -31,7 +33,7 @@ Intune 條件式存取有兩種類型：裝置型條件式存取和應用程式�
 下列資訊可協助您了解如何使用 Intune 行動裝置性功能和 Intune 行動應用程式管理 (MAM) 功能。 
 
 > [!NOTE]
-> 條件式存取是 Azure Active Directory Premium 授權中包含的 Azure Active Directory 功能。 Intune 透過新增行動裝置合規姓與行動應用程式管理到解決方案以加強其功能。
+> 條件式存取是 Azure Active Directory Premium 授權中包含的 Azure Active Directory 功能。 Intune 透過新增行動裝置合規姓與行動應用程式管理到解決方案以加強其功能。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
 
 ## <a name="device-based-conditional-access"></a>裝置型條件式存取
 
@@ -71,7 +73,7 @@ Intune 提供裝置合規性政策功能來評估裝置的合規性狀態。 合
 
 Intune Exchange Connector 會提取 Exchange Server 中現有的所有 Exchange Active Sync (EAS) 記錄，使 Intune 能夠取得這些 EAS 記錄，並將它們對應至 Intune 裝置記錄。 這些記錄是已註冊並且由 Intune 所辨識的裝置。 此程序會允許或封鎖電子郵件存取。
 
-如果 EAS 記錄是全新的，而 Intune 並不知道它，則 Intune 會發出封鎖存取電子郵件的 Cmdlet。 以下是關於此程序如何運作的更詳細說明：
+如果 EAS 記錄是全新的，而 Intune 並不知道它，則 Intune 會發出封鎖存取電子郵件的 Cmdlet (唸成 "command-let")。 以下是關於此程序如何運作的更詳細說明：
 
 ![透過 CA 流程圖的 Exchange 內部部署](./media/ca-intune-common-ways-1.png)
 
@@ -91,7 +93,7 @@ Intune Exchange Connector 會提取 Exchange Server 中現有的所有 Exchange 
 
 8.  Azure AD 裝置註冊會儲存裝置狀態資訊。
 
-9.  如果使用者符合條件式存取原則，Intune 會透過 Intune Exchange Connector 發出 Cmdlet，允許信箱進行同步。
+9.  如果使用者符合條件式存取原則，Intune 會透過 Intune Exchange Connector 發出 Cmdlet，允許信箱進行同步處理。
 
 10. Exchange Server 會傳送通知給 EAS 用戶端，讓使用者可以存取電子郵件。
 
@@ -101,10 +103,10 @@ Intune 會評估及管理裝置狀態。
 
 #### <a name="whats-the-exchange-server-role"></a>Exchange Server 扮演何種角色？
 
-Exchange Server 提供 API 和基礎結構，以將裝置移到它的隔離。
+Exchange Server 提供 API 和基礎結構，以便將裝置移到隔離。
 
 > [!IMPORTANT]
-> 請注意，裝置使用者必須具備合規性設定檔指派，該裝置才能接受合規性評估。 若使用者未獲部署合規性政策，便會將其裝視為符合規範，而且會對其套用沒有存取權限的限制。
+> 請記住，裝置使用者必須獲指派合規性設定檔，該裝置才能接受合規性評估。 若使用者未獲部署合規性政策，便會將其裝視為符合規範，而且會對其套用沒有存取權限的限制。
 
 ### <a name="conditional-access-based-on-network-access-control"></a>以網路存取控制為依據的條件式存取
 

@@ -1,15 +1,16 @@
 ---
 title: 為受管理的 Android 裝置新增應用程式設定原則
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 在 Microsoft Intune 中使用應用程式設定原則，以提供使用者執行 Android 工作設定檔應用程式時的設定。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840411"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567422"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>為受管理的 Android 裝置新增應用程式設定原則
 
@@ -44,13 +45,13 @@ ms.locfileid: "55840411"
 6. 為 [平台] 選取 [Android]。
 7. 選取 [相關聯的應用程式] 選擇您要定義應用程式設定原則的應用程式。 從 Android 工作設定檔應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
 8. 選取 [權限]。 您可以透過下列方式設定組態：
-    - [設定設計工具](#Use-the-configuration-designer)
-    - [JSON 編輯器](#Enter-the-JSON-editor)
+    - [設定設計工具](#use-the-configuration-designer)
+    - [JSON 編輯器](#enter-the-json-editor)
 9. 選擇 [確定]，然後選擇 [新增]。
 
 ## <a name="use-the-configuration-designer"></a>使用設定設計工具
 
-您可以針對支援設定的 Android 應用程式使用設定設計工具。 設定將會套用在已於 Intune 中註冊的裝置上。 設計工具可讓您針對應用程式未公開的設定，設定特定的設定值。
+當應用程式已設計為支援組態設定時，您可以針對 Android 應用程式使用設定設計工具。 設定將會套用在已於 Intune 中註冊的裝置上。 設計工具可讓您針對應用程式未公開的設定，設定特定的設定值。
 
 請選取 [新增] 來選取您要為應用程式指定的組態設定清單。  
 對於設定中的每個金鑰和值，請設定：

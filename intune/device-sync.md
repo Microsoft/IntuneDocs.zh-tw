@@ -5,22 +5,23 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846123"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388103"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
@@ -46,6 +47,8 @@ ms.locfileid: "55846123"
 5. 選取 [是] 確認。
 
 若要查看同步動作的狀態，請選擇 [裝置] > [裝置動作]。
+
+您可以在[重新整理週期數](device-profiles.md)中找到標準 Intune 原則簽入頻率。
 
 ## <a name="retryable-error-codes"></a>可重試的錯誤碼
 

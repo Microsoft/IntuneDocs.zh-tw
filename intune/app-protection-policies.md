@@ -1,27 +1,29 @@
 ---
 title: 建立及部署應用程式保護原則
 titleSuffix: Microsoft Intune
-description: 了解如何建立及指派 Microsoft Intune 應用程式防護原則。
+description: 本主題描述如何建立及指派 Microsoft Intune 應用程式保護原則 (簡稱 APP)。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297361"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569788"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -52,7 +54,7 @@ ms.locfileid: "54297361"
 6. 在 [新增原則] 刀鋒視窗上，選取 [設定必要設定] 以開啟 [設定]。
 
    原則設定有三個類別：
-   - **資料重新配置** - 此群組包含資料外洩防護 (DLP) 控制項，例如剪下、複製、貼上以及另存新檔的限制。 這些設定會決定使用者如何與應用程式中的資料互動。
+   - **資料保護** - 此群組包含資料遺失防護 (DLP) 控制項，例如剪下、複製、貼上，以及另存新檔限制。 這些設定會決定使用者如何與應用程式中的資料互動。
    - **存取需求** - 此群組包含每個應用程式的 PIN 選項，用於決定終端使用者如何在工作環境中存取應用程式。  
    - **條件式啟動** - 此群組包含最低作業系統設定、越獄和 Root 裝置偵測以及離線寬限期等設定。
 

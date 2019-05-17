@@ -5,181 +5,164 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/04/2019
-ms.topic: article
+ms.date: 02/12/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
-ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 05fd362ff6f068669b85b9b78cb1dfd7d3c8011f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737480"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57397218"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-「Windows 即服務」是更新 Windows 10 裝置的方式。 使用 Windows 10 時，新的「功能更新」和「品質更新」會包含所有先前更新內容。 只要您已安裝最新更新，即可確保您的 Windows 10 裝置處於最新狀態。 不同於舊版 Windows，您現在必須安裝整個更新而不是部分更新。
+使用 Intune 定義可指定 Windows 即服務如何及何時更新您 Windows 10 裝置的更新通道。 更新通道是您指派給裝置群組的原則。 藉由使用更新響鈴，您可以建立可反映您業務需求的更新策略。 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
-藉由使用「商務用 Windows Update」，您將可以簡化更新管理體驗。 您無須針對多組裝置核准個別的更新。 您可以藉由設定更新首度發行策略，對您的環境進行風險管理。 而 Windows Update 則會確保在適當的時間安裝更新。 Microsoft Intune 可讓您在裝置上設定更新設定，並可讓您將更新安裝延後。 Intune 不會儲存更新，只會儲存更新原則指派。 裝置會直接存取 Windows Update 以取得更新。 使用 Intune 來設定及管理 **Windows 10 更新通道**。 更新通道是一組設定，用來設定安裝 Windows 10 更新的時機和方式。 例如，您可以進行下列設定：
+使用 Windows 10 時，新的「功能更新」和「品質更新」會包含所有先前更新內容。 只要您已安裝最新更新，即可確保您的 Windows 10 裝置處於最新狀態。 不同於舊版 Windows，您現在必須安裝整個更新而不是部分更新。
 
-- **Windows 10 維護通道**：選擇您要讓裝置群組接收更新的維護通道。 下列是可用的通道： 
-  - 半年通道
-  - 半年通道 (已設定目標)
-  - Windows 測試人員 - 快
-  - Windows 測試人員 - 慢
-  - 發行 Windows 測試人員 
-      
-  如需有關可用維護通道的詳細資料，請參閱 [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)。
-- **延遲設定**：設定更新延遲設定，以延遲裝置群組的更新安裝。 請使用這些設定來分階段進行更新首度發行，以便全程檢閱進度。
-- **暫停**︰如果更新推出期間發生問題，您可以延後安裝更新。 
-- **維護時間範圍**：設定可以安裝更新的時間。
-- **更新類型**：選擇要安裝的更新類型。 例如，高品質更新、功能更新或驅動程式。
-- **安裝行為**：設定安裝更新的方式。 例如，裝置會在安裝後自動重新啟動嗎？
-- **對等下載**：您選擇要設定對等下載。 如有設定，當裝置完成下載更新時，其他裝置可以從該裝置下載更新。 此設定可加速下載程序。
 
-建立更新響鈴之後，將它們指派給裝置群組。 藉由使用更新響鈴，您可以建立可反映您業務需求的更新策略。 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
+藉由使用「商務用 Windows Update」，您將可以簡化更新管理體驗。 您無須針對多組裝置核准個別的更新。 您可以藉由設定更新首度發行策略，對您的環境進行風險管理。 Intune 可讓您在裝置上[設定更新設定](windows-update-settings.md)，並可讓您將更新安裝延後。 Intune 不會儲存更新，只會儲存更新原則指派。 裝置會直接存取 Windows Update 以取得更新。 在安裝 Windows 10 更新時設定的這組設定稱為 *Windows 10 更新通道*。
 
-## <a name="before-you-start"></a>開始之前
+Windows 10 更新通道支援[範圍標籤](scope-tags.md)。 您可以使用範圍標籤搭配更新通道，協助您篩選及管理您所使用的組態集合。
 
-- 若要更新 Windows 10 電腦，這些電腦必須至少執行 Windows 10 專業版並已安裝 Windows 年度更新。
+## <a name="prerequisites"></a>必要條件  
 
+若要在 Intune 中使用適用於 Windows 10 裝置的 Windows 更新，必須符合下列必要條件。  
+
+- Windows 10 電腦必須至少執行 Windows 10 專業版並已安裝 Windows 年度更新或更新版本 (1607 版或更新版本)
 - Windows Update 支援下列 Windows 10 版本：
   - Windows 10
   - Windows 10 Team (適用於 Surface Hub 裝置)
-  - [Windows Holographic for Business](#windows-holographic-for-business-support)
+  - Windows Holographic for Business  
 
+    Windows Holographic for Business 支援 Windows 更新的設定子集，包括：
+    - **自動更新行為**
+    - **Microsoft 產品更新**
+    - **維護通道**：支援 [半年通道] 和 [半年通道 (已設定目標)] 選項  
+
+    如需詳細資訊，請參閱[管理 Windows 全像攝影版](windows-holographic-for-business.md)  
+  
   不支援執行「Windows 10 行動裝置版」的裝置。
 
-- 在 Windows 裝置上，[意見與診斷]  >  [診斷與使用方式資料] 必須至少設定為 [基本]。
+- 在 Windows 裝置上，[意見反應與診斷] > [診斷與使用方式資料] 必須設定為 [基本]、[增強] 或 [完整]。  
 
-    ![診斷與使用方式資料的 Windows 設定](./media/telemetry-basic.png)
+  您可以手動設定此設定，或使用 Intune 裝置限制設定檔 (用於 Windows 10 和更新版本)。 若要使用裝置限制設定檔，請至少將 [一般] > [提交診斷資料] 的設定設為 [基本]。 如需有關裝置設定檔的詳細資訊，請參閱[設定裝置限制設定](device-restrictions-configure.md)。  
 
-    您可以手動設定此設定，或使用適用於 Windows 10 和更新版本的 Intune 設定檔 ([裝置限制] > [報告和遙測] > 至少將 [共用使用方式資料] 設定為 [基本])。 如需有關裝置設定檔的詳細資訊，請參閱[設定裝置限制設定](device-restrictions-configure.md)。
-
-- Azure 傳統入口網站在裝置組態設定檔中也有一些其他 Windows 10 更新設定。 當您移轉至 Azure 入口網站時，如果已設定這當中的任何設定，強烈建議您：
-
-  1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許發行前版本功能] 設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新通道時，可以設定其他設定，以及其他 Windows 10 更新設定。
-
-   > [!NOTE]
-   > 移轉之後，在傳統入口網站中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，系統會套用這些設定。 如果您移轉這當中的任何設定，並從 Azure 入口網站中編輯所移轉的原則，系統就會將這些設定從原則中移除。
-
-  2. 刪除傳統入口網站中的更新設定。 移轉至 Azure 入口網站並將相同設定新增至更新通道之後，請在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，當相同的設定具有不同的設定值時，就會發生衝突。 您很難得知此狀況，因為在傳統入口網站中設定的設定不會在 Azure 入口網站中。
+- 如果您使用 Azure 傳統入口網站，請[將您的設定移轉到 Azure 入口網站](#migrate-update-settings-to-the-azure-portal)。  
 
 ## <a name="create-and-assign-update-rings"></a>建立及指派更新通道
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [軟體更新] > [Windows 10 更新通道] > 建立。
-3. 輸入名稱、描述 (選擇性)，然後選擇 [設定]。
-4. 在 [設定] 中，輸入下列資訊：  
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
+3. 選取 [軟體更新] > [Windows 10 更新通道] > 建立。
+4. 輸入名稱、描述 (選擇性)，然後選擇 [設定]。
+5. 在 [設定] 中，設定符合您業務需求的設定。 如需可用設定的相關資訊，請參閱 [Windows 更新設定](windows-update-settings.md)。  
+6. 完成時，選取 [確定]。 在 [建立更新通道] 中，選取 [建立]。 新的更新響鈴會隨即顯示在更新響鈴清單中。
+7. 若要指派通道，請在更新通道清單中選取通道，然後在 [\<通道名稱>] 索引標籤上，選擇 [指派]。
+8. 使用 [包含] 和 [排除] 索引標籤定義要獲指派 [通道] 的群組，然後選取 [儲存] 以完成指派。
 
-   **更新設定**  
-   - **維護通道**：設定裝置接收 Windows 更新的通道。
-   - **Microsoft 產品更新**：選擇要從 Microsoft Update 掃描應用程式更新。
-   - **Windows 驅動程式**：選擇要在更新期間排除 Windows Update 驅動程式。
-   - **品質更新延遲期間 (天)**：輸入品質更新的延遲天數。 最多可以延遲接收這些「品質更新」至其發行後 30 天。
+## <a name="manage-your-windows-10-update-rings"></a>管理 Windows 10 更新通道
+在入口網站中，您可以選取 Windows 10 更新通道以開啟其 [概觀] 窗格。 您可以從此窗格檢視通道指派狀態，並採取其他動作來管理通道。 
+### <a name="to-view-an-updates-rings-overview-pane"></a>若要檢視更新通道的 [概觀] 窗格： 
+1. 登入 Azure 入口網站。
+2. 瀏覽至 [Intune] > [軟體更新] > [Windows 10 更新通道]。
+3. 選取您要檢視或管理的更新通道。  
 
-     「品質更新」通常會修正和改善現有的 Windows 功能，而且會在每個月的第二個星期二發佈。 透過商務用 Windows Update 的「品質更新」只會接收這些更新 (「搶鮮版」)，但 Microsoft 可能會隨時發行其他更新。 您可以定義在 Windows Update 提供「品質更新」之後，是否要延遲接收「品質更新」，以及要延遲多久。 如需詳細資訊，請參閱[使用商務用 Windows Update 來部署更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)。
+除了檢視指派狀態之外，您還可以從 [概觀] 窗格的頂端選取下列動作來管理更新通道：  
+- [刪除](#delete)  
+- [暫停](#pause)  
+- [繼續](#resume)  
+- [延長](#extend)  
+- [解除安裝](#uninstall)  
 
-   - **功能更新延遲期間 (天)**：輸入功能更新的延遲天數。 最多可以延遲接收「功能更新」至其發行後 180 天。
+![可執行的動作](./media/windows-update-for-business-configure/overview-actions.png)
 
-     「功能更新」通常是 Windows 的新功能。 在您設定 [維護通道] 設定之後，便可以定義在 Windows Update 提供「功能更新」之後，是否要延遲接收「功能更新」，以及要延遲多久。
+### <a name="delete"></a>刪除  
+選取 [刪除] 可停止強制執行所選 Windows 10 更新通道的設定。 刪除通道會從 Intune 移除其設定，讓 Intune 不再適用，並強制執行這些設定。  
 
-     例如：**如果 [維護通道] 設定為 [半年通道 (已設定目標)]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 裝置要等到 2 月 (30 天後) 才會接收更新。
+從 Intune 刪除通道不會修改已獲指派更新通道之裝置上的設定。  但是裝置會保留其目前的設定。 這是因為裝置不會維護先前設定的歷史記錄，而且裝置可能會從仍然作用中的其他更新通道收到設定。  
 
-     **如果 [維護通道] 設定為 [半年通道]，且延遲期間是 30 天**：假設「功能更新 X」於二月在 Windows Update 上以「半年通道 (已設定目標)」公開推出。 四個月後 (4 月)，「功能更新 X」才會發行到半年通道。 裝置會在此「半年通道」發行的 30 天後收到「功能更新」，而在 5 月進行更新。  
+#### <a name="to-delete-a-ring"></a>若要刪除通道  
+1. 檢視更新通道的 [概觀] 頁面時，選取 [刪除]。  
+2. 選取 [確定]。  
 
-   **使用者體驗設定**
-   
-   - **自動更新行為**：選擇要如何安裝自動更新、何時重新啟動或重新開機。 如需詳細資訊，請參閱 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)。
+### <a name="pause"></a>暫停  
+選取 [暫停] 可以從您暫停通道起，防止獲指派的裝置接收功能更新或品質更新最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。 如果您繼續使用已暫停的更新通道，然後再次暫停該通道，則暫停期間會重設為 35 天。  
 
-     [重設為預設] 設定會在執行「2018 年 10 月更新」或更新版本的 Windows 10 電腦上還原原始的自動更新設定。  
+ #### <a name="to-pause-a-ring"></a>若要暫停通道  
+1. 檢視更新通道的 [概觀] 頁面時，選取 [暫停]。  
+2. 選取 [功能] 或 [品質] 可暫停該類型的更新，然後選取 [確定]。  
+3. 暫停一個更新類型之後，您可以再次選取 [暫停] 以暫停其他更新類型。  
 
-     - **自動行為頻率**：如果您針對更新行為選取 [在排定的時間自動安裝並重新啟動]，就會顯示此設定。 請使用此設定來排定何時安裝更新，包括週、日及時間。
+暫停某個更新類型時，該通道的 [概觀] 窗格會顯示在多少天之後，該更新類型才會繼續。
 
-   - **重新啟動檢查**：預設為啟用。 當您重新啟動裝置時，會進行一些檢查，包括檢查作用中的使用者、電池電量、執行中的遊戲等。 若要在重新啟動裝置時略過這些檢查，請選取 [略過]。
+> [!IMPORTANT]  
+> 當您發出暫停命令時，裝置會在下次簽入服務時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
 
-   - **防止使用者暫停 Windows 更新**：預設為允許。 使用此設定來封鎖或允許使用者從其電腦的 [設定] 暫停更新安裝。 
-      
-   - **傳遞最佳化下載模式**：[傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為 [未設定] 來移除這些設定，但無法修改這些設定。 若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。 
+### <a name="resume"></a>繼續  
+當更新通道遭到暫停時，您可以選取 [繼續]，將該通道的功能與品質更新還原為作用中的作業。 繼續某個更新通道之後，您可以再次暫停該通道。  
 
-5. 完成時，選取 [確定]。 在 [建立更新通道] 中，選取 [建立]。
+#### <a name="to-resume-a-ring"></a>若要繼續通道  
+1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [繼續]。  
+2. 從可用的選項中選取，以繼續執行 [功能] 或 [品質] 更新，然後選取 [確定]。  
+3. 繼續一個更新類型之後，您可以再次選取 [繼續] 以繼續其他更新類型。  
 
-新的更新響鈴會隨即顯示在更新響鈴清單中。
+### <a name="extend"></a>擴充  
+當更新通道遭到暫停時，您可以選取 [延長]，將該更新通道之功能與品質更新的暫停期間重設為 35 天。  
 
-1. 若要指派更新響鈴，在更新響鈴清單中，選取響鈴，在 [<響鈴名稱>] 索引標籤中選擇 [指派]。
-2. 在下一個索引標籤中，選擇 [Select groups to include] (選取要包含的群組)，然後選擇要指派此響鈴的群組。
-3. 完成時，選擇 [選取] 來完成這項指派。
+#### <a name="to-extend-the-pause-period-for-a-ring"></a>若要延長通道的暫停期間  
+1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [延長]。 
+2. 從可用的選項中選取，以繼續執行 [功能] 或 [品質] 更新，然後選取 [確定]。  
+3. 延長一個更新類型的暫停期間之後，您可以再次選取 [延長] 來延長其他更新類型。  
 
-## <a name="update-compliance-reporting"></a>更新合規性報告
-您可以在 Intune 中檢視更新合規性，或使用稱為「更新合規性」的免費解決方案。
+### <a name="uninstall"></a>解除安裝  
+Intune 系統管理員可以使用 [解除安裝]，針對作用中或已暫停的更新通道，解除安裝 (回復) 最新的*功能*更新或最新的*品質*更新。 解除安裝一個類型之後，您可以再解除安裝其他類型。 Intune 不支援或管理使用者解除安裝更新的能力。  
 
-### <a name="review-update-compliance-in-intune"></a>在 Intune 中檢視更新合規性 
-<!-- 1352223 -->檢閱原則報告，以檢視您已設定之 Windows 10 更新通道的部署狀態。
+若要成功解除安裝：  
+- 裝置必須執行 Windows 10 的 2018 年 4 月更新 (1803 版) 或更新版本。  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [軟體更新] > [概觀]。 您可以看到所指派任何更新通道的狀態一般資訊。
-3. 請開啟下列其中一個報表：
+裝置必須已經安裝最新的更新。 更新是累積的，因此安裝最新更新的裝置將有最新的功能與品質更新。 例如，當您使用此選項時，如果您在 Windows 10 電腦上發現重大問題，可以回復到上一個更新。  
 
-   **針對所有部署通道**：  
-   1. 在 [軟體更新] 上 > [Windows 10 更新通道]
-   2. 在 [監視] 區段，選擇 [依更新通道別部署狀態]。
+使用 [解除安裝] 時，請考量下列各項：  
+- 解除安裝功能或品質更新只適用於裝置所在的維護通道。  
 
-   **針對特定部署通道**：  
-   1. 在 [軟體更新] > [Windows 10 更新通道] 中，選擇要檢閱的部署通道。
-   2. 在 [監視] 區段中，從下列報表選擇，以檢視更新通道的更多詳細資訊：
-      - **裝置狀態**
-      - **使用者狀態**
+- 為功能或品質更新使用解除安裝將會觸發一個原則，以還原 Windows 10 電腦上的上一個更新。  
 
-### <a name="review-update-compliance-using-oms"></a>使用 OMS 檢視更新合規性
-您可以使用稱為「更新合規性」的免費解決方案來監視 Windows 10 更新的首度發行。 如需詳細資訊，請參閱[使用Update Compliance 來監視 Windows Updates](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 當您使用此解決方案時，可以將商業識別碼部署至任何您用 Intune 管理、且要報告更新合規性的 Windows 10 裝置。
+- 在 Windows 10 裝置上成功回復品質更新之後，使用者會繼續在 [Windows 設定] > [更新] > [更新記錄] 中看到列出的更新。  
 
-在 Intune 中，您可以使用自訂原則的 OMA-URI 設定來設定商業識別碼。 如需詳細資訊，請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](custom-settings-windows-10.md)。   
+- 若是功能更新，具體來說，您可以解除安裝功能更新的時間僅限於 2-60 天，這是更新通道的更新設定 [設定功能更新解除安裝期間 (2 到 60 天)] 所設定的。 當功能更新安裝的時間超過所設定的解除安裝期間之後，您就無法回復已安裝在裝置上的功能更新。  
 
-用於設定商業識別碼的 OMA-URI (區分大小寫) 路徑是：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+  例如，假設更新通道具有 20 天的功能更新解除安裝期間。 在 25 天之後，您決定要復原上次的功能更新，並使用 [解除安裝] 選項。  已安裝功能更新超過 20 天的裝置無法解除安裝，因為它們已在維護時移除了必要的位元。 不過，僅安裝功能更新 19 天的裝置，只要它們在尚未超過 20 天的解除安裝期間成功簽入以接收解除安裝命令，就可以將更新解除安裝。  
 
-例如，您可以在 [新增或編輯 OMA-URI 設定] 中使用下列值：
+如需有關 Windows Update 原則的詳細資訊，請參閱 Windows 用戶端管理文件中的[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。  
 
-- **設定名稱**：Windows Analytics 商業識別碼
-- **設定描述**：設定 Windows Analytics 解決方案的商業識別碼
-- **OMA-URI** (區分大小寫)：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **資料類型**：字串
-- **值**：<使用 OMS 工作區中的 [Windows 遙測] 索引標籤上顯示的 GUID>
+#### <a name="to-uninstall-the-latest-windows-10-update"></a>若要解除安裝最新的 Windows 10 更新  
+1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [解除安裝]。  
+2. 從可用的選項中選取，以解除安裝 [功能] 或 [品質] 更新，然後選取 [確定]。  
+3. 觸發一個更新類型的解除安裝之後，您可以再次選取 [解除安裝] 以解除安裝剩餘的更新類型。  
 
-![OMA-URI 設定 - 編輯資料列](./media/commID-edit.png)
+## <a name="migrate-update-settings-to-the-azure-portal"></a>將更新設定移轉至 Azure 入口網站  
+Azure 傳統入口網站在裝置組態設定檔中也有一些其他 Windows 10 更新設定。 當您移轉至 Azure 入口網站時，如果已設定這當中的任何設定，強烈建議您執行下列操作︰  
 
-> [!NOTE]
-> 如需有關 MS DM 伺服器的詳細資訊，請參閱 [DMClient 設定服務提供者 (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp)。
+1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許發行前版本功能] 設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新響鈴時，可以設定另外三個設定，以及其他 Windows 10 更新設定。  
 
-## <a name="pause-updates"></a>暫停更新
-您可以讓裝置暫停接收功能更新或品質更新一段期間，自您暫停更新起最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。
+   > [!NOTE]  
+   > 移轉之後，在傳統入口網站中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，系統會套用這些設定。 如果您移轉這當中的任何設定，並從 Azure 入口網站中編輯所移轉的原則，系統就會將這些設定從原則中移除。  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [軟體更新] > [Windows 10 更新通道]。
-3. 在更新通道清單中，選擇您想要暫停的通道，然後選擇 [...] > [暫停品質] > 或 [暫停功能] (視您想要暫停的更新類型而定)。
+2. 刪除傳統入口網站中的更新設定。 移轉至 Azure 入口網站並將相同設定新增至更新通道之後，您必須在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，當相同的設定具有不同的設定值時，就會發生衝突。 您很難得知此狀況，因為在傳統入口網站中設定的設定不會顯示在 Azure 入口網站中。  
 
-> [!IMPORTANT]
-> 在您發出暫停命令後，裝置會在下次簽入服務時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。
-> 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
+## <a name="next-steps"></a>後續步驟
+[Intune 支援的 Windows 更新設定](windows-update-settings.md)  
 
-## <a name="uninstall-the-latest-from-windows-10-software-updates"></a>解除安裝 Windows 10 軟體更新的最新版本 
-如果您的 Windows 10 電腦上發生重大問題，可以選擇解除安裝 (復原) 最新功能更新或最新品質更新。 解除安裝功能或品質更新只適用於裝置所在的維護通道。 解除安裝將會觸發原則，以在 Windows 10 電腦上還原先前的更新。 特別是對於功能更新，您可以將能夠套用解除安裝最新版本的時間限制為 2-60 天。 若要設定軟體更新解除安裝選項：
+[更新的 Intune 合規性報表](windows-update-compliance-reports.md)
 
-1. 在 Intune 中，選取 [軟體更新]。
-2. 選取 [Windows 10 更新通道] > 選取現有的更新通道 > [解除安裝]。
-
-> [!NOTE]
-> 在 Windows 10 電腦上成功復原品質更新之後，終端使用者會繼續在 [Windows 設定] > [更新] > [更新記錄] 中看到列出的更新。
-
-## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支援
-
-Windows Holographic for Business 支援下列設定：
-
-- **自動更新行為**
-- **Microsoft 產品更新**
-- **維護通道**：支援 [半年通道] 和 [半年通道 (已設定目標)] 選項

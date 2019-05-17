@@ -1,15 +1,16 @@
 ---
-title: 針對 Android 企業專用裝置設定 Intune 註冊
-titlesuffix: Microsoft Intune
-description: 了解如何在 Intune 中註冊 Android 企業專用裝置。
+title: 針對 Android Enterprise 專用裝置設定 Intune 註冊
+titleSuffix: Microsoft Intune
+description: 了解如何在 Intune 中註冊 Android Enterprise 專用裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,36 +18,36 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e71ae4add82482bf0bfbde25adac69c51570966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5e980049797ffc3c727d89c197037c019b94326a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834036"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567344"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>針對 Android 企業專用裝置設定 Intune 註冊
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>設定 Android Enterprise 專用裝置的 Intune 註冊
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 透過其專用裝置解決方案集合支援公司擁有的單次使用 Kiosk 樣式裝置。 這類裝置用於單一用途，例如數位招牌、票證列印或庫存管理等等。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
+Android Enterprise 使用其專屬的裝置解決方案集合，支援公司所擁有、單次使用的 kiosk 形式裝置。 這類裝置用於單一用途，例如數位招牌、票證列印或庫存管理等等。 系統管理員會針對一組有限的應用程式和 Web 連結鎖定裝置使用。 它也會防止使用者新增其他應用程式，或在裝置上採取其他動作。
 
-Intune 可協助您將應用程式和設定部署到 Android 專用裝置。 如需 Android 企業的特定詳細資料，請參閱 [Android 企業需求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)。
+Intune 可協助您將應用程式和設定部署至 Android Enterprise 專用裝置。 如需 Android Enterprise 的相關特定詳細資訊，請參閱 [Android Enterprise 的需求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) \(英文\)。
 
 您以這種方式管理的裝置不需要使用者帳戶即可在 Intune 中註冊，也不會與任何終端使用者建立關聯。 它們不適用於個人使用的應用程式，或對使用者特定帳戶資料 (例如 Outlook 或 Gmail) 有強烈需求的應用程式。
 
 ## <a name="device-requirements"></a>裝置需求
 
-裝置必須符合下列需求，才能作為 Android 企業專用裝置進行管理：
+裝置必須符合這些需求，才能視為 Android Enterprise 專用裝置加以管理：
 
 - Android OS 5.1 版和更新版本。
 - 裝置必須執行具有 Google Mobile Services (GMS) 連線能力的 Android 發行版本。 裝置必須有可用的 GMS ，而且必須能夠連線至 GMS。
 
-## <a name="set-up-android-dedicated-device-management"></a>設定 Android 專用裝置管理
+## <a name="set-up-android-enterprise-dedicated-device-management"></a>設定 Android Enterprise 專用裝置管理
 
-若要設定 Android 專用裝置管理，請遵循下列步驟：
+若要設定 Android Enterprise 專用裝置管理，請遵循下列步驟進行：
 
 1. 若要準備管理行動裝置，您必須[將行動裝置管理 (MDM) 授權單位設定為 **Microsoft Intune**](mdm-authority-set.md) 以取得相關指示。 此項目只會設定一次，也就是第一次為行動裝置管理設定 Intune 之時。
-2. [將 Intune 租用戶帳戶連線至 Android 企業帳戶](connect-intune-android-enterprise.md)。
+2. [將您的 Intune 租用戶帳戶連線到受控 Google Play 帳戶](connect-intune-android-enterprise.md)。
 3. [建立註冊設定檔](#create-an-enrollment-profile)
 4. [建立裝置群組](#create-a-device-group)。
 5. [註冊專用裝置](#enroll-the-dedicated-devices)。
@@ -55,7 +56,7 @@ Intune 可協助您將應用程式和設定部署到 Android 專用裝置。 如
 
 您必須建立註冊設定檔，才能註冊您的專用裝置。 建立設定檔時，它會為您提供註冊權杖 (隨機字串) 和 QR 代碼。 視 Android OS 和裝置的版本而定，您可以使用權杖或 QR 代碼來[註冊專用裝置](#enroll-the-dedicated-devices)。
 
-1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [裝置註冊] > [Android 註冊] > [Kiosk 及工作裝置註冊]。
+1. 移至 [Intune 入口網站](https://portal.azure.com)，然後選擇 [裝置註冊] > [Android 註冊] >  [公司擁有的專用裝置]。
 2. 選擇 [建立] 並填寫必要的欄位。
     - **名稱**：輸入將設定檔指派給動態裝置群組時，您要使用的名稱。
     - **權杖到期日**：權杖到期的日期。 Google 最多可強制執行 90 天。
@@ -90,7 +91,7 @@ Intune 可協助您將應用程式和設定部署到 Android 專用裝置。 如
 
 取代或撤銷權杖/QR 代碼不會對已註冊的裝置產生任何影響。
 
-1. 前往 [Intune 入口網站](https://portal.azure.com)，並選擇 [裝置註冊] > [Android 註冊] > [Kiosk 及工作裝置註冊]。
+1. 移至 [Intune 入口網站](https://portal.azure.com)，然後選擇 [裝置註冊] > [Android 註冊] > [公司擁有的專用裝置]。
 2. 選擇您想要使用的設定檔。
 3. 選擇 [權杖]。
 4. 若要取代權杖，請選擇 [取代權杖]。
@@ -100,13 +101,13 @@ Intune 可協助您將應用程式和設定部署到 Android 專用裝置。 如
 
 您現在可以[註冊您的專用裝置](android-dedicated-devices-fully-managed-enroll.md)。
 
-## <a name="managing-apps-on-android-dedicated-devices"></a>管理 Android 專用裝置上的應用程式
+## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>管理 Android Enterprise 專用裝置上的應用程式
 
-只有指派類型[設定為必要](apps-deploy.md#assign-an-app)的應用程式可以安裝在 Android 專用裝置上。 應用程式從受控 Google Play 商店安裝的方式與 Android 工作設定檔裝置相同。
+只有指派類型[設定為 [必要]](apps-deploy.md#assign-an-app) 的應用程式，才能在 Android Enterprise 專用裝置中安裝。 應用程式會以和 Android Enterprise 工作設定檔裝置相同的方式，從受控 Google Play 商店安裝。
 
 當應用程式開發人員將更新發佈至 Google Play 時，應用程式就會在受控裝置上自動更新。
 
-若要從 Android 專用裝置移除應用程式，您可以執行下列其中一個動作：
+若要從 Android Enterprise 專用裝置移除應用程式，可以執行下列其中一項：
 -   刪除所需的應用程式部署。
 -   建立應用程式的解除安裝部署。
 

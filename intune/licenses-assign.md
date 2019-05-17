@@ -9,6 +9,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834478"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459895"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
@@ -29,17 +30,17 @@ ms.locfileid: "55834478"
 
 無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。 如需授權清單，請參閱[包含 Intune 的授權](licenses.md)。
 
-## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>在 Office 365 系統管理中心指派 Intune 授權
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心指派 Intune 授權
 
-您可以使用 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
+您可以使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
 
-1. 使用租用戶系統管理員認證登入 [Office 365 入口網站](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]  >  [作用中使用者]。
+1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者] > [作用中使用者]。
 
 2. 選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]  >  [編輯]。
 
 3. 將 [Intune] 或 [Enterprise Mobility + Security] 切換為 [開啟]，然後選擇 [儲存]。
 
-   ![Office 365 入口網站產品授權區段的螢幕擷取畫面。](./media/office-assign-license.png)
+   ![Microsoft 365 系統管理中心產品授權區段的螢幕擷取畫面。](./media/office-assign-license.png)
 
 4. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
 

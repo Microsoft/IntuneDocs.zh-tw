@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188087"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396857"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +58,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
 開始之前，請確定您已有 Intune 和 Datalert 電信費用管理服務訂閱。
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>步驟 1︰將 Datalert 服務連線到 Microsoft Intune
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>步驟 1：將 Datalert 服務連線到 Microsoft Intune
 
 1. 使用系統管理員認證來登入 Datalert 管理主控台。
 
@@ -88,7 +90,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
    ![顯示成功連線的 Datalert 頁面](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>步驟 2︰檢查 Intune 中已啟用電信費用管理功能
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>步驟 2：檢查 Intune 中已啟用電信費用管理功能
 
 完成上述步驟 1 之後，應該會自動啟用您的連線，而且應該會在 Azure 入口網站中顯示 [使用中] 連線狀態。 這些步驟示範如何檢查 [使用中] 狀態。
 
@@ -104,7 +106,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
    ![顯示 [使用中] Datalert 連線狀態的 Intune 頁面](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步驟 3︰將 Datalert 應用程式部署到公司註冊的裝置
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步驟 3：將 Datalert 應用程式部署到公司註冊的裝置
 
 若要確保只會從公司擁有的線路收集數據使用量，您必須做兩件事：
 - 在 Intune 中建立裝置類別
@@ -152,7 +154,7 @@ Intune 目前整合了下列電信費用管理提供者︰
 
    ![[新增原則] 窗格的螢幕擷取畫面](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步驟 4︰將公司付費電話線路新增至 Datalert 主控台
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步驟 4：將公司付費電話線路新增至 Datalert 主控台
 
 您現在已設定 Intune 和 Datalert 服務彼此通訊。 您現在需要將公司付費電話線路新增至 Datalert 主控台，並定義任何行動或漫遊使用情況違規的臨界值和動作。 您可以手動將公司付費電話線路新增至 Datalert 主控台，或是讓線路在裝置註冊到 Intune 後自動新增。
 

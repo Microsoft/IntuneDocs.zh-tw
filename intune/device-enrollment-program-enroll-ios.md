@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849245"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566500"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -102,8 +103,13 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
 ![指定要用於建立註冊計劃權杖的 Apple 識別碼，並瀏覽至註冊計劃權杖的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>步驟 4： 上傳權杖。
-在 [Apple 權杖] 方塊中，瀏覽至憑證 (.pem) 檔案，選擇 [開啟]，然後選擇 [建立]。 使用推播憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。 Intune 會自動與 Apple 同步處理，以查看您的註冊計劃帳戶。
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>步驟 4： 上傳權杖，然後選擇範圍標籤。
+
+1. 在 [Apple 權杖] 方塊中，瀏覽至憑證 (.pem) 檔案，選擇 [開啟]。
+2. 如果您想要將[範圍標籤](scope-tags.md)套用到這個 DEP 權杖中，請選擇 [範圍 (標籤)]，然後選取您想要的範圍標籤。 新增到此權杖的設定檔和裝置會繼承套用到權杖的範圍標籤。
+3. 選擇 **[建立]**。
+
+使用推播憑證，透過將原則推送到已註冊的行動裝置，Intune 即可註冊和管理 iOS 裝置。 Intune 會自動與 Apple 同步處理，以查看您的註冊計劃帳戶。
 
 ## <a name="create-an-apple-enrollment-profile"></a>建立 Apple 註冊設定檔
 
@@ -145,6 +151,8 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
 7. 如果您為 [使用 VPP 安裝公司入口網站] 選擇權杖，您可以選擇在設定助理完成之後，立即以單一應用程式模式 (具體來說就是公司入口網站應用程式) 鎖定裝置。 在 [Run Company Portal in Single App Mode until authentication] \(驗證前以單一應用程式模式執行公司入口網站\) 選擇 [是]，設定此選項。 若要使用裝置，使用者必須先使用公司入口網站登入進行驗證。
     此功能僅針對 iOS 11.3.1 和更新版本支援。
+
+   ![單一應用程式模式的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. 選擇 [裝置管理設定]，並選取您是否想要監督使用此設定檔的裝置。
 

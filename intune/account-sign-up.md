@@ -9,6 +9,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97a1ab3327f8d76f1623d51fe80289a8f15d7ff1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235220"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459946"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>註冊或登入 Microsoft Intune
 
@@ -38,7 +39,7 @@ ms.locfileid: "57235220"
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>如何註冊或登入 Intune
 
-1. 請瀏覽 [Intune 註冊](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)頁面。
+1. 請瀏覽 [Intune 註冊](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)頁面。
 
    ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/account-sign-up-site.png)
 
@@ -47,4 +48,4 @@ ms.locfileid: "57235220"
 ## <a name="post-sign-up-considerations"></a>註冊後的考量
 註冊新的訂閱後，在您於註冊過程中提供的電子郵件位址上，您會收到包含帳戶資訊的電子郵件訊息。 本電子郵件可確認您的訂閱是使用中的狀態。
 
-完成註冊程序後，會將您導向 Office 365 系統管理中心，讓您新增使用者和指派授權給他們。 如果您只有使用預設 onmicrosoft.com 網域名稱的雲端式帳戶，則您現在可以繼續新增使用者並指派授權。 不過，如果您計劃使用組織的[自訂網域名稱](custom-domain-name-configure.md)，或想要從內部部署 Active Directory [同步處理使用者帳戶資訊](users-add.md#sync-active-directory-and-add-users-to-intune)，則可關閉該瀏覽器視窗。
+完成註冊程序後，會將您導向 Microsoft 365 系統管理中心，讓您新增使用者並指派授權給他們。 如果您只有使用預設 onmicrosoft.com 網域名稱的雲端式帳戶，則您現在可以繼續新增使用者並指派授權。 不過，如果您計劃使用組織的[自訂網域名稱](custom-domain-name-configure.md)，或想要從內部部署 Active Directory [同步處理使用者帳戶資訊](users-add.md#sync-active-directory-and-add-users-to-intune)，則可關閉該瀏覽器視窗。

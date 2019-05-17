@@ -6,21 +6,23 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183395"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388096"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 使用者如何取得其應用程式
 
@@ -37,8 +39,8 @@ ms.locfileid: "52183395"
 
 您的終端使用者必須允許來自未知來源的安裝，才能安裝 [LOB 應用程式](lob-apps-android.md)。 這些通常可以在兩個不同的位置找到：
 
-* **Android 7.1.2 和以下版本**：[設定] > [安全性] > [未知來源]
-* **Android 8.0 和以上版本**：[設定] > [應用程式與通知] > [Special app access] (特殊應用程式存取) > [Install unknown apps] (安裝未知應用程式) > [公司入口網站] > [Allow from this source] (允許來自此來源)
+* **Android 7.1.2 和更舊版本**：[設定] > [安全性] > [未知來源]
+* **Android 8.0 和更新版本**：[設定] > [應用程式與通知] > [特殊應用程式存取] > [安裝未知的應用程式] > [公司入口網站] > [允許從這個來源]
 
 如果發生這種情況，公司入口網站應用程式將會通知，並直接引導終端使用者進行適當的設定。 
 
@@ -56,7 +58,7 @@ ms.locfileid: "52183395"
 
 **未受管理的應用程式** - 無法透過原則進行管理的應用程式。 它們未受 Intune 包裝或不包含 Intune App SDK。 應用程式原則不適用於這些應用程式。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 新增應用程式](apps-add.md)
 
 [iOS 使用者如何取得其應用程式](end-user-apps-ios.md)

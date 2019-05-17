@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237183"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567266"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -33,7 +34,7 @@ ms.locfileid: "57237183"
 > [!Tip]        
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。 請注意，使用者必須或指派 Intune 授權，才能存取「公司入口網站」網站。
 
-自訂公司入口網站可協助提供您的使用者熟悉且實用的體驗。 若要執行此作業，請從 [用戶端應用程式] 工作負載中選擇 [設定] > [公司入口網站品牌]，然後設定必要的設定。  
+您可以透過自訂公司入口網站，協助為終端使用者提供熟悉且實用的體驗。 若要這樣做，請在 Intune 入口網站中，選取 [用戶端應用程式] > [商標和自訂]，然後進行必要設定。 
 
 > [!Note]       
 > 如果您使用 Azure Government，應用程式記錄檔會提供給終端使用者，用來決定當他們在起始程序取得問題說明時如何進行共用。 不過，如果您未使用 Azure Government，當使用者在起始程序取得問題說明時，Windows 10 版公司入口網站會將應用程式記錄檔直接傳送給 Microsoft。 應用程式記錄檔傳送給 Microsoft 可以更輕鬆地進行疑難排解並解決問題。 
@@ -90,7 +91,7 @@ ms.locfileid: "57237183"
 
 |欄位名稱|詳細資訊|
 |---|---|
-|**上傳您的品牌影像**| 此選項可讓您在公司入口網站應用程式中的使用者設定檔頁面上顯示背景影像。<p>*注意*：影像在不同的平台上的顯示可能會不同。<p><ul><li>建議影像寬度：小於 1125 像素，但不小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
+|**上傳您的品牌影像**| 此選項可讓您顯示品牌形象。 在 iOS 公司入口網站中，它會顯示為使用者設定檔頁面上的背景影像。<p><ul><li>建議影像寬度：小於 1125 像素，但不小於 640 像素</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
 
 正確的品牌影像可讓公司品牌留下強烈印象，因而加強使用者對公司入口網站的信任。 以下是您擷取、選擇及最佳化公司入口網站影像時可能想要考慮的一些祕訣。 
 
