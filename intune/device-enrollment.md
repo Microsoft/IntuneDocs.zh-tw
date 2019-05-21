@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568423"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764908"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 
 ## <a name="android-enrollment-methods"></a>Android 註冊方法
 
-| **方法** |  **需要重設** |    **使用者親和性**   |   **鎖定** | **詳細資料**|
+| **個人** | **註冊方法** | **需要重設** | **使用者親和性** | **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [詳細資訊](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[詳細資訊](./device-enrollment-manager-enroll.md)|
-|**Android 工作設定檔**| 否 | 是 | 否| [詳細資訊](./android-work-profile-enroll.md) |
+|**Android 裝置系統管理員**|**透過公司入口網站起始使用者** | 否 | 是 | 否 | [詳細資訊](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise 工作設定檔**|**透過公司入口網站起始使用者**| 否 | 是 | 否 | [詳細資訊](./android-work-profile-enroll.md)|
+
+
+| **公司** | **註冊方法** | **需要重設** | **使用者親和性** | **鎖定** | **詳細資料**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android 裝置系統管理員**|**透過公司入口網站起始 [DEM](#device-enrollment-manager)**| 否 | 否 | 否 |[詳細資訊](./device-enrollment-manager-enroll.md)|
+|**Android 裝置系統管理員**|**透過公司入口網站起始 (預先宣告的 IMEI 或 SN) 使用者**| 否 | 是 | 否 | [詳細資訊](./corporate-identifiers-add.md)|
+|**使用 Zebra Mobility Extensions 的 Android 裝置系統管理員**|**透過公司入口網站起始使用者或 [DEM](#device-enrollment-manager)**| 否 | 如果起始使用者，則為是；如果起始 [DEM](#device-enrollment-manager)，則為否。 | 否 | [詳細資訊](./android-zebra-mx-overview.md)|
+|**Android Enterprise 專用**|**NFC、權杖或 QR 代碼、零觸式**| 是 | 否 | 可透過政策設定 | [詳細資訊](./android-kiosk-enroll.md)|
+|**Android Enterprise 完全受控 (預覽)**|**NFC、權杖或 QR 代碼、零觸式**| 是 | 是 | 可透過原則設定 | [詳細資訊](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>攜帶您自己的裝置

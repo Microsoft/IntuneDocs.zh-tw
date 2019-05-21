@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48228d0baea204fd94175750075c04771116a74d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cbef2059f42a209a63e4ba3f1e83aec410237d02
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513781"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135142"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -63,27 +63,39 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 9. 已成功建立連線，可讓裝置存取公司資源。
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>在您的 iOS 裝置上針對 VPN 使用 NAC  
-支援適用於 Cisco Legacy AnyConnect、F5 Access Legacy 與 Citrix VPN 的 NAC，而不需要在 VPN 設定檔中啟用 NAC。
 
-也支援適用於 Citrix SSO 的 NAC。 若要為 iOS 的 Citrix SSO 啟用 NAC：
-- 使用 Citrix Gateway 12.0.59 或更高版本。  
-- 使用者必須已安裝 Citrix SSO 1.1.6 或更新版本。
-- [針對 NAC 將 NetScaler 與 Intune 整合](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (如 Citrix 產品文件中所述)。
-- 在基底 VPN 設定組態上，針對 [啟用網路存取控制 (NAC)]，選取 [我同意] 核取方塊。
+- 無需在 VPN 設定檔中啟用 NAC，也可在下列 VPN 中使用 NAC：
 
-當您為 iOS 使用 Citrix SSO 時，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
+  - 適用於 Cisco Legacy AnyConnect 的 NAC
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC 也適用於 Citrix SSO 和 F5 Access。 啟用適用於 Citrix SSO 的 NAC：
 
-**iOS 上的下列 VPN 用戶端目前不支援網路存取控制**：
--   Cisco AnyConnect
--   F5 Access
+  - 使用 Citrix Gateway 12.0.59 或更高版本。  
+  - 使用者必須已安裝 Citrix SSO 1.1.6 或更新版本。
+  - [針對 NAC 將 NetScaler 與 Intune 整合](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (如 Citrix 產品文件中所述)。
+  - 在 VPN 設定檔中，選取 [基底設定] > [啟用網路存取控制 (NAC)] > 選取 [我同意]。
 
-我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案就緒時，我們將會更新本文並提供其他詳細資料。 
+  基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
 
+- 啟用適用於 F5 Access 的 NAC：
+
+  - 使用 F5 BIG-IP 13.1.1.5。 不支援 BIG-IP 14。
+  - 針對 NAC 整合 BIG-IP 與 Intune。 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態) F5 指南列有這些步驟。
+  - 在 VPN 設定檔中，選取 [基底設定] > [啟用網路存取控制 (NAC)] > 選取 [我同意]。
+
+  基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
+
+- iOS 上的下列 VPN 用戶端不支援網路存取控制：
+  - Cisco AnyConnect
+
+我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案準備好後，將會更新本文以提供其他資訊。
 
 ## <a name="next-steps"></a>後續步驟
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (整合 Cisco ISE 與 Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (整合 Citrix NetScaler 與 Intune)
+- [Integrate F5 BIG-IP Access Policy Manager with Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html) (整合 F5 BIG-IP Access Policy Manager 與 Intune)
 - [Integrate HP Aruba ClearPass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271) (整合 HP Aruba ClearPass 與 Intune)
 - [整合 Squadra security Removable Media Manager (secRMM) 與 Intune ](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf) \(英文\)

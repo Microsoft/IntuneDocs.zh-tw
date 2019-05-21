@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506984"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135083"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔  
 
@@ -35,7 +35,7 @@ Intune 提供數個用來監視安全性基準的選項。 您可以監視適用
 
 當您監視基準時，會根據 Microsoft 建議獲得您裝置安全性狀態的見解。 您可在 Intune 主控台中從安全性基準的 [概觀] 窗格內檢視這些見解。  在您第一次指派基準之後，最長需要 24 小時的時間才會顯示資料。 後續變更最長需要六個小時的時間才會出現。  
 
-若要檢視基準和裝置的監視資料，請登入 [Intune 入口網站](https://aka.ms/intuneportal)。 接下來，選取 [安全性基準 (預覽)]，選取某個基準，然後檢視 [概觀] 窗格。
+若要檢視基準和裝置的監視資料，請登入 [Intune 入口網站](https://go.microsoft.com/fwlink/?linkid=2090973)。 接下來，選取 [裝置安全性] > [安全性基準 (預覽)]，選取基準，然後檢視 [概觀] 窗格。
 
 [概觀] 窗格提供兩種方法來監視狀態：
 - **裝置檢視** - 基準的每一個狀態類別中有多少部裝置的摘要。  
