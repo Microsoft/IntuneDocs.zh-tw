@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515456"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619443"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置 (預覽)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
 
 ## <a name="prerequisites"></a>必要條件
@@ -35,7 +35,7 @@ ms.locfileid: "61515456"
 要註冊的裝置，必須：
 - 執行 [2018 年 10 月更新](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)的 Windows 10。
 - 可存取網際網路。
-- 可存取您的 Active Directory (不支援 VPN 連線)。
+- 可存取您的 Active Directory (目前不支援 VPN 連線)。
 - 完成全新體驗 (OOBE)。
 - 能夠 ping 您嘗試加入之網域的網域控制站。
 
@@ -211,7 +211,14 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 1. 選取 [設定]，然後提供 [電腦名稱前置詞]、[網域名稱] 以及 (選擇性) [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的 [組織單位]。 
 1. 選取 [確定] > [建立]。  
     設定檔隨即建立，並顯示在清單中。
-1. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟。 
+1. 若要指派設定檔，請遵循[指派裝置設定檔](device-profile-assign.md#assign-a-device-profile)下的步驟，並將設定檔指派到在[建立裝置群組](windows-autopilot-hybrid.md#create-a-device-group)這個步驟使用的相同群組
+   - 部署多個網域加入設定檔
+   
+     a. 建立動態群組，其中包含具有特定 Autopilot 部署設定檔的所有 Autopilot 裝置，然後輸入 (device.enrollmentProfileName -eq "Autopilot Profile Name")。 
+     
+     b. 使用在[建立及指派 Autopilot 部署設定檔](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile)下建立的設定檔顯示名稱來取代 'Autopilot Profile Name'。 
+     
+     c. 建立多個 Autopilot 部署設定檔，並將該裝置指派給在這個動態群組中指定的設定檔。
 
 > [!NOTE]
 > 適用於混合式 Azure AD Join 的 Windows Autopilot 命名功能不支援 %SERIAL% 等變數，僅支援電腦名稱的前置詞。

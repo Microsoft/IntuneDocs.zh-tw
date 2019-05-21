@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 92216550ee53c220beb3dc325be02c28b5eeb0c5
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513339"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135200"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
@@ -67,7 +67,7 @@ ms.locfileid: "61513339"
 - **合作夥伴無回應前的天數**：Intune 將合作夥伴視為因連線中斷而無回應之前的閒置天數。 針對沒有回應的 MTD 合作夥伴，Intune 會忽略其合規性狀態。
 
 > [!IMPORTANT] 
-> 您必須新增並指派 MTD 應用程式，再建立裝置相容性和條件式存取原則規則。 這樣做可確保 MTD 應用程式已準備好供使用者進行安裝，安裝後使用者才能存取電子郵件或其他公司資源。
+> 在情況允許時，建議您先新增並指派 MTD 應用程式，再建立裝置相容性和條件式存取原則規則。 這樣做有助於確保 MTD 應用程式已準備好供使用者進行安裝，安裝後使用者才能存取電子郵件或其他公司資源。
 
 > [!TIP]
 > 您可從 [Mobile Threat Defense] 窗格中看見 Intune 與 MTD 合作夥伴之間的 [連線狀態] 與 [上次同步處理] 時間。

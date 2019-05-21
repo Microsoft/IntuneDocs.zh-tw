@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 491610fcefa1b20159ebfe487c9e2d95a6f5e7c6
+ms.sourcegitcommit: 586114e1beee31aa8553f69c0ba4d731afcb45e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508535"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65402074"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -189,7 +189,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 3. 移至 [設定]，並輸入先前匯出的根 CA 憑證 .cer 檔案。
 
    > [!NOTE]
-   > 視您在**步驟 3** 中選擇的平台而定，您可能會有選擇憑證 [目的地存放區] 的選項。
+   > 視您在**步驟 2** 中選擇的平台而定，您可能會有選擇憑證 [目的地存放區] 的選項。
 
    ![建立設定檔並上傳受信任的憑證](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -248,16 +248,21 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 ## <a name="whats-new-for-connectors"></a>連接器的新功能
 這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。 
 
-「PFX 憑證連接器」[支援自動更新](#requirements)，而 Intune 憑證連接器則以手動方式更新。
+「適用於 Microsoft Intune 的 PFX 憑證連接器」[支援自動更新](#requirements)，而「Intune 憑證連接器」則以手動方式更新。
+
+### <a name="may-6-2019"></a>2019 年 5 月 6 日
+- **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.402 版**  
+  此版本的變更：  
+  - 連接器的輪詢間隔已從 5 分鐘縮短為 30 秒。
  
 ### <a name="april-2-2019"></a>2019 年 4 月 2 日
-- **NDES 憑證連接器 - 6.1904.1.0 版**  
+- **Intune 憑證連接器 - 6.1904.1.0 版**  
   此版本的變更：  
   - 修正了使用全域系統管理員帳戶登入連接器之後，連接器無法向 Intune 註冊的問題。  
   - 包含憑證撤銷的可靠性修正。  
   - 包含效能修正，用來提高處理 PKCS 憑證要求的速度。  
 
-- **PFX 憑證連接器 - 6.1904.0.401 版**
+- **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1904.0.401 版**
   > [!NOTE]  
   > 在 2019 年 4 月 11 日之前，不提供適用於這個 PFX 連接器版本的自動更新。  
 

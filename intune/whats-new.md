@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426225"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135196"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -46,6 +46,25 @@ ms.locfileid: "62426225"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>2019 年 5 月 6 日當週 
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>iOS 裝置 F5 Access 的網路存取控制 (NAC) 支援 <!-- 4500808 -->
+
+F5 發行了 BIG-IP 13 的更新，可在 Intune 中於 iOS 上的 F5 Access 提供 NAC 功能。 若要使用此功能：
+
+- 將 BIG-IP 更新為 13.1.1.5 版。 不支援 BIG-IP 14。
+- 針對 NAC 整合 BIG-IP 與 Intune。 步驟位於 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態)。
+- 在 Intune 中，確認 VPN 設定檔中的 [啟用網路存取控制 (NAC)] 設定。
+
+若要查看可用的設定，請前往[在 iOS 裝置上進行 VPN 設定](vpn-settings-ios.md)。
+
+適用於：iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>已更新適用於 Microsoft Intune 的 PFX 憑證連接器 <!-- doc-vso 1521237  -->  
+我們發行了[適用於 Microsoft Intune 的 PFX 認證連接器](certficates-pfx-configure.md#whats-new-for-connectors)更新，可將輪詢間隔從 5 分鐘縮短為 30 秒。
 
 ## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日當週
 
@@ -75,7 +94,7 @@ ms.locfileid: "62426225"
 Android 裝置上 Intune 應用程式防護原則 (APP) 現在使用符合 FIPS 140-2 規範的 OpenSSL 加密程式庫。 如需詳細資訊，請參閱 [Microsoft Intune 的 Android 應用程式防護原則設定](app-protection-policy-settings-android.md)的[加密](app-protection-policy-settings-android.md#encryption)一節。
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>啟用 Win32 應用程式相依性 <!-- 2617348  -->
-身為管理員，您可以要求將其他應用程式安裝為相依性，再安裝您的 Win32 應用程式。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 在 Intune 中，選取 [用戶端應用程式] > [應用程式] > [新增] 以顯示 [新增應用程式] 刀鋒視窗。 選取 [Windows 應用程式 (Win32)] 作為 [應用程式類型]。 新增應用程式之後，您可以選取 [相依性] 以新增必須先安裝才能安裝 Win32 應用程式的相依應用程式。 如需詳細資訊，請參閱 [Intune 獨立版 - Win32 應用程式管理](apps-win32-app-management.md)。 只有在 Intune 管理代理程式已升級為 1904 版 (大於 1.18.120.0) 之後，才能使用此功能 (將服務升級為 1904 之後，可能另外需要一到兩週的時間才能使用此功能)。
+身為管理員，您可以要求將其他應用程式安裝為相依性，再安裝您的 Win32 應用程式。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 在 Intune 中，選取 [用戶端應用程式] > [應用程式] > [新增] 以顯示 [新增應用程式] 刀鋒視窗。 選取 [Windows 應用程式 (Win32)] 作為 [應用程式類型]。 新增應用程式之後，您可以選取 [相依性] 以新增必須先安裝才能安裝 Win32 應用程式的相依應用程式。 如需詳細資訊，請參閱 [Intune 獨立版 - Win32 應用程式管理](apps-win32-app-management.md)。 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>商務用 Microsoft Store 應用程式的應用程式版本安裝資訊 <!-- 3537391   -->
 應用程式安裝報表包含商務用 Microsoft Store 應用程式的應用程式版本資訊。 在 Intune 中，選取 [用戶端應用程式] > [應用程式]。 選取 [商務用 Microsoft Store 應用程式]，然後在 [監視] 區段下選取 [裝置安裝狀態]。
@@ -91,6 +110,9 @@ Android 裝置上 Intune 應用程式防護原則 (APP) 現在使用符合 FIPS 
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Enterprise 工作設定檔裝置的其他受控 Google Play 應用程式報告 <!-- 4105925  -->
 針對部署到 Android Enterprise 工作設定檔裝置的受控 Google Play 應用程式，您可以檢視裝置上所安裝應用程式的特定版本號碼。 這只適用於必要的應用程式。 未來版本中將會針對可用的應用程式啟用相同功能。 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS 協力廠商鍵盤 <!-- 4111843 idready eeready -->
+iOS **協力廠商鍵盤**設定的 Intune 應用程式防護原則 (APP) 支援將因 iOS 平台的變更結束。 您將無法在 Intune 管理主控台中設定此設定，且無法在 Intune 應用程式 SDK 中於用戶端上實行此設定。
 
 ### <a name="device-configuration"></a>裝置設定
 
@@ -207,7 +229,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」，可從
 ### <a name="device-configuration"></a>裝置設定
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>更新憑證連接器  <!-- ICM 113304612 -->
-[Intune 憑證連接器和 PFX 憑證連接器](certficates-pfx-configure.md#whats-new-for-connectors)均已發行更新。 新的版本會修正幾個已知問題。  
+[Intune 憑證連接器和是用於 Microsoft Intune 的 PFX 憑證連接器](certficates-pfx-configure.md#whats-new-for-connectors)均已發行更新。 新的版本會修正幾個已知問題。  
 
 ### <a name="app-management"></a>應用程式管理
 
@@ -376,7 +398,7 @@ Intune PowerShell 模組透過 Microsoft Graph 支援 Intune API，現在於 [Mi
 新增了稱為 [應用程式類別] 的畫面，以改善 Windows 10 版公司入口網站中的應用程式瀏覽和選取體驗。 使用者現在會看到其應用程式依類別排序，例如 [精選]、[教育] 和 [生產力]。 這項變更會出現在公司入口網站 10.3.3451.0 版和更新版本。 若要檢視新的畫面，請參閱[應用程式 UI 中的新功能](https://docs.microsoft.com/intune/whats-new-app-ui)。 如需公司入口網站中應用程式的詳細資訊，請參閱[在裝置上安裝和共用應用程式](/intune-user-help/install-apps-cpapp-windows)。  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI 合規性應用程式 <!-- 1455231 doc-work-item -->
-在 Power BI Online 中使用 [Intune 合規性 (資料倉儲)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 應用程式，來存取您的 Intune 資料倉儲。 透過此 Power BI 應用程式中，您現在不需要任何設定也不需要離開網頁瀏覽器即可存取和共用預先建立的報表。 如需其他資訊，請參閱[變更記錄檔 - Power BI 合規性應用程式](reports-changelog.md#power-bi-compliance-app)。
+在 Power BI Online 中使用 [Intune 合規性 (資料倉儲)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) 應用程式，來存取您的 Intune 資料倉儲。 透過此 Power BI 應用程式中，您現在不需要任何設定也不需要離開網頁瀏覽器即可存取和共用預先建立的報表。 如需其他資訊，請參閱[變更記錄檔 - Power BI 合規性應用程式](reports-changelog.md#power-bi-compliance-app)。
 
 
 ### <a name="device-configuration"></a>裝置設定
