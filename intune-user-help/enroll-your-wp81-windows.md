@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497477"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 註冊 Windows Phone 8.1 裝置  
 
-註冊您的裝置，以存取工作或學校電子郵件、 檔案和其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和[公司支援人員在您裝置上可看到和不可看到的項目](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。  
+註冊您的裝置，以存取公司或學校電子郵件、檔案及其他資源。 當您註冊裝置時，您的組織可確保公司資料的安全。 若要深入了解註冊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和[公司支援人員在您裝置上可看到和不可看到的項目](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。  
 
-若要註冊您的裝置在 Intune 中，遵循一組符合您的權限或目前的帳戶狀態的指示。
+若要在 Intune 中註冊您的裝置，請遵循符合您權限或目前帳戶狀態的指示集。
 
 ## <a name="enroll-through-company-portal"></a>透過公司入口網站註冊  
 如果您可以從 Microsoft Store 安裝公司入口網站應用程式，請遵循下列步驟。 
@@ -78,7 +78,7 @@ ms.locfileid: "57335100"
     ![已新增帳戶畫面](./media/WP81-enroll-4-account-added.png)  
 
 ## <a name="enroll-through-settings-app"></a>透過 [設定] 應用程式註冊  
-如果您無法從您的 Windows Phone 裝置，存取 Microsoft Store，或如果您沒有 Microsoft 帳戶，請遵循下列步驟。
+如果您無法從 Windows Phone 裝置存取 Microsoft Store，或沒有 Microsoft 帳戶，請遵循下列步驟。
 
 1.  點選 [設定] &gt; [工作場所]。  
 
