@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: e14fe3dd50f43c1b72079dfc3df05ddbbcd4c629
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799496"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853970"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -48,7 +48,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
     > 可以將相同的應用程式指派給多個群組，但對於該應用程式有不同的預期動作 (用途)。 例如，如果在應用程式指派期間針對某個使用者排除了該應用程式，則應用程式已解決的用途會顯示 [已排除]。 如需詳細資訊，請參閱[如何解決應用程式用途之間的衝突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
     > 如果必要的應用程式安裝失敗，您或您的技術服務人員將能夠同步裝置並重試應用程式安裝。
 
-應用程式安裝錯誤詳細資料會指出此問題。 您可以使用這些詳細資料，以決定解決問題所要採取的最佳動作。 如需有關針對應用程式安裝問題進行疑難排解的詳細資訊，請參閱[針對應用程式安裝問題進行疑難排解的錯誤碼](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues) \(英文\)。
+應用程式安裝錯誤詳細資料會指出此問題。 您可以使用這些詳細資料，以決定解決問題所要採取的最佳動作。 如需針對應用程式安裝問題進行疑難排解的詳細資訊，請參閱[應用程式安裝錯誤](troubleshoot-app-install.md#app-installation-errors)。
 
 > [!Note]  
 > 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解] 窗格。
