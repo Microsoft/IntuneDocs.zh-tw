@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
-ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
-ms.translationtype: HT
+ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65836461"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048117"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -153,7 +152,7 @@ ms.locfileid: "65836461"
   - **複雜數字**：不允許重複或連續的數字，例如 "1111" 或 "1234"。 輸入使用者必須輸入的 [密碼長度下限]，介於 4 到 16 個字元之間。
   - **字母**：字母表中的字母都是必要項目。 數字和符號不是必要項目。 輸入使用者必須輸入的 [密碼長度下限]，介於 4 到 16 個字元之間。
   - **英數字元**：包含大寫字母、小寫字母及數字字元。 輸入使用者必須輸入的 [密碼長度下限]，介於 4 到 16 個字元之間。
-  - **英數字元 (含符號)**：包含大寫字母、小寫字母、數字字元、標點符號及符號。 另請輸入：
+  - **英數字元 (含符號)** ：包含大寫字母、小寫字母、數字字元、標點符號及符號。 另請輸入：
 
     - **密碼長度下限**：輸入密碼必須擁有的長度下限，介於 4 到 16 個字元之間。
     - **所需的字元數**：輸入密碼必須包含的字元數目，介於 0 到 16 個字元之間。
@@ -254,7 +253,7 @@ ms.locfileid: "65836461"
 - **密碼長度下限**：輸入使用者密碼至少須具有的字元數 (從 **4**-**16**)。
 - **在停止工作設定檔最多幾分鐘後鎖定螢幕**：選取工作設定檔鎖定之前的時間長度。 然後，使用者必須輸入其認證，才能重新取得存取權。
 - **登入失敗幾次後即抹除裝置**：輸入將裝置上的工作設定檔抹除之前可輸入錯誤密碼的次數。
-- **密碼到期 (天數)**：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)。
+- **密碼到期 (天數)** ：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)。
 - **必要的密碼類型**：選取必須在裝置上設定的密碼類型。 從下列選項進行選擇：
   - **裝置預設**
   - **低安全性生物識別**
@@ -275,7 +274,7 @@ ms.locfileid: "65836461"
 - **密碼長度下限**：輸入使用者密碼至少須具有的字元數 (從 **4**-**14**)。
 - **在停止活動最多幾分鐘後鎖定螢幕**：選取非作用中裝置自動鎖定之前的時間長度
 - **登入失敗幾次後即抹除裝置**：輸入將裝置上的所有資料抹除之前可輸入錯誤密碼的次數
-- **密碼到期 (天數)**：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)
+- **密碼到期 (天數)** ：輸入使用者的密碼在多少天之後必須變更 (從 **1**-**255**)
 - **必要的密碼類型**：選取必須在裝置上設定的密碼類型。 從下列選項進行選擇：
   - **裝置預設**
   - **低安全性生物識別**
