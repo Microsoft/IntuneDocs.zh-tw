@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7eaea14817c022f8efc5c1380c569fc5afbafa1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797797"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040217"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用原則來簡化 Windows 電腦管理
 
@@ -52,7 +51,7 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 |**電話號碼**|管理電腦之系統管理員的電話號碼。<br />最大長度：20 個字元|
 |**電子郵件地址**|管理電腦之系統管理員的電子郵件地址。<br />最大長度：40 個字元|
 |**網站名稱**|使用者支援網站的名稱。<br />最大長度：40 個字元|
-|**網站 URL**|您的支援網站的URL。<br />最大長度：150 個字元|
+|**網站 URL**|您的支援網站的 URL。<br />最大長度：150 個字元|
 |**附註**|使用者看到的附註。<br />最大長度：120 個字元|
 
 請參閱下列資源以取得您可以為 Windows 電腦設定之原則和設定的相關資訊︰
@@ -64,6 +63,6 @@ Microsoft Intune Center 會安裝在所有受管理電腦上。 您可以在 Int
 - [在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 這些原則可簡化受管理電腦上的 Windows 防火牆設定管理。
 
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

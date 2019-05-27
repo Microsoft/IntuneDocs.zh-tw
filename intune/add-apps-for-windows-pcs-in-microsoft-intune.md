@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798888"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050205"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式
 
@@ -49,7 +48,7 @@ ms.locfileid: "58798888"
 
 2. 在發行者的 [軟體安裝程式] 頁面上，於 [選取將此軟體開放給裝置使用的方式] 下，選擇 [軟體安裝程式]，然後指定：
 
-   - [選取軟體安裝程式檔案類型]。 這會指出您要部署的軟體類型。 針對 Windows 電腦，請選擇 **[Windows Installer]**。
+   - [選取軟體安裝程式檔案類型]。 這會指出您要部署的軟體類型。 針對 Windows 電腦，請選擇 **[Windows Installer]** 。
    - [指定軟體安裝檔的位置]。 輸入安裝檔的位置，或選擇 [瀏覽] 以從清單中選取位置。
    - [包含同一個資料夾的其他檔案和子資料夾]。 某些使用 Windows Installer 的軟體會需要支援檔案。 這些必須位於安裝檔所在的相同資料夾中。 如果您也想要部署這些支援檔案，請選取這個選項。
 
@@ -78,7 +77,7 @@ ms.locfileid: "58798888"
 5. 在 [偵測規則] 頁面上，您可以設定規則以偵測您正在設定的應用程式是否已安裝於電腦上。 或者，您可以使用預設的偵測規則以自動覆寫任何之前已經安裝的應用程式版本。 這個選項適用於 Windows Installer (僅限 .exe 檔)。
 
    您可以設定的規則包括：
-   - **檔案已存在**。 指定所要偵測檔案的路徑。 您可以搜尋下列位置：電腦上的 **%ProgramFiles%** 下 (這將會搜尋 **Program Files**\&lt;path&gt; 和 **Program Files (x86)**\&lt;path&gt;)，或是 **%SystemDrive%** 下 (這將會從電腦的根磁碟機進行搜尋，通常是 C:)。
+   - **檔案已存在**。 指定所要偵測檔案的路徑。 您可以搜尋下列位置：電腦上的 **%ProgramFiles%** 下 (這將會搜尋 **Program Files**\&lt;path&gt; 和 **Program Files (x86)** \&lt;path&gt;)，或是 **%SystemDrive%** 下 (這將會從電腦的根磁碟機進行搜尋，通常是 C:)。
    - **MSI 產品代碼已存在**。 選擇 [瀏覽] 以選擇您要偵測的 Windows Installer (.msi) 檔案。
    - <strong>登錄機碼已存在</strong>。 指定以 <strong>HKEY_LOCAL_MACHINE\</strong> 開頭的登錄機碼。 系統會搜尋 32 位元和 64 位元登錄路徑。 如果任一位置已有您指定的機碼，便會符合偵測規則。
 
@@ -100,7 +99,7 @@ ms.locfileid: "58798888"
 
 應用程式會顯示在 [應用程式] 工作區的 [應用程式] 節點上。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 完成建立應用程式後，下一個步驟是進行部署。 如需詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 

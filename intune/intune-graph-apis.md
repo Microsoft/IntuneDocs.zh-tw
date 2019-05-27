@@ -8,7 +8,6 @@ manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26bdeaf2a5860d0c19feba2ec8b5864e95754b12
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798973"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047757"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -120,7 +119,7 @@ ms.locfileid: "58798973"
 
 - 讓您租用戶以外的使用者能夠使用應用程式  (通常只有支援多個租用戶/組織的合作夥伴才需要這樣做)。  
 
-    若要這樣做：
+    操作方法：
 
   1. 從應用程式刀鋒視窗中選擇 [資訊清單]，這樣可開啟 [編輯資訊清單] 刀鋒視窗。
 

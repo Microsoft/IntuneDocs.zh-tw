@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/19/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e14fe3dd50f43c1b72079dfc3df05ddbbcd4c629
-ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.openlocfilehash: 47115fcb2662439bff867043c2fb58bc3550dbbb
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853970"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044885"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -71,7 +70,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 2. 提供檔案路徑，其中包括記錄檔的名稱，來啟動收集記錄檔的程序，並按一下 [確定]。
     
     > [!NOTE]
-    > 收集記錄會在兩個小時內完成。 支援的檔案類型：*.log、.txt、.dmp、.cab、.zip、.xml、.evtx 及 .evtl*。 最多允許 25 個檔案路徑。
+    > 收集記錄會在兩個小時內完成。 支援的檔案類型： *.log、.txt、.dmp、.cab、.zip、.xml、.evtx 及 .evtl*。 最多允許 25 個檔案路徑。
 
 3. 收集完記錄檔後，您可以選取 [記錄] 連結來下載記錄檔。
 

@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa1df8053301b92c04d92f8c48d2c6c34e30129
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799746"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040931"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 資料倉儲中的使用者存留期表示法
 
@@ -78,7 +77,7 @@ John Smith 在 2017/07/25 放棄他的授權。 **User** 資料表有下列項�
  
 若只要查看目前存在的維度實體，可以套用 **IsDeleted = FALSE** 的篩選條件。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
  - 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
  - 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。

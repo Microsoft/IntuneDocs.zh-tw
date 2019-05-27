@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505772"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836461"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -327,3 +327,7 @@ ms.locfileid: "61505772"
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 您也可以為 [Android](device-restrictions-android.md#kiosk) 和 [Windows 10](kiosk-settings.md) 裝置建立專用裝置 Kiosk 設定檔。
+
+## <a name="see-also"></a>請參閱
+
+[在 Microsoft Intune 中對 Android 企業裝置進行設定及疑難排解](https://support.microsoft.com/help/4476974)

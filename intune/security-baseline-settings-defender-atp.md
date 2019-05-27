@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 05/17/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b4acb5c4e79ba6895849d28c4f44766132d4daf
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733440"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040736"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -156,7 +155,7 @@ ms.locfileid: "65733440"
    **預設值**：是
 
 - **BitLocker 抽取式磁碟機原則**  
-  此原則的值決定 BitLocker 用於抽取式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您選取 [是] 以啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定式磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。 
+  此原則的值決定 BitLocker 用於抽取式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您選取 [是] 以啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。 
 
   針對 BitLocker 抽取式磁碟機原則，請設定下列設定：
 
@@ -166,8 +165,8 @@ ms.locfileid: "65733440"
     - **加密方法**  
       **預設值**：AES 128 位元 CBC
 
-- **BitLocker 固定式磁碟機原則**  
-  此原則的值決定 BitLocker 用於固定式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定式磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。
+- **BitLocker 固定磁碟機原則**  
+  此原則的值決定 BitLocker 用於固定式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。
 
   針對 BitLocker 抽取式磁碟機原則，請設定下列設定：
 
@@ -178,7 +177,7 @@ ms.locfileid: "65733440"
       **預設值**：AES 128 位元 XTS
 
 - **BitLocker 系統磁碟機原則**  
-  此原則的值決定 BitLocker 用於檔案系統磁碟機加密的加密強度。 企業可能想要控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定式磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。  
+  此原則的值決定 BitLocker 用於檔案系統磁碟機加密的加密強度。 企業可能想要控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。  
 
   針對 BitLocker 系統磁碟機原則，請設定下列設定：  
 
@@ -242,7 +241,7 @@ ms.locfileid: "65733440"
   選取 [封鎖硬體裝置安裝] 時，有下列設定可用。  
 
   - **移除相符的硬體裝置**  
-    只有在 [Hardware device installation by setup classes] \(依安裝類別的硬體裝置安裝\) 設定為 [Block hardware device installation] \(封鎖硬體裝置安裝\) 時，才能使用此設定。  
+    只有在 [Hardware device installation by setup classes] \(依安裝類別安裝硬體裝置\) 設定為 [Block hardware device installation] \(封鎖硬體裝置安裝\) 時，才能使用此設定。  
  
     **預設**：沒有任何預設設定  
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02eac7eaa42f6f9c97426e0536e48a4bc399ed08
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ef84241f72f34e0f00516702d0928e0395478929
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461017"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044651"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 的電子郵件設定檔疑難排解
 
@@ -40,7 +39,7 @@ ms.locfileid: "57461017"
 
 1. 開啟 Microsoft Intune 系統管理主控台，並選取 [原則] 工作負載 > [設定原則]。
 
-2. 選取電子郵件設定檔，然後選擇 **[編輯]**。
+2. 選取電子郵件設定檔，然後選擇 **[編輯]** 。
 
 3. 選取 [允許從協力廠商應用程式傳送電子郵件]。
 
@@ -50,9 +49,9 @@ ms.locfileid: "57461017"
 
 2. 展開 [概觀] > [合規性設定] > [公司資源存取]，並選取 [電子郵件設定檔]。
 
-3. 以滑鼠右鍵按一下電子郵件設定檔，然後開啟 **[內容]**。
+3. 以滑鼠右鍵按一下電子郵件設定檔，然後開啟 **[內容]** 。
 
-4. 選取 **[同步處理設定]** 索引標籤上的 **[允許從協力廠商應用程式傳送電子郵件]**。
+4. 選取 **[同步處理設定]** 索引標籤上的 **[允許從協力廠商應用程式傳送電子郵件]** 。
 
 ## <a name="device-already-has-an-email-profile-installed"></a>裝置已經安裝電子郵件設定檔
 

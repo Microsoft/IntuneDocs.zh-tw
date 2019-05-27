@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: eb7ff33384b86267e007e986737eeea6b8d3203e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135163"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040130"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
 
@@ -36,7 +35,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **SonicWall Mobile Connect**
 - **F5 Access Legacy**：適用於 F5 Access 應用程式 2.1 版及更舊版本。
 - **F5 Access**：適用於 F5 Access 應用程式 3.0 版及更新版本。
-- **Palo Alto Networks GlobalProtect (Legacy)**：適用於 Palo Alto Networks GlobalProtect 應用程式 4.1 版及更舊版本。
+- **Palo Alto Networks GlobalProtect (Legacy)** ：適用於 Palo Alto Networks GlobalProtect 應用程式 4.1 版及更舊版本。
 - **Palo Alto Networks GlobalProtect**：適用於 Palo Alto Networks GlobalProtect 應用程式 5.0 版及更新版本。
 - **Pulse Secure**
 - **Cisco (IPSec)**

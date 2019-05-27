@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834716"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196772"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -31,7 +31,9 @@ ms.locfileid: "55834716"
 
 組織通常需要您讓裝置成為受控，才能存取其中的專屬資料。 裝置成為受控之後，組織可以透過其行動裝置管理提供者將原則和應用程式推送至裝置。 若要從您的裝置持續存取公司或學校資訊，您必須設定裝置以符合原則設定。  
 
-本文說明適用於 macOS 的 Intune 公司入口網站應用程式如何協助您註冊、設定及維護裝置，以符合您組織的需求。
+本文說明適用於 macOS 的 Intune 公司入口網站應用程式如何協助您註冊、設定及維護裝置，以符合您組織的需求。  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>公司入口網站應用程式的預期行為
 
@@ -58,7 +60,7 @@ ms.locfileid: "55834716"
 
 4. [裝置] 頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
     * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\)
-    * 如果您沒有任何裝置，橫幅會顯示：**[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
+    * 如果您沒有任何裝置，橫幅會顯示： **[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
 
      ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成符合您目前在公司入口網站中看到訊息的下列步驟。  

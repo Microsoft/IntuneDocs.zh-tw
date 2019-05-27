@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: 透過 SCEP 使用第三方憑證授權單位
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web 服務
-              href: certificates-symantec-configure.md
+            - name: 使用 DigiCert PKI
+              href: certificates-digicert-configure.md
             - name: 移除 SCEP 或 PKCS 憑證
               href: remove-certificates.md
         - name: eSIM 行動數據設定檔

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05941f35fe2a3501d6596e4d818027f7e1a57c79
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798410"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045247"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
@@ -111,7 +110,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-您可以僅將 GPO 套用至所選 GPO 之群組原則管理主控台內 **[安全性篩選]** 區域中指定的安全性群組。 依預設，GPO 會套用至 *[已驗證的使用者]*。
+您可以僅將 GPO 套用至所選 GPO 之群組原則管理主控台內 **[安全性篩選]** 區域中指定的安全性群組。 依預設，GPO 會套用至 *[已驗證的使用者]* 。
 
 -   在 **[Active Directory 使用者和電腦]** 嵌入式管理單元中，建立包含您不想讓 Intune 管理之電腦和使用者帳戶的新安全性群組。 例如，您可能將群組命名為 *Not In Microsoft Intune*。
 
@@ -121,5 +120,5 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 必須隨著 Intune 服務中的註冊情形變化來維護新的安全性群組。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 [使用 Microsoft Intune 管理 Windows 電腦](manage-windows-pcs-with-microsoft-intune.md)
