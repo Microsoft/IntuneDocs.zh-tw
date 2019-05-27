@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508990"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942041"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -75,7 +75,9 @@ ms.locfileid: "61508990"
 
   - 裝置未獲指派合規性政策，且沒有可檢查合規性之觸發程序
   - 裝置自上次更新合規性政策後就未曾簽入
-  - 裝置未與特定使用者建立關聯
+  - 裝置未與特定使用者建立關聯，例如：
+    - 透過不具使用者親和性的 Apple 裝置註冊計劃 (DEP) 購買的 iOS 裝置
+    - Android kiosk 或 Android Enterprise 專用裝置
   - 裝置使用裝置註冊管理員 (DEM) 帳戶註冊
 
 - **不符合規範︰** 裝置無法套用一或多個裝置合規性政策設定。 或者，使用者尚未遵守政策。

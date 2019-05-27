@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510044"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765406"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -567,4 +567,6 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
 - [使用 PKCS 憑證](certficates-pfx-configure.md)，或[從 Symantec PKI Manager Web 服務核發 PKCS 憑證](certificates-symantec-configure.md)
 - [新增協力廠商 CA 以搭配使用 SCEP 與 Intune](certificate-authority-add-scep-overview.md)
-- 如需其他協助，請使用[針對 Microsoft Intune 中的 SCEP 憑證設定檔部署進行疑難排解](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)指南。
+- 如需其他協助，請使用下列指南：
+  - [針對 Microsoft Intune 中的 SCEP 憑證設定檔部署進行疑難排解](https://support.microsoft.com/help/4457481) \(機器翻譯\)
+  - [針對要與 Microsoft Intune 憑證設定檔搭配使用的 NDES 設定進行疑難排解](https://support.microsoft.com/help/4459540) \(機器翻譯\)

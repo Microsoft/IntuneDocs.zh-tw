@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 5/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,37 +15,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add75e252c8d49025ac01832e5fb12afea9ede67
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+mr.reviewer: karthib
+ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512945"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975769"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中新增 Endpoint Protection 設定
 
-Endpoint Protection 可讓您控制裝置上的各種不同安全性功能，包括防火牆、Bitlocker、允許和封鎖應用程式、Windows Defender 和加密等。 您可以在 Microsoft Intune 中使用裝置設定檔來進行這些設定。
+透過 Intune，您可以使用裝置組態設定檔，來管理裝置上的一般端點保護安全性功能，包括：
+- 防火牆 
+- BitLocker
+- 允許和封鎖應用程式  
+- Windows Defender 和加密
 
 例如，您可以建立一個只允許 macOS 使用者從 Mac App Store 安裝應用程式的 Endpoint Protection 設定檔。 或者，在於 Windows 10 裝置上執行應用程式時，啟用 Windows SmartScreen。
 
-本文將說明如何建立設定檔。 接著，請選取裝置平台，以取得有關可用設定的更多詳細資料。
+建立設定檔之前，請檢閱下列文章，這些文章將詳細說明 Intune 可基於每個支援平台來管理的端點保護設定： 
+   - [macOS 設定](endpoint-protection-macos.md)
+   - [Windows 10 設定](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>建立包含 Endpoint Protection 設定的裝置設定檔
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)。
 3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
 4. 輸入 Endpoint Protection 設定檔的 [名稱] 和 [描述]。
 5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
    - **macOS**
    - **Windows 10 及更新版本**
 6. 從 [設定檔類型] 下拉式清單中，選擇 [Endpoint Protection]。 
-7. 您可設定的設定會視您選擇的平台而不同。 前往下列主題之一，即可取得每個平台的詳細設定︰
+7. 您可設定的設定會視您選擇的平台而不同。 請參閱：
    - [macOS 設定](endpoint-protection-macos.md)
-   - [Windows 10 設定](endpoint-protection-windows-10.md)
-8. 當您完成時，請返回 [建立設定檔] 頁面，然後按一下 [建立]。
+   - [Windows 10 設定](endpoint-protection-windows-10.md)  
 
-設定檔隨即建立，並出現在 [設定檔清單] 頁面上。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
+8. 設定適用的設定之後，選取 [建立設定檔] 頁面上的 [建立]。
 
-## <a name="next-steps"></a>後續步驟
+   設定檔隨即建立，並出現在 [設定檔清單] 頁面上。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
+
+
+## <a name="next-steps"></a>後續步驟  
+
 若要將設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。

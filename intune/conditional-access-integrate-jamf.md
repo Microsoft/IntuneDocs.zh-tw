@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cac92aeac895201459e692aae164f51dab10dfb0
+ms.sourcegitcommit: ca0f48982e49e90bc14fac5575077445e027f728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508118"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65712629"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -49,37 +49,52 @@ ms.locfileid: "61508118"
 
 ## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory] > [應用程式註冊]。
-2. 選取 [+新增應用程式註冊]。
-3. 輸入**顯示名稱**，例如 **Jamf 條件式存取**。
-4. 選取 [Web 應用程式 / API]。
-5. 使用 Jamf Pro 執行個體 URL 指定 [登入 URL]。
-6. 選取 [建立]。 應用程式會隨即建立，且入口網站會顯示應用程式詳細資料。
-7. 為新的應用程式儲存一份**應用程式識別碼**複本。 您會在稍後的程序中指定此識別碼。 接下來，選取 [設定]，然後移至 [API 存取] > [金鑰]。
-8. 在 [金鑰] 窗格上，指定 [描述]、[到期日] 前等待的時間，然後選取 [儲存] 以產生應用程式金鑰 (值)。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory] > [應用程式註冊]，然後選取 [新增註冊]。 
 
-   > [!IMPORTANT]
-   > 應用程式金鑰在此程序期間只會顯示一次。 請務必將它儲存在您可以輕鬆擷取的地方。
+2. 在 [註冊應用程式] 頁面上，指定下列詳細資料：
+   - 在 [名稱] 區段中，輸入有意義的應用程式名稱，例如 **Jamf 條件式存取**。
+   - 針對 [支援的帳戶類型] 區段，選取 [任何組織目錄中的帳戶]。 
+   - 針對 [重新導向 URI] 保留 Web 的預設值，然後為您的 Jamf Pro 執行個體指定 URL。  
 
-8. 在應用程式的 [設定] 窗格上，巡覽至 [API 存取] > [必要權限]。 選取任何現有的權限，然後按一下 [刪除] 並刪除所有權限。 當您新增權限時，必須刪除現有的權限，應用程式只有在具有單一必要權限時才能正常運作。  
-9. 若要指派新權限，請選取 [+新增] > [選取 API] > [Microsoft Intune API]，然後按一下 [選取]。
-10. 在 [啟用存取] 窗格上，選取 [傳送裝置屬性到 Microsoft Intune]，然後依序按一下 [選取] 和 [完成]。
-11. 在 [必要權限] 窗格上，選取 [授與權限]，然後選取 [是] 將必要權限套用至應用程式。
+3. 選取 [註冊] 以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
+
+4. 在應用程式的 [概觀] 頁面上，複製 [應用程式 (用戶端) 識別碼] 值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。  
+
+5. 選取 [管理] 下方的 [憑證及祕密]。 選取 [新增用戶端密碼] 按鈕。 在 [描述] 中輸入值、針對 [到期] 選取任意選項，然後選擇 [新增]。
+
+   > [!IMPORTANT]  
+   > 離開此頁面之前，複製用戶端密碼的值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。 此值無法在未重新建立應用程式註冊的情況下再次使用。  
+
+6. 選取 [管理] 下方的 [API 權限]。  選取現有的權限，然後選取 [移除權限] 以刪除那些權限。 由於您將新增權限，因此必須先刪除所有的現有權限，而應用程式只有在具備單一必要權限時才能正常運作。  
+
+7. 若要指派新的權限，請選取 [新增權限]。 在 [要求 API 權限] 頁面上，選取 [Intune]，然後選取 [應用程式權限]。 只選取 **update_device_attributes** 的核取方塊。  
+
+   選取 [新增權限] 以儲存此設定。  
+
+8. 在 [API 權限] 頁面上，選取 [代表 Microsoft 授與管理員同意]，然後選取 [是]。  
+
+   Azure AD 中的應用程式註冊程序已完成。
+
 
     > [!NOTE]
-    > 如果應用程式金鑰到期，您必須在 Microsoft Azure 中建立新的應用程式金鑰，然後更新 Jamf Pro 中的條件式存取資料。 Azure 允許您同時啟用舊金鑰與新金鑰，以避免服務中斷。
+    > 如果用戶端密碼到期，您必須在 Azure 中建立新的用戶端密碼，然後更新 Jamf Pro 中的條件式存取資料。 Azure 允許您同時啟用舊祕密與新金鑰，以避免服務中斷。
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Microsoft Intune] > [裝置相容性] > [夥伴裝置管理]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然後移至 [Microsoft Intune] > [裝置相容性] > [夥伴裝置管理]。
+
 2. 將您在先前程序期間儲存的應用程式識別碼貼上至 [Jamf Azure Active Directory 應用程式識別碼] 欄位，以啟用適用於 Jamf 的相容性連接器。
+
 3. 選取 [儲存]。
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中設定 Microsoft Intune 整合
 
 1. 在 Jamf Pro 中，瀏覽至 [全域管理] > [條件式存取]。 按一下 [Microsoft Intune 整合] 索引標籤上的 [編輯] 按鈕。
+
 2. 選取 [啟用 Microsoft Intune 整合] 核取方塊。
-3. 提供您 Azure 租用戶的相關必要資訊，包括 [位置]、[網域名稱]，以及您在先前步驟中儲存的 [應用程式識別碼] 和 [應用程式金鑰]。
+
+3. 提供關於您 Azure 租用戶的必要資訊，包括 [位置]、[網域名稱]、[應用程式識別碼]，以及您在 Azure AD 中建立應用程式時所儲存的 [用戶端密碼] 的值。  
+
 4. 選取 [儲存]。 Jamf Pro 會測試您的設定，並確認是否成功。
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>設定合規性原則並註冊裝置

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527210"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733092"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>監視 BitLocker 和裝置加密  
 Intune 提供集中式位置來識別 Windows 10 裝置的加密狀態，並協助您從裝置存取 BitLocker 的重要資訊 (位於 Azure Active Directory (Azure AD) 中)。  
 
-- [加密報表 (公開預覽)](#encryption-report) 提供裝置加密狀態和整備的相關詳細資料。 這些報表詳細資料可協助您找出導致您所要保護裝置無法成功加密的問題。  
-- 從 Intune 入口網站[檢視 BitLocker 詳細資料 (公開預覽)](#bitlocker-recovery-keys)，例如您裝置的金鑰識別碼和修復金鑰。  
+- [加密報表](#encryption-report)提供關於裝置加密狀態和整備程度的詳細資料。 這些報表詳細資料可協助您找出導致您所要保護裝置無法成功加密的問題。  
+- 從 Intune 入口網站內[檢視 BitLocker 詳細資料](#bitlocker-recovery-keys)，例如裝置的金鑰識別碼和修復金鑰。  
 
 ## <a name="encryption-report"></a>加密報表
-您可以使用加密報表 (公開預覽) 來檢視 Windows 10 裝置加密狀態的相關詳細資料。  
+您可以使用加密報表，來檢視關於 Windows 10 裝置加密狀態的詳細資料。  
 
-若要尋找報表，請登入 [Intune](https://aka.ms/intuneportal) 並移至 [裝置設定]，然後在 [監視] 下選取 [加密報表 (預覽)]。  
+若要尋找報表，請登入 [Intune](https://aka.ms/intuneportal) 並移至 [裝置設定]，然後在 [監視] 下方選取 [加密報表]。  
 
 ### <a name="prerequisites"></a>必要條件：
 裝置必須執行 Windows 1607 版或更新版本，才能出現在加密報表中。  
@@ -90,14 +90,14 @@ Intune 提供集中式位置來識別 Windows 10 裝置的加密狀態，並協�
    - 固定磁碟機的加密方法不符合 BitLocker 原則。  
    - 若要加密磁碟機，BitLocker 原則需要使用者以系統管理員身分登入；如果裝置已加入 Azure AD，則 AllowStandardUserEncryption 原則必須設定為 1。  
    - 未設定 Windows 修復環境 (WinRE)。  
-   - BitLocker 無法使用 TPM，因為不存在、已設定為無法在登錄中使用，或 OS 位於抽取式磁碟機。  
+   - BitLocker 無法使用 TPM，因為它不存在、已設定為無法在登錄中使用，或 OS 位於抽取式磁碟機。  
    - TPM 尚未備妥供 BitLocker 使用。  
    - 網路無法使用，但修復金鑰備份需要網路。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 修復金鑰
-在公開預覽中，Intune 可讓您從 Intune 入口網站存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視 Windows 10 裝置的 BitLocker 金鑰識別碼和修復金鑰。  為了能夠存取，裝置必須將其金鑰委付給 Azure AD。 
+Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視 Windows 10 裝置的 BitLocker 金鑰識別碼和修復金鑰。  為了能夠存取，裝置必須將其金鑰委付給 Azure AD。 
 1. 登入 [Intune](https://aka.ms/intuneportal)，移至 [裝置]，然後在 [管理] 下選取 [所有裝置]。
-2. 從清單中選取裝置，然後在 [監視] 下選取 [修復金鑰 - 預覽]。  
+2. 從清單中選取裝置，然後在 [監視] 下方選取 [修復金鑰]。  
   
 當 Azure AD 中有可用的金鑰時，會提供下列資訊：
 - BitLocker 金鑰識別碼

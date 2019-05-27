@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508259"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765364"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
@@ -133,3 +133,9 @@ ms.locfileid: "61508259"
 [指派裝置設定檔](device-profile-assign.md)  
 [使用 S/MIME 簽署和加密電子郵件](certificates-s-mime-encryption-sign.md)  
 [使用協力廠商憑證授權單位](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>請參閱
+
+[針對要與 Microsoft Intune 憑證設定檔搭配使用的 NDES 設定進行疑難排解](https://support.microsoft.com/help/4459540) \(機器翻譯\)
+
+[針對 Microsoft Intune 中的 SCEP 憑證設定檔部署進行疑難排解](https://support.microsoft.com/help/4457481) \(機器翻譯\)

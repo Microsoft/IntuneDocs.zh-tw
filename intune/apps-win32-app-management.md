@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135129"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853960"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -153,6 +153,8 @@ ms.locfileid: "65135129"
     > 您可以設定在 [使用者] 或 [系統] 內容中安裝 Win32 應用程式。 [使用者] 內容是指唯一的指定使用者。 [系統] 內容是指 Windows 10 裝置的所有使用者。
     >
     > 終端使用者不需要登入裝置來安裝 Win32 應用程式。
+    > 
+    > 將應用程式設定為安裝於使用者內容中，且裝置上的終端使用者具有管理員權限時，(根據預設) 將以管理員權限來執行 Win32 應用程式的安裝和解除安裝。
 
 4.  完成後，按一下 [確定]。
 
@@ -243,7 +245,7 @@ ms.locfileid: "65135129"
             Intune 代理程式會檢查指令碼的結果。 它會讀取指令碼寫入到標準輸出 (STDOUT) 串流、標準錯誤 (STDERR) 串流及結束代碼的值。 如果指令碼以非零值結束，代表指令碼執行失敗，且應用程式偵測狀態為未安裝。 如果結束代碼為零而 STDOUT 含有資料，表示應用程式偵測狀態是「已安裝」。 
 
             > [!NOTE]
-            > 當指令碼以 0 值結束時，指令碼執行便已成功。 第二個輸出通道表示已偵測到應用程式 - STDOUT 指出已在用戶端上找到應用程式。 我們並非要在 STDOUT 中尋找特定字串。
+            > Microsoft 建議將您的指令碼編碼為 UTF-8。 當指令碼以 0 值結束時，指令碼執行便已成功。 第二個輸出通道表示已偵測到應用程式 - STDOUT 指出已在用戶端上找到應用程式。 我們並非要在 STDOUT 中尋找特定字串。
 
         4.  當您新增完您的規則之後，請選取 [新增] \(\) > [確認] \(\)。
 

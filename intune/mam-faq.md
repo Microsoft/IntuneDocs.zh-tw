@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506809"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992891"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -51,6 +51,13 @@ Intune MAM 支援兩個組態︰
 
 **應用程式保護原則的範例有哪些？**<br></br>
 如需每個應用程式保護原則設定的詳細資訊，請參閱 [Android 應用程式保護原則設定](app-protection-policy-settings-android.md)和 [iOS 應用程式保護原則設定](app-protection-policy-settings-ios.md)。
+
+**可能會針對不同的裝置，同時將 MDM 與 MAM 原則套用至相同使用者嗎？例如，假設使用者能夠從他們自己已啟用 MAM 的機器中存取工作資源，同時也要開始處理並使用 Intune MDM 管理的裝置。針對此想法是否有任何需要注意的事項？**<br></br>
+如果您在未設定裝置狀態的情況下將 MAM 原則套用至使用者，則使用者將在 BYOD 裝置和 Intune 管理的裝置上取得 MAM 原則。 您也可以根據受控狀態來套用 MAM 原則。 因此，當您建立應用程式保護原則時，要在所有應用程式類型的目標旁邊選取 [否]。 接著，執行下列其中一項動作：
+- 將較不嚴格的 MAM 原則套用至 Intune 管理的裝置，並將較嚴格的 MAM 原則套用至非 MDM 註冊的裝置。
+- 僅將 MAM 原則套用至未註冊的裝置。
+
+如需詳細資料，請參閱[如何監視應用程式保護原則](app-protection-policies-monitor.md)。
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>您可以使用應用程式保護原則管理的應用程式
 

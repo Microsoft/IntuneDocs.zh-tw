@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135196"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975829"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -45,7 +45,114 @@ ms.locfileid: "65135196"
 
 -->  
 
+
 <!-- ########################## -->
+
+## <a name="week-of-may-13-2019"></a>2019 年 5 月 13 日當週 
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359-idready-wnready--"></a>Intune 原則會更新驗證方法與公司入口網站應用程式安裝  <!-- 1927359 idready wnready-->
+在已透過 [設定助理] 註冊的裝置上 (透過 Apple 的公司裝置註冊方法之一)，Intune 將不再支援公司入口網站 (當使用者從 App Store 手動安裝時)。 只有當您在註冊期間使用 Apple 設定助理進行驗證時，此變更才有意義。 此變更也只會影響透過下列各項註冊的 iOS 裝置：  
+* Apple Configurator
+
+* Apple Business Manager
+
+* Apple School Manager
+
+* Apple 裝置註冊方案 (DEP)
+
+如果使用者從 App Store 安裝公司入口網站應用程式，接著嘗試透過它註冊這些裝置，則它們將會收到錯誤。 這些裝置應該只有已在註冊期間透過 Intune 自動推送時，才會使用公司入口網站。 位於 Azure 入口網站上 Intune 中的註冊設定檔將會更新，如此您就能指定裝置的驗證方式，以及它們是否會收到公司入口網站應用程式。 如果您想讓 DEP 裝置使用者擁有公司入口網站，將必須在註冊設定檔中指定喜好設定。 
+
+此外，會在 iOS 公司入口網站應用程式中移除 [識別您的裝置] 畫面。 因此，想要啟用條件式存取或部署公司應用程式的管理員必須更新 DEP 註冊設定檔。 此需求只有在 DEP 註冊是透過安裝小幫手驗證時才適用。 在該情況下，您必須將公司入口網站推送到裝置。 若要這樣做，請選擇 [Intune] > [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 選擇權杖 > [設定檔] > 選擇設定檔 > [屬性] > 將 [安裝公司入口網站] 設定為 [True]。
+
+若要在已經註冊的 DEP 裝置上安裝公司入口網站，您將必須移至 [Intune] > [用戶端應用程式]，然後使用應用程式設定原則來將它推送為受控應用程式。 
+
+#### <a name="configure-how-end-users-update-a-line-of-business-lob-app-using-an-app-protection-policy----3568384---"></a>設定終端使用者如何使用應用程式保護原則來更新企業營運 (LOB) 應用程式 <!-- 3568384 -->
+您現在可以設定終端使用者可從何處取得企業營運 (LOB) 應用程式的更新版本。 終端使用者將可在 [應用程式最小版本] 條件式啟動對話方塊中看見此功能，其將提示終端使用者更新為 LOB 應用程式的最小版本。 您必須提供這些更新詳細資料作為 LOB 應用程式保護原則 (APP) 一部分。 此功能適用於 iOS 和 Android。 在 iOS 上，此功能需要整合 (或使用包裝工具包裝) 應用程式與 Intune SDK for iOS 10.0.7 版或更新版本。 在 Android 上，此功能需要最新版的公司入口網站。 若要設定終端使用者更新 LOB 應用程式的方式，應用程式需要透過金鑰 `com.microsoft.intune.myappstore` 傳送給它的受控應用程式設定原則。 傳送的值將定義終端使用者要從哪個存放區下載應用程式。 如果透過公司入口網站部署應用程式，則值必須為 `CompanyPortal`。 針對任何其他存放區，您必須輸入完整的 URL。
+
+#### <a name="intune-management-extension-powershell-scripts-----3734186-idready---"></a>Intune 管理延伸模組 PowerShell 指令碼  <!-- 3734186 idready -->
+您可以設定 PowerShell 指令碼，以在裝置上使用使用者的管理員權限來執行。 如需詳細資訊，請參閱[在 Windows 10 裝置上的 Intune 中使用 PowerShell 指令碼](intune-management-extension.md)和 [Win32 應用程式管理](apps-win32-app-management.md)。
+
+#### <a name="android-enterprise-app-management----4459905---"></a>Android 企業應用程式管理 <!-- 4459905 -->
+為讓 IT 系統管理員輕鬆地設定及使用 Android 企業管理，Intune 會自動新增四個通用 Android 企業相關應用程式到 Intune 系統管理主控台。 四個 Android 企業應用程式如下：
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - 用於 Android 企業完全受控案例。
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  協助您登入您的帳戶 (若您使用雙因素驗證)。
+- **[Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用於 應用程式保護原則 (APP) 與 Android 企業公司設定檔案例。
+- [受控家用案例](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
+
+之前，IT 系統管理員需要在安裝期間於[受控 Google Play 商店](https://play.google.com/store/apps)中手動尋找及核准這些應用程式。 此變更移除了先前那些手動步驟，讓客戶可以更輕鬆、更快速地使用 Android 企業管理。
+
+系統管理員在第一次連線到其 Intune 租用戶的受控 Google Play 商店時，將會看到這四個應用程式自動新增到其 Intune 應用程式清單。 如需詳細資訊，請參閱[將您的 Intune 帳戶連結到受控 Google Play 帳戶](connect-intune-android-enterprise.md)。 針對已連結其租用戶或已使用 Android 企業的租用戶，系統管理員不需要採取任何動作。 在 2019 年 5 月服務推出之後 7 天內，那四個應用程式將會自動顯示。
+
+### <a name="device-configuration"></a>裝置設定
+
+####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Defender ATP 的 Intune 安全性工作 (公開預覽)     <!-- 3208597 -->
+在公開預覽中，您可以使用 Intune 來管理 Microsoft Defender 進階威脅防護 (ATP) 的安全性工作。 這會與 ATP 整合，並新增一個以風險為基礎的方法來探索、設定優先順序及補救端點弱點和錯誤設定，同時減少從探索到風險降低之間的時間。
+
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>在 Windows 10 裝置合規性政策中檢查是否有 TPM 晶片組 <!-- 3617671   idstaged-->
+許多 Windows 10 及更新版本的裝置都具有信賴平台模組 (TPM) 晶片組。 這個更新引進新的合規性設定，此設定會檢查裝置上的 TPM 晶片版本。 
+
+[Windows 10 與更新版本的合規性原則設定](compliance-policy-create-windows.md#device-security)說明此設定。
+
+適用於：Windows 10 及更新版本
+
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>在 iOS 裝置上，防止終端使用者修改其個人熱點，並停用 Siri 伺服器記錄 <!-- 4097904   --> 
+您會在 iOS 裝置上建立裝置限制設定檔 ([裝置設定] > [設定檔] > [建立設定檔] > 選取 [iOS] 作為平台 > 選取 [裝置限制] 作為設定檔類型)。 此更新包括您可以設定的新設定：
+
+- **內建應用程式**：在伺服器端記錄 Siri 命令
+- **無線**：使用者修改個人熱點 (僅限受監督)
+
+若要查看這些設定，請移至[適用於 iOS 的內建應用程式設定](device-restrictions-ios.md#built-in-apps)和[適用於 iOS 的無線設定](device-restrictions-ios.md#wireless)。
+
+適用於：iOS 12.2 與更新版本
+
+#### <a name="new-classroom-app-device-restriction-settings-for-macos-devices----4097905-----"></a>適用於 macOS 裝置的新教室應用程式裝置限制設定 <!-- 4097905   --> 
+您可以為 macOS 裝置建立裝置設定設定檔 ([裝置設定] > [設定檔] > [建立設定檔] > 選取 [macOS] 作為平台 > 選取 [裝置限制] 作為設定檔類型)。 此更新包括新的教室應用程式設定、封鎖螢幕擷取畫面的選項，以及停用 iCloud 照片圖庫的選項。
+
+若要查看目前的設定，請前往 [macOS 裝置設定以使用 Intune 允許或限制功能](device-restrictions-macos.md)。
+
+適用於：macOS
+
+#### <a name="the-ios-password-to-access-app-store-setting-is-renamed---4557891----"></a>將用來存取 App Store 設定的 iOS 密碼重新命名<!-- 4557891  -->
+將 [存取 App Store 的密碼] 設定重新命名為 [所有購買都需要 iTunes 密碼] ([裝置設定] > [設定檔] > [建立設定檔] > [iOS] (針對平台) > [裝置限制] (針對設定檔類型) > [App Store、文件檢視、遊戲])。
+
+若要查看可用的設定，請移至 [App Store、文件檢視、遊戲的 iOS 設定](device-restrictions-ios.md#app-store-doc-viewing-gaming)。
+
+適用於：iOS
+
+####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender 進階威脅防護基準 (預覽)  <!--  3754134 -->
+我們已新增 [Microsoft Defender 進階威脅防護](security-baseline-settings-defender-atp.md)設定的安全性基準預覽。  
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="windows-enrollment-status-page-esp-is-now-generally-available----3605348---"></a>Windows 註冊狀態頁面 (ESP) 現已全面上市 <!-- 3605348 -->
+註冊狀態頁面現已結束預覽。 如需詳細資訊，請參閱[設定註冊狀態頁面](windows-enrollment-status.md)。
+
+
+#### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation-----4593669---"></a>Intune 使用者介面更新 - 建立 Autopilot 註冊設定檔  <!-- 4593669 -->
+建立 Autopilot 註冊設定檔的使用者介面已更新，以符合 Azure 使用者介面樣式。 如需詳細資訊，請參閱[建立 Autopilot 註冊設定檔](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile) \(英文\)。 接下來，將其他 Intune 案例更新為這個新的 UI 樣式。
+
+#### <a name="enable-autopilot-reset-for-all-windows-devices----4225665---"></a>針對所有 Windows 裝置啟用 Autopilot 重設 <!-- 4225665 -->
+Autopilot 重設目前適用於所有 Windows 裝置，即使未設定為使用註冊狀態頁面的裝置也適用。 如果未在初始裝置註冊期間針對裝置設定註冊狀態頁面，則裝置將在登入之後直接前往桌面。 在 Intune 中最多可能需要 8 小時來進行同步處理並顯示符合規範。 如需詳細資訊，請參閱[使用遠端 Windows Autopilot 重設來重設裝置](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote) \(部分機器翻譯\)。
+
+#### <a name="exact-imei-format-not-required-when-searching-all-devices---30407680---"></a>搜尋所有裝置時不需要精確的 IMEI 格式 <!--30407680 -->
+您不需要在搜尋**所有裝置**時，於 IMEI 編號中包含空格。
+
+#### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>在 Apple 入口網站刪除裝置將反映在 Intune 入口網站中 <!--2489996 -->
+若從 Apple 的裝置註冊計劃或 Apple 商務管理員入口網站刪除裝置，在下次同步時，會自動將該裝置從 Intune 刪除。
+
+
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="the-encryption-report-is-out-of-public-preview------4587546--------"></a>加密報表已結束公開預覽   <!-- 4587546      -->
+現已正式推出[適用於 BitLocker 和裝置加密的報表](encryption-monitor.md)，其不再是公開預覽的一部分。 
+
+<!-- ########################## -->
+
+#### <a name="outlook-signature-and-biometric-settings-for--ios-and-android-devices----4050557---"></a>適用於 iOS 和 Android 裝置的 Outlook 簽章和生物特徵辨識設定 <!-- 4050557 -->
+您現在可以指定是否要在 iOS 和 Android 裝置上的 Outlook 中啟用預設簽章。 此外，您可以選擇允許使用者在 iOS 上的 Outlook 中變更生物特徵辨識設定。
 
 ## <a name="week-of-may-6-2019"></a>2019 年 5 月 6 日當週 
 
@@ -56,7 +163,7 @@ ms.locfileid: "65135196"
 F5 發行了 BIG-IP 13 的更新，可在 Intune 中於 iOS 上的 F5 Access 提供 NAC 功能。 若要使用此功能：
 
 - 將 BIG-IP 更新為 13.1.1.5 版。 不支援 BIG-IP 14。
-- 針對 NAC 整合 BIG-IP 與 Intune。 步驟位於 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態)。
+- 針對 NAC 整合 BIG-IP 與 Intune。 步驟位於 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態)。
 - 在 Intune 中，確認 VPN 設定檔中的 [啟用網路存取控制 (NAC)] 設定。
 
 若要查看可用的設定，請前往[在 iOS 裝置上進行 VPN 設定](vpn-settings-ios.md)。
@@ -111,7 +218,7 @@ Android 裝置上 Intune 應用程式防護原則 (APP) 現在使用符合 FIPS 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Enterprise 工作設定檔裝置的其他受控 Google Play 應用程式報告 <!-- 4105925  -->
 針對部署到 Android Enterprise 工作設定檔裝置的受控 Google Play 應用程式，您可以檢視裝置上所安裝應用程式的特定版本號碼。 這只適用於必要的應用程式。 未來版本中將會針對可用的應用程式啟用相同功能。 
 
-#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS 協力廠商鍵盤 <!-- 4111843 idready eeready -->
+#### <a name="ios-third-party-keyboards----4111843-----"></a>iOS 協力廠商鍵盤 <!-- 4111843   -->
 iOS **協力廠商鍵盤**設定的 Intune 應用程式防護原則 (APP) 支援將因 iOS 平台的變更結束。 您將無法在 Intune 管理主控台中設定此設定，且無法在 Intune 應用程式 SDK 中於用戶端上實行此設定。
 
 ### <a name="device-configuration"></a>裝置設定
@@ -1131,7 +1238,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 您現在可以[建立並指派](windows-enrollment-status.md)多個註冊狀態頁面設定檔至 Azure AD 群組。
 
 #### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune---2748613--"></a>從裝置註冊計劃移轉到 Intune 中的 Apple Business Manager <!--2748613-->
-Apple Business Manager (ABM) 能在 Intune 中運作，您可以將您的帳戶從裝置註冊計劃 (DEP) 升級到 ABM。 Intune 中的程序都相同。 若要將您的 Apple 帳戶從 DEP 升級到 ABM，請前往 [https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817)。
+Apple Business Manager (ABM) 能在 Intune 中運作，您可以將您的帳戶從裝置註冊計劃 (DEP) 升級到 ABM。 Intune 中的程序都相同。 若要將您的 Apple 帳戶從 DEP 升級到 ABM，請前往 [https://support.apple.com/HT208817]( https://support.apple.com/HT208817)。
 
 ### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page---2748656--"></a>[裝置註冊概觀] 頁面上的 [警示] 和 [註冊狀態] 索引標籤 <!--2748656-->
 警示和註冊失敗現在會出現在 [裝置註冊概觀] 頁面的個別索引標籤上。

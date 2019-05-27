@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7ba5ca4dcd8e43d63e98c281cac3487def8a0045
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490144"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765327"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
@@ -85,3 +85,6 @@ Apple School Manager 是針對學校提供的裝置採購暨註冊方案。 就�
 
 如果需要使用者親和性，請在註冊裝置之前確認裝置的註冊設定檔已選取 [使用者親和性]。 若要變更裝置的親和性狀態，您必須將裝置淘汰並重新註冊該裝置。
 
+## <a name="see-also"></a>請參閱
+
+[針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解](https://support.microsoft.com/help/4039809) \(英文\)

@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用安全性基準 - Azure | Microsoft Docs
-description: 新增或設定建議的群組安全性設定，使用 Microsoft Intune 來保護裝置上的使用者和資料，以用於行動裝置管理。 啟用 BitLocker、設定 Windows Defender 進階威脅防護、控制 Internet Explorer、使用 SmartScreen、設定本機安全性原則、需要密碼、封鎖網際網路下載項目等等。
+description: 新增或設定建議的群組安全性設定，使用 Microsoft Intune 來保護裝置上的使用者和資料，以用於行動裝置管理。 啟用 BitLocker、設定 Microsoft Defender 進階威脅防護、控制 Internet Explorer、使用 SmartScreen、設定本機安全性原則、需要密碼、封鎖網際網路下載項目等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197633"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732565"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中建立 Windows 10 安全性基準
 
@@ -44,9 +44,19 @@ ms.locfileid: "65197633"
 
 指派設定檔之後，您可以監視設定檔和基準。 例如，您可以查看哪些裝置符合基準，哪些不符合基準。
 
-本文示範如何使用安全性基準來建立設定檔、指派設定檔，以及監視設定檔。
+本文可協助您使用安全性基準來建立設定檔、指派設定檔，以及監視設定檔。
 
 [Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) \(部分機器翻譯\) 是深入了解此功能的絕佳資源。 [行動裝置管理](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) \(英文\) 是關於 MDM 以及您如何在 Windows 裝置上加以運用的絕佳資源。
+
+## <a name="available-security-baselines"></a>可用的安全性基準  
+
+下列安全性基準可以與 Intune 搭配使用。
+- **預覽：2018 年 10 月的 MDM 安全性基準**  
+  [檢視設定](security-baseline-settings-windows.md)
+
+- **預覽：Windows Defender ATP 基準**  
+  [檢視設定](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>必要條件
 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
@@ -60,51 +70,36 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 在 [Azure 入口網站](https://portal.azure.com/)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-2. 選取 [裝置安全性] > [安全性基準 (預覽)]。 系統提供可用的基準清單。 新增更多基準時，您將會在此處看到它們：
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然後選取 [裝置安全性] > [安全性基準 (預覽)]。 系統提供可用的基準清單。 
 
-    ![查看 Intune 中目前可用的安全性基準清單](./media/security-baselines/available-baselines.png)
+    ![選取要設定的安全性基準](./media/security-baselines/available-baselines.png)
 
-3. 選取您想要使用的基準 > [建立設定檔]。
-4. 在 [基本資訊] 中，輸入下列內容：
 
-    - **名稱**：輸入安全性基準設定檔的名稱。 例如，輸入 `pilot Windows 10 MDM baseline - Oct 2018`。
+2. 選取您想要使用的基準，然後選取 [建立設定檔]。  
+
+3. 在 [基本] 索引標籤上，指定下列屬性：
+
+    - **名稱**：輸入安全性基準設定檔的名稱。 例如，輸入「Defender ATP 的標準設定檔」
     - **描述**：輸入一些文字來描述此基準的用途。 您可以針對描述輸入任何想要的文字。 它是選擇性的，但絕對建議使用。
 
-5. 展開 [設定]。 在清單中，您會在此安全性基準中看到所有設定，以及自動設定該設定的結果。 建議使用這些設定及其值，但您可加以變更。
+4. 選取 [組態] 索引標籤，以檢視此基準中 [設定] 的可用群組。 選取群組以展開它，並檢視它所包含的個別設定。 設定具有安全性基準的預設組態。 重新設定預設設定以符合您的商務需求。  
 
-    ![在 Intune 中展開設定，以查看此安全性基準中的所有設定](./media/security-baselines/sample-list-of-settings.png)
+    ![展開群組以檢視該群組的設定](./media/security-baselines/sample-list-of-settings.png)
 
-    展開部分設定以檢查其值。 例如，展開 [Windows Defender]。 請注意部分設定及其設定結果：
+5. 選取 [指派] 索引標籤，以將基準指派給群組。 將基準指派給現有的群組，或者使用 Intune 主控台中的標準程序來建立新群組，以完成您的組態。  
 
-    ![查看 Intune 中自動設定部分 Windows Defender 設定的結果](./media/security-baselines/expand-windows-defender.png)
+   ![指派設定檔](./media/security-baselines/assignments.png)
+  
+6. 當您準備好部署基準時，選取 [檢閱 + 建立] 索引標籤來檢閱基準的詳細資料。 然後，選取 [儲存設定檔] 來儲存及部署設定檔。 
 
-6. **建立**設定檔。 
-7. 選取 [設定檔]。 您的設定檔隨即建立，並顯示於清單中。 但它不會執行任何動作。 接下來，請指派設定檔。
+   ![檢閱基準](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>指派設定檔
+   儲存之後，設定檔即會在裝置使用 Intune 簽入時推送給它們。 因此，它可以立即發生。
 
-建立設定檔之後，就可以將它指派給您的使用者、裝置和群組。 指派之後，就會將設定檔及其設定套用至您選擇的使用者、裝置和群組。
+   > [!TIP]  
+   > 您可以儲存設定檔，而不需先將它指派給群組。 您可以稍後要加入群組時再編輯設定檔。 
 
-1. 在 Intune 中，選取 [安全性基準] > 選擇基準 > [設定檔]。
-2. 選取您的設定檔 > [指派]。
-
-    ![在 Intune 中選擇您的安全性基準設定檔，然後按一下指派以部署設定檔](./media/security-baselines/assignments.png)
-
-3. 在 [包含] 索引標籤中，新增您想要套用此原則的使用者、群組或裝置。
-
-    > [!TIP]
-    > 請注意，您也可以**排除**群組。 如果您將原則套用至**所有使用者**，請考慮排除系統管理員群組。 萬一發生某些事情，您和您的系統管理員都不希望遭到鎖定。
-
-4. [儲存] 變更。
-
-儲存之後，設定檔即會在裝置使用 Intune 簽入時推送給它們。 因此，它可以立即發生。
-
-## <a name="available-security-baselines"></a>可用的安全性基準  
-
-下列安全性基準可以與 Intune 搭配使用。
-- **預覽：MDM 安全性基準**
-  - 版本：[2018 年 10 月](security-baseline-settings-windows.md)
+7. 建立設定檔之後，您可以藉由移至 [裝置安全性] > [安全性基準]、選取您設定的基準，然後選取 [設定檔] 來編輯該設定檔。  選取設定檔，然後選取 [屬性] 來編輯設定，接著選取 [指派] 來編輯接收此基準的群組。 
 
 ## <a name="q--a"></a>問答集
 
