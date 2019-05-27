@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 551d77b21e69eca76c4d9804130f253a69ca736b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50269e63f016c1d4f74b006d7748e5c300faac61
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566126"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050233"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 macOS 裝置的 Wi-Fi 設定
 
@@ -44,7 +43,7 @@ ms.locfileid: "57566126"
 - **隱藏的網路**：選擇 [啟用] 可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用] 可在裝置的可用網路清單中顯示此網路。
 - **安全性類型**：選取向 Wi-Fi 網路驗證時要使用的安全性通訊協定。 選項包括：
 
-  - **開放 (無驗證)**：只有在網路不安全時才使用此選項。
+  - **開放 (無驗證)** ：只有在網路不安全時才使用此選項。
   - **WPA/WPA2 - Personal**：在 [預先共用金鑰] 中輸入密碼。 當您的組織建置或設定網路時，也會設定密碼或網路金鑰。 請輸入此密碼或網路金鑰作為 PSK 值。
   - **4**
 
@@ -64,7 +63,7 @@ ms.locfileid: "57566126"
 
   - **EAP-FAST**：輸入**受保護的存取認證 (PAC) 設定**。 此選項使用受保護的存取認證，用來建立用戶端與驗證伺服器之間已驗證的通道。 選項包括：
     - **請勿使用 (PAC)**
-    - **使用 (PAC)**：如果現有的 PAC 檔案已存在，請使用它。
+    - **使用 (PAC)** ：如果現有的 PAC 檔案已存在，請使用它。
     - **使用及佈建 PAC**：建立 PAC 檔案並新增到您的裝置。
     - **使用及匿名佈建 PAC**：建立 PAC 檔案，並在未向伺服器驗證的情況下新增到您的裝置。
 
@@ -77,7 +76,7 @@ ms.locfileid: "57566126"
 
       按一下 [確定] 以儲存您的變更。
 
-    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)**：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)** ：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
       按一下 [確定] 以儲存您的變更。
 
@@ -91,7 +90,7 @@ ms.locfileid: "57566126"
     - **用戶端驗證** - 選擇 [驗證方法]。 選項包括：
 
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 另請輸入：
-        - **非 EAP 方法 (內部識別)**：選擇驗證連線的方式。 請務必選擇與您的 Wi-Fi 網路設定相同的通訊協定。
+        - **非 EAP 方法 (內部識別)** ：選擇驗證連線的方式。 請務必選擇與您的 Wi-Fi 網路設定相同的通訊協定。
 
           選項包括：[未加密的密碼 (PAP)]、[Challenge Handshake 驗證通訊協定 (CHAP)]、[Microsoft CHAP (MS-CHAP)]，或 [Microsoft CHAP 第 2 版 (MS-CHAP v2)]
 
@@ -99,7 +98,7 @@ ms.locfileid: "57566126"
 
         按一下 [確定] 以儲存您的變更。
 
-      - **識別隱私權 (外部識別)**：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
+      - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
   - **LEAP**
 
@@ -118,7 +117,7 @@ ms.locfileid: "57566126"
 
         按一下 [確定] 以儲存您的變更。
 
-      - **識別隱私權 (外部識別)**：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
+      - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
 - **Proxy 設定**：選項包括：
   - **無**：不設定任何 Proxy 設定。

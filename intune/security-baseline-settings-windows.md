@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733053"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045042"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>適用於 Intune 的 Windows 安全性基準設定  
 
@@ -1086,7 +1085,7 @@ ms.locfileid: "65733053"
   **預設值**：是
 
 - **將檔案及登錄寫入失敗虛擬化並儲存至每一使用者位置**  
-  此原則設定可控制應用程式寫入失敗是否會重新導向至定義的登錄和檔案系統位置。 此原則設定會抑制以系統管理員身分而執行並將執行資料寫入 *%ProgramFiles%*、*%Windir%*、*%Windir%\system32* 或 *HKLM\Software* 的應用程式。
+  此原則設定可控制應用程式寫入失敗是否會重新導向至定義的登錄和檔案系統位置。 此原則設定會抑制以系統管理員身分而執行並將執行資料寫入 *%ProgramFiles%* 、 *%Windir%* 、 *%Windir%\system32* 或 *HKLM\Software* 的應用程式。
   
   **預設值**：是
 

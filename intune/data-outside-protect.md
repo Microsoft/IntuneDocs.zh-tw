@@ -8,7 +8,6 @@ author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0882fb19d3ce74c837b83973ec07f391bc2875fa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: ca7c8ebb366b24ffb079951d662e8c8b119b4838
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799434"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048538"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止未經授權的公司資料存取
 
 您可以分類、標記及保護 Office 365 文件和電子郵件，這樣就只有授權使用者才能存取資料。 IT 系統管理員或使用者設定了規則和條件後，系統就會自動管理設定。 或者，IT 小組可以提供建議的設定供使用者遵循。 系統管理員和使用者也可以撤銷已與其他人共用之資料的存取權，而無須另一個授權單位的協助。 這樣做的結果是，即使資料已離開公司的網路，也能控制開啟或更新受保護資料的人員。 
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 當您符合下列需求時，可以使用下列行動計劃：
 * 您的公司已可安全地轉換到雲端。
@@ -46,7 +45,7 @@ ms.locfileid: "58799434"
 
 您可以共用[如何和何時保護含有敏感性資訊的文件和電子郵件](https://docs.microsoft.com/information-protection/deploy-use/help-users)的詳細資料。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在接下來的步驟中，您可以深入了解提高公司資料保護的其他方式，包含： 
 

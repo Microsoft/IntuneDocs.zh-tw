@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ef14d8ed3b1635fba183134b0d457ddc82ae329
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799226"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046931"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 電腦的使用者裝置連結
 
@@ -41,7 +40,7 @@ ms.locfileid: "58799226"
 
    [連結使用者] 對話方塊會顯示可用使用者清單，列出使用者的顯示名稱、使用者識別碼，以及每個使用者目前連結的電腦數目。 如果使用者已經連結到選取的電腦，該使用者的名稱和使用者識別碼便會顯示在 [目前使用者] 下方。 如果電腦未連結到任何使用者，[目前使用者] 下方將會出現 [沒有使用者]。
 
-3. 執行下列其中一個動作：
+3. 請執行下列其中一項動作：
 
    - 若要讓電腦與目前的使用者保持連結 (如有)，請選擇 [取消]。
 
@@ -52,6 +51,6 @@ ms.locfileid: "58799226"
 > [!TIP]
 > 如果您想要限制終端使用者將自己連結到電腦的能力，請啟用 [Microsoft Intune 代理程式設定] 原則中的 [限制使用者將自己連結到電腦的能力] 選項。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

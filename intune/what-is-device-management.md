@@ -7,7 +7,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
-ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.custom: intune
@@ -16,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788440"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050266"
 ---
 # <a name="what-is-device-management"></a>什麼是裝置管理？ 
 
@@ -66,9 +65,9 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>選擇適合您的裝置管理解決方案
 
-有兩種方法可用來進行裝置管理。 首先，您可以使用 Intune 內建的功能，來管理裝置的不同層面。 這個方法稱為**行動裝置管理 (MDM)**。 使用者會「註冊」其裝置，並使用憑證與 Intune 通訊。 身為 IT 系統管理員，您會在裝置上推送應用程式、將裝置限制在特定作業系統、封鎖個人裝置及執行其他工作。 如果裝置遺失或遭竊，您也可以從裝置移除所有資料。 
+有兩種方法可用來進行裝置管理。 首先，您可以使用 Intune 內建的功能，來管理裝置的不同層面。 這個方法稱為**行動裝置管理 (MDM)** 。 使用者會「註冊」其裝置，並使用憑證與 Intune 通訊。 身為 IT 系統管理員，您會在裝置上推送應用程式、將裝置限制在特定作業系統、封鎖個人裝置及執行其他工作。 如果裝置遺失或遭竊，您也可以從裝置移除所有資料。 
 
-在第二個方法中，您可以管理裝置上的應用程式。 這個方法稱為**行動應用程式管理 (MAM)**。 使用者可以使用其個人裝置存取組織資源。 開啟應用程式時 (例如電子郵件或 SharePoint)，系統會提示使用者進行額外驗證。 如果裝置遺失或遭竊，您可以從裝置移除所有組織資料。 
+在第二個方法中，您可以管理裝置上的應用程式。 這個方法稱為**行動應用程式管理 (MAM)** 。 使用者可以使用其個人裝置存取組織資源。 開啟應用程式時 (例如電子郵件或 SharePoint)，系統會提示使用者進行額外驗證。 如果裝置遺失或遭竊，您可以從裝置移除所有組織資料。 
 
 您也可以使用 [MDM 與 MAM](https://docs.microsoft.com/intune/byod-technology-decisions) 的組合。
 
