@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509971"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039657"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>更新的 Intune 合規性報表
 當您使用 Intune 將 Windows 更新部署到 Windows 10 裝置時，請檢視更新合規性的詳細資料，做法是使用 Intune 或稱為「更新合規性」的免費解決方案，該解決方案是 Microsoft Operations Management Suite (OMS) 的一部分。

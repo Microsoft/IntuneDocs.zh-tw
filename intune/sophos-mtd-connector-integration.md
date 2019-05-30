@@ -8,19 +8,18 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67f3f329cb66716a2126f47eb2984ca26854b6de
-ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
+ms.openlocfilehash: eeddbf39093210e640125db3be6ddd6bcad7d59b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64880752"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044991"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>整合 Sophos Mobile 與 Intune  
 
@@ -49,22 +48,22 @@ Sophos Mobile 應用程式授權程序如下：
 
 ## <a name="to-set-up-sophos-mobile-integration"></a>設定 Sophos Mobile 整合  
 
-1. 登入 [Azure 入口網站]( https://portal.azure.com/)，前往 [Intune] > 裝置合規性 > Mobile Threat Defense > 並選取 [新增]。  
-2. 在 [新增連接器] 頁面上，使用下拉式清單，並選取 [Sophos]。 然後選取 [建立]。  
-3. 選取的連結 [開啟 Sophos 系統管理員主控台]。  
+1. 登入 [Azure 入口網站]( https://portal.azure.com/)，前往 [Intune]   > 裝置合規性   > Mobile Threat Defense  > 並選取 [新增]  。  
+2. 在 [新增連接器]  頁面上，使用下拉式清單，並選取 [Sophos]  。 然後選取 [建立]  。  
+3. 選取的連結 [開啟 Sophos 系統管理員主控台]  。  
 4. 使用 Sophos 認證登入 [Sophos 系統管理員主控台](https://central.sophos.com/)。  
-5. 前往 行動裝置 > 設定 > 設定 > Sophos 設定。  
-6. 在 [Sophos 設定] 頁面上，選取 [Intune MTD] 索引標籤。  
+5. 前往 行動裝置   > 設定   > 設定   > Sophos 設定  。  
+6. 在 [Sophos 設定]  頁面上，選取 [Intune MTD]  索引標籤。  
    ![Sophos 設定](./media/sophos-mtd-connector-integration/sophos-setup.png) 
  
-7. 選取 [繫結]，然後選取 [是]。 Sophos 會連線到 Intune，並要求您登入自己的 Intune 訂用帳戶。 
-8. 在 Microsoft Intune 驗證視窗中，輸入您的 Intune 認證，並 [接受] *Sophos Mobile Thread Defense* 的權限要求。  
+7. 選取 [繫結]  ，然後選取 [是]  。 Sophos 會連線到 Intune，並要求您登入自己的 Intune 訂用帳戶。 
+8. 在 Microsoft Intune 驗證視窗中，輸入您的 Intune 認證，並 [接受]  *Sophos Mobile Thread Defense* 的權限要求。  
    ![Intune 驗證](./media/sophos-mtd-connector-integration/intune-authentication.png)
 
-9. 在 [Sophos 設定] 頁面上，選取 [儲存] 以完成 Intune 的設定：  
+9. 在 [Sophos 設定]  頁面上，選取 [儲存]  以完成 Intune 的設定：  
    ![儲存 Sophos 設定](./media/sophos-mtd-connector-integration/save-sophos-configuration.png)  
 
-1. 出現 [Successful Integration] \(成功整合\) 訊息時，整合即完成。  
+1. 出現 [Successful Integration] \(成功整合\)  訊息時，整合即完成。  
 1. 現在已可在 Intune 主控台中使用 Sophos。  
 
 

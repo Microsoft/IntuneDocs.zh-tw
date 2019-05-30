@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61516833"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046432"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -44,7 +43,7 @@ ms.locfileid: "61516833"
 
 ![Microsoft Intune 應用程式的螢幕擷取畫面，其中顯示 Jane 的 Android 裝置詳細資料。](./media/1904-intune-app-device-details.png)   
 
-[設定存取] 畫面的範例螢幕擷取畫面：  
+[設定存取]  畫面的範例螢幕擷取畫面：  
 
 ![Microsoft Intune 應用程式的螢幕擷取畫面，其中顯示設定存取註冊畫面。](./media/1904-intune-app-setup-access.png)   
 
@@ -52,7 +51,7 @@ ms.locfileid: "61516833"
 
 ![Microsoft Intune 應用程式的螢幕擷取畫面，其中顯示側邊功能表。](./media/1904-intune-app-navigation-menu.png)   
 
-[說明] 畫面的範例螢幕擷取畫面：  
+[說明]  畫面的範例螢幕擷取畫面：  
 
 ![Microsoft Intune 應用程式中 [說明] 畫面的螢幕擷取畫面。](./media/1904-intune-app-help.png)   
 
@@ -73,7 +72,7 @@ iOS 版公司入口網站註冊畫面和步驟，為了配合 Apple iOS 12.2 中
 
 ## <a name="week-of-february-19-2019"></a>2019 年 2 月 19 日當週  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>在 Windows 10 版公司入口網站應用程式中新增 [應用程式類別] 畫面<!-- 3834780 WNready4Review -->  
-新增了稱為 [應用程式類別] 的畫面，以改善 Windows 10 版公司入口網站中的應用程式瀏覽和選取體驗。 使用者現在會看到其應用程式依類別排序，例如 [精選]、[教育] 和 [生產力]。 這項變更會出現在公司入口網站 10.3.3451.0 版和更新版本。 如需在公司入口網站中安裝應用程式的詳細資訊，請參閱[在裝置上安裝和共用應用程式](/intune-user-help/install-apps-cpapp-windows)。  
+新增了稱為 [應用程式類別]  的畫面，以改善 Windows 10 版公司入口網站中的應用程式瀏覽和選取體驗。 使用者現在會看到其應用程式依類別排序，例如 [精選]  、[教育]  和 [生產力]  。 這項變更會出現在公司入口網站 10.3.3451.0 版和更新版本。 如需在公司入口網站中安裝應用程式的詳細資訊，請參閱[在裝置上安裝和共用應用程式](/intune-user-help/install-apps-cpapp-windows)。  
 
 ![Windows 10 版公司入口網站中 [應用程式類別] 畫面的螢幕擷取畫面。](./media/1902_CP_app_categories.png)   
 
@@ -111,15 +110,15 @@ iOS 版公司入口網站註冊畫面和步驟，為了配合 Apple iOS 12.2 中
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日當週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會   
-Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 **[同步此裝置]**。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。  
+Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始]  功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 **[同步此裝置]** 。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。  
 
 ![裝置桌面上 Windows 工作列的螢幕擷取畫面。 按一下公司入口網站應用程式的程式圖示之後，顯示含有 [釘選到工作列]、[關閉視窗] 和 [同步此裝置] 動作等選項的功能表。](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
 
-現在，在 Windows 版公司入口網站應用程式中瀏覽或搜尋應用程式時，您可以切換現有的 [磚] 檢視和新的 [詳細資料] 檢視。 此新的檢視會列出應用程式詳細資料，例如名稱、發行者、發行日期及安裝狀態。  
+現在，在 Windows 版公司入口網站應用程式中瀏覽或搜尋應用程式時，您可以切換現有的 [磚]  檢視和新的 [詳細資料]  檢視。 此新的檢視會列出應用程式詳細資料，例如名稱、發行者、發行日期及安裝狀態。  
 
-[應用程式] 頁面的 [已安裝] 檢視可讓您查看有關已完成和進行中之應用程式安裝的詳細資料。  
+[應用程式]  頁面的 [已安裝]  檢視可讓您查看有關已完成和進行中之應用程式安裝的詳細資料。  
 
 顯示 [磚] 檢視的範例螢幕擷取畫面：  
  
@@ -193,7 +192,7 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 我們已改善 iOS 版公司入口網站應用程式中的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
 
 > [!NOTE]
-> 我們會將您在 Azure 入口網站中設定的公司名稱用於 [Microsoft Intune] > [用戶端應用程式] > [公司入口網站品牌] > [公司名稱]。 如果您沒有設定此值，我們將使用在 [Azure Active Directory] > [屬性] > [名稱] 中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
+> 我們會將您在 Azure 入口網站中設定的公司名稱用於 [Microsoft Intune]   > [用戶端應用程式]   > [公司入口網站品牌]   > [公司名稱]  。 如果您沒有設定此值，我們將使用在 [Azure Active Directory]   > [屬性]   > [名稱]  中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
 
 |之前|在|
 |---|---|
@@ -316,7 +315,7 @@ Intune 行動應用程式管理 (MAM) 對話方塊將更新為新式外觀和操
 
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 之公司入口網站應用程式上的 [裝置詳細資料] 頁面更新 <!-- 1287448 -->
 
-Windows 10 的公司入口網站應用程式會將 [類別] 標記從標題下方移至 [裝置詳細資料] 頁面上的屬性。
+Windows 10 的公司入口網站應用程式會將 [類別]  標記從標題下方移至 [裝置詳細資料]  頁面上的屬性。
 
 ![Windows 之公司入口網站應用程式的 [裝置詳細資料] 畫面，現在會將 [類別] 欄位顯示為屬性，而不是直接顯示在該畫面的標題下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
@@ -356,7 +355,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下方是 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-點選 [從另一部裝置登入] 連結。
+點選 [從另一部裝置登入]  連結。
 
 ![系統會顯示使用唯一密碼從工作電腦移至 aka.ms/devicelogin 頁面，並使用驗證碼進行登入的指示。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -364,7 +363,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-輸入您在公司入口網站應用程式中看到的驗證碼。 當您選取 [繼續] 時，您可以使用貴公司所支援的任何方法 (例如智慧卡) 進行驗證。
+輸入您在公司入口網站應用程式中看到的驗證碼。 當您選取 [繼續]  時，您可以使用貴公司所支援的任何方法 (例如智慧卡) 進行驗證。
 
 ![使用者已將唯一驗證碼輸入至欄位，且 [裝置登入] 網站已要求確認 Intune 公司入口網站是接收驗證以登入的正確應用程式。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
@@ -377,9 +376,9 @@ __從另一部裝置登入時的新登入體驗__
 ## <a name="june-2017"></a>2017 年 6 月
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Android 公司入口網站應用程式的應用程式防護原則現在有新的使用者體驗
-根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，以顯示 [存取公司內容] 按鈕。 目的是為了防止使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。
+根據客戶的意見反應，我們已修改 Android 公司入口網站應用程式，以顯示 [存取公司內容]  按鈕。 目的是為了防止使用者在他們只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的一項功能) 的應用程式時，不必要地進行註冊程序。
 
-使用者將點選 [存取公司內容] 按鈕，而非開始註冊裝置。
+使用者將點選 [存取公司內容]  按鈕，而非開始註冊裝置。
 
 ![Android 公司入口網站應用程式的影像，這會在中間顯示「存取公司內容」大型文字，而不是如同標準案例提供立即註冊選項](./media/and_access_company_content_after_1706.png)
 
@@ -387,7 +386,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ![公司入口網站的影像，正在確認登入。](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
-透過點選 [動作] 功能表，裝置仍可註冊以接受完整管理。
+透過點選 [動作]  功能表，裝置仍可註冊以接受完整管理。
 
 ![Android 公司入口網站應用程式的影像 ，其中顯示畫面右上角的功能表含有仍可註冊裝置的選項。](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
@@ -498,11 +497,11 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [裝置] 索引標籤。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __介面__：已更新 [應用程式] 索引標籤中的 [精選應用程式] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
+* __介面__：已更新 [應用程式]  索引標籤中的 [精選應用程式]  和 [所有應用程式]  按鈕。[搜尋]  按鈕現在是浮動的動作按鈕。
 
 ![左側是更新前的 Android 版公司入口網站應用程式影像。 右側是更新後的 Android 版公司入口網站應用程式影像。 兩張影像顯示從 [應用程式]、[裝置] 以及 [連絡 IT] 三個可用索引標籤選取的 [應用程式] 索引標籤。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __瀏覽__：[所有應用程式] 會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以更方便瀏覽。 [連絡 IT] 已簡化以改善可讀性。
+* __瀏覽__：[所有應用程式] 會以索引標籤式的檢視顯示 [精選]  、[所有]  與 [類別]  以更方便瀏覽。 [連絡 IT]  已簡化以改善可讀性。
 
 <html>
 <body>

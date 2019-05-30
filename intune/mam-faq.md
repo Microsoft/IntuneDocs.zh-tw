@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992891"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041661"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -220,6 +219,6 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 - [Microsoft Intune 中的 Android 行動應用程式管理原則設定](app-protection-policy-settings-android.md)
 - [iOS 行動應用程式管理原則設定](app-protection-policy-settings-ios.md)
 - [應用程式防護原則的原則重新整理](app-protection-policy-delivery.md)
-- [驗證應用程式保護原則](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [驗證應用程式保護原則](app-protection-policy-delivery.md)
 - [在不註冊裝置的情況下新增受控應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)
 - [如何取得 Microsoft Intune 支援](get-support.md)
