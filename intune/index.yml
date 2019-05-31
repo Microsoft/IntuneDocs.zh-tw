@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 02/25/2019
+  ms.date: 05/30/2019
   ms.topic: landing-page
   ms.devlang: null
   ms.service: microsoft-intune
@@ -76,10 +76,10 @@ sections:
             title: '[部落格] 為頂級客戶新增 Intune 支援體驗'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
-  - title: 視訊
+  - title: 影片
     items:
       - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/offk-KH7eIA]'
+        text: '>[!VIDEO https://www.youtube.com/embed/ZncVbETBXnM]'
       - type: paragraph
         text: ' '
       - type: markdown
