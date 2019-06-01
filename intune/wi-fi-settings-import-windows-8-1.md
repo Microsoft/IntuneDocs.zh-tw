@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050602"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373317"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>在 Intune 中，為 Windows 裝置匯入 Wi-Fi 設定
 
-對於執行 Windows 的裝置，您可以匯入先前匯出到檔案的 Wi-Fi 設定檔。 **對於 Windows 10 及更新版本的裝置，您也可以直接在 Intune 中[建立 Wi-Fi 設定檔](wi-fi-settings-windows.md)**。
+對於執行 Windows 的裝置，您可以匯入先前匯出到檔案的 Wi-Fi 設定檔。 **對於 Windows 10 及更新版本的裝置，您也可以直接在 Intune 中[建立 Wi-Fi 設定檔](wi-fi-settings-windows.md)** 。
 
 適用於：  
 - Windows 8.1 及更新版本
@@ -44,9 +44,9 @@ ms.locfileid: "66050602"
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>將 Wi-Fi 設定匯入 Intune
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
-3. 輸入裝置限制設定檔的 [名稱] 和 [描述]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+3. 輸入裝置限制設定檔的 [名稱]  和 [描述]  。
 
     > [!IMPORTANT]
     > - 名稱**必須**與 Wi-Fi 設定檔 XML 中的名稱屬性相同。 否則，就會發生失敗。
@@ -54,13 +54,13 @@ ms.locfileid: "66050602"
     > - 搭配 Windows 10 使用預先共用金鑰會導致在 Intune 中出現補救錯誤。 發生這種情況時，系統會將 Wi-Fi 設定檔適當地指派給裝置，而該設定檔將如預期般運作。
     > - 如果您要匯出包含預先共用金鑰的 Wi-Fi 設定檔，請確定該檔案受到保護。 該金鑰會採用存文字格式，因此您需負責保護該金鑰。
 
-4. 在 [平台] 中，選取 [Windows 8.1 及更新版本]。
-5. 在 [設定檔類型] 中，選取 [Wi-Fi 匯入]。
+4. 在 [平台]  中，選取 [Windows 8.1 及更新版本]  。
+5. 在 [設定檔類型]  中，選取 [Wi-Fi 匯入]  。
 6. 進行以下設定：
     - **連線名稱**：輸入 Wi-Fi 連線的名稱。 當使用者瀏覽可用的 Wi-Fi 網路時，會看到此名稱。
     - **設定檔 XML**：選取瀏覽按鈕，然後選擇包含您想匯入 之 Wi-Fi 設定檔設定的 XML 檔案。
     - **檔案內容**：顯示所選組態設定檔的 XML 程式碼。
-7. 當您完成時，請選取 [確定] > [建立] 儲存變更。 設定檔隨即建立，並顯示在設定檔清單中。
+7. 當您完成時，請選取 [確定]   > [建立]  儲存變更。 設定檔隨即建立，並顯示在設定檔清單中。
 
 ## <a name="next-steps"></a>後續步驟
 
