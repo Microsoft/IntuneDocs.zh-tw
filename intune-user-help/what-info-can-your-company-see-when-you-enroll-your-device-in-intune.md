@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846973"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174204"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的組織可以看到哪些資訊？
 
@@ -43,7 +43,7 @@ ms.locfileid: "55846973"
 - 裝置型號，例如 Google Pixel
 - 裝置製造商，例如 Microsoft
 - 作業系統和版本，例如 iOS 12.0.1
-- 應用程式名稱，例如 Microsoft Word：在個人裝置上，組織只能看到您的受控應用程式清查。 在公司擁有的裝置上，組織可以看到所有的應用程式清查。
+- 應用程式清查和應用程式名稱，例如 Microsoft Word。 在個人裝置上，組織只能看到您的受控應用程式清查。 在公司擁有的裝置上，組織可以看到所有的應用程式清查。
 - 裝置擁有者
 - 裝置名稱
 - 裝置序號
@@ -51,8 +51,8 @@ ms.locfileid: "55846973"
 
 **組織可能會看到的資訊：**
 
--  電話號碼：如果是**公司**所擁有的裝置，組織能看到完整的電話號碼。 如果是**個人**所擁有的裝置，組織便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料] 頁面，便可查看每個裝置的 [擁有權類型]。
+-  電話號碼：如果是**公司**所擁有的裝置，組織能看到完整的電話號碼。 如果是**個人**所擁有的裝置，組織便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料]  頁面，便可查看每個裝置的 [擁有權類型]  。
 - 裝置儲存空間：如果您無法安裝必要的應用程式，您的組織可以查看裝置儲存空間，以確定空間是否不足。  
 -  組織：組織一律無法看到裝置的位置，除非您需要復原某個已遺失的受監督 iOS 裝置。 請瀏覽 [Apple iOS 文件](https://go.microsoft.com/fwlink/?linkid=853816)，以深入了解受監督的裝置。  
-- 應用程式清查：如果您的組織使用 Mobile Threat Defense，其將能夠檢視您 iOS 裝置上應用程式的相關詳細資料。 深入了解 [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)。
+- 應用程式清查詳細資料：如果您的組織使用 Mobile Threat Defense，他們將能夠檢視您 iOS 裝置上應用程式的相關詳細資料。 深入了解 [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)。
 - 網路資訊：有關 Android 裝置網路連線的一些資訊，可能可以提供給您組織的支援人員。 例如，如果您的組織要求裝置保留在某個建築物內，則您的裝置會識別網路連線位置。 

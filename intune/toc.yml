@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: 檢閱應用程式保護記錄
               href: app-protection-policy-settings-log.md
-            - name: 電子郵件設定檔疑難排解
+            - name: 針對原則及設定檔進行疑難排解
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: 電子郵件設定檔問題和解決方式
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: 軟體更新疑難排解
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Endpoint Protection 疑難排解
+            - name: Endpoint Protection 的常見錯誤
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: 針對原則及設定檔進行疑難排解
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: 條件式存取的疑難排解
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector 疑難排解
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: 自訂
                   href: custom-settings-windows-phone-8-1.md
+    - name: 錯誤碼與描述
+      items:
+        - name: 軟體更新錯誤
+          href: software-update-agent-error-codes.md
     - name: 開發人員指引
       items:
         - name: 新增第三方憑證授權單位的 API

@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 61d8f5f66d424c434edf119ad7fe221c35ee35ae
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564851"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042219"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>使用 Intune 在 Windows 10 裝置上設定「進行測驗」應用程式
 
@@ -38,7 +37,7 @@ ms.locfileid: "57564851"
 
 ## <a name="take-a-test-settings"></a>「進行測驗」設定
 
-- **帳戶類型**： 選擇使用者如何登入至測試。 選項包括：
+- **帳戶類型**：選擇使用者登入測驗的方式。 選項包括：
   - Azure AD 帳戶
   - 網域帳戶
   - 本機帳戶
@@ -48,8 +47,8 @@ ms.locfileid: "57564851"
   - `user@contoso.com`
   - `computerName\username`
 - **評定 URL**：輸入您要讓使用者進行之測驗的 URL。 如需取得此 URL 的詳細資訊，請參閱[「進行測驗」文件](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) \(部分機器翻譯\)。
-- **螢幕監視**：選擇 [允許] 以在使用者接受測驗時監視螢幕活動。 [未設定] 會讓您無法在測驗期間監視螢幕。
-- **文字建議**：選擇 [允許] 來讓受測者看見文字建議。 [未設定] 會在使用者接受測驗時封鎖文字建議。
+- **螢幕監視**：選擇 [允許]  以在使用者接受測驗時監視螢幕活動。 [未設定]  會讓您無法在測驗期間監視螢幕。
+- **文字建議**：選擇 [允許]  來讓受測者看見文字建議。 [未設定]  會在使用者接受測驗時封鎖文字建議。
 
 ## <a name="next-steps"></a>後續步驟
 

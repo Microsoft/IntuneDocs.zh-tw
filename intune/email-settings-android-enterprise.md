@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6c6c6e3e999e44ad6a07b4d8bdc1ddf9c400cf7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565446"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048037"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>用以在 Intune 中設定電子郵件、驗證及同步處理的 Android 企業裝置設定
 
@@ -43,18 +42,18 @@ ms.locfileid: "57565446"
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **使用者名稱**：只取得名稱，例如 `user1`
 
-- **來自 AAD 的電子郵件地址屬性**： 此名稱是從 Azure AD 取得的 Intune 電子郵件屬性。 Intune 會動態產生此設定檔所使用的電子郵件地址。 選項包括：
+- **AAD 中的電子郵件地址屬性**：此名稱是 Intune 從 Azure AD 取得的電子郵件屬性。 Intune 會動態產生此設定檔所使用的電子郵件地址。 選項包括：
   - **使用者主體名稱**：使用完整主體名稱 (例如 `user1@contoso.com` 或 `user1`) 作為電子郵件地址。
-  - **主要 SMTP 位址**： 使用主要 SMTP 位址，例如`user1@contoso.com`、 登入 Exchange。
+  - **主要 SMTP 位址**：使用主要 SMTP 位址 (例如 `user1@contoso.com`) 登入 Exchange。
 
-- **驗證方法**：選取 [使用者名稱和密碼] 或 [憑證] 作為電子郵件設定檔所使用的驗證方法。
-  - 若要選取 [憑證]，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
-- **SSL**：選擇 [啟用] 以在傳送電子郵件、接收電子郵件，以及與 Exchange 伺服器進行通訊時使用安全通訊端層 (SSL) 通訊。
-- **要同步處理的電子郵件量**： 選擇您想要同步處理的電子郵件的時間長度。 或者，選取 [無限制] 來同步處理所有可用的電子郵件。
-- **要同步處理內容類型**（僅限 Nine Work): 選擇您想要同步處理的裝置上的資料。 選項包括：
-  - **連絡人**：選擇 [啟用] 以允許終端使用者將連絡人同步至其裝置。
-  - **行事曆**：選擇 [啟用] 以允許終端使用者將行事曆同步至其裝置。
-  - **工作**：選擇 [啟用] 以允許終端使用者將工作同步至其裝置。
+- **驗證方法**：選取 [使用者名稱和密碼]  或 [憑證]  作為電子郵件設定檔所使用的驗證方法。
+  - 若要選取 [憑證]  ，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
+- **SSL**：選擇 [啟用]  以在傳送電子郵件、接收電子郵件，以及與 Exchange 伺服器進行通訊時使用安全通訊端層 (SSL) 通訊。
+- **要同步的電子郵件數量**：選擇您想要同步的電子郵件時間長度。 或者，選取 [無限制]  來同步處理所有可用的電子郵件。
+- **要同步的內容類型** (僅限 Nine Work)：選擇您想要在裝置上同步哪些資料。 選項包括：
+  - **連絡人**：選擇 [啟用]  以允許終端使用者將連絡人同步至其裝置。
+  - **行事曆**：選擇 [啟用]  以允許終端使用者將行事曆同步至其裝置。
+  - **工作**：選擇 [啟用]  以允許終端使用者將工作同步至其裝置。
 
 ## <a name="next-steps"></a>後續步驟
 
