@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514492"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049611"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -57,18 +56,18 @@ Intune App SDK for Android 必須仰賴裝置上的[公司入口網站](https://
 > [!NOTE]
 > 當裝置上沒有公司入口網站應用程式時，Intune 的受控應用程式會具有和不支援 Intune 應用程式保護原則的一般應用程式相同的行為。
 
-對於沒有裝置註冊的應用程式保護，使用者「不」__ 需要使用公司入口網站應用程式註冊裝置。
+對於沒有裝置註冊的應用程式保護，使用者「不」 _ _需要使用公司入口網站應用程式註冊裝置。
 
 ## <a name="sdk-integration"></a>SDK 整合
 
 ### <a name="sample-app"></a>範例應用程式
-如何將使用 Intune App SDK 整合正確的範例位於[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App)。 這個範例會使用[Gradle 外掛程式建置](#gradle-build-plugin)。
+示範如何適當地與 Intune 應用程式 SDK 整合的範例可在 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) 上取得。 此範例使用 [Gradle 建置外掛程式](#gradle-build-plugin)。
 
 ### <a name="referencing-intune-app-libraries"></a>參考 Intune 應用程式庫
 
 Intune App SDK 是不含外部相依性的標準 Android 程式庫。 **Microsoft.Intune.MAM.SDK.aar** 包含啟用應用程式保護原則所需的介面，以及和 Microsoft Intune 公司入口網站應用程式互通所需的程式碼。
 
-**Microsoft.Intune.MAM.SDK.aar** 必須指定為 Android 程式庫參考。 若要這麼做，請在 Android Studio 中開啟應用程式專案，然後移至 [檔案] > [新增] > [新模組]，然後選取 [匯入 .JAR/.AAR 套件]。 然後選取我們的 Android 封存套件 Microsoft.Intune.MAM.SDK.aar，以為 .AAR 建立模組。 以滑鼠右鍵按一下含有您應用程式程式碼的模組，並移至 [模組設定] > [相依性] 索引標籤 > **+ 圖示** > [模組相依性] > 選取您剛才建立的 MAM SDK AAR 模組 > [確定]。 這樣可確保當您建置專案時，會使用 MAM SDK 編譯您的模組。
+**Microsoft.Intune.MAM.SDK.aar** 必須指定為 Android 程式庫參考。 若要這麼做，請在 Android Studio 中開啟應用程式專案，然後移至 [檔案] > [新增] > [新模組]  ，然後選取 [匯入 .JAR/.AAR 套件]  。 然後選取我們的 Android 封存套件 Microsoft.Intune.MAM.SDK.aar，以為 .AAR 建立模組。 以滑鼠右鍵按一下含有您應用程式程式碼的模組，並移至 [模組設定]   > [相依性] 索引標籤   >  **+ 圖示** > [模組相依性]  > 選取您剛才建立的 MAM SDK AAR 模組 > [確定]  。 這樣可確保當您建置專案時，會使用 MAM SDK 編譯您的模組。
 
 此外，**Microsoft.Intune.MAM.SDK.Support.XXX.jar** 程式庫包含與 `android.support.XXX` 程式庫相對應的 Intune 變體。 並非所有應用程式都需要仰賴支援程式庫，因此 Microsoft.Intune.MAM.SDK.aar 並未內建這些項目。
 
@@ -151,11 +150,11 @@ intunemam {
 * `zap.jar` **不會**重寫，因為它不是專案，亦不包含在 `includeExternalLibraries` 中
 * `com.contoso.foo:zap-artifact:1.0.0` 會重寫，因為它包含在 `includeExternalLibraries` 中
 * `com.microsoft.bar:baz:1.0.0` 會重寫，因為它透過萬用字元 (`com.microsoft.*`) 包含在 `includeExternalLibraries` 中。
-* `com.microsoft.qux:foo:2.0` 即使它符合上一個項目為相同的萬用字元，因為它已明確排除否定模式透過不重寫。
+* 即使符合與先前項目相同的萬用字元，`com.microsoft.qux:foo:2.0` 也不會遭到重寫，因為已透過否定模式明確地排除它。
 
 #### <a name="usage-of-includeexternallibraries"></a>includeExternalLibraries 的使用方式
 
-因為外掛程式預設只會在 project 相依性上運作 (通常由 `project()` 函式提供)，因此任何 `fileTree(...)` 所指定的相依性或取自 Maven 或其他套件來源 (例如 "`com.contoso.bar:baz:1.2.0`") 的相依性都必須提供給 `includeExternalLibraries` 屬性 (如果它們需要按照下方說明的準則進行 MAM 處理的話)。 支援萬用字元 ("*")。 開頭的項目`!`為負值，而且可用來排除文件庫，否則會包含萬用字元。
+因為外掛程式預設只會在 project 相依性上運作 (通常由 `project()` 函式提供)，因此任何 `fileTree(...)` 所指定的相依性或取自 Maven 或其他套件來源 (例如 "`com.contoso.bar:baz:1.2.0`") 的相依性都必須提供給 `includeExternalLibraries` 屬性 (如果它們需要按照下方說明的準則進行 MAM 處理的話)。 支援萬用字元 ("*")。 開頭為 `!` 的項目為否定項目，可用來排除原先會包含在萬用字元範圍內的程式庫。
 
 當使用成品標記法來指定外部相依性時，建議省略 `includeExternalLibraries` 值中的版本元件。 如果您將版本包含在內，它必須是確切的版本。 不支援動態版本規格 (例如 `1.+`)。
 
@@ -174,7 +173,7 @@ intunemam {
 | 您可包含具有衍生自 `TextView` 之檢視類別的程式庫，且您可以在應用程式中使用或進一步衍生這些類別 | 是 |
 
 #### <a name="reporting"></a>報告
-組建外掛程式可以產生的 html 報告它進行的變更。 若要要求產生這份報表，指定`report = true`在`intunemam`組態區塊。 如果產生，則報表將寫入`outputs/logs`[build] 目錄中。
+建置外掛程式可產生其所進行變更的 HTML 報告。 若要要求產生此報告，請在 `report = true` 設定區塊中指定 `intunemam`。 若產生報告，則報告會寫入建置目錄中的 `outputs/logs`。
 
 ```groovy
 intunemam {
@@ -210,7 +209,7 @@ Gradle 外掛程式具有 [Javassist](https://jboss-javassist.github.io/javassis
 除了 `--excludeClasses` 是選用項目以外，所有參數均為必要。
 
 > [!NOTE] 
-> 在 unix 系統上以分號為命令分隔符號。 若要避免從分割命令殼層，請確定逸出與每個半冒號 '\'或以引號括住完整的參數。
+> 在 UNIX 式系統上，分號是命令的分隔符號。 若要避免殼層將命令分割，請務必使用 \' 逸出每個分號，或使用引號括住完整的參數。
 
 #### <a name="example-command-line-tool-invocation"></a>範例命令列工具引動過程
 
@@ -343,7 +342,7 @@ Gradle 外掛程式具有 [Javassist](https://jboss-javassist.github.io/javassis
 | android.view.View | MAMViewManagement |
 | android.view.DragEvent | MAMDragEventManagement |
 
-某些類別已包裝，例如其方法大多`ClipboardManager`， `ContentProviderClient`， `ContentResolver`，以及`PackageManager`而其他類別有一個或兩個方法包裝，例如`DownloadManager`， `PrintManager`， `PrintHelper`， `View`，和`DragEvent`。 請如果您未使用 BuildPlugin，哪一種方法的 MAM 對等類別所公開的 Api，參閱。 
+某些類別會包裝大多數的方法 (例如 `ClipboardManager`、`ContentProviderClient`、`ContentResolver` 及 `PackageManager`)，其他類別則可能只會包裝一或兩個方法 (例如 `DownloadManager`、`PrintManager`、`PrintHelper`、`View` 及 `DragEvent`)。 若您沒有使用 BuildPlugin，請參閱 MAM 對等類別公開的 API，來了解確切的方法。 
 
 ### <a name="manifest-replacements"></a>資訊清單取代
 有可能會需要在資訊清單及 Java 程式碼中執行部分上述類別取代。 特殊注意事項：
@@ -552,9 +551,9 @@ SaveLocation service, String username);
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-`username`應該 UPN/使用者名稱/電子郵件與相關聯雲端服務上所儲存 (*不*擁有所儲存的文件的使用者一定是相同)。 如果 AAD UPN 與雲端服務使用者名稱之間的對應不存在或不知道使用者名稱，則會使用 null。
+`username` 應為與欲儲存目標雲端服務建立關聯的 UPN/使用者名稱/電子郵件 (「不一定」  會和擁有欲儲存文件的使用者相同)。 若 AAD UPN 和雲端服務使用者名稱間的對應不存在，或使用者名稱未知，請使用 Null。
 
-在此之前，能用來判斷使用者的原則是否允許他們將資料儲存至各種位置的方法，為位於相同 **AppPolicy** 類別中的 `getIsSaveToPersonalAllowed()`。 此函數目前已「被取代」，且不應該使用。下列的引動過程等同於 `getIsSaveToPersonalAllowed()`：
+在此之前，能用來判斷使用者的原則是否允許他們將資料儲存至各種位置的方法，為位於相同 **AppPolicy** 類別中的 `getIsSaveToPersonalAllowed()`。 此函數目前已「被取代」  ，且不應該使用。下列的引動過程等同於 `getIsSaveToPersonalAllowed()`：
 
 ```java
 MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
@@ -623,29 +622,29 @@ public interface MAMNotificationReceiver {
 
 * **WIPE_USER_AUXILIARY_DATA**：如果應用程式要 Intune App SDK 執行預設選擇性抹除行為，但仍想要在抹除發生時移除部分輔助資料，則可註冊這項通知。 此通知不適用於單一身分識別應用程式，只會傳送至多重身分識別應用程式。
 
-* **REFRESH_POLICY**︰這項通知是在 `MAMUserNotification` 中傳送。 收到此通知時，就必須失效並更新您的應用程式快取任何 Intune 原則決策。 如果您的應用程式不會儲存原則的任何假設，它不需要註冊這個通知。
+* **REFRESH_POLICY**︰這項通知是在 `MAMUserNotification` 中傳送。 收到這項通知時，任何由您應用程式快取的 Intune 原則決策都必須無效化並進行更新。 若您的應用程式並未儲存任何原則假設，它便不需要為此通知進行登錄。
 
-* **REFRESH_APP_CONFIG**： 這個通知會傳送`MAMUserNotification`。 收到此通知時，就必須失效或更新任何快取的應用程式組態資料。
+* **REFRESH_APP_CONFIG**︰這項通知是在 `MAMUserNotification` 中傳送。 收到這項通知時，任何快取的應用程式設定資料都必須無效化並進行更新。
 
-* **MANAGEMENT_REMOVED**：這項通知是在 `MAMUserNotification` 中傳送，並會通知應用程式它即將成為未受管理。 應用程式成為未受管理之後，它將無法讀取加密的檔案、讀取以 MAMDataProtectionManager 加密的檔案、與加密的剪貼簿互動，或參與受管理應用程式的生態系統。 請參閱下面的詳細資料。
+* **MANAGEMENT_REMOVED**：這項通知是在 `MAMUserNotification` 中傳送，並會通知應用程式它即將成為未受管理。 應用程式成為未受管理之後，它將無法讀取加密的檔案、讀取以 MAMDataProtectionManager 加密的檔案、與加密的剪貼簿互動，或參與受管理應用程式的生態系統。 請參閱下列的詳細資料。
 
-* **MAM_ENROLLMENT_RESULT**： 這個通知會傳送`MAMEnrollmentNotification`以通知應用程式的應用程式-我們註冊嘗試完成，並提供該嘗試的狀態。
+* **MAM_ENROLLMENT_RESULT**：這項通知是在 `MAMEnrollmentNotification` 中傳送，用來通知應用程式 APP-WE 註冊嘗試已完成，並可用來提供嘗試的狀態。
 
-* **COMPLIANCE_STATUS**： 這個通知會傳送`MAMComplianceNotification`以通知應用程式的合規性修復嘗試的結果。
+* **COMPLIANCE_STATUS**：這項通知是在 `MAMComplianceNotification` 中傳送，用來通知應用程式合規性補救嘗試的結果。
 
 > [!NOTE]
 > 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA` 通知。
 
 ### <a name="managementremoved"></a>MANAGEMENT_REMOVED
 
-`MANAGEMENT_REMOVED`通知指出，先前受原則管理的使用者將不再受 Intune MAM 原則。 這不需要抹除使用者資料，或登出使用者 (如果抹除都是必要項，`WIPE_USER_DATA`會傳送通知)。 許多應用程式可能不會處理此通知，不過需要使用的應用程式`MAMDataProtectionManager`應該[請特別注意，此通知的](#data-protection)。
+`MANAGEMENT_REMOVED` 通知會指出先前由原則管理的使用者將不再由 Intune MAM 原則管理。 這不需要抹除使用者資料會登出使用者 (若需要抹除，則會傳送 `WIPE_USER_DATA` 通知)。 許多應用程式可能完全不需要處理此通知，但是使用 `MAMDataProtectionManager` 的應用程式應[特別注意此通知](#data-protection)。
 
-當 MAM 呼叫應用程式的`MANAGEMENT_REMOVED`接收者下, 面是 true:
-* MAM 已解密屬於應用程式 （但不是受保護的資料緩衝區） 先前加密的檔案。 Sdcard 上不直接屬於應用程式的公用位置中的檔案 (例如文件或下載資料夾) 不會解密。
-* 將不會加密新的檔案或接收者方法 （或任何其他執行開始後的程式碼） 所建立的受保護的資料緩衝區。
-* 應用程式仍有加密金鑰的存取權，因此將會成功的作業，例如解密資料緩衝區。
+當 MAM 呼叫應用程式的 `MANAGEMENT_REMOVED` 接收器時，下列內容將為 True：
+* MAM 已解密屬於應用程式並在先前經過加密的檔案 (但不包含受保護的資料緩衝區)。 SD 記憶卡上並非直接屬於應用程式公用位置中的檔案 (例如「文件」或「下載」資料夾) 則不會進行解密。
+* 由接受器方法 (或任何其他在接受器啟動後執行的程式碼) 建立的新檔案或受保護資料緩衝區不會進行加密。
+* 由於應用程式仍然能夠存取加密金鑰，因此解密資料緩衝區等作業仍然可以成功。
 
-一旦您的應用程式接收者傳回，它將不再有加密金鑰的存取權。
+當您應用程式的接受器傳回時，它便無法繼續存取加密金鑰。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>設定 Azure Active Directory Authentication Library (ADAL)
 
@@ -676,26 +675,26 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
     > [!NOTE]
     > 如果您的應用程式能感知主權雲端，請勿設定此欄位。
 
-* **ClientID**是用於 AAD ClientID （也稱為應用程式識別碼）。 如果應用程式的 ClientID 已經向 Azure AD 註冊，您應該使用此 ClientID。 如果此值不存在，則會使用 Intune 預設值。
+* **ClientID** 是要使用的 AAD ClientID (也稱為應用程式識別碼)。 如果應用程式的 ClientID 已經向 Azure AD 註冊，您應該使用此 ClientID。 如果此值不存在，則會使用 Intune 預設值。
 
 * **NonBrokerRedirectURI** 為要在無 Broker 的情況下使用的 AAD 重新導向 URI。 如果未指定，就會使用預設值 `urn:ietf:wg:oauth:2.0:oob`。 此預設值適用於大部分的應用程式。
 
-    * SkipBroker 為"true"時，才會使用 NonBrokerRedirectURI。
+    * 只有在 SkipBroker 為 "True" 時，才會使用 NonBrokerRedirectURI。
 
-* **SkipBroker**用來覆寫預設 ADAL SSO 參與行為。 指定 ClientID 的應用程式只應指定 SkipBroker**和**不支援代理的驗證/全裝置 SSO。 在此情況下，才應該設定為"true"。 大部分的應用程式不應該設定 SkipBroker 參數。
+* **SkipBroker** 會用來覆寫預設的 ADAL SSO 參與行為。 SkipBroker 應只為指定 ClientID 的應用程式指定，**且**不支援代理驗證/全裝置 SSO。 在此情況下，其應設為 "True"。 大多數的應用程式都不應設定 SkipBroker 參數。
 
-    * ClientID**必須**在資訊清單，以指定 SkipBroker 值中指定。
+    * 您**必須**在資訊清單中指定 ClientID，才能指定 SkipBroker 值。
 
-    * 當指定 ClientID 時，預設值為"false"。
+    * 指定 ClientID 時，預設值為 "False"。
 
-    * SkipBroker"true"時，將會使用 NonBrokerRedirectURI。 應用程式不會整合 ADAL （而且因此其沒有 ClientID），也會預設為"true"。
+    * 當 SkipBroker 為 "True" 時，便會使用 NonBrokerRedirectURI。 並未與 ADAL 整合 (因此不具有 ClientID) 的應用程式也會預設為 "True"。
 
 ### <a name="common-adal-configurations"></a>ADAL 的常見設定
 
-下列為應用程式可以搭配 ADAL 進行設定的常見方式。 尋找您應用程式的設定，並確保 ADAL 中繼資料參數 (如上所述) 已設定為必要的值。 在所有情況下，Authority 可以針對所需的非預設環境指定。 如果未指定，則會使用公用的生產 AAD 授權單位。
+下列為應用程式可以搭配 ADAL 進行設定的常見方式。 尋找您應用程式的設定，並確保 ADAL 中繼資料參數 (如上所述) 已設定為必要的值。 在所有情況下，Authority 可以針對所需的非預設環境指定。 若沒有指定，則會使用公用的生產 AAD 授權單位。
 
 #### <a name="1-app-does-not-integrate-adal"></a>1.應用程式未整合 ADAL
-ADAL 中繼資料**不得**會出現在資訊清單。
+資訊清單中**不得**出現 ADAL 中繼資料。
 
 #### <a name="2-app-integrates-adal"></a>2.應用程式已整合 ADAL
 
@@ -703,9 +702,9 @@ ADAL 中繼資料**不得**會出現在資訊清單。
 |--|--|
 | ClientID | 應用程式的 ClientID (由 Azure AD 於應用程式註冊時產生) |
 
-授權單位可能會指定如有必要。
+可視需要指定授權單位。
 
-您必須向 Azure AD 中註冊您的應用程式，並讓您的應用程式存取權的應用程式保護原則的服務：
+您必須向 Azure AD 登錄您的應用程式，並讓您的應用程式存取應用程式保護原則服務：
 * 請參閱[這裡](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 Azure AD 註冊應用程式的相關資訊。
 * 確定您已遵循將 Android 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中＜將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)＞中的指示。 
 
@@ -759,9 +758,9 @@ ADAL 中繼資料**不得**會出現在資訊清單。
 
 若要實作 APP-WE 整合，您的應用程式必須向 MAM SDK 註冊使用者帳戶：
 
-1. 應用程式「必須」實作並註冊 `MAMServiceAuthenticationCallback` 介面的執行個體。 回呼執行個體必須盡早於應用程式的生命週期內進行註冊 (通常是在應用程式類別的 `onMAMCreate()` 方法中)。
+1. 應用程式「必須」  實作並註冊 `MAMServiceAuthenticationCallback` 介面的執行個體。 回呼執行個體必須盡早於應用程式的生命週期內進行註冊 (通常是在應用程式類別的 `onMAMCreate()` 方法中)。
 
-2. 在建立使用者帳戶，且使用者成功以 ADAL 登入之後，應用程式「必須」呼叫 `registerAccountForMAM()`。
+2. 在建立使用者帳戶，且使用者成功以 ADAL 登入之後，應用程式「必須」  呼叫 `registerAccountForMAM()`。
 
 3. 當使用者帳戶被移除之後，應用程式應該呼叫 `unregisterAccountForMAM()` 以將該帳戶從 Intune 管理中移除。
 
@@ -779,7 +778,7 @@ MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 // make use of mgr
 ```
 
-傳回的 `MAMEnrollmentManager` 執行個體將保證不會為 null。 API 方法會落入兩個類別：「驗證」和「帳戶註冊」。
+傳回的 `MAMEnrollmentManager` 執行個體將保證不會為 null。 API 方法會落入兩個類別：「驗證」  和「帳戶註冊」  。
 
 ```java
 package com.microsoft.intune.mam.policy;
@@ -830,7 +829,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 2. `acquireToken()` 方法應該會取得針對指定使用者所要求之資源識別碼的存取權杖。 如果它無法取得要求的權杖，便應該會傳回 null。
 
     > [!NOTE]
-    > 請確定您的應用程式會利用`resourceId`並`aadId`參數傳遞給`acquireToken()`以便取得正確的權杖。
+    > 請確認您的應用程式利用傳遞至 `acquireToken()` 的 `resourceId` 和 `aadId` 參數，以取得正確的權杖。
 
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
@@ -859,7 +858,7 @@ Result getRegisteredAccountStatus(String upn);
 
 1. 若要註冊帳戶以進行管理，應用程式應呼叫 `registerAccountForMAM()`。 識別使用者帳戶的方式，是透過其 UPN 和 AAD 使用者識別碼。 同時也需要租用戶識別碼，以關聯註冊資料與使用者的 AAD 租用戶。 也可以提供使用者的授權單位以允許針對特定主權雲端進行註冊；如需詳細資訊，請參閱[主權雲端註冊](#sovereign-cloud-registration)。  SDK 可能會嘗試在 MAM 服務中針對指定使用者註冊應用程式。若註冊失敗，它將會定期重試註冊，直到該帳戶已取消註冊為止。 重試的間隔通常是 12-24 小時。 SDK 會透過通知以非同步的方式提供註冊嘗試的狀態。
 
-2. AAD 驗證是必要的因為使用者已登入應用程式，並已成功使用 ADAL 進行驗證之後，也會是註冊的使用者帳戶的最佳時機。使用者的 AAD 識別碼和租用戶識別碼從 ADAL 驗證呼叫傳回的一部分[ `AuthenticationResult` ](https://github.com/AzureAD/azure-activedirectory-library-for-android)物件。
+2. 由於需要 AAD 驗證，登錄使用者帳戶的最佳時間是在使用者登入應用程式，並成功使用 ADAL 進行驗證之後。使用者的 AAD 識別碼和租用戶識別碼會從 ADAL 驗證呼叫，作為 [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) 物件的一部分傳回。
     * 租用戶識別碼是來自 `AuthenticationResult.getTenantID()` 方法。
     * 有關使用者的資訊是位於來自 `AuthenticationResult.getUserInfo()` 之 `UserInfo` 類型的子物件中，而 AAD 使用者識別碼則是透過呼叫 `UserInfo.getUserId()` 以從該物件中擷取。
 
@@ -886,7 +885,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 ```
 
 > [!NOTE]
-> 請勿設定`com.microsoft.intune.mam.aad.Authority`AndroidManifest.xml 中的中繼資料，項目。
+> 請不要在 AndroidManifest.xml 中設定 `com.microsoft.intune.mam.aad.Authority` 中繼資料項目。
 
 > [!NOTE]
 > 請確定已在您的 `MAMServiceAuthenticationCallback::acquireToken()` 方法中正確設定授權。
@@ -901,7 +900,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 * 當應用程式呼叫 `registerAccountForMAM()` 時，它可能會在不久之後於其 `MAMServiceAuthenticationCallback` 介面上接收到不同執行緒的回呼。 在理想的情況下，應用程式已在註冊帳戶前從 ADAL 取得自己的權杖，以加快取得所要求權杖的速度。 如果應用程式從回呼傳回有效權杖，則註冊將會繼續，且應用程式將會透過通知取得最終結果。
 
-* 如果應用程式沒有傳回有效的 AAD 權杖，來自註冊嘗試的最終結果將會是 `AUTHENTICATION_NEEDED`。 如果應用程式接收到通知透過此結果，強烈建議來加快註冊程序，藉由取得使用者的權杖，並從先前要求資源`acquireToken()`，然後呼叫`updateToken()`起始方法註冊程序一次。
+* 如果應用程式沒有傳回有效的 AAD 權杖，來自註冊嘗試的最終結果將會是 `AUTHENTICATION_NEEDED`。 若應用程式透過通知接受到此結果，我們強烈建議透過取得使用者的權杖及先前從 `acquireToken()` 要求的資源，並呼叫 `updateToken()` 方法再次啟動註冊流程來加快註冊的流程。
 
 * 因此也會呼叫應用程式的已註冊 `MAMServiceAuthenticationCallback`，以取得定期應用程式保護原則重新整理簽入的權杖。如果應用程式無法在要求時提供權杖，便不會收到通知，不過它應該於下一個適當的時機嘗試取得權杖並呼叫 `updateToken()`，以加速簽入程序。 如果不提供權杖，在下一個簽入嘗試時仍然會呼叫回呼。
 
@@ -942,7 +941,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 ### <a name="notifications"></a>通知
 
-如果應用程式類型的通知已註冊**MAM_ENROLLMENT_RESULT**、`MAMEnrollmentNotification`將傳送以通知註冊要求已完成的應用程式。 將會透過 `MAMNotificationReceiver` 介面接收 `MAMEnrollmentNotification`，如[從 SDK 註冊通知](#register-for-notifications-from-the-sdk)一節中所述。
+若應用程式為 **MAM_ENROLLMENT_RESULT** 類型的通知進行登錄，則會傳送 `MAMEnrollmentNotification` 來通知應用程式已完成註冊要求。 將會透過 `MAMNotificationReceiver` 介面接收 `MAMEnrollmentNotification`，如[從 SDK 註冊通知](#register-for-notifications-from-the-sdk)一節中所述。
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
@@ -952,24 +951,24 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 `getEnrollmentResult()` 方法會傳回註冊要求的結果。  由於 `MAMEnrollmentNotification` 會延伸 `MAMUserNotification`，因此也會提供嘗試註冊的使用者身分識別。 應用程式必須實作 `MAMNotificationReceiver` 介面以接收這些通知，這已在[從 SDK 註冊通知](#register-for-notifications-from-the-sdk)一節中詳述。
 
-已註冊使用者帳戶的狀態在接收註冊通知時可能會變更，但並非在所有情況下都會變更 (例如，若在接收如 `WRONG_USER` 等較具資訊性的結果之後才接收到 `AUTHORIZATION_NEEDED` 通知，則系統將會維持使用較具資訊性的結果作為帳戶狀態)。  一旦成功註冊帳戶後，狀態會保留為`ENROLLMENT_SUCCEEDED`直到取消註冊或抹除帳戶為止。
+已註冊使用者帳戶的狀態在接收註冊通知時可能會變更，但並非在所有情況下都會變更 (例如，若在接收如 `WRONG_USER` 等較具資訊性的結果之後才接收到 `AUTHORIZATION_NEEDED` 通知，則系統將會維持使用較具資訊性的結果作為帳戶狀態)。  成功註冊帳戶後，狀態會維持在 `ENROLLMENT_SUCCEEDED`，直到帳戶取消註冊或遭到抹除。
 
-已註冊使用者帳戶的狀態在接收註冊通知時可能會變更，但並非在所有情況下都會變更 (例如，若在接收如 `WRONG_USER` 等較具資訊性的結果之後才接收到 `AUTHORIZATION_NEEDED` 通知，則系統將會維持使用較具資訊性的結果作為帳戶狀態)。  一旦成功註冊帳戶後，狀態會保留為`ENROLLMENT_SUCCEEDED`直到取消註冊或抹除帳戶為止。
+已註冊使用者帳戶的狀態在接收註冊通知時可能會變更，但並非在所有情況下都會變更 (例如，若在接收如 `WRONG_USER` 等較具資訊性的結果之後才接收到 `AUTHORIZATION_NEEDED` 通知，則系統將會維持使用較具資訊性的結果作為帳戶狀態)。  成功註冊帳戶後，狀態會維持在 `ENROLLMENT_SUCCEEDED`，直到帳戶取消註冊或遭到抹除。
 
-## <a name="app-ca-with-policy-assurance"></a>擁有原則保證的應用程式 CA
+## <a name="app-ca-with-policy-assurance"></a>具備原則保證的 APP CA
 
 ### <a name="overview"></a>概觀
-擁有原則保證應用程式 CA （條件式存取），與資源的存取權被 conditionalized Intune 應用程式保護原則的應用程式。  AAD 會強制執行此要求此應用程式註冊及管理應用程式授與權杖來存取擁有原則保證應用程式 CA 受保護資源之前。  應用程式，才能取得權杖，使用 ADAL 的 broker，且安裝程式與上述中相同[條件式存取](#conditional-access)
+透過具備原則保證的 APP CA (條件式存取)，Intune 應用程式防護原則應用程式上的資源存取便會條件化。  AAD 會藉由要求應用程式先進行註冊並由 APP 管理，才授與存取由具備原則保證 APP CA 保護資源的權杖，來強制執行。  應用程式必須使用 ADAL 代理程式來取得權杖，且其設定過程與[條件式存取](#conditional-access)中描述的相同
 
-### <a name="adal-changes"></a>ADAL 的變更
-ADAL 程式庫有新的錯誤程式碼，通知來取得權杖失敗起因於應用程式管理的不合規的應用程式。  如果應用程式收到此錯誤的程式碼，還需要呼叫的 SDK，以嘗試修復註冊應用程式，並套用原則的合規性。 將會收到例外狀況`onError()`適用的 ADAL 方法`AuthenticationCallback`，並將具有錯誤的程式碼`ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`。  在此情況下，例外狀況可以轉換成`IntuneAppProtectionPolicyRequiredException`，哪些額外的參數可以擷取用於在補救合規性 （請參閱以下的程式碼範例）。 補救成功之後，應用程式可以重新嘗試透過 ADAL 取得權杖。
+### <a name="adal-changes"></a>ADAL 變更
+ADAL 程式庫擁有新的錯誤碼，可通知應用程式取得權杖失敗原因是不符合 APP 管理的合規性。  若應用程式收到此錯誤碼，便需要呼叫 SDK 以透過註冊應用程式和套用原則來嘗試補救合規性。 ADAL `AuthenticationCallback` 的 `onError()` 方法會收到例外狀況，且會包含錯誤碼 `ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`。  在此情況下，例外狀況可轉換成 `IntuneAppProtectionPolicyRequiredException`，並可從中擷取額外的參數，以在補救合規性中使用 (請參閱以下的程式碼範例)。 補救成功後，應用程式便可再次嘗試透過 ADAL 取得權杖。
 
 > [!NOTE]
-> 這個新的錯誤碼和其他支援擁有原則保證的應用程式 ca 所需的版本 1.15.0 （或以上） 的 ADAL 程式庫。
+> 這個新錯誤碼及其他具備原則保證 APP CA 之支援需要使用版本 1.15.0 (或更新版本) 的 ADAL 程式庫。
 
 ### <a name="mamcompliancemanager"></a>MAMComplianceManager
 
-`MAMComplianceManager` ADAL 從收到的原則要求的錯誤時，會使用介面。  它包含`remediateCompliance()`應該嘗試將應用程式放入相容的狀態呼叫的方法。 針對 `MAMComplianceManager` 的參考可以透過下列方式取得：
+`MAMComplianceManager` 介面會在從 ADAL 接收到需要原則的錯誤時使用。  它包含嘗試將應用程式置入符合規範狀態時應呼叫的 `remediateCompliance()` 方法。 針對 `MAMComplianceManager` 的參考可以透過下列方式取得：
 
 ```java
 MAMComplianceManager mgr = MAMComponents.get(MAMComplianceManager.class);
@@ -987,14 +986,14 @@ public interface MAMComplianceManager {
 }
 ```
 
-`remediateCompliance()`呼叫方法以嘗試讓受管理，以滿足的條件來授與要求的權杖的 AAD 應用程式。  您可以從 ADAL 所收到的例外狀況擷取的前四個參數`AuthenticationCallback.onError()`方法 （請參閱以下的程式碼範例）。  最後一個參數是布林值控制是否合規性嘗試期間顯示 UX。  這是簡單封鎖進度樣式介面的應用程式不需要這項作業期間顯示自訂的 UX，提供做為預設值。  雖然合規性修復進行中，且不會顯示最後的結果時，它只會封鎖。  應用程式應該註冊通知的接收者，來處理成功或失敗的合規性修復嘗試 （如下所示）。
+會呼叫 `remediateCompliance()` 方法以嘗試使應用程式受到管理來滿足 AAD 授與所要求權杖的條件。  前四個參數可從 ADAL `AuthenticationCallback.onError()` 方法接收到的例外狀況中擷取 (請參閱以下的程式碼範例)。  最後一個參數是布林值，控制是否要在合規性嘗試期間顯示 UX。  此為簡易的封鎖進度樣式介面，作為不需要在此作業期間顯示自訂 UX 應用程式的預設介面。  它只會在合規性補救正在進行時進行封鎖，且不會顯示最終結果。  應用程式應登錄通知接收器來處理合規性補救嘗試的成功或失敗結果 (如下所示)。
 
-`remediateCompliance()`方法可能會執行建立合規性的 MAM 註冊。  如果它已註冊通知的接收者，註冊通知，應用程式可能會收到註冊通知。  應用程式的已註冊`MAMServiceAuthenticationCallback`會有其`acquireToken()`呼叫方法來取得權杖的 MAM 註冊。 `acquireToken()` 將應用程式已取得自己的權杖，讓應用程式會執行成功的語彙基元併購之後任何簿記或帳戶建立工作可能不是尚未之前呼叫。  回呼必須能夠在此情況下取得權杖。  如果您不能傳回的權杖從`acquireToken()`，合規性修復嘗試會失敗。  如果您呼叫`updateToken()`稍後與所要求的資源有效的語彙基元，合規性修復將會立即重試與指定的語彙基元。
+`remediateCompliance()` 方法可進行 MAM 註冊，作為建立合規性的一部分。  若應用程式已針對註冊通知登錄通知接收器，便可能會收到註冊通知。  應用程式登錄的 `MAMServiceAuthenticationCallback` 會呼叫其 `acquireToken()` 方法，來取得 MAM 註冊的權杖。 `acquireToken()` 會在應用程式取得其自身權杖前呼叫，讓應用程式在成功取得權杖後執行的任何記錄或建立帳戶工作都還不會先行執行。  回撥必須要能夠在此情況下取得權杖。  若您無法從 `acquireToken()` 傳回權杖，則合規性補救嘗試將會失敗。  若您稍後針對所要求資源，使用有效的權杖呼叫 `updateToken()`，則合規性補救將會立即使用指定的權杖重試。
 
 > [!NOTE]
-> 無訊息的權杖仍然會在`acquireToken()`因為會有已被引導使用者來安裝訊息代理程式並註冊裝置之前`ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`會收到錯誤。  這會導致允許所要求的權杖，順利完成的無訊息 acqisition broker 在其快取中，具有有效的重新整理權杖。
+> 您仍可以在 `acquireToken()` 中以無訊息的方式取得權杖，因為使用者屆時已會受到指引，在接收到 `ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED` 錯誤前安裝代理程式及登錄裝置。  這會使代理程式在其快取中具備有效的重新整理權杖，允許在無訊息的情況下成功取得所要求權杖。
 
-以下是範例，以接收中的原則要求錯誤`AuthenticationCallback.onError()`方法，並呼叫`MAMComplianceManager`來處理錯誤。
+以下是在 `AuthenticationCallback.onError()` 方法中接收到需要原則錯誤，以及呼叫 `MAMComplianceManager` 來處理錯誤的範例。
 
 ```java
 public void onError(@Nullable Exception exc) {
@@ -1017,7 +1016,7 @@ public void onError(@Nullable Exception exc) {
 
 ### <a name="status-notifications"></a>狀態通知
 
-如果應用程式類型的通知已註冊**COMPLIANCE_STATUS**、`MAMComplianceNotification`將傳送以通知應用程式的合規性修復嘗試的最終狀態。 將會透過 `MAMNotificationReceiver` 介面接收 `MAMComplianceNotification`，如[從 SDK 註冊通知](#register-for-notifications-from-the-sdk)一節中所述。
+若應用程式為 **COMPLIANCE_STATUS** 類型的通知進行登錄，則會傳送 `MAMComplianceNotification` 來通知應用程式合規性補救嘗試的最終狀態。 將會透過 `MAMNotificationReceiver` 介面接收 `MAMComplianceNotification`，如[從 SDK 註冊通知](#register-for-notifications-from-the-sdk)一節中所述。
 
 ```java
 public interface MAMComplianceNotification extends MAMUserNotification {
@@ -1027,24 +1026,24 @@ public interface MAMComplianceNotification extends MAMUserNotification {
 }
 ```
 
-`getComplianceStatus()`方法會傳回合規性修復嘗試的結果中的值為`MAMCAComplianceStatus`列舉。
+`getComplianceStatus()` 方法會將合規性補救嘗試的結果，作為 `MAMCAComplianceStatus` 列舉的其中一個值傳回。
 
 |狀態碼 | 說明 |
 | -- | -- |
-| UNKNOWN | 未知的狀態。 這可能表示非預期的失敗原因。 可能會在公司入口網站記錄檔中找到其他資訊。 |
-| COMPLIANT | 合規性修復成功，就符合原則的應用程式。 ADAL 的權杖應該重試。 |
-| NOT_COMPLIANT | 嘗試修復失敗的合規性。  應用程式不相容，而且 ADAL 權杖應該不會重試的錯誤狀況更正之前。  MAMComplianceNotification 傳送額外的錯誤資訊。 |
-| SERVICE_FAILURE | 嘗試從 Intune 服務擷取合規性資料時發生失敗。 可能會在公司入口網站記錄檔中找到其他資訊。 |
-| NETWORK_FAILURE | 連線到 Intune 服務時發生錯誤。 恢復網路連線時，應用程式應該嘗試其權杖的取得上一次。 |
-| CLIENT_ERROR | 嘗試修復失敗的用戶端相關的某些原因的合規性。  例如，沒有任何權杖或錯誤的使用者。 MAMComplianceNotification 傳送額外的錯誤資訊。 |
-| PENDING | 嘗試將修復合規性失敗，因為狀態回應有尚未收到來自服務時已超過時間限制。 應用程式應該嘗試稍後再其權杖取得。 |
-| COMPANY_PORTAL_REQUIRED | 為了讓合規性補救成功的裝置上必須安裝公司入口網站。  如果在裝置上已安裝公司入口網站，就必須重新啟動應用程式。  在此情況下，對話方塊會顯示要求使用者重新啟動應用程式。 |
+| UNKNOWN | 狀態未知。 這可能表示失敗的原因為非預期原因。 您可以在公司入口網站記錄中找到額外資訊。 |
+| COMPLIANT | 合規性補救已成功，且應用程式現在已符合原則的規範。 應重試取得 ADAL 權杖。 |
+| NOT_COMPLIANT | 補救合規性的嘗試失敗。  應用程式不符合規範，且在直到修正錯誤條件前不應重試取得 ADAL 權杖。  額外的錯誤資訊會與 MAMComplianceNotification 一同傳送。 |
+| SERVICE_FAILURE | 嘗試從 Intune 服務擷取合規性資料時失敗。 您可以在公司入口網站記錄中找到額外資訊。 |
+| NETWORK_FAILURE | 連線到 Intune 服務時發生錯誤。 應用程式應在還原網路連線時再次嘗試取得權杖。 |
+| CLIENT_ERROR | 嘗試補救合規性時由於用戶端的原因而失敗。  例如沒有權杖或使用者錯誤。 額外的錯誤資訊會與 MAMComplianceNotification 一同傳送。 |
+| PENDING | 嘗試補救合規性失敗，因為在超過時間限制時仍未從服務接收到狀態回應。 應用程式應在稍後再次嘗試取得權杖。 |
+| COMPANY_PORTAL_REQUIRED | 必須在裝置上安裝公司入口網站，才能使合規性補救成功。  若已在裝置上安裝公司入口網站，應用程式需要重新啟動。  在此情況下，會顯示對話方塊，要求使用者重新啟動應用程式。 |
 
-如果合規性狀態是  `MAMCAComplianceStatus.COMPLIANT`，應用程式應該重新起始其原始取得權杖 （適用於其自己的資源）。 如果相容性補救失敗，`getComplianceErrorTitle()`和`getComplianceErrorMessage()`方法會傳回應用程式可以顯示給使用者，如果選擇的當地語系化的字串。  大部分的錯誤情況並不 remediable 應用程式，因此一般情況下可能是最理想的做法建立帳戶或登入失敗，並允許使用者稍後再試。  如果失敗持續發生，MAM 記錄可能有助於判斷原因。  使用者可以送出記錄檔使用找到的指示[此處](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "電子郵件給公司支援人員的記錄檔")。
+若合規性狀態為 `MAMCAComplianceStatus.COMPLIANT`，應用程式應重新啟動原先取得權杖的過程 (適用其自身的資源)。 若合規性補救嘗試失敗，`getComplianceErrorTitle()` 和 `getComplianceErrorMessage()` 方法會傳回應用程式可向終端使用者顯示的當地語系化字串 (若其選擇的話)。  大多數的錯誤案例都無法由應用程式進行補救，因此一般情況下，使建立帳戶或登入的過程失敗，並允許使用者稍後再次進行嘗試可能會是最佳的做法。  若失敗持續發生，MAM 記錄可能可以協助判斷原因。  終端使用者可使用[此處](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "透過電子郵件將記錄寄給您的公司支援人員")提供的指示來提交記錄。
 
 由於 `MAMComplianceNotification` 會延伸 `MAMUserNotification`，因此也會提供嘗試補救的使用者身分識別。
 
-註冊使用匿名類別實作 MAMNotificationReceiver 介面接收者的範例如下：
+以下是使用匿名類別實作 MAMNotificationReceiver 介面來登錄接受器的範例：
 
 ```java
 final MAMNotificationReceiverRegistry notificationRegistry = MAMComponents.get(MAMNotificationReceiverRegistry.class);
@@ -1067,21 +1066,21 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ```
 
 > [!NOTE]
-> 通知接收者必須先註冊，才能呼叫`remediateCompliance()`以避免競爭情形，可能會導致遺漏通知。
+> 通知接收器必須在呼叫 `remediateCompliance()` 前進行登錄，避免可能導致遺漏通知的競爭條件。
 
 ### <a name="implementation-notes"></a>實作附註
 
 > [!NOTE]
-> 應用程式的`MAMServiceAuthenticationCallback.acquireToken()`方法都必須通過 *，則為 true*新`forceRefresh`旗標設為`acquireTokenSilentSync()`來自訊息代理程式強制更新。  這是為了因應措施中可能會影響 MAM 服務語彙基元的 ADAL 權杖快取問題。 一般情況下，這看起來像：
+> 應用程式的 `MAMServiceAuthenticationCallback.acquireToken()` 方法必須針對新的 `forceRefresh` 旗標，將 *true* 傳遞給 `acquireTokenSilentSync()` 來強制從代理程式進行重新整理。  這是為了因應 ADAL 中可能影響 MAM 服務權杖的權杖快取問題。 一般而言，其看起來會與以下內容相似：
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
 ```
 
 > [!NOTE]
-> 如果您想要顯示自訂封鎖 UX 補救嘗試期間，您應該傳遞*假*showUX 參數`remediateCompliance()`。 您必須確定您顯示您的 UX，並註冊您的通知接聽程式，第一次呼叫之前`remediateCompliance()`。  這會讓競爭情形，通知可能會遺漏如果`remediateCompliance()`很快就會失敗。  例如，`onCreate()`或是`onMAMCreate()`活動子類別的方法是理想的位置，可供註冊通知接聽程式，然後呼叫`remediateCompliance()`。  參數`remediateCompliance()`可以傳遞給您的 UX，作為意圖的額外項目。  收到的合規性狀態通知時，您可以顯示結果，或只需完成的活動。
+> 若您想要在補救嘗試期間顯示自訂封鎖 UX，您應針對 showUX 參數，將 *false* 傳遞至 `remediateCompliance()`。 您必須確認您會先行顯示 UX 及登錄您的通知接聽程式，再呼叫 `remediateCompliance()`。  這可避免發生競爭條件，在 `remediateCompliance()` 很快失敗的情況下遺漏通知。  例如，Activity 子類別之 `onCreate()` 或 `onMAMCreate()` 方法便是登錄通知接聽程式及呼叫 `remediateCompliance()` 的理想位置。  `remediateCompliance()` 的參數可傳遞至 UX，作為意圖的額外項目。  接收到合規性狀態通知時，您可以顯示結果或直接完成活動。
 
 > [!NOTE]
-> `remediateCompliance()` 將註冊帳戶並嘗試註冊。  一旦取得主要的權杖，呼叫`registerAccountForMAM()`並非必要，但在此情況下沒有壞處。 相反地，如果應用程式無法取得其語彙基元和想来移除的使用者帳戶，它必須呼叫`unregisterAccountForMAM()`移除帳戶，並防止背景註冊重試。
+> `remediateCompliance()` 會登錄帳戶並嘗試註冊。  一旦取得主要權杖後，便不需要呼叫 `registerAccountForMAM()`，但執行此操作也不會造成傷害。 另一方面，若應用程式無法取得權杖並希望移除使用者帳戶，則它必須呼叫 `unregisterAccountForMAM()` 來移除帳戶並避免在背景重試註冊。
 
 ## <a name="protecting-backup-data"></a>保護備份資料
 
@@ -1095,7 +1094,7 @@ Android 開始針對 Android Marshmallow 裝置上的應用程式提供 Google �
 
 Intune 可讓您利用 Android 中可用的所有[自動備份功能](https://developer.android.com/guide/topics/data/autobackup.html)，包括在 XML 中定義自訂規則的功能，但您必須遵循下列步驟來保護資料：
 
-1. 如果您的應用程式「不會」使用自己的自訂 BackupAgent，請使用預設 MAMBackupAgent 以允許進行符合 Intune 原則的自動完整備份。 請將下列內容置於應用程式資訊清單中：
+1. 如果您的應用程式「不會」  使用自己的自訂 BackupAgent，請使用預設 MAMBackupAgent 以允許進行符合 Intune 原則的自動完整備份。 請將下列內容置於應用程式資訊清單中：
 
     ```xml
     android:fullBackupOnly="true"
@@ -1107,7 +1106,7 @@ Intune 可讓您利用 Android 中可用的所有[自動備份功能](https://de
 
 3. 當您決定應用程式應該接收的完整備份類型 (未篩選、已篩選或無) 時，您必須將將屬性 `android:fullBackupContent` 設定為 true、false，或您應用程式中的 XML 資源。
 
-4. 接著，您「必須」__ 將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
+4. 接著，您「必須」 _ _將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
 
     **範例 1**：如果您想要讓應用程式具有完整備份並不排除任何內容，請將 `android:fullBackupContent` 屬性和 `com.microsoft.intune.mam.FullBackupContent` Metadata 標記設定為 **true**：
 
@@ -1166,7 +1165,7 @@ BackupAgent 可讓您更明確了解備份了哪些資料。 由於開發人員�
 
 **多重身分識別備份：**
 
-1. 在開始備份之前，請確定您計畫備份的檔案或資料緩衝區已確實「由 IT 系統管理員允許在多重身分識別的案例下進行備份」。 我們在 `MAMFileProtectionManager` 和 `MAMDataProtectionManager` 中提供 `isBackupAllowed` 函式以供您進行判斷。 如果檔案或資料緩衝區不能備份，您就不應該繼續將它包含在備份中。
+1. 在開始備份之前，請確定您計畫備份的檔案或資料緩衝區已確實「由 IT 系統管理員允許在多重身分識別的案例下進行備份」  。 我們在 `MAMFileProtectionManager` 和 `MAMDataProtectionManager` 中提供 `isBackupAllowed` 函式以供您進行判斷。 如果檔案或資料緩衝區不能備份，您就不應該繼續將它包含在備份中。
 
 2. 在備份期間，如果想要備份在步驟 1 中檢查過的檔案識別，就必須使用您打算從其中擷取資料的檔案來呼叫 `backupMAMFileIdentity(BackupDataOutput data, File … files)`。 這會自動建立新的備份實體，並將其寫入 `BackupDataOutput` 。 在還原時會自動使用這些實體。
 
@@ -1195,9 +1194,9 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 > [!NOTE]
 > 目前，每個裝置上僅支援一個 Intune 受管理身分識別。
 
-身分識別會定義為字串。 身分識別「不區分大小寫」，而且針對身分識別對 SDK 所做出的要求，可能不會傳回原本設定身分識別時所使用的相同大小寫。
+身分識別會定義為字串。 身分識別「不區分大小寫」  ，而且針對身分識別對 SDK 所做出的要求，可能不會傳回原本設定身分識別時所使用的相同大小寫。
 
-當應用程式想要變更作用中身分識別時，「必須」通知 SDK。 有時候，需要身分識別變更時，SDK 也會通知應用程式。 但在大部分情況下，MAM 無法知道哪些資料會於指定的時間顯示在 UI 中或用在執行緒上，依賴應用程式設定正確的身分識別，才能避免資料洩漏。 在接下來的各節中，會呼叫某些需要應用程式動作的特定案例。
+當應用程式想要變更作用中身分識別時，「必須」  通知 SDK。 有時候，需要身分識別變更時，SDK 也會通知應用程式。 但在大部分情況下，MAM 無法知道哪些資料會於指定的時間顯示在 UI 中或用在執行緒上，依賴應用程式設定正確的身分識別，才能避免資料洩漏。 在接下來的各節中，會呼叫某些需要應用程式動作的特定案例。
 
 ### <a name="enabling-multi-identity"></a>啟用多重身分識別
 
@@ -1214,25 +1213,25 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 開發人員可以將應用程式使用者的身分識別設定為下列層級 (以遞減的優先順序排列)：
 
   1. 執行緒層級
-  2. `Context` (通常`Activity`) 層級
+  2. `Context` (通常為 `Activity`) 層級
   3. 處理程序層級
 
-在執行緒層級設定的身分識別會取代在 `Context` 層級設定的身分識別，進而取代在處理程序層級設定的身分識別。 只有在適當的相關案例中，才會使用 `Context` 上所設定的身分識別。 例如，檔案 IO 操作沒有相關聯的 `Context`。 大多數情況下，應用程式將會設定`Context`上的身分識別`Activity`。 應用程式「絕」不顯示受控身分識別的資料，除非 `Activity` 身分識別設定為相同的身分識別。 一般情況下，只有當應用程式在所有執行緒上一次只處理一名使用者時，處理序層級的身分識別才有用。 許多應用程式可能不需要使用它。
+在執行緒層級設定的身分識別會取代在 `Context` 層級設定的身分識別，進而取代在處理程序層級設定的身分識別。 只有在適當的相關案例中，才會使用 `Context` 上所設定的身分識別。 例如，檔案 IO 操作沒有相關聯的 `Context`。 最常見的情況是，應用程式會在 `Activity` 上設定 `Context` 身分識別。 應用程式「絕」不  顯示受控身分識別的資料，除非 `Activity` 身分識別設定為相同的身分識別。 一般情況下，只有當應用程式在所有執行緒上一次只處理一名使用者時，處理序層級的身分識別才有用。 許多應用程式可能不需要使用它。
 
-如果您的應用程式會使用`Application`內容，以取得系統服務，請確定已設定的執行緒或處理序身分識別，或您已在您的應用程式上設定 UI 身分識別`Application`內容。
+若您的應用程式使用 `Application` 內容來取得系統服務，請確認您已設定執行緒或處理序身分識別，或是您已在應用程式的 `Application` 內容上設定 UI 身分識別。
 
-若要處理特殊的情況下，更新的 UI 身分識別時`setUIPolicyIdentity`或是`switchMAMIdentity`，這兩種方法可以傳遞一組`IdentitySwitchOption`值。
+若要在使用 `setUIPolicyIdentity` 或 `switchMAMIdentity` 更新 UI 身分識別處理特殊案例，您可以將一組 `IdentitySwitchOption` 值傳遞給這兩個方法。
 
-* `IGNORE_INTENT`： 如果要求身分識別切換，應該忽略目前的活動相關聯的目的使用。
+* `IGNORE_INTENT`：若要求應忽略與目前活動建立關聯之意圖的身分識別切換，請使用此選項。
   例如：
 
-  1. 您的應用程式接收來自包含受管理的文件中，受管理身分識別的意圖和您的應用程式顯示文件。
-  2. 使用者切換到其個人的身分識別，因此您的應用程式要求 UI 身分識別切換。 在個人的身分識別，您的應用程式不會再顯示文件，讓您使用`IGNORE_INTENT`時要求身分識別切換。
+  1. 應用程式會從包含受控文件的受控識別接收意圖，且您的應用程式會顯示該文件。
+  2. 使用者會切換到他們的個人身分識別，因此您的應用程式要求切換 UI 身分識別。 在個人身分識別中，您的應用程式不再顯示文件，因此您可以在要求切換身分識別時使用 `IGNORE_INTENT`。
 
-  如果沒有設定，SDK 會假設，仍在應用程式使用最新的意圖。 這會導致收到新的身分識別，將意圖視為連入的資料，並使用其身分識別的原則。
+  若並未進行設定，則 SDK 會假設應用程式中仍在使用最近的意圖。 這會導致新身分識別的接收原則將意圖視為傳入資料處理，並使用其身分識別。
 
 >[!NOTE]
-> 因為`CLIPBOARD_SERVICE`會使用 UI 作業，SDK 會使用 UI 身分識別之前景活動`ClipboardManager`作業。
+> 因為 `CLIPBOARD_SERVICE` 會用來進行 UI 作業，所以 SDK 會使用前景活動的 UI 身分識別來進行 `ClipboardManager` 作業。
 > 您可以使用 `MAMPolicyManager` 中的下列方法來設定身分識別，並擷取之前設定的身分識別值。
 
 ```java
@@ -1304,7 +1303,7 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
     public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
 ```
 
-如果您不會覆寫`onSwitchMAMIdentityComplete`(或呼叫`super`方法)，在活動上失敗的身分識別切換將會導致所完成的活動。 如果您覆寫此方法，您必須小心，公司資料不會顯示失敗的身分識別切換之後。
+若您沒有覆寫 `onSwitchMAMIdentityComplete` (或呼叫 `super` 方法)，則在活動上切換身分識別失敗會使活動完成。 若您覆寫該方法，您必須注意在切換身分識別失敗後不會顯示公司資料。
 
 >[!NOTE]
 > 切換身分識別可能會需要重新建立活動。 在此情況下，`onSwitchMAMIdentityComplete` 回呼會傳遞至活動的新執行個體。
@@ -1361,7 +1360,7 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
 針對所有隱含身分識別變更會呼叫 `onMAMIdentitySwitchRequired` 方法 (透過從 `MAMService.onMAMBind` 傳回的 Binder 進行的變更除外)。 `onMAMIdentitySwitchRequired` 的預設實作會立即呼叫：
 
-* `reportIdentitySwitchResult(FAILURE)` 原因是當`RESUME_CANCELLED`。
+* 當原因為 `reportIdentitySwitchResult(FAILURE)` 時，則為 `RESUME_CANCELLED`。
 
 * `reportIdentitySwitchResult(SUCCESS)` (針對所有其他情況)。
 
@@ -1369,9 +1368,9 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
   * 如果身分識別切換遭到封鎖，則結果與 `Receive` 共用設定禁止資料輸入相同。
 
-  * 如果服務正在主執行緒上執行，則「必須」同步呼叫 `reportIdentitySwitchResult`，否則 UI 執行緒將會停止回應。
+  * 如果服務正在主執行緒上執行，則「必須」  同步呼叫 `reportIdentitySwitchResult`，否則 UI 執行緒將會停止回應。
 
-  * 若要建立 **`Activity`**，在 `onMAMCreate` 之前會呼叫 `onMAMIdentitySwitchRequired`。 如果應用程式必須顯示 UI，以判斷是否允許身分識別切換，則必須使用「不同」的活動顯示該 UI。
+  * 若要建立 **`Activity`** ，在 `onMAMCreate` 之前會呼叫 `onMAMIdentitySwitchRequired`。 如果應用程式必須顯示 UI，以判斷是否允許身分識別切換，則必須使用「不同」  的活動顯示該 UI。
 
   * 在 **`Activity`** 中，如果以相當於 `RESUME_CANCELLED` 的原因要求切換至空的身分識別，則應用程式必須修改繼續的活動，以顯示與該身分識別切換一致的資料。  如果不可行，應用程式應該拒絕切換，並會再次要求使用者符合恢復之身分識別的原則 (例如，藉由顯示應用程式 PIN 輸入畫面)。
 
@@ -1389,7 +1388,7 @@ reason, callback)` 靜態方法來存取 `MAMActivity.onMAMIdentitySwitchRequire
 
 ### <a name="preserving-identity-in-async-operations"></a>保留非同步作業中的身分識別
 UI 執行緒上的作業通常會將背景工作分派至另一個執行緒。 多重身分識別應用程式會想要確保這些背景工作都以適當的身分識別操作，而這通常是分派它們的活動所使用的相同身分識別。 為方便起見，MAM SDK 提供 `MAMAsyncTask` 和 `MAMIdentityExecutors` 協助保留身分識別。
-如果非同步作業無法將公司資料寫入檔案，或無法與其他應用程式通訊，必須使用這些。
+若非同步作業可能會將公司資料寫入檔案，或是可能會和其他應用程式通訊，則必須使用這些項目。
 
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
@@ -1493,7 +1492,7 @@ public interface MAMFileProtectionInfo {
  ```
 
 #### <a name="app-responsibility"></a>應用程式責任
-MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之間的關聯性。 應用程式「必須」先適當地設定 UI 身分識別，才能顯示公司資料。 這包括從檔案讀取的資料。 如果檔案來自應用程式之外 (來自 `ContentProvider` 或讀取自公開寫入位置)，應用程式「必須」嘗試先判斷檔案身分識別 (使用 `MAMFileProtectionManager.getProtectionInfo`) 才能顯示從檔案讀取的資訊。 如果 `getProtectionInfo` 回報非 null、非空白的身分識別，則 UI 身分識別「必須」設定成符合此身分識別 (使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`)。 如果身分識別切換失敗，「絕無法」顯示檔案中的資料。
+MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之間的關聯性。 應用程式「必須」  先適當地設定 UI 身分識別，才能顯示公司資料。 這包括從檔案讀取的資料。 如果檔案來自應用程式之外 (來自 `ContentProvider` 或讀取自公開寫入位置)，應用程式「必須」  嘗試先判斷檔案身分識別 (使用 `MAMFileProtectionManager.getProtectionInfo`) 才能顯示從檔案讀取的資訊。 如果 `getProtectionInfo` 回報非 null、非空白的身分識別，則 UI 身分識別「必須」  設定成符合此身分識別 (使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`)。 如果身分識別切換失敗，「絕無法」  顯示檔案中的資料。
 
 範例流程可能看起來像這樣：
   * 使用者選取要在應用程式中開啟的文件。
@@ -1504,8 +1503,8 @@ MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之�
     * 如果報告的結果是失敗，應用程式就不會顯示文件。
   * 應用程式會開啟並轉譯檔案。
   
-#### <a name="single-identity-to-multi-identity-transition"></a>多重身分識別轉換單一身分識別
-如果先前發行與更新版本單一身分識別 Intune 整合的應用程式整合了多重身分識別，先前安裝的應用程式會發生轉換 （看不到使用者，沒有任何相關聯的 UX）。 應用程式不會*必要*採取任何動作來處理這項轉換明確。 建立轉換將會繼續執行正在執行的所有檔案視為管理 （因此加密原則時，就會維持加密）。 如有需要，您可以偵測升級，並使用`MAMFileProtectionManager.protect`標記特定檔案或目錄與空的身分識別 （這會移除加密進行加密）。
+#### <a name="single-identity-to-multi-identity-transition"></a>將單一身分識別轉換為多身分識別
+若先前使用單一身分識別 Intune 整合發行的應用程式稍後與多身分識別進行整合，則先前安裝的應用程式便會發生轉換 (使用者看不到，因為沒有相關聯的 UX)。 應用程式「不需要」  明確地執行任何操作來處理此轉換。 所有在轉換前建立的檔案都會繼續視為受控 (因此若有開啟加密原則，則它們仍會維持在加密狀態)。 若需要的話，您可以偵測升級並使用 `MAMFileProtectionManager.protect` 來使用空白身分識別標記特定檔案或目錄 (若檔案和目錄經過加密，這會移除它們的加密)。
 
 #### <a name="offline-scenarios"></a>離線案例
 
@@ -1525,7 +1524,7 @@ MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之�
 
 您無法將檔案標記為屬於多重身分識別。 如果應用程式必須將屬於不同使用者的資料儲存到同一個檔案，則可以使用 `MAMDataProtectionManager` 所提供的功能手動執行這項操作。 這可讓應用程式加密資料，並將它繫結至特定的使用者。 加密資料適合存放到磁碟的檔案中。 您可以查詢與身分識別相關聯的資料，並於稍後解密資料。
 
-會運用 `MAMDataProtectionManager` 的應用程式，應該針對 `MANAGEMENT_REMOVED` 通知實作接收器。 如果透過此類別獲得保護的緩衝區在受到保護期間有啟用檔案加密，在此通知完成之後，該緩衝區將會無法讀取。 應用程式可以補救這種情況下，藉由呼叫`MAMDataProtectionManager.unprotect`此通知期間的所有緩衝區上。 若想要保留身分識別資訊，也可以在此通知期間呼叫保護 (加密在通知期間一定會停用)。
+會運用 `MAMDataProtectionManager` 的應用程式，應該針對 `MANAGEMENT_REMOVED` 通知實作接收器。 如果透過此類別獲得保護的緩衝區在受到保護期間有啟用檔案加密，在此通知完成之後，該緩衝區將會無法讀取。 應用程式可以透過在此通知期間於所有緩衝區上呼叫 `MAMDataProtectionManager.unprotect`，來補救此狀況。 若想要保留身分識別資訊，也可以在此通知期間呼叫保護 (加密在通知期間一定會停用)。
 
 
 ```java
@@ -1623,25 +1622,25 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>內容提供者
 
-如果應用程式透過 `ContentProvider` 提供 `ParcelFileDescriptor` 以外的公司資料，該應用程式必須在 `MAMContentProvider` 中呼叫 `isProvideContentAllowed(String)` 方法，並針對內容傳遞擁有者身分識別的 UPN (使用者主體名稱)。 如果此函式傳回 false，內容「絕不能」傳回給呼叫者。 透過內容提供者傳回的檔案描述元會自動根據檔案身分識別進行處理。
+如果應用程式透過 `ContentProvider` 提供 `ParcelFileDescriptor` 以外的公司資料，該應用程式必須在 `MAMContentProvider` 中呼叫 `isProvideContentAllowed(String)` 方法，並針對內容傳遞擁有者身分識別的 UPN (使用者主體名稱)。 如果此函式傳回 false，內容「絕不能」  傳回給呼叫者。 透過內容提供者傳回的檔案描述元會自動根據檔案身分識別進行處理。
 
-如果您不會繼承`MAMContentProvider`明確，並改為讓組建工具，來進行該項變更，您可能會呼叫相同方法的靜態版本： `MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`。
+若您沒有明確繼承 `MAMContentProvider`，且改為允許建置工具進行該變更，您可以呼叫相同方法的靜態版本：`MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`。
 
 ### <a name="selective-wipe"></a>選擇性抹除
 
-如果多重身分識別應用程式註冊 `WIPE_USER_DATA` 通知，應用程式應負責移除所有針對要抹除之使用者的資料，包括已將身分識別標記為屬於該使用者的所有檔案。 如果應用程式從檔案移除使用者資料，但想要將其他資料保留在檔案中，它「必須」變更檔案的身分識別 (透過 `MAMFileProtectionManager.protect` 至個人使用者或空的身分識別)。 如果加密原則正在使用中，屬於抹除中之使用者的任何剩餘檔案都將不會解密，而且會在抹除之後變成無法供應用程式存取。
+如果多重身分識別應用程式註冊 `WIPE_USER_DATA` 通知，應用程式應負責移除所有針對要抹除之使用者的資料，包括已將身分識別標記為屬於該使用者的所有檔案。 如果應用程式從檔案移除使用者資料，但想要將其他資料保留在檔案中，它「必須」  變更檔案的身分識別 (透過 `MAMFileProtectionManager.protect` 至個人使用者或空的身分識別)。 如果加密原則正在使用中，屬於抹除中之使用者的任何剩餘檔案都將不會解密，而且會在抹除之後變成無法供應用程式存取。
 
-如果應用程式註冊 `WIPE_USER_DATA`，它將無法取得 SDK 預設選擇性抹除行為的好處。 針對感知多重身分識別的應用程式，此影響可能更為明顯，因為 MAM 預設選擇性抹除只會抹除其身分識別為抹除目標的檔案。 若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」__ 想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA`。
+如果應用程式註冊 `WIPE_USER_DATA`，它將無法取得 SDK 預設選擇性抹除行為的好處。 針對感知多重身分識別的應用程式，此影響可能更為明顯，因為 MAM 預設選擇性抹除只會抹除其身分識別為抹除目標的檔案。 若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」 _ _想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA`。
 
-預設選擇性抹除會依正常程序，關閉應用程式，完成的活動，並刪除應用程式處理序。 如果您的應用程式會覆寫預設選擇性抹除，您可能要考慮關閉您的應用程式，以手動方式來防止使用者在抹除發生之後存取記憶體中的資料。
+預設選擇性抹除會順利關閉應用程式、完成活動並終止應用程式處理序。 若您的應用程式覆寫預設選擇性抹除，建議您考慮手動關閉應用程式，避免使用者在發生抹除後存取記憶體內部的資料。
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>啟用 Android 應用程式的 MAM 目標設定 (選擇性)
-在 Intune 主控台中的可設定應用程式特定索引鍵 / 值組[MAM-我們](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)並[Android 工作設定檔應用程式](https://docs.microsoft.com/intune/app-configuration-policies-use-android)。
+您可以為 [MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) 和 [Android 工作設定檔應用程式](https://docs.microsoft.com/intune/app-configuration-policies-use-android)，在 Intune 主控台中設定應用程式特定的索引鍵/值組。
 Intune 完全不會解譯這些機碼值組，但會將它們傳遞給應用程式。 想要接收這類設定的應用程式可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 類別來執行作業。 如有多個原則以相同的應用程式為目標，相同的機碼可能會有多個衝突值。
 
 > [!NOTE] 
-> 組態設定，透過 MAM 傳遞-我們不能在傳遞`offline`。  會透過傳遞僅 Android Enterprise AppRestrictions`MAMUserNotification`具有空的身分識別，在此情況下。
+> 透過 MAM-WE 的傳遞組態設定無法在 `offline` 中傳遞。  在此情況下，只有 Android Enterprise AppRestriction 會透過空白身分識別上的 `MAMUserNotification` 傳遞。
 
 ### <a name="example"></a>範例
 ```java
@@ -1716,11 +1715,11 @@ LOGGER.info("Found value " + valueToUse);
 > **預設註冊**的優點包括從 APP-WE 服務為裝置上的應用程式取得原則的簡化方法。
 
 > [!NOTE] 
-> **預設註冊**是主權雲端的注意。
+> **預設註冊**是主權雲端感知的。
 
-啟用預設註冊，執行下列步驟：
+使用下列步驟啟用預設註冊：
 
-1. 如果您的應用程式會整合 ADAL，或您要啟用 SSO，請[設定 ADAL](#configure-azure-active-directory-authentication-library-adal)下列[一般 ADAL 設定](#common-adal-configurations)#2。 如果沒有，您可以略過此步驟。
+1. 若您的應用程式與 ADAL 整合，或是您需要啟用 SSO，請在[常見 ADAL 設定](#common-adal-configurations) #2 之後[設定 ADAL](#configure-azure-active-directory-authentication-library-adal)。 若不需要，您可以跳過此步驟。
    
 2. 將下列值放在資訊清單中以啟用預設註冊：
    ```xml 
@@ -1785,7 +1784,7 @@ Intune SDK 會維護由 Android API 所提供的合約，但可能會因為強�
 
 ## <a name="telemetry"></a>遙測
 
-Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄系統產生之資料的。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人資料。
+Intune App SDK for Android 不會控制來自您應用程式的資料收集。 根據預設，公司入口網站應用程式會記錄系統產生的資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 的原則，我們不會收集任何個人資料。
 
 > [!NOTE]
 > 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
