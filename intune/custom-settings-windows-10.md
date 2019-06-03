@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: e9d07b2d46e5128d96a578e9a000e17c2aca7cec
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373977"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>在 Intune 中使用 Windows 10 裝置的自訂設定
 
@@ -39,7 +39,7 @@ Windows 10 讓許多設定服務提供者 (CSP) 設定可供使用，例如[原�
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]  ，篩選 [Intune]  ，然後選取 [Microsoft Intune]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 3. 輸入下列設定：
 
