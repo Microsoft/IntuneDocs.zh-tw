@@ -14,20 +14,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b3e8d7de7f80017d65e80860d217f1a9bc71fbe
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050259"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373701"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
-針對不符合合規性政策或規則的裝置，您可以新增 [不符合規範時所採取的動作]。 這項功能會設定按時間排序的一連串動作，例如傳送電子郵件給終端使用者等。
+針對不符合合規性政策或規則的裝置，您可以新增 [不符合規範時所採取的動作]  。 這項功能會設定按時間排序的一連串動作，例如傳送電子郵件給終端使用者等。
 
 ## <a name="overview"></a>概觀
 
-根據預設，當 Intune 偵測到不符合規範的裝置時，Intune 會立即將其標記為不符合規範。 Azure Active Directory (AD) [條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) 隨後會封鎖該裝置。 當裝置不符合規範時，[不符合規範時所採取的動作] 可讓您更靈活地決定該怎麼處置不符合規範的裝置。 例如，不立即封鎖裝置，並給使用者一個寬限期，讓其符合規範。
+根據預設，當 Intune 偵測到不符合規範的裝置時，Intune 會立即將其標記為不符合規範。 Azure Active Directory (AD) [條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) 隨後會封鎖該裝置。 當裝置不符合規範時，[不符合規範時所採取的動作]  可讓您更靈活地決定該怎麼處置不符合規範的裝置。 例如，不立即封鎖裝置，並給使用者一個寬限期，讓其符合規範。
 
 有數種動作：
 
@@ -61,9 +61,9 @@ ms.locfileid: "66050259"
 
 若要傳送電子郵件給您的使用者，請建立通知訊息範本。 裝置不符合規範時，您在範本中輸入的詳細資料會顯示在傳送給您使用者的電子郵件裡。
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [裝置合規性] > [通知]。
-3. 選取 [建立通知]。 輸入下列資訊：
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置合規性]   > [通知]  。
+3. 選取 [建立通知]  。 輸入下列資訊：
 
    - **名稱**
    - **主旨**
@@ -74,7 +74,7 @@ ms.locfileid: "66050259"
 
    ![在 Intune 中符合規範的通知訊息範例](./media/actionsfornoncompliance-1.PNG)
 
-4. 一旦您完成新增資訊，請選擇 [建立]。 通知訊息範本便可供使用。 您當作公司入口網站商標一部分上傳的標誌將會用於電子郵件範本。 如需公司入口網站商標的詳細資訊，請參閱[公司識別商標自訂](company-portal-app.md#company-identity-branding-customization)。
+4. 一旦您完成新增資訊，請選擇 [建立]  。 通知訊息範本便可供使用。 您當作公司入口網站商標一部分上傳的標誌將會用於電子郵件範本。 如需公司入口網站商標的詳細資訊，請參閱[公司識別商標自訂](company-portal-app.md#company-identity-branding-customization)。
 
 > [!NOTE]
 > 您也可以變更或更新先前建立的現有通知範本。
@@ -85,27 +85,27 @@ ms.locfileid: "66050259"
 
 您也可以在建立合規性政策或更新現有政策時新增另一個動作。 
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Microsoft Intune] > [裝置合規性]。
-2. 選取 [原則]，選擇您的原則，然後選取 [屬性]。 
+1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Microsoft Intune]   > [裝置合規性]  。
+2. 選取 [原則]  ，選擇您的原則，然後選取 [屬性]  。 
 
     尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。
   
     > [!NOTE]
     > JAMF 裝置和裝置群組目標的裝置目前無法接收合規性動作。
 
-3. 選取 [不符合規範時所採取的動作] > [新增]。
-4. 選取您的 [動作]： 
+3. 選取 [不符合規範時所採取的動作]   > [新增]  。
+4. 選取您的 [動作]  ： 
 
     - **傳送電子郵件給終端使用者**：裝置不符合規範時，選擇傳送電子郵件給使用者。 此外： 
     
-         - 選擇您先前建立的 [訊息範本]
-         - 選取群組來輸入任何 [其他收件者]
+         - 選擇您先前建立的 [訊息範本] 
+         - 選取群組來輸入任何 [其他收件者] 
     
     - **遠端鎖定不符合規範的裝置**：裝置不符合規範時，鎖定裝置。 此動作會強制使用者輸入 PIN 或密碼來解除鎖定裝置。 
     
-5. 設定 [排程]：輸入不符合規範之後在使用者裝置觸發動作的天數 (0 到 365)。 在此寬限期間之後，您可以強制執行條件式存取原則。 如果您輸入 **0** (零) 天，則條件式存取會**立即**生效。 比方說，如果裝置不符合規範，您可以立即封鎖對公司資源的存取權。
+5. 設定 [排程]  ：輸入不符合規範之後在使用者裝置觸發動作的天數 (0 到 365)。 在此寬限期間之後，您可以強制執行條件式存取原則。 如果您輸入 **0** (零) 天，則條件式存取會**立即**生效。 比方說，如果裝置不符合規範，您可以立即封鎖對公司資源的存取權。
 
-6. 完成後，請選取 [新增] > [確定]以儲存變更。
+6. 完成後，請選取 [新增]   > [確定]  以儲存變更。
 
 ## <a name="next-steps"></a>後續步驟
 

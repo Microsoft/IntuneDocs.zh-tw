@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8483e036e270744daa5e36bf9375da6e11c25746
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a5c85c936e49c277b54b542f372f97b247d6a37
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048289"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373812"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS 或 macOS 裝置功能設定
 
@@ -39,8 +39,8 @@ Intune 包含許多可協助系統管理員控制 iOS 和 macOS 裝置的功能�
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：為新的設定檔輸入描述性名稱。
@@ -48,13 +48,13 @@ Intune 包含許多可協助系統管理員控制 iOS 和 macOS 裝置的功能�
     - **平台**：選取您的平台：
         - **iOS**
         - **macOS**
-    - **設定檔類型**：選取 [裝置功能]。
+    - **設定檔類型**：選取 [裝置功能]  。
     - **設定**：輸入您要設定的設定。 如需所有設定的清單及其功用，請參閱：
 
         - [iOS](ios-device-features-settings.md)
         - [macOS](macos-device-features-settings.md)
 
-4. 當您完成時，請選取 [確定]，然後選擇 [建立] 儲存變更。
+4. 當您完成時，請選取 [確定]  ，然後選擇 [建立]  儲存變更。
 
 設定檔隨即建立並顯示於清單中。 請確認會[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

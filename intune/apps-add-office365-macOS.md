@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618557c129b693ad035dd82c823db43dcca2ee4d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ae63fa19bb24381580a206481a9ac2e3684314a
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049452"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412386"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
@@ -40,13 +40,12 @@ ms.locfileid: "66049452"
 ## <a name="create-and-configure-the-app-suite"></a>建立並設定應用程式套件
 
 從**應用程式**窗格新增 Office 365。
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [所有服務] > [監視 + 管理] > [Intune]。
-3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
-4. 在 [用戶端應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。 
-5. 選取 [新增]。
-6. 在 [應用程式類型] 清單的 [Office 365 套件] 群組中，選取 [macOS]。
-7. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]。  
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
+4. 在 [用戶端應用程式]  工作負載窗格中的 [管理]  下，選取 [應用程式]  。 
+5. 選取 [新增]  。
+6. 在 [應用程式類型]  清單的 [Office 365 套件]  群組中，選取 [macOS]  。
+7. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]  。  
     這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
 8. 輸入下列資訊：
     - **套件名稱**：輸入應用程式套件在公司入口網站中顯示的名稱。 請確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
@@ -60,27 +59,27 @@ ms.locfileid: "66049452"
     - **擁有者**：Microsoft 會顯示為擁有者。
     - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
     - **標誌**：當使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
-9. 選取 [確定]。
-10. 在 [新增應用程式] 窗格中，選取 [新增]。  
+9. 選取 [確定]  。
+10. 在 [新增應用程式]  窗格中，選取 [新增]  。  
     套件會在應用程式清單中顯示為單一項目。
 
 ## <a name="configure-app-assignments"></a>設定應用程式指派
 
 在此步驟中，設定應用程式套件的指派。 
 
-1. 在應用程式清單中選取 [Office 365] 應用程式套件，以顯示 [Office 365] 概觀窗格。
-2. 在 [Office 365] 窗格中選取 [指派]。
-3. 若要新增群組來使用該應用程式套件，請選取 [新增群組]。  
-    [新增群組] 窗格隨即顯示。
-4. 將 [指派類型] 設定為 [必要] 或 [可用]。
+1. 在應用程式清單中選取 [Office 365]  應用程式套件，以顯示 [Office 365]  概觀窗格。
+2. 在 [Office 365]  窗格中選取 [指派]  。
+3. 若要新增群組來使用該應用程式套件，請選取 [新增群組]  。  
+    [新增群組]  窗格隨即顯示。
+4. 將 [指派類型]  設定為 [必要]  或 [可用]  。
 5. 將套件指派到您選取的群組。 如需詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 
     >[!Note]
     > 您無法透過 Intune 來將 Office 365 應用程式套件解除安裝。
 
-5. 在 [指派] 窗格中，選取 [確定]。
-6. 在 [新增群組] 窗格中，選取 [確定]。
-7. 若要認可您的指派，請選取 [儲存]。
+5. 在 [指派]  窗格中，選取 [確定]  。
+6. 在 [新增群組]  窗格中，選取 [確定]  。
+7. 若要認可您的指派，請選取 [儲存]  。
 
 ## <a name="next-steps"></a>後續步驟
 

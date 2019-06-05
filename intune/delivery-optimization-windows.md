@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042643"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373938"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中的傳遞最佳化設定
 
@@ -33,12 +33,12 @@ ms.locfileid: "66042643"
 
 
 > [!NOTE]
-> **軟體更新 - Windows 10 更新通道**已由**傳遞最佳化**設定取代。 您現有的更新通道可以變更為使用 [傳遞最佳化] 設定。 [將現有的更新通道移轉至傳遞最佳化](#move-existing-update-rings-to-delivery-optimization) (在本文中) 
+> **軟體更新 - Windows 10 更新通道**已由**傳遞最佳化**設定取代。 您現有的更新通道可以變更為使用 [傳遞最佳化]  設定。 [將現有的更新通道移轉至傳遞最佳化](#move-existing-update-rings-to-delivery-optimization) (在本文中) 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 
 3. 輸入下列內容：
 
@@ -48,27 +48,27 @@ ms.locfileid: "66042643"
 
         - **Windows 10 及更新版本**
 
-    - **設定檔類型**：選取 [傳遞最佳化]。
+    - **設定檔類型**：選取 [傳遞最佳化]  。
     - **設定**：設定定義更新和應用程式下載方式的設定。 如需可用設定的資訊，請參閱 [Intune 的傳遞最佳化設定](delivery-optimization-settings.md)。
 
-4. 完成後，請選取 [確定] > [建立] 以儲存變更。
+4. 完成後，請選取 [確定]   > [建立]  以儲存變更。
 
 設定檔隨即建立並顯示在清單中。 接下來，[指派設定檔](device-profile-assign.md)，然後[監視其狀態](device-profile-monitor.md)。
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>將現有的更新通道移轉至傳遞最佳化
 
-**傳遞最佳化**設定取代了**軟體更新 - Windows 10 更新通道**。 您輕鬆就能將現有的更新通道變更為使用**傳遞最佳化**設定。 若要在建立傳遞最佳化設定檔時維持相同的設定，請使用相同的「傳遞最佳化下載模式」，然後設定與您所使用項目相同的設定。 不過，您可以選擇重新設定傳遞最佳化設定，以利用傳遞最佳化設定檔可管理的完整其他設定。
+**傳遞最佳化**設定取代了**軟體更新 - Windows 10 更新通道**。 您輕鬆就能將現有的更新通道變更為使用**傳遞最佳化**設定。 若要在建立傳遞最佳化設定檔時維持相同的設定，請使用相同的「傳遞最佳化下載模式」  ，然後設定與您所使用項目相同的設定。 不過，您可以選擇重新設定傳遞最佳化設定，以利用傳遞最佳化設定檔可管理的完整其他設定。
 
 1. 建立傳遞最佳化組態設定檔：
 
-    1. 在 Intune 中，選取 [裝置設定] > [設定檔] > [建立設定檔]。
+    1. 在 Intune 中，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
     2. 輸入下列內容：
 
         - **名稱**：為新的設定檔輸入描述性名稱。
         - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-        - **平台**：選取 [Windows 10 及更新版本]。
-        - **設定檔類型**：選取 [傳遞最佳化]。
-        - **設定**：針對 [傳遞最佳化下載模式]，除非您想要變更套用到裝置的設定，否則請選擇現有軟體更新通道所使用的相同模式。 選項包括：
+        - **平台**：選取 [Windows 10 及更新版本]  。
+        - **設定檔類型**：選取 [傳遞最佳化]  。
+        - **設定**：針對 [傳遞最佳化下載模式]  ，除非您想要變更套用到裝置的設定，否則請選擇現有軟體更新通道所使用的相同模式。 選項包括：
             - **未設定**
             - **只有 HTTP，沒有任何對等**
             - **HTTP 混合 (具有相同 NAT 後方之對等互連)**
@@ -80,10 +80,10 @@ ms.locfileid: "66042643"
 1. 將此新的設定檔指派至與現有軟體更新通道相同的裝置和使用者。 [指派設定檔](device-profile-assign.md)列出步驟。
 
 3. 將現有軟體通道取消設定：
-    1. 在 Intune 中，移至 [軟體更新] > Windows 10 更新通道。
+    1. 在 Intune 中，移至 [軟體更新]  > Windows 10 更新通道。
     2. 在清單中，選取您的更新通道。
-    3. 在設定中，將 [傳遞最佳化下載模式] 設定成 [未設定]。
-    4. 按一下 [確定] > [儲存] 來儲存您的變更。
+    3. 在設定中，將 [傳遞最佳化下載模式]  設定成 [未設定]  。
+    4. 按一下 [確定]   > [儲存]  來儲存您的變更。
 
 ## <a name="next-steps"></a>後續步驟
 

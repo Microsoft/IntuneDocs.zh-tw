@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373729"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
 當您管理組織中的裝置時，您想要建立一組設定來套用至不同的裝置群組。 例如，您有數個裝置群組。 針對群組 A，您想要指派一組特定設定。 針對群組 B，您想要指派另一組設定。 您也需要可進行之設定的簡單檢視。
 
-您可以在 Microsoft Intune 中使用 [系統管理範本] 來完成這項工作。 系統管理範本包含數百項設定，可控制 Internet Explorer 中的功能、Microsoft Office 程式、遠端桌面、對 OneDrive 的存取、使用圖片密碼或 PIN 進行登入，以及執行其他作業。 這些範本類似於 Active Directory (AD) 中的群組原則 (GPO) 設定，且是使用 XML 之 [ADMX 支援的設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (開啟另一個 Docs 網站)。 但 Intune 中的範本是 100% 雲端架構。 它們提供更簡單直接的方法來進行設定，以及尋找您想要的設定。
+您可以在 Microsoft Intune 中使用 [系統管理範本]  來完成這項工作。 系統管理範本包含數百項設定，可控制 Internet Explorer 中的功能、Microsoft Office 程式、遠端桌面、對 OneDrive 的存取、使用圖片密碼或 PIN 進行登入，以及執行其他作業。 這些範本類似於 Active Directory (AD) 中的群組原則 (GPO) 設定，且是使用 XML 之 [ADMX 支援的設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (開啟另一個 Docs 網站)。 但 Intune 中的範本是 100% 雲端架構。 它們提供更簡單直接的方法來進行設定，以及尋找您想要的設定。
 
 **系統管理範本**內建於 Intune 中，並不需要任何自訂項目，包括使用 OMA-URI。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些範本設定作為您一次管理 Windows 10 裝置的位置。
 
@@ -34,40 +34,40 @@ ms.locfileid: "66050103"
 
 ## <a name="create-a-template"></a>建立範本
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務] > 篩選 [Intune] > 選取 [Intune]。
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：輸入設定檔的名稱。
     - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-    - **平台**：選取 [Windows 10 及更新版本]。
-    - **設定檔類型**：選取 [系統管理範本 (預覽)]。
+    - **平台**：選取 [Windows 10 及更新版本]  。
+    - **設定檔類型**：選取 [系統管理範本 (預覽)]  。
 
-4. 選取 [建立]。 在新視窗中，選取 [設定]。 列出每項設定，且您可以使用上一個和下一個箭號來查看更多設定：
+4. 選取 [建立]  。 在新視窗中，選取 [設定]  。 列出每項設定，且您可以使用上一個和下一個箭號來查看更多設定：
 
     ![查看設定清單範例並使用上一個和下一個按鈕](./media/administrative-templates-windows/sample-settings-list-next-page.png)
 
-5. 選取任何設定。 例如，選取 [允許檔案下載]。 設定的詳細描述會隨即顯示。 選擇 [啟用]、[停用]，或將設定保留為 [未設定] (預設)。 此詳細描述也會說明當您選擇 [啟用]、[停用] 或 [未設定] 時所發生的情況。
-6. 按一下 [確定] 以儲存您的變更。
+5. 選取任何設定。 例如，選取 [允許檔案下載]  。 設定的詳細描述會隨即顯示。 選擇 [啟用]  、[停用]  ，或將設定保留為 [未設定]  (預設)。 此詳細描述也會說明當您選擇 [啟用]  、[停用]  或 [未設定]  時所發生的情況。
+6. 按一下 [確定]  以儲存您的變更。
 
 繼續檢閱設定清單，並設定您環境中所需的設定。 以下是一些範例：
 
-- 使用 [VBA 巨集通知設定] 設定來處理不同 Microsoft Office 程式 (包括 Word 和 Excel) 中的 VBA 巨集。
-- 使用 [允許檔案下載] 設定來允許或防止從 Internet Explorer 下載。
-- 使用 [喚醒電腦時必須使用密碼 (一般電源)] 設定，在裝置從睡眠模式喚醒時提示使用者輸入密碼。
-- 使用 [下載未簽署的 ActiveX 控制項] 設定來防止使用者從 Internet Explorer 下載未簽署的 ActiveX 控制項。
-- 使用 [關閉系統還原] 設定來允許或防止使用在裝置上執行系統還原。
+- 使用 [VBA 巨集通知設定]  設定來處理不同 Microsoft Office 程式 (包括 Word 和 Excel) 中的 VBA 巨集。
+- 使用 [允許檔案下載]  設定來允許或防止從 Internet Explorer 下載。
+- 使用 [喚醒電腦時必須使用密碼 (一般電源)]  設定，在裝置從睡眠模式喚醒時提示使用者輸入密碼。
+- 使用 [下載未簽署的 ActiveX 控制項]  設定來防止使用者從 Internet Explorer 下載未簽署的 ActiveX 控制項。
+- 使用 [關閉系統還原]  設定來允許或防止使用在裝置上執行系統還原。
 - 還有更多項目...
 
 ## <a name="find-some-settings"></a>尋找一些設定
 
 這些範本提供數百項設定。 若要更輕鬆地尋找特定設定，請使用內建功能：
 
-- 在您的範本中，選取 [設定]、[狀態] 或 [路徑] 資料行來排序清單。 例如，選取 [路徑] 資料行來查看 `Microsoft Excel` 路徑中的所有設定：
+- 在您的範本中，選取 [設定]  、[狀態]  或 [路徑]  資料行來排序清單。 例如，選取 [路徑]  資料行來查看 `Microsoft Excel` 路徑中的所有設定：
 
   ![按一下 [路徑] 以依字母順序排序](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- 在您的範本中，使用 [搜尋] 方塊來尋找特定設定。 例如，搜尋 `copy`。 這會顯示包含 `copy` 的所有設定：
+- 在您的範本中，使用 [搜尋]  方塊來尋找特定設定。 例如，搜尋 `copy`。 這會顯示包含 `copy` 的所有設定：
 
   ![按一下 [路徑] 以依字母順序排序](./media/administrative-templates-windows/search-copy-settings.png)
 

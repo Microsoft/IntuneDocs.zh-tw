@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264141"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402755"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -47,7 +47,7 @@ Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維�
 
     ![Windows Autopilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出裝置的序號、選擇性 Windows 產品識別碼、硬體雜湊和選擇性群組標籤。 您最多可在清單中建立 500 個資料列。 請使用以下顯示的標題和行格式：`Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出裝置的序號、選擇性 Windows 產品識別碼、硬體雜湊和選擇性群組標籤。 您最多可在清單中建立 500 個資料列。 請使用以下顯示的標題和行格式：`Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![新增 Windows Autopilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device2.png)
