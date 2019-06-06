@@ -135,6 +135,10 @@
           items:
             - name: 網路組態
               href: network-bandwidth-use.md
+            - name: Intune 端點
+              href: intune-endpoints.md
+            - name: Intune 美國政府端點
+              href: intune-us-government-endpoints.md
         - name: 登入 Intune
           href: account-sign-up.md
         - name: 設定網域
