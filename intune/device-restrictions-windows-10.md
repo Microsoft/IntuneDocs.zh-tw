@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174202"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354212"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -58,6 +58,24 @@ ms.locfileid: "66174202"
 - **將應用程式安裝在系統磁碟機**：[封鎖]  會防止應用程式安裝在裝置的系統磁碟機上。 [未設定]  (預設) 允許應用程式安裝在系統磁碟機上。
 - **遊戲 DVR** (僅限 Desktop)：[封鎖]  會停用 Windows 遊戲錄影和廣播。 [未設定]  (預設) 允許遊戲錄影和廣播。
 - **僅限來自市集的應用程式**：[必要]  會強制終端使用者只能安裝 Windows App Store 的應用程式。 [未設定]  可讓終端使用者安裝非 Windows App Store 的應用程式。
+- **強制在更新失敗時重新啟動應用程式**：使用應用程式時，它可能不會更新。 使用此設定以強制重新啟動應用程式。 [未設定]  (預設值) 不會強制重新啟動應用程式。 [需要]  可讓系統管理員在特定日期和時間或依據週期性排程強制重新啟動。 設定為 [需要]  時，也請輸入：
+
+  - **開始日期/時間**：選擇重新啟動應用程式的特定日期和時間。
+  - **週期**：選擇每天、每週或每月重新啟動。
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) \(英文\)
+
+- **由使用者控制安裝**：設定為 [未設定]  (預設值) 時，Windows Installer 會阻止使用者變更通常保留給系統管理員的安裝選項，例如，進入安裝檔案的目錄。 [封鎖]  允許使用者變更這些安裝選項，並略過一些 Windows Installer 安全性功能。
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall) \(英文\)
+
+- **以較高的權限安裝應用程式**：設定為 [未設定]  (預設值) 時，系統會在安裝系統管理員未部署或提供的程式時套用目前使用者的權限。 [封鎖]  會指示 Windows Installer 在系統上安裝任何程式時使用較高的權限。 這些權限會延伸至所有程式。
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges) \(英文\)
+
+- **啟動應用程式**：輸入當使用者登入裝置後要開啟的應用程式清單。 請務必使用 Windows 應用程式的套件系列名稱 (PFN) 清單 (以分號分隔)。 若要使此原則生效，Windows 應用程式中的資訊清單必須使用啟動工作。
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon) \(英文\)
 
 按一下 [確定]  以儲存您的變更。
 
@@ -408,6 +426,10 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
     - [數值]  ：密碼只能是數字。
     - [英數字元]  ：密碼必須混合數字和字母。
   - [密碼長度下限]  ：輸入 4-16 個所需的最少數字或字元。 例如，輸入 `6` 表示密碼長度至少需要六個字元。
+  
+    > [!IMPORTANT]
+    > 在 Windows 桌面上變更密碼需求時，使用者會在下次登入時受到影響，因為此時裝置會從閒置變成作用中。 系統仍會提示密碼符合需求的使用者變更其密碼。
+    
   - **女**：輸入抹除裝置前允許的驗證失敗次數，從 1 到 11。 `0` (零) 可能會停用裝置抹除功能。
 
     此設定因版本不同會有不同的影響。 如需特定的詳細資訊，請參閱 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
@@ -722,7 +744,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
   > [!WARNING]
-  > Azure 入口網站中的這項 Intune 設定可能會顯示 [失敗] 狀態。 這是回報功能的 Bug。 重新產生行為和疑難排解之後，Intune 產品小組已確認此狀態實際上是 [成功]。 這個問題會在即將推出的版本中修正。 沒有最新的 ETA，會隨著時間軸變更。 這項功能之任何更新都會在 [Microsoft Intune 正在開發的項目](in-development.md)中宣布。
+  > Azure 入口網站中的這項 Intune 設定可能會顯示 [失敗] 狀態。 這是回報功能的 Bug。 重新產生行為和進行疑難排解之後，Intune 產品小組已確認此狀態實際上是 [成功]。 這個問題會在即將推出的版本中修正。 沒有最新的 ETA，會隨著時間軸變更。 這項功能之任何更新都會在 [Microsoft Intune 正在開發的項目](in-development.md)中宣布。
 
 - [要執行的系統掃描類型]  ：排程系統掃描，包含掃描層級，以及要執行掃描的日期和時間。 選項包括：
   - [未設定]  ：不在裝置上排程系統掃描。 終端使用者可以視需要在裝置上手動執行掃描。
@@ -755,7 +777,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
   如需潛在垃圾應用程式的詳細資訊，請參閱[偵測及封鎖潛在的垃圾應用程式](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
 
-- **對所偵測到惡意程式碼威脅採取的動作**：選擇您希望 Defender 針對它所偵測到每種威脅等級 (低、中、高及嚴重) 所採取的動作。 選項包括：
+- **對所偵測到惡意程式碼威脅採取的動作**：選擇您希望 Defender 針對它所偵測到每種威脅等級 (低、中、高及嚴重) 所採取的動作。 如果不可行，Windows Defender 會選擇最佳選項以確保已修復威脅。 選項包括：
   - **清除**
   - **隔離**
   - **移除**

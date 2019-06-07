@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044606"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402670"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>針對 Intune 中的原則和設定檔進行疑難排解
 
@@ -32,13 +32,12 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="use-built-in-troubleshooting"></a>使用內建的疑難排解
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]  > 篩選 [Intune]  > 選取 [Intune]  。
-2. 選取 [疑難排解]  ：
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [疑難排解]  ：
 
     ![在 Intune 中，移至 [說明及支援]，然後選取 [疑難排解]](./media/help-and-support-troubleshoot.png)
 
-3. 選擇 [選取使用者]  > 選取發生問題的使用者 > [選取]  。
-4. 確認 [Intune 授權]  和 [帳戶狀態]  同時顯示綠色核取記號：
+2. 選擇 [選取使用者]  > 選取發生問題的使用者 > [選取]  。
+3. 確認 [Intune 授權]  和 [帳戶狀態]  同時顯示綠色核取記號：
 
     ![在 Intune 中選取使用者，並確認 [帳戶狀態] 和 [Intune 授權] 顯示綠色核取記號狀態](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
     - [指派授權，讓使用者可以註冊裝置](licenses-assign.md)
     - [將使用者新增至 Intune](users-add.md)
 
-5. 在 [裝置]  下，尋找有問題的裝置。 檢閱不同欄位：
+4. 在 [裝置]  下，尋找有問題的裝置。 檢閱不同欄位：
 
     - **受控**：若要讓裝置接收相容性或設定原則，此屬性必須顯示 [MDM]  或 [EAS/MDM]  。
 
@@ -98,7 +97,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>您不確定設定檔是否已正確套用
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]  > 篩選 [Intune]  > 選取 [Intune]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置]   > [所有裝置]  > 選取裝置 > [裝置設定]  。 
 
     每部裝置都會列出其設定檔。 每個設定檔都有 [狀態]  。 狀態是將所有指派的設定檔 (包括硬體和 OS 的限制與需求) 全部一起考慮時所達成的情況。 可能的狀態包括：
@@ -164,4 +163,6 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您仍然需要一些協助，您可以[取得 Microsoft Intune 支援](get-support.md)。
+[有關電子郵件設定檔的常見問題和解決方式](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+取得[來自 Microsoft 的支援說明](get-support.md)或使用[社群論壇](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)。

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e30b90ff6f2189444f21b22fb5fd224ba3dc397
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa043e667bf12db9e30bfc56522c92d530a88c75
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373626"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 macOS 裝置的自訂設定
 
@@ -43,7 +43,7 @@ ms.locfileid: "66048640"
 
   - 在 Profile Manager 中啟用[行動裝置管理](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C)。
   - 在 Profile Manager 中新增 [macOS 裝置](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984)。
-  - 在 Profile Manager 中新增裝置之後，請移至 [Under the Library] \(在程式庫下\) > [Devices] \(裝置\) > 選取您的裝置 > [Settings] \(設定\)。 輸入裝置的一般、安全性、隱私權、目錄和憑證設定。
+  - 在 Profile Manager 中新增裝置之後，請移至 [Under the Library] \(在程式庫下\)   > [Devices] \(裝置\)  > 選取您的裝置 > [Settings] \(設定\)  。 輸入裝置的一般、安全性、隱私權、目錄和憑證設定。
 
     下載並儲存此檔案。 您將在 Intune 設定檔中輸入此檔案。 
 
@@ -51,21 +51,21 @@ ms.locfileid: "66048640"
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 3. 輸入下列設定：
 
     - **名稱**：輸入設定檔的名稱，例如 `macos custom profile`。
     - **描述**：輸入設定檔的描述。
-    - **平台**：選擇 [macOS]。
-    - **設定檔類型**：選擇 [自訂]。
+    - **平台**：選擇 [macOS]  。
+    - **設定檔類型**：選擇 [自訂]  。
 
-4. 在 [自訂設定] 中，輸入下列設定：
+4. 在 [自訂設定]  中，輸入下列設定：
 
     - **自訂組態設定檔名稱**：輸入原則的名稱。 此名稱會在裝置上和 Intune 狀態中顯示。
-    - **組態設定檔**：瀏覽至使用 Apple Configurator 或 Apple Profile Manager 所建立的組態設定檔。 您匯入的檔案會顯示在 [檔案內容] 區域中。
+    - **組態設定檔**：瀏覽至使用 Apple Configurator 或 Apple Profile Manager 所建立的組態設定檔。 您匯入的檔案會顯示在 [檔案內容]  區域中。
 
-5. 選取 [確定] > [建立] 以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置設定 - 設定檔] 清單中。
+5. 選取 [確定]   > [建立]  以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置設定 - 設定檔]  清單中。
 
 ## <a name="next-steps"></a>後續步驟
 
