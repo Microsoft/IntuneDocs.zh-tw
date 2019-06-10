@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1aa79bbaa6765a0d4b6009468bdfa184222c5f00
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049412"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454092"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -43,41 +43,40 @@ ms.locfileid: "66049412"
 - Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Microsoft Store 的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
 - 未附加多個必要或可用的應用程式指派。 較新的應用程式指派會覆寫現有的已安裝應用程式指派。 例如，如果第一組的 Office 應用程式包含 Word，而較新的集合沒有 Word，則 Word 會解除安裝。 此條件不適用於任何 Visio 或 Project 應用程式。
 - **Office 版本** - 選擇要指派 32 位元還是 64 位元版本的 Office。 32 位元版本可以安裝在 32 位元和 64 位元的裝置上，但 64 位元版本只能安裝在 64 位元的裝置。
-- **從終端使用者裝置移除 MSI** - 選擇是否要從終端使用者裝置移除已有的 Office .MSI 應用程式。 如果終端使用者裝置上已有 .MSI 應用程式，則該安裝不會成功。 要解除安裝的應用程式不限於在 [設定應用程式套件] 中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從終端使用者裝置移除。 如需詳細資訊，請參閱 [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (在升級至 Office 365 專業增強版時，移除 Office 的現有 MSI 版本。 當 Intune 在您終端使用者的電腦上重新安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。
+- **從終端使用者裝置移除 MSI** - 選擇是否要從終端使用者裝置移除已有的 Office .MSI 應用程式。 如果終端使用者裝置上已有 .MSI 應用程式，則該安裝不會成功。 要解除安裝的應用程式不限於在 [設定應用程式套件]  中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從終端使用者裝置移除。 如需詳細資訊，請參閱 [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (在升級至 Office 365 專業增強版時，移除 Office 的現有 MSI 版本。 當 Intune 在您終端使用者的電腦上重新安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。
 
 ## <a name="get-started"></a>開始使用
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [所有服務] > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選取 [用戶端應用程式]。
-4. 在 [用戶端應用程式] 工作負載窗格中的 [管理] 下，選取 [應用程式]。
-5. 選取 [新增]。
-6. 在 [新增應用程式] 窗格的 [應用程式類型] 清單中，於 [Office 365 Suite] 下，選取 [Windows 10]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
+4. 在 [用戶端應用程式]  工作負載窗格中的 [管理]  下，選取 [應用程式]  。
+5. 選取 [新增]  。
+6. 在 [新增應用程式]  窗格的 [應用程式類型]  清單中，於 [Office 365 Suite]  下，選取 [Windows 10]  。
 
 ## <a name="select-settings-format"></a>選取設定格式
 
-您可以選取 [設定格式] 來選擇設定應用程式的方法。 設定格式選項包括：
+您可以選取 [設定格式]  來選擇設定應用程式的方法。 設定格式選項包括：
 - 設定設計工具
 - 輸入 XML 資料
 
-當您選擇 [設定設計工具] 時，[新增應用程式] 刀鋒視窗將變更為提供兩個額外的設定選項：
+當您選擇 [設定設計工具]  時，[新增應用程式]  刀鋒視窗將變更為提供兩個額外的設定選項：
 - 設定應用程式套件
 - 應用程式套件設定
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-當您選擇 [輸入 XML 資料] 時，[新增應用程式] 刀鋒視窗中會顯示 [輸入 XML 資料] 選項。 選取此選項以顯示 [設定檔] 刀鋒視窗。 
+當您選擇 [輸入 XML 資料]  時，[新增應用程式]  刀鋒視窗中會顯示 [輸入 XML 資料]  選項。 選取此選項以顯示 [設定檔]  刀鋒視窗。 
 
 ![新增 Office 365 設定設計工具](./media/apps-add-office365/apps-add-office365-01.png)
     
-如需 [輸入 XML 資料] 選項的詳細資訊，請參閱下方的[輸入 XML 資料](apps-add-office365.md#enter-xml-format)。
+如需 [輸入 XML 資料]  選項的詳細資訊，請參閱下方的[輸入 XML 資料](apps-add-office365.md#enter-xml-format)。
 
 ## <a name="configure-app-suite-information"></a>設定應用程式套件資訊
 
 在此步驟中，您要提供應用程式套件的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
 
-1. 在 [新增應用程式] 窗格中，選取 [應用程式套件資訊]。
-2. 在 [應用程式套件資訊] 窗格中，執行以下動作：
+1. 在 [新增應用程式]  窗格中，選取 [應用程式套件資訊]  。
+2. 在 [應用程式套件資訊]  窗格中，執行以下動作：
     - **套件名稱**：輸入應用程式套件在公司入口網站中顯示的名稱。 請確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述**：輸入應用程式套件的描述。 例如，您可以列出已選取包含的應用程式。
     - **發行者**：Microsoft 會顯示為發行者。
@@ -89,23 +88,23 @@ ms.locfileid: "66049412"
     - **擁有者**：Microsoft 會顯示為擁有者。
     - **附註**：輸入要與此應用程式建立關聯的任何附註。
     - **標誌**：當使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
-3. 選取 [確定]。
+3. 選取 [確定]  。
 
 ## <a name="configure-app-suite"></a>設定應用程式套件
 
-如果您在 [設定格式] 下拉式方塊底下選取 [設定設計工具] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [設定應用程式套件] 選項。 選取您想要指派給裝置的 Office 應用程式。
+如果您在 [設定格式]  下拉式方塊底下選取 [設定設計工具]  選項，就會在 [新增應用程式]  刀鋒視窗中看到 [設定應用程式套件]  選項。 選取您想要指派給裝置的 Office 應用程式。
 
-1. 在 [新增應用程式] 窗格中，選取 [設定應用程式套件]。
-2. 在 [設定應用程式套件] 窗格中，選取您想要指派給裝置的標準 Office 應用程式。  
+1. 在 [新增應用程式]  窗格中，選取 [設定應用程式套件]  。
+2. 在 [設定應用程式套件]  窗格中，選取您想要指派給裝置的標準 Office 應用程式。  
     此外，若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Online 方案 2 的授權，您可以安裝其適用的應用程式。
-3. 選取 [確定]。
+3. 選取 [確定]  。
 
 ## <a name="configure-app-suite-settings"></a>設定應用程式套件設定
 
-如果您在 [設定格式] 下拉式方塊底下選取 [設定設計工具] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [應用程式套件設定] 選項。 在此步驟中，設定應用程式套件的安裝選項。 這些設定適用於您新增至套件的所有應用程式。
+如果您在 [設定格式]  下拉式方塊底下選取 [設定設計工具]  選項，就會在 [新增應用程式]  刀鋒視窗中看到 [應用程式套件設定]  選項。 在此步驟中，設定應用程式套件的安裝選項。 這些設定適用於您新增至套件的所有應用程式。
 
-1. 在 [新增應用程式] 窗格中，選取 [應用程式套件設定]。
-2. 在 [應用程式套件設定] 窗格中，執行以下動作：
+1. 在 [新增應用程式]  窗格中，選取 [應用程式套件設定]  。
+2. 在 [應用程式套件設定]  窗格中，執行以下動作：
     - **Office 版本**：選擇要指派 32 位元還是 64 位元版本的 Office。 32 位元版本可以安裝在 32 位元和 64 位元的裝置上，但 64 位元版本只能安裝在 64 位元的裝置。
     - **更新通道**：選擇 Office 在裝置上的更新方式。 如需各種更新頻道的相關資訊，請參閱 [Office 365 專業增強版更新頻道概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) \(機器翻譯\)。 從下列選項進行選擇：
         - **每月**
@@ -113,7 +112,7 @@ ms.locfileid: "66049412"
         - **每半年**
         - **每半年 (目標)**
 
-        在您選取 [通道] 後，您可以選擇性選取 [特定]，以在終端使用者裝置上，為所選通道安裝特定 Office 版本。 然後選取要使用之 Office 的 [特定版本]。
+        在您選取 [通道] 後，您可以選擇性選取 [特定]  ，以在終端使用者裝置上，為所選通道安裝特定 Office 版本。 然後選取要使用之 Office 的 [特定版本]  。
         
         可用的版本將會隨著時間變更。 因此，建立新的部署時，可用的版本可能較新，因此沒有特定較舊版本可用。 目前部署將會繼續部署較舊的版本，但每個通道都會持續更新版本清單。
         
@@ -121,19 +120,27 @@ ms.locfileid: "66049412"
         
         如需詳細資訊，請參閱 [Office 365 ProPlus 更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
-    - **從終端使用者裝置移除 MSI** - 選擇是否要從終端使用者裝置移除已有的 Office .MSI 應用程式。 如果終端使用者裝置上已有 .MSI 應用程式，則該安裝不會成功。 要解除安裝的應用程式不限於在 [設定應用程式套件] 中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從終端使用者裝置移除。 如需詳細資訊，請參閱 [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (在升級至 Office 365 專業增強版時，移除 Office 的現有 MSI 版本。 當 Intune 在您終端使用者的電腦上重新安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。 
+    - **從終端使用者裝置移除 MSI** - 選擇是否要從終端使用者裝置移除已有的 Office .MSI 應用程式。 如果終端使用者裝置上已有 .MSI 應用程式，則該安裝不會成功。 要解除安裝的應用程式不限於在 [設定應用程式套件]  中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從終端使用者裝置移除。 如需詳細資訊，請參閱 [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (在升級至 Office 365 專業增強版時，移除 Office 的現有 MSI 版本。 當 Intune 在您終端使用者的電腦上重新安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。 
     - **自動接受應用程式的使用者授權合約**：如果您不需要使用者接受授權合約，請選取此選項。 Intune 會自動接受合約。
     - **使用共用電腦啟用**：當多個使用者共用一部電腦時，請選取此選項。 如需詳細資訊，請參閱 [Office 365 的共用電腦啟用概觀](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **語言**：系統會自動以使用者裝置上與 Windows 一起安裝的任何受支援語言安裝 Office。 如果想要使用其他語言安裝應用程式套件，請選取此選項。 <p></p>
-    您將可以為透過 Intune 管理的 Office 365 專業增強版應用程式來部署其他語言。 可用的語言清單包括語言套件的**類型** (核心、部分和校訂)。 在 Azure 入口網站中，選取 [Microsoft Intune] > [用戶端應用程式] > [應用程式] > [新增]。 在 [新增應用程式] 刀鋒視窗的 [應用程式類型] 清單中，選取 [Office 365 套件] 下的 [Windows 10]。 選取 [應用程式套件設定] 刀鋒視窗中的 [語言]。 如需詳細資訊，請參閱[在 Office 365 專業增強版中部署語言的概觀](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+    您將可以為透過 Intune 管理的 Office 365 專業增強版應用程式來部署其他語言。 可用的語言清單包括語言套件的**類型** (核心、部分和校訂)。 在 Azure 入口網站中，選取 [Microsoft Intune]   > [用戶端應用程式]   > [應用程式]   > [新增]  。 在 [新增應用程式]  刀鋒視窗的 [應用程式類型]  清單中，選取 [Office 365 套件]  下的 [Windows 10]  。 選取 [應用程式套件設定]  刀鋒視窗中的 [語言]  。 如需詳細資訊，請參閱[在 Office 365 專業增強版中部署語言的概觀](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+
+## <a name="select-scope-tags-optional"></a>選取範圍標籤 (選擇性)
+您可以使用範圍標籤來決定可在 Intune 中看見用戶端應用程式資訊的人員。 如需範圍標籤的完整詳細資料，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](scope-tags.md)。
+
+1. 選取 [範圍 (標籤)]   > [新增]  。
+2. 使用 [選取]  方塊來搜尋範圍標籤。
+3. 選取您想要指派至此應用程式之範圍標籤旁邊的核取方塊。
+4. 選擇 [選取]   > [確定]  。
 
 ## <a name="enter-xml-format"></a>輸入 XML 格式
 
-如果您在 [設定格式] 下拉式方塊底下選取 [輸入 XML 資料] 選項，就會在 [新增應用程式] 刀鋒視窗中看到 [輸入 XML 格式] 選項。 如需詳細資訊，請參閱 [Office 部署工具的設定選項](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
+如果您在 [設定格式]  下拉式方塊底下選取 [輸入 XML 資料]  選項，就會在 [新增應用程式]  刀鋒視窗中看到 [輸入 XML 格式]  選項。 如需詳細資訊，請參閱 [Office 部署工具的設定選項](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 ## <a name="finish-up"></a>完成
 
-當您完成時，在 [新增應用程式] 窗格中，選取 [新增]。 您已建立的應用程式會顯示在應用程式清單中。
+當您完成時，在 [新增應用程式]  窗格中，選取 [新增]  。 您已建立的應用程式會顯示在應用程式清單中。
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>應用程式套件安裝期間發生的錯誤
 
