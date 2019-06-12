@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048951"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713892"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
@@ -50,7 +50,7 @@ ms.locfileid: "66048951"
     - Windows 10 及更新版本
 
     > [!NOTE]  
-    > 若裝置執行「適用於專用裝置的 Android 企業」，則不支援憑證設定檔。
+    > 若裝置執行「適用於專用裝置的 Android 企業」  ，則不支援憑證設定檔。
 
 3. 建立憑證設定檔，讓每個裝置要求一個用於驗證 VPN、Wi-Fi 和電子郵件存取的憑證。 下列設定檔類型可用於不同的平台：  
 
@@ -90,11 +90,10 @@ ms.locfileid: "66048951"
 ## <a name="step-3-create-trusted-certificate-profiles"></a>步驟 3：建立受信任的憑證設定檔
 先建立受信任的憑證設定檔，才能建立 SCEP 或 PKCS 憑證設定檔。 每個裝置平台都需要一個受信任的憑證設定檔以及 SCEP 或 PKCS 設定檔。 針對每個裝置平台，建立受信任憑證的步驟皆相似。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)，篩選 [Intune]，然後選取 [Microsoft Intune]。
-3. 選取 [裝置設定] > [管理] > [設定檔] > [建立設定檔]。
-4. 輸入受信任憑證設定檔的 [名稱] 和 [描述]。
-5. 從 [平台] 下拉式清單中，選取此受信任憑證的裝置平台。 選項包括：
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 選取 [裝置設定]   > [管理]   > [設定檔]   > [建立設定檔]  。
+4. 輸入受信任憑證設定檔的 [名稱]  和 [描述]  。
+5. 從 [平台]  下拉式清單中，選取此受信任憑證的裝置平台。 選項包括：
 
     - **Android**
     - **Android Enterprise**
@@ -104,15 +103,15 @@ ms.locfileid: "66048951"
     - **Windows 8.1 及更新版本**
     - **Windows 10 及更新版本**
 
-6. 從 [設定檔類型] 下拉式清單中，選擇 [受信任的憑證]。
-7. 瀏覽至您於[步驟 2：匯出受信任的根 CA 憑證](#step-2-export-your-trusted-root-ca-certificate)中所儲存的憑證，然後選取 [確定]。
-8. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]︰
+6. 從 [設定檔類型]  下拉式清單中，選擇 [受信任的憑證]  。
+7. 瀏覽至您於[步驟 2：匯出受信任的根 CA 憑證](#step-2-export-your-trusted-root-ca-certificate)中所儲存的憑證，然後選取 [確定]  。
+8. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]  ︰
 
     - **電腦憑證存放區 - 根**
     - **電腦憑證存放區 - 中繼**
     - **使用者憑證存放區 - 中繼**
 
-9. 當您完成時，請選擇 [確定] 返回 [建立設定檔] 窗格，然後選取 [建立]。
+9. 當您完成時，請選擇 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。
 
 會建立設定檔，而且會出現在清單中。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
 
