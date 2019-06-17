@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744321"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031644"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 6 月
 
@@ -51,14 +51,11 @@ ms.locfileid: "66744321"
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>裝置使用者可檢視其安裝或嘗試安裝的所有受控應用程式 <!-- 2352913 -->
 Windows 的公司入口網站會列出所有安裝在使用者裝置上 (必要及可用的) 受控應用程式。 使用者將能夠檢視嘗試及正在擱置的應用程式安裝，以及其目前的狀態。 若您的組織沒有將應用程式設為必要或可用，使用者會看見一個訊息，說明沒有安裝任何公司應用程式。 使用者也將能夠根據安裝狀態排序或篩選其應用程式。
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>報告 Android 工作設定檔的可用 Google Play 應用程式 <!-- 3041956 -->
-針對安裝在 Android 工作設定檔裝置上的可用應用程式，您可以檢視應用程式安裝狀態，以及受控 Google Play 應用程式的安裝版本。 如需詳細資訊，請參閱[如何監視應用程式保護原則](app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作設定檔裝置](android-enterprise-overview.md)及[受控的 Google Play 應用程式類型](apps-add-android-for-work.md#managed-google-play-app-type)。
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>設定允許連結至組織資料的瀏覽器 <!-- 3145939 -->
 Android 和 iOS 裝置上的 Intune 應用程式防護原則 (APP) 可讓您將組織網頁連結傳送給 Intune Managed Browser 或 Microsoft Edge 之外的特定瀏覽器。  如需 APP 的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>公司入口網站上的已安裝應用程式頁面  <!-- 4224326 -->
-[公司入口網站](https://portal.manage.microsoft.com/)會包含新的頁面，向使用者顯示所有已安裝在其裝置上的應用程式。 這份清單包括可用的應用程式和其組織所需應用程式。 在這個頁面中，使用者可以看到其裝置上的應用程式安裝與需求狀態。 如需公司入口網站的詳細資訊，請參閱[使用 Intune 公司入口網站](/intune-user-help/using-the-intune-company-portal-website.md)和[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
+[公司入口網站](https://portal.manage.microsoft.com/)會包含新的頁面，向使用者顯示所有已安裝在其裝置上的應用程式。 這份清單包括可用的應用程式和其組織所需應用程式。 在這個頁面中，使用者可以看到其裝置上的應用程式安裝與需求狀態。 如需公司入口網站的詳細資訊，請參閱[使用 Intune 公司入口網站](/intune-user-help/using-the-intune-company-portal-website)和[如何設定 Microsoft Intune 公司入口網站應用程式](company-portal-app.md)。
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>從沒有使用者認證的應用程式中呼叫圖形 API 讀取作業 <!-- 4655885 -->
 應用程式可以使用無使用者認證的應用程式身分識別呼叫 Intune 圖形 API 讀取作業。 若要進一步了解，請參閱 [Get access without a user](https://docs.microsoft.com/graph/auth-v2-service) (無使用者的存取)。
