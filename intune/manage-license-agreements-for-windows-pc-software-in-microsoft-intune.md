@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046958"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031668"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
 
@@ -35,7 +35,7 @@ Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購�
 >
 > 您新增至 Intune 的授權不會影響您的授權合約或軟體使用權利。 例如，如果您從 Intune 中刪除授權/合約組，並不會刪除您與 Microsoft 間存在的授權合約，或使合約失效。
 
-在 Intune 管理員主控台的 [授權] 工作區中，您可以：
+在 Intune 管理員主控台的 [授權]  工作區中，您可以：
 
 -   新增和編輯 Microsoft 大量授權合約。
 
@@ -48,14 +48,14 @@ Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購�
 此外，您可以產生報表，顯示軟體項目的安裝與授權計數。 授權報表可協助您評估 Microsoft 軟體與非 Microsoft 軟體項目的完整授權定位。
 
 > [!TIP]
-> 您必須使用 Intune Windows 電腦用戶端至少管理一部 Windows 電腦，[授權] 工作區才會顯示在管理員主控台中。
+> 您必須使用 Intune Windows 電腦用戶端至少管理一部 Windows 電腦，[授權]  工作區才會顯示在管理員主控台中。
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>新增 Microsoft 大量授權合約
 Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟體的授權資訊。 您可以藉由提供相符的合約編號組，將 Microsoft 大量授權合約新增至 Intune。 合約或授權編號必須符合正確的授權或註冊編號。 當您購買授權合約時，即可從 [大量授權服務中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)取得合約編號組。
 
-1.  在 [Microsoft Intune 管理主控台](https://account.manage.microsoft.com/admin/default.aspx)中，選擇 **[授權]** 。
+1.  在 [Microsoft Intune 管理主控台](https://admin.manage.microsoft.com/)中，選擇 **[授權]** 。
 
-2.  在 [新增合約]  頁面的 [選擇合約類型] 下，選取 [大量授權合約] 。
+2.  在 [新增合約]  頁面的 [選擇合約類型]  下，選取 [大量授權合約]  。
 
 3.  在 **[新增合約詳細資料]** 區段中，選擇您要上傳的檔案，或以手動方式加入詳細資料。
 
@@ -67,7 +67,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
         -   僅支援 ASCII 字元。
 
-        -   合約名稱中不能包含下列字元：**~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
+        -   合約名稱中不能包含下列字元： **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
 
         -   檔案名稱的長度不能超過 128 個字元。
 
@@ -93,7 +93,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
         -   **合約名稱** - 為合約指定唯一的名稱。
 
-            合約名稱最多可以使用 256 個字元，但不能包含下列字元：**~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
+            合約名稱最多可以使用 256 個字元，但不能包含下列字元： **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
 
         -   **授權/合約編號** - 輸入授權組的授權/合約編號。
 
@@ -112,7 +112,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
     -   **[將合約新增至現有的授權群組]** 。 在 [群組名稱]  對話方塊中，選取您要新增合約的授權群組。
 
-5.  選擇 [確定]。
+5.  選擇 [確定]  。
 
 **[所有合約]** 檢視隨即顯示，且 Intune 將會連線到 Microsoft VLSC，以驗證您所提供的合約編號組。
 
@@ -128,7 +128,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 -   **授權安裝報表** - 可協助您判斷您的授權合約涵蓋範圍是否足夠。
 
 > [!NOTE]
-> 所有 Microsoft 大量授權合約顯示的 [產品標題]  都是 [無相關資料] 。
+> 所有 Microsoft 大量授權合約顯示的 [產品標題]  都是 [無相關資料]  。
 
 ## <a name="add-and-edit-other-software-licensing-agreements"></a>新增和編輯其他軟體授權合約
 您也可以將 Microsoft 大量授權合約以外之其他類型的授權合約新增至 Intune。 這些合約可以包括透過零售商購買的非 Microsoft 軟體或 Microsoft 軟體。
@@ -138,7 +138,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
 ### <a name="to-add-other-software-agreements"></a>若要新增其他軟體合約
 
-1.  在 [Microsoft Intune 管理主控台](https://account.manage.microsoft.com/admin/default.aspx)中，選擇 **[授權]** 。
+1.  在 [Microsoft Intune 管理主控台](https://admin.manage.microsoft.com/)中，選擇 **[授權]** 。
 
 2.  在 **[其他軟體授權合約]** 區段中，選擇 **[新增合約]** 。
 
@@ -146,22 +146,22 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
 4.  在 [新增合約詳細資料]  區域中，指定下列資料：
 
-    -   **Agreement name** (必要)： 合約名稱最多可以使用 256 個字元，但不能包含下列字元：**~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
+    -   **Agreement name** (必要)： 合約名稱最多可以使用 256 個字元，但不能包含下列字元： **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** 。 名稱可以使用空白字元。
 
     -   **發行者** (必要)： 當您開始輸入發行者名稱時，服務會擷取內含您所輸入字母的所有發行者名稱。 例如，如果您輸入 “soft”，服務便會擷取名稱任一部分包含 “soft” 的所有發行者名稱，例如 “Microsoft” 和 “Microsoft Research”。 發行者名稱是從「軟體資產類別」擷取。 您必須先選取發行者，才能輸入產品標題。
 
         > [!IMPORTANT]
         > 您要新增的公司不一定會出現在這個清單中。 您只能為軟體資產類別中已有的公司新增軟體合約。 不過，Microsoft 會持續努力增加最熱門的軟體項目。 如果您想要提交要求，將特定公司新增至清單，您可以在 [Intune Uservoice 網站](https://microsoftintune.uservoice.com/)上執行這項作業。
 
-    -   **產品標題** (必要)： 當您開始輸入產品標題時，服務會擷取包含您所輸入字母的所有產品標題。 您必須先指定 [發行者]  ，然後才能指定 [產品標題] 。
+    -   **產品標題** (必要)： 當您開始輸入產品標題時，服務會擷取包含您所輸入字母的所有產品標題。 您必須先指定 [發行者]  ，然後才能指定 [產品標題]  。
 
     -   **授權計數** (必要)： 輸入購買的授權數目。
 
-    -   [授權開始日期]： 輸入授權涵蓋範圍的開始日期。
+    -   [授權開始日期]  ： 輸入授權涵蓋範圍的開始日期。
 
-    -   [授權結束日期]： 輸入授權涵蓋範圍的結束日期。
+    -   [授權結束日期]  ： 輸入授權涵蓋範圍的結束日期。
 
-    -   [合約詳細資料]： 您可以選擇指定連絡資訊、註冊金鑰和其他資訊。
+    -   [合約詳細資料]  ： 您可以選擇指定連絡資訊、註冊金鑰和其他資訊。
 
 5.  在 [選取授權群組]  區域中，執行下列其中一個步驟：
 
@@ -171,7 +171,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
     -   選取 [將合約新增至現有的授權群組]  ，以便將新合約新增到現有的授權群組。 在 [群組名稱]  對話方塊中，選取您要新增合約的授權群組。
 
-6.  選擇 [確定]。
+6.  選擇 [確定]  。
 
 [所有合約]  清單檢視隨即顯示。
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041691"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044942"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -58,7 +58,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 |---------------|--------------------|
 |作業系統 | 執行 Windows 7 SP1 與 Windows 8.1 或更新版本的 Windows 裝置。 </br></br>**不支援家用版本。**|
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|
-|Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
+|Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]  。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
 |移除不相容的用戶端軟體|安裝 Intune 用戶端軟體之前，請從該電腦解除安裝任何 Configuration Manager、Operations Manager 與 Service Manager 用戶端軟體。|
 
 > [!WARNING]
@@ -87,7 +87,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 
 雖然 Intune 用戶端軟體透過管理軟體更新、Windows 防火牆和 Endpoint Protection 支援[協助保護電腦的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但使用 Intune 用戶端軟體管理的電腦無法作為其他 Intune 原則的目標，包括那些專用於行動裝置管理的 **Windows** 原則設定。
 
-當您使用 Intune 用戶端軟體管理 Windows 電腦時，可以只使用 [電腦管理] 區段下的原則。
+當您使用 Intune 用戶端軟體管理 Windows 電腦時，可以只使用 [電腦管理]  區段下的原則。
 
 Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Server Active Directory 網域服務 (AD DS) 群組原則物件 (GPO)。 如果您使用 Intune 管理已加入 Active Directory 網域的電腦，請[確定 Intune 原則不會與組織中其他 GPO 衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 若要深入了解，請參閱[適用於新手的群組原則](https://technet.microsoft.com/library/hh147307.aspx)。
 
@@ -100,7 +100,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 ## <a name="common-tasks-for-windows-pcs"></a>Windows 電腦的一般工作
 
 您可以使用 Intune 系統管理主控台在安裝此用戶端的 Windows 電腦上，執行其他一般電腦管理工作︰
-- [使用原則簡化電腦管理](use-policies-to-simplify-windows-pc-management.md)：描述 Intune 的「電腦管理」原則，並列出 Microsoft Intune Center 的設定。
+- [使用原則簡化電腦管理](use-policies-to-simplify-windows-pc-management.md)：描述 Intune 的「電腦管理」  原則，並列出 Microsoft Intune Center 的設定。
 
 - [檢視 Windows 電腦的硬體與軟體清查](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)：說明如何建立報告，其中列出關於電腦的硬體功能，以及電腦上所安裝之軟體的資訊。 另外也說明如何重新整理電腦清查以確保它是最新狀態。
 - [淘汰 Windows 電腦](retire-a-windows-pc-with-microsoft-intune.md)：列出淘汰 Windows 電腦的步驟，並描述當您淘汰電腦時會發生什麼事。
@@ -116,7 +116,7 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 -   完整抹除 (可使用選擇性抹除)
 -   條件式存取
 
-也請注意，在 Intune 系統管理主控台中，某些區段 (例如 [更新]、[保護] 及 [授權]) 只在您使用 Intune 用戶端軟體註冊裝置之後才會出現。
+也請注意，在 Intune 系統管理主控台中，某些區段 (例如 [更新]  、[保護]  及 [授權]  ) 只在您使用 Intune 用戶端軟體註冊裝置之後才會出現。
 
   ![只有電腦用戶端才會出現的系統管理主控台項目](media/admin-console-settings-only-for-pc-agent.png)
 

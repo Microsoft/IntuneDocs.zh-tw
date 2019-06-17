@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812c012bbb69c32d518c9dfa772ed4b37e1260a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837980"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506854"
 ---
 # <a name="check-compliance-on-your-android-device"></a>檢查 Android 裝置的相容性
 
-如果您的裝置有一段時間未向 Intune 簽入，您可能無法存取公司或學校資源。 若要重新取得存取權，請嘗試下列動作：
+如果您的裝置有一段時間未向 Intune 簽入，您可能無法存取公司或學校資源。 請嘗試下列步驟來重新取得存取權。  
 
-1. 在您的裝置上開啟 Android 公司入口網站應用程式。
+1. 在您的裝置上開啟 Android 版公司入口網站應用程式。  
 
-2. 點選 [檢查相容性]。
+2. 點選 [檢查裝置設定]  。  
 
-如果您無法重設遺失或遭竊的裝置，請要求您公司的支援人員為您重設。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+如果您無法重設遺失或遭竊的裝置，請要求您公司的支援人員為您重設。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

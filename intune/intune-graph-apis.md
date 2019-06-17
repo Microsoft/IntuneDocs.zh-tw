@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047757"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819733"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -61,25 +61,25 @@ ms.locfileid: "66047757"
 
 註冊應用程式以使用 Microsoft Graph API：
 
-1.  使用系統管理認證登入 [Azure 入口網站](https://portal.azure.com)。
+1.  登入[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)使用系統管理認證。
 
     您可以視需要使用以下項目：
     - 租用戶管理帳戶。
-    - 已啟用 [使用者可以註冊應用程式] 設定的租用戶使用者帳戶。
+    - 已啟用 [使用者可以註冊應用程式]  設定的租用戶使用者帳戶。
 
-2.  從功能表中，選擇 [Azure Active Directory] &gt; [應用程式註冊]。
+2.  從功能表中，選擇 [Azure Active Directory]  &gt; [應用程式註冊]  。
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  選擇 [新增應用程式註冊] 來建立新應用程式，或選擇現有應用程式。  (如果您選擇現有應用程式，請略過下一步)。
+3.  選擇 [新增應用程式註冊]  來建立新應用程式，或選擇現有應用程式。  (如果您選擇現有應用程式，請略過下一步)。
 
-4.  在 [建立] 刀鋒視窗中，指定下列各項︰
+4.  在 [建立]  刀鋒視窗中，指定下列各項︰
 
-    1.  應用程式的 [名稱] (於使用者登入時顯示)。
+    1.  應用程式的 [名稱]  (於使用者登入時顯示)。
 
-    2.  [應用程式類型] 和 [重新導向 URI] 值。
+    2.  [應用程式類型]  和 [重新導向 URI]  值。
 
-        這些值會因您的需求而不同。 例如，如果您使用 Azure AD [驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，請將 [應用程式類型] 設定為 `Native`，並將 [重新導向 URI] 設定為 `urn:ietf:wg:oauth:2.0:oob`。
+        這些值會因您的需求而不同。 例如，如果您使用 Azure AD [驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，請將 [應用程式類型]  設定為 `Native`，並將 [重新導向 URI]  設定為 `urn:ietf:wg:oauth:2.0:oob`。
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
@@ -87,17 +87,17 @@ ms.locfileid: "66047757"
 
 5.  從應用程式刀鋒視窗中：
 
-    1.  記下 [應用程式識別碼] 值。
+    1.  記下 [應用程式識別碼]  值。
 
-    2.  選擇 [設定] &gt; [API 存取權] &gt; [必要權限]。
+    2.  選擇 [設定]  &gt; [API 存取權]  &gt; [必要權限]  。
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  從 [必要權限] 刀鋒視窗中，選擇 [新增] &gt; [加入 API 存取權] &gt; [選取 API]。
+6.  從 [必要權限]  刀鋒視窗中，選擇 [新增]  &gt; [加入 API 存取權]  &gt; [選取 API]  。
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  從 [選取API] 刀鋒視窗中，選擇 [Microsoft Graph] &gt; [選取]。  [啟用存取] 刀鋒視窗即會開啟，並列出可供您應用程式使用的權限範圍。
+7.  從 [選取API]  刀鋒視窗中，選擇 [Microsoft Graph]  &gt; [選取]  。  [啟用存取]  刀鋒視窗即會開啟，並列出可供您應用程式使用的權限範圍。
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -105,13 +105,13 @@ ms.locfileid: "66047757"
 
     為獲得最佳結果，請選擇實作應用程式所需的最少角色。
 
-    完成後，請選擇 [選取] 和 [完成] 以儲存變更。
+    完成後，請選擇 [選取]  和 [完成]  以儲存變更。
 
 此時，您也可以：
 
 - 選擇為要使用應用程式的所有租用戶帳戶授與權限，不需提供認證。  
 
-    若要這樣做，請選擇 [授與權限] 並接受確認提示。
+    若要這樣做，請選擇 [授與權限]  並接受確認提示。
 
     當您第一次執行應用程式時，系統會提示您授與應用程式執行所選角色的權限。
 
@@ -121,7 +121,7 @@ ms.locfileid: "66047757"
 
     操作方法：
 
-  1. 從應用程式刀鋒視窗中選擇 [資訊清單]，這樣可開啟 [編輯資訊清單] 刀鋒視窗。
+  1. 從應用程式刀鋒視窗中選擇 [資訊清單]  ，這樣可開啟 [編輯資訊清單]  刀鋒視窗。
 
      <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
@@ -343,8 +343,8 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 3.  使用 [方案總管] 將 Microsoft ADAL NuGet 套件加入至專案。
 
     1.  在 [方案總管] 上按一下滑鼠右鍵。
-    2.  選擇 [管理 NuGet 套件...] &gt; [瀏覽]。
-    3.  然後依序選擇 `Microsoft.IdentityModel.Clients.ActiveDirectory` 和 [安裝]。
+    2.  選擇 [管理 NuGet 套件...]  &gt; [瀏覽]  。
+    3.  然後依序選擇 `Microsoft.IdentityModel.Clients.ActiveDirectory` 和 [安裝]  。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
@@ -567,7 +567,7 @@ catch {
 
 若要邀請使用者成為您租用戶的來賓：
 
-1.  從 [快速工作] 面板中選擇 [新增來賓使用者]。
+1.  從 [快速工作]  面板中選擇 [新增來賓使用者]  。
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
@@ -575,15 +575,15 @@ catch {
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  選擇 [邀請]。
+3.  選擇 [邀請]  。
 
 這樣便會將邀請傳送給使用者。
 
    <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
-   使用者需要選擇 [開始] 連結接受您的邀請。
+   使用者需要選擇 [開始]  連結接受您的邀請。
 
-建立關聯性 (或接受您的邀請) 之後，將使用者帳戶加入 [目錄角色]。
+建立關聯性 (或接受您的邀請) 之後，將使用者帳戶加入 [目錄角色]  。
 
 請記住要視需要將使用者加入其他角色。 比方說，若要允許使用者管理 Intune 設定，它們必須是**全域管理員**或 **Intune 服務管理員**。
 

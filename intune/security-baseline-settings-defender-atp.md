@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373503"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749921"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
-檢視 Microsoft Intune 支援的 Microsoft Defender 進階威脅防護 (先前稱為 Windows Defender 進階威脅防護) 基準設定。 此文章中的預設值代表 Intune 的預設基準設定。 這些預設值代表建議的 Intune 設定，而且可能不符合 Windows 預設值。
+檢視 Microsoft Intune 支援的 Microsoft Defender 進階威脅防護 (先前稱為 Windows Defender 進階威脅防護) 基準設定。 進階威脅防護 (ATP) 基準預設值代表 ATP 建議的設定，可能不符合其他安全性基準的基準預設值。  
 
   當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用 Microsoft Defender 進階威脅防護基準。
 
@@ -33,7 +33,7 @@ ms.locfileid: "66373503"
 
 
 > [!NOTE]  
-> WDATP 基準設定目前處於**預覽**狀態。 在預覽狀態中，可用設定清單以及此內容呈現那些設定的順序可能不符合入口網站中提供的項目。 
+> ATP 基準設定現為**預覽**。 在預覽狀態中，可用設定清單以及此內容呈現那些設定的順序可能不符合入口網站中提供的項目。  
 >
 > 當基準設定結束預覽時，將會更新此內容以反映 Intune 支援的最新安全性基準設定清單。
 
