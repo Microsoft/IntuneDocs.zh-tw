@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374075"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819864"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性
 
@@ -52,8 +52,7 @@ Windows Defender ATP 可以解決這類的安全性事件。 Windows Defender �
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>在 Intune 中啟用 Windows Defender ATP
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [All services] (所有服務)  ，篩選 [Intune]  ，然後選取 [Microsoft Intune]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3. 選取 [裝置合規性]   > [Windows Defender ATP]   > [開啟 Windows Defender 資訊安全中心]  。
 
     ![選取以開啟 [Windows Defender 資訊安全中心]](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 > [!TIP]  
 > 條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Intune]   > [條件式存取]   > [新增原則]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [條件式存取]   > [新原則]  。
 2. 輸入原則 [名稱]  ，然後選取 [使用者和群組]  。 使用 [包含] 或 [排除] 選項來針對原則新增群組，並選取 [完成]  。
 3. 選取 [雲端應用程式]  ，然後選擇要保護哪些應用程式。 例如，選擇 [選取應用程式]  ，然後選取 [Office 365 SharePoint Online]  和 [Office 365 Exchange Online]  。
 

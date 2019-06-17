@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469597"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749945"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -106,8 +106,11 @@ Windows 公司入口網站應用程式將新增標籤為 [裝置]  的頁面。 
 
 ### <a name="device-configuration"></a>裝置設定
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>已更新適用於 Microsoft Intune 的 PFX 憑證連接器  <!-- 1533038 -->
+我們已經發行 [Microsoft Intune 的 PFX 憑證連接器](certficates-pfx-configure.md#whats-new-for-connectors)的更新，解決現有 PFX 憑證繼續重新處理的問題，此問題造成連接器停止處理新要求。
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Defender ATP 的 Intune 安全性工作 (公開預覽)     <!-- 3208597 -->
-在公開預覽中，您可以使用 Intune 來管理 Microsoft Defender 進階威脅防護 (ATP) 的安全性工作。 這會與 ATP 整合，並新增一個以風險為基礎的方法來探索、設定優先順序及補救端點弱點和錯誤設定，同時減少從探索到風險降低之間的時間。
+在公開預覽中，您可以使用 Intune 來管理 [Microsoft Defender 進階威脅防護 (ATP) 的安全性工作](atp-manage-vulnerabilities.md)。 這會與 ATP 整合，並新增一個以風險為基礎的方法來探索、設定優先順序及補救端點弱點和錯誤設定，同時減少從探索到風險降低之間的時間。
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>在 Windows 10 裝置合規性政策中檢查是否有 TPM 晶片組 <!-- 3617671   idstaged-->
 許多 Windows 10 及更新版本的裝置都具有信賴平台模組 (TPM) 晶片組。 這個更新引進新的合規性設定，此設定會檢查裝置上的 TPM 晶片版本。 
@@ -116,7 +119,7 @@ Windows 公司入口網站應用程式將新增標籤為 [裝置]  的頁面。 
 
 適用於：Windows 10 及更新版本
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>在 iOS 裝置上，防止終端使用者修改其個人熱點，並停用 Siri 伺服器記錄 <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>在 iOS 裝置上，防止終端使用者修改其個人熱點，並停用 Siri 伺服器記錄 <!-- 4097904   -->  
 您會在 iOS 裝置上建立裝置限制設定檔 ([裝置設定]   > [設定檔]   > [建立設定檔]   > 選取 [iOS] 作為平台  > 選取 [裝置限制]  作為設定檔類型)。 此更新包括您可以設定的新設定：
 
 - **內建應用程式**：在伺服器端記錄 Siri 命令

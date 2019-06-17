@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454050"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749803"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -249,12 +249,17 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 「適用於 Microsoft Intune 的 PFX 憑證連接器」  [支援自動更新](#requirements)，而「Intune 憑證連接器」  則以手動方式更新。
 
-### <a name="may-6-2019"></a>2019 年 5 月 6 日
+### <a name="may-17-2019"></a>2019 年 5 月 17 日  
+- **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.404 版**  
+  此版本的變更：  
+  - 已修正現有 PFX 憑證繼續重新處理而導致連接器停止處理新要求的問題。 
+
+### <a name="may-6-2019"></a>2019 年 5 月 6 日  
 - **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.402 版**  
   此版本的變更：  
   - 連接器的輪詢間隔已從 5 分鐘縮短為 30 秒。
  
-### <a name="april-2-2019"></a>2019 年 4 月 2 日
+### <a name="april-2-2019"></a>2019 年 4 月 2 日  
 - **Intune 憑證連接器 - 6.1904.1.0 版**  
   此版本的變更：  
   - 修正了使用全域系統管理員帳戶登入連接器之後，連接器無法向 Intune 註冊的問題。  

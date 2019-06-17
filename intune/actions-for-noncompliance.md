@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373701"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819903"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
@@ -85,7 +85,7 @@ ms.locfileid: "66373701"
 
 您也可以在建立合規性政策或更新現有政策時新增另一個動作。 
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 [Microsoft Intune]   > [裝置合規性]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [裝置相容性]  。
 2. 選取 [原則]  ，選擇您的原則，然後選取 [屬性]  。 
 
     尚未建立原則嗎？ 您可建立 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台的原則。

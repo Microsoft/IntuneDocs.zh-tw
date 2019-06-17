@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043531"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713857"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -72,30 +72,30 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 
 #### <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory] > [應用程式註冊]，然後選取 [新增註冊]。  
+1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory]   > [應用程式註冊]  ，然後選取 [新增註冊]  。  
 
-2. 在 [註冊應用程式] 頁面上，指定下列詳細資料：  
-   - 在 [名稱] 區段中，輸入有意義的應用程式名稱。  
-   - 針對 [支援的帳戶類型] 區段，選取 [任何組織目錄中的帳戶]。  
-   - 針對 [重新導向 URI] 保留 Web 的預設值，然後為協力廠商 SCEP 伺服器指定登入 URL。  
+2. 在 [註冊應用程式]  頁面上，指定下列詳細資料：  
+   - 在 [名稱]  區段中，輸入有意義的應用程式名稱。  
+   - 針對 [支援的帳戶類型]  區段，選取 [任何組織目錄中的帳戶]  。  
+   - 針對 [重新導向 URI]  保留 Web 的預設值，然後為協力廠商 SCEP 伺服器指定登入 URL。  
 
-3. 選取 [註冊] 以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
+3. 選取 [註冊]  以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
 
-4. 在應用程式的 [概觀] 頁面上，複製 [應用程式 (用戶端) 識別碼] 值，並加以記錄以供稍後使用。 您稍後將需用到此值。  
+4. 在應用程式的 [概觀]  頁面上，複製 [應用程式 (用戶端) 識別碼]  值，並加以記錄以供稍後使用。 您稍後將需用到此值。  
 
-5. 在應用程式的瀏覽窗格中，移至 [管理] 下方的 [憑證及祕密]。 選取 [新增用戶端密碼] 按鈕。 在 [描述] 中輸入值、針對 [到期] 選取任意選項，然後選擇 [新增] 以產生用戶端密碼的「值」。 
+5. 在應用程式的瀏覽窗格中，移至 [管理]  下方的 [憑證及祕密]  。 選取 [新增用戶端密碼]  按鈕。 在 [描述] 中輸入值、針對 [到期]  選取任意選項，然後選擇 [新增]  以產生用戶端密碼的「值」  。 
    > [!IMPORTANT]  
    > 離開此頁面之前，複製用戶端密碼的值並加以記錄，以便稍後搭配您的協力廠商 CA 實作使用。 此值無法再次顯示。 務必檢閱您協力廠商 CA 的指引，以了解他們想要如何設定應用程式識別碼、驗證金鑰及租用戶識別碼。  
 
-6. 記錄您的**租用戶識別碼**。 租用戶識別碼是您帳戶中 @ 符號之後的網域文字。 例如，如果您的帳號是 *admin@name.onmicrosoft.com*，則您的租用戶識別碼是 **name.onmicrosoft.com**。  
+6. 記錄您的**租用戶識別碼**。 租用戶識別碼是您帳戶中 @ 符號之後的網域文字。 例如，如果您的帳號是 *admin@name.onmicrosoft.com* ，則您的租用戶識別碼是 **name.onmicrosoft.com**。  
 
-7. 在應用程式的瀏覽窗格中，移至 [管理] 下方的 [API 權限]，然後選取 [新增權限]。  
+7. 在應用程式的瀏覽窗格中，移至 [管理]  下方的 [API 權限]  ，然後選取 [新增權限]  。  
 
-8. 在 [要求 API 權限] 頁面上，選取 [Intune]，然後選取 [應用程式權限]。 選取 **scep_challenge_provider** 的核取方塊 (SCEP 查問驗證)。  
+8. 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 選取 **scep_challenge_provider** 的核取方塊 (SCEP 查問驗證)。  
 
-   選取 [新增權限] 以儲存此設定。  
+   選取 [新增權限]  以儲存此設定。  
 
-9. 仍然在 [API 權限] 頁面上，選取 [代表 Microsoft 授與管理員同意]，然後選取 [是]。  
+9. 仍然在 [API 權限]  頁面上，選取 [代表 Microsoft 授與管理員同意]  ，然後選取 [是]  。  
    
    Azure AD 中的應用程式註冊程序已完成。
 
@@ -123,6 +123,7 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf) \(英文\)
 - [IDnomic](https://www.idnomic.com/) \(英文\)
 - [Sectigo](https://sectigo.com/products) \(英文\)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 如果您是有興趣將產品與 Intune 整合的協力廠商 CA，請檢閱 API 指引：
 
