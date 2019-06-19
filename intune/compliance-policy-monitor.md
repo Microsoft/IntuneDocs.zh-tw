@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc97e9884fbcd23c599c917c181e29cdbc3708ee
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374030"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041304"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -60,7 +60,7 @@ ms.locfileid: "66374030"
 此圖表顯示所有 Intune 已註冊裝置的合規性狀態。 裝置合規性狀態會保留在兩個不同的資料庫中：Intune 和 Azure Active Directory。 
 
 > [!IMPORTANT]
-> Intune 會遵循裝置簽入排程，以符合裝置上的所有合規性評估。 [深入了解裝置簽入排程](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+> Intune 會遵循裝置簽入排程，以符合裝置上的所有合規性評估。 [深入了解裝置簽入排程](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 不同裝置合規性政策狀態的說明如下：
 
