@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461289"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044704"
 ---
 ## <a name="april-2017"></a>2017 年 4 月
 
@@ -126,10 +126,10 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 Android 版公司入口網站應用程式將會更新其使用者介面，以提供更現代化的外觀和操作，以及更佳的使用者體驗。 值得注意的更新如下︰
 
 - 色彩：公司入口網站索引標籤標頭會以 IT 定義的品牌上色。
-- 應用程式：在 [應用程式] 索引標籤中，已更新 [熱門應用程式] 和 [所有應用程式] 按鈕。
-- 搜尋：在 [應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
-- 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [熱門]、[所有] 與 [類別]，以更方便瀏覽。
-- 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤以提高可讀性。
+- 應用程式：在 [應用程式]  索引標籤中，已更新 [熱門應用程式]  和 [所有應用程式]  按鈕。
+- 搜尋：在 [應用程式]  索引標籤中，[搜尋]  按鈕是浮動的動作按鈕。
+- 瀏覽應用程式：[所有應用程式]  檢視會以索引標籤式的檢視顯示 [熱門]  、[所有]  與 [類別]  ，以更方便瀏覽。
+- 支援：已更新 [我的裝置]  和 [連絡 IT]  索引標籤以提高可讀性。
 
 如需有關這些變更的詳細資訊，請參閱 [Intune 使用者應用程式的 UI 更新](/intune/whats-new-app-ui)。
 

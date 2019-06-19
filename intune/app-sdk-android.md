@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049611"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045537"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -726,13 +726,13 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 1. 請遵循 [ADAL 整合指導方針](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)。 
    請特別參閱訊息代理程式使用方式的步驟 11。
-2. [向 Azure Active Directory 註冊應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 
+2. [向 Azure Active Directory 註冊應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) 。 
    重新導向 URI 位於上述的 ADAL 整合指導方針。
 3. 設定每個[常見 ADAL 設定](#common-adal-configurations)的資訊清單中繼資料參數，上面的項目 2。
 4. 藉由從 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)啟用[以裝置為基礎的 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)並確認下列各項，測試所有項目都已正確設定
     - 登入您的應用程式會提示進行安裝和註冊 Intune 公司入口網站
     - 註冊之後，登入應用程式能順利完成。
-5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com 以便新增至已核准應用程式的清單，進行[以應用程式為基礎的條件式存取](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
+5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com，以新增至已核准應用程式清單，進行[以應用程式為基礎的條件式存取](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則

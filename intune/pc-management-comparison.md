@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041539"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044516"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
@@ -43,7 +43,7 @@ ms.locfileid: "66041539"
 |**清查**|可用 <br>[檢視 Windows 電腦的硬體和軟體清查](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|可用 <br>[如何監視應用程式資訊](apps-monitor.md)<br>[什麼是裝置管理](device-management.md)|
 |**Windows 防火牆原則**|可用 <br>[使用 Windows 防火牆原則協助保護 Windows 電腦](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |可用 <br>[Windows Defender 防火牆](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**反惡意程式碼防護**|Endpoint Protection<br>[使用 Endpoint Protection 協助保護 Windows 電腦](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[啟用 Windows Defender](advanced-threat-protection.md)|
-|**遠端協助** |TeamViewer<br>[對 Windows 電腦要求及提供遠端協助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [使用 TeamViewer 來遠端管理 Intune 裝置](device-profile-android-teamviewer.md) |
+|**遠端協助** |TeamViewer<br>[對 Windows 電腦要求及提供遠端協助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [使用 TeamViewer 來遠端管理 Intune 裝置](teamviewer-support.md) |
 |**應用程式部署** | 不適用於商務用 Microsoft 市集、<br>僅限 .exe、.appx 和多檔案 .msi<br>[為執行 Intune 軟體用戶端的 Windows 電腦新增應用程式](add-apps-for-windows-pcs-in-microsoft-intune.md)|適用於 Microsoft 市集應用程式及企業營運應用程式<br>[如何新增 Windows 市集應用程式](store-apps-windows.md)<br>[如何新增 Windows 企業營運 (LOB) 應用程式](lob-apps-windows.md)|
 |**應用程式保護**|無法使用|可用 <br>[什麼是應用程式保護原則？](app-protection-policy.md)|
 |**健康情況證明**|無法使用|可用|

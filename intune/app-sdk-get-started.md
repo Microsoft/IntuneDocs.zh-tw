@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
-ms.translationtype: HT
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506863"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045819"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -89,9 +89,9 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 
 
-## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>針對應用程式型條件式存取啟用 iOS 或 Android 應用程式
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>為 iOS 或 Android 應用程式啟用以應用程式為基礎的條件式存取
  
- 除了針對應用程式保護原則啟用您的應用程式之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
+ 除了為您的應用程式啟用應用程式保護原則之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
  
  * 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
  

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f2a88e6e807ea78e4a26abe71eb1b5997ea7256
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044408"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046242"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -142,17 +142,17 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 - 應用程式防禦
 - 弱點防禦
 
-您可以設定透過 Intune 裝置合規性政策所啟用之以 Symantec Endpoint Protection Mobile (Skycure) 風險評估的 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不相容的裝置存取公司資源。 如需詳細資訊，請參閱 [Symantec Endpoint Protection Mobile 連接器](skycure-mobile-threat-defense-connector.md)。
+您可以根據透過 Intune 裝置合規性政策所啟用的 Symantec Endpoint Protection Mobile (Skycure) 風險評估，來設定 EMS 條件式存取原則。 您可以根據偵測到的威脅，使用這些原則來允許或封鎖不相容的裝置存取公司資源。 如需詳細資訊，請參閱 [Symantec Endpoint Protection Mobile 連接器](skycure-mobile-threat-defense-connector.md)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 版公司入口網站應用程式的新使用者體驗 <!--621622-->
 
 Android 版公司入口網站應用程式將會更新其使用者介面，以提供更現代化的外觀和操作，以及更佳的使用者體驗。 值得注意的更新如下︰
 
 - 色彩：公司入口網站索引標籤標頭會以 IT 定義的品牌上色。
-- 應用程式：在 [應用程式] 索引標籤中，已更新 [熱門應用程式] 和 [所有應用程式] 按鈕。
-- 搜尋：在 [應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
-- 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [熱門]、[所有] 與 [類別]，以更方便瀏覽。
-- 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤以提高可讀性。
+- 應用程式：在 [應用程式]  索引標籤中，已更新 [熱門應用程式]  和 [所有應用程式]  按鈕。
+- 搜尋：在 [應用程式]  索引標籤中，[搜尋]  按鈕是浮動的動作按鈕。
+- 瀏覽應用程式：[所有應用程式]  檢視會以索引標籤式的檢視顯示 [熱門]  、[所有]  與 [類別]  ，以更方便瀏覽。
+- 支援：已更新 [我的裝置]  和 [連絡 IT]  索引標籤以提高可讀性。
 
 如需有關這些變更的詳細資訊，請參閱 [Intune 使用者應用程式的 UI 更新](whats-new-app-ui.md)。
 

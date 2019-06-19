@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,33 +18,33 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837843"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040937"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安裝 Android 版公司入口網站應用程式
 
-「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 公司入口網站應用程式可協助您[在 Microsoft Intune 中註冊裝置](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)而達到此目標。
+「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 若要深入了解公司入口網站，並在 裝置管理其部分功能，請參閱[為什麼要註冊您的 Android 裝置](why-enroll-android-device.md)。  
 
-1.  點選 [首頁] > [Play Store]。
+1.  點選 [首頁]   > [Play Store]  。
 
-2.  在 [搜尋] 方塊中輸入 **intune 公司入口網站**。
+2.  在 [搜尋]  方塊中輸入 **Intune 公司入口網站**。  
 
-3.  點選 [Intune 公司入口網站]。
+3.  點選 [Intune 公司入口網站]  。
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
-4.  點選 [安裝]。
+4.  點選 [安裝]  。
 
     ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
-5.  點選 [接受]。
+5.  點選 [接受]  。
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-在您下載公司入口網站應用程式之後，建議您[在 Intune 中註冊您的裝置](enroll-your-device-in-Intune-android.md)以取得公司資訊的完整存取權限。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
+在您下載公司入口網站應用程式之後，建議您[在 Intune 中註冊您的裝置](enroll-device-android-company-portal.md)以取得公司資訊的完整存取權限。 您也可以[使用其他裝置登入](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device)。  
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

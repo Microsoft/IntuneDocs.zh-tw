@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354212"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041119"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -430,9 +430,9 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
     > [!IMPORTANT]
     > 在 Windows 桌面上變更密碼需求時，使用者會在下次登入時受到影響，因為此時裝置會從閒置變成作用中。 系統仍會提示密碼符合需求的使用者變更其密碼。
     
-  - **女**：輸入抹除裝置前允許的驗證失敗次數，從 1 到 11。 `0` (零) 可能會停用裝置抹除功能。
+  - **登入失敗幾次後即抹除裝置**：輸入要抹除裝置前允許的驗證失敗次數，最多為 11。 您輸入有效的數字會因版本而定。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)列出支援的值。 `0` (零) 可停用裝置抹除功能。
 
-    此設定因版本不同會有不同的影響。 如需特定的詳細資訊，請參閱 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
+    此設定因版本不同也會有不同影響。 如需此設定的特定詳細資訊，請參閱 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) \(英文\)。
 
   - **在停止活動最少幾分鐘後鎖定螢幕**：輸入裝置必須處於閒置狀態多久的時間，才會鎖住螢幕。
   - **密碼到期 (天數)** ：輸入裝置必須變更密碼的天數，從 1 到 365。 例如，輸入 `90`，密碼會在 90 天後到期。

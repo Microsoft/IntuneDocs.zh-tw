@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049826"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045480"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -82,23 +82,23 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 若要啟用 Intune App SDK，請遵循下列步驟：
 
-1. **選項 1 (建議)** ：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [內嵌的二進位檔案] 清單。
+1. **選項 1 (建議)** ：將 `IntuneMAM.framework` 連結至您的專案。 將 `IntuneMAM.framework` 拖曳至專案目標的 [內嵌的二進位檔案]  清單。
 
    > [!NOTE]
    > 如果您使用架構，則必須先手動去除通用架構中的模擬器架構，再將應用程式提交至 App Store。 請參閱[將應用程式提交至 App Store](#submit-your-app-to-the-app-store) 以取得詳細資料。
 
-   **選項 2**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫) 清單中。
+   **選項 2**︰連結至 `libIntuneMAM.a` 程式庫。 將 `libIntuneMAM.a` 程式庫拖曳至專案目標的 「Linked Frameworks and Libraries」 (連結架構和程式庫)  清單中。
 
     ![Intune App SDK iOS：連結的架構和程式庫](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 加入下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
    * 專案的 `OTHER_LDFLAGS` 組建組態設定
-   * Xcode UI 的 [Other Linker Flags] \(其他連結器旗標\)
+   * Xcode UI 的 [Other Linker Flags] \(其他連結器旗標\) 
 
      > [!NOTE]
-     > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案] 功能表中選擇 [取得資訊]。 從 [資訊] 視窗的 [一般] 區段中，複製並貼上 [位置] 資訊 (路徑)。
+     > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案]  功能表中選擇 [取得資訊]  。 從 [資訊]  視窗的 [一般]  區段中，複製並貼上 [位置]  資訊 (路徑)。
 
-     藉由拖曳 「Build Phases」 (建置階段) 的 「Copy Bundle Resources」 (複製配套資源) 下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
+     藉由拖曳 「Build Phases」 (建置階段)  的 「Copy Bundle Resources」 (複製配套資源)  下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
 
      ![Intune App SDK iOS：複製配套資源](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
@@ -115,7 +115,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     * QuartzCore.framework  
     * WebKit.framework
 
-3. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]，然後啟用 「Keychain Sharing」 (Keychain 共用) 參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
+3. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]  ，然後啟用 「Keychain Sharing」 (Keychain 共用)  參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
    > [!NOTE]
    > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：
@@ -128,7 +128,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 4. 啟用 Keychain 共用之後，請遵循下列步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循下列步驟：
 
-    1. 如果您的行動應用程式未定義任何 Keychain 存取群組，請新增應用程式套件組合識別碼作為 [第一個] 群組。
+    1. 如果您的行動應用程式未定義任何 Keychain 存取群組，請新增應用程式套件組合識別碼作為 [第一個]  群組。
     
     2. 將共用 Keychain 群組 `com.microsoft.intune.mam` 新增至現有的存取群組。 Intune App SDK 使用這個存取群組來儲存資料。
     
@@ -671,7 +671,7 @@ SDK 會追蹤本機檔案擁有者的身分識別，並據以套用原則。 建
 
 ### <a name="are-all-of-the-apis-addressable-through-native-swift-or-the-objective-c-and-swift-interoperability"></a>是否可透過原生 Swift 或 Objective-C 以及 Swift 互通性定址所有 API？
 
-Intune App SDK API 僅限於 Objective-C 且不支援原生 Swift。 必須有 Swift 與 Objective-C 的互通性。
+Intune App SDK API 僅限於 Objective-C 且不支援原生  Swift。 必須有 Swift 與 Objective-C 的互通性。
 
 ### <a name="do-all-users-of-my-application-need-to-be-registered-with-the-app-we-service"></a>是否需要向 APP-WE 服務註冊應用程式的所有使用者？
 

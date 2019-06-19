@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040399"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046333"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
@@ -72,12 +72,12 @@ Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://doc
 ## <a name="where-did-my-conditional-access-policies-go"></a>我的條件式存取原則移到哪個位置？
 當您的租用戶移轉至 Azure 入口網站之後，租用戶的條件式存取原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
 
-如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[移轉 Azure 入口網站中的傳統原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
+如果您想要從 Azure 入口網站檢視條件式存取原則並進行變更，您需要從傳統入口網站移除舊的原則。 然後在 Azure 入口網站中重新建立這些原則。 如需移轉條件式存取原則的詳細資訊，請參閱[什麼是 Azure Active Directory 條件式存取原則移轉？](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) \(部分機器翻譯\)。 
 
 ## <a name="where-did-my-compliance-policies-go"></a>我的合規性原則移到哪個位置？
 當您的租用戶移轉至 Azure 入口網站之後，租用戶的合規性原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
 
-如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/intune/known-issues#compliance)。 
+如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/intune/device-compliance-get-started)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
 在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：
@@ -88,13 +88,13 @@ Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://doc
 
 ![Azure DEP 權杖的影像](./media/07-azure-dep-token.png)
 
-不過，傳統入口網站中的 [同步] 選項已移至序號管理工作流程，因為手動同步的結果會出現在該處：
+不過，傳統入口網站中的 [同步]  選項已移至序號管理工作流程，因為手動同步的結果會出現在該處：
 
 ![Azure DEP 同步的影像](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>公司預先註冊的裝置在哪裡？
 ### <a name="by-ios-serial-number"></a>依 iOS 序號
-在傳統入口網站中，您可以透過 Apple 裝置註冊計劃 (DEP) 和 Apple Configurator 工具來註冊 iOS 裝置。 這兩種方法會依序號提供裝置預先註冊，而且需要指派特殊的公司裝置註冊設定檔。 在註冊之前，可透過 [公司預先註冊的裝置] 的 [依 iOS 序號] 裝置群組管理註冊設定檔指派：
+在傳統入口網站中，您可以透過 Apple 裝置註冊計劃 (DEP) 和 Apple Configurator 工具來註冊 iOS 裝置。 這兩種方法會依序號提供裝置預先註冊，而且需要指派特殊的公司裝置註冊設定檔。 在註冊之前，可透過 [公司預先註冊的裝置] 的 [依 iOS 序號]  裝置群組管理註冊設定檔指派：
 
 ![傳統 Apple 序號的影像](./media/09-classic-apple-serials.png)
 
