@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: 使用 DEP 來註冊 iOS 裝置
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: 設定 Slack 為使用 Intune
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: 概念
   items:
     - name: 什麼是裝置管理？
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: 電子郵件設定檔問題和解決方式
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: 軟體更新疑難排解
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Endpoint Protection 的常見錯誤
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: 條件式存取的疑難排解
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector 疑難排解
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: 解決原則衝突
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: 軟體更新疑難排解
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Endpoint Protection 的常見錯誤
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: 案例實作指南
       items:
         - name: 保護 Exchange Online
