@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749921"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197534"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -83,7 +83,7 @@ ms.locfileid: "66749921"
 
   **預設值**：是
 
-## <a name="attach-surface-reduction"></a>受攻擊面縮小  
+## <a name="attack-surface-reduction"></a>攻擊表面縮減  
 
 - **Office 應用程式啟動子處理序**  
   [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立子處理序。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。 建立子處理序是典型的惡意程式碼行為，特別是針對試圖使用 Office 應用程式啟動或下載惡意可執行檔的巨集型攻擊。  
