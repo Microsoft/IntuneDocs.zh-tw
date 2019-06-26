@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041912"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251163"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中新增 Endpoint Protection 設定
 
@@ -38,18 +38,18 @@ ms.locfileid: "66041912"
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>建立包含 Endpoint Protection 設定的裝置設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)。
-3. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
-4. 輸入 Endpoint Protection 設定檔的 [名稱] 和 [描述]。
-5. 從 [平台] 下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+4. 輸入 Endpoint Protection 設定檔的 [名稱]  和 [描述]  。
+5. 從 [平台]  下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
    - **macOS**
    - **Windows 10 及更新版本**
-6. 從 [設定檔類型] 下拉式清單中，選擇 [Endpoint Protection]。 
+6. 從 [設定檔類型]  下拉式清單中，選擇 [Endpoint Protection]  。 
 7. 您可設定的設定會視您選擇的平台而不同。 請參閱：
    - [macOS 設定](endpoint-protection-macos.md)
    - [Windows 10 設定](endpoint-protection-windows-10.md)  
 
-8. 設定適用的設定之後，選取 [建立設定檔] 頁面上的 [建立]。
+8. 設定適用的設定之後，選取 [建立設定檔]  頁面上的 [建立]  。
 
    設定檔隨即建立，並出現在 [設定檔清單] 頁面上。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
 

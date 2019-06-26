@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374140"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251212"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中建立 Windows 10 安全性基準
 
@@ -70,7 +70,7 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然後選取 [裝置安全性]   > [安全性基準 (預覽)]  。 系統提供可用的基準清單。 
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [裝置安全性]   > [安全性基準 (預覽)]  。 系統提供可用的基準清單。 
 
     ![選取要設定的安全性基準](./media/security-baselines/available-baselines.png)
 
