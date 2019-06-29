@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047528"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403021"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理 Windows 電腦的防火牆設定註冊為行動裝置，請參閱 <<c0> [ 在 Intune 中新增 endpoint protection 設定](endpoint-protection-configure.md)。
 
 Microsoft Intune 有數種方式可協助您保護使用 Intune 用戶端管理的 Windows 電腦。 其中一項方式為提供可讓您在電腦上設定 Windows 防火牆設定的原則。
 
@@ -50,13 +53,13 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 
 ## <a name="configure-a-windows-firewall-policy"></a>設定 Windows 防火牆原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [原則] &gt; [新增原則]。
+1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [原則]  &gt; [新增原則]  。
 
 2.  設定並部署 **Windows 防火牆設定** 原則。 您可以使用建議的設定或自訂設定。 如需如何建立和部署原則的詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     下節列出您可以在原則中設定的值，以及在不自訂原則的情況下將使用的預設值。
 
-部署 Windows 防火牆原則之後，即可在 [原則] 工作區的 [所有原則] 頁面上檢視其狀態。
+部署 Windows 防火牆原則之後，即可在 [原則]  工作區的 [所有原則]  頁面上檢視其狀態。
 
 ## <a name="specify-policy-settings-for-windows-firewall"></a>指定 Windows 防火牆的原則設定
 
@@ -67,7 +70,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 - 已連接至私用 (受信任) 的網路 (例如家用網路)
 - 已連接至不受信任的公用網路 (例如咖啡廳)
 
-所有這些設定的預設值都是 [是]，亦即最安全的值。
+所有這些設定的預設值都是 [是]  ，亦即最安全的值。
 
 
 
@@ -78,10 +81,10 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 - 已連接至私用 (受信任) 的網路 (例如家用網路)
 - 已連接至不受信任的公用網路 (例如咖啡廳)
 
-所有這些設定的預設值都是 [是]，亦即最安全的值。
+所有這些設定的預設值都是 [是]  ，亦即最安全的值。
 
 > [!IMPORTANT]
-> 如果您環境中包含執行 Window Vista 但未安裝 Service Pack 的電腦，則您必須安裝與 Miscrosoft 知識庫中[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 的相關更新，或是停用部署到該電腦之原則中的 [封鎖所有連入連線] 原則設定。
+> 如果您環境中包含執行 Window Vista 但未安裝 Service Pack 的電腦，則您必須安裝與 Miscrosoft 知識庫中[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 的相關更新，或是停用部署到該電腦之原則中的 [封鎖所有連入連線]  原則設定。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>當 Windows 防火牆阻擋新程式時通知使用者
 
@@ -90,7 +93,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 - 已連接至私用 (受信任) 的網路 (例如家用網路)
 - 已連接至不受信任的公用網路 (例如咖啡廳)
 
-所有這些設定的預設值都是 [是]。
+所有這些設定的預設值都是 [是]  。
 
 
 ### <a name="configure-predefined-exceptions"></a>設定預先定義的例外狀況

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045182"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403801"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>針對分散式 IT 使用角色型存取控制 (RBAC) 和範圍標籤
 
@@ -42,8 +42,10 @@ ms.locfileid: "66045182"
 
     ![建立範圍標籤的螢幕擷取畫面。](./media/scope-tags/create-scope-tag.png)
 
-2. 提供 [名稱]  和 [描述]  。
-3. 選擇 **[建立]** 。
+3. 如果您想在特定群組中的所有裝置，請選擇**將範圍標籤指派給所選群組中的所有裝置**。
+    1. 在 **選取要包含的群組**頁面上，選擇包含您想要指派到這個範圍標籤的目標裝置的群組。
+    2. 選擇 [選取]  。
+4. 選擇 **[建立]** 。
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>將範圍標籤指派給角色
 

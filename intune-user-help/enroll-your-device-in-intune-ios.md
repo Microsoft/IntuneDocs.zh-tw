@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196867"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402811"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>設定 iOS 裝置對公司資源的存取  
 
@@ -59,15 +59,15 @@ ms.locfileid: "66196867"
 
 1. 開啟公司入口網站並使用您的公司或學校帳戶登入。 
 
-    ![公司入口網站應用程式的範例螢幕擷取畫面：[登入]。](./media/ios-01-cp-enroll-1903.PNG)  
+    ![公司入口網站應用程式的範例螢幕擷取畫面：[登入]。](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. 當系統提示您接收公司入口網站通知時，請點選 [允許]  。 公司入口網站會使用通知來警示您；例如，如果您的裝置設定需要更新。 
 
-    ![公司入口網站首頁的範例螢幕擷取畫面：[通知] 提示。](./media/ios-04-cp-enroll-1903.PNG)  
+    ![公司入口網站首頁的範例螢幕擷取畫面：[通知] 提示。](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. 在 [設定存取]  畫面上，選取 [開始]  。  
 
-     ![公司入口網站應用程式的範例螢幕擷取畫面：[設定存取] 畫面。](./media/ios-05-cp-enroll-1903.PNG)  
+     ![公司入口網站應用程式的範例螢幕擷取畫面：[設定存取] 畫面。](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. 閱讀您組織可以和無法看到的裝置資訊清單。 然後點選 [繼續]  。  
 
@@ -87,7 +87,7 @@ ms.locfileid: "66196867"
 
 7. 僅限 iOS 12.2 和更新版本：當系統提示開啟公司入口網站時，請點選 [開啟]  。 [安裝管理設定檔]  畫面會列出安裝設定檔的步驟。
 
-    ![公司入口網站的範例螢幕擷取畫面：[安裝管理設定檔] 畫面。](./media/ios-1904-settings-icon.PNG)  
+    ![公司入口網站的範例螢幕擷取畫面：[安裝管理設定檔] 畫面。](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. 移至 [設定] 應用程式，然後點選 [已下載的設定檔]  。  
 
@@ -99,24 +99,24 @@ ms.locfileid: "66196867"
     
 10. 輸入您的裝置密碼。 然後點選 [安裝]  。    
 
-    ![[設定] 應用程式的範例螢幕擷取畫面：[安裝設定檔] 畫面，其游標位於 [安裝]**** 按鈕上。](./media/ios-1904-password-install.PNG)  
+    ![[設定] 應用程式的範例螢幕擷取畫面：[安裝設定檔] 畫面，其游標位於 [安裝]**** 按鈕上。](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. 下一個畫面是裝置管理的標準系統警告。 若要繼續進行安裝，請點選 [安裝]  。 如果系統提示您信任遠端管理，請點選 [信任]  。  
 
-    ![[設定] 應用程式的範例螢幕擷取畫面：根憑證及行動裝置管理的標準系統警告畫面。](./media/ios-15-cp-enroll-1903.PNG)  
+    ![[設定] 應用程式的範例螢幕擷取畫面：根憑證及行動裝置管理的標準系統警告畫面。](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. 安裝完成之後，請點選 [完成]  。 若要確認已安裝設定檔，請前往 [設定檔與裝置管理]  設定。 您應該會看到設定檔列在 [行動裝置管理]  底下。   
 
-    ![[設定] 應用程式的範例螢幕擷取畫面：[設定檔與裝置管理] 設定，其顯示管理設定檔。](./media/ios-00-cp-enroll-1903.PNG)  
+    ![[設定] 應用程式的範例螢幕擷取畫面：[設定檔與裝置管理] 設定，其顯示管理設定檔。](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. 返回公司入口網站應用程式。 公司入口網站會開始同步並設定您的裝置。 公司入口網站可能會提示您更新其他裝置設定。 如果它這麼做，請點選 [繼續]  。  
 
-    ![公司入口網站的範例螢幕擷取畫面：[設定存取] 畫面，其在設定需求旁有黃色三角形。](./media/ios-12-cp-enroll-1903.PNG)  
+    ![公司入口網站的範例螢幕擷取畫面：[設定存取] 畫面，其在設定需求旁有黃色三角形。](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. 當清單中的所有項目都顯示綠色圓形，您即會知道安裝程式已完成。 點選 [完成]  。   
     
-    ![公司入口網站的範例螢幕擷取畫面：[您已大功告成！] 畫面，其顯示全部綠色圓形。](./media/ios-13-cp-enroll-1903.PNG)  
+    ![公司入口網站的範例螢幕擷取畫面：[您已大功告成！] 畫面，其顯示全部綠色圓形。](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > 如果您的組織監視語音和資料限制，或提供您由公司擁有的裝置，您可能必須完成幾個步驟。 如果系統提示您安裝 **Datalert** 應用程式，請參閱[在電信費用管理中註冊裝置](enroll-your-device-with-telecom-expense-management-ios.md)。 如果您的組織是 Apple 裝置註冊計劃一部分，請找出[如何註冊公司擁有的裝置](enroll-your-device-dep-ios.md)。  

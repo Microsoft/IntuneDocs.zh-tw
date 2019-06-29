@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045247"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403764"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。
 
 Intune 使用原則協助您在的 Windows 電腦上管理設定。 例如，您可以使用原則來控制電腦上的 Windows 防火牆設定。 許多 Intune 設定與您透過 Windows 群組原則所做的設定很類似。 不過，有時候這兩種方法可能彼此衝突。
 
@@ -114,7 +117,7 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 -   在 **[Active Directory 使用者和電腦]** 嵌入式管理單元中，建立包含您不想讓 Intune 管理之電腦和使用者帳戶的新安全性群組。 例如，您可能將群組命名為 *Not In Microsoft Intune*。
 
--   在群組原則管理主控台中，在選取之 GPO 的 [委派] 索引標籤處，以滑鼠右鍵按一下新的安全性群組，委派適當的 [讀取] 和 [套用群組原則] 權限至安全性群組中的使用者和電腦。 ([進階] 對話方塊提供 [套用群組原則]  權限。)
+-   在群組原則管理主控台中，在選取之 GPO 的 [委派]  索引標籤處，以滑鼠右鍵按一下新的安全性群組，委派適當的 [讀取]  和 [套用群組原則]  權限至安全性群組中的使用者和電腦。 ([進階]  對話方塊提供 [套用群組原則]  權限。)
 
 -   然後，將新的安全性群組篩選器套用至選取的 GPO，並移除 **[已驗證的使用者]** 預設篩選器。
 
