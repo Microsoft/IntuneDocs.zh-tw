@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819587"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389252"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法
 
@@ -51,6 +51,7 @@ ms.locfileid: "66819587"
 - [Configuration Manager 共同管理](https://docs.microsoft.com/sccm/comanage/overview)可讓系統管理員將其現有的 Configuration Manager 受控裝置註冊到 Intune 中，以獲得 Intune 和 Configuration Manager 的雙重效益。 
 - [裝置註冊管理員](device-enrollment-manager-enroll.md) (DEM) 是特殊的服務帳戶。 DEM 帳戶具有權限，可讓授權使用者註冊及管理公司擁有的多部裝置。 比方說，這些類型的裝置適合銷售點或公用程式應用程式，但對於需要存取電子郵件或公司資源的使用者而言則不適合。 此方法不允許使用條件式存取等功能。 
 - [大量註冊](windows-bulk-enroll.md)可讓授權使用者將公司擁有的大量新裝置加入到 Azure Active Directory 和 Intune。 您可以使用 Windows 設定設計工具 (WCD) 應用程式來建立佈建套件。 然後，藉由在初始 Windows OOBE 體驗期間或從現有的 Windows 電腦使用 USB 媒體，您就可以安裝佈建套件，將裝置自動註冊到 Intune 中。 此方法不允許使用條件式存取。 
+- 您可以使用 Windows IoT 核心版儀表板來準備裝置，然後使用 Windows 設定設計工具來建立佈建套件，藉以完成[註冊 Windows IoT 核心版裝置](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) \(部分機器翻譯\)。 接著，它會在初始開機期間，使用 SD 記憶卡媒體來安裝佈建套件，自動向 Intune 註冊裝置。
 
 ## <a name="next-steps"></a>後續步驟
 

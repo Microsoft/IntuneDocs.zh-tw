@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804662"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044614"
 ---
 # <a name="plan-communications"></a>規劃溝通 
 溝通計畫是 Intune 移轉的重要元素。 下列提供的工具和範本可協助您教育使用者。 Intune 採用套件包含電子郵件範本、Intune 註冊指南和使用者註冊教學影片的連結。  
@@ -33,7 +33,7 @@ ms.locfileid: "66804662"
 - **電子郵件 #1**：說明優點、期望和排程。 藉由這個機會展示將在 Intune 管理的裝置上提供的所有其他新服務。 
 
 - **電子郵件 #2**：宣告服務現在已可透過 Intune 存取。 告知使用者立即註冊。  提供使用者在其存取權受到影響之前的時間軸。 提醒使用者移轉的優點和策略原因。
-在特定期間過後，您便可透過條件式存取原則開始強制合規性，並使用它作為存取公司資料的準則，如[使用條件式存取引導使用者採用](migration-guide-drive-adoption.md)中所述。
+在特定期間過後，您便可透過條件式存取原則開始強制執行合規性，並使用它作為存取公司資料的準則，如[使用條件式存取引導終端使用者採用](migration-guide-drive-adoption.md)中所述。
 
 ## <a name="intune-enrollment-guide"></a>Intune 註冊指南 
 此 PDF 附件可以現狀提供您的使用者使用，或您可以自訂 Word 版本，包含您的內部資源和連絡人資訊。

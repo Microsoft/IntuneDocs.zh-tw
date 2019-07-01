@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中使用 Windows Defender ATP - Azure | Microsoft Docs
-description: 了解如何在端對端案例中啟用 Windows Defender 進階威脅防護 (ATP)，包括在 Intune 和 Windows Defender 資訊安全中心 (ATP 入口網站) 中開啟 ATP、使用 ATP 組態設定檔將裝置上線、建立 Intune 裝置合規性原則、建立 Azure AD 條件式存取原則，以及監視裝置合規性。
+description: 了解如何在端對端案例中啟用 Windows Defender 進階威脅防護 (ATP)，包括在 Intune 和 Windows Defender 資訊安全中心 (ATP 入口網站) 中開啟 ATP、使用 ATP 組態設定檔來讓裝置上線、建立 Intune 裝置合規性政策、建立 Azure AD 條件式存取原則，以及監視裝置合規性。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819864"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045918"
 ---
-# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Windows Defender ATP 的合規性
 
 Windows Defender 進階威脅防護 (ATP) 和 Microsoft Intune 能夠一起運作以協助防止安全性缺口，並協助限制因缺口而在組織內所造成的影響。
 
@@ -40,7 +40,7 @@ Windows Defender ATP 可以解決這類的安全性事件。 Windows Defender �
 
 - 在 ATP 中啟用 Intune，並在 Intune 中啟用 ATP。 這些工作會在 Intune 與 Windows Defender ATP 之間建立服務對服務的連線。 此連線可讓 Windows Defender ATP 撰寫針對您 Intune 裝置的電腦風險。
 - 在 Intune 中建立合規性原則。
-- 根據裝置的威脅層級，針對裝置啟用 Azure Active Directory (AD) 中的條件式存取。
+- 根據裝置的威脅等級，在裝置上的 Azure Active Directory (AD) 中啟用條件式存取。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -126,7 +126,7 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 5. 若要將原則部署到群組中，請選取 [儲存]  。 系統將會對原則的目標使用者裝置進行合規性評估。
 
 ## <a name="create-a-conditional-access-policy"></a>建立條件式存取原則
-*如果*裝置不符合規範，條件式存取原則會封鎖對資源的存取。 因此，如果裝置超過威脅層級，您可以封鎖該裝置對公司資源的存取，例如 SharePoint 或 Exchange Online。  
+「如果」  裝置不符合規範，條件式存取原則就會封鎖對資源的存取。 因此，如果裝置超過威脅層級，您可以封鎖該裝置對公司資源的存取，例如 SharePoint 或 Exchange Online。  
 
 > [!TIP]  
 > 條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
@@ -141,13 +141,13 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 
     按一下 [完成]  以儲存您的變更。
 
-5. 選取 [授與]  以根據裝置合規性套用條件式存取。 例如，選取 [授與存取權]   > [裝置需要標記為合規]  。
+5. 選取 [授與]  ，以根據裝置合規性套用條件式存取。 例如，選取 [授與存取權]   > [裝置需要標記為合規]  。
 
     選擇 [選取]  以儲存您的變更。
 
 6. 選取 [啟用原則]  ，然後選取 [建立]  以儲存變更。
 
-[什麼是條件式存取？](conditional-access.md)是很好的資源。
+[什麼是條件式存取？](conditional-access.md)是一個很好的資源。
 
 ## <a name="monitor-device-compliance"></a>監視裝置合規性
 接下來，監視具有 Windows Defender ATP 合規性原則之裝置的狀態。
@@ -157,7 +157,7 @@ Windows Defender 包含上架設定套件，該套件會與 [Windows Defender AT
 3. 在清單中尋找您的 Windows Defender ATP 原則，並查看有哪些裝置是符合規範或不符合規範。
 
 ## <a name="more-good-stuff"></a>更多好東西
-[Windows Defender ATP 條件式存取](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) \(英文\)  
+[Windows Defender ATP 條件式存取](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) \(部分機器翻譯\)  
 [Windows Defender ATP 風險儀表板](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) \(英文\)  
 [裝置合規性原則入門](device-compliance-get-started.md)  
 [Azure AD 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

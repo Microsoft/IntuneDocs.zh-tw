@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d66a9ae4d72ef37f39c2017c4351847e8bace46
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049902"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045879"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作設定檔裝置
 
@@ -58,11 +58,11 @@ Android Enterprise 不提供預設電子郵件應用程式，也不會像 iOS �
 
 Intune 會在將 Gmail 及 Nine Work 應用程式當成工作應用程式管理時，提供它們適用的組態範本。 其他支援應用程式組態設定檔的電子郵件應用程式可以透過行動裝置應用程式設定原則加以設定。
 
-若是對 Android Enterprise 工作設定檔裝置使用 Exchange ActiveSync 條件式存取，請考慮使用 Gmail 或 Nine Work 電子郵件應用程式。 此外也支援 Android 版的 Microsoft Outlook 應用程式，或其他任何經由 ADAL 使用新式驗證的電子郵件應用程式。 如需詳細資訊，請參閱[如何在 Microsoft Intune 中設定電子郵件設定](email-settings-configure.md)。
+如果您針對 Android Enterprise 工作設定檔裝置使用 Exchange ActiveSync 條件式存取，請考慮使用 Gmail 或 Nine Work 電子郵件應用程式。 此外也支援 Android 版的 Microsoft Outlook 應用程式，或其他任何經由 ADAL 使用新式驗證的電子郵件應用程式。 如需詳細資訊，請參閱[如何在 Microsoft Intune 中設定電子郵件設定](email-settings-configure.md)。
 
 ## <a name="app-protection-policies"></a>應用程式防護原則
 
-在工作設定檔和個人設定檔中完全支援已套用的應用程式保護原則。 您可以在 Android 應用程式發行主控台 (https://play.google.com/apps/publish) 中發行企業營運應用程式。 此主控台提供可以讓您將應用程式設為不對組織公開的選項。 如需詳細資訊，請參閱[在 Intune 中為 Android Enterprise 工作設定檔裝置新增裝置合規性政策](compliance-policy-create-android-for-work.md)。 如需應用程式防護原則的一般資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
+在工作設定檔和個人設定檔中完全支援已套用的應用程式保護原則。 您可以在 Android 應用程式發行主控台 (https://play.google.com/apps/publish ) 中發行企業營運應用程式。 此主控台提供可以讓您將應用程式設為不對組織公開的選項。 如需詳細資訊，請參閱[在 Intune 中為 Android Enterprise 工作設定檔裝置新增裝置合規性政策](compliance-policy-create-android-for-work.md)。 如需應用程式防護原則的一般資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 
 ## <a name="vpn-profiles"></a>VPN 設定檔
 

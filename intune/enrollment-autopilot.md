@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041191"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389313"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -99,8 +99,8 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
     
     - **隱藏變更帳戶選項 (需要 Windows 10 1809 版或更新版本)** ：選擇 [隱藏]  以防止在公司登入和網域錯誤頁面上顯示變更帳戶選項。 此選項需要[在 Azure Active Directory 中設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **使用者帳戶類型**：選擇使用者的帳戶類型 ([系統管理員]  或 [標準]  使用者)。
-    - **允許 White Glove OOBE**：選擇 [是]  以允許 White Glove 支援。
-    - **套用裝置名稱範本**：選擇 [是]  以建立要在註冊期間命名裝置時使用的範本。 名稱必須是 15 個字元或更少，而且可以包含字母、數字和連字號。 名稱不可以全部為數字。 使用 [%SERIAL% 巨集](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)新增硬體特定序號。 或者，使用 [%RAND:x% 巨集](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)新增隨機數字字串，其中 x 等於要新增的位數。 
+    - **允許 White Glove OOBE** (需要 Windows 10 1903 版或更新版本；[其他實體需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites) \(部分機器翻譯\))：選擇 [是]  以允許 White Glove 支援。
+    - **套用裝置名稱範本** (需要 Windows 10 1809 版或更新版本)：選擇 [是]  以建立要在註冊期間命名裝置時使用的範本。 名稱必須是 15 個字元或更少，而且可以包含字母、數字和連字號。 名稱不可以全部為數字。 使用 [%SERIAL% 巨集](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)新增硬體特定序號。 或者，使用 [%RAND:x% 巨集](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)新增隨機數字字串，其中 x 等於要新增的位數。 
     - **語言 (地區)** \*：選擇要為裝置使用的語言。 僅當您針對 [部署模式]  選擇 [自我部署]  時，此選項才可使用。
     - **自動設定鍵盤**\*：如果選取了 [語言 (區域)]  ，請選擇 [是]  跳過鍵盤選取頁面。 僅當您針對 [部署模式]  選擇 [自我部署]  時，此選項才可使用。
 8. 選取 [下一步]  。

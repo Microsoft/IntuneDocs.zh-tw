@@ -1,7 +1,7 @@
 ---
 title: 將 Jamf Pro 與 Microsoft Intune 整合以符合規範
 titleSuffix: Microsoft Intune
-description: 使用 Azure Active Directory 條件式存取搭配 Microsoft Intune 合規性政策來協助保護受 Jamf 管理的裝置。
+description: 搭配 Azure Active Directory 條件式存取使用 Microsoft Intune 合規性政策，來協助保護受 Jamf 管理的裝置。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048849"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251094"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
 適用於：Azure 入口網站中的 Intune
 
-如果貴組織使用 [Jamf Pro](https://www.jamf.com) 來管理終端使用者的 Mac，您可以使用 Microsoft Intune 合規性政策搭配 Azure Active Directory 條件式存取，來確保您組織中的裝置能符合規範。
+如果貴組織使用 [Jamf Pro](https://www.jamf.com) \(英文\) 來管理終端使用者的 Mac，您可以搭配 Azure Active Directory 條件式存取使用 Microsoft Intune 合規性政策，來確保組織中的裝置符合規範。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -48,29 +48,29 @@ ms.locfileid: "66048849"
 
 ## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory] > [應用程式註冊]，然後選取 [新增註冊]。 
+1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory]   > [應用程式註冊]  ，然後選取 [新增註冊]  。 
 
-2. 在 [註冊應用程式] 頁面上，指定下列詳細資料：
-   - 在 [名稱] 區段中，輸入有意義的應用程式名稱，例如 **Jamf 條件式存取**。
-   - 針對 [支援的帳戶類型] 區段，選取 [任何組織目錄中的帳戶]。 
-   - 針對 [重新導向 URI] 保留 Web 的預設值，然後為您的 Jamf Pro 執行個體指定 URL。  
+2. 在 [註冊應用程式]  頁面上，指定下列詳細資料：
+   - 在 [名稱]  區段中，輸入有意義的應用程式名稱，例如 **Jamf 條件式存取**。
+   - 針對 [支援的帳戶類型]  區段，選取 [任何組織目錄中的帳戶]  。 
+   - 針對 [重新導向 URI]  保留 Web 的預設值，然後為您的 Jamf Pro 執行個體指定 URL。  
 
-3. 選取 [註冊] 以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
+3. 選取 [註冊]  以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
 
-4. 在應用程式的 [概觀] 頁面上，複製 [應用程式 (用戶端) 識別碼] 值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。  
+4. 在應用程式的 [概觀]  頁面上，複製 [應用程式 (用戶端) 識別碼]  值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。  
 
-5. 選取 [管理] 下方的 [憑證及祕密]。 選取 [新增用戶端密碼] 按鈕。 在 [描述] 中輸入值、針對 [到期] 選取任意選項，然後選擇 [新增]。
+5. 選取 [管理]  下方的 [憑證及祕密]  。 選取 [新增用戶端密碼]  按鈕。 在 [描述]  中輸入值、針對 [到期]  選取任意選項，然後選擇 [新增]  。
 
    > [!IMPORTANT]  
    > 離開此頁面之前，複製用戶端密碼的值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。 此值無法在未重新建立應用程式註冊的情況下再次使用。  
 
-6. 選取 [管理] 下方的 [API 權限]。  選取現有的權限，然後選取 [移除權限] 以刪除那些權限。 由於您將新增權限，因此必須先刪除所有的現有權限，而應用程式只有在具備單一必要權限時才能正常運作。  
+6. 選取 [管理] 下方的 [API 權限]  。  選取現有的權限，然後選取 [移除權限]  以刪除那些權限。 由於您將新增權限，因此必須先刪除所有的現有權限，而應用程式只有在具備單一必要權限時才能正常運作。  
 
-7. 若要指派新的權限，請選取 [新增權限]。 在 [要求 API 權限] 頁面上，選取 [Intune]，然後選取 [應用程式權限]。 只選取 **update_device_attributes** 的核取方塊。  
+7. 若要指派新的權限，請選取 [新增權限]  。 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 只選取 **update_device_attributes** 的核取方塊。  
 
-   選取 [新增權限] 以儲存此設定。  
+   選取 [新增權限]  以儲存此設定。  
 
-8. 在 [API 權限] 頁面上，選取 [代表 Microsoft 授與管理員同意]，然後選取 [是]。  
+8. 在 [API 權限]  頁面上，選取 [代表 Microsoft 授與管理員同意]  ，然後選取 [是]。  
 
    Azure AD 中的應用程式註冊程序已完成。
 
@@ -80,21 +80,21 @@ ms.locfileid: "66048849"
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然後移至 [Microsoft Intune] > [裝置相容性] > [夥伴裝置管理]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後移至 [Microsoft Intune]   > [裝置相容性]   > [夥伴裝置管理]  。
 
-2. 將您在先前程序期間儲存的應用程式識別碼貼上至 [Jamf Azure Active Directory 應用程式識別碼] 欄位，以啟用適用於 Jamf 的相容性連接器。
+2. 將您在先前程序期間儲存的應用程式識別碼貼上至 [Jamf Azure Active Directory 應用程式識別碼]  欄位，以啟用適用於 Jamf 的相容性連接器。
 
-3. 選取 [儲存]。
+3. 選取 [儲存]  。
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中設定 Microsoft Intune 整合
 
-1. 在 Jamf Pro 中，瀏覽至 [全域管理] > [條件式存取]。 按一下 [Microsoft Intune 整合] 索引標籤上的 [編輯] 按鈕。
+1. 在 Jamf Pro 中，瀏覽至 [全域管理]   > [條件式存取]  。 按一下 [Microsoft Intune 整合]  索引標籤上的 [編輯]  按鈕。
 
-2. 選取 [啟用 Microsoft Intune 整合] 核取方塊。
+2. 選取 [啟用 Microsoft Intune 整合]  核取方塊。
 
-3. 提供關於您 Azure 租用戶的必要資訊，包括 [位置]、[網域名稱]、[應用程式識別碼]，以及您在 Azure AD 中建立應用程式時所儲存的 [用戶端密碼] 的值。  
+3. 提供關於您 Azure 租用戶的必要資訊，包括 [位置]  、[網域名稱]  、[應用程式識別碼]  ，以及您在 Azure AD 中建立應用程式時所儲存的 [用戶端密碼]  的值。  
 
-4. 選取 [儲存]。 Jamf Pro 會測試您的設定，並確認是否成功。
+4. 選取 [儲存]  。 Jamf Pro 會測試您的設定，並確認是否成功。
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>設定合規性原則並註冊裝置
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804476"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044156"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
@@ -68,7 +68,7 @@ ms.locfileid: "66804476"
 | 相容性資料管理員 | 無 | 唯讀 |
 
 > [!TIP]
-> Intune 也會顯示三個 Azure AD 延伸模組：[使用者]  、[群組]  及 [條件式存取]  ，這些是使用 Azure AD RBAC 來控制的延伸模組。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資訊，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+> Intune 也會顯示三個 Azure AD 延伸模組：[使用者]  、[群組]  及 [條件式存取]  ，這些都是使用 Azure AD RBAC 來控制的。 此外，**使用者帳戶管理員**只會執行 AAD 使用者/群組活動，並沒有在 Intune 中執行所有活動的完整權限。 如需詳細資訊，請參閱 [RBAC 搭配 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
 ### <a name="roles-created-in-the-intune-classic-portal"></a>在 Intune 傳統入口網站中建立的角色
 只有具有「完整」權限的 Intune「服務管理員」  使用者可從 Intune 傳統入口網站移轉至 Azure 入口網站上的 Intune。 您必須將具有「唯讀」或「技術服務人員」存取權的 Intune **服務管理員**使用者重新指派給 Azure 入口網站中的 Intune 角色，並將它們傳統入口網站中移除。
 > [!IMPORTANT]

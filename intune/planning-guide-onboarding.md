@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046743"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044348"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
@@ -42,7 +42,7 @@ ms.locfileid: "66046743"
 
 -   Azure AD Connect (適用於目錄同步作業)
 
--   Intune On-Premises Connector for Exchange (適用於 Exchange 內部部署的條件式存取，如有需要)
+-   Exchange 的 Intune On-Premises Connector (如有需要，適用於 Exchange 內部部署的條件式存取)
 
 -   Intune 憑證連接器 (適用於 SCEP 憑證部署，如有需要)
 
@@ -125,7 +125,7 @@ Intune 支援合規性原則。 適當新增合規性原則，根據您的 Intun
 
 ### <a name="task-12-enable-conditional-access-policies"></a>工作 12：啟用條件式存取原則
 
-Intune 支援 Exchange Online、Exchange 內部部署、SharePoint Online、商務用 Skype Online 及 Dynamics CRM Online 的條件式存取。 根據您的 Intune 部署使用案例和需求適當啟用及設定條件式存取。
+Intune 支援 Exchange Online、Exchange 內部部署、SharePoint Online、商務用 Skype Online 及 Dynamics CRM Online 的條件式存取。 根據您的 Intune 部署使用案例和需求，適當地啟用及設定條件式存取。
 
 -   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 

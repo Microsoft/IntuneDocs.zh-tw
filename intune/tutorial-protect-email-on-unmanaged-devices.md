@@ -16,16 +16,16 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829057"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046280"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
-了解如何即使在裝置未向裝置管理解決方案 (例如 Intune) 註冊的情況下，也能使用應用程式保護原則搭配條件式存取來保護 Exchange Online。 您將在本教學課程中了解如何： 
+了解即使在裝置未向裝置管理解決方案 (例如 Intune) 註冊的情況下，也能搭配條件式存取使用應用程式保護原則來保護 Exchange Online。 您將在本教學課程中了解如何： 
 
 > [!div class="checklist"]
 > * 建立適用於 Outlook 應用程式的 Intune 應用程式保護原則。 您將透過禁止執行「另存新檔」及限制剪下、複製和貼上等動作，限制使用者能夠對應用程式資料執行的動作。 
@@ -76,7 +76,7 @@ ms.locfileid: "66829057"
 
 7.  在 [設定] 窗格中選取[確定]  ，然後在 [建立原則] 窗格中選取 [建立]  。
 
-隨即會建立適用於 Outlook 的應用程式保護原則。 接下來，您就可以設定條件式存取來要求裝置使用 Outlook 應用程式。
+隨即會建立適用於 Outlook 的應用程式保護原則。 接下來，您將設定條件式存取來要求裝置使用 Outlook 應用程式。
 
 ## <a name="create-conditional-access-policies"></a>建立條件式存取原則
 現在，我們將建立兩個條件式存取原則來涵蓋所有裝置平台。  
@@ -166,7 +166,7 @@ ms.locfileid: "66829057"
 
 9. 選取 [建立]  。  
 
-您的應用程式保護原則和條件式存取現已準備就緒，可供進行測試。  
+您的應用程式保護原則和條件式存取現已就緒，可供進行測試。  
 
 ## <a name="try-it-out"></a>試試看  
 有了您已建立的原則之後，裝置將必須在 Intune 中註冊並使用 Outlook 行動應用程式，才能存取 Office 365 電子郵件。 若要在 iOS 裝置上測試此案例，請嘗試使用您測試租用戶中使用者的認證登入 Exchange Online。  
@@ -189,4 +189,4 @@ ms.locfileid: "66829057"
 5. 在 [原則名稱]  清單中，選取每個測試原則的操作功能表 ([...]  )，然後選取 [刪除]  。 選取 [是]  確認。  
 
  ## <a name="next-steps"></a>後續步驟  
-在本教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式來執行的動作，並已建立條件式存取原則來要求使用 Outlook 應用程式，以及針對新式驗證用戶端要求使用 MFA。 若要了解如何使用 Intune 搭配條件式存取來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。
+在本教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式執行的動作，並已建立條件式存取原則來要求 Outlook 應用程式，以及針對新式驗證用戶端要求 MFA。 若要了解如何搭配條件式存取使用 Intune 來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。

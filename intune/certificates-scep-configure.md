@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744333"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344078"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -68,7 +68,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 |**憑證範本**|在發行 CA 上設定此範本。|
 |**用戶端驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會將它安裝於 NDES 伺服器上。|
 |**伺服器驗證憑證**|自發行 CA 或公用 CA 所要求的憑證，您會在 NDES 伺服器的 IIS 中安裝並繫結此 SSL 憑證。 如果憑證具有用戶端和伺服器的驗證金鑰使用方式集合 (**增強金鑰使用方法**)，則您可以使用相同的憑證。|
-|**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用信任的 CA 憑證設定檔將其指派至使用者、裝置或兩者。<br /><b>請注意：<b />當指派了 SCEP 憑證設定檔時，請務必將您的 SCEP 憑證設定檔中參考的受信任根憑證設定檔指派至相同的使用者或裝置群組。<br /><br />您針對每個作業系統平台使用單一受信任根 CA 憑證，並將它與您建立的每個受信任根憑證設定檔產生關聯。<br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
+|**可信任的根 CA 憑證**|您可以從根 CA 或信任根 CA 的任何裝置，將此憑證匯出為 **.cer** 檔案。 然後，使用信任的 CA 憑證設定檔將其指派至使用者、裝置或兩者。<br /> **請注意：<br />指派 SCEP 憑證設定檔時，請務必將您的 SCEP 憑證設定檔中參考的「受信任根憑證設定檔」  指派給相同的使用者或裝置群組。若要建立此設定檔，請參閱[建立受信任的憑證設定檔](certficates-pfx-configure.md#create-a-trusted-certificate-profile)，其記載於與 PKCS 憑證設定檔有關的文章中。** <br/><br />您會針對每個作業系統平台使用單一受信任根 CA 憑證，並將它關聯至您建立的每個受信任根憑證設定檔。 <br /><br />您可以在需要時使用其他受信任根 CA 憑證。 比方說，當您需要向 CA 提供信任，好讓它為您簽署 Wi-Fi 存取點的伺服器驗證憑證時，您可能就會這麼做。|
 
 ### <a name="accounts"></a>帳戶
 
@@ -487,7 +487,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
      - **數位簽章**：只有在有數位簽章協助保護金鑰時，才允許交換金鑰
    - **金鑰大小 (位元)** ：選取金鑰中包含的位元數
    - **雜湊演算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：選取其中一種可用的雜湊演算法類型，以搭配此憑證使用。 選取連線中裝置所支援的最強安全性層級。
-   - **根憑證**：選擇您先前設定並指派給使用者和/或裝置的根 CA 憑證設定檔。 此 CA 憑證必須是發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 請務必將此受信任的根憑證設定檔指派至在 SCEP 憑證設定檔中指派的相同群組。
+   - **根憑證**：選擇您先前建立並指派給使用者和/或裝置的[受信任根憑證設定檔](certficates-pfx-configure.md#create-a-trusted-certificate-profile)。 此 CA 憑證必須是發行憑證 (您在此憑證設定檔中設定) 之 CA 的根憑證。 請務必將此受信任的根憑證設定檔指派至在 SCEP 憑證設定檔中指派的相同群組。
    - **擴充金鑰使用方法**：針對憑證的使用目的**新增**值。 在大部分情況下，憑證需要 [用戶端驗證]  ，使用者或裝置才能向伺服器進行驗證。 不過，您可以視需要新增任何其他金鑰使用方式。
    - **註冊設定**
      - **更新閾值 (%)** ：輸入裝置要求更新憑證之前，剩餘的憑證存留時間百分比。
@@ -508,6 +508,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
     > [!NOTE]
     > 針對 iOS，如果您部署多個使用相同憑證設定檔的資源設定檔，就應該會在管理設定檔中看到多個憑證複本。
+- 如果您針對 Intune 和 Configuration Manager 使用共同管理，請在 Configuration Manager 中，針對「資源存取原則」  [設定工作負載滑動軸](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)為 [Intune]  或 [試驗 Intune]  。 此設定可讓 Windows 10 用戶端啟動要求憑證的流程。  
 
 如需如何指派設定檔的資訊，請參閱[指派裝置設定檔](device-profile-assign.md)。
 
@@ -552,7 +553,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 憑證授權單位無效或無法連線。 請確認憑證授權單位可用，且您的伺服器可以與其通訊。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 如需詳細資訊，請參閱[針對 DigiCert PKI 平台設定 Intune 憑證連接器](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) \(英文\) 一文。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帳戶無權撤銷來自 CA 的憑證。 請參閱事件訊息詳細資料中的 CA 名稱欄位，以判斷發行的 CA。  |
 | 0x00000403 | CertThumbprint_NotFound  | 找不到符合您輸入的憑證。 請註冊憑證連接器，然後再試一次。 |
 | 0x00000404 | Certificate_NotFound  | 找不到符合所提供輸入的憑證。 請重新註冊憑證連接器，然後再試一次。 |

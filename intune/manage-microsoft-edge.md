@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751355"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044889"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>使用 Microsoft Edge 與 Microsoft Intune 管理 Web 存取
 
@@ -57,11 +57,11 @@ ms.locfileid: "66751355"
 
 ## <a name="conditional-access-for-microsoft-edge"></a>Microsoft Edge 的條件式存取
 
-您可以利用 Azure AD 條件式存取將使用者重新導向為只能透過 Microsoft Edge 來存取公司內容。 這會將行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取限制為受原則保護的 Microsoft Edge，且會封鎖從任何其他未受保護的瀏覽器 (如 Safari 或 Chrome) 進行存取。 條件式存取可以套用至 Azure 資源，例如 Exchange Online 和 SharePoint Online、Microsoft 365 系統管理中心，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) 對外部使用者公開的內部部署網站。
+您可以利用 Azure AD 條件式存取將使用者重新導向為只能透過 Microsoft Edge 來存取公司內容。 這會將行動瀏覽器對 Azure AD 已連線 Web 應用程式的存取限制為受原則保護的 Microsoft Edge，且會封鎖從任何其他未受保護的瀏覽器 (如 Safari 或 Chrome) 進行存取。 條件式存取可以套用至 Azure 資源，例如 Exchange Online 和 SharePoint Online、Microsoft 365 系統管理中心，甚至是已透過 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) \(部分機器翻譯\) 對外部使用者公開的內部部署網站。
 
 若要限制 Azure AD 已連線 Web 應用程式在 iOS 和 Android 上使用 Microsoft Edge，請遵循下列步驟：
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 Intune 節點下，選取 [條件式存取]   > [新增原則]  。
+2. 在 Intune 節點下，選取 [條件式存取]   > [新原則]  。
 3. 接下來，選取刀鋒視窗之 [存取控制]  區段中的 [授與]  。
 4. 按一下 [需要經過核准的用戶端應用程式]  。
 5. 按一下 [授與]  刀鋒視窗上的 [選取]  。 此原則必須指派給您只想要讓 Intune Managed Browser 應用程式存取的雲端應用程式。
@@ -134,7 +134,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 以下是一些 AD 應用程式 Proxy 啟用的案例範例： 
 
-- 使用者正在使用受 Intune 保護的 Outlook 行動應用程式。 然後他們按一下電子郵件中的內部網路網站連結，Microsoft Edge 則辨識此內部網路網站已透過應用程式 Proxy 向使用者公開。 使用者是透過應用程式 Proxy 自動路由，在到達內部網路網站之前，向所有合適的 Multi-Factor Authentication 和條件式存取驗證。 使用者現在能夠甚至是在其行動裝置上存取內部網路網站，且 Outlook 中的連結會如預期運作。
+- 使用者正在使用受 Intune 保護的 Outlook 行動應用程式。 然後他們按一下電子郵件中的內部網路網站連結，Microsoft Edge 則辨識此內部網路網站已透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的 Multi-Factor Authentication 和條件式存取來進行驗證。 使用者現在能夠甚至是在其行動裝置上存取內部網路網站，且 Outlook 中的連結會如預期運作。
 - 使用者在其 iOS 或 Android 裝置上開啟 Microsoft Edge。 如果 Microsoft Edge 受到 Intune 保護，且已啟用應用程式 Proxy，則使用者可以使用他們慣用的內部 URL 巡覽至內部網路網站。 Microsoft Edge 會辨識此內部網路網站已透過應用程式 Proxy 向使用者公開，且使用者會自動透過應用程式 Proxy 傳送，在到達內部網路網站之前先通過驗證。 
 
 ### <a name="before-you-start"></a>開始之前

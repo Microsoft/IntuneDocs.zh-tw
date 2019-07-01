@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373462"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298412"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 
@@ -45,7 +45,7 @@ Intune 管理延伸模組具有下列必要條件。 滿足這些必要條件時
 
 - 執行 Windows 10 1607 版或更新版本的裝置。 如果裝置是使用[大量自動註冊](windows-bulk-enroll.md)進行註冊的，則裝置必須執行 Windows 10 1703 版或更新版本。 因為 S 模式不允許執行非 Microsoft Store 應用程式，所以 Windows 10 的 S 模式不支援 Intune 管理延伸模組。 
   
-- 已加入 Azure Active Directory (AD) 的裝置，包括：
+- 已加入 Azure Active Directory (AD) 的裝置，包括：  
   
   - 已加入混合式 Azure AD：已加入 Azure Active Directory (AD) 和內部部署 Active Directory (AD) 的裝置。 請參閱 [Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (規劃混合式 Azure Active Directory 加入實作) 以獲得指導。
 
@@ -55,13 +55,20 @@ Intune 管理延伸模組具有下列必要條件。 滿足這些必要條件時
   
   - 在 Intune 中手動註冊的裝置，即為於：
   
-    - 使用者以本機使用者帳戶登入裝置，然後手動將裝置加入 Azure AD (且 Azure AD 中的自動註冊 Intune 已啟用)。
+    - 在 Azure AD 中啟用[向 Intune 自動註冊](quickstart-setup-auto-enrollment.md)。 終端使用者會使用本機使用者帳戶登入裝置、手動將裝置加入至 Azure AD，然後使用其 Azure AD 帳戶登入裝置。
     
-    或是
+    或  
     
     - 使用者使用自身 Azure AD 帳戶登入裝置，然後在 Intune 中註冊。
 
-  - 使用 Configuration Manager 和 Intune 共同管理的裝置。 請參閱[什麼是共同管理？](https://docs.microsoft.com/sccm/comanage/overview)以獲得指導。
+  - 使用 Configuration Manager 和 Intune 共同管理的裝置。 請務必將 [用戶端應用程式]  工作負載設定為 [試驗 Intune]  或 [Intune]  。 請參閱下列各項以取得指引： 
+  
+    - [什麼是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [用戶端應用程式工作負載](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [將 Configuration Manager 工作負載切換至 Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> 請確定裝置均會[加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) \(部分機器翻譯\) 至 Azure AD。 只在 Azure AD 中[註冊](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) \(部分機器翻譯\) 的裝置將不會收到您的指令碼。
 
 ## <a name="create-a-script-policy"></a>建立指令碼原則 
 
@@ -87,7 +94,7 @@ Intune 管理延伸模組具有下列必要條件。 滿足這些必要條件時
 5. 選取 [確定]   > [建立]  以儲存指令碼。
 
 > [!NOTE]
-> 將指令碼設定為使用者內容，且裝置上的終端使用者具有管理員權限時，(根據預設) PowerShell 指令碼將以管理員權限來執行。
+> 將指令碼設定為使用者內容且終端使用者具有系統管理員權限時，根據預設，PowerShell 指令碼會以系統管理員權限來執行。
 
 ## <a name="assign-the-policy"></a>指派原則
 
@@ -156,6 +163,7 @@ Intune 管理延伸模組用戶端會每小時及在每次重新啟動後檢查 
     > [!TIP]
     > **Microsoft Intune 管理延伸模組**是在裝置上執行的服務，性質如同服務應用程式 (services.msc) 中列出的所有其他服務。 裝置重新開機之後，此服務也可能重新啟動，並向 Intune 服務確認所有指派的 PowerShell 指令碼。 如果 **Microsoft Intune 管理延伸模組**服務設定為手動，則服務就可能不會在裝置重新開機後重新啟動。
 
+- 請確定裝置均會[加入至 Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) \(部分機器翻譯\)。 只加入至您的工作場所或組織的裝置 (已在 Azure AD 中[註冊](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) \(部分機器翻譯\)) 將不會收到指令碼。
 - 對於 Intune 中指令碼或原則的任何變更，Intune 管理延伸模組用戶端會每小時檢查一次。
 - 確認 Intune 管理延伸模組已下載至 `%ProgramFiles(x86)%\Microsoft Intune Management Extension`。
 - 指令碼在 Surface Hub 和 Windows 10 S 模式中不會執行。

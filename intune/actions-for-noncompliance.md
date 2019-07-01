@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819903"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044797"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
@@ -55,7 +55,7 @@ ms.locfileid: "66819903"
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- 當您使用裝置合規性政策禁止裝置存取公司資源時，必須設定 Azure AD 條件式存取。 請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)或[透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)以獲得指導方針。
+- 當您使用裝置合規性政策來禁止裝置存取公司資源時，必須設定 Azure AD 條件式存取。 如需指引，請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)或[透過 Intune 使用條件式存取的常見方式](conditional-access-intune-common-ways-use.md)。
 
 ## <a name="create-a-notification-message-template"></a>建立通知訊息範本
 

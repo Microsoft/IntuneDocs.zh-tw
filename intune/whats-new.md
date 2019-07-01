@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749945"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389346"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
-了解每週的 Microsoft Intune 新功能 您也可以找到[即將推出的變更](in-development.md)、[重要通知](#notices)，以及[過去版本](whats-new-archive.md)的相關資訊。 
+了解每週的 Microsoft Intune 新功能 您也可以尋找[重要通知](#notices)、[過去的版本](whats-new-archive.md)，以及[如何發佈 Intune 服務更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) \(英文\) 的相關資訊。 
 
 > [!Note]
+> 每個[每月更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) \(英文\) 最多可能需要三天的推出時間，而且將依照下列順序推出：
+> - 第 1 天：亞太地區 (APAC)
+> - 第 2 天：歐洲、中東、非洲 (EMEA)
+> - 第 3 天：北美
+> 
 > 某些功能在首度發行時可能會花費數週的時間，而可能無法在第一週就提供給所有客戶。
+>
+> 請檢查[開發中頁面](in-development.md)，以了解某個版本中即將推出的功能清單。
 
 **RSS 摘要**：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -45,6 +52,29 @@ ms.locfileid: "66749945"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日當週   
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 應用程式中的新功能
+我們已在適用於 Android 的 Microsoft Intune 應用程式 (預覽) 中新增功能。 完全受控 Android 裝置上的使用者現在可以：  
+
+* 透過 Intune 公司入口網站或 Microsoft Intune 應用程式，檢視及管理已註冊的裝置。    
+* 與其組織連絡以尋求支援。    
+* 將其意見反應傳送給 Microsoft。    
+* 若其組織已設定條款及條件，即可加以檢視。  
+
+## <a name="week-of-june-10-2019"></a>2019 年 6 月 10 日當週 
+
+### <a name="app-management"></a>應用程式管理  
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>可在 GitHub 上取得新的範例應用程式 (其會顯示 Intune SDK 整合) <!-- 2653471 -->
+Msintuneappsdk GitHub 帳戶已新增適用於 iOS (Swift)、Android、Xamarin.iOS、Xamarin Forms 和 Xamarin.Android 的新範例應用程式。 這些應用程式旨在補充我們現有的文件，並提供如何將 Intune APP SDK 整合到您自己的行動裝置應用程式的示範。 如果您是需要其他 Intune SDK 指引的應用程式開發人員，請參閱以下連結的範例：
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) \(英文\) - 原生的 iOS (Swift) 即時通訊應用程式，其會使用 Azure Active Directory 驗證程式庫 (ADAL) 來進行代理驗證。
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) \(英文\) -原生的 Android 待辦事項清單應用程式，其會使用 ADAL 來進行代理驗證。
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) \(英文\) - Xamarin.Android 待辦事項清單應用程式，其會使用 ADAL 來進行代理驗證，此存放庫也有 Xamarin.Forms 應用程式。
+- [Xamarin.iOS 範例應用程式](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) - 重點式的 Xamarin.iOS 範例應用程式。
 
 ## <a name="week-of-may-27-2019"></a>2019 年 5 月 27 日當週 
 
@@ -192,7 +222,7 @@ Autopilot 重設目前適用於所有 Windows 裝置，即使未設定為使用�
 F5 發行了 BIG-IP 13 的更新，可在 Intune 中於 iOS 上的 F5 Access 提供 NAC 功能。 若要使用此功能：
 
 - 將 BIG-IP 更新為 13.1.1.5 版。 不支援 BIG-IP 14。
-- 針對 NAC 整合 BIG-IP 與 Intune。 步驟位於 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態)。
+- 針對 NAC 整合 BIG-IP 與 Intune。 步驟位於 [Overview:Configuring APM for device posture checks with endpoint management systems](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html) (概觀：設定 APM 以向端點管理系統確認裝置狀態)。
 - 在 Intune 中，確認 VPN 設定檔中的 [啟用網路存取控制 (NAC)]  設定。
 
 若要查看可用的設定，請前往[在 iOS 裝置上進行 VPN 設定](vpn-settings-ios.md)。
@@ -311,7 +341,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可�
 
   在專用裝置上，裝置可能會顯示為 [不符合規範]  。 專用裝置上無法使用條件式存取。 請務必完成任何工作或動作，以確保專用裝置符合您所指派原則的規範。
 
-- [條件式存取](conditional-access.md) - 適用於 Android 的條件式存取原則也會適用於完全受控的 Android Enterprise 裝置。 使用者現在可以使用 **Microsoft Intune 應用程式**，在 Azure Active Directory 中註冊其完全受控的裝置。 然後，查看並解決任何合規性問題以存取組織資源。
+- [條件式存取](conditional-access.md) - 適用於 Android 的條件式存取原則也適用於完全受控的 Android Enterprise 裝置。 使用者現在可以使用 **Microsoft Intune 應用程式**，在 Azure Active Directory 中註冊其完全受控的裝置。 然後，查看並解決任何合規性問題以存取組織資源。
 
 - 新增終端使用者應用程式 (Microsoft Intune 應用程式) - 新增適用於完全受控 Android 裝置的終端使用者應用程式，稱為 **Microsoft Intune**。 這是輕量型且現代化的全新應用程式，提供與公司入口網站應用程式類似的功能，但適用於完全受控的裝置。 如需詳細資訊，請參閱 [Google Play 上的 Microsoft Intune 應用程式](https://play.google.com/store/apps/details?id=com.microsoft.intune)。
 
@@ -562,7 +592,7 @@ macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Intune 條件式存取 UI 更新   <!-- 2432313   -->
 我們已改善 Intune 主控台中的條件式存取 UI。 這些地方包括：
--  以 Azure Active Directory 中的刀鋒視窗取代 Intune [條件式存取]  刀鋒視窗。 這會確保您可以從 Intune 主控台存取[條件式存取](conditional-access.md) (仍是 Azure AD 技術) 的完整設定和組態。 
+-  以 Azure Active Directory 中的刀鋒視窗取代 Intune [條件式存取]  刀鋒視窗。 這確保您可以從 Intune 主控台存取[條件式存取](conditional-access.md) (仍是 Azure AD 技術) 的完整設定和組態。 
 - 我們已將 [內部部署存取]  刀鋒視窗重新命名為 [Exchange 存取]  ，並將 [Exchange 服務連接器]  設定重新放置到此重新命名的刀鋒視窗。  這項變更會整合您[設定和監視 Exchange Online 和內部部署相關詳細資料](exchange-connector-install.md)的位置。  
 
 #### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-----"></a>Kiosk 瀏覽器和 Microsoft Edge 瀏覽器應用程式可在 Windows 10 裝置上以 kiosk 模式執行 <!-- 2935135   -->
@@ -1109,7 +1139,7 @@ Azure Active Directory 具備您可以改使用的條款功能，而無須使用
 - 您現在可以為非工作時間發生的重新啟動設定重新啟動警告提示，可支援 BYOD 案例。
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>透過交互識別碼群組 Windows Autopilot 註冊裝置 <!-- 2075110 -->
-Intune 現在支援在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來為 Windows 裝置分組。 交互識別碼是 Autopilot 設定檔的參數。 Intune 會自動將 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 設為相等的 "OfflineAutopilotprofile-<correlator ID>"。 這會允許透過離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。 如需詳細資訊，請參閱[現有裝置的 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
+Intune 現在支援在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來為 Windows 裝置分組。 交互識別碼是 Autopilot 設定檔的參數。 Intune 會自動將 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 設為相等的 "OfflineAutopilotprofile-<correlator ID>"。 這會允許透過離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。 如需詳細資訊，請參閱[現有裝置的 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Intune 應用程式防護原則 <!-- 2984657 -->
 Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Microsoft Outlook 和 Microsoft Word) 設定各種資料保護設定。 我們已變更這些設定的外觀與風格 ([iOS](app-protection-policy-settings-ios.md) 和 [Android](app-protection-policy-settings-android.md))，以便輕鬆找到個別設定。 原則設定有三個類別：

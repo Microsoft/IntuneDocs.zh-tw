@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749803"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263714"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -278,8 +278,6 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-[使用 SCEP 憑證](certificates-scep-configure.md)，或[從 Symantec PKI Manager Web 服務發行 PKCS 憑證](certificates-symantec-configure.md)。
+[使用 SCEP 憑證](certificates-scep-configure.md)，或[從 Digicert PKI Manager Web 服務發行 PKCS 憑證](certificates-digicert-configure.md)。
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "在 Azure 入口網站中瀏覽至 Intune 並建立受信任憑證的新設定檔"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "建立設定檔並上傳受信任的憑證"
-[ConnectorDownload]: ./media/certificates-download-connector.png "從 Azure 入口網站下載憑證連接器"  
+

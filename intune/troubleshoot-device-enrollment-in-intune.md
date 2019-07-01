@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040607"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046291"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -55,7 +55,7 @@ ms.locfileid: "66040607"
 所有的裝置平台都可能發生這些問題。
 
 ### <a name="device-cap-reached"></a>已到達裝置上限
-**問題**使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」)，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
+**問題**使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」  )，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
 
 **解決方法：**
 
@@ -63,9 +63,9 @@ ms.locfileid: "66040607"
 
 請遵循以下步驟，檢查指派至使用者的裝置是否超過上限：
 
-1. 在 Intune 中，選擇 [裝置註冊] > [註冊限制] > [裝置限制]。 請記下 [裝置限制] 欄中的值。
+1. 在 Intune 中，選擇 [裝置註冊]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
 
-2. 在 Intune 中，選擇 [使用者][所有使用者] >  > 選取使用者 > [裝置]。 請記下裝置數目。
+2. 在 Intune 中，選擇 [使用者]  [所有使用者] >   > 選取使用者 > [裝置]  。 請記下裝置數目。
 
 3. 如果使用者註冊的裝置數目已經等於其裝置限制，在出現以下情況之前將無法再註冊任何裝置：
     - [移除現有的裝置](devices-wipe.md)，或者
@@ -80,7 +80,7 @@ ms.locfileid: "66040607"
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至裝置註冊管理員帳戶的使用者帳戶將無法完成註冊。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
-**問題**使用者在裝置上收到「公司入口網站暫時無法使用」錯誤。
+**問題**使用者在裝置上收到「公司入口網站暫時無法使用」  錯誤。
 
 **解決方法：**
 
@@ -95,7 +95,7 @@ ms.locfileid: "66040607"
 5.  如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
-**問題**使用者收到「MDM 授權單位未定義」錯誤。
+**問題**使用者收到「MDM 授權單位未定義」  錯誤。
 
 **解決方法：**
 
@@ -120,13 +120,13 @@ ms.locfileid: "66040607"
 
     3.  開啟資料庫資料夾，然後尋找並開啟 **CM_DBName** 資料夾，其中 DBName 是客戶資料庫的名稱。
 
-    4.  選擇頂端的 [新增查詢] 並執行下列查詢：
+    4.  選擇頂端的 [新增查詢]  並執行下列查詢：
 
         -   查看所有使用者：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
         -   若要查看特定使用者，請使用下列查詢，其中 %testuser1% 是所要查閱使用者 username@domain.com 的預留位置：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        撰寫查詢之後，請選擇 [!Execute]。
+        撰寫查詢之後，請選擇 [!Execute]  。
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
@@ -143,7 +143,7 @@ ms.locfileid: "66040607"
 - 在其組織中有多個提供使用者 UPN 尾碼的頂層網域 (例如 @contoso.com 或 @fabrikam.com)。
 
 
-[AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 <strong>SupportMultipleDomain</strong> 參數運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+[AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 <strong>SupportMultipleDomain</strong> 參數運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的問題
@@ -163,7 +163,7 @@ ms.locfileid: "66040607"
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
-- 受條件式存取原則所保護的使用者可能會遺失對公司資源的存取權。
+- 受到條件式存取原則所保護的使用者可能會遺失對公司資源的存取。
 
 Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用 Intune 公司入口網站及其元件。 當公司入口網站處於已停用狀態時，就不能在背景中執行，而且無法連絡 Intune 服務。
 
@@ -176,7 +176,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法 2：**
 
-告訴使用者嘗試升級到 Android 6.0。 停用問題在 Android 6.0 裝置上不會發生。 若要檢查是否有可用的更新，請移至 [設定] > [關於裝置] > [手動下載更新] > 依照提示進行。
+告訴使用者嘗試升級到 Android 6.0。 停用問題在 Android 6.0 裝置上不會發生。 若要檢查是否有可用的更新，請移至 [設定]   > [關於裝置]   > [手動下載更新]  > 依照提示進行。
 
 **解決方法 3：**
 
@@ -186,29 +186,29 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
    ![選取裝置上的 Smart Manager 圖示](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-icon.png)
 
-2. 選擇 [電池] 磚。
+2. 選擇 [電池]  磚。
 
    ![選取 [電池] 磚](./media/troubleshoot-device-enrollment-in-intune/smart-manager-battery-tile.png)
 
-3. 在 [應用程式省電] 或 [應用程式最佳化] 下方，選取 [詳細資料]。
+3. 在 [應用程式省電]  或 [應用程式最佳化]  下方，選取 [詳細資料]  。
 
    ![在 [應用程式省電] 或 [應用程式最佳化] 下方選取 [詳細資料]](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-power-saving-detail.png)
 
-4. 從應用程式清單中選擇 [公司入口網站]。
+4. 從應用程式清單中選擇 [公司入口網站]  。
 
    ![從應用程式清單中選取 [公司入口網站]](./media/troubleshoot-device-enrollment-in-intune/smart-manager-company-portal.png)
 
-5. 選擇 [關閉]。
+5. 選擇 [關閉]  。
 
    ![從 [應用程式最佳化] 對話方塊中選取 [關閉]](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-optimization-turned-off.png)
 
-6. 在 [應用程式省電] 或 [應用程式最佳化] 下方，確認公司入口網站已關閉。
+6. 在 [應用程式省電]  或 [應用程式最佳化]  下方，確認公司入口網站已關閉。
 
    ![確認公司入口網站已關閉](./media/troubleshoot-device-enrollment-in-intune/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**使用者的 Android 裝置收到「設定檔安裝失敗」錯誤。
+**問題**使用者的 Android 裝置收到「設定檔安裝失敗」  錯誤。
 
 **解決方法：**
 
@@ -236,26 +236,26 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
 
-1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始] > [執行] > **certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
-2.  展開 [個人] 並選擇 [憑證]。
+1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始]   > [執行]   > **certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
+2.  展開 [個人]  並選擇 [憑證]  。
 3.  尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
-4.  選擇 [憑證路徑] 索引標籤來查看憑證的父憑證。
-5.  在每個父憑證上，選擇 [檢視憑證]。
-6.  選擇 [詳細資料] > [複製到檔案]。
+4.  選擇 [憑證路徑]  索引標籤來查看憑證的父憑證。
+5.  在每個父憑證上，選擇 [檢視憑證]  。
+6.  選擇 [詳細資料]   > [複製到檔案]  。
 7.  遵循精靈的提示，將父憑證的公開金鑰匯出或儲存到您選擇的檔案位置。
-8.  以滑鼠右鍵按一下 [憑證] > [所有工作] > [匯入]。
-9.  遵循精靈的提示，將父憑證匯入至 [本機電腦]\[個人]\[憑證]。
+8.  以滑鼠右鍵按一下 [憑證]   > [所有工作]   > [匯入]  。
+9.  遵循精靈的提示，將父憑證匯入至 [本機電腦]\[個人]\[憑證]  。
 10. 重新啟動 AD FS 伺服器。
 11. 在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
 
-若要驗證憑證是否正確安裝，您可以使用 [https://www.digicert.com/help/](https://www.digicert.com/help/) 上的診斷工具。 在 [Server Address] \(伺服器位址\) 方塊中，輸入您 ADFS 伺服器的 FQDN (即 sts.contso.com)，然後按一下 [Check Server]\(檢查伺服器\)。
+若要驗證憑證是否正確安裝，您可以使用 [https://www.digicert.com/help/](https://www.digicert.com/help/) 上的診斷工具。 在 [Server Address]  \(伺服器位址\) 方塊中，輸入您 ADFS 伺服器的 FQDN (即 sts.contso.com)，然後按一下 [Check Server]  \(檢查伺服器\)。
 
 **驗證憑證已正確安裝**：
 
 下列步驟僅描述可用來驗證憑證以正確安裝之數種方法和工具的其中一種。
 
 1. 移至[免費的 Digicert 工具](ttps://www.digicert.com/help/)。
-2. 輸入您的 AD FS 伺服器的完整網域名稱 (例如，sts.contoso.com) 並選取 [檢查伺服器]。
+2. 輸入您的 AD FS 伺服器的完整網域名稱 (例如，sts.contoso.com) 並選取 [檢查伺服器]  。
 
 如果伺服器憑證已正確安裝，您就會在結果中看到所有核取記號。 如果上述問題存在，您會看到報告的 [Certificate Name Matches] 和 [SSL Certificate is correctly Installed] 區段中有紅色 X。
 
@@ -280,7 +280,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
-- 受條件式存取原則所保護的使用者可能會遺失對公司資源的存取權。
+- 受到條件式存取原則所保護的使用者可能會遺失對公司資源的存取。
 
 **解決方法：** 與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
 
@@ -296,7 +296,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
   ![無法同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
-若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定] 按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。
+若要修正此問題，使用者必須選取位在**無法同步**通知右邊的 [設定]  按鈕。 [設定] 按鈕會將使用者帶到公司存取設定流程畫面，他們可以在這裡遵循提示以註冊裝置。
 
   ![公司存取設定畫面](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_company_access_setup.png)
 
@@ -317,7 +317,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**使用者的 iOS 裝置收到「設定檔安裝失敗」錯誤。
+**問題**使用者的 iOS 裝置收到「設定檔安裝失敗」  錯誤。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
@@ -373,7 +373,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 4. 通知使用者重新開始註冊程序。
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>判斷 VPP 權杖是否有問題
-1. 移至 [Intune] > [裝置註冊] > [Apple 註冊] > [註冊計劃權杖] > 權杖名稱 > [設定檔] > 設定檔名稱 > [管理] > [內容]。
+1. 移至 [Intune]   > [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 權杖名稱 > [設定檔]  > 設定檔名稱 > [管理]   > [內容]  。
 2. 檢閱內容以查看是否有任何錯誤類似如下：
     - 此權杖已過期。
     - 此權杖超出公司入口網站授權。
@@ -383,14 +383,14 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 3. 修正權杖的問題。
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>識別被 VPP 權杖封鎖的裝置
-1. 移至 [Intune] > [裝置註冊] > [Apple 註冊] > [註冊計劃權杖]> 權杖名稱 > [裝置]。
-2. 依 [已封鎖] 篩選 [設定檔狀態] 資料行。
+1. 移至 [Intune]   > [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 權杖名稱 > [裝置]  。
+2. 依 [已封鎖]  篩選 [設定檔狀態]  資料行。
 3. 記下所有**已封鎖**裝置的序號。
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>從遠端抹除已封鎖的裝置
 修正 VPP 權杖的問題之後，您必須抹除已封鎖的裝置。
-1. 移至 [Intune] > [裝置] > [所有裝置] > [資料行] > [序號] > [套用]。 
-2. 針對每部已封鎖的裝置，在 [所有裝置] 清單中選擇它，然後選擇 [抹除] > [是]。
+1. 移至 [Intune]   > [裝置]   > [所有裝置]   > [資料行]   > [序號]   > [套用]  。 
+2. 針對每部已封鎖的裝置，在 [所有裝置]  清單中選擇它，然後選擇 [抹除]   > [是]  。
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>通知使用者重新開始註冊程序
 抹除已封鎖的裝置之後，您可以通知使用者重新開始註冊程序。
@@ -400,7 +400,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 ### <a name="macos-enrollment-errors"></a>macOS 註冊錯誤
 **錯誤訊息 1：** *您似乎正在使用虛擬機器。請確認您已完整設定虛擬機器，包括序號及硬體型號。若此裝置不是虛擬機器，請連絡支援人員。*  
 
-**錯誤訊息 2：** *我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。* 
+**錯誤訊息 2：** *我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。*
 
 **問題**此訊息可能是由於下列任何原因所造成：  
 * 未正確設定 macOS 虛擬機器 (VM)  
@@ -413,9 +413,9 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 * 如果裝置仍指派給 Intune 中的其他使用者，其先前的擁有者並未使用公司入口網站應用程式將它移除或重設。 若要從 Intune 清除過時的裝置記錄：  
 
     1. 移至 [Azure 入口網站中的 Intune](https://portal.manage.microsoft.com)，並使用您的系統管理認證登入。
-    2. 移至 Intune > [裝置] > [所有裝置]。  
+    2. 移至 Intune > [裝置]   > [所有裝置]  。  
     3. 找到有註冊問題的裝置。 依裝置名稱或 MAC/硬體位址進行搜尋，以縮小結果的範圍。
-    4. 選取裝置 > [刪除]。 刪除與裝置建立關聯的所有其他項目。  
+    4. 選取裝置 > [刪除]  。 刪除與裝置建立關聯的所有其他項目。  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
 ### <a name="mobile-devices-disappear"></a>行動裝置消失
@@ -428,9 +428,9 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 #### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
 
-1.  在 Configuration Manager 系統管理主控台中，選取 [監視] &gt; [系統狀態] &gt; [狀態訊息查詢]。
+1.  在 Configuration Manager 系統管理主控台中，選取 [監視]  &gt; [系統狀態]  &gt; [狀態訊息查詢]  。
 
-2.  以滑鼠右鍵按一下 [手動刪除的集合成員資源]，然後選取 [顯示訊息]。
+2.  以滑鼠右鍵按一下 [手動刪除的集合成員資源]  ，然後選取 [顯示訊息]  。
 
 3.  選擇適當的時間/日期或 [過去 12 小時]。
 
@@ -452,7 +452,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
-**問題**註冊失敗，並顯示「電腦已註冊」錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
+**問題**註冊失敗，並顯示「電腦已註冊」  錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 發生這個失敗的原因可能是電腦：
 - 先前已註冊，或是
@@ -461,10 +461,10 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法：**
 
-1. 從 [開始] 功能表，鍵入 [執行] -> [MMC]。
-1. 選擇 [檔案] > [Add/ Remove Snap-ins]\(新增/移除嵌入式管理單元)。
-1. 按兩下 [憑證]，並選擇 [電腦帳戶] > [下一步]，然後選取 [本機電腦]。
-1. 按兩下 [憑證 (本機電腦)]，然後選擇 [個人/憑證]。
+1. 從 [開始]  功能表，鍵入 [執行]   -> [MMC]  。
+1. 選擇 [檔案]   > [Add/ Remove Snap-ins]\(新增/移除嵌入式管理單元)  。
+1. 按兩下 [憑證]  ，並選擇 [電腦帳戶]   > [下一步]  ，然後選取 [本機電腦]  。
+1. 按兩下 [憑證 (本機電腦)]  ，然後選擇 [個人/憑證]  。
 1. 尋找 Sc_Online_Issuing 發出的 Intune 憑證，然後在它出現時刪除。
 1. 如果下列登錄機碼存在，請將它刪除：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 和所有子機碼。
 1. 嘗試重新註冊。

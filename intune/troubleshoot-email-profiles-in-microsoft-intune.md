@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402712"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197502"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中有關電子郵件設定檔的常見問題和解決方式
 
 檢閱一些常見的電子郵件設定檔問題，以及如何進行疑難排解並予以解決。
 
+## <a name="what-you-need-to-know"></a>您必須知道的事項
+
+- 針對已註冊裝置的使用者部署電子郵件設定檔。 若要設定電子郵件設定檔，Intune 會使用 Azure Active Directory (AD) 屬性在註冊期間在使用者的電子郵件設定檔。 [將電子郵件設定新增至裝置](email-settings-configure.md)可能是不錯的資源。
+- 從 Configuration Manager 混合式移轉至 Intune 獨立部署之後, 從 Configuration Manager 混合式電子郵件設定檔會保持在裝置上 7 天。 這是正常的現象。 如果您需要更快移除電子郵件設定檔，請連絡[Intune 支援](get-support.md)。
+- Android 的企業部署 Gmail 或、 包含九部使用受控的 Google Play 商店的工作。 [新增受控 Google Play 應用程式](apps-add-android-for-work.md)列出的步驟。
+- Microsoft Outlook，適用於 iOS 和 Android 不支援電子郵件設定檔。 相反地，部署應用程式設定原則。 如需詳細資訊，請參閱 < [Outlook 組態設定](app-configuration-policies-outlook.md)。
+- 以裝置群組 （不是使用者群組） 為目標的電子郵件設定檔可能不會傳遞到裝置中。 當裝置有主要的使用者時，然後為目標的裝置應該會運作。 如果電子郵件設定檔包含使用者憑證，務必目標使用者群組。
+- 可能會重複提示使用者輸入其密碼電子郵件設定檔。 在此案例中，檢查電子郵件設定檔中參考的所有憑證。 如果其中一個憑證不以使用者為目標，Intune 就重試部署電子郵件設定檔。
+
 ## <a name="device-already-has-an-email-profile-installed"></a>裝置已經安裝電子郵件設定檔
 
-如果使用者先建立電子郵件設定檔，然後才在 Intune 中註冊，則 Intune 電子郵件設定檔可能不會如預期般運作：
+如果使用者在 Intune 或 Office 365 MDM 註冊之前，建立電子郵件設定檔，則由 Intune 部署的電子郵件設定檔可能不會如預期運作：
 
 - **iOS**：Intune 依據主機名稱和電子郵件地址偵測到現有的重複電子郵件設定檔。 使用者建立的電子郵件設定檔會封鎖 Intune 建立的設定檔部署。 因為 iOS 使用者通常會先建立電子郵件設定檔再註冊，所以這個問題很常見。 公司入口網站應用程式指出使用者不符合規範，而且可能提示使用者移除電子郵件設定檔。
 
@@ -50,19 +59,16 @@ Samsung KNOX 不會使用主機名稱來識別設定檔。 建議您不要建立
 
 ## <a name="unable-to-send-images-from--email-account"></a>無法從電子郵件帳戶傳送映像
 
-適用於 Azure 傳統入口網站中的 Intune。
-
 已自動設定電子郵件帳戶的使用者將無法從他們的裝置傳送圖片或影像。 如果未啟用 [允許從協力廠商應用程式傳送電子郵件]  ，就會發生此情況。
 
 ### <a name="intune-solution"></a>Intune 解決方案
 
-1. 開啟 Microsoft Intune 系統管理主控台，並選取 [原則]  工作負載 > [設定原則]  。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 選取 [裝置設定]   > [設定檔]  。
+3. 選取您的電子郵件設定檔 >**屬性** > **設定**。
+4. 設定**允許從協力廠商應用程式傳送的電子郵件**設為**啟用**。
 
-2. 選取電子郵件設定檔，然後選擇 **[編輯]** 。
-
-3. 選取 [允許從協力廠商應用程式傳送電子郵件]  。
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Configuration Manager 與 Intune 解決方案整合
+### <a name="configuration-manager-hybrid"></a>混合式 Configuration Manager
 
 1. 開啟 [Configuration Manager 主控台] > [資產與合規性]  。
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ca966347cde157a34d1d390306f6dd262d015c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6a6410aa5eada1f1c4a0983d269d9e661b03831
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046324"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046372"
 ---
 # <a name="intune-migration-guide"></a>Intune 移轉指南
 
@@ -51,7 +51,7 @@ ms.locfileid: "66046324"
 
     -   [通訊計畫](migration-guide-communication-plan.md)
 
-    -   [使用條件式存取引導使用者採用](migration-guide-drive-adoption.md)
+    -   [使用條件式存取引導終端使用者採用](migration-guide-drive-adoption.md)
 
     -   [典型移轉週期](migration-guide-cycle.md)
         -   [監視移轉](migration-guide-cycle.md#monitoring-migration)

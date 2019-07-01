@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df1a3fcfe0f6fd0fc2a5fbfe73935c8f47c106ff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b945218fd1c2692bdc5ca92db5f309488a1a10bd
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041601"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044301"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器
 
-您可以根據由 Pradeo (一個與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評定，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Pradeo 應用程式之裝置所收集的遙測來評定的。
+您可以根據由 Pradeo (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Pradeo 應用程式之裝置所收集的遙測來評定的。
 
-您可以根據透過 Intune 裝置合規性原則啟用的 Pradeo 風險評定，設定條件式存取原則；透過該原則，您可以根據偵測到的威脅來允許或封鎖不相容的裝置存取公司資源。
+您可以根據透過 Intune 裝置合規性政策所啟用的 Pradeo 風險評量，來設定條件式存取原則，而您可以根據偵測到的威脅，使用它們來允許或封鎖不符合規範的裝置存取公司資源。
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune 和 Pradeo 如何協助保護您的公司資源？
 

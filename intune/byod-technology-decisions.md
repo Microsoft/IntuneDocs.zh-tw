@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043468"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045792"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策
 
@@ -32,7 +32,7 @@ ms.locfileid: "66043468"
 * 電子郵件帳戶裝載在 Exchange Online 中
 
 ## <a name="common-reasons-to-manage-the-device-mdm"></a>管理裝置的常見原因 (MDM)
-您可以在 Exchange Online 上部署[條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)原則，輕鬆地讓使用者向裝置管理註冊其裝置。 以下是您想要管理個人裝置的可能原因：
+您可以在 Exchange Online 上部署[條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)原則，輕鬆地引導使用者向裝置管理註冊其裝置。 以下是您想要管理個人裝置的可能原因：
 
 **WiFi/VPN** – 如果您的使用者需要公司連線設定檔才能發揮生產力，這可以順暢地設定。
 
@@ -41,7 +41,7 @@ ms.locfileid: "66043468"
 **合規性** – 某些組織必須遵守法規或其他原則，以呼叫特定的 MDM 控制項。 例如，您需要 MDM 加密整部裝置，或產生裝置上所有應用程式的報表。
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>只管理應用程式的常見原因 (MAM)
-沒有 MDM 的 MAM 在支援 BYOD 的組織中很普遍。 您可以在 Exchange Online 上部署條件式存取原則，讓使用者從 Outlook Mobile (它支援 MAM 保護) 存取電子郵件。 以下是您只想管理個人裝置之應用程式的可能原因：
+沒有 MDM 的 MAM 在支援 BYOD 的組織中很普遍。 您可以在 Exchange Online 上部署條件式存取原則，藉以引導使用者從 Outlook Mobile (它支援 MAM 保護) 存取電子郵件。 以下是您只想管理個人裝置之應用程式的可能原因：
 
 **使用者體驗** – MDM 註冊包含許多警告提示 (由平台強制執行)，通常會造成使用者決定完全不在個人裝置上存取電子郵件。 MAM 對使用者的警告力度較弱，因為它們只會快顯一次，讓使用者知道 MAM 保護已就位。
 
@@ -52,7 +52,7 @@ ms.locfileid: "66043468"
 深入了解[裝置管理和應用程式管理生命週期](introduction-device-app-lifecycles.md)。
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>MDM 與 MAM 的功能比較
-如前所述，條件存取可以讓使用者註冊其裝置，或使用受控應用程式，例如 Outlook Mobile。 任一情況皆可套用許多其他條件，包括：
+如前所述，條件存取可以引導使用者註冊其裝置，或使用受控應用程式 (例如 Outlook Mobile)。 任一情況皆可套用許多其他條件，包括：
 
 * 哪位使用者正在嘗試存取
 * 位置受信任或不受信任

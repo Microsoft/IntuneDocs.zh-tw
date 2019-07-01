@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040762"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044083"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 連接器
 
@@ -36,7 +36,7 @@ ms.locfileid: "66040762"
 
 -   弱點防禦
 
-您可以透過 Intune 裝置合規性政策啟用 SEP Mobile 風險評估，然後使用條件式存取原則，根據偵測到的威脅來允許或封鎖不合規範的裝置存取公司資源。
+您可以透過 Intune 裝置合規性政策啟用 SEP Mobile 風險評估，然後使用條件式存取原則，根據偵測到的威脅來允許或封鎖不符合規範的裝置存取公司資源。
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune 和 SEP Mobile 如何協助保護您的公司資源？
 
@@ -48,9 +48,9 @@ Intune 裝置合規性政策包含以 SEP Mobile 風險評估為基礎的 SEP Mo
 
 Intune 支援兩種與 SEP Mobile 整合的模式：
 
--   「基本設定」是唯讀模式，允許 Intune 中的裝置看見 SEP Mobile。
+-   「基本設定」  是唯讀模式，允許 Intune 中的裝置看見 SEP Mobile。
 
--   「完整整合」可讓 SEP Mobile 向 Intune 報告裝置風險和安全性事件詳細資料。
+-   「完整整合」  可讓 SEP Mobile 向 Intune 報告裝置風險和安全性事件詳細資料。
 
 ## <a name="sample-scenarios"></a>範例案例
 
@@ -76,7 +76,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 ### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
 
-偵測網路中的「攔截式攻擊」等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
+偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
 
 **封鎖透過 Wi-Fi 的網路存取︰**
 
@@ -88,7 +88,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
 
-偵測網路中的「攔截式攻擊」等威脅，並根據裝置風險防止對公司檔案進行同步處理。
+偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險防止對公司檔案進行同步處理。
 
 **偵測到網路威脅時封鎖 SharePoint Online：**
 

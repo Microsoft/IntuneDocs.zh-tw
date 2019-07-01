@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049204"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045300"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 來補救 Microsoft Defender ATP 識別出的弱點  
 
@@ -49,14 +49,14 @@ ms.locfileid: "66049204"
   此安全性工作會出現在 Intune 主控台中且狀態為「擱置」：  
   ![在 Intune 主控台中檢視安全性工作的清單](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
-- Intune 管理員會選取安全性工作來檢視有關工作的詳細資料。  管理員接著選取 [接受]，這會更新 Intune 中的狀態，且在 ATP 中為 [已接受]。  
+- Intune 管理員會選取安全性工作來檢視有關工作的詳細資料。  管理員接著選取 [接受]  ，這會更新 Intune 中的狀態，且在 ATP 中為 [已接受]  。  
   ![接受或拒絕安全性工作](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
 - 管理員接著根據所提供的指引來補救工作。  這份指引會根據所需的補救類型而異。 可供使用時，補救指引會包含可在 Intune 中開啟設定相關窗格的連結。 
 
   因為此範例中的媒體播放器不是受控應用程式，所以 Intune 只會提供文字指示。 如果應用程式是受控的，Intune 就會提供指示來下載更新的版本，並提供連結來開啟適用於應用程式的部署，如此即可將已更新的檔案新增至部署。 
 
-- 完成補救之後，Intune 管理員會開啟安全性工作並選取 [完成工作]。  系統會針對 Intune 及在 ATP 中更新補救狀態，而安全性管理員會確認已修訂的弱點狀態。  
+- 完成補救之後，Intune 管理員會開啟安全性工作並選取 [完成工作]  。  系統會針對 Intune 及在 ATP 中更新補救狀態，而安全性管理員會確認已修訂的弱點狀態。  
 
 ## <a name="prerequisites"></a>必要條件  
 
@@ -67,24 +67,24 @@ ms.locfileid: "66049204"
 **適用於 ATP 的 Intune 設定**：  
 - 設定與 Microsoft Defender ATP 的服務對服務連線。  
 - 使用 **Microsoft Defender ATP (Windows 10 Desktop)** 的設定檔類型，來將合規性政策部署至將由 ATP 評估風險的裝置。
-  如需如何設定 Intune 來與 ATP 一同運作的相關資訊，請參閱[在 Intune 中使用條件式存取強制遵守 Microsoft Defender ATP 的合規性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。  
+  如需如何設定 Intune 來與 ATP 一同運作的相關資訊，請參閱[在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。  
 
 ## <a name="work-with-security-tasks"></a>使用安全性工作  
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並移至 [裝置安全性] > [安全性工作]。  
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並移至 [裝置安全性]   > [安全性工作]  。  
 2. 從清單中選取工作來開啟資源視窗，以顯示該安全性工作的其他詳細資料。  
 3. 檢視安全性工作資源視窗時，您可以選取其他連結：  
    - 受控應用程式：檢視有弱點的應用程式。 當弱點適用於多個應用程式時，您將看到篩選過的應用程式清單。  
-   - 裝置：檢視「有弱點的裝置」清單，您可以從此處連結至含有更多該裝置弱點之詳細資料的項目。  
+   - 裝置：檢視「有弱點的裝置」  清單，您可以從此處連結至含有更多該裝置弱點之詳細資料的項目。  
    - 要求者：使用連結以將郵件傳送給提交此安全性工作的管理員。  
    - 附註：開啟安全性工作時，讀取要求者所提交的自訂訊息。  
-4. 選取 [接受] 或 [拒絕]，以針對您規劃的動作來將通知傳送給 ATP。 當您接受或拒絕工作時，您可以提交要傳送給 ATP 的附註。  
+4. 選取 [接受]  或 [拒絕]  ，以針對您規劃的動作來將通知傳送給 ATP。 當您接受或拒絕工作時，您可以提交要傳送給 ATP 的附註。  
 
 5. 接受工作之後，重新開啟安全性工作 (如果它已關閉)，並遵循補救詳細資料來補救此弱點。  安全性工作詳細資料中由 ATP 提供的指示會根據所涉及的弱點而有所不同。  
 
    如果可以執行此動作，則補救指示會包含連結以在 Intune 主控台中開啟相關設定物件。  
 
-6. 完成補救步驟之後，開啟安全性工作，然後選取 [完成工作]。  此動作會在 Intune 與 ATP 中更新安全性工作狀態。  
+6. 完成補救步驟之後，開啟安全性工作，然後選取 [完成工作]  。  此動作會在 Intune 與 ATP 中更新安全性工作狀態。  
 
 補救成功之後，ATP 中風險暴露程度的分數就會根據來自已補救裝置的新資訊而下降。 
 

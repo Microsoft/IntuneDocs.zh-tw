@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050161"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045981"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 在 Windows 全像攝影版和 HoloLens 上管理及使用不同的裝置管理功能
 
@@ -33,11 +33,11 @@ Microsoft Intune 包含許多功能，可協助管理執行 Windows Holographic 
 
 Azure Active Directory (AD) 是一項絕佳的資源，可協助您管理及控制執行 Windows Holographic for Business 的裝置。 使用 Intune 和 Azure AD 時，您可以： 
 
-- **[將裝置加入 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**：在 Azure Active Directory (AD) 中，您可以新增您工作用的 Windows 10 裝置 (包括執行 Windows Holographic for Business 的裝置)。 這項功能可讓 Azure AD 控制裝置。 它可以協助確認使用者會透過符合安全性與合規性標準的裝置，來存取公司資源。
+- **[將裝置加入 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** ：在 Azure Active Directory (AD) 中，您可以新增您工作用的 Windows 10 裝置 (包括執行 Windows Holographic for Business 的裝置)。 這項功能可讓 Azure AD 控制裝置。 它可以協助確認使用者會透過符合安全性與合規性標準的裝置，來存取公司資源。
 
   [Azure AD 中的裝置管理](https://docs.microsoft.com/azure/active-directory/devices/overview)提供更多詳細資料。
 
-- **[Windows 裝置的大量註冊](windows-bulk-enroll.md)**：您可以將大量的新 Windows 裝置加入 Azure Active Directory (AD) 和 Intune。 這項功能稱為大量註冊，其會使用佈建套件來執行作業。 這些套件會將執行 Windows Holographic for Business 的裝置加入您的 Azure AD 租用戶，並在 Intune 中註冊。
+- **[Windows 裝置的大量註冊](windows-bulk-enroll.md)** ：您可以將大量的新 Windows 裝置加入 Azure Active Directory (AD) 和 Intune。 這項功能稱為大量註冊，其會使用佈建套件來執行作業。 這些套件會將執行 Windows Holographic for Business 的裝置加入您的 Azure AD 租用戶，並在 Intune 中註冊。
 
 ## <a name="company-portal"></a>公司入口網站
 **[設定公司入口網站應用程式](company-portal-app.md)**
@@ -54,7 +54,7 @@ Intune 提供的公司入口網站應用程式，可讓使用者存取公司資�
 ## <a name="compliance-policy"></a>相容性原則
 **[建立裝置合規性原則](compliance-policy-create-windows.md)**
 
-合規性原則係指裝置必須符合才能符合規範的規則和設定。 使用這些原則搭配條件式存取，讓不符合規範的裝置無法存取公司資源。 在 Intune 中，建立合規性政策來允許或封鎖執行 Windows Holographic for Business 的裝置存取權。 例如，您可以建立要求啟用 Bitlocker 的原則。
+合規性原則係指裝置必須符合才能符合規範的規則和設定。 搭配條件式存取使用這些原則，讓不符合規範的裝置無法存取公司資源。 在 Intune 中，建立合規性政策來允許或封鎖執行 Windows Holographic for Business 的裝置存取權。 例如，您可以建立要求啟用 Bitlocker 的原則。
 
 另請參閱 **[開始使用合規性原則](device-compliance-get-started.md)** 。
 
@@ -85,11 +85,11 @@ Intune 具有一些內建動作，可讓 IT 系統管理員執行不同的工作
 
 下列動作適用於執行 Windows Holographic for Business 的裝置： 
 
-- **[抹除](devices-wipe.md#wipe)**：[抹除] 動作會將裝置從 Intune 移除並還原為其出廠預設值。 您可以在提供裝置給新的使用者之前或裝置遺失或遭竊時，使用此動作。
+- **[抹除](devices-wipe.md#wipe)** ：[抹除]  動作會將裝置從 Intune 移除並還原為其出廠預設值。 您可以在提供裝置給新的使用者之前或裝置遺失或遭竊時，使用此動作。
 
-- **[淘汰](devices-wipe.md#retire)**：[淘汰] 動作會將裝置從 Intune 移除。 它也會移除 Intune 指派的受控應用程式資料、設定和電子郵件設定檔。 使用者的個人資料仍會保留在裝置上。
+- **[淘汰](devices-wipe.md#retire)** ：[淘汰]  動作會將裝置從 Intune 移除。 它也會移除 Intune 指派的受控應用程式資料、設定和電子郵件設定檔。 使用者的個人資料仍會保留在裝置上。
 
-- **[同步處理裝置以取得最新的原則和動作](device-sync.md)**：[同步] 動作會強制裝置立即向 Intune 簽入。 當裝置簽入時，會立即接收所有擱置動作或已指派的原則。 這項功能可協助您驗證已指派的原則並對其進行疑難排解，而不用等到下次排程的簽入才進行。
+- **[同步處理裝置以取得最新的原則和動作](device-sync.md)** ：[同步]  動作會強制裝置立即向 Intune 簽入。 當裝置簽入時，會立即接收所有擱置動作或已指派的原則。 這項功能可協助您驗證已指派的原則並對其進行疑難排解，而不用等到下次排程的簽入才進行。
 
 **[什麼是 Microsoft Intune 裝置管理？](device-management.md)** 是一篇很好的資源，可讓您了解如何使用 Azure 入口網站管理裝置。 
 

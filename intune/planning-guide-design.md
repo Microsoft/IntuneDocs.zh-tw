@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046135"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044394"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -389,7 +389,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別應用程式保護原則需求。
 #### <a name="compliance-policies"></a>合規性政策
 
-相容性原則決定裝置是否符合特定需求。 Intune 使用相容性原則判斷裝置視為相容或不相容。 相容性狀態也可用來限制或允許存取公司資源。 如果需要條件式存取，建議您設計[裝置相容性原則](device-compliance.md)。
+相容性原則決定裝置是否符合特定需求。 Intune 使用相容性原則判斷裝置視為相容或不相容。 相容性狀態也可用來限制或允許存取公司資源。 如果需要條件式存取，建議您設計[裝置合規性政策](device-compliance.md)。
 
 請參考需求和使用案例，判斷您需要多少裝置相容性原則以及哪些使用者群組是目標使用者群組。 此外，您還需要決定，裝置離線多久不簽入，才會視為不相容。
 
@@ -403,20 +403,20 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別合規性政策需求。
 #### <a name="conditional-access-policies"></a>條件式存取原則
 
-條件式存取用於僅允許相容裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 決定您是否需要條件式存取，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
+條件式存取用於僅允許符合規範的裝置存取電子郵件和其他公司資源。 Intune 可搭配 Enterprise Mobility + Security (EMS) 控制對公司資源的存取。 決定您是否需要條件式存取，以及必須保護的項目。 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 
-針對線上存取，決定哪些平台和使用者群組會是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange 內部部署安裝或設定 Intune 連接器： 
+針對線上存取，決定哪些平台和使用者群組將是條件式存取原則的目標。 此外，請判斷您是否需要針對 Exchange 內部部署安裝或設定 Intune 連接器： 
 
 -   [Exchange 內部部署](exchange-connector-install.md)
 
-下例說明如何記錄條件式存取原則︰
+下列範例說明如何記錄條件式存取原則：
 
 | **服務** | **新式驗證的平台** | **基本驗證** | **使用案例** |   
 |:---:|:---:|:---:|:---:|
 | Exchange Online | iOS、Android | 封鎖 Intune 支援平台上不相容的裝置 | 公司、BYOD |
 | SharePoint Online | iOS、Android |  | 公司、BYOD |
 
-您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別條件式存取原則需求。
+您可以[下載上述表格的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) \(英文\) 來識別條件式存取原則需求。
 
 ## <a name="next-steps"></a>後續步驟
 
