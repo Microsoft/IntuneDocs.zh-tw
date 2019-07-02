@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
-ms.translationtype: MTE75
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234983"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403083"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -57,7 +57,16 @@ ms.locfileid: "67234983"
 - **將應用程式資料安裝在系統磁碟區**：[封鎖]  阻止應用程式將資料儲存在裝置的系統磁碟區。 [未設定]  (預設) 允許應用程式將資料儲存在系統磁碟區。
 - **將應用程式安裝在系統磁碟機**：[封鎖]  會防止應用程式安裝在裝置的系統磁碟機上。 [未設定]  (預設) 允許應用程式安裝在系統磁碟機上。
 - **遊戲 DVR** (僅限 Desktop)：[封鎖]  會停用 Windows 遊戲錄影和廣播。 [未設定]  (預設) 允許遊戲錄影和廣播。
-- **僅限來自市集的應用程式**：[必要]  會強制終端使用者只能安裝 Windows App Store 的應用程式。 [未設定]  可讓終端使用者安裝非 Windows App Store 的應用程式。
+- **僅限來自市集的應用程式**： 當使用者從 Microsoft Store 以外的地方安裝應用程式時，此設定會決定使用者體驗。 選項包括：
+
+  - **未設定**（預設值）： 可讓使用者從 Microsoft Store，包括其他原則設定中所定義的應用程式以外的地方安裝應用程式。  
+  - **隨處**： 關閉應用程式的建議，並允許使用者從任何地方安裝應用程式。  
+  - **只儲存**： 強制使用者只能從 Microsoft Store 安裝應用程式。
+  - **建議**： 當從 Microsoft Store 中所提供的 web 安裝應用程式，使用者會看到一則訊息，建議您將它們從市集下載。  
+  - **偏好市集**： 從 Microsoft Store 以外的地方安裝應用程式時，會警告使用者。
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **強制在更新失敗時重新啟動應用程式**：使用應用程式時，它可能不會更新。 使用此設定以強制重新啟動應用程式。 [未設定]  (預設值) 不會強制重新啟動應用程式。 [需要]  可讓系統管理員在特定日期和時間或依據週期性排程強制重新啟動。 設定為 [需要]  時，也請輸入：
 
   - **開始日期/時間**：選擇重新啟動應用程式的特定日期和時間。

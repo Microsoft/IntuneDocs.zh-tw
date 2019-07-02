@@ -128,6 +128,8 @@
                   href: migration-guide-drive-adoption.md
                 - name: 典型的移轉週期
                   href: migration-guide-cycle.md
+        - name: 規劃溝通
+          href: migration-guide-communication-plan.md
     - name: 設定 Intune
       items:
         - name: 設定 Intune 的步驟
@@ -182,7 +184,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: 公司識別碼
               href: corporate-identifiers-add.md
-            - name: Multi-Factor Authentication
+            - name: '[Multi-Factor Authentication]'
               href: multi-factor-authentication.md
             - name: 裝置註冊管理員
               href: device-enrollment-manager-enroll.md
@@ -291,7 +293,7 @@
           href: create-compliance-policy.md
         - name: 依據位置的合規性
           href: use-network-locations.md
-        - name: 不符合規範時所採取的動作
+        - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -307,6 +309,7 @@
           href: device-features-configure.md
         - name: 限制裝置設定與功能
           href: device-restrictions-configure.md
+          displayName: Device restrictions
         - name: 傳遞更新
           href: delivery-optimization-windows.md
           displayName: delivery optimization; updates
@@ -328,6 +331,8 @@
           items:
             - name: 使用預先共用金鑰的 Wi-Fi
               href: wi-fi-profile-shared-key.md
+        - name: macOS 上的延伸模組
+          href: kernel-extensions-overview-macos.md
         - name: 教育版使用測試應用程式
           href: education-settings-configure.md
         - name: 共用的多重使用者裝置
@@ -409,47 +414,52 @@
                   items:
                     - name: 新增 MTD 應用程式
                       href: mtd-apps-ios-app-configuration-policy-add-assign.md
-                    - name: 建立 MTD 裝置合規性政策
+                    - name: 建立 MTD 裝置合規性原則
                       href: mtd-device-compliance-policy-create.md
                     - name: 在 Intune 中啟用 MTD
                       href: mtd-connector-enable.md
                 - name: MTD 應用程式
                   items:
-                    - name: 設定 Lookout
-                      href: lookout-mobile-threat-defense-connector.md
-                      items:
-                        - name: Lookout 與 Intune 整合
-                          href: lookout-mtd-connector-integration.md
-                    - name: 設定 Symantec
-                      href: skycure-mobile-threat-defense-connector.md
-                      items:
-                        - name: Symantec 與 Intune 整合
-                          href: skycure-mtd-connector-integration.md
-                    - name: 設定 Check Point
-                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                      items:
-                        - name: Check Point 與 Intune 整合
-                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                    - name: 設定 Zimperium
-                      href: zimperium-mobile-threat-defense-connector.md
-                      items:
-                        - name: Zimperium 與 Intune 整合
-                          href: zimperium-mtd-connector-integration.md
-                    - name: 設定 Pradeo
-                      href: pradeo-mobile-threat-defense-connector.md
-                      items:
-                        - name: Pradeo 與 Intune 整合
-                          href: pradeo-mtd-connector-integration.md
                     - name: 設定更好行動環境
                       href: better-mobile-threat-defense-connector.md
                       items:
                         - name: 更好的行動環境與 Intune 整合
                           href: better-mobile-mtd-connector-integration.md
+                    - name: 設定 Check Point
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point 與 Intune 整合
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: 設定 Lookout
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout 與 Intune 整合
+                          href: lookout-mtd-connector-integration.md
+                    - name: 設定 Pradeo
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo 與 Intune 整合
+                          href: pradeo-mtd-connector-integration.md
                     - name: 設定 Sophos Mobile
                       href: sophos-mtd-connector.md
                       items:
                         - name: 更好的行動環境與 Intune 整合
                           href: sophos-mtd-connector-integration.md
+                    - name: 設定 Symantec
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec 與 Intune 整合
+                          href: skycure-mtd-connector-integration.md
+                    - name: 設定 Wandera
+                      href: wandera-mtd-connector.md
+                      items:
+                        - name: Wandera 與 Intune 整合
+                          href: wandera-mtd-connector-integration.md
+                    - name: 設定 Zimperium
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium 與 Intune 整合
+                          href: zimperium-mtd-connector-integration.md
             - name: Microsoft Defender
               items:
                 - name: Microsoft Defender ATP
@@ -493,7 +503,7 @@
           items:
             - name: 適用於商務設定的 Windows Update
               href: windows-update-for-business-configure.md
-            - name: Windows Update 合規性報告
+            - name: Windows Update 相容性報告
               href: windows-update-compliance-reports.md
             - name: iOS 更新原則
               href: software-updates-ios.md
@@ -678,7 +688,7 @@
       items:
         - name: Android
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-android.md
             - name: 設定檔設定
               items:
@@ -697,7 +707,7 @@
                       href: samsung-knox-apps-allow-block.md
         - name: Android 企業
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-android-for-work.md
             - name: 設定檔設定
               items:
@@ -713,7 +723,7 @@
                   href: custom-settings-android-for-work.md
         - name: iOS
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-ios.md
             - name: 設定檔設定
               items:
@@ -733,7 +743,7 @@
                   href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-mac-os.md
             - name: 設定檔設定
               items:
@@ -747,11 +757,13 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
+                - name: 延伸模組
+                  href: kernel-extensions-settings-macos.md
                 - name: 自訂
                   href: custom-settings-macos.md
         - name: Windows 10 及更新版本
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows.md
             - name: 設定檔設定
               items:
@@ -775,7 +787,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: 教育
+                - name: Education
                   href: education-settings-windows.md
                 - name: 共用的多重使用者裝置
                   href: shared-user-device-settings-windows.md
@@ -784,14 +796,14 @@
             - name: 安全性基準
               items:
                 - name: Windows 10 基準設定
-                  href: security-baseline-settings-windows.md
+                  href: security-baseline-settings-mdm.md
                 - name: Microsoft Defender ATP 基準設定
                   href: security-baseline-settings-defender-atp.md
             - name: Windows 更新設定
               href: windows-update-settings.md
         - name: Windows Holographic for Business
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: 'compliance-policy-create-windows.md#windows-holographic-for-business'
             - name: 設定檔設定
               items:
@@ -807,7 +819,7 @@
                   href: custom-settings-windows-holographic.md
         - name: Windows 8.1
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows-8-1.md
             - name: 設定檔設定
               items:
@@ -819,7 +831,7 @@
                   href: wi-fi-settings-import-windows-8-1.md
         - name: Windows Phone 8.1
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows-8-1.md
             - name: 設定檔設定
               items:
@@ -862,7 +874,7 @@
         - name: 使用 Intune 資料倉儲
           href: reports-nav-create-intune-reports.md
           items:
-            - name: 資料倉儲的變更記錄檔
+            - name: 更改數據倉庫的日誌
               href: reports-changelog.md
             - name: 使用 Power BI 連線至資料倉儲
               href: reports-proc-get-a-link-powerbi.md
@@ -900,7 +912,7 @@
                       href: reports-ref-policy.md
                     - name: 使用者裝置關聯實體的參考
                       href: reports-ref-user-device.md
-                    - name: 使用者實體的參考
+                    - name: User 實體的參考
                       href: reports-ref-user.md
             - name: 移動您的 Intune 資料倉儲帳戶資料
               href: data-warehouse-account-move.md
@@ -929,7 +941,7 @@
           items:
             - name: iPad
               href: education-settings-configure-ios.md
-            - name: 共用的 iPad
+            - name: 共用的 iPads
               href: education-settings-configure-ios-shared.md
         - name: 舊版 Intune 電腦用戶端
           href: intune-legacy-pc-client.md
@@ -972,6 +984,10 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Endpoint Protection 的常見錯誤
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: 安全性基準封存
+          items:
+            - name: 封存的 MDM 安全性基準
+              href: security-baseline-settings-mdm-archive.md
     - name: 案例實作指南
       items:
         - name: 保護 Exchange Online

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5918dc0574033020689b267418fb6283cd686db
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 97d656db3e828ef3377b927395a283fe995bb8a4
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373887"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389289"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>在 Intune 中使用 Windows Phone 8.1 裝置的自訂設定
 
 透過 Microsoft Intune，您可以使用「自訂設定檔」新增或建立 Windows Phone 8.1 裝置的自訂設定。 自訂設定檔是 Intune 中的功能。 其設計目的是為了新增 Intune 中未內建的裝置設定和功能。
 
-Windows Phone 8.1 自訂設定檔會使用開放行動聯盟的統一資源識別項 (OMA-URI) 設定來進行各種功能設定。 行動裝置製造商通常會使用這些設定來控制裝置上的功能。
+Windows Phone 8.1 自訂設定檔會使用開放行動聯盟的統一資源識別項 (OMA-URI) 設定來進行各種功能設定。 行動裝置製造商通常會使用這些設定來控制裝置上的功能。 [Windows Phone 8.1 MDM 通訊協定文件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10))列出的設定。
 
 本文示範如何建立 Windows Phone 8.1 裝置的自訂設定檔。 
 
@@ -62,6 +62,16 @@ Windows Phone 8.1 自訂設定檔會使用開放行動聯盟的統一資源識�
 
 5. 按一下 [確定]  以儲存您的變更。 視需要繼續新增更多設定。
 6. 完成時，選擇 [確定]   > [建立]  以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置設定 - 設定檔]  清單中。
+
+## <a name="example"></a>範例
+
+在下列範例中，Windows 8.1 phone 裝置無法變更行動電話通訊網路，當他們出差載波涵蓋範圍外時。
+
+- **名稱**： 允許行動數據漫遊
+- **描述**： 允許或禁止行動數據漫遊
+- **OMA URI** （區分大小寫）：./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **資料類型**： 整數
+- [值]  ：0
 
 ## <a name="next-steps"></a>後續步驟
 

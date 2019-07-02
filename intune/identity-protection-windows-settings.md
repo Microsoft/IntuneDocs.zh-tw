@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/14/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041818"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402932"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>用以啟用 Intune 中 Windows Hello 企業版的 Windows 10 裝置設定
 
@@ -36,55 +36,106 @@ ms.locfileid: "66041818"
 [建立組態設定檔](identity-protection-configure.md#create-the-device-profile)。
 
 ## <a name="windows-hello-for-business"></a>Windows Hello 企業版
+- **設定 Windows Hello 企業版**：
+  - **尚未設定** - 如果您不想要使用 Intune 來控制 Windows Hello 企業版設定，請選取此設定。 不會變更 Windows 10 裝置上任何現有的 Windows Hello 企業版設定。 窗格上的所有其他設定，都無法使用。
 
-- **設定 Windows Hello 企業版**：若要使用這項功能並設定其設定，請選擇 [啟用]  。
-- **PIN 長度下限**：輸入您想要在裝置上允許的 PIN 長度下限。 預設的 PIN 長度為六個字元。 PIN 長度下限為四 (4) 個字元。
-- **PIN 長度上限**：輸入您想要在裝置上允許的 PIN 長度上限。 預設的 PIN 長度為六 (6) 個字元。 PIN 長度上限為 127 個字元。  
-- **PIN 中需要小寫字母**：您可藉由要求終端使用者包含小寫字母，強制執行更強的 PIN。 選項包括：
+  - **已停用** - 如果您不想要使用 Windows Hello 企業版，請選取此設定。 螢幕上的所有其他設定也都無法停用。
+  - **已啟用** - 如果您想要設定 Windows Hello 企業版設定，請選取此設定。  
+  
+  **預設**：未設定
 
-  - **不允許** (預設)：禁止使用者在 PIN 中使用小寫字母。 如果未設定此設定，也會發生此行為。
-  - **允許**：允許使用者在 PIN 中使用小寫字母，但並非必要。
-  - **必要**：使用者必須在 PIN 中至少包含一個小寫字元。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
+  當設定為*已啟用*，具有下列設定：
 
-- **PIN 中需要大寫字母**：您可藉由要求終端使用者包含大寫字母，強制執行更強的 PIN。 選項包括：
+    - **PIN 長度下限**  
+     指定最小 PIN 長度對於裝置，以協助安全登入。 Windows 裝置的預設值為 6 個字元，但此設定可強制執行最少 4 到 127 個字元。 
+  
+      **預設值**：*未設定*
 
-  - **不允許** (預設)：禁止使用者在 PIN 中使用大寫字母。 如果未設定此設定，也會發生此行為。
-  - **允許**：允許使用者在 PIN 中使用大寫字母，但並非必要。
-  - **必要**：使用者必須在 PIN 中至少包含一個大寫字元。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
+    - **PIN 長度上限**  
+    指定裝置，以協助安全登入的最大 PIN 長度。 Windows 裝置的預設值為 6 個字元，但此設定可強制執行最少 4 到 127 個字元。  
 
-- **PIN 中需要特殊字元**：您可藉由要求終端使用者包含特殊字元，強制執行更強的 PIN。 選項包括：
+      **預設值**：*未設定*  
 
-  - **不允許** (預設)：禁止使用者在 PIN 中使用特殊字元。 如果未設定此設定，也會發生此行為。
-    特殊字元包含：`! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
-  - **允許**：允許使用者在 PIN 中使用大寫字母，但並非必要。
-  - **必要**：使用者必須在 PIN 中至少包含一個大寫字元。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
+    - **PIN 中的小寫字母**  
+      您可藉由要求終端使用者包含小寫字母，強制執行更強的 PIN。 選項包括：
 
-- **PIN 到期 (天數)** ：建議為 PIN 指定到期時間，使用者必須在該時間後變更 PIN。 預設為 41 天。
+      - **不允許** - 禁止使用者在 PIN 中使用小寫字母。 如果未設定此設定，也會發生此行為。
+      - **允許** - 允許使用者在 PIN 中使用小寫字母，但並非必要。
+      - **必要** - 使用者必須在 PIN 中至少包含一個小寫字母。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
 
-- **記住 PIN 歷程記錄**：限制重複使用先前用過的 PIN。 預設不能重複使用最後 5 個 PIN。  
-- **啟用 PIN 復原**：允許使用者使用 Windows Hello 企業版 PIN 復原服務來變更其 PIN。
+    - **PIN 中的大寫字母**  
+    您可藉由要求終端使用者包含大寫字母，強制執行更強的 PIN。 選項包括：
 
-       - **Enable**: The cloud service encrypts a PIN recovery secret to store on the device. The user can change their PIN if needed.  
-       - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
+      - **不允許** - 禁止使用者在 PIN 中使用大寫字母。 如果未設定此設定，也會發生此行為。
+      - **允許** - 允許使用者在 PIN 中使用大寫字母，但並非必要。
+      - **必要** - 使用者必須在 PIN 中至少包含一個大寫字母。 例如，是常見的作法是需要至少一個大寫字母和一個特殊字元。
 
-- **使用信賴平台模組 (TPM)** ：TPM 晶片提供額外一層資料安全性。 選擇下列其中一個值：  
-  - **啟用**：只有能存取 TPM 的裝置可以佈建 Windows Hello 企業版。
-  - **未設定**：所有裝置都可以佈建 Windows Hello 企業版，即使沒有可使用的 TPM。 裝置會先嘗試使用 TPM，但如果沒有 TPM，則裝置可以使用軟體加密。  
+    - **PIN 中的特殊字元**  
+    您可藉由要求終端使用者包含特殊字元，強制執行更強的 PIN。 特殊字元包含：`! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
+ 
+      選項包括：
+      - **不允許** - 禁止使用者在 PIN 中使用特殊字元。 如果未設定此設定，也會發生此行為。
+      - **允許** - 允許使用者在 PIN 中使用大寫字母，但並非必要。
+      - **必要** - 使用者必須在 PIN 中至少包含一個大寫字母。 比方說，是常見的作法是需要至少一個大寫字母和一個特殊字元。
 
-- **允許生物識別驗證**：啟用生物識別驗證 (例如臉部辨識或指紋) 以替代 Windows Hello 企業版的 PIN。 使用者仍然必須設定公司 PIN 以免生物識別驗證失敗。 從下列選項進行選擇：
+      **預設**： 不允許
 
-  - **啟用**：Windows Hello 企業版允許生物識別驗證。
-  - **未設定** (預設)：Windows Hello 企業版會防止生物識別驗證 (針對所有帳戶類型)。
+  - **PIN 到期 (天數)**  
+      建議為 PIN 指定到期時間，使用者必須在該時間後變更 PIN。 Windows 裝置的預設值為 41 天。
 
-- **在可用時使用增強式反詐騙**：選擇是否要在支援的裝置上使用 Windows Hello 反詐騙功能。 例如，偵測臉部的相片而非實際的臉部。
+    **預設值**：尚未設定
 
-  - **啟用**：Windows 要求所有使用者在功能支援的情況下，使用臉部特徵防詐騙。  
-  - [未設定]  (預設)：Windows 會接受裝置上的反詐騙設定。
+  - **記住 PIN 碼歷程記錄**  
+    限制重複使用先前用過的 PIN。 Windows 裝置的預設值以防止重複使用的最後五個 Pin。  
 
-- **內部部署資源的憑證**： 
+    **預設值**：尚未設定  
 
-  - **啟用**：允許 Windows Hello 企業版使用憑證來驗證內部部署資源。
-  - **未設定** (預設)：防止 Windows Hello 企業版使用憑證來驗證內部部署資源。 裝置會改為使用「金鑰信任內部部署驗證」  的預設行為。 如需詳細資訊，請參閱 Windows Hello 文件中的[內部部署驗證的使用者憑證](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication)。  
+  - **啟用 PIN 復原**   
+    可讓使用者使用 Windows Hello 企業釘選復原服務。 
+    
+    - **啟用**-PIN 修復密碼儲存在裝置和使用者可以變更其 pin 碼，如有需要。  
+    - **已停用**-復原密碼不是建立或儲存。
+
+    **預設**：未設定
+
+  - **使用信賴平台模組 (TPM)**    
+    TPM 晶片提供額外一層資料安全性。  
+
+    - **啟用** - 只有能存取 TPM 的裝置可以佈建 Windows Hello 企業版。
+    - **尚未設定** - 第一次嘗試使用 TPM 的裝置。 如果無法使用此值，則可以使用軟體加密。
+    
+    **預設**：未設定
+
+  - **允許生物識別驗證**  
+     啟用生物識別驗證 (例如臉部辨識或指紋) 以替代 Windows Hello 企業版的 PIN。 使用者仍然必須設定公司 PIN 以免生物識別驗證失敗。 從下列選項進行選擇：
+
+    - **啟用** - Windows Hello 企業版允許生物識別驗證。
+    - **未設定** - Windows Hello 企業版會防止生物識別驗證 (針對所有帳戶類型)。
+
+    **預設**：未設定
+
+  - **使用進階防詐騙 (如可使用)**  
+    設定是否在支援 Windows Hello 反詐騙功能的裝置上使用該功能 (例如，偵測臉正面相片而非真正的臉孔)。  
+    - **啟用** - Windows 要求所有使用者在功能支援的情況下，使用臉部特徵防詐騙。
+    - [未設定]  - Windows 會接受裝置上的反詐騙設定。
+
+    **預設**：未設定
+
+  - **內部部署資源的憑證**  
+
+    - **啟用** - 允許 Windows Hello 企業版使用憑證來驗證內部部署資源。
+    - **未設定** - 防止 Windows Hello 企業版使用憑證來驗證內部部署資源。 裝置會改為使用「金鑰信任內部部署驗證」  的預設行為。 如需詳細資訊，請參閱 Windows Hello 文件中的[內部部署驗證的使用者憑證](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication)。  
+
+  **預設**：未設定
+
+- **在登入時使用的安全性金鑰**  
+  此設定是適用於執行 Windows 10 版本，1903年或更新版本的裝置。 您可以使用它來管理登入使用 Windows Hello 安全性金鑰的支援。  
+
+  - **啟用**-使用者可以使用 Windows Hello 安全性金鑰，因為與此原則的目標電腦的登入認證。 
+  - **停用**-安全性金鑰會停用，而且使用者無法使用它們來登入電腦。   
+
+  **預設**：未設定
+
 ## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
