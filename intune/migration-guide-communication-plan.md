@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044614"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494562"
 ---
 # <a name="plan-communications"></a>規劃溝通 
 溝通計畫是 Intune 移轉的重要元素。 下列提供的工具和範本可協助您教育使用者。 Intune 採用套件包含電子郵件範本、Intune 註冊指南和使用者註冊教學影片的連結。  
 
-下載：[Intune 採用套件](http://aka.ms/IntuneAdoptionKit)
+下載：[Intune 採用套件](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>電子郵件範本 
 建議您使用下列電子郵件溝通計劃。 我們已提供範本供您用來調整溝通計劃：

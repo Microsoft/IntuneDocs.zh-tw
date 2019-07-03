@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040565"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528376"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
@@ -44,7 +44,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 -   **唯讀整合 (基本設定)：** 僅清查來自 Azure Active Directory 的裝置，並將它們填入 Symantec Endpoint Protection Mobile 管理主控台。
 <br>
-    -   如果未在 Symantec Endpoint Protection Mobile 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險] 和 [也向 Intune 報告安全性事件] 方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
+    -   如果未在 Symantec Endpoint Protection Mobile 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險]  和 [也向 Intune 報告安全性事件]  方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
 <br></br>
 -   **完整整合：** 允許 SEP Mobile 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
 
@@ -63,15 +63,15 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 1.  移至 [Symantec Endpoint Protection Mobile 管理主控台](https://aad.skycure.com)。
 
-2.  輸入您的 **SEP Mobile 系統管理員認證**，然後選擇 [繼續]。
+2.  輸入您的 **SEP Mobile 系統管理員認證**，然後選擇 [繼續]  。
 
-3.  移至 [設定]，在 [Intune 整合] 底下選擇 [基本設定]。
+3.  移至 [設定]  ，在 [Intune 整合]  底下選擇 [基本設定]  。
 
-4.  在 [iOS 應用程式] 旁，選擇 [新增至 Active Directory]。
+4.  在 [iOS 應用程式]  旁，選擇 [新增至 Active Directory]  。
 
     ![Symantec Endpoint Protection Mobile 管理主控台影像](./media/symantec-portal-basic-add.png)
 
-5.  當登入頁面開啟時，輸入您的 Intune 認證，然後選擇 [接受]。
+5.  當登入頁面開啟時，輸入您的 Intune 認證，然後選擇 [接受]  。
 
     ![iOS 應用程式 Intune 登入提示的影像](./media/symantec-portal-basic-accept.png)
 
@@ -79,7 +79,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
     ![iOS 應用程式完成畫面的影像](./media/symantec-portal-basic-added.png)
 
-7. 針對 [SEP Mobile Android] 和 [管理] 應用程式重複這些步驟。
+7. 針對 [SEP Mobile Android]  和 [管理]  應用程式重複這些步驟。
 
 ### <a name="add-an-azure-ad-security-group-into-sep-mobile"></a>將 Azure AD 安全性群組新增至 SEP Mobile
 
@@ -87,7 +87,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 -  請輸入並選取所有執行 SEP Mobile 之裝置的安全性群組，然後儲存變更。
 
-    ![顯示 SEP Mobile 應用程式使用者群組的影像](./media/symantec-portal-basic-groups.png)   
+    ![顯示 SEP Mobile 應用程式使用者群組的影像](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 安全性群組同步。
 
@@ -99,54 +99,54 @@ SEP Mobile 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 
-2. 在搜尋方塊中輸入「Azure Directory」，然後選取 [Azure Active Directory]。
+2. 在搜尋方塊中輸入「Azure Directory」，然後選取 [Azure Active Directory]  。
 
-3. 選擇 [內容]。
+3. 選擇 [內容]  。
 
-4. 在 [目錄識別碼] 旁邊，選擇複製圖示，然後將它貼到安全的位置。 您在稍後的步驟將需要此識別碼。
+4. 在 [目錄識別碼]  旁邊，選擇複製圖示，然後將它貼到安全的位置。 您在稍後的步驟將需要此識別碼。
 
     ![在 Azure 入口網站中顯示目錄識別碼的影像](./media/symantec-azure-portal-directory-ID.png)
 
 ### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(選擇性) 針對需要執行 SEP Mobile 應用程式的裝置建立專用的安全性群組
-1. 在 [Azure 入口網站中](https://portal.azure.com)，選擇 [管理] 底下的 [使用者和群組]，然後選擇 [所有群組]。
+1. 在 [Azure 入口網站中](https://portal.azure.com)，選擇 [管理]  底下的 [使用者和群組]  ，然後選擇 [所有群組]  。
 
-2. 選擇 [新增] 按鈕。 輸入群組**名稱**。 在 [成員資格類型] 底下，選擇 [已指派]。
+2. 選擇 [新增]  按鈕。 輸入群組**名稱**。 在 [成員資格類型]  底下，選擇 [已指派]  。
 
-3. 在 [成員] 刀鋒視窗中，選取群組成員，然後選擇 [選取] 按鈕。
+3. 在 [成員]  刀鋒視窗中，選取群組成員，然後選擇 [選取]  按鈕。
 
-4. 在 [群組] 刀鋒視窗中，選擇 [建立]。
+4. 在 [群組]  刀鋒視窗中，選擇 [建立]  。
 
 ### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
 1.  移至 [Symantec Endpoint Protection Mobile 管理主控台](https://aad.skycure.com)。
 
-2.  輸入您的 **SEP Mobile 系統管理員認證**，然後選擇 [繼續]。
+2.  輸入您的 **SEP Mobile 系統管理員認證**，然後選擇 [繼續]  。
 
-3.  移至 [設定] > [整合] > [Intune] > [EMM 整合選擇] 區段。
+3.  移至 [設定]   > [整合]   > [Intune]   > [EMM 整合選擇]  區段。
 
-4. 在 [目錄識別碼] 方塊中，貼上您在上一小節中從 Azure Active Directory 複製的目錄識別碼，並儲存設定。
+4. 在 [目錄識別碼]  方塊中，貼上您在上一小節中從 Azure Active Directory 複製的目錄識別碼，並儲存設定。
 
-    ![在 SEP Mobile 入口網站中顯示目錄識別碼的影像](./media/symantec-portal-directory-ID.png)     
+    ![在 SEP Mobile 入口網站中顯示目錄識別碼的影像](./media/symantec-portal-directory-ID.png)
 
-5. 移至 [設定] > [整合] > [Intune] > [基本設定] 區段。
+5. 移至 [設定]   > [整合]   > [Intune]   > [基本設定]  區段。
 
-6. 在 [iOS 應用程式] 旁，選擇 [新增至 Active Directory] 按鈕。
+6. 在 [iOS 應用程式]  旁，選擇 [新增至 Active Directory]  按鈕。
 
-    ![顯示將 iOS 應用程式新增到 Active Directory 的影像](./media/symantec-portal-basic-add.png)   
+    ![顯示將 iOS 應用程式新增到 Active Directory 的影像](./media/symantec-portal-basic-add.png)
 
-7.  使用 Azure Active Directory 認證登入管理目錄的 Office 365 帳戶。
+7. 使用 Azure Active Directory 認證登入管理目錄的 Office 365 帳戶。
 
-8.  選擇 [接受] 按鈕以將 SEP Mobile iOS 應用程式新增至 Azure Active Directory。
+8. 選擇 [接受]  按鈕以將 SEP Mobile iOS 應用程式新增至 Azure Active Directory。
 
-    ![顯示接受按鈕的影像](./media/symantec-portal-basic-accept.png)     
+    ![顯示接受按鈕的影像](./media/symantec-portal-basic-accept.png)
 
-9.  針對 [Android 應用程式] 和 [管理應用程式] 重複相同程序。
+9. 針對 [Android 應用程式]  和 [管理應用程式]  重複相同程序。
 
 10. 選取需要執行 SEP Mobile 應用程式的所有使用者群組，例如您在稍早建立的安全性群組。
 
-    ![顯示 SEP Mobile 應用程式使用者群組的影像](./media/symantec-portal-basic-groups.png)   
+    ![顯示 SEP Mobile 應用程式使用者群組的影像](./media/symantec-portal-basic-groups.png)
 
-11.  SEP Mobile 會同步處理所選取群組中的裝置，並開始向 Intune 報告資訊。 您可以在 [完整整合] 區段中檢視此資料。 移至 [設定] > [整合] > [Intune] > [完整整合] 區段。
+11.  SEP Mobile 會同步處理所選取群組中的裝置，並開始向 Intune 報告資訊。 您可以在 [完整整合] 區段中檢視此資料。 移至 [設定]   > [整合]   > [Intune]   > [完整整合]  區段。
 
      ![顯示完成 SEP Mobile 完整整合的影像](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>後續步驟

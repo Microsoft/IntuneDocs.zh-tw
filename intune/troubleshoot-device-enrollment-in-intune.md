@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046291"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528760"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -34,10 +34,10 @@ ms.locfileid: "67046291"
 
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
 
--   [準備在 Microsoft Intune 中註冊裝置](setup-steps.md)
--   [設定 iOS 和 Mac 裝置管理](ios-enroll.md)
--   [設定 Windows 裝置管理](windows-enroll.md)
--   [設定 Android 裝置管理](android-enroll.md) - 不需要其他步驟
+- [準備在 Microsoft Intune 中註冊裝置](setup-steps.md)
+- [設定 iOS 和 Mac 裝置管理](ios-enroll.md)
+- [設定 Windows 裝置管理](windows-enroll.md)
+- [設定 Android 裝置管理](android-enroll.md) - 不需要其他步驟
 
 您也可以確認使用者裝置上的時間與日期是否設定正確：
 
@@ -236,15 +236,15 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
 
-1.  在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始]   > [執行]   > **certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
-2.  展開 [個人]  並選擇 [憑證]  。
-3.  尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
-4.  選擇 [憑證路徑]  索引標籤來查看憑證的父憑證。
-5.  在每個父憑證上，選擇 [檢視憑證]  。
-6.  選擇 [詳細資料]   > [複製到檔案]  。
-7.  遵循精靈的提示，將父憑證的公開金鑰匯出或儲存到您選擇的檔案位置。
-8.  以滑鼠右鍵按一下 [憑證]   > [所有工作]   > [匯入]  。
-9.  遵循精靈的提示，將父憑證匯入至 [本機電腦]\[個人]\[憑證]  。
+1. 在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始]   > [執行]   > **certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
+2. 展開 [個人]  並選擇 [憑證]  。
+3. 尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
+4. 選擇 [憑證路徑]  索引標籤來查看憑證的父憑證。
+5. 在每個父憑證上，選擇 [檢視憑證]  。
+6. 選擇 [詳細資料]   > [複製到檔案]  。
+7. 遵循精靈的提示，將父憑證的公開金鑰匯出或儲存到您選擇的檔案位置。
+8. 以滑鼠右鍵按一下 [憑證]   > [所有工作]   > [匯入]  。
+9. 遵循精靈的提示，將父憑證匯入至 [本機電腦]\[個人]\[憑證]  。
 10. 重新啟動 AD FS 伺服器。
 11. 在您的所有 AD FS 和 Proxy 伺服器上重複上述步驟。
 

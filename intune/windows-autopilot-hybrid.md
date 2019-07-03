@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389327"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494539"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
@@ -163,7 +163,7 @@ ms.locfileid: "67389327"
 
 ### <a name="register-devices-from-an-oem"></a>從 OEM 註冊裝置
 
-如果您要購買新的裝置，某些 OEM 可以為您註冊裝置。 如需詳細資訊，請參閱 [Windows Autopilot 頁面](http://aka.ms/WindowsAutopilot)。
+如果您要購買新的裝置，某些 OEM 可以為您註冊裝置。 如需詳細資訊，請參閱 [Windows Autopilot 頁面](https://aka.ms/WindowsAutopilot)。
 
 當您的 Autopilot 裝置「已登錄」  但尚未向 Intune 註冊時，這些裝置會顯示在三個位置 (其名稱會設定為其序號)：
 - Azure 入口網站 Intune 中的 [Autopilot 裝置]  窗格。 選取 [裝置註冊]   > [Windows 註冊]   > [裝置]  。

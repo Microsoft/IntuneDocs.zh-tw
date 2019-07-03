@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050344"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530768"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入門：建立並指派應用程式保護原則
 
@@ -42,21 +42,21 @@ ms.locfileid: "66050344"
 
 使用下列步驟來建立應用程式防護原則：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式] > [應用程式防護原則] > [建立原則]。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式防護原則]   > [建立原則]  。 
 2. 輸入下列詳細資料： 
 
-    - **名稱**：Windows 10 內容保護
-    - **描述**：與此原則建立關聯的使用者將無法在已指派應用程式與裝置上其他非受控應用程式之間剪下、複製或貼上任何內容。
+    - **名稱**：Windows 10 內容保護 
+    - **描述**：與此原則建立關聯的使用者將無法在已指派應用程式與裝置上其他非受控應用程式之間剪下、複製或貼上任何內容。 
     - **平台**：*Windows 10*
-    - [註冊狀態]：已註冊
+    - [註冊狀態]  ：已註冊 
 
-3. 選取 [受保護的應用程式] 以選擇必須遵守此原則的應用程式。
-4. 按一下 [新增應用程式]。
-5. 在 [建議的應用程式] 下，選取 [Word Mobile]。
-5. 按一下 [確定] > [確定]。 
-6. 選取 [Required settings] \(所需的設定\) 以設定應用程式。
-7. 按一下 [Allow Overrides] \(允許覆寫\) 以設定 Windows 資訊保護模式。 選取此選項會防止企業資料離開受保護的應用程式。
-8. 按一下 [確定] > [建立]。
+3. 選取 [受保護的應用程式]  以選擇必須遵守此原則的應用程式。
+4. 按一下 [新增應用程式]  。
+5. 在 [建議的應用程式]  下，選取 [Word Mobile]  。
+5. 按一下 [確定]   > [確定]  。 
+6. 選取 [Required settings] \(所需的設定\)  以設定應用程式。
+7. 按一下 [Allow Overrides] \(允許覆寫\)  以設定 Windows 資訊保護模式。 選取此選項會防止企業資料離開受保護的應用程式。
+8. 按一下 [確定]   > [建立]  。
 
 您現在會在 Intune 中看到應用程式防護原則。
 
@@ -66,12 +66,12 @@ ms.locfileid: "66050344"
 
 使用下列步驟來指派應用程式防護原則：
 
-1.  在 [Intune](https://aka.ms/intuneportal) 中，選取 [Intune] > [用戶端應用程式] > [應用程式防護原則]。 
-2.  選取您稍早建立的應用程式防護原則。 在此快速入門中，原則為 **Windows 10 內容保護**。
-3.  選取 [指派]。
-4.  在 [包含] 索引標籤中，按一下 [選取要包含的群組]。
-5.  選取 **Contoso Testers** 作為要包含的群組。
-6.  按一下 [選取] > [儲存]。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [Intune]   > [用戶端應用程式]   > [應用程式防護原則]  。 
+2. 選取您稍早建立的應用程式防護原則。 在此快速入門中，原則為 **Windows 10 內容保護**。
+3. 選取 [指派]  。
+4. 在 [包含]  索引標籤中，按一下 [選取要包含的群組]  。
+5. 選取 **Contoso Testers** 作為要包含的群組。
+6. 按一下 [選取]   > [儲存]  。 
 
 您現在已指派應用程式防護原則。
 

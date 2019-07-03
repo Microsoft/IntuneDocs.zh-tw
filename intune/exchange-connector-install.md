@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045690"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529772"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中設定 Intune 內部部署 Exchange 連接器
 本文中資訊可協助您安裝適用於 Intune 的 Exchange Active Sync 內部部署連接器，並在安裝後進行監視。  您可以使用 Intune 內部部署 Exchange 連接器，搭配您的[條件式存取原則來允許或封鎖存取 Exchange 內部部署信箱](conditional-access-exchange-create.md)。 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044156"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528250"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
@@ -38,9 +38,9 @@ ms.locfileid: "67044156"
 您可以同時使用內建角色和自訂角色。 內建角色涵蓋一些常見的 Intune 案例。 您可以使用所需的一組確切權限[建立自己的自訂角色](create-custom-role.md)。 有數個 Azure Active Directory 角色具備 Intune 的權限。
 若要查看角色，請選擇 [Intune]   > [角色]   > [所有角色]  > 選擇角色。 您會看到下列頁面：
 
--   **屬性**：角色的名稱、描述、類型、指派和範圍標籤。 
--   **權限**：列出定義角色具有哪些權限的完整切換集。
--   **指派**：定義哪些使用者可以存取哪些使用者/裝置的[角色指派]( assign-role.md)清單。 一個角色可以有多個指派，而一個使用者可以位於多個指派中。
+- **屬性**：角色的名稱、描述、類型、指派和範圍標籤。 
+- **權限**：列出定義角色具有哪些權限的完整切換集。
+- **指派**：定義哪些使用者可以存取哪些使用者/裝置的[角色指派]( assign-role.md)清單。 一個角色可以有多個指派，而一個使用者可以位於多個指派中。
 
 ### <a name="built-in-roles"></a>內建角色
 您可以將內建角色指派給群組，而無須進行進一步的設定。 您無法刪除或編輯內建角色的名稱、描述、類型或權限。 如需每個內建角色權限的完整清單，請參閱 [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Intune RBAC 資料表)。
@@ -84,10 +84,10 @@ ms.locfileid: "67044156"
 您可以將自訂角色和內建角色指派給您的使用者。 使用者必須具備 Intune 授權，才能獲指派 Intune 角色。
 若要查看角色指派，請選擇 [Intune]   > [角色]   > [所有角色]  > 選擇角色 > 選擇指派。 您會看到下列頁面：
 
--   **屬性**：指派的名稱、描述、角色、成員、範圍和標籤。
--   **成員**：已列出群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
--   **範圍 (群組)** ：這些群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
--   **[範圍 (標籤)](scope-tags.md)** ：[成員] 中使用者可以查看具有相同範圍標籤的資源。
+- **屬性**：指派的名稱、描述、角色、成員、範圍和標籤。
+- **成員**：已列出群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
+- **範圍 (群組)** ：這些群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
+- **[範圍 (標籤)](scope-tags.md)** ：[成員] 中使用者可以查看具有相同範圍標籤的資源。
 
 ### <a name="multiple-role-assignments"></a>多個角色指派
 如果使用者有多個角色指派，則這些角色指派的權限會延伸到不同物件，如下所示：

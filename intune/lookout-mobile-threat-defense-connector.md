@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045698"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529806"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Lookout Mobile Endpoint Security 連接器與 Intune
 
@@ -98,7 +98,7 @@ Intune 中的合規性原則包含根據 Lookout 風險評估的 Lookout Mobile 
 
 ## <a name="next-steps"></a>後續步驟
 以下是為了實作此解決方案所必須執行的主要步驟：
-1.  [設定 Lookout 整合](lookout-mtd-connector-integration.md)
-2.  [在 Intune 中啟用 Mobile Endpoint Security](mtd-connector-enable.md)
-3.  [新增並指派 Lookout for Work 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [設定 Lookout 裝置合規性原則](mtd-device-compliance-policy-create.md)
+1. [設定 Lookout 整合](lookout-mtd-connector-integration.md)
+2. [在 Intune 中啟用 Mobile Endpoint Security](mtd-connector-enable.md)
+3. [新增並指派 Lookout for Work 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [設定 Lookout 裝置合規性原則](mtd-device-compliance-policy-create.md)

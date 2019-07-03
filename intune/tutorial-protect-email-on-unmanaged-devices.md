@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046280"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528677"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
@@ -74,7 +74,7 @@ ms.locfileid: "67046280"
 
     選取 [確定]  返回 [設定] 窗格。  
 
-7.  在 [設定] 窗格中選取[確定]  ，然後在 [建立原則] 窗格中選取 [建立]  。
+7. 在 [設定] 窗格中選取[確定]  ，然後在 [建立原則] 窗格中選取 [建立]  。
 
 隨即會建立適用於 Outlook 的應用程式保護原則。 接下來，您將設定條件式存取來要求裝置使用 Outlook 應用程式。
 
@@ -188,5 +188,5 @@ ms.locfileid: "67046280"
 4. 選取 [條件式存取]   > [原則]  。  
 5. 在 [原則名稱]  清單中，選取每個測試原則的操作功能表 ([...]  )，然後選取 [刪除]  。 選取 [是]  確認。  
 
- ## <a name="next-steps"></a>後續步驟  
+## <a name="next-steps"></a>後續步驟  
 在本教學課程中，您已建立應用程式保護原則來限制使用者能夠使用 Outlook 應用程式執行的動作，並已建立條件式存取原則來要求 Outlook 應用程式，以及針對新式驗證用戶端要求 MFA。 若要了解如何搭配條件式存取使用 Intune 來保護其他應用程式和服務，請參閱[設定條件式存取](conditional-access.md)。

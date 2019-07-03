@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041856"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529753"
 ---
 # <a name="incomplete-user-enrollments-report"></a>未完成的使用者註冊報告
 
 此報告會告訴您，使用者在公司入口網站註冊程序的哪個地方未完成註冊程序。
 
-若要查看報告，請選擇 [Intune] > [裝置註冊] > [未完成的使用者註冊]。
+若要查看報告，請選擇 [Intune]   > [裝置註冊]   > [未完成的使用者註冊]  。
 
 您可以使用此資訊來更新上線文件，以協助使用者完成註冊。 例如，如果許多使用者在使用條款處放棄，您可以調查該區域，並讓使用者更容易了解。
 
@@ -35,9 +35,9 @@ ms.locfileid: "66041856"
 
 當使用者執行下列任何動作時，即視為未完成的註冊：
 
--   明確選擇終止註冊的動作
--   在註冊期間關閉公司入口網站
--   在註冊區段之間花費超過 30 分鐘
+- 明確選擇終止註冊的動作
+- 在註冊期間關閉公司入口網站
+- 在註冊區段之間花費超過 30 分鐘
 
 如果使用者選擇停止註冊並重新啟動多次，則會顯示為多次嘗試和多次未完成的註冊。 如果使用者在不同的註冊畫面之間等候 30 分鐘，則會視為多次未完成的註冊。
 
@@ -47,24 +47,24 @@ ms.locfileid: "66041856"
 
 報告顯示過去兩週的資料，但您可以篩選報告以顯示最多為過去 30 天的任何期間。
 
-您可以選擇 [篩選] 來篩選日期範圍、作業系統和註冊區段。
+您可以選擇 [篩選]  來篩選日期範圍、作業系統和註冊區段。
 
 ### <a name="number-and-percentage-tiles"></a>數目和百分比磚
 
 在報告頂端，您可以看到未完成的註冊數目和百分比 (相對於所有註冊)。
 
--   起始的註冊：嘗試的註冊數目。
--   未完成的註冊：已嘗試但未能產生完整註冊且符合規範裝置的註冊數目。
--   未完成的比率：嘗試但放棄的註冊百分比 (放棄的註冊/起始的註冊)。
+- 起始的註冊：嘗試的註冊數目。
+- 未完成的註冊：已嘗試但未能產生完整註冊且符合規範裝置的註冊數目。
+- 未完成的比率：嘗試但放棄的註冊百分比 (放棄的註冊/起始的註冊)。
 
 ### <a name="line-graph"></a>折線圖
 
 折線圖會顯示四個核心註冊區段各自的每日未完成註冊數目：
 
--   安裝程式檢查清單
--   平台畫面
--   使用條款
--   合規性/啟用
+- 安裝程式檢查清單
+- 平台畫面
+- 使用條款
+- 合規性/啟用
 
 ### <a name="user-abandonment-actions"></a>使用者放棄動作
 
@@ -77,9 +77,9 @@ ms.locfileid: "66041856"
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | 提示在公司入口網站中開啟頁面 | iOS/Android | **取消** |
 | EnrollmentWrapUp | 註冊裝置畫面，直到完成**載入公司資源** | iOS/Android | 需要 > 30 分鐘 |
-| DeviceCategory | 裝置類別選取 (如果管理員已設定)，直到按一下 [完成] | iOS/Android | 需要 > 30 分鐘 |
+| DeviceCategory | 裝置類別選取 (如果管理員已設定)，直到按一下 [完成]  | iOS/Android | 需要 > 30 分鐘 |
 | PreEnrollmentWizard | 設定存取畫面 (若已啟動註冊但返回至設定存取) | iOS/Android| **延期** |
-| PreEnrollmentWizard | 設定存取畫面，直到按一下 [下一步是什麼] 畫面上的 [下一步] | iOS/Android | 需要 > 30 分鐘 |
+| PreEnrollmentWizard | 設定存取畫面，直到按一下 [下一步是什麼]  畫面上的 [下一步]  | iOS/Android | 需要 > 30 分鐘 |
 
 #### <a name="platform-screens-section"></a>平台畫面區段
 

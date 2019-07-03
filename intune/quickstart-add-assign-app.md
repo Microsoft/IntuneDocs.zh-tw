@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041340"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528302"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
@@ -44,21 +44,21 @@ ms.locfileid: "66041340"
 
 使用下列步驟將應用程式新增至 Intune：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式] > [應用程式] > [新增]。 
-2. 在 [應用程式類型] 下拉式方塊的 [Office 365 套件] 區段中，選取 **Windows 10**。
-3. 選取 [設定應用程式套件] 以選取要指派給 Intune 使用者的 Office 應用程式。
-4. 按一下 [確定] 以接受預設選取的應用程式。
-5. 選取 [應用程式套件資訊]。
-6. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件名稱]。
-7. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件描述]。
-8. 按一下 [將此顯示為公司入口網站中的精選應用程式] 旁的 [是]。
-9. 按一下 [確定]。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。 
+2. 在 [應用程式類型]  下拉式方塊的 [Office 365 套件]  區段中，選取 **Windows 10**。
+3. 選取 [設定應用程式套件]  以選取要指派給 Intune 使用者的 Office 應用程式。
+4. 按一下 [確定]  以接受預設選取的應用程式。
+5. 選取 [應用程式套件資訊]  。
+6. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件名稱]  。
+7. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件描述]  。
+8. 按一下 [將此顯示為公司入口網站中的精選應用程式]  旁的 [是]  。
+9. 按一下 [確定]  。
 
     ![新增應用程式資訊的螢幕擷取畫面](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. 選取 [應用程式套件設定]。
-9. 在 [更新通道] 下拉式方塊中，選取 [每月]。
-10. 按一下 [確定] > [新增]。
+8. 選取 [應用程式套件設定]  。
+9. 在 [更新通道]  下拉式方塊中，選取 [每月]  。
+10. 按一下 [確定]   > [新增]  。
 
 ## <a name="assign-the-app-to-a-group"></a>將應用程式指派給群組
 
@@ -68,12 +68,12 @@ ms.locfileid: "66041340"
 > 此快速入門是以此系列中的前幾個快速入門為基礎所建置的。 如需詳細資料，請參閱此快速入門中的[必要條件](quickstart-add-assign-app.md#prerequisites)。
 
 使用下列步驟將應用程式指派給群組：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式] > [應用程式]。 
-2. 選取您要指派給群組的應用程式。   
-3. 按一下 [指派] > [新增群組] 以顯示 [新增群組] 刀鋒視窗。
-4. 在 [指派類型] 下拉式方塊中，選取 [適用於已註冊的裝置]。 
-5. 按一下 [包含的群組] > [選取要包含的群組] > [Contoso Testers]。
-6. 按一下 [選取] > [確定] > [確定] > [儲存] 以指派群組。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式]  。 
+2. 選取您要指派給群組的應用程式。
+3. 按一下 [指派]   > [新增群組]  以顯示 [新增群組]  刀鋒視窗。
+4. 在 [指派類型]  下拉式方塊中，選取 [適用於已註冊的裝置]  。 
+5. 按一下 [包含的群組]   > [選取要包含的群組]   > [Contoso Testers]  。
+6. 按一下 [選取]   > [確定]   > [確定]   > [儲存]  以指派群組。
 
 您現在已將應用程式指派給 **Contoso Testers** 群組。
 
@@ -86,14 +86,14 @@ ms.locfileid: "66041340"
     > [!IMPORTANT]
     > 該裝置必須已[向 Intune 註冊](quickstart-enroll-windows-device.md)。 此外，您必須使用指派給應用程式之群組中內含的帳戶來登入裝置。
 
-2. 從 [開始] 功能表開啟 [Microsoft Store]。 然後，尋找並安裝 [公司入口網站] 應用程式。
-3. 啟動 [公司入口網站] 應用程式。
+2. 從 [開始]  功能表開啟 [Microsoft Store]  。 然後，尋找並安裝 [公司入口網站]  應用程式。
+3. 啟動 [公司入口網站]  應用程式。
 4. 按一下您使用 Intune 新增的應用程式。 在此快速入門中，您已新增 **Microsoft Office 365 應用程式套件**應用程式。
 
     > [!NOTE]
-    > 如果您未成功指派任何應用程式給 Intune 使用者，您將會看到下列訊息：「您的 IT 系統管理員並未提供任何應用程式給您。」
+    > 如果您未成功指派任何應用程式給 Intune 使用者，您將會看到下列訊息：「您的 IT 系統管理員並未提供任何應用程式給您。」 
 
-5. 按一下 [安裝]。
+5. 按一下 [安裝]  。
 
 如果企業需要由您指派公司入口網站應用程式給員工，您也可以直接透過 Intune 手動指派 Windows 10 公司入口網站應用程式。 如需詳細資訊，請參閱[使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](store-apps-company-portal-app.md)。
 

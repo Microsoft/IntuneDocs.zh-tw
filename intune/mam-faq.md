@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506890"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494272"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
 
@@ -37,9 +37,9 @@ MAM 可保護應用程式內組織的資料。 透過不需註冊的 MAM (MAM-WE
 
 **MAM 支援哪些裝置組態？**<br></br>
 Intune MAM 支援兩個組態︰
-- **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com)。
+- **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。
 
-- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com)。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
+- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
 
 
 ## <a name="app-protection-policies"></a>應用程式防護原則
@@ -86,7 +86,7 @@ Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 AD
 - 終端使用者必須具有連結到其 Azure Active Directory 帳戶的 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 信箱和授權。
 
   >[!NOTE]
-  > Outlook 行動應用程式目前僅針對 Microsoft Exchange Online 和[具有混合式新式驗證的 Exchange Server](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) 支援「Intune 應用程式防護」，而不支援「Office 365 專用」中的 Exchange。
+  > Outlook 行動應用程式目前僅針對 Microsoft Exchange Online 和[具有混合式新式驗證的 Exchange Server](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) 支援「Intune 應用程式防護」，而不支援「Office 365 專用」中的 Exchange。
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046488"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512261"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>移轉至 Microsoft Intune 時設定裝置合規性和應用程式管理原則
 
@@ -59,7 +59,7 @@ ms.locfileid: "66046488"
 
 您必須建立裝置組態設定檔以強制執行裝置層級設定，例如︰停用相機、App Store、設定單一應用程式模式及主畫面等。 了解[裝置設定檔](device-profiles.md)。
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>直接匯入 iOS 組態設定檔 (選用)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>直接匯入 iOS 組態設定檔 (選用)
 
 -   **Apple Configurator iOS 設定檔 (iOS 7.1 和更新版本)：** 如果您現有的 MDM 解決方案使用 Apple Configurator 設定檔 (.mobileconfig 檔案)，Intune 可直接將它們匯入為自訂組態原則。
 

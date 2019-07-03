@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045318"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530672"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -81,7 +81,7 @@ Azure 入口網站中的 [Intune 應用程式防護]  刀鋒視窗，可讓系�
 3. 提供原則的名稱。
 
 4. 在 [指派]  區段下，選擇 [使用者和群組]  ，以新的條件式存取原則為目標。
-    
+
     ![Intune 與 Azure 入口網站之間的使用者群組 UI 比較影像](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
