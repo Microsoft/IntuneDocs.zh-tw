@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412712"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558553"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -43,10 +43,10 @@ ms.locfileid: "66412712"
 1. 登入您租用戶的 Azure 入口網站。 選擇 [Azure Active Directory]   > [應用程式註冊]  ，以開啟 [應用程式註冊]  窗格。
 2. 選取 [新增應用程式註冊]  。
 3. 鍵入應用程式詳細資料。
-    1.  在 [名稱]  中，鍵入易記名稱 (例如 Intune 資料倉儲用戶端)。
-    2.  在 [應用程式類型]  中，選取 [原生]  。
-    3.  在 [登入 URL]  中，鍵入 URL。 [登入 URL] 將取決於特定案例；不過，如果您計劃使用 Postman，請鍵入 `https://www.getpostman.com/oauth2/callback`。 向 Azure AD 進行驗證時，您將使用回呼進行用戶端驗證步驟。
-4.  選取 [建立]  。
+    1. 在 [名稱]  中，鍵入易記名稱 (例如 Intune 資料倉儲用戶端)。
+    2. 在 [應用程式類型]  中，選取 [原生]  。
+    3. 在 [登入 URL]  中，鍵入 URL。 [登入 URL] 將取決於特定案例；不過，如果您計劃使用 Postman，請鍵入 `https://www.getpostman.com/oauth2/callback`。 向 Azure AD 進行驗證時，您將使用回呼進行用戶端驗證步驟。
+4. 選取 [建立]  。
 
      ![Intune 資料倉儲用戶端應用程式](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ ms.locfileid: "66412712"
 
 您現在已在 Azure 中定義應用程式。 將存取權從原生應用程式授與 Microsoft Intune API。
 
-1.  選取原生應用程式。 您已將應用程式命名為 **Intune 資料倉儲用戶端**這類名稱。
-2.  在 [設定]  窗格選取 [必要權限] 
-3.  在 [必要權限]  窗格中選取 [新增]  。
-4.  選取 [選取 API]  。
-5.  搜尋 Web 應用程式名稱。 它會命名為 **Microsoft Intune API**。
-6.  選取清單中的應用程式。
-7.  選取 [選取]  。
-8.  核取 [委派的權限]  方塊，以新增 [Get data warehouse information from Microsoft Intune]\(從 Microsoft Intune 取得資料倉儲資訊)  。
+1. 選取原生應用程式。 您已將應用程式命名為 **Intune 資料倉儲用戶端**這類名稱。
+2. 在 [設定]  窗格選取 [必要權限] 
+3. 在 [必要權限]  窗格中選取 [新增]  。
+4. 選取 [選取 API]  。
+5. 搜尋 Web 應用程式名稱。 它會命名為 **Microsoft Intune API**。
+6. 選取清單中的應用程式。
+7. 選取 [選取]  。
+8. 核取 [委派的權限]  方塊，以新增 [Get data warehouse information from Microsoft Intune]\(從 Microsoft Intune 取得資料倉儲資訊)  。
 
     ![啟用存取 - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
-9.  選取 [選取]  。
-10.  選取 [完成]  。
-11.  此外，也可在 [必要權限] 窗格中選取 [授與權限]  。 這會授與目前目錄中所有帳戶的存取權。 這會防止針對租用戶中的每位使用者顯示同意對話方塊。 如需詳細資訊，請參閱[整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
-12.  選取 [是]  。
+9. 選取 [選取]  。
+10. 選取 [完成]  。
+11. 此外，也可在 [必要權限] 窗格中選取 [授與權限]  。 這會授與目前目錄中所有帳戶的存取權。 這會防止針對租用戶中的每位使用者顯示同意對話方塊。 如需詳細資訊，請參閱[整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
+12. 選取 [是]  。
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>使用 Postman 從 Microsoft Intune API 取得資料
 
@@ -110,19 +110,19 @@ ms.locfileid: "66412712"
 
 #### <a name="add-the-information-used-to-request-the-token"></a>新增用來要求權杖的資訊
 
-1.  如果您尚未安裝 Postman，請進行下載。 若要下載 Postman，請參閱 [www.getpostman](https://www.getpostman.com)。
-2.  開啟 Postman。 選擇 HTTP 作業 **GET**。
-3.  將端點 URL 貼入位址中。 它應該看起來像這樣：  
+1. 如果您尚未安裝 Postman，請進行下載。 若要下載 Postman，請參閱 [www.getpostman](https://www.getpostman.com)。
+2. 開啟 Postman。 選擇 HTTP 作業 **GET**。
+3. 將端點 URL 貼入位址中。 它應該看起來像這樣：  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  選擇 [授權]  索引標籤，然後從 [類型]  清單中選取 [OAuth 2.0]  。
-5.  選取 [取得新存取權杖]  。
-6.  確認您已經在 Azure 中將回呼 URL 新增至應用程式。 回呼 URL 是 `https://www.getpostman.com/oauth2/callback`。
-7.  在 [權杖名稱]  中，鍵入 [持有人]。
-8.  新增 [驗證 URL]  。 它應該看起來像這樣：  
+4. 選擇 [授權]  索引標籤，然後從 [類型]  清單中選取 [OAuth 2.0]  。
+5. 選取 [取得新存取權杖]  。
+6. 確認您已經在 Azure 中將回呼 URL 新增至應用程式。 回呼 URL 是 `https://www.getpostman.com/oauth2/callback`。
+7. 在 [權杖名稱]  中，鍵入 [持有人]。
+8. 新增 [驗證 URL]  。 它應該看起來像這樣：  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  新增 [存取權杖 URL]  。 它應該看起來像這樣：  
+9. 新增 [存取權杖 URL]  。 它應該看起來像這樣：  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ ms.locfileid: "66412712"
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>使用 Postman 將呼叫傳送至端點
 
-1.  選取 [傳送]  。
-2.  傳回的資料會出現在 Postman 回應主體中。
+1. 選取 [傳送]  。
+2. 傳回的資料會出現在 Postman 回應主體中。
 
     ![Postman 用戶端狀態等於 [200 確定]](./media/reports-postman_200OK.png)
 
@@ -155,7 +155,7 @@ ms.locfileid: "66412712"
 
 1. 開啟 [Microsoft Visual Studio]  。
 2. 選擇 [檔案]   > [新增專案]  。 展開 [Visual C#]  ，然後選擇 [主控台應用程式 (.NET Framework)]  。
-3. 將專案命名為 ` IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後選取 [確定]  。
+3. 將專案命名為 `IntuneDataWarehouseSamples`，並瀏覽至您想要儲存專案的位置，然後選取 [確定]  。
 4. 以滑鼠右鍵按一下方案總管中的方案名稱，然後選取 [管理方案的 NuGet 套件]  。 選取 [瀏覽]  ，然後在搜尋方塊中鍵入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
 5. 選擇套件，並在 [Manage Packages for Your Solution] (管理解決方案的套件) 下選取 **IntuneDataWarehouseSamples** 專案，然後選取 [安裝]  。
 6. 選取 [我接受]  ，以接受 NuGet 套件授權。

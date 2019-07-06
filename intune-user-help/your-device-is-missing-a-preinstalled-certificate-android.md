@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e21fa0285c769f98eada3fd4cb31f3fe82fb8bb9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 119e3399067297764abb8a14d2f5861cba33e408
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841806"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529289"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>您的 Android 裝置遺失通常已預先安裝於手機上的憑證
 
@@ -35,11 +35,11 @@ ms.locfileid: "55841806"
 
 1. 尋找並下載 __Baltimore CyberTrust Root__ 憑證。 您也可以直接從[這裡](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt)下載憑證。
 
-2. 從畫面頂端向下拖曳以顯示最近的通知清單，然後點選 [BaltimoreCyberTrustRoot.crt]。
+2. 從畫面頂端向下拖曳以顯示最近的通知清單，然後點選 [BaltimoreCyberTrustRoot.crt]  。
 
-3. 裝置會要求您 [為憑證命名]。 請勿變更所顯示的預設憑證名稱。
+3. 裝置會要求您 [為憑證命名]  。 請勿變更所顯示的預設憑證名稱。
 
-4. 請確認 [認證使用] 設為 [用於 VPN 和應用程式]，然後點選 [確定]。
+4. 請確認 [認證使用]  設為 [用於 VPN 和應用程式]  ，然後點選 [確定]  。
 
     ![screenshot-certificate-name-dialog-showing-baltimore-certificate-name](./media/andr-cert_install-2-add_cert_name.png)
 

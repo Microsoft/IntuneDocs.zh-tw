@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497477"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545496"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 註冊 Windows Phone 8.1 裝置  
 
@@ -34,45 +34,45 @@ ms.locfileid: "61497477"
 ## <a name="enroll-through-company-portal"></a>透過公司入口網站註冊  
 如果您可以從 Microsoft Store 安裝公司入口網站應用程式，請遵循下列步驟。 
 
-1.  點選 [開始] > [市集]。  
+1. 點選 [開始]   > [市集]  。  
 
-2.  點選 [搜尋]，然後鍵入**公司入口網站**。  
+2. 點選 [搜尋]  ，然後鍵入**公司入口網站**。  
 
-3.  在結果清單中，點選 [公司入口網站]。  
+3. 在結果清單中，點選 [公司入口網站]  。  
 
 
     ![公司入口網站搜尋結果](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  點選 [公司入口網站] &gt; [安裝]。  
+4. 點選 [公司入口網站]  &gt; [安裝]  。  
 
 
     ![安裝公司入口網站](./media/WP81-2-CP-install-v2.png)  
 
 註冊裝置：  
 
-1.  在裝置上，開啟 [Microsoft Intune 公司入口網站] 應用程式。  
+1. 在裝置上，開啟 [Microsoft Intune 公司入口網站]  應用程式。  
 
 
-2.  提供您的認證。 如果適用的話，系統可能會要求您接受貴公司的條款和條件。  
+2. 提供您的認證。 如果適用的話，系統可能會要求您接受貴公司的條款和條件。  
 
-3.  滑到 [我的裝置]。  
+3. 滑到 [我的裝置]  。  
 
-4.  選取 [點選以註冊或指定此裝置]。  
+4. 選取 [點選以註冊或指定此裝置]  。  
 
 
     ![點選以註冊或指定此裝置畫面](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  點選 [註冊此裝置]。  
+5. 點選 [註冊此裝置]  。  
 
 
     ![註冊此裝置畫面](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  點選 [新增帳戶]。  
+6. 點選 [新增帳戶]  。  
 
 
     ![工作場所設定畫面](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  依要求輸入其他資訊，然後點選 [登入] 完成註冊。 現在應該可以在 [設定] &gt; [工作場所] 頁面中看到您的工作場所帳戶。  
+7. 依要求輸入其他資訊，然後點選 [登入]  完成註冊。 現在應該可以在 [設定]  &gt; [工作場所]  頁面中看到您的工作場所帳戶。  
 
 
     ![已新增帳戶畫面](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ ms.locfileid: "61497477"
 ## <a name="enroll-through-settings-app"></a>透過 [設定] 應用程式註冊  
 如果您無法從 Windows Phone 裝置存取 Microsoft Store，或沒有 Microsoft 帳戶，請遵循下列步驟。
 
-1.  點選 [設定] &gt; [工作場所]。  
+1. 點選 [設定]  &gt; [工作場所]  。  
 
-2.  點選 [新增帳戶]，然後使用工作帳戶登入。  
+2. 點選 [新增帳戶]  ，然後使用工作帳戶登入。  
 
-3.  依要求輸入其他資訊，然後點選 [登入] 完成註冊。  
+3. 依要求輸入其他資訊，然後點選 [登入]  完成註冊。  
 
-4.  如果提示您安裝公司應用程式或集線器，請確定核取相關方塊，然後點選 [完成]。  
+4. 如果提示您安裝公司應用程式或集線器，請確定核取相關方塊，然後點選 [完成]  。  
 
 如果您公司的支援人員已設定在註冊期間安裝公司入口網站，您的應用程式清單就會顯示公司入口網站。  
 

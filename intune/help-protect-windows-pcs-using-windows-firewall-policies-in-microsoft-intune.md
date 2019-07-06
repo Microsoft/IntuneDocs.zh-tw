@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403021"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572524"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
@@ -43,19 +43,19 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 > [!NOTE]
 > 如果設定以 Microsoft Intune 原則及群組原則管理同一台電腦的相同設定，群組原則設定會覆寫 Microsoft Intune 原則設定。 如需如何避免 Intune 原則與群組原則產生衝突的詳細資訊，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果您想將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800)。
+> 如果您想要將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800)。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火牆，請確定您所管理的電腦上已啟用下列兩項服務：
 >
-> -   Windows 防火牆
-> -   IPsec 原則代理
+> - Windows 防火牆
+> - IPsec 原則代理
 
 ## <a name="configure-a-windows-firewall-policy"></a>設定 Windows 防火牆原則
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [原則]  &gt; [新增原則]  。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/) 中，選擇 [原則]  &gt; [新增原則]  。
 
-2.  設定並部署 **Windows 防火牆設定** 原則。 您可以使用建議的設定或自訂設定。 如需如何建立和部署原則的詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
+2. 設定並部署 **Windows 防火牆設定** 原則。 您可以使用建議的設定或自訂設定。 如需如何建立和部署原則的詳細資訊，請參閱[使用 Microsoft Intune 電腦用戶端的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     下節列出您可以在原則中設定的值，以及在不自訂原則的情況下將使用的預設值。
 
@@ -84,7 +84,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 所有這些設定的預設值都是 [是]  ，亦即最安全的值。
 
 > [!IMPORTANT]
-> 如果您環境中包含執行 Window Vista 但未安裝 Service Pack 的電腦，則您必須安裝與 Miscrosoft 知識庫中[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 的相關更新，或是停用部署到該電腦之原則中的 [封鎖所有連入連線]  原則設定。
+> 如果您環境中所包含的受管理電腦，執行未安裝 Service Pack 的 Windows Vista ，則您必須安裝與 Microsoft 知識庫[文章編號 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相關聯的更新，或者停用部署至那些電腦之原則中的 **[阻擋所有連入連線]** 原則設定。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>當 Windows 防火牆阻擋新程式時通知使用者
 

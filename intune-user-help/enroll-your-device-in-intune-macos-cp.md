@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196772"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545737"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -56,41 +56,41 @@ ms.locfileid: "66196772"
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. 移至頁面左上角，然後按一下 [功能表] > [裝置]。  
+3. 移至頁面左上角，然後按一下 [功能表]   > [裝置]  。  
 
-4. [裝置] 頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
-    * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\)
+4. [裝置]  頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
+    * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\) 
     * 如果您沒有任何裝置，橫幅會顯示： **[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
 
      ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
-5.  完成符合您目前在公司入口網站中看到訊息的下列步驟。  
-    * 如果是第一次新增裝置，系統會提示您將公司入口網站應用程式下載到裝置。 按一下 [下載] 繼續。  
+5. 完成符合您目前在公司入口網站中看到訊息的下列步驟。  
+    * 如果是第一次新增裝置，系統會提示您將公司入口網站應用程式下載到裝置。 按一下 [下載]  繼續。  
 
          ![下載 macOS 公司入口網站應用程式提示畫面的範例螢幕擷取畫面。 使用者可以選擇按一下提示畫面左下方的藍色 [下載] 按鈕，或右下方的灰色 [取消] 按鈕。](./media/CP-enroll-download-macOS-1808.png)  
 
-    * 如果您已有受控 macOS 裝置，您會收到目前受控 macOS 裝置清單的提示。 選取 [My device isn't listed here] \(我的裝置未列於此處\) > [下載]，將公司入口網站應用程式下載到您要新增的裝置。  
+    * 如果您已有受控 macOS 裝置，您會收到目前受控 macOS 裝置清單的提示。 選取 [My device isn't listed here] \(我的裝置未列於此處\)   > [下載]  ，將公司入口網站應用程式下載到您要新增的裝置。  
 
          ![下載 macOS 公司入口網站應用程式提示畫面的範例螢幕擷取畫面。 使用者可以選擇選取 [My device isn't listed here] \(我的裝置未列於此處\)，或頁面中間的特定裝置。 提示畫面左下方會顯示藍色 [下載] 按鈕，右下方會顯示灰色 [取消] 按鈕](./media/cp-mac-os-device-isnt-here-1808.png)  
 
 6. 您的裝置將確認可安全地開啟安裝檔案 **CompanyPortal.pkg**。 完成之後，請開啟安裝程式並完成安裝。  
 
-7. 安裝程式完成後，移至 [啟動控制板]，然後開啟 [公司入口網站]。  
+7. 安裝程式完成後，移至 [啟動控制板]  ，然後開啟 [公司入口網站]  。  
 
-8. 您的 macOS 裝置會提示您確認是否要開啟公司入口網站應用程式。 按一下 [開啟]。  
+8. 您的 macOS 裝置會提示您確認是否要開啟公司入口網站應用程式。 按一下 [開啟]  。  
 
    > [!TIP]
    > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請[關閉閘道管理員](https://support.apple.com/HT202491)。 然後開啟應用程式。
 
-9. 您在公司入口網站應用程式中看到的第一個畫面，會提示您 [登入]。 請使用您用來登入公司入口網站的相同公司或學校帳戶。
+9. 您在公司入口網站應用程式中看到的第一個畫面，會提示您 [登入]  。 請使用您用來登入公司入口網站的相同公司或學校帳戶。
 
-10. 公司入口網站會確認您的帳戶資訊，並顯示您的 [裝置註冊] 和 [裝置合規性] 狀態。 黃色三角形醒目提示您需要採取以保護學校或公司用 macOS 裝置的動作。 按一下 [開始] 開始註冊。 
+10. 公司入口網站會確認您的帳戶資訊，並顯示您的 [裝置註冊]  和 [裝置合規性]  狀態。 黃色三角形醒目提示您需要採取以保護學校或公司用 macOS 裝置的動作。 按一下 [開始]  開始註冊。 
 
 11. 如果出現提示，請鍵入您電腦的登入資訊。  
 
 註冊裝置管理可能需要幾分鐘的時間。 在此期間，您可以在裝置上執行其他事項。 完成公司存取設定之後，您會收到一則訊息，讓您知道已完成。  
 
 ## <a name="unverified-profiles"></a>未驗證的設定檔
-當您檢視 macOS 裝置的已安裝行動裝置管理 (MDM) 設定檔時，有些設定檔可能會顯示 [未驗證] 狀態。 只要 [管理設定檔] 顯示 [已驗證] 狀態，您就不需要擔心。  
+當您檢視 macOS 裝置的已安裝行動裝置管理 (MDM) 設定檔時，有些設定檔可能會顯示 [未驗證]  狀態。 只要 [管理設定檔]  顯示 [已驗證]  狀態，您就不需要擔心。  
 
 管理設定檔定義 MDM 通道連線。 只要管理設定檔經過驗證，透過該通道遞送至電腦的任何其他設定檔就會繼承管理設定檔的安全性特性。
 

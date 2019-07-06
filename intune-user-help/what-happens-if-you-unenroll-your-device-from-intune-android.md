@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837421"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546501"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>如果從 Intune 取消註冊 Android 裝置，會發生什麼情況？
 
 當您從 Intune 取消註冊 Android 裝置時：
 
--   您公司的支援人員不會再管理裝置。
+- 您公司的支援人員不會再管理裝置。
 
--   您會無法存取公司資料和資源。
+- 您會無法存取公司資料和資源。
 
--   您的裝置將不再顯示於公司入口網站。
+- 您的裝置將不再顯示於公司入口網站。
 
--   您無法再從公司入口網站安裝應用程式。
+- 您無法再從公司入口網站安裝應用程式。
 
--   您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
+- 您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。
 
 如果您的裝置設定為只取得公司電子郵件，而且您取消註冊您的裝置，您的裝置將不會再出現在公司入口網站。
 

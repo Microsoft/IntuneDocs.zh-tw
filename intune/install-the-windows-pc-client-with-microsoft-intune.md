@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebca73344b88778a4d734e0690615d0aa3a20b5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041770"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572608"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -46,11 +46,11 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 除了使用者自行安裝 Intune 用戶端軟體以外的所有方法，都必須由 IT 管理員先下載軟體，然後才能部署至使用者。
 
-1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [系統管理] &gt; [用戶端軟體下載]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [系統管理]  &gt; [用戶端軟體下載]  。
 
    ![下載 Intune 電腦用戶端](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
-2. 在 [用戶端軟體下載] 頁面上，按一下 [下載用戶端軟體]。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
+2. 在 [用戶端軟體下載]  頁面上，按一下 [下載用戶端軟體]  。 接著將包含軟體的 **Microsoft_Intune_Setup.zip** 套件儲存到網路上的安全位置。
 
    Intune 用戶端軟體安裝套件包含和您的帳戶有關的唯一且專屬的資訊，並可透過內嵌憑證取得。 若未經授權的使用者能夠取該安裝套件，其便能將電腦註冊到其內嵌憑證所代表的帳戶，從而獲取存取公司資源的權限。
 
@@ -68,34 +68,34 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>使用群組原則部署用戶端軟體
 
-1.  在包含 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 檔案的資料夾中，執行下列命令以解壓縮適用於 32 位元和 64 位元電腦的 Windows Installer 安裝程式：
+1. 在包含 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 檔案的資料夾中，執行下列命令以解壓縮適用於 32 位元和 64 位元電腦的 Windows Installer 安裝程式：
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  將 **Microsoft_Intune_x86.msi** 檔案、**Microsoft_Intune_x64.msi** 檔案及 **MicrosoftIntune.accountcert** 檔案複製到要安裝用戶端軟體，並可供所有電腦可存取的網路位置。
+2. 將 **Microsoft_Intune_x86.msi** 檔案、**Microsoft_Intune_x64.msi** 檔案及 **MicrosoftIntune.accountcert** 檔案複製到要安裝用戶端軟體，並可供所有電腦可存取的網路位置。
 
     > [!IMPORTANT]
     > 請勿將這些檔案分開或重新命名，否則用戶端軟體安裝將會失敗。
 
-3.  使用群組原則將軟體部署到您網路上的電腦。
+3. 使用群組原則將軟體部署到您網路上的電腦。
 
     如需有關如何使用群組原則來自動部署軟體的詳細資訊，請參閱[適用於新手的群組原則](https://technet.microsoft.com/library/hh147307.aspx)。
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>隨映像一起部署用戶端軟體
 您可以使用下列程序作為前導，將 Intune 用戶端軟體隨著作業系統映像一起部署到電腦：
 
-1.  將用戶端安裝檔案 **Microsoft_Intune_Setup.exe** 及 **MicrosoftIntune.accountcert** 複製到參考電腦的 **%系統磁碟機%\Temp\Microsoft_Intune_Setup** 資料夾。
+1. 將用戶端安裝檔案 **Microsoft_Intune_Setup.exe** 及 **MicrosoftIntune.accountcert** 複製到參考電腦的 **%系統磁碟機%\Temp\Microsoft_Intune_Setup** 資料夾。
 
-2.  將下列命令新增至 **SetupComplete.cmd** 指令碼，以建立 **WindowsIntuneEnrollPending** 登錄項目：
+2. 將下列命令新增至 **SetupComplete.cmd** 指令碼，以建立 **WindowsIntuneEnrollPending** 登錄項目：
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  將下列命令新增至 **setupcomplete.cmd**，以使用 /PrepareEnroll 命令列引數執行註冊套件：
+3. 將下列命令新增至 **setupcomplete.cmd**，以使用 /PrepareEnroll 命令列引數執行註冊套件：
 
     ```
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
@@ -103,9 +103,9 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
     > [!TIP]
     > **SetupComplete.cmd** 指令碼可讓 Windows 安裝程式在使用者登入之前修改系統。 **/PrepareEnroll** 命令列引數會準備目標電腦，以在 Windows 安裝程式完成後自動註冊到 Intune 中。
 
-4.  將 **SetupComplete.cmd** 放在參照電腦的 **%Windir%\Setup\Scripts** 資料夾中。
+4. 將 **SetupComplete.cmd** 放在參照電腦的 **%Windir%\Setup\Scripts** 資料夾中。
 
-5.  擷取參照電腦的映像，然後將映像部署到目標電腦。
+5. 擷取參照電腦的映像，然後將映像部署到目標電腦。
 
     當目標電腦在 Windows 安裝程式完成後重新啟動時，便會建立 **WindowsIntuneEnrollPending** 登錄機碼。 註冊套件會檢查電腦是否已經註冊。 如果電腦已註冊，將不會採取進一步的動作。 如果電腦未註冊，註冊套件會建立「Microsoft Intune 自動註冊工作」。
 
@@ -119,14 +119,14 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 如果使用者尚未獲指派 Intune 授權，或者組織的 MDM 授權單位尚未設定為 Intune，則使用者看不到任何註冊選項。
 
-如果使用者已獲指派 Intune 授權，組織的 MDM 授權單位即已設定為 Intune：
+如果使用者已獲指派 Intune 授權，而且組織的 MDM 授權單位已設定為 Intune：
 
-- Windows 7 或 Windows 8 電腦使用者看到的 Intune 註冊選項只有下載並安裝組織特有的電腦用戶端軟體。
+- Windows 7 或 Windows 8 電腦使用者下載並安裝組織特有的電腦用戶端軟體，才會看到註冊 Intune 選項。
 
 - 會向 Windows 10 或 Windows 8.1 電腦使用者顯示兩個註冊選項︰
 
-  -  **將電腦註冊為行動裝置**：使用者選擇 [了解如何註冊] 按鈕，並取得如何將其電腦註冊為行動裝置的指示。 因為會將 MDM 註冊視為預設和慣用註冊選項，所以會以醒目方式顯示此按鈕。 不過，MDM 選項不適用於本主題，本主題僅涵蓋用戶端軟體安裝。
-  - **使用 Intune 用戶端軟體註冊電腦**︰您需要告訴使用者選取 [Click here to download it]\(按一下這裡下載) 連結，以引導他們進行用戶端軟體安裝。
+  - **將電腦註冊為行動裝置**：使用者選擇 [了解如何註冊]  按鈕，並取得如何將其電腦註冊為行動裝置的指示。 因為會將 MDM 註冊視為預設和慣用註冊選項，所以會以醒目方式顯示此按鈕。 不過，MDM 選項不適用於本主題，本主題僅涵蓋用戶端軟體安裝。
+  - **使用 Intune 用戶端軟體註冊電腦**︰您需要告訴使用者選取 [Click here to download it]\(按一下這裡下載)  連結，以引導他們進行用戶端軟體安裝。
 
 下表摘要說明選項。
 
@@ -138,11 +138,11 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
   ![識別或註冊裝置](./media/install-the-windows-pc-client/identify-device-or-enroll.png)
 
-若要讓使用者安裝電腦用戶端軟體，則需要告訴他們選取 [Click here to download it]\(按一下這裡下載) 連結，讓使用者下載電腦用戶端軟體，並帶領他們進行安裝程序。 [了解如何註冊] 按鈕會將使用者帶至有關如何使用 MDM 註冊來註冊的文件，而這與這些軟體用戶端指示無關。
+若要讓使用者安裝電腦用戶端軟體，則需要告訴他們選取 [Click here to download it]\(按一下這裡下載)  連結，讓使用者下載電腦用戶端軟體，並帶領他們進行安裝程序。 [了解如何註冊]  按鈕會將使用者帶至有關如何使用 MDM 註冊來註冊的文件，而這與這些軟體用戶端指示無關。
 
   ![選擇 [Click here to download it]\(按一下這裡下載) 連結](./media/install-the-windows-pc-client/enroll-your-windows-device.png)
 
-使用者按一下連結時，就會看到 [下載軟體] 按鈕，只要選取它就會啟動電腦用戶端軟體安裝。
+使用者按一下連結時，就會看到 [下載軟體]  按鈕，只要選取它就會啟動電腦用戶端軟體安裝。
 
   ![選擇 [下載軟體] 更新](./media/install-the-windows-pc-client/download-pc-client-software.png)
 
@@ -154,11 +154,11 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
   ![電腦用戶端安裝的歡迎使用頁面](./media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
 
-使用者選擇 [下一步]，然後安裝開始。
+使用者選擇 [下一步]  ，然後安裝開始。
 
   ![電腦用戶端安裝的歡迎使用頁面](./media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
 
-安裝完成時，使用者選擇 [完成]。
+安裝完成時，使用者選擇 [完成]  。
 
   ![完成電腦用戶端安裝](./media/install-the-windows-pc-client/completed-the-setup-wizard.png)
 
@@ -171,19 +171,19 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>若要從 Microsoft Intune 系統管理員主控台確認用戶端軟體的安裝
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [群組] &gt; [所有裝置] &gt; [所有電腦]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [群組]  &gt; [所有裝置]  &gt; [所有電腦]  。
 
-2.  在清單中，尋找正與 Intune 通訊的受管理電腦，或在 [搜尋裝置] 方塊中，輸入電腦名稱或局部名稱來搜尋特定的受管理電腦。
+2. 在清單中，尋找正與 Intune 通訊的受管理電腦，或在 [搜尋裝置]  方塊中，輸入電腦名稱或局部名稱來搜尋特定的受管理電腦。
 
-3.  從主控台的下方窗格中，查看電腦的狀態。 解決任何錯誤。
+3. 從主控台的下方窗格中，查看電腦的狀態。 解決任何錯誤。
 
 ### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>若要建立電腦清查報表以顯示所有已註冊的電腦
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [報表] &gt; [電腦清查報表]。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，按一下 [報表]  &gt; [電腦清查報表]  。
 
-2.  在 [建立新報表] 頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下 [檢視報表]。
+2. 在 [建立新報表]  頁面上，保留所有欄位的預設值 (除非您要套用篩選器)，然後按一下 [檢視報表]  。
 
-3.  [電腦清查報表] 頁面會隨即在新視窗中開啟，顯示已在 Intune 中註冊成功的所有電腦。
+3. [電腦清查報表]  頁面會隨即在新視窗中開啟，顯示已在 Intune 中註冊成功的所有電腦。
 
     > [!TIP]
     > 按一下報表中的任意欄標題，依該欄的內容排序清單。
@@ -197,7 +197,7 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 ### <a name="unenroll-by-using-the-intune-admin-console"></a>使用 Intune 管理主控台取消註冊
 
-若要使用 Intune 管理主控台取消註冊軟體用戶端，請移至 [群組]  >  [所有電腦]  >  [裝置]。 以滑鼠右鍵按一下用戶端，然後選取 [淘汰/抹除]。
+若要使用 Intune 管理主控台取消註冊軟體用戶端，請移至 [群組]   >  [所有電腦]   >  [裝置]  。 以滑鼠右鍵按一下用戶端，然後選取 [淘汰/抹除]  。
 
 ### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>使用用戶端上的命令提示字元取消註冊
 
@@ -258,7 +258,7 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
 取消註冊程序不會移除 [OnlineManagement] 資料夾。 解除安裝之後請等候 30 分鐘，然後執行此命令。 如果太早執行，解除安裝程序可能會停留在未知狀態。 若要移除資料夾，請啟動已提高權限的命令提示字元並執行：
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>後續步驟
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

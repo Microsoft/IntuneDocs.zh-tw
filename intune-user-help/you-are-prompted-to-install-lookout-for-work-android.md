@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ddecf202160decb6ab219cfe0ef490092132059
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ca937fc5d129dc98c288fa0dde59aa861709f93
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840734"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527882"
 ---
 # <a name="install-lookout-for-work"></a>安裝 Lookout for Work
 
@@ -35,27 +35,27 @@ ms.locfileid: "55840734"
 
    ![您必須安裝 Lookout for Work](./media/lookout-required-app-install-android.png)
 
-2. 系統會帶您前往 Play Store 中的 Lookout for Work 安裝頁面。 安裝 Lookout for Work，然後點選 [接受]，以便 Lookout for Work 存取您的裝置。
+2. 系統會帶您前往 Play Store 中的 Lookout for Work 安裝頁面。 安裝 Lookout for Work，然後點選 [接受]  ，以便 Lookout for Work 存取您的裝置。
 
    ![點選 [接受] 以便 Lookout for Work 存取裝置](./media/lookout-accept-store-permissions-android.png)
 
-3. 開啟 Lookout for Work，然後點選 [啟動]。
+3. 開啟 Lookout for Work，然後點選 [啟動]  。
 
    ![開啟 Lookout for Work 並點選 [啟用]](./media/lookout-activate-button-android.png)
 
-4. 點選 [使用 Azure Active Directory 登入]，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
+4. 點選 [使用 Azure Active Directory 登入]  ，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
 
    ![請使用您的公司或學校帳戶登入：](./media/lookout-sign-in-azure-android.png)
 
-5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]**。
+5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]** 。
 
    ![選取您的工作或學校帳戶並點選 [新增帳戶]](./media/lookout-pick-account-android.png)
 
-6. 點選 **[接受]**，授與 Lookout for Work 將您登入及讀取設定檔的權限。 畫面會顯示 Lookout for Work 正在連線至 Lookout Security Cloud。
+6. 點選 **[接受]** ，授與 Lookout for Work 將您登入及讀取設定檔的權限。 畫面會顯示 Lookout for Work 正在連線至 Lookout Security Cloud。
 
    ![點選 [接受] 以授與 Lookout for Work 讀取設定檔的權限](./media/lookout-needs-permission-to-view-profile-android.png)
 
-7. 請檢閱項目以了解 Lockout 如何保護裝置，然後點選 **[確定]**。
+7. 請檢閱項目以了解 Lockout 如何保護裝置，然後點選 **[確定]** 。
 
    ![檢閱 Lookout for Work 如何保護裝置](./media/lookout-how-it-protects-your-device-android.png)
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040898"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549142"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
 
@@ -79,13 +79,13 @@ Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟�
 ## <a name="remotely-restart-a-windows-pc"></a>從遠端重新啟動 Windows 電腦
 當您協助發生問題的使用者時，您偶而便必須從遠端重新啟動他們的電腦。 使用下列步驟從遠端重新啟動 Windows 電腦。
 
-1.  在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組] &gt; [所有裝置]\(或包含您想要重新啟動之電腦的其他群組)。
+1. 在 [Microsoft Intune 管理主控台](https://manage.microsoft.com/)中，選擇 [群組]  &gt; [所有裝置]  \(或包含您想要重新啟動之電腦的其他群組)。
 
-2.  選取一或多部電腦，然後選擇 [遠端工作] &gt; [重新啟動電腦]。
+2. 選取一或多部電腦，然後選擇 [遠端工作]  &gt; [重新啟動電腦]  。
 
-3.  若要檢視工作狀態，請選擇頁面右下角的 [遠端工作]。
+3. 若要檢視工作狀態，請選擇頁面右下角的 [遠端工作]  。
 
-4.  在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
+4. 在 [工作狀態]  對話方塊中，檢閱目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤。
 
 ### <a name="see-also"></a>請參閱
 

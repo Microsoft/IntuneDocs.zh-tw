@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e4fa124d1b3fdb765ac3da964d57ade5c1c4c65
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834325"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545632"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>如何加密您的 Windows 裝置
 
@@ -31,8 +31,8 @@ ms.locfileid: "55834325"
 
 如果有桌面裝置，請遵循下列指示進行加密。
 
-1.  搜尋後啟動 [管理 BitLocker] 應用程式。
+1. 搜尋後啟動 [管理 BitLocker]  應用程式。
 
-2.  按一下 [開啟 BitLocker]，然後依照顯示的指示來加密每個磁碟機。
+2. 按一下 [開啟 BitLocker]  ，然後依照顯示的指示來加密每個磁碟機。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

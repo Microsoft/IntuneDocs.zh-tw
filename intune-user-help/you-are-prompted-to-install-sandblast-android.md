@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843760"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558452"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>您需要在 Android 裝置上安裝 SandBlast Mobile Protect
 
@@ -31,27 +31,27 @@ ms.locfileid: "55843760"
 
 **您必須執行的作業：**
 
-1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application - Install SandBlast Mobile Protect from Play Store] \(必要應用程式 - 從 Play 商店安裝 SandBlast Mobile Protect\)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
+1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application - Install SandBlast Mobile Protect from Play Store] \(必要應用程式 - 從 Play 商店安裝 SandBlast Mobile Protect\)  。 您也可以在公司入口網站應用程式的 [合規性詳細資料]  下找到此項目。
 
-2. 系統會帶您前往 Play Store 中的 SandBlast Mobile Protect 安裝頁面。 安裝 SandBlast Mobile Protect，然後點選 [接受]，讓 SandBlast Mobile Protect 存取您的裝置。
+2. 系統會帶您前往 Play Store 中的 SandBlast Mobile Protect 安裝頁面。 安裝 SandBlast Mobile Protect，然後點選 [接受]  ，讓 SandBlast Mobile Protect 存取您的裝置。
 
-3. 開啟 SandBlast Mobile Protect，然後點選 [驗證]。
+3. 開啟 SandBlast Mobile Protect，然後點選 [驗證]  。
 
-4. 點選 [使用 Azure Active Directory 登入]，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
+4. 點選 [使用 Azure Active Directory 登入]  ，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
 
-5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]**。
+5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]** 。
 
-6. 點選 [接受]，授與 SandBlast Mobile Protect 將您登入及讀取設定檔的權限。
+6. 點選 [接受]  ，授與 SandBlast Mobile Protect 將您登入及讀取設定檔的權限。
 
-7. 檢閱項目以了解 SandBlast Mobile Protect 如何保護您的裝置，然後點選 [確定]。 SandBlast Mobile Protect 需要一些時間設定，然後就會開始檢查裝置上是否有安全性威脅。
+7. 檢閱項目以了解 SandBlast Mobile Protect 如何保護您的裝置，然後點選 [確定]  。 SandBlast Mobile Protect 需要一些時間設定，然後就會開始檢查裝置上是否有安全性威脅。
 
 8. SandBlast Mobile Protect 會立即開始檢查裝置上是否有安全性威脅。
 
-9.  如果 SandBlast Mobile Protect 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
+9. 如果 SandBlast Mobile Protect 在裝置上發現安全性威脅，您即會看到如何修正問題的指示。
 
-10.  如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
+10. 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
 
-11. 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
+11. 公司入口網站中的 [裝置詳細資料]  畫面會顯示您目前符合公司安全性需求的規範。
 
     ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
 

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee68b4f330077ce0892baa5e8d82f6c9c4e8ffe
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068918"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529284"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>在 Android 裝置上安裝 Zimperium zIPS
 
@@ -31,19 +31,19 @@ ms.locfileid: "58068918"
 
 ## <a name="what-you-need-to-do"></a>您必須執行的作業
 
-1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store]\(必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料] 下找到此項目。
+1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store]  \(必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料]  下找到此項目。
 
-2. 系統會帶您前往 Play Store 中的 Zimperium zIPS 安裝頁面。 安裝 Zimperium zIPS，然後點選 [接受]，讓 Zimperium zIPS 存取您的裝置。
+2. 系統會帶您前往 Play Store 中的 Zimperium zIPS 安裝頁面。 安裝 Zimperium zIPS，然後點選 [接受]  ，讓 Zimperium zIPS 存取您的裝置。
 
-3. 開啟 Zimperium zIPS，然後點選 [驗證]。
+3. 開啟 Zimperium zIPS，然後點選 [驗證]  。
 
-4. 點選 [使用 Azure Active Directory 登入]，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
+4. 點選 [使用 Azure Active Directory 登入]  ，然後輸入您用以存取工作或學校電子郵件和檔案的帳戶。
 
-5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]**。
+5. 選取您用以存取工作或學校電子郵件及檔案的帳戶，然後點選 **[新增帳戶]** 。
 
-6. 點選 [接受]，將您登入及讀取設定檔的權限授與 Zimperium zIPS。
+6. 點選 [接受]  ，將您登入及讀取設定檔的權限授與 Zimperium zIPS。
 
-7. 檢閱項目以了解 Zimperium zIPS 如何保護您的裝置，然後點選 [確定]。 Zimperium zIPS 需要一些時間設定，然後就會開始檢查裝置上是否有安全性威脅。
+7. 檢閱項目以了解 Zimperium zIPS 如何保護您的裝置，然後點選 [確定]  。 Zimperium zIPS 需要一些時間設定，然後就會開始檢查裝置上是否有安全性威脅。
 
 8. Zimperium zIPS 會立即開始檢查裝置上是否有安全性威脅。
 
@@ -51,7 +51,7 @@ ms.locfileid: "58068918"
 
    * 如果找不到任何威脅，所有三個威脅類型都會顯示綠色。
 
-11. 公司入口網站中的 [裝置詳細資料] 畫面會顯示您目前符合公司安全性需求的規範。
+11. 公司入口網站中的 [裝置詳細資料]  畫面會顯示您目前符合公司安全性需求的規範。
 
     ![您的裝置目前符合原則的規範](./media/mtd-device-now-compliant-android.png)
 

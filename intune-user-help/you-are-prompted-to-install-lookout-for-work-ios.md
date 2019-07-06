@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59dc8599ce2dd5c99875a0032ccce5326c376cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8290ccbb61308fb7f001b1a7d331fd366e13d902
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843743"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527739"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>在 iOS 裝置上安裝 Lookout for Work
 
@@ -31,19 +31,19 @@ ms.locfileid: "55843743"
 
 ## <a name="what-you-need-to-do"></a>您必須執行的作業
 
-1.  如果看到以下提示，請點選 [安裝] 允許 Lookout for Work 安裝在您的裝置上。
+1. 如果看到以下提示，請點選 [安裝]  允許 Lookout for Work 安裝在您的裝置上。
 
       ![含有 [取消] 和 [安裝] 按鈕之 [應用程式安裝] 提示的螢幕擷取畫面。](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
-2. 當您看到下列訊息時，請點選 [設定]、開啟 [定位服務]，然後點選 [繼續]。
+2. 當您看到下列訊息時，請點選 [設定]  、開啟 [定位服務]  ，然後點選 [繼續]  。
 
       ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-location-services.png)
 
-3. 檢閱 Lookout for Work 需要的權限，然後點選 [繼續]。
+3. 檢閱 Lookout for Work 需要的權限，然後點選 [繼續]  。
 
       ![您現已連線至 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
-4. 在詢問是否允許 Lookout for Work 傳送通知給您的提示中，點選 [允許]。
+4. 在詢問是否允許 Lookout for Work 傳送通知給您的提示中，點選 [允許]  。
 
      ![依序點選 [設定] 及 [定位服務]](./media/ios-lfw-allow-notifications.png)
 

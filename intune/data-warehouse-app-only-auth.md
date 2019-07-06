@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454029"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530255"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>僅限 Intune 資料倉儲應用程式的驗證
 
@@ -41,18 +41,18 @@ Azure Active Directory (Azure AD) 採用 OAuth 2.0，可讓您授予 Azure AD �
 
 在本節中，您將提供要指向 Intune 的 Web 應用程式詳細資料。 Web 應用程式是主從式應用程式。 伺服器提供了 Web 應用程式，其中包括 UI、內容和功能。 這種類型的應用程式在網站上會分開維護。 您使用 Intune 來授與 Web 應用程式對 Intune 的存取權。 資料流是由 Web 應用程式起始的。 
 
-1.  登入 [Azure 入口網站](https://portal.azure.com)。
-2.  使用 Azure 入口網站頂端附近的 [搜尋資源、服務及文件]  欄位，搜尋 **Azure Active Directory**。
-3.  在下拉式功能表中，選取 [服務]  下的 [Azure Active Directory]  。
-4.  選取 [應用程式註冊]  。
-5.  按一下 [新增應用程式註冊]  以顯示 [建立]  刀鋒視窗。
-6.  在 [建立]  刀鋒視窗中，新增您的應用程式詳細資訊：
+1. 登入 [Azure 入口網站](https://portal.azure.com)。
+2. 使用 Azure 入口網站頂端附近的 [搜尋資源、服務及文件]  欄位，搜尋 **Azure Active Directory**。
+3. 在下拉式功能表中，選取 [服務]  下的 [Azure Active Directory]  。
+4. 選取 [應用程式註冊]  。
+5. 按一下 [新增應用程式註冊]  以顯示 [建立]  刀鋒視窗。
+6. 在 [建立]  刀鋒視窗中，新增您的應用程式詳細資訊：
 
     - 應用程式名稱，例如 *Intune App-Only Auth*。
     - [應用程式類型]  。 選取 [Web 應用程式/API]  以新增代表 Web 應用程式、Web API 或兩者的應用程式。
     - 應用程式的 [登入 URL]  。 這是使用者在驗證流程期間會自動前往的位置。 系統會要求使用者證明其所宣稱的身分。 如需詳細資訊，請參閱[什麼是搭配 Azure Active Directory 的應用程式存取和單一登入？](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
 
-7.  按一下 [建立]  刀鋒視窗底端的 [建立]  。
+7. 按一下 [建立]  刀鋒視窗底端的 [建立]  。
 
     >[!NOTE] 
     > 複製 [註冊的應用程式]  中的 [應用程式識別碼]  以供稍後使用。
@@ -61,12 +61,12 @@ Azure Active Directory (Azure AD) 採用 OAuth 2.0，可讓您授予 Azure AD �
 
 在本節中，Azure AD 會為您的應用程式產生金鑰值。
 
-1.  在 [應用程式註冊]  刀鋒視窗上，選取新建立的應用程式，以顯示應用程式刀鋒視窗。
-2.  選取刀鋒視窗頂端附近的 [設定]  ，以顯示 [設定]  刀鋒視窗。
-3.  選取 [設定]  刀鋒視窗上的 [金鑰]  。
-4.  新增金鑰 [描述]  、[到期日]  持續時間，及金鑰的 [值]  。
-5.  按一下 [儲存]  來儲存及更新應用程式的金鑰。
-6.  您必須複製產生的金鑰值 (Base64 編碼)。
+1. 在 [應用程式註冊]  刀鋒視窗上，選取新建立的應用程式，以顯示應用程式刀鋒視窗。
+2. 選取刀鋒視窗頂端附近的 [設定]  ，以顯示 [設定]  刀鋒視窗。
+3. 選取 [設定]  刀鋒視窗上的 [金鑰]  。
+4. 新增金鑰 [描述]  、[到期日]  持續時間，及金鑰的 [值]  。
+5. 按一下 [儲存]  來儲存及更新應用程式的金鑰。
+6. 您必須複製產生的金鑰值 (Base64 編碼)。
 
     >[!NOTE] 
     > 金鑰值會在您離開 [金鑰]  刀鋒視窗之後消失。 您之後便無法從此刀鋒視窗擷取金鑰。 複製金鑰以供稍後使用。
@@ -75,28 +75,28 @@ Azure Active Directory (Azure AD) 採用 OAuth 2.0，可讓您授予 Azure AD �
 
 在本節中，您將授與應用程式權限。
 
-1.  在 [設定]  刀鋒視窗上，選取 [必要權限]  。
-2.  按一下 [加入]  。
-3.  選取 [新增 API]  以顯示 [選取 API]  刀鋒視窗。
-4.  選取 [Microsoft Intune API (MicrosoftIntuneAPI)]  ，然後按一下 [選取 API]  刀鋒視窗中的 [選取]  。 選取了 [選取權限]  步驟，並顯示 [啟用存取]  刀鋒視窗。
-5.  選擇 [應用程式權限]  區段中的 [從 Microsoft Intune 取得資料倉儲資訊]  選項。
-6.  按一下 [啟用存取]  刀鋒視窗中的 [選取]  。
-7.  按一下 [新增 API 存取]  刀鋒視窗中的 [完成]  。
-8.  按一下 [必要權限]  刀鋒視窗中的 [授與權限]  。當系統提示更新此應用程式所擁有的任何現有權限時，請按一下 [是]  。
+1. 在 [設定]  刀鋒視窗上，選取 [必要權限]  。
+2. 按一下 [加入]  。
+3. 選取 [新增 API]  以顯示 [選取 API]  刀鋒視窗。
+4. 選取 [Microsoft Intune API (MicrosoftIntuneAPI)]  ，然後按一下 [選取 API]  刀鋒視窗中的 [選取]  。 選取了 [選取權限]  步驟，並顯示 [啟用存取]  刀鋒視窗。
+5. 選擇 [應用程式權限]  區段中的 [從 Microsoft Intune 取得資料倉儲資訊]  選項。
+6. 按一下 [啟用存取]  刀鋒視窗中的 [選取]  。
+7. 按一下 [新增 API 存取]  刀鋒視窗中的 [完成]  。
+8. 按一下 [必要權限]  刀鋒視窗中的 [授與權限]  。當系統提示更新此應用程式所擁有的任何現有權限時，請按一下 [是]  。
 
 ## <a name="generate-token"></a>產生權杖
 
 使用 Visual Studio，建立支援 .NET Framework 並使用 C# 作為程式設計語言的主控台應用程式 (.NET Framework) 專案。
 
-1.  選取 [檔案]   > [新增]   > [專案]  以顯示 [新增專案]  對話方塊。
-2.  選取左側的 [Visual C#]  以顯示所有 .NET Framework 專案。
-3.  選取 [主控台應用程式 (.NET Framework)]  、新增應用程式名稱，然後按一下 [確定]  以建立應用程式。
-4.  在 [方案總管]  中，選取 [Program.cs]  以顯示程式碼。
-5.  在 [方案總管] 中，新增 `System.Configuration` 組件的參考。
-6.  在快顯功能表中，選取 [新增]   > [新增項目]  。 [新增項目]  對話方塊隨即顯示。
-7.  選取左側 [Visual C#]  之下的 [程式碼]  。
-8.  選取 [類別]  、將類別的名稱變更為 *IntuneDataWarehouseClass.cs*，然後按一下 [新增]  。
-9.  在 <code>Main</code> 方法中新增下列程式碼：
+1. 選取 [檔案]   > [新增]   > [專案]  以顯示 [新增專案]  對話方塊。
+2. 選取左側的 [Visual C#]  以顯示所有 .NET Framework 專案。
+3. 選取 [主控台應用程式 (.NET Framework)]  、新增應用程式名稱，然後按一下 [確定]  以建立應用程式。
+4. 在 [方案總管]  中，選取 [Program.cs]  以顯示程式碼。
+5. 在 [方案總管] 中，新增 `System.Configuration` 組件的參考。
+6. 在快顯功能表中，選取 [新增]   > [新增項目]  。 [新增項目]  對話方塊隨即顯示。
+7. 選取左側 [Visual C#]  之下的 [程式碼]  。
+8. 選取 [類別]  、將類別的名稱變更為 *IntuneDataWarehouseClass.cs*，然後按一下 [新增]  。
+9. 在 <code>Main</code> 方法中新增下列程式碼：
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();

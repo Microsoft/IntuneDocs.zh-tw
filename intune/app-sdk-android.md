@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045537"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558430"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -56,7 +56,7 @@ Intune App SDK for Android 必須仰賴裝置上的[公司入口網站](https://
 > [!NOTE]
 > 當裝置上沒有公司入口網站應用程式時，Intune 的受控應用程式會具有和不支援 Intune 應用程式保護原則的一般應用程式相同的行為。
 
-對於沒有裝置註冊的應用程式保護，使用者「不」 _ _需要使用公司入口網站應用程式註冊裝置。
+對於沒有裝置註冊的應用程式保護，使用者「不」 __ 需要使用公司入口網站應用程式註冊裝置。
 
 ## <a name="sdk-integration"></a>SDK 整合
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 根據預設，外掛程式**只會**在 `project` 相依性上運作。
 測試編譯不會受到影響。 可提供設定以列出
-*  要排除的專案
-*  [要包含的外部相依性](#usage-of-includeexternallibraries) 
-*  要排除處理的特定類別
-*  要排除處理的變體。 這些項目可以指完整的變體名稱或單一類別。 例如
+* 要排除的專案
+* [要包含的外部相依性](#usage-of-includeexternallibraries) 
+* 要排除處理的特定類別
+* 要排除處理的變體。 這些項目可以指完整的變體名稱或單一類別。 例如
      * 如果您的應用程式具有 `debug` 和 `release` 組建類型，搭配 {`savory`、`sweet`} 和 {`vanilla`、`chocolate`} 類別，您可以指定
      * `savory` 以排除所有具有 savory 類別的變體，或 `savoryVanillaRelease` 以僅排除該確切變體。
 
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -1106,7 +1106,7 @@ Intune 可讓您利用 Android 中可用的所有[自動備份功能](https://de
 
 3. 當您決定應用程式應該接收的完整備份類型 (未篩選、已篩選或無) 時，您必須將將屬性 `android:fullBackupContent` 設定為 true、false，或您應用程式中的 XML 資源。
 
-4. 接著，您「必須」 _ _將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
+4. 接著，您「必須」 __ 將放入 `android:fullBackupContent` 的任何內容，複製到資訊清單中名為 `com.microsoft.intune.mam.FullBackupContent` 的 Metadata 標記中。
 
     **範例 1**：如果您想要讓應用程式具有完整備份並不排除任何內容，請將 `android:fullBackupContent` 屬性和 `com.microsoft.intune.mam.FullBackupContent` Metadata 標記設定為 **true**：
 
@@ -1187,7 +1187,7 @@ BackupAgent 可讓您更明確了解備份了哪些資料。 由於開發人員�
 Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識別為選擇性的 Intune 應用程式保護功能，可以啟用以允許將原則套用至每個身分識別。 這需要的應用程式參與明顯高於其他應用程式保護功能。
 
 > [!NOTE]
->  缺乏正確的應用程式參與，會導致資料洩漏和其他安全性問題。
+> 缺乏正確的應用程式參與，會導致資料洩漏和其他安全性問題。
 
 使用者註冊裝置或應用程式之後，SDK 會註冊這個身分識別，並將其視為主要的 Intune 受管理身分識別。 應用程式中的其他使用者則會被視為未受管理，並具有不受限制的原則設定。
 
@@ -1317,7 +1317,7 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
   1. 如果活動是根據另一個 MAM 應用程式所傳送的 `Intent` 來啟動，就會根據另一個應用程式在傳送 `Intent` 時的有效身分識別，來設定活動的身分識別。
 
-  2.  針對服務，執行緒的身分識別會在 `onStart` 或 `onBind` 呼叫期間以類似的方式進行設定。 針對從 `onBind` 傳回之 `Binder` 的呼叫，也會暫時設定執行緒身分識別。
+  2. 針對服務，執行緒的身分識別會在 `onStart` 或 `onBind` 呼叫期間以類似的方式進行設定。 針對從 `onBind` 傳回之 `Binder` 的呼叫，也會暫時設定執行緒身分識別。
 
   3. 呼叫 `ContentProvider` 同樣會在該期間設定執行緒身分識別。
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1630,7 +1630,7 @@ public final class MAMDataProtectionManager {
 
 如果多重身分識別應用程式註冊 `WIPE_USER_DATA` 通知，應用程式應負責移除所有針對要抹除之使用者的資料，包括已將身分識別標記為屬於該使用者的所有檔案。 如果應用程式從檔案移除使用者資料，但想要將其他資料保留在檔案中，它「必須」  變更檔案的身分識別 (透過 `MAMFileProtectionManager.protect` 至個人使用者或空的身分識別)。 如果加密原則正在使用中，屬於抹除中之使用者的任何剩餘檔案都將不會解密，而且會在抹除之後變成無法供應用程式存取。
 
-如果應用程式註冊 `WIPE_USER_DATA`，它將無法取得 SDK 預設選擇性抹除行為的好處。 針對感知多重身分識別的應用程式，此影響可能更為明顯，因為 MAM 預設選擇性抹除只會抹除其身分識別為抹除目標的檔案。 若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」 _ _想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA`。
+如果應用程式註冊 `WIPE_USER_DATA`，它將無法取得 SDK 預設選擇性抹除行為的好處。 針對感知多重身分識別的應用程式，此影響可能更為明顯，因為 MAM 預設選擇性抹除只會抹除其身分識別為抹除目標的檔案。 若多重身分識別感知應用程式想要執行 MAM 預設選擇性抹除，「且」 __ 想要在抹除上執行自己的動作，便應該註冊 `WIPE_USER_AUXILIARY_DATA` 通知。 SDK 會立即傳送這項通知，再執行 MAM 預設選擇性抹除。 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA`。
 
 預設選擇性抹除會順利關閉應用程式、完成活動並終止應用程式處理序。 若您的應用程式覆寫預設選擇性抹除，建議您考慮手動關閉應用程式，避免使用者在發生抹除後存取記憶體內部的資料。
 
@@ -1742,8 +1742,8 @@ LOGGER.info("Found value " + valueToUse);
 
 針對沒有搭配 [ProGuard (英文)](http://proguard.sourceforge.net/) 執行的大型程式碼基底，Dalvik 可執行檔格式的限制將會造成問題。 具體來說，可能會發生下列限制：
 
-1.  65-K 的欄位限制。
-2.  65-K 的方法限制。
+1. 65-K 的欄位限制。
+2. 65-K 的方法限制。
 
 ### <a name="policy-enforcement-limitations"></a>原則強制執行限制
 

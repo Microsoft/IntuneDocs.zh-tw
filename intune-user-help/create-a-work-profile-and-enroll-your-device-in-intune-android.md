@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196927"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545472"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>使用 Android 工作設定檔註冊裝置
 
@@ -33,7 +33,7 @@ ms.locfileid: "66196927"
 
 ## <a name="create-work-profile-and-enroll-device"></a>建立工作設定檔及註冊裝置
 
-1.  在 Android 公司入口網站的**歡迎**畫面上，點選 [登入]  ，然後使用您的工作或學校帳戶進行登入。 如果您尚未安裝免費的應用程式，請從 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下載並進行安裝。
+1. 在 Android 公司入口網站的**歡迎**畫面上，點選 [登入]  ，然後使用您的工作或學校帳戶進行登入。 如果您尚未安裝免費的應用程式，請從 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下載並進行安裝。
 
     ![Android 公司入口網站應用程式的歡迎畫面](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ ms.locfileid: "66196927"
 
     ![公司存取設定畫面](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  在 [Why create a work profile?]\(為什麼要建立工作設定檔?)  畫面上，閱讀您將能夠執行之動作的相關資訊，然後點選 [繼續]  。
+3. 在 [Why create a work profile?]\(為什麼要建立工作設定檔?)  畫面上，閱讀您將能夠執行之動作的相關資訊，然後點選 [繼續]  。
 
     ![為什麼要建立工作設定檔](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  檢閱公司支援人員在您的裝置上可查看和無法查看的項目清單，然後點選 [繼續]  。
+4. 檢閱公司支援人員在您的裝置上可查看和無法查看的項目清單，然後點選 [繼續]  。
 
     ![公司支援人員在您的裝置上可查看和無法查看的項目](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  在 [What's next?] (新功能)  畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]  。
+5. 在 [What's next?] (新功能)  畫面上，閱讀註冊期間會進行的作業，然後點選 [註冊]  。
 
     ![新功能畫面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

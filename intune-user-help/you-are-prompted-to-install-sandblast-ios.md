@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd8934d3318459ecc7587a9c51bba9b6f744dbc7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841686"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527602"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>您需要在 iOS 裝置上安裝 SandBlast Mobile Protect
 
@@ -29,13 +29,13 @@ ms.locfileid: "55841686"
 
 **您必須執行的作業：**
 
-1.  如果看到以下提示，請點選 [安裝] 允許 SandBlast Mobile Protect 安裝在您的裝置上。
+1. 如果看到以下提示，請點選 [安裝]  允許 SandBlast Mobile Protect 安裝在您的裝置上。
 
-2. 當您看到下列訊息時，請點選 [設定]、開啟 [定位服務]，然後點選 [繼續]。
+2. 當您看到下列訊息時，請點選 [設定]  、開啟 [定位服務]  ，然後點選 [繼續]  。
 
-3. 檢閱 SandBlast Mobile Protect 所需的權限，然後點選 [繼續]。
+3. 檢閱 SandBlast Mobile Protect 所需的權限，然後點選 [繼續]  。
 
-4. 在詢問是否允許 SandBlast Mobile Protect 將通知傳送給您的提示中，點選 [允許]。
+4. 在詢問是否允許 SandBlast Mobile Protect 將通知傳送給您的提示中，點選 [允許]  。
 
 5. SandBlast Mobile Protect 隨即會完成安裝，並顯示歡迎畫面。
 

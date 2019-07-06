@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045819"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529175"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -160,8 +160,8 @@ Intune|iOS|Android|說明|
     * 如果您是為 iOS 或 Android 市集應用程式啟用 Intune 應用程式保護原則的 ISV，完成註冊步驟中所述的 Microsoft Intune 註冊後，即會收到促銷代碼。 促銷代碼將可讓您註冊 Microsoft Intune 試用版，以獲得 1 年的延長使用時間。
 
     * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
-    
-    * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](https://docs.microsoft.com/en-ca/intune/licenses-assign))。
+
+    * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](https://docs.microsoft.com/intune/licenses-assign))。
 
 * **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。 如果您的應用程式已整合 Intune SDK，但尚未在 Azure 入口網站中列示為已設定目標的應用程式，您可以透過選取 [+ 更多應用程式] 選項，並在文字方塊中提供套件組合識別碼 (iOS) 或套件名稱 (Android)，以使用原則將它設定為目標。
 
@@ -173,12 +173,12 @@ Intune|iOS|Android|說明|
 
 一旦在 Azure 租用戶內註冊您的應用程式，且它出現在 [所有應用程式]  下，您就必須將您的應用程式存取權授與 Intune 應用程式保護服務 (先前稱為 MAM 服務). 在 Azure 入口網站中：
 
-1.  移至 [Azure Active Directory]  刀鋒視窗。
-2.  在 [應用程式註冊]  下，移至應用程式的清單設定。
-3.  按一下 [+ 新增權限]  。
-4.  按一下 [組織使用的 API]  。 
-5.  在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
-6.  在 [委派權限]  下，選取 [DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data] \(DeviceManagementManagedApps.ReadWrite：讀取和寫入使用者的應用程式管理資料\)  * 核取方塊。
+1. 移至 [Azure Active Directory]  刀鋒視窗。
+2. 在 [應用程式註冊]  下，移至應用程式的清單設定。
+3. 按一下 [+ 新增權限]  。
+4. 按一下 [組織使用的 API]  。 
+5. 在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
+6. 在 [委派權限]  下，選取 [DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data] \(DeviceManagementManagedApps.ReadWrite：讀取和寫入使用者的應用程式管理資料\)  * 核取方塊。
 7. 按一下 [新增權限]  。
 
 ### <a name="badge-your-app-optional"></a>為應用程式加上徽章 (選擇性)

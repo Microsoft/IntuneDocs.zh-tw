@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 29aa32b02f5ab97707ce76eb10a84a8913a9f702
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046242"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572297"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -60,15 +60,15 @@ iOS 公司入口網站應用程式中現在會顯示更具體的新錯誤訊息�
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>已改善 Windows 10 公司入口網站應用程式的應用程式安裝狀態 <!--676495-->
 
 在 Windows 10 公司入口網站應用程式中啟動的應用程式安裝，有下列新的改進項目：
--   更快速地報告 MSI 套件的安裝進度
--   針對在執行 Windows 10 年度更新版及更新版本裝置上的新式應用程式，可以更快速地報告安裝進度
--   針對在執行 Windows 10 年度更新版及更新版本裝置上的新式應用程式安裝，有新的進度列
+- 更快速地報告 MSI 套件的安裝進度
+- 針對在執行 Windows 10 年度更新版及更新版本裝置上的新式應用程式，可以更快速地報告安裝進度
+- 針對在執行 Windows 10 年度更新版及更新版本裝置上的新式應用程式安裝，有新的進度列
 
 您可以在 [Intune 應用程式 UI 的新增功能頁面](whats-new-app-ui.md)中看到新的進度列。
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>大量註冊 Windows 10 裝置 <!-- 747607 -->
 
-您現在可以使用 Windows 設定設計工具 (WCD) 將執行 Windows 10 Creators Update 的大量裝置加入到 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶啟用[大量 MDM 註冊](windows-bulk-enroll.md)，請使用 Windows 設定設計工具建立會將裝置加入到 Azure AD 租用戶的佈建套件，然後將套件套用至您要大量註冊及管理的公司擁有裝置。 將套件套用至裝置之後，裝置會加入 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。  Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
+您現在可以使用 Windows 設定設計工具 (WCD) 將執行 Windows 10 Creators Update 的大量裝置加入到 Azure Active Directory 和 Intune。 若要為您的 Azure AD 租用戶啟用[大量 MDM 註冊](windows-bulk-enroll.md)，請使用 Windows 設定設計工具建立會將裝置加入到 Azure AD 租用戶的佈建套件，然後將套件套用至您要大量註冊及管理的公司擁有裝置。 將套件套用至裝置之後，裝置會加入 Azure AD、在 Intune 中註冊，並準備好供 Azure AD 使用者登入。  Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派的原則和必要應用程式。 目前不支援自助式和公司入口網站案例。
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure 入口網站中 Intune 公開預覽的新功能<!--736542-->
 
@@ -104,7 +104,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 入口網站中將被取代的系統管理角色
 
-在 Intune Azure 入口網站中，將用一組全新且完整的角色型系統管理控制 (RBAC)，取代 Intune 傳統入口網站 (Silverlight) 中使用的現有行動應用程式管理 (MAM) 系統管理角色 (參與者、擁有者和唯讀)。 當您移轉至 Azure 入口網站之後，您必須將系統管理員重新指派至這些新的系統管理角色。 如需 RBAC 和新角色的詳細資訊，請參閱 [Microsoft Intune 的角色型存取控制](role-based-access-control.md)。
+在 Intune 傳統入口網站 (Silverlight) 中使用的現有行動應用程式管理 (MAM) 系統管理角色 (參與者、擁有者或唯讀) 在 Intune Azure 入口網站中會被取代為一組新的、完整的角色型系統管理控制 (RBAC)。 當您移轉至 Azure 入口網站之後，您必須將系統管理員重新指派至這些新的系統管理角色。 如需 RBAC 和新角色的詳細資訊，請參閱 [Microsoft Intune 的角色型存取控制](role-based-access-control.md)。
 
 ### <a name="whats-coming"></a>未來動態
 
@@ -357,7 +357,7 @@ __Android 不再支援 Intune AV 播放程式、影像檢視器及 PDF 檢視器
 
 __可供 Windows 10 裝置使用的新 Microsoft Intune 公司入口網站__  Microsoft 已經發行 [Windows 10 裝置適用的新 Microsoft Intune 公司入口網站應用程式](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 利用新的 Windows 10 通用格式的此應用程式，會為使用者提供應用程式內更新的使用者體驗，以及所有 Windows 10 裝置、電腦和類似行動裝置的相同體驗，同時啟用他們目前仍在使用的相同功能。
 
-新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Microsoft 網上商店安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
+新的應用程式也可讓使用者運用其他平台功能，例如單一登入 (SSO) 和 Windows 10 裝置上的憑證型驗證。 應用程式會以現有的 Windows 8.1 公司入口網站升級，以及從 Microsoft 網上商店安裝的 Windows Phone 8.1 公司入口網站的方式提供。 如需詳細資訊，請前往 [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
 > __在 Intune 和 Android for Work 上的更新__ 雖然您可以用__必要__動作部署 Android for Work 應用程式，但如果您已將 Intune 群組移轉至新的 Azure AD 群組，就只能將應用程式部署為__可用__。

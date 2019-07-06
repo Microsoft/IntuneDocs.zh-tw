@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1afdaa1bb21e3a13932202524eed9322d95479bb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174204"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545643"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>當我註冊裝置時，我的組織可以看到哪些資訊？
 
@@ -34,7 +34,7 @@ ms.locfileid: "66174204"
 - 電子郵件和簡訊
 - 連絡人
 - 行事曆
--   密碼
+- 密碼
 - 圖片，包括相片應用程式或手機相簿的內容
 - 檔案
 
@@ -51,8 +51,8 @@ ms.locfileid: "66174204"
 
 **組織可能會看到的資訊：**
 
--  電話號碼：如果是**公司**所擁有的裝置，組織能看到完整的電話號碼。 如果是**個人**所擁有的裝置，組織便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料]  頁面，便可查看每個裝置的 [擁有權類型]  。
+- 電話號碼：如果是**公司**所擁有的裝置，組織能看到完整的電話號碼。 如果是**個人**所擁有的裝置，組織便只能看到電話號碼的最後四個數字。 開啟裝置的 [裝置詳細資料]  頁面，便可查看每個裝置的 [擁有權類型]  。
 - 裝置儲存空間：如果您無法安裝必要的應用程式，您的組織可以查看裝置儲存空間，以確定空間是否不足。  
--  組織：組織一律無法看到裝置的位置，除非您需要復原某個已遺失的受監督 iOS 裝置。 請瀏覽 [Apple iOS 文件](https://go.microsoft.com/fwlink/?linkid=853816)，以深入了解受監督的裝置。  
+- 組織：組織一律無法看到裝置的位置，除非您需要復原某個已遺失的受監督 iOS 裝置。 請瀏覽 [Apple iOS 文件](https://go.microsoft.com/fwlink/?linkid=853816)，以深入了解受監督的裝置。  
 - 應用程式清查詳細資料：如果您的組織使用 Mobile Threat Defense，他們將能夠檢視您 iOS 裝置上應用程式的相關詳細資料。 深入了解 [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md)。
 - 網路資訊：有關 Android 裝置網路連線的一些資訊，可能可以提供給您組織的支援人員。 例如，如果您的組織要求裝置保留在某個建築物內，則您的裝置會識別網路連線位置。 

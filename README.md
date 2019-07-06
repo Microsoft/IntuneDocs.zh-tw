@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804436"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545243"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 開放原始碼管理辦法
 
@@ -30,7 +30,7 @@ ms.locfileid: "66804436"
     5. 建立提取要求。
     
     **選項 2 - 在此存放庫中尋找文章，並予以更新**  
-    1.  大部分主題位於 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`。 在此資料夾中搜尋主題名稱，例如 `troubleshoot-policies-in-microsoft-intune`。 
+    1. 大部分主題位於 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`。 在此資料夾中搜尋主題名稱，例如 `troubleshoot-policies-in-microsoft-intune`。 
     2. 選取連結，然後按一下鉛筆圖示。 當您將滑鼠停留在鉛筆圖示時，您會看到 [編輯此檔案]  的工具提示。 
     3. 進行變更，然後 [認可]  您的變更。 
     4. 建立提取要求。 

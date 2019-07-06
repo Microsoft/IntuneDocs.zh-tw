@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041071"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549227"
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
-[應用程式] 類別包含的行動裝置實體，可追蹤下列資訊：
+[應用程式]  類別包含的行動裝置實體，可追蹤下列資訊：
 
-  -  應用程式的版本
-  -  應用程式的安裝來源
-  -  建立應用程式的開發人員類型
-  -  應用程式的受管理軟體類型，例如 **sidecar** 或**桌面**。
-  -  應用程式的大量採購方案 (VPP) 狀態
+  - 應用程式的版本
+  - 應用程式的安裝來源
+  - 建立應用程式的開發人員類型
+  - 應用程式的受管理軟體類型，例如 **sidecar** 或**桌面**。
+  - 應用程式的大量採購方案 (VPP) 狀態
 
 ## <a name="apprevision"></a>AppRevision
 

@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849228"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546626"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請從 Intune 移除您的裝置
 
@@ -31,17 +31,17 @@ ms.locfileid: "55849228"
 
 當您將公司入口網站應用程式解除安裝時，會一併從 Intune 移除您的裝置。 您的裝置將無法再存取公司資源。 如需有關將裝置自管理中移除時所發生情況的詳細資訊，請參閱[如果將裝置從 Intune 取消註冊，會發生什麼情況？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
 
-在您可以解除安裝公司入口網站應用程式之前，您必須移至 [裝置系統管理員] 設定，然後關閉 [公司入口網站]。 步驟可能根據您擁有的 Android 裝置稍有不同。
+在您可以解除安裝公司入口網站應用程式之前，您必須移至 [裝置系統管理員]  設定，然後關閉 [公司入口網站]  。 步驟可能根據您擁有的 Android 裝置稍有不同。
 
 ## <a name="removing-the-device-from-the-company-portal-app"></a>從公司入口網站應用程式移除裝置
 
 從 Intune 移除裝置並將公司入口網站應用程式解除安裝：
 
-1.  移至 [設定] [安全性]&gt; [螢幕鎖定]**&amp;**  &gt; [裝置系統管理員]。
+1. 移至 [設定]  [安全性]&gt; [螢幕鎖定] **&amp;**  &gt; [裝置系統管理員]  。
 
     完成這個步驟後會立即取消註冊您的裝置。
 
-2.  取消核取 [公司入口網站] 旁的方塊，或將其關閉。
+2. 取消核取 [公司入口網站]  旁的方塊，或將其關閉。
 
     您現在可以解除安裝公司入口網站應用程式。
 

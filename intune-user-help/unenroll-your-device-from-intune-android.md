@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835855"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529123"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>將您的 Android 裝置取消註冊管理  
 
@@ -34,11 +34,14 @@ ms.locfileid: "55835855"
 * 您無法從公司入口網站安裝應用程式。
 * 您在新增裝置時變更的任何裝置設定 (例如停用相機或要求特定密碼長度) 皆會失效。  
 
+> [!NOTE]
+> 您無法取消註冊，或從 Microsoft Intune 應用程式移除公司擁有裝置。 裝置已註冊在初始裝置安裝期間，且必須註冊，才能存取您的組織資源。  
+
 1. 在公司入口網站中，移至右上角並點選三個垂直點。 動作功能表隨即開啟。
 
    ![Android 版公司入口網站應用程式的螢幕擷取畫面，右上角是開啟的動作功能表。 新的 [移除公司入口網站] 選項是第三個選項，位於 [我的設定檔] 和 [設定] 底下，在 [條款及條件]、[說明與意見反應] 和 [關於] 之上。](./media/android_remove_cp_menu_action_after_1705.png)
 
-2. 點選 [移除公司入口網站]。  
+2. 點選 [移除公司入口網站]  。  
 
 3. 隨即顯示一則訊息，其中包含取消註冊裝置之後續情況的資訊。 點選 [確定]  確認您要從公司入口網站移除裝置。
 
@@ -48,13 +51,13 @@ ms.locfileid: "55835855"
 
 移除 Android 版公司入口網站應用程式在您裝置上安裝的所有資料：
 
--   點選 [應用程式] > [應用程式名稱] > [清除資料]，以清除應用程式資料。
--   刪除下列資料夾：\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal。
+- 點選 [應用程式]   > [應用程式名稱]   > [清除資料]  ，以清除應用程式資料。
+- 刪除下列資料夾：\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal。
 
 ## <a name="uninstall-the-company-portal-app"></a>解除安裝公司入口網站應用程式  
-公司入口網站是裝置管理應用程式。 您必須先將裝置取消註冊管理，才能解除安裝。 完成後，請點選並按住公司入口網站應用程式圖示，直到您看到 [解除安裝]。 點選 [解除安裝] 以從您的裝置移除應用程式。  
+公司入口網站是裝置管理應用程式。 您必須先將裝置取消註冊管理，才能解除安裝。 完成後，請點選並按住公司入口網站應用程式圖示，直到您看到 [解除安裝]  。 點選 [解除安裝]  以從您的裝置移除應用程式。  
 
-或者，點選 [設定] > [應用程式] > [公司入口網站] > [解除安裝]。  
+或者，點選 [設定]   > [應用程式]   > [公司入口網站]   > [解除安裝]  。  
 
 ### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>以裝置系統管理員身分移除公司入口網站應用程式  
 非到萬不得已時，您可以透過裝置系統管理員身分從裝置解除安裝應用程式。  
@@ -64,11 +67,11 @@ ms.locfileid: "55835855"
 以下示範如何透過裝置系統管理員身分停用公司入口網站。 您 Android 裝置上每項設定的實際名稱可能會有所不同。  
 
 **選項 1**：  
-1. 選取 [設定] > [安全性] > [其他安全性設定] > [裝置系統管理員]。  
-2. 清除 [公司入口網站] 選項。  
+1. 選取 [設定]   > [安全性]   > [其他安全性設定]   > [裝置系統管理員]  。  
+2. 清除 [公司入口網站]  選項。  
 
 **選項 2**：  
-1. 選取 [設定] > [Lock screen and security] \(鎖定螢幕和安全性\) > [Other security settings] \(其他安全性設定\) > [Device admin apps] \(裝置系統管理員應用程式\)。  
-2. 清除 [公司入口網站] 選項。    
+1. 選取 [設定]   > [Lock screen and security] \(鎖定螢幕和安全性\)   > [Other security settings] \(其他安全性設定\)   > [Device admin apps] \(裝置系統管理員應用程式\)  。  
+2. 清除 [公司入口網站]  選項。    
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

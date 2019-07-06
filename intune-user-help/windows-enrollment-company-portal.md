@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196871"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546370"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>在 Intune 公司入口網站中註冊 Windows 裝置  
 
@@ -61,17 +61,17 @@ ms.locfileid: "66196871"
 
 4. 若您的版本是  
 
-    *  __1607 或更新版本__：請使用 [[設定]   > [帳戶]   > [存取公司或學校帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)來註冊您的裝置。   
+    * __1607 或更新版本__：請使用 [[設定]   > [帳戶]   > [存取公司或學校帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)來註冊您的裝置。   
     * __1511 或先前版本__：請使用 [[設定]   > [帳戶]   > [您的帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)來註冊您的裝置。  
 
-### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile 裝置       
+### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile 裝置
 
-1.  前往__所有應用程式__，然後選取__設定__應用程式。  
-2.  選取 [系統]   > [關於]  。      
-3.  在__裝置資訊__下方，尋找「版本」  。  
+1. 前往__所有應用程式__，然後選取__設定__應用程式。
+2. 選取 [系統]   > [關於]  。
+3. 在__裝置資訊__下方，尋找「版本」  。  
 4. 若您的版本是  
 
-    *  __1607 或更新版本__：請使用 [[設定]   > [存取公司或學校帳戶]  ](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device) 路線來註冊您的裝置。   
+    * __1607 或更新版本__：請使用 [[設定]   > [存取公司或學校帳戶]  ](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device) 路線來註冊您的裝置。   
     * __1511 或先前版本__：請使用 [[設定]   > [帳戶]  ](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device) 路線來註冊您的裝置。  
 
 ## <a name="enroll-non-windows-10-devices"></a>註冊非 Windows 10 裝置  

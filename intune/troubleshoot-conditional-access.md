@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043911"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530726"
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 
@@ -35,8 +35,8 @@ ms.locfileid: "67043911"
 - 裝置必須由 Intune 註冊和管理。
 - 使用者和裝置都必須符合所指派的 Intune 合規性政策。
 - 根據預設，使用者必須獲指派裝置合規性政策。 這可能取決於如何在 Intune 管理入口網站的 [裝置合規性]   > [合規性政策設定]  下設定 [將未指派合規性政策的裝置標記為]  設定。
--   如果使用者使用裝置的原生郵件用戶端，而非 Outlook，則必須在裝置上啟用 Exchange ActiveSync。 這在 iOS、Windows Phone 和 Android 裝置上都會自動進行。
--   您的 Intune Exchange Connector 必須已正確設定。 如需詳細資訊，請參閱[為 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
+- 如果使用者使用裝置的原生郵件用戶端，而非 Outlook，則必須在裝置上啟用 Exchange ActiveSync。 這在 iOS、Windows Phone 和 Android 裝置上都會自動進行。
+- 您的 Intune Exchange Connector 必須已正確設定。 如需詳細資訊，請參閱[為 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
 
 您可在 Azure 入口網站和裝置清查報表中，檢視每個裝置的這些狀況。
 

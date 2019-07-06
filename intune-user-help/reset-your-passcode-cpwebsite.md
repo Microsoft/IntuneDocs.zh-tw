@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163423"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546792"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何從公司入口網站重設裝置密碼
 
@@ -36,26 +36,26 @@ ms.locfileid: "58163423"
 
 ## <a name="reset-your-passcode"></a>重設密碼
 
-1.  開啟[公司入口網站](https://portal.manage.microsoft.com)，然後選取 [功能表] 按鈕 > [裝置]。  
+1. 開啟[公司入口網站](https://portal.manage.microsoft.com)，然後選取 [功能表]  按鈕 > [裝置]  。  
 
 2. 選取需要重設密碼的裝置。  
 
     ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png) 
 
-3. 選取 [重設密碼]。 如果頁面頂端未顯示密碼選項，請選取 [其他 (...)] > [重設密碼]。   
+3. 選取 [重設密碼]  。 如果頁面頂端未顯示密碼選項，請選取 [其他 (...)]   > [重設密碼]  。   
 
    ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png)   
 
     ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)  
 
-4. 出現提示時，按一下 [登出]。於再次出現提示時，重新登入。 您必須在五分鐘內重新登入公司入口網站，否則公司入口網站不會重設裝置密碼。  
+4. 出現提示時，按一下 [登出]  。於再次出現提示時，重新登入。 您必須在五分鐘內重新登入公司入口網站，否則公司入口網站不會重設裝置密碼。  
 
    > [!NOTE]
    > 您必須重新登入來確認身分識別。 這可防止惡意嘗試重設您的裝置密碼。
 
    ![顯示登出公司入口網站提示的範例螢幕擷取畫面。 使用者輸入的按鈕為 [登出] 和 [取消]。](./media/iwp-reset-passcode-popup-1808.png)
 
-5. 訊息將隨後出現，警告您即將移除現有的裝置密碼。 按一下 [重設密碼] 確認。  
+5. 訊息將隨後出現，警告您即將移除現有的裝置密碼。 按一下 [重設密碼]  確認。  
     > [!WARNING]
     > 重設密碼之後，任何能夠實際存取裝置的人員將能存取其上的多數個人和公司資訊。 如果您目前沒有裝置，請不要重設密碼。  
 
@@ -66,7 +66,7 @@ ms.locfileid: "58163423"
    > [!NOTE]
    > 您可以在公司入口網站的裝置詳細資料頁面下，找到 Windows 和 Android 裝置的暫時密碼。 如需更多特定 OS 密碼說明，請參閱[設定新密碼](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode)一節。  
    
-7. 在您的裝置上，移至 [設定] 並變更暫時密碼。 
+7. 在您的裝置上，移至 [設定]  並變更暫時密碼。 
 
 8. 公司入口網站右上方會出現一個旗標。 按一下以閱讀通知並確認已成功重設密碼。  
 
@@ -79,7 +79,7 @@ ms.locfileid: "58163423"
 **iOS**：移除現有的密碼，但不建立暫時密碼。 如果您使用 Touch ID 指紋掃描器來開啟裝置或進行購買，您必須再次設定指紋。  
 
 **Windows 10 行動裝置版**：移除現有的密碼，並建立由字母和數字組成的暫時密碼。 如果已設定 Windows Hello 臉部辨識，此功能仍可於裝置使用。
-    
+
 **Windows Phone 8.1**：移除現有的密碼，並建立由數字組成的暫時密碼。  
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

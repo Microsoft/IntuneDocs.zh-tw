@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb70d999cf43d568ad19f2ba83618f6ecfbaf7d7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 949a310b1588876cfe0c547dfa73f1510a710710
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844275"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527598"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>在 iOS 裝置上安裝 Zimperium zIPS
 
@@ -29,13 +29,13 @@ ms.locfileid: "55844275"
 
 ## <a name="what-you-need-to-do"></a>您必須執行的作業 
 
-1.  如果看到以下提示，請點選 [安裝] 允許 Zimperium zIPS 安裝在您的裝置上。
+1. 如果看到以下提示，請點選 [安裝]  允許 Zimperium zIPS 安裝在您的裝置上。
 
-2. 當您看到下列訊息時，請點選 [設定]、開啟 [定位服務]，然後點選 [繼續]。
+2. 當您看到下列訊息時，請點選 [設定]  、開啟 [定位服務]  ，然後點選 [繼續]  。
 
-3. 檢閱 Zimperium zIPS 所需的權限，然後點選 [繼續]。
+3. 檢閱 Zimperium zIPS 所需的權限，然後點選 [繼續]  。
 
-4. 在詢問是否允許 Zimperium zIPS 將通知傳送給您的提示中，點選 [允許]。
+4. 在詢問是否允許 Zimperium zIPS 將通知傳送給您的提示中，點選 [允許]  。
 
 5. Zimperium zIPS 隨即會完成安裝，並顯示歡迎畫面。
 

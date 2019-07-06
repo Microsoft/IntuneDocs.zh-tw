@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846242"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527628"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 裝置上安裝 Mobile Threat Defense
 
@@ -38,12 +38,12 @@ ms.locfileid: "55846242"
 
 Mobile Threat Defense 是公司確定您的裝置能安全避開可能嘗試竊取公司資訊之應用程式的方式。 新增這項保護需要將關於您裝置上應用程式的額外資訊，報告給貴公司使用的 Mobile Threat Defense 服務。 貴公司無法看到您個人應用程式中的資料。 裝置上的所有應用程式會新增至當使用 Mobile Threat Defense 服務時，[貴公司可以看到的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。 以下是貴公司可看到的應用程式組件：
 
-*   應用程式名稱
+* 應用程式名稱
 * 應用程式識別碼：在 App Store 中識別應用程式的唯一名稱
-*   應用程式版本和短的版本號碼：應用程式的特定版本號碼
+* 應用程式版本和短的版本號碼：應用程式的特定版本號碼
 * 應用程式套件組合和動態大小：應用程式在您的裝置上使用的空間量
 * 應用程式有效性：是否核准使用應用程式
-*   應用程式管理狀態：由貴公司管理的某個應用程式，或者它是個人的應用程式
+* 應用程式管理狀態：由貴公司管理的某個應用程式，或者它是個人的應用程式
 
 ## <a name="if-the-installation-doesnt-work"></a>如果安裝不作用
 

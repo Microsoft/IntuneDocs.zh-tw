@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040971"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549173"
 ---
 # <a name="reference-for-policy-entities"></a>原則實體的參考
 
-[原則] 類別包含的行動實體，可追蹤下列資訊：
+[原則]  類別包含的行動實體，可追蹤下列資訊：
 
-  -  裝置組態設定檔、應用程式組態設定檔和合規性原則的清查  
-  -  每日處於成功、擱置、失敗或錯誤狀態的裝置數目  
-  -  每日處於成功、擱置、失敗或錯誤狀態的使用者數目  
-  -  處於成功、擱置、失敗或錯誤狀態的累積裝置數目  
+  - 裝置組態設定檔、應用程式組態設定檔和合規性原則的清查  
+  - 每日處於成功、擱置、失敗或錯誤狀態的裝置數目  
+  - 每日處於成功、擱置、失敗或錯誤狀態的使用者數目  
+  - 處於成功、擱置、失敗或錯誤狀態的累積裝置數目  
 
 ## <a name="policy"></a>原則
 

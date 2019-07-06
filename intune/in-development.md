@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468719"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494249"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 7 月
 
@@ -58,8 +58,6 @@ ms.locfileid: "67468719"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>應用程式管理
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>裝置使用者可檢視其安裝或嘗試安裝的所有受控應用程式 <!-- 2352913 -->
-Windows 的公司入口網站會列出所有安裝在使用者裝置上 (必要及可用的) 受控應用程式。 使用者將能夠檢視嘗試及正在擱置的應用程式安裝，以及其目前的狀態。 若您的組織沒有將應用程式設為必要或可用，使用者會看見一個訊息，說明沒有安裝任何公司應用程式。 使用者也將能夠根據安裝狀態排序或篩選其應用程式。
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>使用者和群組的自訂的通知    <!-- 16766574   -->
 您很快就可以從 iOS 和您使用 Intune 管理的 Android 裝置上的使用者將公司入口網站應用程式傳送自訂的特定推播通知。 這些自訂的通知不會繫結至特定的 Intune 功能和可用於任何用途，需要，包括一般通知，您想要傳送部分或所有員工。  

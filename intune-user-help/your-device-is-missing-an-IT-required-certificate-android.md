@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ef2bc644b537787bd5275e95a4ecc72c899393
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835872"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529336"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>您的 Android 裝置遺失公司支援人員所要求的憑證
 
@@ -48,11 +48,11 @@ ms.locfileid: "55835872"
 
     如果未顯示掛鎖符號，請停止作業，並連絡您公司的支援人員。 鎖頭符號表示您已經安全地登入，因此除非您看到該符號，否則不應該繼續。
 
-4. 按一下 [檢視憑證]。
+4. 按一下 [檢視憑證]  。
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. 在 [憑證] 對話方塊中，選擇 [憑證路徑] 索引標籤，然後找出您需要從網際網路取得的憑證。 您可在上述範例螢幕擷取畫面中反白顯示之憑證的相同位置，找到所需憑證的名稱。
+5. 在 [憑證]  對話方塊中，選擇 [憑證路徑]  索引標籤，然後找出您需要從網際網路取得的憑證。 您可在上述範例螢幕擷取畫面中反白顯示之憑證的相同位置，找到所需憑證的名稱。
 
 ## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>在您的 Android 行動裝置上下載並安裝遺失的憑證
 
@@ -62,9 +62,9 @@ ms.locfileid: "55835872"
 
 3. 下載憑證之後，從您的裝置頂端下拉以開啟通知，然後點選通知清單中的憑證名稱。
 
-4. 在下方螢幕擷取畫面顯示的 [命名憑證] 對話方塊中，接受預設憑證名稱。
+4. 在下方螢幕擷取畫面顯示的 [命名憑證]  對話方塊中，接受預設憑證名稱。
 
-5. 請確認 [認證使用] 設為 [用於 VPN 和應用程式]，然後點選 [確定]。
+5. 請確認 [認證使用]  設為 [用於 VPN 和應用程式]  ，然後點選 [確定]  。
 
     ![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
 
