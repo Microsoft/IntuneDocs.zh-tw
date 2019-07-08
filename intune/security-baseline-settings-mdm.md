@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
-ms.translationtype: HT
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418942"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549067"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>適用於 Intune 的 MDM 安全性基準設定  
 
@@ -32,7 +32,7 @@ ms.locfileid: "67418942"
 若要深入了解什麼舊的版本中變更此基準的最新版本中，請參閱[新的範本中變更的項目](#whats-changed-in-the-new-template)。  
 
 > [!NOTE]  
-> 在 2019 年 6 月，版本取代預覽 MDM 安全性基準*MDM Spring 2019 update （19 小時 1） 的安全性基準*範本，也就是 generaly 可用 （未處於預覽狀態）。 推出前所建立的設定檔*MDM Spring 2019 update （19 小時 1） 的安全性基準*基準不會更新以反映的設定和 Spring 2019 更新 （如 MDM 安全性基準中的值19 H 1) 版本。  雖然您無法建立新的設定檔，以預覽範本為基礎，您可以編輯並繼續使用您先前建立設定檔，預覽範本為基礎。   
+> 在 2019 年 6 月，版本取代預覽 MDM 安全性基準*MDM Spring 2019 update （19 小時 1） 的安全性基準*範本，也就是 generaly 可用 （未處於預覽狀態）。 推出前所建立的設定檔*MDM Spring 2019 update （19 小時 1） 的安全性基準*基準不會更新以反映的設定和 MDM 安全性基準，Spring 2019 update （19 小時 1 中的值) 版本。  雖然您無法建立新的設定檔，以預覽範本為基礎，您可以編輯並繼續使用您先前建立設定檔，預覽範本為基礎。   
   
 若要深入了解使用 Intune 中的安全性基準，請參閱[使用安全性基準](security-baselines.md)。  
 
@@ -57,7 +57,7 @@ ms.locfileid: "67418942"
 
 - **Microsoft 帳戶對 Windows 市集應用程式為選擇性項目**  
   此原則設定可讓您控制 Microsoft 帳戶對需要帳戶來登入的 Windows 市集應用程式是否為選擇性項目。 此原則只會影響支援它的 Windows 市集應用程式。 如果您啟用此原則設定，通常需要 Microsoft 帳戶登入的 Windows 市集應用程式可讓使用者改為使用企業帳戶登入。 如果您停用或未設定此原則設定，則使用者必須使用 Microsoft 帳戶登入。  
-    [深入了解](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [深入了解](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **預設**：啟用  
 
@@ -68,7 +68,7 @@ ms.locfileid: "67418942"
   此原則設定允許使用者變更通常只能供系統管理員的安裝選項。 如果您啟用此原則設定時，會略過的一些安全性功能的 Windows 安裝程式。 它允許安裝完畢，否則會暫止因為安全性違規。 如果您停用或未設定此原則設定，Windows 安裝程式的安全性功能會防止使用者變更安裝選項通常保留給系統管理員，例如，指定要安裝檔案的目錄。 如果 Windows 安裝程式偵測到安裝套件已允許使用者變更受保護的選項，它會停止安裝，並顯示一則訊息。 這些安全性功能運作，只有當安裝程式在執行其拒絕使用者的目錄的權限的特殊權限的安全性內容中。 此原則設定被專為較不嚴格的環境。 它可以用來規避防止軟體安裝的安裝程式錯誤。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **預設值**：是
+  **預設值**：是
 
 - **使用提高的權限的區塊 MSI 應用程式安裝**  
   此原則設定會指示 Windows Installer 在系統上安裝任何程式時使用較高的權限。  
@@ -828,7 +828,7 @@ ms.locfileid: "67418942"
   
 - **Internet Explorer 受信任區域 Java 權限**   
   此原則設定可讓您管理 Java Applet 的權限。 如果您啟用此原則設定，即可從下拉式方塊中選擇選項。 [自訂] 可個別控制權限設定。 [低安全性] 可讓 Applet 執行所有作業。 [中安全性] 可讓 Applet 在其沙箱 (記憶體中無法供外部應用程式呼叫的一個區域) 中執行，以及啟用暫存空間 (用戶端電腦上安全且受保護的存放區域) 和使用者控制的檔案 I/O 等功能。 [高安全性] 可讓 Applet 在其沙箱中執行。 停用 Java 可防止執行任何 Applet。 如果您停用此原則設定，則無法執行 Java Applet。 如果您未設定此原則設定，權限會設定為 [低安全性]。  
-    [深入了解](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [深入了解](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **預設值**：高安全性  
   
@@ -1829,7 +1829,7 @@ ms.locfileid: "67418942"
 - *修訂*以某種方式從設定出現在前一版的方式。 
 
 *[新增]* [**鎖定上**](#above-lock):
--  **語音啟用從鎖定畫面的應用程式**    
+- **語音啟用從鎖定畫面的應用程式**    
 
 *[新]* [**應用程式管理**](#application-management)： 
 - **封鎖使用者控制安裝**  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

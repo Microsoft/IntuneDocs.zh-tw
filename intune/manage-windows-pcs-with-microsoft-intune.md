@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044942"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572552"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -70,16 +70,16 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune 用戶端軟體的電腦管理功能
 在大部分情況下，您將使用 Microsoft Intune 註冊您的裝置，這可以提供更多的功能。 不過，您也可以使用提供下列功能的 Intune 軟體用戶端來管理電腦︰
 
--   **[軟體更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
+- **[軟體更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - 您可以讓電腦保持在最新狀態，並決定套用更新的時間。
 
--   **[Windows 防火牆原則](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 這有助於確保在公司中使用的電腦沒有處於非作用中狀態或設定不當的 Windows 防火牆。
+- **[Windows 防火牆原則](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 這有助於確保在公司中使用的電腦沒有處於非作用中狀態或設定不當的 Windows 防火牆。
 
--   **[反惡意程式碼防護](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune 包含 Endpoint Protection，可協助您的電腦防範惡意程式碼。
+- **[反惡意程式碼防護](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune 包含 Endpoint Protection，可協助您的電腦防範惡意程式碼。
 
--   **[遠端協助](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以藉由使用 Intune 隨附的遠端桌面功能提供協助 (需要 TeamViewer 軟體)。
+- **[遠端協助](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune 可讓使用者連絡 IT 支援人員，該人員接著可以藉由使用 Intune 隨附的遠端桌面功能提供協助 (需要 TeamViewer 軟體)。
 
--   **[軟體授權管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
--   **[應用程式部署](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 將軟體部署到您所管理的電腦。 當您使用軟體用戶端管理電腦時，某些應用程式管理功能會無法使用。
+- **[軟體授權管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 追蹤軟體有多少可用的授權數目，並且追蹤正在使用多少可用的授權。
+- **[應用程式部署](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 將軟體部署到您所管理的電腦。 當您使用軟體用戶端管理電腦時，某些應用程式管理功能會無法使用。
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Intune 使用原則來管理 Windows 電腦，其管理方式類似 Windows Serv
 
 有一些可以用於將電腦視為行動裝置加以管理的管理選項，無法在 Intune 用戶端軟體所管理的電腦上使用︰
 
--   完整抹除 (可使用選擇性抹除)
--   條件式存取
+- 完整抹除 (可使用選擇性抹除)
+- 條件式存取
 
 也請注意，在 Intune 系統管理主控台中，某些區段 (例如 [更新]  、[保護]  及 [授權]  ) 只在您使用 Intune 用戶端軟體註冊裝置之後才會出現。
 
