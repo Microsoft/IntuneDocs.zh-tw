@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141812"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407122"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式  
 
@@ -56,6 +56,7 @@ ms.locfileid: "67141812"
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>設定 Lookout for Work 應用程式  
 - **Android**  
@@ -129,6 +130,14 @@ ms.locfileid: "67141812"
 - **iOS**
   - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在適用於 **Appstore URL** 的**步驟 11**上使用這個 [ActiveShield 應用程式市集 URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) \(英文\)。
 
+### <a name="configure-wandera-apps"></a>設定 Wandera 應用程式  
+ 
+- **Android**
+  - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 使用此 [Wandera Mobile 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.wandera.android)。 針對 [最基本的作業系統]  ，選取 [Android 5.0]  。
+
+- **iOS**
+  - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios) 的指示。 針對 **Appstore URL**，在**步驟 11**使用此 [Wandera Mobile 應用程式市集 URL](https://itunes.apple.com/app/wandera/id605469330) \(英文\)。
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 應用程式設定原則來設定您的 MTD 應用程式  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 應用程式設定原則  
@@ -196,6 +205,27 @@ Pradeo 在 iOS 上不支援應用程式設定原則。  若要取得設定好的
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 應用程式設定原則  
 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)一文中所述。
+
+### <a name="wandera-app-configuration-policy"></a>Wandera 應用程式設定原則  
+請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Wandera iOS 應用程式設定原則。
+- 在**步驟 8**，使用此選項 [輸入 XML 資料]  。 登入您的 RADAR Wandera 入口網站並瀏覽到 [設定] \(設定\)   > [EMM Integration] \(EMM 整合\)   > [App Push] \(應用程式推播\)  。 選取 [Intune]  ，然後複製下列內容並將它貼到設定原則本文中。  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>將應用程式指派給群組  
 - 這個步驟適用於所有 MTD 合作夥伴。 請參閱[利用 Intune 將應用程式指派給群組](apps-deploy.md)的指示。

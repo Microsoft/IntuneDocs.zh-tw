@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045631"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468747"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -33,6 +33,29 @@ ms.locfileid: "67045631"
 如果您是員工或學生，請務必查看公司入口網站說明文件的螢幕擷取畫面和連結。 如需如何使用公司入口網站應用程式的詳細資訊，請參閱[公司入口網站使用者說明文件](https://docs.microsoft.com/intune-user-help/)。  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日當週  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>從新的「公司入口網站」網頁檢視已安裝的應用程式 <!-- 4224326 -->
+「公司入口網站」的新 [已安裝的應用程式]  頁面會出安裝在使用者裝置上 (必要及可用的) 所有受控應用程式。 除了指派類型之外，使用者也可以看到應用程式的發行者、發行日期，以及目前的安裝狀態。 若您沒有針對使用者將任何應用程式設為必要或可用，他們將會看見一個訊息，說明沒有安裝任何公司應用程式。 若要在 Web 上查看新頁面，請前往[公司入口網站](https://portal.manage.microsoft.com)，然後按一下 [已安裝的應用程式]  。   
+
+![公司入口網站上 [已安裝的應用程式] 頁面之螢幕擷取畫面。](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>新的檢視可讓應用程式使用者查看裝置上安裝的所有受控應用程式 <!-- 2352913 -->
+適用於 Windows 的「公司入口網站」應用程式現在會列出使用者裝置上已安裝的所有受控應用程式 (必要及可用的)。 使用者也可以看到已嘗試與擱置中的應用程式安裝，以及其目前狀態。 若您沒有針對使用者將應用程式設為必要或可用，他們將會看見一個訊息，說明沒有安裝任何公司應用程式。 若要查看新檢視，請前往「公司入口網站」瀏覽窗格，然後選取 [應用程式]   > [已安裝的應用程式]  。   
+
+![適用於 Windows 10 的「公司入口網站」上 [已安裝的應用程式] 之範例螢幕擷取畫面。 ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日當週  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 應用程式中的新功能
+我們已在適用於 Android 的 Microsoft Intune 應用程式 (預覽) 中新增功能。 完全受控 Android 裝置上的使用者現在可以：  
+
+* 透過 Intune 公司入口網站或 Microsoft Intune 應用程式，檢視及管理已註冊的裝置。    
+* 與其組織連絡以尋求支援。    
+* 將其意見反應傳送給 Microsoft。    
+* 若其組織已設定條款及條件，即可加以檢視。 
 
 ## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日當週  
 

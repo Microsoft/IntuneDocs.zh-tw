@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325537"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500641"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
@@ -60,8 +60,8 @@ Intune 會在註冊期間或之後，自動將主要使用者新增至裝置。 
 | Windows | Azure AD Join (全新體驗) | 正在註冊使用者 | 註冊期間 | 
 | Windows | Azure AD Join (Autopilot 全新體驗) | 正在註冊使用者 | 註冊期間 | 
 | Windows | 只在 MDM 中註冊 | 正在註冊使用者 | 註冊期間 | 
-| Windows | 混合式 AADJ + 自動註冊 GPO | 第一位使用者登入 | 當第一位使用者登入時 | 
-| Windows | 共同管理 | 第一位使用者登入 | 當第一位使用者登入時 | 
+| Windows | 混合式 AADJ + 自動註冊 GPO | 第一位使用者登入 Windows | 當第一位使用者登入 Windows 時| 
+| Windows | 共同管理 | 第一位使用者登入 Windows | 當第一位使用者登入 Windows 時 | 
 | Windows | Azure AD Join (大量註冊權杖) | 無 | 不適用 | 
 | Windows | Azure AD Join (Autopilot 自我部署模式) | 無 | 不適用 | 
 | 跨平台 | 透過公司入口網站應用程式的使用者導向註冊 | 正在註冊使用者 | 註冊期間 |

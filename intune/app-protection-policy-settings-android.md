@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402781"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511708"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -31,18 +31,18 @@ ms.locfileid: "66402781"
 > [!IMPORTANT]
 > 裝置上需要有 Intune 公司入口網站，才能在 Android 裝置上接收應用程式保護原則。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](end-user-mam-apps-android.md)。
 
-##  <a name="data-protection"></a>資料保護 
+## <a name="data-protection"></a>資料保護 
 ### <a name="data-transfer"></a>資料轉送
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
 | **將組織資料備份至 Android 備份服務** | 選取 [封鎖]  ，防止此應用程式將公司或學校資料備份至 [Android 備份服務](https://developer.android.com/google/backup/index.html)。<br><br> 選取 [允許]  ，允許此應用程式備份公司或學校資料。| **允許** |
 | **將組織資料傳送至其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> <p>有一些 Intune 可預設允許資料傳送至其中的豁免應用程式和服務。 此外，如果您需要允許資料傳送至不支援 Intune 應用程式的應用程式，您可以建立您自己的豁免設定。 如需詳細資訊，請參閱[資料轉送豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。<p>此原則也適用於 Android 應用程式連結。  一般 Web 連結則是由 [在 Intune Managed Browser 中開啟應用程式連結]  原則設定所管理。<p><div class="NOTE"><p>注意</p><p>Intune 目前不支援 Android Instant Apps 功能。 Intune 會封鎖與應用程式之間的任何資料連接。 如需詳細資訊，請參閱 Android 開發人員文件中的 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) \(英文\)。</p><p>如果 [將組織資料傳送至其他應用程式]  已設定為 [所有應用程式]  ，文字資料可能仍然可以透過 OS 共用傳送至剪貼簿。</p></div> | **所有應用程式** | 
-|<ul><ui> **選取要豁免的應用程式** | 當您針對上一個選項選取 [受原則管理的應用程式]  時，可以使用這個選項。 | |
+|<ul><ui>**選取要豁免的應用程式** | 當您針對上一個選項選取 [受原則管理的應用程式]  時，可以使用這個選項。 | |
 | **接收來自其他應用程式的資料** | 指定可將資料傳送至這個應用程式的應用程式： <ul><li>**受原則管理的應用程式**：只允許從其他受原則管理的應用程式傳送。</li><li>**所有應用程式**：不允許從任何應用程式傳送資料。</li><li>**無**：不允許從任何應用程式 (包括其他受原則管理的應用程式) 傳送資料。 </li></ul> <p>有一些 Intune 可以允許從中進行資料傳輸的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。 | **所有應用程式** |
 | **儲存組織資料的複本** | 選擇 [封鎖]  ，在這個應用程式中停用 [另存新檔] 選項。 如果您想要允許使用 [另存新檔]，請選擇 [允許]  。 **注意︰** *Microsoft Excel、OneNote、PowerPoint 和 Word 支援此設定。協力廠商和 LOB 應用程式也可能支援此設定。*| **允許** |  
-|<ul><ui> **允許使用者儲存所選服務的複本** |使用者可以儲存到幾個選取的服務 (商務用 OneDrive、SharePoint 和本機存放區)。 將會封鎖所有其他服務。  | **0 (已選取)** |
+|<ul><ui>**允許使用者儲存所選服務的複本** |使用者可以儲存到幾個選取的服務 (商務用 OneDrive、SharePoint 和本機存放區)。 將會封鎖所有其他服務。  | **0 (已選取)** |
 | **限制其他應用程式之間的剪下、複製和貼上** | 指定何時剪下、複製和貼上動作可與這個應用程式搭配使用。 從下列選項進行選擇： <ul><li>**封鎖**：不允許在這個應用程式與任何其他應用程式之間進行剪下、複製和貼上動作。</li><li>**受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下、複製和貼上動作。</li><li>**具有貼上的受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下或複製。 允許將資料從任何應用程式貼入這個應用程式。</li><li>**任何應用程式**：不限制與這個應用程式之間的剪下、複製和貼上。 | **任何應用程式** |
-| **任何應用程式的剪下和複製字元限制** | 指定可以從組織資料和帳戶剪下或複製的字元數。  如此可允許共用指定的字元數給任何應用程式，而不管「限制使用其他應用程式剪下、複製及貼上」設定。<p>預設值 = 0<p>**注意**：需要 Intune 公司入口網站 5.0.4364.0 版或更新版本。  | **0** |
+| <ul><ui>**任何應用程式的剪下和複製字元限制** | 指定可以從組織資料和帳戶剪下或複製的字元數。  如此可允許共用指定的字元數給任何應用程式，而不管「限制使用其他應用程式剪下、複製及貼上」設定。<p>預設值 = 0<p>**注意**：需要 Intune 公司入口網站 5.0.4364.0 版或更新版本。  | **0** |
 | **螢幕擷取和 Google 助理** | 選取 [停用]  ，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Google Assistant]  功能。 選擇 [停用]  ，也會在搭配使用這個應用程式與公司或學校帳戶時模糊應用程式切換器預覽影像。| **啟用** |
 
   
@@ -50,7 +50,7 @@ ms.locfileid: "66402781"
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
 | **加密組織資料** | 選擇 [需要]  ，在這個應用程式中啟用公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 256 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。 <br><br> 加密方法符合 FIPS 140-2 規範。     |  **需要**|  
-
+| <ul><ui>**加密已註冊之裝置上的組織資料** | 選取 [需要]  以強制在所有裝置上使用 Intune 應用程式層加密來加密組織資料。 選取 [不需要]  以不強制在所有已註冊的裝置上使用 Intune 應用程式層加密來加密組織資料。| **需要** |
 
 
 ### <a name="functionality"></a>功能
@@ -58,13 +58,16 @@ ms.locfileid: "66402781"
 |------|------|------|
 | **與原生連絡人應用程式同步應用程式** | 選擇 [停用]  ，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選擇 [啟用]  ，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。 | **啟用** |
 | **列印組織資料** | 選擇 [停用]  ，防止應用程式列印公司或學校資料。 | **啟用** |
-|**與受原則管理的瀏覽器共用 Web 內容** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇：<ul><li>**需要**：只允許在原則受控的瀏覽器中開啟 Web 內容。</li><li>**未設定**：允許任何應用程式中的 Web 連結 </li></ul><br><br> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受控的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<br><br>**原則受控的瀏覽器**<br>如果您部署多個原則受控的瀏覽器，則只會啟動其中一個。  啟動順序依序為 Intune Managed Browser 和 Microsoft Edge。  在 Android 上，如果未安裝 Intune Managed Browser 或 Microsoft Edge，您的終端使用者可以從支援 HTTP/HTTPS 連結的其他原則受控應用程式中進行選擇。<p>如果原則受控的瀏覽器為必要但尚未安裝，則會提示您的終端使用者安裝 Intune Managed Browser。<p>如果原則受控的瀏覽器為必要，則 Android 應用程式連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。<p>**Intune 裝置註冊**<br>如果您使用 Intune 來管理裝置，請參閱＜透過 Microsoft Intune 使用受控瀏覽器原則管理網際網路存取＞。 <p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器可整合 MAM SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul><br>**注意︰** *應用程式 SDK 無法判斷目標應用程式是否為瀏覽器。在 Android 裝置上，允許支援 HTTP/HTTPS 意圖的其他 Managed Browser 應用程式。* | **未設定** |
+|**與受原則管理的瀏覽器共用 Web 內容** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇：<ul><li>**需要**：只允許在原則受控的瀏覽器中開啟 Web 內容。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器識別碼]  設定中定義的非受控瀏覽器開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：需要 Intune 公司入口網站 5.0.4415.0 版或更新版本。</li><li>**未設定**：允許任何應用程式中的 Web 連結 </li></ul><br><br> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受控的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<br><br>**原則受控的瀏覽器**<br>如果您部署多個原則受控的瀏覽器，則只會啟動其中一個。  啟動順序依序為 Intune Managed Browser 和 Microsoft Edge。  在 Android 上，如果未安裝 Intune Managed Browser 或 Microsoft Edge，您的終端使用者可以從支援 HTTP/HTTPS 連結的其他原則受控應用程式中進行選擇。<p>如果原則受控的瀏覽器為必要但尚未安裝，則會提示您的終端使用者安裝 Intune Managed Browser。<p>如果原則受控的瀏覽器為必要，則 Android 應用程式連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。<p>**Intune 裝置註冊**<br>如果您使用 Intune 來管理裝置，請參閱＜透過 Microsoft Intune 使用受控瀏覽器原則管理網際網路存取＞。 <p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器可整合 MAM SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul><br>**注意︰** *應用程式 SDK 無法判斷目標應用程式是否為瀏覽器。在 Android 裝置上，允許支援 HTTP/HTTPS 意圖的其他 Managed Browser 應用程式。* | **未設定** |
+|<ul><ui>**非受控瀏覽器** | 輸入單一瀏覽器的應用程式識別碼。 來自原則受控應用程式的 Web 內容 (http/https 連結) 將會在指定的瀏覽器中開啟。  Web 內容在目標瀏覽器中將會是非受控。 | **空白** |
+|<ul><ui>**非受控瀏覽器名稱** | 輸入與 [非受控瀏覽器識別碼]  關聯之瀏覽器的應用程式名稱。 若未安裝指定的瀏覽器，將會向使用者顯示此名稱。  | **空白** |
 
-  ## <a name="data-transfer-exemptions"></a>資料傳輸豁免
+
+## <a name="data-transfer-exemptions"></a>資料傳輸豁免
 
   有一些 Intune 應用程式保護原則可以允許豁免應用程式和平台服務傳送和接收資料傳輸。 例如，Android 上所有 Intune 受控應用程式都必須能夠將資料傳輸至 Google 文字轉換語音並從中傳輸資料，因此可以大聲讀出您行動裝置螢幕中的文字。 這份清單可能隨時變更，並反映視為對安全產能有所幫助的服務和應用程式。
 
-  ### <a name="full-exemptions"></a>完整豁免
+### <a name="full-exemptions"></a>完整豁免
 
   這些應用程式和服務完全可以接收和傳送 Intune 管理應用程式的資料傳輸。
 
@@ -81,7 +84,7 @@ ms.locfileid: "66402781"
   | com.azure.authenticator | Azure Authenticator 應用程式，這是許多情況下成功驗證的必要項目。 |
   | com.microsoft.windowsintune.companyportal | Intune 公司入口網站|
 
-  ### <a name="conditional-exemptions"></a>條件式豁免
+### <a name="conditional-exemptions"></a>條件式豁免
   只有在特定情況下，這些應用程式和服務才能接收和傳送 Intune 管理應用程式的資料傳輸。
 
   |應用程式/服務名稱 | 說明 | 豁免條件|
@@ -93,7 +96,7 @@ ms.locfileid: "66402781"
 
 如需詳細資訊，請參閱[應用程式的資料傳輸原則例外狀況](app-protection-policies-exception.md)。
 
-##  <a name="access-requirements"></a>存取需求
+## <a name="access-requirements"></a>存取需求
 
 | 設定 | 如何使用 |  
 |------|------| 

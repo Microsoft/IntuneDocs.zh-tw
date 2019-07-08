@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 703fafec3799b1552ec275c7c88b24b42d2259b9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044016"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494062"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
 使用 Microsoft Intune 中的應用程式設定原則，提供 iOS 或 Android 應用程式的組態設定。 這些組態設定可讓您自訂應用程式。 您不會直接將這些設定原則指派給使用者或裝置。 而是建立設定原則與應用程式的關聯，然後指派應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是第一次執行時)，便會使用這些設定。
 
-您可以使用包含與排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。
+您可以使用包含與排除指派的組合，將應用程式設定原則指派給一群使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的使用者群組。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]  、[所有裝置]  和 [所有使用者及所有裝置]  。
 
 例如，應用程式組態設定可能需要您指定下列任何詳細資料：
 
@@ -64,7 +64,7 @@ ms.locfileid: "66044016"
 
 ### <a name="managed-devices"></a>受管理的裝置
 
- - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受管理的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+ - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
  - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
 
 ### <a name="managed-apps"></a>受管理的應用程式

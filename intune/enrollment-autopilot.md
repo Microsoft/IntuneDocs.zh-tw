@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389313"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512118"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -35,7 +35,7 @@ Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維�
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何在 Intune 中取得 CSV 以進行匯入
 
-請參閱了解 powershell cmdlet 以取得使用方法的詳細資訊。
+如需詳細資訊，請參閱＜了解 PowerShell Cmdlet＞。
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維�
 
     ![Windows Autopilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出裝置的序號、選擇性 Windows 產品識別碼、硬體雜湊和選擇性群組標籤。 您最多可在清單中建立 500 個資料列。 請使用以下顯示的標題和行格式：`Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出裝置的序號、Windows 產品識別碼、硬體雜湊和選擇性群組標籤、指派的使用者與裝置的順序識別碼。 您最多可在清單中建立 500 列。 使用下面顯示的標題和行格式：
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![新增 Windows Autopilot 裝置的螢幕擷取畫面](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維�
     尚未註冊的 Autopilot 裝置為裝置名稱與序號相同的裝置。
 4. 如果針對上述的 [成員資格類型]  選擇 [動態裝置]  ，則在 [群組]  刀鋒視窗中，請選擇 [動態裝置成員]  ，然後在 [進階規則]  方塊中輸入下列任意一項代碼。
     - 若要建立包含您所有 Autopilot 裝置的群組，請輸入：`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Intune 的群組標籤欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若建立的群組要包含具特定群組標籤 (OrderID) 的所有 Autopilot 裝置，則必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - Intune 的群組標籤欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若建立的群組要包含具特定[群組標籤 (OrderID)]的所有 Autopilot 裝置，您必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若建立的群組要包含具有特定採購單識別碼的所有 Autopilot 裝置，請鍵入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     新增 [進階規則]  代碼後，選擇 [儲存]  。
@@ -95,7 +96,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
     - **使用者授權合約 (EULA)** ：(Windows 10，版本 1709 或更新版本) 選擇是否要向使用者顯示授權合約。
     - **隱私權設定**：選擇是否要向使用者顯示隱私權設定。
     >[!IMPORTANT]
-    >若為 Windows 10 1903 版和更新版本的 Autopilot 部署，則診斷資料會自動預設為 [Full (完整)]。 如需詳細資訊，請參閱 [Windows 診斷資料](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    >若為 Windows 10 1903 版和更新版本的 Autopilot 部署，則診斷資料會自動預設為 [Full (完整)]。 如需詳細資訊，請參閱 [Windows 診斷資料](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **隱藏變更帳戶選項 (需要 Windows 10 1809 版或更新版本)** ：選擇 [隱藏]  以防止在公司登入和網域錯誤頁面上顯示變更帳戶選項。 此選項需要[在 Azure Active Directory 中設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **使用者帳戶類型**：選擇使用者的帳戶類型 ([系統管理員]  或 [標準]  使用者)。
@@ -118,7 +119,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
     ![[檢閱] 頁面的螢幕擷取畫面](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune 將會定期檢查指派的群組中是否有新裝置，然後開始將設定檔指派給這些裝置的程序。 此程序可能需要幾分鐘的時間才能完成。 部署裝置之前，請確定此程序已完成。  您可以在 [裝置註冊]  > [Windows 註冊] > [裝置]  下檢查，此時應該會看到設定檔狀態從 [未指派] 變更為 [指派中]，最後變更為 [已指派]。
+> Intune 將會定期檢查指派的群組中是否有新裝置，然後開始將設定檔指派給這些裝置的程序。 此程序可能需要幾分鐘的時間才能完成。 部署裝置之前，請確定此程序已完成。  您可以在 [裝置註冊]  > [Windows 註冊] >   [裝置] >   下檢查，此時應該會看到設定檔狀態從 [未指派] 變更為 [指派中]，最後變更為 [已指派]。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>編輯 Autopilot 部署設定檔
 建立 Autopilot 部署設定檔之後，您可以編輯部署設定檔的某些部分。   

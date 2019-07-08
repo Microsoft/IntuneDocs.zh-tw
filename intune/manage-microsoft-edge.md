@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044889"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529633"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>使用 Microsoft Edge 與 Microsoft Intune 管理 Web 存取
 
 使用 Microsoft Edge 的 Intune 應用程式保護原則，可以確保一律使用就地保護公司網站的存取。 提供以下依據 Intune 原則啟用的 Microsoft Edge 企業功能。 這些企業功能包括：
 
-1.  **雙重識別** - 使用者可以新增工作帳戶與個人帳戶以進行瀏覽。 系統會完整區隔兩個身分識別，類似於 Office 365 和 Outlook 中的架構與體驗。 Intune 系統管理員可以在工作帳戶內，針對受保護的瀏覽體驗設定所需原則。
-2.  **Intune 應用程式保護原則整合** – 因為 Microsoft Edge 與 Intune SDK 整合，所以您可以設定應用程式保護原則的目標，以確保資料外洩防護。 這些功能包括控制剪下、複製與貼上、防止螢幕擷取，以及確保使用者選取的連結只在其他受管理用程式中開啟。
-3.  **Azure 應用程式 Proxy 整合** – 您可以控制對 SaaS 應用程式和 Web 應用程式的存取，協助確保無論使用者是從公司網路連線或從網際網路連線，瀏覽器型應用程式都只會在安全的 Microsoft Edge 瀏覽器中執行。
-4.  **應用程式設定** – 您可以利用應用程式組態設定，來加強組織的安全性狀態，並為終端使用者設定容易使用的功能。 例如，您可以定義書籤、首頁捷徑、允許/封鎖的網站、Azure 應用程式 Proxy 和更多功能。
+1. **雙重識別** - 使用者可以新增工作帳戶與個人帳戶以進行瀏覽。 系統會完整區隔兩個身分識別，類似於 Office 365 和 Outlook 中的架構與體驗。 Intune 系統管理員可以在工作帳戶內，針對受保護的瀏覽體驗設定所需原則。
+2. **Intune 應用程式保護原則整合** – 因為 Microsoft Edge 與 Intune SDK 整合，所以您可以設定應用程式保護原則的目標，以確保資料外洩防護。 這些功能包括控制剪下、複製與貼上、防止螢幕擷取，以及確保使用者選取的連結只在其他受管理用程式中開啟。
+3. **Azure 應用程式 Proxy 整合** – 您可以控制對 SaaS 應用程式和 Web 應用程式的存取，協助確保無論使用者是從公司網路連線或從網際網路連線，瀏覽器型應用程式都只會在安全的 Microsoft Edge 瀏覽器中執行。
+4. **應用程式設定** – 您可以利用應用程式組態設定，來加強組織的安全性狀態，並為終端使用者設定容易使用的功能。 例如，您可以定義書籤、首頁捷徑、允許/封鎖的網站、Azure 應用程式 Proxy 和更多功能。
 適用於 Microsoft Edge 的 Microsoft Intune 保護原則可協助保護您的組織資料和資源。 使用這些原則來搭配 Microsoft Edge 能確保公司資源無論是在原生安裝的應用程式內，或透過網頁瀏覽器存取時，都會受到保護。
 
 ## <a name="getting-started"></a>開始使用
@@ -115,8 +115,8 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
     > [!NOTE]
     > Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 
 
-8.  完成之後，請按一下 [確定]  。
-9.  在 [新增設定原則]  刀鋒視窗上，選擇 [新增]  。<br>
+8. 完成之後，請按一下 [確定]  。
+9. 在 [新增設定原則]  刀鋒視窗上，選擇 [新增]  。<br>
     會隨即建立新設定，然後顯示在 [應用程式設定]  刀鋒視窗上。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>指派您建立的組態設定 
@@ -184,7 +184,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**與受原�
 
 |    金鑰    |    值    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    此設定值是書籤清單。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 `|` 字元分隔標題和 URL。      **範例：**<br>`Microsoft Bing|https://www.bing.com`<p>若要設定多個書籤，請以雙引號字元 `||` 分隔每組配對。<p>**範例：**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    此設定值是書籤清單。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 `|` 字元分隔標題和 URL。      **範例：**<br>`Microsoft Bing|https://www.bing.com`<br>若要設定多個書籤，請以雙引號字元 `||` 分隔每組配對。<p>**範例：**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>如何在 Microsoft Edge 書籤中顯示 MyApps
 
@@ -201,16 +201,17 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**與受原�
 
 |    金鑰    |    值    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    從下列選項進行選擇：<p>1.指定允許的 URL (僅允許這些 URL；不能存取其他站台)：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定封鎖的 URL (可以存取所有其他網站)：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用垂直線 `|` 字元分隔。<p>**範例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    從下列選項進行選擇：<p>1.指定允許的 URL (僅允許這些 URL；不能存取其他站台)：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定封鎖的 URL (可以存取所有其他網站)：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用垂直線 `|` 字元分隔。<br>**範例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>適用於允許和封鎖網站清單的 URL 格式 
 您可以使用各種不同 URL 格式來建置您的允許/封鎖網站清單。 下表會詳細說明這些允許的模式。 在開始之前有一些注意事項： 
 - 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
-- 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (*)。
+- 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (\*)。
+- 星號只能比對主機名稱的整個組成部分 (以句點分隔) 或路徑的整個部分 (以斜線分隔)。 例如，**不**支援 `http://*contoso.com`。
 - 您可以在位址中指定連接埠號碼。 如不指定連接埠號碼，會使用下列值：
     - 針對 http 使用連接埠 80
     - 針對 https 使用連接埠 443
-- **不**支援對連接埠號碼使用萬用字元。 例如，不支援 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。
+- **不**支援對連接埠號碼使用萬用字元。 例如，不支援 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
 
     |    URL    |    詳細資料    |    相符項    |    不符合    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**與受原�
     - IP 位址
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**與受原�
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>將使用者導向 Microsoft Edge，而不是 Intune Managed Browser 
 
-Intune Managed Browser 和 Microsoft Edge 現在都可以用來作為受原則保護的瀏覽器。 為了確保您的使用者會被導向使用正確瀏覽器應用程式，請用下列組態設定來設定所有 Intune 受控應用程式 (例如 Outlook 和 OneDrive) 的目標：
+Intune Managed Browser 和 Microsoft Edge 現在都可以用來作為受原則保護的瀏覽器。 為了確保您的使用者會被要求使用正確的瀏覽器應用程式，請用下列組態設定來設定所有受 Intune 管理之應用程式 (例如 Outlook、OneDrive 與 SharePoint) 的目標：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    值 `true` 將會引導使用者使用 Microsoft Edge。<p>值 `false` 將會引導使用者使用 Intune Managed Browser。    |
+|    `com.microsoft.intune.useEdge`    |    值 `true` 將會引導您的使用者下載並使用 Microsoft Edge。<br>值 `false` 將會允許您的使用者使用 Intune Managed Browser。    |
 
-如果未設定此應用程式設定值，則下列邏輯會定義哪一個瀏覽器將用來開啟公司的連結。
+如果**未**設定此應用程式設定值，則下列邏輯會定義哪一個瀏覽器將用來開啟公司連結。
 
 在 Android 上：
 - 如果使用者已在其裝置中下載 Intune Managed Browser 和 Microsoft Edge，將會開啟前者。 

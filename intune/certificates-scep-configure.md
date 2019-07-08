@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344078"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494294"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -30,10 +30,10 @@ ms.locfileid: "67344078"
 
 - **Active Directory 網域**：本節所列的所有伺服器 (除了 Web 應用程式 Proxy 伺服器) 均須加入 Active Directory 網域。
 
-- **憑證授權單位** (CA)：必須是在企業版 Windows Server 2008 R2 或更新版本上執行的 Microsoft 企業憑證授權單位 (CA)。 不支援獨立 CA。 如需詳細資料，請參閱[安裝憑證授權單位 (機器翻譯)](http://technet.microsoft.com/library/jj125375.aspx)。
+- **憑證授權單位** (CA)：必須是在企業版 Windows Server 2008 R2 或更新版本上執行的 Microsoft 企業憑證授權單位 (CA)。 不支援獨立 CA。 如需詳細資料，請參閱[安裝憑證授權單位 (機器翻譯)](https://technet.microsoft.com/library/jj125375.aspx)。
     如果您的 CA 執行 Windows Server 2008 R2，您必須 [從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。
 
-- **NDES 伺服器**：在 Windows Server 2012 R2 或更新版本上，設定「網路裝置註冊服務」(NDES) 伺服器角色。 Intune 不支援在同時執行企業 CA 的伺服器上使用 NDES。 請參閱[網路裝置註冊服務指導方針](http://technet.microsoft.com/library/hh831498.aspx)，以取得有關如何設定 Windows Server 2012 R2 來裝載 NDES 的指示。
+- **NDES 伺服器**：在 Windows Server 2012 R2 或更新版本上，設定「網路裝置註冊服務」(NDES) 伺服器角色。 Intune 不支援在同時執行企業 CA 的伺服器上使用 NDES。 請參閱[網路裝置註冊服務指導方針](https://technet.microsoft.com/library/hh831498.aspx)，以取得有關如何設定 Windows Server 2012 R2 來裝載 NDES 的指示。
 NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原則模組和網路裝置註冊服務](https://technet.microsoft.com/library/dn473016.aspx)中可以找到將 NDES 伺服器部署至不同樹系、隔離網路或內部網域的詳細資訊。 您無法使用已經由另一個 MDM 使用的 NDES 伺服器。
 
 - **Microsoft Intune 憑證連接器**：在 Intune 入口網站中，移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝 SCEP 連接器的步驟」  。 使用入口網站中的下載連結，開始下載憑證連接器安裝程式 **NDESConnectorSetup.exe**。  您將以 NDES 角色在伺服器上執行此安裝程式。  
@@ -507,7 +507,8 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 - 雖然您會分別指派每個設定檔，但仍需指派受信任的根 CA 以及 SCEP 或 PKCS 設定檔。 否則，SCEP 或 PKCS 憑證原則會失敗。
 
     > [!NOTE]
-    > 針對 iOS，如果您部署多個使用相同憑證設定檔的資源設定檔，就應該會在管理設定檔中看到多個憑證複本。
+    > 在 iOS 裝置上，當 SCEP 憑證設定檔與額外設定檔 (例如 Wi-Fi 或 VPN 設定檔) 關聯時，裝置會接受那些每個額外設定檔的憑證。 這會導致 iOS 裝置具有多個由 SCEP 憑證要求提供的憑證。  
+
 - 如果您針對 Intune 和 Configuration Manager 使用共同管理，請在 Configuration Manager 中，針對「資源存取原則」  [設定工作負載滑動軸](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)為 [Intune]  或 [試驗 Intune]  。 此設定可讓 Windows 10 用戶端啟動要求憑證的流程。  
 
 如需如何指派設定檔的資訊，請參閱[指派裝置設定檔](device-profile-assign.md)。
