@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,78 +18,81 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 370d6372cf3df2ff807069fe8d54f30da23e7ba2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55842604"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528643"
 ---
-# <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登入公司入口網站應用程式？ <!--User Story 1132123-->
+# <a name="sign-in-to-company-portal"></a>登入公司入口網站  
 
-您可以使用公司入口網站應用程式來存取公司資源，如電子郵件和商務應用程式。 登入公司入口網站有兩種主要方式：
+有三種方式可登入公司入口網站應用程式：
 
-* 使用您的工作電子郵件地址和密碼
-* 從另一部裝置登入
+* 使用您的工作電子郵件地址與密碼登入。  
+* 使用憑證式驗證登入。  
+* 從另一部裝置登入。    
 
-即使下圖適用於 iOS，但 Android 和 Windows 裝置的程序幾乎都相同。
 
-## <a name="signing-in-with-your-email-address-and-password"></a>使用您的電子郵件地址和密碼登入
+## <a name="sign-in-with-your-email-address-and-password"></a>使用您的電子郵件地址與密碼登入
+下列步驟說明將適用於 iOS 的公司入口網站的螢幕擷取畫面。  
 
-1. 在您的裝置上開啟公司入口網站應用程式，然後點選 [登入]。
+1. 開啟您的裝置，點選 上的應用程式**登入**。  
 
    ![公司入口網站登入頁面，具有一個人員位於代表網站的圖形前方的圖示。 下面是「取得公司資源的存取權，並維護其安全」文字及 [登入] 按鈕。 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
-   沒有公司入口網站應用程式？ 了解如何針對 [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) 或 [Android](install-the-company-portal-app-android.md) 進行安裝和下載。
 
-2. 輸入您的 [工作或學校帳戶]，然後點選 [下一步]。
+
+2. 輸入您的 [工作或學校帳戶]  ，然後點選 [下一步]  。
 
    ![系統會在畫面上單獨提示使用者輸入電子郵件地址，而不是同時提示輸入電子郵件與密碼。](/intune-user-help/media/cp_ios_aad_signin_after_1804_002.png)
 
-3. 輸入您的密碼，然後點選 [登入]。
+3. 輸入您的密碼，然後點選 [登入]  。
 
    ![接受使用者的電子郵件地址後，系統會提示使用者輸入密碼。](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. 在公司入口網站接受您的登入之後，就會將您登入，而您便可以開始存取公司資源。   
+4. 應用程式會確認您的認證。 完成時，您可以存取您組織的資源，並安裝可用的應用程式。  
 
-   ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出進度。](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
+   ![執行驗證程序之後，公司入口網站應用程式會登入，並顯示載入列。](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
-## <a name="signing-in-with-certificate-based-authentication"></a>以憑證式驗證登入
+## <a name="sign-in-with-certificate-based-authentication"></a>使用憑證式驗證登入
 
-1.  在您的裝置上開啟「公司入口網站」應用程式。
+1. 在您的裝置上開啟「公司入口網站」應用程式。  
 
-2.  輸入 [工作或學校帳戶]。
+2. 輸入 [工作或學校帳戶]  。  
 
-3.  點選 [以憑證登入] 連結。
+3. 點選 [以憑證登入]  連結。  
 
-4.  點選 [繼續] 以使用憑證。
+4. 點選 [繼續]  以使用憑證。  
 
-## <a name="signing-in-from-another-device"></a>從另一部裝置登入
+## <a name="sign-in-from-another-device"></a>從另一部裝置登入
 
-如果您不使用密碼來登入公司資源，則可以使用加一部裝置的方式來確認您是具有適當存取層級的適當人員。 如果貴公司使用智慧卡來存取您的電腦，您可能需要使用另一部裝置來登入。
+如果貴公司使用智慧卡來存取您的電腦，它可能是您必須從另一部裝置登入進行驗證。  
 
-1. 請選取電子郵件文字方塊下方的 [從另一部裝置登入] 連結，而不是輸入電子郵件地址。
+1. 在您的裝置上開啟「公司入口網站」應用程式。 請確定它是您將用來存取您的工作資源的裝置。       
 
-   ![公司入口網站登入頁面會提示使用者輸入電子郵件地址。  下面是 [下一步] 按鈕和 [從另一部裝置登入] 連結。 此外，也包含 [無法存取您的帳戶?] 連結 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+1. 選取 **從另一部裝置登入**。  
 
-2. 您會收到用來登入公司入口網站的唯一一次性驗證碼。
+   ![公司入口網站登入頁面會提示使用者輸入電子郵件地址。  顯示 [下一步] 按鈕與 [從另一部裝置登入] 連結。 此外，也包含 [無法存取您的帳戶?] 連結 底部的連結會指向 Microsoft 隱私權與 Cookie 資訊。](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+
+2. 您會收到用來登入公司入口網站的唯一一次性驗證碼。 複製程式碼。
 
    ![系統會提供指示和一個唯一密碼，說明應從工作電腦移至 https://microsoft.com/devicelogin 頁面，然後使用該驗證碼來進行登入。](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 在其他裝置上，開啟瀏覽器並移至 [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) 來輸入該驗證碼。
+3. 其他裝置上 （您用來驗證的那一個），請開啟瀏覽器並移至[ https://microsoft.com/devicelogin ](https://microsoft.com/devicelogin)。 輸入或貼上程式碼。  
 
    ![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. 在 [裝置登入] 頁面驗證該驗證碼後，選取 [繼續] 以允許在其他裝置上登入公司入口網站。
+4. 選取 __繼續__允許公司入口網站在您工作的裝置上登入。   
 
    ![使用者已將唯一驗證碼輸入至欄位，且 [裝置登入] 網站已要求確認 Intune 公司入口網站是接收驗證以登入的正確應用程式。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
-5. 驗證碼一旦驗證後，您便可以關閉此視窗。
+5. 驗證碼一旦驗證後，您便可以關閉此視窗。  
 
    ![確認頁面指出使用者現已在其裝置上登入公司入口網站應用程式，並且可以關閉此頁面。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. 在原始裝置上，公司入口網站應用程式會開始登入。
+6. 公司入口網站應用程式將您登入您工作的裝置上。  
 
    ![經過驗證程序之後，公司入口網站應用程式會登入，並以載入列指出其進度。](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
-ms.translationtype: HT
+ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403083"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494492"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -525,7 +525,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 這些設定使用[隱私權原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy)，它也會列出支援的 Windows 版本。
 
-- **輸入個人化**：[封鎖]  防止使用語音聽寫以及和 Cortana 及其他使用 Microsoft 雲端式語音辨識的應用程式通話。 此功能已停用，且使用者不能啟用線上語音辨識使用設定。 [未設定]  (預設) 可讓使用者選擇。 如果您允許這些服務，Microsoft 可能會收集語音資料來 改善服務。
+- **輸入個人化**：[封鎖]  可防止使用語音聽寫以及和 Cortana 及其他使用 Microsoft 雲端式語音辨識的應用程式通話。 此功能已停用，且使用者不能啟用線上語音辨識使用設定。 [未設定]  (預設) 可讓使用者選擇。 如果您允許這些服務，Microsoft 可能會收集語音資料來 改善服務。
 - **自動接受配對及隱私權使用者同意提示**：選擇 [允許]  讓 Windows 在執行應用程式時自動接受配對及隱私權同意訊息。 [未設定]  (預設) 會在開啟應用程式時，防止自動接受配對及隱私權使用者同意視窗。
 - **發佈使用者活動**：[封鎖]  會防止共用體驗以及在活動摘要中探索最近使用的資源。 [未設定]  (預設) 啟用這項功能讓應用程式可以發佈終端使用者活動。
 - **僅限本機活動**： [封鎖]  會防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。 [未設定]  (預設) 會啟用此設定。

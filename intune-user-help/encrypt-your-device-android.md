@@ -1,11 +1,11 @@
 ---
-title: 加密 Android 裝置的 Intune 公司入口網站 |Microsoft Docs
-description: 若要開啟裝置加密 Android 裝置上的步驟
+title: 加密 Android 裝置的 Intune |Microsoft Docs
+description: 開啟 Android 裝置加密時由 Intune 所需的步驟
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490582"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545249"
 ---
 # <a name="encrypting-your-android-device"></a>加密 Android 裝置
 
@@ -33,20 +33,22 @@ ms.locfileid: "58490582"
 
 ## <a name="turn-on-encryption"></a>開啟加密
 
-如果您收到一則訊息，您需要加密裝置的公司入口網站中，完成下列步驟。 
+如果公司入口網站或 Microsoft Intune 應用程式，將提示您加密您的裝置，請完成下列步驟。 
 
 > [!Note]
 > 華為、 Vivo 和 oppo 製造的裝置特定 Android 裝置無法加密。 如需詳細資訊，請參閱[這裡](your-device-appears-encrypted-but-cp-says-otherwise-android.md)。  
 
-1.  設定裝置螢幕鎖定。  
-    a. 移至 [設定] > [Lock screen and security] \(鎖定螢幕和安全性) > [Screen lock type] \(螢幕鎖定類型\)。  
+1. 設定裝置螢幕鎖定。  
+    a. 移至 [設定]   > [Lock screen and security] \(鎖定螢幕和安全性)   > [Screen lock type] \(螢幕鎖定類型\)  。  
     b. 選取  **PIN**，**密碼**，或**模式**。  
     c. 請遵循畫面上的指示來設定您的螢幕鎖定。  
 
 2. 請返回**鎖定螢幕和安全性**，然後選取**安全啟動**。
 3. 選擇**需要 pin 碼時，裝置會開啟** > **確定**。
 4. 輸入您的 PIN 以確認並加密您的裝置。
-5. 開啟公司入口網站應用程式，選取您的裝置，然後點選 [檢查裝置設定]。  
+5. 開啟公司入口網站或 Microsoft Intune 的應用程式。
+    * 公司入口網站使用者：選取您的裝置，然後點選 [檢查裝置設定]  。 
+    * Microsoft Intune 使用者： 您必須等到頁面更新，但它會加密狀態應該變更為符合規範。  
 
 執行 Android 4.4 及更早版本的裝置可能沒有**安全啟動**選項。 在此情況下，完成下列步驟來加密您的裝置。
 
@@ -55,14 +57,16 @@ ms.locfileid: "58490582"
     * **儲存體** > **鎖定螢幕和安全性** > **其他安全性設定** 
 
 2. 遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
-3. 開啟公司入口網站應用程式，選取您的裝置，然後點選 [檢查裝置設定]。  
+3. 開啟公司入口網站或 Microsoft Intune 的應用程式。
+    * 公司入口網站使用者：選取您的裝置，然後點選 [檢查裝置設定]  。  
+    * Microsoft Intune 使用者： 您必須等到頁面更新，但它會加密狀態應該變更為符合規範。
 
 ## <a name="troubleshoot"></a>疑難排解  
 **問題**： 您已加密您的裝置和
 
 - 已停用 [加密] 按鈕。
 - 您會看到仍需加密的訊息。
-- 您在嘗試使用公司入口網站應用程式時發生錯誤。
+- 嘗試使用公司入口網站或 Microsoft Intune 應用程式時，您會收到錯誤。
 
 **可以嘗試的動作**
 

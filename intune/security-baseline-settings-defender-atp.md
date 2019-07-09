@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197534"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549133"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -192,7 +192,7 @@ ms.locfileid: "67197534"
 ## <a name="device-control"></a>裝置控制  
 
 - **在完整掃描期間掃描抽取式磁碟機**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) -  當設定為 [是]  時，Defender 會在執行完整掃描期間在抽取式磁碟機  (例如快閃磁碟機) 中掃描惡意軟體與垃圾軟體。 Defender 防毒軟體會掃描 USB 裝置上的所有檔案，再執行 USB 裝置。
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - 當設定為 [是]  時，Defender 會在執行完整掃描期間在抽取式磁碟機 (例如快閃磁碟機) 中掃描惡意軟體與垃圾軟體。 Defender 防毒軟體會掃描 USB 裝置上的所有檔案，再執行 USB 裝置。
 
   此清單中的相關設定：*Defender/AllowFullScanOnMappedNetworkDrives*  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373648"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530312"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Android Enterprise 裝置的自訂設定
 
-透過 Microsoft Intune，您可以使用「自訂設定檔」新增或建立 Android Enterprise 裝置的自訂設定。 自訂設定檔是 Intune 中的功能。 其設計目的是為了新增未內建在 Intune 的裝置設定和功能。
+透過 Microsoft Intune，您可以使用「自訂設定檔」新增或建立 Android Enterprise 工作設定檔裝置的自訂設定。 自訂設定檔是 Intune 中的功能。 其設計目的是為了新增未內建在 Intune 的裝置設定和功能。
 
 Android Enterprise 自訂設定檔會使用開放行動聯盟的統一資源識別項 (OMA-URI) 設定來控制 Android Enterprise 裝置上的各種功能。 行動裝置製造商通常會使用這些設定來控制這些功能。
 
-Intune 支援有限數目的 Android 自訂設定檔。
+Intune 支援有限的數目的 Android Enterprise 自訂設定檔，包括：
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/設定：[附有預先共用金鑰建立 Wi-fi 設定檔](wi-fi-profile-shared-key.md)有一些範例。
+- ./Vendor/MSFT/VPN/Profile/Name//packagelist:[建立的每個應用程式 VPN 設定檔](android-pulse-secure-per-app-vpn.md)有一些範例。
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste： 請參閱[範例](#example)（在本文中）。
+
+如果您需要其他設定，請參閱[OEMConfig Android enterprise](android-oem-configuration-overview.md)。
 
 本文示範如何建立 Android Enterprise 裝置的自訂設定檔。 其中也會提供封鎖複製和貼上的自訂設定檔範例。
 
