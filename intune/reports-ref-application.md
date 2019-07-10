@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549227"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713132"
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 

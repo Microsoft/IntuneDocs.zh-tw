@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
-ms.translationtype: HT
+ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558511"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648885"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -51,17 +51,17 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 > [!Note]  
 > 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解]  窗格。
 
-## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>目標使用者群組的應用程式安裝就不會到達裝置
-當您有安裝應用程式的問題時，應該考慮下列動作：
-- 如果應用程式不會顯示在公司入口網站中，請確定應用程式部署**可用**意圖和使用者使用應用程式支援的裝置類型，存取公司入口網站。
-- 對於 Windows BYOD 裝置，使用者必須將工作帳戶新增至裝置。
-- 檢查使用者是否透過 AAD 裝置限制：
-  1. 瀏覽至[Azure Active Directory 裝置設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)。
-  2. 請記下設定的值**最多每位使用者的裝置**。
-  3. 瀏覽至[Azure Active Directory 使用者](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)。
-  4. 選取受影響的使用者，然後按一下**裝置**。
-  5. 如果使用者是透過設定的限制，然後刪除任何不再需要的過時記錄。
-- IOS DEP 裝置，請確定使用者列為**由使用者註冊**Intune 裝置概觀 刀鋒視窗中。 如果它顯示為 NA，然後部署組態原則的 Intune 公司入口網站。 如需詳細資訊，請參閱[設定公司入口網站應用程式](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>以使用者群組為目標的應用程式安裝無法連線到裝置
+當您安裝應用程式時發生問題時, 應該考慮下列動作:
+- 如果應用程式未顯示在公司入口網站中, 請確定已使用**可用**的意圖部署應用程式, 且使用者正在使用應用程式支援的裝置類型來存取公司入口網站。
+- 針對 Windows BYOD 裝置, 使用者必須將工作帳戶新增至裝置。
+- 檢查使用者是否超過 AAD 裝置限制:
+  1. 流覽至 [ [Azure Active Directory 裝置設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)]。
+  2. 請記下 [**每位使用者的裝置數目上限**] 設定的值。
+  3. 流覽至 [ [Azure Active Directory 使用者](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)]。
+  4. 選取受影響的使用者, 然後按一下 [**裝置**]。
+  5. 如果使用者超過設定的限制, 則會刪除不再需要的任何過時記錄。
+- 針對 iOS DEP 裝置, 請確定使用者已在 Intune 裝置總覽分頁中列為 [已**註冊使用者**]。 如果顯示的是 NA, 則為 Intune 公司入口網站部署設定原則。 如需詳細資訊，請參閱[設定公司入口網站應用程式](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>針對 Win32 應用程式安裝進行疑難排解
 
@@ -161,8 +161,14 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 
 [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (針對封裝、部署及查詢 Microsoft 網上商店應用程式進行疑難排解) 主題中的資訊可協助您使用 Intune 或任何其他方法，為從 Microsoft 網上商店安裝應用程式時可能發生的常見問題進行疑難排解。
 
+## <a name="app-troubleshoooting-resources"></a>應用程式 troubleshoooting 資源
+- [將 Visio 和 Project 部署為 Office Pro Plus 部署的一部分](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [採取動作, 以確保透過 Intune 在 Windows 10 1903 上部署的 MSfB 應用程式安裝](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [針對 Microsoft Intune 中的 MSI 應用程式部署進行疑難排解](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [將軟體發佈到 Intune 傳統 Windows 電腦代理程式的最佳作法](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## <a name="next-steps"></a>後續步驟
 
 - 如需其他 Intune 疑難排解資訊，請參閱[使用疑難排解入口網站來協助公司的使用者](help-desk-operators.md)。 
-- 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊，請參閱 [Microsoft Intune 中的已知問題](known-issues.md)。
+- 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊, 請參閱[Intune 客戶成功](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)。
 - 需要額外說明嗎？ 請參閱[如何取得 Microsoft Intune 支援](get-support.md)。

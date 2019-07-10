@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f91ec3124d8fab067ec32194a68508762c6cef33
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043553"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735252"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>使用現有的內部部署 Proxy 伺服器
 
@@ -64,6 +64,7 @@ OS 元件會藉由對 wpad.domainsuffix 執行 DNS 查閱，嘗試尋找 Proxy �
     </appSettings>
 </configuration>
 ```
+
 若要確保連接器更新程式服務也會略過 Proxy，請對 C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config 進行類似的變更。
 
 ```xml
@@ -88,8 +89,8 @@ OS 元件會藉由對 wpad.domainsuffix 執行 DNS 查閱，嘗試尋找 Proxy �
 一旦修改設定檔，您必須重新啟動 Intune Connector 服務。 
 
 1. 開啟 **services.msc**。
-2. 尋找並選取 [Intune ODJConnector Service]。
-3. 選取 [重新啟動]。
+2. 尋找並選取 [Intune ODJConnector Service]  。
+3. 選取 [重新啟動]  。
 
 ![重新啟動服務的螢幕擷取畫面](media/autopilot-hybrid-connector-proxy/service-restart.png)
 

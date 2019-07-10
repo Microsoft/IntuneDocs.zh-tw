@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049987"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735715"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>註冊 Android Enterprise 專用裝置或完全受控裝置 (預覽)
 
@@ -46,13 +46,13 @@ ms.locfileid: "66049987"
 針對 Android 6 和更新版本的裝置，您可以使用權杖來註冊裝置。 Android 6.1 和更新版本也可在使用 **afw#setup** 註冊方法時，利用 QR 代碼掃描。
 
 1. 開啟已抹除的裝置。
-2. 在 [歡迎使用] 畫面上選取您的語言。
-3. 連線至您的 [Wifi]，然後選擇 [下一步]。
-4. 接受 Google 的條款和條件，然後選擇 [下一步]。
-5. 在 Google 登入畫面上，輸入 **afw#setup** 而不是 Gmail 帳戶，然後選擇 [下一步]。
-6. 針對 [Android 裝置原則] 應用程式選擇 [安裝]。
+2. 在 [歡迎使用]  畫面上選取您的語言。
+3. 連線至您的 [Wifi]  ，然後選擇 [下一步]  。
+4. 接受 Google 的條款和條件，然後選擇 [下一步]  。
+5. 在 Google 登入畫面上，輸入 **afw#setup** 而不是 Gmail 帳戶，然後選擇 [下一步]  。
+6. 針對 [Android 裝置原則]  應用程式選擇 [安裝]  。
 7. 繼續安裝此原則。  某些裝置可能需要接受額外的條款。 
-8. 在 [註冊此裝置] 畫面上，允許您的裝置掃描 QR 代碼或選擇手動輸入權杖。
+8. 在 [註冊此裝置]  畫面上，允許您的裝置掃描 QR 代碼或選擇手動輸入權杖。
 9. 遵循螢幕上的提示來完成註冊。 
 
 ### <a name="enroll-by-using-a-qr-code"></a>使用 QR 代碼註冊
@@ -71,23 +71,24 @@ ms.locfileid: "66049987"
 若要使用 Google 的零接觸系統，裝置必須支援該系統，並與屬於服務一部分的供應商建立關聯。  如需詳細資訊，請參閱 [Google 的零接觸方案網站](https://www.android.com/enterprise/management/zero-touch/)。 
 
 1. 在零接觸主控台中建立新的設定。
-2. 從 EMM DPC 下拉式清單中選擇 [Microsoft Intune]。
+2. 從 EMM DPC 下拉式清單中選擇 [Microsoft Intune]  。
 3. 在 Google 的零接觸主控台中，將下列 JSON 複製/貼上至 DPC extra 欄位中。 以您建立為註冊設定檔一部分的註冊權杖取代 *YourEnrollmentToken* 字串。 請務必用雙引號括住註冊權杖。
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+    ```json
+    { 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+    
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+        } 
     } 
-} 
-```
-4. 選擇 [套用]。
+    ```
+
+4. 選擇 [套用]  。
 
 
 ## <a name="next-steps"></a>後續步驟

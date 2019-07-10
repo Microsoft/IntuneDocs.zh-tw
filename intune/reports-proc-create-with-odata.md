@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412455"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648905"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 

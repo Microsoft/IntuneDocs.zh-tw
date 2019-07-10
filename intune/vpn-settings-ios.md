@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d922ecde0159603acbfbc3dc0590592592d72645
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046204"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713193"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
 
@@ -41,7 +41,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**：若要使用條件式存取，或允許使用者略過 Zscaler 登入畫面，您必須整合 Zscaler Private Access (ZPA) 與 Azure AD 帳戶。 如需詳細步驟，請參閱 [Zscaler 文件](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)。 
+- **Zscaler**：若要使用條件式存取，或允許使用者略過 Zscaler 登入畫面，您必須整合 Zscaler Private Access (ZPA) 與 Azure AD 帳戶。 如需詳細步驟，請參閱 [Zscaler 文件](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad)。 
 - **自訂 VPN**
 
 > [!NOTE]
