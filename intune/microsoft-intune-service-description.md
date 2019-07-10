@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b25a72fdc552433886f7eb3349a8f396e2019ea
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041644"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549437"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
 
@@ -39,13 +39,13 @@ Intune 和 Azure Active Directory (Azure AD) 緊密整合以進行身分識別�
 您可以從包含 100 個使用者授權的 30 天免費試用版開始使用 Intune。 若要使用免費的試用版，[請前往 Intune 註冊頁面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。 如果您的組織有 Enterprise 合約或對等的大量授權合約，請連絡您的 Microsoft 代表來設定您的免費試用版。
 
 > [!NOTE]
-> 您的組織若已有 Microsoft Online Services 的工作或學校帳戶，而您在試用期結束後仍要繼續在生產環境中使用此 Intune 訂用帳戶，請在該頁面選擇 [登入] 選項，然後再以您組織的全域管理員帳戶進行驗證。 這個動作可確保您的 Intune 試用版連結至您現有的工作或學校帳戶。
+> 您的組織若已有 Microsoft Online Services 的工作或學校帳戶，而您在試用期結束後仍要繼續在生產環境中使用此 Intune 訂用帳戶，請在該頁面選擇 [登入]  選項，然後再以您組織的全域管理員帳戶進行驗證。 這個動作可確保您的 Intune 試用版連結至您現有的工作或學校帳戶。
 
 <!--- For a list of settings that you can set up on mobile devices, see:
 
--   [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
+- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
--   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune 登入權益
@@ -77,7 +77,7 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
     - [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/) \(英文\)
 
 >[!Note]
->您可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]**。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
+>您可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]** 。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft 提供之有關 Intune 服務的通知類型
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 325428f99c50ac4d2eede35d4aaadd858cd8b136
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047675"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713335"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune 
 
@@ -47,7 +47,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
     ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/account-sign-up-site-full-browser.png)
 
-    若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您在 [國家或地區] 下選取該地區設定。 Azure 會使用您的區域資訊來提供適當的服務。 稍後無法變更此設定。
+    若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您在 [國家或地區]  下選取該地區設定。 Azure 會使用您的區域資訊來提供適當的服務。 稍後無法變更此設定。
 
 2. 使用您的公司名稱後面接著 **.onmicrosoft.com** 來建立帳戶。 
 
@@ -66,7 +66,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
     ![Azure 入口網站登入頁面的影像](./media/azure-portal-signin.png)
 
-3. 若要在 Azure 入口網站中檢視 Microsoft Intune，請從頁面左側邊欄選取 [所有服務]。
+3. 若要在 Azure 入口網站中檢視 Microsoft Intune，請從頁面左側邊欄選取 [所有服務]  。
 4. 在篩選方塊中，搜尋並選取 **Microsoft Intune**。
 5. 選取**星狀**以將 Intune 新增至我的最愛服務清單底部，然後開啟 Intune 儀表板。
 
@@ -82,15 +82,15 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 若要將 MDM 授權單位設定為 Intune，請執行下列步驟。
 
 1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 
-2. 選擇 [所有服務] > [Microsoft Intune]。
-3. 選取指出您尚未啟用裝置管理的橫幅，或如果您沒有立即看到橫幅，請選取 [裝置註冊]。 如果您尚未啟用裝置管理，會顯示 [選擇 MDM 授權單位] 刀鋒視窗。
+2. 選擇 [所有服務]   > [Microsoft Intune]  。
+3. 選取指出您尚未啟用裝置管理的橫幅，或如果您沒有立即看到橫幅，請選取 [裝置註冊]  。 如果您尚未啟用裝置管理，會顯示 [選擇 MDM 授權單位]  刀鋒視窗。
 
     > [!NOTE]
-    > 如果您已設定 MDM 授權單位，您會在 [裝置註冊] 刀鋒視窗中看到 MDM 授權值。 只有在您尚未設定 MDM 授權單位時，才會顯示橙色橫幅。 
+    > 如果您已設定 MDM 授權單位，您會在 [裝置註冊]  刀鋒視窗中看到 MDM 授權值。 只有在您尚未設定 MDM 授權單位時，才會顯示橙色橫幅。 
 
     ![選擇 MDM 授權單位刀鋒視窗的影像](./media/choose-mdm-authority.png) 
 
-4. 如果未設定 MDM 授權單位，請在 [選擇 MDM 授權單位] 下，將您的 MDM 授權單位設定為 [Intune MDM 授權單位]。
+4. 如果未設定 MDM 授權單位，請在 [選擇 MDM 授權單位]  下，將您的 MDM 授權單位設定為 [Intune MDM 授權單位]  。
 
 如需 MDM 授權單位的詳細資訊，請參閱[設定行動裝置管理授權單位](mdm-authority-set.md)。
 
@@ -99,19 +99,19 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 如上所述，如果您的組織本身有您想要使用，但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Microsoft 365 系統管理中心進行變更。 您可以透過下列步驟，新增、驗證及設定您的自訂網域名稱。  
 
 > [!IMPORTANT]
-> 您無法重新命名或移除網域名稱中「初始的」**onmicrosoft.com**。 但是，您可以新增、驗證或移除 Intune 使用的「自訂」網域名稱，以利企業識別。 如需詳細資訊，請參閱[設定自訂網域名稱](custom-domain-name-configure.md)。
+> 您無法重新命名或移除網域名稱中「初始的」  **onmicrosoft.com**。 但是，您可以新增、驗證或移除 Intune 使用的「自訂」  網域名稱，以利企業識別。 如需詳細資訊，請參閱[設定自訂網域名稱](custom-domain-name-configure.md)。
 
 1. 前往 [Microsoft 365 系統管理中心](https://admin.microsoft.com)並使用您的系統管理員帳戶登入。
 
-2. 在瀏覽窗格中，選擇 [設定] > [網域] > [新增網域]。
+2. 在瀏覽窗格中，選擇 [設定]   > [網域]   > [新增網域]  。
 
-3. 鍵入您的自訂網域名稱。 然後，選取 [下一步]。
+3. 鍵入您的自訂網域名稱。 然後，選取 [下一步]  。
 
    ![Microsoft 365 系統管理中心 - [新增網域] 的螢幕擷取畫面](./media/domain-custom-add.png)
 
 4. 確認您是上一個步驟所輸入網域的擁有者。 
     
-    選取 [透過電子郵件傳送驗證碼] 會傳送電子郵件給您網域中已註冊的連絡人。 收到電子郵件之後，請複製驗證碼，並在標示為 [在這裡輸入您的驗證碼]  的欄位中輸入。 如果驗證碼符合，則會將網域新增至您的租用戶。 顯示的電子郵件看起來可能很陌生。 有些註冊機構會隱藏實際電子郵件地址。 同時，電子郵件地址可能不同於註冊網域時所提供的電子郵件地址。
+    選取 [透過電子郵件傳送驗證碼]  會傳送電子郵件給您網域中已註冊的連絡人。 收到電子郵件之後，請複製驗證碼，並在標示為 [在這裡輸入您的驗證碼]  的欄位中輸入。 如果驗證碼符合，則會將網域新增至您的租用戶。 顯示的電子郵件看起來可能很陌生。 有些註冊機構會隱藏實際電子郵件地址。 同時，電子郵件地址可能不同於註冊網域時所提供的電子郵件地址。
 
    ![Microsoft 365 系統管理中心 - [驗證網域] 的螢幕擷取畫面](./media/domain-custom-verify.png)
 

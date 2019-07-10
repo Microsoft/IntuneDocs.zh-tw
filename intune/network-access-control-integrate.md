@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044531"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572172"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -37,9 +37,9 @@ NAC 解決方案會向 Intune 確認裝置註冊與合規性狀態，以做出�
 
 ## <a name="feature-behaviors"></a>功能行為
 
-主動同步至 Intune 的裝置不能從 [符合規範] / [不符合規範] 移至 [未同步] (或 [未知])。 [未知] 是保留給尚未針對合規性進行評估之新註冊裝置的狀態。
+主動同步至 Intune 的裝置不能從 [符合規範]   / [不符合規範]  移至 [未同步]  (或 [未知]  )。 [未知]  是保留給尚未針對合規性進行評估之新註冊裝置的狀態。
 
-針對被封鎖而無法存取資源的裝置，封鎖服務應該將所有使用者重新導向至[管理入口網站](https://portal.manage.microsoft.com)，以判斷該裝置被封鎖的原因。  若使用者造訪此頁面，其裝置將會同步地重新進行合規性評估。
+針對被封鎖而無法存取資源的裝置，封鎖服務應該將所有使用者重新導向至[管理入口網站](https://portal.manage.microsoft.com)，以判斷該裝置被封鎖的原因。  若使用者造訪此頁面，其裝置將會同步地重新進行合規性評估。
 
 ## <a name="nac-and-conditional-access"></a>NAC 和條件式存取
 
@@ -74,7 +74,7 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
   - 使用 Citrix Gateway 12.0.59 或更高版本。  
   - 使用者必須已安裝 Citrix SSO 1.1.6 或更新版本。
   - [針對 NAC 將 NetScaler 與 Intune 整合](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (如 Citrix 產品文件中所述)。
-  - 在 VPN 設定檔中，選取 [基底設定] > [啟用網路存取控制 (NAC)] > 選取 [我同意]。
+  - 在 VPN 設定檔中，選取 [基底設定]   > [啟用網路存取控制 (NAC)]  > 選取 [我同意]  。
 
   基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
 
@@ -82,7 +82,7 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 
   - 使用 F5 BIG-IP 13.1.1.5。 不支援 BIG-IP 14。
   - 針對 NAC 整合 BIG-IP 與 Intune。 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態) F5 指南列有這些步驟。
-  - 在 VPN 設定檔中，選取 [基底設定] > [啟用網路存取控制 (NAC)] > 選取 [我同意]。
+  - 在 VPN 設定檔中，選取 [基底設定]   > [啟用網路存取控制 (NAC)]  > 選取 [我同意]  。
 
   基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
 

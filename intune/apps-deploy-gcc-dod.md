@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed4bc1d4063c177f438f7b7fbbe960b28a2a904c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 17d94252dd957c5699b34e0b8c2cbae2eee0b66f
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049331"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713366"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>使用 Intune 在 GCC High 與 DoD 環境上部署應用程式 
 
@@ -40,10 +40,10 @@ ms.locfileid: "66049331"
 如果您需要從商務用 Microsoft Store 中[下載離線授權應用程式](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)，請遵循下列步驟來下載應用程式： 
 
 1. 登入[商務用市集](https://businessstore.microsoft.com/)。
-2. 選取 [管理] > [設定]。
-3. 在 [購物體驗] 下方，將 [顯示離線應用程式] 設定為 [開啟]。
+2. 選取 [管理]   > [設定]  。
+3. 在 [購物體驗]  下方，將 [顯示離線應用程式]  設定為 [開啟]  。
 
-購買應用程式時，若離線版本可供使用，您可以選擇將授權類型變更為離線。 取得應用程式之後，接著進行管理的方法是選取[商務用市集](https://businessstore.microsoft.com/)中的 [管理] > [產品與服務]。 此外，您還可以下載應用程式和其相依性。 然後，您可以使用 Intune 為使用者部署此下載的應用程式 (和其相依性)。  
+購買應用程式時，若離線版本可供使用，您可以選擇將授權類型變更為離線。 取得應用程式之後，接著進行管理的方法是選取[商務用市集](https://businessstore.microsoft.com/)中的 [管理]   > [產品與服務]  。 此外，您還可以下載應用程式和其相依性。 然後，您可以使用 Intune 為使用者部署此下載的應用程式 (和其相依性)。  
 
 ## <a name="syncing-intune-to-the-store-for-business"></a>將 Intune 同步處理到商務用市集 
 

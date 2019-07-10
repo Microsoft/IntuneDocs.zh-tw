@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 233b093ba9c062618740fd8f14c5ea306647acdd
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050504"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549376"
 ---
 # <a name="basic-setup"></a>基本設定
 
@@ -32,15 +32,15 @@ ms.locfileid: "66050504"
 
 Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組提供者。 深入了解：
 
--  [身分識別需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [身分識別需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [目錄同步作業需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [目錄同步作業需求](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
--   [規劃您的使用者和裝置群組](users-add.md)
+- [規劃您的使用者和裝置群組](users-add.md)
 
--   [如何建立使用者和裝置群組](groups-get-started.md)
+- [如何建立使用者和裝置群組](groups-get-started.md)
 
 如果貴組織已使用 Office 365，Intune 必須使用相同的 Azure Active Directory 環境。
 
@@ -48,9 +48,9 @@ Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組�
 
 如果您打算在 Intune 針對 VPN、Wi-Fi 或電子郵件設定檔使用憑證式驗證，您必須確定您有支援的 [PKI 基礎結構](certificates-configure.md)，隨時可建立及部署憑證設定檔。 深入了解如何在 Intune 中設定憑證：
 
--   [如何設定 SCEP 的憑證基礎結構](/intune/certificates-scep-configure)
+- [如何設定 SCEP 的憑證基礎結構](/intune/certificates-scep-configure)
 
--   [設定 PFX 憑證基礎結構](/intune/certficates-pfx-configure)。
+- [設定 PFX 憑證基礎結構](/intune/certficates-pfx-configure)。
 
 
 ## <a name="task-list-for-an-intune-setup"></a>Intune 設定的工作清單
@@ -59,17 +59,17 @@ Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組�
 
 移轉至 Intune 之前，您必須先訂閱 Intune。
 
--   您可以瀏覽[此頁面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)，其中包含下列作業的指示︰
+- 您可以瀏覽[此頁面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)，其中包含下列作業的指示︰
 
-    -   建立連結至新的 AAD 租用戶的全新 Intune 訂閱。
+    - 建立連結至新的 AAD 租用戶的全新 Intune 訂閱。
 
-    -   登入現有的 AAD 租用戶以連結 Intune 訂閱。
+    - 登入現有的 AAD 租用戶以連結 Intune 訂閱。
 
 ### <a name="task-2-assign-intune-user-licenses"></a>工作 2：指派 Intune 使用者授權
 
--   了解[如何指派 Intune 使用者授權](licenses-assign.md)。
+- 了解[如何指派 Intune 使用者授權](licenses-assign.md)。
 
--   如果您已建立新的 Azure Active Directory 租用戶，請學習[如何從內部部署的 Active Directory (AD) 建立新的使用者或同步處理使用者](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
+- 如果您已建立新的 Azure Active Directory 租用戶，請學習[如何從內部部署的 Active Directory (AD) 建立新的使用者或同步處理使用者](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>工作 3：將 MDM 授權單位設定為 Intune
 

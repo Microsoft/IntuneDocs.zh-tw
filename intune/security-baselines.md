@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416844"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713265"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -155,7 +155,7 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 3. 在 [變更版本]  窗格上，使用 [選取要更新到的安全性基準]  下拉式清單，然後選取您要使用的版本執行個體。  
 
    ![選取版本](./media/security-baselines/select-instance.png)  
- 
+   
 4. 選取 [檢閱更新]  以下載 CSV 檔案，此檔案顯示設定檔目前執行個體版本與您選取之新版本之間的差異。 檢閱此檔案，以便您了解新增、移除了哪些設定，以及這些設定在已更新之設定檔中的預設值為何。  
 
    當您就緒時，繼續到下一個步驟。  
