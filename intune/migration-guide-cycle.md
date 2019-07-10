@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30e104d82580a5a0b6b01edb0eaade0673b33d83
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046359"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548390"
 ---
 # <a name="typical-migration-cycle"></a>典型的移轉週期
 
@@ -55,9 +55,9 @@ Intune 提供幾種監視移轉的方式：
 
 在每個階段之後追蹤有多少個使用者已註冊裝置，您才能：
 
--   評估溝通計劃的效益。
+- 評估溝通計劃的效益。
 
--   預估強制條件式存取的影響。
+- 預估強制條件式存取的影響。
 
 
 ## <a name="post-migration"></a>移轉後

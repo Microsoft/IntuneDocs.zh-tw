@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494294"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547359"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -429,7 +429,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
         >  - 在主體的靜態文字中，未含括變數的大括弧 **{ }** 會解析為錯誤。 
         >  - 當您使用裝置憑證變數時，請用大括弧 **{ }** 將變數括住。
         >  - `{{FullyQualifiedDomainName}}` 只適用於 Windows 和已加入網域的裝置。 
-        >  -  在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
+        >  - 在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
         >  - 如果不支援指定的裝置變數，則設定檔不會安裝在裝置上。 例如，如果 SCEP 設定檔的主體名稱中使用 {{IMEI}}，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。 
 
 
@@ -472,7 +472,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
         >  - 在 SAN 的靜態文字中，大括弧 **{ }** 、直立線符號 **|** 和分號 **;** 沒有作用。 
         >  - 當您使用裝置憑證變數時，請用大括弧 **{ }** 將變數括住。
         >  - `{{FullyQualifiedDomainName}}` 只適用於 Windows 和已加入網域的裝置。 
-        >  -  在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
+        >  - 在裝置憑證的主體或 SAN 中使用 IMEI、序號和完整網域名稱等裝置屬性時，請留意這些屬性可能會被能夠存取該裝置的人員竄改。
         >  - 如果不支援指定的裝置變數，則設定檔不會安裝在裝置上。 例如，如果 SCEP 設定檔的主體別名中使用 {{IMEI}}，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。  
 
    - **憑證有效期間**：如果您已在發行 CA 上執行 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 命令以允許使用自訂的有效期間，便可以輸入憑證到期之前的剩餘時間長度。<br>您可以輸入一個比憑證範本中指定的有效期間更低，而不是更高的值。 例如，如果憑證範本中的憑證有效期間為兩年，您可以輸入一年而不是五年的值。 該值也必須低於發行 CA 憑證的剩餘有效期。 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1fda4268e66703c8bd2132c9af22fed52f1791b1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174173"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548963"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教學課程：使用 Apple Business Manager (ABM) 中的公司裝置註冊功能在 Intune 中註冊 iOS 裝置
 Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。 Intune 也支援 Apple 較舊的裝置註冊計劃 (DEP) 入口網站，但建議您使用 Apple Business Manager 重新開始。 使用 Microsoft Intune 和 Apple 公司裝置註冊，當使用者第一次開啟裝置時，就會自動安全地註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 
@@ -53,7 +53,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 4. 選擇 [建立 Apple 裝置註冊計劃的權杖]  以開啟 Apple 的部署計劃入口網站，並使用您的公司 Apple ID 登入。 您可以使用此 Apple ID 來更新 DEP 權杖。
 
-5.  在 Apple 的[部署計劃入口網站](https://deploy.apple.com)，針對 [裝置註冊計劃]  選擇 [開始使用]  。 您的程序可能會與 [Apple Business Manager](https://business.apple.com) 中的下列步驟稍有不同。
+5. 在 Apple 的[部署計劃入口網站](https://deploy.apple.com)，針對 [裝置註冊計劃]  選擇 [開始使用]  。 您的程序可能會與 [Apple Business Manager](https://business.apple.com) 中的下列步驟稍有不同。
 
 4. 在 [管理伺服器]  頁面上，選擇 [新增 MDM 伺服器]  。
 

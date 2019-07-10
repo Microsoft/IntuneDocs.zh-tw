@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511765"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547298"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Better Mobile Threat Defense 連接器
 
@@ -41,11 +41,11 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 在裝置上偵測到惡意應用程式 (例如惡意程式碼) 時，您可在解決威脅之前封鎖裝置執行下列動作：
 
--   連線到公司電子郵件
+- 連線到公司電子郵件
 
--   使用 OneDrive for Work 應用程式來同步處理公司檔案
+- 使用 OneDrive for Work 應用程式來同步處理公司檔案
 
--   存取公司應用程式
+- 存取公司應用程式
 
 **於偵測到惡意應用程式時進行封鎖：**
 
@@ -81,19 +81,19 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 ## <a name="supported-platforms"></a>支援的平台
 
--   **Android 4.1 和更新版本**
+- **Android 4.1 和更新版本**
 
--   **iOS 8.0 及更新版本**
+- **iOS 8.0 及更新版本**
 
 ## <a name="prerequisites"></a>必要條件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 訂閱
+- Microsoft Intune 訂閱
 
--   Better Mobile Threat Defense 訂用帳戶
+- Better Mobile Threat Defense 訂用帳戶
 
-    -   如需詳細資訊，請參閱 [Better Mobile 網站](https://www.better.mobi/)。
+    - 如需詳細資訊，請參閱 [Better Mobile 網站](https://www.better.mobi/)。
 
 ## <a name="next-steps"></a>後續步驟
 

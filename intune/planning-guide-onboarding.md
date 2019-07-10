@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044348"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549306"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
@@ -34,17 +34,17 @@ ms.locfileid: "67044348"
 
 主要的 Intune 獨立需求如下︰
 
--   Enterprise Mobility + Security (EMS)/Intune 訂閱
+- Enterprise Mobility + Security (EMS)/Intune 訂閱
 
--   Office 365 訂閱 (適用於 Office 應用程式和應用程式保護原則管理的應用程式)
+- Office 365 訂閱 (適用於 Office 應用程式和應用程式保護原則管理的應用程式)
 
--   Apple APN 憑證 (啟用 iOS 裝置平台管理)
+- Apple APN 憑證 (啟用 iOS 裝置平台管理)
 
--   Azure AD Connect (適用於目錄同步作業)
+- Azure AD Connect (適用於目錄同步作業)
 
--   Exchange 的 Intune On-Premises Connector (如有需要，適用於 Exchange 內部部署的條件式存取)
+- Exchange 的 Intune On-Premises Connector (如有需要，適用於 Exchange 內部部署的條件式存取)
 
--   Intune 憑證連接器 (適用於 SCEP 憑證部署，如有需要)
+- Intune 憑證連接器 (適用於 SCEP 憑證部署，如有需要)
 
 >[!TIP]
 > 如需可以使用 Intune 管理的完整裝置清單，請查看[支援的裝置](supported-devices-browsers.md)清單。
@@ -57,20 +57,20 @@ ms.locfileid: "67044348"
 
 如前面的＜Intune 需求＞一節所述，您需要 EMS 或 Intune 訂閱。 如果貴組織沒有訂閱，請連絡 Microsoft 或 Microsoft 帳戶小組洽詢 Enterprise Mobility + Security (EMS) 或 Intune 購買事宜。
 
--   深入了解[如何購買 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)。
+- 深入了解[如何購買 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)。
 
 ### <a name="task-2-add-office-365-subscription"></a>工作 2：新增 Office 365 訂閱
 
 這個參數是選擇性的。 如果您打算使用 Exchange Online，以及使用應用程式保護原則管理 Office 行動應用程式，您需要訂閱 Office 365。 貴組織若未訂閱 Office 365，請連絡 Microsoft 或 Microsoft 帳戶小組洽詢 Office 365 購買事宜。
 
--   深入了解[如何購買 Office 365](https://products.office.com/business/compare-office-365-for-business-plans)。
+- 深入了解[如何購買 Office 365](https://products.office.com/business/compare-office-365-for-business-plans)。
 
 ### <a name="task-3-add-users-groups-in-azure-ad"></a>工作 3：在 Azure AD 中新增使用者群組
 
 您可能需要根據 Intune 部署使用案例和需求，在 Active Directory 或 Azure Active Directory 中新增使用者或安全性群組。 請檢閱 Active Directory 或 Azure Active Directory 目前的使用者和安全性群組，並判斷其是否完全符合您的需求。 在新增新的使用者和安全性群組時，建議您將它們新增至 Active Directory，使用 Azure AD Connect 與 Azure Active Directory 同步處理。
 
 
--   深入了解[新增使用者並授與 Intune 系統管理權限](users-permissions-add.md)。
+- 深入了解[新增使用者並授與 Intune 系統管理權限](users-permissions-add.md)。
 <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
@@ -79,61 +79,61 @@ ms.locfileid: "67044348"
 
 EMS/Intune 和 Office 365 新產品的所有目標使用者，都需要獲指派授權。 您可在 Microsoft 365 系統管理中心指派 EMS/Intune 和 Office 365 授權。
 
--   深入了解[管理 Intune 授權](licenses-assign.md)。
+- 深入了解[管理 Intune 授權](licenses-assign.md)。
 
 ### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>工作 5：將行動裝置管理授權單位設定為 Intune
 
 您必須先將裝置管理授權單位設定為 Intune，才能使用 Intune 開始安裝、設定、管理與和註冊裝置。
 
--   深入了解[如何設定裝置管理授權單位](mdm-authority-set.md)。
+- 深入了解[如何設定裝置管理授權單位](mdm-authority-set.md)。
 
 ### <a name="task-6-enable-device-platforms"></a>工作 6：啟用裝置平台
 
 依預設，除了 Apple 裝置 (iOS 和 Mac) 之外，大部分的裝置平台都會啟用。 您必須先啟用裝置平台，才可以在 Intune 中註冊及管理 iOS 裝置。 若要這樣做，您需要建立 MDM Push Certificate，並將其新增至 Intune。
 
--   深入了解[如何啟用 Apple 裝置註冊](apple-mdm-push-certificate-get.md)。
+- 深入了解[如何啟用 Apple 裝置註冊](apple-mdm-push-certificate-get.md)。
 
 ### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>工作 7：新增及部署條款及條件原則
 
 Intune 支援條款和條件原則。 適當新增條款及條件原則，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
--   深入了解 [Microsoft Intune 的條款和條件原則設定](terms-and-conditions-create.md)。
+- 深入了解 [Microsoft Intune 的條款和條件原則設定](terms-and-conditions-create.md)。
 
 ### <a name="task-8-add-and-deploy-configuration-policies"></a>工作 8：新增及部署設定原則
 
 Intune 支援兩種類型的設定原則：一般和自訂。 適當新增設定原則，根據您的 Intune 部署使用案例和需求將其部署至目標群組。
 
--   深入了解[透過 Microsoft Intune 原則管理裝置上的設定和功能](device-profiles.md)。
+- 深入了解[透過 Microsoft Intune 原則管理裝置上的設定和功能](device-profiles.md)。
 
 ### <a name="task-9-add-and-deploy-resource-profiles"></a>工作 9：新增及部署資源設定檔
 
 Intune 支援電子郵件、Wi-Fi 和 VPN 設定檔。 適當新增這些設定檔，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
--   深入了解[如何使用 Intune 存取公司資源](device-profiles.md)。
+- 深入了解[如何使用 Intune 存取公司資源](device-profiles.md)。
 
 ### <a name="task-10-add-and-deploy-apps"></a>工作 10：新增和部署應用程式
 
 Intune 支援部署 Web、企業營運和公用市集應用程式。 您也可以建立應用程式與應用程式保護原則的關聯性，來管理已與 Intune SDK 整合的應用程式。 適當新增應用程式，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
--   深入了解[新增與部署應用程式](app-management.md)。
+- 深入了解[新增與部署應用程式](app-management.md)。
 
 ### <a name="task-11-add-and-deploy-compliance-policies"></a>工作 11：新增及部署合規性政策
 
 Intune 支援合規性原則。 適當新增合規性原則，根據您的 Intune 部署使用案例和需求將它們部署至目標群組。
 
--   深入了解 [Microsoft Intune 的裝置相容性原則](device-compliance.md)。
+- 深入了解 [Microsoft Intune 的裝置相容性原則](device-compliance.md)。
 
 ### <a name="task-12-enable-conditional-access-policies"></a>工作 12：啟用條件式存取原則
 
 Intune 支援 Exchange Online、Exchange 內部部署、SharePoint Online、商務用 Skype Online 及 Dynamics CRM Online 的條件式存取。 根據您的 Intune 部署使用案例和需求，適當地啟用及設定條件式存取。
 
--   深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
+- 深入了解[使用 Microsoft Intune 限制電子郵件、Office 365 和其他服務的存取](conditional-access.md)。
 
 ### <a name="task-13-enroll-devices"></a>工作 13：註冊裝置
 
 Intune 支援 iOS、Mac 作業系統、Android、Windows Desktop 和 Windows 行動裝置平台。 根據您的 Intune 部署使用案例和需求，適當啟用行動裝置平台。
 
--   深入了解[註冊裝置以在 Intune 中管理](device-enrollment.md)。
+- 深入了解[註冊裝置以在 Intune 中管理](device-enrollment.md)。
 
 
 ## <a name="next-steps"></a>後續步驟

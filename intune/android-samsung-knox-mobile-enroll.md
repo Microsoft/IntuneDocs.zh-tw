@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494110"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547435"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -44,15 +44,15 @@ ms.locfileid: "67494110"
 ## <a name="prerequisites"></a>必要條件
 
 若要使用 KME 註冊至 Intune，您必須先遵循下列步驟，在 Samsung Knox 入口網站上註冊您的公司：
-1.  [確認可在您的區域取得 KME](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries) \(英文\)：在超過 55 個國家/地區都能取得 KME。 請確定您要進行部署的國家/地區有受到支援。
+1. [確認可在您的區域取得 KME](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries) \(英文\)：在超過 55 個國家/地區都能取得 KME。 請確定您要進行部署的國家/地區有受到支援。
 
-2.  [支援的裝置](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+) \(英文\)：KME 適用於所有 Samsung 裝置，其中 Android 註冊最低要求為 Knox 2.4，Android Enterprise 註冊最低要求為 Knox 2.8。
+2. [支援的裝置](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+) \(英文\)：KME 適用於所有 Samsung 裝置，其中 Android 註冊最低要求為 Knox 2.4，Android Enterprise 註冊最低要求為 Knox 2.8。
 
-3.  [網路需求](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm) \(英文\)：確定您的網路上已允許必要的防火牆和網路存取規則。
+3. [網路需求](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm) \(英文\)：確定您的網路上已允許必要的防火牆和網路存取規則。
 
-4.  [註冊 Samsung 帳戶](https://www2.samsungknox.com/en/user/register) \(英文\)：需要 Samsung 帳戶以註冊並啟用 KME，並於單一位置管理所有的 Knox 企業權利。
+4. [註冊 Samsung 帳戶](https://www2.samsungknox.com/en/user/register) \(英文\)：需要 Samsung 帳戶以註冊並啟用 KME，並於單一位置管理所有的 Knox 企業權利。
 
-5.  註冊檢閱：在您的設定檔已完成並提交之後，Samsung 會檢閱您的申請並立即核准它，或是將該申請置於待檢閱的狀態以進行後續追蹤。 在 Samsung 核准您的帳戶之後，您便可以繼續進行後續步驟。
+5. 註冊檢閱：在您的設定檔已完成並提交之後，Samsung 會檢閱您的申請並立即核准它，或是將該申請置於待檢閱的狀態以進行後續追蹤。 在 Samsung 核准您的帳戶之後，您便可以繼續進行後續步驟。
 
 ## <a name="create-mdm-profile"></a>建立 MDM 設定檔
 

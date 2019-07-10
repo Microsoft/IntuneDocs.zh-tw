@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494578"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548369"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
@@ -31,30 +31,30 @@ ms.locfileid: "67494578"
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>您需要管理的裝置種類？
 
--   需要支援的[平台](supported-devices-browsers.md)？
+- 需要支援的[平台](supported-devices-browsers.md)？
 
--   您需要支援的裝置是屬公司擁有的裝置或個人裝置？
+- 您需要支援的裝置是屬公司擁有的裝置或個人裝置？
 
--   使用何種連線？ Wi-Fi、行動電話、VPN？
+- 使用何種連線？ Wi-Fi、行動電話、VPN？
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>使用者在受管理的裝置上需執行什麼工作？
 
--   您需要佈建使用者的應用程式嗎？
+- 您需要佈建使用者的應用程式嗎？
 
--   您使用自訂的企業營運應用程式嗎？ 或是您只需要公用儲存區應用程式？
+- 您使用自訂的企業營運應用程式嗎？ 或是您只需要公用儲存區應用程式？
 
--   您需要佈建電子郵件帳戶嗎？
+- 您需要佈建電子郵件帳戶嗎？
 
 ### <a name="what-kinds-of-users"></a>使用者的種類？
 
--   多少個使用者會使用單一裝置？
+- 多少個使用者會使用單一裝置？
 
--   您需要的使用條款？
+- 您需要的使用條款？
 
-    -   請務必提前和您的法務部門對此協商。
-    -   需要的當地語系化？
+    - 請務必提前和您的法務部門對此協商。
+    - 需要的當地語系化？
 
--   使用者是否熟悉一般技術和 IT？
+- 使用者是否熟悉一般技術和 IT？
 
 ### <a name="what-is-your-device-security-policy"></a>您的行動裝置安全性原則是什麼？
 
@@ -68,11 +68,11 @@ ms.locfileid: "67494578"
 
 - 您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
   - Intune 可使用資源存取設定檔為已註冊的裝置佈建憑證。
-  -   您需要支援何種公開金鑰基礎結構 (PKI)？
+  - 您需要支援何種公開金鑰基礎結構 (PKI)？
   <br></br>
 - 您需要在裝置或應用程式層級支援虛擬私人網路 (VPN) 嗎？
 
-  -   Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
+  - Intune 可以佈建協力廠商 VPN 提供者的 VPN 設定。
   <br/><br/>
 - 可容許因應特定需求的暫時性例外狀況，以避免停機時間嗎？ 或是具有存取權的裝置永遠必須符合所有安全性需求？
 

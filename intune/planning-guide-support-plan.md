@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041471"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548338"
 ---
 # <a name="develop-a-support-plan"></a>開發支援計劃
 
 具有 Intune 支援計劃，可協助您更有效地找出並解決 Intune 相關問題。 接著，可改善使用者的整體 Intune 體驗。 以下是您在開發 Intune 支援計劃時要考量的幾個問題：
 
--   哪些小組負責提供 Intune 支援？
+- 哪些小組負責提供 Intune 支援？
 
--   提供 Intune 支援時要使用哪個程序？
+- 提供 Intune 支援時要使用哪個程序？
 
--   您打算如何提供 Intune 支援訓練？
+- 您打算如何提供 Intune 支援訓練？
 
--   支援小組參與 Intune 部署程序初期的機率為何？
+- 支援小組參與 Intune 部署程序初期的機率為何？
 
 現在，我們來檢閱每個領域的詳細資訊。
 
@@ -50,23 +50,23 @@ ms.locfileid: "66041471"
 
 在初始生產推出階段中，您可能需要所有三個階層參與多方會議或 Skype 會議。 以下是組織可以如何實作 IT 支援或技術服務人員工作流程的其中一個範例：
 
-1.  終端使用者針對註冊問題連絡第 1 層 IT 支援或技術服務人員。
+1. 終端使用者針對註冊問題連絡第 1 層 IT 支援或技術服務人員。
 
-2.  第 1 層 IT 支援或技術服務人員無法判斷根本原因，並呈報給第 2 層。
+2. 第 1 層 IT 支援或技術服務人員無法判斷根本原因，並呈報給第 2 層。
 
-3.  第 2 層 IT 支援或技術服務人員經過調查仍無法解決問題，因此呈報給第 3 層，同時提供可協助調查的其他資訊。
+3. 第 2 層 IT 支援或技術服務人員經過調查仍無法解決問題，因此呈報給第 3 層，同時提供可協助調查的其他資訊。
 
-4.  第 3 層 IT 支援或技術服務人員會進一步調查，判斷根本原因，並與第 2 層和第 1 層人員溝通解決方法。
+4. 第 3 層 IT 支援或技術服務人員會進一步調查，判斷根本原因，並與第 2 層和第 1 層人員溝通解決方法。
 
-5.  接著，第 1 層 IT 支援/技術服務人員會連絡客戶並解決問題。
+5. 接著，第 1 層 IT 支援/技術服務人員會連絡客戶並解決問題。
 
 這種方法可以帶來許多優點 (尤其在 Intune 推出初期階段時)，包括：
 
--   可協助技術學習和經驗累積。
+- 可協助技術學習和經驗累積。
 
--   快速識別問題及解決方法。
+- 快速識別問題及解決方法。
 
--   整體提升使用者的體驗。
+- 整體提升使用者的體驗。
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>您打算如何提供 Intune 支援訓練？
 
@@ -74,15 +74,15 @@ ms.locfileid: "66041471"
 
 Intune 支援訓練的議程範例如下。
 
--   Intune 支援計劃檢閱
+- Intune 支援計劃檢閱
 
--   Intune 概觀
+- Intune 概觀
 
--   針對常見問題進行疑難排解
+- 針對常見問題進行疑難排解
 
--   工具和資源
+- 工具和資源
 
--   問答集
+- 問答集
 
 [Intune 文件](https://docs.microsoft.com/intune/)提供 Intune 概觀、詳細的功能描述，以及一些疑難排解的資訊。 [Intune 論壇](https://social.technet.microsoft.com/Forums/home)是社群資源，適合 Intune 文件未涵蓋的問題和主題。
 

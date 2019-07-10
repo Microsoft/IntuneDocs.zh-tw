@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bbb1c7ec7151a09c8eeae33f4252781e5338f7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048335"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546719"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
@@ -44,11 +44,11 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
 
-1.  在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊] > [裝置註冊管理員]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [裝置註冊管理員]  。
 
-2.  選取 [新增]。
+2. 選取 [新增]  。
 
-3.  在 [新增使用者] 刀鋒視窗中，輸入 DEM 使用者的使用者主體名稱，然後選取 [新增]。 DEM 隨即會新增至 DEM 使用者清單。
+3. 在 [新增使用者]  刀鋒視窗中，輸入 DEM 使用者的使用者主體名稱，然後選取 [新增]  。 DEM 隨即會新增至 DEM 使用者清單。
 
 ## <a name="permissions-for-dem"></a>DEM 的權限
 
@@ -65,6 +65,6 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
 
 **移除裝置註冊管理員**
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]，然後選擇 [裝置註冊管理員]。
-2. 在 [裝置註冊管理員] 刀鋒視窗上，依序選取 DEM 使用者和 [刪除]。
+1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]  ，然後選擇 [裝置註冊管理員]  。
+2. 在 [裝置註冊管理員]  刀鋒視窗上，依序選取 DEM 使用者和 [刪除]  。
 

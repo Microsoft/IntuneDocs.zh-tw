@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045982"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549279"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>識別行動裝置管理使用案例
 
@@ -33,9 +33,9 @@ ms.locfileid: "66045982"
 ## <a name="device-ownership"></a>裝置擁有權
 一開始，您可以先參考組織的 Intune 部署目的與目標，以協助識別部署的主要使用案例。 針對 Intune 部署計畫的範圍，回答下列問題：
 
--   您是否要支援公司擁有的裝置？
+- 您是否要支援公司擁有的裝置？
 
--   您是否要支援個人擁有的裝置？
+- 您是否要支援個人擁有的裝置？
 
 這些不是單選題。 您可能會發現需要支援兩種形式的裝置擁有權，才能符合組織的目的。 次要使用案例將有助於釐清套用不同裝置管理原則的位置。
 
@@ -43,11 +43,11 @@ ms.locfileid: "66045982"
 
 決定是否每個使用案例也都包含次要使用案例。 例如，您的組織識別出的需求可能要支援公司使用案例，其中包含以下列使用者類型或裝置角色為基礎的其他次要使用案例：
 
--   資訊工作者
+- 資訊工作者
 
--   主管
+- 主管
 
--   Kiosk
+- Kiosk
 
 以下是使用案例和次要使用案例的幾個範例：
 

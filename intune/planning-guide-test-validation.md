@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046061"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549342"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 測試與驗證
 
@@ -33,17 +33,17 @@ ms.locfileid: "66046061"
 
 建議您記錄下列各項：
 
--   **測試準則：** 找出測量的測試基準。
+- **測試準則：** 找出測量的測試基準。
 
--   **設計元件：** 至少必須存在於一項測試準則中。
+- **設計元件：** 至少必須存在於一項測試準則中。
 
 如果設計元件不存在於至少符合需求或案例的一項測試準則中，請考慮設計元件是否為必要。 此外，請確定擁有下列項目︰
 
--   **帳戶：** 有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
+- **帳戶：** 有 EMS 和 Office 365 授權可測試所有使用案例的測試帳戶。
 
--   **裝置：** 可以抹除或重設為原廠預設值的測試裝置。
+- **裝置：** 可以抹除或重設為原廠預設值的測試裝置。
 
--   **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器及 Intune Exchange 內部部署連接器)。
+- **整合元件：** 如有需要，應該安裝並設定所有的整合元件 (憑證連接器及 Intune Exchange 內部部署連接器)。
 
 您可能需要設計變更，以備處理無法預見的問題。 此外，所有的設計變更都應該詳細記錄每項變更的原因。 下例示範可能的變更︰
 
@@ -51,9 +51,9 @@ ms.locfileid: "66046061"
 
 在測試和驗證過程中，您可能會遇到需要技術指導或特定疑難排解的困難或問題。 建議您透過 Microsoft 支援管道尋求協助。
 
--   [如何取得 Microsoft Intune 的管理支援](get-support.md)
+- [如何取得 Microsoft Intune 的管理支援](get-support.md)
 
--   [Microsoft Intune 的連絡電話協助支援](get-support.md)
+- [Microsoft Intune 的連絡電話協助支援](get-support.md)
 
 ## <a name="functional-validation-testing"></a>功能驗證測試
 

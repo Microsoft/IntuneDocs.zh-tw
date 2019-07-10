@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046216"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548340"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>開發推出通訊計畫
 
 良好的變更管理依頼對即將推出變更的明確且有助益的通訊。 若要使 Intune 部署的路徑順暢，您的推出通訊計劃應該包含四個區域：
 
--   要溝通什麼資訊
+- 要溝通什麼資訊
 
--   用於通訊的傳遞方法
+- 用於通訊的傳遞方法
 
--   誰會收到通訊內容
+- 誰會收到通訊內容
 
--   通訊的時間表
+- 通訊的時間表
 
 現在，我們來檢閱每個領域的詳細資訊。
 
@@ -56,13 +56,13 @@ ms.locfileid: "66046216"
 
 您可以使用多種通訊傳遞方法，將 Intune 推出資訊傳達給您的目標組織群組和使用者。 下列清單顯示一些範例，以及您可以搭配使用方法的階段：
 
--   在啟動階段，親自或透過 Microsoft Teams 會議對整個組織進行溝通
+- 在啟動階段，親自或透過 Microsoft Teams 會議對整個組織進行溝通
 
--   在註冊前、註冊時和註冊後階段，使用電子郵件溝通
+- 在註冊前、註冊時和註冊後階段，使用電子郵件溝通
 
--   所有階段均可使用組織網站來進行溝通
+- 所有階段均可使用組織網站來進行溝通
 
--   在啟動及註冊前階段，可使用 Yammer、海報和傳單來進行溝通
+- 在啟動及註冊前階段，可使用 Yammer、海報和傳單來進行溝通
 
 ## <a name="communications-timeline"></a>通訊時間表
 

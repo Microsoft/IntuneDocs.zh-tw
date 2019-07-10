@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530672"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546889"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -51,13 +51,13 @@ ms.locfileid: "67530672"
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>在 Intune 傳統入口網站中確認以裝置為基礎的條件式存取原則
 
-1.  移至 [Intune 傳統入口網站](https://manage.microsoft.com)，並使用您的認證登入。
+1. 移至 [Intune 傳統入口網站](https://manage.microsoft.com)，並使用您的認證登入。
 
-2.  在左側功能表中選擇 [原則]  。
+2. 在左側功能表中選擇 [原則]  。
 
-3.  選擇 [條件式存取]  ，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
+3. 選擇 [條件式存取]  ，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
 
-4.  記下您的條件式存取設定，並在 Azure 入口網站中建立相同的條件式存取原則時參考這些設定。
+4. 記下您的條件式存取設定，並在 Azure 入口網站中建立相同的條件式存取原則時參考這些設定。
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>同時使用以應用程式和裝置為基礎的條件式存取原則
 
@@ -194,13 +194,13 @@ Azure 入口網站中的 [Intune 應用程式防護]  刀鋒視窗，可讓系�
 
 ### <a name="to-disable-the-conditional-access-policies"></a>停用條件式存取原則
 
-1.  移至 [Intune 傳統入口網站](https://manage.microsoft.com)，並使用您的認證登入。
+1. 移至 [Intune 傳統入口網站](https://manage.microsoft.com)，並使用您的認證登入。
 
-2.  在左側功能表中選擇 [原則]  。
+2. 在左側功能表中選擇 [原則]  。
 
-3.  選擇 [條件式存取]  ，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
+3. 選擇 [條件式存取]  ，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
 
-4.  取消核取 [啟用條件式存取原則]  選項，然後按一下 [儲存]  。
+4. 取消核取 [啟用條件式存取原則]  選項，然後按一下 [儲存]  。
 
     ![停用 Intune 傳統入口網站中的條件式存取原則影像](./media/reassign-ca-18.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3de3db1f3758642221b6f1ed0465f8d25d8d84b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8168cdaec4d6616b12fa4da225c84fa2d239994d
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049139"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648647"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
 Microsoft Intune 目前支援 Windows 10 裝置上的各種應用程式類型和部署案例。 將應用程式新增至 Intune 之後，您可以將應用程式指派給使用者和裝置。 下列資訊提供與支援的 Windows 10 案例相關的更多詳細資料。 此外，下列資訊提供將應用程式部署到 Windows 時要注意的重要詳細資料。 
 
-企業營運 (LOB) 應用程式和商務用 Microsoft Store 應用程式是 Windows 10 裝置上支援的應用程式類型。 Windows 應用程式的副檔名包括 **.msi**、**.appx**，以及 **.appxbundle**。  
+企業營運 (LOB) 應用程式和商務用 Microsoft Store 應用程式是 Windows 10 裝置上支援的應用程式類型。 Windows 應用程式的副檔名包括 **.msi**、 **.appx**，以及 **.appxbundle**。  
 
 > [!Note]
 > 部署現代化應用程式所需的最低 Windows 10 更新如下：
@@ -48,13 +48,13 @@ Windows 10 LOB 應用程式會簽署及上傳至 Intune 管理主控台，並可
 
 - **使用者內容**：當應用程式部署在使用者內容時，若使用者登入裝置，就會為裝置上的該使用者安裝受控應用程式。 請注意，在使用者登入裝置之前，應用程式安裝不會成功。 
     - 現代化企業營運應用程式和商務用 Microsoft Store 應用程式 (線上和離線) 可部署在使用者內容中，而且會支援「必要」和「可用」意圖。
-    - 建置為 [使用者模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且會同時支援 [必要] 及 [可用] 意圖。 
+    - 建置為 [使用者模式]  或 [雙螢幕模式]  的 Win32 應用程式可在使用者內容中部署，並且會同時支援 [必要]  及 [可用]  意圖。 
 - **裝置內容**：當應用程式部署在裝置內容時，Intune 會將受控應用程式直接安裝在裝置上。
     - 只有現代化企業營運應用程式和離線授權的商務用 Microsoft Store 應用程式可部署在裝置內容中，而且只會支援「必要」意圖。
-    - 建置為 [機器模式] 或 [雙螢幕模式] 的 Win32 應用程式可在使用者內容中部署，並且僅支援 [必要] 意圖。
+    - 建置為 [機器模式]  或 [雙螢幕模式]  的 Win32 應用程式可在使用者內容中部署，並且僅支援 [必要]  意圖。
 
 > [!NOTE]
-> 針對建置為 [雙螢幕模式] 的 Win32 應用程式，您 (系統管理員) 將需要挑選應用程式是否會針對所有與該執行個體建立關聯的指派作為 [使用者模式] 或 [機器模式] 運作。 部署內容無法根據每個指派進行變更。  
+> 針對建置為 [雙螢幕模式]  的 Win32 應用程式，您 (系統管理員) 將需要挑選應用程式是否會針對所有與該執行個體建立關聯的指派作為 [使用者模式]  或 [機器模式]  運作。 部署內容無法根據每個指派進行變更。  
 
 當應用程式部署在裝置內容時，只有以支援裝置內容的裝置為目標的安裝才會成功。 此外，在裝置內容中部署支援下列情況：
 - 如果應用程式部署在裝置內容中，並以使用者為目標，安裝會失敗，並在管理主控台中顯示下列狀態和錯誤：

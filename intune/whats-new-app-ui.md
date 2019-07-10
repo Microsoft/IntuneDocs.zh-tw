@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468747"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572624"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -246,7 +246,7 @@ Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更�
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日當週
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司入口網站的搜尋改善 <!-- 1331697 -->
-我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
+我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
 
 iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
 
@@ -260,7 +260,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>對公司入口網站中裝置安裝工作流程的改善 <!-- 1490692 -->
-我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
+我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
 
 |之前|在|
 |---|---|
@@ -288,7 +288,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日當週
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 版公司入口網站應用程式中更易了解的措辭 <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 版公司入口網站應用程式中更易了解的措辭 <!-- 1396349 -->  
 
 Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓終端使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在下方查看範例影像：
 
@@ -305,7 +305,7 @@ Android 公司入口網站應用程式的註冊程序已經使用新的文字來
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 郵件應用程式將會支援 OAuth <!-- 1196951 -->
 
-搭配 Intune 的條件式存取支援在 iOS 裝置上使用 OAuth 進行更安全的驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
+搭配 Intune 的條件式存取支援在 iOS 裝置上使用 OAuth 進行更安全的驗證。 為了支援進行更安全的驗證，iOS 公司入口網站應用程式的流程已有所改變。 當終端使用者在「郵件」應用程式中嘗試登入新的 Exchange 帳戶時，會出現網頁檢視提示。 在 Intune 中註冊時，使用者會看見要求允許原生「郵件」應用程式存取憑證的提示。 大多數的使用者都不再會看到任何隔離的電子郵件。 現有郵件帳戶會繼續使用基本驗證通訊協定，因此，這些使用者仍會收到隔離的電子郵件。 終端使用者的此登入體驗很類似於 Office Mobile 應用程式的模式。
 
 ![在原生郵件應用程式中選取帳戶類型。](./media/ios-11-ca-email-after-1708-01.png)
 

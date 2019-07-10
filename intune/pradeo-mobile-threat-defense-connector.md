@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512249"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548476"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器
 
@@ -41,11 +41,11 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 在裝置上偵測到惡意應用程式 (例如惡意程式碼) 時，您可在解決威脅之前封鎖裝置執行下列動作：
 
--   連線到公司電子郵件
+- 連線到公司電子郵件
 
--   使用 OneDrive for Work 應用程式來同步處理公司檔案
+- 使用 OneDrive for Work 應用程式來同步處理公司檔案
 
--   存取公司應用程式
+- 存取公司應用程式
 
 **於偵測到惡意應用程式時進行封鎖：**
 
@@ -81,19 +81,19 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 ## <a name="supported-platforms"></a>支援的平台
 
--   **Android 4.0.3 及更新版本**
+- **Android 4.0.3 及更新版本**
 
--   **iOS 7 及更新版本**
+- **iOS 7 及更新版本**
 
 ## <a name="prerequisites"></a>必要條件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 訂閱
+- Microsoft Intune 訂閱
 
--   適用於 Mobile Threat Defense 的 Pradeo Security 訂閱
+- 適用於 Mobile Threat Defense 的 Pradeo Security 訂閱
 
-    -   如需詳細資訊，請參閱 [Pradeo 網站](https://www.pradeo.com/en-US/mobile-threat-protection)。
+    - 如需詳細資訊，請參閱 [Pradeo 網站](https://www.pradeo.com/en-US/mobile-threat-protection)。
 
 ## <a name="next-steps"></a>後續步驟
 
