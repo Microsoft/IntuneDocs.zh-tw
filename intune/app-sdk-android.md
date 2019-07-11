@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558430"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735627"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -105,6 +105,7 @@ buildscript {
 ```
 
 然後，在 APK 專案的 `build.gradle` 檔案中，直接套用外掛程式
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -141,8 +142,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 這會造成下列影響：
 * `:product:FooLib` 不會重寫，因為它包含在 `excludeProjects` 中
 * `:product:foo-project` 會重寫，但會略過 `com.contoso.SplashActivity`，因為它位於 `excludeClasses` 中
@@ -1072,9 +1073,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > 應用程式的 `MAMServiceAuthenticationCallback.acquireToken()` 方法必須針對新的 `forceRefresh` 旗標，將 *true* 傳遞給 `acquireTokenSilentSync()` 來強制從代理程式進行重新整理。  這是為了因應 ADAL 中可能影響 MAM 服務權杖的權杖快取問題。 一般而言，其看起來會與以下內容相似：
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > 若您想要在補救嘗試期間顯示自訂封鎖 UX，您應針對 showUX 參數，將 *false* 傳遞至 `remediateCompliance()`。 您必須確認您會先行顯示 UX 及登錄您的通知接聽程式，再呼叫 `remediateCompliance()`。  這可避免發生競爭條件，在 `remediateCompliance()` 很快失敗的情況下遺漏通知。  例如，Activity 子類別之 `onCreate()` 或 `onMAMCreate()` 方法便是登錄通知接聽程式及呼叫 `remediateCompliance()` 的理想位置。  `remediateCompliance()` 的參數可傳遞至 UX，作為意圖的額外項目。  接收到合規性狀態通知時，您可以顯示結果或直接完成活動。
@@ -1415,6 +1417,7 @@ UI 執行緒上的作業通常會將背景工作分派至另一個執行緒。 �
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### <a name="file-protection"></a>檔案保護
 
 每個檔案都有建立時根據執行緒和處理程序身分識別而來的相關聯身分識別。 此身分識別將會用於檔案加密和選擇性抹除。 只有其身分識別為受管理且具有需要加密之原則的檔案才會進行加密。 SDK 的預設選擇性功能抹除，只會抹除與已要求抹除之受管理身分識別相關聯的檔案。 應用程式可使用 `MAMFileProtectionManager` 類別來查詢或變更檔案的身分識別。
@@ -1643,6 +1646,7 @@ Intune 完全不會解譯這些機碼值組，但會將它們傳遞給應用程�
 > 透過 MAM-WE 的傳遞組態設定無法在 `offline` 中傳遞。  在此情況下，只有 Android Enterprise AppRestriction 會透過空白身分識別上的 `MAMUserNotification` 傳遞。
 
 ### <a name="example"></a>範例
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1678,6 +1682,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="how-to-customize"></a>如何自訂
 若要將樣式變更套用至 Intune MAM 檢視，您必須先建立樣式覆寫 XML 檔案。 此檔案必須置於應用程式的 "/res/xml" 目錄，您可以任意命名檔案。 下列為此檔案必須遵循之格式的範例。
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1722,16 +1727,20 @@ LOGGER.info("Found value " + valueToUse);
 1. 若您的應用程式與 ADAL 整合，或是您需要啟用 SSO，請在[常見 ADAL 設定](#common-adal-configurations) #2 之後[設定 ADAL](#configure-azure-active-directory-authentication-library-adal)。 若不需要，您可以跳過此步驟。
    
 2. 將下列值放在資訊清單中以啟用預設註冊：
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
 
 3. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > 這會強制使用者將公司入口網站下載到裝置上，在使用前完成預設註冊流程。
 
@@ -1748,9 +1757,11 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="policy-enforcement-limitations"></a>原則強制執行限制
 
 * **使用內容解析程式**：「傳送或接收」Intune 原則可能會封鎖或部分封鎖內容解析程式的使用，不讓其存取另一個應用程式中的內容提供者。 這將導致 `ContentResolver` 方法傳回 null，或擲回錯誤值 (例如，`openOutputStream` 會在被封鎖的情況下擲回 `FileNotFoundException`)。 應用程式可以藉由呼叫下列項目，判斷透過內容解析程式無法寫入資料是否起因於原則 (或可能由原則造成)：
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     或如果沒有相關聯的活動
 
     ```java

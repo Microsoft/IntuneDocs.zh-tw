@@ -1,7 +1,7 @@
 ---
-title: 封存-適用於 Windows 10 的 Intune MDM 安全性基準設定
+title: Windows 10 的 Intune MDM 安全性基準設定封存
 titleSuffix: Microsoft Intune
-description: MDM 安全性基準設定，來管理使用 Microsoft Intune 的 Windows 10 的過去版本封存
+description: 封存先前發行版本的 MDM 安全性基準設定, 以 Microsoft Intune 管理 Windows 10
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418955"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735782"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>MDM 安全性基準設定的封存  
+# <a name="archive-of-mdm-security-baseline-settings"></a>保存 MDM 安全性基準設定  
 
-檢視封存的版本，適用於 Intune 的 MDM 安全性基準的詳細資料。  
+查看 Intune 的 MDM 安全性基準封存版本的詳細資料。  
 
-新的 MDM 安全性基準發行時，先前的設定清單會從安全性基準設定發行項前往此封存。 供使用，仍然支援這些版本，此封存提供來協助了解較舊的基準版本的預設設定。
+當新的 MDM 安全性基準發行時, 先前的設定清單會從安全性基準設定文章移至此封存。 這些版本仍然支援使用, 並提供此封存以協助瞭解較舊基準版本的預設設定。
 
-使用不再支援基準版本時，它將會移除從這篇文章。
+當基準版本不再支援使用時, 它就會從本文中移除。
 
-- 檢視可用於設定[最新的 MDM 安全性基準](security-baseline-settings-mdm.md) 
-- 深入了解[安全性基準](security-baselines.md)，以及如何升級您的安全性基準設定檔中的基準版本。
+- 查看目前 MDM 安全性基準中[可用的設定](security-baseline-settings-mdm.md) 
+- [瞭解](security-baselines.md)安全性基準, 以及如何在您的安全性基準設定檔中升級基準版本。
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>預覽：2018 年 10 月的 MDM 安全性基準  
 
-*此基準已取代[MDM Spring 2019 （19 小時 1） 的安全性基準](security-baseline-settings-mdm.md)*
+*此基準已由[適用于春季2019的 MDM 安全性基準 (19H1) 取代](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>上方鎖定  
 
@@ -261,38 +261,38 @@ ms.locfileid: "67418955"
   
   **預設值**：是  
   
-    當 [需要密碼]  設定為 [是]  時，有下列設定可用。
+  當 [需要密碼]  設定為 [是]  時，有下列設定可用。
 
-    - **密碼字元集計數下限**  
-      強式 PIN 或密碼所需的複雜元素類型 (大寫和小寫字母、數字和標點符號) 數目。 PIN 會為電腦與行動裝置強制套用下列行為：1 - 僅限數字 2 - 數字及小寫字母為必要項 3 - 數字、小寫字母及大寫字母為必要項。 在電腦 Microsoft 帳戶及網域帳戶中不受支援。 4 - 數字、小寫字母、大寫字母及特殊字元為必要項。 在電腦中不受支援。 預設值為 1。 
-      
-      **預設**：3  
+  - **密碼字元集計數下限**  
+    強式 PIN 或密碼所需的複雜元素類型 (大寫和小寫字母、數字和標點符號) 數目。 PIN 會為電腦與行動裝置強制套用下列行為：1 - 僅限數字 2 - 數字及小寫字母為必要項 3 - 數字、小寫字母及大寫字母為必要項。 在電腦 Microsoft 帳戶及網域帳戶中不受支援。 4 - 數字、小寫字母、大寫字母及特殊字元為必要項。 在電腦中不受支援。 預設值為 1。 
+    
+    **預設**：3  
   
-    - **登入失敗幾次後即抹除裝置**  
-      抹除裝置之前，允許的驗證失敗數目。 值為 0 就會停用裝置抹除功能。
-        
-      **預設**：10  
+  - **登入失敗幾次後即抹除裝置**  
+    抹除裝置之前，允許的驗證失敗數目。 值為 0 就會停用裝置抹除功能。
+    
+    **預設**：10  
   
-    - **密碼到期 (天數)**  
-      密碼最長使用期限原則設定，可決定系統要求使用者變更密碼前，可以使用該密碼多久 (天數)。 您可將密碼到期的天數設為 1 到 999 之間，或可將天數設定為 0 來指定密碼無使用期限。 若密碼最長使用期限介於 1 到 999 天之間，則密碼最短使用期限必須小於密碼最長使用期限。 若密碼最長使用期限設為 0，則密碼最長使用期限可為 0 到 998 天之間的任意值。
-      
-      **預設**：60  
+  - **密碼到期 (天數)**  
+    密碼最長使用期限原則設定，可決定系統要求使用者變更密碼前，可以使用該密碼多久 (天數)。 您可將密碼到期的天數設為 1 到 999 之間，或可將天數設定為 0 來指定密碼無使用期限。 若密碼最長使用期限介於 1 到 999 天之間，則密碼最短使用期限必須小於密碼最長使用期限。 若密碼最長使用期限設為 0，則密碼最長使用期限可為 0 到 998 天之間的任意值。
+    
+    **預設**：60  
   
-    - **必要的密碼類型**  
-      決定必要的 PIN 或密碼類型。
-      
-      **預設值** ：英數字元  
+  - **必要的密碼類型**  
+    決定必要的 PIN 或密碼類型。
+    
+    **預設值** ：英數字元  
   
-    - **密碼長度下限**  
-      密碼最短長度原則設定，可決定使用者帳戶密碼的最少字元數目。 您可設定 1 到 14 個字元之間的值，或可透過將字元數目設為 0 來設定無需密碼。
-      
-      **預設**：8  
-  
-    - **封鎖簡單密碼**  
-      指定是否允許 "1111" 或 "1234" 這類 PIN 及密碼。 若為電腦，這也會控制圖片密碼的使用方式。
-      
-      **預設值**：是  
-        *設為 [是]，可防止使用簡單密碼。* 
+  - **密碼長度下限**  
+    密碼最短長度原則設定，可決定使用者帳戶密碼的最少字元數目。 您可設定 1 到 14 個字元之間的值，或可透過將字元數目設為 0 來設定無需密碼。
+    
+    **預設**：8  
+
+  - **封鎖簡單密碼**  
+    指定是否允許 "1111" 或 "1234" 這類 PIN 及密碼。 若為電腦，這也會控制圖片密碼的使用方式。
+    
+    **預設值**：是  
+      *設為 [是]，可防止使用簡單密碼。* 
 
   - **不得重複使用以前用過的密碼**  
     指定可以將多少密碼儲存於無法使用的記錄中。 值會包含使用者的目前密碼。 例如，設定為 *1* 時，使用者在選擇新密碼時無法重複使用其目前的密碼。 設定為 *5* 表示使用者無法將其新密碼設定為其目前的密碼或先前使用過的四個密碼。
@@ -344,10 +344,10 @@ ms.locfileid: "67418955"
     指定是否允許來自 Windows 焦點功能 (例如鎖定畫面焦點、[開始] 功能表中建議的應用程式，及 Windows 提示) 中協力廠商軟體提供者的應用程式及內容建議。 使用者仍能夠看到 Microsoft 功能、應用程式及服務的建議。
       
     **預設值**：是  
-   - **封鎖消費者特定功能**  
-      讓 IT 系統管理員得以開啟通常僅供消費者使用的體驗，例如開始建議、成員資格通知、OOBE 後的應用程式安裝及重新導向磚。
-      
-     **預設值**：是  
+  - **封鎖消費者特定功能**  
+    讓 IT 系統管理員得以開啟通常僅供消費者使用的體驗，例如開始建議、成員資格通知、OOBE 後的應用程式安裝及重新導向磚。
+    
+    **預設值**：是  
 
 
 ### <a name="exploit-guard"></a>惡意探索防護  
@@ -1440,5 +1440,5 @@ ms.locfileid: "67418955"
  
 ## <a name="next-steps"></a>後續步驟  
 
-[檢視目前的基準版本](security-baseline-settings-mdm.md)  
-[若要使用新的基準版本升級設定檔](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[查看目前的基準版本](security-baseline-settings-mdm.md)  
+[升級設定檔以使用新的基準版本](security-baselines.md#change-the-baseline-instance-for-a-profile)
