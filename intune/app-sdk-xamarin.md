@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558395"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735464"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -68,22 +68,29 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
       ```csharp
       using Microsoft.Intune.MAM;
       ```
+
 4. 若要開始接收應用程式保護原則，您的應用程式必須註冊至 Intune MAM 服務。 如果您的應用程式不會使用 [Azure Active Directory 驗證程式庫](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) (ADAL) 或 [Microsoft 驗證程式庫](https://www.nuget.org/packages/Microsoft.Identity.Client) (MSAL) 來驗證使用者，而且您想要使用 Intune SDK 來處理驗證，則應用程式應該提供使用者 UPN 給 IntuneMAMEnrollmentManager 的 LoginAndEnrollAccount 方法：
+
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+
       如果在呼叫時使用者的 UPN 不明，則應用程式可能會傳入 Null。 在此情況下，系統會提示使用者輸入其電子郵件地址和密碼。
       
       如果您的應用程式已使用 ADAL 或 MSAL 來驗證使用者，則可以設定應用程式與 Intune SDK 之間的單一登入 (SSO) 體驗。 首先，您必須設定 ADAL/MSAL，將權杖儲存在 Intune Xamarin Bindings for iOS (com.microsoft.adalcache) 所使用的相同金鑰鏈存取群組中。 針對 ADAL，您可以[設定 AuthenticationContext 的 iOSKeychainSecurityGroup 屬性](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access)來執行此作業。 針對 MSAL，您必須[設定 PublicClientApplication 的 iOSKeychainSecurityGroup 屬性](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access)。 接下來，您必須使用應用程式的預設 AAD 設定覆寫 Intune SDK 所使用的這些設定。 若要這麼做，您可以依 [Intune App SDK for iOS 開發人員指南](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)中所述的方式透過應用程式 Info.plist 中的 IntuneMAMSettings 目錄，或是使用 IntuneMAMPolicyManager 執行個體的 AAD 覆寫屬性來完成。 Info.plist 方法是針對 ADAL 設定為靜態之應用程式的建議選項，而覆寫屬性則是針對會於執行階段決定那些值之應用程式的建議選項。 一旦完成設定所有的 SSO 設定，您的應用程式就應該在成功驗證之後，將使用者的 UPN 提供給 IntuneMAMEnrollmentManager 的 RegisterAndEnrollAccount 方法：
+
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
+
       應用程式可以在 IntuneMAMEnrollmentDelegate 的子類別中實作 EnrollmentRequestWithStatus 方法，並將 IntuneMAMEnrollmentManager 的 Delegate 屬性設定為該類別的執行個體，藉以判定註冊嘗試的結果。 請參閱我們的 [ Xamarin.iOS 應用程式範例](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)以取得範例。
 
       註冊成功時，應用程式可以透過查詢下列屬性來判定已註冊帳戶的 UPN (如果之前不明的話)： 
+
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+
 > [!NOTE] 
 > 沒有 iOS 的 Remapper。 整合到 Xamarin.Forms 應用程式應該與一般 Xamarin.iOS 專案相同。 
 
@@ -96,11 +103,22 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
 
 整合 Intune App SDK 的完整概觀位於 [Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 當您閱讀本指南並整合 Intune App SDK 與 Xamarin 應用程式時，下列各節旨在強調以 Java 開發的原生 Android 應用程式與以 C# 開發的 Xamarin 應用程式兩者之間差異。 這些區段應該視為補充，無法取代閱讀完整的指南。
 
+#### <a name="remapper"></a>Remapper
+從1.4428.1 版本開始, `Microsoft.Intune.MAM.Remapper`您可以將封裝新增到 Xamarin Android 應用程式做為[組建工具](app-sdk-android.md#build-tooling) , 以執行 MAM 類別、方法和系統服務取代。 如果包含 Remapper, 就會在建立應用程式時自動執行已重新命名方法和 MAM 應用程式區段的 MAM 對等取代部分。
+
+若要從 ification 由 Remapper 排除類別, 您可以在專案`.csproj`檔中加入下列屬性。
+```xml
+  <PropertyGroup>
+    <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
+  </PropertyGroup>
+```
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫且具有類似名稱的方法 (名稱具有 `MAM` 尾碼)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `OnCreate()` 然後呼叫 `base.OnCreate()` 時，`Activity` 必須覆寫 `OnMAMCreate()` 並呼叫 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 應用程式](app-sdk-android.md#mamapplication)
-應用程式必須定義繼承自 `MAMApplication` 的 `Android.App.Application` 類別。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
+您的應用程式必須`Android.App.Application`定義類別。 如果手動整合 MAM, 它必須繼承自`MAMApplication`。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
+
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -108,26 +126,33 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+
 > [!NOTE]
 > MAM Xamarin 繫結的問題可能導致在偵錯模式部署應用程式時，應用程式損毀。 因應措施就是，`Debuggable=false` 屬性必須新增至 `Application` 類別，而 `android:debuggable="true"` 旗標必須從資訊清單移除 (如果以手動方式設定)。
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[啟用需要應用程式參與的功能](app-sdk-android.md#enable-features-that-require-app-participation)
 範例：判斷應用程式是否需要 PIN
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
 ```
+
 範例：判斷主要 Intune 使用者
+
 ```csharp
 IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
 return info?.PrimaryUser;
 ```
+
 範例：判斷是否允許儲存至裝置或雲端儲存體
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
 #### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[從 SDK 註冊通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
 您的應用程式必須建立 `MAMNotificationReceiver`，並向 `MAMNotificationReceiverRegistry` 進行註冊，才能從 SDK 註冊通知。 這是藉由提供接收者以及想要在 `App.OnMAMCreate` 中接收的通知類型來完成，如下列範例所示：
+
 ```csharp
 public override void OnMAMCreate()
 {
@@ -141,13 +166,14 @@ public override void OnMAMCreate()
 ```
 
 #### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM 註冊管理員](app-sdk-android.md#mamenrollmentmanager)
+
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms 整合
 
-針對 `Xamarin.Forms` 應用程式，我們提供了 `Microsoft.Intune.MAM.Remapper` 套件，以便藉由將 `MAM` 類別插入到常用 `Xamarin.Forms` 類別的類別階層，自動執行 MAM 類別取代。 
+針對 `Xamarin.Forms` 應用程式，`Microsoft.Intune.MAM.Remapper` 套件會透過將 `MAM` 類別插入到常用 `Xamarin.Forms` 類別的類別階層，自動執行 MAM 類別取代。 
 
 > [!NOTE]
 > 除了完成以上詳述的 Xamarin.Android 整合，也要進行 Xamarin.Forms 整合。
@@ -164,6 +190,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
             LoadApplication(new App());
         }
 ```
+
 如果不進行取代，則您可能在進行取代之前會遇到下列編譯錯誤：
 * [編譯器錯誤 CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239)。 此錯誤通常是這種形式 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``。
 預期出現這種狀況是因為當重新對應程式修改 Xamarin 類別的繼承時，某些函式將被設定為 `sealed` 且會改為新增 MAM 變數以覆寫。
@@ -173,12 +200,15 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 > Remapper 會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性。 因此，新增 Remapper 時您可能需要重新載入並重建專案，IntelliSense 才能正確識別變更。
 
 ### <a name="company-portal-app"></a>公司入口網站應用程式
-Intune SDK Xamarin 繫結的仰賴[公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)啟用應用程式保護原則在裝置上的 Android 應用程式。 公司入口網站會從 Intune 服務擷取應用程式保護原則。 應用程式初始化時，它會載入原則和程式碼，以從公司入口網站強制執行該原則。 使用者不必登入。
+Intune SDK Xamarin 系結會依賴裝置上的[公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 應用程式是否存在, 以啟用應用程式保護原則。 公司入口網站會從 Intune 服務擷取應用程式保護原則。 應用程式初始化時，它會載入原則和程式碼，以從公司入口網站強制執行該原則。 使用者不需要登入。
 
 > [!NOTE]
 > 當 **Android** 裝置上沒有公司入口網站應用程式時，由 Intune 管理的應用程式會具有和不支援 Intune 應用程式保護原則的一般應用程式相同的行為。
 
 對於沒有裝置註冊的應用程式保護，使用者「不」 __ 需要使用公司入口網站應用程式註冊裝置。
+
+### <a name="sample-applications"></a>範例應用程式
+醒目提示 xamarin 中 MAM 功能的範例應用程式, 可在 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上取得。
 
 ## <a name="support"></a>支援
 如果組織是現有的 Intune 客戶，請與您的 Microsoft 支援代表合作，[在 GitHub 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上開啟支援票證並建立問題，我們將會儘快提供協助。 

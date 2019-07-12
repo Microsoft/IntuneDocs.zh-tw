@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8090e9906cc8e3b3da25b21343093dd2f656afa6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558553"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735800"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 用戶端從 Intune 資料倉儲 API 取得資料
 
@@ -161,9 +161,10 @@ ms.locfileid: "67558553"
 6. 選取 [我接受]  ，以接受 NuGet 套件授權。
 7. 從方案總管中，開啟 `Program.cs`。
 
-    ![Visual Studio 中的 Progam.cs 和方案總管](./media/reports-get_rest_data_in.png)
+    ![Visual Studio 中的 Program.cs 和方案總管](./media/reports-get_rest_data_in.png)
 
 8. 將 *Program.cs* 中的程式碼取代為下列程式碼：  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {
