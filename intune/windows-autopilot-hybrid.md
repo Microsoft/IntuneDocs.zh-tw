@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494539"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649093"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
 
 ## <a name="prerequisites"></a>必要條件
 
-成功設定您的[混合式 Azure AD 聯結裝置](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。 請務必使用 Get-MsolDevice Cmdlet 來[驗證您的裝置註冊]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)。
+成功設定您的[混合式 Azure AD 聯結裝置](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。 請務必使用 Get-MsolDevice Cmdlet 來[驗證您的裝置註冊](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)。
 
 要註冊的裝置，必須：
 - 執行 Windows 10 v1809 或更新版本。
-- 可存取網際網路。
-- 可存取您的 Active Directory (目前不支援 VPN 連線)。
-- 完成全新體驗 (OOBE)。
+- 能夠[遵循記載的 Windows Autopilot 網路需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements) \(部分機器翻譯\) 來存取網際網路。
+- 能夠存取 Active Directory 網域控制站，因此其必須連線至組織的網路 (以在其中解析 AD 網域和 AD 網域控制站的 DNS 記錄，並與網域控制站通訊來驗證使用者。 目前不支援 VPN 連線)。
 - 能夠 ping 您嘗試加入之網域的網域控制站。
+- 如果使用 Proxy，必須啟用並設定 WPAD Proxy 設定選項。
+- 完成全新體驗 (OOBE)。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>設定 Windows 10 自動註冊
 
@@ -139,7 +140,7 @@ ms.locfileid: "67494539"
 
 1. 如果您針對成員資格類型選取了 [動態裝置]  ，請在 [群組]  窗格中選取 [動態裝置成員]  ，然後在 [進階規則]  方塊中執行下列其中一個動作：
     - 若要建立群組來包含您所有的 Autopilot 裝置，請輸入 `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`。
-    - Intune 的 [群組標籤] 欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若建立的群組要包含具特定[群組標籤 (OrderID)] 的所有 Autopilot 裝置，則必須鍵入： `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Intune 的 [群組標籤] 欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若要建立包含具特定群組標籤 (OrderID) 的所有 Autopilot 裝置的群組，您必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若要建立群組來包含具有特定訂購單識別碼的所有 Autopilot 裝置，請輸入 `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`。
     
 1. 選取 [儲存]  。

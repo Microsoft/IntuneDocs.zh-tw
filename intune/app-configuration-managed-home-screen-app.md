@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049945"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735708"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>設定適用於 Android Enterprise 的 Microsoft Managed Home Screen 應用程式
 
@@ -30,12 +30,12 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>設定 Microsoft Managed Home Screen 應用程式的時機
 
-一般而言，如果您可以透過 [裝置設定] 來進行設定，就請在該處進行。 這樣做可以節省您的時間、盡可能減少失誤，並獲得較佳的 Intune 支援體驗。 不過，有些 Managed Home Screen 設定目前僅透過 Intune 主控台中的 [應用程式設定原則] 刀鋒視窗提供。 請使用這份文件了解如何使用設定設計工具或 JSON 指令碼來進行不同的設定。 
+一般而言，如果您可以透過 [裝置設定] 來進行設定，就請在該處進行。 這樣做可以節省您的時間、盡可能減少失誤，並獲得較佳的 Intune 支援體驗。 不過，有些 Managed Home Screen 設定目前僅透過 Intune 主控台中的 [應用程式設定原則]  刀鋒視窗提供。 請使用這份文件了解如何使用設定設計工具或 JSON 指令碼來進行不同的設定。 
 
 > [!NOTE]
-> 目前可以 (並建議) 透過 [用戶端應用程式] 和 [裝置設定] 來設定允許列出的應用程式及釘選的 Web 連結。 如需 [裝置設定] 中會影響 Managed Home Screen 的設定完整清單，請參閱[專用裝置設定](device-restrictions-android-for-work.md#dedicated-device-settings)。  
+> 目前可以 (並建議) 透過 [用戶端應用程式]  和 [裝置設定]  來設定允許列出的應用程式及釘選的 Web 連結。 如需 [裝置設定]  中會影響 Managed Home Screen 的設定完整清單，請參閱[專用裝置設定](device-restrictions-android-for-work.md#dedicated-device-settings)。  
 
-首先，在 Azure 入口網站中瀏覽到 Intune 主控台，然後前往 [用戶端應用程式] > [應用程式設定原則]。 為執行 **Android** 的 [受控裝置] 新增設定原則，然後選擇 [Managed Home Screen] 作為建立關聯的應用程式。 按一下 [組態設定] 來進行其他可用的 Managed Home Screen 設定。 
+首先，在 Azure 入口網站中瀏覽到 Intune 主控台，然後前往 [用戶端應用程式]   > [應用程式設定原則]  。 為執行 **Android** 的 [受控裝置]  新增設定原則，然後選擇 [Managed Home Screen]  作為建立關聯的應用程式。 按一下 [組態設定]  來進行其他可用的 Managed Home Screen 設定。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>選擇組態設定格式
 
@@ -44,7 +44,7 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 - **設定設計工具**易於使用的 UI 可讓您將功能切換為開啟或關閉及設定值，藉此進行設定。 在這個方法中，有幾個值類型為 `BundleArray` 的設定索引碼無法使用。 這些只能設定索引碼藉由輸入 JSON 資料來設定。 
 - **JSON 資料**可讓您使用 JSON 指令碼定義所有可用的設定索引碼。 
 
-若您使用設定設計工具來新增屬性，可以將這些屬性自動轉換成 JSON，方法是從 [組態設定格式] 下拉式清單選取 [輸入 JSON 資料]。
+若您使用設定設計工具來新增屬性，可以將這些屬性自動轉換成 JSON，方法是從 [組態設定格式]  下拉式清單選取 [輸入 JSON 資料]  。
 
 ![組態設定格式選項的螢幕擷取畫面](./media/app-configuration-managed-home-screen-app/app-configuration-managed-home-screen-app_01.png)
 
@@ -74,21 +74,24 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 | 啟用主畫面摘要 | bool | FALSE | 啟用主畫面摘要，查看方式為向左撥動主畫面。 此摘要會顯示不同類型的內容，例如新聞、日曆、常用應用程式及 Cortana 語音助理卡片等。若您啟用此項，終端使用者就能夠藉由向左撥動主畫面來巡覽到摘要。 |
 | 啟用概觀模式 | bool | FALSE | 讓終端使用者可在主畫面上新增或移除不同的頁面，存取方式是從預設畫面向右撥動。 若您啟用此項，終端使用者就能夠在主畫面預設畫面的右方新增頁面，也可變更預設頁面，並能夠在 Managed Home Screen 上存取設定。 |
 | 啟用裝置遙測 | bool | FALSE | 啟用正對 Managed Home Screen 擷取的所有遙測。 若您啟用此項，Microsoft 就能夠截取裝置使用方式遙測，例如在這部裝置上啟動某個應用程式遙測。 |
-| 設定列入允許清單的應用程式 | bundleArray | FALSE | 讓您能夠從裝置上已安裝的應用程式中，定義一組可在主畫面上顯示的應用程式。 定義應用程式的方式，是依您想要顯示的應用程式輸入應用程式套件名稱，例如 com.android.settings 會讓設定可在主畫面上存取。 您允許列於此區段的應用程式應已安裝於裝置上，才能在主畫面上顯示。 |
+| 設定允許列出的應用程式 | bundleArray | FALSE | 讓您能夠從裝置上已安裝的應用程式中，定義一組可在主畫面上顯示的應用程式。 您可以針對您想要顯示的應用程式輸入其應用程式套件名稱來定義應用程式，例如輸入 com.microsoft.emmx 將會使設定可在主畫面上存取。 您允許列於此區段的應用程式應已安裝於裝置上，才能在主畫面上顯示。 |
 | 設定釘選的 Web 連結 | bundleArray | FALSE | 讓您可在主畫面上，將網站釘選為快速啟動圖示。 您可以利用這項設定定義 URL，並將其新增到主畫面，讓終端使用者只要輕觸一下，即可在瀏覽器中啟動。 |
 | 啟用搜尋列 | bool | FALSE | 在主畫面上啟用搜尋列。 如果您啟用此項，裝置的使用者會在主畫面上看到搜尋列，而他們能在該處輸入任何想在 Web 上搜尋的內容。 |
 | 停用設定應用程式 | bool | FALSE | 停用 Managed Home Screen 的設定頁面。 若您停用此項，裝置的終端使用者就無法前往 Managed Home Screen 的設定。 |
 | 啟用螢幕保護裝置 | bool | FALSE | 啟用或停用螢幕保護裝置。 若設為 true，您可以設定 **screen_saver_image**、**screen_saver_show_time**、**inactive_time_to_show_screen_saver** 及 **media_detect_screen_saver**。 |
-| 螢幕保護裝置圖片 | 字串 |   | 設定螢幕保護裝置圖片的 URL。 若未設定 URL，裝置會在螢幕保護裝置啟用時，顯示預設畫面。  |
-| 螢幕保護裝置顯示時間 | 整數 | 0 | 提供選項，設定裝置在螢幕保護裝置模式期間要顯示螢幕保護裝置的時間長度，以秒為單位。 若設為 0，螢幕保護裝置會在螢幕保護裝置模式無限期顯示，直到裝置進入使用狀態為止。  |
+| 螢幕保護裝置圖片 | 字串 |   | 設定螢幕保護裝置影像的 URL。 若未設定 URL，裝置會在螢幕保護裝置啟用時顯示預設螢幕保護裝置影像。 預設影像會顯示 Managed Home Screen 應用程式圖示。  |
+| 螢幕保護裝置顯示時間 | 整數 | 0 | 提供選項來設定裝置在螢幕保護裝置模式期間要顯示螢幕保護裝置的時間長度 (以秒為單位)。 若設為 0，螢幕保護裝置會在螢幕保護裝置模式無限期顯示，直到裝置進入使用狀態為止。  |
 | 啟用螢幕保護裝置的閒置時間 | 整數 | 30 | 在觸發螢幕保護裝置之前的裝置閒置秒數。 若設為 0，裝置就永遠不會進入螢幕保護裝置模式。 |
-| 顯示螢幕保護裝置之前的媒體偵測 | bool | TRUE | 選擇當裝置上在播放音訊/視訊時，裝置畫面是否應顯示螢幕保護裝置。 若設為 true，不論 **inactive_time_to_show_scree_saver**的值為何，裝置都不會播放音訊/視訊。 若設為 false，裝置畫面會根據 **inactive_time_to_show_screen_saver** 中設定的值來顯示螢幕保護裝置。   |
+| 顯示螢幕保護裝置之前的媒體偵測 | bool | TRUE | 選擇裝置在播放音訊/視訊時，裝置畫面是否應顯示螢幕保護裝置。 若設為 true，不論 **inactive_time_to_show_scree_saver**的值為何，裝置都不會播放音訊/視訊。 若設為 false，裝置畫面會根據 **inactive_time_to_show_screen_saver** 中所設定的值來顯示螢幕保護裝置。   |
 | 啟用虛擬 Home 鍵 | bool | FALSE | 將此設定改為 `True`，即允許終端使用者存取 Managed Home Screen 的 Home 鍵，讓使用者可從目前所在的工作返回 Managed Home Screen。  |
 | 虛擬 Home 鍵類型 | 字串 | swipe_up | 使用 **swipe_up**，透過向上撥動的手勢存取 Home 鍵。 使用 **float** 來存取附著式、常設的 Home 鍵，可讓使用者在畫面上四處移動。 |
 | 電池與訊號強度指標列 | bool | True  | 將此設定改為 `True`，會顯示電池與訊號強度指標列。 |
 | 結束鎖定工作模式的密碼 | 字串 |   | 輸入 4-6 位數的代碼，用來暫時退出鎖定工作模式，以進行疑難排解。 |
 | 顯示 Wi-Fi 設定 | bool | FALSE | 將此設定改為 `True` 可讓終端使用者開啟或關閉 Wi-Fi，或連線到其他 Wi-Fi 網路。  |
 | 顯示藍牙設定 | bool | FALSE | 將此設定改為 `True`，可讓終端使用者開啟或關閉藍牙，以及連線到其他具藍牙功能的裝置。   |
+| 資料夾中的應用程式會依名稱排序 | bool | TRUE | 將此設定切換為 `False` 會允許資料夾中的項目以其被指定的順序顯示。 否則，它們將會依字母順序顯示。   |
+| 已啟用應用程式順序 | bool | FALSE | 將此設定切換為 `True` 會允許設定 Managed Home Screen 上應用程式、網頁連結及資料夾的順序。 啟用後，請使用 **app_order**來設定排序。   |
+| 應用程式順序 | bundleArray | FALSE | 可讓您指定 Managed Home Screen 上應用程式、網頁連結及資料夾的順序。 若要使用此設定，必須啟用 [鎖定主畫面]  ，定義 [設定格線間距]  ，並將 [已啟用應用程式順序]  設定為 `True`。   |
 
 ## <a name="enter-json-data"></a>輸入 JSON 資料
 
@@ -111,10 +114,6 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -238,6 +237,87 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
             "valueBool": false
         },
         {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "managed_folders",
             "valueBundleArray": [
                 {
@@ -302,8 +382,8 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>後續步驟
 
 - 如需 Android Enterprise 專用裝置的詳細資訊，請參閱[設定 Android Enterprise 專用裝置的 Intune 註冊](android-kiosk-enroll.md)。

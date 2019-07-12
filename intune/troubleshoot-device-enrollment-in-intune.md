@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528760"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548095"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -84,47 +84,47 @@ ms.locfileid: "67528760"
 
 **解決方法：**
 
-1.  從裝置移除 Intune 公司入口網站應用程式。
+1. 從裝置移除 Intune 公司入口網站應用程式。
 
-2.  在裝置上，開啟瀏覽器，並瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後嘗試使用者登入。
+2. 在裝置上，開啟瀏覽器，並瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後嘗試使用者登入。
 
-3.  如果使用者無法登入，則應該嘗試其他網路。
+3. 如果使用者無法登入，則應該嘗試其他網路。
 
-4.  如果失敗，請驗證使用者的認證已正確地與 Azure Active Directory 同步處理。
+4. 如果失敗，請驗證使用者的認證已正確地與 Azure Active Directory 同步處理。
 
-5.  如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
+5. 如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
 **問題**使用者收到「MDM 授權單位未定義」  錯誤。
 
 **解決方法：**
 
-1.  確認已經[正確地設定](mdm-authority-set.md) MDM 授權單位。
+1. 確認已經[正確地設定](mdm-authority-set.md) MDM 授權單位。
     
-2.  確認使用者的認證已正確地與 Azure Active Directory 同步。 您可以確認使用者的 UPN 是否符合 Microsoft 365 系統管理中心內的 Active Directory 資訊。
+2. 確認使用者的認證已正確地與 Azure Active Directory 同步。 您可以確認使用者的 UPN 是否符合 Microsoft 365 系統管理中心內的 Active Directory 資訊。
     如果 UPN 與 Active Directory 資訊不符：
 
-    1.  關閉本機伺服器上的 DirSync。
+    1. 關閉本機伺服器上的 DirSync。
 
-    2.  從 **Intune 帳戶入口網站** 使用者清單刪除不相符的使用者。
+    2. 從 **Intune 帳戶入口網站** 使用者清單刪除不相符的使用者。
 
-    3.  等候約一小時，讓 Azure 服務移除不正確的資料。
+    3. 等候約一小時，讓 Azure 服務移除不正確的資料。
 
-    4.  重新開啟 DirSync，然後檢查使用者現在是否已正確地同步處理。
+    4. 重新開啟 DirSync，然後檢查使用者現在是否已正確地同步處理。
 
-3.  如果您使用 System Center Configuration Manager (含 Intune)，請確認使用者具有有效的雲端使用者識別碼：
+3. 如果您使用 System Center Configuration Manager (含 Intune)，請確認使用者具有有效的雲端使用者識別碼：
 
-    1.  開啟 SQL Management Studio。
+    1. 開啟 SQL Management Studio。
 
-    2.  連線到適當的 DB。
+    2. 連線到適當的 DB。
 
-    3.  開啟資料庫資料夾，然後尋找並開啟 **CM_DBName** 資料夾，其中 DBName 是客戶資料庫的名稱。
+    3. 開啟資料庫資料夾，然後尋找並開啟 **CM_DBName** 資料夾，其中 DBName 是客戶資料庫的名稱。
 
-    4.  選擇頂端的 [新增查詢]  並執行下列查詢：
+    4. 選擇頂端的 [新增查詢]  並執行下列查詢：
 
-        -   查看所有使用者：`select * from [CM_ DBName].[dbo].[User_DISC]`
+        - 查看所有使用者：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   若要查看特定使用者，請使用下列查詢，其中 %testuser1% 是所要查閱使用者 username@domain.com 的預留位置：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - 若要查看特定使用者，請使用下列查詢；其中 %testuser1% 是所要查閱使用者之 username@domain.com 的預留位置：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         撰寫查詢之後，請選擇 [!Execute]  。
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
@@ -212,13 +212,13 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法：**
 
-1.  確認已將所使用 Intune 服務版本的適當授權指派給使用者。
+1. 確認已將所使用 Intune 服務版本的適當授權指派給使用者。
 
-2.  確認尚未向其他 MDM 提供者註冊裝置。
+2. 確認尚未向其他 MDM 提供者註冊裝置。
 
 3. 確認裝置尚未安裝管理設定檔。
 
-4.  確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
+4. 確認 Chrome (適用於 Android) 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="android-certificate-issues"></a>Android 憑證問題
 
@@ -321,15 +321,15 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
-1.  確認已將所使用 Intune 服務版本的適當授權指派給使用者。
+1. 確認已將所使用 Intune 服務版本的適當授權指派給使用者。
 
-2.  確認尚未向其他 MDM 提供者註冊裝置。
+2. 確認尚未向其他 MDM 提供者註冊裝置。
 
 3. 確認裝置尚未安裝管理設定檔。
 
-4.  巡覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
+4. 巡覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
 
-5.  確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
+5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
 **問題**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
@@ -428,17 +428,17 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 #### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
 
-1.  在 Configuration Manager 系統管理主控台中，選取 [監視]  &gt; [系統狀態]  &gt; [狀態訊息查詢]  。
+1. 在 Configuration Manager 系統管理主控台中，選取 [監視]  &gt; [系統狀態]  &gt; [狀態訊息查詢]  。
 
-2.  以滑鼠右鍵按一下 [手動刪除的集合成員資源]  ，然後選取 [顯示訊息]  。
+2. 以滑鼠右鍵按一下 [手動刪除的集合成員資源]  ，然後選取 [顯示訊息]  。
 
-3.  選擇適當的時間/日期或 [過去 12 小時]。
+3. 選擇適當的時間/日期或 [過去 12 小時]。
 
-4.  尋找有問題的裝置並檢閱裝置的移除方式。 下列範例顯示帳戶 SCCMInstall 已透過未知的應用程式刪除裝置。
+4. 尋找有問題的裝置並檢閱裝置的移除方式。 下列範例顯示帳戶 SCCMInstall 已透過未知的應用程式刪除裝置。
 
     ![裝置刪除診斷的螢幕擷取畫面](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  檢查 Configuration Manager 未排定任何可能會自動清除非網域、行動或相關裝置的工作、指令碼或其他處理序。
+5. 檢查 Configuration Manager 未排定任何可能會自動清除非網域、行動或相關裝置的工作、指令碼或其他處理序。
 
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 註冊錯誤
 [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解) 這份文件提供 iOS 註冊錯誤清單。

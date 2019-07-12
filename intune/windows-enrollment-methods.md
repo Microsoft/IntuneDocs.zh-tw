@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b8b1c47e4a2eb46bb8f7190ede351ed77a1bfef4
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494505"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548678"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法
 
@@ -40,7 +40,7 @@ ms.locfileid: "67494505"
     - 在 Intune 中註冊裝置作為個人擁有的裝置 (BYOD)。
 如果系統管理員已設定自動註冊 (適用於 Azure AD Premium 訂閱)，使用者只需輸入其認證一次。 否則，他們必須透過僅限 MDM 註冊個別註冊，並重新輸入其認證。  
 - **僅限 MDM 註冊**可讓使用者將現有的工作群組、Active Directory 或加入 Azure Active Directory 的電腦註冊到 Intune 中。 使用者可從現有 Windows 電腦上的 [設定] 進行註冊。 但不建議此方法，因為這並不會將裝置註冊到 Azure Active Directory 中。 它也會防止使用條件式存取等功能。
-- [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 向 Azure Active Directory 加入裝置，並讓使用者使用其 Azure AD 認證登入 Windows。 如已啟用自動註冊，則會在 Intune 中自動註冊裝置。 自動註冊的優點是使用者只需經過單一步驟程序。 否則，他們必須透過僅限 MDM 註冊個別註冊，並重新輸入其認證。 使用者可在初始 Windows OOBE 或從 [設定] 進行此註冊。 裝置會在 Intune 中標示為公司擁有的裝置。
+- [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 將裝置聯結至 Azure Active Directory，並讓使用者使用其 Azure AD 認證登入 Windows。 如已啟用自動註冊，則會在 Intune 中自動註冊裝置。 自動註冊的優點是使用者只需經過單一步驟程序。 否則，他們必須透過僅限 MDM 註冊個別註冊，並重新輸入其認證。 使用者可在初始 Windows OOBE 或從 [設定] 進行此註冊。 裝置會在 Intune 中標示為公司擁有的裝置。
 - [Autopilot](enrollment-autopilot.md) - 將 Azure AD Join 自動化，並將公司擁有的新裝置註冊到 Intune 中。 此方法可簡化現成的體驗，而不需要將自訂作業系統映像套用到裝置。 當系統管理員使用 Intune 來管理 Autopilot 裝置時，可在裝置註冊之後管理原則、設定檔、應用程式等。  Autopilot 部署類型有四種：[自我部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (適用於資訊站、數位告示板或共用裝置)、[使用者驅動模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (適用於傳統使用者)、[白手套](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) )可讓合作夥伴或 IT 員工預先佈建 Windows 10 PC (讓它完全設定且已就緒可用於商業用途)，而 [適用於現有裝置的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) ) 可讓您輕鬆地部署最新版的 Windows 10 到您的現有裝置。
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Intune 中的系統管理員註冊

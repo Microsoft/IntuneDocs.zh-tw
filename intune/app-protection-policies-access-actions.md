@@ -1,7 +1,7 @@
 ---
-title: 使用應用程式防護原則的存取動作抹除資料
+title: 使用應用程式防護原則的條件式啟動動作來抹除資料
 titleSuffix: Microsoft Intune
-description: 了解如何在 Microsoft Intune 中，使用應用程式防護原則的存取動作選擇性地抹除資料。
+description: 了解如何在 Microsoft Intune 中使用應用程式防護原則的條件式啟動動作來選擇性地抹除資料。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804675"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558439"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的條件式啟動動作來選擇性地抹除資料
 
 使用 Intune 應用程式防護原則，您可以進行一些設定，以封鎖終端使用者存取公司應用程式或帳戶。 這些設定的目標是資料重新配置和存取需求，您的組織會針對已進行 JB 破解的裝置和最低 OS 版本等項目設定這些需求。
  
 您可以使用這些設定，明確地選擇從終端使用者的裝置中抹除貴公司的公司資料，作為不符合規範時所要採取的動作。 在某些設定中，您可以設定多個動作，例如根據不同的指定值封鎖存取及抹除資料。
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>使用存取動作建立應用程式防護原則
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>使用條件式啟動動作建立應用程式保護原則
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式保護原則]  。
 4. 按一下 [新增原則]  (您也可以編輯現有的原則)。 
 5. 按一下 [設定必要設定]  ，以查看可針對原則設定的設定清單。 
-6. 藉由在 [設定] 窗格中向下捲動，您會看到標題為 [存取動作]  的區段與可編輯的資料表。
+6. 藉由在 [設定] 窗格中向下捲動，您會看到標題為 [條件式啟動]  且具可編輯資料表的區段。
 
     ![Intune 應用程式防護存取動作的螢幕擷取畫面](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ ms.locfileid: "66804675"
 
 ### <a name="ios-policy-settings"></a>iOS 原則設定
 針對 iOS，您能夠使用 [設定]  下拉式清單設定下列設定的動作：
--  PIN 碼嘗試次數上限
--  離線寬限期
--  已進行 JB 或 Root 破解的裝置
--  最低 OS 版本
--  最低應用程式版本
--  最低 SDK 版本
--  裝置型號
+- PIN 碼嘗試次數上限
+- 離線寬限期
+- 已進行 JB 或 Root 破解的裝置
+- 最低 OS 版本
+- 最低應用程式版本
+- 最低 SDK 版本
+- 裝置型號
 
 若要使用 [裝置型號]  設定，請輸入以分號分隔的 iOS 型號識別碼清單。 您可以在 [HockeyApp 支援文件](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的 [裝置類型] 欄下方找到 iOS 機型識別碼。<br>
 範例輸入：*iPhone5,2; iPhone5,3*
@@ -74,15 +74,15 @@ ms.locfileid: "66804675"
 ### <a name="android-policy-settings"></a>Android 原則設定
 
 針對 Android，您能夠使用 [設定]  下拉式清單設定下列設定的動作：
--  PIN 碼嘗試次數上限
--  離線寬限期
--  已進行 JB 或 Root 破解的裝置
--  最低 OS 版本
--  最低應用程式版本
--  最低修補程式版本
--  裝置製造商
--  SafetyNet 裝置證明
--  對應用程式進行威脅掃描
+- PIN 碼嘗試次數上限
+- 離線寬限期
+- 已進行 JB 或 Root 破解的裝置
+- 最低 OS 版本
+- 最低應用程式版本
+- 最低修補程式版本
+- 裝置製造商
+- SafetyNet 裝置證明
+- 對應用程式進行威脅掃描
 
 若要使用 [裝置製造商]  設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
 範例輸入：*製造商 A;製造商 B* 
@@ -105,9 +105,9 @@ ms.locfileid: "66804675"
 若要進行設定，請從 [設定]  資料行底下的下拉式清單中選取某個設定。 選取設定之後，如果必須設定值，可編輯的文字方塊就會在相同資料列的 [值]  資料行底下變成啟用狀態。 此外，下拉式清單會在 [動作]  資料行底下變成啟用狀態，其中包含一組適用於該設定的條件式啟動動作。 
 
 下列清單提供常見的動作清單：
--  **封鎖存取** – 封鎖終端使用者存取公司應用程式。
--  **抹除資料** – 從終端使用者的裝置抹除公司資料。
--  **警告** – 提供對話方塊向終端使用者顯示警告訊息。
+- **封鎖存取** – 封鎖終端使用者存取公司應用程式。
+- **抹除資料** – 從終端使用者的裝置抹除公司資料。
+- **警告** – 提供對話方塊向終端使用者顯示警告訊息。
 
 在某些情況下，例如 [最低 OS 版本]  設定，您可以進行此設定，根據不同的版本號碼來執行所有適用的動作。 
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: a80dd650304d99df0d2adf636fcc687444adada2
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511708"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648999"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -49,7 +49,7 @@ ms.locfileid: "67511708"
 ### <a name="encryption"></a>加密
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
-| **加密組織資料** | 選擇 [需要]  ，在這個應用程式中啟用公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 256 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。 <br><br> 加密方法符合 FIPS 140-2 規範。     |  **需要**|  
+| **加密組織資料** | 選擇 [需要]  ，在這個應用程式中啟用公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 256 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 新檔案將會以 256 位元的金鑰進行加密。 現有的 128 位元加密檔案將會針對 256 位元金鑰進行移轉嘗試，但該程序不一定會成功。 以 128 位元金鑰加密的檔案將會維持可讀取性。 <br><br> 加密方法符合 FIPS 140-2 規範。     |  **需要**|  
 | <ul><ui>**加密已註冊之裝置上的組織資料** | 選取 [需要]  以強制在所有裝置上使用 Intune 應用程式層加密來加密組織資料。 選取 [不需要]  以不強制在所有已註冊的裝置上使用 Intune 應用程式層加密來加密組織資料。| **需要** |
 
 
@@ -100,7 +100,7 @@ ms.locfileid: "67511708"
 
 | 設定 | 如何使用 |  
 |------|------| 
-| **需要 PIN 碼才可存取** | 選取 [是]  ，需要 PIN 才能使用此應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 <br><br> 預設值 = [是]  。<br><br> 進行下列 PIN 強度設定： <br> <ul><li>**選取類型：** 先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> 預設值 = **數值**<br><br> **注意︰** 允許的特殊字元包括 Android 英文鍵盤上的特殊字元和符號。</li></ul>  <ul><li>**PIN 重設之前的嘗試次數：** 指定使用者必須重設之前，使用者必須成功輸入 PIN 的嘗試次數。 <br><br> 預設值 = **5** </li> <br> <li> **允許簡單的 PIN：** 選取 [是]  以允許使用者使用簡單的 PIN 序列 (例如 *1234*、*1111*、*abcd* 或 *aaaa*)。 選取 [否]  ，防止其使用簡單的序列。 <br><br>預設值 = [是]  <br><br>**注意︰** 如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 已設定為 [是]，則使用者的 PIN 中需要至少有一個字母**或**至少一個特殊字元。 如果已設定密碼類型 PIN，且 [允許簡單的 PIN] 已設定為 [否]，則使用者的 PIN 中需要至少一個數字**和**一個字母**以及**至少一個特殊字元。 </li> <br> <li>  **PIN 長度：** 指定 PIN 序列的最小位數。 <br><br>預設值 = **4** </li> <br> <li> **允許指紋而非 PIN (Android 6.0+)：** 選取 [是]  以允許使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) \(英文\) 而非 PIN。 <br><br>預設值 = [是]  <br><br>**注意︰** 此功能支援 Android 裝置上的生物特徵辨識通用控制項。 「不支援」  OEM 特定的生物特徵辨識設定，例如 Samsung Pass。 <br><br>在 Android 上，您可以讓使用者使用 [Android 指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 來證明其身分識別。 使用者嘗試使用自己的公司或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 <br><br> Android 工作設定檔必須註冊個別指紋，才能強制執行**允許指紋而非 PIN** 原則。 此原則僅針對 Android 工作設定檔中安裝的原則管理應用程式生效。 藉著在公司入口網站中註冊而建立 Android 工作設定檔之後，個別指紋必須在裝置上註冊。 如需使用 Android 工作設定檔的工作設定檔指紋詳細資訊，請參閱[鎖定您的工作資料夾](https://support.google.com/work/android/answer/7029958)。<br><br><ul><li>**逾時後以 PIN 覆寫指紋**：若要使用此設定，請選取 [是]  ，然後設定閒置逾時。 <br><br>預設值 = 否  </li></ul> <br> <ul><li>**逾時 (非使用狀態分鐘數)** ：指定密碼或數字 (依設定) PIN 將會覆寫使用指紋的時間 (分鐘)。 </li></ul></li></ul><br><ul><li>**在裝置 PIN 受控時，停用應用程式 PIN**：選取 [是]  ，在設定公司入口網站的已註冊裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br><br> 預設值 = [否]  。 </li></ul> | 
+| **需要 PIN 碼才可存取** | 選取 [是]  ，需要 PIN 才能使用此應用程式。 使用者第一次在工作或學校內容中執行應用程式時，系統會提示他們設定這個 PIN。 <br><br> 預設值 = [是]  。<br><br> 進行下列 PIN 強度設定： <br> <ul><li>**選取類型：** 先設定數值或密碼類型的 PIN 需求，再存取已套用應用程式保護原則的應用程式。 數值需求只有數字，密碼則至少要以 1 個字母**或**至少要以 1 個特殊字元定義。 <br><br> 預設值 = **數值**<br><br> **注意︰** 允許的特殊字元包括 Android 英文鍵盤上的特殊字元和符號。</li></ul>  <ul><li>**PIN 重設之前的嘗試次數：** 指定使用者必須重設之前，使用者必須成功輸入 PIN 的嘗試次數。 <br><br> 預設值 = **5** </li> <br> <li> **允許簡單的 PIN：** 選取 [是]  以允許使用者使用簡單的 PIN 序列 (例如 *1234*、*1111*、*abcd* 或 *aaaa*)。 選取 [否]  ，防止其使用簡單的序列。 系統會在 3 字元滑動視窗中檢查簡單序列。 如果設定 [否]  ，系統將不會接受使用者將 PIN 設定為 1235 或 1112，但會允許 1122。 <br><br>預設值 = [是]  <br><br>**注意︰** 如果已設定密碼類型 PIN，而且 [允許簡單的 PIN] 已設定為 [是]，則使用者的 PIN 中需要至少有一個字母**或**至少一個特殊字元。 如果已設定密碼類型 PIN，且 [允許簡單的 PIN] 已設定為 [否]，則使用者的 PIN 中需要至少一個數字**和**一個字母**以及**至少一個特殊字元。 </li> <br> <li>  **PIN 長度：** 指定 PIN 序列的最小位數。 <br><br>預設值 = **4** </li> <br> <li> **允許指紋而非 PIN (Android 6.0+)：** 選取 [是]  以允許使用者針對應用程式存取使用[指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) \(英文\) 而非 PIN。 <br><br>預設值 = [是]  <br><br>**注意︰** 此功能支援 Android 裝置上的生物特徵辨識通用控制項。 「不支援」  OEM 特定的生物特徵辨識設定，例如 Samsung Pass。 <br><br>在 Android 上，您可以讓使用者使用 [Android 指紋驗證](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 來證明其身分識別。 使用者嘗試使用自己的公司或學校帳戶來使用這個應用程式時，系統會提示他們提供自己的指紋識別，而不是輸入 PIN。 <br><br> Android 工作設定檔必須註冊個別指紋，才能強制執行**允許指紋而非 PIN** 原則。 此原則僅針對 Android 工作設定檔中安裝的原則管理應用程式生效。 藉著在公司入口網站中註冊而建立 Android 工作設定檔之後，個別指紋必須在裝置上註冊。 如需使用 Android 工作設定檔的工作設定檔指紋詳細資訊，請參閱[鎖定您的工作資料夾](https://support.google.com/work/android/answer/7029958)。<br><br><ul><li>**逾時後以 PIN 覆寫指紋**：若要使用此設定，請選取 [是]  ，然後設定閒置逾時。 <br><br>預設值 = 否  </li></ul> <br> <ul><li>**逾時 (非使用狀態分鐘數)** ：指定密碼或數字 (依設定) PIN 將會覆寫使用指紋的時間 (分鐘)。 </li></ul></li></ul><br><ul><li>**在裝置 PIN 受控時，停用應用程式 PIN**：選取 [是]  ，在設定公司入口網站的已註冊裝置上偵測到裝置鎖定時，停用應用程式 PIN。 <br><br> 預設值 = [否]  。 </li></ul> | 
 | **需要公司認證才能存取** | 選擇 [是]  ，需要使用者使用工作或學校帳戶登入來進行應用程式存取，而不是輸入 PIN。 當設定為 [是]  且已開啟 PIN 或生物識別登入提示時，會顯示公司認證以及 PIN 或生物識別登入提示。 <br><br>預設值 = 否  |
 | **重新檢查存取需求前等候時間 (分鐘)** | 進行下列設定： <ul><li>**逾時**︰這是重新檢查存取需求 (稍早定義於原則中) 前經過的分鐘數。 例如，若管理員在原則中開啟 PIN 及「封鎖已 Root 破解的裝置」，則當使用者開啟 Intune 受控應用程式時，就必須輸入 PIN 並在未 Root 破解的裝置上使用應用程式。 當使用這項設定時，使用者在等於設定值的時段內都不需要在任何 Intune 受控應用程式上輸入 PIN 或接受另一次 Root 偵測檢查。  <br><br>此原則設定格式支援正整數。 <br><br> 預設值 = **30 分鐘** <br><br> **注意︰** 在 Android 上，PIN 會在所有 Intune 受控應用程式間共用。 當裝置上的應用程式離開前景時，PIN 計時器就會重設。 在此設定中所定義的逾時持續時間內，使用者不需要在任何共用 PIN 的 Intune 受控應用程式上輸入 PIN。 <br><br></li> |
 | **封鎖螢幕擷取及 Android 助手** | 選取 [是]  ，在使用這個應用程式時封鎖裝置的螢幕擷取和 [Android 助手]  功能。 選擇 [是]  ，也會在搭配使用這個應用程式與工作或學校帳戶時模糊應用程式切換器預覽影像。 <br><br>預設值 = 否  |

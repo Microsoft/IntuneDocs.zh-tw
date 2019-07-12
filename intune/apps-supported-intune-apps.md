@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 89babf2eb60b7959c5c25a02b29135668efc32eb
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045899"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649086"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
@@ -46,6 +46,7 @@ Intune 受控應用程式能夠使用一組豐富的行動應用程式保護原�
 | **Microsoft Azure 資訊保護檢視器**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | 使用「AIP 檢視器 應用程式」來安全地與其他人共同作業。 檢視其他人已與您共用的受保護檔案 (授權限保護的電子郵件訊息、PDF 檔案、圖片、文字檔)。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune)、[iOS Store連結](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings 是一個約會排程應用程式，可協助您記錄預約、員工及客戶的情況。 您將永不錯過約會，並可減少爽約的情況。<p>藉由 Bookings 應用程式，您可以：<br><ul><li>檢視和管理行事曆</li><li>建立預約或對現有進行中的預約進行變更</li><li>查看員工成員的即時可用性</li><li>既快速又輕鬆地回應客戶</li><li>快速取得您下一個預約所在位置的指示</li><li>管理客戶清單</li></ul> | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft 客戶關係**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections 以簡單易用的電子郵件行銷工具來協助小型企業吸引及留住客戶。 使用預先設計的公告、電子報及推薦範本來輕鬆建立具有專業外觀的電子郵件行銷活動。 | [iOS Store 連結](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
+| **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | 透過個人助理 Cortana，以快速、輕鬆且有趣的方式處理工作和生活上的事務。 將這個聰明的數位助理帶入您的手機，以隨時隨地在所有的裝置上協助您追蹤最重要的事情。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.cortana)、<br>[iOS Store 連結](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | 運用 Microsoft Dynamics CRM 來吸引客戶互動，同時不論是在辦公室還是移動途中都仍保持高生產力。 為每個約會做好妥善準備，並在對詳細資料仍記憶猶新時，更新附註、工作、連絡人、帳戶、案例及潛在客戶。 可讓銷售人員在移動途中，於內容相關商務程序的引導下管理其銷售資料。 透過全面性的案例管理，讓代理人和監督人享有行動性所帶來的自由便利。 透過「設定一次即可隨處部署」模型獲得流暢的使用者體驗。 適用於 iOS 和 Android。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone)、<br>[iOS Store 連結](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge 可為 Windows 10 使用者建立一個跨裝置的持續瀏覽體驗。 內容和資料會在背景中以無縫接軌的方式同步，因此使用者可以跨裝置瀏覽，而不會有任何遺漏。 熟悉的 Microsoft Edge 功能 (例如「中心」) 可讓使用者有條理地組織網頁來避免雜亂無章，讓他們在移動途中更容易尋找、檢視及管理其內容。 Microsoft Edge 專為 Windows 10 使用者而設計，可讓他們以所需的方式隨時隨地瀏覽網頁，而不會中斷其流程。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 讓 Excel 試算表在您的平板電腦和手機上看起來比以往更棒。 讓您在編輯或建立試算表時，可確信試算表不論是在電腦、Mac、平板電腦還是手機上，都完全符合您想要的樣貌。 透過熟悉的 Office 外觀和操作，以及直覺式的觸控體驗，很快便能上手操作。<p><p>此應用程式可作為 Android 和 iOS 的多重身分識別應用程式。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  

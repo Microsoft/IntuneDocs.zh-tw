@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527436"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648703"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
 
@@ -42,6 +42,7 @@ ms.locfileid: "67527436"
 - Windows 10 S、Windows Home、Windows Team、Windows Holographic 或 Windows Holographic for Business 裝置不支援此安裝方法。
 - Intune 不支援在已使用 Intune 部署 Office 365 應用程式的裝置上，安裝來自 Microsoft Store 的 Office 365 傳統型應用程式 (又稱為 Office Centennial 應用程式)。 如果您安裝此設定，可能會導致資料遺失或損毀。
 - 未附加多個必要或可用的應用程式指派。 較新的應用程式指派會覆寫現有的已安裝應用程式指派。 例如，如果第一組的 Office 應用程式包含 Word，而較新的集合沒有 Word，則 Word 會解除安裝。 此條件不適用於任何 Visio 或 Project 應用程式。
+- 目前不支援多個 Office 365 部署。 系統只會向裝置傳遞單一部署
 - **Office 版本** - 選擇要指派 32 位元還是 64 位元版本的 Office。 32 位元版本可以安裝在 32 位元和 64 位元的裝置上，但 64 位元版本只能安裝在 64 位元的裝置。
 - **從終端使用者裝置移除 MSI** - 選擇是否要從終端使用者裝置移除已有的 Office .MSI 應用程式。 如果終端使用者裝置上已有 .MSI 應用程式，則該安裝不會成功。 要解除安裝的應用程式不限於在 [設定應用程式套件]  中選取要安裝的應用程式，因為它會將所有 Office (MSI) 應用程式從終端使用者裝置移除。 如需詳細資訊，請參閱 [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (在升級至 Office 365 專業增強版時，移除 Office 的現有 MSI 版本。 當 Intune 在您終端使用者的電腦上重新安裝 Office 時，終端使用者會自動取得與其先前 .MSI Office 安裝相同的語言套件。
 
@@ -142,7 +143,14 @@ ms.locfileid: "67527436"
 
 當您完成時，在 [新增應用程式]  窗格中，選取 [新增]  。 您已建立的應用程式會顯示在應用程式清單中。
 
+## <a name="troubleshooting"></a>疑難排解
+Intune 會使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)來透過 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)\(部分機器翻譯\) 將 Office 365 專業增強版下載並部署至您的用戶端電腦。 請參考[管理 Office 365 端點](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) \(部分機器翻譯\) 中概述的最佳做法，來確保您的網路設定能允許用戶端直接存取 CDN，而非透過中央 Proxy 路由 CDN 流量，以避免產生不必要的延遲。
+
+如果您遇到安裝或執行階段問題，請在目標裝置上執行 [Microsoft Office 365 支援及修復小幫手](https://diagnostics.office.com)。
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>應用程式套件安裝期間發生的錯誤
+
+請參閱[如何啟用 Office 365 專業增強版 ULS 記錄](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) \(英文\) 來取得如何檢視詳細資訊安裝記錄的相關資訊。
 
 下表列出您可能會遇到的常見錯誤碼及其意義。
 

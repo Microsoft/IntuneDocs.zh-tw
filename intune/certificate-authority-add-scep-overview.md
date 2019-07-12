@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,28 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713857"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648445"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
-在 Microsoft Intune 中，您可以新增協力廠商憑證授權單位 (CA)。 這些 CA 可以使用簡單憑證註冊通訊協定 (SCEP) 將憑證傳遞給行動裝置。 這項功能可以在 Windows、iOS、Android 和 macOS 裝置上核發新憑證和更新憑證。
+搭配 Intune 使用協力廠商憑證授權單位 (CA)。 協力廠商 CA 可以使用簡單憑證註冊通訊協定 (SCEP) 搭配新的或更新的憑證來佈建行動裝置，並可以支援 Windows、iOS、Android 及 macOS 裝置。
 
 使用這項功能分成兩部分：開放原始碼 API 和 Intune 系統管理員工作。
 
 **第 1 部分 - 使用開放原始碼 API**  
-Microsoft 建立了 API，可以整合 Intune 以便驗證憑證、傳送成功或失敗通知，以及使用 SSL，特別是 SSL 通訊端 Factory，來與 Intune 通訊。
+Microsoft 已建立 API 來與 Intune 整合。 透過該 API，您可以驗證憑證、傳送成功或失敗通知，以及使用 SSL (特別是 SSL 通訊端 Factory) 來與 Intune 通訊。
 
-API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)，供您下載並用於解決方案。 使用此 API 搭配協力廠商 SCEP 伺服器，對 Intune 執行自訂挑戰驗證，然後才傳遞憑證給裝置。
+API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)，供您下載並用於解決方案。 使用此 API 搭配協力廠商 SCEP 伺服器，來在 SCEP 將憑證佈建給裝置之前，對 Intune 執行自訂挑戰驗證。
 
 [與 Intune SCEP 管理解決方案整合](scep-libraries-apis.md)提供使用 API、其方法和測試您建置之解決方案的更多詳細資料。
 
 **第 2 部分 - 建立應用程式和設定檔**  
-使用 Azure Active Directory (Azure AD) 應用程式，您可以委派權限，讓 Intune 處理來自裝置的 SCEP 要求。 Azure AD 應用程式包含應用程式識別碼和驗證金鑰值，可在開發人員建立的 API 解決方案內使用。 然後，系統管理員就可以使用 Intune 建立和部署 SCEP 憑證設定檔。 您也可以檢視裝置上部署狀態的報告。
+使用 Azure Active Directory (Azure AD) 應用程式，您可以委派權限，讓 Intune 處理來自裝置的 SCEP 要求。 Azure AD 應用程式包含應用程式識別碼和驗證金鑰值，可在開發人員建立的 API 解決方案內使用。 系統管理員接著會使用 Intune 建立並部署 SCEP 憑證設定檔，並可以檢視針對裝置上部署狀態的報告。
 
 本文從系統管理員的觀點，提供這項功能的概觀，包括建立 Azure AD 應用程式。
 
@@ -117,13 +117,14 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 ## <a name="third-party-certification-authority-partners"></a>協力廠商憑證授權單位合作夥伴
 下列協力廠商憑證授權單位支援 Intune：
 
-- [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
 - [EJBCA GitHub 開放原始碼版本](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf) \(英文\)
 - [IDnomic](https://www.idnomic.com/) \(英文\)
 - [Sectigo](https://sectigo.com/products) \(英文\)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman) \(英文\)
 
 如果您是有興趣將產品與 Intune 整合的協力廠商 CA，請檢閱 API 指引：
 

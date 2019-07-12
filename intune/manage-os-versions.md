@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044914"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548761"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理作業系統版本
 在現代化行動和桌面平台上，主要更新、修補程式以及新版本的發行速度很快。 您有控制方法可以完全管理 Windows 上的更新和修補程式，但像是 iOS 和 Android 等其他平台則需要終端使用者參與此程序。  Microsoft Intune 具有可協助在不同平台之間組織作業系統版本管理結構的功能。
@@ -77,7 +77,7 @@ Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，
 - **步驟 1**：使用註冊限制，要求作業系統 v2 作為註冊裝置的最低版本。 這可確保新的終端使用者裝置在註冊時即符合規範。
 - **步驟 2a**：使用 Intune 應用程式防護原則在應用程式開啟或繼續時，警告使用者需要作業系統 v2。
 - **步驟 2b**： 使用裝置合規性原則，要求作業系統 v2 作為裝置要符合規範時的最低版本。 針對不相容使用 [動作]  ，以允許七天的寬限期，並傳送電子郵件通知給終端使用者，告知您的時間表和要求。
-  -  這些原則會透過電子郵件、Intune 公司入口網站，以及已啟用應用程式保護原則的應用程式開啟時通知終端使用者，需要更新現有的裝置。
+  - 這些原則會透過電子郵件、Intune 公司入口網站，以及已啟用應用程式保護原則的應用程式開啟時通知終端使用者，需要更新現有的裝置。
   - 您可以執行合規性報告，以識別不符合規範的使用者。 
 - **步驟 3a**：使用 Intune 應用程式防護原則，當應用程式開啟或繼續時，如果裝置不在執行作業系統 v2 即封鎖使用者。
 - **步驟 3b**：使用裝置合規性原則，要求作業系統 v2 作為裝置要符合規範時的最低版本。
