@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316941"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883358"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>監視 BitLocker 和裝置加密  
 Intune 提供集中式位置來識別 Windows 10 裝置的加密狀態，並協助您從裝置存取 BitLocker 的重要資訊 (位於 Azure Active Directory (Azure AD) 中)。  
@@ -76,22 +76,22 @@ Intune 提供集中式位置來識別 Windows 10 裝置的加密狀態，並協�
 
   下列是 Intune 可能報告的狀態詳細資料範例：  
 
-   - BitLocker 原則需要使用者同意，才能啟動 [BitLocker 磁碟機加密精靈] 開始加密 OS 磁碟區，但使用者未同意。  
-   - OS 磁碟區的加密方法不符合 BitLocker 原則。  
-   - BitLocker 原則需要 TPM 保護裝置才能保護 OS 磁碟區，但未使用 TPM。  
-   - BitLocker 原則需要 OS 磁碟區有僅限 TPM 的保護裝置，但未使用 TPM 保護。  
-   - BitLocker 原則需要 OS 磁碟區有 TPM+PIN 保護，但未使用 TPM+PIN 保護裝置。  
-   - BitLocker 原則需要 OS 磁碟區有 TPM+啟動金鑰保護，但未使用 TPM+啟動金鑰保護裝置。  
-   - BitLocker 原則需要 OS 磁碟區有 TPM+PIN+啟動金鑰保護，但未使用 TPM+PIN+啟動金鑰保護裝置。  
-   - OS 磁碟區未受保護。  
-   - 修復金鑰備份失敗。  
-   - 固定磁碟機未受保護。  
-   - 固定磁碟機的加密方法不符合 BitLocker 原則。  
-   - 若要加密磁碟機，BitLocker 原則需要使用者以系統管理員身分登入；如果裝置已加入 Azure AD，則 AllowStandardUserEncryption 原則必須設定為 1。  
-   - 未設定 Windows 修復環境 (WinRE)。  
-   - BitLocker 無法使用 TPM，因為它不存在、已設定為無法在登錄中使用，或 OS 位於抽取式磁碟機。  
-   - TPM 尚未備妥供 BitLocker 使用。  
-   - 網路無法使用，但修復金鑰備份需要網路。  
+  - BitLocker 原則需要使用者同意，才能啟動 [BitLocker 磁碟機加密精靈] 開始加密 OS 磁碟區，但使用者未同意。  
+  - OS 磁碟區的加密方法不符合 BitLocker 原則。  
+  - BitLocker 原則需要 TPM 保護裝置才能保護 OS 磁碟區，但未使用 TPM。  
+  - BitLocker 原則需要 OS 磁碟區有僅限 TPM 的保護裝置，但未使用 TPM 保護。  
+  - BitLocker 原則需要 OS 磁碟區有 TPM+PIN 保護，但未使用 TPM+PIN 保護裝置。  
+  - BitLocker 原則需要 OS 磁碟區有 TPM+啟動金鑰保護，但未使用 TPM+啟動金鑰保護裝置。  
+  - BitLocker 原則需要 OS 磁碟區有 TPM+PIN+啟動金鑰保護，但未使用 TPM+PIN+啟動金鑰保護裝置。  
+  - OS 磁碟區未受保護。  
+  - 修復金鑰備份失敗。  
+  - 固定磁碟機未受保護。  
+  - 固定磁碟機的加密方法不符合 BitLocker 原則。  
+  - 若要加密磁碟機，BitLocker 原則需要使用者以系統管理員身分登入；如果裝置已加入 Azure AD，則 AllowStandardUserEncryption 原則必須設定為 1。  
+  - 未設定 Windows 修復環境 (WinRE)。  
+  - BitLocker 無法使用 TPM，因為它不存在、已設定為無法在登錄中使用，或 OS 位於抽取式磁碟機。  
+  - TPM 尚未備妥供 BitLocker 使用。  
+  - 網路無法使用，但修復金鑰備份需要網路。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 修復金鑰
 Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視 Windows 10 裝置的 BitLocker 金鑰識別碼和修復金鑰。  為了能夠存取，裝置必須將其金鑰委付給 Azure AD。 

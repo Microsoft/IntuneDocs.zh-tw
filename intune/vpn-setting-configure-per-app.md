@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373661"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884524"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -150,16 +150,16 @@ VPN 設定檔包含附有用戶端認證、VPN 連線資訊與個別應用程式
 
 ### <a name="before-you-attempt-to-connect"></a>嘗試連線前
 
- - 請確定您將上述提到的所有原則都部署到相同群組。 否則，個別應用程式 VPN 體驗將無法運作。
- - 如果您使用 Pulse Secure VPN 應用程式或自訂 VPN 用戶端應用程式，您可以選擇使用應用程式層或封包層通道。 若是應用程式層通道，請將 [ProviderType]  值設定為 [應用程式 Proxy]  ，若是封包層通道，則設定為 [封包通道]  。 請參閱您 VPN 提供者的文件，以確定您使用的值正確。
+- 請確定您將上述提到的所有原則都部署到相同群組。 否則，個別應用程式 VPN 體驗將無法運作。
+- 如果您使用 Pulse Secure VPN 應用程式或自訂 VPN 用戶端應用程式，您可以選擇使用應用程式層或封包層通道。 若是應用程式層通道，請將 [ProviderType]  值設定為 [應用程式 Proxy]  ，若是封包層通道，則設定為 [封包通道]  。 請參閱您 VPN 提供者的文件，以確定您使用的值正確。
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用個別應用程式 VPN 來連線
 
 在不選取 VPN 或鍵入認證的情況下連線，來驗證零觸控體驗。 零觸控體驗意味著：
 
- - 裝置不會要求您信任 VPN 伺服器。 也就是說，使用者不會看到 [動態信任]  對話方塊。
- - 使用者無須鍵入認證。
- - 當使用者開啟其中一個相關聯的應用程式時，使用者的裝置已連線到 VPN。
+- 裝置不會要求您信任 VPN 伺服器。 也就是說，使用者不會看到 [動態信任]  對話方塊。
+- 使用者無須鍵入認證。
+- 當使用者開啟其中一個相關聯的應用程式時，使用者的裝置已連線到 VPN。
 
 <!-- ## Troubleshooting the per-app VPN
 

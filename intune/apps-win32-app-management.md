@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735438"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884041"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -37,9 +37,9 @@ ms.locfileid: "67735438"
 
 - Windows 10 1607 版或更新版本 (企業、專業與評估版)
 - Windows 10 用戶端必須： 
-    - 裝置必須加入 Azure AD 並自動註冊。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域，並支援群組原則註冊裝置。 
-    > [!NOTE]
-    > 針對群組原則註冊案例 - 終端使用者會使用本機使用者帳戶，將其 Windows 10 裝置加入 AAD。 使用者必須使用其 AAD 使用者帳戶登入裝置，並註冊到 Intune。 如果對使用者或裝置指定 PowerShell 指令碼或 Win32 應用程式目標，Intune 會在裝置上安裝 Intune 管理延伸模組。
+  - 裝置必須加入 Azure AD 並自動註冊。 Intune 管理延伸模組支援加入 Azure AD、加入混合網域，並支援群組原則註冊裝置。 
+  > [!NOTE]
+  > 針對群組原則註冊案例 - 終端使用者會使用本機使用者帳戶，將其 Windows 10 裝置加入 AAD。 使用者必須使用其 AAD 使用者帳戶登入裝置，並註冊到 Intune。 如果對使用者或裝置指定 PowerShell 指令碼或 Win32 應用程式目標，Intune 會在裝置上安裝 Intune 管理延伸模組。
 - Windows 應用程式的大小上限為每個應用程式 8 GB。
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>準備要上傳的 Win32 應用程式內容

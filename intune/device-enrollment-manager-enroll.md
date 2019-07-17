@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546719"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883541"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
@@ -32,13 +32,13 @@ ms.locfileid: "67546719"
 
 DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制：
 
-  - DEM 帳戶使用者必須獲指派 Intune 授權。
-  - 無法從公司入口網站進行抹除。 您可以從 Azure 入口網站中的 Intune，對 DEM 使用者帳戶註冊的裝置進行抹除。
-  - 只有本機裝置會出現在公司入口網站應用程式或網站中。
-  - DEM 使用者帳戶無法將 Apple 大量採購方案 (VPP) 應用程式與 Apple VPP 使用者授權搭配使用，因為應用程式管理需要個別使用者的 Apple ID。
-  - 裝置如果具有 Apple VPP 裝置授權，即可以安裝 VPP 應用程式。
-  - 裝置已針對條件式存取封鎖，但 indows 10 1803+ 除外
-  - 使用 DEM 帳戶註冊的每部裝置都必須獲得正確授權，才能由 Intune 進行管理。 授權可能是 Intune 使用者授權或 Intune 裝置授權。
+- DEM 帳戶使用者必須獲指派 Intune 授權。
+- 無法從公司入口網站進行抹除。 您可以從 Azure 入口網站中的 Intune，對 DEM 使用者帳戶註冊的裝置進行抹除。
+- 只有本機裝置會出現在公司入口網站應用程式或網站中。
+- DEM 使用者帳戶無法將 Apple 大量採購方案 (VPP) 應用程式與 Apple VPP 使用者授權搭配使用，因為應用程式管理需要個別使用者的 Apple ID。
+- 裝置如果具有 Apple VPP 裝置授權，即可以安裝 VPP 應用程式。
+- 裝置已針對條件式存取封鎖，但 indows 10 1803+ 除外
+- 使用 DEM 帳戶註冊的每部裝置都必須獲得正確授權，才能由 Intune 進行管理。 授權可能是 Intune 使用者授權或 Intune 裝置授權。
 
 
 

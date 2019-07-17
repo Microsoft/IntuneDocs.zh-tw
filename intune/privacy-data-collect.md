@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6082f4de6a881f211f2c7569fcd052ba1f37ad7b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045917"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884769"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的資料收集
 
@@ -41,48 +41,48 @@ Intune 所收集的大多數個人資料是識別資料。 此資料會繫結至
 Intune 所收集的識別資料可能包括但不限於： 
 
 - 使用者資訊
-    - 擁有者名稱/使用者顯示 (由 AzureUserID 所識別之使用者的 Azure 註冊名稱)
-    - 使用者主體名稱或電子郵件位址
-    - 協力廠商使用者識別 (例如 AppleID)
+  - 擁有者名稱/使用者顯示 (由 AzureUserID 所識別之使用者的 Azure 註冊名稱)
+  - 使用者主體名稱或電子郵件位址
+  - 協力廠商使用者識別 (例如 AppleID)
 - 硬體清查資訊
-    - 裝置名稱
-    - 製造商
-    - 作業系統
-    - 序號
-    - IMEI 編號
-    - IP 位址
-    - Wi-Fi Mac 地址
-    - ICCID
-    - 電話號碼
+  - 裝置名稱
+  - 製造商
+  - 作業系統
+  - 序號
+  - IMEI 編號
+  - IP 位址
+  - Wi-Fi Mac 地址
+  - ICCID
+  - 電話號碼
 - 稽核記錄資訊，包括下列活動的相關資料
-    - 管理
-    - 建立
-    - 更新 (編輯)
-    - 刪除
-    - 指派
-    - 遠端工作
+  - 管理
+  - 建立
+  - 更新 (編輯)
+  - 刪除
+  - 指派
+  - 遠端工作
 - 支援資訊
-    - 連絡資訊 (姓名、電話號碼、電子郵件地址)
-    - 與 Microsoft 支援服務、產品及/或客戶體驗小組成員以電子郵件傳送討論
+  - 連絡資訊 (姓名、電話號碼、電子郵件地址)
+  - 與 Microsoft 支援服務、產品及/或客戶體驗小組成員以電子郵件傳送討論
 - 存取控制資訊 (Intune 使用此資料來管理對管理角色的存取權，並透過[角色型存取控制](role-based-access-control.md)之類的功能運作。
-    - 靜態驗證器 (客戶密碼)
-    - 憑證的隱私金鑰 
+  - 靜態驗證器 (客戶密碼)
+  - 憑證的隱私金鑰 
 - 管理員和帳戶資訊
-    - 管理使用者的名字和姓氏
-    - 管理員使用者名稱
-    - UPN (電子郵件)
-    - 電話號碼
-    - 帳戶擁有者的電子郵件地址
-    - 每一位客戶 IT 管理員的 Active Directory 識別碼
-    - 客戶帳單的付款方式資料
-    - 訂用帳戶金鑰
+  - 管理使用者的名字和姓氏
+  - 管理員使用者名稱
+  - UPN (電子郵件)
+  - 電話號碼
+  - 帳戶擁有者的電子郵件地址
+  - 每一位客戶 IT 管理員的 Active Directory 識別碼
+  - 客戶帳單的付款方式資料
+  - 訂用帳戶金鑰
 - 應用程式清查，如
-    - 應用程式名稱
-    - 版本
-    - 應用程式識別碼
-    - 大小
-    - 安裝位置
-    - 只有在管理員標記為公司擁有的裝置時，或相容的應用程式功能已開啟時，才會收集應用程式清查資料。  
+  - 應用程式名稱
+  - 版本
+  - 應用程式識別碼
+  - 大小
+  - 安裝位置
+  - 只有在管理員標記為公司擁有的裝置時，或相容的應用程式功能已開啟時，才會收集應用程式清查資料。  
 - 客戶協力廠商的租用戶識別碼，例如 Apple ID。 
 
 ## <a name="pseudonymized-data"></a>匿名化資料
@@ -92,30 +92,30 @@ Intune 所收集的識別資料可能包括但不限於：
 Intune 所收集的匿名化資料可能包括但不限於： 
 
 - 診斷、效能及使用方式資料繫結至使用者及/或裝置
-    - 使用功能的次數
-    - 提供給功能的命令
-    - 服務的回應時間
-    - 安裝和其他程序的成功率
-    - Intune 公司入口網站應用程式錯誤
-    - 使用者和裝置識別碼
-    - 用於參考、相互關聯、管理目的的識別碼 
+  - 使用功能的次數
+  - 提供給功能的命令
+  - 服務的回應時間
+  - 安裝和其他程序的成功率
+  - Intune 公司入口網站應用程式錯誤
+  - 使用者和裝置識別碼
+  - 用於參考、相互關聯、管理目的的識別碼 
 - 裝置資料未繫結至裝置或使用者 (如果此資料繫結至裝置或使用者，Intune 會將它識別為資料)
-    - Intune 裝置識別碼
-    - Azure Active Directory 裝置識別碼
-    - Intune 裝置管理識別碼
-    - 租用戶識別碼
-    - 帳戶識別碼
-    - EAS 裝置識別碼
-    - 平台特定識別碼
-    - iOS 裝置的 AppleID
-    - 適用於 Mac 裝置的 Mac 位址
-    - 適用於 Windows 裝置的 Windows 識別碼
+  - Intune 裝置識別碼
+  - Azure Active Directory 裝置識別碼
+  - Intune 裝置管理識別碼
+  - 租用戶識別碼
+  - 帳戶識別碼
+  - EAS 裝置識別碼
+  - 平台特定識別碼
+  - iOS 裝置的 AppleID
+  - 適用於 Mac 裝置的 Mac 位址
+  - 適用於 Windows 裝置的 Windows 識別碼
 - 受控應用程式資訊
-    - 受控應用用程式識別碼
-    - 受控應用程式裝置標籤
-    - Intune 裝置管理識別碼
-    - Azure Active Directory 裝置識別碼
-    - 加密金鑰
+  - 受控應用用程式識別碼
+  - 受控應用程式裝置標籤
+  - Intune 裝置管理識別碼
+  - Azure Active Directory 裝置識別碼
+  - 加密金鑰
 
 ## <a name="aggregated-data"></a>彙總資料
 
@@ -125,14 +125,14 @@ Intune 所收集的彙總資料可能包括但不限於：
 
 - 來自所有 Intune 租用戶的管理員使用方式資料 (例如，與管理員主控台互動時，選取管理員控制項)
 - 租用戶帳戶資訊 (此資料可從 Intune 刀鋒視窗取得)
-    - 已註冊的裝置或使用者數目
-    - 識別的裝置平台數目  
-    - 已安裝的裝置數目
-    - installedDeviceCount：應用程式安裝所在的裝置數目。
-    - notApplicableDeviceCount：應用程式不適用的裝置數目。
-    - notInstalledDeviceCount：應用程式適用但未安裝的裝置數目。
-    - pendingInstallDeviceCount：應用程式適用但安裝擱置中的裝置數目。
-    
+  - 已註冊的裝置或使用者數目
+  - 識別的裝置平台數目  
+  - 已安裝的裝置數目
+  - installedDeviceCount：應用程式安裝所在的裝置數目。
+  - notApplicableDeviceCount：應用程式不適用的裝置數目。
+  - notInstalledDeviceCount：應用程式適用但未安裝的裝置數目。
+  - pendingInstallDeviceCount：應用程式適用但安裝擱置中的裝置數目。
+
 ## <a name="next-steps"></a>後續步驟
 
 深入了解 Intune 如何[儲存和處理](privacy-data-store-process.md)並[共用](privacy-data-secure-share.md)個人資料。 

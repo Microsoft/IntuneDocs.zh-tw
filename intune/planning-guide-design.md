@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572290"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884886"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -49,47 +49,47 @@ ms.locfileid: "67572290"
 
 - **雲端中的身分識別**
 
-    - 您使用 DirSync 還是 Azure Active Directory (Azure AD) 連線？
+  - 您使用 DirSync 還是 Azure Active Directory (Azure AD) 連線？
 
-    - 您的環境是否為同盟？
+  - 您的環境是否為同盟？
 
-    - 是否啟用 Multi-Factor Authentication (MFA)？
+  - 是否啟用 Multi-Factor Authentication (MFA)？
 
 - **電子郵件環境**
 
-    - 是否使用 Exchange？ 在內部部署或雲端？
+  - 是否使用 Exchange？ 在內部部署或雲端？
 
-    - 是否正在進行將 Exchange 移轉到雲端的專案？
+  - 是否正在進行將 Exchange 移轉到雲端的專案？
 
 - **目前的行動裝置管理 (MDM) 解決方案**
 
-    - 您目前使用其他 MDM 解決方案嗎？
+  - 您目前使用其他 MDM 解決方案嗎？
 
-    - 公司和 BYOD 使用案例使用的 MDM 解決方案為何？
+  - 公司和 BYOD 使用案例使用的 MDM 解決方案為何？
 
-    - 現在使用哪些功能 (例如：應用程式裝置設定、Wi-Fi 設定)？
+  - 現在使用哪些功能 (例如：應用程式裝置設定、Wi-Fi 設定)？
 
-    - 支援的裝置平台有哪些？
+  - 支援的裝置平台有哪些？
 
-    - 哪些群組和有多少使用者使用 MDM 方案？
+  - 哪些群組和有多少使用者使用 MDM 方案？
 
 - **憑證解決方案**
 
-    - 您實作過憑證解決方案嗎？
+  - 您實作過憑證解決方案嗎？
 
-    - 您使用何種類型的憑證？
+  - 您使用何種類型的憑證？
 
 - **系統管理**
 
-    - 您如何管理電腦和伺服器環境？
+  - 您如何管理電腦和伺服器環境？
 
-    - 您使用的是 System Center Configuration Manager 嗎？ 您使用的是協力廠商的系統管理平台嗎？
+  - 您使用的是 System Center Configuration Manager 嗎？ 您使用的是協力廠商的系統管理平台嗎？
 
 - **VPN 解決方案**
 
-    - 您的 VPN 解決方案為何？
+  - 您的 VPN 解決方案為何？
 
-    - 您會將它同時用於公司和 BYOD 使用案例嗎？
+  - 您會將它同時用於公司和 BYOD 使用案例嗎？
 
 記錄目前的 MDM 環境時，請務必記下可能影響您環境的任何專案或任何其他計劃。 以下示範如何在建立 Intune 設計時記錄目前的環境：
 

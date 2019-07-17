@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548369"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882835"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>階段 1：準備 Microsoft Intune 以用於行動裝置管理 (MDM)
 
@@ -51,8 +51,8 @@ ms.locfileid: "67548369"
 
 - 您需要的使用條款？
 
-    - 請務必提前和您的法務部門對此協商。
-    - 需要的當地語系化？
+  - 請務必提前和您的法務部門對此協商。
+  - 需要的當地語系化？
 
 - 使用者是否熟悉一般技術和 IT？
 
@@ -63,8 +63,8 @@ ms.locfileid: "67548369"
 - 您目前的裝置密碼/PIN 碼長度是多少？
 
 - 您需要停用裝置功能，或限制特定裝置行為嗎？ 您可以使用裝置組態設定檔控制各種平台特定的設定，例如：
-    - 停用數位相機
-    - 鎖定在單一應用程式模式<br/>
+  - 停用數位相機
+  - 鎖定在單一應用程式模式<br/>
 
 - 您必須支援何種驗證？ 如果您需要憑證式驗證，必須佈建何種憑證？
   - Intune 可使用資源存取設定檔為已註冊的裝置佈建憑證。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a6e8e625a08c9ad039d3106ff5d5c7001c2cab
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: ae9bd6d6f56ec85a993ffcb2f3c1af9897a2a87f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547098"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883647"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>整合 Check Point SandBlast Mobile 與 Intune
 
@@ -37,13 +37,13 @@ ms.locfileid: "67547098"
 
 - 可授與下列權限的 Azure Active Directory 管理員認證：
 
-    - 登入及讀取使用者設定檔
+  - 登入及讀取使用者設定檔
 
-    - 以登入的使用者身分存取目錄
+  - 以登入的使用者身分存取目錄
 
-    - 讀取目錄資料
+  - 讀取目錄資料
 
-    - 將裝置資訊傳送至 Intune
+  - 將裝置資訊傳送至 Intune
 
 - 可存取 Check Point SandBlast Mobile MTD 主控台的管理員認證。
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549415"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882855"
 ---
 # <a name="phase-2-migration-campaign"></a>階段 2：移轉活動
 
@@ -43,19 +43,19 @@ ms.locfileid: "67549415"
 
 - 監視每個週期的技術服務人員負載和註冊成功數。 在排程中保留時間，確保針對每個群組評估成功準則後再進行下一階段的移轉。 您的試驗部署應該驗證下列各項︰
 
-    - 註冊的成功和失敗率符合期望。
+  - 註冊的成功和失敗率符合期望。
 
-    - 使用者生產力：
+  - 使用者生產力：
 
-        - 公司資源 (例如 VPN、Wi-Fi、電子郵件及憑證) 運作良好。
+    - 公司資源 (例如 VPN、Wi-Fi、電子郵件及憑證) 運作良好。
 
-        - 佈建的應用程式可供存取。
+    - 佈建的應用程式可供存取。
 
-    - 資料安全性：
+  - 資料安全性：
 
-        - 正進行合規性報告。
+    - 正進行合規性報告。
 
-        - 會強制執行行動裝置應用程式保護。
+    - 會強制執行行動裝置應用程式保護。
 
 當您滿意第一階段的移轉後，重複執行[移轉週期](migration-guide-cycle.md) 以進行下一階段。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649032"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885110"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -44,8 +44,8 @@ ms.locfileid: "67649032"
 每當應用程式檢查是否有組態設定時，便會使用這些設定。 一般而言，應用程式會在使用者第一次執行應用程式時檢查是否有組態設定。
 
 對於如何使用 Intune 的應用程式設定，您有兩個選項：
- - **受控裝置** - Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
- - **受控應用程式** - 在不註冊裝置的情況下管理應用程式。
+- **受控裝置** - Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。
+- **受控應用程式** - 在不註冊裝置的情況下管理應用程式。
 
 > [!NOTE]
 > 身為 Microsoft Intune 系統管理員，您可以控制在受控裝置上要新增至 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。
@@ -66,9 +66,9 @@ ms.locfileid: "67649032"
 
 ### <a name="managed-devices"></a>受管理的裝置
 
- - 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
- - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
+- 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+- 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
 
 ### <a name="managed-apps"></a>受管理的應用程式
 
- - 了解如何在受管理的應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。
+- 了解如何在受管理的應用程式上使用應用程式設定。 請參閱[在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)。

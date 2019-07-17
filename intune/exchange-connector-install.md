@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572540"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883273"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中設定 Intune 內部部署 Exchange 連接器
 本文中資訊可協助您安裝適用於 Intune 的 Exchange Active Sync 內部部署連接器，並在安裝後進行監視。  您可以使用 Intune 內部部署 Exchange 連接器，搭配您的[條件式存取原則來允許或封鎖存取 Exchange 內部部署信箱](conditional-access-exchange-create.md)。 
@@ -58,18 +58,18 @@ Intune 支援針對每個訂閱安裝多個內部部署 Exchange 連接器。 �
 建立內部部署 Exchange 連接器將使用的 Active Directory 使用者帳戶。 帳戶必須具有執行下列必要 Windows PowerShell Exchange Cmdlet 的權限：
 
 
- - Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
- - Get-CasMailbox、Set-CasMailbox
- - Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
- - Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
- - Get-ActiveSyncDeviceStatistics
- - Get-ActiveSyncDevice
- - Get-ExchangeServer
- - Get-ActiveSyncDeviceClass
- - Get-Recipient
- - Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
- - Set-ADServerSettings
- - Get-Command
+- Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
+- Get-CasMailbox、Set-CasMailbox
+- Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
+- Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
+- Get-ActiveSyncDeviceStatistics
+- Get-ActiveSyncDevice
+- Get-ExchangeServer
+- Get-ActiveSyncDeviceClass
+- Get-Recipient
+- Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
+- Set-ADServerSettings
+- Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下載內部部署 Exchange 連接器軟體安裝套件
 
@@ -184,9 +184,9 @@ Intune 支援每個訂閱有多個內部部署 Exchange 連接器。 針對具�
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>手動強制執行快速同步處理或完整同步處理
 內部部署 Exchange Connector 會定期自動同步處理 EAS 和 Intune 的裝置記錄。 如果裝置的合規性狀態變更，自動同步程序會定期更新記錄，以便封鎖或允許裝置存取。
 
-   - **快速同步處理**會定期執行，一天進行數次。 快速同步處理會針對上次同步處理後已變更之 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。
+- **快速同步處理**會定期執行，一天進行數次。 快速同步處理會針對上次同步處理後已變更之 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。
 
-   - **完整同步處理**預設每天將執行一次。 完整同步處理會針對所有 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。 完整同步處理還會擷取 Exchange Server 資訊，並確保 Intune 在 Azure 入口網站中指定的設定已在 Exchange Server 上更新。 
+- **完整同步處理**預設每天將執行一次。 完整同步處理會針對所有 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。 完整同步處理還會擷取 Exchange Server 資訊，並確保 Intune 在 Azure 入口網站中指定的設定已在 Exchange Server 上更新。 
 
 
 您可以執行下列步驟，藉由在 Intune 儀表板中使用 [快速同步處理]  或 [完整同步處理]  選項，強制連接器執行同步處理：

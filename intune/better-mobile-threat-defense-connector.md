@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 55d4e327d99c8987e6fdc0dea0ac046dd0dc167e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547298"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883801"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Better Mobile Threat Defense 連接器
 
@@ -93,7 +93,7 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 - Better Mobile Threat Defense 訂用帳戶
 
-    - 如需詳細資訊，請參閱 [Better Mobile 網站](https://www.better.mobi/)。
+  - 如需詳細資訊，請參閱 [Better Mobile 網站](https://www.better.mobi/)。
 
 ## <a name="next-steps"></a>後續步驟
 

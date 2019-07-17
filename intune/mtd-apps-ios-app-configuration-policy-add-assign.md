@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548426"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885001"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式  
 
@@ -90,7 +90,7 @@ ms.locfileid: "67548426"
 
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>設定 Symantec Endpoint Protection Mobile 應用程式  
 - **Android**
-   - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用此 [SEP Mobile 應用程式商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  對於 [最基本的作業系統]  ，選取 [Android 4.0 (Ice Cream Sandwich)]  。
+  - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 中，使用此 [SEP Mobile 應用程式商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  對於 [最基本的作業系統]  ，選取 [Android 4.0 (Ice Cream Sandwich)]  。
 
 - **iOS**
   - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 在適用於 **Appstore URL** 的**步驟 11**上使用這個 [SEP Mobile 應用程式市集 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) \(英文\)。
@@ -162,7 +162,7 @@ ms.locfileid: "67548426"
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile 應用程式設定原則  
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)指示，新增 Check Point SandBlast Mobile iOS 應用程式設定原則。
-    - 在**步驟 8** 中，使用選項 [輸入 XML 資料]  ，複製下方內容，並將其貼到設定原則本文中。
+  - 在**步驟 8** 中，使用選項 [輸入 XML 資料]  ，複製下方內容，並將其貼到設定原則本文中。
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>

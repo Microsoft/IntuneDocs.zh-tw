@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 9552253469fb6644636d492c9c0f1477891a402d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572571"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883764"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense 連接器與 Intune
 
@@ -96,7 +96,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 - Microsoft Intune 訂閱
 
 - Check Point SandBlast Mobile Threat Defense 訂閱
-    - 如需詳細資訊，請參閱 [Check Point SandBlast 網站](https://www.checkpoint.com/)。
+  - 如需詳細資訊，請參閱 [Check Point SandBlast 網站](https://www.checkpoint.com/)。
 
 ## <a name="next-steps"></a>後續步驟
 

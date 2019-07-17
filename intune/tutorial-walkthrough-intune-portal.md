@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044338"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882459"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>教學課程：逐步解說 Azure 入口網站中的 Microsoft Intune
 
@@ -38,8 +38,8 @@ ms.locfileid: "67044338"
 ## <a name="prerequisites"></a>必要條件
 設定 Microsoft Intune 之前，請先檢閱下列需求：
 
-   - [支援的作業系統與瀏覽器](supported-devices-browsers.md) 
-   - [網路設定需求與頻寬](network-bandwidth-use.md)
+- [支援的作業系統與瀏覽器](supported-devices-browsers.md) 
+- [網路設定需求與頻寬](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549437"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882888"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
 
@@ -60,24 +60,24 @@ Microsoft 提供 Intune 登入權益，適用於合格方案中的合格服務�
 
 - 我們也將會透過 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)訊息中心，宣告重要的服務更新。 如果您安裝隨附的 [Office 365 管理行動應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，即可在行動裝置上接收通知。 深入了解如何使用 [Office 365 訊息中心](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)。
 
-    一些有用的提示：
+  一些有用的提示：
 
-    - Office 365 訊息中心中的訊息是有目標的。 這表示，如果您的公司沒有 Intune 教育版供應項目，我們將不會傳送有關 Intune 教育版的訊息給您。
+  - Office 365 訊息中心中的訊息是有目標的。 這表示，如果您的公司沒有 Intune 教育版供應項目，我們將不會傳送有關 Intune 教育版的訊息給您。
 
-    - 訊息過期。 例如，含有「新增功能」頁面連結的服務更新通知，可能會在下次服務更新通知之前過期。 否則，您可能會有大量不再相關的文章待處理項目。
+  - 訊息過期。 例如，含有「新增功能」頁面連結的服務更新通知，可能會在下次服務更新通知之前過期。 否則，您可能會有大量不再相關的文章待處理項目。
 
-    - Office 365 管理行動應用程式可讓您搜尋所有訊息。如果您想要在組織中與同儕分享，也可轉送通知。
+  - Office 365 管理行動應用程式可讓您搜尋所有訊息。如果您想要在組織中與同儕分享，也可轉送通知。
 
-    - 在編輯訊息中心喜好設定下，我們最終會有 **Intune** 的切換開關，讓您能夠查看張貼至 Intune 訂閱的這些訊息。 如果您看到 Office 365 的行動裝置管理，那是指不同的服務，不是 Intune。
+  - 在編輯訊息中心喜好設定下，我們最終會有 **Intune** 的切換開關，讓您能夠查看張貼至 Intune 訂閱的這些訊息。 如果您看到 Office 365 的行動裝置管理，那是指不同的服務，不是 Intune。
 
 - 我們也會使用兩個部落格來分享 EMS 訊息與 Intune 支援最佳做法：
 
-    - [Enterprise Mobility + Security 部落格](https://blogs.technet.microsoft.com/enterprisemobility/) \(英文\)
+  - [Enterprise Mobility + Security 部落格](https://blogs.technet.microsoft.com/enterprisemobility/) \(英文\)
 
-    - [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/) \(英文\)
+  - [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/) \(英文\)
 
->[!Note]
->您可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]** 。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
+> [!Note]
+> 您可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內監視 Intune 服務健全狀況。 選擇左窗格中的 **[服務健全狀況]** 。 您也可以使用 [Office 365 管理行動裝置應用程式](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)檢視服務健康狀況。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft 提供之有關 Intune 服務的通知類型
 

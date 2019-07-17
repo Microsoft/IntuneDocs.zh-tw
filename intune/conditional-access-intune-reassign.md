@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546889"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883799"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -38,14 +38,14 @@ ms.locfileid: "67546889"
 
 - 確認新的原則在 Azure 入口網站中能如預期運作之後，請停用 Intune 傳統入口網站中的條件式原則。
 <br /><br />
-    - 先規劃如何將使用者移至新原則，**再停用** Intune 傳統入口網站中的條件式存取原則。 有兩種方式：
+  - 先規劃如何將使用者移至新原則，**再停用** Intune 傳統入口網站中的條件式存取原則。 有兩種方式：
 <br /><br />
-        - **使用相同的包含群組來套用在 Azure 入口網站中建立的原則，並建立新的豁免群組來使用 Intune 傳統入口網站所套用的原則**。
-            - 逐漸將某些使用者移至傳統入口網站中指定的豁免群組。 這可避免 Intune 傳統入口網站套用目標原則。 除了 Intune 傳統入口網站中已套用的原則外，所有以 Azure 入口網站中相同的使用者群組為目標所建立的原則都會套用。 
+    - **使用相同的包含群組來套用在 Azure 入口網站中建立的原則，並建立新的豁免群組來使用 Intune 傳統入口網站所套用的原則**。
+      - 逐漸將某些使用者移至傳統入口網站中指定的豁免群組。 這可避免 Intune 傳統入口網站套用目標原則。 除了 Intune 傳統入口網站中已套用的原則外，所有以 Azure 入口網站中相同的使用者群組為目標所建立的原則都會套用。 
 <br /><br />
-        - **在 Azure 入口網站中建立新群組並以條件式存取原則為目標**。 如果選擇此方式，需要執行下列作業：
-            - 逐漸從 Intune 傳統入口網站中以條件式存取原則為目標的安全性群組中移除使用者。
-            - 確認新原則可作用於這些使用者之後，即可停用 Intune 傳統入口網站中的原則。 
+    - **在 Azure 入口網站中建立新群組並以條件式存取原則為目標**。 如果選擇此方式，需要執行下列作業：
+      - 逐漸從 Intune 傳統入口網站中以條件式存取原則為目標的安全性群組中移除使用者。
+      - 確認新原則可作用於這些使用者之後，即可停用 Intune 傳統入口網站中的原則。 
 <br /><br />
 - 如果您已將條件式存取原則設定設為使用 Intune 傳統入口網站中的 Exchange ActiveSync (EAS)，請參閱[本主題中的指示](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)，以便**在 Azure 入口網站中重新指派 EAS 條件式存取原則設定**。
 
@@ -64,10 +64,10 @@ ms.locfileid: "67546889"
 Azure 入口網站中的 [Intune 應用程式防護]  刀鋒視窗，可讓系統管理員設定以應用程式為基礎的條件式規則，僅允許支援 Intune 應用程式防護原則的應用程式存取公司資源。 您可以選擇使用以裝置為基礎的條件式存取原則，來覆寫這些以應用程式為基礎的條件式存取原則。 您可以合併裝置型和以應用程式為基礎的條件式原則 (邏輯 AND)，也可以提供任一選項 (邏輯 OR)。 如果您的條件式存取原則需求：
 
 - 需要相容的裝置**且**使用核准的應用程式。
-    - 您應該使用 [Azure Active Directory 條件式存取刀鋒視窗](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)和 [Intune 應用程式防護刀鋒視窗](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)來設定條件式存取原則。
+  - 您應該使用 [Azure Active Directory 條件式存取刀鋒視窗](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)和 [Intune 應用程式防護刀鋒視窗](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)來設定條件式存取原則。
 <br /><br />
 - 需要相容的裝置**或**使用核准的應用程式。
-    - 您應該使用 [Intune 傳統入口網站](https://manage.microsoft.com)和 [Intune 應用程式防護刀鋒視窗](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)來設定條件式存取原則。
+  - 您應該使用 [Intune 傳統入口網站](https://manage.microsoft.com)和 [Intune 應用程式防護刀鋒視窗](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)來設定條件式存取原則。
 
 > [!TIP] 
 > 本主題提供 Intune 傳統入口網站和 Azure 入口網站的使用者體驗比較螢幕擷取畫面。

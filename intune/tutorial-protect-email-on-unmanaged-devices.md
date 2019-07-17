@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528677"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884503"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
@@ -32,10 +32,10 @@ ms.locfileid: "67528677"
 > * 建立只允許 Outlook 應用程式存取 Exchange Online 中公司電子郵件的 Azure Active Directory (Azure AD) 條件式存取原則。 此外，您也會針對新式驗證用戶端 (例如 iOS 版和 Android 版 Outlook) 要求使用多重要素驗證 (MFA)。
 
 ## <a name="prerequisites"></a>必要條件
-  - 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
-    - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune 訂用帳戶 ([免費試用](free-trial-sign-up.md))
-    - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
+- 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
+  - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune 訂用帳戶 ([免費試用](free-trial-sign-up.md))
+  - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 

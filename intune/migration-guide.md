@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549409"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882775"
 ---
 # <a name="intune-migration-guide"></a>Intune 移轉指南
 
@@ -37,25 +37,25 @@ ms.locfileid: "67549409"
 
 - [階段 1：準備 Intune 以用於行動裝置管理](migration-guide-prepare.md)
 
-    - [評估您 MDM 移轉需求](migration-guide-prepare.md#assess-mdm-requirements)
+  - [評估您 MDM 移轉需求](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [基本設定](migration-guide-setup.md)
+  - [基本設定](migration-guide-setup.md)
 
-    - [設定裝置與應用程式管理原則](migration-guide-configure-policies.md)
+  - [設定裝置與應用程式管理原則](migration-guide-configure-policies.md)
 
-    - [設定應用程式保護原則](migration-guide-app-protection-policies.md)
+  - [設定應用程式保護原則](migration-guide-app-protection-policies.md)
 
-    - [特殊移轉考量](migration-guide-considerations.md)
+  - [特殊移轉考量](migration-guide-considerations.md)
 
 - [階段 2：移轉活動](migration-guide-campaign.md)
 
-    - [通訊計畫](migration-guide-communication-plan.md)
+  - [通訊計畫](migration-guide-communication-plan.md)
 
-    - [使用條件式存取引導終端使用者採用](migration-guide-drive-adoption.md)
+  - [使用條件式存取引導終端使用者採用](migration-guide-drive-adoption.md)
 
-    - [典型移轉週期](migration-guide-cycle.md)
-        - [監視移轉](migration-guide-cycle.md#monitoring-migration)
-        - [移轉後工作](migration-guide-cycle.md#post-migration)
+  - [典型移轉週期](migration-guide-cycle.md)
+    - [監視移轉](migration-guide-cycle.md#monitoring-migration)
+    - [移轉後工作](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>假設
 

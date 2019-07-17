@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572427"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884430"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
@@ -44,7 +44,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 - **唯讀整合 (基本設定)：** 僅清查來自 Azure Active Directory 的裝置，並將它們填入 Symantec Endpoint Protection Mobile 管理主控台。
 <br>
-    - 如果未在 Symantec Endpoint Protection Mobile 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險]  和 [也向 Intune 報告安全性事件]  方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
+  - 如果未在 Symantec Endpoint Protection Mobile 管理主控台中選取 [向 Intune 報告裝置的健全狀況和風險]  和 [也向 Intune 報告安全性事件]  方塊，則整合將會是唯讀，並因此一律不會變更 Intune 中的裝置狀態 (符合規範或不符合規範)。
 <br></br>
 - **完整整合：** 允許 SEP Mobile 向 Intune 報告裝置的風險和安全性事件詳細資料，這會在兩個雲端服務之間建立雙向通訊。
 

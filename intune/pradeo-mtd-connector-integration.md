@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b51f310d370876058b8f1a1f872dd0b0e41bd42c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549253"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884850"
 ---
 # <a name="integrate-pradeo-with-intune"></a>整合 Pradeo 與 Intune
 
@@ -36,13 +36,13 @@ ms.locfileid: "67549253"
 
 - 可授與下列權限的 Azure Active Directory 管理員認證：
 
-    - 登入及讀取使用者設定檔
+  - 登入及讀取使用者設定檔
 
-    - 以登入的使用者身分存取目錄
+  - 以登入的使用者身分存取目錄
 
-    - 讀取目錄資料
+  - 讀取目錄資料
 
-    - 將裝置資訊傳送至 Intune
+  - 將裝置資訊傳送至 Intune
 
 - 用來存取 Pradeo Security 主控台的系統管理員認證。
 

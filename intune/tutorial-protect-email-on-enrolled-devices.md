@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a5a355c82455e135319b7683756eb0ef5c032876
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548034"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882370"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程：保護受控裝置上的 Exchange Online 電子郵件
 了解如何搭配條件式存取使用裝置合規性政策，以確保 iOS 裝置只能在受到 Intune 管理並使用核准的電子郵件應用程式時，才能存取 Exchange Online 電子郵件。 
@@ -35,10 +35,10 @@ ms.locfileid: "67548034"
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
 ## <a name="prerequisites"></a>必要條件
-  - 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
-    - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
-  - 在開始之前，請先依照下列內容中的步驟，建立適用於 iOS 裝置的測試裝置設定檔：[Quickstart:Create an email device profile for iOS](quickstart-email-profile.md) (快速入門：建立 iOS 的電子郵件裝置設定檔)
+- 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
+  - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
+- 在開始之前，請先依照下列內容中的步驟，建立適用於 iOS 裝置的測試裝置設定檔：[Quickstart:Create an email device profile for iOS](quickstart-email-profile.md) (快速入門：建立 iOS 的電子郵件裝置設定檔)
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 

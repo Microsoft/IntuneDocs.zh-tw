@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572171"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884169"
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 
@@ -39,13 +39,13 @@ ms.locfileid: "67572171"
 
 - 可授與下列權限的 Azure Active Directory 全域管理員管理員認證：
 
-    - 登入及讀取使用者設定檔
+  - 登入及讀取使用者設定檔
 
-    - 以登入的使用者身分存取目錄
+  - 以登入的使用者身分存取目錄
 
-    - 讀取目錄資料
+  - 讀取目錄資料
 
-    - 將裝置資訊傳送至 Intune
+  - 將裝置資訊傳送至 Intune
 
 - 用來存取 Zimperium MTD 主控台的系統管理員認證。
 

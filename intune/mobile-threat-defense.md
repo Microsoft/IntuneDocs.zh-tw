@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407163"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885090"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合是什麼？
 Intune 可整合來自 Mobile Threat Defense 廠商的資料，作為合規性政策和條件式存取規則的資訊來源。 您可以利用這項資訊，藉由封鎖遭入侵行動裝置的存取，來協助保護 Exchange 和 Sharepoint 等公司資源。  
@@ -47,14 +47,14 @@ Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 Mobil
 **應用程式清查**  
 如果您啟用 iOS 裝置的應用程式同步，公司和個人擁有的 iOS 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
 
- - 應用程式識別碼
- - 應用程式版本
- - 應用程式簡短版本
- - 應用程式名稱
- - 應用程式套件組合大小
- - 應用程式動態大小
- - 應用程式是否已驗證
- - 應用程式是否受控
+- 應用程式識別碼
+- 應用程式版本
+- 應用程式簡短版本
+- 應用程式名稱
+- 應用程式套件組合大小
+- 應用程式動態大小
+- 應用程式是否已驗證
+- 應用程式是否受控
 
 ## <a name="sample-scenarios"></a>範例案例
 

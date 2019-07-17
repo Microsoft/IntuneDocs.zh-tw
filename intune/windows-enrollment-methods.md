@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548678"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884189"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法
 
@@ -36,8 +36,8 @@ ms.locfileid: "67548678"
 使用者可以使用下列任何方法來自行註冊其 Windows 裝置：
 
 - [攜帶您自己的裝置 (BYOD)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device)：使用者可以從裝置的 [設定]  選擇連線到**公司或學校**帳戶，來註冊其個人擁有的裝置。 此程序會：
-    - 向 Azure Active Directory 註冊裝置，以存取電子郵件等公司資源。
-    - 在 Intune 中註冊裝置作為個人擁有的裝置 (BYOD)。
+  - 向 Azure Active Directory 註冊裝置，以存取電子郵件等公司資源。
+  - 在 Intune 中註冊裝置作為個人擁有的裝置 (BYOD)。
 如果系統管理員已設定自動註冊 (適用於 Azure AD Premium 訂閱)，使用者只需輸入其認證一次。 否則，他們必須透過僅限 MDM 註冊個別註冊，並重新輸入其認證。  
 - **僅限 MDM 註冊**可讓使用者將現有的工作群組、Active Directory 或加入 Azure Active Directory 的電腦註冊到 Intune 中。 使用者可從現有 Windows 電腦上的 [設定] 進行註冊。 但不建議此方法，因為這並不會將裝置註冊到 Azure Active Directory 中。 它也會防止使用條件式存取等功能。
 - [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 將裝置聯結至 Azure Active Directory，並讓使用者使用其 Azure AD 認證登入 Windows。 如已啟用自動註冊，則會在 Intune 中自動註冊裝置。 自動註冊的優點是使用者只需經過單一步驟程序。 否則，他們必須透過僅限 MDM 註冊個別註冊，並重新輸入其認證。 使用者可在初始 Windows OOBE 或從 [設定] 進行此註冊。 裝置會在 Intune 中標示為公司擁有的裝置。

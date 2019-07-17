@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 861c2dd73e3a78fd833a24500728bd977d1186a2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546966"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883748"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>整合 Better Mobile 與 Intune
 
@@ -36,13 +36,13 @@ ms.locfileid: "67546966"
 
 - 可授與下列權限的 Azure Active Directory 管理員認證：
 
-    - 登入及讀取使用者設定檔
+  - 登入及讀取使用者設定檔
 
-    - 以登入的使用者身分存取目錄
+  - 以登入的使用者身分存取目錄
 
-    - 讀取目錄資料
+  - 讀取目錄資料
 
-    - 將裝置資訊傳送至 Intune
+  - 將裝置資訊傳送至 Intune
 
 - 可存取 Better Mobile 管理主控台的系統管理員認證。
 

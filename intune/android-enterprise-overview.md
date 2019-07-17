@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547500"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885132"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作設定檔裝置
 
@@ -71,9 +71,9 @@ VPN 支援類似於 Android VPN 設定檔， Android Enterprise 管理的可用�
 - **設定檔範圍內的 VPN** – VPN 連線受限在只有部署到公司設定檔的應用程式。 只有受 Android Enterprise 管理的應用程式才可使用此 VPN 連線。 裝置上的個人應用程式無法使用受管理的 VPN 連線。 如需詳細資訊，請參閱 [Android Enterprise VPN 設定](vpn-settings-android.md#android-enterprise-vpn-settings)。
 
 - **應用程式專屬 VPN** – 若 VPN 提供者支援下列項目，就能在 Intune 中設定應用程式特定的 VPN：
-    - 應用程式特定 VPN 的組態
-    - 透過 Android Enterprise 應用程式組態設定檔來設定個別應用程式 VPN 的功能。
-    如需詳細資訊，請參閱[使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](android-pulse-secure-per-app-vpn.md)。
+  - 應用程式特定 VPN 的組態
+  - 透過 Android Enterprise 應用程式組態設定檔來設定個別應用程式 VPN 的功能。
+  如需詳細資訊，請參閱[使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔](android-pulse-secure-per-app-vpn.md)。
 
 ## <a name="certificate-profiles"></a>憑證設定檔
 

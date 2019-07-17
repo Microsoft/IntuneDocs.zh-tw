@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251163"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883239"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中新增 Endpoint Protection 設定
 
@@ -33,8 +33,8 @@ ms.locfileid: "67251163"
 例如，您可以建立一個只允許 macOS 使用者從 Mac App Store 安裝應用程式的 Endpoint Protection 設定檔。 或者，在於 Windows 10 裝置上執行應用程式時，啟用 Windows SmartScreen。
 
 建立設定檔之前，請檢閱下列文章，這些文章將詳細說明 Intune 可基於每個支援平台來管理的端點保護設定： 
-   - [macOS 設定](endpoint-protection-macos.md)
-   - [Windows 10 設定](endpoint-protection-windows-10.md)
+- [macOS 設定](endpoint-protection-macos.md)
+- [Windows 10 設定](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>建立包含 Endpoint Protection 設定的裝置設定檔
 

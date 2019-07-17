@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528251"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882727"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>決定使用案例的需求
 
@@ -50,21 +50,21 @@ ms.locfileid: "67528251"
 下列幾個範例可用於「需求」資料行：
 
 - **安全電子郵件**
-    - Exchange Online / 內部部署的條件式存取
-    - Outlook 應用程式保護原則
+  - Exchange Online / 內部部署的條件式存取
+  - Outlook 應用程式保護原則
 
 - **裝置設定**
-    - 4、6 個字元 PIN 碼設定
-    - 限制雲端備份
+  - 4、6 個字元 PIN 碼設定
+  - 限制雲端備份
 
 - **設定檔**
-    - Wi-Fi
-    - VPN
-    - 電子郵件 (Windows 10 行動裝置版)
+  - Wi-Fi
+  - VPN
+  - 電子郵件 (Windows 10 行動裝置版)
 
 - **應用程式**
-    - Office 365 與應用程式保護原則
-    - 企業營運 (LOB) 與應用程式保護原則
+  - Office 365 與應用程式保護原則
+  - 企業營運 (LOB) 與應用程式保護原則
 
 ## <a name="next-steps"></a>後續步驟
 
