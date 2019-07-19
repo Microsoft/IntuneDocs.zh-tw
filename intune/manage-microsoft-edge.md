@@ -1,5 +1,5 @@
 ---
-title: 透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
+title: 使用 Intune 管理適用於 iOS 和 Android 的 Microsoft Edge
 titleSuffix: ''
 description: 使用 Microsoft Edge 的 Intune 應用程式保護原則，以確保一律使用就地保護公司網站的存取。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648473"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287225"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -157,7 +157,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 ### <a name="before-you-start"></a>開始之前
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
-    - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
+  - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 - Microsoft Edge 應用程式必須已指派 [Intune 應用程式保護原則](app-protection-policy.md)。
 
 > [!NOTE]
@@ -228,34 +228,34 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 - 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (\*)。
 - 萬用字元只能比對主機名稱的整個元件 (以句點分隔) 或路徑的整個部分 (以正斜線分隔)。 例如，**不**支援 `http://*contoso.com`。
 - 您可以在位址中指定連接埠號碼。 如不指定連接埠號碼，會使用下列值：
-    - 針對 http 使用連接埠 80
-    - 針對 https 使用連接埠 443
+  - 針對 http 使用連接埠 80
+  - 針對 https 使用連接埠 443
 - **不**支援對連接埠號碼使用萬用字元。 例如，不支援 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
 
     |    URL    |    詳細資料    |    相符項    |    不符合    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    比對單一頁面    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    比對單一頁面    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    比對所有以 `www.contoso.com` 開頭的 URL    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    比對 `contoso.com` 下的所有子網域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    比對單一資料夾    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    比對所有以 `www.contoso.com` 開頭的 URL    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    比對 `contoso.com` 下的所有子網域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    比對所有結尾為 `contoso.com/` 的子網域    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    比對單一資料夾    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    使用連接埠號碼來比對單一頁面    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    比對單一且安全的頁面    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    符合單一資料夾及所有子資料夾    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - 以下是一些您無法指定的輸入範例：
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP 位址
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP 位址
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>定義當使用者嘗試存取被封鎖網站時的行為
 
 由於 Microsoft Edge 中已內建雙重身分識別模型，您可以為使用者啟用 Intune Managed Browser 無法達成且更有彈性的體驗。 當使用者在 Microsoft Edge 中造訪被封鎖的網站時，您可以提示他們在其個人內容 (而非工作內容) 中開啟該連結。 這可讓他們持續被保護，同時也能確保企業資源的安全。 例如，如果使用者在 Outlook 中收到某篇新聞文章的連結，他們可以在其個人內容或 InPrivate 索引標籤中開啟該連結。其工作內容並不允許新聞網站。 根據預設，會允許這些轉換。
@@ -285,7 +285,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 - 您可以在與 Microsoft Edge 相關聯的應用程式保護原則中設定 [需要簡單的 PIN 碼才能存取]  或 [需要公司認證才能存取]  選項。 如果使用者選取驗證頁面上的說明連結，他們便可以瀏覽任何網際網路網站，無論那些網站是否被加入原則中的已封鎖清單。
 - Microsoft Edge 可以在直接存取網站時，只封鎖網站的存取。 它不會在使用者使用中繼服務 (例如翻譯服務) 來存取網站時封鎖存取。
 - 若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 * **.microsoft.com**。 它一律會被允許。
-- 使用者可以關閉資料收集。 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。 在 iOS 裝置上，使用者將無法開啟具有過期或未受信任憑證的網站。
+- 使用者可以關閉資料收集。 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制此資料的收集。 在 iOS 裝置上，使用者將無法開啟具有過期或未受信任憑證的網站。
 
 ## <a name="next-steps"></a>後續步驟
 

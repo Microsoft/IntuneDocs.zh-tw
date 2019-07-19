@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713265"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851470"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -70,13 +70,13 @@ ms.locfileid: "67713265"
   - [2019 年 春季 (19H1) 的 MDM 安全性基準](security-baseline-settings-mdm.md)
   - [預覽：2018 年 10 月的 MDM 安全性基準](security-baseline-settings-mdm-archive.md)
 
-- **Windows Defender ATP 基準**  
+- **Microsoft Defender ATP 基準**  
   (若要使用此基準，您的環境必須滿足使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的先決條件)  。
-  - [預覽：Windows Defender ATP 基準](security-baseline-settings-defender-atp.md)  
+  - [預覽：Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  
@@ -200,6 +200,6 @@ Microsoft 安全性小組擁有多年直接與 Windows 開發人員和安全性�
 ## <a name="next-steps"></a>後續步驟
 - 檢視可用最新版基準中的設定：  
   - [MDM 安全性基準](security-baseline-settings-mdm.md)  
-  - [Windows Defender ATP 基準](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
 - 檢查狀態並監視[基準和設定檔](security-baselines-monitor.md)。

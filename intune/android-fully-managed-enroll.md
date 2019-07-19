@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819885"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863089"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>設定 Android Enterprise 完全受控裝置的 Intune 註冊 (預覽)
 
 Android Enterprise 完全受控裝置為與單一使用者建立關聯且為公司擁有的裝置，並僅供工作而非個人用途使用。 管理員可以管理整個裝置，並強制原則控制無法用於工作設定檔，例如：
-- 僅允許從受控 Google Play 安裝應用程式
-- 禁止解除安裝受控應用程式
-- 防止使用者將裝置恢復出廠預設值等。
+- 僅允許從受控 Google Play 安裝應用程式。
+- 禁止解除安裝受控應用程式。
+- 防止使用者為裝置恢復出廠預設值等。
 
 Intune 可協助您將應用程式及設定部署至 Android Enterprise 裝置，包含 Android Enterprise 完全受控裝置。 如需 Android Enterprise 的特定詳細資料，請參閱 [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Android Enterprise 需求)。
 
@@ -58,8 +58,8 @@ Intune 可協助您將應用程式及設定部署至 Android Enterprise 裝置�
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選擇 [裝置註冊]   > [Android 註冊]   > [Corporate-owned, fully managed user devices] \(公司擁有的完全受控使用者裝置 (預覽)\)  。
 2. 在 [允許使用者註冊公司擁有的使用者裝置]  下，選擇 [是]  。
 
-[!NOTE]
-如已定義 Azure AD 條件式存取原則使用「需要標記為合規的裝置」  控制項，並適用於**所有雲端應用程式**、**Android** 和**瀏覽器** - 您必須從此原則排除 **Microsoft Intune** 的雲端應用程式。 這是因為 Android 安裝程式程序在註冊期間會使用 Chrome 的索引標籤來驗證使用者。 如需詳細資訊，請參閱 [Azure AD 條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+> [!NOTE]
+> 如已定義 Azure AD 條件式存取原則使用「需要標記為合規的裝置」  控制項，並適用於**所有雲端應用程式**、**Android** 和**瀏覽器** - 您必須從此原則排除 **Microsoft Intune** 的雲端應用程式。 這是因為 Android 安裝程式程序在註冊期間會使用 Chrome 的索引標籤來驗證使用者。 如需詳細資訊，請參閱 [Azure AD 條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
 
 當此項設定為 [是]  時，會提供您 Intune 租用戶的註冊權杖 (隨機字串) 及 QR 代碼。 此單一註冊權杖對您所有的使用者都有效，而且不會到期。 視 Android OS 和裝置的版本而定，您可以使用權杖或 QR 代碼註冊 kiosk 裝置。
 
@@ -67,7 +67,7 @@ Intune 可協助您將應用程式及設定部署至 Android Enterprise 裝置�
 您現在可以[註冊您的完全受控裝置](android-dedicated-devices-fully-managed-enroll.md)。
 
 ## <a name="considerations-for-this-preview-feature"></a>此預覽功能的考量
-此公開預覽包含一套 Android Enterprise 完全受控解決方案組的核心功能。 我們想了解您使用這項預覽功能的體驗情形，您可使用目前與小組間的任何通訊通道與我們分享 (例如 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853))。
+此公開預覽包含一套 Android Enterprise 完全受控解決方案組的核心功能。 我們想了解您使用此預覽功能的體驗情形，您可使用目前與小組間的任何通訊通道與我們分享 (例如 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853))。
 
 此預覽支援下列 Android Enterprise 完全受控裝置功能：
 - 使用 NFC、權杖項目、QR 代碼及零接觸來註冊裝置
