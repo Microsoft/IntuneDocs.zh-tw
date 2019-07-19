@@ -12,7 +12,7 @@
 ### [為什麼註冊您的 Android 裝置](why-enroll-android-device.md)
 ### 註冊您的裝置
 #### [註冊您的 Android 裝置](enroll-device-android-company-portal.md)  
-#### [使用 Android 工作設定檔註冊](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [使用 Android 工作設定檔註冊](enroll-device-android-work-profile.md)
 #### [使用 Microsoft Intune 應用程式註冊](enroll-device-android-microsoft-intune-app.md)
 ### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-android.md)
 ### [加密您的裝置](encrypt-your-device-android.md)
