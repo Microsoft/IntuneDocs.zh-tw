@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62d30d0c404fb8393f5aa2c999cd1fc09b266350
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 44ba77609b3fafd5518378f3edcbbbace0f6a551
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735895"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354072"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 電腦上安裝 Intune 軟體用戶端
 
@@ -261,5 +261,5 @@ Intune 用戶端軟體包含在 Intune 管理中註冊電腦所需的基本軟�
 
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
-### <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>後續步驟
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

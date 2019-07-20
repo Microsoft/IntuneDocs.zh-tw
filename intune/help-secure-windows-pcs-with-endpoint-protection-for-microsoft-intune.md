@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548771"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354094"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用 Microsoft Intune 的 Endpoint Protection 協助保護 Windows 電腦
 
@@ -145,8 +145,8 @@ Microsoft Intune 可協助您透過 Endpoint Protection 保護受管理電腦的
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>指定 Microsoft Active Protection Service 設定
 Microsoft Active Protection Service 是一個線上社群，能協助您決定回應潛在威脅的方式。 這個社群也有助於阻止新惡意程式碼感染的擴散。 您可以選取 [是]  ，然後指定 [成員資格層級]  ，以 [加入 Microsoft Active Protection Service]  ：
-  - **基本** - 將有關偵測到的惡意程式碼的基本資訊傳送到 Microsoft。 這包括軟體來源、您所套用或 Endpoint Protection 自動套用的動作，以及這些動作是否成功。
-  - **進階** - 將有關惡意程式碼、間諜軟體和潛在的垃圾軟體的詳細資訊傳送到 Microsoft。 這包括有關軟體的位置、檔案名稱、軟體運作方式，以及軟體對電腦的影響的資訊。
+- **基本** - 將有關偵測到的惡意程式碼的基本資訊傳送到 Microsoft。 這包括軟體來源、您所套用或 Endpoint Protection 自動套用的動作，以及這些動作是否成功。
+- **進階** - 將有關惡意程式碼、間諜軟體和潛在的垃圾軟體的詳細資訊傳送到 Microsoft。 這包括有關軟體的位置、檔案名稱、軟體運作方式，以及軟體對電腦的影響的資訊。
 
 您也可以 **[根據 Microsoft Active Protection Service 報表接收動態定義]** 。
 
@@ -197,5 +197,5 @@ Intune 可以在已安裝 Intune 用戶端的遠端受管理電腦上，使用 E
 ## <a name="need-more-help"></a>需要其他協助？
 如需進一步協助和支援，請參閱[針對 Microsoft Intune 中的 Endpoint Protection 進行疑難排解](troubleshoot-endpoint-protection-in-microsoft-intune.md)。
 
-### <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)

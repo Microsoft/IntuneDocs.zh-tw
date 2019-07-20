@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: fefb8feee7f308fca3d3455487aae5f2802d9c5d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549166"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353413"
 ---
 # <a name="retire-a-windows-pc"></a>淘汰 Windows 電腦
 
@@ -59,6 +59,6 @@ ms.locfileid: "67549166"
 
     如果無法解除安裝 Endpoint Protection 用戶端，請參閱 [Endpoint Protection 疑難排解](/intune/troubleshoot-endpoint-protection-in-microsoft-intune)，以取得詳細說明。
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

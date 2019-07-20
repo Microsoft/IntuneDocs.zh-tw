@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529175"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885099"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -90,24 +90,24 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>為 iOS 或 Android 應用程式啟用以應用程式為基礎的條件式存取
- 
- 除了為您的應用程式啟用應用程式保護原則之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
- 
- * 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
- 
- * 您應用程式的 [AAD 用戶端識別碼](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)在 iOS 與 Android 平台上都必須是唯一的。
- 
+
+除了為您的應用程式啟用應用程式保護原則之外，您的應用程式也需要符合下列條件才能適當地搭配 Azure ActiveDirectory (AAD) 應用程式型條件式存取運作：
+
+* 應用程式是使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)所建置並針對 AAD 訊息代理程式驗證啟用。
+
+* 您應用程式的 [AAD 用戶端識別碼](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application)在 iOS 與 Android 平台上都必須是唯一的。
+
 ## <a name="configure-telemetry-for-your-app"></a>設定應用程式的遙測
 
 Microsoft Intune 會收集應用程式使用量統計資料的資料。
 
 * **iOS 的 Intune App SDK**：SDK 預設會記錄使用事件的相關 SDK 遙測資料。 這些資料會傳送到 Microsoft Intune。
 
-    * 如果您選擇不要將 SDK 遙測資料從應用程式傳送至 Microsoft Intune，則必須停用遙測傳輸，方法是在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 "YES"。
+  * 如果您選擇不要將 SDK 遙測資料從應用程式傳送至 Microsoft Intune，則必須停用遙測傳輸，方法是在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 "YES"。
 
 * **Intune App SDK for Android**：Intune App SDK for Android 不會控制來自您應用程式的資料收集。 公司入口網站應用程式預設會記錄遙測資料。 這些資料會傳送到 Microsoft Intune。 根據 Microsoft 原則，我們不會收集任何個人識別資訊 (PII)。 
 
-    * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+  * 如果終端使用者選擇不要傳送此資料，則必須在公司入口網站應用程式的 [設定] 下關閉遙測。 若要深入了解，請參閱[關閉 Microsoft 使用狀況資料收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="line-of-business-app-version-numbers"></a>企業營運應用程式版本號碼
 
@@ -119,11 +119,11 @@ Intune 的企業營運應用程式現在會顯示 iOS 和 Android 應用程式�
 
 完整的版本號碼有兩個部分：
 
- - **版本**  
-   版本號碼是人類可讀的應用程式版本號碼。 可供使用者識別不同的應用程式版本。
+- **版本**  
+  版本號碼是人類可讀的應用程式版本號碼。 可供使用者識別不同的應用程式版本。
 
- - **組建編號**  
-    組建編號是內部編號，用於偵測應用程式與以程式設計方式管理應用程式。 組建編號是指參考程式碼變更的應用程式反覆項目。
+- **組建編號**  
+  組建編號是內部編號，用於偵測應用程式與以程式設計方式管理應用程式。 組建編號是指參考程式碼變更的應用程式反覆項目。
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Android 和 iOS 中的版本與組建編號
 
@@ -139,16 +139,16 @@ Intune|iOS|Android|說明|
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    指定配套的版本號碼。 此數字可識別應用程式的發行版本。 此數字可供使用者用來參考應用程式。
+  指定配套的版本號碼。 此數字可識別應用程式的發行版本。 此數字可供使用者用來參考應用程式。
 - **CFBundleVersion**  
-    配套的組建版本，可識別配套的反覆項目。 此數字可識別發行或未發行的配套。 此數字用於偵測應用程式。
+  配套的組建版本，可識別配套的反覆項目。 此數字可識別發行或未發行的配套。 此數字用於偵測應用程式。
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    向使用者顯示的版本號碼。 這個屬性可以設定為原始字串或字串資源的參考。 此字串除了顯示給使用者之外，沒有任何其他的用途。
- - **PackageVersionCode**  
-    內部版本號碼。 此數字只能用來判斷某個版本是否比另一個版本更新，較高的數字表示較新的版本。 這不是版本 
+- **PackageVersionName**  
+  向使用者顯示的版本號碼。 這個屬性可以設定為原始字串或字串資源的參考。 此字串除了顯示給使用者之外，沒有任何其他的用途。
+- **PackageVersionCode**  
+  內部版本號碼。 此數字只能用來判斷某個版本是否比另一個版本更新，較高的數字表示較新的版本。 這不是版本 
 
 ## <a name="next-steps-after-integration"></a>整合後的後續步驟
 
@@ -157,11 +157,11 @@ Intune|iOS|Android|說明|
 
 * **Microsoft Intune 測試帳戶**：若要對啟用 Intune 的應用程式測試 Intune 的受控應用程式保護功能，您必須具備 Microsoft Intune 帳戶。
 
-    * 如果您是為 iOS 或 Android 市集應用程式啟用 Intune 應用程式保護原則的 ISV，完成註冊步驟中所述的 Microsoft Intune 註冊後，即會收到促銷代碼。 促銷代碼將可讓您註冊 Microsoft Intune 試用版，以獲得 1 年的延長使用時間。
+  * 如果您是為 iOS 或 Android 市集應用程式啟用 Intune 應用程式保護原則的 ISV，完成註冊步驟中所述的 Microsoft Intune 註冊後，即會收到促銷代碼。 促銷代碼將可讓您註冊 Microsoft Intune 試用版，以獲得 1 年的延長使用時間。
 
-    * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
+  * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
 
-    * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](https://docs.microsoft.com/intune/licenses-assign))。
+  * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](https://docs.microsoft.com/intune/licenses-assign))。
 
 * **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。 如果您的應用程式已整合 Intune SDK，但尚未在 Azure 入口網站中列示為已設定目標的應用程式，您可以透過選取 [+ 更多應用程式] 選項，並在文字方塊中提供套件組合識別碼 (iOS) 或套件名稱 (Android)，以使用原則將它設定為目標。
 

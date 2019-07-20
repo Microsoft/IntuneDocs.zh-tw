@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572524"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354014"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理 Windows 電腦的防火牆設定註冊為行動裝置，請參閱 <<c0> [ 在 Intune 中新增 endpoint protection 設定](endpoint-protection-configure.md)。
+> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理註冊為行動裝置之 Windows 電腦的防火牆設定, 請參閱[在 Intune 中新增端點保護設定](endpoint-protection-configure.md)。
 
 Microsoft Intune 有數種方式可協助您保護使用 Intune 用戶端管理的 Windows 電腦。 其中一項方式為提供可讓您在電腦上設定 Windows 防火牆設定的原則。
 
@@ -140,5 +140,5 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 |**Windows Virtual PC**<br>(Windows 7 或更新版本)|可讓虛擬機器與其他電腦通訊。|
 |**無線可攜式裝置**|可允許使用媒體傳輸通訊協定 (MTP)，將媒體從支援網路存取的相機或媒體裝置傳送到受管理電腦。 這項設定使用 SSDP 和 UPnP 網路通訊協定。|
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)

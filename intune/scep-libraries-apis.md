@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040722"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882373"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 以針對 SCEP 將協力廠商 CA 新增至 Intune
 
@@ -176,8 +176,8 @@ void ValidateRequest(
 
 **安全性注意事項**  
 
-  - 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
-  - SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
+- 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
+- SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification 方法
 
@@ -217,8 +217,8 @@ void SendSuccessNotification(
 
 **安全性注意事項**
 
-  - 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
-  - SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
+- 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
+- SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification 方法
 
@@ -254,8 +254,8 @@ void SendFailureNotification(
 
 **安全性注意事項**
 
-  - 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
-  - SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
+- 如果這個方法擲回例外狀況，SCEP 伺服器**不得**核發憑證給用戶端。
+- SCEP 憑證要求驗證失敗可能表示 Intune 基礎結構中的問題。 或者，它們可能表示攻擊者正在嘗試取得憑證。
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory 方法
 

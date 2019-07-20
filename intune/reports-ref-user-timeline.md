@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040931"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882446"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune 資料倉儲中的使用者存留期表示法
 
@@ -79,5 +79,5 @@ John Smith 在 2017/07/25 放棄他的授權。 **User** 資料表有下列項�
 
 ## <a name="next-steps"></a>後續步驟
 
- - 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
- - 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。
+- 若要深入了解 **Current User** 實體，請參閱 [Current User 實體的參考](reports-ref-current-user.md)。
+- 若要深入了解 **User** 實體，請參閱 [User 實體的參考](reports-ref-user.md)。

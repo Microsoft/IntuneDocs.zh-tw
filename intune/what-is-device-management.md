@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043833"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884260"
 ---
 # <a name="what-is-device-management"></a>什麼是裝置管理？ 
 
@@ -58,8 +58,8 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 - **Windows Defender** 包含許多安全性功能，可協助保護 Windows 10 裝置。 例如，Intune 與 Windows Defender 搭配使用，您可以： 
 
-    - 啟用 [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以尋找行動裝置上檔案和應用程式中的可疑活動。 
-    - 使用 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) 來協助防止行動裝置上的安全性缺口。 此外，您也可以封鎖使用者存取公司資源，協助限制安全性缺口的影響。
+  - 啟用 [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以尋找行動裝置上檔案和應用程式中的可疑活動。 
+  - 使用 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) 來協助防止行動裝置上的安全性缺口。 此外，您也可以封鎖使用者存取公司資源，協助限制安全性缺口的影響。
 
 - **條件式存取**是 Azure Active Directory 功能，並與 Intune 完美整合。 使用[條件式存取](https://docs.microsoft.com/intune/conditional-access)，確保只有符合規範的裝置才能存取電子郵件、SharePoint 與其他應用程式。 
 

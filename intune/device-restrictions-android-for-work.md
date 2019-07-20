@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263678"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883424"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -56,7 +56,7 @@ ms.locfileid: "67263678"
 - **使用 NFC 發送資料**：選擇 [封鎖]  以防止使用近距離無線通訊 (NFC) 技術從應用程式發送資料。 [未設定]  會允許在裝置間使用 NFC 共用資料。
 - **偵錯功能**：選擇 [允許]  可讓使用者在裝置上使用偵錯功能。 [未設定]  會防止使用者在裝置上使用偵錯功能。
 - **麥克風調整**：選擇 [封鎖]  以防止使用者將麥克風靜音和調整麥克風音量。 [未設定]  會允許使用者使用及調整裝置上麥克風的音量。
-- **恢復出廠預設值保護電子郵件**：選擇 [Google 帳戶電子郵件地址]  。 輸入裝置管理員的電子郵件地址，該電子郵件地址可在抹除裝置後解除鎖定裝置。 請務必以分號分隔電子郵件地址 (例如 `admin1@gmail.com;admin2@gmail.com`)。 如果未輸入電子郵件，任何人都可在裝置還原為出廠預設值後，將裝置解除鎖定。 執行的非使用者恢復出廠預設值，例如執行原廠重設使用 [復原] 功能表時，只適用於這些電子郵件。
+- **恢復出廠預設值保護電子郵件**：選擇 [Google 帳戶電子郵件地址]  。 輸入裝置管理員的電子郵件地址，該電子郵件地址可在抹除裝置後解除鎖定裝置。 請務必以分號分隔電子郵件地址 (例如 `admin1@gmail.com;admin2@gmail.com`)。 如果未輸入電子郵件，任何人都可在裝置還原為出廠預設值後，將裝置解除鎖定。 這些電子郵件僅適用于執行非使用者恢復出廠預設值時, 例如使用 [復原] 功能表執行原廠重設。
 - **網路備案**：選擇 [啟用]  會允許使用者開啟網路備案功能。 如果在裝置開機時沒有進行網路連線，則備案會要求暫時連線到網路，並重新整理裝置原則。 套用原則之後，就會遺忘暫時性網路，且裝置會繼續開機。 在下列情況，這項功能會將裝置連線到網路：
   - 在上次原則中沒有任何適合的網路。
   - 裝置開機進入鎖定工作模式的應用程式。
@@ -101,7 +101,7 @@ ms.locfileid: "67263678"
   > 
   > **Managed Home Screen** 應用程式不一定要在組態設定檔中，但必須新增為用戶端應用程式。 當 **Managed Home Screen** 應用程式新增為用戶端應用程式時，您在組態設定檔中新增的任何其他應用程式，都會在 **Managed Home Screen** 應用程式中顯示為圖示。 
   >
-  > 使用多應用程式 kiosk 模式時首頁管理畫面，撥號程式 /windows phone 應用程式可能無法正常運作。 
+  > 使用具有受管理主畫面的多應用程式 kiosk 模式時, 撥號程式/電話應用程式可能無法正常運作。 
 
   - 選擇 [新增]  ，並從清單中選取您的應用程式。
 
@@ -208,9 +208,9 @@ ms.locfileid: "67263678"
     - **套件識別碼**：輸入 Google Play 商店中的應用程式套件識別碼。 例如，如果應用程式在 Play 商店中的 URL 是 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，則套件識別碼是 `com.contosovpn.android.prod`。
 
   > [!IMPORTANT]
-  >  - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
-  >  - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
-  >  - 搭配 F5 Access for Android 3.0.4 使用個別應用程式 VPN 時可能有已知的問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.4 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) \(英文\)。
+  > - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
+  > - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
+  > - 搭配 F5 Access for Android 3.0.4 使用個別應用程式 VPN 時可能有已知的問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.4 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) \(英文\)。
 
 - **鎖定模式**：選擇 [啟用]  以強制所有網路流量使用 VPN 通道。 如果未建立 VPN 連線，裝置將不會有網路存取。
 
@@ -315,9 +315,9 @@ ms.locfileid: "67263678"
     - **套件識別碼**：輸入 Google Play 商店中的應用程式套件識別碼。 例如，如果應用程式在 Play 商店中的 URL 是 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，則套件識別碼是 `com.contosovpn.android.prod`。
 
   > [!IMPORTANT]
-  >  - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
-  >  - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
-  >  - 搭配 F5 Access for Android 3.0.4 使用個別應用程式 VPN 時可能有已知的問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.4 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) \(英文\)。
+  > - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
+  > - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
+  > - 搭配 F5 Access for Android 3.0.4 使用個別應用程式 VPN 時可能有已知的問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.4 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) \(英文\)。
 
 - **鎖定模式**：選擇 [啟用]  以強制所有網路流量使用 VPN 通道。 如果未建立 VPN 連線，裝置將不會有網路存取。
 

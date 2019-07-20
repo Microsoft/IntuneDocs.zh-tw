@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735627"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885053"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -116,8 +116,8 @@ apply plugin: 'com.microsoft.intune.mam'
 * [要包含的外部相依性](#usage-of-includeexternallibraries) 
 * 要排除處理的特定類別
 * 要排除處理的變體。 這些項目可以指完整的變體名稱或單一類別。 例如
-     * 如果您的應用程式具有 `debug` 和 `release` 組建類型，搭配 {`savory`、`sweet`} 和 {`vanilla`、`chocolate`} 類別，您可以指定
-     * `savory` 以排除所有具有 savory 類別的變體，或 `savoryVanillaRelease` 以僅排除該確切變體。
+  * 如果您的應用程式具有 `debug` 和 `release` 組建類型，搭配 {`savory`、`sweet`} 和 {`vanilla`、`chocolate`} 類別，您可以指定
+  * `savory` 以排除所有具有 savory 類別的變體，或 `savoryVanillaRelease` 以僅排除該確切變體。
 
 #### <a name="example-partial-buildgradle"></a>部分 build.gradle 的範例
 
@@ -680,15 +680,15 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 * **NonBrokerRedirectURI** 為要在無 Broker 的情況下使用的 AAD 重新導向 URI。 如果未指定，就會使用預設值 `urn:ietf:wg:oauth:2.0:oob`。 此預設值適用於大部分的應用程式。
 
-    * 只有在 SkipBroker 為 "True" 時，才會使用 NonBrokerRedirectURI。
+  * 只有在 SkipBroker 為 "True" 時，才會使用 NonBrokerRedirectURI。
 
 * **SkipBroker** 會用來覆寫預設的 ADAL SSO 參與行為。 SkipBroker 應只為指定 ClientID 的應用程式指定，**且**不支援代理驗證/全裝置 SSO。 在此情況下，其應設為 "True"。 大多數的應用程式都不應設定 SkipBroker 參數。
 
-    * 您**必須**在資訊清單中指定 ClientID，才能指定 SkipBroker 值。
+  * 您**必須**在資訊清單中指定 ClientID，才能指定 SkipBroker 值。
 
-    * 指定 ClientID 時，預設值為 "False"。
+  * 指定 ClientID 時，預設值為 "False"。
 
-    * 當 SkipBroker 為 "True" 時，便會使用 NonBrokerRedirectURI。 並未與 ADAL 整合 (因此不具有 ClientID) 的應用程式也會預設為 "True"。
+  * 當 SkipBroker 為 "True" 時，便會使用 NonBrokerRedirectURI。 並未與 ADAL 整合 (因此不具有 ClientID) 的應用程式也會預設為 "True"。
 
 ### <a name="common-adal-configurations"></a>ADAL 的常見設定
 
@@ -1317,48 +1317,48 @@ Intune App SDK 預設會將原則套用至應用程式整體。 多重身分識�
 
 #### <a name="examples"></a>範例
 
-  1. 如果活動是根據另一個 MAM 應用程式所傳送的 `Intent` 來啟動，就會根據另一個應用程式在傳送 `Intent` 時的有效身分識別，來設定活動的身分識別。
+1. 如果活動是根據另一個 MAM 應用程式所傳送的 `Intent` 來啟動，就會根據另一個應用程式在傳送 `Intent` 時的有效身分識別，來設定活動的身分識別。
 
-  2. 針對服務，執行緒的身分識別會在 `onStart` 或 `onBind` 呼叫期間以類似的方式進行設定。 針對從 `onBind` 傳回之 `Binder` 的呼叫，也會暫時設定執行緒身分識別。
+2. 針對服務，執行緒的身分識別會在 `onStart` 或 `onBind` 呼叫期間以類似的方式進行設定。 針對從 `onBind` 傳回之 `Binder` 的呼叫，也會暫時設定執行緒身分識別。
 
-  3. 呼叫 `ContentProvider` 同樣會在該期間設定執行緒身分識別。
-
-
-  此外，使用者與活動互動可能會導致隱含身分識別切換。
-
-  **範例：** 使用者在 `Resume` 期間取消授權提示，將會導致隱含切換至空的身分識別。
-
-  應用程式會有機會注意到這些變更，並可以在必要的情況下禁止變更。 `MAMService` 和 `MAMContentProvider` 會公開下列可由子類別覆寫的方法：
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  在 `MAMActivity` 類別中，方法中會出現額外的參數：
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * `AppIdentitySwitchReason` 會擷取隱含切換的來源，並可接受 `CREATE`、`RESUME_CANCELLED` 和 `NEW_INTENT` 值。  當活動繼續導致顯示 PIN、驗證或其他合規性 UI，而且使用者嘗試取消該 UI (通常是透過使用 [上一頁] 按鈕) 時，就會使用 `RESUME_CANCELLED` 原因。
+3. 呼叫 `ContentProvider` 同樣會在該期間設定執行緒身分識別。
 
 
-  * `AppIdentitySwitchResultCallback` 如下所示：
+    此外，使用者與活動互動可能會導致隱含身分識別切換。
+
+    **範例：** 使用者在 `Resume` 期間取消授權提示，將會導致隱含切換至空的身分識別。
+
+    應用程式會有機會注意到這些變更，並可以在必要的情況下禁止變更。 `MAMService` 和 `MAMContentProvider` 會公開下列可由子類別覆寫的方法：
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    其中 ```AppIdentitySwitchResult``` 是 `SUCCESS` 或 `FAILURE`。
+    在 `MAMActivity` 類別中，方法中會出現額外的參數：
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * `AppIdentitySwitchReason` 會擷取隱含切換的來源，並可接受 `CREATE`、`RESUME_CANCELLED` 和 `NEW_INTENT` 值。  當活動繼續導致顯示 PIN、驗證或其他合規性 UI，而且使用者嘗試取消該 UI (通常是透過使用 [上一頁] 按鈕) 時，就會使用 `RESUME_CANCELLED` 原因。
+
+
+    * `AppIdentitySwitchResultCallback` 如下所示：
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      其中 ```AppIdentitySwitchResult``` 是 `SUCCESS` 或 `FAILURE`。
 
 針對所有隱含身分識別變更會呼叫 `onMAMIdentitySwitchRequired` 方法 (透過從 `MAMService.onMAMBind` 傳回的 Binder 進行的變更除外)。 `onMAMIdentitySwitchRequired` 的預設實作會立即呼叫：
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之間的關聯性。 應用程式「必須」  先適當地設定 UI 身分識別，才能顯示公司資料。 這包括從檔案讀取的資料。 如果檔案來自應用程式之外 (來自 `ContentProvider` 或讀取自公開寫入位置)，應用程式「必須」  嘗試先判斷檔案身分識別 (使用 `MAMFileProtectionManager.getProtectionInfo`) 才能顯示從檔案讀取的資訊。 如果 `getProtectionInfo` 回報非 null、非空白的身分識別，則 UI 身分識別「必須」  設定成符合此身分識別 (使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`)。 如果身分識別切換失敗，「絕無法」  顯示檔案中的資料。
 
 範例流程可能看起來像這樣：
-  * 使用者選取要在應用程式中開啟的文件。
-  * 在開啟流程的過程中，還未從磁碟讀取資料之前，應用程式會確認顯示內容應該使用的身分識別。
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * 應用程式等待回報給回呼的結果
-    * 如果報告的結果是失敗，應用程式就不會顯示文件。
-  * 應用程式會開啟並轉譯檔案。
+* 使用者選取要在應用程式中開啟的文件。
+* 在開啟流程的過程中，還未從磁碟讀取資料之前，應用程式會確認顯示內容應該使用的身分識別。
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * 應用程式等待回報給回呼的結果
+  * 如果報告的結果是失敗，應用程式就不會顯示文件。
+* 應用程式會開啟並轉譯檔案。
   
 #### <a name="single-identity-to-multi-identity-transition"></a>將單一身分識別轉換為多身分識別
 若先前使用單一身分識別 Intune 整合發行的應用程式稍後與多身分識別進行整合，則先前安裝的應用程式便會發生轉換 (使用者看不到，因為沒有相關聯的 UX)。 應用程式「不需要」  明確地執行任何操作來處理此轉換。 所有在轉換前建立的檔案都會繼續視為受控 (因此若有開啟加密原則，則它們仍會維持在加密狀態)。 若需要的話，您可以偵測升級並使用 `MAMFileProtectionManager.protect` 來使用空白身分識別標記特定檔案或目錄 (若檔案和目錄經過加密，這會移除它們的加密)。
@@ -1513,11 +1513,11 @@ MAM 無法自動推斷在 `Activity` 中被讀取的檔案和顯示的資料之�
 
 離線模式需要檔案身分識別標記。 下列各點應該列入考量：
 
-  * 如果未安裝公司入口網站，則無法標記檔案的身分識別。
+* 如果未安裝公司入口網站，則無法標記檔案的身分識別。
 
-  * 如果已安裝公司入口網站，但應用程式沒有 Intune MAM 原則，則檔案將無法確實標記身分識別。
+* 如果已安裝公司入口網站，但應用程式沒有 Intune MAM 原則，則檔案將無法確實標記身分識別。
 
-  * 當檔案身分識別標記變成可用時，所有先前建立的檔案都會視為個人/未受管理 (屬於空字串身分識別)，除非應用程式之前已安裝為受單一身分識別管理的應用程式，在此情況下則會將它們視為屬於已註冊的使用者。
+* 當檔案身分識別標記變成可用時，所有先前建立的檔案都會視為個人/未受管理 (屬於空字串身分識別)，除非應用程式之前已安裝為受單一身分識別管理的應用程式，在此情況下則會將它們視為屬於已註冊的使用者。
 
 ### <a name="directory-protection"></a>目錄保護
 

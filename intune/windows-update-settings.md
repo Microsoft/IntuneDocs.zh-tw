@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5a0ee88a24804294346888facef523f89fee816
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9e9baf3593883cf2fa2402a0b4daec638a336366
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046641"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884203"
 ---
 # <a name="windows-update-settings-for-intune"></a>適用於 Intune 的 Windows Update 設定  
 
@@ -179,8 +179,8 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 允許或封鎖裝置使用者暫停更新的安裝。 
 
 ### <a name="block-user-from-scanning-for-windows-updates"></a>防止使用者掃描 Windows 更新  
- - **預設**：允許
- - **Windows 參考文件**：[Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **預設**：允許
+- **Windows 參考文件**：[Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 指定要允許或封鎖使用者掃描 Windows Update 的權限。 例如，如果您設定「封鎖」  ，則使用者無法存取 Windows Update 掃描、下載及安裝功能。  
 

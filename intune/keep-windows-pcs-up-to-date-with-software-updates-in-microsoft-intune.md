@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548660"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353870"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>利用 Microsoft Intune 讓 Windows 電腦的軟體更新保持在最新狀態
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理 Windows 電腦的更新會註冊為行動裝置，請參閱 <<c0> [ 管理 Intune 中的軟體更新](windows-update-for-business-configure.md)。
+> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理註冊為行動裝置之 Windows 電腦的更新, 請參閱[在 Intune 中管理軟體更新](windows-update-for-business-configure.md)。
 
 Microsoft Intune 可協助您使用一些方式來保護受控的電腦，包括管理軟體更新，透過確保快速安裝最新修補程式和軟體更新，讓電腦維持最新狀態。
 
@@ -260,5 +260,5 @@ Microsoft Intune 可協助您使用一些方式來保護受控的電腦，包括
 6. 您可以檢查 [所有更新]  頁面底部的詳細資料窗格，查看關於更新的提醒訊息。
 
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 [保護 Windows 電腦的原則](policies-to-protect-windows-pcs-in-microsoft-intune.md)

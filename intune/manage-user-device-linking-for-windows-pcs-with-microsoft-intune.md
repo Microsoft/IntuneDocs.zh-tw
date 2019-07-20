@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402891"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353631"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 電腦的使用者裝置連結
 
@@ -32,7 +32,7 @@ ms.locfileid: "67402891"
 
 將軟體部署給使用者之前，您必須先將使用者連結到電腦。 您可以將一位使用者連結到多部電腦，但每一部電腦只能連結到一位使用者。 使用者會自動連結到他們在 Intune 中使用公司入口網站註冊的任何電腦。
 
-如需有關裝置的主要使用者的詳細資訊，請參閱[尋找主要使用者](find-primary-user.md)。
+如需裝置主要使用者的詳細資訊, 請參閱[尋找主要使用者](find-primary-user.md)。
 
 將使用者連結到電腦：
 
@@ -53,6 +53,6 @@ ms.locfileid: "67402891"
 > [!TIP]
 > 如果您想要限制終端使用者將自己連結到電腦的能力，請啟用 [Microsoft Intune 代理程式設定]  原則中的 [限制使用者將自己連結到電腦的能力]  選項。
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -17,12 +17,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada708c3ea6f9e8d835b667ac8162037c1de05f9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e8a3ee1aaf2c115d99e0eedfeb187ba23f623264
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836484"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884107"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>透過 Windows 10 的公司入口網站應用程式，鎖定裝置
 
@@ -32,23 +32,23 @@ ms.locfileid: "55836484"
 
 執行下列作業系統的裝置支援遠端鎖定：  
 
-  * Android
-  * iOS
-  * macOS
-  * Windows 10 Mobile (如果裝置已設定密碼)
-  * Windows Phone 8.1 (如果裝置已設定密碼) 
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (如果裝置已設定密碼)
+* Windows Phone 8.1 (如果裝置已設定密碼) 
   
 ## <a name="remote-lock-device"></a>遠端鎖定裝置
 完成下列步驟，以從公司入口網站應用程式鎖定裝置。  
 
-1. 從公司入口網站應用程式的 [首頁] 頁面，移至 [我的裝置]，然後選取您想要鎖定的裝置。
+1. 從公司入口網站應用程式的 [首頁]  頁面，移至 [我的裝置]  ，然後選取您想要鎖定的裝置。
 
-2. 在 [裝置詳細資料] 頁面上，選取**遠端鎖定**圖示。  
+2. 在 [裝置詳細資料]  頁面上，選取**遠端鎖定**圖示。  
 
 
    ![公司入口網站應用程式的螢幕擷取畫面，其中醒目提示 [裝置詳細資料] 頁面上的遠端鎖定圖示。](./media/1804_remote_lock_Windows_CPapp_05.png)  
 
-3. 選取 [鎖定]，確認您要鎖定裝置。 應用程式將嘗試鎖定裝置，並將您重新導向 [首頁] 頁面。  
+3. 選取 [鎖定]  ，確認您要鎖定裝置。 應用程式將嘗試鎖定裝置，並將您重新導向 [首頁]  頁面。  
 
 
    ![公司入口網站應用程式的擷取畫面，其中顯示 [裝置詳細資料] 頁面上的遠端鎖定確認提示。](./media/1804_remote_lock_Windows_CPapp_06.png)  

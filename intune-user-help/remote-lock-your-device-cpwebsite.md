@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835772"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884069"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>從公司入口網站遠端鎖定裝置
 
@@ -38,27 +38,27 @@ ms.locfileid: "55835772"
 * Windows 10 Mobile (如果裝置已設定密碼)
 * Windows Phone 8.1 (如果裝置已設定密碼)  
 
-1. 在[公司入口網站](https://portal.manage.microsoft.com)上，選取 [功能表] 按鈕 > [裝置]。  
+1. 在[公司入口網站](https://portal.manage.microsoft.com)上，選取 [功能表]  按鈕 > [裝置]  。  
 
 2. 選取您要鎖定的裝置。  
 
     ![[裝置] 頁面的螢幕擷取畫面，含有 2 個磚顯示無法辨識且以常用名稱命名的裝置。 灰色的橫幅位於裝置正下方，並提示使用者識別他們正在使用裝置，或是新增一部新的裝置。](./media/rename-reset-device-step2-1808.png) 
 
-3. 選取 [遠端鎖定]。 如果頁面頂端未顯示鎖定選項，請選取 [其他 (...)] > [遠端鎖定]。  
+3. 選取 [遠端鎖定]  。 如果頁面頂端未顯示鎖定選項，請選取 [其他 (...)]   > [遠端鎖定]  。  
 
    ![公司入口網站上所選裝置的裝置詳細資料頁面，頂端含有連結清單，顯示 [重新命名]、[移除]、[重設裝置]、[重設密碼] 及 [遠端鎖定]。 ](./media/rename-reset-device-1808.png) 
 
     ![放大檢視以紅色箭頭醒目提示的「其他」圖示。](./media/rename-reset-device-step3-more-1808.png)    
 
-4. 訊息隨後出現，警告您即將鎖定裝置。 點選 [遠端鎖定] 確認。
+4. 訊息隨後出現，警告您即將鎖定裝置。 點選 [遠端鎖定]  確認。
 
 確認之後，公司入口網站會嘗試鎖定您的裝置。 在此期間會顯示「遠端鎖定待定」訊息。 當您的裝置鎖定時，狀態會顯示為「遠端鎖定成功」。  
 
 [遠端鎖定] 狀態會顯示在三個位置︰
 
-   * 網站的通知區域。
-   * 裝置的 [詳細資料] 頁面。
-   * 在頁面的 [裝置] 區段上顯示裝置名稱的磚。  
+* 網站的通知區域。
+* 裝置的 [詳細資料]  頁面。
+* 在頁面的 [裝置]  區段上顯示裝置名稱的磚。  
 
 > [!Note]
 > 如果您看到「遠端鎖定失敗」通知，請等候幾分鐘。 然後再次嘗試鎖定裝置。 狀態會變更回「遠端鎖定待定」。 如果重試失敗，請連絡您的公司支援人員尋求協助。

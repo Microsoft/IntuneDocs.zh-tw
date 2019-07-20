@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547978"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353294"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>檢視 Windows 電腦的硬體和軟體清查
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要檢視 Windows 電腦的清查會註冊為行動裝置，請參閱 <<c0> [ 在 Intune 中檢視裝置詳細資料](device-inventory.md)。
+> 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要針對註冊為行動裝置的 Windows 電腦查看清查, 請參閱[在 Intune 中查看裝置詳細資料](device-inventory.md)。
 
 Intune 會收集您使用 Intune 軟體用戶端作為電腦管理之桌上型電腦的硬體和軟體詳細資訊。 請使用下列程序中的資訊，瞭解如何建立：
 
@@ -71,6 +71,6 @@ Intune 會收集您使用 Intune 軟體用戶端作為電腦管理之桌上型�
 
     [工作狀態]  對話方塊會顯示目前的遠端工作、工作狀態、裝置名稱和任何回報的錯誤，並提供疑難排解資訊的連結。
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 
 [使用 Intune 軟體用戶端執行的一般 Windows 電腦管理工作](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

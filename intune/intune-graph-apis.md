@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548910"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883303"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -30,13 +30,13 @@ ms.locfileid: "67548910"
 
 - 具有以下項目的應用程式識別碼：
 
-    - 呼叫 Azure AD 和 Microsoft Graph API 的權限。
-    - 與特定應用程式工作相關的權限範圍。
+  - 呼叫 Azure AD 和 Microsoft Graph API 的權限。
+  - 與特定應用程式工作相關的權限範圍。
 
 - 具有以下項目的使用者認證：
 
-    - 存取與應用程式相關之 Azure AD 租用戶的權限。
-    - 支援應用程式權限範圍所需的角色權限。
+  - 存取與應用程式相關之 Azure AD 租用戶的權限。
+  - 支援應用程式權限範圍所需的角色權限。
 
 - 將權限授與應用程式以為其 Azure 租用戶執行應用程式工作的使用者。
 
@@ -61,7 +61,7 @@ ms.locfileid: "67548910"
 
 註冊應用程式以使用 Microsoft Graph API：
 
-1. 登入[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)使用系統管理認證。
+1. 使用系統管理認證登入[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 。
 
     您可以視需要使用以下項目：
     - 租用戶管理帳戶。
@@ -164,10 +164,10 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 - **啟用存取**設定：__讀取 Microsoft Intune 應用程式__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 用戶端應用程式
-    - 行動裝置應用程式類別
-    - 應用程式保護原則
-    - 應用程式設定
+  - 用戶端應用程式
+  - 行動裝置應用程式類別
+  - 應用程式保護原則
+  - 應用程式設定
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 - 也可允許變更下列實體：
 
-    - 用戶端應用程式
-    - 行動裝置應用程式類別
-    - 應用程式保護原則
-    - 應用程式設定
+  - 用戶端應用程式
+  - 行動裝置應用程式類別
+  - 應用程式保護原則
+  - 應用程式設定
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - **啟用存取**設定：__讀取 Microsoft Intune 裝置設定和原則__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 裝置設定
-    - 裝置合規性原則
-    - 通知訊息
+  - 裝置設定
+  - 裝置合規性原則
+  - 通知訊息
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 - 可允許與 __DeviceManagementConfiguration.Read.All__ 相同的作業
 
 - 應用程式也可建立、指派、刪除及變更下列實體：
-    - 裝置設定
-    - 裝置合規性原則
-    - 通知訊息
+  - 裝置設定
+  - 裝置合規性原則
+  - 通知訊息
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - **啟用存取**設定：__在 Microsoft Intune 裝置上執行受使用者影響的遠端動作__
 
 - 允許在受管理的裝置上執行下列遠端動作：
-    - 淘汰
-    - 抹除
-    - 重設/復原密碼
-    - 遠端鎖定
-    - 啟用/停用遺失模式
-    - 清理電腦
-    - 重新開機
-    - 從共用的裝置刪除使用者
+  - 淘汰
+  - 抹除
+  - 重設/復原密碼
+  - 遠端鎖定
+  - 啟用/停用遺失模式
+  - 清理電腦
+  - 重新開機
+  - 從共用的裝置刪除使用者
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - **啟用存取**設定：__讀取 Microsoft Intune 裝置__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 受管理的裝置
-    - 裝置類別
-    - 偵測到的應用程式
-    - 遠端動作
-    - 惡意程式碼資訊
+  - 受管理的裝置
+  - 裝置類別
+  - 偵測到的應用程式
+  - 遠端動作
+  - 惡意程式碼資訊
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 - 可允許與 __DeviceManagementManagedDevices.Read.All__ 相同的作業
 
 - 應用程式也可建立、刪除及變更下列實體：
-    - 受管理的裝置
-    - 裝置類別
+  - 受管理的裝置
+  - 裝置類別
 
 - 此外，也允許下列遠端動作：
-    - 尋找裝置
-    - 略過啟用鎖定
-    - 要求遠端協助
+  - 尋找裝置
+  - 略過啟用鎖定
+  - 要求遠端協助
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - **啟用存取**設定：__讀取 Microsoft Intune RBAC 設定__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 角色指派
-    - 角色定義
-    - 資源作業
+  - 角色指派
+  - 角色定義
+  - 資源作業
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 - 可允許與 __DeviceManagementRBAC.Read.All__ 相同的作業
 
 - 應用程式也可建立、指派、刪除及變更下列實體：
-    - 角色指派
-    - 角色定義
+  - 角色指派
+  - 角色定義
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - **啟用存取**設定：__讀取 Microsoft Intune 設定__
 
 - 允許下列實體內容和狀態的讀取存取權：
-    - 註冊裝置
-    - Apple 推播通知憑證
-    - Apple 裝置註冊方案
-    - Apple 大量採購方案
-    - Exchange Connector
-    - 條款及條件
-    - 電信費用管理
-    - 雲端 PKI
-    - 商標
-    - Mobile Threat Defense
+  - 註冊裝置
+  - Apple 推播通知憑證
+  - Apple 裝置註冊方案
+  - Apple 大量採購方案
+  - Exchange Connector
+  - 條款及條件
+  - 電信費用管理
+  - 雲端 PKI
+  - 商標
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 - 可允許與 DeviceManagementServiceConfig.Read.All_ 相同的作業
 
 - 應用程式也可以設定下列 Intune 功能：
-    - 註冊裝置
-    - Apple 推播通知憑證
-    - Apple 裝置註冊方案
-    - Apple 大量採購方案
-    - Exchange Connector
-    - 條款及條件
-    - 電信費用管理
-    - 雲端 PKI
-    - 商標
-    - Mobile Threat Defense
+  - 註冊裝置
+  - Apple 推播通知憑證
+  - Apple 裝置註冊方案
+  - Apple 大量採購方案
+  - Exchange Connector
+  - 條款及條件
+  - 電信費用管理
+  - 雲端 PKI
+  - 商標
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Azure AD 驗證範例
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546604"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883949"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>從 Intune 移除 iOS 裝置
 
@@ -44,25 +44,25 @@ ms.locfileid: "67546604"
     |![公司入口網站應用程式 [裝置] 畫面的螢幕擷取畫面，當中顯示使用者按一下 [移除裝置] 按鈕後的選項。 顯示以紅色醒目提示的 [移除] 按鈕，以及以藍色醒目提示的 [進一步了解] 按鈕和 [取消] 按鈕。](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  當您從 Intune 取消註冊裝置時，會發生下列情況：
+    當您從 Intune 取消註冊裝置時，會發生下列情況：
 
-  - 您的裝置將不再顯示於公司入口網站中。
+    - 您的裝置將不再顯示於公司入口網站中。
 
-  - 您無法再從公司入口網站安裝應用程式。
+    - 您無法再從公司入口網站安裝應用程式。
 
-  - 您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
+    - 您在新增裝置時變更的任何裝置設定 (例如停用相機或需要特定密碼長度) 都將失效。
 
-  - 您可能無法再存取裝置上的某些公司資源，例如檔案共用或內部網站。
+    - 您可能無法再存取裝置上的某些公司資源，例如檔案共用或內部網站。
 
-  - 您無法再使用裝置上的公司應用程式和公司資料。
+    - 您無法再使用裝置上的公司應用程式和公司資料。
 
-  - 您可能無法再使用 Wi-Fi 或虛擬私人網路 (VPN) 連線到公司網路。
+    - 您可能無法再使用 Wi-Fi 或虛擬私人網路 (VPN) 連線到公司網路。
 
-  - 移除裝置中的公司電子郵件設定檔。
+    - 移除裝置中的公司電子郵件設定檔。
 
-  - 只有公司入口網站應用程式或網站上不會再顯示為電子郵件設定的裝置。
-  
-  - 已將應用程式解除安裝。 將會移除公司應用程式資料。
+    - 只有公司入口網站應用程式或網站上不會再顯示為電子郵件設定的裝置。
+
+    - 已將應用程式解除安裝。 將會移除公司應用程式資料。
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>移除公司入口網站應用程式所收集的資料
 

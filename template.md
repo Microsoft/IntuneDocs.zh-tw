@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509632"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354399"
 ---
 # <a name="metadata-and-markdown-template"></a>中繼資料和 Markdown 範本
 
@@ -124,13 +124,13 @@ ms.locfileid: "61509632"
 - 清單
 
 
-##### <a name="unordered-list-with-an-embedded-lists"></a>具有內嵌清單的未排序清單
+#### <a name="unordered-list-with-an-embedded-lists"></a>具有內嵌清單的未排序清單
 
 - 這 
 - 項目符號 
 - 清單
-    - Mrs. Peacock
-    - Mr. Green
+  - Mrs. Peacock
+  - Mr. Green
 - 包含  
 - 其他
     1. Colonel Mustard

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76706fb39c3c5a69cba4fbf3f57c0b58d92e4a27
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 6ec8f8a613d3b0a0b17f2615de634e70fa282fd7
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559982"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68229312"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -14,8 +14,8 @@ ms.locfileid: "67559982"
 
 存取 Intune 資料倉儲 (包括應用程式開發介面) 的需求如下：
 
-  - 使用者必須是下列其中一個：
-      - Azure AD 全域管理員
-      - Intune 服務管理員
-      - 對於 **Intune 資料倉儲**資源具有以角色為基礎之存取權的使用者
-      - 使用[僅限應用程式驗證](../data-warehouse-app-only-auth.md)的無使用者驗證 
+- 使用者必須是下列其中一個：
+  - Azure AD 全域管理員
+  - Intune 服務管理員
+  - 對於 **Intune 資料倉儲**資源具有以角色為基礎之存取權的使用者
+  - 使用[僅限應用程式驗證](../data-warehouse-app-only-auth.md)的無使用者驗證 

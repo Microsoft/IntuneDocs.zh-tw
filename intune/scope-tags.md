@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403801"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882498"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>針對分散式 IT 使用角色型存取控制 (RBAC) 和範圍標籤
 
@@ -42,8 +42,8 @@ ms.locfileid: "67403801"
 
     ![建立範圍標籤的螢幕擷取畫面。](./media/scope-tags/create-scope-tag.png)
 
-3. 如果您想在特定群組中的所有裝置，請選擇**將範圍標籤指派給所選群組中的所有裝置**。
-    1. 在 **選取要包含的群組**頁面上，選擇包含您想要指派到這個範圍標籤的目標裝置的群組。
+3. 如果您想要在特定群組中的所有裝置, 請選擇 [**將範圍標籤指派給選取群組中的所有裝置**]。
+    1. 在 [**選取要包含的群組**] 頁面中, 選擇包含您要指派此範圍標籤的裝置所屬的群組。
     2. 選擇 [選取]  。
 4. 選擇 **[建立]** 。
 
@@ -108,17 +108,17 @@ ms.locfileid: "67403801"
 使用範圍標籤時，請記住這些詳細資料：
 
 - 目前，您可以將範圍標籤指派給：
-    - 角色指派
-    - 裝置相容性原則
-    - 裝置組態設定檔
-    - Windows 10 更新通道
-    - 受管理的裝置
-    - 應用程式
-    - 應用程式設定原則 - 受控裝置
-    - PowerShell 指令碼
-    - DEP 權杖
-    - iOS 應用程式佈建設定檔
-    - 大量採購方案 (VPP) 權杖
+  - 角色指派
+  - 裝置相容性原則
+  - 裝置組態設定檔
+  - Windows 10 更新通道
+  - 受管理的裝置
+  - 應用程式
+  - 應用程式設定原則 - 受控裝置
+  - PowerShell 指令碼
+  - DEP 權杖
+  - iOS 應用程式佈建設定檔
+  - 大量採購方案 (VPP) 權杖
 - 當系統管理員在 Intune 中建立物件時，指派給該系統管理員的所有範圍標籤都會自動都指派給新物件。
 - Intune RBAC 不適用於 Azure Active Directory 角色。 因此，Intune 服務管理員和全域管理員角色具有 Intune 的完整系統管理員存取權 (不論他們具有哪些範圍標籤)。
 - 具有範圍標籤之角色指派中的系統管理員，也可以查看不具有範圍標籤的 Intune 物件。

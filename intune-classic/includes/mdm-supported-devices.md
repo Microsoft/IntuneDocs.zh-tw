@@ -1,16 +1,14 @@
 ---
-ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499227"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882012"
 ---
-
-
 ### <a name="apple"></a>Apple
-  - Apple iOS 9.0 及更新版本
-  - Mac OS X 10.9 及更新版本
+- Apple iOS 9.0 及更新版本
+- Mac OS X 10.9 及更新版本
 
 ### <a name="windows"></a>Windows
 - 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦

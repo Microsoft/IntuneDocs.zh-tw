@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547880"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884753"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 資料倉儲資料模型
 
@@ -32,22 +32,22 @@ Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持�
 
 倉儲會公開下列高階區域中的資料：
 
-  - 啟用應用程式保護的應用程式和使用方式
-  - 已註冊的裝置、屬性和清查
-  - 應用程式和軟體清查
-  - 裝置組態和合規性原則
+- 啟用應用程式保護的應用程式和使用方式
+- 已註冊的裝置、屬性和清查
+- 應用程式和軟體清查
+- 裝置組態和合規性原則
 
 這些區域包含對您 Intune 環境有意義的實體。 您可在下列主題中找到有關實體集的詳細資訊：
 
-  - [應用程式](reports-ref-application.md)
-  - [日期](reports-ref-date.md)
-  - [裝置](reports-ref-devices.md)
-  - [Intune 管理延伸模組](reports-ref-intunemanagementextension.md)
-  - [原則](reports-ref-policy.md)
-  - [行動應用程式管理 (MAM)](reports-ref-mobile-app-management.md)
-  - [User](reports-ref-user.md)
-  - [Current User](reports-ref-current-user.md)
-  - [使用者裝置關聯](reports-ref-user-device.md)
+- [應用程式](reports-ref-application.md)
+- [日期](reports-ref-date.md)
+- [裝置](reports-ref-devices.md)
+- [Intune 管理延伸模組](reports-ref-intunemanagementextension.md)
+- [原則](reports-ref-policy.md)
+- [行動應用程式管理 (MAM)](reports-ref-mobile-app-management.md)
+- [User](reports-ref-user.md)
+- [Current User](reports-ref-current-user.md)
+- [使用者裝置關聯](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>關聯性：星狀結構描述模型
 
@@ -63,6 +63,6 @@ Intune 資料倉儲會每日對資料進行抽樣，以提供行動裝置之持�
 
 ## <a name="next-steps"></a>後續步驟
 
- - 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。
- - 在[建立第一個資料倉儲](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) \(英文\) 中深入了解使用資料倉儲。
- - 在[匯入資料集以建立新的 Power BI 報表](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) \(英文\) 中深入了解使用 Power BI 和資料倉儲。 
+- 若要深入了解資料倉儲如何在 Intune 中追蹤使用者的存留期，請參閱 [Intune 資料倉儲中的使用者存留期表示法](reports-ref-user-timeline.md)。
+- 在[建立第一個資料倉儲](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) \(英文\) 中深入了解使用資料倉儲。
+- 在[匯入資料集以建立新的 Power BI 報表](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) \(英文\) 中深入了解使用 Power BI 和資料倉儲。 

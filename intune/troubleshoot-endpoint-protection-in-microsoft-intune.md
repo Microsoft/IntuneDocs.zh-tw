@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402653"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353333"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune 中的 Endpoint Protection 問題和可能的解決方案
 
@@ -34,7 +34,7 @@ ms.locfileid: "66402653"
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>常見的 Intune 錯誤和可能的解決方式
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 引擎無法使用
+### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 引擎無法使用
 
 **可能的原因**：Intune Endpoint Protection 引擎已損毀或刪除。
 
@@ -45,7 +45,7 @@ ms.locfileid: "66402653"
 - 在 [控制台] > [程式] 中，選取 [Microsoft Intune Endpoint Protection 代理程式]  。 解除安裝應用程式。
 - 下一次更新同步處理期間，Microsoft Online Management 更新管理員將會偵測到程式遺失，並在排定的安裝時間重新安裝它。
 
-#### <a name="features-are-disabled"></a>功能已停用
+### <a name="features-are-disabled"></a>功能已停用
 
 您可能會收到一則訊息，指出某些功能已停用。 如果系統管理員使用組態設定檔來停用 Intune Endpoint Protection 或 Windows Defender，可能就會產生這些訊息。 或者，終端使用者已在裝置上停用功能。 可能的訊息：
 
@@ -63,19 +63,19 @@ ms.locfileid: "66402653"
 - [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [終端使用者：開啟即時保護以存取公司資源](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>惡意程式碼定義已過期
+### <a name="malware-definitions-out-of-date"></a>惡意程式碼定義已過期
 
 當裝置上的惡意程式碼定義過期達 14 天以上時，就會顯示此狀態。 例如，如果裝置中斷網際網路的連線，或惡意程式碼定義已過時，可能就會顯示此訊息。
 
 **可能的解決方案**：如果惡意程式碼定義已過期，請使用 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)來更新定義。
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完整掃描逾期或快速掃描逾期
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完整掃描逾期或快速掃描逾期
 
 已有 14 天未曾完成完整掃描或快速掃描。 如果在完整掃描期間重新啟動裝置，就會發生此情況。
 
 **可能的解決方案**：如果掃描已逾期，您可以執行一次性掃描或排程週期性掃描。 請參閱 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)。
 
-#### <a name="another-endpoint-protection-application-running"></a>其他 Endpoint Protection 應用程式正在執行
+### <a name="another-endpoint-protection-application-running"></a>其他 Endpoint Protection 應用程式正在執行
 
 其他 Endpoint Protection 應用程式正在執行且裝置狀況良好。
 

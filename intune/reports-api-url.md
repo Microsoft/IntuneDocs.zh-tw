@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648789"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313734"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -51,7 +51,7 @@ URL 包含下列元素：
 | 元素 | 範例 | 說明 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 在 Azure 入口網站中檢視資料倉儲 API 刀鋒視窗，即可找到基底 URL。 |
-| entity-collection | dates | OData 實體集合的名稱。 如需資料模型中集合和實體的詳細資訊，請參閱[資料模型](reports-ref-data-model.md)。 |
+| entity-collection | devicePropertyHistories | OData 實體集合的名稱。 如需資料模型中集合和實體的詳細資訊，請參閱[資料模型](reports-ref-data-model.md)。 |
 | api-version | beta | 版本是要存取之 API 的版本。 如需詳細資訊，請參閱[版本](reports-api-url.md#api-version-information)。 |
 | maxhistorydays | 7 | (選擇性) 記錄取出天數的上限。 此參數可以提供給任何集合，但只會針對包含 `dateKey` 為其索引鍵屬性之一部分的集合生效。 如需詳細資訊，請參閱 [DateKey 範圍篩選條件](reports-api-url.md#datekey-range-filters)。 |
 

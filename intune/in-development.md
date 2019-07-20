@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494249"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341356"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 7 月
 
@@ -59,11 +59,11 @@ ms.locfileid: "67494249"
 ## <a name="app-management"></a>應用程式管理
 
 
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>使用者和群組的自訂的通知    <!-- 16766574   -->
-您很快就可以從 iOS 和您使用 Intune 管理的 Android 裝置上的使用者將公司入口網站應用程式傳送自訂的特定推播通知。 這些自訂的通知不會繫結至特定的 Intune 功能和可用於任何用途，需要，包括一般通知，您想要傳送部分或所有員工。  
+### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>使用者和群組的自訂通知    <!-- 16766574   -->
+您很快就可以從公司入口網站應用程式, 將自訂的臨機操作推播通知傳送給您使用 Intune 管理的 iOS 和 Android 裝置上的使用者。 這些自訂通知不會系結至特定的 Intune 功能, 而且可以用於您所需的任何用途, 包括您想要傳送給部分或所有員工的一般通知。  
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>設定應用程式通知內容的組織帳戶 <!-- 2576686 -->
-Intune 應用程式保護原則在 Android 和 iOS 裝置上的 （應用程式） 可讓您控制應用程式通知內容的組織帳戶。 這項功能會需要從應用程式的支援，而且不可能適用於所有的應用程式啟用應用程式。 如需 APP 的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>設定組織帳戶的代理程式更新內容 <!-- 2576686 -->
+Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可讓您控制組織帳戶的代理程式更新內容。 這項功能將需要應用程式的支援, 而且可能無法供所有啟用應用程式的應用程式使用。 如需 APP 的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>報告 Android 工作設定檔的可用 Google Play 應用程式 <!-- 3041956  -->
 針對安裝在 Android 工作設定檔裝置上的可用應用程式，您可以檢視應用程式安裝狀態，以及受控 Google Play 應用程式的安裝版本。 如需詳細資訊，請參閱[如何監視應用程式保護原則](app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作設定檔裝置](android-enterprise-overview.md)及[受控的 Google Play 應用程式類型](apps-add-android-for-work.md#managed-google-play-app-type)。
@@ -87,19 +87,13 @@ Intune 應用程式保護原則在 Android 和 iOS 裝置上的 （應用程式�
 適用於： 
 - Windows 10 及更新版本
 
-### <a name="administrative-templates-for-group-policy---------3510695---"></a>群組原則的系統管理範本     <!--  3510695 -->
-為協助改善雲端裝置的安全性，我們將發行系統管理範本，讓您使用 Intune 設定選取適用於 Windows 電腦的群組原則設定。  這些範本會使用原則設定服務提供者 (CSP)，提供多達 2500 項的 Office、Windows 和 OneDrive 其他設定。
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>管理適用於 macOS 的 FileVault   <!--  3858502 + 1210104   -->
-您可以使用 Intune endpoint protection 裝置組態設定檔來管理的 macOS 裝置的 FileVault 金鑰加密。 這包括委付的檢視，以及輪替加密金鑰，您公司的裝置。 終端使用者將能夠擷取這些金鑰，透過公司入口網站。
-
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender 防火牆的進階設定   <!--  1311949     -->
 作為公開預覽版，您很快地將可以使用 Intune 來為 Windows Defender 管理用戶端上的自訂防火牆規則。  
 
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>新的組態設計工具時建立 OEMConfig 設定檔的 Android 企業 <!-- 3712769  -->
-在 Intune 中，您可以建立使用 OEMConfig 應用程式的裝置組態設定檔 (裝置組態 > 設定檔 > 建立設定檔 > Android 的企業平台 > OEMConfig 設定檔類型)。 當您這樣做時，JSON 編輯器隨即開啟範本與您變更的值。 此更新包括改善的使用者經驗顯示內嵌在應用程式，包括標題、 描述及更多詳細資料與設定設計工具。 JSON 編輯器仍然可用，並顯示您在組態設計工具中進行的任何變更。
+### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>建立適用于 Android Enterprise 的 OEMConfig 設定檔時的新設定設計工具 <!-- 3712769  -->
+在 Intune 中, 您可以建立裝置設定檔, 以使用 OEMConfig 應用程式 (裝置設定 > 設定檔 > 建立設定檔 > Android enterprise for platform > OEMConfig 作為配置檔案類型)。 當您這麼做時, JSON 編輯器會開啟, 其中包含可供您變更的範本和值。 此更新包含的設定設計工具具有改良的使用者體驗, 可顯示內嵌在應用程式中的詳細資料, 包括標題、描述等等。 JSON 編輯器仍然可供使用, 並顯示您在設定設計工具中所做的任何變更。
 
-若要查看目前的設定，請前往[使用使用和管理 Android Enterprise 裝置 OEMConfig](android-oem-configuration-overview.md)。
+若要查看目前的設定, 請移至[使用 OEMConfig 並管理 Android Enterprise 裝置](android-oem-configuration-overview.md)。
 
 適用於：Android Enterprise
 
@@ -107,18 +101,18 @@ Intune 應用程式保護原則在 Android 和 iOS 裝置上的 （應用程式�
 <!-- ***********************************************-->
 ## <a name="device-management"></a>裝置管理
 
-### <a name="improve-device-location---3855417---"></a>提升裝置位置<!-- 3855417 -->
-您可以放大裝置使用的確切的座標**尋找裝置**動作。 如需有關如何尋找遺失的 iOS 裝置的詳細資訊，請參閱 <<c0> [ 尋找遺失的 iOS 裝置](device-locate.md)。
+### <a name="improve-device-location---3855417---"></a>改善裝置位置<!-- 3855417 -->
+您將能夠使用 [**尋找裝置**] 動作來放大裝置的確切座標。 如需尋找遺失的 iOS 裝置的詳細資訊, 請參閱[尋找遺失的 ios 裝置](device-locate.md)。
 
-### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>設定自動裝置清除到 30 天的時間限制 <!--4231059  -->
-您可以設定自動裝置清除時間限制越短越好 （而不是目前的限制為 90 天） 最後一個登入之後的 30 天。 若要這樣做，請前往**Intune** > **裝置** > **安裝** > **裝置清除設定規則**。
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>將自動裝置清除時間限制設定為30天 <!--4231059  -->
+在最後一次登入之後, 您將能夠將自動裝置清除時間限制設定為30天 (而不是目前的限制為90天)。 若要這麼做, 請移至**Intune**  > **裝置** > **設定** > **裝置清除規則**。
 
 
 <!-- ***********************************************-->
 ## <a name="security"></a>安全性
 
-### <a name="import-and-export-security-baselines------3408610------------"></a>匯入和匯出的安全性基準    <!--3408610          -->  
-我們將新增匯出和匯入安全性基準，因此就可以 Intune 環境之間共用它們，讓您與您的自訂功能。
+### <a name="import-and-export-security-baselines------3408610------------"></a>匯入和匯出安全性基準    <!--3408610          -->  
+我們新增了匯出和匯入安全性基準的功能, 讓您可以進行自訂, 並在 Intune 環境之間共用。
 
 
 

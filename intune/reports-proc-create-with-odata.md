@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648905"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353657"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>利用 Power BI 的 OData 摘要建立報表
 
 本文說明如何使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配互動式篩選。 例如，您的財務長可能想要知道公司所擁有的裝置與個人裝置相比較的裝置整體分佈。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
 
-### <a name="overview-of-creating-the-chart"></a>建立圖表的概觀
+## <a name="overview-of-creating-the-chart"></a>建立圖表的概觀
 
 若要建立此圖表，您必須：
 1. 安裝 Power BI Desktop，如果還沒有的話。
@@ -120,5 +120,5 @@ ms.locfileid: "67648905"
 
 ## <a name="next-steps"></a>後續步驟
 
- - 在 Power BI 文件中深入了解在 Power BI Desktop [建立和管理關聯性](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)。
- - 請參閱 [Intune 資料倉儲模型](https://docs.microsoft.com/intune/reports-ref-data-model)。
+- 在 Power BI 文件中深入了解在 Power BI Desktop [建立和管理關聯性](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)。
+- 請參閱 [Intune 資料倉儲模型](https://docs.microsoft.com/intune/reports-ref-data-model)。

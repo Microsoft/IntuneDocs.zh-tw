@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735743"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354479"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>針對 Intune On-Premises Exchange Connector 進行疑難排解
 
@@ -51,5 +51,5 @@ ms.locfileid: "67735743"
 - 若要取得信箱 SMTP 位址的清單，可使用 Get-Mailbox -Identity user | select emailaddresses | fl
 - 若要取得有關裝置存取狀態的詳細資訊，可使用 Get-CASMailbox <upn> | fl
 
-### <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>後續步驟
 如果這項資訊對您沒有幫助，您也可以[取得 Microsoft Intune 支援](get-support.md)。

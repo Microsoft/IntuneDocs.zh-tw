@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044516"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353547"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
@@ -49,7 +49,7 @@ ms.locfileid: "67044516"
 |**健康情況證明**|無法使用|可用|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows 電腦管理的優點
+## <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows 電腦管理的優點
 使用最新行動裝置管理的 Windows 電腦管理具有下列優點：
 - **延展性** - MDM 管理可隨著 Intune 雲端管理而延展。 Intune 軟體用戶端的上限為 7000 部電腦。
 - **簡化** - 使用作業系統隨附的最新管理功能，而無需依賴於下載的軟體用戶端
