@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: '稽核, 匯出, 刪除'
               href: privacy-data-audit-export-delete.md
+        - name: 加密裝置
+          href: encrypt-devices.md
         - name: 條件式存取
           href: conditional-access.md
           items:
