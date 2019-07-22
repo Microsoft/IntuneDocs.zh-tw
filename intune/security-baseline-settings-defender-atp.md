@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549133"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354443"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
 檢視 Microsoft Intune 支援的 Microsoft Defender 進階威脅防護 (先前稱為 Windows Defender 進階威脅防護) 基準設定。 進階威脅防護 (ATP) 基準預設值代表 ATP 建議的設定，可能不符合其他安全性基準的基準預設值。  
 
-  當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用 Microsoft Defender 進階威脅防護基準。
+當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用 Microsoft Defender 進階威脅防護基準。 
 
-
+此基準已針對實體裝置進行優化, 目前不建議用於虛擬機器 (Vm) 或 VDI 端點。 某些基準設定可能會影響虛擬化環境上的遠端互動式會話。 如需詳細資訊, 請參閱 Windows 檔中[的將合規性提升至 Microsoft DEFENDER ATP 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ ms.locfileid: "67549133"
 
   針對 BitLocker 抽取式磁碟機原則，請設定下列設定：
 
-    - **寫入存取需要加密**  
-      **預設值**：是
+  - **寫入存取需要加密**  
+    **預設值**：是
 
-    - **加密方法**  
-      **預設值**：AES 128 位元 CBC
+  - **加密方法**  
+    **預設值**：AES 128 位元 CBC
 
 - **BitLocker 固定磁碟機原則**  
   此原則的值決定 BitLocker 用於固定式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。
 
   針對 BitLocker 抽取式磁碟機原則，請設定下列設定：
 
-    - **寫入存取需要加密**  
-      **預設值**：是
+  - **寫入存取需要加密**  
+    **預設值**：是
 
-    - **加密方法**  
-      **預設值**：AES 128 位元 XTS
+  - **加密方法**  
+    **預設值**：AES 128 位元 XTS
 
 - **BitLocker 系統磁碟機原則**  
   此原則的值決定 BitLocker 用於檔案系統磁碟機加密的加密強度。 企業可能想要控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。  

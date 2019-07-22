@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648846"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313780"
 ---
-# <a name="reference-for-intune-management-extension"></a>Intune 管理延伸模組的參考
+# <a name="reference-for-intune-management-extensions"></a>Intune 管理延伸模組的參考
 
-**IntuneManagementExtension** 類別包含的行動裝置實體，可追蹤下列資訊：
+**intuneManagementExtensions** 類別包含的行動裝置實體，可追蹤下列資訊：
 
-  - IntuneManagementExtension 的版本
-  - IntuneManagementExtension 的安裝狀態
+- IntuneManagementExtension 的版本
+- IntuneManagementExtension 的安裝狀態
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-**IntuneManagementExtensionVersion** 實體會列出 IntuneManagementExtension 使用的所有版本。
-
-| 屬性  | 說明 | 範例 |
-|---------|------------|--------|
-| ExtensionVersionKey |IntuneManagementExtension 版本的唯一識別碼。 | 1 |
-| ExtensionVersion |4 位數的版本號碼。 |1.0.2.0 |
-
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
-
-**IntuneManagementExtensionHealthState** 會列出 IntuneManagementExtension 所有可能的健全狀況狀態。
+**intuneManagementExtensionVersion** 實體會列出 intuneManagementExtensions 使用的所有版本。
 
 | 屬性  | 說明 | 範例 |
 |---------|------------|--------|
-| ExtensionStateKey |健全狀況狀態的唯一識別碼。 | 2 |
-| ExtensionState |IntuneManagementExtension 的健全狀況狀態。 | Healthy |
+| extensionVersionKey |intuneManagementExtensions 版本的唯一識別碼。 | 1 |
+| extensionVersion |4 位數的版本號碼。 |1.0.2.0 |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-**IntuneManagementExtension** 會列出每部 Windows 10 裝置每日的 IntuneManagementExtension 健全狀況。
+**intuneManagementExtensionHealthState** 會列出 intuneManagementExtensions 的所有可能健康情況狀態。
+
+| 屬性  | 說明 | 範例 |
+|---------|------------|--------|
+| extensionStateKey |健全狀況狀態的唯一識別碼。 | 2 |
+| extensionState |IntuneManagementExtension 的健全狀況狀態。 | Healthy |
+
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
+
+**intuneManagementExtension** 會列出每部 Windows 10 裝置每日的 IntuneManagementExtensions 健康情況。
 保留最近 60 天的資料。 
 
 
 |      屬性       |                         說明                         | 範例 |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               日期的唯一識別碼。                |   123   |
-|      TenantKey      |              租用戶的唯一識別碼。               |   456   |
-|      DeviceKey      |              裝置的唯一識別碼。               |   789   |
-| ExtensionVersionKey | IntuneManagementExtension 版本的唯一識別碼。 |    1    |
-|  ExtensionStateKey  |             健全狀況狀態的唯一識別碼。              |    2    |
+|       dateKey       |               日期的唯一識別碼。                |   123   |
+|      tenantKey      |              租用戶的唯一識別碼。               |   456   |
+|      deviceKey      |              裝置的唯一識別碼。               |   789   |
+| extensionVersionKey | intuneManagementExtension 版本的唯一識別碼。 |    1    |
+|  extensionStateKey  |             健全狀況狀態的唯一識別碼。              |    2    |
 
