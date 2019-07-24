@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412709"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354514"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>將記錄資料傳送至 Intune (預覽) 中的儲存體、事件中樞或 Log Analytics
 
@@ -174,43 +174,43 @@ Microsoft Intune 包含可提供您環境相關資訊的內建記錄。 **稽核
 
 請取得常見問題的解答，並閱讀 Azure 監視器中任何有關 Intune 記錄的已知問題。
 
-#### <a name="which-logs-are-included"></a>包含哪些記錄？
+### <a name="which-logs-are-included"></a>包含哪些記錄？
 
 稽核記錄和作業 (預覽) 記錄均可用來使用此功能進行路由傳送。
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>執行某個動作之後，對應的記錄何時會顯示於事件中樞？
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>執行某個動作之後，對應的記錄何時會顯示於事件中樞？
 
 記錄通常會在執行動作之後的數分鐘內顯示於事件中樞。 [什麼是 Azure 事件中樞？](https://docs.microsoft.com/azure/event-hubs/)會提供詳細的資訊。
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>執行某個動作之後，對應的記錄何時會顯示於儲存體帳戶？
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>執行某個動作之後，對應的記錄何時會顯示於儲存體帳戶？
 
 如果是 Azure 儲存體帳戶，動作執行之後會有 5 到 15 分鐘的延遲。
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>如果系統管理員變更診斷設定的保留期限，會發生什麼事？
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>如果系統管理員變更診斷設定的保留期限，會發生什麼事？
 
 新的保留原則會套用到變更之後所收集的記錄。 原則變更之前所收集的記錄不會受到影響。
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>儲存我的資料需要多少費用？
+### <a name="how-much-does-it-cost-to-store-my-data"></a>儲存我的資料需要多少費用？
 
 儲存體成本取決於您記錄的大小與您選擇的保留期間。 如需適用於租用戶的估計成本清單 (取決於所產生的記錄磁碟區)，請參閱[適用於活動記錄的儲存體大小](#storage-size-for-activity-logs) (在本文中)。
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>將我的資料串流處理到事件中樞需要多少費用？
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>將我的資料串流處理到事件中樞需要多少費用？
 
 串流處理的成本取決於您每分鐘收到的訊息數目。 如需如何根據訊息數目計算成本與估計成本的詳細資訊，請參閱[適用於活動記錄的事件中樞訊息](#event-hub-messages-for-activity-logs) (在本文中)。
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>如何將 Intune 稽核記錄與 SIEM 系統整合？
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>如何將 Intune 稽核記錄與 SIEM 系統整合？
 
 使用 Azure 監視器搭配事件中樞來將記錄串流處理到 SIEM 系統。 首先，[將記錄串流處理到事件中樞](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)。 然後，使用已設定的事件中樞來[設定您的 SIEM 工具](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub)。 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>目前有哪些產品支援 SIEM 工具？
+### <a name="what-siem-tools-are-currently-supported"></a>目前有哪些產品支援 SIEM 工具？
 
 目前支援 Azure 監視器的是 [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk)、QRadar 及 [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) \(英文\) (開啟新網站)。 如需連接器運作方式的詳細資訊，請參閱[將 Azure 監視資料串流至事件中樞以供外部工具取用](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)。
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>我可以在不使用外部 SIEM 工具的情況下，從事件中樞存取資料嗎？
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>我可以在不使用外部 SIEM 工具的情況下，從事件中樞存取資料嗎？
 
 是。 若要從自訂應用程式存取記錄，您可以使用[事件中樞 API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)。
 
-#### <a name="what-data-is-stored"></a>系統會儲存哪些資料？
+### <a name="what-data-is-stored"></a>系統會儲存哪些資料？
 
 Intune 不會儲存任何透過管線傳送的資料。 Intune 會透過租用戶的授權，將資料路由傳送至 Azure 監視器管線。 如需詳細資訊，請參閱 [Azure 監視器概觀](https://docs.microsoft.com/azure/azure-monitor/overview)。
 

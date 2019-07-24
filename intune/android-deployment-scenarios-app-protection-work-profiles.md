@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049908"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353800"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企業裝置上的應用程式保護原則與工作設定檔
 
@@ -58,7 +58,7 @@ Intune 應用程式保護原則 (APP) 是以使用者為目標的資料保護原
 
 本節會描述 APP-WE 和 Android 企業工作設定檔部署案例的重要特性。
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 APP-WE (無註冊應用程式防護原則) 部署會在應用程式 (而非裝置) 上定義原則。 在此案例中，裝置通常不是由 MDM 授權單位 (例如 Intune) 所註冊或管理。 為了保護應用程式及組織資料的存取權，系統管理員會使用可由 APP 管理的應用程式，並將資料保護原則套用到這些應用程式上。
 
@@ -71,7 +71,7 @@ APP-WE (無註冊應用程式防護原則) 部署會在應用程式 (而非裝�
 
 APP-WE 案例適用於想在其裝置上保持較少組織使用量，且不想要註冊 MDM 的使用者。 身為系統管理員，您仍然需要保護您的資料。 這些裝置並未受控。 因此常見的 MDM 工作和功能 (例如 WiFi、裝置 VPN 及憑證管理) 並非此部署案例的一部分。
 
-#### <a name="android-enterprise-work-profiles"></a>Android 企業工作設定檔
+### <a name="android-enterprise-work-profiles"></a>Android 企業工作設定檔
 
 工作設定檔是核心 Android 企業部署案例，也是唯一以 BYOD 使用情況為目標的案例。 工作設定檔是在 Android OS 層級建立的個別分割區，並可由 Intune 管理。
 
@@ -95,9 +95,9 @@ Intune APP 和工作設定檔為互補的技術，並可以一起或分開使用
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>針對工作設定檔隱藏 APP 原則
 
-您可能會需要支援具備多個裝置 (處於 APP-WE 案例的非受控裝置，以及具有工作設定檔的受控裝置) 的個別使用者。 
+您可能會需要支援具備多個裝置 (處於 APP-WE 案例的非受控裝置，以及具有工作設定檔的受控裝置) 的個別使用者。
 
-例如，您要求使用者在開啟公司應用程式時輸入 PIN。 根據裝置的不同，PIN 功能可能會由 APP 或工作設定檔負責處理。 針對 APP-WE 裝置，PIN 啟動行為是由 APP 強制執行。 針對工作設定檔裝置，您可以使用由 OS 所強制執行的裝置或工作設定檔 PIN。 若要達成此案例，請設定 APP 設定，來使它們「不會在」應用程式被部署到工作設定檔時套用。 如果您不這麼設定，裝置會提示使用者輸入 PIN，然後系統在 APP 層時又會再一次提示使用者輸入 PIN。
+例如，您要求使用者在開啟公司應用程式時輸入 PIN。 根據裝置的不同，PIN 功能可能會由 APP 或工作設定檔負責處理。 針對 APP-WE 裝置，PIN 啟動行為是由 APP 強制執行。 針對工作設定檔裝置，您可以使用由 OS 所強制執行的裝置或工作設定檔 PIN。 若要達成此案例，請設定 APP 設定，來使它們「不會在」  應用程式被部署到工作設定檔時套用。 如果您不這麼設定，裝置會提示使用者輸入 PIN，然後系統在 APP 層時又會再一次提示使用者輸入 PIN。
 
 ### <a name="control-multi-identity-behavior-in-work-profiles"></a>在工作設定檔中控制多重身分識別行為
 
@@ -111,13 +111,13 @@ Office 應用程式 (例如 Outlook 和 OneDrive) 具有「多重身分識別」
 
 在數個企業行動力案例中，使用 Intune APP 是最佳建議。
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>使用執行 Android 4.4-5.1 的較舊裝置
+### <a name="older-devices-running-android-44-51-are-being-used"></a>使用執行 Android 4.4-5.1 的較舊裝置
 
 正式來說，具有 Google 行動服務的所有 Android 5.0 或更新版本裝置都能支援工作設定檔，並能夠以該方式來管理。 不過，某些來自部分 OEM 的 Android 5.0 和 5.1 裝置並不支援工作設定檔。
 
 如果使用不支援工作設定檔的版本，若要針對裝置上的組織資料使用 DLP，您必須使用 Intune APP 功能。
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>不要 MDM、不要註冊、無法使用 Google 服務
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>不要 MDM、不要註冊、無法使用 Google 服務
 
 基於不同的原因，某些客戶並不願意接受任何形式的裝置管理 (包括工作設定檔管理)：
 

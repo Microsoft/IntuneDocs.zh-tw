@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883261"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354378"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
 
@@ -79,7 +79,7 @@ eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [
 4. 選取具有您啟用代碼的 CSV 檔案。
 5. 按一下 [確定]  以儲存您的變更。
 
-#### <a name="csv-file-requirements"></a>CSV 檔案需求
+### <a name="csv-file-requirements"></a>CSV 檔案需求
 
 使用具有啟用代碼的 csv 檔案時，請確定您或您的電信業者遵循下列需求：
 
@@ -89,7 +89,7 @@ eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [
 - 每個檔案應該專屬於單一電信業者，而且所有啟用代碼都會專屬於相同的計費方案。 Intune 會隨機將啟用代碼散發給目標裝置。 不保證哪部裝置會取得特定啟用代碼。
 - 一個 csv 檔案最多可匯入 1000 個啟用代碼。
 
-#### <a name="csv-file-example"></a>CSV 檔案範例
+### <a name="csv-file-example"></a>CSV 檔案範例
 
 1. csv 的第一個資料列和第一個資料格是電信業者 eSIM 啟用服務的 URL，稱為 SM-DP+ (訂閱管理員資料準備伺服器)。 此 URL 應該是不含任何逗號的完整網域名稱 (FQDN)。
 2. 第二個及後面所有資料列都是僅使用一次的唯一啟用代碼，其中包含兩個值：
@@ -129,7 +129,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 
 ## <a name="step-4-monitor-deployment"></a>步驟 4：監視部署
 
-#### <a name="review-the-deployment-status"></a>檢閱部署狀態
+### <a name="review-the-deployment-status"></a>檢閱部署狀態
 
 指派設定檔之後，您可以監視訂用帳戶集區的部署狀態。
 
@@ -138,7 +138,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 3. 選取 [裝置設定]   > [eSIM cellular profiles] \(eSIM 行動數據設定檔\)  。 您所有現有的 eSIM 行動數據訂用帳戶集區隨即列出。
 4. 選取訂用帳戶，然後檢閱 [部署狀態]  。
 
-#### <a name="check-the-profile-status"></a>檢查設定檔狀態
+### <a name="check-the-profile-status"></a>檢查設定檔狀態
 當您建立裝置設定檔之後，Intune 會提供圖形化圖表。 這些圖表顯示設定檔的狀態，例如它已經成功地指派給裝置，或者該設定檔顯示有衝突。
 
 1. 選取 [裝置設定]   > [eSIM cellular profiles] \(eSIM 行動數據設定檔\)  > 選取現有的訂用帳戶。
@@ -167,7 +167,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
     - **行動數據狀態**：由電信業者提供的狀態。 若要進行疑難排解，請連絡電信業者。
     - **上次簽入時間**：裝置上次與 Intune 通訊的日期
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>監視實際裝置上的 eSIM 設定檔詳細資料
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>監視實際裝置上的 eSIM 設定檔詳細資料
 
 1. 在您的裝置上，開啟 [設定]  > 移至 [網路和網際網路]  。
 2. 選取 [行動數據]   > [管理 eSIM 設定檔] 

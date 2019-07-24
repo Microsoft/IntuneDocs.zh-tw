@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045981"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354451"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 在 Windows 全像攝影版和 HoloLens 上管理及使用不同的裝置管理功能
 
@@ -105,23 +105,23 @@ Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功�
 
 在您的設定檔中，您可以使用 OMA-URI 來自訂一些設定、建立裝置限制，以及設定虛擬私人網路 (VPN) 和 Wi-Fi。
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[自訂裝置設定](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[自訂裝置設定](custom-settings-windows-holographic.md)
 
 若要設定 OMA-URI (開放行動通訊聯盟統一資源識別項) 設定，您可以在 Intune 中建立自訂設定檔。 請使用 OMA-URI 設定來控制您 Windows Holographic for Business 裝置上的各種不同功能，例如啟用 VPN 或檢查 Microsoft Update 上是否有更新。
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[設定 kiosk 模式](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[設定 kiosk 模式](kiosk-settings-holographic.md)
 
 使用 Intune 中可用的共用或來賓電腦功能，您可以設定 Windows Holographic for Business 裝置當做 kiosk 來執行。 這些裝置可以執行一個應用程式 (單一應用程式 kiosk 模式)，或執行多個應用程式 (多應用程式 kiosk 模式)。
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[裝置限制](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[裝置限制](device-restrictions-windows-holographic.md)
 
 裝置限制可讓您控制裝置上的各種不同設定和功能，包括要求密碼、從 [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) 安裝應用程式、啟用藍芽等。 這些限制會建立在 Intune 設定檔中。 您可以將此設定檔套用至多個執行 Windows Holographic for Business 的裝置。
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[設定 VPN](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[設定 VPN](vpn-settings-configure.md)
 
 虛擬私人網路 (VPN) 為您的使用者提供安全的公司網路遠端存取。 在 Intune 中，您可以建立 VPN 設定檔來包含執行 Windows Holographic for Business 之裝置的特定設定。 例如，您可以建立 VPN 設定檔，讓所有 Windows Holographic for Business 裝置都能使用 Citrix VPN 作為連線類型。
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[設定 Wi-Fi](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[設定 Wi-Fi](wi-fi-settings-configure.md)
 
 您也可以在 Intune 中建立 Wi-Fi 設定檔，以將無線網路設定指派給 Windows Holographic for Business 裝置。 當您指派 Wi-Fi 設定檔時，使用者無須進行任何網路設定，即可取得公司網路存取權。 例如，您可以建立 Windows Holographic for Business 裝置專用的 Wi-Fi 網路。
 

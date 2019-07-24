@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 9a1e370b65d8bfd7e61562347323bf1455dfe55b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713332"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354309"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -109,5 +109,5 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 首先，[建立和指派應用程式保護原則](app-protection-policies.md)到 iOS 應用程式。 如需如何測試應用程式保護原則的詳細資訊，請參閱[驗證應用程式保護原則](app-protection-policies-validate.md)。
 
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 [什麼是 Intune 應用程式保護原則](app-protection-policy.md)

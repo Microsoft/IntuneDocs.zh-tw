@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548761"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427110"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理作業系統版本
 在現代化行動和桌面平台上，主要更新、修補程式以及新版本的發行速度很快。 您有控制方法可以完全管理 Windows 上的更新和修補程式，但像是 iOS 和 Android 等其他平台則需要終端使用者參與此程序。  Microsoft Intune 具有可協助在不同平台之間組織作業系統版本管理結構的功能。
@@ -40,7 +40,7 @@ Intune MDM 註冊限制可讓您定義用戶端裝置需求，然後才允許裝
 1. 使用最低作業系統版本，來讓使用者維持在組織中的最新且支援的平台上。 
 2. 將最高作業系統保留為未指定 (無限制)，或將它設定為組織中的最後一個驗證版本，以允許提供時間進行新作業系統版本的內部測試。
 
-如需詳細資料，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)。
+如需詳細資料，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)。
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>作業系統版本報告和對 Intune MDM 裝置合規性原則的合規性
 Intune MDM 裝置合規性原則提供您下列工具： 
@@ -86,6 +86,6 @@ Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，
 ## <a name="next-steps"></a>後續步驟
 使用下列資源來管理組織中的作業系統版本： 
 
-- [設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
 - [開始使用裝置合規性](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [如何建立及部署應用程式保護原則](https://docs.microsoft.com/intune/app-protection-policies)

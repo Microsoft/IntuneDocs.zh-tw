@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572624"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354546"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -49,7 +49,7 @@ ms.locfileid: "67572624"
 
 ## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日當週  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 應用程式中的新功能
+### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune 應用程式中的新功能
 我們已在適用於 Android 的 Microsoft Intune 應用程式 (預覽) 中新增功能。 完全受控 Android 裝置上的使用者現在可以：  
 
 * 透過 Intune 公司入口網站或 Microsoft Intune 應用程式，檢視及管理已註冊的裝置。    
@@ -552,7 +552,7 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 > 下列影像為預覽，宣告的產品可能與展示版本不同。  
 
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune 的新功能](https://docs.microsoft.com/intune/whats-new)
