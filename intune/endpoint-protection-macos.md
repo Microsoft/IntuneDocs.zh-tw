@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341306"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467408"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 macOS Endpoint Protection 設定  
 
@@ -92,36 +92,24 @@ ms.locfileid: "68341306"
   - **修復金鑰類型**  
     系統會為裝置建立*個人金鑰*修復金鑰。 設定個人金鑰的下列設定。  
 
-     - **個人修復金鑰的位置**-指定簡短的訊息給使用者, 說明他們可以如何取得其個人修復金鑰。 此文字會插入至使用者在啟用 FileVault 時看到的訊息。  
+    - **個人修復金鑰的位置**-指定簡短的訊息給使用者, 說明他們可以在何處取得其個人修復金鑰。 當您忘記密碼時, 系統會將此文字插入使用者在 [登入] 畫面上看到的訊息。  
       
-     - **個人修復金鑰輪替**-指定裝置的個人修復金鑰要旋轉的頻率。 您可以選取 [**未設定**] 的預設值, 或 [ **1** ] 到 [ **12** ] 個月的值。  
+    - **個人修復金鑰輪替**-指定裝置的個人修復金鑰要旋轉的頻率。 您可以選取 [**未設定**] 的預設值, 或 [ **1** ] 到 [ **12** ] 個月的值。  
 
-  - **延遲 FileVault 直到登出** 
-    > [!NOTE]
-    > FileVault 的支援會受到限制, 直到7月發行完成幾天的推出。 在首度發行完成之前, 如果您設定 FileVault, 則必須將 [*延遲 FileVault* ] 設為 [登出], 才可**啟用**。   
-
-    FileVault 將不會啟用, 直到使用者登出為止。本機使用者或行動帳戶使用者將會收到提示, 讓您在登出或下一次登入時啟用 FileVault。  
+  - **登出時停用提示**  
+    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [停用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
     - **未設定**  
-    - **啟用**  
-    
+    - **停用**  
+
     **預設**：未設定  
 
+  - **允許略過的次數**  
+  設定使用者在需要 FileVault 以讓使用者登入之前, 可以忽略提示以啟用 FileVault 的次數。  
 
-
-    - **登出時停用提示**  
-      當使用者登出時, 請避免提示要求他們啟用 FileVault。  
-      - **未設定**  
-      - **啟用**  
-
-      **預設**：未設定  
-
-    - **允許略過的次數**  
-      設定使用者在需要 FileVault 以讓使用者登入之前, 可以忽略提示以啟用 FileVault 的次數。  
-
-      - **未設定**-在允許下一次登入之前, 裝置上的加密是必要的。  
-      -  **1**到**10** -允許使用者在裝置上要求加密之前, 略過1到10次的提示。  
-      - **無限制, 一律提示**-系統會提示使用者啟用 FileVault, 但不需要加密。  
+    - **未設定**-在允許下一次登入之前, 裝置上的加密是必要的。  
+    - **1**到**10** -允許使用者在裝置上要求加密之前, 略過1到10次的提示。  
+    - **無限制, 一律提示**-系統會提示使用者啟用 FileVault, 但不需要加密。  
  
-      **預設**：未設定  
+    **預設**：未設定  
 
 

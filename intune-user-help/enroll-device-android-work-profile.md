@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329461"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467321"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>使用 Android 工作設定檔註冊裝置
 
-註冊您個人的 Android 裝置，以存取公司電子郵件、應用程式及其他工作資料。 在註冊期間，您將會設定 Android 工作設定檔。 此設定檔會將您裝置上個人資料與您的工作資料分開。 您的公司僅支援管理工作設定檔，此設定檔是由工作檔案及資料組成。 您公司支援人員無法管理您裝置上的個人資料。 進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。  
+註冊您個人的 Android 裝置，以存取公司電子郵件、應用程式及其他工作資料。 在註冊期間，您將會設定 Android 工作設定檔。 此設定檔會將您裝置上個人資料與您的工作資料分開。 您的公司僅支援管理工作設定檔，此設定檔是由工作檔案及資料組成。 您公司支援人員無法管理您裝置上的個人資料。
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+進一步了解[當您建立工作設定檔時，會發生什麼事](what-happens-when-you-create-a-work-profile-android.md)。
 
 ## <a name="create-work-profile-and-enroll-device"></a>建立工作設定檔及註冊裝置
 

@@ -5,7 +5,7 @@ description: 適用於管理 Windows 10 的 Intune 安全性基準設定
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882302"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491898"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>適用於 Intune 的 MDM 安全性基準設定  
 
@@ -1773,7 +1773,12 @@ ms.locfileid: "67882302"
   **預設值**：是
 
 - **設定 Windows Hello 企業版**   
-  Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 的方法。 若您啟用或未設定此原則設定，裝置會佈建 Windows Hello 企業版。 若停用此原則設定，裝置不會為任何使用者佈建 Windows Hello 企業版。
+    Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 的方法。  
+
+  - 當設定為 *[是]* 時, 您會啟用此原則, 且裝置會布建 Windows Hello 企業版。  
+  - 當設定為 [*未*設定] 時, 基準不會影響裝置的原則設定。 這表示如果裝置上的 Windows Hello 企業版已停用, 它就會保持停用狀態。 如果已啟用, 則會保持啟用狀態。 
+
+  您無法透過此基準停用 Windows Hello 企業版。 您可以在設定[windows 註冊](windows-hello.md)時停用 Windows Hello 企業版, 或做為身分[識別保護](identity-protection-configure.md)裝置設定檔的一部分。  
 
   **預設值**：是
 
