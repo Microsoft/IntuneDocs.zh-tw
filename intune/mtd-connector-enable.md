@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 4dd77be45c21db53dd82322049d377ced247c4c7
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882741"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427350"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
 > [!NOTE] 
 > 此主題適用於所有 Mobile Threat Defense 合作夥伴。
 
-在 Mobile Threat Defense (MTD) 安裝期間，您已設定原則以在 MTD 合作夥伴主控台中分類威脅，且已在 Intune 中建立裝置相容性原則。 如果您已在 MTD 合作夥伴主控台中設定 Intune 連接器，現在可以在 Intune 中啟用 MTD 連線。
+在 Mobile Threat Defense (MTD) 安裝期間，您已設定原則以在 MTD 合作夥伴主控台中分類威脅，且已在 Intune 中建立裝置相容性原則。 如果您已在 MTD 夥伴主控台中設定 Intune 連接器，您現在可以啟用 MTD 合作夥伴應用程式的 MTD 連線。
+
+當您將新的應用程式整合到 Intune Mobile Threat Defense 並啟用連線時，Intune 會在 Azure Active Directory 中建立傳統條件式存取原則。 您整合的每個 MTD 應用程式 (例如 [Defender ATP](advanced-threat-protection.md) 或任何其他 [MTD 合作夥伴](mobile-threat-defense.md#mobile-threat-defense-partners))，都會建立新的傳統條件式存取原則。  這些原則可以忽略，但不應編輯、刪除或停用。
+
+適用於 MTD 應用程式的傳統條件式存取原則： 
+
+- 由 Intune MTD 用於要求裝置必須在 Azure AD 中註冊，如此其才能擁有裝置識別碼。 此識別碼為必要，以便裝置成功向 Intune 報告其狀態。  
+- 不同於您可能會建立用來協助管理 MTD 的條件式存取原則。
+- 根據預設，不會與您用於評估的其他條件式存取原則互動。  
+
+若要檢視傳統條件式存取原則，請前往 [Azure](https://portal.azure.com/#home) 中的 [Azure Active Directory]   > [條件式存取]   > [傳統原則]  。
+
 
 ## <a name="to-enable-the-mtd-connector"></a>啟用 MTD 連接器
 

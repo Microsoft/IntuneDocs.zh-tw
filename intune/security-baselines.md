@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851470"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353586"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -74,9 +74,12 @@ ms.locfileid: "67851470"
   (若要使用此基準，您的環境必須滿足使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的先決條件)  。
   - [預覽：Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
+  > [!NOTE]
+  > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (提高 Microsoft Defender ATP 安全性基準的合規性)。
+
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  
@@ -177,19 +180,19 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
 ## <a name="q--a"></a>問答集
 
-#### <a name="why-these-settings"></a>為什麼是這些設定？
+### <a name="why-these-settings"></a>為什麼是這些設定？
 
 Microsoft 安全性小組擁有多年直接與 Windows 開發人員和安全性社群合作的體驗，從而提供了這些建議。 此基準中的設定均被視為最相關的安全性相關設定選項。 在每個新的 Windows 組建中，該小組都會根據新發行的功能來調整建議。
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>對於群組原則與 Intune 之 Windows 安全性基準的建議有任何差異嗎Intune？
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>對於群組原則與 Intune 之 Windows 安全性基準的建議有任何差異嗎Intune？
 
 同一個 Microsoft 安全性小組已選擇並組織了每個基準的設定。 Intune 包含 Intune 安全性基準中的所有相關設定。 群組原則基準中有一些設定是內部部署網域控制站特有的。 這些設定都會從 Intune 的建議中排除。 所有的其他設定都一樣。
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 安全性基準符合 CIS 或 NSIT 的規範嗎？
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 安全性基準符合 CIS 或 NSIT 的規範嗎？
 
 嚴格來說，不符合。 Microsoft 安全性小組會諮詢 CIS 之類的組織來編譯其建議。 但是，在「符合 CIS 規範」與 Microsoft 基準之間沒有一對一的對應關係。
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft 的安全性基準具備哪些認證？ 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft 的安全性基準具備哪些認證？ 
 
 - Microsoft 會持續發佈適用於群組原則 (GPO) 的安全性基準和[安全性合規性工具組](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) \(部分機器翻譯\)，而這已行之有年。 許多組織都會使用這些基準。 這些基準中的建議均來自 Microsoft 安全性小組與企業客戶和外部機構的合作，包括美國國防部 (DoD)、美國國家標準技術研究所 (NIST) 及其他更多組織。 我們會與這些組織分享我們的建議和基準。 這些組織也擁有自己的建議，而這些建議均會密切地反映出 Microsoft 的建議。 隨著行動裝置管理 (MDM) 持續成長到雲端，Microsoft 建立了這些群組原則基準的對等 MDM 建議。 這些額外的基準均內建於 Microsoft Intune，並包含關於遵循 (或未遵循) 基準之使用者、群組和裝置的合規性報告。
 
@@ -202,4 +205,5 @@ Microsoft 安全性小組擁有多年直接與 Windows 開發人員和安全性�
   - [MDM 安全性基準](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
-- 檢查狀態並監視[基準和設定檔](security-baselines-monitor.md)。
+- 檢查狀態並監視[基準和設定檔](security-baselines-monitor.md)
+

@@ -15,24 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1c5463406d74b9fcb96d4236d656ad33509a56
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f9819adf100cbe56147f22629e1311e7e3b376e9
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049717"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374888"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 組態設定 
 
 使用設定原則，設定在 iOS 和 Android 裝置上執行的 Microsoft Outlook 設定。 
 
-若要為受控 iOS 裝置建立應用程式設定原則，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。 若要為受控 Android 裝置建立應用程式設定原則，請參閱[為受控 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。 
+針對已註冊的裝置：
+- 若要為受控 iOS 裝置建立應用程式設定原則，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。 
+- 若要為受控 Android 裝置建立應用程式設定原則，請參閱[為受控 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。 
+
+針對未註冊的裝置，請參閱[在不註冊裝置情況下新增受控應用程式的應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)，為 iOS 與 Android 版 Outlook 建立應用程式設定原則。
 
 ## <a name="configuration-settings"></a>組態設定
 
-在 Intune 中新增設定原則時，您可以指定設定，以便在 iOS 和 Android 上設定 Microsoft Outlook。 在 [組態設定] 窗格中，您可以指定電子郵件帳戶設定，以及設定應用程式特有的設定。 此外，您可以設定這些設定和 (或) 使用名稱/值組。
+在 Intune 中新增設定原則時，您可以指定設定，以便設定 iOS 與 Android 版 Microsoft Outlook。 在 [組態設定] 窗格中，您可以指定電子郵件帳戶設定，以及設定應用程式特有的設定。
 
-如需 Microsoft Intune 中適用於 iOS 和 Android 裝置的 Outlook 帳戶設定資訊和程序步驟，請參閱[部署適用於 iOS 和 Android 的 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(機器翻譯\)。
+如需 iOS 與 Android 版 Outlook 所支援應用程式組態設定的特定程序步驟和詳細文件，請參閱 [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (部署 iOS 與 Android 版 Outlook 應用程式組態設定)。
 
 ## <a name="next-steps"></a>後續步驟
 

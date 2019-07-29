@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885156"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427079"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性  
 
 Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 和 Microsoft Intune 能夠一起運作以協助防止安全性缺口，並協助限制因缺口而在組織內所造成的影響。
 
-此功能適用於：Windows 10 裝置
+本功能適用於：Windows 10 裝置
 
 例如，有人傳送內嵌惡意程式碼的 Word 附件給組織內的使用者。 使用者開啟該附件並啟用內容。 權限提升的攻擊將會展開，而來自遠端電腦的攻擊者將會擁有受害者裝置的系統管理員權限。 攻擊者接著會從遠端存取該使用者的其他裝置。
 
@@ -34,15 +34,15 @@ Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 和 Microsoft Int
 
 Microsoft Defender ATP 可以解決此類安全性事件。 Microsoft Defender 資訊安全中心會將該裝置報告為「高風險」，並包含可疑活動的詳細報表。 在我們的範例中，Microsoft Defender ATP 會偵測到裝置執行不正常的程式碼、發生處理序權限提升、被插入惡意程式碼，並發出可疑遠端殼層。 Microsoft Defender ATP 接著會提供能降低威脅的選項。
 
-您可以使用 Intune 建立合規性政策，以判斷可接受的風險層級。 如果裝置超過此風險，該裝置將會變成不符合規範。 透過搭配 Azure Active Directory (AD) 條件式存取，系統將會封鎖該使用者存取公司資源。
+您可以使用 Intune 建立合規性原則，以判斷可接受的風險層級。 如果裝置超過此風險，該裝置將會變成不符合規範。 透過搭配 Azure Active Directory (AD) 條件式存取，系統將會封鎖該使用者存取公司資源。
 
-此文章將示範如何：
+本文將示範下列項目的作法：
 
 - 在 Microsoft Defender 資訊安全中心中啟用 Intune，並在 Intune 中啟用 Microsoft Defender ATP。 這些工作會在 Intune 與 Microsoft Defender ATP 之間建立服務對服務連線。 此連線可讓 Microsoft Defender ATP 撰寫針對您 Intune 裝置的電腦風險。
-- 在 Intune 中建立合規性政策。
+- 在 Intune 中建立合規性原則。
 - 根據裝置的威脅等級，在裝置上的 Azure Active Directory (AD) 中啟用條件式存取。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要搭配 Intune 使用 Microsoft Defender ATP，請確認下列項目已設定且可供使用：
 
@@ -52,6 +52,17 @@ Microsoft Defender ATP 可以解決此類安全性事件。 Microsoft Defender �
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中啟用 Microsoft Defender ATP
 
+當您將新的應用程式整合到 Intune Mobile Threat Defense 並啟用連線時，Intune 會在 Azure Active Directory 中建立傳統條件式存取原則。 您整合的每個 MTD 應用程式 (例如 [Defender ATP](advanced-threat-protection.md) 或任何其他 [MTD 合作夥伴](mobile-threat-defense.md#mobile-threat-defense-partners))，都會建立新的傳統條件式存取原則。  這些原則可以忽略，但不應編輯、刪除或停用。
+
+適用於 MTD 應用程式的傳統條件式存取原則： 
+
+- 由 Intune MTD 用於要求裝置必須在 Azure AD 中註冊，如此其才能擁有裝置識別碼。 此識別碼為必要，以便裝置成功向 Intune 報告其狀態。  
+- 不同於您可能會建立用來協助管理 MTD 的條件式存取原則。
+- 根據預設，不會與您用於評估的其他條件式存取原則互動。  
+
+若要檢視傳統條件式存取原則，請前往 [Azure](https://portal.azure.com/#home) 中的 [Azure Active Directory]   > [條件式存取]   > [傳統原則]  。
+
+### <a name="to-enable-defender-atp"></a>啟用 Defender ATP
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置合規性]   > [Microsoft Defender ATP]  ，然後選取 [連接器設定]  下的 [開啟 Microsoft Defender 資訊安全中心]  。
 
@@ -101,8 +112,8 @@ Microsoft Defender ATP 包含上線設定套件，該套件會與 [Microsoft Def
 
 7. 選取 [確定]  ，然後選取 [建立]  以儲存您的變更，這會建立設定檔。
 
-## <a name="create-the-compliance-policy"></a>建立合規性政策
-合規性政策會決定裝置上可接受的風險層級。
+## <a name="create-the-compliance-policy"></a>建立合規性原則
+合規性原則會決定裝置上可接受的風險層級。
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置合規性]   > [原則]   > [建立原則]  。
@@ -110,9 +121,9 @@ Microsoft Defender ATP 包含上線設定套件，該套件會與 [Microsoft Def
 4. 在 [平台]  中，選取 [Windows 10 及更新版本]  。
 5. 在 [Microsoft Defender ATP]  設定中，將 [裝置必須等於或低於電腦風險分數]  設定為您偏好的層級。 威脅等級分類是[由 Windows Defender ATP 所決定的](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue) \(部分機器翻譯\)。
 
-   - **清除**：這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不符合規範。 (Microsoft Defender ATP 使用值「安全」  。)
+   - **清除**：這個層級最安全。 裝置不能在具有任何現有威脅的情況下，繼續存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。 (Microsoft Defender ATP 使用值「安全」  。)
    - **低**︰裝置只有在僅存在低層級威脅的情況下才能符合規範。 具有中或高威脅等級的裝置不符合規範。
-   - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不符合規範。
+   - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
    - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置都會被評估為符合規範。
 
 6. 選取 [確定]  ，然後選取 [建立]  以儲存您的變更 (並建立原則)。
@@ -160,5 +171,5 @@ Microsoft Defender ATP 包含上線設定套件，該套件會與 [Microsoft Def
 [Microsoft Defender ATP 條件式存取](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access) \(部分機器翻譯\)  
 [Microsoft Defender ATP 風險儀表板](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) \(部分機器翻譯\)  
 
-[裝置合規性政策入門](device-compliance-get-started.md)  
+[裝置合規性原則入門](device-compliance-get-started.md)  
 [Azure AD 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735708"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374838"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>設定適用於 Android Enterprise 的 Microsoft Managed Home Screen 應用程式
 
@@ -89,7 +89,7 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 | 結束鎖定工作模式的密碼 | 字串 |   | 輸入 4-6 位數的代碼，用來暫時退出鎖定工作模式，以進行疑難排解。 |
 | 顯示 Wi-Fi 設定 | bool | FALSE | 將此設定改為 `True` 可讓終端使用者開啟或關閉 Wi-Fi，或連線到其他 Wi-Fi 網路。  |
 | 顯示藍牙設定 | bool | FALSE | 將此設定改為 `True`，可讓終端使用者開啟或關閉藍牙，以及連線到其他具藍牙功能的裝置。   |
-| 資料夾中的應用程式會依名稱排序 | bool | TRUE | 將此設定切換為 `False` 會允許資料夾中的項目以其被指定的順序顯示。 否則，它們將會依字母順序顯示。   |
+| 資料夾中的應用程式會依名稱排序 | bool | TRUE | 將此設定切換為 `False` 會允許資料夾中的項目以其被指定的順序顯示。 否則，它們將會在資料夾中依字母順序顯示。   |
 | 已啟用應用程式順序 | bool | FALSE | 將此設定切換為 `True` 會允許設定 Managed Home Screen 上應用程式、網頁連結及資料夾的順序。 啟用後，請使用 **app_order**來設定排序。   |
 | 應用程式順序 | bundleArray | FALSE | 可讓您指定 Managed Home Screen 上應用程式、網頁連結及資料夾的順序。 若要使用此設定，必須啟用 [鎖定主畫面]  ，定義 [設定格線間距]  ，並將 [已啟用應用程式順序]  設定為 `True`。   |
 
@@ -383,6 +383,9 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
     ]
 }
 ```
+
+## <a name="googles-android-device-policy-app"></a>Google 的 Android Device Policy 應用程式
+Managed Home Screen 應用程式現在可讓您存取 Google 的 Android Device Policy 應用程式。 Managed Home Screen 應用程式是用於裝置的自訂啟動器，這些裝置已在 Intune 中註冊為使用多應用程式 kiosk 模式的 Android Enterprise (AE) 專用裝置。 您可以存取 Android Device Policy 應用程式，或引導使用者存取 Android Device Policy 應用程式，以用以支援和偵錯。 當裝置在 Managed Home Screen 中註冊和鎖定時，即可使用這項啟動功能。 不需要其他安裝即可使用這項功能。
 
 ## <a name="next-steps"></a>後續步驟
 

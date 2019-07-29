@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649109"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387324"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
+
+Autopilot 部署類型有四種：[自我部署模式](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying)適用於 kiosk、數位告示板或共用裝置；[White Glove ](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)可讓合作夥伴或 IT 員工預先佈建 Windows 10 PC，讓其完整設定且備妥用於商業用途；[適用於現有裝置的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) 可讓您輕鬆地將最新版 Windows 10 部署至現有裝置；[使用者驅動模式](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven)適用於傳統使用者。 
 
 
 ## <a name="prerequisites"></a>必要條件

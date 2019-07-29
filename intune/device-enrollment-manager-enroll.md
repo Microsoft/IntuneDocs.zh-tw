@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883541"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427285"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
-您可以使用裝置註冊管理員 (DEM) 帳戶，向單一 Azure Active Directory 帳戶註冊多達 1,000 部行動裝置。 DEM 是 Intune 權限，可套用至 AAD 使用者帳戶，並讓使用者註冊多達 1,000 部裝置。 如果裝置在交給裝置使用者之前就已註冊並備妥，則 DEM 帳戶會很有用。
+您可以使用裝置註冊管理員 (DEM) 帳戶，向單一 Azure Active Directory 帳戶註冊多達 1,000 部行動裝置。 DEM 是 Intune 權限，可套用至 AAD 使用者帳戶，並讓使用者註冊多達 1,000 部裝置。 如果裝置在交給裝置使用者之前就已註冊並備妥，則 DEM 帳戶會很有用。 根據設計，Microsoft Intune 中有最多 25 個裝置註冊管理員 (DEM) 帳戶的限制。
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>以 DEM 帳戶註冊裝置的限制
 

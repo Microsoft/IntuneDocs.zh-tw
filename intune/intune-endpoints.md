@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 026536b1f0c059808220273ccffefacc28b80ae0
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
+ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031605"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411596"
 ---
-# <a name="network-endpoints-for-microsoft-intune"></a>Microsoft intune 的網路端點
+# <a name="network-endpoints-for-microsoft-intune"></a>Microsoft intune 的網路端點  
 
 此頁面會列出 Intune 部署中 Proxy 設定所需要的 IP 位址和連接埠設定。
 
 Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，例如伺服器或閘道。
+
+## <a name="access-for-managed-devices"></a>受控裝置的存取權  
 
 若要管理位於防火牆和 Proxy 伺服器後方的裝置，您必須啟用 Intune 的通訊功能。
 
@@ -45,8 +47,8 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 
 下表列出 Intune 用戶端存取的連接埠和服務：
 
-|**網域**|**IP 位址**|
-|---------------------|-----------|
+|Domains    |IP 位址      |
+|-----------|----------------|
 |login.microsoftonline.com | 更多資訊請參閱 [Office 365 URL 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
@@ -80,9 +82,9 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
+## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell 指令碼和 Win32 應用程式的網路需求  
 
-### <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>Powershell 指令碼和 Win32 應用程式的網路需求
-如果您使用 Intune 部署 Powershell 指令碼或 Win32 應用程式，您也需要將存取權授與您租用戶目前所在的端點。
+如果您使用 Intune 部署 PowerShell 指令碼或 Win32 應用程式，您也需要將存取權授與您租用戶目前所在的端點。
 
 |ASU | 儲存體名稱 | CDN |
 | --- | --- |--- |
@@ -108,28 +110,31 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-### <a name="windows-push-notification-services-wns"></a>Windows 推播通知服務 (WNS)
-針對使用行動裝置管理 (MDM) 的受 Intune 管理 Windows 裝置，裝置動作和其他立即的活動都需要使用 Windows 推播通知服務 (WNS)。 如需詳細資訊，請參閱[透過企業防火牆允許 Windows 通知流量](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)。    
+## <a name="windows-push-notification-services-wns"></a>Windows 推播通知服務 (WNS)  
 
-### <a name="delivery-optimization-port-requirements"></a>傳遞最佳化的連接埠需求
+針對使用行動裝置管理 (MDM) 的受 Intune 管理 Windows 裝置，裝置動作和其他立即的活動都需要使用 Windows 推播通知服務 (WNS)。 如需詳細資訊，請參閱[透過企業防火牆允許 Windows 通知流量](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)。  
 
-#### <a name="port-requirements"></a>連接埠需求
+## <a name="delivery-optimization-port-requirements"></a>傳遞最佳化的連接埠需求  
+
+### <a name="port-requirements"></a>連接埠需求  
+
 針對對等流量，傳遞最佳化會對 TCP/IP 使用 7680，或對 NAT 周遊 (或 Teredo) 使用 3544。 針對用戶端服務通訊，它會在連接埠 80/443 上使用 HTTP 或 HTTPS。
 
-#### <a name="proxy-requirements"></a>Proxy 需求
+### <a name="proxy-requirements"></a>Proxy 需求  
+
 若要使用傳遞最佳化，您必須允許位元組範圍要求。 如需詳細資訊，請參閱 [Windows Update 的 Proxy 需求](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting)。
 
-#### <a name="firewall-requirements"></a>防火牆需求
+### <a name="firewall-requirements"></a>防火牆需求  
+
 允許下列主機名稱通過您的防火牆，以支援傳遞最佳化。
 用戶端與傳遞最佳化雲端服務間的通訊：
-- *.do.dsp.mp.microsoft.com
+- \*.do.dsp.mp.microsoft.com
 
 傳遞最佳化中繼資料：
-- *.dl.delivery.mp.microsoft.com
-- *.emdl.ws.microsoft.com
+- \*.dl.delivery.mp.microsoft.com
+- \*.emdl.ws.microsoft.com
 
-### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
-
+## <a name="apple-device-network-information"></a>Apple 裝置網路資訊  
 
 |用途|主機名稱 (IP 位址/子網路)|通訊協定|Port|
 |-----|--------|------|-------|
@@ -137,4 +142,38 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 |與 APNS 伺服器通訊|#-courier.push.apple.com<br>'#' 是從 0 至 50 的隨機數字。|    TCP     |  5223 和 443  |
 |各種功能，包括存取全球資訊網、iTunes store、macOS app store、iCloud、Messaging 等。 |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 或 443   |
 
-如需詳細資訊，請參閱 Apple 提供的 [Apple 軟體產品使用的 TCP 和 UDP 連接埠](https://support.apple.com/en-us/HT202944) \(英文\)、[關於 macOS、iOS 和 iTunes 伺服器主機連線與 iTunes 背景處理序](https://support.apple.com/en-us/HT201999) \(英文\)，以及[如果您的 macOS 和 iOS 用戶端未取得 Apple 推播通知](https://support.apple.com/en-us/HT203609) \(英文\)。
+如需詳細資訊，請參閱 Apple 提供的 [Apple 軟體產品使用的 TCP 和 UDP 連接埠](https://support.apple.com/en-us/HT202944) \(英文\)、[關於 macOS、iOS 和 iTunes 伺服器主機連線與 iTunes 背景處理序](https://support.apple.com/en-us/HT201999) \(英文\)，以及[如果您的 macOS 和 iOS 用戶端未取得 Apple 推播通知](https://support.apple.com/en-us/HT203609) \(英文\)。  
+
+## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connec設為 [https]r  
+
+裝載 Microsoft Intune 憑證連接器的伺服器，必須能夠使用 **TCP** 連接埠 **443** 存取下表所列的公用 IP 位置。  
+
+|Domains                             |IP 位址       |
+|---------------|--------------------------------------|
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com|13.76.177.110  |
+|fef.msua06.manage.microsoft.com  |13.78.185.97  |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |13.82.96.212  |
+|fef.amsua0502.manage.microsoft.com |13.85.68.142   |
+| portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |20.188.107.228|
+|fef.msua04.manage.microsoft.com  |23.96.112.28  |
+|fef.amsua0402.manage.microsoft.com|40.69.157.122    |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |40.83.123.72    |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com |51.144.161.187 |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com  |52.138.193.149  |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.160.70.20  |
+|fef.amsua0602.manage.microsoft.com |52.161.28.64   |
+|fef.amsua0202.manage.microsoft.com |52.165.165.17   |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.168.54.64   |
+|r.manage.microsoft.com |52.169.9.87    |
+|.manage.microsoft.com  |52.174.26.23   |
+|portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |52.175.12.209  |
+|fef.msua07.manage.microsoft.com |52.175.208.218     |
+|fef.msua02.manage.microsoft.com |52.177.194.236    |
+|sts.manage.microsoft.com        |104.40.82.191    |
+|fef.msua01.manage.microsoft.com |138.91.243.97     |
+|fef.msua05.manage.microsoft.com |138.91.244.151     |
+
+
+
+
+
