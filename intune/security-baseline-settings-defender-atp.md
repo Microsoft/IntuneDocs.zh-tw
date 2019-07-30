@@ -5,7 +5,7 @@ description: 由 Intune 支援、用於管理 Microsoft Defender 進階威脅防
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354443"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491921"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "68354443"
 
 當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用 Microsoft Defender 進階威脅防護基準。 
 
-此基準已針對實體裝置進行優化, 目前不建議用於虛擬機器 (Vm) 或 VDI 端點。 某些基準設定可能會影響虛擬化環境上的遠端互動式會話。 如需詳細資訊, 請參閱 Windows 檔中[的將合規性提升至 Microsoft DEFENDER ATP 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
+此基準已針對實體裝置進行優化, 目前不建議用於虛擬機器 (Vm) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。 如需詳細資訊，請參閱 Windows 文件中的[提高 Microsoft Defender ATP 安全性基準的合規性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) \(英文\)。
 
 
 > [!NOTE]  
@@ -292,7 +292,7 @@ ms.locfileid: "68354443"
 
   **預設值**：稽核模式
 
-## <a name="web-network-protection"></a>Web 網路保護  
+## <a name="web--network-protection"></a>Web 與網路保護  
 
 - **網路保護類型**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - 此原則可讓您開啟 Windows Defender 惡意探索防護中的網路保護。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。  
@@ -600,6 +600,13 @@ ms.locfileid: "68354443"
 
 - **設定 Windows Hello 企業版** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 的方法。  
+
+  - 當設定為 *[是]* 時, 您會啟用此原則, 且裝置會布建 Windows Hello 企業版。  
+  - 當設定為 [*未*設定] 時, 基準不會影響裝置的原則設定。 這表示如果裝置上的 Windows Hello 企業版已停用, 它就會保持停用狀態。 如果已啟用, 則會保持啟用狀態。 
+
+  您無法透過此基準停用 Windows Hello 企業版。 您可以在設定[windows 註冊](windows-hello.md)時停用 Windows Hello 企業版, 或做為身分[識別保護](identity-protection-configure.md)裝置設定檔的一部分。  
+
+Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 的方法。  
 
   若您啟用或未設定此原則設定，裝置會佈建 Windows Hello 企業版。 若停用此原則設定，裝置不會為任何使用者佈建 Windows Hello 企業版。
 

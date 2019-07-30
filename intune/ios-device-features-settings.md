@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中的 iOS 裝置功能設定 - Azure | Microsoft Docs
-description: 了解 Microsoft Intune 中針對 AirPrint、主畫面配置、應用程式通知、共用裝置、單一登入及網路內容篩選器設定設定來設定 iOS 裝置的設定。 在裝置組態設定檔中使用這些設定，以設定 iOS 裝置來在貴組織中使用這些不同的 Apple 功能。
+description: 了解 Microsoft Intune 中針對 AirPrint、主畫面配置、應用程式通知、共用裝置、單一登入及網路內容篩選器設定設定來設定 iOS 裝置的設定。 在裝置組態設定檔中使用這些設定，以設定 iOS 裝置來在貴組織中使用這些 Apple 功能。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413815"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387103"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>要在 Intune 中使用常見 iOS 功能用的 iOS 裝置設定
 
@@ -41,7 +41,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 - **連接埠**：輸入 AirPrint 目的地的接聽連接埠。 如果將此屬性留白，AirPrint 就會使用預設連接埠。 適用於 iOS 11.0 和更新版本。
 - **TLS**：選擇 [啟用]  以保護 AirPrint 與傳輸層安全性 (TLS) 的連線。 適用於 iOS 11.0 和更新版本。
 
-[新增]  可新增 AirPrint 伺服器至清單中。 您可以新增許多 AirPrint 伺服器。 您也可以 [匯入]  含有此資訊的逗點分隔檔 (.csv)。 建立清單之後，您也可以 [匯出]  您的 AirPrint 伺服器清單。
+[新增]  可新增 AirPrint 伺服器至清單中。 可以新增許多 AirPrint 伺服器。 您也可以 [匯入]  含有此資訊的逗點分隔檔 (.csv)。 [**匯出**] 會建立您所新增的 AirPrint 伺服器清單。
 
 選取 [確定]  以儲存您的清單。
 
@@ -195,7 +195,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
   裝置權杖也可用來在這些欄位中新增裝置特定資訊。 例如，若要顯示序號，請輸入 `Serial Number: {{serialnumber}}`。 在鎖定畫面上，此文字顯示類似於 `Serial Number 123456789ABC`。 輸入變數時，請務必使用大括弧 `{{ }}`。 [應用程式設定權杖](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可以使用的變數清單。 您也可以使用 `deviceName` 或任何其他的裝置特定值。
 
   > [!NOTE]
-  > 變數不在 UI 中，驗證，而且會區分大小寫。 因此，您可能會看到儲存之設定檔含有不正確的輸入。 例如，如果您輸入 `{{DeviceID}}` 而不是 `{{deviceid}}`，則會顯示常值字串而不是裝置的唯一識別碼。 請務必輸入正確的資訊。
+  > 變數不會在 UI 中進行驗證, 而且會區分大小寫。 因此，您可能會看到儲存之設定檔含有不正確的輸入。 例如，如果您輸入 `{{DeviceID}}` 而不是 `{{deviceid}}`，則會顯示常值字串而不是裝置的唯一識別碼。 請務必輸入正確的資訊。
 
 按一下 [確定]  以儲存您的變更。
 
@@ -253,7 +253,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 
 ## <a name="web-content-filter-settings"></a>網路內容篩選器設定
 
-這些設定能控制 iOS 裝置上的瀏覽器 URL 存取。
+這些設定能控制受監督 iOS 裝置上的瀏覽器 URL 存取。
 
 - **篩選類型**：選擇以允許特定網站。 選項包括：
 

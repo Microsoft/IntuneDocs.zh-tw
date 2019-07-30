@@ -4,7 +4,7 @@ description: Microsoft 365 企業版隨附 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884260"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427301"
 ---
 # <a name="what-is-device-management"></a>什麼是裝置管理？ 
 
@@ -59,7 +59,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 - **Windows Defender** 包含許多安全性功能，可協助保護 Windows 10 裝置。 例如，Intune 與 Windows Defender 搭配使用，您可以： 
 
   - 啟用 [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以尋找行動裝置上檔案和應用程式中的可疑活動。 
-  - 使用 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) 來協助防止行動裝置上的安全性缺口。 此外，您也可以封鎖使用者存取公司資源，協助限制安全性缺口的影響。
+  - 使用 [Microsoft Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) 來協助防止行動裝置上的安全性缺口。 此外，您也可以封鎖使用者存取公司資源，協助限制安全性缺口的影響。
 
 - **條件式存取**是 Azure Active Directory 功能，並與 Intune 完美整合。 使用[條件式存取](https://docs.microsoft.com/intune/conditional-access)，確保只有符合規範的裝置才能存取電子郵件、SharePoint 與其他應用程式。 
 
@@ -73,11 +73,11 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 當您設定 Intune 時，您也可以選擇只在 Azure 入口網站中管理裝置，或同時使用 Intune 和 Microsoft 365 來管理裝置。 [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) (在 Azure 入口網站中將行動裝置管理移轉到 Intune) 是 Microsoft IT 案例研究。 在此案例研究中，了解 Microsoft IT 如何選擇現代化裝置管理方法，並閱讀學習到的課程。
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>使用裝置管理儀表板簡化 IT 工作
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>使用裝置管理系統管理中心簡化 IT 工作
 
-[裝置管理儀表板](https://devicemanagement.portal.azure.com/)是您一次管理及完成行動裝置工作的位置。 此儀表板包含用於裝置管理的服務 (包括 Intune 和 Azure Active Directory)，以及用於管理用戶端應用程式的服務。 
+[裝置管理系統管理中心](https://devicemanagement.portal.azure.com/)是您一次管理及完成行動裝置工作的位置。 此工作區包含用於裝置管理的服務 (包括 Intune 與 Azure Active Directory)，以及用於管理用戶端應用程式的服務。 
 
-在裝置管理儀表表上，您可以：
+在 [裝置管理] 系統管理中心, 您可以:
 
 - [註冊裝置](https://docs.microsoft.com/intune/device-enrollment)
 - [設定裝置合規性](https://docs.microsoft.com/intune/device-compliance-get-started)
