@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528302"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482800"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
@@ -43,7 +43,6 @@ ms.locfileid: "67528302"
 您可以加入應用程式，讓 Intune 能夠管理應用程式的所有層面。 
 
 使用下列步驟將應用程式新增至 Intune：
-
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。 
 2. 在 [應用程式類型]  下拉式方塊的 [Office 365 套件]  區段中，選取 **Windows 10**。
 3. 選取 [設定應用程式套件]  以選取要指派給 Intune 使用者的 Office 應用程式。
@@ -56,9 +55,9 @@ ms.locfileid: "67528302"
 
     ![新增應用程式資訊的螢幕擷取畫面](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. 選取 [應用程式套件設定]  。
-9. 在 [更新通道]  下拉式方塊中，選取 [每月]  。
-10. 按一下 [確定]   > [新增]  。
+10. 選取 [應用程式套件設定]  。
+11. 在 [更新通道]  下拉式方塊中，選取 [每月]  。
+12. 按一下 [確定]   > [新增]  。
 
 ## <a name="assign-the-app-to-a-group"></a>將應用程式指派給群組
 

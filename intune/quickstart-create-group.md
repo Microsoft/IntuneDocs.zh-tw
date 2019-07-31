@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a9cf1b610830928a753be176de2643fa1826bd0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8a8a444f886a5b754fd6ba3763e183db0fe95d5f
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050315"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482977"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
 
@@ -31,7 +31,7 @@ ms.locfileid: "66050315"
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
 >[!NOTE]
->Intune 會在主控台中提供預先建立的 [所有使用者] 和 [所有裝置] 群組，附有內建的最佳化方便您使用。
+>Intune 會在主控台中提供預先建立的 [所有使用者]  和 [所有裝置]  群組，附有內建的最佳化方便您使用。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -45,18 +45,18 @@ ms.locfileid: "66050315"
 
 您將會建立稍後要用於此快速入門系列的群組。 建立群組：
 
-1. 開啟 [Microsoft Intune] 窗格之後，選取 [群組] > [新增群組]。
-2. 在 [群組類型] 下拉式方塊中，選取 [安全性]。
-3. 在 [群組名稱] 欄位中，輸入新群組的名稱 (例如 **Contoso 測試人員**)。
-4. 新增群組的 [描述]。
-5. 將 [成員資格類型] 設定為 [已指派]。 
-6. 按一下 [成員]，然後從清單中選取群組的一或多個成員。
+1. 開啟 [Microsoft Intune]  窗格之後，選取 [群組]   > [新增群組]  。
+2. 在 [群組類型]  下拉式方塊中，選取 [安全性]  。
+3. 在 [群組名稱]  欄位中，輸入新群組的名稱 (例如 **Contoso 測試人員**)。
+4. 新增群組的 [描述]  。
+5. 將 [成員資格類型]  設定為 [已指派]  。 
+6. 按一下 [成員]  ，然後從清單中選取群組的一或多個成員。
 
     ![在 Microsoft Intune 中建立群組的螢幕擷取畫面](./media/quickstart-use-groups-01.png)
 
-7. 按一下 [選取] > [建立]。
+7. 按一下 [選取]   > [建立]  。
 
-一旦您已成功建立群組，它會出現在 [所有群組] 清單中。 
+一旦您已成功建立群組，它會出現在 [所有群組]  清單中。 
 
 ## <a name="next-steps"></a>後續步驟
 

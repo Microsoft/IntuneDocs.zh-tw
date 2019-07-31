@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549306"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533193"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
@@ -137,8 +137,4 @@ Intune 支援 iOS、Mac 作業系統、Android、Windows Desktop 和 Windows 行
 
 
 ## <a name="next-steps"></a>後續步驟
-
-如需 Intune 實作程序的詳細資訊，請參閱 [Microsoft Virtual Academy Intune 工作階段模組](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)。
-
-
 請參閱[測試與驗證 Intune 部署](planning-guide-test-validation.md)的指引。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885001"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660960"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式  
 
@@ -164,26 +164,23 @@ ms.locfileid: "67885001"
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)指示，新增 Check Point SandBlast Mobile iOS 應用程式設定原則。
   - 在**步驟 8** 中，使用選項 [輸入 XML 資料]  ，複製下方內容，並將其貼到設定原則本文中。
 
-```
-<dict><key>MDM</key><string>INTUNE</string></dict>
-```
+        <dict><key>MDM</key><string>INTUNE</string></dict>
+
 
 ### <a name="zimperium-app-configuration-policy"></a>Zimperium 應用程式設定原則  
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Zimperium iOS 應用程式設定原則。
   - 在**步驟 8** 中，使用選項 [輸入 XML 資料]  ，複製下方內容，並將其貼到設定原則本文中。
-
-```
-<dict>
-<key>provider</key><string>Intune</string>
-<key>userprincipalname</key><string>{{userprincipalname}}</string>
-<key>deviceid</key>
-<string>{{deviceid}}</string>
-<key>serialnumber</key>
-<string>{{serialnumber}}</string>
-<key>udidlast4digits</key>
-<string>{{udidlast4digits}}</string>
-</dict>
-```
+ 
+        <dict>
+        <key>provider</key><string>Intune</string>
+        <key>userprincipalname</key><string>{{userprincipalname}}</string>
+        <key>deviceid</key>
+        <string>{{deviceid}}</string>
+        <key>serialnumber</key>
+        <string>{{serialnumber}}</string>
+        <key>udidlast4digits</key>
+        <string>{{udidlast4digits}}</string>
+        </dict>
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo 應用程式設定原則  
 Pradeo 在 iOS 上不支援應用程式設定原則。  若要取得設定好的應用程式，請改為使用 Pradeo 來實作已預設偏好設定的自訂 IPA 或 APK 檔案。
@@ -192,16 +189,15 @@ Pradeo 在 iOS 上不支援應用程式設定原則。  若要取得設定好的
 - 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Better Mobile iOS 應用程式設定原則。
   - 在**步驟 8** 中，使用選項 [輸入 XML 資料]  ，複製下方內容，並將其貼到設定原則本文中。 使用適當的主控台 URL 取代 `https://client.bmobi.net` URL。
 
-```
-<dict>
-<key>better_server_url</key>
-<string>https://client.bmobi.net</string>
-<key>better_udid</key>
-<string>{{aaddeviceid}}</string>
-<key>better_user</key>
-<string>{{userprincipalname}}</string>
-</dict>
-```
+        <dict>
+        <key>better_server_url</key>
+        <string>https://client.bmobi.net</string>
+        <key>better_udid</key>
+        <string>{{aaddeviceid}}</string>
+        <key>better_user</key>
+        <string>{{userprincipalname}}</string>
+        </dict>
+
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 應用程式設定原則  
 建立 iOS 應用程式設定原則，如[使用 iOS 應用程式設定原則](app-configuration-policies-use-ios.md)一文中所述。
@@ -210,22 +206,20 @@ Pradeo 在 iOS 上不支援應用程式設定原則。  若要取得設定好的
 請參閱[使用適用於 iOS 的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-ios.md)的指示，以新增 Wandera iOS 應用程式設定原則。
 - 在**步驟 8**，使用此選項 [輸入 XML 資料]  。 登入您的 RADAR Wandera 入口網站並瀏覽到 [設定] \(設定\)   > [EMM Integration] \(EMM 整合\)   > [App Push] \(應用程式推播\)  。 選取 [Intune]  ，然後複製下列內容並將它貼到設定原則本文中。  
 
-  ```
-  <dict><key>secretKey</key>
-  <string>SeeRADAR</string>
-  <key>apiKey</key>
-  <string> SeeRADAR </string>
-  <key>customerId</key>
-  <string> SeeRADAR </string>
-  <key>email</key>
-  <string>{{mail}}</string>
-  <key>firstName</key>
-  <string>{{username}}</string>
-  <key>lastName</key>
-  <string></string>
-  <key>activationType</key>
-  <string>PROVISION_THEN_AWP</string></dict>  
-  ```
+      <dict><key>secretKey</key>
+       <string>SeeRADAR</string>
+       <key>apiKey</key>
+       <string> SeeRADAR </string>
+       <key>customerId</key>
+       <string> SeeRADAR </string>
+       <key>email</key>
+       <string>{{mail}}</string>
+       <key>firstName</key>
+       <string>{{username}}</string>
+       <key>lastName</key>
+       <string></string>
+       <key>activationType</key>
+       <string>PROVISION_THEN_AWP</string></dict>  
 
 ## <a name="assign-apps-to-groups"></a>將應用程式指派給群組  
 - 這個步驟適用於所有 MTD 合作夥伴。 請參閱[利用 Intune 將應用程式指派給群組](apps-deploy.md)的指示。

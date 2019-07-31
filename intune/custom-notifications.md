@@ -1,12 +1,12 @@
 ---
 title: 使用 Microsoft Intune 將自訂通知傳送給使用者
-titleSuffix: ''
+titleSuffix: Microsoft Intune
 description: 使用 Intune 來建立自訂推播通知，並將其傳送給 iOS 和 Android 裝置的使用者
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1caff820daf2e278c50d154873f569163b264315
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378126"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660386"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
