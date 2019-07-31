@@ -233,6 +233,8 @@
               displayName: gms
             - name: 註冊 Android Enterprise 專用裝置或完全受控裝置
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Android 裝置細裝置系統管理員註冊
+              href: android-enroll-device-administrator.md
             - name: 管理 Android Enterprise 工作設定檔裝置
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
@@ -701,10 +703,12 @@
           href: tenant-status.md
         - name: 疑難排解
           items:
-            - name: 對註冊進行疑難排解
+            - name: 針對註冊進行疑難排解
               items:
-                - name: 對 iOS 裝置註冊進行疑難排解
+                - name: 針對 iOS 裝置註冊進行疑難排解
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: 針對 Windows 裝置註冊進行疑難排解
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: 協助使用者疑難排解問題
               href: help-desk-operators.md
             - name: 公司資源存取問題的疑難排解
