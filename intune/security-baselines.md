@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中使用安全性基準 - Azure | Microsoft Docs
-description: 新增或設定建議的 Windows 安全性設定，使用 Microsoft Intune 來保護裝置上的使用者和資料，以用於行動裝置管理。 啟用 BitLocker、設定 Microsoft Defender 進階威脅防護、控制 Internet Explorer、使用 SmartScreen、設定本機安全性原則、需要密碼、封鎖網際網路下載項目等。
+description: 使用建議的 Windows 安全性設定，使用 Microsoft Intune 來保護裝置上的使用者與資料，以用於行動裝置管理。 啟用加密、設定 Microsoft Defender 進階威脅防護、控制 Internet Explorer、設定本機安全性原則、要求使用密碼、封鎖網際網路下載項目等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671024"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -79,7 +79,7 @@ ms.locfileid: "68353586"
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  

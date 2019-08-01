@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411596"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482969"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft intune 的網路端點  
 
@@ -146,9 +146,9 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connec設為 [https]r  
 
-裝載 Microsoft Intune 憑證連接器的伺服器，必須能夠使用 **TCP** 連接埠 **443** 存取下表所列的公用 IP 位置。  
+裝載 Microsoft Intune 憑證連接器的伺服器，必須能夠使用 **TCP** 連接埠 **443** 存取下表所列的公用 IP 位置。 如需有關憑證詳細資訊，請參閱[透過 Intune 設定並使用 PKCS 憑證](certficates-pfx-configure.md)與[搭配 Intune 設定及使用 SCEP 憑證](certificates-scep-configure.md)。
 
-|Domains                             |IP 位址       |
+|網域                             |IP 位址       |
 |---------------|--------------------------------------|
 |Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com|13.76.177.110  |
 |fef.msua06.manage.microsoft.com  |13.78.185.97  |

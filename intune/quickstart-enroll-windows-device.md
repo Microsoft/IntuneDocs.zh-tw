@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041334"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670851"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入門：註冊您的 Windows 10 裝置
 
@@ -34,7 +34,7 @@ ms.locfileid: "66041334"
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - Microsoft Intune 訂用帳戶 - [註冊免費試用帳戶](free-trial-sign-up.md)
 - 若要完成此快速入門，您必須完成[在 Intune 中設定自動註冊](quickstart-setup-auto-enrollment.md)的步驟。
@@ -43,35 +43,35 @@ ms.locfileid: "66041334"
 
 註冊 Windows 10 Desktop 之前，您必須確認已安裝的 Windows 版本。
 
-1. 以滑鼠右鍵按一下 Windows **開始**圖示，然後選取 [設定] 以顯示 [Windows 設定] 選項。
+1. 以滑鼠右鍵按一下 Windows **開始**圖示，然後選取 [設定]  以顯示 [Windows 設定] 選項。
 
    ![[Windows 設定] - [系統] 的螢幕擷取畫面](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-01.png)
 
-2. 選取 [系統] > [關於]。 
+2. 選取 [系統]   > [關於]  。 
 
    ![您系統設定的螢幕擷取畫面](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-02.png)
 
     > [!TIP]
-    > 您也可以在**搜尋列**中鍵入「關於您的電腦」一詞，然後選取 [關於您的電腦]。
+    > 您也可以在**搜尋列**中鍵入「關於您的電腦」一詞，然後選取 [關於您的電腦]  。
 
-3. 在 [設定] 視窗中，您會看到電腦的**Windows 規格**清單。 在此清單中，找出 [版本]。
+3. 在 [設定]  視窗中，您會看到電腦的**Windows 規格**清單。 在此清單中，找出 [版本]  。
 
-4. 確認 Windows 10 的 [版本] 為 **1607 或更新版本**。
+4. 確認 Windows 10 的 [版本]  為 **1607 或更新版本**。
 
     > [!IMPORTANT]
     > 此快速入門中所顯示的步驟適用 Windows 10 **1607 版或更新版本**如果您的版本是 **1511 或較舊版本**，請繼續進行[這些步驟](/intune-user-help/enroll-windows-10-device)。  
 
 ## <a name="enroll-windows-10-desktop"></a>註冊 Windows 10 Desktop
 
-1. 返回 [Windows 設定]，然後選取 [帳戶]。
+1. 返回 [Windows 設定]，然後選取 [帳戶]  。
 
    ![您系統設定 - [帳戶] 的螢幕擷取畫面](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-03.png)
 
-2. 選取 [存取公司或學校資源] > [連線]。
+2. 選取 [存取公司或學校資源]   > [連線]  。
 
     ![選取 [存取公司或學校帳戶]](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 使用您的工作或學校帳戶登入 Intune，然後選取 [下一步]。 如果遵循 [建立使用者並指派授權](quickstart-create-user.md) 快速入門，就可以使用已建立的使用者帳戶登入。
+3. 使用您的工作或學校帳戶登入 Intune，然後選取 [下一步]  。 如果遵循 [建立使用者並指派授權](quickstart-create-user.md) 快速入門，就可以使用已建立的使用者帳戶登入。
 
     > [!NOTE]
     > 如果您要設定 ".onmicrosoft.com"，使用者帳戶將會以 **.onmicrosoft.com** 作為帳戶地址的一部分。 
@@ -80,9 +80,9 @@ ms.locfileid: "66041334"
 
     您會看到一則訊息，指出您的公司或學校正在註冊您的裝置。
 
-4. 當您看到 [已全部完成] 時 畫面時，請選取 [完成]。 大功告成。
+4. 當您看到 [已全部完成]  時 畫面時，請選取 [完成]  。 大功告成。
 
-5. 您現在會在 Windows Desktop 的 [存取公司或學校資源] 設定中看到新增的帳戶。
+5. 您現在會在 Windows Desktop 的 [存取公司或學校資源]  設定中看到新增的帳戶。
 
    ![新增帳戶的螢幕擷取畫面](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "66041334"
 ## <a name="confirm-your-device-enrollment-in-intune"></a>確認在 Intune 中註冊您的裝置
 
 1. 請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://aka.ms/intuneportal)。
-2. 選取 [裝置] 以檢視 Intune 中註冊的裝置。
+2. 選取 [裝置]   > [所有裝置]  以檢視在 Intune 中註冊的裝置。
 3. 確認您已在 Intune 中註冊其他裝置。
 
    ![Intune 已註冊裝置的螢幕擷取畫面](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

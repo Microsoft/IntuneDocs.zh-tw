@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353770"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467508"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -150,7 +150,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
 3. 檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
-### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的必要條件
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的先決條件
 在此步驟中，您將：
 
 - 將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
@@ -373,7 +373,14 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
      - Windows 10 及更新版本
 
 
-   - **主體名稱格式**：選取 Intune 在憑證要求中自動建立主體名稱的方式。 如果您選擇 [使用者]  憑證類型或 [裝置]  憑證類型，則選項會變更。 
+   - **主體名稱格式**：選取 Intune 在憑證要求中自動建立主體名稱的方式。 如果您選擇 [使用者]  憑證類型或 [裝置]  憑證類型，則選項會變更。  
+
+     > [!NOTE]  
+     > 當產生的憑證簽署要求 (CSR) 中的主體名稱包含下列其中一個字元作為逸出字元 (以反斜線 \\ 開頭) 時，使用 SCEP 取得憑證有一個[已知問題](#avoid-certificate-signing-requests-with-escaped-special-characters)：
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **使用者憑證類型**  
 
@@ -495,6 +502,42 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
      - 選取 [確定]  然後選取 [建立]  以建立您的設定檔。
 
 設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>避免使用具有已逸出之特殊字元的憑證簽署要求
+當 SCEP 憑證要求包含具有一或多個下列特殊字元作為逸出字元的主體名稱 (CN) 時，有一個已知問題。 包含其中一個特殊字元作為逸出字元的主體名稱會導致 CSR 的主體名稱不正確，進而導致 Intune SCEP 挑戰驗證失敗且不會簽發任何憑證。  
+
+特殊字元為：
+- \+
+- ,
+- ;
+- =
+
+當您的主體名稱包含其中一個特殊字元時，請使用下列其中一個選項來因應此限制：  
+- 使用引號括住包含特殊字元的 CN 值。  
+- 將特殊字元從 CN 值移除。  
+
+**例如**，您有顯示為 *Test user (TestCompany, LLC)* 的主體名稱。  若 CSR 包含之 CN 中的 *TestCompany* 與 *LLC* 之前有逗點，則會發生問題。  使用引號括住整個 CN，或移除 *TestCompany* 與 *LLC* 之間的逗號，即可避免此問題：
+- **加上引號**：*CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **移除逗號**：*CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ 不過，嘗試使用反斜線字元來逸出逗號將會失敗，而且 CRP 記錄中會記錄錯誤：  
+- **逸出的逗號**：*CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+錯誤與下列錯誤類似： 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>指派憑證設定檔
 

@@ -1,7 +1,7 @@
 ---
 title: JAMF Pro 傳送至 Intune 的資料
 titleSuffix: Microsoft Intune
-description: Jamf Pro 傳送至 Microsoft Intune 的資料清單
+description: 當您整合 Jamf Pro 以使用 Intune 管理 Mac 時，請檢閱 Jamf Pro 傳送給 Microsoft Intune 的資料清單。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670906"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro 傳送至 Intune 的資料
 
@@ -70,7 +70,7 @@ ms.locfileid: "66048556"
 * 使用者電子郵件
 
 
-您可以在 [所有裝置] 檢視中選取 [刪除]，以從 Intune 主控台移除 Jamf 受控裝置。 選取多個裝置，並按一下 [刪除]，即可啟用刪除大量裝置。
+您可以在 [所有裝置]  檢視中選取 [刪除]  ，以從 Intune 主控台移除 Jamf 受控裝置。 選取多個裝置，並按一下 [刪除]  ，即可啟用刪除大量裝置。
 
 在 Jamf Pro 文件中取得如何[移除 Jamf 受控裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的相關資訊。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 

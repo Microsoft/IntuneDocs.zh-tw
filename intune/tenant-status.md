@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670976"
 ---
-# <a name="intune-tenant-status-page"></a>Intune 租用戶狀態頁面
+# <a name="use-the-intune-tenant-status-page"></a>使用 Intune [租用戶狀態] 頁面
 [租用戶狀態] 頁面是您可以檢視最新租用戶重要詳細資料的集中式中樞。 這些詳細資料包括授權可用性和使用、連接器狀態，以及 Intune 服務的相關重要通訊。  
 
 若要檢視儀表板，請在 Azure 入口網站中，移至 [Intune] > [租用戶狀態]  。  [租用戶狀態] 會顯示於 [說明及支援]  群組下。  

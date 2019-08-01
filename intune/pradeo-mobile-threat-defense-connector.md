@@ -1,7 +1,7 @@
 ---
 title: 搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器
 titleSuffix: Intune on Azure
-description: 設定搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器。
+description: 深入了解如何將 Intune 與 Pradeo Mobile Threat Defense 連接器整合，以控制行動裝置對您公司資源的存取權。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ae354d2c5cd367c30d76f46022a8c430c6f81be3
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671071"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Pradeo Mobile Threat Defense 連接器
 
@@ -31,7 +31,7 @@ ms.locfileid: "67882754"
 
 適用於 Android 及 iOS 的 Pradeo 應用程式可擷取檔案系統、網路堆疊、裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Pradeo 雲端服務，以評定裝置的行動威脅風險。
 
-Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。 如果發現裝置不相容，則會封鎖使用者對 Exchange Online 和 SharePoint Online 這類公司資源的存取。 使用者也會從安裝在其裝置內的 Pradeo 應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
+Intune 裝置合規性政策包含以 Pradeo 風險評定為基礎的 Pradeo Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。 如果發現裝置不相容，則會封鎖使用者對 Exchange Online 和 SharePoint Online 這類公司資源的存取。 使用者也會從安裝在其裝置內的 Pradeo 應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
 
 ## <a name="sample-scenarios"></a>範例案例
 
@@ -85,7 +85,7 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 - **iOS 7 及更新版本**
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - Azure Active Directory Premium
 
@@ -101,6 +101,6 @@ Intune 裝置合規性原則包含以 Pradeo 風險評定為基礎的 Pradeo Mob
 
 - [設定 Pradeo 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [建立 Pradeo 裝置合規性原則](mtd-device-compliance-policy-create.md)
+- [建立 Pradeo 裝置合規性政策](mtd-device-compliance-policy-create.md)
 
 - [啟用 Pradeo MTD 連接器](mtd-connector-enable.md)

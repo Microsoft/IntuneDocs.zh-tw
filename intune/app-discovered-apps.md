@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388509"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590911"
 ---
 # <a name="intune-discovered-apps"></a>Intune 探索到的應用程式
 
@@ -30,13 +30,22 @@ Intune **探索到的應用程式**是 Intune 在您租用戶中已註冊裝置�
 
 ## <a name="monitor-discovered-apps-with-intune"></a>使用 Intune 來監視探索到的應用程式
 
-Intune 提供 Intune 在您租用戶中已註冊裝置上偵測到的應用程式清單。
+Intune 提供在您的租用戶中已註冊 Intune 之裝置上偵測到之應用程式的彙總清單。
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [探索到的應用程式]  。
 
 >[!NOTE]
 >您可以從 [探索到的應用程式]  刀鋒視窗中選取 [匯出]  ，將探索到的應用程式清單匯出至 .csv 檔案。
+>
+>針對探索到的 Win32 應用程式，目前沒有彙總計數。 此類型的資料只能以每個裝置為基礎來檢視。
+
+Intune 也會提供在您的租用戶中個別裝置上探索到的應用程式清單。 
+
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 在 [Intune] 窗格中，選取 [裝置]   > [所有裝置]  。
+3. 選取一個裝置。
+4. 若要檢視針對此裝置探索到的應用程式，請在 [監視器]  區段中選取 [探索到的應用程式]  。 
 
 ## <a name="details-of-discovered-apps"></a>探索到的應用程式詳細資料
 

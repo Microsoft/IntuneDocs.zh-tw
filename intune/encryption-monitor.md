@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375159"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671048"
 ---
-# <a name="monitor-device-encryption"></a>監視裝置加密  
+# <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密   
 
 Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資料的一個集中式位置。 您可以檢視裝置加密狀態的相關詳細資料，並找到管理裝置修復金鑰的選項。 修復金鑰可用選項取決於您所檢視的裝置類型。  
 
@@ -33,7 +33,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
 
 加密報表顯示您所管理各種支援裝置的常見詳細資料。 下列各節提供有關 Intune 在報表中所顯示資訊的詳細資料。  
  
-### <a name="prerequisites"></a>必要條件：  
+### <a name="prerequisites"></a>先決條件：  
 
 加密報表支援在執行下列作業系統版本的裝置上進行報告：  
 - macOS 10.13 或更新版本  
@@ -59,7 +59,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
     
     如需詳細資訊，請參閱 Windows 文件中的 [BitLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (BitLocker 設定服務提供者 (CSP))。  
 
-  - **未就緒**：裝置沒有完整的加密功能，但仍支援加密。 例如，Windows 裝置可能是由使用者以手動方式進行加密，或透過將群組原則設定為允許在沒有 TMP 的情況下加密來進行加密。
+  - **未就緒**：裝置沒有完整的加密功能，但仍支援加密。 例如，Windows 裝置可能是由使用者以手動方式進行加密，或透過將群組原則設定為允許在沒有 TPM 的情況下加密來進行加密。
   - **不適用**：資訊不足，無法分類此裝置。  
 
 - **加密狀態** - OS 磁碟機是否已加密。  
@@ -93,20 +93,18 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
 - **設定檔狀態摘要** - 套用到此裝置的設定檔摘要。 此摘要表示適用設定檔中最不利的條件。 例如，如果多個適用設定檔中只有一個產生錯誤，則「設定檔狀態摘要」  會顯示「錯誤」  。  
 
 - **狀態詳細資料** - 裝置加密狀態的相關進階詳細資料。  
-  > [!NOTE]
-  > FileVault 的支援在幾天後 7 月版完成推出之前會受到限制。 推出完成之前，macOS 的裝置狀態詳細資料和裝置加密詳細資料可能無法在加密報表中正確顯示。
 
   > [!IMPORTANT]  
   > 若是 Windows 10 裝置，Intune 只會針對執行「Windows 10 2019 年 4 月更新」  或更新版本的裝置，顯示其「狀態詳細資料」  。  
   
-  此欄位會顯示可能偵測到的每個適用錯誤資訊。 您可以使用這項資訊來了解裝置為何尚未準備好加密。  
+  此欄位會顯示可能偵測到的每個適用錯誤資訊。 您可以使用此資訊來了解裝置為何尚未準備好加密。  
 
   下列是 Intune 可能報告的狀態詳細資料範例：  
   
   **macOS**：
-  - 目前無法安裝設定檔，因為我們正在等候某個必要條件。  
+  - 目前無法安裝設定檔，因為我們正在等候某個先決條件。  
  
-    *考量：這項結果不一定代表錯誤狀況，而是暫時性狀態，這可能是由於必須先設定修復金鑰委付，才能將加密要求傳送到裝置的裝置時機所造成。這也可能表示裝置仍處於鎖定狀態，或最近尚未使用 Intune 簽入。最後，由於 FileVault 加密在裝置插入 (充電) 之前不會啟動，所以使用者可能會收到尚未加密裝置的修復金鑰*。  
+    *考量：此結果不一定代表錯誤狀況，而是暫時性狀態，這可能是由於必須先設定修復金鑰委付，才能將加密要求傳送到裝置的裝置時機所造成。這也可能表示裝置仍處於鎖定狀態，或最近尚未使用 Intune 簽入。最後，由於 FileVault 加密在裝置插入 (充電) 之前不會啟動，所以使用者可能會收到尚未加密裝置的修復金鑰*。  
 
   - 已安裝 FileVault 設定檔，但未在裝置上啟用 FileVault。  
  

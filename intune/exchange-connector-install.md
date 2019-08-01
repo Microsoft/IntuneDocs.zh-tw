@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427324"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660951"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中設定 Intune 內部部署 Exchange 連接器
 本文中資訊可協助您安裝適用於 Intune 的 Exchange Active Sync 內部部署連接器，並在安裝後進行監視。  您可以使用 Intune 內部部署 Exchange 連接器，搭配您的[條件式存取原則來允許或封鎖存取 Exchange 內部部署信箱](conditional-access-exchange-create.md)。 
@@ -121,7 +121,7 @@ Intune 支援針對每個訂閱安裝多個內部部署 Exchange 連接器。 �
 
 5. 提供傳送通知給使用者 Exchange Server 信箱所需的認證。 此使用者可專作收發通知之用。 通知使用者需要 Exchange 信箱，才能夠透過電子郵件傳送通知。 您可以在 Intune 中使用條件式存取原則來設定這些通知。  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   請確定自動探索服務和 Exchange Web 服務是在 Exchange Client Access Server 上設定。 如需詳細資訊，請參閱 [Client Access Server](https://technet.microsoft.com/library/dd298114.aspx)。
 
 6. 在 [密碼]  欄位中提供此帳戶的密碼，以便 Intune 能夠存取 Exchange Server。
 
@@ -132,7 +132,7 @@ Intune 支援針對每個訂閱安裝多個內部部署 Exchange 連接器。 �
 
 在設定期間，Exchange 連接器會儲存 Proxy 設定，讓您可存取網際網路。 如果您的 Proxy 設定發生變更，您必須重新設定 Exchange Connector，以便將更新的 Proxy 設定套用到 Exchange Connector。
 
-在 Exchange 連接器設定連線之後，與 Exchange 中受控使用者建立關聯的行動裝置便會自動同步處理並新增到 Exchange 連接器。 這項同步處理可能需要一些時間才能完成。
+在 Exchange 連接器設定連線之後，與 Exchange 中受控使用者建立關聯的行動裝置便會自動同步處理並新增到 Exchange 連接器。 此同步處理可能需要一些時間才能完成。
 
 > [!NOTE]
 > 如果您已安裝內部部署 Exchange 連接器，而且在某個階段刪除 Exchange 連線，您必須從已安裝內部部署 Exchange 連接器的電腦解除安裝該軟體。
@@ -158,7 +158,7 @@ Intune 支援每個訂閱有多個內部部署 Exchange 連接器。 針對具�
 
 當您透過 Exchange ActiveSync 支援 5,000 部以上的裝置時，您可以設定選用設定來改善連接器的效能。 藉由啟用 Exchange 以使用 PowerShell 命令執行空間的多個執行個體，可達到更高的效能。 
 
-在您進行此變更之前，請確認您用來執行 Exchange Connector 的帳戶並未用於其他 Exchange 管理用途。 這是因為 Exchange 每個帳戶有 18 個執行空間的限制，其中大部分都是由連接器所使用。 
+在您進行此變更之前，請確認您用來執行 Exchange Connector 的帳戶並未用於其他 Exchange 管理用途。 這是因為 Exchange 每個帳戶有受限的執行空間的限制，其中大部分都將由連接器使用。 
 
 這種效能變更不適用於在較舊或較慢硬體上執行的連接器。  
 
