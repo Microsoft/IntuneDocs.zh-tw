@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680052"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -114,6 +114,9 @@ SDK 仰賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> 此時, Remapper 的問題會導致無法在 Xamarin Android 應用程式中進行偵測。 建議手動整合, 以在解決此問題之前, 先對應用程式進行 debug。
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫且具有類似名稱的方法 (名稱具有 `MAM` 尾碼)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `OnCreate()` 然後呼叫 `base.OnCreate()` 時，`Activity` 必須覆寫 `OnMAMCreate()` 並呼叫 `base.OnMAMCreate()`。
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 針對 `Xamarin.Forms` 應用程式，`Microsoft.Intune.MAM.Remapper` 套件會透過將 `MAM` 類別插入到常用 `Xamarin.Forms` 類別的類別階層，自動執行 MAM 類別取代。 
 
 > [!NOTE]
-> 除了完成以上詳述的 Xamarin.Android 整合，也要進行 Xamarin.Forms 整合。
+> 除了完成以上詳述的 Xamarin.Android 整合，也要進行 Xamarin.Forms 整合。 Remapper 的行為不同于 Xamarin 應用程式, 因此仍需要進行手動 MAM 更換。
 
 一旦 Remapper 新增至您的專案，您必須執行 MAM 對等取代。 例如，`FormsAppCompatActivity` 和 `FormsApplicationActivity` 可以繼續用於您提供的應用程式，假設 `OnCreate` 和 `OnResume` 的覆寫分別取代為 MAM 對等項目 `OnMAMCreate` 和 `OnMAMResume`。
 
@@ -199,6 +202,9 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 > [!NOTE]
 > Remapper 會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性。 因此，新增 Remapper 時您可能需要重新載入並重建專案，IntelliSense 才能正確識別變更。
+
+#### <a name="troubleshooting"></a>疑難排解
+* 如果您的應用程式在啟動時遇到空白的白色畫面, 則您可能需要強制在主執行緒上執行導覽呼叫。
 
 ### <a name="company-portal-app"></a>公司入口網站應用程式
 Intune SDK Xamarin 系結會依賴裝置上的[公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android 應用程式是否存在, 以啟用應用程式保護原則。 公司入口網站會從 Intune 服務擷取應用程式保護原則。 應用程式初始化時，它會載入原則和程式碼，以從公司入口網站強制執行該原則。 使用者不需要登入。

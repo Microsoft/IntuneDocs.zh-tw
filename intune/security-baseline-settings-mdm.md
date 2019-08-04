@@ -1,7 +1,7 @@
 ---
 title: 適用於 Windows 10 的 Intune 安全性基準設定
 titleSuffix: Microsoft Intune
-description: 適用於管理 Windows 10 的 Intune 安全性基準設定
+description: 針對您使用 Intune 管理的 Windows 10 裝置, 審查 Windows MDM 安全性基準中的預設值和可用設定。
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680030"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>適用於 Intune 的 MDM 安全性基準設定  
 
 針對執行 Windows 10 或更新版本的裝置, 查看 Microsoft Intune 所支援的 MDM 安全性基準設定。 此基準中設定的預設值代表適用裝置的建議設定, 而且可能不符合其他安全性基準的基準預設值。  
 
-最新的基準版本是**春季2019更新的 MDM 安全性基準 (19H1)**  
+最新的基準版本為**5 月2019的 MDM 安全性基準**  
 
 若要深入瞭解此基準的最新版本中的變更內容, 請參閱[新範本中的變更](#whats-changed-in-the-new-template)。  
 
 > [!NOTE]  
-> 在2019年6月, 預覽的 MDM 安全性基準已由「*春季2019更新」 (19H1) 範本的 Mdm 安全性基準*版本取代, 這是 generaly 可用 (不在預覽階段)。 在「*春季2019更新」 (19H1) 基準的 Mdm 安全性基準*可用性之前建立的設定檔不會更新, 以反映在「春季2019更新」 (19H1) 版本的「Mdm 安全性基準」中的設定和值。  雖然您無法根據預覽範本來建立新的設定檔, 您可以編輯並繼續使用先前根據預覽範本建立的設定檔。   
+> 在2019年6月, 預覽 MDM 安全性基準已被正式推出 (非預覽版) 的*Mdm 安全性基準 (可能為 2019* ) 範本發行。 *5 月2019基準的 Mdm 安全性基準*可用性之前所建立的設定檔不會更新, 以反映5月2019版的 Mdm 安全性基準中的設定和值。  雖然您無法根據預覽範本來建立新的設定檔, 您可以編輯並繼續使用先前根據預覽範本建立的設定檔。   
   
 若要瞭解如何搭配 Intune 使用安全性基準, 請參閱[使用安全性基準](security-baselines.md)。  
 
@@ -1825,7 +1825,7 @@ ms.locfileid: "68491898"
   **預設**：啟用
 
 ## <a name="whats-changed-in-the-new-template"></a>新範本的變更內容
-[*春季2019更新 (19H1)* ] 範本的 [MDM 安全性基準] 具有下列*預覽*範本的變更。
+*5 月2019範本的 MDM 安全性基準*具有來自*預覽*範本的下列變更。
 
 ### <a name="changes-to-the-baseline-settings"></a>基準設定的變更
 下列設定是：

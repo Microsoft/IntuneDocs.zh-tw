@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
-ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
+ms.openlocfilehash: e8f5f67661dbf33f2b0d6b44e32302a874c3f4de
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306757"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625080"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -65,22 +65,22 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (�
 
 下列標頭檔包含 API、資料類型及通訊協定，由 Intune App SDK 提供開發人員使用：
 
-    * IntuneMAMAppConfig.h
-    * IntuneMAMAppConfigManager.h
-    * IntuneMAMDataProtectionInfo.h
-    * IntuneMAMDataProtectionManager.h
-    * IntuneMAMDefs.h
-    * IntuneMAMDiagnosticConsole.h
-    * IntuneMAMEnrollmentDelegate.h
-    * IntuneMAMEnrollmentManager.h
-    * IntuneMAMEnrollmentStatus.h
-    * IntuneMAMFileProtectionInfo.h
-    * IntuneMAMFileProtectionManager.h
-    * IntuneMAMLogger.h
-    * IntuneMAMPolicy.h
-    * IntuneMAMPolicyDelegate.h
-    * IntuneMAMPolicyManager.h
-    * IntuneMAMVersionInfo.h
+-  IntuneMAMAppConfig.h
+-  IntuneMAMAppConfigManager.h
+-  IntuneMAMDataProtectionInfo.h
+-  IntuneMAMDataProtectionManager.h
+-  IntuneMAMDefs.h
+-  IntuneMAMDiagnosticConsole.h
+-  IntuneMAMEnrollmentDelegate.h
+-  IntuneMAMEnrollmentManager.h
+-  IntuneMAMEnrollmentStatus.h
+-  IntuneMAMFileProtectionInfo.h
+-  IntuneMAMFileProtectionManager.h
+-  IntuneMAMLogger.h
+-  IntuneMAMPolicy.h
+-  IntuneMAMPolicyDelegate.h
+-  IntuneMAMPolicyManager.h
+-  IntuneMAMVersionInfo.h
 
 開發人員只要匯入 IntuneMAM.h，即可使用先前標頭的內容
 
@@ -130,17 +130,17 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
     > * 目前不支援透過模組匯入語句 (例如: 匯入 IntuneMAMSwift) 將 Intune SDK Api 提供給 Swift。 使用目標-C 橋接標頭是建議的方法。
     
 3. 將下列 iOS 架構新增至專案：  
-    * MessageUI.framework  
-    * Security.framework  
-    * MobileCoreServices.framework  
-    * SystemConfiguration.framework  
-    * libsqlite3.tbd  
-    * libc++.tbd  
-    * ImageIO.framework  
-    * LocalAuthentication.framework  
-    * AudioToolbox.framework  
-    * QuartzCore.framework  
-    * WebKit.framework
+-  MessageUI.framework  
+-  Security.framework  
+-  MobileCoreServices.framework  
+-  SystemConfiguration.framework  
+-  libsqlite3.tbd  
+-  libc++.tbd  
+-  ImageIO.framework  
+-  LocalAuthentication.framework  
+-  AudioToolbox.framework  
+-  QuartzCore.framework  
+-  WebKit.framework
 
 4. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]  ，然後啟用 「Keychain Sharing」 (Keychain 共用)  參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 

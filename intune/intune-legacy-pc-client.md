@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047279"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756519"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 上的 Intune 主控台及舊版 Intune 電腦用戶端
 
@@ -43,9 +43,9 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 由於切換到 Azure AD 群組，Silverlight 主控台儀表板檢視中的「以群組為基礎」篩選已稍微變更。 若要在更新的 Silverlight UI 中進行篩選，請遵循下列步驟：
 
 1. 選取檢視。
-2. 在 [篩選] 方塊中，輸入您要據以篩選的群組名稱，然後按 Enter。 這會篩選清單檢視，只顯示該特定群組中的裝置。
+2. 在 [篩選]  方塊中，輸入您要據以篩選的群組名稱，然後按 Enter。 這會篩選清單檢視，只顯示該特定群組中的裝置。
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![篩選下拉式清單輸入, 並選取 [無]](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>繼續使用 Intune 電腦用戶端管理 Windows 7
@@ -60,8 +60,8 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 
 要從使用 Intune 電腦用戶端管理 Windows 10 裝置切換到使用 MDM 進行管理，請遵循下列步驟：
 
-1. 在 Silverlight 主控台中，執行 [選擇性抹除] 將裝置從電腦用戶端取消註冊。
-  ![](media/intune-legacy-pc-client/image02.png)
+1. 在 Silverlight 主控台中，執行 [選擇性抹除]  將裝置從電腦用戶端取消註冊。
+  ![已選取 [選擇性抹除裝置] 選項按鈕的警告快顯視窗](media/intune-legacy-pc-client/image02.png)
 2. 使用 [MDM (和/或 Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) 重新註冊該裝置。 
 
 ## <a name="next-steps"></a>後續步驟

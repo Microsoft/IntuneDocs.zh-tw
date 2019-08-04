@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680095"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "67884693"
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>預覽：2018 年 10 月的 MDM 安全性基準  
 
-*此基準已由[適用于春季2019的 MDM 安全性基準 (19H1)](security-baseline-settings-mdm.md)取代*
+*此基準已由[5 月2019的 MDM 安全性基準](security-baseline-settings-mdm.md)取代*
 
 ### <a name="above-lock"></a>上方鎖定  
 

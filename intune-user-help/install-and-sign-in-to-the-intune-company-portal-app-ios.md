@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,22 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 3c764d0bf5cccecef692b8efe1e45af383584cd2
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546324"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625046"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安裝並登入公司入口網站應用程式
 
 在您的 iOS 裝置上安裝公司入口網站應用程式，以存取您的公司和學校應用程式、電子郵件和網路。 使用應用程式在 Microsoft Intune 註冊裝置，並保護其對您公司或學校資源的存取。 如需詳細資訊，請參閱[如果您安裝公司入口網站應用程式並在 Intune 註冊裝置時，會發生什麼情況？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-1. 開啟 **App Store**，搜尋 **intune 公司入口網站**。
+1. 開啟 **App Store**，搜尋 **Intune 公司入口網站**。
 
 2. 下載 [Intune 公司入口網站]  應用程式。
 
-    ![Intune 公司入口網站應用程式在 App Store 中之外觀的螢幕擷取畫面。](./media/CP_iosRedesign_after_1803_04.PNG)
+    ![Intune 公司入口網站應用程式在 App Store 中之外觀的螢幕擷取畫面。](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. 開啟公司入口網站應用程式，輸入您的公司或學校電子郵件地址和密碼，然後點選 [登入]  。
 
