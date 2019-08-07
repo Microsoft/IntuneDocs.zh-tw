@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467408"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756518"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 macOS Endpoint Protection 設定  
 
@@ -97,11 +97,18 @@ ms.locfileid: "68467408"
     - **個人修復金鑰輪替**-指定裝置的個人修復金鑰要旋轉的頻率。 您可以選取 [**未設定**] 的預設值, 或 [ **1** ] 到 [ **12** ] 個月的值。  
 
   - **登出時停用提示**  
-    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [停用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
+    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [啟用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
     - **未設定**  
-    - **停用**  
+    - **啟用**-在登出時停用提示。
 
     **預設**：未設定  
+
+     > [!IMPORTANT]  
+     > 當登出的 [**停用提示**] 設定為 [*啟用*] 時, 會發生已知問題。 當設定為 [*啟用*] 時, [**允許略過的次數**] 設定必須設為值, 而且不得設定為 [*未*設定]。 如果設為 [*未*設定], 則裝置上的設定檔會失敗。 在此案例中, 裝置會將它的**設定檔狀態摘要**視為**錯誤**, 而不會有進一步的詳細資料。
+     > 
+     > 當 [**登出時停用提示**] 設為 [*未*設定] 時,**允許略過的次數**可以是*未*設定或具有值。  
+     > 
+     > 在未來的更新中將會解決此問題。 
 
   - **允許略過的次數**  
   設定使用者在需要 FileVault 以讓使用者登入之前, 可以忽略提示以啟用 FileVault 的次數。  

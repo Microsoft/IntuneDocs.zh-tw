@@ -11,7 +11,7 @@ ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
 ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2019
+ms.lasthandoff: 08/05/2019
 ms.locfileid: "68775848"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。 

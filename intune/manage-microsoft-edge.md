@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287225"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701021"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -76,9 +76,6 @@ ms.locfileid: "68287225"
 
 9. 在 [指派]  區段中，選取 [使用者和群組]  ，然後選擇您要指派此原則的使用者或群組。
 
-    > [!NOTE]
-    > 您也必須使用 Intune 應用程式防護原則瞄準使用者，才能讓使用者接收到應用程式設定原則。 如需建立 Intune 應用程式防護原則詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)。
-
 10. 在 [指派]  區段中，選取 [雲端應用程式]  選擇要使用此原則保護的應用程式。
 
 設定上述原則之後，系統會強制使用者使用 Microsoft Edge 來存取您使用此原則保護、已連線至 Azure AD 的 Web 應用程式。 在此情況下，如果使用者嘗試使用非受控瀏覽器，便會收到他們必須改為使用 Microsoft Edge 的訊息。
@@ -96,8 +93,6 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
 > 裝置註冊是使用 Azure AD 服務的簡單簽入。 它不需要完整裝置註冊，且不會在該裝置上授與 IT 人員額外的權限。
 
 ## <a name="create-a-protected-browser-app-configuration"></a>建立受保護的瀏覽器應用程式設定
-
-如要套用應用程式設定，使用者被保護的瀏覽器或裝置上的另一個應用程式必須已由 [Intune 應用程式保護原則](app-protection-policy.md)所管理。
 
 針對 Microsoft Edge 建立應用程式設定：
 
@@ -285,7 +280,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 - 您可以在與 Microsoft Edge 相關聯的應用程式保護原則中設定 [需要簡單的 PIN 碼才能存取]  或 [需要公司認證才能存取]  選項。 如果使用者選取驗證頁面上的說明連結，他們便可以瀏覽任何網際網路網站，無論那些網站是否被加入原則中的已封鎖清單。
 - Microsoft Edge 可以在直接存取網站時，只封鎖網站的存取。 它不會在使用者使用中繼服務 (例如翻譯服務) 來存取網站時封鎖存取。
 - 若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 * **.microsoft.com**。 它一律會被允許。
-- 使用者可以關閉資料收集。 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制此資料的收集。 在 iOS 裝置上，使用者將無法開啟具有過期或未受信任憑證的網站。
+- 使用者可以關閉資料收集。 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。 在 iOS 裝置上，使用者將無法開啟具有過期或未受信任憑證的網站。
 
 ## <a name="next-steps"></a>後續步驟
 

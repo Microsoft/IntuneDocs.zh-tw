@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670906"
+ms.locfileid: "68680025"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro 傳送至 Intune 的資料
 
-當您搭配 Intune 使用 [Jamf Pro](https://www.jamf.com) 來管理終端使用者的 Mac 時，Jamf Pro 會擷取受控 macOS 裝置的清查資訊。 Jamf Pro 會將下列資訊回報給 Intune：
+當您搭配 Intune 使用 [Jamf Pro](https://www.jamf.com) 來管理終端使用者的 Mac 時，Jamf Pro 會擷取受控 macOS 裝置的清查資訊。 
+
+## <a name="data"></a>資料  
+Jamf Pro 會將下列資訊回報給 Intune：  
 
 * 裝置 Azure AD 識別碼
 * JAMF 清查狀態 (過去 24 小時內使用 Jamf Pro 簽入之電腦的清查狀態)
@@ -69,8 +72,8 @@ ms.locfileid: "68670906"
 * UDID
 * 使用者電子郵件
 
-
 您可以在 [所有裝置]  檢視中選取 [刪除]  ，以從 Intune 主控台移除 Jamf 受控裝置。 選取多個裝置，並按一下 [刪除]  ，即可啟用刪除大量裝置。
 
+## <a name="next-steps"></a>後續步驟
 在 Jamf Pro 文件中取得如何[移除 Jamf 受控裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的相關資訊。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 

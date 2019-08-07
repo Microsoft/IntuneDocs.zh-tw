@@ -1,11 +1,12 @@
 ---
-title: Intune 的 Windows 10 傳遞最佳化設定 |Microsoft Docs
+title: Intune 的 Windows 10 傳遞最佳化設定
+titleSuffix: Microsoft Intune
 description: 您可以使用 Intune 為 Windows 10 裝置部署的傳遞最佳化設定。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493914"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756557"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 的傳遞最佳化設定
 
@@ -66,6 +67,15 @@ Intune 主控台中大多數選項會直接對應到 Windows 文件中深入討�
 | [快取保留時間上限 (日)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 指定每個檔案成功下載該檔案後，要在裝置傳遞最佳化快取上保留的時間長度。   <br><br>使用 Intune，您會以天數指定快取保留時間。 您定義的天數會轉換成適用秒數，這是 Windows 定義此設定的方式。 例如，設為 3 天的 Intune 設定會在裝置上轉換成 259200 秒 (3 天)。  <br><br>**預設**：不設定任何值      <br><br>**建議**：7   <br><br>原則 CSP：[DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 最大快取大小類型  | 查看詳細資料     | 選取如何管理裝置上由傳遞最佳化所使用的磁碟空間。 當沒有進行設定時，快取大小預設為可用磁碟空間的 20%。  <br><ul><li>**未設定** (預設)</li><br><li>**絕對** ‒ 指定[絕對快取大小上限 (GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) 來設定裝置可用來進行傳遞最佳化的磁碟空間上限。 設為 0 (零) 時，表示快取大小不受限制，雖然傳遞最佳化仍會在裝置磁碟空間不足時清除快取。 <br><br>需要 Windows 1607<br><br> 原則 CSP：[DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**百分比** ‒ 指定[快取大小上限 (%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) 來設定裝置可用來進行傳遞最佳化的磁碟空間上限。 此百分比是可用的磁碟空間百分比，傳遞最佳化會持續評估可用的磁碟空間並會清除快取，以使快取大小上限維持在所設定的百分比之下。 <br><br>需要 Windows 1511<br><br>原則 CSP：[DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN 對等快取](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | 選取 [啟用]  來設定裝置在由通往網域網路的 VPN 連線時參與對等快取。 啟用此設定的裝置可從其他網域網路裝置下載或上傳至其他網域網路裝置 (透過 VPN 或公司網域網路)。  <br><br>**預設**：未設定  <br><br>原則 CSP：[DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>本機伺服器快取  
+
+|設定  |Windows 版本  |詳細資料  |
+|---------|-----------------|---------|
+|快取伺服器主機名稱 | 1809  |指定您的裝置將使用的網路快取伺服器的 IP 位址或 FQDN 以進行傳遞優化, 然後選取 [**新增**] 以將該專案新增至清單。  <br><br>**預設**：未設定  <br><br>原則 CSP: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[延遲前景下載快取伺服器回退 (以秒為單位)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |指定時間 (以秒為單位) (0-2592000), 將快取伺服器的回復延遲到的 HTTP 來源, 以進行前景內容下載。 當延遲從 HTTP 進行前景下載的原則時, 它會先套用 (以便先允許來自對等的下載)。 (0-2592000)    <br><br>**預設**：0  <br><br>原則 CSP [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[延遲背景下載快取伺服器回退 (以秒為單位)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |指定以秒為單位的時間 (0-2592000), 將快取伺服器的回復延遲到 HTTP 來源, 以取得背景內容下載。 在設定*延遲背景 HTTP 下載 (以秒為單位)* 時, 該設定會先套用以允許來自對等的下載。 (0-2592000)   <br><br>**預設**：0 <br><br>原則 CSP: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>後續步驟
 
