@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884886"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783248"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -116,7 +116,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服�
 
 ## <a name="intune-tenant-location"></a>Intune 租用戶位置
 
-如果您的組織有全球支援，請務必在訂閱服務時規劃租用戶所在的位置。 國家 (地區) 會在您第一次註冊 Intune 訂閱時定義，並對應至全球下列地區：
+如果您的組織有全球支援，請務必在訂閱服務時規劃租用戶所在的位置。 在您第一次註冊 Intune 訂用帳戶時會定義國家/地區，並對應至下面所列的全球國家/地區：
 
 - 北美
 
@@ -125,7 +125,7 @@ Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服�
 - 亞洲及太平洋地區
 
 >[!IMPORTANT]
-> 之後無法變更國家 (地區) 與租用戶位置。
+> 之後便無法變更國家/地區及租用戶位置。
 
 ## <a name="external-dependencies"></a>外部相依性
 

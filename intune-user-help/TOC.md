@@ -39,8 +39,8 @@
 ### 作業系統問題
 #### [更新裝置](you-need-to-update-your-android-device.md)
 #### [不支援的版本](your-android-version-isnt-yet-supported.md)
-#### [您的裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [遺漏必要的憑證](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [裝置已進行 Root 破解，因此無法連線](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [遺漏必要的憑證](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [關閉不明的來源](you-need-to-turn-off-unknown-sources-android.md)
 #### [關閉 USB 偵錯](you-need-to-turn-off-usb-debugging-android.md)
 #### [開啟安全性威脅掃描](you-need-to-turn-on-scanning-for-security-threats-android.md)

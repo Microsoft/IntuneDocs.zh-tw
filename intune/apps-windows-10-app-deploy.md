@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680064"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
@@ -34,6 +34,8 @@ Microsoft Intune 目前支援 Windows 10 裝置上的各種應用程式類型和
 > 部署現代化應用程式所需的最低 Windows 10 更新如下：
 > - 針對 Windows 10 1803，[2018 年 5 月 23 日—KB4100403 (OS 組建 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)。
 > - 針對 Windows 10 1709，[2018 年 6 月 21 日—KB4284822 (OS 組建 16299.522)](https://support.microsoft.com/help/4284822)。
+>
+> 只有 Windows 10 1803 和更新版本才支援在沒有任何相關主要使用者的情況下安裝應用程式。
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 企業營運應用程式
 
@@ -41,7 +43,7 @@ Windows 10 LOB 應用程式會簽署及上傳至 Intune 管理主控台，並可
 
 ## <a name="microsoft-store-for-business-apps"></a>商務用 Microsoft 網上商店應用程式
 
-商務用 Microsoft Store 應用程式是從商務用 Microsoft Store 管理入口網站購買，然後透過 Microsoft Intune 同步進行管理的現代化應用程式。 應用程式可以**線上授權**或**離線授權**。 商務用 Microsoft Store 應用程式的更新是由 Microsoft Store 直接管理，身為系統管理員的您不需要採取其他動作。您也可以使用自訂統一資源識別項 (URI) 來防止更新特定應用程式。 如需詳細資訊，請參閱 [企業應用程式管理 - 防止應用程式自動更新](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) \(英文\)。 在裝置上，終端使用者也可以停用裝置上所有商務用 Microsoft Store 應用程式的更新。 
+商務用 Microsoft Store 應用程式是從商務用 Microsoft Store 管理入口網站購買，然後透過 Microsoft Intune 同步進行管理的現代化應用程式。 應用程式可以**線上授權**或**離線授權**。 商務用 Microsoft Store 應用程式的更新是由 Microsoft Store 直接管理，身為系統管理員的您不需要採取其他動作。您也可以使用自訂統一資源識別項 (URI) 來防止更新特定應用程式。 如需詳細資訊，請參閱 [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (企業應用程式管理 - 防止應用程式自動更新)。 在裝置上，終端使用者也可以停用裝置上所有商務用 Microsoft Store 應用程式的更新。 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>在 Windows 10 裝置上安裝應用程式
 視應用程式類型而定，您可以透過下列兩種方式之一在 Windows 10 裝置上安裝應用程式：

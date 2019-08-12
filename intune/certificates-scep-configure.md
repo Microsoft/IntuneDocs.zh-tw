@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 47c2e509c9eb032dae67dbb5a44839f88fa5de4b
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467508"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783066"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>搭配 Intune 設定及使用 SCEP 憑證
 
@@ -150,7 +150,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
 3. 檢視 [憑證範本]  資料夾下的發行範本來加以驗證。
 
-### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的先決條件
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步驟 3：設定 NDES 伺服器上的必要條件
 在此步驟中，您將：
 
 - 將 NDES 加入至 Windows Server 並設定 IIS 以支援 NDES
@@ -379,7 +379,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
      > 當產生的憑證簽署要求 (CSR) 中的主體名稱包含下列其中一個字元作為逸出字元 (以反斜線 \\ 開頭) 時，使用 SCEP 取得憑證有一個[已知問題](#avoid-certificate-signing-requests-with-escaped-special-characters)：
      > - \+
      > - ;
-     > - ,
+     > - 、
      > - =
 
         **使用者憑證類型**  
@@ -410,7 +410,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
             **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
 
-            在此範例中，您建立的主體名稱格式除了有 CN 與 E 變數之外，還會使用組織單位、組織、位置、狀態及國家/地區值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) 說明此函式和它支援的字串。
+            在此範例中，您建立的主體名稱格式除了有 CN 與 E 變數之外，還會使用「組織單位」、「組織」、「位置」、「狀態」及「國家/地區」值的字串。 [CertStrToName 函式](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) 說明此函式和它支援的字串。
 
         **裝置憑證類型**  
 
@@ -508,7 +508,7 @@ NDES 伺服器必須加入與企業 CA 相同樹系內的網域。 在[使用原
 
 特殊字元為：
 - \+
-- ,
+- 、
 - ;
 - =
 

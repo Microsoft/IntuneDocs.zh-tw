@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547435"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783189"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -44,7 +44,7 @@ ms.locfileid: "67547435"
 ## <a name="prerequisites"></a>必要條件
 
 若要使用 KME 註冊至 Intune，您必須先遵循下列步驟，在 Samsung Knox 入口網站上註冊您的公司：
-1. [確認可在您的區域取得 KME](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries) \(英文\)：在超過 55 個國家/地區都能取得 KME。 請確定您要進行部署的國家/地區有受到支援。
+1. [確認可在您的國家/地區取得 KME](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries) \(英文\)：在超過 55 個國家/地區都能取得 KME。 請確定您的部署國家/地區受到支援。
 
 2. [支援的裝置](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+) \(英文\)：KME 適用於所有 Samsung 裝置，其中 Android 註冊最低要求為 Knox 2.4，Android Enterprise 註冊最低要求為 Knox 2.8。
 

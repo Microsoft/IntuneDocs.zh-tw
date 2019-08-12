@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397333"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833524"
 ---
-# <a name="licenses-that-include-intune"></a>包含 Intune 的授權
+# <a name="microsoft-intune-licensing"></a>Microsoft Intune 授權
+針對不同的客戶需求和組織規模，從適用於學校和小型企業的簡單易用管理體驗，到企業客戶所需的較進階功能，都有 Microsoft Intune 可供使用。 大多數包含 Microsoft Intune 的授權也會授與使用 System Center Configuration Manager 的權限，只要訂用帳戶保持作用中狀態即可。 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+下列授權包含 Intune：
 
-下表顯示各項授權中提供的 Intune 版本：
+- Microsoft 365 E5
+- Microsoft 365 E3
+- 企業行動力 + 安全性 E5
+- 企業行動力 + 安全性 E3
+- Microsoft 365 商務版
+- Microsoft 365 F1
 
-| 使用權 | 包含的 Intune 版本 | 價格與功能比較 |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [深入了解](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| 企業行動力 + 安全性 E3 | Intune | [深入了解](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| 企業行動力 + 安全性 E5 | Intune | [深入了解](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 教育版 A1 | Intune 教育 | [深入了解](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 教育版 A3 | Intune 教育 | [深入了解](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 教育版 A5 | Intune 教育 | [深入了解](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [深入了解](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [深入了解](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [深入了解](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 商務版 | Intune | [深入了解](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-Intune 不包含在這份清單的授權中。
 
-如果使用者直接或間接從授權涵蓋的任何功能受益，就必須有適當的授權。
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune 教育版
+下列授權包含「Intune 教育版」：
 
-若要指派授權給使用者，請參閱[將 Intune 授權指派給您的使用者帳戶一文](licenses-assign.md)。
+- Microsoft 365 教育版 A5
+- Microsoft 365 教育版 A3
 
+## <a name="additional-information"></a>其他資訊
+- 除了上面所列的配套之外，也以獨立形式提供 Microsoft Intune 使用者和裝置訂用帳戶。
+- 針對未使用任何使用者親和性的 kiosk 類型案例，提供 Microsoft Intune 僅限裝置的訂用帳戶。
+- 如果使用者或裝置可從 Microsoft Intune 服務直接或間接受益 (包括透過 [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 存取 Microsoft Intune 服務)，就需要適當的 Microsoft Intune 授權。
+- Intune 不包含在上述表格所沒有的授權中。
+
+如需有關產品版本、產品授權更新、大量授權方案的最新資訊，以及其他有關您特定使用案例的資訊，請瀏覽 [Microsoft 授權](https://www.microsoft.com/licensing/default)頁面。  
+
+如需了解使用者和裝置授權如何影響對服務的存取，以及如何將授權指派給使用者，請參閱[將 Intune 授權指派給使用者帳戶](licenses-assign.md)一文。

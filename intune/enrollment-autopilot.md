@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625098"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700988"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -99,7 +99,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
     - **使用者授權合約 (EULA)** ：(Windows 10，版本 1709 或更新版本) 選擇是否要向使用者顯示授權合約。
     - **隱私權設定**：選擇是否要向使用者顯示隱私權設定。
     >[!IMPORTANT]
-    >若為 Windows 10 1903 版和更新版本的 Autopilot 部署，則診斷資料會自動預設為 [Full (完整)]。 如需詳細資訊，請參閱 [Windows 診斷資料](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
+    >[診斷資料] 設定的預設值在 Windows 版本之間各有不同。 就執行 Windows 10 1903 版的裝置而言，在全新體驗期間，預設值會設定為 [完整]。 如需詳細資訊，請參閱 [Windows 診斷資料](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **隱藏變更帳戶選項 (需要 Windows 10 1809 版或更新版本)** ：選擇 [隱藏]  以防止在公司登入和網域錯誤頁面上顯示變更帳戶選項。 此選項需要[在 Azure Active Directory 中設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **使用者帳戶類型**：選擇使用者的帳戶類型 ([系統管理員]  或 [標準]  使用者)。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329020"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700955"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -93,6 +93,7 @@ ms.locfileid: "68329020"
   | com.skype.raider | Skype | Skype 應用程式只適用於導致通話的特定動作。 |
   | com.android.providers.media | Android 媒體內容提供者 | 只允許進行鈴聲選取動作的媒體內容提供者。 |
   | com.google.android.gms; com.google.android.gsf | Google Play Services 套件 | 這些套件允許用於 Google Cloud Messaging 動作 (例如推送通知)。 |
+  | com.google.android.apps.maps | Google 地圖 | 允許瀏覽地址 |
 
 如需詳細資訊，請參閱[應用程式的資料傳輸原則例外狀況](app-protection-policies-exception.md)。
 

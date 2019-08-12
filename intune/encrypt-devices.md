@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467447"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756551"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密  
 
@@ -62,11 +62,18 @@ FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intu
 
 5. 針對 [修復金鑰類型]  ，只支援 [個人金鑰]  。  
 
-   請考慮新增一則訊息來協助引導終端使用者擷取其裝置的修復金鑰。 當您使用個人修復金鑰輪替的設定時，此資訊對您的終端使用者會很有幫助，其可以自動為裝置定期產生新的修復金鑰。  
+   請考慮新增一則訊息來協助引導終端使用者擷取其裝置的修復金鑰。 當您使用個人修復金鑰輪替的設定時，這項資訊對您的終端使用者會很有幫助，其可以自動為裝置定期產生新的修復金鑰。  
 
    例如：若要擷取遺失或最近輪替的修復金鑰，請從任何裝置登入 Intune 公司入口網站。 在入口網站中，前往 [裝置]  並選取已啟用 FileVault 的裝置，然後選取 [取得修復金鑰]  。 目前的修復金鑰會隨即顯示。  
 
 6. 完成其餘 [FileVault 設定](endpoint-protection-macos.md#filevault)以符合您的商務需求，然後選取 [確定]  。  
+
+   > [!IMPORTANT]  
+   > 將 [停用登出時的提示]  設定設為 [啟用]  時，有一個已知問題。 當設為 [啟用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，但沒有進一步詳細資料。
+   > 
+   > 當 [停用登出時的提示]  設為 [未設定]  時，[允許略過的次數]  可以是 [未設定]  或有某個值。  
+   > 
+   > 在未來的更新中將會解決此問題。 
 
 7. 完成其他組態設定，然後儲存設定檔。  
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8b39c9f4f875ca458817940819716e1188d36eef
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882236"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783261"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 來遠端管理 Intune 裝置
 
@@ -28,7 +28,10 @@ ms.locfileid: "67882236"
 
 ## <a name="prerequisites"></a>必要條件
 
-- 使用支援的裝置。 Intune 受控的 Android、Windows、iOS 和 macOS 裝置支援遠端管理。 TeamViewer 可能不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。針對其支援性，請參閱 [TeamViewer](https://www.teamviewer.com) 以取得更新。
+- 使用支援的裝置。 受 Intune 管理的 Android Device Admin、「Android 公司設定檔」、Windows、iOS 及 macOS 裝置可支援遠端系統管理。 TeamViewer 可能不支援 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。針對其支援性，請參閱 [TeamViewer](https://www.teamviewer.com) 以取得更新。
+
+> [!NOTE]
+> 不支援「Android 專用」和「完全受控」。
 
 - Azure 入口網站中的 Intune 系統管理員必須有下列 [Intune 角色](role-based-access-control.md)：  
 

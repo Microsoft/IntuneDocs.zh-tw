@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045209"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680000"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -33,7 +33,10 @@ ms.locfileid: "67045209"
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中設定裝置合規性原則
 
 1. 開啟 Microsoft Azure，然後瀏覽至 [Intune]   > [裝置合規性]   > [原則]  。 您可以建立 macOS 的原則，包括針對不符合規範的使用者及群組選擇一系列的動作 (例如傳送警告電子郵件)。
-2. 搜尋想要的群組，然後對它們套用原則。
+2. 選取原則 > [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
+3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取您希望套用此原則的使用者群組 > 選擇 [儲存] 以將原則部署到使用者。
+
+您隨即將政策套用至使用者。 系統會評估原則所針對之使用者所使用的裝置是否符合規範，然後針對 Azure Active Directory 中的 [裝置需要標記為合規] 設定，標示為符合規範。
 
 > [!Note]
 > Intune 需要完整磁碟加密符合規範。

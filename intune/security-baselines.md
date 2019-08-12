@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671024"
+ms.locfileid: "68679989"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -67,7 +67,7 @@ ms.locfileid: "68671024"
 下列安全性基準執行個體可以搭欸 Intune 使用。 使用連結來檢視每個基準最近執行個體的設定。 
 
 - **MDM 安全性基準**
-  - [2019 年 春季 (19H1) 的 MDM 安全性基準](security-baseline-settings-mdm.md)
+  - [2019 年 5 月的 MDM 安全性基準](security-baseline-settings-mdm.md)
   - [預覽：2018 年 10 月的 MDM 安全性基準](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP 基準**  
@@ -79,7 +79,7 @@ ms.locfileid: "68671024"
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  
