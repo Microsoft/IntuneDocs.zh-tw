@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625129"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862130"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>安裝貴組織所需的遺失憑證  
 
-如果您的裝置未在 Intune 註冊，且遺失公司支援人員所要求的特定憑證，您就無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
+如果您的裝置未在 Intune 中註冊, 且缺少必要的憑證, 您將無法登入公司入口網站應用程式。 當您嘗試登入時，您會看到下列訊息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ ms.locfileid: "68625129"
 
 1. 在公司入口網站應用程式中, 移至右上角並選取功能表。  
 2. 選取 [設定]  。  
-3. 在 [**啟用瀏覽器存取**] 旁, 選取 [**啟用**]。  
-4. 在 [裝置系統管理員] 畫面上, 選取 [**啟用**]。 
+3. 在 [ **啟用瀏覽器**存取 **]** 旁, 選取 [啟用]。  
+4. 在 [裝置系統管理員] 畫面**上**, 選取 [啟用]。 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>透過 web 搜尋識別並下載遺失的憑證
 完成這些步驟, 以在您的裝置上手動識別並安裝憑證。  
@@ -82,3 +82,7 @@ ms.locfileid: "68625129"
 7. 重新開啟公司入口網站應用程式。 您現在應該能夠登入公司入口網站應用程式。 如果您需要協助，請連絡您公司的支援人員。
 
 如果您已經遵循相關步驟，卻仍顯示上述相同的「遺失憑證」訊息，可能表示您需要公司支援人員協助安裝其他憑證。 請使用可在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)取得的連絡資訊來連絡您公司的支援人員以取得協助。
+
+## <a name="next-steps"></a>後續步驟  
+
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
