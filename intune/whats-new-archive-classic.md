@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09a996e3e1a47cae33e8a4189b4406a940acfe3
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: d414295966580e0dd91ce2b94757509fd13bdfbe
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353267"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783140"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -178,7 +178,7 @@ iOS 10.3 版在 2017 年 3 月 27 日開始向 iOS 使用者推出。 所有現�
 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文市集取得應用程式。 公司入口網站將支援此工作流程，方法是將中國的 Android 使用者重新導向，以便從當地的應用程式市集下載公司入口網站及 Outlook 應用程式。 這將會在啟用條件式存取原則時，改善對於行動裝置管理及行動應用程式管理的使用者體驗。 Android 版公司入口網站和 Outlook 應用程式可在下列中文應用程式市集取得：
 
 - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-- [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+- [小米應用商店](http://en.miui.com/thread-469541-1-1.html)
 - [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
 - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
 - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -328,7 +328,7 @@ __中國現在提供 Android 版公司入口網站應用程式__ <!--VSO 65809
 * [華為](https://go.microsoft.com/fwlink/?linkid=836948)
 * [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
 * [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
-* [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+* [小米應用商店](http://en.miui.com/thread-469541-1-1.html)
 
 適用於 Android 的公司入口網站應用程式會使用 Google Play 服務來與 Microsoft Intune 服務通訊。 由於中國尚無法使用 Google Play 服務，因此執行下列任何工作可能需要多達 8 小時才能完成。 
 
