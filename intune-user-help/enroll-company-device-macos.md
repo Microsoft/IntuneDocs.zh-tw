@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511922"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783027"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中註冊組織提供的 macOS 裝置
 
@@ -43,7 +43,7 @@ ms.locfileid: "67511922"
 2. 選擇您的國家/地區，然後按一下 [繼續]  。  
 
    ![macOS 裝置設定助理 [歡迎使用] 畫面的螢幕擷取畫面，其中顯示可供選取的語言清單。](./media/macos-dep-welcome-1808.png)   
-3. 選擇鍵盤配置。 此清單會根據您選取的國家/地區顯示一或多個選項。 不論選取的國家/地區為何，若要查看所有的配置選項，請按一下 [全部顯示]  。 完成後，請按一下 [繼續]  。  
+3. 選擇鍵盤配置。 此清單會根據您選取的國家/地區顯示一或多個選項。 不論選取的國家/地區為何，若要查看所有版面配置選項，請按一下 [全部顯示]  。 完成後，請按一下 [繼續]  。  
 
    ![macOS 裝置設定助理鍵盤配置畫面的螢幕擷取畫面，其中顯示可供選取的鍵盤語言清單、未核取的 [全部顯示] 選項，以及 [上一步] 和 [繼續] 按鈕。](./media/macos-dep-keyboard-1808.png)  
 4. 選取您的 Wi-Fi 網路。 您必須具有網際網路連線才能繼續設定。 如果未看到您的網路，或者您需要透過有線網路連線，請按一下 [其他網路選項]  。 完成後，請按一下 [繼續]  。  

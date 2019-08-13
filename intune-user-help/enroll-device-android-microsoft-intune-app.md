@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735752"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862276"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 應用程式註冊您的公司裝置
 
@@ -50,9 +50,9 @@ ms.locfileid: "67735752"
 
      若您收到指示，要求您使用另一種方法，請繼續前往步驟 3。    
 
-1. 連線到 Wi-Fi 並點選 [下一步]  。 遵循符合您註冊方法的步驟。 
+3. 連線到 Wi-Fi 並點選 [下一步]  。 遵循符合您註冊方法的步驟。 
 
-    * 權杖：當您到達 Google 登入畫面時，請完成[權杖註冊](#token-enrollment)中的步驟。    
+    * 權杖：當您到達 Google 登入畫面時，請完成[權杖註冊](#token-enrollment)中的步驟。  
     * Google Zero Touch：在您連線到 Wi-Fi 後，組織將會重新辨識您的裝置。 繼續前往步驟 4 並遵循畫面上的提示，直到安裝完成。    
  
        ![Google 條款畫面的範例影像 (若您使用 Google Zero Touch 的話)，其中已醒目提示 [接受並繼續] 按鈕。](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ ms.locfileid: "67735752"
 
    ![設定您公司電話畫面的範例影像，其中已醒目提示 [安裝] 按鈕。](./media/fully-managed-intune-app-11.png)   
 
-10. 當您收到訊息，顯示裝置已準備就緒時，請點選 [完成]  。 
+10. 請**按** [開始] 開啟 Microsoft Intune 應用程式, 並註冊您的裝置。 
 
-11. 前往您的應用程式，並開啟 Microsoft Intune 應用程式。 選取 [登入]  。 
+    ![設定您公司電話畫面的範例影像，其中已醒目提示 [啟動] 按鈕。](./media/fully-managed-intune-app-17.png)   
 
-12. 在 [設定存取]  畫面上，您將會看到暫止的工作清單。 點選 [繼續]  。  
+11. 按一下 **[登**入 **], 然後**按 [下一步] 開始註冊。 當您看到註冊完成的訊息時, 請點擊 **[** 完成]。  
 
-       ![Microsoft Intune 應用程式 [設定存取] 畫面的範例影像，顯示暫止的工作。](./media/fully-managed-intune-app-14.png)   
+    ![設定存取的範例影像, 註冊您的裝置畫面, 反白顯示 [完成] 按鈕。](./media/fully-managed-intune-app-19.png)   
 
-13. 當裝置註冊完成時，請點選 [繼續]  。 Microsoft Intune 可能會提示您更新其他裝置設定。   
+10. 當您看到訊息，顯示裝置已準備就緒時，請點選 [完成]  。  
 
-       ![Microsoft Intune 應用程式 [更新裝置設定] 畫面的範例影像。](./media/fully-managed-intune-app-15-2.png)   
+    ![設定您公司電話畫面的範例影像，其中已醒目提示 [完成] 按鈕。](./media/fully-managed-intune-app-18.png)   
 
-14. 當清單中的所有項目都顯示綠色圓形時，表示安裝已完成。 您現在可以存取公司的資源。  
-
-       ![Microsoft Intune 應用程式 [設定存取] 畫面的範例影像，顯示完成的工作。](./media/fully-managed-intune-app-16.png)   
+如果您無法存取貴組織的資源, 您可能需要更新裝置上的其他設定。 登入 Microsoft Intune 應用程式, 以檢查是否有必要的更新。   
 
 
 ## <a name="qr-code-enrollment"></a>QR 代碼註冊  
@@ -118,11 +116,7 @@ ms.locfileid: "67735752"
 
 3. 在 [註冊此裝置]  畫面上，選取 [下一步]  。  
 
-   ![[註冊此裝置] 畫面的範例影像。 其中顯示 QR 代碼的插畫並醒目提示 [下一步] 按鈕。](./media/token-intune-app-02.png)  
-
-4. 選取 [輸入代碼]  。
-
-   ![使用中 QR 代碼掃描器的範例螢幕擷取畫面。 其中已醒目提示 [輸入代碼] 按鈕。](./media/token-intune-app-03.png)  
+4. 選取 [輸入代碼]  。  
 
 5. 在 [掃描或輸入代碼]  畫面上，鍵入組織給您的代碼。  然後按一下 [下一步]  。  
 

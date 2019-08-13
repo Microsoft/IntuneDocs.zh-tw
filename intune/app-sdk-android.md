@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
-ms.translationtype: MTE75
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482940"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783203"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -636,7 +636,7 @@ public interface MAMNotificationReceiver {
 > [!NOTE]
 > 應用程式永遠不得同時註冊 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA` 通知。
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 `MANAGEMENT_REMOVED` 通知會指出先前由原則管理的使用者將不再由 Intune MAM 原則管理。 這不需要抹除使用者資料會登出使用者 (若需要抹除，則會傳送 `WIPE_USER_DATA` 通知)。 許多應用程式可能完全不需要處理此通知，但是使用 `MAMDataProtectionManager` 的應用程式應[特別注意此通知](#data-protection)。
 
