@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670930"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833557"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 8月
 
@@ -62,7 +62,7 @@ ms.locfileid: "68670930"
 系統管理員可以管理在使用者或裝置群組層級取消註冊裝置時, 應用程式是否已移除或保留在裝置上。 
 
 ### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>分類商務用 Microsoft 網上商店應用程式 <!-- 3926922 -->
-您將能夠分類商務應用程式的 Microsoft Store。 若要這麼做, 請選擇 [ **Intune**  > **用戶端應用** > 程式] [**應用**程式] > 選取商務應用程式 >**應用程式資訊** > **類別**的 Microsoft Store。 在下拉式功能表中, 指派 [類別]。
+您將能夠分類商務應用程式的 Microsoft Store。 若要這麼做, **請**選擇 [Intune >   用戶端應用 >  **程式] [應用**程式 **] > 選取商務應用程式 > 應用程式 Microsoft Store資訊**  > 類別。  在下拉式功能表中, 指派 [類別]。
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>設定組織帳戶的代理程式更新內容 <!-- 2576686 -->
 Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可讓您控制組織帳戶的代理程式更新內容。 這項功能將需要應用程式的支援, 而且可能無法供所有啟用應用程式的應用程式使用。 如需 APP 的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 
@@ -73,7 +73,7 @@ Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可�
 ## <a name="device-configuration"></a>裝置設定
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>某些不受監督 iOS 裝置限制將會在 iOS 13.0 版本中僅受到監督 <!-- 4867809  -->
-有些設定會套用到 iOS 13.0 版僅限受監督的裝置。 這些設定包括：
+從 iOS 13.0 版開始, 某些設定會套用至受監督的裝置。 這些設定包括：
 
 - App Store、文件檢視、遊戲
   - App Store
@@ -98,16 +98,16 @@ Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可�
 - iOS 13.0 和更新版本
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>新設定和現有設定的變更, 以限制 iOS 和 macOS 裝置上的功能 <!-- 4867699 4867709  -->
-您將能夠建立設定檔來限制執行 iOS 和 macOS 的裝置上的設定 (**裝置配置** > **檔** > 為平臺**建立設定檔** >  **iOS**或**macOS** )輸入 >**裝置限制**)。 將新增下列功能：
+您將能夠建立設定檔, 以限制執行 iOS 和 macOS 的裝置上的**設定 (** 裝置配置 >   檔 >  **建立設定檔** >    適用于平臺類型的 iOS 或macOS>**裝置限制**)。 將新增下列功能：
 
-- 在 [ **macOS**  > **裝置限制** > ] [**雲端和儲存體**] 上, 使用新的 [**遞交**] 設定來封鎖使用者在一個 macOS 裝置上啟動工作, 並繼續使用另一個 macOS 或 iOS 裝置。
+- 在 **[** macOS裝置 > 限制][   > 雲端和儲存體]  上, 使用新**的 [遞交**]設定 禁止使用者在一個 macOS 裝置上啟動工作, 並繼續在另一個 macOS 或 iOS 裝置上工作。
   若要查看目前的設定，請前往 [macOS 裝置設定以使用 Intune 允許或限制功能](device-restrictions-macos.md)。
-- 在**iOS**  > **裝置限制**上, 有幾個變更:
-  - **內建應用程式** > **尋找我的 iPhone (僅限受監督)** : 在「尋找我的應用程式」功能中封鎖這項功能的新設定。 
-  - **內建應用程式** > **尋找我的朋友 (僅限受監督)** : 在「尋找我的應用程式」功能中封鎖這項功能的新設定。 
-  -   >  **Wi-fi 狀態的無線修改 (僅限受監督)** : 防止使用者在裝置上開啟或關閉 wi-fi 的新設定。
-  - **鍵盤和字典** >  **QuickPath (僅限受監督)** : 封鎖 QuickPath 功能的新設定。
-  - **雲端和儲存體**:**活動接續**已重新命名為 [**遞交**]。
+- 在**iOS**裝置限制上, 有幾個變更: >  
+  - **內建應用程式**  >  **尋找我的 iPhone (僅限**受監督): 在「尋找我的應用程式」功能中封鎖這項功能的新設定。 
+  - **內建應用程式**  >  **尋找我的朋友 (僅限**受監督): 在「尋找我的應用程式」功能中封鎖這項功能的新設定。 
+  - **Wi-fi**狀態的無線 >  **修改 (僅限受監督)** : 防止使用者在裝置上開啟或關閉 wi-fi 的新設定。
+  - **鍵盤和字典**  >   QuickPath (僅限受監督): 封鎖 QuickPath 功能的新設定。
+  - **雲端和儲存體**: **活動接續**已重新命名**為**[遞交]。
 
   若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 iOS 裝置設定](device-restrictions-ios.md)。
 
@@ -116,7 +116,7 @@ Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可�
 - iOS 13 和更新版本
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>控制使用者登入 macOS 裝置時開啟的應用程式、檔案、檔和資料夾 <!--3914202  -->
-您將能夠在 macOS 裝置上啟用及設定功能 (**裝置** > 設定**設定檔** > **建立** > 適用于的平臺 >**裝置功能**的設定檔**macOS**配置檔案類型)。 
+您**將能夠在 macOS 裝置上啟用及設定功能 (**  >  **裝置設定設定檔**  >  **建立配置**檔 > macOS, 適用于**設定檔**類型的平臺 > 裝置功能)。  
 
 將會有新的登入專案設定, 可控制當使用者登入已註冊的裝置時, 會開啟哪些應用程式、檔案、檔及資料夾。 
 
@@ -126,13 +126,13 @@ Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可�
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>適用于多應用程式模式的 Android Enterprise 專用裝置新功能 <!-- 3755304 3041943 3041946  -->
-您將能夠在 Android Enterprise 專用裝置上, 以 kiosk 樣式的體驗來控制功能和設定。 若要這麼做, 請選擇 [**裝置配置** > **檔** > ] [**建立設定檔** > ] [**Android Enterprise** for platform > 裝置擁有者], 配置檔案類型的**裝置限制**。
+您將能夠在 Android Enterprise 專用裝置上, 以 kiosk 樣式的體驗來控制功能和設定。 若要這麼做, **請選擇** >   裝置設定配置檔 >  [建立設定檔  ][Android >   Enterprise] 僅適用于  平臺 > 裝置擁有者, 配置檔案類型的裝置限制。
 
 將新增下列功能：
-- **專用裝置** > **多應用程式**: 您可以在裝置上進行輕掃, 或在螢幕上浮動, 讓使用者可以移動**虛擬首頁按鈕**。
-- **專用裝置** > **多應用程式**: 「中」的**存取權**可讓使用者使用「外顯」。 
-- **專用裝置** > **多應用程式**:**媒體音量控制**可讓使用者使用滑杆控制裝置的媒體量。 
-- **專用裝置** > **多應用程式**: 啟用螢幕保護裝置、上傳自訂映射, 以及控制螢幕保護裝置程式的顯示時機。
+- **專用裝置**  > 多應用  程式:您可以  在裝置上進行輕掃, 或在螢幕上浮動, 讓使用者可以移動虛擬首頁按鈕。
+- **專用裝置**  > 多應用  程式:  「中」的存取權可讓使用者使用「外顯」。 
+- **專用裝置**  > 多應用  程式:媒體音量  控制可讓使用者使用滑杆控制裝置的媒體量。 
+- **專用裝置**  > 多應用  程式: 啟用螢幕保護裝置、上傳自訂映射, 以及控制螢幕保護裝置程式的顯示時機。
 
 若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 Android Enterprise 裝置設定](device-restrictions-android-for-work.md#dedicated-device-settings)。
 
@@ -167,11 +167,11 @@ Android 和 iOS 裝置上的 Intune 應用程式保護原則 (應用程式) 可�
 - 螢幕使用時間
 - Touch ID 設定
 
-若要這麼做, 請移至 **裝置註冊** >  **Apple 註冊** >  **註冊計畫權杖** > 選擇 >**設定檔**的權杖 > 選擇設定檔 >**屬性** > **編輯**在 **設定助理自訂** 旁。
-如需設定助理自訂的詳細資訊, 請參閱[建立 Apple 註冊設定檔](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
+若要這麼做, 請**移至**[裝置 >   註冊 >  ] [  Apple 註冊 ] [註冊  計畫權杖] > 選擇權杖 >配置檔 > 選擇 [   > 設定助理自  定義 ]旁的設定檔>屬性編輯  。
+如需設定助理自訂的詳細資訊[, 請參閱建立 Apple ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)註冊設定檔。
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Android 註冊裝置系統管理員支援 <!-- 4869749  -->
-Android 裝置管理員註冊選項將會新增至 android 註冊頁面 (**Intune**  > **裝置註冊** >  **Android 註冊**)。 針對所有租使用者, 預設仍會啟用 Android 裝置系統管理員。  
+Android 裝置管理員註冊選項將會新增至 android  註冊頁面 (Intune > **裝置註冊**  > android註冊  )。 針對所有租使用者, 預設仍會啟用 Android 裝置系統管理員。  
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>若是 iOS 裝置, 請自訂公司入口網站的 [註冊程式隱私權] 畫面 <!-- 4394993  -->
 使用 markdown, 您將能夠自訂使用者在 iOS 註冊期間看到的公司入口網站隱私權畫面。 具體來說, 您可以自訂群組織無法在裝置上查看或執行的專案清單。
@@ -183,7 +183,7 @@ Android 裝置管理員註冊選項將會新增至 android 註冊頁面 (**Intun
 每個 Android 裝置的 [硬體] 頁面上都會有一個新專案, 其中包含裝置的作業系統組建編號。
 
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>將自動裝置清除時間限制設定為30天 <!--4231059  -->
-在最後一次登入之後, 您將能夠將自動裝置清除時間限制設定為30天 (而不是目前的限制為90天)。 若要這麼做, 請移至**Intune**  > **裝置** > **設定** > **裝置清除規則**。
+在最後一次登入之後, 您將能夠將自動裝置清除時間限制設定為30天 (而不是目前的限制為90天)。 若要這麼做, 請**移**至Intune >   裝置 > 設定   > **裝置清除規則**。
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>以角色為基礎的存取控制
