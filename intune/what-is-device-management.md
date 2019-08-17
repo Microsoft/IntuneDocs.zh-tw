@@ -4,7 +4,7 @@ description: Microsoft 365 企業版隨附 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427301"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022875"
 ---
 # <a name="what-is-device-management"></a>什麼是裝置管理？ 
 
@@ -75,7 +75,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>使用裝置管理系統管理中心簡化 IT 工作
 
-[裝置管理系統管理中心](https://devicemanagement.portal.azure.com/)是您一次管理及完成行動裝置工作的位置。 此工作區包含用於裝置管理的服務 (包括 Intune 與 Azure Active Directory)，以及用於管理用戶端應用程式的服務。 
+[裝置管理系統管理中心](https://devicemanagement.microsoft.com/)是您一次管理及完成行動裝置工作的位置。 此工作區包含用於裝置管理的服務 (包括 Intune 與 Azure Active Directory)，以及用於管理用戶端應用程式的服務。 
 
 在 [裝置管理] 系統管理中心, 您可以:
 

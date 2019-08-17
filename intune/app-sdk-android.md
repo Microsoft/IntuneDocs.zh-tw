@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
-ms.translationtype: HT
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783203"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960558"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -1726,7 +1726,7 @@ LOGGER.info("Found value " + valueToUse);
 
 1. 若您的應用程式與 ADAL 整合，或是您需要啟用 SSO，請在[常見 ADAL 設定](#common-adal-configurations) #2 之後[設定 ADAL](#configure-azure-active-directory-authentication-library-adal)。 若不需要，您可以跳過此步驟。
    
-2. 將下列值放在資訊清單中以啟用預設註冊：
+2. 在`<application>`標記底下的資訊清單中新增下列值, 以啟用預設註冊:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ LOGGER.info("Found value " + valueToUse);
    > [!NOTE] 
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
 
-3. 將下列值放在資訊清單中以啟用所需的 MAM 原則：
+3. 在`<application>`標記底下的資訊清單中新增下列值, 以啟用所需的 MAM 原則:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />

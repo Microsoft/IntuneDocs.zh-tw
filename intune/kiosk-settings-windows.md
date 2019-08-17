@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046965"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487742"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -66,9 +66,7 @@ ms.locfileid: "66046965"
     > [!NOTE]
     > 此設定可啟用裝置上的 Microsoft Edge 瀏覽器。 若要設定特定於 Microsoft Edge 的設定，請建立裝置組態設定檔 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Windows 10]  平台 > [裝置限制]   >  [Microsoft Edge 瀏覽器]  )。 [Microsoft Edge 瀏覽器](device-restrictions-windows-10.md#microsoft-edge-browser)會列出並描述可用的設定。
 
-    按一下 [確定]  以儲存您的變更。
-
-  - **新增 kiosk 瀏覽器**：選取 [Kiosk 瀏覽器設定]  。 這些設定會控制 Kiosk 上的網頁瀏覽器應用程式。 請確定您從 Microsoft Store 取得 [Kiosk 瀏覽器應用程式](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)、將其新增至 Intune 作為[用戶端應用程式](apps-add.md)，然後將應用程式指派給 kiosk 裝置。
+  - **新增 kiosk 瀏覽器**：選取 [Kiosk 瀏覽器設定]  。 這些設定會控制 Kiosk 上的網頁瀏覽器應用程式。 請確定您從存放區取得[Kiosk 瀏覽器應用程式](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP), 並將其新增至 Intune 作為[用戶端應用程式](apps-add.md)。 然後, 將應用程式指派給 kiosk 裝置。
 
     輸入下列設定：
 
@@ -91,15 +89,14 @@ ms.locfileid: "66046965"
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    按一下 [確定]  以儲存您的變更。
+    > [!NOTE]
+    > 使用 Microsoft Kiosk 瀏覽器啟用自動登登的 Windows 10 Kiosk, 必須使用商務用 Microsoft Store 的離線授權。 這項需求是因為自動登會使用沒有 Azure Active Directory (AD) 認證的本機使用者帳戶。 因此, 無法評估線上授權。 如需詳細資訊，請參閱[發佈離線應用程式](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
 
   - **新增市集應用程式**：選取 [新增市集應用程式]  然後從清單中選取應用程式。
 
     目前未列出任何應用程式？ 請使用[用戶端應用程式](apps-add.md)中的步驟新增一些應用程式。
-
-  按一下 [確定]  以儲存您的變更。
 
 ## <a name="multi-app-kiosks"></a>多應用程式 kiosk
 
@@ -132,8 +129,6 @@ ms.locfileid: "66046965"
       > [!NOTE]
       > 此設定可啟用裝置上的 Microsoft Edge 瀏覽器。 若要設定特定於 Microsoft Edge 的設定，請建立裝置組態設定檔 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Windows 10]  平台 > [裝置限制]   >  [Microsoft Edge 瀏覽器]  )。 [Microsoft Edge 瀏覽器](device-restrictions-windows-10.md#microsoft-edge-browser)會列出並描述可用的設定。
 
-      按一下 [確定]  以儲存您的變更。
-
     - **新增 Kiosk 瀏覽器**：這些設定會控制 Kiosk 上的網頁瀏覽器應用程式。 請確定您使用[用戶端應用程式](apps-add.md)將網頁瀏覽器應用程式部署到 kiosk 裝置。
 
       輸入下列設定：
@@ -152,13 +147,12 @@ ms.locfileid: "66046965"
 
         若要允許特定網站，請上傳包含允許網站清單的 .csv 檔案。 如果您未新增 .csv 檔案，則會允許所有網站。
 
-      按一下 [確定]  以儲存您的變更。
+      > [!NOTE]
+      > 使用 Microsoft Kiosk 瀏覽器啟用自動登登的 Windows 10 Kiosk, 必須使用商務用 Microsoft Store 的離線授權。 這項需求是因為自動登會使用沒有 Azure Active Directory (AD) 認證的本機使用者帳戶。 因此, 無法評估線上授權。 如需詳細資訊，請參閱[發佈離線應用程式](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
 
   - **應用程式**
 
     - **新增市集應用程式**：從商務用 Microsoft Store 新增應用程式。 如果目前未列出任何應用程式，則您可以取得應用程式，然後[將其新增至 Intune](store-apps-windows.md)。 例如，您可以新增 Kiosk 瀏覽器、Excel、OneNote 等。
-
-      按一下 [確定]  以儲存您的變更。
 
     - **新增 Win32 應用程式**：Win32 應用程式是傳統型應用程式，例如 Visual Studio Code 或 Google Chrome。 輸入下列內容：
 
@@ -166,14 +160,10 @@ ms.locfileid: "66046965"
       - **本機路徑**：必要。 輸入可執行檔的路徑，例如 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 或 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`。
       - **應用程式使用者模型識別碼 (AUMID)** ：輸入 Win32 應用程式的應用程式使用者模型識別碼 (AUMID)。 此設定可決定桌面上磚的開始畫面版面配置。 若要取得此識別碼，請參閱 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)。
 
-      按一下 [確定]  以儲存您的變更。
-
     - **依 AUMID 新增**：使用此選項可新增現成的 Windows 應用程式，例如 [記事本] 或 [小算盤]。 輸入下列內容：
 
       - **應用程式名稱**：必要。 輸入應用程式的名稱。
       - **應用程式使用者模型識別碼 (AUMID)** ：必要。 輸入 Windows 應用程式的應用程式使用者模型識別碼 (AUMID)。 若要取得此識別碼，請參閱 [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (尋找已安裝應用程式的應用程式使用者模型識別碼)。
-
-      按一下 [確定]  以儲存您的變更。
 
     - **自動啟動**：選擇性。 選擇使用者登入時自動啟動的應用程式。 只有一個應用程式可以自動啟動。
     - **磚大小**：必要。 針對應用程式磚大小，選擇 [小]、[中]、[寬] 或 [大]。
@@ -186,8 +176,6 @@ ms.locfileid: "66046965"
 - **Windows 工作列**：選擇 [顯示]  或 [隱藏]  工作列。 預設不會顯示此工作列。 圖示 (例如 Wi-Fi 圖示) 會顯示，但使用者無法變更設定。
 
 - **允許下載資料夾的存取權**：選擇 [是]  以允許使用者存取 Windows 檔案總管中的 [下載] 資料夾。 根據預設，已停用對 [下載] 資料夾的存取權。 這項功能通常用於讓終端使用者存取從瀏覽器下載的項目。
-
-按一下 [確定]  以儲存您的變更。
 
 ## <a name="next-steps"></a>後續步驟
 

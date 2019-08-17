@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756518"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960422"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 macOS Endpoint Protection 設定  
 
@@ -82,6 +82,9 @@ ms.locfileid: "68756518"
 ## <a name="filevault"></a>FileVault  
 如需 Apple FileVault 設定的詳細資訊, 請參閱 Apple 開發人員內容中的[FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) 。 
 
+> [!IMPORTANT]  
+> 從 macOS 10.15, FileVault 設定需要使用者核准的 MDM 註冊。 
+
 - **FileVault**  
   您可以在執行 macOS 10.13 和更新版本的裝置上, 使用 XTS-AES 128 與 FileVault 來*啟用*完整磁片加密。  
   - **未設定**  
@@ -104,9 +107,9 @@ ms.locfileid: "68756518"
     **預設**：未設定  
 
      > [!IMPORTANT]  
-     > 當登出的 [**停用提示**] 設定為 [*啟用*] 時, 會發生已知問題。 當設定為 [*啟用*] 時, [**允許略過的次數**] 設定必須設為值, 而且不得設定為 [*未*設定]。 如果設為 [*未*設定], 則裝置上的設定檔會失敗。 在此案例中, 裝置會將它的**設定檔狀態摘要**視為**錯誤**, 而不會有進一步的詳細資料。
+     > 將 [停用登出時的提示]  設定設為 [啟用]  時，有一個已知問題。 當設為 [啟用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，但沒有進一步詳細資料。
      > 
-     > 當 [**登出時停用提示**] 設為 [*未*設定] 時,**允許略過的次數**可以是*未*設定或具有值。  
+     > 當 [停用登出時的提示]  設為 [未設定]  時，[允許略過的次數]  可以是 [未設定]  或有某個值。  
      > 
      > 在未來的更新中將會解決此問題。 
 
