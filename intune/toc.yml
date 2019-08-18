@@ -191,7 +191,7 @@
             - name: 公司識別碼
               href: corporate-identifiers-add.md
               displayName: COD
-            - name: Multi-Factor Authentication
+            - name: '[Multi-Factor Authentication]'
               href: multi-factor-authentication.md
               displayName: mfa; multifactor
             - name: 裝置註冊管理員
@@ -295,7 +295,7 @@
           href: device-erase.md
         - name: 遠端控制行動裝置
           href: teamviewer-support.md
-        - name: 重設 Windows 10 的 PIN
+        - name: 重設 Windows 10 的 PIN 碼
           href: device-windows-pin-reset.md
         - name: 同步裝置
           href: device-sync.md
@@ -309,9 +309,9 @@
           href: device-compliance-get-started.md
         - name: 建立原則
           href: create-compliance-policy.md
-        - name: 位置型合規性
+        - name: 依據位置的合規性
           href: use-network-locations.md
-        - name: 不符合規範時要採取的動作
+        - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -439,7 +439,7 @@
                   items:
                     - name: 新增 MTD 應用程式
                       href: mtd-apps-ios-app-configuration-policy-add-assign.md
-                    - name: 建立 MTD 裝置合規性政策
+                    - name: 建立 MTD 裝置合規性原則
                       href: mtd-device-compliance-policy-create.md
                     - name: 在 Intune 中啟用 MTD
                       href: mtd-connector-enable.md
@@ -533,7 +533,7 @@
           items:
             - name: 適用於商務設定的 Windows Update
               href: windows-update-for-business-configure.md
-            - name: Windows Update 合規性報告
+            - name: Windows Update 相容性報告
               href: windows-update-compliance-reports.md
             - name: iOS 更新原則
               href: software-updates-ios.md
@@ -560,7 +560,7 @@
                   items:
                     - name: 手動新增公司入口網站應用程式
                       href: store-apps-company-portal-app.md
-                - name: 受控 Google Play 應用程式
+                - name: 受管理的 Google Play 應用程式
                   href: apps-add-android-for-work.md
                 - name: 適用於 Windows 10 的 Office 365 應用程式
                   href: apps-add-office365.md
@@ -610,13 +610,13 @@
             - name: 應用程式設定原則
               href: app-configuration-policies-overview.md
               displayName: App configuration policy; configuration policy
-            - name: iOS 管理的裝置
+            - name: iOS 受管理裝置
               href: app-configuration-policies-use-ios.md
-            - name: Android 管理的裝置
+            - name: Android 受管理裝置
               href: app-configuration-policies-use-android.md
             - name: 設定受控主畫面
               href: app-configuration-managed-home-screen-app.md
-            - name: 受控應用程式
+            - name: 受管理的應用程式
               href: app-configuration-policies-managed-app.md
             - name: 使用 iOS 應用程式佈建設定檔
               href: app-provisioning-profile-ios.md
@@ -663,7 +663,7 @@
                       href: app-protection-policies-exception.md
                 - name: 驗證應用程式保護原則
                   href: app-protection-policies-validate.md
-                - name: 應用程式保護原則傳遞
+                - name: 應用程式保護原則傳達
                   href: app-protection-policy-delivery.md
                 - name: 監視應用程式保護使用者狀態
                   href: app-protection-policies-monitor.md
@@ -675,7 +675,7 @@
                   href: data-transfer-between-apps-manage-ios.md
     - name: 教育使用者
       items:
-        - name: 如何教育您的終端使用者
+        - name: 如何指導您的終端使用者
           href: end-user-educate.md
         - name: 公司入口網站訊息
           href: end-user-company-portal-messages.md
@@ -717,7 +717,7 @@
               href: troubleshoot-app-install.md
             - name: 針對裝置動作進行疑難排解
               href: troubleshoot-device-actions.md
-            - name: 針對行動應用程式管理進行疑難排解
+            - name: 行動應用程式管理疑難排解
               href: troubleshoot-mam.md
             - name: Intune 活動的稽核記錄
               href: monitor-audit-logs.md
@@ -741,16 +741,16 @@
       items:
         - name: Android
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-android.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置限制
                   href: device-restrictions-android.md
                 - name: 電子郵件
                   href: email-settings-android.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-vpn-settings'
+                  href: vpn-settings-android.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android.md
                 - name: 自訂
@@ -760,25 +760,25 @@
                       href: samsung-knox-apps-allow-block.md
         - name: Android 企業
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-android-for-work.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置限制
                   href: device-restrictions-android-for-work.md
                 - name: 電子郵件
                   href: email-settings-android-enterprise.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-enterprise-vpn-settings'
+                  href: vpn-settings-android-enterprise.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android-enterprise.md
                 - name: 自訂
                   href: custom-settings-android-for-work.md
         - name: iOS
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-ios.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置功能
                   href: ios-device-features-settings.md
@@ -796,9 +796,9 @@
                   href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-mac-os.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置功能
                   href: macos-device-features-settings.md
@@ -816,9 +816,9 @@
                   href: custom-settings-macos.md
         - name: Windows 10 及更新版本
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 傳遞最佳化設定
                   href: delivery-optimization-settings.md
@@ -856,9 +856,9 @@
               href: windows-update-settings.md
         - name: Windows Holographic for Business
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: 'compliance-policy-create-windows.md#windows-holographic-for-business'
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置限制
                   href: device-restrictions-windows-holographic.md
@@ -872,9 +872,9 @@
                   href: custom-settings-windows-holographic.md
         - name: Windows 8.1
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows-8-1.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置限制
                   href: device-restrictions-windows-8-1.md
@@ -884,9 +884,9 @@
                   href: wi-fi-settings-import-windows-8-1.md
         - name: Windows Phone 8.1
           items:
-            - name: 合規性政策設定
+            - name: 相容性原則設定
               href: compliance-policy-create-windows-8-1.md
-            - name: 組態設定檔設定
+            - name: 設定檔設定
               items:
                 - name: 裝置限制
                   href: device-restrictions-windows-phone-8-1.md
@@ -966,7 +966,7 @@
                       href: reports-ref-policy.md
                     - name: 使用者裝置關聯實體的參考
                       href: reports-ref-user-device.md
-                    - name: 使用者實體的參考
+                    - name: User 實體的參考
                       href: reports-ref-user.md
             - name: 移動您的 Intune 資料倉儲帳戶資料
               href: data-warehouse-account-move.md
@@ -995,7 +995,7 @@
           items:
             - name: iPad
               href: education-settings-configure-ios.md
-            - name: 共用的 iPad
+            - name: 共用的 iPads
               href: education-settings-configure-ios-shared.md
         - name: 舊版 Intune 電腦用戶端
           href: intune-legacy-pc-client.md
