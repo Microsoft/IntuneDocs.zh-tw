@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756576"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993707"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
 本文可協助 Intune 系統管理員瞭解並疑難排解在 Intune 中註冊 Windows 裝置時的問題。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 開始進行疑難排解之前, 請務必收集一些基本資訊。 此資訊可協助您進一步瞭解問題, 並縮短尋找解決方案的時間。
 
 收集與問題相關的下列資訊:
@@ -60,31 +60,31 @@ ms.locfileid: "68756576"
 
 ##### <a name="remove-devices-that-were-enrolled"></a>移除已註冊的裝置
 1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
-2. 移至 [ **使用者** > ] [**所有使用者**]。    
+2. 移至 [**使用者** > ] [**所有使用者**]。    
 3. 選取受影響的使用者帳戶, 然後按一下 [**裝置**]。    
 4. 選取任何未使用或不想要的裝置, 然後按一下 [**刪除**]。 
 
-##### <a name="increase-thedevice-enrollment-limit"></a>提高裝置註冊限制
+##### <a name="increase-the-device-enrollment-limit"></a>提高裝置註冊限制
 
 > [!NOTE]
 > 這個方法會增加所有使用者的裝置註冊限制, 而不只是受影響的使用者。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 移至 [ **裝置註冊** >] [ **註冊限制**], 然後選取 [ **裝置限制限制**]。    
+2. 移至 [**裝置註冊** > ] [**註冊限制**], 然後選取 [**裝置限制限制**]。    
 3. 增加 [**裝置限制**] 的值。 
 
-##### <a name="checkdevice-type-restrictions"></a>檢查裝置類型限制
-1. 使用全域管理員帳戶登入  [Intune 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) 。
-2. 移至 [ **裝置註冊** > ] [**註冊限制**], 然後在 [ **裝置類型限制**] 下選取 **預設**限制。    
-3. 選取 [ **平臺**], 然後選取 [ **允許**   **Windows (MDM)** ]。
+##### <a name="check-device-type-restrictions"></a>檢查裝置類型限制
+1. 使用全域管理員帳戶登入 [Intune 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+2. 移至 [**裝置註冊** > ] [**註冊限制**], 然後在 [**裝置類型限制**] 下選取**預設**限制。    
+3. 選取 [**平臺**], 然後選取 [**允許** **Windows (MDM)** ]。
 
     > [!IMPORTANT]
-    > 如果目前的設定已 **允許**, 請將它變更為 [ **封鎖**], 儲存設定, 然後將它變更回 [ **允許** ], 然後再次儲存設定。 這會重設註冊設定。
+    > 如果目前的設定已**允許**, 請將它變更為 [**封鎖**], 儲存設定, 然後將它變更回 [**允許**], 然後再次儲存設定。 這會重設註冊設定。
 
 4. 等候約15分鐘, 然後再次註冊受影響的裝置。    
 
 ##### <a name="upgrade-windows-10-home"></a>升級 Windows 10 家用版
-[將 windows 10 首頁升級至 windows 10 專業](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) 版或更高版本。 
+[將 windows 10 首頁升級至 windows 10 專業](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro)版或更高版本。 
 
 
 
@@ -92,17 +92,17 @@ ms.locfileid: "68756576"
 
 錯誤錯誤碼為 0x801c0003: 「不允許此使用者註冊。 您可以再試一次, 或洽詢您的系統管理員, 錯誤碼801c0003。」
 
-**原因:** [**使用者可以將裝置加入 Azure AD** ] 設定設為 [**無**]。 這可防止新使用者將其裝置加入 Azure AD。 因此, Intune 註冊會失敗。
+**原因:** [**使用者可以將裝置加入 Azure AD** ] 設定設為 [**無**]。 這可防止新使用者將其裝置加入 Azure AD。 因此, Intune 註冊會失敗。
 
 #### <a name="resolution"></a>解決方案
-1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/) 。    
-2. 移至 **[Azure Active Directory**   >  **** 裝置] [**裝置設定**]。>     
-3. 將 [使用者可以將裝置加入 Azure AD] **** 設定為 [全部]  。    
+1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
+2. 移至 [ **Azure Active Directory**  > **裝置** > ] [**裝置設定**]。    
+3. 將 [使用者可以將裝置加入 Azure AD]  設定為 [全部]  。    
 4. 重新註冊裝置。   
 
 ### <a name="the-device-is-already-enrolled"></a>裝置已註冊。
 
-錯誤 8018000a: 「發生問題。 裝置已註冊。  您可以與系統管理員聯繫, 錯誤碼8018000a。」
+錯誤 8018000a: 「發生問題。 裝置已註冊。  您可以與系統管理員聯繫, 錯誤碼8018000a。」
 
 **原因:** 下列其中一個條件成立:
 - 不同的使用者已在 Intune 中註冊裝置, 或已將裝置加入至 Azure AD。 若要判斷是否為這種情況, 請移至 [**設定** > ] [**帳戶** > ] [**工作存取**]。 尋找與下列類似的訊息: 「系統上的另一個使用者已連線至公司或學校。 請移除該公司或學校的連線, 然後再試一次。」    
@@ -136,7 +136,7 @@ ms.locfileid: "68756576"
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>看起來像是未正確設定 MDM 使用規定端點。
 
 **原因:** 下列其中一個條件成立: 
- - 您在租使用者上同時使用適用于 Office 365 和 Intune 的行動裝置管理 (MDM), 而嘗試註冊裝置的使用者沒有有效的 Intune 授權或 Office 365 授權。     
+ - 您在租使用者上同時使用適用于 Office 365 和 Intune 的行動裝置管理 (MDM), 而嘗試註冊裝置的使用者沒有有效的 Intune 授權或 Office 365 授權。     
 - Azure AD 中的 MDM 條款及條件為空白或未包含正確的 URL。    
 
 #### <a name="resolution"></a>解決方案
@@ -144,12 +144,12 @@ ms.locfileid: "68756576"
 若要修正此問題, 請使用下列其中一種方法: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>指派有效的授權給使用者
-移至 [Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home), 然後將 Intune 或 Office 365 授權指派給使用者。
+移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home), 然後將 Intune 或 Office 365 授權指派給使用者。
 
-##### <a name="correct-themdm-terms-of-use-url"></a>更正 MDM 使用規定 URL
-  1. 登入 [Azure 入口網站](https://portal.azure.com/), 然後選取 [ **Azure Active Directory**]。    
-  2. 選取 **[行動性 (MDM 與 MAM)** ], 然後按一下 [ **Microsoft Intune**]。    
-  3. 選取 [ **還原預設的 Mdm url**], 確認 [ **MDM 使用規定 URL** ] 已 **https://portal.manage.microsoft.com/TermsofUse.aspx** 設定為。    
+##### <a name="correct-the-mdm-terms-of-use-url"></a>更正 MDM 使用規定 URL
+  1. 登入 [Azure 入口網站](https://portal.azure.com/)，然後選取 [Azure Active Directory]  。    
+  2. 選取 **[行動性 (MDM 與 MAM)** ], 然後按一下 [ **Microsoft Intune**]。    
+  3. 選取 [**還原預設的 Mdm url**], 確認 [ **MDM 使用規定 URL** ] 已 **https://portal.manage.microsoft.com/TermsofUse.aspx** 設定為。    
   4. 選擇 [儲存]  。    
 
 
@@ -162,12 +162,12 @@ ms.locfileid: "68756576"
 - Intune 電腦用戶端 (Intune PC 代理程式) 或 Configuration Manager 用戶端代理程式已安裝在 Windows 10 電腦上。
 
 #### <a name="resolution"></a>解決方案
-使用下列其中一種方法來解決此問題:
+使用下列其中一個方法來解決此問題：
 
-##### <a name="disablemdm-automatic-enrollment-in-azure"></a>停用 Azure 中的 MDM 自動註冊。
-1. 登入 [Azure 入口網站](https://portal.azure.com/)。    
-2. 請移至 **Azure Active Directory**  > **行動性 (MDM 和 MAM)**  >  **Microsoft Intune**。    
-3. 將 [ **MDM 使用者範圍**] 設定為 [**無**], 然後按一下 [**儲存**]。    
+##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>停用 Azure 中的 MDM 自動註冊。
+1. 登入 [Azure 入口網站](https://portal.azure.com/)。    
+2. 請移至**Azure Active Directory**  > **行動性 (MDM 和 MAM)**  >  **Microsoft Intune**。    
+3. 將 [ **MDM 使用者範圍**] 設定為 [**無**], 然後按一下 [**儲存**]。    
      
 ##### <a name="uninstall"></a>解除安裝
 卸載電腦上的 Intune 電腦用戶端或 Configuration Manager 用戶端代理程式。    
@@ -179,34 +179,34 @@ ms.locfileid: "68756576"
 **原因:** 用戶端軟體已過期。
 
 #### <a name="resolution"></a>解決方案
-1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 移至 [系統 **管理** > ] [**用戶端軟體下載**], 然後按一下 [ **下載用戶端軟體**]。    
+1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
+2. 移至 [系統**管理** > ] [**用戶端軟體下載**], 然後按一下 [**下載用戶端軟體**]。    
 3. 儲存安裝套件, 然後再安裝用戶端軟體。 
 
 
 ### <a name="the-account-certificate-is-not-valid-and-may-be-expired"></a>帳戶憑證無效，而且可能已經過期。
 
-錯誤: 「帳戶憑證無效, 而且可能已過期, 0x80cf4017。」
+錯誤：「此帳戶憑證無效，而且可能已經過期，0x80cf4017。」
 
 **原因:** 用戶端軟體已過期。
 
 #### <a name="resolution"></a>解決方案
-1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 移至 [系統 **管理** > ] [**用戶端軟體下載**], 然後按一下 [ **下載用戶端軟體**]。    
+1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
+2. 移至 [系統**管理** > ] [**用戶端軟體下載**], 然後按一下 [**下載用戶端軟體**]。    
 3. 儲存安裝套件, 然後再安裝用戶端軟體。    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>您的組織不支援此版本的 Windows。 
 
-錯誤: 「發生問題。 您的組織不支援此版本的 Windows。  (顯示 0x80180014) "
+錯誤: 「發生問題。 您的組織不支援此版本的 Windows。  (顯示 0x80180014) "
 
 **原因:** Intune 租使用者中的 Windows MDM 註冊已停用。
 
 #### <a name="resolution"></a>解決方案
 若要在獨立的 Intune 環境中修正此問題, 請遵循下列步驟: 
  
-1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/) 。    
-2. 選取左側的 [ **Intune** ], 然後移至 [ **裝置註冊** > ] [**註冊限制**]。    
-3. 在 [ **裝置類型限制**] 中, 按一下 [ **平臺**], 然後選取 [**允許**   **Windows (MDM)** ]。    
+1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
+2. 選取左側的 [ **Intune** ], 然後移至 [**裝置註冊** > ] [**註冊限制**]。    
+3. 在 [**裝置類型限制**] 中, 按一下 [**平臺**], 然後選取 [**允許** **Windows (MDM)** ]。    
 4. 按一下 **[儲存]** 。    
  
 若要在具有 Intune 和 Configuration Manager 的混合式 MDM 中修正此問題, 請遵循下列步驟: 
@@ -221,11 +221,11 @@ ms.locfileid: "68756576"
 **原因:** 個別布建套件的帳戶封裝 (Package_GUID) 中的 Azure AD 使用者帳戶不允許將裝置加入 Azure AD。 當您使用 Windows 設定設計工具 (WCD) 或「設定學校電腦」應用程式來設定布建套件時, 系統會自動建立 Azure AD 這些帳戶, 而這些帳戶接著會用來將裝置加入 Azure AD。
 
 #### <a name="resolution"></a>解決方案
-1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/) 。    
+1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
 2. 移至 [Azure Active Directory] [ **> 裝置] > [裝置設定**]。    
-3. 設定 [ **使用者可以將裝置加入至**  **全部**] 或 [已 **選取**] Azure AD。
+3. 設定 [**使用者可以將裝置加入至** **全部**] 或 [已**選取**] Azure AD。
 
-   如果您選擇 **** [已選取], 請按一下 [ **選取**], 然後按一下 [ **新增成員**], 將可加入其裝置的所有使用者新增至 Azure AD。 請確定已新增布建套件的所有 Azure AD 帳戶。
+   如果您選擇  [已選取], 請按一下 [**選取**], 然後按一下 [**新增成員**], 將可加入其裝置的所有使用者新增至 Azure AD。 請確定已新增布建套件的所有 Azure AD 帳戶。
  
 如需如何為 Windows 設定設計工具建立布建套件的詳細資訊, 請參閱[建立適用于 windows 10 的布建套件](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)。
 
@@ -246,7 +246,7 @@ ms.locfileid: "68756576"
     ```
 **原因:** 下列其中一個條件成立: 
 - UPN 包含未驗證或無法路由傳送的網域, 例如 local ( joe@contoso.local例如)。    
-- **[MDM 使用者範圍** ] 設定為 [ **無**]。 
+- [ **MDM 使用者範圍**] 設定為 [**無**]。 
 
 #### <a name="resolution"></a>解決方案
 如果 UPN 包含未驗證或無法路由傳送的網域, 請遵循下列步驟: 
@@ -261,7 +261,7 @@ ms.locfileid: "68756576"
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-如果 [ **MDM 使用者範圍** ] 設定為 [ **無**], 請遵循下列步驟: 
+如果 [ **MDM 使用者範圍**] 設定為 [**無**], 請遵循下列步驟: 
  
 1. 登入 [Azure 入口網站](https://portal.azure.com/)，然後選取 [Azure Active Directory]  。
 2. 選取 **[行動性 (MDM 與 MAM)** ], 然後選取 [ **Microsoft Intune**]。    
