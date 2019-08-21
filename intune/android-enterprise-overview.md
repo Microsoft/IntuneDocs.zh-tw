@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885132"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550083"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作設定檔裝置
 
@@ -68,7 +68,7 @@ Intune 會在將 Gmail 及 Nine Work 應用程式當成工作應用程式管理�
 
 VPN 支援類似於 Android VPN 設定檔， Android Enterprise 管理的可用相同 VPN 提供者與基本設定選項有兩個不同之處：
 
-- **設定檔範圍內的 VPN** – VPN 連線受限在只有部署到公司設定檔的應用程式。 只有受 Android Enterprise 管理的應用程式才可使用此 VPN 連線。 裝置上的個人應用程式無法使用受管理的 VPN 連線。 如需詳細資訊，請參閱 [Android Enterprise VPN 設定](vpn-settings-android.md#android-enterprise-vpn-settings)。
+- **設定檔範圍內的 VPN** – VPN 連線受限在只有部署到公司設定檔的應用程式。 只有受 Android Enterprise 管理的應用程式才可使用此 VPN 連線。 裝置上的個人應用程式無法使用受管理的 VPN 連線。 如需詳細資訊，請參閱 [Android Enterprise VPN 設定](vpn-settings-android-enterprise.md)。
 
 - **應用程式專屬 VPN** – 若 VPN 提供者支援下列項目，就能在 Intune 中設定應用程式特定的 VPN：
   - 應用程式特定 VPN 的組態

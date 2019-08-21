@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649093"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861842"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
@@ -106,15 +106,14 @@ ms.locfileid: "67649093"
 
 適用於 Active Directory 的 Intune 連接器必須安裝在執行 Windows Server 2016 或更新版本的電腦上。 該電腦也必須能夠存取網際網路和您的 Active Directory。 若要增加規模和可用性，或支援多個 Active Directory 網域，您可以在您的環境中安裝多個連接器。 建議在未執行任何其他 Intune 連接器的伺服器上安裝連接器。
 
-1. 確定您已安裝語言套件並設定，如 [Intune Connector (預覽版) 語言需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector) \(機器翻譯\) 所述。
-2. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]   > [新增連接器]  。 
-3. 遵循指示下載連接器。
-4. 開啟下載的連接器安裝程式檔案 *ODJConnectorBootstrapper.exe* 以安裝連接器。
-5. 在安裝結束時，選取 [設定]  。
-6. 選取 [登入]  。
-7. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。  
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]   > [新增連接器]  。 
+2. 遵循指示下載連接器。
+3. 開啟下載的連接器安裝程式檔案 *ODJConnectorBootstrapper.exe* 以安裝連接器。
+4. 在安裝結束時，選取 [設定]  。
+5. 選取 [登入]  。
+6. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。  
    使用者帳戶必須具有已指派的 Intune 授權。
-8. 移至 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]  ，然後確認連接狀態為 [使用中]  。
+7. 移至 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]  ，然後確認連接狀態為 [使用中]  。
 
 > [!NOTE]
 > 當您在連接器中登入之後，它可能需要數分鐘的時間才會顯示在 [Intune](https://aka.ms/intuneportal) 中。 只有在順利與 Intune 服務通訊時才會顯示。
