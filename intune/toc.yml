@@ -191,7 +191,7 @@
             - name: 公司識別碼
               href: corporate-identifiers-add.md
               displayName: COD
-            - name: '[Multi-Factor Authentication]'
+            - name: Multi-Factor Authentication
               href: multi-factor-authentication.md
               displayName: mfa; multifactor
             - name: 裝置註冊管理員
@@ -311,7 +311,7 @@
           href: create-compliance-policy.md
         - name: 依據位置的合規性
           href: use-network-locations.md
-        - name: 不符合標準時所採取的動作
+        - name: 因不符合規範而採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -533,7 +533,7 @@
           items:
             - name: 適用於商務設定的 Windows Update
               href: windows-update-for-business-configure.md
-            - name: Windows Update 相容性報告
+            - name: Windows Update 合規性報告
               href: windows-update-compliance-reports.md
             - name: iOS 更新原則
               href: software-updates-ios.md
@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: 應用程式保護原則傳達
                   href: app-protection-policy-delivery.md
+                - name: 保護應用程式延伸模組
+                  href: app-protection-policy-extensions.md
                 - name: 監視應用程式保護使用者狀態
                   href: app-protection-policies-monitor.md
                 - name: 準備好設定 WIP 應用程式保護原則
@@ -741,7 +743,7 @@
       items:
         - name: Android
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-android.md
             - name: 設定檔設定
               items:
@@ -760,7 +762,7 @@
                       href: samsung-knox-apps-allow-block.md
         - name: Android 企業
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-android-for-work.md
             - name: 設定檔設定
               items:
@@ -776,7 +778,7 @@
                   href: custom-settings-android-for-work.md
         - name: iOS
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-ios.md
             - name: 設定檔設定
               items:
@@ -796,7 +798,7 @@
                   href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-mac-os.md
             - name: 設定檔設定
               items:
@@ -816,7 +818,7 @@
                   href: custom-settings-macos.md
         - name: Windows 10 及更新版本
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-windows.md
             - name: 設定檔設定
               items:
@@ -856,7 +858,7 @@
               href: windows-update-settings.md
         - name: Windows Holographic for Business
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: 'compliance-policy-create-windows.md#windows-holographic-for-business'
             - name: 設定檔設定
               items:
@@ -872,7 +874,7 @@
                   href: custom-settings-windows-holographic.md
         - name: Windows 8.1
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-windows-8-1.md
             - name: 設定檔設定
               items:
@@ -884,7 +886,7 @@
                   href: wi-fi-settings-import-windows-8-1.md
         - name: Windows Phone 8.1
           items:
-            - name: 相容性原則設定
+            - name: 合規性政策設定
               href: compliance-policy-create-windows-8-1.md
             - name: 設定檔設定
               items:
