@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550169"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998935"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -66,13 +66,6 @@ ms.locfileid: "69550169"
   - **偏好存放區**: 當使用者從 Microsoft Store 以外的地方安裝應用程式時, 會發出警告。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **強制在更新失敗時重新啟動應用程式**：使用應用程式時，它可能不會更新。 使用此設定以強制重新啟動應用程式。 [未設定]  (預設值) 不會強制重新啟動應用程式。 [需要]  可讓系統管理員在特定日期和時間或依據週期性排程強制重新啟動。 設定為 [需要]  時，也請輸入：
-
-  - **開始日期/時間**：選擇重新啟動應用程式的特定日期和時間。
-  - **週期**：選擇每天、每週或每月重新啟動。
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) \(英文\)
 
 - **由使用者控制安裝**：設定為 [未設定]  (預設值) 時，Windows Installer 會阻止使用者變更通常保留給系統管理員的安裝選項，例如，進入安裝檔案的目錄。 [封鎖]  允許使用者變更這些安裝選項，並略過一些 Windows Installer 安全性功能。
 
