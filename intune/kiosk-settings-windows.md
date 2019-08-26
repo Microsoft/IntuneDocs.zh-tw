@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487742"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998900"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -97,6 +97,17 @@ ms.locfileid: "69487742"
   - **新增市集應用程式**：選取 [新增市集應用程式]  然後從清單中選取應用程式。
 
     目前未列出任何應用程式？ 請使用[用戶端應用程式](apps-add.md)中的步驟新增一些應用程式。
+    
+ - **指定應用程式重新開機的維護**期間: 預設值為 [未設定], 請選取 [需要] 以檢查需要重新開機才能完成安裝的應用程式。
+ 
+     如果使用 Kiosk 瀏覽器或商務應用程式的其他 Microsoft Store, 請決定需要重新開機才能完成應用程式安裝的應用程式更新檢查頻率。 如果未設定, 則在安裝應用程式更新後的3天內, 商務應用程式的 Microsoft Store 將會在未排程的時間重新開機。
+     
+     - **維護時段開始時間**: 選取開始檢查用戶端是否有任何需要重新開機的應用程式更新的日期和時間。 預設開始時間是午夜 (或零分鐘)。
+     
+     - **維護期間週期**: 預設值為 [每日]。
+         設定要進行應用程式更新的維護時段。 建議是每天以避免重新開機未排程的應用程式。
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) \(英文\)
 
 ## <a name="multi-app-kiosks"></a>多應用程式 kiosk
 

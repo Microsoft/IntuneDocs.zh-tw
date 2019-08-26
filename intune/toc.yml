@@ -311,7 +311,7 @@
           href: create-compliance-policy.md
         - name: 依據位置的合規性
           href: use-network-locations.md
-        - name: 因不符合規範而採取的動作
+        - name: 不符合標準時所採取的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -541,7 +541,7 @@
       items:
         - name: 什麼是 Intune 應用程式管理？
           href: app-management.md
-        - name: 新增應用程式
+        - name: 新增應用程式概觀
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -601,7 +601,7 @@
               href: apps-windows-10-app-deploy.md
             - name: 將應用程式部署至政府環境
               href: apps-deploy-gcc-dod.md
-        - name: 監視 App
+        - name: 監視應用程式
           href: apps-monitor.md
         - name: 探索到的應用程式
           href: app-discovered-apps.md
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: 使用應用程式保護原則
               items:
-                - name: 了解應用程式保護原則
+                - name: 應用程式保護原則概觀
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: 建立應用程式保護原則
