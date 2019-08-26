@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528250"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549976"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
@@ -85,16 +85,16 @@ ms.locfileid: "67528250"
 若要查看角色指派，請選擇 [Intune]   > [角色]   > [所有角色]  > 選擇角色 > 選擇指派。 您會看到下列頁面：
 
 - **屬性**：指派的名稱、描述、角色、成員、範圍和標籤。
-- **成員**：已列出群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
-- **範圍 (群組)** ：這些群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
+- **成員**：已列出 Azure 安全性群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
+- **範圍 (群組)** ：這些 Azure 安全性群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
 - **[範圍 (標籤)](scope-tags.md)** ：[成員] 中使用者可以查看具有相同範圍標籤的資源。
 
 ### <a name="multiple-role-assignments"></a>多個角色指派
-如果使用者有多個角色指派，則這些角色指派的權限會延伸到不同物件，如下所示：
+如果使用者有多個角色指派、權限和範圍標籤，則那些角色指派的權限會延伸到不同物件，如下所示：
 
-- 指派權限只會套用到該角色指派 [範圍 (群組)] 中的物件 (例如原則或應用程式)。 指派權限不會套用到其他角色指派中的物件，除非其他指派明確地授與這些權限。
-- 其他權限 (例如建立和讀取)，會套用到任何使用者指派中類型相同的所有物件 (例如所有原則或所有應用程式)。
-- 不同類型物件 (例如原則或應用程式) 的權限不會彼此套用。 例如，原則之讀取權限不會為使用者指派中的應用程式提供讀取權限。
+- 指派權限和範圍標籤只會套用到該角色指派 [範圍 (群組)] 中的物件 (例如原則或應用程式)。 指派權限和範圍標籤不會套用到其他角色指派中的物件，除非其他指派明確地授與這些權限。
+- 其他權限 (例如建立、讀取、更新、刪除) 和範圍標籤，會套用到任何使用者指派中類型相同的所有物件 (例如所有原則或所有應用程式)。
+- 不同類型物件 (例如原則或應用程式) 的權限和範圍標籤不會彼此套用。 例如，原則之讀取權限不會為使用者指派中的應用程式提供讀取權限。
 
 ## <a name="next-steps"></a>後續步驟
 - [將角色指派給使用者](assign-role.md)

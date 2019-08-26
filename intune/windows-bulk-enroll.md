@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403518"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651044"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -73,7 +73,7 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
 
 2. 選擇將佈建套件套用到裝置的方式。  您可以使用下列其中一種方式將佈建套件套用到裝置：
    - 將佈建套件置於 USB 磁碟機，將 USB 磁碟機插入要大量註冊的裝置，並在初始安裝期間套用佈建套件
-   - 將佈建套件置於網路資料夾，並在初始安裝之後，針對您要大量註冊的裝置套用佈建套件
+   - 將佈建套件置於網路資料夾，並在初始安裝之後套用佈建套件
 
    如需套用佈建套件的逐步指示，請參閱[套用佈建套件](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package)。
 

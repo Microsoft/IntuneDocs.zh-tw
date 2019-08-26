@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701021"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651164"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -39,7 +39,7 @@ ms.locfileid: "68701021"
 
 您和您的終端使用者可以從公用應用程式存放區下載 Microsoft Edge，以便用於您的組織中。 瀏覽器原則的作業系統需求為下列其中之一：
 - Android 4 及更新版本
-- iOS 8.0 和更新版本
+- iOS 8.0 與更新版本
 
 ## <a name="application-protection-policies-for-microsoft-edge"></a>Microsoft Edge 的應用程式保護原則
 
@@ -102,10 +102,10 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
 4. 針對 [裝置註冊]  類型請選擇 [受管理的應用程式]  。
 5. 選擇 [選取必要的應用程式]  。 然後在 [目標應用程式]  刀鋒視窗上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]  或 [Edge]  。
 6. 選取 [確定]  以返回 [新增設定原則]  刀鋒視窗。
-7. 選取 [組態設定]  。 在 [設定]  刀鋒視窗上，您可以定義金鑰和值組來為 Microsoft Edge 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
+7. 選取 [組態設定]  。 在 [設定]  刀鋒視窗上，您可以定義金鑰和值組來為 Microsoft Edge 提供設定。 請使用本文稍後的各節，來了解您可以定義的不同機碼/值組。
 
     > [!NOTE]
-    > Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 
+    > Microsoft Edge 使用與 Managed Browser 相同的機碼/值組。 
 
 8. 完成之後，請選取 [確定]  。
 9. 在 [新增設定原則]  刀鋒視窗上，選擇 [新增]  。<br>
@@ -124,7 +124,7 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
 
 Intune Managed Browser 和 Microsoft Edge 都可以用來作為被原則保護的瀏覽器。 為了確保您的使用者會被引導為使用正確的瀏覽器應用程式，請用下列組態設定來設定所有由 Intune 所管理之應用程式 (例如 Outlook、OneDrive 與 SharePoint) 的目標：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    值 `true` 將會引導您的使用者下載並使用 Microsoft Edge。<br>值 `false` 將會允許您的使用者使用 Intune Managed Browser。    |
 
@@ -164,9 +164,9 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 ![應用程式保護原則 - [使用原則受控瀏覽器共用 Web 內容] 的螢幕擷取畫面](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
 #### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>步驟 2：設定應用程式組態設定，以啟用應用程式 Proxy
-使用下列金鑰/值組將 Microsoft Edge 設定為目標，以針對 Microsoft Edge 啟用應用程式 Proxy：
+使用下列機碼/值組將 Microsoft Edge 設定為目標，以針對 Microsoft Edge 啟用應用程式 Proxy：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
@@ -176,12 +176,27 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 此設定允許您設定適用於 Microsoft Edge 的首頁捷徑。 當使用者在 Microsoft Edge 中開啟新索引標籤時，您設定的首頁捷徑會成為搜尋列下方第一個圖示。 使用者在其受控內容中無法編輯或刪除這個捷徑。 首頁捷徑會顯示您組織的名稱，以區分該捷徑。 
 
-使用下列金鑰/值組來設定首頁捷徑：
+使用下列機碼/值組來設定首頁捷徑：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>**範例：**  <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>針對 Microsoft Edge 中的新索引標籤頁面設定您組織的標誌與品牌色彩
+
+這些設定可讓您自訂 Microsoft Edge 的新索引標籤頁面，以顯示您組織的標誌與品牌色彩作為頁面背景。
+
+若要上傳您組織的標誌與色彩，請先完成下列步驟：
+- 在 Azure 入口網站中，瀏覽至 [Intune] -> [用戶端應用程式] -> [商標和自訂] -> [公司身分識別商標]
+- 若要設定品牌的標誌，請在 [顯示] 下選擇 [僅限公司標誌]。 建議使用透明背景標誌。 
+- 若要設定您的品牌背景色彩，請在 [顯示] 下選擇 [佈景主題色彩]。 Microsoft Edge 會在新索引標籤頁面上套用較淺的色彩著色，以確保頁面具有高可讀性。 
+
+接下來，使用下列機碼/值組，將您的組織商標提取到 Microsoft Edge：
+
+|    機碼    |    值    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>設定 Microsoft Edge 的受控書籤
 
@@ -194,9 +209,9 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 - 這些書籤會顯示在清單頂端。 使用者所建立的書籤都會顯示在這些書籤下方。
 - 如果您已啟用應用程式 Proxy 重新導向，即可使用應用程式 Proxy Web 應用程式的內部或外部 URL 來新增這些應用程式 Proxy Web 應用程式。
 
-您可以使用下列金鑰/值組來設定受控書籤：
+您可以使用下列機碼/值組來設定受控書籤：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.bookmarks    |    此設定值是書籤清單。 每個書籤都是由書籤標題和書籤 URL 所組成。 請使用 `|` 字元來分隔標題和 URL。      範例：<br>`Microsoft Bing|https://www.bing.com`<br>若要設定多個書籤，請以雙引號字元 `||` 分隔每組配對。<p>範例：<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
@@ -204,18 +219,18 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 根據預設，您的使用者將會看見在 Microsoft Edge 書籤的資料夾內針對他們所設定的 MyApps 網站。 該資料夾將會以您組織的名稱來標示。
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **True** 會在 Microsoft Edge 書籤中顯示 MyApps。<p>**False** 會在 Microsoft Edge 中隱藏 MyApps。    |
 
 ## <a name="specify-allowed-or-blocked-sites-list-for-microsoft-edge"></a>針對 Microsoft Edge 指定允許或封鎖的網站清單
 您可以使用應用程式設定來定義當使用者使用他們的工作設定檔時，可以存取哪些網站。 如果您使用允許清單，您的使用者將只能存取您明確列出的網站。 如果您使用封鎖的清單，您的使用者將能夠存取您明確封鎖的網站以外的所有網站。 您只應該強制允許或封鎖清單，而不應該同時使用兩者。 如果您同時強制兩者，系統只會採用允許清單。  
 
-請使用下列金鑰/值組來針對 Microsoft Edge 設定允許或封鎖的網站清單。 
+請使用下列機碼/值組來針對 Microsoft Edge 設定允許或封鎖的網站清單。 
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    從下列選項進行選擇：<p>1.指定允許的 URL (僅允許這些 URL；不能存取其他站台)：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定封鎖的 URL (可以存取所有其他網站)：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用垂直線 `|` 字元分隔。<br>**範例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    從下列選項進行選擇：<p>1.指定允許的 URL (僅允許這些 URL；不能存取其他站台)：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定封鎖的 URL (可以存取所有其他網站)：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    該機碼的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用垂直線 `|` 字元分隔。<br>**範例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>適用於允許和封鎖網站清單的 URL 格式 
 您可以使用各種不同 URL 格式來建置您的允許/封鎖網站清單。 下表會詳細說明這些允許的模式。 在開始之前有一些注意事項： 
@@ -232,7 +247,8 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
     |    `http://www.contoso.com`    |    比對單一頁面    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    比對單一頁面    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    比對所有以 `www.contoso.com` 開頭的 URL    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    比對 `contoso.com` 下的所有子網域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    比對所有結尾為 `contoso.com/` 的子網域    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    比對 `contoso.com` 下的所有子網域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    比對所有結尾為 `contoso.com/` 的子網域    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    比對單一資料夾    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    使用連接埠號碼來比對單一頁面    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    比對單一且安全的頁面    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
@@ -255,9 +271,9 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 由於 Microsoft Edge 中已內建雙重身分識別模型，您可以為使用者啟用 Intune Managed Browser 無法達成且更有彈性的體驗。 當使用者在 Microsoft Edge 中造訪被封鎖的網站時，您可以提示他們在其個人內容 (而非工作內容) 中開啟該連結。 這可讓他們持續被保護，同時也能確保企業資源的安全。 例如，如果使用者在 Outlook 中收到某篇新聞文章的連結，他們可以在其個人內容或 InPrivate 索引標籤中開啟該連結。其工作內容並不允許新聞網站。 根據預設，會允許這些轉換。
 
-使用下列金鑰/值組來設定是否允許這些軟轉換：
+使用下列機碼/值組來設定是否允許這些軟轉換：
 
-|    金鑰    |    值    |
+|    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟被封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明他們嘗試存取的網站已被封鎖的訊息。    |
 

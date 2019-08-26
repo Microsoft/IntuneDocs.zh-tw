@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530552"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582927"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定您裝置的憑證設定檔
 
@@ -32,7 +32,7 @@ ms.locfileid: "67530552"
 - 簡單憑證註冊通訊協定 (SCEP)
 - PKCS#12 (或 PFX)
 
-其中的每種憑證都有各自的必要條件，以及基礎結構需求。
+其中的每種憑證都有各自的先決條件，以及基礎結構需求。
 
 
 ## <a name="overview"></a>概觀
@@ -41,12 +41,12 @@ ms.locfileid: "67530552"
 
 2. 在每部裝置上安裝根憑證或中繼憑證授權單位 (CA) 憑證，讓裝置可以辨識 CA 的合法性。 若要安裝憑證，請建立**受信任的憑證設定檔**並將其指派給每部裝置。 當您指派此設定檔時，Intune 管理的裝置就會要求並收到根憑證。 您必須為每個平台分別建立設定檔。 提供下列平台可用的受信任憑證設定檔︰
 
-    - iOS 8.0 和更新版本
+    - iOS 8.0 與更新版本
     - macOS 10.11 及更新版本
     - Android 4.0 及更新版本
     - Android 企業  
     - Windows 8.1 及更新版本
-    - Windows Phone 8.1 和更新版本
+    - Windows Phone 8.1 與更新版本
     - Windows 10 及更新版本
 
     > [!NOTE]  
@@ -88,30 +88,35 @@ ms.locfileid: "67530552"
 在設定受信任的憑證設定檔時，匯入此憑證。
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>步驟 3：建立受信任的憑證設定檔
+
 先建立受信任的憑證設定檔，才能建立 SCEP 或 PKCS 憑證設定檔。 每個裝置平台都需要一個受信任的憑證設定檔以及 SCEP 或 PKCS 設定檔。 針對每個裝置平台，建立受信任憑證的步驟皆相似。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選取 [裝置設定]   > [管理]   > [設定檔]   > [建立設定檔]  。
-4. 輸入受信任憑證設定檔的 [名稱]  和 [描述]  。
-5. 從 [平台]  下拉式清單中，選取此受信任憑證的裝置平台。 選項包括：
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [裝置設定]   > [管理]   > [設定檔]   > [建立設定檔]  。
+2. 輸入下列內容：
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 及更新版本**
-    - **Windows 10 及更新版本**
+    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好的設定檔名稱是**適用於 Android 企業裝置擁有者裝置的受信任憑證設定檔**，或**適用於 iOS 裝置的受信任憑證設定檔**。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選擇您的裝置平台。 選項包括：
 
-6. 從 [設定檔類型]  下拉式清單中，選擇 [受信任的憑證]  。
-7. 瀏覽至您於[步驟 2：匯出受信任的根 CA 憑證](#step-2-export-your-trusted-root-ca-certificate)中所儲存的憑證，然後選取 [確定]  。
-8. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]  ︰
+      - **Android**
+      - **Android 企業** > **僅限裝置擁有者**
+      - **Android 企業** > **僅限工作設定檔**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 及更新版本**
+      - **Windows 10 及更新版本**
 
-    - **電腦憑證存放區 - 根**
-    - **電腦憑證存放區 - 中繼**
-    - **使用者憑證存放區 - 中繼**
+    - **設定檔類型**：選擇 [信任的憑證]  。
 
-9. 當您完成時，請選擇 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。
+3. 瀏覽至您於[步驟 2：匯出受信任的根 CA 憑證](#step-2-export-your-trusted-root-ca-certificate)中所儲存的憑證，然後選取 [確定]  。
+4. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]  ︰
+
+    - **電腦憑證存放區 - 根** (SCEP)
+    - **電腦憑證存放區 - 中繼** (SCEP)
+    - **使用者憑證存放區 - 中繼** (PKCS、SCEP)
+
+5. 當您完成時，請選擇 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。
 
 會建立設定檔，而且會出現在清單中。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
 
@@ -128,6 +133,7 @@ ms.locfileid: "67530552"
 建立受信任的憑證設定檔之後，請為您要使用的每個平台，建立 SCEP 或 PKCS 憑證設定檔。 建立 SCEP 憑證設定檔時，請輸入該相同平台的受信任憑證設定檔。 此步驟會連結兩個憑證設定檔，但您仍然必須分別指派每個設定檔。
 
 ## <a name="next-steps"></a>後續步驟
+
 [指派裝置設定檔](device-profile-assign.md)  
 [使用 S/MIME 簽署和加密電子郵件](certificates-s-mime-encryption-sign.md)  
 [使用協力廠商憑證授權單位](certificate-authority-add-scep-overview.md)

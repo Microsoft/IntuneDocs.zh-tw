@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412014"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69545924"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
@@ -39,44 +39,48 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
 - Android 企業與 kiosk
-- iOS 8.0 和更新版本
-- macOS (Mac OS X 10.11 及更新版本)
-- Windows 10 和更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
+- iOS 8.0 與更新版本
+- macOS X 10.11 與更新版本
+- Windows 10 與更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
 
 > [!NOTE]
 > 對於執行 Windows 8.1 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-3. 輸入 Wi-Fi 設定檔的 [名稱]  和 [描述]  。
-4. 在 [平台]  下拉式清單中，選取要套用 Wi-Fi 設定的裝置平台。 選項包括：
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+2. 輸入下列內容：
 
-    - **Android**
-    - **Android 企業**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 及更新版本**
-    - **Windows 10 及更新版本**
+    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好的設定檔名稱為**整個公司的 WiFi 設定檔**。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選擇您的裝置平台。 選項包括：
 
-5. 在 [設定檔類型]  中，選擇 [Wi-Fi]  。
+      - **Android**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 及更新版本**
+      - **Windows 10 及更新版本**
 
-    - 針對執行為 kiosk 的 **Android 企業**裝置，您可以選擇 [僅限裝置擁有者]   > [Wi-Fi]  。
-    - 針對 **Windows 8.1 和更新版本**，您可以選擇 [Wi-Fi 匯入]  。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
+    - **設定檔類型**：選取 [Wi-Fi]  。
 
-6. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇：
+      > [!TIP]
+      >
+      > - 針對以專用裝置 (kiosk) 形式執行的 **Android 企業**裝置，您可以選擇 [僅限裝置擁有者]   > [Wi-Fi]  。
+      > - 針對 **Windows 8.1 與更新版本**，您可以選擇 [Wi-Fi 匯入]  。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
+
+3. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇您的平台：
 
     - [Android](wi-fi-settings-android.md)
-    - [Android 企業與 kiosk](wi-fi-settings-android-enterprise.md)
+    - [Android 企業](wi-fi-settings-android-enterprise.md)，包括專用裝置
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 及更新版本](wi-fi-settings-windows.md)
-    - [Windows 8.1 和更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
+    - [Windows 8.1 與更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
-    大部分平台都有 [基本]  和 [企業]  設定。 **基本** 包含像網路名稱和 SSID 這樣的功能。 **企業**可讓您提供更進階的資訊，像是可延伸的驗證通訊協定 (EAP)。
+4. 完成後，請選取 [建立設定檔]   > [建立]  。
 
-7. 完成新增您的 Wi-Fi 設定時，請選取 [建立設定檔]   > [建立]  以新增組態設定檔。 此時會建立設定檔，並顯示在設定檔清單 ([裝置設定]   > [設定檔]  ) 中。
+此時會建立設定檔，並顯示在設定檔清單 ([裝置設定]   > [設定檔]  ) 中。
 
 ## <a name="next-steps"></a>後續步驟
 

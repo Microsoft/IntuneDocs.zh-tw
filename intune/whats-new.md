@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818805"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620208"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -51,6 +51,176 @@ ms.locfileid: "68818805"
 ### Role-based access control
 
 -->  
+
+<!-- ########################## -->
+
+## <a name="week-of-august-12-2019"></a>2019 年 8 月 12 日當週
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="control-ios-app-uninstall-behavior-at-device-unenrollment----3504144-----"></a>控制當裝置取消註冊時的 iOS 應用程式解除安裝行為 <!-- 3504144   -->
+系統管理員可以管理當裝置在使用者或裝置群組層級取消註冊時，應用程式要從裝置上移除或保留。 
+
+#### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>分類商務用 Microsoft Store 應用程式 <!-- 3926922 -->
+您可以將商務用 Microsoft Store 應用程式分類。 若要這樣做，請選擇 [Intune]   > [用戶端應用程式]   > [應用程式]  > 選取商務用 Microsoft Store 應用程式 > [應用程式資訊]   > [類別]  。 在下拉式清單功能表中，指派類別。
+
+#### <a name="customized-notifications-for-microsoft-intune-app-users----4843354----"></a>Microsoft Intune 應用程式使用者的自訂通知 <!-- 4843354  -->
+適用於 Android 的 Microsoft Intune 應用程式現在支援顯示自訂推播通知，使它與最近在適用於 iOS 與 Android 的公司入口網站應用程式中新增的支援有相同功能。 如需詳細資訊，請參閱[在 Intune 中傳送自訂通知](custom-notifications.md)。
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946-----"></a>多個應用程式模式 Android Enterprise 專用裝置的新功能 <!-- 3755304 3041943 3041946   -->
+在 Intune 中，您可以控制 Android Enterprise 專用裝置上 Kiosk 式體驗的功能與設定 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  平台 > [僅限裝置擁有者]、[裝置限制]  設定檔類型)。
+
+在此更新中，已新增下列功能：
+
+- [專用裝置]   > [多個應用程式]  ：[虛擬首頁按鈕]  可以透過在裝置上向上撥動來顯示，或是浮動顯示在畫面上，以便使用者可以移動它。
+- [專用裝置]   > [多個應用程式]  ：[手電筒存取權]  可讓使用者使用手電筒。 
+- [專用裝置]   > [多個應用程式]  ：[媒體音量控制]  可讓使用者使用滑桿來控制裝置的媒體音量。 
+- [專用裝置]   > [多個應用程式]  ：**啟用螢幕保護裝置**、上傳自訂影像，並控制何時顯示螢幕保護裝置程式。
+
+若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 Android Enterprise 裝置設定](device-restrictions-android-for-work.md#dedicated-device-settings)。
+
+適用於：  
+- Android Enterprise 專用裝置
+
+#### <a name="new-app-and-configuration-profiles-for-android-enterprise-fully-managed-devices----3574215-3574238-3574235-3574232-----"></a>適用於 Android Enterprise 完全受控裝置的新應用程式設定檔 <!-- 3574215 3574238 3574235 3574232   -->
+您可以使用設定檔來設定將 VPN、電子郵件與 Wi-Fi 設定套用到 Android Enterprise 裝置擁有者 (完全受控) 裝置的設定。 在此更新中，您可以：
+
+- 使用[應用程式設定原則](app-configuration-policies-use-android.md)來部署 Outlook、Gmail 與 Nine Work 電子郵件設定。
+- 使用裝置組態設定檔來部署[受信任的根憑證設定](certificates-configure.md)。
+- 使用裝置組態設定檔來部署 [VPN](vpn-settings-android-enterprise.md) 與 [Wi-Fi](wi-fi-settings-android-enterprise.md) 設定。
+
+> [!IMPORTANT]
+> 使用者可以使用此功能來驗證其 VPN、Wi-Fi 與電子郵件設定檔的使用者名稱與密碼。 目前無法使用憑證式驗證。 
+
+適用於：  
+- Android Enterprise 裝置擁有者 (完全受控)
+
+#### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices---3914202-----"></a>控制當使用者登入 macOS 裝置時會開啟的應用程式、檔案、文件與資料夾 <!--3914202   -->
+您可以啟用及設定 macOS 裝置上的功能 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [macOS]  平台 > [裝置功能]  設定檔類型)。 
+
+在此更新中，有一個新的 [登入項目] 設定，可控制當使用者登入已註冊的裝置時，會開啟哪些應用程式、檔案、文件與資料夾。 
+
+若要查看目前的設定，請前往 [Intune 中的 macOS 裝置功能設定](macos-device-features-settings.md)。
+
+適用於：  
+- macOS
+
+#### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Windows Update 通道的「預約重新啟動」已由「期限」取代   <!-- 4464404        -->
+為了具有與 [Windows 維護變更](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)相同的功能，Intune 的 Windows 10 Update 通道現在[支援期限設定](windows-update-settings.md)。 「期限」  決定裝置何時安裝功能與安全性更新。  在執行 Windows 10 1903 或更新版本的裝置上，「期限」  會取代「預約重新啟動」  的設定。  未來「期限」  也會取代舊版 Windows 10 上的「預約重新啟動」  。  
+
+當您未設定「期限」  時，裝置會繼續使用其「預約重新啟動」  設定，不過在未來的更新中，[Intune 將會淘汰對預約重新啟動設定的支援](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)。  
+
+規劃在您的所有 Windows 10 裝置上使用「期限」  。 當「期限」  的設定就緒之後，您可以將您 Intune 的「預約重新啟動」  設定變更為 [尚未設定]。 當設定為 [尚未設定] 時，Intune 會停止管理裝置上的這些設定，但不會從裝置中移除設定的最後一個組態。 因此，為「預約重新啟動」  設定的最後一個設定會在裝置上維持作用中設定，直到透過 Intune 以外的方法修改這些設定為止。 之後，當裝置的 Windows 版本變更時，或當 Intune 對「期限」  的支援擴充到裝置 Windows 版本時，裝置就會開始使用已準備好的新設定。
+
+#### <a name="support-for-multiple-microsoft-intune-certificate-connectors--------4704642--------"></a>支援多個 Microsoft Intune 憑證連接器   <!--   4704642      -->
+Intune 現在支援安裝並使用多個[適用於 PKCS 作業的 Microsoft Intune 憑證連接器](certficates-pfx-configure.md)。 此變更支援連接器的負載平衡與高可用性。 每個連接器執行個體都能處理來自 Intune 的憑證要求。  如果某個連接器無法使用，其他連接器會繼續處理要求。 
+
+若要使用多個連接器，您不需要升級到連接器軟體的最新版本。  
+
+#### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709-----"></a>新設定，以及可限制 iOS 與 macOS 裝置上功能的現有設定變更 <!-- 4867699 4867709   -->
+您可以建立設定檔來限制執行 iOS 與 macOS 之裝置上的功能 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [iOS]  或 [macOS]  平台類型 > [裝置限制]  )。 此更新包含下列功能：
+
+- 在 [macOS]   > [裝置限制]   > [雲端與儲存體]  中，使用新的 [Handoff]  設定可防止使用者在一部 macOS 裝置上工作，然後在另一部 macOS 或 iOS 裝置上繼續工作。
+
+  若要查看目前的設定，請前往 [macOS 裝置設定以使用 Intune 允許或限制功能](device-restrictions-macos.md)。
+
+- 在 [iOS]   > [裝置限制]  上，有幾個變更：
+
+  - [內建應用程式]   > [尋找我的 iPhone (僅限受監督)]  ：封鎖 Find My 應用程式功能中此功能的新設定。 
+  - [內建應用程式]   > [尋找我的朋友 (僅限受監督)]  ：封鎖 Find My 應用程式功能中此功能的新設定。 
+  - [無線]   > [修改 Wi-Fi 狀態 (僅限受監督)]  ：防止使用者開啟或關閉裝置上 Wi-Fi 功能的新設定。
+  - [鍵盤與字典]   > [QuickPath (僅限受監督)]  ：封鎖 QuickPath 功能的新設定。
+  - **雲端與儲存體**：[活動接續]  已重新命名為 [Handoff]  。
+
+  若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 iOS 裝置設定](device-restrictions-ios.md)。
+
+適用於：  
+- macOS 10.15 與更新版本
+- iOS 13 與更新版本
+
+#### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809-----"></a>某些不受監督的 iOS 裝置限制將會只在 iOS 13.0 版本中受到監督 <!-- 4867809   -->
+在此更新中，某些設定適用於執行 iOS 13.0 版的僅限受監督裝置。 如果在執行早於 iOS 13.0 版之版本的未受監督裝置上設定並指派這些設定，這些設定仍然會套用到那些未受監督裝置。 裝置升級到 iOS 13.0 之後仍然會套用它們。 在已備份和已還原的未受監督裝置上，系統會移除這些限制。 
+
+這些設定包括：
+
+- App Store、文件檢視、遊戲
+  - App Store
+  - 偏激的 iTunes 音樂、播客或新聞內容
+  - 新增 Game Center 朋友
+  - 多人遊戲
+- 內建應用程式
+  - 相機
+    - FaceTime
+  - Safari
+    - 自動填寫
+- 雲端與儲存體
+  - 備份至 iCloud
+  - 禁止 iCloud Document 同步
+  - 防止同步 iCloud 鑰匙圈
+
+若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 iOS 裝置設定](device-restrictions-ios.md)。
+
+適用於：  
+- iOS 13.0 與更新版本
+
+#### <a name="improved-device-status-for-macos-filevault-encryption-----4944983-----------"></a>已改善 macOS FileVault 加密的裝置狀態  <!-- 4944983         -->
+我們已針對 macOS 裝置的 FileVault 加密更新數個[裝置狀態訊息](encryption-monitor.md#device-encryption-status)。
+
+#### <a name="some-windows-defender-antivirus-scan-settings-in-the-reporting-show-a-failed-status----5119229---"></a>報告中的某些 Windows Defender 防毒軟體掃描設定顯示 [失敗] 狀態 <!-- 5119229 -->
+在 Intune 中，您可以建立原則來使用 Windows Defender Antivirus 掃描您的 Windows 10 裝置 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Windows 10 及更新版本]  平台 > [裝置限制]  設定檔類型 > [Windows Defender 防毒軟體]  )。 [執行每日快速掃描的時間]  與 [要執行的系統掃描類型]  報告顯示 [失敗] 狀態，但它實際上是成功狀態。 
+
+在此更新中，已修正此行為。 因此，[執行每日快速掃描的時間]  和 [要執行的系統掃描類型]  設定會在掃描成功完成時顯示成功狀態，並在無法套用設定時顯示失敗狀態。 
+
+如需 Windows Defender 防毒軟體設定的詳細資訊，請參閱[使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定](device-restrictions-windows-10.md#windows-defender-antivirus)。 
+
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="default-scope-tags----3702875----"></a>預設範圍標籤 <!-- 3702875  -->
+現已可使用新內建功能「預設範圍標籤」。 所有支援範圍標籤的未標記 Intune 物件都會自動指派至預設範圍標籤。 [預設]  範圍標籤會新增至所有現有的角色指派，以維持與目前系統管理員相同的體驗。 如果您不想讓系統管理員看到 Intune 物件有預設範圍標籤，請從角色指派中移除預設範圍標籤。 此功能與 System Center Configuration Manager 中的安全性範圍功能類似。 如需詳細資訊，請參閱[針對分散式 IT 使用 RBAC 和範圍標籤](scope-tags.md)。
+
+#### <a name="android-enrollment-device-administrator-support----4869749-----"></a>Android 註冊裝置系統管理員支援 <!-- 4869749   -->
+Android 裝置系統管理員註冊選項已新增至 Android 註冊頁面 ([Intune]   > [裝置註冊]   > [Android 註冊]  )。 針對所有租用戶，預設仍會啟用 Android 裝置系統管理員。  如需詳細資訊，請參閱 [Android 裝置系統管理員註冊](android-enroll-device-administrator.md)。
+
+#### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>在設定輔助程式中略過更多畫面 <!--4877451  -->
+您可以設定 [裝置註冊計劃] 設定檔，以略過下列 [設定輔助程式] 畫面：
+- 適用於 iOS
+    - 外觀
+    - 快速語言
+    - 慣用語言
+    - 裝置到裝置的移轉
+- 適用於 macOS
+    - 螢幕使用時間
+    - Touch ID 設定
+
+如需 [設定輔助程式] 的詳細資訊，請參閱[建立適用於 iOS 的 Apple 註冊設定檔](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)與[建立適用於 macOS 的 Apple 註冊設定檔](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)。
+
+#### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>將使用者欄新增至 Autopilot 裝置 CSV 上傳程序 <!-- 3823054 -->
+您現在可以將使用者欄新增至 Autopilot 裝置的 CSV 上傳。 這可讓您在匯入 CSV 時大量指派使用者。 CSV 中的列新格式看起來像這樣：serial-number、windows-product-id、hardware-hash、optional-group-tag、optional-assigned-user。 如需詳細資訊，請參閱[使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](enrollment-autopilot.md)。
+
+
+### <a name="device-management"></a>裝置管理
+
+#### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>將自動裝置清除時間限制設定為最低 30 天 <!--4231059  -->
+您可以將自動裝置清除時間限制設定為最短在最後一次登入之後的 30 天 (而不是先前的限制 90 天)。 若要這樣做，請移至 [Intune]   > [裝置]   > [設定]   > [裝置清除規則]  。
+
+#### <a name="build-number-included-on-android-device-hardware-page----4461910-----"></a>Android 裝置 [硬體] 頁面上包括的組建編號 <!-- 4461910   -->
+每個 Android 裝置的 [硬體] 頁面上都有一個新項目，它包括裝置的作業系統組建編號。 如需詳細資訊，請參閱[在 Intune 中檢視裝置詳細資料](device-inventory.md)。
+
+
+<!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>2019 年 8 月 5 日當週
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Zebra Technologies 是 Android Enterprise 裝置上支援的 OEMConfig OEM  <!-- 4843713 -->
+
+在 Intune 中，您可以建立裝置組態設定檔，並使用 OEMConfig 將設定套用至 Android Enterprise 裝置 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  平台 > [OEMConfig]  設定檔類型)。
+
+在此更新中，Zebra Technologies 是受支援的 OEMConfig 原始設備製造商 (OEM)。 如需 OEMConfig 的詳細資訊，請參閱[運用 OEMConfig 來使用及管理 Android Enterprise 裝置](android-oem-configuration-overview.md)。
+
+適用於：  
+- Android Enterprise
 
 <!-- ########################## -->
 
@@ -138,7 +308,7 @@ Android Enterprise 註冊設定檔的圖示已變更。 若要查看新圖示，
 
 ### <a name="device-security"></a>裝置安全性
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>適用於 Windows Defender 防火牆的進階設定 (公開預覽版)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>適用於 Windows Defender 防火牆的進階設定 (公開預覽版)  <!--  1311949     -->  
 使用 Intune [將自訂防火牆規則納入裝置組態設定檔中](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices)來管理，以執行 Windows 10 上的端點保護。 規則可指定應用程式、網路位址和連接埠的輸入及輸出行為。 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>已更新用於管理安全性基準的 UI   <!-- 4091125     -->
@@ -269,9 +439,6 @@ iOS 11.0 和更新版本可使用 Face ID。 若要查看這些設定，請前�
 適用於：iOS
 
 ### <a name="device-enrollment"></a>裝置註冊
-
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Windows Autopilot 重設會移除裝置的主要使用者 <!-- 4156123 -->
-此功能已延後，將在即將推出的短期衝刺中發行。    
 
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>混合式 Azure AD Join 的 Windows Autopilot 支援 <!-- 4809146-->
 現有裝置的 Windows Autopilot 除了現有的 Azure AD Join 支援之外，現在也支援「混合式 Azure AD Join」。 適用於 Windows 10 1809 版和更新版本的裝置。 如需詳細資訊，請參閱[現有裝置的 Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) \(部分機器翻譯)\。
@@ -442,7 +609,7 @@ Windows 公司入口網站應用程式將新增標籤為 [裝置]  的頁面。 
 適用於：iOS
 
 #### <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender 進階威脅防護基準 (預覽)  <!--  3754134 -->
-我們已新增 [Microsoft Defender 進階威脅防護](security-baseline-settings-defender-atp.md)設定的安全性基準預覽。 當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用此基準。
+我們已新增 [Microsoft Defender 進階威脅防護](security-baseline-settings-defender-atp.md)設定的安全性基準預覽。 當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的先決條件時，即可使用此基準。
 
 ### <a name="device-enrollment"></a>裝置註冊
 
@@ -539,7 +706,7 @@ Android 裝置上 Intune 應用程式防護原則 (APP) 現在使用符合 FIPS 
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>設定在已註冊 Intune 並加入 Azure AD 之裝置上安裝您的 Win32 應用程式 <!-- 3695227  -->
 您可以指派在已註冊 Intune 並加入 Azure AD 的裝置上安裝 Win32 應用程式。 如需 Intune 中 Win32 應用程式的詳細資訊，請參閱 [Win32 應用程式管理](apps-win32-app-management.md)。
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>裝置概觀會顯示主要使用者 <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>裝置概觀會顯示主要使用者 <!--3794259  -->
 裝置概觀頁面會顯示主要使用者，也稱為使用者裝置親和性使用者 (UDA)。 若要查看裝置的主要使用者，請選擇 [Intune]   > [裝置]   > [所有裝置]  > 選擇裝置。 主要使用者會出現在 [概觀]  頁面頂端附近。
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Enterprise 工作設定檔裝置的其他受控 Google Play 應用程式報告 <!-- 4105925  -->
@@ -581,8 +748,8 @@ iOS **協力廠商鍵盤**設定的 Intune 應用程式防護原則 (APP) 支援
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows 更新通知  <!-- 3316758, 3316782  -->
 Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可從 Intune 主控台進行管理。 您現在可以：
-- 封鎖或允許使用者[掃描 Windows 更新](windows-update-settings.md#block-user-from-scanning-for-windows-updates)。
-- 管理使用者所看到的 [Windows 更新通知層級](windows-update-settings.md#windows-update-notification-level)。
+- 封鎖或允許使用者[掃描 Windows 更新](windows-update-settings.md)。
+- 管理使用者所看到的 [Windows 更新通知層級](windows-update-settings.md)。
 
 #### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>新增 Android Enterprise 裝置擁有者的裝置限制設定 <!-- 3574254  -->
 在 Android Enterprise 裝置上，您可以建立裝置限制設定檔來允許或限制功能、設定密碼規則等 ([裝置設定]   > [設定檔]   > [建立設定檔]  > 選擇 [Android Enterprise]  平台 > [僅限裝置擁有者] > [裝置限制]  設定檔類型)。 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671048"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550129"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密   
 
@@ -97,30 +97,30 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
   > [!IMPORTANT]  
   > 若是 Windows 10 裝置，Intune 只會針對執行「Windows 10 2019 年 4 月更新」  或更新版本的裝置，顯示其「狀態詳細資料」  。  
   
-  此欄位會顯示可能偵測到的每個適用錯誤資訊。 您可以使用此資訊來了解裝置為何尚未準備好加密。  
+  此欄位會顯示可能偵測到的每個適用錯誤資訊。 您可以使用這項資訊來了解裝置為何尚未準備好加密。  
 
   下列是 Intune 可能報告的狀態詳細資料範例：  
   
   **macOS**：
-  - 目前無法安裝設定檔，因為我們正在等候某個先決條件。  
+  - 尚未擷取及儲存復原金鑰。 最可能的情況是，裝置尚未解除鎖定或尚未簽入。  
  
-    *考量：此結果不一定代表錯誤狀況，而是暫時性狀態，這可能是由於必須先設定修復金鑰委付，才能將加密要求傳送到裝置的裝置時機所造成。這也可能表示裝置仍處於鎖定狀態，或最近尚未使用 Intune 簽入。最後，由於 FileVault 加密在裝置插入 (充電) 之前不會啟動，所以使用者可能會收到尚未加密裝置的修復金鑰*。  
+    *考量：此結果不一定代表錯誤狀況，而是暫時性狀態，這可能是由於必須先設定修復金鑰委付，才能將加密要求傳送到裝置的裝置時機所造成。此狀態也可能表示裝置仍處於鎖定狀態，或最近尚未使用 Intune 簽入。最後，由於 FileVault 加密在裝置插入 (充電) 之前不會啟動，所以使用者可能會收到尚未加密裝置的修復金鑰*。  
 
-  - 已安裝 FileVault 設定檔，但未在裝置上啟用 FileVault。  
+  - 使用者正在延遲加密，或目前正在進行加密。  
  
     *考量：可能是使用者在收到加密要求之後尚未登出，必須登出，FileVault 才能加密裝置；也可能是使用者已手動解密裝置。Intune 無法防止使用者解密其裝置。*  
 
-  - 使用者已啟用 FileVault，因此 Intune 無法管理其修復。  
+  - 裝置已加密。 裝置使用者必須將裝置解密才能繼續。  
  
     *考量：Intune 無法在已加密的裝置上設定 FileVault。相反地，使用者必須先手動解密其裝置，才能透過裝置設定原則和 Intune 管理裝置*。 
  
-  - FileVault 需要使用者在 MacOS Catalina 和更新版本中核准其管理設定檔。  
+  - FileVault 需要使用者在 MacOS Catalina 與更新版本中核准其管理設定檔。  
  
     *考量：從 MacOS 10.15 版 (Catalina) 開始，使用者核准的註冊設定可能會導致使用者必須手動核准 FileVault 加密。如需詳細資訊，請參閱 Intune 文件中的[使用者核准的註冊](macos-enroll.md)* 。  
 
-  - iOS 裝置傳回 NotNow (已鎖定)。  
+  - 不明。  
 
-    *考量：裝置目前已鎖定，因此 Intune 無法啟動委付或加密程序。將裝置解除鎖定之後，即可繼續進行程序*。  
+    *考量：未知狀態的其中一個可能原因是裝置已鎖定，且 Intune 無法啟動委付或加密程序。將裝置解除鎖定之後，即可繼續進行程序*。  
 
   **Windows 10**：  
   - BitLocker 原則需要使用者同意，才能啟動 [BitLocker 磁碟機加密精靈] 開始加密 OS 磁碟區，但使用者未同意。  
@@ -161,7 +161,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
   
 ![匯出詳細資料](./media/encryption-monitor/export.png) 
  
-此報表可用於找出裝置群組的問題。 例如，您可以使用報表來找出報告「使用者已啟用 FileVault」  的所有 macOS 裝置清單，這表示必須先手動解密裝置，Intune 才能開始管理其 FileVault 設定。  
+此報表可用於找出裝置群組的問題。 例如，您可以使用報表來找出報告「使用者已啟用 FileVault」  的所有 macOS 裝置清單，這表示必須先手動將裝置解密，Intune 才能管理其 FileVault 設定。  
  
 ## <a name="filevault-recovery-keys"></a>FileVault 修復金鑰   
 當 Intune 第一次使用 FileVault 加密 macOS 裝置時，會建立個人修復金鑰。 加密後，裝置只會向終端使用者顯示一次個人金鑰。  
@@ -202,7 +202,7 @@ Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 修復金鑰  
 
-Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視 Windows 10 裝置的 BitLocker 金鑰識別碼和修復金鑰。  為了能夠存取，裝置必須將其金鑰委付給 Azure AD。 
+Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視您 Windows 10 裝置的 BitLocker 金鑰識別碼與修復金鑰。  為了能夠存取，裝置必須將其金鑰委付給 Azure AD。 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，移至 [裝置]  ，然後在 [管理]  下選取 [所有裝置]  。  
 
 2. 從清單中選取裝置，然後在 [監視]  下方選取 [修復金鑰]  。  
@@ -214,7 +214,7 @@ Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 Bit
 
 當金鑰不在 Azure AD 時，Intune 會顯示 [找不到此裝置的 BitLocker 金鑰]  。  
 
-您可以使用 [BitLocker 設定服務提供者](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) 來取得 BitLocker 的資訊。 Windows 10 1703 版和更新版本，以及 Windows 10 專業版 1809 版和更新版本支援 BitLocker CSP。  
+您可以使用 [BitLocker 設定服務提供者](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) 來取得 BitLocker 的資訊。 Windows 10 1703 版與更新版本，以及 Windows 10 專業版 1809 版與更新版本支援 BitLocker CSP。  
 
 ## <a name="next-steps"></a>後續步驟  
 

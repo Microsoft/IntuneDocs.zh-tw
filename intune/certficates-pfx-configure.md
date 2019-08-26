@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
-ms.topic: article
+ms.date: 08/15/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263714"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582942"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -53,15 +53,19 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 - **根憑證**：  
   從您的企業 CA 匯出的根憑證複本。
 
-- **Intune 憑證連接器** (也稱為「NDES 憑證連接器」  )：  
+- **Intune 憑證連接器** (亦稱為「NDES 憑證連接器」  )：  
   在 Intune 入口網站中，移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝 PKCS #12 連接器的步驟」  。 使用入口網站中的下載連結，開始下載憑證連接器安裝程式 **NDESConnectorSetup.exe**。  
+
+  針對每個租用戶，Intune 支援此連接器最多 100 個執行個體，每個執行個體都位於個別的 Windows 伺服器上。 您可以在與 Microsoft Intune 的 PFX 憑證連接器執行個體相同的伺服器上，安裝此連接器的執行個體。 當您使用多個連接器時，連接器基礎結構支援高可用性與負載平衡，因為任何可用的連接器執行個體都可以處理您的 PKCS 憑證要求。 
 
   此連接器會處理用於驗證或 S/MIME 電子郵件簽署的 PKCS 憑證要求。
 
-  NDES 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
+  Microsoft Intune 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
 - **適用於 Microsoft Intune 的 PFX 憑證連接器**：  
-   如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載用於「匯入 PFX 憑證」  的連接器。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
+  如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載用於「匯入 PFX 憑證」  的連接器。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
+
+  每個 Intune 租用戶都支援此連接器的單一執行個體。 您可在相同的伺服器上安裝此連接器，作為 Microsoft Intune 憑證連接器的執行個體。
 
   此連接器會處理對 Intune 中所匯入之 PFX 檔案的要求，為特定使用者進行 S/MIME 電子郵件加密。  
 
@@ -87,7 +91,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
  
 2. 移至 [開始]   > [執行]  ，然後輸入 **Cmd** 來開啟命令提示字元。 
     
-3. 指定 **certutil  -ca.cert ca_name.cer**，將根憑證匯出為名為 *ca_name.cer* 的檔案。
+3. 指定 **certutil -ca.cert ca_name.cer**，將根憑證匯出為名為 *ca_name.cer* 的檔案。
 
 
 
@@ -140,7 +144,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 2. 選取 [裝置設定]   > [憑證連接器]   > [新增]  。
 3. 下載連接器檔案，並將其儲存到要安裝連接器之伺服器所能存取的位置。
 
-    ![NDES 連接器下載](media/certificates-pfx-configure/download-ndes-connector.png)
+    ![Microsoft Intune 憑證連接器下載](media/certificates-pfx-configure/download-ndes-connector.png)
  
 
 4. 下載完成後，請登入伺服器。 然後：
@@ -149,7 +153,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
     2. 執行安裝程式 (NDESConnectorSetup.exe)，並接受預設位置。 它會將連接器安裝到 `\Program Files\Microsoft Intune\NDESConnectorUI`。 在 [安裝程式選項] 中，選取 [PFX 發佈]  。 繼續並完成安裝。
     3. 連接器服務預設會以本機系統帳戶執行。 如果需要有 Proxy 才能存取網際網路，請確認本機服務帳戶可以存取伺服器上的 Proxy 設定。
 
-5. [NDES 連接器] 會開啟 [註冊]  索引標籤。若要連線到 Intune，請**登入**並輸入具有全域系統管理權限的帳戶。
+5. Microsoft Intune 憑證連接器會開啟 [註冊]  索引標籤。若要連線到 Intune，請**登入**並輸入具有全域系統管理權限的帳戶。
 6. 在 [進階]  索引標籤上，建議保持選取 [使用此電腦的 SYSTEM 帳戶 (預設)]  。
 7. [套用]   > [關閉] 
 8. 返回 Intune 入口網站 ([Intune]   > [裝置設定]   > [憑證連接器]  )。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態]  為 [使用中]  。 連接器伺服器現在可以與 Intune 通訊。
@@ -218,6 +222,9 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 4. 選取 [確定]   > [建立]  儲存您的設定檔。
 5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
+
+   > [!NOTE]
+   > 在具有 Android 企業設定檔的裝置上，使用 PKCS 憑證設定檔安裝的憑證不會顯示在裝置上。 若要確認憑證部署成功，請在 Intune 主控台中檢查設定檔的狀態。
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>建立 PKCS 匯入憑證設定檔
 

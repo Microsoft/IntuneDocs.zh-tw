@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68679989"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978515"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -37,7 +37,7 @@ ms.locfileid: "68679989"
 > [!NOTE]
 > Microsoft 建議您不要在生產環境使用安全性基準的預覽版。 預覽基準中的設定在預覽期間可能會變更。 
 
-使用安全性基準的目標是在使用 Microsoft 365 時有端對端的安全工作流程。 以下為部分優點：
+安全性基準可協助您在使用 Microsoft 365 時有端對端的安全工作流程。 以下為部分優點：
 
 - 安全性基準包含關於會影響安全性之設定的最佳做法和建議。 Intune 會與建立群組原則安全性基準的同一個 Windows 安全性小組合作。 這些建議均以指引和豐富經驗為依據。
 - 如果您從未用過 Intune，且不確定該從何處開始，則安全性基準可讓您具有優勢。 您可以快速建立並部署安全的設定檔，了解您正在協助保護貴組織的資源和資料。
@@ -47,20 +47,21 @@ ms.locfileid: "68679989"
 
 [Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) \(部分機器翻譯\) 是深入了解此功能的絕佳資源。 [行動裝置管理](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) \(英文\) 是關於 MDM 以及您如何在 Windows 裝置上加以運用的絕佳資源。
 
-## <a name="security-baseline-versions-and-instances"></a>安全性基準版本與執行個體
-我們會適時推出基準的新更新。 基準的每個新版本執行個體都可以新增或移除設定或引進其他變更。 例如，當新的 Windows 10 設定因為新版本的 Windows 10 推出而變成可用時，MDM 安全性基準可能會收到包括最新設定的新版本執行個體。  
+## <a name="about-baseline-versions-and-instances"></a>關於基準版本與執行個體
 
-在 Intune 主控台中，您可以檢視哪個安全性基準可用與相關資訊。 可用資訊包括您有多少個使用該基準類型的設定檔、有多少該基準類型的個別執行個體可用，以及最新執行個體可用或發行時間。  下列範例顯示常用 MDM 安全性基準的圖格：  
+基準的每個新版本執行個體都可以新增或移除設定或引進其他變更。 例如，當新的 Windows 10 設定因為新版本的 Windows 10 推出而變成可用時，MDM 安全性基準可能會收到包括最新設定的新版本執行個體。  
+
+在 Intune 主控台中，每個基準的圖格都會顯示基準範本名稱和該基準的基本資訊。 該資訊包括您有多少個使用該基準類型的設定檔、有多少該基準類型的個別執行個體 (版本) 可用，以及可識別基準範本何時新增至您租用戶的「上次發行日期」  日期。 下列範例顯示常用 MDM 安全性基準的圖格：  
 
 ![基準圖格](./media/security-baselines/baseline-tile.png)
 
-若要檢視您使用之基準版本的相關資訊，請選取基準並選取 [版本]  。 Intune 會顯示您的設定檔使用之版本的詳細資料。 在 [版本] 窗格上，您可以選取單一版本以檢視使用該版本之設定檔的深入詳細資料。 您也可以選取兩個不同的版本並選擇 [比較基準]  以下載詳述差異的 CSV 檔案。  
+若要檢視您使用之基準版本的詳細資訊，請選取基準圖格以開啟其 [概觀]  窗格，然後選取 [版本]  。 Intune 會顯示您的設定檔所使用基準版本的詳細資料。 在 [版本] 窗格上，您可以選取單一版本以檢視使用該版本之設定檔的深入詳細資料。 您也可以選取兩個不同的版本並選擇 [比較基準]  以下載詳述差異的 CSV 檔案。  
 
 ![比較基準](./media/security-baselines/compare-baselines.png)
 
 當您建立安全性基準設定檔  時，設定會自動使用最新的已發行安全性基準執行個體。  您可以繼續使用及編輯先前建立且使用較早基準版本執行個體的設定檔，包括使用預覽版本建立的基準。 
 
-安全基準設定檔支援使用中基準的[版本變更](#change-the-baseline-instance-for-a-profile)。 這表示當新版本推出時，您不需要建立新的基準設定檔就能發揮其功能。 當您就緒時，您可以改為選取基準設定檔並使用內建選項來變更該設定檔的執行個體版本。  
+您可以選擇[變更搭配給定設定檔使用的基準版本](#change-the-baseline-version-for-a-profile)。 這表示當新版本推出時，您不需要建立新的基準設定檔就能發揮其功能。 當您就緒時，您可以改為選取基準設定檔並使用內建選項將該設定檔的執行個體版本變更為新版本。  
 
 ## <a name="available-security-baselines"></a>可用的安全性基準 
 
@@ -75,22 +76,25 @@ ms.locfileid: "68679989"
   - [預覽：Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
-  > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (提高 Microsoft Defender ATP 安全性基準的合規性)。
+  > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的 [將合規性提升至 Microsoft Defender ATP 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) \(部分機器翻譯\)。
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="manage-baselines"></a>管理基準  
+
+您在使用安全性基準時執行的一般工作包括：
+- [建立設定檔](#create-the-profile) - 設定您要使用的設定，然後將基準指派給群組。
+- [變更版本](#change-the-baseline-version-for-a-profile) - 變更由設定檔使用的基準版本。
+- [移除基準指派](#remove-a-security-baseline-assignment) - 了解當您停止使用安全性基準管理設定時會發生什麼事。
+
+
+### <a name="prerequisites"></a>先決條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  
 
-## <a name="co-managed-devices"></a>共同管理的裝置
 
-Intune 管理之裝置上的安全性基準類似使用 Configuration Manager 的共同受控裝置。 共同受控裝置會使用 System Center Configuration Manager 和 Microsoft Intune，同時管理 Windows 10 裝置。 它可讓您將現有的 Configuration Manager 投資雲端連結至 Intune 的優點。 如果您使用 Configuration Manager，同時也想擁有雲端的優點，則[共同管理概觀](https://docs.microsoft.com/sccm/comanage/overview) \(英文\) 會是一項絕佳資源。
-
-使用共同受控裝置時，您必須將**裝置設定**工作負載 (其設定) 切換至 Intune。 [裝置設定工作負載](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) \(英文\) 會提供詳細資訊。
-
-## <a name="create-the-profile"></a>建立設定檔
+### <a name="create-the-profile"></a>建立設定檔
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [裝置安全性]   > [安全性基準]  以檢視可用基準清單。
 
@@ -131,12 +135,13 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
    ![檢閱基準](./media/security-baselines/review.png) 
 
   
-8. 建立設定檔之後，您可以透過移至 [裝置安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。  從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。  
+8. 建立設定檔之後，您可以透過移至 [裝置安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。 從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。  
 
-## <a name="change-the-baseline-instance-for-a-profile"></a>變更設定檔的基準執行個體
-基準設定檔支援變更設定檔使用的基準執行個體。 您可以選取較舊的執行個體，或選取相同基準的較新執行個體 (這是更常見的情況)。  您無法在兩個不同的基準之間變更，例如將設定檔從使用 Defender ATP 的基準變更為使用 MDM 安全性基準。 
+### <a name="change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本  
 
-當設定基準版本的變更時，系統會提供選項讓您下載列出兩個涉及之基準間之變更的 CSV 檔案。 系統也會提供選項讓您保存原始基準版本中的所有自訂設定並將其套用到新版本，或實作在您選取之新基準版本中發現的所有預設設定。 
+您可以變更搭配設定檔使用之基準執行個體的版本。  當您變更版本時，您是選取相同基準的可用執行個體。 您無法在兩個不同的基準類型之間變更，例如將設定檔從使用 Defender ATP 的基準變更為使用 MDM 安全性基準。 
+
+在設定基準版本的變更時，您可以下載列出所涉及兩個基準版本間之變更的 CSV 檔案。 您也可以選擇保留原始基準版本的所有自訂項目，或使用其所有預設值來實作新版本。 當您在變更設定檔的基準版本時，您無法選擇變更個別設定。 
 
 儲存時，當轉換完成之後，基準會立即重新部署到指派的群組。  
 
@@ -147,7 +152,7 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
   當設定不再由基準設定檔管理時，該設定不會在裝置上重設。 裝置上的該設定會維持設定為其上次設定，直到一些其他程序管理那些設定並變更設定值。 可在您停止管理設定之後變更設定的程序範例包括不同的基準設定檔、群組原則設定，或在裝置上進行的手動設定。 
 
-### <a name="to-change-the-instance-for-a-baseline"></a>變更基準的執行個體  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本  
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並選取 [裝置安全性]   > [安全性基準]  ，然後選取具有您要變更之設定檔的基準類型圖格。  
 
@@ -159,7 +164,7 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
    ![選取版本](./media/security-baselines/select-instance.png)  
    
-4. 選取 [檢閱更新]  以下載 CSV 檔案，此檔案顯示設定檔目前執行個體版本與您選取之新版本之間的差異。 檢閱此檔案，以便您了解新增、移除了哪些設定，以及這些設定在已更新之設定檔中的預設值為何。  
+4. 選取 [檢閱更新]  以下載 CSV 檔案，此檔案顯示設定檔目前執行個體版本與您選取之新版本之間的差異。 檢閱此檔案，以便您了解那些設定是新的，或移除了哪些設定，以及這些設定在已更新之設定檔中的預設值為何。  
 
    當您就緒時，繼續到下一個步驟。  
 
@@ -169,14 +174,16 @@ Intune 管理之裝置上的安全性基準類似使用 Configuration Manager �
 
 6. 選取 [提交]  。 設定檔會更新為選取的基準版本，而且在轉換完成後，基準會立即重新部署到指派的群組。
 
-## <a name="remove-a-security-baseline-assignment"></a>移除安全性基準指派
+### <a name="remove-a-security-baseline-assignment"></a>移除安全性基準指派
 當安全性基準設定不再套用到裝置時，或基準中的設定設定為 [尚未設定]  時，裝置上的那些設定不會還原為預先管理的設定。 裝置上先前的受控設定會保留其上次從基準所接收的設定，直到一些其他程序更新裝置上的那些設定。  
 
 稍後可能變更裝置上那些設定的其他程序包括不同或新的安全性基準、裝置設定檔、群組原則設定，或在裝置上手動編輯設定。  
 
+## <a name="co-managed-devices"></a>共同管理的裝置
 
+Intune 管理之裝置上的安全性基準類似使用 Configuration Manager 的共同受控裝置。 共同受控裝置會使用 System Center Configuration Manager 和 Microsoft Intune，同時管理 Windows 10 裝置。 它可讓您將現有的 Configuration Manager 投資雲端連結至 Intune 的優點。 如果您使用 Configuration Manager，同時也想擁有雲端的優點，則[共同管理概觀](https://docs.microsoft.com/sccm/comanage/overview) \(英文\) 會是一項絕佳資源。
 
-
+使用共同受控裝置時，您必須將**裝置設定**工作負載 (其設定) 切換至 Intune。 [裝置設定工作負載](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) \(英文\) 會提供詳細資訊。  
 
 ## <a name="q--a"></a>問答集
 

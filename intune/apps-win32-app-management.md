@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884041"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960592"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "67884041"
 > [!NOTE]
 > 此應用程式管理功能支援 Windows 應用程式使用 32 位元和 64 位元作業系統架構。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要使用 Win32 應用程式管理，請務必符合下列準則：
 
@@ -283,6 +283,8 @@ ms.locfileid: "67884041"
 ## <a name="app-dependencies"></a>應用程式相依性
 
 應用程式相依性是必須先安裝才能安裝 Win32 應用程式的應用程式。 您可以要求將其他應用程式安裝為相依性。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 最多可以有 100 個相依性，其中包括任何內含相依性的相依性，以及應用程式本身。 只有在將 Win32 應用程式新增並上傳至 Intune 之後，才能新增 Win32 應用程式相依性。 一旦新增您的 Win32 應用程式之後，您會在 Win32 應用程式的刀鋒視窗上看到 [相依性]  選項。 
+
+任何 Win32 應用程式相依性都必須也是 Win32 應用程式。 它不支援不同的應用程式類型，例如單一 MSI LOB 應用程式或市集應用程式。
 
 新增應用程式相依性時，您可以根據應用程式名稱和發行者進行搜尋。 此外，您可以根據應用程式名稱和發行者來排序新增的相依性。 無法在所新增應用程式相依性清單中選取先前新增的應用程式相依性。 
 

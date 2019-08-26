@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548340"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022838"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>開發推出通訊計畫
 
@@ -50,7 +50,7 @@ ms.locfileid: "67548340"
 
 **註冊後階段**<br/> 通訊是以已在 Intune 中註冊的組織群組和使用者為目標。 這些通訊應該提供有助於使用者的額外資源，並收集其在註冊期間及註冊後的體驗意見反應。
 
-您可能會發現此[使用者註冊指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)很有用。 您可以依原樣使用，或為您的組織進行修改。
+您可能會發現此 [Intune 採用套件](https://aka.ms/IntuneAdoptionKit)很有幫助。 您可以依原樣使用，或為您的組織進行修改。
 
 ## <a name="communication-delivery-methods"></a>通訊傳遞方法
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041304"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651202"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -152,7 +152,9 @@ ms.locfileid: "67041304"
 當您選取特定設定時，您可以查看該設定之每部目標裝置的 [合規性狀態]  、[使用者的電子郵件別名]  、[裝置型號]  及 [位置]  。
 
 > [!NOTE]
-> 已加入 Azure AD 的 Windows 10 裝置可能會將系統帳戶顯示為不符合規範的使用者。 這是預期的行為，而且不會影響整體裝置合規性。 
+> 原則可以指派給裝置，以及相同裝置上的使用者。 在某些情況下，裝置可能會在使用者登入之前進行同步處理，例如，當裝置重新開機時。 合規性可能會評估此使用者，並將裝置顯示為不符合規範。 此行為也可能會將系統帳戶顯示為不符合規範的使用者。
+>
+> 這是多使用者 Windows 10 裝置的已知問題。 此行為的任何變更或更新，都會在[開發中](in-development.md)和/或[新功能](whats-new.md)中公告。
 
 ## <a name="view-status-of-device-policies"></a>檢視裝置原則狀態
 

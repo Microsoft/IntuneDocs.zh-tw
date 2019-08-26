@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 886241dcde88765c4879357ee42b2b281e7f3408
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549315"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861863"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
 
@@ -45,17 +45,14 @@ ms.locfileid: "67549315"
 | | 相容性原則 | |
 | | 條件式存取原則|-|
 
-
 ## <a name="further-reading"></a>進階閱讀
 
 請參閱 Intune 部署規劃、設計和實作程序期間可能有用之其他資訊的這些資源。
 
-- [Microsoft Intune 文件](/intune/) - 一組完整的 Intune 文件。
+- [Microsoft Intune 文件](http://docs.microsoft.com/intune/) - 一組完整的 Intune 文件。
 
-- [Intune 部落格](https://blogs.technet.microsoft.com/enterprisemobility/) - 協助您了解 Intune 如何融入大型企業行動力願景的文章。
+- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter) - 了解 Microsoft 在所有 Microsoft 雲端產品和服務中促進安全性、隱私權、合規性和透明度的方法。
 
-- [Microsoft 信任中心](http://www.microsoft.com/TrustCenter) - 了解 Microsoft 在所有 Microsoft 雲端產品和服務中促進安全性、隱私權、合規性和透明度的方法。
+- [Intune User Voice](https://microsoftintune.uservoice.com/) - 想要對某項功能提出要求，或與其他客戶一起對某些功能進行投票嗎？ 透過 User Voice 提供有關 Intune 的意見反應。 我們很重視您的意見。
 
-- [Intune User Voice](http://microsoftintune.uservoice.com/) - 想要對某項功能提出要求，或與其他客戶一起對某些功能進行投票嗎？ 透過 User Voice 提供有關 Intune 的意見反應。 我們很重視您的意見。
-
-- [註冊指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 您可以依原樣使用這組文件，或修改它並作為與使用者之間通訊計劃一部分，以協助使用者了解在 Intune 中註冊其個人裝置的意義。
+- [溝通計畫](migration-guide-communication-plan.md) - 溝通計畫是 Intune 採用的重要元素。 在此文章中，您可以下載 Intune 採用套件，其中包括電子郵件範本、Intune 註冊指南與教學影片的連結，以協助您在註冊時教育您的終端使用者。

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670972"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960655"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性  
 
@@ -82,11 +82,12 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 通常您只需執行此工作一次即可。 為您的 Intune 租用戶啟用 Microsoft Defender ATP 之後，您不需要再次執行此動作。
 
 > [!TIP]  
-> 當您將新的應用程式整合到 Intune Mobile Threat Defense 並啟用連線時，Intune 會在 Azure Active Directory 中建立傳統條件式存取原則。 您整合的每個 MTD 應用程式 (例如 [Defender ATP](advanced-threat-protection.md) 或任何其他 [MTD 合作夥伴](mobile-threat-defense.md#mobile-threat-defense-partners))，都會建立新的傳統條件式存取原則。  這些原則可以忽略，但不應編輯、刪除或停用。
+> 當您將新的應用程式整合到 Intune Mobile Threat Defense 並啟用 Intune 連線時，Intune 會在 Azure Active Directory 中建立傳統條件式存取原則。 您整合的每個 MTD 應用程式 (包括 [Defender ATP](advanced-threat-protection.md) 或任何其他 [MTD 合作夥伴](mobile-threat-defense.md#mobile-threat-defense-partners)) 都會建立新的傳統條件式存取原則。 這些原則可以忽略，但不應編輯、刪除或停用。
 > 
 > 適用於 MTD 應用程式的傳統條件式存取原則： 
 > 
-> - 由 Intune MTD 用於要求裝置必須在 Azure AD 中註冊，如此其才能擁有裝置識別碼。 此識別碼為必要，以便裝置成功向 Intune 報告其狀態。  
+> - 由 Intune MTD 用於要求裝置必須在 Azure AD 中註冊，以便它們與 MTD 合作夥伴通訊之前擁有裝置識別碼。 此識別碼為必要，以便裝置成功向 Intune 報告其狀態。  
+> - 不會影響任何其他雲端應用程式或資源。  
 > - 不同於您可能會建立用來協助管理 MTD 的條件式存取原則。
 > - 根據預設，不會與您用於評估的其他條件式存取原則互動。  
 > 
@@ -126,7 +127,7 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 
 合規性政策會決定您視為可接受的裝置風險層級。
 
-### <a name="create-the-compliance-policy"></a>建立合規性政策  
+### <a name="create-the-compliance-policy"></a>建立合規性原則  
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置合規性]   > [原則]   > [建立原則]  。
@@ -184,5 +185,5 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 [Microsoft Defender ATP 條件式存取](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)  \(部分機器翻譯\)  
 [Microsoft Defender ATP 風險儀表板](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) \(部分機器翻譯\)  
 [搭配 ATP 弱點管理使用安全性工作來補救裝置上的問題](atp-manage-vulnerabilities.md)。  
-[裝置合規性政策入門](device-compliance-get-started.md)  
+[裝置合規性原則入門](device-compliance-get-started.md)  
  
