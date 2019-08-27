@@ -223,4 +223,4 @@ Intune SDK Xamarin 系結會依賴裝置上的[公司入口網站](https://play.
 著重于在 Xamarin 和 Xamarin 中進行 MAM 功能的範例應用程式。您可以在[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上取得表單應用程式。
 
 ## <a name="support"></a>支援
-如果您的組織是現有 Intune 客戶，請與您的 Microsoft 支援代表合作以開立支援票證，並[在 GitHub 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上建立問題。 我們會儘快提供協助。 
+如果您的組織是現有 Intune 客戶，請與您的 Microsoft 支援代表合作以建立支援票證，並[在 GitHub 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上建立問題。 我們會儘快提供協助。 

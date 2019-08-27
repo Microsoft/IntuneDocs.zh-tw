@@ -1,5 +1,5 @@
 ---
-title: 使用 Power BI 的 OData 摘要建立 Intune 報表
+title: 使用 Power BI 從 OData 摘要建立 Intune 報表
 titleSuffix: Microsoft Intune
 description: 使用 Power BI Desktop 建立矩形式樹狀結構圖視覺效果，搭配來自 Intune 資料倉儲 API 的互動式篩選。
 keywords: Intune 資料倉儲
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/22/2019
 ms.locfileid: "69894293"
 ---
-# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 的 OData 摘要建立 Intune 報表
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 從 OData 摘要建立 Intune 報表
 
 本文說明如何使用使用者互動式篩選的 Power BI Desktop, 來建立 Intune 資料的樹狀圖視覺效果。 例如, 您的 CFO 可能會想要知道裝置的整體分佈如何在公司擁有的裝置和個人裝置之間進行比較。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
 
@@ -76,7 +76,7 @@ ms.locfileid: "69894293"
 
 ## <a name="create-a-relationship"></a>建立關聯性
 
-您可以匯入多個資料表，分析單一資料表中的資料，也分析資料表之間的相關資料。 Power BI 有一個功能稱為**自動偵測**，它會嘗試為您尋找並建立關聯性。 資料倉儲中的資料表已建置成使用 Power BI 中的自動偵測功能。 不過，即使 Power BI 不會自動尋找關聯性，您還是可以管理關聯性。
+您可以匯入多個資料表，分析單一資料表中的資料，也分析資料表之間的相關資料。 Power BI 有一個稱為**自動偵測**的功能，它會嘗試為您尋找並建立關聯性。 資料倉儲中的資料表已建置成搭配 Power BI 中的自動偵測功能使用。 不過，即使 Power BI 不會自動尋找關聯性，您還是可以管理關聯性。
 
 ![管理資料表之間相關資料的關聯性](media/reports-create-03-managerelationships.png)
 

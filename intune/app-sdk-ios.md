@@ -18,7 +18,7 @@ ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca7e7646f51331e4d24cec9b50d7afae4870ebe3
 ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/22/2019
 ms.locfileid: "69894368"
@@ -190,7 +190,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 Intune App SDK 可以針對其驗證和條件式啟動案例, 使用[Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或[Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。
 
-一般來說，ADAL/MSAL 需要應用程式向 Azure Active Directory (AAD) 註冊並建立唯一用戶端識別碼和重新導向 URI，以確保授與應用程式的權杖安全無虞。 如果您的應用程式已經使用 ADAL 或 MSAL 來驗證使用者，該應用程式必須使用其現有的登錄值，並覆寫 Intune App SDK 預設值。 這能確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
+一般而言，ADAL/MSAL 要求應用程式必須向 Azure Active Directory (AAD) 註冊並建立唯一用戶端識別碼與重新導向 URI，以確保授與應用程式的權杖安全無虞。 如果您的應用程式已經使用 ADAL 或 MSAL 來驗證使用者，該應用程式必須使用其現有的登錄值，並覆寫 Intune App SDK 預設值。 這能確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
 
 如果您的應用程式尚未使用 ADAL 或 MSAL, 而且您不需要存取任何 AAD 資源, 則不需要在 AAD 中設定用戶端應用程式註冊 (如果您選擇整合 ADAL)。 如果您決定整合 MSAL, 您將需要設定應用程式註冊, 並覆寫預設的 Intune 用戶端識別碼和重新導向 URI。  
 
@@ -237,7 +237,7 @@ Intune App SDK 可以針對其驗證和條件式啟動案例, 使用[Azure Activ
 
 如先前所述, Intune App SDK 可以針對其驗證和條件式啟動案例使用「 [Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)」或「 [Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)」。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。 如果**您的應用程式未將 ADAL 或 MSAL 用於自己的驗證機制**, 則您可能需要設定自訂 AAD 設定, 視您選擇要整合的驗證程式庫而定:   
 
-ADAL - Intune App SDK 將會提供 ADAL 參數的預設值，並處理針對 Azure AD 的驗證。 開發人員不需要針對先前所述的 ADAL 設定指定任何值。 
+ADAL - Intune App SDK 將會為 ADAL 參數提供預設值，並處理向 Azure AD 進行驗證的作業。 開發人員不需要針對先前所述的 ADAL 設定指定任何值。 
 
 MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration)指定的格式, 建立具有自訂重新導向 URI 的應用程式註冊。 開發人員應該設定`ADALClientID`先前`ADALRedirectUri`所述的和設定, 或`aadClientIdOverride` `IntuneMAMPolicyManager`實例`aadRedirectUriOverride`上的對等和屬性。 開發人員也應該確保他們遵循上一節中的步驟 4, 將應用程式註冊存取權授與 Intune 應用程式保護服務。
 
@@ -268,7 +268,7 @@ ContainingAppBundleId | 字串 | 指定含有應用程式之擴充功能的配�
 DebugSettingsEnabled| 布林值 | 如果設定為 [是]，則可以套用 [設定] 配套內的測試原則。 啟用這個設定時，*不*應該提供應用程式。 | 選擇性。 預設為 [否]。 |
 MainNibFile<br>MainNibFile~ipad  | 字串  | 這項設定應該包含應用程式的主要 nib 檔案名稱。  | 如果應用程式在 Info.plist 中定義 MainNibFile，則為必要項。 |
 MainStoryboardFile<br>MainStoryboardFile~ipad  | 字串  | 這項設定應該包含應用程式的主要腳本檔案名稱。 | 如果應用程式在 Info.plist 中定義 UIMainStoryboardFile，則為必要項。 |
-AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意事項：若找不到受控識別，或 ADAL/MSAL 快取中沒有可用的身分識別有效權杖，除非應用程式也已經將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 | 選擇性。 預設為 [否]。 |
+AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有可用的身分識別有效權杖，除非應用程式也已經將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 | 選擇性。 預設為 [否]。 |
 MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意事項︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 | 選擇性。 預設為 [否]。 |
 MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否將在啟動期間警告使用者。 <br><br> 注意事項︰使用者在關閉警告之後，仍可在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
 MultiIdentity | 布林值| 指定應用程式是否為多重身分識別感知。 | 選擇性。 預設為 [否]。 |
@@ -344,7 +344,7 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 
 設定  | 類型  | 定義 |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有身分識別的有效權杖，除非應用程式也已經將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 |
+AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有身分識別的有效權杖，除非應用程式也已經將 MAMPolicyRequired 設定為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 |
 MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 |
 
 如果您針對應用程式選擇此選項，則不需要在註冊後處理重新啟動您的應用程式。
