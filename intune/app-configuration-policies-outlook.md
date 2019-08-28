@@ -4,23 +4,23 @@ description: 建立設定原則，設定在 iOS 和 Android 裝置上執行的 M
 keywords: ''
 author: Erikre
 ms.author: erikre
-ms.reviewer: smithre4
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: smithre4
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9819adf100cbe56147f22629e1311e7e3b376e9
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374888"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69979209"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 組態設定 
 

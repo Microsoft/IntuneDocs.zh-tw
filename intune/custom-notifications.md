@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680108"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021759"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
@@ -51,7 +51,6 @@ ms.locfileid: "68680108"
 - 群組可以包含使用者或裝置，但訊息只會傳送給使用者，且會傳送至使用者已註冊的每部 iOS 或 Android 裝置。  
 
 **傳遞**：  
-- Intune 在傳送通知後最多會嘗試傳遞一小時。  
 - Intune 會將訊息傳送給使用者的公司入口網站應用程式，其之後會建立推播通知。 使用者不需要登入應用程式，通知也會推播到裝置上。  
 - Intune 和公司入口網站應用程式無法保證能傳遞自訂通知。 自訂通知可能會延遲數小時顯示；如有此類延遲，則不應用於緊急訊息。  
 - Intune 中的自訂通知訊息會以標準推播通知形式顯示於裝置上。 如果公司入口網站應用程式在 iOS 裝置上開啟時收到通知，則會在應用程式中顯示通知，而不會推播通知。  
