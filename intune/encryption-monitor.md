@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550129"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027376"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密   
 
-Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資料的一個集中式位置。 您可以檢視裝置加密狀態的相關詳細資料，並找到管理裝置修復金鑰的選項。 修復金鑰可用選項取決於您所檢視的裝置類型。  
+Microsoft Intune 加密報表是一個集中式位置，用於檢視有關裝置加密狀態的詳細資料，並尋找管理裝置修復金鑰的選項。 修復金鑰可用選項取決於您所檢視的裝置類型。  
 
 若要尋找報表，請登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並移至 [裝置設定]  ，然後在 [監視]  下方選取 [加密報表]  。  
 
@@ -33,7 +33,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
 
 加密報表顯示您所管理各種支援裝置的常見詳細資料。 下列各節提供有關 Intune 在報表中所顯示資訊的詳細資料。  
  
-### <a name="prerequisites"></a>先決條件：  
+### <a name="prerequisites"></a>必要條件：  
 
 加密報表支援在執行下列作業系統版本的裝置上進行報告：  
 - macOS 10.13 或更新版本  
@@ -48,7 +48,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
 - **OS 版本** - 裝置上的 Windows 或 macOS 版本。  
 - **TPM 版本** (僅適用於 Windows 10)  - Windows 10 裝置上的信賴平台模組 (TPM) 晶片版本。  
 - **加密整備** - 評估裝置整備以支援適用的加密技術，例如 BitLocker 或 FileVault 加密。 裝置可以識別為：  
-  - **就緒**：裝置可以使用 MDM 原則進行加密，該原則需要裝置符合下列需求：  
+  - **就緒**：裝置可以使用要求裝置必須符合下列需求的 MDM 原則進行加密：  
     
     **針對 macOS 裝置**：  
     - MacOS 10.13 版或更新版本  
@@ -74,9 +74,11 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
 
 - **加密整備** - 評估裝置整備以支援透過 MDM 原則進行加密。  
   
-  例如：當 Windows 10 裝置的整備狀態為 [未就緒]  時，可能仍然支援加密。 若要指定 [就緒]  狀態，Windows 10 裝置必須具有 TPM 晶片。 不需要 TPM 晶片，也能支援加密。 (如需詳細資料，請參閱上一節的＜加密整備＞)。  
+  例如：當 Windows 10 裝置的整備狀態為 [未就緒]  時，可能仍然支援加密。 若要指定 [就緒]  狀態，Windows 10 裝置必須具有 TPM 晶片。 不需要 TPM 晶片，也能支援加密。 (如需詳細資訊，請參閱上一節的「加密整備」  。)  
 
-- **加密狀態** - OS 磁碟機是否已加密。 Intune 可能需要最多 24 小時的時間，才能報告裝置的加密狀態或該狀態的變更。  
+- **加密狀態** - OS 磁碟機是否已加密。 Intune 可能需要最多 24 小時的時間，才能報告裝置的加密狀態或該狀態的變更。 這段時間包含 OS 的加密時間，以及裝置回報給 Intune 的時間。  
+
+  若要在裝置簽入正常發生之前加速 FileVault 加密狀態的報告，請讓使用者在加密完成後同步處理其裝置。  
 
 - **設定檔** - 套用到此裝置並設定下列值的「裝置組態」  設定檔清單：  
 
@@ -91,6 +93,8 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
   如果「設定檔狀態摘要」  指出問題，您可以使用設定檔清單來找出要檢閱的個別原則。  
 
 - **設定檔狀態摘要** - 套用到此裝置的設定檔摘要。 此摘要表示適用設定檔中最不利的條件。 例如，如果多個適用設定檔中只有一個產生錯誤，則「設定檔狀態摘要」  會顯示「錯誤」  。  
+  
+  若要查看狀態的詳細資料，請移至 [Intune]   > [裝置設定]   > [設定檔]  ，然後選取設定檔。 (選擇性) 選取 [裝置狀態]  ，然後選取裝置。  
 
 - **狀態詳細資料** - 裝置加密狀態的相關進階詳細資料。  
 
@@ -114,7 +118,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
  
     *考量：Intune 無法在已加密的裝置上設定 FileVault。相反地，使用者必須先手動解密其裝置，才能透過裝置設定原則和 Intune 管理裝置*。 
  
-  - FileVault 需要使用者在 MacOS Catalina 與更新版本中核准其管理設定檔。  
+  - FileVault 需要使用者在 MacOS Catalina 和更新版本中核准其管理設定檔。  
  
     *考量：從 MacOS 10.15 版 (Catalina) 開始，使用者核准的註冊設定可能會導致使用者必須手動核准 FileVault 加密。如需詳細資訊，請參閱 Intune 文件中的[使用者核准的註冊](macos-enroll.md)* 。  
 
@@ -168,7 +172,7 @@ Microsoft Intune 加密報表是您檢視受控裝置加密狀態相關詳細資
  
 針對受控裝置，Intune 可以委付個人修復金鑰的複本。 金鑰委付可讓 Intune 管理員輪替金鑰以協助保護裝置，並讓使用者復原遺失或輪替的個人修復金鑰。  
  
-Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的一個原因是如果目前的個人金鑰遺失則視為風險。  
+Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的一個原因是如果目前的個人金鑰遺失，或者認為有風險。  
  
 > [!IMPORTANT]  
 >  由使用者 (而非 Intune) 加密的裝置無法由 Intune 管理。 這表示 Intune 無法委付這些裝置的個人修復，也無法管理修復金鑰的輪替。  使用者必須先解密其裝置，再讓 Intune 加密裝置，Intune 才能管理 FileVault 和裝置的修復金鑰。  
@@ -177,7 +181,7 @@ Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的
 
 - **自動輪替**：身為管理員，您可以將 FileVault 設定中的個人修復金鑰輪替，設定為自動定期產生新的修復金鑰。  為裝置產生新的金鑰之後，不會向使用者顯示該金鑰。 相反地，使用者必須向管理員或使用公司入口網站應用程式取得金鑰。  
 
-- **手動輪替**：身為管理員，您可以檢視由 Intune 管理並使用 FileVault 加密的裝置資訊。 然後，您可以選擇手動輪替公司裝置的修復金鑰。 您無法輪替個人裝置的修復金鑰。  
+- **手動輪替**：身為系統管理員，您可以檢視由 Intune 管理並使用 FileVault 加密的裝置資訊。 然後，您可以選擇手動輪替公司裝置的修復金鑰。 您無法輪替個人裝置的修復金鑰。  
 
   若要輪替修復金鑰： 
   1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，移至 [ **裝置**] ，然後在 [管理] 下選取 [ **所有裝置**]。  
@@ -214,7 +218,7 @@ Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 Bit
 
 當金鑰不在 Azure AD 時，Intune 會顯示 [找不到此裝置的 BitLocker 金鑰]  。  
 
-您可以使用 [BitLocker 設定服務提供者](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) 來取得 BitLocker 的資訊。 Windows 10 1703 版與更新版本，以及 Windows 10 專業版 1809 版與更新版本支援 BitLocker CSP。  
+您可以使用 [BitLocker 設定服務提供者](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) 來取得 BitLocker 的資訊。 Windows 10 1703 版和更新版本，以及 Windows 10 專業版 1809 版和更新版本支援 BitLocker CSP。  
 
 ## <a name="next-steps"></a>後續步驟  
 

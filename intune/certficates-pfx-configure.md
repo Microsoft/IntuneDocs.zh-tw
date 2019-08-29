@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582942"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021808"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -70,9 +70,10 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   此連接器會處理對 Intune 中所匯入之 PFX 檔案的要求，為特定使用者進行 S/MIME 電子郵件加密。  
 
   當新版本可供使用時，此連接器會自動自行更新。 若要使用更新功能，您必須：
-  - 在伺服器上安裝適用於 Microsoft Intune 的匯入 PFX 憑證連接器。
-  - 若要自動接收重要更新，請確定防火牆已開啟，可讓連接器在連接埠 **443** 上連絡 **autoupdate.msappproxy.net**。  
+  - 在伺服器上安裝適用於 Microsoft Intune 的匯入 PFX 憑證連接器。  
+  - 若要自動接收重要更新，請確定防火牆已開啟，可讓連接器在連接埠 **443** 上連絡 **autoupdate.msappproxy.net**。   
 
+  如需連接器必須能夠存取之所有網路端點的詳細資訊，請參閱 [Microsoft Intune 憑證連接器](intune-endpoints.md#microsoft-intune-certificate-connector)。
 
 - **Windows Server**：  
   您可以使用 Windows Server 來裝載：

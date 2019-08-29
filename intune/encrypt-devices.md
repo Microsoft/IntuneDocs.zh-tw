@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 5e97e23322150c7a030a3657b6476090d719a448
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960435"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027409"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密  
 
@@ -80,6 +80,8 @@ FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intu
 ### <a name="manage-filevault"></a>管理 FileVault  
 
 在 Intune 使用 FileVault 來加密 macOS 裝置之後，您可以在檢視 Intune [加密報告](encryption-monitor.md)時檢視並管理 FileVault 復原金鑰。  
+
+在 Intune 使用 FileVault 來加密 macOS 裝置之後，您可以從任何裝置上的 Web 公司入口網站查看該裝置的個人修復金鑰。 在 Web 公司入口網站中，選擇已加密的 macOS 裝置，然後選擇 [取得修復金鑰] 作為遠端裝置動作。 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>適用於 Windows 10 的 BitLocker 加密  
 

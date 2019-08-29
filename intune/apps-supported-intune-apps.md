@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: 63ab31845ba4d084c81ff33970703ec630d67daa
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993729"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70002015"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
-Intune 受控應用程式能夠使用一組豐富的行動應用程式保護原則。 受控應用程式可讓您：
+此主題中列出的應用程式為支援合作夥伴，以及通常搭配 Microsoft Intune 使用的 Microsoft 應用程式。 Intune 受保護的應用程式能夠使用一組豐富的行動應用程式保護原則。 這些應用程式可讓您：
 - 限制複製和貼上及另存新檔功能
 - 設定要在安全 Microsoft 瀏覽器內開啟的網頁連結
 - 啟用多重身分識別的使用和應用程式層級的條件式存取
@@ -77,7 +77,7 @@ Intune 受控應用程式能夠使用一組豐富的行動應用程式保護原�
 | 應用程式標題 | 應用程式描述 | 所支援平台的 App Store 連結 | 
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Acronis Access**<p><img alt="Partner app - Acronis Access icon" src="./media/apps-supported-intune-apps/icon-p-acronis-access.png" width="100"> | 透過 Acronis Access 從任何位置和任何裝置安全地存取您的商務檔案。 既可與同事、客戶及廠商輕鬆共用文件，又可維持檔案與資料的安全性與私密性，只有您和您的組織能夠觸碰這些文件。 此應用程式在設計上除了極簡便易用之外，還兼具無與倫比的安全性、私密性及管理功能。 | [iOS Store 連結](https://itunes.apple.com/us/app/acronis-access/id429704844?mt=8) |                       
-| **Adobe Acrobat Reader for Microsoft Intune**<p><img alt="Partner app - Adobe Acrobat Reader for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | 透過 Adobe Acrobat Reader for Intune 在 Microsoft Intune 受控環境中開啟、檢視及使用 PDF。 適用於 iOS 和 Android。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.adobe.reader.intune)、<br>[iOS Store 連結](https://geo.itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft/id1051980424?mt=8) |                      
+| **Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | 透過 Adobe Acrobat Reader 在 Microsoft Intune 受控環境中開啟、檢視及使用 PDF。 適用於 iOS 和 Android。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.adobe.reader)、<br>[iOS Store 連結](https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564) |                      
 | **Blackberry Enterprise BRIDGE**<p><img alt="Partner app - Blackberry Enterprise BRIDGE icon" src="./media/apps-supported-intune-apps/icon-p-blackberry-enterprise-bridge.png" width="100"> | BlackBerry Enterprise BRIDGE 可讓您從 BlackBerry Dynamics 使用 Intune 受控 Microsoft 應用程式 (例如 Microsoft Word、Microsoft PowerPoint 及 Microsoft Excel) 來安全地檢視、編輯及儲存文件。 您可以用電子郵件附件的形式來共用文件，並在 BlackBerry Dynamics 與 Intune 受控行動應用程式之間的文件共用過程中維持資料加密。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.blackberry.intune.bridge)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/blackberry-enterprise-bridge/id1305494864?mt=8) |
 | **Box for EMM**<p><img alt="Partner app - Box for EMM icon" src="./media/apps-supported-intune-apps/icon-p-box-for-emm.png" width="100"> | 使用 Box for EMM 讓員工保持連繫和共同作業，同時集中管理任何行動裝置的整個安全性、原則及佈建。 | [iOS Store 連結](https://itunes.apple.com/us/app/box-for-emm/id882085676?mt=8) |
 | **CellTrust SL2™ for Microsoft Intune**<p><img alt="Partner app - CellTrust SL2 for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-celltrust-sl2.png" width="100"> | CellTrust SL2™ for Microsoft Intune 是企業層級應用程式，其運作方式是在攜帶您自己的裝置上指派安全的 Mobile Business Number (MBN)，讓單一裝置上的個人通訊與商務通訊能夠彼此分開。 此完美的解決方案不需要使用個人號碼，因此可以保護裝置上的手機簡訊和商務通話。 這項功能對於需要增強商務通訊安全性，以及具有封存 eDiscovery 與合規性需求的企業而言非常重要。 <br> Microsoft Intune 是企業行動力管理 (EMM) 空間中的雲端式服務，可協助讓您的工作人員提高生產力，同時保護公司資料。 <br> CellTrust SL2™ for Microsoft Intune 提供強大的企業行動力平台，讓員工隨時隨地都能工作，並可輕鬆存取安全的商務應用程式，以及語音和文字簡訊。 此應用程式是利用 Microsoft Intune SDK 開發，並提供自訂功能讓組織可以根據其產業和 IT 需求進行量身打造。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.celltrust.sl2_intune)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/celltrust-sl2-for-intune/id1442087513?mt=8) |

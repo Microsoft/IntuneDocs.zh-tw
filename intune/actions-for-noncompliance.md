@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044797"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974252"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
@@ -103,7 +103,13 @@ ms.locfileid: "67044797"
     
     - **遠端鎖定不符合規範的裝置**：裝置不符合規範時，鎖定裝置。 此動作會強制使用者輸入 PIN 或密碼來解除鎖定裝置。 
     
-5. 設定 [排程]  ：輸入不符合規範之後在使用者裝置觸發動作的天數 (0 到 365)。 在此寬限期間之後，您可以強制執行條件式存取原則。 如果您輸入 **0** (零) 天，則條件式存取會**立即**生效。 比方說，如果裝置不符合規範，您可以立即封鎖對公司資源的存取權。
+5. 設定 [排程]  ：輸入不符合規範之後在使用者裝置觸發動作的天數 (0 到 365)。 在此寬限期間之後，您可以強制執行[條件式存取](conditional-access-intune-common-ways-use.md)原則。 如果您輸入 **0** (零) 天，則條件式存取會**立即**生效。 例如，如果裝置不符合規範，請使用條件式存取來立即封鎖對電子郵件、SharePoint 與其他組織資源的存取。
+
+    當您建立合規性政策時，會自動建立 [標記裝置不合規]  動作，並自動設定為 **0** 天 (立即)。 使用此動作時，當裝置簽入時，裝置會立即評估為不符合規範。 如果也使用條件式存取，則條件式存取會立即啟動。 如果您想要允許寬限期，請在 [標記裝置不合規]  動作上變更 [排程]  。
+    
+    例如，在您的合規性政策中，您也會想要通知使用者。 您可以新增 [傳送電子郵件給使用者]  動作。 在此 [傳送電子郵件]  動作中，您將 [排程]  設定為 2 天。 如果裝置或終端使用者在第 2 天仍被評估為不符合規範，則會在第 2 天傳送您的電子郵件。 如果您想要在不符合規範的第 5 天再次傳送電子郵件給使用者，請新增另一個動作，並將 [排程]  設定為 5 天。
+
+    如需有關合規性與內建動作的詳細資訊，請參閱[合規性概觀](device-compliance-get-started.md)。
 
 6. 完成後，請選取 [新增]   > [確定]  以儲存變更。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978515"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063032"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -65,6 +65,12 @@ ms.locfileid: "68978515"
 
 ## <a name="available-security-baselines"></a>可用的安全性基準 
 
+ 您可以同時在 Intune 環境中使用一或多個可用的基準。 您也可以使用具有不同自訂項目之相同安全性基準的多個執行個體。 
+
+當您使用多個安全性基準時，請檢閱各項設定，以識別不同的基準何時會引進相同設定的衝突值。 因為您可以部署專為不同意圖而設計的安全性基準，並部署包含自訂設定的相同基準的多個執行個體，所以您可能會[針對必須調查和解決的裝置建立設定衝突](security-baselines-monitor.md#troubleshoot-using-per-setting-status)。  也請留意您的[裝置組態設定檔](device-profiles.md)，它可設定許多與安全性基準相同的設定。 
+
+
+
 下列安全性基準執行個體可以搭欸 Intune 使用。 使用連結來檢視每個基準最近執行個體的設定。 
 
 - **MDM 安全性基準**
@@ -76,7 +82,7 @@ ms.locfileid: "68978515"
   - [預覽：Microsoft Defender ATP 基準](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
-  > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的 [將合規性提升至 Microsoft Defender ATP 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) \(部分機器翻譯\)。
+  > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (提高 Microsoft Defender ATP 安全性基準的合規性)。
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。 
 
@@ -88,7 +94,7 @@ ms.locfileid: "68978515"
 - [移除基準指派](#remove-a-security-baseline-assignment) - 了解當您停止使用安全性基準管理設定時會發生什麼事。
 
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](role-based-access-control.md#built-in-roles)內建角色。
 
 - 使用某些基準可能要求您必須有額外服務 (例如 Microsoft Defender ATP) 的有效訂用帳戶。  
