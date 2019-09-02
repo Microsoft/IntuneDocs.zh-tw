@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca7e7646f51331e4d24cec9b50d7afae4870ebe3
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
-ms.translationtype: HT
+ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894368"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021821"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -115,21 +115,8 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
      藉由拖曳 「Build Phases」 (建置階段)  的 「Copy Bundle Resources」 (複製配套資源)  下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
 
      ![Intune App SDK iOS：複製配套資源](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-     
-2. 如果您需要從 Swift 呼叫任何 Intune Api, 您的應用程式/擴充功能必須透過目標-C 橋接標頭匯入必要的 Intune SDK 標頭。 如果您的應用程式/擴充功能尚未包含目標-c 橋接標頭, 您可以透過 [ `SWIFT_OBJC_BRIDGING_HEADER`組建設定] 或 Xcode UI 的 [**目標-C 橋接標頭**] 欄位指定一個。 您的橋接標頭看起來應該像這樣:
-
-   ```objc
-      #import <IntuneMAMSwift/IntuneMAM.h>
-   ```
-   
-   這會讓所有 Swift 來源檔案中的所有 Intune SDK Api 都可供您的應用程式/擴充功能使用。 
-   
-    > [!NOTE]
-    > * 您可以選擇只將特定的 Intune SDK 標頭橋接到 Swift, 而不是全部包含的 IntuneMAM。
-    > * 視您整合的架構/靜態程式庫而定, 標頭檔的路徑可能不同。
-    > * 目前不支援透過模組匯入語句 (例如: 匯入 IntuneMAMSwift) 將 Intune SDK Api 提供給 Swift。 使用目標-C 橋接標頭是建議的方法。
-    
-3. 將下列 iOS 架構新增至專案：  
+         
+2. 將下列 iOS 架構新增至專案：  
 -  MessageUI.framework  
 -  Security.framework  
 -  MobileCoreServices.framework  
@@ -142,7 +129,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 -  QuartzCore.framework  
 -  WebKit.framework
 
-4. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]  ，然後啟用 「Keychain Sharing」 (Keychain 共用)  參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
+3. 如果尚未啟用 Keychain 共用，請在每個專案目標中選擇 [功能]  ，然後啟用 「Keychain Sharing」 (Keychain 共用)  參數來加以啟用。 您必須共用 Keychain 才能繼續進行下一個步驟。
 
    > [!NOTE]
    > 您的佈建設定檔必須能夠支援新的 Keychain 共用值。 Keychain 存取群組應該支援萬用字元。 若要確認這項作業，請在文字編輯器中開啟 .mobileprovision 檔案，並搜尋 **keychain-access-groups**，然後確認是否有萬用字元。 例如：
@@ -154,7 +141,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
    >  </array>
    >  ```
 
-5. 啟用 Keychain 共用之後，請依照步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循這些步驟：
+4. 啟用 Keychain 共用之後，請依照步驟建立另一個可供 Intune App SDK 儲存其資料的存取群組。 您可以使用 UI 或權利檔案來建立 Keychain 存取群組。 如果您是使用 UI 來建立 Keychain 存取群組，請務必遵循這些步驟：
 
      a. 如果您的行動應用程式未定義任何 Keychain 存取群組，請新增應用程式套件組合識別碼作為 [第一個]  群組。
     
@@ -172,11 +159,11 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
       > [!NOTE]
       > 權利檔案是行動應用程式特有的 XML 檔案。 它用來指定 iOS 應用程式內的特殊權限和功能。 如果您的應用程式之前沒有權利檔案，啟用 Keychain 共用 (步驟 3) 應該會使得 Xcode 為您的應用程式產生一個權利檔案。 請確定應用程式套件組合識別碼是清單中的第一個項目。
 
-6. 請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 繼續進行下一個步驟支援，請務必儲存您的變更。
+5. 請包含應用程式傳遞給應用程式 Info.plist 檔案之 `LSApplicationQueriesSchemes` 陣列中 `UIApplication canOpenURL` 的每個通訊協定。 繼續進行下一個步驟支援，請務必儲存您的變更。
 
-7. 如果您的應用程式尚未使用 FaceID，請務必設定 [NSFaceIDUsageDescription Info.plist 索引鍵](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)的預設訊息。 iOS 需要此設定，才能讓使用者知道應用程式預計如何使用 FaceID。 Intune 應用程式防護原則設定在 IT 系統管理員的設定下，可使用 FaceID 作為應用程式存取方法。
+6. 如果您的應用程式尚未使用 FaceID，請務必設定 [NSFaceIDUsageDescription Info.plist 索引鍵](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)的預設訊息。 iOS 需要此設定，才能讓使用者知道應用程式預計如何使用 FaceID。 Intune 應用程式防護原則設定在 IT 系統管理員的設定下，可使用 FaceID 作為應用程式存取方法。
 
-8. 使用 [SDK 存放庫](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中包含的 IntuneMAMConfigurator 工具來設定您應用程式的 Info.plist。 此工具有三個參數：
+7. 使用 [SDK 存放庫](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中包含的 IntuneMAMConfigurator 工具來設定您應用程式的 Info.plist。 此工具有三個參數：
 
    |屬性|用法|
    |---------------|--------------------------------|
@@ -228,7 +215,7 @@ Intune App SDK 可以針對其驗證和條件式啟動案例, 使用[Azure Activ
 
 此外，應用程式可以在執行階段覆寫這些 Azure AD 設定。 若要這樣做，請設定 `IntuneMAMPolicyManager` 執行個體上的 `aadAuthorityUriOverride`、`aadClientIdOverride` 與 `aadRedirectUriOverride` 屬性。
 
-4. 請務必遵循將您的 iOS 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中＜將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)＞中的指示。  
+4. 請務必遵循將您的 iOS 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中[將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)中的指示。  
 
 > [!NOTE]
 > 建議您為靜態且不需要在執行階段決定的所有設定使用 Info.plist 方法。 指派給 `IntuneMAMPolicyManager` 屬性之值的優先順序高於在 Info.plist 中指定的對應值，而且在應用程式重新啟動之後仍然存在。 SDK 將會繼續為原則簽入使用它們，直到使用者取消註冊或值被清除或變更。

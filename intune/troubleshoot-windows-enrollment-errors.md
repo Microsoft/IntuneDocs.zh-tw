@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993707"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063012"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
@@ -100,9 +100,9 @@ ms.locfileid: "68993707"
 3. 將 [使用者可以將裝置加入 Azure AD]  設定為 [全部]  。    
 4. 重新註冊裝置。   
 
-### <a name="the-device-is-already-enrolled"></a>裝置已註冊。
+### <a name="the-device-is-already-enrolled"></a>已註冊該裝置。
 
-錯誤 8018000a: 「發生問題。 裝置已註冊。  您可以與系統管理員聯繫, 錯誤碼8018000a。」
+錯誤 8018000a: 「發生問題。 已註冊該裝置。  您可以與系統管理員聯繫, 錯誤碼8018000a。」
 
 **原因:** 下列其中一個條件成立:
 - 不同的使用者已在 Intune 中註冊裝置, 或已將裝置加入至 Azure AD。 若要判斷是否為這種情況, 請移至 [**設定** > ] [**帳戶** > ] [**工作存取**]。 尋找與下列類似的訊息: 「系統上的另一個使用者已連線至公司或學校。 請移除該公司或學校的連線, 然後再試一次。」    
@@ -223,7 +223,7 @@ ms.locfileid: "68993707"
 #### <a name="resolution"></a>解決方案
 1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
 2. 移至 [Azure Active Directory] [ **> 裝置] > [裝置設定**]。    
-3. 設定 [**使用者可以將裝置加入至** **全部**] 或 [已**選取**] Azure AD。
+3. 將 [使用者可以將裝置加入 Azure AD]  設定為 [全部]  或 [已選取]  。
 
    如果您選擇  [已選取], 請按一下 [**選取**], 然後按一下 [**新增成員**], 將可加入其裝置的所有使用者新增至 Azure AD。 請確定已新增布建套件的所有 Azure AD 帳戶。
  
@@ -331,7 +331,7 @@ Registering your device for mobile management (Previous step failed)
 
 當裝置在初始登入畫面期間超時時, 通常會在混合式 Azure AD Autopilot 案例中重新開機裝置之前發生此問題。 這表示因為連線問題, 所以找不到或無法成功連線到網域控制站。 或者, 裝置已進入無法加入網域的狀態。
 
-**原因:** 最常見的原因是正在使用混合式 Azure AD Join, 且已在 Autopilot 設定檔中設定 [指派使用者] 功能。 使用 [指派使用者] 功能會在初始登入畫面期間, 于裝置上執行 Azure AD 聯結, 讓裝置處於無法加入內部部署網域的狀態。 因此, [指派使用者] 功能只應用於標準 Azure AD 聯結 Autopilot 案例。  此功能應該用於混合式 Azure AD Join 案例中。
+**原因:** 最常見的原因是正在使用混合式 Azure AD Join, 且已在 Autopilot 設定檔中設定 [指派使用者] 功能。 使用 [指派使用者] 功能會在初始登入畫面期間, 于裝置上執行 Azure AD 聯結, 讓裝置處於無法加入內部部署網域的狀態。 因此, [指派使用者] 功能只應用於標準 Azure AD 聯結 Autopilot 案例。  混合式 Azure AD Join 案例中不應使用此功能。
 
 #### <a name="resolution"></a>解決方案
 

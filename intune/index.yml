@@ -1,149 +1,234 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Hub
 title: Microsoft Intune 文件
+summary: Microsoft Intune 的官方產品文件
 metadata:
-  document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
-  title: Microsoft Intune 文件
-  description: 快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。
-  keywords: '保護, 公司, 資料, Azure, Intune, EMM, 裝置, App, 管理'
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: hub-page
   author: dougeby
   ms.author: dougeby
-  manager: dougeby
-  ms.date: 07/03/2019
-  ms.topic: landing-page
-  ms.devlang: null
-  ms.service: microsoft-intune
-sections:
-  - items:
-      - type: markdown
-        text: 快速開始使用 Microsoft Intune。 使用雲端企業行動管理 (EMM) 服務，以提高員工生產力，並同時保護公司資料。 Intune 整合了 Azure Active Directory 以進行身分識別和存取控制，並整合了 Azure 資訊保護以進行資料保護。
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: introduction-intune.md
-            html: <p>閱讀 Intune 的功能及其運作方式。</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
-            title: 什麼是 Intune？
-          - href: free-trial-sign-up.md
-            html: <p>透過這個簡單的教學課程嘗試 Intune。</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
-            title: 開始使用
-          - href: get-support.md
-            html: <p>了解在需要時如何建立支援票證並取得協助。</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
-            title: 取得支援
-          - href: whats-new.md
-            html: <p>查看 Intune 本週新功能。</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
-            title: 新功能
-  - title: 新的文章與部落格文章
+  manager: mtillman
+  ms.date: 08/30/2019
+  ms.openlocfilehash: 4d33b03ecf4a83b4fb962dc3672cb4ca45bfeedb
+  ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 08/31/2019
+  ms.locfileid: "70206440"
+highlightedContent:
+  items:
+  - title: 什麼是 Intune？
+    itemType: overview
+    url: what-is-intune.md
+  - title: Intune 的新功能
+    itemType: overview
+    url: whats-new.md
+  - title: 正在開發的功能
+    itemType: overview
+    url: in-development.md
+  - title: 免費試用 Intune
+    itemType: get-started
+    url: free-trial-sign-up.md
+  - title: 使用範圍標籤套用區預設定
+    itemType: get-started
+    url: scope-tags.md
+  - title: 使用 Microsoft 建議設定保護 Windows 裝置
+    itemType: get-started
+    url: security-baselines.md
+conceptualContent:
+  items:
+  - title: 規劃 Intune 採用
+    links:
+    - url: planning-guide.md
+      itemType: concept
+      text: Intune 規劃指南
+    - url: migration-guide.md
+      itemType: concept
+      text: Intune 移轉指南
+    - url: migration-guide-communication-plan.md
+      itemType: concept
+      text: 適用於您使用者的溝通計畫
+  - title: 設定 Intune
+    links:
+    - url: setup-steps.md
+      itemType: how-to-guide
+      text: 設定 Intune 的步驟
+    - url: supported-devices-browsers.md
+      itemType: reference
+      text: 支援的作業系統與瀏覽器
+    - url: role-based-access-control.md
+      itemType: reference
+      text: 以角色為基礎的存取控制
+    - url: licenses.md
+      itemType: concept
+      text: Intune 授權
+  - title: 註冊裝置
+    links:
+    - url: device-enrollment.md
+      itemType: concept
+      text: 裝置註冊概觀
+    - url: windows-enroll.md
+      itemType: how-to-guide
+      text: 設定 Windows 的註冊
+    - url: ios-enroll.md
+      itemType: how-to-guide
+      text: 設定適用於 iOS 裝置的註冊
+    - url: android-enroll.md
+      itemType: how-to-guide
+      text: 設定適用於 Android 裝置的註冊
+  - title: 遠端管理裝置
+    links:
+    - url: device-management.md
+      itemType: concept
+      text: 裝置管理概觀
+    - url: device-management-capabilities.md
+      itemType: concept
+      text: 裝置管理功能
+    - url: custom-notifications.md
+      itemType: how-to-guide
+      text: 傳送自訂通知
+    - url: devices-wipe.md
+      itemType: how-to-guide
+      text: 移除裝置
+  - title: 為使用者與裝置建立合規性規則
+    links:
+    - url: device-compliance-get-started.md
+      itemType: concept
+      text: 合規性概觀
+    - url: use-network-locations.md
+      itemType: how-to-guide
+      text: 網路隔離 + Android 上的合規性
+    - url: actions-for-noncompliance.md
+      itemType: how-to-guide
+      text: 適用於不符合規範之裝置的動作。
+  - title: 控制裝置功能與設定
+    links:
+    - url: device-profiles.md
+      itemType: concept
+      text: 裝置設定概觀
+    - url: device-restrictions-configure.md
+      itemType: how-to-guide
+      text: 限制設定與功能
+    - url: vpn-settings-configure.md
+      itemType: how-to-guide
+      text: 新增 VPN 到裝置
+    - url: administrative-templates-windows.md
+      itemType: how-to-guide
+      text: 設定群組原則 ADMX 設定
+  - title: 保護裝置與資料
+    links:
+    - url: device-protect.md
+      itemType: concept
+      text: 裝置保護概觀
+    - url: conditional-access.md
+      itemType: concept
+      text: 利用 Intune 的條件式存取
+    - url: mobile-threat-defense.md
+      itemType: concept
+      text: Mobile Threat Defense 與 Intune 的整合
+  - title: 管理應用程式
+    links:
+    - url: app-management.md
+      itemType: concept
+      text: 應用程式管理概觀
+    - url: apps-add.md
+      itemType: how-to-guide
+      text: 將應用程式新增至 Intune
+    - url: apps-deploy.md
+      itemType: how-to-guide
+      text: 將應用程式指派給群組
+    - url: app-configuration-policies-overview.md
+      itemType: overview
+      text: 應用程式設定原則
+    - url: app-protection-policy.md
+      itemType: concept
+      text: 應用程式防護原則
+  - title: 說明及支援
+    links:
+    - url: get-support.md
+      itemType: concept
+      text: 如何取得 Microsoft Intune 支援？
+    - url: help-desk-operators.md
+      itemType: concept
+      text: 協助使用者疑難排解問題
+    - url: monitor-audit-logs.md
+      itemType: concept
+      text: 使用稽核記錄追蹤及監視事件
+    - url: troubleshoot-app-install.md
+      itemType: concept
+      text: 針對應用程式安裝問題進行疑難排解
+    - url: troubleshoot-policies-in-microsoft-intune.md
+      itemType: concept
+      text: 針對 Intune 中的原則和設定檔進行疑難排解
+  - title: Developer
+    links:
+    - url: intune-graph-apis.md
+      itemType: concept
+      text: 在 Microsoft Graph 中存取 Intune API
+    - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
+      itemType: concept
+      text: 使用 PowerShell Cmdlet 將動作自動化
+    - url: reports-nav-create-intune-reports.md
+      itemType: concept
+      text: 使用 Microsoft Intune 資料倉儲
+    - url: https://docs.microsoft.com/intune/app-sdk
+      itemType: overview
+      text: Microsoft Intune App SDK 概觀
+    - url: reports-nav-create-intune-reports.md
+      itemType: concept
+      text: 使用 Microsoft Intune 資料倉儲
+additionalContent:
+  sections:
+  - title: 用於管理裝置的額外資源
     items:
-      - type: paragraph
-        text: 閱讀必須知道的最新及最佳資訊。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: what-is-intune.md
-            title: 了解 Azure 入口網站上的 Intune
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
-          - href: ui-changes.md
-            title: 查看 Intune 功能在 Azure 入口網站中的位置
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
-          - href: high-level-architecture.md
-            title: 檢視 Intune 高階架構
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
-          - href: enrollment-autopilot.md
-            title: Microsoft Intune 中的 Windows AutoPilot Deployment 方案支援
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/'
-            title: '[部落格] 支援祕訣：iOS 12 的 Intune 支援'
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/'
-            title: '[部落格] 為頂級客戶新增 Intune 支援體驗'
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
-  - title: 影片
+    - title: Intune 教育
+      links:
+      - text: 什麼是 Intune 教育版？
+        url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+      - text: Intune 教育版中的新功能？
+        url: https://docs.microsoft.com/intune-education/whats-new-in-edu
+      - text: Intune 教育版與完整版有何不同？
+        url: introduction-intune-education.md
+    - title: Intune 政府版
+      links:
+      - text: Enterprise Mobility + Security for US Government 服務描述
+        url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
+      - text: Intune 的美國政府端點
+        url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+      - text: Azure Government 站台
+        url: https://azure.microsoft.com/global-infrastructure/government/
+    - title: Microsoft 365
+      links:
+      - text: 探索 Microsoft 365，這是包含 Intune 的完整解決方案
+        url: https://docs.microsoft.com/microsoft-365/
+      - text: Microsoft 365 企業版文件
+        url: https://docs.microsoft.com/microsoft-365/enterprise/
+      - text: Microsoft 365 企業版基礎結構
+        url: https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure
+    - title: Azure Active Directory
+      links:
+      - text: 使用者管理文件
+        url: https://docs.microsoft.com/azure/active-directory/users-groups-roles/
+      - text: 驗證文件
+        url: https://docs.microsoft.com/azure/active-directory/authentication/
+      - text: 裝置身分識別文件
+        url: https://docs.microsoft.com/azure/active-directory/devices/
+      - text: 混合式身分識別文件
+        url: https://docs.microsoft.com/azure/active-directory/hybrid/
+  - title: Intune 社群資源
     items:
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/DnmnLr2NUXk]'
-      - type: paragraph
-        text: ' '
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-  - title: 免費的 Intune 訓練
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 1
-        items:
-          - href: 'https://www.pluralsight.com/courses/windows-10-configuring-intune-creators'
-            title: Windows 10 設定：規劃即實作 Microsoft Intune
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
-  - title: 規劃文章
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/intune/planning-guide">Intune 部署規劃、設計和實作指南</a>
-          - html: <a href="/intune/migration-guide">Intune 移轉指南</a>
-  - title: 作法文章
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/intune/device-enrollment">註冊裝置</a>
-          - html: <a href="/intune/device-management">管理裝置</a>
-          - html: <a href="/intune/app-management">管理應用程式</a>
-          - html: <a href="/intune/device-profiles">設定裝置</a>
-          - html: <a href="/intune/device-compliance-get-started">設定裝置合規性</a>
-          - html: <a href="/intune/conditional-access">設定條件式存取</a>
-          - html: <a href="/intune/app-protection-policy">保護應用程式</a>
-          - html: <a href="/intune/mobile-threat-defense">設定 Mobile Threat Defense</a>
-          - html: <a href="/intune/network-access-control-integrate">整合網路存取控制</a>
-          - html: <a href="/intune/role-based-access-control">管理角色</a>
-          - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">使用 Intune 軟體用戶端來管理電腦</a>
-  - title: 疑難排解文章
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/intune/help-desk-operators">使用疑難排解入口網站來協助使用者</a>
-          - html: <a href="/intune/known-issues">Intune 的已知問題</a>
-          - html: <a href="/intune/get-support">取得支援</a>
-  - title: 開發與自訂文章
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/intune/custom-settings-configure">設定自訂裝置設定</a>
-          - html: <a href="/intune/apps-prepare-mobile-application-management">使用 Intune 應用程式包裝函式工具來準備商務營運 (LOB) 應用程式</a>
-          - html: <a href="/intune/app-sdk">使用 Intune App SDK 來準備 LOB 應用程式</a>
-          - html: '<a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">在 Microsoft Graph 中使用 Intune</a>'
-          - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune 資料倉儲 API</a>
-  - title: 其他資源
-    items:
-      - type: list
-        style: unordered
-        items:
-          - html: '<a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">需要 150 份以上的授權嗎？運用您的 FastTrack 權益</a>'
-          - html: '<a href="https://docs.microsoft.com/microsoft-365">探索 Microsoft 365，這是包含 Intune 的完整解決方案</a>'
-          - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">閱讀企業行動力與安全性部落格</a> \(英文\)'
-          - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">在 Intune 支援部落格上取得協助</a> \(英文\)'
-          - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">在 UserVoice 提供有關 Intune 的意見反應</a> \(英文\)'
-          - html: '<a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">在 Intune 論壇上詢問或回答問題</a> \(英文\)'
+    - title: Intune 技術論壇
+      summary: 在產品論壇中詢問技術問題
+      url: https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc
+    - title: UserVoice 產品意見反應
+      summary: 與工程小組分享產品意見
+      url: https://microsoftintune.uservoice.com/forums/291681-ideas
+    - title: Intune 技術社群對話
+      summary: 查看技術社群的熱門對話
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Intune/bd-p/Microsoft-Intune
+    - title: '#<a name="intune-on-twitter"></a>Twitter 上的 Intune'
+      summary: 透過活躍 Twitter 社群維持在最新狀態
+      url: https://twitter.com/hashtag/msintune
+    - title: Intune 客戶成功
+      summary: 取得有關 Intune 客戶成功網站的說明
+      url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess

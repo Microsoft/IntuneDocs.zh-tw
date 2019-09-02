@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960422"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158030"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 macOS Endpoint Protection 設定  
 
@@ -100,14 +100,14 @@ ms.locfileid: "68960422"
     - **個人修復金鑰輪替**-指定裝置的個人修復金鑰要旋轉的頻率。 您可以選取 [**未設定**] 的預設值, 或 [ **1** ] 到 [ **12** ] 個月的值。  
 
   - **登出時停用提示**  
-    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [啟用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
+    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [停用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
     - **未設定**  
-    - **啟用**-在登出時停用提示。
+    - **停**用-停用登出時的提示。
 
     **預設**：未設定  
 
      > [!IMPORTANT]  
-     > 將 [停用登出時的提示]  設定設為 [啟用]  時，有一個已知問題。 當設為 [啟用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，但沒有進一步詳細資料。
+     > 這是當您將 [停用登出時的提示]  設定為 [停用]  時的已知問題。 當設為 [停用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [尚未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，但沒有進一步詳細資料。
      > 
      > 當 [停用登出時的提示]  設為 [未設定]  時，[允許略過的次數]  可以是 [未設定]  或有某個值。  
      > 
@@ -122,4 +122,5 @@ ms.locfileid: "68960422"
  
     **預設**：未設定  
 
+如需有關使用 Intune FileVault 的詳細資訊, 請參閱[FileVault 修復金鑰](encryption-monitor.md#filevault-recovery-keys)。
 
