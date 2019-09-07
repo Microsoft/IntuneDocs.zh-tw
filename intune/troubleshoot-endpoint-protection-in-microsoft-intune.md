@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353333"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302340"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune 中的 Endpoint Protection 問題和可能的解決方案
 
@@ -60,20 +60,20 @@ ms.locfileid: "68353333"
 **可能的解決方案**：啟用這些功能。 如需指引，請參閱：
 
 - [新增 Endpoint Protection 設定](endpoint-protection-configure.md)
-- [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender 防毒軟體](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [終端使用者：開啟即時保護以存取公司資源](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>惡意程式碼定義已過期
 
 當裝置上的惡意程式碼定義過期達 14 天以上時，就會顯示此狀態。 例如，如果裝置中斷網際網路的連線，或惡意程式碼定義已過時，可能就會顯示此訊息。
 
-**可能的解決方案**：如果惡意程式碼定義已過期，請使用 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)來更新定義。
+**可能的解決方案**：如果惡意程式碼定義已過期，請使用 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#microsoft-defender-antivirus)來更新定義。
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完整掃描逾期或快速掃描逾期
 
 已有 14 天未曾完成完整掃描或快速掃描。 如果在完整掃描期間重新啟動裝置，就會發生此情況。
 
-**可能的解決方案**：如果掃描已逾期，您可以執行一次性掃描或排程週期性掃描。 請參閱 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#windows-defender-antivirus)。
+**可能的解決方案**：如果掃描已逾期，您可以執行一次性掃描或排程週期性掃描。 請參閱 [Windows Defender 防毒軟體](device-restrictions-windows-10.md#microsoft-defender-antivirus)。
 
 ### <a name="another-endpoint-protection-application-running"></a>其他 Endpoint Protection 應用程式正在執行
 
