@@ -4,7 +4,7 @@
 
 ## [我的公司可以從 Intune 查看哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [更新我的密碼](password-does-not-meet-it-administrator-requirements.md)
+## [裝置密碼需求](password-does-not-meet-it-administrator-requirements.md)
 
 ## [登入公司入口網站](sign-in-to-the-company-portal.md)
 
