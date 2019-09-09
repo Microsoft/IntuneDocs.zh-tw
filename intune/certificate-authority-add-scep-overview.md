@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648445"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122257"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -42,7 +42,7 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 
 ## <a name="overview"></a>概觀
 
-下列步驟提供在 Intune 核發 SCEP 憑證的概觀：
+下列步驟提供在 Intune 中使用 SCEP 憑證的概觀：
 
 1. 在 Intune 中，系統管理員會建立 SCEP 憑證設定檔，然後將設定檔的目標設為使用者或裝置。
 2. 裝置簽入至 Intune。
@@ -72,30 +72,30 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 
 #### <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式  
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory]   > [應用程式註冊]  ，然後選取 [新增註冊]  。  
+1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory] > [應用程式註冊]，然後選取 [新增註冊]。  
 
-2. 在 [註冊應用程式]  頁面上，指定下列詳細資料：  
-   - 在 [名稱]  區段中，輸入有意義的應用程式名稱。  
-   - 針對 [支援的帳戶類型]  區段，選取 [任何組織目錄中的帳戶]  。  
-   - 針對 [重新導向 URI]  保留 Web 的預設值，然後為協力廠商 SCEP 伺服器指定登入 URL。  
+2. 在 [註冊應用程式] 頁面上，指定下列詳細資料：  
+   - 在 [名稱] 區段中，輸入有意義的應用程式名稱。  
+   - 針對 [支援的帳戶類型] 區段，選取 [任何組織目錄中的帳戶]。  
+   - 針對 [重新導向 URI] 保留 Web 的預設值，然後為協力廠商 SCEP 伺服器指定登入 URL。  
 
-3. 選取 [註冊]  以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
+3. 選取 [註冊] 以建立應用程式，並開啟新應用程式的 [概觀] 頁面。  
 
-4. 在應用程式的 [概觀]  頁面上，複製 [應用程式 (用戶端) 識別碼]  值，並加以記錄以供稍後使用。 您稍後將需用到此值。  
+4. 在應用程式的 [概觀] 頁面上，複製 [應用程式 (用戶端) 識別碼] 值，並加以記錄以供稍後使用。 您稍後將需用到此值。  
 
-5. 在應用程式的瀏覽窗格中，移至 [管理]  下方的 [憑證及祕密]  。 選取 [新增用戶端密碼]  按鈕。 在 [描述] 中輸入值、針對 [到期]  選取任意選項，然後選擇 [新增]  以產生用戶端密碼的「值」  。 
+5. 在應用程式的瀏覽窗格中，移至 [管理] 下方的 [憑證及祕密]。 選取 [新增用戶端密碼] 按鈕。 在 [描述] 中輸入值、針對 [到期] 選取任意選項，然後選擇 [新增] 以產生用戶端密碼的「值」。 
    > [!IMPORTANT]  
    > 離開此頁面之前，複製用戶端密碼的值並加以記錄，以便稍後搭配您的協力廠商 CA 實作使用。 此值無法再次顯示。 務必檢閱您協力廠商 CA 的指引，以了解他們想要如何設定應用程式識別碼、驗證金鑰及租用戶識別碼。  
 
-6. 記錄您的**租用戶識別碼**。 租用戶識別碼是您帳戶中 @ 符號之後的網域文字。 例如，如果您的帳號是 *admin@name.onmicrosoft.com* ，則您的租用戶識別碼是 **name.onmicrosoft.com**。  
+6. 記錄您的**租用戶識別碼**。 租用戶識別碼是您帳戶中 @ 符號之後的網域文字。 例如，如果您的帳號是 *admin@name.onmicrosoft.com*，則您的租用戶識別碼是 **name.onmicrosoft.com**。  
 
-7. 在應用程式的瀏覽窗格中，移至 [管理]  下方的 [API 權限]  ，然後選取 [新增權限]  。  
+7. 在應用程式的瀏覽窗格中，移至 [管理] 下方的 [API 權限]，然後選取 [新增權限]。  
 
-8. 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 選取 **scep_challenge_provider** 的核取方塊 (SCEP 查問驗證)。  
+8. 在 [要求 API 權限] 頁面上，選取 [Intune]，然後選取 [應用程式權限]。 選取 **scep_challenge_provider** 的核取方塊 (SCEP 查問驗證)。  
 
-   選取 [新增權限]  以儲存此設定。  
+   選取 [新增權限] 以儲存此設定。  
 
-9. 仍然在 [API 權限]  頁面上，選取 [代表 Microsoft 授與管理員同意]  ，然後選取 [是]  。  
+9. 仍然在 [API 權限] 頁面上，選取 [代表 Microsoft 授與管理員同意]，然後選取 [是]。  
    
    Azure AD 中的應用程式註冊程序已完成。
 
@@ -106,9 +106,9 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>設定及部署 SCEP 憑證設定檔
 以系統管理員身分，建立 SCEP 憑證設定檔以便將目標設為使用者或裝置。 然後，指派設定檔。
 
-- [建立 SCEP 憑證設定檔](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [建立 SCEP 憑證設定檔](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [指派憑證設定檔](certificates-scep-configure.md#assign-the-certificate-profile)
+- [指派憑證設定檔](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>移除憑證
 

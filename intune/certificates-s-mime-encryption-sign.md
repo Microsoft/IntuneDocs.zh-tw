@@ -1,5 +1,5 @@
 ---
-title: 使用 S/MIME 簽署和加密電子郵件 - Microsoft Intune - Azure | Micrososft Docs
+title: 使用 S/MIME 簽署和加密電子郵件 - Microsoft Intune - Azure | Microsoft Docs
 description: 了解如何使用 Microsoft Intune 中的電子郵件數位憑證來簽署和加密裝置上的電子郵件。 這些憑證稱為 S/MIME，並使用裝置組態設定檔加以設定。 簽署和加密憑證會用 PKCS 或私人憑證，並使用連接器來匯入憑證。
 keywords: ''
 author: MandiOhlinger
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048884"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122232"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>在 Intune 中簽署和加密電子郵件的 S/MIME 概觀
 

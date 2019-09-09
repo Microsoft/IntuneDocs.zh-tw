@@ -13,16 +13,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511324"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234818"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入門：在 Intune 中建立使用者並為他們指派授權
 
-在此快速入門中，您將建立使用者，然後指派 Intune 給他們。 使用 Intune 時，您要授與公司資料存取權的每個人都必須具備自己的使用者帳戶。 Intune 系統管理員稍後可以設定使用者以管理存取控制。
+在本快速入門中，您將建立使用者，然後將 Intune 授權指派給他們。 使用 Intune 時，您要授與公司資料存取權的每個人都必須具備自己的使用者帳戶。 Intune 系統管理員稍後可以設定使用者以管理存取控制。
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "61511324"
 
 ## <a name="assign-a-license-to-the-user"></a>指派授權給使用者
 
-建立使用者之後，必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給他們。 如果沒有指派授權給使用者，他們將無法在 Intune 中註冊裝置。 
+建立使用者之後，必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給他們。 如果您未指派授權給使用者，他們將無法在 Intune 中註冊裝置。 
 
 將 Intune 授權指派給使用者：
 
@@ -55,7 +55,7 @@ ms.locfileid: "61511324"
 2. 選擇 [使用者] > [作用中使用者] > 選擇您剛才建立的使用者。
 3. 在 [產品授權] 旁，選取 [編輯]。
 4. 在 [位置] 下，選擇使用者的位置。
-5. 按一下 Intune 授權 (或您所擁有內含 Intune 的其他授權) 旁的 [開啟]。 顯示的[產品名稱](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** 會用作 Azure 管理中的服務方案 
+5. 按一下 Intune 授權 (或您所擁有包含 Intune 的其他授權) 旁的 [開啟]。 顯示的[產品名稱](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** 會用作 Azure 管理中的服務方案 
 
    > [!NOTE]
    > 此設定會將您的其中一個授權用於這位使用者。 如果您使用試用環境，稍後會將此授權重新指派給即時環境中真正的使用者。

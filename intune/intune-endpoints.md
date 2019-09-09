@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d46290975cc03343de5197b41236988a6486bfd
-ms.sourcegitcommit: 6b7e214e753d0bbc1fdf129853a258d3a4d60081
+ms.openlocfilehash: 7202ea3230cef8f6d262bdd99fe035076e4466b1
+ms.sourcegitcommit: 9d26ac74eff7647031ae29b13da815703c436f03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68937157"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176899"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft intune 的網路端點  
 
@@ -34,7 +34,7 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 
 若要管理位於防火牆和 Proxy 伺服器後方的裝置，您必須啟用 Intune 的通訊功能。
 
-- Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)** ，因為 Intune 用戶端使用這兩種通訊協定。 Windows 資訊保護使用連接埠 444。
+- Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)**，因為 Intune 用戶端使用這兩種通訊協定。 Windows 資訊保護使用連接埠 444。
 - 針對某些工作 (例如下載傳統電腦代理程式的軟體更新)，Intune 會需要未驗證的 Proxy 伺服器存取 manage.microsoft.com
 
 您可以修改個別用戶端電腦上的 Proxy 伺服器設定。 也可以使用群組原則設定，針對位於指定 Proxy 伺服器後方的所有用戶端電腦變更設定。
@@ -43,7 +43,7 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-受管理裝置需要進行可讓 [所有使用者]  穿過防火牆存取服務的設定。
+受管理裝置需要進行可讓 [所有使用者] 穿過防火牆存取服務的設定。
 
 下表列出 Intune 用戶端存取的連接埠和服務：
 
@@ -85,6 +85,8 @@ Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，�
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57<br>52.187.196.98<br>52.237.196.51|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180<br>52.187.196.173<br>52.156.162.48|
+|*。manage。microsoft。com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
+
 
 ## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell 指令碼和 Win32 應用程式的網路需求  
 
