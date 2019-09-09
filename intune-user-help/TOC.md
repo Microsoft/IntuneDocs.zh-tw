@@ -158,6 +158,7 @@
 
 ## [使用 Intune 公司入口網站](using-the-intune-company-portal-website.md)
 ### [管理應用程式](manage-apps-cpweb.md)  
+### [取得復原金鑰](get-recovery-key-cpweb.md)
 ### [遠端鎖定裝置](remote-lock-your-device-cpwebsite.md)  
 ### [重新命名裝置](rename-your-device-cpwebsite.md)  
 ### [移除裝置](remove-your-device-cpwebsite.md)  
