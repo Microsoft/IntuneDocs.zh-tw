@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: 安全性基準
               items:
-                - name: Windows 10 基準設定
-                  href: security-baseline-settings-mdm.md
+                - name: Windows 10 MDM 基準設定
+                  href: security-baseline-settings-mdm-all.md
                 - name: Microsoft Defender ATP 基準設定
                   href: security-baseline-settings-defender-atp.md
             - name: Windows 更新設定
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Endpoint Protection 的常見錯誤
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: 安全性基準封存
-          items:
-            - name: 封存的 MDM 安全性基準
-              href: security-baseline-settings-mdm-archive.md
     - name: 案例實作指南
       items:
         - name: 保護 Exchange Online
