@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960592"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842197"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "68960592"
 > [!NOTE]
 > 此應用程式管理功能支援 Windows 應用程式使用 32 位元和 64 位元作業系統架構。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要使用 Win32 應用程式管理，請務必符合下列準則：
 
