@@ -546,10 +546,11 @@
         - name: 什麼是 Intune 應用程式管理？
           href: app-management.md
           displayName: mam-we
-        - name: 新增應用程式概觀
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: 新增應用程式
           items:
+            - name: 新增應用程式概觀
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: 受 Intune 保護的應用程式
               href: apps-supported-intune-apps.md
             - name: 市集應用程式
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 市集應用程式
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft 網上商店應用程式
-                  href: store-apps-windows.md
                   items:
-                    - name: 手動新增公司入口網站應用程式
+                    - name: Windows 應用程式
+                      href: store-apps-windows.md
+                    - name: 公司入口網站應用程式
                       href: store-apps-company-portal-app.md
                 - name: 受管理的 Google Play 應用程式
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: 適用於 macOS 的 Office 365 應用程式
                   href: apps-add-office365-macos.md
+            - name: Web 應用程式
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: 內建應用程式
+              href: apps-add-built-in.md
             - name: 建置應用程式 (LOB)
               items:
-                - name: Win32 應用程式管理
-                  href: apps-win32-app-management.md
                 - name: Android LOB 應用程式
                   href: lob-apps-android.md
                 - name: iOS LOB 應用程式
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB 應用程式
                   href: lob-apps-macos.md
-            - name: Web 應用程式
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: 內建應用程式
-              href: apps-add-built-in.md
+            - name: Win32 應用程式管理
+              href: apps-win32-app-management.md
             - name: PowerShell 指令碼
               href: intune-management-extension.md
         - name: 指派應用程式
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: Education
+                - name: 安全評定
                   href: education-settings-windows.md
                 - name: 共用的多重使用者裝置
                   href: shared-user-device-settings-windows.md
