@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978531"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864547"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,12 +34,12 @@ ms.locfileid: "68978531"
 
 當基準版本不再支援使用時, 它就會從本文中移除。
 
-- 查看[目前 MDM 安全性基準](security-baseline-settings-mdm.md)中可用的設定 
+- 查看[目前 MDM 安全性基準](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)中可用的設定。 
 - 瞭解[安全性](security-baselines.md)基準, 以及如何在您的安全性基準設定檔中升級基準版本。
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>預覽：2018 年 10 月的 MDM 安全性基準  
 
-*此基準已由[5 月2019的 MDM 安全性基準](security-baseline-settings-mdm.md)取代*
+*此基準已由[5 月2019的 MDM 安全性基準](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)取代*
 
 ### <a name="above-lock"></a>上方鎖定  
 
@@ -1440,5 +1441,5 @@ ms.locfileid: "68978531"
  
 ## <a name="next-steps"></a>後續步驟  
 
-[查看目前的基準版本](security-baseline-settings-mdm.md)  
+[查看目前的基準版本](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
 [升級設定檔以使用新的基準版本](security-baselines.md#change-the-baseline-version-for-a-profile)
