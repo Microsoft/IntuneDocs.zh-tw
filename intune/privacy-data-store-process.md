@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050375"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739219"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune 中的資料儲存與處理
 
@@ -41,7 +41,7 @@ ms.locfileid: "66050375"
 
 Microsoft 在全球許多區域提供並執行 Intune 服務。 Intune 會採用系統管理員為客戶資料所選擇的儲存位置。
 
-如需詳細資訊，請參閱 [Microsoft Intune 我的客戶資料在哪裡？](For more information, see Microsoft Intune Where is my customer data?)
+如需詳細資訊，請參閱[您的資料位於何處？](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ### <a name="personal-data-retention"></a>個人資料保留
 

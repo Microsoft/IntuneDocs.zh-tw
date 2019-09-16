@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062945"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842172"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
-Autopilot 部署類型有四種：[自我部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)適用於 kiosk、數位告示板或共用裝置；[White Glove ](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)可讓合作夥伴或 IT 員工預先佈建 Windows 10 PC，讓其完整設定且備妥用於商業用途；[適用於現有裝置的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) 可讓您輕鬆地將最新版 Windows 10 部署至現有裝置；[使用者驅動模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)適用於傳統使用者。 
+Autopilot 部署類型有四種：
+- [自我部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)適用於 kiosk、數位告示板或共用裝置
+- [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) 可讓合作夥伴或 IT 員工預先佈建 Windows 10 PC，讓其完整設定且備妥用於商業用途；[適用於現有裝置的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) 可讓您輕鬆地將最新版 Windows 10 部署至現有裝置
+- [使用者驅動模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)適用於傳統使用者。 
 
 
 ## <a name="prerequisites"></a>必要條件
@@ -74,9 +77,9 @@ Autopilot 部署類型有四種：[自我部署模式](https://docs.microsoft.co
     3. 針對 [成員資格類型]  ，選擇 [已指派]  或是 [動態裝置]  。
 3. 如果您在上一步中針對 [成員資格類型]  選擇 [已指派]  ，則在 [群組]  刀鋒視窗中，請選擇 [成員]  並將 Autopilot 裝置設備新增至群組。
     尚未註冊的 Autopilot 裝置為裝置名稱與序號相同的裝置。
-4. 如果針對上述的 [成員資格類型]  選擇 [動態裝置]  ，則在 [群組]  刀鋒視窗中，請選擇 [動態裝置成員]  ，然後在 [進階規則]  方塊中輸入下列任意一項代碼。
+4. 如果針對上述的 [成員資格類型]  選擇 [動態裝置]  ，則在 [群組]  刀鋒視窗中，請選擇 [動態裝置成員]  ，然後在 [進階規則]  方塊中輸入下列任意一項代碼。 這些規則只會收集 Autopilot 裝置，因為其目標屬性僅由 Autopilot 裝置所擁有。
     - 若要建立包含您所有 Autopilot 裝置的群組，請輸入：`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Intune 的群組標籤欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若建立的群組要包含具特定[群組標籤 (OrderID)]的所有 Autopilot 裝置，您必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Intune 的群組標籤欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若要建立包含具特定群組標籤 (Azure AD 裝置 OrderID) 之所有 Autopilot 裝置的群組，您必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若建立的群組要包含具有特定採購單識別碼的所有 Autopilot 裝置，請鍵入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     新增 [進階規則]  代碼後，選擇 [儲存]  。
@@ -93,7 +96,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 4. 選取 [下一步]  。
 5. 在 [首次體驗 (OOBE)]  頁面上，針對 [部署模式]  選擇這兩個選項的其中一個：
     - **使用者驅動**：具有此設定檔的裝置會與註冊裝置的使用者相關聯。 需有使用者認證，才能註冊裝置。
-    - **自我部署 (預覽)** ：(需要 Windows 10 1809 版或更新版本) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不需要使用者認證，也能註冊裝置。
+    - **自我部署 (預覽)** ：(需要 Windows 10 1809 版或更新版本) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不需要使用者認證，也能註冊裝置。 當裝置沒有與其建立關聯的使用者時，則不會套用以使用者為基礎的合規性政策。 使用自我部署模式時，只會套用以裝置為目標的合規性政策。
 
     ![[OOBE] 頁面的螢幕擷取畫面](media/enrollment-autopilot/create-profile-outofbox.png)
 

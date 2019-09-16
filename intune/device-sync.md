@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388103"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808639"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-[同步] 裝置動作會強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
+[同步]  裝置動作會強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -40,19 +37,18 @@ ms.locfileid: "57388103"
 
 ## <a name="sync-a-device"></a>同步處理裝置
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [所有服務]，篩選 [Intune]，然後選取 [Microsoft Intune]。 
-3. 在 [Intune] 中選取 [裝置] > [所有裝置]。
-4. 在您管理的裝置清單中，依序選取裝置、[其他]，然後選取 [同步處理]。
-5. 選取 [是] 確認。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 
+3. 在 [Intune]  中選取 [裝置]   > [所有裝置]  。
+4. 在您管理的裝置清單中，選取裝置以開啟 [概觀]  窗格，然後選取 [同步處理]  。
+5. 選取 [是]  確認。
 
-若要查看同步動作的狀態，請選擇 [裝置] > [裝置動作]。
+若要查看同步動作的狀態，請選擇 [裝置]   > [裝置動作]  。
 
-您可以在[重新整理週期數](device-profiles.md)中找到標準 Intune 原則簽入頻率。
+您可以在[重新整理週期數](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)中找到標準 Intune 原則簽入頻率。
 
 ## <a name="retryable-error-codes"></a>可重試的錯誤碼
 
-當系統管理員執行 [同步處理] 裝置動作時，失敗但引發可重試錯誤碼的 iOS 和 Androids 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
+當系統管理員執行 [同步處理]  裝置動作時，失敗但引發可重試錯誤碼的 iOS 和 Androids 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
 
 
 | 錯誤碼  | 建議的描述 | 可重試 |

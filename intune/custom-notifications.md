@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021759"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878047"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
-使用 Microsoft Intune 將自訂通知傳送給受控 iOS 和 Android 裝置的使用者。 這些訊息會在使用者裝置上顯示為來自公司入口網站應用程式的標準推播通知，與裝置上其他應用程式通知的出現方式一樣。 Windows 裝置不支援 Intune 自訂通知。   
+使用 Microsoft Intune 將自訂通知傳送給受控 iOS 和 Android 裝置的使用者。 這些訊息會在使用者裝置上顯示為來自公司入口網站應用程式與來自 Microsoft Intune 應用程式的標準推播通知，與裝置上其他應用程式通知的出現方式一樣。 Windows 裝置不支援 Intune 自訂通知。   
 
 自訂通知訊息包含簡短的標題和訊息本文，長度為 500 個字元或更少。 這些訊息可以針對任何一般通訊目的來自訂。
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>傳送自訂通知的常見案例  
 
-- 使用自訂通知來警示特定使用者關於公司入口網站中可用的新應用程式。  
+- 使用自訂通知來警示特定使用者，公司入口網站中有可用的新應用程式。  
 - 通知所有員工排程的變更，例如因惡劣氣候而放假。  
 
 ## <a name="considerations-for-using-custom-notifications"></a>使用自訂通知的考量  
 
 **裝置設定**：  
-- 裝置必須先安裝公司入口網站應用程式，使用者才能接收自訂通知。 他們也必須設定權限以允許公司入口網站應用程式傳送推播通知。 「公司入口網站」會在每次被安裝或更新時，提示使用者允許通知。  
+- 裝置必須先安裝公司入口網站應用程式或 Microsoft Intune 應用程式，使用者才能接收自訂通知。 他們也必須設定權限以允許公司入口網站應用程式或 Microsoft Intune 應用程式傳送推播通知。 如有需要，公司入口網站應用程式和 Microsoft Intune 應用程式可能會提示使用者允許通知。  
 - 在 Android 上，Google Play Services 是必要的相依性。  
 - 裝置必須已註冊 MDM。
 
@@ -51,8 +51,8 @@ ms.locfileid: "70021759"
 - 群組可以包含使用者或裝置，但訊息只會傳送給使用者，且會傳送至使用者已註冊的每部 iOS 或 Android 裝置。  
 
 **傳遞**：  
-- Intune 會將訊息傳送給使用者的公司入口網站應用程式，其之後會建立推播通知。 使用者不需要登入應用程式，通知也會推播到裝置上。  
-- Intune 和公司入口網站應用程式無法保證能傳遞自訂通知。 自訂通知可能會延遲數小時顯示；如有此類延遲，則不應用於緊急訊息。  
+- Intune 會將訊息傳送給使用者的公司入口網站應用程式或 Microsoft Intune 應用程式，其之後會建立推播通知。 使用者不需要登入應用程式，通知也會推播到裝置上。  
+- Intune 和公司入口網站應用程式與 Microsoft Intune 應用程式無法保證能傳遞自訂通知。 自訂通知可能會延遲數小時顯示；如有此類延遲，則不應用於緊急訊息。  
 - Intune 中的自訂通知訊息會以標準推播通知形式顯示於裝置上。 如果公司入口網站應用程式在 iOS 裝置上開啟時收到通知，則會在應用程式中顯示通知，而不會推播通知。  
 - 視裝置設定，自訂通知可以在 iOS 和 Android 裝置的鎖定畫面上顯示。  
 - 在 Android 裝置上，其他應用程式可能會存取您自訂通知中的資料。 請勿將其用於敏感通訊。  
@@ -80,7 +80,7 @@ Intune 不會追蹤您傳送的自訂通知，裝置也不會在裝置的通知�
 
 ## <a name="receive-a-custom-notification"></a>接收自訂通知  
 
-使用者可在裝置上看到 Intune 傳送的自訂通知訊息，作為來自公司入口網站應用程式的標準推播通知。 這些通知類似於使用者從裝置上其他應用程式接收的推播通知。  
+使用者可在裝置上看到 Intune 傳送的自訂通知訊息，作為來自公司入口網站應用程式或 Microsoft Intune 應用程式的標準推播通知。 這些通知類似於使用者從裝置上其他應用程式接收的推播通知。  
 
 如果公司入口網站應用程式在 iOS 裝置上開啟時收到通知，則會在應用程式中顯示通知，而不會推播通知。  
 

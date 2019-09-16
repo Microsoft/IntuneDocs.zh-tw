@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373421"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739209"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>在 Intune 中新增 iOS 軟體更新原則
 
@@ -53,14 +53,8 @@ ms.locfileid: "66373421"
 
     - **延遲軟體更新對終端使用者的可見性，而不會變更排程更新 (天)** ： 
 
-      **這項設定已移至[裝置限制](device-restrictions-ios.md#general)。將會從入口網站的這個位置中移除該設定**。 很快就可在此處變更現有的原則。 大約一個月之後，此設定將從現有的原則中移除。
-
-      若要限制影響，建議您：
-        - 從入口網站的這個位置中移除現有原則。
-        - 建立新的[裝置限制原則](device-restrictions-ios.md#general)。
-        - 目標為與原始原則相同的使用者。
-
-      如果有衝突，「除非」  這兩個值完全相同，否則這項設定不會執行任何動作。 若要避免發生衝突，請務必要從入口網站的這個位置中變更或移除現有原則。
+      **如果您想要在受監督的 iOS 裝置上將軟體更新顯示延遲一段特定時間，請在 [[裝置限制]](device-restrictions-ios.md#general) 中設定。
+     
       > [! 重要]  
       > 「開始時間」  和「結束時間」  設為上午 12 點的原則會被評估為 0 小時，而不是 24 小時。 這會導致沒有限制。  
 
