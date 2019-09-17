@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402772"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912822"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>您可以在 Intune 中使用之內建 iOS 應用程式的套件組合識別碼
 
@@ -30,11 +30,12 @@ ms.locfileid: "66402772"
 
 | 套件組合識別碼                   | 應用程式名稱     | 發佈者 |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
+| .com. store             | App Store    | Apple     |
 | com.apple.calculator        | 計算機   | Apple     |
 | com.apple.mobilecal         | 行事曆     | Apple     |
 | com.apple.camera            | 相機       | Apple     |
 | com.apple.mobiletimer       | 時鐘        | Apple     |
+| .com. 蘋果剪輯             | 剪輯        | Apple     |
 | com.apple.compass           | 指南針      | Apple     |
 | com.apple.MobileAddressBook | 連絡人     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ ms.locfileid: "66402772"
 | com.apple.VoiceMemos        | 語音備忘錄   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | 觀看        | Apple     |
-| com.apple.weather           | 天氣      | Apple     |
+| com.apple.weather           | 天氣      | Apple     |      
 
 ## <a name="next-steps"></a>後續步驟
 

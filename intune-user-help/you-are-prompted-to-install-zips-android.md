@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b12cb83485c25181bdcc015857c68da795676219
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529284"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864433"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>在 Android 裝置上安裝 Zimperium zIPS
 
@@ -31,7 +31,7 @@ ms.locfileid: "67529284"
 
 ## <a name="what-you-need-to-do"></a>您必須執行的作業
 
-1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Skycure from Play Store]  \(必要應用程式 - 從 Play 商店安裝 Skycure)。 您也可以在公司入口網站應用程式的 [合規性詳細資料]  下找到此項目。
+1. 從螢幕頂端向下拖曳以開啟 [通知] 列，然後點選 [Required application – Install Zimperium from Play Store]  \(必要應用程式 - 從 Play 商店安裝 Zimperium)。 您也可以在公司入口網站應用程式的 [合規性詳細資料]  下找到此項目。
 
 2. 系統會帶您前往 Play Store 中的 Zimperium zIPS 安裝頁面。 安裝 Zimperium zIPS，然後點選 [接受]  ，讓 Zimperium zIPS 存取您的裝置。
 
