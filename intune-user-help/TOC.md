@@ -1,6 +1,6 @@
 # Intune 的使用者說明
 
-## [使用受管理的裝置完成工作](use-managed-devices-to-get-work-done.md)
+## [什麼是裝置註冊？](use-managed-devices-to-get-work-done.md)
 
 ## [我的公司可以從 Intune 查看哪些資訊？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
