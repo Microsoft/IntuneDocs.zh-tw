@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511755"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080124"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入門：設定 Windows 10 裝置的自動註冊
 
@@ -39,31 +39,31 @@ ms.locfileid: "61511755"
 
 在此範例中，您將使用 MDM 註冊，讓公司裝置與自備裝置都能自動註冊。 您將註冊免費的 Azure Active Directory Premium 訂用帳戶。
 
-1. 在 Azure 中，選擇 [Azure Active Directory] > [行動性 (MDM 與 MAM)]。
-2. 選取 [取得免費 Premium 試用版即可使用此功能]。 選取此選項可讓您使用免費的 Azure Active Directory Premium 試用版來自動註冊。 
+1. 在 Azure 中，選擇 [Azure Active Directory]   > [行動性 (MDM 與 MAM)]  。
+2. 選取 [取得免費 Premium 試用版即可使用此功能]  。 選取此選項可讓您使用免費的 Azure Active Directory Premium 試用版來自動註冊。 
 
     ![選取免費的 Azure Active Directory Premium 試用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    選擇 [Enterprise Mobility + Security E5] 免費試用選項。 此外，您必須選擇 [啟動] 免費試用版。
+    選擇 [Enterprise Mobility + Security E5]  免費試用選項。 此外，您必須選擇 [啟動]  免費試用版。
 
     ![選擇 [Enterprise Mobility + Security E5] 免費試用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. 選取 [Microsoft Intune]。 
+3. 選取 [Microsoft Intune]  。 
 
     ![從清單中選擇 Microsoft Intune](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
-4. 從 [MDM 使用者範圍] 選取 [部分]，使用 MAM 自動註冊來管理您員工 Windows 裝置上的企業資料。 將會針對已加入 AAD 的裝置和自備裝置案例設定 MDM 自動註冊。
+4. 從 [MDM 使用者範圍]  選取 [部分]  ，使用 MAM 自動註冊來管理您員工 Windows 裝置上的企業資料。 將會針對已加入 AAD 的裝置和自備裝置案例設定 MDM 自動註冊。
 
     ![從 [設定] 清單選取 [部分]](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 選擇 [選取群組] > [Contoso Testers] > [選取] 作為指派的群組。
+5. 選擇 [選取群組]   > [Contoso Testers]   > [選取]  作為指派的群組。
 
     ![選取要註冊的群組](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
-6. 從 [MAM 使用者範圍] 選取 [部分] 來管理您員工裝置上的資料。
-7. 選擇 [選取群組] > [Contoso Testers] > [選取] 作為指派的群組。 
+6. 從 [MAM 使用者範圍]  選取 [部分]  來管理您員工裝置上的資料。
+7. 選擇 [選取群組]   > [Contoso Testers]   > [選取]  作為指派的群組。 
 8. 其餘的設定值請使用預設值。
-9. 選擇 [儲存]。
+9. 選擇 [儲存]  。
 
 ## <a name="clean-up-resources"></a>清除資源
 

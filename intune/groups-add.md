@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
-ms.reviewer: amyros
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60f2368fc8c6d4f8e2713a8386ccdd7e5958ac6b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: bab0a33eee5f4d4856fb9d01d822236d1927a4e3
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412625"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071733"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。

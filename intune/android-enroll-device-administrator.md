@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdd3bf3bfdbc14f4324da4b5edc8d131f3f4f170
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671118"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071039"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android 裝置系統管理員註冊
 
@@ -38,7 +38,7 @@ Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而�
 
 
 > [!Note]  
-> 混合式行動裝置管理 (混合式 MDM；使用 System Center Configuration Manager 主控台管理的 Intune) 不支援 Android 10 與更新版本，因為混合式 MDM 將在 2019 年 9 月 1 日終止服務。 如果您仍在使用混合式 MDM，您應該儘快移轉到 Intune 獨立部署。 若您需要移轉方面的協助，請連絡客戶支援。 如需詳細資訊，請參閱[從混合式行動裝置管理移到 Azure 上的 Intune](https://aka.ms/hybrid_notification) \(英文\)。
+> 混合式行動裝置管理 (混合式 MDM；使用 System Center Configuration Manager 主控台管理的 Intune) 不支援 Android 10 與更新版本，因為混合式 MDM 將在 2019 年 9 月 1 日終止服務。 如果您仍在使用混合式 MDM，您應該儘快移轉到 Intune 獨立部署。 若您需要移轉方面的協助，請連絡客戶支援。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (從混合式行動裝置管理移到 Azure 上的 Intune)。
 
 如需 Google 的 Android Enterprise 功能的詳細資訊。請參閱下列文章：
 - [Google 從裝置系統管理員移轉到 Android Enterprise 指南](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf) \(英文\)
@@ -52,7 +52,7 @@ Intune 預設允許使用裝置系統管理員功能來註冊 Android 裝置。
 1. 若要準備管理行動裝置，您必須將行動裝置管理 (MDM) 授權單位設定為 **Microsoft Intune**。 請參閱[設定 MDM 授權單](mdm-authority-set.md)以取得相關指示。 此項目只會設定一次，也就是第一次為行動裝置管理設定 Intune 之時
 2. [請告知使用者如何註冊其裝置](/intune-user-help/enroll-your-device-in-intune-android)。  
 
-使用者註冊之後，您就可以開始管理其在 Intune 中的裝置，包括[指派合規性政策](compliance-policy-create-android.md)、[管理應用程式](app-management.md)等等。
+使用者註冊之後，您就可以開始管理其在 Intune 中的裝置，包括[指派合規性原則](compliance-policy-create-android.md)、[管理應用程式](app-management.md)等等。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 - [使用 Microsoft Intune 之使用者體驗的相關資源](end-user-educate.md)

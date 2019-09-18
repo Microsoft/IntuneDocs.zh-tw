@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d053b0b37931443a343c91b5122b7a097d248c51
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048680"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071468"
 ---
 # <a name="create-a-custom-role-in-intune"></a>在 Intune 中建立自訂角色
 
@@ -35,19 +35,19 @@ ms.locfileid: "66048680"
 
 1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)。
 
-2. 選擇左功能表中的 [All services] (所有服務)，然後在文字方塊篩選中鍵入 **Intune**。
+2. 選擇左功能表中的 [All services] (所有服務)  ，然後在文字方塊篩選中鍵入 **Intune**。
 
-3. 選擇 [Intune] > [角色] > [所有角色] > [新增]。
+3. 選擇 [Intune]   > [角色]   > [所有角色]   > [新增]  。
 
-4. 在 [新增自訂角色] 刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]。
+4. 在 [新增自訂角色]  刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]  。
 
-5. 在 [權限] 刀鋒視窗中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
+5. 在 [權限]  刀鋒視窗中，選擇此角色所要使用的權限。 使用 [Intune RBAC 表格](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) \(英文\) 可協助您決定套用哪些權限。
 
-6. 在 [範圍 (標籤)] 刀鋒視窗中，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。
+6. 在 [範圍 (標籤)]  刀鋒視窗中，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。
 
-7. 完成後，選擇 [確定]。
+7. 完成後，選擇 [確定]  。
 
-8. 在 [新增自訂角色] 刀鋒視窗中按一下 [建立]。 新角色會顯示在 [Intune 角色 - 所有角色] 刀鋒視窗上的清單中。
+8. 在 [新增自訂角色]  刀鋒視窗中按一下 [建立]  。 新角色會顯示在 [Intune 角色 - 所有角色]  刀鋒視窗上的清單中。
 
 ## <a name="next-steps"></a>後續步驟
 - [將角色指派給使用者](assign-role.md)

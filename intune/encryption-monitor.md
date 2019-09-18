@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027376"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905050"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密   
 
@@ -201,8 +201,7 @@ Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的
   1. 從任何裝置登入「Intune 公司入口網站」  網站。  
   2. 在入口網站中，移至 [裝置]  ，然後選取使用 FileVault 加密的 macOS 裝置。  
   3. 選取 [取得修復金鑰]  。 目前的修復金鑰會隨即顯示。  
-  
-     在 iPhone 上，您必須選取「三個」  點，[取得修復金鑰]  選項才會顯示。  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 修復金鑰  
 

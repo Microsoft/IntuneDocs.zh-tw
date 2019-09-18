@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df090e0e942291d5430b101db378aca296466bf9
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549989"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071548"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -50,7 +50,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 - [Apple 的裝置註冊計劃](http://deploy.apple.com)中所購買的裝置
 - [行動裝置管理 (MDM) 授權單位](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -162,7 +162,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
     在鎖定於單一應用程式模式的單一裝置上，不支援多重要素驗證。 此限制存在的原因是，裝置無法切換至不同的應用程式以完成第二個驗證要素。 因此，如果您想要在單一應用程式模式裝置上進行多重要素驗證，第二個要素必須位於不同的裝置上。
 
-    此功能僅針對 iOS 11.3.1 與更新版本支援。
+    此功能僅針對 iOS 11.3.1 和更新版本支援。
 
    ![單一應用程式模式的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 

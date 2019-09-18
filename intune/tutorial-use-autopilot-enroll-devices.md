@@ -13,17 +13,17 @@ ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 292ffb5eebd4ae0accb51212cf6f1648a090d66e
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044516"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071667"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程：使用 Autopilot 在 Intune 中註冊 Windows 裝置
 Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intune 和 AutoPilot，將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像。 

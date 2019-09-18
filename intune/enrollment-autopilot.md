@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 1bb6efa8bff9ff428a7ea6cc1bd245070cfc0e1f
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842172"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070933"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。

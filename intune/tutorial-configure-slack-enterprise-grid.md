@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842075"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061668"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教學課程：設定 Slack 以針對 EMM 和應用程式設定使用 Intune
 
@@ -77,7 +77,6 @@ Slack 是您可以與 Microsoft Intune 搭配使用的共同作業應用程式�
 5. 選取 [相關聯的應用程式]  。
 6. 在搜尋列中，輸入 "Slack for EMM"，然後選取該應用程式。
 7. 按一下 [確定]  ，然後選取 [組態設定]  。 
-    - 如需設定金鑰及其值的相關資訊，請參閱 [Slack 的 AppConfig 網頁](https://www.appconfig.org/company/slack/) \(英文\) 之「技術」索引標籤上的文件。
 8. 選取 [確定]  ，然後選取 [新增]  。
 9. 在搜尋列中，輸入「Slack 應用程式設定原則測試」，然後選取您剛新增的原則。
 10. 從管理員中，選取 [指派]  。

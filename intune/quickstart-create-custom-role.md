@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511566"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080047"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入門：建立並指派自訂角色
 
@@ -38,35 +38,35 @@ ms.locfileid: "61511566"
 
 當您建立自訂角色時，可以為各種不同的動作設定權限。 針對安全性作業角色，我們將設定一些「讀取」權限，讓操作員可以檢閱裝置的設定和原則。
 
-1. 在 Intune 中，選擇 [角色] > [所有角色] > [新增]。
+1. 在 Intune 中，選擇 [角色]   > [所有角色]   > [新增]  。
 ![瀏覽器](media/quickstart-create-custom-role/add-custom-role.png)
-2. 在 [新增自訂角色] 下的 [名稱] 方塊中，輸入「安全性作業」。
-3. 在 [描述] 方塊中，輸入「此角色可讓安全性操作員監視裝置設定與合規性資訊」。
-4. 選擇 [設定] > [公司裝置識別碼] > [讀取] 旁的 [是] > [確定]。
+2. 在 [新增自訂角色]  下的 [名稱]  方塊中，輸入「安全性作業」  。
+3. 在 [描述]  方塊中，輸入「此角色可讓安全性操作員監視裝置設定與合規性資訊」  。
+4. 選擇 [設定]   > [公司裝置識別碼]   > [讀取]  旁的 [是]   > [確定]  。
 ![瀏覽器](media/quickstart-create-custom-role/corp-device-id-read.png)
-5. 選擇 [裝置合規性原則] > [讀取] 旁的 [是] > [確定]。
-6. 選擇 [裝置設定] > [讀取] 旁的 [是] > [確定]。
-7. 選擇 [組織] > [讀取] 旁的 [是] > [確定]。
-8. 選擇 [確定] > [建立]。
+5. 選擇 [裝置合規性原則]   > [讀取]  旁的 [是]   > [確定]  。
+6. 選擇 [裝置設定]   > [讀取]  旁的 [是]   > [確定]  。
+7. 選擇 [組織]   > [讀取]  旁的 [是]   > [確定]  。
+8. 選擇 [確定]   > [建立]  。
 
 ## <a name="assign-the-role-to-a-group"></a>將角色指派給群組
 
 您必須將角色指派給包含安全性使用者的群組，安全性操作員才能使用新的權限。
 
-1. 在 Intune 中，選擇 [角色] > [所有角色] > [Security operations] \(安全性作業\)。
-2. 在 [Intune 角色] 下，選擇 [作業] > [指派]。
-3. 在 [作業名稱] 方塊中，輸入「安全性作業」。
-4. 選擇 [成員 (群組)] > [新增]。
+1. 在 Intune 中，選擇 [角色]   > [所有角色]   > [Security operations] \(安全性作業\)  。
+2. 在 [Intune 角色]  下，選擇 [作業]   > [指派]  。
+3. 在 [作業名稱]  方塊中，輸入「安全性作業」  。
+4. 選擇 [成員 (群組)]   > [新增]  。
 5. 選擇 **Contoso Testers** 群組。
-6. 選擇 [選取] > [確定]。
-7. 選擇 [範圍 (群組)] > [選取要納入的群組] > [Contoso Testers]。
-8. 選擇 [選取] > [確定] > [確定]。
+6. 選擇 [選取]   > [確定]  。
+7. 選擇 [範圍 (群組)]   > [選取要納入的群組]   > [Contoso Testers]  。
+8. 選擇 [選取]   > [確定]   > [確定]  。
 
-現在，群組中的所有人都是「安全性作業」角色的成員，而且可以檢閱下列有關裝置的資訊：公司裝置識別碼、裝置合規性原則、裝置設定和組織資訊。
+現在，群組中的所有人都是「安全性作業」  角色的成員，而且可以檢閱下列有關裝置的資訊：公司裝置識別碼、裝置合規性原則、裝置設定和組織資訊。
 
 ## <a name="clean-up-resources"></a>清除資源
 
-如果您不想再使用新的自訂角色，您可以將它刪除。 選擇 [角色] > [所有角色] > 選擇角色旁的省略符號 > [刪除]。
+如果您不想再使用新的自訂角色，您可以將它刪除。 選擇 [角色]   > [所有角色]  > 選擇角色旁的省略符號 > [刪除]  。
 
 ## <a name="next-steps"></a>後續步驟
 

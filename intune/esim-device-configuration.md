@@ -14,19 +14,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 863d8d03836573a7425f2958e52a1e0331b34a10
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354378"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080062"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
-
-> [!NOTE]
-> Microsoft 歡迎您提供意見反應。 請傳送電子郵件至 `eSIMonIntune@microsoft.com` 以傳送問題，或開始討論。
-
-## <a name="introduction"></a>簡介
 
 eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)) 上的行動數據連線來連線到網際網路。 使用 eSIM，您不需要從您的電信業者取得 SIM 卡。 身為全球旅行者，您也可以切換電信業者與數據方案，一律保持連線。
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214314"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012445"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用憑證進行驗證  
 
@@ -74,17 +74,17 @@ Intune 支援下列憑證類型：
 ### <a name="to-create-a-trusted-certificate-profile"></a>建立可信任的憑證設定檔  
 
 1. 登入 [Intune 入口網站](https://aka.ms/intuneportal)。  
-2. 選取 [裝置設定] > [管理] > [設定檔] > [建立設定檔]。  
-3. 輸入受信任憑證設定檔的 [名稱和描述]。  
-4. 從 [平台] 下拉式清單中，選取此受信任憑證的裝置平台。  
-5. 從 [設定檔類型] 下拉式清單中，選擇 [受信任的憑證]。  
-6. 瀏覽至受信任的根 CA 憑證 .cer 檔案 (您之前匯出以搭配使用此憑證設定檔)，然後選取 [確定]。  
-7. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]︰  
+2. 選取 [裝置設定]   > [管理]   > [設定檔]   > [建立設定檔]  。  
+3. 輸入受信任憑證設定檔的 [名稱和描述]  。  
+4. 從 [平台]  下拉式清單中，選取此受信任憑證的裝置平台。  
+5. 從 [設定檔類型]  下拉式清單中，選擇 [受信任的憑證]  。  
+6. 瀏覽至受信任的根 CA 憑證 .cer 檔案 (您之前匯出以搭配使用此憑證設定檔)，然後選取 [確定]  。  
+7. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]  ︰  
    - **電腦憑證存放區 - 根**
    - **電腦憑證存放區 - 中繼**
    - **使用者憑證存放區 - 中繼**
-8. 當您完成時，請選擇 [確定] 返回 [建立設定檔] 窗格，然後選取 [建立]。
-[裝置設定 - 設定檔] 檢視窗格的設定檔清單中隨即顯示設定檔，且設定檔類型為 [受信任的憑證]。  請務必將此設定檔指派給使用 SCEP 或 PCKS 憑證的裝置。 若要將設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
+8. 當您完成時，請選擇 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。
+[裝置設定 - 設定檔]  檢視窗格的設定檔清單中隨即顯示設定檔，且設定檔類型為 [受信任的憑證]  。  請務必將此設定檔指派給使用 SCEP 或 PCKS 憑證的裝置。 若要將設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
 
 > [!NOTE]  
 > Android 裝置可能會顯示協力廠商已安裝受信任憑證的訊息。  
@@ -98,5 +98,5 @@ Intune 支援下列憑證類型：
 建立並指派受信任的憑證設定檔之後，請為您要使用的每個平台建立 SCEP、PKCS 或 PKCS 所匯入憑證設定檔。 若要繼續，請參閱下列文章：  
 - [設定基礎結構以支援 SCEP 憑證與 Intune](certificates-scep-configure.md)  
 - [透過 Intune 設定並管理 PKCS 憑證](certficates-pfx-configure.md)  
-- [建立 PKCS 匯入的憑證設定檔](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [建立 PKCS 匯入的憑證設定檔](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 
