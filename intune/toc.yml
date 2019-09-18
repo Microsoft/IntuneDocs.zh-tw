@@ -519,6 +519,8 @@
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
+            - name: 已匯入的 PKCS
+              href: certificates-imported-pfx-configure.md
             - name: 使用 S/MIME 來加密電子郵件
               href: certificates-s-mime-encryption-sign.md
             - name: 透過 SCEP 使用第三方憑證授權單位
@@ -744,6 +746,8 @@
               href: troubleshoot-certificate-connector-events.md
             - name: Exchange Connector 疑難排解
               href: troubleshoot-exchange-connector.md
+        - name: 使用 Intune 文件
+          href: use-docs.md
         - name: 取得支援
           href: get-support.md
 - name: 參考
