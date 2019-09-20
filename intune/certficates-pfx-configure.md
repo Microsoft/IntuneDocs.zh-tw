@@ -16,18 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 064377ea05319242da087862b4d2b3a721b0caef
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376943"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012455"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
 Intune 支援使用私密和公開金鑰組 (PKCS) 憑證。 本文可協助您設定必要的基礎結構 (例如，內部部署憑證連接器)，匯出 PKCS 憑證，然後將憑證新增至 Intune 裝置組態設定檔。
 
 Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織資源進行存取和驗證。 憑證會驗證並保護您的公司資源存取，例如 VPN 或 WiFi 網路。 您可以使用 Intune 中的裝置組態設定檔，將這些設定部署到裝置。
+
+如需使用匯入的 PKCS 憑證的相關資訊，請參閱[匯入的 PFX 憑證](certificates-imported-pfx-configure.md)。
 
 
 ## <a name="requirements"></a>需求
@@ -63,17 +65,17 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   Microsoft Intune 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
 - **適用於 Microsoft Intune 的 PFX 憑證連接器**：  
-  如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載用於「匯入 PFX 憑證」  的連接器。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
+  如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載支援匯入 PFX 憑證的 *PFX 憑證連接器*。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
 
   每個 Intune 租用戶都支援此連接器的單一執行個體。 您可在相同的伺服器上安裝此連接器，作為 Microsoft Intune 憑證連接器的執行個體。
 
   此連接器會處理對 Intune 中所匯入之 PFX 檔案的要求，為特定使用者進行 S/MIME 電子郵件加密。  
 
   當新版本可供使用時，此連接器會自動自行更新。 若要使用更新功能，您必須：
-  - 在伺服器上安裝適用於 Microsoft Intune 的匯入 PFX 憑證連接器。  
+  - 在伺服器上安裝適用於 Microsoft Intune 的 PFX 憑證連接器。  
   - 若要自動接收重要更新，請確定防火牆已開啟，可讓連接器在連接埠 **443** 上連絡 **autoupdate.msappproxy.net**。   
 
-  如需連接器必須能夠存取之所有網路端點的詳細資訊，請參閱 [Microsoft Intune 憑證連接器](intune-endpoints.md)。
+  如需 Intune 和連接器必須能夠存取之網路端點的詳細資訊，請參閱[適用於 Microsoft Intune 的網路端點](intune-endpoints.md)。
 
 - **Windows Server**：  
   您可以使用 Windows Server 來裝載：
@@ -81,8 +83,8 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   - Microsoft Intune 憑證連接器，用於驗證和 S/MIME 電子郵件簽署情況
   - 適用於 Microsoft Intune 的 PFX 憑證連接器，用於 S/MIME 電子郵件加密情況。
 
-  您可在相同的伺服器上安裝這兩種連接器 (「Microsoft Intune 憑證連接器」  和「PFX 憑證連接器」  )。
-
+  Intune 支援在與 *Microsoft Intune 憑證連接器*相同的伺服器上安裝 *PFX 憑證連接器*。
+  
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>從企業 CA 匯出根憑證
 
 若要向 VPN、WiFi 或其他資源驗證裝置，裝置需要有根憑證或中繼 CA 憑證。 下列步驟說明如何從您的企業 CA 取得所需的憑證。
@@ -134,9 +136,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 14. 登出企業 CA。
 
-## <a name="download-install-and-configure-the-certificate-connectors"></a>下載、安裝和設定憑證連接器
-
-### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connec設為 [https]r
+## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>下載、安裝和設定 Microsoft Intune 憑證連接器
 
 > [!IMPORTANT]  
 > Microsoft Intune 憑證連接器無法安裝在發行憑證授權單位 (CA) 上，而必須安裝在不同的 Windows 伺服器上。  
@@ -162,21 +162,6 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 > [!NOTE]  
 > Microsoft Intune 憑證連接器支援 TLS 1.2。 如果裝載連接器的伺服器上安裝了 TLS 1.2，連接器就會使用 TLS 1.2。 否則，會使用 TLS 1.1。 目前，使用 TLS 1.1 在裝置與伺服器之間進行驗證。
-
-### <a name="pfx-certificate-connector-for-microsoft-intune"></a>適用於 Microsoft Intune 的 PFX 憑證連接器
-
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [憑證連接器]   > [新增] 
-3. 下載並儲存適用於 Microsoft Intune 的 PFX 憑證連接器。 請將它儲存到可從將安裝連接器的伺服器存取的位置。
-4. 下載完成後，請登入伺服器。 然後：
-
-    1. 確定已安裝 .NET 4.6 Framework 或更高版本，這是適用於 Microsoft Intune 之 PFX 憑證連接器的必要項目。 如果未安裝 .NET 4.6 Framework，安裝程式就會自動安裝它。
-    2. 執行安裝程式 (PfxCertificateConnectorBootstrapper.exe)，並接受預設位置，這會將連接器安裝到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
-    3. 連接器服務會以本機系統帳戶執行。 如果網際網路存取需要 Proxy，則請確認本機服務帳戶可以存取伺服器上的 Proxy 設定。
-
-5. 適用於 Microsoft Intune 的 PFX 憑證連接器隨即會在安裝之後開啟 [註冊]  索引標籤。 若要啟用 Intune 的連線，請 [登入]  ，並輸入具有 Azure 全域管理員或 Intune 系統管理員權限的帳戶。
-6. 關閉視窗。
-7. 返回 Azure 入口網站 ([Intune]   > [裝置設定]   > [憑證連接器]  )。 在幾分鐘後會顯示綠色的核取記號，且 [連線狀態]  為 [使用中]  。 連接器伺服器現在可以與 Intune 通訊。
 
 ## <a name="create-a-trusted-certificate-profile"></a>建立受信任的憑證設定檔
 
@@ -226,31 +211,6 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
    > [!NOTE]
    > 在具有 Android 企業設定檔的裝置上，使用 PKCS 憑證設定檔安裝的憑證不會顯示在裝置上。 若要確認憑證部署成功，請在 Intune 主控台中檢查設定檔的狀態。
-
-## <a name="create-a-pkcs-imported-certificate-profile"></a>建立 PKCS 匯入憑證設定檔
-
-您可以將先前從任何 CA 核發給特定使用者的憑證匯入至 Intune。 匯入的憑證會安裝在使用者註冊的每部裝置上。 S/MIME 電子郵件加密是將現有 PFX 憑證匯入至 Intune 的最常見情況。 使用者可能有許多憑證來加密電子郵件。 這些憑證的私密金鑰必須存在於所有使用者的裝置上，因此它們可以解密先前加密的電子郵件。
-
-若要將憑證匯入至 Intune，您可以使用 [GitHub 上提供的 PowerShell Cmdlet](https://github.com/Microsoft/Intune-Resource-Access)。
-
-將憑證匯入至 Intune 之後，請建立 **PKCS 匯入憑證**設定檔，並將它指派給 Azure Active Directory 群組。
-
-1. 在 [Azure 入口網站](https://portal.azure.com)，移至 [Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]  。
-2. 輸入下列內容：
-
-    - 設定檔的 [名稱] 
-    - 可選擇性地設定說明
-    - 要部署設定檔的目標 [平台] 
-    - 將 [設定檔類型]  設定為 [PKCS 匯入憑證] 
-
-3. 移至 [設定]  索引標籤，然後輸入下列內容：
-
-    - **使用目的**：針對此設定檔匯入之憑證的使用目的。 系統管理員可能已匯入使用目的不同 (例如驗證、S/MIME 簽署或 S/MIME 加密) 的憑證。 憑證設定檔中選取的使用目的符合含有正確匯入憑證的憑證設定檔。
-    - **憑證有效期間**：如果您沒有變更憑證範本，此選項可設定為一年。
-    - **金鑰儲存提供者 (KSP)** ：針對 Windows，選取要在裝置上儲存金鑰的位置。
-
-4. 選取 [確定]   > [建立]  儲存您的設定檔。
-5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](device-profile-assign.md)。
 
 ## <a name="whats-new-for-connectors"></a>連接器的新功能
 這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。 

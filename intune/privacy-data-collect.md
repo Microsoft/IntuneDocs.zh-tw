@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884769"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986432"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的資料收集
 
@@ -33,6 +33,9 @@ ms.locfileid: "67884769"
 - 診斷、效能及使用量資訊。
 
 從這些來源中，Intune 會收集可分為下列三個類別的資訊：[識別](#identified-data)、[匿名化](#pseudonymized-data)和[彙總](#aggregated-data)。
+
+> [!NOTE]
+> 基於任何原因，我們不會將我們的服務所收集的任何資料銷售給任何協力廠商。
 
 ## <a name="identified-data"></a>識別資料
 

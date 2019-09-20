@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376914"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071060"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
@@ -36,7 +36,7 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 從 Windows 10 1703 版 (RS2) 開始，可以使用其中一些設定。 為了獲得最佳體驗，建議使用 Windows 10 企業版 1903 (19H1) 和更新版本。
+- 從 Windows 10 1703 版 (RS2) 開始，可以使用其中一些設定。 有些設定不會包含在所有的 Windows 版本中。 為了獲得最佳體驗，建議使用 Windows 10 企業版 1903 (19H1) 和更新版本。
 
 - Windows 設定會使用 [Windows 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)。 CSP 適用於不同版本的 Windows，例如 Home、Professional、Enterprise 等。 若要查看 CSP 是否適用於特定版本，請前往 [Windows 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)。
 

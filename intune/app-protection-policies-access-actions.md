@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063025"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061549"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的條件式啟動動作來選擇性地抹除資料
 
@@ -44,7 +44,7 @@ ms.locfileid: "70063025"
 8. 選取使用者不符合您的需求時要採取的 [動作]  。 在某些情況下，您可以針對單一設定指定多個動作。 如需詳細資料，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
 
 >[!NOTE]
-> 若要使用 [裝置型號] 或 [裝置製造商]  設定，請輸入以分號分隔的型號識別碼清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 
+> 若要使用 [裝置型號] 或 [裝置製造商]  設定，請輸入以分號分隔的裝置型號識別碼 (iOS) 或裝置製造商 (Android) 清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 
 
 ## <a name="policy-settings"></a>原則設定 
 

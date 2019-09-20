@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427285"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071394"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
@@ -39,7 +39,7 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
 - 裝置如果具有 Apple VPP 裝置授權，即可以安裝 VPP 應用程式。
 - 裝置已針對條件式存取封鎖，但 indows 10 1803+ 除外
 - 使用 DEM 帳戶註冊的每部裝置都必須獲得正確授權，才能由 Intune 進行管理。 授權可能是 Intune 使用者授權或 Intune 裝置授權。
-
+- 若要使用 DEM 帳戶[註冊 Android Enterprise 工作設定檔裝置](android-work-profile-enroll.md)，每個帳戶只能註冊 10 部裝置。
 
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員

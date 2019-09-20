@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374967"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061569"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 
@@ -181,7 +181,7 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
 - 請檢閱記錄中是否存在任何錯誤。 請參閱 [Intune 管理延伸模組記錄](#intune-management-extension-logs) (在本文中)。
 - 針對可能的權限問題，請確保 PowerShell 指令碼的屬性設定為 `Run this script using the logged on credentials`。 也請檢查已登入的使用者是否具有執行指令碼的適當權限。
 
-- 若要找出指令碼問題，請執行下列步驟：
+- 若要找出指令碼的問題，您可以：
 
   - 檢閱您裝置上的 PowerShell 執行設定。 請參閱 [PowerShell execution policy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) (PowerShell 執行原則) 以獲得指導。
   - 使用 Intune 管理延伸模組執行範例指令碼。 例如，建立 `C:\Scripts` 目錄，並為每個人提供完全控制。 執行下列指令碼：
@@ -194,7 +194,31 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
 
   - 若要在沒有 Intune 的情況下測試指令碼執行，請於本機使用 [psexec 工具](https://docs.microsoft.com/sysinternals/downloads/psexec)在系統帳戶中執行指令碼：
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - 如果指令碼報告它已成功，但實際上並未成功，則可能是您的防毒軟體服務可能將 AgentExecutor 設為在沙箱中執行。 下列指令碼一律會報告 Intune 中的失敗。 作為測試，您可以使用此指令碼：
+  
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+
+    如果指令碼報告成功，請查看 `AgentExecutor.log` 以確認錯誤輸出。 如果指令碼執行，則長度應 >2。
+
+  - 若要擷取 .error 和 .output 檔，下列程式碼片段會透過 AgentExecutor 執行指令碼到 PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`)。 它會保留記錄以供您檢閱。 請記住，在指令碼執行之後，Intune 管理延伸模組會清除記錄：
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>後續步驟
 

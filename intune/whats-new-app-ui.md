@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354546"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061705"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -33,6 +33,23 @@ ms.locfileid: "68354546"
 如果您是員工或學生，請務必查看公司入口網站說明文件的螢幕擷取畫面和連結。 如需如何使用公司入口網站應用程式的詳細資訊，請參閱[公司入口網站使用者說明文件](https://docs.microsoft.com/intune-user-help/)。  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+
+## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日當週
+
+### <a name="updates-to-microsoft-intune-app----4997846---"></a>Microsoft Intune 應用程式的更新 <!-- 4997846 -->
+適用於 Android 的 Microsoft Intune 應用程式已更新，並具有下列改善：
+- 已更新並改善版面配置以納入最重要動作的下方導覽。
+- 已新增顯示使用者設定檔的額外頁面。
+- 已在應用程式中為使用者新增可採取動作的通知顯示，例如需要更新其裝置設定。
+- 已新增自訂推播通知的顯示，並將應用程式與適用於 iOS 和 Android 之公司入口網站應用程式中最近新增的支援一致。 如需詳細資訊，請參閱[在 Intune 中傳送自訂通知](custom-notifications.md)。
+
+    使用者設定檔範例：<br>
+    <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
+
+    通知和底部導覽範例：<br>
+    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
+
 
 ## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日當週  
 
@@ -161,7 +178,7 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日當週
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!-- 1412866 -->
-我們已經發行 iOS 版 公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
+我們已經發行 iOS 版公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
 
 此外還包括：
 - iPhone X 的支援。
@@ -411,7 +428,7 @@ __從另一部裝置登入時的新登入體驗__
 
 透過點選 [動作]  功能表，裝置仍可註冊以接受完整管理。
 
-![Android 公司入口網站應用程式的影像 ，其中顯示畫面右上角的功能表含有仍可註冊裝置的選項。](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
+![Android 公司入口網站應用程式的影像，其中顯示畫面右上角的功能表含有仍可註冊裝置的選項。](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>透過 Windows 10 Creators Update 改善應用程式同步處理 <!--676505-->
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842153"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061670"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -54,6 +54,21 @@ ms.locfileid: "70842153"
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>2019 年 9 月 16 日當週
+
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Web 應用程式的 macOS 支援 <!-- 3174427 -->
+Web 應用程式 (可讓您新增 Web URL 的捷徑) 可以使用 macOS 公司入口網站安裝到 Dock。 使用者可以在 macOS 公司入口網站中，從 Web 應用程式的 [應用程式詳細資料] 頁面存取 [安裝]  動作。 如需 **Web 連結**應用程式類型的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](apps-add.md)，以及[將 Web 應用程式新增至 Microsoft Intune](web-app.md)。
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP 應用程式的 macOS 支援 <!-- 3173501  -->
+使用 Apple Business Manager 購買的 macOS 應用程式，會在 Intune 中的 Apple VPP 權杖同步處理時顯示在主控台中。 您可以使用 Intune 主控台為群組指派、撤銷和重新指派裝置和使用者型授權。 Microsoft Intune 可協助您管理已購買供公司使用的 VPP 應用程式，方法是：
+- 從應用程式市集報告授權資訊。
+- 追蹤您已經使用多少個授權。
+- 協助您不要安裝超過擁有數目的應用程式複本。
+
+如需有關 Intune 與 VPP 的詳細資訊，請參閱[使用 Microsoft Intune 管理大量採購的應用程式與書籍](vpp-apps.md)。
+
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日當週
 
 ### <a name="app-management"></a>應用程式管理
@@ -64,6 +79,10 @@ ms.locfileid: "70842153"
 - 已新增顯示使用者設定檔的額外頁面。
 - 已在應用程式中為使用者新增可採取動作的通知顯示，例如需要更新其裝置設定。
 - 已新增自訂推播通知的顯示，並將應用程式與適用於 iOS 和 Android 之公司入口網站應用程式中最近新增的支援一致。 如需詳細資訊，請參閱[在 Intune 中傳送自訂通知](custom-notifications.md)。
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>針對 iOS 裝置，請自訂公司入口網站的 [註冊程序隱私權] 畫面 <!-- 4394993 -->
+使用 Markdown，您可以自訂使用者在 iOS 註冊期間看到的公司入口網站隱私權畫面。 具體來說，您可以自訂組織無法在裝置上查看或執行的操作清單。 如需詳細資訊，請參閱[如何設定 Intune 公司入口網站應用程式](company-portal-app.md#privacy-statement-customization)。
+
 
 ## <a name="week-of-september-2-2019"></a>2019 年 9 月 2 日當週
 
@@ -228,7 +247,7 @@ Android 裝置系統管理員註冊選項已新增至 Android 註冊頁面 ([Int
 如需 [設定輔助程式] 的詳細資訊，請參閱[建立適用於 iOS 的 Apple 註冊設定檔](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)與[建立適用於 macOS 的 Apple 註冊設定檔](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)。
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>將使用者欄新增至 Autopilot 裝置 CSV 上傳程序 <!-- 3823054 -->
-您現在可以將使用者欄新增至 Autopilot 裝置的 CSV 上傳。 這可讓您在匯入 CSV 時大量指派使用者。 CSV 中的列新格式看起來像這樣：serial-number、windows-product-id、hardware-hash、optional-group-tag、optional-assigned-user。 如需詳細資訊，請參閱[使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](enrollment-autopilot.md)。
+您現在可以將使用者欄新增至 Autopilot 裝置的 CSV 上傳。 這可讓您在匯入 CSV 時大量指派使用者。 如需詳細資訊，請參閱[使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](enrollment-autopilot.md)。
 
 
 ### <a name="device-management"></a>裝置管理
@@ -593,7 +612,7 @@ Windows 公司入口網站應用程式將新增標籤為 [裝置]  的頁面。 
 
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - 用於 Android 企業完全受控案例。
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - 協助您登入您的帳戶 (若您使用雙重要素驗證)。
-- **[Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用於 應用程式保護原則 (APP) 與 Android 企業公司設定檔案例。
+- **[Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用於應用程式保護原則 (APP) 與 Android 企業公司設定檔案例。
 - [受控家用案例](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
 
 之前，IT 系統管理員需要在安裝期間於[受控 Google Play 商店](https://play.google.com/store/apps)中手動尋找及核准這些應用程式。 此變更移除了先前那些手動步驟，讓客戶可以更輕鬆、更快速地使用 Android 企業管理。

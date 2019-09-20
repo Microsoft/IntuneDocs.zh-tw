@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160530"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061600"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
 應用程式設定原則可讓您在終端使用者執行應用程式之前，將組態設定指派給已指派給終端使用者的原則來去除應用程式設定問題。 在終端使用者裝置上設定應用程式時，這些設定會自動提供，使用者不需要採取動作。 每個應用程式的組態設定均為唯一。 
 
-您可以建立及使用應用程式設定原則，以提供 iOS 或 Android 應用程式的組態設定。 這些組態設定允許使用[業界標準方法](https://www.appconfig.org/)的應用程式設定及管理方式來自訂應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是應用程式第一次執行時)，便會使用這些設定。 
+您可以建立及使用應用程式設定原則，以提供 iOS 或 Android 應用程式的組態設定。 這些組態設定允許使用應用程式設定及管理來自訂應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是應用程式第一次執行時)，便會使用這些設定。 
 
 例如，應用程式組態設定可能需要您指定下列任何詳細資料：
 
@@ -48,7 +48,7 @@ ms.locfileid: "70160530"
 >
 > 使用受控裝置作為 Android 裝置的註冊類型時，您只會看到來自[受控 Google Play 商店](https://play.google.com/work) (而不是 [Google Play 商店](https://play.google.com/store/apps)) 的應用程式。 受控 Google Play 商店 (也稱為 Android for Work (AfW)) 和 Android Enterprise 是工作設定檔中的應用程式，其中包含支援應用程式設定的應用程式版本。
 
-您可以使用[包含與排除指派的組合](apps-inc-exl-assignments.md)，將應用程式設定原則指派給一群終端使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的終端使用者[群組](groups-add.md)。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]、[所有裝置] 和 [所有使用者及所有裝置]。
+您可以使用[包含與排除指派的組合](apps-inc-exl-assignments.md)，將應用程式設定原則指派給一群終端使用者和裝置。 新增應用程式設定原則後，就可以設定指派應用程式設定原則。 當您設定原則指派時，您可以選擇包含與排除要套用原則的終端使用者[群組](groups-add.md)。 當您選擇要包含一或多個群組時，您可以選擇選取要包含特定群組或選取內建群組。 內建群組包括 [所有使用者]  、[所有裝置]  和 [所有使用者及所有裝置]  。
 
 您有兩個選項來使用 Intune 的應用程式設定原則：
 - **受控裝置** - Intune 以行動裝置管理 (MDM) 提供者身分管理裝置。 應用程式必須設計為支援應用程式設定。
@@ -60,12 +60,12 @@ ms.locfileid: "70160530"
 ## <a name="apps-that-support-app-configuration"></a>支援應用程式設定的應用程式
 
 ### <a name="managed-devices"></a>受管理的裝置
-您可以針對支援應用程式設定的應用程式，使用應用程式設定原則。 若要在 Intune 中支援應用程式設定，則應用程式的編寫方式，必須支援使用由 [Appconfig Community](https://www.appconfig.org/members) 所定義的應用程式設定。 如需詳細資料，請洽詢您的應用程式廠商。
+您可以針對支援應用程式設定的應用程式，使用應用程式設定原則。 若要在 Intune 中支援應用程式設定，則應用程式的編寫方式，必須支援使用由 OS 所定義的應用程式設定。 請諮詢您的應用程式廠商，以取得他們所支援的應用程式設定金鑰的詳細資料。
 
 ### <a name="managed-apps"></a>受管理的應用程式
 將 [Intune App SDK](app-sdk.md) 併入應用程式，或在使用 [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md) 開發應用程式之後包裝應用程式，就可以準備好企業營運應用程式。 Intune App SDK 會盡力將應用程式開發人員所需的程式碼變更數量減到最少。 如需詳細資訊，請參閱 [Intune App SDK 概觀](app-sdk.md)。 如需 Intune App SDK 與 Intune 應用程式包裝工具之間的比較，請參閱[準備應用程式保護原則的企業營運應用程式](apps-prepare-mobile-application-management.md#feature-comparison)。
 
-選取 [受控應用程式] 作為 [裝置註冊類型] 具體上是指未在裝置管理中註冊之裝置上由 Intune 設定原則所設定的應用程式，而**受控裝置**適用於透過 MDM 通道部署的應用程式，因此由 Intune 管理。 請根據這些描述來選取適當的選擇。 
+選取 [受控應用程式]  作為 [裝置註冊類型]  具體上是指未在裝置管理中註冊之裝置上由 Intune 設定原則所設定的應用程式，而**受控裝置**適用於透過 MDM 通道部署的應用程式，因此由 Intune 管理。 請根據這些描述來選取適當的選擇。 
 
 ![裝置註冊類型](./media/app-configuration-policy-overview/device-enrollment-type.png)
 
@@ -78,13 +78,13 @@ ms.locfileid: "70160530"
 
    1. 在裝置上可見。 目標應用程式是否展現出應用程式設定原則中所套用的行為？
    2. 透過診斷記錄 (請參閱下面的＜診斷記錄＞一節)。
-   3. 在 Intune 入口網站中。 原則的 [監視] 區段可以提供相關的狀態：
+   3. 在 Intune 入口網站中。 原則的 [監視]  區段可以提供相關的狀態：
 
       ![裝置安裝狀態的第一個螢幕擷取畫面](./media/app-configuration-policy-overview/device-install-status-1.png)
 
       ![裝置安裝狀態的第二個螢幕擷取畫面](./media/app-configuration-policy-overview/device-install-status-2.png)
 
-      此外，在畫面左側的 [Intune] -> [裝置] -> [所有裝置] 下方，[應用程式設定] 選項會顯示所有指派的原則及其狀態：
+      此外，在畫面左側的 [Intune]   -> [裝置]   -> [所有裝置]  下方，[應用程式設定]  選項會顯示所有指派的原則及其狀態：
 
       ![應用程式設定的螢幕擷取畫面](./media/app-configuration-policy-overview/app-configuration.png)
 

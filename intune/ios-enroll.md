@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738283"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079953"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
@@ -39,7 +39,7 @@ Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者存取�
 
 ## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
 
-您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 Intune 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。
+您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 Intune 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。 您可以在 iOS 裝置上自訂公司入口網站隱私權聲明，如[隱私權聲明自訂](company-portal-app.md#privacy-statement-customization)中所述。
 
 ## <a name="company-owned-ios-devices"></a>公司擁有的 iOS 裝置
 針對為使用者購買裝置的組織來說，Intune 可支援下列 iOS 公司擁有裝置的註冊方法：

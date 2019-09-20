@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861842"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071138"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
@@ -106,14 +106,14 @@ ms.locfileid: "68861842"
 
 適用於 Active Directory 的 Intune 連接器必須安裝在執行 Windows Server 2016 或更新版本的電腦上。 該電腦也必須能夠存取網際網路和您的 Active Directory。 若要增加規模和可用性，或支援多個 Active Directory 網域，您可以在您的環境中安裝多個連接器。 建議在未執行任何其他 Intune 連接器的伺服器上安裝連接器。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]   > [新增連接器]  。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器]   > [新增]  。 
 2. 遵循指示下載連接器。
 3. 開啟下載的連接器安裝程式檔案 *ODJConnectorBootstrapper.exe* 以安裝連接器。
 4. 在安裝結束時，選取 [設定]  。
 5. 選取 [登入]  。
 6. 輸入使用者全域管理員或 Intune 系統管理員角色的認證。  
    使用者帳戶必須具有已指派的 Intune 授權。
-7. 移至 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器 (預覽)]  ，然後確認連接狀態為 [使用中]  。
+7. 移至 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器]  ，然後確認連接狀態為 [使用中]  。
 
 > [!NOTE]
 > 當您在連接器中登入之後，它可能需要數分鐘的時間才會顯示在 [Intune](https://aka.ms/intuneportal) 中。 只有在順利與 Intune 服務通訊時才會顯示。
@@ -183,14 +183,17 @@ ms.locfileid: "68861842"
 Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
-1. 鍵入**名稱**和選擇性**描述**。
-1. 針對 [部署模式]  ，選取 [使用者驅動]  。
-1. 在 [聯結 Azure AD 為]  方塊中，選取 [混合式 Azure AD 聯結 (預覽)]  。
-1. 選取 [全新體驗 (OOBE)]  視需要設定選項，然後選取 [儲存]  。
-1. 選取 [建立]  以建立設定檔。 
-1. 在設定檔窗格中，選取 [指派]  。
-1. 選取 [選取群組]  。
-1. 在 [選取群組]  窗格中選取裝置群組，然後按一下 [選取]  。
+2. 在 [基本]  頁面上，輸入**名稱**和選擇性的**描述**。
+3. 若您想指派群組中所有的裝置自動轉換至 Autopilot，請將 [將所有目標裝置轉換至 Autopilot]  設為 [是]  。 指派群組中所有非 Autopilot 裝置都會向 Autopilot 部署服務註冊。 等候 48 小時讓註冊處理完畢。 當裝置取消註冊並重設時，Autopilot 將會自動註冊它。 在裝置使用此方式註冊完畢後，停用此選項或是移除設定檔指派也不會從 Autopilot 部署服務移除裝置。 您必須改為[直接移除裝置](enrollment-autopilot.md#delete-autopilot-devices)。
+4. 選取 [下一步]  。
+5. 在 [首次體驗 (OOBE)]  頁面上，針對 [部署模式]  選取 [使用者驅動]  。
+6. 在 [加入 Azure AD 成為]  方塊中，選取 [已加入混合式 Azure AD]  。
+7. 視需要在 [首次體驗 (OOBE)]  頁面上設定其餘選項。
+8. 選取 [下一步]  。
+9. 在 [範圍標籤]  頁面上，選取此設定檔的[範圍標籤](scope-tags.md)。
+10. 選取 [下一步]  。
+11. 在 [指派]  頁面上，選取 [選取要納入的群組]  > 搜尋並選取裝置群組 > [選取]  。
+12. 選取 [下一步]   > [建立]  。
 
 大約需要 15 分鐘才能從 [未指派]  變更為 [指派中]  ，最後變更為 [已指派]  。
 
