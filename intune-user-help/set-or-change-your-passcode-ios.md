@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,32 +16,33 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849001"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163288"
 ---
 # <a name="set-or-change-your-passcode"></a>設定或變更密碼
 
-如果您的 iOS 裝置不符合公司支援人員密碼原則，則會出現訊息，簡要說明問題，並說明您需要如何讓您的密碼符合需求。
+建立新的密碼，或變更現有密碼以符合您組織的需求。 密碼可防止未經授權的人員解除鎖定和使用您的裝置。 
 
-公司支援人員可以設定多個密碼需求。 例如，密碼可能必須包含特定數目的字元，也可能必須混合使用數字、字母和字元。 因為可能設定多個需求，所以這些指示可以僅解釋如何設定或變更密碼。 它們不會解釋每一種可能的需求組合。 舉例來說，這些密碼會用於從鎖定畫面存取您的裝置。
+您的組織可以設定多個密碼需求。 如需常見的密碼需求清單，請參閱已[註冊裝置的裝置密碼需求](password-does-not-meet-it-administrator-requirements.md)。  
 
-如果您無法設定符合密碼需求的密碼，請連絡公司支援人員，以取得協助。
+如果您在建立或變更密碼時遇到問題，請洽詢您的 IT 支援人員。  
+
 
 ## <a name="set-your-passcode"></a>設定密碼
 
-1. 點選 [設定][Touch ID & Passcode]\(Touch ID 和密碼) > 。
-2. 在 [Touch ID & Passcode]\(Touch ID 和密碼) 功能表上，點選 [Turn Passcode On]\(開啟密碼)。
+1. 點選 [設定]  [Touch ID & Passcode]\(Touch ID 和密碼) >   。
+2. 在 [Touch ID & Passcode]\(Touch ID 和密碼)  功能表上，點選 [Turn Passcode On]\(開啟密碼)  。
 3. 輸入符合公司支援人員需求的新密碼，然後輸入一次予以確認。
 
 ## <a name="change-your-passcode"></a>變更密碼
 
-1. 點選 [設定][Touch ID & Passcode]\(Touch ID 和密碼) > 。
-2. 輸入密碼。 [Touch ID & Passcode]\(Touch ID 和密碼) 功能表隨即開啟。
-2. 點選 [變更密碼]，然後輸入舊密碼。
+1. 點選 [設定]  [Touch ID & Passcode]\(Touch ID 和密碼) >   。
+2. 輸入密碼。 [Touch ID & Passcode]\(Touch ID 和密碼)  功能表隨即開啟。
+2. 點選 [變更密碼]  ，然後輸入舊密碼。
 3. 輸入符合公司支援人員需求的新密碼，然後輸入一次予以確認。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

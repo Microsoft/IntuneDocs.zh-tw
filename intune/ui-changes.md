@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046333"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166997"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>我的 Intune 功能移到 Azure 中的哪個位置？
 當我們將 Intune 移到 Azure 入口網站時，我們藉此機會以更邏輯的方式來組織一些工作。 但每項改進都需要您學習新的組織。 此參考指南適用於已經十分熟悉傳統入口網站中 Intune，但是想知道 Azure 入口網站中 Intune 操作步驟的使用者。 如果本文未涵蓋您嘗試尋找的功能，請在本文結尾留下意見，以便我們可以進行更新。
@@ -77,7 +77,7 @@ Azure 入口網站中的 Intune 使用 [Azure Active Directory (AD)](https://doc
 ## <a name="where-did-my-compliance-policies-go"></a>我的合規性原則移到哪個位置？
 當您的租用戶移轉至 Azure 入口網站之後，租用戶的合規性原則會繼續強制執行。 不過，您無法從 Azure 入口網站的 Intune 進行檢視或修改。
 
-如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](https://docs.microsoft.com/intune/device-compliance-get-started)。 
+如果您想要從 Azure 入口網站檢視合規性原則並進行變更，您需要從傳統入口網站移除舊原則。 然後在 Azure 入口網站中重新建立這些原則。 如需裝置合規性原則的詳細資訊，請參閱[開始使用 Intune 中的裝置合規性原則](device-compliance-get-started.md)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 在哪裡？
 在傳統入口網站中，您可以設定 Intune 與 Apple 裝置註冊計劃的整合，並手動要求與 Apple 服務同步處理：

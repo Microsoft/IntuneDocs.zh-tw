@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847755"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166788"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中註冊組織提供的 iOS 裝置
 
@@ -34,26 +34,27 @@ ms.locfileid: "55847755"
 若要開始設定，請開啟裝置電源，並使用公司或學校認證登入。 本文的其餘部分描述您在逐步執行設定助理時將看到的步驟和畫面。 
 
 ## <a name="what-is-apple-dep"></a>什麼是 Apple DEP？
-您的組織可能已透過稱為「Apple 裝置註冊計劃」(DEP) 的某項服務來購買其裝置。 Apple DEP 可讓組織購買大量 iOS 或 macOS 裝置。 接著，組織可以在其慣用的行動裝置管理提供者 (例如 Intune) 內設定和管理這些裝置。 如果您是系統管理員，而且想要取得 Apple DEP 的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)。  
 
-## <a name="set-up-your-ios-device"></a>設定您的 iOS 裝置  
+您的組織可能已透過稱為「Apple 裝置註冊計劃」  (DEP) 的某項服務來購買其裝置。 Apple DEP 可讓組織購買大量 iOS 或 macOS 裝置。 接著，組織可以在其慣用的行動裝置管理提供者 (例如 Intune) 內設定和管理這些裝置。 如果您是系統管理員，而且想要取得 Apple DEP 的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md)。  
+
+## <a name="set-up-your-ios-device"></a>設定您的 iOS 裝置
+
 如果您要使用自己的 iOS 裝置，而不是組織提供的裝置，請遵循[個人和自備裝置](enroll-your-device-in-intune-ios.md)的步驟。  
 
-1. 開啟 iOS 裝置。 
-2. 選取 [語言] 後，將裝置連上 Wi-Fi。
-3. 在 [Set up iOS device] (設定 iOS 裝置) 畫面上，選擇您是否想要： 
- 
+1. 開啟 iOS 裝置。
+2. 選取 [語言]  後，將裝置連上 Wi-Fi。
+3. 在 [Set up iOS device] (設定 iOS 裝置)  畫面上，選擇您是否想要：
    - **設定為新的裝置**
    - **從 iCloud 備份還原**
    - **從 iTunes 備份還原**
 
-4. 連接到 Wi-Fi 後，即會出現 [設定] 畫面。 它會顯示：**[您的公司] 將會自動設定裝置。**
+4. 連接到 Wi-Fi 後，即會出現 [設定]  畫面。 它會顯示： **[您的公司] 將會自動設定裝置。**
 
    **設定可讓 [您的公司] 無線管理此裝置。系統管理員可協助您設定電子郵件和網路帳戶、安裝和設定應用程式，以及遠端管理設定。系統管理員可以停用功能、安裝和移除應用程式、監視和限制您的網際網路流量，以及從遠端清除此裝置。**
  
    **設定提供者：[您的公司] 的 iOS 小組 [位址]**
 
-5. 使用 Apple 識別碼登入。 登入可讓您安裝公司入口網站應用程式，並安裝管理設定檔，讓您的公司將其資源 (如電子郵件和應用程式) 的存取權授與您。 
+5. 使用 Apple 識別碼登入。 登入可讓您安裝公司入口網站應用程式，並安裝管理設定檔，讓您的公司將其資源 (如電子郵件和應用程式) 的存取權授與您。
 6. 同意**條款和條件**並決定是否將診斷資訊傳送至 Apple。
 7. 完成註冊後，裝置可能會提示您執行更多動作。 其中一些步驟可能會輸入您的密碼來進行電子郵件存取，或設定密碼。
 

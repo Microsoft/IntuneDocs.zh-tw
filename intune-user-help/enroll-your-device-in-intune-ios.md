@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/24/2019
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,21 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402811"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099857"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>設定 iOS 裝置對公司資源的存取  
 
 使用 Intune 公司入口網站應用程式註冊您的 iOS 裝置，以安全地存取您組織的電子郵件、檔案和應用程式。
 
 您的裝置註冊之後，它就變成「受控」  。 您的組織可以透過 Intune 等行動裝置管理 (MDM) 提供者將原則和應用程式指派給裝置。  
+
+> [!NOTE]
+> 基於任何原因，我們不會將我們的服務所收集的任何資料銷售給任何協力廠商。  
 
 若要維護從您的裝置存取公司或學校資訊，您需要設定裝置以符合組織的偏好設定。 本文描述如何使用公司入口網站來註冊裝置及維護組織的設定需求。  
 </br>

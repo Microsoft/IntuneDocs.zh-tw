@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713242"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167177"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Microsoft Intune App SDK for Android 開發人員測試指南
 
@@ -30,20 +30,20 @@ Microsoft Intune App SDK for Android 測試指南旨在協助您測試 Intune �
 ## <a name="prerequisite-test-accounts"></a>必要的測試帳戶
 不論是否使用預先產生的資料，都可以建立新帳戶。 建立新帳戶：
 1. 巡覽至 [Microsoft 示範](https://demos.microsoft.com/environments/create/tenant)網站。 
-2. [設定 Intune](https://docs.microsoft.com/intune/setup-steps) 以啟用行動裝置管理 (MDM)。
-3. [建立使用者](https://docs.microsoft.com/intune/users-add)。
-4. [建立群組](https://docs.microsoft.com/intune/groups-add)。
-5. 根據測試需要[指派授權](https://docs.microsoft.com/intune/licenses-assign)。
+2. [設定 Intune](setup-steps.md) 以啟用行動裝置管理 (MDM)。
+3. [建立使用者](users-add.md)。
+4. [建立群組](groups-add.md)。
+5. 根據測試需要[指派授權](licenses-assign.md)。
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure 入口網站原則設定
-在 [Azure 入口網站的 Intune 刀鋒視窗](https://docs.microsoft.com/intune/app-protection-policies)中[建立及指派應用程式保護原則](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)。 您的[應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-overview)也可以在 Intune 刀鋒視窗中建立及指派。
+在 [Azure 入口網站的 Intune 刀鋒視窗](app-protection-policies.md)中[建立及指派應用程式保護原則](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)。 您的[應用程式設定原則](app-configuration-policies-overview.md)也可以在 Intune 刀鋒視窗中建立及指派。
 
 > [!NOTE]
 > 如果您的應用程式未列於 Azure 入口網站中，您可以在文字方塊中選取 [更多應用程式]  選項並提供套件名稱，透過原則來定位該應用程式。
 
 > [!IMPORTANT]
-> 若要套用應用程式設定原則，[Intune 應用程式保護原則](https://docs.microsoft.com/intune/app-protection-policy)必須設定要註冊的目標使用者。
+> 若要套用應用程式設定原則，[Intune 應用程式保護原則](app-protection-policy.md)必須設定要註冊的目標使用者。
 
 ## <a name="test-cases"></a>測試案例
 
@@ -103,7 +103,7 @@ Microsoft Intune App SDK for Android 測試指南旨在協助您測試 Intune �
 ### <a name="unenrollment"></a>取消註冊
 您可以從遠端抹除受控應用程式，使其不再包含公司電子郵件和文件，並在個人資料不再如以下方式管理時將其解密：
 
-1. 從 Azure 入口網站[發出抹除](https://docs.microsoft.com/intune/apps-selective-wipe)。
+1. 從 Azure 入口網站[發出抹除](apps-selective-wipe.md)。
 2. 如果您的應用程式沒有註冊任何抹除處理常式，請確認下列條件：
     - 可完整抹除應用程式。
 3. 如果您的應用程式已註冊 `WIPE_USER_DATA` 或 `WIPE_USER_AUXILARY_DATA`，請確認下列條件：
@@ -123,7 +123,7 @@ Microsoft Intune App SDK for Android 測試指南旨在協助您測試 Intune �
 ### <a name="app-configuration-optional"></a>應用程式設定 (選用)
 您可以設定受控應用程式的行為，如下所示：
 
-1. 如果您的應用程式會取用任何應用程式組態設定，您應該測試應用程式是否可正確處理您 (系統管理員) 能夠設定的所有值。 [應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-overview)可以使用 Intune 來建立及指派。
+1. 如果您的應用程式會取用任何應用程式組態設定，您應該測試應用程式是否可正確處理您 (系統管理員) 能夠設定的所有值。 [應用程式設定原則](app-configuration-policies-overview.md)可以使用 Intune 來建立及指派。
 
 ## <a name="next-steps"></a>後續步驟
 

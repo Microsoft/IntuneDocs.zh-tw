@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545737"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099853"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
 
@@ -46,7 +46,7 @@ ms.locfileid: "67545737"
 若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)  
 
 ## <a name="get-your-device-managed"></a>讓您的裝置成為受控  
-請使用下列步驟以註冊執行 OS X El Capitan 10.11 和更新版本的 macOS 裝置。   
+使用下列步驟來註冊執行 macOS 10.12 和更新版本的 macOS 裝置。   
 
 
 1. 若要存取公司入口網站，請在 __Safari__ 中開啟新視窗，然後前往 https://portal.manage.microsoft.com 。  

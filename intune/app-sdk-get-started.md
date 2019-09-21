@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaeb5efa2b23a7fad4761878b25118786609447
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 4b24387636408d2e28891aae13962c2febf9f329
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842124"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167201"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -161,7 +161,7 @@ Intune|iOS|Android|說明|
 
   * 如果您開發的是不會傳送至商店的企業營運應用程式，您應該透過組織來存取 Microsoft Intune。 您也可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中註冊以獲得 1 個月免費試用版。
 
-  * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](https://docs.microsoft.com/intune/licenses-assign))。
+  * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](licenses-assign.md))。
 
 * **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](app-protection-policy-settings-android.md)的描述。 如果您的應用程式已整合 Intune SDK，但尚未在 Azure 入口網站中列示為已設定目標的應用程式，您可以透過選取 [+ 更多應用程式] 選項，並在文字方塊中提供套件組合識別碼 (iOS) 或套件名稱 (Android)，以使用原則將它設定為目標。
 

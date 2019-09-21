@@ -18,25 +18,26 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843488"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099827"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>搭配使用 iOS 裝置與 Intune 公司入口網站
 本文列出 iOS 版公司入口網站特有的工作和資訊。 請利用它來協助您針對 iOS 裝置進行疑難排解和管理。 按一下任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。
 
 ## <a name="supported-versions"></a>支援的版本
 
-iOS 版公司入口網站目前支援 iOS 10.0 和更新版本。
+iOS 版公司入口網站目前支援 iOS 10.0 和更新版本。  
+
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>在 Intune 註冊並安裝公司入口網站
 
 - [安裝並登入 Intune 公司入口網站應用程式](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [在 Intune 註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
-- [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [如果您安裝公司入口網站應用程式並在 Intune 註冊您的裝置，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>在 Intune 註冊您的裝置時可執行的工作
 

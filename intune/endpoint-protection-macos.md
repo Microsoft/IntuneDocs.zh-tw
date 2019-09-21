@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158030"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162873"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 macOS Endpoint Protection 設定  
 
@@ -83,7 +83,7 @@ ms.locfileid: "70158030"
 如需 Apple FileVault 設定的詳細資訊, 請參閱 Apple 開發人員內容中的[FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) 。 
 
 > [!IMPORTANT]  
-> 從 macOS 10.15, FileVault 設定需要使用者核准的 MDM 註冊。 
+> 從 macOS 10.15，FileVault 設定需要使用者核准的 MDM 註冊。 
 
 - **FileVault**  
   您可以在執行 macOS 10.13 和更新版本的裝置上, 使用 XTS-AES 128 與 FileVault 來*啟用*完整磁片加密。  
@@ -95,23 +95,16 @@ ms.locfileid: "70158030"
   - **修復金鑰類型**  
     系統會為裝置建立*個人金鑰*修復金鑰。 設定個人金鑰的下列設定。  
 
-    - **個人修復金鑰的位置**-指定簡短的訊息給使用者, 說明他們可以在何處取得其個人修復金鑰。 當您忘記密碼時, 系統會將此文字插入使用者在 [登入] 畫面上看到的訊息。  
+    - **個人修復金鑰的位置**-指定簡短的訊息給使用者，說明他們可以在何處取得其個人修復金鑰。 當您忘記密碼時，系統會將此文字插入使用者在 [登入] 畫面上看到的訊息。  
       
     - **個人修復金鑰輪替**-指定裝置的個人修復金鑰要旋轉的頻率。 您可以選取 [**未設定**] 的預設值, 或 [ **1** ] 到 [ **12** ] 個月的值。  
 
   - **登出時停用提示**  
-    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [停用] 時, 會停用登出的提示, 而使用者在登入時會收到提示。  
+    當使用者登出時, 請避免提示要求他們啟用 FileVault。當設定為 [停用] 時，會停用登出的提示，而使用者在登入時會收到提示。  
     - **未設定**  
     - **停**用-停用登出時的提示。
 
     **預設**：未設定  
-
-     > [!IMPORTANT]  
-     > 這是當您將 [停用登出時的提示]  設定為 [停用]  時的已知問題。 當設為 [停用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [尚未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，但沒有進一步詳細資料。
-     > 
-     > 當 [停用登出時的提示]  設為 [未設定]  時，[允許略過的次數]  可以是 [未設定]  或有某個值。  
-     > 
-     > 在未來的更新中將會解決此問題。 
 
   - **允許略過的次數**  
   設定使用者在需要 FileVault 以讓使用者登入之前, 可以忽略提示以啟用 FileVault 的次數。  
@@ -122,5 +115,5 @@ ms.locfileid: "70158030"
  
     **預設**：未設定  
 
-如需有關使用 Intune FileVault 的詳細資訊, 請參閱[FileVault 修復金鑰](encryption-monitor.md#filevault-recovery-keys)。
+如需有關使用 Intune FileVault 的詳細資訊，請參閱[FileVault 修復金鑰](encryption-monitor.md#filevault-recovery-keys)。
 

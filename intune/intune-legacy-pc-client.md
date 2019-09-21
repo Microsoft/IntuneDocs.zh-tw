@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756519"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166363"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 上的 Intune 主控台及舊版 Intune 電腦用戶端
 
@@ -31,7 +31,7 @@ Intune 使用以 Azure 為基礎的 SaaS 應用程式服務架構。 Azure 在�
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>使用 MDM 管理 Windows 10 裝置
 
-我們建議您改為使用[行動裝置管理 (MDM) 來管理 Windows 10 裝置](https://docs.microsoft.com/intune/device-restrictions-windows-10)，而不是使用舊版 Intune 電腦用戶端。 Azure 入口網站上的 Intune 提供了使用 MDM 管理 Windows 10 的能力。 Windows 10 MDM 提供了許多新的管理和安全性功能，這些功能在舊版 Intune 電腦用戶端中不提供。
+我們建議您改為使用[行動裝置管理 (MDM) 來管理 Windows 10 裝置](device-restrictions-windows-10.md)，而不是使用舊版 Intune 電腦用戶端。 Azure 入口網站上的 Intune 提供了使用 MDM 管理 Windows 10 的能力。 Windows 10 MDM 提供了許多新的管理和安全性功能，這些功能在舊版 Intune 電腦用戶端中不提供。
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>舊版電腦用戶端功能只在 Silverlight 主控台中提供
 
@@ -45,7 +45,7 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 1. 選取檢視。
 2. 在 [篩選]  方塊中，輸入您要據以篩選的群組名稱，然後按 Enter。 這會篩選清單檢視，只顯示該特定群組中的裝置。
 
-   ![篩選下拉式清單輸入, 並選取 [無]](media/intune-legacy-pc-client/image01.png)
+   ![篩選下拉式清單輸入，並選取 [無]](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>繼續使用 Intune 電腦用戶端管理 Windows 7
@@ -54,7 +54,7 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 
 ## <a name="mdm-capabilities"></a>MDM 功能
 
-有關電腦用戶端和 MDM 功能之間的詳細比較，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md)。 MDM 更新將繼續為註冊 MDM 的 Windows 10 裝置帶來新的管理功能，包含評估 Win 32 應用程式的選項。 查看[新增功能](https://docs.microsoft.com/intune/whats-new)，了解服務最新版本的新增功能。
+有關電腦用戶端和 MDM 功能之間的詳細比較，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md)。 MDM 更新將繼續為註冊 MDM 的 Windows 10 裝置帶來新的管理功能，包含評估 Win 32 應用程式的選項。 查看[新增功能](whats-new.md)，了解服務最新版本的新增功能。
 
 ## <a name="switch-from-pc-client-to-mdm"></a>從電腦用戶端切換到 MDM
 
@@ -62,9 +62,7 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 
 1. 在 Silverlight 主控台中，執行 [選擇性抹除]  將裝置從電腦用戶端取消註冊。
   ![已選取 [選擇性抹除裝置] 選項按鈕的警告快顯視窗](media/intune-legacy-pc-client/image02.png)
-2. 使用 [MDM (和/或 Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) 重新註冊該裝置。 
+2. 使用 [MDM (和/或 Azure AD Join)](windows-enroll.md) 重新註冊該裝置。
 
 ## <a name="next-steps"></a>後續步驟
-[註冊 Windows 裝置](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[註冊 Windows 裝置](windows-enroll.md)

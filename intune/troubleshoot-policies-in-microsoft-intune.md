@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298405"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071714"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>針對 Intune 中的原則和設定檔進行疑難排解
 
@@ -30,8 +30,8 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 本文列出一些常見的疑難排解技術，並描述您可能會遇到的一些問題。
 
-## <a name="check-tenant-status"></a>檢查租用戶狀態
-請檢查[租用戶狀態](tenant-status.md)並確認訂用帳戶為使用中狀態。 您也可以檢視作用中事件可能會影響您的原則] 或 [設定檔部署的摘要報告的詳細資料。
+## <a name="check-tenant-status"></a>檢查租使用者狀態
+檢查[租使用者狀態](tenant-status.md)，並確認訂用帳戶為作用中。 您也可以查看可能會影響您的原則或設定檔部署之作用中事件和建議的詳細資料。
 
 ## <a name="use-built-in-troubleshooting"></a>使用內建的疑難排解
 
@@ -118,10 +118,10 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="policy-troubleshooting-resources"></a>原則疑難排解資源
 
-- [疑難排解 iOS 或 Android 的原則沒有套用至裝置](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)（開啟另一個 Microsoft 網站）
-- [針對 Windows 10 的 Intune 原則失敗進行疑難排解](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)（開啟部落格）
-- [疑難排解適用於 Windows 10 的 CSP 自訂設定](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)（開啟另一個 Microsoft 網站）
-- [Windows 10 的群組原則與 Intune MDM 原則](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)（開啟另一個 Microsoft 網站）
+- 針對[未套用至裝置的 iOS 或 Android 原則進行疑難排解](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)（開啟另一個 Microsoft 網站）
+- 針對[Windows 10 Intune 原則失敗進行疑難排解](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)（開啟 blog）
+- [針對適用于 Windows 10 的 CSP 自訂設定進行疑難排解](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)（開啟另一個 Microsoft 網站）
+- [Windows 10 群組原則 Vs INTUNE MDM 原則](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)（開啟另一個 Microsoft 網站）
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>警示：將存取規則儲存到 Exchange 失敗
 
@@ -135,7 +135,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 當您使用 MDM 或 EAS 設定安全性原則之後，Windows Phone 裝置不允許降低這些原則的安全性。 例如，您將 [字元密碼字元數下限]  設定為 8 個，然後嘗試減少為 4 個。 此裝置已套用較嚴格的原則。
 
-當您取消指派的原則 （停止部署） 的 Windows 10 裝置不能移除安全性原則。 您可能需要保留原則指派，然後再將安全性設定變更回預設值。
+當您取消指派原則（停止部署）時，Windows 10 裝置可能不會移除安全性原則。 您可能需要保留指派的原則，然後將安全性設定變更回預設值。
 
 根據裝置平台，如果您想要將原則變更為較不安全的值，您可能需要重設安全性原則。
 

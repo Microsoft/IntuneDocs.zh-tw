@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545858"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099821"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 裝置，會發生什麼情況？
 
@@ -37,7 +37,10 @@ ms.locfileid: "67545858"
 
 - 自動設定您的公司電子郵件帳戶。
 
-當您在 Intune 註冊裝置時，即授權您公司的支援人員可以管理您的裝置來協助保護裝置上的公司資訊。
+> [!NOTE]
+> 基於任何原因，我們不會將我們的服務所收集的任何資料銷售給任何協力廠商。  
+
+當您在 Intune 註冊裝置時，即授權您公司的支援人員可以管理您的裝置來協助保護裝置上的公司資訊。  
 
 註冊裝置之後，您公司的支援人員可以：
 
@@ -64,5 +67,7 @@ ms.locfileid: "67545858"
 - 啟用或停用裝置上的語音漫遊功能。 若允許語音漫遊，可能會產生漫遊費用。
 
 - 當裝置處於漫遊模式時，啟用或停用自動檔案同步處理功能。 若允許自動同步檔案，可能會產生漫遊費用。
+
+
 
 如有任何問題，請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

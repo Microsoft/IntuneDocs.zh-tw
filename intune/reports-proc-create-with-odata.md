@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894293"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167854"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 從 OData 摘要建立 Intune 報表
 
-本文說明如何使用使用者互動式篩選的 Power BI Desktop, 來建立 Intune 資料的樹狀圖視覺效果。 例如, 您的 CFO 可能會想要知道裝置的整體分佈如何在公司擁有的裝置和個人裝置之間進行比較。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
+本文說明如何使用使用者互動式篩選的 Power BI Desktop，來建立 Intune 資料的樹狀圖視覺效果。 例如，您的 CFO 可能會想要知道裝置的整體分佈如何在公司擁有的裝置和個人裝置之間進行比較。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
 
 ## <a name="overview-of-creating-the-chart"></a>建立圖表的概觀
 
@@ -42,7 +42,7 @@ ms.locfileid: "69894293"
 
 您在 Power BI 中使用資料表。 資料表包含資料欄位。 每個資料欄位具有資料類型。 欄位只能包含資料類型的資料。 資料類型為數字、文字、日期等等。 Power BI 中的資料表會在您載入模型時，填入來自您租用戶的最近歷程記錄資料。 雖然特定資料會隨時間改變，但除非更新了基礎資料模型，否則資料表結構不會改變。
 
-您可能會因為使用詞彙「實體」  和「資料表」  而感到混淆。 資料模型可透過 OData (開放式資料通訊協定) 摘要存取。 在 OData 的世界，Power BI 中稱為資料表的容器被稱為「實體」。 這些詞彙都是指保存您資料的相同東西。 如需 OData 的詳細資訊, 請參閱[Odata 總覽](/odata/overview)。
+您可能會因為使用詞彙「實體」  和「資料表」  而感到混淆。 資料模型可透過 OData （開放式資料通訊協定）摘要存取。 在 OData 的世界，Power BI 中稱為資料表的容器被稱為「實體」。 這些詞彙都是指保存您資料的相同東西。 如需 OData 的詳細資訊，請參閱[Odata 總覽](/odata/overview)。
 
 ## <a name="install-power-bi-desktop"></a>安裝 Power BI Desktop
 
@@ -57,7 +57,7 @@ ms.locfileid: "69894293"
 2. 選取 [Microsoft Intune - 概觀]  刀鋒視窗右側 [其他工作]  下方的 [資料倉儲] 連結，以開啟 [Intune 資料倉儲]  窗格。
 3. 複製自訂摘要 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. 開啟 Power BI Desktop。
-5. 從功能表列中,   > 選取 [檔案] [**取得資料** > ] [**Odata**摘要]。
+5. 從功能表列中，**選取** > [檔案] [**取得資料** > ] [**Odata**摘要]。
 6. 將您從先前步驟複製的自訂摘要 URL 貼入 [ **OData**摘要] 視窗的 [URL] 方塊中。
 7. 選取 [基本]  。
 
@@ -87,15 +87,15 @@ ms.locfileid: "69894293"
 
 ## <a name="create-a-treemap-visualization"></a>建立矩形式樹狀結構圖視覺效果
 
-將階層式資料顯示為方塊中方塊的矩形式樹狀結構圖。 階層的每個分支都是一個方塊，包含顯示子分支的較小方塊。 您可以使用 Power BI desktop 來建立 Intune 租使用者資料的樹狀圖, 以顯示裝置製造商類型的相對數量。
+將階層式資料顯示為方塊中方塊的矩形式樹狀結構圖。 階層的每個分支都是一個方塊，包含顯示子分支的較小方塊。 您可以使用 Power BI desktop 來建立 Intune 租使用者資料的樹狀圖，以顯示裝置製造商類型的相對數量。
 
 ![Power BI 矩形式樹狀結構圖視覺效果](media/reports-create-03-treemap.png)
 
-1. 在 [**視覺效果**] 窗格中, 尋找並選取 [**樹狀圖**]。 **樹狀圖**圖表將會加入至報表畫布。
-2. 在 [**欄位**] 窗格中, `devices`尋找資料表。
-3. 展開資料表, 然後選取 [ `manufacturer`資料] 欄位。 `devices`
-4. 將資料欄位拖曳到報表畫布上, 並將它放在樹狀圖圖上。  `manufacturer`
-5.  `devices` `deviceKey`將資料表中的資料欄位拖曳至 [**視覺效果**] 窗格, 並將它放在標示 [**在此處新增資料欄位**] 方塊中的 [值] 區段底下。  
+1. 在 [**視覺效果**] 窗格中，尋找並選取 [**樹狀圖**]。 **樹狀圖**圖表將會加入至報表畫布。
+2. 在 [**欄位**] 窗格中， `devices`尋找資料表。
+3. 展開資料表，然後選取 [ `manufacturer`資料] 欄位。 `devices`
+4. 將資料欄位拖曳到報表畫布上，並將它放在樹狀圖圖上。  `manufacturer`
+5.  `devices` `deviceKey`將資料表中的資料欄位拖曳至 [**視覺效果**] 窗格，並將它放在標示 [**在此處新增資料欄位**] 方塊中的 [值] 區段底下。  
 
 您現在已有視覺效果，其可顯示您組織中的裝置製造商分佈。
 
@@ -106,20 +106,20 @@ ms.locfileid: "69894293"
 您可以將篩選新增到矩形式樹狀結構圖，以便可以使用您的應用程式回答其他問題。
 
 1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果]  底下的**交叉分析篩選器圖示** (![具有資料模型和所支援關聯性的矩形式樹狀結構圖](media/reports-create-slicer.png))。 空白的交叉分析篩選**器**視覺效果將會出現在畫布上。
-2. 在 [**欄位**] 窗格中, `ownerTypes`尋找資料表。
-3. 展開資料表, 然後選取 [ `ownerTypeName`資料] 欄位。 `ownerTypes`
-4.  `ownerTypes` `onwerTypeName`將資料表中的資料欄位拖曳至 [篩選] 窗格, 並將它放在 [在**此頁面**上的篩選] 區段的 [在**此處新增資料欄位**] 方塊中。  
+2. 在 [**欄位**] 窗格中， `ownerTypes`尋找資料表。
+3. 展開資料表，然後選取 [ `ownerTypeName`資料] 欄位。 `ownerTypes`
+4.  `ownerTypes` `onwerTypeName`將資料表中的資料欄位拖曳至 [篩選] 窗格，並將它放在 [在**此頁面**上的篩選] 區段的 [在**此處新增資料欄位**] 方塊中。  
 
-   在資料表下, 有一個名`OwnerTypeKey`為的資料欄位, 其中包含的資料與裝置是否為公司擁有或個人。 `OwnerTypes` 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
+   在資料表下，有一個名`OwnerTypeKey`為的資料欄位，其中包含的資料與裝置是否為公司擁有或個人。 `OwnerTypes` 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
 
 ![含有篩選的矩形式樹狀結構圖 - 支援資料表之間的關聯性](media/reports-create-08_ownertype.png)
 
 您現在已有互動式篩選，可用來切換公司所擁有的裝置和個人擁有的裝置。 您可使用此篩選來查看分佈變更。
 
-1. 選取交叉分析篩選器中的 [**公司**], 以查看公司擁有的裝置散發。
-2. 選取交叉分析篩選器內的 [**個人**], 以查看個人擁有的裝置。
+1. 選取交叉分析篩選器中的 [**公司**]，以查看公司擁有的裝置散發。
+2. 選取交叉分析篩選器內的 [**個人**]，以查看個人擁有的裝置。
 
 ## <a name="next-steps"></a>後續步驟
 
 - 在 Power BI 文件中深入了解在 Power BI Desktop [建立和管理關聯性](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)。
-- 請參閱 [Intune 資料倉儲模型](https://docs.microsoft.com/intune/reports-ref-data-model)。
+- 請參閱 [Intune 資料倉儲模型](reports-ref-data-model.md)。

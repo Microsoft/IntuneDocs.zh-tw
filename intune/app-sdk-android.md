@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 8d6f0182fed362cba1e4c383ac6b4e083b6baa8e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960558"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167172"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
 
@@ -707,7 +707,7 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 您必須向 Azure AD 登錄您的應用程式，並讓您的應用程式存取應用程式保護原則服務：
 * 請參閱[這裡](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)，以取得向 Azure AD 註冊應用程式的相關資訊。
-* 確定您已遵循將 Android 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中＜將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)＞中的指示。 
+* 確定您已遵循將 Android 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](app-sdk-get-started.md#next-steps-after-integration)中＜將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)＞中的指示。 
 
 另請參閱以下的[條件式存取](#conditional-access)需求。
 
@@ -723,18 +723,18 @@ SDK 仰賴 [ADAL](https://azure.microsoft.com/documentation/articles/active-dire
 
 ### <a name="conditional-access"></a>條件式存取
 
-條件式存取 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)，可用來控制 AAD 資源的存取權。 [Intune 系統管理員可以定義 CA 規則](https://docs.microsoft.com/intune/conditional-access)，允許只能從由 Intune 管理的裝置或應用程式存取資源。 為確保您的應用程式能夠在適當時存取資源，必須遵循下列步驟。 如果您的應用程式不會取得任何 AAD 存取權杖，或是只會存取無法受 CA 保護的資源，您可以略過這些步驟。
+條件式存取 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)，可用來控制 AAD 資源的存取權。 [Intune 系統管理員可以定義 CA 規則](conditional-access.md)，允許只能從由 Intune 管理的裝置或應用程式存取資源。 為確保您的應用程式能夠在適當時存取資源，必須遵循下列步驟。 如果您的應用程式不會取得任何 AAD 存取權杖，或是只會存取無法受 CA 保護的資源，您可以略過這些步驟。
 
 1. 請遵循 [ADAL 整合指導方針](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)。 
    請特別參閱訊息代理程式使用方式的步驟 11。
 2. [向 Azure Active Directory 註冊應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) 。 
    重新導向 URI 位於上述的 ADAL 整合指導方針。
 3. 設定每個[常見 ADAL 設定](#common-adal-configurations)的資訊清單中繼資料參數，上面的項目 2。
-4. 藉由從 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)啟用[以裝置為基礎的 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)並確認下列各項，測試所有項目都已正確設定
+4. 藉由從 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)啟用[以裝置為基礎的 CA](conditional-access-intune-common-ways-use.md)並確認下列各項，測試所有項目都已正確設定
     - 登入您的應用程式會提示進行安裝和註冊 Intune 公司入口網站
     - 註冊之後，登入應用程式能順利完成。
-5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com，以新增至已核准應用程式清單，進行[以應用程式為基礎的條件式存取](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
-6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)，並確保登入應用程式能順利完成，來進行驗證。
+5. 一旦您的應用程式已送出 Intune APP SDK 整合，請連絡 msintuneappsdk@microsoft.com，以新增至已核准應用程式清單，進行[以應用程式為基礎的條件式存取](conditional-access-intune-common-ways-use.md#app-based-conditional-access)
+6. 一旦您的應用程式新增至核准清單，請藉由[設定應用程式為基礎的 CA](app-based-conditional-access-intune-create.md)，並確保登入應用程式能順利完成，來進行驗證。
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>無裝置註冊的應用程式保護原則
 
@@ -1639,7 +1639,7 @@ public final class MAMDataProtectionManager {
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>啟用 Android 應用程式的 MAM 目標設定 (選擇性)
-您可以為 [MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) 和 [Android 工作設定檔應用程式](https://docs.microsoft.com/intune/app-configuration-policies-use-android)，在 Intune 主控台中設定應用程式特定的索引鍵/值組。
+您可以為 [MAM-WE](app-configuration-policies-managed-app.md) 和 [Android 工作設定檔應用程式](app-configuration-policies-use-android.md)，在 Intune 主控台中設定應用程式特定的索引鍵/值組。
 Intune 完全不會解譯這些機碼值組，但會將它們傳遞給應用程式。 想要接收這類設定的應用程式可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 類別來執行作業。 如有多個原則以相同的應用程式為目標，相同的機碼可能會有多個衝突值。
 
 > [!NOTE] 
@@ -1673,7 +1673,7 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="further-reading"></a>深入閱讀
 如需圖形 API 功能的詳細資訊，請參閱[圖形 API 參考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
 
-如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-use-android)中有關 MAM 目標應用程式設定的一節。
+如需如何在 Android 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱[如何使用 Android for Work 適用的 Microsoft Intune 應用程式設定原則](app-configuration-policies-use-android.md)中有關 MAM 目標應用程式設定的一節。
 
 ## <a name="style-customization-optional"></a>樣式自訂 (選擇性)
 
@@ -1726,7 +1726,7 @@ LOGGER.info("Found value " + valueToUse);
 
 1. 若您的應用程式與 ADAL 整合，或是您需要啟用 SSO，請在[常見 ADAL 設定](#common-adal-configurations) #2 之後[設定 ADAL](#configure-azure-active-directory-authentication-library-adal)。 若不需要，您可以跳過此步驟。
    
-2. 在`<application>`標記底下的資訊清單中新增下列值, 以啟用預設註冊:
+2. 在`<application>`標記底下的資訊清單中新增下列值，以啟用預設註冊：
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ LOGGER.info("Found value " + valueToUse);
    > [!NOTE] 
    > 這必須是應用程式中唯一的 MAM-WE 整合。 如有呼叫 MAMEnrollmentManager API 的任何其他嘗試，則會發生衝突。
 
-3. 在`<application>`標記底下的資訊清單中新增下列值, 以啟用所需的 MAM 原則:
+3. 在`<application>`標記底下的資訊清單中新增下列值，以啟用所需的 MAM 原則：
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
