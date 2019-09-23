@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: ea31c06019643a3eaf10d79857dfdc319a8453c3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021821"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167209"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -175,19 +175,19 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 ## <a name="configure-adalmsal"></a>設定 ADAL/MSAL
 
-Intune App SDK 可以針對其驗證和條件式啟動案例, 使用[Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或[Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。
+Intune App SDK 可以針對其驗證和條件式啟動案例，使用[Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或[Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。
 
 一般而言，ADAL/MSAL 要求應用程式必須向 Azure Active Directory (AAD) 註冊並建立唯一用戶端識別碼與重新導向 URI，以確保授與應用程式的權杖安全無虞。 如果您的應用程式已經使用 ADAL 或 MSAL 來驗證使用者，該應用程式必須使用其現有的登錄值，並覆寫 Intune App SDK 預設值。 這能確保不會提示使用者驗證兩次 (一次是由 Intune App SDK，另一次是由應用程式)。
 
-如果您的應用程式尚未使用 ADAL 或 MSAL, 而且您不需要存取任何 AAD 資源, 則不需要在 AAD 中設定用戶端應用程式註冊 (如果您選擇整合 ADAL)。 如果您決定整合 MSAL, 您將需要設定應用程式註冊, 並覆寫預設的 Intune 用戶端識別碼和重新導向 URI。  
+如果您的應用程式尚未使用 ADAL 或 MSAL，而且您不需要存取任何 AAD 資源，則不需要在 AAD 中設定用戶端應用程式註冊（如果您選擇整合 ADAL）。 如果您決定整合 MSAL，您將需要設定應用程式註冊，並覆寫預設的 Intune 用戶端識別碼和重新導向 URI。  
 
 建議您的應用程式連結至最新版本的[ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)或[MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases)。
 
 ### <a name="link-to-adal-or-msal-binaries"></a>連結至 ADAL 或 MSAL 二進位檔
 
-**選項 1-** 請遵循[下列步驟](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download), 將您的應用程式連結至 ADAL 二進位檔。
+**選項 1-** 請遵循[下列步驟](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download)，將您的應用程式連結至 ADAL 二進位檔。
 
-**選項 2-** 或者, 您也可以遵循[這些指示](https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation), 將您的應用程式連結到 MSAL 的二進位檔。
+**選項 2-** 或者，您也可以遵循[這些指示](https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation)，將您的應用程式連結到 MSAL 的二進位檔。
 
 1. 如果您的應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
 
@@ -215,23 +215,23 @@ Intune App SDK 可以針對其驗證和條件式啟動案例, 使用[Azure Activ
 
 此外，應用程式可以在執行階段覆寫這些 Azure AD 設定。 若要這樣做，請設定 `IntuneMAMPolicyManager` 執行個體上的 `aadAuthorityUriOverride`、`aadClientIdOverride` 與 `aadRedirectUriOverride` 屬性。
 
-4. 請務必遵循將您的 iOS 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中[將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)中的指示。  
+4. 請務必遵循將您的 iOS 應用程式權限授與應用程式保護原則 (APP) 服務的步驟。 使用[開始使用 Intune SDK 指南](app-sdk-get-started.md#next-steps-after-integration)中[將您的應用程式存取權授與 Intune 應用程式保護服務 (選擇性)](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)中的指示。  
 
 > [!NOTE]
 > 建議您為靜態且不需要在執行階段決定的所有設定使用 Info.plist 方法。 指派給 `IntuneMAMPolicyManager` 屬性之值的優先順序高於在 Info.plist 中指定的對應值，而且在應用程式重新啟動之後仍然存在。 SDK 將會繼續為原則簽入使用它們，直到使用者取消註冊或值被清除或變更。
 
 ### <a name="if-your-app-does-not-use-adal-or-msal"></a>如果您的應用程式未使用 ADAL 或 MSAL
 
-如先前所述, Intune App SDK 可以針對其驗證和條件式啟動案例使用「 [Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)」或「 [Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)」。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。 如果**您的應用程式未將 ADAL 或 MSAL 用於自己的驗證機制**, 則您可能需要設定自訂 AAD 設定, 視您選擇要整合的驗證程式庫而定:   
+如先前所述，Intune App SDK 可以針對其驗證和條件式啟動案例使用「 [Azure Active Directory authentication 程式庫](https://github.com/AzureAD/azure-activedirectory-library-for-objc)」或「 [Microsoft 驗證程式庫](https://github.com/AzureAD/microsoft-authentication-library-for-objc)」。 針對不註冊裝置的管理情節，它也依賴 ADAL/MSAL 來向 MAM 服務註冊使用者身分識別。 如果**您的應用程式未將 ADAL 或 MSAL 用於自己的驗證機制**，則您可能需要設定自訂 AAD 設定，視您選擇要整合的驗證程式庫而定：   
 
 ADAL - Intune App SDK 將會為 ADAL 參數提供預設值，並處理向 Azure AD 進行驗證的作業。 開發人員不需要針對先前所述的 ADAL 設定指定任何值。 
 
-MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration)指定的格式, 建立具有自訂重新導向 URI 的應用程式註冊。 開發人員應該設定`ADALClientID`先前`ADALRedirectUri`所述的和設定, 或`aadClientIdOverride` `IntuneMAMPolicyManager`實例`aadRedirectUriOverride`上的對等和屬性。 開發人員也應該確保他們遵循上一節中的步驟 4, 將應用程式註冊存取權授與 Intune 應用程式保護服務。
+MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration)指定的格式，建立具有自訂重新導向 URI 的應用程式註冊。 開發人員應該設定`ADALClientID`先前`ADALRedirectUri`所述的和設定，或`aadClientIdOverride` `IntuneMAMPolicyManager`實例`aadRedirectUriOverride`上的對等和屬性。 開發人員也應該確保他們遵循上一節中的步驟4，將應用程式註冊存取權授與 Intune 應用程式保護服務。
 
 ### <a name="special-considerations-when-using-msal"></a>使用 MSAL 時的特殊考慮 
 
-1. **檢查您的 web 工作**-建議應用程式不要使用 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 做為任何應用程式起始 MSAL 互動式驗證作業的 web 工作。 如果基於某些原因, 您的應用程式必須使用其中一個網站進行任何互動式 MSAL auth 作業, 則它也`SafariViewControllerBlockedOverride`必須`true`在應用`IntuneMAMSettings`程式的資訊. plist 的字典底下設定為。 警告: 這會關閉 Intune 的 SafariViewController 勾點以啟用驗證會話。 如果應用程式使用 SafariViewController 來查看公司資料, 這會在應用程式的其他地方有風險資料流程失, 因此應用程式不應該在任何一種資料檢視類型中顯示公司資料。
-2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中, 讓 Intune 偏好透過 adal MSAL。 根據預設, 如果這兩個版本都是在執行時間連結, Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會`IntuneMAMUseMSALOnNextLaunch` `true`在`NSUserDefaults`intune 第一次驗證作業時, 偏好支援的 MSAL 版本。 如果`IntuneMAMUseMSALOnNextLaunch` 為`false`或未設定, Intune 會回復為預設行為。 如其名所示, 的變更`IntuneMAMUseMSALOnNextLaunch`會在下次啟動時生效。
+1. **檢查您的 web 工作**-建議應用程式不要使用 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 做為任何應用程式起始 MSAL 互動式驗證作業的 web 工作。 如果基於某些原因，您的應用程式必須使用其中一個網站進行任何互動式 MSAL auth 作業，則它也`SafariViewControllerBlockedOverride`必須`true`在應用`IntuneMAMSettings`程式的資訊. plist 的字典底下設定為。 警告：這會關閉 Intune 的 SafariViewController 勾點以啟用驗證會話。 如果應用程式使用 SafariViewController 來查看公司資料，這會在應用程式的其他地方有風險資料流程失，因此應用程式不應該在任何一種資料檢視類型中顯示公司資料。
+2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中，讓 Intune 偏好透過 adal MSAL。 根據預設，如果這兩個版本都是在執行時間連結，Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會`IntuneMAMUseMSALOnNextLaunch` `true`在`NSUserDefaults`intune 第一次驗證作業時，偏好支援的 MSAL 版本。 如果`IntuneMAMUseMSALOnNextLaunch` 為`false`或未設定，Intune 會回復為預設行為。 如其名所示，的變更`IntuneMAMUseMSALOnNextLaunch`會在下次啟動時生效。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的設定
@@ -244,10 +244,10 @@ MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microso
 
 設定  | 類型  | 定義 | 必要？
 --       |  --   |   --       |  --
-ADALClientId  | 字串  | 應用程式的 Azure AD 用戶端識別碼。 | 所有使用 MSAL 的應用程式, 以及存取非 Intune AAD 資源的任何 ADAL 應用程式都需要。 |
-ADALAuthority | 字串 | 應用程式的使用中 Azure AD 授權單位。 您應該使用已設定 AAD 帳戶的專屬環境。 | 如果應用程式使用 ADAL 或 MSAL 來存取非 Intune AAD 資源, 則為必要。 如果此值不存在，則會使用 Intune 預設值。|
-ADALRedirectUri  | 字串  | 應用程式的 Azure AD 重新導向 URI。 | 所有使用 MSAL 的應用程式, 以及存取非 Intune AAD 資源的任何 ADAL 應用程式, 都需要 ADALRedirectUri 或 ADALRedirectScheme。  |
-ADALRedirectScheme  | 字串  | 應用程式的 Azure AD 重新導向配置。 如果應用程式的重新導向 URI 格式為 `scheme://bundle_id`，則這可以用來代替 ADALRedirectUri。 | 所有使用 MSAL 的應用程式, 以及存取非 Intune AAD 資源的任何 ADAL 應用程式, 都需要 ADALRedirectUri 或 ADALRedirectScheme。 |
+ADALClientId  | 字串  | 應用程式的 Azure AD 用戶端識別碼。 | 所有使用 MSAL 的應用程式，以及存取非 Intune AAD 資源的任何 ADAL 應用程式都需要。 |
+ADALAuthority | 字串 | 應用程式的使用中 Azure AD 授權單位。 您應該使用已設定 AAD 帳戶的專屬環境。 | 如果應用程式使用 ADAL 或 MSAL 來存取非 Intune AAD 資源，則為必要。 如果此值不存在，則會使用 Intune 預設值。|
+ADALRedirectUri  | 字串  | 應用程式的 Azure AD 重新導向 URI。 | 所有使用 MSAL 的應用程式，以及存取非 Intune AAD 資源的任何 ADAL 應用程式，都需要 ADALRedirectUri 或 ADALRedirectScheme。  |
+ADALRedirectScheme  | 字串  | 應用程式的 Azure AD 重新導向配置。 如果應用程式的重新導向 URI 格式為 `scheme://bundle_id`，則這可以用來代替 ADALRedirectUri。 | 所有使用 MSAL 的應用程式，以及存取非 Intune AAD 資源的任何 ADAL 應用程式，都需要 ADALRedirectUri 或 ADALRedirectScheme。 |
 ADALLogOverrideDisabled | 布林值  | 指定 SDK 是否會將所有 ADAL/MSAL 記錄 (包括任何來自應用程式的 ADAL 呼叫) 路由傳送至自己的記錄檔。 預設為 [否]。 如果應用程式將設定自己的 ADAL/MSAL 記錄回呼，請設定為 [是]。 | 選擇性。 |
 ADALCacheKeychainGroupOverride | 字串  | 指定要用於 ADAL/MSAL 快取而非 "com.microsoft.adalcache" 的 Keychain 群組。 請注意，這不包含 app-id 前置詞。 這會在執行階段加在所提供字串的前面。 | 選擇性。 |
 AppGroupIdentifiers | 字串陣列  | 應用程式之權利 com.apple.security.application-groups 區段中的應用程式群組陣列。 | 如果應用程式使用應用程式群組，則為必要項。 |
@@ -259,7 +259,7 @@ AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識�
 MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意事項︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 | 選擇性。 預設為 [否]。 |
 MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否將在啟動期間警告使用者。 <br><br> 注意事項︰使用者在關閉警告之後，仍可在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
 MultiIdentity | 布林值| 指定應用程式是否為多重身分識別感知。 | 選擇性。 預設為 [否]。 |
-SafariViewControllerBlockedOverride | 布林值| 停用 Intune 的 SafariViewController 勾點, 以透過 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 啟用 MSAL auth。 | 選擇性。 預設為 [否]。 警告: 如果使用不當, 可能會導致資料洩漏。 只有在絕對必要時才啟用。 如需詳細資訊, 請參閱[使用 MSAL 時的特殊考慮](#special-considerations-when-using-msal)。  |
+SafariViewControllerBlockedOverride | 布林值| 停用 Intune 的 SafariViewController 勾點，以透過 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 啟用 MSAL auth。 | 選擇性。 預設為 [否]。 警告：如果使用不當，可能會導致資料洩漏。 只有在絕對必要時才啟用。 如需詳細資訊，請參閱[使用 MSAL 時的特殊考慮](#special-considerations-when-using-msal)。  |
 SplashIconFile~ipad <br>IntuneMAMSettings | 字串  | 指定 Intune 啟動顯示 (啟動) 畫面的圖示檔。 | 選擇性。 |
 SplashDuration | 數字 | Intune 啟動畫面將於應用程式啟動時顯示的最短時間 (以秒為單位)。 預設為 1.5。 | 選擇性。 |
 BackgroundColor| 字串| 指定啟動畫面和 PIN 畫面的背景色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。   | 選擇性。 預設為淺灰色。 |
@@ -276,6 +276,9 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 ### <a name="overview"></a>概觀
 
 若要接收 Intune 應用程式保護原則，應用程式必須向 Intune MAM 服務起始註冊要求。 應用程式可以在 Intune 主控台中設定，以接收應用程式保護原則 (不論是否有裝置註冊)。 無註冊的應用程式保護原則 (亦稱為 **APP-WE** 或 MAM-WE) 可讓 Intune 管理應用程式，而不需要向 Intune 行動裝置管理 (MDM) 註冊裝置。 在這兩種案例中，都必須向 Intune MAM 服務註冊才能接收原則。
+
+> [!Important]
+> 適用於 iOS 的 Intune App SDK 將會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 所有應用程式都必須有最新的 SDK 版本，才能允許受保護的資料共用。
 
 ### <a name="apps-that-already-use-adal-or-msal"></a>已經使用 ADAL 或 MSAL 的應用程式
 
@@ -412,9 +415,6 @@ MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保
 * 表示要求結果的狀態碼
 * 狀態碼描述的錯誤字串
 * `NSError` 物件。 這個物件與可傳回的特定狀態碼定義在 `IntuneMAMEnrollmentStatus.h` 中。
-
-> [!NOTE]
-> 此資訊僅供偵錯之用。 沒有任何應用程式的商務邏輯應該根據這些通知。 這項資訊可傳送至遙測服務來進行偵錯或監視。
 
 ### <a name="sample-code"></a>範例程式碼
 
@@ -593,7 +593,7 @@ Intune 系統管理員可以透過 Intune Azure 入口網站和 Intune Graph API
 
 如需圖形 API 功能的詳細資訊，請參閱[圖形 API 參考](https://developer.microsoft.com/graph/docs/concepts/overview)。
 
-如需如何在 iOS 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱 [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) (如何使用適用於 iOS 的 Microsoft Intune 應用程式設定原則) 的＜MAM 目標應用程式設定＞一節。
+如需如何在 iOS 建立 MAM 目標應用程式設定原則的詳細資訊，請參閱 [How to use Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) (如何使用適用於 iOS 的 Microsoft Intune 應用程式設定原則) 的＜MAM 目標應用程式設定＞一節。
 
 ## <a name="telemetry"></a>遙測
 

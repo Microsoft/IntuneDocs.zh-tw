@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775848"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166354"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>減少 Android 裝置系統管理員的支援 
-Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而且隨 Android 2.2 發行) 是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
+Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而且隨 Android 2.2 發行) 是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise](../connect-intune-android-enterprise.md) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 由於 Google 的這些變更，Intune 使用者會受到下列方面的影響： 
@@ -66,7 +66,7 @@ https://firebase.google.com/docs/cloud-messaging/
 #### <a name="additional-information"></a>其他資訊 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>規劃變更：Intune 將於 9 月開始支援 iOS 11 和更高版本 <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>規劃變更：Intune 將於 9 月開始支援 iOS 11 和更高版本 <!-- 4665324-->
 Apple 預期於 9 月發行 iOS 13。 iOS 13 發行後，Intune 註冊、公司入口網站及受控瀏覽器即可支援 iOS 11 和更高版本。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
@@ -76,7 +76,7 @@ Apple 預期於 9 月發行 iOS 13。 iOS 13 發行後，Intune 註冊、公司�
 - iPhone 5c
 - iPad (第 4 代)
 
-從 7 月開始，使用 iOS 10 和公司入口網站註冊的 MDM 裝置會收到升級作業系統或裝置的提示。 如果您使用應用程式保護原則 (APP)，您也可以設定 [需要最低的 iOS 作業系統 (僅警告)] 存取設定。
+如果您使用應用程式保護原則 (APP)，您也可以設定 [需要最低的 iOS 作業系統 (僅警告)] 存取設定。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 檢查您的 Intune 報告，查看哪些裝置或使用者可能會受到影響。 移至 [裝置]   > [所有裝置]  ，然後依作業系統篩選。 您可以新增其他資料行，協助識別您組織中誰有執行 iOS 10 的裝置。 要求使用者在 9 月之前將其裝置升級至支援的作業系統版本。
@@ -96,7 +96,7 @@ Apple 預期於 9 月發行 iOS 13。 iOS 13 發行後，Intune 註冊、公司�
 SDK 支援如適合納入這項變更，則您應該一併更新您的文件或開發人員指導方針。
 
 #### <a name="additional-information"></a>其他資訊
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[準備應用程式防護原則的企業營運應用程式](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>規劃變更：Intune 中的新 Windows 更新設定 <!-- 4464404 -->
 從 8 月版的 Intune 服務或 1908 開始，我們新增了新的「期限設定」，您可以設定此功能而不是 [可讓使用者重新啟動 (預約重新啟動)] 設定。 我們計劃在 1909 或 9 月更新中停用使用者介面中的重新開機設定，然後在 10 月底之前將它們從主控台中完全移除。 
