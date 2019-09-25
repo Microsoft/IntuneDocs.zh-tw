@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123220"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167753"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune 憑證連接器事件和診斷碼
 
-從 6.1806.x.x 版開始，Intune 連接器服務會在 [事件檢視器] ([應用程式及服務記錄檔] > [Microsoft Intune 連接器]) 中記錄事件。 您可以使用這些事件來協助對 Intune 連接器設定中的潛在問題進行疑難排解。 這些事件會記錄作業的成功與失敗，還會包含診斷碼及訊息，以協助 IT 系統管理員進行疑難排解。
+從 6.1806.x.x 版開始，Intune 連接器服務會在 [事件檢視器]  ([應用程式及服務記錄檔]   > [Microsoft Intune 連接器]  ) 中記錄事件。 您可以使用這些事件來協助對 Intune 連接器設定中的潛在問題進行疑難排解。 這些事件會記錄作業的成功與失敗，還會包含診斷碼及訊息，以協助 IT 系統管理員進行疑難排解。
 
 > [!TIP]  
 > 若要針對問題進行疑難排解及驗證 Intune 連接器設定，請參閱 [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript) (憑證授權單位指令碼範例)。
@@ -60,7 +60,7 @@ ms.locfileid: "70123220"
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 憑證授權單位無效或無法連線。 請確認憑證授權單位可用，且您的伺服器可以與其通訊。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)一文，以取得詳細資料。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 本機憑證存放區中找不到 Symantec 用戶端驗證憑證。 請參閱[安裝 Symantec 註冊驗證憑證](certificates-digicert-configure.md#install-the-digicert-ra-certificate)一文，以取得詳細資料。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帳戶無權撤銷來自 CA 的憑證。 請參閱事件訊息詳細資料中的 CA 名稱欄位，以判斷發行的 CA。  |
 | 0x00000403 | CertThumbprint_NotFound  | 找不到符合您輸入的憑證。 請註冊憑證連接器，然後再試一次。 |
 | 0x00000404 | Certificate_NotFound  | 找不到符合所提供輸入的憑證。 請重新註冊憑證連接器，然後再試一次。 |

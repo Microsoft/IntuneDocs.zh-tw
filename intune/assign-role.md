@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071539"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094684"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>將角色指派給 Intune 使用者
 
@@ -30,8 +30,6 @@ ms.locfileid: "71071539"
 若要建立、編輯或指派角色，您的帳戶必須具備下列其中一項 Azure AD 權限︰
 - **全域管理員**
 - **Intune 服務管理員**
-
-如需每個內建角色權限的完整清單，請參閱 [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Intune RBAC 資料表)。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 

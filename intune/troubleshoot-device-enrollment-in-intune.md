@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375231"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167811"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -447,7 +447,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 |錯誤訊息|問題|解決方案|
 |---|---|---|
-|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型，對於行動裝置管理授權單位而言並不正確。 例如，如果下列兩個條件都成立，他們就會看到此錯誤： <ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>參閱[如何將 Intune 授權指派至使用者帳戶](https://docs.microsoft.com/intune/licenses-assign)的相關資訊。|
+|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型，對於行動裝置管理授權單位而言並不正確。 例如，如果下列兩個條件都成立，他們就會看到此錯誤： <ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>參閱[如何將 Intune 授權指派至使用者帳戶](licenses-assign.md)的相關資訊。|
 
 
 

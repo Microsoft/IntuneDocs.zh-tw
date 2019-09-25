@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5944f7bacd87e2ef1e1117dd44eb80b6fe572e6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5dbebfee60c0c558a8d876471ddba93fb2979831
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391918"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71238289"
 ---
 # <a name="set-up-intune"></a>設定 Intune
 
@@ -35,7 +34,7 @@ ms.locfileid: "57391918"
 如果您目前使用 Microsoft System Center Configuration Manager 來管理電腦和伺服器，則可以[透過共同管理雲端連接 Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview)。
 
 >[!TIP]
->凡在符合條件方案中購買至少 150 套 Intune 授權，即可享有「FastTrack Center 服務權益」。 這項服務讓您和 Microsoft 專家一起整備 Intune 環境。 請參閱[適用於 Enterprise Mobility + Security (EMS) 的 FastTrack Center 權益](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。
+>凡在符合條件方案中購買至少 150 套 Intune 授權，即可享有「FastTrack Center 服務權益」  。 這項服務讓您和 Microsoft 專家一起整備 Intune 環境。 請參閱[適用於 Enterprise Mobility + Security (EMS) 的 FastTrack Center 權益](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。
 
 
 

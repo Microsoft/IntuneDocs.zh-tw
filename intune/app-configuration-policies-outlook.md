@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979209"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167383"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook 組態設定 
 
@@ -30,7 +30,7 @@ ms.locfileid: "69979209"
 - 若要為受控 iOS 裝置建立應用程式設定原則，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。 
 - 若要為受控 Android 裝置建立應用程式設定原則，請參閱[為受控 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。 
 
-針對未註冊的裝置，請參閱[在不註冊裝置情況下新增受控應用程式的應用程式設定原則](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)，為 iOS 與 Android 版 Outlook 建立應用程式設定原則。
+針對未註冊的裝置，請參閱[在不註冊裝置情況下新增受控應用程式的應用程式設定原則](app-configuration-policies-managed-app.md)，為 iOS 與 Android 版 Outlook 建立應用程式設定原則。
 
 ## <a name="configuration-settings"></a>組態設定
 

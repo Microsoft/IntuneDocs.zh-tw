@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061705"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167872"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 了解 Microsoft Intune 應用程式的最新更新。 我們會定期新增至 Intune 公司入口網站應用程式和網站並會加以改善。 如果您是 Intune 管理員或支援人員，本文會提供您執行下列操作所需的資訊：
@@ -120,7 +120,7 @@ iOS 版公司入口網站註冊畫面和步驟，為了配合 Apple iOS 12.2 中
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日當週
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 公司入口網站鍵盤快速鍵 <!-- 2771518 -->
-終端使用者現在可在 Windows 公司入口網站中[使用鍵盤快速鍵 (快速鍵)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts) 來觸發應用程式和裝置動作。
+終端使用者現在可在 Windows 公司入口網站中[使用鍵盤快速鍵 (快速鍵)](company-portal-app.md#windows-company-portal-keyboard-shortcuts) 來觸發應用程式和裝置動作。
 
 ## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日當週
 
@@ -572,4 +572,4 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 ## <a name="see-also"></a>請參閱
 * [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune 的新功能](https://docs.microsoft.com/intune/whats-new)
+* [Intune 的新功能](whats-new.md)

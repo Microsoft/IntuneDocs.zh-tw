@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/05/2016
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9d4216026487541cbdd798f247dde3bf08e1ea
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 421815c6f17e4e9eddf23b3123c95cec51157d61
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388344"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239805"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
 
@@ -38,6 +37,6 @@ ms.locfileid: "57388344"
 
 **未受管理的應用程式** - 可透過原則進行管理，以及未受 Intune 包裝或不包含 Intune App SDK。 應用程式保護原則不適用於這些應用程式。
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)
 [iOS 使用者如何取得其應用程式](end-user-apps-android.md)

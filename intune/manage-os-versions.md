@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427110"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167646"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理作業系統版本
 在現代化行動和桌面平台上，主要更新、修補程式以及新版本的發行速度很快。 您有控制方法可以完全管理 Windows 上的更新和修補程式，但像是 iOS 和 Android 等其他平台則需要終端使用者參與此程序。  Microsoft Intune 具有可協助在不同平台之間組織作業系統版本管理結構的功能。
@@ -32,30 +32,34 @@ Intune 可協助您解決這些常見的案例：
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>使用 Intune 行動裝置管理 (MDM) 註冊限制的作業系統版本控制
 Intune MDM 註冊限制可讓您定義用戶端裝置需求，然後才允許裝置註冊。 目標是要求您的終端使用者只註冊符合規範的裝置，然後才能存取組織資源。 裝置需求包括支援平台的最低和最高允許作業系統版本。
- 
-![平台設定限制刀鋒視窗](./media/os-version-platform-configurations.png) 
- 
+
+![平台設定限制刀鋒視窗](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>在實務上
-組織使用裝置類型限制，藉由使用下列設定來控制組織資源的存取權： 
-1. 使用最低作業系統版本，來讓使用者維持在組織中的最新且支援的平台上。 
+
+組織使用裝置類型限制，藉由使用下列設定來控制組織資源的存取權：
+
+1. 使用最低作業系統版本，來讓使用者維持在組織中的最新且支援的平台上。
 2. 將最高作業系統保留為未指定 (無限制)，或將它設定為組織中的最後一個驗證版本，以允許提供時間進行新作業系統版本的內部測試。
 
-如需詳細資料，請參閱[設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)。
- 
+如需詳細資料，請參閱[設定裝置類型限制](enrollment-restrictions-set.md#create-a-device-type-restriction)。
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>作業系統版本報告和對 Intune MDM 裝置合規性原則的合規性
-Intune MDM 裝置合規性原則提供您下列工具： 
+
+Intune MDM 裝置合規性原則提供您下列工具：
+
 - 指定合規性規則
 - 透過報告檢視合規性狀態
 - 透過裝置隔離和條件式存取來處理不符合規範的情況
 
 如同註冊限制，裝置合規性原則會包含最低和最高作業系統版本。 原則也有合規性時間表，提供寬限期讓使用者符合規範。 裝置合規性原則會讓您的已註冊終端使用者裝置保持符合組織原則。
 
-![裝置合規性 - 不符合規範之裝置的動作](./media/os-version-actions-noncompliance.png) 
+![裝置合規性 - 不符合規範之裝置的動作](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>在實務上
 組織使用裝置合規性原則的案例與註冊限制相同。 這些原則會讓使用者維持在組織中的最新且已驗證的作業系統版本。 當終端使用者裝置不符合規範時，可以透過條件式存取來封鎖對組織資源的存取，直到終端使用者位於貴組織支援的作業系統範圍內為止。 終端使用者會收到通知其不符合規範，並提供他們重新取得存取權的步驟。   
 
-如需詳細資料，請參閱[開始使用裝置合規性](https://docs.microsoft.com/intune/device-compliance-get-started)。
+如需詳細資料，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>使用 Intune 應用程式保護原則的作業系統版本控制    
 Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，可讓您指定在應用程式層的最低作業系統版本。 這可讓您通知和建議 (或要求) 您的終端使用者將其作業系統更新為指定的最低版本。
@@ -70,7 +74,7 @@ Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，
 ### <a name="in-practice"></a>在實務上
 組織現在會在應用程式開啟或繼續時使用應用程式保護原則設定，作為教育終端使用者需要保持其應用程式為最新的方式。 一個範例設定是，終端使用者會在目前版本減一時收到警告，並在目前版本減二時遭到封鎖。
  
-如需詳細資料，請參閱[如何建立及指派應用程式保護原則](https://docs.microsoft.com/intune/app-protection-policies)。
+如需詳細資料，請參閱[如何建立及指派應用程式保護原則](app-protection-policies.md)。
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>管理新的作業系統版本推出
 您可以使用本文中所述的 Intune 功能，協助您在您定義的時間表內，讓組織移到較新的作業系統版本。 下列步驟提供範例部署模型，在七天內將您的使用者從作業系統 v1 移到作業系統 v2。
@@ -84,8 +88,9 @@ Intune 應用程式保護原則與行動應用程式管理 (MAM) 存取設定，
   - 這些原則會要求裝置更新，以便它們能繼續存取組織的資料。 與裝置條件式存取搭配使用時，即會封鎖受保護的服務。 已啟用應用程式保護原則的應用程式，會在開啟時或存取組織資料時遭到封鎖。
 
 ## <a name="next-steps"></a>後續步驟
-使用下列資源來管理組織中的作業系統版本： 
 
-- [設定裝置類型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [開始使用裝置合規性](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [如何建立及部署應用程式保護原則](https://docs.microsoft.com/intune/app-protection-policies)
+使用下列資源來管理組織中的作業系統版本：
+
+- [設定裝置類型限制](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [開始使用裝置合規性](device-compliance-get-started.md)
+- [如何建立及部署應用程式保護原則](app-protection-policies.md)

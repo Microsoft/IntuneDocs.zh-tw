@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 03eb6e8f58d644d0f5ad1058984d0dc2ce4a5a9b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568631"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71239552"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署規劃、設計和實作指南
 
@@ -35,33 +34,33 @@ ms.locfileid: "59568631"
 
 本指南包含將引導您完成部署 Intune 之端對端程序的章節。 從第 1 節開始釐清您的目的、目標和挑戰。 然後根據您需要的順序前往第 2 - 7 節。 您不需要依序閱讀這些章節；您可以同時閱讀這些章節。
 
--   [第 1 節：判斷部署目的、目標和挑戰](planning-guide-deployment-goals.md)
+- [第 1 節：判斷部署目的、目標和挑戰](planning-guide-deployment-goals.md)
 
--   [第 2 節：識別使用案例](planning-guide-scenarios.md)
+- [第 2 節：識別使用案例](planning-guide-scenarios.md)
 
--   [第 3 節：決定使用案例需求](planning-guide-requirements.md)
+- [第 3 節：決定使用案例需求](planning-guide-requirements.md)
 
--   [第 4 節：開發推出計畫](planning-guide-rollout-plan.md)
+- [第 4 節：開發推出計畫](planning-guide-rollout-plan.md)
 
--   [第 5 節︰開發推出通訊計畫](planning-guide-communication-plan.md)
+- [第 5 節︰開發推出通訊計畫](planning-guide-communication-plan.md)
 
--   [第 6 節：開發支援計畫](planning-guide-support-plan.md)
+- [第 6 節：開發支援計畫](planning-guide-support-plan.md)
 
--   [第 7 節：建立 Intune 設計](planning-guide-design.md)
+- [第 7 節：建立 Intune 設計](planning-guide-design.md)
 
--   [第 8 節：Intune 實作](planning-guide-onboarding.md)
+- [第 8 節：Intune 實作](planning-guide-onboarding.md)
 
--   [第 9 節：測試與驗證](planning-guide-test-validation.md)
+- [第 9 節：測試與驗證](planning-guide-test-validation.md)
 
 本指南也會提供其他技術資訊，以及可用來協助您使用 Intune 部署規劃、設計和實作程序的資料表範本。
 
--   [其他資源：連結和資料表範本](planning-guide-resources.md)
+- [其他資源：連結和資料表範本](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>假設
 
--   您已經在概念證明 (PoC) 環境中評估過 Intune，並決定使用它作為組織中的行動裝置管理解決方案。
+- 您已經在概念證明 (PoC) 環境中評估過 Intune，並決定使用它作為組織中的行動裝置管理解決方案。
 
--   您已經熟悉 Intune 和其功能。
+- 您已經熟悉 Intune 和其功能。
 
 ## <a name="next-steps"></a>後續步驟
 

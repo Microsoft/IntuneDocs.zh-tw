@@ -1,6 +1,6 @@
 ---
 title: 使用 Intune 來補救 Microsoft Defender ATP 所找到的弱點 - Azure | Microsoft Docs
-description: 了解如何從「威脅和弱點管理」管理安全性工作，「威脅和弱點管理」是 Intune 主控台內 Microsoft Defender 進階威脅防護 (ATP) 的一部分。
+description: 了解如何從威脅和弱點管理中管理安全性工作，其為 Intune 主控台內 Microsoft Defender 進階威脅防護 (ATP) 的一部分。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270286"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167243"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 來補救 Microsoft Defender ATP 識別出的弱點  
 
-當您整合 Intune 與 Microsoft Defender 進階威脅防護 (ATP) 時，可利用 ATP 的威脅和弱點管理 (TVM)，並使用 Intune 來補救 TVM 識別出的端點弱點。 此整合會產生一種以風險為基礎的方法來探索及優先處理弱點，可改善整個環境中的補救回應時間。  
+當您整合 Intune 與 Microsoft Defender 進階威脅防護 (ATP) 時，可利用 ATP 的威脅和弱點管理 (TVM)，並使用 Intune 來補救 TVM 識別出的端點弱點。 這項整合會產生一種以風險為基礎的方法來探索及優先處理弱點，可改善整個環境中的補救回應時間。  
 
 [威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) \(部分機器翻譯\) 為 [Microsoft Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) \(部分機器翻譯\) 的一部分。  
 
@@ -37,13 +37,15 @@ ms.locfileid: "68270286"
 接受工作時，Intune 管理員接著會透過 Intune，使用提供來作為安全性工作一部分的指引來補救弱點。  
 
 進行補救的常見動作包括：  
+
 - **封鎖**應用程式執行  
 - **部署**作業系統更新以降低弱點的風險。  
 - **修改**登錄值。  
 - **停用**或**啟用**會對弱點產生作用的設定。  
 - **需要注意**會在未提供任何適當的建議時，為管理員警示威脅。  
 
-範例工作流程：  
+範例工作流程：
+
 - 在 Microsoft Defender ATP 內，發現了名為 Contoso Media Player v4 之應用程式的弱點，而管理員建立了安全性工作來更新該應用程式。 Contoso Media Player 是使用 Intune 部署的非受控應用程式。  
 
   此安全性工作會出現在 Intune 主控台中且狀態為「擱置」：  
@@ -58,16 +60,19 @@ ms.locfileid: "68270286"
 
 - 完成補救之後，Intune 管理員會開啟安全性工作並選取 [完成工作]  。  系統會針對 Intune 及在 ATP 中更新補救狀態，而安全性管理員會確認已修訂的弱點狀態。  
 
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
 
 **訂閱**：  
+
 - Microsoft Intune  
 - Microsoft Defender 進階威脅防護 ([註冊免費試用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink))。  
 
 **適用於 ATP 的 Intune 設定**：  
+
 - 設定與 Microsoft Defender ATP 的服務對服務連線。  
 - 使用 **Microsoft Defender ATP (Windows 10 Desktop)** 的設定檔類型，來將合規性政策部署至將由 ATP 評估風險的裝置。
-  如需如何設定 Intune 來與 ATP 一同運作的相關資訊，請參閱[在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)。  
+
+  如需如何設定 Intune 來與 ATP 一同運作的相關資訊，請參閱[在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)。  
 
 ## <a name="work-with-security-tasks"></a>使用安全性工作  
 
@@ -89,6 +94,6 @@ ms.locfileid: "68270286"
 補救成功之後，ATP 中風險暴露程度的分數就會根據來自已補救裝置的新資訊而下降。 
 
 ## <a name="next-steps"></a>後續步驟
-深入了解 Intune 和 [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-檢閱 Intune [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense)  
+深入了解 Intune 和 [Microsoft Defender ATP](advanced-threat-protection.md)  
+檢閱 Intune [Mobile Threat Defense](mobile-threat-defense.md)  
 檢閱 Microsoft Defender ATP 中的[威脅和弱點管理儀表板](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) \(部分機器翻譯\)

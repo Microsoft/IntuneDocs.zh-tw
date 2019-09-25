@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080039"
+ms.locfileid: "71094667"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
@@ -43,7 +43,7 @@ ms.locfileid: "71080039"
 - **指派**：定義哪些使用者可以存取哪些使用者/裝置的[角色指派]( assign-role.md)清單。 一個角色可以有多個指派，而一個使用者可以位於多個指派中。
 
 ### <a name="built-in-roles"></a>內建角色
-您可以將內建角色指派給群組，而無須進行進一步的設定。 您無法刪除或編輯內建角色的名稱、描述、類型或權限。 如需每個內建角色權限的完整清單，請參閱 [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Intune RBAC 資料表)。
+您可以將內建角色指派給群組，而無須進行進一步的設定。 您無法刪除或編輯內建角色的名稱、描述、類型或權限。
 
 - **技術服務人員**：對使用者和裝置執行遠端工作，並可將應用程式或原則指派給使用者或裝置。
 - **Apple 設定檔管理員**：管理相容性原則、組態設定檔、Apple 註冊、公司裝置識別碼，以及安全性基準。

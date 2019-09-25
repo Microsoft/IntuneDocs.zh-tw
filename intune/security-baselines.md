@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 51f9dcd7a42951d42671888c9ceebcdd57458654
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815466"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166956"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -74,8 +74,8 @@ ms.locfileid: "70815466"
 下列安全性基準執行個體可以搭欸 Intune 使用。 使用連結來檢視每個基準最近執行個體的設定。 
 
 - **MDM 安全性基準**
-  - [2019 年 5 月的 MDM 安全性基準](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
-  - [預覽：2018 年 10 月的 MDM 安全性基準](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
+  - [2019 年 5 月的 MDM 安全性基準](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [預覽：2018 年 10 月的 MDM 安全性基準](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Microsoft Defender ATP 基準**  
   (若要使用此基準，您的環境必須滿足使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的先決條件)  。

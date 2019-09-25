@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071633"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167413"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -105,7 +105,7 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 
 - **沒有使用者名稱關聯：** 在 Knox 入口網站中的 [Device details]  \(裝置詳細資訊\) 底下，將所新增裝置的 [User ID]  \(使用者識別碼\) 和 [Password]  \(密碼\) 欄位保留空白。 此選項會要求使用者在註冊至 Intune 時，必須輸入使用者名稱與密碼。
 
-- **有使用者名稱關聯：** 在 Knox 入口網站的 [Device details]  \(裝置詳細資料\) 底下，為已新增的裝置提供 [User ID]  \(使用者識別碼\) (例如已指派使用者的使用者名稱，或是[裝置註冊管理員](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帳戶)。 此選項會在使用者註冊至 Intune 時預先填入使用者名稱，並要求使用者輸入密碼。
+- **有使用者名稱關聯：** 在 Knox 入口網站的 [Device details]  \(裝置詳細資料\) 底下，為已新增的裝置提供 [User ID]  \(使用者識別碼\) (例如已指派使用者的使用者名稱，或是[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶)。 此選項會在使用者註冊至 Intune 時預先填入使用者名稱，並要求使用者輸入密碼。
 
 > [!NOTE]
 >

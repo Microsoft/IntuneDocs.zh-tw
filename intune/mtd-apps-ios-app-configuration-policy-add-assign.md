@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660960"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166833"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 新增並指派 Mobile Threat Defense (MTD) 應用程式  
 
@@ -35,8 +35,8 @@ ms.locfileid: "68660960"
 下列步驟必須在 [Azure 入口網站](https://portal.azure.com/)中完成。 確定您已熟悉下列程序：
 
 - [將應用程式新增至 Intune](apps-add.md)。
-- [將 iOS 應用程式設定原則新增至 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
-- [使用 Intune 指派應用程式](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+- [將 iOS 應用程式設定原則新增至 Intune](app-configuration-policies-use-ios.md)。
+- [使用 Intune 指派應用程式](apps-deploy.md)。
 
 > [!TIP]
 > Intune 公司入口網站可作為 Android 裝置上的代理程式，讓使用者可以透過 Azure AD 檢查其身分識別。
@@ -136,7 +136,7 @@ ms.locfileid: "68660960"
   - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](store-apps-android.md) 的指示。 在**步驟 7** 使用此 [Wandera Mobile 應用程式市集 URL](https://play.google.com/store/apps/details?id=com.wandera.android)。 針對 [最基本的作業系統]  ，選取 [Android 5.0]  。
 
 - **iOS**
-  - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios) 的指示。 針對 **Appstore URL**，在**步驟 11**使用此 [Wandera Mobile 應用程式市集 URL](https://itunes.apple.com/app/wandera/id605469330) \(英文\)。
+  - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](store-apps-ios.md) 的指示。 針對 **Appstore URL**，在**步驟 11**使用此 [Wandera Mobile 應用程式市集 URL](https://itunes.apple.com/app/wandera/id605469330) \(英文\)。
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 應用程式設定原則來設定您的 MTD 應用程式  
 
