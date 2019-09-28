@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,20 +16,20 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8a4e6cbf2d9edcff83ae756c2dbcf098cae0ae54
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798393"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "71301866"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-疑難排解入口網站可協助技術服務人員和 Intune 系統管理員檢視使用者資訊，以解決使用者協助要求。 包含技術服務人員的組織，可以指派**技術支援中心操作員**給使用者群組。 技術支援中心操作員角色現在可以使用 [疑難排解] 窗格。
+疑難排解入口網站可協助技術服務人員和 Intune 系統管理員檢視使用者資訊，以解決使用者協助要求。 包含技術服務人員的組織，可以指派**技術支援中心操作員**給使用者群組。 技術支援中心操作員角色現在可以使用 [疑難排解]  窗格。
 
-[疑難排解] 窗格也會顯示使用者的註冊問題。 其中包含問題的詳細資料與建議的補救步驟，可協助系統管理員和技術服務人員針對相關問題進行疑難排解。 未擷取特定註冊問題，某些錯誤可能也沒有補救建議。
+[疑難排解]  窗格也會顯示使用者的註冊問題。 其中包含問題的詳細資料與建議的補救步驟，可協助系統管理員和技術服務人員針對相關問題進行疑難排解。 未擷取特定註冊問題，某些錯誤可能也沒有補救建議。
 
 如需新增技術支援中心操作員角色的步驟，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Intune](/intune/role-based-access-control)
 
@@ -45,27 +44,26 @@ ms.locfileid: "58798393"
 
 ## <a name="to-review-troubleshooting-details"></a>檢閱疑難排解詳細資料
 
-在 [疑難排解] 窗格中，選擇 [選取使用者] 來檢視使用者資訊。 使用者資訊可協助您了解使用者與其裝置的目前狀態。  
+在 [疑難排解] 窗格中，選擇 [選取使用者]  來檢視使用者資訊。 使用者資訊可協助您了解使用者與其裝置的目前狀態。  
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格上，選擇 [疑難排解]。
-4. 按一下 [選取] 選取使用者進行疑難排解。
-5. 鍵入名稱或電子郵件地址來選取使用者。 按一下 [選取]。 在 [疑難排解] 窗格中，會顯示使用者的疑難排解資訊。 下表說明該資訊。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在 [Intune]  窗格上，選擇 [疑難排解]  。
+4. 按一下 [選取]  選取使用者進行疑難排解。
+5. 鍵入名稱或電子郵件地址來選取使用者。 按一下 [選取]  。 在 [疑難排解] 窗格中，會顯示使用者的疑難排解資訊。 下表說明該資訊。
 
 > [!Note]  
-> 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解] 窗格。
+> 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解]  窗格。
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>疑難排解儀表板的區域
 
-您可以使用 [疑難排解] 窗格檢閱使用者資訊。
+您可以使用 [疑難排解]  窗格檢閱使用者資訊。
 
-![](/intune/media/troubleshooting-dash.png)
+![針對儀表板進行疑難排解，並使用下表所述的編號區域](/intune/media/troubleshooting-dash.png)
 
 | 區域 | 名稱 | 說明 |
 | ---  | ---  | ---         |
-| 1.   | 帳戶狀態  | 顯示目前 Intune 租用戶的狀態是 [使用中] 或 [非使用中]。       |
-| 2.   | 使用者選取  | 目前所選使用者的名稱。 按一下 [變更使用者] 選擇新的使用者。       |
+| 1.   | 帳戶狀態  | 顯示目前 Intune 租用戶的狀態是 [使用中]  或 [非使用中]  。       |
+| 2.   | 使用者選取  | 目前所選使用者的名稱。 按一下 [變更使用者]  選擇新的使用者。       |
 | 3.   | 使用者狀態  | 顯示使用者的 Intune 授權狀態、裝置數目、每部裝置的合規性、應用程式數目，以及應用程式合規性。       |
 | 4.   | 使用者資訊  | 使用清單來選取要在窗格中檢閱的詳細資料。 <br>您可以選取： <ul><li>用戶端應用程式<li>合規性政策<li> 設定原則<li>應用程式防護原則 <li>註冊限制</ul>      |
 | 5.   | 群組成員資格  | 顯示所選使用者所屬的目前群組。       |
@@ -108,7 +106,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection status
 
-An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -121,7 +119,7 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 
 ## App protection policies reference
 
-An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 ### Properties
 
@@ -154,7 +152,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ## Compliance policies reference
 
-Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
 ### Properties
 
@@ -186,7 +184,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -199,7 +197,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ## Configuration policies reference
 
-An app configuration policy is available to mobile apps with vendor-specific configuration. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
 ### Properties
 
@@ -232,7 +230,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -252,7 +250,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | 表格欄位 | 說明 |
 |-------------|----------|
 | 註冊開始 | 使用者首次開始註冊時的開始時間。 |
-| 作業系統 | 裝置的作業系統。 |
+| OS | 裝置的作業系統。 |
 | OS 版本 | 裝置的作業系統版本。 |
 | 失敗 | 失敗的原因。 |
 
@@ -294,13 +292,13 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 ## <a name="collect-available-data-from-mobile-device"></a>從行動裝置收集可用的資料
 
 針對使用者的裝置問題進行疑難排解時，使用下列資源來協助收集裝置資料：
-  - [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
-  - [使用詳細資訊記錄來協助公司支援人員修正裝置問題](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
-  - [使用 USB 纜線將 Android 記錄傳送給公司支援人員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-  - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
-  - [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
+- [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [使用詳細資訊記錄來協助公司支援人員修正裝置問題](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+- [使用 USB 纜線將 Android 記錄傳送給公司支援人員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+- [將 Android 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 您可以進一步了解以角色為基礎的系統管理控制 (RBAC)，來定義組織裝置中的角色、行動應用程式管理、資料保護工作。 如需詳細資訊，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Intune](/intune/role-based-access-control)。
 

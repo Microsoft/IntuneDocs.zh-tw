@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ed863378616f8001beab89177c642404287e7d3
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: 57a860edd99bfbbd41ff7df8fd98d0343f4f5ba6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59424932"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304105"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Windows 8.1 設定將裝置標示為相容或不相容
 
@@ -37,12 +36,12 @@ ms.locfileid: "59424932"
 
 ## <a name="before-you-begin"></a>開始之前
 
-[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]，選取 [Windows Phone 8.1] 或 [Windows 8.1 及更新版本]。
+[建立合規性政策](create-compliance-policy.md#create-the-policy)。 針對 [平台]  ，選取 [Windows Phone 8.1]  或 [Windows 8.1 及更新版本]  。
 
 ## <a name="device-properties"></a>裝置內容
 
-- [所需的最低 OS]：輸入允許的最低版本。 當裝置不符合最低 OS 版本需求時，便會回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，然後便可存取公司資源。
-- [允許的最高 OS 版本]：輸入允許的最高版本。 當裝置使用的 OS 版本比規則中所輸入的版本還新時，系統就會封鎖對公司資源的存取。 系統會要求使用者連絡其 IT 管理員。在您變更規則以允許該 OS 版本之前，裝置無法存取組織資源。
+- [所需的最低 OS]  ：輸入允許的最低版本。 當裝置不符合最低 OS 版本需求時，便會回報為不相容。 會顯示如何升級的資訊連結。 終端使用者可以選擇升級其裝置，然後便可存取公司資源。
+- [允許的最高 OS 版本]  ：輸入允許的最高版本。 當裝置使用的 OS 版本比規則中所輸入的版本還新時，系統就會封鎖對公司資源的存取。 系統會要求使用者連絡其 IT 管理員。在您變更規則以允許該 OS 版本之前，裝置無法存取組織資源。
 
 Windows 8.1 電腦會傳回版本 **3**。 若針對 Windows 將 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows 8.1，還是會回報為不相容。
 
@@ -51,7 +50,7 @@ Windows 8.1 電腦會傳回版本 **3**。 若針對 Windows 將 OS 版本規則
 ### <a name="password"></a>密碼
 
 - **需要密碼才可解除鎖定行動裝置**：**要求**使用者必須輸入密碼以存取其裝置。
-- **簡單密碼**：設定為 [封鎖] 時，使用者將無法建立 **1234** 或 **1111** 之類的簡單密碼。 設定為 [未設定] 時，使用者可以建立 **1234** 或 **1111** 之類的密碼。
+- **簡單密碼**：設定為 [封鎖]  時，使用者將無法建立 **1234** 或 **1111** 之類的簡單密碼。 設定為 [未設定]  時，使用者可以建立 **1234** 或 **1111** 之類的密碼。
 - **最小密碼長度**：輸入密碼至少須包含的位數或字元數。
 
   對於執行 Windows 並使用 Microsoft 帳戶存取的裝置，合規性原則在下列情況下將無法正確評估：
@@ -60,7 +59,7 @@ Windows 8.1 電腦會傳回版本 **3**。 若針對 Windows 將 OS 版本規則
 
 - **密碼類型**：選擇密碼是否應該只包含**數值**字元，或是應該混合數字和其他字元 (**英數字元**)。
   
-  - **密碼中的非英數字元數目**：若將 [需要的密碼類型] 設定為 [英數字元]，則此設定可指定密碼至少須包含的最少字元集數目。 四個字元集為：
+  - **密碼中的非英數字元數目**：若將 [需要的密碼類型]  設定為 [英數字元]  ，則此設定可指定密碼至少須包含的最少字元集數目。 四個字元集為：
     - 小寫字母
     - 大寫字母
     - 符號
@@ -72,14 +71,14 @@ Windows 8.1 電腦會傳回版本 **3**。 若針對 Windows 將 OS 版本規則
     - 或者，如果字元集數目下限超過兩個
 
 - **停止活動幾分鐘後需要輸入密碼**：輸入在閒置多久後，使用者必須重新輸入密碼。
-- **密碼到期 (天數)**：選取密碼到期且必須建立新密碼前的天數。
+- **密碼到期 (天數)** ：選取密碼到期且必須建立新密碼前的天數。
 - **避免重複使用前幾個密碼**：輸入不可使用先前所使用的多少個密碼。
 
 ### <a name="encryption"></a>加密
 
 - **在行動裝置上要求加密**：**要求**裝置必須加密以連線至資料存放區資源。
 
-選取 [確定] > [建立] 儲存您的變更。
+選取 [確定]   > [建立]  儲存您的變更。
 
 ## <a name="next-steps"></a>後續步驟
 

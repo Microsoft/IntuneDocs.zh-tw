@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461153"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302166"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
 
@@ -78,15 +77,14 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 
 ### <a name="configure-general-settings"></a>設定一般設定
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選擇 [All services] (所有服務) > [Intune]。 Intune 位於 [Monitoring + Management] (監視 + 管理) 區段。
-3. 在 [Intune] 窗格中，選擇 [裝置設定]。
-2. 在 [裝置設定] 窗格的 [管理] 區段下，選擇 [設定檔]。
-5.  在 [設定檔] 窗格中，選擇 [建立設定檔]。
-6.  在 [建立設定檔] 窗格中，輸入 iOS 教育設定檔的 [名稱] 和 [描述]。
-7.  從 [平台] 下拉式清單中，選擇 [iOS]。
-8.  從 [設定檔類型] 下拉式清單中，選擇 [教育]。
-9.  選擇 [設定]  >  [設定]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在 [Intune]  窗格中，選擇 [裝置設定]  。
+2. 在 [裝置設定]  窗格的 [管理]  區段下，選擇 [設定檔]  。
+5. 在 [設定檔] 窗格中，選擇 [建立設定檔]  。
+6. 在 [建立設定檔]  窗格中，輸入 iOS 教育設定檔的 [名稱]  和 [描述]  。
+7. 從 [平台]  下拉式清單中，選擇 [iOS]  。
+8. 從 [設定檔類型]  下拉式清單中，選擇 [教育]  。
+9. 選擇 [設定]   >  [設定]  。
 
 
 在下一個章節中，您需要建立憑證，這樣才能在老師和學生的 iPad 之間建立一種信任關係。 憑證是用來順暢且無訊息地驗證裝置之間的連線，而不需要輸入使用者名稱和密碼。
@@ -100,17 +98,17 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 
 ### <a name="configure-teacher-certificates"></a>設定老師憑證
 
-在 [教育] 窗格中，選擇 [教師憑證]。
+在 [教育]  窗格中，選擇 [教師憑證]  。
 
 #### <a name="configure-teacher-root-certificate"></a>設定老師根憑證
 
-在 [老師根憑證] 底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
+在 [老師根憑證]  底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
 - 副檔名 .cer (DER 或 Base64 編碼) 
 - 副檔名 .P7B (包含或不包含完整的鏈結)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>設定老師 PKCS#12 憑證
 
-在 [老師 PKCS #12 憑證] 下，設定下列值︰
+在 [老師 PKCS #12 憑證]  下，設定下列值︰
 
 - **主體名稱格式** - Intune 會自動在老師憑證的一般名稱前面加上 **leader**。 學生憑證的一般名稱前面會加上 **member**。
 - **憑證授權單位**：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 
@@ -120,24 +118,24 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 - **憑證有效期間** - 指定憑證到期之前的剩餘時間。
 您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 此值也必須低於發行 CA 憑證的剩餘有效期間。
 
-設定好憑證時，請選擇 [確定]。
+設定好憑證時，請選擇 [確定]  。
 
 ### <a name="configure-student-certificates"></a>設定學生憑證
 
-1.  在 [教育] 窗格中，選擇 [學生憑證]。
-2.  在 [學生憑證] 窗格中，從 [學生裝置憑證] 類型清單中，選擇 [1:1]。
+1. 在 [教育]  窗格中，選擇 [學生憑證]  。
+2. 在 [學生憑證]  窗格中，從 [學生裝置憑證]  類型清單中，選擇 [1:1]  。
 
 #### <a name="configure-student-root-certificate"></a>設定學生根憑證
 
-在 [學生根憑證] 底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
+在 [學生根憑證]  底下，選擇瀏覽按鈕。 選取以下副名檔的根憑證：
 - 副檔名 .cer (DER 或 Base64 編碼) 
 - 副檔名 .P7B (包含或不包含完整的鏈結)
 
 #### <a name="configure-student-pkcs12-certificate"></a>設定學生 PKCS#12 憑證
 
-在 [學生 PKCS #12 憑證] 下，設定下列值︰
+在 [學生 PKCS #12 憑證]  下，設定下列值︰
 
-- **主體名稱格式** -  Intune 會自動在老師憑證的一般名稱前面加上 **leader**。 學生憑證的一般名稱前面會加上 **member**。
+- **主體名稱格式** - Intune 會自動在老師憑證的一般名稱前面加上 **leader**。 學生憑證的一般名稱前面會加上 **member**。
 - **憑證授權單位**：在企業版 Windows Server 2008 R2 或更新版本上執行的企業憑證授權單位 (CA)。 不支援獨立 CA。 
 - **憑證授權單位名稱**：輸入您的憑證授權單位名稱。
 - **憑證範本名稱** - 輸入已新增至發行 CA 的憑證範本名稱。 
@@ -145,13 +143,13 @@ iOS 教育設定檔只支援 PFX 憑證。 不支援 SCEP 憑證。
 - **憑證有效期間** - 指定憑證到期之前的剩餘時間。
 您可以指定一個比憑證範本中指定之有效期間更低，而不是更高的值。 舉例來說，如果憑證範本中的憑證有效期間為兩年，您可以指定一年而不是五年的值。 此值也必須低於發行 CA 憑證的剩餘有效期間。
 
-設定好憑證時，請選擇 [確定]。
+設定好憑證時，請選擇 [確定]  。
 
 ## <a name="finish-up"></a>完成
 
-1.  在 [教育] 窗格中，選擇 [確定]。
-2.  在 [建立設定檔] 窗格中，選擇 [建立]。
-    
+1. 在 [教育]  窗格中，選擇 [確定]。
+2. 在 [建立設定檔]  窗格中，選擇 [建立]  。
+
 設定檔隨即建立，並出現在 [設定檔清單] 窗格上。
 
 針對當您將學校資料與 Azure AD 同步時所建立的課堂群組，將設定檔指派給群組中的學生裝置。請參閱[如何指派裝置設定檔](device-profile-assign.md)。

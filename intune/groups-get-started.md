@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/31/2019
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e912c14418d54321b0998dad3081f297ae81114d
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.openlocfilehash: 7837ab6e24c5d4fa848218b662cbd89dfbbe7b72
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867427"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71301890"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure 入口網站中的 Microsoft Intune 傳統群組
 
@@ -38,20 +37,20 @@ Azure AD 安全性群組支援使用者和裝置的所有 Intune 部署類型。
 
 Azure AD 中不提供您先前可能使用過的某些 Intune 群組功能︰
 
-- 將不再提供 [已取消群組的使用者] 與 [已取消群組的裝置] Intune 群組。
-- 從 Azure 入口網站中不存在的群組，[排除特定成員] 的選項。 不過，您可以搭配使用 Azure AD 安全性群組與進階規則來複寫這項行為。 例如，若要建立進階規則來包含安全性群組中 Sales 部門的所有人員，但排除職稱中有 "Assistant" 這個字的群組，您可以使用這個進階規則︰
+- 將不再提供 [已取消群組的使用者]  與 [已取消群組的裝置]  Intune 群組。
+- 從 Azure 入口網站中不存在的群組，[排除特定成員]  的選項。 不過，您可以搭配使用 Azure AD 安全性群組與進階規則來複寫這項行為。 例如，若要建立進階規則來包含安全性群組中 Sales 部門的所有人員，但排除職稱中有 "Assistant" 這個字的群組，您可以使用這個進階規則︰
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
-- Intune 傳統主控台中的 [所有受 Exchange ActiveSync 管理的裝置] 群組將不會移轉至 Azure AD。 不過，您仍然可以從 Azure 入口網站存取 EAS 受管理裝置的相關資訊。
+- Intune 傳統主控台中的 [所有受 Exchange ActiveSync 管理的裝置]  群組將不會移轉至 Azure AD。 不過，您仍然可以從 Azure 入口網站存取 EAS 受管理裝置的相關資訊。
 
 ## <a name="how-to-get-started"></a>如何開始使用？
 
 - 閱讀下列主題，以了解 Azure AD 安全性群組和其運作方式︰
-    -  [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
--  請確定將需要建立群組的系統管理員新增至 [Intune 服務管理員] Azure AD 角色。 Azure AD 服務系統管理員角色沒有 [管理群組] 權限。
--  如果您的 Intune 群組已使用 [排除特定成員] 選項，則請決定是否可以重新設計這些群組，而沒有排除項目，或者是否需要進階規則來符合商業需求。
+  - [使用 Azure Active Directory 群組來管理資源的存取權](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+  - [在 Azure Active Directory 中管理群組](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+  - [使用屬性來建立進階規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+- 請確定將需要建立群組的系統管理員新增至 [Intune 服務管理員]  Azure AD 角色。 Azure AD 服務系統管理員角色沒有 [管理群組]  權限。
+- 如果您的 Intune 群組已使用 [排除特定成員]  選項，則請決定是否可以重新設計這些群組，而沒有排除項目，或者是否需要進階規則來符合商業需求。
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune 群組發生什麼事？

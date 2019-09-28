@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239415"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中註冊組織提供的 iOS 裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "71166788"
 
 ## <a name="what-is-apple-dep"></a>什麼是 Apple DEP？
 
-您的組織可能已透過稱為「Apple 裝置註冊計劃」  (DEP) 的某項服務來購買其裝置。 Apple DEP 可讓組織購買大量 iOS 或 macOS 裝置。 接著，組織可以在其慣用的行動裝置管理提供者 (例如 Intune) 內設定和管理這些裝置。 如果您是系統管理員，而且想要取得 Apple DEP 的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md)。  
+您的組織可能已透過稱為「Apple 裝置註冊計劃」  (DEP) 的某項服務來購買其裝置。 Apple DEP 可讓組織購買大量 iOS 或 macOS 裝置。 接著，組織可以在其慣用的行動裝置管理提供者 (例如 Intune) 內設定和管理這些裝置。 如果您是系統管理員，而且想要取得 Apple DEP 的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)。  
 
 ## <a name="set-up-your-ios-device"></a>設定您的 iOS 裝置
 

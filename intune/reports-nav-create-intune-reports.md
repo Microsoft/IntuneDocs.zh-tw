@@ -6,9 +6,8 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798114"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303292"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 資料倉儲
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用 Intune 資料倉儲來建置報表，以深入了解您的企業行動環境。 例如，某些報表包含：
--   Intune 中使用者註冊趨勢，以最佳化授權採購
--   應用程式和 OS 版本分解，以檢閱行動裝置的狀態
--   註冊和裝置合規性趨勢，以順暢地轉出原則更新
+- Intune 中使用者註冊趨勢，以最佳化授權採購
+- 應用程式和 OS 版本分解，以檢閱行動裝置的狀態
+- 註冊和裝置合規性趨勢，以順暢地轉出原則更新
 
 ## <a name="data-warehouse-benefits"></a>資料倉儲的優點
 
 資料倉儲可讓您存取 Azure 入口網站以外之行動環境的詳細資訊。 您可以使用 Intune 資料倉儲存取：
 
-  -  歷程 Intune 資料
-  -  以每日步調重新整理的資料
-  -  使用 OData 標準的資料模型
+- 歷程 Intune 資料
+- 以每日步調重新整理的資料
+- 使用 OData 標準的資料模型
 
 > [!Note]
 > 如果使用共同管理的行動裝置管理 (MDM) 搭配 System Center Configuration Manager 與 Microsoft Intune，您需要從 Configuration Manager 擷取資料。 Intune 資料倉儲只包含 Intune 資料。 您可以針對自訂報表使用 Configuration Manager Power BI 儀表板。 如需詳細資訊，請參閱 "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (宣告適用於 System Center Configuration Manager 的 Power BI 解決方案範本) 和 [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Dynamics 365 的 Power BI 內容)。

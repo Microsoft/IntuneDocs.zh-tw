@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37f76f0e4a382dc356f6d5994c31178ad6f496df
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 22bdb41d8af69ed7e52ee3bcbc7775ac1d6768a6
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239405"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>取得 macOS 裝置的修復金鑰
 
@@ -47,7 +47,7 @@ ms.locfileid: "71166512"
 
 ## <a name="it-pro-support"></a>IT 專業人員支援
 
-如果您是 IT 支援人員，而且想要設定和管理 macOS 裝置的 FileVault 加密，請參閱搭配[Intune 使用裝置加密](https://docs.microsoft.com/intune/encrypt-devices.md)。
+如果您是 IT 支援人員，而且想要設定和管理 macOS 裝置的 FileVault 加密，請參閱搭配[Intune 使用裝置加密](https://docs.microsoft.com/intune/encrypt-devices)。
 
 ## <a name="next-steps"></a>後續步驟
 

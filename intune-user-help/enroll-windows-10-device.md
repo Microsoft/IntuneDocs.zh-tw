@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527949"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302470"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>使用 Intune 公司入口網站註冊 Windows 10 裝置
 
@@ -45,7 +45,7 @@ Windows 10 已在各種裝置類型上獲得支援，包括桌面、電話及平
 
     ![選取 [存取公司或學校帳戶]](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. 輸入您公司或學校的電子郵件地址，然後選取 [下一步]  。  
+4. 若要前往貴組織的 Intune 登入頁面，請輸入您的公司或學校電子郵件地址。 然後選取 [下一步]  。  
 
 
    ![輸入您的工作或學校帳戶](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

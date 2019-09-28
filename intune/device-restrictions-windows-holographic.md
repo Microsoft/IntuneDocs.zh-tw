@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565242"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302303"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 允許或限制功能的 Windows Holographic for Business 裝置設定
 
@@ -91,9 +90,9 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
   - **單一應用程式 kiosk**：此設定檔可讓裝置只在單一應用程式上執行。 當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
   - **多應用程式 Kiosk**：此設定檔可讓裝置在多個應用程式上執行。 只有您新增的應用程式才可供使用者使用。 多應用程式 kiosk (或固定用途裝置) 的好處是讓個人只存取所需的應用程式，來為個人提供一個簡單明瞭的體驗。 此外，還可從其檢視中移除不需要的應用程式。 
   
-    當您為多應用程式 kiosk 體驗新增應用程式時，也會新增 [開始] 功能表配置檔案。 [[開始] 功能表配置檔案](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune)包含可用於 Intune 中的範例 XML。 
+    當您為多應用程式 kiosk 體驗新增應用程式時，也會新增 [開始] 功能表配置檔案。 [[開始] 功能表配置檔案](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others)包含可用於 Intune 中的範例 XML。 
 
-#### <a name="single-app-kiosks"></a>單一應用程式 Kiosk
+### <a name="single-app-kiosks"></a>單一應用程式 Kiosk
 
 輸入下列設定：
 
@@ -101,7 +100,7 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
 
     針對在面對大眾的環境中且已啟用自動登入功能的 kiosk，應該使用權限最低 (例如本機標準使用者帳戶) 的使用者類型。 若要設定 Azure Active Directory (AD) 帳戶以使用 kiosk 模式，請使用 `AzureAD\user@contoso.com` 格式。
 
-- **應用程式的應用程式使用者模型識別碼 (AUMID)**：輸入 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
+- **應用程式的應用程式使用者模型識別碼 (AUMID)** ：輸入 kiosk 應用程式的 AUMID。 若要深入了解，請參閱 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)(尋找已安裝應用程式的應用程式使用者模型識別碼)。
 
 ## <a name="reporting-and-telemetry"></a>報告和遙測
 

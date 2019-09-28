@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238983"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>裝置已加密，但應用程式不然
 
@@ -50,7 +50,7 @@ ms.locfileid: "71167437"
 
 某些 7.0 版與更新版本 Android 裝置加密資料的方式，與特定 Android 平台標準不一致。 這些加密方法會將裝置資訊放在風險之下。 因此，不支援這些裝置。
 
-如需支援的 Android 裝置的非完整清單，請參閱[Intune 中支援的作業系統和瀏覽器](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)一文。 如果未列出您的裝置，請參閱裝置製造商或聯絡支援人員。
+如需支援的 Android 裝置的非完整清單，請參閱[Intune 中支援的作業系統和瀏覽器](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)一文。 如果未列出您的裝置，請參閱裝置製造商或聯絡支援人員。
 
 > [!Note]
 > Microsoft 會與製造商合作來解決我們在測試時所發現的任何問題，或是使用者回報給我們的任何問題。 只要有新的資訊，本文會隨時更新。

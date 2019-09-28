@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7d51d504f63e9a9c942bbcbc689c67bc63d74a2c
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798097"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71304935"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移動您的 Intune 資料倉儲帳戶資料 
 
@@ -43,16 +42,16 @@ ms.locfileid: "58798097"
 Azure 入口網站檢視中的某些趨勢圖表會重設。 您可以在 **Graph** 中執行以下的指令碼，即可備份這些圖表：   
 
 ### <a name="terms--conditions-acceptance-reports"></a>條款和條件接受報表
-1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [裝置註冊] -> [條款和條件]。
-2. 至於每個 [條款和條件]項目，選取 [接受報表]，然後選取 [匯出]。
+1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune]   -> [裝置註冊]   -> [條款和條件]  。
+2. 至於每個 [條款和條件]  項目，選取 [接受報表]  ，然後選取 [匯出]  。
 3. 將報表儲存在本機。
  
 ### <a name="app-protection-reports"></a>應用程式保護報表  
-1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [用戶端應用程式] -> [應用程式保護狀態]。
+1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune]   -> [用戶端應用程式]   -> [應用程式保護狀態]  。
 2. 按一下下載圖示 （⤓） 來儲存每個報表。
 
 ### <a name="device-configuration-charts"></a>裝置設定圖表 
-1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [DeviceConfiguration]。
+1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune]   -> [DeviceConfiguration]  。
 2. 使用 Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)，下載圖表背後的資料。 
     - 如需所有裝置的所有裝置組態設定檔部署狀態，請參閱[裝置部署狀態](https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity/content)。
 
@@ -64,7 +63,7 @@ Azure 入口網站檢視中的某些趨勢圖表會重設。 您可以在 **Grap
     > 您必須擁有有效的權杖，才能存取裝置組態和部署狀態資訊。
 
 ## <a name="device-enrollment-charts"></a>裝置註冊圖表
-1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune] -> [DeviceEnrollment]。
+1. 在 Azure 入口網站中，依序瀏覽至 [Microsoft Intune]   -> [DeviceEnrollment]  。
 2. 使用 Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)，下載圖表背後的資料。
     - 如需註冊狀態，請複製這個[註冊狀態查詢](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content)並將它貼到 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)。
     - 如需本週排名在前的註冊失敗，請複製這個[註冊失敗查詢](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content)並將它貼到 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)。
@@ -80,7 +79,7 @@ Azure 入口網站檢視中的某些趨勢圖表會重設。 您可以在 **Grap
 
 客戶 X 要求在 1/06/2018 開始移動帳戶。 在回應要求時，客戶會收到一個連結，按一下這個連結就會開啟一個文件，裡面詳細說明如果他們想備份以前的資料倉儲，此時應該採取的步驟。 在 1/06/2018，資料倉儲以及它支援的圖表將會重設，並開始將資料儲存到新的資料中心。 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
- - 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
- - 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。
+- 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
+- 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。

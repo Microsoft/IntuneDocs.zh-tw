@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f7a14d605ae3d1a5a951f40ec789c50c847c455
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 132123b15073569c9a9601841579ca4592f27bd7
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565701"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71301924"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在執行 Windows Phone 8.1 之裝置上的 Microsoft Intune 電子郵件設定檔設定
 
@@ -30,11 +29,11 @@ ms.locfileid: "57565701"
 本文展示您可為執行 Windows Phone 8.1 之裝置設定的電子郵件設定檔設定。
 
 
-- **將所有設定只套用至 Windows Phone 8.1**：此設定可以在 Intune 傳統入口網站中設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]，則所有設定只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]，則這些設定也會套用於 Windows 10 行動裝置。
+- **將所有設定只套用至 Windows Phone 8.1**：此設定可以在 Intune 傳統入口網站中設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]  ，則所有設定只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]  ，則這些設定也會套用於 Windows 10 行動裝置。
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
-- **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]，例如 **user1@contoso.com** 或 [使用者主體名稱]，例如 **user1** 或 **user1@contoso.com**。
-- **AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]，將完整主體名稱作為電子郵件地址。
+- **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]  ，例如 **user1@contoso.com** 或 [使用者主體名稱]  ，例如 **user1** 或 **user1@contoso.com** 。
+- **AAD 的電子郵件地址屬性** - 每部裝置上產生使用者電子郵件地址的方式。 選取 [主要 SMTP 位址]  ，使用主要 SMTP 位址來登入 Exchange；或使用 [使用者主體名稱]  ，將完整主體名稱作為電子郵件地址。
 
 
 ## <a name="security-settings"></a>安全性設定
@@ -45,12 +44,12 @@ ms.locfileid: "57565701"
 
 ## <a name="synchronization-settings"></a>同步處理設定
 
-- **要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制] 來同步處理所有可用的電子郵件。
-- **同步排程** - 選取裝置用來同步處理 Exchange Server 資料的排程。 您也可以選取 [郵件送達時] 以在資料到達時立即同步處理資料，或 [手動 (使用此方式，裝置使用者必須啟動同步處理)]。
+- **要同步處理的電子郵件數量** - 選擇想要同步處理的電子郵件天數，或選取 [無限制]  來同步處理所有可用的電子郵件。
+- **同步排程** - 選取裝置用來同步處理 Exchange Server 資料的排程。 您也可以選取 [郵件送達時]  以在資料到達時立即同步處理資料，或 [手動  (使用此方式，裝置使用者必須啟動同步處理)]。
 
 ## <a name="content-sync-settings"></a>內容同步設定
 
 - **要同步處理的內容類型** - 選取想要同步至裝置的內容類型來源：
-    - **連絡人**
-    - **行事曆**
-    - **工作**
+  - **連絡人**
+  - **行事曆**
+  - **工作**

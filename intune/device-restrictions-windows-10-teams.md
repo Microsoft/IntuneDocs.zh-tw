@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 20621246f76810ba7efaac3cadbdde1a0229c923
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799306"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302352"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 團隊版裝置限制設定
 
@@ -34,18 +33,18 @@ ms.locfileid: "58799306"
 
 - **有人在房間時喚醒螢幕** - 可在裝置感應器偵測到室內有人時自動喚醒裝置。
 - **歡迎使用畫面上所顯示的會議資訊** - 啟用此選項可選擇顯示在 [歡迎使用] 畫面之 [會議]磚上的資訊。 您可以：
-    - **僅顯示召集人和時間**
-    - **顯示召集人、時間和主旨 (不會顯示私人會議的主旨)**
-- **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://**。
+  - **僅顯示召集人和時間**
+  - **顯示召集人、時間和主旨 (不會顯示私人會議的主旨)**
+- **歡迎使用畫面背景影像 URL** -啟用此設定以在 Windows 10 團隊版裝置的 [歡迎]  畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式，而且 URL 的開頭必須是 **https://** 。
 
 ## <a name="azure-operational-insights"></a>Azure Operational Insights
 
 - **Azure Operational Insights** - Azure Operational Insights 這個 Microsoft Operations Manager 套件組件會收集、儲存及分析來自 Windows 10 團隊版的記錄檔資料。
-若要連線到 Azure Operational Insights，您必須指定 [工作區識別碼] 和 [工作區金鑰]。
+若要連線到 Azure Operational Insights，您必須指定 [工作區識別碼]  和 [工作區金鑰]  。
 
 ## <a name="maintenance"></a>維護
 
-- **更新的維護期間** - 設定可以進行裝置更新的範圍。 您可以設定間隔的 [開始時間] 和 [持續時間 (小時)] (從 1 到 5 小時) 。
+- **更新的維護期間** - 設定可以進行裝置更新的範圍。 您可以設定間隔的 [開始時間]  和 [持續時間 (小時)]  (從 1 到 5 小時) 。
 
 ## <a name="wireless-projection"></a>無線投影
 
@@ -54,6 +53,6 @@ ms.locfileid: "58799306"
 - **Miracast 無線投影通道** - 選擇用來建立連線的 Miracast 通道。
 
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 使用[如何設定裝置限制設定](device-restrictions-configure.md)中的資訊進行儲存，並將設定檔指派給使用者和裝置。

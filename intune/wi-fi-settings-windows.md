@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884249"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239444"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中為 Windows 10 和更新版本裝置新增 Wi-Fi 設定
 
@@ -62,6 +62,9 @@ ms.locfileid: "67884249"
     
       > [!NOTE]
       > 當您儲存 Wi-Fi 設定檔時，基於安全性考量，不會顯示您所輸入的 PSK 值。 預先共用金鑰的水位線仍會顯示　[未設定]  ，即使 PSK 儲存在設定檔中也一樣。 若要變更 PSK，請輸入新的金鑰，並儲存設定檔。 如果您儲存 PSK、編輯政策，並將 PSK 保留空白，則仍會使用現有的 PSK。
+      
+      > [!IMPORTANT]
+      > 針對 profule 目標的所有裝置，PSK 都是相同的。 如果金鑰遭到入侵，任何裝置都可以使用它來連線到 Wi-fi 網路。 確保您的 Psk 安全，以避免未經授權的存取。
 
 - **公司 Proxy 設定**：選擇使用您組織內的 Proxy 設定。 選項包括：
   - **無**：不設定任何 Proxy 設定。
