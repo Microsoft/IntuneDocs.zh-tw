@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d0a113a30ad7394491552fdbc3b3fb300e0ae6df
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57333814"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71239588"
 ---
 
 
@@ -24,6 +24,10 @@ ms.locfileid: "57333814"
 
 - Surface Hub
 - Windows 10 (家用版、S、專業版、教育版和企業版)
+- Windows 10 Enterprise 2019 LTSC
+
+  如需有關管理執行 Windows 10 2019 LTSC 之裝置的詳細資訊，請參閱 [Windows 10 企業版 2019 LTSC 中的新功能](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019) \(部分機器翻譯\)
+  
 - Windows 10 Mobile
 - Windows 10 IoT 企業版 (x86、x64)
 - Windows 10 IoT 行動裝置企業版
@@ -31,10 +35,13 @@ ms.locfileid: "57333814"
 
   如需管理執行 Windows Holographic for Business 之裝置的詳細資訊，請參閱 [Window Holographic for Business 支援](../windows-holographic-for-business.md)。
 
+- Windows 10 Teams (Surface Hub)
+
+   如需有關管理執行 Windows 10 Teams 之裝置的詳細資訊，請參閱[使用 MDM 管理 Surface Hub](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub) \(部分機器翻譯\)
 - Windows Phone 8.1、Windows 8.1 RT、執行 Windows 8.1 (基本維護模式) 的電腦
 
 > [!NOTE]
-> Intune 無法用於管理 Windows Server 作業系統。 並非所有的 Intune 功能家用版 SKU 都支援
+> 並非所有 Windows 版本都支援透過 MDM 來設定所有可用的作業系統功能。 請參閱 [Windows 設定服務提供者參考文件](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) \(部分機器翻譯\)。每個 CSP 都會強調說明支援哪些 Windows 版本。
 
 使用 Enterprise Management + Security (EMS) 的客戶也可[使用 Azure Active Directory (Azure AD) 註冊 Windows 10 裝置](/intune/windows-enroll)。
 

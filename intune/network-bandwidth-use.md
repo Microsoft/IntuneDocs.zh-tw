@@ -6,30 +6,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-ms.reviewer: angerobe
+ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
-ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
+ms.openlocfilehash: e6d5e8d76a06ac45fed2b9759e519ffc7fabf7ec
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570789"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238317"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-本指南可協助 Intune 系統管理員了解 Intune 服務的網路需求。 您可以使用這項資訊來了解頻寬需求，以及 Proxy 設定所需的 IP 位址和連接埠設定。
+您可以使用此資訊來了解 Intune 部署的頻寬需求。
 
 ## <a name="average-network-traffic"></a>平均網路流量
 此表格列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。
@@ -74,12 +73,20 @@ Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網�
 如需有關如何使用 Proxy 伺服器快取內容的詳細資訊，請參閱您的 Proxy 伺服器解決方案的文件。
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>在電腦上使用背景智慧型傳送服務 (BITS)
-您可以在自己設定的小時時間內，於 Windows 電腦上使用 BITS 以減少網路頻寬。 您可以在 Intune 代理程式原則的 [網路頻寬] 頁面中設定 BITS 原則。
+您可以在自己設定的小時時間內，於 Windows 電腦上使用 BITS 以減少網路頻寬。 您可以在 Intune 代理程式原則的 [網路頻寬]  頁面中設定 BITS 原則。
 
 > [!NOTE]
 > 對於 Windows 上的 MDM 管理，只有 MobileMSI 應用程式類型的作業系統管理介面會使用 BITS 進行下載。 AppX/MsiX 會使用自己的非 BITS 下載堆疊，而且 Win32 應用程式會透過 Intune 代理程式使用傳遞最佳化，而非 BITS。
 
-若要深入了解 BITS 和 Windows 電腦，請參閱 TechNet Library 中的[背景智慧型傳送服務](http://technet.microsoft.com/library/bb968799.aspx)。
+若要深入了解 BITS 和 Windows 電腦，請參閱 TechNet Library 中的[背景智慧型傳送服務](https://technet.microsoft.com/library/bb968799.aspx)。
+
+### <a name="delivery-optimization"></a>傳遞最佳化
+傳遞最佳化讓您能夠使用 Intune，來減少您的 Windows 10 裝置下載應用程式和更新時的頻寬耗用量。 藉由使用自我組織的分散式快取，您可以從傳統伺服器和替代來源 (例如網路對等) 提取下載。
+
+若要查看傳遞最佳化所支援的 Windows 10 版本和內容類型的完整清單，請參閱[適用於 Windows 10 更新的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements) \(部分機器翻譯\) 一文。
+
+您可以[設定傳遞最佳化](delivery-optimization-settings.md)作為裝置組態設定檔的一部分。
+
 
 ### <a name="use-branchcache-on-computers"></a>在電腦上使用 BranchCache
 Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 下列作業系統支援 BranchCache：
@@ -93,78 +100,13 @@ Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 �
 
 在電腦上安裝 Intune 用戶端時，預設會啟用 BranchCache 和分散式快取模式。 但如果群組原則已停用 BranchCache，Intune 不會覆寫該原則，因此 BranchCache 會保持停用。
 
-如果使用 BranchCache，請與組織中其他系統管理員合作管理群組原則和 Intune 防火牆原則。 請確定他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](http://technet.microsoft.com/library/hh831696.aspx)。
+如果使用 BranchCache，請與組織中其他系統管理員合作管理群組原則和 Intune 防火牆原則。 請確定他們沒有部署停用 BranchCache 或防火牆例外的原則。 如需 BranchCache 的詳細資訊，請參閱 [BranchCache 概觀](https://technet.microsoft.com/library/hh831696.aspx)。
 
-## <a name="network-communication-requirements"></a>網路通訊需求
-
-可讓您管理的裝置與雲端式服務所需的端點之間進行網路通訊。
-
-Intune 屬於僅限雲端的服務，因此不需要內部部署基礎結構，例如伺服器或閘道。
-
-若要管理位於防火牆和 Proxy 伺服器後方的裝置，您必須啟用 Intune 的通訊功能。
-
-- Proxy 伺服器必須同時支援 **HTTP (80)** 和 **HTTPS (443)**，因為 Intune 用戶端會使用這兩種通訊協定
-- 針對某些工作 (例如下載軟體更新)，Intune 會需要未驗證的 Proxy 伺服器存取 manage.microsoft.com
-
-您可以修改個別用戶端電腦上的 Proxy 伺服器設定。 也可以使用群組原則設定，針對位於指定 Proxy 伺服器後方的所有用戶端電腦變更設定。
+> [!NOTE]
+> 您可以使用 Microsoft Intune 來管理 Windows 電腦，以[作為具備行動裝置管理 (MDM) 的行動裝置](windows-enroll.md)或作為具備 Intune 軟體用戶端的電腦。 Microsoft 建議客戶盡可能[使用 MDM 管理解決方案](windows-enroll.md)。 以這種方式管理時，不支援 BranchCache。 如需詳細資訊，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md)。
 
 
-<!--
-> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
+## <a name="next-steps"></a>後續步驟
 
-受管理裝置需要進行可讓 [所有使用者] 穿過防火牆存取服務的設定。
+[檢閱 Intune 的端點](intune-endpoints.md)
 
-下表列出 Intune 用戶端存取的連接埠和服務：
-
-|**網域**|**IP 位址**|
-|---------------------|-----------|
-|login.microsoftonline.com | 更多資訊請參閱 [Office 365 URL 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
-|portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
-| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
-|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 40.83.123.72<br>13.76.177.110<br>52.169.9.87<br>52.174.26.23<br>104.40.82.191<br>13.82.96.212|
-|fei.msua01.manage.microsoft.com<br>portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com<br>fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com<br>fei.msua04.manage.microsoft.com<br>portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com<br>fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com<br>fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com<br>fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com<br>fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com<br>fei.amsua0202.manage.microsoft.com <br>portal.fei.amsua0202.manage.microsoft.com <br>m.fei.amsua0202.manage.microsoft.com<br>fei.amsua0402.manage.microsoft.com <br>portal.fei.amsua0402.manage.microsoft.com <br>m.fei.amsua0402.manage.microsoft.com|52.160.70.20<br>52.168.54.64 |
-|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com<br>fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com<br>fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com<br>fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com<br>fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com<br>fei.amsub0202.manage.microsoft.com <br>portal.fei.amsub0202.manage.microsoft.com <br>m.fei.amsub0202.manage.microsoft.com<br>fei.amsub0302.manage.microsoft.com <br>portal.fei.amsub0302.manage.microsoft.com <br>m.fei.amsub0302.manage.microsoft.com|52.138.193.149<br>51.144.161.187|
-|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com<br>fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com<br>fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com<br>fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com|52.175.12.209<br>20.188.107.228|
-|fef.msua01.manage.microsoft.com|138.91.243.97|
-|fef.msua02.manage.microsoft.com|52.177.194.236|
-|fef.msua04.manage.microsoft.com|23.96.112.28|
-|fef.msua05.manage.microsoft.com|138.91.244.151|
-|fef.msua06.manage.microsoft.com|13.78.185.97|
-|fef.msua07.manage.microsoft.com|52.175.208.218|
-|fef.msub01.manage.microsoft.com|137.135.128.214|
-|fef.msub02.manage.microsoft.com|137.135.130.29|
-|fef.msub03.manage.microsoft.com|52.169.82.238|
-|fef.msub05.manage.microsoft.com|23.97.166.52|
-|fef.msuc01.manage.microsoft.com|52.230.19.86|
-|fef.msuc02.manage.microsoft.com|23.98.66.118|
-|fef.msuc03.manage.microsoft.com|23.101.0.100|
-|fef.msuc05.manage.microsoft.com|52.230.16.180|
-|fef.amsua0202.manage.microsoft.com|52.165.165.17|
-|fef.amsua0402.manage.microsoft.com|40.69.157.122|
-|fef.amsua0502.manage.microsoft.com|13.85.68.142|
-|fef.amsua0602.manage.microsoft.com|52.161.28.64|
-|fef.amsub0102.manage.microsoft.com|40.118.98.207|
-|fef.amsub0202.manage.microsoft.com|40.69.208.122|
-|fef.amsub0302.manage.microsoft.com|13.74.145.65|
-|enterpriseregistration.windows.net|52.175.211.189|
-|Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
-|wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
-|mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
-
-
-
-
-
-
-### <a name="apple-device-network-information"></a>Apple 裝置網路資訊
-
-
-|用途|主機名稱 (IP 位址/子網路)|通訊協定|Port|
-|-----|--------|------|-------|
-|透過 Apple Push Notification Service (APNS) 從 Intune 服務接收推播通知。 請參閱 [Apple 文件](https://support.apple.com/en-us/HT203609) \(英文\)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
-|透過 Apple Push Notification Service (APNS) 將意見反應傳送至 Intune 服務|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
-|擷取並顯示來自 Apple 伺服器的內容|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
-|與 APNS 伺服器通訊|#-courier.push.apple.com (17.0.0.0/8)<br>'#' 是從 0 至 50 的隨機數字。|    TCP     |  5223 和 443  |
-|各種功能，包括存取全球資訊網、iTunes store、macOS app store、iCloud、Messaging 等等。 |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 或 443   |
-
-如需詳細資訊，請參閱 Apple 提供的 [Apple 軟體產品使用的 TCP 和 UDP 連接埠](https://support.apple.com/en-us/HT202944) \(英文\)、[關於 macOS、iOS 和 iTunes 伺服器主機連線與 iTunes 背景處理序](https://support.apple.com/en-us/HT201999) \(英文\)，以及[如果您的 macOS 和 iOS 用戶端未取得 Apple 推播通知](https://support.apple.com/en-us/HT203609) \(英文\)。

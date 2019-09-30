@@ -5,9 +5,8 @@ keywords: 什麼是 Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460575"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238259"
 ---
 # <a name="what-is-microsoft-intune"></a>什麼是 Microsoft Intune？
 
@@ -85,7 +84,7 @@ Intune 整合了 Azure AD，以啟用一組廣泛的存取控制案例。 例如
 當您使用 Intune 與 EMS 中的其他服務時，可以提供給組織的行動應用程式安全性，會比行動作業系統和行動應用程式本身透過應用程式設定所提供的安全性更高。 使用 EMS 管理的應用程式可以存取更廣泛的行動裝置應用程式和資料保護功能，包括：
 
 * [單一登入](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [應用程式條件式存取 - 如果行動應用程式包含公司資料，便允許存取](app-based-conditional-access-intune.md)
 * [隔離公司資料與相同應用程式內的個人資料](app-protection-policy.md)
 * [應用程式保護原則 (PIN、加密、另存新檔、剪貼簿等)](app-protection-policies.md)

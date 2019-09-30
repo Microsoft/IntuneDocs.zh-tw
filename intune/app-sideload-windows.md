@@ -6,9 +6,8 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,158 +15,83 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8652d260849537d1e0b504f5d309a3ab2708e5cd
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 4d30f2f392a760701337fb17b902458ea01ed00b
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587513"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238843"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-身為 Intune 系統管理員，您可以將企業營運 (LOB) 應用程式部署到 Windows 和 Windows 10 行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 或.xap 應用程式部署到 Windows 10 和 Windows 10 行動裝置版的裝置，或將任何 LOB 應用程式部署到 Windows 8.1 或 Windows Phone 8.1 裝置，您必須取得 **Symantec 企業行動程式碼簽署憑證**。 這些適用於個別 Windows 裝置的應用程式只信任 Symantec 憑證。 您可以針對 Windows 10 應用程式和「通用」應用程式，使用自己的憑證授權單位。 您必須擁有此憑證，才能執行下列動作：
+身為 Intune 管理員，您可以將企業營運 (LOB) 通用應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，您可以使用來自您 Windows 裝置已經信任之公開憑證授權單位的程式碼簽署憑證，或者，您可以使用自己的憑證授權單位。
 
--   簽署公司入口網站應用程式以部署到 Windows 電腦、Windows 10 行動裝置版的裝置和 Windows Phone 裝置
+Windows 8.1 Desktop 需要有企業原則，才能啟用側載或使用側載金鑰 (針對已加入網域的裝置自動啟用)。 如需詳細資訊，請參閱 [Windows 8 側載](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/) \(英文\)。
 
--   簽署公司企業營運系統應用程式，讓 Intune 可將其部署到 Windows Phone
+在 Windows 10 中，側載與舊版 Windows 不同：
 
-下列步驟可協助您取得所需的憑證及簽署應用程式。 您將必須註冊為 Microsoft 開發人員，然後購買 Symantec 憑證。
+- 您可以使用企業原則來解除鎖定裝置，以進行側載。 Intune 提供稱為「安裝信任的應用程式」的裝置設定原則。 對於已經信任用來簽署 appx 應用程式之憑證的裝置而言，只需將此設定為 <allow>。
 
-
-1. **註冊為 Microsoft 開發人員**<br>
-   使用您登入以購買公司帳戶時所使用的公司帳戶資訊[註冊成為 Microsoft 開發人員](https://go.microsoft.com/fwlink/?LinkId=268442)。 這項要求需要在您收到程式碼簽署憑證之前，由公司主管人員授權。
-
-2. **取得公司 Symantec 憑證**<br>
-  使用您的 Symantec 識別碼，從 [Symantec 網站](https://go.microsoft.com/fwlink/?LinkId=268441) 購買憑證。 購買憑證之後，您在註冊為 Microsoft 開發人員時指定的公司核准者，將會收到一封請求核准憑證要求的電子郵件。 如需 Symantec 憑證需求的詳細資訊，請參閱[為什麼 Windows Phone 需要 Symantec 憑證？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 裝置註冊常見問題集。
-
-3.  **匯入憑證**<br>
-    一旦核准要求後，您就會收到包含匯入憑證指示的電子郵件。 請遵循電子郵件中的指示，匯入憑證。
-
-4.  **確認憑證已匯入**<br>
-    若要確認憑證是否已正確匯入，請移至 [憑證] 嵌入式管理單元，以滑鼠右鍵按一下 [憑證]，然後選取 [尋找憑證]。 在 [包含]  欄位中輸入 “Symantec”，然後按一下 [立即尋找] 。 您匯入的憑證應該會出現在結果中。
-
-    ![憑證結果列在 [尋找憑證] 對話方塊中](./media/wit.gif)
-
-5. **匯出簽署憑證**<br>
-    確認憑證存在之後，您就可以匯出 .pfx 檔案來簽署公司入口網站。 選取 [使用目的]  為「程式碼簽署」的 Symantec 憑證。 以滑鼠右鍵按一下該程式碼簽署憑證，然後選取 [匯出]。
-
-    ![匯出簽署憑證](./media/wit-walk-cert2.gif)
-
-    在 **[憑證匯出精靈]** 中，選取 [是，匯出私密金鑰]  ，然後按一下 [下一步] 。 **選取 [個人資訊交換 – PKCS #12 (.PFX)]**，然後選取 [如果可能的話，包含憑證路徑中的所有憑證]。 完成精靈。 如需詳細資訊，請參閱 [How to Export a Certificate with the Private Key (如何以私密金鑰匯出憑證)](https://go.microsoft.com/fwlink/?LinkID=203031)。
-
-6.  **將應用程式上傳至 Intune**<br>
-    上傳已簽署的應用程式檔案和您的程式碼簽署憑證，讓使用者能夠使用應用程式。
-
-    1.  在 Azure 入口網站中，依序按一下 [系統管理] &gt; [Windows Phone]。
-
-    2.  按一下 [上傳已簽署的應用程式檔案] ，並使用您的 Intune 系統管理員識別碼登入。
-
-    3.  將您匯出的憑證 (.pfx) 檔案新增至 [程式碼簽署憑證]，並建立憑證的密碼。
-
-    4.  完成精靈。
-
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>範例：下載、簽署和部署適用於 Windows 裝置的公司入口網站應用程式
-
-您可以使用 Intune，將公司入口網站應用程式部署到 Windows 裝置 (包括 Windows Phone 和 Windows 10 行動裝置版的裝置)，而不是從 Microsoft 網上商店進行安裝。 您必須下載公司入口網站應用程式，並使用您的憑證進行簽署。  只有在您的使用者不會使用公司市集，並且您想要將公司入口網站部署到 Windows Phone 8.1 裝置時，才需要執行這項動作。
+- 不需要 Symantec 電話憑證和側載授權金鑰。 不過，如果內部部署憑證授權單位無法使用，則您可能需要從公開憑證授權單位取得程式碼簽署憑證。 如需詳細資訊，請參閱[程式碼簽署簡介](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing) \(英文\)。
 
 
-1.  **下載公司入口網站**
+## <a name="code-sign-your-app"></a>對您的應用程式進行程式碼簽署
 
-    若要使用 Intune 部署公司入口網站應用程式，您可以從下載中心下載[適用於 Windows Phone 8.1 的 Microsoft Intune 公司入口網站應用程式](https://go.microsoft.com/fwlink/?LinkId=615799)，並執行自我解壓縮 (.exe) 檔案。 此檔案會包含兩個檔案：
+第一個步驟是對您的 appx 套件進行程式碼簽署，請參閱[使用 SignTool 簽署應用程式套件](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool) \(部分機器翻譯\)
 
-    -   CompanyPortal.appx - 適用於 Windows Phone 8.1 的公司入口網站安裝應用程式
+## <a name="upload-your-app"></a>上傳您的應用程式
 
-    -   WinPhoneCompanyPortal.ps1 - PowerShell 指令碼，您可用來簽署公司入口網站應用程式檔案，因此可將它部署到 Windows Phone 8.1 裝置
+接下來，您將上傳已簽署的 appx 檔案，如[上傳 LOB Windows 應用程式](lob-apps-windows.md)中所述
 
-    或者，您可以從[商務用 Microsoft 網上商店](https://businessstore.microsoft.com/)下載 Windows Phone 8.1 公司入口網站 (離線授權套件) 或 Windows 10 公司入口網站 (離線授權套件)。 您必須使用離線授權及下載來供離線使用的適當封裝，來取得公司入口網站應用程式。 選項中的 Windows 8 和 Windows Phone 8 平台清單會參考其 8.1 對應項。 如需如何使用 Intune 執行此作業的詳細資訊，請參閱[管理購自商務用 Microsoft 網上商店的應用程式](windows-store-for-business.md)。
+如果您視需要將應用程式部署到使用者或裝置，則不需要 Inutne 公司入口網站應用程式。 不過，如果您將應用程式部署為可供使用者使用，則他們可從公用 Microsoft Store 使用公司入口網站應用程式、從商務用私人 Microsoft Store 使用公司入口網站應用程式，或者您必須簽署並手動部署 Intune 公司入口網站應用程式。
 
-2.  **下載 Windows Phone SDK** 下載 Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570)，並將 SDK 安裝到您的電腦。 您需要有這個 SDK，才能產生應用程式註冊權杖。
+## <a name="upload-the-code-signing-certificate"></a>上傳程式碼簽署憑證
 
-3.  **產生 AETX 檔案**：使用 AETGenerator.exe，從 Symantec PFX 檔案產生應用程式註冊權杖 (.aetx) 檔案，其為 Windows Phone SDK 8.0 的一部分。 如需如何建立 AETX 檔案的相關指示，請參閱 [如何產生適用於 Windows Phone 的應用程式註冊權杖](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
+如果您的 Windows 10 裝置尚未信任憑證授權單位，則在您簽署 appx 套件並將它上傳至 Intune 服務之後，您需要將程式碼簽署憑證上傳至 Intune 入口網站：
+1. 按一下 [用戶端應用程式]
+2. 按一下 [Windows 企業憑證]
+3. 選取程式碼簽署憑證底下的 [選取檔案]
+4. 選取您的 .cer 檔案，然後按一下 [上傳]
 
-4.  **下載適用於 Windows 8.1 的 Windows SDK**下載並安裝 [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525)。 請注意，公司入口網站應用程式隨附的 PowerShell 指令碼會使用預設安裝位置 `${env:ProgramFiles(x86)}\Windows Kits\8.1`。 如果您安裝在其他地方，就必須在 cmdlet 參數中包含位置。
+現在，任何 Windows 10 Desktop 與行動裝置版的裝置 (Intune 服務已在其中部署 appx) 都將自動下載對應的企業憑證，並將允許應用程式在安裝後啟動。
 
-5.  **使用 PowerShell 進行應用程式的程式碼簽署**：以系統管理員身分，在主機電腦上開啟與 Windows SDK 一併安裝的 **Windows PowerShell**、Symantec 企業行動程式碼簽署憑證，巡覽至 Sign-WinPhoneCompanyPortal.ps1 檔案，然後執行指令碼。
-
-    **範例 1**
-
-    ```PowerShell
-    .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
-    ```
-    這個範例會簽署 C:\temp\ 中的 CompanyPortal.appx，並產生 CompanyPortalEnterpriseSigned.appx。 它會使用 PFX 密碼 1234，並從 PFX 檔案中讀取發行者識別碼。 它也會從 cert.aetx 檔案讀取企業識別碼。
-
-    **範例 2**
-
-    ```PowerShell
-    .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
-    ```
-    這個範例會簽署 C:\temp\ 中的 CompanyPortal.appx，並產生 CompanyPortalEnterpriseSigned.appx。 其會使用 PFX 密碼 1234，並使用指定的發行者識別碼。
-
-    **參數：**
-
-    -   `-InputAppx` - 以單引號括住的 CompanyPortal.appx 檔案的本機路徑。 例如 ' C:\temp\CompanyPortal.appx'
-
-    -   `-OutputAppx` - 以單引號括住的已簽署公司入口網站應用程式的本機路徑和檔案名稱。 例如，' C:\temp\CompanyPortalEnterpriseSigned.appx'
-
-    -   `-PfxFilePath` - Symantec 憑證的已匯出 PFX 檔案的本機路徑和檔案名稱。 例如，' C:\signing\cert.pfx'
-
-    -   `-PfxPassword` - 以單引號括住、用來簽署 PFX 檔案的密碼。 例如，'1234'
-
-    -   `-AetxPath` - 如果未定義的 'EnterpriseId' 引數，可用來讀取企業識別碼的 .aetx 檔案的本機路徑。 您必須提供這個引數或 EnterpriseId。 例如，'C:\signing\cert.aetx'
-
-    -   `-PublisherId` - 企業的發行者識別碼。 如果這個參數不存在，則會使用 Symantec 企業行動程式碼簽署憑證的 [主旨] 欄位。 例如 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1'
-
-    -   `-SdkPath` - 適用於 Windows 8.1 之 Windows SDK 的根資料夾路徑。 這個引數是選擇性，且預設值為 ${env:ProgramFiles(x86)}\Windows Kits\8.1。
-
-    -   `-EnterpriseId` - 企業識別碼。 您必須提供這個引數或 'AetxPath'。 如果未提供這個引數，則會從 AETX 檔案讀取企業識別碼。 例如，1000000001
-
-6.  部署 Windows Phone 8.1 公司入口網站 (SSP.appx) 應用程式。 如需指導方針，請參閱[如何新增 Windows Phone 企業營運 (LOB) 應用程式](lob-apps-windows-phone.md)。
+Intune 只會部署最新上傳的 .cer 檔案。 如果您有多個由與貴組織沒有關聯的不同開發人員所建立的 appx 檔案，則您必須讓他們提供未簽署的 appx 檔案以使用您的憑證進行簽署，或為他們提供貴組織所使用的程式碼簽署憑證。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>如何更新 Symantec 企業程式碼簽署憑證
 
-用來部署 Windows 和 Windows Phone 行動應用程式的 Symantec 憑證必須定期更新。
+用來部署 Windows Phone 8.1 行動裝置應用程式的憑證已於 2019 年 2 月 28 日中止，無法再從 Symantec 續訂。 如果您要部署到 WIndows 10 行動裝置版，則可遵循 Windows 10 的指示，繼續使用 Symantec Desktop Enterprise 程式碼簽署憑證。
 
-1.  在憑證到期約 14 天前，請尋找 Symantec 寄來的更新電子郵件。 這封電子郵件會包含來自 Symantec 有關更新您企業憑證的指引。
+## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>如何安裝企業營運 (LOB) 應用程式的更新憑證
 
-    如需 Symantec 憑證的詳細資訊，請瀏覽 [www.symantec.com](https://www.symantec.com)，或致電 1-877-438-8776 或 1-650-426-3400。
+Windows Phone 8.1
 
-2.  移至網站 (範例：[https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do))，然後使用「Symantec 發行者識別碼」和與憑證相關的電子郵件位址來登入。 請務必使用您用以下載憑證的電腦來啟動更新。
+一旦現有的 Symantec Mobile Enterprise 程式碼簽署憑證過期之後，Intune 服務就無法再部署適用於此平台的 LOB 應用程式。 您仍然可以藉由使用 SD 記憶卡或將檔案下載至裝置，來側載未簽署的 XAP/APPX 檔案。 如需詳細資訊，請參閱[如何在 Windows Phone 上安裝 XAP 檔案](https://answers.microsoft.com/en-us/mobiledevices/forum/mdlumia-mdapps/how-to-install-xap-file-in-windows-phone-8/da09ee72-51ae-407c-9b85-bc148df89280) \(英文\)。
 
-3.  一旦更新核准，且已支付，即可下載憑證。
+Windows 8.1 Desktop/Windows 10 Desktop 與行動裝置版
 
-### <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>如何安裝企業營運 (LOB) 應用程式的更新憑證
-
-1.  簽署企業營運應用程式的最新版本。
-
-2.  開啟Azure 入口網站並移至 [管理] &gt; [行動裝置管理] &gt; [Windows Phone]，然後按一下 [上傳已簽署的應用程式]。
-
-3.  上傳新簽署的公司入口網站。 您會需要新簽署的 SSP.xap，以及您從 Symantec 收到的 .PFX 檔案，或由此 .PFX 檔案所建立的應用程式註冊權杖。
-
-4.  上傳完成後，請從 [軟體]   工作區中移除舊版公司入口網站。
-
-5.  使用新的憑證簽署所有新增及更新的企業營運應用程式。 現有的應用程式無須重新簽署，也無須重新部署。
+如果憑證期間已過期，則 appx 檔案可能會停止啟動。 您應該取得新的 .cer 檔案，並遵循指示以對每個部署的 appx 檔案進行程式碼簽署，並將所有 appx 檔案和更新的 .cer 檔案重新上傳至 Intune 入口網站的 [Windows 企業憑證] 區段。
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>手動部署 Windows 10 公司入口網站應用程式
-即使您還沒有整合 Intune 與商務用 Microsoft 網上商店，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。
+如果您不想提供 Microsoft Store 的存取權限，即使您還沒有整合 Intune 與商務用 Microsoft Store (MSFB)，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。 或者，如果您已整合，則可透過[使用 MSFB 部署應用程式](store-apps-windows.md)來部署公司入口網站應用程式。
 
  > [!NOTE]
  > 這個選項將需要在每次應用程式發行更新時，部署手動更新。
 
-1. 在[商務用 Microsoft 網上商店](https://www.microsoft.com/business-store)登入您的帳戶，取得公司入口網站應用程式的**離線授權**版本。  
-2. 取得應用程式之後，在 [詳細目錄] 頁面中選取該應用程式。  
-3. 在 [平台] 選取 [Windows 10 所有裝置]，然後選取適當的 [架構] 並下載。 此應用程式不需要應用程式授權檔案。
-![供下載的 Windows 10 X86 套件詳細資料的影像](./media/Win10CP-all-devices.png)
+1. 在[商務用 Microsoft Store ](https://www.microsoft.com/business-store) 中登入您的帳戶，並取得公司入口網站應用程式的**離線授權**版本。  
+2. 取得應用程式之後，在 [詳細目錄]  頁面中選取該應用程式。  
+3. 在 [平台]  選取 [Windows 10 所有裝置]  ，然後選取適當的 [架構]  並下載。 此應用程式不需要應用程式授權檔案。
+   ![供下載的 Windows 10 X86 套件詳細資料的影像](./media/Win10CP-all-devices.png)
 4. 下載「必要架構」底下的所有套件。 x86、x64 及 ARM 架構都要執行這個步驟 – 所以總共 9 個套件，如下圖所示。
 
-![要下載之相依性檔案的圖片 ](./media/Win10CP-dependent-files.png)
+   ![要下載之相依性檔案的圖片 ](./media/Win10CP-dependent-files.png)
 5. 將公司入口網站應用程式上傳至 Intune 之前，先建立資料夾 (例如 C:&#92;Company Portal)，並以如下結構放置套件︰
    1. 將公司入口網站套件放入 C:\Company Portal。 在此位置中建立 Dependencies 子資料夾。  
-   ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](./media/Win10CP-Dependencies-save.png)
+      ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](./media/Win10CP-Dependencies-save.png)
    2. 將 9 個相依性套件放在 Dependencies 資料夾中。  
-   如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
-   ![錯誤訊息 - 必須提供 Windows 應用程式相依性。](./media/Win10CP-error-message.png)
+      如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
+      ![錯誤訊息 - 必須提供 Windows 應用程式相依性。](./media/Win10CP-error-message.png)
 6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其部署為必要的應用程式。  
 
 有關 Intune 如何處理通用應用程式的相依性，詳細資訊請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  

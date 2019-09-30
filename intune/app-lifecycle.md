@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e92179681f3d26b376d5ea2c8f06d7012cacb7d
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.openlocfilehash: 19c364bda4728880b84cb1a17593bcbd38aa00bc
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59570841"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "71238946"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的應用程式生命週期概觀
 
@@ -49,7 +48,7 @@ ms.locfileid: "59570841"
 ## <a name="protect"></a>保護
 
 Intune 提供您許多方法來協助保護您的應用程式中的資料。 主要方法如下︰
-- [條件式存取](conditional-access.md)，它會根據您指定之條件，控制電子郵件及其他服務的存取權。 條件包括裝置類型或遵循您部署的[裝置相容性原則](device-compliance.md)。
+- [條件式存取](conditional-access.md)，它會根據您指定的條件來控制電子郵件及其他服務的存取權。 條件包括裝置類型或遵循您部署的[裝置相容性原則](device-compliance.md)。
 - [應用程式保護原則](app-protection-policy.md)適用於個別的應用程式，可協助保護它們使用的公司資料。 例如，您可以限制在未受管理的應用程式與您管理的應用程式之間複製資料，或是可以防止應用程式在已進行 JB 或 Root 破解的裝置上執行。
 
 ## <a name="retire"></a>淘汰

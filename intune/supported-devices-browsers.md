@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460609"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239593"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -115,14 +114,14 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 ### <a name="intune-classic-portal"></a>Intune 傳統入口網站
 
-Intune 傳統專屬功能只在 Intune 傳統入口網站 (https://manage.microsoft.com)) 中提供，例如 Intune 電腦軟體用戶端及與 Mobile Threat Defense 合作夥伴之間的整合。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
+Intune 傳統入口網站僅用於管理已向 Intune 電腦軟體用戶端註冊的裝置 (https://manage.microsoft.com) )。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
 
 下列 Silverlight 瀏覽器支援 Intune 主控台：
 - Internet Explorer 10 或更新版本
 - Google Chrome (42 版之前的版本)
-- 啟用 Silverlight 的 Mozilla Firefox [深入了解](https://go.microsoft.com/fwlink/?linkid=836872)
+- 已啟用 Silverlight 的 Mozilla Firefox (早於 56 版的版本)
 
 > [!Note]
 > 因為 Microsoft Edge 和行動瀏覽器不支援 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) \(英文\)，所以 Intune 傳統入口網站不予支援。
 
-唯有具有服務系統管理員權限的使用者，或是具有全域系統管理員角色的租用戶系統管理員，才能登入此入口網站。 若要存取管理主控台，您的帳戶必須擁有使用 Intune 的授權，且登入狀態必須為 [已允許]。
+唯有具有服務系統管理員權限的使用者，或是具有全域系統管理員角色的租用戶系統管理員，才能登入此入口網站。 若要存取管理主控台，您的帳戶必須擁有使用 Intune 的授權，且登入狀態必須為 [已允許]  。

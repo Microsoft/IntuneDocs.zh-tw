@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548338"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166800"
 ---
 # <a name="develop-a-support-plan"></a>開發支援計劃
 
@@ -84,7 +84,7 @@ Intune 支援訓練的議程範例如下。
 
 - 問答集
 
-[Intune 文件](https://docs.microsoft.com/intune/)提供 Intune 概觀、詳細的功能描述，以及一些疑難排解的資訊。 [Intune 論壇](https://social.technet.microsoft.com/Forums/home)是社群資源，適合 Intune 文件未涵蓋的問題和主題。
+[Intune 文件](index.yml)提供 Intune 概觀、詳細的功能描述，以及一些疑難排解的資訊。 [Intune 論壇](https://social.technet.microsoft.com/Forums/home)是社群資源，適合 Intune 文件未涵蓋的問題和主題。
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>支援小組參與初期階段的機率為何？
 

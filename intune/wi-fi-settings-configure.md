@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545924"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163501"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
@@ -39,9 +39,9 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
 - Android 企業與 kiosk
-- iOS 8.0 與更新版本
+- iOS 8.0 和更新版本
 - macOS X 10.11 與更新版本
-- Windows 10 與更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
+- Windows 10 和更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
 
 > [!NOTE]
 > 對於執行 Windows 8.1 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。
@@ -57,7 +57,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 
       - **Android**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 及更新版本**
       - **Windows 10 及更新版本**
@@ -67,16 +67,16 @@ Wi-Fi 設定檔支援下列裝置平台：
       > [!TIP]
       >
       > - 針對以專用裝置 (kiosk) 形式執行的 **Android 企業**裝置，您可以選擇 [僅限裝置擁有者]   > [Wi-Fi]  。
-      > - 針對 **Windows 8.1 與更新版本**，您可以選擇 [Wi-Fi 匯入]  。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
+      > - 針對 **Windows 8.1 和更新版本**，您可以選擇 [Wi-Fi 匯入]  。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
 
 3. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇您的平台：
 
     - [Android](wi-fi-settings-android.md)
     - [Android 企業](wi-fi-settings-android-enterprise.md)，包括專用裝置
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 及更新版本](wi-fi-settings-windows.md)
-    - [Windows 8.1 與更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
+    - [Windows 8.1 和更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
 4. 完成後，請選取 [建立設定檔]   > [建立]  。
 

@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 22e5c38be9dc5a8a09888651e471f64bf6739c72
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459946"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238887"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>註冊或登入 Microsoft Intune
 
@@ -37,7 +36,7 @@ ms.locfileid: "57459946"
 >[!WARNING]
 >註冊新帳戶後，無法合併現有的工作或學校帳戶。
 
-## <a name="how-to-sign-up-or-sign-in-to-intune"></a>如何註冊或登入 Intune
+## <a name="how-to-sign-up-for-intune"></a>如何註冊 Intune
 
 1. 請瀏覽 [Intune 註冊](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)頁面。
 
@@ -49,3 +48,31 @@ ms.locfileid: "57459946"
 註冊新的訂閱後，在您於註冊過程中提供的電子郵件位址上，您會收到包含帳戶資訊的電子郵件訊息。 本電子郵件可確認您的訂閱是使用中的狀態。
 
 完成註冊程序後，會將您導向 Microsoft 365 系統管理中心，讓您新增使用者並指派授權給他們。 如果您只有使用預設 onmicrosoft.com 網域名稱的雲端式帳戶，則您現在可以繼續新增使用者並指派授權。 不過，如果您計劃使用組織的[自訂網域名稱](custom-domain-name-configure.md)，或想要從內部部署 Active Directory [同步處理使用者帳戶資訊](users-add.md#sync-active-directory-and-add-users-to-intune)，則可關閉該瀏覽器視窗。
+
+## <a name="sign-in-to-microsoft-intune"></a>登入 Microsoft Intune
+一旦註冊 Intune 之後，您就可以使用任何具有[支援瀏覽器](supported-devices-browsers.md#intune-supported-web-browsers)的裝置登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 來管理服務。
+
+根據預設，您的帳戶在 Azure AD 中必須具備下列其中一個權限：
+- 全域管理員
+- Intune 服務管理員 (也稱為 Intune 管理員)
+
+若要授與存取權以管理具有其他權限之使用者的服務，則請參閱[依角色區分的存取控制](role-based-access-control.md)
+
+### <a name="intune-admin-portal-url"></a>Intune 管理入口網站 URL
+
+Microsoft 365 系統管理中心： https://devicemanagement.microsoft.com
+
+Intune Azure 入口網站： https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade
+
+Intune 教育版： https://intuneeducation.portal.azure.com
+
+Intune 傳統入口網站： https://manage.microsoft.com Intune 傳統入口網站僅用於管理已向 Intune 電腦軟體用戶端註冊的裝置
+
+### <a name="urls-for-intune-services-provided-by-office-365"></a>Office 365 所提供的 Intune 服務 URL
+
+Microsoft 365 商務版： https://portal.microsoft.com/adminportal
+
+Office 365 行動裝置管理： https://portal.office.com/adminportal/home#/MifoDevices
+
+## <a name="see-also"></a>請參閱
+[您無法登入 Office 365、Azure 或 Intune](https://support.microsoft.com/help/2412085) \(英文\)

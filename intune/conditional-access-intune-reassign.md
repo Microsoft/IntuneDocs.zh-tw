@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883799"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256206"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>將條件式存取原則從 Intune 傳統入口網站重新指派給 Azure 入口網站
 
@@ -194,15 +194,9 @@ Azure 入口網站中的 [Intune 應用程式防護]  刀鋒視窗，可讓系�
 
 ### <a name="to-disable-the-conditional-access-policies"></a>停用條件式存取原則
 
-1. 移至 [Intune 傳統入口網站](https://manage.microsoft.com)，並使用您的認證登入。
+由於已從 Intune 傳統入口網站中移除 MDM，因此，提供了下列連結來查看/停用這些傳統原則：
 
-2. 在左側功能表中選擇 [原則]  。
-
-3. 選擇 [條件式存取]  ，然後選取您已為其建立條件式存取原則的 Microsoft 雲端服務 (例如 Exchange Online 或 SharePoint Online)。
-
-4. 取消核取 [啟用條件式存取原則]  選項，然後按一下 [儲存]  。
-
-    ![停用 Intune 傳統入口網站中的條件式存取原則影像](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>請參閱
 

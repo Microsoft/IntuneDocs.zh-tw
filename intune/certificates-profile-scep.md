@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214278"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163744"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -38,9 +38,19 @@ ms.locfileid: "70214278"
 3. 輸入 SCEP 憑證設定檔的 [名稱]  與 [描述]  。
 4. 從 [平台]  下拉式清單中，選取此 SCEP 憑證[受支援的裝置平台](certificates-configure.md#supported-platforms-and-certificate-profiles)。 
 5. 從 [設定檔類型]  下拉式清單中，選取 [SCEP 憑證]  。  
+   
+   針對 **Android Enterprise** 平台，「設定檔類型」  會分為兩個類別：「僅限裝置擁有者」  和「僅限工作設定檔」  。 請務必為您管理的裝置選取正確的 SCEP 憑證設定檔。  
 
-   > [!NOTE]  
-   > 針對 **Android Enterprise** 平台，「設定檔類型」  分為兩個類別：「僅限裝置擁有者」  和「僅限工作設定檔」  。  只有「僅限工作設定檔」  支援 SCEP 憑證設定檔。
+   適用於「僅限裝置擁有者」  設定檔的 SCEP 憑證設定檔具有下列限制：  
+
+   1. 不支援下列變數：  
+
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
+   2. 在 [監視] 下方，憑證報告不適用於「裝置擁有者」SCEP 憑證設定檔。
+   
+   3. 不支援透過 Intune 來撤銷由適用於「裝置擁有者」的 SCEP 憑證設定檔所佈建的憑證，但可透過外部程序或直接透過憑證授權單位來管理。
 
 6. 選取 [設定]  ，然後完成下列設定：
 

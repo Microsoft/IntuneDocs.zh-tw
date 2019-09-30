@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394778"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238581"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune 的常見使用方式
 
@@ -44,7 +43,7 @@ ms.locfileid: "57394778"
 大部分企業行動力策略計劃一開始都是讓員工，在連接網際網路的行動裝置上安全地存取電子郵件。 許多組織仍然有內部部署資料和應用程式伺服器，例如裝載在其公司網路上的 Microsoft Exchange。
 
 
-Intune 和 Microsoft Enterprise Mobility + Security (EMS) 提供唯一的 Exchange Server 整合[條件式存取解決方案](conditional-access.md)，確保在裝置向 Intune 註冊前，沒有任何行動應用程式可以存取電子郵件。 您不必在公司網路邊緣部署另一部閘道電腦，就能實作此類型的電子郵件存取。
+Intune 和 Microsoft Enterprise Mobility + Security (EMS) 會針對 Exchange Server 提供唯一整合的[條件式存取解決方案](conditional-access.md)，確保在該裝置向 Intune 註冊前，沒有任何行動應用程式可以存取電子郵件。 您不必在公司網路邊緣部署另一部閘道電腦，就能實作此類型的電子郵件存取。
 
 Intune 支援也能存取需要安全存取內部部署資料的行動應用程式，像是商務營運應用程式伺服器。 這種存取通常是使用 [Intune 受控憑證](certificates-configure.md)完成，適用於在周邊網路結合標準 VPN 閘道或 Proxy 的存取控制，例如 Microsoft Azure Active Directory 應用程式 Proxy。 
 
@@ -56,7 +55,7 @@ Intune 支援也能存取需要安全存取內部部署資料的行動應用程�
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>保護 Office 365 電子郵件和資料，以透過行動裝置安全存取
 您可以更容易，您的使用者也以更順暢地在 Office 365 中保護公司資料 (電子郵件、文件、立即訊息、連絡人)。
 
-Intune 與 Enterprise Mobility Suite + Security 解決方案特別加入了條件式存取功能，確保只有符合您公司之相容性需求 (已執行[多重要素驗證](multi-factor-authentication.md)、已在 Intune 註冊，並使用受管理的 App、受支援的 OS 版本、裝置 PIN 碼、低使用者風險設定檔等等) 的使用者、應用程式或裝置，才能存取 Office 365 資料。
+Intune 和 Microsoft Enterprise Mobility + Security 提供唯一整合的條件式存取解決方案，確保使用者、應用程式或裝置只有在符合公司的合規性需求 (已執行[多重要素驗證](multi-factor-authentication.md)、已向 Intune 註冊，並使用受控的應用程式、支援的 OS 版本、裝置 PIN、低使用者風險設定檔等等) 時，才能存取 Office 365 資料。
 
 
 各自應用程式市集裡的 Office 行動應用程式已經準備好開始使用資料內含項目原則，您可以透過 Intune 進行設定。 這可讓您避免與應用程式 (例如原生電子郵件應用程式) 及不受 IT 管理的儲存位置 (例如 Dropbox) 共用資料。 這項功能內建於 Office 365 和 EMS。 您不需要部署額外的基礎結構即可取得此值。

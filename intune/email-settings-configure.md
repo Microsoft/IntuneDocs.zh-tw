@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530041"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162877"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 將電子郵件設定新增至裝置
 
@@ -40,23 +40,29 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-3. 輸入電子郵件設定檔的 [名稱]  和 [描述]  。
-4. 從下拉式清單中選擇您的 [平台]  。 選項包括：
+3. 輸入下列內容：
 
-    - **Android** (僅限 Samsung Android Knox Standard)
-    - **Android 企業**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 及更新版本**
+    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱是**適用於所有 Windows 裝置的電子郵件設定**。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選擇您的裝置平台。 選項包括：
 
-5. 在 [設定檔類型]  下拉式清單中，選擇 [電子郵件]  。
-6. 您可以進行的設定可能會因每個平台而有所不同。 如需特定設定，請選擇您的平台：
+        - **Android** (僅限 Samsung Android Knox Standard)
+        - **Android 企業**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 及更新版本**
+
+    - **設定檔類型**：選取 [電子郵件]  。
+
+4. 您可設定的設定會視您選擇的平台而不同。 選擇您平台來進行詳細設定：
 
     - [Android Samsung Knox Standard 設定](email-settings-android.md)
     - [Android 企業設定](email-settings-android-enterprise.md)
-    - [iOS 設定](email-settings-ios.md)
+    - [iOS/iPadOS 設定](email-settings-ios.md)
     - [Windows Phone 8.1 設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 設定](email-settings-windows-10.md)
+
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
 
 輸入您的設定並建立設定檔之後，您的設定檔會顯示在 [設定檔] 清單中。 接下來，請[將此設定檔指派給一些群組](device-profile-assign.md)。
 

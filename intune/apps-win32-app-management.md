@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842197"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167152"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -194,6 +194,8 @@ ms.locfileid: "70842197"
 
     > [!NOTE]
     > 在 [偵測規則]  窗格中，您可以選擇新增多個規則。 必須符合**所有**規則的條件，才能偵測應用程式。
+    >
+    > 如果 Intune 偵測到應用程式不存在於裝置上，Intune 將會在 24 小時後再次提供該應用程式。 只有以必要意圖為目標的應用程式，才會發生這種情況。
 
     - **手動設定偵測規則** – 您可以選取下列其中一個規則類型：
         1. **MSI** – 根據 MSI 版本檢查進行驗證。 此選項只能新增一次。 當您選擇此規則類型時，您有兩個設定：
@@ -278,7 +280,7 @@ ms.locfileid: "70842197"
 7. 在 [新增群組]  窗格中，選取 [確定]  。
 8. 在應用程式 [指派]  窗格中，選取 [儲存]  。
 
-此時，您已完成將 Win32 應用程式新增至 Intune 的步驟。 如需應用程式指派和監視的資訊，請參閱[使用 Microsoft Intune 指派應用程式給群組](https://docs.microsoft.com/intune/apps-deploy)和[使用 Microsoft Intune 監視應用程式資訊和指派](https://docs.microsoft.com/intune/apps-monitor)。
+此時，您已完成將 Win32 應用程式新增至 Intune 的步驟。 如需應用程式指派和監視的資訊，請參閱[使用 Microsoft Intune 指派應用程式給群組](apps-deploy.md)和[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md)。
 
 ## <a name="app-dependencies"></a>應用程式相依性
 

@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459895"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238345"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
@@ -34,18 +33,18 @@ ms.locfileid: "57459895"
 
 您可以使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
 
-1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者] > [作用中使用者]。
+1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]  。
 
-2. 選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]  >  [編輯]。
+2. 選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]   >  [編輯]  。
 
-3. 將 [Intune] 或 [Enterprise Mobility + Security] 切換為 [開啟]，然後選擇 [儲存]。
+3. 將 [Intune]  或 [Enterprise Mobility + Security]  切換為 [開啟]  ，然後選擇 [儲存]  。
 
    ![Microsoft 365 系統管理中心產品授權區段的螢幕擷取畫面。](./media/office-assign-license.png)
 
 4. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
 
 > [!NOTE]
-> 使用者必須先註冊裝置，才會顯示在管理主控台中。 此外，您可以一次選取一組使用者來編輯，可以選取以新增或取代所有選取使用者的授權。
+> 使用者只有在使用 Intune 電腦用戶端註冊裝置之後，才會出現在傳統 Intune 入口網站中。 此外，您可以一次選取一組使用者來編輯，可以選取以新增或取代所有選取使用者的授權。
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>使用 Azure Active Directory 指派 Intune 授權
 
@@ -63,7 +62,7 @@ ms.locfileid: "57459895"
 若要深入了解 SDS，請參閱此[學校資料同步處理概觀](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>使用者和裝置授權如何影響對服務的存取
-* 您指派軟體授權的每個**使用者**，都可以存取及使用線上服務和相關軟體 (包括 System Center 軟體)，以管理應用程式和最多 15 個裝置。
+* 您指派使用者軟體授權的每位**使用者**，都可存取及使用線上服務和相關軟體 (包括 System Center 軟體) 來管理應用程式和最多 15 個 MDM 裝置。 Intune 電腦代理程式會針對每個使用者授權允許使用 5 個實體和 1 部虛擬機器。
 * 您可以單獨從使用者授權購買任何裝置的授權。 裝置授權不需要指派給裝置。 每部存取及使用線上服務與相關軟體 (包括 System Center 軟體) 的裝置都必須有裝置授權。
 * 如果裝置是由多個使用者使用，每個使用者都需要一個裝置軟體授權，或者所有使用者需要一個使用者軟體授權。
 
@@ -71,7 +70,7 @@ ms.locfileid: "57459895"
 
 Intune 的購買方式決定訂用帳戶資訊：
 
-- 如果您透過 Enterprise 合約購買 Intune，則可以在大量授權入口網站的 [訂用帳戶] 下找到訂用帳戶資訊。
+- 如果您透過 Enterprise 合約購買 Intune，則可以在大量授權入口網站的 [訂用帳戶]  下找到訂用帳戶資訊。
 - 如果您透過雲端解決方案提供者購買 Intune，則請洽詢您的轉售商。
 - 如果您使用 CC# 或 Invoice 購買 Intune，則授權會以使用者為基礎。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 8ca3cf1cfed2d19a4b40aa667c0b6a1325eee531
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071548"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140776"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
@@ -115,7 +115,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
 ## <a name="create-an-apple-enrollment-profile"></a>建立 Apple 註冊設定檔
 
-安裝權杖之後，您可以為 DEP 裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
+安裝權杖之後，您可以為 DEP 裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。 每個 DEP 權杖都有 100 個註冊設定檔的限制。
 
 > [!NOTE]
 > 如果 VPP 權杖沒有足夠的公司入口網站授權，或如果權杖已過期，將會封鎖裝置。 當權杖即將到期或授權偏低時，Intune 將會顯示警示。
