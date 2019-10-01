@@ -6,9 +6,8 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/11/2019
+ms.date: 08/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
-ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
-ms.translationtype: HT
+ms.openlocfilehash: 0aaa305ac216e0f80f82116e626b21f3ae7a8510
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59571802"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303321"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 資料倉儲 API 的變更記錄檔
 
@@ -182,15 +181,15 @@ _發行日期：2019 年 2 月_
 
 ### <a name="power-bi-compliance-app"></a>Power BI 合規性應用程式 
 
-在 Power BI Online 中使用 [Intune 合規性 (資料倉儲)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 應用程式，來存取您的 Intune 資料倉儲。 透過此 Power BI 應用程式中，您現在不需要任何設定也不需要離開網頁瀏覽器即可存取和共用預先建立的報表。 
+在 Power BI Online 中使用 [Intune 合規性 (資料倉儲)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) 應用程式，來存取您的 Intune 資料倉儲。 透過此 Power BI 應用程式中，您現在不需要任何設定也不需要離開網頁瀏覽器即可存取和共用預先建立的報表。 
 
 > [!NOTE]
 > 您可以將兩個額外的篩選套用至 Intune 相容性應用程式。
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>新增額外篩選至 Intune 相容性應用程式
-1. 在您的網頁瀏覽器中開啟 [Intune 相容性 (資料倉儲)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) 應用程式。
-2. 按一下 [不相容的裝置]，然後在 **complianceStatus** 篩選中選取 [不相容]。 
-3. 按一下 [未知的裝置]，然後在 **complianceStatus** 篩選中選取 [尚無法使用]。 
+1. 在您的網頁瀏覽器中開啟 [Intune 相容性 (資料倉儲)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) 應用程式。
+2. 按一下 [不相容的裝置]  ，然後在 **complianceStatus** 篩選中選取 [不相容]  。 
+3. 按一下 [未知的裝置]  ，然後在 **complianceStatus** 篩選中選取 [尚無法使用]  。 
 
 ## <a name="1812"></a>1812 
 _發行日期：2018 年 12 月_
@@ -239,8 +238,8 @@ _發行日期：2018 年 1 月_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>資料倉儲資料模型中的新實體 <!-- 2077804 -->
 
- - 已新增 [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) 實體。 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
- - 已新增 [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) 實體。 **MobileAppInstallState** 實體代表行動應用程式在被指派至包含裝置或使用者 (或兩者) 的群組之後的安裝狀態。 
+- 已新增 [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) 實體。 **MobileAppDeviceUserInstallStatus** 代表針對特定裝置或使用者的行動應用程式安裝狀態。
+- 已新增 [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstates) 實體。 **MobileAppInstallState** 實體代表行動應用程式在被指派至包含裝置或使用者 (或兩者) 的群組之後的安裝狀態。 
 
 ## <a name="1710"></a>1710
 _發行日期：2017 年 11 月_
@@ -260,9 +259,9 @@ _發行日期：2017 年 10 月_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>資料倉儲資料模型中的新實體 <!-- 1479526 --><!-- -->
 
- - 已新增 [**UserDeviceAssociation**](reports-ref-user-device.md) 實體。 **UserDeviceAssociation** 包含您組織中的使用者裝置關聯。 您現在可以使用使用者裝置關聯資訊 (關聯使用者和裝置實體集合) 來建立報表和資料視覺效果。  
- - 已新增實體 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)。 **IntuneManagementExtension** 包含的行動裝置實體，會追蹤版本和安裝狀態等資訊。
+- 已新增 [**UserDeviceAssociation**](reports-ref-user-device.md) 實體。 **UserDeviceAssociation** 包含您組織中的使用者裝置關聯。 您現在可以使用使用者裝置關聯資訊 (關聯使用者和裝置實體集合) 來建立報表和資料視覺效果。  
+- 已新增實體 [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md)。 **IntuneManagementExtension** 包含的行動裝置實體，會追蹤版本和安裝狀態等資訊。
 
 ## <a name="next-steps"></a>後續步驟
- - 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
- - 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。
+- 了解[每週的 Intune 新功能](whats-new.md)。 您也可以了解即將推出的變更、關於服務的重要通知，以及過去版本的相關資訊。
+- 閱讀 [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)。

@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566653"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238647"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -76,17 +75,17 @@ ms.locfileid: "57566653"
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>建立 Apple Developer Enterprise 帳戶的步驟
 1. 前往 [Apple Developer Enterprise Program 網站](https://developer.apple.com/programs/enterprise/)。
 
-2. 按一下頁面右上方的 [註冊]。
+2. 按一下頁面右上方的 [註冊]  。
 
-3. 閱讀註冊所需項目的檢查清單。 按一下頁面底部的 [Start Your Enrollment]\(開始註冊)。
+3. 閱讀註冊所需項目的檢查清單。 按一下頁面底部的 [Start Your Enrollment]\(開始註冊)  。
 
-4. 使用組織的 Apple 識別碼**登入**。 如果您沒有 Apple 識別碼，請按一下 [Create Apple ID]\(建立 Apple 識別碼)。
+4. 使用組織的 Apple 識別碼**登入**。 如果您沒有 Apple 識別碼，請按一下 [Create Apple ID]\(建立 Apple 識別碼)  。
 
-5. 選取您的 [實體類型]，然後按一下 [繼續]。
+5. 選取您的 [實體類型]  ，然後按一下 [繼續]  。
 
-6. 使用您組織的資訊來填寫表單。 按一下 [繼續] 。 Apple 此時會連絡您，確認您已獲授權可註冊您的組織。
+6. 使用您組織的資訊來填寫表單。 按一下 [繼續]  。 Apple 此時會連絡您，確認您已獲授權可註冊您的組織。
 
-8. 驗證之後，請按一下 [Agree to License]\(同意授權)。
+8. 驗證之後，請按一下 [Agree to License]\(同意授權)  。
 
 9. 同意授權之後，即可透過**購買和啟動程式**來完成。
 
@@ -96,24 +95,24 @@ ms.locfileid: "57566653"
 
 1. 前往 [Apple Developer 入口網站](https://developer.apple.com/)。
 
-2. 按一下頁面右上方的 [帳戶]。
+2. 按一下頁面右上方的 [帳戶]  。
 
 3. 使用組織 Apple 識別碼**登入**。
 
-4. 按一下 [Certificates, IDs & Profiles]\(憑證、識別碼和設定檔)。
+4. 按一下 [Certificates, IDs & Profiles]\(憑證、識別碼和設定檔)  。
 
    ![Apple 開發人員入口網站 - 憑證、識別碼與設定檔](./media/iOS-signing-cert-1.png)
 
 5. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 憑證。
 
-6. 選擇在 [Production] \(生產) 下建立 [In-House and Ad Hoc] \(內部和特定) 憑證。
+6. 選擇在 [Production] \(生產)  下建立 [In-House and Ad Hoc] \(內部和特定)  憑證。
 
    ![選取內部和特定憑證](./media/iOS-signing-cert-3.png)
 
    >[!NOTE]
    >如果不打算散發應用程式，而只想要在內部進行測試，您可以使用 iOS 應用程式開發憑證，而不是生產環境憑證。 如果您使用開發憑證，請確定行動佈建設定檔參考應用程式安裝所在的裝置。
 
-7. 按一下頁面底部的 [下一步]。
+7. 按一下頁面底部的 [下一步]  。
 
 8. 閱讀如何在 macOS 電腦上使用金鑰鏈存取應用程式建立**憑證簽署要求 (CSR)** 的指示。
 
@@ -121,7 +120,7 @@ ms.locfileid: "57566653"
 
 9. 請遵循上方的指示來建立憑證簽署要求。 在 macOS 電腦上，啟動**金鑰鏈存取**應用程式。
 
-10. 在畫面頂端的 macOS 功能表上，移至 [Keychain Access]\(金鑰鏈存取) > [Certificate Assistant]\( 憑證助理) > [Request a Certificate From a Certificate Authority]\(向憑證授權單位要求憑證)。  
+10. 在畫面頂端的 macOS 功能表上，移至 [Keychain Access]\(金鑰鏈存取) > [Certificate Assistant]\( 憑證助理) > [Request a Certificate From a Certificate Authority]\(向憑證授權單位要求憑證)  。  
 
     ![在金鑰鏈存取中向憑證授權單位要求憑證](./media/iOS-signing-cert-5.png)
 
@@ -129,7 +128,7 @@ ms.locfileid: "57566653"
 
     ![輸入您所要求的憑證資訊](./media/iOS-signing-cert-6.png)
 
-12. 返回 Apple Developer 站台。 按一下 [繼續] 。 然後上傳 CSR 檔案。
+12. 返回 Apple Developer 站台。 按一下 [繼續]  。 然後上傳 CSR 檔案。
 
 13. Apple 會產生您的簽署憑證。 將它下載並儲存到 macOS 電腦上的易記位置。
 
@@ -137,11 +136,11 @@ ms.locfileid: "57566653"
 
 14. 按兩下您剛剛下載的憑證，以將憑證新增至金鑰鏈。
 
-15. 再次開啟**金鑰鏈存取**。 在右上方搜尋列中搜尋憑證的名稱，以找到憑證。 以滑鼠右鍵按一下項目來顯示功能表，然後按一下 [Get Info]\(取得資訊)。 在範例畫面中，我們會使用開發憑證，而不是生產環境憑證。
+15. 再次開啟**金鑰鏈存取**。 在右上方搜尋列中搜尋憑證的名稱，以找到憑證。 以滑鼠右鍵按一下項目來顯示功能表，然後按一下 [Get Info]\(取得資訊)  。 在範例畫面中，我們會使用開發憑證，而不是生產環境憑證。
 
     ![將憑證新增至金鑰鏈](./media/iOS-signing-cert-8.png)
 
-16. 隨即出現參考視窗。 捲動到底部，並查看 [指紋] 標籤下方。 複製 **SHA1** 字串 (模糊化)，作為 App Wrapping Tool 之 "-c" 的引數。
+16. 隨即出現參考視窗。 捲動到底部，並查看 [指紋]  標籤下方。 複製 **SHA1** 字串 (模糊化)，作為 App Wrapping Tool 之 "-c" 的引數。
 
     ![iPhone 資訊 - SHA1 指紋字串](./media/iOS-signing-cert-9.png)
 
@@ -151,15 +150,15 @@ ms.locfileid: "57566653"
 
 1. 返回 [Apple Developer 帳戶入口網站](https://developer.apple.com/account/)，並使用組織 Apple 識別碼**登入**。
 
-2. 按一下 [Certificates, IDs & Profiles]\(憑證、識別碼和設定檔)。
+2. 按一下 [Certificates, IDs & Profiles]\(憑證、識別碼和設定檔)  。
 
 3. 按一下 [裝置] ![Apple Developer 入口網站加號](./media/iOS-signing-cert-2.png) (右上角) 來新增 iOS 佈建設定檔。
 
-4. 選擇在 [Distribution]\(發佈) 下建立 [In House]\(內部) 佈建設定檔。
+4. 選擇在 [Distribution]\(發佈)  下建立 [In House]\(內部)  佈建設定檔。
 
    ![選取內部佈建設定檔](./media/iOS-provisioning-profile-1.png)
 
-5. 按一下 [繼續] 。 一定要將先前產生的簽署憑證連結至佈建設定檔。
+5. 按一下 [繼續]  。 一定要將先前產生的簽署憑證連結至佈建設定檔。
 
 6. 遵循將設定檔 (副檔名為 .mobileprovision) 下載至 macOS 電腦的步驟。
 
@@ -169,11 +168,11 @@ ms.locfileid: "57566653"
 
 ## <a name="download-the-app-wrapping-tool"></a>下載 App Wrapping Tool
 
-1.  從 [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 將 App Wrapping Tool 的檔案下載到 macOS 電腦。
+1. 從 [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 將 App Wrapping Tool 的檔案下載到 macOS 電腦。
 
-2.  按兩下 **Microsoft Intune App Wrapping Tool for iOS.dmg**。 終端使用者授權合約 (EULA) 視窗隨即出現。 請仔細閱讀文件。
+2. 按兩下 **Microsoft Intune App Wrapping Tool for iOS.dmg**。 終端使用者授權合約 (EULA) 視窗隨即出現。 請仔細閱讀文件。
 
-3. 選擇 [同意] 接受 EULA，將封裝掛接到您的電腦。
+3. 選擇 [同意]  接受 EULA，將封裝掛接到您的電腦。
 
 ## <a name="run-the-app-wrapping-tool"></a>執行應用程式包裝工具
 
@@ -203,30 +202,38 @@ ms.locfileid: "57566653"
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|顯示可搭配 App Wrapping Tool 一起使用之命令列屬性的詳細用法資訊。|
-|**-v**|(選擇性) 將詳細訊息輸出到主控台。 建議使用此旗標來偵錯任何錯誤。|
+|**-h**| 顯示可搭配 App Wrapping Tool 一起使用之命令列屬性的詳細用法資訊。 |
+|**-aa**|（選擇性） `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`，亦即 `login.windows.net/common` |
+|**-ac**|（選擇性） `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 這是 [用戶端識別碼] 欄位中的 guid 來自應用程式的 [註冊] 分頁中的清單。 |
+|**-ar**|（選擇性） `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 這是您的應用程式註冊中所設定的重新導向 URI。 一般來說，它會是 Microsoft Authenticator 應用程式在代理驗證之後將傳回的應用程式 URL 通訊協定。 |
+|**-v**| (選擇性) 將詳細訊息輸出到主控台。 建議使用此旗標來偵錯任何錯誤。 |
 |**-e**| (選擇性) 若使用此旗標，App Wrapping Tool 會書處理應用程式時移除缺少的權利。 如需詳細資料，請參閱[設定應用程式的權利](#setting-app-entitlements)。|
 |**-xe**| (選擇性) 列印應用程式 iOS 延伸模組的相關資訊，以及使用這些功能所需的權利。 如需詳細資料，請參閱[設定應用程式的權利](#setting-app-entitlements)。 |
 |**-x**| (可省略) `<An array of paths to extension provisioning profiles>`。 如果您的應用程式需要延伸模組佈建設定檔，請使用此選項。|
-|**-f**|(選擇性) `<Path to a plist file specifying arguments.>`：若選擇使用 plist 範本指定其餘的 IntuneMAMPackager 屬性 (例如 -i、-o、-p 等等)，請在 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 檔案之前設定此旗標。 請參閱＜使用 plist 輸入引數＞。 |
 |**-b**|(可省略) 如果希望包裝的輸出應用程式和輸入應用程式有相同的套件組合版本，請使用 -b 不加引數 (不建議使用)。 <br/><br/> 如果希望包裝的應用程式有自訂的 CFBundleVersion，請使用 `-b <custom bundle version>`。 若選擇指定自訂 CFBundleVersion，建議使用最低有效元件累加原生應用程式的 CFBundleVersion，例如 1.0.0 -> 1.0.1。 |
+|**-citrix**|選擇性包含 Citrix XenMobile App SDK （僅限網路的變體）。 您必須安裝[CITRIX MDX 工具](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html)組，才能使用此選項。 |
+|**-f**|(選擇性) `<Path to a plist file specifying arguments.>`：若選擇使用 plist 範本指定其餘的 IntuneMAMPackager 屬性 (例如 -i、-o、-p 等等)，請在 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 檔案之前設定此旗標。 請參閱＜使用 plist 輸入引數＞。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>使用 plist 輸入引數
 您可將所有命令引數放入 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 檔案，即可輕鬆執行應用程式包裝工具。 Plist 是一種類似於 XML 的檔案格式，可讓您透過表單介面輸入命令列引數。
 
 在 IntuneMAMPackager/Contents/MacOS 資料夾中，使用文字編輯器或 Xcode 開啟 `Parameters.plist` {空白的 plist 範本)。 為下列金鑰輸入您的引數︰
 
-| Plist 金鑰 |  預設值| 附註 |
-|------------------|--------------|-----|
-| 輸入應用程式封裝路徑  |empty| 與 -i 相同|
-| 輸出應用程式封裝路徑 |empty| 與 -o 相同|
-| 佈建設定檔路徑 |empty| 與 -p 相同|
-| SHA-1 憑證雜湊 |empty| 與 -c 相同|
-| 啟用詳細資訊 |false| 與 -v 相同|
-| 移除缺少的權利 | false| 與 -c 相同|
-| 避免預設的組建 |false | 相當於只使用 -b 而不使用引數|
-|組建字串覆寫 | empty| 已包裝的輸出應用程式的自訂 CFBundleVersion |
-|延伸模組佈建設定檔路徑 | empty| 應用程式的延伸模組佈建設定檔陣列。
+| Plist 金鑰 | 類型 |  預設值 | 附註 |
+|------------------|-----|--------------|-----|
+| 輸入應用程式封裝路徑 |字串|empty| 與 -i 相同|
+| 輸出應用程式封裝路徑 |字串|empty| 與 -o 相同|
+| 佈建設定檔路徑 |字串|empty| 與 -p 相同|
+| SHA-1 憑證雜湊 |字串|empty| 與 -c 相同|
+| ADAL 授權單位 |字串|empty| 與 -aa 相同|
+| ADAL 用戶端識別碼 |字串|empty| 與 -ac 相同|
+| ADAL 回復 URI |字串|empty| 與 -ar 相同|
+| 啟用詳細資訊 |布林值|false| 與 -v 相同|
+| 移除缺少的權利 |布林值|false| 與 -c 相同|
+| 防止預設的組建更新 |Boolen|false| 相當於只使用 -b 而不使用引數|
+| 組建字串覆寫 |字串|empty| 已包裝的輸出應用程式的自訂 CFBundleVersion|
+| 包含 Citrix XenMobile App SDK （僅限網路的 variant）|布林值|false| 與-citrix 相同|
+| 延伸模組佈建設定檔路徑 |字串陣列|empty| 應用程式的延伸模組佈建設定檔陣列。
 
 
 執行 IntuneMAMPackager 並指設定 plist 一個引數︰
@@ -285,15 +292,16 @@ ms.locfileid: "57566653"
 ### <a name="log-files-for-the-app-wrapping-tool"></a>App Wrapping Tool 的記錄檔
 使用 App Wrapping Tool 包裝的應用程式會產生記錄，而這些記錄會寫入 iOS 用戶端裝置主控台。 當您的應用程式出現問題，需要判斷問題是否與 App Wrapping Tool 相關時，此資訊即能派上用場。 若要得到此資訊，請使用下列步驟：
 
-1.  藉由執行應用程式來重現問題。
+1. 藉由執行應用程式來重現問題。
 
-2.  遵照 [偵錯已部署的 iOS 應用程式](https://developer.apple.com/library/ios/qa/qa1747/_index.html)的 Apple 指示收集主控台輸出。
+2. 遵照 [偵錯已部署的 iOS 應用程式](https://developer.apple.com/library/ios/qa/qa1747/_index.html)的 Apple 指示收集主控台輸出。
 
-3.  在主控台輸入下列指令碼，篩選應用程式限制輸出的已儲存記錄：
+3. 在主控台輸入下列指令碼，篩選應用程式限制輸出的已儲存記錄：
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     您可以將篩選過的記錄檔提交給 Microsoft。
 
     > [!NOTE]
@@ -310,7 +318,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 |---------------|-----------|
 |iOS 佈建設定檔|加入設定檔之前，請先確定其有效性。 App Wrapping Tool 在處理 iOS 應用程式期間，不會檢查佈建設定檔過期與否。 如果指定了過期的佈建設定檔，應用程式包裝工具會包含過期的佈建設定檔，而您將不會知道有問題，直到在 iOS 裝置上安裝應用程式失敗。|
 |iOS 簽署憑證|指定簽署憑證之前，請先確定其有效性。 工具在處理 iOS 應用程式時，不會檢查憑證是否已過期。 如果提供已過期憑證的雜湊，則工具會處理並簽署應用程式，但它無法在裝置上安裝。<br /><br />請確定為簽署已包裝應用程式提供的憑證，在佈建設定檔中有相符的項目。 工具不會驗證針對為簽署包裝應用程式所提供的憑證，佈建設定檔是否有相符的項目。|
-|驗證|裝置必須有 PIN，加密才能運作。 在部署已包裝應用程式的裝置上，點選裝置上的狀態列，將要求使用者使用工作或學校帳戶重新登入。 包裝應用程式中的預設原則為「重新啟動時驗證」。 iOS 在處理任何外部通知 (例如來電) 時，會結束並重新啟動應用程式。
+|驗證|裝置必須有 PIN，加密才能運作。 在部署已包裝應用程式的裝置上，點選裝置上的狀態列，將要求使用者使用工作或學校帳戶重新登入。 包裝應用程式中的預設原則為「重新啟動時驗證」  。 iOS 在處理任何外部通知 (例如來電) 時，會結束並重新啟動應用程式。
 
 
 ## <a name="setting-app-entitlements"></a>設定應用程式權利
@@ -320,7 +328,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 |功能|說明|建議的指引|
 |--------------|---------------|------------------------|
-|應用程式群組|使用 [應用程式群組] 可以讓多個應用程式同時存取共用容器，並允許應用程式之間進行其他處理序之間的通訊。<br /><br />若要啟用應用程式群組，請開啟 [功能] 窗格，然後按一下 [應用程式群組] 中的 [開啟]。 您可以新增應用程式群組或選取現有的應用程式群組。|使用應用程式群組時，請使用反向 DNS 標記法：<br /><br />*group.com.companyName.AppGroup*|
+|應用程式群組|使用 [應用程式群組] 可以讓多個應用程式同時存取共用容器，並允許應用程式之間進行其他處理序之間的通訊。<br /><br />若要啟用應用程式群組，請開啟 [功能]  窗格，然後按一下 [應用程式群組]  中的 [開啟]  。 您可以新增應用程式群組或選取現有的應用程式群組。|使用應用程式群組時，請使用反向 DNS 標記法：<br /><br />*group.com.companyName.AppGroup*|
 |背景模式|啟用 [背景模式] 可讓您的 iOS 應用程式繼續在背景中執行。||
 |資料保護|[資料保護] 為使用 iOS 應用程式儲存在磁碟上的檔案，增加一層安全性。 [資料保護] 使用特定裝置上的現有內建加密硬體，以加密格式將檔案儲存在磁碟上。 您必須佈建應用程式，才能使用 [資料保護]。||
 |在應用程式內購買|[在應用程式內購買] 讓您可以連線到市集，並安全地處理使用者的付款，形同將市集直接內嵌在您的應用程式中。 您可以使用 [在應用程式內購買] 為增強功能或您應用程式可用的其他內容收款。||
@@ -331,9 +339,9 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
 ### <a name="steps-to-enable-entitlements"></a>啟用權利的步驟
 
-1.  啟用您應用程式中的功能：
+1. 啟用您應用程式中的功能：
 
-    a.  在 Xcode 中，移至您的應用程式的目標，然後按一下 [功能]。
+    a.  在 Xcode 中，移至您的應用程式的目標，然後按一下 [功能]  。
 
     b.  開啟適當的功能。 如需每項功能及如何決定正確值的詳細資訊，請參閱 [iOS Developer Library 中的新增功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
 
@@ -341,7 +349,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
     d.  建置並簽署要包裝的應用程式。
 
-2.  啟用您佈建設定檔中的權利：
+2. 啟用您佈建設定檔中的權利：
 
     a.  登入 Apple Developer Member Center。
 
@@ -351,7 +359,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 
     d.  完成 [佈建設定檔精靈]，並下載您的檔案。
 
-3.  確定您已符合所有必要條件，然後再包裝應用程式。
+3. 確定您已符合所有必要條件，然後再包裝應用程式。
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>權利常見錯誤的疑難排解
 若 App Wrapping Tool for iOS 顯示權利錯誤，請嘗試下列疑難排解步驟。
@@ -364,20 +372,20 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>尋找已簽署應用程式的現有權利
 若要檢閱已簽署應用程式和佈建設定檔的現有權利：
 
-1.  找到 .ipa 檔案並將其副檔名變更為 .zip。
+1. 找到 .ipa 檔案並將其副檔名變更為 .zip。
 
-2.  展開 .zip 檔案。 這會產生內含 .app 套件組合的 Payload 資料夾。
+2. 展開 .zip 檔案。 這會產生內含 .app 套件組合的 Payload 資料夾。
 
-3.  使用 codesign 工具檢查 .app 套件的權利，其中 `YourApp.app` 是 .app 套件的實際名稱:
+3. 使用 codesign 工具檢查 .app 套件的權利，其中 `YourApp.app` 是 .app 套件的實際名稱:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  使用安全性工具檢查應用程式之內嵌佈建設定檔的權利，其中 `YourApp.app` 是 .app 套件的實際名稱。
+4. 使用安全性工具檢查應用程式之內嵌佈建設定檔的權利，其中 `YourApp.app` 是 .app 套件的實際名稱。
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>使用 –e 參數移除應用程式的權利
@@ -390,19 +398,19 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>App Wrapping Tool 的安全性與隱私權
 當您使用 App Wrapping Tool 時，請使用下列安全性與隱私權的最佳作法。
 
--   要簽署的憑證、佈建設定檔，以及您指定的企業營運系統應用程式，必須位在用以執行 App Wrapping Tool 的該部 macOS 電腦上。 若檔案使用 UNC 路徑，請確定這些路徑可從 macOS 電腦存取。 路徑必須透過 IPsec 或 SMB 簽章保護。
+- 要簽署的憑證、佈建設定檔，以及您指定的企業營運系統應用程式，必須位在用以執行 App Wrapping Tool 的該部 macOS 電腦上。 若檔案使用 UNC 路徑，請確定這些路徑可從 macOS 電腦存取。 路徑必須透過 IPsec 或 SMB 簽章保護。
 
     匯入管理主控台的已包裝應用程式，必須位於工具執行所在的同一部電腦上。 若檔案位於 UNC 路徑上，請確定該路徑可從執行管理主控台的電腦存取。 路徑必須透過 IPsec 或 SMB 簽章保護。
 
--   從 GitHub 存放庫下載 App Wrapping Tool 的環境，必須透過 IPsec 或 SMB 簽署加以保護。
+- 從 GitHub 存放庫下載 App Wrapping Tool 的環境，必須透過 IPsec 或 SMB 簽署加以保護。
 
--   您所處理的應用程式必須來自值得信任的來源，以確保防護免於攻擊威脅。
+- 您所處理的應用程式必須來自值得信任的來源，以確保防護免於攻擊威脅。
 
--   確保您在 App Wrapping Tool 中指定的輸出資料夾受到保護。若此資料夾為遠端資料夾更應如此。
+- 確保您在 App Wrapping Tool 中指定的輸出資料夾受到保護。若此資料夾為遠端資料夾更應如此。
 
--   包含檔案上傳對話方塊的 iOS 應用程式，可以讓使用者規避應用程式適用的剪下、複製及貼上限制。 例如，使用者可以使用檔案上傳對話方塊，來上傳應用程式資料的螢幕擷取畫面。
+- 包含檔案上傳對話方塊的 iOS 應用程式，可以讓使用者規避應用程式適用的剪下、複製及貼上限制。 例如，使用者可以使用檔案上傳對話方塊，來上傳應用程式資料的螢幕擷取畫面。
 
--   當您從經過包裝的應用程式內監視裝置上的文件資料夾時，可能會出現一個名為 .msftintuneapplauncher 的資料夾。 若您變更或刪除此檔案，可能會影響受限應用程式正常運作。
+- 當您從經過包裝的應用程式內監視裝置上的文件資料夾時，可能會出現一個名為 .msftintuneapplauncher 的資料夾。 若您變更或刪除此檔案，可能會影響受限應用程式正常運作。
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>適用於 iOS 的 Intune App Wrapping Tool 含 Citrix MDX mVPN
 此功能是與適用於 iOS 之 Citrix MDX 應用程式封裝工具的整合。 此整合只是 Intune App Wrapping Tools 的額外選擇性命令列旗標 `-citrix`。
@@ -418,11 +426,13 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 只要執行您的一般應用程式封裝命令並附加 `-citrix` 旗標。 `-citrix` 旗標目前不接受任何引數。
 
 **使用方式格式**：
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **範例命令**：
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -431,7 +441,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。
 
 1. 移至您裝置上的 iOS 設定應用程式，並選取您的 LOB 應用程式。
-2. 將 [診斷主控台] 切換為 [開啟]。
+2. 將 [診斷主控台]  切換為 [開啟]  。
 3. 啟動您的 LOB 應用程式。
 4. 按一下「開始使用」連結。
 5. 您現在可以透過電子郵件來共用記錄檔，或者將記錄檔複製到 OneDrive 位置。
@@ -442,5 +452,5 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ## <a name="see-also"></a>請參閱
 
 - [決定如何準備應用程式以使用 Microsoft Intune 進行行動應用程式管理](apps-prepare-mobile-application-management.md)
-- [常見的問題、 問題和解決方式，與裝置原則和設定檔](device-profile-troubleshoot.md)
+- [常見的疑問、問題和解決方式與裝置原則和設定檔](device-profile-troubleshoot.md)
 - [使用 SDK 讓應用程式進行行動應用程式管理](app-sdk.md)

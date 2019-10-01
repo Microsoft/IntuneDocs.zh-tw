@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885072"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239439"
 ---
 # <a name="review-client-app-protection-logs"></a>檢閱用戶端應用程式保護記錄
 
@@ -31,7 +31,7 @@ ms.locfileid: "67885072"
 啟用及收集記錄的流程會因平台而有所不同：
 - **Android 裝置** - 使用「公司入口網站」  。 請參閱[將記錄以電子郵件傳送給公司支援人員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
 - **iOS 裝置** - 使用 Managed Browser 或 *Microsoft Edge* 來收集記錄。 如需詳細資料，請參閱 Intune 支援小組部落格 [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Intune Managed Browser 中用來提交記錄的全新 Intune 診斷主控台)。 
-- **Windows 10 裝置** - 使用 *MDMDiag* 及事件記錄。 請參閱 Windows 用戶端管理內容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (診斷 Windows 10 中的 MDM 失敗)，以及部落格[Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (針對 Windows 10 Intune 原則失敗進行疑難排解)
+- **Windows 10 裝置** - 使用 *MDMDiag* 及事件記錄。 請參閱 Windows 用戶端管理內容中的[診斷 Windows 10 中的 MDM 失敗](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) \(部分機器翻譯\)，以及部落格[針對 Windows 10 Intune 原則失敗進行疑難排解](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) \(英文\)。
 
 
 下表列出記錄中設定的名稱及說明。

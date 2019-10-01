@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 2358ec854e9cc78cbc36570c45a96b98d2844f5d
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022673"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302574"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 iOS 裝置的 Wi-Fi 設定
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 iOS 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKS 或 SCEP 憑證等等。
 
@@ -33,6 +35,9 @@ ms.locfileid: "69022673"
 ## <a name="before-you-begin"></a>開始之前
 
 [建立裝置設定檔](device-profile-create.md)。
+
+> [!NOTE]
+> 這些設定適用于所有的註冊類型。 如需註冊類型的詳細資訊，請參閱[iOS 註冊](ios-enroll.md)。
 
 ## <a name="basic-profiles"></a>基本設定檔
 
@@ -74,18 +79,12 @@ ms.locfileid: "69022673"
     - **伺服器信任** - **憑證伺服器名稱**：將您信任之憑證授權單位 (CA) 簽發之憑證中所使用的一或多個通用名稱**新增**至您的無線網路存取伺服器。 例如：新增 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
     - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 此憑證可讓用戶端信任無線網路存取伺服器的憑證。
 
-      按一下 [確定]  以儲存您的變更。
-
     - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)** ：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
-
-      按一下 [確定]  以儲存您的變更。
 
   - **EAP-TTLS**：另請輸入：
 
     - **伺服器信任** - **憑證伺服器名稱**：將您信任之憑證授權單位 (CA) 簽發之憑證中所使用的一或多個通用名稱**新增**至您的無線網路存取伺服器。 例如：新增 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
     - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 此憑證可讓用戶端信任無線網路存取伺服器的憑證。
-
-      按一下 [確定]  以儲存您的變更。
 
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
@@ -96,8 +95,6 @@ ms.locfileid: "69022673"
 
       - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
-        按一下 [確定]  以儲存您的變更。
-
       - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
   - **LEAP**
@@ -107,15 +104,11 @@ ms.locfileid: "69022673"
     - **伺服器信任** - **憑證伺服器名稱**：將您信任之憑證授權單位 (CA) 簽發之憑證中所使用的一或多個通用名稱**新增**至您的無線網路存取伺服器。 例如：新增 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
     - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 此憑證可讓用戶端信任無線網路存取伺服器的憑證。
 
-      按一下 [確定]  以儲存您的變更。
-
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 
 
       - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
-
-        按一下 [確定]  以儲存您的變更。
 
       - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
@@ -124,12 +117,8 @@ ms.locfileid: "69022673"
   - **手動**：輸入 **Proxy 伺服器位址**作為 IP 位址，以及其**連接埠號碼**。
   - **自動**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL]  (例如 `http://proxy.contoso.com`)。
 
-選取 [確定]   > [建立]  儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
-
 ## <a name="next-steps"></a>後續步驟
 
-設定檔已建立，但它不會執行任何動作。 接下來，請[指派此設定檔](device-profile-assign.md)。
+設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-## <a name="more-resources"></a>其他資源
-
-[Wi-Fi 設定概觀](wi-fi-settings-configure.md)，包括其他可用平台。
+在[android](wi-fi-settings-android.md)、 [android Enterprise](wi-fi-settings-android-enterprise.md)、 [macOS](wi-fi-settings-macos.md)和[Windows 10](wi-fi-settings-windows.md)裝置上設定 wi-fi 設定。

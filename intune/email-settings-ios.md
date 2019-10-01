@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune 中 iOS 裝置的電子郵件設定- Azure | Microsoft Docs
+title: 設定 Microsoft Intune 中 iOS 裝置的電子郵件設定 - Azure | Microsoft Docs
 description: 了解您可以在 Microsoft Intune 中設定並新增至 iOS 裝置的所有電子郵件設定清單，包括使用 Exchange 伺服器，以及從 Azure Active Directory 取得屬性。 您也可以使用 Microsoft Intune 的裝置組態設定檔，在 iOS 裝置上啟用 SSL、使用憑證或使用者名稱/密碼來驗證使用者，以及同步電子郵件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8fa0a7edd1782cd3eae725e6adf0af867e0f3727
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042109"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301932"
 ---
-# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Intune 中 iOS 裝置的電子郵件設定檔設定
+# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 iOS 裝置的電子郵件設定
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 在 Microsoft Intune 中，您可以建立並設定電子郵件連線到電子郵件伺服器、選擇使用者驗證的方式、使用 S/MIME 進行加密，以及執行更多作業。
 
@@ -29,7 +31,10 @@ ms.locfileid: "66042109"
 
 ## <a name="before-you-begin"></a>開始之前
 
-[建立裝置組態設定檔](email-settings-configure.md#create-a-device-profile)。
+[建立裝置組態設定檔](email-settings-configure.md)。
+
+> [!NOTE]
+> 這些設定適用于所有的註冊類型。 如需註冊類型的詳細資訊，請參閱[iOS 註冊](ios-enroll.md)。
 
 ## <a name="email-settings"></a>電子郵件設定
 
@@ -98,4 +103,4 @@ ms.locfileid: "66042109"
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-在 [Android](email-settings-android.md)、[Windows 10](email-settings-windows-10.md) 和 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 裝置上設定電子郵件設定。
+設定[android](email-settings-android.md)、 [android Enterprise](email-settings-android-enterprise.md)、 [Windows 10](email-settings-windows-10.md)和[Windows Phone 8.1](email-settings-windows-phone-8-1.md)裝置上的電子郵件設定。

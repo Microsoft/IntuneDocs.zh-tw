@@ -1,11 +1,11 @@
 ---
-title: 在 Microsoft Intune 中將 VPN 設定新增至 iOS 裝置 - Azure | Microsoft Docs
+title: 在 Microsoft Intune 中設定 iOS 裝置的 VPN 設定 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中，使用虛擬私人網路 (VPN) 組態設定在執行 iOS 的裝置上新增或建立 VPN 組態設定檔，包括基底設定中的連線詳細資料、驗證方法和分割通道；具有識別碼的自訂 VPN 設定，以及金鑰和值組；包含 Safari URL 的個別應用程式 VPN 設定，與 具有 SSID 或 DNS 搜尋網域的隨選 VPN；以及要包含設定指令碼、IP 或 FQDN 位址和 TCP 連接埠的 Proxy 設定。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 696e335e422ed45af7b7c53db9e91dead5ea8502
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713193"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302768"
 ---
-# <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
+# <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這些設定可用來建立及設定您組織網路的 VPN 連線。 本文說明了這些設定。 其中一些設定僅適用於特定 VPN 用戶端，例如 Citrix、Zscaler 等。
+
+## <a name="before-you-begin"></a>開始之前
+
+[建立裝置組態設定檔](vpn-settings-configure.md)。
+
+> [!NOTE]
+> 這些設定適用于所有的註冊類型。 如需註冊類型的詳細資訊，請參閱[iOS 註冊](ios-enroll.md)。
 
 ## <a name="connection-type"></a>連線類型
 
@@ -42,6 +51,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **Citrix VPN**
 - **Citrix SSO**
 - **Zscaler**：若要使用條件式存取，或允許使用者略過 Zscaler 登入畫面，您必須整合 Zscaler Private Access (ZPA) 與 Azure AD 帳戶。 如需詳細步驟，請參閱 [Zscaler 文件](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad)。 
+- **Ikev2**： [ikev2 設定](#ikev2-settings)（在本文中）描述屬性。
 - **自訂 VPN**
 
 > [!NOTE]
@@ -93,6 +103,79 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 
   - 若要移除此設定，請重新建立設定檔，但不要選取 [我同意]  。 然後，重新指派設定檔。
 
+## <a name="ikev2-settings"></a>IKEv2 設定
+
+當您選擇 [連線**類型**]  > **IKEv2**時，就會套用這些設定。
+
+- **遠端識別碼**：輸入 IKEv2 伺服器的網路 IP 位址、FQDN、USERFQDN 或 ASN1DN。 例如，輸入 `10.0.0.3` 或 `vpn.contoso.com`。 一般來說，您輸入的值與[**連接名稱**](#base-vpn-settings)相同（在本文中）。 但是，它會根據您的 IKEv2 伺服器設定而定。
+
+- **用戶端驗證類型**：選擇 vpn 用戶端向 vpn 驗證的方式。 選項包括：
+  - **使用者驗證**（預設值）：向 VPN 驗證使用者認證。
+  - **電腦驗證**：向 VPN 驗證裝置認證。
+
+- **驗證方法**：選擇要傳送至伺服器的用戶端認證類型。 選項包括：
+  - **憑證**：使用現有的憑證設定檔向 VPN 進行驗證。 請確認此憑證設定檔已指派給使用者或裝置。 否則，VPN 連線將會失敗。
+    - **憑證類型**：選取憑證所使用的加密類型。 請確定 VPN 伺服器已設定為接受這種類型的憑證。 選項包括：
+      - **RSA** （預設值）
+      - **ECDSA256**
+      - **ECDSA384**
+      - **ECDSA521**
+
+  - 使用者**名稱和密碼**（僅限使用者驗證）：當使用者連接到 VPN 時，系統會提示他們輸入其使用者名稱和密碼。
+  - **共用密碼**（僅限電腦驗證）：可讓您輸入要傳送至 VPN 伺服器的共用密碼。
+    - **共用密碼**：輸入共用密碼，也稱為預先共用金鑰（PSK）。 請確定值符合 VPN 伺服器上設定的共用密碼。
+
+- **伺服器憑證簽發者一般名稱**：允許 vpn 伺服器向 vpn 用戶端進行驗證。 輸入在裝置上傳送給 VPN 用戶端的 VPN 伺服器證書的憑證簽發者一般名稱（CN）。 請確定 CN 值符合 VPN 伺服器上的設定。 否則，VPN 連線將會失敗。
+- **伺服器憑證一般名稱**：輸入憑證本身的 CN。 如果保留空白，則會使用遠端識別碼值。
+
+- 不正確**對等偵測速率**：選擇 vpn 用戶端檢查 vpn 通道是否作用中的頻率。 選項包括：
+  - [**未設定**]：使用 iOS 系統預設值，這可能與選擇 [**中**] 相同。
+  - **無**：停用不正確對等偵測。
+  - **低**：每隔30分鐘傳送一則 keepalive 訊息。
+  - **中**（預設值）：每10分鐘傳送一則 keepalive 訊息。
+  - **高**：每60秒傳送一則 keepalive 訊息。
+
+- **最小 tls 版本範圍**：輸入要使用的最低 tls 版本。 輸入 `1.0`、`1.1` 或 `1.2`。 如果保留空白，則會使用 `1.0` 的預設值。
+- **Tls 版本範圍上限**：輸入要使用的最大 tls 版本。 輸入 `1.0`、`1.1` 或 `1.2`。 如果保留空白，則會使用 `1.2` 的預設值。
+- 完整**轉寄**密碼：選取 [**啟用**] 以開啟完整轉寄密碼（PFS）。 PFS 是一種 IP 安全性功能，可降低工作階段金鑰遭到入侵時的影響。 **Disable** （預設值）不會使用 PFS。
+- **憑證撤銷檢查**：選取 [**啟用**] 以確保憑證不會被撤銷，然後才允許 VPN 連線成功。 這種檢查是最佳做法。 如果 VPN 伺服器在判斷憑證是否已撤銷之前超時，則會授與存取權。 [**停**用] （預設）不會檢查是否有已撤銷的憑證。
+
+- **設定安全性關聯參數**： [**未設定**] （預設）會使用 iOS 系統預設值。 選取 [**啟用**] 以輸入與 VPN 伺服器建立安全性關聯時所使用的參數：
+  - **加密演算法**：選取您想要的演算法：
+    - DES
+    - 3DES
+    - AES-128
+    - AES-256 （預設值）
+    - AES-128-GCM
+    - AES-256-GCM
+  - **完整性演算法**：選取您想要的演算法：
+    - SHA1-96
+    - SHA1-160
+    - SHA2-256 （預設值）
+    - SHA2-384
+    - SHA2-512
+  - **Diffie-hellman 群組**：選取您想要的群組。 預設值為 group `2`。
+  - **存留期**（分鐘）：選擇在旋轉金鑰之前，安全性關聯保持作用中的時間長度。 輸入介於 `10` 和 `1440` 之間的整數（1440分鐘是24小時）。 預設為`1440`。
+
+- **為子系安全性關聯設定一組不同的參數**： iOS 可讓您針對 IKE 連線和任何子連接，設定不同的參數。 
+
+  [**未設定**] （預設）會使用您在先前的 [**設定安全性關聯參數**] 設定中輸入的值。 選取 [**啟用**] 以輸入與 VPN 伺服器建立*子*安全性關聯時所使用的參數：
+  - **加密演算法**：選取您想要的演算法：
+    - DES
+    - 3DES
+    - AES-128
+    - AES-256 （預設值）
+    - AES-128-GCM
+    - AES-256-GCM
+  - **完整性演算法**：選取您想要的演算法：
+    - SHA1-96
+    - SHA1-160
+    - SHA2-256 （預設值）
+    - SHA2-384
+    - SHA2-512
+  - **Diffie-hellman 群組**：選取您想要的群組。 預設值為 group `2`。
+  - **存留期**（分鐘）：選擇在旋轉金鑰之前，安全性關聯保持作用中的時間長度。 輸入介於 `10` 和 `1440` 之間的整數（1440分鐘是24小時）。 預設為`1440`。
+
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 
 - **個別應用程式 VPN**：啟用個別應用程式 VPN。 允許 VPN 連線在特定應用程式開啟時自動觸發。 另請建立應用程式與此 VPN 設定檔的關聯。 如需詳細資訊，請參閱[為 iOS 設定個別應用程式 VPN 的指示](vpn-setting-configure-per-app.md)。
@@ -121,5 +204,8 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **位址**：輸入 Proxy 伺服器的完整主機名稱 IP 位址。
 - **連接埠號碼**：輸入與 Proxy 伺服器相關聯的連接埠號碼。
 
-## <a name="next-step"></a>後續步驟
-[在 Intune 中建立 VPN 設定檔](vpn-settings-configure.md)  
+## <a name="next-steps"></a>後續步驟
+
+設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+
+在[android](vpn-settings-android.md)、 [android Enterprise](vpn-settings-android-enterprise.md)、 [macOS](vpn-settings-macos.md)和[Windows 10](vpn-settings-windows-10.md)裝置上設定 VPN 設定。
