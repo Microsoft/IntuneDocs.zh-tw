@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279899"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726397"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>減少 Android 裝置系統管理員的支援 
-Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而且隨 Android 2.2 發行) 是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise](../connect-intune-android-enterprise.md) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
+Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而且隨 Android 2.2 發行) 是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 由於 Google 的這些變更，Intune 使用者會受到下列方面的影響： 
@@ -67,10 +67,11 @@ https://firebase.google.com/docs/cloud-messaging/
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>規劃變更：Intune 中的新 Windows 更新設定 <!-- 4464404 -->
-從 8 月版的 Intune 服務或 1908 開始，我們新增了新的「期限設定」，您可以設定此功能而不是 [可讓使用者重新啟動 (預約重新啟動)] 設定。 我們計劃在 1909 或 9 月更新中停用使用者介面中的重新開機設定，然後在 10 月底之前將它們從主控台中完全移除。 
+從 8 月版的 Intune 服務或 1908 開始，我們新增了新的「期限設定」，您可以設定此功能而不是 [可讓使用者重新啟動 (預約重新啟動)] 設定。 我們計劃在 1909 或 9 月更新中停用使用者介面中的重新開機設定，然後在 10 月底之前將它們從主控台中完全移除。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-如果您在您的環境中管理 Windows 10 裝置： 
+如果您在您的環境中管理 Windows 10 裝置：
+
 - 使用 8 月 Intune 更新或 1908，除了舊的預約重新啟動設定之外，您還將在主控台中看到新的期限設定。
 - 當您同時設定這些舊的和新的設定時，期限設定值將會覆寫已啟用的預約重新啟動設定值。
 - 期限設定將取代 1910 更新中主控台內的 [可讓使用者重新啟動 (預約重新啟動)] 選項。
@@ -78,7 +79,7 @@ https://aka.ms/intune_fullscreen
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
 透過使用您想要的值設定 1908 中的期限設定，來開始使用它們。 備妥之後，可以將已啟用的預約重新啟動設定設為 [尚未設定]，為這些設定將在 10 月從主控台中移除做準備。
 
-如有需要，請更新您的文件和任何自動化指令碼。 
+如有需要，請更新您的文件和任何自動化指令碼。
 
 我們會及時通知您更新並將提醒張貼到訊息中心，然後我們會移除預約重新啟動設定。
 
@@ -86,12 +87,13 @@ https://aka.ms/intune_fullscreen
 Intune 將會在10月移至支援 Android 5.x (Lollipop) 與更新版本。 使用最新的 Intune App SDK 更新任何已包裝的應用程式，並更新您的裝置。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-若您不是使用或計畫使用適用於 Android 的 SDK 或應用程式，此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若您未更新，應用程式將不會接收更新，而且其體驗品質會隨著時間而降低。 
+若您不是使用或計畫使用適用於 Android 的 SDK 或應用程式，此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若您未更新，應用程式將不會接收更新，而且其體驗品質會隨著時間而降低。
 
 在下面尋找執行 Android 4.x 版且在 Intune 中註冊的通用裝置清單。 若您有其中一部裝置，請採取適當的步驟，以確定此裝置將支援 Android 5.0 版或更高版本，或它將會被取代為支援 Android 5.0 版或更新版本的裝置。 此清單並未包含所有可能需要評估的裝置：
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Intune 將會在10月移至支援 Android 5.x (Lollipop) 與更新版本。 使�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 使用最新的 Intune App SDK 包裝您的應用程式。 您也可以設定 [需要最低 OS 版本 (僅警告)] 條件式啟動設定，以通知個人裝置上的使用者進行升級。
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 針對變更做好規劃：接近 Windows 7 終止支援 <!-- 3042987 -->
 如我們在 2018 年 9 月於 MC148476 所發佈並於 2019 年 3 月於 MC176794 中重新發佈的訊息，Windows 7 將在 2020 年 1 月 14 日達到延伸支援結束。 屆時，Intune 將不再支援執行 Windows 7 的裝置，以便我們可以將我們的精力專注在支援較新的技術並提供絕佳新終端使用者體驗。 在該日期之後，將無法再透過 Intune 取得可協助保護您 Windows 7 PC 的技術協助與自動更新。 Microsoft 強烈建議您在 2020 年 1 月之前升級到 Windows 10，以避免您需要已不再提供之服務或支援的情況。 在[這裡](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)閱讀更多有關 Windows 支援生命週期的資訊。

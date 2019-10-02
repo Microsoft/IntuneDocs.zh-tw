@@ -1,0 +1,190 @@
+- name: 設定裝置設定
+  href: index.yml
+- name: 概觀
+  expanded: true
+  items:
+    - name: 裝置設定概觀
+      href: device-profiles.md
+- name: 快速入門
+  items:
+    - name: 建立電子郵件裝置設定檔
+      href: quickstart-email-profile.md
+- name: 操作指南
+  items:
+    - name: 建立設定檔
+      href: device-profile-create.md
+    - name: Windows 上的系統管理範本
+      href: administrative-templates-windows.md
+    - name: iOS 與 macOS 上的裝置功能
+      href: device-features-configure.md
+    - name: 限制裝置設定與功能
+      href: device-restrictions-configure.md
+      displayName: Device restrictions
+    - name: Updates
+      href: delivery-optimization-windows.md
+      displayName: delivery optimization; updates
+    - name: 升級版本和 S 模式
+      href: edition-upgrade-configure-windows-10.md
+    - name: 電子郵件
+      href: email-settings-configure.md
+    - name: Kiosks 與專用裝置
+      href: kiosk-settings.md
+    - name: 共用的多重使用者裝置
+      href: shared-user-device-settings.md
+    - name: VPN
+      href: vpn-settings-configure.md
+      items:
+        - name: 適用於 Android 的個別應用程式 VPN
+          href: android-pulse-secure-per-app-vpn.md
+        - name: 適用於 iOS 的個別應用程式 VPN
+          href: vpn-setting-configure-per-app.md
+    - name: Wi-Fi 網路
+      href: wi-fi-settings-configure.md
+      displayName: wifi
+      items:
+        - name: 使用預先共用金鑰的 Wi-Fi
+          href: wi-fi-profile-shared-key.md
+    - name: macOS 上的延伸模組
+      href: kernel-extensions-overview-macos.md
+    - name: 教育版使用測試應用程式
+      href: education-settings-configure.md
+    - name: Zebra 裝置上的行動性延伸模組
+      href: android-zebra-mx-overview.md
+      displayName: mx
+    - name: Android Enterprise 上的 OEMConfig
+      href: android-oem-configuration-overview.md
+    - name: eSIM 行動數據設定檔
+      href: esim-device-configuration.md
+    - name: 監視電信費用
+      href: telecom-expenses-monitor.md
+    - name: 自訂裝置設定
+      href: custom-settings-configure.md
+    - name: 指派設定檔
+      href: device-profile-assign.md
+    - name: 監視設定檔
+      href: device-profile-monitor.md
+    - name: 疑難排解
+      items:
+        - name: 針對原則及設定檔進行疑難排解
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 電子郵件設定檔問題和解決方式
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: StageNow 記錄及常見問題
+          href: android-zebra-mx-logs-troubleshoot.md
+        - name: 常見問題和解答
+          href: device-profile-troubleshoot.md
+- name: 參考
+  items:
+    - name: 設定檔設定
+      items:
+        - name: Android
+          items:
+            - name: 裝置限制
+              href: device-restrictions-android.md
+            - name: 電子郵件
+              href: email-settings-android.md
+            - name: VPN
+              href: vpn-settings-android.md
+            - name: Wi-Fi
+              href: wi-fi-settings-android.md
+            - name: 自訂
+              href: custom-settings-android.md
+              items:
+                - name: 允許/封鎖 Samsung Knox Standard 的應用程式
+                  href: samsung-knox-apps-allow-block.md
+        - name: Android 企業
+          items:
+            - name: 裝置限制
+              href: device-restrictions-android-for-work.md
+            - name: 電子郵件
+              href: email-settings-android-enterprise.md
+            - name: VPN
+              href: vpn-settings-android-enterprise.md
+            - name: Wi-Fi
+              href: wi-fi-settings-android-enterprise.md
+            - name: 自訂
+              href: custom-settings-android-for-work.md
+        - name: iOS
+          items:
+            - name: 裝置功能
+              href: ios-device-features-settings.md
+            - name: 裝置限制
+              href: device-restrictions-ios.md
+            - name: 電子郵件
+              href: email-settings-ios.md
+            - name: VPN
+              href: vpn-settings-ios.md
+            - name: Wi-Fi
+              href: wi-fi-settings-ios.md
+            - name: 自訂
+              href: custom-settings-ios.md
+            - name: 內建 iOS 應用程式的套件組合識別碼
+              href: bundle-ids-built-in-ios-apps.md
+        - name: macOS
+          items:
+            - name: 裝置功能
+              href: macos-device-features-settings.md
+            - name: 裝置限制
+              href: device-restrictions-macos.md
+            - name: VPN
+              href: vpn-settings-macos.md
+            - name: Wi-Fi
+              href: wi-fi-settings-macos.md
+            - name: 延伸模組
+              href: kernel-extensions-settings-macos.md
+            - name: 自訂
+              href: custom-settings-macos.md
+        - name: Windows 10 及更新版本
+          items:
+            - name: 傳遞最佳化
+              href: delivery-optimization-settings.md
+            - name: 裝置限制
+              href: device-restrictions-windows-10.md
+            - name: 裝置限制 (Windows 10 團隊版)
+              href: device-restrictions-windows-10-teams.md
+            - name: 版本升級及模式切換
+              href: edition-upgrade-windows-settings.md
+            - name: 電子郵件
+              href: email-settings-windows-10.md
+            - name: Kiosk
+              href: kiosk-settings-windows.md
+            - name: VPN
+              href: vpn-settings-windows-10.md
+            - name: Wi-Fi
+              href: wi-fi-settings-windows.md
+            - name: 安全評定
+              href: education-settings-windows.md
+            - name: 共用的多重使用者裝置
+              href: shared-user-device-settings-windows.md
+            - name: 自訂
+              href: custom-settings-windows-10.md
+        - name: Windows Holographic for Business
+          items:
+            - name: 裝置限制
+              href: device-restrictions-windows-holographic.md
+            - name: 共用的多重使用者裝置
+              href: shared-user-device-settings-windows-holographic.md
+            - name: 版本升級及模式切換
+              href: holographic-upgrade.md
+            - name: Kiosk
+              href: kiosk-settings-holographic.md
+            - name: 自訂
+              href: custom-settings-windows-holographic.md
+        - name: Windows 8.1
+          items:
+            - name: 裝置限制
+              href: device-restrictions-windows-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-8-1.md
+            - name: Wi-Fi 匯入
+              href: wi-fi-settings-import-windows-8-1.md
+        - name: Windows Phone 8.1
+          items:
+            - name: 裝置限制
+              href: device-restrictions-windows-phone-8-1.md
+            - name: 電子郵件
+              href: email-settings-windows-phone-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-phone-8-1.md
+            - name: 自訂
+              href: custom-settings-windows-phone-8-1.md
