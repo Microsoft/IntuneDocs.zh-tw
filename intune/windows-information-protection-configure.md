@@ -3,12 +3,11 @@ title: Microsoft Intune 中的 Windows 資訊保護設定
 titleSuffix: Microsoft Intune
 description: 了解您可用於管理 Windows 資訊保護的相關 Microsoft Intune 設定。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: e3cc2cbc86eefc2344176919bf59f36e2364fb12
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59570373"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71302484"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中設定 Windows 資訊保護
 
@@ -35,11 +34,10 @@ ms.locfileid: "59570373"
 Intune 原則會管理受 Windows 資訊保護、企業網路位置、保護等級和加密設定所保護的應用程式清單。
 
 >[!NOTE]
-> 若要搭配使用 Windows 10 公司入口網站應用程式和 Windows 資訊保護，則您必須在 Windows 資訊保護的「豁免」模式下新增公司入口網站應用程式。 
+> 若要搭配使用 Windows 10 公司入口網站應用程式和 Windows 資訊保護，則您必須在 Windows 資訊保護的「豁免」  模式下新增公司入口網站應用程式。 
 
-## <a name="next-steps"></a>後續步驟
 如需詳細資訊，請參閱：
--  [使用 Windows 資訊保護來保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+- [使用 Windows 資訊保護來保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 - [使用 Microsoft Intune 的傳統主控台建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
 - [使用 Microsoft Intune 的 Azure 入口網站建立附帶 MDM 的 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
 - [使用 Microsoft Intune 的 Azure 入口網站建立附帶 MAM 的 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)
