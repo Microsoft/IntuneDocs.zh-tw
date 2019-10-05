@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238953"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721216"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>將您的 Android 裝置取消註冊管理  
 
@@ -64,7 +64,7 @@ ms.locfileid: "71238953"
 
 非到萬不得已時，您可以透過裝置系統管理員身分從裝置解除安裝應用程式。  
 
-如果您的裝置屬公司所擁有，您的組織可能會要求裝置上隨時有公司入口網站。 如果您將它解除安裝，在重新安裝應用程式之前，您可能無法存取受保護的公司資源 (例如電子郵件、應用程式、Wi-Fi 或 VPN)。 如需安裝、更新或移除必要應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)。  
+如果您的裝置屬公司所擁有，您的組織可能會要求裝置上隨時有公司入口網站。 如果您將它解除安裝，在重新安裝應用程式之前，您可能無法存取受保護的公司資源 (例如電子郵件、應用程式、Wi-Fi 或 VPN)。 如需安裝、更新或移除必要應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune)。
 
 以下示範如何透過裝置系統管理員身分停用公司入口網站。 您 Android 裝置上每項設定的實際名稱可能會有所不同。  
 

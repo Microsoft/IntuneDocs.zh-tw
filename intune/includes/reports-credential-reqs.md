@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6ec8f8a613d3b0a0b17f2615de634e70fa282fd7
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8483ed3d4198e228bdaaf4723b2c9c0dca9cecfc
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68229312"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830515"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -18,4 +18,4 @@ ms.locfileid: "68229312"
   - Azure AD 全域管理員
   - Intune 服務管理員
   - 對於 **Intune 資料倉儲**資源具有以角色為基礎之存取權的使用者
-  - 使用[僅限應用程式驗證](../data-warehouse-app-only-auth.md)的無使用者驗證 
+  - 使用[僅限應用程式驗證](../developer/data-warehouse-app-only-auth.md)的無使用者驗證 
