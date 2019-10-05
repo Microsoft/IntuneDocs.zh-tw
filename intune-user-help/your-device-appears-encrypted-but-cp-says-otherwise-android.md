@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238983"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721177"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>裝置已加密，但應用程式不然
 
@@ -31,7 +31,7 @@ ms.locfileid: "71238983"
 
 ## <a name="add-a-startup-pin"></a>新增啟動 PIN
 
-某些 Android 裝置會要求您建立啟動 PIN 以確保裝置的安全。 此設定的位置會在您裝置的 [**設定**] 應用程式中。 設定的名稱和位置可能會有所不同。 例如，在 Samsung Galaxy S7 上，此設定稱為「**安全啟動**」。 若要啟用它並建立密碼，請移至 [**設定** > ] [**鎖定畫面與安全性** > ] [安全] [**啟動**]。  
+某些 Android 裝置會要求您建立啟動 PIN 以確保裝置的安全。 此設定的位置會在您裝置的 [**設定**] 應用程式中。 設定的名稱和位置可能會有所不同。 例如，在 Samsung Galaxy S7 上，此設定稱為「**安全啟動**」。 若要啟用它並建立密碼，請移至 [**設定**] [ > ] [**鎖定畫面與安全性**] [ > **安全啟動**]。  
 
 ## <a name="encrypt-the-entire-device"></a>加密整部裝置
 
@@ -50,7 +50,7 @@ ms.locfileid: "71238983"
 
 某些 7.0 版與更新版本 Android 裝置加密資料的方式，與特定 Android 平台標準不一致。 這些加密方法會將裝置資訊放在風險之下。 因此，不支援這些裝置。
 
-如需支援的 Android 裝置的非完整清單，請參閱[Intune 中支援的作業系統和瀏覽器](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)一文。 如果未列出您的裝置，請參閱裝置製造商或聯絡支援人員。
+如需支援的 Android 裝置的非完整清單，請參閱[Intune 中支援的作業系統和瀏覽器](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices)一文。 如果未列出您的裝置，請參閱裝置製造商或聯絡支援人員。
 
 > [!Note]
 > Microsoft 會與製造商合作來解決我們在測試時所發現的任何問題，或是使用者回報給我們的任何問題。 只要有新的資訊，本文會隨時更新。
