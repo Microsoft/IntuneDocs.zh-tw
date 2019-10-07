@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: 使用 Intune 從遠端執行裝置動作
+summary: Intune 可讓系統管理員從遠端執行裝置動作。 透過從 Intune 入口網站使用這些遠端動作，您可以重新啟動裝置、重設密碼、尋找遺失或遭竊的裝置等。
+metadata:
+  title: 使用 Intune 從遠端執行裝置動作
+  description: Intune 可讓您從遠端執行動作。
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: ErikjeMS
+  ms.author: erikje
+  ms.date: 09/13/2019
+  ms.openlocfilehash: 37f0a4f8017848f4e1672ae7e3e1979239551af3
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729140"
+landingContent:
+- title: 從遠端執行裝置動作
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 裝置管理概觀
+      url: device-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: 為裝置重新命名
+      url: device-rename.md
+    - text: 查看裝置詳細資料
+      url: device-inventory.md
+    - text: 傳送自訂通知到裝置
+      url: custom-notifications.md
+    - text: 同步裝置
+      url: device-sync.md
+    - text: 使用 TeamViewer 從遠端管理裝置
+      url: teamviewer-support.md
+- title: 移除與重新啟動
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 移除、抹除、淘汰、取消註冊
+      url: devices-wipe.md
+    - text: Windows 重新開始
+      url: device-fresh-start.md
+    - text: 重新啟動裝置
+      url: device-restart.md
+- title: 使用者動作
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 登出使用者
+      url: device-logout-user.md
+    - text: 尋找主要使用者
+      url: find-primary-user.md
+    - text: 移除使用者
+      url: device-remove-user.md
+- title: 鎖定與密碼
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 鎖定裝置
+      url: device-remote-lock.md
+    - text: 重設裝置密碼
+      url: device-passcode-reset.md
+    - text: 重設 Windows 10 的 PIN 碼
+      url: device-lost-mode.md
+- title: Apple 裝置動作
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 尋找 iOS 裝置
+      url: device-locate.md
+    - text: 開啟 iOS 受監管模式
+      url: device-supervised-mode.md
+    - text: 開啟 iOS 遺失模式
+      url: device-lost-mode.md
+    - text: 清除 macOS 裝置的資料
+      url: device-erase.md
+    - text: 略過啟用鎖定
+      url: device-activation-lock-bypass.md

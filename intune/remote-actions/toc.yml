@@ -1,0 +1,67 @@
+- name: 遠端動作
+  href: index.yml
+- name: 概觀
+  expanded: true
+  items:
+    - name: 裝置管理概觀
+      href: device-management.md
+- name: 操作指南
+  items:
+    - name: 鎖定與密碼
+      items:
+        - name: 鎖定裝置
+          href: device-remote-lock.md
+        - name: 重設密碼
+          href: device-passcode-reset.md
+        - name: 重設 Windows 10 的 PIN 碼
+          href: device-windows-pin-reset.md
+    - name: 移除與重新啟動
+      items:
+        - name: 移除裝置
+          href: devices-wipe.md
+        - name: 管理 Windows「重新開始」
+          href: device-fresh-start.md
+        - name: 重新啟動裝置
+          href: device-restart.md
+    - name: Apple 裝置動作
+      items:
+        - name: 尋找遺失的 iOS 裝置
+          href: device-locate.md
+        - name: 啟用 iOS 遺失模式
+          href: device-lost-mode.md
+        - name: 開啟 iOS 受監管模式
+          href: device-supervised-mode.md
+        - name: 清除 macOS 裝置
+          href: device-erase.md
+        - name: 略過啟用鎖定
+          href: device-activation-lock-bypass.md
+    - name: 使用者動作
+      items:
+        - name: 將目前使用者登出
+          href: device-logout-user.md
+        - name: 移除使用者
+          href: device-remove-user.md
+        - name: 尋找主要使用者
+          href: find-primary-user.md
+    - name: 其他動作
+      items:
+        - name: 為裝置重新命名
+          href: device-rename.md
+        - name: 傳送通知
+          href: custom-notifications.md
+        - name: 遠端控制行動裝置
+          href: teamviewer-support.md
+        - name: 同步裝置
+          href: device-sync.md
+        - name: 檢視裝置清查
+          href: device-inventory.md
+    - name: 疑難排解
+      items:
+        - name: 針對裝置動作進行疑難排解
+          href: troubleshoot-device-actions.md
+- name: 資源
+  items:
+    - name: 案例實作指南
+      items:
+        - name: 減少技術支援中心成本
+          href: password-reset.md

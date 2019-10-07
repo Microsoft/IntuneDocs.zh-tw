@@ -1,0 +1,111 @@
+- name: Microsoft Intune 中的註冊
+  href: index.yml
+- name: 概觀
+  expanded: true
+  items:
+    - name: 裝置註冊概觀
+      href: device-enrollment.md
+      displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
+    - name: 已註冊的裝置管理功能
+      href: device-management-capabilities.md
+    - name: 註冊選項
+      href: enrollment-options.md
+- name: 快速入門
+  items:
+    - name: 設定自動註冊
+      href: quickstart-setup-auto-enrollment.md
+    - name: 註冊您的 Windows 10 裝置
+      href: quickstart-enroll-windows-device.md
+- name: 教學課程
+  items:
+    - name: 使用 Autopilot 註冊 Windows 裝置
+      href: tutorial-use-autopilot-enroll-devices.md
+    - name: 使用 DEP 來註冊 iOS 裝置
+      href: tutorial-use-device-enrollment-program-enroll-ios.md
+- name: 概念
+  items:
+    - name: 條款及條件
+      href: terms-and-conditions-create.md
+    - name: 限制
+      href: enrollment-restrictions-set.md
+    - name: Apple MDM Push Certificate
+      href: apple-mdm-push-certificate-get.md
+    - name: 公司識別碼
+      href: corporate-identifiers-add.md
+      displayName: COD
+    - name: '[Multi-Factor Authentication]'
+      href: multi-factor-authentication.md
+      displayName: mfa; multifactor
+    - name: 裝置註冊管理員
+      href: device-enrollment-manager-enroll.md
+    - name: 將裝置對應到群組
+      href: device-group-mapping.md
+- name: 操作指南
+  items:
+    - name: 設定 Windows 註冊
+      items:
+        - name: Windows 註冊方法
+          href: windows-enrollment-methods.md
+        - name: 註冊方法功能
+          href: enrollment-method-capab.md
+        - name: Windows 註冊
+          href: windows-enroll.md
+        - name: 大量註冊
+          href: windows-bulk-enroll.md
+        - name: 註冊狀態頁面
+          href: windows-enrollment-status.md
+        - name: Windows AutoPilot Deployment 方案
+          href: enrollment-autopilot.md
+        - name: 使用 Autopilot 的混合式 Azure AD
+          href: windows-autopilot-hybrid.md
+        - name: 設定 Intune AD 連接器的 Proxy
+          href: autopilot-hybrid-connector-proxy.md
+    - name: 設定 Android 註冊
+      items:
+        - name: 設定 Android 註冊
+          href: android-enroll.md
+          displayName: wpj
+        - name: 將 Intune 連到 Android Enterprise
+          href: connect-intune-android-enterprise.md
+        - name: Android Enterprise 工作設定檔註冊
+          href: android-work-profile-enroll.md
+        - name: Android Enterprise 專用裝置註冊
+          href: android-kiosk-enroll.md
+          displayName: gms
+        - name: Android Enterprise 完全受控註冊
+          href: android-fully-managed-enroll.md
+          displayName: gms
+        - name: 註冊 Android Enterprise 專用裝置或完全受控裝置
+          href: android-dedicated-devices-fully-managed-enroll.md
+        - name: Android 裝置細裝置系統管理員註冊
+          href: android-enroll-device-administrator.md
+        - name: 管理 Android Enterprise 工作設定檔裝置
+          href: android-enterprise-overview.md
+        - name: Samsung Knox Mobile Enrollment
+          href: android-samsung-knox-mobile-enroll.md
+          displayName: kda; kme
+    - name: 設定 iOS 註冊
+      href: ios-enroll.md
+      items:
+        - name: 裝置註冊方案
+          href: device-enrollment-program-enroll-ios.md
+        - name: Apple School Manager
+          href: apple-school-manager-set-up-ios.md
+        - name: Apple Configurator
+          href: apple-configurator-enroll-ios.md
+    - name: 設定 macOS 註冊
+      href: macos-enroll.md
+      items:
+        - name: 裝置註冊計劃或 Apple School Manager
+          href: device-enrollment-program-enroll-macos.md
+    - name: 未完成的註冊報告
+      href: enrollment-report-company-portal-abandon.md
+    - name: 對註冊進行疑難排解
+      items:
+        - name: 裝置註冊疑難排解
+          href: troubleshoot-device-enrollment-in-intune.md
+          displayName: sso
+        - name: 對 iOS 裝置註冊進行疑難排解
+          href: troubleshoot-ios-enrollment-errors.md
+        - name: 針對 Windows 裝置註冊進行疑難排解
+          href: troubleshoot-windows-enrollment-errors.md

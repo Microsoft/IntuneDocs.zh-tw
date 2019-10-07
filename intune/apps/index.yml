@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: 管理應用程式
+summary: Microsoft Intune 可讓您管理組織所使用的用戶端應用程式。 您可以跨各種平台與使用者設定、新增、指派、保護、監視、更新及淘汰應用程式。
+metadata:
+  title: 管理應用程式
+  description: 管理應用程式並加以保護
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729004"
+landingContent:
+- title: 開始使用應用程式
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 應用程式管理概觀
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: 新增並指派應用程式
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: 應用程式生命週期
+      url: app-lifecycle.md
+- title: 新增應用程式
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 新增應用程式概觀
+      url: apps-add.md
+    - text: 受 Intune 保護的應用程式
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: 市集應用程式
+      url: store-apps-android.md
+    - text: 企業營運應用程式
+      url: lob-apps-android.md
+    - text: Intune 獨立版的 Win32 應用程式管理
+      url: apps-win32-app-management.md
+    - text: 在 Windows 10 裝置上使用 PowerShell 指令碼
+      url: intune-management-extension.md
+    - text: 將應用程式指派給群組
+      url: apps-deploy.md
+- title: 指派應用程式
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 將應用程式指派給群組
+      url: apps-deploy.md
+    - text: Intune 與排除應用程式
+      url: apps-inc-exl-assignments.md
+    - text: 部署 Windows 10 應用程式
+      url: apps-windows-10-app-deploy.md
+    - text: 將應用程式部署至政府環境
+      url: apps-deploy-gcc-dod.md
+- title: 設定應用程式
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 選擇性地抹除應用程式
+      url: apps-selective-wipe.md
+    - text: iOS 受管理裝置
+      url: app-configuration-policies-use-ios.md
+    - text: 受控 Android Enterprise 裝置
+      url: app-configuration-policies-use-android.md
+    - text: 沒有裝置註冊的受控應用程式
+      url: app-configuration-policies-managed-app.md
+    - text: 設定 Managed Browser
+      url: app-configuration-managed-browser.md
+    - text: 管理 VPP 應用程式和書籍
+      url: vpp-apps.md
+- title: 保護應用程式
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 應用程式保護原則概觀
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: 建立及指派應用程式保護原則
+      url: app-protection-policies.md
+    - text: 驗證應用程式保護原則
+      url: app-protection-policies-validate.md
+    - text: 監視應用程式保護使用者狀態
+      url: app-protection-policies-monitor.md
+    - text: 建立與指派 WIP 應用程式保護原則
+      url: windows-information-protection-policy-create.md
+    - text: 管理 iOS 應用程式之間的資料傳輸
+      url: data-transfer-between-apps-manage-ios.md
+- title: 針對應用程式進行疑難排解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 針對應用程式安裝問題進行疑難排解
+      url: troubleshoot-app-install.md
+    - text: 行動應用程式管理疑難排解
+      url: troubleshoot-mam.md
+    - text: 檢閱應用程式保護記錄
+      url: app-protection-policy-settings-log.md

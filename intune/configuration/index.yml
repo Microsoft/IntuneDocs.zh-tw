@@ -1,0 +1,150 @@
+### YamlMime:Landing
+title: 設定裝置設定
+summary: Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 將這些設定新增到「組態設定檔」，您就可以使用 Intune 將該設定檔套用或指派至裝置。
+metadata:
+  title: 設定裝置設定
+  description: Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 將這些設定新增到「組態設定檔」，您就可以使用 Intune 將該設定檔套用或指派至裝置。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: dougeby
+  ms.date: 09/16/2019
+  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728936"
+landingContent:
+- title: 將設功能和設定套用至裝置
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 裝置設定概觀
+      url: device-profiles.md
+  - linkListType: quickstart
+    links:
+    - text: 建立 iOS 的電子郵件裝置設定檔
+      url: quickstart-email-profile.md
+  - linkListType: how-to-guide
+    links:
+    - text: 建立設定檔
+      url: device-profile-create.md
+    - text: 指派設定檔
+      url: device-profile-assign.md
+    - text: 監視設定檔
+      url: device-profile-monitor.md
+- title: 適用於 Windows 10 (與更新版本) 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 使用 Windows 10 範本來設定群組原則設定
+      url: administrative-templates-windows.md
+    - text: 設定裝置限制設定
+      url: device-restrictions-configure.md
+    - text: 傳遞最佳化設定
+      url: delivery-optimization-windows.md
+    - text: 將電子郵件設定新增至裝置
+      url: email-settings-configure.md
+    - text: 執行為專用 Kiosk 的設定
+      url: kiosk-settings.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+- title: Windows Holographic for Business 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 升級 Windows 10 版本或切換移出 S 模式
+      url: edition-upgrade-configure-windows-10.md
+    - text: 執行為專用 Kiosk 的設定
+      url: kiosk-settings.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+    - text: 控制共用電腦或多重使用者裝置上的存取權、帳戶與電源功能
+      url: shared-user-device-settings.md
+- title: iOS 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 新增 iOS 裝置功能設定
+      url: device-features-configure.md
+    - text: 設定裝置限制設定
+      url: device-restrictions-configure.md
+    - text: 將電子郵件設定新增至裝置
+      url: email-settings-configure.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 建立 iOS 裝置的個別應用程式 VPN 設定檔
+      url: vpn-setting-configure-per-app.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+- title: macOS 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 新增 iOS 裝置功能設定
+      url: device-features-configure.md
+    - text: 設定裝置限制設定
+      url: device-restrictions-configure.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+    - text: 新增 macOS 核心延伸模組
+      url: kernel-extensions-overview-macos.md
+- title: Android 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 設定裝置限制設定
+      url: device-restrictions-configure.md
+    - text: 將電子郵件設定新增至裝置
+      url: email-settings-configure.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+    - text: 使用預先共用金鑰建立 Wi-Fi 設定檔
+      url: wi-fi-profile-shared-key.md
+    - text: 管理含有 Zebra Mobility Extensions 的 Zebra 裝置
+      url: android-zebra-mx-overview.md
+    - text: 使用 OEMConfig 管理 Android Enterprise 裝置
+      url: android-oem-configuration-overview.md
+- title: Android Enterprise 的設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 設定裝置限制設定
+      url: device-restrictions-configure.md
+    - text: 將電子郵件設定新增至裝置
+      url: email-settings-configure.md
+    - text: 建立 VPN 設定檔以連線到 VPN 伺服器
+      url: vpn-settings-configure.md
+    - text: 在您的裝置上新增並使用 Wi-Fi 設定
+      url: wi-fi-settings-configure.md
+- title: 設定清單
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Android
+      url: device-restrictions-android.md
+    - text: Android 企業
+      url: device-restrictions-android-for-work.md
+    - text: iOS
+      url: ios-device-features-settings.md
+    - text: macOS
+      url: macos-device-features-settings.md
+    - text: Windows 10 及更新版本
+      url: delivery-optimization-settings.md
+    - text: Windows Holographic for Business
+      url: device-restrictions-windows-holographic.md
+    - text: Windows 8.1
+      url: device-restrictions-windows-8-1.md
+    - text: Windows Phone 8.1
+      url: device-restrictions-windows-phone-8-1.md
