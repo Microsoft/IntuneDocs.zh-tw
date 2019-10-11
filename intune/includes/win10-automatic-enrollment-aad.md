@@ -1,38 +1,38 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302613"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912777"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>啟用 Windows 10 自動註冊
 
 使用者可利用自動註冊，在 Intune 中註冊其 Windows 10 裝置。 若要註冊，使用者必須將其公司帳戶新增至個人擁有的裝置，或將公司擁有的裝置加入 Azure Active Directory。 裝置會於背景註冊及加入 Azure Active Directory。 註冊後，就會使用 Intune 管理裝置。
 
 **必要條件**
+
 - Azure Active Directory Premium 訂閱 ([試用訂閱](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 訂閱
 
-
 ### <a name="configure-automatic-mdm-enrollment"></a>設定自動 MDM 註冊
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取 [Azure Active Directory]。
+1. 登入 [Azure 入口網站](https://portal.azure.com)，然後選取 [Azure Active Directory]  。
 
-   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-azure-main.png)
+   ![Azure 入口網站的螢幕擷取畫面](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
-2. 選取 [行動性 (MDM 與 MAM)]。
+2. 選取 [行動性 (MDM 與 MAM)]  。
 
-   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-mdm.png)
+   ![Azure 入口網站的螢幕擷取畫面](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
-3. 選取 [Microsoft Intune]。
+3. 選取 [Microsoft Intune]  。
 
-   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-intune.png)
+   ![Azure 入口網站的螢幕擷取畫面](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. 設定 **MDM 使用者範圍**。 指定哪些使用者的裝置應該由 Microsoft Intune 管理。 這些 Windows 10 裝置將會自動註冊，而由 Microsoft Intune 管理。
 
    - **無**：停用 MDM 自動註冊
-   - **部分**：選取可以自動註冊其 Windows 10 裝置的「群組」
+   - **部分**：選取可以自動註冊其 Windows 10 裝置的「群組」 
    - **全部**：所有使用者都可以自動註冊其 Windows 10 裝置
 
       > [!IMPORTANT]
@@ -43,13 +43,13 @@ ms.locfileid: "71302613"
    > [!NOTE]
    > MDM 使用者範圍必須設定為包含使用者物件的 Azure AD 群組。
 
-   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
+   ![Azure 入口網站的螢幕擷取畫面](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. 使用下列 URL 的預設值：
     - **MDM 使用條款 URL**
     - **MDM 探索 URL**
     - **MDM 合規性 URL**
 
-6. 選取 [儲存]。
+6. 選取 [儲存]  。
 
 根據預設，不會對此服務啟用雙因素驗證。 不過，於註冊裝置時，會建議使用雙因素驗證。 若要啟用雙重要素驗證，請在 Azure AD 中設定雙重要素驗證提供者，並將您的使用者帳戶設定為進行雙重要素驗證。 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。

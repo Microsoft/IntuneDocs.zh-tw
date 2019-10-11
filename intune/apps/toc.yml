@@ -96,7 +96,7 @@
           href: apps-windows-10-app-deploy.md
         - name: 將應用程式部署至政府環境
           href: apps-deploy-gcc-dod.md
-    - name: 監視 App
+    - name: 監視應用程式
       href: apps-monitor.md
     - name: 探索到的應用程式
       href: app-discovered-apps.md
@@ -127,6 +127,8 @@
               href: manage-microsoft-edge.md
             - name: 設定 Outlook
               href: app-configuration-policies-outlook.md
+            - name: 設定 Android 版 Google Chrome
+              href: apps-configure-chrome-android.md
         - name: 大量採購應用程式與書籍
           items:
             - name: 管理 VPP 應用程式和書籍
@@ -184,7 +186,7 @@
           href: troubleshoot-mam.md
         - name: 檢閱應用程式保護記錄
           href: app-protection-policy-settings-log.md
-- name: 參考
+- name: 參考資料
   items:
     - name: 使用 Intune App SDK 來保護應用程式
       href: ../developer/app-sdk.md

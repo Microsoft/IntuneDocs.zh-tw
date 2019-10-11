@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725747"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916356"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -40,11 +40,11 @@ ms.locfileid: "71725747"
 
 [Intune 行動應用程式管理](app-lifecycle.md)指的是 Intune 管理功能套件，可讓您針對您的使用者發行、推送、設定、保護、監視與更新行動應用程式。
 
-MAM 可讓您管理和保護應用程式內的組織資料。 透過**沒有註冊的 MAM** (MAM-WE)，包含機密資料的工作或學校相關應用程式幾乎可在任何[裝置](app-management.md#app-management-capabilities-by-platform)上管理，包含**攜帶您自己的裝置** (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
+MAM 可讓您管理和保護應用程式內的組織資料。 透過**沒有註冊的 MAM** (MAM-WE)，幾乎可在任何[裝置](app-management.md#app-management-capabilities-by-platform) (包括**攜帶您自己的裝置** (BYOD) 案例中的個人裝置) 上管理包含敏感性資料的公司或學校相關應用程式。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
 
 Intune MAM 支援兩個組態︰
 - **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。
-- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。 如需有關 BYOD 和 Microsoft EMS 的詳細資訊，[使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策](../fundamentals/byod-technology-decisions.md)。
+- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。 如需有關 BYOD 與 Microsoft EMS 的詳細資訊，請參閱[使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策](../fundamentals/byod-technology-decisions.md)。
 
 ## <a name="app-management-capabilities-by-platform"></a>各種平台的應用程式管理功能
 
@@ -60,17 +60,17 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 | 只移除已安裝應用程式中的公司資料 (應用程式選擇性抹除) | 是 | 是 | 否 | 是 | 是 |
 | 監視應用程式指派 | 是 | 是 | 是 | 是 | 是 |
 | 指派及追蹤從應用程式市集中大量採購的應用程式 | 否 | 否 | 否 | 是 | 否 |
-| 強制安裝在裝置上的應用程式 (必要) <sup>2</sup> | 是 | 是 | 是 | 是 | 是 |
+| 在裝置上強制安裝應用程式 (必要) <sup>2</sup> | 是 | 是 | 是 | 是 | 是 |
 | 可從公司入口網站安裝在裝置上的選擇 (可用安裝) | 是 <sup>3</sup> | 是 | 是 | 是 | 是 |
 | 安裝 Web 應用程式的捷徑 (Web 連結) | 是 <sup>4</sup> | 是 | 是 | 是 | 是 |
 | 內部 (企業營運) 應用程式 | 是 | 是 | 是 | 是 | 否 |
 | 市集應用程式 | 是 | 是 | 否 | 是 | 是 |
 | 更新應用程式 | 是 | 是 | 否 | 是 | 是 |
 
-<sup>1</sup>您可以考慮使用 [Windows 資訊保護](../windows-information-protection-configure.md)來保護 Windows 10 裝置上的應用程式。<br>
+<sup>1</sup>您可以考慮使用 [Windows 資訊保護](../protect/windows-information-protection-configure.md)來保護 Windows 10 裝置上的應用程式。<br>
 <sup>2</sup> 僅適用於 Intune 管理的裝置。<br>
 <sup>3</sup> Intune 支援 Android Enterprise 裝置上受控 Google Play 商店中的可用應用程式。<br>
-<sup>4</sup> Intune 不提供將應用程式的捷徑作為標準 Android 企業裝置上的 Web 連結進行安裝。 不過，針對[多應用程式專用的 Android Enterprise 裝置](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)則提供 Web 連結支援。 
+<sup>4</sup> Intune 不提供在標準 Android Enterprise 裝置上將應用程式的捷徑安裝為網頁連結。 不過，會針對[多應用程式專用的 Android Enterprise 裝置](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)提供網頁連結支援。 
 
 
 ## <a name="get-started"></a>開始使用

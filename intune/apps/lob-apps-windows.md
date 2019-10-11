@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724694"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036470"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 企業營運 (LOB) 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 下列步驟提供指引，協助您將 Windows LOB 應用程式新增至 Microsoft Intune。
+
+> [!IMPORTANT]
+> 當使用具有 *.msi* 副檔名的安裝檔案部署 Win32 應用程式時，請考慮使用 [Intune 管理延伸模組](../apps/intune-management-extension.md)。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 

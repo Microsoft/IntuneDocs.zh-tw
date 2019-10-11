@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa698aa5c9ed6a523101008d6ce0e21cd4f7bf50
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4958a35f3a83fecffacf26421e4c1d797f45ddaa
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725500"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940384"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -135,7 +135,7 @@ ms.locfileid: "71725500"
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>根據裝置管理狀態來設定應用程式保護原則目標
 在許多組織中，同時允許使用者使用 Intune「行動裝置管理」(MDM) 受控裝置 (例如公司擁有的裝置) 及僅以 Intune 應用程式防護原則保護的非受控裝置，是很常見的情況。 非受控裝置通常被視為「攜帶您自己的裝置」 (BYOD)。
 
-因為 Intune 應用程式防護原則會以使用者的身分識別為目標，使用者的防護設定可以同時套用至已註冊 (MDM 受控) 和未註冊的裝置 (非 MDM)。 因此，您可以讓 Intune 應用程式防護原則以 Intune 已註冊或未註冊 iOS 及 Android 裝置為目標。 您可以有一個用於非受控裝置的保護原則，其中會提供適當的嚴格資料外洩防護 (DLP) 控制措施，並有另一個用於 MDM 受控裝置的保護原則，其中可能提供較寬鬆的 DLP 控制措施。 如需詳細資訊，請參閱[應用程式防護原則和工作設定檔](android-deployment-scenarios-app-protection-work-profiles.md)。
+因為 Intune 應用程式防護原則會以使用者的身分識別為目標，使用者的防護設定可以同時套用至已註冊 (MDM 受控) 和未註冊的裝置 (非 MDM)。 因此，您可以讓 Intune 應用程式防護原則以 Intune 已註冊或未註冊 iOS 及 Android 裝置為目標。 您可以有一個適用於非受控裝置的保護原則來提供嚴格的資料外洩防護 (DLP) 控制，並有另一個適用於 MDM 受控裝置的保護原則來提供可能較寬鬆的 DLP 控制。 如需這如何在個人 Android Enteprise 裝置上運作的詳細資訊，請參閱[應用程式保護原則與工作設定檔](android-deployment-scenarios-app-protection-work-profiles.md)。
 
 若要建立這些原則，請在 Intune 主控台中瀏覽至 [用戶端應用程式]   > [應用程式防護]  ，然後選取 [新增原則]  。 您也可以編輯現有的應用程式保護原則。 若要將應用程式保護原則同時套用至受控和非受控裝置，請確認將 [目標為所有應用程式類型]  設定為 [是]  (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [目標為所有應用程式類型]  設定為 [否]  。 
 
@@ -149,7 +149,7 @@ ms.locfileid: "71725500"
 
 > 請注意，無論選擇哪種應用程式類型，Android 裝置都將提示您安裝 Intune 公司入口網站應用程式。 例如，如果您選擇 [Intune 受控裝置上的應用程式]，則仍將提示使用非受控 Android 裝置的使用者。
 
-針對 iOS，需要額外的應用程式組態設定，才能將應用程式防護原則 (APP) 設定瞄準 Intune 已註冊裝置上的應用程式：
+針對 iOS，需要額外的應用程式組態設定，才能將應用程式保護原則 (APP) 設定的目標設為 Intune 已註冊裝置上的應用程式：
 
 - **IntuneMAMUPN** 必須針對所有 MDM 受控應用程式進行設定。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
 - **IntuneMAMDeviceID** 必須針對所有協力廠商及 LOB MDM 受控應用程式進行設定。 **IntuneMAMDeviceID** 應設為裝置識別碼權杖。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 如需詳細資訊，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
