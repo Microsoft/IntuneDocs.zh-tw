@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 市集應用程式
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft 網上商店應用程式
-              items:
-                - name: Windows 應用程式
-                  href: store-apps-windows.md
-                - name: 公司入口網站應用程式
-                  href: store-apps-company-portal-app.md
+            - name: Windows 應用程式
+              href: store-apps-windows.md
+            - name: 商務用 Microsoft 網上商店應用程式
+              href: windows-store-for-business.md
             - name: 受管理的 Google Play 應用程式
               href: apps-add-android-for-work.md
+        - name: Office 365 套件
+          items:
             - name: 適用於 Windows 10 的 Office 365 應用程式
               href: apps-add-office365.md
             - name: 適用於 macOS 的 Office 365 應用程式
               href: apps-add-office365-macos.md
+        - name: Android Enterprise 系統應用程式
+          href: apps-ae-system.md
         - name: Web 應用程式
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: macOS LOB 應用程式
               href: lob-apps-macos.md
-        - name: Android Enterprise 系統應用程式
-          href: apps-ae-system.md
-        - name: Win32 應用程式管理
-          href: apps-win32-app-management.md
+            - name: Win32 應用程式管理
+              href: apps-win32-app-management.md
+        - name: 新增特定應用程式
+          items:
+            - name: 公司入口網站應用程式
+              href: store-apps-company-portal-app.md
         - name: PowerShell 指令碼
           href: intune-management-extension.md
     - name: 指派應用程式

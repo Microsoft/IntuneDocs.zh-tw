@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323454"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302613"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>啟用 Windows 10 自動註冊
 
@@ -41,7 +41,7 @@ ms.locfileid: "56323454"
       > 針對公司裝置，若已同時啟用這兩個範圍，則會優先使用 MDM 使用者範圍。 裝置會註冊 MDM。
 
    > [!NOTE]
-   > MAM 使用者範圍必須設定至使用者群組或集合。
+   > MDM 使用者範圍必須設定為包含使用者物件的 Azure AD 群組。
 
    ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
 
