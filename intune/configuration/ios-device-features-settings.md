@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8cd38174b9332f285e0dc4f938d99dbd5aecf74
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 341609afeec02c67b4ea0d85a541fca61345ced4
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816880"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036484"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>要在 Intune 中使用常見 iOS 功能用的 iOS 和 iPadOS 裝置設定
 
@@ -42,6 +42,9 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 ## <a name="airprint"></a>AirPrint
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
+
+> [!NOTE]
+> 請務必將所有印表機新增到相同的設定檔。 Apple 會防止多個 AirPrint 設定檔以相同的裝置為目標。
 
 - **IP 位址**：輸入印表機的 IPv4 或 IPv6 位址。 如果您是使用主機名稱來識別印表機，則可以透過在終端機偵測該印表機來取得 IP 位址。 本文中的取得 IP 位址和路徑會提供更多詳細資料。
 - **路徑**：您網路上印表機的路徑通常是 `ipp/print`。 本文中的取得 IP 位址和路徑會提供更多詳細資料。
@@ -267,7 +270,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 
     如果您未輸入任何 URL，則使用者除了 `microsoft.com`、`microsoft.net` 及 `apple.com` 之外，將無法存取任何網站。 這些 URL 是 Intune 自動允許的 URL。
 
-## <a name="single-sign-on-app-extension"></a>單一登入應用程式延伸模組
+## <a name="single-sign-on-app-extension"></a>單一登入應用程式擴充功能
 
 本功能適用於：
 

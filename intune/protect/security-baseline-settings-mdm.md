@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735996"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237255"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>適用於 Intune 的 MDM 安全性基準設定  
 
@@ -1622,7 +1622,7 @@ ms.locfileid: "71735996"
 
 - **電子郵件內容執行類型**  
   此規則會封鎖下列檔案類型，使其無法執行或從 Microsoft Outlook 或 Web 郵件 (例如 Gmail.com 或 Outlook.com) 啟動：可執行檔 (例如 .exe、.dll 或 .scr) 指令碼檔案 (例如 PowerShell .ps、VisualBasic .vbs 或 JavaScript .js 檔案) 指令碼封存檔案。  
-  [深入了解](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [深入了解](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **預設值**：封鎖
 
@@ -1632,7 +1632,7 @@ ms.locfileid: "71735996"
 
 - **網路保護類型**  
   此原則可讓您在 Windows Defender 惡意探索防護中，開啟或關閉網路保護 (封鎖/稽核)。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。 值類型是整數。 如果您啟用此設定，則會開啟網路保護，且員工無法將它關閉。 其行為可透過下列選項來控制：[封鎖] 和 [稽核]。 如果您使用 [封鎖] 選項來啟用此原則，則會防止使用者和應用程式連線到危險的網域。 您可以在 Windows Defender 資訊安全中心看到此活動。 如果您使用 [稽核] 選項來啟用此原則，則不會防止使用者/應用程式連線到危險的網域。 不過，您仍然會在 Windows Defender 資訊安全中心看到此活動。 如果您停用此原則，則不會防止使用者/應用程式連線到危險的網域。 您不會在 Windows Defender 資訊安全中心看到任何網路活動。 如果您未設定此原則，預設會停用網路封鎖。  
-  [深入了解](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [深入了解](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **預設值**：啟用
   

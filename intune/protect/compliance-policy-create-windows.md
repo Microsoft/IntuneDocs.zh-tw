@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732824"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251580"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Windows 10 及更新版本的設定將裝置標示為相容或不相容
 
@@ -138,6 +138,9 @@ ms.locfileid: "71732824"
 - **防火牆**：設定為 [**需要**] 以開啟 Microsoft Defender 防火牆，並防止使用者將它關閉。 [**未設定**] （預設）不會控制 Microsoft Defender 防火牆，也不會變更現有的設定。
 
   [防火牆 CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > 如果裝置在重新開機後立即同步處理，或立即同步處理從睡眠狀態喚醒，則此設定可能會報告為**錯誤**。 此案例可能不會影響整體裝置合規性狀態。 若要重新評估合規性狀態，請手動[同步處理裝置](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)。
 
 - **信賴平臺模組（TPM）** ：當設定為 [**需要**] 時，Intune 會檢查版本是否符合規範。 如果 TPM 晶片版本大於0（零），則裝置相容。 如果裝置上沒有 TPM 版本，則裝置不相容。 **未設定**時，Intune 不會檢查裝置是否有 TPM 晶片版本。
 
