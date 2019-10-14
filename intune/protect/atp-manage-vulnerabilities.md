@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 06fdd8a6b64dfd58457b5d9b92144530aa2856cd
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723004"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940482"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 來補救 Microsoft Defender ATP 識別出的弱點  
 
@@ -70,7 +70,7 @@ ms.locfileid: "71723004"
 **適用於 ATP 的 Intune 設定**：  
 
 - 設定與 Microsoft Defender ATP 的服務對服務連線。  
-- 使用 **Microsoft Defender ATP (Windows 10 Desktop)** 的設定檔類型，來將合規性政策部署至將由 ATP 評估風險的裝置。
+- 將包含 **Microsoft Defender ATP (Windows 10 Desktop)** 設定檔類型的裝置設定原則，部署至將由 ATP 評估風險的裝置。
 
   如需如何設定 Intune 來與 ATP 一同運作的相關資訊，請參閱[在 Intune 中使用條件式存取強制符合 Windows Defender ATP 的合規性](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)。  
 

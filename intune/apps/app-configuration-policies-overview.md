@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af81552942805bed07e818d6005231e9305b3460
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725786"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940367"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -88,6 +88,77 @@ ms.locfileid: "71725786"
 
       ![應用程式設定的螢幕擷取畫面](./media/app-configuration-policies-overview/app-configuration.png)
 
+## <a name="diagnostic-logs"></a>診斷記錄
+
+### <a name="ios-configuration-on-unmanaged-devices"></a>非受控裝置上的 iOS 設定
+
+您可以在非受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+
+1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Intune Managed Browser**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
+2. 啟動 **Intune Managed Browser** 並從導覽列中選取 [關於]   > [intunehelp]  。
+3. 按一下 [開始使用]  。
+4. 按一下 [共用記錄]  。
+5. 使用您選擇的電子郵件應用程式傳送記錄給您自己，方便您在自己的電腦上檢視。 
+6. 使用您的文字檔檢視器檢閱 **IntuneMAMDiagnostics.txt** 檔案。
+7. 搜尋 `ApplicationConfiguration`。 結果看起來像這樣：
+
+    ``` JSON
+        {
+            (
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.BlockListURLs";
+                    Value = "https://www.aol.com";
+                },
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.bookmarks";
+                    Value = "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com";
+                }
+            );
+        },
+        {
+            ApplicationConfiguration =             
+            (
+                {
+                Name = IntuneMAMUPN;
+                Value = "CMARScrubbedM:13c45c42712a47a1739577e5c92b5bc86c3b44fd9a27aeec3f32857f69ddef79cbb988a92f8241af6df8b3ced7d5ce06e2d23c33639ddc2ca8ad8d9947385f8a";
+                },
+                {
+                Name = "com.microsoft.outlook.Mail.NotificationsEnabled";
+                Value = false;
+                }
+            );
+        }
+    ```
+
+您的應用程式設定詳細資料應與為您的租用戶所設定的應用程式設定原則相符。 
+
+![目標應用程式設定](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
+
+### <a name="ios-configuration-on-managed-devices"></a>受控裝置上的 iOS 設定
+
+您可以在受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+
+1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Intune Managed Browser**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
+2. 啟動 **Intune Managed Browser** 並從導覽列中選取 [關於]   > [intunehelp]  。
+3. 按一下 [開始使用]  。
+4. 按一下 [共用記錄]  。
+5. 使用您選擇的電子郵件應用程式傳送記錄給您自己，方便您在自己的電腦上檢視。 
+6. 使用您的文字檔檢視器檢閱 **IntuneMAMDiagnostics.txt** 檔案。
+7. 搜尋 `AppConfig`。 您的結果應該與您為租用戶所設定的應用程式設定原則相符。
+
+### <a name="android-configuration-on-managed-devices"></a>受控裝置上的 Android 設定
+
+您可以在受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+
+若要收集 Android 裝置的記錄，您或終端使用者必須透過 USB 連線 (或裝置上的**檔案總管**同等功能) 從裝置下載記錄。 步驟如下：
+
+1. 使用 USB 纜線將 Android 裝置連接到您的電腦。
+2. 在電腦上尋找有裝置名稱的目錄。 在該目錄中，尋找 `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`。
+3. 在 `com.microsoft.windowsintune.companyportal` 資料夾中，開啟 [檔案] 資料夾並開啟 `OMADMLog_0`。
+3. 搜尋 `AppConfigHelper` 以尋找應用程式設定相關訊息。 結果看起來將會類似下列的資料區塊畫面：
+
+    `2019-06-17T20:09:29.1970000       INFO   AppConfigHelper     10888  02256  Returning app config JSON [{"ApplicationConfiguration":[{"Name":"com.microsoft.intune.mam.managedbrowser.BlockListURLs","Value":"https:\/\/www.aol.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.bookmarks","Value":"Outlook Web|https:\/\/outlook.office.com||Bing|https:\/\/www.bing.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.homepage","Value":"https:\/\/www.arstechnica.com"}]},{"ApplicationConfiguration":[{"Name":"IntuneMAMUPN","Value":"AdeleV@M365x935807.OnMicrosoft.com"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled","Value":"false"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed","Value":"false"}]}] for user User-875363642`
+    
 ## <a name="graph-api-support-for-app-configuration"></a>應用程式設定的圖形 API 支援
 
 您可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (以圖形 API 參考 MAM 為目標的設定)。

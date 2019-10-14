@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593c2d2b509047115ebeb3415393d6112484a6a9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724980"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036489"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724980"
 
 > [!NOTE]
 > 此應用程式管理功能支援 Windows 應用程式使用 32 位元和 64 位元作業系統架構。
+
+> [!IMPORTANT]
+> 部署 Win32 應用程式時，請考慮只用 [Intune Management Extension](../apps/intune-management-extension.md)，特別是當您有多檔案型 Win32 應用程式安裝程式時。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -89,7 +92,7 @@ ms.locfileid: "71724980"
 
 ### <a name="process-flow-to-add-a-win32-app-to-intune"></a>將 Win32 應用程式新增至 Intune 的程序流程
 
-   ![將 Win32 應用程式新增至 Intune 的程序流程](./media/apps-win32-app-management/add-win32-app.svg)
+<img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
 ### <a name="add-a-win32-app-to-intune"></a>將 Win32 應用程式新增至 Intune
 

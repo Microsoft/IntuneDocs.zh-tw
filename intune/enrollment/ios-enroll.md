@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b9091b723e78631a13c9358687ae77c36b8d47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c4f3424c0d9712affbbf8ba3929e825b62ce5864
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722445"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940326"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中註冊 iOS 裝置
 
-Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者存取公司的電子郵件和應用程式。
+Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者安全地存取公司的電子郵件、資料和應用程式。
 
-身為 Intune 管理員，您可以啟用 iOS 裝置註冊。 您可以允許使用者註冊個人擁有的裝置，又稱為「攜帶您自己的裝置」(BYOD) 註冊。 您也可以啟用公司擁有的裝置註冊。
+身為 Intune 系統管理員，您可以設定 iOS 和 iPadOS 裝置的註冊作業，以存取公司資源。 您可以允許使用者註冊個人擁有的裝置，又稱為「攜帶您自己的裝置」(BYOD) 註冊。 您也可以設定公司擁有的裝置的註冊作業。
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS 註冊的必要條件
 
@@ -38,9 +38,14 @@ Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者存取�
 - [設定 Intune](../fundamentals/setup-steps.md) - 這些步驟會設定您的 Intune 基礎結構。 裝置註冊特別要求您[設定 MDM 授權單位](../fundamentals/mdm-authority-set.md)。
 - [取得 Apple MDM Push certificate](apple-mdm-push-certificate-get.md) - Apple 需要憑證才能管理 iOS 和 macOS 裝置。
 
-## <a name="user-owned-ios-devices-byod"></a>使用者擁有的 iOS 裝置 (BYOD)
+## <a name="user-owned-ios-and-ipados-devices-byod"></a>使用者擁有的 iOS 和 iPadOS 裝置 (BYOD)
 
-您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 Intune 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。 您可以在 iOS 裝置上自訂公司入口網站隱私權聲明，如[隱私權聲明自訂](../apps/company-portal-app.md#privacy-statement-customization)中所述。
+您可以讓使用者註冊其個人的裝置讓 Intune 管理，這稱為「攜帶您自己的裝置」或 BYOD。 共有三種選項可註冊使用者：
+- 應用程式保護原則提供您最輕鬆的 BYOD 體驗，僅提供應用程式層級的管理。 但如果您也想要使用 6 碼複雜 PIN 來保護裝置，您可以搭配使用者註冊使用這些原則。
+- 您可以將裝置註冊視為一般的 BYOD 註冊。 它也為系統管理員提供各式各樣的管理選項。
+- 使用者註冊是更簡化的註冊程序，可為系統管理員提供一組裝置管理選項的子集。 這項功能目前為預覽狀態。 
+
+當您完成必要條件及指派使用者授權之後，使用者即可從 App Store 下載 Intune 公司入口網站應用程式，並遵循應用程式中的註冊指示進行。 您可以在 iOS 裝置上自訂公司入口網站隱私權聲明，如[隱私權聲明自訂](../apps/company-portal-app.md#privacy-statement-customization)中所述。
 
 ## <a name="company-owned-ios-devices"></a>公司擁有的 iOS 裝置
 
@@ -55,7 +60,10 @@ Intune 啟用 iPad 和 iPhone 的行動裝置管理 (MDM)，讓使用者存取�
 
 ## <a name="device-enrollment-program"></a>裝置註冊方案
 
-組織可以透過 Apple 的裝置註冊計劃 (DEP) 購買 iOS 裝置。 DEP 可以讓您在「線上」部署註冊設定檔，將裝置納入管理。 深入了解[裝置註冊計劃](device-enrollment-program-enroll-ios.md)。
+組織可以透過 Apple 的裝置註冊計劃 (DEP) 購買 iOS 裝置。 DEP 可以讓您在「線上」部署註冊設定檔，將裝置納入管理。 如需詳細資訊，請參閱[裝置註冊計劃](device-enrollment-program-enroll-ios.md)。
+
+## <a name="user-enrollment"></a>使用者註冊
+相較於其他註冊方法，使用者註冊會提供一組管理選項子集給管理員。 如需詳細資訊，請參閱[使用者註冊支援的動作、密碼和其他選項](ios-user-enrollment-supported-actions.md)，以及[設定 iOS 和 iPadOS 使用者註冊](ios-user-enrollment.md)。
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721600"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999334"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用匯入的 PKCS 憑證
 
@@ -168,7 +168,7 @@ PowerShell 模組提供了使用 Windows 密碼編譯建立金鑰的方法。 �
 
 7. 透過執行 `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject` 將 **UserPFXCertificate** 物件匯入至 Intune
 
-8. 若要驗證憑證是否已匯入，請執行 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"`
+8. 若要驗證憑證是否已匯入，請執行 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
 
 如需其他可用命令的詳細資訊，請參閱 [GitHub 上的 PFXImport PowerShell 專案](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) \(英文\) 中的讀我檔案。
 
@@ -186,7 +186,7 @@ PowerShell 模組提供了使用 Windows 密碼編譯建立金鑰的方法。 �
 
 3. 移至 [設定]  索引標籤，然後輸入下列內容：
 
-   - **使用目的**：指定此設定檔匯入之憑證的使用目的。 系統管理員可以匯入使用目的不同 (例如驗證、S/MIME 簽署或 S/MIME 加密) 的憑證。 憑證設定檔中選取的使用目的符合含有正確匯入憑證的憑證設定檔。 使用目的是將匯入的憑證分組的標記，並不保證使用該標記匯入的憑證會符合使用目的。  
+   - **使用目的**：指定此設定檔匯入之憑證的使用目的。 系統管理員可以匯入使用目的不同 (例如 S/MIME 簽署或 S/MIME 加密) 的憑證。 憑證設定檔中選取的使用目的符合含有正確匯入憑證的憑證設定檔。 使用目的是將匯入的憑證分組的標記，並不保證使用該標記匯入的憑證會符合使用目的。  
    - **憑證有效期間**：除非已在憑證範本中變更有效期間，否則此選項預設為一年。  
    - **金鑰儲存提供者 (KSP)** ：針對 Windows，選取要在裝置上儲存金鑰的位置。  
 

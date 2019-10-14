@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,61 +17,97 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3542d86429293531a22678e14520e59cd9de9dc6
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 74ee1eaf0581c4500830514fa9ad272f0de09d3b
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721535"
+ms.locfileid: "71813984"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
-適用於：Azure 入口網站中的 Intune
+當您[將 Jamf Pro 與 Intune 整合](conditional-access-integrate-jamf.md)時，可以使用條件式存取原則，以根據您的組織需求在 Mac 裝置上強制執行合規性。  此文章將協助您進行以下工作：  
 
-您可以使用 Azure Active Directory 和 Microsoft Intune 的條件式存取原則，確定您的終端使用者符合組織需求的規範。 您可以將這些原則套用至[使用 Jamf Pro 管理的](conditional-access-integrate-jamf.md) Mac 上。 這需要 Intune 和 Jamf Pro 主控台的存取權。
+- 建立條件式存取原則。
+- 設定 Jamf Pro，以將 Intune 公司入口網站應用程式部署到您使用 Jamf 管理的裝置。
+- 設定裝置，以在裝置使用者從 Jamf 自助服務應用程式內開始登入公司入口網站應用程式時，向 Azure AD 註冊。 裝置註冊會在 Azure AD 中建立身分識別，以允許透過條件式存取原則來評估裝置，以存取公司資源。  
+ 
+此文章中的程序需要 Intune 和 Jamf Pro 主控台的存取權。
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中設定裝置合規性原則
 
-1. 開啟 Microsoft Azure，然後瀏覽至 [Intune]   > [裝置合規性]   > [原則]  。 您可以建立 macOS 的原則，包括針對不符合規範的使用者及群組選擇一系列的動作 (例如傳送警告電子郵件)。
-2. 選取原則 > [指派]。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組] 以查看您的 Azure AD 安全性群組。 選取您希望套用此原則的使用者群組 > 選擇 [儲存] 以將原則部署到使用者。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後前往 [裝置合規性]   > [原則]  。 
+2. 如果您是使用先前建立的原則，請在主控台中選取該原則，然後移至此程序的下一個步驟。  
+   
+   選取 [建立原則]  ，然後指定包含 [平台]  為 **macOS** 的原則詳細資料。 設定 [設定]  和 [因不符合規範而採取的動作]  ，以符合您的組織需求，然後選取 [建立]  以儲存原則。
 
-您隨即將政策套用至使用者。 系統會評估原則所針對之使用者所使用的裝置是否符合規範，然後針對 Azure Active Directory 中的 [裝置需要標記為合規] 設定，標示為符合規範。
+3. 在原則的 [概觀]  窗格上，選取 [指派]  。 使用可用的選項來設定會收到此原則的 Azure Active Directory (Azure AD) 使用者與安全性群組。 Jamf 與 Intune 的整合不支援以裝置群組為目標的合規性政策。 
 
-> [!Note]
+4. 當您選取 [儲存]  時，原則就會部署至使用者。  
+
+您部署的原則會以指派的使用者所使用的裝置為目標。 系統會評估那些裝置的合規性。 符合規範的裝置會標示為符合規範，表示符合 Azure AD 中 [裝置需要標記為合規]  這個設定的規範。  
+
+> [!NOTE]
 > Intune 需要完整磁碟加密符合規範。
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>在 Jamf Pro 中部署 macOS 的公司入口網站應用程式
 
-您應該遵循下列程序，在 Jamf Pro 中將 macOS 公司入口網站應用程式部署為背景安裝：
+在 Jamf Pro 中建立原則，以部署 Intune 公司入口網站。 此原則會部署公司入口網站應用程式，讓它能在 Jamf 自助服務中使用。 請在您於 Jamf Pro 中為使用者建立原則之前，先建立此原則，以便能在 Azure AD 註冊裝置。  
 
-1. 在 macOS 裝置上，下載 [macOS 版公司入口網站應用程式](https://go.microsoft.com/fwlink/?linkid=862280)的目前版本。 不要安裝它。您需要將應用程式複本上傳至 Jamf Pro。
-2. 開啟 Jamf Pro，然後瀏覽至[電腦管理]   > [套件]  。
-3. 搭配 macOS 版公司入口網站應用程式建立新的套件，然後按一下 [儲存]  。
+若要完成下列程序，您需要 macOS 裝置和 Jamf Pro 入口網站的存取權。 
+
+### <a name="to-deploy-the-company-portal-app"></a>部署公司入口網站應用程式  
+
+1. 在 macOS 裝置上，下載 [macOS 版公司入口網站應用程式](https://go.microsoft.com/fwlink/?linkid=862280)的目前版本，但不要安裝。 您只需要應用程式複本，以便上傳至 Jamf Pro。  
+
+2. 開啟 Jamf Pro，然後前往 [電腦管理]   > [套件]  。
+
+3. 搭配 macOS 版公司入口網站應用程式建立新的套件，然後選取 [儲存]  。
+
 4. 開啟 [電腦]   > [原則]  ，然後選取 [新增]  。
+
 5. 使用**一般**承載來設定原則設定。 這些設定應為：
    - 觸發程序：選取 [註冊完成]  和 [Recurring Check-in] (重複簽入) 
    - 執行頻率：選取 [每部電腦一次] 
+
 6. 選取 [套件]  承載並按一下 [設定]  。
+
 7. 按一下 [新增]  以選取搭配公司入口網站應用程式的套件。
-8. 從 [動作]  快顯功能表選擇 [安裝]  。
+
+8. 從 [動作]  快顯功能表選取 [安裝]  。
 9. 設定套件的設定。
-10. 按一下 [範圍]  索引標籤以指定要安裝公司入口網站應用程式的電腦。 按一下 **[儲存]** 。 當選取的觸發程序下次發生於電腦上，且符合 [一般]  承載的準則時，原則將會執行範圍裝置。
 
-## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中建立原則讓使用者使用 Azure Active Directory 註冊其裝置
+10. 選取 [範圍]  索引標籤以指定要安裝公司入口網站應用程式的電腦。 選取 [儲存]  。 當下次選取的觸發程序在電腦上發生，且符合 [一般]  承載的準則時，原則將會執行範圍裝置。
 
-> [!NOTE]
-> 您需要[部署 macOS 版公司入口網站](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)，才能繼續進行下一個步驟。  
+## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中建立原則讓使用者使用 Azure Active Directory 註冊其裝置  
 
-使用者必須透過 Jamf 自助服務啟動公司入口網站應用程式，以向 Azure AD 將裝置註冊為由 Jamf Pro 管理的裝置。 這會需要使用者採取行動。 我們建議您透過電子郵件、Jamf Pro 通知[連絡您的使用者](../fundamentals/end-user-educate.md)，或使用任何其他方法通知您的使用者，按一下 Jamf 自助服務中的按鈕。
+在您透過 Jamf Pro 自助服務[部署公司入口網站 ](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) (macOS 版) 之後，您可以建立 Jamf Pro 原則，以向 Azure AD 註冊使用者的裝置。 
+
+裝置註冊需要裝置使用者手動從 Jamf 自助服務中選取 Intune 公司入口網站應用程式。 我們建議您透過電子郵件、Jamf Pro 通知，或貴組織用來指示他們完成此動作來註冊其裝置的任何其他方法，來[連絡您的終端使用者](../fundamentals/end-user-educate.md)。 
 
 > [!WARNING]
-> 公司入口網站應用程式必須從 Jamf 自助服務啟動，才能開始裝置註冊。 <br><br>以手動方式啟動公司入口網站應用程式 (例如，從 [應用程式] 或 [下載] 資料夾)，不會註冊裝置。 如果使用者以手動方式啟動公司入口網站，他們會看到 'AccountNotOnboarded' 警告。
+> 以手動方式啟動公司入口網站應用程式 (例如，從 [應用程式] 或 [下載] 資料夾) 時不會註冊裝置。 如果使用者以手動方式啟動公司入口網站，他們將會看到 **'AccountNotOnboarded'** 警告。
 
-1. 在 Jamf Pro 中，瀏覽至 [電腦]   > [原則]  ，然後針對裝置註冊建立新的原則。
+### <a name="to-create-the-registration-policy"></a>建立註冊原則  
+
+1. 在 Jamf Pro 中，移至 [電腦]   > [原則]  ，然後針對裝置註冊建立新的原則。
+
 2. 設定 [Microsoft Intune 整合]  承載，包括觸發程序和執行頻率。
-3. 按一下 [範圍]  索引標籤，然後將原則的範圍設定為所有目標裝置。
-4. 按一下 [自助服務]  索引標籤，使原則可在 Jamf 自助服務中使用。 將原則包含在 [裝置合規性]  類別中。 按一下 **[儲存]** 。
+
+3. 選取 [範圍]  索引標籤，然後將原則的範圍設定為所有目標裝置。
+
+4. 選取 [自助服務]  索引標籤，使原則可在 Jamf 自助服務中使用。 將原則包含在 [裝置合規性]  類別中。 按一下 **[儲存]** 。
+
+## <a name="validate-intune-and-jamf-integration"></a>驗證 Intune 和 Jamf 整合  
+
+使用 Jamf Pro 主控台確認 Jamf Pro 和 Microsoft Intune 之間可順利通訊。 
+
+- 在 Jamf Pro 中，移至 [設定]   > [全域管理]   > [Microsoft Intune 整合]  ，然後選取 [測試]  。 
+
+    主控台會顯示訊息，其中包含連線成功或失敗的資訊。  
+
+如果從 Jamf Pro 主控台執行的連線測試失敗，請檢查 Jamf 設定。 
+
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>從 Intune 移除受控於 Jamf 的裝置
 
