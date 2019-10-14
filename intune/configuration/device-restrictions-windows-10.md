@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734787"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251553"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -665,29 +665,55 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 這些設定使用 [Defender 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)，它也會列出支援的 Windows 版本。
 
-- **即時監視**：[啟用]  可關閉即時掃描惡意程式碼、間諜軟體和其他垃圾軟體。 [未設定]  (預設) 允許此功能。
+- **即時監視**：[啟用]  可關閉惡意程式碼、間諜軟體與其他垃圾軟體的即時掃描。 終端使用者無法關閉它。 
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟這項功能，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **行為監視**：[啟用]  會關閉 Defender 在裝置上檢查某些已知模式的可疑活動。 [未設定]  (預設) 允許 Windows Defender 行為監視。
+- **行為監視**：[啟用]  會開啟行為監視，並檢查裝置上是否有某些已知模式的可疑活動。 使用者無法關閉行為監視。 
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟行為監視，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **網路檢查系統 (NIS)** ：NIS 可協助保護裝置免於遭受網路型入侵。 它會使用 Microsoft Endpoint Protection 中心提供之已知弱點的病毒碼，協助偵測及阻擋惡意流量。
 
-  [未設定]  (預設) 會停用此功能。 使用者不會被封鎖而無法連接到已知的弱點。 當設定為 [**啟用**] 時，會開啟網路保護和網路封鎖，且使用者無法將其關閉。 使用者遭到封鎖而無法連接到已知的弱點。
+  [**啟用**] 會開啟網路保護和網路封鎖。 終端使用者無法關閉它。 啟用時，使用者會被封鎖而無法連線到已知的弱點。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟 NIS，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **掃描所有下載**： [**未設定**] （預設）會掃描從網際網路下載的所有檔案。 當設定為 [**啟用**] 時，就會停用這項功能。 因此，Defender 不會掃描所有下載的網際網路檔案。
+- **掃描所有下載**： [**啟用**] 會開啟此設定，而 Defender 會掃描從網際網路下載的所有檔案。 使用者無法關閉此設定。 
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此設定，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **掃描 Microsoft Web 瀏覽器中所載入的指令碼**：  (預設) 讓 Defender 掃描 Internet Explorer 中所用的指令碼。 [啟用]  可防止此掃描。
+- **掃描 Microsoft Web 瀏覽器中所載入的指令碼**：[啟用]  會允許 Defender 掃描 Internet Explorer 中所使用的指令碼。 使用者無法關閉此設定。 
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此設定，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- []**Defender 的使用者存取**：[封鎖]  會向終端使用者隱藏 Windows Defender 使用者介面。 也會隱藏所有 Windows Defender 通知。 [未設定]  (預設) 允許使用者存取 Windows Defender UI。 變更此設定後，要在使用者電腦下次重新啟動時才會生效。
+- **Defender 的使用者存取**：[封鎖]  會向終端使用者隱藏 Microsoft Defender 使用者介面。 也會隱藏所有 Microsoft Defender 通知。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您封鎖設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統允許使用者存取 Microsoft Defender UI，並可讓使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+
+  變更此設定後，要在使用者電腦下次重新啟動時才會生效。
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **掃描期間的 CPU 使用率限制**：限制掃描可以使用的 CPU 量 (從 `0` 到 `100`)。
-- **掃描**封存檔案： [**啟用**] 會關閉 Defender 掃描封存檔案（例如 Zip 或 Cab 檔案）。 [未設定]  (預設) 允許此掃描。
+- **掃描**封存檔案： [**啟用**] 會開啟 Defender，使其掃描封存檔案（例如 Zip 或 Cab 檔案）。 使用者無法關閉此設定。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此掃描，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- []**掃描內送郵件訊息**：[啟用]  允許 Defender 在電子郵件訊息到達裝置時加以掃描。 [未設定]  (預設) 會防止電子郵件掃描。
+- []**掃描內送郵件訊息**：[啟用]  允許 Defender 在電子郵件訊息到達裝置時加以掃描。 啟用時，引擎會剖析信箱和郵件檔案，以分析郵件內文和附件。 您可以掃描 .pst （Outlook）、.dbx、mbx、MIME （Outlook Express）和 BinHex （Mac）格式。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會關閉此掃描，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- []**在完整掃描期間掃描卸除式磁碟機**：[啟用]  會防止完整掃描卸除式磁碟機。 [未設定]  (預設) 可讓 Defender 掃描 USB 隨身碟等卸除式磁碟機。
+- 在**完整掃描期間掃描卸載式磁片磁碟機**： [**啟用**] 會在完整掃描期間開啟 Defender 抽取式磁碟磁碟機掃描。 使用者無法關閉此設定。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 可讓 Defender 掃描卸載式磁片磁碟機（例如 USB 記憶杆），並允許使用者變更此設定。
 
   在快速掃描期間，可能仍會掃描卸載式磁片磁碟機。
 
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- []**在完整掃描期間掃描對應的網路磁碟機**：[啟用]  讓 Defender 掃描對應網路磁碟機上的檔案。 [未設定]  (預設) 會防止完整掃描。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
+- **在完整掃描期間掃描對應的網路磁碟機**：[啟用]  可讓 Defender 掃描對應網路磁碟機上的檔案。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。 使用者無法關閉此設定。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟這項功能，並允許使用者進行變更。
 
   在快速掃描期間，可能仍會掃描對應的網路磁碟機機。
 
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **掃描從網路資料夾中開啟的檔案**：  (預設) 讓 Defender 掃描共用網路磁碟機上的檔案；例如，從 UNC 路徑存取的檔案。 [啟用]  可防止此掃描。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
+- **掃描從網路資料夾中開啟的**檔案： [**啟用**] 會掃描從網路資料夾或共用網路磁碟機機（例如從 UNC 路徑存取的檔案）開啟的檔案。 使用者無法關閉此設定。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會掃描從網路資料夾中開啟的檔案，並允許使用者進行變更。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **雲端保護**：  (預設) 允許 Microsoft Active Protection Service 從您所管理裝置接收惡意程式碼活動的相關資訊。 [啟用]  會封鎖這項功能。
+- **雲端保護**：[啟用]  可開啟 Microsoft Active Protection Service 以從您管理的裝置接收惡意程式碼活動的相關資訊。 使用者無法變更此設定。 
+
+  當設定為 [**未設定**] （預設）時，Intune 不會觸控此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 允許 Microsoft Active Protection Service 接收資訊，並允許使用者變更此設定。
+
+  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732720"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163573"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定  
 
@@ -776,26 +776,27 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender 惡意探索防護  
 
-使用 [Windows Defender 惡意探索防護](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)來管理員工所用應用程式並減少受攻擊面。  
+使用[惡意探索保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)來管理及減少員工所使用應用程式的受攻擊面。  
 
 ### <a name="attack-surface-reduction"></a>攻擊表面縮減  
 
-如需*攻擊面縮減*規則的相關資訊，請參閱 Windows defender 惡意探索防護檔中的[使用 windows Defender 惡意探索防護來減少攻擊面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)。  
+攻擊表面縮減規則有助於防止惡意程式碼經常用來感染惡意程式碼電腦的行為。  
 
 #### <a name="attack-surface-reduction-rules"></a>受攻擊面縮小規則  
 
 - **標記對 Windows 本機安全性授權子系統進行的認證竊取**  
   **預設**：未設定  
-  惡意探索防護：[攻擊表面縮減規則](https://go.microsoft.com/fwlink/?linkid=874499)
+  規則：[從 Windows 規則：封鎖竊取自 Windows 本機安全性授權子系統 (lsass.exe) 的認證](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe) \(部分機器翻譯\)
 
   協助預防搜尋惡意程式碼探索通常用來感染電腦的動作與應用程式。  
+
   - **未設定**  
   - **啟用** - 從 Windows 本機安全性授權子系統設立認證 (lsass.exe) 竊取旗標。  
   - **僅稽核**  
 
 - **從 Adobe Reader 建立進程（搶鮮版（Beta））**  
   **預設**：未設定  
-  惡意探索防護：[攻擊表面縮減規則](https://go.microsoft.com/fwlink/?linkid=853979)  
+  規則：[封鎖 Adobe Reader 建立子進程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **未設定**  
   - **啟用**-封鎖從 Adobe Reader 建立的子進程。  
@@ -807,7 +808,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **Office 應用程式插入其他處理序 (沒有例外狀況)**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872974)  
+  規則：[禁止 Office 應用程式將程式碼插入其他處理序](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖**-封鎖 Office 應用程式插入其他進程。  
@@ -815,7 +816,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **Office 應用程式/巨集建立可執行檔內容**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872975)  
+  規則：[禁止 Office 應用程式建立可執行的內容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖**-封鎖 Office 應用程式和宏建立可執行檔內容。  
@@ -823,7 +824,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **Office 應用程式啟動子處理序**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872976)  
+  規則：[封鎖所有 Office 應用程式建立子進程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **未設定**  
   - **封鎖**-封鎖 Office 應用程式啟動子進程。  
@@ -831,7 +832,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   
 - **Win32 從 Office 巨集程式碼匯入**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872977)  
+  規則：[封鎖來自 Offeie 巨集的 Win32 API 呼叫](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖**-封鎖從 Office 中的宏程式碼匯入 Win32。  
@@ -839,7 +840,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   
 - **從 Office 通訊產品建立進程**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=874499)  
+  規則：[封鎖 Office 通訊應用程式建立子進程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **未設定**  
   - **啟用**-封鎖從 Office 通訊應用程式建立的子進程。  
@@ -851,7 +852,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **混淆的 js/vbs/ps/巨集程式碼**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872978)    
+  規則：[禁止執行潛在的混淆指令碼:](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts) \(部分機器翻譯\)    
 
   - **未設定**  
   - **封鎖**-封鎖任何模糊的 js/vbs/ps/宏程式碼。  
@@ -859,7 +860,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **js/vbs 從網際網路執行裝載下載 (無例外狀況)**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872979)  
+  規則：[禁止 JavaScript 與 VBScript 啟動下載的可執行內容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content) \(部分機器翻譯\)  
 
   - **未設定**  
   - **區塊**-區塊 js/vbs 執行從網際網路下載的內容。  
@@ -867,7 +868,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **從 PSExec 與 WMI 命令建立的程序**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=874500)  
+  規則：[封鎖來自 PSExec 與 WMI 命令的處理序建立](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖** - 封鎖源自 PSExec 和 WMI 命令的處理序建立。  
@@ -876,7 +877,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **從 USB 執行的未受信任及未簽署程序**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=874502)    
+  規則：[封鎖從 USB 執行的不信任與未簽署處理序](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb) \(部分機器翻譯\)    
 
   - **未設定**  
   - **封鎖** - 封鎖從 USB 執行的未受信任和未簽署處理序。  
@@ -884,7 +885,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   
 - **未符合普遍性、年齡或受信任清單準則的可執行檔**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=874503)    
+  [封鎖](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) - 封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。    
 
   - **未設定**  
   - **封鎖** - 封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。  
@@ -896,7 +897,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **執行自電子郵件 (webmail/郵件用戶端) 卸除的可執行檔內容 (exe、dll、ps、js、vbs 等) (沒有例外狀況)**  
   **預設**：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=872980)  
+  規則：[封鎖來自電子郵件用戶端及網路郵件的可執行內容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖** - 封鎖執行自電子郵件 (webmail/郵件用戶端) 卸除的可執行檔內容 (exe、dll、ps、js、vbs 等)。  
@@ -906,7 +907,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **進階勒索軟體保護**  
   預設：未設定  
-  [惡意探索防護檔](https://go.microsoft.com/fwlink/?linkid=874504)  
+  規則：[對勒索軟體使用進階保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware) \(部分機器翻譯\)  
 
   - **未設定**  
   - **啟用** - 使用積極的勒索軟體防護。  
@@ -932,7 +933,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 ### <a name="controlled-folder-access"></a>受控資料夾存取權  
 
-協助[保護寶貴的資料](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)不受惡意應用程式和威脅侵害，例如勒索軟體。  
+協助[保護寶貴的資料](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)不受惡意應用程式和威脅侵害，例如勒索軟體。  
 
 - **資料夾保護**  
   **預設**：未設定  
@@ -979,7 +980,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 - **上傳 XML**  
   **預設值**：*未設定*  
 
-  若要使用惡意探索保護來[保護裝置免于入侵](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，請建立 XML 檔案，其中包含您想要的系統和應用程式緩和設定。 有兩種方法可以建立 XML 檔案：  
+  若要使用惡意探索保護來[保護裝置免于入侵](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，請建立 XML 檔案，其中包含您想要的系統和應用程式緩和設定。 有兩種方法可以建立 XML 檔案：  
 
   - *PowerShell* - 使用一或多個 *Get-ProcessMitigation*、*Set-ProcessMitigation* 和 *ConvertTo-ProcessMitigationPolicy* PowerShell Cmdlet。 Cmdlet 會設定安全防護功能設定，並匯出它們的 XML 表示法。  
 

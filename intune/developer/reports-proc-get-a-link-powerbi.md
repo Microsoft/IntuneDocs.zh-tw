@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733409"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008330"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 連線至資料倉儲
 
@@ -76,9 +76,10 @@ Power BI [Intune 合規性 (資料倉儲)](https://aka.ms/intune/datawarehouseap
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 在 [總覽] 分頁右側的 [**其他**工作] 區段中，按一下 [**設定 Intune 資料倉儲**]。 將會顯示 [ **Intune 資料倉儲**] 分頁。
-3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如：`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. 從報告刀鋒視窗中擷取自訂摘要 URL，例如：<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. 開啟 [Power BI Desktop]  。
-5. 選擇 [首頁]   > [取得資料]  。 選取 [OData 摘要]  。
+5. 選擇 [ **File**]  >  [**取得資料**]。 選取 [OData 摘要]  。
 6. 選擇 [基本]  。
 7. 將 [OData URL]  鍵入或貼入 URL 方塊。
 8. 選取 [確定]  。

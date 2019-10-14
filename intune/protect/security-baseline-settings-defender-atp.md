@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732954"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163494"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -86,7 +86,7 @@ ms.locfileid: "71732954"
 ## <a name="attack-surface-reduction"></a>攻擊表面縮減  
 
 - **Office 應用程式啟動子處理序**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立子處理序。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。 建立子處理序是典型的惡意程式碼行為，特別是針對試圖使用 Office 應用程式啟動或下載惡意可執行檔的巨集型攻擊。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立子處理序。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。 建立子處理序是典型的惡意程式碼行為，特別是針對試圖使用 Office 應用程式啟動或下載惡意可執行檔的巨集型攻擊。  
 
   **預設值**：封鎖
 
@@ -101,7 +101,7 @@ ms.locfileid: "71732954"
   **預設值**：啟用
 
 - **電子郵件內容執行類型**  
-  [受攻擊免縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，此規則可防止從 Microsoft Outlook 或網路郵件 (例如 Gmail.com 或 Outlook.com) 中出現的電子郵件，執行或啟動下列檔案類型：  
+  [受攻擊免縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，此規則可防止從 Microsoft Outlook 或網路郵件 (例如 Gmail.com 或 Outlook.com) 中出現的電子郵件，執行或啟動下列檔案類型：  
 
   - 可執行檔 (例如 .exe、.dll 或 .scr)  
   - 指令碼檔案 (例如 PowerShell .ps、VisualBasic .vbs 或 JavaScript .js 檔案)  
@@ -110,17 +110,17 @@ ms.locfileid: "71732954"
   **預設值**：封鎖
 
 - **Adobe Reader 在子處理序中啟動**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *啟用*此規則以封鎖 Adobe Reader，使其無法建立子處理序。 惡意程式碼可以透過社交工程或惡意探索來下載並啟動額外的承載並以 Adobe Reader 為跳板發動攻擊。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *啟用*此規則以封鎖 Adobe Reader，使其無法建立子處理序。 惡意程式碼可以透過社交工程或惡意探索來下載並啟動額外的承載並以 Adobe Reader 為跳板發動攻擊。  
 
   **預設值**：啟用
 
 - **撰寫混淆的巨集程式碼類型**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 惡意程式碼與其他威脅可能會在某些指令檔中，嘗試混淆或隱藏其惡意程式碼。 此規則可防止看似混淆的指令碼執行。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 惡意程式碼與其他威脅可能會在某些指令檔中，嘗試混淆或隱藏其惡意程式碼。 此規則可防止看似混淆的指令碼執行。  
     
   **預設值**：封鎖
 
 - **不受信任的 USB 處理序類型**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，來自 USB 抽取式磁碟機與 SD 卡且未經簽署或未受信任的可執行檔將無法執行。
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，來自 USB 抽取式磁碟機與 SD 卡且未經簽署或未受信任的可執行檔將無法執行。
 
   可執行檔包括：
   - 可執行檔 (例如 .exe、.dll 或 .scr)
@@ -129,22 +129,22 @@ ms.locfileid: "71732954"
   **預設值**：封鎖
 
 - **Office 應用程式的其他處理序插入類型**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，Office 應用程式 (包括 Word、Excel、PowerPoint 與 OneNote) 無法將程式碼插入到其他處理序中。 程式碼插入通常會利用這點來執行惡意程式碼，試圖隱藏活動不讓防毒掃描引擎發現。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，Office 應用程式 (包括 Word、Excel、PowerPoint 與 OneNote) 無法將程式碼插入到其他處理序中。 程式碼插入通常會利用這點來執行惡意程式碼，試圖隱藏活動不讓防毒掃描引擎發現。  
 
   **預設值**：封鎖
 
 - **Office 巨集程式碼允許 Win32 匯入類型**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，此規則會嘗試封鎖包含可匯入 Win32 DLL 之巨集程式碼的 Office 檔案。 Office 應用程式包括 Word、Excel、PowerPoint 與 OneNote。 惡意軟體可能會利用 Office 檔案中的巨集程式碼來匯入和載入 Win32 DLL，這些 DLL 接著可用來進行 API 呼叫，以便允許進一步感染整個系統。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，此規則會嘗試封鎖包含可匯入 Win32 DLL 之巨集程式碼的 Office 檔案。 Office 應用程式包括 Word、Excel、PowerPoint 與 OneNote。 惡意軟體可能會利用 Office 檔案中的巨集程式碼來匯入和載入 Win32 DLL，這些 DLL 接著可用來進行 API 呼叫，以便允許進一步感染整個系統。  
 
   **預設值**：封鎖
 
 - **Office 通訊應用程式在子處理序中啟動**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [啟用]  時，此規則會防止 Outlook 建立子處理序。 透過封鎖建立子程序的動作，此規則可保護您免於社交功能攻擊並防止惡意探索程式碼濫用 Outlook 中的弱點。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [啟用]  時，此規則會防止 Outlook 建立子處理序。 透過封鎖建立子程序的動作，此規則可保護您免於社交功能攻擊並防止惡意探索程式碼濫用 Outlook 中的弱點。  
 
   **預設值**：啟用
 
 - **Office 應用程式可執行的內容建立或啟動類型**  
-  [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立可執行的內容。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。  
+  [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立可執行的內容。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。  
 
   此規則會將目標鎖定在可疑且惡意附加元件和指令碼 (延伸模組) 為建立或啟動可執行檔所使用的典型行為。 這是典型的惡意軟體手段。 延伸模組會被封鎖而無法供 Office 應用程式使用。 一般而言，這些延伸模組會使用 Windows Scripting Host (.wsh 檔案) 執行指令碼，來將特定工作自動化或提供使用者建立的附加元件功能。
 
@@ -273,7 +273,7 @@ ms.locfileid: "71732954"
 ## <a name="exploit-protection"></a>惡意探索保護  
 
 - **惡意探索保護 XML**  
-  如需詳細資訊，請參閱 Windows 文件中的[匯入、匯出及部署惡意探索保護設定](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml) \(部分機器翻譯\)。  
+  如需詳細資訊，請參閱 Windows 文件中的[匯入、匯出及部署惡意探索保護設定](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) \(部分機器翻譯\)。  
 
   讓 IT 系統管理員得以將代表想要的系統及應用程式風險降低選項設定，推送至組織中的所有裝置。 此設定是以 XML 表示。 
 
