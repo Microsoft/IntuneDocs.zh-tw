@@ -210,7 +210,7 @@
     - name: 疑難排解
       items:
         - name: 針對原則及設定檔進行疑難排解
-          href: troubleshoot-policies-in-microsoft-intune.md
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
         - name: 條件式存取的疑難排解
           href: troubleshoot-conditional-access.md
         - name: 疑難排解憑證連接器

@@ -6,8 +6,9 @@
     - name: Microsoft Intune 概觀
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Intune 對我的公司有何作用？
-      href: get-started-evaluation.md
+    - name: 裝置管理概觀
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: 新功能
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念
   items:
-    - name: 什麼是裝置管理？
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: 什麼是 Intune 教育版？
       href: introduction-intune-education.md
     - name: 高階架構
