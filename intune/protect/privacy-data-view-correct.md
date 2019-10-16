@@ -1,5 +1,6 @@
 ---
 title: 檢視及更正個人資料
+titleSuffix: Microsoft Intune
 description: 了解如何檢視及更正個人資料。
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9261c451a7a5bdf5f718193adbfcb2389fa285a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727918"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310899"
 ---
 # <a name="view-and-correct-personal-data"></a>檢視及更正個人資料
 
@@ -43,7 +44,7 @@ Microsoft 使用嚴格的控制來管理客戶資料的存取，授與完成重�
 
 您可以使用以角色為基礎的系統管理控制 (RBAC) 來保護和控制終端使用者的個人資料存取權。 如需詳細資訊，請參閱 [RBAC 搭配 Microsoft Intune](../fundamentals/role-based-access-control.md)。
 
-您可以閱讀 Online Services 條款和 [Microsoft Online Services 隱私權聲明](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)，進一步了解 Microsoft 資料做法。 
+您可以閱讀 Online Services 條款和 [Microsoft Online Services 隱私權聲明](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)，進一步了解 Microsoft 資料做法。 
 
 ## <a name="correct-end-user-personal-data"></a>更正終端使用者的個人資料
 

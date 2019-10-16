@@ -1,5 +1,6 @@
 ---
 title: 針對 Microsoft Intune 憑證連接器和事件識別碼進行疑難排解 |Microsoft Docs
+titleSuffix: Microsoft Intune
 description: 藉由檢閱事件識別碼和描述來針對 Microsoft Intune 憑證連接器進行疑難排解，並檢閱 Intune 連接器服務的診斷碼。
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721756"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306719"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune 憑證連接器事件和診斷碼
 

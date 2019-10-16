@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722913"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310956"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>設定基礎結構以支援 SCEP 與 Intune  
   
@@ -37,7 +37,7 @@ Intune 支援使用簡單憑證註冊通訊協定 (SCEP) 來[驗證與您應用�
 
 ### <a name="servers-and-server-roles"></a>伺服器與伺服器角色  
 下列內部部署基礎結構必須在已加入網域的伺服器上執行 (Web 應用程式 Proxy 伺服器除外)。  
-- **憑證授權單位** – 使用在企業版 Windows Server 2008 R2 Service Pack 1 或更新版本上執行的 Microsoft Active Directory 憑證服務企業憑證授權單位 (CA)。 您使用的 Windows Server 版本必須持續受到 Microsoft 支援。 不支援獨立 CA。 如需詳細資訊，請參閱[安裝憑證授權單位](http://technet.microsoft.com/library/jj125375.aspx)。 如果您的 CA 執行 Windows Server 2008 R2 SP1，您必須[從 KB2483564 安裝 Hotfix](http://support.microsoft.com/kb/2483564/)。  
+- **憑證授權單位** – 使用在企業版 Windows Server 2008 R2 Service Pack 1 或更新版本上執行的 Microsoft Active Directory 憑證服務企業憑證授權單位 (CA)。 您使用的 Windows Server 版本必須持續受到 Microsoft 支援。 不支援獨立 CA。 如需詳細資訊，請參閱[安裝憑證授權單位](https://technet.microsoft.com/library/jj125375.aspx)。 如果您的 CA 執行 Windows Server 2008 R2 SP1，您必須[從 KB2483564 安裝 Hotfix](https://support.microsoft.com/kb/2483564/)。  
 
 - **NDES 伺服器角色** - 您必須在 Windows Server 2012 R2 或更新版本上，設定網路裝置註冊服務 (NDES) 伺服器角色。 我們將在本文後面的章節引導您[安裝 NDES](#set-up-ndes)。  
 
@@ -45,7 +45,7 @@ Intune 支援使用簡單憑證註冊通訊協定 (SCEP) 來[驗證與您應用�
   - 您無法使用安裝於裝載企業 CA 之伺服器上的 NDES。  
   - 您可在與裝載 NDES 相同的伺服器上安裝 Microsoft Intune 憑證連接器。  
 
-  若要深入了解 NDES，請參閱 Windows Server 文件中的 [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) (網路裝置註冊服務指導)，以及 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx) (使用原則模組搭配網路裝置註冊服務)。  
+  若要深入了解 NDES，請參閱 Windows Server 文件中的 [Network Device Enrollment Service Guidance](https://technet.microsoft.com/library/hh831498.aspx) (網路裝置註冊服務指導)，以及 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx) (使用原則模組搭配網路裝置註冊服務)。  
 
 - **Microsoft Intune 憑證連接器** - 需要 Microsoft Intune 憑證連接器以搭配 Intune 使用 SCEP 憑證設定檔。 本文將引導您[安裝此連接器](#install-the-intune-certificate-connector)。  
 
@@ -61,7 +61,7 @@ Intune 支援使用簡單憑證註冊通訊協定 (SCEP) 來[驗證與您應用�
 
 - **Web 應用程式 Proxy 伺服器** (選擇性) - 使用執行 Windows Server 2012 R2 或更新版本的伺服器作為 Web 應用程式 Proxy (WAP) 伺服器，將您的 NDES URL 發佈至網際網路。  這會允許內部網路和網際網路對應裝置獲得憑證。
 
-  裝載 WAP 伺服器 [必須安裝更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](http://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](http://support.microsoft.com/kb/3011135)。  
+  裝載 WAP 伺服器 [必須安裝更新](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ，以啟用網路裝置註冊服務所使用之長 URL 的支援。 此更新隨附於 [2014 年 12 月更新彙總套件](https://support.microsoft.com/kb/3013769)，或個別提供於 [KB3011135](https://support.microsoft.com/kb/3011135)。  
 
   WAP 伺服器必須有 SSL 憑證，該憑證符合發佈給外部用戶端的名稱，且信任在裝載 NDES 服務的電腦上所使用 SSL 憑證。 這些憑證讓 WAP 伺服器能從用戶端終止 SSL 連線，以及建立與 NDES 服務的新 SSL 連線。  
 

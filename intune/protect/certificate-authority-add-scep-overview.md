@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036425"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310906"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -31,7 +31,7 @@ ms.locfileid: "72036425"
 **第 1 部分 - 使用開放原始碼 API**  
 Microsoft 已建立 API 來與 Intune 整合。 透過該 API，您可以驗證憑證、傳送成功或失敗通知，以及使用 SSL (特別是 SSL 通訊端 Factory) 來與 Intune 通訊。
 
-API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)，供您下載並用於解決方案。 使用此 API 搭配協力廠商 SCEP 伺服器，來在 SCEP 將憑證佈建給裝置之前，對 Intune 執行自訂挑戰驗證。
+API 提供於 [Intune SCEP API 公用 GitHub 存放庫](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)，供您下載並用於解決方案。 使用此 API 搭配協力廠商 SCEP 伺服器，來在 SCEP 將憑證佈建給裝置之前，對 Intune 執行自訂挑戰驗證。
 
 [與 Intune SCEP 管理解決方案整合](scep-libraries-apis.md)提供使用 API、其方法和測試您建置之解決方案的更多詳細資料。
 
@@ -129,11 +129,11 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](http://github.com/Micros
 
 如果您是有興趣將產品與 Intune 整合的協力廠商 CA，請檢閱 API 指引：
 
-- [Intune SCEP API GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API GitHub 存放庫](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [協力廠商 CA 的 Intune SCEP API 指引](scep-libraries-apis.md)
 
 ## <a name="see-also"></a>請參閱
 
 - [設定憑證設定檔](certificates-scep-configure.md)
-- [Intune SCEP API GitHub 存放庫](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API GitHub 存放庫](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [協力廠商 CA 的 Intune SCEP API 指引](scep-libraries-apis.md)
