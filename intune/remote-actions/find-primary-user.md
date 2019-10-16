@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728360"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379706"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
@@ -46,7 +46,7 @@ ms.locfileid: "71728360"
 
 若未為 Intune 裝置指派任何主要使用者，則公司入口網站應用程式會將它偵測為共用裝置。 共用裝置可以視覺方式來識別，其會在裝置圖格上顯示「共用」標籤。 在此模式中，公司入口網站仍可用來要求並安裝可用的應用程式。 不過，無法使用自助動作 (重設/重新命名/淘汰)。  
 
-若要顯示於共用裝置上的公司入口網站中，必須將可用的應用程式指派給使用者群組。 系統會根據 IT 系統管理員設定應用程式的方式，將其安裝於系統內容或使用者內容中。 如需應用程式內容的詳細資訊，請參閱[在 Windows 10 裝置上安裝應用程式](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices)。 需要有公司入口網站版本 10.3.4651.0 或更新版本，才能使用此功能。
+若要顯示於共用裝置上的公司入口網站中，必須將可用的應用程式指派給使用者群組。 系統會根據 IT 系統管理員設定應用程式的方式，將其安裝於系統內容或使用者內容中。 如需應用程式內容的詳細資訊，請參閱[在 Windows 10 裝置上安裝應用程式](../apps/apps-windows-10-app-deploy.md)。 需要有公司入口網站版本 10.3.4651.0 或更新版本，才能使用此功能。
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>要將哪位人員指派為主要使用者？

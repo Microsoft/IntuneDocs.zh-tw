@@ -96,7 +96,7 @@
           href: apps-windows-10-app-deploy.md
         - name: 將應用程式部署至政府環境
           href: apps-deploy-gcc-dod.md
-    - name: 監視應用程式
+    - name: 監視 App
       href: apps-monitor.md
     - name: 探索到的應用程式
       href: app-discovered-apps.md
@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS 設定
                   href: app-protection-policy-settings-ios.md
-                - name: 存取動作
+                - name: 條件式啟動
                   href: app-protection-policies-access-actions.md
                 - name: 資料傳輸例外狀況
                   href: app-protection-policies-exception.md
@@ -186,7 +186,7 @@
           href: troubleshoot-mam.md
         - name: 檢閱應用程式保護記錄
           href: app-protection-policy-settings-log.md
-- name: 參考資料
+- name: 參考
   items:
     - name: 使用 Intune App SDK 來保護應用程式
       href: ../developer/app-sdk.md
