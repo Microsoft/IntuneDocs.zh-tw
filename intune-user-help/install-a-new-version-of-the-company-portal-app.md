@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840954"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506051"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>如何更新公司入口網站應用程式
 
@@ -44,13 +45,13 @@ ms.locfileid: "66840954"
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>更新 macOS 裝置上的公司入口網站應用程式
 
-設定公司入口網站可供使用時，自動安裝更新。 
+設定公司入口網站在更新可供使用時自動安裝。 
 
-1. 開啟公司入口網站並移至**協助**。 
+1. 開啟公司入口網站並移至 [說明 **]。** 
 2. 選取 [檢查更新]  。 
-3. 在 Microsoft AutoUpdate 畫面中，選取**自動下載並安裝**。 
+3. 在 [Microsoft 自動更新] 畫面上，選取 [**自動下載並安裝**]。 
 
-若要檢視可用的更新，請選取**檢查是否有更新**。  
+若要查看可用的更新，請選取 [**檢查更新**]。  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>更新 Windows 裝置上的公司入口網站應用程式
 若要在更新可用時自動取得更新，請開啟 Microsoft Store，並移至 [設定]  。 然後開啟 [應用程式更新]  。 若要檢視最新更新和下載佇列中等候的應用程式，請前往 [下載和更新]  。  

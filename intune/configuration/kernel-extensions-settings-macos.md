@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506706"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>在 Intune 中設定和使用核心延伸模組的 macOS 裝置設定
 
@@ -57,7 +58,7 @@ ms.locfileid: "71734488"
 
 - **允許的核心延伸**模組：使用此設定可允許特定的核心延伸模組。 只允許或信任您輸入的核心延伸模組。 
 
-  **新增**您想要載入之核心擴充功能的套件組合識別碼和小組識別碼。 若為不帶正負號的舊版核心延伸模組，請使用空白的小組識別碼。 您可以新增多個核心延伸模組。 小組識別碼必須是英數位元（字母和數位）且包含10個字元。 例如 **，針對** 套件組合識別碼 輸入 `com.contoso.appname.macos`，並針對 **小組識別碼** `ABCDE12345`。
+  **新增**您想要載入之核心擴充功能的套件組合識別碼和小組識別碼。 若為不帶正負號的舊版核心延伸模組，請使用空白的小組識別碼。 您可以新增多個核心延伸模組。 小組識別碼必須是英數位元（字母和數位）且包含10個字元。 例如，輸入 [套件組合識別碼] **`com.contoso.appname.macos`，然後針對 [** **小組識別碼**] `ABCDE12345`。
 
   > [!TIP]
   > 若要在 macOS 裝置上取得核心延伸模組（Kext）的套件組合識別碼，您可以：

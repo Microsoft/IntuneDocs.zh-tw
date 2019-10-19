@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735814"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502821"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火牆原則協助保護 Windows 電腦
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > 本主題中的資訊僅適用於使用 Intune 軟體用戶端作為電腦所管理的 Windows 桌上型電腦。 如果您想要管理註冊為行動裝置之 Windows 電腦的防火牆設定，請參閱[在 Intune 中新增端點保護設定](../protect/endpoint-protection-configure.md)。
@@ -43,7 +44,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 > [!NOTE]
 > 如果設定以 Microsoft Intune 原則及群組原則管理同一台電腦的相同設定，群組原則設定會覆寫 Microsoft Intune 原則設定。 如需如何避免 Intune 原則與群組原則產生衝突的詳細資訊，請參閱[解決 GPO 和 Microsoft Intune 原則衝突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果您想要將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](http://support2.microsoft.com/kb/971800)。
+> 如果您想要將 Windows 防火牆設定部署到執行 Windows Vista 的電腦，則必須先在這些電腦上安裝 [Hotfix KB971800](https://support2.microsoft.com/kb/971800)。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火牆，請確定您所管理的電腦上已啟用下列兩項服務：
@@ -84,7 +85,7 @@ Windows 防火牆原則可讓您建立及部署在受管理電腦上控制 Windo
 所有這些設定的預設值都是 [是]  ，亦即最安全的值。
 
 > [!IMPORTANT]
-> 如果您環境中所包含的受管理電腦，執行未安裝 Service Pack 的 Windows Vista ，則您必須安裝與 Microsoft 知識庫[文章編號 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相關聯的更新，或者停用部署至那些電腦之原則中的 **[阻擋所有連入連線]** 原則設定。
+> 如果您環境中所包含的受管理電腦，執行未安裝 Service Pack 的 Windows Vista ，則您必須安裝與 Microsoft 知識庫[文章編號 971800](https://go.microsoft.com/fwlink/?LinkId=188405) 相關聯的更新，或者停用部署至那些電腦之原則中的 **[阻擋所有連入連線]** 原則設定。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>當 Windows 防火牆阻擋新程式時通知使用者
 

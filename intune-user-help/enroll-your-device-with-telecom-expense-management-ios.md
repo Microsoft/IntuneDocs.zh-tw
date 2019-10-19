@@ -9,6 +9,7 @@ ms.date: 04/19/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 828afc63bdf1735188d921cb9dc441218564f414
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 84098d4d2152d62eda888cdcde1cf88e5081a470
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835158"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506172"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>在電信費用管理中註冊您的 iOS 裝置
 
@@ -40,15 +41,15 @@ ms.locfileid: "55835158"
 > [!NOTE]
 > 若要使用此方法進行註冊，您的手機上必須安裝並啟動 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) 應用程式。
 
-1. 選取 [使用 Microsoft 帳戶註冊]。
+1. 選取 [使用 Microsoft 帳戶註冊]  。
 
    ![Datalert 應用程式設定畫面的螢幕擷取畫面，此畫面在上半部提供用以註冊裝置的電話號碼欄位，並在下半部提供 [使用 Microsoft 帳戶註冊]，以針對您有 Microsoft Office 365 帳戶和 Intune 訂閱的情況。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
-2. 您會接收到「Datalert」想要開啟「Authenticator」的通知。 選取 [開啟]。
+2. 您會接收到「Datalert」想要開啟「Authenticator」的通知  。 選取 [開啟]  。
 
    ![通知使用者因應 Datalert 應用程式的要求開啟 Authenticator 應用程式之快顯的影像。](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
-3. 使用您的「Microsoft 學校或公司帳戶」登入。 Datalert 安裝將會運作一段時間，然後應該就會完成。 當它完成時，請點選 [完成]。
+3. 使用您的「Microsoft 學校或公司帳戶」  登入。 Datalert 安裝將會運作一段時間，然後應該就會完成。 當它完成時，請點選 [完成]  。
 
 ## <a name="enroll-into-datalert-using-your-phone-number"></a>使用您的電話號碼註冊 Datalert
 
@@ -56,11 +57,11 @@ ms.locfileid: "55835158"
 
    ![Datalert 應用程式要求電話號碼的螢幕擷取畫面。](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
-2. 您接著會透過 SMS 訊息收到驗證碼。 提供驗證碼，然後點選 [確定]。
+2. 您接著會透過 SMS 訊息收到驗證碼。 提供驗證碼，然後點選 [確定]  。
 
    ![Datalert 應用程式要求 SMS 驗證碼的螢幕擷取畫面。](./media/ios-enroll-13-tem-datalert-sms.png)
 
-3. 提供驗證碼之後，就會完成 Datalert 安裝。 點選 [完成]，您就可以從 Datalert 應用程式監視您的資料。
+3. 提供驗證碼之後，就會完成 Datalert 安裝。 點選 [完成]  ，您就可以從 Datalert 應用程式監視您的資料。
 
    ![Datalert 應用程式監視今天資料使用量的螢幕擷取畫面。](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 

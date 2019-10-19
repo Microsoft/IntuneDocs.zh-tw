@@ -9,6 +9,7 @@ ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da3a864e492506845432b2106e0ecce4fb2e331a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8dd62e17db94807bc31cb4368de390ac2e38b90e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838105"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502005"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>使用良好的密碼讓您的裝置更安全
 
@@ -34,17 +35,17 @@ ms.locfileid: "55838105"
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>在 Windows Phone 8.1 上變更密碼
 
-1. 從 [首頁] 畫面中，選擇 [設定]，然後選擇 [鎖定畫面]。
-2. 向下捲動至 [密碼]，然後選擇 [變更密碼]。
-3. 在 [目前密碼] 方塊中，輸入目前密碼。
-4. 在 [新密碼] 方塊中輸入新密碼，然後在 [確認密碼] 方塊中重新輸入密碼。
-4. 選擇 [完成]。
+1. 從 [首頁]  畫面中，選擇 [設定]  ，然後選擇 [鎖定畫面]  。
+2. 向下捲動至 [密碼]  ，然後選擇 [變更密碼]  。
+3. 在 [目前密碼]  方塊中，輸入目前密碼。
+4. 在 [新密碼]  方塊中輸入新密碼，然後在 [確認密碼]  方塊中重新輸入密碼。
+4. 選擇 [完成]  。
 
 ## <a name="to-set-your-password-on-windows-phone-81"></a>在 Windows Phone 8.1 上設定密碼
 
-1. 從 [首頁] 畫面中，選擇 [設定]，然後選擇 [鎖定畫面]。
-2. 向下捲動至 [密碼]，然後將 [密碼] 列滑到 [開啟]。
-3. 在 [新密碼] 方塊中輸入新密碼，然後在 [確認密碼] 方塊中重新輸入密碼。
-4. 選擇 [完成]。
+1. 從 [首頁]  畫面中，選擇 [設定]  ，然後選擇 [鎖定畫面]  。
+2. 向下捲動至 [密碼]  ，然後將 [密碼]  列滑到 [開啟]  。
+3. 在 [新密碼]  方塊中輸入新密碼，然後在 [確認密碼]  方塊中重新輸入密碼。
+4. 選擇 [完成]  。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

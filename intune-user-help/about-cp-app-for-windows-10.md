@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
 searchScope:
@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebc7a9a1e9cc355a06baa4b7134216ecc6cd0da5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61825741a5651daa55727c706ba683628e723c8a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545289"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490296"
 ---
 # <a name="installing-the-company-portal-app-for-windows-10"></a>安裝 Windows 10 的公司入口網站應用程式  
 
@@ -37,7 +37,7 @@ ms.locfileid: "67545289"
 
 - 當手機遺失或遭竊時，將其重設為原廠設定。
 
-當您準備好安裝公司入口網站並註冊您的裝置，請參閱[開始使用 Windows 註冊](windows-enrollment-company-portal.md)。  
+當您準備好要安裝公司入口網站並註冊您的裝置時，請參閱[開始使用 Windows 註冊](windows-enrollment-company-portal.md)。  
 
 新增電腦時：
 

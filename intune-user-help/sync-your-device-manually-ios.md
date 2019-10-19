@@ -9,6 +9,7 @@ ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bce4f7bbbd7fcb501c2380b60a3cf79d6548aac
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: deb39845e66f73503af93b3ff68d6a64f1d3472e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840275"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508244"
 ---
 # <a name="sync-your-ios-device-manually"></a>手動同步處理您的 iOS 裝置
 
@@ -31,11 +32,11 @@ ms.locfileid: "55840275"
 
 1. 開啟公司入口網站應用程式。
 
-2. 點選 [裝置]。 如果您有多部裝置，將會看到裝置清單。 請選擇您目前使用的裝置。 如果您只有一部裝置，則會直接移至裝置詳細資料畫面。
+2. 點選 [裝置]  。 如果您有多部裝置，將會看到裝置清單。 請選擇您目前使用的裝置。 如果您只有一部裝置，則會直接移至裝置詳細資料畫面。
 
     ![[裝置] 畫面的螢幕擷取畫面，其中顯示兩部裝置。 上方的裝置具有「這是您目前正在使用的 iPhone 6 Plus」文字。](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
-3. 點選 [檢查設定] 來同步您的裝置。 螢幕上會出現載入列，直到完成同步為止。
+3. 點選 [檢查設定]  來同步您的裝置。 螢幕上會出現載入列，直到完成同步為止。
 
     ![裝置詳細資料的螢幕擷取畫面，其中顯示裝置的上次簽入時間及 [檢查設定] 連結。](/intune-user-help/media/ios_sync_2_CP_after_1804.png)  
 

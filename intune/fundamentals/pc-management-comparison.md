@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 217b93fcd78010428ce427a755e6c0c20f4372df
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736269"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510058"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織可以使用 Microsoft Intune 來管理 Windows 電腦，其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理，或使用 Intune 軟體用戶端作為電腦來管理。  Microsoft 建議客戶如有可能盡量使用 MDM 管理解決方案。 但是，為了協助您深入了解這些選項之間的差異，下圖對這兩個管理選項進行了比較。
 

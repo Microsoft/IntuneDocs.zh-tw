@@ -9,6 +9,7 @@ ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: dd79fc4d-6265-4dd0-87fb-8ab66b1cf692
 searchScope:
@@ -18,14 +19,14 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545944"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501917"
 ---
-# <a name="unenroll-your-macos-device-from-company-portal"></a>取消註冊 macOS 裝置從公司入口網站
+# <a name="unenroll-your-macos-device-from-company-portal"></a>從公司入口網站取消註冊您的 macOS 裝置
 
 當您在 Intune 取消註冊 macOS 裝置時，您的裝置將無法再存取公司資源。
 
@@ -34,8 +35,8 @@ ms.locfileid: "67545944"
 1. 登入 macOS 的公司入口網站。
 2. 移至 [裝置]  選取您要取消註冊的裝置。
 
-3. 選取省略符號功能表圖示 >**移除**。
-4. 確認訊息隨即出現。 選取 **移除**取消註冊裝置。 
+3. 選取省略號功能表圖示 >**移除**。
+4. 確認訊息隨即出現。 選取 [移除] 來**取消**註冊您的裝置。 
 
 當您從 Intune 取消註冊裝置時，會發生下列情況：
 

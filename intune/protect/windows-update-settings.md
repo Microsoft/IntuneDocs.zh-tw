@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584461"
 ---
 # <a name="windows-update-settings-for-intune"></a>適用於 Intune 的 Windows Update 設定  
 
@@ -216,45 +217,9 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
   - **關閉所有通知，但不包含重新開機警告**
   - **關閉所有通知，包括重新開機警告**  
 
-- **可讓使用者重新啟動 (預約重新啟動)**  
-  **預設**：未設定  
-  > [!IMPORTANT]  
-  > 不再建議使用*參與的重新開機*設定。 相反地，請使用新的*期限*設定來取代*參與的重新開機*設定。 Intune 會在未來的更新中[取代支援*參與的重新開機*](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)設定。
-
-  Windows 10 1803 版和更新版本支援參與重新開機。 
-
-  > [!NOTE]  
-  > Windows 10 1809 版導入額外的重新啟動設定，可讓不同的設定套用至功能和品質更新。 不過，由 Intune 管理的設定無法分別套用至不同的更新類型。 相反地，Intune 會為功能和品質更新套用相同的值。  
-  
-  - **未設定**  
-  - **必要** - 設定為 [必要]  以使用 Windows 10 更新的預約重新啟動選項。 這些選項可協助裝置使用者在安裝需要重新啟動的更新之後，管理重新啟動裝置的時機。  
-
-  如需此選項的詳細資訊，請參閱 Windows 10 文件中的[預約重新啟動](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) \(機器翻譯\) 以部署更新。  
-
-  下列設定用來控制預約重新啟動動作的發生時機。  
-
-  - **在自動重新啟動後將使用者轉換至預約重新啟動 (天數)**  
-    **預設值**：未設定 Windows Update CSP： [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    針對在安裝更新之後，直到裝置進入預約重新啟動行為要多少時間，指定 **2** 到 **30** 天的值。 在設定的天數之後，使用者會收到重新啟動裝置的提示。  
-
-  - **延遲預約重新啟動提醒 (天數)**  
-    **預設**：未設定    
-    Windows Update CSP： [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    指定**1**到**3**的值，以瞭解重新開機提示可以 snoozed 的時間長度。  在延遲期間之後，會再次顯示重新啟動提示。 使用者可以繼續延遲提醒，直到達到安裝期限為止。  
-
-  - **設定暫止重新啟動的期限 (天數)**  
-    **預設**：未設定  
-    Windows Update CSP： [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    針對預約重新啟動行為開始後，在裝置強制執行必要重新啟動之前的等候天數，指定 **2** 到 **30** 的值作為上限。 此重新啟動會提示使用者儲存工作。
-
 - **使用期限設定**  
   **預設**：未設定  
-  > [!IMPORTANT]  
-  > 從 Intune 的8月更新開始，我們建議使用下列的期限設定來取代參與的重新開機設定。 Intune 會在未來的 Intune 更新中[取代支援*參與的重新開機*](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)設定。  
-
+ 
   允許使用者使用期限設定。  
 
   - **未設定**
@@ -263,21 +228,21 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
   設為 [*允許*] 時，您可以設定下列期限設定：
 
   - **功能更新的期限**  
-    **預設**：7  
+    **預設值**：*未設定*  
     Windows Update CSP： [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     指定使用者已自動在裝置上安裝功能更新的天數（2-30）。
 
   - **品質更新的期限**  
-    **預設**：7  
+    **預設值**：*未設定*  
     Windows Update CSP： [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     指定自動在裝置上安裝品質更新之前，使用者的天數（2-30）。
 
   - **寬限期**  
-    **預設值**： 2 Windows Update CSP： [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **預設值**：*未設定*Windows Update CSP： [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    指定在期限後的最少天數，直到自動重新開機為止（0-7）。
+    指定在期限後的最少天數，直到自動重新開機為止（2-7）。
 
   - **期限前自動重新開機**  
     **預設值**：是 Windows Update CSP： [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
     指定裝置是否應該在期限前自動重新開機。
     - **是**
     - **否**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>傳遞最佳化下載模式  
 

@@ -5,21 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
+ms.reviewer: maholdaa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51096b4ff42902b5feb8cecdebf9d839821e1bb2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733981"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585368"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於執行 Android 企業和 Android kiosk 之裝置的 Wi-Fi 設定
 
@@ -40,7 +42,6 @@ ms.locfileid: "71733981"
 - **Wi-Fi 類型**：選擇 [基本]  。
 - **網路名稱**：輸入此 Wi-Fi 連線的名稱。 終端使用者查看其裝置的可用 Wi-FI 連線時，會看到此名稱。 例如，輸入 **Contoso WiFi**。
 - **SSID**：輸入**服務組識別**元，這是裝置連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的 [網路名稱]  。
-- **自動連線**：選擇 [啟用]  可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用]  可防止裝置自動連線。
 - **隱藏的網路**：選擇 [啟用]  可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用]  可在裝置的可用網路清單中顯示此網路。
 - **Wi-Fi 類型**：選取向 Wi-Fi 網路驗證時要使用的安全性通訊協定。 選項包括：
 
@@ -52,7 +53,6 @@ ms.locfileid: "71733981"
 
 - **Wi-Fi 類型**：選擇 [企業]  。
 - **SSID**：輸入**服務組識別**元，這是裝置連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的 [網路名稱]  。
-- **自動連線**：選擇 [啟用]  可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用]  可防止裝置自動連線。
 - **隱藏的網路**：選擇 [啟用]  可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用]  可在裝置的可用網路清單中顯示此網路。
 - **EAP 類型**：選擇用來驗證安全無線連線的可延伸驗證通訊協定 (EAP) 類型。 選項包括：
 
@@ -103,14 +103,12 @@ ms.locfileid: "71733981"
 
 - **Wi-Fi 類型**：選擇 [基本]  。
 - **SSID**：輸入**服務組識別**元，這是裝置連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的 [網路名稱]  。
-- **自動連線**：選擇 [啟用]  可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用]  可防止裝置自動連線。
 - **隱藏的網路**：選擇 [啟用]  可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用]  可在裝置的可用網路清單中顯示此網路。
 
 ### <a name="enterprise"></a>企業
 
 - **Wi-Fi 類型**：選擇 [企業]  。
 - **SSID**：輸入**服務組識別**元，這是裝置連線之無線網路的實際名稱。 但當使用者選擇此連線時，只會看到您設定的 [網路名稱]  。
-- **自動連線**：選擇 [啟用]  可讓裝置在位於網路連線範圍內時自動連線到此網路。 選擇 [停用]  可防止裝置自動連線。
 - **隱藏的網路**：選擇 [啟用]  可在裝置的可用網路清單中隱藏此網路。 不會廣播 SSID。 選擇 [停用]  可在裝置的可用網路清單中顯示此網路。
 - **EAP 類型**：選擇用來驗證安全無線連線的可延伸驗證通訊協定 (EAP) 類型。 選項包括：
 

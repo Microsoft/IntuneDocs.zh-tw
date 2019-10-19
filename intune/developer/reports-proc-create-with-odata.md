@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733474"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490468"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 從 OData 摘要建立 Intune 報表
 
@@ -57,7 +58,7 @@ ms.locfileid: "71733474"
 2. 選取 [Microsoft Intune - 概觀]  刀鋒視窗右側 [其他工作]  下方的 [資料倉儲] 連結，以開啟 [Intune 資料倉儲]  窗格。
 3. 複製自訂摘要 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. 開啟 Power BI Desktop。
-5. 從功能表列中，**選取 [** 檔案]  > **取得資料** > **Odata**摘要。
+5. 從功能表列中，**選取 [** 檔案]  >  [**取得資料**]  >  [**Odata**摘要]。
 6. 將您從先前步驟複製的自訂摘要 URL 貼入 [ **OData**摘要] 視窗的 [URL] 方塊中。
 7. 選取 [基本]  。
 
@@ -93,9 +94,9 @@ ms.locfileid: "71733474"
 
 1. 在 [**視覺效果**] 窗格中，尋找並選取 [**樹狀圖**]。 **樹狀圖**圖表將會加入至報表畫布。
 2. 在 [**欄位**] 窗格中，尋找 [`devices`] 資料表。
-3. 展開 [`devices`] 資料表，然後選取 [`manufacturer` 個數據] 欄位。
-4. 將 [`manufacturer`] 資料欄位拖曳至 [報表畫布]，並將它放在 [**樹狀圖**] 圖表上。
-5. 將 [`deviceKey`] 資料欄位從 [`devices`] 資料表拖曳至 [**視覺效果**] 窗格，並將它放在 [在**此處新增資料欄位**] 方塊中的 [**值**] 區段底下。  
+3. 展開 [`devices`] 資料表，然後選取 [`manufacturer` 資料] 欄位。
+4. 將 [`manufacturer` 資料] 欄位拖曳至 [報表畫布]，然後放在 [**樹狀圖**] 圖表上。
+5. 將 [`deviceKey` 資料] 欄位從 [`devices`] 資料表拖曳至 [**視覺效果**] 窗格，並將它放在 [在**此處新增資料欄位**] 方塊中的 [**值**] 區段底下。  
 
 您現在已有視覺效果，其可顯示您組織中的裝置製造商分佈。
 
@@ -107,10 +108,10 @@ ms.locfileid: "71733474"
 
 1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果]  底下的**交叉分析篩選器圖示** (![具有資料模型和所支援關聯性的矩形式樹狀結構圖](./media/reports-proc-create-with-odata/reports-create-slicer.png))。 空白的交叉分析篩選**器**視覺效果將會出現在畫布上。
 2. 在 [**欄位**] 窗格中，尋找 [`ownerTypes`] 資料表。
-3. 展開 [`ownerTypes`] 資料表，然後選取 [`ownerTypeName` 個數據] 欄位。
-4. 將 [`onwerTypeName`] 資料欄位從 [`ownerTypes`] 資料表拖曳至 [**篩選**] 窗格，並將它放在 [在**此頁面**上標記**新增資料欄位**] 方塊中的 [篩選] 區段底下。  
+3. 展開 [`ownerTypes`] 資料表，然後選取 [`ownerTypeName` 資料] 欄位。
+4. 將 [`onwerTypeName` 資料] 欄位從 [`ownerTypes`] 資料表拖曳至 [**篩選**] 窗格，並將它放在 [在**此頁面**上標記**新增資料欄位**] 方塊中的 [篩選] 區段底下。  
 
-   在 `OwnerTypes` 資料表底下，有一個稱為 @no__t 1 的資料欄位，其中包含一個資料，即裝置是否為公司擁有或個人。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
+   在 [`OwnerTypes`] 資料表下，有一個稱為 `OwnerTypeKey`that 的資料欄位，其中包含一個資料，即裝置是否為公司擁有或個人。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
 
 ![含有篩選的矩形式樹狀結構圖 - 支援資料表之間的關聯性](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

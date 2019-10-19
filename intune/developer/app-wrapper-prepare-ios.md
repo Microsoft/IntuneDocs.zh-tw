@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733669"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490984"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -205,7 +206,7 @@ ms.locfileid: "71733669"
 |**-h**| 顯示可搭配 App Wrapping Tool 一起使用之命令列屬性的詳細用法資訊。 |
 |**-aa**|（選擇性） `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`，亦即 `login.windows.net/common` |
 |**-ac**|（選擇性） `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 這是 [用戶端識別碼] 欄位中的 guid 來自應用程式的 [註冊] 分頁中的清單。 |
-|**-ar**|（選擇性） `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 這是您的應用程式註冊中所設定的重新導向 URI。 一般來說，它會是 Microsoft Authenticator 應用程式在代理驗證之後將傳回的應用程式 URL 通訊協定。 |
+|**-ar**|（選擇性） `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 這是在您的應用程式註冊中設定的重新導向 URI。 一般來說，它會是 Microsoft Authenticator 應用程式在代理驗證之後將傳回的應用程式 URL 通訊協定。 |
 |**-v**| (選擇性) 將詳細訊息輸出到主控台。 建議使用此旗標來偵錯任何錯誤。 |
 |**-e**| (選擇性) 若使用此旗標，App Wrapping Tool 會書處理應用程式時移除缺少的權利。 如需詳細資料，請參閱[設定應用程式的權利](#setting-app-entitlements)。|
 |**-xe**| (選擇性) 列印應用程式 iOS 延伸模組的相關資訊，以及使用這些功能所需的權利。 如需詳細資料，請參閱[設定應用程式的權利](#setting-app-entitlements)。 |

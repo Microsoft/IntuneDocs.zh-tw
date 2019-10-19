@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 736b1d891207a19f281aa1127975de1a55889e8b
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 1670ddf9299d12312f09d188e4410d14ac40fbe7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197038"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506329"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>使用公司入口網站來註冊您的裝置  
 註冊您個人或公司擁有的 Android 裝置，以安全地存取公司電子郵件、應用程式和資料。 公司入口網站支援執行 Android 4.4 及更新版本的 Android 裝置 (包括 Samsung Knox)。  

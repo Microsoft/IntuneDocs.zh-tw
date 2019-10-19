@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ef61292086fb9781c2924ef31271e7f36d99ab2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735073"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495777"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 iOS 裝置的自訂設定
 
@@ -58,7 +59,7 @@ ms.locfileid: "71735073"
 - **自訂組態設定檔名稱**：輸入原則的名稱。 此名稱會在裝置上和 Intune 狀態中顯示。
 - **組態設定檔**：瀏覽至使用 Apple Configurator 或 Apple Profile Manager 所建立的組態設定檔。 您匯入的檔案會顯示在 [檔案內容]  區域中。
 
-  您也可以將裝置權杖新增至您的自訂設定檔。 裝置權杖是用來新增裝置特定資訊。 例如，若要顯示序號，請輸入 `{{serialnumber}}`。 在裝置上，文字顯示的內容類別似 `123456789ABC`，這對每個裝置而言是唯一的。 輸入變數時，請務必使用大括弧 `{{ }}`。 [應用程式設定權杖](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可以使用的變數清單。 您也可以使用 `deviceid` 或任何其他的裝置特定值。
+  您也可以將裝置權杖新增至您的自訂設定檔。 裝置權杖是用來新增裝置特定資訊。 例如，若要顯示序號，請輸入 `{{serialnumber}}`。 在裝置上，文字會顯示為與每個裝置唯一的 `123456789ABC`。 輸入變數時，請務必使用大括弧 `{{ }}`。 [應用程式設定權杖](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可以使用的變數清單。 您也可以使用 `deviceid` 或任何其他的裝置特定值。
 
   > [!NOTE]
   > 變數不會在 UI 中進行驗證，而且會區分大小寫。 因此，您可能會看到儲存之設定檔含有不正確的輸入。 例如，如果您輸入 `{{DeviceID}}` 而不是 `{{deviceid}}`，則會顯示常值字串而不是裝置的唯一識別碼。 請務必輸入正確的資訊。

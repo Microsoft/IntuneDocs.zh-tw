@@ -9,6 +9,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
@@ -18,20 +19,20 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59e33e75a38711e95631613e18ce1bd2fb459582
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 38862db505878099ae6a04bb152d56a11363d575
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068887"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507738"
 ---
 # <a name="update-your-windows-10-device"></a>更新您的 Windows 10 裝置
 
 您的工作單位或學校想要確保裝置存取資源時的安全性。 他們選擇的一種方式，是確定設定存取這些資源的裝置，一定會更新到最新狀態。 這在您的裝置上稱為「OS 組建」。 以下是更新 Windows 10 裝置的方式：
 
-1. 在 [開始] 中開啟 [設定]。
-2. 移至 [設定] > [系統] > [關於] > [OS 組建]。
-3. 如果 OS 組建低於貴公司的要求，請選取 [更新] 以更新至較新版的 Windows。
+1. 在 [開始]  中開啟 [設定]  。
+2. 移至 [設定]   > [系統]   > [關於]   > [OS 組建]  。
+3. 如果 OS 組建低於貴公司的要求，請選取 [更新]  以更新至較新版的 Windows。
 
 如果您的 Windows 版本比貴公司的支援新，您必須[嘗試一些不同的步驟來修正問題](your-windows-version-isnt-yet-supported.md)
 

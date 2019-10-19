@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546333"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506066"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安裝 Android 版公司入口網站應用程式
 
-「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 若要深入了解公司入口網站，並在 裝置管理其部分功能，請參閱[為什麼要註冊您的 Android 裝置](why-enroll-android-device.md)。  
+「公司入口網站」是提供您存取公司或學校應用程式、電子郵件及網際網路連線的應用程式。 此應用程式可協助您保護裝置安全，同時保護組織的資訊安全；例如，讓公司應用程式保持在最新狀態，或是確保您的裝置在一段時間後會自行鎖定。 若要深入瞭解公司入口網站的功能及其在裝置管理中的元件，請參閱[為什麼要註冊您的 Android 裝置](why-enroll-android-device.md)。  
 
 1. 點選 [首頁]   > [Play Store]  。
 

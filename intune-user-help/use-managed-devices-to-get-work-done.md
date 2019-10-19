@@ -9,6 +9,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012426"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501849"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 若要從您的裝置存取公司或學校資源，您必須使用 Intune 公司入口網站應用程式或 Microsoft Intune 應用程式來註冊您的裝置。 
@@ -71,7 +72,7 @@ Microsoft Intune 應用程式適用于公司擁有的 Android 裝置，且沒有
 
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>您可以使用 Microsoft Intune 應用程式註冊何種裝置？  
-您可以註冊公司所擁有的 Android 裝置, 您的組織已設定為與應用程式搭配使用。 應用程式支援 Android 6.0 和更新版本。 
+您可以註冊公司所擁有的 Android 裝置，您的組織已設定為與應用程式搭配使用。 應用程式支援 Android 6.0 和更新版本。 
 
 ## <a name="can-you-remove-a-device-from-the-company-portal"></a>您是否可以從公司入口網站移除裝置？
 您可以從公司入口網站移除或重設裝置。 [移除]  與 [重設]  不同。
@@ -81,9 +82,9 @@ Microsoft Intune 應用程式適用于公司擁有的 Android 裝置，且沒有
 在裝置重設期間，公司入口網站會嘗試將電腦或裝置重設為製造商的預設設定。 所有的工作或學校資料，以及所有個人資料都會從裝置中移除。 例如，如果您遺失您的裝置，重設會很有用。 您可以從公司入口網站網站遠端重設它。  
 
 ## <a name="can-you-remove-a-device-from-the-microsoft-intune-app"></a>您可以從 Microsoft Intune 應用程式移除裝置嗎？
-否, 您無法從 Microsoft Intune 應用程式中移除公司擁有的裝置。  
+否，您無法從 Microsoft Intune 應用程式中移除公司擁有的裝置。  
 
-## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>如果我在公司入口網站或 Microsoft Intune 應用程式中看不到我的裝置, 該怎麼辦？
+## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>如果我在公司入口網站或 Microsoft Intune 應用程式中看不到我的裝置，該怎麼辦？
 若要查看公司入口網站中的裝置，必須先進行註冊。 註冊之後，如果您仍然看不到所有的裝置，請嘗試透過公司入口網站同步或檢查存取。 您將不會看到您公司所擁有及管理的裝置。
 
 在 Microsoft Intune 應用程式中，您只會看到目前正在使用的裝置。 應用程式中不會顯示其他已註冊的裝置。  
@@ -96,7 +97,7 @@ Microsoft Intune 應用程式適用于公司擁有的 Android 裝置，且沒有
 - [修正 macOS 裝置常見的問題](troubleshoot-your-device-macos.md)
 - [修正 Windows 裝置常見的問題](troubleshoot-your-device-windows.md)
 
-您也可以聯繫到您的 IT 支援人員。 公司入口網站和 Microsoft Intune 應用程式提供列出連絡人資訊的說明及支援頁面, 以及回報問題的方式。 您組織的[公司入口網站網站](https://go.microsoft.com/fwlink/?linkid=2010980)也提供連絡人資訊。  
+您也可以聯繫到您的 IT 支援人員。 公司入口網站和 Microsoft Intune 應用程式提供列出連絡人資訊的說明及支援頁面，以及回報問題的方式。 您組織的[公司入口網站網站](https://go.microsoft.com/fwlink/?linkid=2010980)也提供連絡人資訊。  
 
 ## <a name="next-steps"></a>後續步驟  
 

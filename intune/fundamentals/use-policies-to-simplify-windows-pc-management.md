@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccedb68a7226c0d026519cf90c7b278e29678929
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f9990d24c97ea4e8b6d0c37fb8225a9df0e47cb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735489"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504833"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用原則來簡化 Windows 電腦管理
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要在 Windows 桌面執行 Intune 軟體用戶端，將 Windows 桌面作為電腦管理，您只能使用 Intune 管理主控台原則 [電腦管理]  下的原則。 管理主控台中列出的所有其他原則僅供行動裝置使用。 使用 [電腦管理]  原則，您可以設定 Microsoft Intune Center 的設定、控制電腦的更新，以及設定電腦的 Windows 防火牆。
 

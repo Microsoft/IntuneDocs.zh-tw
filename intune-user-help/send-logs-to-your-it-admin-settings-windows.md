@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
@@ -18,20 +19,20 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9e88fa55391ace4f8a86416412489ca055083503
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849855"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502044"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>針對 Windows 10 將記錄從設定應用程式傳送給公司支援人員
 
-使用 [設定] 應用程式為 Windows 10 公司入口網站進行疑難排解。 如果您在 Windows 10 裝置上使用應用程式時遇到問題，可以傳送電子郵件給支援小組來尋求協助。 發生在 [公司入口網站] 應用程式中的事件和錯誤會儲存在您裝置上名為「診斷記錄」的特殊文件中。 其中可能包含關於錯誤的其他見解，匯出時會對支援小組很有用。
+使用 [設定] 應用程式為 Windows 10 公司入口網站進行疑難排解。 如果您在 Windows 10 裝置上使用應用程式時遇到問題，可以傳送電子郵件給支援小組來尋求協助。 發生在 [公司入口網站] 應用程式中的事件和錯誤會儲存在您裝置上名為「診斷記錄」  的特殊文件中。 其中可能包含關於錯誤的其他見解，匯出時會對支援小組很有用。
 
-1. 若要開啟 [設定] 應用程式，請移至 [開始] 功能表 > [設定]。 您也可以在搜尋列中搜尋「設定」。
-2. 移至 [帳戶] > [存取公司或學校資源]。
-3. 選取 [匯出您的管理記錄檔]。
+1. 若要開啟 [設定]  應用程式，請移至 [開始]  功能表 > [設定]  。 您也可以在搜尋列中搜尋「設定」  。
+2. 移至 [帳戶]   > [存取公司或學校資源]  。
+3. 選取 [匯出您的管理記錄檔]  。
 
    ![「存取公司或學校資源畫面」，其中 [相關設定] 標題下顯示 [匯出] 選項。](./media/w10-export-logs.png)
 

@@ -9,24 +9,25 @@ manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8005912cdb4a5898eccf7c95500ff7bbdbe34b3c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6342ed23f67c37c2f5084e58594294d826a28e40
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734566"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506726"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>將執行 Windows Holographic 的裝置升級至 Windows Holographic for Business
 
 Microsoft Intune 包含許多設定，可協助管理和保護您的裝置。 本文列出並描述可將 Windows 全像攝影版裝置升級至 Windows Holographic for Business 的設定。 這些設定會在 Intune 中推送或部署到裝置的升級組態設定檔中加以建立。
 
-作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來升級您的 Windows 全像攝影版裝置。 至於 Microsoft HoloLens，您可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)。
+作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來升級您的 Windows 全像攝影版裝置。 至於 Microsoft HoloLens，您可購買 Commercial Suite，以取得升級所需的授權。 如需詳細資訊，請參閱[解除鎖定 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens1-upgrade-enterprise)。
 
 如需此功能的詳細資訊，請參閱[升級 Windows 10 版本或啟用 S 模式](../edition-upgrade-configure-windows-10.md)。
 

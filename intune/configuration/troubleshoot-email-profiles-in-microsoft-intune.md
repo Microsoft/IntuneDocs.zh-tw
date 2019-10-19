@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3a5a5aa4d30dcac0f954057f0cc51ffde6a950
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734293"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506574"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中有關電子郵件設定檔的常見問題和解決方式
 
@@ -65,7 +66,7 @@ Samsung KNOX 不會使用主機名稱來識別設定檔。 建議您不要建立
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 選取 [裝置設定]   > [設定檔]  。
-3. 選取您的電子郵件設定**檔 > 內容** > **設定**。
+3. 選取您的電子郵件設定檔 >**屬性**  > **設定**。
 4. 將 [**允許從協力廠商應用程式傳送電子郵件**] 設定設為 [**啟用**]。
 
 ### <a name="configuration-manager-hybrid"></a>混合式 Configuration Manager

@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -18,18 +18,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2544ddf5d925d7dc62438a9fcc8c5e4e6b60828
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5eb532f830d20d9e4ff6c323fd3b7788bd3a11b2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839119"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505881"
 ---
 # <a name="get-help-and-support-in-company-portal-for-windows-10"></a>在 Windows 10 公司入口網站中取得說明及支援
 
-瀏覽公司入口網站的 [說明及支援] 頁面以開始為您的應用程式和存取問題進行疑難排解。   
+瀏覽公司入口網站的 [說明及支援]  頁面以開始為您的應用程式和存取問題進行疑難排解。   
 
-您可以從 [説明及支援]：  
+您可以從 [説明及支援]  ：  
 
 * 取得協助以解決應用程式問題
 * 檢視技術服務人員的連絡人詳細資料
@@ -40,7 +40,7 @@ ms.locfileid: "55839119"
 
 ## <a name="get-help-with-app-problems"></a>取得協助以解決應用程式問題
 
-以電子郵件將您在公司入口網站所遇到任何問題之相關資訊傳送給您的組織。 選取 [取得說明] 以開始描述問題。 組織將會使用您提供的資訊來為問題進行協難排解。 如果在判斷問題方面需要更多協助，您的組織將會使用診斷識別碼 (自動隨附於電子郵件) 來連絡 Microsoft 支援小組。  
+以電子郵件將您在公司入口網站所遇到任何問題之相關資訊傳送給您的組織。 選取 [取得說明]  以開始描述問題。 組織將會使用您提供的資訊來為問題進行協難排解。 如果在判斷問題方面需要更多協助，您的組織將會使用診斷識別碼 (自動隨附於電子郵件) 來連絡 Microsoft 支援小組。  
 
 如需逐步程序，請參閱[從 Windows 10 公司入口網站應用程式傳送記錄給公司支援人員](send-logs-to-your-it-admin-cp-windows.md)。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "55839119"
 我們匯集了一份常見問題集清單，以協助解答您的註冊和存取問題或為其進行疑難排解。 在 Microsoft.docs.com 上選取任何主題來檢視其說明文章。  
 
 ## <a name="report-app-problems-to-microsoft"></a>向 Microsoft 回報應用程式問題  
-當您選取 [向 Microsoft 回報問題] 時，您將前往 [傳送意見反應] 頁面。 您可以從這裡：
+當您選取 [向 Microsoft 回報問題]  時，您將前往 [傳送意見反應]  頁面。 您可以從這裡：
 
 * 回報您在應用程式中看到的問題或 Bug  
 * 傳送您對應用程式的建議或想法  
