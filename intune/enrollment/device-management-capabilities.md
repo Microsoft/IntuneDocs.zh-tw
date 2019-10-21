@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723108"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306610"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 的已註冊裝置管理功能
 
@@ -43,6 +43,7 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 |設定原則<br><br>自訂原則| 可讓您管理組織中行動裝置上的許多設定及功能。 例如，您可以要求密碼、限制嘗試失敗次數、限制螢幕鎖定之前的時間、設定密碼到期，以及禁止先前用過的密碼。 您也可以控制使用的硬體和軟體功能，例如裝置相機或網頁瀏覽器。<br><br>當設定原則未包含您需要的設定時，請使用自訂原則。 針對 iOS 裝置，您可以匯入您從 Apple 設定程式工具匯出的設定。 針對其他裝置，您可以使用開放行動聯盟的統一資源識別項 (OMA URI) 設定來設定裝置上的設定與功能。|[使用 Microsoft Intune 原則管理裝置的設定及功能](../protect/device-compliance-get-started.md)|
 |遠端抹除、遠端鎖定和密碼重設|當裝置遺失或遭竊時，可以清除機密資料。 例如，您可以遠端鎖定裝置、將它還原為原廠設定，或只抹除公司資料。<br><br>您可以在使用者失去裝置存取權的情況下重設密碼、鎖定遺失或遭竊的裝置，甚至抹除遺失或遭竊裝置上的資料。|透過[遠端鎖定](../remote-actions/device-remote-lock.md)及[密碼重設](../remote-actions/device-passcode-reset.md)來協助保護您的裝置|
 |資訊站模式|可讓您鎖定行動裝置的某些功能，例如螢幕擷取畫面及電源開關。 也可讓您限制裝置只能執行您指定的單一應用程式。 |[Microsoft Intune 的 iOS 設定原則設定](../configuration/device-restrictions-ios.md)|
+|Autopilot 重設|將工作傳送到裝置以從遠端啟動重設程序，從而避免 IT 人員或其他系統管理員需要造訪每部電腦來啟動該程序的需求。 在裝置上使用 Autopilot 重設時，將會移除裝置的主要使用者。 在重設後登入的下一個使用者將被設定為主要使用者。|[遠端 Windows Autopilot 重設](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>應用程式管理
 

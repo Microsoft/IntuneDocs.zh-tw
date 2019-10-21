@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830568"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349969"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830568"
 
 Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 應用程式是主從式應用程式。 伺服器提供了 Web 應用程式，其中包括 UI、內容和功能。 此外，現代的 Web 裝載平台通常具有安全性、負載平衡以及其他優勢。 Web 應用程式會在網路上進行個別維護。 您可以使用 Microsoft Intune 指向此應用程式類型。 您也可以指派哪些使用者群組可以存取這個應用程式。 
 
-在您可以管理並指派應用程式給使用者之前，請將該應用程式新增至 Intune。 Intune 會在使用者的裝置主畫面上建立 Web 應用程式捷徑。
+在您可以管理並指派應用程式給使用者之前，請將該應用程式新增至 Intune。 
+
+Intune 會在使用者的裝置上建立 Web 應用程式捷徑。 針對 iOS 裝置，會新增 Web 應用程式的捷徑到主畫面。 針對 Android 裝置，會新增 Web 應用程式的捷徑到 Intune 公司入口網站應用程式小工具，而且使用者必須手動釘選該小工具。 針對 Windows 裝置，Web 應用程式的捷徑會放在 [開始] 功能表。
 
 > [!Note]
 > Android 工作設定檔裝置不支援 Web 應用程式。 使用者的裝置上必須安裝瀏覽器，以啟動網頁。

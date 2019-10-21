@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999297"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251572"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用憑證進行驗證  
 
@@ -51,7 +51,8 @@ ms.locfileid: "71999297"
 | 平台              | 受信任的憑證設定檔 | PKCS 憑證設定檔 | SCEP 憑證設定檔 | PKCS 匯入的憑證設定檔  |
 |--|--|--|--|---|
 | Android 裝置管理員 | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png)|  ![支援](./media/certificates-configure/green-check.png) |
-| Android 企業 <br> - 裝置擁有者   | ![支援](./media/certificates-configure/green-check.png) |   |  |   |
+| Android 企業 <br> - 完全受控 (裝置擁有者)   | ![支援](./media/certificates-configure/green-check.png) |   | ![支援](./media/certificates-configure/green-check.png) |   |
+| Android 企業 <br> - 專用 (裝置擁有者)   |  |   |  |   |
 | Android 企業 <br> - 工作設定檔    | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) |
 | iOS                   | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) |
 | macOS                 | ![支援](./media/certificates-configure/green-check.png) |   |![支援](./media/certificates-configure/green-check.png)|![支援](./media/certificates-configure/green-check.png)|

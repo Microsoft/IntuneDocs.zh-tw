@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726371"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379825"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -56,7 +56,7 @@ iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 1
 6. 在 [指派]  區段中，選擇 [使用者和群組]  。 
 7. 在 [使用者和群組]  中，選擇 [選取使用者或群組]  ，並核取 [使用者和群組]  。 接著，選取將接收這個政策的使用者和/或群組，然後選擇 [完成]  。
 8. 在 [指派]  區段中，選擇 [雲端應用程式]  。
-9. 在 [雲端應用程式]  的 [包含]  索引標籤上，選擇 [選取應用程式]  ，並選擇 [選取]   > [Microsoft Intune 註冊]  ，然後選擇 [完成]  。
+9. 在 [雲端應用程式]  的 [包含]  索引標籤上，選擇 [選取應用程式]  ，並選擇 [選取]   > [Microsoft Intune 註冊]  ，然後選擇 [完成]  。 藉由選擇 [Microsoft Intune 註冊]  ，條件式存取 MFA 只會套用至裝置的註冊 (一次性 MFA 提示)。
 10. 在 [指派]  區段的 [條件]  中，您不需要設定 MFA 的任何設定。
 11. 在 [存取控制]  區段中，選擇 [授與]  。
 12. 在 [授與]  中，選擇 [授與存取權]  ，然後選取 [需要多重要素驗證]  。 請不要選取 [裝置需要標記為合規]  ，因為在註冊之前無法評估裝置的合規性。 然後選擇 [選取]  。

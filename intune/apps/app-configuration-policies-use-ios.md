@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725695"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350082"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -63,7 +63,7 @@ ms.locfileid: "71725695"
     - **使用設定設計工具**
     - **輸入 XML 資料**<br><br>
     如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 XML 資料](#enter-xml-data)。 
-10. 新增設定資訊之後，請選擇 [確定]  ，然後選擇 [新增]  新增設定原則。 即會顯示設定原則的概觀窗格。
+10. 新增設定資訊之後，選擇 [確定]  ，然後選擇 [新增]  來新增設定原則。 即會顯示設定原則的概觀窗格。
 11. 選取 [指派]  來顯示包含與排除選項。 
 
     ![[原則指派] [包含] 索引標籤的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy01.png)
@@ -108,7 +108,7 @@ Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft 
 | **值** | <ul><li>**啟用**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |。
 
    > [!NOTE]
-   > 只允許已設定的組織帳戶具有多重身分識別時，您必須使用 iOS 版 OneDrive 10.34 或更新版本和 iOS 版 Outlook 2.99.0 或更新版本，且必須使用 [Intune 應用程式保護原則](app-protection-policy.md)將應用程式設為目標。
+   > 只允許搭配多身分識別使用已設定的組織帳戶時，您必須使用 iOS 版 OneDrive 10.34 或更新版本、iOS 版Outlook 2.99.0 或更新版本或 iOS 版 Edge 44.8.7 或更新版本，且必須使用 [Intune 應用程式保護原則](app-protection-policy.md)將應用程式設為目標。
 
 ## <a name="enter-xml-data"></a>輸入 XML 資料
 
@@ -181,7 +181,7 @@ Intune 支援屬性清單中的下列資料類型：
 DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App Store 版本不相容。 不過，您可以使用下列步驟，將公司入口網站應用程式設定成支援 iOS DEP 裝置。
 
 1. 在 Azure 入口網站上的 Intune 中：
-    - 如有必要，請前往 [Intune]   > [用戶端應用程式]   > [應用程式]   > [新增]  來新增 Intune 公司入口網站。
+    - 如有必要，請移至 [Intune]   > [用戶端應用程式]   > [應用程式]   > [新增]  來新增 Intune 公司入口網站。
     - 移至 [用戶端應用程式]   > [應用程式設定原則]  ，以建立公司入口網站應用程式的應用程式設定原則。
 2. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 System Center Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
 
@@ -197,15 +197,15 @@ DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App
     </dict>
     ```
 
-3. 將公司入口網站部署至應用程式設定原則目標已設定為所需群組的裝置。 請務必只將原則部署到已向 DEP 註冊的裝置群組。
-4. 告訴使用者在公司入口網站應用程式自動安裝時登入。
+3. 使用目標為所需群組的應用程式設定原則，來將公司入口網站部署到裝置。 確定只將原則部署到已向 DEP 註冊的裝置群組。
+4. 告訴終端使用者在自動安裝公司入口網站應用程式時登入。
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>監視每個裝置的 iOS 應用程式設定狀態 
 一旦指派設定原則，您可以監視每個受控裝置的 iOS 應用程式設定狀態。 從 Azure 入口網站的 [Microsoft Intune]  中，選取 [裝置]   > [所有裝置]  。 從受控裝置清單中，選取特定的裝置以顯示裝置的刀鋒視窗。 在裝置的刀鋒視窗中，選取 [應用程式設定]  。  
 
 ## <a name="additional-information"></a>其他資訊
 
-- [部署 iOS 和 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(部分機器翻譯\)
+- [部署 iOS 與 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(部分機器翻譯\)
 
 ## <a name="next-steps"></a>後續步驟
 

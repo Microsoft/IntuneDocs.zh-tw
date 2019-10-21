@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723160"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350052"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性  
 
@@ -135,7 +135,8 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 2. 選取 [裝置合規性]   > [原則]   > [建立原則]  。
 3. 輸入 [名稱]  和 [描述]  。
 4. 在 [平台]  中，選取 [Windows 10 及更新版本]  。
-5. 在 [Microsoft Defender ATP]  設定中，將 [裝置必須等於或低於電腦風險分數]  設定為您偏好的層級。 
+5. 在 [設定]  底下，選取 [Microsoft Defender ATP]  。
+6. 將 [要求裝置不高於電腦風險分數]  設定為您偏好的層級。 
    
    威脅等級分類是[由 Windows Defender ATP 所決定的](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue) \(部分機器翻譯\)。
 
@@ -145,7 +146,7 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
    - **高**：這個層級最不安全，且會允許所有威脅層級。 因此具有高、中或低威脅層級的裝置都會被評估為符合規範。
 
 6. 選取 [確定]  ，然後選取 [建立]  以儲存您的變更 (並建立原則)。  
-7. [指派裝置合規性政策](create-compliance-policy.md#assign-user-groups)給適用的群組。
+7. [指派裝置合規性政策](create-compliance-policy.md#assign-the-policy)給適用的群組。
 
 
 

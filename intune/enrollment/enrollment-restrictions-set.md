@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeb88f3a69db160dca61bf3038c5a7d0235f2b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722458"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379801"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -48,7 +48,7 @@ ms.locfileid: "71722458"
 - iOS、Android 裝置管理員、Android Enterprise 工作設定檔、Windows 和 Windows Mobile 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
   - 最低版本。
   - 最高版本。
-- 限制個人擁有的裝置 (僅限 iOS、Android 裝置管理員、Android Enterprise 工作設定檔、macOS、Windows 與 Windows Mobile)。
+- 限制[個人擁有的裝置](device-enrollment.md#bring-your-own-device) (僅限 iOS、Android 裝置管理員、Android Enterprise 工作設定檔、macOS、Windows 與 Windows Mobile)。
 
 ## <a name="default-restrictions"></a>預設限制
 
@@ -68,9 +68,9 @@ ms.locfileid: "71722458"
      支援的版本格式包含：
     - Android 裝置管理員與 Android Enterprise 工作設定檔支援 major.minor.rev.build。
     - iOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
-    - Windows 支援 major.minor.rev.build，僅限 Windows 10。
+    - Windows 支援 major.minor.build.rev，僅限 Windows 10。
     > [!Note]
-    > Windows 10 不會在註冊期間提供組建編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
+    > Windows 10 不會在註冊期間提供修訂編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
 
 8. 在 [個人所擁有]  底下，針對您想要允許作為個人擁有裝置的平台，選擇 [允許]  。
 9. 選擇 [下一步]  以移至 [指派]  頁面。
@@ -151,6 +151,12 @@ Intune 會將下列註冊標示為公司。 但是，因為它們不會為 Intun
 - [僅限 MDM 註冊]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)選項，來自 Windows 設定。
 
 \* 如果透過 Autopilot 註冊，這些裝置將不會遭到封鎖。
+
+
+## <a name="blocking-personal-ios-devices"></a>封鎖個人 iOS 裝置
+根據預設，Intune 會將 iOS 裝置分類為個人擁有。 若要分類為公司所有，iOS 裝置必須符合下列其中一項條件：
+- 已使用序號或 IMEI 註冊。
+- 使用自動裝置註冊 (先前為裝置註冊計劃) 註冊
 
 
 ## <a name="change-enrollment-restriction-priority"></a>變更註冊限制優先順序

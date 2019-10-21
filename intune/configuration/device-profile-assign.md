@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724109"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237218"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724109"
 您可以建立設定檔，而且它會包含您所輸入的所有設定。 下一個步驟是將設定檔部署或「指派」至 Azure Active Directory (Azure AD) 使用者或裝置群組。 獲指派時，使用者和裝置會收到您的設定檔，並套用您所輸入的設定。
 
 本文說明如何指派設定檔，並包含有關在設定檔上使用範圍標籤的一些資訊。
+
+> [!NOTE]  
+> 當原則已移除或不再指派給裝置時，設定可能會保留現有的值。 此設定不會還原為預設值。 若要將設定變更為不同的值，請建立新的原則並加以指派。
 
 ## <a name="assign-a-device-profile"></a>指派裝置設定檔
 
@@ -53,17 +56,17 @@ ms.locfileid: "71724109"
 
 ## <a name="use-scope-tags-or-applicability-rules"></a>使用範圍標籤或適用性規則
 
-當您建立或更新設定檔時，也可以將範圍標籤和適用性規則新增到設定檔。
+當您建立或更新設定檔時，也可以將範圍標籤與適用性規則新增到設定檔。
 
 **範圍標籤**是將政策指派並篩選到特定群組 (例如人力資源或所有 US-NC 員工) 的絕佳方式。 如需詳細資訊，請參閱[針對分散式 IT 使用 RBAC 和範圍標籤](../fundamentals/scope-tags.md)。
 
-在 Windows 10 裝置上，您可以新增**適用性規則**，讓設定檔僅適用於特定 OS 版本或特定 Windows 版本。 [適用性規則](device-profile-create.md#applicability-rules)有更多資訊。
+在 Windows 10 裝置上，您可以新增**適用性規則**，讓設定檔僅適用於特定 OS 版本或特定 Windows 版本。 [適用性規則](device-profile-create.md#applicability-rules)提供更多資訊。
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>從設定檔指派排除群組
 
 Intune 裝置組態設定檔可讓您從原則指派排除群組。
 
-Intune 不會查看使用者對裝置群組關聯性。 包含使用者群組的同時排除裝置群組可能不會獲得您預期的結果。 在使用者群組對使用者群組和裝置群組對裝置群組案例中，排除的優先順序高於包含。
+Intune 不會查看使用者對裝置群組關聯性。 包含使用者群組的同時排除裝置群組可能不會獲得您預期的結果。 在使用者群組對使用者群組與裝置群組對裝置群組案例中，排除的優先順序高於包含。
 
 例如，您可以將裝置設定檔指派給 [所有公司使用者]  使用者群組，但排除 [資深管理層]  使用者群組中的成員。 由於這兩個群組都是使用者群組，因此，會從原則中排除 [資深管理層]  的所有成員，即使他們是 [所有公司使用者]  包含群組的成員也一樣。
 

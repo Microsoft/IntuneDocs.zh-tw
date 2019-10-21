@@ -1,5 +1,5 @@
 ---
-title: 使用受平台支援的加密方法，在 Microsoft Intune 中加密裝置
+title: 使用支援的平台加密方法來加密裝置
 titleSuffix: Microsoft Intune
 description: 使用內建的加密方法 (例如 BitLocker 或 FileVault) 來加密裝置，並從 Intune 入口網站管理這些加密裝置的修復金鑰。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721392"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306846"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密  
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721262"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306798"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教學課程：保護非受控裝置上的 Exchange Online 電子郵件
 
@@ -113,7 +113,7 @@ ms.locfileid: "71721262"
    3. 取消選取其他核取方塊。  
    4. 選取 [完成]   > [完成]  返回 [新增原則] 窗格。  
 
-   ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![選取行動應用程式與用戶端](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. 在 [存取控制]  底下，選取 [授與]  。 
      
@@ -123,11 +123,11 @@ ms.locfileid: "71721262"
    4. 在 [針對多個控制項]  底下，選取 [需要所有選取的控制項]  。 此設定可確保選取的兩項需求會在裝置嘗試存取電子郵件時強制執行。
    5. 選擇 [選取]  。
      
-   ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![選取控制項](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. 在 [啟用原則]  底下，選取 [開啟]  ，然後選取 [建立]  。  
      
-    ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![建立原則](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 隨即會建立適用於新式驗證用戶端的條件式存取原則。 現在，您可以建立適用於 Exchange Active Sync 用戶端的原則。
 
@@ -153,14 +153,14 @@ ms.locfileid: "71721262"
    4. 清除所有其他核取方塊。  
    5. 選取 [完成]  ，然後再次選取 [完成]  。  
     
-   ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![套用到支援的平台](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. 在 [存取控制]  底下，選取 [授與]  。  
    1. 在 [授與]  窗格中，選取 [授與存取權]  。  
    2. 選取 [需要經過核准的用戶端應用程式]  。 清除所有其他核取方塊。  
    3. 選擇 [選取]  。  
      
-   ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![需要經過核准的用戶端應用程式](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. 在 [啟用原則]  底下，選取 [開啟]  。  
 

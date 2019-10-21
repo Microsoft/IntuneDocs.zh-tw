@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999364"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379856"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -80,7 +80,7 @@ Intune 可讓您管理員工的裝置與應用程式，以及員工存取公司�
 
 
 ## <a name="bring-your-own-device"></a>攜帶您自己的裝置
-攜帶您自己的裝置 (BYOD) 包括個人手機、平板電腦及電腦。 使用者必須安裝並執行公司入口網站應用程式以註冊 BYOD。 此程式可讓使用者存取公司資源，例如電子郵件。
+攜帶您自己的裝置 (BYOD) 包括個人擁有的手機、平板電腦及電腦。 使用者必須安裝並執行公司入口網站應用程式以註冊 BYOD。 此程式可讓使用者存取公司資源，例如電子郵件。
 
 ## <a name="corporate-owned-device"></a>公司擁有的裝置
 [公司擁有的裝置 (COD)](corporate-identifiers-add.md) 包括手機、平板電腦及電腦，由組織擁有並分配給員工。 COD 註冊支援自動註冊、共用裝置或授權前註冊需求等案例。 常見的 COD 註冊方式是由系統管理員或主管使用裝置註冊管理員 (DEM)。 iOS 裝置可直接透過 Apple 提供的裝置註冊計劃 (DEP) 工具進行註冊。 具備 IMEI 編號的裝置也可被識別並標記為公司所擁有。

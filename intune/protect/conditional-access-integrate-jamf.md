@@ -1,7 +1,7 @@
 ---
 title: 將 Jamf Pro 與 Microsoft Intune 整合以符合規範
 titleSuffix: Microsoft Intune
-description: 搭配 Azure Active Directory 條件式存取使用 Microsoft Intune 合規性政策，來協助保護受 Jamf 管理的裝置。
+description: 搭配 Azure Active Directory 條件式存取使用 Microsoft Intune 合規性政策，來協助整合及保護 Jamf 受控裝置。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7a63f3ff1e2936eff0961d4a9b368b0289e2b65
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 09566e314f801c0de3f371384126cf672403b6a3
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71813960"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306635"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 

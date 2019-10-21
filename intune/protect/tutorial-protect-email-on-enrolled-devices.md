@@ -1,5 +1,5 @@
 ---
-title: 教學課程 - 保護 Intune 受控裝置上的 Exchange Online 電子郵件
+title: 教學課程：保護受控裝置上的 Exchange Online 電子郵件
 titleSuffix: Microsoft Intune
 description: 了解如何使用 iOS Intune 合規性政策和 Azure AD 條件式存取來要求受控裝置和 Outlook 應用程式，以保護 Exchange Online。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727931"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306878"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程：保護受控裝置上的 Exchange Online 電子郵件
 了解如何搭配條件式存取使用裝置合規性政策，以確保 iOS 裝置只能在受到 Intune 管理並使用核准的電子郵件應用程式時，才能存取 Exchange Online 電子郵件。 
@@ -95,7 +95,7 @@ ms.locfileid: "71727931"
     2. 在 [包含]  索引標籤中，選取 [任何裝置]  ，然後選取 [完成]  。 
     3. 再次選取 [完成]  。
    
-    ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![包含任何裝置](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. 在 [指派]  底下，選取 [條件]   > [用戶端應用程式]  。
      
@@ -103,7 +103,7 @@ ms.locfileid: "71727931"
     2. 針對本教學課程，選取 [行動裝置 App 及桌面用戶端]  與 [新式驗證用戶端]  (指像 iOS 版 Outlook 和 Android 版 Outlook 這樣的 App)。 清除所有其他核取方塊。
     3. 選取 [完成]  ，然後再次選取 [完成]  。
     
-    ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![選取應用程式和用戶端](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. 在 [存取控制]  底下，選取 [授與]  。 
      
@@ -113,11 +113,11 @@ ms.locfileid: "71727931"
     4. 在 [針對多個控制項]  底下，選取 [需要所有選取的控制項]  。 此設定可確保選取的兩項需求會在裝置嘗試存取電子郵件時強制執行。
     5. 選擇 [選取]  。
      
-    ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![選取控制項](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. 在 [啟用原則]  底下，選取 [開啟]  。
      
-    ![選取 Office 365 Exchange Online 應用程式](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![啟用原則](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. 選取 [建立]  。
 

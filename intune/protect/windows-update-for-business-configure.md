@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728087"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314711"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 使用 Intune 定義可指定 Windows 即服務如何及何時更新您 Windows 10 裝置的更新通道。 更新通道是您指派給裝置群組的原則。 藉由使用更新響鈴，您可以建立可反映您業務需求的更新策略。 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
@@ -92,7 +90,7 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 ### <a name="delete"></a>刪除  
 選取 [刪除]  可停止強制執行所選 Windows 10 更新通道的設定。 刪除通道會從 Intune 移除其設定，讓 Intune 不再適用，並強制執行這些設定。  
 
-從 Intune 刪除通道不會修改已獲指派更新通道之裝置上的設定。  相反地，裝置會保留其目前的設定。 這是因為裝置不會維護先前設定的歷史記錄，而且裝置可能會從仍然作用中的其他更新通道接收設定。  
+從 Intune 刪除通道不會修改已獲指派更新通道之裝置上的設定。  相反地，裝置會保留其目前的設定。 裝置不會維持它們先前曾保存之設定的歷史記錄。 裝置也可以從維持作用中的額外更新通道接收設定。  
 
 #### <a name="to-delete-a-ring"></a>若要刪除通道  
 1. 檢視更新通道的 [概觀] 頁面時，選取 [刪除]  。  
@@ -129,6 +127,12 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 
 ### <a name="uninstall"></a>解除安裝  
 Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫停的更新通道，解除安裝 (回復) 最新的*功能*更新或最新的*品質*更新。 解除安裝一個類型之後，您可以再解除安裝其他類型。 Intune 不支援或管理使用者解除安裝更新的能力。  
+
+> [!IMPORTANT] 
+> 當您使用 [解除安裝]  選項時，Intune 會立即將解除安裝要求傳遞到裝置。 
+> - Windows 裝置會在收到 Intune 原則中的變更時開始移除更新。 更新移除不限於維護排程，即使它們已設定為更新通道的一部分時也可以執行。 
+> - 若更新移除要求必須重新啟動裝置，裝置會重新啟動，而不提供裝置使用者延遲選項。
+
 
 若要成功解除安裝：  
 - 裝置必須執行 Windows 10 的 2018 年 4 月更新 (1803 版) 或更新版本。  

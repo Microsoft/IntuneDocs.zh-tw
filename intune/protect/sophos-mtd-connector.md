@@ -1,7 +1,7 @@
 ---
-title: 設定 Sophos Mobile 與 Intune 的整合
+title: 搭配 Intune 使用 Sophos Mobile
 titleSuffix: Intune on Azure
-description: 如何設定 Sophos Mobile 解決方案與 Microsoft Intune 的整合，來控制行動裝置對公司資源的存取。
+description: 如何使用 Sophos Mobile 解決方案與 Microsoft Intune 的整合，來控制行動裝置對公司資源的存取。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9bacc784b9d9498196186b1fac0ef948789832b5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721912"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306828"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense 與 Intune 的連接器
 您可以根據由 Sophos Mobile (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Sophos Mobile 應用程式之裝置所收集的遙測來評定的。

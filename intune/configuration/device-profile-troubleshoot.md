@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724083"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349995"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>對於 Microsoft Intune 中的裝置原則和設定檔的常見疑問、問題和解決方式
 
@@ -45,11 +45,11 @@ ms.locfileid: "71724083"
 - 再次測試連線到相同的 Wi-Fi 端點 (如第一個步驟中所述)。
 - 推出較大的群組，最後是您組織中所有預期的使用者。 
 
-## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>指派原則、設定檔或應用程式之後，裝置需要多久時間才能取得這些原則、設定檔或應用程式？
+## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>為裝置指派原則、設定檔或應用程式之後，它們需要多久時間才能取得這些原則、設定檔或應用程式？
 
-Intune 會通知裝置使用 Intune 服務簽入。 通知時間會有所不同，包括立即到最多幾個小時。 這些通知時間也會因平台而異。
+Intune 會通知裝置使用 Intune 服務簽入。 通知時間各不相同，包括立即到最多數小時。 這些通知時間也會因平台而異。
 
-如果在第一個通知之後，裝置未簽入以取得原則或設定檔，Intune 還會另外嘗試三次。 離線裝置 (例如已關閉或未連線到網路) 可能不會收到通知。 在這種情況下，裝置會在其下次排定簽入 Intune 服務的時間取得原則或設定檔，**估計**為：
+如果裝置未在第一個通知之後簽入以取得原則或設定檔，Intune 還會另外嘗試三次。 離線裝置 (例如已關閉或未連線到網路) 可能不會收到通知。 在這種情況下，裝置會在其下一次使用 Intune 服務簽入時取得原則或設定檔，**估計**為：
 
 | 平台 | 重新整理週期|
 | --- | --- |
@@ -60,30 +60,30 @@ Intune 會通知裝置使用 Intune 服務簽入。 通知時間會有所不同�
 | Windows Phone | 大約每 8 小時 |
 | Windows 8.1 | 大約每 8 小時 |
 
-如果裝置是最近註冊的，則合規性和設定簽入的執行頻率會比較高，**估計**為：
+如果裝置是最近註冊的，則合規性和設定簽入的執行頻率比較高，**估計**為：
 
 | 平台 | 頻率 |
 | --- | --- |
 | iOS | 前 1 小時每 15 分鐘，之後大約每 8 小時 |  
 | macOS | 前 1 小時每 15 分鐘，之後大約每 8 小時 | 
 | Android | 前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
-| 註冊為裝置的 Windows 10 電腦 | 前 30 分鐘每 3 分鐘，之後大約每 8 小時 | 
+| 註冊為裝置的 Windows 10 電腦 | 前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
 | Windows Phone | 前 15 分鐘每 5 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
 | Windows 8.1 | 前 15 分鐘每 5 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
 
-使用者可以在任何時間開啟公司入口網站應用程式並同步處理裝置，以立即檢查是否有原則或設定檔更新。
+使用者隨時都可開啟公司入口網站應用程式中的 [設定]   > [同步處理]  ，以立即檢查是否有原則或設定檔更新。
 
 若為無使用者親和性的裝置，註冊後立即進行的同步處理頻率可以從數小時到一或多天不等。 Intune 會以不同的時間間隔傳送要求，讓裝置簽入 Intune。 不過，仍會以裝置簽入為準。 一開始註冊之後，裝置完成簽入所需的時間是無法預測的。 它也取決於裝置註冊的類型，以及指派給裝置的原則和設定檔。 在裝置註冊並套用所有初始原則和設定檔之後，裝置會根據裝置在 Intune 中註冊的時間，檢查是否有每 6-8 小時的新原則和設定檔。
 
-最佳做法是確定您的裝置在線上至少連續八小時的時間，才能得到最佳結果。
+最佳做法是確定您的裝置至少連續八小時處於連線狀態，才能得到最佳結果。
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>哪些動作會致使 Intune 立即傳送通知給裝置？
 
-有很多不同的動作會觸發通知，例如指派 (或取消指派)、更新、刪除原則、設定檔或應用程式等。 這些動作時間會因平台而異。
+有多種會觸發通知的動作，例如，何時指派 (或取消指派)、更新、刪除原則、設定檔或應用程式等。 這些動作時間會因平台而異。
 
-裝置可在收到簽入通知時簽入 Intune，或在其排定簽入時間簽入。 當您對目標裝置或使用者執行鎖定、密碼重設、應用程式指派、設定檔指派或原則指派等動作時，Intune 會立即通知裝置簽入，以接收這些更新。
+裝置可在收到簽入通知時簽入 Intune，或在其排定簽入時間簽入。 當您對目標裝置或使用者執行鎖定、密碼重設、應用程式指派、設定檔指派或原則指派等動作時，則 Intune 會立即通知裝置簽入以接收這些更新。
 
-修訂公司入口網站應用程式中的連絡資訊等其他變更，則不會對裝置傳送立即通知。
+修訂公司入口網站應用程式中的連絡資訊等其他變更，不會立即對裝置傳送通知。
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>如果有多個原則指派到同一個使用者或同一部裝置，如何得知會套用哪些設定？
 
@@ -111,7 +111,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>當設定檔已刪除或不再適用時，會發生什麼情況？
 
-當您刪除設定檔，或從具有該設定檔的群組中移除裝置時，接著會從裝置移除該設定檔及設定，如下所述：
+當您刪除設定檔，或從具有該設定檔的群組中移除裝置之後，接著會從裝置中移除該設定檔及設定，如下所述：
 
 - Wi-Fi、VPN、憑證及電子郵件設定檔：這些設定檔會從所有支援的已註冊裝置中移除。
 - 所有其他設定檔類型：  

@@ -1,26 +1,26 @@
 ---
-title: Microsoft Intune 中的裝置合規性原則 - Azure | Microsoft Docs
-description: 使用裝置合規性政策入門、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取、處理未獲指派原則的裝置，以及 Azure 入口網站與 Microsoft Intune 傳統入口網站中的合規性差異
+title: 建立 Microsoft Intune 中的裝置合規性原則 - Azure | Microsoft Docs
+description: 建立裝置合規性原則、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取、處理沒有已指派原則的裝置，以及 Azure 入口網站與傳統入口網站中的 Microsoft Intune 合規性差異
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722627"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306575"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立合規性政策
 
@@ -95,15 +95,15 @@ ms.locfileid: "71722627"
 
 4. 完成後，請選取 [確定]   > [建立]  以儲存變更。 政策隨即建立，並顯示在清單中。 接下來，將政策指派給您的群組。
 
-## <a name="assign-user-groups"></a>指派使用者群組
+## <a name="assign-the-policy"></a>指派原則
 
 政策建立之後，下一個步驟是將政策指派給您的群組：
 
 1. 選擇您所建立的政策。 現有的原則位於 [裝置合規性]   > [原則]  。
 2. 選取政策 > [指派]  。 您可以包含或排除 Azure Active Directory (AD) 安全性群組。
-3. 選擇 [選取的群組]  以查看您的 Azure AD 安全性群組。 選取您希望套用這項政策的使用者群組 > 選擇 [儲存]  ，將原則部署到使用者。
+3. 選擇 [選取的群組]  以查看您的 Azure AD 安全性群組。 選取您希望套用此原則的群組 > 選擇 [儲存]  以部署原則。
 
-您隨即將政策套用至使用者。 系統將會評估原則目標使用者所使用的裝置是否符合規範。
+當您的原則設為目標的使用者或裝置使用 Intune 簽入時，會評估其合規性。
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>評估設定為目標的使用者人數
 

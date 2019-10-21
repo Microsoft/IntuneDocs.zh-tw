@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50fdbb766068e643604cdf729e62cdd07d22b62
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723511"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306793"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>使用 Apple Configurator 設定 iOS 裝置註冊
 
@@ -60,6 +60,9 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
     - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 裝置必須使用設定助理與使用者建立關聯，然後才能存取公司資料與電子郵件。 僅設定助理註冊提供支援。 使用者親和性需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
     - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對執行工作而不需存取本機使用者資料的裝置使用此選項。 需要使用者關聯的應用程式 (包含用於安裝企業營運應用程式的公司入口網站應用程式) 將無法運作。 直接註冊的必要項。
+
+     > [!NOTE]
+     > 選取 [搭配使用者親和性進行註冊]  時，請確定裝置是在註冊的前 24 小時內，與使用設定輔助程式的使用者建立關聯。 否則註冊可能會失敗，而且需要重設成出廠預設值才能註冊裝置。
 
 4. 如果您選擇 [搭配使用者親和性進行註冊]  ，則可以選擇讓使用者使用公司入口網站進行驗證，而不是 Apple 設定助理。
 

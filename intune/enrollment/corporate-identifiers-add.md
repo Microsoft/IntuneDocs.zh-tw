@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723342"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314670"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "71723342"
 - 使用[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶進行註冊 (所有平台)
 - 使用 Apple [裝置註冊計劃](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md) 或 [Apple Configurator](apple-configurator-enroll-ios.md) 進行註冊 (僅限 iOS)
 - 已使用國際行動設備識別碼 (IMEI) 編號 (所有具有 IMEI 編號的平台) 或序號 (iOS 和 Android) [先識別為屬公司擁有再註冊](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- 已加入 Azure Active Directory 作為 Windows 10 企業版裝置
+- 已使用工作或學校認證加入 Azure Active Directory。 [已向 Azure Active Directory 註冊](https://docs.microsoft.com/azure/active-directory/devices/overview)的裝置會標示為 [個人]。
 - 在[裝置的屬性清單](#change-device-ownership)中設為公司
 
 在註冊後，[擁有權設定可以變更](#change-device-ownership)為**個人**或**公司**。
